@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/KernelSourceEdition1.lean/index.md) · [Full source](../../../../MeasureAndIntegration/KernelSourceEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/KernelSourceEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/KernelSourceEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,9 +60,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Kt](../../../../MeasureAndIntegration/KernelSourceEdition1.lean/declarations/kt.md) | 21 | `declaration-track:56a0edb8f500e273afdca35207ff90a952ad8e3373fabae7c769c75f222cfe7c` |
-| 2 | `def` | [KtWeighted](../../../../MeasureAndIntegration/KernelSourceEdition1.lean/declarations/ktweighted.md) | 31 | `declaration-track:b2458667ca1f3b50de5006f5f9a4457778493075f709dcfe0f14e5c814ce21e8` |
-| 3 | `lemma` | [measurable_KtWeighted](../../../../MeasureAndIntegration/KernelSourceEdition1.lean/declarations/measurable-ktweighted.md) | 38 | `result-track:471b611baca2e026dd19059f19855259baa193259490ea32a7e254043660a95a` |
+| 1 | `def` | [Kt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/KernelSourceEdition1.lean/declarations/kt.md) | 21 | `declaration-track:56a0edb8f500e273afdca35207ff90a952ad8e3373fabae7c769c75f222cfe7c` |
+| 2 | `def` | [KtWeighted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/KernelSourceEdition1.lean/declarations/ktweighted.md) | 31 | `declaration-track:b2458667ca1f3b50de5006f5f9a4457778493075f709dcfe0f14e5c814ce21e8` |
+| 3 | `lemma` | [measurable_KtWeighted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/KernelSourceEdition1.lean/declarations/measurable-ktweighted.md) | 38 | `result-track:471b611baca2e026dd19059f19855259baa193259490ea32a7e254043660a95a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/Projection.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/Projection.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/Projection.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/Projection.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [OrthogonalProjectionCertificate](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/Projection.lean/declarations/orthogonalprojectioncertificate.md) | 9 | `declaration-track:a3fca9cce492d3d1239df3ffbef32112e1e91735fdec1634502745706f7649a2` |
+| 1 | `structure` | [OrthogonalProjectionCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/Projection.lean/declarations/orthogonalprojectioncertificate.md) | 9 | `declaration-track:a3fca9cce492d3d1239df3ffbef32112e1e91735fdec1634502745706f7649a2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

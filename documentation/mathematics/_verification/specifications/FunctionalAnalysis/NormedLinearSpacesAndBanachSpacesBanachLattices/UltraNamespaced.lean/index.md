@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/UltraNamespaced.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/UltraNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/UltraNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/UltraNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [AddGroupSeminormClass.isUltrametricDist](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/UltraNamespaced.lean/declarations/addgroupseminormclass-isultrametricdist.md) | 35 | `result-track:56b3367aa8fda5b02da6fa1f52dc67779622b6ab24971bfbf3e3c7e1526cc9e7` |
+| 1 | `lemma` | [AddGroupSeminormClass.isUltrametricDist](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/UltraNamespaced.lean/declarations/addgroupseminormclass-isultrametricdist.md) | 35 | `result-track:56b3367aa8fda5b02da6fa1f52dc67779622b6ab24971bfbf3e3c7e1526cc9e7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

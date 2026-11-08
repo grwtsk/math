@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/AdelicBaseNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/AdelicBaseNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AdelicBaseNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AdelicBaseNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [AdelicBase](../../../../../ComputerScience/AlgorithmsInComputerScience/AdelicBaseNamespaced.lean/declarations/adelicbase.md) | 26 | `declaration-track:caabedf3afc0c38105c0c5b21526060beb28b83e9a8fb4b5de2dd6078eff07da` |
-| 2 | `def` | [defaultAdelicBase](../../../../../ComputerScience/AlgorithmsInComputerScience/AdelicBaseNamespaced.lean/declarations/defaultadelicbase.md) | 32 | `declaration-track:9af4fcf0918e7dc7d6552262a69b4bcfc4fa715eedcf1552e385908902eeeede` |
+| 1 | `structure` | [AdelicBase](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AdelicBaseNamespaced.lean/declarations/adelicbase.md) | 26 | `declaration-track:caabedf3afc0c38105c0c5b21526060beb28b83e9a8fb4b5de2dd6078eff07da` |
+| 2 | `def` | [defaultAdelicBase](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AdelicBaseNamespaced.lean/declarations/defaultadelicbase.md) | 32 | `declaration-track:9af4fcf0918e7dc7d6552262a69b4bcfc4fa715eedcf1552e385908902eeeede` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

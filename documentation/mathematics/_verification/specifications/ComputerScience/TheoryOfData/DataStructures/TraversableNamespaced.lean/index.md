@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/TraversableNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/TraversableNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/TraversableNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/TraversableNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/TraversableNamespaced.lean/declarations/instance-source-edition-2.md) | 31 | `declaration-track:e02461007784d6f4566074d4a4ed9f3129a7ad3199c58189334dc371d2add42b` |
-| 2 | `lemma` | [comp_traverse](../../../../../../ComputerScience/TheoryOfData/DataStructures/TraversableNamespaced.lean/declarations/comp-traverse.md) | 35 | `result-track:fd97455baa5bd16288c796b9bd75a6bd2a53c492a812d43006289d5fe3003eea` |
-| 3 | `lemma` | [traverse_eq_map_id](../../../../../../ComputerScience/TheoryOfData/DataStructures/TraversableNamespaced.lean/declarations/traverse-eq-map-id.md) | 48 | `result-track:db3549c89e26457a94b90bf9a70c877631163ee854df0b1ef099c67928cadb0c` |
-| 4 | `lemma` | [naturality](../../../../../../ComputerScience/TheoryOfData/DataStructures/TraversableNamespaced.lean/declarations/naturality.md) | 56 | `result-track:764909d10cbd3d8703f60c31cf8d7e8bfbb0ba778338dec0d5374a01d83ec410` |
-| 5 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/TraversableNamespaced.lean/declarations/instance.md) | 65 | `declaration-track:05d60407a372efe62bfe7954a73111da36c32b0512c39f0761b75bf12bd24801` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/TraversableNamespaced.lean/declarations/instance-source-edition-2.md) | 31 | `declaration-track:e02461007784d6f4566074d4a4ed9f3129a7ad3199c58189334dc371d2add42b` |
+| 2 | `lemma` | [comp_traverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/TraversableNamespaced.lean/declarations/comp-traverse.md) | 35 | `result-track:fd97455baa5bd16288c796b9bd75a6bd2a53c492a812d43006289d5fe3003eea` |
+| 3 | `lemma` | [traverse_eq_map_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/TraversableNamespaced.lean/declarations/traverse-eq-map-id.md) | 48 | `result-track:db3549c89e26457a94b90bf9a70c877631163ee854df0b1ef099c67928cadb0c` |
+| 4 | `lemma` | [naturality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/TraversableNamespaced.lean/declarations/naturality.md) | 56 | `result-track:764909d10cbd3d8703f60c31cf8d7e8bfbb0ba778338dec0d5374a01d83ec410` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/TraversableNamespaced.lean/declarations/instance.md) | 65 | `declaration-track:05d60407a372efe62bfe7954a73111da36c32b0512c39f0761b75bf12bd24801` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

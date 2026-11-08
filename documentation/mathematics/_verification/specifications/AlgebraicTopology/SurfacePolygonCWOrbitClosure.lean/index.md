@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/SurfacePolygonCWOrbitClosure.lean/index.md) · [Full source](../../../../AlgebraicTopology/SurfacePolygonCWOrbitClosure.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonCWOrbitClosure.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonCWOrbitClosure.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWInteriorOrbit`](../../../../AlgebraicTopology/SurfacePolygonCWInteriorOrbit.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWInteriorOrbit`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonCWInteriorOrbit.lean/index.md) — import line 8; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [oppositeBoundaryPoint_involutive](../../../../AlgebraicTopology/SurfacePolygonCWOrbitClosure.lean/declarations/oppositeboundarypoint-involutive.md) | 29 | `result-track:b4ef98ab2011b629f705efdc967c82ab9fdef3d732bd5069510da41b633ac177` |
-| 2 | `def` | [InteriorOrbit](../../../../AlgebraicTopology/SurfacePolygonCWOrbitClosure.lean/declarations/interiororbit.md) | 37 | `declaration-track:55503b2f7cb2a45440248e873c40d1a52d1d1491c55f8186de165f2f19e93479` |
-| 3 | `theorem` | [interior_step_orbit](../../../../AlgebraicTopology/SurfacePolygonCWOrbitClosure.lean/declarations/interior-step-orbit.md) | 42 | `result-track:a863e45cf102e942ab428be28038d253c1656cccde9951c46b194b22e8b079cb` |
-| 4 | `theorem` | [interiorOrbit_symm](../../../../AlgebraicTopology/SurfacePolygonCWOrbitClosure.lean/declarations/interiororbit-symm.md) | 50 | `result-track:ae10b180d0d149059e7b9166cdcf2f33864693fb2d3803988e939002990e987b` |
-| 5 | `theorem` | [interiorOrbit_trans](../../../../AlgebraicTopology/SurfacePolygonCWOrbitClosure.lean/declarations/interiororbit-trans.md) | 60 | `result-track:de989ea42ec2c6dd84edfb10d9797ec604a36db19320108d841c1e081511f9f1` |
-| 6 | `theorem` | [interior_connected_orbit](../../../../AlgebraicTopology/SurfacePolygonCWOrbitClosure.lean/declarations/interior-connected-orbit.md) | 75 | `result-track:94025332784779277505248c91e4b054383b9dda00a0fad3d1e74c324e72ece4` |
-| 7 | `theorem` | [interior_projection_eq_orbit](../../../../AlgebraicTopology/SurfacePolygonCWOrbitClosure.lean/declarations/interior-projection-eq-orbit.md) | 99 | `result-track:16fd4370d123e9c43f4c11ace5e0ff2601eaaab90e368080a5dd4442b6a480c6` |
+| 1 | `theorem` | [oppositeBoundaryPoint_involutive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonCWOrbitClosure.lean/declarations/oppositeboundarypoint-involutive.md) | 29 | `result-track:b4ef98ab2011b629f705efdc967c82ab9fdef3d732bd5069510da41b633ac177` |
+| 2 | `def` | [InteriorOrbit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonCWOrbitClosure.lean/declarations/interiororbit.md) | 37 | `declaration-track:55503b2f7cb2a45440248e873c40d1a52d1d1491c55f8186de165f2f19e93479` |
+| 3 | `theorem` | [interior_step_orbit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonCWOrbitClosure.lean/declarations/interior-step-orbit.md) | 42 | `result-track:a863e45cf102e942ab428be28038d253c1656cccde9951c46b194b22e8b079cb` |
+| 4 | `theorem` | [interiorOrbit_symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonCWOrbitClosure.lean/declarations/interiororbit-symm.md) | 50 | `result-track:ae10b180d0d149059e7b9166cdcf2f33864693fb2d3803988e939002990e987b` |
+| 5 | `theorem` | [interiorOrbit_trans](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonCWOrbitClosure.lean/declarations/interiororbit-trans.md) | 60 | `result-track:de989ea42ec2c6dd84edfb10d9797ec604a36db19320108d841c1e081511f9f1` |
+| 6 | `theorem` | [interior_connected_orbit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonCWOrbitClosure.lean/declarations/interior-connected-orbit.md) | 75 | `result-track:94025332784779277505248c91e4b054383b9dda00a0fad3d1e74c324e72ece4` |
+| 7 | `theorem` | [interior_projection_eq_orbit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonCWOrbitClosure.lean/declarations/interior-projection-eq-orbit.md) | 99 | `result-track:16fd4370d123e9c43f4c11ace5e0ff2601eaaab90e368080a5dd4442b6a480c6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PresentationNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PresentationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PresentationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PresentationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Presentation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PresentationNamespaced.lean/declarations/presentation.md) | 29 | `declaration-track:a4759d6c19b9786c3776bc7b4d1b2e0b71e127c1eab1ac80192801daeaf7f91b` |
-| 2 | `def` | [ValidState](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PresentationNamespaced.lean/declarations/validstate.md) | 42 | `declaration-track:d0219f60c43f4b6094f663b8f2021a16cfc201a5baa7d04c6b38de6ef293d73a` |
-| 3 | `structure` | [Hom](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PresentationNamespaced.lean/declarations/hom.md) | 50 | `declaration-track:00dc8dee6abfb53b4bea6fb2f1bc2fe0483bc2e02975d4ed8ba45faff26eabfc` |
-| 4 | `def` | [id](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PresentationNamespaced.lean/declarations/id.md) | 59 | `declaration-track:f36072874aef2d3191b7e92fd0e1988556c4e1d0ca7a0b4dfc57e5b378bed18e` |
-| 5 | `def` | [comp](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PresentationNamespaced.lean/declarations/comp.md) | 66 | `declaration-track:cffb8238591ccebf84ea3d132e9aa185cba8bd122ed970d2e924b708f05391b4` |
-| 6 | `theorem` | [ext](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PresentationNamespaced.lean/declarations/ext.md) | 74 | `result-track:e70d67aeac6402527f2aa5640f41c1db69b084cde8d65aea31087e648b3810ef` |
-| 7 | `theorem` | [id_comp](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PresentationNamespaced.lean/declarations/id-comp.md) | 90 | `result-track:2bafa70bf8c1fce0f70d583d59918476a289bcdd3e6750f63560a8b42c0497b7` |
-| 8 | `theorem` | [comp_id](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PresentationNamespaced.lean/declarations/comp-id.md) | 95 | `result-track:422ee56c126792ad6d4fff2e284709e7216c36755b100e84f4f5d9eb87643f2d` |
-| 9 | `theorem` | [comp_assoc](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PresentationNamespaced.lean/declarations/comp-assoc.md) | 99 | `result-track:2d671bea44349d3924429a1c9f555da917eee72a1e81dfc916ce3732c712969a` |
+| 1 | `structure` | [Presentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PresentationNamespaced.lean/declarations/presentation.md) | 29 | `declaration-track:a4759d6c19b9786c3776bc7b4d1b2e0b71e127c1eab1ac80192801daeaf7f91b` |
+| 2 | `def` | [ValidState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PresentationNamespaced.lean/declarations/validstate.md) | 42 | `declaration-track:d0219f60c43f4b6094f663b8f2021a16cfc201a5baa7d04c6b38de6ef293d73a` |
+| 3 | `structure` | [Hom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PresentationNamespaced.lean/declarations/hom.md) | 50 | `declaration-track:00dc8dee6abfb53b4bea6fb2f1bc2fe0483bc2e02975d4ed8ba45faff26eabfc` |
+| 4 | `def` | [id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PresentationNamespaced.lean/declarations/id.md) | 59 | `declaration-track:f36072874aef2d3191b7e92fd0e1988556c4e1d0ca7a0b4dfc57e5b378bed18e` |
+| 5 | `def` | [comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PresentationNamespaced.lean/declarations/comp.md) | 66 | `declaration-track:cffb8238591ccebf84ea3d132e9aa185cba8bd122ed970d2e924b708f05391b4` |
+| 6 | `theorem` | [ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PresentationNamespaced.lean/declarations/ext.md) | 74 | `result-track:e70d67aeac6402527f2aa5640f41c1db69b084cde8d65aea31087e648b3810ef` |
+| 7 | `theorem` | [id_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PresentationNamespaced.lean/declarations/id-comp.md) | 90 | `result-track:2bafa70bf8c1fce0f70d583d59918476a289bcdd3e6750f63560a8b42c0497b7` |
+| 8 | `theorem` | [comp_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PresentationNamespaced.lean/declarations/comp-id.md) | 95 | `result-track:422ee56c126792ad6d4fff2e284709e7216c36755b100e84f4f5d9eb87643f2d` |
+| 9 | `theorem` | [comp_assoc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PresentationNamespaced.lean/declarations/comp-assoc.md) | 99 | `result-track:2d671bea44349d3924429a1c9f555da917eee72a1e81dfc916ce3732c712969a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

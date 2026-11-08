@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SimpPublicEdition4.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SimpPublicEdition4.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SimpPublicEdition4.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SimpPublicEdition4.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mkEqSymm](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SimpPublicEdition4.lean/declarations/mkeqsymm.md) | 27 | `declaration-track:984d8afdd072c3de558a7a75c4c45d62b07d85f36e23be0401421cfe989580cd` |
-| 2 | `def` | [mkCast](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SimpPublicEdition4.lean/declarations/mkcast.md) | 34 | `declaration-track:0b86f94ab401e2e2f4f1aefc1560d7b81f2164a9e574cadbd07b43e4378a1440` |
-| 3 | `def` | [mkDischargeWrapper](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SimpPublicEdition4.lean/declarations/mkdischargewrapper.md) | 38 | `declaration-track:00ebb892679b81752288427cda31174d03437fe3d084d84d5e35d82abc34481d` |
-| 4 | `def` | [mkSimpContext'](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SimpPublicEdition4.lean/declarations/mksimpcontext.md) | 46 | `declaration-track:bf90787812abcb78804bbb0b56565b9c951da23c0c6fd24d99969c2976f0368f` |
+| 1 | `def` | [mkEqSymm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SimpPublicEdition4.lean/declarations/mkeqsymm.md) | 27 | `declaration-track:984d8afdd072c3de558a7a75c4c45d62b07d85f36e23be0401421cfe989580cd` |
+| 2 | `def` | [mkCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SimpPublicEdition4.lean/declarations/mkcast.md) | 34 | `declaration-track:0b86f94ab401e2e2f4f1aefc1560d7b81f2164a9e574cadbd07b43e4378a1440` |
+| 3 | `def` | [mkDischargeWrapper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SimpPublicEdition4.lean/declarations/mkdischargewrapper.md) | 38 | `declaration-track:00ebb892679b81752288427cda31174d03437fe3d084d84d5e35d82abc34481d` |
+| 4 | `def` | [mkSimpContext'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SimpPublicEdition4.lean/declarations/mksimpcontext.md) | 46 | `declaration-track:bf90787812abcb78804bbb0b56565b9c951da23c0c6fd24d99969c2976f0368f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

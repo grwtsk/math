@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/NamespacedAlternative15.lean/index.md) · [Full source](../../../../MeasureAndIntegration/NamespacedAlternative15.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NamespacedAlternative15.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NamespacedAlternative15.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [bumpCorrelation_integral](../../../../MeasureAndIntegration/NamespacedAlternative15.lean/declarations/bumpcorrelation-integral.md) | 32 | `result-track:b0d8f31009e9a397cd27b344215700e626c6bd1c2a5d5ae0c44768752e4d2f59` |
-| 2 | `theorem` | [bumpCorrelationSecond_integral](../../../../MeasureAndIntegration/NamespacedAlternative15.lean/declarations/bumpcorrelationsecond-integral.md) | 49 | `result-track:4a0d58c79c1bff47cf6d435569eaa3977632075eab5967e285a94099c34d4f2f` |
-| 3 | `theorem` | [bumpCorrelationFourth_integral](../../../../MeasureAndIntegration/NamespacedAlternative15.lean/declarations/bumpcorrelationfourth-integral.md) | 58 | `result-track:3284cb9cab57d539ddb86c119b794fee7c322217b00cb8f9edc85bc462ae4681` |
-| 4 | `theorem` | [sourceCorrelation_half_integral](../../../../MeasureAndIntegration/NamespacedAlternative15.lean/declarations/sourcecorrelation-half-integral.md) | 67 | `result-track:dd0a0caf71d0dba1f03a7d1902d3c360d2107ee1be9358aee9541968c2587981` |
-| 5 | `theorem` | [sourceNormalization_tendsto](../../../../MeasureAndIntegration/NamespacedAlternative15.lean/declarations/sourcenormalization-tendsto.md) | 106 | `result-track:04fcd2d22ac8fead30eeda2a6612375daf970a3f688027b040ca113a45d9ad20` |
-| 6 | `theorem` | [composite_main_coefficient_tendsto](../../../../MeasureAndIntegration/NamespacedAlternative15.lean/declarations/composite-main-coefficient-tendsto.md) | 120 | `result-track:4eaacd1415469ac809d6cd8bdbba68b0d117d42cbe6164b2b0d0385dec52dbde` |
+| 1 | `theorem` | [bumpCorrelation_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NamespacedAlternative15.lean/declarations/bumpcorrelation-integral.md) | 32 | `result-track:b0d8f31009e9a397cd27b344215700e626c6bd1c2a5d5ae0c44768752e4d2f59` |
+| 2 | `theorem` | [bumpCorrelationSecond_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NamespacedAlternative15.lean/declarations/bumpcorrelationsecond-integral.md) | 49 | `result-track:4a0d58c79c1bff47cf6d435569eaa3977632075eab5967e285a94099c34d4f2f` |
+| 3 | `theorem` | [bumpCorrelationFourth_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NamespacedAlternative15.lean/declarations/bumpcorrelationfourth-integral.md) | 58 | `result-track:3284cb9cab57d539ddb86c119b794fee7c322217b00cb8f9edc85bc462ae4681` |
+| 4 | `theorem` | [sourceCorrelation_half_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NamespacedAlternative15.lean/declarations/sourcecorrelation-half-integral.md) | 67 | `result-track:dd0a0caf71d0dba1f03a7d1902d3c360d2107ee1be9358aee9541968c2587981` |
+| 5 | `theorem` | [sourceNormalization_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NamespacedAlternative15.lean/declarations/sourcenormalization-tendsto.md) | 106 | `result-track:04fcd2d22ac8fead30eeda2a6612375daf970a3f688027b040ca113a45d9ad20` |
+| 6 | `theorem` | [composite_main_coefficient_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NamespacedAlternative15.lean/declarations/composite-main-coefficient-tendsto.md) | 120 | `result-track:4eaacd1415469ac809d6cd8bdbba68b0d117d42cbe6164b2b0d0385dec52dbde` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

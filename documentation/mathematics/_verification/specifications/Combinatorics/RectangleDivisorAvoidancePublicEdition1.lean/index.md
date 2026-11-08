@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/RectangleDivisorAvoidancePublicEdition1.lean/index.md) · [Full source](../../../../Combinatorics/RectangleDivisorAvoidancePublicEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RectangleDivisorAvoidancePublicEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RectangleDivisorAvoidancePublicEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_height_avoiding_finite](../../../../Combinatorics/RectangleDivisorAvoidancePublicEdition1.lean/declarations/exists-height-avoiding-finite.md) | 31 | `result-track:3525f73bce5d6e1ce2f82d02cc90affea26b39d76d7537b056a4ddeb6e43f969` |
-| 2 | `theorem` | [exists_real_avoiding_finite](../../../../Combinatorics/RectangleDivisorAvoidancePublicEdition1.lean/declarations/exists-real-avoiding-finite.md) | 42 | `result-track:6ed2be53da7dd5caa4c2e013e2db4596bc1e57096654668e10755335c79a76eb` |
-| 3 | `theorem` | [exists_height_avoiding_rectangleDivisor](../../../../Combinatorics/RectangleDivisorAvoidancePublicEdition1.lean/declarations/exists-height-avoiding-rectangledivisor.md) | 54 | `result-track:3923b8ce2179ba48abf7d5a82d342376e3475d4f0cbcb31cf1d6883687eaafd7` |
-| 4 | `theorem` | [exists_real_avoiding_rectangleDivisor](../../../../Combinatorics/RectangleDivisorAvoidancePublicEdition1.lean/declarations/exists-real-avoiding-rectangledivisor.md) | 69 | `result-track:11809372757d63e83a02d0edf995d6e41cb46ffc5e02eda153c4928f9eb75ce5` |
+| 1 | `theorem` | [exists_height_avoiding_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RectangleDivisorAvoidancePublicEdition1.lean/declarations/exists-height-avoiding-finite.md) | 31 | `result-track:3525f73bce5d6e1ce2f82d02cc90affea26b39d76d7537b056a4ddeb6e43f969` |
+| 2 | `theorem` | [exists_real_avoiding_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RectangleDivisorAvoidancePublicEdition1.lean/declarations/exists-real-avoiding-finite.md) | 42 | `result-track:6ed2be53da7dd5caa4c2e013e2db4596bc1e57096654668e10755335c79a76eb` |
+| 3 | `theorem` | [exists_height_avoiding_rectangleDivisor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RectangleDivisorAvoidancePublicEdition1.lean/declarations/exists-height-avoiding-rectangledivisor.md) | 54 | `result-track:3923b8ce2179ba48abf7d5a82d342376e3475d4f0cbcb31cf1d6883687eaafd7` |
+| 4 | `theorem` | [exists_real_avoiding_rectangleDivisor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RectangleDivisorAvoidancePublicEdition1.lean/declarations/exists-real-avoiding-rectangledivisor.md) | 69 | `result-track:11809372757d63e83a02d0edf995d6e41cb46ffc5e02eda153c4928f9eb75ce5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

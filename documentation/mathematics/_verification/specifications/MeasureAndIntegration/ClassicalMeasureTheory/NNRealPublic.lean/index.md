@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NNRealPublic.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NNRealPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/NNRealPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/NNRealPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [integral_rieszMeasure](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NNRealPublic.lean/declarations/integral-rieszmeasure.md) | 47 | `result-track:300ac822c5261aab8d069d9973726e96a326a96a711ca427eaf334a4e32177c6` |
-| 2 | `theorem` | [lintegral_rieszMeasure](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NNRealPublic.lean/declarations/lintegral-rieszmeasure.md) | 56 | `result-track:07bf97c26bf43c2a88de0eb24a7fb0a45ed1ad984e6874fbed975b0a68b13124` |
-| 3 | `instance` | [rieszMeasure_regular](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NNRealPublic.lean/declarations/rieszmeasure-regular.md) | 66 | `declaration-track:871d03b62c0cfa41aa185602cb5e78486d0e1e816635a500368edb558107176f` |
-| 4 | `theorem` | [_root_.MeasureTheory.Measure.ext_of_integral_eq_on_compactlySupported_nnreal](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NNRealPublic.lean/declarations/root-measuretheory-measure-ext-of-integral-eq-on-compactlysupported-nnre.md) | 76 | `result-track:cec306dcadadb7f7c6fca91a2c88a0aa48f337099db1454571604474988e8930` |
-| 5 | `theorem` | [integralLinearMap_inj](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NNRealPublic.lean/declarations/integrallinearmap-inj.md) | 88 | `result-track:b5948532bae781bfb7df8f2a143d33daada81a21872f0985a5f4fe789d8edfbd` |
-| 6 | `theorem` | [rieszMeasure_integralLinearMap](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NNRealPublic.lean/declarations/rieszmeasure-integrallinearmap.md) | 96 | `result-track:6da336f0301058117c78c01ce2e0aa73424ea254468cf8af2a7cff48fd805775` |
-| 7 | `theorem` | [integralLinearMap_rieszMeasure](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NNRealPublic.lean/declarations/integrallinearmap-rieszmeasure.md) | 101 | `result-track:6ed887d31b6a878b07f25822699244dd4aa6f29a91228bf9ae603129a5662518` |
+| 1 | `theorem` | [integral_rieszMeasure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/NNRealPublic.lean/declarations/integral-rieszmeasure.md) | 47 | `result-track:300ac822c5261aab8d069d9973726e96a326a96a711ca427eaf334a4e32177c6` |
+| 2 | `theorem` | [lintegral_rieszMeasure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/NNRealPublic.lean/declarations/lintegral-rieszmeasure.md) | 56 | `result-track:07bf97c26bf43c2a88de0eb24a7fb0a45ed1ad984e6874fbed975b0a68b13124` |
+| 3 | `instance` | [rieszMeasure_regular](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/NNRealPublic.lean/declarations/rieszmeasure-regular.md) | 66 | `declaration-track:871d03b62c0cfa41aa185602cb5e78486d0e1e816635a500368edb558107176f` |
+| 4 | `theorem` | [_root_.MeasureTheory.Measure.ext_of_integral_eq_on_compactlySupported_nnreal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/NNRealPublic.lean/declarations/root-measuretheory-measure-ext-of-integral-eq-on-compactlysupported-nnre.md) | 76 | `result-track:cec306dcadadb7f7c6fca91a2c88a0aa48f337099db1454571604474988e8930` |
+| 5 | `theorem` | [integralLinearMap_inj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/NNRealPublic.lean/declarations/integrallinearmap-inj.md) | 88 | `result-track:b5948532bae781bfb7df8f2a143d33daada81a21872f0985a5f4fe789d8edfbd` |
+| 6 | `theorem` | [rieszMeasure_integralLinearMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/NNRealPublic.lean/declarations/rieszmeasure-integrallinearmap.md) | 96 | `result-track:6da336f0301058117c78c01ce2e0aa73424ea254468cf8af2a7cff48fd805775` |
+| 7 | `theorem` | [integralLinearMap_rieszMeasure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/NNRealPublic.lean/declarations/integrallinearmap-rieszmeasure.md) | 101 | `result-track:6ed887d31b6a878b07f25822699244dd4aa6f29a91228bf9ae603129a5662518` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ContourNamespacedGoodHeightW.lean/index.md) · [Full source](../../../../GeneralTopology/ContourNamespacedGoodHeightW.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContourNamespacedGoodHeightW.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContourNamespacedGoodHeightW.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [GoodHeightW](../../../../GeneralTopology/ContourNamespacedGoodHeightW.lean/declarations/goodheightw.md) | 36 | `declaration-track:e5494355600b22691fd7c0d1ac5309122579ce3082c4247079654deebd0d8ad0` |
-| 2 | `theorem` | [exists_goodHeightW](../../../../GeneralTopology/ContourNamespacedGoodHeightW.lean/declarations/exists-goodheightw.md) | 39 | `result-track:5889e2fa6fb33e20835a3ff669100d771af05612240216e7fa95df97126d1c5a` |
-| 3 | `theorem` | [goodHeightW_ne_zero](../../../../GeneralTopology/ContourNamespacedGoodHeightW.lean/declarations/goodheightw-ne-zero.md) | 53 | `result-track:e108e7bf2eb0e4ec8edaf579b5690d3ba0a7c86ef5a02c960de2c8aee2aa3c50` |
-| 4 | `theorem` | [goodHeightW_omegaW_ne_zero](../../../../GeneralTopology/ContourNamespacedGoodHeightW.lean/declarations/goodheightw-omegaw-ne-zero.md) | 56 | `result-track:6a331f1be096a1609e64601b64b43d483a2be9a903e914188dfbb2e3e750fe38` |
-| 5 | `theorem` | [rectangleIntegral'_logDeriv_omegaW_eq_NcountW](../../../../GeneralTopology/ContourNamespacedGoodHeightW.lean/declarations/rectangleintegral-logderiv-omegaw-eq-ncountw.md) | 61 | `result-track:dfeb771517a425409954fd85d3265cb934f5fed9244d8063f0447a2e93e07d61` |
-| 6 | `lemma` | [continuous_logDeriv_omegaW_horizontal](../../../../GeneralTopology/ContourNamespacedGoodHeightW.lean/declarations/continuous-logderiv-omegaw-horizontal.md) | 132 | `result-track:90668f545295cfa8e241058f3057b967ce04bf6819b557ef234c4b325a6def01` |
-| 7 | `theorem` | [rectangleIntegral_logDeriv_omegaW_eq_halfContour](../../../../GeneralTopology/ContourNamespacedGoodHeightW.lean/declarations/rectangleintegral-logderiv-omegaw-eq-halfcontour.md) | 144 | `result-track:22a7c32e6cdf9f14a02df49768441195961cbb16d14cf9f4ef8decc99e1d135e` |
-| 8 | `theorem` | [NcountW_eq_im_halfContour](../../../../GeneralTopology/ContourNamespacedGoodHeightW.lean/declarations/ncountw-eq-im-halfcontour.md) | 158 | `result-track:df06c098c4f6ea212ade5d767d88432e7afac6e6d4e40049356f9ea0df7f6628` |
+| 1 | `def` | [GoodHeightW](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContourNamespacedGoodHeightW.lean/declarations/goodheightw.md) | 36 | `declaration-track:e5494355600b22691fd7c0d1ac5309122579ce3082c4247079654deebd0d8ad0` |
+| 2 | `theorem` | [exists_goodHeightW](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContourNamespacedGoodHeightW.lean/declarations/exists-goodheightw.md) | 39 | `result-track:5889e2fa6fb33e20835a3ff669100d771af05612240216e7fa95df97126d1c5a` |
+| 3 | `theorem` | [goodHeightW_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContourNamespacedGoodHeightW.lean/declarations/goodheightw-ne-zero.md) | 53 | `result-track:e108e7bf2eb0e4ec8edaf579b5690d3ba0a7c86ef5a02c960de2c8aee2aa3c50` |
+| 4 | `theorem` | [goodHeightW_omegaW_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContourNamespacedGoodHeightW.lean/declarations/goodheightw-omegaw-ne-zero.md) | 56 | `result-track:6a331f1be096a1609e64601b64b43d483a2be9a903e914188dfbb2e3e750fe38` |
+| 5 | `theorem` | [rectangleIntegral'_logDeriv_omegaW_eq_NcountW](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContourNamespacedGoodHeightW.lean/declarations/rectangleintegral-logderiv-omegaw-eq-ncountw.md) | 61 | `result-track:dfeb771517a425409954fd85d3265cb934f5fed9244d8063f0447a2e93e07d61` |
+| 6 | `lemma` | [continuous_logDeriv_omegaW_horizontal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContourNamespacedGoodHeightW.lean/declarations/continuous-logderiv-omegaw-horizontal.md) | 132 | `result-track:90668f545295cfa8e241058f3057b967ce04bf6819b557ef234c4b325a6def01` |
+| 7 | `theorem` | [rectangleIntegral_logDeriv_omegaW_eq_halfContour](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContourNamespacedGoodHeightW.lean/declarations/rectangleintegral-logderiv-omegaw-eq-halfcontour.md) | 144 | `result-track:22a7c32e6cdf9f14a02df49768441195961cbb16d14cf9f4ef8decc99e1d135e` |
+| 8 | `theorem` | [NcountW_eq_im_halfContour](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContourNamespacedGoodHeightW.lean/declarations/ncountw-eq-im-halfcontour.md) | 158 | `result-track:df06c098c4f6ea212ade5d767d88432e7afac6e6d4e40049356f9ea0df7f6628` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

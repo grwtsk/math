@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/KanComplex.lean/index.md) · [Full source](../../../../AlgebraicTopology/KanComplex.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/KanComplex.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/KanComplex.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [KanComplex](../../../../AlgebraicTopology/KanComplex.lean/declarations/kancomplex.md) | 35 | `declaration-track:7dc179cff2be3177ece1e88b0e7e03cd355f7db702d5a0213ec0e2ddb67aaba4` |
-| 2 | `lemma` | [KanComplex.hornFilling](../../../../AlgebraicTopology/KanComplex.lean/declarations/kancomplex-hornfilling.md) | 40 | `result-track:9c3a51ea67430e0e18466cc013ca6fa90868a50ce67f8f60bb451f42a8d6b365` |
+| 1 | `abbrev` | [KanComplex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/KanComplex.lean/declarations/kancomplex.md) | 35 | `declaration-track:7dc179cff2be3177ece1e88b0e7e03cd355f7db702d5a0213ec0e2ddb67aaba4` |
+| 2 | `lemma` | [KanComplex.hornFilling](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/KanComplex.lean/declarations/kancomplex-hornfilling.md) | 40 | `result-track:9c3a51ea67430e0e18466cc013ca6fa90868a50ce67f8f60bb451f42a8d6b365` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

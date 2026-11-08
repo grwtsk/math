@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/ClassicalRieszNormalization.lean/index.md) · [Full source](../../../../NumberTheory/ClassicalRieszNormalization.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ClassicalRieszNormalization.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ClassicalRieszNormalization.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Real.ClassicalRieszCorrection`](../../../../MeasureAndIntegration/ClassicalRieszCorrection.lean/index.md) — import line 3; pinned internal source present.
-- [`GRWTSK.NumberTheory.Chebyshev.GlobalRieszAffineNormalization`](../../../../MeasureAndIntegration/GlobalRieszAffineNormalization.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Real.ClassicalRieszCorrection`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalRieszCorrection.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.GlobalRieszAffineNormalization`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GlobalRieszAffineNormalization.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [sourceSlope](../../../../NumberTheory/ClassicalRieszNormalization.lean/declarations/sourceslope.md) | 17 | `declaration-track:7a30a39e963c034850d405d766b84b7f4d608d25606ddc68b0017c51a5014676` |
-| 2 | `def` | [sourceIntercept](../../../../NumberTheory/ClassicalRieszNormalization.lean/declarations/sourceintercept.md) | 18 | `declaration-track:7a66f501988d833a0c2bfe28f77c1b9eb316a3fac70aa2402a5292e8151352d6` |
-| 3 | `theorem` | [firstRieszPrefix_eq_classical_correction](../../../../NumberTheory/ClassicalRieszNormalization.lean/declarations/firstrieszprefix-eq-classical-correction.md) | 20 | `result-track:90f632c0f409b0bdf622213c1cc9a65fc38e3db560d229d25d76273cfadb8c51` |
+| 1 | `def` | [sourceSlope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ClassicalRieszNormalization.lean/declarations/sourceslope.md) | 17 | `declaration-track:7a30a39e963c034850d405d766b84b7f4d608d25606ddc68b0017c51a5014676` |
+| 2 | `def` | [sourceIntercept](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ClassicalRieszNormalization.lean/declarations/sourceintercept.md) | 18 | `declaration-track:7a66f501988d833a0c2bfe28f77c1b9eb316a3fac70aa2402a5292e8151352d6` |
+| 3 | `theorem` | [firstRieszPrefix_eq_classical_correction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ClassicalRieszNormalization.lean/declarations/firstrieszprefix-eq-classical-correction.md) | 20 | `result-track:90f632c0f409b0bdf622213c1cc9a65fc38e3db560d229d25d76273cfadb8c51` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

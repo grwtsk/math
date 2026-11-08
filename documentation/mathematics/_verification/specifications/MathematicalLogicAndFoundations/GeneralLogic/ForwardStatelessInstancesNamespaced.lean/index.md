@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ForwardStatelessInstancesNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ForwardStatelessInstancesNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ForwardStatelessInstancesNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ForwardStatelessInstancesNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `axiom` | [myProp](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ForwardStatelessInstancesNamespaced.lean/declarations/myprop.md) | 25 | `declaration-track:39ac2ba5d518b15c4a82c39076c113a3866c6002c181b0d016973ee893a67107` |
-| 2 | `class` | [myClass](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ForwardStatelessInstancesNamespaced.lean/declarations/myclass.md) | 27 | `declaration-track:00dfbc992722f427a1d42a677ef036a2a4203dce9461fea8c74a1ffad8d5b337` |
-| 3 | `axiom` | [myThm](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ForwardStatelessInstancesNamespaced.lean/declarations/mythm-source-edition-2.md) | 30 | `declaration-track:eaba71732b6a6f64c183534a0d61f19ad75b99d1f0c34a10d2c399d745b17ebc` |
-| 4 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ForwardStatelessInstancesNamespaced.lean/declarations/example-source-edition-2.md) | 32 | `declaration-track:c80d3c062a754efe8ac853ec488bc65736d60d83cef46a507883cc0e64ebb57b` |
-| 5 | `axiom` | [myProp](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ForwardStatelessInstancesNamespaced.lean/declarations/myprop-source-edition-2.md) | 42 | `declaration-track:c543bc9581545970e90941088154eb08de1007a0fca7c5828cc182c029754c26` |
-| 6 | `class` | [myClass](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ForwardStatelessInstancesNamespaced.lean/declarations/myclass-source-edition-2.md) | 44 | `declaration-track:5bc08a841f4e1eb813ae88462a3eddc8960b735d4b9f4e54db633539bd83ef3c` |
-| 7 | `axiom` | [myThm](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ForwardStatelessInstancesNamespaced.lean/declarations/mythm.md) | 47 | `declaration-track:48e8fb8ac8cfbdff25b1ff8cbe235e5056a80b910274e3a3c06e60e9ff1b416f` |
-| 8 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ForwardStatelessInstancesNamespaced.lean/declarations/example.md) | 49 | `declaration-track:5a4efe06f1d29d6a45ecb655ee61c65edf33cf340684869a797a7c87fb665eea` |
+| 1 | `axiom` | [myProp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ForwardStatelessInstancesNamespaced.lean/declarations/myprop.md) | 25 | `declaration-track:39ac2ba5d518b15c4a82c39076c113a3866c6002c181b0d016973ee893a67107` |
+| 2 | `class` | [myClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ForwardStatelessInstancesNamespaced.lean/declarations/myclass.md) | 27 | `declaration-track:00dfbc992722f427a1d42a677ef036a2a4203dce9461fea8c74a1ffad8d5b337` |
+| 3 | `axiom` | [myThm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ForwardStatelessInstancesNamespaced.lean/declarations/mythm-source-edition-2.md) | 30 | `declaration-track:eaba71732b6a6f64c183534a0d61f19ad75b99d1f0c34a10d2c399d745b17ebc` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ForwardStatelessInstancesNamespaced.lean/declarations/example-source-edition-2.md) | 32 | `declaration-track:c80d3c062a754efe8ac853ec488bc65736d60d83cef46a507883cc0e64ebb57b` |
+| 5 | `axiom` | [myProp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ForwardStatelessInstancesNamespaced.lean/declarations/myprop-source-edition-2.md) | 42 | `declaration-track:c543bc9581545970e90941088154eb08de1007a0fca7c5828cc182c029754c26` |
+| 6 | `class` | [myClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ForwardStatelessInstancesNamespaced.lean/declarations/myclass-source-edition-2.md) | 44 | `declaration-track:5bc08a841f4e1eb813ae88462a3eddc8960b735d4b9f4e54db633539bd83ef3c` |
+| 7 | `axiom` | [myThm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ForwardStatelessInstancesNamespaced.lean/declarations/mythm.md) | 47 | `declaration-track:48e8fb8ac8cfbdff25b1ff8cbe235e5056a80b910274e3a3c06e60e9ff1b416f` |
+| 8 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ForwardStatelessInstancesNamespaced.lean/declarations/example.md) | 49 | `declaration-track:5a4efe06f1d29d6a45ecb655ee61c65edf33cf340684869a797a7c87fb665eea` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

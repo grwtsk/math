@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/InstructionsAndOneStep.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/InstructionsAndOneStep.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InstructionsAndOneStep.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InstructionsAndOneStep.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [State](../../../../../ComputerScience/AlgorithmsInComputerScience/InstructionsAndOneStep.lean/declarations/state.md) | 42 | `declaration-track:90d4357a8fbc347f60cb10cf679b351a7066ac0f3dceb804db851793657c0992` |
-| 2 | `def` | [zeroState](../../../../../ComputerScience/AlgorithmsInComputerScience/InstructionsAndOneStep.lean/declarations/zerostate.md) | 45 | `declaration-track:aaf10571d73efe93b8fafd22dd347a733a1ce6b1efbf80607bb56ea8b979f434` |
-| 3 | `def` | [programLengthBits](../../../../../ComputerScience/AlgorithmsInComputerScience/InstructionsAndOneStep.lean/declarations/programlengthbits.md) | 48 | `declaration-track:51ae485e48e7b386acf924cbdaf71b58b2019df978b1219d5320b35769662049` |
-| 4 | `def` | [maxProgramBytes](../../../../../ComputerScience/AlgorithmsInComputerScience/InstructionsAndOneStep.lean/declarations/maxprogrambytes.md) | 51 | `declaration-track:13de0115364a2f3ac87c7c08528f051f69e2c37ca01ccfbcb302600ac1c2bf09` |
-| 5 | `def` | [maxStackDepth](../../../../../ComputerScience/AlgorithmsInComputerScience/InstructionsAndOneStep.lean/declarations/maxstackdepth.md) | 54 | `declaration-track:d1ff7202b187bf4793a83c235f36eb78e54ec1d92ced6b77e238836a08791d08` |
-| 6 | `abbrev` | [IndexBitPosition](../../../../../ComputerScience/AlgorithmsInComputerScience/InstructionsAndOneStep.lean/declarations/indexbitposition.md) | 57 | `declaration-track:7bcf1fc746136375b9db2a0626434b660306b2bc45434b70eac6571170df04a7` |
-| 7 | `inductive` | [Operation](../../../../../ComputerScience/AlgorithmsInComputerScience/InstructionsAndOneStep.lean/declarations/operation.md) | 63 | `declaration-track:fd0828342bf228886ad55e28d6f76d9638eb71d52b4048724e658cc374201c8a` |
-| 8 | `def` | [nextStackDepth](../../../../../ComputerScience/AlgorithmsInComputerScience/InstructionsAndOneStep.lean/declarations/nextstackdepth.md) | 81 | `declaration-track:2529496b2e4e9b635388767903434bda9547fc626806d4b6b97a88d394357f0b` |
-| 9 | `def` | [executeOperation](../../../../../ComputerScience/AlgorithmsInComputerScience/InstructionsAndOneStep.lean/declarations/executeoperation.md) | 110 | `declaration-track:b9251877714c38675e5a7bbd3f6b5dcbd52068fba49446c855c12f375bbef504` |
+| 1 | `abbrev` | [State](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InstructionsAndOneStep.lean/declarations/state.md) | 42 | `declaration-track:90d4357a8fbc347f60cb10cf679b351a7066ac0f3dceb804db851793657c0992` |
+| 2 | `def` | [zeroState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InstructionsAndOneStep.lean/declarations/zerostate.md) | 45 | `declaration-track:aaf10571d73efe93b8fafd22dd347a733a1ce6b1efbf80607bb56ea8b979f434` |
+| 3 | `def` | [programLengthBits](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InstructionsAndOneStep.lean/declarations/programlengthbits.md) | 48 | `declaration-track:51ae485e48e7b386acf924cbdaf71b58b2019df978b1219d5320b35769662049` |
+| 4 | `def` | [maxProgramBytes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InstructionsAndOneStep.lean/declarations/maxprogrambytes.md) | 51 | `declaration-track:13de0115364a2f3ac87c7c08528f051f69e2c37ca01ccfbcb302600ac1c2bf09` |
+| 5 | `def` | [maxStackDepth](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InstructionsAndOneStep.lean/declarations/maxstackdepth.md) | 54 | `declaration-track:d1ff7202b187bf4793a83c235f36eb78e54ec1d92ced6b77e238836a08791d08` |
+| 6 | `abbrev` | [IndexBitPosition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InstructionsAndOneStep.lean/declarations/indexbitposition.md) | 57 | `declaration-track:7bcf1fc746136375b9db2a0626434b660306b2bc45434b70eac6571170df04a7` |
+| 7 | `inductive` | [Operation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InstructionsAndOneStep.lean/declarations/operation.md) | 63 | `declaration-track:fd0828342bf228886ad55e28d6f76d9638eb71d52b4048724e658cc374201c8a` |
+| 8 | `def` | [nextStackDepth](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InstructionsAndOneStep.lean/declarations/nextstackdepth.md) | 81 | `declaration-track:2529496b2e4e9b635388767903434bda9547fc626806d4b6b97a88d394357f0b` |
+| 9 | `def` | [executeOperation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InstructionsAndOneStep.lean/declarations/executeoperation.md) | 110 | `declaration-track:b9251877714c38675e5a7bbd3f6b5dcbd52068fba49446c855c12f375bbef504` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

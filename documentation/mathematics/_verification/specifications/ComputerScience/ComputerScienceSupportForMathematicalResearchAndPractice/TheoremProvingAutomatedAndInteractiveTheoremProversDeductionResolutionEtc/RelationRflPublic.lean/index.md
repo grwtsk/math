@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RelationRflPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RelationRflPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RelationRflPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RelationRflPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [rel_of_eq_and_refl](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RelationRflPublic.lean/declarations/rel-of-eq-and-refl.md) | 24 | `result-track:f2f0859524f898576a770bf9f4211164e3b25156ceaa71787a3988f78880fb0e` |
-| 2 | `def` | [liftReflToEq](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RelationRflPublic.lean/declarations/liftrefltoeq.md) | 39 | `declaration-track:072ab40d094bdafae7746fb9e03c6563474218b26d7f42cf5c1bb0aed936622a` |
-| 3 | `def` | [rflTac](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RelationRflPublic.lean/declarations/rfltac.md) | 62 | `declaration-track:7558effec5d275f8b9f9257fe780a7e6d9f1f9dd734395b0fa96a865090f8d89` |
-| 4 | `def` | [_root_.Lean.Expr.relSidesIfRefl?](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RelationRflPublic.lean/declarations/root-lean-expr-relsidesifrefl.md) | 68 | `declaration-track:031e606dd91b7b2f3f188e428135a87df9740aa30c3b5342e54ef3cd06fc7f49` |
+| 1 | `theorem` | [rel_of_eq_and_refl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RelationRflPublic.lean/declarations/rel-of-eq-and-refl.md) | 24 | `result-track:f2f0859524f898576a770bf9f4211164e3b25156ceaa71787a3988f78880fb0e` |
+| 2 | `def` | [liftReflToEq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RelationRflPublic.lean/declarations/liftrefltoeq.md) | 39 | `declaration-track:072ab40d094bdafae7746fb9e03c6563474218b26d7f42cf5c1bb0aed936622a` |
+| 3 | `def` | [rflTac](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RelationRflPublic.lean/declarations/rfltac.md) | 62 | `declaration-track:7558effec5d275f8b9f9257fe780a7e6d9f1f9dd734395b0fa96a865090f8d89` |
+| 4 | `def` | [_root_.Lean.Expr.relSidesIfRefl?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RelationRflPublic.lean/declarations/root-lean-expr-relsidesifrefl.md) | 68 | `declaration-track:031e606dd91b7b2f3f188e428135a87df9740aa30c3b5342e54ef3cd06fc7f49` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

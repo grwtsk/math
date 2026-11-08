@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberSectionQuotient.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberSectionQuotient.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberSectionQuotient.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberSectionQuotient.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Interfaces.PortFiberSectionEnergy`](../../../../../FunctionsOfAComplexVariable/PortFiberSectionEnergy.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.HolomorphicLineSectionQuotient`](../../../../../FunctionsOfAComplexVariable/HolomorphicLineSectionQuotient.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.Interfaces.PortFiberSectionEnergy`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberSectionEnergy.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.HolomorphicLineSectionQuotient`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/HolomorphicLineSectionQuotient.lean/index.md) — import line 2; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [AddedIndex](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberSectionQuotient.lean/declarations/addedindex.md) | 30 | `declaration-track:877c70007c533ef44cc78c312c829018ffac1bfaaec21d60a8da47459c358dca` |
-| 2 | `def` | [AddedClaim](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberSectionQuotient.lean/declarations/addedclaim.md) | 41 | `declaration-track:04917dbb2b02fa4821b03d0a4f931cc931359e3276a28f71bceaf1c8800f0ccb` |
-| 3 | `theorem` | [addedClaim_proof](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberSectionQuotient.lean/declarations/addedclaim-proof.md) | 93 | `result-track:0c088b28803178dd0d6f74d2042dd6eb2c7d75b9f5e0def421775b97b5088be3` |
-| 4 | `def` | [portfolio](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberSectionQuotient.lean/declarations/portfolio.md) | 118 | `declaration-track:eef6c95e5ebbec3bbaf2cb62562572047a8a74d1e09ccfc9675755a71d1473e1` |
-| 5 | `def` | [architecture](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberSectionQuotient.lean/declarations/architecture.md) | 121 | `declaration-track:c3e8719e8d4c2eaa398260629cc5338dcdbf6cbaa191210f1a103b948a3d7168` |
-| 6 | `abbrev` | [PreviousIndex](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberSectionQuotient.lean/declarations/previousindex.md) | 125 | `declaration-track:741be8ae87d6ad847e4925de4fdb09bbe515b45a409ab3088239e1dc0d993d5f` |
-| 7 | `theorem` | [original_branch_unchanged](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberSectionQuotient.lean/declarations/original-branch-unchanged.md) | 129 | `result-track:40124e6e8c893472f32410a453684829a6124bd92462e9bc3ffb12a097ac09e8` |
-| 8 | `theorem` | [new_branch_proved](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberSectionQuotient.lean/declarations/new-branch-proved.md) | 135 | `result-track:1fbe27159fb9482e860a34fd23c842c206c319bd2efc89e7c9a05b7281579b82` |
-| 9 | `theorem` | [target_unchanged](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberSectionQuotient.lean/declarations/target-unchanged.md) | 140 | `result-track:4902c7e39b2fb56132c835af5d7bf21511ed682e74bbf50ba4be5f62c7b211e1` |
-| 10 | `theorem` | [retarget_preserves_new](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberSectionQuotient.lean/declarations/retarget-preserves-new.md) | 145 | `result-track:37d0a9c27cfe42f5c8ff6ad1d9ea057fd69c865eb89c79e4434cf63950cdd493` |
+| 1 | `inductive` | [AddedIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberSectionQuotient.lean/declarations/addedindex.md) | 30 | `declaration-track:877c70007c533ef44cc78c312c829018ffac1bfaaec21d60a8da47459c358dca` |
+| 2 | `def` | [AddedClaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberSectionQuotient.lean/declarations/addedclaim.md) | 41 | `declaration-track:04917dbb2b02fa4821b03d0a4f931cc931359e3276a28f71bceaf1c8800f0ccb` |
+| 3 | `theorem` | [addedClaim_proof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberSectionQuotient.lean/declarations/addedclaim-proof.md) | 93 | `result-track:0c088b28803178dd0d6f74d2042dd6eb2c7d75b9f5e0def421775b97b5088be3` |
+| 4 | `def` | [portfolio](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberSectionQuotient.lean/declarations/portfolio.md) | 118 | `declaration-track:eef6c95e5ebbec3bbaf2cb62562572047a8a74d1e09ccfc9675755a71d1473e1` |
+| 5 | `def` | [architecture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberSectionQuotient.lean/declarations/architecture.md) | 121 | `declaration-track:c3e8719e8d4c2eaa398260629cc5338dcdbf6cbaa191210f1a103b948a3d7168` |
+| 6 | `abbrev` | [PreviousIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberSectionQuotient.lean/declarations/previousindex.md) | 125 | `declaration-track:741be8ae87d6ad847e4925de4fdb09bbe515b45a409ab3088239e1dc0d993d5f` |
+| 7 | `theorem` | [original_branch_unchanged](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberSectionQuotient.lean/declarations/original-branch-unchanged.md) | 129 | `result-track:40124e6e8c893472f32410a453684829a6124bd92462e9bc3ffb12a097ac09e8` |
+| 8 | `theorem` | [new_branch_proved](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberSectionQuotient.lean/declarations/new-branch-proved.md) | 135 | `result-track:1fbe27159fb9482e860a34fd23c842c206c319bd2efc89e7c9a05b7281579b82` |
+| 9 | `theorem` | [target_unchanged](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberSectionQuotient.lean/declarations/target-unchanged.md) | 140 | `result-track:4902c7e39b2fb56132c835af5d7bf21511ed682e74bbf50ba4be5f62c7b211e1` |
+| 10 | `theorem` | [retarget_preserves_new](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberSectionQuotient.lean/declarations/retarget-preserves-new.md) | 145 | `result-track:37d0a9c27cfe42f5c8ff6ad1d9ea057fd69c865eb89c79e4434cf63950cdd493` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

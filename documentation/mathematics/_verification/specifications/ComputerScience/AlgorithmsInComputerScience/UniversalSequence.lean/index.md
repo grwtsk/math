@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/UniversalSequence.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/UniversalSequence.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/UniversalSequence.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/UniversalSequence.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [UniversalSequenceCertificate](../../../../../ComputerScience/AlgorithmsInComputerScience/UniversalSequence.lean/declarations/universalsequencecertificate.md) | 10 | `declaration-track:bd599c31ce6c76ce0729d2f781264610a5e2c5cc8ab202a4dcfb918dd2dd090a` |
-| 2 | `theorem` | [universal_sequence_covers_declared_class](../../../../../ComputerScience/AlgorithmsInComputerScience/UniversalSequence.lean/declarations/universal-sequence-covers-declared-class.md) | 22 | `result-track:94516c02e3f2df2bc3cdf995329c8d1f4cd59ab52212f5661801812e60a219a0` |
+| 1 | `structure` | [UniversalSequenceCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/UniversalSequence.lean/declarations/universalsequencecertificate.md) | 10 | `declaration-track:bd599c31ce6c76ce0729d2f781264610a5e2c5cc8ab202a4dcfb918dd2dd090a` |
+| 2 | `theorem` | [universal_sequence_covers_declared_class](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/UniversalSequence.lean/declarations/universal-sequence-covers-declared-class.md) | 22 | `result-track:94516c02e3f2df2bc3cdf995329c8d1f4cd59ab52212f5661801812e60a219a0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

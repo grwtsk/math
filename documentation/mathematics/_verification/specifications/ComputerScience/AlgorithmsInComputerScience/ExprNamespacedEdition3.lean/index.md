@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ExprNamespacedEdition3.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ExprNamespacedEdition3.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExprNamespacedEdition3.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExprNamespacedEdition3.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -64,11 +64,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [CanonicalExpr](../../../../../ComputerScience/AlgorithmsInComputerScience/ExprNamespacedEdition3.lean/declarations/canonicalexpr.md) | 37 | `declaration-track:39a8f7ebc3fd4d2a8f31749aa6d90b73ccd601025a10df4fd32c4f0c1b81060b` |
-| 2 | `def` | [CanonicalExpr.childIds](../../../../../ComputerScience/AlgorithmsInComputerScience/ExprNamespacedEdition3.lean/declarations/canonicalexpr-childids.md) | 55 | `declaration-track:e637e9d9c0084074f264625177646c599bf65998da42df1c82525f3942f03cdb` |
-| 3 | `structure` | [PresentationVariant](../../../../../ComputerScience/AlgorithmsInComputerScience/ExprNamespacedEdition3.lean/declarations/presentationvariant.md) | 64 | `declaration-track:2ebda8959079894b0f225983f1fc8e79e0f7cffb3ae1388627b0409ffe14cd76` |
-| 4 | `structure` | [ExpressionRecord](../../../../../ComputerScience/AlgorithmsInComputerScience/ExprNamespacedEdition3.lean/declarations/expressionrecord.md) | 69 | `declaration-track:32f668afac376977de9ce56504d8dc03f490b4657fcbe38dbf2e8fe75797d070` |
-| 5 | `structure` | [ExprPath](../../../../../ComputerScience/AlgorithmsInComputerScience/ExprNamespacedEdition3.lean/declarations/exprpath.md) | 79 | `declaration-track:66cfbef31d3ee06e36de257978136e7634bc15010df6f856ab928f55e8e4abf5` |
+| 1 | `inductive` | [CanonicalExpr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExprNamespacedEdition3.lean/declarations/canonicalexpr.md) | 37 | `declaration-track:39a8f7ebc3fd4d2a8f31749aa6d90b73ccd601025a10df4fd32c4f0c1b81060b` |
+| 2 | `def` | [CanonicalExpr.childIds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExprNamespacedEdition3.lean/declarations/canonicalexpr-childids.md) | 55 | `declaration-track:e637e9d9c0084074f264625177646c599bf65998da42df1c82525f3942f03cdb` |
+| 3 | `structure` | [PresentationVariant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExprNamespacedEdition3.lean/declarations/presentationvariant.md) | 64 | `declaration-track:2ebda8959079894b0f225983f1fc8e79e0f7cffb3ae1388627b0409ffe14cd76` |
+| 4 | `structure` | [ExpressionRecord](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExprNamespacedEdition3.lean/declarations/expressionrecord.md) | 69 | `declaration-track:32f668afac376977de9ce56504d8dc03f490b4657fcbe38dbf2e8fe75797d070` |
+| 5 | `structure` | [ExprPath](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExprNamespacedEdition3.lean/declarations/exprpath.md) | 79 | `declaration-track:66cfbef31d3ee06e36de257978136e7634bc15010df6f856ab928f55e8e4abf5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

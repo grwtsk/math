@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/FrobeniusBitspaceNamespaced.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/FrobeniusBitspaceNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FrobeniusBitspaceNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FrobeniusBitspaceNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FrobeniusBitspace](../../../../ProbabilityTheoryAndStochasticProcesses/FrobeniusBitspaceNamespaced.lean/declarations/frobeniusbitspace.md) | 29 | `declaration-track:7f60b35938d4879e4d277ce038033ed589d7464c57f213d7570a97a351bf37c9` |
-| 2 | `def` | [bitValue](../../../../ProbabilityTheoryAndStochasticProcesses/FrobeniusBitspaceNamespaced.lean/declarations/bitvalue.md) | 36 | `declaration-track:cf7c9fb09abef61ae80142cf4a552e7e3e55e08c6e0322d4ac4abbed71e9a9b1` |
-| 3 | `def` | [bitNormSq](../../../../ProbabilityTheoryAndStochasticProcesses/FrobeniusBitspaceNamespaced.lean/declarations/bitnormsq.md) | 39 | `declaration-track:3b797b3535e48286430fad1b91f981782dd27a0c38768141e29ad11d0be6a383` |
-| 4 | `theorem` | [bitNormSq_le_one](../../../../ProbabilityTheoryAndStochasticProcesses/FrobeniusBitspaceNamespaced.lean/declarations/bitnormsq-le-one.md) | 42 | `result-track:9ddff37a0468b76b3dcfb6feb899f2647bf8e6d5d90ff6342f6b7350b3ce1317` |
+| 1 | `structure` | [FrobeniusBitspace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FrobeniusBitspaceNamespaced.lean/declarations/frobeniusbitspace.md) | 29 | `declaration-track:7f60b35938d4879e4d277ce038033ed589d7464c57f213d7570a97a351bf37c9` |
+| 2 | `def` | [bitValue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FrobeniusBitspaceNamespaced.lean/declarations/bitvalue.md) | 36 | `declaration-track:cf7c9fb09abef61ae80142cf4a552e7e3e55e08c6e0322d4ac4abbed71e9a9b1` |
+| 3 | `def` | [bitNormSq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FrobeniusBitspaceNamespaced.lean/declarations/bitnormsq.md) | 39 | `declaration-track:3b797b3535e48286430fad1b91f981782dd27a0c38768141e29ad11d0be6a383` |
+| 4 | `theorem` | [bitNormSq_le_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FrobeniusBitspaceNamespaced.lean/declarations/bitnormsq-le-one.md) | 42 | `result-track:9ddff37a0468b76b3dcfb6feb899f2647bf8e6d5d90ff6342f6b7350b3ce1317` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

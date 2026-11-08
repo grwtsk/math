@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightRatioSandwichControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightRatioSandwichControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightRatioSandwichControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightRatioSandwichControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.PinnedPrimeWeightRatioSandwich`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightRatioSandwich.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.PinnedPrimeWeightRatioSandwich`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightRatioSandwich.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [concrete_dyadic_bertrandFloor_positive](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightRatioSandwichControls.lean/declarations/concrete-dyadic-bertrandfloor-positive.md) | 15 | `result-track:d1c5c42192b432a8afff609c00ae26810289be5a1d505d48aea12ada6ac8951a` |
-| 2 | `theorem` | [concrete_dyadic_bertrandFloor_le_amplitude](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightRatioSandwichControls.lean/declarations/concrete-dyadic-bertrandfloor-le-amplitude.md) | 21 | `result-track:34831b29d55d875967e3fd35abdaf98c321c0288860c483448239a05a2d5713e` |
-| 3 | `theorem` | [concrete_dyadic_amplitude_ceiling](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightRatioSandwichControls.lean/declarations/concrete-dyadic-amplitude-ceiling.md) | 30 | `result-track:2ac19a7cc22a29afa8dcaa80c3f57295cd93aba31fca317fa577b9bd750eb691` |
-| 4 | `theorem` | [concrete_dyadic_requiredCapacity_sandwich](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightRatioSandwichControls.lean/declarations/concrete-dyadic-requiredcapacity-sandwich.md) | 43 | `result-track:946d69dadc152eab2ccf6da6c2c1d936e84a402b77f56f8b585b3aa71f9dfde6` |
-| 5 | `theorem` | [concrete_dyadic_bertrandMajorant_eq_cubic](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightRatioSandwichControls.lean/declarations/concrete-dyadic-bertrandmajorant-eq-cubic.md) | 63 | `result-track:409cb645e4df826ebea8d111cdaa85cf497a1966fb512a219ca8cc249c317455` |
-| 6 | `def` | [requiredRatioSandwichObligations](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightRatioSandwichControls.lean/declarations/requiredratiosandwichobligations.md) | 74 | `declaration-track:c79f0300b3f2d942c79450b674df2e8eac55f37c3c762b2650a5feb0e73245f1` |
-| 7 | `def` | [prohibitedPromotions](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightRatioSandwichControls.lean/declarations/prohibitedpromotions.md) | 82 | `declaration-track:53a97920f3b24963d62579987d94076f3eb1f2f57f12ec979462b06f7395299e` |
+| 1 | `theorem` | [concrete_dyadic_bertrandFloor_positive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightRatioSandwichControls.lean/declarations/concrete-dyadic-bertrandfloor-positive.md) | 15 | `result-track:d1c5c42192b432a8afff609c00ae26810289be5a1d505d48aea12ada6ac8951a` |
+| 2 | `theorem` | [concrete_dyadic_bertrandFloor_le_amplitude](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightRatioSandwichControls.lean/declarations/concrete-dyadic-bertrandfloor-le-amplitude.md) | 21 | `result-track:34831b29d55d875967e3fd35abdaf98c321c0288860c483448239a05a2d5713e` |
+| 3 | `theorem` | [concrete_dyadic_amplitude_ceiling](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightRatioSandwichControls.lean/declarations/concrete-dyadic-amplitude-ceiling.md) | 30 | `result-track:2ac19a7cc22a29afa8dcaa80c3f57295cd93aba31fca317fa577b9bd750eb691` |
+| 4 | `theorem` | [concrete_dyadic_requiredCapacity_sandwich](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightRatioSandwichControls.lean/declarations/concrete-dyadic-requiredcapacity-sandwich.md) | 43 | `result-track:946d69dadc152eab2ccf6da6c2c1d936e84a402b77f56f8b585b3aa71f9dfde6` |
+| 5 | `theorem` | [concrete_dyadic_bertrandMajorant_eq_cubic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightRatioSandwichControls.lean/declarations/concrete-dyadic-bertrandmajorant-eq-cubic.md) | 63 | `result-track:409cb645e4df826ebea8d111cdaa85cf497a1966fb512a219ca8cc249c317455` |
+| 6 | `def` | [requiredRatioSandwichObligations](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightRatioSandwichControls.lean/declarations/requiredratiosandwichobligations.md) | 74 | `declaration-track:c79f0300b3f2d942c79450b674df2e8eac55f37c3c762b2650a5feb0e73245f1` |
+| 7 | `def` | [prohibitedPromotions](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightRatioSandwichControls.lean/declarations/prohibitedpromotions.md) | 82 | `declaration-track:53a97920f3b24963d62579987d94076f3eb1f2f57f12ec979462b06f7395299e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

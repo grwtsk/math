@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/Traversable.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/Traversable.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Traversable.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Traversable.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/Traversable.lean/declarations/instance-source-edition-2.md) | 23 | `declaration-track:f5c2bb8681065587d9832e3660ba18dbbbfe98d68e535a4c72a3ce2a5085cb29` |
-| 2 | `lemma` | [comp_traverse](../../../../../../ComputerScience/TheoryOfData/DataStructures/Traversable.lean/declarations/comp-traverse.md) | 27 | `result-track:b4571a63f01b17959b2e4443ae3161b41fffc63525528c82d762cc19d8dc0b1c` |
-| 3 | `lemma` | [traverse_eq_map_id](../../../../../../ComputerScience/TheoryOfData/DataStructures/Traversable.lean/declarations/traverse-eq-map-id.md) | 40 | `result-track:fced2542b95167dc6338005aec3ea355dbd52c05738583f1f14108243bfadf01` |
-| 4 | `lemma` | [naturality](../../../../../../ComputerScience/TheoryOfData/DataStructures/Traversable.lean/declarations/naturality.md) | 48 | `result-track:783d815213225a08c34ab3f6e4c493688e8c5e411193d15d00133ef79f3779ab` |
-| 5 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/Traversable.lean/declarations/instance.md) | 57 | `declaration-track:3342cd02904f2a348aba7ecb32258b5df366b6f654ec76b289e46c1cfb5bfef8` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Traversable.lean/declarations/instance-source-edition-2.md) | 23 | `declaration-track:f5c2bb8681065587d9832e3660ba18dbbbfe98d68e535a4c72a3ce2a5085cb29` |
+| 2 | `lemma` | [comp_traverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Traversable.lean/declarations/comp-traverse.md) | 27 | `result-track:b4571a63f01b17959b2e4443ae3161b41fffc63525528c82d762cc19d8dc0b1c` |
+| 3 | `lemma` | [traverse_eq_map_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Traversable.lean/declarations/traverse-eq-map-id.md) | 40 | `result-track:fced2542b95167dc6338005aec3ea355dbd52c05738583f1f14108243bfadf01` |
+| 4 | `lemma` | [naturality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Traversable.lean/declarations/naturality.md) | 48 | `result-track:783d815213225a08c34ab3f6e4c493688e8c5e411193d15d00133ef79f3779ab` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Traversable.lean/declarations/instance.md) | 57 | `declaration-track:3342cd02904f2a348aba7ecb32258b5df366b6f654ec76b289e46c1cfb5bfef8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

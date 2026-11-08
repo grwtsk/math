@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GroupSpectralChannel.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GroupSpectralChannel.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GroupSpectralChannel.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GroupSpectralChannel.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Farey.GroupSuperwalk`](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GroupSuperwalk.lean/index.md) — import line 9; pinned internal source present.
+- [`GRWTSK.NumberTheory.Farey.GroupSuperwalk`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GroupSuperwalk.lean/index.md) — import line 9; pinned internal source present.
 - `Mathlib.Tactic` — import line 10; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [MatC](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GroupSpectralChannel.lean/declarations/matc.md) | 34 | `declaration-track:e1751b14e6a28b029d9eb66e6e77dfb8bf9f29897f4de8e5f35bc5306d57d6e6` |
-| 2 | `def` | [complexWord](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GroupSpectralChannel.lean/declarations/complexword.md) | 37 | `declaration-track:91985e77797f953bb6e162af9d716a03ec4bc4ebcb0cd9e3f36b482c9ad54063` |
-| 3 | `theorem` | [complexWord_nil](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GroupSpectralChannel.lean/declarations/complexword-nil.md) | 41 | `result-track:7b4ba84bd946118bffb5a6da69116e09760689f79b2ae61c9327e3b1abadb85e` |
-| 4 | `theorem` | [complexWord_cons](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GroupSpectralChannel.lean/declarations/complexword-cons.md) | 43 | `result-track:4b0ea00c221fd1a03751742c530d6b450137f7a13849b603c0ac4a95a12a787b` |
-| 5 | `theorem` | [complexWord_append](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GroupSpectralChannel.lean/declarations/complexword-append.md) | 46 | `result-track:983262d25dd199a5576b17c5654bfce7c7a630c81de7d70dfa2b5babef8a23db` |
-| 6 | `theorem` | [commutes_complexWord](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GroupSpectralChannel.lean/declarations/commutes-complexword.md) | 54 | `result-track:4e9968fe8849a5c6be2dd4b2d15b18b449cdfc9cfec211c550bd8b6122b92e51` |
-| 7 | `theorem` | [commutant_is_scalar](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GroupSpectralChannel.lean/declarations/commutant-is-scalar.md) | 79 | `result-track:9d45dd09e390019542b37085aff015051cca2a04afe04e80ba8527d06f81541a` |
-| 8 | `theorem` | [native_invariant_projector_trivial](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GroupSpectralChannel.lean/declarations/native-invariant-projector-trivial.md) | 102 | `result-track:b737fce2b32562fb2287e91d8d4b4413386173ab64ce3d7ea38c7b96abbf1497` |
-| 9 | `theorem` | [no_proper_native_channel](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GroupSpectralChannel.lean/declarations/no-proper-native-channel.md) | 123 | `result-track:2e4e3f99b40e8e0d4b0041fbf5191125e0324f67e37e0d0b33ccd3aabfc21f0c` |
+| 1 | `abbrev` | [MatC](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GroupSpectralChannel.lean/declarations/matc.md) | 34 | `declaration-track:e1751b14e6a28b029d9eb66e6e77dfb8bf9f29897f4de8e5f35bc5306d57d6e6` |
+| 2 | `def` | [complexWord](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GroupSpectralChannel.lean/declarations/complexword.md) | 37 | `declaration-track:91985e77797f953bb6e162af9d716a03ec4bc4ebcb0cd9e3f36b482c9ad54063` |
+| 3 | `theorem` | [complexWord_nil](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GroupSpectralChannel.lean/declarations/complexword-nil.md) | 41 | `result-track:7b4ba84bd946118bffb5a6da69116e09760689f79b2ae61c9327e3b1abadb85e` |
+| 4 | `theorem` | [complexWord_cons](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GroupSpectralChannel.lean/declarations/complexword-cons.md) | 43 | `result-track:4b0ea00c221fd1a03751742c530d6b450137f7a13849b603c0ac4a95a12a787b` |
+| 5 | `theorem` | [complexWord_append](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GroupSpectralChannel.lean/declarations/complexword-append.md) | 46 | `result-track:983262d25dd199a5576b17c5654bfce7c7a630c81de7d70dfa2b5babef8a23db` |
+| 6 | `theorem` | [commutes_complexWord](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GroupSpectralChannel.lean/declarations/commutes-complexword.md) | 54 | `result-track:4e9968fe8849a5c6be2dd4b2d15b18b449cdfc9cfec211c550bd8b6122b92e51` |
+| 7 | `theorem` | [commutant_is_scalar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GroupSpectralChannel.lean/declarations/commutant-is-scalar.md) | 79 | `result-track:9d45dd09e390019542b37085aff015051cca2a04afe04e80ba8527d06f81541a` |
+| 8 | `theorem` | [native_invariant_projector_trivial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GroupSpectralChannel.lean/declarations/native-invariant-projector-trivial.md) | 102 | `result-track:b737fce2b32562fb2287e91d8d4b4413386173ab64ce3d7ea38c7b96abbf1497` |
+| 9 | `theorem` | [no_proper_native_channel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GroupSpectralChannel.lean/declarations/no-proper-native-channel.md) | 123 | `result-track:2e4e3f99b40e8e0d4b0041fbf5191125e0324f67e37e0d0b33ccd3aabfc21f0c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

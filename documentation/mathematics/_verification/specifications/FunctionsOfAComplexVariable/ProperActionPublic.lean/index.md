@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/ProperActionPublic.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/ProperActionPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ProperActionPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ProperActionPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,17 +57,17 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [num_continuous](../../../../FunctionsOfAComplexVariable/ProperActionPublic.lean/declarations/num-continuous.md) | 30 | `result-track:91806b1a9012a916ff4bc57501a07dad175f88f450ffc4c0cad132fd5bc594dc` |
-| 2 | `theorem` | [denom_continuous](../../../../FunctionsOfAComplexVariable/ProperActionPublic.lean/declarations/denom-continuous.md) | 33 | `result-track:8a31baee8036675481511f27952b8f27984fa60ee4016c8f1c6c9ee46cf65634` |
-| 3 | `lemma` | [continuous_toSL2R](../../../../FunctionsOfAComplexVariable/ProperActionPublic.lean/declarations/continuous-tosl2r.md) | 36 | `result-track:227f9dc0662cc2651cff7137f6473f6dd141facd9dd032d7758bc4f704f2a1ce` |
-| 4 | `instance` | [instContinuousSMulSL2R](../../../../FunctionsOfAComplexVariable/ProperActionPublic.lean/declarations/instcontinuoussmulsl2r.md) | 42 | `declaration-track:5ea12761944d60a0545e12e51bf4602f7a437b16886b503c045c14fba103f222` |
-| 5 | `lemma` | [σ_eventuallyEq](../../../../FunctionsOfAComplexVariable/ProperActionPublic.lean/declarations/eventuallyeq.md) | 52 | `result-track:58fb27ebdc627707f9a0c3d692b43d22e74d073f80fd6ee5b4c5f1aa5242d187` |
-| 6 | `instance` | [instContinuousSMulGL2R](../../../../FunctionsOfAComplexVariable/ProperActionPublic.lean/declarations/instcontinuoussmulgl2r.md) | 63 | `declaration-track:b6bb60cc1f3cf37c80d50a6d6c0b8ba2c495195709dc822403363505cfd496ff` |
-| 7 | `lemma` | [cdsq_le](../../../../FunctionsOfAComplexVariable/ProperActionPublic.lean/declarations/cdsq-le.md) | 74 | `result-track:4f3558671915442a2442f44049830734b04b5ed475fb53ec7bfb5df942429827` |
-| 8 | `lemma` | [absq_le](../../../../FunctionsOfAComplexVariable/ProperActionPublic.lean/declarations/absq-le.md) | 88 | `result-track:0c5f63f27748bdfd4226f1a7a56cba44bdf36d4bc4e48bca8657c5581f157b04` |
-| 9 | `lemma` | [isProperMap_smul_I](../../../../FunctionsOfAComplexVariable/ProperActionPublic.lean/declarations/ispropermap-smul-i.md) | 98 | `result-track:2f7816ddc61e952c0aca6a2388c4d1aac7c52f6c11d428a31be1c8ccc082771b` |
-| 10 | `instance` | [instProperSMul](../../../../FunctionsOfAComplexVariable/ProperActionPublic.lean/declarations/instpropersmul.md) | 122 | `declaration-track:22d5161cedbae3bfe25df91b64a5959cb09e50fd1e2f1d323955385246d0e584` |
-| 11 | `instance` | [instProperlyDiscontinuousSL2RSubgroup](../../../../FunctionsOfAComplexVariable/ProperActionPublic.lean/declarations/instproperlydiscontinuoussl2rsubgroup.md) | 128 | `declaration-track:a0f7a38d36d159bc8c88570302f60fed3c1429ae4d83f23b752afa46a44ec9cf` |
+| 1 | `theorem` | [num_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ProperActionPublic.lean/declarations/num-continuous.md) | 30 | `result-track:91806b1a9012a916ff4bc57501a07dad175f88f450ffc4c0cad132fd5bc594dc` |
+| 2 | `theorem` | [denom_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ProperActionPublic.lean/declarations/denom-continuous.md) | 33 | `result-track:8a31baee8036675481511f27952b8f27984fa60ee4016c8f1c6c9ee46cf65634` |
+| 3 | `lemma` | [continuous_toSL2R](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ProperActionPublic.lean/declarations/continuous-tosl2r.md) | 36 | `result-track:227f9dc0662cc2651cff7137f6473f6dd141facd9dd032d7758bc4f704f2a1ce` |
+| 4 | `instance` | [instContinuousSMulSL2R](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ProperActionPublic.lean/declarations/instcontinuoussmulsl2r.md) | 42 | `declaration-track:5ea12761944d60a0545e12e51bf4602f7a437b16886b503c045c14fba103f222` |
+| 5 | `lemma` | [σ_eventuallyEq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ProperActionPublic.lean/declarations/eventuallyeq.md) | 52 | `result-track:58fb27ebdc627707f9a0c3d692b43d22e74d073f80fd6ee5b4c5f1aa5242d187` |
+| 6 | `instance` | [instContinuousSMulGL2R](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ProperActionPublic.lean/declarations/instcontinuoussmulgl2r.md) | 63 | `declaration-track:b6bb60cc1f3cf37c80d50a6d6c0b8ba2c495195709dc822403363505cfd496ff` |
+| 7 | `lemma` | [cdsq_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ProperActionPublic.lean/declarations/cdsq-le.md) | 74 | `result-track:4f3558671915442a2442f44049830734b04b5ed475fb53ec7bfb5df942429827` |
+| 8 | `lemma` | [absq_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ProperActionPublic.lean/declarations/absq-le.md) | 88 | `result-track:0c5f63f27748bdfd4226f1a7a56cba44bdf36d4bc4e48bca8657c5581f157b04` |
+| 9 | `lemma` | [isProperMap_smul_I](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ProperActionPublic.lean/declarations/ispropermap-smul-i.md) | 98 | `result-track:2f7816ddc61e952c0aca6a2388c4d1aac7c52f6c11d428a31be1c8ccc082771b` |
+| 10 | `instance` | [instProperSMul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ProperActionPublic.lean/declarations/instpropersmul.md) | 122 | `declaration-track:22d5161cedbae3bfe25df91b64a5959cb09e50fd1e2f1d323955385246d0e584` |
+| 11 | `instance` | [instProperlyDiscontinuousSL2RSubgroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ProperActionPublic.lean/declarations/instproperlydiscontinuoussl2rsubgroup.md) | 128 | `declaration-track:a0f7a38d36d159bc8c88570302f60fed3c1429ae4d83f23b752afa46a44ec9cf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CertifiedPermutationProjection.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CertifiedPermutationProjection.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CertifiedPermutationProjection.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CertifiedPermutationProjection.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,13 +60,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [BitMatrix.Algebra.InvolutionProjection](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CertifiedPermutationProjection.lean/declarations/bitmatrix-algebra-involutionprojection.md) | 36 | `declaration-track:128a284a5cdc10548d1bb816a017e1b496bfbb45a2b99904ce97f4f3c6fb8cdd` |
-| 2 | `def` | [ofCertified](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CertifiedPermutationProjection.lean/declarations/ofcertified.md) | 54 | `declaration-track:219c3e26e4dc7e14ae2c61f6d62655d46c65f7979b42f98608c0dfde9ebef1ac` |
-| 3 | `theorem` | [actionMatrix_eq_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CertifiedPermutationProjection.lean/declarations/actionmatrix-eq-iff.md) | 67 | `result-track:de8307f1fc3a33c57dd2b61b5378b8bfa1c0fa46d76b8abd3a0beb3d2d8b7cd0` |
-| 4 | `theorem` | [existsUnique_true_in_column](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CertifiedPermutationProjection.lean/declarations/existsunique-true-in-column.md) | 73 | `result-track:020ced08f8f7ba11d9384ea4af457bc06b538a2792e6f2efa58382a03a12cdeb` |
-| 5 | `theorem` | [existsUnique_true_in_row](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CertifiedPermutationProjection.lean/declarations/existsunique-true-in-row.md) | 81 | `result-track:b41d89fccc38ec19624fa95453312f4d84d086ae9321b57b55558cc5fd623700` |
-| 6 | `theorem` | [actionMatrix_column](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CertifiedPermutationProjection.lean/declarations/actionmatrix-column.md) | 98 | `result-track:53709ed5f3e5857597fb4e534a067c5349fed287ca7d0e65fcf4ef80c7adc28f` |
-| 7 | `theorem` | [f2Matrix_eq_ite](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CertifiedPermutationProjection.lean/declarations/f2matrix-eq-ite.md) | 105 | `result-track:96d68762456d214208904c87b526e9ba753c9cde92677466483ea31d7350293b` |
+| 1 | `structure` | [BitMatrix.Algebra.InvolutionProjection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CertifiedPermutationProjection.lean/declarations/bitmatrix-algebra-involutionprojection.md) | 36 | `declaration-track:128a284a5cdc10548d1bb816a017e1b496bfbb45a2b99904ce97f4f3c6fb8cdd` |
+| 2 | `def` | [ofCertified](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CertifiedPermutationProjection.lean/declarations/ofcertified.md) | 54 | `declaration-track:219c3e26e4dc7e14ae2c61f6d62655d46c65f7979b42f98608c0dfde9ebef1ac` |
+| 3 | `theorem` | [actionMatrix_eq_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CertifiedPermutationProjection.lean/declarations/actionmatrix-eq-iff.md) | 67 | `result-track:de8307f1fc3a33c57dd2b61b5378b8bfa1c0fa46d76b8abd3a0beb3d2d8b7cd0` |
+| 4 | `theorem` | [existsUnique_true_in_column](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CertifiedPermutationProjection.lean/declarations/existsunique-true-in-column.md) | 73 | `result-track:020ced08f8f7ba11d9384ea4af457bc06b538a2792e6f2efa58382a03a12cdeb` |
+| 5 | `theorem` | [existsUnique_true_in_row](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CertifiedPermutationProjection.lean/declarations/existsunique-true-in-row.md) | 81 | `result-track:b41d89fccc38ec19624fa95453312f4d84d086ae9321b57b55558cc5fd623700` |
+| 6 | `theorem` | [actionMatrix_column](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CertifiedPermutationProjection.lean/declarations/actionmatrix-column.md) | 98 | `result-track:53709ed5f3e5857597fb4e534a067c5349fed287ca7d0e65fcf4ef80c7adc28f` |
+| 7 | `theorem` | [f2Matrix_eq_ite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CertifiedPermutationProjection.lean/declarations/f2matrix-eq-ite.md) | 105 | `result-track:96d68762456d214208904c87b526e9ba753c9cde92677466483ea31d7350293b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

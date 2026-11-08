@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CorrectnessTerminatingAligned.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CorrectnessTerminatingAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CorrectnessTerminatingAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CorrectnessTerminatingAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,13 +61,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [compExactValue](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CorrectnessTerminatingAligned.lean/declarations/compexactvalue.md) | 65 | `declaration-track:ec8d77a887e9dabfa17950fb2f964ecb6c60bc99d62e36f2b62fe2bc008d7a87` |
-| 2 | `theorem` | [compExactValue_correctness_of_stream_eq_some_aux_comp](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CorrectnessTerminatingAligned.lean/declarations/compexactvalue-correctness-of-stream-eq-some-aux-comp.md) | 77 | `result-track:1b8e6a1a6316e9042985c3e8ed7e4bab33c05f88b89db26868dea1bcc5079dd1` |
-| 3 | `theorem` | [compExactValue_correctness_of_stream_eq_some](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CorrectnessTerminatingAligned.lean/declarations/compexactvalue-correctness-of-stream-eq-some.md) | 103 | `result-track:9bb3112370a07d7aaa2906f9bca31f7642cc3a7a2536f9de0a8f2b8832f68a0d` |
-| 4 | `theorem` | [of_correctness_of_nth_stream_eq_none](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CorrectnessTerminatingAligned.lean/declarations/of-correctness-of-nth-stream-eq-none.md) | 217 | `result-track:a80438f76d82c551bf20565f6c539af0b89cde3dcf27ce7277413fab6ea22ac9` |
-| 5 | `theorem` | [of_correctness_of_terminatedAt](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CorrectnessTerminatingAligned.lean/declarations/of-correctness-of-terminatedat.md) | 246 | `result-track:c8d77bdf01cd550eecc6d6b2e79957eea5fc0315aac467fedbdb501289847e0a` |
-| 6 | `theorem` | [of_correctness_of_terminates](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CorrectnessTerminatingAligned.lean/declarations/of-correctness-of-terminates.md) | 256 | `result-track:ad92a8ab19a354f3700e7b4b21c54cac376315d6da576f2d7925fa52809a42c3` |
-| 7 | `theorem` | [of_correctness_atTop_of_terminates](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CorrectnessTerminatingAligned.lean/declarations/of-correctness-attop-of-terminates.md) | 267 | `result-track:b4f057c73b1f283cdba48759edcfa5c8ceaa524d78cd6a8043bcf6dedd6cb941` |
+| 1 | `def` | [compExactValue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CorrectnessTerminatingAligned.lean/declarations/compexactvalue.md) | 65 | `declaration-track:ec8d77a887e9dabfa17950fb2f964ecb6c60bc99d62e36f2b62fe2bc008d7a87` |
+| 2 | `theorem` | [compExactValue_correctness_of_stream_eq_some_aux_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CorrectnessTerminatingAligned.lean/declarations/compexactvalue-correctness-of-stream-eq-some-aux-comp.md) | 77 | `result-track:1b8e6a1a6316e9042985c3e8ed7e4bab33c05f88b89db26868dea1bcc5079dd1` |
+| 3 | `theorem` | [compExactValue_correctness_of_stream_eq_some](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CorrectnessTerminatingAligned.lean/declarations/compexactvalue-correctness-of-stream-eq-some.md) | 103 | `result-track:9bb3112370a07d7aaa2906f9bca31f7642cc3a7a2536f9de0a8f2b8832f68a0d` |
+| 4 | `theorem` | [of_correctness_of_nth_stream_eq_none](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CorrectnessTerminatingAligned.lean/declarations/of-correctness-of-nth-stream-eq-none.md) | 217 | `result-track:a80438f76d82c551bf20565f6c539af0b89cde3dcf27ce7277413fab6ea22ac9` |
+| 5 | `theorem` | [of_correctness_of_terminatedAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CorrectnessTerminatingAligned.lean/declarations/of-correctness-of-terminatedat.md) | 246 | `result-track:c8d77bdf01cd550eecc6d6b2e79957eea5fc0315aac467fedbdb501289847e0a` |
+| 6 | `theorem` | [of_correctness_of_terminates](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CorrectnessTerminatingAligned.lean/declarations/of-correctness-of-terminates.md) | 256 | `result-track:ad92a8ab19a354f3700e7b4b21c54cac376315d6da576f2d7925fa52809a42c3` |
+| 7 | `theorem` | [of_correctness_atTop_of_terminates](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CorrectnessTerminatingAligned.lean/declarations/of-correctness-attop-of-terminates.md) | 267 | `result-track:b4f057c73b1f283cdba48759edcfa5c8ceaa524d78cd6a8043bcf6dedd6cb941` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

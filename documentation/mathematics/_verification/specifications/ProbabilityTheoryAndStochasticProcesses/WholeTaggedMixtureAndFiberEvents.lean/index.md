@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/WholeTaggedMixtureAndFiberEvents.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/WholeTaggedMixtureAndFiberEvents.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/WholeTaggedMixtureAndFiberEvents.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/WholeTaggedMixtureAndFiberEvents.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -50,8 +50,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 - `Mathlib.Algebra.BigOperators.Group.Finset.Basic` — import line 21; external provider; requires a separately pinned dependency.
 - `Mathlib.Data.Fintype.BigOperators` — import line 22; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 23; external provider; requires a separately pinned dependency.
-- [Whole Packet And Observable Laws](../../../../ProbabilityTheoryAndStochasticProcesses/WholePacketAndObservableLaws.lean/index.md) — import line 25; pinned internal source present.
-- [Event Values And Bounds](../../../../ProbabilityTheoryAndStochasticProcesses/EventValuesAndBounds.lean/index.md) — import line 26; pinned internal source present.
+- [Whole Packet And Observable Laws](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/WholePacketAndObservableLaws.lean/index.md) — import line 25; pinned internal source present.
+- [Event Values And Bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/EventValuesAndBounds.lean/index.md) — import line 26; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -62,16 +62,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mix](../../../../ProbabilityTheoryAndStochasticProcesses/WholeTaggedMixtureAndFiberEvents.lean/declarations/mix.md) | 55 | `declaration-track:0f52aa2b88cb4179001eed8a5f4965b5b5da949224ea3414184f35ca3f5013c0` |
-| 2 | `theorem` | [mix_spectralValue](../../../../ProbabilityTheoryAndStochasticProcesses/WholeTaggedMixtureAndFiberEvents.lean/declarations/mix-spectralvalue.md) | 63 | `result-track:5155cee2e3ccc695cca21bb5ad987f6365d7b6e2b8ff7ff953c3ce9ec4e2f0bb` |
-| 3 | `theorem` | [mix_probability](../../../../ProbabilityTheoryAndStochasticProcesses/WholeTaggedMixtureAndFiberEvents.lean/declarations/mix-probability.md) | 70 | `result-track:8e67ff648c0ff6a05ce2cabf11a3a58e0bb36546062b97602750d0e35b666ffe` |
-| 4 | `theorem` | [mix_probability_normalized](../../../../ProbabilityTheoryAndStochasticProcesses/WholeTaggedMixtureAndFiberEvents.lean/declarations/mix-probability-normalized.md) | 76 | `result-track:36f07fff4a156b46e663c89316a8d2a5f74714fc948c8150d745181b23174c56` |
-| 5 | `theorem` | [expectation_mix](../../../../ProbabilityTheoryAndStochasticProcesses/WholeTaggedMixtureAndFiberEvents.lean/declarations/expectation-mix.md) | 82 | `result-track:8fa20f5e155c8cf3289cb9c09bfbff9688fb13e24208ee383f09bed97f406c2d` |
-| 6 | `theorem` | [spectralExpectation_mix](../../../../ProbabilityTheoryAndStochasticProcesses/WholeTaggedMixtureAndFiberEvents.lean/declarations/spectralexpectation-mix.md) | 100 | `result-track:96b08c7a9e6853607f441f0b9427e9cb5a5d8385cb89add57376f3bf63042205` |
-| 7 | `theorem` | [spectralEventProbability_mix](../../../../ProbabilityTheoryAndStochasticProcesses/WholeTaggedMixtureAndFiberEvents.lean/declarations/spectraleventprobability-mix.md) | 109 | `result-track:309dea20698383e5a3e10998a17732b1da353447bcfe14444bb0ad1573d4bbb4` |
-| 8 | `def` | [fiberEvent](../../../../ProbabilityTheoryAndStochasticProcesses/WholeTaggedMixtureAndFiberEvents.lean/declarations/fiberevent.md) | 116 | `declaration-track:331e8b478e65b136b24f16860f8ae19a7ce734de6421d2cd2acd6c401f3a49e0` |
-| 9 | `theorem` | [mem_fiberEvent](../../../../ProbabilityTheoryAndStochasticProcesses/WholeTaggedMixtureAndFiberEvents.lean/declarations/mem-fiberevent.md) | 122 | `result-track:87dc24ce8425711afa04779ad471a5c1af934a4f530f9d198b94bf1f6215a057` |
-| 10 | `theorem` | [eventProbability_mix](../../../../ProbabilityTheoryAndStochasticProcesses/WholeTaggedMixtureAndFiberEvents.lean/declarations/eventprobability-mix.md) | 128 | `result-track:38ac59ce039c5e049013d8176cc8b4ebd08f20e0a483de186de36f4b542b29dd` |
+| 1 | `def` | [mix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/WholeTaggedMixtureAndFiberEvents.lean/declarations/mix.md) | 55 | `declaration-track:0f52aa2b88cb4179001eed8a5f4965b5b5da949224ea3414184f35ca3f5013c0` |
+| 2 | `theorem` | [mix_spectralValue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/WholeTaggedMixtureAndFiberEvents.lean/declarations/mix-spectralvalue.md) | 63 | `result-track:5155cee2e3ccc695cca21bb5ad987f6365d7b6e2b8ff7ff953c3ce9ec4e2f0bb` |
+| 3 | `theorem` | [mix_probability](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/WholeTaggedMixtureAndFiberEvents.lean/declarations/mix-probability.md) | 70 | `result-track:8e67ff648c0ff6a05ce2cabf11a3a58e0bb36546062b97602750d0e35b666ffe` |
+| 4 | `theorem` | [mix_probability_normalized](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/WholeTaggedMixtureAndFiberEvents.lean/declarations/mix-probability-normalized.md) | 76 | `result-track:36f07fff4a156b46e663c89316a8d2a5f74714fc948c8150d745181b23174c56` |
+| 5 | `theorem` | [expectation_mix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/WholeTaggedMixtureAndFiberEvents.lean/declarations/expectation-mix.md) | 82 | `result-track:8fa20f5e155c8cf3289cb9c09bfbff9688fb13e24208ee383f09bed97f406c2d` |
+| 6 | `theorem` | [spectralExpectation_mix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/WholeTaggedMixtureAndFiberEvents.lean/declarations/spectralexpectation-mix.md) | 100 | `result-track:96b08c7a9e6853607f441f0b9427e9cb5a5d8385cb89add57376f3bf63042205` |
+| 7 | `theorem` | [spectralEventProbability_mix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/WholeTaggedMixtureAndFiberEvents.lean/declarations/spectraleventprobability-mix.md) | 109 | `result-track:309dea20698383e5a3e10998a17732b1da353447bcfe14444bb0ad1573d4bbb4` |
+| 8 | `def` | [fiberEvent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/WholeTaggedMixtureAndFiberEvents.lean/declarations/fiberevent.md) | 116 | `declaration-track:331e8b478e65b136b24f16860f8ae19a7ce734de6421d2cd2acd6c401f3a49e0` |
+| 9 | `theorem` | [mem_fiberEvent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/WholeTaggedMixtureAndFiberEvents.lean/declarations/mem-fiberevent.md) | 122 | `result-track:87dc24ce8425711afa04779ad471a5c1af934a4f530f9d198b94bf1f6215a057` |
+| 10 | `theorem` | [eventProbability_mix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/WholeTaggedMixtureAndFiberEvents.lean/declarations/eventprobability-mix.md) | 128 | `result-track:38ac59ce039c5e049013d8176cc8b4ebd08f20e0a483de186de36f4b542b29dd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/DiscreteProjection.lean/index.md) · [Full source](../../../../GeneralTopology/DiscreteProjection.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiscreteProjection.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiscreteProjection.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [topology](../../../../GeneralTopology/DiscreteProjection.lean/declarations/topology.md) | 21 | `declaration-track:e4ad58f421a6b39f6a72e4c0bd0189e45392ef494f79a5234d04e5c94c8bbd99` |
-| 2 | `theorem` | [projection_continuous](../../../../GeneralTopology/DiscreteProjection.lean/declarations/projection-continuous.md) | 25 | `result-track:23da5059d92e53600ac9309c10b824fc80ef6fa0d132d6bc7a927a6b9671135e` |
-| 3 | `theorem` | [continuous_into_iff](../../../../GeneralTopology/DiscreteProjection.lean/declarations/continuous-into-iff.md) | 31 | `result-track:3095986d7343178eb2b2fc7bea2d12f530981de1588abd078e1b03b435129bc0` |
-| 4 | `theorem` | [continuous_of_factor](../../../../GeneralTopology/DiscreteProjection.lean/declarations/continuous-of-factor.md) | 39 | `result-track:58bc7adf7d45ca5f059b798d30a9597a52d1298835cd824668855f8a638551fd` |
-| 5 | `theorem` | [fiber_isOpen](../../../../GeneralTopology/DiscreteProjection.lean/declarations/fiber-isopen.md) | 52 | `result-track:94d76ea5b21d3e19916eff62c10cea26f2411c593a37677e558950cd2bc1b60b` |
-| 6 | `theorem` | [fiber_isClosed](../../../../GeneralTopology/DiscreteProjection.lean/declarations/fiber-isclosed.md) | 60 | `result-track:f0db9460c968d5f7056ba729b1d7be67f33c0ceda4abf5b792fb6276e7b233be` |
-| 7 | `theorem` | [ring_structure](../../../../GeneralTopology/DiscreteProjection.lean/declarations/ring-structure.md) | 69 | `result-track:7167e2a1ba3972edf22880ded3d0d0ca0ec8860fd7e66d2625cce8fc4721e69f` |
+| 1 | `def` | [topology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiscreteProjection.lean/declarations/topology.md) | 21 | `declaration-track:e4ad58f421a6b39f6a72e4c0bd0189e45392ef494f79a5234d04e5c94c8bbd99` |
+| 2 | `theorem` | [projection_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiscreteProjection.lean/declarations/projection-continuous.md) | 25 | `result-track:23da5059d92e53600ac9309c10b824fc80ef6fa0d132d6bc7a927a6b9671135e` |
+| 3 | `theorem` | [continuous_into_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiscreteProjection.lean/declarations/continuous-into-iff.md) | 31 | `result-track:3095986d7343178eb2b2fc7bea2d12f530981de1588abd078e1b03b435129bc0` |
+| 4 | `theorem` | [continuous_of_factor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiscreteProjection.lean/declarations/continuous-of-factor.md) | 39 | `result-track:58bc7adf7d45ca5f059b798d30a9597a52d1298835cd824668855f8a638551fd` |
+| 5 | `theorem` | [fiber_isOpen](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiscreteProjection.lean/declarations/fiber-isopen.md) | 52 | `result-track:94d76ea5b21d3e19916eff62c10cea26f2411c593a37677e558950cd2bc1b60b` |
+| 6 | `theorem` | [fiber_isClosed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiscreteProjection.lean/declarations/fiber-isclosed.md) | 60 | `result-track:f0db9460c968d5f7056ba729b1d7be67f33c0ceda4abf5b792fb6276e7b233be` |
+| 7 | `theorem` | [ring_structure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiscreteProjection.lean/declarations/ring-structure.md) | 69 | `result-track:7167e2a1ba3972edf22880ded3d0d0ca0ec8860fd7e66d2625cce8fc4721e69f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

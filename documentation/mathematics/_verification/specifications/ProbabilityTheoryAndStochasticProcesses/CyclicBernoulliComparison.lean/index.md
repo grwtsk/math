@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/CyclicBernoulliComparison.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/CyclicBernoulliComparison.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CyclicBernoulliComparison.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CyclicBernoulliComparison.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteWalshBernoulliTV`](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteWalshBernoulliTV.lean/index.md) — import line 9; pinned internal source present.
+- [`GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteWalshBernoulliTV`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteWalshBernoulliTV.lean/index.md) — import line 9; pinned internal source present.
 - `Mathlib` — import line 10; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [fullPattern_match_indicator](../../../../ProbabilityTheoryAndStochasticProcesses/CyclicBernoulliComparison.lean/declarations/fullpattern-match-indicator.md) | 48 | `result-track:7a41692a32b47293c208e448435e1c1d72b97a8522dfbf33cb1bc731e7c45f17` |
-| 2 | `theorem` | [patternCountOn_univ_eq_count](../../../../ProbabilityTheoryAndStochasticProcesses/CyclicBernoulliComparison.lean/declarations/patterncounton-univ-eq-count.md) | 57 | `result-track:a586a366526c6553ea75bfafdba5ac2ed46f0965491289fea344d6371489db51` |
-| 3 | `theorem` | [sum_patternCountOn_event_eq_rootCount](../../../../ProbabilityTheoryAndStochasticProcesses/CyclicBernoulliComparison.lean/declarations/sum-patterncounton-event-eq-rootcount.md) | 70 | `result-track:3c4b5365642466235b9596c73c9570f67948474beb19454401cb5230088625a7` |
-| 4 | `theorem` | [empiricalEvent_eq_sum_empiricalPatterns](../../../../ProbabilityTheoryAndStochasticProcesses/CyclicBernoulliComparison.lean/declarations/empiricalevent-eq-sum-empiricalpatterns.md) | 110 | `result-track:e36fd46d9272a945b87d7eb84de045630fddd22eecc30c4b5dd830e909f6fbea` |
-| 5 | `def` | [uniformPatternEventMass](../../../../ProbabilityTheoryAndStochasticProcesses/CyclicBernoulliComparison.lean/declarations/uniformpatterneventmass.md) | 148 | `declaration-track:366dfc4c17f00ac4a277c614b1eb6d61ff6245c070441f79b01b78cf9270998c` |
-| 6 | `theorem` | [uniformPatternEventDeviation_eq_rooted](../../../../ProbabilityTheoryAndStochasticProcesses/CyclicBernoulliComparison.lean/declarations/uniformpatterneventdeviation-eq-rooted.md) | 155 | `result-track:05470c19d3393ed97a0e7a3ac62e72ccd280df50a29176e5d28256a74fc82faf` |
-| 7 | `theorem` | [empiricalVsUniformTV_triangle](../../../../ProbabilityTheoryAndStochasticProcesses/CyclicBernoulliComparison.lean/declarations/empiricalvsuniformtv-triangle.md) | 172 | `result-track:7adb4946be4d62dd7f1c083f7ffca35b4503ba670ea31cae16c75f8b2c8e826a` |
-| 8 | `def` | [ordinarySelected](../../../../ProbabilityTheoryAndStochasticProcesses/CyclicBernoulliComparison.lean/declarations/ordinaryselected.md) | 220 | `declaration-track:e6b3aabac6892540b98cdcd273098bdcb5b3c92b56a8d7b05fe45229aa3dd355` |
-| 9 | `def` | [cyclicSelected](../../../../ProbabilityTheoryAndStochasticProcesses/CyclicBernoulliComparison.lean/declarations/cyclicselected.md) | 225 | `declaration-track:9904ee63a021860453bb08e11923ebd7080228d4f3d37677f728c755f9e21c32` |
-| 10 | `theorem` | [cyclicEmpiricalVsUniformTV_le](../../../../ProbabilityTheoryAndStochasticProcesses/CyclicBernoulliComparison.lean/declarations/cyclicempiricalvsuniformtv-le.md) | 239 | `result-track:5401983ab1956e93d743e0496686726ff5b5a7f180b64444d8baff474df3ec67` |
+| 1 | `theorem` | [fullPattern_match_indicator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CyclicBernoulliComparison.lean/declarations/fullpattern-match-indicator.md) | 48 | `result-track:7a41692a32b47293c208e448435e1c1d72b97a8522dfbf33cb1bc731e7c45f17` |
+| 2 | `theorem` | [patternCountOn_univ_eq_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CyclicBernoulliComparison.lean/declarations/patterncounton-univ-eq-count.md) | 57 | `result-track:a586a366526c6553ea75bfafdba5ac2ed46f0965491289fea344d6371489db51` |
+| 3 | `theorem` | [sum_patternCountOn_event_eq_rootCount](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CyclicBernoulliComparison.lean/declarations/sum-patterncounton-event-eq-rootcount.md) | 70 | `result-track:3c4b5365642466235b9596c73c9570f67948474beb19454401cb5230088625a7` |
+| 4 | `theorem` | [empiricalEvent_eq_sum_empiricalPatterns](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CyclicBernoulliComparison.lean/declarations/empiricalevent-eq-sum-empiricalpatterns.md) | 110 | `result-track:e36fd46d9272a945b87d7eb84de045630fddd22eecc30c4b5dd830e909f6fbea` |
+| 5 | `def` | [uniformPatternEventMass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CyclicBernoulliComparison.lean/declarations/uniformpatterneventmass.md) | 148 | `declaration-track:366dfc4c17f00ac4a277c614b1eb6d61ff6245c070441f79b01b78cf9270998c` |
+| 6 | `theorem` | [uniformPatternEventDeviation_eq_rooted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CyclicBernoulliComparison.lean/declarations/uniformpatterneventdeviation-eq-rooted.md) | 155 | `result-track:05470c19d3393ed97a0e7a3ac62e72ccd280df50a29176e5d28256a74fc82faf` |
+| 7 | `theorem` | [empiricalVsUniformTV_triangle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CyclicBernoulliComparison.lean/declarations/empiricalvsuniformtv-triangle.md) | 172 | `result-track:7adb4946be4d62dd7f1c083f7ffca35b4503ba670ea31cae16c75f8b2c8e826a` |
+| 8 | `def` | [ordinarySelected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CyclicBernoulliComparison.lean/declarations/ordinaryselected.md) | 220 | `declaration-track:e6b3aabac6892540b98cdcd273098bdcb5b3c92b56a8d7b05fe45229aa3dd355` |
+| 9 | `def` | [cyclicSelected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CyclicBernoulliComparison.lean/declarations/cyclicselected.md) | 225 | `declaration-track:9904ee63a021860453bb08e11923ebd7080228d4f3d37677f728c755f9e21c32` |
+| 10 | `theorem` | [cyclicEmpiricalVsUniformTV_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CyclicBernoulliComparison.lean/declarations/cyclicempiricalvsuniformtv-le.md) | 239 | `result-track:5401983ab1956e93d743e0496686726ff5b5a7f180b64444d8baff474df3ec67` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

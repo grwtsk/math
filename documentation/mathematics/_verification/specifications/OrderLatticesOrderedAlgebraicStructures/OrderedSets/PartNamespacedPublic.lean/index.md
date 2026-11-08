@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/PartNamespacedPublic.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/PartNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/PartNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/PartNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [Monotone.partBind](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/PartNamespacedPublic.lean/declarations/monotone-partbind.md) | 34 | `result-track:38bd50fe31f9184913492819acebfa463a86dc3e51e25debf0917b8850db0d0a` |
-| 2 | `lemma` | [Antitone.partBind](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/PartNamespacedPublic.lean/declarations/antitone-partbind.md) | 40 | `result-track:91147aee3ceefcfdd8447a6a9db24e22c4bb67bd2c828a1169623bf849f6d5d6` |
-| 3 | `lemma` | [Monotone.partMap](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/PartNamespacedPublic.lean/declarations/monotone-partmap.md) | 51 | `result-track:470dc37d00676fcdc6327177ef09cec3a2188c32458547148d1ed90d684a57eb` |
-| 4 | `lemma` | [Antitone.partMap](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/PartNamespacedPublic.lean/declarations/antitone-partmap.md) | 54 | `result-track:2d9d465214a4c4b36a48425c536180df920412e609e01de38ca0a6aaeedef58e` |
-| 5 | `lemma` | [Monotone.partSeq](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/PartNamespacedPublic.lean/declarations/monotone-partseq.md) | 62 | `result-track:d50e40e913993b2c44221093ee0ce1a9c5c950a3aed254153a58a057cb524e86` |
-| 6 | `lemma` | [Antitone.partSeq](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/PartNamespacedPublic.lean/declarations/antitone-partseq.md) | 65 | `result-track:167cc37fc663b69a196e4093b6d78292d0b5234aa4e365fe79064c4b5ecac97e` |
-| 7 | `def` | [partBind](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/PartNamespacedPublic.lean/declarations/partbind.md) | 74 | `declaration-track:ce8dd76bdb3477acba549a1ead7adffe8a7218d3f7f13a111e1af4935dfcd5ee` |
+| 1 | `lemma` | [Monotone.partBind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/PartNamespacedPublic.lean/declarations/monotone-partbind.md) | 34 | `result-track:38bd50fe31f9184913492819acebfa463a86dc3e51e25debf0917b8850db0d0a` |
+| 2 | `lemma` | [Antitone.partBind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/PartNamespacedPublic.lean/declarations/antitone-partbind.md) | 40 | `result-track:91147aee3ceefcfdd8447a6a9db24e22c4bb67bd2c828a1169623bf849f6d5d6` |
+| 3 | `lemma` | [Monotone.partMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/PartNamespacedPublic.lean/declarations/monotone-partmap.md) | 51 | `result-track:470dc37d00676fcdc6327177ef09cec3a2188c32458547148d1ed90d684a57eb` |
+| 4 | `lemma` | [Antitone.partMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/PartNamespacedPublic.lean/declarations/antitone-partmap.md) | 54 | `result-track:2d9d465214a4c4b36a48425c536180df920412e609e01de38ca0a6aaeedef58e` |
+| 5 | `lemma` | [Monotone.partSeq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/PartNamespacedPublic.lean/declarations/monotone-partseq.md) | 62 | `result-track:d50e40e913993b2c44221093ee0ce1a9c5c950a3aed254153a58a057cb524e86` |
+| 6 | `lemma` | [Antitone.partSeq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/PartNamespacedPublic.lean/declarations/antitone-partseq.md) | 65 | `result-track:167cc37fc663b69a196e4093b6d78292d0b5234aa4e365fe79064c4b5ecac97e` |
+| 7 | `def` | [partBind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/PartNamespacedPublic.lean/declarations/partbind.md) | 74 | `declaration-track:ce8dd76bdb3477acba549a1ead7adffe8a7218d3f7f13a111e1af4935dfcd5ee` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

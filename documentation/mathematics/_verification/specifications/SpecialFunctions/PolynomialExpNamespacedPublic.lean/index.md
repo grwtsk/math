@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../SpecialFunctions/PolynomialExpNamespacedPublic.lean/index.md) · [Full source](../../../../SpecialFunctions/PolynomialExpNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/PolynomialExpNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/PolynomialExpNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [tendsto_div_exp_atTop](../../../../SpecialFunctions/PolynomialExpNamespacedPublic.lean/declarations/tendsto-div-exp-attop.md) | 41 | `result-track:0450699d320c0140dd060178ae65c71b5e68433ad07e1aa0ddd9d82a1bdadacf` |
+| 1 | `theorem` | [tendsto_div_exp_atTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/PolynomialExpNamespacedPublic.lean/declarations/tendsto-div-exp-attop.md) | 41 | `result-track:0450699d320c0140dd060178ae65c71b5e68433ad07e1aa0ddd9d82a1bdadacf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

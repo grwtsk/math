@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/RestrictionNamespacedFiniteCommunicationSite.lean/index.md) · [Full source](../../../../Combinatorics/RestrictionNamespacedFiniteCommunicationSite.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RestrictionNamespacedFiniteCommunicationSite.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RestrictionNamespacedFiniteCommunicationSite.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FiniteCommunicationSite](../../../../Combinatorics/RestrictionNamespacedFiniteCommunicationSite.lean/declarations/finitecommunicationsite.md) | 24 | `declaration-track:f49f3f9e69887fe23f6411807a9d9730040838209754631a416ce3954e43d16b` |
-| 2 | `theorem` | [FiniteCommunicationSite.restrict_identity](../../../../Combinatorics/RestrictionNamespacedFiniteCommunicationSite.lean/declarations/finitecommunicationsite-restrict-identity.md) | 51 | `result-track:6bd9ccb9f2b6eb7b63482ed0c3241e23dca678b7c0b487df366c13ac1a838889` |
-| 3 | `theorem` | [FiniteCommunicationSite.restrict_composition](../../../../Combinatorics/RestrictionNamespacedFiniteCommunicationSite.lean/declarations/finitecommunicationsite-restrict-composition.md) | 59 | `result-track:6ffbbc15f95cc61ceae74b6976b0656a6c95fe914fd14587f5ade8deba2ae2a1` |
+| 1 | `structure` | [FiniteCommunicationSite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RestrictionNamespacedFiniteCommunicationSite.lean/declarations/finitecommunicationsite.md) | 24 | `declaration-track:f49f3f9e69887fe23f6411807a9d9730040838209754631a416ce3954e43d16b` |
+| 2 | `theorem` | [FiniteCommunicationSite.restrict_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RestrictionNamespacedFiniteCommunicationSite.lean/declarations/finitecommunicationsite-restrict-identity.md) | 51 | `result-track:6bd9ccb9f2b6eb7b63482ed0c3241e23dca678b7c0b487df366c13ac1a838889` |
+| 3 | `theorem` | [FiniteCommunicationSite.restrict_composition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RestrictionNamespacedFiniteCommunicationSite.lean/declarations/finitecommunicationsite-restrict-composition.md) | 59 | `result-track:6ffbbc15f95cc61ceae74b6976b0656a6c95fe914fd14587f5ade8deba2ae2a1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

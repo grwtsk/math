@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/AtomicMeasureNamespaced.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/AtomicMeasureNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/AtomicMeasureNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/AtomicMeasureNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,13 +60,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [atomicMeasure](../../../../ProbabilityTheoryAndStochasticProcesses/AtomicMeasureNamespaced.lean/declarations/atomicmeasure.md) | 33 | `declaration-track:915fa9fc4faec718529af8ef0d9dccdfa79ce77e25cd0876b0ad4d0baeb4378f` |
-| 2 | `theorem` | [atomicMeasure_apply](../../../../ProbabilityTheoryAndStochasticProcesses/AtomicMeasureNamespaced.lean/declarations/atomicmeasure-apply.md) | 39 | `result-track:e1b1d3a1c18fe96b60c818274a39b56bf47288288ef43d85d3c3c610dffa65bc` |
-| 3 | `theorem` | [atomicMeasure_event](../../../../ProbabilityTheoryAndStochasticProcesses/AtomicMeasureNamespaced.lean/declarations/atomicmeasure-event.md) | 50 | `result-track:4766583c730fe74a156e54c43aad721ac79c1090da30bb89d2cd1e3d1f1d2d29` |
-| 4 | `theorem` | [atomicMeasure_univ](../../../../ProbabilityTheoryAndStochasticProcesses/AtomicMeasureNamespaced.lean/declarations/atomicmeasure-univ.md) | 69 | `result-track:86d17a826c1d4812b2c0d3b430f0ef812dd05a9bc15afeea213de5d65d7557f5` |
-| 5 | `instance` | [atomicMeasure_isProbabilityMeasure](../../../../ProbabilityTheoryAndStochasticProcesses/AtomicMeasureNamespaced.lean/declarations/atomicmeasure-isprobabilitymeasure.md) | 75 | `declaration-track:60ba7109a6117bffefca9557b722ec890227e6e514c37f7a6082824bc97b39b5` |
-| 6 | `def` | [mixedAtomicMeasure](../../../../ProbabilityTheoryAndStochasticProcesses/AtomicMeasureNamespaced.lean/declarations/mixedatomicmeasure.md) | 82 | `declaration-track:c9cc30400de63ca08ce506cee3e98eee43fd1e908fc8b1f436b9cd788cb164e4` |
-| 7 | `theorem` | [atomicMeasure_mix](../../../../ProbabilityTheoryAndStochasticProcesses/AtomicMeasureNamespaced.lean/declarations/atomicmeasure-mix.md) | 88 | `result-track:9d94057a63739d0ef94666d42faf0cc5ae7ac9e369b854ac0b2265e285a014d0` |
+| 1 | `def` | [atomicMeasure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/AtomicMeasureNamespaced.lean/declarations/atomicmeasure.md) | 33 | `declaration-track:915fa9fc4faec718529af8ef0d9dccdfa79ce77e25cd0876b0ad4d0baeb4378f` |
+| 2 | `theorem` | [atomicMeasure_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/AtomicMeasureNamespaced.lean/declarations/atomicmeasure-apply.md) | 39 | `result-track:e1b1d3a1c18fe96b60c818274a39b56bf47288288ef43d85d3c3c610dffa65bc` |
+| 3 | `theorem` | [atomicMeasure_event](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/AtomicMeasureNamespaced.lean/declarations/atomicmeasure-event.md) | 50 | `result-track:4766583c730fe74a156e54c43aad721ac79c1090da30bb89d2cd1e3d1f1d2d29` |
+| 4 | `theorem` | [atomicMeasure_univ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/AtomicMeasureNamespaced.lean/declarations/atomicmeasure-univ.md) | 69 | `result-track:86d17a826c1d4812b2c0d3b430f0ef812dd05a9bc15afeea213de5d65d7557f5` |
+| 5 | `instance` | [atomicMeasure_isProbabilityMeasure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/AtomicMeasureNamespaced.lean/declarations/atomicmeasure-isprobabilitymeasure.md) | 75 | `declaration-track:60ba7109a6117bffefca9557b722ec890227e6e514c37f7a6082824bc97b39b5` |
+| 6 | `def` | [mixedAtomicMeasure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/AtomicMeasureNamespaced.lean/declarations/mixedatomicmeasure.md) | 82 | `declaration-track:c9cc30400de63ca08ce506cee3e98eee43fd1e908fc8b1f436b9cd788cb164e4` |
+| 7 | `theorem` | [atomicMeasure_mix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/AtomicMeasureNamespaced.lean/declarations/atomicmeasure-mix.md) | 88 | `result-track:9d94057a63739d0ef94666d42faf0cc5ae7ac9e369b854ac0b2265e285a014d0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

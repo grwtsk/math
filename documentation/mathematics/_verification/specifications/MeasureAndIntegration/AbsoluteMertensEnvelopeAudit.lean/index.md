@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/AbsoluteMertensEnvelopeAudit.lean/index.md) · [Full source](../../../../MeasureAndIntegration/AbsoluteMertensEnvelopeAudit.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AbsoluteMertensEnvelopeAudit.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AbsoluteMertensEnvelopeAudit.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [quarter_power_div_sqrt](../../../../MeasureAndIntegration/AbsoluteMertensEnvelopeAudit.lean/declarations/quarter-power-div-sqrt.md) | 28 | `result-track:5a9e0d55f447cc7a3fa621351aa379d9ba7db29666bb9128d20f42d101d8abfb` |
-| 2 | `theorem` | [three_quarter_power_integral](../../../../MeasureAndIntegration/AbsoluteMertensEnvelopeAudit.lean/declarations/three-quarter-power-integral.md) | 35 | `result-track:8bf4c73403d8936588a1c506df4b309567c4dab1438349c447575528864fae16` |
-| 3 | `theorem` | [not_integrableOn_div_sqrt_of_quarter_power_le](../../../../MeasureAndIntegration/AbsoluteMertensEnvelopeAudit.lean/declarations/not-integrableon-div-sqrt-of-quarter-power-le.md) | 44 | `result-track:1b950d2c033e6aef7c74074ce0c9abc914c127ecf49d31377c0c0ff9d9166427` |
+| 1 | `theorem` | [quarter_power_div_sqrt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AbsoluteMertensEnvelopeAudit.lean/declarations/quarter-power-div-sqrt.md) | 28 | `result-track:5a9e0d55f447cc7a3fa621351aa379d9ba7db29666bb9128d20f42d101d8abfb` |
+| 2 | `theorem` | [three_quarter_power_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AbsoluteMertensEnvelopeAudit.lean/declarations/three-quarter-power-integral.md) | 35 | `result-track:8bf4c73403d8936588a1c506df4b309567c4dab1438349c447575528864fae16` |
+| 3 | `theorem` | [not_integrableOn_div_sqrt_of_quarter_power_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AbsoluteMertensEnvelopeAudit.lean/declarations/not-integrableon-div-sqrt-of-quarter-power-le.md) | 44 | `result-track:1b950d2c033e6aef7c74074ce0c9abc914c127ecf49d31377c0c0ff9d9166427` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

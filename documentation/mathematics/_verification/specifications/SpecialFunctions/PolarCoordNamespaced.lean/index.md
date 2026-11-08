@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../SpecialFunctions/PolarCoordNamespaced.lean/index.md) · [Full source](../../../../SpecialFunctions/PolarCoordNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/PolarCoordNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/PolarCoordNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `macro_rules` | [(anonymous)](../../../../SpecialFunctions/PolarCoordNamespaced.lean/declarations/macro-rules.md) | 33 | `declaration-track:b10d5b28ddfffcf4f03f7cccd3b961856a7ec830dc6a4015727f4809dbf013d5` |
-| 2 | `def` | [polarCoord](../../../../SpecialFunctions/PolarCoordNamespaced.lean/declarations/polarcoord.md) | 42 | `declaration-track:46eb78c34c598e63ed0ef47eba96d01e6a4ce8bfbcd6a9c598a01e94f265f36d` |
-| 3 | `theorem` | [hasFDerivAt_polarCoord_symm](../../../../SpecialFunctions/PolarCoordNamespaced.lean/declarations/hasfderivat-polarcoord-symm.md) | 107 | `result-track:ad77db4c60c18331e380cdb04567dcfcbae348bcf13153676d71fe231cab1cff` |
-| 4 | `instance` | [(anonymous)](../../../../SpecialFunctions/PolarCoordNamespaced.lean/declarations/instance.md) | 119 | `declaration-track:b3b16f965871615a81fe2215c49483aab56d71ca40e0c2e2c0ea98d39c189397` |
-| 5 | `theorem` | [polarCoord_source_ae_eq_univ](../../../../SpecialFunctions/PolarCoordNamespaced.lean/declarations/polarcoord-source-ae-eq-univ.md) | 122 | `result-track:8ad421bbde7b828e82baec2782995a850e796f310d078bf766ac9752e2dc9d50` |
-| 6 | `theorem` | [integral_comp_polarCoord_symm](../../../../SpecialFunctions/PolarCoordNamespaced.lean/declarations/integral-comp-polarcoord-symm.md) | 138 | `result-track:ca500a4a758e0f420abf378267b9c1098bcf111cb0a24ce76194ff82c875ca52` |
+| 1 | `macro_rules` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/PolarCoordNamespaced.lean/declarations/macro-rules.md) | 33 | `declaration-track:b10d5b28ddfffcf4f03f7cccd3b961856a7ec830dc6a4015727f4809dbf013d5` |
+| 2 | `def` | [polarCoord](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/PolarCoordNamespaced.lean/declarations/polarcoord.md) | 42 | `declaration-track:46eb78c34c598e63ed0ef47eba96d01e6a4ce8bfbcd6a9c598a01e94f265f36d` |
+| 3 | `theorem` | [hasFDerivAt_polarCoord_symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/PolarCoordNamespaced.lean/declarations/hasfderivat-polarcoord-symm.md) | 107 | `result-track:ad77db4c60c18331e380cdb04567dcfcbae348bcf13153676d71fe231cab1cff` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/PolarCoordNamespaced.lean/declarations/instance.md) | 119 | `declaration-track:b3b16f965871615a81fe2215c49483aab56d71ca40e0c2e2c0ea98d39c189397` |
+| 5 | `theorem` | [polarCoord_source_ae_eq_univ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/PolarCoordNamespaced.lean/declarations/polarcoord-source-ae-eq-univ.md) | 122 | `result-track:8ad421bbde7b828e82baec2782995a850e796f310d078bf766ac9752e2dc9d50` |
+| 6 | `theorem` | [integral_comp_polarCoord_symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/PolarCoordNamespaced.lean/declarations/integral-comp-polarcoord-symm.md) | 138 | `result-track:ca500a4a758e0f420abf378267b9c1098bcf111cb0a24ce76194ff82c875ca52` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

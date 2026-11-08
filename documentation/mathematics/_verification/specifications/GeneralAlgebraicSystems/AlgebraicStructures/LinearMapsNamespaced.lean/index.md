@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/LinearMapsNamespaced.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/LinearMapsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/LinearMapsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/LinearMapsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [charP_end](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/LinearMapsNamespaced.lean/declarations/charp-end.md) | 48 | `result-track:83be0942ec45389269f30a1d84e5fadb5b08eb96b39ec34bc9ddb8304934151d` |
-| 2 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/LinearMapsNamespaced.lean/declarations/instance.md) | 61 | `declaration-track:065715c53f5e1efe3c43ee099c0900abd7224bd60164be4803d6dd0ab0474f7c` |
-| 3 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/LinearMapsNamespaced.lean/declarations/instance-source-edition-2.md) | 65 | `declaration-track:e361bd987411c51e6626e10d7d85de9cadaa92c7263c6deae87527e3caab8825` |
+| 1 | `theorem` | [charP_end](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/LinearMapsNamespaced.lean/declarations/charp-end.md) | 48 | `result-track:83be0942ec45389269f30a1d84e5fadb5b08eb96b39ec34bc9ddb8304934151d` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/LinearMapsNamespaced.lean/declarations/instance.md) | 61 | `declaration-track:065715c53f5e1efe3c43ee099c0900abd7224bd60164be4803d6dd0ab0474f7c` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/LinearMapsNamespaced.lean/declarations/instance-source-edition-2.md) | 65 | `declaration-track:e361bd987411c51e6626e10d7d85de9cadaa92c7263c6deae87527e3caab8825` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

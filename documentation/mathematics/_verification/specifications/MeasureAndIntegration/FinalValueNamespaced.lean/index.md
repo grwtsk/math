@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/FinalValueNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/FinalValueNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FinalValueNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FinalValueNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [laplace_rescale](../../../../MeasureAndIntegration/FinalValueNamespaced.lean/declarations/laplace-rescale.md) | 22 | `result-track:9336017b721a20318fbae68d144305e2aa2bef83e904bf51c5b2cdf9cc5afaa5` |
-| 2 | `theorem` | [bounded_final_value](../../../../MeasureAndIntegration/FinalValueNamespaced.lean/declarations/bounded-final-value.md) | 35 | `result-track:2c116119cce0818d4321587243a06d1342e68fc2ea22ccfb96dbf93464819d2f` |
+| 1 | `theorem` | [laplace_rescale](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FinalValueNamespaced.lean/declarations/laplace-rescale.md) | 22 | `result-track:9336017b721a20318fbae68d144305e2aa2bef83e904bf51c5b2cdf9cc5afaa5` |
+| 2 | `theorem` | [bounded_final_value](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FinalValueNamespaced.lean/declarations/bounded-final-value.md) | 35 | `result-track:2c116119cce0818d4321587243a06d1342e68fc2ea22ccfb96dbf93464819d2f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

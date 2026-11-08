@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/WholePrivateSourceAndTwoViews.lean/index.md) · [Full source](../../../../Combinatorics/WholePrivateSourceAndTwoViews.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WholePrivateSourceAndTwoViews.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WholePrivateSourceAndTwoViews.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [sourceLayoutFixture](../../../../Combinatorics/WholePrivateSourceAndTwoViews.lean/declarations/sourcelayoutfixture.md) | 29 | `declaration-track:6dc89510a46bdd3c606040178bcfea0d5320267ceeae06d0310f80943dd24c2b` |
-| 2 | `example` | [(anonymous)](../../../../Combinatorics/WholePrivateSourceAndTwoViews.lean/declarations/example.md) | 34 | `declaration-track:598fe9d78d22409a14808b49bf715f6724834190bbc9a97cc9febf0ccf57859d` |
-| 3 | `example` | [(anonymous)](../../../../Combinatorics/WholePrivateSourceAndTwoViews.lean/declarations/example-source-edition-2.md) | 41 | `declaration-track:7daa97866d0990ac2f4880aa2adcdfc504436dfe1e275d5725b7fd70c5c7c06b` |
+| 1 | `def` | [sourceLayoutFixture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WholePrivateSourceAndTwoViews.lean/declarations/sourcelayoutfixture.md) | 29 | `declaration-track:6dc89510a46bdd3c606040178bcfea0d5320267ceeae06d0310f80943dd24c2b` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WholePrivateSourceAndTwoViews.lean/declarations/example.md) | 34 | `declaration-track:598fe9d78d22409a14808b49bf715f6724834190bbc9a97cc9febf0ccf57859d` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WholePrivateSourceAndTwoViews.lean/declarations/example-source-edition-2.md) | 41 | `declaration-track:7daa97866d0990ac2f4880aa2adcdfc504436dfe1e275d5725b7fd70c5c7c06b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

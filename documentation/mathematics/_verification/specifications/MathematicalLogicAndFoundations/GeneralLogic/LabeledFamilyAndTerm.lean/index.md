@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LabeledFamilyAndTerm.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LabeledFamilyAndTerm.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LabeledFamilyAndTerm.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LabeledFamilyAndTerm.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [Degree](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LabeledFamilyAndTerm.lean/declarations/degree.md) | 38 | `declaration-track:683208df51e4b286000173f1dea9765b046d9fd5648d28caacad77e5c10d912e` |
-| 2 | `structure` | [GradedObject](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LabeledFamilyAndTerm.lean/declarations/gradedobject.md) | 40 | `declaration-track:6163e2a6cbe10e7a7b5eae8e65c8ce37ff439de1e17b0d16cfef92b1a756c381` |
-| 3 | `def` | [GradedObject.term](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LabeledFamilyAndTerm.lean/declarations/gradedobject-term.md) | 44 | `declaration-track:f27167d4eb466de7a4a0f8cec53b4d5b0fa813aed065c5351de313fa54bead8e` |
-| 4 | `theorem` | [graded_object_has_term](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LabeledFamilyAndTerm.lean/declarations/graded-object-has-term.md) | 49 | `result-track:50a87067e9c9b30bc4141f1291f16ceaf4279baa935f15663591e1f5c45b0e0e` |
+| 1 | `abbrev` | [Degree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LabeledFamilyAndTerm.lean/declarations/degree.md) | 38 | `declaration-track:683208df51e4b286000173f1dea9765b046d9fd5648d28caacad77e5c10d912e` |
+| 2 | `structure` | [GradedObject](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LabeledFamilyAndTerm.lean/declarations/gradedobject.md) | 40 | `declaration-track:6163e2a6cbe10e7a7b5eae8e65c8ce37ff439de1e17b0d16cfef92b1a756c381` |
+| 3 | `def` | [GradedObject.term](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LabeledFamilyAndTerm.lean/declarations/gradedobject-term.md) | 44 | `declaration-track:f27167d4eb466de7a4a0f8cec53b4d5b0fa813aed065c5351de313fa54bead8e` |
+| 4 | `theorem` | [graded_object_has_term](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LabeledFamilyAndTerm.lean/declarations/graded-object-has-term.md) | 49 | `result-track:50a87067e9c9b30bc4141f1291f16ceaf4279baa935f15663591e1f5c45b0e0e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

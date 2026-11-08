@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../IntegralTransformsOperationalCalculus/PositiveGaussianLogFlow.lean/index.md) · [Full source](../../../../IntegralTransformsOperationalCalculus/PositiveGaussianLogFlow.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/PositiveGaussianLogFlow.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/PositiveGaussianLogFlow.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.MellinTransform.GaussianLogFlow`](../../../../IntegralTransformsOperationalCalculus/MellinTransformGaussianLogFlow.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.Analysis.MellinTransform.GaussianLogFlow`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/MellinTransformGaussianLogFlow.lean/index.md) — import line 3; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_zero_entire](../../../../IntegralTransformsOperationalCalculus/PositiveGaussianLogFlow.lean/declarations/actual-zero-entire.md) | 9 | `result-track:cf58636b7eeac00372107ad07520c2d29d2346176691c9db73b373dce6768277` |
-| 2 | `theorem` | [positive_profile_identity](../../../../IntegralTransformsOperationalCalculus/PositiveGaussianLogFlow.lean/declarations/positive-profile-identity.md) | 12 | `result-track:6a5adde00fd0869af868c19ba0741151bf6746630fb81ffc2eec2d9719344efb` |
-| 3 | `theorem` | [actual_one_identity](../../../../IntegralTransformsOperationalCalculus/PositiveGaussianLogFlow.lean/declarations/actual-one-identity.md) | 16 | `result-track:abc53309b91cef5839d11c1eab8a7fb19e3a4915b9b813ad49fcb0efebb396f3` |
-| 4 | `theorem` | [actual_derivative_bound](../../../../IntegralTransformsOperationalCalculus/PositiveGaussianLogFlow.lean/declarations/actual-derivative-bound.md) | 19 | `result-track:9eb8b25d1f7df3af5066c77b89d771db20dd3405c167308d619b759cb45d3ea3` |
-| 5 | `lemma` | [coefficient_nonzero](../../../../IntegralTransformsOperationalCalculus/PositiveGaussianLogFlow.lean/declarations/coefficient-nonzero.md) | 24 | `result-track:43eea1f3851fc4b0384f095b7cfdd0c04744720259e80dd298104f88363ef411` |
-| 6 | `lemma` | [actual_zero_flow_value](../../../../IntegralTransformsOperationalCalculus/PositiveGaussianLogFlow.lean/declarations/actual-zero-flow-value.md) | 30 | `result-track:2ee17dc80c5aa5f2203f9f2d3138ad96ed30edabce41eaacd36bc81bd22c34e9` |
-| 7 | `lemma` | [actual_zero_profile_value](../../../../IntegralTransformsOperationalCalculus/PositiveGaussianLogFlow.lean/declarations/actual-zero-profile-value.md) | 37 | `result-track:6b648b899deaa23c85012127079d6df9a94666c7690724c314ae95d62969680c` |
-| 8 | `theorem` | [actual_zero_identity_false](../../../../IntegralTransformsOperationalCalculus/PositiveGaussianLogFlow.lean/declarations/actual-zero-identity-false.md) | 42 | `result-track:083528939be6fb331ad48910c773e53eb92081ee8f743241b8551b317fa956d9` |
+| 1 | `theorem` | [actual_zero_entire](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/PositiveGaussianLogFlow.lean/declarations/actual-zero-entire.md) | 9 | `result-track:cf58636b7eeac00372107ad07520c2d29d2346176691c9db73b373dce6768277` |
+| 2 | `theorem` | [positive_profile_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/PositiveGaussianLogFlow.lean/declarations/positive-profile-identity.md) | 12 | `result-track:6a5adde00fd0869af868c19ba0741151bf6746630fb81ffc2eec2d9719344efb` |
+| 3 | `theorem` | [actual_one_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/PositiveGaussianLogFlow.lean/declarations/actual-one-identity.md) | 16 | `result-track:abc53309b91cef5839d11c1eab8a7fb19e3a4915b9b813ad49fcb0efebb396f3` |
+| 4 | `theorem` | [actual_derivative_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/PositiveGaussianLogFlow.lean/declarations/actual-derivative-bound.md) | 19 | `result-track:9eb8b25d1f7df3af5066c77b89d771db20dd3405c167308d619b759cb45d3ea3` |
+| 5 | `lemma` | [coefficient_nonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/PositiveGaussianLogFlow.lean/declarations/coefficient-nonzero.md) | 24 | `result-track:43eea1f3851fc4b0384f095b7cfdd0c04744720259e80dd298104f88363ef411` |
+| 6 | `lemma` | [actual_zero_flow_value](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/PositiveGaussianLogFlow.lean/declarations/actual-zero-flow-value.md) | 30 | `result-track:2ee17dc80c5aa5f2203f9f2d3138ad96ed30edabce41eaacd36bc81bd22c34e9` |
+| 7 | `lemma` | [actual_zero_profile_value](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/PositiveGaussianLogFlow.lean/declarations/actual-zero-profile-value.md) | 37 | `result-track:6b648b899deaa23c85012127079d6df9a94666c7690724c314ae95d62969680c` |
+| 8 | `theorem` | [actual_zero_identity_false](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/PositiveGaussianLogFlow.lean/declarations/actual-zero-identity-false.md) | 42 | `result-track:083528939be6fb331ad48910c773e53eb92081ee8f743241b8551b317fa956d9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

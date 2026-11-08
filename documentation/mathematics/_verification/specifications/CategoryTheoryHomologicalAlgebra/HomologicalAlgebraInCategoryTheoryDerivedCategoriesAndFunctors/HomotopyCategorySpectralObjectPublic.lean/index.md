@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/HomotopyCategorySpectralObjectPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/HomotopyCategorySpectralObjectPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/HomotopyCategorySpectralObjectPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/HomotopyCategorySpectralObjectPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [composableArrowsFunctor](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/HomotopyCategorySpectralObjectPublic.lean/declarations/composablearrowsfunctor.md) | 35 | `declaration-track:73571dcb7c8ecf3a110f8ee58a1953123428cdc74de8bbf20f93ba8e9061efee` |
-| 2 | `def` | [spectralObjectMappingCone](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/HomotopyCategorySpectralObjectPublic.lean/declarations/spectralobjectmappingcone.md) | 46 | `declaration-track:794e4fbaf86e640290a9d184ed8d843640a0f33f5d948b39a0e5d37936bc6cb4` |
+| 1 | `def` | [composableArrowsFunctor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/HomotopyCategorySpectralObjectPublic.lean/declarations/composablearrowsfunctor.md) | 35 | `declaration-track:73571dcb7c8ecf3a110f8ee58a1953123428cdc74de8bbf20f93ba8e9061efee` |
+| 2 | `def` | [spectralObjectMappingCone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/HomotopyCategorySpectralObjectPublic.lean/declarations/spectralobjectmappingcone.md) | 46 | `declaration-track:794e4fbaf86e640290a9d184ed8d843640a0f33f5d948b39a0e5d37936bc6cb4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/PairingAndSequenceFormulas.lean/index.md) · [Full source](../../../../NumberTheory/PairingAndSequenceFormulas.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PairingAndSequenceFormulas.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PairingAndSequenceFormulas.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -50,7 +50,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 - `Mathlib.Data.Nat.Prime.Basic` — import line 18; external provider; requires a separately pinned dependency.
 - `Mathlib.Data.Nat.Prime.Nth` — import line 19; external provider; requires a separately pinned dependency.
 - `Mathlib.Data.Nat.PrimeFin` — import line 20; external provider; requires a separately pinned dependency.
-- [Specification And Prime Enumeration](../../../../NumberTheory/SpecificationAndPrimeEnumeration.lean/index.md) — import line 22; pinned internal source present.
+- [Specification And Prime Enumeration](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SpecificationAndPrimeEnumeration.lean/index.md) — import line 22; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -61,9 +61,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [cantorPair](../../../../NumberTheory/PairingAndSequenceFormulas.lean/declarations/cantorpair.md) | 37 | `declaration-track:f71e6b73dff84f140b18e8db7a3942e919a488315c08435c2b635acd0b1342c7` |
-| 2 | `def` | [finiteSequenceCode](../../../../NumberTheory/PairingAndSequenceFormulas.lean/declarations/finitesequencecode.md) | 41 | `declaration-track:ed27ea81749fbf5684855f45f7ce644b5104be71e18a62cce790ac0b4a41d4e4` |
-| 3 | `def` | [specificationCode](../../../../NumberTheory/PairingAndSequenceFormulas.lean/declarations/specificationcode.md) | 46 | `declaration-track:28dbb79d991385b3a49970cca2b4da741b0551d72535aef8782073b87616884c` |
+| 1 | `def` | [cantorPair](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PairingAndSequenceFormulas.lean/declarations/cantorpair.md) | 37 | `declaration-track:f71e6b73dff84f140b18e8db7a3942e919a488315c08435c2b635acd0b1342c7` |
+| 2 | `def` | [finiteSequenceCode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PairingAndSequenceFormulas.lean/declarations/finitesequencecode.md) | 41 | `declaration-track:ed27ea81749fbf5684855f45f7ce644b5104be71e18a62cce790ac0b4a41d4e4` |
+| 3 | `def` | [specificationCode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PairingAndSequenceFormulas.lean/declarations/specificationcode.md) | 46 | `declaration-track:28dbb79d991385b3a49970cca2b4da741b0551d72535aef8782073b87616884c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

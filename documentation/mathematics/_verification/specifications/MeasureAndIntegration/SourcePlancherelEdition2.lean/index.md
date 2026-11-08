@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourcePlancherelEdition2.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourcePlancherelEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePlancherelEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePlancherelEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [fourier_reflected_real](../../../../MeasureAndIntegration/SourcePlancherelEdition2.lean/declarations/fourier-reflected-real.md) | 26 | `result-track:0608cac287637343a4abc6f12b9a963e0fb1f0f0e7883083f5adc95df0d00b1d` |
-| 2 | `lemma` | [correlation_complex_eq_convolution](../../../../MeasureAndIntegration/SourcePlancherelEdition2.lean/declarations/correlation-complex-eq-convolution.md) | 41 | `result-track:4978346e18eb26ae17d3bcdae3ce05ee9336a49045d6b36123116e41c7465d8d` |
-| 3 | `lemma` | [fourier_correlation](../../../../MeasureAndIntegration/SourcePlancherelEdition2.lean/declarations/fourier-correlation.md) | 57 | `result-track:4538c18045f5fe83c6c7190e86fd1e765138c3db25dff7cd176396c7ed0ec460` |
-| 4 | `lemma` | [standardFourier_eq_sourceFourier](../../../../MeasureAndIntegration/SourcePlancherelEdition2.lean/declarations/standardfourier-eq-sourcefourier.md) | 68 | `result-track:79f1b9497fb17a419e33d26f347ad34aa7ce3a1eb791ae96c66e06d2f8e43e4c` |
-| 5 | `lemma` | [standardFourier_square_integrable](../../../../MeasureAndIntegration/SourcePlancherelEdition2.lean/declarations/standardfourier-square-integrable.md) | 74 | `result-track:b71db823608454d58562e9a932787ccc8bce5522265e5be2dc5d6bcda31d6f2a` |
-| 6 | `lemma` | [actual_standard_fourier_mass](../../../../MeasureAndIntegration/SourcePlancherelEdition2.lean/declarations/actual-standard-fourier-mass.md) | 83 | `result-track:a894f589d1353bfda6b3b6fe1f39bee26594a6e2a52024d7c578020a5a20c974` |
-| 7 | `lemma` | [actual_source_fourier_mass](../../../../MeasureAndIntegration/SourcePlancherelEdition2.lean/declarations/actual-source-fourier-mass.md) | 112 | `result-track:1178b2f72e5b829eb7523fe332f9ee8a845d3b1798672bb9cec812889e3193b8` |
+| 1 | `lemma` | [fourier_reflected_real](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePlancherelEdition2.lean/declarations/fourier-reflected-real.md) | 26 | `result-track:0608cac287637343a4abc6f12b9a963e0fb1f0f0e7883083f5adc95df0d00b1d` |
+| 2 | `lemma` | [correlation_complex_eq_convolution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePlancherelEdition2.lean/declarations/correlation-complex-eq-convolution.md) | 41 | `result-track:4978346e18eb26ae17d3bcdae3ce05ee9336a49045d6b36123116e41c7465d8d` |
+| 3 | `lemma` | [fourier_correlation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePlancherelEdition2.lean/declarations/fourier-correlation.md) | 57 | `result-track:4538c18045f5fe83c6c7190e86fd1e765138c3db25dff7cd176396c7ed0ec460` |
+| 4 | `lemma` | [standardFourier_eq_sourceFourier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePlancherelEdition2.lean/declarations/standardfourier-eq-sourcefourier.md) | 68 | `result-track:79f1b9497fb17a419e33d26f347ad34aa7ce3a1eb791ae96c66e06d2f8e43e4c` |
+| 5 | `lemma` | [standardFourier_square_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePlancherelEdition2.lean/declarations/standardfourier-square-integrable.md) | 74 | `result-track:b71db823608454d58562e9a932787ccc8bce5522265e5be2dc5d6bcda31d6f2a` |
+| 6 | `lemma` | [actual_standard_fourier_mass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePlancherelEdition2.lean/declarations/actual-standard-fourier-mass.md) | 83 | `result-track:a894f589d1353bfda6b3b6fe1f39bee26594a6e2a52024d7c578020a5a20c974` |
+| 7 | `lemma` | [actual_source_fourier_mass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePlancherelEdition2.lean/declarations/actual-source-fourier-mass.md) | 112 | `result-track:1178b2f72e5b829eb7523fe332f9ee8a845d3b1798672bb9cec812889e3193b8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

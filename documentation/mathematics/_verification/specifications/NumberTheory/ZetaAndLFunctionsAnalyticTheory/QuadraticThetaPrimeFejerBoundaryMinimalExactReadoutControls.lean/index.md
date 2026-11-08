@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerBoundaryMinimalExactReadoutControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerBoundaryMinimalExactReadoutControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerBoundaryMinimalExactReadoutControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerBoundaryMinimalExactReadoutControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeFejerBoundaryMinimalExactReadout`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerBoundaryMinimalExactReadout.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeFejerBoundaryMinimalExactReadout`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerBoundaryMinimalExactReadout.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [exactFrontier](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerBoundaryMinimalExactReadoutControls.lean/declarations/exactfrontier.md) | 13 | `declaration-track:404ea258420fea459c52dd7c0c910c3e3786e55e1b20e9241e09f7db04c62df3` |
-| 2 | `theorem` | [deterministicExactReadoutClosed](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerBoundaryMinimalExactReadoutControls.lean/declarations/deterministicexactreadoutclosed.md) | 26 | `result-track:2af8992e5d5355c7008f49423a9c97c94ddce6581bdc05a53b8183908fcb9946` |
-| 3 | `def` | [remainingArithmeticFrontier](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerBoundaryMinimalExactReadoutControls.lean/declarations/remainingarithmeticfrontier.md) | 30 | `declaration-track:3939f36840eadb9babd37f1f857b47a8779de1329e86d6427c64b51bfbef7cbe` |
+| 1 | `def` | [exactFrontier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerBoundaryMinimalExactReadoutControls.lean/declarations/exactfrontier.md) | 13 | `declaration-track:404ea258420fea459c52dd7c0c910c3e3786e55e1b20e9241e09f7db04c62df3` |
+| 2 | `theorem` | [deterministicExactReadoutClosed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerBoundaryMinimalExactReadoutControls.lean/declarations/deterministicexactreadoutclosed.md) | 26 | `result-track:2af8992e5d5355c7008f49423a9c97c94ddce6581bdc05a53b8183908fcb9946` |
+| 3 | `def` | [remainingArithmeticFrontier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerBoundaryMinimalExactReadoutControls.lean/declarations/remainingarithmeticfrontier.md) | 30 | `declaration-track:3939f36840eadb9babd37f1f857b47a8779de1329e86d6427c64b51bfbef7cbe` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

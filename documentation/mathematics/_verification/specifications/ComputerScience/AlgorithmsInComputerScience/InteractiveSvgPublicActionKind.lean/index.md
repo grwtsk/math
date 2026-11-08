@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/InteractiveSvgPublicActionKind.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/InteractiveSvgPublicActionKind.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InteractiveSvgPublicActionKind.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InteractiveSvgPublicActionKind.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [_root_.Float.toInt](../../../../../ComputerScience/AlgorithmsInComputerScience/InteractiveSvgPublicActionKind.lean/declarations/root-float-toint.md) | 10 | `declaration-track:b9780aab85e91f59f98d0519a055afd7dd40d0d5b3712fdda0a5441bd549a9a5` |
-| 2 | `inductive` | [ActionKind](../../../../../ComputerScience/AlgorithmsInComputerScience/InteractiveSvgPublicActionKind.lean/declarations/actionkind.md) | 18 | `declaration-track:573ff1ff98b3893315857f2a2b81cad4137fd0432c2adec1e2fc67b84caa5eb6` |
-| 3 | `structure` | [Action](../../../../../ComputerScience/AlgorithmsInComputerScience/InteractiveSvgPublicActionKind.lean/declarations/action.md) | 25 | `declaration-track:6e034c29b05023015657be3d36697e240e2736ce54c1297c418dcfbee978fe64` |
-| 4 | `structure` | [SvgState](../../../../../ComputerScience/AlgorithmsInComputerScience/InteractiveSvgPublicActionKind.lean/declarations/svgstate.md) | 34 | `declaration-track:edc4b9290c36e343600d0a3536c7f918b3548836545cb28e16cd441ad2b795a7` |
-| 5 | `structure` | [UpdateParams](../../../../../ComputerScience/AlgorithmsInComputerScience/InteractiveSvgPublicActionKind.lean/declarations/updateparams.md) | 42 | `declaration-track:77a7e24564996951d2e10a250a9f0e3923be909b46923c4837e434a82a9b5e14` |
-| 6 | `structure` | [UpdateResult](../../../../../ComputerScience/AlgorithmsInComputerScience/InteractiveSvgPublicActionKind.lean/declarations/updateresult.md) | 49 | `declaration-track:8bde6b090d860e95dc39604a613797f055e893733d1edeebe43d1af399fe9b6a` |
-| 7 | `structure` | [InteractiveSvg](../../../../../ComputerScience/AlgorithmsInComputerScience/InteractiveSvgPublicActionKind.lean/declarations/interactivesvg.md) | 57 | `declaration-track:d5dad22a5efca3ced630eaf2b20a3832ea49eced1844d74d232a86221482dca2` |
-| 8 | `def` | [InteractiveSvg.serverRpcMethod](../../../../../ComputerScience/AlgorithmsInComputerScience/InteractiveSvgPublicActionKind.lean/declarations/interactivesvg-serverrpcmethod.md) | 67 | `declaration-track:eaf1cc26924eac8470adccfc1815278f575839e76e6c15d2ada97f65cb8d2db7` |
+| 1 | `def` | [_root_.Float.toInt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InteractiveSvgPublicActionKind.lean/declarations/root-float-toint.md) | 10 | `declaration-track:b9780aab85e91f59f98d0519a055afd7dd40d0d5b3712fdda0a5441bd549a9a5` |
+| 2 | `inductive` | [ActionKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InteractiveSvgPublicActionKind.lean/declarations/actionkind.md) | 18 | `declaration-track:573ff1ff98b3893315857f2a2b81cad4137fd0432c2adec1e2fc67b84caa5eb6` |
+| 3 | `structure` | [Action](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InteractiveSvgPublicActionKind.lean/declarations/action.md) | 25 | `declaration-track:6e034c29b05023015657be3d36697e240e2736ce54c1297c418dcfbee978fe64` |
+| 4 | `structure` | [SvgState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InteractiveSvgPublicActionKind.lean/declarations/svgstate.md) | 34 | `declaration-track:edc4b9290c36e343600d0a3536c7f918b3548836545cb28e16cd441ad2b795a7` |
+| 5 | `structure` | [UpdateParams](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InteractiveSvgPublicActionKind.lean/declarations/updateparams.md) | 42 | `declaration-track:77a7e24564996951d2e10a250a9f0e3923be909b46923c4837e434a82a9b5e14` |
+| 6 | `structure` | [UpdateResult](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InteractiveSvgPublicActionKind.lean/declarations/updateresult.md) | 49 | `declaration-track:8bde6b090d860e95dc39604a613797f055e893733d1edeebe43d1af399fe9b6a` |
+| 7 | `structure` | [InteractiveSvg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InteractiveSvgPublicActionKind.lean/declarations/interactivesvg.md) | 57 | `declaration-track:d5dad22a5efca3ced630eaf2b20a3832ea49eced1844d74d232a86221482dca2` |
+| 8 | `def` | [InteractiveSvg.serverRpcMethod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InteractiveSvgPublicActionKind.lean/declarations/interactivesvg-serverrpcmethod.md) | 67 | `declaration-track:eaf1cc26924eac8470adccfc1815278f575839e76e6c15d2ada97f65cb8d2db7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

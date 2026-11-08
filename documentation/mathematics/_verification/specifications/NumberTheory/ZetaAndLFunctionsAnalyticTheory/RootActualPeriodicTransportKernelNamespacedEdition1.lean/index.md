@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualPeriodicTransportKernelNamespacedEdition1.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualPeriodicTransportKernelNamespacedEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualPeriodicTransportKernelNamespacedEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualPeriodicTransportKernelNamespacedEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualPeriodicTransportJet](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualPeriodicTransportKernelNamespacedEdition1.lean/declarations/actualperiodictransportjet.md) | 29 | `declaration-track:c1cea63c8686f111954f5fd92096979440b53a68284ac419dcd8dad03693fe1d` |
-| 2 | `theorem` | [actualPeriodicTransportKernel_eq](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualPeriodicTransportKernelNamespacedEdition1.lean/declarations/actualperiodictransportkernel-eq.md) | 36 | `result-track:a4b4921c2fcd5fc81db66be681b0e1f3dfd39d69c88774da1ae41a9f6f304257` |
-| 3 | `theorem` | [actualPeriodicTransportJet_abs_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualPeriodicTransportKernelNamespacedEdition1.lean/declarations/actualperiodictransportjet-abs-le.md) | 45 | `result-track:425085b75c57f5da6612f7ff439f4829697fec37182ec3307f5e52a7164707d3` |
-| 4 | `theorem` | [actualPeriodicWeightedTransport_abs_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualPeriodicTransportKernelNamespacedEdition1.lean/declarations/actualperiodicweightedtransport-abs-le.md) | 102 | `result-track:9d6ba26a042f232628f842e3f85f759cea654c8a8d2e6f0fd87fac633c8ea940` |
+| 1 | `def` | [actualPeriodicTransportJet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualPeriodicTransportKernelNamespacedEdition1.lean/declarations/actualperiodictransportjet.md) | 29 | `declaration-track:c1cea63c8686f111954f5fd92096979440b53a68284ac419dcd8dad03693fe1d` |
+| 2 | `theorem` | [actualPeriodicTransportKernel_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualPeriodicTransportKernelNamespacedEdition1.lean/declarations/actualperiodictransportkernel-eq.md) | 36 | `result-track:a4b4921c2fcd5fc81db66be681b0e1f3dfd39d69c88774da1ae41a9f6f304257` |
+| 3 | `theorem` | [actualPeriodicTransportJet_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualPeriodicTransportKernelNamespacedEdition1.lean/declarations/actualperiodictransportjet-abs-le.md) | 45 | `result-track:425085b75c57f5da6612f7ff439f4829697fec37182ec3307f5e52a7164707d3` |
+| 4 | `theorem` | [actualPeriodicWeightedTransport_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualPeriodicTransportKernelNamespacedEdition1.lean/declarations/actualperiodicweightedtransport-abs-le.md) | 102 | `result-track:9d6ba26a042f232628f842e3f85f759cea654c8a8d2e6f0fd87fac633c8ea940` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

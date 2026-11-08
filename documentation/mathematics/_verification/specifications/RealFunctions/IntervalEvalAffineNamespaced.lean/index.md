@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/IntervalEvalAffineNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/IntervalEvalAffineNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/IntervalEvalAffineNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/IntervalEvalAffineNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,19 +59,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [AffineConfig](../../../../RealFunctions/IntervalEvalAffineNamespaced.lean/declarations/affineconfig.md) | 58 | `declaration-track:461a9847ef1a6aa2c618b7ef5b8f419305dcb6dd45bf37af32c48e5226bc8cf7` |
-| 2 | `instance` | [(anonymous)](../../../../RealFunctions/IntervalEvalAffineNamespaced.lean/declarations/instance.md) | 65 | `declaration-track:da26706f18ea0ccbbab37c8cf445d9f751bbce206751e32ff63bdeb017e2d3b9` |
-| 3 | `abbrev` | [AffineEnv](../../../../RealFunctions/IntervalEvalAffineNamespaced.lean/declarations/affineenv.md) | 70 | `declaration-track:3eca6745d86758f0280bb1ded0b019d9e3b7dac05d2040c0a60daa5ece7cdf97` |
-| 4 | `def` | [toAffineEnv](../../../../RealFunctions/IntervalEvalAffineNamespaced.lean/declarations/toaffineenv.md) | 75 | `declaration-track:912a144456d3412c0c426aa7e9d49a0ad10d2110ecc45233492c348a4fbac67c` |
-| 5 | `def` | [evalIntervalAffine](../../../../RealFunctions/IntervalEvalAffineNamespaced.lean/declarations/evalintervalaffine.md) | 92 | `declaration-track:e42938ee77a1df60432a8acad52678a808a789cd511517a891fa910a3dd35b38` |
-| 6 | `def` | [evalAffineToInterval](../../../../RealFunctions/IntervalEvalAffineNamespaced.lean/declarations/evalaffinetointerval.md) | 168 | `declaration-track:62a4a1b011b54cfccbf6f9d2138a8a22510cc79dc5aa96e634473217bb6d56f9` |
-| 7 | `def` | [checkUpperBoundAffine](../../../../RealFunctions/IntervalEvalAffineNamespaced.lean/declarations/checkupperboundaffine.md) | 172 | `declaration-track:e2c8da3bc1e1331ab004e8fdceda5963e42dc1c284a986039fdb119e56626b92` |
-| 8 | `def` | [checkLowerBoundAffine](../../../../RealFunctions/IntervalEvalAffineNamespaced.lean/declarations/checklowerboundaffine.md) | 177 | `declaration-track:6c8e9ae2c4402bd5f22f8ee32c85a047374309893d192117ac702c2feccc8412` |
-| 9 | `def` | [envMemAffine](../../../../RealFunctions/IntervalEvalAffineNamespaced.lean/declarations/envmemaffine.md) | 184 | `declaration-track:7039d6c7319125d80649a94938b8fcfd7ee1314a3bdb1364e8105e7d2f38c8dd` |
-| 10 | `def` | [evalDomainValidAffine](../../../../RealFunctions/IntervalEvalAffineNamespaced.lean/declarations/evaldomainvalidaffine.md) | 190 | `declaration-track:d393339dc58de60adfca2a4d1a02d71f6fb0e980cc06e3641d710847c3c3ab8f` |
-| 11 | `theorem` | [evalDomainValidAffine_of_ExprSupported](../../../../RealFunctions/IntervalEvalAffineNamespaced.lean/declarations/evaldomainvalidaffine-of-exprsupported.md) | 214 | `result-track:90b2c418c04b35f552e4309ba0d96c5695fdc534e335c8dd6e7f3b4125b2e8e8` |
-| 12 | `theorem` | [evalIntervalAffine_correct](../../../../RealFunctions/IntervalEvalAffineNamespaced.lean/declarations/evalintervalaffine-correct.md) | 236 | `result-track:0101db4407a5dc2448566fd8798ee1fbea5b8aa2e7a9d3a548e013d539ad1bbe` |
-| 13 | `theorem` | [evalIntervalAffine_toInterval_correct](../../../../RealFunctions/IntervalEvalAffineNamespaced.lean/declarations/evalintervalaffine-tointerval-correct.md) | 336 | `result-track:6652890f5c2376b36eaf7c538a296b173380dbc3b18920c1adafe4e0850db4d0` |
+| 1 | `structure` | [AffineConfig](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/IntervalEvalAffineNamespaced.lean/declarations/affineconfig.md) | 58 | `declaration-track:461a9847ef1a6aa2c618b7ef5b8f419305dcb6dd45bf37af32c48e5226bc8cf7` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/IntervalEvalAffineNamespaced.lean/declarations/instance.md) | 65 | `declaration-track:da26706f18ea0ccbbab37c8cf445d9f751bbce206751e32ff63bdeb017e2d3b9` |
+| 3 | `abbrev` | [AffineEnv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/IntervalEvalAffineNamespaced.lean/declarations/affineenv.md) | 70 | `declaration-track:3eca6745d86758f0280bb1ded0b019d9e3b7dac05d2040c0a60daa5ece7cdf97` |
+| 4 | `def` | [toAffineEnv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/IntervalEvalAffineNamespaced.lean/declarations/toaffineenv.md) | 75 | `declaration-track:912a144456d3412c0c426aa7e9d49a0ad10d2110ecc45233492c348a4fbac67c` |
+| 5 | `def` | [evalIntervalAffine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/IntervalEvalAffineNamespaced.lean/declarations/evalintervalaffine.md) | 92 | `declaration-track:e42938ee77a1df60432a8acad52678a808a789cd511517a891fa910a3dd35b38` |
+| 6 | `def` | [evalAffineToInterval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/IntervalEvalAffineNamespaced.lean/declarations/evalaffinetointerval.md) | 168 | `declaration-track:62a4a1b011b54cfccbf6f9d2138a8a22510cc79dc5aa96e634473217bb6d56f9` |
+| 7 | `def` | [checkUpperBoundAffine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/IntervalEvalAffineNamespaced.lean/declarations/checkupperboundaffine.md) | 172 | `declaration-track:e2c8da3bc1e1331ab004e8fdceda5963e42dc1c284a986039fdb119e56626b92` |
+| 8 | `def` | [checkLowerBoundAffine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/IntervalEvalAffineNamespaced.lean/declarations/checklowerboundaffine.md) | 177 | `declaration-track:6c8e9ae2c4402bd5f22f8ee32c85a047374309893d192117ac702c2feccc8412` |
+| 9 | `def` | [envMemAffine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/IntervalEvalAffineNamespaced.lean/declarations/envmemaffine.md) | 184 | `declaration-track:7039d6c7319125d80649a94938b8fcfd7ee1314a3bdb1364e8105e7d2f38c8dd` |
+| 10 | `def` | [evalDomainValidAffine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/IntervalEvalAffineNamespaced.lean/declarations/evaldomainvalidaffine.md) | 190 | `declaration-track:d393339dc58de60adfca2a4d1a02d71f6fb0e980cc06e3641d710847c3c3ab8f` |
+| 11 | `theorem` | [evalDomainValidAffine_of_ExprSupported](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/IntervalEvalAffineNamespaced.lean/declarations/evaldomainvalidaffine-of-exprsupported.md) | 214 | `result-track:90b2c418c04b35f552e4309ba0d96c5695fdc534e335c8dd6e7f3b4125b2e8e8` |
+| 12 | `theorem` | [evalIntervalAffine_correct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/IntervalEvalAffineNamespaced.lean/declarations/evalintervalaffine-correct.md) | 236 | `result-track:0101db4407a5dc2448566fd8798ee1fbea5b8aa2e7a9d3a548e013d539ad1bbe` |
+| 13 | `theorem` | [evalIntervalAffine_toInterval_correct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/IntervalEvalAffineNamespaced.lean/declarations/evalintervalaffine-tointerval-correct.md) | 336 | `result-track:6652890f5c2376b36eaf7c538a296b173380dbc3b18920c1adafe4e0850db4d0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

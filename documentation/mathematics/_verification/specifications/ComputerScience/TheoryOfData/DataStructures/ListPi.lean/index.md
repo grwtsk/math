@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListPi.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListPi.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListPi.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListPi.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,20 +57,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [nil](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListPi.lean/declarations/nil.md) | 22 | `declaration-track:bc98aa190e7a0db98b8c00992345b42a65d3e91aef5b19d332274d7ca2f6d14e` |
-| 2 | `def` | [head](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListPi.lean/declarations/head.md) | 28 | `declaration-track:1f5f09a0f2ea80bc4a7e8759a152720c16eaa5537da5fe1e4777a5f5d98c32ae` |
-| 3 | `def` | [tail](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListPi.lean/declarations/tail.md) | 33 | `declaration-track:fbd3e302d94511745a271c7db24f3ec3173b169840597b194d6743e8dd4fe4e8` |
-| 4 | `def` | [cons](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListPi.lean/declarations/cons.md) | 41 | `declaration-track:e0986bc6a81d5f182492abd8f2e1c0f436aafc8f6c2265c4c8e8e06d5dc24a15` |
-| 5 | `lemma` | [cons_def](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListPi.lean/declarations/cons-def.md) | 46 | `result-track:4af70056badd7aad10428f28816a8d07d5a3b24863f8a0d61f300b812e66f3f8` |
-| 6 | `lemma` | [_root_.Multiset.Pi.cons_coe](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListPi.lean/declarations/root-multiset-pi-cons-coe.md) | 50 | `result-track:76520e1945a7604fc11cfc679d1151127f59c74188612655e2222c6572949b77` |
-| 7 | `lemma` | [cons_eta](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListPi.lean/declarations/cons-eta.md) | 54 | `result-track:dddc6238ec684e341c600653cf23b59f9fe1033bafb2650f11b9047f965adcbb` |
-| 8 | `lemma` | [cons_map](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListPi.lean/declarations/cons-map.md) | 58 | `result-track:4607ba39f955e0d01b55709b412ed3f0a65994d4d218e9546e06ad78912270ae` |
-| 9 | `lemma` | [forall_rel_cons_ext](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListPi.lean/declarations/forall-rel-cons-ext.md) | 63 | `result-track:2a6fca679eb5a14cb7a44819047136a41779796a9900808d7dcd8d01c8c4fedf` |
-| 10 | `def` | [pi](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListPi.lean/declarations/pi.md) | 73 | `declaration-track:6ada3749023a9555003a47717d906a577702dd2ecaf480f43d74463fb96ac1e4` |
-| 11 | `lemma` | [pi_nil](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListPi.lean/declarations/pi-nil.md) | 77 | `result-track:08708e6ae58dd8c9dd8875d4b21efc5b45df2b02ca87ca934792c513f2023692` |
-| 12 | `lemma` | [pi_cons](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListPi.lean/declarations/pi-cons.md) | 81 | `result-track:3e8cda433a6e8b9c62de05653f7a6199a1ffdb0794c5165d83851fbdac7df2d9` |
-| 13 | `lemma` | [_root_.Multiset.pi_coe](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListPi.lean/declarations/root-multiset-pi-coe.md) | 85 | `result-track:a50463f65e7b165c5d1716c7b278d4f57ae350584c5a13862f7d6960fa54b2d1` |
-| 14 | `lemma` | [mem_pi](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListPi.lean/declarations/mem-pi.md) | 95 | `result-track:e6bdbb8ef4f8620a088a2ebd75767af4c82c41a5fde7962c0292044a07027de4` |
+| 1 | `def` | [nil](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListPi.lean/declarations/nil.md) | 22 | `declaration-track:bc98aa190e7a0db98b8c00992345b42a65d3e91aef5b19d332274d7ca2f6d14e` |
+| 2 | `def` | [head](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListPi.lean/declarations/head.md) | 28 | `declaration-track:1f5f09a0f2ea80bc4a7e8759a152720c16eaa5537da5fe1e4777a5f5d98c32ae` |
+| 3 | `def` | [tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListPi.lean/declarations/tail.md) | 33 | `declaration-track:fbd3e302d94511745a271c7db24f3ec3173b169840597b194d6743e8dd4fe4e8` |
+| 4 | `def` | [cons](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListPi.lean/declarations/cons.md) | 41 | `declaration-track:e0986bc6a81d5f182492abd8f2e1c0f436aafc8f6c2265c4c8e8e06d5dc24a15` |
+| 5 | `lemma` | [cons_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListPi.lean/declarations/cons-def.md) | 46 | `result-track:4af70056badd7aad10428f28816a8d07d5a3b24863f8a0d61f300b812e66f3f8` |
+| 6 | `lemma` | [_root_.Multiset.Pi.cons_coe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListPi.lean/declarations/root-multiset-pi-cons-coe.md) | 50 | `result-track:76520e1945a7604fc11cfc679d1151127f59c74188612655e2222c6572949b77` |
+| 7 | `lemma` | [cons_eta](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListPi.lean/declarations/cons-eta.md) | 54 | `result-track:dddc6238ec684e341c600653cf23b59f9fe1033bafb2650f11b9047f965adcbb` |
+| 8 | `lemma` | [cons_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListPi.lean/declarations/cons-map.md) | 58 | `result-track:4607ba39f955e0d01b55709b412ed3f0a65994d4d218e9546e06ad78912270ae` |
+| 9 | `lemma` | [forall_rel_cons_ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListPi.lean/declarations/forall-rel-cons-ext.md) | 63 | `result-track:2a6fca679eb5a14cb7a44819047136a41779796a9900808d7dcd8d01c8c4fedf` |
+| 10 | `def` | [pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListPi.lean/declarations/pi.md) | 73 | `declaration-track:6ada3749023a9555003a47717d906a577702dd2ecaf480f43d74463fb96ac1e4` |
+| 11 | `lemma` | [pi_nil](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListPi.lean/declarations/pi-nil.md) | 77 | `result-track:08708e6ae58dd8c9dd8875d4b21efc5b45df2b02ca87ca934792c513f2023692` |
+| 12 | `lemma` | [pi_cons](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListPi.lean/declarations/pi-cons.md) | 81 | `result-track:3e8cda433a6e8b9c62de05653f7a6199a1ffdb0794c5165d83851fbdac7df2d9` |
+| 13 | `lemma` | [_root_.Multiset.pi_coe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListPi.lean/declarations/root-multiset-pi-coe.md) | 85 | `result-track:a50463f65e7b165c5d1716c7b278d4f57ae350584c5a13862f7d6960fa54b2d1` |
+| 14 | `lemma` | [mem_pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListPi.lean/declarations/mem-pi.md) | 95 | `result-track:e6bdbb8ef4f8620a088a2ebd75767af4c82c41a5fde7962c0292044a07027de4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

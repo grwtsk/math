@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/TransferInstancePublic.lean/index.md) · [Full source](../../../../GeneralTopology/TransferInstancePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TransferInstancePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TransferInstancePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [topologicalSpace](../../../../GeneralTopology/TransferInstancePublic.lean/declarations/topologicalspace.md) | 26 | `declaration-track:91e3525ecebd3479c47334d4b7faa4c4d3bfab324833d6a024a7526db00bc53d` |
-| 2 | `def` | [homeomorph](../../../../GeneralTopology/TransferInstancePublic.lean/declarations/homeomorph.md) | 32 | `declaration-track:f8fd467acb1fc0c07cf38e232d728cee743660118d44cdf67e14469b200152c1` |
+| 1 | `abbrev` | [topologicalSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TransferInstancePublic.lean/declarations/topologicalspace.md) | 26 | `declaration-track:91e3525ecebd3479c47334d4b7faa4c4d3bfab324833d6a024a7526db00bc53d` |
+| 2 | `def` | [homeomorph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TransferInstancePublic.lean/declarations/homeomorph.md) | 32 | `declaration-track:f8fd467acb1fc0c07cf38e232d728cee743660118d44cdf67e14469b200152c1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

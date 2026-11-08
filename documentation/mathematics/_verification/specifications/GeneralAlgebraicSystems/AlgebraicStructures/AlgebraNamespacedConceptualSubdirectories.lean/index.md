@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AlgebraNamespacedConceptualSubdirectories.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AlgebraNamespacedConceptualSubdirectories.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AlgebraNamespacedConceptualSubdirectories.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AlgebraNamespacedConceptualSubdirectories.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [conceptualSubdirectories](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AlgebraNamespacedConceptualSubdirectories.lean/declarations/conceptualsubdirectories.md) | 18 | `declaration-track:cc45ad0afd2eb92c8ad0e0c3e650eb699cfa6e9847986ab52cd46d4672351105` |
-| 2 | `theorem` | [conceptualSubdirectories_count](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AlgebraNamespacedConceptualSubdirectories.lean/declarations/conceptualsubdirectories-count.md) | 23 | `result-track:8623421eb49bb71c4f7fd0dac76e84ffc1ea6f6cbfc5e9902e021b241f82ce96` |
+| 1 | `def` | [conceptualSubdirectories](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AlgebraNamespacedConceptualSubdirectories.lean/declarations/conceptualsubdirectories.md) | 18 | `declaration-track:cc45ad0afd2eb92c8ad0e0c3e650eb699cfa6e9847986ab52cd46d4672351105` |
+| 2 | `theorem` | [conceptualSubdirectories_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AlgebraNamespacedConceptualSubdirectories.lean/declarations/conceptualsubdirectories-count.md) | 23 | `result-track:8623421eb49bb71c4f7fd0dac76e84ffc1ea6f6cbfc5e9902e021b241f82ce96` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

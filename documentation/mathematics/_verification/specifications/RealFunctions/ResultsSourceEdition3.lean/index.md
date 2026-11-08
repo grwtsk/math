@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/ResultsSourceEdition3.lean/index.md) · [Full source](../../../../RealFunctions/ResultsSourceEdition3.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ResultsSourceEdition3.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ResultsSourceEdition3.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,7 +60,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [cyclicCharacterCoefficient](../../../../RealFunctions/ResultsSourceEdition3.lean/declarations/cycliccharactercoefficient.md) | 17 | `declaration-track:32729ce5e1ac2c0c95ca42d5d3ab130d017573d894c89083c08a00eb9a10e3d8` |
+| 1 | `def` | [cyclicCharacterCoefficient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ResultsSourceEdition3.lean/declarations/cycliccharactercoefficient.md) | 17 | `declaration-track:32729ce5e1ac2c0c95ca42d5d3ab130d017573d894c89083c08a00eb9a10e3d8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

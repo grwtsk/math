@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/LocalPrimitiveBudgetNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/LocalPrimitiveBudgetNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LocalPrimitiveBudgetNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LocalPrimitiveBudgetNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_primitive_dictionary](../../../../MeasureAndIntegration/LocalPrimitiveBudgetNamespaced.lean/declarations/actual-primitive-dictionary.md) | 29 | `result-track:592c2b19425205431817532e477a2ba93d1390c1af2a00a385873155472d7404` |
-| 2 | `theorem` | [actual_local_primitive_work_bound](../../../../MeasureAndIntegration/LocalPrimitiveBudgetNamespaced.lean/declarations/actual-local-primitive-work-bound.md) | 32 | `result-track:995e37943ed8c52ede8fa997ef593a9c56157b48275f018961e9550450cb2b01` |
-| 3 | `theorem` | [actual_local_residual_upper](../../../../MeasureAndIntegration/LocalPrimitiveBudgetNamespaced.lean/declarations/actual-local-residual-upper.md) | 51 | `result-track:5f0f39932d8382459902e18f836f2043647376f1818023f54cafc1f1ce414c19` |
-| 4 | `theorem` | [actual_local_gap_upper](../../../../MeasureAndIntegration/LocalPrimitiveBudgetNamespaced.lean/declarations/actual-local-gap-upper.md) | 61 | `result-track:f0f24a2877b0f6e50d17eb96c5c106624428f1d75582c329c9f85d942d72e361` |
-| 5 | `theorem` | [actual_finite_gap_lt_thirty_four](../../../../MeasureAndIntegration/LocalPrimitiveBudgetNamespaced.lean/declarations/actual-finite-gap-lt-thirty-four.md) | 78 | `result-track:3e09606dc0ce46d9ba6fade41157e3bd874acaf70d292c36ea6e40b53a02fdbe` |
+| 1 | `theorem` | [actual_primitive_dictionary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LocalPrimitiveBudgetNamespaced.lean/declarations/actual-primitive-dictionary.md) | 29 | `result-track:592c2b19425205431817532e477a2ba93d1390c1af2a00a385873155472d7404` |
+| 2 | `theorem` | [actual_local_primitive_work_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LocalPrimitiveBudgetNamespaced.lean/declarations/actual-local-primitive-work-bound.md) | 32 | `result-track:995e37943ed8c52ede8fa997ef593a9c56157b48275f018961e9550450cb2b01` |
+| 3 | `theorem` | [actual_local_residual_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LocalPrimitiveBudgetNamespaced.lean/declarations/actual-local-residual-upper.md) | 51 | `result-track:5f0f39932d8382459902e18f836f2043647376f1818023f54cafc1f1ce414c19` |
+| 4 | `theorem` | [actual_local_gap_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LocalPrimitiveBudgetNamespaced.lean/declarations/actual-local-gap-upper.md) | 61 | `result-track:f0f24a2877b0f6e50d17eb96c5c106624428f1d75582c329c9f85d942d72e361` |
+| 5 | `theorem` | [actual_finite_gap_lt_thirty_four](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LocalPrimitiveBudgetNamespaced.lean/declarations/actual-finite-gap-lt-thirty-four.md) | 78 | `result-track:3e09606dc0ce46d9ba6fade41157e3bd874acaf70d292c36ea6e40b53a02fdbe` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

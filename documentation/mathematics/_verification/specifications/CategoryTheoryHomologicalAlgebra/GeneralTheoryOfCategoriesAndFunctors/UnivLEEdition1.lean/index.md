@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UnivLEEdition1.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UnivLEEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UnivLEEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UnivLEEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [UnivLE.ofEssSurj](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UnivLEEdition1.lean/declarations/univle-ofesssurj.md) | 22 | `result-track:0e9a0dbc5150213ffe94a4cb50764bb5977dc1e2d9c6d826764bfaef2389c017` |
-| 2 | `instance` | [EssSurj.ofUnivLE](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UnivLEEdition1.lean/declarations/esssurj-ofunivle.md) | 28 | `declaration-track:ce5945c7cf57e1d121070efa66db982528b4a1438ee5a75e960261d61350920b` |
-| 3 | `theorem` | [UnivLE_iff_essSurj](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UnivLEEdition1.lean/declarations/univle-iff-esssurj.md) | 33 | `result-track:fcf92f43611b1cd542014da6df94d6ac9155673d56dc8193cfe4d0aff4d6955f` |
-| 4 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UnivLEEdition1.lean/declarations/instance-source-edition-3.md) | 37 | `declaration-track:f80833936367894e0943c67500ac7a5cb86d29005341bd5b277208920c5b290b` |
-| 5 | `def` | [UnivLE.witness](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UnivLEEdition1.lean/declarations/univle-witness.md) | 39 | `declaration-track:c1797f674f274ce794ee2a9f33d51845fa1e913d188abb572ba2fca8b047cdb9` |
-| 6 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UnivLEEdition1.lean/declarations/instance-source-edition-2.md) | 42 | `declaration-track:d9014f910ecd6645bed0953e6e3292baefaa0483cf72901067b6723a19473772` |
-| 7 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UnivLEEdition1.lean/declarations/instance.md) | 45 | `declaration-track:3ccd3ca3f35ac3d53ddb6d9299c26f1086c09a05a465b2e8021acc840975c023` |
+| 1 | `theorem` | [UnivLE.ofEssSurj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UnivLEEdition1.lean/declarations/univle-ofesssurj.md) | 22 | `result-track:0e9a0dbc5150213ffe94a4cb50764bb5977dc1e2d9c6d826764bfaef2389c017` |
+| 2 | `instance` | [EssSurj.ofUnivLE](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UnivLEEdition1.lean/declarations/esssurj-ofunivle.md) | 28 | `declaration-track:ce5945c7cf57e1d121070efa66db982528b4a1438ee5a75e960261d61350920b` |
+| 3 | `theorem` | [UnivLE_iff_essSurj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UnivLEEdition1.lean/declarations/univle-iff-esssurj.md) | 33 | `result-track:fcf92f43611b1cd542014da6df94d6ac9155673d56dc8193cfe4d0aff4d6955f` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UnivLEEdition1.lean/declarations/instance-source-edition-3.md) | 37 | `declaration-track:f80833936367894e0943c67500ac7a5cb86d29005341bd5b277208920c5b290b` |
+| 5 | `def` | [UnivLE.witness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UnivLEEdition1.lean/declarations/univle-witness.md) | 39 | `declaration-track:c1797f674f274ce794ee2a9f33d51845fa1e913d188abb572ba2fca8b047cdb9` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UnivLEEdition1.lean/declarations/instance-source-edition-2.md) | 42 | `declaration-track:d9014f910ecd6645bed0953e6e3292baefaa0483cf72901067b6723a19473772` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UnivLEEdition1.lean/declarations/instance.md) | 45 | `declaration-track:3ccd3ca3f35ac3d53ddb6d9299c26f1086c09a05a465b2e8021acc840975c023` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

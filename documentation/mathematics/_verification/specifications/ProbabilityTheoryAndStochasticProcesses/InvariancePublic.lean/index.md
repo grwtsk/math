@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/InvariancePublic.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/InvariancePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/InvariancePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/InvariancePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Invariant](../../../../ProbabilityTheoryAndStochasticProcesses/InvariancePublic.lean/declarations/invariant.md) | 39 | `declaration-track:02bb42bf23f41d2941138059ad0e32c45a5944db33e09e023493017e7c9f44d2` |
-| 2 | `theorem` | [Invariant.def](../../../../ProbabilityTheoryAndStochasticProcesses/InvariancePublic.lean/declarations/def.md) | 44 | `result-track:e0a89d5ffb270dddd89f796eb4e2659d648e95f05184ae57b730bee04f15a29d` |
-| 3 | `theorem` | [Invariant.comp_const](../../../../ProbabilityTheoryAndStochasticProcesses/InvariancePublic.lean/declarations/comp-const.md) | 47 | `result-track:01db2e3eca4d28163bc70c5238bc22d34ebafaae8dfcacd74c2269c121027328` |
-| 4 | `theorem` | [Invariant.comp](../../../../ProbabilityTheoryAndStochasticProcesses/InvariancePublic.lean/declarations/comp.md) | 50 | `result-track:4dcacec679e80e42cb49ed7fc49683115dc3368eab63c4a251ed60f4efe0f1b2` |
-| 5 | `def` | [IsReversible](../../../../ProbabilityTheoryAndStochasticProcesses/InvariancePublic.lean/declarations/isreversible.md) | 60 | `declaration-track:eb8fb235f22f21a7b6cc302601755198e3141040df649a11baf84439b984cb74` |
-| 6 | `theorem` | [IsReversible.invariant](../../../../ProbabilityTheoryAndStochasticProcesses/InvariancePublic.lean/declarations/invariant-source-line-65-occurrence-2.md) | 65 | `result-track:559726736954d519c131e07a6d19762027934b1d944ac7d0f792db3c7a50307a` |
+| 1 | `def` | [Invariant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/InvariancePublic.lean/declarations/invariant.md) | 39 | `declaration-track:02bb42bf23f41d2941138059ad0e32c45a5944db33e09e023493017e7c9f44d2` |
+| 2 | `theorem` | [Invariant.def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/InvariancePublic.lean/declarations/def.md) | 44 | `result-track:e0a89d5ffb270dddd89f796eb4e2659d648e95f05184ae57b730bee04f15a29d` |
+| 3 | `theorem` | [Invariant.comp_const](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/InvariancePublic.lean/declarations/comp-const.md) | 47 | `result-track:01db2e3eca4d28163bc70c5238bc22d34ebafaae8dfcacd74c2269c121027328` |
+| 4 | `theorem` | [Invariant.comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/InvariancePublic.lean/declarations/comp.md) | 50 | `result-track:4dcacec679e80e42cb49ed7fc49683115dc3368eab63c4a251ed60f4efe0f1b2` |
+| 5 | `def` | [IsReversible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/InvariancePublic.lean/declarations/isreversible.md) | 60 | `declaration-track:eb8fb235f22f21a7b6cc302601755198e3141040df649a11baf84439b984cb74` |
+| 6 | `theorem` | [IsReversible.invariant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/InvariancePublic.lean/declarations/invariant-source-line-65-occurrence-2.md) | 65 | `result-track:559726736954d519c131e07a6d19762027934b1d944ac7d0f792db3c7a50307a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

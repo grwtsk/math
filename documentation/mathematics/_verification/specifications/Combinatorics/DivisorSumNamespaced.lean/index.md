@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/DivisorSumNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/DivisorSumNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DivisorSumNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DivisorSumNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [divisorSum](../../../../Combinatorics/DivisorSumNamespaced.lean/declarations/divisorsum.md) | 24 | `declaration-track:436d4937425b4324ce9bdc7d37aa1164cd78c29770e0d3c21e442ec5e9220a17` |
-| 2 | `theorem` | [divisorSum_one](../../../../Combinatorics/DivisorSumNamespaced.lean/declarations/divisorsum-one.md) | 29 | `result-track:0df0affda0a4bedf5f109f6046c469bfb034861261a703923067040d2afa5286` |
-| 3 | `theorem` | [divisorSum_congr](../../../../Combinatorics/DivisorSumNamespaced.lean/declarations/divisorsum-congr.md) | 35 | `result-track:52be8937fb6778ca5ea734283bb11738e78d3f9aa769db4d3b2937073350d232` |
+| 1 | `def` | [divisorSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DivisorSumNamespaced.lean/declarations/divisorsum.md) | 24 | `declaration-track:436d4937425b4324ce9bdc7d37aa1164cd78c29770e0d3c21e442ec5e9220a17` |
+| 2 | `theorem` | [divisorSum_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DivisorSumNamespaced.lean/declarations/divisorsum-one.md) | 29 | `result-track:0df0affda0a4bedf5f109f6046c469bfb034861261a703923067040d2afa5286` |
+| 3 | `theorem` | [divisorSum_congr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DivisorSumNamespaced.lean/declarations/divisorsum-congr.md) | 35 | `result-track:52be8937fb6778ca5ea734283bb11738e78d3f9aa769db4d3b2937073350d232` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

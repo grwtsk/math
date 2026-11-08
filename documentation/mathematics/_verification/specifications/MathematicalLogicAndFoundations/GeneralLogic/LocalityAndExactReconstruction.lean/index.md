@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LocalityAndExactReconstruction.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LocalityAndExactReconstruction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LocalityAndExactReconstruction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LocalityAndExactReconstruction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RasterSurgeryEvent](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LocalityAndExactReconstruction.lean/declarations/rastersurgeryevent.md) | 40 | `declaration-track:9108d0ff758fb4101523206152a1197499faeeb4ced894e53b3d74905da88e34` |
-| 2 | `theorem` | [outside_unchanged](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LocalityAndExactReconstruction.lean/declarations/outside-unchanged.md) | 51 | `result-track:ee8812efbd6691b5b90dd6283e9ef13aeeb3fc6ac716d6ba811a70d3c259a5ac` |
-| 3 | `def` | [reconstruction](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LocalityAndExactReconstruction.lean/declarations/reconstruction.md) | 63 | `declaration-track:bee3c4e9f1bf7436ccc27e7e99f628387ad531512ef502de3375afcf7f7223fd` |
-| 4 | `theorem` | [reconstruction_post_eq_pre](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LocalityAndExactReconstruction.lean/declarations/reconstruction-post-eq-pre.md) | 73 | `result-track:f573d328f1a8fe16c900f1468fe1a1e44e92d490418d928673e2d6a0d593a2aa` |
+| 1 | `structure` | [RasterSurgeryEvent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LocalityAndExactReconstruction.lean/declarations/rastersurgeryevent.md) | 40 | `declaration-track:9108d0ff758fb4101523206152a1197499faeeb4ced894e53b3d74905da88e34` |
+| 2 | `theorem` | [outside_unchanged](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LocalityAndExactReconstruction.lean/declarations/outside-unchanged.md) | 51 | `result-track:ee8812efbd6691b5b90dd6283e9ef13aeeb3fc6ac716d6ba811a70d3c259a5ac` |
+| 3 | `def` | [reconstruction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LocalityAndExactReconstruction.lean/declarations/reconstruction.md) | 63 | `declaration-track:bee3c4e9f1bf7436ccc27e7e99f628387ad531512ef502de3375afcf7f7223fd` |
+| 4 | `theorem` | [reconstruction_post_eq_pre](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LocalityAndExactReconstruction.lean/declarations/reconstruction-post-eq-pre.md) | 73 | `result-track:f573d328f1a8fe16c900f1468fe1a1e44e92d490418d928673e2d6a0d593a2aa` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

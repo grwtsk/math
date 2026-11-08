@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeafFamilyIndexNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeafFamilyIndexNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeafFamilyIndexNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeafFamilyIndexNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -102,8 +102,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [leafFamilyIndexSurfaceCount](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeafFamilyIndexNamespaced.lean/declarations/leaffamilyindexsurfacecount.md) | 63 | `declaration-track:db8c236ce6f6106a2d87244d5fb0681c4f4769b35f52d2e8922b82c05c3e27ee` |
-| 2 | `theorem` | [leaf_family_index_surface_count_declared](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeafFamilyIndexNamespaced.lean/declarations/leaf-family-index-surface-count-declared.md) | 65 | `result-track:790a0bdc4698780fea63d73a71c13de7b1383500246bf12ab42ffd65058715c2` |
+| 1 | `def` | [leafFamilyIndexSurfaceCount](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeafFamilyIndexNamespaced.lean/declarations/leaffamilyindexsurfacecount.md) | 63 | `declaration-track:db8c236ce6f6106a2d87244d5fb0681c4f4769b35f52d2e8922b82c05c3e27ee` |
+| 2 | `theorem` | [leaf_family_index_surface_count_declared](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeafFamilyIndexNamespaced.lean/declarations/leaf-family-index-surface-count-declared.md) | 65 | `result-track:790a0bdc4698780fea63d73a71c13de7b1383500246bf12ab42ffd65058715c2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

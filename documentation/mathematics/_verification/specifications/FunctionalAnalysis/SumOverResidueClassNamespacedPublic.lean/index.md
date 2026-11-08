@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/SumOverResidueClassNamespacedPublic.lean/index.md) · [Full source](../../../../FunctionalAnalysis/SumOverResidueClassNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SumOverResidueClassNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SumOverResidueClassNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [Finset.sum_indicator_mod](../../../../FunctionalAnalysis/SumOverResidueClassNamespacedPublic.lean/declarations/finset-sum-indicator-mod.md) | 33 | `result-track:d1d7c8f62e9cbf6868962b7de49908eba8fdef26f86a4688bedf98bc120ed9a4` |
-| 2 | `lemma` | [summable_indicator_mod_iff_summable](../../../../FunctionalAnalysis/SumOverResidueClassNamespacedPublic.lean/declarations/summable-indicator-mod-iff-summable.md) | 42 | `result-track:834b3caad7a70d47cfcb6a9e923ebfebf46bb6fa7256b88edb741d2e13076742` |
-| 3 | `lemma` | [not_summable_of_antitone_of_neg](../../../../FunctionalAnalysis/SumOverResidueClassNamespacedPublic.lean/declarations/not-summable-of-antitone-of-neg.md) | 60 | `result-track:d5811d9f45b284eafaba3c3812a4830f66233c33e2b04d6b5d4e11a4df723a8d` |
-| 4 | `lemma` | [not_summable_indicator_mod_of_antitone_of_neg](../../../../FunctionalAnalysis/SumOverResidueClassNamespacedPublic.lean/declarations/not-summable-indicator-mod-of-antitone-of-neg.md) | 73 | `result-track:affe7de66e4851e671a1b7d6d9467d859fe81dd2162897581f55a6002d7abf15` |
-| 5 | `lemma` | [summable_indicator_mod_iff_summable_indicator_mod](../../../../FunctionalAnalysis/SumOverResidueClassNamespacedPublic.lean/declarations/summable-indicator-mod-iff-summable-indicator-mod.md) | 83 | `result-track:f78b3a0c8acb1b9a3398c5bae4bbab4aa8682376aefb5eaf102762296ea0e8a6` |
-| 6 | `lemma` | [summable_indicator_mod_iff](../../../../FunctionalAnalysis/SumOverResidueClassNamespacedPublic.lean/declarations/summable-indicator-mod-iff.md) | 99 | `result-track:88099c0e7be3091447e98a969c0266b3c83c9977b9ab47ccefc37aafbddceef0` |
-| 7 | `lemma` | [Nat.sumByResidueClasses](../../../../FunctionalAnalysis/SumOverResidueClassNamespacedPublic.lean/declarations/nat-sumbyresidueclasses.md) | 112 | `result-track:62619b6306cbbc6a03c9b117d568cfb7a097ddec27294471a01a42c88223ffdb` |
+| 1 | `lemma` | [Finset.sum_indicator_mod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SumOverResidueClassNamespacedPublic.lean/declarations/finset-sum-indicator-mod.md) | 33 | `result-track:d1d7c8f62e9cbf6868962b7de49908eba8fdef26f86a4688bedf98bc120ed9a4` |
+| 2 | `lemma` | [summable_indicator_mod_iff_summable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SumOverResidueClassNamespacedPublic.lean/declarations/summable-indicator-mod-iff-summable.md) | 42 | `result-track:834b3caad7a70d47cfcb6a9e923ebfebf46bb6fa7256b88edb741d2e13076742` |
+| 3 | `lemma` | [not_summable_of_antitone_of_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SumOverResidueClassNamespacedPublic.lean/declarations/not-summable-of-antitone-of-neg.md) | 60 | `result-track:d5811d9f45b284eafaba3c3812a4830f66233c33e2b04d6b5d4e11a4df723a8d` |
+| 4 | `lemma` | [not_summable_indicator_mod_of_antitone_of_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SumOverResidueClassNamespacedPublic.lean/declarations/not-summable-indicator-mod-of-antitone-of-neg.md) | 73 | `result-track:affe7de66e4851e671a1b7d6d9467d859fe81dd2162897581f55a6002d7abf15` |
+| 5 | `lemma` | [summable_indicator_mod_iff_summable_indicator_mod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SumOverResidueClassNamespacedPublic.lean/declarations/summable-indicator-mod-iff-summable-indicator-mod.md) | 83 | `result-track:f78b3a0c8acb1b9a3398c5bae4bbab4aa8682376aefb5eaf102762296ea0e8a6` |
+| 6 | `lemma` | [summable_indicator_mod_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SumOverResidueClassNamespacedPublic.lean/declarations/summable-indicator-mod-iff.md) | 99 | `result-track:88099c0e7be3091447e98a969c0266b3c83c9977b9ab47ccefc37aafbddceef0` |
+| 7 | `lemma` | [Nat.sumByResidueClasses](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SumOverResidueClassNamespacedPublic.lean/declarations/nat-sumbyresidueclasses.md) | 112 | `result-track:62619b6306cbbc6a03c9b117d568cfb7a097ddec27294471a01a42c88223ffdb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

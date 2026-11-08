@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceSchedulingResidualProfileFiniteResidualProfilesWithRetainedDerivativeMoments.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceSchedulingResidualProfileFiniteResidualProfilesWithRetainedDerivativeMoments.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceSchedulingResidualProfileFiniteResidualProfilesWithRetainedDerivativeMoments.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceSchedulingResidualProfileFiniteResidualProfilesWithRetainedDerivativeMoments.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [residualProfile](../../../../MeasureAndIntegration/SourceSchedulingResidualProfileFiniteResidualProfilesWithRetainedDerivativeMoments.lean/declarations/residualprofile.md) | 25 | `declaration-track:8799e7f70e80f14efe68c6f7949ff9cadf1c96005decdfc22ea8727c7825fce7` |
-| 2 | `theorem` | [residualProfile_intervalIntegrable](../../../../MeasureAndIntegration/SourceSchedulingResidualProfileFiniteResidualProfilesWithRetainedDerivativeMoments.lean/declarations/residualprofile-intervalintegrable.md) | 28 | `result-track:893a2eca02b52bccd8b8bb64676f731d8321967b101ab5e95b5780ce1de56d23` |
-| 3 | `theorem` | [residualProfile_integral_eq_readout](../../../../MeasureAndIntegration/SourceSchedulingResidualProfileFiniteResidualProfilesWithRetainedDerivativeMoments.lean/declarations/residualprofile-integral-eq-readout.md) | 44 | `result-track:cdbaf4455b09fa1ff6831e2bb509b942cd845b85c5ef17534082ffb07b93a82d` |
-| 4 | `theorem` | [readout_abs_le_curvature_profile](../../../../MeasureAndIntegration/SourceSchedulingResidualProfileFiniteResidualProfilesWithRetainedDerivativeMoments.lean/declarations/readout-abs-le-curvature-profile.md) | 88 | `result-track:0198d09cb037e34e5fa78b3e7f102b14c9d57f1949ca7adc47db49718d1a64b4` |
+| 1 | `def` | [residualProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceSchedulingResidualProfileFiniteResidualProfilesWithRetainedDerivativeMoments.lean/declarations/residualprofile.md) | 25 | `declaration-track:8799e7f70e80f14efe68c6f7949ff9cadf1c96005decdfc22ea8727c7825fce7` |
+| 2 | `theorem` | [residualProfile_intervalIntegrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceSchedulingResidualProfileFiniteResidualProfilesWithRetainedDerivativeMoments.lean/declarations/residualprofile-intervalintegrable.md) | 28 | `result-track:893a2eca02b52bccd8b8bb64676f731d8321967b101ab5e95b5780ce1de56d23` |
+| 3 | `theorem` | [residualProfile_integral_eq_readout](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceSchedulingResidualProfileFiniteResidualProfilesWithRetainedDerivativeMoments.lean/declarations/residualprofile-integral-eq-readout.md) | 44 | `result-track:cdbaf4455b09fa1ff6831e2bb509b942cd845b85c5ef17534082ffb07b93a82d` |
+| 4 | `theorem` | [readout_abs_le_curvature_profile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceSchedulingResidualProfileFiniteResidualProfilesWithRetainedDerivativeMoments.lean/declarations/readout-abs-le-curvature-profile.md) | 88 | `result-track:0198d09cb037e34e5fa78b3e7f102b14c9d57f1949ca7adc47db49718d1a64b4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

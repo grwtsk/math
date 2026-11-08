@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NormalizedDiskLogCore.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NormalizedDiskLogCore.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NormalizedDiskLogCore.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NormalizedDiskLogCore.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,11 +46,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Interfaces.DiskLogDerivativeCore`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DiskLogDerivativeCore.lean/index.md) — import line 3; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.NormalizedDiskLogarithm`](../../../../../FunctionsOfAComplexVariable/NormalizedDiskLogarithm.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.BlaschkeQuotientLogarithm`](../../../../../FunctionsOfAComplexVariable/BlaschkeQuotientLogarithm.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.JensenDiskQuotientLog`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/JensenDiskQuotientLog.lean/index.md) — import line 6; pinned internal source present.
-- [`GRWTSK.NumberTheory.Chebyshev.Checks.NormalizedDiskLogControls`](../../../../../NumberTheory/NormalizedDiskLogControls.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.Interfaces.DiskLogDerivativeCore`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DiskLogDerivativeCore.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.NormalizedDiskLogarithm`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/NormalizedDiskLogarithm.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.BlaschkeQuotientLogarithm`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/BlaschkeQuotientLogarithm.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.JensenDiskQuotientLog`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/JensenDiskQuotientLog.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.Checks.NormalizedDiskLogControls`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NormalizedDiskLogControls.lean/index.md) — import line 7; pinned internal source present.
 
 ## Top results and three-degree verification metric
 

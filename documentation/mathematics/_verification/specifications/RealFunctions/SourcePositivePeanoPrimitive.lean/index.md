@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/SourcePositivePeanoPrimitive.lean/index.md) · [Full source](../../../../RealFunctions/SourcePositivePeanoPrimitive.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourcePositivePeanoPrimitive.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourcePositivePeanoPrimitive.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [sourcePeanoPrimitive](../../../../RealFunctions/SourcePositivePeanoPrimitive.lean/declarations/sourcepeanoprimitive.md) | 27 | `declaration-track:fd111894026eaa9fdc1313421b8d8a3528dc3f720d8c95a2f1ad5790a922f41a` |
-| 2 | `theorem` | [primitiveCorrelationZero_fourth_deriv](../../../../RealFunctions/SourcePositivePeanoPrimitive.lean/declarations/primitivecorrelationzero-fourth-deriv.md) | 33 | `result-track:ff1999d71c79c33eb4f0f2d4df77c1bf104944e4c05c5b9e29be81f6b1842990` |
-| 3 | `theorem` | [sourcePeanoPrimitive_second_deriv](../../../../RealFunctions/SourcePositivePeanoPrimitive.lean/declarations/sourcepeanoprimitive-second-deriv.md) | 46 | `result-track:cde105c71e685ada5e930fbc5075e3d9acd596d8d94365a9183839277d9ab07b` |
-| 4 | `theorem` | [sourcePeanoPrimitive_contDiff_two](../../../../RealFunctions/SourcePositivePeanoPrimitive.lean/declarations/sourcepeanoprimitive-contdiff-two.md) | 90 | `result-track:62df3415a915aac256bb0f1308e5842fda73449985e815d0fb3792fc0b77bcd4` |
+| 1 | `def` | [sourcePeanoPrimitive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourcePositivePeanoPrimitive.lean/declarations/sourcepeanoprimitive.md) | 27 | `declaration-track:fd111894026eaa9fdc1313421b8d8a3528dc3f720d8c95a2f1ad5790a922f41a` |
+| 2 | `theorem` | [primitiveCorrelationZero_fourth_deriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourcePositivePeanoPrimitive.lean/declarations/primitivecorrelationzero-fourth-deriv.md) | 33 | `result-track:ff1999d71c79c33eb4f0f2d4df77c1bf104944e4c05c5b9e29be81f6b1842990` |
+| 3 | `theorem` | [sourcePeanoPrimitive_second_deriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourcePositivePeanoPrimitive.lean/declarations/sourcepeanoprimitive-second-deriv.md) | 46 | `result-track:cde105c71e685ada5e930fbc5075e3d9acd596d8d94365a9183839277d9ab07b` |
+| 4 | `theorem` | [sourcePeanoPrimitive_contDiff_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourcePositivePeanoPrimitive.lean/declarations/sourcepeanoprimitive-contdiff-two.md) | 90 | `result-track:62df3415a915aac256bb0f1308e5842fda73449985e815d0fb3792fc0b77bcd4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

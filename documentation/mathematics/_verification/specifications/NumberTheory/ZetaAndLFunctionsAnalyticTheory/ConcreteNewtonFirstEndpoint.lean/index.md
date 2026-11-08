@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFirstEndpoint.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFirstEndpoint.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFirstEndpoint.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFirstEndpoint.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.RationalPowerTrace`](../../../../../FunctionsOfAComplexVariable/RationalPowerTrace.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.ConcreteNewtonBlockAcceptance`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ConcreteNewtonBlockAcceptance.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.RationalPowerTrace`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalPowerTrace.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.ConcreteNewtonBlockAcceptance`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ConcreteNewtonBlockAcceptance.lean/index.md) — import line 5; pinned internal source present.
 - `Mathlib.Tactic.FinCases` — import line 6; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic.NormNum` — import line 7; external provider; requires a separately pinned dependency.
 
@@ -60,19 +60,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [lower_one](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFirstEndpoint.lean/declarations/lower-one.md) | 29 | `result-track:50538e6f680b8d264b4d139678ef21399886993d472dec0900d217fe694269b6` |
-| 2 | `theorem` | [width_one](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFirstEndpoint.lean/declarations/width-one.md) | 32 | `result-track:d398bd315693c3267498cbce768a138ce9a38b0c0d0ad9514a975b5b8a5cfed7` |
-| 3 | `theorem` | [first_log_data](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFirstEndpoint.lean/declarations/first-log-data.md) | 35 | `result-track:a8743c9c2cac39adb9dc8d59a4213cb64e5442adbad3c03e767f4bf707601a6e` |
-| 4 | `theorem` | [polynomial_zero_succ](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFirstEndpoint.lean/declarations/polynomial-zero-succ.md) | 45 | `result-track:7b13fefd53e9e5125d5783c19a436a7f456040ab0ac3c6875b192ba3b8ee5b6a` |
-| 5 | `theorem` | [first_seed](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFirstEndpoint.lean/declarations/first-seed.md) | 56 | `result-track:93500f9caa6c0547dff763573929f1ddb07c82d5007adf2a2fe29ed191e90866` |
-| 6 | `theorem` | [first_seed_error](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFirstEndpoint.lean/declarations/first-seed-error.md) | 67 | `result-track:21f092bed8eaf4f718af2a1caad6c6b1f1f284015ff4e379f89529eb99ab5a15` |
-| 7 | `theorem` | [first_admissible](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFirstEndpoint.lean/declarations/first-admissible.md) | 75 | `result-track:df45a89f2fe1d2327bdb6f32329e2b725bd97bba88d039aa1b8bf1e4b6388355` |
-| 8 | `def` | [firstTrace](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFirstEndpoint.lean/declarations/firsttrace.md) | 85 | `declaration-track:d5889eb3e4ee14c6d553d2bee091ba1f03869a444e385a7d6a5e350e851facb1` |
-| 9 | `def` | [firstOutput](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFirstEndpoint.lean/declarations/firstoutput.md) | 88 | `declaration-track:70ce68aecfc359a9aa1ade10b8281a8f010d011b7eff787d24983b92c6b4615c` |
-| 10 | `theorem` | [first_trace_valid](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFirstEndpoint.lean/declarations/first-trace-valid.md) | 91 | `result-track:777aa615069ec39a08308ce158abd84317ea74550994d439e0441af17c6208c6` |
-| 11 | `theorem` | [first_output_identity](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFirstEndpoint.lean/declarations/first-output-identity.md) | 99 | `result-track:f0a501a4776939efe922c0cd94cdbf82d14516f8f15ecc1475fbf57846a25e35` |
-| 12 | `theorem` | [first_endpoint_compute](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFirstEndpoint.lean/declarations/first-endpoint-compute.md) | 103 | `result-track:e2980689e9947e1e293e2575ccad9352e40c0e38014555c6270d689a472c126f` |
-| 13 | `theorem` | [first_prefix_check](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFirstEndpoint.lean/declarations/first-prefix-check.md) | 111 | `result-track:07e524cf379315f4bfdfe68593f374c468dfc2c750f842e3c75b257a387875e9` |
+| 1 | `theorem` | [lower_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFirstEndpoint.lean/declarations/lower-one.md) | 29 | `result-track:50538e6f680b8d264b4d139678ef21399886993d472dec0900d217fe694269b6` |
+| 2 | `theorem` | [width_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFirstEndpoint.lean/declarations/width-one.md) | 32 | `result-track:d398bd315693c3267498cbce768a138ce9a38b0c0d0ad9514a975b5b8a5cfed7` |
+| 3 | `theorem` | [first_log_data](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFirstEndpoint.lean/declarations/first-log-data.md) | 35 | `result-track:a8743c9c2cac39adb9dc8d59a4213cb64e5442adbad3c03e767f4bf707601a6e` |
+| 4 | `theorem` | [polynomial_zero_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFirstEndpoint.lean/declarations/polynomial-zero-succ.md) | 45 | `result-track:7b13fefd53e9e5125d5783c19a436a7f456040ab0ac3c6875b192ba3b8ee5b6a` |
+| 5 | `theorem` | [first_seed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFirstEndpoint.lean/declarations/first-seed.md) | 56 | `result-track:93500f9caa6c0547dff763573929f1ddb07c82d5007adf2a2fe29ed191e90866` |
+| 6 | `theorem` | [first_seed_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFirstEndpoint.lean/declarations/first-seed-error.md) | 67 | `result-track:21f092bed8eaf4f718af2a1caad6c6b1f1f284015ff4e379f89529eb99ab5a15` |
+| 7 | `theorem` | [first_admissible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFirstEndpoint.lean/declarations/first-admissible.md) | 75 | `result-track:df45a89f2fe1d2327bdb6f32329e2b725bd97bba88d039aa1b8bf1e4b6388355` |
+| 8 | `def` | [firstTrace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFirstEndpoint.lean/declarations/firsttrace.md) | 85 | `declaration-track:d5889eb3e4ee14c6d553d2bee091ba1f03869a444e385a7d6a5e350e851facb1` |
+| 9 | `def` | [firstOutput](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFirstEndpoint.lean/declarations/firstoutput.md) | 88 | `declaration-track:70ce68aecfc359a9aa1ade10b8281a8f010d011b7eff787d24983b92c6b4615c` |
+| 10 | `theorem` | [first_trace_valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFirstEndpoint.lean/declarations/first-trace-valid.md) | 91 | `result-track:777aa615069ec39a08308ce158abd84317ea74550994d439e0441af17c6208c6` |
+| 11 | `theorem` | [first_output_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFirstEndpoint.lean/declarations/first-output-identity.md) | 99 | `result-track:f0a501a4776939efe922c0cd94cdbf82d14516f8f15ecc1475fbf57846a25e35` |
+| 12 | `theorem` | [first_endpoint_compute](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFirstEndpoint.lean/declarations/first-endpoint-compute.md) | 103 | `result-track:e2980689e9947e1e293e2575ccad9352e40c0e38014555c6270d689a472c126f` |
+| 13 | `theorem` | [first_prefix_check](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFirstEndpoint.lean/declarations/first-prefix-check.md) | 111 | `result-track:07e524cf379315f4bfdfe68593f374c468dfc2c750f842e3c75b257a387875e9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/GeneralNormalizationEqualities.lean/index.md) · [Full source](../../../../RealFunctions/GeneralNormalizationEqualities.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/GeneralNormalizationEqualities.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/GeneralNormalizationEqualities.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [normalization_sends_raw_to_spectral](../../../../RealFunctions/GeneralNormalizationEqualities.lean/declarations/normalization-sends-raw-to-spectral.md) | 38 | `result-track:d74d1f6e4ec3449a5e5b056efc219cc7c661fd7a62cc6d743659278f380c0906` |
-| 2 | `theorem` | [normalization_matches_declared_center](../../../../RealFunctions/GeneralNormalizationEqualities.lean/declarations/normalization-matches-declared-center.md) | 44 | `result-track:63ac30abe05df2f05f24613858c0b7b0689ac7ae8c30c2438a0da7eff848e118` |
+| 1 | `theorem` | [normalization_sends_raw_to_spectral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/GeneralNormalizationEqualities.lean/declarations/normalization-sends-raw-to-spectral.md) | 38 | `result-track:d74d1f6e4ec3449a5e5b056efc219cc7c661fd7a62cc6d743659278f380c0906` |
+| 2 | `theorem` | [normalization_matches_declared_center](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/GeneralNormalizationEqualities.lean/declarations/normalization-matches-declared-center.md) | 44 | `result-track:63ac30abe05df2f05f24613858c0b7b0689ac7ae8c30c2438a0da7eff848e118` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

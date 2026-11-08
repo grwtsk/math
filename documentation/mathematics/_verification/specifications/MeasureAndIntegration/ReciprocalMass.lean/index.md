@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ReciprocalMass.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ReciprocalMass.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReciprocalMass.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReciprocalMass.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Moebius.PrimeFactorFilters`](../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimeFactorFilters.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.PrimeFactorFilters`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimeFactorFilters.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.NumberTheory.Chebyshev` — import line 5; external provider; requires a separately pinned dependency.
 - `Mathlib.NumberTheory.AbelSummation` — import line 6; external provider; requires a separately pinned dependency.
 
@@ -59,16 +59,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [harmonicPrimeMass](../../../../MeasureAndIntegration/ReciprocalMass.lean/declarations/harmonicprimemass.md) | 16 | `declaration-track:c40835d92c6a7da2df0d6e10dff7291c4bdf364464f3b3341cfc600fee3fdf02` |
-| 2 | `theorem` | [harmonicPrimeMass_nonneg](../../../../MeasureAndIntegration/ReciprocalMass.lean/declarations/harmonicprimemass-nonneg.md) | 18 | `result-track:6f8855135f588f7e41efd38e490912f8f5a297a7ecc903e6307d59915b3dd4ff` |
-| 3 | `def` | [massWeight](../../../../MeasureAndIntegration/ReciprocalMass.lean/declarations/massweight.md) | 23 | `declaration-track:b8555cf576569f94044aa9f46ed26a62c95549397d4d042568905d9dc8287340` |
-| 4 | `def` | [massDensity](../../../../MeasureAndIntegration/ReciprocalMass.lean/declarations/massdensity.md) | 24 | `declaration-track:9368319be921c6eb9a6bdc0e9304aea90461f16fd657edef4f72a146b5535429` |
-| 5 | `def` | [massPrimitive](../../../../MeasureAndIntegration/ReciprocalMass.lean/declarations/massprimitive.md) | 25 | `declaration-track:7daaaaf0bd377f3cde0714b7482f0881e5d2985f9a3fc317f8da47968a38b529` |
-| 6 | `theorem` | [massWeight_deriv](../../../../MeasureAndIntegration/ReciprocalMass.lean/declarations/massweight-deriv.md) | 27 | `result-track:14e6074ea862b78254f5c02653ed996bfc714b6f4ede89dc65e6dade2ceecec7` |
-| 7 | `theorem` | [massPrimitive_deriv](../../../../MeasureAndIntegration/ReciprocalMass.lean/declarations/massprimitive-deriv.md) | 36 | `result-track:220be1bc208a8d70526cb1f899010d8b7a002a8ad386a62d2db3119151ade053` |
-| 8 | `theorem` | [prime_mass_abel](../../../../MeasureAndIntegration/ReciprocalMass.lean/declarations/prime-mass-abel.md) | 46 | `result-track:e87c13ff41a321618486ab7958abba460735e2e50b74b6ca06e0df0716f5ba91` |
-| 9 | `theorem` | [prime_mass_bound](../../../../MeasureAndIntegration/ReciprocalMass.lean/declarations/prime-mass-bound.md) | 77 | `result-track:e029f12b9cd5df13e68f9d3441c323950e01a422d3fabef49861539f3d246e4a` |
-| 10 | `theorem` | [harmonicPrimeMass_log_bound](../../../../MeasureAndIntegration/ReciprocalMass.lean/declarations/harmonicprimemass-log-bound.md) | 136 | `result-track:84cacbe15d2be6daaacd3a7872972991760ad747fdf1e9f7ec371e7fa463bad8` |
+| 1 | `def` | [harmonicPrimeMass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReciprocalMass.lean/declarations/harmonicprimemass.md) | 16 | `declaration-track:c40835d92c6a7da2df0d6e10dff7291c4bdf364464f3b3341cfc600fee3fdf02` |
+| 2 | `theorem` | [harmonicPrimeMass_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReciprocalMass.lean/declarations/harmonicprimemass-nonneg.md) | 18 | `result-track:6f8855135f588f7e41efd38e490912f8f5a297a7ecc903e6307d59915b3dd4ff` |
+| 3 | `def` | [massWeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReciprocalMass.lean/declarations/massweight.md) | 23 | `declaration-track:b8555cf576569f94044aa9f46ed26a62c95549397d4d042568905d9dc8287340` |
+| 4 | `def` | [massDensity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReciprocalMass.lean/declarations/massdensity.md) | 24 | `declaration-track:9368319be921c6eb9a6bdc0e9304aea90461f16fd657edef4f72a146b5535429` |
+| 5 | `def` | [massPrimitive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReciprocalMass.lean/declarations/massprimitive.md) | 25 | `declaration-track:7daaaaf0bd377f3cde0714b7482f0881e5d2985f9a3fc317f8da47968a38b529` |
+| 6 | `theorem` | [massWeight_deriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReciprocalMass.lean/declarations/massweight-deriv.md) | 27 | `result-track:14e6074ea862b78254f5c02653ed996bfc714b6f4ede89dc65e6dade2ceecec7` |
+| 7 | `theorem` | [massPrimitive_deriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReciprocalMass.lean/declarations/massprimitive-deriv.md) | 36 | `result-track:220be1bc208a8d70526cb1f899010d8b7a002a8ad386a62d2db3119151ade053` |
+| 8 | `theorem` | [prime_mass_abel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReciprocalMass.lean/declarations/prime-mass-abel.md) | 46 | `result-track:e87c13ff41a321618486ab7958abba460735e2e50b74b6ca06e0df0716f5ba91` |
+| 9 | `theorem` | [prime_mass_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReciprocalMass.lean/declarations/prime-mass-bound.md) | 77 | `result-track:e029f12b9cd5df13e68f9d3441c323950e01a422d3fabef49861539f3d246e4a` |
+| 10 | `theorem` | [harmonicPrimeMass_log_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReciprocalMass.lean/declarations/harmonicprimemass-log-bound.md) | 136 | `result-track:84cacbe15d2be6daaacd3a7872972991760ad747fdf1e9f7ec371e7fa463bad8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

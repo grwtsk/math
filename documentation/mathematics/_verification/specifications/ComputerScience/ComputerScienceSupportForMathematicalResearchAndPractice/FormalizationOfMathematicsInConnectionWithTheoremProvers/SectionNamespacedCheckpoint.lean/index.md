@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SectionNamespacedCheckpoint.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SectionNamespacedCheckpoint.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SectionNamespacedCheckpoint.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SectionNamespacedCheckpoint.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [checkpoint](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SectionNamespacedCheckpoint.lean/declarations/checkpoint.md) | 16 | `declaration-track:9284098c25831daaaee11d2d946c910fb3e23585cf2f5bc66a4336f22347963e` |
-| 2 | `def` | [residue](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SectionNamespacedCheckpoint.lean/declarations/residue.md) | 19 | `declaration-track:61eeecdfa532b14f00c9c9bf1d78fa79c639fff5c10d1986ecdfa40bbd080a3f` |
-| 3 | `theorem` | [residue_target](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SectionNamespacedCheckpoint.lean/declarations/residue-target.md) | 22 | `result-track:f65b9947ecb642207a64d1ddbe6f3185488a63998b47b1303ee15d8752fa3ace` |
+| 1 | `def` | [checkpoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SectionNamespacedCheckpoint.lean/declarations/checkpoint.md) | 16 | `declaration-track:9284098c25831daaaee11d2d946c910fb3e23585cf2f5bc66a4336f22347963e` |
+| 2 | `def` | [residue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SectionNamespacedCheckpoint.lean/declarations/residue.md) | 19 | `declaration-track:61eeecdfa532b14f00c9c9bf1d78fa79c639fff5c10d1986ecdfa40bbd080a3f` |
+| 3 | `theorem` | [residue_target](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SectionNamespacedCheckpoint.lean/declarations/residue-target.md) | 22 | `result-track:f65b9947ecb642207a64d1ddbe6f3185488a63998b47b1303ee15d8752fa3ace` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

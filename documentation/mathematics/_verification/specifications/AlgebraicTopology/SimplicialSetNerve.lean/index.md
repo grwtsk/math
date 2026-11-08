@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/SimplicialSetNerve.lean/index.md) · [Full source](../../../../AlgebraicTopology/SimplicialSetNerve.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialSetNerve.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialSetNerve.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [nerve](../../../../AlgebraicTopology/SimplicialSetNerve.lean/declarations/nerve.md) | 31 | `declaration-track:cb8da4eb5f1b69f485f37c5b35fc528b4336ebe1ef014c37398a8cf3364b4f26` |
-| 2 | `instance` | [(anonymous)](../../../../AlgebraicTopology/SimplicialSetNerve.lean/declarations/instance.md) | 38 | `declaration-track:f578908399957963223b8f8829727a8a31357267de4a2a16c3dc2ea5b2d5f754` |
-| 3 | `def` | [nerveMap](../../../../AlgebraicTopology/SimplicialSetNerve.lean/declarations/nervemap.md) | 43 | `declaration-track:4b42e1dcbfe760ffa69772db8eb6d832b45f933f851394152d06659a67a040ad` |
-| 4 | `def` | [nerveFunctor](../../../../AlgebraicTopology/SimplicialSetNerve.lean/declarations/nervefunctor.md) | 48 | `declaration-track:3fed3e662e052b1f0b1704a944dc820b128846922b902a0024d69b97a1d7740d` |
-| 5 | `def` | [nerveEquiv](../../../../AlgebraicTopology/SimplicialSetNerve.lean/declarations/nerveequiv.md) | 53 | `declaration-track:f885f7aaef27356e1e7102016498be926854c115d24c982dc8f19641d4bc09a5` |
-| 6 | `lemma` | [δ₀_eq](../../../../AlgebraicTopology/SimplicialSetNerve.lean/declarations/eq.md) | 63 | `result-track:d06e4c13aac3cb9dce863fc43d10c5ae6818559a688a3d192f86eef21fd2c1f1` |
-| 7 | `lemma` | [σ₀_mk₀_eq](../../../../AlgebraicTopology/SimplicialSetNerve.lean/declarations/mk-eq-source-edition-2.md) | 65 | `result-track:38b9bc24b44ac42c2874708223869c563046413be1f114089b9ef6bc29afd76a` |
-| 8 | `theorem` | [δ₂_mk₂_eq](../../../../AlgebraicTopology/SimplicialSetNerve.lean/declarations/mk-eq-source-edition-3.md) | 72 | `result-track:46c34c95297eb22f4c318e68185e078ce5b20a173bf648d48160297098b8ce14` |
-| 9 | `theorem` | [δ₀_mk₂_eq](../../../../AlgebraicTopology/SimplicialSetNerve.lean/declarations/mk-eq.md) | 75 | `result-track:03eb95cd1058d61fddee79776943cafa7144a4738eeb1f0f345e4f014136ff54` |
-| 10 | `theorem` | [δ₁_mk₂_eq](../../../../AlgebraicTopology/SimplicialSetNerve.lean/declarations/mk-eq-source-edition-4.md) | 78 | `result-track:516db920be7a2e7fb615ea7d2eff733e77fb86167572d5ccbb21a09e3bee1985` |
+| 1 | `def` | [nerve](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialSetNerve.lean/declarations/nerve.md) | 31 | `declaration-track:cb8da4eb5f1b69f485f37c5b35fc528b4336ebe1ef014c37398a8cf3364b4f26` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialSetNerve.lean/declarations/instance.md) | 38 | `declaration-track:f578908399957963223b8f8829727a8a31357267de4a2a16c3dc2ea5b2d5f754` |
+| 3 | `def` | [nerveMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialSetNerve.lean/declarations/nervemap.md) | 43 | `declaration-track:4b42e1dcbfe760ffa69772db8eb6d832b45f933f851394152d06659a67a040ad` |
+| 4 | `def` | [nerveFunctor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialSetNerve.lean/declarations/nervefunctor.md) | 48 | `declaration-track:3fed3e662e052b1f0b1704a944dc820b128846922b902a0024d69b97a1d7740d` |
+| 5 | `def` | [nerveEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialSetNerve.lean/declarations/nerveequiv.md) | 53 | `declaration-track:f885f7aaef27356e1e7102016498be926854c115d24c982dc8f19641d4bc09a5` |
+| 6 | `lemma` | [δ₀_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialSetNerve.lean/declarations/eq.md) | 63 | `result-track:d06e4c13aac3cb9dce863fc43d10c5ae6818559a688a3d192f86eef21fd2c1f1` |
+| 7 | `lemma` | [σ₀_mk₀_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialSetNerve.lean/declarations/mk-eq-source-edition-2.md) | 65 | `result-track:38b9bc24b44ac42c2874708223869c563046413be1f114089b9ef6bc29afd76a` |
+| 8 | `theorem` | [δ₂_mk₂_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialSetNerve.lean/declarations/mk-eq-source-edition-3.md) | 72 | `result-track:46c34c95297eb22f4c318e68185e078ce5b20a173bf648d48160297098b8ce14` |
+| 9 | `theorem` | [δ₀_mk₂_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialSetNerve.lean/declarations/mk-eq.md) | 75 | `result-track:03eb95cd1058d61fddee79776943cafa7144a4738eeb1f0f345e4f014136ff54` |
+| 10 | `theorem` | [δ₁_mk₂_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialSetNerve.lean/declarations/mk-eq-source-edition-4.md) | 78 | `result-track:516db920be7a2e7fb615ea7d2eff733e77fb86167572d5ccbb21a09e3bee1985` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

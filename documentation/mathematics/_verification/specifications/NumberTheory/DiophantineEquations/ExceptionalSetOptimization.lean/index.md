@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/DiophantineEquations/ExceptionalSetOptimization.lean/index.md) · [Full source](../../../../../NumberTheory/DiophantineEquations/ExceptionalSetOptimization.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ExceptionalSetOptimization.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ExceptionalSetOptimization.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Data](../../../../../NumberTheory/DiophantineEquations/ExceptionalSetOptimization.lean/declarations/data.md) | 21 | `declaration-track:631f4ac55843755a718560cc704a65a569af12e3ce6abe5bf1ede8e8155255cb` |
-| 2 | `def` | [p](../../../../../NumberTheory/DiophantineEquations/ExceptionalSetOptimization.lean/declarations/p.md) | 33 | `declaration-track:c490ca98df65ce0200317c5dc193665208f216ec13055f1eeb0a0e3f0e445fb2` |
-| 3 | `def` | [total](../../../../../NumberTheory/DiophantineEquations/ExceptionalSetOptimization.lean/declarations/total.md) | 37 | `declaration-track:d3e9a429b30921746ff719f953f5d11f626a2d160279344d89e21518c3c40c01` |
-| 4 | `def` | [envelope](../../../../../NumberTheory/DiophantineEquations/ExceptionalSetOptimization.lean/declarations/envelope.md) | 41 | `declaration-track:f43d267fd1c5a1c11277875eab18e7f172483acf418966fe24e3597f5ff628cd` |
-| 5 | `theorem` | [even_part_le_envelope](../../../../../NumberTheory/DiophantineEquations/ExceptionalSetOptimization.lean/declarations/even-part-le-envelope.md) | 44 | `result-track:ae593ede0bb8f11299ad6912de5b297e699605d59723b361d5b3228ab2b2e7ff` |
-| 6 | `theorem` | [third_part_le_envelope](../../../../../NumberTheory/DiophantineEquations/ExceptionalSetOptimization.lean/declarations/third-part-le-envelope.md) | 48 | `result-track:70c13f85233101f7c89fc75e92e8ae5003b35b106bb8e38392b3bf4d8b3167e3` |
-| 7 | `theorem` | [fifth_part_le_envelope](../../../../../NumberTheory/DiophantineEquations/ExceptionalSetOptimization.lean/declarations/fifth-part-le-envelope.md) | 52 | `result-track:8fdbd4fc7188fe5f09ad5f5409f40d51fa3a6727c56fc940bb78ba5ff004a823` |
-| 8 | `structure` | [Feasible](../../../../../NumberTheory/DiophantineEquations/ExceptionalSetOptimization.lean/declarations/feasible.md) | 60 | `declaration-track:626c51363ebf395858d915aef2c8ea1d50180fa9ff6024a128c815e6408a2681` |
-| 9 | `theorem` | [exponent_le_three_fifths](../../../../../NumberTheory/DiophantineEquations/ExceptionalSetOptimization.lean/declarations/exponent-le-three-fifths.md) | 153 | `result-track:2fa8ae9234cffc3c0f7db3e7d12cbdcc9e6090d208cb60e52452f5caec7ccabd` |
+| 1 | `structure` | [Data](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ExceptionalSetOptimization.lean/declarations/data.md) | 21 | `declaration-track:631f4ac55843755a718560cc704a65a569af12e3ce6abe5bf1ede8e8155255cb` |
+| 2 | `def` | [p](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ExceptionalSetOptimization.lean/declarations/p.md) | 33 | `declaration-track:c490ca98df65ce0200317c5dc193665208f216ec13055f1eeb0a0e3f0e445fb2` |
+| 3 | `def` | [total](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ExceptionalSetOptimization.lean/declarations/total.md) | 37 | `declaration-track:d3e9a429b30921746ff719f953f5d11f626a2d160279344d89e21518c3c40c01` |
+| 4 | `def` | [envelope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ExceptionalSetOptimization.lean/declarations/envelope.md) | 41 | `declaration-track:f43d267fd1c5a1c11277875eab18e7f172483acf418966fe24e3597f5ff628cd` |
+| 5 | `theorem` | [even_part_le_envelope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ExceptionalSetOptimization.lean/declarations/even-part-le-envelope.md) | 44 | `result-track:ae593ede0bb8f11299ad6912de5b297e699605d59723b361d5b3228ab2b2e7ff` |
+| 6 | `theorem` | [third_part_le_envelope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ExceptionalSetOptimization.lean/declarations/third-part-le-envelope.md) | 48 | `result-track:70c13f85233101f7c89fc75e92e8ae5003b35b106bb8e38392b3bf4d8b3167e3` |
+| 7 | `theorem` | [fifth_part_le_envelope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ExceptionalSetOptimization.lean/declarations/fifth-part-le-envelope.md) | 52 | `result-track:8fdbd4fc7188fe5f09ad5f5409f40d51fa3a6727c56fc940bb78ba5ff004a823` |
+| 8 | `structure` | [Feasible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ExceptionalSetOptimization.lean/declarations/feasible.md) | 60 | `declaration-track:626c51363ebf395858d915aef2c8ea1d50180fa9ff6024a128c815e6408a2681` |
+| 9 | `theorem` | [exponent_le_three_fifths](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ExceptionalSetOptimization.lean/declarations/exponent-le-three-fifths.md) | 153 | `result-track:2fa8ae9234cffc3c0f7db3e7d12cbdcc9e6090d208cb60e52452f5caec7ccabd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ValueAndIndexedBit.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ValueAndIndexedBit.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ValueAndIndexedBit.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ValueAndIndexedBit.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -66,8 +66,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [BitField](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ValueAndIndexedBit.lean/declarations/bitfield.md) | 43 | `declaration-track:de68bcb311c876ffa8cbb937d81d8f77daf5b2ecd621b478b24d77ec36a2525d` |
-| 2 | `def` | [BitField.bitAt](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ValueAndIndexedBit.lean/declarations/bitfield-bitat.md) | 48 | `declaration-track:f01dda2dc8e3850779020fe3bd37141376fdcc5334c9a6bab7e32c7029f42798` |
+| 1 | `structure` | [BitField](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ValueAndIndexedBit.lean/declarations/bitfield.md) | 43 | `declaration-track:de68bcb311c876ffa8cbb937d81d8f77daf5b2ecd621b478b24d77ec36a2525d` |
+| 2 | `def` | [BitField.bitAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ValueAndIndexedBit.lean/declarations/bitfield-bitat.md) | 48 | `declaration-track:f01dda2dc8e3850779020fe3bd37141376fdcc5334c9a6bab7e32c7029f42798` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

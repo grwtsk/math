@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceFullXiCellBudgetObstructionAttempt02.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceFullXiCellBudgetObstructionAttempt02.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFullXiCellBudgetObstructionAttempt02.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFullXiCellBudgetObstructionAttempt02.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [fullXiLogWeight](../../../../MeasureAndIntegration/SourceFullXiCellBudgetObstructionAttempt02.lean/declarations/fullxilogweight.md) | 18 | `declaration-track:edd3cd35051bf269678b5c074b8700a313cce2fbc81c76cf5ce7bb8f05f92b4b` |
-| 2 | `def` | [fullXiAbsoluteLogBudget](../../../../MeasureAndIntegration/SourceFullXiCellBudgetObstructionAttempt02.lean/declarations/fullxiabsolutelogbudget.md) | 22 | `declaration-track:284a885cb641c9949857a79d34d97b86c8de33f6afac85144791fb305f421970` |
-| 3 | `theorem` | [actual_fullXiLogWeight_early_negative](../../../../MeasureAndIntegration/SourceFullXiCellBudgetObstructionAttempt02.lean/declarations/actual-fullxilogweight-early-negative.md) | 25 | `result-track:0d59eb892bd850845b6fd6bf3edd6005e6ce0b3933c5bfde7ef13d3f9c8ecba0` |
-| 4 | `theorem` | [actual_fullXiLogWeight_continuous](../../../../MeasureAndIntegration/SourceFullXiCellBudgetObstructionAttempt02.lean/declarations/actual-fullxilogweight-continuous.md) | 41 | `result-track:d9e921c643df0664edaa719a95b4069ff5edf892722a76e995a5181f1069722a` |
-| 5 | `theorem` | [actual_fullXiAbsoluteLogBudget_linear_lower](../../../../MeasureAndIntegration/SourceFullXiCellBudgetObstructionAttempt02.lean/declarations/actual-fullxiabsolutelogbudget-linear-lower.md) | 46 | `result-track:00a70bb3d8dbf66e91accdfdb0750660ca882a06ab02305297a97a175fae8cd1` |
-| 6 | `theorem` | [actual_fullXiAbsoluteLogBudget_not_eventually_bounded](../../../../MeasureAndIntegration/SourceFullXiCellBudgetObstructionAttempt02.lean/declarations/actual-fullxiabsolutelogbudget-not-eventually-bounded.md) | 73 | `result-track:c14ad393934d8a78adc6a4c52e546a0a05bf2b8486a017aac8ea0b87c20aab31` |
+| 1 | `def` | [fullXiLogWeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFullXiCellBudgetObstructionAttempt02.lean/declarations/fullxilogweight.md) | 18 | `declaration-track:edd3cd35051bf269678b5c074b8700a313cce2fbc81c76cf5ce7bb8f05f92b4b` |
+| 2 | `def` | [fullXiAbsoluteLogBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFullXiCellBudgetObstructionAttempt02.lean/declarations/fullxiabsolutelogbudget.md) | 22 | `declaration-track:284a885cb641c9949857a79d34d97b86c8de33f6afac85144791fb305f421970` |
+| 3 | `theorem` | [actual_fullXiLogWeight_early_negative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFullXiCellBudgetObstructionAttempt02.lean/declarations/actual-fullxilogweight-early-negative.md) | 25 | `result-track:0d59eb892bd850845b6fd6bf3edd6005e6ce0b3933c5bfde7ef13d3f9c8ecba0` |
+| 4 | `theorem` | [actual_fullXiLogWeight_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFullXiCellBudgetObstructionAttempt02.lean/declarations/actual-fullxilogweight-continuous.md) | 41 | `result-track:d9e921c643df0664edaa719a95b4069ff5edf892722a76e995a5181f1069722a` |
+| 5 | `theorem` | [actual_fullXiAbsoluteLogBudget_linear_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFullXiCellBudgetObstructionAttempt02.lean/declarations/actual-fullxiabsolutelogbudget-linear-lower.md) | 46 | `result-track:00a70bb3d8dbf66e91accdfdb0750660ca882a06ab02305297a97a175fae8cd1` |
+| 6 | `theorem` | [actual_fullXiAbsoluteLogBudget_not_eventually_bounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFullXiCellBudgetObstructionAttempt02.lean/declarations/actual-fullxiabsolutelogbudget-not-eventually-bounded.md) | 73 | `result-track:c14ad393934d8a78adc6a4c52e546a0a05bf2b8486a017aac8ea0b87c20aab31` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MultisetLemmas.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MultisetLemmas.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MultisetLemmas.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MultisetLemmas.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [dvd_prod](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MultisetLemmas.lean/declarations/dvd-prod.md) | 18 | `result-track:6cc87800aecfa445e127d57348aff1d22025f7694aa806e9f75815196d355cd6` |
-| 2 | `theorem` | [prod_eq_one_iff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MultisetLemmas.lean/declarations/prod-eq-one-iff.md) | 23 | `result-track:4295b4f607c6ed7f2dbd1ed282ffabb801faaa4173f66095e356d10de1487f54` |
-| 3 | `lemma` | [CanonicallyOrderedCommSemiring.multiset_prod_pos](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MultisetLemmas.lean/declarations/canonicallyorderedcommsemiring-multiset-prod-pos.md) | 32 | `result-track:a1cc222ddc881b32cfbfbdb52f9dcf5c58e8d293c26aaff10d3fb3ceb24bc44d` |
-| 4 | `theorem` | [multiset_sum_right](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MultisetLemmas.lean/declarations/multiset-sum-right.md) | 44 | `result-track:10354941e5c5d7192f6ade828d87ccba73cee501195fd506c38481ba52224ac2` |
-| 5 | `theorem` | [multiset_sum_left](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MultisetLemmas.lean/declarations/multiset-sum-left.md) | 50 | `result-track:64a72828d069e306ad859ecb8ab5653e31b2a0834ebbb179396d8e68be547260` |
+| 1 | `theorem` | [dvd_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MultisetLemmas.lean/declarations/dvd-prod.md) | 18 | `result-track:6cc87800aecfa445e127d57348aff1d22025f7694aa806e9f75815196d355cd6` |
+| 2 | `theorem` | [prod_eq_one_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MultisetLemmas.lean/declarations/prod-eq-one-iff.md) | 23 | `result-track:4295b4f607c6ed7f2dbd1ed282ffabb801faaa4173f66095e356d10de1487f54` |
+| 3 | `lemma` | [CanonicallyOrderedCommSemiring.multiset_prod_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MultisetLemmas.lean/declarations/canonicallyorderedcommsemiring-multiset-prod-pos.md) | 32 | `result-track:a1cc222ddc881b32cfbfbdb52f9dcf5c58e8d293c26aaff10d3fb3ceb24bc44d` |
+| 4 | `theorem` | [multiset_sum_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MultisetLemmas.lean/declarations/multiset-sum-right.md) | 44 | `result-track:10354941e5c5d7192f6ade828d87ccba73cee501195fd506c38481ba52224ac2` |
+| 5 | `theorem` | [multiset_sum_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MultisetLemmas.lean/declarations/multiset-sum-left.md) | 50 | `result-track:64a72828d069e306ad859ecb8ab5653e31b2a0834ebbb179396d8e68be547260` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EnergyCompiledEnergy.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EnergyCompiledEnergy.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EnergyCompiledEnergy.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EnergyCompiledEnergy.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [compiledEnergy](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EnergyCompiledEnergy.lean/declarations/compiledenergy.md) | 11 | `declaration-track:2ac4017704dadeb90064f90108d6eb92f15bb9f96dfefb43478406e3ef609b87` |
-| 2 | `def` | [compiledTotalEnergy](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EnergyCompiledEnergy.lean/declarations/compiledtotalenergy.md) | 16 | `declaration-track:b54087be385f08e67df539cd634a02d43bc186084636b9235d1b07df8a3a5673` |
-| 3 | `theorem` | [compiled_energy_channel_decomposition](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EnergyCompiledEnergy.lean/declarations/compiled-energy-channel-decomposition.md) | 20 | `result-track:648cc4aa07e8032cf483929c6609c29556b90a55c7362632453cc1131c35468a` |
+| 1 | `def` | [compiledEnergy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EnergyCompiledEnergy.lean/declarations/compiledenergy.md) | 11 | `declaration-track:2ac4017704dadeb90064f90108d6eb92f15bb9f96dfefb43478406e3ef609b87` |
+| 2 | `def` | [compiledTotalEnergy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EnergyCompiledEnergy.lean/declarations/compiledtotalenergy.md) | 16 | `declaration-track:b54087be385f08e67df539cd634a02d43bc186084636b9235d1b07df8a3a5673` |
+| 3 | `theorem` | [compiled_energy_channel_decomposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EnergyCompiledEnergy.lean/declarations/compiled-energy-channel-decomposition.md) | 20 | `result-track:648cc4aa07e8032cf483929c6609c29556b90a55c7362632453cc1131c35468a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

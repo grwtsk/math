@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenQuadratureDerivativeBound.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenQuadratureDerivativeBound.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenQuadratureDerivativeBound.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenQuadratureDerivativeBound.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenFourierPrimitiveBound`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFourierPrimitiveBound.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenFourierPrimitiveBound`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFourierPrimitiveBound.lean/index.md) — import line 7; pinned internal source present.
 - `Mathlib.Tactic` — import line 8; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [greenFourierBackgroundIntegrand_derivative_split](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenQuadratureDerivativeBound.lean/declarations/greenfourierbackgroundintegrand-derivative-split.md) | 16 | `result-track:6f4ed49ec01f28ef6618b9a172022e0e19beacb799adf584f4e5c2d1783008ca` |
-| 2 | `theorem` | [norm_greenFourierBackgroundIntegrand_derivative_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenQuadratureDerivativeBound.lean/declarations/norm-greenfourierbackgroundintegrand-derivative-le.md) | 29 | `result-track:1918909d3891517ca6959f28f31f7722b61b7d925211d0c025441123bba6c7f1` |
-| 3 | `theorem` | [greenFourierBackgroundIntegrand_hasDerivAt_with_bound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenQuadratureDerivativeBound.lean/declarations/greenfourierbackgroundintegrand-hasderivat-with-bound.md) | 70 | `result-track:ef3e7845ae6c5b2a26a433c4499ab8d6e648e23fa59b5200fdc3a4b27ca0d0e8` |
+| 1 | `theorem` | [greenFourierBackgroundIntegrand_derivative_split](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenQuadratureDerivativeBound.lean/declarations/greenfourierbackgroundintegrand-derivative-split.md) | 16 | `result-track:6f4ed49ec01f28ef6618b9a172022e0e19beacb799adf584f4e5c2d1783008ca` |
+| 2 | `theorem` | [norm_greenFourierBackgroundIntegrand_derivative_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenQuadratureDerivativeBound.lean/declarations/norm-greenfourierbackgroundintegrand-derivative-le.md) | 29 | `result-track:1918909d3891517ca6959f28f31f7722b61b7d925211d0c025441123bba6c7f1` |
+| 3 | `theorem` | [greenFourierBackgroundIntegrand_hasDerivAt_with_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenQuadratureDerivativeBound.lean/declarations/greenfourierbackgroundintegrand-hasderivat-with-bound.md) | 70 | `result-track:ef3e7845ae6c5b2a26a433c4499ab8d6e648e23fa59b5200fdc3a4b27ca0d0e8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/XiJensenTraceResultsAlternative.lean/index.md) · [Full source](../../../../MeasureAndIntegration/XiJensenTraceResultsAlternative.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/XiJensenTraceResultsAlternative.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/XiJensenTraceResultsAlternative.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [thetaTail_index_logConcave](../../../../MeasureAndIntegration/XiJensenTraceResultsAlternative.lean/declarations/thetatail-index-logconcave.md) | 19 | `result-track:92a8ad70ffdc9b1e80cd97bb2942a6265c32dce2275f43f3d1bd3a33ab93b19c` |
-| 2 | `theorem` | [thetaTail_even_index_logConcave](../../../../MeasureAndIntegration/XiJensenTraceResultsAlternative.lean/declarations/thetatail-even-index-logconcave.md) | 33 | `result-track:3bda432b9e65f2814530f10cbead7e8ad4434535bb5904c965767337e920831a` |
-| 3 | `theorem` | [coefficient_eq_thetaTail](../../../../MeasureAndIntegration/XiJensenTraceResultsAlternative.lean/declarations/coefficient-eq-thetatail.md) | 58 | `result-track:fc4f60107c23f2a5e6a49964392b136c968abfd6fda727e1b9f1165b9b047fd7` |
-| 4 | `theorem` | [coefficient_logConcave](../../../../MeasureAndIntegration/XiJensenTraceResultsAlternative.lean/declarations/coefficient-logconcave.md) | 69 | `result-track:8f7bcdd4377b226c47d864211fc387e9ff5f8995192890b1807cff14a2cd10a5` |
+| 1 | `theorem` | [thetaTail_index_logConcave](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/XiJensenTraceResultsAlternative.lean/declarations/thetatail-index-logconcave.md) | 19 | `result-track:92a8ad70ffdc9b1e80cd97bb2942a6265c32dce2275f43f3d1bd3a33ab93b19c` |
+| 2 | `theorem` | [thetaTail_even_index_logConcave](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/XiJensenTraceResultsAlternative.lean/declarations/thetatail-even-index-logconcave.md) | 33 | `result-track:3bda432b9e65f2814530f10cbead7e8ad4434535bb5904c965767337e920831a` |
+| 3 | `theorem` | [coefficient_eq_thetaTail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/XiJensenTraceResultsAlternative.lean/declarations/coefficient-eq-thetatail.md) | 58 | `result-track:fc4f60107c23f2a5e6a49964392b136c968abfd6fda727e1b9f1165b9b047fd7` |
+| 4 | `theorem` | [coefficient_logConcave](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/XiJensenTraceResultsAlternative.lean/declarations/coefficient-logconcave.md) | 69 | `result-track:8f7bcdd4377b226c47d864211fc387e9ff5f8995192890b1807cff14a2cd10a5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

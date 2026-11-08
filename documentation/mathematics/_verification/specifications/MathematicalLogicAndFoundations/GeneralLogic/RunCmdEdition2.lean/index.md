@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RunCmdEdition2.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RunCmdEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RunCmdEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RunCmdEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RunCmdEdition2.lean/declarations/example-source-edition-2.md) | 11 | `declaration-track:d8559763a48fca75cd83519ba047fe8df8c8536d420e79994135a0cecf678392` |
-| 2 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RunCmdEdition2.lean/declarations/example.md) | 15 | `declaration-track:b8f719ce0373d7afa64dd09018b9c434484b6059dd5c6a87817789e72e7c6166` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RunCmdEdition2.lean/declarations/example-source-edition-2.md) | 11 | `declaration-track:d8559763a48fca75cd83519ba047fe8df8c8536d420e79994135a0cecf678392` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RunCmdEdition2.lean/declarations/example.md) | 15 | `declaration-track:b8f719ce0373d7afa64dd09018b9c434484b6059dd5c6a87817789e72e7c6166` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/Lossless.lean/index.md) · [Full source](../../../../Combinatorics/Lossless.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Lossless.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Lossless.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Logic.Certificates.ExactMoment`](../../../../MathematicalLogicAndFoundations/GeneralLogic/ExactMoment.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Logic.Certificates.ExactMoment`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExactMoment.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Lossless](../../../../Combinatorics/Lossless.lean/declarations/lossless.md) | 21 | `declaration-track:da96df2c561521b307d04942dda8d0ffd796aed7ac625202f09443a47d9788e7` |
-| 2 | `theorem` | [encode_injective](../../../../Combinatorics/Lossless.lean/declarations/encode-injective.md) | 28 | `result-track:85992afa0202461855294213a8e2df13c303ed6ddb21f54b2857bcc3a0b7b8ea` |
-| 3 | `theorem` | [decoded_eq_source](../../../../Combinatorics/Lossless.lean/declarations/decoded-eq-source.md) | 35 | `result-track:8a62abb6ae7df0428f24f30ce810f72c847cb846040d435efadc114c8da315c1` |
-| 4 | `def` | [comp](../../../../Combinatorics/Lossless.lean/declarations/comp.md) | 42 | `declaration-track:7821e8d15105ce9fcaffec04233950d1520dd009129ee097d83ad9fe1c7ff6ea` |
-| 5 | `theorem` | [same_checkin_of_encoded_eq](../../../../Combinatorics/Lossless.lean/declarations/same-checkin-of-encoded-eq.md) | 49 | `result-track:45f1fe85be60529a6e158120467a63f15fa17a0ed3be6ab698aa60c9d0f7653d` |
+| 1 | `structure` | [Lossless](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Lossless.lean/declarations/lossless.md) | 21 | `declaration-track:da96df2c561521b307d04942dda8d0ffd796aed7ac625202f09443a47d9788e7` |
+| 2 | `theorem` | [encode_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Lossless.lean/declarations/encode-injective.md) | 28 | `result-track:85992afa0202461855294213a8e2df13c303ed6ddb21f54b2857bcc3a0b7b8ea` |
+| 3 | `theorem` | [decoded_eq_source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Lossless.lean/declarations/decoded-eq-source.md) | 35 | `result-track:8a62abb6ae7df0428f24f30ce810f72c847cb846040d435efadc114c8da315c1` |
+| 4 | `def` | [comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Lossless.lean/declarations/comp.md) | 42 | `declaration-track:7821e8d15105ce9fcaffec04233950d1520dd009129ee097d83ad9fe1c7ff6ea` |
+| 5 | `theorem` | [same_checkin_of_encoded_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Lossless.lean/declarations/same-checkin-of-encoded-eq.md) | 49 | `result-track:45f1fe85be60529a6e158120467a63f15fa17a0ed3be6ab698aa60c9d0f7653d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

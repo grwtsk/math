@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Disposition.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Disposition.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Disposition.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Disposition.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [JurisDisposition](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Disposition.lean/declarations/jurisdisposition.md) | 10 | `declaration-track:e842d8db4f6af15f5332fac75d26d1dc41c93f5607be720096981801389f873d` |
-| 2 | `def` | [JurisDisposition.MayExecute](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Disposition.lean/declarations/jurisdisposition-mayexecute.md) | 17 | `declaration-track:6bf64bbb95f609d8b5195b12f065ebb805df18df626668e98d4428fcc32a1aaf` |
-| 3 | `theorem` | [unresolved_blocks_execution](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Disposition.lean/declarations/unresolved-blocks-execution.md) | 21 | `result-track:9309b2a77a4cb9e191cc5d19bdf7be09ed47f7e213e88c1b376320edbdb780d3` |
-| 4 | `theorem` | [conflicting_blocks_execution](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Disposition.lean/declarations/conflicting-blocks-execution.md) | 25 | `result-track:0e256a11eb130ef59252df4f5872fcdd0c6f5132e9ffc7fa8b367321058a578a` |
-| 5 | `theorem` | [prohibited_blocks_execution](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Disposition.lean/declarations/prohibited-blocks-execution.md) | 29 | `result-track:8c29418e9a22e19eea276170d627a9da159c52b969ba317c1a8a85aa506bd89c` |
+| 1 | `inductive` | [JurisDisposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Disposition.lean/declarations/jurisdisposition.md) | 10 | `declaration-track:e842d8db4f6af15f5332fac75d26d1dc41c93f5607be720096981801389f873d` |
+| 2 | `def` | [JurisDisposition.MayExecute](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Disposition.lean/declarations/jurisdisposition-mayexecute.md) | 17 | `declaration-track:6bf64bbb95f609d8b5195b12f065ebb805df18df626668e98d4428fcc32a1aaf` |
+| 3 | `theorem` | [unresolved_blocks_execution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Disposition.lean/declarations/unresolved-blocks-execution.md) | 21 | `result-track:9309b2a77a4cb9e191cc5d19bdf7be09ed47f7e213e88c1b376320edbdb780d3` |
+| 4 | `theorem` | [conflicting_blocks_execution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Disposition.lean/declarations/conflicting-blocks-execution.md) | 25 | `result-track:0e256a11eb130ef59252df4f5872fcdd0c6f5132e9ffc7fa8b367321058a578a` |
+| 5 | `theorem` | [prohibited_blocks_execution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Disposition.lean/declarations/prohibited-blocks-execution.md) | 29 | `result-track:8c29418e9a22e19eea276170d627a9da159c52b969ba317c1a8a85aa506bd89c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

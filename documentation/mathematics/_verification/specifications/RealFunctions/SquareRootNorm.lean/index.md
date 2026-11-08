@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/SquareRootNorm.lean/index.md) · [Full source](../../../../RealFunctions/SquareRootNorm.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SquareRootNorm.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SquareRootNorm.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,16 +59,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [squareRootWeight](../../../../RealFunctions/SquareRootNorm.lean/declarations/squarerootweight.md) | 16 | `declaration-track:b72cbbb66bbef4493f8900a6347adbcc826bc50b2aea04d9a79ff63a5fe1302d` |
-| 2 | `structure` | [SquareRootNormCertificate](../../../../RealFunctions/SquareRootNorm.lean/declarations/squarerootnormcertificate.md) | 20 | `declaration-track:7735f7deb52f87eb4858b94ee6a8a1bedd63d9d8448d06cc63c4f8fd06452aef` |
-| 3 | `constant` | [(anonymous)](../../../../RealFunctions/SquareRootNorm.lean/declarations/constant-source-edition-2.md) | 24 | `declaration-track:e7d9d3c703a0168f65f548b4ec3b7f020eebb13f21edf0174e0f8930df299e9c` |
-| 4 | `constant` | [*](../../../../RealFunctions/SquareRootNorm.lean/declarations/anonymous.md) | 30 | `declaration-track:85f72b1b4e96fe44ad64a3164065d9a800fc38cb2fc090fa10c02820f208604e` |
-| 5 | `def` | [SquareRootNormFinite](../../../../RealFunctions/SquareRootNorm.lean/declarations/squarerootnormfinite.md) | 33 | `declaration-track:9f967e0d9a6887b107f7008f5571d8bd6ae77d82425456abbad2ee5c2b9eb200` |
-| 6 | `constant` | [*](../../../../RealFunctions/SquareRootNorm.lean/declarations/anonymous-source-edition-3.md) | 40 | `declaration-track:d1e81c88d8e2f95f3abe2b17993d80790cef8590ebd3ead635aba316a934d934` |
-| 7 | `theorem` | [squareRootNorm_finite](../../../../RealFunctions/SquareRootNorm.lean/declarations/squarerootnorm-finite.md) | 43 | `result-track:72f7eab77b5ffc1bae8d3e93c246f1b9c67494f54d8f13b4b8ce37f126040e5c` |
-| 8 | `structure` | [BitfieldSquareRootBudget](../../../../RealFunctions/SquareRootNorm.lean/declarations/bitfieldsquarerootbudget.md) | 52 | `declaration-track:1116999a49001592f974e27112340f339a9dc4477ad0437308aafd9a5dc80238` |
-| 9 | `constant` | [(anonymous)](../../../../RealFunctions/SquareRootNorm.lean/declarations/constant.md) | 57 | `declaration-track:2a171173361cc592b66bebf01a2516d4ccc62d7d5b70b8edeaf90382aa2ca52a` |
-| 10 | `constant` | [*](../../../../RealFunctions/SquareRootNorm.lean/declarations/anonymous-source-edition-2.md) | 61 | `declaration-track:910333f3a402d2f8184396bd7b308f4b6a63804fcce6130d96b9934d16bd989c` |
+| 1 | `def` | [squareRootWeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SquareRootNorm.lean/declarations/squarerootweight.md) | 16 | `declaration-track:b72cbbb66bbef4493f8900a6347adbcc826bc50b2aea04d9a79ff63a5fe1302d` |
+| 2 | `structure` | [SquareRootNormCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SquareRootNorm.lean/declarations/squarerootnormcertificate.md) | 20 | `declaration-track:7735f7deb52f87eb4858b94ee6a8a1bedd63d9d8448d06cc63c4f8fd06452aef` |
+| 3 | `constant` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SquareRootNorm.lean/declarations/constant-source-edition-2.md) | 24 | `declaration-track:e7d9d3c703a0168f65f548b4ec3b7f020eebb13f21edf0174e0f8930df299e9c` |
+| 4 | `constant` | [*](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SquareRootNorm.lean/declarations/anonymous.md) | 30 | `declaration-track:85f72b1b4e96fe44ad64a3164065d9a800fc38cb2fc090fa10c02820f208604e` |
+| 5 | `def` | [SquareRootNormFinite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SquareRootNorm.lean/declarations/squarerootnormfinite.md) | 33 | `declaration-track:9f967e0d9a6887b107f7008f5571d8bd6ae77d82425456abbad2ee5c2b9eb200` |
+| 6 | `constant` | [*](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SquareRootNorm.lean/declarations/anonymous-source-edition-3.md) | 40 | `declaration-track:d1e81c88d8e2f95f3abe2b17993d80790cef8590ebd3ead635aba316a934d934` |
+| 7 | `theorem` | [squareRootNorm_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SquareRootNorm.lean/declarations/squarerootnorm-finite.md) | 43 | `result-track:72f7eab77b5ffc1bae8d3e93c246f1b9c67494f54d8f13b4b8ce37f126040e5c` |
+| 8 | `structure` | [BitfieldSquareRootBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SquareRootNorm.lean/declarations/bitfieldsquarerootbudget.md) | 52 | `declaration-track:1116999a49001592f974e27112340f339a9dc4477ad0437308aafd9a5dc80238` |
+| 9 | `constant` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SquareRootNorm.lean/declarations/constant.md) | 57 | `declaration-track:2a171173361cc592b66bebf01a2516d4ccc62d7d5b70b8edeaf90382aa2ca52a` |
+| 10 | `constant` | [*](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SquareRootNorm.lean/declarations/anonymous-source-edition-2.md) | 61 | `declaration-track:910333f3a402d2f8184396bd7b308f4b6a63804fcce6130d96b9934d16bd989c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

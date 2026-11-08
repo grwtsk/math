@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/TokenizationSpan.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/TokenizationSpan.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TokenizationSpan.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TokenizationSpan.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Span.ContainsPosition](../../../../../ComputerScience/AlgorithmsInComputerScience/TokenizationSpan.lean/declarations/span-containsposition.md) | 7 | `declaration-track:9a57b4db1a843accd6dc063bd023e4b68361d070c25d8d3a385e757379449d22` |
-| 2 | `def` | [Covers](../../../../../ComputerScience/AlgorithmsInComputerScience/TokenizationSpan.lean/declarations/covers.md) | 13 | `declaration-track:6f450c8a4423d3a3ff511587cb71cffc114216f7b237bd97d7a7b0e1a945d3d0` |
-| 3 | `structure` | [Tokenization](../../../../../ComputerScience/AlgorithmsInComputerScience/TokenizationSpan.lean/declarations/tokenization.md) | 23 | `declaration-track:8301617f0b0c4398c58655cec564bcbecb4b607b641786572c4065fae22db148` |
-| 4 | `theorem` | [Tokenization.has_token](../../../../../ComputerScience/AlgorithmsInComputerScience/TokenizationSpan.lean/declarations/tokenization-has-token.md) | 42 | `result-track:55c95cf722b106f07bfea25a04ab8d5e16f19addbfd6bd36ae2188f2b72676b4` |
+| 1 | `def` | [Span.ContainsPosition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TokenizationSpan.lean/declarations/span-containsposition.md) | 7 | `declaration-track:9a57b4db1a843accd6dc063bd023e4b68361d070c25d8d3a385e757379449d22` |
+| 2 | `def` | [Covers](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TokenizationSpan.lean/declarations/covers.md) | 13 | `declaration-track:6f450c8a4423d3a3ff511587cb71cffc114216f7b237bd97d7a7b0e1a945d3d0` |
+| 3 | `structure` | [Tokenization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TokenizationSpan.lean/declarations/tokenization.md) | 23 | `declaration-track:8301617f0b0c4398c58655cec564bcbecb4b607b641786572c4065fae22db148` |
+| 4 | `theorem` | [Tokenization.has_token](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TokenizationSpan.lean/declarations/tokenization-has-token.md) | 42 | `result-track:55c95cf722b106f07bfea25a04ab8d5e16f19addbfd6bd36ae2188f2b72676b4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

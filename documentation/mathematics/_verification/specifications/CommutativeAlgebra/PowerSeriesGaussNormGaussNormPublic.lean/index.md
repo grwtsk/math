@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/PowerSeriesGaussNormGaussNormPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/PowerSeriesGaussNormGaussNormPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PowerSeriesGaussNormGaussNormPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PowerSeriesGaussNormGaussNormPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [gaussNorm](../../../../CommutativeAlgebra/PowerSeriesGaussNormGaussNormPublic.lean/declarations/gaussnorm.md) | 53 | `declaration-track:5f7e600e6ddc71ed0a5e010f865b00917a79fa499fc6f5360fa073d9d989ee70` |
-| 2 | `lemma` | [gaussNorm_eq](../../../../CommutativeAlgebra/PowerSeriesGaussNormGaussNormPublic.lean/declarations/gaussnorm-eq.md) | 55 | `result-track:662adda486dbdd3ea8e330f38d7e8803387fd42defe2c93d349034e8945e563b` |
-| 3 | `abbrev` | [HasGaussNorm](../../../../CommutativeAlgebra/PowerSeriesGaussNormGaussNormPublic.lean/declarations/hasgaussnorm.md) | 63 | `declaration-track:525e69b6e284ba4dee5d4a7f638f21242608cf21157889a82f9b0ab70272eb45` |
-| 4 | `lemma` | [HasGaussNorm.hasMvGaussNorm](../../../../CommutativeAlgebra/PowerSeriesGaussNormGaussNormPublic.lean/declarations/hasgaussnorm-hasmvgaussnorm.md) | 65 | `result-track:1f6816420b680063da0c9b878c5c9aa34e00b0873104a6308d8f03110688400a` |
-| 5 | `theorem` | [gaussNorm_zero](../../../../CommutativeAlgebra/PowerSeriesGaussNormGaussNormPublic.lean/declarations/gaussnorm-zero.md) | 86 | `result-track:cd799da8d432ad8d1e8b2dc7c7598da49f78b0e74ad8a5216e475a0c99d51ff2` |
-| 6 | `lemma` | [le_gaussNorm](../../../../CommutativeAlgebra/PowerSeriesGaussNormGaussNormPublic.lean/declarations/le-gaussnorm.md) | 89 | `result-track:3becc562dd3e5a51af5ead29ff652d7d8f2b54c23a12d08f619bbfbe5cbbd5ac` |
-| 7 | `lemma` | [gaussNorm_nonneg](../../../../CommutativeAlgebra/PowerSeriesGaussNormGaussNormPublic.lean/declarations/gaussnorm-nonneg.md) | 94 | `result-track:04bcd70ecbb615cfe0f59808a36b660305086bb4baabd08a1b940614132c2b46` |
-| 8 | `lemma` | [gaussNorm_eq_zero_iff](../../../../CommutativeAlgebra/PowerSeriesGaussNormGaussNormPublic.lean/declarations/gaussnorm-eq-zero-iff.md) | 97 | `result-track:a6be672e3d475197000188cdb1338f2a1ef54ff0ee5e0dbc931daa5a0566e7dd` |
-| 9 | `lemma` | [gaussNorm_add_le_max](../../../../CommutativeAlgebra/PowerSeriesGaussNormGaussNormPublic.lean/declarations/gaussnorm-add-le-max.md) | 103 | `result-track:b36f32a1a1d1c8abfffb4f318f498a10acf96cd34dc4aa67db0b31326514ec80` |
+| 1 | `abbrev` | [gaussNorm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PowerSeriesGaussNormGaussNormPublic.lean/declarations/gaussnorm.md) | 53 | `declaration-track:5f7e600e6ddc71ed0a5e010f865b00917a79fa499fc6f5360fa073d9d989ee70` |
+| 2 | `lemma` | [gaussNorm_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PowerSeriesGaussNormGaussNormPublic.lean/declarations/gaussnorm-eq.md) | 55 | `result-track:662adda486dbdd3ea8e330f38d7e8803387fd42defe2c93d349034e8945e563b` |
+| 3 | `abbrev` | [HasGaussNorm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PowerSeriesGaussNormGaussNormPublic.lean/declarations/hasgaussnorm.md) | 63 | `declaration-track:525e69b6e284ba4dee5d4a7f638f21242608cf21157889a82f9b0ab70272eb45` |
+| 4 | `lemma` | [HasGaussNorm.hasMvGaussNorm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PowerSeriesGaussNormGaussNormPublic.lean/declarations/hasgaussnorm-hasmvgaussnorm.md) | 65 | `result-track:1f6816420b680063da0c9b878c5c9aa34e00b0873104a6308d8f03110688400a` |
+| 5 | `theorem` | [gaussNorm_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PowerSeriesGaussNormGaussNormPublic.lean/declarations/gaussnorm-zero.md) | 86 | `result-track:cd799da8d432ad8d1e8b2dc7c7598da49f78b0e74ad8a5216e475a0c99d51ff2` |
+| 6 | `lemma` | [le_gaussNorm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PowerSeriesGaussNormGaussNormPublic.lean/declarations/le-gaussnorm.md) | 89 | `result-track:3becc562dd3e5a51af5ead29ff652d7d8f2b54c23a12d08f619bbfbe5cbbd5ac` |
+| 7 | `lemma` | [gaussNorm_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PowerSeriesGaussNormGaussNormPublic.lean/declarations/gaussnorm-nonneg.md) | 94 | `result-track:04bcd70ecbb615cfe0f59808a36b660305086bb4baabd08a1b940614132c2b46` |
+| 8 | `lemma` | [gaussNorm_eq_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PowerSeriesGaussNormGaussNormPublic.lean/declarations/gaussnorm-eq-zero-iff.md) | 97 | `result-track:a6be672e3d475197000188cdb1338f2a1ef54ff0ee5e0dbc931daa5a0566e7dd` |
+| 9 | `lemma` | [gaussNorm_add_le_max](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PowerSeriesGaussNormGaussNormPublic.lean/declarations/gaussnorm-add-le-max.md) | 103 | `result-track:b36f32a1a1d1c8abfffb4f318f498a10acf96cd34dc4aa67db0b31326514ec80` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

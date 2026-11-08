@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetSym.lean/index.md) · [Full source](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetSym.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetSym.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetSym.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,19 +57,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [sym2](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetSym.lean/declarations/sym2.md) | 41 | `declaration-track:4c89f3a01f7a6e4c8c26751e9a380eeefdc9743070284187762469a510b9ac6b` |
-| 2 | `theorem` | [sym2_coe](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetSym.lean/declarations/sym2-coe.md) | 44 | `result-track:f22cebe08bd4be5e09d09a5c304e1b0f40331bbde9f2cb966e08e5a6781a8f71` |
-| 3 | `theorem` | [sym2_eq_zero_iff](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetSym.lean/declarations/sym2-eq-zero-iff.md) | 47 | `result-track:d8b321fc61c31d8ab15716595d7d8717a0ac505f3d2f463ebf5b90e62470a906` |
-| 4 | `theorem` | [sym2_zero](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetSym.lean/declarations/sym2-zero.md) | 51 | `result-track:c06bfd2a93ab1cdf66ad0e0bf3b31b0f2da09baec18ccb8cda52705338ac33dc` |
-| 5 | `theorem` | [sym2_cons](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetSym.lean/declarations/sym2-cons.md) | 53 | `result-track:f6f388607af4d37e35504bee75778cc14d2e2f99847aa92a6ec433f654bde521` |
-| 6 | `theorem` | [sym2_map](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetSym.lean/declarations/sym2-map.md) | 57 | `result-track:010cd5955494381e1a2299d07fa506d0bd33793e5b63860735381bdd54f2b3f9` |
-| 7 | `theorem` | [mk_mem_sym2_iff](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetSym.lean/declarations/mk-mem-sym2-iff.md) | 61 | `result-track:42343646994d8e047814baa203f39cb2d68761dc8a4131f24dc8666b07afb4e7` |
-| 8 | `theorem` | [mem_sym2_iff](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetSym.lean/declarations/mem-sym2-iff.md) | 65 | `result-track:dfe8d0df330db095deb9b1e9b3df87834171c34f84fe5b34bbf16305ae186b1d` |
-| 9 | `theorem` | [Nodup.sym2](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetSym.lean/declarations/nodup-sym2.md) | 69 | `result-track:19c8ab7e462d6d0aa4e13c08f3f66d3d4afdfdf689619b68378d14d9bd51b9ed` |
-| 10 | `theorem` | [sym2_mono](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetSym.lean/declarations/sym2-mono.md) | 74 | `result-track:81c387af0ccbb9f5f4d0359172826498624b24b0442fa0ae6ffd17184589192b` |
-| 11 | `theorem` | [monotone_sym2](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetSym.lean/declarations/monotone-sym2.md) | 79 | `result-track:b78d11a95b360517a0e42c6970b5fe48b994f56e7737b542c8cc5bd69ca007ba` |
-| 12 | `theorem` | [card_sym2](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetSym.lean/declarations/card-sym2.md) | 81 | `result-track:47960ff52f9b1e4bd520930489a49c4a25ca61d8d3f77d851fe4aa08b6f47ed0` |
-| 13 | `theorem` | [dedup_sym2](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetSym.lean/declarations/dedup-sym2.md) | 86 | `result-track:052fe111bd04e3742404cfde314c7fc2ca8eee018ed58c9ad56496f1903e7068` |
+| 1 | `def` | [sym2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetSym.lean/declarations/sym2.md) | 41 | `declaration-track:4c89f3a01f7a6e4c8c26751e9a380eeefdc9743070284187762469a510b9ac6b` |
+| 2 | `theorem` | [sym2_coe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetSym.lean/declarations/sym2-coe.md) | 44 | `result-track:f22cebe08bd4be5e09d09a5c304e1b0f40331bbde9f2cb966e08e5a6781a8f71` |
+| 3 | `theorem` | [sym2_eq_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetSym.lean/declarations/sym2-eq-zero-iff.md) | 47 | `result-track:d8b321fc61c31d8ab15716595d7d8717a0ac505f3d2f463ebf5b90e62470a906` |
+| 4 | `theorem` | [sym2_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetSym.lean/declarations/sym2-zero.md) | 51 | `result-track:c06bfd2a93ab1cdf66ad0e0bf3b31b0f2da09baec18ccb8cda52705338ac33dc` |
+| 5 | `theorem` | [sym2_cons](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetSym.lean/declarations/sym2-cons.md) | 53 | `result-track:f6f388607af4d37e35504bee75778cc14d2e2f99847aa92a6ec433f654bde521` |
+| 6 | `theorem` | [sym2_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetSym.lean/declarations/sym2-map.md) | 57 | `result-track:010cd5955494381e1a2299d07fa506d0bd33793e5b63860735381bdd54f2b3f9` |
+| 7 | `theorem` | [mk_mem_sym2_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetSym.lean/declarations/mk-mem-sym2-iff.md) | 61 | `result-track:42343646994d8e047814baa203f39cb2d68761dc8a4131f24dc8666b07afb4e7` |
+| 8 | `theorem` | [mem_sym2_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetSym.lean/declarations/mem-sym2-iff.md) | 65 | `result-track:dfe8d0df330db095deb9b1e9b3df87834171c34f84fe5b34bbf16305ae186b1d` |
+| 9 | `theorem` | [Nodup.sym2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetSym.lean/declarations/nodup-sym2.md) | 69 | `result-track:19c8ab7e462d6d0aa4e13c08f3f66d3d4afdfdf689619b68378d14d9bd51b9ed` |
+| 10 | `theorem` | [sym2_mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetSym.lean/declarations/sym2-mono.md) | 74 | `result-track:81c387af0ccbb9f5f4d0359172826498624b24b0442fa0ae6ffd17184589192b` |
+| 11 | `theorem` | [monotone_sym2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetSym.lean/declarations/monotone-sym2.md) | 79 | `result-track:b78d11a95b360517a0e42c6970b5fe48b994f56e7737b542c8cc5bd69ca007ba` |
+| 12 | `theorem` | [card_sym2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetSym.lean/declarations/card-sym2.md) | 81 | `result-track:47960ff52f9b1e4bd520930489a49c4a25ca61d8d3f77d851fe4aa08b6f47ed0` |
+| 13 | `theorem` | [dedup_sym2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetSym.lean/declarations/dedup-sym2.md) | 86 | `result-track:052fe111bd04e3742404cfde314c7fc2ca8eee018ed58c9ad56496f1903e7068` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

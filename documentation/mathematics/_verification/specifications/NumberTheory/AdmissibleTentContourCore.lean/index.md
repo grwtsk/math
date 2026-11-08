@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/AdmissibleTentContourCore.lean/index.md) · [Full source](../../../../NumberTheory/AdmissibleTentContourCore.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AdmissibleTentContourCore.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AdmissibleTentContourCore.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,11 +46,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Interfaces.TentPerronLineCore`](../../../../NumberTheory/TentPerronLineCore.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.OrientedRectangle`](../../../../MeasureAndIntegration/OrientedRectangle.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.AdmissibleRectangles`](../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/AdmissibleRectangles.lean/index.md) — import line 6; pinned internal source present.
-- [`GRWTSK.NumberTheory.Chebyshev.TentAdmissibleContours`](../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TentAdmissibleContours.lean/index.md) — import line 7; pinned internal source present.
-- [`GRWTSK.NumberTheory.Chebyshev.Checks.AdmissibleContourControls`](../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/AdmissibleContourControls.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.Interfaces.TentPerronLineCore`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentPerronLineCore.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.OrientedRectangle`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OrientedRectangle.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.AdmissibleRectangles`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/AdmissibleRectangles.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.TentAdmissibleContours`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TentAdmissibleContours.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.Checks.AdmissibleContourControls`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/AdmissibleContourControls.lean/index.md) — import line 8; pinned internal source present.
 
 ## Top results and three-degree verification metric
 

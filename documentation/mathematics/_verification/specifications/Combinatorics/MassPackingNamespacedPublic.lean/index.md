@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/MassPackingNamespacedPublic.lean/index.md) · [Full source](../../../../Combinatorics/MassPackingNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MassPackingNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MassPackingNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [MatchedCoefficientPartition](../../../../Combinatorics/MassPackingNamespacedPublic.lean/declarations/matchedcoefficientpartition.md) | 38 | `declaration-track:53436f699e0de8462b77e8aa8e777af5d17fd04b3bb1b55d07fa811d65f8420b` |
-| 2 | `def` | [MatchedCoefficientPartition.leftChild](../../../../Combinatorics/MassPackingNamespacedPublic.lean/declarations/matchedcoefficientpartition-leftchild.md) | 46 | `declaration-track:31abf54db338e02884f3c880a793b72f2e9164ae065b88b79ba91c80195a497d` |
-| 3 | `def` | [MatchedCoefficientPartition.rightChild](../../../../Combinatorics/MassPackingNamespacedPublic.lean/declarations/matchedcoefficientpartition-rightchild.md) | 57 | `declaration-track:2f8828844c423015cf1b278ac5ec44baaf93fe6e10c1543a42e0f0b7c40f752b` |
-| 4 | `def` | [MatchedCoefficientPartition.childMass](../../../../Combinatorics/MassPackingNamespacedPublic.lean/declarations/matchedcoefficientpartition-childmass.md) | 68 | `declaration-track:048e78c247c353aefb4bbf5a8294a62a97df010f5bbbdbd7b1efeb5fbc71c7d8` |
-| 5 | `theorem` | [MatchedCoefficientPartition.sum_leftChild_norm_sq](../../../../Combinatorics/MassPackingNamespacedPublic.lean/declarations/matchedcoefficientpartition-sum-leftchild-norm-sq.md) | 77 | `result-track:6ff771ee5352c1633d0df6100fe514eb65eac08212b0177eecb5b4ee8c550c8e` |
-| 6 | `theorem` | [MatchedCoefficientPartition.sum_rightChild_norm_sq](../../../../Combinatorics/MassPackingNamespacedPublic.lean/declarations/matchedcoefficientpartition-sum-rightchild-norm-sq.md) | 95 | `result-track:3b1448f9375edc78270a41f14ffa5570a9b8f5eca02393ab097a2dddd600d839` |
-| 7 | `theorem` | [MatchedCoefficientPartition.sum_childMass_le_parent](../../../../Combinatorics/MassPackingNamespacedPublic.lean/declarations/matchedcoefficientpartition-sum-childmass-le-parent.md) | 114 | `result-track:0fc4780cf173a6b9246a9b56a31cda96a8f393ef590fe0ba87740fb0d52f012c` |
+| 1 | `structure` | [MatchedCoefficientPartition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MassPackingNamespacedPublic.lean/declarations/matchedcoefficientpartition.md) | 38 | `declaration-track:53436f699e0de8462b77e8aa8e777af5d17fd04b3bb1b55d07fa811d65f8420b` |
+| 2 | `def` | [MatchedCoefficientPartition.leftChild](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MassPackingNamespacedPublic.lean/declarations/matchedcoefficientpartition-leftchild.md) | 46 | `declaration-track:31abf54db338e02884f3c880a793b72f2e9164ae065b88b79ba91c80195a497d` |
+| 3 | `def` | [MatchedCoefficientPartition.rightChild](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MassPackingNamespacedPublic.lean/declarations/matchedcoefficientpartition-rightchild.md) | 57 | `declaration-track:2f8828844c423015cf1b278ac5ec44baaf93fe6e10c1543a42e0f0b7c40f752b` |
+| 4 | `def` | [MatchedCoefficientPartition.childMass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MassPackingNamespacedPublic.lean/declarations/matchedcoefficientpartition-childmass.md) | 68 | `declaration-track:048e78c247c353aefb4bbf5a8294a62a97df010f5bbbdbd7b1efeb5fbc71c7d8` |
+| 5 | `theorem` | [MatchedCoefficientPartition.sum_leftChild_norm_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MassPackingNamespacedPublic.lean/declarations/matchedcoefficientpartition-sum-leftchild-norm-sq.md) | 77 | `result-track:6ff771ee5352c1633d0df6100fe514eb65eac08212b0177eecb5b4ee8c550c8e` |
+| 6 | `theorem` | [MatchedCoefficientPartition.sum_rightChild_norm_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MassPackingNamespacedPublic.lean/declarations/matchedcoefficientpartition-sum-rightchild-norm-sq.md) | 95 | `result-track:3b1448f9375edc78270a41f14ffa5570a9b8f5eca02393ab097a2dddd600d839` |
+| 7 | `theorem` | [MatchedCoefficientPartition.sum_childMass_le_parent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MassPackingNamespacedPublic.lean/declarations/matchedcoefficientpartition-sum-childmass-le-parent.md) | 114 | `result-track:0fc4780cf173a6b9246a9b56a31cda96a8f393ef590fe0ba87740fb0d52f012c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FamilyNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FamilyNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FamilyNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FamilyNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FiniteTubeFamily](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FamilyNamespaced.lean/declarations/finitetubefamily.md) | 21 | `declaration-track:06c66f4810c5a3fc7f6afcad6fad73b607c2d09d22ae0b98c317d84b0c245242` |
-| 2 | `def` | [carrier](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FamilyNamespaced.lean/declarations/carrier.md) | 28 | `declaration-track:c0efd0515d5ec6902a3e42244cc84215a62f2aace5ed05d79e56bb8d9f254532` |
-| 3 | `theorem` | [mem_carrier_iff](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FamilyNamespaced.lean/declarations/mem-carrier-iff.md) | 32 | `result-track:62240096c34c14a457d55278f2a504f4efb1b41bf7b675dee75aee3332693811` |
-| 4 | `theorem` | [carrier_nonempty_of_count_positive](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FamilyNamespaced.lean/declarations/carrier-nonempty-of-count-positive.md) | 39 | `result-track:3f6ef4fd2288ab82678d36df4a17d9c0906b4be4d070540ac759d7f894d27f34` |
+| 1 | `structure` | [FiniteTubeFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FamilyNamespaced.lean/declarations/finitetubefamily.md) | 21 | `declaration-track:06c66f4810c5a3fc7f6afcad6fad73b607c2d09d22ae0b98c317d84b0c245242` |
+| 2 | `def` | [carrier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FamilyNamespaced.lean/declarations/carrier.md) | 28 | `declaration-track:c0efd0515d5ec6902a3e42244cc84215a62f2aace5ed05d79e56bb8d9f254532` |
+| 3 | `theorem` | [mem_carrier_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FamilyNamespaced.lean/declarations/mem-carrier-iff.md) | 32 | `result-track:62240096c34c14a457d55278f2a504f4efb1b41bf7b675dee75aee3332693811` |
+| 4 | `theorem` | [carrier_nonempty_of_count_positive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FamilyNamespaced.lean/declarations/carrier-nonempty-of-count-positive.md) | 39 | `result-track:3f6ef4fd2288ab82678d36df4a17d9c0906b4be4d070540ac759d7f894d27f34` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

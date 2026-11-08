@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/PairwiseRepulsionVelocity.lean/index.md) · [Full source](../../../../RealFunctions/PairwiseRepulsionVelocity.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PairwiseRepulsionVelocity.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PairwiseRepulsionVelocity.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `Folder.ResearchTopos.RodgersTaoHeat` — import line 19; external provider; requires a separately pinned dependency.
-- [Ordered Configuration](../../../../RealFunctions/OrderedConfiguration.lean/index.md) — import line 21; pinned internal source present.
+- [Ordered Configuration](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/OrderedConfiguration.lean/index.md) — import line 21; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [pairwiseRepulsionVelocity](../../../../RealFunctions/PairwiseRepulsionVelocity.lean/declarations/pairwiserepulsionvelocity.md) | 40 | `declaration-track:f9d47a15719467129779555770ece2c10cb82577fc0ad703e155fecf0d170b90` |
+| 1 | `def` | [pairwiseRepulsionVelocity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PairwiseRepulsionVelocity.lean/declarations/pairwiserepulsionvelocity.md) | 40 | `declaration-track:f9d47a15719467129779555770ece2c10cb82577fc0ad703e155fecf0d170b90` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmaNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmaNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmaNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmaNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `register_option` | [lang.lemmaCmd](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmaNamespacedPublic.lean/declarations/lang-lemmacmd.md) | 35 | `declaration-track:8756801827c5a40e39aa5bb3a596b86942058affe866baeb0d002188c8edfb32` |
-| 2 | `def` | [checkLangLemmaCmd](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmaNamespacedPublic.lean/declarations/checklanglemmacmd.md) | 41 | `declaration-track:796b34996c8a54d107494a9a444e55818d38061a018cd426269203a8e2cdc43f` |
-| 3 | `syntax` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmaNamespacedPublic.lean/declarations/syntax.md) | 44 | `declaration-track:5ee1ee78395f776bf686fa3bc8d0a89aa1f743e7591f619ea434b286e203f5a0` |
-| 4 | `def` | [elabLemma](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmaNamespacedPublic.lean/declarations/elablemma.md) | 49 | `declaration-track:e1be595e0b3299cf7b4026944ef82fab91f159ff8d3d3485a8059c9590d9ec3e` |
+| 1 | `register_option` | [lang.lemmaCmd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmaNamespacedPublic.lean/declarations/lang-lemmacmd.md) | 35 | `declaration-track:8756801827c5a40e39aa5bb3a596b86942058affe866baeb0d002188c8edfb32` |
+| 2 | `def` | [checkLangLemmaCmd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmaNamespacedPublic.lean/declarations/checklanglemmacmd.md) | 41 | `declaration-track:796b34996c8a54d107494a9a444e55818d38061a018cd426269203a8e2cdc43f` |
+| 3 | `syntax` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmaNamespacedPublic.lean/declarations/syntax.md) | 44 | `declaration-track:5ee1ee78395f776bf686fa3bc8d0a89aa1f743e7591f619ea434b286e203f5a0` |
+| 4 | `def` | [elabLemma](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmaNamespacedPublic.lean/declarations/elablemma.md) | 49 | `declaration-track:e1be595e0b3299cf7b4026944ef82fab91f159ff8d3d3485a8059c9590d9ec3e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

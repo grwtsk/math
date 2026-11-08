@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SeparationMassAndModeSavingsMustBothPayTheRetainedResidual.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SeparationMassAndModeSavingsMustBothPayTheRetainedResidual.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SeparationMassAndModeSavingsMustBothPayTheRetainedResidual.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SeparationMassAndModeSavingsMustBothPayTheRetainedResidual.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [full_finite_packet_budget](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SeparationMassAndModeSavingsMustBothPayTheRetainedResidual.lean/declarations/full-finite-packet-budget.md) | 21 | `result-track:54861e177b2dfdc93bae2ce943973db58942c7728b4dbf8b8d47091579fda4d4` |
-| 2 | `theorem` | [both_gains_reach_high_certificate](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SeparationMassAndModeSavingsMustBothPayTheRetainedResidual.lean/declarations/both-gains-reach-high-certificate.md) | 60 | `result-track:3d732b433e2c86ffe0cd068e399d5c6b99912d58d1c04ac40c91017c84963543` |
-| 3 | `theorem` | [positive_joint_gain_improves_low_exponent](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SeparationMassAndModeSavingsMustBothPayTheRetainedResidual.lean/declarations/positive-joint-gain-improves-low-exponent.md) | 65 | `result-track:630380fa32917a36b669cdae6c87c032eae7e335ea49394381fc49718180ef17` |
+| 1 | `theorem` | [full_finite_packet_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SeparationMassAndModeSavingsMustBothPayTheRetainedResidual.lean/declarations/full-finite-packet-budget.md) | 21 | `result-track:54861e177b2dfdc93bae2ce943973db58942c7728b4dbf8b8d47091579fda4d4` |
+| 2 | `theorem` | [both_gains_reach_high_certificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SeparationMassAndModeSavingsMustBothPayTheRetainedResidual.lean/declarations/both-gains-reach-high-certificate.md) | 60 | `result-track:3d732b433e2c86ffe0cd068e399d5c6b99912d58d1c04ac40c91017c84963543` |
+| 3 | `theorem` | [positive_joint_gain_improves_low_exponent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SeparationMassAndModeSavingsMustBothPayTheRetainedResidual.lean/declarations/positive-joint-gain-improves-low-exponent.md) | 65 | `result-track:630380fa32917a36b669cdae6c87c032eae7e335ea49394381fc49718180ef17` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

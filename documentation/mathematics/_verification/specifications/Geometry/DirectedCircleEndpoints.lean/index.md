@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Geometry/DirectedCircleEndpoints.lean/index.md) · [Full source](../../../../Geometry/DirectedCircleEndpoints.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/DirectedCircleEndpoints.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/DirectedCircleEndpoints.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -48,7 +48,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 - `Mathlib.Data.Real.Basic` — import line 19; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic.Ring` — import line 20; external provider; requires a separately pinned dependency.
-- [Supplied Circle Incidence](../../../../Geometry/SuppliedCircleIncidence.lean/index.md) — import line 22; pinned internal source present.
+- [Supplied Circle Incidence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/SuppliedCircleIncidence.lean/index.md) — import line 22; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [ArcOrientation](../../../../Geometry/DirectedCircleEndpoints.lean/declarations/arcorientation.md) | 38 | `declaration-track:a84dc5bc2e2499a38128de96e9b49a994d505d78541aeb64b3a2f7c4734ab9fd` |
-| 2 | `structure` | [DirectedArc](../../../../Geometry/DirectedCircleEndpoints.lean/declarations/directedarc.md) | 45 | `declaration-track:810db6ed03a43133987f784d209ef7709a4a459fd0f914a2397dd91963a94f41` |
-| 3 | `abbrev` | [WindingNumber](../../../../Geometry/DirectedCircleEndpoints.lean/declarations/windingnumber.md) | 55 | `declaration-track:644e81bde7a12ce19504679d9282720dc0bf82f575b5a97db61a65e768dbb1d4` |
+| 1 | `inductive` | [ArcOrientation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/DirectedCircleEndpoints.lean/declarations/arcorientation.md) | 38 | `declaration-track:a84dc5bc2e2499a38128de96e9b49a994d505d78541aeb64b3a2f7c4734ab9fd` |
+| 2 | `structure` | [DirectedArc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/DirectedCircleEndpoints.lean/declarations/directedarc.md) | 45 | `declaration-track:810db6ed03a43133987f784d209ef7709a4a459fd0f914a2397dd91963a94f41` |
+| 3 | `abbrev` | [WindingNumber](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/DirectedCircleEndpoints.lean/declarations/windingnumber.md) | 55 | `declaration-track:644e81bde7a12ce19504679d9282720dc0bf82f575b5a97db61a65e768dbb1d4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

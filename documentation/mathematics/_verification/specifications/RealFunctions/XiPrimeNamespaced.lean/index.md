@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/XiPrimeNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/XiPrimeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/XiPrimeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/XiPrimeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [xi](../../../../RealFunctions/XiPrimeNamespaced.lean/declarations/xi.md) | 24 | `declaration-track:7b759dee4672f6c6688b675cd03d61e6828cf6c2f2456b1de61bae3c5273d79d` |
-| 2 | `def` | [xiDeriv](../../../../RealFunctions/XiPrimeNamespaced.lean/declarations/xideriv.md) | 27 | `declaration-track:eaddb0112cd37ab028bfe5c342c965d3e3a845d276e8b19888ff5d0730003561` |
-| 3 | `def` | [IsXiDerivZero](../../../../RealFunctions/XiPrimeNamespaced.lean/declarations/isxiderivzero.md) | 30 | `declaration-track:1eb8848bf6109ee0fc1a0f05197a35f70aec15444c3b68f77d8d307c7d91a9d0` |
-| 4 | `def` | [xiDerivMult](../../../../RealFunctions/XiPrimeNamespaced.lean/declarations/xiderivmult.md) | 33 | `declaration-track:d9d9eb2af00d2d53e468fad4091da28d79ae7eeb8606271208c9a5cf4a235b20` |
-| 5 | `def` | [zerosIn](../../../../RealFunctions/XiPrimeNamespaced.lean/declarations/zerosin.md) | 39 | `declaration-track:3f9e9b6412ea8854ec97e8747ed8c7c2b43c8f995c3aee627d82b5995e5c7e51` |
-| 6 | `def` | [Ncount](../../../../RealFunctions/XiPrimeNamespaced.lean/declarations/ncount.md) | 42 | `declaration-track:763c1e1056fabc2d8bf8162190ade50e1e9637d00e8ade761d3af5bb46589654` |
-| 7 | `def` | [Ndist](../../../../RealFunctions/XiPrimeNamespaced.lean/declarations/ndist.md) | 45 | `declaration-track:ebe66832723bf886d7a32a4313c5986428cb64c81f9b62c848592c2390c148fd` |
-| 8 | `def` | [N0simple](../../../../RealFunctions/XiPrimeNamespaced.lean/declarations/n0simple.md) | 49 | `declaration-track:b1f7196f9ccff46e8f003342b8da41a676148935044849b0c23521fb098dca73` |
+| 1 | `def` | [xi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/XiPrimeNamespaced.lean/declarations/xi.md) | 24 | `declaration-track:7b759dee4672f6c6688b675cd03d61e6828cf6c2f2456b1de61bae3c5273d79d` |
+| 2 | `def` | [xiDeriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/XiPrimeNamespaced.lean/declarations/xideriv.md) | 27 | `declaration-track:eaddb0112cd37ab028bfe5c342c965d3e3a845d276e8b19888ff5d0730003561` |
+| 3 | `def` | [IsXiDerivZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/XiPrimeNamespaced.lean/declarations/isxiderivzero.md) | 30 | `declaration-track:1eb8848bf6109ee0fc1a0f05197a35f70aec15444c3b68f77d8d307c7d91a9d0` |
+| 4 | `def` | [xiDerivMult](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/XiPrimeNamespaced.lean/declarations/xiderivmult.md) | 33 | `declaration-track:d9d9eb2af00d2d53e468fad4091da28d79ae7eeb8606271208c9a5cf4a235b20` |
+| 5 | `def` | [zerosIn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/XiPrimeNamespaced.lean/declarations/zerosin.md) | 39 | `declaration-track:3f9e9b6412ea8854ec97e8747ed8c7c2b43c8f995c3aee627d82b5995e5c7e51` |
+| 6 | `def` | [Ncount](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/XiPrimeNamespaced.lean/declarations/ncount.md) | 42 | `declaration-track:763c1e1056fabc2d8bf8162190ade50e1e9637d00e8ade761d3af5bb46589654` |
+| 7 | `def` | [Ndist](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/XiPrimeNamespaced.lean/declarations/ndist.md) | 45 | `declaration-track:ebe66832723bf886d7a32a4313c5986428cb64c81f9b62c848592c2390c148fd` |
+| 8 | `def` | [N0simple](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/XiPrimeNamespaced.lean/declarations/n0simple.md) | 49 | `declaration-track:b1f7196f9ccff46e8f003342b8da41a676148935044849b0c23521fb098dca73` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

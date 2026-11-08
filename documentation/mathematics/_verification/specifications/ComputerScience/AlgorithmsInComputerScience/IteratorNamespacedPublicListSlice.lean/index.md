@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/IteratorNamespacedPublicListSlice.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/IteratorNamespacedPublicListSlice.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IteratorNamespacedPublicListSlice.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IteratorNamespacedPublicListSlice.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ListSlice.instToIterator](../../../../../ComputerScience/AlgorithmsInComputerScience/IteratorNamespacedPublicListSlice.lean/declarations/listslice-insttoiterator.md) | 35 | `declaration-track:dab218e77ca5ce3b57c82996e1795061f05924cbe9e7476eddee755daa95eaaf` |
-| 2 | `instance` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/IteratorNamespacedPublicListSlice.lean/declarations/instance.md) | 43 | `declaration-track:6e77f4f599bba0b9c1d3b908aeb85edf12e75b84deb10b5082f368e8086f3785` |
-| 3 | `instance` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/IteratorNamespacedPublicListSlice.lean/declarations/instance-source-edition-3.md) | 47 | `declaration-track:865a30bfba768592dbd746594c5d03fab937248cbf15746a6a66d1d1c75cdc3c` |
-| 4 | `instance` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/IteratorNamespacedPublicListSlice.lean/declarations/instance-source-edition-2.md) | 53 | `declaration-track:70b373aee4ab4f7064d20cfa45744d8a6505ec533faadc48b5183fc87076f9d2` |
-| 5 | `def` | [ListSlice.repr](../../../../../ComputerScience/AlgorithmsInComputerScience/IteratorNamespacedPublicListSlice.lean/declarations/listslice-repr.md) | 59 | `declaration-track:6a3dbfd30ca50d99da68f2ff36704648ea1a7abdc8abbcdca359a3aed7c7656e` |
-| 6 | `instance` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/IteratorNamespacedPublicListSlice.lean/declarations/instance-source-edition-4.md) | 63 | `declaration-track:94c409476cdd8aecfb1465a22968cb9d47ae97ec52da5c5df3fa323e8e0a3776` |
-| 7 | `instance` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/IteratorNamespacedPublicListSlice.lean/declarations/instance-source-edition-5.md) | 66 | `declaration-track:edc7884602c8e33e969650125b77257de2e71b5eb729aff8916d59affa6bfd70` |
+| 1 | `def` | [ListSlice.instToIterator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IteratorNamespacedPublicListSlice.lean/declarations/listslice-insttoiterator.md) | 35 | `declaration-track:dab218e77ca5ce3b57c82996e1795061f05924cbe9e7476eddee755daa95eaaf` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IteratorNamespacedPublicListSlice.lean/declarations/instance.md) | 43 | `declaration-track:6e77f4f599bba0b9c1d3b908aeb85edf12e75b84deb10b5082f368e8086f3785` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IteratorNamespacedPublicListSlice.lean/declarations/instance-source-edition-3.md) | 47 | `declaration-track:865a30bfba768592dbd746594c5d03fab937248cbf15746a6a66d1d1c75cdc3c` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IteratorNamespacedPublicListSlice.lean/declarations/instance-source-edition-2.md) | 53 | `declaration-track:70b373aee4ab4f7064d20cfa45744d8a6505ec533faadc48b5183fc87076f9d2` |
+| 5 | `def` | [ListSlice.repr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IteratorNamespacedPublicListSlice.lean/declarations/listslice-repr.md) | 59 | `declaration-track:6a3dbfd30ca50d99da68f2ff36704648ea1a7abdc8abbcdca359a3aed7c7656e` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IteratorNamespacedPublicListSlice.lean/declarations/instance-source-edition-4.md) | 63 | `declaration-track:94c409476cdd8aecfb1465a22968cb9d47ae97ec52da5c5df3fa323e8e0a3776` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IteratorNamespacedPublicListSlice.lean/declarations/instance-source-edition-5.md) | 66 | `declaration-track:edc7884602c8e33e969650125b77257de2e71b5eb729aff8916d59affa6bfd70` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/RealHalf.lean/index.md) · [Full source](../../../../RealFunctions/RealHalf.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RealHalf.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RealHalf.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [spectralPivot](../../../../RealFunctions/RealHalf.lean/declarations/spectralpivot.md) | 39 | `declaration-track:8ecaf51cc18e48f911a8bad9c5262bff2f12991daad854ef3ba4f423fdb7fd76` |
-| 2 | `theorem` | [spectralPivot_eq_half](../../../../RealFunctions/RealHalf.lean/declarations/spectralpivot-eq-half.md) | 42 | `result-track:2259b857634fc094691979996e0c8bf7e6f907cdc72f059104677ca0613f1549` |
+| 1 | `def` | [spectralPivot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RealHalf.lean/declarations/spectralpivot.md) | 39 | `declaration-track:8ecaf51cc18e48f911a8bad9c5262bff2f12991daad854ef3ba4f423fdb7fd76` |
+| 2 | `theorem` | [spectralPivot_eq_half](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RealHalf.lean/declarations/spectralpivot-eq-half.md) | 42 | `result-track:2259b857634fc094691979996e0c8bf7e6f907cdc72f059104677ca0613f1549` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

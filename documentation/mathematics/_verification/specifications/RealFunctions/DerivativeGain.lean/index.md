@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/DerivativeGain.lean/index.md) · [Full source](../../../../RealFunctions/DerivativeGain.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DerivativeGain.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DerivativeGain.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [DerivativeGainCertificate](../../../../RealFunctions/DerivativeGain.lean/declarations/derivativegaincertificate.md) | 7 | `declaration-track:4cb89c02b3d3b011534789b9137c60d10043087751e254451d7ca221881e804b` |
-| 2 | `theorem` | [derivative_gain_bounds_one_step](../../../../RealFunctions/DerivativeGain.lean/declarations/derivative-gain-bounds-one-step.md) | 20 | `result-track:30165d102f8863b0bbc2ed445473945f33c57e03d3576abdcd7324484f6f9ca2` |
-| 3 | `structure` | [ScaledDerivativeGainCertificate](../../../../RealFunctions/DerivativeGain.lean/declarations/scaledderivativegaincertificate.md) | 39 | `declaration-track:fe63918290f79cc2a050f226b90d5cddb731d4653294bb81c194b5848d89bdcc` |
-| 4 | `theorem` | [scaled_derivative_gain_bounds_one_step](../../../../RealFunctions/DerivativeGain.lean/declarations/scaled-derivative-gain-bounds-one-step.md) | 55 | `result-track:b1caa9c932ec85983c4a0d39e0904483b8503ec376193c4f40de3210345ecdd3` |
-| 5 | `structure` | [GainInterval](../../../../RealFunctions/DerivativeGain.lean/declarations/gaininterval.md) | 70 | `declaration-track:6bdb371fc9de179515fcd75ddc220031f46facc8f77e7ba2e3cf41ab4b4a1485` |
-| 6 | `inductive` | [StabilityRegime](../../../../RealFunctions/DerivativeGain.lean/declarations/stabilityregime.md) | 75 | `declaration-track:f6710ee5d9b56dd243c4ce68ced3ce5c798958d095b531de8afde2792c93d57b` |
-| 7 | `def` | [classifyGain](../../../../RealFunctions/DerivativeGain.lean/declarations/classifygain.md) | 87 | `declaration-track:7cd3e38c876b74a20754684f7518d561c5536eefb26c0d75ca46c514ee6ef5f1` |
-| 8 | `theorem` | [strict_upper_bound_classifies_contractive](../../../../RealFunctions/DerivativeGain.lean/declarations/strict-upper-bound-classifies-contractive.md) | 96 | `result-track:6fcbde1b89039d84ff1e04d4ddac5c3f8d6d7752a55e6bd4da6c3bb4a1d73072` |
-| 9 | `theorem` | [unresolved_unit_intersection_is_critical](../../../../RealFunctions/DerivativeGain.lean/declarations/unresolved-unit-intersection-is-critical.md) | 103 | `result-track:06eecb2da2b403a48416e297053e99b56c830bad51e591fedaa6cc6ac98cb40e` |
+| 1 | `structure` | [DerivativeGainCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DerivativeGain.lean/declarations/derivativegaincertificate.md) | 7 | `declaration-track:4cb89c02b3d3b011534789b9137c60d10043087751e254451d7ca221881e804b` |
+| 2 | `theorem` | [derivative_gain_bounds_one_step](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DerivativeGain.lean/declarations/derivative-gain-bounds-one-step.md) | 20 | `result-track:30165d102f8863b0bbc2ed445473945f33c57e03d3576abdcd7324484f6f9ca2` |
+| 3 | `structure` | [ScaledDerivativeGainCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DerivativeGain.lean/declarations/scaledderivativegaincertificate.md) | 39 | `declaration-track:fe63918290f79cc2a050f226b90d5cddb731d4653294bb81c194b5848d89bdcc` |
+| 4 | `theorem` | [scaled_derivative_gain_bounds_one_step](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DerivativeGain.lean/declarations/scaled-derivative-gain-bounds-one-step.md) | 55 | `result-track:b1caa9c932ec85983c4a0d39e0904483b8503ec376193c4f40de3210345ecdd3` |
+| 5 | `structure` | [GainInterval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DerivativeGain.lean/declarations/gaininterval.md) | 70 | `declaration-track:6bdb371fc9de179515fcd75ddc220031f46facc8f77e7ba2e3cf41ab4b4a1485` |
+| 6 | `inductive` | [StabilityRegime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DerivativeGain.lean/declarations/stabilityregime.md) | 75 | `declaration-track:f6710ee5d9b56dd243c4ce68ced3ce5c798958d095b531de8afde2792c93d57b` |
+| 7 | `def` | [classifyGain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DerivativeGain.lean/declarations/classifygain.md) | 87 | `declaration-track:7cd3e38c876b74a20754684f7518d561c5536eefb26c0d75ca46c514ee6ef5f1` |
+| 8 | `theorem` | [strict_upper_bound_classifies_contractive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DerivativeGain.lean/declarations/strict-upper-bound-classifies-contractive.md) | 96 | `result-track:6fcbde1b89039d84ff1e04d4ddac5c3f8d6d7752a55e6bd4da6c3bb4a1d73072` |
+| 9 | `theorem` | [unresolved_unit_intersection_is_critical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DerivativeGain.lean/declarations/unresolved-unit-intersection-is-critical.md) | 103 | `result-track:06eecb2da2b403a48416e297053e99b56c830bad51e591fedaa6cc6ac98cb40e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Unimported.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Unimported.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Unimported.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Unimported.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [excluded](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Unimported.lean/declarations/excluded.md) | 2 | `result-track:be9af4461d1efd5be1599a6c0fae58aff0204669e59b4bb3f96b06b1be6ed4ee` |
+| 1 | `theorem` | [excluded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Unimported.lean/declarations/excluded.md) | 2 | `result-track:be9af4461d1efd5be1599a6c0fae58aff0204669e59b4bb3f96b06b1be6ed4ee` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

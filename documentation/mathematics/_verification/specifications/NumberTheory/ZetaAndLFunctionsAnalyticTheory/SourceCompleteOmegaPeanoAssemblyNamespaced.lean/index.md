@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCompleteOmegaPeanoAssemblyNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCompleteOmegaPeanoAssemblyNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCompleteOmegaPeanoAssemblyNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCompleteOmegaPeanoAssemblyNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [completeOmega_eq_actual_signed_Peano_kappa](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCompleteOmegaPeanoAssemblyNamespaced.lean/declarations/completeomega-eq-actual-signed-peano-kappa.md) | 28 | `result-track:f900701065cfea65feaf1570b19a00273b4ece64af64c0081fa6d8900a63fcb8` |
-| 2 | `theorem` | [integerJ_eq_actual_signed_Peano_kappa_add_error](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCompleteOmegaPeanoAssemblyNamespaced.lean/declarations/integerj-eq-actual-signed-peano-kappa-add-error.md) | 36 | `result-track:a19316b847b60e4219873e1586512677d56a3cd5f1695054ca96960c738d3e92` |
+| 1 | `theorem` | [completeOmega_eq_actual_signed_Peano_kappa](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCompleteOmegaPeanoAssemblyNamespaced.lean/declarations/completeomega-eq-actual-signed-peano-kappa.md) | 28 | `result-track:f900701065cfea65feaf1570b19a00273b4ece64af64c0081fa6d8900a63fcb8` |
+| 2 | `theorem` | [integerJ_eq_actual_signed_Peano_kappa_add_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCompleteOmegaPeanoAssemblyNamespaced.lean/declarations/integerj-eq-actual-signed-peano-kappa-add-error.md) | 36 | `result-track:a19316b847b60e4219873e1586512677d56a3cd5f1695054ca96960c738d3e92` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

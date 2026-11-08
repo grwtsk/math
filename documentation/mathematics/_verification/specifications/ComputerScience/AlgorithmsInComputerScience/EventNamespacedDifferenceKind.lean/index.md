@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/EventNamespacedDifferenceKind.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/EventNamespacedDifferenceKind.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EventNamespacedDifferenceKind.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EventNamespacedDifferenceKind.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [DifferenceKind](../../../../../ComputerScience/AlgorithmsInComputerScience/EventNamespacedDifferenceKind.lean/declarations/differencekind.md) | 16 | `declaration-track:4c2cff7b7f91eec03985282d5ef898bba0f5538b05e17350678116d5fc0eee69` |
-| 2 | `structure` | [TypedDifference](../../../../../ComputerScience/AlgorithmsInComputerScience/EventNamespacedDifferenceKind.lean/declarations/typeddifference.md) | 28 | `declaration-track:3b7c65fa37d2452673110f0d5bed6806aefd916f629a3f69ed16bb1d441f0732` |
-| 3 | `def` | [typedDiff](../../../../../ComputerScience/AlgorithmsInComputerScience/EventNamespacedDifferenceKind.lean/declarations/typeddiff.md) | 34 | `declaration-track:5b5cdb260135368be5726823eecd5f05475378c46e1e6dee34a9860052a7d8c4` |
-| 4 | `structure` | [CausalReceipt](../../../../../ComputerScience/AlgorithmsInComputerScience/EventNamespacedDifferenceKind.lean/declarations/causalreceipt.md) | 40 | `declaration-track:e249df0f7b57ecf704e6aaf101021d339ed45a4c9e938408a2e70d45ae0f45dc` |
-| 5 | `structure` | [MutationEvent](../../../../../ComputerScience/AlgorithmsInComputerScience/EventNamespacedDifferenceKind.lean/declarations/mutationevent.md) | 47 | `declaration-track:b79563c4c47d2461927e915aa287f00992c4b9d9203857605d1b1507bcfff019` |
-| 6 | `theorem` | [causal_edges_have_receipts](../../../../../ComputerScience/AlgorithmsInComputerScience/EventNamespacedDifferenceKind.lean/declarations/causal-edges-have-receipts.md) | 60 | `result-track:68d36caa6a43c5a8c92e58dc5eea1cd6c34af5987a5827d700cbe2f957d1f454` |
-| 7 | `structure` | [MutationRun](../../../../../ComputerScience/AlgorithmsInComputerScience/EventNamespacedDifferenceKind.lean/declarations/mutationrun.md) | 65 | `declaration-track:341f8f08844962d54052c8165ca98738484011df4c3a8c8566ec71d959728de5` |
+| 1 | `inductive` | [DifferenceKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EventNamespacedDifferenceKind.lean/declarations/differencekind.md) | 16 | `declaration-track:4c2cff7b7f91eec03985282d5ef898bba0f5538b05e17350678116d5fc0eee69` |
+| 2 | `structure` | [TypedDifference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EventNamespacedDifferenceKind.lean/declarations/typeddifference.md) | 28 | `declaration-track:3b7c65fa37d2452673110f0d5bed6806aefd916f629a3f69ed16bb1d441f0732` |
+| 3 | `def` | [typedDiff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EventNamespacedDifferenceKind.lean/declarations/typeddiff.md) | 34 | `declaration-track:5b5cdb260135368be5726823eecd5f05475378c46e1e6dee34a9860052a7d8c4` |
+| 4 | `structure` | [CausalReceipt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EventNamespacedDifferenceKind.lean/declarations/causalreceipt.md) | 40 | `declaration-track:e249df0f7b57ecf704e6aaf101021d339ed45a4c9e938408a2e70d45ae0f45dc` |
+| 5 | `structure` | [MutationEvent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EventNamespacedDifferenceKind.lean/declarations/mutationevent.md) | 47 | `declaration-track:b79563c4c47d2461927e915aa287f00992c4b9d9203857605d1b1507bcfff019` |
+| 6 | `theorem` | [causal_edges_have_receipts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EventNamespacedDifferenceKind.lean/declarations/causal-edges-have-receipts.md) | 60 | `result-track:68d36caa6a43c5a8c92e58dc5eea1cd6c34af5987a5827d700cbe2f957d1f454` |
+| 7 | `structure` | [MutationRun](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EventNamespacedDifferenceKind.lean/declarations/mutationrun.md) | 65 | `declaration-track:341f8f08844962d54052c8165ca98738484011df4c3a8c8566ec71d959728de5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

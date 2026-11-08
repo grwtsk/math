@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SpectralDeformationSourceEdition1.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SpectralDeformationSourceEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SpectralDeformationSourceEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SpectralDeformationSourceEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [wrapper_is_not_theorem_authority](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SpectralDeformationSourceEdition1.lean/declarations/wrapper-is-not-theorem-authority.md) | 13 | `result-track:3e2f5ee09a2aa4e20d8bd770696d845d368d1e7eee92feb3555491d37c6a2378` |
+| 1 | `theorem` | [wrapper_is_not_theorem_authority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SpectralDeformationSourceEdition1.lean/declarations/wrapper-is-not-theorem-authority.md) | 13 | `result-track:3e2f5ee09a2aa4e20d8bd770696d845d368d1e7eee92feb3555491d37c6a2378` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

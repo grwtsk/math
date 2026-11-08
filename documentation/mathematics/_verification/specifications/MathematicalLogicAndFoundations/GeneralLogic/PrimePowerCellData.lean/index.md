@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PrimePowerCellData.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PrimePowerCellData.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PrimePowerCellData.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PrimePowerCellData.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PrimePowerCell](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PrimePowerCellData.lean/declarations/primepowercell.md) | 36 | `declaration-track:053553068e47987a8eace16f1d14489596930bb9e93c5adc8fbff38cf7741984` |
+| 1 | `structure` | [PrimePowerCell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PrimePowerCellData.lean/declarations/primepowercell.md) | 36 | `declaration-track:053553068e47987a8eace16f1d14489596930bb9e93c5adc8fbff38cf7741984` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

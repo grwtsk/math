@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraNamespacedPublic.lean/index.md) · [Full source](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [eval₂_mul'](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraNamespacedPublic.lean/declarations/eval-mul.md) | 48 | `result-track:be4f6058e7309f5144fb4df3fb7b9d9ffe5b04d587e29972347a1cad425acf86` |
-| 2 | `theorem` | [eval₂_pow'](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraNamespacedPublic.lean/declarations/eval-pow.md) | 53 | `result-track:f6dc9d638e960e186f3a79d19f8369672e8dcebbdf432bb0549909f8483bc8ff` |
-| 3 | `theorem` | [eval₂_comp'](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraNamespacedPublic.lean/declarations/eval-comp.md) | 60 | `result-track:86929536c712e9d7d8b328bc89aca8eb2cca2b7945ef0a8fab41c52cb3845d70` |
+| 1 | `theorem` | [eval₂_mul'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraNamespacedPublic.lean/declarations/eval-mul.md) | 48 | `result-track:be4f6058e7309f5144fb4df3fb7b9d9ffe5b04d587e29972347a1cad425acf86` |
+| 2 | `theorem` | [eval₂_pow'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraNamespacedPublic.lean/declarations/eval-pow.md) | 53 | `result-track:f6dc9d638e960e186f3a79d19f8369672e8dcebbdf432bb0549909f8483bc8ff` |
+| 3 | `theorem` | [eval₂_comp'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraNamespacedPublic.lean/declarations/eval-comp.md) | 60 | `result-track:86929536c712e9d7d8b328bc89aca8eb2cca2b7945ef0a8fab41c52cb3845d70` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

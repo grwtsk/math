@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/TwoSidedIdealInstancesNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/TwoSidedIdealInstancesNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TwoSidedIdealInstancesNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TwoSidedIdealInstancesNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/TwoSidedIdealInstancesNamespaced.lean/declarations/instance.md) | 21 | `declaration-track:b410bba6ce1f128faac2bdc9b6843fce3f5362c023beb974faf949c2aa0d2030` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TwoSidedIdealInstancesNamespaced.lean/declarations/instance.md) | 21 | `declaration-track:b410bba6ce1f128faac2bdc9b6843fce3f5362c023beb974faf949c2aa0d2030` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Idempotent.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Idempotent.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Idempotent.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Idempotent.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [zero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Idempotent.lean/declarations/zero.md) | 22 | `result-track:8c3c86824ebf2ac6a5caeb6652c3380818e48a620bc63ce9a5f881b7246ce797` |
-| 2 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Idempotent.lean/declarations/instance.md) | 24 | `declaration-track:78c068a78e55add2385fc47bdc45a5079dab33be35546ef1470743372157cf36` |
-| 3 | `lemma` | [coe_zero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Idempotent.lean/declarations/coe-zero.md) | 26 | `result-track:c4c5a47cecf042f8e9d789dc9de1820c6550e658806a24d4d38d4274844232a0` |
-| 4 | `lemma` | [iff_eq_zero_or_one](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Idempotent.lean/declarations/iff-eq-zero-or-one.md) | 34 | `result-track:1413adc85b1d6f3ef14108dec548c7cbab66df0a68ec02e73c9fb218f8ff63b3` |
+| 1 | `lemma` | [zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Idempotent.lean/declarations/zero.md) | 22 | `result-track:8c3c86824ebf2ac6a5caeb6652c3380818e48a620bc63ce9a5f881b7246ce797` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Idempotent.lean/declarations/instance.md) | 24 | `declaration-track:78c068a78e55add2385fc47bdc45a5079dab33be35546ef1470743372157cf36` |
+| 3 | `lemma` | [coe_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Idempotent.lean/declarations/coe-zero.md) | 26 | `result-track:c4c5a47cecf042f8e9d789dc9de1820c6550e658806a24d4d38d4274844232a0` |
+| 4 | `lemma` | [iff_eq_zero_or_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Idempotent.lean/declarations/iff-eq-zero-or-one.md) | 34 | `result-track:1413adc85b1d6f3ef14108dec548c7cbab66df0a68ec02e73c9fb218f8ff63b3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

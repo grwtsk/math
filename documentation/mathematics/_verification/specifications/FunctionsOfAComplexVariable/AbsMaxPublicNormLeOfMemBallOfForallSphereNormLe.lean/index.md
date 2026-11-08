@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/AbsMaxPublicNormLeOfMemBallOfForallSphereNormLe.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/AbsMaxPublicNormLeOfMemBallOfForallSphereNormLe.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/AbsMaxPublicNormLeOfMemBallOfForallSphereNormLe.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/AbsMaxPublicNormLeOfMemBallOfForallSphereNormLe.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [norm_le_of_mem_ball_of_forall_sphere_norm_le](../../../../FunctionsOfAComplexVariable/AbsMaxPublicNormLeOfMemBallOfForallSphereNormLe.lean/declarations/norm-le-of-mem-ball-of-forall-sphere-norm-le.md) | 20 | `result-track:56d74c14ed8f29c7347b7873a51c485b355ef2a709b8b248b33cf5fbc1542595` |
+| 1 | `theorem` | [norm_le_of_mem_ball_of_forall_sphere_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/AbsMaxPublicNormLeOfMemBallOfForallSphereNormLe.lean/declarations/norm-le-of-mem-ball-of-forall-sphere-norm-le.md) | 20 | `result-track:56d74c14ed8f29c7347b7873a51c485b355ef2a709b8b248b33cf5fbc1542595` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

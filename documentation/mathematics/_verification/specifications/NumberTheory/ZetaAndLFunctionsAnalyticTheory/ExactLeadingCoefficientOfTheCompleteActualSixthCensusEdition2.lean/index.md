@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactLeadingCoefficientOfTheCompleteActualSixthCensusEdition2.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactLeadingCoefficientOfTheCompleteActualSixthCensusEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactLeadingCoefficientOfTheCompleteActualSixthCensusEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactLeadingCoefficientOfTheCompleteActualSixthCensusEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [normalizedSixthCensus](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactLeadingCoefficientOfTheCompleteActualSixthCensusEdition2.lean/declarations/normalizedsixthcensus.md) | 28 | `declaration-track:a68c48d7b66df89b7b2e31647378301d6f57fdd72b34644fdb81886e97e6a60f` |
-| 2 | `theorem` | [actual_census_normalized_error_price](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactLeadingCoefficientOfTheCompleteActualSixthCensusEdition2.lean/declarations/actual-census-normalized-error-price.md) | 30 | `result-track:ebfe60df687f13f9a6f25ff9ddc6d8d1b3a72fb86b55713833881e80038393d3` |
-| 3 | `theorem` | [exponential_census_error_scale_tends_to_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactLeadingCoefficientOfTheCompleteActualSixthCensusEdition2.lean/declarations/exponential-census-error-scale-tends-to-zero.md) | 43 | `result-track:0379de26091fad910056f2d729a55147d0efe5b497475102f8e4b39aec8f0fd4` |
-| 4 | `theorem` | [actual_complete_sixth_census_leading_coefficient](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactLeadingCoefficientOfTheCompleteActualSixthCensusEdition2.lean/declarations/actual-complete-sixth-census-leading-coefficient.md) | 61 | `result-track:da2d4cafd7a1ac9858ec5f70d2359213b118c46cad3d8664aea16a0bb9c170e0` |
-| 5 | `theorem` | [actual_square_census_paper_uniform_bound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactLeadingCoefficientOfTheCompleteActualSixthCensusEdition2.lean/declarations/actual-square-census-paper-uniform-bound.md) | 79 | `result-track:d323d7a7628a94127f7fc6e9f6e32ddca85975332ff614217c2523ebab30f2c6` |
+| 1 | `def` | [normalizedSixthCensus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactLeadingCoefficientOfTheCompleteActualSixthCensusEdition2.lean/declarations/normalizedsixthcensus.md) | 28 | `declaration-track:a68c48d7b66df89b7b2e31647378301d6f57fdd72b34644fdb81886e97e6a60f` |
+| 2 | `theorem` | [actual_census_normalized_error_price](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactLeadingCoefficientOfTheCompleteActualSixthCensusEdition2.lean/declarations/actual-census-normalized-error-price.md) | 30 | `result-track:ebfe60df687f13f9a6f25ff9ddc6d8d1b3a72fb86b55713833881e80038393d3` |
+| 3 | `theorem` | [exponential_census_error_scale_tends_to_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactLeadingCoefficientOfTheCompleteActualSixthCensusEdition2.lean/declarations/exponential-census-error-scale-tends-to-zero.md) | 43 | `result-track:0379de26091fad910056f2d729a55147d0efe5b497475102f8e4b39aec8f0fd4` |
+| 4 | `theorem` | [actual_complete_sixth_census_leading_coefficient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactLeadingCoefficientOfTheCompleteActualSixthCensusEdition2.lean/declarations/actual-complete-sixth-census-leading-coefficient.md) | 61 | `result-track:da2d4cafd7a1ac9858ec5f70d2359213b118c46cad3d8664aea16a0bb9c170e0` |
+| 5 | `theorem` | [actual_square_census_paper_uniform_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExactLeadingCoefficientOfTheCompleteActualSixthCensusEdition2.lean/declarations/actual-square-census-paper-uniform-bound.md) | 79 | `result-track:d323d7a7628a94127f7fc6e9f6e32ddca85975332ff614217c2523ebab30f2c6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

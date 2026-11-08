@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/SuppliedCompletionCarrierAndMap.lean/index.md) · [Full source](../../../../CommutativeAlgebra/SuppliedCompletionCarrierAndMap.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SuppliedCompletionCarrierAndMap.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SuppliedCompletionCarrierAndMap.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -51,7 +51,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 - `Mathlib.Algebra.Ring.ULift` — import line 23; external provider; requires a separately pinned dependency.
 - `Mathlib.Data.Rat.Defs` — import line 24; external provider; requires a separately pinned dependency.
 - `Mathlib.Data.ZMod.Basic` — import line 25; external provider; requires a separately pinned dependency.
-- [Commutative Coefficient Carriers](../../../../CommutativeAlgebra/CommutativeCoefficientCarriers.lean/index.md) — import line 26; pinned internal source present.
+- [Commutative Coefficient Carriers](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CommutativeCoefficientCarriers.lean/index.md) — import line 26; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -62,9 +62,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CompletionDatum](../../../../CommutativeAlgebra/SuppliedCompletionCarrierAndMap.lean/declarations/completiondatum.md) | 51 | `declaration-track:de773f4fb23446d43f7d70bec3896045eda173196ee941047e97e3d8208ad04f` |
-| 2 | `def` | [context](../../../../CommutativeAlgebra/SuppliedCompletionCarrierAndMap.lean/declarations/context.md) | 60 | `declaration-track:67c11953ea1c2da4115b8da397edc5e62e61ef9e949e9c4b54d9594cd00bc9c7` |
-| 3 | `def` | [algebraMapComparison](../../../../CommutativeAlgebra/SuppliedCompletionCarrierAndMap.lean/declarations/algebramapcomparison.md) | 64 | `declaration-track:1690b534d70f8c2314151ebd2bdf40413ebf3ede0fd2ba2b7aed361b1a549334` |
+| 1 | `structure` | [CompletionDatum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SuppliedCompletionCarrierAndMap.lean/declarations/completiondatum.md) | 51 | `declaration-track:de773f4fb23446d43f7d70bec3896045eda173196ee941047e97e3d8208ad04f` |
+| 2 | `def` | [context](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SuppliedCompletionCarrierAndMap.lean/declarations/context.md) | 60 | `declaration-track:67c11953ea1c2da4115b8da397edc5e62e61ef9e949e9c4b54d9594cd00bc9c7` |
+| 3 | `def` | [algebraMapComparison](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SuppliedCompletionCarrierAndMap.lean/declarations/algebramapcomparison.md) | 64 | `declaration-track:1690b534d70f8c2314151ebd2bdf40413ebf3ede0fd2ba2b7aed361b1a549334` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

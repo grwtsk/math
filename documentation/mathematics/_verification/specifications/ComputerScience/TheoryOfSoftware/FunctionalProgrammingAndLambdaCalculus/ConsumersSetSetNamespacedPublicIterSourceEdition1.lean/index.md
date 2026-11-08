@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ConsumersSetSetNamespacedPublicIterSourceEdition1.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ConsumersSetSetNamespacedPublicIterSourceEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ConsumersSetSetNamespacedPublicIterSourceEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ConsumersSetSetNamespacedPublicIterSourceEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,10 +61,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Iter.toHashSet_equiv_ofList](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ConsumersSetSetNamespacedPublicIterSourceEdition1.lean/declarations/iter-tohashset-equiv-oflist.md) | 32 | `result-track:8ff76886122a952f72a5c2553116e7649a41f60bfc87c01898dc81550559831a` |
-| 2 | `theorem` | [Iter.toExtHashSet_eq_ofList](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ConsumersSetSetNamespacedPublicIterSourceEdition1.lean/declarations/iter-toexthashset-eq-oflist.md) | 39 | `result-track:5133da57fad893a48a406ff9ff0a4dd13870a7315190d9de85c80763ab33a1b8` |
-| 3 | `theorem` | [Iter.toTreeSet_equiv_ofList](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ConsumersSetSetNamespacedPublicIterSourceEdition1.lean/declarations/iter-totreeset-equiv-oflist.md) | 46 | `result-track:3e5afd2d011f755320d298d5b2a5b1105ef8ff2b9d91f78f6193ef39e2095ea3` |
-| 4 | `theorem` | [Iter.toExtTreeSet_eq_ofList](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ConsumersSetSetNamespacedPublicIterSourceEdition1.lean/declarations/iter-toexttreeset-eq-oflist.md) | 53 | `result-track:ea722d501899fd87b47c3981554535ead65a93a7317e8ee95ed517fc2c3373e0` |
+| 1 | `theorem` | [Iter.toHashSet_equiv_ofList](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ConsumersSetSetNamespacedPublicIterSourceEdition1.lean/declarations/iter-tohashset-equiv-oflist.md) | 32 | `result-track:8ff76886122a952f72a5c2553116e7649a41f60bfc87c01898dc81550559831a` |
+| 2 | `theorem` | [Iter.toExtHashSet_eq_ofList](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ConsumersSetSetNamespacedPublicIterSourceEdition1.lean/declarations/iter-toexthashset-eq-oflist.md) | 39 | `result-track:5133da57fad893a48a406ff9ff0a4dd13870a7315190d9de85c80763ab33a1b8` |
+| 3 | `theorem` | [Iter.toTreeSet_equiv_ofList](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ConsumersSetSetNamespacedPublicIterSourceEdition1.lean/declarations/iter-totreeset-equiv-oflist.md) | 46 | `result-track:3e5afd2d011f755320d298d5b2a5b1105ef8ff2b9d91f78f6193ef39e2095ea3` |
+| 4 | `theorem` | [Iter.toExtTreeSet_eq_ofList](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ConsumersSetSetNamespacedPublicIterSourceEdition1.lean/declarations/iter-toexttreeset-eq-oflist.md) | 53 | `result-track:ea722d501899fd87b47c3981554535ead65a93a7317e8ee95ed517fc2c3373e0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

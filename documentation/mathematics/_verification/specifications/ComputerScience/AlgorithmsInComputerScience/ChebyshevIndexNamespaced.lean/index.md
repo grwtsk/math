@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ChebyshevIndexNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ChebyshevIndexNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ChebyshevIndexNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ChebyshevIndexNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [chebyshevThetaDefinitionAnchor](../../../../../ComputerScience/AlgorithmsInComputerScience/ChebyshevIndexNamespaced.lean/declarations/chebyshevthetadefinitionanchor.md) | 22 | `declaration-track:17deeaf09143b88e5a266d0650d8a8eb5059041006a151c332abf80dd3c380ad` |
-| 2 | `def` | [chebyshevPsiDefinitionAnchor](../../../../../ComputerScience/AlgorithmsInComputerScience/ChebyshevIndexNamespaced.lean/declarations/chebyshevpsidefinitionanchor.md) | 32 | `declaration-track:8a13478d1beaec266fc7c6fd1144c139ed2cea8fe05d27f9e92a1f9c9d72df20` |
-| 3 | `def` | [lcmPsiIdentityAnchor](../../../../../ComputerScience/AlgorithmsInComputerScience/ChebyshevIndexNamespaced.lean/declarations/lcmpsiidentityanchor.md) | 42 | `declaration-track:93a7a66297876e866b2b9db95403074e4bcf1f9f091ce4900f4f779926974fb7` |
-| 4 | `def` | [centralBinomialChebyshevAnchor](../../../../../ComputerScience/AlgorithmsInComputerScience/ChebyshevIndexNamespaced.lean/declarations/centralbinomialchebyshevanchor.md) | 52 | `declaration-track:5f050de5817852e18535ef37ec71c298a88d696398aba47999898148b3cbb790` |
-| 5 | `def` | [chebyshevPrimeCountingBoundsTargetAnchor](../../../../../ComputerScience/AlgorithmsInComputerScience/ChebyshevIndexNamespaced.lean/declarations/chebyshevprimecountingboundstargetanchor.md) | 62 | `declaration-track:80057beb3b976ce714697bc24d815225938b96758a429ee2f15bd6d40a1cc8b6` |
-| 6 | `def` | [pntStillTargetAfterChebyshevAnchor](../../../../../ComputerScience/AlgorithmsInComputerScience/ChebyshevIndexNamespaced.lean/declarations/pntstilltargetafterchebyshevanchor.md) | 72 | `declaration-track:b9ee4091f19265ed995d0ba96e2fa9658516c91e1f9bfd319fcfd2c9ab0066b0` |
-| 7 | `def` | [chebyshevAnchors](../../../../../ComputerScience/AlgorithmsInComputerScience/ChebyshevIndexNamespaced.lean/declarations/chebyshevanchors.md) | 82 | `declaration-track:77356afd699c9804864655caf9ae6f58a61267fc66761122da91f788821a4db6` |
+| 1 | `def` | [chebyshevThetaDefinitionAnchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ChebyshevIndexNamespaced.lean/declarations/chebyshevthetadefinitionanchor.md) | 22 | `declaration-track:17deeaf09143b88e5a266d0650d8a8eb5059041006a151c332abf80dd3c380ad` |
+| 2 | `def` | [chebyshevPsiDefinitionAnchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ChebyshevIndexNamespaced.lean/declarations/chebyshevpsidefinitionanchor.md) | 32 | `declaration-track:8a13478d1beaec266fc7c6fd1144c139ed2cea8fe05d27f9e92a1f9c9d72df20` |
+| 3 | `def` | [lcmPsiIdentityAnchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ChebyshevIndexNamespaced.lean/declarations/lcmpsiidentityanchor.md) | 42 | `declaration-track:93a7a66297876e866b2b9db95403074e4bcf1f9f091ce4900f4f779926974fb7` |
+| 4 | `def` | [centralBinomialChebyshevAnchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ChebyshevIndexNamespaced.lean/declarations/centralbinomialchebyshevanchor.md) | 52 | `declaration-track:5f050de5817852e18535ef37ec71c298a88d696398aba47999898148b3cbb790` |
+| 5 | `def` | [chebyshevPrimeCountingBoundsTargetAnchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ChebyshevIndexNamespaced.lean/declarations/chebyshevprimecountingboundstargetanchor.md) | 62 | `declaration-track:80057beb3b976ce714697bc24d815225938b96758a429ee2f15bd6d40a1cc8b6` |
+| 6 | `def` | [pntStillTargetAfterChebyshevAnchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ChebyshevIndexNamespaced.lean/declarations/pntstilltargetafterchebyshevanchor.md) | 72 | `declaration-track:b9ee4091f19265ed995d0ba96e2fa9658516c91e1f9bfd319fcfd2c9ab0066b0` |
+| 7 | `def` | [chebyshevAnchors](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ChebyshevIndexNamespaced.lean/declarations/chebyshevanchors.md) | 82 | `declaration-track:77356afd699c9804864655caf9ae6f58a61267fc66761122da91f788821a4db6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrivateV3Input.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrivateV3Input.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrivateV3Input.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrivateV3Input.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [earlyPrimeBlock](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrivateV3Input.lean/declarations/earlyprimeblock.md) | 26 | `declaration-track:4736593aac43ab1f8d52214d81fb575cf9f960db231cb87e94f59727a071a536` |
-| 2 | `def` | [complementaryPrimeBlocks](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrivateV3Input.lean/declarations/complementaryprimeblocks.md) | 30 | `declaration-track:79d33e2e9fe089f494ae174d5f1c0fad7dcb910d3ee0723f0d53d7377c111b00` |
-| 3 | `theorem` | [earlyCorrelation_ge](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrivateV3Input.lean/declarations/earlycorrelation-ge.md) | 35 | `result-track:601f3a5a623ff064527d392378cf9d4d98b9d72b7ad5ccb11daefbd4c6b19a15` |
-| 4 | `theorem` | [earlyTailTest_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrivateV3Input.lean/declarations/earlytailtest-le.md) | 45 | `result-track:8da2673d8ae36d334cddb6d76caae6e99a18c2758cc78042acffa45ef4a3b71d` |
-| 5 | `theorem` | [earlyPrimeBlock_le_mass](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrivateV3Input.lean/declarations/earlyprimeblock-le-mass.md) | 70 | `result-track:c711d69eaa6ba1090b6d77a7428195e0c77f685ccb74b06646fe68c942275d9d` |
-| 6 | `theorem` | [earlyPrimeMass_ge](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrivateV3Input.lean/declarations/earlyprimemass-ge.md) | 89 | `result-track:3bddd335a4e7735d9c7822d0bb0878a9f8a83aae2a842913dca8a85e525abfe8` |
-| 7 | `theorem` | [earlyPrimeBlock_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrivateV3Input.lean/declarations/earlyprimeblock-le.md) | 98 | `result-track:80962d8105caa7dad438de7dc180a6901b1eb31f6420ba090d8b5e0b29bb72bf` |
-| 8 | `theorem` | [earlyPrimeBlock_eventual_bound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrivateV3Input.lean/declarations/earlyprimeblock-eventual-bound.md) | 111 | `result-track:dbbf827fe3080ca87a9b7034582a22293ee73a02ea6293a1a43f32ccfb7feaae` |
-| 9 | `theorem` | [primeSum_eq_early_add_complement](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrivateV3Input.lean/declarations/primesum-eq-early-add-complement.md) | 121 | `result-track:fc678c9a1e4f03364846bf69f350f16232cdbf0dfaefff6463da280415fc22ae` |
-| 10 | `theorem` | [complementary_repayment_of_tail](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrivateV3Input.lean/declarations/complementary-repayment-of-tail.md) | 130 | `result-track:0e48499ea5cc5fee9690c3def19c42b5664cdc4e68319f7d13807c967c806756` |
+| 1 | `def` | [earlyPrimeBlock](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrivateV3Input.lean/declarations/earlyprimeblock.md) | 26 | `declaration-track:4736593aac43ab1f8d52214d81fb575cf9f960db231cb87e94f59727a071a536` |
+| 2 | `def` | [complementaryPrimeBlocks](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrivateV3Input.lean/declarations/complementaryprimeblocks.md) | 30 | `declaration-track:79d33e2e9fe089f494ae174d5f1c0fad7dcb910d3ee0723f0d53d7377c111b00` |
+| 3 | `theorem` | [earlyCorrelation_ge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrivateV3Input.lean/declarations/earlycorrelation-ge.md) | 35 | `result-track:601f3a5a623ff064527d392378cf9d4d98b9d72b7ad5ccb11daefbd4c6b19a15` |
+| 4 | `theorem` | [earlyTailTest_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrivateV3Input.lean/declarations/earlytailtest-le.md) | 45 | `result-track:8da2673d8ae36d334cddb6d76caae6e99a18c2758cc78042acffa45ef4a3b71d` |
+| 5 | `theorem` | [earlyPrimeBlock_le_mass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrivateV3Input.lean/declarations/earlyprimeblock-le-mass.md) | 70 | `result-track:c711d69eaa6ba1090b6d77a7428195e0c77f685ccb74b06646fe68c942275d9d` |
+| 6 | `theorem` | [earlyPrimeMass_ge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrivateV3Input.lean/declarations/earlyprimemass-ge.md) | 89 | `result-track:3bddd335a4e7735d9c7822d0bb0878a9f8a83aae2a842913dca8a85e525abfe8` |
+| 7 | `theorem` | [earlyPrimeBlock_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrivateV3Input.lean/declarations/earlyprimeblock-le.md) | 98 | `result-track:80962d8105caa7dad438de7dc180a6901b1eb31f6420ba090d8b5e0b29bb72bf` |
+| 8 | `theorem` | [earlyPrimeBlock_eventual_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrivateV3Input.lean/declarations/earlyprimeblock-eventual-bound.md) | 111 | `result-track:dbbf827fe3080ca87a9b7034582a22293ee73a02ea6293a1a43f32ccfb7feaae` |
+| 9 | `theorem` | [primeSum_eq_early_add_complement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrivateV3Input.lean/declarations/primesum-eq-early-add-complement.md) | 121 | `result-track:fc678c9a1e4f03364846bf69f350f16232cdbf0dfaefff6463da280415fc22ae` |
+| 10 | `theorem` | [complementary_repayment_of_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrivateV3Input.lean/declarations/complementary-repayment-of-tail.md) | 130 | `result-track:0e48499ea5cc5fee9690c3def19c42b5664cdc4e68319f7d13807c967c806756` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

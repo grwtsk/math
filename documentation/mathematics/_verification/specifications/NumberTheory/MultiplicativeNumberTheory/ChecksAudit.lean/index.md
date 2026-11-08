@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/MultiplicativeNumberTheory/ChecksAudit.lean/index.md) · [Full source](../../../../../NumberTheory/MultiplicativeNumberTheory/ChecksAudit.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/ChecksAudit.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/ChecksAudit.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.FirstPrime`](../../../../../NumberTheory/FirstPrime.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.NumberTheory.FirstPrime`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FirstPrime.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../NumberTheory/MultiplicativeNumberTheory/ChecksAudit.lean/declarations/example-source-edition-3.md) | 4 | `declaration-track:85a914d53b3453a77b734bea0e862a3a96e2cd68ecfbc4cb53d501c2558a1ce6` |
-| 2 | `example` | [(anonymous)](../../../../../NumberTheory/MultiplicativeNumberTheory/ChecksAudit.lean/declarations/example.md) | 6 | `declaration-track:36b3befce7507c0668660391f98896f45864a2af27331aa39effdf1e4852c242` |
-| 3 | `example` | [(anonymous)](../../../../../NumberTheory/MultiplicativeNumberTheory/ChecksAudit.lean/declarations/example-source-edition-2.md) | 7 | `declaration-track:54b6e381de9838a928ae73cef863c9b32490e14136a3b46233a9190abd53e371` |
-| 4 | `example` | [(anonymous)](../../../../../NumberTheory/MultiplicativeNumberTheory/ChecksAudit.lean/declarations/example-source-edition-4.md) | 10 | `declaration-track:bdd6b85716594ebebc6852133c52b08f03a7d5591435abdf7c8ecdcfe8d27d31` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/ChecksAudit.lean/declarations/example-source-edition-3.md) | 4 | `declaration-track:85a914d53b3453a77b734bea0e862a3a96e2cd68ecfbc4cb53d501c2558a1ce6` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/ChecksAudit.lean/declarations/example.md) | 6 | `declaration-track:36b3befce7507c0668660391f98896f45864a2af27331aa39effdf1e4852c242` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/ChecksAudit.lean/declarations/example-source-edition-2.md) | 7 | `declaration-track:54b6e381de9838a928ae73cef863c9b32490e14136a3b46233a9190abd53e371` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/ChecksAudit.lean/declarations/example-source-edition-4.md) | 10 | `declaration-track:bdd6b85716594ebebc6852133c52b08f03a7d5591435abdf7c8ecdcfe8d27d31` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StableSphereSite.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StableSphereSite.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StableSphereSite.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StableSphereSite.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [stable_sphere_collapse_has_target](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StableSphereSite.lean/declarations/stable-sphere-collapse-has-target.md) | 20 | `result-track:478b9c73d356fe16ddbc0a28fb9868453a5d80fdfba72626193e90ace9e99b4b` |
-| 2 | `theorem` | [stable_sphere_collapse_torsion_killed](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StableSphereSite.lean/declarations/stable-sphere-collapse-torsion-killed.md) | 25 | `result-track:46cfd2c4b38d158e6b3e548d6e4a345595057a103c78998e8897aacc95763dfc` |
+| 1 | `theorem` | [stable_sphere_collapse_has_target](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StableSphereSite.lean/declarations/stable-sphere-collapse-has-target.md) | 20 | `result-track:478b9c73d356fe16ddbc0a28fb9868453a5d80fdfba72626193e90ace9e99b4b` |
+| 2 | `theorem` | [stable_sphere_collapse_torsion_killed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StableSphereSite.lean/declarations/stable-sphere-collapse-torsion-killed.md) | 25 | `result-track:46cfd2c4b38d158e6b3e548d6e4a345595057a103c78998e8897aacc95763dfc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

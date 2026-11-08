@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/WeightedIntegralContinuity.lean/index.md) · [Full source](../../../../GeneralTopology/WeightedIntegralContinuity.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/WeightedIntegralContinuity.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/WeightedIntegralContinuity.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Moebius.SignedIntegralSectorBounds`](../../../../MeasureAndIntegration/SignedIntegralSectorBounds.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.SignedIntegralSectorBounds`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SignedIntegralSectorBounds.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Topology.Piecewise` — import line 5; external provider; requires a separately pinned dependency.
 - `Mathlib.Topology.Order.Compact` — import line 6; external provider; requires a separately pinned dependency.
 
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [pickup_nonpositive](../../../../GeneralTopology/WeightedIntegralContinuity.lean/declarations/pickup-nonpositive.md) | 27 | `result-track:cc0288e0ee55a6e62a402775b97eb797e39248df7d0884c0ecc2263318eb4137` |
-| 2 | `theorem` | [response_continuous](../../../../GeneralTopology/WeightedIntegralContinuity.lean/declarations/response-continuous.md) | 32 | `result-track:294d3364bf78c7750cfd212ef18bc23864c760284dfeb1c60c164387ee689117` |
-| 3 | `def` | [fixedInventorySignal](../../../../GeneralTopology/WeightedIntegralContinuity.lean/declarations/fixedinventorysignal.md) | 43 | `declaration-track:6d354330edd22b227fcb2bc3619d3bfb89f3ef2bccdb8c53ad03138df01a8ed2` |
-| 4 | `theorem` | [fixed_inventory_signal_continuous](../../../../GeneralTopology/WeightedIntegralContinuity.lean/declarations/fixed-inventory-signal-continuous.md) | 46 | `result-track:0b5de7542d3c8bd7d17a86c69ff734a67ccd7da261b054f4de3f80d226e7c9fb` |
-| 5 | `theorem` | [actual_waveform_on_inventory_all](../../../../GeneralTopology/WeightedIntegralContinuity.lean/declarations/actual-waveform-on-inventory-all.md) | 53 | `result-track:794b7a17b8b6d3da6d50bc4790488032f58700ac8ff0c63c6a57eb65c68fea26` |
-| 6 | `theorem` | [pickup_continuous](../../../../GeneralTopology/WeightedIntegralContinuity.lean/declarations/pickup-continuous.md) | 70 | `result-track:48200d6a0aa7aef492a0b6efa445279836135ae9930c0247556012c6a2cfd116` |
-| 7 | `theorem` | [reset_pickup_continuous](../../../../GeneralTopology/WeightedIntegralContinuity.lean/declarations/reset-pickup-continuous.md) | 83 | `result-track:80b10ccbe09276f1a3007690674c665fd64980d6d26d44feb81269e6ffabeeae` |
-| 8 | `theorem` | [positive_envelope_attained](../../../../GeneralTopology/WeightedIntegralContinuity.lean/declarations/positive-envelope-attained.md) | 88 | `result-track:838a4afa4b8567b01665bb2591cf7cb70322cf5173492fb73eac3269b96a4387` |
+| 1 | `theorem` | [pickup_nonpositive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/WeightedIntegralContinuity.lean/declarations/pickup-nonpositive.md) | 27 | `result-track:cc0288e0ee55a6e62a402775b97eb797e39248df7d0884c0ecc2263318eb4137` |
+| 2 | `theorem` | [response_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/WeightedIntegralContinuity.lean/declarations/response-continuous.md) | 32 | `result-track:294d3364bf78c7750cfd212ef18bc23864c760284dfeb1c60c164387ee689117` |
+| 3 | `def` | [fixedInventorySignal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/WeightedIntegralContinuity.lean/declarations/fixedinventorysignal.md) | 43 | `declaration-track:6d354330edd22b227fcb2bc3619d3bfb89f3ef2bccdb8c53ad03138df01a8ed2` |
+| 4 | `theorem` | [fixed_inventory_signal_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/WeightedIntegralContinuity.lean/declarations/fixed-inventory-signal-continuous.md) | 46 | `result-track:0b5de7542d3c8bd7d17a86c69ff734a67ccd7da261b054f4de3f80d226e7c9fb` |
+| 5 | `theorem` | [actual_waveform_on_inventory_all](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/WeightedIntegralContinuity.lean/declarations/actual-waveform-on-inventory-all.md) | 53 | `result-track:794b7a17b8b6d3da6d50bc4790488032f58700ac8ff0c63c6a57eb65c68fea26` |
+| 6 | `theorem` | [pickup_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/WeightedIntegralContinuity.lean/declarations/pickup-continuous.md) | 70 | `result-track:48200d6a0aa7aef492a0b6efa445279836135ae9930c0247556012c6a2cfd116` |
+| 7 | `theorem` | [reset_pickup_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/WeightedIntegralContinuity.lean/declarations/reset-pickup-continuous.md) | 83 | `result-track:80b10ccbe09276f1a3007690674c665fd64980d6d26d44feb81269e6ffabeeae` |
+| 8 | `theorem` | [positive_envelope_attained](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/WeightedIntegralContinuity.lean/declarations/positive-envelope-attained.md) | 88 | `result-track:838a4afa4b8567b01665bb2591cf7cb70322cf5173492fb73eac3269b96a4387` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

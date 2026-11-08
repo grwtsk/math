@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceRemainderLaplaceAttempt03Namespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceRemainderLaplaceAttempt03Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceRemainderLaplaceAttempt03Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceRemainderLaplaceAttempt03Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualRemainder](../../../../MeasureAndIntegration/SourceRemainderLaplaceAttempt03Namespaced.lean/declarations/actualremainder.md) | 21 | `declaration-track:aff7f297303620a55eac20da5dd878a13d6e21a00300acd77b51bf83ff6a6b51` |
-| 2 | `def` | [actualLaplace](../../../../MeasureAndIntegration/SourceRemainderLaplaceAttempt03Namespaced.lean/declarations/actuallaplace.md) | 24 | `declaration-track:10c98e78afd3f62daabe47c719a4df61f24262acfbe8bef20f8728a22805b34b` |
-| 3 | `theorem` | [laplaceWeight_abs_le_one](../../../../MeasureAndIntegration/SourceRemainderLaplaceAttempt03Namespaced.lean/declarations/laplaceweight-abs-le-one.md) | 27 | `result-track:6ab3f2ac02a839077682bbd487e33c75b23a5a16ce241fcb856b066bdaef93f7` |
-| 4 | `theorem` | [actual_weighted_remainder_integrable](../../../../MeasureAndIntegration/SourceRemainderLaplaceAttempt03Namespaced.lean/declarations/actual-weighted-remainder-integrable.md) | 33 | `result-track:4f6d5e4d776804d6a67d82dffa5df086da43868c4b42a9e099884a25672b6270` |
-| 5 | `theorem` | [actual_laplace_tendsto_right](../../../../MeasureAndIntegration/SourceRemainderLaplaceAttempt03Namespaced.lean/declarations/actual-laplace-tendsto-right.md) | 41 | `result-track:1b71da4c17a364624fc1a125371500052cc58f9c12c4c6f380558bfcf4b39022` |
+| 1 | `def` | [actualRemainder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceRemainderLaplaceAttempt03Namespaced.lean/declarations/actualremainder.md) | 21 | `declaration-track:aff7f297303620a55eac20da5dd878a13d6e21a00300acd77b51bf83ff6a6b51` |
+| 2 | `def` | [actualLaplace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceRemainderLaplaceAttempt03Namespaced.lean/declarations/actuallaplace.md) | 24 | `declaration-track:10c98e78afd3f62daabe47c719a4df61f24262acfbe8bef20f8728a22805b34b` |
+| 3 | `theorem` | [laplaceWeight_abs_le_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceRemainderLaplaceAttempt03Namespaced.lean/declarations/laplaceweight-abs-le-one.md) | 27 | `result-track:6ab3f2ac02a839077682bbd487e33c75b23a5a16ce241fcb856b066bdaef93f7` |
+| 4 | `theorem` | [actual_weighted_remainder_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceRemainderLaplaceAttempt03Namespaced.lean/declarations/actual-weighted-remainder-integrable.md) | 33 | `result-track:4f6d5e4d776804d6a67d82dffa5df086da43868c4b42a9e099884a25672b6270` |
+| 5 | `theorem` | [actual_laplace_tendsto_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceRemainderLaplaceAttempt03Namespaced.lean/declarations/actual-laplace-tendsto-right.md) | 41 | `result-track:1b71da4c17a364624fc1a125371500052cc58f9c12c4c6f380558bfcf4b39022` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

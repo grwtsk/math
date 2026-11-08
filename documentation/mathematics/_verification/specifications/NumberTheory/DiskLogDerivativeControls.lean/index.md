@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/DiskLogDerivativeControls.lean/index.md) · [Full source](../../../../NumberTheory/DiskLogDerivativeControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiskLogDerivativeControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiskLogDerivativeControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.JensenDiskLogDerivative`](../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/JensenDiskLogDerivative.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.JensenDiskLogDerivative`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/JensenDiskLogDerivative.lean/index.md) — import line 3; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,16 +57,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [normalized_boundary_value](../../../../NumberTheory/DiskLogDerivativeControls.lean/declarations/normalized-boundary-value.md) | 15 | `result-track:2e2db0edd03bc58fff2bd823e2d98e5a2b9785039487d3caa1aa56b67acdf085` |
-| 2 | `theorem` | [normalized_center_value](../../../../NumberTheory/DiskLogDerivativeControls.lean/declarations/normalized-center-value.md) | 18 | `result-track:44a05863fab68eced51ea2fa0d6f898c4e8a5d70aaedeaaebd10e4327b79ac93` |
-| 3 | `theorem` | [removed_point_value](../../../../NumberTheory/DiskLogDerivativeControls.lean/declarations/removed-point-value.md) | 21 | `result-track:d2e1ba19292b43e7b8f553631806e23e37faf498b519aa283d82d2f63c3a9bb9` |
-| 4 | `theorem` | [at_zero_logDeriv_is_totalized](../../../../NumberTheory/DiskLogDerivativeControls.lean/declarations/at-zero-logderiv-is-totalized.md) | 25 | `result-track:5fa89e70ea7909fb6b8789109c20e8c8b01a541d51b4a73f1bf8444a6aed1d38` |
-| 5 | `theorem` | [regular_term_is_not_zero](../../../../NumberTheory/DiskLogDerivativeControls.lean/declarations/regular-term-is-not-zero.md) | 29 | `result-track:20f3d3d91ef0c867dcbc2d585ba9aaf6f7a8dca1a709d48f182e9a2400a915c6` |
-| 6 | `theorem` | [double_factor_counts_twice](../../../../NumberTheory/DiskLogDerivativeControls.lean/declarations/double-factor-counts-twice.md) | 34 | `result-track:93ccbc995aa911842630983d293b0645527b7d9cd02e419ec6e672b929d51ae8` |
-| 7 | `theorem` | [zero_free_factor_changes_derivative](../../../../NumberTheory/DiskLogDerivativeControls.lean/declarations/zero-free-factor-changes-derivative.md) | 41 | `result-track:70bcfafcadd8c80567691abe308d6f6d53eb09bcbfc0b390defc484035d357e0` |
-| 8 | `theorem` | [boundary_root_not_unit](../../../../NumberTheory/DiskLogDerivativeControls.lean/declarations/boundary-root-not-unit.md) | 48 | `result-track:118ca68d7f455443181e8d9707e731d5ea6d29220286ab6e6d863b9be9f65635` |
-| 9 | `theorem` | [disk_ratio_is_not_band_ratio](../../../../NumberTheory/DiskLogDerivativeControls.lean/declarations/disk-ratio-is-not-band-ratio.md) | 52 | `result-track:368fd93edd1c087f52825ddbe2e1ef7fb611a2eb1212fec989936e4df3085c07` |
-| 10 | `theorem` | [left_strip_outside_core](../../../../NumberTheory/DiskLogDerivativeControls.lean/declarations/left-strip-outside-core.md) | 55 | `result-track:c83800030b4641e3306fda456c2e2d9403da1177dc21c0e7c5c76197bd983cc6` |
+| 1 | `theorem` | [normalized_boundary_value](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiskLogDerivativeControls.lean/declarations/normalized-boundary-value.md) | 15 | `result-track:2e2db0edd03bc58fff2bd823e2d98e5a2b9785039487d3caa1aa56b67acdf085` |
+| 2 | `theorem` | [normalized_center_value](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiskLogDerivativeControls.lean/declarations/normalized-center-value.md) | 18 | `result-track:44a05863fab68eced51ea2fa0d6f898c4e8a5d70aaedeaaebd10e4327b79ac93` |
+| 3 | `theorem` | [removed_point_value](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiskLogDerivativeControls.lean/declarations/removed-point-value.md) | 21 | `result-track:d2e1ba19292b43e7b8f553631806e23e37faf498b519aa283d82d2f63c3a9bb9` |
+| 4 | `theorem` | [at_zero_logDeriv_is_totalized](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiskLogDerivativeControls.lean/declarations/at-zero-logderiv-is-totalized.md) | 25 | `result-track:5fa89e70ea7909fb6b8789109c20e8c8b01a541d51b4a73f1bf8444a6aed1d38` |
+| 5 | `theorem` | [regular_term_is_not_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiskLogDerivativeControls.lean/declarations/regular-term-is-not-zero.md) | 29 | `result-track:20f3d3d91ef0c867dcbc2d585ba9aaf6f7a8dca1a709d48f182e9a2400a915c6` |
+| 6 | `theorem` | [double_factor_counts_twice](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiskLogDerivativeControls.lean/declarations/double-factor-counts-twice.md) | 34 | `result-track:93ccbc995aa911842630983d293b0645527b7d9cd02e419ec6e672b929d51ae8` |
+| 7 | `theorem` | [zero_free_factor_changes_derivative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiskLogDerivativeControls.lean/declarations/zero-free-factor-changes-derivative.md) | 41 | `result-track:70bcfafcadd8c80567691abe308d6f6d53eb09bcbfc0b390defc484035d357e0` |
+| 8 | `theorem` | [boundary_root_not_unit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiskLogDerivativeControls.lean/declarations/boundary-root-not-unit.md) | 48 | `result-track:118ca68d7f455443181e8d9707e731d5ea6d29220286ab6e6d863b9be9f65635` |
+| 9 | `theorem` | [disk_ratio_is_not_band_ratio](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiskLogDerivativeControls.lean/declarations/disk-ratio-is-not-band-ratio.md) | 52 | `result-track:368fd93edd1c087f52825ddbe2e1ef7fb611a2eb1212fec989936e4df3085c07` |
+| 10 | `theorem` | [left_strip_outside_core](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiskLogDerivativeControls.lean/declarations/left-strip-outside-core.md) | 55 | `result-track:c83800030b4641e3306fda456c2e2d9403da1177dc21c0e7c5c76197bd983cc6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

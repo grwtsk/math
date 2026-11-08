@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/PolishTree.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/PolishTree.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PolishTree.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PolishTree.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [Prefix.LukasiewiczSymbol](../../../../../ComputerScience/AlgorithmsInComputerScience/PolishTree.lean/declarations/prefix-lukasiewiczsymbol.md) | 12 | `declaration-track:3abedb4e1127b2a490a560153b9561bf44dc2a71c21ec5ad674324d0b5424afd` |
-| 2 | `def` | [Prefix.LukasiewiczSymbol.arity](../../../../../ComputerScience/AlgorithmsInComputerScience/PolishTree.lean/declarations/prefix-lukasiewiczsymbol-arity.md) | 22 | `declaration-track:48f354b69e637099eaa072e02776b55c9ec4f035cba14a8308ee1a36371e5d8b` |
-| 3 | `def` | [Prefix.LukasiewiczSymbol.code](../../../../../ComputerScience/AlgorithmsInComputerScience/PolishTree.lean/declarations/prefix-lukasiewiczsymbol-code.md) | 31 | `declaration-track:e6f15be6a601c95fd30598d7f3c2c580b026679f2a98baa0751d63614aeb3f4f` |
-| 4 | `def` | [Prefix.LukasiewiczSymbol.meaning](../../../../../ComputerScience/AlgorithmsInComputerScience/PolishTree.lean/declarations/prefix-lukasiewiczsymbol-meaning.md) | 40 | `declaration-track:2d4be8c0f1e60513c6993ce64d763ec04bcc7198487d0859b091570a8b7e5197` |
-| 5 | `def` | [Prefix.LukasiewiczSymbol.symbolMap](../../../../../ComputerScience/AlgorithmsInComputerScience/PolishTree.lean/declarations/prefix-lukasiewiczsymbol-symbolmap.md) | 49 | `declaration-track:56dade984e4b085559fc3b9effd7f0cba1f07bd3295c9338c51525f70d4d451e` |
-| 6 | `inductive` | [Prefix.StrictToken](../../../../../ComputerScience/AlgorithmsInComputerScience/PolishTree.lean/declarations/prefix-stricttoken.md) | 65 | `declaration-track:02b881d32306688af3a6ba466069a2300bbef4421d9b2c6633ed968080fcb41e` |
-| 7 | `def` | [Tree.toStrictPolish](../../../../../ComputerScience/AlgorithmsInComputerScience/PolishTree.lean/declarations/tree-tostrictpolish.md) | 77 | `declaration-track:f53a2e2012dae7a9a017c645c7f933a9b6430f702cd0e0e9996fb19ae6afa399` |
-| 8 | `def` | [Tree.parseStrictPolishFuel](../../../../../ComputerScience/AlgorithmsInComputerScience/PolishTree.lean/declarations/tree-parsestrictpolishfuel.md) | 99 | `declaration-track:3c2acf19cc7465684b7724326688af281aa75c9f88d2d9b5b1a39bd3b5cde8d9` |
-| 9 | `def` | [Tree.fromStrictPolish?](../../../../../ComputerScience/AlgorithmsInComputerScience/PolishTree.lean/declarations/tree-fromstrictpolish.md) | 137 | `declaration-track:a3f6f2d088e1638afb633bfb1f4b0f83f5670b64b95069a12b1f502dc30cb041` |
+| 1 | `inductive` | [Prefix.LukasiewiczSymbol](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PolishTree.lean/declarations/prefix-lukasiewiczsymbol.md) | 12 | `declaration-track:3abedb4e1127b2a490a560153b9561bf44dc2a71c21ec5ad674324d0b5424afd` |
+| 2 | `def` | [Prefix.LukasiewiczSymbol.arity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PolishTree.lean/declarations/prefix-lukasiewiczsymbol-arity.md) | 22 | `declaration-track:48f354b69e637099eaa072e02776b55c9ec4f035cba14a8308ee1a36371e5d8b` |
+| 3 | `def` | [Prefix.LukasiewiczSymbol.code](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PolishTree.lean/declarations/prefix-lukasiewiczsymbol-code.md) | 31 | `declaration-track:e6f15be6a601c95fd30598d7f3c2c580b026679f2a98baa0751d63614aeb3f4f` |
+| 4 | `def` | [Prefix.LukasiewiczSymbol.meaning](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PolishTree.lean/declarations/prefix-lukasiewiczsymbol-meaning.md) | 40 | `declaration-track:2d4be8c0f1e60513c6993ce64d763ec04bcc7198487d0859b091570a8b7e5197` |
+| 5 | `def` | [Prefix.LukasiewiczSymbol.symbolMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PolishTree.lean/declarations/prefix-lukasiewiczsymbol-symbolmap.md) | 49 | `declaration-track:56dade984e4b085559fc3b9effd7f0cba1f07bd3295c9338c51525f70d4d451e` |
+| 6 | `inductive` | [Prefix.StrictToken](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PolishTree.lean/declarations/prefix-stricttoken.md) | 65 | `declaration-track:02b881d32306688af3a6ba466069a2300bbef4421d9b2c6633ed968080fcb41e` |
+| 7 | `def` | [Tree.toStrictPolish](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PolishTree.lean/declarations/tree-tostrictpolish.md) | 77 | `declaration-track:f53a2e2012dae7a9a017c645c7f933a9b6430f702cd0e0e9996fb19ae6afa399` |
+| 8 | `def` | [Tree.parseStrictPolishFuel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PolishTree.lean/declarations/tree-parsestrictpolishfuel.md) | 99 | `declaration-track:3c2acf19cc7465684b7724326688af281aa75c9f88d2d9b5b1a39bd3b5cde8d9` |
+| 9 | `def` | [Tree.fromStrictPolish?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PolishTree.lean/declarations/tree-fromstrictpolish.md) | 137 | `declaration-track:a3f6f2d088e1638afb633bfb1f4b0f83f5670b64b95069a12b1f502dc30cb041` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

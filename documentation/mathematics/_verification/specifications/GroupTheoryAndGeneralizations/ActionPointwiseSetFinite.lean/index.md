@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/ActionPointwiseSetFinite.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/ActionPointwiseSetFinite.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ActionPointwiseSetFinite.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ActionPointwiseSetFinite.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [finite_smul_set](../../../../GroupTheoryAndGeneralizations/ActionPointwiseSetFinite.lean/declarations/finite-smul-set.md) | 18 | `result-track:d8fbd05ac4d72a1fb7c27a5bb1a3f063c6e09c847b1fda4d89727abe57488147` |
-| 2 | `lemma` | [infinite_smul_set](../../../../GroupTheoryAndGeneralizations/ActionPointwiseSetFinite.lean/declarations/infinite-smul-set.md) | 21 | `result-track:54c409ec4413792565f3fe7c2b16ebb9492f393bcc07394f8516c79e787779fd` |
+| 1 | `lemma` | [finite_smul_set](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ActionPointwiseSetFinite.lean/declarations/finite-smul-set.md) | 18 | `result-track:d8fbd05ac4d72a1fb7c27a5bb1a3f063c6e09c847b1fda4d89727abe57488147` |
+| 2 | `lemma` | [infinite_smul_set](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ActionPointwiseSetFinite.lean/declarations/infinite-smul-set.md) | 21 | `result-track:54c409ec4413792565f3fe7c2b16ebb9492f393bcc07394f8516c79e787779fd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../IntegralTransformsOperationalCalculus/ScaledGaussianMissingDomain.lean/index.md) · [Full source](../../../../IntegralTransformsOperationalCalculus/ScaledGaussianMissingDomain.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/ScaledGaussianMissingDomain.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/ScaledGaussianMissingDomain.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.MellinTransform.Checks.Positive.ScaledGaussianDerivatives`](../../../../IntegralTransformsOperationalCalculus/PositiveScaledGaussianDerivatives.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.Analysis.MellinTransform.Checks.Positive.ScaledGaussianDerivatives`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/PositiveScaledGaussianDerivatives.lean/index.md) — import line 2; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../IntegralTransformsOperationalCalculus/ScaledGaussianMissingDomain.lean/declarations/example.md) | 8 | `declaration-track:e2e5de5fd1de63f87bdab5a45e8094ec0ee0e8d43e73335136a078890a905bad` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/ScaledGaussianMissingDomain.lean/declarations/example.md) | 8 | `declaration-track:e2e5de5fd1de63f87bdab5a45e8094ec0ee0e8d43e73335136a078890a905bad` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

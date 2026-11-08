@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RankedSection.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RankedSection.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RankedSection.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RankedSection.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `Folder.CrystallineTensor.IntegrableConnection` — import line 23; external provider; requires a separately pinned dependency.
-- [Rank Annotation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RankAnnotation.lean/index.md) — import line 25; pinned internal source present.
+- [Rank Annotation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RankAnnotation.lean/index.md) — import line 25; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TensorSection](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RankedSection.lean/declarations/tensorsection.md) | 44 | `declaration-track:c614a93eef26114575a314395bf40513f86646a8b3b364c9f44d188c1731cc6c` |
-| 2 | `def` | [TensorSection.HasRank](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RankedSection.lean/declarations/tensorsection-hasrank.md) | 53 | `declaration-track:7d3a0491ea62b9f2ef82ab5468bc03d746443f645eae53663a229964ba40de25` |
-| 3 | `theorem` | [tensor_section_has_some_rank](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RankedSection.lean/declarations/tensor-section-has-some-rank.md) | 61 | `result-track:2de8434a0742e7700b8e5fd70f7d5278ae58ce85384a733e8a610f994ea043d3` |
+| 1 | `structure` | [TensorSection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RankedSection.lean/declarations/tensorsection.md) | 44 | `declaration-track:c614a93eef26114575a314395bf40513f86646a8b3b364c9f44d188c1731cc6c` |
+| 2 | `def` | [TensorSection.HasRank](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RankedSection.lean/declarations/tensorsection-hasrank.md) | 53 | `declaration-track:7d3a0491ea62b9f2ef82ab5468bc03d746443f645eae53663a229964ba40de25` |
+| 3 | `theorem` | [tensor_section_has_some_rank](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RankedSection.lean/declarations/tensor-section-has-some-rank.md) | 61 | `result-track:2de8434a0742e7700b8e5fd70f7d5278ae58ce85384a733e8a610f994ea043d3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

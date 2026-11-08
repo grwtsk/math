@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/InternalizeNamespacedPublicIsParentSameOpApp.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/InternalizeNamespacedPublicIsParentSameOpApp.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/InternalizeNamespacedPublicIsParentSameOpApp.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/InternalizeNamespacedPublicIsParentSameOpApp.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [isParentSameOpApp](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/InternalizeNamespacedPublicIsParentSameOpApp.lean/declarations/isparentsameopapp.md) | 21 | `declaration-track:dbef456a8761c1cb2ac25db39c9ef444c1d1776f48a98ea736dadea165d66e3f` |
-| 2 | `def` | [reify](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/InternalizeNamespacedPublicIsParentSameOpApp.lean/declarations/reify.md) | 26 | `declaration-track:de4495edc4f53f6283b673500346def559539ec96b3074076dbee29479cdf0f9` |
-| 3 | `def` | [internalize](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/InternalizeNamespacedPublicIsParentSameOpApp.lean/declarations/internalize.md) | 32 | `declaration-track:046fe68346d4514015ea3e3f4ccbdd00defe62de53bd90d61d1e0f528ca1fa62` |
+| 1 | `def` | [isParentSameOpApp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/InternalizeNamespacedPublicIsParentSameOpApp.lean/declarations/isparentsameopapp.md) | 21 | `declaration-track:dbef456a8761c1cb2ac25db39c9ef444c1d1776f48a98ea736dadea165d66e3f` |
+| 2 | `def` | [reify](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/InternalizeNamespacedPublicIsParentSameOpApp.lean/declarations/reify.md) | 26 | `declaration-track:de4495edc4f53f6283b673500346def559539ec96b3074076dbee29479cdf0f9` |
+| 3 | `def` | [internalize](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/InternalizeNamespacedPublicIsParentSameOpApp.lean/declarations/internalize.md) | 32 | `declaration-track:046fe68346d4514015ea3e3f4ccbdd00defe62de53bd90d61d1e0f528ca1fa62` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

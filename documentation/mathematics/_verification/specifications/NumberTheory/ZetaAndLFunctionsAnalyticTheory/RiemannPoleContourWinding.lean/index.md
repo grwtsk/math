@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannPoleContourWinding.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannPoleContourWinding.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannPoleContourWinding.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannPoleContourWinding.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.ExponentialLoopIndex`](../../../../../FunctionsOfAComplexVariable/ExponentialLoopIndex.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.PoleContourHomotopy`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannPoleContourHomotopy.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.ExponentialLoopIndex`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ExponentialLoopIndex.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.PoleContourHomotopy`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannPoleContourHomotopy.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,18 +58,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [sourceLift](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannPoleContourWinding.lean/declarations/sourcelift.md) | 29 | `declaration-track:ded23e5ccfe3f4dcfe1402fc846783a44de0cbc974a55010a2d36fdf19b0cb9e` |
-| 2 | `def` | [imageLift](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannPoleContourWinding.lean/declarations/imagelift.md) | 37 | `declaration-track:620fa5b81f9fd53b18c8df2fe1b17a329a5a280352ab024eef60250a21268a0b` |
-| 3 | `theorem` | [source_value](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannPoleContourWinding.lean/declarations/source-value.md) | 45 | `result-track:1bdc0bbd1b90b388217ecfb91784c792df9005c66d1312a204550e0b041bd7aa` |
-| 4 | `theorem` | [image_value](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannPoleContourWinding.lean/declarations/image-value.md) | 49 | `result-track:3889f5f57840bdc8f51ae221bc9a28fef9bbc032baea498f580b05554b1e436a` |
-| 5 | `theorem` | [source_closed](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannPoleContourWinding.lean/declarations/source-closed.md) | 53 | `result-track:2874b9b3ad1122820e4bffcc0033cb413500669f21228f853c1585409a56a0f3` |
-| 6 | `theorem` | [image_closed](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannPoleContourWinding.lean/declarations/image-closed.md) | 62 | `result-track:6b2d351b9f050593d936af582b00a6465c231a34e4a27f661bfffc951dae63b8` |
-| 7 | `def` | [sourceIndex](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannPoleContourWinding.lean/declarations/sourceindex.md) | 71 | `declaration-track:124ccb4987c32075b34394cd11d537ed7f0975707e8c185ca261f62c2553ae4c` |
-| 8 | `def` | [imageIndex](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannPoleContourWinding.lean/declarations/imageindex.md) | 76 | `declaration-track:8249d2c20801ace7d094771ea772b1bcb3af0b5b90d9f559a3ad02c18985e78d` |
-| 9 | `theorem` | [sourceIndex_eq_imageIndex](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannPoleContourWinding.lean/declarations/sourceindex-eq-imageindex.md) | 82 | `result-track:f2e9cd5d2ff1b090eb25ca0f4ce29397e0ce5a486496905e6cf8cc423e49ef89` |
-| 10 | `theorem` | [sourceIndex_eq_of_image](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannPoleContourWinding.lean/declarations/sourceindex-eq-of-image.md) | 90 | `result-track:32f1bd9330d467540095888d3a72e160630646bd4a3a13cecb5c406eb8d06194` |
-| 11 | `theorem` | [imageIndex_zero_of_constant](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannPoleContourWinding.lean/declarations/imageindex-zero-of-constant.md) | 96 | `result-track:680fdf9f8b3ec215753ac485271fa016d2f4f14326f3f7579a3dd74c538220c9` |
-| 12 | `theorem` | [sourceIndex_zero_of_constant](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannPoleContourWinding.lean/declarations/sourceindex-zero-of-constant.md) | 107 | `result-track:21f37357aefdcf0f71493034b270d610e86f3f65bb0e05be5912526fc0055912` |
+| 1 | `def` | [sourceLift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannPoleContourWinding.lean/declarations/sourcelift.md) | 29 | `declaration-track:ded23e5ccfe3f4dcfe1402fc846783a44de0cbc974a55010a2d36fdf19b0cb9e` |
+| 2 | `def` | [imageLift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannPoleContourWinding.lean/declarations/imagelift.md) | 37 | `declaration-track:620fa5b81f9fd53b18c8df2fe1b17a329a5a280352ab024eef60250a21268a0b` |
+| 3 | `theorem` | [source_value](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannPoleContourWinding.lean/declarations/source-value.md) | 45 | `result-track:1bdc0bbd1b90b388217ecfb91784c792df9005c66d1312a204550e0b041bd7aa` |
+| 4 | `theorem` | [image_value](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannPoleContourWinding.lean/declarations/image-value.md) | 49 | `result-track:3889f5f57840bdc8f51ae221bc9a28fef9bbc032baea498f580b05554b1e436a` |
+| 5 | `theorem` | [source_closed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannPoleContourWinding.lean/declarations/source-closed.md) | 53 | `result-track:2874b9b3ad1122820e4bffcc0033cb413500669f21228f853c1585409a56a0f3` |
+| 6 | `theorem` | [image_closed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannPoleContourWinding.lean/declarations/image-closed.md) | 62 | `result-track:6b2d351b9f050593d936af582b00a6465c231a34e4a27f661bfffc951dae63b8` |
+| 7 | `def` | [sourceIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannPoleContourWinding.lean/declarations/sourceindex.md) | 71 | `declaration-track:124ccb4987c32075b34394cd11d537ed7f0975707e8c185ca261f62c2553ae4c` |
+| 8 | `def` | [imageIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannPoleContourWinding.lean/declarations/imageindex.md) | 76 | `declaration-track:8249d2c20801ace7d094771ea772b1bcb3af0b5b90d9f559a3ad02c18985e78d` |
+| 9 | `theorem` | [sourceIndex_eq_imageIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannPoleContourWinding.lean/declarations/sourceindex-eq-imageindex.md) | 82 | `result-track:f2e9cd5d2ff1b090eb25ca0f4ce29397e0ce5a486496905e6cf8cc423e49ef89` |
+| 10 | `theorem` | [sourceIndex_eq_of_image](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannPoleContourWinding.lean/declarations/sourceindex-eq-of-image.md) | 90 | `result-track:32f1bd9330d467540095888d3a72e160630646bd4a3a13cecb5c406eb8d06194` |
+| 11 | `theorem` | [imageIndex_zero_of_constant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannPoleContourWinding.lean/declarations/imageindex-zero-of-constant.md) | 96 | `result-track:680fdf9f8b3ec215753ac485271fa016d2f4f14326f3f7579a3dd74c538220c9` |
+| 12 | `theorem` | [sourceIndex_zero_of_constant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannPoleContourWinding.lean/declarations/sourceindex-zero-of-constant.md) | 107 | `result-track:21f37357aefdcf0f71493034b270d610e86f3f65bb0e05be5912526fc0055912` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

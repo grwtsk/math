@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProofsNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProofsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProofsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProofsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [spectralAverage_correct](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProofsNamespaced.lean/declarations/spectralaverage-correct-source-edition-2.md) | 16 | `result-track:efa99695b07539bd285d7c79b4102cecb0dc0be097e0872964267ef48735898f` |
-| 2 | `theorem` | [spectralAverage_correct](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProofsNamespaced.lean/declarations/spectralaverage-correct.md) | 29 | `result-track:b942156c438c74fd4c8f6093cff7a1ed075b84d6071fed39b759f29c76b1880b` |
+| 1 | `theorem` | [spectralAverage_correct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProofsNamespaced.lean/declarations/spectralaverage-correct-source-edition-2.md) | 16 | `result-track:efa99695b07539bd285d7c79b4102cecb0dc0be097e0872964267ef48735898f` |
+| 2 | `theorem` | [spectralAverage_correct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProofsNamespaced.lean/declarations/spectralaverage-correct.md) | 29 | `result-track:b942156c438c74fd4c8f6093cff7a1ed075b84d6071fed39b759f29c76b1880b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

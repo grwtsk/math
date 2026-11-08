@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ResolutionNamespacedResolutionBits.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ResolutionNamespacedResolutionBits.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ResolutionNamespacedResolutionBits.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ResolutionNamespacedResolutionBits.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ResolutionBits](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ResolutionNamespacedResolutionBits.lean/declarations/resolutionbits.md) | 21 | `declaration-track:dfa033773add762ca87494a9526170ca312755f9d9016a3ad73f1d2c5b8a068b` |
-| 2 | `instance` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ResolutionNamespacedResolutionBits.lean/declarations/instance.md) | 26 | `declaration-track:46c0966ca64afbd706947e0db5c13fae48fe3f36d4525981ddbd5b8150b00cf0` |
-| 3 | `theorem` | [ResolutionBits.value_pos](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ResolutionNamespacedResolutionBits.lean/declarations/resolutionbits-value-pos.md) | 34 | `result-track:baf01da1db9a6cc3c07e2c54647df8634cb3f4dfcfa8fdfa59a439af8ce8df97` |
+| 1 | `structure` | [ResolutionBits](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ResolutionNamespacedResolutionBits.lean/declarations/resolutionbits.md) | 21 | `declaration-track:dfa033773add762ca87494a9526170ca312755f9d9016a3ad73f1d2c5b8a068b` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ResolutionNamespacedResolutionBits.lean/declarations/instance.md) | 26 | `declaration-track:46c0966ca64afbd706947e0db5c13fae48fe3f36d4525981ddbd5b8150b00cf0` |
+| 3 | `theorem` | [ResolutionBits.value_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ResolutionNamespacedResolutionBits.lean/declarations/resolutionbits-value-pos.md) | 34 | `result-track:baf01da1db9a6cc3c07e2c54647df8634cb3f4dfcfa8fdfa59a439af8ce8df97` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

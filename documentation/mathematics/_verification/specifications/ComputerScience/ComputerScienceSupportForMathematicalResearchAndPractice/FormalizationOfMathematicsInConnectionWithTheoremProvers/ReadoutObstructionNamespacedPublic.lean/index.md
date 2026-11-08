@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ReadoutObstructionNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ReadoutObstructionNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ReadoutObstructionNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ReadoutObstructionNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [boundedReadout_forces_coefficientEnergy](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ReadoutObstructionNamespacedPublic.lean/declarations/boundedreadout-forces-coefficientenergy.md) | 40 | `result-track:7413ac10adb2b38ee97fa7f51c3d4cd9e381fc75269df09ec2ef968fd791b24a` |
-| 2 | `theorem` | [unitReadout_forces_cardinality](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ReadoutObstructionNamespacedPublic.lean/declarations/unitreadout-forces-cardinality.md) | 54 | `result-track:10d3c2d2c9670f234a39e5cbc4ae993ab97e4a0cd2a378aa5136fe95e35782ec` |
-| 3 | `theorem` | [gramNorm_lowerBound_of_unitReadout](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ReadoutObstructionNamespacedPublic.lean/declarations/gramnorm-lowerbound-of-unitreadout.md) | 67 | `result-track:80629ac32da3238b0c738f4388f5c6c758ad01334939393696b3b1dd154f7a17` |
+| 1 | `theorem` | [boundedReadout_forces_coefficientEnergy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ReadoutObstructionNamespacedPublic.lean/declarations/boundedreadout-forces-coefficientenergy.md) | 40 | `result-track:7413ac10adb2b38ee97fa7f51c3d4cd9e381fc75269df09ec2ef968fd791b24a` |
+| 2 | `theorem` | [unitReadout_forces_cardinality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ReadoutObstructionNamespacedPublic.lean/declarations/unitreadout-forces-cardinality.md) | 54 | `result-track:10d3c2d2c9670f234a39e5cbc4ae993ab97e4a0cd2a378aa5136fe95e35782ec` |
+| 3 | `theorem` | [gramNorm_lowerBound_of_unitReadout](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ReadoutObstructionNamespacedPublic.lean/declarations/gramnorm-lowerbound-of-unitreadout.md) | 67 | `result-track:80629ac32da3238b0c738f4388f5c6c758ad01334939393696b3b1dd154f7a17` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

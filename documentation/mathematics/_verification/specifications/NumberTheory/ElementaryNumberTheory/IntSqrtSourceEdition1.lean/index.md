@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/IntSqrtSourceEdition1.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/IntSqrtSourceEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/IntSqrtSourceEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/IntSqrtSourceEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [sqrt](../../../../../NumberTheory/ElementaryNumberTheory/IntSqrtSourceEdition1.lean/declarations/sqrt.md) | 23 | `declaration-track:bfeed036d0999992211bbf641307c97c5df579f5539fdc153d539e2641b08fee` |
-| 2 | `theorem` | [sqrt_eq](../../../../../NumberTheory/ElementaryNumberTheory/IntSqrtSourceEdition1.lean/declarations/sqrt-eq.md) | 26 | `result-track:60b606948400f01984020d93d1a02232f2a4fd4e37caa72bffc51365e3bd97d2` |
-| 3 | `theorem` | [exists_mul_self](../../../../../NumberTheory/ElementaryNumberTheory/IntSqrtSourceEdition1.lean/declarations/exists-mul-self.md) | 29 | `result-track:0eec486116c1a31bbdd30957d3c987ad957c7ea6167b242ab32d75aad570e651` |
-| 4 | `theorem` | [sqrt_nonneg](../../../../../NumberTheory/ElementaryNumberTheory/IntSqrtSourceEdition1.lean/declarations/sqrt-nonneg.md) | 32 | `result-track:8bc6404c9c9e232bf40c213ec5fc9f445b05faa62ff86dea1490b106a4cc0848` |
-| 5 | `theorem` | [sqrt_natCast](../../../../../NumberTheory/ElementaryNumberTheory/IntSqrtSourceEdition1.lean/declarations/sqrt-natcast.md) | 36 | `result-track:685da11c1941f6423bc87e3f7a726634829c108e9b2097166f109d31f361ef55` |
-| 6 | `theorem` | [sqrt_ofNat](../../../../../NumberTheory/ElementaryNumberTheory/IntSqrtSourceEdition1.lean/declarations/sqrt-ofnat.md) | 39 | `result-track:d52b5a7a603aa402fa96c7b7d329b314d0924e5d1dbf60f722222d3ecfb09197` |
+| 1 | `def` | [sqrt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/IntSqrtSourceEdition1.lean/declarations/sqrt.md) | 23 | `declaration-track:bfeed036d0999992211bbf641307c97c5df579f5539fdc153d539e2641b08fee` |
+| 2 | `theorem` | [sqrt_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/IntSqrtSourceEdition1.lean/declarations/sqrt-eq.md) | 26 | `result-track:60b606948400f01984020d93d1a02232f2a4fd4e37caa72bffc51365e3bd97d2` |
+| 3 | `theorem` | [exists_mul_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/IntSqrtSourceEdition1.lean/declarations/exists-mul-self.md) | 29 | `result-track:0eec486116c1a31bbdd30957d3c987ad957c7ea6167b242ab32d75aad570e651` |
+| 4 | `theorem` | [sqrt_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/IntSqrtSourceEdition1.lean/declarations/sqrt-nonneg.md) | 32 | `result-track:8bc6404c9c9e232bf40c213ec5fc9f445b05faa62ff86dea1490b106a4cc0848` |
+| 5 | `theorem` | [sqrt_natCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/IntSqrtSourceEdition1.lean/declarations/sqrt-natcast.md) | 36 | `result-track:685da11c1941f6423bc87e3f7a726634829c108e9b2097166f109d31f361ef55` |
+| 6 | `theorem` | [sqrt_ofNat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/IntSqrtSourceEdition1.lean/declarations/sqrt-ofnat.md) | 39 | `result-track:d52b5a7a603aa402fa96c7b7d329b314d0924e5d1dbf60f722222d3ecfb09197` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/MetricSpaceEquicontinuityEquicontinuityPublic.lean/index.md) · [Full source](../../../../GeneralTopology/MetricSpaceEquicontinuityEquicontinuityPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MetricSpaceEquicontinuityEquicontinuityPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MetricSpaceEquicontinuityEquicontinuityPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [equicontinuousAt_iff_right](../../../../GeneralTopology/MetricSpaceEquicontinuityEquicontinuityPublic.lean/declarations/equicontinuousat-iff-right.md) | 49 | `result-track:301f36c93c0a30a028a184e6d6a94cd865912786623d9343a28bd821c6960397` |
-| 2 | `theorem` | [equicontinuousAt_iff](../../../../GeneralTopology/MetricSpaceEquicontinuityEquicontinuityPublic.lean/declarations/equicontinuousat-iff.md) | 54 | `result-track:a9098b64339cef245819c530dea80673f4d4725d064aa34ae9dc90b87eb13449` |
-| 3 | `theorem` | [equicontinuousAt_iff_pair](../../../../GeneralTopology/MetricSpaceEquicontinuityEquicontinuityPublic.lean/declarations/equicontinuousat-iff-pair.md) | 60 | `result-track:301f09bf4e29a0d7dead15f2c828e66f725c2bd5a0a0e212817fd47aa5b2b4fe` |
-| 4 | `theorem` | [uniformEquicontinuous_iff_right](../../../../GeneralTopology/MetricSpaceEquicontinuityEquicontinuityPublic.lean/declarations/uniformequicontinuous-iff-right.md) | 75 | `result-track:977ddf5763589bcdedabe7fa5f36d68c6aa1a59e396ff5a4c5c3db3b2fa9badd` |
-| 5 | `theorem` | [uniformEquicontinuous_iff](../../../../GeneralTopology/MetricSpaceEquicontinuityEquicontinuityPublic.lean/declarations/uniformequicontinuous-iff.md) | 81 | `result-track:7b6d047c69dc44d58f1afa39e0d51f0535df3fff918bd02256f7a6ce2079d2b8` |
-| 6 | `theorem` | [equicontinuousAt_of_continuity_modulus](../../../../GeneralTopology/MetricSpaceEquicontinuityEquicontinuityPublic.lean/declarations/equicontinuousat-of-continuity-modulus.md) | 89 | `result-track:e61a7d8f0b7e117793b0be719b050ace190c3c0648bdd065ff87c0020c63b5c5` |
-| 7 | `theorem` | [uniformEquicontinuous_of_continuity_modulus](../../../../GeneralTopology/MetricSpaceEquicontinuityEquicontinuityPublic.lean/declarations/uniformequicontinuous-of-continuity-modulus.md) | 99 | `result-track:f3085e9a0337d1a3de29ca21dafd033d21995a264a5405378a6f87cfea35309b` |
-| 8 | `theorem` | [equicontinuous_of_continuity_modulus](../../../../GeneralTopology/MetricSpaceEquicontinuityEquicontinuityPublic.lean/declarations/equicontinuous-of-continuity-modulus.md) | 114 | `result-track:b4b693b5208c03c70958a9c2c9e274ede2137dde764ef5c416f23327a35adb90` |
+| 1 | `theorem` | [equicontinuousAt_iff_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MetricSpaceEquicontinuityEquicontinuityPublic.lean/declarations/equicontinuousat-iff-right.md) | 49 | `result-track:301f36c93c0a30a028a184e6d6a94cd865912786623d9343a28bd821c6960397` |
+| 2 | `theorem` | [equicontinuousAt_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MetricSpaceEquicontinuityEquicontinuityPublic.lean/declarations/equicontinuousat-iff.md) | 54 | `result-track:a9098b64339cef245819c530dea80673f4d4725d064aa34ae9dc90b87eb13449` |
+| 3 | `theorem` | [equicontinuousAt_iff_pair](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MetricSpaceEquicontinuityEquicontinuityPublic.lean/declarations/equicontinuousat-iff-pair.md) | 60 | `result-track:301f09bf4e29a0d7dead15f2c828e66f725c2bd5a0a0e212817fd47aa5b2b4fe` |
+| 4 | `theorem` | [uniformEquicontinuous_iff_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MetricSpaceEquicontinuityEquicontinuityPublic.lean/declarations/uniformequicontinuous-iff-right.md) | 75 | `result-track:977ddf5763589bcdedabe7fa5f36d68c6aa1a59e396ff5a4c5c3db3b2fa9badd` |
+| 5 | `theorem` | [uniformEquicontinuous_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MetricSpaceEquicontinuityEquicontinuityPublic.lean/declarations/uniformequicontinuous-iff.md) | 81 | `result-track:7b6d047c69dc44d58f1afa39e0d51f0535df3fff918bd02256f7a6ce2079d2b8` |
+| 6 | `theorem` | [equicontinuousAt_of_continuity_modulus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MetricSpaceEquicontinuityEquicontinuityPublic.lean/declarations/equicontinuousat-of-continuity-modulus.md) | 89 | `result-track:e61a7d8f0b7e117793b0be719b050ace190c3c0648bdd065ff87c0020c63b5c5` |
+| 7 | `theorem` | [uniformEquicontinuous_of_continuity_modulus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MetricSpaceEquicontinuityEquicontinuityPublic.lean/declarations/uniformequicontinuous-of-continuity-modulus.md) | 99 | `result-track:f3085e9a0337d1a3de29ca21dafd033d21995a264a5405378a6f87cfea35309b` |
+| 8 | `theorem` | [equicontinuous_of_continuity_modulus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MetricSpaceEquicontinuityEquicontinuityPublic.lean/declarations/equicontinuous-of-continuity-modulus.md) | 114 | `result-track:b4b693b5208c03c70958a9c2c9e274ede2137dde764ef5c416f23327a35adb90` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/MatchingNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/MatchingNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MatchingNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MatchingNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FiniteSpectralMatchingCertificate](../../../../Combinatorics/MatchingNamespaced.lean/declarations/finitespectralmatchingcertificate.md) | 24 | `declaration-track:e17f5dfa35676a27239965e7ef772d33bd041b7ec4e3c41102e3129ef2c73208` |
-| 2 | `theorem` | [perfectCertifiedMatching_noMissing](../../../../Combinatorics/MatchingNamespaced.lean/declarations/perfectcertifiedmatching-nomissing.md) | 64 | `result-track:ed60e0d35fc5d3b72304d06fada0ff941e7af28a665e0066d093b663e4833bb9` |
-| 3 | `theorem` | [perfectCertifiedMatching_noSpurious](../../../../Combinatorics/MatchingNamespaced.lean/declarations/perfectcertifiedmatching-nospurious.md) | 78 | `result-track:67cf4f693c21cb661e9de8809fc29af645f3b85cec3bf6704703a225e05fb650` |
-| 4 | `theorem` | [perfectCertifiedMatching_preservesMultiplicity](../../../../Combinatorics/MatchingNamespaced.lean/declarations/perfectcertifiedmatching-preservesmultiplicity.md) | 92 | `result-track:55a628eb265a1d623ada6852d7b23efa65a50e2b8b57c69e2355e28f18bff7e0` |
-| 5 | `theorem` | [perfectCertifiedMatching_noMissing_noSpurious](../../../../Combinatorics/MatchingNamespaced.lean/declarations/perfectcertifiedmatching-nomissing-nospurious.md) | 105 | `result-track:4beb02895f04661a6e92f6de01cabb4e8d92ae8cec0acfa413189e5bcf1e0202` |
+| 1 | `structure` | [FiniteSpectralMatchingCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MatchingNamespaced.lean/declarations/finitespectralmatchingcertificate.md) | 24 | `declaration-track:e17f5dfa35676a27239965e7ef772d33bd041b7ec4e3c41102e3129ef2c73208` |
+| 2 | `theorem` | [perfectCertifiedMatching_noMissing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MatchingNamespaced.lean/declarations/perfectcertifiedmatching-nomissing.md) | 64 | `result-track:ed60e0d35fc5d3b72304d06fada0ff941e7af28a665e0066d093b663e4833bb9` |
+| 3 | `theorem` | [perfectCertifiedMatching_noSpurious](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MatchingNamespaced.lean/declarations/perfectcertifiedmatching-nospurious.md) | 78 | `result-track:67cf4f693c21cb661e9de8809fc29af645f3b85cec3bf6704703a225e05fb650` |
+| 4 | `theorem` | [perfectCertifiedMatching_preservesMultiplicity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MatchingNamespaced.lean/declarations/perfectcertifiedmatching-preservesmultiplicity.md) | 92 | `result-track:55a628eb265a1d623ada6852d7b23efa65a50e2b8b57c69e2355e28f18bff7e0` |
+| 5 | `theorem` | [perfectCertifiedMatching_noMissing_noSpurious](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MatchingNamespaced.lean/declarations/perfectcertifiedmatching-nomissing-nospurious.md) | 105 | `result-track:4beb02895f04661a6e92f6de01cabb4e8d92ae8cec0acfa413189e5bcf1e0202` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

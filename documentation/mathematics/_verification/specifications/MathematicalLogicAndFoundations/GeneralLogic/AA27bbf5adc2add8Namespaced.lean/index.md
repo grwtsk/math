@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AA27bbf5adc2add8Namespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AA27bbf5adc2add8Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AA27bbf5adc2add8Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AA27bbf5adc2add8Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [transport_refl](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AA27bbf5adc2add8Namespaced.lean/declarations/transport-refl.md) | 25 | `result-track:252547193e82ae2ad1389130ba3735510ae3dca992ba7e7067614d9f7220814f` |
+| 1 | `theorem` | [transport_refl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AA27bbf5adc2add8Namespaced.lean/declarations/transport-refl.md) | 25 | `result-track:252547193e82ae2ad1389130ba3735510ae3dca992ba7e7067614d9f7220814f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

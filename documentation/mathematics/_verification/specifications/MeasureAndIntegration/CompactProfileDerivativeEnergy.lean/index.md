@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CompactProfileDerivativeEnergy.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CompactProfileDerivativeEnergy.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactProfileDerivativeEnergy.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactProfileDerivativeEnergy.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Calculus.CompactProfileNormalization`](../../../../MeasureAndIntegration/CompactProfileNormalization.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Calculus.CompactProfileNormalization`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactProfileNormalization.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [integral_third_mul_first](../../../../MeasureAndIntegration/CompactProfileDerivativeEnergy.lean/declarations/integral-third-mul-first.md) | 23 | `result-track:ac5a6d7ff7129047929224aa876b8c0e9a6f7c4a3f9a27f6bb417d533af30113` |
-| 2 | `theorem` | [deriv_dilationOperator](../../../../MeasureAndIntegration/CompactProfileDerivativeEnergy.lean/declarations/deriv-dilationoperator.md) | 31 | `result-track:b3e88a22bc55d71a8dd2051fa787965448337b3e529ea28a04520fe1676cedd8` |
-| 3 | `theorem` | [deriv_normalizedOperator](../../../../MeasureAndIntegration/CompactProfileDerivativeEnergy.lean/declarations/deriv-normalizedoperator.md) | 52 | `result-track:c3456453747b1b7bfe4c226cb2f31b4790d3d5f4abc05d786e6e8fd149f43d0f` |
-| 4 | `theorem` | [normalizedOperator_deriv_square_integrable](../../../../MeasureAndIntegration/CompactProfileDerivativeEnergy.lean/declarations/normalizedoperator-deriv-square-integrable.md) | 59 | `result-track:d373f4abb88dc1745c268bb6c640225e537aff210ca93c447c407f9552badfbe` |
-| 5 | `theorem` | [normalizedOperator_deriv_square_integral_factorized](../../../../MeasureAndIntegration/CompactProfileDerivativeEnergy.lean/declarations/normalizedoperator-deriv-square-integral-factorized.md) | 70 | `result-track:f804c9cc2ff5af7db9f6cab603869d256783ffbe188dd6d0c9f877ca3c7225d0` |
-| 6 | `theorem` | [normalizedOperator_deriv_square_integral](../../../../MeasureAndIntegration/CompactProfileDerivativeEnergy.lean/declarations/normalizedoperator-deriv-square-integral.md) | 82 | `result-track:689cecdbb38b28a8f8ced62913b73b4de90e901360a028736b477e179783b2c6` |
-| 7 | `theorem` | [profile_normalizedOperator_deriv_square_integral](../../../../MeasureAndIntegration/CompactProfileDerivativeEnergy.lean/declarations/profile-normalizedoperator-deriv-square-integral.md) | 97 | `result-track:13d9e9aa8b247b338c922ca04a255a2872b6c992269b28b65c93c79412454b90` |
+| 1 | `theorem` | [integral_third_mul_first](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactProfileDerivativeEnergy.lean/declarations/integral-third-mul-first.md) | 23 | `result-track:ac5a6d7ff7129047929224aa876b8c0e9a6f7c4a3f9a27f6bb417d533af30113` |
+| 2 | `theorem` | [deriv_dilationOperator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactProfileDerivativeEnergy.lean/declarations/deriv-dilationoperator.md) | 31 | `result-track:b3e88a22bc55d71a8dd2051fa787965448337b3e529ea28a04520fe1676cedd8` |
+| 3 | `theorem` | [deriv_normalizedOperator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactProfileDerivativeEnergy.lean/declarations/deriv-normalizedoperator.md) | 52 | `result-track:c3456453747b1b7bfe4c226cb2f31b4790d3d5f4abc05d786e6e8fd149f43d0f` |
+| 4 | `theorem` | [normalizedOperator_deriv_square_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactProfileDerivativeEnergy.lean/declarations/normalizedoperator-deriv-square-integrable.md) | 59 | `result-track:d373f4abb88dc1745c268bb6c640225e537aff210ca93c447c407f9552badfbe` |
+| 5 | `theorem` | [normalizedOperator_deriv_square_integral_factorized](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactProfileDerivativeEnergy.lean/declarations/normalizedoperator-deriv-square-integral-factorized.md) | 70 | `result-track:f804c9cc2ff5af7db9f6cab603869d256783ffbe188dd6d0c9f877ca3c7225d0` |
+| 6 | `theorem` | [normalizedOperator_deriv_square_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactProfileDerivativeEnergy.lean/declarations/normalizedoperator-deriv-square-integral.md) | 82 | `result-track:689cecdbb38b28a8f8ced62913b73b4de90e901360a028736b477e179783b2c6` |
+| 7 | `theorem` | [profile_normalizedOperator_deriv_square_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactProfileDerivativeEnergy.lean/declarations/profile-normalizedoperator-deriv-square-integral.md) | 97 | `result-track:13d9e9aa8b247b338c922ca04a255a2872b6c992269b28b65c93c79412454b90` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

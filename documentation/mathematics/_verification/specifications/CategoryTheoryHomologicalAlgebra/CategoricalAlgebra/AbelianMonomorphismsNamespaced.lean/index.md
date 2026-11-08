@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianMonomorphismsNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianMonomorphismsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianMonomorphismsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianMonomorphismsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianMonomorphismsNamespaced.lean/declarations/instance-source-edition-2.md) | 34 | `declaration-track:fe9dd99b88b4798c5ec4ab1f30e9f31e6e642b4f548f7cb9ec9e773951f3d87c` |
-| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianMonomorphismsNamespaced.lean/declarations/instance.md) | 39 | `declaration-track:fa0a153135aa3ec22685fd552a7666a25fdc5d424d8f0774c88be4b4598ed008` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianMonomorphismsNamespaced.lean/declarations/instance-source-edition-2.md) | 34 | `declaration-track:fe9dd99b88b4798c5ec4ab1f30e9f31e6e642b4f548f7cb9ec9e773951f3d87c` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianMonomorphismsNamespaced.lean/declarations/instance.md) | 39 | `declaration-track:fa0a153135aa3ec22685fd552a7666a25fdc5d424d8f0774c88be4b4598ed008` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

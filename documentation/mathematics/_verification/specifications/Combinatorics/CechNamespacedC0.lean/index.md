@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/CechNamespacedC0.lean/index.md) · [Full source](../../../../Combinatorics/CechNamespacedC0.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CechNamespacedC0.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CechNamespacedC0.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,23 +59,23 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [C0](../../../../Combinatorics/CechNamespacedC0.lean/declarations/c0.md) | 34 | `declaration-track:f55eace2715efd86923e51d96f41ef07f6dfd1859fd27143a676e13fe335a9fa` |
-| 2 | `abbrev` | [C1](../../../../Combinatorics/CechNamespacedC0.lean/declarations/c1.md) | 35 | `declaration-track:5f3b49263e4d7145a1d8ff8da0521674ddb54451430b6363667bba641eca996c` |
-| 3 | `abbrev` | [C2](../../../../Combinatorics/CechNamespacedC0.lean/declarations/c2.md) | 36 | `declaration-track:09641008b1b63c9c1b94484714261bd32e2499cfe1ccf41fda87ed36012c72bb` |
-| 4 | `def` | [d0](../../../../Combinatorics/CechNamespacedC0.lean/declarations/d0.md) | 39 | `declaration-track:ceffe70b94e7e601a5971051bbd333570dd6db723b1b898a0f327001fa8aa44e` |
-| 5 | `def` | [d1](../../../../Combinatorics/CechNamespacedC0.lean/declarations/d1.md) | 43 | `declaration-track:8677bdb0ae163ccd0525ccb62708515d9922ea20c044e4ca614d877986f9c0bd` |
-| 6 | `theorem` | [d1_d0](../../../../Combinatorics/CechNamespacedC0.lean/declarations/d1-d0.md) | 48 | `result-track:7d21e26c52522e3078e2a0faaeecb558285f8c1f0fd7c508dd383f4eece385de` |
-| 7 | `def` | [IsCocycle](../../../../Combinatorics/CechNamespacedC0.lean/declarations/iscocycle.md) | 57 | `declaration-track:fee37d631241858e471b21d8682c2a39d7972918db3ab7ad3c8b2a47efa6a8d3` |
-| 8 | `def` | [IsCoboundary](../../../../Combinatorics/CechNamespacedC0.lean/declarations/iscoboundary.md) | 61 | `declaration-track:654742e5f0bfd17926014bf44a403c31251558e95f5d99402cbeb5a9843ff615` |
-| 9 | `theorem` | [coboundary_is_cocycle](../../../../Combinatorics/CechNamespacedC0.lean/declarations/coboundary-is-cocycle.md) | 65 | `result-track:e761c500c8885fa9195ac124f3df592dc4b1cdbf70c149fafadbc087042e936f` |
-| 10 | `def` | [support](../../../../Combinatorics/CechNamespacedC0.lean/declarations/support.md) | 74 | `declaration-track:8155c1673bb0fc30fee51cd527b276d43ebc3a5a2a4473e45245b3a58b0b7963` |
-| 11 | `inductive` | [ObstructionMeaning](../../../../Combinatorics/CechNamespacedC0.lean/declarations/obstructionmeaning.md) | 84 | `declaration-track:8d5aa89a28990bdef87d97250b82ad4d86c127e589d840387c10778d8340bf19` |
-| 12 | `structure` | [CechObstruction](../../../../Combinatorics/CechNamespacedC0.lean/declarations/cechobstruction.md) | 95 | `declaration-track:06d0577ef62735ee1b3696158dc8f2ae181d9f6655696ab1682801954a57c07d` |
-| 13 | `structure` | [ObstructionDetector](../../../../Combinatorics/CechNamespacedC0.lean/declarations/obstructiondetector.md) | 102 | `declaration-track:61f29bd04e99e2b1829a9d9ed2fc9e71fd04f6913ea9b79f62e78ced2966e8a0` |
-| 14 | `def` | [ObstructionDetector.Complete](../../../../Combinatorics/CechNamespacedC0.lean/declarations/obstructiondetector-complete.md) | 105 | `declaration-track:d919e2f4c5ceb52f45b6e9e82227413a5ee2408bbc5c91c299dd27902c782fde` |
-| 15 | `theorem` | [zero_defect_not_compatibility_theorem](../../../../Combinatorics/CechNamespacedC0.lean/declarations/zero-defect-not-compatibility-theorem.md) | 112 | `result-track:3e89b42c297e15981d7a49990c74b2886be258ffc8c075c48ea5703e98be8a98` |
-| 16 | `def` | [threeVertexDefect](../../../../Combinatorics/CechNamespacedC0.lean/declarations/threevertexdefect.md) | 123 | `declaration-track:94a2917f77ce09c7b779e9f9f9bfa781b2fabde4983b134405662776cba6c706` |
-| 17 | `theorem` | [threeVertexDefect_nonzero](../../../../Combinatorics/CechNamespacedC0.lean/declarations/threevertexdefect-nonzero.md) | 128 | `result-track:225f0e0d95691802a2417f2c7a65a14727b30582f2859a5fcb01ad7fd213ddd0` |
+| 1 | `abbrev` | [C0](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CechNamespacedC0.lean/declarations/c0.md) | 34 | `declaration-track:f55eace2715efd86923e51d96f41ef07f6dfd1859fd27143a676e13fe335a9fa` |
+| 2 | `abbrev` | [C1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CechNamespacedC0.lean/declarations/c1.md) | 35 | `declaration-track:5f3b49263e4d7145a1d8ff8da0521674ddb54451430b6363667bba641eca996c` |
+| 3 | `abbrev` | [C2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CechNamespacedC0.lean/declarations/c2.md) | 36 | `declaration-track:09641008b1b63c9c1b94484714261bd32e2499cfe1ccf41fda87ed36012c72bb` |
+| 4 | `def` | [d0](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CechNamespacedC0.lean/declarations/d0.md) | 39 | `declaration-track:ceffe70b94e7e601a5971051bbd333570dd6db723b1b898a0f327001fa8aa44e` |
+| 5 | `def` | [d1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CechNamespacedC0.lean/declarations/d1.md) | 43 | `declaration-track:8677bdb0ae163ccd0525ccb62708515d9922ea20c044e4ca614d877986f9c0bd` |
+| 6 | `theorem` | [d1_d0](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CechNamespacedC0.lean/declarations/d1-d0.md) | 48 | `result-track:7d21e26c52522e3078e2a0faaeecb558285f8c1f0fd7c508dd383f4eece385de` |
+| 7 | `def` | [IsCocycle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CechNamespacedC0.lean/declarations/iscocycle.md) | 57 | `declaration-track:fee37d631241858e471b21d8682c2a39d7972918db3ab7ad3c8b2a47efa6a8d3` |
+| 8 | `def` | [IsCoboundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CechNamespacedC0.lean/declarations/iscoboundary.md) | 61 | `declaration-track:654742e5f0bfd17926014bf44a403c31251558e95f5d99402cbeb5a9843ff615` |
+| 9 | `theorem` | [coboundary_is_cocycle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CechNamespacedC0.lean/declarations/coboundary-is-cocycle.md) | 65 | `result-track:e761c500c8885fa9195ac124f3df592dc4b1cdbf70c149fafadbc087042e936f` |
+| 10 | `def` | [support](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CechNamespacedC0.lean/declarations/support.md) | 74 | `declaration-track:8155c1673bb0fc30fee51cd527b276d43ebc3a5a2a4473e45245b3a58b0b7963` |
+| 11 | `inductive` | [ObstructionMeaning](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CechNamespacedC0.lean/declarations/obstructionmeaning.md) | 84 | `declaration-track:8d5aa89a28990bdef87d97250b82ad4d86c127e589d840387c10778d8340bf19` |
+| 12 | `structure` | [CechObstruction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CechNamespacedC0.lean/declarations/cechobstruction.md) | 95 | `declaration-track:06d0577ef62735ee1b3696158dc8f2ae181d9f6655696ab1682801954a57c07d` |
+| 13 | `structure` | [ObstructionDetector](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CechNamespacedC0.lean/declarations/obstructiondetector.md) | 102 | `declaration-track:61f29bd04e99e2b1829a9d9ed2fc9e71fd04f6913ea9b79f62e78ced2966e8a0` |
+| 14 | `def` | [ObstructionDetector.Complete](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CechNamespacedC0.lean/declarations/obstructiondetector-complete.md) | 105 | `declaration-track:d919e2f4c5ceb52f45b6e9e82227413a5ee2408bbc5c91c299dd27902c782fde` |
+| 15 | `theorem` | [zero_defect_not_compatibility_theorem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CechNamespacedC0.lean/declarations/zero-defect-not-compatibility-theorem.md) | 112 | `result-track:3e89b42c297e15981d7a49990c74b2886be258ffc8c075c48ea5703e98be8a98` |
+| 16 | `def` | [threeVertexDefect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CechNamespacedC0.lean/declarations/threevertexdefect.md) | 123 | `declaration-track:94a2917f77ce09c7b779e9f9f9bfa781b2fabde4983b134405662776cba6c706` |
+| 17 | `theorem` | [threeVertexDefect_nonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CechNamespacedC0.lean/declarations/threevertexdefect-nonzero.md) | 128 | `result-track:225f0e0d95691802a2417f2c7a65a14727b30582f2859a5fcb01ad7fd213ddd0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

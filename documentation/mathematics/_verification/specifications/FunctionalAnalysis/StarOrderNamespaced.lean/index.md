@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/StarOrderNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/StarOrderNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/StarOrderNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/StarOrderNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [IsPositive.spectrumRestricts](../../../../FunctionalAnalysis/StarOrderNamespaced.lean/declarations/ispositive-spectrumrestricts.md) | 38 | `result-track:ac41aa4d5ef95f1135b6d0d5e58e73235ce2299823168bab3b45af59efd53b7d` |
-| 2 | `instance` | [(anonymous)](../../../../FunctionalAnalysis/StarOrderNamespaced.lean/declarations/instance.md) | 56 | `declaration-track:ffea8706a3ea7e2de1722cb05cd3c9389f1d9aad8daef677ef149963ee0dc4d3` |
-| 3 | `lemma` | [instStarOrderedRingRCLike](../../../../FunctionalAnalysis/StarOrderNamespaced.lean/declarations/inststarorderedringrclike.md) | 62 | `result-track:681028ebbc93b9bdfc9f46e19e4f73c8fd6ff46b43979554baa3b3cd89a463fb` |
-| 4 | `instance` | [instStarOrderedRing](../../../../FunctionalAnalysis/StarOrderNamespaced.lean/declarations/inststarorderedring.md) | 82 | `declaration-track:cbc9147868e63c18f3c6c07bd19915c760845afbd61edb7ff3ff5232034a9cac` |
+| 1 | `lemma` | [IsPositive.spectrumRestricts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/StarOrderNamespaced.lean/declarations/ispositive-spectrumrestricts.md) | 38 | `result-track:ac41aa4d5ef95f1135b6d0d5e58e73235ce2299823168bab3b45af59efd53b7d` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/StarOrderNamespaced.lean/declarations/instance.md) | 56 | `declaration-track:ffea8706a3ea7e2de1722cb05cd3c9389f1d9aad8daef677ef149963ee0dc4d3` |
+| 3 | `lemma` | [instStarOrderedRingRCLike](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/StarOrderNamespaced.lean/declarations/inststarorderedringrclike.md) | 62 | `result-track:681028ebbc93b9bdfc9f46e19e4f73c8fd6ff46b43979554baa3b3cd89a463fb` |
+| 4 | `instance` | [instStarOrderedRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/StarOrderNamespaced.lean/declarations/inststarorderedring.md) | 82 | `declaration-track:cbc9147868e63c18f3c6c07bd19915c760845afbd61edb7ff3ff5232034a9cac` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

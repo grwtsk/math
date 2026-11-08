@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicGoInvOfInv.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicGoInvOfInv.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicGoInvOfInv.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicGoInvOfInv.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [go_Inv_of_Inv](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicGoInvOfInv.lean/declarations/go-inv-of-inv.md) | 31 | `result-track:2842a208127c513329b70733f36b09ddceffeea04052737538d937c1e74fe367` |
-| 2 | `theorem` | [go_eval_eq_eval](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicGoInvOfInv.lean/declarations/go-eval-eq-eval.md) | 68 | `result-track:3ca2c56a5cb97a4ccab6a82ea178607bc64a3203cceebcc69d1a53eabb151a92` |
-| 3 | `theorem` | [denote_bitblast](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicGoInvOfInv.lean/declarations/denote-bitblast.md) | 117 | `result-track:b69e8c3927c24fe74e0eba7870a377f32d3756f1e3fa9cec5cf10a7cd3d03757` |
-| 4 | `theorem` | [unsat_of_bitblast](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicGoInvOfInv.lean/declarations/unsat-of-bitblast.md) | 123 | `result-track:aa48c3df3359ca9e261675ba72e50a5981be97cd6e3531be9f8acb13b00a7862` |
+| 1 | `theorem` | [go_Inv_of_Inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicGoInvOfInv.lean/declarations/go-inv-of-inv.md) | 31 | `result-track:2842a208127c513329b70733f36b09ddceffeea04052737538d937c1e74fe367` |
+| 2 | `theorem` | [go_eval_eq_eval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicGoInvOfInv.lean/declarations/go-eval-eq-eval.md) | 68 | `result-track:3ca2c56a5cb97a4ccab6a82ea178607bc64a3203cceebcc69d1a53eabb151a92` |
+| 3 | `theorem` | [denote_bitblast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicGoInvOfInv.lean/declarations/denote-bitblast.md) | 117 | `result-track:b69e8c3927c24fe74e0eba7870a377f32d3756f1e3fa9cec5cf10a7cd3d03757` |
+| 4 | `theorem` | [unsat_of_bitblast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicGoInvOfInv.lean/declarations/unsat-of-bitblast.md) | 123 | `result-track:aa48c3df3359ca9e261675ba72e50a5981be97cd6e3531be9f8acb13b00a7862` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PullbackConnectedPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PullbackConnectedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PullbackConnectedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PullbackConnectedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [isLimitOfIsPullbackOfIsConnected](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PullbackConnectedPublic.lean/declarations/islimitofispullbackofisconnected.md) | 29 | `declaration-track:e1ff69e90d6a44c379a9510ceae6fedd37deb37cb8d1bc326c25dff88edf8e5c` |
-| 2 | `def` | [isColimitOfIsPushoutOfIsConnected](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PullbackConnectedPublic.lean/declarations/iscolimitofispushoutofisconnected.md) | 56 | `declaration-track:20cc0ad7bb51802eaf317b6f509e399336ffb75f182d6e5b717f869057793d7c` |
+| 1 | `def` | [isLimitOfIsPullbackOfIsConnected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PullbackConnectedPublic.lean/declarations/islimitofispullbackofisconnected.md) | 29 | `declaration-track:e1ff69e90d6a44c379a9510ceae6fedd37deb37cb8d1bc326c25dff88edf8e5c` |
+| 2 | `def` | [isColimitOfIsPushoutOfIsConnected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PullbackConnectedPublic.lean/declarations/iscolimitofispushoutofisconnected.md) | 56 | `declaration-track:20cc0ad7bb51802eaf317b6f509e399336ffb75f182d6e5b717f869057793d7c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

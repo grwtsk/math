@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/CompactlySupportedNamespacedPublic.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/CompactlySupportedNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/CompactlySupportedNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/CompactlySupportedNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [integrable](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/CompactlySupportedNamespacedPublic.lean/declarations/integrable.md) | 38 | `result-track:92312a4a3532f604ce6ff03c39d2ea28d6b5eed680141dc89047e516860d9dff` |
-| 2 | `def` | [integralPositiveLinearMap](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/CompactlySupportedNamespacedPublic.lean/declarations/integralpositivelinearmap.md) | 47 | `declaration-track:bbb98814b6e6250006e43d2d0f6ab1e27e2a353cd7646c19f1b9cadf5f8d1767` |
-| 3 | `def` | [integralLinearMap](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/CompactlySupportedNamespacedPublic.lean/declarations/integrallinearmap.md) | 58 | `declaration-track:3d4edf45b5d46dde2a69389e109c0d6e4d3be991997f8540d7e055b6a1b802ff` |
+| 1 | `lemma` | [integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/CompactlySupportedNamespacedPublic.lean/declarations/integrable.md) | 38 | `result-track:92312a4a3532f604ce6ff03c39d2ea28d6b5eed680141dc89047e516860d9dff` |
+| 2 | `def` | [integralPositiveLinearMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/CompactlySupportedNamespacedPublic.lean/declarations/integralpositivelinearmap.md) | 47 | `declaration-track:bbb98814b6e6250006e43d2d0f6ab1e27e2a353cd7646c19f1b9cadf5f8d1767` |
+| 3 | `def` | [integralLinearMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/CompactlySupportedNamespacedPublic.lean/declarations/integrallinearmap.md) | 58 | `declaration-track:3d4edf45b5d46dde2a69389e109c0d6e4d3be991997f8540d7e055b6a1b802ff` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

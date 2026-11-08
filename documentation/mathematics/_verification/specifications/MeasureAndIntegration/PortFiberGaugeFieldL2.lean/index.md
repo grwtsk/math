@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/PortFiberGaugeFieldL2.lean/index.md) · [Full source](../../../../MeasureAndIntegration/PortFiberGaugeFieldL2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PortFiberGaugeFieldL2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PortFiberGaugeFieldL2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Interfaces.PortFiberAreaGaugeTransport`](../../../../FunctionsOfAComplexVariable/PortFiberAreaGaugeTransport.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.HolomorphicGaugeFieldL2`](../../../../MeasureAndIntegration/HolomorphicGaugeFieldL2.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.Interfaces.PortFiberAreaGaugeTransport`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberAreaGaugeTransport.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.HolomorphicGaugeFieldL2`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HolomorphicGaugeFieldL2.lean/index.md) — import line 2; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,17 +58,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [schemaVersion](../../../../MeasureAndIntegration/PortFiberGaugeFieldL2.lean/declarations/schemaversion.md) | 34 | `declaration-track:746fcaf43895a8d7211e7c14740146325c308a01dae5d71506bc0822765b59cf` |
-| 2 | `inductive` | [AddedIndex](../../../../MeasureAndIntegration/PortFiberGaugeFieldL2.lean/declarations/addedindex.md) | 36 | `declaration-track:a570fa1780d6ad7e7f51fb4881b431719f1b62e5ee271bffff9185465464efeb` |
-| 3 | `def` | [AddedClaim](../../../../MeasureAndIntegration/PortFiberGaugeFieldL2.lean/declarations/addedclaim.md) | 47 | `declaration-track:fbb080b3904673b23fb554dc698074fb423e9eab77dc2fb48d364c8e551273f5` |
-| 4 | `theorem` | [addedClaim_proof](../../../../MeasureAndIntegration/PortFiberGaugeFieldL2.lean/declarations/addedclaim-proof.md) | 92 | `result-track:dffbe5a862b8e5116001cc345a320565705b0aee7bfe331ed3c51b3df5132e5c` |
-| 5 | `def` | [portfolio](../../../../MeasureAndIntegration/PortFiberGaugeFieldL2.lean/declarations/portfolio.md) | 110 | `declaration-track:c17dc84624f8ddc2bca88233054b8fd33e29b3d1608084956516bf3f4cdf1313` |
-| 6 | `def` | [architecture](../../../../MeasureAndIntegration/PortFiberGaugeFieldL2.lean/declarations/architecture.md) | 113 | `declaration-track:a40d0ecdb7a5df4df7428929aa682b18946dd48608fba28e45c2e2b21a727c25` |
-| 7 | `abbrev` | [PreviousIndex](../../../../MeasureAndIntegration/PortFiberGaugeFieldL2.lean/declarations/previousindex.md) | 117 | `declaration-track:c1ac7f633ae59be02ceb1d9c98f960ac265e5941afd94d692af53ed824f21751` |
-| 8 | `theorem` | [original_branch_unchanged](../../../../MeasureAndIntegration/PortFiberGaugeFieldL2.lean/declarations/original-branch-unchanged.md) | 120 | `result-track:3db1008db4d62fcb8d1775d448907106c5bc89ce8de725db8319b115425cfee4` |
-| 9 | `theorem` | [new_branch_proved](../../../../MeasureAndIntegration/PortFiberGaugeFieldL2.lean/declarations/new-branch-proved.md) | 126 | `result-track:3d05ead0934ade5c59fbb0b715dbf23dc23740ba7b81cb21aef3b646cbea3c1c` |
-| 10 | `theorem` | [target_unchanged](../../../../MeasureAndIntegration/PortFiberGaugeFieldL2.lean/declarations/target-unchanged.md) | 131 | `result-track:66d05a115794ed08d64ac4159431ef4d8769968ce98d3d922eb4737122952068` |
-| 11 | `theorem` | [retarget_preserves_new](../../../../MeasureAndIntegration/PortFiberGaugeFieldL2.lean/declarations/retarget-preserves-new.md) | 136 | `result-track:bb52a15456c9ce17ea3d3c72900d535d5c0eefcb29291cde628557c4e5d1ff62` |
+| 1 | `def` | [schemaVersion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PortFiberGaugeFieldL2.lean/declarations/schemaversion.md) | 34 | `declaration-track:746fcaf43895a8d7211e7c14740146325c308a01dae5d71506bc0822765b59cf` |
+| 2 | `inductive` | [AddedIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PortFiberGaugeFieldL2.lean/declarations/addedindex.md) | 36 | `declaration-track:a570fa1780d6ad7e7f51fb4881b431719f1b62e5ee271bffff9185465464efeb` |
+| 3 | `def` | [AddedClaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PortFiberGaugeFieldL2.lean/declarations/addedclaim.md) | 47 | `declaration-track:fbb080b3904673b23fb554dc698074fb423e9eab77dc2fb48d364c8e551273f5` |
+| 4 | `theorem` | [addedClaim_proof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PortFiberGaugeFieldL2.lean/declarations/addedclaim-proof.md) | 92 | `result-track:dffbe5a862b8e5116001cc345a320565705b0aee7bfe331ed3c51b3df5132e5c` |
+| 5 | `def` | [portfolio](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PortFiberGaugeFieldL2.lean/declarations/portfolio.md) | 110 | `declaration-track:c17dc84624f8ddc2bca88233054b8fd33e29b3d1608084956516bf3f4cdf1313` |
+| 6 | `def` | [architecture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PortFiberGaugeFieldL2.lean/declarations/architecture.md) | 113 | `declaration-track:a40d0ecdb7a5df4df7428929aa682b18946dd48608fba28e45c2e2b21a727c25` |
+| 7 | `abbrev` | [PreviousIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PortFiberGaugeFieldL2.lean/declarations/previousindex.md) | 117 | `declaration-track:c1ac7f633ae59be02ceb1d9c98f960ac265e5941afd94d692af53ed824f21751` |
+| 8 | `theorem` | [original_branch_unchanged](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PortFiberGaugeFieldL2.lean/declarations/original-branch-unchanged.md) | 120 | `result-track:3db1008db4d62fcb8d1775d448907106c5bc89ce8de725db8319b115425cfee4` |
+| 9 | `theorem` | [new_branch_proved](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PortFiberGaugeFieldL2.lean/declarations/new-branch-proved.md) | 126 | `result-track:3d05ead0934ade5c59fbb0b715dbf23dc23740ba7b81cb21aef3b646cbea3c1c` |
+| 10 | `theorem` | [target_unchanged](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PortFiberGaugeFieldL2.lean/declarations/target-unchanged.md) | 131 | `result-track:66d05a115794ed08d64ac4159431ef4d8769968ce98d3d922eb4737122952068` |
+| 11 | `theorem` | [retarget_preserves_new](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PortFiberGaugeFieldL2.lean/declarations/retarget-preserves-new.md) | 136 | `result-track:bb52a15456c9ce17ea3d3c72900d535d5c0eefcb29291cde628557c4e5d1ff62` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

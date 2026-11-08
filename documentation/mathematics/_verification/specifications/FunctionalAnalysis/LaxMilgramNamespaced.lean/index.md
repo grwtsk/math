@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/LaxMilgramNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/LaxMilgramNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/LaxMilgramNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/LaxMilgramNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [bounded_below](../../../../FunctionalAnalysis/LaxMilgramNamespaced.lean/declarations/bounded-below.md) | 57 | `result-track:4a3c94ae2ec52c785a3cf8200e096eb3f2527d94d2073f1b932bf4e20df48839` |
-| 2 | `theorem` | [antilipschitz](../../../../FunctionalAnalysis/LaxMilgramNamespaced.lean/declarations/antilipschitz.md) | 70 | `result-track:750eac50465ba55de8383eaa9be5b32c38db13ae0388b13ae3610906d6bfb65d` |
-| 3 | `theorem` | [ker_eq_bot](../../../../FunctionalAnalysis/LaxMilgramNamespaced.lean/declarations/ker-eq-bot.md) | 78 | `result-track:5d5308752abc51979729d9f026b24980d0743f626071c914c78de4858f3bd0b1` |
-| 4 | `theorem` | [isClosed_range](../../../../FunctionalAnalysis/LaxMilgramNamespaced.lean/declarations/isclosed-range.md) | 83 | `result-track:591773889c331b4fbfd31c092ea21f615e7a60f57cc5306e52a706a6375279a6` |
-| 5 | `theorem` | [range_eq_top](../../../../FunctionalAnalysis/LaxMilgramNamespaced.lean/declarations/range-eq-top.md) | 88 | `result-track:f30867ade9cb8be992f34d05b694dfd63043e23827dbefa842d0b3ef380cdb38` |
-| 6 | `def` | [continuousLinearEquivOfBilin](../../../../FunctionalAnalysis/LaxMilgramNamespaced.lean/declarations/continuouslinearequivofbilin.md) | 110 | `declaration-track:a36ebc8f0b8151d1d97627c8e698f5a5bfab937b57441d07934ef3c64450795c` |
-| 7 | `theorem` | [continuousLinearEquivOfBilin_apply](../../../../FunctionalAnalysis/LaxMilgramNamespaced.lean/declarations/continuouslinearequivofbilin-apply.md) | 114 | `result-track:2b77128a11d05158f6aa9086780e7819e67decb98dc06c657e18911fcfd61c09` |
-| 8 | `theorem` | [unique_continuousLinearEquivOfBilin](../../../../FunctionalAnalysis/LaxMilgramNamespaced.lean/declarations/unique-continuouslinearequivofbilin.md) | 118 | `result-track:386a667d5b823cecd0ffaeaa4322ebccff66799455b6f089db88f1b4cd697b0d` |
+| 1 | `theorem` | [bounded_below](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/LaxMilgramNamespaced.lean/declarations/bounded-below.md) | 57 | `result-track:4a3c94ae2ec52c785a3cf8200e096eb3f2527d94d2073f1b932bf4e20df48839` |
+| 2 | `theorem` | [antilipschitz](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/LaxMilgramNamespaced.lean/declarations/antilipschitz.md) | 70 | `result-track:750eac50465ba55de8383eaa9be5b32c38db13ae0388b13ae3610906d6bfb65d` |
+| 3 | `theorem` | [ker_eq_bot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/LaxMilgramNamespaced.lean/declarations/ker-eq-bot.md) | 78 | `result-track:5d5308752abc51979729d9f026b24980d0743f626071c914c78de4858f3bd0b1` |
+| 4 | `theorem` | [isClosed_range](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/LaxMilgramNamespaced.lean/declarations/isclosed-range.md) | 83 | `result-track:591773889c331b4fbfd31c092ea21f615e7a60f57cc5306e52a706a6375279a6` |
+| 5 | `theorem` | [range_eq_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/LaxMilgramNamespaced.lean/declarations/range-eq-top.md) | 88 | `result-track:f30867ade9cb8be992f34d05b694dfd63043e23827dbefa842d0b3ef380cdb38` |
+| 6 | `def` | [continuousLinearEquivOfBilin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/LaxMilgramNamespaced.lean/declarations/continuouslinearequivofbilin.md) | 110 | `declaration-track:a36ebc8f0b8151d1d97627c8e698f5a5bfab937b57441d07934ef3c64450795c` |
+| 7 | `theorem` | [continuousLinearEquivOfBilin_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/LaxMilgramNamespaced.lean/declarations/continuouslinearequivofbilin-apply.md) | 114 | `result-track:2b77128a11d05158f6aa9086780e7819e67decb98dc06c657e18911fcfd61c09` |
+| 8 | `theorem` | [unique_continuousLinearEquivOfBilin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/LaxMilgramNamespaced.lean/declarations/unique-continuouslinearequivofbilin.md) | 118 | `result-track:386a667d5b823cecd0ffaeaa4322ebccff66799455b6f089db88f1b4cd697b0d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

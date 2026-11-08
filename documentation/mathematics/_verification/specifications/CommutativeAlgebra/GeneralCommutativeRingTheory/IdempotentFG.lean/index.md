@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/IdempotentFG.lean/index.md) · [Full source](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/IdempotentFG.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/IdempotentFG.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/IdempotentFG.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [isIdempotentElem_iff_of_fg](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/IdempotentFG.lean/declarations/isidempotentelem-iff-of-fg.md) | 18 | `result-track:8e0b0d43bd8597ff2ad76f54ff49aa574785d05ecd92ee4e706cf1e67a747666` |
-| 2 | `theorem` | [isIdempotentElem_iff_eq_bot_or_top](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/IdempotentFG.lean/declarations/isidempotentelem-iff-eq-bot-or-top.md) | 35 | `result-track:ff7b3b5cbbcc29c1c2ef5e57cc003c741448ad496b34c06277028e5f05b05ac7` |
+| 1 | `theorem` | [isIdempotentElem_iff_of_fg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/IdempotentFG.lean/declarations/isidempotentelem-iff-of-fg.md) | 18 | `result-track:8e0b0d43bd8597ff2ad76f54ff49aa574785d05ecd92ee4e706cf1e67a747666` |
+| 2 | `theorem` | [isIdempotentElem_iff_eq_bot_or_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/IdempotentFG.lean/declarations/isidempotentelem-iff-eq-bot-or-top.md) | 35 | `result-track:ff7b3b5cbbcc29c1c2ef5e57cc003c741448ad496b34c06277028e5f05b05ac7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

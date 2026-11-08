@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/Machine.lean/index.md) · [Full source](../../../../Combinatorics/Machine.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Machine.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Machine.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [MachineStep](../../../../Combinatorics/Machine.lean/declarations/machinestep.md) | 13 | `declaration-track:4fc90c223f7580276da0886cbff5e8e8fd1534a2572eccb189a8a00e341f81cd` |
-| 2 | `structure` | [AccessMachine](../../../../Combinatorics/Machine.lean/declarations/accessmachine.md) | 26 | `declaration-track:dce5f2d13af07819834ac214334e4e86126947c6e6d7b77756e4eb06192b0c39` |
-| 3 | `theorem` | [encode_injective](../../../../Combinatorics/Machine.lean/declarations/encode-injective.md) | 88 | `result-track:34d0f9d06b186d65597dfdfa273c0f06549d3fb0b03bd37bd1448be39a52982f` |
-| 4 | `theorem` | [step_preserves_invariant](../../../../Combinatorics/Machine.lean/declarations/step-preserves-invariant.md) | 101 | `result-track:434b04c9cd573ff60e3d1ea2719233a8b641e4b67a1f27d46583f1c1e32c4058` |
-| 5 | `theorem` | [continue_advances_one_step](../../../../Combinatorics/Machine.lean/declarations/continue-advances-one-step.md) | 115 | `result-track:7d879fee63665f486df40762385dd11726c9ec9e5f9d611c52156f419161d26c` |
+| 1 | `inductive` | [MachineStep](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Machine.lean/declarations/machinestep.md) | 13 | `declaration-track:4fc90c223f7580276da0886cbff5e8e8fd1534a2572eccb189a8a00e341f81cd` |
+| 2 | `structure` | [AccessMachine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Machine.lean/declarations/accessmachine.md) | 26 | `declaration-track:dce5f2d13af07819834ac214334e4e86126947c6e6d7b77756e4eb06192b0c39` |
+| 3 | `theorem` | [encode_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Machine.lean/declarations/encode-injective.md) | 88 | `result-track:34d0f9d06b186d65597dfdfa273c0f06549d3fb0b03bd37bd1448be39a52982f` |
+| 4 | `theorem` | [step_preserves_invariant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Machine.lean/declarations/step-preserves-invariant.md) | 101 | `result-track:434b04c9cd573ff60e3d1ea2719233a8b641e4b67a1f27d46583f1c1e32c4058` |
+| 5 | `theorem` | [continue_advances_one_step](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Machine.lean/declarations/continue-advances-one-step.md) | 115 | `result-track:7d879fee63665f486df40762385dd11726c9ec9e5f9d611c52156f419161d26c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

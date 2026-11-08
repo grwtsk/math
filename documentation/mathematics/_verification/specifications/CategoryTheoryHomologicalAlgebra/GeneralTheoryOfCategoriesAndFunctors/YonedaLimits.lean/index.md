@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/YonedaLimits.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/YonedaLimits.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/YonedaLimits.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/YonedaLimits.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [preservesLimits_preadditiveYonedaObj](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/YonedaLimits.lean/declarations/preserveslimits-preadditiveyonedaobj.md) | 33 | `declaration-track:483a1cf43b7c090d0d099ed4adaebb0416b3b5fd43a69b2b0085f2e766a671f3` |
-| 2 | `instance` | [preservesLimits_preadditiveCoyonedaObj](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/YonedaLimits.lean/declarations/preserveslimits-preadditivecoyonedaobj.md) | 38 | `declaration-track:c4e2665c10bca9b4410299694fbf3c3b6eca4486d678fa9b7170b4c9a0dd97f3` |
-| 3 | `instance` | [preservesLimits_preadditiveYoneda_obj](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/YonedaLimits.lean/declarations/preserveslimits-preadditiveyoneda-obj.md) | 44 | `declaration-track:b1b6b09da3ab52e127dec8af7dd13bf6105a7736809b85507efe2d4de4026cd3` |
-| 4 | `instance` | [preservesLimits_preadditiveCoyoneda_obj](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/YonedaLimits.lean/declarations/preserveslimits-preadditivecoyoneda-obj.md) | 48 | `declaration-track:2d7c528f862e003d56e18c413d0419bde25a331da6baa4bb684dfa00be098bf8` |
+| 1 | `instance` | [preservesLimits_preadditiveYonedaObj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/YonedaLimits.lean/declarations/preserveslimits-preadditiveyonedaobj.md) | 33 | `declaration-track:483a1cf43b7c090d0d099ed4adaebb0416b3b5fd43a69b2b0085f2e766a671f3` |
+| 2 | `instance` | [preservesLimits_preadditiveCoyonedaObj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/YonedaLimits.lean/declarations/preserveslimits-preadditivecoyonedaobj.md) | 38 | `declaration-track:c4e2665c10bca9b4410299694fbf3c3b6eca4486d678fa9b7170b4c9a0dd97f3` |
+| 3 | `instance` | [preservesLimits_preadditiveYoneda_obj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/YonedaLimits.lean/declarations/preserveslimits-preadditiveyoneda-obj.md) | 44 | `declaration-track:b1b6b09da3ab52e127dec8af7dd13bf6105a7736809b85507efe2d4de4026cd3` |
+| 4 | `instance` | [preservesLimits_preadditiveCoyoneda_obj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/YonedaLimits.lean/declarations/preserveslimits-preadditivecoyoneda-obj.md) | 48 | `declaration-track:2d7c528f862e003d56e18c413d0419bde25a331da6baa4bb684dfa00be098bf8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

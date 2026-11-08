@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/AssumptionContext.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/AssumptionContext.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AssumptionContext.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AssumptionContext.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,17 +57,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [AssumptionRecord](../../../../../ComputerScience/AlgorithmsInComputerScience/AssumptionContext.lean/declarations/assumptionrecord.md) | 14 | `declaration-track:890018af091c204109117350afbe9a760e675aa38bc1dfce209c021fdf7e35cf` |
-| 2 | `structure` | [AssumptionContext](../../../../../ComputerScience/AlgorithmsInComputerScience/AssumptionContext.lean/declarations/assumptioncontext.md) | 23 | `declaration-track:96549b029c3c81b59f115f149ac4395af02fcc0dd092e8915d32202fd5401098` |
-| 3 | `def` | [contains](../../../../../ComputerScience/AlgorithmsInComputerScience/AssumptionContext.lean/declarations/contains.md) | 34 | `declaration-track:81489d637fb71754f1f6022dc1b81b1ffdbf3b7cf403ab7404426eab02625687` |
-| 4 | `def` | [Subset](../../../../../ComputerScience/AlgorithmsInComputerScience/AssumptionContext.lean/declarations/subset.md) | 38 | `declaration-track:08d195a8d9daa13bd9493dd3d216d0dbfbb814cf255beaedf1ff005e900c8519` |
-| 5 | `def` | [Conflict](../../../../../ComputerScience/AlgorithmsInComputerScience/AssumptionContext.lean/declarations/conflict.md) | 42 | `declaration-track:481fe1d06bc8e17cebc2b013d1a4c240b761fc1d9d3b9474d64fe6a4c24a5e32` |
-| 6 | `theorem` | [subset_refl](../../../../../ComputerScience/AlgorithmsInComputerScience/AssumptionContext.lean/declarations/subset-refl.md) | 46 | `result-track:504cf63446eacc824fb8d6437319bc97a0b1f5918fc40202628c81693e89a6fb` |
-| 7 | `theorem` | [subset_trans](../../../../../ComputerScience/AlgorithmsInComputerScience/AssumptionContext.lean/declarations/subset-trans.md) | 50 | `result-track:e037bf548dd8c505f605a40c1e9d78c927b0919f550757c68fb958505b59feb4` |
-| 8 | `theorem` | [conflict_comm](../../../../../ComputerScience/AlgorithmsInComputerScience/AssumptionContext.lean/declarations/conflict-comm.md) | 58 | `result-track:da7ed4e00a9b333509f85c1e49f8c6240b4c7176074417183b85e5867fe15fdc` |
-| 9 | `def` | [union](../../../../../ComputerScience/AlgorithmsInComputerScience/AssumptionContext.lean/declarations/union.md) | 67 | `declaration-track:ae1f8b5d6a66195a16759b22e622b50935c27e965cf2dbb3effb0ee44d169a97` |
-| 10 | `theorem` | [subset_union_left](../../../../../ComputerScience/AlgorithmsInComputerScience/AssumptionContext.lean/declarations/subset-union-left.md) | 96 | `result-track:2c6230346d9ac082253887834cedb65443c487e15ae6b792aedb20ec905f0cf5` |
-| 11 | `def` | [mapping](../../../../../ComputerScience/AlgorithmsInComputerScience/AssumptionContext.lean/declarations/mapping.md) | 107 | `declaration-track:b5e43b3a5b14921264832359b462186e64a78f85932746ed51d05778b6e9d35c` |
+| 1 | `structure` | [AssumptionRecord](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AssumptionContext.lean/declarations/assumptionrecord.md) | 14 | `declaration-track:890018af091c204109117350afbe9a760e675aa38bc1dfce209c021fdf7e35cf` |
+| 2 | `structure` | [AssumptionContext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AssumptionContext.lean/declarations/assumptioncontext.md) | 23 | `declaration-track:96549b029c3c81b59f115f149ac4395af02fcc0dd092e8915d32202fd5401098` |
+| 3 | `def` | [contains](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AssumptionContext.lean/declarations/contains.md) | 34 | `declaration-track:81489d637fb71754f1f6022dc1b81b1ffdbf3b7cf403ab7404426eab02625687` |
+| 4 | `def` | [Subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AssumptionContext.lean/declarations/subset.md) | 38 | `declaration-track:08d195a8d9daa13bd9493dd3d216d0dbfbb814cf255beaedf1ff005e900c8519` |
+| 5 | `def` | [Conflict](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AssumptionContext.lean/declarations/conflict.md) | 42 | `declaration-track:481fe1d06bc8e17cebc2b013d1a4c240b761fc1d9d3b9474d64fe6a4c24a5e32` |
+| 6 | `theorem` | [subset_refl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AssumptionContext.lean/declarations/subset-refl.md) | 46 | `result-track:504cf63446eacc824fb8d6437319bc97a0b1f5918fc40202628c81693e89a6fb` |
+| 7 | `theorem` | [subset_trans](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AssumptionContext.lean/declarations/subset-trans.md) | 50 | `result-track:e037bf548dd8c505f605a40c1e9d78c927b0919f550757c68fb958505b59feb4` |
+| 8 | `theorem` | [conflict_comm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AssumptionContext.lean/declarations/conflict-comm.md) | 58 | `result-track:da7ed4e00a9b333509f85c1e49f8c6240b4c7176074417183b85e5867fe15fdc` |
+| 9 | `def` | [union](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AssumptionContext.lean/declarations/union.md) | 67 | `declaration-track:ae1f8b5d6a66195a16759b22e622b50935c27e965cf2dbb3effb0ee44d169a97` |
+| 10 | `theorem` | [subset_union_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AssumptionContext.lean/declarations/subset-union-left.md) | 96 | `result-track:2c6230346d9ac082253887834cedb65443c487e15ae6b792aedb20ec905f0cf5` |
+| 11 | `def` | [mapping](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AssumptionContext.lean/declarations/mapping.md) | 107 | `declaration-track:b5e43b3a5b14921264832359b462186e64a78f85932746ed51d05778b6e9d35c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

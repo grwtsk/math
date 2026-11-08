@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FieldTheoryAndPolynomials/PrimitiveElementNamespaced.lean/index.md) · [Full source](../../../../FieldTheoryAndPolynomials/PrimitiveElementNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/PrimitiveElementNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/PrimitiveElementNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,13 +60,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_primitive_element_of_finite_top](../../../../FieldTheoryAndPolynomials/PrimitiveElementNamespaced.lean/declarations/exists-primitive-element-of-finite-top.md) | 62 | `result-track:bf4f47a79f07b6782cf92745281233dbb5b5d1814786f71ee6ea30895b37f272` |
-| 2 | `theorem` | [exists_primitive_element_of_finite_bot](../../../../FieldTheoryAndPolynomials/PrimitiveElementNamespaced.lean/declarations/exists-primitive-element-of-finite-bot.md) | 77 | `result-track:f2148b4d0d6542f9000d365c0ce9af676418b286cface521fa1099b8a6f23396` |
-| 3 | `theorem` | [primitive_element_inf_aux_exists_c](../../../../FieldTheoryAndPolynomials/PrimitiveElementNamespaced.lean/declarations/primitive-element-inf-aux-exists-c.md) | 92 | `result-track:f19c3b07c628562fc200e8d8db5cec405570f4e8f5b4881dd1c34dd2c4185650` |
-| 4 | `theorem` | [primitive_element_inf_aux](../../../../FieldTheoryAndPolynomials/PrimitiveElementNamespaced.lean/declarations/primitive-element-inf-aux.md) | 110 | `result-track:1cd7c3e9c37701f37d309d730903cb6caf518ec86da40fc361d609dffae1f426` |
-| 5 | `theorem` | [exists_primitive_element](../../../../FieldTheoryAndPolynomials/PrimitiveElementNamespaced.lean/declarations/exists-primitive-element.md) | 197 | `result-track:8cb2fffdf61576a65ed0095943fbe75015fe0250f467baafd4b8f05993639443` |
-| 6 | `def` | [powerBasisOfFiniteOfSeparable](../../../../FieldTheoryAndPolynomials/PrimitiveElementNamespaced.lean/declarations/powerbasisoffiniteofseparable.md) | 216 | `declaration-track:d94fb4a8a1e6f00975fcabb6ce0b6095d243bf87ca551326e1fb8a955874b38a` |
-| 7 | `theorem` | [AlgHom.card](../../../../FieldTheoryAndPolynomials/PrimitiveElementNamespaced.lean/declarations/alghom-card.md) | 228 | `result-track:e3258ce4490241f936d8bbef3fb4ba7c5c4149c1d277cdbc7990ade9fbaa237c` |
+| 1 | `theorem` | [exists_primitive_element_of_finite_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/PrimitiveElementNamespaced.lean/declarations/exists-primitive-element-of-finite-top.md) | 62 | `result-track:bf4f47a79f07b6782cf92745281233dbb5b5d1814786f71ee6ea30895b37f272` |
+| 2 | `theorem` | [exists_primitive_element_of_finite_bot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/PrimitiveElementNamespaced.lean/declarations/exists-primitive-element-of-finite-bot.md) | 77 | `result-track:f2148b4d0d6542f9000d365c0ce9af676418b286cface521fa1099b8a6f23396` |
+| 3 | `theorem` | [primitive_element_inf_aux_exists_c](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/PrimitiveElementNamespaced.lean/declarations/primitive-element-inf-aux-exists-c.md) | 92 | `result-track:f19c3b07c628562fc200e8d8db5cec405570f4e8f5b4881dd1c34dd2c4185650` |
+| 4 | `theorem` | [primitive_element_inf_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/PrimitiveElementNamespaced.lean/declarations/primitive-element-inf-aux.md) | 110 | `result-track:1cd7c3e9c37701f37d309d730903cb6caf518ec86da40fc361d609dffae1f426` |
+| 5 | `theorem` | [exists_primitive_element](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/PrimitiveElementNamespaced.lean/declarations/exists-primitive-element.md) | 197 | `result-track:8cb2fffdf61576a65ed0095943fbe75015fe0250f467baafd4b8f05993639443` |
+| 6 | `def` | [powerBasisOfFiniteOfSeparable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/PrimitiveElementNamespaced.lean/declarations/powerbasisoffiniteofseparable.md) | 216 | `declaration-track:d94fb4a8a1e6f00975fcabb6ce0b6095d243bf87ca551326e1fb8a955874b38a` |
+| 7 | `theorem` | [AlgHom.card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/PrimitiveElementNamespaced.lean/declarations/alghom-card.md) | 228 | `result-track:e3258ce4490241f936d8bbef3fb4ba7c5c4149c1d277cdbc7990ade9fbaa237c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/PropagatePublicPropagateBoolDiseq.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/PropagatePublicPropagateBoolDiseq.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/PropagatePublicPropagateBoolDiseq.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/PropagatePublicPropagateBoolDiseq.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,9 +60,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [propagateBoolDiseq](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/PropagatePublicPropagateBoolDiseq.lean/declarations/propagatebooldiseq.md) | 121 | `declaration-track:f6d663a74b7ea11cb7ab7acc88a857c7b50736ba6e27781865665f972c6a14c3` |
-| 2 | `def` | [getLawfulBEqInst?](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/PropagatePublicPropagateBoolDiseq.lean/declarations/getlawfulbeqinst.md) | 231 | `declaration-track:63ae54730b6bc357f39c357011863dee88423dc6800f31e2e4b5dbfb52921bb8` |
-| 3 | `def` | [applyCongrFun](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/PropagatePublicPropagateBoolDiseq.lean/declarations/applycongrfun.md) | 318 | `declaration-track:539d1a75834aa1c055f38a60a4e5fef44b5efa876479da30501620c842a1a318` |
+| 1 | `def` | [propagateBoolDiseq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/PropagatePublicPropagateBoolDiseq.lean/declarations/propagatebooldiseq.md) | 121 | `declaration-track:f6d663a74b7ea11cb7ab7acc88a857c7b50736ba6e27781865665f972c6a14c3` |
+| 2 | `def` | [getLawfulBEqInst?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/PropagatePublicPropagateBoolDiseq.lean/declarations/getlawfulbeqinst.md) | 231 | `declaration-track:63ae54730b6bc357f39c357011863dee88423dc6800f31e2e4b5dbfb52921bb8` |
+| 3 | `def` | [applyCongrFun](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/PropagatePublicPropagateBoolDiseq.lean/declarations/applycongrfun.md) | 318 | `declaration-track:539d1a75834aa1c055f38a60a4e5fef44b5efa876479da30501620c842a1a318` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

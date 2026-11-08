@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreShortIntervalOneDepthTranspose.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreShortIntervalOneDepthTranspose.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreShortIntervalOneDepthTranspose.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreShortIntervalOneDepthTranspose.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Moebius.CoreShortIntervalDepthTranspose`](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreShortIntervalDepthTranspose.lean/index.md) — import line 11; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.CoreShortIntervalDepthTranspose`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreShortIntervalDepthTranspose.lean/index.md) — import line 11; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sum_succ_range_filter_eq_Ico](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreShortIntervalOneDepthTranspose.lean/declarations/sum-succ-range-filter-eq-ico.md) | 19 | `result-track:761ca2f4a9ccbf8bebb286ec7fd6477cd93e8752b58b279c64ee7738d8ec918d` |
-| 2 | `theorem` | [incompatibleTerminal_eq_lengthSelectorSum](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreShortIntervalOneDepthTranspose.lean/declarations/incompatibleterminal-eq-lengthselectorsum.md) | 47 | `result-track:9178d4c70f98c34991ff086c60d81e5befe2d2a43247094a1d8aa15a32198e71` |
-| 3 | `theorem` | [incompatibleLongInterior_eq_lengthSelectorSum](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreShortIntervalOneDepthTranspose.lean/declarations/incompatiblelonginterior-eq-lengthselectorsum.md) | 82 | `result-track:693f51d159b469dd20fc8a6ac3d48625a0f5f47269145fe7c9ac4b43d738b9ae` |
-| 4 | `theorem` | [coreLongDepthIncompatibleDyadicL1_eq_lengthwise](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreShortIntervalOneDepthTranspose.lean/declarations/corelongdepthincompatibledyadicl1-eq-lengthwise.md) | 150 | `result-track:df1bb6600e091f549ef573ce1c91a1aaf789d2f06902ec44fa058d1dad437bc1` |
+| 1 | `theorem` | [sum_succ_range_filter_eq_Ico](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreShortIntervalOneDepthTranspose.lean/declarations/sum-succ-range-filter-eq-ico.md) | 19 | `result-track:761ca2f4a9ccbf8bebb286ec7fd6477cd93e8752b58b279c64ee7738d8ec918d` |
+| 2 | `theorem` | [incompatibleTerminal_eq_lengthSelectorSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreShortIntervalOneDepthTranspose.lean/declarations/incompatibleterminal-eq-lengthselectorsum.md) | 47 | `result-track:9178d4c70f98c34991ff086c60d81e5befe2d2a43247094a1d8aa15a32198e71` |
+| 3 | `theorem` | [incompatibleLongInterior_eq_lengthSelectorSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreShortIntervalOneDepthTranspose.lean/declarations/incompatiblelonginterior-eq-lengthselectorsum.md) | 82 | `result-track:693f51d159b469dd20fc8a6ac3d48625a0f5f47269145fe7c9ac4b43d738b9ae` |
+| 4 | `theorem` | [coreLongDepthIncompatibleDyadicL1_eq_lengthwise](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreShortIntervalOneDepthTranspose.lean/declarations/corelongdepthincompatibledyadicl1-eq-lengthwise.md) | 150 | `result-track:df1bb6600e091f549ef573ce1c91a1aaf789d2f06902ec44fa058d1dad437bc1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

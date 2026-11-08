@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectQuarterBlocks.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectQuarterBlocks.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectQuarterBlocks.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectQuarterBlocks.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.BigOperators.CheckedChunkComposition`](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CheckedChunkComposition.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenDirectHalfBlocks`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectHalfBlocks.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.Algebra.BigOperators.CheckedChunkComposition`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CheckedChunkComposition.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenDirectHalfBlocks`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectHalfBlocks.lean/index.md) — import line 6; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [quarterWidths](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectQuarterBlocks.lean/declarations/quarterwidths.md) | 24 | `declaration-track:d27ae774680e345cfe27aff48e0debfa364c2006bdfe7c3516cfe1f655288332` |
-| 2 | `def` | [quarterExpected](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectQuarterBlocks.lean/declarations/quarterexpected.md) | 27 | `declaration-track:f7820a7ab3c0d40fdb019a045434e5e1590fc8c56d260f66b0b669f95afb5f55` |
-| 3 | `theorem` | [quarterWidths_shape](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectQuarterBlocks.lean/declarations/quarterwidths-shape.md) | 29 | `result-track:bdc13b925fa6021d478e78ec61b6d0af4fef6e58c93f9e05457738ccbce03a90` |
-| 4 | `theorem` | [quarterExpected_shape](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectQuarterBlocks.lean/declarations/quarterexpected-shape.md) | 32 | `result-track:12263eab8f099239692221eafcedd57355722935833cf4be0b74959d89f6c63f` |
-| 5 | `def` | [QuarterObligations](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectQuarterBlocks.lean/declarations/quarterobligations.md) | 36 | `declaration-track:5119289bae2732cb7351c7fd85acd6b8383c798cbb6d2c1db8c45663789259ed` |
+| 1 | `def` | [quarterWidths](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectQuarterBlocks.lean/declarations/quarterwidths.md) | 24 | `declaration-track:d27ae774680e345cfe27aff48e0debfa364c2006bdfe7c3516cfe1f655288332` |
+| 2 | `def` | [quarterExpected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectQuarterBlocks.lean/declarations/quarterexpected.md) | 27 | `declaration-track:f7820a7ab3c0d40fdb019a045434e5e1590fc8c56d260f66b0b669f95afb5f55` |
+| 3 | `theorem` | [quarterWidths_shape](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectQuarterBlocks.lean/declarations/quarterwidths-shape.md) | 29 | `result-track:bdc13b925fa6021d478e78ec61b6d0af4fef6e58c93f9e05457738ccbce03a90` |
+| 4 | `theorem` | [quarterExpected_shape](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectQuarterBlocks.lean/declarations/quarterexpected-shape.md) | 32 | `result-track:12263eab8f099239692221eafcedd57355722935833cf4be0b74959d89f6c63f` |
+| 5 | `def` | [QuarterObligations](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectQuarterBlocks.lean/declarations/quarterobligations.md) | 36 | `declaration-track:5119289bae2732cb7351c7fd85acd6b8383c798cbb6d2c1db8c45663789259ed` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

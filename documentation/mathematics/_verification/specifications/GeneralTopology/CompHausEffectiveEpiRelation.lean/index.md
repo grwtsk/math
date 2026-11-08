@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/CompHausEffectiveEpiRelation.lean/index.md) · [Full source](../../../../GeneralTopology/CompHausEffectiveEpiRelation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompHausEffectiveEpiRelation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompHausEffectiveEpiRelation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,21 +58,21 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [relation](../../../../GeneralTopology/CompHausEffectiveEpiRelation.lean/declarations/relation.md) | 48 | `declaration-track:7f29ef086d8362a795a4ad0871348bd637faea58715ac7405d36f0efe8723645` |
-| 2 | `def` | [ιFun](../../../../GeneralTopology/CompHausEffectiveEpiRelation.lean/declarations/fun.md) | 72 | `declaration-track:5b7c4c5a14f599249d4d47c04ee01da9246c5dd6e3002fdd97b09d9a85e0c7b3` |
-| 3 | `lemma` | [ιFun_continuous](../../../../GeneralTopology/CompHausEffectiveEpiRelation.lean/declarations/fun-continuous.md) | 80 | `result-track:d94c8cfb64046fc97b7152356185e9353b583a8b5b7b9170a1b124685d34986d` |
-| 4 | `lemma` | [ιFun_injective](../../../../GeneralTopology/CompHausEffectiveEpiRelation.lean/declarations/fun-injective.md) | 86 | `result-track:581f7d5a37d2423acc29020373eaaa495610f3194a89835aa14ec6d47e65321b` |
-| 5 | `def` | [QB](../../../../GeneralTopology/CompHausEffectiveEpiRelation.lean/declarations/qb.md) | 95 | `declaration-track:e3f5e4a687c80d07692c11984f3ab933e307e5542eb6f270c602b8d4a1aebe8b` |
-| 6 | `def` | [ιHom](../../../../GeneralTopology/CompHausEffectiveEpiRelation.lean/declarations/hom.md) | 101 | `declaration-track:7bc9a8cfeb1046bc961e58f9b3a7fa05a57e30cf616459155df8fb9dc5282492` |
-| 7 | `def` | [ι](../../../../GeneralTopology/CompHausEffectiveEpiRelation.lean/declarations/anonymous.md) | 107 | `declaration-track:2fdb964416f03dac0107f0e3f457b9a6234eeffe446daa7588d16fe0e9071676` |
-| 8 | `def` | [π'](../../../../GeneralTopology/CompHausEffectiveEpiRelation.lean/declarations/anonymous-source-edition-2.md) | 119 | `declaration-track:d2a12a412e621bf639d85bd77ce49cd40525510523cba0c95db2466eb6cdb0ec` |
-| 9 | `def` | [structAux](../../../../GeneralTopology/CompHausEffectiveEpiRelation.lean/declarations/structaux.md) | 129 | `declaration-track:70de932508acd57272ed59087bdf0356907f73f312cb8dd9b86e681462f6896c` |
-| 10 | `lemma` | [π'_comp_ι_hom](../../../../GeneralTopology/CompHausEffectiveEpiRelation.lean/declarations/comp-hom.md) | 155 | `result-track:bad6d9a7d7a653ae95bea0aa023ec0c6561c2216029982184c9486b701070950` |
-| 11 | `lemma` | [π_comp_ι_inv](../../../../GeneralTopology/CompHausEffectiveEpiRelation.lean/declarations/comp-inv.md) | 158 | `result-track:a7f44c94e3b65c24d88857011c915c6b868e029a1c01b1ca11d7b4f63dadd307` |
-| 12 | `def` | [struct](../../../../GeneralTopology/CompHausEffectiveEpiRelation.lean/declarations/struct.md) | 168 | `declaration-track:322bca458c2b3f8addfe892fdd604544b34830a700e0a5f0738d42e55e468377` |
-| 13 | `theorem` | [effectiveEpiFamily_of_jointly_surjective](../../../../GeneralTopology/CompHausEffectiveEpiRelation.lean/declarations/effectiveepifamily-of-jointly-surjective.md) | 186 | `result-track:bb4b95c48731a14150b17c7cf9fe514580145575a29a4c7a5446fab2aad1310f` |
-| 14 | `theorem` | [effectiveEpiFamily_tfae](../../../../GeneralTopology/CompHausEffectiveEpiRelation.lean/declarations/effectiveepifamily-tfae.md) | 196 | `result-track:bdef4f9697ea62d5fcf950f34dadab8da2e36806cb1335fde84ce11c19a3dce7` |
-| 15 | `instance` | [precoherent](../../../../GeneralTopology/CompHausEffectiveEpiRelation.lean/declarations/precoherent.md) | 229 | `declaration-track:6a7388f8580b0d9080011256cfd4ea2c837ac632cd7bcf343af5a49b252a86a9` |
+| 1 | `def` | [relation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompHausEffectiveEpiRelation.lean/declarations/relation.md) | 48 | `declaration-track:7f29ef086d8362a795a4ad0871348bd637faea58715ac7405d36f0efe8723645` |
+| 2 | `def` | [ιFun](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompHausEffectiveEpiRelation.lean/declarations/fun.md) | 72 | `declaration-track:5b7c4c5a14f599249d4d47c04ee01da9246c5dd6e3002fdd97b09d9a85e0c7b3` |
+| 3 | `lemma` | [ιFun_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompHausEffectiveEpiRelation.lean/declarations/fun-continuous.md) | 80 | `result-track:d94c8cfb64046fc97b7152356185e9353b583a8b5b7b9170a1b124685d34986d` |
+| 4 | `lemma` | [ιFun_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompHausEffectiveEpiRelation.lean/declarations/fun-injective.md) | 86 | `result-track:581f7d5a37d2423acc29020373eaaa495610f3194a89835aa14ec6d47e65321b` |
+| 5 | `def` | [QB](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompHausEffectiveEpiRelation.lean/declarations/qb.md) | 95 | `declaration-track:e3f5e4a687c80d07692c11984f3ab933e307e5542eb6f270c602b8d4a1aebe8b` |
+| 6 | `def` | [ιHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompHausEffectiveEpiRelation.lean/declarations/hom.md) | 101 | `declaration-track:7bc9a8cfeb1046bc961e58f9b3a7fa05a57e30cf616459155df8fb9dc5282492` |
+| 7 | `def` | [ι](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompHausEffectiveEpiRelation.lean/declarations/anonymous.md) | 107 | `declaration-track:2fdb964416f03dac0107f0e3f457b9a6234eeffe446daa7588d16fe0e9071676` |
+| 8 | `def` | [π'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompHausEffectiveEpiRelation.lean/declarations/anonymous-source-edition-2.md) | 119 | `declaration-track:d2a12a412e621bf639d85bd77ce49cd40525510523cba0c95db2466eb6cdb0ec` |
+| 9 | `def` | [structAux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompHausEffectiveEpiRelation.lean/declarations/structaux.md) | 129 | `declaration-track:70de932508acd57272ed59087bdf0356907f73f312cb8dd9b86e681462f6896c` |
+| 10 | `lemma` | [π'_comp_ι_hom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompHausEffectiveEpiRelation.lean/declarations/comp-hom.md) | 155 | `result-track:bad6d9a7d7a653ae95bea0aa023ec0c6561c2216029982184c9486b701070950` |
+| 11 | `lemma` | [π_comp_ι_inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompHausEffectiveEpiRelation.lean/declarations/comp-inv.md) | 158 | `result-track:a7f44c94e3b65c24d88857011c915c6b868e029a1c01b1ca11d7b4f63dadd307` |
+| 12 | `def` | [struct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompHausEffectiveEpiRelation.lean/declarations/struct.md) | 168 | `declaration-track:322bca458c2b3f8addfe892fdd604544b34830a700e0a5f0738d42e55e468377` |
+| 13 | `theorem` | [effectiveEpiFamily_of_jointly_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompHausEffectiveEpiRelation.lean/declarations/effectiveepifamily-of-jointly-surjective.md) | 186 | `result-track:bb4b95c48731a14150b17c7cf9fe514580145575a29a4c7a5446fab2aad1310f` |
+| 14 | `theorem` | [effectiveEpiFamily_tfae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompHausEffectiveEpiRelation.lean/declarations/effectiveepifamily-tfae.md) | 196 | `result-track:bdef4f9697ea62d5fcf950f34dadab8da2e36806cb1335fde84ce11c19a3dce7` |
+| 15 | `instance` | [precoherent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompHausEffectiveEpiRelation.lean/declarations/precoherent.md) | 229 | `declaration-track:6a7388f8580b0d9080011256cfd4ea2c837ac632cd7bcf343af5a49b252a86a9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

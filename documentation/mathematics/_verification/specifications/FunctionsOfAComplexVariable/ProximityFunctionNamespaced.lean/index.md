@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/ProximityFunctionNamespaced.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/ProximityFunctionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ProximityFunctionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ProximityFunctionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [proximity](../../../../FunctionsOfAComplexVariable/ProximityFunctionNamespaced.lean/declarations/proximity.md) | 53 | `declaration-track:e2214c5c71623afcdb658b7c67654ce61385bf615d0a66c23d678b91fb3d1e57` |
-| 2 | `lemma` | [proximity_coe](../../../../FunctionsOfAComplexVariable/ProximityFunctionNamespaced.lean/declarations/proximity-coe.md) | 59 | `result-track:b2596f3d37c7deb8e62a5525be662347e910970b8ae4acaaef538e0804797e62` |
-| 3 | `lemma` | [proximity_zero](../../../../FunctionsOfAComplexVariable/ProximityFunctionNamespaced.lean/declarations/proximity-zero.md) | 66 | `result-track:abce0da19539ccf9ab06c7e91e2af9a6b0eedfb2e47547f8f2d7fe9a576a5bf4` |
-| 4 | `lemma` | [proximity_zero_of_complexValued](../../../../FunctionsOfAComplexVariable/ProximityFunctionNamespaced.lean/declarations/proximity-zero-of-complexvalued.md) | 73 | `result-track:b33b2f1bfd31a733b9cbe2364e20eb5cba31adcc6ab404f5ffa4664c3070a06a` |
-| 5 | `lemma` | [proximity_top](../../../../FunctionsOfAComplexVariable/ProximityFunctionNamespaced.lean/declarations/proximity-top.md) | 80 | `result-track:2aa4880879d6c79440d390a99878f6993ed49cdbb2d78d1a9706522daa5cd72a` |
-| 6 | `lemma` | [proximity_coe_eq_proximity_sub_const_zero](../../../../FunctionsOfAComplexVariable/ProximityFunctionNamespaced.lean/declarations/proximity-coe-eq-proximity-sub-const-zero.md) | 91 | `result-track:5b8277f302aa0bb5f92ed1438dd77d1a85b6e776bb7fa079dae49f80110b10aa` |
-| 7 | `theorem` | [proximity_inv](../../../../FunctionsOfAComplexVariable/ProximityFunctionNamespaced.lean/declarations/proximity-inv.md) | 99 | `result-track:357caf1a9e3e2adab8323af0abff3fc3d61af2163c883f278d3db0c003d0130b` |
+| 1 | `def` | [proximity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ProximityFunctionNamespaced.lean/declarations/proximity.md) | 53 | `declaration-track:e2214c5c71623afcdb658b7c67654ce61385bf615d0a66c23d678b91fb3d1e57` |
+| 2 | `lemma` | [proximity_coe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ProximityFunctionNamespaced.lean/declarations/proximity-coe.md) | 59 | `result-track:b2596f3d37c7deb8e62a5525be662347e910970b8ae4acaaef538e0804797e62` |
+| 3 | `lemma` | [proximity_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ProximityFunctionNamespaced.lean/declarations/proximity-zero.md) | 66 | `result-track:abce0da19539ccf9ab06c7e91e2af9a6b0eedfb2e47547f8f2d7fe9a576a5bf4` |
+| 4 | `lemma` | [proximity_zero_of_complexValued](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ProximityFunctionNamespaced.lean/declarations/proximity-zero-of-complexvalued.md) | 73 | `result-track:b33b2f1bfd31a733b9cbe2364e20eb5cba31adcc6ab404f5ffa4664c3070a06a` |
+| 5 | `lemma` | [proximity_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ProximityFunctionNamespaced.lean/declarations/proximity-top.md) | 80 | `result-track:2aa4880879d6c79440d390a99878f6993ed49cdbb2d78d1a9706522daa5cd72a` |
+| 6 | `lemma` | [proximity_coe_eq_proximity_sub_const_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ProximityFunctionNamespaced.lean/declarations/proximity-coe-eq-proximity-sub-const-zero.md) | 91 | `result-track:5b8277f302aa0bb5f92ed1438dd77d1a85b6e776bb7fa079dae49f80110b10aa` |
+| 7 | `theorem` | [proximity_inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ProximityFunctionNamespaced.lean/declarations/proximity-inv.md) | 99 | `result-track:357caf1a9e3e2adab8323af0abff3fc3d61af2163c883f278d3db0c003d0130b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

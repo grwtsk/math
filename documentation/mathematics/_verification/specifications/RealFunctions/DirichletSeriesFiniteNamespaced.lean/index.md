@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/DirichletSeriesFiniteNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/DirichletSeriesFiniteNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DirichletSeriesFiniteNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DirichletSeriesFiniteNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [finiteDirichletSum](../../../../RealFunctions/DirichletSeriesFiniteNamespaced.lean/declarations/finitedirichletsum.md) | 24 | `declaration-track:4fb0aae1df2cfc4c259c8b4c7c8abdcc4b55f41d89f1eda1bf4c7226e405a895` |
-| 2 | `theorem` | [finiteDirichletSum_add](../../../../RealFunctions/DirichletSeriesFiniteNamespaced.lean/declarations/finitedirichletsum-add.md) | 30 | `result-track:408d2057781ba16e7a801ffcfe016841c11f6e79b2c8ea87a5a8f2dbaaa9c1da` |
-| 3 | `theorem` | [finiteDirichletSum_zero](../../../../RealFunctions/DirichletSeriesFiniteNamespaced.lean/declarations/finitedirichletsum-zero.md) | 38 | `result-track:d5a0ccc2deca7095916ced2eca74bbcb4bdc3825dfda543507e9252e689f65e0` |
+| 1 | `def` | [finiteDirichletSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DirichletSeriesFiniteNamespaced.lean/declarations/finitedirichletsum.md) | 24 | `declaration-track:4fb0aae1df2cfc4c259c8b4c7c8abdcc4b55f41d89f1eda1bf4c7226e405a895` |
+| 2 | `theorem` | [finiteDirichletSum_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DirichletSeriesFiniteNamespaced.lean/declarations/finitedirichletsum-add.md) | 30 | `result-track:408d2057781ba16e7a801ffcfe016841c11f6e79b2c8ea87a5a8f2dbaaa9c1da` |
+| 3 | `theorem` | [finiteDirichletSum_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DirichletSeriesFiniteNamespaced.lean/declarations/finitedirichletsum-zero.md) | 38 | `result-track:d5a0ccc2deca7095916ced2eca74bbcb4bdc3825dfda543507e9252e689f65e0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

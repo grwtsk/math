@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/DiniNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/DiniNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiniNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiniNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,16 +59,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [tendstoLocallyUniformly_of_forall_tendsto](../../../../GeneralTopology/DiniNamespaced.lean/declarations/tendstolocallyuniformly-of-forall-tendsto-source-edition-2.md) | 56 | `result-track:a34e7524d0472f1fe15e74b5a648531f2e6c269c52889c4c20a8842ac6eb0f9d` |
-| 2 | `lemma` | [tendstoLocallyUniformlyOn_of_forall_tendsto](../../../../GeneralTopology/DiniNamespaced.lean/declarations/tendstolocallyuniformlyon-of-forall-tendsto.md) | 79 | `result-track:dce60fe912f0b351535c8025f38a8d1aeed725bfa4856badadc334be69c3eba1` |
-| 3 | `lemma` | [tendstoUniformly_of_forall_tendsto](../../../../GeneralTopology/DiniNamespaced.lean/declarations/tendstouniformly-of-forall-tendsto.md) | 90 | `result-track:55edabc3174afaf554d593ddd5f4461bb12aca14b8eb937dfabb1b58dd12dfbf` |
-| 4 | `lemma` | [tendstoUniformlyOn_of_forall_tendsto](../../../../GeneralTopology/DiniNamespaced.lean/declarations/tendstouniformlyon-of-forall-tendsto-source-edition-2.md) | 99 | `result-track:ad13228a909810473b13216af436342a2504d02958f633b2c17f7ed957575178` |
-| 5 | `lemma` | [tendstoLocallyUniformly_of_forall_tendsto](../../../../GeneralTopology/DiniNamespaced.lean/declarations/tendstolocallyuniformly-of-forall-tendsto.md) | 112 | `result-track:a1f285ff6f8a688e4792c07af74a6c3df9438dd56576687ddb7fa76b5a88e917` |
-| 6 | `lemma` | [tendstoLocallyUniformlyOn_of_forall_tendsto](../../../../GeneralTopology/DiniNamespaced.lean/declarations/tendstolocallyuniformlyon-of-forall-tendsto-source-edition-2.md) | 121 | `result-track:efc76f94349d13406a68a21cd743f6953503af21bde0cddd0c085371ed5083a8` |
-| 7 | `lemma` | [tendstoUniformly_of_forall_tendsto](../../../../GeneralTopology/DiniNamespaced.lean/declarations/tendstouniformly-of-forall-tendsto-source-edition-2.md) | 130 | `result-track:f9d196d604bb413334c6b27ad9fc38c59681fdf0ae717ff4b28ea7e38c2ba008` |
-| 8 | `lemma` | [tendstoUniformlyOn_of_forall_tendsto](../../../../GeneralTopology/DiniNamespaced.lean/declarations/tendstouniformlyon-of-forall-tendsto.md) | 137 | `result-track:348e5f8d30c35064fa155e9ecfd8679e44adf78e2cda457a1b21013e952e3808` |
-| 9 | `lemma` | [tendsto_of_monotone_of_pointwise](../../../../GeneralTopology/DiniNamespaced.lean/declarations/tendsto-of-monotone-of-pointwise.md) | 154 | `result-track:2fdc30fa3f0bdf66c7eb6447b234fb286406bdcddd35c3f40ec9aa8e48cdb438` |
-| 10 | `lemma` | [tendsto_of_antitone_of_pointwise](../../../../GeneralTopology/DiniNamespaced.lean/declarations/tendsto-of-antitone-of-pointwise.md) | 163 | `result-track:4fbcb96134dfbb04d44fc7c6d0c7b38236f8ebc0832bcab753e4882782c8e096` |
+| 1 | `lemma` | [tendstoLocallyUniformly_of_forall_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiniNamespaced.lean/declarations/tendstolocallyuniformly-of-forall-tendsto-source-edition-2.md) | 56 | `result-track:a34e7524d0472f1fe15e74b5a648531f2e6c269c52889c4c20a8842ac6eb0f9d` |
+| 2 | `lemma` | [tendstoLocallyUniformlyOn_of_forall_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiniNamespaced.lean/declarations/tendstolocallyuniformlyon-of-forall-tendsto.md) | 79 | `result-track:dce60fe912f0b351535c8025f38a8d1aeed725bfa4856badadc334be69c3eba1` |
+| 3 | `lemma` | [tendstoUniformly_of_forall_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiniNamespaced.lean/declarations/tendstouniformly-of-forall-tendsto.md) | 90 | `result-track:55edabc3174afaf554d593ddd5f4461bb12aca14b8eb937dfabb1b58dd12dfbf` |
+| 4 | `lemma` | [tendstoUniformlyOn_of_forall_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiniNamespaced.lean/declarations/tendstouniformlyon-of-forall-tendsto-source-edition-2.md) | 99 | `result-track:ad13228a909810473b13216af436342a2504d02958f633b2c17f7ed957575178` |
+| 5 | `lemma` | [tendstoLocallyUniformly_of_forall_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiniNamespaced.lean/declarations/tendstolocallyuniformly-of-forall-tendsto.md) | 112 | `result-track:a1f285ff6f8a688e4792c07af74a6c3df9438dd56576687ddb7fa76b5a88e917` |
+| 6 | `lemma` | [tendstoLocallyUniformlyOn_of_forall_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiniNamespaced.lean/declarations/tendstolocallyuniformlyon-of-forall-tendsto-source-edition-2.md) | 121 | `result-track:efc76f94349d13406a68a21cd743f6953503af21bde0cddd0c085371ed5083a8` |
+| 7 | `lemma` | [tendstoUniformly_of_forall_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiniNamespaced.lean/declarations/tendstouniformly-of-forall-tendsto-source-edition-2.md) | 130 | `result-track:f9d196d604bb413334c6b27ad9fc38c59681fdf0ae717ff4b28ea7e38c2ba008` |
+| 8 | `lemma` | [tendstoUniformlyOn_of_forall_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiniNamespaced.lean/declarations/tendstouniformlyon-of-forall-tendsto.md) | 137 | `result-track:348e5f8d30c35064fa155e9ecfd8679e44adf78e2cda457a1b21013e952e3808` |
+| 9 | `lemma` | [tendsto_of_monotone_of_pointwise](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiniNamespaced.lean/declarations/tendsto-of-monotone-of-pointwise.md) | 154 | `result-track:2fdc30fa3f0bdf66c7eb6447b234fb286406bdcddd35c3f40ec9aa8e48cdb438` |
+| 10 | `lemma` | [tendsto_of_antitone_of_pointwise](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiniNamespaced.lean/declarations/tendsto-of-antitone-of-pointwise.md) | 163 | `result-track:4fbcb96134dfbb04d44fc7c6d0c7b38236f8ebc0832bcab753e4882782c8e096` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

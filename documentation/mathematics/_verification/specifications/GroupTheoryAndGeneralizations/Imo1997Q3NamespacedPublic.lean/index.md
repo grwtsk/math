@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/Imo1997Q3NamespacedPublic.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/Imo1997Q3NamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Imo1997Q3NamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Imo1997Q3NamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [S](../../../../GroupTheoryAndGeneralizations/Imo1997Q3NamespacedPublic.lean/declarations/s.md) | 59 | `declaration-track:c67fbf50847ece287f44b1024f1ce125afc6712abfb5e4bd5989fe7fde94289d` |
-| 2 | `lemma` | [sign_eq_of_abs_sub_le](../../../../GroupTheoryAndGeneralizations/Imo1997Q3NamespacedPublic.lean/declarations/sign-eq-of-abs-sub-le.md) | 62 | `result-track:742250ae53e1dac544d2c97d4ba2664e04ebf970456b608a721e9a7efc7eed5f` |
-| 3 | `lemma` | [lt_abs_add_of_sign_eq](../../../../GroupTheoryAndGeneralizations/Imo1997Q3NamespacedPublic.lean/declarations/lt-abs-add-of-sign-eq.md) | 67 | `result-track:7e5560a14a478dd474a4dfb29345b98b4a599c962088301e9b223f5443faa6a6` |
-| 4 | `lemma` | [sign_eq_of_contra](../../../../GroupTheoryAndGeneralizations/Imo1997Q3NamespacedPublic.lean/declarations/sign-eq-of-contra.md) | 74 | `result-track:cf3edaf6d34199df8e1613122101d85b3ebea72240b9e180cdfd098fbc04fce1` |
-| 5 | `lemma` | [S_one_add_S_revPerm](../../../../GroupTheoryAndGeneralizations/Imo1997Q3NamespacedPublic.lean/declarations/s-one-add-s-revperm.md) | 103 | `result-track:c5804eb67f66c032e34a508782eb0846b2e90a5cc20742ca3960e039a2c7f1e1` |
-| 6 | `theorem` | [result](../../../../GroupTheoryAndGeneralizations/Imo1997Q3NamespacedPublic.lean/declarations/result.md) | 111 | `result-track:ec42f4e6889161319b07c86d12489ce6715a3887d83c4c6bb6766edc2c8d8caa` |
+| 1 | `def` | [S](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Imo1997Q3NamespacedPublic.lean/declarations/s.md) | 59 | `declaration-track:c67fbf50847ece287f44b1024f1ce125afc6712abfb5e4bd5989fe7fde94289d` |
+| 2 | `lemma` | [sign_eq_of_abs_sub_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Imo1997Q3NamespacedPublic.lean/declarations/sign-eq-of-abs-sub-le.md) | 62 | `result-track:742250ae53e1dac544d2c97d4ba2664e04ebf970456b608a721e9a7efc7eed5f` |
+| 3 | `lemma` | [lt_abs_add_of_sign_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Imo1997Q3NamespacedPublic.lean/declarations/lt-abs-add-of-sign-eq.md) | 67 | `result-track:7e5560a14a478dd474a4dfb29345b98b4a599c962088301e9b223f5443faa6a6` |
+| 4 | `lemma` | [sign_eq_of_contra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Imo1997Q3NamespacedPublic.lean/declarations/sign-eq-of-contra.md) | 74 | `result-track:cf3edaf6d34199df8e1613122101d85b3ebea72240b9e180cdfd098fbc04fce1` |
+| 5 | `lemma` | [S_one_add_S_revPerm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Imo1997Q3NamespacedPublic.lean/declarations/s-one-add-s-revperm.md) | 103 | `result-track:c5804eb67f66c032e34a508782eb0846b2e90a5cc20742ca3960e039a2c7f1e1` |
+| 6 | `theorem` | [result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Imo1997Q3NamespacedPublic.lean/declarations/result.md) | 111 | `result-track:ec42f4e6889161319b07c86d12489ce6715a3887d83c4c6bb6766edc2c8d8caa` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

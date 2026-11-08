@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/PolynomialPartialFractionsPartialFractionsNamespacedSourceEdition1.lean/index.md) · [Full source](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/PolynomialPartialFractionsPartialFractionsNamespacedSourceEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/PolynomialPartialFractionsPartialFractionsNamespacedSourceEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/PolynomialPartialFractionsPartialFractionsNamespacedSourceEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,8 +62,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [div_eq_quo_add_rem_div_add_rem_div](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/PolynomialPartialFractionsPartialFractionsNamespacedSourceEdition1.lean/declarations/div-eq-quo-add-rem-div-add-rem-div.md) | 66 | `result-track:bb7c7c0d2bc6ed1e0cd8693a122cb22393f7668e2380ec677ed5ccb14042daff` |
-| 2 | `theorem` | [div_eq_quo_add_sum_rem_div](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/PolynomialPartialFractionsPartialFractionsNamespacedSourceEdition1.lean/declarations/div-eq-quo-add-sum-rem-div.md) | 97 | `result-track:76b76e7d856e92c711f9f17c737ca9c7155acc56cc78618159e8517280d0e755` |
+| 1 | `theorem` | [div_eq_quo_add_rem_div_add_rem_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/PolynomialPartialFractionsPartialFractionsNamespacedSourceEdition1.lean/declarations/div-eq-quo-add-rem-div-add-rem-div.md) | 66 | `result-track:bb7c7c0d2bc6ed1e0cd8693a122cb22393f7668e2380ec677ed5ccb14042daff` |
+| 2 | `theorem` | [div_eq_quo_add_sum_rem_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/PolynomialPartialFractionsPartialFractionsNamespacedSourceEdition1.lean/declarations/div-eq-quo-add-sum-rem-div.md) | 97 | `result-track:76b76e7d856e92c711f9f17c737ca9c7155acc56cc78618159e8517280d0e755` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

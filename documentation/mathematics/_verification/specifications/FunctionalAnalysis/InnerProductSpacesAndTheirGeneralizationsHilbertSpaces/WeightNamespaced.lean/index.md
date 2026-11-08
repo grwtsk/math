@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/WeightNamespaced.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/WeightNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/WeightNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/WeightNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [autoWeight](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/WeightNamespaced.lean/declarations/autoweight.md) | 25 | `declaration-track:bc7d5fc274a3e7d86e68ef3dac883db09e7e6502f6bfbc10b337fcb1d084b803` |
-| 2 | `def` | [autoMeasure](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/WeightNamespaced.lean/declarations/automeasure.md) | 34 | `declaration-track:51ba0e926a3ada79c0a55fd79de33eaacc27d278e3cccee3e4c268778e7a4f15` |
-| 3 | `abbrev` | [Hϕ](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/WeightNamespaced.lean/declarations/h.md) | 44 | `declaration-track:57454bea34aeee8a96bfdc90064fab8ea173cd8c76d2104f252da28f17f955fb` |
-| 4 | `instance` | [(anonymous)](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/WeightNamespaced.lean/declarations/instance.md) | 50 | `declaration-track:bdf0a94b2d6b57277aa8105b1f5b79b553e892c588e46b99e98e1e006e4acf69` |
-| 5 | `instance` | [(anonymous)](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/WeightNamespaced.lean/declarations/instance-source-edition-3.md) | 51 | `declaration-track:d31587a6b969c8af1e3fe019fe1c491fa11f186f0ecc52ddf088e171bc74a951` |
-| 6 | `instance` | [(anonymous)](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/WeightNamespaced.lean/declarations/instance-source-edition-2.md) | 52 | `declaration-track:cbaeb8724fb7d9cbc96d325bdd95521580063286b6f4b20cc22c0dfc02e5bf4c` |
+| 1 | `def` | [autoWeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/WeightNamespaced.lean/declarations/autoweight.md) | 25 | `declaration-track:bc7d5fc274a3e7d86e68ef3dac883db09e7e6502f6bfbc10b337fcb1d084b803` |
+| 2 | `def` | [autoMeasure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/WeightNamespaced.lean/declarations/automeasure.md) | 34 | `declaration-track:51ba0e926a3ada79c0a55fd79de33eaacc27d278e3cccee3e4c268778e7a4f15` |
+| 3 | `abbrev` | [Hϕ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/WeightNamespaced.lean/declarations/h.md) | 44 | `declaration-track:57454bea34aeee8a96bfdc90064fab8ea173cd8c76d2104f252da28f17f955fb` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/WeightNamespaced.lean/declarations/instance.md) | 50 | `declaration-track:bdf0a94b2d6b57277aa8105b1f5b79b553e892c588e46b99e98e1e006e4acf69` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/WeightNamespaced.lean/declarations/instance-source-edition-3.md) | 51 | `declaration-track:d31587a6b969c8af1e3fe019fe1c491fa11f186f0ecc52ddf088e171bc74a951` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/WeightNamespaced.lean/declarations/instance-source-edition-2.md) | 52 | `declaration-track:cbaeb8724fb7d9cbc96d325bdd95521580063286b6f4b20cc22c0dfc02e5bf4c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppQuotientNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppQuotientNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppQuotientNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppQuotientNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [liftFinsupp](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppQuotientNamespacedPublic.lean/declarations/liftfinsupp.md) | 35 | `declaration-track:d8af6da7e1ef8958d43cca01c1a3dc670648840fabbfdc16abd75309bf022f25` |
-| 2 | `theorem` | [liftFinsupp_mk](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppQuotientNamespacedPublic.lean/declarations/liftfinsupp-mk-source-edition-2.md) | 44 | `result-track:ca137c132f514328c5c6b400ba7762bda4fae7fbbbb3f80f0861e2cd67ac032b` |
-| 3 | `def` | [liftFinsupp](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppQuotientNamespacedPublic.lean/declarations/liftfinsupp-source-edition-2.md) | 54 | `declaration-track:db3d1b251cc3b3d8fcc451f28d7e63cc9c95edf3900a9815df6e0acdc48d06bc` |
-| 4 | `theorem` | [liftFinsupp_mk](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppQuotientNamespacedPublic.lean/declarations/liftfinsupp-mk.md) | 58 | `result-track:af9e7172324c782f60eac298244783c06715ca0c359beb3c09882c87ba542632` |
+| 1 | `def` | [liftFinsupp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppQuotientNamespacedPublic.lean/declarations/liftfinsupp.md) | 35 | `declaration-track:d8af6da7e1ef8958d43cca01c1a3dc670648840fabbfdc16abd75309bf022f25` |
+| 2 | `theorem` | [liftFinsupp_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppQuotientNamespacedPublic.lean/declarations/liftfinsupp-mk-source-edition-2.md) | 44 | `result-track:ca137c132f514328c5c6b400ba7762bda4fae7fbbbb3f80f0861e2cd67ac032b` |
+| 3 | `def` | [liftFinsupp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppQuotientNamespacedPublic.lean/declarations/liftfinsupp-source-edition-2.md) | 54 | `declaration-track:db3d1b251cc3b3d8fcc451f28d7e63cc9c95edf3900a9815df6e0acdc48d06bc` |
+| 4 | `theorem` | [liftFinsupp_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppQuotientNamespacedPublic.lean/declarations/liftfinsupp-mk.md) | 58 | `result-track:af9e7172324c782f60eac298244783c06715ca0c359beb3c09882c87ba542632` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

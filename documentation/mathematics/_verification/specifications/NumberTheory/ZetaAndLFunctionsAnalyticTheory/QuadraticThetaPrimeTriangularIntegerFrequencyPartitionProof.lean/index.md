@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularIntegerFrequencyPartitionProof.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularIntegerFrequencyPartitionProof.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularIntegerFrequencyPartitionProof.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularIntegerFrequencyPartitionProof.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeTriangularIntegerFrequencyPartition`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularIntegerFrequencyPartition.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeTriangularIntegerFrequencyPartition`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularIntegerFrequencyPartition.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [triangularIntegerFrequencyPartition](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularIntegerFrequencyPartitionProof.lean/declarations/triangularintegerfrequencypartition.md) | 15 | `result-track:4a392478d86be9aae2fec9d88d2c72b29196bed48f094578d5a8b77c6ac0bcdd` |
-| 2 | `theorem` | [triangularAssembledFrequencyKernel](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularIntegerFrequencyPartitionProof.lean/declarations/triangularassembledfrequencykernel.md) | 106 | `result-track:bc3bb54fb00c57a3b5bfeb3c4288bd3587c9ea6f68e12a64f4b399b483cc6a03` |
-| 3 | `theorem` | [symmetricTriangularKernel_autocorrelation](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularIntegerFrequencyPartitionProof.lean/declarations/symmetrictriangularkernel-autocorrelation.md) | 113 | `result-track:06b39ada0c812b554445ba2eae653f49932b53a66b88403e74fd1d62c028c088` |
+| 1 | `theorem` | [triangularIntegerFrequencyPartition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularIntegerFrequencyPartitionProof.lean/declarations/triangularintegerfrequencypartition.md) | 15 | `result-track:4a392478d86be9aae2fec9d88d2c72b29196bed48f094578d5a8b77c6ac0bcdd` |
+| 2 | `theorem` | [triangularAssembledFrequencyKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularIntegerFrequencyPartitionProof.lean/declarations/triangularassembledfrequencykernel.md) | 106 | `result-track:bc3bb54fb00c57a3b5bfeb3c4288bd3587c9ea6f68e12a64f4b399b483cc6a03` |
+| 3 | `theorem` | [symmetricTriangularKernel_autocorrelation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularIntegerFrequencyPartitionProof.lean/declarations/symmetrictriangularkernel-autocorrelation.md) | 113 | `result-track:06b39ada0c812b554445ba2eae653f49932b53a66b88403e74fd1d62c028c088` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

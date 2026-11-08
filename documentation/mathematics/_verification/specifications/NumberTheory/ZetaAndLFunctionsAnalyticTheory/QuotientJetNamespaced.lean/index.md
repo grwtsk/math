@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuotientJetNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuotientJetNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuotientJetNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuotientJetNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,8 +61,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [derivative_of_normalized_removable_quotient](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuotientJetNamespaced.lean/declarations/derivative-of-normalized-removable-quotient.md) | 25 | `result-track:3266a3319843c3707e9a758ba504765d97763021936338f70d6be37dd561c6c9` |
-| 2 | `theorem` | [quotient_jet_at_multiplicity](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuotientJetNamespaced.lean/declarations/quotient-jet-at-multiplicity.md) | 41 | `result-track:0885394f0190a6729305546861f862114876593e5ecc5226ed650d52342e1ea4` |
+| 1 | `theorem` | [derivative_of_normalized_removable_quotient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuotientJetNamespaced.lean/declarations/derivative-of-normalized-removable-quotient.md) | 25 | `result-track:3266a3319843c3707e9a758ba504765d97763021936338f70d6be37dd561c6c9` |
+| 2 | `theorem` | [quotient_jet_at_multiplicity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuotientJetNamespaced.lean/declarations/quotient-jet-at-multiplicity.md) | 41 | `result-track:0885394f0190a6729305546861f862114876593e5ecc5226ed650d52342e1ea4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

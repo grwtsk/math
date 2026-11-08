@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ListPublicListIterator.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ListPublicListIterator.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ListPublicListIterator.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ListPublicListIterator.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ListIterator](../../../../../ComputerScience/AlgorithmsInComputerScience/ListPublicListIterator.lean/declarations/listiterator.md) | 29 | `declaration-track:f082c928622b441c37823dd6347e882393c2e2effda61bdad4f75cea0946c7c4` |
-| 2 | `def` | [_root_.List.iterM](../../../../../ComputerScience/AlgorithmsInComputerScience/ListPublicListIterator.lean/declarations/root-list-iterm.md) | 50 | `declaration-track:048a8b2c54d29caa68aeadf90962e3496da6d4da4e9136537456c2cfb769a069` |
-| 3 | `instance` | [ListIterator.instIterator](../../../../../ComputerScience/AlgorithmsInComputerScience/ListPublicListIterator.lean/declarations/listiterator-institerator.md) | 57 | `declaration-track:231a3e08358e19e52c3663e6765df2ae07fb839a9e35f3a3dc2bd9cb260e0fcf` |
-| 4 | `def` | [ListIterator.instFinitenessRelation](../../../../../ComputerScience/AlgorithmsInComputerScience/ListPublicListIterator.lean/declarations/listiterator-instfinitenessrelation.md) | 66 | `declaration-track:c7584fce018acf4492f6569b83a8564fe64ed057f61dccbfa8e24965dc550626` |
-| 5 | `instance` | [ListIterator.instFinite](../../../../../ComputerScience/AlgorithmsInComputerScience/ListPublicListIterator.lean/declarations/listiterator-instfinite.md) | 75 | `declaration-track:6851e538da58ad0c76289a462a4c09c0bf65822e1512d8569af0ee6fc6eea89f` |
-| 6 | `instance` | [ListIterator.instIteratorLoop](../../../../../ComputerScience/AlgorithmsInComputerScience/ListPublicListIterator.lean/declarations/listiterator-institeratorloop.md) | 79 | `declaration-track:3b1a4d5bd758dd4b78ae519932ed1748dd2c2f4aaab27d0ebd0c75cb47e54cf4` |
+| 1 | `structure` | [ListIterator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ListPublicListIterator.lean/declarations/listiterator.md) | 29 | `declaration-track:f082c928622b441c37823dd6347e882393c2e2effda61bdad4f75cea0946c7c4` |
+| 2 | `def` | [_root_.List.iterM](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ListPublicListIterator.lean/declarations/root-list-iterm.md) | 50 | `declaration-track:048a8b2c54d29caa68aeadf90962e3496da6d4da4e9136537456c2cfb769a069` |
+| 3 | `instance` | [ListIterator.instIterator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ListPublicListIterator.lean/declarations/listiterator-institerator.md) | 57 | `declaration-track:231a3e08358e19e52c3663e6765df2ae07fb839a9e35f3a3dc2bd9cb260e0fcf` |
+| 4 | `def` | [ListIterator.instFinitenessRelation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ListPublicListIterator.lean/declarations/listiterator-instfinitenessrelation.md) | 66 | `declaration-track:c7584fce018acf4492f6569b83a8564fe64ed057f61dccbfa8e24965dc550626` |
+| 5 | `instance` | [ListIterator.instFinite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ListPublicListIterator.lean/declarations/listiterator-instfinite.md) | 75 | `declaration-track:6851e538da58ad0c76289a462a4c09c0bf65822e1512d8569af0ee6fc6eea89f` |
+| 6 | `instance` | [ListIterator.instIteratorLoop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ListPublicListIterator.lean/declarations/listiterator-institeratorloop.md) | 79 | `declaration-track:3b1a4d5bd758dd4b78ae519932ed1748dd2c2f4aaab27d0ebd0c75cb47e54cf4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

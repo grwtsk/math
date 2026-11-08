@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/HopfAlgebraTensorProduct.lean/index.md) · [Full source](../../../../CommutativeAlgebra/HopfAlgebraTensorProduct.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HopfAlgebraTensorProduct.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HopfAlgebraTensorProduct.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/HopfAlgebraTensorProduct.lean/declarations/instance.md) | 24 | `declaration-track:d5378a0b0eb4ff3c2975714790fa4048d7dbea0964cab1fc8272094be6fb17f4` |
-| 2 | `theorem` | [antipode_def](../../../../CommutativeAlgebra/HopfAlgebraTensorProduct.lean/declarations/antipode-def.md) | 48 | `result-track:0e26d524f913d063cbd76c7746d9f85991736e388dbe9c9beb7cbd17acc46e60` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HopfAlgebraTensorProduct.lean/declarations/instance.md) | 24 | `declaration-track:d5378a0b0eb4ff3c2975714790fa4048d7dbea0964cab1fc8272094be6fb17f4` |
+| 2 | `theorem` | [antipode_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HopfAlgebraTensorProduct.lean/declarations/antipode-def.md) | 48 | `result-track:0e26d524f913d063cbd76c7746d9f85991736e388dbe9c9beb7cbd17acc46e60` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

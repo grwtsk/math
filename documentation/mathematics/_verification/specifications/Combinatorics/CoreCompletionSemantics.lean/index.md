@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/CoreCompletionSemantics.lean/index.md) · [Full source](../../../../Combinatorics/CoreCompletionSemantics.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoreCompletionSemantics.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoreCompletionSemantics.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CompletionSemantics](../../../../Combinatorics/CoreCompletionSemantics.lean/declarations/completionsemantics.md) | 13 | `declaration-track:2228694e00631602c4d47103cc08c20371376073321d1f8d5edbc9bab2495b84` |
-| 2 | `def` | [Feasible](../../../../Combinatorics/CoreCompletionSemantics.lean/declarations/feasible.md) | 30 | `declaration-track:e81df14836a2c83de2506aa73cce9bdef645acea44b9f987b7144a33d6ba012c` |
-| 3 | `def` | [Infeasible](../../../../Combinatorics/CoreCompletionSemantics.lean/declarations/infeasible.md) | 41 | `declaration-track:c0de107934e002f9f287418d94cb7e746671f2e94b4cb24337548c7cb68df984` |
-| 4 | `theorem` | [infeasible_iff_not_feasible](../../../../Combinatorics/CoreCompletionSemantics.lean/declarations/infeasible-iff-not-feasible.md) | 49 | `result-track:81e89f36f4e1e57bbc990446f6e70963fe184e10e9974d32f56e0c156af75b46` |
-| 5 | `theorem` | [feasible_of_constraint_subset](../../../../Combinatorics/CoreCompletionSemantics.lean/declarations/feasible-of-constraint-subset.md) | 59 | `result-track:97115dab61164cd91d864582676fa902d0e81cbd61cc2270bfa55d50ecb8eaae` |
-| 6 | `theorem` | [infeasibility_downward_closed](../../../../Combinatorics/CoreCompletionSemantics.lean/declarations/infeasibility-downward-closed.md) | 72 | `result-track:6f14b101f8e4faa738993ac2c634ed94c1a9618d0ede25a714f5effccb0bf08f` |
+| 1 | `structure` | [CompletionSemantics](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoreCompletionSemantics.lean/declarations/completionsemantics.md) | 13 | `declaration-track:2228694e00631602c4d47103cc08c20371376073321d1f8d5edbc9bab2495b84` |
+| 2 | `def` | [Feasible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoreCompletionSemantics.lean/declarations/feasible.md) | 30 | `declaration-track:e81df14836a2c83de2506aa73cce9bdef645acea44b9f987b7144a33d6ba012c` |
+| 3 | `def` | [Infeasible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoreCompletionSemantics.lean/declarations/infeasible.md) | 41 | `declaration-track:c0de107934e002f9f287418d94cb7e746671f2e94b4cb24337548c7cb68df984` |
+| 4 | `theorem` | [infeasible_iff_not_feasible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoreCompletionSemantics.lean/declarations/infeasible-iff-not-feasible.md) | 49 | `result-track:81e89f36f4e1e57bbc990446f6e70963fe184e10e9974d32f56e0c156af75b46` |
+| 5 | `theorem` | [feasible_of_constraint_subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoreCompletionSemantics.lean/declarations/feasible-of-constraint-subset.md) | 59 | `result-track:97115dab61164cd91d864582676fa902d0e81cbd61cc2270bfa55d50ecb8eaae` |
+| 6 | `theorem` | [infeasibility_downward_closed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoreCompletionSemantics.lean/declarations/infeasibility-downward-closed.md) | 72 | `result-track:6f14b101f8e4faa738993ac2c634ed94c1a9618d0ede25a714f5effccb0bf08f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

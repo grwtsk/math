@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/RingTheoryFintypeNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/RingTheoryFintypeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryFintypeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryFintypeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [Finset.univ_of_card_le_two](../../../../CommutativeAlgebra/RingTheoryFintypeNamespaced.lean/declarations/finset-univ-of-card-le-two.md) | 28 | `result-track:aaaf6d9bb81e5830c6b39558a6bc7b964f5ccedc7b5d653041fb735235bb385c` |
-| 2 | `lemma` | [Finset.univ_of_card_le_three](../../../../CommutativeAlgebra/RingTheoryFintypeNamespaced.lean/declarations/finset-univ-of-card-le-three.md) | 36 | `result-track:7caac2b9d8a0eaf19dad759b70860fc50107bd1bfa848a2da5c64f65e6ce73fe` |
-| 3 | `theorem` | [card_units_lt](../../../../CommutativeAlgebra/RingTheoryFintypeNamespaced.lean/declarations/card-units-lt.md) | 71 | `result-track:7ea87fe2f957a85a39e620f19696b13a1fe0501d472bdc772596cc06fca2d467` |
-| 4 | `lemma` | [natCard_units_lt](../../../../CommutativeAlgebra/RingTheoryFintypeNamespaced.lean/declarations/natcard-units-lt.md) | 74 | `result-track:64e2de91ba5008732de6044390a8190209623aa28cbfb00e97fd9d73ba585ce4` |
-| 5 | `lemma` | [orderOf_lt_card](../../../../CommutativeAlgebra/RingTheoryFintypeNamespaced.lean/declarations/orderof-lt-card.md) | 80 | `result-track:4d8a4c6d6368fb2296cd443b76ce85c471945d58827e65d12a6b8fdc9166ca28` |
-| 6 | `lemma` | [ZMod.orderOf_lt](../../../../CommutativeAlgebra/RingTheoryFintypeNamespaced.lean/declarations/zmod-orderof-lt.md) | 89 | `result-track:46a7d9074641a002c524217fd68310bdf6c70be853cf2ba571e402c3ac2100e8` |
+| 1 | `lemma` | [Finset.univ_of_card_le_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryFintypeNamespaced.lean/declarations/finset-univ-of-card-le-two.md) | 28 | `result-track:aaaf6d9bb81e5830c6b39558a6bc7b964f5ccedc7b5d653041fb735235bb385c` |
+| 2 | `lemma` | [Finset.univ_of_card_le_three](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryFintypeNamespaced.lean/declarations/finset-univ-of-card-le-three.md) | 36 | `result-track:7caac2b9d8a0eaf19dad759b70860fc50107bd1bfa848a2da5c64f65e6ce73fe` |
+| 3 | `theorem` | [card_units_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryFintypeNamespaced.lean/declarations/card-units-lt.md) | 71 | `result-track:7ea87fe2f957a85a39e620f19696b13a1fe0501d472bdc772596cc06fca2d467` |
+| 4 | `lemma` | [natCard_units_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryFintypeNamespaced.lean/declarations/natcard-units-lt.md) | 74 | `result-track:64e2de91ba5008732de6044390a8190209623aa28cbfb00e97fd9d73ba585ce4` |
+| 5 | `lemma` | [orderOf_lt_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryFintypeNamespaced.lean/declarations/orderof-lt-card.md) | 80 | `result-track:4d8a4c6d6368fb2296cd443b76ce85c471945d58827e65d12a6b8fdc9166ca28` |
+| 6 | `lemma` | [ZMod.orderOf_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryFintypeNamespaced.lean/declarations/zmod-orderof-lt.md) | 89 | `result-track:46a7d9074641a002c524217fd68310bdf6c70be853cf2ba571e402c3ac2100e8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

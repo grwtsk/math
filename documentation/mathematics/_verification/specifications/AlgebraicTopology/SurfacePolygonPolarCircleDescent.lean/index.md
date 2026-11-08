@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/SurfacePolygonPolarCircleDescent.lean/index.md) · [Full source](../../../../AlgebraicTopology/SurfacePolygonPolarCircleDescent.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonPolarCircleDescent.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonPolarCircleDescent.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonStandardPolarPhase`](../../../../AlgebraicTopology/SurfacePolygonStandardPolarPhase.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonStandardPolarPhase`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonStandardPolarPhase.lean/index.md) — import line 8; pinned internal source present.
 - `Mathlib.Topology.Instances.AddCircle.Real` — import line 9; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [polarDisk_add_int](../../../../AlgebraicTopology/SurfacePolygonPolarCircleDescent.lean/declarations/polardisk-add-int.md) | 27 | `result-track:012aa676d0459ae7aeac25b6f95ab83dfd7f51cf37b826d3afcfef6ad48d167c` |
-| 2 | `theorem` | [polarDisk_eq_of_int_translate](../../../../AlgebraicTopology/SurfacePolygonPolarCircleDescent.lean/declarations/polardisk-eq-of-int-translate.md) | 34 | `result-track:c6f066fce95332deb9f4cce732891a8bafecbecdc2ae74cb2424754e5b3189db` |
-| 3 | `theorem` | [polarDisk_zero_angle_independent](../../../../AlgebraicTopology/SurfacePolygonPolarCircleDescent.lean/declarations/polardisk-zero-angle-independent.md) | 43 | `result-track:db275d7dd23cb1383fdb03444f3c5ab57030d525184a3025a7bdf0cb2a24e2e9` |
+| 1 | `theorem` | [polarDisk_add_int](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonPolarCircleDescent.lean/declarations/polardisk-add-int.md) | 27 | `result-track:012aa676d0459ae7aeac25b6f95ab83dfd7f51cf37b826d3afcfef6ad48d167c` |
+| 2 | `theorem` | [polarDisk_eq_of_int_translate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonPolarCircleDescent.lean/declarations/polardisk-eq-of-int-translate.md) | 34 | `result-track:c6f066fce95332deb9f4cce732891a8bafecbecdc2ae74cb2424754e5b3189db` |
+| 3 | `theorem` | [polarDisk_zero_angle_independent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonPolarCircleDescent.lean/declarations/polardisk-zero-angle-independent.md) | 43 | `result-track:db275d7dd23cb1383fdb03444f3c5ab57030d525184a3025a7bdf0cb2a24e2e9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

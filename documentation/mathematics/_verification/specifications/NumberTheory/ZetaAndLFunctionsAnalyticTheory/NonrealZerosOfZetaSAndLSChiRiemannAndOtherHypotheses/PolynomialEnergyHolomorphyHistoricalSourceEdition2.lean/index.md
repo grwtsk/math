@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PolynomialEnergyHolomorphyHistoricalSourceEdition2.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PolynomialEnergyHolomorphyHistoricalSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PolynomialEnergyHolomorphyHistoricalSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PolynomialEnergyHolomorphyHistoricalSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,10 +46,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.LaplaceTransform.PolynomialEnergyHolomorphy`](../../../../../../ProbabilityTheoryAndStochasticProcesses/PolynomialEnergyHolomorphy.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.MeasureTheory.Integral.MoebiusCumulativeEnergy`](../../../../../../MeasureAndIntegration/MoebiusCumulativeEnergyHistoricalSourceEdition2.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.ReciprocalHolomorphyZeroSymmetry`](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ReciprocalHolomorphyZeroSymmetryHistoricalSourceEdition2.lean/index.md) — import line 6; pinned internal source present.
-- [`GRWTSK.Analysis.LaplaceTransform.MoebiusResponseFormula`](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/MoebiusResponseFormula.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.Analysis.LaplaceTransform.PolynomialEnergyHolomorphy`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/PolynomialEnergyHolomorphy.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.MeasureTheory.Integral.MoebiusCumulativeEnergy`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MoebiusCumulativeEnergyHistoricalSourceEdition2.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.ReciprocalHolomorphyZeroSymmetry`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ReciprocalHolomorphyZeroSymmetryHistoricalSourceEdition2.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.Analysis.LaplaceTransform.MoebiusResponseFormula`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/MoebiusResponseFormula.lean/index.md) — import line 7; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -60,9 +60,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [polynomial_energy_laplace_return](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PolynomialEnergyHolomorphyHistoricalSourceEdition2.lean/declarations/polynomial-energy-laplace-return.md) | 16 | `result-track:036953127f81beb8ff00e94b67ba59c9631a196e3659939e6394f0bcc683515f` |
-| 2 | `theorem` | [pickup_initial_identity](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PolynomialEnergyHolomorphyHistoricalSourceEdition2.lean/declarations/pickup-initial-identity.md) | 29 | `result-track:e3d5a3347f4578452c41e604efb7b515ae1488ff21149302150ff60dbbd5ab2f` |
-| 3 | `theorem` | [literal_RH_of_P04](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PolynomialEnergyHolomorphyHistoricalSourceEdition2.lean/declarations/literal-rh-of-p04.md) | 34 | `result-track:a8ebbfcda5c67de55437575ea37d1db1de2f1e90159c4a4667c37e95e9c12966` |
+| 1 | `theorem` | [polynomial_energy_laplace_return](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PolynomialEnergyHolomorphyHistoricalSourceEdition2.lean/declarations/polynomial-energy-laplace-return.md) | 16 | `result-track:036953127f81beb8ff00e94b67ba59c9631a196e3659939e6394f0bcc683515f` |
+| 2 | `theorem` | [pickup_initial_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PolynomialEnergyHolomorphyHistoricalSourceEdition2.lean/declarations/pickup-initial-identity.md) | 29 | `result-track:e3d5a3347f4578452c41e604efb7b515ae1488ff21149302150ff60dbbd5ab2f` |
+| 3 | `theorem` | [literal_RH_of_P04](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PolynomialEnergyHolomorphyHistoricalSourceEdition2.lean/declarations/literal-rh-of-p04.md) | 34 | `result-track:a8ebbfcda5c67de55437575ea37d1db1de2f1e90159c4a4667c37e95e9c12966` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/TrustedBase.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/TrustedBase.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TrustedBase.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TrustedBase.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TrustedBaseClosure](../../../../../ComputerScience/AlgorithmsInComputerScience/TrustedBase.lean/declarations/trustedbaseclosure.md) | 14 | `declaration-track:9de802c30c7289fd7700cc276af806cec4851f971dd25694a6f8003419e8777c` |
-| 2 | `def` | [TrustedBaseClosure.DeclaredClosed](../../../../../ComputerScience/AlgorithmsInComputerScience/TrustedBase.lean/declarations/trustedbaseclosure-declaredclosed.md) | 24 | `declaration-track:54c4315f2d58f2040ff194c680217739d07cb6ddef07c296a699e640f67ed6fb` |
-| 3 | `theorem` | [TrustedBaseClosure.observed_allowed](../../../../../ComputerScience/AlgorithmsInComputerScience/TrustedBase.lean/declarations/trustedbaseclosure-observed-allowed.md) | 30 | `result-track:593495b007fca1308bf8bfb126320a6ad4c2a9a3234b5f69928a038c61ed7603` |
+| 1 | `structure` | [TrustedBaseClosure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TrustedBase.lean/declarations/trustedbaseclosure.md) | 14 | `declaration-track:9de802c30c7289fd7700cc276af806cec4851f971dd25694a6f8003419e8777c` |
+| 2 | `def` | [TrustedBaseClosure.DeclaredClosed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TrustedBase.lean/declarations/trustedbaseclosure-declaredclosed.md) | 24 | `declaration-track:54c4315f2d58f2040ff194c680217739d07cb6ddef07c296a699e640f67ed6fb` |
+| 3 | `theorem` | [TrustedBaseClosure.observed_allowed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TrustedBase.lean/declarations/trustedbaseclosure-observed-allowed.md) | 30 | `result-track:593495b007fca1308bf8bfb126320a6ad4c2a9a3234b5f69928a038c61ed7603` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

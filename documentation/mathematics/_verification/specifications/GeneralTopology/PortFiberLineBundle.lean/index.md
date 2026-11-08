@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/PortFiberLineBundle.lean/index.md) · [Full source](../../../../GeneralTopology/PortFiberLineBundle.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PortFiberLineBundle.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PortFiberLineBundle.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Interfaces.PortFiberIndexedCoverDescent`](../../../../Geometry/PortFiberIndexedCoverDescent.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.Analysis.Operator.HolomorphicLinePort`](../../../../GeneralTopology/HolomorphicLinePort.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.Interfaces.PortFiberIndexedCoverDescent`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/PortFiberIndexedCoverDescent.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Analysis.Operator.HolomorphicLinePort`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLinePort.lean/index.md) — import line 2; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [AddedIndex](../../../../GeneralTopology/PortFiberLineBundle.lean/declarations/addedindex.md) | 23 | `declaration-track:044dafda476d9e54b80ae5e44807818019942231d8fbd2002fb87ddca68c7f1a` |
-| 2 | `def` | [AddedClaim](../../../../GeneralTopology/PortFiberLineBundle.lean/declarations/addedclaim.md) | 33 | `declaration-track:da2b6431282ea924b9269669abd9e6b18753b8e3e06a8874e0dcfea1c5cccf9d` |
-| 3 | `theorem` | [addedClaim_proof](../../../../GeneralTopology/PortFiberLineBundle.lean/declarations/addedclaim-proof.md) | 61 | `result-track:17864531aa7d759d3d570a7be088738af65c5e7acbc781c3ff3c1b419b7a0d15` |
-| 4 | `def` | [portfolio](../../../../GeneralTopology/PortFiberLineBundle.lean/declarations/portfolio.md) | 82 | `declaration-track:d4642d68fecc83e35f8bf3c6030d0dde52894a953b08f02bc3ed7b5090174c24` |
-| 5 | `def` | [architecture](../../../../GeneralTopology/PortFiberLineBundle.lean/declarations/architecture.md) | 85 | `declaration-track:16805400c9e257c2a33ce1b08d6d395d7a98bdcc3007c40f4dc1bf559a30bfe6` |
-| 6 | `abbrev` | [PreviousIndex](../../../../GeneralTopology/PortFiberLineBundle.lean/declarations/previousindex.md) | 89 | `declaration-track:f55777524f45068c981d999504b81bac26e20088efbba33626455f3a765af543` |
-| 7 | `theorem` | [original_branch_unchanged](../../../../GeneralTopology/PortFiberLineBundle.lean/declarations/original-branch-unchanged.md) | 96 | `result-track:39f023cede9464737930ab911a7980347f15c3ca6898aca63fda4685e24ab895` |
-| 8 | `theorem` | [target_unchanged](../../../../GeneralTopology/PortFiberLineBundle.lean/declarations/target-unchanged.md) | 102 | `result-track:158c36c150fcf9881b17f38fd6524e0f6c9fa2cb86f2a39e53b92ce3ca850e64` |
-| 9 | `theorem` | [new_branch_proved](../../../../GeneralTopology/PortFiberLineBundle.lean/declarations/new-branch-proved.md) | 107 | `result-track:ae11dd7401715728f6539c24b2b47f1d0aef00412c1e3aee99b53a032ce0592e` |
-| 10 | `theorem` | [retarget_preserves_new](../../../../GeneralTopology/PortFiberLineBundle.lean/declarations/retarget-preserves-new.md) | 112 | `result-track:402c15b48f7ea3ea80462846ffb56de933afdfcd46d032aba8d8314d2f2f39ca` |
+| 1 | `inductive` | [AddedIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PortFiberLineBundle.lean/declarations/addedindex.md) | 23 | `declaration-track:044dafda476d9e54b80ae5e44807818019942231d8fbd2002fb87ddca68c7f1a` |
+| 2 | `def` | [AddedClaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PortFiberLineBundle.lean/declarations/addedclaim.md) | 33 | `declaration-track:da2b6431282ea924b9269669abd9e6b18753b8e3e06a8874e0dcfea1c5cccf9d` |
+| 3 | `theorem` | [addedClaim_proof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PortFiberLineBundle.lean/declarations/addedclaim-proof.md) | 61 | `result-track:17864531aa7d759d3d570a7be088738af65c5e7acbc781c3ff3c1b419b7a0d15` |
+| 4 | `def` | [portfolio](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PortFiberLineBundle.lean/declarations/portfolio.md) | 82 | `declaration-track:d4642d68fecc83e35f8bf3c6030d0dde52894a953b08f02bc3ed7b5090174c24` |
+| 5 | `def` | [architecture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PortFiberLineBundle.lean/declarations/architecture.md) | 85 | `declaration-track:16805400c9e257c2a33ce1b08d6d395d7a98bdcc3007c40f4dc1bf559a30bfe6` |
+| 6 | `abbrev` | [PreviousIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PortFiberLineBundle.lean/declarations/previousindex.md) | 89 | `declaration-track:f55777524f45068c981d999504b81bac26e20088efbba33626455f3a765af543` |
+| 7 | `theorem` | [original_branch_unchanged](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PortFiberLineBundle.lean/declarations/original-branch-unchanged.md) | 96 | `result-track:39f023cede9464737930ab911a7980347f15c3ca6898aca63fda4685e24ab895` |
+| 8 | `theorem` | [target_unchanged](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PortFiberLineBundle.lean/declarations/target-unchanged.md) | 102 | `result-track:158c36c150fcf9881b17f38fd6524e0f6c9fa2cb86f2a39e53b92ce3ca850e64` |
+| 9 | `theorem` | [new_branch_proved](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PortFiberLineBundle.lean/declarations/new-branch-proved.md) | 107 | `result-track:ae11dd7401715728f6539c24b2b47f1d0aef00412c1e3aee99b53a032ce0592e` |
+| 10 | `theorem` | [retarget_preserves_new](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PortFiberLineBundle.lean/declarations/retarget-preserves-new.md) | 112 | `result-track:402c15b48f7ea3ea80462846ffb56de933afdfcd46d032aba8d8314d2f2f39ca` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

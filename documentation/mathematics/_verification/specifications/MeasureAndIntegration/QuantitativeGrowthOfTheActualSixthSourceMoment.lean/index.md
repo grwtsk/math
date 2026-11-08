@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/QuantitativeGrowthOfTheActualSixthSourceMoment.lean/index.md) · [Full source](../../../../MeasureAndIntegration/QuantitativeGrowthOfTheActualSixthSourceMoment.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/QuantitativeGrowthOfTheActualSixthSourceMoment.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/QuantitativeGrowthOfTheActualSixthSourceMoment.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_bump_globally_nonnegative](../../../../MeasureAndIntegration/QuantitativeGrowthOfTheActualSixthSourceMoment.lean/declarations/actual-bump-globally-nonnegative.md) | 21 | `result-track:50ec1033ce6ae0f27e35997a9fa8f1f9b5e01ea65cd6dca32253c7240c2dc3d8` |
-| 2 | `theorem` | [actual_bump_edge_unit_lower](../../../../MeasureAndIntegration/QuantitativeGrowthOfTheActualSixthSourceMoment.lean/declarations/actual-bump-edge-unit-lower.md) | 30 | `result-track:5be992378bd855e00435c4948f97150b1971f3be67a3fbd109db34ddd9d2b55f` |
-| 3 | `theorem` | [actual_sixth_bump_moment_edge_lower](../../../../MeasureAndIntegration/QuantitativeGrowthOfTheActualSixthSourceMoment.lean/declarations/actual-sixth-bump-moment-edge-lower.md) | 50 | `result-track:d4d4d166c6c1df7e9dae8173401f0d7a428f3c5c0f9c3434f53835e53d6672c4` |
-| 4 | `theorem` | [actual_sixth_normalized_moment_abs_lower](../../../../MeasureAndIntegration/QuantitativeGrowthOfTheActualSixthSourceMoment.lean/declarations/actual-sixth-normalized-moment-abs-lower.md) | 81 | `result-track:d3cd0a5eaba0a6382d8b06912dca3861db8de4f5421a7f84170245c380a12414` |
-| 5 | `theorem` | [actual_sixth_squared_moment_lower](../../../../MeasureAndIntegration/QuantitativeGrowthOfTheActualSixthSourceMoment.lean/declarations/actual-sixth-squared-moment-lower.md) | 99 | `result-track:774c5c4a7aeb949e86c5334f2b11c36b46a831912bd72ea5a6536a52b86bb8e4` |
+| 1 | `theorem` | [actual_bump_globally_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/QuantitativeGrowthOfTheActualSixthSourceMoment.lean/declarations/actual-bump-globally-nonnegative.md) | 21 | `result-track:50ec1033ce6ae0f27e35997a9fa8f1f9b5e01ea65cd6dca32253c7240c2dc3d8` |
+| 2 | `theorem` | [actual_bump_edge_unit_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/QuantitativeGrowthOfTheActualSixthSourceMoment.lean/declarations/actual-bump-edge-unit-lower.md) | 30 | `result-track:5be992378bd855e00435c4948f97150b1971f3be67a3fbd109db34ddd9d2b55f` |
+| 3 | `theorem` | [actual_sixth_bump_moment_edge_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/QuantitativeGrowthOfTheActualSixthSourceMoment.lean/declarations/actual-sixth-bump-moment-edge-lower.md) | 50 | `result-track:d4d4d166c6c1df7e9dae8173401f0d7a428f3c5c0f9c3434f53835e53d6672c4` |
+| 4 | `theorem` | [actual_sixth_normalized_moment_abs_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/QuantitativeGrowthOfTheActualSixthSourceMoment.lean/declarations/actual-sixth-normalized-moment-abs-lower.md) | 81 | `result-track:d3cd0a5eaba0a6382d8b06912dca3861db8de4f5421a7f84170245c380a12414` |
+| 5 | `theorem` | [actual_sixth_squared_moment_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/QuantitativeGrowthOfTheActualSixthSourceMoment.lean/declarations/actual-sixth-squared-moment-lower.md) | 99 | `result-track:774c5c4a7aeb949e86c5334f2b11c36b46a831912bd72ea5a6536a52b86bb8e4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

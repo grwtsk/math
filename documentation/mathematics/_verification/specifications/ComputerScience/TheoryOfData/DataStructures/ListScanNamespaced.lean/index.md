@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListScanNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListScanNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListScanNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListScanNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,15 +59,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [length_scanl](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListScanNamespaced.lean/declarations/length-scanl.md) | 26 | `result-track:7acf1c7683bebed3d156b2b332806fce01520bff92e4e8c8998126285574e2d8` |
-| 2 | `theorem` | [scanl_nil](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListScanNamespaced.lean/declarations/scanl-nil.md) | 33 | `result-track:7c59d30ba74c16769ca2adc2c142b9f95f0ed131c72f4e1a54280c4e76d50b03` |
-| 3 | `theorem` | [scanl_cons](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListScanNamespaced.lean/declarations/scanl-cons.md) | 37 | `result-track:c33ac4ea942b88007a96226b5b00c01b4a8d00b0c9ae7617515506c0aabe79fd` |
-| 4 | `theorem` | [getElem?_scanl_zero](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListScanNamespaced.lean/declarations/getelem-scanl-zero.md) | 41 | `result-track:0cce94d15327e66198286406489abeaea094090ef9d65f151f839b2fa43f2178` |
-| 5 | `theorem` | [getElem_scanl_zero](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListScanNamespaced.lean/declarations/getelem-scanl-zero-source-edition-2.md) | 47 | `result-track:ac4fb2d216af93b022fcb09d740756b94a8f8cf752e1857c6e8a0e04f5bc9768` |
-| 6 | `theorem` | [getElem?_succ_scanl](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListScanNamespaced.lean/declarations/getelem-succ-scanl-source-edition-2.md) | 52 | `result-track:99b0bdbbb0fd12a695ec4e0f9b18ee4b0052fa756d5ffc539ce96864ff47284e` |
-| 7 | `theorem` | [getElem_succ_scanl](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListScanNamespaced.lean/declarations/getelem-succ-scanl.md) | 67 | `result-track:5c35fe3778caf7378dc7eaeab192e8c22910443a07945642fbf79a7731334d3c` |
-| 8 | `theorem` | [scanr_nil](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListScanNamespaced.lean/declarations/scanr-nil.md) | 87 | `result-track:c8d1bacbdb97ab682d192700536d419ea4e708c7eb531ac036caefd2a2db376b` |
-| 9 | `theorem` | [scanr_cons](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListScanNamespaced.lean/declarations/scanr-cons.md) | 91 | `result-track:18b60d0b0fc29d335c7209cea5aec670fb4a80b63be2d81eee5d0addd605a6cd` |
+| 1 | `theorem` | [length_scanl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListScanNamespaced.lean/declarations/length-scanl.md) | 26 | `result-track:7acf1c7683bebed3d156b2b332806fce01520bff92e4e8c8998126285574e2d8` |
+| 2 | `theorem` | [scanl_nil](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListScanNamespaced.lean/declarations/scanl-nil.md) | 33 | `result-track:7c59d30ba74c16769ca2adc2c142b9f95f0ed131c72f4e1a54280c4e76d50b03` |
+| 3 | `theorem` | [scanl_cons](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListScanNamespaced.lean/declarations/scanl-cons.md) | 37 | `result-track:c33ac4ea942b88007a96226b5b00c01b4a8d00b0c9ae7617515506c0aabe79fd` |
+| 4 | `theorem` | [getElem?_scanl_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListScanNamespaced.lean/declarations/getelem-scanl-zero.md) | 41 | `result-track:0cce94d15327e66198286406489abeaea094090ef9d65f151f839b2fa43f2178` |
+| 5 | `theorem` | [getElem_scanl_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListScanNamespaced.lean/declarations/getelem-scanl-zero-source-edition-2.md) | 47 | `result-track:ac4fb2d216af93b022fcb09d740756b94a8f8cf752e1857c6e8a0e04f5bc9768` |
+| 6 | `theorem` | [getElem?_succ_scanl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListScanNamespaced.lean/declarations/getelem-succ-scanl-source-edition-2.md) | 52 | `result-track:99b0bdbbb0fd12a695ec4e0f9b18ee4b0052fa756d5ffc539ce96864ff47284e` |
+| 7 | `theorem` | [getElem_succ_scanl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListScanNamespaced.lean/declarations/getelem-succ-scanl.md) | 67 | `result-track:5c35fe3778caf7378dc7eaeab192e8c22910443a07945642fbf79a7731334d3c` |
+| 8 | `theorem` | [scanr_nil](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListScanNamespaced.lean/declarations/scanr-nil.md) | 87 | `result-track:c8d1bacbdb97ab682d192700536d419ea4e708c7eb531ac036caefd2a2db376b` |
+| 9 | `theorem` | [scanr_cons](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListScanNamespaced.lean/declarations/scanr-cons.md) | 91 | `result-track:18b60d0b0fc29d335c7209cea5aec670fb4a80b63be2d81eee5d0addd605a6cd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

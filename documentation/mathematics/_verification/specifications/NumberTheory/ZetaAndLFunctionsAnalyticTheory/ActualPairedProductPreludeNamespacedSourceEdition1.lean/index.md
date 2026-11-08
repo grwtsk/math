@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualPairedProductPreludeNamespacedSourceEdition1.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualPairedProductPreludeNamespacedSourceEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualPairedProductPreludeNamespacedSourceEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualPairedProductPreludeNamespacedSourceEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [centeredSeries_zero_iff_exists_nontrivial](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualPairedProductPreludeNamespacedSourceEdition1.lean/declarations/centeredseries-zero-iff-exists-nontrivial.md) | 37 | `result-track:8c3cc9e8ac803a46808a4ba67cce4a5c528dd1484fb28d49beba55917b86128a` |
-| 2 | `theorem` | [centeredXi_order](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualPairedProductPreludeNamespacedSourceEdition1.lean/declarations/centeredxi-order.md) | 52 | `result-track:5cbcd1183e55feaf9e8317dd004c00a7f67eebe2d05c8987baad2da82afa9ca9` |
-| 3 | `theorem` | [xi_order_eq_descended_order](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualPairedProductPreludeNamespacedSourceEdition1.lean/declarations/xi-order-eq-descended-order.md) | 61 | `result-track:c2a0a4dba0491059c563dd18c9676c35c6d0e44cec975c258d88243815a53c85` |
-| 4 | `theorem` | [xi_order_center_reflection](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualPairedProductPreludeNamespacedSourceEdition1.lean/declarations/xi-order-center-reflection.md) | 74 | `result-track:6b10aeb43ec54b3ae6a40368b6b69dbcfe5ff9f0d27845336d9b2197cdff762b` |
-| 5 | `theorem` | [centeredSeries_ne_zero_function](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualPairedProductPreludeNamespacedSourceEdition1.lean/declarations/centeredseries-ne-zero-function.md) | 86 | `result-track:da5509cf60c09f5005267566baac2be2626bc2f58c4a97590eb30514f0aef949` |
+| 1 | `theorem` | [centeredSeries_zero_iff_exists_nontrivial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualPairedProductPreludeNamespacedSourceEdition1.lean/declarations/centeredseries-zero-iff-exists-nontrivial.md) | 37 | `result-track:8c3cc9e8ac803a46808a4ba67cce4a5c528dd1484fb28d49beba55917b86128a` |
+| 2 | `theorem` | [centeredXi_order](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualPairedProductPreludeNamespacedSourceEdition1.lean/declarations/centeredxi-order.md) | 52 | `result-track:5cbcd1183e55feaf9e8317dd004c00a7f67eebe2d05c8987baad2da82afa9ca9` |
+| 3 | `theorem` | [xi_order_eq_descended_order](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualPairedProductPreludeNamespacedSourceEdition1.lean/declarations/xi-order-eq-descended-order.md) | 61 | `result-track:c2a0a4dba0491059c563dd18c9676c35c6d0e44cec975c258d88243815a53c85` |
+| 4 | `theorem` | [xi_order_center_reflection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualPairedProductPreludeNamespacedSourceEdition1.lean/declarations/xi-order-center-reflection.md) | 74 | `result-track:6b10aeb43ec54b3ae6a40368b6b69dbcfe5ff9f0d27845336d9b2197cdff762b` |
+| 5 | `theorem` | [centeredSeries_ne_zero_function](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualPairedProductPreludeNamespacedSourceEdition1.lean/declarations/centeredseries-ne-zero-function.md) | 86 | `result-track:da5509cf60c09f5005267566baac2be2626bc2f58c4a97590eb30514f0aef949` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

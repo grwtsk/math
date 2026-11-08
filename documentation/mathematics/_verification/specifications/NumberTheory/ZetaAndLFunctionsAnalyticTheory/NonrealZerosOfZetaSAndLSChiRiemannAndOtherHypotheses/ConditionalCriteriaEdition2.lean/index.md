@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ConditionalCriteriaEdition2.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ConditionalCriteriaEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ConditionalCriteriaEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ConditionalCriteriaEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [h0_real_zeros_from_spectral_realization](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ConditionalCriteriaEdition2.lean/declarations/h0-real-zeros-from-spectral-realization.md) | 20 | `result-track:a2520593e36419217e9521056a1d08d70761dc148ad0d689ee45250f1dbcb582` |
-| 2 | `theorem` | [rh_of_h0_selfadjoint_realization](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ConditionalCriteriaEdition2.lean/declarations/rh-of-h0-selfadjoint-realization.md) | 32 | `result-track:8196a11c8e33245f82f6cd44187f57c5a9f65f356d2ea8455f53d78c68ab3080` |
-| 3 | `theorem` | [rh_of_trace_positivity_and_zero_correspondence](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ConditionalCriteriaEdition2.lean/declarations/rh-of-trace-positivity-and-zero-correspondence.md) | 48 | `result-track:48a58a0dc32a7c036a6991459679e52353b20b34a264d83b108c054ce15683a7` |
+| 1 | `theorem` | [h0_real_zeros_from_spectral_realization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ConditionalCriteriaEdition2.lean/declarations/h0-real-zeros-from-spectral-realization.md) | 20 | `result-track:a2520593e36419217e9521056a1d08d70761dc148ad0d689ee45250f1dbcb582` |
+| 2 | `theorem` | [rh_of_h0_selfadjoint_realization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ConditionalCriteriaEdition2.lean/declarations/rh-of-h0-selfadjoint-realization.md) | 32 | `result-track:8196a11c8e33245f82f6cd44187f57c5a9f65f356d2ea8455f53d78c68ab3080` |
+| 3 | `theorem` | [rh_of_trace_positivity_and_zero_correspondence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ConditionalCriteriaEdition2.lean/declarations/rh-of-trace-positivity-and-zero-correspondence.md) | 48 | `result-track:48a58a0dc32a7c036a6991459679e52353b20b34a264d83b108c054ce15683a7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

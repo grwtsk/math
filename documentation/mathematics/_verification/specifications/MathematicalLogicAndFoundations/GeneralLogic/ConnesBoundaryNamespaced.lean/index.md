@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConnesBoundaryNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConnesBoundaryNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ConnesBoundaryNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ConnesBoundaryNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TraceFormulaSide](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConnesBoundaryNamespaced.lean/declarations/traceformulaside.md) | 25 | `declaration-track:2205d52956f859ee86c09770b347195f7977a0f34b6f8b17589f4cd76af70bcc` |
-| 2 | `structure` | [ExplicitFormulaCertificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConnesBoundaryNamespaced.lean/declarations/explicitformulacertificate.md) | 31 | `declaration-track:aa348dd2c968b6aa23b9eb450802acb68c7d632a34aff6ef1931675baa9b12b2` |
-| 3 | `structure` | [ZeroSpectralCorrespondenceCertificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConnesBoundaryNamespaced.lean/declarations/zerospectralcorrespondencecertificate.md) | 39 | `declaration-track:d877296e444a5414b86f833023b0e8f5e412047255395c00a1e090cd8bce5ea5` |
-| 4 | `structure` | [CharacterTracePackage](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConnesBoundaryNamespaced.lean/declarations/charactertracepackage.md) | 48 | `declaration-track:e7d00449fae39d2d30ad11087f1f4f34f5701994177f1fb9364fe7a9b9855318` |
-| 5 | `def` | [finiteCharacterTracePackage](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConnesBoundaryNamespaced.lean/declarations/finitecharactertracepackage.md) | 59 | `declaration-track:d51f1bd8ce249aadc7aba17a0c8ea087991ab766770a5e84ffce3c73b0799939` |
-| 6 | `theorem` | [finiteCharacterTracePackage_noExplicitFormula](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConnesBoundaryNamespaced.lean/declarations/finitecharactertracepackage-noexplicitformula.md) | 74 | `result-track:d89190c1f3c0623f529e24a09db0b51895618b90bc06c58a2140fdae74b1fdea` |
-| 7 | `theorem` | [finiteCharacterTracePackage_noZeroSpectrum](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConnesBoundaryNamespaced.lean/declarations/finitecharactertracepackage-nozerospectrum.md) | 83 | `result-track:58e5c46e5ad6e89fe4a0bab8c261fc6393b7663371020e9f9038d68522f4f576` |
+| 1 | `structure` | [TraceFormulaSide](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ConnesBoundaryNamespaced.lean/declarations/traceformulaside.md) | 25 | `declaration-track:2205d52956f859ee86c09770b347195f7977a0f34b6f8b17589f4cd76af70bcc` |
+| 2 | `structure` | [ExplicitFormulaCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ConnesBoundaryNamespaced.lean/declarations/explicitformulacertificate.md) | 31 | `declaration-track:aa348dd2c968b6aa23b9eb450802acb68c7d632a34aff6ef1931675baa9b12b2` |
+| 3 | `structure` | [ZeroSpectralCorrespondenceCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ConnesBoundaryNamespaced.lean/declarations/zerospectralcorrespondencecertificate.md) | 39 | `declaration-track:d877296e444a5414b86f833023b0e8f5e412047255395c00a1e090cd8bce5ea5` |
+| 4 | `structure` | [CharacterTracePackage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ConnesBoundaryNamespaced.lean/declarations/charactertracepackage.md) | 48 | `declaration-track:e7d00449fae39d2d30ad11087f1f4f34f5701994177f1fb9364fe7a9b9855318` |
+| 5 | `def` | [finiteCharacterTracePackage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ConnesBoundaryNamespaced.lean/declarations/finitecharactertracepackage.md) | 59 | `declaration-track:d51f1bd8ce249aadc7aba17a0c8ea087991ab766770a5e84ffce3c73b0799939` |
+| 6 | `theorem` | [finiteCharacterTracePackage_noExplicitFormula](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ConnesBoundaryNamespaced.lean/declarations/finitecharactertracepackage-noexplicitformula.md) | 74 | `result-track:d89190c1f3c0623f529e24a09db0b51895618b90bc06c58a2140fdae74b1fdea` |
+| 7 | `theorem` | [finiteCharacterTracePackage_noZeroSpectrum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ConnesBoundaryNamespaced.lean/declarations/finitecharactertracepackage-nozerospectrum.md) | 83 | `result-track:58e5c46e5ad6e89fe4a0bab8c261fc6393b7663371020e9f9038d68522f4f576` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

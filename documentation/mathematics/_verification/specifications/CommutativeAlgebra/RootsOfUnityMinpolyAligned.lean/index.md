@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/RootsOfUnityMinpolyAligned.lean/index.md) · [Full source](../../../../CommutativeAlgebra/RootsOfUnityMinpolyAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RootsOfUnityMinpolyAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RootsOfUnityMinpolyAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,18 +58,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [isIntegral](../../../../CommutativeAlgebra/RootsOfUnityMinpolyAligned.lean/declarations/isintegral.md) | 38 | `result-track:99da1fa0b298fc1da5705b3bff6fb4b9d76afa6212cf358124c96d952588bd01` |
-| 2 | `theorem` | [minpoly_dvd_x_pow_sub_one](../../../../CommutativeAlgebra/RootsOfUnityMinpolyAligned.lean/declarations/minpoly-dvd-x-pow-sub-one.md) | 51 | `result-track:6ea2c5272a0dd47317db4ffd23bbf2d00478645af8c6f8c37e1bf8b961722d5c` |
-| 3 | `theorem` | [separable_minpoly_mod](../../../../CommutativeAlgebra/RootsOfUnityMinpolyAligned.lean/declarations/separable-minpoly-mod.md) | 61 | `result-track:32871824b7507b1d83a3edc62df150ff8fe8ee12a47a78e7621d2978fa058c49` |
-| 4 | `theorem` | [squarefree_minpoly_mod](../../../../CommutativeAlgebra/RootsOfUnityMinpolyAligned.lean/declarations/squarefree-minpoly-mod.md) | 73 | `result-track:84d73bf492b707b726a001614acf4ea1586ff1de930f4397c5d429be377c37c9` |
-| 5 | `theorem` | [minpoly_dvd_expand](../../../../CommutativeAlgebra/RootsOfUnityMinpolyAligned.lean/declarations/minpoly-dvd-expand.md) | 80 | `result-track:9ae06bb07ad06750170d49b73fd310e401fc5d86fd0ad4ee788d732808358625` |
-| 6 | `theorem` | [minpoly_dvd_pow_mod](../../../../CommutativeAlgebra/RootsOfUnityMinpolyAligned.lean/declarations/minpoly-dvd-pow-mod.md) | 93 | `result-track:44c0fa93bf1fbda798a73fe4188138384c6e68817e8eddb95636709aafb570bf` |
-| 7 | `theorem` | [minpoly_dvd_mod_p](../../../../CommutativeAlgebra/RootsOfUnityMinpolyAligned.lean/declarations/minpoly-dvd-mod-p.md) | 107 | `result-track:0d68c99d70280f5e1de6a4d67a4a9dca9a62347020f3aceb006f23749323e387` |
-| 8 | `theorem` | [minpoly_eq_pow](../../../../CommutativeAlgebra/RootsOfUnityMinpolyAligned.lean/declarations/minpoly-eq-pow.md) | 118 | `result-track:8f901b1a500a754d4475aa07157dbe5dc750264b31713dde9a114d4d454fde1e` |
-| 9 | `theorem` | [minpoly_eq_pow_coprime](../../../../CommutativeAlgebra/RootsOfUnityMinpolyAligned.lean/declarations/minpoly-eq-pow-coprime.md) | 175 | `result-track:d3ac1df4f15088d66c55b3dd376accd272ce9b080f91512c43b3f78ee98a11cc` |
-| 10 | `theorem` | [pow_isRoot_minpoly](../../../../CommutativeAlgebra/RootsOfUnityMinpolyAligned.lean/declarations/pow-isroot-minpoly.md) | 199 | `result-track:dc48baf1d2fd17a430817ca947c1215e75e959af585243dec2329e20876dfacb` |
-| 11 | `theorem` | [is_roots_of_minpoly](../../../../CommutativeAlgebra/RootsOfUnityMinpolyAligned.lean/declarations/is-roots-of-minpoly.md) | 207 | `result-track:c9366110773b5a6c34f8f6af7a390a56cdfe7f42c0f6b4b902b638db02c283f6` |
-| 12 | `theorem` | [totient_le_degree_minpoly](../../../../CommutativeAlgebra/RootsOfUnityMinpolyAligned.lean/declarations/totient-le-degree-minpoly.md) | 220 | `result-track:9ba7ec5d2a17467f7050834a7e9e0fa7a7098ee367f25ca88aa0b0f16465cad6` |
+| 1 | `theorem` | [isIntegral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RootsOfUnityMinpolyAligned.lean/declarations/isintegral.md) | 38 | `result-track:99da1fa0b298fc1da5705b3bff6fb4b9d76afa6212cf358124c96d952588bd01` |
+| 2 | `theorem` | [minpoly_dvd_x_pow_sub_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RootsOfUnityMinpolyAligned.lean/declarations/minpoly-dvd-x-pow-sub-one.md) | 51 | `result-track:6ea2c5272a0dd47317db4ffd23bbf2d00478645af8c6f8c37e1bf8b961722d5c` |
+| 3 | `theorem` | [separable_minpoly_mod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RootsOfUnityMinpolyAligned.lean/declarations/separable-minpoly-mod.md) | 61 | `result-track:32871824b7507b1d83a3edc62df150ff8fe8ee12a47a78e7621d2978fa058c49` |
+| 4 | `theorem` | [squarefree_minpoly_mod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RootsOfUnityMinpolyAligned.lean/declarations/squarefree-minpoly-mod.md) | 73 | `result-track:84d73bf492b707b726a001614acf4ea1586ff1de930f4397c5d429be377c37c9` |
+| 5 | `theorem` | [minpoly_dvd_expand](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RootsOfUnityMinpolyAligned.lean/declarations/minpoly-dvd-expand.md) | 80 | `result-track:9ae06bb07ad06750170d49b73fd310e401fc5d86fd0ad4ee788d732808358625` |
+| 6 | `theorem` | [minpoly_dvd_pow_mod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RootsOfUnityMinpolyAligned.lean/declarations/minpoly-dvd-pow-mod.md) | 93 | `result-track:44c0fa93bf1fbda798a73fe4188138384c6e68817e8eddb95636709aafb570bf` |
+| 7 | `theorem` | [minpoly_dvd_mod_p](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RootsOfUnityMinpolyAligned.lean/declarations/minpoly-dvd-mod-p.md) | 107 | `result-track:0d68c99d70280f5e1de6a4d67a4a9dca9a62347020f3aceb006f23749323e387` |
+| 8 | `theorem` | [minpoly_eq_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RootsOfUnityMinpolyAligned.lean/declarations/minpoly-eq-pow.md) | 118 | `result-track:8f901b1a500a754d4475aa07157dbe5dc750264b31713dde9a114d4d454fde1e` |
+| 9 | `theorem` | [minpoly_eq_pow_coprime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RootsOfUnityMinpolyAligned.lean/declarations/minpoly-eq-pow-coprime.md) | 175 | `result-track:d3ac1df4f15088d66c55b3dd376accd272ce9b080f91512c43b3f78ee98a11cc` |
+| 10 | `theorem` | [pow_isRoot_minpoly](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RootsOfUnityMinpolyAligned.lean/declarations/pow-isroot-minpoly.md) | 199 | `result-track:dc48baf1d2fd17a430817ca947c1215e75e959af585243dec2329e20876dfacb` |
+| 11 | `theorem` | [is_roots_of_minpoly](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RootsOfUnityMinpolyAligned.lean/declarations/is-roots-of-minpoly.md) | 207 | `result-track:c9366110773b5a6c34f8f6af7a390a56cdfe7f42c0f6b4b902b638db02c283f6` |
+| 12 | `theorem` | [totient_le_degree_minpoly](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RootsOfUnityMinpolyAligned.lean/declarations/totient-le-degree-minpoly.md) | 220 | `result-track:9ba7ec5d2a17467f7050834a7e9e0fa7a7098ee367f25ca88aa0b0f16465cad6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

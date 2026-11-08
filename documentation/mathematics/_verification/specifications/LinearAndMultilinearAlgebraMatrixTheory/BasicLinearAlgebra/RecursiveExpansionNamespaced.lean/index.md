@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RecursiveExpansionNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RecursiveExpansionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RecursiveExpansionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RecursiveExpansionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [RecursiveExpansionStatus](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RecursiveExpansionNamespaced.lean/declarations/recursiveexpansionstatus.md) | 13 | `declaration-track:382e51d81e4782e5b8606a3bea8baeca3ce5524b0d740e6dd61d843de6b0772b` |
-| 2 | `structure` | [RecursiveExpansionNode](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RecursiveExpansionNamespaced.lean/declarations/recursiveexpansionnode.md) | 25 | `declaration-track:7930642e265096d0cf55a9875edf6b36c8324d292a6242c5abb80b2053afc112` |
-| 3 | `structure` | [RecursiveExpansionStep](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RecursiveExpansionNamespaced.lean/declarations/recursiveexpansionstep.md) | 32 | `declaration-track:30d492c32850ab6f6e66e121e6ba6ffed1f117abcc0d153582922d76f1e006c3` |
-| 4 | `def` | [terminalStatus](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RecursiveExpansionNamespaced.lean/declarations/terminalstatus.md) | 39 | `declaration-track:1fbfb6ec1a6c01a3de636419f551a57f6d83b5fbe3ce7faf6b0fe97ea71718bd` |
-| 5 | `theorem` | [terminal_node_status_visible](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RecursiveExpansionNamespaced.lean/declarations/terminal-node-status-visible.md) | 49 | `result-track:ca1025a982368278b64bfd107b35d9029ed698a1a1ed0e660e02c4376fabe7b0` |
-| 6 | `theorem` | [mlx_gemma_response_not_proof_authority](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RecursiveExpansionNamespaced.lean/declarations/mlx-gemma-response-not-proof-authority.md) | 55 | `result-track:2213dd7a19837996c5dbcdfee268499d5a3545d28923885714127e73cdafc318` |
+| 1 | `inductive` | [RecursiveExpansionStatus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RecursiveExpansionNamespaced.lean/declarations/recursiveexpansionstatus.md) | 13 | `declaration-track:382e51d81e4782e5b8606a3bea8baeca3ce5524b0d740e6dd61d843de6b0772b` |
+| 2 | `structure` | [RecursiveExpansionNode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RecursiveExpansionNamespaced.lean/declarations/recursiveexpansionnode.md) | 25 | `declaration-track:7930642e265096d0cf55a9875edf6b36c8324d292a6242c5abb80b2053afc112` |
+| 3 | `structure` | [RecursiveExpansionStep](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RecursiveExpansionNamespaced.lean/declarations/recursiveexpansionstep.md) | 32 | `declaration-track:30d492c32850ab6f6e66e121e6ba6ffed1f117abcc0d153582922d76f1e006c3` |
+| 4 | `def` | [terminalStatus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RecursiveExpansionNamespaced.lean/declarations/terminalstatus.md) | 39 | `declaration-track:1fbfb6ec1a6c01a3de636419f551a57f6d83b5fbe3ce7faf6b0fe97ea71718bd` |
+| 5 | `theorem` | [terminal_node_status_visible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RecursiveExpansionNamespaced.lean/declarations/terminal-node-status-visible.md) | 49 | `result-track:ca1025a982368278b64bfd107b35d9029ed698a1a1ed0e660e02c4376fabe7b0` |
+| 6 | `theorem` | [mlx_gemma_response_not_proof_authority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RecursiveExpansionNamespaced.lean/declarations/mlx-gemma-response-not-proof-authority.md) | 55 | `result-track:2213dd7a19837996c5dbcdfee268499d5a3545d28923885714127e73cdafc318` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

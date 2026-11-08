@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/FieldSimpEdition1.lean/index.md) · [Full source](../../../../CommutativeAlgebra/FieldSimpEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FieldSimpEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FieldSimpEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,18 +60,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../CommutativeAlgebra/FieldSimpEdition1.lean/declarations/example-source-edition-12.md) | 19 | `declaration-track:db262704b30036bf7e0d23880e153bdeed83ee6e2e0e47a65f89236d6f20eb30` |
-| 2 | `example` | [(anonymous)](../../../../CommutativeAlgebra/FieldSimpEdition1.lean/declarations/example-source-edition-10.md) | 24 | `declaration-track:abb19c4204b6dfacfbf6fcd7788a0d95a9f120046b700895302817fdc9fcd826` |
-| 3 | `example` | [(anonymous)](../../../../CommutativeAlgebra/FieldSimpEdition1.lean/declarations/example-source-edition-4.md) | 29 | `declaration-track:223126d1d4a9660db2c1f92cd774a593dddf7a818700d3e251448b00cbebb929` |
-| 4 | `example` | [(anonymous)](../../../../CommutativeAlgebra/FieldSimpEdition1.lean/declarations/example-source-edition-5.md) | 34 | `declaration-track:3f0f7015e83d1cf539964bd287918d59213059720c01ef2f8fc4a5de1039ae60` |
-| 5 | `example` | [(anonymous)](../../../../CommutativeAlgebra/FieldSimpEdition1.lean/declarations/example-source-edition-11.md) | 39 | `declaration-track:d945334489622010299e460351e27d1caaaf66dc0a0a02ff7db5442129d6548a` |
-| 6 | `example` | [(anonymous)](../../../../CommutativeAlgebra/FieldSimpEdition1.lean/declarations/example-source-edition-2.md) | 45 | `declaration-track:138ad7025157abb2e8a174758f0d912662cdcd69b8b138948b89de4471506323` |
-| 7 | `example` | [(anonymous)](../../../../CommutativeAlgebra/FieldSimpEdition1.lean/declarations/example-source-edition-3.md) | 47 | `declaration-track:16f7b35441cce09dc9a34bacff677bd51af046aff0bcc55af3e86f383fd9d555` |
-| 8 | `example` | [(anonymous)](../../../../CommutativeAlgebra/FieldSimpEdition1.lean/declarations/example.md) | 52 | `declaration-track:020f6a08f2b1bdb4de77268c8c979fc818fb893a5db76745c7b743401c35263f` |
-| 9 | `example` | [(anonymous)](../../../../CommutativeAlgebra/FieldSimpEdition1.lean/declarations/example-source-edition-9.md) | 58 | `declaration-track:8c64641f521404261dbc0a690bb62b13e4d78c7e76238de230e4eab67f8d4ae9` |
-| 10 | `example` | [(anonymous)](../../../../CommutativeAlgebra/FieldSimpEdition1.lean/declarations/example-source-edition-8.md) | 64 | `declaration-track:8c26249476d8c040357becf964cad636cb9fc8ce80f64235c48e56fcec33b26d` |
-| 11 | `example` | [(anonymous)](../../../../CommutativeAlgebra/FieldSimpEdition1.lean/declarations/example-source-edition-7.md) | 70 | `declaration-track:7b54012afe2cab8f3fa51b35b00f79d1b738050046f495d073a23dd15f048d74` |
-| 12 | `example` | [(anonymous)](../../../../CommutativeAlgebra/FieldSimpEdition1.lean/declarations/example-source-edition-6.md) | 75 | `declaration-track:4742b7206c5d943d2571a894f10eed2482e28b7431a9ad102df4e65ffe448684` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FieldSimpEdition1.lean/declarations/example-source-edition-12.md) | 19 | `declaration-track:db262704b30036bf7e0d23880e153bdeed83ee6e2e0e47a65f89236d6f20eb30` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FieldSimpEdition1.lean/declarations/example-source-edition-10.md) | 24 | `declaration-track:abb19c4204b6dfacfbf6fcd7788a0d95a9f120046b700895302817fdc9fcd826` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FieldSimpEdition1.lean/declarations/example-source-edition-4.md) | 29 | `declaration-track:223126d1d4a9660db2c1f92cd774a593dddf7a818700d3e251448b00cbebb929` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FieldSimpEdition1.lean/declarations/example-source-edition-5.md) | 34 | `declaration-track:3f0f7015e83d1cf539964bd287918d59213059720c01ef2f8fc4a5de1039ae60` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FieldSimpEdition1.lean/declarations/example-source-edition-11.md) | 39 | `declaration-track:d945334489622010299e460351e27d1caaaf66dc0a0a02ff7db5442129d6548a` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FieldSimpEdition1.lean/declarations/example-source-edition-2.md) | 45 | `declaration-track:138ad7025157abb2e8a174758f0d912662cdcd69b8b138948b89de4471506323` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FieldSimpEdition1.lean/declarations/example-source-edition-3.md) | 47 | `declaration-track:16f7b35441cce09dc9a34bacff677bd51af046aff0bcc55af3e86f383fd9d555` |
+| 8 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FieldSimpEdition1.lean/declarations/example.md) | 52 | `declaration-track:020f6a08f2b1bdb4de77268c8c979fc818fb893a5db76745c7b743401c35263f` |
+| 9 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FieldSimpEdition1.lean/declarations/example-source-edition-9.md) | 58 | `declaration-track:8c64641f521404261dbc0a690bb62b13e4d78c7e76238de230e4eab67f8d4ae9` |
+| 10 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FieldSimpEdition1.lean/declarations/example-source-edition-8.md) | 64 | `declaration-track:8c26249476d8c040357becf964cad636cb9fc8ce80f64235c48e56fcec33b26d` |
+| 11 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FieldSimpEdition1.lean/declarations/example-source-edition-7.md) | 70 | `declaration-track:7b54012afe2cab8f3fa51b35b00f79d1b738050046f495d073a23dd15f048d74` |
+| 12 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FieldSimpEdition1.lean/declarations/example-source-edition-6.md) | 75 | `declaration-track:4742b7206c5d943d2571a894f10eed2482e28b7431a9ad102df4e65ffe448684` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

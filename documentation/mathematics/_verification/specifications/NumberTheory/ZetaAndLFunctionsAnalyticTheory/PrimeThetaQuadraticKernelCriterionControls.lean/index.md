@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeThetaQuadraticKernelCriterionControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeThetaQuadraticKernelCriterionControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeThetaQuadraticKernelCriterionControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeThetaQuadraticKernelCriterionControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.ClauseIndexedPrimeThetaKernelCriterion`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ClauseIndexedPrimeThetaKernelCriterion.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.ClauseIndexedPrimeThetaKernelCriterion`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ClauseIndexedPrimeThetaKernelCriterion.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [positivePolarity](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeThetaQuadraticKernelCriterionControls.lean/declarations/positivepolarity.md) | 16 | `declaration-track:d4ea80548d2604922a86ac455f57a8e72ef081db90c8da77bad74cfd0a3b2a44` |
-| 2 | `theorem` | [concrete_clause_kernel_criteria](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeThetaQuadraticKernelCriterionControls.lean/declarations/concrete-clause-kernel-criteria.md) | 21 | `result-track:44563cc37262c9814fe0262fa0717b03058e5f42eec0a996c95e8139a80ed265` |
-| 3 | `theorem` | [concrete_two_clause_kernel_criterion](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeThetaQuadraticKernelCriterionControls.lean/declarations/concrete-two-clause-kernel-criterion.md) | 26 | `result-track:586921ea33cadcf21b7ce3ed9f0872578e2ef6dea20b6f96c58b0eb4b6566dc9` |
-| 4 | `theorem` | [zero_response_zero_residual_not_majorant](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeThetaQuadraticKernelCriterionControls.lean/declarations/zero-response-zero-residual-not-majorant.md) | 33 | `result-track:112f1a0eeec5a757b791a682b4423e58f143f53cbc3bc746caab0d55798fe57b` |
-| 5 | `def` | [requiredKernelObligations](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeThetaQuadraticKernelCriterionControls.lean/declarations/requiredkernelobligations.md) | 41 | `declaration-track:afc4a3c2bf906c380c28f7a35abe1141928ba185494d9ff5e46741fa9c7fcfdc` |
-| 6 | `def` | [prohibitedPromotions](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeThetaQuadraticKernelCriterionControls.lean/declarations/prohibitedpromotions.md) | 48 | `declaration-track:a9b6226db786ec8cc19118bb0b825e7223dd2fb014e2f69065dfe7350ebe2d8f` |
+| 1 | `def` | [positivePolarity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeThetaQuadraticKernelCriterionControls.lean/declarations/positivepolarity.md) | 16 | `declaration-track:d4ea80548d2604922a86ac455f57a8e72ef081db90c8da77bad74cfd0a3b2a44` |
+| 2 | `theorem` | [concrete_clause_kernel_criteria](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeThetaQuadraticKernelCriterionControls.lean/declarations/concrete-clause-kernel-criteria.md) | 21 | `result-track:44563cc37262c9814fe0262fa0717b03058e5f42eec0a996c95e8139a80ed265` |
+| 3 | `theorem` | [concrete_two_clause_kernel_criterion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeThetaQuadraticKernelCriterionControls.lean/declarations/concrete-two-clause-kernel-criterion.md) | 26 | `result-track:586921ea33cadcf21b7ce3ed9f0872578e2ef6dea20b6f96c58b0eb4b6566dc9` |
+| 4 | `theorem` | [zero_response_zero_residual_not_majorant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeThetaQuadraticKernelCriterionControls.lean/declarations/zero-response-zero-residual-not-majorant.md) | 33 | `result-track:112f1a0eeec5a757b791a682b4423e58f143f53cbc3bc746caab0d55798fe57b` |
+| 5 | `def` | [requiredKernelObligations](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeThetaQuadraticKernelCriterionControls.lean/declarations/requiredkernelobligations.md) | 41 | `declaration-track:afc4a3c2bf906c380c28f7a35abe1141928ba185494d9ff5e46741fa9c7fcfdc` |
+| 6 | `def` | [prohibitedPromotions](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeThetaQuadraticKernelCriterionControls.lean/declarations/prohibitedpromotions.md) | 48 | `declaration-track:a9b6226db786ec8cc19118bb0b825e7223dd2fb014e2f69065dfe7350ebe2d8f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

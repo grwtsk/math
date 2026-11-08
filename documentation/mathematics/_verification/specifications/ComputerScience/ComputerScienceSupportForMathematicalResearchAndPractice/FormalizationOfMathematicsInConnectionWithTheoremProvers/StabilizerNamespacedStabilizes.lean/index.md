@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/StabilizerNamespacedStabilizes.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/StabilizerNamespacedStabilizes.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/StabilizerNamespacedStabilizes.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/StabilizerNamespacedStabilizes.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Stabilizes](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/StabilizerNamespacedStabilizes.lean/declarations/stabilizes.md) | 17 | `declaration-track:3dc1ac9711e0e6a9d0f5e3dc3a8071de3a77a668987b1fc861ac0354de9d41f5` |
-| 2 | `def` | [Stabilizer](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/StabilizerNamespacedStabilizes.lean/declarations/stabilizer.md) | 24 | `declaration-track:9e50bfb2aab38745c2d2f475d2f3e2a651c6cea9a630f0d947dd190811548413` |
+| 1 | `def` | [Stabilizes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/StabilizerNamespacedStabilizes.lean/declarations/stabilizes.md) | 17 | `declaration-track:3dc1ac9711e0e6a9d0f5e3dc3a8071de3a77a668987b1fc861ac0354de9d41f5` |
+| 2 | `def` | [Stabilizer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/StabilizerNamespacedStabilizes.lean/declarations/stabilizer.md) | 24 | `declaration-track:9e50bfb2aab38745c2d2f475d2f3e2a651c6cea9a630f0d947dd190811548413` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/SemiconjBasic.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/SemiconjBasic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SemiconjBasic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SemiconjBasic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [inv_inv_symm_iff](../../../../GroupTheoryAndGeneralizations/SemiconjBasic.lean/declarations/inv-inv-symm-iff.md) | 23 | `result-track:b64066300a76052e82442ae2b9fd2475cd70c8efe28945d0cae3b3c1bc137c40` |
-| 2 | `lemma` | [inv_symm_left_iff](../../../../GroupTheoryAndGeneralizations/SemiconjBasic.lean/declarations/inv-symm-left-iff.md) | 33 | `result-track:f14321c3a56264ec3908bab00167baa9fe83387a6e6531c335fe0e4f882541ff` |
-| 3 | `lemma` | [inv_right_iff](../../../../GroupTheoryAndGeneralizations/SemiconjBasic.lean/declarations/inv-right-iff.md) | 38 | `result-track:94053a860f4401df9eb764c44cc33401920ef9eee16afff448cd1c7feb379f65` |
-| 4 | `lemma` | [zpow_right](../../../../GroupTheoryAndGeneralizations/SemiconjBasic.lean/declarations/zpow-right.md) | 43 | `result-track:a89e7122ffffc75e332e1f9a9b22b5b25a29ad57fd3b0505d1f5dbe1bc7f2084` |
-| 5 | `lemma` | [eq_one_iff](../../../../GroupTheoryAndGeneralizations/SemiconjBasic.lean/declarations/eq-one-iff.md) | 51 | `result-track:46fa67492749faf0ac17cf682940ed9558ac67c0dfb48649139187c71740e8ef` |
+| 1 | `theorem` | [inv_inv_symm_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SemiconjBasic.lean/declarations/inv-inv-symm-iff.md) | 23 | `result-track:b64066300a76052e82442ae2b9fd2475cd70c8efe28945d0cae3b3c1bc137c40` |
+| 2 | `lemma` | [inv_symm_left_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SemiconjBasic.lean/declarations/inv-symm-left-iff.md) | 33 | `result-track:f14321c3a56264ec3908bab00167baa9fe83387a6e6531c335fe0e4f882541ff` |
+| 3 | `lemma` | [inv_right_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SemiconjBasic.lean/declarations/inv-right-iff.md) | 38 | `result-track:94053a860f4401df9eb764c44cc33401920ef9eee16afff448cd1c7feb379f65` |
+| 4 | `lemma` | [zpow_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SemiconjBasic.lean/declarations/zpow-right.md) | 43 | `result-track:a89e7122ffffc75e332e1f9a9b22b5b25a29ad57fd3b0505d1f5dbe1bc7f2084` |
+| 5 | `lemma` | [eq_one_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SemiconjBasic.lean/declarations/eq-one-iff.md) | 51 | `result-track:46fa67492749faf0ac17cf682940ed9558ac67c0dfb48649139187c71740e8ef` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DerivativeIdentities.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DerivativeIdentities.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DerivativeIdentities.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DerivativeIdentities.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [centeredXi](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DerivativeIdentities.lean/declarations/centeredxi.md) | 10 | `declaration-track:cdabc831d75bbe34cc687f44b70190c6e9b279856c8476e056922c135377aafd` |
-| 2 | `theorem` | [iteratedDeriv_centeredXi_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DerivativeIdentities.lean/declarations/iteratedderiv-centeredxi-zero.md) | 13 | `result-track:a90c2011fd9559637d3a0d8b2d1cbd4bf89a1fd9dd966297a301b99e878b56d3` |
-| 3 | `theorem` | [iteratedDeriv_cosh_linear_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DerivativeIdentities.lean/declarations/iteratedderiv-cosh-linear-zero.md) | 20 | `result-track:d855dc46a1293940951dcc5e214b638b3b68c19cbe4f8fdceae3be2cc3a02e85` |
+| 1 | `def` | [centeredXi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DerivativeIdentities.lean/declarations/centeredxi.md) | 10 | `declaration-track:cdabc831d75bbe34cc687f44b70190c6e9b279856c8476e056922c135377aafd` |
+| 2 | `theorem` | [iteratedDeriv_centeredXi_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DerivativeIdentities.lean/declarations/iteratedderiv-centeredxi-zero.md) | 13 | `result-track:a90c2011fd9559637d3a0d8b2d1cbd4bf89a1fd9dd966297a301b99e878b56d3` |
+| 3 | `theorem` | [iteratedDeriv_cosh_linear_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DerivativeIdentities.lean/declarations/iteratedderiv-cosh-linear-zero.md) | 20 | `result-track:d855dc46a1293940951dcc5e214b638b3b68c19cbe4f8fdceae3be2cc3a02e85` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

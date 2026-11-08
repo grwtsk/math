@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PolynomialEnergyCriterion.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PolynomialEnergyCriterion.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PolynomialEnergyCriterion.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PolynomialEnergyCriterion.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,10 +46,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Moebius.GramDiagonalBound`](../../../../../../MeasureAndIntegration/GramDiagonalBound.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Moebius.DirichletLaplaceIdentity`](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DirichletLaplaceIdentity.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.NumberTheory.Moebius.LaplaceHolomorphy`](../../../../../../MeasureAndIntegration/LaplaceHolomorphy.lean/index.md) — import line 6; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.LaplaceCriterion`](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/LaplaceCriterion.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.GramDiagonalBound`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GramDiagonalBound.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.DirichletLaplaceIdentity`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DirichletLaplaceIdentity.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.LaplaceHolomorphy`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LaplaceHolomorphy.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.LaplaceCriterion`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/LaplaceCriterion.lean/index.md) — import line 7; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -60,12 +60,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [pickupCrossPoly_iff_pickupEnergyPoly](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PolynomialEnergyCriterion.lean/declarations/pickupcrosspoly-iff-pickupenergypoly.md) | 25 | `result-track:545619476db60348baf3ad9b7962c809ab9173d71edabc277544fa29437b9ebd` |
-| 2 | `theorem` | [pickup_initial_transform_identity](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PolynomialEnergyCriterion.lean/declarations/pickup-initial-transform-identity.md) | 30 | `result-track:1192e801364e5f8f54722c9f953487580ac8bf64ca0eb2c6f90d87536d36d488` |
-| 3 | `theorem` | [pickup_energy_poly_signed_laplace_holomorphic](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PolynomialEnergyCriterion.lean/declarations/pickup-energy-poly-signed-laplace-holomorphic.md) | 36 | `result-track:dff2d606240576810f6280d29f53270105b813649aac5047216f6a181848163f` |
-| 4 | `theorem` | [riemannHypothesis_of_pickupEnergyPoly](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PolynomialEnergyCriterion.lean/declarations/riemannhypothesis-of-pickupenergypoly.md) | 41 | `result-track:1d6b4f8f07241d239d7541ee06071a45fa136f87fb72691621273eff3f93c533` |
-| 5 | `theorem` | [riemannHypothesis_of_pickupCrossPoly](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PolynomialEnergyCriterion.lean/declarations/riemannhypothesis-of-pickupcrosspoly.md) | 47 | `result-track:ad595d4640f599359d025c0cc448c0af5d00b590b29fc5a7878ac674e7b35b29` |
-| 6 | `theorem` | [pickupCross_lower](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PolynomialEnergyCriterion.lean/declarations/pickupcross-lower.md) | 52 | `result-track:82cb809602174f75fd56fe8dd0ac74a54ba657e8a3eea828f1afb3503b2050fa` |
+| 1 | `theorem` | [pickupCrossPoly_iff_pickupEnergyPoly](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PolynomialEnergyCriterion.lean/declarations/pickupcrosspoly-iff-pickupenergypoly.md) | 25 | `result-track:545619476db60348baf3ad9b7962c809ab9173d71edabc277544fa29437b9ebd` |
+| 2 | `theorem` | [pickup_initial_transform_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PolynomialEnergyCriterion.lean/declarations/pickup-initial-transform-identity.md) | 30 | `result-track:1192e801364e5f8f54722c9f953487580ac8bf64ca0eb2c6f90d87536d36d488` |
+| 3 | `theorem` | [pickup_energy_poly_signed_laplace_holomorphic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PolynomialEnergyCriterion.lean/declarations/pickup-energy-poly-signed-laplace-holomorphic.md) | 36 | `result-track:dff2d606240576810f6280d29f53270105b813649aac5047216f6a181848163f` |
+| 4 | `theorem` | [riemannHypothesis_of_pickupEnergyPoly](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PolynomialEnergyCriterion.lean/declarations/riemannhypothesis-of-pickupenergypoly.md) | 41 | `result-track:1d6b4f8f07241d239d7541ee06071a45fa136f87fb72691621273eff3f93c533` |
+| 5 | `theorem` | [riemannHypothesis_of_pickupCrossPoly](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PolynomialEnergyCriterion.lean/declarations/riemannhypothesis-of-pickupcrosspoly.md) | 47 | `result-track:ad595d4640f599359d025c0cc448c0af5d00b590b29fc5a7878ac674e7b35b29` |
+| 6 | `theorem` | [pickupCross_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PolynomialEnergyCriterion.lean/declarations/pickupcross-lower.md) | 52 | `result-track:82cb809602174f75fd56fe8dd0ac74a54ba657e8a3eea828f1afb3503b2050fa` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

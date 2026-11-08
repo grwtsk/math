@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Packet.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Packet.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Packet.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Packet.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Digest](../../../../../ComputerScience/AlgorithmsInComputerScience/Packet.lean/declarations/digest.md) | 5 | `declaration-track:e07a394932cf0835bd0ffea528d6a7258ac9f8acf6454bc4ab6fbf16f625333d` |
-| 2 | `structure` | [Rational](../../../../../ComputerScience/AlgorithmsInComputerScience/Packet.lean/declarations/rational.md) | 9 | `declaration-track:4ebeb72e974b631e6a88cc1d219f08080dfc0901ce73b3c1b50c91f5ce388d9d` |
-| 3 | `structure` | [ScopePacket](../../../../../ComputerScience/AlgorithmsInComputerScience/Packet.lean/declarations/scopepacket.md) | 15 | `declaration-track:d6130ce62a500b8652acdc4f9bb23d3a62407f8432719485bfde2a0d6bec6000` |
-| 4 | `structure` | [RationalHodgeClass](../../../../../ComputerScience/AlgorithmsInComputerScience/Packet.lean/declarations/rationalhodgeclass.md) | 21 | `declaration-track:cd8a18550b7def32d91af107b1d23f0fcc9e6c96c7f973dff46ca1e25e0e59a3` |
-| 5 | `structure` | [AlgebraicCycle](../../../../../ComputerScience/AlgorithmsInComputerScience/Packet.lean/declarations/algebraiccycle.md) | 26 | `declaration-track:c60bf68238fe7ac07c78cf99224dec7102281289e1ed1a2766d657677f9aecd5` |
-| 6 | `structure` | [CycleClassEquality](../../../../../ComputerScience/AlgorithmsInComputerScience/Packet.lean/declarations/cycleclassequality.md) | 32 | `declaration-track:a04a11d715e827f6de46d2a49f73bfe1a3c347a8889def2a65310a0e697be324` |
-| 7 | `structure` | [PrefixComparison](../../../../../ComputerScience/AlgorithmsInComputerScience/Packet.lean/declarations/prefixcomparison.md) | 37 | `declaration-track:3e45cb95415425fa9cff6b4c13f4898380683c71ef8d5b0252ff3d47c0d6494e` |
-| 8 | `inductive` | [RoutingPort](../../../../../ComputerScience/AlgorithmsInComputerScience/Packet.lean/declarations/routingport.md) | 43 | `declaration-track:50e5b0e000158a46ad41e0b40b3c8de64d4589d872137ad58acd8c95539e21a8` |
-| 9 | `inductive` | [RoutingDisposition](../../../../../ComputerScience/AlgorithmsInComputerScience/Packet.lean/declarations/routingdisposition.md) | 49 | `declaration-track:293133f39c550ac2cd0ca14f985577dac47ed172b777bfa24300b46b98b35a50` |
+| 1 | `structure` | [Digest](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Packet.lean/declarations/digest.md) | 5 | `declaration-track:e07a394932cf0835bd0ffea528d6a7258ac9f8acf6454bc4ab6fbf16f625333d` |
+| 2 | `structure` | [Rational](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Packet.lean/declarations/rational.md) | 9 | `declaration-track:4ebeb72e974b631e6a88cc1d219f08080dfc0901ce73b3c1b50c91f5ce388d9d` |
+| 3 | `structure` | [ScopePacket](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Packet.lean/declarations/scopepacket.md) | 15 | `declaration-track:d6130ce62a500b8652acdc4f9bb23d3a62407f8432719485bfde2a0d6bec6000` |
+| 4 | `structure` | [RationalHodgeClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Packet.lean/declarations/rationalhodgeclass.md) | 21 | `declaration-track:cd8a18550b7def32d91af107b1d23f0fcc9e6c96c7f973dff46ca1e25e0e59a3` |
+| 5 | `structure` | [AlgebraicCycle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Packet.lean/declarations/algebraiccycle.md) | 26 | `declaration-track:c60bf68238fe7ac07c78cf99224dec7102281289e1ed1a2766d657677f9aecd5` |
+| 6 | `structure` | [CycleClassEquality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Packet.lean/declarations/cycleclassequality.md) | 32 | `declaration-track:a04a11d715e827f6de46d2a49f73bfe1a3c347a8889def2a65310a0e697be324` |
+| 7 | `structure` | [PrefixComparison](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Packet.lean/declarations/prefixcomparison.md) | 37 | `declaration-track:3e45cb95415425fa9cff6b4c13f4898380683c71ef8d5b0252ff3d47c0d6494e` |
+| 8 | `inductive` | [RoutingPort](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Packet.lean/declarations/routingport.md) | 43 | `declaration-track:50e5b0e000158a46ad41e0b40b3c8de64d4589d872137ad58acd8c95539e21a8` |
+| 9 | `inductive` | [RoutingDisposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Packet.lean/declarations/routingdisposition.md) | 49 | `declaration-track:293133f39c550ac2cd0ca14f985577dac47ed172b777bfa24300b46b98b35a50` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

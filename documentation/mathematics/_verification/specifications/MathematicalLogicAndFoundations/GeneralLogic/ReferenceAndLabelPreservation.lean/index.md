@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ReferenceAndLabelPreservation.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ReferenceAndLabelPreservation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ReferenceAndLabelPreservation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ReferenceAndLabelPreservation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `Atomize.Formal.TreePlan` — import line 19; external provider; requires a separately pinned dependency.
-- [Structural Recovery And Tree Metrics](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StructuralRecoveryAndTreeMetrics.lean/index.md) — import line 21; pinned internal source present.
+- [Structural Recovery And Tree Metrics](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StructuralRecoveryAndTreeMetrics.lean/index.md) — import line 21; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [constantReferences](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ReferenceAndLabelPreservation.lean/declarations/constantreferences.md) | 86 | `declaration-track:bb748b5a0a770cdf50b1224424abf8c4bfab24a836905bd6329de4fd8ac6c4d7` |
-| 2 | `def` | [rootVariables](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ReferenceAndLabelPreservation.lean/declarations/rootvariables.md) | 102 | `declaration-track:590e99af5de2bb36a021f76181831fe2802c5bf686caab92fe410c9d0614d4a1` |
-| 3 | `def` | [leafOrigins](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ReferenceAndLabelPreservation.lean/declarations/leaforigins.md) | 118 | `declaration-track:106a95b9b7668a51ac4909b4c6ac5902cae4e0af5da87e3dac50724a85b1ba80` |
-| 4 | `theorem` | [constantReferences_comp](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ReferenceAndLabelPreservation.lean/declarations/constantreferences-comp.md) | 142 | `result-track:55579c4cd6fe2f8277330501de48facaa259266edb2cbdc2c4dd179fd704fbfa` |
-| 5 | `theorem` | [rootVariables_comp](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ReferenceAndLabelPreservation.lean/declarations/rootvariables-comp.md) | 166 | `result-track:d58b50106cefa6527e1be2f7ecbb2c20817f6562c055ccb996323c60d0313096` |
-| 6 | `theorem` | [leafOrigins_comp](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ReferenceAndLabelPreservation.lean/declarations/leaforigins-comp.md) | 189 | `result-track:ad7339c3bd64ede1b1a485ecf0b18af4ba2b534164fb8631d5bc4c0faa475bd7` |
+| 1 | `def` | [constantReferences](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ReferenceAndLabelPreservation.lean/declarations/constantreferences.md) | 86 | `declaration-track:bb748b5a0a770cdf50b1224424abf8c4bfab24a836905bd6329de4fd8ac6c4d7` |
+| 2 | `def` | [rootVariables](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ReferenceAndLabelPreservation.lean/declarations/rootvariables.md) | 102 | `declaration-track:590e99af5de2bb36a021f76181831fe2802c5bf686caab92fe410c9d0614d4a1` |
+| 3 | `def` | [leafOrigins](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ReferenceAndLabelPreservation.lean/declarations/leaforigins.md) | 118 | `declaration-track:106a95b9b7668a51ac4909b4c6ac5902cae4e0af5da87e3dac50724a85b1ba80` |
+| 4 | `theorem` | [constantReferences_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ReferenceAndLabelPreservation.lean/declarations/constantreferences-comp.md) | 142 | `result-track:55579c4cd6fe2f8277330501de48facaa259266edb2cbdc2c4dd179fd704fbfa` |
+| 5 | `theorem` | [rootVariables_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ReferenceAndLabelPreservation.lean/declarations/rootvariables-comp.md) | 166 | `result-track:d58b50106cefa6527e1be2f7ecbb2c20817f6562c055ccb996323c60d0313096` |
+| 6 | `theorem` | [leafOrigins_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ReferenceAndLabelPreservation.lean/declarations/leaforigins-comp.md) | 189 | `result-track:ad7339c3bd64ede1b1a485ecf0b18af4ba2b534164fb8631d5bc4c0faa475bd7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

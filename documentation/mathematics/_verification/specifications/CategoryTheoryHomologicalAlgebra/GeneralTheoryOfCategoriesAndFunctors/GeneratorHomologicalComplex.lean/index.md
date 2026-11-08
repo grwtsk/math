@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GeneratorHomologicalComplex.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GeneratorHomologicalComplex.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GeneratorHomologicalComplex.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GeneratorHomologicalComplex.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [separatingFamily](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GeneratorHomologicalComplex.lean/declarations/separatingfamily.md) | 38 | `declaration-track:b1fb4829231547526fd1b9b784528ee7e9345cebbaac0603bfc0cefb3f177110` |
-| 2 | `lemma` | [isSeparating_separatingFamily](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GeneratorHomologicalComplex.lean/declarations/isseparating-separatingfamily.md) | 42 | `result-track:3b1ea8b228cd72767641136c6cb9d15e2c17f8dd7ea6275d9dbdf2782002dd4c` |
-| 3 | `lemma` | [isSeparator_coproduct_separatingFamily](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GeneratorHomologicalComplex.lean/declarations/isseparator-coproduct-separatingfamily.md) | 56 | `result-track:6454bc73417cd984b54dfb8c9f26b248e7d4cfdc5752de123c8a65e855730df7` |
-| 4 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GeneratorHomologicalComplex.lean/declarations/instance.md) | 65 | `declaration-track:d482a019b87ea886455abd6a933c11925c3d0a3c4dec8668fb5dc6105b6a1b64` |
+| 1 | `def` | [separatingFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GeneratorHomologicalComplex.lean/declarations/separatingfamily.md) | 38 | `declaration-track:b1fb4829231547526fd1b9b784528ee7e9345cebbaac0603bfc0cefb3f177110` |
+| 2 | `lemma` | [isSeparating_separatingFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GeneratorHomologicalComplex.lean/declarations/isseparating-separatingfamily.md) | 42 | `result-track:3b1ea8b228cd72767641136c6cb9d15e2c17f8dd7ea6275d9dbdf2782002dd4c` |
+| 3 | `lemma` | [isSeparator_coproduct_separatingFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GeneratorHomologicalComplex.lean/declarations/isseparator-coproduct-separatingfamily.md) | 56 | `result-track:6454bc73417cd984b54dfb8c9f26b248e7d4cfdc5752de123c8a65e855730df7` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GeneratorHomologicalComplex.lean/declarations/instance.md) | 65 | `declaration-track:d482a019b87ea886455abd6a933c11925c3d0a3c4dec8668fb5dc6105b6a1b64` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

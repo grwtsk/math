@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResultsAlternative8SourceEdition2.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResultsAlternative8SourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResultsAlternative8SourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResultsAlternative8SourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,7 +60,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [RootHasNoParents](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResultsAlternative8SourceEdition2.lean/declarations/roothasnoparents.md) | 23 | `declaration-track:8aa3b585d939d1ae7b56ee61c5799893a23e7f6f550fe23b5b3d71b8d1c5a262` |
+| 1 | `def` | [RootHasNoParents](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResultsAlternative8SourceEdition2.lean/declarations/roothasnoparents.md) | 23 | `declaration-track:8aa3b585d939d1ae7b56ee61c5799893a23e7f6f550fe23b5b3d71b8d1c5a262` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

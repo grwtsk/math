@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SquareZeroMaps.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SquareZeroMaps.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SquareZeroMaps.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SquareZeroMaps.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [not_injective_of_square_zero](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SquareZeroMaps.lean/declarations/not-injective-of-square-zero.md) | 62 | `result-track:e39186c8fa347367c57a2b859bb288ccb0b509677e9de40846b9cb89f3cd9dcb` |
-| 2 | `theorem` | [not_bijective_of_square_zero](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SquareZeroMaps.lean/declarations/not-bijective-of-square-zero.md) | 79 | `result-track:bf54bec49dad0ecfc2bd0faf4bbb8b2e2b804e628a5949bc53d91a7f88f96391` |
+| 1 | `theorem` | [not_injective_of_square_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SquareZeroMaps.lean/declarations/not-injective-of-square-zero.md) | 62 | `result-track:e39186c8fa347367c57a2b859bb288ccb0b509677e9de40846b9cb89f3cd9dcb` |
+| 2 | `theorem` | [not_bijective_of_square_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SquareZeroMaps.lean/declarations/not-bijective-of-square-zero.md) | 79 | `result-track:bf54bec49dad0ecfc2bd0faf4bbb8b2e2b804e628a5949bc53d91a7f88f96391` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

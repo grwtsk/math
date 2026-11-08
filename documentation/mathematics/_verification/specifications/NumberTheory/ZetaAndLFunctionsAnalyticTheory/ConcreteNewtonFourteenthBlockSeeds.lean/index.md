@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFourteenthBlockSeeds.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFourteenthBlockSeeds.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFourteenthBlockSeeds.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFourteenthBlockSeeds.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.ConcreteNewtonFourteenthBlockData`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFourteenthBlockData.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.ConcreteNewtonFourteenthBlockData`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFourteenthBlockData.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [all_inputs](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFourteenthBlockSeeds.lean/declarations/all-inputs.md) | 26 | `result-track:e5690437a78f56fd5564b8d12bbad115f6204ac86bacdf8d56e3334fe2beaf50` |
-| 2 | `theorem` | [all_windows](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFourteenthBlockSeeds.lean/declarations/all-windows.md) | 36 | `result-track:d2ac4a26a104268d1f6dbfb95a3f0145462324e52bbb8ca642b6b4bdbd3ac974` |
-| 3 | `theorem` | [all_seeds_valid](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFourteenthBlockSeeds.lean/declarations/all-seeds-valid.md) | 49 | `result-track:19ad91edae3fe444a9d631dd28a15084c3cb590ec3a2ae48a1cfbab3adec0adf` |
+| 1 | `theorem` | [all_inputs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFourteenthBlockSeeds.lean/declarations/all-inputs.md) | 26 | `result-track:e5690437a78f56fd5564b8d12bbad115f6204ac86bacdf8d56e3334fe2beaf50` |
+| 2 | `theorem` | [all_windows](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFourteenthBlockSeeds.lean/declarations/all-windows.md) | 36 | `result-track:d2ac4a26a104268d1f6dbfb95a3f0145462324e52bbb8ca642b6b4bdbd3ac974` |
+| 3 | `theorem` | [all_seeds_valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFourteenthBlockSeeds.lean/declarations/all-seeds-valid.md) | 49 | `result-track:19ad91edae3fe444a9d631dd28a15084c3cb590ec3a2ae48a1cfbab3adec0adf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

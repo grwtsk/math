@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/PropEncodablePublic.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/PropEncodablePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PropEncodablePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PropEncodablePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [PropForm](../../../../../ComputerScience/AlgorithmsInComputerScience/PropEncodablePublic.lean/declarations/propform.md) | 31 | `declaration-track:4babdab722510dd2f1e6751d27b2e9f7d1bde2552f3345a8f63abe41581715de` |
-| 2 | `def` | [Constructors](../../../../../ComputerScience/AlgorithmsInComputerScience/PropEncodablePublic.lean/declarations/constructors.md) | 39 | `declaration-track:0f4d118993a7c305b04517ca563f48a409c13721c8948980fc918e476f1bd171` |
-| 3 | `def` | [arity](../../../../../ComputerScience/AlgorithmsInComputerScience/PropEncodablePublic.lean/declarations/arity.md) | 51 | `declaration-track:c335735fa3e0c7aad2e5d2cfcd9700908ffd6b920bd8554ab9dad8f63eb7d028` |
-| 4 | `instance` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/PropEncodablePublic.lean/declarations/instance.md) | 59 | `declaration-track:2863f4464ab5816c42090724574131c045250ba7b2ce46b00801eabc3d8e9859` |
-| 5 | `def` | [f](../../../../../ComputerScience/AlgorithmsInComputerScience/PropEncodablePublic.lean/declarations/f.md) | 64 | `declaration-track:9e8025ace6b3e689f1bb3037f08a72a7a3f4d7db0f1be8b2662cb213c3a6be3a` |
-| 6 | `def` | [finv](../../../../../ComputerScience/AlgorithmsInComputerScience/PropEncodablePublic.lean/declarations/finv.md) | 70 | `declaration-track:85348e8bd0f88b0b4f350bdc2c219428b6d9f25435bdf5cac9e52b725a0f264d` |
-| 7 | `instance` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/PropEncodablePublic.lean/declarations/instance-source-edition-2.md) | 76 | `declaration-track:f1d84a30fd1df3c9ad21c1a714a033db25faf7a923c070ad595e639dfcc032b8` |
+| 1 | `inductive` | [PropForm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PropEncodablePublic.lean/declarations/propform.md) | 31 | `declaration-track:4babdab722510dd2f1e6751d27b2e9f7d1bde2552f3345a8f63abe41581715de` |
+| 2 | `def` | [Constructors](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PropEncodablePublic.lean/declarations/constructors.md) | 39 | `declaration-track:0f4d118993a7c305b04517ca563f48a409c13721c8948980fc918e476f1bd171` |
+| 3 | `def` | [arity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PropEncodablePublic.lean/declarations/arity.md) | 51 | `declaration-track:c335735fa3e0c7aad2e5d2cfcd9700908ffd6b920bd8554ab9dad8f63eb7d028` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PropEncodablePublic.lean/declarations/instance.md) | 59 | `declaration-track:2863f4464ab5816c42090724574131c045250ba7b2ce46b00801eabc3d8e9859` |
+| 5 | `def` | [f](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PropEncodablePublic.lean/declarations/f.md) | 64 | `declaration-track:9e8025ace6b3e689f1bb3037f08a72a7a3f4d7db0f1be8b2662cb213c3a6be3a` |
+| 6 | `def` | [finv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PropEncodablePublic.lean/declarations/finv.md) | 70 | `declaration-track:85348e8bd0f88b0b4f350bdc2c219428b6d9f25435bdf5cac9e52b725a0f264d` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PropEncodablePublic.lean/declarations/instance-source-edition-2.md) | 76 | `declaration-track:f1d84a30fd1df3c9ad21c1a714a033db25faf7a923c070ad595e639dfcc032b8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

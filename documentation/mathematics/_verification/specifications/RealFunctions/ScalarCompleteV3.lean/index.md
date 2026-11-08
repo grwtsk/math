@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/ScalarCompleteV3.lean/index.md) · [Full source](../../../../RealFunctions/ScalarCompleteV3.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ScalarCompleteV3.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ScalarCompleteV3.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,17 +58,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [normalizationDerivative](../../../../RealFunctions/ScalarCompleteV3.lean/declarations/normalizationderivative.md) | 34 | `declaration-track:492914f042ea3eb252b588375e0037e9d4cef03d3940ddd35e92a25bd37bb256` |
-| 2 | `theorem` | [sourceNormalization_hasDerivAt](../../../../RealFunctions/ScalarCompleteV3.lean/declarations/sourcenormalization-hasderivat.md) | 38 | `result-track:e2bd32dd9a50e231e08a52e7e947d04d334775d7f82ec6857e6ba8740a85007e` |
-| 3 | `theorem` | [sourceNormalization_deriv](../../../../RealFunctions/ScalarCompleteV3.lean/declarations/sourcenormalization-deriv.md) | 54 | `result-track:d44f41c11eafcaeabd5f2153c52ee8e459760fdeab57f4b6a3be47f38fd1c393` |
-| 4 | `def` | [scaleAmplitude](../../../../RealFunctions/ScalarCompleteV3.lean/declarations/scaleamplitude.md) | 59 | `declaration-track:3f567d65061875a46f3bbd15c49045a44866ec6dd117d36fb9df1ad0ffe3163d` |
-| 5 | `theorem` | [scaleAmplitude_eq](../../../../RealFunctions/ScalarCompleteV3.lean/declarations/scaleamplitude-eq.md) | 62 | `result-track:ac9dd577f597601dd4c33e2054d633c4988e511d502b8f207cf0d7fae7e2eda6` |
-| 6 | `theorem` | [scaleProfile_eq_amplitude](../../../../RealFunctions/ScalarCompleteV3.lean/declarations/scaleprofile-eq-amplitude.md) | 67 | `result-track:695d885f94a61ee52c399675270448ba8257ed85027a3a2964f112ec4e7c4236` |
-| 7 | `theorem` | [scaleAmplitude_hasDerivAt](../../../../RealFunctions/ScalarCompleteV3.lean/declarations/scaleamplitude-hasderivat.md) | 75 | `result-track:b9efdaf71c784ccb51f1a3684ab90c8732687fb19735ab72c83f4e02994f713f` |
-| 8 | `def` | [scaleDerivative](../../../../RealFunctions/ScalarCompleteV3.lean/declarations/scalederivative.md) | 90 | `declaration-track:fc3f9b4b4b47d187ec77e5a0bf58bbbb4f7cfdc8302846daf84e1ea3be13ee34` |
-| 9 | `theorem` | [scaleDerivative_eq_actual](../../../../RealFunctions/ScalarCompleteV3.lean/declarations/scalederivative-eq-actual.md) | 99 | `result-track:95907fceacdb9467f92ca4e3c8f47bde85804ffd1fe98eeb51c732d34d3e89da` |
-| 10 | `theorem` | [scaleProfile_hasDerivAt](../../../../RealFunctions/ScalarCompleteV3.lean/declarations/scaleprofile-hasderivat.md) | 111 | `result-track:0ed92d126f35197b9dab680b8bbf2b2d4be54e2013cdd865d55244fc118636ba` |
-| 11 | `theorem` | [normalizedSource_hasDerivAt](../../../../RealFunctions/ScalarCompleteV3.lean/declarations/normalizedsource-hasderivat.md) | 135 | `result-track:45257e381e7a3c2d5227e0c556d9b60a8eb5dbdef0025df3c16d5b75ee9a6234` |
+| 1 | `def` | [normalizationDerivative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ScalarCompleteV3.lean/declarations/normalizationderivative.md) | 34 | `declaration-track:492914f042ea3eb252b588375e0037e9d4cef03d3940ddd35e92a25bd37bb256` |
+| 2 | `theorem` | [sourceNormalization_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ScalarCompleteV3.lean/declarations/sourcenormalization-hasderivat.md) | 38 | `result-track:e2bd32dd9a50e231e08a52e7e947d04d334775d7f82ec6857e6ba8740a85007e` |
+| 3 | `theorem` | [sourceNormalization_deriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ScalarCompleteV3.lean/declarations/sourcenormalization-deriv.md) | 54 | `result-track:d44f41c11eafcaeabd5f2153c52ee8e459760fdeab57f4b6a3be47f38fd1c393` |
+| 4 | `def` | [scaleAmplitude](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ScalarCompleteV3.lean/declarations/scaleamplitude.md) | 59 | `declaration-track:3f567d65061875a46f3bbd15c49045a44866ec6dd117d36fb9df1ad0ffe3163d` |
+| 5 | `theorem` | [scaleAmplitude_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ScalarCompleteV3.lean/declarations/scaleamplitude-eq.md) | 62 | `result-track:ac9dd577f597601dd4c33e2054d633c4988e511d502b8f207cf0d7fae7e2eda6` |
+| 6 | `theorem` | [scaleProfile_eq_amplitude](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ScalarCompleteV3.lean/declarations/scaleprofile-eq-amplitude.md) | 67 | `result-track:695d885f94a61ee52c399675270448ba8257ed85027a3a2964f112ec4e7c4236` |
+| 7 | `theorem` | [scaleAmplitude_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ScalarCompleteV3.lean/declarations/scaleamplitude-hasderivat.md) | 75 | `result-track:b9efdaf71c784ccb51f1a3684ab90c8732687fb19735ab72c83f4e02994f713f` |
+| 8 | `def` | [scaleDerivative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ScalarCompleteV3.lean/declarations/scalederivative.md) | 90 | `declaration-track:fc3f9b4b4b47d187ec77e5a0bf58bbbb4f7cfdc8302846daf84e1ea3be13ee34` |
+| 9 | `theorem` | [scaleDerivative_eq_actual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ScalarCompleteV3.lean/declarations/scalederivative-eq-actual.md) | 99 | `result-track:95907fceacdb9467f92ca4e3c8f47bde85804ffd1fe98eeb51c732d34d3e89da` |
+| 10 | `theorem` | [scaleProfile_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ScalarCompleteV3.lean/declarations/scaleprofile-hasderivat.md) | 111 | `result-track:0ed92d126f35197b9dab680b8bbf2b2d4be54e2013cdd865d55244fc118636ba` |
+| 11 | `theorem` | [normalizedSource_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ScalarCompleteV3.lean/declarations/normalizedsource-hasderivat.md) | 135 | `result-track:45257e381e7a3c2d5227e0c556d9b60a8eb5dbdef0025df3c16d5b75ee9a6234` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

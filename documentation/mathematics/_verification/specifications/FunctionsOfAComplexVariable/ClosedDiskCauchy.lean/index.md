@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/ClosedDiskCauchy.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/ClosedDiskCauchy.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ClosedDiskCauchy.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ClosedDiskCauchy.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [diffContOnCl_ball](../../../../FunctionsOfAComplexVariable/ClosedDiskCauchy.lean/declarations/diffcontoncl-ball.md) | 24 | `result-track:3796db532921c93c10ce85137fbd1719d16fa978a09b0f29dc09455edf8a0cbe` |
-| 2 | `theorem` | [translated_disk_subset](../../../../FunctionsOfAComplexVariable/ClosedDiskCauchy.lean/declarations/translated-disk-subset.md) | 32 | `result-track:50d379b5f08c37c64c50c84a073c667485991f55fd0901ed2963064e07305255` |
-| 3 | `theorem` | [norm_iteratedDeriv_le_on_inner](../../../../FunctionsOfAComplexVariable/ClosedDiskCauchy.lean/declarations/norm-iteratedderiv-le-on-inner.md) | 39 | `result-track:1c2a99f048236efafa0f021088b0cd78795490a347d1e397436a79215b642504` |
-| 4 | `theorem` | [norm_secondDeriv_le_on_inner](../../../../FunctionsOfAComplexVariable/ClosedDiskCauchy.lean/declarations/norm-secondderiv-le-on-inner.md) | 52 | `result-track:d95635750a25a61eb956ca936b328bd52b43ef679f5b3268d7d55e1ab2276a89` |
-| 5 | `theorem` | [derivative_error_at_center](../../../../FunctionsOfAComplexVariable/ClosedDiskCauchy.lean/declarations/derivative-error-at-center.md) | 61 | `result-track:4367d6b9ddb7dfdcf462fcf5e43480ef40134b08190f463f2ed1e1e4203523d4` |
+| 1 | `theorem` | [diffContOnCl_ball](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ClosedDiskCauchy.lean/declarations/diffcontoncl-ball.md) | 24 | `result-track:3796db532921c93c10ce85137fbd1719d16fa978a09b0f29dc09455edf8a0cbe` |
+| 2 | `theorem` | [translated_disk_subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ClosedDiskCauchy.lean/declarations/translated-disk-subset.md) | 32 | `result-track:50d379b5f08c37c64c50c84a073c667485991f55fd0901ed2963064e07305255` |
+| 3 | `theorem` | [norm_iteratedDeriv_le_on_inner](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ClosedDiskCauchy.lean/declarations/norm-iteratedderiv-le-on-inner.md) | 39 | `result-track:1c2a99f048236efafa0f021088b0cd78795490a347d1e397436a79215b642504` |
+| 4 | `theorem` | [norm_secondDeriv_le_on_inner](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ClosedDiskCauchy.lean/declarations/norm-secondderiv-le-on-inner.md) | 52 | `result-track:d95635750a25a61eb956ca936b328bd52b43ef679f5b3268d7d55e1ab2276a89` |
+| 5 | `theorem` | [derivative_error_at_center](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ClosedDiskCauchy.lean/declarations/derivative-error-at-center.md) | 61 | `result-track:4367d6b9ddb7dfdcf462fcf5e43480ef40134b08190f463f2ed1e1e4203523d4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

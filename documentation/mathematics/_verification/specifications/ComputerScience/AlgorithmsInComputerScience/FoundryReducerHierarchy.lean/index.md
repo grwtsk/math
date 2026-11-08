@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/FoundryReducerHierarchy.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/FoundryReducerHierarchy.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FoundryReducerHierarchy.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FoundryReducerHierarchy.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ReducerPipeline](../../../../../ComputerScience/AlgorithmsInComputerScience/FoundryReducerHierarchy.lean/declarations/reducerpipeline.md) | 11 | `declaration-track:8ea6be5f596f5a480772f93ea04eaef2cbae841a7b4f8adca63f1be3fd7c4f12` |
-| 2 | `structure` | [FoundryRootReducerPipeline](../../../../../ComputerScience/AlgorithmsInComputerScience/FoundryReducerHierarchy.lean/declarations/foundryrootreducerpipeline.md) | 19 | `declaration-track:9de1a330757b4ec0fca2536fd8a2dc19eae1b9f0cfa7a04bd5b6dc5e1881a4e2` |
-| 3 | `structure` | [ReducerPipelineEdge](../../../../../ComputerScience/AlgorithmsInComputerScience/FoundryReducerHierarchy.lean/declarations/reducerpipelineedge.md) | 30 | `declaration-track:07cb95d3791fce42799d6ed4bec65696e33c1156351d018aacff11e5c4680599` |
-| 4 | `structure` | [ReducerPipelineNetwork](../../../../../ComputerScience/AlgorithmsInComputerScience/FoundryReducerHierarchy.lean/declarations/reducerpipelinenetwork.md) | 40 | `declaration-track:9dd8fbfd44a21f0b2584ff3de15b5222256a8cfcd0ea095621fc02f0ffcfe044` |
-| 5 | `theorem` | [foundry_first_witness_observer_reducer_pipeline_sound](../../../../../ComputerScience/AlgorithmsInComputerScience/FoundryReducerHierarchy.lean/declarations/foundry-first-witness-observer-reducer-pipeline-sound.md) | 56 | `result-track:eab6c23dd47308d674f6507e18bd500fcdc290ee698e37ec2c5eed0fed32a1f3` |
-| 6 | `theorem` | [subordinate_reducer_pipeline_composition_sound](../../../../../ComputerScience/AlgorithmsInComputerScience/FoundryReducerHierarchy.lean/declarations/subordinate-reducer-pipeline-composition-sound.md) | 69 | `result-track:e344762e2db31bd6c6a9c1e37a8e2f344ef991b772a6458878d48440446d466d` |
+| 1 | `structure` | [ReducerPipeline](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FoundryReducerHierarchy.lean/declarations/reducerpipeline.md) | 11 | `declaration-track:8ea6be5f596f5a480772f93ea04eaef2cbae841a7b4f8adca63f1be3fd7c4f12` |
+| 2 | `structure` | [FoundryRootReducerPipeline](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FoundryReducerHierarchy.lean/declarations/foundryrootreducerpipeline.md) | 19 | `declaration-track:9de1a330757b4ec0fca2536fd8a2dc19eae1b9f0cfa7a04bd5b6dc5e1881a4e2` |
+| 3 | `structure` | [ReducerPipelineEdge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FoundryReducerHierarchy.lean/declarations/reducerpipelineedge.md) | 30 | `declaration-track:07cb95d3791fce42799d6ed4bec65696e33c1156351d018aacff11e5c4680599` |
+| 4 | `structure` | [ReducerPipelineNetwork](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FoundryReducerHierarchy.lean/declarations/reducerpipelinenetwork.md) | 40 | `declaration-track:9dd8fbfd44a21f0b2584ff3de15b5222256a8cfcd0ea095621fc02f0ffcfe044` |
+| 5 | `theorem` | [foundry_first_witness_observer_reducer_pipeline_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FoundryReducerHierarchy.lean/declarations/foundry-first-witness-observer-reducer-pipeline-sound.md) | 56 | `result-track:eab6c23dd47308d674f6507e18bd500fcdc290ee698e37ec2c5eed0fed32a1f3` |
+| 6 | `theorem` | [subordinate_reducer_pipeline_composition_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FoundryReducerHierarchy.lean/declarations/subordinate-reducer-pipeline-composition-sound.md) | 69 | `result-track:e344762e2db31bd6c6a9c1e37a8e2f344ef991b772a6458878d48440446d466d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

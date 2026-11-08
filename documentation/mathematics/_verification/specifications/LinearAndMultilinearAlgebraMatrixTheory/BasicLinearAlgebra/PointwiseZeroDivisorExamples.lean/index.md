@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PointwiseZeroDivisorExamples.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PointwiseZeroDivisorExamples.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PointwiseZeroDivisorExamples.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PointwiseZeroDivisorExamples.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [leftBit](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PointwiseZeroDivisorExamples.lean/declarations/leftbit.md) | 41 | `declaration-track:5596e65c4edbe80e63c2b62b03084852e84ba2e83186667e576343121bed7c38` |
-| 2 | `def` | [rightBit](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PointwiseZeroDivisorExamples.lean/declarations/rightbit.md) | 45 | `declaration-track:c7bac34aeaee67d4f7f04c732a05496aabe7d1530c5fc774edf8e7700ad300a3` |
-| 3 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PointwiseZeroDivisorExamples.lean/declarations/example.md) | 48 | `declaration-track:407eeb46ba99a2897b874685fb360006a7428b4b8d4cd335a2b20af4212cd28d` |
-| 4 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PointwiseZeroDivisorExamples.lean/declarations/example-source-edition-2.md) | 51 | `declaration-track:9308a5dab567c9d6585f83acc1520afd8a9f22bba093d72fc024aa91dcf16ed2` |
-| 5 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PointwiseZeroDivisorExamples.lean/declarations/example-source-edition-3.md) | 54 | `declaration-track:9fc2b467b09044e8f4f757e03ecd8a95c2d3b1054202d741379fcb24e775d069` |
-| 6 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PointwiseZeroDivisorExamples.lean/declarations/example-source-edition-4.md) | 57 | `declaration-track:f7c6e6a0d7022f64ef2b68ccb65f864abb7c7822e864c2e591c665d6834bb72c` |
+| 1 | `def` | [leftBit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PointwiseZeroDivisorExamples.lean/declarations/leftbit.md) | 41 | `declaration-track:5596e65c4edbe80e63c2b62b03084852e84ba2e83186667e576343121bed7c38` |
+| 2 | `def` | [rightBit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PointwiseZeroDivisorExamples.lean/declarations/rightbit.md) | 45 | `declaration-track:c7bac34aeaee67d4f7f04c732a05496aabe7d1530c5fc774edf8e7700ad300a3` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PointwiseZeroDivisorExamples.lean/declarations/example.md) | 48 | `declaration-track:407eeb46ba99a2897b874685fb360006a7428b4b8d4cd335a2b20af4212cd28d` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PointwiseZeroDivisorExamples.lean/declarations/example-source-edition-2.md) | 51 | `declaration-track:9308a5dab567c9d6585f83acc1520afd8a9f22bba093d72fc024aa91dcf16ed2` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PointwiseZeroDivisorExamples.lean/declarations/example-source-edition-3.md) | 54 | `declaration-track:9fc2b467b09044e8f4f757e03ecd8a95c2d3b1054202d741379fcb24e775d069` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PointwiseZeroDivisorExamples.lean/declarations/example-source-edition-4.md) | 57 | `declaration-track:f7c6e6a0d7022f64ef2b68ccb65f864abb7c7822e864c2e591c665d6834bb72c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

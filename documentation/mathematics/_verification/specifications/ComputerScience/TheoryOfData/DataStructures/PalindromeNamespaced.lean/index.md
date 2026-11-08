@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/PalindromeNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/PalindromeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/PalindromeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/PalindromeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [Palindrome](../../../../../../ComputerScience/TheoryOfData/DataStructures/PalindromeNamespaced.lean/declarations/palindrome.md) | 46 | `declaration-track:ec90e1c084e5a2c4a6cc9021ca048054cb5a37559800b059b47770562a792655` |
-| 2 | `theorem` | [reverse_eq](../../../../../../ComputerScience/TheoryOfData/DataStructures/PalindromeNamespaced.lean/declarations/reverse-eq.md) | 55 | `result-track:1c0962ccbcb17335d8a8f605add2188d3ec3a0a2d7fdb1991cf9f2e462faf704` |
-| 3 | `theorem` | [of_reverse_eq](../../../../../../ComputerScience/TheoryOfData/DataStructures/PalindromeNamespaced.lean/declarations/of-reverse-eq.md) | 59 | `result-track:b4803b820f6a5faf521bb1daad7c39b2c9e27fd166bdb4ec0ebe69cdd22bfebe` |
-| 4 | `theorem` | [iff_reverse_eq](../../../../../../ComputerScience/TheoryOfData/DataStructures/PalindromeNamespaced.lean/declarations/iff-reverse-eq.md) | 67 | `result-track:d70ca2bf1b83852b99be09331d3c1b58b84cb6bb39c3669d881715266fc627d6` |
-| 5 | `theorem` | [append_reverse](../../../../../../ComputerScience/TheoryOfData/DataStructures/PalindromeNamespaced.lean/declarations/append-reverse.md) | 70 | `result-track:4e024c4b05c0e9c399a8f2cc8f5105ae38434b8b3b8033442ce745690e6acfa3` |
-| 6 | `theorem` | [map](../../../../../../ComputerScience/TheoryOfData/DataStructures/PalindromeNamespaced.lean/declarations/map.md) | 74 | `result-track:117af3a884aab306203b13bff490c5f185230c3b48d8b3d93f383136b2bf1b9f` |
-| 7 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/PalindromeNamespaced.lean/declarations/instance.md) | 77 | `declaration-track:e1850681d50328fda167edace1dc312a40b0c2b7c6a8471b473f0d8bc1711a41` |
+| 1 | `inductive` | [Palindrome](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/PalindromeNamespaced.lean/declarations/palindrome.md) | 46 | `declaration-track:ec90e1c084e5a2c4a6cc9021ca048054cb5a37559800b059b47770562a792655` |
+| 2 | `theorem` | [reverse_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/PalindromeNamespaced.lean/declarations/reverse-eq.md) | 55 | `result-track:1c0962ccbcb17335d8a8f605add2188d3ec3a0a2d7fdb1991cf9f2e462faf704` |
+| 3 | `theorem` | [of_reverse_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/PalindromeNamespaced.lean/declarations/of-reverse-eq.md) | 59 | `result-track:b4803b820f6a5faf521bb1daad7c39b2c9e27fd166bdb4ec0ebe69cdd22bfebe` |
+| 4 | `theorem` | [iff_reverse_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/PalindromeNamespaced.lean/declarations/iff-reverse-eq.md) | 67 | `result-track:d70ca2bf1b83852b99be09331d3c1b58b84cb6bb39c3669d881715266fc627d6` |
+| 5 | `theorem` | [append_reverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/PalindromeNamespaced.lean/declarations/append-reverse.md) | 70 | `result-track:4e024c4b05c0e9c399a8f2cc8f5105ae38434b8b3b8033442ce745690e6acfa3` |
+| 6 | `theorem` | [map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/PalindromeNamespaced.lean/declarations/map.md) | 74 | `result-track:117af3a884aab306203b13bff490c5f185230c3b48d8b3d93f383136b2bf1b9f` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/PalindromeNamespaced.lean/declarations/instance.md) | 77 | `declaration-track:e1850681d50328fda167edace1dc312a40b0c2b7c6a8471b473f0d8bc1711a41` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

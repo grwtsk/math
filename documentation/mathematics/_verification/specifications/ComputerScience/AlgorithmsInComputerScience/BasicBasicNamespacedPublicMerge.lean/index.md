@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicMerge.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicMerge.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicMerge.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicMerge.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,12 +60,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [merge](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicMerge.lean/declarations/merge.md) | 47 | `declaration-track:d0b0ac41452203e28de846c1c59f7ea1bc986a159caf99dfab2d2b314b23784a` |
-| 2 | `theorem` | [nil_merge](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicMerge.lean/declarations/nil-merge.md) | 57 | `result-track:734b686dfde77dd36dec5ad28a34c0bb73b16cf6c553c60d01c28772c2a47aa9` |
-| 3 | `theorem` | [merge_right](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicMerge.lean/declarations/merge-right.md) | 58 | `result-track:71691b3efb2b4f01af0c96b076687072b64d96a24fd3f00a9082fc2a350c3423` |
-| 4 | `def` | [MergeSort.Internal.splitInTwo](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicMerge.lean/declarations/mergesort-internal-splitintwo.md) | 68 | `declaration-track:6e192b8da1c9ddb1370520477c24254cd302f2107e430083394c85d60694021f` |
-| 5 | `def` | [mergeSort](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicMerge.lean/declarations/mergesort.md) | 87 | `declaration-track:a93fa90f418aeff45e506b0ac4328b90e9d4202b8b2cc4950bd0cc3bed70ac12` |
-| 6 | `def` | [zipIdxLE](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicMerge.lean/declarations/zipidxle.md) | 106 | `declaration-track:4473f277906afd59661dbae42164c95b2414525191526e392a893026b6c3baa0` |
+| 1 | `def` | [merge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicMerge.lean/declarations/merge.md) | 47 | `declaration-track:d0b0ac41452203e28de846c1c59f7ea1bc986a159caf99dfab2d2b314b23784a` |
+| 2 | `theorem` | [nil_merge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicMerge.lean/declarations/nil-merge.md) | 57 | `result-track:734b686dfde77dd36dec5ad28a34c0bb73b16cf6c553c60d01c28772c2a47aa9` |
+| 3 | `theorem` | [merge_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicMerge.lean/declarations/merge-right.md) | 58 | `result-track:71691b3efb2b4f01af0c96b076687072b64d96a24fd3f00a9082fc2a350c3423` |
+| 4 | `def` | [MergeSort.Internal.splitInTwo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicMerge.lean/declarations/mergesort-internal-splitintwo.md) | 68 | `declaration-track:6e192b8da1c9ddb1370520477c24254cd302f2107e430083394c85d60694021f` |
+| 5 | `def` | [mergeSort](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicMerge.lean/declarations/mergesort.md) | 87 | `declaration-track:a93fa90f418aeff45e506b0ac4328b90e9d4202b8b2cc4950bd0cc3bed70ac12` |
+| 6 | `def` | [zipIdxLE](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicMerge.lean/declarations/zipidxle.md) | 106 | `declaration-track:4473f277906afd59661dbae42164c95b2414525191526e392a893026b6c3baa0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

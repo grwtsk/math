@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RiemannHypothesisBoundaryGRHResearchContract.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RiemannHypothesisBoundaryGRHResearchContract.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RiemannHypothesisBoundaryGRHResearchContract.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RiemannHypothesisBoundaryGRHResearchContract.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,12 +60,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [GRHResearchContract](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RiemannHypothesisBoundaryGRHResearchContract.lean/declarations/grhresearchcontract.md) | 22 | `declaration-track:7737b6e4f8d9372cd8f53094077844401124cff63c38fb92a7bd7d29e2e62de6` |
-| 2 | `def` | [AllLFunctionZerosOnCriticalLine](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RiemannHypothesisBoundaryGRHResearchContract.lean/declarations/alllfunctionzerosoncriticalline.md) | 34 | `declaration-track:cb6b5245d1bca31eac7d64c14f6c77606a84c0806c4f884f7408708af9a9dfab` |
-| 3 | `theorem` | [conditional_grh_via_spectral_heat_contract](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RiemannHypothesisBoundaryGRHResearchContract.lean/declarations/conditional-grh-via-spectral-heat-contract.md) | 40 | `result-track:866d9d2645cf487dc6e7aa4119d1ebedefb12fddbb56c364397235f0180efc2e` |
-| 4 | `theorem` | [grh_contract_has_analytic_continuation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RiemannHypothesisBoundaryGRHResearchContract.lean/declarations/grh-contract-has-analytic-continuation.md) | 52 | `result-track:eb56b438bbe3aece11fe2b5c712ca4ae111fe568e6c74720760935148f1aa524` |
-| 5 | `theorem` | [grh_contract_has_functional_equation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RiemannHypothesisBoundaryGRHResearchContract.lean/declarations/grh-contract-has-functional-equation.md) | 57 | `result-track:233ea26ec52d53a8246405091ea939566b2ddf81016f2c2094d2e8cabac1d990` |
-| 6 | `structure` | [GRHUnresolvedIssues](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RiemannHypothesisBoundaryGRHResearchContract.lean/declarations/grhunresolvedissues.md) | 62 | `declaration-track:4919ee636b0cf82706f0198b65b96c1e37dcf79bcc7fe078c75adc5cb85d955e` |
+| 1 | `structure` | [GRHResearchContract](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RiemannHypothesisBoundaryGRHResearchContract.lean/declarations/grhresearchcontract.md) | 22 | `declaration-track:7737b6e4f8d9372cd8f53094077844401124cff63c38fb92a7bd7d29e2e62de6` |
+| 2 | `def` | [AllLFunctionZerosOnCriticalLine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RiemannHypothesisBoundaryGRHResearchContract.lean/declarations/alllfunctionzerosoncriticalline.md) | 34 | `declaration-track:cb6b5245d1bca31eac7d64c14f6c77606a84c0806c4f884f7408708af9a9dfab` |
+| 3 | `theorem` | [conditional_grh_via_spectral_heat_contract](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RiemannHypothesisBoundaryGRHResearchContract.lean/declarations/conditional-grh-via-spectral-heat-contract.md) | 40 | `result-track:866d9d2645cf487dc6e7aa4119d1ebedefb12fddbb56c364397235f0180efc2e` |
+| 4 | `theorem` | [grh_contract_has_analytic_continuation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RiemannHypothesisBoundaryGRHResearchContract.lean/declarations/grh-contract-has-analytic-continuation.md) | 52 | `result-track:eb56b438bbe3aece11fe2b5c712ca4ae111fe568e6c74720760935148f1aa524` |
+| 5 | `theorem` | [grh_contract_has_functional_equation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RiemannHypothesisBoundaryGRHResearchContract.lean/declarations/grh-contract-has-functional-equation.md) | 57 | `result-track:233ea26ec52d53a8246405091ea939566b2ddf81016f2c2094d2e8cabac1d990` |
+| 6 | `structure` | [GRHUnresolvedIssues](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RiemannHypothesisBoundaryGRHResearchContract.lean/declarations/grhunresolvedissues.md) | 62 | `declaration-track:4919ee636b0cf82706f0198b65b96c1e37dcf79bcc7fe078c75adc5cb85d955e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

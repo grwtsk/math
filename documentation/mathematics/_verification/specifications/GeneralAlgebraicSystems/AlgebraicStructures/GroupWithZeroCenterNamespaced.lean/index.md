@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroCenterNamespaced.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroCenterNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroCenterNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroCenterNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [zero_mem_center](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroCenterNamespaced.lean/declarations/zero-mem-center.md) | 29 | `result-track:f102dfc530999b2239f4860ae11149e5f542219e2b17bc7a9aa11b593f4ddb46` |
-| 2 | `lemma` | [zero_mem_centralizer](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroCenterNamespaced.lean/declarations/zero-mem-centralizer.md) | 35 | `result-track:16ef1a10a749046e7ab9e5745a1f90ce588283c72e6c0cbaa881c071bb55f8f5` |
-| 3 | `lemma` | [center_units_subset](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroCenterNamespaced.lean/declarations/center-units-subset.md) | 42 | `result-track:23f15affaff6421cd26798c4b85a929b08438761e9609b1fb0e2ea60d7629dfe` |
-| 4 | `lemma` | [center_units_eq](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroCenterNamespaced.lean/declarations/center-units-eq.md) | 50 | `result-track:f34e623aa5723dec4e971e2016672549d711deba7d9c46e2753987e706bec883` |
-| 5 | `lemma` | [inv_mem_centralizer₀](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroCenterNamespaced.lean/declarations/inv-mem-centralizer.md) | 53 | `result-track:3f636e3f28880bcb0aad14b546bae71d6948c0659e6d3a666c9815980cfe3a54` |
-| 6 | `lemma` | [div_mem_centralizer₀](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroCenterNamespaced.lean/declarations/div-mem-centralizer.md) | 60 | `result-track:ae471fa67fa1815582d7cf5644dd423216df55fb57ead877068c45f801c99777` |
+| 1 | `lemma` | [zero_mem_center](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroCenterNamespaced.lean/declarations/zero-mem-center.md) | 29 | `result-track:f102dfc530999b2239f4860ae11149e5f542219e2b17bc7a9aa11b593f4ddb46` |
+| 2 | `lemma` | [zero_mem_centralizer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroCenterNamespaced.lean/declarations/zero-mem-centralizer.md) | 35 | `result-track:16ef1a10a749046e7ab9e5745a1f90ce588283c72e6c0cbaa881c071bb55f8f5` |
+| 3 | `lemma` | [center_units_subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroCenterNamespaced.lean/declarations/center-units-subset.md) | 42 | `result-track:23f15affaff6421cd26798c4b85a929b08438761e9609b1fb0e2ea60d7629dfe` |
+| 4 | `lemma` | [center_units_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroCenterNamespaced.lean/declarations/center-units-eq.md) | 50 | `result-track:f34e623aa5723dec4e971e2016672549d711deba7d9c46e2753987e706bec883` |
+| 5 | `lemma` | [inv_mem_centralizer₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroCenterNamespaced.lean/declarations/inv-mem-centralizer.md) | 53 | `result-track:3f636e3f28880bcb0aad14b546bae71d6948c0659e6d3a666c9815980cfe3a54` |
+| 6 | `lemma` | [div_mem_centralizer₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroCenterNamespaced.lean/declarations/div-mem-centralizer.md) | 60 | `result-track:ae471fa67fa1815582d7cf5644dd423216df55fb57ead877068c45f801c99777` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

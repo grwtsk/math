@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/TransferInstanceNamespacedPublic.lean/index.md) · [Full source](../../../../GeneralTopology/TransferInstanceNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TransferInstanceNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TransferInstanceNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [topologicalSpace](../../../../GeneralTopology/TransferInstanceNamespacedPublic.lean/declarations/topologicalspace.md) | 34 | `declaration-track:012ab1ab104dc2757d6170518afde3f17ab07f9f13b99391d86c2b63836d1de3` |
-| 2 | `def` | [homeomorph](../../../../GeneralTopology/TransferInstanceNamespacedPublic.lean/declarations/homeomorph.md) | 40 | `declaration-track:9f12902a4245b367eaaadcee152f69d0fa3756b1b7b505b9f1d69b8bd5f29850` |
+| 1 | `abbrev` | [topologicalSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TransferInstanceNamespacedPublic.lean/declarations/topologicalspace.md) | 34 | `declaration-track:012ab1ab104dc2757d6170518afde3f17ab07f9f13b99391d86c2b63836d1de3` |
+| 2 | `def` | [homeomorph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TransferInstanceNamespacedPublic.lean/declarations/homeomorph.md) | 40 | `declaration-track:9f12902a4245b367eaaadcee152f69d0fa3756b1b7b505b9f1d69b8bd5f29850` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/TightNamespaced.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/TightNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/TightNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/TightNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [IsTightMeasureSet](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/TightNamespaced.lean/declarations/istightmeasureset.md) | 50 | `declaration-track:fcbc28081f50d28090de2f337df559f9911ff9e7c8ca37a70974b1b00fae74d8` |
-| 2 | `lemma` | [IsTightMeasureSet_iff_exists_isCompact_measure_compl_le](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/TightNamespaced.lean/declarations/istightmeasureset-iff-exists-iscompact-measure-compl-le.md) | 55 | `result-track:54e7467d3caed22ad0042ec951a8d207aa8645fee0cdecc5d54d16e7c82be608` |
-| 3 | `theorem` | [isTightMeasureSet_singleton_of_innerRegularWRT](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/TightNamespaced.lean/declarations/istightmeasureset-singleton-of-innerregularwrt.md) | 67 | `result-track:cc4de28c3d1e2e5d220ca212f8f9049c3f3e71455bb733fc1f46730c1c7eafb3` |
-| 4 | `lemma` | [isTightMeasureSet_singleton_of_innerRegular](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/TightNamespaced.lean/declarations/istightmeasureset-singleton-of-innerregular.md) | 86 | `result-track:3e061780fb1a2626f5bcd26da87cd8361f7170383ff79d5987514a2cade1a760` |
-| 5 | `theorem` | [isTightMeasureSet_singleton](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/TightNamespaced.lean/declarations/istightmeasureset-singleton.md) | 95 | `result-track:cb9c78abe86d5841941517f8f7a83c65f89f72f54e63c31a4adf3ecb773c6b89` |
-| 6 | `lemma` | [of_compactSpace](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/TightNamespaced.lean/declarations/of-compactspace.md) | 105 | `result-track:911a48e4982d790a873d6839c326a0bd4f372ddc2e0b81414f0c1c66a31c98c8` |
-| 7 | `lemma` | [subset](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/TightNamespaced.lean/declarations/subset.md) | 110 | `result-track:adb1584ddd89676098080cdc0baba4004ec888a755e4c8d35f735e48b14dc708` |
-| 8 | `lemma` | [union](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/TightNamespaced.lean/declarations/union.md) | 115 | `result-track:52adad97f1d5f0ea26954f46c1786a5941876244e93fc2c48f1d835453a54900` |
-| 9 | `lemma` | [inter](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/TightNamespaced.lean/declarations/inter.md) | 121 | `result-track:7bc3b3807b70ec25d358331504ef2d13b238c2230bcc868516f951dc71d115ca` |
-| 10 | `lemma` | [map](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/TightNamespaced.lean/declarations/map.md) | 125 | `result-track:7de904d170a4151703d80266e052bff458965d5d7b87055ed9992bf40a19d138` |
+| 1 | `def` | [IsTightMeasureSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/TightNamespaced.lean/declarations/istightmeasureset.md) | 50 | `declaration-track:fcbc28081f50d28090de2f337df559f9911ff9e7c8ca37a70974b1b00fae74d8` |
+| 2 | `lemma` | [IsTightMeasureSet_iff_exists_isCompact_measure_compl_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/TightNamespaced.lean/declarations/istightmeasureset-iff-exists-iscompact-measure-compl-le.md) | 55 | `result-track:54e7467d3caed22ad0042ec951a8d207aa8645fee0cdecc5d54d16e7c82be608` |
+| 3 | `theorem` | [isTightMeasureSet_singleton_of_innerRegularWRT](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/TightNamespaced.lean/declarations/istightmeasureset-singleton-of-innerregularwrt.md) | 67 | `result-track:cc4de28c3d1e2e5d220ca212f8f9049c3f3e71455bb733fc1f46730c1c7eafb3` |
+| 4 | `lemma` | [isTightMeasureSet_singleton_of_innerRegular](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/TightNamespaced.lean/declarations/istightmeasureset-singleton-of-innerregular.md) | 86 | `result-track:3e061780fb1a2626f5bcd26da87cd8361f7170383ff79d5987514a2cade1a760` |
+| 5 | `theorem` | [isTightMeasureSet_singleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/TightNamespaced.lean/declarations/istightmeasureset-singleton.md) | 95 | `result-track:cb9c78abe86d5841941517f8f7a83c65f89f72f54e63c31a4adf3ecb773c6b89` |
+| 6 | `lemma` | [of_compactSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/TightNamespaced.lean/declarations/of-compactspace.md) | 105 | `result-track:911a48e4982d790a873d6839c326a0bd4f372ddc2e0b81414f0c1c66a31c98c8` |
+| 7 | `lemma` | [subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/TightNamespaced.lean/declarations/subset.md) | 110 | `result-track:adb1584ddd89676098080cdc0baba4004ec888a755e4c8d35f735e48b14dc708` |
+| 8 | `lemma` | [union](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/TightNamespaced.lean/declarations/union.md) | 115 | `result-track:52adad97f1d5f0ea26954f46c1786a5941876244e93fc2c48f1d835453a54900` |
+| 9 | `lemma` | [inter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/TightNamespaced.lean/declarations/inter.md) | 121 | `result-track:7bc3b3807b70ec25d358331504ef2d13b238c2230bcc868516f951dc71d115ca` |
+| 10 | `lemma` | [map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/TightNamespaced.lean/declarations/map.md) | 125 | `result-track:7de904d170a4151703d80266e052bff458965d5d7b87055ed9992bf40a19d138` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

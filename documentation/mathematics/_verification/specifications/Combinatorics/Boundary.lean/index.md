@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/Boundary.lean/index.md) · [Full source](../../../../Combinatorics/Boundary.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Boundary.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Boundary.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [FirstInfeasibleOnBranch](../../../../Combinatorics/Boundary.lean/declarations/firstinfeasibleonbranch.md) | 13 | `declaration-track:1fc890c748f21d1b9a519166254592d36f004a3eaa3a54440905484afed307ad` |
-| 2 | `theorem` | [firstInfeasibleOnBranch_unique](../../../../Combinatorics/Boundary.lean/declarations/firstinfeasibleonbranch-unique.md) | 21 | `result-track:6c9f5c545cb6f18cd2ef6b1dda70257d1aa089f00b51dc683fdb3de511e871b7` |
-| 3 | `theorem` | [failed_branch_has_unique_first_infeasible_prefix](../../../../Combinatorics/Boundary.lean/declarations/failed-branch-has-unique-first-infeasible-prefix.md) | 42 | `result-track:4b707edd1a4c7ba2d16ace4fca299a82e7c8ab1801b51acfdd32a79ecdd968cf` |
+| 1 | `def` | [FirstInfeasibleOnBranch](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Boundary.lean/declarations/firstinfeasibleonbranch.md) | 13 | `declaration-track:1fc890c748f21d1b9a519166254592d36f004a3eaa3a54440905484afed307ad` |
+| 2 | `theorem` | [firstInfeasibleOnBranch_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Boundary.lean/declarations/firstinfeasibleonbranch-unique.md) | 21 | `result-track:6c9f5c545cb6f18cd2ef6b1dda70257d1aa089f00b51dc683fdb3de511e871b7` |
+| 3 | `theorem` | [failed_branch_has_unique_first_infeasible_prefix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Boundary.lean/declarations/failed-branch-has-unique-first-infeasible-prefix.md) | 42 | `result-track:4b707edd1a4c7ba2d16ace4fca299a82e7c8ab1801b51acfdd32a79ecdd968cf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FixedFiberNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FixedFiberNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FixedFiberNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FixedFiberNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [fixed_fiber_contract_exposes_fixed_point](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FixedFiberNamespaced.lean/declarations/fixed-fiber-contract-exposes-fixed-point.md) | 27 | `result-track:ba1195722217ede4635d3724abb948bfb38e3e0689485992dd579e95a4574869` |
-| 2 | `theorem` | [unique_fixed_fiber_contract_exposes_uniqueness](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FixedFiberNamespaced.lean/declarations/unique-fixed-fiber-contract-exposes-uniqueness.md) | 34 | `result-track:618dcc36d74760e32fca55d935cbdbeb84f2ac829c1ff525a6d819a2e1ec6959` |
+| 1 | `theorem` | [fixed_fiber_contract_exposes_fixed_point](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FixedFiberNamespaced.lean/declarations/fixed-fiber-contract-exposes-fixed-point.md) | 27 | `result-track:ba1195722217ede4635d3724abb948bfb38e3e0689485992dd579e95a4574869` |
+| 2 | `theorem` | [unique_fixed_fiber_contract_exposes_uniqueness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FixedFiberNamespaced.lean/declarations/unique-fixed-fiber-contract-exposes-uniqueness.md) | 34 | `result-track:618dcc36d74760e32fca55d935cbdbeb84f2ac829c1ff525a6d819a2e1ec6959` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

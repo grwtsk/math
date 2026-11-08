@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/RecoveryAndSymbolicSpecialization.lean/index.md) · [Full source](../../../../Combinatorics/RecoveryAndSymbolicSpecialization.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RecoveryAndSymbolicSpecialization.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RecoveryAndSymbolicSpecialization.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../Combinatorics/RecoveryAndSymbolicSpecialization.lean/declarations/example-source-edition-2.md) | 29 | `declaration-track:b6d60be52b5be35745742f8a20e606e8b3a00c4ffef8a0afee09a562e90eaacf` |
-| 2 | `example` | [(anonymous)](../../../../Combinatorics/RecoveryAndSymbolicSpecialization.lean/declarations/example.md) | 34 | `declaration-track:322b6c04821ef91f4de544b3b9bf7d22b9d33691192212eb0d7e8516d4105ef6` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RecoveryAndSymbolicSpecialization.lean/declarations/example-source-edition-2.md) | 29 | `declaration-track:b6d60be52b5be35745742f8a20e606e8b3a00c4ffef8a0afee09a562e90eaacf` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RecoveryAndSymbolicSpecialization.lean/declarations/example.md) | 34 | `declaration-track:322b6c04821ef91f4de544b3b9bf7d22b9d33691192212eb0d7e8516d4105ef6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

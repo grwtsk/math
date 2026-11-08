@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidueAbelBound.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidueAbelBound.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidueAbelBound.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidueAbelBound.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenResidueChord`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidueChord.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenResidueChord`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidueChord.lean/index.md) — import line 7; pinned internal source present.
 - `Mathlib.Tactic` — import line 8; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [norm_greenMesh_weighted_phase_sum_le_residue](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidueAbelBound.lean/declarations/norm-greenmesh-weighted-phase-sum-le-residue.md) | 16 | `result-track:94a3e265b7383ba36c0bf23a9d29d863dbaad03a074a15096eb2a12780ddd1e6` |
-| 2 | `def` | [greenDiscretePhaseRiemannSum](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidueAbelBound.lean/declarations/greendiscretephaseriemannsum.md) | 44 | `declaration-track:ddbc3b8eda7c50aca110ef7aa9efdf0717ede80715d8f4f754eefa956cc0d7f8` |
-| 3 | `theorem` | [norm_greenDiscretePhaseRiemannSum_le_residue](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidueAbelBound.lean/declarations/norm-greendiscretephaseriemannsum-le-residue.md) | 50 | `result-track:34fbf4d88aa7382e16767f2a394c0e3013adb14220bc6a8083f8d9102b7175d8` |
+| 1 | `theorem` | [norm_greenMesh_weighted_phase_sum_le_residue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidueAbelBound.lean/declarations/norm-greenmesh-weighted-phase-sum-le-residue.md) | 16 | `result-track:94a3e265b7383ba36c0bf23a9d29d863dbaad03a074a15096eb2a12780ddd1e6` |
+| 2 | `def` | [greenDiscretePhaseRiemannSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidueAbelBound.lean/declarations/greendiscretephaseriemannsum.md) | 44 | `declaration-track:ddbc3b8eda7c50aca110ef7aa9efdf0717ede80715d8f4f754eefa956cc0d7f8` |
+| 3 | `theorem` | [norm_greenDiscretePhaseRiemannSum_le_residue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidueAbelBound.lean/declarations/norm-greendiscretephaseriemannsum-le-residue.md) | 50 | `result-track:34fbf4d88aa7382e16767f2a394c0e3013adb14220bc6a8083f8d9102b7175d8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

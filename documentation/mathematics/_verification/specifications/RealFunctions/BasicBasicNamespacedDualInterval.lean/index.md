@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/BasicBasicNamespacedDualInterval.lean/index.md) · [Full source](../../../../RealFunctions/BasicBasicNamespacedDualInterval.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BasicBasicNamespacedDualInterval.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BasicBasicNamespacedDualInterval.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,18 +57,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [DualInterval](../../../../RealFunctions/BasicBasicNamespacedDualInterval.lean/declarations/dualinterval.md) | 38 | `declaration-track:a7cc1e93c0e713ba030519c2bd8d4cc7a1332e7fe5999ede951656bf42544df6` |
-| 2 | `instance` | [(anonymous)](../../../../RealFunctions/BasicBasicNamespacedDualInterval.lean/declarations/instance.md) | 44 | `declaration-track:9420cfe236f730f610b27d41a84a5c8303bc7ba800c1cb834f0699e581f087c7` |
-| 3 | `def` | [const](../../../../RealFunctions/BasicBasicNamespacedDualInterval.lean/declarations/const.md) | 50 | `declaration-track:6aa717421efc321db0a280dcad3449f0c440ec113826e339c5084b7b2cdbdfdf` |
-| 4 | `def` | [piConst](../../../../RealFunctions/BasicBasicNamespacedDualInterval.lean/declarations/piconst.md) | 55 | `declaration-track:dbcc8750b6ddbbae1820ed6a201181a2450a121721de152dcd9ab8d06ce9734c` |
-| 5 | `def` | [eulerMascheroniConst](../../../../RealFunctions/BasicBasicNamespacedDualInterval.lean/declarations/eulermascheroniconst.md) | 60 | `declaration-track:d3dfd11eae9cd580fdd3b83375196ff80e578b5686a0e76547b5b744f65599be` |
-| 6 | `def` | [ofMathConst](../../../../RealFunctions/BasicBasicNamespacedDualInterval.lean/declarations/ofmathconst.md) | 65 | `declaration-track:a179c0fd22108b7bab46e6fa7955b0f9e244a74367ecf7df503ef64c0a4f0d09` |
-| 7 | `def` | [varActive](../../../../RealFunctions/BasicBasicNamespacedDualInterval.lean/declarations/varactive.md) | 70 | `declaration-track:f0fc70b087985deaccaa0541adc52df7195932df7088977adf19c0a877d76e2d` |
-| 8 | `def` | [varPassive](../../../../RealFunctions/BasicBasicNamespacedDualInterval.lean/declarations/varpassive.md) | 75 | `declaration-track:00be58e7886e6c03474790f7b4135c2f050f8c564f5663abd67e08a1ab9148d3` |
-| 9 | `def` | [add](../../../../RealFunctions/BasicBasicNamespacedDualInterval.lean/declarations/add.md) | 80 | `declaration-track:b435803b081cf6f21b00c770ff3d27bc13926fc3b63067319ea55e9ef33db1e4` |
-| 10 | `def` | [mul](../../../../RealFunctions/BasicBasicNamespacedDualInterval.lean/declarations/mul.md) | 85 | `declaration-track:1421eab06b8a058bf45bb2e6f34f5ba78581f66561ed0e576afe4680b5a6c466` |
-| 11 | `def` | [neg](../../../../RealFunctions/BasicBasicNamespacedDualInterval.lean/declarations/neg.md) | 93 | `declaration-track:ec63b33263de299942434ee603a8c640e7ca68c9fdb43498cdec4003d6653025` |
-| 12 | `def` | [inv](../../../../RealFunctions/BasicBasicNamespacedDualInterval.lean/declarations/inv.md) | 100 | `declaration-track:b01a657cdf1bdcc19ca40412241bd8f16dea3798d6691064be9c5f13d8bd6a17` |
+| 1 | `structure` | [DualInterval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BasicBasicNamespacedDualInterval.lean/declarations/dualinterval.md) | 38 | `declaration-track:a7cc1e93c0e713ba030519c2bd8d4cc7a1332e7fe5999ede951656bf42544df6` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BasicBasicNamespacedDualInterval.lean/declarations/instance.md) | 44 | `declaration-track:9420cfe236f730f610b27d41a84a5c8303bc7ba800c1cb834f0699e581f087c7` |
+| 3 | `def` | [const](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BasicBasicNamespacedDualInterval.lean/declarations/const.md) | 50 | `declaration-track:6aa717421efc321db0a280dcad3449f0c440ec113826e339c5084b7b2cdbdfdf` |
+| 4 | `def` | [piConst](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BasicBasicNamespacedDualInterval.lean/declarations/piconst.md) | 55 | `declaration-track:dbcc8750b6ddbbae1820ed6a201181a2450a121721de152dcd9ab8d06ce9734c` |
+| 5 | `def` | [eulerMascheroniConst](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BasicBasicNamespacedDualInterval.lean/declarations/eulermascheroniconst.md) | 60 | `declaration-track:d3dfd11eae9cd580fdd3b83375196ff80e578b5686a0e76547b5b744f65599be` |
+| 6 | `def` | [ofMathConst](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BasicBasicNamespacedDualInterval.lean/declarations/ofmathconst.md) | 65 | `declaration-track:a179c0fd22108b7bab46e6fa7955b0f9e244a74367ecf7df503ef64c0a4f0d09` |
+| 7 | `def` | [varActive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BasicBasicNamespacedDualInterval.lean/declarations/varactive.md) | 70 | `declaration-track:f0fc70b087985deaccaa0541adc52df7195932df7088977adf19c0a877d76e2d` |
+| 8 | `def` | [varPassive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BasicBasicNamespacedDualInterval.lean/declarations/varpassive.md) | 75 | `declaration-track:00be58e7886e6c03474790f7b4135c2f050f8c564f5663abd67e08a1ab9148d3` |
+| 9 | `def` | [add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BasicBasicNamespacedDualInterval.lean/declarations/add.md) | 80 | `declaration-track:b435803b081cf6f21b00c770ff3d27bc13926fc3b63067319ea55e9ef33db1e4` |
+| 10 | `def` | [mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BasicBasicNamespacedDualInterval.lean/declarations/mul.md) | 85 | `declaration-track:1421eab06b8a058bf45bb2e6f34f5ba78581f66561ed0e576afe4680b5a6c466` |
+| 11 | `def` | [neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BasicBasicNamespacedDualInterval.lean/declarations/neg.md) | 93 | `declaration-track:ec63b33263de299942434ee603a8c640e7ca68c9fdb43498cdec4003d6653025` |
+| 12 | `def` | [inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BasicBasicNamespacedDualInterval.lean/declarations/inv.md) | 100 | `declaration-track:b01a657cdf1bdcc19ca40412241bd8f16dea3798d6691064be9c5f13d8bd6a17` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

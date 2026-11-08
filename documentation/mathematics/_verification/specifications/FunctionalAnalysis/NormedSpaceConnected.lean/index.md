@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/NormedSpaceConnected.lean/index.md) · [Full source](../../../../FunctionalAnalysis/NormedSpaceConnected.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceConnected.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceConnected.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Set.Countable.isPathConnected_compl_of_one_lt_rank](../../../../FunctionalAnalysis/NormedSpaceConnected.lean/declarations/set-countable-ispathconnected-compl-of-one-lt-rank.md) | 32 | `result-track:e15087dbe19fdeefb59145b153eb636ffca3535bc4deb5cc6848a72fde29fe47` |
-| 2 | `theorem` | [Set.Countable.isConnected_compl_of_one_lt_rank](../../../../FunctionalAnalysis/NormedSpaceConnected.lean/declarations/set-countable-isconnected-compl-of-one-lt-rank.md) | 105 | `result-track:ea445da6c9318031cab8ed0a1a1e4cbabc6525daf55a0eae48c17a7cabf9f9e7` |
-| 3 | `theorem` | [isPathConnected_compl_singleton_of_one_lt_rank](../../../../FunctionalAnalysis/NormedSpaceConnected.lean/declarations/ispathconnected-compl-singleton-of-one-lt-rank.md) | 111 | `result-track:0067acbc0fc592008c8cba15db8b8dc433b36a0f7a9af7e6c9dad7fe893974ae` |
-| 4 | `theorem` | [isConnected_compl_singleton_of_one_lt_rank](../../../../FunctionalAnalysis/NormedSpaceConnected.lean/declarations/isconnected-compl-singleton-of-one-lt-rank.md) | 117 | `result-track:0bf6c412f45c73b54f5c197014872be2055ff853d6acebf87aebfa7ec802fe8e` |
-| 5 | `theorem` | [isPathConnected_sphere](../../../../FunctionalAnalysis/NormedSpaceConnected.lean/declarations/ispathconnected-sphere.md) | 129 | `result-track:f6b358b5906332bb872c63507f95501e68ddfde929b10ea42cd4e1b88a97a574` |
-| 6 | `theorem` | [isConnected_sphere](../../../../FunctionalAnalysis/NormedSpaceConnected.lean/declarations/isconnected-sphere.md) | 159 | `result-track:2e2b98921ef4ded35993d265be8c1dd29dc8014c54b1b587f94b55917af99b4a` |
-| 7 | `theorem` | [isPreconnected_sphere](../../../../FunctionalAnalysis/NormedSpaceConnected.lean/declarations/ispreconnected-sphere.md) | 164 | `result-track:fa437a03280e76db511e438902813821963d99a9cf772a7ebd7de6aab56472de` |
+| 1 | `theorem` | [Set.Countable.isPathConnected_compl_of_one_lt_rank](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceConnected.lean/declarations/set-countable-ispathconnected-compl-of-one-lt-rank.md) | 32 | `result-track:e15087dbe19fdeefb59145b153eb636ffca3535bc4deb5cc6848a72fde29fe47` |
+| 2 | `theorem` | [Set.Countable.isConnected_compl_of_one_lt_rank](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceConnected.lean/declarations/set-countable-isconnected-compl-of-one-lt-rank.md) | 105 | `result-track:ea445da6c9318031cab8ed0a1a1e4cbabc6525daf55a0eae48c17a7cabf9f9e7` |
+| 3 | `theorem` | [isPathConnected_compl_singleton_of_one_lt_rank](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceConnected.lean/declarations/ispathconnected-compl-singleton-of-one-lt-rank.md) | 111 | `result-track:0067acbc0fc592008c8cba15db8b8dc433b36a0f7a9af7e6c9dad7fe893974ae` |
+| 4 | `theorem` | [isConnected_compl_singleton_of_one_lt_rank](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceConnected.lean/declarations/isconnected-compl-singleton-of-one-lt-rank.md) | 117 | `result-track:0bf6c412f45c73b54f5c197014872be2055ff853d6acebf87aebfa7ec802fe8e` |
+| 5 | `theorem` | [isPathConnected_sphere](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceConnected.lean/declarations/ispathconnected-sphere.md) | 129 | `result-track:f6b358b5906332bb872c63507f95501e68ddfde929b10ea42cd4e1b88a97a574` |
+| 6 | `theorem` | [isConnected_sphere](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceConnected.lean/declarations/isconnected-sphere.md) | 159 | `result-track:2e2b98921ef4ded35993d265be8c1dd29dc8014c54b1b587f94b55917af99b4a` |
+| 7 | `theorem` | [isPreconnected_sphere](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceConnected.lean/declarations/ispreconnected-sphere.md) | 164 | `result-track:fa437a03280e76db511e438902813821963d99a9cf772a7ebd7de6aab56472de` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

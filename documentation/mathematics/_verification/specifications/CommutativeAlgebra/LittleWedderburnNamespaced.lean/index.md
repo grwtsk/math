@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/LittleWedderburnNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/LittleWedderburnNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LittleWedderburnNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LittleWedderburnNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [InductionHyp](../../../../CommutativeAlgebra/LittleWedderburnNamespaced.lean/declarations/inductionhyp.md) | 53 | `declaration-track:3e534ac130497ac92ddcbf59f526a328e9d9d0f927cdccac7df2d9fe49d83a7e` |
-| 2 | `def` | [field](../../../../CommutativeAlgebra/LittleWedderburnNamespaced.lean/declarations/field.md) | 62 | `declaration-track:f493629e5cdc36adad19ef19e53bbee71b74c8d121db8a9edfea5282d9bf9d2c` |
-| 3 | `theorem` | [center_eq_top](../../../../CommutativeAlgebra/LittleWedderburnNamespaced.lean/declarations/center-eq-top-source-edition-2.md) | 69 | `result-track:f34a676c05e3d2a47419753703ee5f77a9c0af0e4ef6e420436b17acf0c0cb5b` |
-| 4 | `theorem` | [center_eq_top](../../../../CommutativeAlgebra/LittleWedderburnNamespaced.lean/declarations/center-eq-top.md) | 146 | `result-track:de5cb943cb5557ca49ee72c38e9744cb10d1cb7891cd64e231f9a9f0f8eb96dc` |
-| 5 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/LittleWedderburnNamespaced.lean/declarations/instance.md) | 168 | `declaration-track:28afb4f879ef7dd2416928f7c3904520a9be29f58daf7b43644eb7eafb6a6d0d` |
-| 6 | `theorem` | [Finite.isDomain_to_isField](../../../../CommutativeAlgebra/LittleWedderburnNamespaced.lean/declarations/finite-isdomain-to-isfield.md) | 175 | `result-track:97cc7b5495570bd2153b8019c4b61270a9fef611c25118e289f8d10f737c83a6` |
+| 1 | `def` | [InductionHyp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LittleWedderburnNamespaced.lean/declarations/inductionhyp.md) | 53 | `declaration-track:3e534ac130497ac92ddcbf59f526a328e9d9d0f927cdccac7df2d9fe49d83a7e` |
+| 2 | `def` | [field](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LittleWedderburnNamespaced.lean/declarations/field.md) | 62 | `declaration-track:f493629e5cdc36adad19ef19e53bbee71b74c8d121db8a9edfea5282d9bf9d2c` |
+| 3 | `theorem` | [center_eq_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LittleWedderburnNamespaced.lean/declarations/center-eq-top-source-edition-2.md) | 69 | `result-track:f34a676c05e3d2a47419753703ee5f77a9c0af0e4ef6e420436b17acf0c0cb5b` |
+| 4 | `theorem` | [center_eq_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LittleWedderburnNamespaced.lean/declarations/center-eq-top.md) | 146 | `result-track:de5cb943cb5557ca49ee72c38e9744cb10d1cb7891cd64e231f9a9f0f8eb96dc` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LittleWedderburnNamespaced.lean/declarations/instance.md) | 168 | `declaration-track:28afb4f879ef7dd2416928f7c3904520a9be29f58daf7b43644eb7eafb6a6d0d` |
+| 6 | `theorem` | [Finite.isDomain_to_isField](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LittleWedderburnNamespaced.lean/declarations/finite-isdomain-to-isfield.md) | 175 | `result-track:97cc7b5495570bd2153b8019c4b61270a9fef611c25118e289f8d10f737c83a6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

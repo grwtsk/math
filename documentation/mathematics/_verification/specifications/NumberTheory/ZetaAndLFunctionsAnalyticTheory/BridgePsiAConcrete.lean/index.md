@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BridgePsiAConcrete.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BridgePsiAConcrete.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BridgePsiAConcrete.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BridgePsiAConcrete.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,9 +61,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [psiA_concrete](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BridgePsiAConcrete.lean/declarations/psia-concrete.md) | 43 | `result-track:f1909e81741c6ea6290d3262edacd4d236f380a40ce35b80015e6f57a891f2d0` |
-| 2 | `theorem` | [localHyps_concrete](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BridgePsiAConcrete.lean/declarations/localhyps-concrete.md) | 48 | `result-track:d0f8ed5c805267f7ab994de5b5b37ec5aa05a3a1478b38143f8442bcaa83b364` |
-| 3 | `theorem` | [localHypsEventually](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BridgePsiAConcrete.lean/declarations/localhypseventually.md) | 103 | `result-track:9bb19dd25a5c9b4590168f8ac7473cfc32aa1d0553409e55be72033211b53f34` |
+| 1 | `lemma` | [psiA_concrete](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BridgePsiAConcrete.lean/declarations/psia-concrete.md) | 43 | `result-track:f1909e81741c6ea6290d3262edacd4d236f380a40ce35b80015e6f57a891f2d0` |
+| 2 | `theorem` | [localHyps_concrete](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BridgePsiAConcrete.lean/declarations/localhyps-concrete.md) | 48 | `result-track:d0f8ed5c805267f7ab994de5b5b37ec5aa05a3a1478b38143f8442bcaa83b364` |
+| 3 | `theorem` | [localHypsEventually](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BridgePsiAConcrete.lean/declarations/localhypseventually.md) | 103 | `result-track:9bb19dd25a5c9b4590168f8ac7473cfc32aa1d0553409e55be72033211b53f34` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

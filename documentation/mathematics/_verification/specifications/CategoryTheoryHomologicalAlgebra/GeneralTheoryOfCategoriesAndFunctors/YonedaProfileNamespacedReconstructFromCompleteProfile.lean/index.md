@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/YonedaProfileNamespacedReconstructFromCompleteProfile.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/YonedaProfileNamespacedReconstructFromCompleteProfile.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/YonedaProfileNamespacedReconstructFromCompleteProfile.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/YonedaProfileNamespacedReconstructFromCompleteProfile.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [CompleteMorphismProfile](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/YonedaProfileNamespacedReconstructFromCompleteProfile.lean/declarations/completemorphismprofile.md) | 26 | `declaration-track:6f12cc7c3f10b83270b7f92fcb1208b27e5ffac28cf45220c0b60bf1199eebf8` |
-| 2 | `def` | [reconstructFromCompleteProfile](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/YonedaProfileNamespacedReconstructFromCompleteProfile.lean/declarations/reconstructfromcompleteprofile.md) | 29 | `declaration-track:9b0968a355b4f3e2635ef04beda1163c6ba95ca6c1984ffc312e27e5f73fe019` |
-| 3 | `theorem` | [complete_profile_reconstructs_up_to_iso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/YonedaProfileNamespacedReconstructFromCompleteProfile.lean/declarations/complete-profile-reconstructs-up-to-iso.md) | 36 | `result-track:e111d793c09d79405b2d9dd77ed43cd1f3937f6f6fbc613ad03a731ba9045b5d` |
+| 1 | `abbrev` | [CompleteMorphismProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/YonedaProfileNamespacedReconstructFromCompleteProfile.lean/declarations/completemorphismprofile.md) | 26 | `declaration-track:6f12cc7c3f10b83270b7f92fcb1208b27e5ffac28cf45220c0b60bf1199eebf8` |
+| 2 | `def` | [reconstructFromCompleteProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/YonedaProfileNamespacedReconstructFromCompleteProfile.lean/declarations/reconstructfromcompleteprofile.md) | 29 | `declaration-track:9b0968a355b4f3e2635ef04beda1163c6ba95ca6c1984ffc312e27e5f73fe019` |
+| 3 | `theorem` | [complete_profile_reconstructs_up_to_iso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/YonedaProfileNamespacedReconstructFromCompleteProfile.lean/declarations/complete-profile-reconstructs-up-to-iso.md) | 36 | `result-track:e111d793c09d79405b2d9dd77ed43cd1f3937f6f6fbc613ad03a731ba9045b5d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

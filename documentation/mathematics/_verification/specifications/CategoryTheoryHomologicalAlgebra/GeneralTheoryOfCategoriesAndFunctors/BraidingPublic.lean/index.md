@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BraidingPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BraidingPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BraidingPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BraidingPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [braiding](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BraidingPublic.lean/declarations/braiding.md) | 43 | `declaration-track:c53aef6b6875c8d44aad41d3566d1dc310cc437a83ac177b9aa709c92c6867d4` |
-| 2 | `lemma` | [braiding_naturality_right](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BraidingPublic.lean/declarations/braiding-naturality-right.md) | 50 | `result-track:618a87aeec0590af26b83c06889053788be83ac392cf7e7d096a542c13d415f0` |
-| 3 | `lemma` | [braiding_naturality_left](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BraidingPublic.lean/declarations/braiding-naturality-left.md) | 57 | `result-track:702319fcb982fc9adf3e7db036b9fd8588a6e0c6421e82232b78de730fbab4b6` |
-| 4 | `lemma` | [hexagon_forward](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BraidingPublic.lean/declarations/hexagon-forward.md) | 63 | `result-track:2ecdc022cced3f1c4a35bec819bf7d4f1e20c1900bff7911d700b294eab4878f` |
-| 5 | `lemma` | [hexagon_reverse](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BraidingPublic.lean/declarations/hexagon-reverse.md) | 101 | `result-track:1fd67b88bed6dfc03349cc6a88865efc7cf6bc2af45e167949cc3c00d8306897` |
-| 6 | `lemma` | [symmetry](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BraidingPublic.lean/declarations/symmetry.md) | 140 | `result-track:4e7caa5f48ed5efb9de80f10c61035bb7e6e1fe5c1ce7e09fd35f6793a5f61d9` |
-| 7 | `instance` | [braidedCategory](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BraidingPublic.lean/declarations/braidedcategory.md) | 160 | `declaration-track:b65e1303a6bd3d2c6cbe43f104d53654c2c25d9e5821c48e1f8999d3370e4e96` |
-| 8 | `instance` | [symmetricCategory](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BraidingPublic.lean/declarations/symmetriccategory.md) | 168 | `declaration-track:1068b8b12cbc1e53c32d638119d2663b387808d7596f1fcebf42034db8af295a` |
+| 1 | `def` | [braiding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BraidingPublic.lean/declarations/braiding.md) | 43 | `declaration-track:c53aef6b6875c8d44aad41d3566d1dc310cc437a83ac177b9aa709c92c6867d4` |
+| 2 | `lemma` | [braiding_naturality_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BraidingPublic.lean/declarations/braiding-naturality-right.md) | 50 | `result-track:618a87aeec0590af26b83c06889053788be83ac392cf7e7d096a542c13d415f0` |
+| 3 | `lemma` | [braiding_naturality_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BraidingPublic.lean/declarations/braiding-naturality-left.md) | 57 | `result-track:702319fcb982fc9adf3e7db036b9fd8588a6e0c6421e82232b78de730fbab4b6` |
+| 4 | `lemma` | [hexagon_forward](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BraidingPublic.lean/declarations/hexagon-forward.md) | 63 | `result-track:2ecdc022cced3f1c4a35bec819bf7d4f1e20c1900bff7911d700b294eab4878f` |
+| 5 | `lemma` | [hexagon_reverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BraidingPublic.lean/declarations/hexagon-reverse.md) | 101 | `result-track:1fd67b88bed6dfc03349cc6a88865efc7cf6bc2af45e167949cc3c00d8306897` |
+| 6 | `lemma` | [symmetry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BraidingPublic.lean/declarations/symmetry.md) | 140 | `result-track:4e7caa5f48ed5efb9de80f10c61035bb7e6e1fe5c1ce7e09fd35f6793a5f61d9` |
+| 7 | `instance` | [braidedCategory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BraidingPublic.lean/declarations/braidedcategory.md) | 160 | `declaration-track:b65e1303a6bd3d2c6cbe43f104d53654c2c25d9e5821c48e1f8999d3370e4e96` |
+| 8 | `instance` | [symmetricCategory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BraidingPublic.lean/declarations/symmetriccategory.md) | 168 | `declaration-track:1068b8b12cbc1e53c32d638119d2663b387808d7596f1fcebf42034db8af295a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

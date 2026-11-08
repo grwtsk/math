@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/AdjoinDimension.lean/index.md) · [Full source](../../../../CommutativeAlgebra/AdjoinDimension.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdjoinDimension.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdjoinDimension.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [rank_sup_le_of_free](../../../../CommutativeAlgebra/AdjoinDimension.lean/declarations/rank-sup-le-of-free.md) | 28 | `result-track:5c66f43aed93743e4015c7beb2af5a4414603c66030dffbab5349034a9dfd203` |
-| 2 | `theorem` | [finrank_sup_le_of_free](../../../../CommutativeAlgebra/AdjoinDimension.lean/declarations/finrank-sup-le-of-free.md) | 42 | `result-track:8ea7acac60d03600d6dbba997b28e95096b006503051bcbbb0a3f007e58dabf7` |
+| 1 | `theorem` | [rank_sup_le_of_free](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdjoinDimension.lean/declarations/rank-sup-le-of-free.md) | 28 | `result-track:5c66f43aed93743e4015c7beb2af5a4414603c66030dffbab5349034a9dfd203` |
+| 2 | `theorem` | [finrank_sup_le_of_free](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdjoinDimension.lean/declarations/finrank-sup-le-of-free.md) | 42 | `result-track:8ea7acac60d03600d6dbba997b28e95096b006503051bcbbb0a3f007e58dabf7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

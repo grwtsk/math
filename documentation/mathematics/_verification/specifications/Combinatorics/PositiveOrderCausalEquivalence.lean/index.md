@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/PositiveOrderCausalEquivalence.lean/index.md) · [Full source](../../../../Combinatorics/PositiveOrderCausalEquivalence.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PositiveOrderCausalEquivalence.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PositiveOrderCausalEquivalence.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -48,7 +48,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 - `DAF.Causal.CausalState` — import line 19; external provider; requires a separately pinned dependency.
 - `Mathlib.GroupTheory.OrderOfElement` — import line 20; external provider; requires a separately pinned dependency.
-- [Bilateral Quotient Permutation](../../../../MathematicalLogicAndFoundations/GeneralLogic/BilateralQuotientPermutation.lean/index.md) — import line 21; pinned internal source present.
+- [Bilateral Quotient Permutation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BilateralQuotientPermutation.lean/index.md) — import line 21; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [forward_eq_bilateral_of_pow_eq_one](../../../../Combinatorics/PositiveOrderCausalEquivalence.lean/declarations/forward-eq-bilateral-of-pow-eq-one.md) | 49 | `result-track:c7f0af0a173d9a08dd76ee5efcb6a7c221ed21e8474bff734deb85540fccbc80` |
-| 2 | `def` | [forwardCausalStateEquivBilateralOfPowEqOne](../../../../Combinatorics/PositiveOrderCausalEquivalence.lean/declarations/forwardcausalstateequivbilateralofpoweqone.md) | 92 | `declaration-track:d74fa62dd0d3d6af21af7eeccbf774b5477e08350f93607d002dd991c18eaa69` |
-| 3 | `theorem` | [forwardCausalStateEquivBilateralOfPowEqOne_mk](../../../../Combinatorics/PositiveOrderCausalEquivalence.lean/declarations/forwardcausalstateequivbilateralofpoweqone-mk.md) | 123 | `result-track:d05b883f21845f917103308b6aff74b4f57eff011d8fa8fac068f46c37f1c93b` |
-| 4 | `def` | [forwardStepPermOfPowEqOne](../../../../Combinatorics/PositiveOrderCausalEquivalence.lean/declarations/forwardsteppermofpoweqone.md) | 139 | `declaration-track:8a362533ad388b0f4f483fe45c250045212ac816a32aae9327d0b9f74fa09cbc` |
-| 5 | `theorem` | [forwardStepPermOfPowEqOne_mk](../../../../Combinatorics/PositiveOrderCausalEquivalence.lean/declarations/forwardsteppermofpoweqone-mk.md) | 150 | `result-track:fecc17798afc90c33826f3e1bef3cc28f2602400eae1bf8d3513baf3610fd684` |
+| 1 | `theorem` | [forward_eq_bilateral_of_pow_eq_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PositiveOrderCausalEquivalence.lean/declarations/forward-eq-bilateral-of-pow-eq-one.md) | 49 | `result-track:c7f0af0a173d9a08dd76ee5efcb6a7c221ed21e8474bff734deb85540fccbc80` |
+| 2 | `def` | [forwardCausalStateEquivBilateralOfPowEqOne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PositiveOrderCausalEquivalence.lean/declarations/forwardcausalstateequivbilateralofpoweqone.md) | 92 | `declaration-track:d74fa62dd0d3d6af21af7eeccbf774b5477e08350f93607d002dd991c18eaa69` |
+| 3 | `theorem` | [forwardCausalStateEquivBilateralOfPowEqOne_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PositiveOrderCausalEquivalence.lean/declarations/forwardcausalstateequivbilateralofpoweqone-mk.md) | 123 | `result-track:d05b883f21845f917103308b6aff74b4f57eff011d8fa8fac068f46c37f1c93b` |
+| 4 | `def` | [forwardStepPermOfPowEqOne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PositiveOrderCausalEquivalence.lean/declarations/forwardsteppermofpoweqone.md) | 139 | `declaration-track:8a362533ad388b0f4f483fe45c250045212ac816a32aae9327d0b9f74fa09cbc` |
+| 5 | `theorem` | [forwardStepPermOfPowEqOne_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PositiveOrderCausalEquivalence.lean/declarations/forwardsteppermofpoweqone-mk.md) | 150 | `result-track:fecc17798afc90c33826f3e1bef3cc28f2602400eae1bf8d3513baf3610fd684` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesRegularEpiNamespacedPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesRegularEpiNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesRegularEpiNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesRegularEpiNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [isRegularEpiCategory_sheaf](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesRegularEpiNamespacedPublic.lean/declarations/isregularepicategory-sheaf.md) | 57 | `result-track:8a8ac424bd0d3d57fe22e0d134e13ca1a4f874593514d2f3063da475cbe9b564` |
-| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesRegularEpiNamespacedPublic.lean/declarations/instance.md) | 113 | `declaration-track:9cbc0ff367b3aa4cae1a5b453ba2b57bfec04471fadba23187e9c56c2204639e` |
-| 3 | `example` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesRegularEpiNamespacedPublic.lean/declarations/example.md) | 117 | `declaration-track:2a8a6b0b415a2b830f3c4d7f6b9a329bcfa8969f0a08e2c9e87d91e81579e7c0` |
+| 1 | `lemma` | [isRegularEpiCategory_sheaf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesRegularEpiNamespacedPublic.lean/declarations/isregularepicategory-sheaf.md) | 57 | `result-track:8a8ac424bd0d3d57fe22e0d134e13ca1a4f874593514d2f3063da475cbe9b564` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesRegularEpiNamespacedPublic.lean/declarations/instance.md) | 113 | `declaration-track:9cbc0ff367b3aa4cae1a5b453ba2b57bfec04471fadba23187e9c56c2204639e` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesRegularEpiNamespacedPublic.lean/declarations/example.md) | 117 | `declaration-track:2a8a6b0b415a2b830f3c4d7f6b9a329bcfa8969f0a08e2c9e87d91e81579e7c0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

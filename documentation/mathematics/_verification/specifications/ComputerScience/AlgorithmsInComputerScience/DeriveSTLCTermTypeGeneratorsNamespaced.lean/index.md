@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/DeriveSTLCTermTypeGeneratorsNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/DeriveSTLCTermTypeGeneratorsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DeriveSTLCTermTypeGeneratorsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DeriveSTLCTermTypeGeneratorsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,12 +60,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [type](../../../../../ComputerScience/AlgorithmsInComputerScience/DeriveSTLCTermTypeGeneratorsNamespaced.lean/declarations/type.md) | 20 | `declaration-track:e603e104572e9370b952b0bbba3931026be61999b1b336246eebe2bbd0233552` |
-| 2 | `inductive` | [term](../../../../../ComputerScience/AlgorithmsInComputerScience/DeriveSTLCTermTypeGeneratorsNamespaced.lean/declarations/term.md) | 26 | `declaration-track:86b098fe3852c09de73550e2f60bc4a9c5671104ef33001d1c4b645a1e7231ad` |
-| 3 | `def` | [isValue](../../../../../ComputerScience/AlgorithmsInComputerScience/DeriveSTLCTermTypeGeneratorsNamespaced.lean/declarations/isvalue.md) | 145 | `declaration-track:14de01746106fe918d2f416929f0015b43dabb613d8508edb0ea15bae4f6719f` |
-| 4 | `def` | [isFunctionType](../../../../../ComputerScience/AlgorithmsInComputerScience/DeriveSTLCTermTypeGeneratorsNamespaced.lean/declarations/isfunctiontype.md) | 151 | `declaration-track:548ab5c119238740eeb02549a4f9315fa3c20915bc8ba39fc6060ae2f4607bdc` |
-| 5 | `instance` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/DeriveSTLCTermTypeGeneratorsNamespaced.lean/declarations/instance.md) | 157 | `declaration-track:5719c888eaa3f233fe37bc39e0865bb02528de65e1b8844ae3ecaf573729f992` |
-| 6 | `instance` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/DeriveSTLCTermTypeGeneratorsNamespaced.lean/declarations/instance-source-edition-2.md) | 164 | `declaration-track:fc7f6ebb306f6993862b2729c5906d488714f7165dee8405ae82b6bc4a039adc` |
+| 1 | `inductive` | [type](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DeriveSTLCTermTypeGeneratorsNamespaced.lean/declarations/type.md) | 20 | `declaration-track:e603e104572e9370b952b0bbba3931026be61999b1b336246eebe2bbd0233552` |
+| 2 | `inductive` | [term](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DeriveSTLCTermTypeGeneratorsNamespaced.lean/declarations/term.md) | 26 | `declaration-track:86b098fe3852c09de73550e2f60bc4a9c5671104ef33001d1c4b645a1e7231ad` |
+| 3 | `def` | [isValue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DeriveSTLCTermTypeGeneratorsNamespaced.lean/declarations/isvalue.md) | 145 | `declaration-track:14de01746106fe918d2f416929f0015b43dabb613d8508edb0ea15bae4f6719f` |
+| 4 | `def` | [isFunctionType](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DeriveSTLCTermTypeGeneratorsNamespaced.lean/declarations/isfunctiontype.md) | 151 | `declaration-track:548ab5c119238740eeb02549a4f9315fa3c20915bc8ba39fc6060ae2f4607bdc` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DeriveSTLCTermTypeGeneratorsNamespaced.lean/declarations/instance.md) | 157 | `declaration-track:5719c888eaa3f233fe37bc39e0865bb02528de65e1b8844ae3ecaf573729f992` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DeriveSTLCTermTypeGeneratorsNamespaced.lean/declarations/instance-source-edition-2.md) | 164 | `declaration-track:fc7f6ebb306f6993862b2729c5906d488714f7165dee8405ae82b6bc4a039adc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

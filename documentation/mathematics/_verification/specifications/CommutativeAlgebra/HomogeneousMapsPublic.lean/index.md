@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/HomogeneousMapsPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/HomogeneousMapsPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HomogeneousMapsPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HomogeneousMapsPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,22 +57,22 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [map](../../../../CommutativeAlgebra/HomogeneousMapsPublic.lean/declarations/map.md) | 34 | `declaration-track:7380eb837fb408785f48bb50624a28671293f33d5858111c15b2e2bb92e3d7a2` |
-| 2 | `def` | [comap](../../../../CommutativeAlgebra/HomogeneousMapsPublic.lean/declarations/comap.md) | 52 | `declaration-track:221114b131864b8dd5201ebf19c99088f4b35fffc576e5e564f392b5c8ac1dbb` |
-| 3 | `lemma` | [map_le_iff_le_comap](../../../../CommutativeAlgebra/HomogeneousMapsPublic.lean/declarations/map-le-iff-le-comap.md) | 61 | `result-track:eb7fe3aa4861654cd09ab90c4268b967eb55aa2ff2f75cf38e816ccbcf6e6700` |
-| 4 | `theorem` | [gc_map_comap](../../../../CommutativeAlgebra/HomogeneousMapsPublic.lean/declarations/gc-map-comap.md) | 65 | `result-track:5d624ced1310bbef569c2c75ec8dd07e0d179adf84ddd720136190a816d36078` |
-| 5 | `lemma` | [map_mono](../../../../CommutativeAlgebra/HomogeneousMapsPublic.lean/declarations/map-mono.md) | 68 | `result-track:cbfcdacd9e2e71530556488d53529ac61417771b8bc1dec2f4d49b263329b7c2` |
-| 6 | `lemma` | [comap_mono](../../../../CommutativeAlgebra/HomogeneousMapsPublic.lean/declarations/comap-mono.md) | 70 | `result-track:5f929c004e6d274687ce2c088a412804c3e910cacefa9c58663a589ca4f359b3` |
-| 7 | `lemma` | [toIdeal_comap](../../../../CommutativeAlgebra/HomogeneousMapsPublic.lean/declarations/toideal-comap.md) | 72 | `result-track:b010dc5b6e2d87c67d1f9c071aa59ce3b762fba6e4e66f37963f264c7ccb0f2b` |
-| 8 | `lemma` | [coe_comap](../../../../CommutativeAlgebra/HomogeneousMapsPublic.lean/declarations/coe-comap.md) | 74 | `result-track:e98324e96c58cefe52ae619698ef02e5b10b0df4431591b238ef379f8d744f00` |
-| 9 | `lemma` | [toIdeal_map](../../../../CommutativeAlgebra/HomogeneousMapsPublic.lean/declarations/toideal-map.md) | 76 | `result-track:9c695afdfe05c6fa323cb6e4400106e1a5cc99e1ba9d2d3fd6eb11e7e70dd7ba` |
-| 10 | `instance` | [isPrime_comap](../../../../CommutativeAlgebra/HomogeneousMapsPublic.lean/declarations/isprime-comap.md) | 78 | `declaration-track:aab66eee873b79d41a16364c10127d93e9dce9d53d18546e8bc998d04558c3d3` |
-| 11 | `lemma` | [map_id](../../../../CommutativeAlgebra/HomogeneousMapsPublic.lean/declarations/map-id.md) | 81 | `result-track:9468751d1476bf76630d15a082599a2b6c9f11f64fca3a7ad4e13ee42bccfd4f` |
-| 12 | `lemma` | [map_map](../../../../CommutativeAlgebra/HomogeneousMapsPublic.lean/declarations/map-map.md) | 83 | `result-track:5491f41c9b93c3970221e11e1cf94dbe590b18530c18be42ff9da6e2e5803407` |
-| 13 | `lemma` | [map_comp](../../../../CommutativeAlgebra/HomogeneousMapsPublic.lean/declarations/map-comp.md) | 85 | `result-track:b793ed8a9b29af1bffaf22a466f4fbc7eea7cc7d9c28c1ac82662094ae57ed0c` |
-| 14 | `lemma` | [comap_id](../../../../CommutativeAlgebra/HomogeneousMapsPublic.lean/declarations/comap-id.md) | 87 | `result-track:95b846756b03a9e9c8afcbd800cc0e58cebd420cbbec9c483ad3a912760e3c1b` |
-| 15 | `lemma` | [comap_comap](../../../../CommutativeAlgebra/HomogeneousMapsPublic.lean/declarations/comap-comap.md) | 89 | `result-track:2a2e967c6ded6a2cb8c0c2ec491e133d664bd5017aa4d47d25fae7ab0229b800` |
-| 16 | `theorem` | [irrelevant_le_map_comp](../../../../CommutativeAlgebra/HomogeneousMapsPublic.lean/declarations/irrelevant-le-map-comp.md) | 104 | `result-track:242ab514f346ab199cade885f5c95400fe512e14641af65aab63e186aa4249ec` |
+| 1 | `def` | [map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HomogeneousMapsPublic.lean/declarations/map.md) | 34 | `declaration-track:7380eb837fb408785f48bb50624a28671293f33d5858111c15b2e2bb92e3d7a2` |
+| 2 | `def` | [comap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HomogeneousMapsPublic.lean/declarations/comap.md) | 52 | `declaration-track:221114b131864b8dd5201ebf19c99088f4b35fffc576e5e564f392b5c8ac1dbb` |
+| 3 | `lemma` | [map_le_iff_le_comap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HomogeneousMapsPublic.lean/declarations/map-le-iff-le-comap.md) | 61 | `result-track:eb7fe3aa4861654cd09ab90c4268b967eb55aa2ff2f75cf38e816ccbcf6e6700` |
+| 4 | `theorem` | [gc_map_comap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HomogeneousMapsPublic.lean/declarations/gc-map-comap.md) | 65 | `result-track:5d624ced1310bbef569c2c75ec8dd07e0d179adf84ddd720136190a816d36078` |
+| 5 | `lemma` | [map_mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HomogeneousMapsPublic.lean/declarations/map-mono.md) | 68 | `result-track:cbfcdacd9e2e71530556488d53529ac61417771b8bc1dec2f4d49b263329b7c2` |
+| 6 | `lemma` | [comap_mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HomogeneousMapsPublic.lean/declarations/comap-mono.md) | 70 | `result-track:5f929c004e6d274687ce2c088a412804c3e910cacefa9c58663a589ca4f359b3` |
+| 7 | `lemma` | [toIdeal_comap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HomogeneousMapsPublic.lean/declarations/toideal-comap.md) | 72 | `result-track:b010dc5b6e2d87c67d1f9c071aa59ce3b762fba6e4e66f37963f264c7ccb0f2b` |
+| 8 | `lemma` | [coe_comap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HomogeneousMapsPublic.lean/declarations/coe-comap.md) | 74 | `result-track:e98324e96c58cefe52ae619698ef02e5b10b0df4431591b238ef379f8d744f00` |
+| 9 | `lemma` | [toIdeal_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HomogeneousMapsPublic.lean/declarations/toideal-map.md) | 76 | `result-track:9c695afdfe05c6fa323cb6e4400106e1a5cc99e1ba9d2d3fd6eb11e7e70dd7ba` |
+| 10 | `instance` | [isPrime_comap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HomogeneousMapsPublic.lean/declarations/isprime-comap.md) | 78 | `declaration-track:aab66eee873b79d41a16364c10127d93e9dce9d53d18546e8bc998d04558c3d3` |
+| 11 | `lemma` | [map_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HomogeneousMapsPublic.lean/declarations/map-id.md) | 81 | `result-track:9468751d1476bf76630d15a082599a2b6c9f11f64fca3a7ad4e13ee42bccfd4f` |
+| 12 | `lemma` | [map_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HomogeneousMapsPublic.lean/declarations/map-map.md) | 83 | `result-track:5491f41c9b93c3970221e11e1cf94dbe590b18530c18be42ff9da6e2e5803407` |
+| 13 | `lemma` | [map_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HomogeneousMapsPublic.lean/declarations/map-comp.md) | 85 | `result-track:b793ed8a9b29af1bffaf22a466f4fbc7eea7cc7d9c28c1ac82662094ae57ed0c` |
+| 14 | `lemma` | [comap_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HomogeneousMapsPublic.lean/declarations/comap-id.md) | 87 | `result-track:95b846756b03a9e9c8afcbd800cc0e58cebd420cbbec9c483ad3a912760e3c1b` |
+| 15 | `lemma` | [comap_comap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HomogeneousMapsPublic.lean/declarations/comap-comap.md) | 89 | `result-track:2a2e967c6ded6a2cb8c0c2ec491e133d664bd5017aa4d47d25fae7ab0229b800` |
+| 16 | `theorem` | [irrelevant_le_map_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HomogeneousMapsPublic.lean/declarations/irrelevant-le-map-comp.md) | 104 | `result-track:242ab514f346ab199cade885f5c95400fe512e14641af65aab63e186aa4249ec` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/PrimesCongruentOneNamespaced.lean/index.md) · [Full source](../../../../NumberTheory/PrimesCongruentOneNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimesCongruentOneNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimesCongruentOneNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_prime_gt_modEq_one](../../../../NumberTheory/PrimesCongruentOneNamespaced.lean/declarations/exists-prime-gt-modeq-one.md) | 32 | `result-track:acfe4bbaa3706c139a38055c9150ef95b5273a7689f9e6806252020492edc426` |
-| 2 | `theorem` | [frequently_atTop_modEq_one](../../../../NumberTheory/PrimesCongruentOneNamespaced.lean/declarations/frequently-attop-modeq-one.md) | 65 | `result-track:88ce34500c0b682d92f1d57986ab5ae0b2caf46ceecefd0fbe3e3d43f6209a73` |
-| 3 | `theorem` | [infinite_setOf_prime_modEq_one](../../../../NumberTheory/PrimesCongruentOneNamespaced.lean/declarations/infinite-setof-prime-modeq-one.md) | 72 | `result-track:9b2e4e219e23484ff723dda43e914a2782f5624a65b2d796424cd25cbd72ce15` |
+| 1 | `theorem` | [exists_prime_gt_modEq_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimesCongruentOneNamespaced.lean/declarations/exists-prime-gt-modeq-one.md) | 32 | `result-track:acfe4bbaa3706c139a38055c9150ef95b5273a7689f9e6806252020492edc426` |
+| 2 | `theorem` | [frequently_atTop_modEq_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimesCongruentOneNamespaced.lean/declarations/frequently-attop-modeq-one.md) | 65 | `result-track:88ce34500c0b682d92f1d57986ab5ae0b2caf46ceecefd0fbe3e3d43f6209a73` |
+| 3 | `theorem` | [infinite_setOf_prime_modEq_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimesCongruentOneNamespaced.lean/declarations/infinite-setof-prime-modeq-one.md) | 72 | `result-track:9b2e4e219e23484ff723dda43e914a2782f5624a65b2d796424cd25cbd72ce15` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

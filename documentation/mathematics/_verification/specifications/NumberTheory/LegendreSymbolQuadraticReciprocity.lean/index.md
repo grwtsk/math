@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/LegendreSymbolQuadraticReciprocity.lean/index.md) · [Full source](../../../../NumberTheory/LegendreSymbolQuadraticReciprocity.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LegendreSymbolQuadraticReciprocity.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LegendreSymbolQuadraticReciprocity.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [at_two](../../../../NumberTheory/LegendreSymbolQuadraticReciprocity.lean/declarations/at-two.md) | 56 | `result-track:1014e420498a60aec58951056ff337b9fdeaf1eb13e11b4c51751e8145c033d4` |
-| 2 | `theorem` | [at_neg_two](../../../../NumberTheory/LegendreSymbolQuadraticReciprocity.lean/declarations/at-neg-two.md) | 61 | `result-track:34337769ccb15850ed670a04272ac96a7ed5b3e2f85d6661c5718ec47c108456` |
-| 3 | `theorem` | [exists_sq_eq_two_iff](../../../../NumberTheory/LegendreSymbolQuadraticReciprocity.lean/declarations/exists-sq-eq-two-iff.md) | 70 | `result-track:088b6baa9f42df0d8e08d714e0ca3bf88e85d56f47ddee7d037e7f345f57cf4d` |
-| 4 | `theorem` | [exists_sq_eq_neg_two_iff](../../../../NumberTheory/LegendreSymbolQuadraticReciprocity.lean/declarations/exists-sq-eq-neg-two-iff.md) | 76 | `result-track:867deb2163819519890434aba6b14d4b4546fc6394c54d84260f9c78c943610e` |
-| 5 | `theorem` | [quadratic_reciprocity](../../../../NumberTheory/LegendreSymbolQuadraticReciprocity.lean/declarations/quadratic-reciprocity.md) | 103 | `result-track:1f8af2363611a37095dd76f08716e8dd272f6c66c51bb6519d93df3b09b71630` |
-| 6 | `theorem` | [quadratic_reciprocity'](../../../../NumberTheory/LegendreSymbolQuadraticReciprocity.lean/declarations/quadratic-reciprocity-source-edition-2.md) | 119 | `result-track:f10a9c2bfced96c79352236faa29da48d6d0488609b1253a4b482c9254647618` |
-| 7 | `theorem` | [quadratic_reciprocity_one_mod_four](../../../../NumberTheory/LegendreSymbolQuadraticReciprocity.lean/declarations/quadratic-reciprocity-one-mod-four.md) | 130 | `result-track:2e15e55c89d005b9766f27242edb7df287ae30c363d240953d0b3e72b68b4adb` |
-| 8 | `theorem` | [quadratic_reciprocity_three_mod_four](../../../../NumberTheory/LegendreSymbolQuadraticReciprocity.lean/declarations/quadratic-reciprocity-three-mod-four.md) | 137 | `result-track:f053d97adf3a20c1ed6b56c6b005f5086cfbbb3a3af95029ee158b4a5fb486d4` |
-| 9 | `theorem` | [exists_sq_eq_prime_iff_of_mod_four_eq_one](../../../../NumberTheory/LegendreSymbolQuadraticReciprocity.lean/declarations/exists-sq-eq-prime-iff-of-mod-four-eq-one.md) | 151 | `result-track:db13aff866481475e0ccd0d90f8f497a86de715e653745038321d36b169a7e27` |
-| 10 | `theorem` | [exists_sq_eq_prime_iff_of_mod_four_eq_three](../../../../NumberTheory/LegendreSymbolQuadraticReciprocity.lean/declarations/exists-sq-eq-prime-iff-of-mod-four-eq-three.md) | 160 | `result-track:d00fbe29dbd739e026a9675be7811cc6672c2d9b9fb45379f9373b44c6beaa5b` |
+| 1 | `theorem` | [at_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LegendreSymbolQuadraticReciprocity.lean/declarations/at-two.md) | 56 | `result-track:1014e420498a60aec58951056ff337b9fdeaf1eb13e11b4c51751e8145c033d4` |
+| 2 | `theorem` | [at_neg_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LegendreSymbolQuadraticReciprocity.lean/declarations/at-neg-two.md) | 61 | `result-track:34337769ccb15850ed670a04272ac96a7ed5b3e2f85d6661c5718ec47c108456` |
+| 3 | `theorem` | [exists_sq_eq_two_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LegendreSymbolQuadraticReciprocity.lean/declarations/exists-sq-eq-two-iff.md) | 70 | `result-track:088b6baa9f42df0d8e08d714e0ca3bf88e85d56f47ddee7d037e7f345f57cf4d` |
+| 4 | `theorem` | [exists_sq_eq_neg_two_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LegendreSymbolQuadraticReciprocity.lean/declarations/exists-sq-eq-neg-two-iff.md) | 76 | `result-track:867deb2163819519890434aba6b14d4b4546fc6394c54d84260f9c78c943610e` |
+| 5 | `theorem` | [quadratic_reciprocity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LegendreSymbolQuadraticReciprocity.lean/declarations/quadratic-reciprocity.md) | 103 | `result-track:1f8af2363611a37095dd76f08716e8dd272f6c66c51bb6519d93df3b09b71630` |
+| 6 | `theorem` | [quadratic_reciprocity'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LegendreSymbolQuadraticReciprocity.lean/declarations/quadratic-reciprocity-source-edition-2.md) | 119 | `result-track:f10a9c2bfced96c79352236faa29da48d6d0488609b1253a4b482c9254647618` |
+| 7 | `theorem` | [quadratic_reciprocity_one_mod_four](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LegendreSymbolQuadraticReciprocity.lean/declarations/quadratic-reciprocity-one-mod-four.md) | 130 | `result-track:2e15e55c89d005b9766f27242edb7df287ae30c363d240953d0b3e72b68b4adb` |
+| 8 | `theorem` | [quadratic_reciprocity_three_mod_four](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LegendreSymbolQuadraticReciprocity.lean/declarations/quadratic-reciprocity-three-mod-four.md) | 137 | `result-track:f053d97adf3a20c1ed6b56c6b005f5086cfbbb3a3af95029ee158b4a5fb486d4` |
+| 9 | `theorem` | [exists_sq_eq_prime_iff_of_mod_four_eq_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LegendreSymbolQuadraticReciprocity.lean/declarations/exists-sq-eq-prime-iff-of-mod-four-eq-one.md) | 151 | `result-track:db13aff866481475e0ccd0d90f8f497a86de715e653745038321d36b169a7e27` |
+| 10 | `theorem` | [exists_sq_eq_prime_iff_of_mod_four_eq_three](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LegendreSymbolQuadraticReciprocity.lean/declarations/exists-sq-eq-prime-iff-of-mod-four-eq-three.md) | 160 | `result-track:d00fbe29dbd739e026a9675be7811cc6672c2d9b9fb45379f9373b44c6beaa5b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

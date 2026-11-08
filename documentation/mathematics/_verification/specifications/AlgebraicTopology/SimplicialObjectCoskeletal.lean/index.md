@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/SimplicialObjectCoskeletal.lean/index.md) · [Full source](../../../../AlgebraicTopology/SimplicialObjectCoskeletal.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialObjectCoskeletal.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialObjectCoskeletal.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [rightExtensionInclusion](../../../../AlgebraicTopology/SimplicialObjectCoskeletal.lean/declarations/rightextensioninclusion.md) | 45 | `declaration-track:b9a39cdffd0f681827190e6a931b778111d29f64f529baffb59b8f1024e983cd` |
-| 2 | `class` | [IsCoskeletal](../../../../AlgebraicTopology/SimplicialObjectCoskeletal.lean/declarations/iscoskeletal.md) | 56 | `declaration-track:d8356edeb19cffceb7602a913e56df6f94f06b29b8a1debbed06ab97087f9eec` |
-| 3 | `def` | [IsCoskeletal.isUniversalOfIsRightKanExtension](../../../../AlgebraicTopology/SimplicialObjectCoskeletal.lean/declarations/iscoskeletal-isuniversalofisrightkanextension.md) | 68 | `declaration-track:fcdddaf554cd2376fd35c13fe2b12615eca6eafcbe4524ab0b9c66fb6301a708` |
-| 4 | `theorem` | [isCoskeletal_iff_isIso](../../../../AlgebraicTopology/SimplicialObjectCoskeletal.lean/declarations/iscoskeletal-iff-isiso.md) | 72 | `result-track:19304914b451fb9ffd7eb20ddd91e2906077860a5cd5f9ef6a1aac0f8ced05a0` |
-| 5 | `instance` | [(anonymous)](../../../../AlgebraicTopology/SimplicialObjectCoskeletal.lean/declarations/instance.md) | 77 | `declaration-track:a204a582ca923ddd965e0d3d7b6e628588b6159e6700b018a47ab8d65618faaf` |
-| 6 | `def` | [isoCoskOfIsCoskeletal](../../../../AlgebraicTopology/SimplicialObjectCoskeletal.lean/declarations/isocoskofiscoskeletal.md) | 84 | `declaration-track:e7386d4ac19abc8099b594926a56f0df9960c34c36d9cd66cf93cc76d631779c` |
+| 1 | `def` | [rightExtensionInclusion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialObjectCoskeletal.lean/declarations/rightextensioninclusion.md) | 45 | `declaration-track:b9a39cdffd0f681827190e6a931b778111d29f64f529baffb59b8f1024e983cd` |
+| 2 | `class` | [IsCoskeletal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialObjectCoskeletal.lean/declarations/iscoskeletal.md) | 56 | `declaration-track:d8356edeb19cffceb7602a913e56df6f94f06b29b8a1debbed06ab97087f9eec` |
+| 3 | `def` | [IsCoskeletal.isUniversalOfIsRightKanExtension](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialObjectCoskeletal.lean/declarations/iscoskeletal-isuniversalofisrightkanextension.md) | 68 | `declaration-track:fcdddaf554cd2376fd35c13fe2b12615eca6eafcbe4524ab0b9c66fb6301a708` |
+| 4 | `theorem` | [isCoskeletal_iff_isIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialObjectCoskeletal.lean/declarations/iscoskeletal-iff-isiso.md) | 72 | `result-track:19304914b451fb9ffd7eb20ddd91e2906077860a5cd5f9ef6a1aac0f8ced05a0` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialObjectCoskeletal.lean/declarations/instance.md) | 77 | `declaration-track:a204a582ca923ddd965e0d3d7b6e628588b6159e6700b018a47ab8d65618faaf` |
+| 6 | `def` | [isoCoskOfIsCoskeletal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialObjectCoskeletal.lean/declarations/isocoskofiscoskeletal.md) | 84 | `declaration-track:e7386d4ac19abc8099b594926a56f0df9960c34c36d9cd66cf93cc76d631779c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

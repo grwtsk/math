@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CrystallineTraceFormulaNamespacedCrystallineTraceKind.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CrystallineTraceFormulaNamespacedCrystallineTraceKind.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CrystallineTraceFormulaNamespacedCrystallineTraceKind.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CrystallineTraceFormulaNamespacedCrystallineTraceKind.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [CrystallineTraceKind](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CrystallineTraceFormulaNamespacedCrystallineTraceKind.lean/declarations/crystallinetracekind.md) | 26 | `declaration-track:8aea8b0cab78708fd5b0a664199a39462a34c297e9480bf6ead48ab387b1c998` |
-| 2 | `structure` | [CrystallineTraceFormula](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CrystallineTraceFormulaNamespacedCrystallineTraceKind.lean/declarations/crystallinetraceformula.md) | 33 | `declaration-track:fad0eb3603c144425d90da4e6fba69c03a921c7ded65118a5548d3b1d7e64928` |
-| 3 | `theorem` | [crystalline_trace_formula_holds](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CrystallineTraceFormulaNamespacedCrystallineTraceKind.lean/declarations/crystalline-trace-formula-holds.md) | 44 | `result-track:a6012b417243e51e5254aac71b6b92b1192156947adf1bbff99296186e468d7d` |
+| 1 | `inductive` | [CrystallineTraceKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CrystallineTraceFormulaNamespacedCrystallineTraceKind.lean/declarations/crystallinetracekind.md) | 26 | `declaration-track:8aea8b0cab78708fd5b0a664199a39462a34c297e9480bf6ead48ab387b1c998` |
+| 2 | `structure` | [CrystallineTraceFormula](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CrystallineTraceFormulaNamespacedCrystallineTraceKind.lean/declarations/crystallinetraceformula.md) | 33 | `declaration-track:fad0eb3603c144425d90da4e6fba69c03a921c7ded65118a5548d3b1d7e64928` |
+| 3 | `theorem` | [crystalline_trace_formula_holds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CrystallineTraceFormulaNamespacedCrystallineTraceKind.lean/declarations/crystalline-trace-formula-holds.md) | 44 | `result-track:a6012b417243e51e5254aac71b6b92b1192156947adf1bbff99296186e468d7d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

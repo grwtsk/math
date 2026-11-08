@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Imo1960Q1.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Imo1960Q1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Imo1960Q1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Imo1960Q1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,19 +57,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [sumOfSquares](../../../../../ComputerScience/AlgorithmsInComputerScience/Imo1960Q1.lean/declarations/sumofsquares.md) | 27 | `declaration-track:81097305e98005d18eb062ef61b54cdc11ea5972cdfa7af591f1037b308404d2` |
-| 2 | `def` | [ProblemPredicate](../../../../../ComputerScience/AlgorithmsInComputerScience/Imo1960Q1.lean/declarations/problempredicate.md) | 30 | `declaration-track:affbb5aa1332d48b06613c718df3084e6f6441b03218f4d5093cf28745b39cab` |
-| 3 | `def` | [SolutionPredicate](../../../../../ComputerScience/AlgorithmsInComputerScience/Imo1960Q1.lean/declarations/solutionpredicate.md) | 33 | `declaration-track:ae535b6e534e925ad436fa9ccca4f1fb445be33bbbb53b7e7577a2a1ff9ac36a` |
-| 4 | `theorem` | [not_zero](../../../../../ComputerScience/AlgorithmsInComputerScience/Imo1960Q1.lean/declarations/not-zero.md) | 39 | `result-track:7939483ecfd539e4c69db90e2f1de004541a2ccea26913486b4b19314ae93b6b` |
-| 5 | `theorem` | [ge_100](../../../../../ComputerScience/AlgorithmsInComputerScience/Imo1960Q1.lean/declarations/ge-100.md) | 43 | `result-track:2a5362e8f954812f2fbd398549d57efe3351bb5515440c3fe9a99de6fb8ca147` |
-| 6 | `theorem` | [lt_1000](../../../../../ComputerScience/AlgorithmsInComputerScience/Imo1960Q1.lean/declarations/lt-1000.md) | 50 | `result-track:6e462b0472f618f21710250e06396ab1d6009d4940548a3d0b64b9e0562832f8` |
-| 7 | `def` | [SearchUpTo](../../../../../ComputerScience/AlgorithmsInComputerScience/Imo1960Q1.lean/declarations/searchupto.md) | 60 | `declaration-track:11b562a9badc65a318c31fb988f7a9891a84f688a2596fd1ef662abcf2490e7c` |
-| 8 | `theorem` | [searchUpTo_start](../../../../../ComputerScience/AlgorithmsInComputerScience/Imo1960Q1.lean/declarations/searchupto-start.md) | 63 | `result-track:24f592c8e80937997fa2c6b517f9a1e5990a942d4cdb706f3224271ae3bd9da4` |
-| 9 | `theorem` | [searchUpTo_step](../../../../../ComputerScience/AlgorithmsInComputerScience/Imo1960Q1.lean/declarations/searchupto-step.md) | 66 | `result-track:5a81b1849312963814dfdd852edab6510f392a5ad7a20c9df8e96a12ea96977b` |
-| 10 | `theorem` | [searchUpTo_end](../../../../../ComputerScience/AlgorithmsInComputerScience/Imo1960Q1.lean/declarations/searchupto-end.md) | 77 | `result-track:81ccf88aeec70e9e6b88746bf8bb54cd3fe63e22dc0452e27083a1829c07a5b1` |
-| 11 | `theorem` | [right_direction](../../../../../ComputerScience/AlgorithmsInComputerScience/Imo1960Q1.lean/declarations/right-direction.md) | 81 | `result-track:470530cc3ebcb2480babacdde4e969d805d2314300218acb1cd8ea4088d1d9ec` |
-| 12 | `theorem` | [left_direction](../../../../../ComputerScience/AlgorithmsInComputerScience/Imo1960Q1.lean/declarations/left-direction.md) | 92 | `result-track:51f755a333a68315ff0993e95252c287e66b63620699e3de9d51f39da809fb9c` |
-| 13 | `theorem` | [imo1960_q1](../../../../../ComputerScience/AlgorithmsInComputerScience/Imo1960Q1.lean/declarations/imo1960-q1.md) | 99 | `result-track:4147433db8014c302a6b45f2d335d1b184ba1e3426c564ca4c0eb56d6073c181` |
+| 1 | `def` | [sumOfSquares](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Imo1960Q1.lean/declarations/sumofsquares.md) | 27 | `declaration-track:81097305e98005d18eb062ef61b54cdc11ea5972cdfa7af591f1037b308404d2` |
+| 2 | `def` | [ProblemPredicate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Imo1960Q1.lean/declarations/problempredicate.md) | 30 | `declaration-track:affbb5aa1332d48b06613c718df3084e6f6441b03218f4d5093cf28745b39cab` |
+| 3 | `def` | [SolutionPredicate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Imo1960Q1.lean/declarations/solutionpredicate.md) | 33 | `declaration-track:ae535b6e534e925ad436fa9ccca4f1fb445be33bbbb53b7e7577a2a1ff9ac36a` |
+| 4 | `theorem` | [not_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Imo1960Q1.lean/declarations/not-zero.md) | 39 | `result-track:7939483ecfd539e4c69db90e2f1de004541a2ccea26913486b4b19314ae93b6b` |
+| 5 | `theorem` | [ge_100](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Imo1960Q1.lean/declarations/ge-100.md) | 43 | `result-track:2a5362e8f954812f2fbd398549d57efe3351bb5515440c3fe9a99de6fb8ca147` |
+| 6 | `theorem` | [lt_1000](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Imo1960Q1.lean/declarations/lt-1000.md) | 50 | `result-track:6e462b0472f618f21710250e06396ab1d6009d4940548a3d0b64b9e0562832f8` |
+| 7 | `def` | [SearchUpTo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Imo1960Q1.lean/declarations/searchupto.md) | 60 | `declaration-track:11b562a9badc65a318c31fb988f7a9891a84f688a2596fd1ef662abcf2490e7c` |
+| 8 | `theorem` | [searchUpTo_start](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Imo1960Q1.lean/declarations/searchupto-start.md) | 63 | `result-track:24f592c8e80937997fa2c6b517f9a1e5990a942d4cdb706f3224271ae3bd9da4` |
+| 9 | `theorem` | [searchUpTo_step](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Imo1960Q1.lean/declarations/searchupto-step.md) | 66 | `result-track:5a81b1849312963814dfdd852edab6510f392a5ad7a20c9df8e96a12ea96977b` |
+| 10 | `theorem` | [searchUpTo_end](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Imo1960Q1.lean/declarations/searchupto-end.md) | 77 | `result-track:81ccf88aeec70e9e6b88746bf8bb54cd3fe63e22dc0452e27083a1829c07a5b1` |
+| 11 | `theorem` | [right_direction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Imo1960Q1.lean/declarations/right-direction.md) | 81 | `result-track:470530cc3ebcb2480babacdde4e969d805d2314300218acb1cd8ea4088d1d9ec` |
+| 12 | `theorem` | [left_direction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Imo1960Q1.lean/declarations/left-direction.md) | 92 | `result-track:51f755a333a68315ff0993e95252c287e66b63620699e3de9d51f39da809fb9c` |
+| 13 | `theorem` | [imo1960_q1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Imo1960Q1.lean/declarations/imo1960-q1.md) | 99 | `result-track:4147433db8014c302a6b45f2d335d1b184ba1e3426c564ca4c0eb56d6073c181` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

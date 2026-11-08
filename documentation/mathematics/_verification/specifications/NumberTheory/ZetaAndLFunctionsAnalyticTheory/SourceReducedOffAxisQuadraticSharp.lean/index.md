@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceReducedOffAxisQuadraticSharp.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceReducedOffAxisQuadraticSharp.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceReducedOffAxisQuadraticSharp.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceReducedOffAxisQuadraticSharp.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actualReducedZeroEnvelope_le_at_radius](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceReducedOffAxisQuadraticSharp.lean/declarations/actualreducedzeroenvelope-le-at-radius.md) | 17 | `result-track:c944ad63558da7aed46cf3c156f9adcb20d3ef4b4874088ec2b2c09e64d7c02b` |
-| 2 | `theorem` | [quadratic_tail_of_reduced_offAxis_lower](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceReducedOffAxisQuadraticSharp.lean/declarations/quadratic-tail-of-reduced-offaxis-lower.md) | 28 | `result-track:aa41707f34e12bc63444f9edb5c12a274dfb1dd8536b62dba4ff2c84fd80c8ea` |
-| 3 | `theorem` | [all_real_sharp_lower_of_reduced_offAxis_lower](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceReducedOffAxisQuadraticSharp.lean/declarations/all-real-sharp-lower-of-reduced-offaxis-lower.md) | 47 | `result-track:f1b27c37e1a93e4e638ca4d44e1dade68a0c7cc84541aedfe7a7f1653ca6d116` |
-| 4 | `theorem` | [estimate_sharp_of_reduced_offAxis_lower](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceReducedOffAxisQuadraticSharp.lean/declarations/estimate-sharp-of-reduced-offaxis-lower.md) | 61 | `result-track:66710bd89eebe83eb810a3fe3f4249552b34cda126da01857549062735166a50` |
+| 1 | `theorem` | [actualReducedZeroEnvelope_le_at_radius](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceReducedOffAxisQuadraticSharp.lean/declarations/actualreducedzeroenvelope-le-at-radius.md) | 17 | `result-track:c944ad63558da7aed46cf3c156f9adcb20d3ef4b4874088ec2b2c09e64d7c02b` |
+| 2 | `theorem` | [quadratic_tail_of_reduced_offAxis_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceReducedOffAxisQuadraticSharp.lean/declarations/quadratic-tail-of-reduced-offaxis-lower.md) | 28 | `result-track:aa41707f34e12bc63444f9edb5c12a274dfb1dd8536b62dba4ff2c84fd80c8ea` |
+| 3 | `theorem` | [all_real_sharp_lower_of_reduced_offAxis_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceReducedOffAxisQuadraticSharp.lean/declarations/all-real-sharp-lower-of-reduced-offaxis-lower.md) | 47 | `result-track:f1b27c37e1a93e4e638ca4d44e1dade68a0c7cc84541aedfe7a7f1653ca6d116` |
+| 4 | `theorem` | [estimate_sharp_of_reduced_offAxis_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceReducedOffAxisQuadraticSharp.lean/declarations/estimate-sharp-of-reduced-offaxis-lower.md) | 61 | `result-track:66710bd89eebe83eb810a3fe3f4249552b34cda126da01857549062735166a50` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

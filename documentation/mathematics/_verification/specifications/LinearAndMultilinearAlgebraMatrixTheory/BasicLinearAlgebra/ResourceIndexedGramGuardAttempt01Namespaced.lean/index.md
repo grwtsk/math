@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ResourceIndexedGramGuardAttempt01Namespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ResourceIndexedGramGuardAttempt01Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ResourceIndexedGramGuardAttempt01Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ResourceIndexedGramGuardAttempt01Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [matrix_posSemidef_of_resource_indexed_gram_precision](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ResourceIndexedGramGuardAttempt01Namespaced.lean/declarations/matrix-possemidef-of-resource-indexed-gram-precision.md) | 22 | `result-track:8c27befe4d0b5141b9ff2688481473850e1c498c2012f3a724667e9c2c6dde3b` |
+| 1 | `theorem` | [matrix_posSemidef_of_resource_indexed_gram_precision](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ResourceIndexedGramGuardAttempt01Namespaced.lean/declarations/matrix-possemidef-of-resource-indexed-gram-precision.md) | 22 | `result-track:8c27befe4d0b5141b9ff2688481473850e1c498c2012f3a724667e9c2c6dde3b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

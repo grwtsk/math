@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SuperconnectionTracePackage.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SuperconnectionTracePackage.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SuperconnectionTracePackage.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SuperconnectionTracePackage.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [superconnection_trace_formula_if_supplied](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SuperconnectionTracePackage.lean/declarations/superconnection-trace-formula-if-supplied.md) | 19 | `result-track:b17b7541ee2f98c212813d57ea714fbdabc401e6296c31a75eb429f6ed914c2d` |
-| 2 | `theorem` | [superconnection_family_index_compatible](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SuperconnectionTracePackage.lean/declarations/superconnection-family-index-compatible.md) | 24 | `result-track:1603ec1606cb873e06408004f1abf6c68c920d83621a850a521952b12d2a54f7` |
+| 1 | `theorem` | [superconnection_trace_formula_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SuperconnectionTracePackage.lean/declarations/superconnection-trace-formula-if-supplied.md) | 19 | `result-track:b17b7541ee2f98c212813d57ea714fbdabc401e6296c31a75eb429f6ed914c2d` |
+| 2 | `theorem` | [superconnection_family_index_compatible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SuperconnectionTracePackage.lean/declarations/superconnection-family-index-compatible.md) | 24 | `result-track:1603ec1606cb873e06408004f1abf6c68c920d83621a850a521952b12d2a54f7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

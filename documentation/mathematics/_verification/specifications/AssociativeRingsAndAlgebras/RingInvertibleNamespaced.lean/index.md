@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/RingInvertibleNamespaced.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/RingInvertibleNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingInvertibleNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingInvertibleNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [invertibleNeg](../../../../AssociativeRingsAndAlgebras/RingInvertibleNamespaced.lean/declarations/invertibleneg.md) | 26 | `declaration-track:4a8fd37dde067d074e6a5120e27a8c3add0a928204b63aee59f63a8e20dfad23` |
-| 2 | `theorem` | [invOf_neg](../../../../AssociativeRingsAndAlgebras/RingInvertibleNamespaced.lean/declarations/invof-neg.md) | 30 | `result-track:fd6bb61dcf1fcfbfca6657c6e6417313c03f8a723c9b2f43f78d127e55c350d5` |
-| 3 | `theorem` | [one_sub_invOf_two](../../../../AssociativeRingsAndAlgebras/RingInvertibleNamespaced.lean/declarations/one-sub-invof-two.md) | 35 | `result-track:2e11d017519532962ab26d0563213aaecc6fc65e8c3cb926a9017bdbf8cf4955` |
-| 4 | `theorem` | [invOf_two_add_invOf_two](../../../../AssociativeRingsAndAlgebras/RingInvertibleNamespaced.lean/declarations/invof-two-add-invof-two.md) | 40 | `result-track:058d6ce074b87afee77783dbf0876728c8eac44754a82e3f17c19dbdd7b46d6a` |
-| 5 | `theorem` | [pos_of_invertible_cast](../../../../AssociativeRingsAndAlgebras/RingInvertibleNamespaced.lean/declarations/pos-of-invertible-cast.md) | 43 | `result-track:b1615a02ec0912bbaef10f8794286a61ebb9e3d13a61f01ef23079322a91b67b` |
-| 6 | `theorem` | [invOf_add_invOf](../../../../AssociativeRingsAndAlgebras/RingInvertibleNamespaced.lean/declarations/invof-add-invof.md) | 47 | `result-track:aae4bdebff79ef3991abac1053f50d0627e8f34a29b2d80556339fa9f18b383b` |
-| 7 | `theorem` | [invOf_sub_invOf](../../../../AssociativeRingsAndAlgebras/RingInvertibleNamespaced.lean/declarations/invof-sub-invof.md) | 52 | `result-track:3e229d5dafee1b4fc73854449e42f68aebfd88843e83a42f924c19564526b1a0` |
-| 8 | `theorem` | [Ring.inverse_add_inverse](../../../../AssociativeRingsAndAlgebras/RingInvertibleNamespaced.lean/declarations/ring-inverse-add-inverse.md) | 57 | `result-track:5948f1c517ce8642fad1e58a910af075ec685cf440bcbb4a5af82a4bac45a0ae` |
-| 9 | `theorem` | [Ring.inverse_sub_inverse](../../../../AssociativeRingsAndAlgebras/RingInvertibleNamespaced.lean/declarations/ring-inverse-sub-inverse.md) | 68 | `result-track:c87b27a94f7dfe3f4100f4a4780c72178669c79d3213193cb019f06d5a128961` |
+| 1 | `def` | [invertibleNeg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingInvertibleNamespaced.lean/declarations/invertibleneg.md) | 26 | `declaration-track:4a8fd37dde067d074e6a5120e27a8c3add0a928204b63aee59f63a8e20dfad23` |
+| 2 | `theorem` | [invOf_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingInvertibleNamespaced.lean/declarations/invof-neg.md) | 30 | `result-track:fd6bb61dcf1fcfbfca6657c6e6417313c03f8a723c9b2f43f78d127e55c350d5` |
+| 3 | `theorem` | [one_sub_invOf_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingInvertibleNamespaced.lean/declarations/one-sub-invof-two.md) | 35 | `result-track:2e11d017519532962ab26d0563213aaecc6fc65e8c3cb926a9017bdbf8cf4955` |
+| 4 | `theorem` | [invOf_two_add_invOf_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingInvertibleNamespaced.lean/declarations/invof-two-add-invof-two.md) | 40 | `result-track:058d6ce074b87afee77783dbf0876728c8eac44754a82e3f17c19dbdd7b46d6a` |
+| 5 | `theorem` | [pos_of_invertible_cast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingInvertibleNamespaced.lean/declarations/pos-of-invertible-cast.md) | 43 | `result-track:b1615a02ec0912bbaef10f8794286a61ebb9e3d13a61f01ef23079322a91b67b` |
+| 6 | `theorem` | [invOf_add_invOf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingInvertibleNamespaced.lean/declarations/invof-add-invof.md) | 47 | `result-track:aae4bdebff79ef3991abac1053f50d0627e8f34a29b2d80556339fa9f18b383b` |
+| 7 | `theorem` | [invOf_sub_invOf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingInvertibleNamespaced.lean/declarations/invof-sub-invof.md) | 52 | `result-track:3e229d5dafee1b4fc73854449e42f68aebfd88843e83a42f924c19564526b1a0` |
+| 8 | `theorem` | [Ring.inverse_add_inverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingInvertibleNamespaced.lean/declarations/ring-inverse-add-inverse.md) | 57 | `result-track:5948f1c517ce8642fad1e58a910af075ec685cf440bcbb4a5af82a4bac45a0ae` |
+| 9 | `theorem` | [Ring.inverse_sub_inverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingInvertibleNamespaced.lean/declarations/ring-inverse-sub-inverse.md) | 68 | `result-track:c87b27a94f7dfe3f4100f4a4780c72178669c79d3213193cb019f06d5a128961` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

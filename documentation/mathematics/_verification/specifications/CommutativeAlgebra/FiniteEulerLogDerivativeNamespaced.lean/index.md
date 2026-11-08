@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/FiniteEulerLogDerivativeNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/FiniteEulerLogDerivativeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiniteEulerLogDerivativeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiniteEulerLogDerivativeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [finite_geometric_euler_factor_mul](../../../../CommutativeAlgebra/FiniteEulerLogDerivativeNamespaced.lean/declarations/finite-geometric-euler-factor-mul.md) | 30 | `result-track:eb8d9783e1ed7342cfeff82c0a4cdb3f7a947bc3b4bb546c0751d9397ec319ae` |
-| 2 | `theorem` | [finite_euler_factor_inverse_truncation_identity](../../../../CommutativeAlgebra/FiniteEulerLogDerivativeNamespaced.lean/declarations/finite-euler-factor-inverse-truncation-identity.md) | 38 | `result-track:b716f7c1a60251590aba52a004c08729c725ab4a5798c9fa45c687cf39211255` |
+| 1 | `theorem` | [finite_geometric_euler_factor_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiniteEulerLogDerivativeNamespaced.lean/declarations/finite-geometric-euler-factor-mul.md) | 30 | `result-track:eb8d9783e1ed7342cfeff82c0a4cdb3f7a947bc3b4bb546c0751d9397ec319ae` |
+| 2 | `theorem` | [finite_euler_factor_inverse_truncation_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiniteEulerLogDerivativeNamespaced.lean/declarations/finite-euler-factor-inverse-truncation-identity.md) | 38 | `result-track:b716f7c1a60251590aba52a004c08729c725ab4a5798c9fa45c687cf39211255` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

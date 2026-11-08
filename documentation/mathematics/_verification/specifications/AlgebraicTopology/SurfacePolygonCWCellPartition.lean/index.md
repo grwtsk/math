@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/SurfacePolygonCWCellPartition.lean/index.md) · [Full source](../../../../AlgebraicTopology/SurfacePolygonCWCellPartition.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonCWCellPartition.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonCWCellPartition.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWPartition`](../../../../AlgebraicTopology/SurfacePolygonCWPartition.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWPartition`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonCWPartition.lean/index.md) — import line 8; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [every_boundary_point_positive](../../../../AlgebraicTopology/SurfacePolygonCWCellPartition.lean/declarations/every-boundary-point-positive.md) | 34 | `result-track:78590a4293e3d938b7965d087aca53ab9998783fedeabe1e75c8980e56ae918c` |
-| 2 | `theorem` | [positive_endpoint_eq_vertex](../../../../AlgebraicTopology/SurfacePolygonCWCellPartition.lean/declarations/positive-endpoint-eq-vertex.md) | 43 | `result-track:4e31169287bef6b2ed6ddedcb5d72ca763ebe712f8b5d873869a985ba54cf432` |
-| 3 | `theorem` | [vertex_or_positive_interior](../../../../AlgebraicTopology/SurfacePolygonCWCellPartition.lean/declarations/vertex-or-positive-interior.md) | 55 | `result-track:e12e9662ecdef0272864fe459dff798de8a8f3966fe9b690411ee9c07730c1b3` |
-| 4 | `theorem` | [positive_interior_not_vertex](../../../../AlgebraicTopology/SurfacePolygonCWCellPartition.lean/declarations/positive-interior-not-vertex.md) | 66 | `result-track:4374bc228d4385585f293a99f7cdf4838a7655ac186ec43c749d160894f9343a` |
-| 5 | `theorem` | [positive_interior_unique](../../../../AlgebraicTopology/SurfacePolygonCWCellPartition.lean/declarations/positive-interior-unique.md) | 74 | `result-track:ea8e708b116a6331d3e8b4e3a397f8614881d81fb8a74810b00382b3e2d9fa98` |
+| 1 | `theorem` | [every_boundary_point_positive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonCWCellPartition.lean/declarations/every-boundary-point-positive.md) | 34 | `result-track:78590a4293e3d938b7965d087aca53ab9998783fedeabe1e75c8980e56ae918c` |
+| 2 | `theorem` | [positive_endpoint_eq_vertex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonCWCellPartition.lean/declarations/positive-endpoint-eq-vertex.md) | 43 | `result-track:4e31169287bef6b2ed6ddedcb5d72ca763ebe712f8b5d873869a985ba54cf432` |
+| 3 | `theorem` | [vertex_or_positive_interior](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonCWCellPartition.lean/declarations/vertex-or-positive-interior.md) | 55 | `result-track:e12e9662ecdef0272864fe459dff798de8a8f3966fe9b690411ee9c07730c1b3` |
+| 4 | `theorem` | [positive_interior_not_vertex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonCWCellPartition.lean/declarations/positive-interior-not-vertex.md) | 66 | `result-track:4374bc228d4385585f293a99f7cdf4838a7655ac186ec43c749d160894f9343a` |
+| 5 | `theorem` | [positive_interior_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonCWCellPartition.lean/declarations/positive-interior-unique.md) | 74 | `result-track:ea8e708b116a6331d3e8b4e3a397f8614881d81fb8a74810b00382b3e2d9fa98` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

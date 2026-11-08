@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/TailAugmentation.lean/index.md) · [Full source](../../../../MeasureAndIntegration/TailAugmentation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TailAugmentation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TailAugmentation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.GreenKernel.UnitInterval`](../../../../ProbabilityTheoryAndStochasticProcesses/UnitInterval.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.Analysis.GreenKernel.UnitInterval`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/UnitInterval.lean/index.md) — import line 7; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,27 +57,27 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [tailFeature](../../../../MeasureAndIntegration/TailAugmentation.lean/declarations/tailfeature.md) | 20 | `declaration-track:025be938f20dd1bc4b53dcc2ffa33ca6b2e52b4d98704f088f980207c73c194a` |
-| 2 | `def` | [completeKernel](../../../../MeasureAndIntegration/TailAugmentation.lean/declarations/completekernel.md) | 22 | `declaration-track:c6052bfa33f84256115e897e30a02da2a0ab3de5cc27d1362911d0961661a1c3` |
-| 3 | `def` | [atomicTail](../../../../MeasureAndIntegration/TailAugmentation.lean/declarations/atomictail.md) | 24 | `declaration-track:e787ec8f92af54accc7c6e84049ca949b1001af0000b56317979206a798f9f37` |
-| 4 | `def` | [atomicEnergy](../../../../MeasureAndIntegration/TailAugmentation.lean/declarations/atomicenergy.md) | 27 | `declaration-track:9becbd1e2793876cbbc2fabc587281e5936fadea22a3f1779e04d547b18faa53` |
-| 5 | `theorem` | [completeKernel_eq_augmented](../../../../MeasureAndIntegration/TailAugmentation.lean/declarations/completekernel-eq-augmented.md) | 30 | `result-track:e62fac4e4d0bdb74278f628f2602f401cc11b47d018d7ed9ca4258afea04c0c0` |
-| 6 | `theorem` | [completeKernel_symm](../../../../MeasureAndIntegration/TailAugmentation.lean/declarations/completekernel-symm.md) | 35 | `result-track:f01fb98206922f08d26f710a1c665fbaf9a79bb6ed16442a5766d97f85650d49` |
-| 7 | `theorem` | [completeKernel_endpoint](../../../../MeasureAndIntegration/TailAugmentation.lean/declarations/completekernel-endpoint.md) | 38 | `result-track:e2368e738d6006d36aa359426a07590af30d9f6644c25ffbd35759cc1e1f3459` |
-| 8 | `theorem` | [tailFeature_nonneg](../../../../MeasureAndIntegration/TailAugmentation.lean/declarations/tailfeature-nonneg.md) | 41 | `result-track:0b21214dcbf96d616a6478a4c9bc42201bf795f2780144aa2ffe1a1942062993` |
-| 9 | `theorem` | [tailFeature_le_one](../../../../MeasureAndIntegration/TailAugmentation.lean/declarations/tailfeature-le-one.md) | 44 | `result-track:0ecab77c36527e16c82a29b8eee2586f8094e682190a2c09d0e9e69f1ec49744` |
-| 10 | `theorem` | [tailFeature_mul](../../../../MeasureAndIntegration/TailAugmentation.lean/declarations/tailfeature-mul.md) | 47 | `result-track:4af8edef576af5d2629c93bc45044f981b0eba23188910467483624c196146b4` |
-| 11 | `theorem` | [tailFeature_integrable](../../../../MeasureAndIntegration/TailAugmentation.lean/declarations/tailfeature-integrable.md) | 52 | `result-track:c4b3bf8de7f911d70a2a8fec4ba484030941a1cc638a00b9288e7ea45bbd8032` |
-| 12 | `theorem` | [integral_tailFeature](../../../../MeasureAndIntegration/TailAugmentation.lean/declarations/integral-tailfeature.md) | 55 | `result-track:c5269401b1fbf1589bcefc6e5b3ebb9b280a3254b8354b3321e4c675d8d89bf1` |
-| 13 | `theorem` | [tailFeature_product_integrable](../../../../MeasureAndIntegration/TailAugmentation.lean/declarations/tailfeature-product-integrable.md) | 61 | `result-track:49b7abe1a2eaf1f973c10dc0992118991ebea0e7a4f14543810d62b338fd2a77` |
-| 14 | `theorem` | [integral_tailFeature_product](../../../../MeasureAndIntegration/TailAugmentation.lean/declarations/integral-tailfeature-product.md) | 66 | `result-track:dd8c8cb1c2a408556a26a85ba7951d19209789c674414bc2bd8e2652f4f88384` |
-| 15 | `theorem` | [atomicTail_integrable](../../../../MeasureAndIntegration/TailAugmentation.lean/declarations/atomictail-integrable.md) | 72 | `result-track:8c3fb49dd667771c17c796a65913a2dac5fbb67f72f7ed6dc24b64646e0de4c9` |
-| 16 | `theorem` | [atomic_square_expansion](../../../../MeasureAndIntegration/TailAugmentation.lean/declarations/atomic-square-expansion.md) | 76 | `result-track:ec03d3ea3479d3020687adc9234877e978cc2b1918049eb7ac0d645a4cd8323d` |
-| 17 | `theorem` | [atomicTail_square_integrable](../../../../MeasureAndIntegration/TailAugmentation.lean/declarations/atomictail-square-integrable.md) | 89 | `result-track:60a66b71f7824e35076627d7a04e879a215940b11a8fbd28ac9f066d482a38a8` |
-| 18 | `theorem` | [integral_atomicTail_sq](../../../../MeasureAndIntegration/TailAugmentation.lean/declarations/integral-atomictail-sq.md) | 95 | `result-track:11fce02be0b3cd29a42cbaa5a52acb1907a6a799a9a1d8b1b07d3c95daecdba4` |
-| 19 | `theorem` | [atomicEnergy_eq_gram](../../../../MeasureAndIntegration/TailAugmentation.lean/declarations/atomicenergy-eq-gram.md) | 114 | `result-track:7e5a488e16ea14f10739281ba5b37b081d4c6480a6066fc4b5dceca723c3e767` |
-| 20 | `theorem` | [atomicEnergy_nonneg](../../../../MeasureAndIntegration/TailAugmentation.lean/declarations/atomicenergy-nonneg.md) | 124 | `result-track:4d6235eacc1eef5bcdb49b73a056844c1343d2f6b54b2eb375e6b542663eeac9` |
-| 21 | `theorem` | [positive_atomicEnergy_le](../../../../MeasureAndIntegration/TailAugmentation.lean/declarations/positive-atomicenergy-le.md) | 129 | `result-track:e006aed9f5c693735bb78fecaa6786582e140e2c709f9e4c2da878ada3b6338d` |
+| 1 | `def` | [tailFeature](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TailAugmentation.lean/declarations/tailfeature.md) | 20 | `declaration-track:025be938f20dd1bc4b53dcc2ffa33ca6b2e52b4d98704f088f980207c73c194a` |
+| 2 | `def` | [completeKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TailAugmentation.lean/declarations/completekernel.md) | 22 | `declaration-track:c6052bfa33f84256115e897e30a02da2a0ab3de5cc27d1362911d0961661a1c3` |
+| 3 | `def` | [atomicTail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TailAugmentation.lean/declarations/atomictail.md) | 24 | `declaration-track:e787ec8f92af54accc7c6e84049ca949b1001af0000b56317979206a798f9f37` |
+| 4 | `def` | [atomicEnergy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TailAugmentation.lean/declarations/atomicenergy.md) | 27 | `declaration-track:9becbd1e2793876cbbc2fabc587281e5936fadea22a3f1779e04d547b18faa53` |
+| 5 | `theorem` | [completeKernel_eq_augmented](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TailAugmentation.lean/declarations/completekernel-eq-augmented.md) | 30 | `result-track:e62fac4e4d0bdb74278f628f2602f401cc11b47d018d7ed9ca4258afea04c0c0` |
+| 6 | `theorem` | [completeKernel_symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TailAugmentation.lean/declarations/completekernel-symm.md) | 35 | `result-track:f01fb98206922f08d26f710a1c665fbaf9a79bb6ed16442a5766d97f85650d49` |
+| 7 | `theorem` | [completeKernel_endpoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TailAugmentation.lean/declarations/completekernel-endpoint.md) | 38 | `result-track:e2368e738d6006d36aa359426a07590af30d9f6644c25ffbd35759cc1e1f3459` |
+| 8 | `theorem` | [tailFeature_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TailAugmentation.lean/declarations/tailfeature-nonneg.md) | 41 | `result-track:0b21214dcbf96d616a6478a4c9bc42201bf795f2780144aa2ffe1a1942062993` |
+| 9 | `theorem` | [tailFeature_le_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TailAugmentation.lean/declarations/tailfeature-le-one.md) | 44 | `result-track:0ecab77c36527e16c82a29b8eee2586f8094e682190a2c09d0e9e69f1ec49744` |
+| 10 | `theorem` | [tailFeature_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TailAugmentation.lean/declarations/tailfeature-mul.md) | 47 | `result-track:4af8edef576af5d2629c93bc45044f981b0eba23188910467483624c196146b4` |
+| 11 | `theorem` | [tailFeature_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TailAugmentation.lean/declarations/tailfeature-integrable.md) | 52 | `result-track:c4b3bf8de7f911d70a2a8fec4ba484030941a1cc638a00b9288e7ea45bbd8032` |
+| 12 | `theorem` | [integral_tailFeature](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TailAugmentation.lean/declarations/integral-tailfeature.md) | 55 | `result-track:c5269401b1fbf1589bcefc6e5b3ebb9b280a3254b8354b3321e4c675d8d89bf1` |
+| 13 | `theorem` | [tailFeature_product_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TailAugmentation.lean/declarations/tailfeature-product-integrable.md) | 61 | `result-track:49b7abe1a2eaf1f973c10dc0992118991ebea0e7a4f14543810d62b338fd2a77` |
+| 14 | `theorem` | [integral_tailFeature_product](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TailAugmentation.lean/declarations/integral-tailfeature-product.md) | 66 | `result-track:dd8c8cb1c2a408556a26a85ba7951d19209789c674414bc2bd8e2652f4f88384` |
+| 15 | `theorem` | [atomicTail_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TailAugmentation.lean/declarations/atomictail-integrable.md) | 72 | `result-track:8c3fb49dd667771c17c796a65913a2dac5fbb67f72f7ed6dc24b64646e0de4c9` |
+| 16 | `theorem` | [atomic_square_expansion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TailAugmentation.lean/declarations/atomic-square-expansion.md) | 76 | `result-track:ec03d3ea3479d3020687adc9234877e978cc2b1918049eb7ac0d645a4cd8323d` |
+| 17 | `theorem` | [atomicTail_square_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TailAugmentation.lean/declarations/atomictail-square-integrable.md) | 89 | `result-track:60a66b71f7824e35076627d7a04e879a215940b11a8fbd28ac9f066d482a38a8` |
+| 18 | `theorem` | [integral_atomicTail_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TailAugmentation.lean/declarations/integral-atomictail-sq.md) | 95 | `result-track:11fce02be0b3cd29a42cbaa5a52acb1907a6a799a9a1d8b1b07d3c95daecdba4` |
+| 19 | `theorem` | [atomicEnergy_eq_gram](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TailAugmentation.lean/declarations/atomicenergy-eq-gram.md) | 114 | `result-track:7e5a488e16ea14f10739281ba5b37b081d4c6480a6066fc4b5dceca723c3e767` |
+| 20 | `theorem` | [atomicEnergy_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TailAugmentation.lean/declarations/atomicenergy-nonneg.md) | 124 | `result-track:4d6235eacc1eef5bcdb49b73a056844c1343d2f6b54b2eb375e6b542663eeac9` |
+| 21 | `theorem` | [positive_atomicEnergy_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TailAugmentation.lean/declarations/positive-atomicenergy-le.md) | 129 | `result-track:e006aed9f5c693735bb78fecaa6786582e140e2c709f9e4c2da878ada3b6338d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

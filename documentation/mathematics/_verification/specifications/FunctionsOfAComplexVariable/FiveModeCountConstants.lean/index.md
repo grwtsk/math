@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/FiveModeCountConstants.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/FiveModeCountConstants.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FiveModeCountConstants.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FiveModeCountConstants.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [cutoff_log_lt_twenty_nine](../../../../FunctionsOfAComplexVariable/FiveModeCountConstants.lean/declarations/cutoff-log-lt-twenty-nine.md) | 15 | `result-track:defb973a64f50f03f219fef0d81854de22d414dc399549240d368ad2c8968317` |
-| 2 | `theorem` | [cutoff_log_gt_one](../../../../FunctionsOfAComplexVariable/FiveModeCountConstants.lean/declarations/cutoff-log-gt-one.md) | 24 | `result-track:a7b917c8b32638b76fe9c762f08e005ca9aa2bac68c724ad56614f756f59ab62` |
-| 3 | `theorem` | [cutoff_loglog_lt_four](../../../../FunctionsOfAComplexVariable/FiveModeCountConstants.lean/declarations/cutoff-loglog-lt-four.md) | 28 | `result-track:e1437802659113746bf378682f548a6c5f027e88d0be6b4c5207870e43eeec2c` |
-| 4 | `theorem` | [corrected_error_cutoff_lt_eight](../../../../FunctionsOfAComplexVariable/FiveModeCountConstants.lean/declarations/corrected-error-cutoff-lt-eight.md) | 37 | `result-track:26c20fa017ed7474ca74dc046eac5bc18387b4c17c7300c43b59cd56501c475d` |
-| 5 | `theorem` | [count_envelope_cutoff_le_rational_cap](../../../../FunctionsOfAComplexVariable/FiveModeCountConstants.lean/declarations/count-envelope-cutoff-le-rational-cap.md) | 42 | `result-track:df44cddb17af6346ee5678d6fa7710649d409e70bbee9abc111c362124ca4f83` |
+| 1 | `theorem` | [cutoff_log_lt_twenty_nine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FiveModeCountConstants.lean/declarations/cutoff-log-lt-twenty-nine.md) | 15 | `result-track:defb973a64f50f03f219fef0d81854de22d414dc399549240d368ad2c8968317` |
+| 2 | `theorem` | [cutoff_log_gt_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FiveModeCountConstants.lean/declarations/cutoff-log-gt-one.md) | 24 | `result-track:a7b917c8b32638b76fe9c762f08e005ca9aa2bac68c724ad56614f756f59ab62` |
+| 3 | `theorem` | [cutoff_loglog_lt_four](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FiveModeCountConstants.lean/declarations/cutoff-loglog-lt-four.md) | 28 | `result-track:e1437802659113746bf378682f548a6c5f027e88d0be6b4c5207870e43eeec2c` |
+| 4 | `theorem` | [corrected_error_cutoff_lt_eight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FiveModeCountConstants.lean/declarations/corrected-error-cutoff-lt-eight.md) | 37 | `result-track:26c20fa017ed7474ca74dc046eac5bc18387b4c17c7300c43b59cd56501c475d` |
+| 5 | `theorem` | [count_envelope_cutoff_le_rational_cap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FiveModeCountConstants.lean/declarations/count-envelope-cutoff-le-rational-cap.md) | 42 | `result-track:df44cddb17af6346ee5678d6fa7710649d409e70bbee9abc111c362124ca4f83` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

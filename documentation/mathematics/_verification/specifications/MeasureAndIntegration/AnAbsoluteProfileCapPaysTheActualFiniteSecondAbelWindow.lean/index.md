@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/AnAbsoluteProfileCapPaysTheActualFiniteSecondAbelWindow.lean/index.md) · [Full source](../../../../MeasureAndIntegration/AnAbsoluteProfileCapPaysTheActualFiniteSecondAbelWindow.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AnAbsoluteProfileCapPaysTheActualFiniteSecondAbelWindow.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AnAbsoluteProfileCapPaysTheActualFiniteSecondAbelWindow.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_kernel_absolute_cap](../../../../MeasureAndIntegration/AnAbsoluteProfileCapPaysTheActualFiniteSecondAbelWindow.lean/declarations/actual-kernel-absolute-cap.md) | 26 | `result-track:e73b8f18b300ab35f79dbd795e151142bac8d4487eadfb0a1efba1df1403f4af` |
-| 2 | `theorem` | [absolute_cap_pays_actual_window](../../../../MeasureAndIntegration/AnAbsoluteProfileCapPaysTheActualFiniteSecondAbelWindow.lean/declarations/absolute-cap-pays-actual-window.md) | 48 | `result-track:97f5b256e4e226d85d522b803157e6077b61f206a1d9c4cfa1fa14dd0275c9f7` |
-| 3 | `theorem` | [continuous_profile_has_integrable_actual_window](../../../../MeasureAndIntegration/AnAbsoluteProfileCapPaysTheActualFiniteSecondAbelWindow.lean/declarations/continuous-profile-has-integrable-actual-window.md) | 66 | `result-track:968c7e1ca97c51e5a6971fac67c51282d3142e343ab103b533b4672d0d84c695` |
-| 4 | `theorem` | [actual_log_primitive_continuous](../../../../MeasureAndIntegration/AnAbsoluteProfileCapPaysTheActualFiniteSecondAbelWindow.lean/declarations/actual-log-primitive-continuous.md) | 71 | `result-track:d2813567e20e32aeae5017addb306614a820fbf448158764334bf5f802fa6cc0` |
-| 5 | `theorem` | [actual_log_primitive_has_integrable_window](../../../../MeasureAndIntegration/AnAbsoluteProfileCapPaysTheActualFiniteSecondAbelWindow.lean/declarations/actual-log-primitive-has-integrable-window.md) | 78 | `result-track:52637dcccd1cc72d9968d8edc2e7f1023244f4d83874c3a0475d0d5af9cf9a88` |
-| 6 | `theorem` | [actual_log_primitive_absolute_cap_consumer](../../../../MeasureAndIntegration/AnAbsoluteProfileCapPaysTheActualFiniteSecondAbelWindow.lean/declarations/actual-log-primitive-absolute-cap-consumer.md) | 83 | `result-track:c133e6ec2c493756addd66e25383fdb42d1c3757a262945a8a608dbaff37091a` |
+| 1 | `theorem` | [actual_kernel_absolute_cap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AnAbsoluteProfileCapPaysTheActualFiniteSecondAbelWindow.lean/declarations/actual-kernel-absolute-cap.md) | 26 | `result-track:e73b8f18b300ab35f79dbd795e151142bac8d4487eadfb0a1efba1df1403f4af` |
+| 2 | `theorem` | [absolute_cap_pays_actual_window](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AnAbsoluteProfileCapPaysTheActualFiniteSecondAbelWindow.lean/declarations/absolute-cap-pays-actual-window.md) | 48 | `result-track:97f5b256e4e226d85d522b803157e6077b61f206a1d9c4cfa1fa14dd0275c9f7` |
+| 3 | `theorem` | [continuous_profile_has_integrable_actual_window](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AnAbsoluteProfileCapPaysTheActualFiniteSecondAbelWindow.lean/declarations/continuous-profile-has-integrable-actual-window.md) | 66 | `result-track:968c7e1ca97c51e5a6971fac67c51282d3142e343ab103b533b4672d0d84c695` |
+| 4 | `theorem` | [actual_log_primitive_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AnAbsoluteProfileCapPaysTheActualFiniteSecondAbelWindow.lean/declarations/actual-log-primitive-continuous.md) | 71 | `result-track:d2813567e20e32aeae5017addb306614a820fbf448158764334bf5f802fa6cc0` |
+| 5 | `theorem` | [actual_log_primitive_has_integrable_window](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AnAbsoluteProfileCapPaysTheActualFiniteSecondAbelWindow.lean/declarations/actual-log-primitive-has-integrable-window.md) | 78 | `result-track:52637dcccd1cc72d9968d8edc2e7f1023244f4d83874c3a0475d0d5af9cf9a88` |
+| 6 | `theorem` | [actual_log_primitive_absolute_cap_consumer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AnAbsoluteProfileCapPaysTheActualFiniteSecondAbelWindow.lean/declarations/actual-log-primitive-absolute-cap-consumer.md) | 83 | `result-track:c133e6ec2c493756addd66e25383fdb42d1c3757a262945a8a608dbaff37091a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

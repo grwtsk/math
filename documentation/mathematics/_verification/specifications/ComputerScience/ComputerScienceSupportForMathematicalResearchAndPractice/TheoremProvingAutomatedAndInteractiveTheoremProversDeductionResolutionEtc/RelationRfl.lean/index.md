@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RelationRfl.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RelationRfl.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RelationRfl.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RelationRfl.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `initialize` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RelationRfl.lean/declarations/initialize-source-edition-2.md) | 21 | `declaration-track:b58d2af315fda3019a432b66a92ee75b311254a38360d85c1636f0110f1d0e3f` |
-| 2 | `initialize` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RelationRfl.lean/declarations/initialize.md) | 28 | `declaration-track:32b9786378f6598779f03371b3e194446b159142945286152b0fdb852d987d4d` |
-| 3 | `def` | [_root_.Lean.MVarId.rfl](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RelationRfl.lean/declarations/root-lean-mvarid-rfl.md) | 49 | `declaration-track:e48371fb5b83698513d9551c3ed618c0520f21698357c84ef480db2a9b0188b4` |
-| 4 | `elab_rules` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RelationRfl.lean/declarations/elab-rules.md) | 74 | `declaration-track:616aa171f61413f9eee037904fd40a76eb3829e2c1bb18e308957392dcd43d4e` |
+| 1 | `initialize` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RelationRfl.lean/declarations/initialize-source-edition-2.md) | 21 | `declaration-track:b58d2af315fda3019a432b66a92ee75b311254a38360d85c1636f0110f1d0e3f` |
+| 2 | `initialize` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RelationRfl.lean/declarations/initialize.md) | 28 | `declaration-track:32b9786378f6598779f03371b3e194446b159142945286152b0fdb852d987d4d` |
+| 3 | `def` | [_root_.Lean.MVarId.rfl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RelationRfl.lean/declarations/root-lean-mvarid-rfl.md) | 49 | `declaration-track:e48371fb5b83698513d9551c3ed618c0520f21698357c84ef480db2a9b0188b4` |
+| 4 | `elab_rules` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RelationRfl.lean/declarations/elab-rules.md) | 74 | `declaration-track:616aa171f61413f9eee037904fd40a76eb3829e2c1bb18e308957392dcd43d4e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

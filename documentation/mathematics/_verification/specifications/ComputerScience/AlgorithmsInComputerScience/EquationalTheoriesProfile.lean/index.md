@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/EquationalTheoriesProfile.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/EquationalTheoriesProfile.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EquationalTheoriesProfile.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EquationalTheoriesProfile.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [ImplicationAuthority](../../../../../ComputerScience/AlgorithmsInComputerScience/EquationalTheoriesProfile.lean/declarations/implicationauthority.md) | 7 | `declaration-track:b20b7efb9c2aaf91a36770bc90c5fafb6e2429a9d3a8c84dc16ef0447a4c160f` |
-| 2 | `structure` | [ImplicationRecord](../../../../../ComputerScience/AlgorithmsInComputerScience/EquationalTheoriesProfile.lean/declarations/implicationrecord.md) | 16 | `declaration-track:a77f9dd64ed4479310c721169f26e349bf4003193e30ae0351ba3d7d2542c107` |
-| 3 | `structure` | [EquationalTheoriesProfile](../../../../../ComputerScience/AlgorithmsInComputerScience/EquationalTheoriesProfile.lean/declarations/equationaltheoriesprofile.md) | 24 | `declaration-track:c99c9ac6bf785505e4f1873c5fb135d4d79fc8fd1116e46e09364c68cf1dffec` |
+| 1 | `inductive` | [ImplicationAuthority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EquationalTheoriesProfile.lean/declarations/implicationauthority.md) | 7 | `declaration-track:b20b7efb9c2aaf91a36770bc90c5fafb6e2429a9d3a8c84dc16ef0447a4c160f` |
+| 2 | `structure` | [ImplicationRecord](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EquationalTheoriesProfile.lean/declarations/implicationrecord.md) | 16 | `declaration-track:a77f9dd64ed4479310c721169f26e349bf4003193e30ae0351ba3d7d2542c107` |
+| 3 | `structure` | [EquationalTheoriesProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EquationalTheoriesProfile.lean/declarations/equationaltheoriesprofile.md) | 24 | `declaration-track:c99c9ac6bf785505e4f1873c5fb135d4d79fc8fd1116e46e09364c68cf1dffec` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

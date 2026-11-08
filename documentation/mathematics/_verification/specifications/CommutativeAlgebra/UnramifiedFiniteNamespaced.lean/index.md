@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/UnramifiedFiniteNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/UnramifiedFiniteNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UnramifiedFiniteNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UnramifiedFiniteNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,17 +59,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [iff_exists_tensorProduct](../../../../CommutativeAlgebra/UnramifiedFiniteNamespaced.lean/declarations/iff-exists-tensorproduct.md) | 56 | `result-track:d6402c65ebc0d5f63a9c9571c8265606be4f7a2c279f0426f0ad823bbfa2bcda` |
-| 2 | `lemma` | [finite_of_free_aux](../../../../CommutativeAlgebra/UnramifiedFiniteNamespaced.lean/declarations/finite-of-free-aux.md) | 91 | `result-track:7ffa9529e06d3bdeb3b958f338830f28e170c8e1d9915b3f9a6ffd618fdcc89d` |
-| 3 | `def` | [elem](../../../../CommutativeAlgebra/UnramifiedFiniteNamespaced.lean/declarations/elem.md) | 143 | `declaration-track:852a6b39feda36031eb37af72ee06c72a627c1978e5da1fc07d2143cf6490840` |
-| 4 | `lemma` | [one_tmul_sub_tmul_one_mul_elem](../../../../CommutativeAlgebra/UnramifiedFiniteNamespaced.lean/declarations/one-tmul-sub-tmul-one-mul-elem.md) | 146 | `result-track:76d7f9e90fc5763bce77336b58a843b6c1d6c8bb22801a218e06a22bb48c8322` |
-| 5 | `lemma` | [one_tmul_mul_elem](../../../../CommutativeAlgebra/UnramifiedFiniteNamespaced.lean/declarations/one-tmul-mul-elem.md) | 150 | `result-track:14d46800ca0bc131e420024648cd947ea0484c7dd2f626b895704338b05f04f6` |
-| 6 | `lemma` | [lmul_elem](../../../../CommutativeAlgebra/UnramifiedFiniteNamespaced.lean/declarations/lmul-elem.md) | 154 | `result-track:e2fb466767bfe08446e9a63967586a7b57aac2e67519c98135eaab4bce63b7a2` |
-| 7 | `lemma` | [finite_of_free](../../../../CommutativeAlgebra/UnramifiedFiniteNamespaced.lean/declarations/finite-of-free.md) | 162 | `result-track:23a7cae2edb9961312136e0648d15b3c7cf7d20ae25c73dad75c8011379d95e6` |
-| 8 | `def` | [sec](../../../../CommutativeAlgebra/UnramifiedFiniteNamespaced.lean/declarations/sec.md) | 244 | `declaration-track:36b47db76b229406a751b161b8aed0d35ffbc057499aecc9fc75e3ef11bd75eb` |
-| 9 | `lemma` | [comp_sec](../../../../CommutativeAlgebra/UnramifiedFiniteNamespaced.lean/declarations/comp-sec.md) | 265 | `result-track:2bbfcd5ee77338d4b70503ab2f7ab9c79e8a045f91315a655ac00c3f9d89a890` |
-| 10 | `lemma` | [flat_of_restrictScalars](../../../../CommutativeAlgebra/UnramifiedFiniteNamespaced.lean/declarations/flat-of-restrictscalars.md) | 281 | `result-track:5467349b70e5c92fea64eb7be0258f1a664b3193765e3af03983bcfc2f037721` |
-| 11 | `lemma` | [projective_of_restrictScalars](../../../../CommutativeAlgebra/UnramifiedFiniteNamespaced.lean/declarations/projective-of-restrictscalars.md) | 285 | `result-track:12883d8d1bf3c437d105bb89f86c07d55313c2595b576099d16fdf15cd4c3f4d` |
+| 1 | `theorem` | [iff_exists_tensorProduct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UnramifiedFiniteNamespaced.lean/declarations/iff-exists-tensorproduct.md) | 56 | `result-track:d6402c65ebc0d5f63a9c9571c8265606be4f7a2c279f0426f0ad823bbfa2bcda` |
+| 2 | `lemma` | [finite_of_free_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UnramifiedFiniteNamespaced.lean/declarations/finite-of-free-aux.md) | 91 | `result-track:7ffa9529e06d3bdeb3b958f338830f28e170c8e1d9915b3f9a6ffd618fdcc89d` |
+| 3 | `def` | [elem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UnramifiedFiniteNamespaced.lean/declarations/elem.md) | 143 | `declaration-track:852a6b39feda36031eb37af72ee06c72a627c1978e5da1fc07d2143cf6490840` |
+| 4 | `lemma` | [one_tmul_sub_tmul_one_mul_elem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UnramifiedFiniteNamespaced.lean/declarations/one-tmul-sub-tmul-one-mul-elem.md) | 146 | `result-track:76d7f9e90fc5763bce77336b58a843b6c1d6c8bb22801a218e06a22bb48c8322` |
+| 5 | `lemma` | [one_tmul_mul_elem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UnramifiedFiniteNamespaced.lean/declarations/one-tmul-mul-elem.md) | 150 | `result-track:14d46800ca0bc131e420024648cd947ea0484c7dd2f626b895704338b05f04f6` |
+| 6 | `lemma` | [lmul_elem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UnramifiedFiniteNamespaced.lean/declarations/lmul-elem.md) | 154 | `result-track:e2fb466767bfe08446e9a63967586a7b57aac2e67519c98135eaab4bce63b7a2` |
+| 7 | `lemma` | [finite_of_free](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UnramifiedFiniteNamespaced.lean/declarations/finite-of-free.md) | 162 | `result-track:23a7cae2edb9961312136e0648d15b3c7cf7d20ae25c73dad75c8011379d95e6` |
+| 8 | `def` | [sec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UnramifiedFiniteNamespaced.lean/declarations/sec.md) | 244 | `declaration-track:36b47db76b229406a751b161b8aed0d35ffbc057499aecc9fc75e3ef11bd75eb` |
+| 9 | `lemma` | [comp_sec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UnramifiedFiniteNamespaced.lean/declarations/comp-sec.md) | 265 | `result-track:2bbfcd5ee77338d4b70503ab2f7ab9c79e8a045f91315a655ac00c3f9d89a890` |
+| 10 | `lemma` | [flat_of_restrictScalars](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UnramifiedFiniteNamespaced.lean/declarations/flat-of-restrictscalars.md) | 281 | `result-track:5467349b70e5c92fea64eb7be0258f1a664b3193765e3af03983bcfc2f037721` |
+| 11 | `lemma` | [projective_of_restrictScalars](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UnramifiedFiniteNamespaced.lean/declarations/projective-of-restrictscalars.md) | 285 | `result-track:12883d8d1bf3c437d105bb89f86c07d55313c2595b576099d16fdf15cd4c3f4d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

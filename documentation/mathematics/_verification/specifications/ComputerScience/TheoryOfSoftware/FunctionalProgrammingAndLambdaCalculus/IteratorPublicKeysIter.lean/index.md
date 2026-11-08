@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IteratorPublicKeysIter.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IteratorPublicKeysIter.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IteratorPublicKeysIter.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IteratorPublicKeysIter.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [iter](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IteratorPublicKeysIter.lean/declarations/iter-source-edition-2.md) | 30 | `declaration-track:e18d65d5639e566865a8df055a77ca7e296f854f4c6b047fd170377e244eccc5` |
-| 2 | `def` | [keysIter](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IteratorPublicKeysIter.lean/declarations/keysiter.md) | 45 | `declaration-track:752f3a55f41d2f5f83f10b67dc2c6b7521a4ab5e004a7439ebb1caeb72b5728a` |
-| 3 | `def` | [valuesIter](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IteratorPublicKeysIter.lean/declarations/valuesiter.md) | 60 | `declaration-track:b6787ae356f74411e983ee7e694bbec7c10b2c99a7ff12c3c60d98d58a1c5ab1` |
-| 4 | `def` | [iter](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IteratorPublicKeysIter.lean/declarations/iter.md) | 68 | `declaration-track:b707276e71866f0f032c6849b6ed7267b16a487e1a7e86ef2f177d8c47993a44` |
-| 5 | `def` | [keysIter](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IteratorPublicKeysIter.lean/declarations/keysiter-source-edition-2.md) | 72 | `declaration-track:f45dda695d5e0d0ef0f4b096d7d077f409452a1bfab811ec86129c2dc8003a16` |
-| 6 | `def` | [valuesIter](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IteratorPublicKeysIter.lean/declarations/valuesiter-source-edition-2.md) | 76 | `declaration-track:e2ff17eeb86e2df7542c8a3b948bc72dc27bc34b576ce25f70e642655a6d3b58` |
+| 1 | `def` | [iter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IteratorPublicKeysIter.lean/declarations/iter-source-edition-2.md) | 30 | `declaration-track:e18d65d5639e566865a8df055a77ca7e296f854f4c6b047fd170377e244eccc5` |
+| 2 | `def` | [keysIter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IteratorPublicKeysIter.lean/declarations/keysiter.md) | 45 | `declaration-track:752f3a55f41d2f5f83f10b67dc2c6b7521a4ab5e004a7439ebb1caeb72b5728a` |
+| 3 | `def` | [valuesIter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IteratorPublicKeysIter.lean/declarations/valuesiter.md) | 60 | `declaration-track:b6787ae356f74411e983ee7e694bbec7c10b2c99a7ff12c3c60d98d58a1c5ab1` |
+| 4 | `def` | [iter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IteratorPublicKeysIter.lean/declarations/iter.md) | 68 | `declaration-track:b707276e71866f0f032c6849b6ed7267b16a487e1a7e86ef2f177d8c47993a44` |
+| 5 | `def` | [keysIter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IteratorPublicKeysIter.lean/declarations/keysiter-source-edition-2.md) | 72 | `declaration-track:f45dda695d5e0d0ef0f4b096d7d077f409452a1bfab811ec86129c2dc8003a16` |
+| 6 | `def` | [valuesIter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IteratorPublicKeysIter.lean/declarations/valuesiter-source-edition-2.md) | 76 | `declaration-track:e2ff17eeb86e2df7542c8a3b948bc72dc27bc34b576ce25f70e642655a6d3b58` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

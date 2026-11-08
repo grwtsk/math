@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/TopologyNamespacedTopologicalClassificationHypotheses.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/TopologyNamespacedTopologicalClassificationHypotheses.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TopologyNamespacedTopologicalClassificationHypotheses.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TopologyNamespacedTopologicalClassificationHypotheses.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TopologicalClassificationHypotheses](../../../../../ComputerScience/AlgorithmsInComputerScience/TopologyNamespacedTopologicalClassificationHypotheses.lean/declarations/topologicalclassificationhypotheses.md) | 14 | `declaration-track:a5dc6ed45f13572cab22af171d645a7d899eca9f5767f411bd7057311f2f7944` |
-| 2 | `inductive` | [ThreeManifoldPrimePiece](../../../../../ComputerScience/AlgorithmsInComputerScience/TopologyNamespacedTopologicalClassificationHypotheses.lean/declarations/threemanifoldprimepiece.md) | 20 | `declaration-track:6090d36a9a95d59f549ee37ee517e3438cb7caaa818b0d5e5aa3e9b05fbba241` |
-| 3 | `structure` | [ConnectedSumClassification](../../../../../ComputerScience/AlgorithmsInComputerScience/TopologyNamespacedTopologicalClassificationHypotheses.lean/declarations/connectedsumclassification.md) | 28 | `declaration-track:db2cccd57e1fd7a1b73b5e9862d0e86cb2bd268c3b7d67fc5c6dba03d5c8bfea` |
-| 4 | `theorem` | [topology_classification_under_extinction_hypotheses](../../../../../ComputerScience/AlgorithmsInComputerScience/TopologyNamespacedTopologicalClassificationHypotheses.lean/declarations/topology-classification-under-extinction-hypotheses.md) | 33 | `result-track:53b08cdf498d45c65afab4b582a7f3a422e47ab9cf08809ea4d714d77961a802` |
+| 1 | `structure` | [TopologicalClassificationHypotheses](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TopologyNamespacedTopologicalClassificationHypotheses.lean/declarations/topologicalclassificationhypotheses.md) | 14 | `declaration-track:a5dc6ed45f13572cab22af171d645a7d899eca9f5767f411bd7057311f2f7944` |
+| 2 | `inductive` | [ThreeManifoldPrimePiece](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TopologyNamespacedTopologicalClassificationHypotheses.lean/declarations/threemanifoldprimepiece.md) | 20 | `declaration-track:6090d36a9a95d59f549ee37ee517e3438cb7caaa818b0d5e5aa3e9b05fbba241` |
+| 3 | `structure` | [ConnectedSumClassification](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TopologyNamespacedTopologicalClassificationHypotheses.lean/declarations/connectedsumclassification.md) | 28 | `declaration-track:db2cccd57e1fd7a1b73b5e9862d0e86cb2bd268c3b7d67fc5c6dba03d5c8bfea` |
+| 4 | `theorem` | [topology_classification_under_extinction_hypotheses](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TopologyNamespacedTopologicalClassificationHypotheses.lean/declarations/topology-classification-under-extinction-hypotheses.md) | 33 | `result-track:53b08cdf498d45c65afab4b582a7f3a422e47ab9cf08809ea4d714d77961a802` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

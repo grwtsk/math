@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/QuotientRepresentativesNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/QuotientRepresentativesNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/QuotientRepresentativesNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/QuotientRepresentativesNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [QuotientRepresentativeSystem](../../../../../MathematicalLogicAndFoundations/GeneralLogic/QuotientRepresentativesNamespaced.lean/declarations/quotientrepresentativesystem.md) | 24 | `declaration-track:b34c68d10bcad6416dc8f0278ac36814d5311f9c9c2615e4d847404d7b22c4b0` |
-| 2 | `theorem` | [quotientRepresentatives_require_choice](../../../../../MathematicalLogicAndFoundations/GeneralLogic/QuotientRepresentativesNamespaced.lean/declarations/quotientrepresentatives-require-choice.md) | 30 | `result-track:21f4e755a42246b0dc998b2b4d666a4c4a78a57d8856a4c38767861f0bd60232` |
+| 1 | `structure` | [QuotientRepresentativeSystem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/QuotientRepresentativesNamespaced.lean/declarations/quotientrepresentativesystem.md) | 24 | `declaration-track:b34c68d10bcad6416dc8f0278ac36814d5311f9c9c2615e4d847404d7b22c4b0` |
+| 2 | `theorem` | [quotientRepresentatives_require_choice](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/QuotientRepresentativesNamespaced.lean/declarations/quotientrepresentatives-require-choice.md) | 30 | `result-track:21f4e755a42246b0dc998b2b4d666a4c4a78a57d8856a4c38767861f0bd60232` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

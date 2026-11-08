@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/OrderedConfiguration.lean/index.md) · [Full source](../../../../RealFunctions/OrderedConfiguration.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/OrderedConfiguration.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/OrderedConfiguration.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FiniteZeroConfiguration](../../../../RealFunctions/OrderedConfiguration.lean/declarations/finitezeroconfiguration.md) | 38 | `declaration-track:c6d5737b7f70da85720af3c269cf48d3709cb476b49be6238b62785d406c1209` |
-| 2 | `theorem` | [finite_zero_config_ordered](../../../../RealFunctions/OrderedConfiguration.lean/declarations/finite-zero-config-ordered.md) | 45 | `result-track:486358d317694b01e1e6e6a33fa0fdc9fdaab47e089690107562fe3a3fccfadd` |
+| 1 | `structure` | [FiniteZeroConfiguration](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/OrderedConfiguration.lean/declarations/finitezeroconfiguration.md) | 38 | `declaration-track:c6d5737b7f70da85720af3c269cf48d3709cb476b49be6238b62785d406c1209` |
+| 2 | `theorem` | [finite_zero_config_ordered](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/OrderedConfiguration.lean/declarations/finite-zero-config-ordered.md) | 45 | `result-track:486358d317694b01e1e6e6a33fa0fdc9fdaab47e089690107562fe3a3fccfadd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

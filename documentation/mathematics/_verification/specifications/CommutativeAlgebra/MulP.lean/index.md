@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/MulP.lean/index.md) · [Full source](../../../../CommutativeAlgebra/MulP.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MulP.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MulP.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [wittMulN](../../../../CommutativeAlgebra/MulP.lean/declarations/wittmuln.md) | 40 | `declaration-track:d9b4568cbf0427581019671ad0bafaeab59edcf7bf8392966eb68fc9bf91e9b7` |
-| 2 | `theorem` | [mulN_coeff](../../../../CommutativeAlgebra/MulP.lean/declarations/muln-coeff.md) | 44 | `result-track:28b56c140c456eadcb31700ff6767be535bc67342b4469389d197724d22d9586` |
-| 3 | `theorem` | [mulN_isPoly](../../../../CommutativeAlgebra/MulP.lean/declarations/muln-ispoly.md) | 59 | `result-track:29cfb95619d883caaf41d669a3cd13118f751b2b71a788aab7aced55bebaaad4` |
-| 4 | `theorem` | [bind₁_wittMulN_wittPolynomial](../../../../CommutativeAlgebra/MulP.lean/declarations/bind-wittmuln-wittpolynomial.md) | 63 | `result-track:5fc9d8d3fbaaa61893ea1748d19969437375c5b2cacb97cee90ac81a1873a4cc` |
+| 1 | `def` | [wittMulN](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MulP.lean/declarations/wittmuln.md) | 40 | `declaration-track:d9b4568cbf0427581019671ad0bafaeab59edcf7bf8392966eb68fc9bf91e9b7` |
+| 2 | `theorem` | [mulN_coeff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MulP.lean/declarations/muln-coeff.md) | 44 | `result-track:28b56c140c456eadcb31700ff6767be535bc67342b4469389d197724d22d9586` |
+| 3 | `theorem` | [mulN_isPoly](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MulP.lean/declarations/muln-ispoly.md) | 59 | `result-track:29cfb95619d883caaf41d669a3cd13118f751b2b71a788aab7aced55bebaaad4` |
+| 4 | `theorem` | [bind₁_wittMulN_wittPolynomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MulP.lean/declarations/bind-wittmuln-wittpolynomial.md) | 63 | `result-track:5fc9d8d3fbaaa61893ea1748d19969437375c5b2cacb97cee90ac81a1873a4cc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

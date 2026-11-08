@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../SpecialFunctions/Deligne.lean/index.md) · [Full source](../../../../SpecialFunctions/Deligne.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/Deligne.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/Deligne.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,23 +57,23 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Gammaℝ](../../../../SpecialFunctions/Deligne.lean/declarations/gamma-source-edition-2.md) | 40 | `declaration-track:f82d8c89d3250f67e0604900135edf94ba24af85b6bef88c3c7dd0e1824a79da` |
-| 2 | `lemma` | [Gammaℝ_def](../../../../SpecialFunctions/Deligne.lean/declarations/gamma-def-source-edition-2.md) | 42 | `result-track:e0e1ba898e1a3988ebb38bf7899a647dbb66152398059100c800aa80454c4bcf` |
-| 3 | `def` | [Gammaℂ](../../../../SpecialFunctions/Deligne.lean/declarations/gamma.md) | 48 | `declaration-track:0db628c9d45444c5e0ef438f3ffdfdf75be16aabb769bb9be66a81219958879a` |
-| 4 | `lemma` | [Gammaℂ_def](../../../../SpecialFunctions/Deligne.lean/declarations/gamma-def.md) | 50 | `result-track:6a092d95c3a5e2a609d8c7a409c9d43ada5322158709e29f224400d4ae79bd9e` |
-| 5 | `lemma` | [Gammaℝ_add_two](../../../../SpecialFunctions/Deligne.lean/declarations/gamma-add-two.md) | 52 | `result-track:7fd908b0fcea1707d80aeb6fa029c6e4c459f100acd870b2d22d71435879e79b` |
-| 6 | `lemma` | [Gammaℂ_add_one](../../../../SpecialFunctions/Deligne.lean/declarations/gamma-add-one.md) | 59 | `result-track:bc435ed23a52595d6105401694d421422ecc0552823284721046cfdf3eebb1a3` |
-| 7 | `lemma` | [Gammaℝ_ne_zero_of_re_pos](../../../../SpecialFunctions/Deligne.lean/declarations/gamma-ne-zero-of-re-pos.md) | 65 | `result-track:3cbd71770cab50f1a5e3e6c5b253ff0b0dc486b7428b46ecaa42ace6ea7686f5` |
-| 8 | `lemma` | [Gammaℝ_eq_zero_iff](../../../../SpecialFunctions/Deligne.lean/declarations/gamma-eq-zero-iff.md) | 72 | `result-track:c866108356867d0bf8264aaca697a452d470f24792f2e56435f7cd55329c5749` |
-| 9 | `lemma` | [Gammaℝ_one](../../../../SpecialFunctions/Deligne.lean/declarations/gamma-one-source-edition-2.md) | 76 | `result-track:4c923778243bb9cd5963dc2e09746e35fb40a4a06f86a9cc290daf9414b94163` |
-| 10 | `lemma` | [Gammaℂ_one](../../../../SpecialFunctions/Deligne.lean/declarations/gamma-one.md) | 81 | `result-track:24e86a43a81c8748e2fd2d926bb501b6c3461412e8d9ad2f4129ed437fcdfc6f` |
-| 11 | `lemma` | [differentiable_Gammaℝ_inv](../../../../SpecialFunctions/Deligne.lean/declarations/differentiable-gamma-inv.md) | 87 | `result-track:0202e68ac3ee608ba8982669d530115c189fb7451d259b168530f7291bef754d` |
-| 12 | `lemma` | [Gammaℝ_residue_zero](../../../../SpecialFunctions/Deligne.lean/declarations/gamma-residue-zero.md) | 94 | `result-track:25153ddae8beffb6c0bbbba30effc6ebf40999b86379354b2cd9319e4d394188` |
-| 13 | `lemma` | [Gammaℝ_mul_Gammaℝ_add_one](../../../../SpecialFunctions/Deligne.lean/declarations/gamma-mul-gamma-add-one.md) | 114 | `result-track:004e7e27c0c96d4ed9bd753d36fa20ec0bce9df68dab9c74d41e020778e41bb9` |
-| 14 | `lemma` | [Gammaℝ_one_sub_mul_Gammaℝ_one_add](../../../../SpecialFunctions/Deligne.lean/declarations/gamma-one-sub-mul-gamma-one-add.md) | 130 | `result-track:d5f1cc2eafb0807e4486854d060a91f177d0578c17645d4e058fd9366e3c11b8` |
-| 15 | `lemma` | [Gammaℝ_div_Gammaℝ_one_sub](../../../../SpecialFunctions/Deligne.lean/declarations/gamma-div-gamma-one-sub.md) | 147 | `result-track:9d573955ecf929fb7733ae462dc466ae5de976f72e1a98d264a5b77423865d17` |
-| 16 | `lemma` | [inv_Gammaℝ_one_sub](../../../../SpecialFunctions/Deligne.lean/declarations/inv-gamma-one-sub.md) | 162 | `result-track:ee55b688510d29f577dfbd1606909f4fe097bf36e83ed7d447a0cb228004de58` |
-| 17 | `lemma` | [inv_Gammaℝ_two_sub](../../../../SpecialFunctions/Deligne.lean/declarations/inv-gamma-two-sub.md) | 177 | `result-track:7fd26b0f7a35aa603cb6510662a61ed6db6e41316bec43a7f4fbc65e646a7425` |
+| 1 | `def` | [Gammaℝ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/Deligne.lean/declarations/gamma-source-edition-2.md) | 40 | `declaration-track:f82d8c89d3250f67e0604900135edf94ba24af85b6bef88c3c7dd0e1824a79da` |
+| 2 | `lemma` | [Gammaℝ_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/Deligne.lean/declarations/gamma-def-source-edition-2.md) | 42 | `result-track:e0e1ba898e1a3988ebb38bf7899a647dbb66152398059100c800aa80454c4bcf` |
+| 3 | `def` | [Gammaℂ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/Deligne.lean/declarations/gamma.md) | 48 | `declaration-track:0db628c9d45444c5e0ef438f3ffdfdf75be16aabb769bb9be66a81219958879a` |
+| 4 | `lemma` | [Gammaℂ_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/Deligne.lean/declarations/gamma-def.md) | 50 | `result-track:6a092d95c3a5e2a609d8c7a409c9d43ada5322158709e29f224400d4ae79bd9e` |
+| 5 | `lemma` | [Gammaℝ_add_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/Deligne.lean/declarations/gamma-add-two.md) | 52 | `result-track:7fd908b0fcea1707d80aeb6fa029c6e4c459f100acd870b2d22d71435879e79b` |
+| 6 | `lemma` | [Gammaℂ_add_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/Deligne.lean/declarations/gamma-add-one.md) | 59 | `result-track:bc435ed23a52595d6105401694d421422ecc0552823284721046cfdf3eebb1a3` |
+| 7 | `lemma` | [Gammaℝ_ne_zero_of_re_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/Deligne.lean/declarations/gamma-ne-zero-of-re-pos.md) | 65 | `result-track:3cbd71770cab50f1a5e3e6c5b253ff0b0dc486b7428b46ecaa42ace6ea7686f5` |
+| 8 | `lemma` | [Gammaℝ_eq_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/Deligne.lean/declarations/gamma-eq-zero-iff.md) | 72 | `result-track:c866108356867d0bf8264aaca697a452d470f24792f2e56435f7cd55329c5749` |
+| 9 | `lemma` | [Gammaℝ_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/Deligne.lean/declarations/gamma-one-source-edition-2.md) | 76 | `result-track:4c923778243bb9cd5963dc2e09746e35fb40a4a06f86a9cc290daf9414b94163` |
+| 10 | `lemma` | [Gammaℂ_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/Deligne.lean/declarations/gamma-one.md) | 81 | `result-track:24e86a43a81c8748e2fd2d926bb501b6c3461412e8d9ad2f4129ed437fcdfc6f` |
+| 11 | `lemma` | [differentiable_Gammaℝ_inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/Deligne.lean/declarations/differentiable-gamma-inv.md) | 87 | `result-track:0202e68ac3ee608ba8982669d530115c189fb7451d259b168530f7291bef754d` |
+| 12 | `lemma` | [Gammaℝ_residue_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/Deligne.lean/declarations/gamma-residue-zero.md) | 94 | `result-track:25153ddae8beffb6c0bbbba30effc6ebf40999b86379354b2cd9319e4d394188` |
+| 13 | `lemma` | [Gammaℝ_mul_Gammaℝ_add_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/Deligne.lean/declarations/gamma-mul-gamma-add-one.md) | 114 | `result-track:004e7e27c0c96d4ed9bd753d36fa20ec0bce9df68dab9c74d41e020778e41bb9` |
+| 14 | `lemma` | [Gammaℝ_one_sub_mul_Gammaℝ_one_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/Deligne.lean/declarations/gamma-one-sub-mul-gamma-one-add.md) | 130 | `result-track:d5f1cc2eafb0807e4486854d060a91f177d0578c17645d4e058fd9366e3c11b8` |
+| 15 | `lemma` | [Gammaℝ_div_Gammaℝ_one_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/Deligne.lean/declarations/gamma-div-gamma-one-sub.md) | 147 | `result-track:9d573955ecf929fb7733ae462dc466ae5de976f72e1a98d264a5b77423865d17` |
+| 16 | `lemma` | [inv_Gammaℝ_one_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/Deligne.lean/declarations/inv-gamma-one-sub.md) | 162 | `result-track:ee55b688510d29f577dfbd1606909f4fe097bf36e83ed7d447a0cb228004de58` |
+| 17 | `lemma` | [inv_Gammaℝ_two_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/Deligne.lean/declarations/inv-gamma-two-sub.md) | 177 | `result-track:7fd26b0f7a35aa603cb6510662a61ed6db6e41316bec43a7f4fbc65e646a7425` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

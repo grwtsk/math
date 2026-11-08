@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonCatNamespacedEdition2.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonCatNamespacedEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MonCatNamespacedEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MonCatNamespacedEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonCatNamespacedEdition2.lean/declarations/example-source-edition-5.md) | 12 | `declaration-track:d0e41bc6eacdf95f093735faa6e4fcf99d0b87709c94d3156a1f44398a1ff3b4` |
-| 2 | `example` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonCatNamespacedEdition2.lean/declarations/example-source-edition-4.md) | 15 | `declaration-track:523cab3d30fc52451a8e01594f0cc48391802130b72f0c6fc72e12cc260ddac5` |
-| 3 | `example` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonCatNamespacedEdition2.lean/declarations/example-source-edition-3.md) | 17 | `declaration-track:29173644847198dd150796359892638f9fda4fde77e8edac5ecc2ccafb84d587` |
-| 4 | `example` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonCatNamespacedEdition2.lean/declarations/example.md) | 19 | `declaration-track:05e7456c4bef4afb45e82e44377074a28eb0c6ee81fda0320f674fbfef2f52ca` |
-| 5 | `example` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonCatNamespacedEdition2.lean/declarations/example-source-edition-2.md) | 23 | `declaration-track:0f91623a583c1198afb7cd36bf60ff012af767667a8c1b80e156c4cdb2f089a8` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MonCatNamespacedEdition2.lean/declarations/example-source-edition-5.md) | 12 | `declaration-track:d0e41bc6eacdf95f093735faa6e4fcf99d0b87709c94d3156a1f44398a1ff3b4` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MonCatNamespacedEdition2.lean/declarations/example-source-edition-4.md) | 15 | `declaration-track:523cab3d30fc52451a8e01594f0cc48391802130b72f0c6fc72e12cc260ddac5` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MonCatNamespacedEdition2.lean/declarations/example-source-edition-3.md) | 17 | `declaration-track:29173644847198dd150796359892638f9fda4fde77e8edac5ecc2ccafb84d587` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MonCatNamespacedEdition2.lean/declarations/example.md) | 19 | `declaration-track:05e7456c4bef4afb45e82e44377074a28eb0c6ee81fda0320f674fbfef2f52ca` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MonCatNamespacedEdition2.lean/declarations/example-source-edition-2.md) | 23 | `declaration-track:0f91623a583c1198afb7cd36bf60ff012af767667a8c1b80e156c4cdb2f089a8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

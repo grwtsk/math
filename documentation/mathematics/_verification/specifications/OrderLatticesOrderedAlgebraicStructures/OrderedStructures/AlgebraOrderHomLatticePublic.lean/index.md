@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/AlgebraOrderHomLatticePublic.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/AlgebraOrderHomLatticePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/AlgebraOrderHomLatticePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/AlgebraOrderHomLatticePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [Finite.iSup_eq_iSup_subtype](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/AlgebraOrderHomLatticePublic.lean/declarations/finite-isup-eq-isup-subtype.md) | 16 | `result-track:55218b0bc6ebb8526d85320d2d4def30b76c8c258d211a53dba00d989c150d48` |
+| 1 | `lemma` | [Finite.iSup_eq_iSup_subtype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/AlgebraOrderHomLatticePublic.lean/declarations/finite-isup-eq-isup-subtype.md) | 16 | `result-track:55218b0bc6ebb8526d85320d2d4def30b76c8c258d211a53dba00d989c150d48` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

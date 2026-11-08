@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/Ends.lean/index.md) · [Full source](../../../../GeneralTopology/Ends.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Ends.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Ends.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Bconst_sq_le](../../../../GeneralTopology/Ends.lean/declarations/bconst-sq-le.md) | 54 | `result-track:6e331750dcc0dc3d7382db69f8fd8ba889b99c0f3a3eae1e11b46d948984d916` |
-| 2 | `theorem` | [lem_ends_nu_W](../../../../GeneralTopology/Ends.lean/declarations/lem-ends-nu-w.md) | 64 | `result-track:34668f47f26aa229ad43e7633fdd0105e7c903521a36ffa99f1b78fdff0dc5b9` |
-| 3 | `theorem` | [lem_ends_nu](../../../../GeneralTopology/Ends.lean/declarations/lem-ends-nu.md) | 114 | `result-track:ac9f8c3d15878a7f34f14161eefc594decfd244c832f7742e6a894513f8a2b0a` |
-| 4 | `theorem` | [nuBound_eventually](../../../../GeneralTopology/Ends.lean/declarations/nubound-eventually.md) | 130 | `result-track:7bb0b96056c98d5108bf31f6c7c2ecb5311b6d8ddacedf90a5c23abf8322946f` |
-| 5 | `theorem` | [lem_ends](../../../../GeneralTopology/Ends.lean/declarations/lem-ends.md) | 143 | `result-track:b1a8f49906539df92be6ab67343fcff2bce200dc9fe9f9522300c2cad080311c` |
+| 1 | `theorem` | [Bconst_sq_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Ends.lean/declarations/bconst-sq-le.md) | 54 | `result-track:6e331750dcc0dc3d7382db69f8fd8ba889b99c0f3a3eae1e11b46d948984d916` |
+| 2 | `theorem` | [lem_ends_nu_W](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Ends.lean/declarations/lem-ends-nu-w.md) | 64 | `result-track:34668f47f26aa229ad43e7633fdd0105e7c903521a36ffa99f1b78fdff0dc5b9` |
+| 3 | `theorem` | [lem_ends_nu](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Ends.lean/declarations/lem-ends-nu.md) | 114 | `result-track:ac9f8c3d15878a7f34f14161eefc594decfd244c832f7742e6a894513f8a2b0a` |
+| 4 | `theorem` | [nuBound_eventually](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Ends.lean/declarations/nubound-eventually.md) | 130 | `result-track:7bb0b96056c98d5108bf31f6c7c2ecb5311b6d8ddacedf90a5c23abf8322946f` |
+| 5 | `theorem` | [lem_ends](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Ends.lean/declarations/lem-ends.md) | 143 | `result-track:b1a8f49906539df92be6ab67343fcff2bce200dc9fe9f9522300c2cad080311c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

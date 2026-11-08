@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/FormShadowNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/FormShadowNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FormShadowNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FormShadowNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FormalQShadow](../../../../../ComputerScience/AlgorithmsInComputerScience/FormShadowNamespaced.lean/declarations/formalqshadow.md) | 15 | `declaration-track:fb1663c3507be99f170302c0260dc5b3c46bb4b10473ecd0f8da3d3edd2c6196` |
-| 2 | `def` | [phaseShadow](../../../../../ComputerScience/AlgorithmsInComputerScience/FormShadowNamespaced.lean/declarations/phaseshadow.md) | 22 | `declaration-track:7dec2363632793e4c90e658d54e61d26c8b09d8bbe9160e14184031461963b6f` |
-| 3 | `theorem` | [phaseShadow37_weight](../../../../../ComputerScience/AlgorithmsInComputerScience/FormShadowNamespaced.lean/declarations/phaseshadow37-weight.md) | 29 | `result-track:a0320470d8a8f78915bcce4ed415c23cf8542f101789642310213fe913eb4f23` |
+| 1 | `structure` | [FormalQShadow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FormShadowNamespaced.lean/declarations/formalqshadow.md) | 15 | `declaration-track:fb1663c3507be99f170302c0260dc5b3c46bb4b10473ecd0f8da3d3edd2c6196` |
+| 2 | `def` | [phaseShadow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FormShadowNamespaced.lean/declarations/phaseshadow.md) | 22 | `declaration-track:7dec2363632793e4c90e658d54e61d26c8b09d8bbe9160e14184031461963b6f` |
+| 3 | `theorem` | [phaseShadow37_weight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FormShadowNamespaced.lean/declarations/phaseshadow37-weight.md) | 29 | `result-track:a0320470d8a8f78915bcce4ed415c23cf8542f101789642310213fe913eb4f23` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

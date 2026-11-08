@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/RolleNamespacedPublic.lean/index.md) · [Full source](../../../../RealFunctions/RolleNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RolleNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RolleNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_hasDerivAt_eq_zero](../../../../RealFunctions/RolleNamespacedPublic.lean/declarations/exists-hasderivat-eq-zero.md) | 62 | `result-track:545186863311c1b01a14bc309a40831c74d9f8007e7df231272028877baa2386` |
-| 2 | `theorem` | [exists_deriv_eq_zero](../../../../RealFunctions/RolleNamespacedPublic.lean/declarations/exists-deriv-eq-zero.md) | 69 | `result-track:4cd60fc8fe33aec21bf4a1a1b1a8154f04dbcdb7488b7b2734a9be621abb5a5c` |
-| 3 | `theorem` | [exists_hasDerivAt_eq_zero'](../../../../RealFunctions/RolleNamespacedPublic.lean/declarations/exists-hasderivat-eq-zero-source-edition-2.md) | 77 | `result-track:8bc109103e8740873602bc9fabe1d3090ee805063523ad68c0699bea7a0ffdab` |
-| 4 | `theorem` | [exists_deriv_eq_zero'](../../../../RealFunctions/RolleNamespacedPublic.lean/declarations/exists-deriv-eq-zero-source-edition-2.md) | 88 | `result-track:5c1e83746e1b7a35f75ff53d8564676c3e4702d13af860752f76bc5583c8f229` |
+| 1 | `theorem` | [exists_hasDerivAt_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RolleNamespacedPublic.lean/declarations/exists-hasderivat-eq-zero.md) | 62 | `result-track:545186863311c1b01a14bc309a40831c74d9f8007e7df231272028877baa2386` |
+| 2 | `theorem` | [exists_deriv_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RolleNamespacedPublic.lean/declarations/exists-deriv-eq-zero.md) | 69 | `result-track:4cd60fc8fe33aec21bf4a1a1b1a8154f04dbcdb7488b7b2734a9be621abb5a5c` |
+| 3 | `theorem` | [exists_hasDerivAt_eq_zero'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RolleNamespacedPublic.lean/declarations/exists-hasderivat-eq-zero-source-edition-2.md) | 77 | `result-track:8bc109103e8740873602bc9fabe1d3090ee805063523ad68c0699bea7a0ffdab` |
+| 4 | `theorem` | [exists_deriv_eq_zero'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RolleNamespacedPublic.lean/declarations/exists-deriv-eq-zero-source-edition-2.md) | 88 | `result-track:5c1e83746e1b7a35f75ff53d8564676c3e4702d13af860752f76bc5583c8f229` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

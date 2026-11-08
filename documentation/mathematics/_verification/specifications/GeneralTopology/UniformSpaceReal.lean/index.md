@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/UniformSpaceReal.lean/index.md) · [Full source](../../../../GeneralTopology/UniformSpaceReal.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UniformSpaceReal.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UniformSpaceReal.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [Real.instCompleteSpace](../../../../GeneralTopology/UniformSpaceReal.lean/declarations/real-instcompletespace.md) | 23 | `declaration-track:3e1e6b2650ba4aea80eb74472938dbc3f02e45afd0ac8230bb17995923ae57d5` |
-| 2 | `instance` | [(anonymous)](../../../../GeneralTopology/UniformSpaceReal.lean/declarations/instance-source-edition-2.md) | 41 | `declaration-track:fffff826c5c51462cee58df76cfbe90b09cf88802f439fe78c2bcb484f433a4a` |
-| 3 | `instance` | [(anonymous)](../../../../GeneralTopology/UniformSpaceReal.lean/declarations/instance.md) | 43 | `declaration-track:075410cf77269b9aa0e2b4f2d2d519f72be55683839d124999723a43877a271f` |
-| 4 | `theorem` | [continuous_coe](../../../../GeneralTopology/UniformSpaceReal.lean/declarations/continuous-coe.md) | 46 | `result-track:2288ce910a95fafce893e12e00d4636f2df290c7a438f01a9a6a8cf84cabfb82` |
-| 5 | `def` | [_root_.ContinuousMap.coeNNRealReal](../../../../GeneralTopology/UniformSpaceReal.lean/declarations/root-continuousmap-coennrealreal.md) | 51 | `declaration-track:4525d0380575ba45369b7518178b6786bb7a4205ba8a12634faa516853820cd4` |
-| 6 | `lemma` | [coeNNRealReal_zero](../../../../GeneralTopology/UniformSpaceReal.lean/declarations/coennrealreal-zero.md) | 55 | `result-track:4b8a65a1a4cc4f1c52d46e13d66973971d49e2f19b77b882c73345fad780da40` |
-| 7 | `instance` | [ContinuousMap.canLift](../../../../GeneralTopology/UniformSpaceReal.lean/declarations/continuousmap-canlift.md) | 57 | `declaration-track:3f3322ad94fdf1c8798233d5ca78de2fb1c70c9b710395b6a2bed6548973388a` |
+| 1 | `instance` | [Real.instCompleteSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UniformSpaceReal.lean/declarations/real-instcompletespace.md) | 23 | `declaration-track:3e1e6b2650ba4aea80eb74472938dbc3f02e45afd0ac8230bb17995923ae57d5` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UniformSpaceReal.lean/declarations/instance-source-edition-2.md) | 41 | `declaration-track:fffff826c5c51462cee58df76cfbe90b09cf88802f439fe78c2bcb484f433a4a` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UniformSpaceReal.lean/declarations/instance.md) | 43 | `declaration-track:075410cf77269b9aa0e2b4f2d2d519f72be55683839d124999723a43877a271f` |
+| 4 | `theorem` | [continuous_coe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UniformSpaceReal.lean/declarations/continuous-coe.md) | 46 | `result-track:2288ce910a95fafce893e12e00d4636f2df290c7a438f01a9a6a8cf84cabfb82` |
+| 5 | `def` | [_root_.ContinuousMap.coeNNRealReal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UniformSpaceReal.lean/declarations/root-continuousmap-coennrealreal.md) | 51 | `declaration-track:4525d0380575ba45369b7518178b6786bb7a4205ba8a12634faa516853820cd4` |
+| 6 | `lemma` | [coeNNRealReal_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UniformSpaceReal.lean/declarations/coennrealreal-zero.md) | 55 | `result-track:4b8a65a1a4cc4f1c52d46e13d66973971d49e2f19b77b882c73345fad780da40` |
+| 7 | `instance` | [ContinuousMap.canLift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UniformSpaceReal.lean/declarations/continuousmap-canlift.md) | 57 | `declaration-track:3f3322ad94fdf1c8798233d5ca78de2fb1c70c9b710395b6a2bed6548973388a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MapFloorPublic.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MapFloorPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MapFloorPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MapFloorPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,17 +57,17 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [IntWithEpsilon](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MapFloorPublic.lean/declarations/intwithepsilon.md) | 48 | `declaration-track:5cc3e66d55c53268215a3ad696a3870f82f1d3738b7ce363950e504f46ee3067` |
-| 2 | `instance` | [linearOrder](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MapFloorPublic.lean/declarations/linearorder.md) | 56 | `declaration-track:dec25172fce1a0583479c62a59234cd54191a6b9ba7c009f3350f3dfab823a23` |
-| 3 | `instance` | [isOrderedAddMonoid](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MapFloorPublic.lean/declarations/isorderedaddmonoid.md) | 59 | `declaration-track:368688397abc22345cd7eb5a14bb5f85d4f2ce1cae559f480b0d31fbdcff38af` |
-| 4 | `theorem` | [pos_iff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MapFloorPublic.lean/declarations/pos-iff.md) | 63 | `result-track:5048a3fa846c716a1747f55c8fcd416252592f9cd418cbada8829643d4b8118c` |
-| 5 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MapFloorPublic.lean/declarations/instance-source-edition-2.md) | 73 | `declaration-track:c0a8e35248338451596d983c39881712a8361c70d0d6255bbe8a13960486dbf1` |
-| 6 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MapFloorPublic.lean/declarations/instance.md) | 76 | `declaration-track:8574d44f0a992d49c266fe663e5dc7402b031d656a4a349ac1526aed555869a4` |
-| 7 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MapFloorPublic.lean/declarations/instance-source-edition-3.md) | 79 | `declaration-track:d4b9216066c16b7d67392ba82331cf6fe8e44dd9a00f50385c54716b3a9687dc` |
-| 8 | `def` | [forgetEpsilons](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MapFloorPublic.lean/declarations/forgetepsilons.md) | 97 | `declaration-track:bb2827752fa8b01b5026cffa9dd8e5a5baa204995bb969d77ee151a21dad56ce` |
-| 9 | `theorem` | [forgetEpsilons_apply](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MapFloorPublic.lean/declarations/forgetepsilons-apply.md) | 110 | `result-track:cc64c3fce430a32968f40ec62536f12b1998a09a71bb0baa82f25d7a137ecc02` |
-| 10 | `theorem` | [forgetEpsilons_floor_lt](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MapFloorPublic.lean/declarations/forgetepsilons-floor-lt.md) | 115 | `result-track:5ca443d35ce263c4a8478f4f53516d9dcded832205761cb7c5a144f97faed00e` |
-| 11 | `theorem` | [lt_forgetEpsilons_ceil](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MapFloorPublic.lean/declarations/lt-forgetepsilons-ceil.md) | 124 | `result-track:3c65415655d37a199b97b78ae5db325740acbb1146bb4ca75281141d6f35127c` |
+| 1 | `abbrev` | [IntWithEpsilon](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MapFloorPublic.lean/declarations/intwithepsilon.md) | 48 | `declaration-track:5cc3e66d55c53268215a3ad696a3870f82f1d3738b7ce363950e504f46ee3067` |
+| 2 | `instance` | [linearOrder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MapFloorPublic.lean/declarations/linearorder.md) | 56 | `declaration-track:dec25172fce1a0583479c62a59234cd54191a6b9ba7c009f3350f3dfab823a23` |
+| 3 | `instance` | [isOrderedAddMonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MapFloorPublic.lean/declarations/isorderedaddmonoid.md) | 59 | `declaration-track:368688397abc22345cd7eb5a14bb5f85d4f2ce1cae559f480b0d31fbdcff38af` |
+| 4 | `theorem` | [pos_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MapFloorPublic.lean/declarations/pos-iff.md) | 63 | `result-track:5048a3fa846c716a1747f55c8fcd416252592f9cd418cbada8829643d4b8118c` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MapFloorPublic.lean/declarations/instance-source-edition-2.md) | 73 | `declaration-track:c0a8e35248338451596d983c39881712a8361c70d0d6255bbe8a13960486dbf1` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MapFloorPublic.lean/declarations/instance.md) | 76 | `declaration-track:8574d44f0a992d49c266fe663e5dc7402b031d656a4a349ac1526aed555869a4` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MapFloorPublic.lean/declarations/instance-source-edition-3.md) | 79 | `declaration-track:d4b9216066c16b7d67392ba82331cf6fe8e44dd9a00f50385c54716b3a9687dc` |
+| 8 | `def` | [forgetEpsilons](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MapFloorPublic.lean/declarations/forgetepsilons.md) | 97 | `declaration-track:bb2827752fa8b01b5026cffa9dd8e5a5baa204995bb969d77ee151a21dad56ce` |
+| 9 | `theorem` | [forgetEpsilons_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MapFloorPublic.lean/declarations/forgetepsilons-apply.md) | 110 | `result-track:cc64c3fce430a32968f40ec62536f12b1998a09a71bb0baa82f25d7a137ecc02` |
+| 10 | `theorem` | [forgetEpsilons_floor_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MapFloorPublic.lean/declarations/forgetepsilons-floor-lt.md) | 115 | `result-track:5ca443d35ce263c4a8478f4f53516d9dcded832205761cb7c5a144f97faed00e` |
+| 11 | `theorem` | [lt_forgetEpsilons_ceil](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MapFloorPublic.lean/declarations/lt-forgetepsilons-ceil.md) | 124 | `result-track:3c65415655d37a199b97b78ae5db325740acbb1146bb4ca75281141d6f35127c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

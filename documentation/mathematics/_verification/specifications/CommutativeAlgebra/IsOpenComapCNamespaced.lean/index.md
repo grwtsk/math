@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/IsOpenComapCNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/IsOpenComapCNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsOpenComapCNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsOpenComapCNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [imageOfDf](../../../../CommutativeAlgebra/IsOpenComapCNamespaced.lean/declarations/imageofdf.md) | 39 | `declaration-track:5b3882893ac52c47687cf0b79b18f71bbd92e80fba56db2ff774b0f62ca15d0a` |
-| 2 | `theorem` | [isOpen_imageOfDf](../../../../CommutativeAlgebra/IsOpenComapCNamespaced.lean/declarations/isopen-imageofdf.md) | 42 | `result-track:f09946a3082a6a70e8667e319e0b9d302735a4388221b62f85b4893e1a7d750d` |
-| 3 | `theorem` | [comap_C_mem_imageOfDf](../../../../CommutativeAlgebra/IsOpenComapCNamespaced.lean/declarations/comap-c-mem-imageofdf.md) | 49 | `result-track:e9b913ce7d36747fb0281c91b040000018e8ad1e42c2450a07822435446ab9d5` |
-| 4 | `theorem` | [imageOfDf_eq_comap_C_compl_zeroLocus](../../../../CommutativeAlgebra/IsOpenComapCNamespaced.lean/declarations/imageofdf-eq-comap-c-compl-zerolocus.md) | 56 | `result-track:6e30888fb1de6217404b62d7417e3d22f78f162d5d39e44660818a4344c75acb` |
-| 5 | `theorem` | [isOpenMap_comap_C](../../../../CommutativeAlgebra/IsOpenComapCNamespaced.lean/declarations/isopenmap-comap-c.md) | 72 | `result-track:7b1f010ee8171d90a273254edca649f72bfb6dbfe5d250edaf9915e4a08215c9` |
+| 1 | `def` | [imageOfDf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsOpenComapCNamespaced.lean/declarations/imageofdf.md) | 39 | `declaration-track:5b3882893ac52c47687cf0b79b18f71bbd92e80fba56db2ff774b0f62ca15d0a` |
+| 2 | `theorem` | [isOpen_imageOfDf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsOpenComapCNamespaced.lean/declarations/isopen-imageofdf.md) | 42 | `result-track:f09946a3082a6a70e8667e319e0b9d302735a4388221b62f85b4893e1a7d750d` |
+| 3 | `theorem` | [comap_C_mem_imageOfDf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsOpenComapCNamespaced.lean/declarations/comap-c-mem-imageofdf.md) | 49 | `result-track:e9b913ce7d36747fb0281c91b040000018e8ad1e42c2450a07822435446ab9d5` |
+| 4 | `theorem` | [imageOfDf_eq_comap_C_compl_zeroLocus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsOpenComapCNamespaced.lean/declarations/imageofdf-eq-comap-c-compl-zerolocus.md) | 56 | `result-track:6e30888fb1de6217404b62d7417e3d22f78f162d5d39e44660818a4344c75acb` |
+| 5 | `theorem` | [isOpenMap_comap_C](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsOpenComapCNamespaced.lean/declarations/isopenmap-comap-c.md) | 72 | `result-track:7b1f010ee8171d90a273254edca649f72bfb6dbfe5d250edaf9915e4a08215c9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CompleteNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CompleteNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CompleteNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CompleteNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,8 +61,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [gammaFacts_of_stirling](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CompleteNamespaced.lean/declarations/gammafacts-of-stirling.md) | 33 | `result-track:8229997b77650ab6a9c09f96f720a95320c58814ea57653a7f84de83de0d0f4f` |
-| 2 | `theorem` | [gammaFacts](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CompleteNamespaced.lean/declarations/gammafacts.md) | 38 | `result-track:a1f156583038b50f1f62b7ad6461806e181ca59d4b56c89c2f43c24381d61b77` |
+| 1 | `theorem` | [gammaFacts_of_stirling](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CompleteNamespaced.lean/declarations/gammafacts-of-stirling.md) | 33 | `result-track:8229997b77650ab6a9c09f96f720a95320c58814ea57653a7f84de83de0d0f4f` |
+| 2 | `theorem` | [gammaFacts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CompleteNamespaced.lean/declarations/gammafacts.md) | 38 | `result-track:a1f156583038b50f1f62b7ad6461806e181ca59d4b56c89c2f43c24381d61b77` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

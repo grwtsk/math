@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/DynamicBombieriSoficObstruction.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/DynamicBombieriSoficObstruction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/DynamicBombieriSoficObstruction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/DynamicBombieriSoficObstruction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.DynamicalSystems.Symbolic.DynamicSoficSpectralCover`](../../../../GroupTheoryAndGeneralizations/DynamicSoficSpectralCover.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentInformationLoss`](../../../../GroupTheoryAndGeneralizations/CanonicalSquareTentBombieriMomentInformationLoss.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.DynamicalSystems.Symbolic.DynamicSoficSpectralCover`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/DynamicSoficSpectralCover.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentInformationLoss`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CanonicalSquareTentBombieriMomentInformationLoss.lean/index.md) — import line 6; pinned internal source present.
 - `Mathlib` — import line 7; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [MomentOnlyStages](../../../../GroupTheoryAndGeneralizations/DynamicBombieriSoficObstruction.lean/declarations/momentonlystages.md) | 44 | `declaration-track:0531fd35665b8d1cbf2dde6dea90c8f842aa7ec91960518d5c9feb0881945a8b` |
-| 2 | `theorem` | [momentOnly_stage_collision](../../../../GroupTheoryAndGeneralizations/DynamicBombieriSoficObstruction.lean/declarations/momentonly-stage-collision.md) | 50 | `result-track:ab57a006794240988173df4444790b0d200b5a5376850300cbcc3db902cb7810` |
-| 3 | `theorem` | [momentOnly_history_collision](../../../../GroupTheoryAndGeneralizations/DynamicBombieriSoficObstruction.lean/declarations/momentonly-history-collision.md) | 62 | `result-track:9d78f1bfbbc7c4486623bdb6e60252803e256964b308f197c17bd94fa5828d63` |
-| 4 | `theorem` | [no_exact_reconstruction_from_momentOnly_history](../../../../GroupTheoryAndGeneralizations/DynamicBombieriSoficObstruction.lean/declarations/no-exact-reconstruction-from-momentonly-history.md) | 72 | `result-track:5f96192b2aa72306896c110e797713fe060df336c2d7d2247303bf978658cd5d` |
-| 5 | `theorem` | [trace_collision_of_momentOnly_history](../../../../GroupTheoryAndGeneralizations/DynamicBombieriSoficObstruction.lean/declarations/trace-collision-of-momentonly-history.md) | 90 | `result-track:c1ecb1cb6fa052989eb268dc945c0d23e63680f6630453573aa7edecced68b13` |
-| 6 | `theorem` | [no_lossless_spectral_cover_after_moment_collapse](../../../../GroupTheoryAndGeneralizations/DynamicBombieriSoficObstruction.lean/declarations/no-lossless-spectral-cover-after-moment-collapse.md) | 103 | `result-track:75b5e02432e132d3c3b756bbc7b71e59da6f3d947784a0673cb98501a9c7fc56` |
+| 1 | `def` | [MomentOnlyStages](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/DynamicBombieriSoficObstruction.lean/declarations/momentonlystages.md) | 44 | `declaration-track:0531fd35665b8d1cbf2dde6dea90c8f842aa7ec91960518d5c9feb0881945a8b` |
+| 2 | `theorem` | [momentOnly_stage_collision](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/DynamicBombieriSoficObstruction.lean/declarations/momentonly-stage-collision.md) | 50 | `result-track:ab57a006794240988173df4444790b0d200b5a5376850300cbcc3db902cb7810` |
+| 3 | `theorem` | [momentOnly_history_collision](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/DynamicBombieriSoficObstruction.lean/declarations/momentonly-history-collision.md) | 62 | `result-track:9d78f1bfbbc7c4486623bdb6e60252803e256964b308f197c17bd94fa5828d63` |
+| 4 | `theorem` | [no_exact_reconstruction_from_momentOnly_history](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/DynamicBombieriSoficObstruction.lean/declarations/no-exact-reconstruction-from-momentonly-history.md) | 72 | `result-track:5f96192b2aa72306896c110e797713fe060df336c2d7d2247303bf978658cd5d` |
+| 5 | `theorem` | [trace_collision_of_momentOnly_history](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/DynamicBombieriSoficObstruction.lean/declarations/trace-collision-of-momentonly-history.md) | 90 | `result-track:c1ecb1cb6fa052989eb268dc945c0d23e63680f6630453573aa7edecced68b13` |
+| 6 | `theorem` | [no_lossless_spectral_cover_after_moment_collapse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/DynamicBombieriSoficObstruction.lean/declarations/no-lossless-spectral-cover-after-moment-collapse.md) | 103 | `result-track:75b5e02432e132d3c3b756bbc7b71e59da6f3d947784a0673cb98501a9c7fc56` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

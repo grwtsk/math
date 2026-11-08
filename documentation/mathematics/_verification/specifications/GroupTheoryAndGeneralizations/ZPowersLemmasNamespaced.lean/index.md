@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/ZPowersLemmasNamespaced.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/ZPowersLemmasNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ZPowersLemmasNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ZPowersLemmasNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,15 +60,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [range_zpowersHom](../../../../GroupTheoryAndGeneralizations/ZPowersLemmasNamespaced.lean/declarations/range-zpowershom.md) | 33 | `result-track:7f0e19737b9e3740e9e8abd0f337789a1af98380956dfee76eec5aa716d0fcca` |
-| 2 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/ZPowersLemmasNamespaced.lean/declarations/instance.md) | 36 | `declaration-track:d652d3f070397082aeaaa573bad87700e9bdcd691ca7f0982a71463673933038` |
-| 3 | `theorem` | [range_zmultiplesHom](../../../../GroupTheoryAndGeneralizations/ZPowersLemmasNamespaced.lean/declarations/range-zmultipleshom.md) | 43 | `result-track:e6b42e0c802bcf8e1234b582659ba0e130da4c9b5e69b388c9fcbd6e8b93919a` |
-| 4 | `theorem` | [intCast_mul_mem_zmultiples](../../../../GroupTheoryAndGeneralizations/ZPowersLemmasNamespaced.lean/declarations/intcast-mul-mem-zmultiples.md) | 51 | `result-track:ac42e3a66a696a4d93e25384cc9429a141b8d936a1d1960213e7eca17136d378` |
-| 5 | `theorem` | [intCast_mem_zmultiples_one](../../../../GroupTheoryAndGeneralizations/ZPowersLemmasNamespaced.lean/declarations/intcast-mem-zmultiples-one.md) | 55 | `result-track:c7c9340ae3c8632fee19dd8e1a112a5dbdb640bf032cd500a1f00777e32a2af9` |
-| 6 | `lemma` | [Int.range_castAddHom](../../../../GroupTheoryAndGeneralizations/ZPowersLemmasNamespaced.lean/declarations/int-range-castaddhom.md) | 62 | `result-track:76e9df0f77da4cbeb2a6cd22b2d2d8a32694ba68b2702daf5238bfdbefcd602c` |
-| 7 | `theorem` | [centralizer_closure](../../../../GroupTheoryAndGeneralizations/ZPowersLemmasNamespaced.lean/declarations/centralizer-closure.md) | 72 | `result-track:18a3693d3e38a21f639aa249317cb91f0dcfabfc1c6c6b3d658d4c871ce947f0` |
-| 8 | `theorem` | [center_eq_iInf](../../../../GroupTheoryAndGeneralizations/ZPowersLemmasNamespaced.lean/declarations/center-eq-iinf.md) | 81 | `result-track:cfcbfbdfcfff8945d8f8fb072bea21513ccc612eb9f12050d8b8a7202f726fa2` |
-| 9 | `theorem` | [center_eq_infi'](../../../../GroupTheoryAndGeneralizations/ZPowersLemmasNamespaced.lean/declarations/center-eq-infi.md) | 86 | `result-track:db0211bb69bd3cd59918b351775c8e178b350a6645593bbfde3d134687b66bf9` |
+| 1 | `theorem` | [range_zpowersHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ZPowersLemmasNamespaced.lean/declarations/range-zpowershom.md) | 33 | `result-track:7f0e19737b9e3740e9e8abd0f337789a1af98380956dfee76eec5aa716d0fcca` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ZPowersLemmasNamespaced.lean/declarations/instance.md) | 36 | `declaration-track:d652d3f070397082aeaaa573bad87700e9bdcd691ca7f0982a71463673933038` |
+| 3 | `theorem` | [range_zmultiplesHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ZPowersLemmasNamespaced.lean/declarations/range-zmultipleshom.md) | 43 | `result-track:e6b42e0c802bcf8e1234b582659ba0e130da4c9b5e69b388c9fcbd6e8b93919a` |
+| 4 | `theorem` | [intCast_mul_mem_zmultiples](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ZPowersLemmasNamespaced.lean/declarations/intcast-mul-mem-zmultiples.md) | 51 | `result-track:ac42e3a66a696a4d93e25384cc9429a141b8d936a1d1960213e7eca17136d378` |
+| 5 | `theorem` | [intCast_mem_zmultiples_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ZPowersLemmasNamespaced.lean/declarations/intcast-mem-zmultiples-one.md) | 55 | `result-track:c7c9340ae3c8632fee19dd8e1a112a5dbdb640bf032cd500a1f00777e32a2af9` |
+| 6 | `lemma` | [Int.range_castAddHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ZPowersLemmasNamespaced.lean/declarations/int-range-castaddhom.md) | 62 | `result-track:76e9df0f77da4cbeb2a6cd22b2d2d8a32694ba68b2702daf5238bfdbefcd602c` |
+| 7 | `theorem` | [centralizer_closure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ZPowersLemmasNamespaced.lean/declarations/centralizer-closure.md) | 72 | `result-track:18a3693d3e38a21f639aa249317cb91f0dcfabfc1c6c6b3d658d4c871ce947f0` |
+| 8 | `theorem` | [center_eq_iInf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ZPowersLemmasNamespaced.lean/declarations/center-eq-iinf.md) | 81 | `result-track:cfcbfbdfcfff8945d8f8fb072bea21513ccc612eb9f12050d8b8a7202f726fa2` |
+| 9 | `theorem` | [center_eq_infi'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ZPowersLemmasNamespaced.lean/declarations/center-eq-infi.md) | 86 | `result-track:db0211bb69bd3cd59918b351775c8e178b350a6645593bbfde3d134687b66bf9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

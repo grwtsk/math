@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/KanComplexNamespaced.lean/index.md) · [Full source](../../../../AlgebraicTopology/KanComplexNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/KanComplexNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/KanComplexNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [KanComplex](../../../../AlgebraicTopology/KanComplexNamespaced.lean/declarations/kancomplex.md) | 43 | `declaration-track:9de73fca484fdc9d40d049ea65f44f227bf5affa4f4c797097b5d2603c20965b` |
-| 2 | `lemma` | [KanComplex.hornFilling](../../../../AlgebraicTopology/KanComplexNamespaced.lean/declarations/kancomplex-hornfilling.md) | 48 | `result-track:1ce01122fb1604e08d05f1a846d6dee87e61b7af9bd3bc85fdea56d9727b82c1` |
+| 1 | `abbrev` | [KanComplex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/KanComplexNamespaced.lean/declarations/kancomplex.md) | 43 | `declaration-track:9de73fca484fdc9d40d049ea65f44f227bf5affa4f4c797097b5d2603c20965b` |
+| 2 | `lemma` | [KanComplex.hornFilling](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/KanComplexNamespaced.lean/declarations/kancomplex-hornfilling.md) | 48 | `result-track:1ce01122fb1604e08d05f1a846d6dee87e61b7af9bd3bc85fdea56d9727b82c1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

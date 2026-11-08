@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/SpecificLimitsRCLikeRCLikeNamespacedPublic.lean/index.md) · [Full source](../../../../FunctionalAnalysis/SpecificLimitsRCLikeRCLikeNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpecificLimitsRCLikeRCLikeNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpecificLimitsRCLikeRCLikeNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [tendsto_ofReal_cobounded_cobounded](../../../../FunctionalAnalysis/SpecificLimitsRCLikeRCLikeNamespacedPublic.lean/declarations/tendsto-ofreal-cobounded-cobounded.md) | 33 | `result-track:b7741855799e0db4cda4c216985648e7f31277273bb9c53982f15c79e74d55cf` |
-| 2 | `theorem` | [tendsto_ofReal_atTop_cobounded](../../../../FunctionalAnalysis/SpecificLimitsRCLikeRCLikeNamespacedPublic.lean/declarations/tendsto-ofreal-attop-cobounded.md) | 37 | `result-track:87d03d0e75f2970d135dd696ab4c22675aa0354cfc8265776489d8d91aada9fd` |
-| 3 | `theorem` | [tendsto_ofReal_atBot_cobounded](../../../../FunctionalAnalysis/SpecificLimitsRCLikeRCLikeNamespacedPublic.lean/declarations/tendsto-ofreal-atbot-cobounded.md) | 41 | `result-track:433a30608cf3051d05891a788d8563fc16e4e68f9dc71009e682a9e076b37f0d` |
+| 1 | `theorem` | [tendsto_ofReal_cobounded_cobounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpecificLimitsRCLikeRCLikeNamespacedPublic.lean/declarations/tendsto-ofreal-cobounded-cobounded.md) | 33 | `result-track:b7741855799e0db4cda4c216985648e7f31277273bb9c53982f15c79e74d55cf` |
+| 2 | `theorem` | [tendsto_ofReal_atTop_cobounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpecificLimitsRCLikeRCLikeNamespacedPublic.lean/declarations/tendsto-ofreal-attop-cobounded.md) | 37 | `result-track:87d03d0e75f2970d135dd696ab4c22675aa0354cfc8265776489d8d91aada9fd` |
+| 3 | `theorem` | [tendsto_ofReal_atBot_cobounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpecificLimitsRCLikeRCLikeNamespacedPublic.lean/declarations/tendsto-ofreal-atbot-cobounded.md) | 41 | `result-track:433a30608cf3051d05891a788d8563fc16e4e68f9dc71009e682a9e076b37f0d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

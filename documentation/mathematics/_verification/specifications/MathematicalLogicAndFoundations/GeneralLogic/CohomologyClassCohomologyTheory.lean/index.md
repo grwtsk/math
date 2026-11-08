@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CohomologyClassCohomologyTheory.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CohomologyClassCohomologyTheory.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CohomologyClassCohomologyTheory.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CohomologyClassCohomologyTheory.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CohomologyTheory](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CohomologyClassCohomologyTheory.lean/declarations/cohomologytheory.md) | 24 | `declaration-track:e0270a40bbf056a9fb058d2a6f436010a59de3f4e015c3c5bbc27b312aa07738` |
-| 2 | `structure` | [CohomologyClass](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CohomologyClassCohomologyTheory.lean/declarations/cohomologyclass.md) | 31 | `declaration-track:623f14d3fb996cca3e6dc8213ed015d37c4bd5e23316e61512496bdbbcb77a1f` |
-| 3 | `structure` | [ClassEquality](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CohomologyClassCohomologyTheory.lean/declarations/classequality.md) | 37 | `declaration-track:7b022a375a35665ba00b24cd25dcc902731d715e4ece61e90b77cd4e5debda1f` |
-| 4 | `theorem` | [class_equality_compatible](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CohomologyClassCohomologyTheory.lean/declarations/class-equality-compatible.md) | 44 | `result-track:1078bb49ee8a1c522196345c48039bb8ca40a4b1da23fce5bea4cdff56bf3cb6` |
+| 1 | `structure` | [CohomologyTheory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CohomologyClassCohomologyTheory.lean/declarations/cohomologytheory.md) | 24 | `declaration-track:e0270a40bbf056a9fb058d2a6f436010a59de3f4e015c3c5bbc27b312aa07738` |
+| 2 | `structure` | [CohomologyClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CohomologyClassCohomologyTheory.lean/declarations/cohomologyclass.md) | 31 | `declaration-track:623f14d3fb996cca3e6dc8213ed015d37c4bd5e23316e61512496bdbbcb77a1f` |
+| 3 | `structure` | [ClassEquality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CohomologyClassCohomologyTheory.lean/declarations/classequality.md) | 37 | `declaration-track:7b022a375a35665ba00b24cd25dcc902731d715e4ece61e90b77cd4e5debda1f` |
+| 4 | `theorem` | [class_equality_compatible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CohomologyClassCohomologyTheory.lean/declarations/class-equality-compatible.md) | 44 | `result-track:1078bb49ee8a1c522196345c48039bb8ca40a4b1da23fce5bea4cdff56bf3cb6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

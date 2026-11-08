@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompleteTraceAlignmentAssumptions.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompleteTraceAlignmentAssumptions.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompleteTraceAlignmentAssumptions.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompleteTraceAlignmentAssumptions.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CanonicalSpectralBoundaryAlignmentTarget](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompleteTraceAlignmentAssumptions.lean/declarations/canonicalspectralboundaryalignmenttarget.md) | 41 | `declaration-track:2b32f9145d766838ed77688f77e6bbfefdf69e3571bfbe735af104ec53b4e328` |
-| 2 | `theorem` | [canonical_alignment_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompleteTraceAlignmentAssumptions.lean/declarations/canonical-alignment-if-supplied.md) | 48 | `result-track:f6a93a32bfbced34fdc1584ce62296b638976f06ba64fbf061af7d425ac51c9f` |
+| 1 | `structure` | [CanonicalSpectralBoundaryAlignmentTarget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompleteTraceAlignmentAssumptions.lean/declarations/canonicalspectralboundaryalignmenttarget.md) | 41 | `declaration-track:2b32f9145d766838ed77688f77e6bbfefdf69e3571bfbe735af104ec53b4e328` |
+| 2 | `theorem` | [canonical_alignment_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompleteTraceAlignmentAssumptions.lean/declarations/canonical-alignment-if-supplied.md) | 48 | `result-track:f6a93a32bfbced34fdc1584ce62296b638976f06ba64fbf061af7d425ac51c9f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalPolePatch.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalPolePatch.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalPolePatch.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalPolePatch.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.PoleNormalizedContourBounds`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PoleNormalizedContourBounds.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.RationalPoleNormalizedJet`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalPoleNormalizedJet.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.PoleNormalizedContourBounds`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PoleNormalizedContourBounds.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.RationalPoleNormalizedJet`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalPoleNormalizedJet.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,20 +58,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [sampleLower](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalPolePatch.lean/declarations/samplelower.md) | 26 | `declaration-track:a13b3f15d2a2b4fa486ec239bba3fac92ac5140107ff833dfb5b58beaa8cfbb8` |
-| 2 | `def` | [leftMargin](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalPolePatch.lean/declarations/leftmargin.md) | 28 | `declaration-track:4cd0a394c75c809e22c6d311b95078a30194e8ba6a38b75445cdbf63ae4985ad` |
-| 3 | `def` | [sizeBound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalPolePatch.lean/declarations/sizebound.md) | 30 | `declaration-track:7d59ca1d327d84f30e1f2aeedfe21c2b4f30ef83b0060759b0ea930a404e7545` |
-| 4 | `def` | [factorBound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalPolePatch.lean/declarations/factorbound.md) | 32 | `declaration-track:4beb6e01423ecb300f106e6b9f33e5ec8c9326a90de5f39caaf0c407fbb7d09c` |
-| 5 | `def` | [sourceBound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalPolePatch.lean/declarations/sourcebound.md) | 34 | `declaration-track:5a1f227dc49447afd522da80380fbca54c3de2d050d973963de66510b44ca8ee` |
-| 6 | `def` | [slopeBound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalPolePatch.lean/declarations/slopebound.md) | 37 | `declaration-track:bf211efe8e13adb09a9b71284488953b71897df2f7d5aca22f22b6e66dcddaa0` |
-| 7 | `def` | [Valid](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalPolePatch.lean/declarations/valid.md) | 39 | `declaration-track:1f7d64137ad8ba6cbcb7c5f4851407c6c9b42040b3c7a1826a9f714e08be8b61` |
-| 8 | `instance` | [validDecidable](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalPolePatch.lean/declarations/validdecidable.md) | 43 | `declaration-track:205f74357d7e48b3c89c1b2098b08d3c6306d24d024f8c242040386f2c934a24` |
-| 9 | `def` | [check](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalPolePatch.lean/declarations/check.md) | 47 | `declaration-track:b2573c66f15f14f8f22875ca5ff26c8afc799a4d939fd2bc56a64484fd9512d2` |
-| 10 | `theorem` | [check_iff_valid](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalPolePatch.lean/declarations/check-iff-valid.md) | 49 | `result-track:8d5684e4fb07613756dfc04a37b769d5b791373924fac7cea8e905fab4fb1b0e` |
-| 11 | `theorem` | [sampleLower_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalPolePatch.lean/declarations/samplelower-le.md) | 52 | `result-track:d92ae139e4de764529deeb0d585fc4b2567b8776c28a16115b780b7c29ac9342` |
-| 12 | `def` | [patchOfCheck](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalPolePatch.lean/declarations/patchofcheck.md) | 63 | `declaration-track:886f92aec94c9fdeb8b54919c3bce054f4d11396acd142d4151e00b240e831b4` |
-| 13 | `theorem` | [check_sound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalPolePatch.lean/declarations/check-sound.md) | 94 | `result-track:6fb48de6333003e8fae5d9112dbc17c7548679296b86a4a9ffbfa8b1c346c1f1` |
-| 14 | `theorem` | [assembled_patch_sound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalPolePatch.lean/declarations/assembled-patch-sound.md) | 101 | `result-track:bfa08a962e82475686769798c19c02fa87b808cfe15a19475fb415b4cf443f47` |
+| 1 | `def` | [sampleLower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalPolePatch.lean/declarations/samplelower.md) | 26 | `declaration-track:a13b3f15d2a2b4fa486ec239bba3fac92ac5140107ff833dfb5b58beaa8cfbb8` |
+| 2 | `def` | [leftMargin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalPolePatch.lean/declarations/leftmargin.md) | 28 | `declaration-track:4cd0a394c75c809e22c6d311b95078a30194e8ba6a38b75445cdbf63ae4985ad` |
+| 3 | `def` | [sizeBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalPolePatch.lean/declarations/sizebound.md) | 30 | `declaration-track:7d59ca1d327d84f30e1f2aeedfe21c2b4f30ef83b0060759b0ea930a404e7545` |
+| 4 | `def` | [factorBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalPolePatch.lean/declarations/factorbound.md) | 32 | `declaration-track:4beb6e01423ecb300f106e6b9f33e5ec8c9326a90de5f39caaf0c407fbb7d09c` |
+| 5 | `def` | [sourceBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalPolePatch.lean/declarations/sourcebound.md) | 34 | `declaration-track:5a1f227dc49447afd522da80380fbca54c3de2d050d973963de66510b44ca8ee` |
+| 6 | `def` | [slopeBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalPolePatch.lean/declarations/slopebound.md) | 37 | `declaration-track:bf211efe8e13adb09a9b71284488953b71897df2f7d5aca22f22b6e66dcddaa0` |
+| 7 | `def` | [Valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalPolePatch.lean/declarations/valid.md) | 39 | `declaration-track:1f7d64137ad8ba6cbcb7c5f4851407c6c9b42040b3c7a1826a9f714e08be8b61` |
+| 8 | `instance` | [validDecidable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalPolePatch.lean/declarations/validdecidable.md) | 43 | `declaration-track:205f74357d7e48b3c89c1b2098b08d3c6306d24d024f8c242040386f2c934a24` |
+| 9 | `def` | [check](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalPolePatch.lean/declarations/check.md) | 47 | `declaration-track:b2573c66f15f14f8f22875ca5ff26c8afc799a4d939fd2bc56a64484fd9512d2` |
+| 10 | `theorem` | [check_iff_valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalPolePatch.lean/declarations/check-iff-valid.md) | 49 | `result-track:8d5684e4fb07613756dfc04a37b769d5b791373924fac7cea8e905fab4fb1b0e` |
+| 11 | `theorem` | [sampleLower_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalPolePatch.lean/declarations/samplelower-le.md) | 52 | `result-track:d92ae139e4de764529deeb0d585fc4b2567b8776c28a16115b780b7c29ac9342` |
+| 12 | `def` | [patchOfCheck](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalPolePatch.lean/declarations/patchofcheck.md) | 63 | `declaration-track:886f92aec94c9fdeb8b54919c3bce054f4d11396acd142d4151e00b240e831b4` |
+| 13 | `theorem` | [check_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalPolePatch.lean/declarations/check-sound.md) | 94 | `result-track:6fb48de6333003e8fae5d9112dbc17c7548679296b86a4a9ffbfa8b1c346c1f1` |
+| 14 | `theorem` | [assembled_patch_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalPolePatch.lean/declarations/assembled-patch-sound.md) | 101 | `result-track:bfa08a962e82475686769798c19c02fa87b808cfe15a19475fb415b4cf443f47` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

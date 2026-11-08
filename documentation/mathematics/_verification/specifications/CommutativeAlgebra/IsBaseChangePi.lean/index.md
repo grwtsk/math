@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/IsBaseChangePi.lean/index.md) · [Full source](../../../../CommutativeAlgebra/IsBaseChangePi.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsBaseChangePi.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsBaseChangePi.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [prodMap](../../../../CommutativeAlgebra/IsBaseChangePi.lean/declarations/prodmap.md) | 22 | `result-track:0462d0a6ba5f89788656d94913eeb35124b51d8d990b4a32d0f6bb41385e7394` |
-| 2 | `lemma` | [pi](../../../../CommutativeAlgebra/IsBaseChangePi.lean/declarations/pi-source-edition-2.md) | 33 | `result-track:e4393beae94c79f6fc7e1e47b3fd3edd336cd4b037afb186828ed2878c195307` |
-| 3 | `instance` | [prodMap](../../../../CommutativeAlgebra/IsBaseChangePi.lean/declarations/prodmap-source-edition-2.md) | 55 | `declaration-track:a3d132c0e6a7ad28d844ca0ff80c56885ea528f1e3f89f8c0abc1ba8e044e91b` |
-| 4 | `instance` | [pi](../../../../CommutativeAlgebra/IsBaseChangePi.lean/declarations/pi.md) | 71 | `declaration-track:01017ab62b6ec271bcc160f8db8db4b81a7cff5e65a2a07a697e929bc9daaa53` |
+| 1 | `lemma` | [prodMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsBaseChangePi.lean/declarations/prodmap.md) | 22 | `result-track:0462d0a6ba5f89788656d94913eeb35124b51d8d990b4a32d0f6bb41385e7394` |
+| 2 | `lemma` | [pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsBaseChangePi.lean/declarations/pi-source-edition-2.md) | 33 | `result-track:e4393beae94c79f6fc7e1e47b3fd3edd336cd4b037afb186828ed2878c195307` |
+| 3 | `instance` | [prodMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsBaseChangePi.lean/declarations/prodmap-source-edition-2.md) | 55 | `declaration-track:a3d132c0e6a7ad28d844ca0ff80c56885ea528f1e3f89f8c0abc1ba8e044e91b` |
+| 4 | `instance` | [pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsBaseChangePi.lean/declarations/pi.md) | 71 | `declaration-track:01017ab62b6ec271bcc160f8db8db4b81a7cff5e65a2a07a697e929bc9daaa53` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

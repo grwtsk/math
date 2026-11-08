@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonEleventhBlockCore.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonEleventhBlockCore.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonEleventhBlockCore.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonEleventhBlockCore.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.ConcreteNewtonElevenBlocksAndTerminal`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonElevenBlocksAndTerminal.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Chebyshev.Checks.EleventhBlockControls`](../../../../../NumberTheory/EleventhBlockControls.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.ConcreteNewtonElevenBlocksAndTerminal`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonElevenBlocksAndTerminal.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.Checks.EleventhBlockControls`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/EleventhBlockControls.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 

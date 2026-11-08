@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceCompleteJointApplicationsNamespaced.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceCompleteJointApplicationsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceCompleteJointApplicationsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceCompleteJointApplicationsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_leading_upper_of_complete_signed_block](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceCompleteJointApplicationsNamespaced.lean/declarations/actual-leading-upper-of-complete-signed-block.md) | 29 | `result-track:bf9e02dde8cc36b61000b875bc59383339899ae7848569638f322a88d4fa1018` |
-| 2 | `theorem` | [all_real_tail_lower_of_complete_signed_block](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceCompleteJointApplicationsNamespaced.lean/declarations/all-real-tail-lower-of-complete-signed-block.md) | 41 | `result-track:8940a6cec977601a788b01be8bf68493b5fb4869e9bee79386a0f997e50263a3` |
-| 3 | `theorem` | [actual_leading_tail_upper_of_complete_signed_block](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceCompleteJointApplicationsNamespaced.lean/declarations/actual-leading-tail-upper-of-complete-signed-block.md) | 57 | `result-track:ef62a6aa59a5fd48528ed52f8699f1a836c90feb9cb225fc367fe4fd4f1f4237` |
+| 1 | `theorem` | [actual_leading_upper_of_complete_signed_block](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceCompleteJointApplicationsNamespaced.lean/declarations/actual-leading-upper-of-complete-signed-block.md) | 29 | `result-track:bf9e02dde8cc36b61000b875bc59383339899ae7848569638f322a88d4fa1018` |
+| 2 | `theorem` | [all_real_tail_lower_of_complete_signed_block](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceCompleteJointApplicationsNamespaced.lean/declarations/all-real-tail-lower-of-complete-signed-block.md) | 41 | `result-track:8940a6cec977601a788b01be8bf68493b5fb4869e9bee79386a0f997e50263a3` |
+| 3 | `theorem` | [actual_leading_tail_upper_of_complete_signed_block](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceCompleteJointApplicationsNamespaced.lean/declarations/actual-leading-tail-upper-of-complete-signed-block.md) | 57 | `result-track:ef62a6aa59a5fd48528ed52f8699f1a836c90feb9cb225fc367fe4fd4f1f4237` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

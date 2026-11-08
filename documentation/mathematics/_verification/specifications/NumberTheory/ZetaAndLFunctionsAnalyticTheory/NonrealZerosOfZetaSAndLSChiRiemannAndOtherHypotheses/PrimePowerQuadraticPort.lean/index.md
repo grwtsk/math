@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PrimePowerQuadraticPort.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PrimePowerQuadraticPort.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PrimePowerQuadraticPort.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PrimePowerQuadraticPort.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerVonMangoldt`](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimePowerVonMangoldt.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticTraceCriterion`](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/QuadraticTraceCriterion.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerVonMangoldt`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimePowerVonMangoldt.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticTraceCriterion`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/QuadraticTraceCriterion.lean/index.md) — import line 6; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [QuarticExtraction](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PrimePowerQuadraticPort.lean/declarations/quarticextraction.md) | 35 | `declaration-track:ba9ae06b7cc81f9ed69872349c263f325aee0e879f778bf0b6c5d174b2ba51be` |
-| 2 | `theorem` | [QuarticExtraction.source_nonneg](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PrimePowerQuadraticPort.lean/declarations/quarticextraction-source-nonneg.md) | 50 | `result-track:6fd1f1426efd144574176fd0a0dd3ce19d4b879adf073331600a36cc306a18d6` |
-| 3 | `theorem` | [witnessTrace_nonneg_of_quarticExtraction](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PrimePowerQuadraticPort.lean/declarations/witnesstrace-nonneg-of-quarticextraction.md) | 57 | `result-track:03e61a97bcc8b3825eccf8c8758957a524bdef7c0dd50e60ca97522c3142dead` |
-| 4 | `theorem` | [horizontal_displacement_eq_zero_of_quarticExtraction](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PrimePowerQuadraticPort.lean/declarations/horizontal-displacement-eq-zero-of-quarticextraction.md) | 76 | `result-track:0212ea75356f4d0d1a1a30c7aba217028a758900b94f4a227a57d416f45dcdbe` |
-| 5 | `theorem` | [riemannHypothesis_of_primePowerGramExtraction](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PrimePowerQuadraticPort.lean/declarations/riemannhypothesis-of-primepowergramextraction.md) | 85 | `result-track:587f1d2cd6dc9da103b45f3b2c5a6a0b85df8943547e4bb86e862a54e2ceef10` |
+| 1 | `structure` | [QuarticExtraction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PrimePowerQuadraticPort.lean/declarations/quarticextraction.md) | 35 | `declaration-track:ba9ae06b7cc81f9ed69872349c263f325aee0e879f778bf0b6c5d174b2ba51be` |
+| 2 | `theorem` | [QuarticExtraction.source_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PrimePowerQuadraticPort.lean/declarations/quarticextraction-source-nonneg.md) | 50 | `result-track:6fd1f1426efd144574176fd0a0dd3ce19d4b879adf073331600a36cc306a18d6` |
+| 3 | `theorem` | [witnessTrace_nonneg_of_quarticExtraction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PrimePowerQuadraticPort.lean/declarations/witnesstrace-nonneg-of-quarticextraction.md) | 57 | `result-track:03e61a97bcc8b3825eccf8c8758957a524bdef7c0dd50e60ca97522c3142dead` |
+| 4 | `theorem` | [horizontal_displacement_eq_zero_of_quarticExtraction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PrimePowerQuadraticPort.lean/declarations/horizontal-displacement-eq-zero-of-quarticextraction.md) | 76 | `result-track:0212ea75356f4d0d1a1a30c7aba217028a758900b94f4a227a57d416f45dcdbe` |
+| 5 | `theorem` | [riemannHypothesis_of_primePowerGramExtraction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PrimePowerQuadraticPort.lean/declarations/riemannhypothesis-of-primepowergramextraction.md) | 85 | `result-track:587f1d2cd6dc9da103b45f3b2c5a6a0b85df8943547e4bb86e862a54e2ceef10` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/DiophantineEquations/FreyThreePortBounds.lean/index.md) · [Full source](../../../../../NumberTheory/DiophantineEquations/FreyThreePortBounds.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyThreePortBounds.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyThreePortBounds.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyAffineEvaluation`](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FreyAffineEvaluation.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyAffineEvaluation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FreyAffineEvaluation.lean/index.md) — import line 8; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [freyMaxNorm2](../../../../../NumberTheory/DiophantineEquations/FreyThreePortBounds.lean/declarations/freymaxnorm2.md) | 15 | `declaration-track:94d98c6d98ba616d635ede72e8d29cd08d9e70c3dbfafd17590e5a87959cc6ea` |
-| 2 | `def` | [freyMaxNorm3](../../../../../NumberTheory/DiophantineEquations/FreyThreePortBounds.lean/declarations/freymaxnorm3.md) | 19 | `declaration-track:845268a4bd4c2a412ff2be4cca3dff20b9334e51314bc7be235d1f904183bb2d` |
-| 3 | `theorem` | [PrimitiveAdditiveTriple.freyAffinePortEval_norm_lower](../../../../../NumberTheory/DiophantineEquations/FreyThreePortBounds.lean/declarations/primitiveadditivetriple-freyaffineporteval-norm-lower.md) | 25 | `result-track:e9fd5dcea3cc72a90bd35ae6955a65589734b53c6681c0a859b7c7817f03fac0` |
-| 4 | `theorem` | [freyThreePort_commonDivisor_iff](../../../../../NumberTheory/DiophantineEquations/FreyThreePortBounds.lean/declarations/freythreeport-commondivisor-iff.md) | 62 | `result-track:e9a381c7181bac7c297199f9d75bd6dda93712217dccf31ff9f779cb90344db5` |
-| 5 | `theorem` | [PrimitiveAdditiveTriple.threePort_commonDivisor_iff](../../../../../NumberTheory/DiophantineEquations/FreyThreePortBounds.lean/declarations/primitiveadditivetriple-threeport-commondivisor-iff.md) | 86 | `result-track:be5f9e4f764dcad3af106bc2a9278f23212516e93849d6feb3590791bbc578b6` |
-| 6 | `theorem` | [PrimitiveAdditiveTriple.freyAffinePortEval_x_norm](../../../../../NumberTheory/DiophantineEquations/FreyThreePortBounds.lean/declarations/primitiveadditivetriple-freyaffineporteval-x-norm.md) | 92 | `result-track:b78854b2164c650884a1dbf9c1725a8831d206378e8b0746bf283ed4a0b6683d` |
-| 7 | `theorem` | [PrimitiveAdditiveTriple.freyAffinePortEval_x_size_comparison](../../../../../NumberTheory/DiophantineEquations/FreyThreePortBounds.lean/declarations/primitiveadditivetriple-freyaffineporteval-x-size-comparison.md) | 106 | `result-track:34e4c1e2b55ecb5715ced34fa4e1323d47d1567a0af29f085d16f872e000f138` |
-| 8 | `def` | [freyBoundFixture235](../../../../../NumberTheory/DiophantineEquations/FreyThreePortBounds.lean/declarations/freyboundfixture235.md) | 122 | `declaration-track:f81e4fb39273a22c074c52ec767e6fc1b97f7016f1481c6312e596132f224dd4` |
-| 9 | `theorem` | [freyBoundFixture235_x_norm](../../../../../NumberTheory/DiophantineEquations/FreyThreePortBounds.lean/declarations/freyboundfixture235-x-norm.md) | 132 | `result-track:61e3f3ecc9daa22c7f5698ddad56441561f59b57ae117431c86ad5ae726a4f04` |
+| 1 | `def` | [freyMaxNorm2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyThreePortBounds.lean/declarations/freymaxnorm2.md) | 15 | `declaration-track:94d98c6d98ba616d635ede72e8d29cd08d9e70c3dbfafd17590e5a87959cc6ea` |
+| 2 | `def` | [freyMaxNorm3](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyThreePortBounds.lean/declarations/freymaxnorm3.md) | 19 | `declaration-track:845268a4bd4c2a412ff2be4cca3dff20b9334e51314bc7be235d1f904183bb2d` |
+| 3 | `theorem` | [PrimitiveAdditiveTriple.freyAffinePortEval_norm_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyThreePortBounds.lean/declarations/primitiveadditivetriple-freyaffineporteval-norm-lower.md) | 25 | `result-track:e9fd5dcea3cc72a90bd35ae6955a65589734b53c6681c0a859b7c7817f03fac0` |
+| 4 | `theorem` | [freyThreePort_commonDivisor_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyThreePortBounds.lean/declarations/freythreeport-commondivisor-iff.md) | 62 | `result-track:e9a381c7181bac7c297199f9d75bd6dda93712217dccf31ff9f779cb90344db5` |
+| 5 | `theorem` | [PrimitiveAdditiveTriple.threePort_commonDivisor_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyThreePortBounds.lean/declarations/primitiveadditivetriple-threeport-commondivisor-iff.md) | 86 | `result-track:be5f9e4f764dcad3af106bc2a9278f23212516e93849d6feb3590791bbc578b6` |
+| 6 | `theorem` | [PrimitiveAdditiveTriple.freyAffinePortEval_x_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyThreePortBounds.lean/declarations/primitiveadditivetriple-freyaffineporteval-x-norm.md) | 92 | `result-track:b78854b2164c650884a1dbf9c1725a8831d206378e8b0746bf283ed4a0b6683d` |
+| 7 | `theorem` | [PrimitiveAdditiveTriple.freyAffinePortEval_x_size_comparison](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyThreePortBounds.lean/declarations/primitiveadditivetriple-freyaffineporteval-x-size-comparison.md) | 106 | `result-track:34e4c1e2b55ecb5715ced34fa4e1323d47d1567a0af29f085d16f872e000f138` |
+| 8 | `def` | [freyBoundFixture235](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyThreePortBounds.lean/declarations/freyboundfixture235.md) | 122 | `declaration-track:f81e4fb39273a22c074c52ec767e6fc1b97f7016f1481c6312e596132f224dd4` |
+| 9 | `theorem` | [freyBoundFixture235_x_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyThreePortBounds.lean/declarations/freyboundfixture235-x-norm.md) | 132 | `result-track:61e3f3ecc9daa22c7f5698ddad56441561f59b57ae117431c86ad5ae726a4f04` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

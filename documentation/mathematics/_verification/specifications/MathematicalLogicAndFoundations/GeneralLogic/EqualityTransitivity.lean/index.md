@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EqualityTransitivity.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EqualityTransitivity.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EqualityTransitivity.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EqualityTransitivity.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [EqualityTransitivityStatement](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EqualityTransitivity.lean/declarations/equalitytransitivitystatement.md) | 14 | `declaration-track:86c7ccc8f01977f514747a33d5623be5aced96063c77fa252d88c6f49c1b1747` |
-| 2 | `def` | [equalityTransitivityOpenElement](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EqualityTransitivity.lean/declarations/equalitytransitivityopenelement.md) | 20 | `declaration-track:dcb626c7238ac88e1f7a4e124efd9ca13ead50c1ce9c8b23f58ac1b3cbea2a28` |
-| 3 | `def` | [equalityTransitivityDependency](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EqualityTransitivity.lean/declarations/equalitytransitivitydependency.md) | 35 | `declaration-track:e7a970dad070aca97cd9b9c40b6b5e2750f7b862dad2a1be6f296ef7250396a0` |
-| 4 | `def` | [equalityTransitivitySeed](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EqualityTransitivity.lean/declarations/equalitytransitivityseed.md) | 45 | `declaration-track:f1922f212063975d9867ab30f3c1efe3b81ae482a0d850dd7f9811f3c39672d6` |
-| 5 | `theorem` | [equalityTransitivity](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EqualityTransitivity.lean/declarations/equalitytransitivity.md) | 56 | `result-track:08824be0396775311839b96d771ae7e1cd10e06b1ec2ccee0250d6ec28a39c6e` |
-| 6 | `def` | [equalityTransitivityTheoremElement](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EqualityTransitivity.lean/declarations/equalitytransitivitytheoremelement.md) | 61 | `declaration-track:2ab9193efae49de3bf7b95b6f94b3220328c38f0ee03bf1d31f9f1a96b13be46` |
-| 7 | `def` | [equalityTransitivityCorpusItem](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EqualityTransitivity.lean/declarations/equalitytransitivitycorpusitem.md) | 72 | `declaration-track:8079c03192d2261648c6a56d108420207aee03c13cbfb6fbfc9fb06184063d61` |
+| 1 | `def` | [EqualityTransitivityStatement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EqualityTransitivity.lean/declarations/equalitytransitivitystatement.md) | 14 | `declaration-track:86c7ccc8f01977f514747a33d5623be5aced96063c77fa252d88c6f49c1b1747` |
+| 2 | `def` | [equalityTransitivityOpenElement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EqualityTransitivity.lean/declarations/equalitytransitivityopenelement.md) | 20 | `declaration-track:dcb626c7238ac88e1f7a4e124efd9ca13ead50c1ce9c8b23f58ac1b3cbea2a28` |
+| 3 | `def` | [equalityTransitivityDependency](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EqualityTransitivity.lean/declarations/equalitytransitivitydependency.md) | 35 | `declaration-track:e7a970dad070aca97cd9b9c40b6b5e2750f7b862dad2a1be6f296ef7250396a0` |
+| 4 | `def` | [equalityTransitivitySeed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EqualityTransitivity.lean/declarations/equalitytransitivityseed.md) | 45 | `declaration-track:f1922f212063975d9867ab30f3c1efe3b81ae482a0d850dd7f9811f3c39672d6` |
+| 5 | `theorem` | [equalityTransitivity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EqualityTransitivity.lean/declarations/equalitytransitivity.md) | 56 | `result-track:08824be0396775311839b96d771ae7e1cd10e06b1ec2ccee0250d6ec28a39c6e` |
+| 6 | `def` | [equalityTransitivityTheoremElement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EqualityTransitivity.lean/declarations/equalitytransitivitytheoremelement.md) | 61 | `declaration-track:2ab9193efae49de3bf7b95b6f94b3220328c38f0ee03bf1d31f9f1a96b13be46` |
+| 7 | `def` | [equalityTransitivityCorpusItem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EqualityTransitivity.lean/declarations/equalitytransitivitycorpusitem.md) | 72 | `declaration-track:8079c03192d2261648c6a56d108420207aee03c13cbfb6fbfc9fb06184063d61` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

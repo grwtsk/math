@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenSourceFrameControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenSourceFrameControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenSourceFrameControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenSourceFrameControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.DyadicGreenSourceFrame`](../../../../../MeasureAndIntegration/DyadicGreenSourceFrame.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.DyadicGreenSourceFrame`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DyadicGreenSourceFrame.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [frame_norm_is_actual_augmented_energy](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenSourceFrameControls.lean/declarations/frame-norm-is-actual-augmented-energy.md) | 14 | `result-track:986d4c50522266ac559db3bf469f05c979ff078b723536da6f0bdf7738970d82` |
-| 2 | `theorem` | [frame_atom_count_is_source_window_plus_background](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenSourceFrameControls.lean/declarations/frame-atom-count-is-source-window-plus-background.md) | 18 | `result-track:3fb3902f3089560267dacf7451f432c5ecf937b583e17b5e952f9cc759deec4c` |
+| 1 | `theorem` | [frame_norm_is_actual_augmented_energy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenSourceFrameControls.lean/declarations/frame-norm-is-actual-augmented-energy.md) | 14 | `result-track:986d4c50522266ac559db3bf469f05c979ff078b723536da6f0bdf7738970d82` |
+| 2 | `theorem` | [frame_atom_count_is_source_window_plus_background](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenSourceFrameControls.lean/declarations/frame-atom-count-is-source-window-plus-background.md) | 18 | `result-track:3fb3902f3089560267dacf7451f432c5ecf937b583e17b5e952f9cc759deec4c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

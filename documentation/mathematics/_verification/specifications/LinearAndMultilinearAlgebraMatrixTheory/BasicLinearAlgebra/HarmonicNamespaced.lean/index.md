@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HarmonicNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HarmonicNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HarmonicNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HarmonicNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [IsHarmonic](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HarmonicNamespaced.lean/declarations/isharmonic.md) | 32 | `declaration-track:197d3bd2152a2506e8751058001d53b1195979afb90b4d6da883e53213f07a75` |
-| 2 | `theorem` | [harmonic_iff_mem_ker_laplacian](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HarmonicNamespaced.lean/declarations/harmonic-iff-mem-ker-laplacian.md) | 36 | `result-track:be333dde7f710aa134d4d3d04c78a8d5192f132282a010aba3daba9f72c667c0` |
-| 3 | `theorem` | [laplacian_positive](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HarmonicNamespaced.lean/declarations/laplacian-positive.md) | 44 | `result-track:3ecde1696788ed526dce6769f644cc241ec0badeeac8ddd23aefd7ac254a8550` |
+| 1 | `def` | [IsHarmonic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HarmonicNamespaced.lean/declarations/isharmonic.md) | 32 | `declaration-track:197d3bd2152a2506e8751058001d53b1195979afb90b4d6da883e53213f07a75` |
+| 2 | `theorem` | [harmonic_iff_mem_ker_laplacian](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HarmonicNamespaced.lean/declarations/harmonic-iff-mem-ker-laplacian.md) | 36 | `result-track:be333dde7f710aa134d4d3d04c78a8d5192f132282a010aba3daba9f72c667c0` |
+| 3 | `theorem` | [laplacian_positive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HarmonicNamespaced.lean/declarations/laplacian-positive.md) | 44 | `result-track:3ecde1696788ed526dce6769f644cc241ec0badeeac8ddd23aefd7ac254a8550` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

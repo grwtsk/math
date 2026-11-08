@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/SurfacePolygonAdjunctionExtension.lean/index.md) · [Full source](../../../../AlgebraicTopology/SurfacePolygonAdjunctionExtension.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonAdjunctionExtension.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonAdjunctionExtension.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAdjunctionCompatibility`](../../../../GeneralTopology/SurfacePolygonAdjunctionCompatibility.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAdjunctionCompatibility`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonAdjunctionCompatibility.lean/index.md) — import line 8; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [conePullback](../../../../AlgebraicTopology/SurfacePolygonAdjunctionExtension.lean/declarations/conepullback.md) | 37 | `declaration-track:1168bc5c867d541a0049b18a2c033525624bbc20f7c1e8b15841899ec29e30e1` |
-| 2 | `theorem` | [conePullback_respects_outerStep](../../../../AlgebraicTopology/SurfacePolygonAdjunctionExtension.lean/declarations/conepullback-respects-outerstep.md) | 43 | `result-track:d86440d1290ff62636dcfea4be4d4e58947630f1c37bb756d614ff5f83122d2a` |
-| 3 | `theorem` | [conePullback_respects_outerConnected](../../../../AlgebraicTopology/SurfacePolygonAdjunctionExtension.lean/declarations/conepullback-respects-outerconnected.md) | 83 | `result-track:5c3158a0a11f970cc36ef1cd7225f917a53188a4ef48908f737fff50c63ffe5a` |
-| 4 | `theorem` | [disk_eq_of_characteristic_eq](../../../../AlgebraicTopology/SurfacePolygonAdjunctionExtension.lean/declarations/disk-eq-of-characteristic-eq.md) | 100 | `result-track:36faaafde29048d81843d49cf4aea7242de69708d93861bb8d11804c0e6e882b` |
+| 1 | `def` | [conePullback](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonAdjunctionExtension.lean/declarations/conepullback.md) | 37 | `declaration-track:1168bc5c867d541a0049b18a2c033525624bbc20f7c1e8b15841899ec29e30e1` |
+| 2 | `theorem` | [conePullback_respects_outerStep](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonAdjunctionExtension.lean/declarations/conepullback-respects-outerstep.md) | 43 | `result-track:d86440d1290ff62636dcfea4be4d4e58947630f1c37bb756d614ff5f83122d2a` |
+| 3 | `theorem` | [conePullback_respects_outerConnected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonAdjunctionExtension.lean/declarations/conepullback-respects-outerconnected.md) | 83 | `result-track:5c3158a0a11f970cc36ef1cd7225f917a53188a4ef48908f737fff50c63ffe5a` |
+| 4 | `theorem` | [disk_eq_of_characteristic_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonAdjunctionExtension.lean/declarations/disk-eq-of-characteristic-eq.md) | 100 | `result-track:36faaafde29048d81843d49cf4aea7242de69708d93861bb8d11804c0e6e882b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

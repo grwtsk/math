@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/SuppliedGroupLaw.lean/index.md) · [Full source](../../../../../NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/SuppliedGroupLaw.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/SuppliedGroupLaw.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/SuppliedGroupLaw.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [Point Completion](../../../../../NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/PointCompletion.lean/index.md) — import line 19; pinned internal source present.
+- [Point Completion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/PointCompletion.lean/index.md) — import line 19; pinned internal source present.
 - `Folder.Arithmetic.Weierstrass` — import line 21; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ECGroupLaw](../../../../../NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/SuppliedGroupLaw.lean/declarations/ecgrouplaw.md) | 42 | `declaration-track:d3e575f375fc6675b39a14845b39d233804be588ecac95eb16e66b0a22502571` |
+| 1 | `structure` | [ECGroupLaw](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/SuppliedGroupLaw.lean/declarations/ecgrouplaw.md) | 42 | `declaration-track:d3e575f375fc6675b39a14845b39d233804be588ecac95eb16e66b0a22502571` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

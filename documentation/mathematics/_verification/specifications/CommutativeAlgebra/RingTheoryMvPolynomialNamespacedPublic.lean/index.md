@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/RingTheoryMvPolynomialNamespacedPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/RingTheoryMvPolynomialNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryMvPolynomialNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryMvPolynomialNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [quotient_mk_comp_C_injective](../../../../CommutativeAlgebra/RingTheoryMvPolynomialNamespacedPublic.lean/declarations/quotient-mk-comp-c-injective.md) | 42 | `result-track:557a3fa887ac4b3d9f16bceafe42a6f7d2d8459ec422594b96d9bec10c383c59` |
-| 2 | `theorem` | [rank_eq_lift](../../../../CommutativeAlgebra/RingTheoryMvPolynomialNamespacedPublic.lean/declarations/rank-eq-lift.md) | 53 | `result-track:55bca9165b9115deaa712ab347bc1d7b2a3b89993a5fd628171a954dc5ab54d2` |
-| 3 | `theorem` | [rank_eq](../../../../CommutativeAlgebra/RingTheoryMvPolynomialNamespacedPublic.lean/declarations/rank-eq.md) | 56 | `result-track:589e82a22fb7882d08fcfa6d62a8f1f7b9494680f83dfe9f7c4a1c6e6b03e1c4` |
-| 4 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/RingTheoryMvPolynomialNamespacedPublic.lean/declarations/instance.md) | 59 | `declaration-track:cc32b9dce6bd815bbc4aa6c2abf2759d9d653d0b0d3b37c85d2a9e6a358905a8` |
-| 5 | `theorem` | [finrank_eq_zero](../../../../CommutativeAlgebra/RingTheoryMvPolynomialNamespacedPublic.lean/declarations/finrank-eq-zero.md) | 62 | `result-track:fe98516a439ddfc462b02d89b1fc510788560e5dae56caee338b447aa09b4883` |
-| 6 | `theorem` | [finrank_eq_one](../../../../CommutativeAlgebra/RingTheoryMvPolynomialNamespacedPublic.lean/declarations/finrank-eq-one.md) | 66 | `result-track:83254ad42068f3c42df70f4680550e20a2d4b049b573de797e917c032f2bdfa5` |
+| 1 | `theorem` | [quotient_mk_comp_C_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryMvPolynomialNamespacedPublic.lean/declarations/quotient-mk-comp-c-injective.md) | 42 | `result-track:557a3fa887ac4b3d9f16bceafe42a6f7d2d8459ec422594b96d9bec10c383c59` |
+| 2 | `theorem` | [rank_eq_lift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryMvPolynomialNamespacedPublic.lean/declarations/rank-eq-lift.md) | 53 | `result-track:55bca9165b9115deaa712ab347bc1d7b2a3b89993a5fd628171a954dc5ab54d2` |
+| 3 | `theorem` | [rank_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryMvPolynomialNamespacedPublic.lean/declarations/rank-eq.md) | 56 | `result-track:589e82a22fb7882d08fcfa6d62a8f1f7b9494680f83dfe9f7c4a1c6e6b03e1c4` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryMvPolynomialNamespacedPublic.lean/declarations/instance.md) | 59 | `declaration-track:cc32b9dce6bd815bbc4aa6c2abf2759d9d653d0b0d3b37c85d2a9e6a358905a8` |
+| 5 | `theorem` | [finrank_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryMvPolynomialNamespacedPublic.lean/declarations/finrank-eq-zero.md) | 62 | `result-track:fe98516a439ddfc462b02d89b1fc510788560e5dae56caee338b447aa09b4883` |
+| 6 | `theorem` | [finrank_eq_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryMvPolynomialNamespacedPublic.lean/declarations/finrank-eq-one.md) | 66 | `result-track:83254ad42068f3c42df70f4680550e20a2d4b049b573de797e917c032f2bdfa5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

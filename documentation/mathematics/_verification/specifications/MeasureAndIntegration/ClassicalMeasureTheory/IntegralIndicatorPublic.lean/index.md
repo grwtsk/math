@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntegralIndicatorPublic.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntegralIndicatorPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntegralIndicatorPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntegralIndicatorPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [tendsto_measure_of_ae_tendsto_indicator](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntegralIndicatorPublic.lean/declarations/tendsto-measure-of-ae-tendsto-indicator.md) | 47 | `result-track:3682696950057e6dfd4112ab4ea91af49a235e04282c6a794327695d40f040dc` |
-| 2 | `lemma` | [tendsto_measure_of_ae_tendsto_indicator_of_isFiniteMeasure](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntegralIndicatorPublic.lean/declarations/tendsto-measure-of-ae-tendsto-indicator-of-isfinitemeasure.md) | 65 | `result-track:591b07486f76a2ecabf73526ed300c357a381aff82c6fc168b35fa4b17edaa73` |
-| 3 | `lemma` | [tendsto_measure_of_tendsto_indicator](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntegralIndicatorPublic.lean/declarations/tendsto-measure-of-tendsto-indicator.md) | 75 | `result-track:5d53b546804f587889663ffd58639ff2006faa8ab5dfab85b910ce57827fffa9` |
-| 4 | `lemma` | [tendsto_measure_of_tendsto_indicator_of_isFiniteMeasure](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntegralIndicatorPublic.lean/declarations/tendsto-measure-of-tendsto-indicator-of-isfinitemeasure.md) | 88 | `result-track:00e3f1508c98f6b09884c254cca6d9ec7814ef46e03411681c8ad554352cba74` |
+| 1 | `lemma` | [tendsto_measure_of_ae_tendsto_indicator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntegralIndicatorPublic.lean/declarations/tendsto-measure-of-ae-tendsto-indicator.md) | 47 | `result-track:3682696950057e6dfd4112ab4ea91af49a235e04282c6a794327695d40f040dc` |
+| 2 | `lemma` | [tendsto_measure_of_ae_tendsto_indicator_of_isFiniteMeasure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntegralIndicatorPublic.lean/declarations/tendsto-measure-of-ae-tendsto-indicator-of-isfinitemeasure.md) | 65 | `result-track:591b07486f76a2ecabf73526ed300c357a381aff82c6fc168b35fa4b17edaa73` |
+| 3 | `lemma` | [tendsto_measure_of_tendsto_indicator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntegralIndicatorPublic.lean/declarations/tendsto-measure-of-tendsto-indicator.md) | 75 | `result-track:5d53b546804f587889663ffd58639ff2006faa8ab5dfab85b910ce57827fffa9` |
+| 4 | `lemma` | [tendsto_measure_of_tendsto_indicator_of_isFiniteMeasure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntegralIndicatorPublic.lean/declarations/tendsto-measure-of-tendsto-indicator-of-isfinitemeasure.md) | 88 | `result-track:00e3f1508c98f6b09884c254cca6d9ec7814ef46e03411681c8ad554352cba74` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

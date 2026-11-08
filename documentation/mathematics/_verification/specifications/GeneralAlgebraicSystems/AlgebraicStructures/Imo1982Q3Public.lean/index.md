@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Imo1982Q3Public.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Imo1982Q3Public.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Imo1982Q3Public.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Imo1982Q3Public.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [le_avg](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Imo1982Q3Public.lean/declarations/le-avg.md) | 45 | `result-track:f3478239b68e22590e6d8448febdcdd75b84a8a19a675d99cee80856efd8f92b` |
-| 2 | `lemma` | [ineq](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Imo1982Q3Public.lean/declarations/ineq.md) | 54 | `result-track:cd426c209fe5dc88fc8c88b014c0414f5b60bf8b9de2741b0ad5a0a40ca765d1` |
-| 3 | `theorem` | [imo1982_q3a](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Imo1982Q3Public.lean/declarations/imo1982-q3a.md) | 79 | `result-track:8922d545b3c7feaf601e9c7a4496459beec3d9aca700963e2e3289c08f870729` |
-| 4 | `theorem` | [imo1982_q3b](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Imo1982Q3Public.lean/declarations/imo1982-q3b.md) | 86 | `result-track:c87062e4609c8f69a03438a0c3c01ee4e6bc835cf7ada1b10a1ae08e8f30d767` |
+| 1 | `lemma` | [le_avg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Imo1982Q3Public.lean/declarations/le-avg.md) | 45 | `result-track:f3478239b68e22590e6d8448febdcdd75b84a8a19a675d99cee80856efd8f92b` |
+| 2 | `lemma` | [ineq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Imo1982Q3Public.lean/declarations/ineq.md) | 54 | `result-track:cd426c209fe5dc88fc8c88b014c0414f5b60bf8b9de2741b0ad5a0a40ca765d1` |
+| 3 | `theorem` | [imo1982_q3a](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Imo1982Q3Public.lean/declarations/imo1982-q3a.md) | 79 | `result-track:8922d545b3c7feaf601e9c7a4496459beec3d9aca700963e2e3289c08f870729` |
+| 4 | `theorem` | [imo1982_q3b](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Imo1982Q3Public.lean/declarations/imo1982-q3b.md) | 86 | `result-track:c87062e4609c8f69a03438a0c3c01ee4e6bc835cf7ada1b10a1ae08e8f30d767` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

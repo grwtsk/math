@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/StableInvariantTraceNamespaced.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/StableInvariantTraceNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/StableInvariantTraceNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/StableInvariantTraceNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [StableFiniteInvariantTrace](../../../../ProbabilityTheoryAndStochasticProcesses/StableInvariantTraceNamespaced.lean/declarations/stablefiniteinvarianttrace.md) | 20 | `declaration-track:0f95c98d7ab0e6413afc443d6629b02e57035ffab8888dbe90922935d875650d` |
+| 1 | `structure` | [StableFiniteInvariantTrace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/StableInvariantTraceNamespaced.lean/declarations/stablefiniteinvarianttrace.md) | 20 | `declaration-track:0f95c98d7ab0e6413afc443d6629b02e57035ffab8888dbe90922935d875650d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/CompletenessNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/CompletenessNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CompletenessNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CompletenessNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [GlobalZeroCountCertificate](../../../../Combinatorics/CompletenessNamespaced.lean/declarations/globalzerocountcertificate.md) | 26 | `declaration-track:e161384e9ef3a5524aebf4f7e0efec1e57e9f74dd2406ea86cce67dbb301a745` |
-| 2 | `structure` | [GlobalFiniteHeightZeroCount](../../../../Combinatorics/CompletenessNamespaced.lean/declarations/globalfiniteheightzerocount.md) | 55 | `declaration-track:b46e7a2ea3711f9296909a3045319a44c7f7c7ac27326b5bd9775d6c73838f80` |
-| 3 | `structure` | [CertifiedZeroRegion](../../../../Combinatorics/CompletenessNamespaced.lean/declarations/certifiedzeroregion.md) | 64 | `declaration-track:d28bad4922868e6cf46136199150268d4eece0373fce6f5b347b9202a7d11d9c` |
-| 4 | `structure` | [FiniteHeightCompletenessCertificate](../../../../Combinatorics/CompletenessNamespaced.lean/declarations/finiteheightcompletenesscertificate.md) | 76 | `declaration-track:a68a35fdc02480248f08fe112401ae85ebc8878cca7fcf46d9cd12c66d02cc8a` |
-| 5 | `theorem` | [finiteHeightCompleteness_accounts_for_allZeros](../../../../Combinatorics/CompletenessNamespaced.lean/declarations/finiteheightcompleteness-accounts-for-allzeros.md) | 112 | `result-track:11e05c551ad5028099222f5099a1231d7435b7943b45011e9245ba11e52f8609` |
-| 6 | `structure` | [FiniteHeightRHCertificate](../../../../Combinatorics/CompletenessNamespaced.lean/declarations/finiteheightrhcertificate.md) | 133 | `declaration-track:b24433a1d4d8f7f0cea40bbd36674a76b6351389410ed46f14ebef9286d5dcab` |
-| 7 | `theorem` | [finiteHeightRH_sound](../../../../Combinatorics/CompletenessNamespaced.lean/declarations/finiteheightrh-sound.md) | 143 | `result-track:ad4daa43d8af8738f0394a4cf094cabc23b0a8e824d58b57d14a43100ee753c6` |
+| 1 | `structure` | [GlobalZeroCountCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CompletenessNamespaced.lean/declarations/globalzerocountcertificate.md) | 26 | `declaration-track:e161384e9ef3a5524aebf4f7e0efec1e57e9f74dd2406ea86cce67dbb301a745` |
+| 2 | `structure` | [GlobalFiniteHeightZeroCount](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CompletenessNamespaced.lean/declarations/globalfiniteheightzerocount.md) | 55 | `declaration-track:b46e7a2ea3711f9296909a3045319a44c7f7c7ac27326b5bd9775d6c73838f80` |
+| 3 | `structure` | [CertifiedZeroRegion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CompletenessNamespaced.lean/declarations/certifiedzeroregion.md) | 64 | `declaration-track:d28bad4922868e6cf46136199150268d4eece0373fce6f5b347b9202a7d11d9c` |
+| 4 | `structure` | [FiniteHeightCompletenessCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CompletenessNamespaced.lean/declarations/finiteheightcompletenesscertificate.md) | 76 | `declaration-track:a68a35fdc02480248f08fe112401ae85ebc8878cca7fcf46d9cd12c66d02cc8a` |
+| 5 | `theorem` | [finiteHeightCompleteness_accounts_for_allZeros](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CompletenessNamespaced.lean/declarations/finiteheightcompleteness-accounts-for-allzeros.md) | 112 | `result-track:11e05c551ad5028099222f5099a1231d7435b7943b45011e9245ba11e52f8609` |
+| 6 | `structure` | [FiniteHeightRHCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CompletenessNamespaced.lean/declarations/finiteheightrhcertificate.md) | 133 | `declaration-track:b24433a1d4d8f7f0cea40bbd36674a76b6351389410ed46f14ebef9286d5dcab` |
+| 7 | `theorem` | [finiteHeightRH_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CompletenessNamespaced.lean/declarations/finiteheightrh-sound.md) | 143 | `result-track:ad4daa43d8af8738f0394a4cf094cabc23b0a8e824d58b57d14a43100ee753c6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

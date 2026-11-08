@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../IntegralTransformsOperationalCalculus/LogarithmicProfileRegularity.lean/index.md) · [Full source](../../../../IntegralTransformsOperationalCalculus/LogarithmicProfileRegularity.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/LogarithmicProfileRegularity.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/LogarithmicProfileRegularity.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [logarithmic_profile_zero_left](../../../../IntegralTransformsOperationalCalculus/LogarithmicProfileRegularity.lean/declarations/logarithmic-profile-zero-left.md) | 27 | `result-track:84617ab2c2c75bf2edc5c84192866b89151f3217309d8e22222d33e6babed338` |
-| 2 | `theorem` | [logarithmic_profile_contDiff](../../../../IntegralTransformsOperationalCalculus/LogarithmicProfileRegularity.lean/declarations/logarithmic-profile-contdiff.md) | 36 | `result-track:0c1f15a08a7913a8c825be8c3b874c676cb902eb6fd9b7765b307c2f5432795f` |
+| 1 | `theorem` | [logarithmic_profile_zero_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/LogarithmicProfileRegularity.lean/declarations/logarithmic-profile-zero-left.md) | 27 | `result-track:84617ab2c2c75bf2edc5c84192866b89151f3217309d8e22222d33e6babed338` |
+| 2 | `theorem` | [logarithmic_profile_contDiff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/LogarithmicProfileRegularity.lean/declarations/logarithmic-profile-contdiff.md) | 36 | `result-track:0c1f15a08a7913a8c825be8c3b874c676cb902eb6fd9b7765b307c2f5432795f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

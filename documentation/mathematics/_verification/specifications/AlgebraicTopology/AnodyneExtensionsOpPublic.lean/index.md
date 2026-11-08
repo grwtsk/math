@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/AnodyneExtensionsOpPublic.lean/index.md) · [Full source](../../../../AlgebraicTopology/AnodyneExtensionsOpPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/AnodyneExtensionsOpPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/AnodyneExtensionsOpPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [op](../../../../AlgebraicTopology/AnodyneExtensionsOpPublic.lean/declarations/op.md) | 30 | `declaration-track:cc68e183865cd406c8feb0982300b223a793519fa58ad960fa641bf1873b05cb` |
-| 2 | `lemma` | [op_p](../../../../AlgebraicTopology/AnodyneExtensionsOpPublic.lean/declarations/op-p.md) | 39 | `result-track:32bc8535a9859b606c5dd46acc9e92d5dc338c093352cadc6ade38d94f81b72b` |
-| 3 | `lemma` | [op_ancestralRel_iff](../../../../AlgebraicTopology/AnodyneExtensionsOpPublic.lean/declarations/op-ancestralrel-iff.md) | 43 | `result-track:8499e6af1460cfcfe3775280d98bd0d493052ad2ec07f7922a2bdfc9fd2b98fc` |
-| 4 | `instance` | [(anonymous)](../../../../AlgebraicTopology/AnodyneExtensionsOpPublic.lean/declarations/instance-source-edition-2.md) | 48 | `declaration-track:97ab19cf333b6559c5e67d7fbdb4984e1cc7fef767f474e91d26f836908bc963` |
-| 5 | `instance` | [(anonymous)](../../../../AlgebraicTopology/AnodyneExtensionsOpPublic.lean/declarations/instance.md) | 51 | `declaration-track:19b543c7f6a1ab57b5e302a49f64790d872c3b27fd09df07e52259d22ac4ebd6` |
+| 1 | `def` | [op](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/AnodyneExtensionsOpPublic.lean/declarations/op.md) | 30 | `declaration-track:cc68e183865cd406c8feb0982300b223a793519fa58ad960fa641bf1873b05cb` |
+| 2 | `lemma` | [op_p](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/AnodyneExtensionsOpPublic.lean/declarations/op-p.md) | 39 | `result-track:32bc8535a9859b606c5dd46acc9e92d5dc338c093352cadc6ade38d94f81b72b` |
+| 3 | `lemma` | [op_ancestralRel_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/AnodyneExtensionsOpPublic.lean/declarations/op-ancestralrel-iff.md) | 43 | `result-track:8499e6af1460cfcfe3775280d98bd0d493052ad2ec07f7922a2bdfc9fd2b98fc` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/AnodyneExtensionsOpPublic.lean/declarations/instance-source-edition-2.md) | 48 | `declaration-track:97ab19cf333b6559c5e67d7fbdb4984e1cc7fef767f474e91d26f836908bc963` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/AnodyneExtensionsOpPublic.lean/declarations/instance.md) | 51 | `declaration-track:19b543c7f6a1ab57b5e302a49f64790d872c3b27fd09df07e52259d22ac4ebd6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

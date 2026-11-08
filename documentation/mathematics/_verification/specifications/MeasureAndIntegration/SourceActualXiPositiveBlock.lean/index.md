@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceActualXiPositiveBlock.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceActualXiPositiveBlock.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualXiPositiveBlock.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualXiPositiveBlock.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,16 +59,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualTransformedXiBlockDensity](../../../../MeasureAndIntegration/SourceActualXiPositiveBlock.lean/declarations/actualtransformedxiblockdensity.md) | 26 | `declaration-track:b69a908e53ae7e92d4a3d2f817cd323e0f4e70b89b4c63cee68a5e40286ebe22` |
-| 2 | `def` | [blockMargin](../../../../MeasureAndIntegration/SourceActualXiPositiveBlock.lean/declarations/blockmargin.md) | 33 | `declaration-track:f2e656587f90d288414c423756c8e4d69229f42d99d839139fb851ee790263b2` |
-| 3 | `theorem` | [log_seven_lt_two](../../../../MeasureAndIntegration/SourceActualXiPositiveBlock.lean/declarations/log-seven-lt-two.md) | 35 | `result-track:c7e5266e003e96329ac634bfc934917173ba00b28475a5c32b6770d877c2a8ac` |
-| 4 | `theorem` | [actual_transformed_kernel_negative](../../../../MeasureAndIntegration/SourceActualXiPositiveBlock.lean/declarations/actual-transformed-kernel-negative.md) | 47 | `result-track:1347acd50cf2bd7ab809e36144559778272f968a032c8829ca3b5e0edc03816d` |
-| 5 | `theorem` | [actual_transformed_density_lower](../../../../MeasureAndIntegration/SourceActualXiPositiveBlock.lean/declarations/actual-transformed-density-lower.md) | 68 | `result-track:286b1f55ddfd4cba74f20d2ad2e9e1e550064e9483f1f5b47ea508262203ae2c` |
-| 6 | `theorem` | [actual_transformed_density_intervalIntegrable](../../../../MeasureAndIntegration/SourceActualXiPositiveBlock.lean/declarations/actual-transformed-density-intervalintegrable.md) | 84 | `result-track:5a542af28cd5565162282fc2a97382bde05514cadf8741b43eda6d82e376d7a9` |
-| 7 | `theorem` | [reciprocal_sqrt_six_half](../../../../MeasureAndIntegration/SourceActualXiPositiveBlock.lean/declarations/reciprocal-sqrt-six-half.md) | 112 | `result-track:8409b71e81bedf5e9540bd13fb6a11d4c44a3685fe3e041df77a380de2c0dbb8` |
-| 8 | `theorem` | [blockMargin_pos](../../../../MeasureAndIntegration/SourceActualXiPositiveBlock.lean/declarations/blockmargin-pos.md) | 118 | `result-track:caad5665f706df691088e80673b46dcd5c42a64dd307dccbf0dd15029f028bb6` |
-| 9 | `theorem` | [lower_density_integral](../../../../MeasureAndIntegration/SourceActualXiPositiveBlock.lean/declarations/lower-density-integral.md) | 127 | `result-track:bfa63c28f54f474a964f445b803857f28eb85674993da8b2eb02bdda9b53fb34` |
-| 10 | `theorem` | [actual_transformed_block_integral_lower](../../../../MeasureAndIntegration/SourceActualXiPositiveBlock.lean/declarations/actual-transformed-block-integral-lower.md) | 152 | `result-track:cebc55ad9dca689fd1b135b486591705fc63374a8bdc3afeca3c05768ba278d3` |
+| 1 | `def` | [actualTransformedXiBlockDensity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualXiPositiveBlock.lean/declarations/actualtransformedxiblockdensity.md) | 26 | `declaration-track:b69a908e53ae7e92d4a3d2f817cd323e0f4e70b89b4c63cee68a5e40286ebe22` |
+| 2 | `def` | [blockMargin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualXiPositiveBlock.lean/declarations/blockmargin.md) | 33 | `declaration-track:f2e656587f90d288414c423756c8e4d69229f42d99d839139fb851ee790263b2` |
+| 3 | `theorem` | [log_seven_lt_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualXiPositiveBlock.lean/declarations/log-seven-lt-two.md) | 35 | `result-track:c7e5266e003e96329ac634bfc934917173ba00b28475a5c32b6770d877c2a8ac` |
+| 4 | `theorem` | [actual_transformed_kernel_negative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualXiPositiveBlock.lean/declarations/actual-transformed-kernel-negative.md) | 47 | `result-track:1347acd50cf2bd7ab809e36144559778272f968a032c8829ca3b5e0edc03816d` |
+| 5 | `theorem` | [actual_transformed_density_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualXiPositiveBlock.lean/declarations/actual-transformed-density-lower.md) | 68 | `result-track:286b1f55ddfd4cba74f20d2ad2e9e1e550064e9483f1f5b47ea508262203ae2c` |
+| 6 | `theorem` | [actual_transformed_density_intervalIntegrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualXiPositiveBlock.lean/declarations/actual-transformed-density-intervalintegrable.md) | 84 | `result-track:5a542af28cd5565162282fc2a97382bde05514cadf8741b43eda6d82e376d7a9` |
+| 7 | `theorem` | [reciprocal_sqrt_six_half](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualXiPositiveBlock.lean/declarations/reciprocal-sqrt-six-half.md) | 112 | `result-track:8409b71e81bedf5e9540bd13fb6a11d4c44a3685fe3e041df77a380de2c0dbb8` |
+| 8 | `theorem` | [blockMargin_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualXiPositiveBlock.lean/declarations/blockmargin-pos.md) | 118 | `result-track:caad5665f706df691088e80673b46dcd5c42a64dd307dccbf0dd15029f028bb6` |
+| 9 | `theorem` | [lower_density_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualXiPositiveBlock.lean/declarations/lower-density-integral.md) | 127 | `result-track:bfa63c28f54f474a964f445b803857f28eb85674993da8b2eb02bdda9b53fb34` |
+| 10 | `theorem` | [actual_transformed_block_integral_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualXiPositiveBlock.lean/declarations/actual-transformed-block-integral-lower.md) | 152 | `result-track:cebc55ad9dca689fd1b135b486591705fc63374a8bdc3afeca3c05768ba278d3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

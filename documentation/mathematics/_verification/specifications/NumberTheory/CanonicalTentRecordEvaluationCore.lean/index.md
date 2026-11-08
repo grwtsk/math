@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/CanonicalTentRecordEvaluationCore.lean/index.md) · [Full source](../../../../NumberTheory/CanonicalTentRecordEvaluationCore.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentRecordEvaluationCore.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentRecordEvaluationCore.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,11 +46,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Interfaces.CanonicalTentPrimeCore`](../../../../NumberTheory/CanonicalTentPrimeCore.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.FiniteExponentialEnclosure`](../../../../FunctionsOfAComplexVariable/FiniteExponentialEnclosure.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.TentKernelEnclosure`](../../../../FunctionsOfAComplexVariable/TentKernelEnclosure.lean/index.md) — import line 6; pinned internal source present.
-- [`GRWTSK.NumberTheory.Chebyshev.CanonicalTentRecordEvaluation`](../../../../NumberTheory/CanonicalTentRecordEvaluation.lean/index.md) — import line 7; pinned internal source present.
-- [`GRWTSK.NumberTheory.Chebyshev.Checks.TentRecordEvaluationControls`](../../../../NumberTheory/TentRecordEvaluationControls.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.Interfaces.CanonicalTentPrimeCore`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentPrimeCore.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.FiniteExponentialEnclosure`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FiniteExponentialEnclosure.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.TentKernelEnclosure`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/TentKernelEnclosure.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.CanonicalTentRecordEvaluation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentRecordEvaluation.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.Checks.TentRecordEvaluationControls`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentRecordEvaluationControls.lean/index.md) — import line 8; pinned internal source present.
 
 ## Top results and three-degree verification metric
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/OrthogonalityPublic.lean/index.md) · [Full source](../../../../NumberTheory/OrthogonalityPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/OrthogonalityPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/OrthogonalityPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [fintype](../../../../NumberTheory/OrthogonalityPublic.lean/declarations/fintype.md) | 26 | `declaration-track:1968935e6b53eba2d9f26ad9208a65baa3860694fd3e052c34795d04821bc094` |
-| 2 | `lemma` | [mulEquiv_units](../../../../NumberTheory/OrthogonalityPublic.lean/declarations/mulequiv-units.md) | 34 | `result-track:2401ce068a74adf0b80c5a56dcac32a7af46142f50ce7672c25847d720578b43` |
-| 3 | `lemma` | [card_eq_totient_of_hasEnoughRootsOfUnity](../../../../NumberTheory/OrthogonalityPublic.lean/declarations/card-eq-totient-of-hasenoughrootsofunity.md) | 39 | `result-track:27ab6062ea8c3e730000f7495c84911ff761541681b8a7dceccd206eade4614e` |
-| 4 | `theorem` | [exists_apply_ne_one_of_hasEnoughRootsOfUnity](../../../../NumberTheory/OrthogonalityPublic.lean/declarations/exists-apply-ne-one-of-hasenoughrootsofunity.md) | 49 | `result-track:81d3a9e7e96bc3c47d96e17cd85d93267d33f9e696dd204d8175e407547078ee` |
-| 5 | `theorem` | [sum_characters_eq_zero](../../../../NumberTheory/OrthogonalityPublic.lean/declarations/sum-characters-eq-zero.md) | 58 | `result-track:8e7b941e1b174635a7ee965a1510b3a0364ade5c0b16e476a8079279e34a2071` |
-| 6 | `theorem` | [sum_characters_eq](../../../../NumberTheory/OrthogonalityPublic.lean/declarations/sum-characters-eq.md) | 68 | `result-track:da5aeaed91479c5c65a86055d739d743763d386a09e91ccd51a1d3bbaebcefe3` |
-| 7 | `theorem` | [sum_char_inv_mul_char_eq](../../../../NumberTheory/OrthogonalityPublic.lean/declarations/sum-char-inv-mul-char-eq.md) | 79 | `result-track:ed0ee0f3d17e6ce95534c937e3b81b75056d68f348dc461498d02baca8f86647` |
+| 1 | `instance` | [fintype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/OrthogonalityPublic.lean/declarations/fintype.md) | 26 | `declaration-track:1968935e6b53eba2d9f26ad9208a65baa3860694fd3e052c34795d04821bc094` |
+| 2 | `lemma` | [mulEquiv_units](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/OrthogonalityPublic.lean/declarations/mulequiv-units.md) | 34 | `result-track:2401ce068a74adf0b80c5a56dcac32a7af46142f50ce7672c25847d720578b43` |
+| 3 | `lemma` | [card_eq_totient_of_hasEnoughRootsOfUnity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/OrthogonalityPublic.lean/declarations/card-eq-totient-of-hasenoughrootsofunity.md) | 39 | `result-track:27ab6062ea8c3e730000f7495c84911ff761541681b8a7dceccd206eade4614e` |
+| 4 | `theorem` | [exists_apply_ne_one_of_hasEnoughRootsOfUnity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/OrthogonalityPublic.lean/declarations/exists-apply-ne-one-of-hasenoughrootsofunity.md) | 49 | `result-track:81d3a9e7e96bc3c47d96e17cd85d93267d33f9e696dd204d8175e407547078ee` |
+| 5 | `theorem` | [sum_characters_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/OrthogonalityPublic.lean/declarations/sum-characters-eq-zero.md) | 58 | `result-track:8e7b941e1b174635a7ee965a1510b3a0364ade5c0b16e476a8079279e34a2071` |
+| 6 | `theorem` | [sum_characters_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/OrthogonalityPublic.lean/declarations/sum-characters-eq.md) | 68 | `result-track:da5aeaed91479c5c65a86055d739d743763d386a09e91ccd51a1d3bbaebcefe3` |
+| 7 | `theorem` | [sum_char_inv_mul_char_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/OrthogonalityPublic.lean/declarations/sum-char-inv-mul-char-eq.md) | 79 | `result-track:ed0ee0f3d17e6ce95534c937e3b81b75056d68f348dc461498d02baca8f86647` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

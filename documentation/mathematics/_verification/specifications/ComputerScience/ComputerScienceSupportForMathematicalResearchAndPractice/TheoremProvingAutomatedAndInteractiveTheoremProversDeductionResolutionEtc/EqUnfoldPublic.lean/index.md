@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/EqUnfoldPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/EqUnfoldPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/EqUnfoldPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/EqUnfoldPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [tryURefl](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/EqUnfoldPublic.lean/declarations/tryurefl.md) | 18 | `declaration-track:99e2be17f0822498d9cefc62b7b6157afc00cf08ac74bec27923f50eb4ad9424` |
-| 2 | `def` | [getConstUnfoldEqnFor?](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/EqUnfoldPublic.lean/declarations/getconstunfoldeqnfor.md) | 26 | `declaration-track:cac3b8ddbe0b66b9e1219021fc3aa5a982afac939497246225ce749364131c20` |
-| 3 | `builtin_initialize` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/EqUnfoldPublic.lean/declarations/builtin-initialize.md) | 62 | `declaration-track:8004746480fb02feee81dbba042dce2d623ff2369cf5f2e2f43fcdbcdd6756c6` |
+| 1 | `def` | [tryURefl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/EqUnfoldPublic.lean/declarations/tryurefl.md) | 18 | `declaration-track:99e2be17f0822498d9cefc62b7b6157afc00cf08ac74bec27923f50eb4ad9424` |
+| 2 | `def` | [getConstUnfoldEqnFor?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/EqUnfoldPublic.lean/declarations/getconstunfoldeqnfor.md) | 26 | `declaration-track:cac3b8ddbe0b66b9e1219021fc3aa5a982afac939497246225ce749364131c20` |
+| 3 | `builtin_initialize` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/EqUnfoldPublic.lean/declarations/builtin-initialize.md) | 62 | `declaration-track:8004746480fb02feee81dbba042dce2d623ff2369cf5f2e2f43fcdbcdd6756c6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

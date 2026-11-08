@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ReconstructionCapsuleNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ReconstructionCapsuleNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReconstructionCapsuleNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReconstructionCapsuleNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,8 +61,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [PointLanguage](../../../../../ComputerScience/AlgorithmsInComputerScience/ReconstructionCapsuleNamespaced.lean/declarations/pointlanguage.md) | 22 | `declaration-track:cda1ffee9c8c2242082f66123deea13f8ddbd4d885fcc03dfd4983d950d32fb9` |
-| 2 | `structure` | [ReconstructionCapsule](../../../../../ComputerScience/AlgorithmsInComputerScience/ReconstructionCapsuleNamespaced.lean/declarations/reconstructioncapsule.md) | 29 | `declaration-track:0071a6441403dc8ab7a36ecfae0c33322537bb46f37914499cf8affaaaca11ee` |
+| 1 | `inductive` | [PointLanguage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReconstructionCapsuleNamespaced.lean/declarations/pointlanguage.md) | 22 | `declaration-track:cda1ffee9c8c2242082f66123deea13f8ddbd4d885fcc03dfd4983d950d32fb9` |
+| 2 | `structure` | [ReconstructionCapsule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReconstructionCapsuleNamespaced.lean/declarations/reconstructioncapsule.md) | 29 | `declaration-track:0071a6441403dc8ab7a36ecfae0c33322537bb46f37914499cf8affaaaca11ee` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

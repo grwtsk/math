@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SemanticCoding.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SemanticCoding.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SemanticCoding.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SemanticCoding.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SemanticTyping](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SemanticCoding.lean/declarations/semantictyping.md) | 16 | `declaration-track:129c2aeccb0850a63ea89a6e737536038635b9dfc3fae073a1b4bc39187b75c7` |
-| 2 | `structure` | [CodingEquivalenceInvariant](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SemanticCoding.lean/declarations/codingequivalenceinvariant.md) | 30 | `declaration-track:9f5ec30ae5919883bf0e35ca976ed2be2105a4acba1f9dfd00f39e1187866a62` |
-| 3 | `theorem` | [encode_injective](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SemanticCoding.lean/declarations/encode-injective.md) | 44 | `result-track:cedcca61dddeebfd67b18a1b3d5c3a063a640daf8ce551347b88f9f8d8d14914` |
-| 4 | `theorem` | [encode_surjective](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SemanticCoding.lean/declarations/encode-surjective.md) | 55 | `result-track:e6519471750fd7b7623a2cdbcbc1eab173ed44cc006e2d1954d0af96e8d56194` |
-| 5 | `structure` | [SemanticAutomorphism](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SemanticCoding.lean/declarations/semanticautomorphism.md) | 72 | `declaration-track:bbe112cefba2e84c28aed1031781e90b986c797cc0627b4314f07301e70a46fc` |
-| 6 | `theorem` | [SemanticAutomorphism.encode_equivariant](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SemanticCoding.lean/declarations/encode-equivariant.md) | 85 | `result-track:005256e744215ff0384127d204ef6e057ad82f32b2f19c7a62dbf9c9f760cb4e` |
+| 1 | `structure` | [SemanticTyping](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SemanticCoding.lean/declarations/semantictyping.md) | 16 | `declaration-track:129c2aeccb0850a63ea89a6e737536038635b9dfc3fae073a1b4bc39187b75c7` |
+| 2 | `structure` | [CodingEquivalenceInvariant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SemanticCoding.lean/declarations/codingequivalenceinvariant.md) | 30 | `declaration-track:9f5ec30ae5919883bf0e35ca976ed2be2105a4acba1f9dfd00f39e1187866a62` |
+| 3 | `theorem` | [encode_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SemanticCoding.lean/declarations/encode-injective.md) | 44 | `result-track:cedcca61dddeebfd67b18a1b3d5c3a063a640daf8ce551347b88f9f8d8d14914` |
+| 4 | `theorem` | [encode_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SemanticCoding.lean/declarations/encode-surjective.md) | 55 | `result-track:e6519471750fd7b7623a2cdbcbc1eab173ed44cc006e2d1954d0af96e8d56194` |
+| 5 | `structure` | [SemanticAutomorphism](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SemanticCoding.lean/declarations/semanticautomorphism.md) | 72 | `declaration-track:bbe112cefba2e84c28aed1031781e90b986c797cc0627b4314f07301e70a46fc` |
+| 6 | `theorem` | [SemanticAutomorphism.encode_equivariant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SemanticCoding.lean/declarations/encode-equivariant.md) | 85 | `result-track:005256e744215ff0384127d204ef6e057ad82f32b2f19c7a62dbf9c9f760cb4e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/GroupTheorySubgroupMulOppositeNamespaced.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/GroupTheorySubgroupMulOppositeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupTheorySubgroupMulOppositeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupTheorySubgroupMulOppositeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [opposite](../../../../GroupTheoryAndGeneralizations/GroupTheorySubgroupMulOppositeNamespaced.lean/declarations/opposite.md) | 34 | `declaration-track:432a6874c3960df30cd24e5fa20e934f16f42f1612e7d0d7839b9022ba68eb5f` |
-| 2 | `def` | [oppositeEquiv](../../../../GroupTheoryAndGeneralizations/GroupTheorySubgroupMulOppositeNamespaced.lean/declarations/oppositeequiv.md) | 53 | `declaration-track:21f00dc6b4217603b1ee41db37a40578ffea1fbe96055321730f849a18c0b66c` |
-| 3 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/GroupTheorySubgroupMulOppositeNamespaced.lean/declarations/instance.md) | 60 | `declaration-track:bcf9756b0a710fd536840e88c7b7e88a7e77d5229af00450c957e1c98ba1e722` |
-| 4 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/GroupTheorySubgroupMulOppositeNamespaced.lean/declarations/instance-source-edition-2.md) | 64 | `declaration-track:f283941a6cfc3d7b62714505bee9ad14747baa2bd76d261a46025ce85b45dc8e` |
-| 5 | `theorem` | [smul_opposite_mul](../../../../GroupTheoryAndGeneralizations/GroupTheorySubgroupMulOppositeNamespaced.lean/declarations/smul-opposite-mul.md) | 68 | `result-track:553078b561a4911c3cae6c09702d01ec2952cde780dab0108237b416b847d722` |
+| 1 | `def` | [opposite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupTheorySubgroupMulOppositeNamespaced.lean/declarations/opposite.md) | 34 | `declaration-track:432a6874c3960df30cd24e5fa20e934f16f42f1612e7d0d7839b9022ba68eb5f` |
+| 2 | `def` | [oppositeEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupTheorySubgroupMulOppositeNamespaced.lean/declarations/oppositeequiv.md) | 53 | `declaration-track:21f00dc6b4217603b1ee41db37a40578ffea1fbe96055321730f849a18c0b66c` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupTheorySubgroupMulOppositeNamespaced.lean/declarations/instance.md) | 60 | `declaration-track:bcf9756b0a710fd536840e88c7b7e88a7e77d5229af00450c957e1c98ba1e722` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupTheorySubgroupMulOppositeNamespaced.lean/declarations/instance-source-edition-2.md) | 64 | `declaration-track:f283941a6cfc3d7b62714505bee9ad14747baa2bd76d261a46025ce85b45dc8e` |
+| 5 | `theorem` | [smul_opposite_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupTheorySubgroupMulOppositeNamespaced.lean/declarations/smul-opposite-mul.md) | 68 | `result-track:553078b561a4911c3cae6c09702d01ec2952cde780dab0108237b416b847d722` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

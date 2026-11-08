@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ActualPrimitiveKernelChallengeAttempt02Namespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ActualPrimitiveKernelChallengeAttempt02Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualPrimitiveKernelChallengeAttempt02Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualPrimitiveKernelChallengeAttempt02Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_criticalKernel_at_zero](../../../../MeasureAndIntegration/ActualPrimitiveKernelChallengeAttempt02Namespaced.lean/declarations/actual-criticalkernel-at-zero.md) | 36 | `result-track:e1042ca271826ebe4db805349da23a4b3de80fd8df33137737d3d9dbfc18ccd5` |
-| 2 | `theorem` | [actual_criticalKernel_negative_at_interior](../../../../MeasureAndIntegration/ActualPrimitiveKernelChallengeAttempt02Namespaced.lean/declarations/actual-criticalkernel-negative-at-interior.md) | 56 | `result-track:646208b312893bd14d444d9b3d3c64287ba9f043e72295d61c6d5e123fc458ee` |
-| 3 | `theorem` | [actual_criticalKernel_deriv_both_signs](../../../../MeasureAndIntegration/ActualPrimitiveKernelChallengeAttempt02Namespaced.lean/declarations/actual-criticalkernel-deriv-both-signs.md) | 74 | `result-track:2fb13718276fc675034370219abfff29e345691db896ae6ffe249075f976fbcb` |
-| 4 | `theorem` | [actual_criticalKernel_deriv_sharp_bound](../../../../MeasureAndIntegration/ActualPrimitiveKernelChallengeAttempt02Namespaced.lean/declarations/actual-criticalkernel-deriv-sharp-bound.md) | 93 | `result-track:bc21fa789ab96d64c45f8a287b050ecb96d3ff9f293266e186d21c382a2aea22` |
-| 5 | `theorem` | [actual_primitive_sharp_work_bound](../../../../MeasureAndIntegration/ActualPrimitiveKernelChallengeAttempt02Namespaced.lean/declarations/actual-primitive-sharp-work-bound.md) | 109 | `result-track:3d0ae5f4edd1703cd76744e8666fa0131786dfc59362e97c50478dbd818d35d6` |
-| 6 | `theorem` | [actual_residual_upper_sharp_primitive_budget](../../../../MeasureAndIntegration/ActualPrimitiveKernelChallengeAttempt02Namespaced.lean/declarations/actual-residual-upper-sharp-primitive-budget.md) | 128 | `result-track:d3e91e6b79d1c443032139e5a39d84d2b566414c97f59daec1fdfaa607c145e6` |
+| 1 | `theorem` | [actual_criticalKernel_at_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualPrimitiveKernelChallengeAttempt02Namespaced.lean/declarations/actual-criticalkernel-at-zero.md) | 36 | `result-track:e1042ca271826ebe4db805349da23a4b3de80fd8df33137737d3d9dbfc18ccd5` |
+| 2 | `theorem` | [actual_criticalKernel_negative_at_interior](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualPrimitiveKernelChallengeAttempt02Namespaced.lean/declarations/actual-criticalkernel-negative-at-interior.md) | 56 | `result-track:646208b312893bd14d444d9b3d3c64287ba9f043e72295d61c6d5e123fc458ee` |
+| 3 | `theorem` | [actual_criticalKernel_deriv_both_signs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualPrimitiveKernelChallengeAttempt02Namespaced.lean/declarations/actual-criticalkernel-deriv-both-signs.md) | 74 | `result-track:2fb13718276fc675034370219abfff29e345691db896ae6ffe249075f976fbcb` |
+| 4 | `theorem` | [actual_criticalKernel_deriv_sharp_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualPrimitiveKernelChallengeAttempt02Namespaced.lean/declarations/actual-criticalkernel-deriv-sharp-bound.md) | 93 | `result-track:bc21fa789ab96d64c45f8a287b050ecb96d3ff9f293266e186d21c382a2aea22` |
+| 5 | `theorem` | [actual_primitive_sharp_work_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualPrimitiveKernelChallengeAttempt02Namespaced.lean/declarations/actual-primitive-sharp-work-bound.md) | 109 | `result-track:3d0ae5f4edd1703cd76744e8666fa0131786dfc59362e97c50478dbd818d35d6` |
+| 6 | `theorem` | [actual_residual_upper_sharp_primitive_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualPrimitiveKernelChallengeAttempt02Namespaced.lean/declarations/actual-residual-upper-sharp-primitive-budget.md) | 128 | `result-track:d3e91e6b79d1c443032139e5a39d84d2b566414c97f59daec1fdfaa607c145e6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

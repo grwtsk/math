@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/CanonicalNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/CanonicalNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CanonicalNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CanonicalNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [idealPrunedTree](../../../../../ComputerScience/AlgorithmsInComputerScience/CanonicalNamespaced.lean/declarations/idealprunedtree.md) | 15 | `declaration-track:177b61479525fe6fff04eddb0278f2166bb1bd829f0fdede86f642e78121c2da` |
-| 2 | `theorem` | [idealPrunedTree_count](../../../../../ComputerScience/AlgorithmsInComputerScience/CanonicalNamespaced.lean/declarations/idealprunedtree-count.md) | 31 | `result-track:1481d2ee95be495f54555db0af8658e20ba66baa9f97e74dc02ec2871dfb314d` |
-| 3 | `structure` | [CompressionRule](../../../../../ComputerScience/AlgorithmsInComputerScience/CanonicalNamespaced.lean/declarations/compressionrule.md) | 35 | `declaration-track:898375f476dc7f713b0c6366c29ecf316bae5448642e96117fd41d2c8ddf378e` |
-| 4 | `def` | [compressionRules](../../../../../ComputerScience/AlgorithmsInComputerScience/CanonicalNamespaced.lean/declarations/compressionrules.md) | 41 | `declaration-track:edf6c0bee9e15accca60ec04b4e261d2c051b1b1304221e6796e20ed66d4ae9c` |
-| 5 | `theorem` | [compressionRules_count](../../../../../ComputerScience/AlgorithmsInComputerScience/CanonicalNamespaced.lean/declarations/compressionrules-count.md) | 56 | `result-track:275c059b681647d4b5c2e4c036ea5905e3358e7190514bf4a9ffb405391a1524` |
+| 1 | `def` | [idealPrunedTree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CanonicalNamespaced.lean/declarations/idealprunedtree.md) | 15 | `declaration-track:177b61479525fe6fff04eddb0278f2166bb1bd829f0fdede86f642e78121c2da` |
+| 2 | `theorem` | [idealPrunedTree_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CanonicalNamespaced.lean/declarations/idealprunedtree-count.md) | 31 | `result-track:1481d2ee95be495f54555db0af8658e20ba66baa9f97e74dc02ec2871dfb314d` |
+| 3 | `structure` | [CompressionRule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CanonicalNamespaced.lean/declarations/compressionrule.md) | 35 | `declaration-track:898375f476dc7f713b0c6366c29ecf316bae5448642e96117fd41d2c8ddf378e` |
+| 4 | `def` | [compressionRules](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CanonicalNamespaced.lean/declarations/compressionrules.md) | 41 | `declaration-track:edf6c0bee9e15accca60ec04b4e261d2c051b1b1304221e6796e20ed66d4ae9c` |
+| 5 | `theorem` | [compressionRules_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CanonicalNamespaced.lean/declarations/compressionrules-count.md) | 56 | `result-track:275c059b681647d4b5c2e4c036ea5905e3358e7190514bf4a9ffb405391a1524` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

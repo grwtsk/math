@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/MultiCertificate.lean/index.md) · [Full source](../../../../GeneralTopology/MultiCertificate.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MultiCertificate.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MultiCertificate.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Topology.PortFiber.Path`](../../../../MathematicalLogicAndFoundations/GeneralLogic/Path.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Topology.PortFiber.Path`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Path.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [and](../../../../GeneralTopology/MultiCertificate.lean/declarations/and.md) | 12 | `declaration-track:f9d0f5211c17c48bfe41098f6b7f90be8e9c966f0a787d033c5251d7fb7370d8` |
-| 2 | `def` | [all](../../../../GeneralTopology/MultiCertificate.lean/declarations/all.md) | 19 | `declaration-track:c2bdd28bfa835af2b6e4645d82c0318c1931dff5d60b75fd9959b1ecd5a96d1b` |
-| 3 | `theorem` | [and_left](../../../../GeneralTopology/MultiCertificate.lean/declarations/and-left.md) | 25 | `result-track:a7ddb85a02139d3119e707596db45f0250b1b0957c8f8b59f6324711c9422e81` |
-| 4 | `theorem` | [and_right](../../../../GeneralTopology/MultiCertificate.lean/declarations/and-right.md) | 31 | `result-track:91fdc4a88180443d11fc2f172d5845d1486e80bb76b531ba5a10e5ca7f784980` |
-| 5 | `theorem` | [certifiedAt](../../../../GeneralTopology/MultiCertificate.lean/declarations/certifiedat.md) | 37 | `result-track:0665422f3c3eacd5366c65589d11b3492f88e466f61a8136bb7bea8d5e5d14f5` |
+| 1 | `def` | [and](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MultiCertificate.lean/declarations/and.md) | 12 | `declaration-track:f9d0f5211c17c48bfe41098f6b7f90be8e9c966f0a787d033c5251d7fb7370d8` |
+| 2 | `def` | [all](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MultiCertificate.lean/declarations/all.md) | 19 | `declaration-track:c2bdd28bfa835af2b6e4645d82c0318c1931dff5d60b75fd9959b1ecd5a96d1b` |
+| 3 | `theorem` | [and_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MultiCertificate.lean/declarations/and-left.md) | 25 | `result-track:a7ddb85a02139d3119e707596db45f0250b1b0957c8f8b59f6324711c9422e81` |
+| 4 | `theorem` | [and_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MultiCertificate.lean/declarations/and-right.md) | 31 | `result-track:91fdc4a88180443d11fc2f172d5845d1486e80bb76b531ba5a10e5ca7f784980` |
+| 5 | `theorem` | [certifiedAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MultiCertificate.lean/declarations/certifiedat.md) | 37 | `result-track:0665422f3c3eacd5366c65589d11b3492f88e466f61a8136bb7bea8d5e5d14f5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

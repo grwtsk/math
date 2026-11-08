@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Braiding.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Braiding.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Braiding.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Braiding.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [braiding](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Braiding.lean/declarations/braiding.md) | 39 | `declaration-track:c01b9ed1e89789fc62da759df4f25ddbf8d41987c6f71af03c8c7b054326dd03` |
-| 2 | `lemma` | [braiding_naturality_right](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Braiding.lean/declarations/braiding-naturality-right.md) | 46 | `result-track:c7f1e5d663b78ca013f62003823998b590e5d425cf3e36f3065941d8dd02d5ee` |
-| 3 | `lemma` | [braiding_naturality_left](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Braiding.lean/declarations/braiding-naturality-left.md) | 53 | `result-track:cd1c3335ada15dd56455bb924b453ee2a0cc97baacb41b55d53faf6524aa3c49` |
-| 4 | `lemma` | [hexagon_forward](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Braiding.lean/declarations/hexagon-forward.md) | 59 | `result-track:f4b1b1055ac664d2572ca331deab586d6b70daa78ef4d615db16f22c5a558cc9` |
-| 5 | `lemma` | [hexagon_reverse](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Braiding.lean/declarations/hexagon-reverse.md) | 97 | `result-track:a0f55ff94bc910ae0b52ab86eb697cb65ac86e27b8b5d0f493210b8dd684105e` |
-| 6 | `lemma` | [symmetry](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Braiding.lean/declarations/symmetry.md) | 136 | `result-track:6fc188bf3a69f60bef8d1876389e22f22489a4429ee1732a4a54e9b359143de3` |
-| 7 | `instance` | [braidedCategory](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Braiding.lean/declarations/braidedcategory.md) | 156 | `declaration-track:0ede10ac865bdbe90410b68ae2d1f8d052663c8e79dac056363bc6bc4541db9e` |
-| 8 | `instance` | [symmetricCategory](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Braiding.lean/declarations/symmetriccategory.md) | 164 | `declaration-track:9eff9dcdc529d174119ae0c0448fe449a4317d90ec933fd93b4eee91ce181115` |
+| 1 | `def` | [braiding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Braiding.lean/declarations/braiding.md) | 39 | `declaration-track:c01b9ed1e89789fc62da759df4f25ddbf8d41987c6f71af03c8c7b054326dd03` |
+| 2 | `lemma` | [braiding_naturality_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Braiding.lean/declarations/braiding-naturality-right.md) | 46 | `result-track:c7f1e5d663b78ca013f62003823998b590e5d425cf3e36f3065941d8dd02d5ee` |
+| 3 | `lemma` | [braiding_naturality_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Braiding.lean/declarations/braiding-naturality-left.md) | 53 | `result-track:cd1c3335ada15dd56455bb924b453ee2a0cc97baacb41b55d53faf6524aa3c49` |
+| 4 | `lemma` | [hexagon_forward](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Braiding.lean/declarations/hexagon-forward.md) | 59 | `result-track:f4b1b1055ac664d2572ca331deab586d6b70daa78ef4d615db16f22c5a558cc9` |
+| 5 | `lemma` | [hexagon_reverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Braiding.lean/declarations/hexagon-reverse.md) | 97 | `result-track:a0f55ff94bc910ae0b52ab86eb697cb65ac86e27b8b5d0f493210b8dd684105e` |
+| 6 | `lemma` | [symmetry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Braiding.lean/declarations/symmetry.md) | 136 | `result-track:6fc188bf3a69f60bef8d1876389e22f22489a4429ee1732a4a54e9b359143de3` |
+| 7 | `instance` | [braidedCategory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Braiding.lean/declarations/braidedcategory.md) | 156 | `declaration-track:0ede10ac865bdbe90410b68ae2d1f8d052663c8e79dac056363bc6bc4541db9e` |
+| 8 | `instance` | [symmetricCategory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Braiding.lean/declarations/symmetriccategory.md) | 164 | `declaration-track:9eff9dcdc529d174119ae0c0448fe449a4317d90ec933fd93b4eee91ce181115` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

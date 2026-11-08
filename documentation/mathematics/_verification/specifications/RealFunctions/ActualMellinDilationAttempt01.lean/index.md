@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/ActualMellinDilationAttempt01.lean/index.md) · [Full source](../../../../RealFunctions/ActualMellinDilationAttempt01.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualMellinDilationAttempt01.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualMellinDilationAttempt01.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,17 +58,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [mellinConvergent_unnormalized](../../../../RealFunctions/ActualMellinDilationAttempt01.lean/declarations/mellinconvergent-unnormalized.md) | 14 | `result-track:dc9f679a768b20f37303c4f016b5f7f93902477c2af55eafb74bb6b315366337` |
-| 2 | `theorem` | [mellinConvergent_normalized](../../../../RealFunctions/ActualMellinDilationAttempt01.lean/declarations/mellinconvergent-normalized.md) | 29 | `result-track:8408dfd5712773e48fe15c5e160fe52080a7205e8ad5eb3576200ad08c407ad3` |
-| 3 | `theorem` | [sqrt_cpow](../../../../RealFunctions/ActualMellinDilationAttempt01.lean/declarations/sqrt-cpow.md) | 34 | `result-track:2d347d93d679e761102e7045d5d292fe0bc03b62d61a9cb4c59767a1579e88db` |
-| 4 | `theorem` | [mellin_normalized_func](../../../../RealFunctions/ActualMellinDilationAttempt01.lean/declarations/mellin-normalized-func.md) | 39 | `result-track:64f3039afa492c72e89c027aba312952941267564e60b14b914a2f3456dfafa3` |
-| 5 | `theorem` | [actual_unnormalized_mellinConvergent](../../../../RealFunctions/ActualMellinDilationAttempt01.lean/declarations/actual-unnormalized-mellinconvergent.md) | 47 | `result-track:ef3d8928fd29e13f517aa586feb88c755fe09dc9a9551e6e8ac6573161ef2cf8` |
-| 6 | `theorem` | [actual_normalized_mellinConvergent](../../../../RealFunctions/ActualMellinDilationAttempt01.lean/declarations/actual-normalized-mellinconvergent.md) | 52 | `result-track:808ea2f29c30d1038aebac2a414e52b694af410722bf157168e9b683778592ad` |
-| 7 | `theorem` | [actual_unnormalized_mellin](../../../../RealFunctions/ActualMellinDilationAttempt01.lean/declarations/actual-unnormalized-mellin.md) | 57 | `result-track:f1c2ff7142bf0c053cab859c35bb005b64cb13c90a7640590eb7864b351ad529` |
-| 8 | `theorem` | [actual_normalized_mellin](../../../../RealFunctions/ActualMellinDilationAttempt01.lean/declarations/actual-normalized-mellin.md) | 62 | `result-track:05220171959d603c3a9459541a10381e2211828c4831ab7600e6a842862a12fd` |
-| 9 | `theorem` | [actual_dilated_class_mellinConvergent](../../../../RealFunctions/ActualMellinDilationAttempt01.lean/declarations/actual-dilated-class-mellinconvergent.md) | 67 | `result-track:d50caae45ae20a2a0cfeb06a686b8cb9d68093909ba01dcd658d5d9858694f5e` |
-| 10 | `theorem` | [actual_dilated_class_mellin](../../../../RealFunctions/ActualMellinDilationAttempt01.lean/declarations/actual-dilated-class-mellin.md) | 74 | `result-track:5de800a2b77e618be5c03395bd29483d5a8a94058a012f88c352a7e66aeea5b0` |
-| 11 | `theorem` | [actual_integer_class_mellin](../../../../RealFunctions/ActualMellinDilationAttempt01.lean/declarations/actual-integer-class-mellin.md) | 83 | `result-track:ae75e57f5007b553a47a253d7dbfaefbc67e394889968c4020e217b9c2040f9f` |
+| 1 | `theorem` | [mellinConvergent_unnormalized](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualMellinDilationAttempt01.lean/declarations/mellinconvergent-unnormalized.md) | 14 | `result-track:dc9f679a768b20f37303c4f016b5f7f93902477c2af55eafb74bb6b315366337` |
+| 2 | `theorem` | [mellinConvergent_normalized](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualMellinDilationAttempt01.lean/declarations/mellinconvergent-normalized.md) | 29 | `result-track:8408dfd5712773e48fe15c5e160fe52080a7205e8ad5eb3576200ad08c407ad3` |
+| 3 | `theorem` | [sqrt_cpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualMellinDilationAttempt01.lean/declarations/sqrt-cpow.md) | 34 | `result-track:2d347d93d679e761102e7045d5d292fe0bc03b62d61a9cb4c59767a1579e88db` |
+| 4 | `theorem` | [mellin_normalized_func](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualMellinDilationAttempt01.lean/declarations/mellin-normalized-func.md) | 39 | `result-track:64f3039afa492c72e89c027aba312952941267564e60b14b914a2f3456dfafa3` |
+| 5 | `theorem` | [actual_unnormalized_mellinConvergent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualMellinDilationAttempt01.lean/declarations/actual-unnormalized-mellinconvergent.md) | 47 | `result-track:ef3d8928fd29e13f517aa586feb88c755fe09dc9a9551e6e8ac6573161ef2cf8` |
+| 6 | `theorem` | [actual_normalized_mellinConvergent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualMellinDilationAttempt01.lean/declarations/actual-normalized-mellinconvergent.md) | 52 | `result-track:808ea2f29c30d1038aebac2a414e52b694af410722bf157168e9b683778592ad` |
+| 7 | `theorem` | [actual_unnormalized_mellin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualMellinDilationAttempt01.lean/declarations/actual-unnormalized-mellin.md) | 57 | `result-track:f1c2ff7142bf0c053cab859c35bb005b64cb13c90a7640590eb7864b351ad529` |
+| 8 | `theorem` | [actual_normalized_mellin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualMellinDilationAttempt01.lean/declarations/actual-normalized-mellin.md) | 62 | `result-track:05220171959d603c3a9459541a10381e2211828c4831ab7600e6a842862a12fd` |
+| 9 | `theorem` | [actual_dilated_class_mellinConvergent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualMellinDilationAttempt01.lean/declarations/actual-dilated-class-mellinconvergent.md) | 67 | `result-track:d50caae45ae20a2a0cfeb06a686b8cb9d68093909ba01dcd658d5d9858694f5e` |
+| 10 | `theorem` | [actual_dilated_class_mellin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualMellinDilationAttempt01.lean/declarations/actual-dilated-class-mellin.md) | 74 | `result-track:5de800a2b77e618be5c03395bd29483d5a8a94058a012f88c352a7e66aeea5b0` |
+| 11 | `theorem` | [actual_integer_class_mellin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualMellinDilationAttempt01.lean/declarations/actual-integer-class-mellin.md) | 83 | `result-track:ae75e57f5007b553a47a253d7dbfaefbc67e394889968c4020e217b9c2040f9f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

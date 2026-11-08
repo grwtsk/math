@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/HalfLinePolynomialLaplaceNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/HalfLinePolynomialLaplaceNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HalfLinePolynomialLaplaceNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HalfLinePolynomialLaplaceNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [half_line_polynomial_laplace_integrable](../../../../MeasureAndIntegration/HalfLinePolynomialLaplaceNamespaced.lean/declarations/half-line-polynomial-laplace-integrable.md) | 30 | `result-track:728551e4762a79e33fd9a2ef8203b1ca4808a22c6fa78ac7f49bed5975d75a55` |
-| 2 | `theorem` | [polynomial_laplace_has_deriv](../../../../MeasureAndIntegration/HalfLinePolynomialLaplaceNamespaced.lean/declarations/polynomial-laplace-has-deriv.md) | 44 | `result-track:24db6f044442288d256c2e43cb5b80d5e33a684c1f69f2d6ce638c7f6d26b0ca` |
-| 3 | `theorem` | [half_line_polynomial_laplace_recurrence](../../../../MeasureAndIntegration/HalfLinePolynomialLaplaceNamespaced.lean/declarations/half-line-polynomial-laplace-recurrence.md) | 56 | `result-track:4ff27372009db5f82fd3caae9e9cfcdf7bfaef6381667c21ab3c2f2d5a620e87` |
-| 4 | `theorem` | [half_line_polynomial_laplace_integral](../../../../MeasureAndIntegration/HalfLinePolynomialLaplaceNamespaced.lean/declarations/half-line-polynomial-laplace-integral.md) | 73 | `result-track:4bb41085fdbb4b56b54c0efb6b84339a64302c0d84b3632d3ca3240b73de2227` |
+| 1 | `theorem` | [half_line_polynomial_laplace_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HalfLinePolynomialLaplaceNamespaced.lean/declarations/half-line-polynomial-laplace-integrable.md) | 30 | `result-track:728551e4762a79e33fd9a2ef8203b1ca4808a22c6fa78ac7f49bed5975d75a55` |
+| 2 | `theorem` | [polynomial_laplace_has_deriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HalfLinePolynomialLaplaceNamespaced.lean/declarations/polynomial-laplace-has-deriv.md) | 44 | `result-track:24db6f044442288d256c2e43cb5b80d5e33a684c1f69f2d6ce638c7f6d26b0ca` |
+| 3 | `theorem` | [half_line_polynomial_laplace_recurrence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HalfLinePolynomialLaplaceNamespaced.lean/declarations/half-line-polynomial-laplace-recurrence.md) | 56 | `result-track:4ff27372009db5f82fd3caae9e9cfcdf7bfaef6381667c21ab3c2f2d5a620e87` |
+| 4 | `theorem` | [half_line_polynomial_laplace_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HalfLinePolynomialLaplaceNamespaced.lean/declarations/half-line-polynomial-laplace-integral.md) | 73 | `result-track:4bb41085fdbb4b56b54c0efb6b84339a64302c0d84b3632d3ca3240b73de2227` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ProperlyDiscontinuousNamespaced.lean/index.md) · [Full source](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ProperlyDiscontinuousNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ProperlyDiscontinuousNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ProperlyDiscontinuousNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [properlyDiscontinuousSMul_iff_properSMul](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ProperlyDiscontinuousNamespaced.lean/declarations/properlydiscontinuoussmul-iff-propersmul.md) | 46 | `result-track:beb2c49f2ef2f3071456b0467e4e27ab28cea65e8c531a1231c835db20fdaa07` |
+| 1 | `theorem` | [properlyDiscontinuousSMul_iff_properSMul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ProperlyDiscontinuousNamespaced.lean/declarations/properlydiscontinuoussmul-iff-propersmul.md) | 46 | `result-track:beb2c49f2ef2f3071456b0467e4e27ab28cea65e8c531a1231c835db20fdaa07` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

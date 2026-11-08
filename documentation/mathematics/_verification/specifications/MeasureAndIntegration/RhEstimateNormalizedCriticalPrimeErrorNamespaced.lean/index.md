@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/RhEstimateNormalizedCriticalPrimeErrorNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/RhEstimateNormalizedCriticalPrimeErrorNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RhEstimateNormalizedCriticalPrimeErrorNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RhEstimateNormalizedCriticalPrimeErrorNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RhEstimateNormalizedCriticalPrimeErrorNamespaced.lean/declarations/example.md) | 16 | `declaration-track:10ff4ced4c84fafa1cb49c0fa76bd504454ae0c7d967355baa21e2e9d0a844df` |
-| 2 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RhEstimateNormalizedCriticalPrimeErrorNamespaced.lean/declarations/example-source-edition-6.md) | 20 | `declaration-track:da6a0da3bb05f89ab0f9824998505c0a09455ae90c507df771c54c5dede1847c` |
-| 3 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RhEstimateNormalizedCriticalPrimeErrorNamespaced.lean/declarations/example-source-edition-5.md) | 23 | `declaration-track:8493727b1218d8ab34664f6397facf8760ad5b2cc89df3c553cb01e6456480ce` |
-| 4 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RhEstimateNormalizedCriticalPrimeErrorNamespaced.lean/declarations/example-source-edition-2.md) | 30 | `declaration-track:14d955d9f484ecdd8077c63162f7c1e9240c2754271f89f404bbb638f4bf3e17` |
-| 5 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RhEstimateNormalizedCriticalPrimeErrorNamespaced.lean/declarations/example-source-edition-4.md) | 37 | `declaration-track:26e0008287d1674cee29c7e5068eadfed06f4c19b8ef8267ad8a3d2363470722` |
-| 6 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RhEstimateNormalizedCriticalPrimeErrorNamespaced.lean/declarations/example-source-edition-3.md) | 43 | `declaration-track:2438fed0ecf16e6d64ab37c0db9efb8179b03a1c0858cf710ed540ccb9bd14b5` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RhEstimateNormalizedCriticalPrimeErrorNamespaced.lean/declarations/example.md) | 16 | `declaration-track:10ff4ced4c84fafa1cb49c0fa76bd504454ae0c7d967355baa21e2e9d0a844df` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RhEstimateNormalizedCriticalPrimeErrorNamespaced.lean/declarations/example-source-edition-6.md) | 20 | `declaration-track:da6a0da3bb05f89ab0f9824998505c0a09455ae90c507df771c54c5dede1847c` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RhEstimateNormalizedCriticalPrimeErrorNamespaced.lean/declarations/example-source-edition-5.md) | 23 | `declaration-track:8493727b1218d8ab34664f6397facf8760ad5b2cc89df3c553cb01e6456480ce` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RhEstimateNormalizedCriticalPrimeErrorNamespaced.lean/declarations/example-source-edition-2.md) | 30 | `declaration-track:14d955d9f484ecdd8077c63162f7c1e9240c2754271f89f404bbb638f4bf3e17` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RhEstimateNormalizedCriticalPrimeErrorNamespaced.lean/declarations/example-source-edition-4.md) | 37 | `declaration-track:26e0008287d1674cee29c7e5068eadfed06f4c19b8ef8267ad8a3d2363470722` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RhEstimateNormalizedCriticalPrimeErrorNamespaced.lean/declarations/example-source-edition-3.md) | 43 | `declaration-track:2438fed0ecf16e6d64ab37c0db9efb8179b03a1c0858cf710ed540ccb9bd14b5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

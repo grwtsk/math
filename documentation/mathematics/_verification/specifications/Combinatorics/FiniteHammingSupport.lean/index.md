@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/FiniteHammingSupport.lean/index.md) · [Full source](../../../../Combinatorics/FiniteHammingSupport.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteHammingSupport.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteHammingSupport.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,16 +61,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [finiteSupport](../../../../Combinatorics/FiniteHammingSupport.lean/declarations/finitesupport.md) | 17 | `declaration-track:cf4b16e709b1a47719bd0b407c75a73a42b8d067171ceda14293c246b52cb6de` |
-| 2 | `def` | [incidenceOfSupport](../../../../Combinatorics/FiniteHammingSupport.lean/declarations/incidenceofsupport.md) | 24 | `declaration-track:6b0bd56642d49c60eabdeeb073051616b98fb62820f2d915cac8c6bd952f89c6` |
-| 3 | `theorem` | [finiteSupport_incidenceOfSupport](../../../../Combinatorics/FiniteHammingSupport.lean/declarations/finitesupport-incidenceofsupport.md) | 31 | `result-track:63873445a1c54535065a24c659812bcbe3cca416c6565c25bf71c8868ef62b61` |
-| 4 | `theorem` | [incidenceOfSupport_finiteSupport](../../../../Combinatorics/FiniteHammingSupport.lean/declarations/incidenceofsupport-finitesupport.md) | 39 | `result-track:77701cbfc32fc38e17e8d6357d958b468c97fe60e8c5f9189577d01e7d90f774` |
-| 5 | `theorem` | [cpopNatRec_eq_sum_range](../../../../Combinatorics/FiniteHammingSupport.lean/declarations/cpopnatrec-eq-sum-range.md) | 54 | `result-track:7cc1d455bc64a6023cfe28279f5dff4c07206e70cd6ebccf16a2337dfd144598` |
-| 6 | `theorem` | [cpop_eq_finiteSupport_card](../../../../Combinatorics/FiniteHammingSupport.lean/declarations/cpop-eq-finitesupport-card.md) | 70 | `result-track:2280b2c8a8c53c08202bbf108c685c50963134a1446e1077f981d4c092755c60` |
-| 7 | `theorem` | [finiteHamming_eq_card_sdiff_union_sdiff](../../../../Combinatorics/FiniteHammingSupport.lean/declarations/finitehamming-eq-card-sdiff-union-sdiff.md) | 87 | `result-track:6378f3f541ca6635941f62eeacfabba45a87e2d5e87d63706c4b794e5fd4b4c3` |
-| 8 | `theorem` | [finiteHamming_comm](../../../../Combinatorics/FiniteHammingSupport.lean/declarations/finitehamming-comm.md) | 108 | `result-track:f09480b684c70acc144858ad4c0c81c5c5c3ad2c03ab05523396014df65407f4` |
-| 9 | `theorem` | [finiteHamming_incidenceOfSupport_of_subset](../../../../Combinatorics/FiniteHammingSupport.lean/declarations/finitehamming-incidenceofsupport-of-subset.md) | 117 | `result-track:a87eba3fabfa668fdbfc99855d9560505c9734213c1f49000a00a1ac03d00c51` |
-| 10 | `theorem` | [finiteHamming_incidenceOfSupport_of_disjoint](../../../../Combinatorics/FiniteHammingSupport.lean/declarations/finitehamming-incidenceofsupport-of-disjoint.md) | 131 | `result-track:c4cbca6e75f20448b23916f6f32d35600c300598eaf239277dbda2304a2ad314` |
+| 1 | `def` | [finiteSupport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteHammingSupport.lean/declarations/finitesupport.md) | 17 | `declaration-track:cf4b16e709b1a47719bd0b407c75a73a42b8d067171ceda14293c246b52cb6de` |
+| 2 | `def` | [incidenceOfSupport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteHammingSupport.lean/declarations/incidenceofsupport.md) | 24 | `declaration-track:6b0bd56642d49c60eabdeeb073051616b98fb62820f2d915cac8c6bd952f89c6` |
+| 3 | `theorem` | [finiteSupport_incidenceOfSupport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteHammingSupport.lean/declarations/finitesupport-incidenceofsupport.md) | 31 | `result-track:63873445a1c54535065a24c659812bcbe3cca416c6565c25bf71c8868ef62b61` |
+| 4 | `theorem` | [incidenceOfSupport_finiteSupport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteHammingSupport.lean/declarations/incidenceofsupport-finitesupport.md) | 39 | `result-track:77701cbfc32fc38e17e8d6357d958b468c97fe60e8c5f9189577d01e7d90f774` |
+| 5 | `theorem` | [cpopNatRec_eq_sum_range](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteHammingSupport.lean/declarations/cpopnatrec-eq-sum-range.md) | 54 | `result-track:7cc1d455bc64a6023cfe28279f5dff4c07206e70cd6ebccf16a2337dfd144598` |
+| 6 | `theorem` | [cpop_eq_finiteSupport_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteHammingSupport.lean/declarations/cpop-eq-finitesupport-card.md) | 70 | `result-track:2280b2c8a8c53c08202bbf108c685c50963134a1446e1077f981d4c092755c60` |
+| 7 | `theorem` | [finiteHamming_eq_card_sdiff_union_sdiff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteHammingSupport.lean/declarations/finitehamming-eq-card-sdiff-union-sdiff.md) | 87 | `result-track:6378f3f541ca6635941f62eeacfabba45a87e2d5e87d63706c4b794e5fd4b4c3` |
+| 8 | `theorem` | [finiteHamming_comm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteHammingSupport.lean/declarations/finitehamming-comm.md) | 108 | `result-track:f09480b684c70acc144858ad4c0c81c5c5c3ad2c03ab05523396014df65407f4` |
+| 9 | `theorem` | [finiteHamming_incidenceOfSupport_of_subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteHammingSupport.lean/declarations/finitehamming-incidenceofsupport-of-subset.md) | 117 | `result-track:a87eba3fabfa668fdbfc99855d9560505c9734213c1f49000a00a1ac03d00c51` |
+| 10 | `theorem` | [finiteHamming_incidenceOfSupport_of_disjoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteHammingSupport.lean/declarations/finitehamming-incidenceofsupport-of-disjoint.md) | 131 | `result-track:c4cbca6e75f20448b23916f6f32d35600c300598eaf239277dbda2304a2ad314` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

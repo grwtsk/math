@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheActualSourceKernelAfterTheDerivativeEnergyBound.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheActualSourceKernelAfterTheDerivativeEnergyBound.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheActualSourceKernelAfterTheDerivativeEnergyBound.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheActualSourceKernelAfterTheDerivativeEnergyBound.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_sampling_tail_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheActualSourceKernelAfterTheDerivativeEnergyBound.lean/declarations/actual-sampling-tail-zero.md) | 31 | `result-track:ebae9b072be94cfaad32ebf5a1afbc0f6e9b8ab34d9bf1e090867833f1cc9e5f` |
-| 2 | `theorem` | [sourceMobiusKernel_abs_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheActualSourceKernelAfterTheDerivativeEnergyBound.lean/declarations/sourcemobiuskernel-abs-le.md) | 48 | `result-track:6102d49808edcff05cc1ca7f3133702f58b0a0e1409d1cbae0a21bbff001cfd1` |
-| 3 | `theorem` | [sourceMobiusKernel_lower_abs_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheActualSourceKernelAfterTheDerivativeEnergyBound.lean/declarations/sourcemobiuskernel-lower-abs-le.md) | 65 | `result-track:10ea1c8375f389a5fa68210f7afcf3374ae8b42b4e301ff30b3a5d64cab14db2` |
+| 1 | `theorem` | [actual_sampling_tail_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheActualSourceKernelAfterTheDerivativeEnergyBound.lean/declarations/actual-sampling-tail-zero.md) | 31 | `result-track:ebae9b072be94cfaad32ebf5a1afbc0f6e9b8ab34d9bf1e090867833f1cc9e5f` |
+| 2 | `theorem` | [sourceMobiusKernel_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheActualSourceKernelAfterTheDerivativeEnergyBound.lean/declarations/sourcemobiuskernel-abs-le.md) | 48 | `result-track:6102d49808edcff05cc1ca7f3133702f58b0a0e1409d1cbae0a21bbff001cfd1` |
+| 3 | `theorem` | [sourceMobiusKernel_lower_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheActualSourceKernelAfterTheDerivativeEnergyBound.lean/declarations/sourcemobiuskernel-lower-abs-le.md) | 65 | `result-track:10ea1c8375f389a5fa68210f7afcf3374ae8b42b4e301ff30b3a5d64cab14db2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

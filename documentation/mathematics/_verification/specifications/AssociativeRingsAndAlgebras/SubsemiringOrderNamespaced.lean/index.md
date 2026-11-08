@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/SubsemiringOrderNamespaced.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/SubsemiringOrderNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubsemiringOrderNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubsemiringOrderNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [toIsOrderedRing](../../../../AssociativeRingsAndAlgebras/SubsemiringOrderNamespaced.lean/declarations/toisorderedring.md) | 27 | `declaration-track:87174bf1aa9673893c4a53c4151e99751edffa6a891e4e036b2253114a251fa2` |
-| 2 | `instance` | [toIsStrictOrderedRing](../../../../AssociativeRingsAndAlgebras/SubsemiringOrderNamespaced.lean/declarations/toisstrictorderedring.md) | 33 | `declaration-track:84ccece24a292f83cc2ab7cf0f88b8a9e647a3dcf1b614df7dfb63638dd5207e` |
-| 3 | `instance` | [toIsOrderedRing](../../../../AssociativeRingsAndAlgebras/SubsemiringOrderNamespaced.lean/declarations/toisorderedring-source-edition-2.md) | 45 | `declaration-track:934bcd753902e56cb13c9067db84b63344ed8db6aa7a1966a07aa1a3150d0fe3` |
-| 4 | `instance` | [toIsStrictOrderedRing](../../../../AssociativeRingsAndAlgebras/SubsemiringOrderNamespaced.lean/declarations/toisstrictorderedring-source-edition-2.md) | 51 | `declaration-track:f1a54bbfddf7f620288b13b915d1673f2b5a9a5b57db683ab9fe64930e94c4a3` |
-| 5 | `def` | [nonneg](../../../../AssociativeRingsAndAlgebras/SubsemiringOrderNamespaced.lean/declarations/nonneg.md) | 58 | `declaration-track:51c50d2df8dc7a956e68599e8c0be8498520162544244ca0b5e2f83b9d2f69e1` |
+| 1 | `instance` | [toIsOrderedRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubsemiringOrderNamespaced.lean/declarations/toisorderedring.md) | 27 | `declaration-track:87174bf1aa9673893c4a53c4151e99751edffa6a891e4e036b2253114a251fa2` |
+| 2 | `instance` | [toIsStrictOrderedRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubsemiringOrderNamespaced.lean/declarations/toisstrictorderedring.md) | 33 | `declaration-track:84ccece24a292f83cc2ab7cf0f88b8a9e647a3dcf1b614df7dfb63638dd5207e` |
+| 3 | `instance` | [toIsOrderedRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubsemiringOrderNamespaced.lean/declarations/toisorderedring-source-edition-2.md) | 45 | `declaration-track:934bcd753902e56cb13c9067db84b63344ed8db6aa7a1966a07aa1a3150d0fe3` |
+| 4 | `instance` | [toIsStrictOrderedRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubsemiringOrderNamespaced.lean/declarations/toisstrictorderedring-source-edition-2.md) | 51 | `declaration-track:f1a54bbfddf7f620288b13b915d1673f2b5a9a5b57db683ab9fe64930e94c4a3` |
+| 5 | `def` | [nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubsemiringOrderNamespaced.lean/declarations/nonneg.md) | 58 | `declaration-track:51c50d2df8dc7a956e68599e8c0be8498520162544244ca0b5e2f83b9d2f69e1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

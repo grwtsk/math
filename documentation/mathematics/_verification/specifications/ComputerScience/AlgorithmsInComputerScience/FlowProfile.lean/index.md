@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/FlowProfile.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/FlowProfile.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FlowProfile.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FlowProfile.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FlowProfile](../../../../../ComputerScience/AlgorithmsInComputerScience/FlowProfile.lean/declarations/flowprofile.md) | 14 | `declaration-track:c9a4a7d29694e2eabc172537456f9168eb6888eb53ac0fd9386bf11fccd72867` |
-| 2 | `def` | [FlowProfile.similarity](../../../../../ComputerScience/AlgorithmsInComputerScience/FlowProfile.lean/declarations/flowprofile-similarity.md) | 25 | `declaration-track:74ab623df46359c02f86d8009ede1854e8d1dedb2b737530dd96cdd7f6f8eb1a` |
-| 3 | `def` | [FlowProfile.isAligned](../../../../../ComputerScience/AlgorithmsInComputerScience/FlowProfile.lean/declarations/flowprofile-isaligned.md) | 37 | `declaration-track:f761cf31674e13e484988f99df5bb100942ede9084405c7576abddd7282ee163` |
+| 1 | `structure` | [FlowProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FlowProfile.lean/declarations/flowprofile.md) | 14 | `declaration-track:c9a4a7d29694e2eabc172537456f9168eb6888eb53ac0fd9386bf11fccd72867` |
+| 2 | `def` | [FlowProfile.similarity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FlowProfile.lean/declarations/flowprofile-similarity.md) | 25 | `declaration-track:74ab623df46359c02f86d8009ede1854e8d1dedb2b737530dd96cdd7f6f8eb1a` |
+| 3 | `def` | [FlowProfile.isAligned](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FlowProfile.lean/declarations/flowprofile-isaligned.md) | 37 | `declaration-track:f761cf31674e13e484988f99df5bb100942ede9084405c7576abddd7282ee163` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

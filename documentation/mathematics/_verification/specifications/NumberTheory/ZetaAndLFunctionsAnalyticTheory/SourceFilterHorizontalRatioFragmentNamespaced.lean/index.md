@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceFilterHorizontalRatioFragmentNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceFilterHorizontalRatioFragmentNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceFilterHorizontalRatioFragmentNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceFilterHorizontalRatioFragmentNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sourceQuadratic_horizontal_bound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceFilterHorizontalRatioFragmentNamespaced.lean/declarations/sourcequadratic-horizontal-bound.md) | 19 | `result-track:715273ecdaa04c36ea584152ee8ab37f700986b0abcc17cbe1cd364a84c9c8d6` |
-| 2 | `theorem` | [W_horizontal_multiplicative_bound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceFilterHorizontalRatioFragmentNamespaced.lean/declarations/w-horizontal-multiplicative-bound.md) | 37 | `result-track:ac57fddc9f47516c1193d2df12bb24a6cc13c3bd41b9ed59ced0eee1afc569d2` |
-| 3 | `theorem` | [W_horizontal_ratio_bound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceFilterHorizontalRatioFragmentNamespaced.lean/declarations/w-horizontal-ratio-bound.md) | 71 | `result-track:be8f6fa54d2a1722ef10f2bec3fb7a7a3f70c9c1a7fe874dbd26585b9f39de60` |
+| 1 | `theorem` | [sourceQuadratic_horizontal_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceFilterHorizontalRatioFragmentNamespaced.lean/declarations/sourcequadratic-horizontal-bound.md) | 19 | `result-track:715273ecdaa04c36ea584152ee8ab37f700986b0abcc17cbe1cd364a84c9c8d6` |
+| 2 | `theorem` | [W_horizontal_multiplicative_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceFilterHorizontalRatioFragmentNamespaced.lean/declarations/w-horizontal-multiplicative-bound.md) | 37 | `result-track:ac57fddc9f47516c1193d2df12bb24a6cc13c3bd41b9ed59ced0eee1afc569d2` |
+| 3 | `theorem` | [W_horizontal_ratio_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceFilterHorizontalRatioFragmentNamespaced.lean/declarations/w-horizontal-ratio-bound.md) | 71 | `result-track:be8f6fa54d2a1722ef10f2bec3fb7a7a3f70c9c1a7fe874dbd26585b9f39de60` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

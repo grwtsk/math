@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/ReflectedStripControls.lean/index.md) · [Full source](../../../../NumberTheory/ReflectedStripControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ReflectedStripControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ReflectedStripControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.ReflectedStripBudget`](../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ReflectedStripBudget.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.ReflectedStripBudget`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ReflectedStripBudget.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [reflected_interval](../../../../NumberTheory/ReflectedStripControls.lean/declarations/reflected-interval.md) | 21 | `result-track:58cd804d20364cdad59c2ee5cfa3d4b485186c6c3a924e222a620a449160666e` |
-| 2 | `theorem` | [gamma_disk_endpoints](../../../../NumberTheory/ReflectedStripControls.lean/declarations/gamma-disk-endpoints.md) | 26 | `result-track:a8b081fd5641e609a86a98e9e66df6dc7c5e98b92092412aa73305bda49baf75` |
-| 3 | `theorem` | [cauchy_radii](../../../../NumberTheory/ReflectedStripControls.lean/declarations/cauchy-radii.md) | 30 | `result-track:01e639d23dd9fb8b3890be5918c12c3d5ae96079bce0c122fab2968329437e68` |
-| 4 | `theorem` | [height_budget_even](../../../../NumberTheory/ReflectedStripControls.lean/declarations/height-budget-even.md) | 34 | `result-track:cb112b5df24dbab8d0b9e829725fddcd672eb60fb78bdf4886436be7f8a5daef` |
-| 5 | `theorem` | [anchor_floor_positive](../../../../NumberTheory/ReflectedStripControls.lean/declarations/anchor-floor-positive.md) | 38 | `result-track:62108b5e127d58fa41dc70fe1972a7dbcb0205e6d7cd38bb518bef3e6e15c5de` |
-| 6 | `theorem` | [zero_height_excluded](../../../../NumberTheory/ReflectedStripControls.lean/declarations/zero-height-excluded.md) | 43 | `result-track:949830925f5c9f24cf8f029e6948f37e5af957805f311004f6eee259b9a5d043` |
-| 7 | `theorem` | [gamma_zero_excluded](../../../../NumberTheory/ReflectedStripControls.lean/declarations/gamma-zero-excluded.md) | 46 | `result-track:851df77b92849325b84859a43b5db0aaed5c3815c4b4e7bd7784141828d609b1` |
-| 8 | `theorem` | [height_budget_increment](../../../../NumberTheory/ReflectedStripControls.lean/declarations/height-budget-increment.md) | 49 | `result-track:8b469e148952e004d7fe615489122d5b24b6fee361beb7de63170350a67e47dc` |
+| 1 | `theorem` | [reflected_interval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ReflectedStripControls.lean/declarations/reflected-interval.md) | 21 | `result-track:58cd804d20364cdad59c2ee5cfa3d4b485186c6c3a924e222a620a449160666e` |
+| 2 | `theorem` | [gamma_disk_endpoints](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ReflectedStripControls.lean/declarations/gamma-disk-endpoints.md) | 26 | `result-track:a8b081fd5641e609a86a98e9e66df6dc7c5e98b92092412aa73305bda49baf75` |
+| 3 | `theorem` | [cauchy_radii](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ReflectedStripControls.lean/declarations/cauchy-radii.md) | 30 | `result-track:01e639d23dd9fb8b3890be5918c12c3d5ae96079bce0c122fab2968329437e68` |
+| 4 | `theorem` | [height_budget_even](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ReflectedStripControls.lean/declarations/height-budget-even.md) | 34 | `result-track:cb112b5df24dbab8d0b9e829725fddcd672eb60fb78bdf4886436be7f8a5daef` |
+| 5 | `theorem` | [anchor_floor_positive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ReflectedStripControls.lean/declarations/anchor-floor-positive.md) | 38 | `result-track:62108b5e127d58fa41dc70fe1972a7dbcb0205e6d7cd38bb518bef3e6e15c5de` |
+| 6 | `theorem` | [zero_height_excluded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ReflectedStripControls.lean/declarations/zero-height-excluded.md) | 43 | `result-track:949830925f5c9f24cf8f029e6948f37e5af957805f311004f6eee259b9a5d043` |
+| 7 | `theorem` | [gamma_zero_excluded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ReflectedStripControls.lean/declarations/gamma-zero-excluded.md) | 46 | `result-track:851df77b92849325b84859a43b5db0aaed5c3815c4b4e7bd7784141828d609b1` |
+| 8 | `theorem` | [height_budget_increment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ReflectedStripControls.lean/declarations/height-budget-increment.md) | 49 | `result-track:8b469e148952e004d7fe615489122d5b24b6fee361beb7de63170350a67e47dc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

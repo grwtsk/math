@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/SourceCompleteDivisorRadiusTailReturn.lean/index.md) · [Full source](../../../../Combinatorics/SourceCompleteDivisorRadiusTailReturn.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SourceCompleteDivisorRadiusTailReturn.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SourceCompleteDivisorRadiusTailReturn.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualBeta](../../../../Combinatorics/SourceCompleteDivisorRadiusTailReturn.lean/declarations/actualbeta.md) | 24 | `declaration-track:b22915b4cff0d1149ea2d9822513b9ad8f024160dab4457475d8e0f8954c4c8f` |
-| 2 | `def` | [radiusSamplingBudget](../../../../Combinatorics/SourceCompleteDivisorRadiusTailReturn.lean/declarations/radiussamplingbudget.md) | 27 | `declaration-track:bafaaf41a897e03499ad957bb193ae3282d4823b8201f8c34f61d460e37af9a2` |
-| 3 | `def` | [radiusCompleteBlockTailBudget](../../../../Combinatorics/SourceCompleteDivisorRadiusTailReturn.lean/declarations/radiuscompleteblocktailbudget.md) | 30 | `declaration-track:fe99482ec94c11ef75d63267c3713bb56e0d919ac18f1c7394cd1f6e32e9a075` |
-| 4 | `theorem` | [actual_shortPlain_tight_uniform_error](../../../../Combinatorics/SourceCompleteDivisorRadiusTailReturn.lean/declarations/actual-shortplain-tight-uniform-error.md) | 33 | `result-track:eab44d95c59bb17e97cba2d94993efc708866cfaa4b55481a41e755c097b9ab3` |
-| 5 | `theorem` | [signed_sampling_correction_abs_le_at_radius](../../../../Combinatorics/SourceCompleteDivisorRadiusTailReturn.lean/declarations/signed-sampling-correction-abs-le-at-radius.md) | 47 | `result-track:83f0055dd95f087a35b482133c845ca0c393fce1e45a214f925911e3e766ccb6` |
-| 6 | `theorem` | [residual_upper_of_complete_block_at_radius](../../../../Combinatorics/SourceCompleteDivisorRadiusTailReturn.lean/declarations/residual-upper-of-complete-block-at-radius.md) | 58 | `result-track:dfae3f8a40ad2860d831eb340ae8102a847c17da85e05cfb90ec14589ecf3cff` |
-| 7 | `theorem` | [complete_tail_lower_of_complete_block_at_radius](../../../../Combinatorics/SourceCompleteDivisorRadiusTailReturn.lean/declarations/complete-tail-lower-of-complete-block-at-radius.md) | 65 | `result-track:d32b94a03eeae0d7528065351cb26b3c80a1fdc88400d637d54b790628887c70` |
-| 8 | `theorem` | [all_real_direct_lower_of_complete_block](../../../../Combinatorics/SourceCompleteDivisorRadiusTailReturn.lean/declarations/all-real-direct-lower-of-complete-block.md) | 75 | `result-track:117ec85610bcc1275792ee95ceab8614e87be59977652d4f7b022a5c5dd2404d` |
-| 9 | `theorem` | [estimate_of_complete_signed_block](../../../../Combinatorics/SourceCompleteDivisorRadiusTailReturn.lean/declarations/estimate-of-complete-signed-block.md) | 88 | `result-track:1be75bf64703a460789d8bc875319a24388fe3121e12d3525e3d57cebe640d65` |
+| 1 | `def` | [actualBeta](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SourceCompleteDivisorRadiusTailReturn.lean/declarations/actualbeta.md) | 24 | `declaration-track:b22915b4cff0d1149ea2d9822513b9ad8f024160dab4457475d8e0f8954c4c8f` |
+| 2 | `def` | [radiusSamplingBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SourceCompleteDivisorRadiusTailReturn.lean/declarations/radiussamplingbudget.md) | 27 | `declaration-track:bafaaf41a897e03499ad957bb193ae3282d4823b8201f8c34f61d460e37af9a2` |
+| 3 | `def` | [radiusCompleteBlockTailBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SourceCompleteDivisorRadiusTailReturn.lean/declarations/radiuscompleteblocktailbudget.md) | 30 | `declaration-track:fe99482ec94c11ef75d63267c3713bb56e0d919ac18f1c7394cd1f6e32e9a075` |
+| 4 | `theorem` | [actual_shortPlain_tight_uniform_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SourceCompleteDivisorRadiusTailReturn.lean/declarations/actual-shortplain-tight-uniform-error.md) | 33 | `result-track:eab44d95c59bb17e97cba2d94993efc708866cfaa4b55481a41e755c097b9ab3` |
+| 5 | `theorem` | [signed_sampling_correction_abs_le_at_radius](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SourceCompleteDivisorRadiusTailReturn.lean/declarations/signed-sampling-correction-abs-le-at-radius.md) | 47 | `result-track:83f0055dd95f087a35b482133c845ca0c393fce1e45a214f925911e3e766ccb6` |
+| 6 | `theorem` | [residual_upper_of_complete_block_at_radius](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SourceCompleteDivisorRadiusTailReturn.lean/declarations/residual-upper-of-complete-block-at-radius.md) | 58 | `result-track:dfae3f8a40ad2860d831eb340ae8102a847c17da85e05cfb90ec14589ecf3cff` |
+| 7 | `theorem` | [complete_tail_lower_of_complete_block_at_radius](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SourceCompleteDivisorRadiusTailReturn.lean/declarations/complete-tail-lower-of-complete-block-at-radius.md) | 65 | `result-track:d32b94a03eeae0d7528065351cb26b3c80a1fdc88400d637d54b790628887c70` |
+| 8 | `theorem` | [all_real_direct_lower_of_complete_block](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SourceCompleteDivisorRadiusTailReturn.lean/declarations/all-real-direct-lower-of-complete-block.md) | 75 | `result-track:117ec85610bcc1275792ee95ceab8614e87be59977652d4f7b022a5c5dd2404d` |
+| 9 | `theorem` | [estimate_of_complete_signed_block](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SourceCompleteDivisorRadiusTailReturn.lean/declarations/estimate-of-complete-signed-block.md) | 88 | `result-track:1be75bf64703a460789d8bc875319a24388fe3121e12d3525e3d57cebe640d65` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

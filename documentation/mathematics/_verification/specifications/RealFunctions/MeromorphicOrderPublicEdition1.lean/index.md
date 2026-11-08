@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/MeromorphicOrderPublicEdition1.lean/index.md) · [Full source](../../../../RealFunctions/MeromorphicOrderPublicEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/MeromorphicOrderPublicEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/MeromorphicOrderPublicEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [rectangleDivisor](../../../../RealFunctions/MeromorphicOrderPublicEdition1.lean/declarations/rectangledivisor.md) | 26 | `declaration-track:665cb895675b9d375cb80f686849f28ff7a1c5430e97a4e038b1eb8652d522ca` |
-| 2 | `theorem` | [rectangleDivisor_apply](../../../../RealFunctions/MeromorphicOrderPublicEdition1.lean/declarations/rectangledivisor-apply.md) | 32 | `result-track:e1cffe2ceb61a9831cf3629a593314fd8a03ba248d402f5fbaa382cd86cffa34` |
-| 3 | `theorem` | [rectangleDivisor_support_finite](../../../../RealFunctions/MeromorphicOrderPublicEdition1.lean/declarations/rectangledivisor-support-finite.md) | 42 | `result-track:127ee607710cdbc685bae1685fbfc634fbca226dbeef9486c00463c28f8e2c01` |
-| 4 | `def` | [rectangleDivisorSupportFinset](../../../../RealFunctions/MeromorphicOrderPublicEdition1.lean/declarations/rectangledivisorsupportfinset.md) | 51 | `declaration-track:98bf3f30c1c9c242390f919b0df3b6f7fc2651e7eec65ec3853c46f6a77d2404` |
-| 5 | `theorem` | [mem_rectangleDivisorSupportFinset](../../../../RealFunctions/MeromorphicOrderPublicEdition1.lean/declarations/mem-rectangledivisorsupportfinset.md) | 57 | `result-track:d24bc2afed851ad957e511a01f85b349fe1dd600fb88003e3c8321a36bc51125` |
+| 1 | `def` | [rectangleDivisor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/MeromorphicOrderPublicEdition1.lean/declarations/rectangledivisor.md) | 26 | `declaration-track:665cb895675b9d375cb80f686849f28ff7a1c5430e97a4e038b1eb8652d522ca` |
+| 2 | `theorem` | [rectangleDivisor_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/MeromorphicOrderPublicEdition1.lean/declarations/rectangledivisor-apply.md) | 32 | `result-track:e1cffe2ceb61a9831cf3629a593314fd8a03ba248d402f5fbaa382cd86cffa34` |
+| 3 | `theorem` | [rectangleDivisor_support_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/MeromorphicOrderPublicEdition1.lean/declarations/rectangledivisor-support-finite.md) | 42 | `result-track:127ee607710cdbc685bae1685fbfc634fbca226dbeef9486c00463c28f8e2c01` |
+| 4 | `def` | [rectangleDivisorSupportFinset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/MeromorphicOrderPublicEdition1.lean/declarations/rectangledivisorsupportfinset.md) | 51 | `declaration-track:98bf3f30c1c9c242390f919b0df3b6f7fc2651e7eec65ec3853c46f6a77d2404` |
+| 5 | `theorem` | [mem_rectangleDivisorSupportFinset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/MeromorphicOrderPublicEdition1.lean/declarations/mem-rectangledivisorsupportfinset.md) | 57 | `result-track:d24bc2afed851ad957e511a01f85b349fe1dd600fb88003e3c8321a36bc51125` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/MetricNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/MetricNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MetricNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MetricNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,20 +62,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PositiveWeights](../../../../Combinatorics/MetricNamespaced.lean/declarations/positiveweights.md) | 26 | `declaration-track:14a513d2fe2e715ce44b5466d6b7d2607235205468d449607fde4da7c03da439` |
-| 2 | `def` | [weightedHamming](../../../../Combinatorics/MetricNamespaced.lean/declarations/weightedhamming.md) | 30 | `declaration-track:f1ab688162e97e0491aeddbbeb1f8756ab0181586828858af7759311d0b5e74a` |
-| 3 | `theorem` | [weightedHamming_nonnegative](../../../../Combinatorics/MetricNamespaced.lean/declarations/weightedhamming-nonnegative.md) | 39 | `result-track:ae8eb21ac61f83c9cbf3ca77ab7c7d21898660151aeecd590f2b04676b6ecaab` |
-| 4 | `theorem` | [weightedHamming_self](../../../../Combinatorics/MetricNamespaced.lean/declarations/weightedhamming-self.md) | 51 | `result-track:1e74c850dfae40c4de4b62ef1359254d1b56a3baf201784537a0f10487294021` |
-| 5 | `theorem` | [weightedHamming_symmetric](../../../../Combinatorics/MetricNamespaced.lean/declarations/weightedhamming-symmetric.md) | 58 | `result-track:b1e22167eb2baf32f6700ddc41954e2068eda4c4c65efca43827a9386c7ca107` |
-| 6 | `theorem` | [weightedHamming_triangle](../../../../Combinatorics/MetricNamespaced.lean/declarations/weightedhamming-triangle.md) | 72 | `result-track:0fb2df1632521b6042cc732372eaf87494a1d20d7f87be4b80ef49994b26b201` |
-| 7 | `theorem` | [weightedHamming_separates](../../../../Combinatorics/MetricNamespaced.lean/declarations/weightedhamming-separates.md) | 90 | `result-track:879cdae00ff422563b005266702cdb479d58405a0c7647dbb801de9b6ef38e7f` |
-| 8 | `structure` | [PseudometricData](../../../../Combinatorics/MetricNamespaced.lean/declarations/pseudometricdata.md) | 126 | `declaration-track:d800925bf7fb3c446c413003e3ab6b46f5a7197bef3a711ba590c2d4734de3c1` |
-| 9 | `def` | [ZeroDistance](../../../../Combinatorics/MetricNamespaced.lean/declarations/zerodistance.md) | 136 | `declaration-track:191c7b805d58b486584862151941637b54f506e7ac9e298cac10e183a871f6b1` |
-| 10 | `theorem` | [zeroDistance_equivalence](../../../../Combinatorics/MetricNamespaced.lean/declarations/zerodistance-equivalence.md) | 142 | `result-track:651bbece8bc63eb9b4e8582f416e415da5cf73508f6f7283a11ae253480833f2` |
-| 11 | `def` | [zeroDistanceSetoid](../../../../Combinatorics/MetricNamespaced.lean/declarations/zerodistancesetoid.md) | 156 | `declaration-track:d81d529022f577d6a66cd55e402fcb02fea89152fcc0718e3c091db17794bc78` |
-| 12 | `abbrev` | [SeparatedQuotient](../../../../Combinatorics/MetricNamespaced.lean/declarations/separatedquotient.md) | 163 | `declaration-track:41812cb45f7cd2c81ea00ccec480754a8462c0fde5cb43544927a4e570bdb82c` |
-| 13 | `theorem` | [quotient_identifies_exactly_zero_distance](../../../../Combinatorics/MetricNamespaced.lean/declarations/quotient-identifies-exactly-zero-distance.md) | 168 | `result-track:f1ede0322c3858e79e4393c29cb621981011018cae63899f7f48cbc76b074285` |
-| 14 | `def` | [Separated](../../../../Combinatorics/MetricNamespaced.lean/declarations/separated.md) | 177 | `declaration-track:ec580f9df37077a577b7caa961f365cb9ba3baab3d60106117ace5280993aa5e` |
+| 1 | `structure` | [PositiveWeights](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MetricNamespaced.lean/declarations/positiveweights.md) | 26 | `declaration-track:14a513d2fe2e715ce44b5466d6b7d2607235205468d449607fde4da7c03da439` |
+| 2 | `def` | [weightedHamming](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MetricNamespaced.lean/declarations/weightedhamming.md) | 30 | `declaration-track:f1ab688162e97e0491aeddbbeb1f8756ab0181586828858af7759311d0b5e74a` |
+| 3 | `theorem` | [weightedHamming_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MetricNamespaced.lean/declarations/weightedhamming-nonnegative.md) | 39 | `result-track:ae8eb21ac61f83c9cbf3ca77ab7c7d21898660151aeecd590f2b04676b6ecaab` |
+| 4 | `theorem` | [weightedHamming_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MetricNamespaced.lean/declarations/weightedhamming-self.md) | 51 | `result-track:1e74c850dfae40c4de4b62ef1359254d1b56a3baf201784537a0f10487294021` |
+| 5 | `theorem` | [weightedHamming_symmetric](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MetricNamespaced.lean/declarations/weightedhamming-symmetric.md) | 58 | `result-track:b1e22167eb2baf32f6700ddc41954e2068eda4c4c65efca43827a9386c7ca107` |
+| 6 | `theorem` | [weightedHamming_triangle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MetricNamespaced.lean/declarations/weightedhamming-triangle.md) | 72 | `result-track:0fb2df1632521b6042cc732372eaf87494a1d20d7f87be4b80ef49994b26b201` |
+| 7 | `theorem` | [weightedHamming_separates](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MetricNamespaced.lean/declarations/weightedhamming-separates.md) | 90 | `result-track:879cdae00ff422563b005266702cdb479d58405a0c7647dbb801de9b6ef38e7f` |
+| 8 | `structure` | [PseudometricData](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MetricNamespaced.lean/declarations/pseudometricdata.md) | 126 | `declaration-track:d800925bf7fb3c446c413003e3ab6b46f5a7197bef3a711ba590c2d4734de3c1` |
+| 9 | `def` | [ZeroDistance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MetricNamespaced.lean/declarations/zerodistance.md) | 136 | `declaration-track:191c7b805d58b486584862151941637b54f506e7ac9e298cac10e183a871f6b1` |
+| 10 | `theorem` | [zeroDistance_equivalence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MetricNamespaced.lean/declarations/zerodistance-equivalence.md) | 142 | `result-track:651bbece8bc63eb9b4e8582f416e415da5cf73508f6f7283a11ae253480833f2` |
+| 11 | `def` | [zeroDistanceSetoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MetricNamespaced.lean/declarations/zerodistancesetoid.md) | 156 | `declaration-track:d81d529022f577d6a66cd55e402fcb02fea89152fcc0718e3c091db17794bc78` |
+| 12 | `abbrev` | [SeparatedQuotient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MetricNamespaced.lean/declarations/separatedquotient.md) | 163 | `declaration-track:41812cb45f7cd2c81ea00ccec480754a8462c0fde5cb43544927a4e570bdb82c` |
+| 13 | `theorem` | [quotient_identifies_exactly_zero_distance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MetricNamespaced.lean/declarations/quotient-identifies-exactly-zero-distance.md) | 168 | `result-track:f1ede0322c3858e79e4393c29cb621981011018cae63899f7f48cbc76b074285` |
+| 14 | `def` | [Separated](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MetricNamespaced.lean/declarations/separated.md) | 177 | `declaration-track:ec580f9df37077a577b7caa961f365cb9ba3baab3d60106117ace5280993aa5e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

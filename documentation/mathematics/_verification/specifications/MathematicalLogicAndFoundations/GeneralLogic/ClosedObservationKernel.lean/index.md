@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ClosedObservationKernel.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ClosedObservationKernel.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ClosedObservationKernel.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ClosedObservationKernel.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ClosedObservation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ClosedObservationKernel.lean/declarations/closedobservation.md) | 58 | `declaration-track:59223273a0f2a37ebbaf31ca53aaf417c19b4d5ee4dfeab4ef802c1697508f4a` |
-| 2 | `theorem` | [localCausalEquivalent_iff_currentObservation_eq](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ClosedObservationKernel.lean/declarations/localcausalequivalent-iff-currentobservation-eq.md) | 70 | `result-track:938cd14d281431c240edd6b4385a78cea9f36b1c070cbc79121673ed9bf0f3b9` |
+| 1 | `structure` | [ClosedObservation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ClosedObservationKernel.lean/declarations/closedobservation.md) | 58 | `declaration-track:59223273a0f2a37ebbaf31ca53aaf417c19b4d5ee4dfeab4ef802c1697508f4a` |
+| 2 | `theorem` | [localCausalEquivalent_iff_currentObservation_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ClosedObservationKernel.lean/declarations/localcausalequivalent-iff-currentobservation-eq.md) | 70 | `result-track:938cd14d281431c240edd6b4385a78cea9f36b1c070cbc79121673ed9bf0f3b9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

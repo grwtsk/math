@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualMixedWorkExplicitEnvelope.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualMixedWorkExplicitEnvelope.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualMixedWorkExplicitEnvelope.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualMixedWorkExplicitEnvelope.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actualErrorExpMass_nonneg](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualMixedWorkExplicitEnvelope.lean/declarations/actualerrorexpmass-nonneg.md) | 26 | `result-track:c3c587f314b1bd58514f4bde76fb7e8a95d661418fe598c74aa54fc91456264e` |
-| 2 | `theorem` | [jointMangoldtErrorWork_abs_le_explicit_envelope](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualMixedWorkExplicitEnvelope.lean/declarations/jointmangoldterrorwork-abs-le-explicit-envelope.md) | 36 | `result-track:af523214f5610ec3a55baf4b865f6434ffff41264bf5e343b7f7b5becbe1d5b5` |
+| 1 | `theorem` | [actualErrorExpMass_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualMixedWorkExplicitEnvelope.lean/declarations/actualerrorexpmass-nonneg.md) | 26 | `result-track:c3c587f314b1bd58514f4bde76fb7e8a95d661418fe598c74aa54fc91456264e` |
+| 2 | `theorem` | [jointMangoldtErrorWork_abs_le_explicit_envelope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualMixedWorkExplicitEnvelope.lean/declarations/jointmangoldterrorwork-abs-le-explicit-envelope.md) | 36 | `result-track:af523214f5610ec3a55baf4b865f6434ffff41264bf5e343b7f7b5becbe1d5b5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

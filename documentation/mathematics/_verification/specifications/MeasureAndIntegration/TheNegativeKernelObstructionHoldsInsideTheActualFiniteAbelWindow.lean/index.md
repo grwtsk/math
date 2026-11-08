@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/TheNegativeKernelObstructionHoldsInsideTheActualFiniteAbelWindow.lean/index.md) · [Full source](../../../../MeasureAndIntegration/TheNegativeKernelObstructionHoldsInsideTheActualFiniteAbelWindow.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TheNegativeKernelObstructionHoldsInsideTheActualFiniteAbelWindow.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TheNegativeKernelObstructionHoldsInsideTheActualFiniteAbelWindow.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [interior_smooth_nonpositive_pairing_unbounded](../../../../MeasureAndIntegration/TheNegativeKernelObstructionHoldsInsideTheActualFiniteAbelWindow.lean/declarations/interior-smooth-nonpositive-pairing-unbounded.md) | 23 | `result-track:88f9f7de8f7166917ed78165169eb33c618630c7bc25c752c3e319db785867f5` |
-| 2 | `theorem` | [actual_native_window_pairing_unbounded](../../../../MeasureAndIntegration/TheNegativeKernelObstructionHoldsInsideTheActualFiniteAbelWindow.lean/declarations/actual-native-window-pairing-unbounded.md) | 97 | `result-track:6a565e75b624d7f058e855c05b7ede7893bd27220b35d0af2a66aae36ae72cfa` |
+| 1 | `theorem` | [interior_smooth_nonpositive_pairing_unbounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TheNegativeKernelObstructionHoldsInsideTheActualFiniteAbelWindow.lean/declarations/interior-smooth-nonpositive-pairing-unbounded.md) | 23 | `result-track:88f9f7de8f7166917ed78165169eb33c618630c7bc25c752c3e319db785867f5` |
+| 2 | `theorem` | [actual_native_window_pairing_unbounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TheNegativeKernelObstructionHoldsInsideTheActualFiniteAbelWindow.lean/declarations/actual-native-window-pairing-unbounded.md) | 97 | `result-track:6a565e75b624d7f058e855c05b7ede7893bd27220b35d0af2a66aae36ae72cfa` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

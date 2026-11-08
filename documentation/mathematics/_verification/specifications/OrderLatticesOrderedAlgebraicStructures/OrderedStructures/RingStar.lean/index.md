@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingStar.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingStar.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingStar.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingStar.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingStar.lean/declarations/example.md) | 28 | `declaration-track:6c3706bf6b672df656408f6e9a2e7350ce8bc8ad4306ac026d401f409d2da1a6` |
-| 2 | `lemma` | [mul_le_mul_of_nonneg_left](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingStar.lean/declarations/mul-le-mul-of-nonneg-left.md) | 36 | `result-track:30ee4777b6b5cc3e2b45c8a10402e42eed456e5ed765d14348f8baf2d7da67b6` |
-| 3 | `instance` | [toIsOrderedRing](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingStar.lean/declarations/toisorderedring.md) | 50 | `declaration-track:2d5f69b68ba58425f29c271016cf3a4a6d45333fd854a45848100ea233a53c99` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingStar.lean/declarations/example.md) | 28 | `declaration-track:6c3706bf6b672df656408f6e9a2e7350ce8bc8ad4306ac026d401f409d2da1a6` |
+| 2 | `lemma` | [mul_le_mul_of_nonneg_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingStar.lean/declarations/mul-le-mul-of-nonneg-left.md) | 36 | `result-track:30ee4777b6b5cc3e2b45c8a10402e42eed456e5ed765d14348f8baf2d7da67b6` |
+| 3 | `instance` | [toIsOrderedRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingStar.lean/declarations/toisorderedring.md) | 50 | `declaration-track:2d5f69b68ba58425f29c271016cf3a4a6d45333fd854a45848100ea233a53c99` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

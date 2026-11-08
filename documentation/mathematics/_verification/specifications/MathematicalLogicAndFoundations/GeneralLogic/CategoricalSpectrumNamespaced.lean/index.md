@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CategoricalSpectrumNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CategoricalSpectrumNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CategoricalSpectrumNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CategoricalSpectrumNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [DiracSpectrumMorphism](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CategoricalSpectrumNamespaced.lean/declarations/diracspectrummorphism.md) | 32 | `declaration-track:e3a2b7a1c7d82787fd12e441f2f0921e8441c910dbc4eed6dc63436c384d6783` |
-| 2 | `structure` | [DiracSpectrumCategory](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CategoricalSpectrumNamespaced.lean/declarations/diracspectrumcategory.md) | 48 | `declaration-track:c185fda18d77cf85a8a7d69402b70daa306a6e8f7b3c1aa9ed40087a95dea774` |
-| 3 | `theorem` | [dirac_morphism_preserves_eigenvalues](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CategoricalSpectrumNamespaced.lean/declarations/dirac-morphism-preserves-eigenvalues.md) | 61 | `result-track:9724733b38bd34fc838941eb883efed1d407fa9a8e254d3cdf919c6e8d9801b2` |
-| 4 | `theorem` | [dirac_morphism_preserves_multiplicity](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CategoricalSpectrumNamespaced.lean/declarations/dirac-morphism-preserves-multiplicity.md) | 67 | `result-track:2a282e386e4b349f377c59eb88f0a338d14f244b557b56e91b35cc193d7d4702` |
-| 5 | `theorem` | [dirac_spectrum_category_assoc](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CategoricalSpectrumNamespaced.lean/declarations/dirac-spectrum-category-assoc.md) | 73 | `result-track:c9147a27c18a58a72072316f9fc04311da3868947ec960602aa343df681539a9` |
+| 1 | `structure` | [DiracSpectrumMorphism](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CategoricalSpectrumNamespaced.lean/declarations/diracspectrummorphism.md) | 32 | `declaration-track:e3a2b7a1c7d82787fd12e441f2f0921e8441c910dbc4eed6dc63436c384d6783` |
+| 2 | `structure` | [DiracSpectrumCategory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CategoricalSpectrumNamespaced.lean/declarations/diracspectrumcategory.md) | 48 | `declaration-track:c185fda18d77cf85a8a7d69402b70daa306a6e8f7b3c1aa9ed40087a95dea774` |
+| 3 | `theorem` | [dirac_morphism_preserves_eigenvalues](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CategoricalSpectrumNamespaced.lean/declarations/dirac-morphism-preserves-eigenvalues.md) | 61 | `result-track:9724733b38bd34fc838941eb883efed1d407fa9a8e254d3cdf919c6e8d9801b2` |
+| 4 | `theorem` | [dirac_morphism_preserves_multiplicity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CategoricalSpectrumNamespaced.lean/declarations/dirac-morphism-preserves-multiplicity.md) | 67 | `result-track:2a282e386e4b349f377c59eb88f0a338d14f244b557b56e91b35cc193d7d4702` |
+| 5 | `theorem` | [dirac_spectrum_category_assoc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CategoricalSpectrumNamespaced.lean/declarations/dirac-spectrum-category-assoc.md) | 73 | `result-track:c9147a27c18a58a72072316f9fc04311da3868947ec960602aa343df681539a9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

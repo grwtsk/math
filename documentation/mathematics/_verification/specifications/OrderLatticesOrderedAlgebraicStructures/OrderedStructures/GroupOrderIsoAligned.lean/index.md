@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupOrderIsoAligned.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupOrderIsoAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupOrderIsoAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupOrderIsoAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [OrderIso.inv](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupOrderIsoAligned.lean/declarations/orderiso-inv.md) | 37 | `declaration-track:0875a01571129b84af522655cc9d9e53caf4e83515e247d26fc4a6206368ba1d` |
-| 2 | `theorem` | [inv_le'](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupOrderIsoAligned.lean/declarations/inv-le.md) | 48 | `result-track:e5f2831a817ccfd04243d34fb01f9c3468e7cec403b6bf05ebb9f1eb6fe7c41c` |
-| 3 | `theorem` | [le_inv'](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupOrderIsoAligned.lean/declarations/le-inv.md) | 60 | `result-track:3ea04e45ef932b396130bd88f94176d53d0881915e155f78021e54b4e7497098` |
-| 4 | `def` | [OrderIso.divLeft](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupOrderIsoAligned.lean/declarations/orderiso-divleft.md) | 67 | `declaration-track:8b439134a7c3c5c68642a4c0fcd5fd95bce6c369ae0238bb5b1599ea4ee86f3e` |
-| 5 | `def` | [OrderIso.mulRight](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupOrderIsoAligned.lean/declarations/orderiso-mulright.md) | 94 | `declaration-track:6bbbd3c72d762b0ffa7c900f3a3d1b1bf596c7b1c29e27910a8b36c5e576fb83` |
-| 6 | `theorem` | [OrderIso.mulRight_symm](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupOrderIsoAligned.lean/declarations/orderiso-mulright-symm.md) | 103 | `result-track:72efc623a605b142b386aac2e5a00e301e5b1c33c24961fa27779df3fa2c4e85` |
-| 7 | `def` | [OrderIso.divRight](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupOrderIsoAligned.lean/declarations/orderiso-divright.md) | 111 | `declaration-track:702591678d84f8d7926c28f1d709bedf7c3ce762ffa57e13ad47ed8054826962` |
-| 8 | `def` | [OrderIso.mulLeft](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupOrderIsoAligned.lean/declarations/orderiso-mulleft.md) | 126 | `declaration-track:8655a7288709f58d4abbde12be6ab1ba34bdeb27860aaa0c46ee6299c44590fb` |
-| 9 | `theorem` | [OrderIso.mulLeft_symm](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupOrderIsoAligned.lean/declarations/orderiso-mulleft-symm.md) | 136 | `result-track:148386be2e4aef46ab65ae24776503d4ae1c86821c8970ced68e0fc6d634e3a4` |
+| 1 | `def` | [OrderIso.inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupOrderIsoAligned.lean/declarations/orderiso-inv.md) | 37 | `declaration-track:0875a01571129b84af522655cc9d9e53caf4e83515e247d26fc4a6206368ba1d` |
+| 2 | `theorem` | [inv_le'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupOrderIsoAligned.lean/declarations/inv-le.md) | 48 | `result-track:e5f2831a817ccfd04243d34fb01f9c3468e7cec403b6bf05ebb9f1eb6fe7c41c` |
+| 3 | `theorem` | [le_inv'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupOrderIsoAligned.lean/declarations/le-inv.md) | 60 | `result-track:3ea04e45ef932b396130bd88f94176d53d0881915e155f78021e54b4e7497098` |
+| 4 | `def` | [OrderIso.divLeft](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupOrderIsoAligned.lean/declarations/orderiso-divleft.md) | 67 | `declaration-track:8b439134a7c3c5c68642a4c0fcd5fd95bce6c369ae0238bb5b1599ea4ee86f3e` |
+| 5 | `def` | [OrderIso.mulRight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupOrderIsoAligned.lean/declarations/orderiso-mulright.md) | 94 | `declaration-track:6bbbd3c72d762b0ffa7c900f3a3d1b1bf596c7b1c29e27910a8b36c5e576fb83` |
+| 6 | `theorem` | [OrderIso.mulRight_symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupOrderIsoAligned.lean/declarations/orderiso-mulright-symm.md) | 103 | `result-track:72efc623a605b142b386aac2e5a00e301e5b1c33c24961fa27779df3fa2c4e85` |
+| 7 | `def` | [OrderIso.divRight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupOrderIsoAligned.lean/declarations/orderiso-divright.md) | 111 | `declaration-track:702591678d84f8d7926c28f1d709bedf7c3ce762ffa57e13ad47ed8054826962` |
+| 8 | `def` | [OrderIso.mulLeft](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupOrderIsoAligned.lean/declarations/orderiso-mulleft.md) | 126 | `declaration-track:8655a7288709f58d4abbde12be6ab1ba34bdeb27860aaa0c46ee6299c44590fb` |
+| 9 | `theorem` | [OrderIso.mulLeft_symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupOrderIsoAligned.lean/declarations/orderiso-mulleft-symm.md) | 136 | `result-track:148386be2e4aef46ab65ae24776503d4ae1c86821c8970ced68e0fc6d634e3a4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

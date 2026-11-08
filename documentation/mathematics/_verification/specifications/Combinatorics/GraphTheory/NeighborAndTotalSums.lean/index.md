@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/NeighborAndTotalSums.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/NeighborAndTotalSums.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/NeighborAndTotalSums.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/NeighborAndTotalSums.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [Edge Channel Sum](../../../../../RealFunctions/EdgeChannelSum.lean/index.md) — import line 19; pinned internal source present.
+- [Edge Channel Sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/EdgeChannelSum.lean/index.md) — import line 19; pinned internal source present.
 - `Folder.Spectral.Graph` — import line 21; external provider; requires a separately pinned dependency.
 - `Folder.Spectral.Tensor` — import line 22; external provider; requires a separately pinned dependency.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [cellEnergy](../../../../../Combinatorics/GraphTheory/NeighborAndTotalSums.lean/declarations/cellenergy.md) | 45 | `declaration-track:a2f655a93b62aa4dd97cc5700598d9122d5c11e5f55046a50c81396a1cd31ba5` |
-| 2 | `def` | [energy](../../../../../Combinatorics/GraphTheory/NeighborAndTotalSums.lean/declarations/energy.md) | 58 | `declaration-track:17f1aaa7ad4b0575811c326667408986661f8f73e97cff6e69e550043a2f997a` |
-| 3 | `theorem` | [cellEnergy_nonneg](../../../../../Combinatorics/GraphTheory/NeighborAndTotalSums.lean/declarations/cellenergy-nonneg.md) | 64 | `result-track:3e98dfa73ef62d995050cce7bc08788738a0d6ee4c0a70e921ee6a19aab75d16` |
-| 4 | `theorem` | [energy_nonneg](../../../../../Combinatorics/GraphTheory/NeighborAndTotalSums.lean/declarations/energy-nonneg.md) | 74 | `result-track:d96f3ac940d2f9ee9a9dfeb2cb29a0723500eb97f88cf68b6df08e97f2e83cfc` |
+| 1 | `def` | [cellEnergy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/NeighborAndTotalSums.lean/declarations/cellenergy.md) | 45 | `declaration-track:a2f655a93b62aa4dd97cc5700598d9122d5c11e5f55046a50c81396a1cd31ba5` |
+| 2 | `def` | [energy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/NeighborAndTotalSums.lean/declarations/energy.md) | 58 | `declaration-track:17f1aaa7ad4b0575811c326667408986661f8f73e97cff6e69e550043a2f997a` |
+| 3 | `theorem` | [cellEnergy_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/NeighborAndTotalSums.lean/declarations/cellenergy-nonneg.md) | 64 | `result-track:3e98dfa73ef62d995050cce7bc08788738a0d6ee4c0a70e921ee6a19aab75d16` |
+| 4 | `theorem` | [energy_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/NeighborAndTotalSums.lean/declarations/energy-nonneg.md) | 74 | `result-track:d96f3ac940d2f9ee9a9dfeb2cb29a0723500eb97f88cf68b6df08e97f2e83cfc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

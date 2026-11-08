@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/HalfLineDuality.lean/index.md) · [Full source](../../../../MeasureAndIntegration/HalfLineDuality.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HalfLineDuality.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HalfLineDuality.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [restricted_inner_integrable](../../../../MeasureAndIntegration/HalfLineDuality.lean/declarations/restricted-inner-integrable.md) | 16 | `result-track:a30b77f77476c9cfb1aad423505e487b679208e6865a568e4fd69feaf99ce099` |
-| 2 | `theorem` | [extended_inner_integrable](../../../../MeasureAndIntegration/HalfLineDuality.lean/declarations/extended-inner-integrable.md) | 22 | `result-track:aa16dade6ce391d46720a4050056439d62f2a64c8a530c91622b78ec9444661e` |
-| 3 | `theorem` | [inner_restriction_zeroExtension](../../../../MeasureAndIntegration/HalfLineDuality.lean/declarations/inner-restriction-zeroextension.md) | 26 | `result-track:fefd0ddd0a2ec2eb1c70adf5d51d06a7cc3fb4a75932534581f5788b2b41994c` |
-| 4 | `theorem` | [zeroExtension_adjoint](../../../../MeasureAndIntegration/HalfLineDuality.lean/declarations/zeroextension-adjoint.md) | 44 | `result-track:cc55e389096feab01891b3f2df632770db1c4e4c389912b2fe1c11357932705d` |
-| 5 | `theorem` | [restriction_adjoint](../../../../MeasureAndIntegration/HalfLineDuality.lean/declarations/restriction-adjoint.md) | 49 | `result-track:6f2c2d778be22fc21ded7b04c1b85016efe38db9aa0be7a7b06189578e8db0cc` |
+| 1 | `theorem` | [restricted_inner_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HalfLineDuality.lean/declarations/restricted-inner-integrable.md) | 16 | `result-track:a30b77f77476c9cfb1aad423505e487b679208e6865a568e4fd69feaf99ce099` |
+| 2 | `theorem` | [extended_inner_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HalfLineDuality.lean/declarations/extended-inner-integrable.md) | 22 | `result-track:aa16dade6ce391d46720a4050056439d62f2a64c8a530c91622b78ec9444661e` |
+| 3 | `theorem` | [inner_restriction_zeroExtension](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HalfLineDuality.lean/declarations/inner-restriction-zeroextension.md) | 26 | `result-track:fefd0ddd0a2ec2eb1c70adf5d51d06a7cc3fb4a75932534581f5788b2b41994c` |
+| 4 | `theorem` | [zeroExtension_adjoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HalfLineDuality.lean/declarations/zeroextension-adjoint.md) | 44 | `result-track:cc55e389096feab01891b3f2df632770db1c4e4c389912b2fe1c11357932705d` |
+| 5 | `theorem` | [restriction_adjoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HalfLineDuality.lean/declarations/restriction-adjoint.md) | 49 | `result-track:6f2c2d778be22fc21ded7b04c1b85016efe38db9aa0be7a7b06189578e8db0cc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

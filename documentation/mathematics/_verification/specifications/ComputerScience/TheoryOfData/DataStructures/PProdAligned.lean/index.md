@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/PProdAligned.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/PProdAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/PProdAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/PProdAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [mk.eta](../../../../../../ComputerScience/TheoryOfData/DataStructures/PProdAligned.lean/declarations/mk-eta.md) | 22 | `result-track:8c5b8a57ceb4d9bc54227a7e1abb81f8485fbaaabe559daf075fa85a9899fda3` |
-| 2 | `theorem` | [«forall»](../../../../../../ComputerScience/TheoryOfData/DataStructures/PProdAligned.lean/declarations/forall.md) | 27 | `result-track:38fec6d9dad7cec07aeb39c4731e6af8d3ab6122b4010e42aa651f08ca082e31` |
-| 3 | `theorem` | [«exists»](../../../../../../ComputerScience/TheoryOfData/DataStructures/PProdAligned.lean/declarations/exists.md) | 32 | `result-track:1c9919fa0cdf8f1e5711b6edd122aaf5eafa5288a027dd3a7b620e4f21a7ef72` |
-| 4 | `theorem` | [forall'](../../../../../../ComputerScience/TheoryOfData/DataStructures/PProdAligned.lean/declarations/forall-source-edition-2.md) | 36 | `result-track:ec6942793697125e7f973006361344d7f4fb4ebc4060e8ae04c728fe028d63c0` |
-| 5 | `theorem` | [exists'](../../../../../../ComputerScience/TheoryOfData/DataStructures/PProdAligned.lean/declarations/exists-source-edition-2.md) | 40 | `result-track:888a156fcd22247f39ac85340224beb2269b4e5d6183c30ee374a9419669458f` |
-| 6 | `theorem` | [Function.Injective.pprod_map](../../../../../../ComputerScience/TheoryOfData/DataStructures/PProdAligned.lean/declarations/function-injective-pprod-map.md) | 46 | `result-track:414eefb6b07731eb4c165d850727a16c6ab6b634e7d167f71eebd00395a5c585` |
+| 1 | `theorem` | [mk.eta](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/PProdAligned.lean/declarations/mk-eta.md) | 22 | `result-track:8c5b8a57ceb4d9bc54227a7e1abb81f8485fbaaabe559daf075fa85a9899fda3` |
+| 2 | `theorem` | [«forall»](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/PProdAligned.lean/declarations/forall.md) | 27 | `result-track:38fec6d9dad7cec07aeb39c4731e6af8d3ab6122b4010e42aa651f08ca082e31` |
+| 3 | `theorem` | [«exists»](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/PProdAligned.lean/declarations/exists.md) | 32 | `result-track:1c9919fa0cdf8f1e5711b6edd122aaf5eafa5288a027dd3a7b620e4f21a7ef72` |
+| 4 | `theorem` | [forall'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/PProdAligned.lean/declarations/forall-source-edition-2.md) | 36 | `result-track:ec6942793697125e7f973006361344d7f4fb4ebc4060e8ae04c728fe028d63c0` |
+| 5 | `theorem` | [exists'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/PProdAligned.lean/declarations/exists-source-edition-2.md) | 40 | `result-track:888a156fcd22247f39ac85340224beb2269b4e5d6183c30ee374a9419669458f` |
+| 6 | `theorem` | [Function.Injective.pprod_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/PProdAligned.lean/declarations/function-injective-pprod-map.md) | 46 | `result-track:414eefb6b07731eb4c165d850727a16c6ab6b634e7d167f71eebd00395a5c585` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/FactorizationFactorizationSupportPrime.lean/index.md) · [Full source](../../../../NumberTheory/FactorizationFactorizationSupportPrime.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FactorizationFactorizationSupportPrime.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FactorizationFactorizationSupportPrime.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [factorization_support_prime](../../../../NumberTheory/FactorizationFactorizationSupportPrime.lean/declarations/factorization-support-prime.md) | 19 | `result-track:d052a37b7a224f9c01e1174c5771e694fe543f174be89db883a338b7095a9e38` |
-| 2 | `theorem` | [factorization_exponent_pos](../../../../NumberTheory/FactorizationFactorizationSupportPrime.lean/declarations/factorization-exponent-pos.md) | 26 | `result-track:1122348ad003bca0feb069b8e91c7e5eba8f5f6e98880089fd8df5c69e178c79` |
+| 1 | `theorem` | [factorization_support_prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FactorizationFactorizationSupportPrime.lean/declarations/factorization-support-prime.md) | 19 | `result-track:d052a37b7a224f9c01e1174c5771e694fe543f174be89db883a338b7095a9e38` |
+| 2 | `theorem` | [factorization_exponent_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FactorizationFactorizationSupportPrime.lean/declarations/factorization-exponent-pos.md) | 26 | `result-track:1122348ad003bca0feb069b8e91c7e5eba8f5f6e98880089fd8df5c69e178c79` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

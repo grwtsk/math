@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/ReflectionDisks.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/ReflectionDisks.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ReflectionDisks.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ReflectionDisks.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.CriticalReflection`](../../../../FunctionsOfAComplexVariable/CriticalReflectionHistoricalSourceEdition2.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.CriticalReflection`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/CriticalReflectionHistoricalSourceEdition2.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Tactic.Linarith` — import line 5; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic.Ring` — import line 6; external provider; requires a separately pinned dependency.
 
@@ -59,15 +59,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [fixed_iff](../../../../FunctionsOfAComplexVariable/ReflectionDisks.lean/declarations/fixed-iff.md) | 21 | `result-track:400bf81ba9c9407f5864f3f172b34229dde3d81d9eb22d368ba4b51a139c5d32` |
-| 2 | `theorem` | [sub_reflected](../../../../FunctionsOfAComplexVariable/ReflectionDisks.lean/declarations/sub-reflected.md) | 34 | `result-track:17c783c05dd3c239f9efb13e8d728b20a150d97a16521b65543cc0586aef975e` |
-| 3 | `theorem` | [norm_sub_reflected](../../../../FunctionsOfAComplexVariable/ReflectionDisks.lean/declarations/norm-sub-reflected.md) | 39 | `result-track:ab39c4370877f17b365be88106a8c78fbe6ea447a104b0a7acc4c213ec5cfe7c` |
-| 4 | `theorem` | [norm_sub_fixed_center](../../../../FunctionsOfAComplexVariable/ReflectionDisks.lean/declarations/norm-sub-fixed-center.md) | 44 | `result-track:ccc7fb536f7ef3f7c047f7f19388f2829b675908cd547b08e59381572c2675af` |
-| 5 | `theorem` | [mem_closedDisk_reflection_iff](../../../../FunctionsOfAComplexVariable/ReflectionDisks.lean/declarations/mem-closeddisk-reflection-iff.md) | 49 | `result-track:bc8b4e580f88f476a8ae533a11af94296f7dee21809fb4bfa10dd110c15a0ef5` |
-| 6 | `theorem` | [norm_sub_conjugated](../../../../FunctionsOfAComplexVariable/ReflectionDisks.lean/declarations/norm-sub-conjugated.md) | 56 | `result-track:e36463a09ceceeb6d68421238d3cf8d36d24d999e4531bf2e509e85f6ce9dbce` |
-| 7 | `theorem` | [norm_conjugate_sub_center](../../../../FunctionsOfAComplexVariable/ReflectionDisks.lean/declarations/norm-conjugate-sub-center.md) | 59 | `result-track:680147c9915566b2abd109018be23f5272bc05700c911e8a72c7d2fea351b8c4` |
-| 8 | `theorem` | [imaginary_enclosure](../../../../FunctionsOfAComplexVariable/ReflectionDisks.lean/declarations/imaginary-enclosure.md) | 63 | `result-track:2e4dc0108f2155e92cd2045596cad395dd64d32a3d9f7221d4edcd3b41acb1f4` |
-| 9 | `theorem` | [norm_sub_eq_imaginary](../../../../FunctionsOfAComplexVariable/ReflectionDisks.lean/declarations/norm-sub-eq-imaginary.md) | 69 | `result-track:8f28f8eeab6573806027435ef0ca3fdaac897a7fb3b7399822b75e4ac3c6216e` |
+| 1 | `theorem` | [fixed_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ReflectionDisks.lean/declarations/fixed-iff.md) | 21 | `result-track:400bf81ba9c9407f5864f3f172b34229dde3d81d9eb22d368ba4b51a139c5d32` |
+| 2 | `theorem` | [sub_reflected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ReflectionDisks.lean/declarations/sub-reflected.md) | 34 | `result-track:17c783c05dd3c239f9efb13e8d728b20a150d97a16521b65543cc0586aef975e` |
+| 3 | `theorem` | [norm_sub_reflected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ReflectionDisks.lean/declarations/norm-sub-reflected.md) | 39 | `result-track:ab39c4370877f17b365be88106a8c78fbe6ea447a104b0a7acc4c213ec5cfe7c` |
+| 4 | `theorem` | [norm_sub_fixed_center](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ReflectionDisks.lean/declarations/norm-sub-fixed-center.md) | 44 | `result-track:ccc7fb536f7ef3f7c047f7f19388f2829b675908cd547b08e59381572c2675af` |
+| 5 | `theorem` | [mem_closedDisk_reflection_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ReflectionDisks.lean/declarations/mem-closeddisk-reflection-iff.md) | 49 | `result-track:bc8b4e580f88f476a8ae533a11af94296f7dee21809fb4bfa10dd110c15a0ef5` |
+| 6 | `theorem` | [norm_sub_conjugated](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ReflectionDisks.lean/declarations/norm-sub-conjugated.md) | 56 | `result-track:e36463a09ceceeb6d68421238d3cf8d36d24d999e4531bf2e509e85f6ce9dbce` |
+| 7 | `theorem` | [norm_conjugate_sub_center](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ReflectionDisks.lean/declarations/norm-conjugate-sub-center.md) | 59 | `result-track:680147c9915566b2abd109018be23f5272bc05700c911e8a72c7d2fea351b8c4` |
+| 8 | `theorem` | [imaginary_enclosure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ReflectionDisks.lean/declarations/imaginary-enclosure.md) | 63 | `result-track:2e4dc0108f2155e92cd2045596cad395dd64d32a3d9f7221d4edcd3b41acb1f4` |
+| 9 | `theorem` | [norm_sub_eq_imaginary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ReflectionDisks.lean/declarations/norm-sub-eq-imaginary.md) | 69 | `result-track:8f28f8eeab6573806027435ef0ca3fdaac897a7fb3b7399822b75e4ac3c6216e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

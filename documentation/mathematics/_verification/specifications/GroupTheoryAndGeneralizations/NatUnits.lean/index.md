@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/NatUnits.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/NatUnits.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/NatUnits.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/NatUnits.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [units_eq_one](../../../../GroupTheoryAndGeneralizations/NatUnits.lean/declarations/units-eq-one.md) | 20 | `result-track:a84c575cc90de62bce00e348250ba21ff3948679b95a47c6b46e1601014bb547` |
-| 2 | `lemma` | [addUnits_eq_zero](../../../../GroupTheoryAndGeneralizations/NatUnits.lean/declarations/addunits-eq-zero.md) | 22 | `result-track:29b628226a4f9ad8fcc841088750bb6b1b6396cb91402eef701ed6a3487eb0ca` |
-| 3 | `instance` | [unique_units](../../../../GroupTheoryAndGeneralizations/NatUnits.lean/declarations/unique-units.md) | 25 | `declaration-track:b3257aedd6d95e9d6373f901c7b3929c0e177f6a5bca1206fba79d6db7a802a3` |
-| 4 | `instance` | [unique_addUnits](../../../../GroupTheoryAndGeneralizations/NatUnits.lean/declarations/unique-addunits.md) | 29 | `declaration-track:754543fc172ba0caccd5527482fca5dd28b3059ed3185f7f5585c1ed6d2fad3c` |
-| 5 | `lemma` | [isUnit_iff](../../../../GroupTheoryAndGeneralizations/NatUnits.lean/declarations/isunit-iff.md) | 34 | `result-track:ecf08a00a643a6f2fc01daf073995b7a405814f549ccebe4ad9f8656baa121fe` |
-| 6 | `lemma` | [isAddUnit_iff](../../../../GroupTheoryAndGeneralizations/NatUnits.lean/declarations/isaddunit-iff.md) | 37 | `result-track:7889ab0c6f08980d5fc1f52b2f5cd14f069aee0226a621e31c8dd2639d79bc39` |
+| 1 | `lemma` | [units_eq_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/NatUnits.lean/declarations/units-eq-one.md) | 20 | `result-track:a84c575cc90de62bce00e348250ba21ff3948679b95a47c6b46e1601014bb547` |
+| 2 | `lemma` | [addUnits_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/NatUnits.lean/declarations/addunits-eq-zero.md) | 22 | `result-track:29b628226a4f9ad8fcc841088750bb6b1b6396cb91402eef701ed6a3487eb0ca` |
+| 3 | `instance` | [unique_units](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/NatUnits.lean/declarations/unique-units.md) | 25 | `declaration-track:b3257aedd6d95e9d6373f901c7b3929c0e177f6a5bca1206fba79d6db7a802a3` |
+| 4 | `instance` | [unique_addUnits](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/NatUnits.lean/declarations/unique-addunits.md) | 29 | `declaration-track:754543fc172ba0caccd5527482fca5dd28b3059ed3185f7f5585c1ed6d2fad3c` |
+| 5 | `lemma` | [isUnit_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/NatUnits.lean/declarations/isunit-iff.md) | 34 | `result-track:ecf08a00a643a6f2fc01daf073995b7a405814f549ccebe4ad9f8656baa121fe` |
+| 6 | `lemma` | [isAddUnit_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/NatUnits.lean/declarations/isaddunit-iff.md) | 37 | `result-track:7889ab0c6f08980d5fc1f52b2f5cd14f069aee0226a621e31c8dd2639d79bc39` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

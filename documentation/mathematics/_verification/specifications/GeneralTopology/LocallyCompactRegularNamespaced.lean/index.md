@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/LocallyCompactRegularNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/LocallyCompactRegularNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LocallyCompactRegularNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LocallyCompactRegularNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../GeneralTopology/LocallyCompactRegularNamespaced.lean/declarations/instance.md) | 25 | `declaration-track:7b1ffcf90ab91c0c90eea5b099c0e58955bab6f803e2df9f0dbd5defb8143b39` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LocallyCompactRegularNamespaced.lean/declarations/instance.md) | 25 | `declaration-track:7b1ffcf90ab91c0c90eea5b099c0e58955bab6f803e2df9f0dbd5defb8143b39` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

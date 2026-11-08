@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PartialNamespacedPublicIterM.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PartialNamespacedPublicIterM.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PartialNamespacedPublicIterM.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PartialNamespacedPublicIterM.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [IterM.Partial](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PartialNamespacedPublicIterM.lean/declarations/iterm-partial.md) | 28 | `declaration-track:cf14029924bd1b6b056db32df29f08ef57f4d050e6a202c5028b1b961777da79` |
-| 2 | `def` | [IterM.allowNontermination](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PartialNamespacedPublicIterM.lean/declarations/iterm-allownontermination.md) | 41 | `declaration-track:590ad5245f26d507496732529699a687b01660bb06137f91f6ef62de6e503ed5` |
+| 1 | `structure` | [IterM.Partial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PartialNamespacedPublicIterM.lean/declarations/iterm-partial.md) | 28 | `declaration-track:cf14029924bd1b6b056db32df29f08ef57f4d050e6a202c5028b1b961777da79` |
+| 2 | `def` | [IterM.allowNontermination](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PartialNamespacedPublicIterM.lean/declarations/iterm-allownontermination.md) | 41 | `declaration-track:590ad5245f26d507496732529699a687b01660bb06137f91f6ef62de6e503ed5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

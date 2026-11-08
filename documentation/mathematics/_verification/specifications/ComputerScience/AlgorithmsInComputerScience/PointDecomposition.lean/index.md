@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/PointDecomposition.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/PointDecomposition.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PointDecomposition.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PointDecomposition.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [StatementRole](../../../../../ComputerScience/AlgorithmsInComputerScience/PointDecomposition.lean/declarations/statementrole.md) | 13 | `declaration-track:c320c3adeb3acd9ac8c8471c2906cd1941b0381c59dbdc4689f43ab80b412875` |
-| 2 | `inductive` | [ProofRole](../../../../../ComputerScience/AlgorithmsInComputerScience/PointDecomposition.lean/declarations/proofrole.md) | 25 | `declaration-track:4438d2594ad5ab66e5cd3ce373522cf486195f360bb9d58d1860c5b30515efe0` |
-| 3 | `inductive` | [DefinitionRole](../../../../../ComputerScience/AlgorithmsInComputerScience/PointDecomposition.lean/declarations/definitionrole.md) | 36 | `declaration-track:674fd76d4a7be44703605beec5c8b1f954e85f159f0ce105b6161b5631803dba` |
-| 4 | `structure` | [SourceFragment](../../../../../ComputerScience/AlgorithmsInComputerScience/PointDecomposition.lean/declarations/sourcefragment.md) | 46 | `declaration-track:67e8b8e6c6124ad3b8b2ce2a3d3ce2c8f3b82882515848432c96f3d9c3324f54` |
-| 5 | `structure` | [LosslessPointDecomposition](../../../../../ComputerScience/AlgorithmsInComputerScience/PointDecomposition.lean/declarations/losslesspointdecomposition.md) | 54 | `declaration-track:e1bc6732ab763f1983a16c948752255cb6a7fa774b4685b671b861edd472323a` |
-| 6 | `structure` | [StatementDecomposition](../../../../../ComputerScience/AlgorithmsInComputerScience/PointDecomposition.lean/declarations/statementdecomposition.md) | 64 | `declaration-track:db88ee150b9e46678269726e1a15878cccbd31df9dbd029f65e32196b9bfdef1` |
-| 7 | `structure` | [ProofDecomposition](../../../../../ComputerScience/AlgorithmsInComputerScience/PointDecomposition.lean/declarations/proofdecomposition.md) | 72 | `declaration-track:dbe96cac7f8ac5afa8363f84c0323387bff95cac70c246883340d7e48a503540` |
-| 8 | `structure` | [DefinitionDecomposition](../../../../../ComputerScience/AlgorithmsInComputerScience/PointDecomposition.lean/declarations/definitiondecomposition.md) | 80 | `declaration-track:0a5a18bff5a1fd24655b753848e9ae8fb3cdfe2ffc4de7bcfdd908ce70148762` |
-| 9 | `theorem` | [LosslessPointDecomposition.reconstructs_source](../../../../../ComputerScience/AlgorithmsInComputerScience/PointDecomposition.lean/declarations/losslesspointdecomposition-reconstructs-source.md) | 87 | `result-track:c4fb65b86a526316850cfed829fe08624c387393a77e8e938851c31a85b22c7b` |
+| 1 | `inductive` | [StatementRole](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PointDecomposition.lean/declarations/statementrole.md) | 13 | `declaration-track:c320c3adeb3acd9ac8c8471c2906cd1941b0381c59dbdc4689f43ab80b412875` |
+| 2 | `inductive` | [ProofRole](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PointDecomposition.lean/declarations/proofrole.md) | 25 | `declaration-track:4438d2594ad5ab66e5cd3ce373522cf486195f360bb9d58d1860c5b30515efe0` |
+| 3 | `inductive` | [DefinitionRole](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PointDecomposition.lean/declarations/definitionrole.md) | 36 | `declaration-track:674fd76d4a7be44703605beec5c8b1f954e85f159f0ce105b6161b5631803dba` |
+| 4 | `structure` | [SourceFragment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PointDecomposition.lean/declarations/sourcefragment.md) | 46 | `declaration-track:67e8b8e6c6124ad3b8b2ce2a3d3ce2c8f3b82882515848432c96f3d9c3324f54` |
+| 5 | `structure` | [LosslessPointDecomposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PointDecomposition.lean/declarations/losslesspointdecomposition.md) | 54 | `declaration-track:e1bc6732ab763f1983a16c948752255cb6a7fa774b4685b671b861edd472323a` |
+| 6 | `structure` | [StatementDecomposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PointDecomposition.lean/declarations/statementdecomposition.md) | 64 | `declaration-track:db88ee150b9e46678269726e1a15878cccbd31df9dbd029f65e32196b9bfdef1` |
+| 7 | `structure` | [ProofDecomposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PointDecomposition.lean/declarations/proofdecomposition.md) | 72 | `declaration-track:dbe96cac7f8ac5afa8363f84c0323387bff95cac70c246883340d7e48a503540` |
+| 8 | `structure` | [DefinitionDecomposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PointDecomposition.lean/declarations/definitiondecomposition.md) | 80 | `declaration-track:0a5a18bff5a1fd24655b753848e9ae8fb3cdfe2ffc4de7bcfdd908ce70148762` |
+| 9 | `theorem` | [LosslessPointDecomposition.reconstructs_source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PointDecomposition.lean/declarations/losslesspointdecomposition-reconstructs-source.md) | 87 | `result-track:c4fb65b86a526316850cfed829fe08624c387393a77e8e938851c31a85b22c7b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

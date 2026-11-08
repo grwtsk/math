@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ContextResolverNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/ContextResolverNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContextResolverNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContextResolverNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ContextCutValidator](../../../../Combinatorics/ContextResolverNamespaced.lean/declarations/contextcutvalidator.md) | 23 | `declaration-track:cf56cd63f86651bd95f87800156e5183779fdadcb82c5cbad4361b1eddbeb441` |
-| 2 | `structure` | [ContextResolverProfile](../../../../Combinatorics/ContextResolverNamespaced.lean/declarations/contextresolverprofile.md) | 37 | `declaration-track:67a2f327c071a5336f69a15377fdef95aa9a365337a68c8e2365db71fc1debff` |
-| 3 | `inductive` | [ContextResolution](../../../../Combinatorics/ContextResolverNamespaced.lean/declarations/contextresolution.md) | 67 | `declaration-track:5194014fc17b55b40b3e3cfee1b2c820819e7086a4afc10f3ee83a9c20bcf274` |
-| 4 | `def` | [ContextResolution.IsRejected](../../../../Combinatorics/ContextResolverNamespaced.lean/declarations/contextresolution-isrejected.md) | 95 | `declaration-track:d5d68d8ebca84c464f06c6d101c1b3ca2d6e28ee6d35a5c0de23474c4175c7bd` |
-| 5 | `def` | [resolveCut](../../../../Combinatorics/ContextResolverNamespaced.lean/declarations/resolvecut.md) | 112 | `declaration-track:cbdca53dfe207a66fe6ae68d53cd89b982679eee7fe515cca29a8d26fcaa805d` |
+| 1 | `structure` | [ContextCutValidator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContextResolverNamespaced.lean/declarations/contextcutvalidator.md) | 23 | `declaration-track:cf56cd63f86651bd95f87800156e5183779fdadcb82c5cbad4361b1eddbeb441` |
+| 2 | `structure` | [ContextResolverProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContextResolverNamespaced.lean/declarations/contextresolverprofile.md) | 37 | `declaration-track:67a2f327c071a5336f69a15377fdef95aa9a365337a68c8e2365db71fc1debff` |
+| 3 | `inductive` | [ContextResolution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContextResolverNamespaced.lean/declarations/contextresolution.md) | 67 | `declaration-track:5194014fc17b55b40b3e3cfee1b2c820819e7086a4afc10f3ee83a9c20bcf274` |
+| 4 | `def` | [ContextResolution.IsRejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContextResolverNamespaced.lean/declarations/contextresolution-isrejected.md) | 95 | `declaration-track:d5d68d8ebca84c464f06c6d101c1b3ca2d6e28ee6d35a5c0de23474c4175c7bd` |
+| 5 | `def` | [resolveCut](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContextResolverNamespaced.lean/declarations/resolvecut.md) | 112 | `declaration-track:cbdca53dfe207a66fe6ae68d53cd89b982679eee7fe515cca29a8d26fcaa805d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

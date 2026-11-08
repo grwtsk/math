@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChainMap.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChainMap.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChainMap.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChainMap.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FoldUnitary](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChainMap.lean/declarations/foldunitary.md) | 23 | `declaration-track:6deb821ccc906fc61684287f355f445f843fc401487df9052477745ef3dbe7c9` |
-| 2 | `theorem` | [intertwinesCodifferential](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChainMap.lean/declarations/intertwinescodifferential.md) | 40 | `result-track:166196128daab26a3cd0aa39512d98aeacb2121239c6240676fa3f183cdd48b2` |
-| 3 | `theorem` | [fold_intertwines_hodgeDirac](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChainMap.lean/declarations/fold-intertwines-hodgedirac.md) | 65 | `result-track:5d749dc6094a6cc959f9e7a1678039c0bdc2dec5780531bcf70e2e98360b5a38` |
-| 4 | `theorem` | [fold_intertwines_laplacian](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChainMap.lean/declarations/fold-intertwines-laplacian.md) | 71 | `result-track:ee28cb445170ab34ec547c60beebbca0190635541de93601f804b501f0b69eb3` |
-| 5 | `theorem` | [isUnitary](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChainMap.lean/declarations/isunitary.md) | 90 | `result-track:1eedd15d180a231cd806d822ecfa5438c955cb7f6d73f04465b4ff0a6d5a74f9` |
+| 1 | `structure` | [FoldUnitary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChainMap.lean/declarations/foldunitary.md) | 23 | `declaration-track:6deb821ccc906fc61684287f355f445f843fc401487df9052477745ef3dbe7c9` |
+| 2 | `theorem` | [intertwinesCodifferential](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChainMap.lean/declarations/intertwinescodifferential.md) | 40 | `result-track:166196128daab26a3cd0aa39512d98aeacb2121239c6240676fa3f183cdd48b2` |
+| 3 | `theorem` | [fold_intertwines_hodgeDirac](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChainMap.lean/declarations/fold-intertwines-hodgedirac.md) | 65 | `result-track:5d749dc6094a6cc959f9e7a1678039c0bdc2dec5780531bcf70e2e98360b5a38` |
+| 4 | `theorem` | [fold_intertwines_laplacian](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChainMap.lean/declarations/fold-intertwines-laplacian.md) | 71 | `result-track:ee28cb445170ab34ec547c60beebbca0190635541de93601f804b501f0b69eb3` |
+| 5 | `theorem` | [isUnitary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChainMap.lean/declarations/isunitary.md) | 90 | `result-track:1eedd15d180a231cd806d822ecfa5438c955cb7f6d73f04465b4ff0a6d5a74f9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

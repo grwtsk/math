@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/RoutingStatusNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/RoutingStatusNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RoutingStatusNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RoutingStatusNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [BoundaryStatus](../../../../Combinatorics/RoutingStatusNamespaced.lean/declarations/boundarystatus.md) | 24 | `declaration-track:e9fd204c7825cc16ca21533241968f6242181ff017338ae8acbb48f29f66bc1f` |
-| 2 | `inductive` | [RoutingObstruction](../../../../Combinatorics/RoutingStatusNamespaced.lean/declarations/routingobstruction.md) | 30 | `declaration-track:51f66a3e4966e6ab76b44d2fbadac18d192dc8821ab1b4245ecc118af5944980` |
-| 3 | `structure` | [RoutingResidue](../../../../Combinatorics/RoutingStatusNamespaced.lean/declarations/routingresidue.md) | 38 | `declaration-track:c949e12ed86503c36a9ca1c73f59531e72154667d61f4e198ecd5ce647a12e21` |
-| 4 | `inductive` | [SeparationStatus](../../../../Combinatorics/RoutingStatusNamespaced.lean/declarations/separationstatus.md) | 47 | `declaration-track:d853695602a700c180d4e41c00b7e2f450293a90ebdc4c80ef0c5c46e50c084e` |
-| 5 | `inductive` | [RouteStatus](../../../../Combinatorics/RoutingStatusNamespaced.lean/declarations/routestatus.md) | 54 | `declaration-track:f76414db5b133b413d094d53b93795a420ef96154f89b6e2a61e65112d7b8a32` |
-| 6 | `structure` | [IntrinsicPosition](../../../../Combinatorics/RoutingStatusNamespaced.lean/declarations/intrinsicposition.md) | 60 | `declaration-track:1980c57cb75363b164d41bf1f2a34da9f2d0521e3429ad9741750dd9777a873f` |
-| 7 | `structure` | [IncidenceSingleton](../../../../Combinatorics/RoutingStatusNamespaced.lean/declarations/incidencesingleton.md) | 68 | `declaration-track:88e8977e609076c5a448f2d387d9beebf907cf051d8cbe87fb28d3d7192ce0b5` |
+| 1 | `inductive` | [BoundaryStatus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RoutingStatusNamespaced.lean/declarations/boundarystatus.md) | 24 | `declaration-track:e9fd204c7825cc16ca21533241968f6242181ff017338ae8acbb48f29f66bc1f` |
+| 2 | `inductive` | [RoutingObstruction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RoutingStatusNamespaced.lean/declarations/routingobstruction.md) | 30 | `declaration-track:51f66a3e4966e6ab76b44d2fbadac18d192dc8821ab1b4245ecc118af5944980` |
+| 3 | `structure` | [RoutingResidue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RoutingStatusNamespaced.lean/declarations/routingresidue.md) | 38 | `declaration-track:c949e12ed86503c36a9ca1c73f59531e72154667d61f4e198ecd5ce647a12e21` |
+| 4 | `inductive` | [SeparationStatus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RoutingStatusNamespaced.lean/declarations/separationstatus.md) | 47 | `declaration-track:d853695602a700c180d4e41c00b7e2f450293a90ebdc4c80ef0c5c46e50c084e` |
+| 5 | `inductive` | [RouteStatus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RoutingStatusNamespaced.lean/declarations/routestatus.md) | 54 | `declaration-track:f76414db5b133b413d094d53b93795a420ef96154f89b6e2a61e65112d7b8a32` |
+| 6 | `structure` | [IntrinsicPosition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RoutingStatusNamespaced.lean/declarations/intrinsicposition.md) | 60 | `declaration-track:1980c57cb75363b164d41bf1f2a34da9f2d0521e3429ad9741750dd9777a873f` |
+| 7 | `structure` | [IncidenceSingleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RoutingStatusNamespaced.lean/declarations/incidencesingleton.md) | 68 | `declaration-track:88e8977e609076c5a448f2d387d9beebf907cf051d8cbe87fb28d3d7192ce0b5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/NormalizedCharacterVector.lean/index.md) · [Full source](../../../../FunctionalAnalysis/NormalizedCharacterVector.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormalizedCharacterVector.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormalizedCharacterVector.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -52,7 +52,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 - `Mathlib.Analysis.InnerProductSpace.Dual` — import line 24; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic.FieldSimp` — import line 25; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic.NormNum` — import line 26; external provider; requires a separately pinned dependency.
-- [Finite Character Coordinates And Regular Average](../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteCharacterCoordinatesAndRegularAverage.lean/index.md) — import line 27; pinned internal source present.
+- [Finite Character Coordinates And Regular Average](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteCharacterCoordinatesAndRegularAverage.lean/index.md) — import line 27; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -63,14 +63,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [characterNormalization](../../../../FunctionalAnalysis/NormalizedCharacterVector.lean/declarations/characternormalization.md) | 50 | `declaration-track:d9eb5b2b318d50b1739cd63d984b378ebc4067381a04493b1f2809945de2a4c9` |
-| 2 | `theorem` | [characterIndex_card_pos](../../../../FunctionalAnalysis/NormalizedCharacterVector.lean/declarations/characterindex-card-pos.md) | 53 | `result-track:49cc37bc73d6a4fc27c9848717358293e8e4de0ff2990ea3b95154755e915db4` |
-| 3 | `theorem` | [characterNormalization_nonnegative](../../../../FunctionalAnalysis/NormalizedCharacterVector.lean/declarations/characternormalization-nonnegative.md) | 57 | `result-track:bd8ea3adf661b0f6a382e4910d2699b54f9449027fe87f515591d5968d4e06f4` |
-| 4 | `theorem` | [characterNormalization_sq](../../../../FunctionalAnalysis/NormalizedCharacterVector.lean/declarations/characternormalization-sq.md) | 62 | `result-track:e1cd11b154b4575c5d492e6fe175f23f14e13783e6f399c548af7c913a659ed8` |
-| 5 | `def` | [characterVector](../../../../FunctionalAnalysis/NormalizedCharacterVector.lean/declarations/charactervector.md) | 72 | `declaration-track:5c288b7a67beea609b2d39331fe68b4f3f8f93c9cb3294764166bfbaf60e8d81` |
-| 6 | `theorem` | [characterVector_apply](../../../../FunctionalAnalysis/NormalizedCharacterVector.lean/declarations/charactervector-apply.md) | 78 | `result-track:b458d1b699a587e6910605d169279eb7bf854b07a874ea1273077324394845ed` |
-| 7 | `theorem` | [characterVector_norm_sq](../../../../FunctionalAnalysis/NormalizedCharacterVector.lean/declarations/charactervector-norm-sq.md) | 86 | `result-track:c273d6c3adf88bc905d8967695c3e726f49726fcbe1a3c625ca0dc08dfd71632` |
-| 8 | `theorem` | [characterVector_norm](../../../../FunctionalAnalysis/NormalizedCharacterVector.lean/declarations/charactervector-norm.md) | 100 | `result-track:cc4633d31f278a052fa5f8e9f29ef0d8912510e771fa2a49ee40153d96c1bb7a` |
+| 1 | `def` | [characterNormalization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormalizedCharacterVector.lean/declarations/characternormalization.md) | 50 | `declaration-track:d9eb5b2b318d50b1739cd63d984b378ebc4067381a04493b1f2809945de2a4c9` |
+| 2 | `theorem` | [characterIndex_card_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormalizedCharacterVector.lean/declarations/characterindex-card-pos.md) | 53 | `result-track:49cc37bc73d6a4fc27c9848717358293e8e4de0ff2990ea3b95154755e915db4` |
+| 3 | `theorem` | [characterNormalization_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormalizedCharacterVector.lean/declarations/characternormalization-nonnegative.md) | 57 | `result-track:bd8ea3adf661b0f6a382e4910d2699b54f9449027fe87f515591d5968d4e06f4` |
+| 4 | `theorem` | [characterNormalization_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormalizedCharacterVector.lean/declarations/characternormalization-sq.md) | 62 | `result-track:e1cd11b154b4575c5d492e6fe175f23f14e13783e6f399c548af7c913a659ed8` |
+| 5 | `def` | [characterVector](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormalizedCharacterVector.lean/declarations/charactervector.md) | 72 | `declaration-track:5c288b7a67beea609b2d39331fe68b4f3f8f93c9cb3294764166bfbaf60e8d81` |
+| 6 | `theorem` | [characterVector_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormalizedCharacterVector.lean/declarations/charactervector-apply.md) | 78 | `result-track:b458d1b699a587e6910605d169279eb7bf854b07a874ea1273077324394845ed` |
+| 7 | `theorem` | [characterVector_norm_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormalizedCharacterVector.lean/declarations/charactervector-norm-sq.md) | 86 | `result-track:c273d6c3adf88bc905d8967695c3e726f49726fcbe1a3c625ca0dc08dfd71632` |
+| 8 | `theorem` | [characterVector_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormalizedCharacterVector.lean/declarations/charactervector-norm.md) | 100 | `result-track:cc4633d31f278a052fa5f8e9f29ef0d8912510e771fa2a49ee40153d96c1bb7a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

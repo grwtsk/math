@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/TracePlacements.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/TracePlacements.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TracePlacements.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TracePlacements.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [placements](../../../../../ComputerScience/AlgorithmsInComputerScience/TracePlacements.lean/declarations/placements.md) | 7 | `declaration-track:2ac5f97e851b18a86b03d148a143f716e8c6305531f05ac2b739c265cdd042b6` |
-| 2 | `theorem` | [placements_count](../../../../../ComputerScience/AlgorithmsInComputerScience/TracePlacements.lean/declarations/placements-count.md) | 10 | `result-track:fbd63cde24502be4a6209a8c5aebbfd5ff819bbae0a853e78e07e4ae66ab0b8d` |
-| 3 | `theorem` | [placements_centerControlled](../../../../../ComputerScience/AlgorithmsInComputerScience/TracePlacements.lean/declarations/placements-centercontrolled.md) | 14 | `result-track:47aa55f8bfab745232cdf2eec7372101abc0b7a9d039ad82aa8772fc78a0ba43` |
-| 4 | `structure` | [SrcLibPoleStream](../../../../../ComputerScience/AlgorithmsInComputerScience/TracePlacements.lean/declarations/srclibpolestream.md) | 19 | `declaration-track:1e2bf69966534743afd33326f28b8363d31e705f9529756edbb8a4f74693b771` |
-| 5 | `def` | [srcLibDefaultPoleStream](../../../../../ComputerScience/AlgorithmsInComputerScience/TracePlacements.lean/declarations/srclibdefaultpolestream.md) | 25 | `declaration-track:68f806d50cbe1ec4572d7f937ea125ed07e61cc9e7285abe537f24c22c756f14` |
-| 6 | `def` | [SrcLibPoleStream.hasFiniteTrace](../../../../../ComputerScience/AlgorithmsInComputerScience/TracePlacements.lean/declarations/srclibpolestream-hasfinitetrace.md) | 30 | `declaration-track:3c1182c1a09d7256bc25ce6611042346dc7ce3d63cb797fcd99b873fdfa79cd6` |
-| 7 | `theorem` | [srcLibDefaultPoleStream_frameCount](../../../../../ComputerScience/AlgorithmsInComputerScience/TracePlacements.lean/declarations/srclibdefaultpolestream-framecount.md) | 33 | `result-track:31cd3136ddb9b7b19767a02d6dd1a458c84c8387311da2bf92c5a2b2d7bedbe9` |
-| 8 | `theorem` | [srcLibDefaultPoleStream_hasFiniteTrace](../../../../../ComputerScience/AlgorithmsInComputerScience/TracePlacements.lean/declarations/srclibdefaultpolestream-hasfinitetrace.md) | 37 | `result-track:e061b879032b554e828e70270aeeb3e15832061a8f260c6e91e815468749784d` |
+| 1 | `def` | [placements](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TracePlacements.lean/declarations/placements.md) | 7 | `declaration-track:2ac5f97e851b18a86b03d148a143f716e8c6305531f05ac2b739c265cdd042b6` |
+| 2 | `theorem` | [placements_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TracePlacements.lean/declarations/placements-count.md) | 10 | `result-track:fbd63cde24502be4a6209a8c5aebbfd5ff819bbae0a853e78e07e4ae66ab0b8d` |
+| 3 | `theorem` | [placements_centerControlled](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TracePlacements.lean/declarations/placements-centercontrolled.md) | 14 | `result-track:47aa55f8bfab745232cdf2eec7372101abc0b7a9d039ad82aa8772fc78a0ba43` |
+| 4 | `structure` | [SrcLibPoleStream](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TracePlacements.lean/declarations/srclibpolestream.md) | 19 | `declaration-track:1e2bf69966534743afd33326f28b8363d31e705f9529756edbb8a4f74693b771` |
+| 5 | `def` | [srcLibDefaultPoleStream](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TracePlacements.lean/declarations/srclibdefaultpolestream.md) | 25 | `declaration-track:68f806d50cbe1ec4572d7f937ea125ed07e61cc9e7285abe537f24c22c756f14` |
+| 6 | `def` | [SrcLibPoleStream.hasFiniteTrace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TracePlacements.lean/declarations/srclibpolestream-hasfinitetrace.md) | 30 | `declaration-track:3c1182c1a09d7256bc25ce6611042346dc7ce3d63cb797fcd99b873fdfa79cd6` |
+| 7 | `theorem` | [srcLibDefaultPoleStream_frameCount](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TracePlacements.lean/declarations/srclibdefaultpolestream-framecount.md) | 33 | `result-track:31cd3136ddb9b7b19767a02d6dd1a458c84c8387311da2bf92c5a2b2d7bedbe9` |
+| 8 | `theorem` | [srcLibDefaultPoleStream_hasFiniteTrace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TracePlacements.lean/declarations/srclibdefaultpolestream-hasfinitetrace.md) | 37 | `result-track:e061b879032b554e828e70270aeeb3e15832061a8f260c6e91e815468749784d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

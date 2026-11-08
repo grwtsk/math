@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/MomentsNamespacedSourceEdition2.lean/index.md) · [Full source](../../../../MeasureAndIntegration/MomentsNamespacedSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MomentsNamespacedSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MomentsNamespacedSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [thetaPhi_poly_exp_norm_le_tail](../../../../MeasureAndIntegration/MomentsNamespacedSourceEdition2.lean/declarations/thetaphi-poly-exp-norm-le-tail.md) | 20 | `result-track:ff8dd9decf945389b028a92f1347ca8d06e84c38082216b70402302e14e0a54a` |
-| 2 | `theorem` | [thetaPhi_poly_exp_integrableOn](../../../../MeasureAndIntegration/MomentsNamespacedSourceEdition2.lean/declarations/thetaphi-poly-exp-integrableon.md) | 61 | `result-track:aa67987d9b01c621128869dd81511229f4e8ea1f7ad5db025c755e47ad4c3807` |
-| 3 | `theorem` | [thetaPhi_evenBasis_integrableOn](../../../../MeasureAndIntegration/MomentsNamespacedSourceEdition2.lean/declarations/thetaphi-evenbasis-integrableon.md) | 87 | `result-track:de564122000706e384a3b3fe33f106a9d5a2952724fff37294af8bb381ff8f61` |
+| 1 | `theorem` | [thetaPhi_poly_exp_norm_le_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MomentsNamespacedSourceEdition2.lean/declarations/thetaphi-poly-exp-norm-le-tail.md) | 20 | `result-track:ff8dd9decf945389b028a92f1347ca8d06e84c38082216b70402302e14e0a54a` |
+| 2 | `theorem` | [thetaPhi_poly_exp_integrableOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MomentsNamespacedSourceEdition2.lean/declarations/thetaphi-poly-exp-integrableon.md) | 61 | `result-track:aa67987d9b01c621128869dd81511229f4e8ea1f7ad5db025c755e47ad4c3807` |
+| 3 | `theorem` | [thetaPhi_evenBasis_integrableOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MomentsNamespacedSourceEdition2.lean/declarations/thetaphi-evenbasis-integrableon.md) | 87 | `result-track:de564122000706e384a3b3fe33f106a9d5a2952724fff37294af8bb381ff8f61` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

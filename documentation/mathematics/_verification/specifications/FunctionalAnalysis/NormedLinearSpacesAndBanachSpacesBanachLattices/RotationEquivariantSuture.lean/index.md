@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RotationEquivariantSuture.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RotationEquivariantSuture.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RotationEquivariantSuture.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RotationEquivariantSuture.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [FaceSignalTurnStabilizes](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RotationEquivariantSuture.lean/declarations/facesignalturnstabilizes.md) | 19 | `declaration-track:578b59318babfea35522f7de6256e58e4c869f4e9c2b4a2c5cf72003d4add816` |
-| 2 | `structure` | [RotationEquivariantNamingSuture](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RotationEquivariantSuture.lean/declarations/rotationequivariantnamingsuture.md) | 24 | `declaration-track:b711afcf92a9e760ea373a0c240a485ca906899a6863259ce5dbe267b4f30eea` |
-| 3 | `theorem` | [rotation_equivariant_naming_suture](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RotationEquivariantSuture.lean/declarations/rotation-equivariant-naming-suture.md) | 48 | `result-track:132f299d4baf3d300659a66f9e4c09181f79ff5477a0a831da220fdd118a9599` |
+| 1 | `def` | [FaceSignalTurnStabilizes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RotationEquivariantSuture.lean/declarations/facesignalturnstabilizes.md) | 19 | `declaration-track:578b59318babfea35522f7de6256e58e4c869f4e9c2b4a2c5cf72003d4add816` |
+| 2 | `structure` | [RotationEquivariantNamingSuture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RotationEquivariantSuture.lean/declarations/rotationequivariantnamingsuture.md) | 24 | `declaration-track:b711afcf92a9e760ea373a0c240a485ca906899a6863259ce5dbe267b4f30eea` |
+| 3 | `theorem` | [rotation_equivariant_naming_suture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RotationEquivariantSuture.lean/declarations/rotation-equivariant-naming-suture.md) | 48 | `result-track:132f299d4baf3d300659a66f9e4c09181f79ff5477a0a831da220fdd118a9599` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

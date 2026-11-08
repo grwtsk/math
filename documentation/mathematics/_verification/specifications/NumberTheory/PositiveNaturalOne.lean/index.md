@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/PositiveNaturalOne.lean/index.md) · [Full source](../../../../NumberTheory/PositiveNaturalOne.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PositiveNaturalOne.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PositiveNaturalOne.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [arithmeticPivot](../../../../NumberTheory/PositiveNaturalOne.lean/declarations/arithmeticpivot.md) | 39 | `declaration-track:f4611cfa5f1eb77e6169a09d17e5e0d9044cf3d58976646140ea0c1a5764d16f` |
-| 2 | `theorem` | [arithmeticPivot_val_eq_one](../../../../NumberTheory/PositiveNaturalOne.lean/declarations/arithmeticpivot-val-eq-one.md) | 43 | `result-track:a8025f5050ea2e732dcbb36560bad5a0b7b21908a98cec40ea4a909fa00f7bb9` |
+| 1 | `def` | [arithmeticPivot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PositiveNaturalOne.lean/declarations/arithmeticpivot.md) | 39 | `declaration-track:f4611cfa5f1eb77e6169a09d17e5e0d9044cf3d58976646140ea0c1a5764d16f` |
+| 2 | `theorem` | [arithmeticPivot_val_eq_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PositiveNaturalOne.lean/declarations/arithmeticpivot-val-eq-one.md) | 43 | `result-track:a8025f5050ea2e732dcbb36560bad5a0b7b21908a98cec40ea4a909fa00f7bb9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

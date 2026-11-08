@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CountBudgetReductionNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CountBudgetReductionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CountBudgetReductionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CountBudgetReductionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [countUpperKernel](../../../../MeasureAndIntegration/CountBudgetReductionNamespaced.lean/declarations/countupperkernel.md) | 24 | `declaration-track:43f67524fec5ae1dc4233385f3bc83e3c22bd5522f9c0c664eddccca4be3606e` |
-| 2 | `theorem` | [count_upper_kernel_bound](../../../../MeasureAndIntegration/CountBudgetReductionNamespaced.lean/declarations/count-upper-kernel-bound.md) | 28 | `result-track:3b878554f4ad6f6e46df6527c79113e0b574b08f2d8ba4c644dc39b9fb4e1324` |
-| 3 | `theorem` | [count_main_endpoint](../../../../MeasureAndIntegration/CountBudgetReductionNamespaced.lean/declarations/count-main-endpoint.md) | 36 | `result-track:ba547c1073e31f79fc963ffcf4ca8f79dd8d412d12979490e0187813a5294923` |
-| 4 | `theorem` | [corrected_count_budget_of_integral_moments](../../../../MeasureAndIntegration/CountBudgetReductionNamespaced.lean/declarations/corrected-count-budget-of-integral-moments.md) | 42 | `result-track:913587a0bd6c261b5df2260bb9330cc12a21a88c3c9365ba0b7d27cc0e93a88d` |
+| 1 | `def` | [countUpperKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CountBudgetReductionNamespaced.lean/declarations/countupperkernel.md) | 24 | `declaration-track:43f67524fec5ae1dc4233385f3bc83e3c22bd5522f9c0c664eddccca4be3606e` |
+| 2 | `theorem` | [count_upper_kernel_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CountBudgetReductionNamespaced.lean/declarations/count-upper-kernel-bound.md) | 28 | `result-track:3b878554f4ad6f6e46df6527c79113e0b574b08f2d8ba4c644dc39b9fb4e1324` |
+| 3 | `theorem` | [count_main_endpoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CountBudgetReductionNamespaced.lean/declarations/count-main-endpoint.md) | 36 | `result-track:ba547c1073e31f79fc963ffcf4ca8f79dd8d412d12979490e0187813a5294923` |
+| 4 | `theorem` | [corrected_count_budget_of_integral_moments](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CountBudgetReductionNamespaced.lean/declarations/corrected-count-budget-of-integral-moments.md) | 42 | `result-track:913587a0bd6c261b5df2260bb9330cc12a21a88c3c9365ba0b7d27cc0e93a88d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

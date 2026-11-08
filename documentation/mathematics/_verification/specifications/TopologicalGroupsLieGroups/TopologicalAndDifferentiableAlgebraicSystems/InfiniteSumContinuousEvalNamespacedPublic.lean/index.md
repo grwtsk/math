@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/InfiniteSumContinuousEvalNamespacedPublic.lean/index.md) · [Full source](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/InfiniteSumContinuousEvalNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/InfiniteSumContinuousEvalNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/InfiniteSumContinuousEvalNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [hasProd_apply](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/InfiniteSumContinuousEvalNamespacedPublic.lean/declarations/hasprod-apply.md) | 36 | `result-track:5577097757b2f3e172f531ede345f6dd4ca98dfcb496ecde568c3fdb5a868654` |
-| 2 | `theorem` | [multipliable_apply](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/InfiniteSumContinuousEvalNamespacedPublic.lean/declarations/multipliable-apply.md) | 41 | `result-track:ef72dc99548a14cce2fa702b96d22c8eea049df1245f58a1ddfa254f0a73c9b0` |
-| 3 | `theorem` | [tprod_apply](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/InfiniteSumContinuousEvalNamespacedPublic.lean/declarations/tprod-apply.md) | 46 | `result-track:7268363e985114309fba2c3046f871398591f7eaa9c186fffbbbf1085b028514` |
+| 1 | `theorem` | [hasProd_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/InfiniteSumContinuousEvalNamespacedPublic.lean/declarations/hasprod-apply.md) | 36 | `result-track:5577097757b2f3e172f531ede345f6dd4ca98dfcb496ecde568c3fdb5a868654` |
+| 2 | `theorem` | [multipliable_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/InfiniteSumContinuousEvalNamespacedPublic.lean/declarations/multipliable-apply.md) | 41 | `result-track:ef72dc99548a14cce2fa702b96d22c8eea049df1245f58a1ddfa254f0a73c9b0` |
+| 3 | `theorem` | [tprod_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/InfiniteSumContinuousEvalNamespacedPublic.lean/declarations/tprod-apply.md) | 46 | `result-track:7268363e985114309fba2c3046f871398591f7eaa9c186fffbbbf1085b028514` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

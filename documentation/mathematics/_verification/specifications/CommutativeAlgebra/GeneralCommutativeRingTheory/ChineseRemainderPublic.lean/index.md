@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/ChineseRemainderPublic.lean/index.md) · [Full source](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/ChineseRemainderPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/ChineseRemainderPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/ChineseRemainderPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [pi_mkQ_rTensor](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/ChineseRemainderPublic.lean/declarations/pi-mkq-rtensor.md) | 27 | `result-track:8ecac33a0aa8e6b97b8f1096cf99dc6df7ae67549350c23cee56a6b19589d659` |
-| 2 | `theorem` | [pi_tensorProductMk_quotient_surjective](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/ChineseRemainderPublic.lean/declarations/pi-tensorproductmk-quotient-surjective.md) | 39 | `result-track:a1b0e68db6812263d739adeba9c41fc70eaf09e5c3c8e1522096b44dfefbc986` |
-| 3 | `theorem` | [ker_tensorProductMk_quotient](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/ChineseRemainderPublic.lean/declarations/ker-tensorproductmk-quotient.md) | 48 | `result-track:5d5915fcd7f74864c11317af37fc2646e5fef4d279da898afb74814dae8ecf36` |
+| 1 | `lemma` | [pi_mkQ_rTensor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/ChineseRemainderPublic.lean/declarations/pi-mkq-rtensor.md) | 27 | `result-track:8ecac33a0aa8e6b97b8f1096cf99dc6df7ae67549350c23cee56a6b19589d659` |
+| 2 | `theorem` | [pi_tensorProductMk_quotient_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/ChineseRemainderPublic.lean/declarations/pi-tensorproductmk-quotient-surjective.md) | 39 | `result-track:a1b0e68db6812263d739adeba9c41fc70eaf09e5c3c8e1522096b44dfefbc986` |
+| 3 | `theorem` | [ker_tensorProductMk_quotient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/ChineseRemainderPublic.lean/declarations/ker-tensorproductmk-quotient.md) | 48 | `result-track:5d5915fcd7f74864c11317af37fc2646e5fef4d279da898afb74814dae8ecf36` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

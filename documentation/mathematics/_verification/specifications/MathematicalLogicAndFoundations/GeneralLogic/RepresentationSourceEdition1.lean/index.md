@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RepresentationSourceEdition1.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RepresentationSourceEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RepresentationSourceEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RepresentationSourceEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [BinaryLogicMatrixRepresentation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RepresentationSourceEdition1.lean/declarations/binarylogicmatrixrepresentation.md) | 5 | `declaration-track:81d5e354c41b6914df4f17e4f08174e924ddc3ad0f37394a32a80cf394e6c200` |
-| 2 | `theorem` | [boundary_visible](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RepresentationSourceEdition1.lean/declarations/boundary-visible.md) | 12 | `result-track:380d5ca1939c562068c07b77fc727c4f4fb0ac7cc85405275ffb7147736ee593` |
-| 3 | `theorem` | [has_claim_boundary](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RepresentationSourceEdition1.lean/declarations/has-claim-boundary.md) | 17 | `result-track:3876bcc965c33e589658ad62cf747650aa3cb490ac8e1c86cdc92df6b09bea5b` |
+| 1 | `structure` | [BinaryLogicMatrixRepresentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RepresentationSourceEdition1.lean/declarations/binarylogicmatrixrepresentation.md) | 5 | `declaration-track:81d5e354c41b6914df4f17e4f08174e924ddc3ad0f37394a32a80cf394e6c200` |
+| 2 | `theorem` | [boundary_visible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RepresentationSourceEdition1.lean/declarations/boundary-visible.md) | 12 | `result-track:380d5ca1939c562068c07b77fc727c4f4fb0ac7cc85405275ffb7147736ee593` |
+| 3 | `theorem` | [has_claim_boundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RepresentationSourceEdition1.lean/declarations/has-claim-boundary.md) | 17 | `result-track:3876bcc965c33e589658ad62cf747650aa3cb490ac8e1c86cdc92df6b09bea5b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

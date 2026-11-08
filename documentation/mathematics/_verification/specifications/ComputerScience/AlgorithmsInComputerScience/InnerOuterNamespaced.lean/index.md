@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/InnerOuterNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/InnerOuterNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InnerOuterNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InnerOuterNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [BoundaryMemorySystem](../../../../../ComputerScience/AlgorithmsInComputerScience/InnerOuterNamespaced.lean/declarations/boundarymemorysystem.md) | 15 | `declaration-track:bd0378c05680e02332a6b8e039ad1dff9e17276544dec24529cfe92e118fac8a` |
-| 2 | `def` | [BoundaryMemorySystem.boundaryOf](../../../../../ComputerScience/AlgorithmsInComputerScience/InnerOuterNamespaced.lean/declarations/boundarymemorysystem-boundaryof.md) | 26 | `declaration-track:d23ed035c31022bf7ba6b9ade8f6ae40c0e60dc7da17de221b2fdf2eb9e36077` |
-| 3 | `structure` | [InnerOuterRepresentative](../../../../../ComputerScience/AlgorithmsInComputerScience/InnerOuterNamespaced.lean/declarations/innerouterrepresentative.md) | 30 | `declaration-track:13542419ac2d91d18183c728cacc093b5fc3108b8a75da42eb817d349ce4403b` |
-| 4 | `def` | [InnerOuterRepresentative.weightSymmetric](../../../../../ComputerScience/AlgorithmsInComputerScience/InnerOuterNamespaced.lean/declarations/innerouterrepresentative-weightsymmetric.md) | 37 | `declaration-track:187b6fd065f1971bfe7c1b4a1dddf2238268dbc9d0cfec238b38cbf2bdeeb3d8` |
+| 1 | `structure` | [BoundaryMemorySystem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InnerOuterNamespaced.lean/declarations/boundarymemorysystem.md) | 15 | `declaration-track:bd0378c05680e02332a6b8e039ad1dff9e17276544dec24529cfe92e118fac8a` |
+| 2 | `def` | [BoundaryMemorySystem.boundaryOf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InnerOuterNamespaced.lean/declarations/boundarymemorysystem-boundaryof.md) | 26 | `declaration-track:d23ed035c31022bf7ba6b9ade8f6ae40c0e60dc7da17de221b2fdf2eb9e36077` |
+| 3 | `structure` | [InnerOuterRepresentative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InnerOuterNamespaced.lean/declarations/innerouterrepresentative.md) | 30 | `declaration-track:13542419ac2d91d18183c728cacc093b5fc3108b8a75da42eb817d349ce4403b` |
+| 4 | `def` | [InnerOuterRepresentative.weightSymmetric](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InnerOuterNamespaced.lean/declarations/innerouterrepresentative-weightsymmetric.md) | 37 | `declaration-track:187b6fd065f1971bfe7c1b4a1dddf2238268dbc9d0cfec238b38cbf2bdeeb3d8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

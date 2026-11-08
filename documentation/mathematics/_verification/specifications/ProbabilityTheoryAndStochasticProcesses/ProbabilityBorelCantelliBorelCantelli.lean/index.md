@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/ProbabilityBorelCantelliBorelCantelli.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/ProbabilityBorelCantelliBorelCantelli.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ProbabilityBorelCantelliBorelCantelli.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ProbabilityBorelCantelliBorelCantelli.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [iIndepFun.indep_comap_natural_of_lt](../../../../ProbabilityTheoryAndStochasticProcesses/ProbabilityBorelCantelliBorelCantelli.lean/declarations/iindepfun-indep-comap-natural-of-lt.md) | 39 | `result-track:913c153c02e295e4a6d02eefab0eb288f060992cb55056fdbb4f8954b8544a20` |
-| 2 | `theorem` | [iIndepFun.condExp_natural_ae_eq_of_lt](../../../../ProbabilityTheoryAndStochasticProcesses/ProbabilityBorelCantelliBorelCantelli.lean/declarations/iindepfun-condexp-natural-ae-eq-of-lt.md) | 46 | `result-track:17e63e3becf9ee390a103f69b9ea912e03e9ab74d308595692c96ea803eabbfd` |
-| 3 | `theorem` | [iIndepSet.condExp_indicator_filtrationOfSet_ae_eq](../../../../ProbabilityTheoryAndStochasticProcesses/ProbabilityBorelCantelliBorelCantelli.lean/declarations/iindepset-condexp-indicator-filtrationofset-ae-eq.md) | 56 | `result-track:3c40a72a27beb34aca470129462d605540686e3ebb4bc2f2d174c1f2a27b8f86` |
-| 4 | `theorem` | [measure_limsup_eq_one](../../../../ProbabilityTheoryAndStochasticProcesses/ProbabilityBorelCantelliBorelCantelli.lean/declarations/measure-limsup-eq-one.md) | 72 | `result-track:2f285b793add88404d7c1669d149285be5fe9ad6704dcf5a70628b06d61fb802` |
+| 1 | `theorem` | [iIndepFun.indep_comap_natural_of_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ProbabilityBorelCantelliBorelCantelli.lean/declarations/iindepfun-indep-comap-natural-of-lt.md) | 39 | `result-track:913c153c02e295e4a6d02eefab0eb288f060992cb55056fdbb4f8954b8544a20` |
+| 2 | `theorem` | [iIndepFun.condExp_natural_ae_eq_of_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ProbabilityBorelCantelliBorelCantelli.lean/declarations/iindepfun-condexp-natural-ae-eq-of-lt.md) | 46 | `result-track:17e63e3becf9ee390a103f69b9ea912e03e9ab74d308595692c96ea803eabbfd` |
+| 3 | `theorem` | [iIndepSet.condExp_indicator_filtrationOfSet_ae_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ProbabilityBorelCantelliBorelCantelli.lean/declarations/iindepset-condexp-indicator-filtrationofset-ae-eq.md) | 56 | `result-track:3c40a72a27beb34aca470129462d605540686e3ebb4bc2f2d174c1f2a27b8f86` |
+| 4 | `theorem` | [measure_limsup_eq_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ProbabilityBorelCantelliBorelCantelli.lean/declarations/measure-limsup-eq-one.md) | 72 | `result-track:2f285b793add88404d7c1669d149285be5fe9ad6704dcf5a70628b06d61fb802` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

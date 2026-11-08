@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/ArborescenceNamespacedPublic.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/ArborescenceNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ArborescenceNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ArborescenceNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [Arborescence](../../../../../Combinatorics/GraphTheory/ArborescenceNamespacedPublic.lean/declarations/arborescence.md) | 47 | `declaration-track:463b4239640f7f75147c387eb47b72a6881a7d58acc3d0a15a529ba385469aa8` |
-| 2 | `def` | [root](../../../../../Combinatorics/GraphTheory/ArborescenceNamespacedPublic.lean/declarations/root.md) | 54 | `declaration-track:7c3e93f05fa91dc682c2676942057453cad85cb0bba5cd03885756446ebff2b4` |
-| 3 | `instance` | [(anonymous)](../../../../../Combinatorics/GraphTheory/ArborescenceNamespacedPublic.lean/declarations/instance.md) | 57 | `declaration-track:6a470067b275d0f4de6f687b4374f5feeaa2b998fceefa599be759c6b57eb56d` |
-| 4 | `def` | [arborescenceMk](../../../../../Combinatorics/GraphTheory/ArborescenceNamespacedPublic.lean/declarations/arborescencemk.md) | 66 | `declaration-track:4bcef916d693670bd22c1025cc143f4685eb7cada22576057276def06519a41e` |
-| 5 | `class` | [RootedConnected](../../../../../Combinatorics/GraphTheory/ArborescenceNamespacedPublic.lean/declarations/rootedconnected.md) | 103 | `declaration-track:5746b9a00560817d7a20a86c6a896947883286373a415857874fc67319768018` |
-| 6 | `def` | [shortestPath](../../../../../Combinatorics/GraphTheory/ArborescenceNamespacedPublic.lean/declarations/shortestpath.md) | 113 | `declaration-track:d0d0cdca96c8687190f2d4e7116763609bc31c7ba8cd66f8843d403eca62d725` |
-| 7 | `theorem` | [shortest_path_spec](../../../../../Combinatorics/GraphTheory/ArborescenceNamespacedPublic.lean/declarations/shortest-path-spec.md) | 117 | `result-track:ffa28996abbf77eda63cf01c92a067752a7a1e844224d565934a483882b9f9dc` |
-| 8 | `def` | [geodesicSubtree](../../../../../Combinatorics/GraphTheory/ArborescenceNamespacedPublic.lean/declarations/geodesicsubtree.md) | 121 | `declaration-track:256d429af02e0d9da565174611d26098ac2a32be6e16af14b2e1f602b6963e84` |
-| 9 | `instance` | [geodesicArborescence](../../../../../Combinatorics/GraphTheory/ArborescenceNamespacedPublic.lean/declarations/geodesicarborescence.md) | 125 | `declaration-track:6e70f35907b5f112538e32915dd3294a5abd2883d68118c3e07c855dc7349aaf` |
+| 1 | `class` | [Arborescence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ArborescenceNamespacedPublic.lean/declarations/arborescence.md) | 47 | `declaration-track:463b4239640f7f75147c387eb47b72a6881a7d58acc3d0a15a529ba385469aa8` |
+| 2 | `def` | [root](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ArborescenceNamespacedPublic.lean/declarations/root.md) | 54 | `declaration-track:7c3e93f05fa91dc682c2676942057453cad85cb0bba5cd03885756446ebff2b4` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ArborescenceNamespacedPublic.lean/declarations/instance.md) | 57 | `declaration-track:6a470067b275d0f4de6f687b4374f5feeaa2b998fceefa599be759c6b57eb56d` |
+| 4 | `def` | [arborescenceMk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ArborescenceNamespacedPublic.lean/declarations/arborescencemk.md) | 66 | `declaration-track:4bcef916d693670bd22c1025cc143f4685eb7cada22576057276def06519a41e` |
+| 5 | `class` | [RootedConnected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ArborescenceNamespacedPublic.lean/declarations/rootedconnected.md) | 103 | `declaration-track:5746b9a00560817d7a20a86c6a896947883286373a415857874fc67319768018` |
+| 6 | `def` | [shortestPath](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ArborescenceNamespacedPublic.lean/declarations/shortestpath.md) | 113 | `declaration-track:d0d0cdca96c8687190f2d4e7116763609bc31c7ba8cd66f8843d403eca62d725` |
+| 7 | `theorem` | [shortest_path_spec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ArborescenceNamespacedPublic.lean/declarations/shortest-path-spec.md) | 117 | `result-track:ffa28996abbf77eda63cf01c92a067752a7a1e844224d565934a483882b9f9dc` |
+| 8 | `def` | [geodesicSubtree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ArborescenceNamespacedPublic.lean/declarations/geodesicsubtree.md) | 121 | `declaration-track:256d429af02e0d9da565174611d26098ac2a32be6e16af14b2e1f602b6963e84` |
+| 9 | `instance` | [geodesicArborescence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ArborescenceNamespacedPublic.lean/declarations/geodesicarborescence.md) | 125 | `declaration-track:6e70f35907b5f112538e32915dd3294a5abd2883d68118c3e07c855dc7349aaf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

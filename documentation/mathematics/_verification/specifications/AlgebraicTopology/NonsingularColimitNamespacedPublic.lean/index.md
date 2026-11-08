@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/NonsingularColimitNamespacedPublic.lean/index.md) · [Full source](../../../../AlgebraicTopology/NonsingularColimitNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NonsingularColimitNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NonsingularColimitNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [toSemiSimplexCategory](../../../../AlgebraicTopology/NonsingularColimitNamespacedPublic.lean/declarations/tosemisimplexcategory.md) | 52 | `declaration-track:27003bf73b6b133f39365a34585a78f0698d51d43b70bc91409ffecd3d2972bb` |
-| 2 | `abbrev` | [functorN'](../../../../AlgebraicTopology/NonsingularColimitNamespacedPublic.lean/declarations/functorn.md) | 61 | `declaration-track:402a369962a9bcad458bfbd107097a6539a01682d638ad0fd4a412fe1b17ea85` |
-| 3 | `def` | [functorN'Iso](../../../../AlgebraicTopology/NonsingularColimitNamespacedPublic.lean/declarations/functorn-iso.md) | 67 | `declaration-track:882d51d430a99fe8257bcc1fefa0e4936de4a041cb84089dbf726a83735af8fe` |
-| 4 | `def` | [coconeN'](../../../../AlgebraicTopology/NonsingularColimitNamespacedPublic.lean/declarations/coconen.md) | 74 | `declaration-track:8e755068d8fc260c4d8e80783db8093b7744d0a422db2da135f203c02ea4c3f5` |
-| 5 | `def` | [isColimitCoconeN'](../../../../AlgebraicTopology/NonsingularColimitNamespacedPublic.lean/declarations/iscolimitcoconen.md) | 81 | `declaration-track:f4ae5560699143bde300eb4d8841312758cb626390c9ff640a627c02dbabc61e` |
+| 1 | `def` | [toSemiSimplexCategory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NonsingularColimitNamespacedPublic.lean/declarations/tosemisimplexcategory.md) | 52 | `declaration-track:27003bf73b6b133f39365a34585a78f0698d51d43b70bc91409ffecd3d2972bb` |
+| 2 | `abbrev` | [functorN'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NonsingularColimitNamespacedPublic.lean/declarations/functorn.md) | 61 | `declaration-track:402a369962a9bcad458bfbd107097a6539a01682d638ad0fd4a412fe1b17ea85` |
+| 3 | `def` | [functorN'Iso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NonsingularColimitNamespacedPublic.lean/declarations/functorn-iso.md) | 67 | `declaration-track:882d51d430a99fe8257bcc1fefa0e4936de4a041cb84089dbf726a83735af8fe` |
+| 4 | `def` | [coconeN'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NonsingularColimitNamespacedPublic.lean/declarations/coconen.md) | 74 | `declaration-track:8e755068d8fc260c4d8e80783db8093b7744d0a422db2da135f203c02ea4c3f5` |
+| 5 | `def` | [isColimitCoconeN'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NonsingularColimitNamespacedPublic.lean/declarations/iscolimitcoconen.md) | 81 | `declaration-track:f4ae5560699143bde300eb4d8841312758cb626390c9ff640a627c02dbabc61e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

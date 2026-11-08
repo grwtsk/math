@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/BinSearchPublic.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/BinSearchPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BinSearchPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BinSearchPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [binSearchAux](../../../../../ComputerScience/AlgorithmsInComputerScience/BinSearchPublic.lean/declarations/binsearchaux.md) | 22 | `declaration-track:534799ccb129cfdfde8eb1e3b4c7e98b0db54f444fadb9e6a53267118c817a80` |
-| 2 | `def` | [binSearch](../../../../../ComputerScience/AlgorithmsInComputerScience/BinSearchPublic.lean/declarations/binsearch.md) | 47 | `declaration-track:9844390637cef9aa6e40d23ce36572a09a2ec3ffc1774dc583bb57a07c667deb` |
-| 3 | `def` | [binSearchContains](../../../../../ComputerScience/AlgorithmsInComputerScience/BinSearchPublic.lean/declarations/binsearchcontains.md) | 67 | `declaration-track:b1ea63e13cd7168dfc21c4bceb688adb6072413b492f8affd7be49fd5d54d9ee` |
-| 4 | `def` | [binInsertAux](../../../../../ComputerScience/AlgorithmsInComputerScience/BinSearchPublic.lean/declarations/bininsertaux.md) | 77 | `declaration-track:ecc6175363344a5990e4258e05da176b2ab58b8a649caf30f19d9a918af42335` |
-| 5 | `def` | [binInsertM](../../../../../ComputerScience/AlgorithmsInComputerScience/BinSearchPublic.lean/declarations/bininsertm.md) | 106 | `declaration-track:ea818cebbef95ff65fef09c4a56487a42f2894e17a896f2afed28b83eaf30044` |
-| 6 | `def` | [binInsert](../../../../../ComputerScience/AlgorithmsInComputerScience/BinSearchPublic.lean/declarations/bininsert.md) | 134 | `declaration-track:98d49dd05bfe2ebfcf16a69cba9564f7b22f73e9d42a4e380088b1ad755a8546` |
+| 1 | `def` | [binSearchAux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BinSearchPublic.lean/declarations/binsearchaux.md) | 22 | `declaration-track:534799ccb129cfdfde8eb1e3b4c7e98b0db54f444fadb9e6a53267118c817a80` |
+| 2 | `def` | [binSearch](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BinSearchPublic.lean/declarations/binsearch.md) | 47 | `declaration-track:9844390637cef9aa6e40d23ce36572a09a2ec3ffc1774dc583bb57a07c667deb` |
+| 3 | `def` | [binSearchContains](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BinSearchPublic.lean/declarations/binsearchcontains.md) | 67 | `declaration-track:b1ea63e13cd7168dfc21c4bceb688adb6072413b492f8affd7be49fd5d54d9ee` |
+| 4 | `def` | [binInsertAux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BinSearchPublic.lean/declarations/bininsertaux.md) | 77 | `declaration-track:ecc6175363344a5990e4258e05da176b2ab58b8a649caf30f19d9a918af42335` |
+| 5 | `def` | [binInsertM](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BinSearchPublic.lean/declarations/bininsertm.md) | 106 | `declaration-track:ea818cebbef95ff65fef09c4a56487a42f2894e17a896f2afed28b83eaf30044` |
+| 6 | `def` | [binInsert](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BinSearchPublic.lean/declarations/bininsert.md) | 134 | `declaration-track:98d49dd05bfe2ebfcf16a69cba9564f7b22f73e9d42a4e380088b1ad755a8546` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

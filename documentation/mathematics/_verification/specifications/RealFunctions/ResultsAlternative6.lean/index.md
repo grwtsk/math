@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/ResultsAlternative6.lean/index.md) · [Full source](../../../../RealFunctions/ResultsAlternative6.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ResultsAlternative6.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ResultsAlternative6.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,7 +60,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [right_endpoint](../../../../RealFunctions/ResultsAlternative6.lean/declarations/right-endpoint.md) | 13 | `result-track:5437f25ef6002240a6792d3c5cca6b1d52f721256e1d43db35cad1627ee20a59` |
+| 1 | `theorem` | [right_endpoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ResultsAlternative6.lean/declarations/right-endpoint.md) | 13 | `result-track:5437f25ef6002240a6792d3c5cca6b1d52f721256e1d43db35cad1627ee20a59` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

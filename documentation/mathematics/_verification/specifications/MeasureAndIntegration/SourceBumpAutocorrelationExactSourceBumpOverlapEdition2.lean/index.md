@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceBumpAutocorrelationExactSourceBumpOverlapEdition2.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceBumpAutocorrelationExactSourceBumpOverlapEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceBumpAutocorrelationExactSourceBumpOverlapEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceBumpAutocorrelationExactSourceBumpOverlapEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [overlapP0](../../../../MeasureAndIntegration/SourceBumpAutocorrelationExactSourceBumpOverlapEdition2.lean/declarations/overlapp0.md) | 19 | `declaration-track:8c4e63d163fd60a4bda6bfbd10003e8f48dee4a13d65a03438cc84d39ac9c2f2` |
-| 2 | `def` | [overlapProfile](../../../../MeasureAndIntegration/SourceBumpAutocorrelationExactSourceBumpOverlapEdition2.lean/declarations/overlapprofile.md) | 24 | `declaration-track:c5a1d2aa2b74e75f51f2a764fec936a923cfb86ca1b54dc1eb8cca1f5cff3980` |
-| 3 | `theorem` | [unitBump_overlap_integral](../../../../MeasureAndIntegration/SourceBumpAutocorrelationExactSourceBumpOverlapEdition2.lean/declarations/unitbump-overlap-integral.md) | 27 | `result-track:160e0c69f8874c514cd4762c371956757645062dcbd98e570ad1bcfa65f87152` |
-| 4 | `theorem` | [sourceBump_overlap_eq_indicator](../../../../MeasureAndIntegration/SourceBumpAutocorrelationExactSourceBumpOverlapEdition2.lean/declarations/sourcebump-overlap-eq-indicator.md) | 58 | `result-track:22f22958e9c6f982476d09a6ff801d496081b7bf9583c0e4f123ec686ac1ddae` |
-| 5 | `theorem` | [sourceBump_autocorrelation_eq_profile](../../../../MeasureAndIntegration/SourceBumpAutocorrelationExactSourceBumpOverlapEdition2.lean/declarations/sourcebump-autocorrelation-eq-profile.md) | 80 | `result-track:eb270d4f60768f5ff794e01f0939d757f64dd51b19ba91818b4d9b3927d8e6ca` |
-| 6 | `theorem` | [scaledBump_autocorrelation_eq_profile](../../../../MeasureAndIntegration/SourceBumpAutocorrelationExactSourceBumpOverlapEdition2.lean/declarations/scaledbump-autocorrelation-eq-profile.md) | 88 | `result-track:8cccb178c2604eeb21ae317275f5fce929723b2e2aa871a1429f05aeed0fd46a` |
+| 1 | `def` | [overlapP0](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceBumpAutocorrelationExactSourceBumpOverlapEdition2.lean/declarations/overlapp0.md) | 19 | `declaration-track:8c4e63d163fd60a4bda6bfbd10003e8f48dee4a13d65a03438cc84d39ac9c2f2` |
+| 2 | `def` | [overlapProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceBumpAutocorrelationExactSourceBumpOverlapEdition2.lean/declarations/overlapprofile.md) | 24 | `declaration-track:c5a1d2aa2b74e75f51f2a764fec936a923cfb86ca1b54dc1eb8cca1f5cff3980` |
+| 3 | `theorem` | [unitBump_overlap_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceBumpAutocorrelationExactSourceBumpOverlapEdition2.lean/declarations/unitbump-overlap-integral.md) | 27 | `result-track:160e0c69f8874c514cd4762c371956757645062dcbd98e570ad1bcfa65f87152` |
+| 4 | `theorem` | [sourceBump_overlap_eq_indicator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceBumpAutocorrelationExactSourceBumpOverlapEdition2.lean/declarations/sourcebump-overlap-eq-indicator.md) | 58 | `result-track:22f22958e9c6f982476d09a6ff801d496081b7bf9583c0e4f123ec686ac1ddae` |
+| 5 | `theorem` | [sourceBump_autocorrelation_eq_profile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceBumpAutocorrelationExactSourceBumpOverlapEdition2.lean/declarations/sourcebump-autocorrelation-eq-profile.md) | 80 | `result-track:eb270d4f60768f5ff794e01f0939d757f64dd51b19ba91818b4d9b3927d8e6ca` |
+| 6 | `theorem` | [scaledBump_autocorrelation_eq_profile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceBumpAutocorrelationExactSourceBumpOverlapEdition2.lean/declarations/scaledbump-autocorrelation-eq-profile.md) | 88 | `result-track:8cccb178c2604eeb21ae317275f5fce929723b2e2aa871a1429f05aeed0fd46a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

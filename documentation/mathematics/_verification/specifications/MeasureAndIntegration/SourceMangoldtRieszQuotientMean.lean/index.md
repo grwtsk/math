@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceMangoldtRieszQuotientMean.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceMangoldtRieszQuotientMean.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceMangoldtRieszQuotientMean.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceMangoldtRieszQuotientMean.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [RieszQuotientMeanTailBound](../../../../MeasureAndIntegration/SourceMangoldtRieszQuotientMean.lean/declarations/rieszquotientmeantailbound.md) | 38 | `declaration-track:ef0720a85bb8aeb6cc7594c6686b66f97bbbb0de3644b6f0fdec070f31cc0139` |
-| 2 | `def` | [SourceRieszQuotientMeanTailBound](../../../../MeasureAndIntegration/SourceMangoldtRieszQuotientMean.lean/declarations/sourcerieszquotientmeantailbound.md) | 43 | `declaration-track:4f377f99a7bf25bee279af2b468b539cb93cf3b00bb4a62b892f49a7c706f138` |
-| 3 | `theorem` | [mertensResidual_sub_half_anchor_abs_le_quotient_mean](../../../../MeasureAndIntegration/SourceMangoldtRieszQuotientMean.lean/declarations/mertensresidual-sub-half-anchor-abs-le-quotient-mean.md) | 47 | `result-track:9ffaa6be5816eb4daaf87f2260214d2c4be6dc090477e1189e4d762ede7814b0` |
-| 4 | `theorem` | [mertensResidual_sub_half_anchor_abs_le_five_mul_of_mean](../../../../MeasureAndIntegration/SourceMangoldtRieszQuotientMean.lean/declarations/mertensresidual-sub-half-anchor-abs-le-five-mul-of-mean.md) | 78 | `result-track:81dae412538e1bbdb7a0e6bdcc78fcab48e22252d9a8ba62f2d00a7c6d9057f1` |
-| 5 | `theorem` | [quotient_mean_tail_implies_absolute_source_tail](../../../../MeasureAndIntegration/SourceMangoldtRieszQuotientMean.lean/declarations/quotient-mean-tail-implies-absolute-source-tail.md) | 91 | `result-track:67b8569d573b8c0d064d630fc9366c80604a4aaa6e4cd4ca53f4c8ae5c418ddf` |
-| 6 | `theorem` | [source_quotient_mean_tail_implies_absolute_source_tail](../../../../MeasureAndIntegration/SourceMangoldtRieszQuotientMean.lean/declarations/source-quotient-mean-tail-implies-absolute-source-tail.md) | 99 | `result-track:07492b0b87645689c2d7acc1b2891e9f9b55b1e4497483db8ce1025a2d5125fd` |
-| 7 | `theorem` | [source_quotient_mean_tail_implies_source_upper_tail](../../../../MeasureAndIntegration/SourceMangoldtRieszQuotientMean.lean/declarations/source-quotient-mean-tail-implies-source-upper-tail.md) | 105 | `result-track:c8de8d4f76352677fe5bbd2aed3cddbe5a988fc854d2846fa465c7f2aedd4f99` |
+| 1 | `def` | [RieszQuotientMeanTailBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceMangoldtRieszQuotientMean.lean/declarations/rieszquotientmeantailbound.md) | 38 | `declaration-track:ef0720a85bb8aeb6cc7594c6686b66f97bbbb0de3644b6f0fdec070f31cc0139` |
+| 2 | `def` | [SourceRieszQuotientMeanTailBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceMangoldtRieszQuotientMean.lean/declarations/sourcerieszquotientmeantailbound.md) | 43 | `declaration-track:4f377f99a7bf25bee279af2b468b539cb93cf3b00bb4a62b892f49a7c706f138` |
+| 3 | `theorem` | [mertensResidual_sub_half_anchor_abs_le_quotient_mean](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceMangoldtRieszQuotientMean.lean/declarations/mertensresidual-sub-half-anchor-abs-le-quotient-mean.md) | 47 | `result-track:9ffaa6be5816eb4daaf87f2260214d2c4be6dc090477e1189e4d762ede7814b0` |
+| 4 | `theorem` | [mertensResidual_sub_half_anchor_abs_le_five_mul_of_mean](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceMangoldtRieszQuotientMean.lean/declarations/mertensresidual-sub-half-anchor-abs-le-five-mul-of-mean.md) | 78 | `result-track:81dae412538e1bbdb7a0e6bdcc78fcab48e22252d9a8ba62f2d00a7c6d9057f1` |
+| 5 | `theorem` | [quotient_mean_tail_implies_absolute_source_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceMangoldtRieszQuotientMean.lean/declarations/quotient-mean-tail-implies-absolute-source-tail.md) | 91 | `result-track:67b8569d573b8c0d064d630fc9366c80604a4aaa6e4cd4ca53f4c8ae5c418ddf` |
+| 6 | `theorem` | [source_quotient_mean_tail_implies_absolute_source_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceMangoldtRieszQuotientMean.lean/declarations/source-quotient-mean-tail-implies-absolute-source-tail.md) | 99 | `result-track:07492b0b87645689c2d7acc1b2891e9f9b55b1e4497483db8ce1025a2d5125fd` |
+| 7 | `theorem` | [source_quotient_mean_tail_implies_source_upper_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceMangoldtRieszQuotientMean.lean/declarations/source-quotient-mean-tail-implies-source-upper-tail.md) | 105 | `result-track:c8de8d4f76352677fe5bbd2aed3cddbe5a988fc854d2846fa465c7f2aedd4f99` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

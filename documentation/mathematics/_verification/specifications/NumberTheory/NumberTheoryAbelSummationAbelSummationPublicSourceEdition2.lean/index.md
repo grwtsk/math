@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/NumberTheoryAbelSummationAbelSummationPublicSourceEdition2.lean/index.md) · [Full source](../../../../NumberTheory/NumberTheoryAbelSummationAbelSummationPublicSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NumberTheoryAbelSummationAbelSummationPublicSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NumberTheoryAbelSummationAbelSummationPublicSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [_root_.Finset.sum_Icc_one_eq_sum_range](../../../../NumberTheory/NumberTheoryAbelSummationAbelSummationPublicSourceEdition2.lean/declarations/root-finset-sum-icc-one-eq-sum-range.md) | 25 | `result-track:e7eb3113b8cb895afb8c6b6a91db7463d2cf1cdc5c6b079a08488247c3730cf3` |
-| 2 | `theorem` | [_root_.Finset.sum_Icc_zero_eq_sum_Icc_one](../../../../NumberTheory/NumberTheoryAbelSummationAbelSummationPublicSourceEdition2.lean/declarations/root-finset-sum-icc-zero-eq-sum-icc-one.md) | 48 | `result-track:8122bc39fad30dc735b65da3c50f4bd6a3e21a8fc35c3ca8e1c0b1e096b0447f` |
-| 3 | `theorem` | [_root_.Finset.sum_Icc_zero_eq_sum_range_succ](../../../../NumberTheory/NumberTheoryAbelSummationAbelSummationPublicSourceEdition2.lean/declarations/root-finset-sum-icc-zero-eq-sum-range-succ.md) | 63 | `result-track:f44ec1193a1a353cc6bc6acb64d1bcd400a7ba2010c144bce042ce7d9b5f9875` |
-| 4 | `theorem` | [_root_.sum_Icc_zero_floor_eq_sum_range](../../../../NumberTheory/NumberTheoryAbelSummationAbelSummationPublicSourceEdition2.lean/declarations/root-sum-icc-zero-floor-eq-sum-range.md) | 68 | `result-track:46347433a350bbfdbd1739ab2b3091f719811c42d22da340fd9a4062442460f2` |
+| 1 | `theorem` | [_root_.Finset.sum_Icc_one_eq_sum_range](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NumberTheoryAbelSummationAbelSummationPublicSourceEdition2.lean/declarations/root-finset-sum-icc-one-eq-sum-range.md) | 25 | `result-track:e7eb3113b8cb895afb8c6b6a91db7463d2cf1cdc5c6b079a08488247c3730cf3` |
+| 2 | `theorem` | [_root_.Finset.sum_Icc_zero_eq_sum_Icc_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NumberTheoryAbelSummationAbelSummationPublicSourceEdition2.lean/declarations/root-finset-sum-icc-zero-eq-sum-icc-one.md) | 48 | `result-track:8122bc39fad30dc735b65da3c50f4bd6a3e21a8fc35c3ca8e1c0b1e096b0447f` |
+| 3 | `theorem` | [_root_.Finset.sum_Icc_zero_eq_sum_range_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NumberTheoryAbelSummationAbelSummationPublicSourceEdition2.lean/declarations/root-finset-sum-icc-zero-eq-sum-range-succ.md) | 63 | `result-track:f44ec1193a1a353cc6bc6acb64d1bcd400a7ba2010c144bce042ce7d9b5f9875` |
+| 4 | `theorem` | [_root_.sum_Icc_zero_floor_eq_sum_range](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NumberTheoryAbelSummationAbelSummationPublicSourceEdition2.lean/declarations/root-sum-icc-zero-floor-eq-sum-range.md) | 68 | `result-track:46347433a350bbfdbd1739ab2b3091f719811c42d22da340fd9a4062442460f2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

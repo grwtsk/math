@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/EnumerateNamespaced.lean/index.md) · [Full source](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/EnumerateNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/EnumerateNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/EnumerateNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [enumerate](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/EnumerateNamespaced.lean/declarations/enumerate.md) | 40 | `declaration-track:45a25c6277c593039d7bac8c90528b3a9b35074838d0618ff2e8e5a94bb9f5eb` |
-| 2 | `theorem` | [enumerate_eq_none_of_sel](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/EnumerateNamespaced.lean/declarations/enumerate-eq-none-of-sel.md) | 46 | `result-track:c3727a7a19a95616c550d3c4edf728e9f5726223b65bed20ea90395ccd6ab193` |
-| 3 | `theorem` | [enumerate_eq_none](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/EnumerateNamespaced.lean/declarations/enumerate-eq-none.md) | 50 | `result-track:06b893eda14ff77653d947bef502d92318db0abf3fe964ee8dc8c5921ca451b5` |
-| 4 | `theorem` | [enumerate_mem](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/EnumerateNamespaced.lean/declarations/enumerate-mem.md) | 64 | `result-track:00863c976f75ea2cca1f43acc7a5714e91515174328ebc319dbf6413f8b937ad` |
-| 5 | `theorem` | [enumerate_inj](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/EnumerateNamespaced.lean/declarations/enumerate-inj.md) | 76 | `result-track:cdb8e8e862762b389041921efb00bbd0fd0fe974ca3f5ede761a0ddc26b4dbea` |
+| 1 | `def` | [enumerate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/EnumerateNamespaced.lean/declarations/enumerate.md) | 40 | `declaration-track:45a25c6277c593039d7bac8c90528b3a9b35074838d0618ff2e8e5a94bb9f5eb` |
+| 2 | `theorem` | [enumerate_eq_none_of_sel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/EnumerateNamespaced.lean/declarations/enumerate-eq-none-of-sel.md) | 46 | `result-track:c3727a7a19a95616c550d3c4edf728e9f5726223b65bed20ea90395ccd6ab193` |
+| 3 | `theorem` | [enumerate_eq_none](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/EnumerateNamespaced.lean/declarations/enumerate-eq-none.md) | 50 | `result-track:06b893eda14ff77653d947bef502d92318db0abf3fe964ee8dc8c5921ca451b5` |
+| 4 | `theorem` | [enumerate_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/EnumerateNamespaced.lean/declarations/enumerate-mem.md) | 64 | `result-track:00863c976f75ea2cca1f43acc7a5714e91515174328ebc319dbf6413f8b937ad` |
+| 5 | `theorem` | [enumerate_inj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/EnumerateNamespaced.lean/declarations/enumerate-inj.md) | 76 | `result-track:cdb8e8e862762b389041921efb00bbd0fd0fe974ca3f5ede761a0ddc26b4dbea` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

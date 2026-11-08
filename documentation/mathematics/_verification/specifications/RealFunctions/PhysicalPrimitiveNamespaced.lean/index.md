@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/PhysicalPrimitiveNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/PhysicalPrimitiveNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PhysicalPrimitiveNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PhysicalPrimitiveNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [primitive](../../../../RealFunctions/PhysicalPrimitiveNamespaced.lean/declarations/primitive.md) | 18 | `declaration-track:9c7d0494fad80ec0e18663fc07794860c9161f8caaf56b165e69eca26f4edbb4` |
-| 2 | `def` | [primitiveSlope](../../../../RealFunctions/PhysicalPrimitiveNamespaced.lean/declarations/primitiveslope.md) | 21 | `declaration-track:bd9570968c97ad9642fa20f8af448af766cd64ecc54fefda5509e27d2cac2288` |
-| 3 | `theorem` | [primitive_hasDerivAt](../../../../RealFunctions/PhysicalPrimitiveNamespaced.lean/declarations/primitive-hasderivat.md) | 24 | `result-track:0e3eb9caff64288768ff16abed7dd8afa279f89c9d986c38fe4f39a070685511` |
-| 4 | `theorem` | [primitiveSlope_hasDerivAt](../../../../RealFunctions/PhysicalPrimitiveNamespaced.lean/declarations/primitiveslope-hasderivat.md) | 35 | `result-track:d3f899277976f7252c270f3301d84a06abe4d47fa3b87bb00abf8ae51e18ff06` |
+| 1 | `def` | [primitive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PhysicalPrimitiveNamespaced.lean/declarations/primitive.md) | 18 | `declaration-track:9c7d0494fad80ec0e18663fc07794860c9161f8caaf56b165e69eca26f4edbb4` |
+| 2 | `def` | [primitiveSlope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PhysicalPrimitiveNamespaced.lean/declarations/primitiveslope.md) | 21 | `declaration-track:bd9570968c97ad9642fa20f8af448af766cd64ecc54fefda5509e27d2cac2288` |
+| 3 | `theorem` | [primitive_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PhysicalPrimitiveNamespaced.lean/declarations/primitive-hasderivat.md) | 24 | `result-track:0e3eb9caff64288768ff16abed7dd8afa279f89c9d986c38fe4f39a070685511` |
+| 4 | `theorem` | [primitiveSlope_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PhysicalPrimitiveNamespaced.lean/declarations/primitiveslope-hasderivat.md) | 35 | `result-track:d3f899277976f7252c270f3301d84a06abe4d47fa3b87bb00abf8ae51e18ff06` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

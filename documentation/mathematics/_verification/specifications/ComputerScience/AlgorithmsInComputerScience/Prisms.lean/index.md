@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Prisms.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Prisms.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Prisms.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Prisms.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RectangularPrism](../../../../../ComputerScience/AlgorithmsInComputerScience/Prisms.lean/declarations/rectangularprism.md) | 19 | `declaration-track:e79505b6f2d794fe14ea36e17ff094b7976ad57df36479df1f6f9d2e3273ee74` |
-| 2 | `structure` | [RectangularPrismArrangement](../../../../../ComputerScience/AlgorithmsInComputerScience/Prisms.lean/declarations/rectangularprismarrangement.md) | 31 | `declaration-track:9920a0aa4e380ab689bb94d41c7f7d969957446d6ff273087c2f950413a54f51` |
-| 3 | `def` | [RectangularPrismArrangement.usableForMajorProof](../../../../../ComputerScience/AlgorithmsInComputerScience/Prisms.lean/declarations/rectangularprismarrangement-usableformajorproof.md) | 40 | `declaration-track:50cf120d9e0a031a94db8f966ba64404c995c02a5f38e9d0aa57b5158aa61844` |
-| 4 | `theorem` | [RectangularPrismArrangement.usableForMajorProof_of_fields](../../../../../ComputerScience/AlgorithmsInComputerScience/Prisms.lean/declarations/rectangularprismarrangement-usableformajorproof-of-fields.md) | 46 | `result-track:d6c82ab59eef5e7825ec53db988c707daf2811661847b5a257689e5ff3d10b60` |
+| 1 | `structure` | [RectangularPrism](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Prisms.lean/declarations/rectangularprism.md) | 19 | `declaration-track:e79505b6f2d794fe14ea36e17ff094b7976ad57df36479df1f6f9d2e3273ee74` |
+| 2 | `structure` | [RectangularPrismArrangement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Prisms.lean/declarations/rectangularprismarrangement.md) | 31 | `declaration-track:9920a0aa4e380ab689bb94d41c7f7d969957446d6ff273087c2f950413a54f51` |
+| 3 | `def` | [RectangularPrismArrangement.usableForMajorProof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Prisms.lean/declarations/rectangularprismarrangement-usableformajorproof.md) | 40 | `declaration-track:50cf120d9e0a031a94db8f966ba64404c995c02a5f38e9d0aa57b5158aa61844` |
+| 4 | `theorem` | [RectangularPrismArrangement.usableForMajorProof_of_fields](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Prisms.lean/declarations/rectangularprismarrangement-usableformajorproof-of-fields.md) | 46 | `result-track:d6c82ab59eef5e7825ec53db988c707daf2811661847b5a257689e5ff3d10b60` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

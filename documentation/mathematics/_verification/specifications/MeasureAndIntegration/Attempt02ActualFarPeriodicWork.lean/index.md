@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/Attempt02ActualFarPeriodicWork.lean/index.md) · [Full source](../../../../MeasureAndIntegration/Attempt02ActualFarPeriodicWork.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt02ActualFarPeriodicWork.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt02ActualFarPeriodicWork.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualFarPeriodicWork](../../../../MeasureAndIntegration/Attempt02ActualFarPeriodicWork.lean/declarations/actualfarperiodicwork.md) | 27 | `declaration-track:3740d851991240f35dd1fa288d5294acceaab8192224b374acd87b62d5bc1d68` |
-| 2 | `def` | [actualFarPeriodicCutoff](../../../../MeasureAndIntegration/Attempt02ActualFarPeriodicWork.lean/declarations/actualfarperiodiccutoff.md) | 34 | `declaration-track:157af795ddcbb210371cfc8bca18a5c988f0fe66820baee82ea541124f703908` |
-| 3 | `theorem` | [physical_profile_measurable](../../../../MeasureAndIntegration/Attempt02ActualFarPeriodicWork.lean/declarations/physical-profile-measurable.md) | 37 | `result-track:bb8ba2538d17caf06f64cc2ac3efa7ad0ed2aec6a63868ae0e8ef6e7016def09` |
-| 4 | `theorem` | [row_stronglyMeasurable](../../../../MeasureAndIntegration/Attempt02ActualFarPeriodicWork.lean/declarations/row-stronglymeasurable.md) | 51 | `result-track:6904403d7ce8fbcf07719f1be508c4fa2b2346fccfa988ba9ac66207beb44444` |
-| 5 | `theorem` | [actualFarPeriodicWork_intervalIntegrable](../../../../MeasureAndIntegration/Attempt02ActualFarPeriodicWork.lean/declarations/actualfarperiodicwork-intervalintegrable.md) | 69 | `result-track:b7e74edaa05a6caa35a0ec4f9641298e12b290982405f20b4d3c71e2abb5a27d` |
-| 6 | `theorem` | [exp_half_integral_le](../../../../MeasureAndIntegration/Attempt02ActualFarPeriodicWork.lean/declarations/exp-half-integral-le.md) | 103 | `result-track:3eb1cf53dc9c21e51d736375e899f80b908e098757352d2ecadbb508090262e0` |
-| 7 | `theorem` | [actualFarPeriodicWork_abs_le](../../../../MeasureAndIntegration/Attempt02ActualFarPeriodicWork.lean/declarations/actualfarperiodicwork-abs-le.md) | 115 | `result-track:55629fc66f4e7b4bde1223521f27038ddafece800171d942d447c4ed830abf2e` |
+| 1 | `def` | [actualFarPeriodicWork](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt02ActualFarPeriodicWork.lean/declarations/actualfarperiodicwork.md) | 27 | `declaration-track:3740d851991240f35dd1fa288d5294acceaab8192224b374acd87b62d5bc1d68` |
+| 2 | `def` | [actualFarPeriodicCutoff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt02ActualFarPeriodicWork.lean/declarations/actualfarperiodiccutoff.md) | 34 | `declaration-track:157af795ddcbb210371cfc8bca18a5c988f0fe66820baee82ea541124f703908` |
+| 3 | `theorem` | [physical_profile_measurable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt02ActualFarPeriodicWork.lean/declarations/physical-profile-measurable.md) | 37 | `result-track:bb8ba2538d17caf06f64cc2ac3efa7ad0ed2aec6a63868ae0e8ef6e7016def09` |
+| 4 | `theorem` | [row_stronglyMeasurable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt02ActualFarPeriodicWork.lean/declarations/row-stronglymeasurable.md) | 51 | `result-track:6904403d7ce8fbcf07719f1be508c4fa2b2346fccfa988ba9ac66207beb44444` |
+| 5 | `theorem` | [actualFarPeriodicWork_intervalIntegrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt02ActualFarPeriodicWork.lean/declarations/actualfarperiodicwork-intervalintegrable.md) | 69 | `result-track:b7e74edaa05a6caa35a0ec4f9641298e12b290982405f20b4d3c71e2abb5a27d` |
+| 6 | `theorem` | [exp_half_integral_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt02ActualFarPeriodicWork.lean/declarations/exp-half-integral-le.md) | 103 | `result-track:3eb1cf53dc9c21e51d736375e899f80b908e098757352d2ecadbb508090262e0` |
+| 7 | `theorem` | [actualFarPeriodicWork_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt02ActualFarPeriodicWork.lean/declarations/actualfarperiodicwork-abs-le.md) | 115 | `result-track:55629fc66f4e7b4bde1223521f27038ddafece800171d942d447c4ed830abf2e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/Signature.lean/index.md) · [Full source](../../../../Combinatorics/Signature.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Signature.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Signature.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [MutationCoordinate](../../../../Combinatorics/Signature.lean/declarations/mutationcoordinate.md) | 7 | `declaration-track:da56248888e27cd8eb3fbf88b70df0eb89d706d8c4be03ab877f54dd1f914346` |
-| 2 | `structure` | [BoundaryCrossing](../../../../Combinatorics/Signature.lean/declarations/boundarycrossing.md) | 19 | `declaration-track:05f7ece8cf70f9332348f744509514ee531331428946b41c4388f472f47b2e60` |
-| 3 | `def` | [causalCone](../../../../Combinatorics/Signature.lean/declarations/causalcone.md) | 26 | `declaration-track:bc1b35a8abbbbb5c6e22f9d955a5d3b2a9d3716ed8192e79de12b00852dfabd8` |
-| 4 | `def` | [mutationFrontier](../../../../Combinatorics/Signature.lean/declarations/mutationfrontier.md) | 33 | `declaration-track:1cd0f2ae4744b5b44ff98a72cd989bca6124daff8b4cda6ec55c13d7b6e5ccf1` |
-| 5 | `structure` | [MutationSignature](../../../../Combinatorics/Signature.lean/declarations/mutationsignature-source-edition-2.md) | 39 | `declaration-track:e553cd727e7f073d94dbacb460e5c25b88cd0a0923f9edc6bdd14aa2eb9e63c0` |
-| 6 | `def` | [mutationSignature](../../../../Combinatorics/Signature.lean/declarations/mutationsignature.md) | 51 | `declaration-track:e23020ad8f540253fece0364ee84675dfc20d24177d75fa52be23cc0d81019ae` |
-| 7 | `theorem` | [boundary_crossing_declares_law](../../../../Combinatorics/Signature.lean/declarations/boundary-crossing-declares-law.md) | 56 | `result-track:064847f2e32c76a43b1543101440fa4c6a7ab83aa4a77ef0cac11b17dd70e559` |
+| 1 | `structure` | [MutationCoordinate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Signature.lean/declarations/mutationcoordinate.md) | 7 | `declaration-track:da56248888e27cd8eb3fbf88b70df0eb89d706d8c4be03ab877f54dd1f914346` |
+| 2 | `structure` | [BoundaryCrossing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Signature.lean/declarations/boundarycrossing.md) | 19 | `declaration-track:05f7ece8cf70f9332348f744509514ee531331428946b41c4388f472f47b2e60` |
+| 3 | `def` | [causalCone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Signature.lean/declarations/causalcone.md) | 26 | `declaration-track:bc1b35a8abbbbb5c6e22f9d955a5d3b2a9d3716ed8192e79de12b00852dfabd8` |
+| 4 | `def` | [mutationFrontier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Signature.lean/declarations/mutationfrontier.md) | 33 | `declaration-track:1cd0f2ae4744b5b44ff98a72cd989bca6124daff8b4cda6ec55c13d7b6e5ccf1` |
+| 5 | `structure` | [MutationSignature](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Signature.lean/declarations/mutationsignature-source-edition-2.md) | 39 | `declaration-track:e553cd727e7f073d94dbacb460e5c25b88cd0a0923f9edc6bdd14aa2eb9e63c0` |
+| 6 | `def` | [mutationSignature](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Signature.lean/declarations/mutationsignature.md) | 51 | `declaration-track:e23020ad8f540253fece0364ee84675dfc20d24177d75fa52be23cc0d81019ae` |
+| 7 | `theorem` | [boundary_crossing_declares_law](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Signature.lean/declarations/boundary-crossing-declares-law.md) | 56 | `result-track:064847f2e32c76a43b1543101440fa4c6a7ab83aa4a77ef0cac11b17dd70e559` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

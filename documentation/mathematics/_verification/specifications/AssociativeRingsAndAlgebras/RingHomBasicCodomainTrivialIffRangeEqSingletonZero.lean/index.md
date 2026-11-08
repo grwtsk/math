@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/RingHomBasicCodomainTrivialIffRangeEqSingletonZero.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/RingHomBasicCodomainTrivialIffRangeEqSingletonZero.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingHomBasicCodomainTrivialIffRangeEqSingletonZero.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingHomBasicCodomainTrivialIffRangeEqSingletonZero.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,9 +60,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [codomain_trivial_iff_range_eq_singleton_zero](../../../../AssociativeRingsAndAlgebras/RingHomBasicCodomainTrivialIffRangeEqSingletonZero.lean/declarations/codomain-trivial-iff-range-eq-singleton-zero.md) | 33 | `result-track:18e4fd2d1ae880c365e2f106b0eea66d78ffeb49ed2e886fcf0ef0dde2e57d95` |
-| 2 | `theorem` | [map_dvd](../../../../AssociativeRingsAndAlgebras/RingHomBasicCodomainTrivialIffRangeEqSingletonZero.lean/declarations/map-dvd.md) | 45 | `result-track:052c400a44a3aea19f12ffc928603a5d1a2dbfd22e23848c542e1d1ead974e71` |
-| 3 | `theorem` | [Function.Injective.isDomain](../../../../AssociativeRingsAndAlgebras/RingHomBasicCodomainTrivialIffRangeEqSingletonZero.lean/declarations/function-injective-isdomain.md) | 53 | `result-track:c39aed0140abe22d20da35c4c46c27b3578b27335a0b684c31a379e77c11e11e` |
+| 1 | `theorem` | [codomain_trivial_iff_range_eq_singleton_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingHomBasicCodomainTrivialIffRangeEqSingletonZero.lean/declarations/codomain-trivial-iff-range-eq-singleton-zero.md) | 33 | `result-track:18e4fd2d1ae880c365e2f106b0eea66d78ffeb49ed2e886fcf0ef0dde2e57d95` |
+| 2 | `theorem` | [map_dvd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingHomBasicCodomainTrivialIffRangeEqSingletonZero.lean/declarations/map-dvd.md) | 45 | `result-track:052c400a44a3aea19f12ffc928603a5d1a2dbfd22e23848c542e1d1ead974e71` |
+| 3 | `theorem` | [Function.Injective.isDomain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingHomBasicCodomainTrivialIffRangeEqSingletonZero.lean/declarations/function-injective-isdomain.md) | 53 | `result-track:c39aed0140abe22d20da35c4c46c27b3578b27335a0b684c31a379e77c11e11e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/PolynomialNamespaced.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/PolynomialNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PolynomialNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PolynomialNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,8 +60,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_root](../../../../FunctionsOfAComplexVariable/PolynomialNamespaced.lean/declarations/exists-root.md) | 37 | `result-track:c4978d43e578dcc42820c37366f92a9dd2c5e710ec4de62e56a3014255f9094d` |
-| 2 | `instance` | [isAlgClosed](../../../../FunctionsOfAComplexVariable/PolynomialNamespaced.lean/declarations/isalgclosed.md) | 48 | `declaration-track:b47a3c1cc2e5596e2e26004124d87246b3e16f06c785a70d4db36493ec9d37db` |
+| 1 | `theorem` | [exists_root](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PolynomialNamespaced.lean/declarations/exists-root.md) | 37 | `result-track:c4978d43e578dcc42820c37366f92a9dd2c5e710ec4de62e56a3014255f9094d` |
+| 2 | `instance` | [isAlgClosed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PolynomialNamespaced.lean/declarations/isalgclosed.md) | 48 | `declaration-track:b47a3c1cc2e5596e2e26004124d87246b3e16f06c785a70d4db36493ec9d37db` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

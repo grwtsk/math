@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/RegularFreeNamespacedPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/RegularFreeNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RegularFreeNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RegularFreeNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/RegularFreeNamespacedPublic.lean/declarations/instance.md) | 37 | `declaration-track:885d1e66f00c2dd463e630f34e3a16f56eb87a61c7aad3a97433e9d22f8b8d3b` |
-| 2 | `lemma` | [Module.free_quotSMulTop_iff_free](../../../../CommutativeAlgebra/RegularFreeNamespacedPublic.lean/declarations/module-free-quotsmultop-iff-free.md) | 42 | `result-track:4b41cf3fb17764a6420b088e194d04ce2c80cc4de14251cca546abb29c2a6609` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RegularFreeNamespacedPublic.lean/declarations/instance.md) | 37 | `declaration-track:885d1e66f00c2dd463e630f34e3a16f56eb87a61c7aad3a97433e9d22f8b8d3b` |
+| 2 | `lemma` | [Module.free_quotSMulTop_iff_free](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RegularFreeNamespacedPublic.lean/declarations/module-free-quotsmultop-iff-free.md) | 42 | `result-track:4b41cf3fb17764a6420b088e194d04ce2c80cc4de14251cca546abb29c2a6609` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

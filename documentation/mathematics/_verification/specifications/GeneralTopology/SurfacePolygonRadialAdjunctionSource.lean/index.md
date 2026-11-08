@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SurfacePolygonRadialAdjunctionSource.lean/index.md) · [Full source](../../../../GeneralTopology/SurfacePolygonRadialAdjunctionSource.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonRadialAdjunctionSource.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonRadialAdjunctionSource.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialAdjunctionInverse`](../../../../GeneralTopology/SurfacePolygonRadialAdjunctionInverse.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialAdjunctionInverse`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonRadialAdjunctionInverse.lean/index.md) — import line 3; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [homeomorph_source](../../../../GeneralTopology/SurfacePolygonRadialAdjunctionSource.lean/declarations/homeomorph-source.md) | 29 | `result-track:653ef9934d7d14677e88166971ff3dc812ed5344685fb9f5177a38e7c572fbe2` |
-| 2 | `theorem` | [homeomorph_symm_source](../../../../GeneralTopology/SurfacePolygonRadialAdjunctionSource.lean/declarations/homeomorph-symm-source.md) | 39 | `result-track:3c21629a5199158b64f23d8c03709c7832ea8cacfe980810b963a14542cc7955` |
-| 3 | `theorem` | [homeomorph_outer_source](../../../../GeneralTopology/SurfacePolygonRadialAdjunctionSource.lean/declarations/homeomorph-outer-source.md) | 59 | `result-track:5ffce7f5a8b03cda11f98ae871ee2e392ccb8202f39944c4ed4de42431b8756f` |
-| 4 | `theorem` | [homeomorph_symm_outer_source](../../../../GeneralTopology/SurfacePolygonRadialAdjunctionSource.lean/declarations/homeomorph-symm-outer-source.md) | 68 | `result-track:af1f99e69dc0ba751cc389a0fcea4347a7c01bdd7415c21f2409900eb6c17659` |
+| 1 | `theorem` | [homeomorph_source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonRadialAdjunctionSource.lean/declarations/homeomorph-source.md) | 29 | `result-track:653ef9934d7d14677e88166971ff3dc812ed5344685fb9f5177a38e7c572fbe2` |
+| 2 | `theorem` | [homeomorph_symm_source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonRadialAdjunctionSource.lean/declarations/homeomorph-symm-source.md) | 39 | `result-track:3c21629a5199158b64f23d8c03709c7832ea8cacfe980810b963a14542cc7955` |
+| 3 | `theorem` | [homeomorph_outer_source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonRadialAdjunctionSource.lean/declarations/homeomorph-outer-source.md) | 59 | `result-track:5ffce7f5a8b03cda11f98ae871ee2e392ccb8202f39944c4ed4de42431b8756f` |
+| 4 | `theorem` | [homeomorph_symm_outer_source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonRadialAdjunctionSource.lean/declarations/homeomorph-symm-outer-source.md) | 68 | `result-track:af1f99e69dc0ba751cc389a0fcea4347a7c01bdd7415c21f2409900eb6c17659` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

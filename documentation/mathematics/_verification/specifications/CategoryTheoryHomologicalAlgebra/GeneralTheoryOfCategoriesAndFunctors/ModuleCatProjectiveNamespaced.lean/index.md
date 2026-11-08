@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatProjectiveNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatProjectiveNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatProjectiveNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatProjectiveNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,9 +60,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [IsProjective.iff_projective](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatProjectiveNamespaced.lean/declarations/isprojective-iff-projective.md) | 28 | `result-track:251087db5d00e473e176ef38c0832df7a9c20b2bb7f8507269f352facea6ac11` |
-| 2 | `theorem` | [projective_of_free](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatProjectiveNamespaced.lean/declarations/projective-of-free.md) | 49 | `result-track:e6f6df57da75f3d42020bcb8203fecb6f982df249941af41e74d499082db6a9d` |
-| 3 | `instance` | [enoughProjectives](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatProjectiveNamespaced.lean/declarations/enoughprojectives.md) | 58 | `declaration-track:5d00d967b47d5f02427ea02d52e9872ea1c1b60275549916cfcc725bf04afb16` |
+| 1 | `theorem` | [IsProjective.iff_projective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatProjectiveNamespaced.lean/declarations/isprojective-iff-projective.md) | 28 | `result-track:251087db5d00e473e176ef38c0832df7a9c20b2bb7f8507269f352facea6ac11` |
+| 2 | `theorem` | [projective_of_free](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatProjectiveNamespaced.lean/declarations/projective-of-free.md) | 49 | `result-track:e6f6df57da75f3d42020bcb8203fecb6f982df249941af41e74d499082db6a9d` |
+| 3 | `instance` | [enoughProjectives](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatProjectiveNamespaced.lean/declarations/enoughprojectives.md) | 58 | `declaration-track:5d00d967b47d5f02427ea02d52e9872ea1c1b60275549916cfcc725bf04afb16` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

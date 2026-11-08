@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/UnusedNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/UnusedNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/UnusedNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/UnusedNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,10 +61,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [countDecls](../../../../../ComputerScience/AlgorithmsInComputerScience/UnusedNamespaced.lean/declarations/countdecls.md) | 49 | `declaration-track:44ea66dad860465b39ac3d87a73c4b31fb148ea633a50b8efc0737856563e845` |
-| 2 | `def` | [unusedImportsCLI](../../../../../ComputerScience/AlgorithmsInComputerScience/UnusedNamespaced.lean/declarations/unusedimportscli.md) | 61 | `declaration-track:6c33ff9df4a0dc457b66d8e4f934ccb4783ba1123880646964f241b9fcedd0b2` |
-| 3 | `def` | [unused](../../../../../ComputerScience/AlgorithmsInComputerScience/UnusedNamespaced.lean/declarations/unused.md) | 118 | `declaration-track:fec5a160200ea09550e946769d0b634755cc3af32913a33db57a458aff92c3f5` |
-| 4 | `def` | [main](../../../../../ComputerScience/AlgorithmsInComputerScience/UnusedNamespaced.lean/declarations/main.md) | 140 | `declaration-track:25539ac7348954aa7b5bba8042ec99be1bae8172bc89e69c3d5ebded36570c98` |
+| 1 | `def` | [countDecls](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/UnusedNamespaced.lean/declarations/countdecls.md) | 49 | `declaration-track:44ea66dad860465b39ac3d87a73c4b31fb148ea633a50b8efc0737856563e845` |
+| 2 | `def` | [unusedImportsCLI](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/UnusedNamespaced.lean/declarations/unusedimportscli.md) | 61 | `declaration-track:6c33ff9df4a0dc457b66d8e4f934ccb4783ba1123880646964f241b9fcedd0b2` |
+| 3 | `def` | [unused](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/UnusedNamespaced.lean/declarations/unused.md) | 118 | `declaration-track:fec5a160200ea09550e946769d0b634755cc3af32913a33db57a458aff92c3f5` |
+| 4 | `def` | [main](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/UnusedNamespaced.lean/declarations/main.md) | 140 | `declaration-track:25539ac7348954aa7b5bba8042ec99be1bae8172bc89e69c3d5ebded36570c98` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

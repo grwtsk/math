@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/SetInterval.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/SetInterval.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/SetInterval.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/SetInterval.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,15 +61,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [range_cast_int](../../../../../NumberTheory/ElementaryNumberTheory/SetInterval.lean/declarations/range-cast-int.md) | 24 | `result-track:4f05930e56ef1cfb18766275161814b8f0a5fdbf29ce068ae6dff31da15bca22` |
-| 2 | `theorem` | [image_cast_int_Icc](../../../../../NumberTheory/ElementaryNumberTheory/SetInterval.lean/declarations/image-cast-int-icc.md) | 27 | `result-track:609796ec95fd0ad06721350eceba9c9e37e30d65a5e782a18130749ad8e17703` |
-| 3 | `theorem` | [image_cast_int_Ico](../../../../../NumberTheory/ElementaryNumberTheory/SetInterval.lean/declarations/image-cast-int-ico.md) | 30 | `result-track:cc01247f6f56f1077a124b516a2661a0269af46f351141be88eaa0665696ec7f` |
-| 4 | `theorem` | [image_cast_int_Ioc](../../../../../NumberTheory/ElementaryNumberTheory/SetInterval.lean/declarations/image-cast-int-ioc.md) | 33 | `result-track:a24635f3aebb3852f60198d9d923565d333263031a797f393c20ebea2730c5d5` |
-| 5 | `theorem` | [image_cast_int_Ioo](../../../../../NumberTheory/ElementaryNumberTheory/SetInterval.lean/declarations/image-cast-int-ioo.md) | 36 | `result-track:b994c6430b48818fba191f549162451d7048399696a66a2fb52166e0c5150ebe` |
-| 6 | `theorem` | [image_cast_int_Iic](../../../../../NumberTheory/ElementaryNumberTheory/SetInterval.lean/declarations/image-cast-int-iic.md) | 39 | `result-track:30f775eed178a41c8c099f6adeb1aca82627393ff592dd05ae5fe9203962d52f` |
-| 7 | `theorem` | [image_cast_int_Iio](../../../../../NumberTheory/ElementaryNumberTheory/SetInterval.lean/declarations/image-cast-int-iio.md) | 42 | `result-track:a65ae094e55e137ad453815d63ba4d31c5e9548681a07813632af73bb3b6fc3e` |
-| 8 | `theorem` | [image_cast_int_Ici](../../../../../NumberTheory/ElementaryNumberTheory/SetInterval.lean/declarations/image-cast-int-ici.md) | 45 | `result-track:90bca84770d3903caf49469ea3a70d84ebe3396d2bb1e07759b1b93c5fe51463` |
-| 9 | `theorem` | [image_cast_int_Ioi](../../../../../NumberTheory/ElementaryNumberTheory/SetInterval.lean/declarations/image-cast-int-ioi.md) | 48 | `result-track:537b3c32ccf609cc1e5158a752959491f368851eabb9713cd98efdef4a4cfd13` |
+| 1 | `theorem` | [range_cast_int](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/SetInterval.lean/declarations/range-cast-int.md) | 24 | `result-track:4f05930e56ef1cfb18766275161814b8f0a5fdbf29ce068ae6dff31da15bca22` |
+| 2 | `theorem` | [image_cast_int_Icc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/SetInterval.lean/declarations/image-cast-int-icc.md) | 27 | `result-track:609796ec95fd0ad06721350eceba9c9e37e30d65a5e782a18130749ad8e17703` |
+| 3 | `theorem` | [image_cast_int_Ico](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/SetInterval.lean/declarations/image-cast-int-ico.md) | 30 | `result-track:cc01247f6f56f1077a124b516a2661a0269af46f351141be88eaa0665696ec7f` |
+| 4 | `theorem` | [image_cast_int_Ioc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/SetInterval.lean/declarations/image-cast-int-ioc.md) | 33 | `result-track:a24635f3aebb3852f60198d9d923565d333263031a797f393c20ebea2730c5d5` |
+| 5 | `theorem` | [image_cast_int_Ioo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/SetInterval.lean/declarations/image-cast-int-ioo.md) | 36 | `result-track:b994c6430b48818fba191f549162451d7048399696a66a2fb52166e0c5150ebe` |
+| 6 | `theorem` | [image_cast_int_Iic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/SetInterval.lean/declarations/image-cast-int-iic.md) | 39 | `result-track:30f775eed178a41c8c099f6adeb1aca82627393ff592dd05ae5fe9203962d52f` |
+| 7 | `theorem` | [image_cast_int_Iio](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/SetInterval.lean/declarations/image-cast-int-iio.md) | 42 | `result-track:a65ae094e55e137ad453815d63ba4d31c5e9548681a07813632af73bb3b6fc3e` |
+| 8 | `theorem` | [image_cast_int_Ici](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/SetInterval.lean/declarations/image-cast-int-ici.md) | 45 | `result-track:90bca84770d3903caf49469ea3a70d84ebe3396d2bb1e07759b1b93c5fe51463` |
+| 9 | `theorem` | [image_cast_int_Ioi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/SetInterval.lean/declarations/image-cast-int-ioi.md) | 48 | `result-track:537b3c32ccf609cc1e5158a752959491f368851eabb9713cd98efdef4a4cfd13` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

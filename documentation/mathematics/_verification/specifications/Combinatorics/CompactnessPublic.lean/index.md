@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/CompactnessPublic.lean/index.md) · [Full source](../../../../Combinatorics/CompactnessPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CompactnessPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CompactnessPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Finset.rado_selection](../../../../Combinatorics/CompactnessPublic.lean/declarations/finset-rado-selection.md) | 67 | `result-track:364cc8e40d586b034a7168503e6c15314f836c70b5d2f79b3c21fe98afd6763e` |
-| 2 | `theorem` | [Finset.rado_selection_subtype](../../../../Combinatorics/CompactnessPublic.lean/declarations/finset-rado-selection-subtype.md) | 91 | `result-track:7293125c2c61ecddd77e669f0ae231e19f43e1828db61190b372df93a613b1b0` |
-| 3 | `theorem` | [Set.Finite.rado_selection](../../../../Combinatorics/CompactnessPublic.lean/declarations/set-finite-rado-selection.md) | 107 | `result-track:47dc96891f22e8b815fcd8b359be75d8256809d79f34adb4bf938bc1f6d4a34e` |
-| 4 | `theorem` | [Set.Finite.rado_selection_subtype](../../../../Combinatorics/CompactnessPublic.lean/declarations/set-finite-rado-selection-subtype.md) | 122 | `result-track:c0aec88b028a77e7b526ffbfc08800b3967fc14388b55dec9139d212d6b1cbe0` |
+| 1 | `theorem` | [Finset.rado_selection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CompactnessPublic.lean/declarations/finset-rado-selection.md) | 67 | `result-track:364cc8e40d586b034a7168503e6c15314f836c70b5d2f79b3c21fe98afd6763e` |
+| 2 | `theorem` | [Finset.rado_selection_subtype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CompactnessPublic.lean/declarations/finset-rado-selection-subtype.md) | 91 | `result-track:7293125c2c61ecddd77e669f0ae231e19f43e1828db61190b372df93a613b1b0` |
+| 3 | `theorem` | [Set.Finite.rado_selection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CompactnessPublic.lean/declarations/set-finite-rado-selection.md) | 107 | `result-track:47dc96891f22e8b815fcd8b359be75d8256809d79f34adb4bf938bc1f6d4a34e` |
+| 4 | `theorem` | [Set.Finite.rado_selection_subtype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CompactnessPublic.lean/declarations/set-finite-rado-selection-subtype.md) | 122 | `result-track:c0aec88b028a77e7b526ffbfc08800b3967fc14388b55dec9139d212d6b1cbe0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

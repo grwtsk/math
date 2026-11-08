@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StructuredArrowFinal.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StructuredArrowFinal.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StructuredArrowFinal.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StructuredArrowFinal.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [final_of_final_costructuredArrowToOver_small](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StructuredArrowFinal.lean/declarations/final-of-final-costructuredarrowtoover-small.md) | 34 | `result-track:09a3d7886b350b4b26b6179d4fce8dd23e8a970d248b9ddebcfe49012b9e6a77` |
-| 2 | `theorem` | [final_of_final_costructuredArrowToOver](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StructuredArrowFinal.lean/declarations/final-of-final-costructuredarrowtoover.md) | 68 | `result-track:3d170d4aabbd9f42ce4b5fdd80c4dc2c1985a29676e8d06e3a9bda40400ea6f3` |
+| 1 | `lemma` | [final_of_final_costructuredArrowToOver_small](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StructuredArrowFinal.lean/declarations/final-of-final-costructuredarrowtoover-small.md) | 34 | `result-track:09a3d7886b350b4b26b6179d4fce8dd23e8a970d248b9ddebcfe49012b9e6a77` |
+| 2 | `theorem` | [final_of_final_costructuredArrowToOver](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StructuredArrowFinal.lean/declarations/final-of-final-costructuredarrowtoover.md) | 68 | `result-track:3d170d4aabbd9f42ce4b5fdd80c4dc2c1985a29676e8d06e3a9bda40400ea6f3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

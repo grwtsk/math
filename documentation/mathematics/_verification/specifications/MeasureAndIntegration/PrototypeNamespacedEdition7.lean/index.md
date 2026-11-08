@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/PrototypeNamespacedEdition7.lean/index.md) · [Full source](../../../../MeasureAndIntegration/PrototypeNamespacedEdition7.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PrototypeNamespacedEdition7.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PrototypeNamespacedEdition7.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [pairedTailTest_eq_balanced_phase_prefix](../../../../MeasureAndIntegration/PrototypeNamespacedEdition7.lean/declarations/pairedtailtest-eq-balanced-phase-prefix.md) | 34 | `result-track:2f30930cf4c78fb00d8f478e582e07bb084c0d0792fd8b5ff70d9ebdc4be9856` |
-| 2 | `theorem` | [exists_pairedTailTest_pos](../../../../MeasureAndIntegration/PrototypeNamespacedEdition7.lean/declarations/exists-pairedtailtest-pos.md) | 55 | `result-track:25642d546790cb49c6473196998e0c17f2ee0638f1cb3033aa4bd99ed910cedc` |
-| 3 | `theorem` | [pairedTailTest_early_point_neg](../../../../MeasureAndIntegration/PrototypeNamespacedEdition7.lean/declarations/pairedtailtest-early-point-neg.md) | 75 | `result-track:1a8e9be77e112e8b08997b3d2a007bcc95b756f43a167d46938a839db933eca4` |
-| 4 | `theorem` | [exists_pairedTailTest_neg](../../../../MeasureAndIntegration/PrototypeNamespacedEdition7.lean/declarations/exists-pairedtailtest-neg.md) | 81 | `result-track:aaf44f92b5bd717a28a35ea1aaa3a7dabefaf12200d351565fcd77728f294180` |
-| 5 | `theorem` | [pairedTailTest_has_both_signs](../../../../MeasureAndIntegration/PrototypeNamespacedEdition7.lean/declarations/pairedtailtest-has-both-signs.md) | 86 | `result-track:04f9f0d8a39b127da7c109599490dd251656c4c2c6fc55b615603d236b44358f` |
-| 6 | `theorem` | [pairedTailTest_not_nonneg_on](../../../../MeasureAndIntegration/PrototypeNamespacedEdition7.lean/declarations/pairedtailtest-not-nonneg-on.md) | 92 | `result-track:ce61df581362f888211797ef53e1f67cf872c2df204acd90eb63feab232fae58` |
-| 7 | `theorem` | [pairedTailTest_not_nonpos_on](../../../../MeasureAndIntegration/PrototypeNamespacedEdition7.lean/declarations/pairedtailtest-not-nonpos-on.md) | 100 | `result-track:33955a6077a7e1812d8089ae8a879de17ed97ed431f7d6742b4c6f731ed5ddc5` |
+| 1 | `theorem` | [pairedTailTest_eq_balanced_phase_prefix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PrototypeNamespacedEdition7.lean/declarations/pairedtailtest-eq-balanced-phase-prefix.md) | 34 | `result-track:2f30930cf4c78fb00d8f478e582e07bb084c0d0792fd8b5ff70d9ebdc4be9856` |
+| 2 | `theorem` | [exists_pairedTailTest_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PrototypeNamespacedEdition7.lean/declarations/exists-pairedtailtest-pos.md) | 55 | `result-track:25642d546790cb49c6473196998e0c17f2ee0638f1cb3033aa4bd99ed910cedc` |
+| 3 | `theorem` | [pairedTailTest_early_point_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PrototypeNamespacedEdition7.lean/declarations/pairedtailtest-early-point-neg.md) | 75 | `result-track:1a8e9be77e112e8b08997b3d2a007bcc95b756f43a167d46938a839db933eca4` |
+| 4 | `theorem` | [exists_pairedTailTest_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PrototypeNamespacedEdition7.lean/declarations/exists-pairedtailtest-neg.md) | 81 | `result-track:aaf44f92b5bd717a28a35ea1aaa3a7dabefaf12200d351565fcd77728f294180` |
+| 5 | `theorem` | [pairedTailTest_has_both_signs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PrototypeNamespacedEdition7.lean/declarations/pairedtailtest-has-both-signs.md) | 86 | `result-track:04f9f0d8a39b127da7c109599490dd251656c4c2c6fc55b615603d236b44358f` |
+| 6 | `theorem` | [pairedTailTest_not_nonneg_on](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PrototypeNamespacedEdition7.lean/declarations/pairedtailtest-not-nonneg-on.md) | 92 | `result-track:ce61df581362f888211797ef53e1f67cf872c2df204acd90eb63feab232fae58` |
+| 7 | `theorem` | [pairedTailTest_not_nonpos_on](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PrototypeNamespacedEdition7.lean/declarations/pairedtailtest-not-nonpos-on.md) | 100 | `result-track:33955a6077a7e1812d8089ae8a879de17ed97ed431f7d6742b4c6f731ed5ddc5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

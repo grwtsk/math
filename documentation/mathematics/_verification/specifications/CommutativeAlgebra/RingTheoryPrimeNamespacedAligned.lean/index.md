@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/RingTheoryPrimeNamespacedAligned.lean/index.md) · [Full source](../../../../CommutativeAlgebra/RingTheoryPrimeNamespacedAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryPrimeNamespacedAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryPrimeNamespacedAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [mul_eq_mul_prime_prod](../../../../CommutativeAlgebra/RingTheoryPrimeNamespacedAligned.lean/declarations/mul-eq-mul-prime-prod.md) | 36 | `result-track:81e7822ba6a38f97fd7c5c72ae12e48d4cb640ab4214a872e6c4928b672aacab` |
-| 2 | `theorem` | [mul_eq_mul_prime_pow](../../../../CommutativeAlgebra/RingTheoryPrimeNamespacedAligned.lean/declarations/mul-eq-mul-prime-pow.md) | 60 | `result-track:bbb48463c858931c58192e8a29b3dcb1c0efec6263be2ad8868f35232348d9ad` |
-| 3 | `theorem` | [Prime.neg](../../../../CommutativeAlgebra/RingTheoryPrimeNamespacedAligned.lean/declarations/prime-neg.md) | 74 | `result-track:89755152622c28ab4564155f5c915e85436e02e4d896623ed4338f5d63984be0` |
-| 4 | `theorem` | [Prime.abs](../../../../CommutativeAlgebra/RingTheoryPrimeNamespacedAligned.lean/declarations/prime-abs.md) | 79 | `result-track:3bf26c03d4b6c8dbd25466c4464c0e76eba670663bb24b1ecdf4736dea7944da` |
+| 1 | `theorem` | [mul_eq_mul_prime_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryPrimeNamespacedAligned.lean/declarations/mul-eq-mul-prime-prod.md) | 36 | `result-track:81e7822ba6a38f97fd7c5c72ae12e48d4cb640ab4214a872e6c4928b672aacab` |
+| 2 | `theorem` | [mul_eq_mul_prime_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryPrimeNamespacedAligned.lean/declarations/mul-eq-mul-prime-pow.md) | 60 | `result-track:bbb48463c858931c58192e8a29b3dcb1c0efec6263be2ad8868f35232348d9ad` |
+| 3 | `theorem` | [Prime.neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryPrimeNamespacedAligned.lean/declarations/prime-neg.md) | 74 | `result-track:89755152622c28ab4564155f5c915e85436e02e4d896623ed4338f5d63984be0` |
+| 4 | `theorem` | [Prime.abs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryPrimeNamespacedAligned.lean/declarations/prime-abs.md) | 79 | `result-track:3bf26c03d4b6c8dbd25466c4464c0e76eba670663bb24b1ecdf4736dea7944da` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/ScanPerturbedConnectionAndLoopEquality.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/ScanPerturbedConnectionAndLoopEquality.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ScanPerturbedConnectionAndLoopEquality.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ScanPerturbedConnectionAndLoopEquality.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -48,7 +48,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 - `Folder.Cellular.Phase` — import line 19; external provider; requires a separately pinned dependency.
 - `Folder.Cellular.ScanOrder` — import line 20; external provider; requires a separately pinned dependency.
-- [Cochains Indexed Paths And Integral Proofs](../../../../../Combinatorics/GraphTheory/CochainsIndexedPathsAndIntegralProofs.lean/index.md) — import line 22; pinned internal source present.
+- [Cochains Indexed Paths And Integral Proofs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/CochainsIndexedPathsAndIntegralProofs.lean/index.md) — import line 22; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [phaseConnection](../../../../../Combinatorics/GraphTheory/ScanPerturbedConnectionAndLoopEquality.lean/declarations/phaseconnection.md) | 40 | `declaration-track:87581bd175aa240fa5e61d9529c494a64b0127496a47584544eecd3d056a60ee` |
-| 2 | `theorem` | [phaseConnection_loopIntegral_eq_scan](../../../../../Combinatorics/GraphTheory/ScanPerturbedConnectionAndLoopEquality.lean/declarations/phaseconnection-loopintegral-eq-scan.md) | 46 | `result-track:b60b460eebea7d37a6f4a73186984e450fe312c43207c6e9f26eef85854d2e8a` |
+| 1 | `def` | [phaseConnection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ScanPerturbedConnectionAndLoopEquality.lean/declarations/phaseconnection.md) | 40 | `declaration-track:87581bd175aa240fa5e61d9529c494a64b0127496a47584544eecd3d056a60ee` |
+| 2 | `theorem` | [phaseConnection_loopIntegral_eq_scan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ScanPerturbedConnectionAndLoopEquality.lean/declarations/phaseconnection-loopintegral-eq-scan.md) | 46 | `result-track:b60b460eebea7d37a6f4a73186984e450fe312c43207c6e9f26eef85854d2e8a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

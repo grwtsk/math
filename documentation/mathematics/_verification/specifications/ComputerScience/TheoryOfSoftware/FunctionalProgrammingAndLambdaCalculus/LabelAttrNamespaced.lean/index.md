@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LabelAttrNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LabelAttrNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LabelAttrNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LabelAttrNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [LabelExtension](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LabelAttrNamespaced.lean/declarations/labelextension.md) | 40 | `declaration-track:ac45f08a5f92ce79036f30a6ce1ab482a52d772120b5b2320eded4e2aff2b254` |
-| 2 | `abbrev` | [LabelExtensionMap](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LabelAttrNamespaced.lean/declarations/labelextensionmap.md) | 43 | `declaration-track:360aa48e9be5d4391dd5a56d2164fd157a5b5dc7bc634c5d2a5329192ee66a71` |
-| 3 | `initialize` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LabelAttrNamespaced.lean/declarations/initialize.md) | 46 | `declaration-track:bfd12577a0dfd6e6b02793e86870e3f7acec2368c568a348689b42128e58e8eb` |
-| 4 | `def` | [mkLabelExt](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LabelAttrNamespaced.lean/declarations/mklabelext.md) | 49 | `declaration-track:5726bbbb0bf7fae381d0102048fb6a57ff3be19004ce5edbc44510e67949c081` |
-| 5 | `def` | [mkLabelAttr](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LabelAttrNamespaced.lean/declarations/mklabelattr.md) | 57 | `declaration-track:a67e30886288e47667fe1fff4ead00458de34b4e810b278e713022080019476e` |
-| 6 | `def` | [registerLabelAttr](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LabelAttrNamespaced.lean/declarations/registerlabelattr.md) | 77 | `declaration-track:b0e567310a7c5b17157d587cd1a2c037518c159b0c6d805092f5259348407c1f` |
-| 7 | `macro` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LabelAttrNamespaced.lean/declarations/macro.md) | 88 | `declaration-track:1f7730953618a0123e236fa5342f23121e17991711ead717f6f89aed4b67f001` |
-| 8 | `def` | [labelled](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LabelAttrNamespaced.lean/declarations/labelled.md) | 100 | `declaration-track:d9a4513d2e9558f05783687954754ef5f7c35d7b19bdc50589934f6a8bd250a8` |
+| 1 | `abbrev` | [LabelExtension](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LabelAttrNamespaced.lean/declarations/labelextension.md) | 40 | `declaration-track:ac45f08a5f92ce79036f30a6ce1ab482a52d772120b5b2320eded4e2aff2b254` |
+| 2 | `abbrev` | [LabelExtensionMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LabelAttrNamespaced.lean/declarations/labelextensionmap.md) | 43 | `declaration-track:360aa48e9be5d4391dd5a56d2164fd157a5b5dc7bc634c5d2a5329192ee66a71` |
+| 3 | `initialize` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LabelAttrNamespaced.lean/declarations/initialize.md) | 46 | `declaration-track:bfd12577a0dfd6e6b02793e86870e3f7acec2368c568a348689b42128e58e8eb` |
+| 4 | `def` | [mkLabelExt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LabelAttrNamespaced.lean/declarations/mklabelext.md) | 49 | `declaration-track:5726bbbb0bf7fae381d0102048fb6a57ff3be19004ce5edbc44510e67949c081` |
+| 5 | `def` | [mkLabelAttr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LabelAttrNamespaced.lean/declarations/mklabelattr.md) | 57 | `declaration-track:a67e30886288e47667fe1fff4ead00458de34b4e810b278e713022080019476e` |
+| 6 | `def` | [registerLabelAttr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LabelAttrNamespaced.lean/declarations/registerlabelattr.md) | 77 | `declaration-track:b0e567310a7c5b17157d587cd1a2c037518c159b0c6d805092f5259348407c1f` |
+| 7 | `macro` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LabelAttrNamespaced.lean/declarations/macro.md) | 88 | `declaration-track:1f7730953618a0123e236fa5342f23121e17991711ead717f6f89aed4b67f001` |
+| 8 | `def` | [labelled](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LabelAttrNamespaced.lean/declarations/labelled.md) | 100 | `declaration-track:d9a4513d2e9558f05783687954754ef5f7c35d7b19bdc50589934f6a8bd250a8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

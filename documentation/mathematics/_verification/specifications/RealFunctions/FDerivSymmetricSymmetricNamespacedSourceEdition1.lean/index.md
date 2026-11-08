@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/FDerivSymmetricSymmetricNamespacedSourceEdition1.lean/index.md) · [Full source](../../../../RealFunctions/FDerivSymmetricSymmetricNamespacedSourceEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FDerivSymmetricSymmetricNamespacedSourceEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FDerivSymmetricSymmetricNamespacedSourceEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Convex.taylor_approx_two_segment](../../../../RealFunctions/FDerivSymmetricSymmetricNamespacedSourceEdition1.lean/declarations/convex-taylor-approx-two-segment.md) | 77 | `result-track:54b40a09408baccff50051dcfb4ff12e76afd0d854102192d475bcbcbef5ee46` |
-| 2 | `theorem` | [Convex.isLittleO_alternate_sum_square](../../../../RealFunctions/FDerivSymmetricSymmetricNamespacedSourceEdition1.lean/declarations/convex-islittleo-alternate-sum-square.md) | 188 | `result-track:fe59bc1d42dd5000bd23dd89c51d3247176fc1293664ed5f904f8c2f6b9389d8` |
-| 3 | `theorem` | [Convex.second_derivative_within_at_symmetric_of_mem_interior](../../../../RealFunctions/FDerivSymmetricSymmetricNamespacedSourceEdition1.lean/declarations/convex-second-derivative-within-at-symmetric-of-mem-interior.md) | 242 | `result-track:86a42f9b67f77b91c03961bf46a85c300a118681fd07fa6522ee0b7237e23d56` |
-| 4 | `theorem` | [Convex.second_derivative_within_at_symmetric](../../../../RealFunctions/FDerivSymmetricSymmetricNamespacedSourceEdition1.lean/declarations/convex-second-derivative-within-at-symmetric.md) | 267 | `result-track:182b22c427dccbe652525016861a79df5ab30d4d1e19749c85e91d76981757c6` |
-| 5 | `theorem` | [second_derivative_symmetric_of_eventually](../../../../RealFunctions/FDerivSymmetricSymmetricNamespacedSourceEdition1.lean/declarations/second-derivative-symmetric-of-eventually.md) | 317 | `result-track:f3cd323f7b51dd3658c8b2c761526e2bcc317a1ca1423288ebfba4e3e88acb30` |
-| 6 | `theorem` | [second_derivative_symmetric](../../../../RealFunctions/FDerivSymmetricSymmetricNamespacedSourceEdition1.lean/declarations/second-derivative-symmetric.md) | 330 | `result-track:74a4507c7fe250ae3f4bd088bed0a74372c795e0415fd188b97865f8a4015bbb` |
+| 1 | `theorem` | [Convex.taylor_approx_two_segment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FDerivSymmetricSymmetricNamespacedSourceEdition1.lean/declarations/convex-taylor-approx-two-segment.md) | 77 | `result-track:54b40a09408baccff50051dcfb4ff12e76afd0d854102192d475bcbcbef5ee46` |
+| 2 | `theorem` | [Convex.isLittleO_alternate_sum_square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FDerivSymmetricSymmetricNamespacedSourceEdition1.lean/declarations/convex-islittleo-alternate-sum-square.md) | 188 | `result-track:fe59bc1d42dd5000bd23dd89c51d3247176fc1293664ed5f904f8c2f6b9389d8` |
+| 3 | `theorem` | [Convex.second_derivative_within_at_symmetric_of_mem_interior](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FDerivSymmetricSymmetricNamespacedSourceEdition1.lean/declarations/convex-second-derivative-within-at-symmetric-of-mem-interior.md) | 242 | `result-track:86a42f9b67f77b91c03961bf46a85c300a118681fd07fa6522ee0b7237e23d56` |
+| 4 | `theorem` | [Convex.second_derivative_within_at_symmetric](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FDerivSymmetricSymmetricNamespacedSourceEdition1.lean/declarations/convex-second-derivative-within-at-symmetric.md) | 267 | `result-track:182b22c427dccbe652525016861a79df5ab30d4d1e19749c85e91d76981757c6` |
+| 5 | `theorem` | [second_derivative_symmetric_of_eventually](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FDerivSymmetricSymmetricNamespacedSourceEdition1.lean/declarations/second-derivative-symmetric-of-eventually.md) | 317 | `result-track:f3cd323f7b51dd3658c8b2c761526e2bcc317a1ca1423288ebfba4e3e88acb30` |
+| 6 | `theorem` | [second_derivative_symmetric](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FDerivSymmetricSymmetricNamespacedSourceEdition1.lean/declarations/second-derivative-symmetric.md) | 330 | `result-track:74a4507c7fe250ae3f4bd088bed0a74372c795e0415fd188b97865f8a4015bbb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

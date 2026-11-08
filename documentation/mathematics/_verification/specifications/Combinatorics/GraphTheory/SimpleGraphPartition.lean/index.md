@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/SimpleGraphPartition.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/SimpleGraphPartition.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/SimpleGraphPartition.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/SimpleGraphPartition.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,19 +57,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Partition](../../../../../Combinatorics/GraphTheory/SimpleGraphPartition.lean/declarations/partition.md) | 58 | `declaration-track:26b7ca572d0da7aff4cd7ac4adce5f540625e9484f6ad7c4c054305e11f0b2a3` |
-| 2 | `def` | [Partition.PartsCardLe](../../../../../Combinatorics/GraphTheory/SimpleGraphPartition.lean/declarations/partition-partscardle.md) | 69 | `declaration-track:15c8067de09c6381294ca76b13e35ab1ec1107b2dee7d6e3593a49f37e3cff2f` |
-| 3 | `def` | [Partitionable](../../../../../Combinatorics/GraphTheory/SimpleGraphPartition.lean/declarations/partitionable.md) | 74 | `declaration-track:ca3685a4af1528d2fabc60b5b7d578a7ee0d6e82175a171a462cc720c3bc71c1` |
-| 4 | `def` | [partOfVertex](../../../../../Combinatorics/GraphTheory/SimpleGraphPartition.lean/declarations/partofvertex.md) | 82 | `declaration-track:47f04dcd720cebd9fc5a040cbf86e6ebfb732e3631edd9d2f4f7769f41726c54` |
-| 5 | `theorem` | [partOfVertex_mem](../../../../../Combinatorics/GraphTheory/SimpleGraphPartition.lean/declarations/partofvertex-mem.md) | 84 | `result-track:e9955921488aaaaef7d18acf0c28d790812b28aa49a7feff600ce0ebc70ca38d` |
-| 6 | `theorem` | [mem_partOfVertex](../../../../../Combinatorics/GraphTheory/SimpleGraphPartition.lean/declarations/mem-partofvertex.md) | 88 | `result-track:26dd0236346311401078eb7daea686eb9bfc7fcd9ab02f38e7ad1c320fc7848c` |
-| 7 | `theorem` | [partOfVertex_ne_of_adj](../../../../../Combinatorics/GraphTheory/SimpleGraphPartition.lean/declarations/partofvertex-ne-of-adj.md) | 92 | `result-track:cd089832f52048b58619451f5981c43d6e25e24c9aa0781f8e59c308f4f4df0f` |
-| 8 | `def` | [toColoring](../../../../../Combinatorics/GraphTheory/SimpleGraphPartition.lean/declarations/tocoloring-source-edition-2.md) | 100 | `declaration-track:fa7d24fbf6bc464812788bee355e064b68de46e08306cfe4850fc5c494bdc3cb` |
-| 9 | `def` | [toColoring'](../../../../../Combinatorics/GraphTheory/SimpleGraphPartition.lean/declarations/tocoloring.md) | 106 | `declaration-track:4bfe8ba1099ef3de8f31fdeb5efdf8f8d921b10ac8db805683b40501ebdf9a51` |
-| 10 | `theorem` | [colorable](../../../../../Combinatorics/GraphTheory/SimpleGraphPartition.lean/declarations/colorable.md) | 109 | `result-track:6e3d6a7c7d93486b49fc052b9b52217eb243982e874d848fb72971c360813a80` |
-| 11 | `def` | [Coloring.toPartition](../../../../../Combinatorics/GraphTheory/SimpleGraphPartition.lean/declarations/coloring-topartition.md) | 118 | `declaration-track:983fdf6ff197d631a4302acf0574a3f9211e81808961b2239ac41f567908a871` |
-| 12 | `instance` | [(anonymous)](../../../../../Combinatorics/GraphTheory/SimpleGraphPartition.lean/declarations/instance.md) | 127 | `declaration-track:731f4fe59ee01541273e9796c9810cdf5aa33ba003ed13092abe8e0dc5133b4e` |
-| 13 | `theorem` | [partitionable_iff_colorable](../../../../../Combinatorics/GraphTheory/SimpleGraphPartition.lean/declarations/partitionable-iff-colorable.md) | 129 | `result-track:a9d369f849176521259ad0746a2b270bbf2ab24de8d55092567daa14b3971c5f` |
+| 1 | `structure` | [Partition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/SimpleGraphPartition.lean/declarations/partition.md) | 58 | `declaration-track:26b7ca572d0da7aff4cd7ac4adce5f540625e9484f6ad7c4c054305e11f0b2a3` |
+| 2 | `def` | [Partition.PartsCardLe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/SimpleGraphPartition.lean/declarations/partition-partscardle.md) | 69 | `declaration-track:15c8067de09c6381294ca76b13e35ab1ec1107b2dee7d6e3593a49f37e3cff2f` |
+| 3 | `def` | [Partitionable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/SimpleGraphPartition.lean/declarations/partitionable.md) | 74 | `declaration-track:ca3685a4af1528d2fabc60b5b7d578a7ee0d6e82175a171a462cc720c3bc71c1` |
+| 4 | `def` | [partOfVertex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/SimpleGraphPartition.lean/declarations/partofvertex.md) | 82 | `declaration-track:47f04dcd720cebd9fc5a040cbf86e6ebfb732e3631edd9d2f4f7769f41726c54` |
+| 5 | `theorem` | [partOfVertex_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/SimpleGraphPartition.lean/declarations/partofvertex-mem.md) | 84 | `result-track:e9955921488aaaaef7d18acf0c28d790812b28aa49a7feff600ce0ebc70ca38d` |
+| 6 | `theorem` | [mem_partOfVertex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/SimpleGraphPartition.lean/declarations/mem-partofvertex.md) | 88 | `result-track:26dd0236346311401078eb7daea686eb9bfc7fcd9ab02f38e7ad1c320fc7848c` |
+| 7 | `theorem` | [partOfVertex_ne_of_adj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/SimpleGraphPartition.lean/declarations/partofvertex-ne-of-adj.md) | 92 | `result-track:cd089832f52048b58619451f5981c43d6e25e24c9aa0781f8e59c308f4f4df0f` |
+| 8 | `def` | [toColoring](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/SimpleGraphPartition.lean/declarations/tocoloring-source-edition-2.md) | 100 | `declaration-track:fa7d24fbf6bc464812788bee355e064b68de46e08306cfe4850fc5c494bdc3cb` |
+| 9 | `def` | [toColoring'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/SimpleGraphPartition.lean/declarations/tocoloring.md) | 106 | `declaration-track:4bfe8ba1099ef3de8f31fdeb5efdf8f8d921b10ac8db805683b40501ebdf9a51` |
+| 10 | `theorem` | [colorable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/SimpleGraphPartition.lean/declarations/colorable.md) | 109 | `result-track:6e3d6a7c7d93486b49fc052b9b52217eb243982e874d848fb72971c360813a80` |
+| 11 | `def` | [Coloring.toPartition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/SimpleGraphPartition.lean/declarations/coloring-topartition.md) | 118 | `declaration-track:983fdf6ff197d631a4302acf0574a3f9211e81808961b2239ac41f567908a871` |
+| 12 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/SimpleGraphPartition.lean/declarations/instance.md) | 127 | `declaration-track:731f4fe59ee01541273e9796c9810cdf5aa33ba003ed13092abe8e0dc5133b4e` |
+| 13 | `theorem` | [partitionable_iff_colorable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/SimpleGraphPartition.lean/declarations/partitionable-iff-colorable.md) | 129 | `result-track:a9d369f849176521259ad0746a2b270bbf2ab24de8d55092567daa14b3971c5f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/MatrixMeasurableSpacePublic.lean/index.md) · [Full source](../../../../FunctionalAnalysis/MatrixMeasurableSpacePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/MatrixMeasurableSpacePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/MatrixMeasurableSpacePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,18 +57,18 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../FunctionalAnalysis/MatrixMeasurableSpacePublic.lean/declarations/instance.md) | 26 | `declaration-track:0cc48b6b2fc35e734282451bd6baaeac0d230773fd5d70f8b7c7709a317f7e97` |
-| 2 | `lemma` | [_root_.Measurable.eval_matrix](../../../../FunctionalAnalysis/MatrixMeasurableSpacePublic.lean/declarations/root-measurable-eval-matrix.md) | 30 | `result-track:e5ac4b285012b9c0b25600821306ffcd95caa73ad6cb138e6d013cba538d54bb` |
-| 3 | `lemma` | [_root_.Measurable.of_eval_matrix](../../../../FunctionalAnalysis/MatrixMeasurableSpacePublic.lean/declarations/root-measurable-of-eval-matrix.md) | 33 | `result-track:7c0be8a05775759194017b7c8fe2c084fa662bdafd70da080f48fb287eb114ba` |
-| 4 | `lemma` | [measurable_iff](../../../../FunctionalAnalysis/MatrixMeasurableSpacePublic.lean/declarations/measurable-iff.md) | 37 | `result-track:d22a5ea33e0bd9fe89b25d8006c9a5f8736744cd5417ff21a3d2e78ba2d2ab7a` |
-| 5 | `lemma` | [measurable_apply](../../../../FunctionalAnalysis/MatrixMeasurableSpacePublic.lean/declarations/measurable-apply.md) | 42 | `result-track:355501f044cacb67ce7472fb1b740144b498bd19110c99f822ed03810f6280ff` |
-| 6 | `lemma` | [measurable_of](../../../../FunctionalAnalysis/MatrixMeasurableSpacePublic.lean/declarations/measurable-of.md) | 52 | `result-track:01af2e5968c8e0a2096f1af58f53aa0eb560bd27976dfe4fc77e6ad03abd3527` |
-| 7 | `instance` | [(anonymous)](../../../../FunctionalAnalysis/MatrixMeasurableSpacePublic.lean/declarations/instance-source-edition-2.md) | 55 | `declaration-track:6790c18e51cb6ff4385d8dcaa0761e04f89bfd6c6e88e1d1d7c8f921087080fb` |
-| 8 | `def` | [ofMeasurableEquiv](../../../../FunctionalAnalysis/MatrixMeasurableSpacePublic.lean/declarations/ofmeasurableequiv.md) | 59 | `declaration-track:8680b8762b25213e1fdb186176c6e93e2e882b986eaba713788e8e0cba4498e7` |
-| 9 | `lemma` | [coe_ofMeasurableEquiv](../../../../FunctionalAnalysis/MatrixMeasurableSpacePublic.lean/declarations/coe-ofmeasurableequiv.md) | 64 | `result-track:9f925a73f9c0ba4040c0184b0d6c693e7396d899e09fca2d9d62a259f62cde01` |
-| 10 | `lemma` | [coe_ofMeasurableEquiv_symm](../../../../FunctionalAnalysis/MatrixMeasurableSpacePublic.lean/declarations/coe-ofmeasurableequiv-symm.md) | 66 | `result-track:76c3199fedab5343ae8569c60487f94dac9f39796724126adbfa63ece4bdc80a` |
-| 11 | `lemma` | [ofMeasurableEquiv_apply](../../../../FunctionalAnalysis/MatrixMeasurableSpacePublic.lean/declarations/ofmeasurableequiv-apply.md) | 69 | `result-track:9939eb1caf04dd246bdbae8cdda22f3e6b31b30f62ccf9ad5b97d0fdbe8d4436` |
-| 12 | `lemma` | [ofMeasurableEquiv_symm_apply](../../../../FunctionalAnalysis/MatrixMeasurableSpacePublic.lean/declarations/ofmeasurableequiv-symm-apply.md) | 73 | `result-track:7eea1309f3d8e10a6978a2a5eda898eae2e971765125a59bcef868083550386b` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/MatrixMeasurableSpacePublic.lean/declarations/instance.md) | 26 | `declaration-track:0cc48b6b2fc35e734282451bd6baaeac0d230773fd5d70f8b7c7709a317f7e97` |
+| 2 | `lemma` | [_root_.Measurable.eval_matrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/MatrixMeasurableSpacePublic.lean/declarations/root-measurable-eval-matrix.md) | 30 | `result-track:e5ac4b285012b9c0b25600821306ffcd95caa73ad6cb138e6d013cba538d54bb` |
+| 3 | `lemma` | [_root_.Measurable.of_eval_matrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/MatrixMeasurableSpacePublic.lean/declarations/root-measurable-of-eval-matrix.md) | 33 | `result-track:7c0be8a05775759194017b7c8fe2c084fa662bdafd70da080f48fb287eb114ba` |
+| 4 | `lemma` | [measurable_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/MatrixMeasurableSpacePublic.lean/declarations/measurable-iff.md) | 37 | `result-track:d22a5ea33e0bd9fe89b25d8006c9a5f8736744cd5417ff21a3d2e78ba2d2ab7a` |
+| 5 | `lemma` | [measurable_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/MatrixMeasurableSpacePublic.lean/declarations/measurable-apply.md) | 42 | `result-track:355501f044cacb67ce7472fb1b740144b498bd19110c99f822ed03810f6280ff` |
+| 6 | `lemma` | [measurable_of](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/MatrixMeasurableSpacePublic.lean/declarations/measurable-of.md) | 52 | `result-track:01af2e5968c8e0a2096f1af58f53aa0eb560bd27976dfe4fc77e6ad03abd3527` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/MatrixMeasurableSpacePublic.lean/declarations/instance-source-edition-2.md) | 55 | `declaration-track:6790c18e51cb6ff4385d8dcaa0761e04f89bfd6c6e88e1d1d7c8f921087080fb` |
+| 8 | `def` | [ofMeasurableEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/MatrixMeasurableSpacePublic.lean/declarations/ofmeasurableequiv.md) | 59 | `declaration-track:8680b8762b25213e1fdb186176c6e93e2e882b986eaba713788e8e0cba4498e7` |
+| 9 | `lemma` | [coe_ofMeasurableEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/MatrixMeasurableSpacePublic.lean/declarations/coe-ofmeasurableequiv.md) | 64 | `result-track:9f925a73f9c0ba4040c0184b0d6c693e7396d899e09fca2d9d62a259f62cde01` |
+| 10 | `lemma` | [coe_ofMeasurableEquiv_symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/MatrixMeasurableSpacePublic.lean/declarations/coe-ofmeasurableequiv-symm.md) | 66 | `result-track:76c3199fedab5343ae8569c60487f94dac9f39796724126adbfa63ece4bdc80a` |
+| 11 | `lemma` | [ofMeasurableEquiv_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/MatrixMeasurableSpacePublic.lean/declarations/ofmeasurableequiv-apply.md) | 69 | `result-track:9939eb1caf04dd246bdbae8cdda22f3e6b31b30f62ccf9ad5b97d0fdbe8d4436` |
+| 12 | `lemma` | [ofMeasurableEquiv_symm_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/MatrixMeasurableSpacePublic.lean/declarations/ofmeasurableequiv-symm-apply.md) | 73 | `result-track:7eea1309f3d8e10a6978a2a5eda898eae2e971765125a59bcef868083550386b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/UtilPublicCollectMacroExpansions.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/UtilPublicCollectMacroExpansions.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/UtilPublicCollectMacroExpansions.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/UtilPublicCollectMacroExpansions.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [collectMacroExpansions?](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/UtilPublicCollectMacroExpansions.lean/declarations/collectmacroexpansions.md) | 26 | `declaration-track:37823957bf78f42a9d23be7434c1682cd731850103f63d4ed845a903876b456d` |
-| 2 | `def` | [getDeclsByBody](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/UtilPublicCollectMacroExpansions.lean/declarations/getdeclsbybody.md) | 50 | `declaration-track:1f59bce38583eab1a93b625d0276eb94d0fd08031dd5305eef77376b00bf33f8` |
-| 3 | `def` | [getNewDecls](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/UtilPublicCollectMacroExpansions.lean/declarations/getnewdecls.md) | 68 | `declaration-track:568c17014af1d2c5c4d8810a9c2bc8946d32d4e835060f755e26c4ad45a2531a` |
+| 1 | `def` | [collectMacroExpansions?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/UtilPublicCollectMacroExpansions.lean/declarations/collectmacroexpansions.md) | 26 | `declaration-track:37823957bf78f42a9d23be7434c1682cd731850103f63d4ed845a903876b456d` |
+| 2 | `def` | [getDeclsByBody](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/UtilPublicCollectMacroExpansions.lean/declarations/getdeclsbybody.md) | 50 | `declaration-track:1f59bce38583eab1a93b625d0276eb94d0fd08031dd5305eef77376b00bf33f8` |
+| 3 | `def` | [getNewDecls](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/UtilPublicCollectMacroExpansions.lean/declarations/getnewdecls.md) | 68 | `declaration-track:568c17014af1d2c5c4d8810a9c2bc8946d32d4e835060f755e26c4ad45a2531a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

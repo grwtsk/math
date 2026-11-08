@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ProofModePublicMGoalEntails.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ProofModePublicMGoalEntails.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ProofModePublicMGoalEntails.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ProofModePublicMGoalEntails.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `syntax` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ProofModePublicMGoalEntails.lean/declarations/syntax-source-edition-2.md) | 18 | `declaration-track:f12c278c25c8383dba72fa880a9d77d426e3964f915fc1f813dca4db8124fc53` |
-| 2 | `syntax` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ProofModePublicMGoalEntails.lean/declarations/syntax.md) | 20 | `declaration-track:298a72dd65a91c1eafa9497c592b5ab9a998c3da26929f938cc3c62f20ce555e` |
-| 3 | `abbrev` | [MGoalEntails](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ProofModePublicMGoalEntails.lean/declarations/mgoalentails.md) | 24 | `declaration-track:149e584dbe5a51a282199b660af17cc3eabd0e6c4411c609c4617a7b9fe61756` |
-| 4 | `def` | [MGoalHypMarker](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ProofModePublicMGoalEntails.lean/declarations/mgoalhypmarker.md) | 28 | `declaration-track:8bdc2552a7c892a03147664013037875077aa217e7b753c3eef6cea490f1bcb1` |
+| 1 | `syntax` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ProofModePublicMGoalEntails.lean/declarations/syntax-source-edition-2.md) | 18 | `declaration-track:f12c278c25c8383dba72fa880a9d77d426e3964f915fc1f813dca4db8124fc53` |
+| 2 | `syntax` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ProofModePublicMGoalEntails.lean/declarations/syntax.md) | 20 | `declaration-track:298a72dd65a91c1eafa9497c592b5ab9a998c3da26929f938cc3c62f20ce555e` |
+| 3 | `abbrev` | [MGoalEntails](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ProofModePublicMGoalEntails.lean/declarations/mgoalentails.md) | 24 | `declaration-track:149e584dbe5a51a282199b660af17cc3eabd0e6c4411c609c4617a7b9fe61756` |
+| 4 | `def` | [MGoalHypMarker](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ProofModePublicMGoalEntails.lean/declarations/mgoalhypmarker.md) | 28 | `declaration-track:8bdc2552a7c892a03147664013037875077aa217e7b753c3eef6cea490f1bcb1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

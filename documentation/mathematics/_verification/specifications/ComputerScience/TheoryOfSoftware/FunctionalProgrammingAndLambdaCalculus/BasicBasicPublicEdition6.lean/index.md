@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicPublicEdition6.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicPublicEdition6.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicPublicEdition6.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicPublicEdition6.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Assignment.toAIGAssignment](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicPublicEdition6.lean/declarations/assignment-toaigassignment.md) | 24 | `declaration-track:1181deab9198e4710e90d31f83f58a2ae87a3b838e1bd6f9c0f58b7dc7cac26f` |
-| 2 | `theorem` | [Assignment.toAIGAssignment_apply](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicPublicEdition6.lean/declarations/assignment-toaigassignment-apply.md) | 28 | `result-track:376b773cbedf426da1d93c26674b73a9c08061a561a1381164fea4105bd4224d` |
+| 1 | `def` | [Assignment.toAIGAssignment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicPublicEdition6.lean/declarations/assignment-toaigassignment.md) | 24 | `declaration-track:1181deab9198e4710e90d31f83f58a2ae87a3b838e1bd6f9c0f58b7dc7cac26f` |
+| 2 | `theorem` | [Assignment.toAIGAssignment_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicPublicEdition6.lean/declarations/assignment-toaigassignment-apply.md) | 28 | `result-track:376b773cbedf426da1d93c26674b73a9c08061a561a1381164fea4105bd4224d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

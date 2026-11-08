@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/EndpointPositivityNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/EndpointPositivityNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/EndpointPositivityNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/EndpointPositivityNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [normalizedTest_endpoint_pos](../../../../GeneralTopology/EndpointPositivityNamespaced.lean/declarations/normalizedtest-endpoint-pos.md) | 21 | `result-track:a5d20dcb351f8b070396ea403e0c7887b599950bb47e825c37c9f66297e0f3c8` |
-| 2 | `theorem` | [sourceCorrelation_endpoint_pos](../../../../GeneralTopology/EndpointPositivityNamespaced.lean/declarations/sourcecorrelation-endpoint-pos.md) | 45 | `result-track:db0c606827232ce2f309dd966bc71bf5c1abb336c34c90fecb88a733afbb0b7e` |
-| 3 | `theorem` | [upper_product_log_lower](../../../../GeneralTopology/EndpointPositivityNamespaced.lean/declarations/upper-product-log-lower.md) | 64 | `result-track:be5aaec80866c0fd51ca6cbef9965d7e8ed667b0c1da025bc34e756a8ac3876d` |
-| 4 | `theorem` | [sourceSamplingKernel_upper_pos](../../../../GeneralTopology/EndpointPositivityNamespaced.lean/declarations/sourcesamplingkernel-upper-pos.md) | 83 | `result-track:5d97543adc45d045c0b736c4646de3b274029bd6278004386aa6a05e0c84a53d` |
+| 1 | `theorem` | [normalizedTest_endpoint_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/EndpointPositivityNamespaced.lean/declarations/normalizedtest-endpoint-pos.md) | 21 | `result-track:a5d20dcb351f8b070396ea403e0c7887b599950bb47e825c37c9f66297e0f3c8` |
+| 2 | `theorem` | [sourceCorrelation_endpoint_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/EndpointPositivityNamespaced.lean/declarations/sourcecorrelation-endpoint-pos.md) | 45 | `result-track:db0c606827232ce2f309dd966bc71bf5c1abb336c34c90fecb88a733afbb0b7e` |
+| 3 | `theorem` | [upper_product_log_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/EndpointPositivityNamespaced.lean/declarations/upper-product-log-lower.md) | 64 | `result-track:be5aaec80866c0fd51ca6cbef9965d7e8ed667b0c1da025bc34e756a8ac3876d` |
+| 4 | `theorem` | [sourceSamplingKernel_upper_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/EndpointPositivityNamespaced.lean/declarations/sourcesamplingkernel-upper-pos.md) | 83 | `result-track:5d97543adc45d045c0b736c4646de3b274029bd6278004386aa6a05e0c84a53d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

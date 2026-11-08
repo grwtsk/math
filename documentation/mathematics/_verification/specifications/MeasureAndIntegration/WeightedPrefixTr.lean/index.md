@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/WeightedPrefixTr.lean/index.md) · [Full source](../../../../MeasureAndIntegration/WeightedPrefixTr.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/WeightedPrefixTr.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/WeightedPrefixTr.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [cumulativeSum](../../../../MeasureAndIntegration/WeightedPrefixTr.lean/declarations/cumulativesum.md) | 17 | `declaration-track:6d84b130d8da9edfd95dff89b34718c442bdd289534f2bee1e94e4431e1675cc` |
-| 2 | `theorem` | [signed_sum_by_parts](../../../../MeasureAndIntegration/WeightedPrefixTr.lean/declarations/signed-sum-by-parts.md) | 22 | `result-track:c1287dcbe68a50495a59fca912d4731aeed06cccb583d6c5ec94c2ca36959c62` |
-| 3 | `theorem` | [abs_weighted_sum_le_prefix_variation](../../../../MeasureAndIntegration/WeightedPrefixTr.lean/declarations/abs-weighted-sum-le-prefix-variation.md) | 35 | `result-track:5f7c18cd71e4c247e6dba722011acd4a5964811ec102aa44cf8ce7155a6067b5` |
-| 4 | `theorem` | [weighted_actual_le_model_add_budget](../../../../MeasureAndIntegration/WeightedPrefixTr.lean/declarations/weighted-actual-le-model-add-budget.md) | 53 | `result-track:0b0cb9bc0ff765f2f96b5a71bb803bceac5ae8d1b9ba15e3fb76faa9037bf077` |
-| 5 | `theorem` | [closed_sum_eq_neg_cumulative_integral](../../../../MeasureAndIntegration/WeightedPrefixTr.lean/declarations/closed-sum-eq-neg-cumulative-integral.md) | 70 | `result-track:f963e277e506dec4e64ef25f82a7f3eef8696556501197f6c106a2d4d932a8cc` |
+| 1 | `def` | [cumulativeSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/WeightedPrefixTr.lean/declarations/cumulativesum.md) | 17 | `declaration-track:6d84b130d8da9edfd95dff89b34718c442bdd289534f2bee1e94e4431e1675cc` |
+| 2 | `theorem` | [signed_sum_by_parts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/WeightedPrefixTr.lean/declarations/signed-sum-by-parts.md) | 22 | `result-track:c1287dcbe68a50495a59fca912d4731aeed06cccb583d6c5ec94c2ca36959c62` |
+| 3 | `theorem` | [abs_weighted_sum_le_prefix_variation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/WeightedPrefixTr.lean/declarations/abs-weighted-sum-le-prefix-variation.md) | 35 | `result-track:5f7c18cd71e4c247e6dba722011acd4a5964811ec102aa44cf8ce7155a6067b5` |
+| 4 | `theorem` | [weighted_actual_le_model_add_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/WeightedPrefixTr.lean/declarations/weighted-actual-le-model-add-budget.md) | 53 | `result-track:0b0cb9bc0ff765f2f96b5a71bb803bceac5ae8d1b9ba15e3fb76faa9037bf077` |
+| 5 | `theorem` | [closed_sum_eq_neg_cumulative_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/WeightedPrefixTr.lean/declarations/closed-sum-eq-neg-cumulative-integral.md) | 70 | `result-track:f963e277e506dec4e64ef25f82a7f3eef8696556501197f6c106a2d4d932a8cc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

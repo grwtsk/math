@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/UtilWithWeakNamespace.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/UtilWithWeakNamespace.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/UtilWithWeakNamespace.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/UtilWithWeakNamespace.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [resolveNamespace](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/UtilWithWeakNamespace.lean/declarations/resolvenamespace.md) | 23 | `declaration-track:e8915d1e97dd8852bba269257c5701e132c4d91fee5f9336d46077b112584d99` |
-| 2 | `def` | [withWeakNamespace](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/UtilWithWeakNamespace.lean/declarations/withweaknamespace.md) | 30 | `declaration-track:305fc5dc2ad760d31c81961083513e34a0575c990e88cc636323a708aa4138e3` |
-| 3 | `elab` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/UtilWithWeakNamespace.lean/declarations/elab.md) | 38 | `declaration-track:b2702cfc1f655ac2700fd9f5924659932934aa589b0267c569564d46a4761cd1` |
+| 1 | `def` | [resolveNamespace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/UtilWithWeakNamespace.lean/declarations/resolvenamespace.md) | 23 | `declaration-track:e8915d1e97dd8852bba269257c5701e132c4d91fee5f9336d46077b112584d99` |
+| 2 | `def` | [withWeakNamespace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/UtilWithWeakNamespace.lean/declarations/withweaknamespace.md) | 30 | `declaration-track:305fc5dc2ad760d31c81961083513e34a0575c990e88cc636323a708aa4138e3` |
+| 3 | `elab` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/UtilWithWeakNamespace.lean/declarations/elab.md) | 38 | `declaration-track:b2702cfc1f655ac2700fd9f5924659932934aa589b0267c569564d46a4761cd1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

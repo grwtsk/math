@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/ToSquareZero.lean/index.md) · [Full source](../../../../CommutativeAlgebra/ToSquareZero.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ToSquareZero.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ToSquareZero.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [diffToIdealOfQuotientCompEq](../../../../CommutativeAlgebra/ToSquareZero.lean/declarations/difftoidealofquotientcompeq.md) | 27 | `declaration-track:1e3c5af737aefba547256517cac10a591779c66d374d99b52ae5eb17bab61d10` |
-| 2 | `theorem` | [diffToIdealOfQuotientCompEq_apply](../../../../CommutativeAlgebra/ToSquareZero.lean/declarations/difftoidealofquotientcompeq-apply.md) | 36 | `result-track:8d50a3f7e0d9dca3c02764cea2d93786c35dbe57bd8ae2a2d332e5d9de6fbc50` |
-| 3 | `def` | [derivationToSquareZeroOfLift](../../../../CommutativeAlgebra/ToSquareZero.lean/declarations/derivationtosquarezerooflift.md) | 45 | `declaration-track:f04200b9ccd469a87213f54451c028577dec70091f3fbefdc2445b69263bd91a` |
-| 4 | `theorem` | [derivationToSquareZeroOfLift_apply](../../../../CommutativeAlgebra/ToSquareZero.lean/declarations/derivationtosquarezerooflift-apply.md) | 71 | `result-track:7e93d61f332b5b10dec2417b7f2811a4181a7379c7eb7e399b087dcbadb0f90f` |
-| 5 | `def` | [liftOfDerivationToSquareZero](../../../../CommutativeAlgebra/ToSquareZero.lean/declarations/liftofderivationtosquarezero.md) | 79 | `declaration-track:38ddff9b82027aca535746a43c10a6dad7e4d68f780e8e4f6067c19934e6d9ae` |
-| 6 | `theorem` | [liftOfDerivationToSquareZero_mk_apply](../../../../CommutativeAlgebra/ToSquareZero.lean/declarations/liftofderivationtosquarezero-mk-apply.md) | 101 | `result-track:02da5c8536555a493ed3db25557fc7078eed34228612c1f7a41cdd2cf335e7af` |
-| 7 | `theorem` | [liftOfDerivationToSquareZero_mk_apply'](../../../../CommutativeAlgebra/ToSquareZero.lean/declarations/liftofderivationtosquarezero-mk-apply-source-edition-2.md) | 108 | `result-track:4a645261e386a3b31f7057db101c0e65cfd2d6298f2a426ce56f7981ba5fde68` |
-| 8 | `def` | [derivationToSquareZeroEquivLift](../../../../CommutativeAlgebra/ToSquareZero.lean/declarations/derivationtosquarezeroequivlift.md) | 116 | `declaration-track:b60e3a2fe43c323c6a8df6f4b6e80cacc814050f4fe57ac86057f2c93fee652d` |
+| 1 | `def` | [diffToIdealOfQuotientCompEq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ToSquareZero.lean/declarations/difftoidealofquotientcompeq.md) | 27 | `declaration-track:1e3c5af737aefba547256517cac10a591779c66d374d99b52ae5eb17bab61d10` |
+| 2 | `theorem` | [diffToIdealOfQuotientCompEq_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ToSquareZero.lean/declarations/difftoidealofquotientcompeq-apply.md) | 36 | `result-track:8d50a3f7e0d9dca3c02764cea2d93786c35dbe57bd8ae2a2d332e5d9de6fbc50` |
+| 3 | `def` | [derivationToSquareZeroOfLift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ToSquareZero.lean/declarations/derivationtosquarezerooflift.md) | 45 | `declaration-track:f04200b9ccd469a87213f54451c028577dec70091f3fbefdc2445b69263bd91a` |
+| 4 | `theorem` | [derivationToSquareZeroOfLift_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ToSquareZero.lean/declarations/derivationtosquarezerooflift-apply.md) | 71 | `result-track:7e93d61f332b5b10dec2417b7f2811a4181a7379c7eb7e399b087dcbadb0f90f` |
+| 5 | `def` | [liftOfDerivationToSquareZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ToSquareZero.lean/declarations/liftofderivationtosquarezero.md) | 79 | `declaration-track:38ddff9b82027aca535746a43c10a6dad7e4d68f780e8e4f6067c19934e6d9ae` |
+| 6 | `theorem` | [liftOfDerivationToSquareZero_mk_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ToSquareZero.lean/declarations/liftofderivationtosquarezero-mk-apply.md) | 101 | `result-track:02da5c8536555a493ed3db25557fc7078eed34228612c1f7a41cdd2cf335e7af` |
+| 7 | `theorem` | [liftOfDerivationToSquareZero_mk_apply'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ToSquareZero.lean/declarations/liftofderivationtosquarezero-mk-apply-source-edition-2.md) | 108 | `result-track:4a645261e386a3b31f7057db101c0e65cfd2d6298f2a426ce56f7981ba5fde68` |
+| 8 | `def` | [derivationToSquareZeroEquivLift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ToSquareZero.lean/declarations/derivationtosquarezeroequivlift.md) | 116 | `declaration-track:b60e3a2fe43c323c6a8df6f4b6e80cacc814050f4fe57ac86057f2c93fee652d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

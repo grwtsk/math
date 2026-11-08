@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalRectangleEdgeObstructionWitness.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalRectangleEdgeObstructionWitness.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalRectangleEdgeObstructionWitness.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalRectangleEdgeObstructionWitness.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalRectangleUnitEdgeSymmetry`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalRectangleUnitEdgeSymmetry.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalRectangleUnitEdgeSymmetry`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalRectangleUnitEdgeSymmetry.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Tactic` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CanonicalRectangleEdgeWitness](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalRectangleEdgeObstructionWitness.lean/declarations/canonicalrectangleedgewitness.md) | 81 | `declaration-track:68aedf281054f1f731699a663662537bedd32cba40e8459c938086bed976a801` |
-| 2 | `theorem` | [exact_positive_count](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalRectangleEdgeObstructionWitness.lean/declarations/exact-positive-count.md) | 90 | `result-track:d0e78f43f60634a275f7e82cffb7f845bf3cdcd40bf2ff4856cf4d39730233c1` |
-| 3 | `theorem` | [count_unique](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalRectangleEdgeObstructionWitness.lean/declarations/count-unique.md) | 97 | `result-track:0ef0cf9c41ecea5f543e1049cd2e282d7a1ac84cfe10f9c8557c89feb4da8479` |
-| 4 | `theorem` | [rhThrough](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalRectangleEdgeObstructionWitness.lean/declarations/rhthrough.md) | 108 | `result-track:b418b4bd7b98559e690876568e9e4fa5f124ff25d0e81de9bcae9af5ba393134` |
-| 5 | `def` | [HasCanonicalRectangleEdgeWitness](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalRectangleEdgeObstructionWitness.lean/declarations/hascanonicalrectangleedgewitness.md) | 121 | `declaration-track:bb32bda404b06e4cdd14bd405c25cdb3e849ce527cca7c4c08ec960725f7ce34` |
-| 6 | `theorem` | [exists_exact_positive_count](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalRectangleEdgeObstructionWitness.lean/declarations/exists-exact-positive-count.md) | 126 | `result-track:8f7ea85a8426b61547e0cee07d1e08e8536ddd16693d54230c39d521af15620d` |
+| 1 | `structure` | [CanonicalRectangleEdgeWitness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalRectangleEdgeObstructionWitness.lean/declarations/canonicalrectangleedgewitness.md) | 81 | `declaration-track:68aedf281054f1f731699a663662537bedd32cba40e8459c938086bed976a801` |
+| 2 | `theorem` | [exact_positive_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalRectangleEdgeObstructionWitness.lean/declarations/exact-positive-count.md) | 90 | `result-track:d0e78f43f60634a275f7e82cffb7f845bf3cdcd40bf2ff4856cf4d39730233c1` |
+| 3 | `theorem` | [count_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalRectangleEdgeObstructionWitness.lean/declarations/count-unique.md) | 97 | `result-track:0ef0cf9c41ecea5f543e1049cd2e282d7a1ac84cfe10f9c8557c89feb4da8479` |
+| 4 | `theorem` | [rhThrough](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalRectangleEdgeObstructionWitness.lean/declarations/rhthrough.md) | 108 | `result-track:b418b4bd7b98559e690876568e9e4fa5f124ff25d0e81de9bcae9af5ba393134` |
+| 5 | `def` | [HasCanonicalRectangleEdgeWitness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalRectangleEdgeObstructionWitness.lean/declarations/hascanonicalrectangleedgewitness.md) | 121 | `declaration-track:bb32bda404b06e4cdd14bd405c25cdb3e849ce527cca7c4c08ec960725f7ce34` |
+| 6 | `theorem` | [exists_exact_positive_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalRectangleEdgeObstructionWitness.lean/declarations/exists-exact-positive-count.md) | 126 | `result-track:8f7ea85a8426b61547e0cee07d1e08e8536ddd16693d54230c39d521af15620d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/LeftResolutionTransportNamespacedPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/LeftResolutionTransportNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/LeftResolutionTransportNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/LeftResolutionTransportNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [transport](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/LeftResolutionTransportNamespacedPublic.lean/declarations/transport.md) | 41 | `declaration-track:a776bcf6109ef0917b40c4759096fdbc144eae49c8e5b3c128251b9b1f3e4583` |
-| 2 | `def` | [ofCompIso](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/LeftResolutionTransportNamespacedPublic.lean/declarations/ofcompiso.md) | 58 | `declaration-track:f12e4f4181190926e4e5cc9d5bca7166c3cb6e9e8d10e8caf5acf6a08ecbfca7` |
+| 1 | `def` | [transport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/LeftResolutionTransportNamespacedPublic.lean/declarations/transport.md) | 41 | `declaration-track:a776bcf6109ef0917b40c4759096fdbc144eae49c8e5b3c128251b9b1f3e4583` |
+| 2 | `def` | [ofCompIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/LeftResolutionTransportNamespacedPublic.lean/declarations/ofcompiso.md) | 58 | `declaration-track:f12e4f4181190926e4e5cc9d5bca7166c3cb6e9e8d10e8caf5acf6a08ecbfca7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

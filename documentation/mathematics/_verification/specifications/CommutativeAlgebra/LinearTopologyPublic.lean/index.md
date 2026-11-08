@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/LinearTopologyPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/LinearTopologyPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LinearTopologyPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LinearTopologyPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [basis](../../../../CommutativeAlgebra/LinearTopologyPublic.lean/declarations/basis.md) | 53 | `declaration-track:46302a5b2560630eced5704b2220ae86dd70e9fbf496704abd0d58f0e70b4e15` |
-| 2 | `theorem` | [mem_basis_iff](../../../../CommutativeAlgebra/LinearTopologyPublic.lean/declarations/mem-basis-iff.md) | 78 | `result-track:42fe82378797da95164405d4261689bd255313234321ea5b19b2750cb450d2df` |
-| 3 | `theorem` | [basis_le](../../../../CommutativeAlgebra/LinearTopologyPublic.lean/declarations/basis-le.md) | 84 | `result-track:cc35496ba8eb5d9887a709393f662c74674609fbd458b8d8b58dec9d8192fabb` |
-| 4 | `theorem` | [basis_le_iff](../../../../CommutativeAlgebra/LinearTopologyPublic.lean/declarations/basis-le-iff.md) | 89 | `result-track:38541e623c6e1cfa2216f5aa6f1a9ed8623b75d50b49a906b39a29809615b6d3` |
-| 5 | `lemma` | [hasBasis_nhds_zero](../../../../CommutativeAlgebra/LinearTopologyPublic.lean/declarations/hasbasis-nhds-zero.md) | 120 | `result-track:08532b16d2a2c9b6dbb547d96d4ce787dba42dba722b4a8423862f4734992d65` |
-| 6 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/LinearTopologyPublic.lean/declarations/instance.md) | 137 | `declaration-track:86a96cfe2d851f8d7b3ce47316eefbfbf07e16c5c7f201280c1c056d2ce069a0` |
-| 7 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/LinearTopologyPublic.lean/declarations/instance-source-edition-2.md) | 143 | `declaration-track:fad2b6255705bf15b0e4f477e944afceecb0a6e4dd5692a916bcf3b8f420b89b` |
-| 8 | `theorem` | [isTopologicallyNilpotent_of_constantCoeff](../../../../CommutativeAlgebra/LinearTopologyPublic.lean/declarations/istopologicallynilpotent-of-constantcoeff.md) | 147 | `result-track:b456a87b78550659a5a09c5d69d540a0d0ca99e6cdcfe74a05b5edc186ee49b1` |
-| 9 | `theorem` | [isTopologicallyNilpotent_iff_constantCoeff](../../../../CommutativeAlgebra/LinearTopologyPublic.lean/declarations/istopologicallynilpotent-iff-constantcoeff.md) | 166 | `result-track:1db219523b01674b58e716cabba281a7575b6fcf7be96a6ab6e4cb202b198a00` |
+| 1 | `def` | [basis](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LinearTopologyPublic.lean/declarations/basis.md) | 53 | `declaration-track:46302a5b2560630eced5704b2220ae86dd70e9fbf496704abd0d58f0e70b4e15` |
+| 2 | `theorem` | [mem_basis_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LinearTopologyPublic.lean/declarations/mem-basis-iff.md) | 78 | `result-track:42fe82378797da95164405d4261689bd255313234321ea5b19b2750cb450d2df` |
+| 3 | `theorem` | [basis_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LinearTopologyPublic.lean/declarations/basis-le.md) | 84 | `result-track:cc35496ba8eb5d9887a709393f662c74674609fbd458b8d8b58dec9d8192fabb` |
+| 4 | `theorem` | [basis_le_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LinearTopologyPublic.lean/declarations/basis-le-iff.md) | 89 | `result-track:38541e623c6e1cfa2216f5aa6f1a9ed8623b75d50b49a906b39a29809615b6d3` |
+| 5 | `lemma` | [hasBasis_nhds_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LinearTopologyPublic.lean/declarations/hasbasis-nhds-zero.md) | 120 | `result-track:08532b16d2a2c9b6dbb547d96d4ce787dba42dba722b4a8423862f4734992d65` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LinearTopologyPublic.lean/declarations/instance.md) | 137 | `declaration-track:86a96cfe2d851f8d7b3ce47316eefbfbf07e16c5c7f201280c1c056d2ce069a0` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LinearTopologyPublic.lean/declarations/instance-source-edition-2.md) | 143 | `declaration-track:fad2b6255705bf15b0e4f477e944afceecb0a6e4dd5692a916bcf3b8f420b89b` |
+| 8 | `theorem` | [isTopologicallyNilpotent_of_constantCoeff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LinearTopologyPublic.lean/declarations/istopologicallynilpotent-of-constantcoeff.md) | 147 | `result-track:b456a87b78550659a5a09c5d69d540a0d0ca99e6cdcfe74a05b5edc186ee49b1` |
+| 9 | `theorem` | [isTopologicallyNilpotent_iff_constantCoeff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LinearTopologyPublic.lean/declarations/istopologicallynilpotent-iff-constantcoeff.md) | 166 | `result-track:1db219523b01674b58e716cabba281a7575b6fcf7be96a6ab6e4cb202b198a00` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

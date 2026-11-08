@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ActualCriticalAbsoluteGrowthNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ActualCriticalAbsoluteGrowthNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCriticalAbsoluteGrowthNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCriticalAbsoluteGrowthNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_critical_baseline_upper_strip_lower](../../../../MeasureAndIntegration/ActualCriticalAbsoluteGrowthNamespaced.lean/declarations/actual-critical-baseline-upper-strip-lower.md) | 34 | `result-track:eb3746b1b81647322511ac967c3792999bfacfa44ae86470c619b193c6f5109c` |
-| 2 | `theorem` | [actual_critical_absolute_upper_strip_lower](../../../../MeasureAndIntegration/ActualCriticalAbsoluteGrowthNamespaced.lean/declarations/actual-critical-absolute-upper-strip-lower.md) | 78 | `result-track:14ac95a928d25c21eb72fa35b2e9d3cbf9a77b581935964b16f337f7d765ae7c` |
-| 3 | `theorem` | [actual_critical_absolute_full_lower](../../../../MeasureAndIntegration/ActualCriticalAbsoluteGrowthNamespaced.lean/declarations/actual-critical-absolute-full-lower.md) | 92 | `result-track:ae77ab0581a0fdf278d808fbec6e32f32c449ffbf210b300674b7c156336479f` |
-| 4 | `theorem` | [actual_critical_absolute_full_tendsto_atTop](../../../../MeasureAndIntegration/ActualCriticalAbsoluteGrowthNamespaced.lean/declarations/actual-critical-absolute-full-tendsto-attop.md) | 112 | `result-track:376e7514e3ab95523e52cadd6b0c2916d6366215e496e06b73011c2097b81e4d` |
+| 1 | `theorem` | [actual_critical_baseline_upper_strip_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCriticalAbsoluteGrowthNamespaced.lean/declarations/actual-critical-baseline-upper-strip-lower.md) | 34 | `result-track:eb3746b1b81647322511ac967c3792999bfacfa44ae86470c619b193c6f5109c` |
+| 2 | `theorem` | [actual_critical_absolute_upper_strip_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCriticalAbsoluteGrowthNamespaced.lean/declarations/actual-critical-absolute-upper-strip-lower.md) | 78 | `result-track:14ac95a928d25c21eb72fa35b2e9d3cbf9a77b581935964b16f337f7d765ae7c` |
+| 3 | `theorem` | [actual_critical_absolute_full_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCriticalAbsoluteGrowthNamespaced.lean/declarations/actual-critical-absolute-full-lower.md) | 92 | `result-track:ae77ab0581a0fdf278d808fbec6e32f32c449ffbf210b300674b7c156336479f` |
+| 4 | `theorem` | [actual_critical_absolute_full_tendsto_atTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCriticalAbsoluteGrowthNamespaced.lean/declarations/actual-critical-absolute-full-tendsto-attop.md) | 112 | `result-track:376e7514e3ab95523e52cadd6b0c2916d6366215e496e06b73011c2097b81e4d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

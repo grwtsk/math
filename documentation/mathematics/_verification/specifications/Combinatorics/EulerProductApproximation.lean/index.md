@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/EulerProductApproximation.lean/index.md) · [Full source](../../../../Combinatorics/EulerProductApproximation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EulerProductApproximation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EulerProductApproximation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,14 +61,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [finiteZetaEulerFactorReal](../../../../Combinatorics/EulerProductApproximation.lean/declarations/finitezetaeulerfactorreal.md) | 21 | `declaration-track:8c8f75839c7937971e3bc7297f38629fff624c7b113fbb2b661048b6bd831c78` |
-| 2 | `def` | [finiteZetaEulerProductReal](../../../../Combinatorics/EulerProductApproximation.lean/declarations/finitezetaeulerproductreal.md) | 27 | `declaration-track:2df8bee2e5e8b24db73efc8d5d29216a1a7b87a5edd99ec71cbeff8cf9e6bc62` |
-| 3 | `theorem` | [finiteZetaEulerFactorReal_pos](../../../../Combinatorics/EulerProductApproximation.lean/declarations/finitezetaeulerfactorreal-pos.md) | 33 | `result-track:516f46646ee942a754a1c1c03a41cffc982ab876dc31093983b48e6e130c7597` |
-| 4 | `theorem` | [finiteZetaEulerProductReal_pos](../../../../Combinatorics/EulerProductApproximation.lean/declarations/finitezetaeulerproductreal-pos.md) | 44 | `result-track:e8cf60d21d3d133a6333f9db9166a7a1c3fb4606bf530ad30256921d2a8c1608` |
-| 5 | `theorem` | [finiteZetaEulerFactorReal_ge_one](../../../../Combinatorics/EulerProductApproximation.lean/declarations/finitezetaeulerfactorreal-ge-one.md) | 55 | `result-track:939cdf4ca5883db1c0848db09acf6f5187126ff702ad6629f67404777b55142c` |
-| 6 | `theorem` | [finiteZetaEulerProductReal_ge_one](../../../../Combinatorics/EulerProductApproximation.lean/declarations/finitezetaeulerproductreal-ge-one.md) | 71 | `result-track:8a2a7c21f287157f916ef43a9700ee374d6dd7f2d1aaf234b61d02dbd782affc` |
-| 7 | `theorem` | [finiteZetaEulerFactor_geometric_identity](../../../../Combinatorics/EulerProductApproximation.lean/declarations/finitezetaeulerfactor-geometric-identity.md) | 83 | `result-track:97a52662cdffef0eac1eb4588aefc586716e9cb1e87944e8e9707063cd91f4de` |
-| 8 | `def` | [analyticEulerProductHalfPlaneAnchor](../../../../Combinatorics/EulerProductApproximation.lean/declarations/analyticeulerproducthalfplaneanchor.md) | 107 | `declaration-track:b681f15ce648ca3ebafa75dafcd7cd6ff9390e8966dc4d4e05a68f9529724478` |
+| 1 | `def` | [finiteZetaEulerFactorReal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EulerProductApproximation.lean/declarations/finitezetaeulerfactorreal.md) | 21 | `declaration-track:8c8f75839c7937971e3bc7297f38629fff624c7b113fbb2b661048b6bd831c78` |
+| 2 | `def` | [finiteZetaEulerProductReal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EulerProductApproximation.lean/declarations/finitezetaeulerproductreal.md) | 27 | `declaration-track:2df8bee2e5e8b24db73efc8d5d29216a1a7b87a5edd99ec71cbeff8cf9e6bc62` |
+| 3 | `theorem` | [finiteZetaEulerFactorReal_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EulerProductApproximation.lean/declarations/finitezetaeulerfactorreal-pos.md) | 33 | `result-track:516f46646ee942a754a1c1c03a41cffc982ab876dc31093983b48e6e130c7597` |
+| 4 | `theorem` | [finiteZetaEulerProductReal_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EulerProductApproximation.lean/declarations/finitezetaeulerproductreal-pos.md) | 44 | `result-track:e8cf60d21d3d133a6333f9db9166a7a1c3fb4606bf530ad30256921d2a8c1608` |
+| 5 | `theorem` | [finiteZetaEulerFactorReal_ge_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EulerProductApproximation.lean/declarations/finitezetaeulerfactorreal-ge-one.md) | 55 | `result-track:939cdf4ca5883db1c0848db09acf6f5187126ff702ad6629f67404777b55142c` |
+| 6 | `theorem` | [finiteZetaEulerProductReal_ge_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EulerProductApproximation.lean/declarations/finitezetaeulerproductreal-ge-one.md) | 71 | `result-track:8a2a7c21f287157f916ef43a9700ee374d6dd7f2d1aaf234b61d02dbd782affc` |
+| 7 | `theorem` | [finiteZetaEulerFactor_geometric_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EulerProductApproximation.lean/declarations/finitezetaeulerfactor-geometric-identity.md) | 83 | `result-track:97a52662cdffef0eac1eb4588aefc586716e9cb1e87944e8e9707063cd91f4de` |
+| 8 | `def` | [analyticEulerProductHalfPlaneAnchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EulerProductApproximation.lean/declarations/analyticeulerproducthalfplaneanchor.md) | 107 | `declaration-track:b681f15ce648ca3ebafa75dafcd7cd6ff9390e8966dc4d4e05a68f9529724478` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

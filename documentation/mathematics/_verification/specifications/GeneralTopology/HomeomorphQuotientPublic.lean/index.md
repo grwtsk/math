@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/HomeomorphQuotientPublic.lean/index.md) · [Full source](../../../../GeneralTopology/HomeomorphQuotientPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HomeomorphQuotientPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HomeomorphQuotientPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [congr](../../../../GeneralTopology/HomeomorphQuotientPublic.lean/declarations/congr.md) | 24 | `declaration-track:ec88ed073bd394c8c425c38f9b5fa84898934570385ab06e902a1a951ed57936` |
-| 2 | `def` | [congrRight](../../../../GeneralTopology/HomeomorphQuotientPublic.lean/declarations/congrright-source-edition-2.md) | 31 | `declaration-track:ee84d2ad10d12245b8e39bba0ef3d3f69df75e174905a1b63b9cc88ea0316227` |
-| 3 | `def` | [congrLeft](../../../../GeneralTopology/HomeomorphQuotientPublic.lean/declarations/congrleft.md) | 36 | `declaration-track:d3d295e6d69a92f1a7b3f3e33cedb733c25896ecdfd548fe3bdf398689aaa933` |
-| 4 | `def` | [congr](../../../../GeneralTopology/HomeomorphQuotientPublic.lean/declarations/congr-source-edition-2.md) | 46 | `declaration-track:ffb57997e76dbd3ad6af3d9855d10d7168f1e3f88b199da0df48bd22f8e9cf7b` |
-| 5 | `def` | [congrRight](../../../../GeneralTopology/HomeomorphQuotientPublic.lean/declarations/congrright.md) | 51 | `declaration-track:d03bc733a53d9a9563d4a1fd2998cb4e20709feeb239fa6e1da09cb81803341d` |
-| 6 | `def` | [quotientBot](../../../../GeneralTopology/HomeomorphQuotientPublic.lean/declarations/quotientbot.md) | 58 | `declaration-track:4774f3f52a7364bf6cbf477cbd3b590f42a013c2d65e201cfc6b4868c05d2e00` |
+| 1 | `def` | [congr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HomeomorphQuotientPublic.lean/declarations/congr.md) | 24 | `declaration-track:ec88ed073bd394c8c425c38f9b5fa84898934570385ab06e902a1a951ed57936` |
+| 2 | `def` | [congrRight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HomeomorphQuotientPublic.lean/declarations/congrright-source-edition-2.md) | 31 | `declaration-track:ee84d2ad10d12245b8e39bba0ef3d3f69df75e174905a1b63b9cc88ea0316227` |
+| 3 | `def` | [congrLeft](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HomeomorphQuotientPublic.lean/declarations/congrleft.md) | 36 | `declaration-track:d3d295e6d69a92f1a7b3f3e33cedb733c25896ecdfd548fe3bdf398689aaa933` |
+| 4 | `def` | [congr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HomeomorphQuotientPublic.lean/declarations/congr-source-edition-2.md) | 46 | `declaration-track:ffb57997e76dbd3ad6af3d9855d10d7168f1e3f88b199da0df48bd22f8e9cf7b` |
+| 5 | `def` | [congrRight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HomeomorphQuotientPublic.lean/declarations/congrright.md) | 51 | `declaration-track:d03bc733a53d9a9563d4a1fd2998cb4e20709feeb239fa6e1da09cb81803341d` |
+| 6 | `def` | [quotientBot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HomeomorphQuotientPublic.lean/declarations/quotientbot.md) | 58 | `declaration-track:4774f3f52a7364bf6cbf477cbd3b590f42a013c2d65e201cfc6b4868c05d2e00` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

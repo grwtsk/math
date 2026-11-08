@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearFiniteDimensionalNamespacedAligned.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearFiniteDimensionalNamespacedAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearFiniteDimensionalNamespacedAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearFiniteDimensionalNamespacedAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [free_and_finite_fin](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearFiniteDimensionalNamespacedAligned.lean/declarations/free-and-finite-fin.md) | 43 | `result-track:f8c0fdd5f6a44705976e53a1fa9e564fa81c79253e75e806adba2ff5c7d041f2` |
-| 2 | `theorem` | [free_and_finite](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearFiniteDimensionalNamespacedAligned.lean/declarations/free-and-finite.md) | 66 | `result-track:2975b69402aeb9ab6802199c1cb9db4a487238a8709a8c02c572da192e7165e1` |
-| 3 | `instance` | [Multilinear Finite Dimensional Namespaced Aligned](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearFiniteDimensionalNamespacedAligned.lean/declarations/multilinearmap.md) | 75 | `declaration-track:2984c4c4cf20d7bdd73dc013512bec300cca069cacd0ae644e73c6c24630552e` |
-| 4 | `instance` | [Multilinear Finite Dimensional Namespaced Aligned](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearFiniteDimensionalNamespacedAligned.lean/declarations/multilinearmap-source-line-79-occurrence-2.md) | 79 | `declaration-track:b7287a3623ed880cd47fc879e71dcb5994ac1f96716684d973720e4751c0e33e` |
+| 1 | `theorem` | [free_and_finite_fin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearFiniteDimensionalNamespacedAligned.lean/declarations/free-and-finite-fin.md) | 43 | `result-track:f8c0fdd5f6a44705976e53a1fa9e564fa81c79253e75e806adba2ff5c7d041f2` |
+| 2 | `theorem` | [free_and_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearFiniteDimensionalNamespacedAligned.lean/declarations/free-and-finite.md) | 66 | `result-track:2975b69402aeb9ab6802199c1cb9db4a487238a8709a8c02c572da192e7165e1` |
+| 3 | `instance` | [Multilinear Finite Dimensional Namespaced Aligned](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearFiniteDimensionalNamespacedAligned.lean/declarations/multilinearmap.md) | 75 | `declaration-track:2984c4c4cf20d7bdd73dc013512bec300cca069cacd0ae644e73c6c24630552e` |
+| 4 | `instance` | [Multilinear Finite Dimensional Namespaced Aligned](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearFiniteDimensionalNamespacedAligned.lean/declarations/multilinearmap-source-line-79-occurrence-2.md) | 79 | `declaration-track:b7287a3623ed880cd47fc879e71dcb5994ac1f96716684d973720e4751c0e33e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

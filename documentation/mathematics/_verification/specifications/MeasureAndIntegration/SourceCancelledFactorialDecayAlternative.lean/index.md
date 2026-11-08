@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceCancelledFactorialDecayAlternative.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceCancelledFactorialDecayAlternative.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCancelledFactorialDecayAlternative.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCancelledFactorialDecayAlternative.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualCancelledFactorialWork](../../../../MeasureAndIntegration/SourceCancelledFactorialDecayAlternative.lean/declarations/actualcancelledfactorialwork.md) | 23 | `declaration-track:839e0b1e956414957af6e76b9111e9fd1085039aff245b46103824fe2328bd02` |
-| 2 | `def` | [cancelledFactorialEnvelope](../../../../MeasureAndIntegration/SourceCancelledFactorialDecayAlternative.lean/declarations/cancelledfactorialenvelope.md) | 28 | `declaration-track:32904b2f7abdb96231c921e042974a96a1d4e1ad85e11889627551d213f7184f` |
-| 3 | `theorem` | [actual_floor_budget_le_logarithmic](../../../../MeasureAndIntegration/SourceCancelledFactorialDecayAlternative.lean/declarations/actual-floor-budget-le-logarithmic.md) | 32 | `result-track:0205eb6d15d39f00ec982d9a6a22385f23904a138fab23ce0179a87fb332c11b` |
-| 4 | `theorem` | [cancelledFactorialEnvelope_tendsto_zero](../../../../MeasureAndIntegration/SourceCancelledFactorialDecayAlternative.lean/declarations/cancelledfactorialenvelope-tendsto-zero.md) | 54 | `result-track:f19ac4f696c4c3d441673fbb1661c95df48ab0d6b63d939cbb2858643c1c1a59` |
-| 5 | `theorem` | [actualCancelledFactorialWork_tendsto_zero](../../../../MeasureAndIntegration/SourceCancelledFactorialDecayAlternative.lean/declarations/actualcancelledfactorialwork-tendsto-zero.md) | 70 | `result-track:950fb3b99d2ab80a294bbf51b46f4c8aa31979f2ce5badc8eba162759e6bb724` |
-| 6 | `theorem` | [actualCancelledFactorialTail_tendsto_zero](../../../../MeasureAndIntegration/SourceCancelledFactorialDecayAlternative.lean/declarations/actualcancelledfactorialtail-tendsto-zero.md) | 81 | `result-track:48e1b7a0f36ce3de27afd4003493f47ba82ba614f3dcb03bb6391b2d3da0d472` |
+| 1 | `def` | [actualCancelledFactorialWork](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCancelledFactorialDecayAlternative.lean/declarations/actualcancelledfactorialwork.md) | 23 | `declaration-track:839e0b1e956414957af6e76b9111e9fd1085039aff245b46103824fe2328bd02` |
+| 2 | `def` | [cancelledFactorialEnvelope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCancelledFactorialDecayAlternative.lean/declarations/cancelledfactorialenvelope.md) | 28 | `declaration-track:32904b2f7abdb96231c921e042974a96a1d4e1ad85e11889627551d213f7184f` |
+| 3 | `theorem` | [actual_floor_budget_le_logarithmic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCancelledFactorialDecayAlternative.lean/declarations/actual-floor-budget-le-logarithmic.md) | 32 | `result-track:0205eb6d15d39f00ec982d9a6a22385f23904a138fab23ce0179a87fb332c11b` |
+| 4 | `theorem` | [cancelledFactorialEnvelope_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCancelledFactorialDecayAlternative.lean/declarations/cancelledfactorialenvelope-tendsto-zero.md) | 54 | `result-track:f19ac4f696c4c3d441673fbb1661c95df48ab0d6b63d939cbb2858643c1c1a59` |
+| 5 | `theorem` | [actualCancelledFactorialWork_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCancelledFactorialDecayAlternative.lean/declarations/actualcancelledfactorialwork-tendsto-zero.md) | 70 | `result-track:950fb3b99d2ab80a294bbf51b46f4c8aa31979f2ce5badc8eba162759e6bb724` |
+| 6 | `theorem` | [actualCancelledFactorialTail_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCancelledFactorialDecayAlternative.lean/declarations/actualcancelledfactorialtail-tendsto-zero.md) | 81 | `result-track:48e1b7a0f36ce3de27afd4003493f47ba82ba614f3dcb03bb6391b2d3da0d472` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

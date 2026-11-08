@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ActualEndpointNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ActualEndpointNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ActualEndpointNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ActualEndpointNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [endpointPolynomial](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ActualEndpointNamespaced.lean/declarations/endpointpolynomial.md) | 26 | `declaration-track:caac175ea9e7b3bacc9f12bc980015d1b28fe1c5829b9e30c321bcb2e13a9603` |
-| 2 | `theorem` | [endpointPolynomial_expansion](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ActualEndpointNamespaced.lean/declarations/endpointpolynomial-expansion.md) | 29 | `result-track:f409180fb3b8d8564afb138810cfe7de44386bbc54446938d2b3d3a04fba5fe3` |
-| 3 | `theorem` | [normalizedInterior_endpoint](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ActualEndpointNamespaced.lean/declarations/normalizedinterior-endpoint.md) | 37 | `result-track:c44f4565e3f5aa660a228b5a1772123a6a987fbad17fafdb257a8e939ccab804` |
-| 4 | `theorem` | [actual_source_endpoint](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ActualEndpointNamespaced.lean/declarations/actual-source-endpoint.md) | 50 | `result-track:0e13396aeed81a14d54a71091cffa71d90e4b1da940b80b44e2747b950236738` |
+| 1 | `def` | [endpointPolynomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ActualEndpointNamespaced.lean/declarations/endpointpolynomial.md) | 26 | `declaration-track:caac175ea9e7b3bacc9f12bc980015d1b28fe1c5829b9e30c321bcb2e13a9603` |
+| 2 | `theorem` | [endpointPolynomial_expansion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ActualEndpointNamespaced.lean/declarations/endpointpolynomial-expansion.md) | 29 | `result-track:f409180fb3b8d8564afb138810cfe7de44386bbc54446938d2b3d3a04fba5fe3` |
+| 3 | `theorem` | [normalizedInterior_endpoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ActualEndpointNamespaced.lean/declarations/normalizedinterior-endpoint.md) | 37 | `result-track:c44f4565e3f5aa660a228b5a1772123a6a987fbad17fafdb257a8e939ccab804` |
+| 4 | `theorem` | [actual_source_endpoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ActualEndpointNamespaced.lean/declarations/actual-source-endpoint.md) | 50 | `result-track:0e13396aeed81a14d54a71091cffa71d90e4b1da940b80b44e2747b950236738` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

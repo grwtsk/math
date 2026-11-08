@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/NamespacedAlternative3.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/NamespacedAlternative3.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/NamespacedAlternative3.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/NamespacedAlternative3.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [All](../../../../../ComputerScience/AlgorithmsInComputerScience/NamespacedAlternative3.lean/declarations/all.md) | 23 | `declaration-track:79c0960a294be4d833aab7cb9e8a8eec432c6f02d2db61de4d4d87c91ea3b1d8` |
-| 2 | `theorem` | [All.cons](../../../../../ComputerScience/AlgorithmsInComputerScience/NamespacedAlternative3.lean/declarations/all-cons.md) | 28 | `result-track:407264c6167896d3fdeba619003e153d16774a9d982f5689ccaa722db067af04` |
-| 3 | `theorem` | [mem](../../../../../ComputerScience/AlgorithmsInComputerScience/NamespacedAlternative3.lean/declarations/mem-source-edition-2.md) | 32 | `result-track:27980a6a7f198585fbdc3f068795feedcaff78bf8fc45ee6e8e83b42a31f1c58` |
-| 4 | `theorem` | [mem'](../../../../../ComputerScience/AlgorithmsInComputerScience/NamespacedAlternative3.lean/declarations/mem.md) | 38 | `result-track:20949cfa95a3e82defc59b0c1f079f1f2ab6ae2dacde3fc934ffea8d2170dd17` |
+| 1 | `inductive` | [All](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/NamespacedAlternative3.lean/declarations/all.md) | 23 | `declaration-track:79c0960a294be4d833aab7cb9e8a8eec432c6f02d2db61de4d4d87c91ea3b1d8` |
+| 2 | `theorem` | [All.cons](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/NamespacedAlternative3.lean/declarations/all-cons.md) | 28 | `result-track:407264c6167896d3fdeba619003e153d16774a9d982f5689ccaa722db067af04` |
+| 3 | `theorem` | [mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/NamespacedAlternative3.lean/declarations/mem-source-edition-2.md) | 32 | `result-track:27980a6a7f198585fbdc3f068795feedcaff78bf8fc45ee6e8e83b42a31f1c58` |
+| 4 | `theorem` | [mem'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/NamespacedAlternative3.lean/declarations/mem.md) | 38 | `result-track:20949cfa95a3e82defc59b0c1f079f1f2ab6ae2dacde3fc934ffea8d2170dd17` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

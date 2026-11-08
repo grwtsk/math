@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Thin.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Thin.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Thin.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Thin.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [thin_category](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Thin.lean/declarations/thin-category.md) | 35 | `declaration-track:1af037dee4b541a5d8ef8807286b2dbb4b154327ed5df0303ffbf2525603695d` |
-| 2 | `instance` | [functor_thin](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Thin.lean/declarations/functor-thin.md) | 46 | `declaration-track:50b1662ba4463980ee717e511fcbcd82c84e8a4f74c7334ab20ee7a35613b597` |
-| 3 | `def` | [iso_of_both_ways](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Thin.lean/declarations/iso-of-both-ways.md) | 50 | `declaration-track:04a9ce392c7b1a172d08559a8233ecebfc2b43db20a2f7800628e0b664a41e85` |
-| 4 | `instance` | [subsingleton_iso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Thin.lean/declarations/subsingleton-iso.md) | 55 | `declaration-track:d336b984fcb76fecc6c646b7e49d38026ac6544f0c3fce9c18044fd7eb42aa23` |
+| 1 | `def` | [thin_category](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Thin.lean/declarations/thin-category.md) | 35 | `declaration-track:1af037dee4b541a5d8ef8807286b2dbb4b154327ed5df0303ffbf2525603695d` |
+| 2 | `instance` | [functor_thin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Thin.lean/declarations/functor-thin.md) | 46 | `declaration-track:50b1662ba4463980ee717e511fcbcd82c84e8a4f74c7334ab20ee7a35613b597` |
+| 3 | `def` | [iso_of_both_ways](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Thin.lean/declarations/iso-of-both-ways.md) | 50 | `declaration-track:04a9ce392c7b1a172d08559a8233ecebfc2b43db20a2f7800628e0b664a41e85` |
+| 4 | `instance` | [subsingleton_iso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Thin.lean/declarations/subsingleton-iso.md) | 55 | `declaration-track:d336b984fcb76fecc6c646b7e49d38026ac6544f0c3fce9c18044fd7eb42aa23` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

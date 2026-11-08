@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/MaximalIdealBasic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/MaximalIdealBasic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MaximalIdealBasic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MaximalIdealBasic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,20 +59,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [mem_maximalIdeal](../../../../CommutativeAlgebra/MaximalIdealBasic.lean/declarations/mem-maximalideal.md) | 28 | `result-track:3e09ce83087512341147b97a137020f9a5f59e8ee5bb4635bccb6454e5f2441f` |
-| 2 | `instance` | [maximalIdeal.isMaximal](../../../../CommutativeAlgebra/MaximalIdealBasic.lean/declarations/maximalideal-ismaximal.md) | 33 | `declaration-track:4fd2fbb01bd321ef0b4b7fb9bcca1e7b8102f766dc1b344785597ae106a30d31` |
-| 3 | `theorem` | [isMaximal_iff](../../../../CommutativeAlgebra/MaximalIdealBasic.lean/declarations/ismaximal-iff.md) | 44 | `result-track:995e50ee3abf7dbcbd65673e127ef94ae9ac5524165bc383693ac8579da53ff0` |
-| 4 | `theorem` | [maximal_ideal_unique](../../../../CommutativeAlgebra/MaximalIdealBasic.lean/declarations/maximal-ideal-unique.md) | 48 | `result-track:9604edab4642d271976e3ca2650c6ed69472b3554635930da127b04757a1c952` |
-| 5 | `theorem` | [eq_maximalIdeal](../../../../CommutativeAlgebra/MaximalIdealBasic.lean/declarations/eq-maximalideal.md) | 53 | `result-track:fd32bdc55c841321f76139d1855177c14387781f595fa3cbd5a6b119c7e988e3` |
-| 6 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/MaximalIdealBasic.lean/declarations/instance.md) | 57 | `declaration-track:463103d14a3c14607ebbdaf1151a8e83407d70a3bfbef8849906a415cc958a88` |
-| 7 | `theorem` | [of_singleton_maximalSpectrum](../../../../CommutativeAlgebra/MaximalIdealBasic.lean/declarations/of-singleton-maximalspectrum.md) | 63 | `result-track:bb52924abc05a3224aaca0c3cd5ce2a0f80c8c59e7275a3cabdc75e2500fa59d` |
-| 8 | `theorem` | [le_maximalIdeal](../../../../CommutativeAlgebra/MaximalIdealBasic.lean/declarations/le-maximalideal.md) | 69 | `result-track:4ec850578f54ced304112cd4758a553b34ab2be530607b47eda9b6ab46917a8a` |
-| 9 | `theorem` | [notMem_maximalIdeal](../../../../CommutativeAlgebra/MaximalIdealBasic.lean/declarations/notmem-maximalideal.md) | 77 | `result-track:4e852a8b1afe8ff03cf0d0ad77ebb90d11abf90e59ee0bc9435d40904260c876` |
-| 10 | `theorem` | [isField_iff_maximalIdeal_eq](../../../../CommutativeAlgebra/MaximalIdealBasic.lean/declarations/isfield-iff-maximalideal-eq.md) | 82 | `result-track:8230d8e7dd0dab86b1803c6bf78f5cb6f426368a309fecd7cb184bfecd6d7637` |
-| 11 | `theorem` | [maximalIdeal_le_jacobson](../../../../CommutativeAlgebra/MaximalIdealBasic.lean/declarations/maximalideal-le-jacobson.md) | 117 | `result-track:5bba6265b8768ac17e76134a40fc116df7ef4c1050e363fd151f884bd0f4b8ac` |
-| 12 | `theorem` | [jacobson_eq_maximalIdeal](../../../../CommutativeAlgebra/MaximalIdealBasic.lean/declarations/jacobson-eq-maximalideal.md) | 121 | `result-track:cb9c08ab4a763be87664db3907ea201039a0e0744cfad230f225d68ecfa6ea76` |
-| 13 | `theorem` | [ker_eq_maximalIdeal](../../../../CommutativeAlgebra/MaximalIdealBasic.lean/declarations/ker-eq-maximalideal.md) | 142 | `result-track:e99fdaa698bd8d2e80f28c31f66937746ba3f4a95d376b7bb1fad36cfc4573ea` |
-| 14 | `theorem` | [IsLocalRing.maximalIdeal_eq_bot](../../../../CommutativeAlgebra/MaximalIdealBasic.lean/declarations/islocalring-maximalideal-eq-bot.md) | 150 | `result-track:1d7f6fd2fb5e4b3b5dfb2fa64566e5f1990523521415fce3b0428afc827b2fc1` |
+| 1 | `theorem` | [mem_maximalIdeal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MaximalIdealBasic.lean/declarations/mem-maximalideal.md) | 28 | `result-track:3e09ce83087512341147b97a137020f9a5f59e8ee5bb4635bccb6454e5f2441f` |
+| 2 | `instance` | [maximalIdeal.isMaximal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MaximalIdealBasic.lean/declarations/maximalideal-ismaximal.md) | 33 | `declaration-track:4fd2fbb01bd321ef0b4b7fb9bcca1e7b8102f766dc1b344785597ae106a30d31` |
+| 3 | `theorem` | [isMaximal_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MaximalIdealBasic.lean/declarations/ismaximal-iff.md) | 44 | `result-track:995e50ee3abf7dbcbd65673e127ef94ae9ac5524165bc383693ac8579da53ff0` |
+| 4 | `theorem` | [maximal_ideal_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MaximalIdealBasic.lean/declarations/maximal-ideal-unique.md) | 48 | `result-track:9604edab4642d271976e3ca2650c6ed69472b3554635930da127b04757a1c952` |
+| 5 | `theorem` | [eq_maximalIdeal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MaximalIdealBasic.lean/declarations/eq-maximalideal.md) | 53 | `result-track:fd32bdc55c841321f76139d1855177c14387781f595fa3cbd5a6b119c7e988e3` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MaximalIdealBasic.lean/declarations/instance.md) | 57 | `declaration-track:463103d14a3c14607ebbdaf1151a8e83407d70a3bfbef8849906a415cc958a88` |
+| 7 | `theorem` | [of_singleton_maximalSpectrum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MaximalIdealBasic.lean/declarations/of-singleton-maximalspectrum.md) | 63 | `result-track:bb52924abc05a3224aaca0c3cd5ce2a0f80c8c59e7275a3cabdc75e2500fa59d` |
+| 8 | `theorem` | [le_maximalIdeal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MaximalIdealBasic.lean/declarations/le-maximalideal.md) | 69 | `result-track:4ec850578f54ced304112cd4758a553b34ab2be530607b47eda9b6ab46917a8a` |
+| 9 | `theorem` | [notMem_maximalIdeal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MaximalIdealBasic.lean/declarations/notmem-maximalideal.md) | 77 | `result-track:4e852a8b1afe8ff03cf0d0ad77ebb90d11abf90e59ee0bc9435d40904260c876` |
+| 10 | `theorem` | [isField_iff_maximalIdeal_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MaximalIdealBasic.lean/declarations/isfield-iff-maximalideal-eq.md) | 82 | `result-track:8230d8e7dd0dab86b1803c6bf78f5cb6f426368a309fecd7cb184bfecd6d7637` |
+| 11 | `theorem` | [maximalIdeal_le_jacobson](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MaximalIdealBasic.lean/declarations/maximalideal-le-jacobson.md) | 117 | `result-track:5bba6265b8768ac17e76134a40fc116df7ef4c1050e363fd151f884bd0f4b8ac` |
+| 12 | `theorem` | [jacobson_eq_maximalIdeal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MaximalIdealBasic.lean/declarations/jacobson-eq-maximalideal.md) | 121 | `result-track:cb9c08ab4a763be87664db3907ea201039a0e0744cfad230f225d68ecfa6ea76` |
+| 13 | `theorem` | [ker_eq_maximalIdeal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MaximalIdealBasic.lean/declarations/ker-eq-maximalideal.md) | 142 | `result-track:e99fdaa698bd8d2e80f28c31f66937746ba3f4a95d376b7bb1fad36cfc4573ea` |
+| 14 | `theorem` | [IsLocalRing.maximalIdeal_eq_bot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MaximalIdealBasic.lean/declarations/islocalring-maximalideal-eq-bot.md) | 150 | `result-track:1d7f6fd2fb5e4b3b5dfb2fa64566e5f1990523521415fce3b0428afc827b2fc1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

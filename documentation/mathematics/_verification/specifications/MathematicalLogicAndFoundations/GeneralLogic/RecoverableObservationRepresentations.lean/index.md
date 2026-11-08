@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RecoverableObservationRepresentations.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RecoverableObservationRepresentations.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RecoverableObservationRepresentations.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RecoverableObservationRepresentations.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `Mathlib` — import line 14; external provider; requires a separately pinned dependency.
-- [`GRWTSK.FoundationsLogicAndTypeTheory.TypeTheory.DependentTypeTheory.IndexedObservationFamilies`](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IndexedObservationFamilies.lean/index.md) — import line 16; pinned internal source present.
+- [`GRWTSK.FoundationsLogicAndTypeTheory.TypeTheory.DependentTypeTheory.IndexedObservationFamilies`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IndexedObservationFamilies.lean/index.md) — import line 16; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SufficientRepresentation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RecoverableObservationRepresentations.lean/declarations/sufficientrepresentation.md) | 20 | `declaration-track:f78075b053ef7adbb07e12c313597c10bfdf56e5b6675280a99e4e4fd084ea7b` |
+| 1 | `structure` | [SufficientRepresentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RecoverableObservationRepresentations.lean/declarations/sufficientrepresentation.md) | 20 | `declaration-track:f78075b053ef7adbb07e12c313597c10bfdf56e5b6675280a99e4e4fd084ea7b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

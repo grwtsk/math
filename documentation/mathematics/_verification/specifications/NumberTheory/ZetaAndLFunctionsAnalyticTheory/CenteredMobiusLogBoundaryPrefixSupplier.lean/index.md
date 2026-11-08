@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogBoundaryPrefixSupplier.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogBoundaryPrefixSupplier.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogBoundaryPrefixSupplier.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogBoundaryPrefixSupplier.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogBoundaryAbel`](../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredMobiusLogBoundaryAbel.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogBoundaryAbel`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredMobiusLogBoundaryAbel.lean/index.md) — import line 5; pinned internal source present.
 - `Mathlib.Tactic` — import line 6; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [DyadicPrefixMangoldtBoundAt](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogBoundaryPrefixSupplier.lean/declarations/dyadicprefixmangoldtboundat.md) | 16 | `declaration-track:ee76dc9da29543a01d9eacbcf9dc2a0e10dd697c05f779cf5480e51fd5c29420` |
-| 2 | `theorem` | [greenBoundaryAbelCoefficientMass_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogBoundaryPrefixSupplier.lean/declarations/greenboundaryabelcoefficientmass-le.md) | 22 | `result-track:2ea7238b6d6d3343205de6ca59dbb2a789b880c8793938587744827b9530c66f` |
-| 3 | `theorem` | [abs_mass0_le_of_prefix_bound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogBoundaryPrefixSupplier.lean/declarations/abs-mass0-le-of-prefix-bound.md) | 40 | `result-track:b02e44d41ec9ea2dbf1867660cac05f5ea211708c55e8b4bb077e8e453eb1f6f` |
-| 4 | `theorem` | [allDyadicMass0Bound_of_prefixMangoldt](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogBoundaryPrefixSupplier.lean/declarations/alldyadicmass0bound-of-prefixmangoldt.md) | 88 | `result-track:7f0c068fc39a2eb9d3ef14154a6a96feb138ceda6cf4e2f1bd984699a77f38d7` |
+| 1 | `def` | [DyadicPrefixMangoldtBoundAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogBoundaryPrefixSupplier.lean/declarations/dyadicprefixmangoldtboundat.md) | 16 | `declaration-track:ee76dc9da29543a01d9eacbcf9dc2a0e10dd697c05f779cf5480e51fd5c29420` |
+| 2 | `theorem` | [greenBoundaryAbelCoefficientMass_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogBoundaryPrefixSupplier.lean/declarations/greenboundaryabelcoefficientmass-le.md) | 22 | `result-track:2ea7238b6d6d3343205de6ca59dbb2a789b880c8793938587744827b9530c66f` |
+| 3 | `theorem` | [abs_mass0_le_of_prefix_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogBoundaryPrefixSupplier.lean/declarations/abs-mass0-le-of-prefix-bound.md) | 40 | `result-track:b02e44d41ec9ea2dbf1867660cac05f5ea211708c55e8b4bb077e8e453eb1f6f` |
+| 4 | `theorem` | [allDyadicMass0Bound_of_prefixMangoldt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogBoundaryPrefixSupplier.lean/declarations/alldyadicmass0bound-of-prefixmangoldt.md) | 88 | `result-track:7f0c068fc39a2eb9d3ef14154a6a96feb138ceda6cf4e2f1bd984699a77f38d7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerShiftCorrelationReductionControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerShiftCorrelationReductionControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerShiftCorrelationReductionControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerShiftCorrelationReductionControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeFejerShiftCorrelationReduction`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerShiftCorrelationReduction.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeFejerShiftCorrelationReduction`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerShiftCorrelationReduction.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [exactFrontier](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerShiftCorrelationReductionControls.lean/declarations/exactfrontier.md) | 13 | `declaration-track:5dedf3fcc5cb7f79f943e02446d4406bddce6d4bdf060ba61ec323ab1a165eed` |
-| 2 | `def` | [remainingArithmeticFrontier](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerShiftCorrelationReductionControls.lean/declarations/remainingarithmeticfrontier.md) | 29 | `declaration-track:0c34cb8999037e1ea61af35d99dfd7e3a3351f55bc3dc7997e35f21b5b7c2d57` |
+| 1 | `def` | [exactFrontier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerShiftCorrelationReductionControls.lean/declarations/exactfrontier.md) | 13 | `declaration-track:5dedf3fcc5cb7f79f943e02446d4406bddce6d4bdf060ba61ec323ab1a165eed` |
+| 2 | `def` | [remainingArithmeticFrontier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerShiftCorrelationReductionControls.lean/declarations/remainingarithmeticfrontier.md) | 29 | `declaration-track:0c34cb8999037e1ea61af35d99dfd7e3a3351f55bc3dc7997e35f21b5b7c2d57` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/SurfacePolygonPolarDiskSurjectivity.lean/index.md) · [Full source](../../../../AlgebraicTopology/SurfacePolygonPolarDiskSurjectivity.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonPolarDiskSurjectivity.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonPolarDiskSurjectivity.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarConeFibers`](../../../../AlgebraicTopology/SurfacePolygonPolarConeFibers.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarConeFibers`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonPolarConeFibers.lean/index.md) — import line 8; pinned internal source present.
 - `Mathlib.Analysis.SpecialFunctions.Complex.Arg` — import line 9; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 10; external provider; requires a separately pinned dependency.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [diskRadius](../../../../AlgebraicTopology/SurfacePolygonPolarDiskSurjectivity.lean/declarations/diskradius.md) | 36 | `declaration-track:ecd15b01e519f6599bc6964fdd6df0975bc9271e370fc7135455517076ff43be` |
-| 2 | `theorem` | [disk_origin_in_polar_range](../../../../AlgebraicTopology/SurfacePolygonPolarDiskSurjectivity.lean/declarations/disk-origin-in-polar-range.md) | 43 | `result-track:b5f6e9d0acbf7c04dc97e7187b402b723460abfbf8dfc0b50276ac32cd63dec3` |
-| 3 | `theorem` | [disk_nonzero_in_polar_range_of_phase](../../../../AlgebraicTopology/SurfacePolygonPolarDiskSurjectivity.lean/declarations/disk-nonzero-in-polar-range-of-phase.md) | 51 | `result-track:c2481c75488442a045cb83109f776d1b6f6670fa2d3aa6caeb6793a1f83f29be` |
-| 4 | `theorem` | [standardConePolarDisk_surjective_of_phase](../../../../AlgebraicTopology/SurfacePolygonPolarDiskSurjectivity.lean/declarations/standardconepolardisk-surjective-of-phase.md) | 65 | `result-track:079c922e19c74bac17e669f17c60e1e4ac4b9840a91b6b9745be0f8f4a4255f6` |
+| 1 | `def` | [diskRadius](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonPolarDiskSurjectivity.lean/declarations/diskradius.md) | 36 | `declaration-track:ecd15b01e519f6599bc6964fdd6df0975bc9271e370fc7135455517076ff43be` |
+| 2 | `theorem` | [disk_origin_in_polar_range](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonPolarDiskSurjectivity.lean/declarations/disk-origin-in-polar-range.md) | 43 | `result-track:b5f6e9d0acbf7c04dc97e7187b402b723460abfbf8dfc0b50276ac32cd63dec3` |
+| 3 | `theorem` | [disk_nonzero_in_polar_range_of_phase](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonPolarDiskSurjectivity.lean/declarations/disk-nonzero-in-polar-range-of-phase.md) | 51 | `result-track:c2481c75488442a045cb83109f776d1b6f6670fa2d3aa6caeb6793a1f83f29be` |
+| 4 | `theorem` | [standardConePolarDisk_surjective_of_phase](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonPolarDiskSurjectivity.lean/declarations/standardconepolardisk-surjective-of-phase.md) | 65 | `result-track:079c922e19c74bac17e669f17c60e1e4ac4b9840a91b6b9745be0f8f4a4255f6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

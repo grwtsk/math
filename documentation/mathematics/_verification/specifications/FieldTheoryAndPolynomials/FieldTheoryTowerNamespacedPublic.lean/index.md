@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FieldTheoryAndPolynomials/FieldTheoryTowerNamespacedPublic.lean/index.md) · [Full source](../../../../FieldTheoryAndPolynomials/FieldTheoryTowerNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldTheoryTowerNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldTheoryTowerNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [left](../../../../FieldTheoryAndPolynomials/FieldTheoryTowerNamespacedPublic.lean/declarations/left.md) | 55 | `result-track:9ebc183cc34132b5da4642d84110324a172509ec16b7cd61e3f8b472d45fe00f` |
-| 2 | `theorem` | [right](../../../../FieldTheoryAndPolynomials/FieldTheoryTowerNamespacedPublic.lean/declarations/right.md) | 63 | `result-track:76e41c7beee4cc9ab93abf0525006c2ff364d56db9de7aff533e75a6470483fc` |
+| 1 | `theorem` | [left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldTheoryTowerNamespacedPublic.lean/declarations/left.md) | 55 | `result-track:9ebc183cc34132b5da4642d84110324a172509ec16b7cd61e3f8b472d45fe00f` |
+| 2 | `theorem` | [right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldTheoryTowerNamespacedPublic.lean/declarations/right.md) | 63 | `result-track:76e41c7beee4cc9ab93abf0525006c2ff364d56db9de7aff533e75a6470483fc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

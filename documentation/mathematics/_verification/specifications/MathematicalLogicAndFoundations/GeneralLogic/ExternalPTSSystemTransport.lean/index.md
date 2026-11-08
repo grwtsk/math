@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExternalPTSSystemTransport.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExternalPTSSystemTransport.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExternalPTSSystemTransport.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExternalPTSSystemTransport.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Logic.ExternalPTSBridge`](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExternalPTSBridge.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Logic.ExternalPTSBridge`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExternalPTSBridge.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,18 +57,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ReductionEquiv](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExternalPTSSystemTransport.lean/declarations/reductionequiv.md) | 8 | `declaration-track:70a2da9ce0677522dc8eba8324d5808b60e9626ebd679c80e20d97bd76246ae7` |
-| 2 | `def` | [symm](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExternalPTSSystemTransport.lean/declarations/symm.md) | 20 | `declaration-track:714686d45ec22031677b648f2d8b7753ff0bd4968b6aa75ff4d63965f8b73a09` |
-| 3 | `theorem` | [normal_forward](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExternalPTSSystemTransport.lean/declarations/normal-forward.md) | 28 | `result-track:bf9f50e6a9b04235478d95d0e41c654ebb5860c3e4b3ac53ebfd036deec16ee9` |
-| 4 | `theorem` | [reflTransGen_forward](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExternalPTSSystemTransport.lean/declarations/refltransgen-forward.md) | 38 | `result-track:dbf8ef7916e0ffbbae775a03a0eee1aebe95dac756f3f3005cda79974726e9c5` |
-| 5 | `theorem` | [weaklyNormalizing_forward](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExternalPTSSystemTransport.lean/declarations/weaklynormalizing-forward.md) | 48 | `result-track:6f9b55cb51aec823eb96df843f7f2f6bfbd7b4a0203bb2caa4c93c990a060b13` |
-| 6 | `theorem` | [stronglyNormalizing_forward](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExternalPTSSystemTransport.lean/declarations/stronglynormalizing-forward.md) | 56 | `result-track:856f2e2a4025caa61e6de619a0274e89c1cec3c8167e78554d9ca8324c58d9dd` |
-| 7 | `theorem` | [weaklyNormalizing_backward](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExternalPTSSystemTransport.lean/declarations/weaklynormalizing-backward.md) | 72 | `result-track:6d6e27c055b0f4d46120fc8552b41abcfc08cc305f1fdbb55cce46ec03888510` |
-| 8 | `theorem` | [stronglyNormalizing_backward](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExternalPTSSystemTransport.lean/declarations/stronglynormalizing-backward.md) | 79 | `result-track:c7877e10b59ce71eb9a6a90be822b5e78a2c73d0477327f320be55faa3e9bcce` |
-| 9 | `structure` | [SystemEquiv](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExternalPTSSystemTransport.lean/declarations/systemequiv.md) | 88 | `declaration-track:7eae887ff83fc458fdeac6fe37e57479f42a5fded7d523456d3228ff25842165` |
-| 10 | `theorem` | [systemWeak_forward](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExternalPTSSystemTransport.lean/declarations/systemweak-forward.md) | 102 | `result-track:41a4e3b22b87dfc7048bb9708f4aade36bfd23f1b7db86863aa514f6ca64c3ed` |
-| 11 | `theorem` | [systemStrong_backward](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExternalPTSSystemTransport.lean/declarations/systemstrong-backward.md) | 116 | `result-track:d64abc1f6695369742484f3b2d5272c597716cb47a80c1c60ecf2eb680f80dd5` |
-| 12 | `def` | [transportWeakToStrong](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExternalPTSSystemTransport.lean/declarations/transportweaktostrong.md) | 126 | `declaration-track:b7e819968fe591200f64f3664b1e0938f9e260ce01d4fc734a9945512e628889` |
+| 1 | `structure` | [ReductionEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExternalPTSSystemTransport.lean/declarations/reductionequiv.md) | 8 | `declaration-track:70a2da9ce0677522dc8eba8324d5808b60e9626ebd679c80e20d97bd76246ae7` |
+| 2 | `def` | [symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExternalPTSSystemTransport.lean/declarations/symm.md) | 20 | `declaration-track:714686d45ec22031677b648f2d8b7753ff0bd4968b6aa75ff4d63965f8b73a09` |
+| 3 | `theorem` | [normal_forward](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExternalPTSSystemTransport.lean/declarations/normal-forward.md) | 28 | `result-track:bf9f50e6a9b04235478d95d0e41c654ebb5860c3e4b3ac53ebfd036deec16ee9` |
+| 4 | `theorem` | [reflTransGen_forward](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExternalPTSSystemTransport.lean/declarations/refltransgen-forward.md) | 38 | `result-track:dbf8ef7916e0ffbbae775a03a0eee1aebe95dac756f3f3005cda79974726e9c5` |
+| 5 | `theorem` | [weaklyNormalizing_forward](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExternalPTSSystemTransport.lean/declarations/weaklynormalizing-forward.md) | 48 | `result-track:6f9b55cb51aec823eb96df843f7f2f6bfbd7b4a0203bb2caa4c93c990a060b13` |
+| 6 | `theorem` | [stronglyNormalizing_forward](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExternalPTSSystemTransport.lean/declarations/stronglynormalizing-forward.md) | 56 | `result-track:856f2e2a4025caa61e6de619a0274e89c1cec3c8167e78554d9ca8324c58d9dd` |
+| 7 | `theorem` | [weaklyNormalizing_backward](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExternalPTSSystemTransport.lean/declarations/weaklynormalizing-backward.md) | 72 | `result-track:6d6e27c055b0f4d46120fc8552b41abcfc08cc305f1fdbb55cce46ec03888510` |
+| 8 | `theorem` | [stronglyNormalizing_backward](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExternalPTSSystemTransport.lean/declarations/stronglynormalizing-backward.md) | 79 | `result-track:c7877e10b59ce71eb9a6a90be822b5e78a2c73d0477327f320be55faa3e9bcce` |
+| 9 | `structure` | [SystemEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExternalPTSSystemTransport.lean/declarations/systemequiv.md) | 88 | `declaration-track:7eae887ff83fc458fdeac6fe37e57479f42a5fded7d523456d3228ff25842165` |
+| 10 | `theorem` | [systemWeak_forward](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExternalPTSSystemTransport.lean/declarations/systemweak-forward.md) | 102 | `result-track:41a4e3b22b87dfc7048bb9708f4aade36bfd23f1b7db86863aa514f6ca64c3ed` |
+| 11 | `theorem` | [systemStrong_backward](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExternalPTSSystemTransport.lean/declarations/systemstrong-backward.md) | 116 | `result-track:d64abc1f6695369742484f3b2d5272c597716cb47a80c1c60ecf2eb680f80dd5` |
+| 12 | `def` | [transportWeakToStrong](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExternalPTSSystemTransport.lean/declarations/transportweaktostrong.md) | 126 | `declaration-track:b7e819968fe591200f64f3664b1e0938f9e260ce01d4fc734a9945512e628889` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

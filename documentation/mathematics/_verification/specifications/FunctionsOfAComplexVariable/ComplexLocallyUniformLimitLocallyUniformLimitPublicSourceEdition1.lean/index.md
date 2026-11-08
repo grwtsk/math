@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/ComplexLocallyUniformLimitLocallyUniformLimitPublicSourceEdition1.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/ComplexLocallyUniformLimitLocallyUniformLimitPublicSourceEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexLocallyUniformLimitLocallyUniformLimitPublicSourceEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexLocallyUniformLimitLocallyUniformLimitPublicSourceEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [_root_.TendstoUniformlyOn.mul_left_bounded](../../../../FunctionsOfAComplexVariable/ComplexLocallyUniformLimitLocallyUniformLimitPublicSourceEdition1.lean/declarations/root-tendstouniformlyon-mul-left-bounded.md) | 24 | `result-track:f29ee61e6ad1c788b71e173676bdfbe6bf87fdf34e9906deb75803fc5dda02f0` |
+| 1 | `theorem` | [_root_.TendstoUniformlyOn.mul_left_bounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexLocallyUniformLimitLocallyUniformLimitPublicSourceEdition1.lean/declarations/root-tendstouniformlyon-mul-left-bounded.md) | 24 | `result-track:f29ee61e6ad1c788b71e173676bdfbe6bf87fdf34e9906deb75803fc5dda02f0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

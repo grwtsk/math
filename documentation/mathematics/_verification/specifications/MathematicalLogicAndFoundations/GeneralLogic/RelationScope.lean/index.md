@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RelationScope.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RelationScope.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RelationScope.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RelationScope.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RelationScope](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RelationScope.lean/declarations/relationscope.md) | 12 | `declaration-track:e07131bdf8fea7b080685a3235f014eb6c8fac7c0a52fb031f61302517b58c82` |
-| 2 | `def` | [InScope](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RelationScope.lean/declarations/inscope.md) | 17 | `declaration-track:c1f7c76420145fbf03138539c447bcb6e4195f696ca4d98d443cacb46f025b0c` |
-| 3 | `instance` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RelationScope.lean/declarations/instance.md) | 24 | `declaration-track:c4eb997dc9c86ed578e19695dc6850adc98012983ac88def44ac696984347bd7` |
-| 4 | `def` | [RelationScope.forwardOnly](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RelationScope.lean/declarations/relationscope-forwardonly.md) | 33 | `declaration-track:684c84a16c98c54a64dc2acc7938cb8b0116cece87ec78686d52e3c2f46be0ba` |
-| 5 | `def` | [RelationScope.bidirectional](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RelationScope.lean/declarations/relationscope-bidirectional.md) | 43 | `declaration-track:067859318febce8bbd99160f5868030e1bfdfdc4da13ecf96d02f1415ecfd696` |
+| 1 | `structure` | [RelationScope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RelationScope.lean/declarations/relationscope.md) | 12 | `declaration-track:e07131bdf8fea7b080685a3235f014eb6c8fac7c0a52fb031f61302517b58c82` |
+| 2 | `def` | [InScope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RelationScope.lean/declarations/inscope.md) | 17 | `declaration-track:c1f7c76420145fbf03138539c447bcb6e4195f696ca4d98d443cacb46f025b0c` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RelationScope.lean/declarations/instance.md) | 24 | `declaration-track:c4eb997dc9c86ed578e19695dc6850adc98012983ac88def44ac696984347bd7` |
+| 4 | `def` | [RelationScope.forwardOnly](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RelationScope.lean/declarations/relationscope-forwardonly.md) | 33 | `declaration-track:684c84a16c98c54a64dc2acc7938cb8b0116cece87ec78686d52e3c2f46be0ba` |
+| 5 | `def` | [RelationScope.bidirectional](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RelationScope.lean/declarations/relationscope-bidirectional.md) | 43 | `declaration-track:067859318febce8bbd99160f5868030e1bfdfdc4da13ecf96d02f1415ecfd696` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

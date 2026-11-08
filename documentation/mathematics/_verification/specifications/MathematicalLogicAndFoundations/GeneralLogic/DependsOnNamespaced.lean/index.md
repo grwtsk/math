@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DependsOnNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DependsOnNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DependsOnNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DependsOnNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [DependsOn](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DependsOnNamespaced.lean/declarations/dependson.md) | 67 | `declaration-track:970969e74b99da4914bc49335ed6f9f1520051093fa5966869f02feedf395c28` |
-| 2 | `lemma` | [dependsOn_iff_factorsThrough](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DependsOnNamespaced.lean/declarations/dependson-iff-factorsthrough.md) | 70 | `result-track:a9ad764712951f3a60baa180446955591df3deb2511a3881aa818aa5bfa28dce` |
-| 3 | `lemma` | [dependsOn_iff_exists_comp](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DependsOnNamespaced.lean/declarations/dependson-iff-exists-comp.md) | 75 | `result-track:01e5363ac5164fefafb7b6553079be84ef14df3f1fd358605c71c8179b2c7691` |
-| 4 | `lemma` | [dependsOn_univ](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DependsOnNamespaced.lean/declarations/dependson-univ.md) | 79 | `result-track:fa08af1c24fba053c8d7fc3ebe48d77ebd9614188fb9df20d289e7214200a863` |
-| 5 | `lemma` | [dependsOn_const](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DependsOnNamespaced.lean/declarations/dependson-const.md) | 85 | `result-track:8da06a9182e8d0db41b765d3aae9ac3128531854595b7c84133009c2934e36b6` |
-| 6 | `lemma` | [DependsOn.mono](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DependsOnNamespaced.lean/declarations/dependson-mono.md) | 87 | `result-track:eb1ca0a1824d7579d0547a74b5a5391e44b47ced1f832c67944877a93afa080e` |
-| 7 | `lemma` | [DependsOn.empty](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DependsOnNamespaced.lean/declarations/dependson-empty.md) | 91 | `result-track:eef0fc46ca93dbf34d3f9814964fa3ec6482567bbb9d7ced960d1b93955f4359` |
-| 8 | `lemma` | [Set.dependsOn_restrict](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DependsOnNamespaced.lean/declarations/set-dependson-restrict.md) | 93 | `result-track:82a72e1b9dea262fc2bc693fbae6370dab29178cdf0574641e853dc565377720` |
+| 1 | `def` | [DependsOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DependsOnNamespaced.lean/declarations/dependson.md) | 67 | `declaration-track:970969e74b99da4914bc49335ed6f9f1520051093fa5966869f02feedf395c28` |
+| 2 | `lemma` | [dependsOn_iff_factorsThrough](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DependsOnNamespaced.lean/declarations/dependson-iff-factorsthrough.md) | 70 | `result-track:a9ad764712951f3a60baa180446955591df3deb2511a3881aa818aa5bfa28dce` |
+| 3 | `lemma` | [dependsOn_iff_exists_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DependsOnNamespaced.lean/declarations/dependson-iff-exists-comp.md) | 75 | `result-track:01e5363ac5164fefafb7b6553079be84ef14df3f1fd358605c71c8179b2c7691` |
+| 4 | `lemma` | [dependsOn_univ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DependsOnNamespaced.lean/declarations/dependson-univ.md) | 79 | `result-track:fa08af1c24fba053c8d7fc3ebe48d77ebd9614188fb9df20d289e7214200a863` |
+| 5 | `lemma` | [dependsOn_const](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DependsOnNamespaced.lean/declarations/dependson-const.md) | 85 | `result-track:8da06a9182e8d0db41b765d3aae9ac3128531854595b7c84133009c2934e36b6` |
+| 6 | `lemma` | [DependsOn.mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DependsOnNamespaced.lean/declarations/dependson-mono.md) | 87 | `result-track:eb1ca0a1824d7579d0547a74b5a5391e44b47ced1f832c67944877a93afa080e` |
+| 7 | `lemma` | [DependsOn.empty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DependsOnNamespaced.lean/declarations/dependson-empty.md) | 91 | `result-track:eef0fc46ca93dbf34d3f9814964fa3ec6482567bbb9d7ced960d1b93955f4359` |
+| 8 | `lemma` | [Set.dependsOn_restrict](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DependsOnNamespaced.lean/declarations/set-dependson-restrict.md) | 93 | `result-track:82a72e1b9dea262fc2bc693fbae6370dab29178cdf0574641e853dc565377720` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

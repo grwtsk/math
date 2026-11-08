@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/CanonicalTentEvaluation.lean/index.md) · [Full source](../../../../NumberTheory/CanonicalTentEvaluation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentEvaluation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentEvaluation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.EnclosedZeroInventory`](../../../../AssociativeRingsAndAlgebras/EnclosedZeroInventory.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.EnclosedZeroInventory`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/EnclosedZeroInventory.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [checkWithin](../../../../NumberTheory/CanonicalTentEvaluation.lean/declarations/checkwithin.md) | 30 | `declaration-track:d90bf5462bfc37dbcb960b1f101f9f4205f9033b9bc37e2af0c6f11227c10a38` |
-| 2 | `theorem` | [checkWithin_sound](../../../../NumberTheory/CanonicalTentEvaluation.lean/declarations/checkwithin-sound.md) | 36 | `result-track:896318c8429242db8f26a871a827ce2ebdf811af440059d336f34832733632e8` |
-| 3 | `theorem` | [checkWithin_sound_of_count_upper](../../../../NumberTheory/CanonicalTentEvaluation.lean/declarations/checkwithin-sound-of-count-upper.md) | 75 | `result-track:f035b1e0bb70f6467fe5d168df0135c33ae07be6210636b4818d00e2b85eabbf` |
+| 1 | `def` | [checkWithin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentEvaluation.lean/declarations/checkwithin.md) | 30 | `declaration-track:d90bf5462bfc37dbcb960b1f101f9f4205f9033b9bc37e2af0c6f11227c10a38` |
+| 2 | `theorem` | [checkWithin_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentEvaluation.lean/declarations/checkwithin-sound.md) | 36 | `result-track:896318c8429242db8f26a871a827ce2ebdf811af440059d336f34832733632e8` |
+| 3 | `theorem` | [checkWithin_sound_of_count_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentEvaluation.lean/declarations/checkwithin-sound-of-count-upper.md) | 75 | `result-track:f035b1e0bb70f6467fe5d168df0135c33ae07be6210636b4818d00e2b85eabbf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

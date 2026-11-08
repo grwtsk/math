@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/CenterJetVariation.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/CenterJetVariation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/CenterJetVariation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/CenterJetVariation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.ClosedDiskCauchy`](../../../../FunctionsOfAComplexVariable/ClosedDiskCauchy.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.ClosedDiskCauchy`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ClosedDiskCauchy.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Analysis.Calculus.MeanValue` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [center_derivative_norm](../../../../FunctionsOfAComplexVariable/CenterJetVariation.lean/declarations/center-derivative-norm.md) | 22 | `result-track:5f0f88afdb2291afb3deb8a29da57329c940c6377448273f4c25de2b61f5a167` |
-| 2 | `theorem` | [derivative_norm_le](../../../../FunctionsOfAComplexVariable/CenterJetVariation.lean/declarations/derivative-norm-le.md) | 31 | `result-track:1a3884bb7b9af60dada7191c44b1e1ffa337f72968f4292549128b7acc77701a` |
-| 3 | `theorem` | [value_variation](../../../../FunctionsOfAComplexVariable/CenterJetVariation.lean/declarations/value-variation.md) | 48 | `result-track:951bd730d827446209cd72c6b82e04683d2c1cde54f8fa9ef13179e07f9d5aee` |
-| 4 | `theorem` | [cauchy_derivative_norm_le](../../../../FunctionsOfAComplexVariable/CenterJetVariation.lean/declarations/cauchy-derivative-norm-le.md) | 62 | `result-track:44ac042a882b5313ea66c1e4b094b2e2a1d2524d9659c71d460ae580a27194c8` |
+| 1 | `theorem` | [center_derivative_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/CenterJetVariation.lean/declarations/center-derivative-norm.md) | 22 | `result-track:5f0f88afdb2291afb3deb8a29da57329c940c6377448273f4c25de2b61f5a167` |
+| 2 | `theorem` | [derivative_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/CenterJetVariation.lean/declarations/derivative-norm-le.md) | 31 | `result-track:1a3884bb7b9af60dada7191c44b1e1ffa337f72968f4292549128b7acc77701a` |
+| 3 | `theorem` | [value_variation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/CenterJetVariation.lean/declarations/value-variation.md) | 48 | `result-track:951bd730d827446209cd72c6b82e04683d2c1cde54f8fa9ef13179e07f9d5aee` |
+| 4 | `theorem` | [cauchy_derivative_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/CenterJetVariation.lean/declarations/cauchy-derivative-norm-le.md) | 62 | `result-track:44ac042a882b5313ea66c1e4b094b2e2a1d2524d9659c71d460ae580a27194c8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

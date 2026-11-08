@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/ZeroHeadBindingControls.lean/index.md) · [Full source](../../../../NumberTheory/ZeroHeadBindingControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZeroHeadBindingControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZeroHeadBindingControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Chebyshev.CanonicalZeroHeadBinding`](../../../../NumberTheory/CanonicalZeroHeadBinding.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.CanonicalZeroHeadBinding`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalZeroHeadBinding.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,18 +57,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [touching_disks_rejected](../../../../NumberTheory/ZeroHeadBindingControls.lean/declarations/touching-disks-rejected.md) | 24 | `result-track:9f4b0c36b8900df352dcf8b8c94959e8f7c29d293c852a18dc621163f1b94f5f` |
-| 2 | `theorem` | [equal_height_separated_disks_accepted](../../../../NumberTheory/ZeroHeadBindingControls.lean/declarations/equal-height-separated-disks-accepted.md) | 29 | `result-track:151a87f2ea1dffcc49c72cb07f9e4aa276009ad7421a62556362f13a80c3d256` |
-| 3 | `theorem` | [closed_cutoff_equality_accepted](../../../../NumberTheory/ZeroHeadBindingControls.lean/declarations/closed-cutoff-equality-accepted.md) | 34 | `result-track:38e4698248b882d334fd7717c8b34256c61d6490a46507efd0f7fdec3141cc5b` |
-| 4 | `theorem` | [protruding_disk_rejected](../../../../NumberTheory/ZeroHeadBindingControls.lean/declarations/protruding-disk-rejected.md) | 37 | `result-track:d4ff3aeefc8b099a581aeafb3e20b63f623e2b7957c38156eb8c5bb2522883e2` |
-| 5 | `theorem` | [negative_radius_rejected](../../../../NumberTheory/ZeroHeadBindingControls.lean/declarations/negative-radius-rejected.md) | 40 | `result-track:f95777993156d5ca3e582be3522957bb077546b4a9849262b7b31ed8263b0354` |
-| 6 | `theorem` | [duplicated_zero_radius_disk_rejected](../../../../NumberTheory/ZeroHeadBindingControls.lean/declarations/duplicated-zero-radius-disk-rejected.md) | 43 | `result-track:f9f8e7b73d7fe5f015f7f57c0764b136653187e405cc2e1aba0c2215303e489d` |
-| 7 | `theorem` | [equal_total_does_not_imply_surjective](../../../../NumberTheory/ZeroHeadBindingControls.lean/declarations/equal-total-does-not-imply-surjective.md) | 47 | `result-track:73306cb487bf2421920f02e993e54ced4ff4c0b45abdd1c3b082e42f1a42d238` |
-| 8 | `theorem` | [zero_mass_omission_invisible](../../../../NumberTheory/ZeroHeadBindingControls.lean/declarations/zero-mass-omission-invisible.md) | 56 | `result-track:f9f05f14801d0a28f065511eb121e1da67ca9cb24a9a35be7a8a15d49ec23b90` |
-| 9 | `theorem` | [inflated_weight_is_not_a_lower_bound](../../../../NumberTheory/ZeroHeadBindingControls.lean/declarations/inflated-weight-is-not-a-lower-bound.md) | 67 | `result-track:bba4466d5bdb5444f84df760249e44319b9846dfd12ef131027b0214b145ff6c` |
-| 10 | `theorem` | [multiplicity_mass_not_cardinality](../../../../NumberTheory/ZeroHeadBindingControls.lean/declarations/multiplicity-mass-not-cardinality.md) | 71 | `result-track:ae5b4edd63fd2829a57feb4cfb48697eb9df6bf7ab534ad4ee9b8186d57b3a73` |
-| 11 | `theorem` | [empty_geometry_is_vacuous](../../../../NumberTheory/ZeroHeadBindingControls.lean/declarations/empty-geometry-is-vacuous.md) | 76 | `result-track:5a4a29f8961df9ca0ba391c11c791b3fb2070f730665227623b8bc7f5c411fc1` |
-| 12 | `theorem` | [empty_total_forces_empty_head](../../../../NumberTheory/ZeroHeadBindingControls.lean/declarations/empty-total-forces-empty-head.md) | 80 | `result-track:15aa0a564cc17c5e70fdf5d9b2bd331b6daa62096413b151c9af1793a62125e9` |
+| 1 | `theorem` | [touching_disks_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZeroHeadBindingControls.lean/declarations/touching-disks-rejected.md) | 24 | `result-track:9f4b0c36b8900df352dcf8b8c94959e8f7c29d293c852a18dc621163f1b94f5f` |
+| 2 | `theorem` | [equal_height_separated_disks_accepted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZeroHeadBindingControls.lean/declarations/equal-height-separated-disks-accepted.md) | 29 | `result-track:151a87f2ea1dffcc49c72cb07f9e4aa276009ad7421a62556362f13a80c3d256` |
+| 3 | `theorem` | [closed_cutoff_equality_accepted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZeroHeadBindingControls.lean/declarations/closed-cutoff-equality-accepted.md) | 34 | `result-track:38e4698248b882d334fd7717c8b34256c61d6490a46507efd0f7fdec3141cc5b` |
+| 4 | `theorem` | [protruding_disk_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZeroHeadBindingControls.lean/declarations/protruding-disk-rejected.md) | 37 | `result-track:d4ff3aeefc8b099a581aeafb3e20b63f623e2b7957c38156eb8c5bb2522883e2` |
+| 5 | `theorem` | [negative_radius_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZeroHeadBindingControls.lean/declarations/negative-radius-rejected.md) | 40 | `result-track:f95777993156d5ca3e582be3522957bb077546b4a9849262b7b31ed8263b0354` |
+| 6 | `theorem` | [duplicated_zero_radius_disk_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZeroHeadBindingControls.lean/declarations/duplicated-zero-radius-disk-rejected.md) | 43 | `result-track:f9f8e7b73d7fe5f015f7f57c0764b136653187e405cc2e1aba0c2215303e489d` |
+| 7 | `theorem` | [equal_total_does_not_imply_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZeroHeadBindingControls.lean/declarations/equal-total-does-not-imply-surjective.md) | 47 | `result-track:73306cb487bf2421920f02e993e54ced4ff4c0b45abdd1c3b082e42f1a42d238` |
+| 8 | `theorem` | [zero_mass_omission_invisible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZeroHeadBindingControls.lean/declarations/zero-mass-omission-invisible.md) | 56 | `result-track:f9f05f14801d0a28f065511eb121e1da67ca9cb24a9a35be7a8a15d49ec23b90` |
+| 9 | `theorem` | [inflated_weight_is_not_a_lower_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZeroHeadBindingControls.lean/declarations/inflated-weight-is-not-a-lower-bound.md) | 67 | `result-track:bba4466d5bdb5444f84df760249e44319b9846dfd12ef131027b0214b145ff6c` |
+| 10 | `theorem` | [multiplicity_mass_not_cardinality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZeroHeadBindingControls.lean/declarations/multiplicity-mass-not-cardinality.md) | 71 | `result-track:ae5b4edd63fd2829a57feb4cfb48697eb9df6bf7ab534ad4ee9b8186d57b3a73` |
+| 11 | `theorem` | [empty_geometry_is_vacuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZeroHeadBindingControls.lean/declarations/empty-geometry-is-vacuous.md) | 76 | `result-track:5a4a29f8961df9ca0ba391c11c791b3fb2070f730665227623b8bc7f5c411fc1` |
+| 12 | `theorem` | [empty_total_forces_empty_head](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZeroHeadBindingControls.lean/declarations/empty-total-forces-empty-head.md) | 80 | `result-track:15aa0a564cc17c5e70fdf5d9b2bd331b6daa62096413b151c9af1793a62125e9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

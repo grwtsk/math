@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/SimplicialSetOpPublic.lean/index.md) · [Full source](../../../../AlgebraicTopology/SimplicialSetOpPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialSetOpPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialSetOpPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,17 +57,17 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [opFunctor](../../../../AlgebraicTopology/SimplicialSetOpPublic.lean/declarations/opfunctor.md) | 44 | `declaration-track:400a4b1bf14f66d1bd186fc54f397016b8643f27202b073ff4c2d1e76a456c22` |
-| 2 | `abbrev` | [op](../../../../AlgebraicTopology/SimplicialSetOpPublic.lean/declarations/op-source-edition-2.md) | 47 | `declaration-track:92ea366d3aaf5607ca0fee33f5ea970debcf501ba80f9ab5895a55cd101a1f98` |
-| 3 | `def` | [opObjEquiv](../../../../AlgebraicTopology/SimplicialSetOpPublic.lean/declarations/opobjequiv.md) | 50 | `declaration-track:0eb4b3a3d1df62dbd23886f9db84dae4a3668bf78fd13b23b77f702517d446a9` |
-| 4 | `lemma` | [opFunctor_map](../../../../AlgebraicTopology/SimplicialSetOpPublic.lean/declarations/opfunctor-map.md) | 53 | `result-track:4349357ae4f769503af1765924f65ef1d51965a292c73ed9cd7c3bd4f7b0a3f8` |
-| 5 | `lemma` | [op_map](../../../../AlgebraicTopology/SimplicialSetOpPublic.lean/declarations/op-map.md) | 57 | `result-track:819d47c0e2d8a844a05c98c990c516ac7b67a34ede694c09d78835fdcc15713b` |
-| 6 | `lemma` | [op_δ](../../../../AlgebraicTopology/SimplicialSetOpPublic.lean/declarations/op.md) | 63 | `result-track:34949b7ccbbbe091e90dbb1176061adf0f444ffe79e2583927fe063b06f59830` |
-| 7 | `lemma` | [op_σ](../../../../AlgebraicTopology/SimplicialSetOpPublic.lean/declarations/op-source-edition-3.md) | 68 | `result-track:cdc7cbe968320b8d6e31d9951dff094803cd83a802e807531803afc7c09dbdb5` |
-| 8 | `lemma` | [δ_opObjEquiv](../../../../AlgebraicTopology/SimplicialSetOpPublic.lean/declarations/opobjequiv-source-edition-3.md) | 72 | `result-track:5a05ddc73baa4f6146c834736270d66204d7f50230ead0c1fa8c7695d5e30999` |
-| 9 | `lemma` | [σ_opObjEquiv](../../../../AlgebraicTopology/SimplicialSetOpPublic.lean/declarations/opobjequiv-source-edition-2.md) | 76 | `result-track:12dfe4804bdf68286b6c9c75fabf07bec5ee2a7d6a5afaf3119bf22e11dbe7ca` |
-| 10 | `def` | [opFunctorCompOpFunctorIso](../../../../AlgebraicTopology/SimplicialSetOpPublic.lean/declarations/opfunctorcompopfunctoriso.md) | 83 | `declaration-track:4de75f20a83f4613b78e3620d9863648566720338f3988fe53ddbf3fc7d4e166` |
-| 11 | `def` | [opEquivalence](../../../../AlgebraicTopology/SimplicialSetOpPublic.lean/declarations/opequivalence.md) | 90 | `declaration-track:09aaf0db69b8ba40b46349544fbf0ba0cfcdb352a7ff67e2705fe85189bbdf79` |
+| 1 | `def` | [opFunctor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialSetOpPublic.lean/declarations/opfunctor.md) | 44 | `declaration-track:400a4b1bf14f66d1bd186fc54f397016b8643f27202b073ff4c2d1e76a456c22` |
+| 2 | `abbrev` | [op](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialSetOpPublic.lean/declarations/op-source-edition-2.md) | 47 | `declaration-track:92ea366d3aaf5607ca0fee33f5ea970debcf501ba80f9ab5895a55cd101a1f98` |
+| 3 | `def` | [opObjEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialSetOpPublic.lean/declarations/opobjequiv.md) | 50 | `declaration-track:0eb4b3a3d1df62dbd23886f9db84dae4a3668bf78fd13b23b77f702517d446a9` |
+| 4 | `lemma` | [opFunctor_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialSetOpPublic.lean/declarations/opfunctor-map.md) | 53 | `result-track:4349357ae4f769503af1765924f65ef1d51965a292c73ed9cd7c3bd4f7b0a3f8` |
+| 5 | `lemma` | [op_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialSetOpPublic.lean/declarations/op-map.md) | 57 | `result-track:819d47c0e2d8a844a05c98c990c516ac7b67a34ede694c09d78835fdcc15713b` |
+| 6 | `lemma` | [op_δ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialSetOpPublic.lean/declarations/op.md) | 63 | `result-track:34949b7ccbbbe091e90dbb1176061adf0f444ffe79e2583927fe063b06f59830` |
+| 7 | `lemma` | [op_σ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialSetOpPublic.lean/declarations/op-source-edition-3.md) | 68 | `result-track:cdc7cbe968320b8d6e31d9951dff094803cd83a802e807531803afc7c09dbdb5` |
+| 8 | `lemma` | [δ_opObjEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialSetOpPublic.lean/declarations/opobjequiv-source-edition-3.md) | 72 | `result-track:5a05ddc73baa4f6146c834736270d66204d7f50230ead0c1fa8c7695d5e30999` |
+| 9 | `lemma` | [σ_opObjEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialSetOpPublic.lean/declarations/opobjequiv-source-edition-2.md) | 76 | `result-track:12dfe4804bdf68286b6c9c75fabf07bec5ee2a7d6a5afaf3119bf22e11dbe7ca` |
+| 10 | `def` | [opFunctorCompOpFunctorIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialSetOpPublic.lean/declarations/opfunctorcompopfunctoriso.md) | 83 | `declaration-track:4de75f20a83f4613b78e3620d9863648566720338f3988fe53ddbf3fc7d4e166` |
+| 11 | `def` | [opEquivalence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialSetOpPublic.lean/declarations/opequivalence.md) | 90 | `declaration-track:09aaf0db69b8ba40b46349544fbf0ba0cfcdb352a7ff67e2705fe85189bbdf79` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

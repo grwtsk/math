@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ScopeFixturesNamespacedEndpointOneRequired.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ScopeFixturesNamespacedEndpointOneRequired.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ScopeFixturesNamespacedEndpointOneRequired.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ScopeFixturesNamespacedEndpointOneRequired.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [endpoint_one_required](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ScopeFixturesNamespacedEndpointOneRequired.lean/declarations/endpoint-one-required.md) | 22 | `result-track:0fe37a1275083c027afc179364f1a3ebb48edb17232e3858a4d9feca1a9eff06` |
-| 2 | `theorem` | [complete_drift_required](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ScopeFixturesNamespacedEndpointOneRequired.lean/declarations/complete-drift-required.md) | 29 | `result-track:589fd843910b320b622d4c6624baec47eab826ecf199b837ceaca82da2228c92` |
-| 3 | `theorem` | [actual_removed_error_negative_difference](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ScopeFixturesNamespacedEndpointOneRequired.lean/declarations/actual-removed-error-negative-difference.md) | 37 | `result-track:ea84255fad1031fdda4659e190987e04dee92a84043593f6661c8a5ec7e2d157` |
+| 1 | `theorem` | [endpoint_one_required](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ScopeFixturesNamespacedEndpointOneRequired.lean/declarations/endpoint-one-required.md) | 22 | `result-track:0fe37a1275083c027afc179364f1a3ebb48edb17232e3858a4d9feca1a9eff06` |
+| 2 | `theorem` | [complete_drift_required](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ScopeFixturesNamespacedEndpointOneRequired.lean/declarations/complete-drift-required.md) | 29 | `result-track:589fd843910b320b622d4c6624baec47eab826ecf199b837ceaca82da2228c92` |
+| 3 | `theorem` | [actual_removed_error_negative_difference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ScopeFixturesNamespacedEndpointOneRequired.lean/declarations/actual-removed-error-negative-difference.md) | 37 | `result-track:ea84255fad1031fdda4659e190987e04dee92a84043593f6661c8a5ec7e2d157` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

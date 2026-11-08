@@ -78,7 +78,7 @@ and the source-exact weighted residual consumer. The local bridge is in
 error budget while retaining the boundary cost and signed model. Its three new
 theorems remain source proof candidates, with compilation, fresh independent
 kernel checking and complete axiom auditing `NOT_RUN`. The static verification
-target is [`openai-weighted-residual-budget-20261028.toml`](../../mathematics/_verification/targets/NumberTheory/Moebius/openai-weighted-residual-budget-20261028.toml).
+target is [`openai-weighted-residual-budget-20261028.toml`](../../mathematics/_verification/targets/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/openai-weighted-residual-budget-20261028.toml).
 Collection re-exports remain distinct from these mathematical bridge obligations.
 
 ## Consumer wave 2026-10-29

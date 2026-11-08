@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RelationData.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RelationData.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RelationData.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RelationData.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ModularFormLocus](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RelationData.lean/declarations/modularformlocus.md) | 37 | `declaration-track:5af7ed7bd07b1f783e5bd4081753c96c7537895c3b3435e94481a2884f85e7c1` |
+| 1 | `structure` | [ModularFormLocus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RelationData.lean/declarations/modularformlocus.md) | 37 | `declaration-track:5af7ed7bd07b1f783e5bd4081753c96c7537895c3b3435e94481a2884f85e7c1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

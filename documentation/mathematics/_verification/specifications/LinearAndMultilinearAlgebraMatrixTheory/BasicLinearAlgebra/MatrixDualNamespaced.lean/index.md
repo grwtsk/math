@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixDualNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixDualNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixDualNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixDualNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [LinearMap.toMatrix_transpose](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixDualNamespaced.lean/declarations/linearmap-tomatrix-transpose.md) | 39 | `result-track:de50d143996e6e5d6ec71df73df3c32dc0d662be054051d9cc08dccc0ac0c0fa` |
-| 2 | `theorem` | [Matrix.toLin_transpose](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixDualNamespaced.lean/declarations/matrix-tolin-transpose.md) | 47 | `result-track:a5ec722157b1f1ba9f20795c693ff175fc04ed8dc012e0c76859cdf5e9788461` |
+| 1 | `theorem` | [LinearMap.toMatrix_transpose](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixDualNamespaced.lean/declarations/linearmap-tomatrix-transpose.md) | 39 | `result-track:de50d143996e6e5d6ec71df73df3c32dc0d662be054051d9cc08dccc0ac0c0fa` |
+| 2 | `theorem` | [Matrix.toLin_transpose](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixDualNamespaced.lean/declarations/matrix-tolin-transpose.md) | 47 | `result-track:a5ec722157b1f1ba9f20795c693ff175fc04ed8dc012e0c76859cdf5e9788461` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

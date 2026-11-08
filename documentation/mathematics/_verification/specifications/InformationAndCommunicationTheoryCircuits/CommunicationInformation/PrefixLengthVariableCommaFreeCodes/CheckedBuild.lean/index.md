@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../InformationAndCommunicationTheoryCircuits/CommunicationInformation/PrefixLengthVariableCommaFreeCodes/CheckedBuild.lean/index.md) · [Full source](../../../../../../InformationAndCommunicationTheoryCircuits/CommunicationInformation/PrefixLengthVariableCommaFreeCodes/CheckedBuild.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/InformationAndCommunicationTheoryCircuits/CommunicationInformation/PrefixLengthVariableCommaFreeCodes/CheckedBuild.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/InformationAndCommunicationTheoryCircuits/CommunicationInformation/PrefixLengthVariableCommaFreeCodes/CheckedBuild.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.InformationTheory.Huffman.HeapRefinement`](../../../../../../InformationAndCommunicationTheoryCircuits/CommunicationInformation/PrefixLengthVariableCommaFreeCodes/HeapRefinement.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.InformationTheory.Huffman.Bounds`](../../../../../../InformationAndCommunicationTheoryCircuits/CommunicationInformation/PrefixLengthVariableCommaFreeCodes/Bounds.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.InformationTheory.Huffman.HeapRefinement`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/InformationAndCommunicationTheoryCircuits/CommunicationInformation/PrefixLengthVariableCommaFreeCodes/HeapRefinement.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.InformationTheory.Huffman.Bounds`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/InformationAndCommunicationTheoryCircuits/CommunicationInformation/PrefixLengthVariableCommaFreeCodes/Bounds.lean/index.md) — import line 2; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [CheckedHeapBuild](../../../../../../InformationAndCommunicationTheoryCircuits/CommunicationInformation/PrefixLengthVariableCommaFreeCodes/CheckedBuild.lean/declarations/checkedheapbuild.md) | 16 | `declaration-track:94896e1ffa692c1d43b6c5252429f6039623c876a95cb5497b953ad4b0305469` |
-| 2 | `theorem` | [all_merges_checked](../../../../../../InformationAndCommunicationTheoryCircuits/CommunicationInformation/PrefixLengthVariableCommaFreeCodes/CheckedBuild.lean/declarations/all-merges-checked.md) | 30 | `result-track:f7d64b1744ee2cf669220f9b6ceb137f87ad321606e820221f3ca54f2cad0707` |
-| 3 | `theorem` | [fromWeights_refinement](../../../../../../InformationAndCommunicationTheoryCircuits/CommunicationInformation/PrefixLengthVariableCommaFreeCodes/CheckedBuild.lean/declarations/fromweights-refinement.md) | 47 | `result-track:4ce104de476555955ee5c0e802cb862ce9105c31a027c4f114f9f208f6a21e99` |
+| 1 | `inductive` | [CheckedHeapBuild](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/InformationAndCommunicationTheoryCircuits/CommunicationInformation/PrefixLengthVariableCommaFreeCodes/CheckedBuild.lean/declarations/checkedheapbuild.md) | 16 | `declaration-track:94896e1ffa692c1d43b6c5252429f6039623c876a95cb5497b953ad4b0305469` |
+| 2 | `theorem` | [all_merges_checked](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/InformationAndCommunicationTheoryCircuits/CommunicationInformation/PrefixLengthVariableCommaFreeCodes/CheckedBuild.lean/declarations/all-merges-checked.md) | 30 | `result-track:f7d64b1744ee2cf669220f9b6ceb137f87ad321606e820221f3ca54f2cad0707` |
+| 3 | `theorem` | [fromWeights_refinement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/InformationAndCommunicationTheoryCircuits/CommunicationInformation/PrefixLengthVariableCommaFreeCodes/CheckedBuild.lean/declarations/fromweights-refinement.md) | 47 | `result-track:4ce104de476555955ee5c0e802cb862ce9105c31a027c4f114f9f208f6a21e99` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

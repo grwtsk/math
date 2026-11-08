@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MellinNormalizedGrowingCellPackingControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MellinNormalizedGrowingCellPackingControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MellinNormalizedGrowingCellPackingControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MellinNormalizedGrowingCellPackingControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.MellinNormalizedGrowingCellPacking`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MellinNormalizedGrowingCellPacking.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.MellinNormalizedGrowingCellPacking`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MellinNormalizedGrowingCellPacking.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [growing_stage_nonnegative](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MellinNormalizedGrowingCellPackingControls.lean/declarations/growing-stage-nonnegative.md) | 14 | `result-track:acf7f8e7d173fa87bd16ca5d7ff58644f9875822dba7df4fdbaf64c6c2cf5adc` |
-| 2 | `theorem` | [growing_stage_monotone](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MellinNormalizedGrowingCellPackingControls.lean/declarations/growing-stage-monotone.md) | 18 | `result-track:01949d2ed2582eff70f814531b76e10fec7338f0fdbeabda2c060349855cc890` |
+| 1 | `theorem` | [growing_stage_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MellinNormalizedGrowingCellPackingControls.lean/declarations/growing-stage-nonnegative.md) | 14 | `result-track:acf7f8e7d173fa87bd16ca5d7ff58644f9875822dba7df4fdbaf64c6c2cf5adc` |
+| 2 | `theorem` | [growing_stage_monotone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MellinNormalizedGrowingCellPackingControls.lean/declarations/growing-stage-monotone.md) | 18 | `result-track:01949d2ed2582eff70f814531b76e10fec7338f0fdbeabda2c060349855cc890` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

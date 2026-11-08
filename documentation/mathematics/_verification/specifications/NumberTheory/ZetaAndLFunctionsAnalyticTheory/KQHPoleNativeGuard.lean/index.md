@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/KQHPoleNativeGuard.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/KQHPoleNativeGuard.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/KQHPoleNativeGuard.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/KQHPoleNativeGuard.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [localized_dilation_value](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/KQHPoleNativeGuard.lean/declarations/localized-dilation-value.md) | 32 | `result-track:0e9c2640fdfb2393b78025cc4c38bac803b096410a9ca300c4107017e376ca69` |
-| 2 | `theorem` | [sourceSignedOperator_opposite_signs](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/KQHPoleNativeGuard.lean/declarations/sourcesignedoperator-opposite-signs.md) | 44 | `result-track:992fa6559dd5ed5f892f52951a7aade8c01b5052ad9b86bd8745372179fb39c0` |
+| 1 | `theorem` | [localized_dilation_value](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/KQHPoleNativeGuard.lean/declarations/localized-dilation-value.md) | 32 | `result-track:0e9c2640fdfb2393b78025cc4c38bac803b096410a9ca300c4107017e376ca69` |
+| 2 | `theorem` | [sourceSignedOperator_opposite_signs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/KQHPoleNativeGuard.lean/declarations/sourcesignedoperator-opposite-signs.md) | 44 | `result-track:992fa6559dd5ed5f892f52951a7aade8c01b5052ad9b86bd8745372179fb39c0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

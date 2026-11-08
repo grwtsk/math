@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ShrinkingLemmaPublic.lean/index.md) · [Full source](../../../../GeneralTopology/ShrinkingLemmaPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ShrinkingLemmaPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ShrinkingLemmaPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_subset_iUnion_ball_radius_lt](../../../../GeneralTopology/ShrinkingLemmaPublic.lean/declarations/exists-subset-iunion-ball-radius-lt.md) | 41 | `result-track:35e07e3dca2a2ee07f7a3ad57036c3c1cee365ee248aba22ac438e6f179f1fc5` |
-| 2 | `theorem` | [exists_iUnion_ball_eq_radius_lt](../../../../GeneralTopology/ShrinkingLemmaPublic.lean/declarations/exists-iunion-ball-eq-radius-lt.md) | 53 | `result-track:b5dd4a6c3dd9fded223763d0f5c45b5e4cde0e756a8915600f58a4cc4db216bf` |
-| 3 | `theorem` | [exists_subset_iUnion_ball_radius_pos_lt](../../../../GeneralTopology/ShrinkingLemmaPublic.lean/declarations/exists-subset-iunion-ball-radius-pos-lt.md) | 62 | `result-track:0e2b1f35d6b26b78811b3c575c471f0175b1fcc7437014fadc685f5995d6e003` |
-| 4 | `theorem` | [exists_iUnion_ball_eq_radius_pos_lt](../../../../GeneralTopology/ShrinkingLemmaPublic.lean/declarations/exists-iunion-ball-eq-radius-pos-lt.md) | 74 | `result-track:e906ddde6d6c9d7432cac9b6d4ba73fc4d287139dce584e7871029b9b4ab43ba` |
-| 5 | `theorem` | [exists_locallyFinite_subset_iUnion_ball_radius_lt](../../../../GeneralTopology/ShrinkingLemmaPublic.lean/declarations/exists-locallyfinite-subset-iunion-ball-radius-lt.md) | 92 | `result-track:f9aff4ac826b579f898a458637913f9c388ccb62d38ef8f51db605c3566b0569` |
-| 6 | `theorem` | [exists_locallyFinite_iUnion_eq_ball_radius_lt](../../../../GeneralTopology/ShrinkingLemmaPublic.lean/declarations/exists-locallyfinite-iunion-eq-ball-radius-lt.md) | 116 | `result-track:901ae565bc796ab11facb00401e853183a00116f16f96d11052ed2f88e4ee063` |
+| 1 | `theorem` | [exists_subset_iUnion_ball_radius_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ShrinkingLemmaPublic.lean/declarations/exists-subset-iunion-ball-radius-lt.md) | 41 | `result-track:35e07e3dca2a2ee07f7a3ad57036c3c1cee365ee248aba22ac438e6f179f1fc5` |
+| 2 | `theorem` | [exists_iUnion_ball_eq_radius_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ShrinkingLemmaPublic.lean/declarations/exists-iunion-ball-eq-radius-lt.md) | 53 | `result-track:b5dd4a6c3dd9fded223763d0f5c45b5e4cde0e756a8915600f58a4cc4db216bf` |
+| 3 | `theorem` | [exists_subset_iUnion_ball_radius_pos_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ShrinkingLemmaPublic.lean/declarations/exists-subset-iunion-ball-radius-pos-lt.md) | 62 | `result-track:0e2b1f35d6b26b78811b3c575c471f0175b1fcc7437014fadc685f5995d6e003` |
+| 4 | `theorem` | [exists_iUnion_ball_eq_radius_pos_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ShrinkingLemmaPublic.lean/declarations/exists-iunion-ball-eq-radius-pos-lt.md) | 74 | `result-track:e906ddde6d6c9d7432cac9b6d4ba73fc4d287139dce584e7871029b9b4ab43ba` |
+| 5 | `theorem` | [exists_locallyFinite_subset_iUnion_ball_radius_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ShrinkingLemmaPublic.lean/declarations/exists-locallyfinite-subset-iunion-ball-radius-lt.md) | 92 | `result-track:f9aff4ac826b579f898a458637913f9c388ccb62d38ef8f51db605c3566b0569` |
+| 6 | `theorem` | [exists_locallyFinite_iUnion_eq_ball_radius_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ShrinkingLemmaPublic.lean/declarations/exists-locallyfinite-iunion-eq-ball-radius-lt.md) | 116 | `result-track:901ae565bc796ab11facb00401e853183a00116f16f96d11052ed2f88e4ee063` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SheavesFunctorsNamespacedPushforwardForget.lean/index.md) · [Full source](../../../../GeneralTopology/SheavesFunctorsNamespacedPushforwardForget.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheavesFunctorsNamespacedPushforwardForget.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheavesFunctorsNamespacedPushforwardForget.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,17 +58,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [pushforward_sheaf_of_sheaf](../../../../GeneralTopology/SheavesFunctorsNamespacedPushforwardForget.lean/declarations/pushforward-sheaf-of-sheaf.md) | 59 | `result-track:8430a58d8c3dd0eddae73b508413aaa6b9ba9cabbb755480611d8189a7822865` |
-| 2 | `def` | [pushforward](../../../../GeneralTopology/SheavesFunctorsNamespacedPushforwardForget.lean/declarations/pushforward.md) | 66 | `declaration-track:f4d7d04b1d8afee1ddb3e74bd42067dde09a3286359c3c5682044e9705b4c3c6` |
-| 3 | `lemma` | [pushforward_forget](../../../../GeneralTopology/SheavesFunctorsNamespacedPushforwardForget.lean/declarations/pushforward-forget.md) | 69 | `result-track:360cc18d5e83408853cefee9d6499b8446ee13cdca887f7024802e79f4c7f41b` |
-| 4 | `def` | [pushforwardForgetIso](../../../../GeneralTopology/SheavesFunctorsNamespacedPushforwardForget.lean/declarations/pushforwardforgetiso.md) | 75 | `declaration-track:bd266899983839ddfded6bcbab8403cf9e8399bb6437be9122cc6449e9567864` |
-| 5 | `lemma` | [pushforward_obj_val](../../../../GeneralTopology/SheavesFunctorsNamespacedPushforwardForget.lean/declarations/pushforward-obj-val.md) | 80 | `result-track:05240bafd041c3b16de505d675f4c8812ffd0f0b259fa7b34f02b2aae75cc429` |
-| 6 | `lemma` | [pushforward_map](../../../../GeneralTopology/SheavesFunctorsNamespacedPushforwardForget.lean/declarations/pushforward-map.md) | 83 | `result-track:ca918715097fcb8808a44de2f7f797b4089b303c95e296e098112ba03f1caddf` |
-| 7 | `def` | [pullback](../../../../GeneralTopology/SheavesFunctorsNamespacedPushforwardForget.lean/declarations/pullback.md) | 95 | `declaration-track:5c11d200f7b52deecd9c857dcc04536e73440af78f4ea8c993bbea009530bab1` |
-| 8 | `def` | [pullbackIso](../../../../GeneralTopology/SheavesFunctorsNamespacedPushforwardForget.lean/declarations/pullbackiso.md) | 102 | `declaration-track:7d15ca4c392f78cb5c772070d5906c9da61b1389c931fedef9a3da076ca4c050` |
-| 9 | `def` | [pullbackPushforwardAdjunction](../../../../GeneralTopology/SheavesFunctorsNamespacedPushforwardForget.lean/declarations/pullbackpushforwardadjunction.md) | 107 | `declaration-track:eda9550b08e38cf5cb5cf43c04c3e58c5137e200e3cc1226ebbbc589a3efd410` |
-| 10 | `instance` | [(anonymous)](../../../../GeneralTopology/SheavesFunctorsNamespacedPushforwardForget.lean/declarations/instance.md) | 111 | `declaration-track:1b47630424a1ba4c4335c5d151d89574b2e3190333ecf8a197d74912e5c7a7ba` |
-| 11 | `instance` | [(anonymous)](../../../../GeneralTopology/SheavesFunctorsNamespacedPushforwardForget.lean/declarations/instance-source-edition-2.md) | 112 | `declaration-track:4e3938d0528328b340144581d3628ae57d90feba2d17a46f30a7c2c1b51b2ac1` |
+| 1 | `theorem` | [pushforward_sheaf_of_sheaf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheavesFunctorsNamespacedPushforwardForget.lean/declarations/pushforward-sheaf-of-sheaf.md) | 59 | `result-track:8430a58d8c3dd0eddae73b508413aaa6b9ba9cabbb755480611d8189a7822865` |
+| 2 | `def` | [pushforward](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheavesFunctorsNamespacedPushforwardForget.lean/declarations/pushforward.md) | 66 | `declaration-track:f4d7d04b1d8afee1ddb3e74bd42067dde09a3286359c3c5682044e9705b4c3c6` |
+| 3 | `lemma` | [pushforward_forget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheavesFunctorsNamespacedPushforwardForget.lean/declarations/pushforward-forget.md) | 69 | `result-track:360cc18d5e83408853cefee9d6499b8446ee13cdca887f7024802e79f4c7f41b` |
+| 4 | `def` | [pushforwardForgetIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheavesFunctorsNamespacedPushforwardForget.lean/declarations/pushforwardforgetiso.md) | 75 | `declaration-track:bd266899983839ddfded6bcbab8403cf9e8399bb6437be9122cc6449e9567864` |
+| 5 | `lemma` | [pushforward_obj_val](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheavesFunctorsNamespacedPushforwardForget.lean/declarations/pushforward-obj-val.md) | 80 | `result-track:05240bafd041c3b16de505d675f4c8812ffd0f0b259fa7b34f02b2aae75cc429` |
+| 6 | `lemma` | [pushforward_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheavesFunctorsNamespacedPushforwardForget.lean/declarations/pushforward-map.md) | 83 | `result-track:ca918715097fcb8808a44de2f7f797b4089b303c95e296e098112ba03f1caddf` |
+| 7 | `def` | [pullback](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheavesFunctorsNamespacedPushforwardForget.lean/declarations/pullback.md) | 95 | `declaration-track:5c11d200f7b52deecd9c857dcc04536e73440af78f4ea8c993bbea009530bab1` |
+| 8 | `def` | [pullbackIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheavesFunctorsNamespacedPushforwardForget.lean/declarations/pullbackiso.md) | 102 | `declaration-track:7d15ca4c392f78cb5c772070d5906c9da61b1389c931fedef9a3da076ca4c050` |
+| 9 | `def` | [pullbackPushforwardAdjunction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheavesFunctorsNamespacedPushforwardForget.lean/declarations/pullbackpushforwardadjunction.md) | 107 | `declaration-track:eda9550b08e38cf5cb5cf43c04c3e58c5137e200e3cc1226ebbbc589a3efd410` |
+| 10 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheavesFunctorsNamespacedPushforwardForget.lean/declarations/instance.md) | 111 | `declaration-track:1b47630424a1ba4c4335c5d151d89574b2e3190333ecf8a197d74912e5c7a7ba` |
+| 11 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheavesFunctorsNamespacedPushforwardForget.lean/declarations/instance-source-edition-2.md) | 112 | `declaration-track:4e3938d0528328b340144581d3628ae57d90feba2d17a46f30a7c2c1b51b2ac1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

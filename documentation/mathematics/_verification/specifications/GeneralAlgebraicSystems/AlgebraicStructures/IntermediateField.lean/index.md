@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IntermediateField.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IntermediateField.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/IntermediateField.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/IntermediateField.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [charP](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IntermediateField.lean/declarations/charp-source-edition-3.md) | 25 | `declaration-track:8e1d6eeb70c391d54fbac8908a9a53e6554c7bd25032d32c6ac99f67fd703f23` |
-| 2 | `instance` | [expChar](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IntermediateField.lean/declarations/expchar-source-edition-2.md) | 27 | `declaration-track:88efb772ce37f78b3d6dce729981a977dc7a902e70c8113b6ccfce3c94e93186` |
-| 3 | `instance` | [charZero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IntermediateField.lean/declarations/charzero.md) | 35 | `declaration-track:78e5ffb25a33eb09becf696683d19cda88322c5df90c30536c46c9a4563116cc` |
-| 4 | `instance` | [charP](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IntermediateField.lean/declarations/charp.md) | 38 | `declaration-track:0153c65096db3974e24529ef0029f1197c0c0f5fa057999a8022bb5cc8c5482e` |
-| 5 | `instance` | [expChar](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IntermediateField.lean/declarations/expchar-source-edition-3.md) | 41 | `declaration-track:933d95a8b2cef622520cd0e772c9e6b22716d2f853ac053912a3a36dfadbfe34` |
-| 6 | `instance` | [charP'](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IntermediateField.lean/declarations/charp-source-edition-2.md) | 44 | `declaration-track:297e1676399ca2a3f832e4ba5454c7dbd6c8459ed541d53721f760e3144a1fb1` |
-| 7 | `instance` | [expChar'](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IntermediateField.lean/declarations/expchar.md) | 46 | `declaration-track:46579b06378ee5a9bd2a3b515bfaba250e5c0dbeb855cb91a34c4d14ecfbc158` |
+| 1 | `instance` | [charP](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/IntermediateField.lean/declarations/charp-source-edition-3.md) | 25 | `declaration-track:8e1d6eeb70c391d54fbac8908a9a53e6554c7bd25032d32c6ac99f67fd703f23` |
+| 2 | `instance` | [expChar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/IntermediateField.lean/declarations/expchar-source-edition-2.md) | 27 | `declaration-track:88efb772ce37f78b3d6dce729981a977dc7a902e70c8113b6ccfce3c94e93186` |
+| 3 | `instance` | [charZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/IntermediateField.lean/declarations/charzero.md) | 35 | `declaration-track:78e5ffb25a33eb09becf696683d19cda88322c5df90c30536c46c9a4563116cc` |
+| 4 | `instance` | [charP](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/IntermediateField.lean/declarations/charp.md) | 38 | `declaration-track:0153c65096db3974e24529ef0029f1197c0c0f5fa057999a8022bb5cc8c5482e` |
+| 5 | `instance` | [expChar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/IntermediateField.lean/declarations/expchar-source-edition-3.md) | 41 | `declaration-track:933d95a8b2cef622520cd0e772c9e6b22716d2f853ac053912a3a36dfadbfe34` |
+| 6 | `instance` | [charP'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/IntermediateField.lean/declarations/charp-source-edition-2.md) | 44 | `declaration-track:297e1676399ca2a3f832e4ba5454c7dbd6c8459ed541d53721f760e3144a1fb1` |
+| 7 | `instance` | [expChar'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/IntermediateField.lean/declarations/expchar.md) | 46 | `declaration-track:46579b06378ee5a9bd2a3b515bfaba250e5c0dbeb855cb91a34c4d14ecfbc158` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SpinorSoundnessNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SpinorSoundnessNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SpinorSoundnessNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SpinorSoundnessNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [sampleUUID](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SpinorSoundnessNamespaced.lean/declarations/sampleuuid.md) | 21 | `declaration-track:e73b7b6c934f8cf83b9d62675d871f912cf0c67872b2d4d48be5497de86a95d3` |
-| 2 | `def` | [dummyExpr](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SpinorSoundnessNamespaced.lean/declarations/dummyexpr.md) | 23 | `declaration-track:a4dff2436ad2b9306a99c301e0eb44058e833dbf62cbe36ae4321eb5fb187f4a` |
-| 3 | `def` | [dummyProof](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SpinorSoundnessNamespaced.lean/declarations/dummyproof.md) | 25 | `declaration-track:a8185761df5a9409b42d8042fe8416ba7203ce6a784eb437f23cadff86863569` |
-| 4 | `def` | [exampleSpinorEdge](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SpinorSoundnessNamespaced.lean/declarations/examplespinoredge.md) | 27 | `declaration-track:c86ae6778608f2ddfd8d5416e3e4c61c80c9082bbb6423a73ad8fb414d6cb56b` |
-| 5 | `def` | [minimalDag](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SpinorSoundnessNamespaced.lean/declarations/minimaldag.md) | 38 | `declaration-track:8dcf8991f65ebd0b26138b5e787337cea8907fc4fedcf63276334376e8bd93f1` |
+| 1 | `def` | [sampleUUID](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SpinorSoundnessNamespaced.lean/declarations/sampleuuid.md) | 21 | `declaration-track:e73b7b6c934f8cf83b9d62675d871f912cf0c67872b2d4d48be5497de86a95d3` |
+| 2 | `def` | [dummyExpr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SpinorSoundnessNamespaced.lean/declarations/dummyexpr.md) | 23 | `declaration-track:a4dff2436ad2b9306a99c301e0eb44058e833dbf62cbe36ae4321eb5fb187f4a` |
+| 3 | `def` | [dummyProof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SpinorSoundnessNamespaced.lean/declarations/dummyproof.md) | 25 | `declaration-track:a8185761df5a9409b42d8042fe8416ba7203ce6a784eb437f23cadff86863569` |
+| 4 | `def` | [exampleSpinorEdge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SpinorSoundnessNamespaced.lean/declarations/examplespinoredge.md) | 27 | `declaration-track:c86ae6778608f2ddfd8d5416e3e4c61c80c9082bbb6423a73ad8fb414d6cb56b` |
+| 5 | `def` | [minimalDag](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SpinorSoundnessNamespaced.lean/declarations/minimaldag.md) | 38 | `declaration-track:8dcf8991f65ebd0b26138b5e787337cea8907fc4fedcf63276334376e8bd93f1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/AutocorrelationSecondDerivative.lean/index.md) · [Full source](../../../../MeasureAndIntegration/AutocorrelationSecondDerivative.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AutocorrelationSecondDerivative.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AutocorrelationSecondDerivative.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Convolution.AutocorrelationDerivativeEnergy`](../../../../MeasureAndIntegration/AutocorrelationDerivativeEnergy.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Convolution.AutocorrelationDerivativeEnergy`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AutocorrelationDerivativeEnergy.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Analysis.Calculus.Taylor` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,18 +58,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [normalizedTest_deriv_integrable](../../../../MeasureAndIntegration/AutocorrelationSecondDerivative.lean/declarations/normalizedtest-deriv-integrable.md) | 29 | `result-track:57999db828f6fbfa77fff08c8834360a1a6d57f4fe39ed9d7603ee68a73e6429` |
-| 2 | `theorem` | [reflectedTest_hasDerivAt](../../../../MeasureAndIntegration/AutocorrelationSecondDerivative.lean/declarations/reflectedtest-hasderivat.md) | 35 | `result-track:694ada73bd58f4490a01644d20f66ba28c351cfcd8deb53cce647d59a286f428` |
-| 3 | `theorem` | [sourceCorrelation_deriv_eq_convolution](../../../../MeasureAndIntegration/AutocorrelationSecondDerivative.lean/declarations/sourcecorrelation-deriv-eq-convolution.md) | 42 | `result-track:ccf795412233339dd5cfef3e57a1acd72c05e3d54c248dc569f1044670b1ed1c` |
-| 4 | `theorem` | [sourceCorrelation_deriv_contDiff](../../../../MeasureAndIntegration/AutocorrelationSecondDerivative.lean/declarations/sourcecorrelation-deriv-contdiff.md) | 51 | `result-track:ec64baecf13d37d81455e7af73c2509fce564ccea9127f21bd887b9138e9b6d4` |
-| 5 | `theorem` | [sourceCorrelation_contDiff_two](../../../../MeasureAndIntegration/AutocorrelationSecondDerivative.lean/declarations/sourcecorrelation-contdiff-two.md) | 59 | `result-track:ba09316228f148afd99f1319227e6337b5c21dad02b2989e13048461fd8d51ce` |
-| 6 | `theorem` | [sourceCorrelation_deriv_hasDerivAt_integral](../../../../MeasureAndIntegration/AutocorrelationSecondDerivative.lean/declarations/sourcecorrelation-deriv-hasderivat-integral.md) | 66 | `result-track:573a6cb1b0a7a640cbd9b0a1f14018e553c154ece0262bf44649662a87eabeba` |
-| 7 | `theorem` | [sourceCorrelation_second_deriv_eq_integral](../../../../MeasureAndIntegration/AutocorrelationSecondDerivative.lean/declarations/sourcecorrelation-second-deriv-eq-integral.md) | 81 | `result-track:330d3751d965bcdf39bb63329edb57790c4b3147a09c6de514bb002a67dfe3e5` |
-| 8 | `theorem` | [sourceCorrelation_second_deriv_integrand_integrable](../../../../MeasureAndIntegration/AutocorrelationSecondDerivative.lean/declarations/sourcecorrelation-second-deriv-integrand-integrable.md) | 88 | `result-track:e125873e3e8e1dc054c0496026e1afbdad09c91a78e6b7ac3533baab07fb2131` |
-| 9 | `theorem` | [sourceCorrelation_second_deriv_abs_le_energy](../../../../MeasureAndIntegration/AutocorrelationSecondDerivative.lean/declarations/sourcecorrelation-second-deriv-abs-le-energy.md) | 96 | `result-track:1554b52f5cdb86c4a187858323615654377076710e1b36aefcde152f75c65e6b` |
-| 10 | `theorem` | [sourceCorrelation_second_deriv_abs_le_coefficient](../../../../MeasureAndIntegration/AutocorrelationSecondDerivative.lean/declarations/sourcecorrelation-second-deriv-abs-le-coefficient.md) | 120 | `result-track:49c31b25ff1ac03d17fd72f04f884a8a58558ceb2d2c514a74df2571917534fb` |
-| 11 | `theorem` | [sourceCorrelation_deriv_increment_bound](../../../../MeasureAndIntegration/AutocorrelationSecondDerivative.lean/declarations/sourcecorrelation-deriv-increment-bound.md) | 131 | `result-track:7587bb779f33ffeace73ad3f3f61b38659a14af9c4f9c5c3a2e50b2fa1348cad` |
-| 12 | `theorem` | [sourceCorrelation_linear_taylor_bound](../../../../MeasureAndIntegration/AutocorrelationSecondDerivative.lean/declarations/sourcecorrelation-linear-taylor-bound.md) | 145 | `result-track:d4179bad4b6e9379aed33f28808e3d328e3d90f880a0a3e4a01b686846c038b6` |
+| 1 | `theorem` | [normalizedTest_deriv_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AutocorrelationSecondDerivative.lean/declarations/normalizedtest-deriv-integrable.md) | 29 | `result-track:57999db828f6fbfa77fff08c8834360a1a6d57f4fe39ed9d7603ee68a73e6429` |
+| 2 | `theorem` | [reflectedTest_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AutocorrelationSecondDerivative.lean/declarations/reflectedtest-hasderivat.md) | 35 | `result-track:694ada73bd58f4490a01644d20f66ba28c351cfcd8deb53cce647d59a286f428` |
+| 3 | `theorem` | [sourceCorrelation_deriv_eq_convolution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AutocorrelationSecondDerivative.lean/declarations/sourcecorrelation-deriv-eq-convolution.md) | 42 | `result-track:ccf795412233339dd5cfef3e57a1acd72c05e3d54c248dc569f1044670b1ed1c` |
+| 4 | `theorem` | [sourceCorrelation_deriv_contDiff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AutocorrelationSecondDerivative.lean/declarations/sourcecorrelation-deriv-contdiff.md) | 51 | `result-track:ec64baecf13d37d81455e7af73c2509fce564ccea9127f21bd887b9138e9b6d4` |
+| 5 | `theorem` | [sourceCorrelation_contDiff_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AutocorrelationSecondDerivative.lean/declarations/sourcecorrelation-contdiff-two.md) | 59 | `result-track:ba09316228f148afd99f1319227e6337b5c21dad02b2989e13048461fd8d51ce` |
+| 6 | `theorem` | [sourceCorrelation_deriv_hasDerivAt_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AutocorrelationSecondDerivative.lean/declarations/sourcecorrelation-deriv-hasderivat-integral.md) | 66 | `result-track:573a6cb1b0a7a640cbd9b0a1f14018e553c154ece0262bf44649662a87eabeba` |
+| 7 | `theorem` | [sourceCorrelation_second_deriv_eq_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AutocorrelationSecondDerivative.lean/declarations/sourcecorrelation-second-deriv-eq-integral.md) | 81 | `result-track:330d3751d965bcdf39bb63329edb57790c4b3147a09c6de514bb002a67dfe3e5` |
+| 8 | `theorem` | [sourceCorrelation_second_deriv_integrand_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AutocorrelationSecondDerivative.lean/declarations/sourcecorrelation-second-deriv-integrand-integrable.md) | 88 | `result-track:e125873e3e8e1dc054c0496026e1afbdad09c91a78e6b7ac3533baab07fb2131` |
+| 9 | `theorem` | [sourceCorrelation_second_deriv_abs_le_energy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AutocorrelationSecondDerivative.lean/declarations/sourcecorrelation-second-deriv-abs-le-energy.md) | 96 | `result-track:1554b52f5cdb86c4a187858323615654377076710e1b36aefcde152f75c65e6b` |
+| 10 | `theorem` | [sourceCorrelation_second_deriv_abs_le_coefficient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AutocorrelationSecondDerivative.lean/declarations/sourcecorrelation-second-deriv-abs-le-coefficient.md) | 120 | `result-track:49c31b25ff1ac03d17fd72f04f884a8a58558ceb2d2c514a74df2571917534fb` |
+| 11 | `theorem` | [sourceCorrelation_deriv_increment_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AutocorrelationSecondDerivative.lean/declarations/sourcecorrelation-deriv-increment-bound.md) | 131 | `result-track:7587bb779f33ffeace73ad3f3f61b38659a14af9c4f9c5c3a2e50b2fa1348cad` |
+| 12 | `theorem` | [sourceCorrelation_linear_taylor_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AutocorrelationSecondDerivative.lean/declarations/sourcecorrelation-linear-taylor-bound.md) | 145 | `result-track:d4179bad4b6e9379aed33f28808e3d328e3d90f880a0a3e4a01b686846c038b6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/BoundedStarNamespacedPublic.lean/index.md) · [Full source](../../../../GeneralTopology/BoundedStarNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BoundedStarNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BoundedStarNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [instStarAddMonoid](../../../../GeneralTopology/BoundedStarNamespacedPublic.lean/declarations/inststaraddmonoid.md) | 64 | `declaration-track:faaedafb21f0d27eabe80056361d14aec4774c6e61faf42ecaae0f59985255fb` |
-| 2 | `theorem` | [coe_star](../../../../GeneralTopology/BoundedStarNamespacedPublic.lean/declarations/coe-star.md) | 72 | `result-track:e4ec817013891c1618604d744cd73a17d5cd7593658843ccb890dfb4c1208fab` |
-| 3 | `theorem` | [star_apply](../../../../GeneralTopology/BoundedStarNamespacedPublic.lean/declarations/star-apply.md) | 75 | `result-track:d8022d977ba6073932b6ceb40cb43f6e131463907549ec7d55fdf18ae4d591a4` |
-| 4 | `instance` | [instNormedStarGroup](../../../../GeneralTopology/BoundedStarNamespacedPublic.lean/declarations/instnormedstargroup.md) | 77 | `declaration-track:348659baa00f4ad001b2b6013b06841841ae096d0710cad83de3dc307337abe5` |
-| 5 | `instance` | [instStarModule](../../../../GeneralTopology/BoundedStarNamespacedPublic.lean/declarations/inststarmodule.md) | 80 | `declaration-track:d28cbdf3cc08a78fcbffd643a475dd2ebe83118508315970949270d4687bcaac` |
-| 6 | `instance` | [instStarRing](../../../../GeneralTopology/BoundedStarNamespacedPublic.lean/declarations/inststarring.md) | 90 | `declaration-track:95824891fe2370b5e3ecdbb89126fc91ae83cf65b801d227611a9373e003f5f7` |
-| 7 | `instance` | [instCStarRing](../../../../GeneralTopology/BoundedStarNamespacedPublic.lean/declarations/instcstarring.md) | 96 | `declaration-track:e6f8dbd12e0e3419a2298ac225b9c1d1a013acb551d9dd2213e5e3871e80c3cb` |
-| 8 | `def` | [toContinuousMapStarₐ](../../../../GeneralTopology/BoundedStarNamespacedPublic.lean/declarations/tocontinuousmapstar.md) | 112 | `declaration-track:794b2052527438b951955c1a041b43708090fc4b1f3b215f84e988a80a7e98ae` |
-| 9 | `theorem` | [coe_toContinuousMapStarₐ](../../../../GeneralTopology/BoundedStarNamespacedPublic.lean/declarations/coe-tocontinuousmapstar.md) | 116 | `result-track:7ae2df7475161b0d0dd92913b7e9fd035cbeb05a979e48a5a1869649405a8e1e` |
+| 1 | `instance` | [instStarAddMonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BoundedStarNamespacedPublic.lean/declarations/inststaraddmonoid.md) | 64 | `declaration-track:faaedafb21f0d27eabe80056361d14aec4774c6e61faf42ecaae0f59985255fb` |
+| 2 | `theorem` | [coe_star](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BoundedStarNamespacedPublic.lean/declarations/coe-star.md) | 72 | `result-track:e4ec817013891c1618604d744cd73a17d5cd7593658843ccb890dfb4c1208fab` |
+| 3 | `theorem` | [star_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BoundedStarNamespacedPublic.lean/declarations/star-apply.md) | 75 | `result-track:d8022d977ba6073932b6ceb40cb43f6e131463907549ec7d55fdf18ae4d591a4` |
+| 4 | `instance` | [instNormedStarGroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BoundedStarNamespacedPublic.lean/declarations/instnormedstargroup.md) | 77 | `declaration-track:348659baa00f4ad001b2b6013b06841841ae096d0710cad83de3dc307337abe5` |
+| 5 | `instance` | [instStarModule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BoundedStarNamespacedPublic.lean/declarations/inststarmodule.md) | 80 | `declaration-track:d28cbdf3cc08a78fcbffd643a475dd2ebe83118508315970949270d4687bcaac` |
+| 6 | `instance` | [instStarRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BoundedStarNamespacedPublic.lean/declarations/inststarring.md) | 90 | `declaration-track:95824891fe2370b5e3ecdbb89126fc91ae83cf65b801d227611a9373e003f5f7` |
+| 7 | `instance` | [instCStarRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BoundedStarNamespacedPublic.lean/declarations/instcstarring.md) | 96 | `declaration-track:e6f8dbd12e0e3419a2298ac225b9c1d1a013acb551d9dd2213e5e3871e80c3cb` |
+| 8 | `def` | [toContinuousMapStarₐ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BoundedStarNamespacedPublic.lean/declarations/tocontinuousmapstar.md) | 112 | `declaration-track:794b2052527438b951955c1a041b43708090fc4b1f3b215f84e988a80a7e98ae` |
+| 9 | `theorem` | [coe_toContinuousMapStarₐ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BoundedStarNamespacedPublic.lean/declarations/coe-tocontinuousmapstar.md) | 116 | `result-track:7ae2df7475161b0d0dd92913b7e9fd035cbeb05a979e48a5a1869649405a8e1e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

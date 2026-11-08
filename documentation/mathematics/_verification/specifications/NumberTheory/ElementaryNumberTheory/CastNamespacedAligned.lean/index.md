@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/CastNamespacedAligned.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/CastNamespacedAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CastNamespacedAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CastNamespacedAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [cast_ascFactorial](../../../../../NumberTheory/ElementaryNumberTheory/CastNamespacedAligned.lean/declarations/cast-ascfactorial.md) | 42 | `result-track:4eefcdb0d50102b2785ecc68299cb6bc0b7f77ff1e1a04cf0a2e7f6eea1c52f5` |
-| 2 | `theorem` | [cast_descFactorial](../../../../../NumberTheory/ElementaryNumberTheory/CastNamespacedAligned.lean/declarations/cast-descfactorial.md) | 47 | `result-track:923867c52c625ce5e21dd4ede0d153805d99625916c773d445b74ba3f9bdc7a9` |
-| 3 | `theorem` | [cast_factorial](../../../../../NumberTheory/ElementaryNumberTheory/CastNamespacedAligned.lean/declarations/cast-factorial.md) | 58 | `result-track:5d0e4f6afe4b61d20dae67582813897db3ad2ae185093aa9b63c641d23b2fab0` |
-| 4 | `theorem` | [cast_descFactorial_two](../../../../../NumberTheory/ElementaryNumberTheory/CastNamespacedAligned.lean/declarations/cast-descfactorial-two.md) | 70 | `result-track:49a9fbafb92e65d9a33c6d47b712a5646cfab247c4790d0d4bf1349c83812a0c` |
+| 1 | `theorem` | [cast_ascFactorial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CastNamespacedAligned.lean/declarations/cast-ascfactorial.md) | 42 | `result-track:4eefcdb0d50102b2785ecc68299cb6bc0b7f77ff1e1a04cf0a2e7f6eea1c52f5` |
+| 2 | `theorem` | [cast_descFactorial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CastNamespacedAligned.lean/declarations/cast-descfactorial.md) | 47 | `result-track:923867c52c625ce5e21dd4ede0d153805d99625916c773d445b74ba3f9bdc7a9` |
+| 3 | `theorem` | [cast_factorial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CastNamespacedAligned.lean/declarations/cast-factorial.md) | 58 | `result-track:5d0e4f6afe4b61d20dae67582813897db3ad2ae185093aa9b63c641d23b2fab0` |
+| 4 | `theorem` | [cast_descFactorial_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CastNamespacedAligned.lean/declarations/cast-descfactorial-two.md) | 70 | `result-track:49a9fbafb92e65d9a33c6d47b712a5646cfab247c4790d0d4bf1349c83812a0c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

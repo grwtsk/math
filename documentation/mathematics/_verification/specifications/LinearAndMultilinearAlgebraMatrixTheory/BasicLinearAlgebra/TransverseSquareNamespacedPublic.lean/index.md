@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TransverseSquareNamespacedPublic.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TransverseSquareNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TransverseSquareNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TransverseSquareNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [coefficientIntervalSquareSum](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TransverseSquareNamespacedPublic.lean/declarations/coefficientintervalsquaresum.md) | 40 | `declaration-track:db67c7df875982d03702c4660e55b3e8c891666d4b31d3f74bda8ae9894fc100` |
-| 2 | `def` | [EvaluatedSurgeryTree.nodeIntervalSquareSum](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TransverseSquareNamespacedPublic.lean/declarations/evaluatedsurgerytree-nodeintervalsquaresum.md) | 50 | `declaration-track:d5e8d3a705c38a600041469b0a98e77a709e78358a06abe97b28f011a1c1fa86` |
-| 3 | `theorem` | [rootNodeIntervalSquareSum_eq_shell](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TransverseSquareNamespacedPublic.lean/declarations/rootnodeintervalsquaresum-eq-shell.md) | 62 | `result-track:ed702d79d7a285e5cb976355d480a88e93f8d84afe6c42d5ebc1b95e3d30ae70` |
-| 4 | `def` | [LocalTransverseDiffuseSquareEstimate](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TransverseSquareNamespacedPublic.lean/declarations/localtransversediffusesquareestimate.md) | 84 | `declaration-track:020cc4fd03bc8e55a8cea6c6172c131b6f8d484f30037aa07429575eaf0efcb5` |
+| 1 | `def` | [coefficientIntervalSquareSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TransverseSquareNamespacedPublic.lean/declarations/coefficientintervalsquaresum.md) | 40 | `declaration-track:db67c7df875982d03702c4660e55b3e8c891666d4b31d3f74bda8ae9894fc100` |
+| 2 | `def` | [EvaluatedSurgeryTree.nodeIntervalSquareSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TransverseSquareNamespacedPublic.lean/declarations/evaluatedsurgerytree-nodeintervalsquaresum.md) | 50 | `declaration-track:d5e8d3a705c38a600041469b0a98e77a709e78358a06abe97b28f011a1c1fa86` |
+| 3 | `theorem` | [rootNodeIntervalSquareSum_eq_shell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TransverseSquareNamespacedPublic.lean/declarations/rootnodeintervalsquaresum-eq-shell.md) | 62 | `result-track:ed702d79d7a285e5cb976355d480a88e93f8d84afe6c42d5ebc1b95e3d30ae70` |
+| 4 | `def` | [LocalTransverseDiffuseSquareEstimate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TransverseSquareNamespacedPublic.lean/declarations/localtransversediffusesquareestimate.md) | 84 | `declaration-track:020cc4fd03bc8e55a8cea6c6172c131b6f8d484f30037aa07429575eaf0efcb5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

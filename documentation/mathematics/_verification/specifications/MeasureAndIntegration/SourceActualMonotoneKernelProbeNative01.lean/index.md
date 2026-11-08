@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceActualMonotoneKernelProbeNative01.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceActualMonotoneKernelProbeNative01.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualMonotoneKernelProbeNative01.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualMonotoneKernelProbeNative01.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [syntheticRelativeProbe](../../../../MeasureAndIntegration/SourceActualMonotoneKernelProbeNative01.lean/declarations/syntheticrelativeprobe.md) | 25 | `declaration-track:6ee418b936231f463b71b80659e7b6b551e70d3ef8af141b7292cbb00dcfa6df` |
-| 2 | `def` | [actualKernelProbeReadout](../../../../MeasureAndIntegration/SourceActualMonotoneKernelProbeNative01.lean/declarations/actualkernelprobereadout.md) | 29 | `declaration-track:7012ebf1d35708dc2ea11c0a2be529ac36c3a29b6e3edf2dcf73b4997a5cb3f4` |
-| 3 | `theorem` | [actualKernelProbeReadout_intervalIntegrable](../../../../MeasureAndIntegration/SourceActualMonotoneKernelProbeNative01.lean/declarations/actualkernelprobereadout-intervalintegrable.md) | 34 | `result-track:0349a312fad0ec854fd3f6e345ef8c6403a561c80a6790957a6ee4c1360a4279` |
-| 4 | `theorem` | [halfTransform_real](../../../../MeasureAndIntegration/SourceActualMonotoneKernelProbeNative01.lean/declarations/halftransform-real.md) | 44 | `result-track:75c52c1bf95ea77cc4c0465d9cf467b854e01e471075a4ed75249dab9e9272c3` |
-| 5 | `theorem` | [actual_real_mode](../../../../MeasureAndIntegration/SourceActualMonotoneKernelProbeNative01.lean/declarations/actual-real-mode.md) | 59 | `result-track:a46db6297f2f91774451c50b7f0b07f276cae0266d91ff6371ce7c4df8a1037a` |
-| 6 | `theorem` | [actualKernelProbeReadout_eq](../../../../MeasureAndIntegration/SourceActualMonotoneKernelProbeNative01.lean/declarations/actualkernelprobereadout-eq.md) | 97 | `result-track:918c2e5781e266ecd09e708c2bde463dcdbdfb8c20b9c5a3bad4250b6e4ea772` |
-| 7 | `theorem` | [actual_half_real_scaled](../../../../MeasureAndIntegration/SourceActualMonotoneKernelProbeNative01.lean/declarations/actual-half-real-scaled.md) | 128 | `result-track:dbe8355b0dcd239caa34418b762ee797b59400b2186c8ea8b4da7554c1106740` |
-| 8 | `theorem` | [actualKernelProbeReadout_normalized_tendsto](../../../../MeasureAndIntegration/SourceActualMonotoneKernelProbeNative01.lean/declarations/actualkernelprobereadout-normalized-tendsto.md) | 153 | `result-track:1d4ad16ed411dcc1681d04a5c859951b58247f72c819a4c8212bcd7256b306d6` |
+| 1 | `def` | [syntheticRelativeProbe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualMonotoneKernelProbeNative01.lean/declarations/syntheticrelativeprobe.md) | 25 | `declaration-track:6ee418b936231f463b71b80659e7b6b551e70d3ef8af141b7292cbb00dcfa6df` |
+| 2 | `def` | [actualKernelProbeReadout](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualMonotoneKernelProbeNative01.lean/declarations/actualkernelprobereadout.md) | 29 | `declaration-track:7012ebf1d35708dc2ea11c0a2be529ac36c3a29b6e3edf2dcf73b4997a5cb3f4` |
+| 3 | `theorem` | [actualKernelProbeReadout_intervalIntegrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualMonotoneKernelProbeNative01.lean/declarations/actualkernelprobereadout-intervalintegrable.md) | 34 | `result-track:0349a312fad0ec854fd3f6e345ef8c6403a561c80a6790957a6ee4c1360a4279` |
+| 4 | `theorem` | [halfTransform_real](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualMonotoneKernelProbeNative01.lean/declarations/halftransform-real.md) | 44 | `result-track:75c52c1bf95ea77cc4c0465d9cf467b854e01e471075a4ed75249dab9e9272c3` |
+| 5 | `theorem` | [actual_real_mode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualMonotoneKernelProbeNative01.lean/declarations/actual-real-mode.md) | 59 | `result-track:a46db6297f2f91774451c50b7f0b07f276cae0266d91ff6371ce7c4df8a1037a` |
+| 6 | `theorem` | [actualKernelProbeReadout_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualMonotoneKernelProbeNative01.lean/declarations/actualkernelprobereadout-eq.md) | 97 | `result-track:918c2e5781e266ecd09e708c2bde463dcdbdfb8c20b9c5a3bad4250b6e4ea772` |
+| 7 | `theorem` | [actual_half_real_scaled](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualMonotoneKernelProbeNative01.lean/declarations/actual-half-real-scaled.md) | 128 | `result-track:dbe8355b0dcd239caa34418b762ee797b59400b2186c8ea8b4da7554c1106740` |
+| 8 | `theorem` | [actualKernelProbeReadout_normalized_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualMonotoneKernelProbeNative01.lean/declarations/actualkernelprobereadout-normalized-tendsto.md) | 153 | `result-track:1d4ad16ed411dcc1681d04a5c859951b58247f72c819a4c8212bcd7256b306d6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

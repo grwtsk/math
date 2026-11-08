@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/BridgeEnvelope.lean/index.md) · [Full source](../../../../MeasureAndIntegration/BridgeEnvelope.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeEnvelope.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeEnvelope.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [integralBridge](../../../../MeasureAndIntegration/BridgeEnvelope.lean/declarations/integralbridge.md) | 15 | `declaration-track:a55a7a178303dc90bc729bd448475cd5b67289d0fbb4249f11b4e621790f8735` |
-| 2 | `theorem` | [segment_integral_bounds](../../../../MeasureAndIntegration/BridgeEnvelope.lean/declarations/segment-integral-bounds.md) | 18 | `result-track:26b18561d7dabdef3e855c524ddd14abf8c1f9e9d80ac7ea30618fe42ef77888` |
-| 3 | `theorem` | [integralBridge_abs_le](../../../../MeasureAndIntegration/BridgeEnvelope.lean/declarations/integralbridge-abs-le.md) | 33 | `result-track:8a4923689b0ca7a573691ab637f064b671d7b21ba1338b8b12c979dde64c62ef` |
-| 4 | `theorem` | [actual_discrepancy_bounds](../../../../MeasureAndIntegration/BridgeEnvelope.lean/declarations/actual-discrepancy-bounds.md) | 65 | `result-track:3d7880af66f6c38dec878d6b9787a35d13300a315ab2eb3a743e87904c007dbd` |
-| 5 | `theorem` | [actual_bridge_eq](../../../../MeasureAndIntegration/BridgeEnvelope.lean/declarations/actual-bridge-eq.md) | 78 | `result-track:01918bd4aedf92fe41223d356d4974906dd935350e04a31f417b3afed2f39cfc` |
-| 6 | `theorem` | [actual_bridge_abs_le_chord](../../../../MeasureAndIntegration/BridgeEnvelope.lean/declarations/actual-bridge-abs-le-chord.md) | 83 | `result-track:75b9d977a5731b6ae64a647b95e6b600771aa89168421057ce94c87fdf75184b` |
-| 7 | `theorem` | [chord_le_scale](../../../../MeasureAndIntegration/BridgeEnvelope.lean/declarations/chord-le-scale.md) | 94 | `result-track:8e0a1fc84713e38edb60fa1023a79c0ad80d22bb8f10c2ffb3e02349bd446500` |
-| 8 | `theorem` | [actual_bridge_abs_le_scale](../../../../MeasureAndIntegration/BridgeEnvelope.lean/declarations/actual-bridge-abs-le-scale.md) | 99 | `result-track:fb2c03fb3a67ece503b2d28bd30b9e14d891e99d9882f8b352ef9fd8acd8ee3b` |
+| 1 | `def` | [integralBridge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeEnvelope.lean/declarations/integralbridge.md) | 15 | `declaration-track:a55a7a178303dc90bc729bd448475cd5b67289d0fbb4249f11b4e621790f8735` |
+| 2 | `theorem` | [segment_integral_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeEnvelope.lean/declarations/segment-integral-bounds.md) | 18 | `result-track:26b18561d7dabdef3e855c524ddd14abf8c1f9e9d80ac7ea30618fe42ef77888` |
+| 3 | `theorem` | [integralBridge_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeEnvelope.lean/declarations/integralbridge-abs-le.md) | 33 | `result-track:8a4923689b0ca7a573691ab637f064b671d7b21ba1338b8b12c979dde64c62ef` |
+| 4 | `theorem` | [actual_discrepancy_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeEnvelope.lean/declarations/actual-discrepancy-bounds.md) | 65 | `result-track:3d7880af66f6c38dec878d6b9787a35d13300a315ab2eb3a743e87904c007dbd` |
+| 5 | `theorem` | [actual_bridge_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeEnvelope.lean/declarations/actual-bridge-eq.md) | 78 | `result-track:01918bd4aedf92fe41223d356d4974906dd935350e04a31f417b3afed2f39cfc` |
+| 6 | `theorem` | [actual_bridge_abs_le_chord](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeEnvelope.lean/declarations/actual-bridge-abs-le-chord.md) | 83 | `result-track:75b9d977a5731b6ae64a647b95e6b600771aa89168421057ce94c87fdf75184b` |
+| 7 | `theorem` | [chord_le_scale](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeEnvelope.lean/declarations/chord-le-scale.md) | 94 | `result-track:8e0a1fc84713e38edb60fa1023a79c0ad80d22bb8f10c2ffb3e02349bd446500` |
+| 8 | `theorem` | [actual_bridge_abs_le_scale](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeEnvelope.lean/declarations/actual-bridge-abs-le-scale.md) | 99 | `result-track:fb2c03fb3a67ece503b2d28bd30b9e14d891e99d9882f8b352ef9fd8acd8ee3b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/VectorZip.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/VectorZip.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/VectorZip.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/VectorZip.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [zipWith](../../../../../../ComputerScience/TheoryOfData/DataStructures/VectorZip.lean/declarations/zipwith.md) | 21 | `declaration-track:5604e99d16a7feb0479217ff6a04897e48aed7ae5e2945bce8d5867d4a8291b2` |
-| 2 | `theorem` | [zipWith_toList](../../../../../../ComputerScience/TheoryOfData/DataStructures/VectorZip.lean/declarations/zipwith-tolist.md) | 24 | `result-track:a087f93aabd3da42b24f70524638fb06bbb488c2b1152a17d5e35b493f31e7f1` |
-| 3 | `theorem` | [zipWith_get](../../../../../../ComputerScience/TheoryOfData/DataStructures/VectorZip.lean/declarations/zipwith-get.md) | 29 | `result-track:6ef583420b09c0ffd6ab2e83e2bd0f61af1dd803caa2a56e7fbc1eaf51a2839b` |
-| 4 | `theorem` | [zipWith_tail](../../../../../../ComputerScience/TheoryOfData/DataStructures/VectorZip.lean/declarations/zipwith-tail.md) | 35 | `result-track:2e2594ecc5947c67495153d608063375bee16c2fb7c88943c1b11204205ffe02` |
-| 5 | `theorem` | [prod_mul_prod_eq_prod_zipWith](../../../../../../ComputerScience/TheoryOfData/DataStructures/VectorZip.lean/declarations/prod-mul-prod-eq-prod-zipwith.md) | 41 | `result-track:5d03f8d18628edf7cb2c03bc860dde477b0af40e477ca05bea50d493038c8ecf` |
+| 1 | `def` | [zipWith](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/VectorZip.lean/declarations/zipwith.md) | 21 | `declaration-track:5604e99d16a7feb0479217ff6a04897e48aed7ae5e2945bce8d5867d4a8291b2` |
+| 2 | `theorem` | [zipWith_toList](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/VectorZip.lean/declarations/zipwith-tolist.md) | 24 | `result-track:a087f93aabd3da42b24f70524638fb06bbb488c2b1152a17d5e35b493f31e7f1` |
+| 3 | `theorem` | [zipWith_get](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/VectorZip.lean/declarations/zipwith-get.md) | 29 | `result-track:6ef583420b09c0ffd6ab2e83e2bd0f61af1dd803caa2a56e7fbc1eaf51a2839b` |
+| 4 | `theorem` | [zipWith_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/VectorZip.lean/declarations/zipwith-tail.md) | 35 | `result-track:2e2594ecc5947c67495153d608063375bee16c2fb7c88943c1b11204205ffe02` |
+| 5 | `theorem` | [prod_mul_prod_eq_prod_zipWith](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/VectorZip.lean/declarations/prod-mul-prod-eq-prod-zipwith.md) | 41 | `result-track:5d03f8d18628edf7cb2c03bc860dde477b0af40e477ca05bea50d493038c8ecf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

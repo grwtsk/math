@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ShellCutoffMatrixNamespacedPublic.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ShellCutoffMatrixNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ShellCutoffMatrixNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ShellCutoffMatrixNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [typeIIShellIntervalMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ShellCutoffMatrixNamespacedPublic.lean/declarations/typeiishellintervalmatrix.md) | 32 | `declaration-track:6ba70155620b368317fdffc781ca1fedf27bb3df9a84477b8bce08f04617acec` |
-| 2 | `theorem` | [typeIIShellIntervalMatrix_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ShellCutoffMatrixNamespacedPublic.lean/declarations/typeiishellintervalmatrix-apply.md) | 38 | `result-track:e06394f59b959cbe5cde7ff20566d535202af0e0ee679e9480ac364d0cd0d330` |
-| 3 | `theorem` | [typeIIShellIntervalMatrix_eq_sum_fibers](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ShellCutoffMatrixNamespacedPublic.lean/declarations/typeiishellintervalmatrix-eq-sum-fibers.md) | 49 | `result-track:bc8cdff624bd920e2c7b618d9159538e15abb03bfcfc0f8940d16bbb331f81c2` |
-| 4 | `def` | [typeIIShellPrefixMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ShellCutoffMatrixNamespacedPublic.lean/declarations/typeiishellprefixmatrix.md) | 60 | `declaration-track:ab7176af3c8a3a4a1f2c8038183ed2094c6e41ccf21119a8ea4de9105a87804d` |
-| 5 | `theorem` | [typeIIShellPrefixMatrix_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ShellCutoffMatrixNamespacedPublic.lean/declarations/typeiishellprefixmatrix-apply.md) | 66 | `result-track:c1921eeb4ccf187d6793cffc26fd715d8905dc340854d3a1951b37ac0adc2148` |
+| 1 | `def` | [typeIIShellIntervalMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ShellCutoffMatrixNamespacedPublic.lean/declarations/typeiishellintervalmatrix.md) | 32 | `declaration-track:6ba70155620b368317fdffc781ca1fedf27bb3df9a84477b8bce08f04617acec` |
+| 2 | `theorem` | [typeIIShellIntervalMatrix_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ShellCutoffMatrixNamespacedPublic.lean/declarations/typeiishellintervalmatrix-apply.md) | 38 | `result-track:e06394f59b959cbe5cde7ff20566d535202af0e0ee679e9480ac364d0cd0d330` |
+| 3 | `theorem` | [typeIIShellIntervalMatrix_eq_sum_fibers](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ShellCutoffMatrixNamespacedPublic.lean/declarations/typeiishellintervalmatrix-eq-sum-fibers.md) | 49 | `result-track:bc8cdff624bd920e2c7b618d9159538e15abb03bfcfc0f8940d16bbb331f81c2` |
+| 4 | `def` | [typeIIShellPrefixMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ShellCutoffMatrixNamespacedPublic.lean/declarations/typeiishellprefixmatrix.md) | 60 | `declaration-track:ab7176af3c8a3a4a1f2c8038183ed2094c6e41ccf21119a8ea4de9105a87804d` |
+| 5 | `theorem` | [typeIIShellPrefixMatrix_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ShellCutoffMatrixNamespacedPublic.lean/declarations/typeiishellprefixmatrix-apply.md) | 66 | `result-track:c1921eeb4ccf187d6793cffc26fd715d8905dc340854d3a1951b37ac0adc2148` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

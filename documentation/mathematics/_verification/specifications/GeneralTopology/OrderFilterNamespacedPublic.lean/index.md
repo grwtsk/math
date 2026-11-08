@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/OrderFilterNamespacedPublic.lean/index.md) · [Full source](../../../../GeneralTopology/OrderFilterNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OrderFilterNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OrderFilterNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [tendsto_nhds_atTop](../../../../GeneralTopology/OrderFilterNamespacedPublic.lean/declarations/tendsto-nhds-attop-source-edition-2.md) | 35 | `result-track:8c44005f21e5a16f4ab9dd2c8fe1540703339a052136c0e5d3a9cb9809265ca4` |
-| 2 | `theorem` | [tendsto_nhds_atBot](../../../../GeneralTopology/OrderFilterNamespacedPublic.lean/declarations/tendsto-nhds-atbot-source-edition-2.md) | 38 | `result-track:fccbed2f912527f2b35d390f78b42650d825d37c42f2ef886b55def884f57f85` |
-| 3 | `theorem` | [Tendsto.nhds_atTop](../../../../GeneralTopology/OrderFilterNamespacedPublic.lean/declarations/tendsto-nhds-attop.md) | 41 | `result-track:12ff1f40d5443146a9ad7d4cb1251d4d140b06df80a50605c4656b14f8b75cf9` |
-| 4 | `theorem` | [Tendsto.nhds_atBot](../../../../GeneralTopology/OrderFilterNamespacedPublic.lean/declarations/tendsto-nhds-atbot.md) | 45 | `result-track:2001e4bdf6642453fdabe604bff8dde896280e4a2a8d4589b4a376e98633c36d` |
+| 1 | `theorem` | [tendsto_nhds_atTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OrderFilterNamespacedPublic.lean/declarations/tendsto-nhds-attop-source-edition-2.md) | 35 | `result-track:8c44005f21e5a16f4ab9dd2c8fe1540703339a052136c0e5d3a9cb9809265ca4` |
+| 2 | `theorem` | [tendsto_nhds_atBot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OrderFilterNamespacedPublic.lean/declarations/tendsto-nhds-atbot-source-edition-2.md) | 38 | `result-track:fccbed2f912527f2b35d390f78b42650d825d37c42f2ef886b55def884f57f85` |
+| 3 | `theorem` | [Tendsto.nhds_atTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OrderFilterNamespacedPublic.lean/declarations/tendsto-nhds-attop.md) | 41 | `result-track:12ff1f40d5443146a9ad7d4cb1251d4d140b06df80a50605c4656b14f8b75cf9` |
+| 4 | `theorem` | [Tendsto.nhds_atBot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OrderFilterNamespacedPublic.lean/declarations/tendsto-nhds-atbot.md) | 45 | `result-track:2001e4bdf6642453fdabe604bff8dde896280e4a2a8d4589b4a376e98633c36d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

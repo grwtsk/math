@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/BoundedVertexFieldsAndSuppliedTimeMaps.lean/index.md) · [Full source](../../../../RealFunctions/BoundedVertexFieldsAndSuppliedTimeMaps.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BoundedVertexFieldsAndSuppliedTimeMaps.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BoundedVertexFieldsAndSuppliedTimeMaps.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CubeSpectralField](../../../../RealFunctions/BoundedVertexFieldsAndSuppliedTimeMaps.lean/declarations/cubespectralfield.md) | 37 | `declaration-track:d312a262d5068b6e31d271644349b1543b09c3e65ff05c8212b85ca1343dd524` |
-| 2 | `structure` | [CubeHeatFlow](../../../../RealFunctions/BoundedVertexFieldsAndSuppliedTimeMaps.lean/declarations/cubeheatflow.md) | 41 | `declaration-track:9535d10c750d323a686fc924a01e9b0c313443af107002cd8275fafb17d01573` |
+| 1 | `structure` | [CubeSpectralField](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BoundedVertexFieldsAndSuppliedTimeMaps.lean/declarations/cubespectralfield.md) | 37 | `declaration-track:d312a262d5068b6e31d271644349b1543b09c3e65ff05c8212b85ca1343dd524` |
+| 2 | `structure` | [CubeHeatFlow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BoundedVertexFieldsAndSuppliedTimeMaps.lean/declarations/cubeheatflow.md) | 41 | `declaration-track:9535d10c750d323a686fc924a01e9b0c313443af107002cd8275fafb17d01573` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

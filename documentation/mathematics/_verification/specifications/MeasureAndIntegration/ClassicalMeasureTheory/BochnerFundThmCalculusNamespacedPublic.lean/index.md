@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BochnerFundThmCalculusNamespacedPublic.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BochnerFundThmCalculusNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/BochnerFundThmCalculusNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/BochnerFundThmCalculusNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Filter.Tendsto.integral_sub_linear_isLittleO_ae](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BochnerFundThmCalculusNamespacedPublic.lean/declarations/filter-tendsto-integral-sub-linear-islittleo-ae.md) | 51 | `result-track:49bc14fb45ac8dc44ff0711406f66ea281f91713502ac3525bed65a6251fef45` |
-| 2 | `theorem` | [ContinuousWithinAt.integral_sub_linear_isLittleO_ae](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BochnerFundThmCalculusNamespacedPublic.lean/declarations/continuouswithinat-integral-sub-linear-islittleo-ae.md) | 83 | `result-track:9a1e5ef65a0673b319edcf8f61c8b2151ea75afa97be2aa4d920687fa2058f51` |
-| 3 | `theorem` | [ContinuousAt.integral_sub_linear_isLittleO_ae](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BochnerFundThmCalculusNamespacedPublic.lean/declarations/continuousat-integral-sub-linear-islittleo-ae.md) | 103 | `result-track:0b7ad86878501ca32d89a9d29bd85ed82c546a331912aaf2aefa9230cf6849cc` |
-| 4 | `theorem` | [ContinuousOn.integral_sub_linear_isLittleO_ae](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BochnerFundThmCalculusNamespacedPublic.lean/declarations/continuouson-integral-sub-linear-islittleo-ae.md) | 119 | `result-track:7b8e94ed9c690d0bf6bebe34129d299507ed118cdb0b82af024a1dbb5efccfb0` |
+| 1 | `theorem` | [Filter.Tendsto.integral_sub_linear_isLittleO_ae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/BochnerFundThmCalculusNamespacedPublic.lean/declarations/filter-tendsto-integral-sub-linear-islittleo-ae.md) | 51 | `result-track:49bc14fb45ac8dc44ff0711406f66ea281f91713502ac3525bed65a6251fef45` |
+| 2 | `theorem` | [ContinuousWithinAt.integral_sub_linear_isLittleO_ae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/BochnerFundThmCalculusNamespacedPublic.lean/declarations/continuouswithinat-integral-sub-linear-islittleo-ae.md) | 83 | `result-track:9a1e5ef65a0673b319edcf8f61c8b2151ea75afa97be2aa4d920687fa2058f51` |
+| 3 | `theorem` | [ContinuousAt.integral_sub_linear_isLittleO_ae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/BochnerFundThmCalculusNamespacedPublic.lean/declarations/continuousat-integral-sub-linear-islittleo-ae.md) | 103 | `result-track:0b7ad86878501ca32d89a9d29bd85ed82c546a331912aaf2aefa9230cf6849cc` |
+| 4 | `theorem` | [ContinuousOn.integral_sub_linear_isLittleO_ae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/BochnerFundThmCalculusNamespacedPublic.lean/declarations/continuouson-integral-sub-linear-islittleo-ae.md) | 119 | `result-track:7b8e94ed9c690d0bf6bebe34129d299507ed118cdb0b82af024a1dbb5efccfb0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

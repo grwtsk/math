@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/SymCard.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/SymCard.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SymCard.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SymCard.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,17 +60,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [e1](../../../../../../ComputerScience/TheoryOfData/DataStructures/SymCard.lean/declarations/e1.md) | 67 | `declaration-track:2e598dfd2ce5b925a9cd3f731bb45afddac92089041c366d6a3f4ed0c45e5af4` |
-| 2 | `def` | [e2](../../../../../../ComputerScience/TheoryOfData/DataStructures/SymCard.lean/declarations/e2.md) | 77 | `declaration-track:94e5ad7a27c9e76d331aa1d762d4fe78cd4a846702a807bbb130ce653a54d127` |
-| 3 | `theorem` | [card_sym_fin_eq_multichoose](../../../../../../ComputerScience/TheoryOfData/DataStructures/SymCard.lean/declarations/card-sym-fin-eq-multichoose.md) | 90 | `result-track:e6e9872a73c1d1bce886bf6cad51b22c2e3a519f966ba5c506ad95d088208ae3` |
-| 4 | `theorem` | [card_sym_eq_multichoose](../../../../../../ComputerScience/TheoryOfData/DataStructures/SymCard.lean/declarations/card-sym-eq-multichoose.md) | 102 | `result-track:8751a26c9fe2897f88140066ac1131d9c58e519c41e5d13f5d5e8dc68685f767` |
-| 5 | `theorem` | [card_sym_eq_choose](../../../../../../ComputerScience/TheoryOfData/DataStructures/SymCard.lean/declarations/card-sym-eq-choose.md) | 109 | `result-track:1e9cd97a9ce183343da88616be1849708b54e39a833ba70aed025ae069b31694` |
-| 6 | `theorem` | [card_image_diag](../../../../../../ComputerScience/TheoryOfData/DataStructures/SymCard.lean/declarations/card-image-diag.md) | 122 | `result-track:1b080990e1c773cd9b825869055fc41ddd9d3c0cf1edb6e222cae621291e6cb9` |
-| 7 | `lemma` | [two_mul_card_image_offDiag](../../../../../../ComputerScience/TheoryOfData/DataStructures/SymCard.lean/declarations/two-mul-card-image-offdiag.md) | 130 | `result-track:ca340a12c55b9a61be81b93185076160a3615cf1d6e725143683a2304b5ca36b` |
-| 8 | `theorem` | [card_image_offDiag](../../../../../../ComputerScience/TheoryOfData/DataStructures/SymCard.lean/declarations/card-image-offdiag.md) | 152 | `result-track:84b7f1fea9c51a4985e8accbf83ff438229da373276ce1e798cf7176b06b27a7` |
-| 9 | `theorem` | [card_subtype_diag](../../../../../../ComputerScience/TheoryOfData/DataStructures/SymCard.lean/declarations/card-subtype-diag.md) | 156 | `result-track:6220b297bb66bf80e13a5a6a9f71542a46a0f8c4698eb1b2d1f06c7776a4445b` |
-| 10 | `theorem` | [card_subtype_not_diag](../../../../../../ComputerScience/TheoryOfData/DataStructures/SymCard.lean/declarations/card-subtype-not-diag.md) | 164 | `result-track:e0ce1d88927f2186b6e71e3e52557124a95c6246d2267bbfaa4387c417ec29df` |
-| 11 | `theorem` | [card](../../../../../../ComputerScience/TheoryOfData/DataStructures/SymCard.lean/declarations/card.md) | 174 | `result-track:d81817d8dde61ba45cb58af039470d22f857f48034719659f70673c443faa01b` |
+| 1 | `def` | [e1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SymCard.lean/declarations/e1.md) | 67 | `declaration-track:2e598dfd2ce5b925a9cd3f731bb45afddac92089041c366d6a3f4ed0c45e5af4` |
+| 2 | `def` | [e2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SymCard.lean/declarations/e2.md) | 77 | `declaration-track:94e5ad7a27c9e76d331aa1d762d4fe78cd4a846702a807bbb130ce653a54d127` |
+| 3 | `theorem` | [card_sym_fin_eq_multichoose](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SymCard.lean/declarations/card-sym-fin-eq-multichoose.md) | 90 | `result-track:e6e9872a73c1d1bce886bf6cad51b22c2e3a519f966ba5c506ad95d088208ae3` |
+| 4 | `theorem` | [card_sym_eq_multichoose](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SymCard.lean/declarations/card-sym-eq-multichoose.md) | 102 | `result-track:8751a26c9fe2897f88140066ac1131d9c58e519c41e5d13f5d5e8dc68685f767` |
+| 5 | `theorem` | [card_sym_eq_choose](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SymCard.lean/declarations/card-sym-eq-choose.md) | 109 | `result-track:1e9cd97a9ce183343da88616be1849708b54e39a833ba70aed025ae069b31694` |
+| 6 | `theorem` | [card_image_diag](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SymCard.lean/declarations/card-image-diag.md) | 122 | `result-track:1b080990e1c773cd9b825869055fc41ddd9d3c0cf1edb6e222cae621291e6cb9` |
+| 7 | `lemma` | [two_mul_card_image_offDiag](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SymCard.lean/declarations/two-mul-card-image-offdiag.md) | 130 | `result-track:ca340a12c55b9a61be81b93185076160a3615cf1d6e725143683a2304b5ca36b` |
+| 8 | `theorem` | [card_image_offDiag](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SymCard.lean/declarations/card-image-offdiag.md) | 152 | `result-track:84b7f1fea9c51a4985e8accbf83ff438229da373276ce1e798cf7176b06b27a7` |
+| 9 | `theorem` | [card_subtype_diag](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SymCard.lean/declarations/card-subtype-diag.md) | 156 | `result-track:6220b297bb66bf80e13a5a6a9f71542a46a0f8c4698eb1b2d1f06c7776a4445b` |
+| 10 | `theorem` | [card_subtype_not_diag](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SymCard.lean/declarations/card-subtype-not-diag.md) | 164 | `result-track:e0ce1d88927f2186b6e71e3e52557124a95c6246d2267bbfaa4387c417ec29df` |
+| 11 | `theorem` | [card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SymCard.lean/declarations/card.md) | 174 | `result-track:d81817d8dde61ba45cb58af039470d22f857f48034719659f70673c443faa01b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

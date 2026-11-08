@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/QuarticAdjacencyIntermediateField.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/QuarticAdjacencyIntermediateField.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticAdjacencyIntermediateField.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticAdjacencyIntermediateField.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.QuarticGaloisKernel`](../../../../AssociativeRingsAndAlgebras/QuarticGaloisKernel.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Algebra.QuarticGaloisKernel`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticGaloisKernel.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [adjacencyValueSet](../../../../AssociativeRingsAndAlgebras/QuarticAdjacencyIntermediateField.lean/declarations/adjacencyvalueset.md) | 28 | `declaration-track:26d55815e8bc9ca5981562ffe5ba936cf82c92c145882a914824c04af1feac67` |
-| 2 | `def` | [adjacencyField](../../../../AssociativeRingsAndAlgebras/QuarticAdjacencyIntermediateField.lean/declarations/adjacencyfield.md) | 32 | `declaration-track:e32e9c9734105ce27d0865e40933f9adb9df8b921b063cedfb01299b30c9b837` |
-| 3 | `theorem` | [fixes_adjacencyField_iff](../../../../AssociativeRingsAndAlgebras/QuarticAdjacencyIntermediateField.lean/declarations/fixes-adjacencyfield-iff.md) | 38 | `result-track:75bcea20261babf539d545d057f2a49e75d3972546a904a09637ab729ed046ce` |
-| 4 | `theorem` | [fixes_adjacencyField_iff_double_transposition](../../../../AssociativeRingsAndAlgebras/QuarticAdjacencyIntermediateField.lean/declarations/fixes-adjacencyfield-iff-double-transposition.md) | 72 | `result-track:865e1e45983d50f4403655f7ef67ce143c3184d2b2e0846ed8bb0019007451c4` |
+| 1 | `def` | [adjacencyValueSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticAdjacencyIntermediateField.lean/declarations/adjacencyvalueset.md) | 28 | `declaration-track:26d55815e8bc9ca5981562ffe5ba936cf82c92c145882a914824c04af1feac67` |
+| 2 | `def` | [adjacencyField](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticAdjacencyIntermediateField.lean/declarations/adjacencyfield.md) | 32 | `declaration-track:e32e9c9734105ce27d0865e40933f9adb9df8b921b063cedfb01299b30c9b837` |
+| 3 | `theorem` | [fixes_adjacencyField_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticAdjacencyIntermediateField.lean/declarations/fixes-adjacencyfield-iff.md) | 38 | `result-track:75bcea20261babf539d545d057f2a49e75d3972546a904a09637ab729ed046ce` |
+| 4 | `theorem` | [fixes_adjacencyField_iff_double_transposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticAdjacencyIntermediateField.lean/declarations/fixes-adjacencyfield-iff-double-transposition.md) | 72 | `result-track:865e1e45983d50f4403655f7ef67ce143c3184d2b2e0846ed8bb0019007451c4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

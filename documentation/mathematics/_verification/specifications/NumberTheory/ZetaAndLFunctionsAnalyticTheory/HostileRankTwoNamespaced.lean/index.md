@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HostileRankTwoNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HostileRankTwoNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HostileRankTwoNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HostileRankTwoNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [oriented_cross_eq_ratio](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HostileRankTwoNamespaced.lean/declarations/oriented-cross-eq-ratio.md) | 14 | `result-track:5b37a31a704334f295bdb62d12970fd75060cbb47b9e16439b6ae7163d5a87a8` |
-| 2 | `theorem` | [third_connected_gap](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HostileRankTwoNamespaced.lean/declarations/third-connected-gap.md) | 20 | `result-track:d177aac57ca33af5a605fd8a0cbbf9d6884445c2cafd219615ba634ab8390663` |
-| 3 | `theorem` | [triangular_bumps_wrong_sign](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HostileRankTwoNamespaced.lean/declarations/triangular-bumps-wrong-sign.md) | 25 | `result-track:f8f7b6ba65bf6743f38cf34abbcd41610d4e3b9e48565f5263a974bfd7f0466a` |
-| 4 | `theorem` | [exponential_mixture_wrong_sign](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HostileRankTwoNamespaced.lean/declarations/exponential-mixture-wrong-sign.md) | 30 | `result-track:f5213acf919a1d7fad7319adec1a4b78141ffd90adac79f419d8edb2ccff91a6` |
+| 1 | `theorem` | [oriented_cross_eq_ratio](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HostileRankTwoNamespaced.lean/declarations/oriented-cross-eq-ratio.md) | 14 | `result-track:5b37a31a704334f295bdb62d12970fd75060cbb47b9e16439b6ae7163d5a87a8` |
+| 2 | `theorem` | [third_connected_gap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HostileRankTwoNamespaced.lean/declarations/third-connected-gap.md) | 20 | `result-track:d177aac57ca33af5a605fd8a0cbbf9d6884445c2cafd219615ba634ab8390663` |
+| 3 | `theorem` | [triangular_bumps_wrong_sign](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HostileRankTwoNamespaced.lean/declarations/triangular-bumps-wrong-sign.md) | 25 | `result-track:f8f7b6ba65bf6743f38cf34abbcd41610d4e3b9e48565f5263a974bfd7f0466a` |
+| 4 | `theorem` | [exponential_mixture_wrong_sign](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HostileRankTwoNamespaced.lean/declarations/exponential-mixture-wrong-sign.md) | 30 | `result-track:f5213acf919a1d7fad7319adec1a4b78141ffd90adac79f419d8edb2ccff91a6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

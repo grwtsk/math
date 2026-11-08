@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachMinorCalibrationControls.lean/index.md) · [Full source](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachMinorCalibrationControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachMinorCalibrationControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachMinorCalibrationControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Primes.GoldbachTwoArcMinorCalibration`](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachTwoArcMinorCalibration.lean/index.md) — import line 3; pinned internal source present.
-- [`GRWTSK.NumberTheory.Primes.Checks.GoldbachScalarSupplierCountermodel`](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachScalarSupplierCountermodel.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Primes.GoldbachTwoArcMinorCalibration`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachTwoArcMinorCalibration.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Primes.Checks.GoldbachScalarSupplierCountermodel`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachScalarSupplierCountermodel.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [proxy_has_composite_support](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachMinorCalibrationControls.lean/declarations/proxy-has-composite-support.md) | 17 | `result-track:59100a0cfd15cef894a6d515ba936c17f0db27ddc59d7d4c9410c79d8489ec26` |
-| 2 | `theorem` | [proxy_zero_endpoint_is_not_free](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachMinorCalibrationControls.lean/declarations/proxy-zero-endpoint-is-not-free.md) | 20 | `result-track:9f29654603f4b6ba171beca7be08bb2042e708fdf845f5c5a16d1eb40d1e9fe2` |
-| 3 | `theorem` | [proxy_mass_at_eight](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachMinorCalibrationControls.lean/declarations/proxy-mass-at-eight.md) | 24 | `result-track:6a3305b15206f42b2697cb74d976c4abe689ab1696be998dc91512dca603ae62` |
-| 4 | `theorem` | [full_minor_margin_at_six_thousand](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachMinorCalibrationControls.lean/declarations/full-minor-margin-at-six-thousand.md) | 28 | `result-track:5a426c6265cd13e7f024eff04061dbd891019f6e9101efcc4287cd4636382d6f` |
-| 5 | `theorem` | [nonstrict_margin_can_have_zero_mass](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachMinorCalibrationControls.lean/declarations/nonstrict-margin-can-have-zero-mass.md) | 34 | `result-track:88c141f0ced653482d839a0fdb2c4affa24117620cd7d82690df620d5e03b810` |
+| 1 | `theorem` | [proxy_has_composite_support](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachMinorCalibrationControls.lean/declarations/proxy-has-composite-support.md) | 17 | `result-track:59100a0cfd15cef894a6d515ba936c17f0db27ddc59d7d4c9410c79d8489ec26` |
+| 2 | `theorem` | [proxy_zero_endpoint_is_not_free](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachMinorCalibrationControls.lean/declarations/proxy-zero-endpoint-is-not-free.md) | 20 | `result-track:9f29654603f4b6ba171beca7be08bb2042e708fdf845f5c5a16d1eb40d1e9fe2` |
+| 3 | `theorem` | [proxy_mass_at_eight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachMinorCalibrationControls.lean/declarations/proxy-mass-at-eight.md) | 24 | `result-track:6a3305b15206f42b2697cb74d976c4abe689ab1696be998dc91512dca603ae62` |
+| 4 | `theorem` | [full_minor_margin_at_six_thousand](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachMinorCalibrationControls.lean/declarations/full-minor-margin-at-six-thousand.md) | 28 | `result-track:5a426c6265cd13e7f024eff04061dbd891019f6e9101efcc4287cd4636382d6f` |
+| 5 | `theorem` | [nonstrict_margin_can_have_zero_mass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachMinorCalibrationControls.lean/declarations/nonstrict-margin-can-have-zero-mass.md) | 34 | `result-track:88c141f0ced653482d839a0fdb2c4affa24117620cd7d82690df620d5e03b810` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

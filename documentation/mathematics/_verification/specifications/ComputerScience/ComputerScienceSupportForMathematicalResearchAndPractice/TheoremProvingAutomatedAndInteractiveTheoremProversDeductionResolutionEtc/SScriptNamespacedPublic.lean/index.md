@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SScriptNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SScriptNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SScriptNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SScriptNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [SScript](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SScriptNamespacedPublic.lean/declarations/sscript.md) | 22 | `declaration-track:aa043cff4b767d643a6cda845cf694c236f681937bcc361d7f8c28f0fef8f579` |
-| 2 | `def` | [takeNConsecutiveFocusAndSolve?](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SScriptNamespacedPublic.lean/declarations/takenconsecutivefocusandsolve.md) | 30 | `declaration-track:f27a295b78d3ac0f2a550aeb1cff9b45f0bcf668a876d8734af60d2f05ed9616` |
-| 3 | `def` | [render](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SScriptNamespacedPublic.lean/declarations/render.md) | 39 | `declaration-track:287425bf313d49a2821044b2c5daef9a5e631df1aa5c41f36389bdb9f5120597` |
+| 1 | `inductive` | [SScript](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SScriptNamespacedPublic.lean/declarations/sscript.md) | 22 | `declaration-track:aa043cff4b767d643a6cda845cf694c236f681937bcc361d7f8c28f0fef8f579` |
+| 2 | `def` | [takeNConsecutiveFocusAndSolve?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SScriptNamespacedPublic.lean/declarations/takenconsecutivefocusandsolve.md) | 30 | `declaration-track:f27a295b78d3ac0f2a550aeb1cff9b45f0bcf668a876d8734af60d2f05ed9616` |
+| 3 | `def` | [render](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SScriptNamespacedPublic.lean/declarations/render.md) | 39 | `declaration-track:287425bf313d49a2821044b2c5daef9a5e631df1aa5c41f36389bdb9f5120597` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

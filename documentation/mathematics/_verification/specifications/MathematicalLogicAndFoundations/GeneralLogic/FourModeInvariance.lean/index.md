@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FourModeInvariance.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FourModeInvariance.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FourModeInvariance.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FourModeInvariance.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -48,7 +48,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 - `Mathlib.Data.Real.Basic` — import line 20; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic.NormNum` — import line 21; external provider; requires a separately pinned dependency.
-- [Square And Classification](../../../../../RealFunctions/SquareAndClassification.lean/index.md) — import line 23; pinned internal source present.
+- [Square And Classification](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SquareAndClassification.lean/index.md) — import line 23; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Exposition](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FourModeInvariance.lean/declarations/exposition.md) | 37 | `declaration-track:c5b281a597091bd3742d0308da87c34944408b444ad195d9c9a072686495a89c` |
-| 2 | `def` | [Exposition.Faithful](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FourModeInvariance.lean/declarations/exposition-faithful.md) | 43 | `declaration-track:a13c6d0dbf47bdc334308f4c22859d0c19b8d0c6cf8f306491c1d1e140f48b41` |
-| 3 | `structure` | [FourModePresentation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FourModeInvariance.lean/declarations/fourmodepresentation.md) | 50 | `declaration-track:7842e47d0e1c113ce9ee74fc446943df1c0c8b9119bca845b7e14c945595bbcb` |
-| 4 | `theorem` | [semantic_invariance](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FourModeInvariance.lean/declarations/semantic-invariance.md) | 68 | `result-track:0c0251770cf28a1c2718c3406a3850e087b4b567865229950152d09cc5c4a081` |
+| 1 | `structure` | [Exposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FourModeInvariance.lean/declarations/exposition.md) | 37 | `declaration-track:c5b281a597091bd3742d0308da87c34944408b444ad195d9c9a072686495a89c` |
+| 2 | `def` | [Exposition.Faithful](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FourModeInvariance.lean/declarations/exposition-faithful.md) | 43 | `declaration-track:a13c6d0dbf47bdc334308f4c22859d0c19b8d0c6cf8f306491c1d1e140f48b41` |
+| 3 | `structure` | [FourModePresentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FourModeInvariance.lean/declarations/fourmodepresentation.md) | 50 | `declaration-track:7842e47d0e1c113ce9ee74fc446943df1c0c8b9119bca845b7e14c945595bbcb` |
+| 4 | `theorem` | [semantic_invariance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FourModeInvariance.lean/declarations/semantic-invariance.md) | 68 | `result-track:0c0251770cf28a1c2718c3406a3850e087b4b567865229950152d09cc5c4a081` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

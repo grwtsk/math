@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/RingHomFiniteTypePublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/RingHomFiniteTypePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomFiniteTypePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomFiniteTypePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [finiteType_stableUnderComposition](../../../../CommutativeAlgebra/RingHomFiniteTypePublic.lean/declarations/finitetype-stableundercomposition.md) | 41 | `result-track:d5de8251319589b91ef814138f1599aa4d64b8301ebd0f79f1f70533b6665362` |
-| 2 | `theorem` | [finiteType_respectsIso](../../../../CommutativeAlgebra/RingHomFiniteTypePublic.lean/declarations/finitetype-respectsiso.md) | 45 | `result-track:089fe40b0a88bd70e10c33f9ce25e89d49e12a7b18c9f6c0f88a628026a24f02` |
-| 3 | `theorem` | [finiteType_isStableUnderBaseChange](../../../../CommutativeAlgebra/RingHomFiniteTypePublic.lean/declarations/finitetype-isstableunderbasechange.md) | 51 | `result-track:49e83af7d0d8a39221694569c194c6d376f7973892a4e23b3d18a7288472d020` |
-| 4 | `theorem` | [finiteType_localizationPreserves](../../../../CommutativeAlgebra/RingHomFiniteTypePublic.lean/declarations/finitetype-localizationpreserves.md) | 60 | `result-track:cedfb5d95a274eefea88b4c98c86dce3f93c54ba3cd38ee7800d098e6c2375a5` |
-| 5 | `theorem` | [localization_away_map_finiteType](../../../../CommutativeAlgebra/RingHomFiniteTypePublic.lean/declarations/localization-away-map-finitetype.md) | 63 | `result-track:3db316e2e003911485d457808e76eae30470478f6b983814d28085782f5ae732` |
-| 6 | `theorem` | [finiteType_ofLocalizationSpan](../../../../CommutativeAlgebra/RingHomFiniteTypePublic.lean/declarations/finitetype-oflocalizationspan.md) | 70 | `result-track:4876bac51c269e8706057ff110cc360c926b9408c84a563cb010c6533b8759b2` |
-| 7 | `theorem` | [finiteType_holdsForLocalizationAway](../../../../CommutativeAlgebra/RingHomFiniteTypePublic.lean/declarations/finitetype-holdsforlocalizationaway.md) | 75 | `result-track:faaef05f8f4040205bd342e2302b8c436389f9149d35a2db453d9f362ffa0c5e` |
-| 8 | `theorem` | [finiteType_ofLocalizationSpanTarget](../../../../CommutativeAlgebra/RingHomFiniteTypePublic.lean/declarations/finitetype-oflocalizationspantarget.md) | 80 | `result-track:1acf74ce4e3a63a537dd2fcd45cade3a03d9dfbe6550838b729022bf587d1a09` |
-| 9 | `theorem` | [finiteType_isLocal](../../../../CommutativeAlgebra/RingHomFiniteTypePublic.lean/declarations/finitetype-islocal.md) | 88 | `result-track:6d68430ac7397bc8001625d777de8edc72bdd52a59846bc1dfe77855601f1c0f` |
+| 1 | `theorem` | [finiteType_stableUnderComposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomFiniteTypePublic.lean/declarations/finitetype-stableundercomposition.md) | 41 | `result-track:d5de8251319589b91ef814138f1599aa4d64b8301ebd0f79f1f70533b6665362` |
+| 2 | `theorem` | [finiteType_respectsIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomFiniteTypePublic.lean/declarations/finitetype-respectsiso.md) | 45 | `result-track:089fe40b0a88bd70e10c33f9ce25e89d49e12a7b18c9f6c0f88a628026a24f02` |
+| 3 | `theorem` | [finiteType_isStableUnderBaseChange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomFiniteTypePublic.lean/declarations/finitetype-isstableunderbasechange.md) | 51 | `result-track:49e83af7d0d8a39221694569c194c6d376f7973892a4e23b3d18a7288472d020` |
+| 4 | `theorem` | [finiteType_localizationPreserves](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomFiniteTypePublic.lean/declarations/finitetype-localizationpreserves.md) | 60 | `result-track:cedfb5d95a274eefea88b4c98c86dce3f93c54ba3cd38ee7800d098e6c2375a5` |
+| 5 | `theorem` | [localization_away_map_finiteType](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomFiniteTypePublic.lean/declarations/localization-away-map-finitetype.md) | 63 | `result-track:3db316e2e003911485d457808e76eae30470478f6b983814d28085782f5ae732` |
+| 6 | `theorem` | [finiteType_ofLocalizationSpan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomFiniteTypePublic.lean/declarations/finitetype-oflocalizationspan.md) | 70 | `result-track:4876bac51c269e8706057ff110cc360c926b9408c84a563cb010c6533b8759b2` |
+| 7 | `theorem` | [finiteType_holdsForLocalizationAway](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomFiniteTypePublic.lean/declarations/finitetype-holdsforlocalizationaway.md) | 75 | `result-track:faaef05f8f4040205bd342e2302b8c436389f9149d35a2db453d9f362ffa0c5e` |
+| 8 | `theorem` | [finiteType_ofLocalizationSpanTarget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomFiniteTypePublic.lean/declarations/finitetype-oflocalizationspantarget.md) | 80 | `result-track:1acf74ce4e3a63a537dd2fcd45cade3a03d9dfbe6550838b729022bf587d1a09` |
+| 9 | `theorem` | [finiteType_isLocal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomFiniteTypePublic.lean/declarations/finitetype-islocal.md) | 88 | `result-track:6d68430ac7397bc8001625d777de8edc72bdd52a59846bc1dfe77855601f1c0f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

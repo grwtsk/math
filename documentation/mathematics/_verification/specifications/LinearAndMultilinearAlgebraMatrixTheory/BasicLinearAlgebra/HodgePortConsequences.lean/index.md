@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgePortConsequences.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgePortConsequences.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgePortConsequences.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgePortConsequences.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.LinearAlgebra.FramedFiberPort`](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedFiberPort.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.LinearAlgebra.FramedFiberPort`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedFiberPort.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,17 +57,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [IsHarmonic1](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgePortConsequences.lean/declarations/isharmonic1.md) | 23 | `declaration-track:cb88e1c459c18578a51529641913e8b3a327eaf430a4626dbd8a34a59b4db443` |
-| 2 | `theorem` | [delta_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgePortConsequences.lean/declarations/delta-apply.md) | 35 | `result-track:d41b305106ccbde04f74cc787f96b221eb12fdc411bdf020981af24f0e2a5dd2` |
-| 3 | `theorem` | [deltaStar_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgePortConsequences.lean/declarations/deltastar-apply.md) | 41 | `result-track:ed46c770c15d4bfc929d96f2f8f19401db32ae0759d0a446305d21920e9a18ce` |
-| 4 | `theorem` | [laplacian1_comm](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgePortConsequences.lean/declarations/laplacian1-comm.md) | 47 | `result-track:2a273a79d7ccfe370ccfbb1dfae2f5ea64e77e4f218f7db4478365e8b5517e7a` |
-| 5 | `theorem` | [map_harmonic1](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgePortConsequences.lean/declarations/map-harmonic1.md) | 55 | `result-track:df313b8c756193596f3423cb89e2711dc0e567a209a9382233a056ac85fb94cc` |
-| 6 | `def` | [identity](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgePortConsequences.lean/declarations/identity.md) | 65 | `declaration-track:aea1739fd63866d8d5263c19d3d71f9367cc2fe2d59d70d6769ad9982cc49777` |
-| 7 | `def` | [comp](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgePortConsequences.lean/declarations/comp.md) | 76 | `declaration-track:2dae4ac2e85aa56ddc8f77dfb961a3991b51e441e9dc712dac51c8411621ee61` |
-| 8 | `theorem` | [comp_map0_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgePortConsequences.lean/declarations/comp-map0-apply.md) | 89 | `result-track:a5c8f37d618fe867b5866244b5ba907b03b721664f7fcec90d45ef639cd92b22` |
-| 9 | `theorem` | [comp_map1_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgePortConsequences.lean/declarations/comp-map1-apply.md) | 93 | `result-track:7c9099be0d869f8d977f5f0ee8cdb6d670370bc2311db903305997b96e9c2bc6` |
-| 10 | `theorem` | [laplacian1_comm](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgePortConsequences.lean/declarations/laplacian1-comm-source-edition-2.md) | 103 | `result-track:d417fe7a6ad5218ee23d33366936edd9be9b19e3d51f7a67becc258ac7449e4c` |
-| 11 | `structure` | [ComplementaryHodgeProjectors](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgePortConsequences.lean/declarations/complementaryhodgeprojectors.md) | 112 | `declaration-track:dd38c14e0921a73f03c7ec805b9cb6777797ee9438cd440296f4459c5514d973` |
+| 1 | `def` | [IsHarmonic1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgePortConsequences.lean/declarations/isharmonic1.md) | 23 | `declaration-track:cb88e1c459c18578a51529641913e8b3a327eaf430a4626dbd8a34a59b4db443` |
+| 2 | `theorem` | [delta_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgePortConsequences.lean/declarations/delta-apply.md) | 35 | `result-track:d41b305106ccbde04f74cc787f96b221eb12fdc411bdf020981af24f0e2a5dd2` |
+| 3 | `theorem` | [deltaStar_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgePortConsequences.lean/declarations/deltastar-apply.md) | 41 | `result-track:ed46c770c15d4bfc929d96f2f8f19401db32ae0759d0a446305d21920e9a18ce` |
+| 4 | `theorem` | [laplacian1_comm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgePortConsequences.lean/declarations/laplacian1-comm.md) | 47 | `result-track:2a273a79d7ccfe370ccfbb1dfae2f5ea64e77e4f218f7db4478365e8b5517e7a` |
+| 5 | `theorem` | [map_harmonic1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgePortConsequences.lean/declarations/map-harmonic1.md) | 55 | `result-track:df313b8c756193596f3423cb89e2711dc0e567a209a9382233a056ac85fb94cc` |
+| 6 | `def` | [identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgePortConsequences.lean/declarations/identity.md) | 65 | `declaration-track:aea1739fd63866d8d5263c19d3d71f9367cc2fe2d59d70d6769ad9982cc49777` |
+| 7 | `def` | [comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgePortConsequences.lean/declarations/comp.md) | 76 | `declaration-track:2dae4ac2e85aa56ddc8f77dfb961a3991b51e441e9dc712dac51c8411621ee61` |
+| 8 | `theorem` | [comp_map0_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgePortConsequences.lean/declarations/comp-map0-apply.md) | 89 | `result-track:a5c8f37d618fe867b5866244b5ba907b03b721664f7fcec90d45ef639cd92b22` |
+| 9 | `theorem` | [comp_map1_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgePortConsequences.lean/declarations/comp-map1-apply.md) | 93 | `result-track:7c9099be0d869f8d977f5f0ee8cdb6d670370bc2311db903305997b96e9c2bc6` |
+| 10 | `theorem` | [laplacian1_comm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgePortConsequences.lean/declarations/laplacian1-comm-source-edition-2.md) | 103 | `result-track:d417fe7a6ad5218ee23d33366936edd9be9b19e3d51f7a67becc258ac7449e4c` |
+| 11 | `structure` | [ComplementaryHodgeProjectors](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgePortConsequences.lean/declarations/complementaryhodgeprojectors.md) | 112 | `declaration-track:dd38c14e0921a73f03c7ec805b9cb6777797ee9438cd440296f4459c5514d973` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

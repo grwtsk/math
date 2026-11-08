@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GroupoidBasicNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GroupoidBasicNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GroupoidBasicNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GroupoidBasicNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [isThin_iff](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GroupoidBasicNamespaced.lean/declarations/isthin-iff.md) | 29 | `result-track:7384551cf5b9ae0d8bf6e46b2ca5c3ad97ce2f17c0107bc664dff9af9c117b59` |
-| 2 | `def` | [IsTotallyDisconnected](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GroupoidBasicNamespaced.lean/declarations/istotallydisconnected.md) | 43 | `declaration-track:cc922fbbd9623bb736cc63bbef2940ae6ee38db16ee75b72e21223fe5d1fdce0` |
+| 1 | `theorem` | [isThin_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GroupoidBasicNamespaced.lean/declarations/isthin-iff.md) | 29 | `result-track:7384551cf5b9ae0d8bf6e46b2ca5c3ad97ce2f17c0107bc664dff9af9c117b59` |
+| 2 | `def` | [IsTotallyDisconnected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GroupoidBasicNamespaced.lean/declarations/istotallydisconnected.md) | 43 | `declaration-track:cc922fbbd9623bb736cc63bbef2940ae6ee38db16ee75b72e21223fe5d1fdce0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

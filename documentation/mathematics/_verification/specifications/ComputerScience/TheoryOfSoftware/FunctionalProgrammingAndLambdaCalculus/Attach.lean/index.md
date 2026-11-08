@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/Attach.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/Attach.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/Attach.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/Attach.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [pmap](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/Attach.lean/declarations/pmap.md) | 14 | `declaration-track:357f38ac95e1446086a2a5722a8be164d6f6b56d50e76e6e5289dd95db74801e` |
-| 2 | `def` | [attachImpl](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/Attach.lean/declarations/attachimpl.md) | 23 | `declaration-track:38a5a8318669be8bdf948bb164910dd3fa23f30b3f34ab2846a3da207714fa8e` |
-| 3 | `def` | [attach](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/Attach.lean/declarations/attach.md) | 27 | `declaration-track:f5306f73bbc0ede537f9424c79f2bcb7e47bc2a730cc616cd6983fd417c89341` |
-| 4 | `def` | [pmapImpl](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/Attach.lean/declarations/pmapimpl.md) | 31 | `declaration-track:b431dad8732ceb413a9bf1a72d87825ce973d2799e728b7558c4e37de9a2ccb5` |
-| 5 | `theorem` | [pmap_eq_pmapImpl](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/Attach.lean/declarations/pmap-eq-pmapimpl.md) | 34 | `result-track:170b5e2223476f7a84e85567694ead76dd948b416f035ee6779d98f37db34c71` |
+| 1 | `def` | [pmap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/Attach.lean/declarations/pmap.md) | 14 | `declaration-track:357f38ac95e1446086a2a5722a8be164d6f6b56d50e76e6e5289dd95db74801e` |
+| 2 | `def` | [attachImpl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/Attach.lean/declarations/attachimpl.md) | 23 | `declaration-track:38a5a8318669be8bdf948bb164910dd3fa23f30b3f34ab2846a3da207714fa8e` |
+| 3 | `def` | [attach](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/Attach.lean/declarations/attach.md) | 27 | `declaration-track:f5306f73bbc0ede537f9424c79f2bcb7e47bc2a730cc616cd6983fd417c89341` |
+| 4 | `def` | [pmapImpl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/Attach.lean/declarations/pmapimpl.md) | 31 | `declaration-track:b431dad8732ceb413a9bf1a72d87825ce973d2799e728b7558c4e37de9a2ccb5` |
+| 5 | `theorem` | [pmap_eq_pmapImpl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/Attach.lean/declarations/pmap-eq-pmapimpl.md) | 34 | `result-track:170b5e2223476f7a84e85567694ead76dd948b416f035ee6779d98f37db34c71` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt01SourceActualAdaptiveDepthGeFourSquare.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt01SourceActualAdaptiveDepthGeFourSquare.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt01SourceActualAdaptiveDepthGeFourSquare.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt01SourceActualAdaptiveDepthGeFourSquare.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_adaptive_depth_ge_four_square](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt01SourceActualAdaptiveDepthGeFourSquare.lean/declarations/actual-adaptive-depth-ge-four-square.md) | 13 | `result-track:d6cc9ca679fed647d707bd2dfa1dc3e7eecda5ff441470adbb47a31c8595e5ec` |
+| 1 | `theorem` | [actual_adaptive_depth_ge_four_square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt01SourceActualAdaptiveDepthGeFourSquare.lean/declarations/actual-adaptive-depth-ge-four-square.md) | 13 | `result-track:d6cc9ca679fed647d707bd2dfa1dc3e7eecda5ff441470adbb47a31c8595e5ec` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceHyperbolaRadiusFollowthroughAttempt01Input.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceHyperbolaRadiusFollowthroughAttempt01Input.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceHyperbolaRadiusFollowthroughAttempt01Input.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceHyperbolaRadiusFollowthroughAttempt01Input.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [strict_upper_of_joint_linear_tail_radius](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceHyperbolaRadiusFollowthroughAttempt01Input.lean/declarations/strict-upper-of-joint-linear-tail-radius.md) | 20 | `result-track:4d99a892f92b2710c0c46f16da0891fef5d0ca02fa560dc33f6e397852a5cbd4` |
-| 2 | `theorem` | [strict_tail_of_joint_linear_tail_radius](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceHyperbolaRadiusFollowthroughAttempt01Input.lean/declarations/strict-tail-of-joint-linear-tail-radius.md) | 43 | `result-track:77af95029c17ac32fb028d4bc491486aa0d94c3f6bbf021c588ff85b8ce88609` |
-| 3 | `theorem` | [primary_strict_frontier_of_joint_linear_tail](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceHyperbolaRadiusFollowthroughAttempt01Input.lean/declarations/primary-strict-frontier-of-joint-linear-tail.md) | 56 | `result-track:3f191d66fb42a24996b812a64384c2bb9ff64ceb768d92c727f4e8017a51160a` |
+| 1 | `theorem` | [strict_upper_of_joint_linear_tail_radius](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceHyperbolaRadiusFollowthroughAttempt01Input.lean/declarations/strict-upper-of-joint-linear-tail-radius.md) | 20 | `result-track:4d99a892f92b2710c0c46f16da0891fef5d0ca02fa560dc33f6e397852a5cbd4` |
+| 2 | `theorem` | [strict_tail_of_joint_linear_tail_radius](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceHyperbolaRadiusFollowthroughAttempt01Input.lean/declarations/strict-tail-of-joint-linear-tail-radius.md) | 43 | `result-track:77af95029c17ac32fb028d4bc491486aa0d94c3f6bbf021c588ff85b8ce88609` |
+| 3 | `theorem` | [primary_strict_frontier_of_joint_linear_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceHyperbolaRadiusFollowthroughAttempt01Input.lean/declarations/primary-strict-frontier-of-joint-linear-tail.md) | 56 | `result-track:3f191d66fb42a24996b812a64384c2bb9ff64ceb768d92c727f4e8017a51160a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

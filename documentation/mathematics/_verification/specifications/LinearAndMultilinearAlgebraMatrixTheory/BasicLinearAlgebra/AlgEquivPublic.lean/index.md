@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AlgEquivPublic.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AlgEquivPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AlgEquivPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AlgEquivPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [AlgEquiv.eq_linearEquivConjAlgEquiv](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AlgEquivPublic.lean/declarations/algequiv-eq-linearequivconjalgequiv.md) | 33 | `result-track:7b5ceda8cee67e535389261bdbb4e169aee51a887df57a5bc137d80e7a110cec` |
-| 2 | `theorem` | [LinearEquiv.conjAlgEquiv_surjective](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AlgEquivPublic.lean/declarations/linearequiv-conjalgequiv-surjective.md) | 61 | `result-track:1b0e6e7471cb2fafe3864f4733a51193f259ad683afac2ecf15dc839311735e4` |
-| 3 | `theorem` | [Module.End.mulSemiringActionToAlgEquiv_conjAct_surjective](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AlgEquivPublic.lean/declarations/module-end-mulsemiringactiontoalgequiv-conjact-surjective.md) | 66 | `result-track:cf0ca21cfac34adc48f90f9f7ce7b583193e55cd3cdc9105fdbc2b2f1f8d8df9` |
+| 1 | `theorem` | [AlgEquiv.eq_linearEquivConjAlgEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AlgEquivPublic.lean/declarations/algequiv-eq-linearequivconjalgequiv.md) | 33 | `result-track:7b5ceda8cee67e535389261bdbb4e169aee51a887df57a5bc137d80e7a110cec` |
+| 2 | `theorem` | [LinearEquiv.conjAlgEquiv_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AlgEquivPublic.lean/declarations/linearequiv-conjalgequiv-surjective.md) | 61 | `result-track:1b0e6e7471cb2fafe3864f4733a51193f259ad683afac2ecf15dc839311735e4` |
+| 3 | `theorem` | [Module.End.mulSemiringActionToAlgEquiv_conjAct_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AlgEquivPublic.lean/declarations/module-end-mulsemiringactiontoalgequiv-conjact-surjective.md) | 66 | `result-track:cf0ca21cfac34adc48f90f9f7ce7b583193e55cd3cdc9105fdbc2b2f1f8d8df9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

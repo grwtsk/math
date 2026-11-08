@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyNamespacedEdition2.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyNamespacedEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyNamespacedEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyNamespacedEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [positive_candidate_eq](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyNamespacedEdition2.lean/declarations/positive-candidate-eq.md) | 50 | `result-track:3a3dedec55c715ace56a53786c8d9209bc4a82445111ab49fa8da18adf7f76eb` |
-| 2 | `theorem` | [continuedTransform_meromorphic](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyNamespacedEdition2.lean/declarations/continuedtransform-meromorphic.md) | 79 | `result-track:4d493575e45e1943b9c1c49eea3e5302aa2af592d050b2a23142512764eb75ee` |
-| 3 | `theorem` | [shifted_pole_nonreal](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyNamespacedEdition2.lean/declarations/shifted-pole-nonreal.md) | 94 | `result-track:ed47e848d899106614c0be61c470ca7461a8d7ac75848ad7f926197962562465` |
-| 4 | `theorem` | [shifted_pole_ne_real](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyNamespacedEdition2.lean/declarations/shifted-pole-ne-real.md) | 102 | `result-track:8368b50e72aa1bf597a13330743c614a2a0d7d4885cf5486ce31dd64dc7cb0cb` |
-| 5 | `theorem` | [positive_real_mem_domain](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyNamespacedEdition2.lean/declarations/positive-real-mem-domain.md) | 111 | `result-track:be4918f6d161fc07d0ee405b3fbc3495846a653b6d9568ff7025bd253a04df5e` |
-| 6 | `theorem` | [continuedTransform_analytic_positive_real](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyNamespacedEdition2.lean/declarations/continuedtransform-analytic-positive-real.md) | 126 | `result-track:48f6f1ad5d5ea28cc466c8f86250588beb222a7d1c5a7c64a69b1da75ad829e4` |
-| 7 | `def` | [MeromorphicLaplacePoleObligation](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyNamespacedEdition2.lean/declarations/meromorphiclaplacepoleobligation.md) | 137 | `declaration-track:f48929f4d994ad1c0e427a9ec9b72deaab5df9339ef432d970a8d2587dca8ea6` |
-| 8 | `theorem` | [meromorphic_laplace_pole](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyNamespacedEdition2.lean/declarations/meromorphic-laplace-pole.md) | 164 | `result-track:525a28ffdc45fb10b8f6a53ea418390e353a2f708c74a28e58e5bf90a87a5b62` |
+| 1 | `theorem` | [positive_candidate_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyNamespacedEdition2.lean/declarations/positive-candidate-eq.md) | 50 | `result-track:3a3dedec55c715ace56a53786c8d9209bc4a82445111ab49fa8da18adf7f76eb` |
+| 2 | `theorem` | [continuedTransform_meromorphic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyNamespacedEdition2.lean/declarations/continuedtransform-meromorphic.md) | 79 | `result-track:4d493575e45e1943b9c1c49eea3e5302aa2af592d050b2a23142512764eb75ee` |
+| 3 | `theorem` | [shifted_pole_nonreal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyNamespacedEdition2.lean/declarations/shifted-pole-nonreal.md) | 94 | `result-track:ed47e848d899106614c0be61c470ca7461a8d7ac75848ad7f926197962562465` |
+| 4 | `theorem` | [shifted_pole_ne_real](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyNamespacedEdition2.lean/declarations/shifted-pole-ne-real.md) | 102 | `result-track:8368b50e72aa1bf597a13330743c614a2a0d7d4885cf5486ce31dd64dc7cb0cb` |
+| 5 | `theorem` | [positive_real_mem_domain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyNamespacedEdition2.lean/declarations/positive-real-mem-domain.md) | 111 | `result-track:be4918f6d161fc07d0ee405b3fbc3495846a653b6d9568ff7025bd253a04df5e` |
+| 6 | `theorem` | [continuedTransform_analytic_positive_real](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyNamespacedEdition2.lean/declarations/continuedtransform-analytic-positive-real.md) | 126 | `result-track:48f6f1ad5d5ea28cc466c8f86250588beb222a7d1c5a7c64a69b1da75ad829e4` |
+| 7 | `def` | [MeromorphicLaplacePoleObligation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyNamespacedEdition2.lean/declarations/meromorphiclaplacepoleobligation.md) | 137 | `declaration-track:f48929f4d994ad1c0e427a9ec9b72deaab5df9339ef432d970a8d2587dca8ea6` |
+| 8 | `theorem` | [meromorphic_laplace_pole](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyNamespacedEdition2.lean/declarations/meromorphic-laplace-pole.md) | 164 | `result-track:525a28ffdc45fb10b8f6a53ea418390e353a2f708c74a28e58e5bf90a87a5b62` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

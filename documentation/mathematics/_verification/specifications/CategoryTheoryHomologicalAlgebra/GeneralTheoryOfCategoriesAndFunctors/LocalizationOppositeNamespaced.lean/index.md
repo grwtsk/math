@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationOppositeNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationOppositeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationOppositeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationOppositeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [StrictUniversalPropertyFixedTarget.op](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationOppositeNamespaced.lean/declarations/strictuniversalpropertyfixedtarget-op.md) | 38 | `declaration-track:87a8c22697ea3f95c04fa64185ececf94b3dbfc1c806f6868c8940a377fd003f` |
-| 2 | `instance` | [isLocalization_op](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationOppositeNamespaced.lean/declarations/islocalization-op-source-edition-2.md) | 51 | `declaration-track:447144f196ca094e6936942d186c0ac7294ca4551ef1f3975d516902f026abce` |
-| 3 | `instance` | [IsLocalization.op](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationOppositeNamespaced.lean/declarations/islocalization-op.md) | 62 | `declaration-track:17c2d70064c169703e9a64253c27766a680216843f539dc7240db6084a7c7633` |
-| 4 | `lemma` | [isoOfHom_unop](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationOppositeNamespaced.lean/declarations/isoofhom-unop.md) | 70 | `result-track:4e8d6344faadd296fa503dc34e67e362cde877835ca49c9d0ab51cf5bb06dbbc` |
-| 5 | `lemma` | [isoOfHom_op_inv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationOppositeNamespaced.lean/declarations/isoofhom-op-inv.md) | 73 | `result-track:65d660d69d97d00c228a90fcf1f110fb0f668059865446ffe62fb133383f46da` |
+| 1 | `def` | [StrictUniversalPropertyFixedTarget.op](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationOppositeNamespaced.lean/declarations/strictuniversalpropertyfixedtarget-op.md) | 38 | `declaration-track:87a8c22697ea3f95c04fa64185ececf94b3dbfc1c806f6868c8940a377fd003f` |
+| 2 | `instance` | [isLocalization_op](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationOppositeNamespaced.lean/declarations/islocalization-op-source-edition-2.md) | 51 | `declaration-track:447144f196ca094e6936942d186c0ac7294ca4551ef1f3975d516902f026abce` |
+| 3 | `instance` | [IsLocalization.op](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationOppositeNamespaced.lean/declarations/islocalization-op.md) | 62 | `declaration-track:17c2d70064c169703e9a64253c27766a680216843f539dc7240db6084a7c7633` |
+| 4 | `lemma` | [isoOfHom_unop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationOppositeNamespaced.lean/declarations/isoofhom-unop.md) | 70 | `result-track:4e8d6344faadd296fa503dc34e67e362cde877835ca49c9d0ab51cf5bb06dbbc` |
+| 5 | `lemma` | [isoOfHom_op_inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationOppositeNamespaced.lean/declarations/isoofhom-op-inv.md) | 73 | `result-track:65d660d69d97d00c228a90fcf1f110fb0f668059865446ffe62fb133383f46da` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

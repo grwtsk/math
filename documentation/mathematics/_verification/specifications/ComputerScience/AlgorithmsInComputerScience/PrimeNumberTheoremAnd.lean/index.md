@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/PrimeNumberTheoremAnd.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/PrimeNumberTheoremAnd.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PrimeNumberTheoremAnd.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PrimeNumberTheoremAnd.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [conceptualBoundaries](../../../../../ComputerScience/AlgorithmsInComputerScience/PrimeNumberTheoremAnd.lean/declarations/conceptualboundaries.md) | 10 | `declaration-track:b28838fc84e07224ae2a65528cdd7e1259791c747e3cbe75e07cfaf775fa5a67` |
-| 2 | `theorem` | [conceptualBoundaries_count](../../../../../ComputerScience/AlgorithmsInComputerScience/PrimeNumberTheoremAnd.lean/declarations/conceptualboundaries-count.md) | 14 | `result-track:c8514bd5fcb4c92a2d8f4475e87a51608d16fc991e5e350fb844f83981493055` |
+| 1 | `def` | [conceptualBoundaries](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PrimeNumberTheoremAnd.lean/declarations/conceptualboundaries.md) | 10 | `declaration-track:b28838fc84e07224ae2a65528cdd7e1259791c747e3cbe75e07cfaf775fa5a67` |
+| 2 | `theorem` | [conceptualBoundaries_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PrimeNumberTheoremAnd.lean/declarations/conceptualboundaries-count.md) | 14 | `result-track:c8514bd5fcb4c92a2d8f4475e87a51608d16fc991e5e350fb844f83981493055` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

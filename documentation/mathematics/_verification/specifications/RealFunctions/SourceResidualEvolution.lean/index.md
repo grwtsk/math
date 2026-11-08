@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/SourceResidualEvolution.lean/index.md) · [Full source](../../../../RealFunctions/SourceResidualEvolution.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceResidualEvolution.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceResidualEvolution.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.ErrorBounds.ContractingResidualBudget`](../../../../RealFunctions/ContractingResidualBudget.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.ErrorBounds.ContractingResidualBudget`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContractingResidualBudget.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,25 +57,25 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [sourceResidual](../../../../RealFunctions/SourceResidualEvolution.lean/declarations/sourceresidual.md) | 43 | `declaration-track:f8c1373b7f62ca43988154dff08996c67e4159765222d37d69396a49f0f0865a` |
-| 2 | `def` | [stageDefect](../../../../RealFunctions/SourceResidualEvolution.lean/declarations/stagedefect.md) | 47 | `declaration-track:9984d3fdf60caf18e68495f27212da3b6b05842626bd7bdfa6f00c891f33cc8c` |
-| 3 | `def` | [residualForcing](../../../../RealFunctions/SourceResidualEvolution.lean/declarations/residualforcing.md) | 52 | `declaration-track:c2cb70dfa7e3751d92cb8e1f49f8176cf26a71dfe501dc72ab8d96c874309a90` |
-| 4 | `theorem` | [sourceResidual_evolution](../../../../RealFunctions/SourceResidualEvolution.lean/declarations/sourceresidual-evolution.md) | 57 | `result-track:af6ee08172e04930eb5588ee65cde70de55d919d4272b98831045074f8c141bd` |
-| 5 | `theorem` | [source_readout_difference](../../../../RealFunctions/SourceResidualEvolution.lean/declarations/source-readout-difference.md) | 68 | `result-track:0c283a6adbadc59e84a44d24d7ca0471d945dd297c039f5995eb80fdd2cb3a06` |
-| 6 | `theorem` | [channelMass_sub_le](../../../../RealFunctions/SourceResidualEvolution.lean/declarations/channelmass-sub-le.md) | 77 | `result-track:5970eb3c3a425d6d39c3888e7c85842b959e6d34e94968725f30827c93feaec6` |
-| 7 | `theorem` | [source_residual_budget_step](../../../../RealFunctions/SourceResidualEvolution.lean/declarations/source-residual-budget-step.md) | 93 | `result-track:4d6c8a84df4600e20168b5d05ee844de2bf6909e157794a9b61da605a9f5aaae` |
-| 8 | `theorem` | [net_forcing_vanishes_of_separate_defects](../../../../RealFunctions/SourceResidualEvolution.lean/declarations/net-forcing-vanishes-of-separate-defects.md) | 107 | `result-track:13e1e4740524e3af63884dcd60cf2522d62e3eae204890c93cea585214183f11` |
-| 9 | `theorem` | [matched_injection_forcing](../../../../RealFunctions/SourceResidualEvolution.lean/declarations/matched-injection-forcing.md) | 129 | `result-track:9c599bd7171bce772d99e6c1cb4c456c8927e01fe9bb4989bba5cb5176a8169f` |
-| 10 | `theorem` | [no_fixed_negative_of_source_defects](../../../../RealFunctions/SourceResidualEvolution.lean/declarations/no-fixed-negative-of-source-defects.md) | 143 | `result-track:b288e8702de4fa1e16cfe800e6cca9d50d7d5188e463b7e234261523b0997a78` |
-| 11 | `theorem` | [fixed_residual_forces_defect](../../../../RealFunctions/SourceResidualEvolution.lean/declarations/fixed-residual-forces-defect.md) | 169 | `result-track:c4d6fdf694e86f394abde773cbab1a383f0bd7d13a72737e0728386b8e912d6e` |
-| 12 | `theorem` | [fixed_readout_forces_defect](../../../../RealFunctions/SourceResidualEvolution.lean/declarations/fixed-readout-forces-defect.md) | 183 | `result-track:0384580c3d465228e063268b44620b0d06f6c19392e652012265f92115f8520a` |
-| 13 | `def` | [unitSource](../../../../RealFunctions/SourceResidualEvolution.lean/declarations/unitsource.md) | 199 | `declaration-track:cb1ee7d5132f614c1913afb23e4ed6e1933cab2fa9cd0de164870255d0a69e1c` |
-| 14 | `def` | [zeroModel](../../../../RealFunctions/SourceResidualEvolution.lean/declarations/zeromodel.md) | 201 | `declaration-track:343901fa42264f28bcfbee1fb06ab803518f1df06fb93c30353573584bbbcc4c` |
-| 15 | `def` | [halfGain](../../../../RealFunctions/SourceResidualEvolution.lean/declarations/halfgain.md) | 203 | `declaration-track:db37a835188128f2f1a5d1ef44ef786d06caf26937c09ead52dd8bfd468d87d6` |
-| 16 | `theorem` | [persistent_source_fixture](../../../../RealFunctions/SourceResidualEvolution.lean/declarations/persistent-source-fixture.md) | 206 | `result-track:1259051e2d8037d2c7902e3e0fd94cde50d0c5e5fbd4375624edf86a8cfdbebf` |
-| 17 | `theorem` | [persistent_source_defect_not_vanishing](../../../../RealFunctions/SourceResidualEvolution.lean/declarations/persistent-source-defect-not-vanishing.md) | 214 | `result-track:c204ee688340d81bbdb2566cb72860493babb2ca74afd205ab27abbf2cb7ae01` |
-| 18 | `theorem` | [matching_persistent_defects_fixture](../../../../RealFunctions/SourceResidualEvolution.lean/declarations/matching-persistent-defects-fixture.md) | 222 | `result-track:aee229f8cd5f941e332e2453ad2a560628da496fabef404b5ac94dcc8380dca7` |
-| 19 | `theorem` | [affine_tracking_fixture](../../../../RealFunctions/SourceResidualEvolution.lean/declarations/affine-tracking-fixture.md) | 231 | `result-track:4d5e6074c7425daf5f68ac1f03cb58911304834cc07e14377ae4aaf5e5de7a79` |
+| 1 | `def` | [sourceResidual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceResidualEvolution.lean/declarations/sourceresidual.md) | 43 | `declaration-track:f8c1373b7f62ca43988154dff08996c67e4159765222d37d69396a49f0f0865a` |
+| 2 | `def` | [stageDefect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceResidualEvolution.lean/declarations/stagedefect.md) | 47 | `declaration-track:9984d3fdf60caf18e68495f27212da3b6b05842626bd7bdfa6f00c891f33cc8c` |
+| 3 | `def` | [residualForcing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceResidualEvolution.lean/declarations/residualforcing.md) | 52 | `declaration-track:c2cb70dfa7e3751d92cb8e1f49f8176cf26a71dfe501dc72ab8d96c874309a90` |
+| 4 | `theorem` | [sourceResidual_evolution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceResidualEvolution.lean/declarations/sourceresidual-evolution.md) | 57 | `result-track:af6ee08172e04930eb5588ee65cde70de55d919d4272b98831045074f8c141bd` |
+| 5 | `theorem` | [source_readout_difference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceResidualEvolution.lean/declarations/source-readout-difference.md) | 68 | `result-track:0c283a6adbadc59e84a44d24d7ca0471d945dd297c039f5995eb80fdd2cb3a06` |
+| 6 | `theorem` | [channelMass_sub_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceResidualEvolution.lean/declarations/channelmass-sub-le.md) | 77 | `result-track:5970eb3c3a425d6d39c3888e7c85842b959e6d34e94968725f30827c93feaec6` |
+| 7 | `theorem` | [source_residual_budget_step](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceResidualEvolution.lean/declarations/source-residual-budget-step.md) | 93 | `result-track:4d6c8a84df4600e20168b5d05ee844de2bf6909e157794a9b61da605a9f5aaae` |
+| 8 | `theorem` | [net_forcing_vanishes_of_separate_defects](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceResidualEvolution.lean/declarations/net-forcing-vanishes-of-separate-defects.md) | 107 | `result-track:13e1e4740524e3af63884dcd60cf2522d62e3eae204890c93cea585214183f11` |
+| 9 | `theorem` | [matched_injection_forcing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceResidualEvolution.lean/declarations/matched-injection-forcing.md) | 129 | `result-track:9c599bd7171bce772d99e6c1cb4c456c8927e01fe9bb4989bba5cb5176a8169f` |
+| 10 | `theorem` | [no_fixed_negative_of_source_defects](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceResidualEvolution.lean/declarations/no-fixed-negative-of-source-defects.md) | 143 | `result-track:b288e8702de4fa1e16cfe800e6cca9d50d7d5188e463b7e234261523b0997a78` |
+| 11 | `theorem` | [fixed_residual_forces_defect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceResidualEvolution.lean/declarations/fixed-residual-forces-defect.md) | 169 | `result-track:c4d6fdf694e86f394abde773cbab1a383f0bd7d13a72737e0728386b8e912d6e` |
+| 12 | `theorem` | [fixed_readout_forces_defect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceResidualEvolution.lean/declarations/fixed-readout-forces-defect.md) | 183 | `result-track:0384580c3d465228e063268b44620b0d06f6c19392e652012265f92115f8520a` |
+| 13 | `def` | [unitSource](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceResidualEvolution.lean/declarations/unitsource.md) | 199 | `declaration-track:cb1ee7d5132f614c1913afb23e4ed6e1933cab2fa9cd0de164870255d0a69e1c` |
+| 14 | `def` | [zeroModel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceResidualEvolution.lean/declarations/zeromodel.md) | 201 | `declaration-track:343901fa42264f28bcfbee1fb06ab803518f1df06fb93c30353573584bbbcc4c` |
+| 15 | `def` | [halfGain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceResidualEvolution.lean/declarations/halfgain.md) | 203 | `declaration-track:db37a835188128f2f1a5d1ef44ef786d06caf26937c09ead52dd8bfd468d87d6` |
+| 16 | `theorem` | [persistent_source_fixture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceResidualEvolution.lean/declarations/persistent-source-fixture.md) | 206 | `result-track:1259051e2d8037d2c7902e3e0fd94cde50d0c5e5fbd4375624edf86a8cfdbebf` |
+| 17 | `theorem` | [persistent_source_defect_not_vanishing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceResidualEvolution.lean/declarations/persistent-source-defect-not-vanishing.md) | 214 | `result-track:c204ee688340d81bbdb2566cb72860493babb2ca74afd205ab27abbf2cb7ae01` |
+| 18 | `theorem` | [matching_persistent_defects_fixture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceResidualEvolution.lean/declarations/matching-persistent-defects-fixture.md) | 222 | `result-track:aee229f8cd5f941e332e2453ad2a560628da496fabef404b5ac94dcc8380dca7` |
+| 19 | `theorem` | [affine_tracking_fixture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceResidualEvolution.lean/declarations/affine-tracking-fixture.md) | 231 | `result-track:4d5e6074c7425daf5f68ac1f03cb58911304834cc07e14377ae4aaf5e5de7a79` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/Factorial.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/Factorial.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Factorial.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Factorial.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [cast_descFactorial](../../../../../../ComputerScience/TheoryOfData/DataStructures/Factorial.lean/declarations/cast-descfactorial.md) | 33 | `result-track:43be45664ee58d0b2df8ba4d495f147925388e7f7a0124a2572dd4e198c18a9e` |
+| 1 | `theorem` | [cast_descFactorial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Factorial.lean/declarations/cast-descfactorial.md) | 33 | `result-track:43be45664ee58d0b2df8ba4d495f147925388e7f7a0124a2572dd4e198c18a9e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

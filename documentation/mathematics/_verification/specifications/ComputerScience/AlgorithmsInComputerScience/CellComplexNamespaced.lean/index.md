@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/CellComplexNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/CellComplexNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CellComplexNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CellComplexNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FiniteCellComplex](../../../../../ComputerScience/AlgorithmsInComputerScience/CellComplexNamespaced.lean/declarations/finitecellcomplex.md) | 33 | `declaration-track:0b9d80bce241e22dc30506b0154d0bb419908b6fd65126d7dc1e4350236abc90` |
-| 2 | `structure` | [Chain](../../../../../ComputerScience/AlgorithmsInComputerScience/CellComplexNamespaced.lean/declarations/chain.md) | 43 | `declaration-track:56ebd04706323d031e2eb9085716fb938c8529014edecc5bfef0a687dd96312e` |
-| 3 | `def` | [Chain.boundary](../../../../../ComputerScience/AlgorithmsInComputerScience/CellComplexNamespaced.lean/declarations/chain-boundary.md) | 47 | `declaration-track:9c9836d84d91cfb60bbe531d73eb94fb293dbab6d105de9b6eb6aca82dae78e6` |
-| 4 | `structure` | [ClosedChain](../../../../../ComputerScience/AlgorithmsInComputerScience/CellComplexNamespaced.lean/declarations/closedchain.md) | 60 | `declaration-track:b9df7f165e481401634981ed4bbd4921a5cfb010811c620b833f2e983b58313b` |
-| 5 | `structure` | [NonBoundaryChain](../../../../../ComputerScience/AlgorithmsInComputerScience/CellComplexNamespaced.lean/declarations/nonboundarychain.md) | 68 | `declaration-track:1c7b59108421ed71c75df74b11c5ade86b38f7fba134406d975d31ddbfc8783d` |
-| 6 | `structure` | [HomologyClass](../../../../../ComputerScience/AlgorithmsInComputerScience/CellComplexNamespaced.lean/declarations/homologyclass.md) | 77 | `declaration-track:d2a8595b008291169709b1fc613b62cefe850385678aff527015d8dd40bfe055` |
-| 7 | `theorem` | [homologyClass_sound](../../../../../ComputerScience/AlgorithmsInComputerScience/CellComplexNamespaced.lean/declarations/homologyclass-sound.md) | 86 | `result-track:1ca3f4e2c2778b2ba374fd821235e0bdf38c28e2a8dbdd46f8553870c5c87ab1` |
+| 1 | `structure` | [FiniteCellComplex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CellComplexNamespaced.lean/declarations/finitecellcomplex.md) | 33 | `declaration-track:0b9d80bce241e22dc30506b0154d0bb419908b6fd65126d7dc1e4350236abc90` |
+| 2 | `structure` | [Chain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CellComplexNamespaced.lean/declarations/chain.md) | 43 | `declaration-track:56ebd04706323d031e2eb9085716fb938c8529014edecc5bfef0a687dd96312e` |
+| 3 | `def` | [Chain.boundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CellComplexNamespaced.lean/declarations/chain-boundary.md) | 47 | `declaration-track:9c9836d84d91cfb60bbe531d73eb94fb293dbab6d105de9b6eb6aca82dae78e6` |
+| 4 | `structure` | [ClosedChain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CellComplexNamespaced.lean/declarations/closedchain.md) | 60 | `declaration-track:b9df7f165e481401634981ed4bbd4921a5cfb010811c620b833f2e983b58313b` |
+| 5 | `structure` | [NonBoundaryChain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CellComplexNamespaced.lean/declarations/nonboundarychain.md) | 68 | `declaration-track:1c7b59108421ed71c75df74b11c5ade86b38f7fba134406d975d31ddbfc8783d` |
+| 6 | `structure` | [HomologyClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CellComplexNamespaced.lean/declarations/homologyclass.md) | 77 | `declaration-track:d2a8595b008291169709b1fc613b62cefe850385678aff527015d8dd40bfe055` |
+| 7 | `theorem` | [homologyClass_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CellComplexNamespaced.lean/declarations/homologyclass-sound.md) | 86 | `result-track:1ca3f4e2c2778b2ba374fd821235e0bdf38c28e2a8dbdd46f8553870c5c87ab1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

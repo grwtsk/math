@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumLatticeNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumLatticeNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SumLatticeNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SumLatticeNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [instSemilatticeSup](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumLatticeNamespacedPublic.lean/declarations/instsemilatticesup.md) | 36 | `declaration-track:96f44ca2d6b9d465101b2fb72be25e6c40a684fa7f7a3df6ffcb9f0ad2389a4a` |
-| 2 | `lemma` | [inl_sup](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumLatticeNamespacedPublic.lean/declarations/inl-sup.md) | 59 | `result-track:2fff7bf8f66154b19eb7d33c8b4a367c1441d41430863e14a960b2dca836e729` |
-| 3 | `lemma` | [inr_sup](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumLatticeNamespacedPublic.lean/declarations/inr-sup.md) | 60 | `result-track:9ed9188a665af20a3aebda9c5d29d54c8d4f2c772d8e4b09fab385dda4ff6e6f` |
-| 4 | `instance` | [instSemilatticeInf](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumLatticeNamespacedPublic.lean/declarations/instsemilatticeinf.md) | 69 | `declaration-track:aeb48c558bccd35054f7798e53fdbfca084abed76ddcc39497110ad131ce72c5` |
-| 5 | `lemma` | [inl_inf](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumLatticeNamespacedPublic.lean/declarations/inl-inf.md) | 92 | `result-track:a8222106463ec40ece59e434cffbe5f6c263ce17e8507ac9117555c38e9b35b5` |
-| 6 | `lemma` | [inr_inf](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumLatticeNamespacedPublic.lean/declarations/inr-inf.md) | 93 | `result-track:6f9dbae1e9d0e5b1a77a64441c736b89c24d4d8476c2c1ec1b22b95f6f7cf135` |
-| 7 | `instance` | [instLattice](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumLatticeNamespacedPublic.lean/declarations/instlattice.md) | 100 | `declaration-track:17b0f80879875d67cce9770303cf2f495471ec6d1163b8da291302a94f2affa7` |
-| 8 | `def` | [inlLatticeHom](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumLatticeNamespacedPublic.lean/declarations/inllatticehom.md) | 103 | `declaration-track:20d26b7b2a44af84cc19c397bf9a8977956b0124eeca79c68e9ccaa99e469ebc` |
-| 9 | `def` | [inrLatticeHom](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumLatticeNamespacedPublic.lean/declarations/inrlatticehom.md) | 109 | `declaration-track:a80fd5f8be140e7a5e98ff1710f4d12c54265959fe733ee8e2968d5b2e5ec0c3` |
-| 10 | `instance` | [instDistribLattice](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumLatticeNamespacedPublic.lean/declarations/instdistriblattice.md) | 116 | `declaration-track:f259403c471d3797449dcd74c37f4e7a211a0009424c6bc1ee81cd8b4ede0451` |
+| 1 | `instance` | [instSemilatticeSup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SumLatticeNamespacedPublic.lean/declarations/instsemilatticesup.md) | 36 | `declaration-track:96f44ca2d6b9d465101b2fb72be25e6c40a684fa7f7a3df6ffcb9f0ad2389a4a` |
+| 2 | `lemma` | [inl_sup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SumLatticeNamespacedPublic.lean/declarations/inl-sup.md) | 59 | `result-track:2fff7bf8f66154b19eb7d33c8b4a367c1441d41430863e14a960b2dca836e729` |
+| 3 | `lemma` | [inr_sup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SumLatticeNamespacedPublic.lean/declarations/inr-sup.md) | 60 | `result-track:9ed9188a665af20a3aebda9c5d29d54c8d4f2c772d8e4b09fab385dda4ff6e6f` |
+| 4 | `instance` | [instSemilatticeInf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SumLatticeNamespacedPublic.lean/declarations/instsemilatticeinf.md) | 69 | `declaration-track:aeb48c558bccd35054f7798e53fdbfca084abed76ddcc39497110ad131ce72c5` |
+| 5 | `lemma` | [inl_inf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SumLatticeNamespacedPublic.lean/declarations/inl-inf.md) | 92 | `result-track:a8222106463ec40ece59e434cffbe5f6c263ce17e8507ac9117555c38e9b35b5` |
+| 6 | `lemma` | [inr_inf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SumLatticeNamespacedPublic.lean/declarations/inr-inf.md) | 93 | `result-track:6f9dbae1e9d0e5b1a77a64441c736b89c24d4d8476c2c1ec1b22b95f6f7cf135` |
+| 7 | `instance` | [instLattice](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SumLatticeNamespacedPublic.lean/declarations/instlattice.md) | 100 | `declaration-track:17b0f80879875d67cce9770303cf2f495471ec6d1163b8da291302a94f2affa7` |
+| 8 | `def` | [inlLatticeHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SumLatticeNamespacedPublic.lean/declarations/inllatticehom.md) | 103 | `declaration-track:20d26b7b2a44af84cc19c397bf9a8977956b0124eeca79c68e9ccaa99e469ebc` |
+| 9 | `def` | [inrLatticeHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SumLatticeNamespacedPublic.lean/declarations/inrlatticehom.md) | 109 | `declaration-track:a80fd5f8be140e7a5e98ff1710f4d12c54265959fe733ee8e2968d5b2e5ec0c3` |
+| 10 | `instance` | [instDistribLattice](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SumLatticeNamespacedPublic.lean/declarations/instdistriblattice.md) | 116 | `declaration-track:f259403c471d3797449dcd74c37f4e7a211a0009424c6bc1ee81cd8b4ede0451` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

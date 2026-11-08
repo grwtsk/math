@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/EquivalenceNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/EquivalenceNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/EquivalenceNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/EquivalenceNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [IsEquiv](../../../../FunctionalAnalysis/EquivalenceNamespaced.lean/declarations/isequiv.md) | 29 | `declaration-track:a71c1d24f77dbe032126eafd14091e686197dd85685ce3a7b989f00ae87eda4c` |
-| 2 | `lemma` | [isEquiv_refl](../../../../FunctionalAnalysis/EquivalenceNamespaced.lean/declarations/isequiv-refl.md) | 33 | `result-track:c871aeb4fa3cdbc22a77458756614dc5826ec836e1d5522799be157d78646740` |
-| 3 | `lemma` | [isEquiv_symm](../../../../FunctionalAnalysis/EquivalenceNamespaced.lean/declarations/isequiv-symm.md) | 37 | `result-track:83af6e244a0903a253336baef6a63bfece3415e1b0ee36e0a6e7328ec129f2fd` |
-| 4 | `lemma` | [isEquiv_trans](../../../../FunctionalAnalysis/EquivalenceNamespaced.lean/declarations/isequiv-trans.md) | 43 | `result-track:4e41a7635c042e72f892b16b1822ca83ada68641e66b791f7a6397e91dc415df` |
-| 5 | `instance` | [(anonymous)](../../../../FunctionalAnalysis/EquivalenceNamespaced.lean/declarations/instance.md) | 50 | `declaration-track:17421c359cbd456c8e25a3b565267e2bbf8e80ee10617050123d02edfde69bb4` |
-| 6 | `lemma` | [eq_trivial_of_isEquiv_trivial](../../../../FunctionalAnalysis/EquivalenceNamespaced.lean/declarations/eq-trivial-of-isequiv-trivial.md) | 60 | `result-track:2954dfe650f36aa04d41d5435a253c745543f09f75ada2347173598a3de772df` |
+| 1 | `def` | [IsEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/EquivalenceNamespaced.lean/declarations/isequiv.md) | 29 | `declaration-track:a71c1d24f77dbe032126eafd14091e686197dd85685ce3a7b989f00ae87eda4c` |
+| 2 | `lemma` | [isEquiv_refl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/EquivalenceNamespaced.lean/declarations/isequiv-refl.md) | 33 | `result-track:c871aeb4fa3cdbc22a77458756614dc5826ec836e1d5522799be157d78646740` |
+| 3 | `lemma` | [isEquiv_symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/EquivalenceNamespaced.lean/declarations/isequiv-symm.md) | 37 | `result-track:83af6e244a0903a253336baef6a63bfece3415e1b0ee36e0a6e7328ec129f2fd` |
+| 4 | `lemma` | [isEquiv_trans](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/EquivalenceNamespaced.lean/declarations/isequiv-trans.md) | 43 | `result-track:4e41a7635c042e72f892b16b1822ca83ada68641e66b791f7a6397e91dc415df` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/EquivalenceNamespaced.lean/declarations/instance.md) | 50 | `declaration-track:17421c359cbd456c8e25a3b565267e2bbf8e80ee10617050123d02edfde69bb4` |
+| 6 | `lemma` | [eq_trivial_of_isEquiv_trivial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/EquivalenceNamespaced.lean/declarations/eq-trivial-of-isequiv-trivial.md) | 60 | `result-track:2954dfe650f36aa04d41d5435a253c745543f09f75ada2347173598a3de772df` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

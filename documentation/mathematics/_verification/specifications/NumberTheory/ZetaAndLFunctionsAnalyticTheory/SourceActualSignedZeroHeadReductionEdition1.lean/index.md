@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualSignedZeroHeadReductionEdition1.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualSignedZeroHeadReductionEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualSignedZeroHeadReductionEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualSignedZeroHeadReductionEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actualResidual_sub_signedHead_eq](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualSignedZeroHeadReductionEdition1.lean/declarations/actualresidual-sub-signedhead-eq.md) | 23 | `result-track:e9e3026cf6dcba6c008abaaa6c27cb185c2e16848d04b37655c23b8d28ad68b2` |
-| 2 | `theorem` | [actualResidual_movingHead_two_sided](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualSignedZeroHeadReductionEdition1.lean/declarations/actualresidual-movinghead-two-sided.md) | 36 | `result-track:efa434862684873b25cbbc423f86f663f2933004c78af3293bf1cce34ab6f45c` |
-| 3 | `theorem` | [actualResidual_movingHead_signed_error_bound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualSignedZeroHeadReductionEdition1.lean/declarations/actualresidual-movinghead-signed-error-bound.md) | 62 | `result-track:222d91f080bf2d657ae61da354087e0a7d964496dfaae757ba3faa731433c19a` |
-| 4 | `theorem` | [actualResidual_movingHead_signed_error_tendsto](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualSignedZeroHeadReductionEdition1.lean/declarations/actualresidual-movinghead-signed-error-tendsto.md) | 78 | `result-track:6476be2b839d0159b9f29b14e0375437115870575906df8c48c72af6af8e6a63` |
+| 1 | `theorem` | [actualResidual_sub_signedHead_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualSignedZeroHeadReductionEdition1.lean/declarations/actualresidual-sub-signedhead-eq.md) | 23 | `result-track:e9e3026cf6dcba6c008abaaa6c27cb185c2e16848d04b37655c23b8d28ad68b2` |
+| 2 | `theorem` | [actualResidual_movingHead_two_sided](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualSignedZeroHeadReductionEdition1.lean/declarations/actualresidual-movinghead-two-sided.md) | 36 | `result-track:efa434862684873b25cbbc423f86f663f2933004c78af3293bf1cce34ab6f45c` |
+| 3 | `theorem` | [actualResidual_movingHead_signed_error_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualSignedZeroHeadReductionEdition1.lean/declarations/actualresidual-movinghead-signed-error-bound.md) | 62 | `result-track:222d91f080bf2d657ae61da354087e0a7d964496dfaae757ba3faa731433c19a` |
+| 4 | `theorem` | [actualResidual_movingHead_signed_error_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualSignedZeroHeadReductionEdition1.lean/declarations/actualresidual-movinghead-signed-error-tendsto.md) | 78 | `result-track:6476be2b839d0159b9f29b14e0375437115870575906df8c48c72af6af8e6a63` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

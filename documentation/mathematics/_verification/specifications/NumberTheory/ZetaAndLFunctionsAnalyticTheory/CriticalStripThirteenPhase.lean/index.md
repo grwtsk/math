@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripThirteenPhase.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripThirteenPhase.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripThirteenPhase.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripThirteenPhase.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripCutoffTwoPhase`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffTwoPhase.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripCutoffTwoPhase`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffTwoPhase.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,17 +57,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [eighth_angle_bounds](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripThirteenPhase.lean/declarations/eighth-angle-bounds.md) | 20 | `result-track:69a91cb0e1df77410cfa0c3cb8e71144acfdf83d4b347dee462c9a9fab211327` |
-| 2 | `lemma` | [reduced_angle_interval](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripThirteenPhase.lean/declarations/reduced-angle-interval.md) | 34 | `result-track:1b47503497748277ec3937c7022729aec57c28a9ba38567344cce12fb93a1e5a` |
-| 3 | `lemma` | [sector_bounds](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripThirteenPhase.lean/declarations/sector-bounds.md) | 45 | `result-track:3b3b835a9036efcbaef8d2f87118749d80cff388ac14deee62c207c5abf972b3` |
-| 4 | `lemma` | [positive_height_bounds](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripThirteenPhase.lean/declarations/positive-height-bounds.md) | 58 | `result-track:79be2ed54e1c650c4dde77c122821096198c1dda030a78b9f7e9b56ed75875f1` |
-| 5 | `lemma` | [signed_height_bounds](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripThirteenPhase.lean/declarations/signed-height-bounds.md) | 64 | `result-track:865e0f8dcf4772b229214c8019c1d1f168b88b9b6be06c5c39e739a5ef8ba332` |
-| 6 | `lemma` | [height_chord](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripThirteenPhase.lean/declarations/height-chord.md) | 77 | `result-track:fe877930ca6db246687e65f2af3aaaec5845c5c9c22747426f0d974626e8dacd` |
-| 7 | `def` | [weightRoot](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripThirteenPhase.lean/declarations/weightroot.md) | 82 | `declaration-track:bd70345576f2440c40d5dc9c84307d22eaa61558e80d44f0c1b9c255fe3e4c15` |
-| 8 | `lemma` | [weightRoot_bounds](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripThirteenPhase.lean/declarations/weightroot-bounds.md) | 84 | `result-track:669e0e61f414f13e511553d810b0e5b85bc77400c11666bfb63c8e345f70862d` |
-| 9 | `lemma` | [weighted_root](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripThirteenPhase.lean/declarations/weighted-root.md) | 95 | `result-track:ef6d42c7021f535749b86659868f5cbb41e83f953543be78b4764cb00a499ddc` |
-| 10 | `lemma` | [power_norm_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripThirteenPhase.lean/declarations/power-norm-le.md) | 103 | `result-track:829557facdee08d2c47c12a78fcdec570d69d5236fa9163fb1c0b6a348f6f67d` |
-| 11 | `lemma` | [amplitude_eq_norm](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripThirteenPhase.lean/declarations/amplitude-eq-norm.md) | 109 | `result-track:ba03687293792aebb8982aa59f4ad7ff9271f4892d966652d001b22cf58e61d8` |
+| 1 | `lemma` | [eighth_angle_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripThirteenPhase.lean/declarations/eighth-angle-bounds.md) | 20 | `result-track:69a91cb0e1df77410cfa0c3cb8e71144acfdf83d4b347dee462c9a9fab211327` |
+| 2 | `lemma` | [reduced_angle_interval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripThirteenPhase.lean/declarations/reduced-angle-interval.md) | 34 | `result-track:1b47503497748277ec3937c7022729aec57c28a9ba38567344cce12fb93a1e5a` |
+| 3 | `lemma` | [sector_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripThirteenPhase.lean/declarations/sector-bounds.md) | 45 | `result-track:3b3b835a9036efcbaef8d2f87118749d80cff388ac14deee62c207c5abf972b3` |
+| 4 | `lemma` | [positive_height_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripThirteenPhase.lean/declarations/positive-height-bounds.md) | 58 | `result-track:79be2ed54e1c650c4dde77c122821096198c1dda030a78b9f7e9b56ed75875f1` |
+| 5 | `lemma` | [signed_height_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripThirteenPhase.lean/declarations/signed-height-bounds.md) | 64 | `result-track:865e0f8dcf4772b229214c8019c1d1f168b88b9b6be06c5c39e739a5ef8ba332` |
+| 6 | `lemma` | [height_chord](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripThirteenPhase.lean/declarations/height-chord.md) | 77 | `result-track:fe877930ca6db246687e65f2af3aaaec5845c5c9c22747426f0d974626e8dacd` |
+| 7 | `def` | [weightRoot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripThirteenPhase.lean/declarations/weightroot.md) | 82 | `declaration-track:bd70345576f2440c40d5dc9c84307d22eaa61558e80d44f0c1b9c255fe3e4c15` |
+| 8 | `lemma` | [weightRoot_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripThirteenPhase.lean/declarations/weightroot-bounds.md) | 84 | `result-track:669e0e61f414f13e511553d810b0e5b85bc77400c11666bfb63c8e345f70862d` |
+| 9 | `lemma` | [weighted_root](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripThirteenPhase.lean/declarations/weighted-root.md) | 95 | `result-track:ef6d42c7021f535749b86659868f5cbb41e83f953543be78b4764cb00a499ddc` |
+| 10 | `lemma` | [power_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripThirteenPhase.lean/declarations/power-norm-le.md) | 103 | `result-track:829557facdee08d2c47c12a78fcdec570d69d5236fa9163fb1c0b6a348f6f67d` |
+| 11 | `lemma` | [amplitude_eq_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripThirteenPhase.lean/declarations/amplitude-eq-norm.md) | 109 | `result-track:ba03687293792aebb8982aa59f4ad7ff9271f4892d966652d001b22cf58e61d8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

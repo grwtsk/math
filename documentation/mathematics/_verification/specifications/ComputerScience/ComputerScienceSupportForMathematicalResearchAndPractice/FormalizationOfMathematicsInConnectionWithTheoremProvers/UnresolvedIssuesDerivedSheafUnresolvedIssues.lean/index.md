@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/UnresolvedIssuesDerivedSheafUnresolvedIssues.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/UnresolvedIssuesDerivedSheafUnresolvedIssues.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/UnresolvedIssuesDerivedSheafUnresolvedIssues.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/UnresolvedIssuesDerivedSheafUnresolvedIssues.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [DerivedSheafUnresolvedIssues](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/UnresolvedIssuesDerivedSheafUnresolvedIssues.lean/declarations/derivedsheafunresolvedissues.md) | 18 | `declaration-track:a8c46267d4f91a546bb159e8d1f62cf6a7bf941bbb24b85cf3a08667291f1597` |
-| 2 | `def` | [unresolvedIssues](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/UnresolvedIssuesDerivedSheafUnresolvedIssues.lean/declarations/unresolvedissues.md) | 34 | `declaration-track:9c9037b0c6c9709fd919dc458c2e678fbe374fe00dc168bb0ebbd4570fc06b39` |
+| 1 | `structure` | [DerivedSheafUnresolvedIssues](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/UnresolvedIssuesDerivedSheafUnresolvedIssues.lean/declarations/derivedsheafunresolvedissues.md) | 18 | `declaration-track:a8c46267d4f91a546bb159e8d1f62cf6a7bf941bbb24b85cf3a08667291f1597` |
+| 2 | `def` | [unresolvedIssues](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/UnresolvedIssuesDerivedSheafUnresolvedIssues.lean/declarations/unresolvedissues.md) | 34 | `declaration-track:9c9037b0c6c9709fd919dc458c2e678fbe374fe00dc168bb0ebbd4570fc06b39` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

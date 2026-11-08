@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceRationalUniformEquivalence.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceRationalUniformEquivalence.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceRationalUniformEquivalence.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceRationalUniformEquivalence.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [rational_remainder_eq_constant_remainder](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceRationalUniformEquivalence.lean/declarations/rational-remainder-eq-constant-remainder.md) | 18 | `result-track:2859cbdd4d5cebd4d9de71fd3c3c83b0fd75d40054ce02a110824f5c4182d667` |
-| 2 | `theorem` | [remainder_shift_bounds_at_radius](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceRationalUniformEquivalence.lean/declarations/remainder-shift-bounds-at-radius.md) | 26 | `result-track:f78af5e092bb8de21b92ab511fb85ec0f56c04ae6e8b794d760be20b3e347a28` |
-| 3 | `theorem` | [constant_remainder_upper_of_rational](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceRationalUniformEquivalence.lean/declarations/constant-remainder-upper-of-rational.md) | 38 | `result-track:0df7f291fa0ba3a5b58040d251bd1c0bdfcba0aee9122b9c252bec104846105c` |
-| 4 | `theorem` | [rational_remainder_upper_of_constant](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceRationalUniformEquivalence.lean/declarations/rational-remainder-upper-of-constant.md) | 47 | `result-track:312e59c0d0aa26b65f4831fbdeb28ab0ca8c059f87c5a6556229d76a98d6d075` |
-| 5 | `theorem` | [rational_uniform_bound_iff_constant_uniform_bound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceRationalUniformEquivalence.lean/declarations/rational-uniform-bound-iff-constant-uniform-bound.md) | 54 | `result-track:9620ab44264c45a94063677ca6b9f0131633b13948097f5deb29f666f1ec6bf7` |
+| 1 | `theorem` | [rational_remainder_eq_constant_remainder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceRationalUniformEquivalence.lean/declarations/rational-remainder-eq-constant-remainder.md) | 18 | `result-track:2859cbdd4d5cebd4d9de71fd3c3c83b0fd75d40054ce02a110824f5c4182d667` |
+| 2 | `theorem` | [remainder_shift_bounds_at_radius](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceRationalUniformEquivalence.lean/declarations/remainder-shift-bounds-at-radius.md) | 26 | `result-track:f78af5e092bb8de21b92ab511fb85ec0f56c04ae6e8b794d760be20b3e347a28` |
+| 3 | `theorem` | [constant_remainder_upper_of_rational](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceRationalUniformEquivalence.lean/declarations/constant-remainder-upper-of-rational.md) | 38 | `result-track:0df7f291fa0ba3a5b58040d251bd1c0bdfcba0aee9122b9c252bec104846105c` |
+| 4 | `theorem` | [rational_remainder_upper_of_constant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceRationalUniformEquivalence.lean/declarations/rational-remainder-upper-of-constant.md) | 47 | `result-track:312e59c0d0aa26b65f4831fbdeb28ab0ca8c059f87c5a6556229d76a98d6d075` |
+| 5 | `theorem` | [rational_uniform_bound_iff_constant_uniform_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceRationalUniformEquivalence.lean/declarations/rational-uniform-bound-iff-constant-uniform-bound.md) | 54 | `result-track:9620ab44264c45a94063677ca6b9f0131633b13948097f5deb29f666f1ec6bf7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

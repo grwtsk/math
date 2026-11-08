@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/RatNamespaced.lean/index.md) · [Full source](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/RatNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/RatNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/RatNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [DivisionRing.continuousConstSMul_rat](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/RatNamespaced.lean/declarations/divisionring-continuousconstsmul-rat.md) | 30 | `declaration-track:a9a72ac44a665a77f5de738b31933c7d4925fc891724b0ef6713de51f9f0e520` |
+| 1 | `instance` | [DivisionRing.continuousConstSMul_rat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/RatNamespaced.lean/declarations/divisionring-continuousconstsmul-rat.md) | 30 | `declaration-track:a9a72ac44a665a77f5de738b31933c7d4925fc891724b0ef6713de51f9f0e520` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

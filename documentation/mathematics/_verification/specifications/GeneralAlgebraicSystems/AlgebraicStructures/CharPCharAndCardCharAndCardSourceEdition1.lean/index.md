@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPCharAndCardCharAndCardSourceEdition1.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPCharAndCardCharAndCardSourceEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPCharAndCardCharAndCardSourceEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPCharAndCardCharAndCardSourceEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [isUnit_iff_not_dvd_char_of_ringChar_ne_zero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPCharAndCardCharAndCardSourceEdition1.lean/declarations/isunit-iff-not-dvd-char-of-ringchar-ne-zero.md) | 23 | `result-track:ce13e0c5885f9d6435ed69901f1569bcd038c825547c053d09835fdf382838b1` |
-| 2 | `theorem` | [isUnit_iff_not_dvd_char](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPCharAndCardCharAndCardSourceEdition1.lean/declarations/isunit-iff-not-dvd-char.md) | 51 | `result-track:a3b9cafc610b01a6f9ff6887ea014eb42b0e2de958f00b3aeea185d7647e0a06` |
-| 3 | `theorem` | [prime_dvd_char_iff_dvd_card](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPCharAndCardCharAndCardSourceEdition1.lean/declarations/prime-dvd-char-iff-dvd-card.md) | 58 | `result-track:e6663ee92eeff2a24b0cee9c3b59de3882cbfa1ca28d96164c98c9737c209543` |
-| 4 | `theorem` | [not_isUnit_prime_of_dvd_card](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPCharAndCardCharAndCardSourceEdition1.lean/declarations/not-isunit-prime-of-dvd-card.md) | 79 | `result-track:c898dc0a5fa489d54715cbc9b6f544760d61efccbe921a1e4932d3ff6c227489` |
+| 1 | `theorem` | [isUnit_iff_not_dvd_char_of_ringChar_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPCharAndCardCharAndCardSourceEdition1.lean/declarations/isunit-iff-not-dvd-char-of-ringchar-ne-zero.md) | 23 | `result-track:ce13e0c5885f9d6435ed69901f1569bcd038c825547c053d09835fdf382838b1` |
+| 2 | `theorem` | [isUnit_iff_not_dvd_char](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPCharAndCardCharAndCardSourceEdition1.lean/declarations/isunit-iff-not-dvd-char.md) | 51 | `result-track:a3b9cafc610b01a6f9ff6887ea014eb42b0e2de958f00b3aeea185d7647e0a06` |
+| 3 | `theorem` | [prime_dvd_char_iff_dvd_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPCharAndCardCharAndCardSourceEdition1.lean/declarations/prime-dvd-char-iff-dvd-card.md) | 58 | `result-track:e6663ee92eeff2a24b0cee9c3b59de3882cbfa1ca28d96164c98c9737c209543` |
+| 4 | `theorem` | [not_isUnit_prime_of_dvd_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPCharAndCardCharAndCardSourceEdition1.lean/declarations/not-isunit-prime-of-dvd-card.md) | 79 | `result-track:c898dc0a5fa489d54715cbc9b6f544760d61efccbe921a1e4932d3ff6c227489` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

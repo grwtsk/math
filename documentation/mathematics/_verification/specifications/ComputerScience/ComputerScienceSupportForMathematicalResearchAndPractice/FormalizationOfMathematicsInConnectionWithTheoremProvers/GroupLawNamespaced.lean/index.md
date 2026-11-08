@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GroupLawNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GroupLawNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GroupLawNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GroupLawNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CurvePoint](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GroupLawNamespaced.lean/declarations/curvepoint.md) | 21 | `declaration-track:3c6306a4cb31755d5d30b66e2cca4d9f1337a855f0a97909d6b68d1fe8730cf6` |
-| 2 | `def` | [identityO](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GroupLawNamespaced.lean/declarations/identityo.md) | 26 | `declaration-track:40c94b3cba9cff63ec180a950fb9d85b77887c64eceaf3d069e868b523cf9477` |
-| 3 | `def` | [scalarMulStatement](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GroupLawNamespaced.lean/declarations/scalarmulstatement.md) | 29 | `declaration-track:664df04c561cae34b52975443a2e0e8fe0319b2a87c497d81b67295e0eb9203b` |
+| 1 | `structure` | [CurvePoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GroupLawNamespaced.lean/declarations/curvepoint.md) | 21 | `declaration-track:3c6306a4cb31755d5d30b66e2cca4d9f1337a855f0a97909d6b68d1fe8730cf6` |
+| 2 | `def` | [identityO](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GroupLawNamespaced.lean/declarations/identityo.md) | 26 | `declaration-track:40c94b3cba9cff63ec180a950fb9d85b77887c64eceaf3d069e868b523cf9477` |
+| 3 | `def` | [scalarMulStatement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GroupLawNamespaced.lean/declarations/scalarmulstatement.md) | 29 | `declaration-track:664df04c561cae34b52975443a2e0e8fe0319b2a87c497d81b67295e0eb9203b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SemanticsEdition2.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SemanticsEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SemanticsEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SemanticsEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Satisfies](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SemanticsEdition2.lean/declarations/satisfies.md) | 12 | `declaration-track:6002ed2a35686014ae980dbc1a4bc7fab11498ecc8e2e8bed3db8a90c4906bbe` |
-| 2 | `def` | [Valid](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SemanticsEdition2.lean/declarations/valid.md) | 16 | `declaration-track:532968a6537775d5c54516b9d2f8b0530871104bbe57cbf5b423fb2906f34394` |
-| 3 | `def` | [Satisfiable](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SemanticsEdition2.lean/declarations/satisfiable.md) | 20 | `declaration-track:9c289f71403c5efe7c17dea3686f5680b801e0ba8e37cd3ec9f985114b5f9b30` |
-| 4 | `def` | [Unsatisfiable](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SemanticsEdition2.lean/declarations/unsatisfiable.md) | 24 | `declaration-track:382e85512dde1d8c6eca84101594ba82a6b6d5c8cd384dd342ab1ae38ac8e5dd` |
-| 5 | `def` | [Entails](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SemanticsEdition2.lean/declarations/entails.md) | 28 | `declaration-track:7e0e5abde14ce3f93dc9040a1c7aad4729ee53c8bfcf55108fe7407c1531a939` |
-| 6 | `def` | [Equivalent](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SemanticsEdition2.lean/declarations/equivalent.md) | 32 | `declaration-track:9122624aa3eb9adec50696f05a007aa2d805bf84593ba659bcff92e01ef41879` |
+| 1 | `def` | [Satisfies](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SemanticsEdition2.lean/declarations/satisfies.md) | 12 | `declaration-track:6002ed2a35686014ae980dbc1a4bc7fab11498ecc8e2e8bed3db8a90c4906bbe` |
+| 2 | `def` | [Valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SemanticsEdition2.lean/declarations/valid.md) | 16 | `declaration-track:532968a6537775d5c54516b9d2f8b0530871104bbe57cbf5b423fb2906f34394` |
+| 3 | `def` | [Satisfiable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SemanticsEdition2.lean/declarations/satisfiable.md) | 20 | `declaration-track:9c289f71403c5efe7c17dea3686f5680b801e0ba8e37cd3ec9f985114b5f9b30` |
+| 4 | `def` | [Unsatisfiable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SemanticsEdition2.lean/declarations/unsatisfiable.md) | 24 | `declaration-track:382e85512dde1d8c6eca84101594ba82a6b6d5c8cd384dd342ab1ae38ac8e5dd` |
+| 5 | `def` | [Entails](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SemanticsEdition2.lean/declarations/entails.md) | 28 | `declaration-track:7e0e5abde14ce3f93dc9040a1c7aad4729ee53c8bfcf55108fe7407c1531a939` |
+| 6 | `def` | [Equivalent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SemanticsEdition2.lean/declarations/equivalent.md) | 32 | `declaration-track:9122624aa3eb9adec50696f05a007aa2d805bf84593ba659bcff92e01ef41879` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

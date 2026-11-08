@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProofEdition36.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProofEdition36.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProofEdition36.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProofEdition36.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [finite_witness_only](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProofEdition36.lean/declarations/finite-witness-only.md) | 4 | `result-track:ab2a061c976681d5d2a56a957fdfc6ebdbec4b7070a65e1236a011b54be3b45f` |
+| 1 | `theorem` | [finite_witness_only](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProofEdition36.lean/declarations/finite-witness-only.md) | 4 | `result-track:ab2a061c976681d5d2a56a957fdfc6ebdbec4b7070a65e1236a011b54be3b45f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

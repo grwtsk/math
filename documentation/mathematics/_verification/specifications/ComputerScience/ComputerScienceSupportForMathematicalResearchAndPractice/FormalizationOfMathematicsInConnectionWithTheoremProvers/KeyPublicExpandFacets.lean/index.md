@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KeyPublicExpandFacets.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KeyPublicExpandFacets.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KeyPublicExpandFacets.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KeyPublicExpandFacets.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [expandFacets](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KeyPublicExpandFacets.lean/declarations/expandfacets.md) | 21 | `declaration-track:367d0a0e0e54cd9c540ba22ea27e57e90a0f1b17b4b9a203ad96402820eef1e6` |
-| 2 | `def` | [expandPackageTargetLit](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KeyPublicExpandFacets.lean/declarations/expandpackagetargetlit.md) | 25 | `declaration-track:af598d1fa34f7e3cf116a1c955aa12e747f184b9939354a60612f87e24b157a9` |
-| 3 | `def` | [expandModuleTargetKeyLit](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KeyPublicExpandFacets.lean/declarations/expandmoduletargetkeylit.md) | 37 | `declaration-track:ebdc8b568774b1b1a2356620803e0b4a0027b311a91dd4c6c1a0cda6e93c5b63` |
-| 4 | `def` | [expandPackageTargetKeyLit](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KeyPublicExpandFacets.lean/declarations/expandpackagetargetkeylit.md) | 47 | `declaration-track:0c52a8d76d44d4af231129b2e63d469836aa7980eae4ab387600b854ec554563` |
+| 1 | `def` | [expandFacets](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KeyPublicExpandFacets.lean/declarations/expandfacets.md) | 21 | `declaration-track:367d0a0e0e54cd9c540ba22ea27e57e90a0f1b17b4b9a203ad96402820eef1e6` |
+| 2 | `def` | [expandPackageTargetLit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KeyPublicExpandFacets.lean/declarations/expandpackagetargetlit.md) | 25 | `declaration-track:af598d1fa34f7e3cf116a1c955aa12e747f184b9939354a60612f87e24b157a9` |
+| 3 | `def` | [expandModuleTargetKeyLit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KeyPublicExpandFacets.lean/declarations/expandmoduletargetkeylit.md) | 37 | `declaration-track:ebdc8b568774b1b1a2356620803e0b4a0027b311a91dd4c6c1a0cda6e93c5b63` |
+| 4 | `def` | [expandPackageTargetKeyLit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KeyPublicExpandFacets.lean/declarations/expandpackagetargetkeylit.md) | 47 | `declaration-track:0c52a8d76d44d4af231129b2e63d469836aa7980eae4ab387600b854ec554563` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

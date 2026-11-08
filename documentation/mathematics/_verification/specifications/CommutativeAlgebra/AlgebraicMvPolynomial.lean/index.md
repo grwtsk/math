@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/AlgebraicMvPolynomial.lean/index.md) · [Full source](../../../../CommutativeAlgebra/AlgebraicMvPolynomial.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraicMvPolynomial.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraicMvPolynomial.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [transcendental_supported_polynomial_aeval_X](../../../../CommutativeAlgebra/AlgebraicMvPolynomial.lean/declarations/transcendental-supported-polynomial-aeval-x.md) | 25 | `result-track:17852e294f6943e43e20f56a7879de8c423b9ac07faf0b46fd2420c6a727e27b` |
-| 2 | `theorem` | [transcendental_polynomial_aeval_X](../../../../CommutativeAlgebra/AlgebraicMvPolynomial.lean/declarations/transcendental-polynomial-aeval-x.md) | 61 | `result-track:5c6bccae5a1c16fc5cbc03229e57af9f651f7d7716b914ab2b9703e216b56eca` |
-| 3 | `theorem` | [transcendental_polynomial_aeval_X_iff](../../../../CommutativeAlgebra/AlgebraicMvPolynomial.lean/declarations/transcendental-polynomial-aeval-x-iff.md) | 69 | `result-track:d8c54b682388c87561a182bea9b8134328db4be2ce7c9f9cba586d82a70a8010` |
-| 4 | `theorem` | [transcendental_supported_polynomial_aeval_X_iff](../../../../CommutativeAlgebra/AlgebraicMvPolynomial.lean/declarations/transcendental-supported-polynomial-aeval-x-iff.md) | 75 | `result-track:b6019f064f7491fb75441d08a447bd156b8c00f04fb1c7fe2f92f56e5aa7f17b` |
-| 5 | `theorem` | [transcendental_supported_X](../../../../CommutativeAlgebra/AlgebraicMvPolynomial.lean/declarations/transcendental-supported-x.md) | 90 | `result-track:a0ffe243b0e04ae87ecdfe8b8e3a4dd86fdbfe239b810d376f37f713ae00c2b5` |
-| 6 | `theorem` | [transcendental_X](../../../../CommutativeAlgebra/AlgebraicMvPolynomial.lean/declarations/transcendental-x.md) | 94 | `result-track:aa0d2f02afe3fcd2bd3212817411e249a630e7a33b876094200259246df1ac37` |
-| 7 | `theorem` | [transcendental_supported_X_iff](../../../../CommutativeAlgebra/AlgebraicMvPolynomial.lean/declarations/transcendental-supported-x-iff.md) | 97 | `result-track:19129ad06f775a41090bb4efdd843db9e7953c4e5b7bbbbb7c04b6e63893f73d` |
+| 1 | `theorem` | [transcendental_supported_polynomial_aeval_X](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraicMvPolynomial.lean/declarations/transcendental-supported-polynomial-aeval-x.md) | 25 | `result-track:17852e294f6943e43e20f56a7879de8c423b9ac07faf0b46fd2420c6a727e27b` |
+| 2 | `theorem` | [transcendental_polynomial_aeval_X](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraicMvPolynomial.lean/declarations/transcendental-polynomial-aeval-x.md) | 61 | `result-track:5c6bccae5a1c16fc5cbc03229e57af9f651f7d7716b914ab2b9703e216b56eca` |
+| 3 | `theorem` | [transcendental_polynomial_aeval_X_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraicMvPolynomial.lean/declarations/transcendental-polynomial-aeval-x-iff.md) | 69 | `result-track:d8c54b682388c87561a182bea9b8134328db4be2ce7c9f9cba586d82a70a8010` |
+| 4 | `theorem` | [transcendental_supported_polynomial_aeval_X_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraicMvPolynomial.lean/declarations/transcendental-supported-polynomial-aeval-x-iff.md) | 75 | `result-track:b6019f064f7491fb75441d08a447bd156b8c00f04fb1c7fe2f92f56e5aa7f17b` |
+| 5 | `theorem` | [transcendental_supported_X](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraicMvPolynomial.lean/declarations/transcendental-supported-x.md) | 90 | `result-track:a0ffe243b0e04ae87ecdfe8b8e3a4dd86fdbfe239b810d376f37f713ae00c2b5` |
+| 6 | `theorem` | [transcendental_X](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraicMvPolynomial.lean/declarations/transcendental-x.md) | 94 | `result-track:aa0d2f02afe3fcd2bd3212817411e249a630e7a33b876094200259246df1ac37` |
+| 7 | `theorem` | [transcendental_supported_X_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraicMvPolynomial.lean/declarations/transcendental-supported-x-iff.md) | 97 | `result-track:19129ad06f775a41090bb4efdd843db9e7953c4e5b7bbbbb7c04b6e63893f73d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Imo2013Q1Public.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Imo2013Q1Public.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Imo2013Q1Public.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Imo2013Q1Public.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [arith_lemma](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Imo2013Q1Public.lean/declarations/arith-lemma.md) | 33 | `result-track:1964faf60500a3cc6b55ffcf29db6a740eb95c4148f6e761d2f720c20fea371b` |
-| 2 | `theorem` | [prod_lemma](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Imo2013Q1Public.lean/declarations/prod-lemma.md) | 35 | `result-track:a409842ebaab410ba5f22df3439d3cde8c11046b7ac48b98f28ea4897dc6e075` |
-| 3 | `theorem` | [imo2013_q1](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Imo2013Q1Public.lean/declarations/imo2013-q1.md) | 47 | `result-track:6ef45c6a112dedc980e0e6f74ae2eb4eb7de7fe3529a209d9e84b09d20e06a67` |
+| 1 | `theorem` | [arith_lemma](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Imo2013Q1Public.lean/declarations/arith-lemma.md) | 33 | `result-track:1964faf60500a3cc6b55ffcf29db6a740eb95c4148f6e761d2f720c20fea371b` |
+| 2 | `theorem` | [prod_lemma](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Imo2013Q1Public.lean/declarations/prod-lemma.md) | 35 | `result-track:a409842ebaab410ba5f22df3439d3cde8c11046b7ac48b98f28ea4897dc6e075` |
+| 3 | `theorem` | [imo2013_q1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Imo2013Q1Public.lean/declarations/imo2013-q1.md) | 47 | `result-track:6ef45c6a112dedc980e0e6f74ae2eb4eb7de7fe3529a209d9e84b09d20e06a67` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

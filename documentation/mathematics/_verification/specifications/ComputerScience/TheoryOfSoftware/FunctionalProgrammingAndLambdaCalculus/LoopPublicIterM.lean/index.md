@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LoopPublicIterM.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LoopPublicIterM.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LoopPublicIterM.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LoopPublicIterM.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [IterM.Equiv.forIn_eq](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LoopPublicIterM.lean/declarations/iterm-equiv-forin-eq.md) | 18 | `result-track:439b4e5cabe7469ac895cd8a67b68a2e51e5565edb08a0811750dea449e35288` |
-| 2 | `theorem` | [IterM.Equiv.foldM_eq](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LoopPublicIterM.lean/declarations/iterm-equiv-foldm-eq.md) | 50 | `result-track:d46d83b21c4d3dee830a5ea78389c3c70ff632b02296c68e06e4fa9f34fa2e8d` |
-| 3 | `theorem` | [IterM.Equiv.fold_eq](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LoopPublicIterM.lean/declarations/iterm-equiv-fold-eq.md) | 60 | `result-track:6ed13dc241e96419c6ffbb4c531e7a3e2de238c89431eccd1d7ad7c5c1e881e6` |
-| 4 | `theorem` | [IterM.Equiv.drain_eq](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LoopPublicIterM.lean/declarations/iterm-equiv-drain-eq.md) | 70 | `result-track:d414e889d8611b377da4c419b88d5adc5c97194bd444144db69dbcbde863ac7f` |
+| 1 | `theorem` | [IterM.Equiv.forIn_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LoopPublicIterM.lean/declarations/iterm-equiv-forin-eq.md) | 18 | `result-track:439b4e5cabe7469ac895cd8a67b68a2e51e5565edb08a0811750dea449e35288` |
+| 2 | `theorem` | [IterM.Equiv.foldM_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LoopPublicIterM.lean/declarations/iterm-equiv-foldm-eq.md) | 50 | `result-track:d46d83b21c4d3dee830a5ea78389c3c70ff632b02296c68e06e4fa9f34fa2e8d` |
+| 3 | `theorem` | [IterM.Equiv.fold_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LoopPublicIterM.lean/declarations/iterm-equiv-fold-eq.md) | 60 | `result-track:6ed13dc241e96419c6ffbb4c531e7a3e2de238c89431eccd1d7ad7c5c1e881e6` |
+| 4 | `theorem` | [IterM.Equiv.drain_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LoopPublicIterM.lean/declarations/iterm-equiv-drain-eq.md) | 70 | `result-track:d414e889d8611b377da4c419b88d5adc5c97194bd444144db69dbcbde863ac7f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

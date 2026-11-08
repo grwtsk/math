@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/WholeCotangentAssignmentAndExplicitBoundaryMap.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/WholeCotangentAssignmentAndExplicitBoundaryMap.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/WholeCotangentAssignmentAndExplicitBoundaryMap.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/WholeCotangentAssignmentAndExplicitBoundaryMap.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CotangentDefectTheory](../../../../AssociativeRingsAndAlgebras/WholeCotangentAssignmentAndExplicitBoundaryMap.lean/declarations/cotangentdefecttheory.md) | 43 | `declaration-track:a69b9893b61e230ecc624f412d1c60f1e4eebe9f9c688b4d0921ffdefcb8193b` |
-| 2 | `structure` | [ArithmeticBoundaryMap](../../../../AssociativeRingsAndAlgebras/WholeCotangentAssignmentAndExplicitBoundaryMap.lean/declarations/arithmeticboundarymap.md) | 58 | `declaration-track:c26a2939f7e0c9fd6ce79ba44a24ad535600d2ba4eb1c95ac8aeed6dea1fb076` |
-| 3 | `def` | [ArithmeticBoundaryMap.cotangentBoundaryDefect](../../../../AssociativeRingsAndAlgebras/WholeCotangentAssignmentAndExplicitBoundaryMap.lean/declarations/arithmeticboundarymap-cotangentboundarydefect.md) | 67 | `declaration-track:6550e71bb53fc81d4e084b8136e13eed93895502416feb962ca0f7daf87f679a` |
+| 1 | `structure` | [CotangentDefectTheory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/WholeCotangentAssignmentAndExplicitBoundaryMap.lean/declarations/cotangentdefecttheory.md) | 43 | `declaration-track:a69b9893b61e230ecc624f412d1c60f1e4eebe9f9c688b4d0921ffdefcb8193b` |
+| 2 | `structure` | [ArithmeticBoundaryMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/WholeCotangentAssignmentAndExplicitBoundaryMap.lean/declarations/arithmeticboundarymap.md) | 58 | `declaration-track:c26a2939f7e0c9fd6ce79ba44a24ad535600d2ba4eb1c95ac8aeed6dea1fb076` |
+| 3 | `def` | [ArithmeticBoundaryMap.cotangentBoundaryDefect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/WholeCotangentAssignmentAndExplicitBoundaryMap.lean/declarations/arithmeticboundarymap-cotangentboundarydefect.md) | 67 | `declaration-track:6550e71bb53fc81d4e084b8136e13eed93895502416feb962ca0f7daf87f679a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

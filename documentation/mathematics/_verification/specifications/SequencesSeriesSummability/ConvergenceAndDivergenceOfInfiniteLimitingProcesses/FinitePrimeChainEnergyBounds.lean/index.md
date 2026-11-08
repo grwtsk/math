@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/FinitePrimeChainEnergyBounds.lean/index.md) · [Full source](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/FinitePrimeChainEnergyBounds.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/FinitePrimeChainEnergyBounds.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/FinitePrimeChainEnergyBounds.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,9 +46,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.InnerProductSpace.MoebiusResponseGramExpansion`](../../../../../GeneralTopology/MoebiusResponseGramExpansion.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.NumberTheory.Moebius.FiniteProductResponseIdentification`](../../../../../MeasureAndIntegration/FiniteProductResponseIdentification.lean/index.md) — import line 2; pinned internal source present.
-- [`GRWTSK.Analysis.AsymptoticAnalysis.ExponentialRecurrence`](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/ExponentialRecurrenceHistoricalSourceEdition2.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.Analysis.InnerProductSpace.MoebiusResponseGramExpansion`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MoebiusResponseGramExpansion.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.FiniteProductResponseIdentification`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteProductResponseIdentification.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.Analysis.AsymptoticAnalysis.ExponentialRecurrence`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/ExponentialRecurrenceHistoricalSourceEdition2.lean/index.md) — import line 3; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CompletionChain](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/FinitePrimeChainEnergyBounds.lean/declarations/completionchain.md) | 14 | `declaration-track:052a146d046f1b5c2295889dc475102fa7394f0f2b741b13e779512c3e236a84` |
-| 2 | `structure` | [AmortizedCompletion](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/FinitePrimeChainEnergyBounds.lean/declarations/amortizedcompletion.md) | 27 | `declaration-track:277e6a28012ae1f7260f22e9deb5bf718ccec421d9b4d198c4435b3fa81df943` |
-| 3 | `theorem` | [completion_energy_bound](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/FinitePrimeChainEnergyBounds.lean/declarations/completion-energy-bound.md) | 43 | `result-track:8ca072be72663c2ef1ac356ec65f587bf298a881fd7860a7cff748456d53e143` |
-| 4 | `theorem` | [amortized_completion_implies_P04](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/FinitePrimeChainEnergyBounds.lean/declarations/amortized-completion-implies-p04.md) | 85 | `result-track:c6ccea171845405513e223fe7666855f0857d7807bcb361176275ee2be5f8436` |
+| 1 | `structure` | [CompletionChain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/FinitePrimeChainEnergyBounds.lean/declarations/completionchain.md) | 14 | `declaration-track:052a146d046f1b5c2295889dc475102fa7394f0f2b741b13e779512c3e236a84` |
+| 2 | `structure` | [AmortizedCompletion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/FinitePrimeChainEnergyBounds.lean/declarations/amortizedcompletion.md) | 27 | `declaration-track:277e6a28012ae1f7260f22e9deb5bf718ccec421d9b4d198c4435b3fa81df943` |
+| 3 | `theorem` | [completion_energy_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/FinitePrimeChainEnergyBounds.lean/declarations/completion-energy-bound.md) | 43 | `result-track:8ca072be72663c2ef1ac356ec65f587bf298a881fd7860a7cff748456d53e143` |
+| 4 | `theorem` | [amortized_completion_implies_P04](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/FinitePrimeChainEnergyBounds.lean/declarations/amortized-completion-implies-p04.md) | 85 | `result-track:c6ccea171845405513e223fe7666855f0857d7807bcb361176275ee2be5f8436` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

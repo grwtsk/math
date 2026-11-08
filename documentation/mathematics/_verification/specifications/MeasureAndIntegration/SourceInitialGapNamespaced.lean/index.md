@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceInitialGapNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceInitialGapNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceInitialGapNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceInitialGapNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [correlation_initial_bounds](../../../../MeasureAndIntegration/SourceInitialGapNamespaced.lean/declarations/correlation-initial-bounds.md) | 30 | `result-track:7c61a92266365683e4cd0a427c851c7e43c0dd7381da5fcb7b68b63a4e69b150` |
-| 2 | `theorem` | [critical_deriv_positive_initial](../../../../MeasureAndIntegration/SourceInitialGapNamespaced.lean/declarations/critical-deriv-positive-initial.md) | 54 | `result-track:90cd9535c3a5e89f55f72a238327f8202c627c1368993e6c6234f071db240f1f` |
-| 3 | `theorem` | [negativeSlope_zero_initial](../../../../MeasureAndIntegration/SourceInitialGapNamespaced.lean/declarations/negativeslope-zero-initial.md) | 61 | `result-track:3a1102988ab839e05c84780277a7f293b63fc5a34e46551122a217f0e9262f0a` |
-| 4 | `theorem` | [negativeSurvival_one_initial](../../../../MeasureAndIntegration/SourceInitialGapNamespaced.lean/declarations/negativesurvival-one-initial.md) | 65 | `result-track:b53c5ec99db6028a47725ec7747c99bdd67a94af2252dd7927dd669caf31886c` |
-| 5 | `theorem` | [negativeSurvival_one_eventually_fixed](../../../../MeasureAndIntegration/SourceInitialGapNamespaced.lean/declarations/negativesurvival-one-eventually-fixed.md) | 84 | `result-track:cef3d6f0d4a9b2ed28d5f4e3535bd7fa1bd5c2f92bcc9de70cf5bc0407c76eda` |
-| 6 | `theorem` | [pairedTest_initial_deficit](../../../../MeasureAndIntegration/SourceInitialGapNamespaced.lean/declarations/pairedtest-initial-deficit.md) | 91 | `result-track:83771ab2e87d9d3006f0c00a079963f4e035d5f0834e65053544881b63ab117b` |
+| 1 | `theorem` | [correlation_initial_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceInitialGapNamespaced.lean/declarations/correlation-initial-bounds.md) | 30 | `result-track:7c61a92266365683e4cd0a427c851c7e43c0dd7381da5fcb7b68b63a4e69b150` |
+| 2 | `theorem` | [critical_deriv_positive_initial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceInitialGapNamespaced.lean/declarations/critical-deriv-positive-initial.md) | 54 | `result-track:90cd9535c3a5e89f55f72a238327f8202c627c1368993e6c6234f071db240f1f` |
+| 3 | `theorem` | [negativeSlope_zero_initial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceInitialGapNamespaced.lean/declarations/negativeslope-zero-initial.md) | 61 | `result-track:3a1102988ab839e05c84780277a7f293b63fc5a34e46551122a217f0e9262f0a` |
+| 4 | `theorem` | [negativeSurvival_one_initial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceInitialGapNamespaced.lean/declarations/negativesurvival-one-initial.md) | 65 | `result-track:b53c5ec99db6028a47725ec7747c99bdd67a94af2252dd7927dd669caf31886c` |
+| 5 | `theorem` | [negativeSurvival_one_eventually_fixed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceInitialGapNamespaced.lean/declarations/negativesurvival-one-eventually-fixed.md) | 84 | `result-track:cef3d6f0d4a9b2ed28d5f4e3535bd7fa1bd5c2f92bcc9de70cf5bc0407c76eda` |
+| 6 | `theorem` | [pairedTest_initial_deficit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceInitialGapNamespaced.lean/declarations/pairedtest-initial-deficit.md) | 91 | `result-track:83771ab2e87d9d3006f0c00a079963f4e035d5f0834e65053544881b63ab117b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

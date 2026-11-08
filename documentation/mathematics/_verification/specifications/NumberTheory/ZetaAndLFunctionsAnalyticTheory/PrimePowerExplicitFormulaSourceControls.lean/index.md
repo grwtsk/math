@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerExplicitFormulaSourceControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerExplicitFormulaSourceControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerExplicitFormulaSourceControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerExplicitFormulaSourceControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.PrimePowerExplicitFormulaSource`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerExplicitFormulaSource.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.PrimePowerExplicitFormulaSource`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerExplicitFormulaSource.lean/index.md) — import line 5; pinned internal source present.
 - `Mathlib.Tactic` — import line 6; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [linear_quadratic_atomic_separation](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerExplicitFormulaSourceControls.lean/declarations/linear-quadratic-atomic-separation.md) | 19 | `result-track:8c9583430619724bf1638cb6aa8f832a7a60b7ac4f6b20e4af6282b40026dfde` |
-| 2 | `def` | [zeroAuxSource](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerExplicitFormulaSourceControls.lean/declarations/zeroauxsource.md) | 25 | `declaration-track:b57a9a66820b848db1031c3fe0b36628587c00fdacb19c8345bc3471434e00f4` |
-| 3 | `theorem` | [zeroAuxSource_primePower](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerExplicitFormulaSourceControls.lean/declarations/zeroauxsource-primepower.md) | 37 | `result-track:8e0b3c276cd0933f9b2a662831ec849a000bb1781491a0b3b47f25216230a225` |
-| 4 | `theorem` | [zeroAuxSource_energy](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerExplicitFormulaSourceControls.lean/declarations/zeroauxsource-energy.md) | 42 | `result-track:57ab71c0f3d2a91932d2650527691a1af84d9998939418109f0ddc326b4e9fab` |
-| 5 | `theorem` | [zeroAuxSource_quadraticization](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerExplicitFormulaSourceControls.lean/declarations/zeroauxsource-quadraticization.md) | 48 | `result-track:f24109ea58e5143a3e5903b2cd7e87a035789d3f3090ed3c31404eddb22d2b8b` |
-| 6 | `theorem` | [zeroAuxSource_complete_decomposition](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerExplicitFormulaSourceControls.lean/declarations/zeroauxsource-complete-decomposition.md) | 55 | `result-track:568b547d58edf124dc592ae714ba831f94ac84d1002a39997ca5e72498611a2f` |
-| 7 | `theorem` | [triangle_still_three](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerExplicitFormulaSourceControls.lean/declarations/triangle-still-three.md) | 71 | `result-track:95fae04a5d705f2887d7a090c519be9837f2b144943920f741bebf6b24b801e8` |
+| 1 | `theorem` | [linear_quadratic_atomic_separation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerExplicitFormulaSourceControls.lean/declarations/linear-quadratic-atomic-separation.md) | 19 | `result-track:8c9583430619724bf1638cb6aa8f832a7a60b7ac4f6b20e4af6282b40026dfde` |
+| 2 | `def` | [zeroAuxSource](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerExplicitFormulaSourceControls.lean/declarations/zeroauxsource.md) | 25 | `declaration-track:b57a9a66820b848db1031c3fe0b36628587c00fdacb19c8345bc3471434e00f4` |
+| 3 | `theorem` | [zeroAuxSource_primePower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerExplicitFormulaSourceControls.lean/declarations/zeroauxsource-primepower.md) | 37 | `result-track:8e0b3c276cd0933f9b2a662831ec849a000bb1781491a0b3b47f25216230a225` |
+| 4 | `theorem` | [zeroAuxSource_energy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerExplicitFormulaSourceControls.lean/declarations/zeroauxsource-energy.md) | 42 | `result-track:57ab71c0f3d2a91932d2650527691a1af84d9998939418109f0ddc326b4e9fab` |
+| 5 | `theorem` | [zeroAuxSource_quadraticization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerExplicitFormulaSourceControls.lean/declarations/zeroauxsource-quadraticization.md) | 48 | `result-track:f24109ea58e5143a3e5903b2cd7e87a035789d3f3090ed3c31404eddb22d2b8b` |
+| 6 | `theorem` | [zeroAuxSource_complete_decomposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerExplicitFormulaSourceControls.lean/declarations/zeroauxsource-complete-decomposition.md) | 55 | `result-track:568b547d58edf124dc592ae714ba831f94ac84d1002a39997ca5e72498611a2f` |
+| 7 | `theorem` | [triangle_still_three](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerExplicitFormulaSourceControls.lean/declarations/triangle-still-three.md) | 71 | `result-track:95fae04a5d705f2887d7a090c519be9837f2b144943920f741bebf6b24b801e8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

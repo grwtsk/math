@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FieldTheoryAndPolynomials/RowMajorBooleanCoordinates.lean/index.md) · [Full source](../../../../FieldTheoryAndPolynomials/RowMajorBooleanCoordinates.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/RowMajorBooleanCoordinates.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/RowMajorBooleanCoordinates.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -50,7 +50,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 - `Mathlib.LinearAlgebra.Matrix.ToLinearEquiv` — import line 20; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic.IntervalCases` — import line 21; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic.Linarith` — import line 22; external provider; requires a separately pinned dependency.
-- [Boolean Coefficient Equivalence](../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BooleanCoefficientEquivalence.lean/index.md) — import line 24; pinned internal source present.
+- [Boolean Coefficient Equivalence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BooleanCoefficientEquivalence.lean/index.md) — import line 24; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -61,11 +61,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [rowMajorIndexEquiv](../../../../FieldTheoryAndPolynomials/RowMajorBooleanCoordinates.lean/declarations/rowmajorindexequiv.md) | 59 | `declaration-track:26cd5022e3e3ad1bae7e24902bd3bb4ac90e4731589019ee911806d8dcd4712a` |
-| 2 | `theorem` | [rowMajorIndexEquiv_apply](../../../../FieldTheoryAndPolynomials/RowMajorBooleanCoordinates.lean/declarations/rowmajorindexequiv-apply.md) | 64 | `result-track:01b010623c32efec830eaf18ca307ddcb2f2a1f78cc828b8acb8ba8afa7beb44` |
-| 3 | `def` | [flattenEquiv](../../../../FieldTheoryAndPolynomials/RowMajorBooleanCoordinates.lean/declarations/flattenequiv.md) | 72 | `declaration-track:315630f965f9ce885674614798f1cb8508ce2b871ad63a5c6d4f50b0720f218d` |
-| 4 | `theorem` | [flattenEquiv_apply_flatIdx](../../../../FieldTheoryAndPolynomials/RowMajorBooleanCoordinates.lean/declarations/flattenequiv-apply-flatidx.md) | 90 | `result-track:449a9b4f10f4551b8d1ac033aea5758bbf341985e21efd7e39827ae4a447f857` |
-| 5 | `theorem` | [flattenEquiv_xor](../../../../FieldTheoryAndPolynomials/RowMajorBooleanCoordinates.lean/declarations/flattenequiv-xor.md) | 102 | `result-track:df79d01043e75d190ce0819dd3f205ed43f066ca3a996bed08300d8888088438` |
+| 1 | `def` | [rowMajorIndexEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/RowMajorBooleanCoordinates.lean/declarations/rowmajorindexequiv.md) | 59 | `declaration-track:26cd5022e3e3ad1bae7e24902bd3bb4ac90e4731589019ee911806d8dcd4712a` |
+| 2 | `theorem` | [rowMajorIndexEquiv_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/RowMajorBooleanCoordinates.lean/declarations/rowmajorindexequiv-apply.md) | 64 | `result-track:01b010623c32efec830eaf18ca307ddcb2f2a1f78cc828b8acb8ba8afa7beb44` |
+| 3 | `def` | [flattenEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/RowMajorBooleanCoordinates.lean/declarations/flattenequiv.md) | 72 | `declaration-track:315630f965f9ce885674614798f1cb8508ce2b871ad63a5c6d4f50b0720f218d` |
+| 4 | `theorem` | [flattenEquiv_apply_flatIdx](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/RowMajorBooleanCoordinates.lean/declarations/flattenequiv-apply-flatidx.md) | 90 | `result-track:449a9b4f10f4551b8d1ac033aea5758bbf341985e21efd7e39827ae4a447f857` |
+| 5 | `theorem` | [flattenEquiv_xor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/RowMajorBooleanCoordinates.lean/declarations/flattenequiv-xor.md) | 102 | `result-track:df79d01043e75d190ce0819dd3f205ed43f066ca3a996bed08300d8888088438` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

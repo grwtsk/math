@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/GreenHarmonicQuadrature.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/GreenHarmonicQuadrature.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/GreenHarmonicQuadrature.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/GreenHarmonicQuadrature.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [log_succ_ratio_bounds](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/GreenHarmonicQuadrature.lean/declarations/log-succ-ratio-bounds.md) | 15 | `result-track:ec7e8c56df094eebde76fe5aa7a1dd3ea941a61c38dfefebbb65ee2320ac0a3e` |
-| 2 | `theorem` | [harmonic_Ioc_sub_log_ratio_abs_le_local](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/GreenHarmonicQuadrature.lean/declarations/harmonic-ioc-sub-log-ratio-abs-le-local.md) | 47 | `result-track:6855e908755d39afe1a34e1c30ce62155d89e51d084ed2d743b5ee332fa2958f` |
-| 3 | `theorem` | [abs_log_floor_ratio_sub_log_le_local](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/GreenHarmonicQuadrature.lean/declarations/abs-log-floor-ratio-sub-log-le-local.md) | 83 | `result-track:419d918665d728eb817ed6e7358867b56e1f11ab2f44e3bf6ffd7f595030ab71` |
+| 1 | `theorem` | [log_succ_ratio_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/GreenHarmonicQuadrature.lean/declarations/log-succ-ratio-bounds.md) | 15 | `result-track:ec7e8c56df094eebde76fe5aa7a1dd3ea941a61c38dfefebbb65ee2320ac0a3e` |
+| 2 | `theorem` | [harmonic_Ioc_sub_log_ratio_abs_le_local](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/GreenHarmonicQuadrature.lean/declarations/harmonic-ioc-sub-log-ratio-abs-le-local.md) | 47 | `result-track:6855e908755d39afe1a34e1c30ce62155d89e51d084ed2d743b5ee332fa2958f` |
+| 3 | `theorem` | [abs_log_floor_ratio_sub_log_le_local](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/GreenHarmonicQuadrature.lean/declarations/abs-log-floor-ratio-sub-log-le-local.md) | 83 | `result-track:419d918665d728eb817ed6e7358867b56e1f11ab2f44e3bf6ffd7f595030ab71` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

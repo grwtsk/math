@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/SourceLargePrimeDiagonal.lean/index.md) · [Full source](../../../../Combinatorics/SourceLargePrimeDiagonal.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SourceLargePrimeDiagonal.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SourceLargePrimeDiagonal.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [centeredBeta_of_minFac_gt](../../../../Combinatorics/SourceLargePrimeDiagonal.lean/declarations/centeredbeta-of-minfac-gt.md) | 21 | `result-track:d24659accb9f9af951f1193de4a6eaeab8ed620343f01a495665ec7d36234735` |
-| 2 | `theorem` | [centeredBeta_at_large_prime_power](../../../../Combinatorics/SourceLargePrimeDiagonal.lean/declarations/centeredbeta-at-large-prime-power.md) | 41 | `result-track:7d14930bfba8f8a9787e03fabebc07eddb7a532310eeb8ed9664b65b8f2358d6` |
-| 3 | `theorem` | [fresh_beta_coefficient_product](../../../../Combinatorics/SourceLargePrimeDiagonal.lean/declarations/fresh-beta-coefficient-product.md) | 48 | `result-track:e76192150929b35134c266d6934acae28dd66c85fb52ee4f192684bee587b10f` |
-| 4 | `theorem` | [large_prime_physical_diagonal](../../../../Combinatorics/SourceLargePrimeDiagonal.lean/declarations/large-prime-physical-diagonal.md) | 63 | `result-track:ef1e74a9f46ef3b27c5815de8378cc79c7a84f97b32cc5e0a73c46a702472619` |
+| 1 | `theorem` | [centeredBeta_of_minFac_gt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SourceLargePrimeDiagonal.lean/declarations/centeredbeta-of-minfac-gt.md) | 21 | `result-track:d24659accb9f9af951f1193de4a6eaeab8ed620343f01a495665ec7d36234735` |
+| 2 | `theorem` | [centeredBeta_at_large_prime_power](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SourceLargePrimeDiagonal.lean/declarations/centeredbeta-at-large-prime-power.md) | 41 | `result-track:7d14930bfba8f8a9787e03fabebc07eddb7a532310eeb8ed9664b65b8f2358d6` |
+| 3 | `theorem` | [fresh_beta_coefficient_product](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SourceLargePrimeDiagonal.lean/declarations/fresh-beta-coefficient-product.md) | 48 | `result-track:e76192150929b35134c266d6934acae28dd66c85fb52ee4f192684bee587b10f` |
+| 4 | `theorem` | [large_prime_physical_diagonal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SourceLargePrimeDiagonal.lean/declarations/large-prime-physical-diagonal.md) | 63 | `result-track:ef1e74a9f46ef3b27c5815de8378cc79c7a84f97b32cc5e0a73c46a702472619` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

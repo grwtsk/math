@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/MatrixObservationLoss.lean/index.md) · [Full source](../../../../Combinatorics/MatrixObservationLoss.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MatrixObservationLoss.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MatrixObservationLoss.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -48,7 +48,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 - `FilesystemCodec.Codec` — import line 14; external provider; requires a separately pinned dependency.
 - `DAF.Fabric.Core` — import line 15; external provider; requires a separately pinned dependency.
-- [`GRWTSK.CombinatoricsAndDiscreteMathematics.CodingTheory.PacketFraming.Variantc67b543f.CanonicalPacketCodec`](../../../../Combinatorics/CanonicalPacketCodec.lean/index.md) — import line 17; pinned internal source present.
+- [`GRWTSK.CombinatoricsAndDiscreteMathematics.CodingTheory.PacketFraming.Variantc67b543f.CanonicalPacketCodec`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CanonicalPacketCodec.lean/index.md) — import line 17; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [fullPacket_distinguishes_matrixOnly](../../../../Combinatorics/MatrixObservationLoss.lean/declarations/fullpacket-distinguishes-matrixonly.md) | 27 | `result-track:0a8a1290bddcb520322c596ab8f2b55049b41878d6e9a5d0d18f90d1d5837f1f` |
+| 1 | `theorem` | [fullPacket_distinguishes_matrixOnly](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MatrixObservationLoss.lean/declarations/fullpacket-distinguishes-matrixonly.md) | 27 | `result-track:0a8a1290bddcb520322c596ab8f2b55049b41878d6e9a5d0d18f90d1d5837f1f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

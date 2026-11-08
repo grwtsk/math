@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/GeneralizationAtlas.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/GeneralizationAtlas.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/GeneralizationAtlas.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/GeneralizationAtlas.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [HodgeGeneralizationAtlas](../../../../../ComputerScience/AlgorithmsInComputerScience/GeneralizationAtlas.lean/declarations/hodgegeneralizationatlas.md) | 19 | `declaration-track:08830c029a0eadffa8b9615f48b6ee1b8c277c646c079b35553a149d364ca159` |
-| 2 | `theorem` | [hodge_atlas_covers_if_supplied](../../../../../ComputerScience/AlgorithmsInComputerScience/GeneralizationAtlas.lean/declarations/hodge-atlas-covers-if-supplied.md) | 26 | `result-track:217299e656cf4cb0cb43e3fd651481eea5bb4ddaccc49f2793e2c318be47c9f4` |
+| 1 | `structure` | [HodgeGeneralizationAtlas](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/GeneralizationAtlas.lean/declarations/hodgegeneralizationatlas.md) | 19 | `declaration-track:08830c029a0eadffa8b9615f48b6ee1b8c277c646c079b35553a149d364ca159` |
+| 2 | `theorem` | [hodge_atlas_covers_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/GeneralizationAtlas.lean/declarations/hodge-atlas-covers-if-supplied.md) | 26 | `result-track:217299e656cf4cb0cb43e3fd651481eea5bb4ddaccc49f2793e2c318be47c9f4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

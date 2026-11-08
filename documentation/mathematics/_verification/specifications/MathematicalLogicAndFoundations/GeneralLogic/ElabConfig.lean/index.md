@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ElabConfig.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ElabConfig.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ElabConfig.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ElabConfig.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ElabConfig.lean/declarations/example-source-edition-2.md) | 13 | `declaration-track:a8144c7cf6fa48e524ca7f461bfd0c697f4be8c862bd86b959f2766919472cc2` |
-| 2 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ElabConfig.lean/declarations/example.md) | 18 | `declaration-track:57eebf45765fe803b98302096937bd20aff14b6cf1892f76787a97d49d145f7f` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ElabConfig.lean/declarations/example-source-edition-2.md) | 13 | `declaration-track:a8144c7cf6fa48e524ca7f461bfd0c697f4be8c862bd86b959f2766919472cc2` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ElabConfig.lean/declarations/example.md) | 18 | `declaration-track:57eebf45765fe803b98302096937bd20aff14b6cf1892f76787a97d49d145f7f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

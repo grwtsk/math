@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/PolynomialEnergy.lean/index.md) · [Full source](../../../../MeasureAndIntegration/PolynomialEnergy.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PolynomialEnergy.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PolynomialEnergy.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,9 +60,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [summable_exp_neg_mul_nat_add_rpow](../../../../MeasureAndIntegration/PolynomialEnergy.lean/declarations/summable-exp-neg-mul-nat-add-rpow.md) | 26 | `result-track:ba1daba1223e94e5156f16b6bde8dd5d6a53aa216a0d669c02b4011ee5f45fdf` |
-| 2 | `theorem` | [tilted_block_norm_bound](../../../../MeasureAndIntegration/PolynomialEnergy.lean/declarations/tilted-block-norm-bound.md) | 54 | `result-track:ddcb652adbaae2dec12e0960b150a45b9dcbda65cbf0dd635871571af1ad7264` |
-| 3 | `theorem` | [integrableOn_tilt_of_polynomial_energy](../../../../MeasureAndIntegration/PolynomialEnergy.lean/declarations/integrableon-tilt-of-polynomial-energy.md) | 100 | `result-track:e702e4bd1d43be8fd18da3612312ad79b0edaebfacb284c03b8bacdd7b27022d` |
+| 1 | `theorem` | [summable_exp_neg_mul_nat_add_rpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PolynomialEnergy.lean/declarations/summable-exp-neg-mul-nat-add-rpow.md) | 26 | `result-track:ba1daba1223e94e5156f16b6bde8dd5d6a53aa216a0d669c02b4011ee5f45fdf` |
+| 2 | `theorem` | [tilted_block_norm_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PolynomialEnergy.lean/declarations/tilted-block-norm-bound.md) | 54 | `result-track:ddcb652adbaae2dec12e0960b150a45b9dcbda65cbf0dd635871571af1ad7264` |
+| 3 | `theorem` | [integrableOn_tilt_of_polynomial_energy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PolynomialEnergy.lean/declarations/integrableon-tilt-of-polynomial-energy.md) | 100 | `result-track:e702e4bd1d43be8fd18da3612312ad79b0edaebfacb284c03b8bacdd7b27022d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

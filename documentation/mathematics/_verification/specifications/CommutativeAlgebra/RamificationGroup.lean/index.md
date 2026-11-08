@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/RamificationGroup.lean/index.md) · [Full source](../../../../CommutativeAlgebra/RamificationGroup.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RamificationGroup.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RamificationGroup.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [decompositionSubgroup](../../../../CommutativeAlgebra/RamificationGroup.lean/declarations/decompositionsubgroup.md) | 26 | `declaration-track:06c507c2a8e13deada9815af204a94bc7a8a682292c4753dc0697c532412d726` |
-| 2 | `def` | [subMulAction](../../../../CommutativeAlgebra/RamificationGroup.lean/declarations/submulaction.md) | 31 | `declaration-track:b2bcd47f9ae3941a16d0e2258ef5923558723f0eb3ebc91432261abd5b1b3a6e` |
-| 3 | `instance` | [decompositionSubgroupMulSemiringAction](../../../../CommutativeAlgebra/RamificationGroup.lean/declarations/decompositionsubgroupmulsemiringaction.md) | 36 | `declaration-track:2b0d32d11ac912258f9e5223fc3d7fca3e6fdadc1676132892303e1102ebc5ab` |
-| 4 | `def` | [inertiaSubgroup](../../../../CommutativeAlgebra/RamificationGroup.lean/declarations/inertiasubgroup.md) | 46 | `declaration-track:c3cc935d5708e6ffc6e19daa2bc9a93d347f5824e126903a118138b78037d5d4` |
+| 1 | `abbrev` | [decompositionSubgroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RamificationGroup.lean/declarations/decompositionsubgroup.md) | 26 | `declaration-track:06c507c2a8e13deada9815af204a94bc7a8a682292c4753dc0697c532412d726` |
+| 2 | `def` | [subMulAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RamificationGroup.lean/declarations/submulaction.md) | 31 | `declaration-track:b2bcd47f9ae3941a16d0e2258ef5923558723f0eb3ebc91432261abd5b1b3a6e` |
+| 3 | `instance` | [decompositionSubgroupMulSemiringAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RamificationGroup.lean/declarations/decompositionsubgroupmulsemiringaction.md) | 36 | `declaration-track:2b0d32d11ac912258f9e5223fc3d7fca3e6fdadc1676132892303e1102ebc5ab` |
+| 4 | `def` | [inertiaSubgroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RamificationGroup.lean/declarations/inertiasubgroup.md) | 46 | `declaration-track:c3cc935d5708e6ffc6e19daa2bc9a93d347f5824e126903a118138b78037d5d4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

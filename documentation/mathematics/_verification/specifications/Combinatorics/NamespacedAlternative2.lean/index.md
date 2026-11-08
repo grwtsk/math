@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/NamespacedAlternative2.lean/index.md) · [Full source](../../../../Combinatorics/NamespacedAlternative2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NamespacedAlternative2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NamespacedAlternative2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,18 +57,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [adjacent_log_gap_bounds](../../../../Combinatorics/NamespacedAlternative2.lean/declarations/adjacent-log-gap-bounds.md) | 28 | `result-track:cf28666c079dfe13281c2b007004c12fd0a9ebc63cd9834db3fe0cb94741d4c9` |
-| 2 | `theorem` | [log_gap_lower](../../../../Combinatorics/NamespacedAlternative2.lean/declarations/log-gap-lower.md) | 50 | `result-track:a997dde6c693f7c580c2a8270144ae6f1bae81d3ee4f2dd0139e3a7248535eec` |
-| 3 | `theorem` | [inventory_log_gap_lower](../../../../Combinatorics/NamespacedAlternative2.lean/declarations/inventory-log-gap-lower.md) | 63 | `result-track:ee8aa7888bb18890d2c187e04a6ce07ce3b884aefbd50d23abfa29e85b0f53ed` |
-| 4 | `theorem` | [source_inventory_log_gap_lower](../../../../Combinatorics/NamespacedAlternative2.lean/declarations/source-inventory-log-gap-lower.md) | 71 | `result-track:da0d91e7539de51d5d996318576527f2ace296c65d09540fdbf18f83d0447ae6` |
-| 5 | `theorem` | [local_log_gap_lower](../../../../Combinatorics/NamespacedAlternative2.lean/declarations/local-log-gap-lower.md) | 77 | `result-track:d0f84e65877c4f9bfc3e111bb8d279b98bf827d1daa7b5b8cec0a152d5a19dba` |
-| 6 | `theorem` | [coefficient_square](../../../../Combinatorics/NamespacedAlternative2.lean/declarations/coefficient-square.md) | 95 | `result-track:d903f11af83c74922a0f4da36faceccc110f6c28ea1deeb3480f7428d8e19fe6` |
-| 7 | `theorem` | [local_spacing_weighted_coefficient_square](../../../../Combinatorics/NamespacedAlternative2.lean/declarations/local-spacing-weighted-coefficient-square.md) | 100 | `result-track:7cb09deaa0224c3ede088ebeac6e24703ac8ea79d39e5862bee8b0d5f394269f` |
-| 8 | `theorem` | [local_spacing_weighted_square_sum](../../../../Combinatorics/NamespacedAlternative2.lean/declarations/local-spacing-weighted-square-sum.md) | 107 | `result-track:3419579c725c03ac2764080d19d342f7e9f790df9f1ad914620b61b1f816b8bb` |
-| 9 | `theorem` | [inventory_last_gap_upper](../../../../Combinatorics/NamespacedAlternative2.lean/declarations/inventory-last-gap-upper.md) | 116 | `result-track:0c19b6fb5ef53557fb60584c3d1344cfc71429b47f9b897bfa3e3d94c20373b3` |
-| 10 | `theorem` | [source_last_gap_bounds](../../../../Combinatorics/NamespacedAlternative2.lean/declarations/source-last-gap-bounds.md) | 125 | `result-track:4d98fd9e34b2c8cf643313468313662675ed28ce3f46140363d749056a5343d1` |
-| 11 | `theorem` | [adjacent_log_gaps_eventually_lt](../../../../Combinatorics/NamespacedAlternative2.lean/declarations/adjacent-log-gaps-eventually-lt.md) | 169 | `result-track:9d55703249ac45fe66b5c798fd652b713b3150c92cdc5d3faf973bcc57655781` |
-| 12 | `theorem` | [no_uniform_positive_log_spacing](../../../../Combinatorics/NamespacedAlternative2.lean/declarations/no-uniform-positive-log-spacing.md) | 174 | `result-track:5ea471e09d5fb2546c105519b40c69fa182944138fd35f444f8d8c7b5c78fc25` |
+| 1 | `theorem` | [adjacent_log_gap_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NamespacedAlternative2.lean/declarations/adjacent-log-gap-bounds.md) | 28 | `result-track:cf28666c079dfe13281c2b007004c12fd0a9ebc63cd9834db3fe0cb94741d4c9` |
+| 2 | `theorem` | [log_gap_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NamespacedAlternative2.lean/declarations/log-gap-lower.md) | 50 | `result-track:a997dde6c693f7c580c2a8270144ae6f1bae81d3ee4f2dd0139e3a7248535eec` |
+| 3 | `theorem` | [inventory_log_gap_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NamespacedAlternative2.lean/declarations/inventory-log-gap-lower.md) | 63 | `result-track:ee8aa7888bb18890d2c187e04a6ce07ce3b884aefbd50d23abfa29e85b0f53ed` |
+| 4 | `theorem` | [source_inventory_log_gap_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NamespacedAlternative2.lean/declarations/source-inventory-log-gap-lower.md) | 71 | `result-track:da0d91e7539de51d5d996318576527f2ace296c65d09540fdbf18f83d0447ae6` |
+| 5 | `theorem` | [local_log_gap_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NamespacedAlternative2.lean/declarations/local-log-gap-lower.md) | 77 | `result-track:d0f84e65877c4f9bfc3e111bb8d279b98bf827d1daa7b5b8cec0a152d5a19dba` |
+| 6 | `theorem` | [coefficient_square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NamespacedAlternative2.lean/declarations/coefficient-square.md) | 95 | `result-track:d903f11af83c74922a0f4da36faceccc110f6c28ea1deeb3480f7428d8e19fe6` |
+| 7 | `theorem` | [local_spacing_weighted_coefficient_square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NamespacedAlternative2.lean/declarations/local-spacing-weighted-coefficient-square.md) | 100 | `result-track:7cb09deaa0224c3ede088ebeac6e24703ac8ea79d39e5862bee8b0d5f394269f` |
+| 8 | `theorem` | [local_spacing_weighted_square_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NamespacedAlternative2.lean/declarations/local-spacing-weighted-square-sum.md) | 107 | `result-track:3419579c725c03ac2764080d19d342f7e9f790df9f1ad914620b61b1f816b8bb` |
+| 9 | `theorem` | [inventory_last_gap_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NamespacedAlternative2.lean/declarations/inventory-last-gap-upper.md) | 116 | `result-track:0c19b6fb5ef53557fb60584c3d1344cfc71429b47f9b897bfa3e3d94c20373b3` |
+| 10 | `theorem` | [source_last_gap_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NamespacedAlternative2.lean/declarations/source-last-gap-bounds.md) | 125 | `result-track:4d98fd9e34b2c8cf643313468313662675ed28ce3f46140363d749056a5343d1` |
+| 11 | `theorem` | [adjacent_log_gaps_eventually_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NamespacedAlternative2.lean/declarations/adjacent-log-gaps-eventually-lt.md) | 169 | `result-track:9d55703249ac45fe66b5c798fd652b713b3150c92cdc5d3faf973bcc57655781` |
+| 12 | `theorem` | [no_uniform_positive_log_spacing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NamespacedAlternative2.lean/declarations/no-uniform-positive-log-spacing.md) | 174 | `result-track:5ea471e09d5fb2546c105519b40c69fa182944138fd35f444f8d8c7b5c78fc25` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

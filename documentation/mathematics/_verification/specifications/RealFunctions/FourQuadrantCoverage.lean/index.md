@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/FourQuadrantCoverage.lean/index.md) · [Full source](../../../../RealFunctions/FourQuadrantCoverage.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FourQuadrantCoverage.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FourQuadrantCoverage.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -49,7 +49,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 - `BitMatrix.Codec.SequentialPrimeSource` — import line 20; external provider; requires a separately pinned dependency.
 - `BitMatrix.Rhetorical.Core` — import line 21; external provider; requires a separately pinned dependency.
 - `BitMatrix.Topology.DesignatedCantor` — import line 22; external provider; requires a separately pinned dependency.
-- [Whole Theory And Symbolic Source](../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeTheoryAndSymbolicSource.lean/index.md) — import line 24; pinned internal source present.
+- [Whole Theory And Symbolic Source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeTheoryAndSymbolicSource.lean/index.md) — import line 24; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -60,9 +60,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [quadrantCoordinate](../../../../RealFunctions/FourQuadrantCoverage.lean/declarations/quadrantcoordinate.md) | 38 | `declaration-track:5f5c88a5e8977636275cebbba3b643156c9b73709ac1add4249c375ff5e5bed2` |
-| 2 | `def` | [fourModePresentation](../../../../RealFunctions/FourQuadrantCoverage.lean/declarations/fourmodepresentation.md) | 53 | `declaration-track:e3d2004d0eb259f7104b88357cc843cd7c04d963fdbf05ee01fc7b0377c50061` |
-| 3 | `theorem` | [four_mode_coverage](../../../../RealFunctions/FourQuadrantCoverage.lean/declarations/four-mode-coverage.md) | 82 | `result-track:0a7caeac1746e4c9e1cb7765f30d62c5c3abd4fd43d3fcfe4cb62f9579a351e1` |
+| 1 | `def` | [quadrantCoordinate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FourQuadrantCoverage.lean/declarations/quadrantcoordinate.md) | 38 | `declaration-track:5f5c88a5e8977636275cebbba3b643156c9b73709ac1add4249c375ff5e5bed2` |
+| 2 | `def` | [fourModePresentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FourQuadrantCoverage.lean/declarations/fourmodepresentation.md) | 53 | `declaration-track:e3d2004d0eb259f7104b88357cc843cd7c04d963fdbf05ee01fc7b0377c50061` |
+| 3 | `theorem` | [four_mode_coverage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FourQuadrantCoverage.lean/declarations/four-mode-coverage.md) | 82 | `result-track:0a7caeac1746e4c9e1cb7765f30d62c5c3abd4fd43d3fcfe4cb62f9579a351e1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

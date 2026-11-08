@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../DynamicalSystemsAndErgodicTheory/ApproximationReturn.lean/index.md) · [Full source](../../../../DynamicalSystemsAndErgodicTheory/ApproximationReturn.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/ApproximationReturn.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/ApproximationReturn.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.ContinuedFractions.ScheduledDenominators`](../../../../NumberTheory/ScheduledDenominators.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.NumberTheory.ContinuedFractions.ScheduledDenominators`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ScheduledDenominators.lean/index.md) — import line 1; pinned internal source present.
 - `Mathlib.Analysis.SpecialFunctions.Pow.Real` — import line 2; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,18 +58,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [PolynomialBound](../../../../DynamicalSystemsAndErgodicTheory/ApproximationReturn.lean/declarations/polynomialbound.md) | 29 | `declaration-track:1df8d654496e4d93fb1f95794ec67534976fe93c4010f3a7fe75971aa8854642` |
-| 2 | `def` | [IdentifiesWithLoss](../../../../DynamicalSystemsAndErgodicTheory/ApproximationReturn.lean/declarations/identifieswithloss.md) | 33 | `declaration-track:e0e1952a6077fc4e1fb399c4d5a153b5b0aced7fd893412115de33b3abaf3224` |
-| 3 | `theorem` | [polynomial_return](../../../../DynamicalSystemsAndErgodicTheory/ApproximationReturn.lean/declarations/polynomial-return.md) | 38 | `result-track:7ec465e9528968a24111bbb0affc492f375d4c2187ebb9ab7e93b565246a1354` |
-| 4 | `def` | [ArithmeticRoute](../../../../DynamicalSystemsAndErgodicTheory/ApproximationReturn.lean/declarations/arithmeticroute.md) | 61 | `declaration-track:fca4e75410345a813e1991f871b816efd3ab134cfc08a9402b8bdf2be8969fe6` |
-| 5 | `theorem` | [arithmetic_route_return](../../../../DynamicalSystemsAndErgodicTheory/ApproximationReturn.lean/declarations/arithmetic-route-return.md) | 69 | `result-track:6437ffe4e42da807cf5c12175990d9c9864279b75537bdd2c7881c900223b3f6` |
-| 6 | `def` | [intervalLoss](../../../../DynamicalSystemsAndErgodicTheory/ApproximationReturn.lean/declarations/intervalloss.md) | 76 | `declaration-track:5aeb598776d1cfe8118fc9db7e8aed76f260fb399fec95b087f1ba91a9aa8028` |
-| 7 | `def` | [finiteSizeLoss](../../../../DynamicalSystemsAndErgodicTheory/ApproximationReturn.lean/declarations/finitesizeloss.md) | 80 | `declaration-track:f0bc81f594c339f98043f825cacc54d59861d4dd47a4f9f851ab1ef89818d225` |
-| 8 | `def` | [ApproximationCertificate](../../../../DynamicalSystemsAndErgodicTheory/ApproximationReturn.lean/declarations/approximationcertificate.md) | 83 | `declaration-track:dd449ecd791eff2b6bbda88c546f204029e7795897fe3fb6b22d76384957f86d` |
-| 9 | `theorem` | [finiteSizeLoss_pos](../../../../DynamicalSystemsAndErgodicTheory/ApproximationReturn.lean/declarations/finitesizeloss-pos.md) | 87 | `result-track:fa74398de8d5d0ca9f0eeffc9b1347659e14998006c730f3ae6b15e495bac9d3` |
-| 10 | `theorem` | [equal_frequency_intervalLoss](../../../../DynamicalSystemsAndErgodicTheory/ApproximationReturn.lean/declarations/equal-frequency-intervalloss.md) | 91 | `result-track:038019e8c836d36422ad4d171f482ae012ede01937d4ae0cd33f3c5c97aeb25d` |
-| 11 | `theorem` | [intervalLoss_nonneg](../../../../DynamicalSystemsAndErgodicTheory/ApproximationReturn.lean/declarations/intervalloss-nonneg.md) | 96 | `result-track:d5c257ae197d9237cc98a96057f8eecc5b0b1f18eb14d2dfb80b72c40c82fb87` |
-| 12 | `theorem` | [approximation_return](../../../../DynamicalSystemsAndErgodicTheory/ApproximationReturn.lean/declarations/approximation-return.md) | 103 | `result-track:156d76be3c46d230d0bb57c0261150d6ad18e561e788346c46fe5402f5cb0c09` |
+| 1 | `def` | [PolynomialBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/ApproximationReturn.lean/declarations/polynomialbound.md) | 29 | `declaration-track:1df8d654496e4d93fb1f95794ec67534976fe93c4010f3a7fe75971aa8854642` |
+| 2 | `def` | [IdentifiesWithLoss](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/ApproximationReturn.lean/declarations/identifieswithloss.md) | 33 | `declaration-track:e0e1952a6077fc4e1fb399c4d5a153b5b0aced7fd893412115de33b3abaf3224` |
+| 3 | `theorem` | [polynomial_return](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/ApproximationReturn.lean/declarations/polynomial-return.md) | 38 | `result-track:7ec465e9528968a24111bbb0affc492f375d4c2187ebb9ab7e93b565246a1354` |
+| 4 | `def` | [ArithmeticRoute](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/ApproximationReturn.lean/declarations/arithmeticroute.md) | 61 | `declaration-track:fca4e75410345a813e1991f871b816efd3ab134cfc08a9402b8bdf2be8969fe6` |
+| 5 | `theorem` | [arithmetic_route_return](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/ApproximationReturn.lean/declarations/arithmetic-route-return.md) | 69 | `result-track:6437ffe4e42da807cf5c12175990d9c9864279b75537bdd2c7881c900223b3f6` |
+| 6 | `def` | [intervalLoss](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/ApproximationReturn.lean/declarations/intervalloss.md) | 76 | `declaration-track:5aeb598776d1cfe8118fc9db7e8aed76f260fb399fec95b087f1ba91a9aa8028` |
+| 7 | `def` | [finiteSizeLoss](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/ApproximationReturn.lean/declarations/finitesizeloss.md) | 80 | `declaration-track:f0bc81f594c339f98043f825cacc54d59861d4dd47a4f9f851ab1ef89818d225` |
+| 8 | `def` | [ApproximationCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/ApproximationReturn.lean/declarations/approximationcertificate.md) | 83 | `declaration-track:dd449ecd791eff2b6bbda88c546f204029e7795897fe3fb6b22d76384957f86d` |
+| 9 | `theorem` | [finiteSizeLoss_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/ApproximationReturn.lean/declarations/finitesizeloss-pos.md) | 87 | `result-track:fa74398de8d5d0ca9f0eeffc9b1347659e14998006c730f3ae6b15e495bac9d3` |
+| 10 | `theorem` | [equal_frequency_intervalLoss](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/ApproximationReturn.lean/declarations/equal-frequency-intervalloss.md) | 91 | `result-track:038019e8c836d36422ad4d171f482ae012ede01937d4ae0cd33f3c5c97aeb25d` |
+| 11 | `theorem` | [intervalLoss_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/ApproximationReturn.lean/declarations/intervalloss-nonneg.md) | 96 | `result-track:d5c257ae197d9237cc98a96057f8eecc5b0b1f18eb14d2dfb80b72c40c82fb87` |
+| 12 | `theorem` | [approximation_return](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/ApproximationReturn.lean/declarations/approximation-return.md) | 103 | `result-track:156d76be3c46d230d0bb57c0261150d6ad18e561e788346c46fe5402f5cb0c09` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

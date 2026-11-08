@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/AddAutNamespaced.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/AddAutNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AddAutNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AddAutNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,10 +60,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mulLeft](../../../../AssociativeRingsAndAlgebras/AddAutNamespaced.lean/declarations/mulleft.md) | 36 | `declaration-track:8ff1cc795dcd480b94c3034ff33518ab36662714119468d7ac7840a03aac41de` |
-| 2 | `def` | [mulRight](../../../../AssociativeRingsAndAlgebras/AddAutNamespaced.lean/declarations/mulright.md) | 40 | `declaration-track:55992955db09183c63cd07c64fe1541cf6dc47a98791e9f4cc8b7a1c32a77c94` |
-| 3 | `theorem` | [mulRight_apply](../../../../AssociativeRingsAndAlgebras/AddAutNamespaced.lean/declarations/mulright-apply.md) | 44 | `result-track:79a3a8e540b2f9c80f58a4c4082e4da68bc472167167e20e73d7a465bd37fe26` |
-| 4 | `theorem` | [mulRight_symm_apply](../../../../AssociativeRingsAndAlgebras/AddAutNamespaced.lean/declarations/mulright-symm-apply.md) | 48 | `result-track:8e5f58a6c696a85338e9421e28bbcde84e87c19c8248109c5fc3559b46bc61cb` |
+| 1 | `def` | [mulLeft](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AddAutNamespaced.lean/declarations/mulleft.md) | 36 | `declaration-track:8ff1cc795dcd480b94c3034ff33518ab36662714119468d7ac7840a03aac41de` |
+| 2 | `def` | [mulRight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AddAutNamespaced.lean/declarations/mulright.md) | 40 | `declaration-track:55992955db09183c63cd07c64fe1541cf6dc47a98791e9f4cc8b7a1c32a77c94` |
+| 3 | `theorem` | [mulRight_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AddAutNamespaced.lean/declarations/mulright-apply.md) | 44 | `result-track:79a3a8e540b2f9c80f58a4c4082e4da68bc472167167e20e73d7a465bd37fe26` |
+| 4 | `theorem` | [mulRight_symm_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AddAutNamespaced.lean/declarations/mulright-symm-apply.md) | 48 | `result-track:8e5f58a6c696a85338e9421e28bbcde84e87c19c8248109c5fc3559b46bc61cb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative2.lean/index.md) · [Full source](../../../../GeneralTopology/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [higherPrimePower_abs_le](../../../../GeneralTopology/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative2.lean/declarations/higherprimepower-abs-le.md) | 28 | `result-track:b0d737e570a391e21ddc3a631560a48584b78fd8cf4de9b8372d6d3b459f7726` |
-| 2 | `theorem` | [higherPrimePower_sub_main_abs_le](../../../../GeneralTopology/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative2.lean/declarations/higherprimepower-sub-main-abs-le.md) | 41 | `result-track:5a1cc410674a04d84f17d0e630c4d7fe736088f91448efa253c33a63632fbdc7` |
-| 3 | `theorem` | [higherPrimePower_normalized_error_tendsto](../../../../GeneralTopology/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative2.lean/declarations/higherprimepower-normalized-error-tendsto.md) | 55 | `result-track:e5f9318775a356e50db5c4174ee596049200bd579b19a35d976989ab34e0743e` |
-| 4 | `theorem` | [higherPrimePower_div_scale_tendsto](../../../../GeneralTopology/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative2.lean/declarations/higherprimepower-div-scale-tendsto.md) | 75 | `result-track:72250b6508e164e763d2fef3693f5b4468f79d55315664ccde6f65484eba1abb` |
-| 5 | `theorem` | [polynomial_residual_of_prime_first_bound](../../../../GeneralTopology/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative2.lean/declarations/polynomial-residual-of-prime-first-bound.md) | 83 | `result-track:5c25e4c05a8043c04eeaf590f16b92c16e05aa42d21a5a6caaf42968ccd414aa` |
+| 1 | `theorem` | [higherPrimePower_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative2.lean/declarations/higherprimepower-abs-le.md) | 28 | `result-track:b0d737e570a391e21ddc3a631560a48584b78fd8cf4de9b8372d6d3b459f7726` |
+| 2 | `theorem` | [higherPrimePower_sub_main_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative2.lean/declarations/higherprimepower-sub-main-abs-le.md) | 41 | `result-track:5a1cc410674a04d84f17d0e630c4d7fe736088f91448efa253c33a63632fbdc7` |
+| 3 | `theorem` | [higherPrimePower_normalized_error_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative2.lean/declarations/higherprimepower-normalized-error-tendsto.md) | 55 | `result-track:e5f9318775a356e50db5c4174ee596049200bd579b19a35d976989ab34e0743e` |
+| 4 | `theorem` | [higherPrimePower_div_scale_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative2.lean/declarations/higherprimepower-div-scale-tendsto.md) | 75 | `result-track:72250b6508e164e763d2fef3693f5b4468f79d55315664ccde6f65484eba1abb` |
+| 5 | `theorem` | [polynomial_residual_of_prime_first_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative2.lean/declarations/polynomial-residual-of-prime-first-bound.md) | 83 | `result-track:5c25e4c05a8043c04eeaf590f16b92c16e05aa42d21a5a6caaf42968ccd414aa` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

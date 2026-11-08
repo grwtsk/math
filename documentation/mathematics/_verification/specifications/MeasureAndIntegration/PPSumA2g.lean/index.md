@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/PPSumA2g.lean/index.md) · [Full source](../../../../MeasureAndIntegration/PPSumA2g.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PPSumA2g.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PPSumA2g.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,20 +59,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [sumA2g](../../../../MeasureAndIntegration/PPSumA2g.lean/declarations/suma2g.md) | 62 | `declaration-track:2d8ebd7b6e327c489f6343540c83169977ceb337fdd3b01a810a97bd9668c485` |
-| 2 | `lemma` | [Setting.log_X](../../../../MeasureAndIntegration/PPSumA2g.lean/declarations/setting-log-x.md) | 72 | `result-track:9c072c2ad0dea087f436985c52ca0136c6455f694d6bfc221e9756dea148d08a` |
-| 3 | `lemma` | [LocalHypsCore.L_add_one_le_X](../../../../MeasureAndIntegration/PPSumA2g.lean/declarations/localhypscore-l-add-one-le-x.md) | 75 | `result-track:c5e5a14131de2fb2756b7bdcdcdde369a92704655e3a4f924b0d3a35d2fc7fa7` |
-| 4 | `lemma` | [LocalHypsCore.two_le_X](../../../../MeasureAndIntegration/PPSumA2g.lean/declarations/localhypscore-two-le-x.md) | 78 | `result-track:be0990bc319504b1c77a6cf118185d4c124db43a9132994cd52f2b2d3e5b6b6e` |
-| 5 | `lemma` | [LocalHypsCore.L_le_X](../../../../MeasureAndIntegration/PPSumA2g.lean/declarations/localhypscore-l-le-x.md) | 81 | `result-track:9c4e926e1dda70b3c504733e8bff22ca56400b31a08898bd7abf00aa4acb4ba4` |
-| 6 | `theorem` | [sum_a2g_upper'](../../../../MeasureAndIntegration/PPSumA2g.lean/declarations/sum-a2g-upper-source-edition-2.md) | 94 | `result-track:a07341a7e10be570d8cad4c4439921b7fff0d047674118cde076877d2bbb02f2` |
-| 7 | `theorem` | [sum_a2g_lower'](../../../../MeasureAndIntegration/PPSumA2g.lean/declarations/sum-a2g-lower-source-edition-2.md) | 118 | `result-track:fe558f92fb0101c4a30f13561265b3ccac071db2a0006ca76d7b309d3b63d05d` |
-| 8 | `lemma` | [sum_sum_eq_diag_add_offdiag](../../../../MeasureAndIntegration/PPSumA2g.lean/declarations/sum-sum-eq-diag-add-offdiag.md) | 173 | `result-track:1ce4ee8e324f7e60ae054f9998567b2fe056e10fcee8a9dac8687068b14dfa25` |
-| 9 | `lemma` | [Mform_PX_PX](../../../../MeasureAndIntegration/PPSumA2g.lean/declarations/mform-px-px.md) | 185 | `result-track:94507a0a6a43694c1ab0be15831d58c4bd496aa846294cae1df86a9bde63cc76` |
-| 10 | `lemma` | [diag_estimate](../../../../MeasureAndIntegration/PPSumA2g.lean/declarations/diag-estimate.md) | 249 | `result-track:df9265701a9167f6b1e97f397f45125d4df181575b879b1ca00d6087c547730c` |
-| 11 | `lemma` | [O2_estimate](../../../../MeasureAndIntegration/PPSumA2g.lean/declarations/o2-estimate.md) | 282 | `result-track:5cc6cbfe7e90c0225c60fcedcbb9a1708b9877d3deb3e674bd36c62a3d51b03d` |
-| 12 | `theorem` | [prop_PP](../../../../MeasureAndIntegration/PPSumA2g.lean/declarations/prop-pp.md) | 332 | `result-track:546e0a7373396ff8efcb0cde08a5936c3ac4c7118478830dedd86813b38ed763` |
-| 13 | `theorem` | [sum_a2g_lower](../../../../MeasureAndIntegration/PPSumA2g.lean/declarations/sum-a2g-lower.md) | 465 | `result-track:ad8015049c9721999a0be629b3bde0ee7dbb82c8bd2c8f7ba890b0e8f84afb92` |
-| 14 | `theorem` | [sum_a2g_upper](../../../../MeasureAndIntegration/PPSumA2g.lean/declarations/sum-a2g-upper.md) | 472 | `result-track:5dc645757019b9142e751350336caf6f73a7c709d62029b4a0014aa26b73a101` |
+| 1 | `def` | [sumA2g](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PPSumA2g.lean/declarations/suma2g.md) | 62 | `declaration-track:2d8ebd7b6e327c489f6343540c83169977ceb337fdd3b01a810a97bd9668c485` |
+| 2 | `lemma` | [Setting.log_X](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PPSumA2g.lean/declarations/setting-log-x.md) | 72 | `result-track:9c072c2ad0dea087f436985c52ca0136c6455f694d6bfc221e9756dea148d08a` |
+| 3 | `lemma` | [LocalHypsCore.L_add_one_le_X](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PPSumA2g.lean/declarations/localhypscore-l-add-one-le-x.md) | 75 | `result-track:c5e5a14131de2fb2756b7bdcdcdde369a92704655e3a4f924b0d3a35d2fc7fa7` |
+| 4 | `lemma` | [LocalHypsCore.two_le_X](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PPSumA2g.lean/declarations/localhypscore-two-le-x.md) | 78 | `result-track:be0990bc319504b1c77a6cf118185d4c124db43a9132994cd52f2b2d3e5b6b6e` |
+| 5 | `lemma` | [LocalHypsCore.L_le_X](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PPSumA2g.lean/declarations/localhypscore-l-le-x.md) | 81 | `result-track:9c4e926e1dda70b3c504733e8bff22ca56400b31a08898bd7abf00aa4acb4ba4` |
+| 6 | `theorem` | [sum_a2g_upper'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PPSumA2g.lean/declarations/sum-a2g-upper-source-edition-2.md) | 94 | `result-track:a07341a7e10be570d8cad4c4439921b7fff0d047674118cde076877d2bbb02f2` |
+| 7 | `theorem` | [sum_a2g_lower'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PPSumA2g.lean/declarations/sum-a2g-lower-source-edition-2.md) | 118 | `result-track:fe558f92fb0101c4a30f13561265b3ccac071db2a0006ca76d7b309d3b63d05d` |
+| 8 | `lemma` | [sum_sum_eq_diag_add_offdiag](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PPSumA2g.lean/declarations/sum-sum-eq-diag-add-offdiag.md) | 173 | `result-track:1ce4ee8e324f7e60ae054f9998567b2fe056e10fcee8a9dac8687068b14dfa25` |
+| 9 | `lemma` | [Mform_PX_PX](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PPSumA2g.lean/declarations/mform-px-px.md) | 185 | `result-track:94507a0a6a43694c1ab0be15831d58c4bd496aa846294cae1df86a9bde63cc76` |
+| 10 | `lemma` | [diag_estimate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PPSumA2g.lean/declarations/diag-estimate.md) | 249 | `result-track:df9265701a9167f6b1e97f397f45125d4df181575b879b1ca00d6087c547730c` |
+| 11 | `lemma` | [O2_estimate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PPSumA2g.lean/declarations/o2-estimate.md) | 282 | `result-track:5cc6cbfe7e90c0225c60fcedcbb9a1708b9877d3deb3e674bd36c62a3d51b03d` |
+| 12 | `theorem` | [prop_PP](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PPSumA2g.lean/declarations/prop-pp.md) | 332 | `result-track:546e0a7373396ff8efcb0cde08a5936c3ac4c7118478830dedd86813b38ed763` |
+| 13 | `theorem` | [sum_a2g_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PPSumA2g.lean/declarations/sum-a2g-lower.md) | 465 | `result-track:ad8015049c9721999a0be629b3bde0ee7dbb82c8bd2c8f7ba890b0e8f84afb92` |
+| 14 | `theorem` | [sum_a2g_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PPSumA2g.lean/declarations/sum-a2g-upper.md) | 472 | `result-track:5dc645757019b9142e751350336caf6f73a7c709d62029b4a0014aa26b73a101` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

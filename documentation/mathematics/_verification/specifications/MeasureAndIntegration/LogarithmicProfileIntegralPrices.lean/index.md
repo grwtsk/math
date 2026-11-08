@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/LogarithmicProfileIntegralPrices.lean/index.md) · [Full source](../../../../MeasureAndIntegration/LogarithmicProfileIntegralPrices.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogarithmicProfileIntegralPrices.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogarithmicProfileIntegralPrices.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.IntegralTransforms.LogarithmicProfileDerivative`](../../../../IntegralTransformsOperationalCalculus/LogarithmicProfileDerivative.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.IntegralTransforms.LogarithmicProfileWeights`](../../../../MeasureAndIntegration/LogarithmicProfileWeights.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.IntegralTransforms.LogarithmicProfileDerivative`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/LogarithmicProfileDerivative.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.IntegralTransforms.LogarithmicProfileWeights`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogarithmicProfileWeights.lean/index.md) — import line 5; pinned internal source present.
 - `Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic` — import line 6; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 7; external provider; requires a separately pinned dependency.
 
@@ -60,9 +60,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [upper_variation_weight_integral](../../../../MeasureAndIntegration/LogarithmicProfileIntegralPrices.lean/declarations/upper-variation-weight-integral.md) | 25 | `result-track:1895db7e542600dbbe63f4ac488109a364406004188e475a03df8204f12b99b2` |
-| 2 | `theorem` | [logarithmic_profile_variation_price](../../../../MeasureAndIntegration/LogarithmicProfileIntegralPrices.lean/declarations/logarithmic-profile-variation-price.md) | 47 | `result-track:f1b2298513f205cf9e86d2a03d6c151a71482e6cc68cbc3eb68b90dce1522230` |
-| 3 | `theorem` | [logarithmic_profile_lower_price](../../../../MeasureAndIntegration/LogarithmicProfileIntegralPrices.lean/declarations/logarithmic-profile-lower-price.md) | 78 | `result-track:cb93d34e796030bdc4175b854dcf051f0009e30689cd9b711f208863531b28c4` |
+| 1 | `theorem` | [upper_variation_weight_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogarithmicProfileIntegralPrices.lean/declarations/upper-variation-weight-integral.md) | 25 | `result-track:1895db7e542600dbbe63f4ac488109a364406004188e475a03df8204f12b99b2` |
+| 2 | `theorem` | [logarithmic_profile_variation_price](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogarithmicProfileIntegralPrices.lean/declarations/logarithmic-profile-variation-price.md) | 47 | `result-track:f1b2298513f205cf9e86d2a03d6c151a71482e6cc68cbc3eb68b90dce1522230` |
+| 3 | `theorem` | [logarithmic_profile_lower_price](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogarithmicProfileIntegralPrices.lean/declarations/logarithmic-profile-lower-price.md) | 78 | `result-track:cb93d34e796030bdc4175b854dcf051f0009e30689cd9b711f208863531b28c4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

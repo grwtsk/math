@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Morphism.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Morphism.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Morphism.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Morphism.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [MapsIdeal](../../../../../ComputerScience/AlgorithmsInComputerScience/Morphism.lean/declarations/mapsideal.md) | 17 | `declaration-track:b5dff2dcd58836c627559b967757a8ac45c64fb616128e68074ac4312db15aad` |
-| 2 | `structure` | [IdealExtensionEquals](../../../../../ComputerScience/AlgorithmsInComputerScience/Morphism.lean/declarations/idealextensionequals.md) | 28 | `declaration-track:a7ad02322f22d5927cfec5758a0176eb33ed73a239a94027d095c29161879637` |
-| 3 | `structure` | [PrismMap](../../../../../ComputerScience/AlgorithmsInComputerScience/Morphism.lean/declarations/prismmap.md) | 40 | `declaration-track:93c9261e8921e373d7c1b471a408f6caa8c03a55c791ca5891fb0a8d50e43739` |
-| 4 | `theorem` | [rigidity_of_maps](../../../../../ComputerScience/AlgorithmsInComputerScience/Morphism.lean/declarations/rigidity-of-maps.md) | 48 | `result-track:36fa206398312e0fbe2653e38ac4f5959887274fe9271e3d0ef88bf0e60796be` |
-| 5 | `theorem` | [map_rigidity](../../../../../ComputerScience/AlgorithmsInComputerScience/Morphism.lean/declarations/map-rigidity.md) | 54 | `result-track:da22eb80a4455e1b88d1e7cbca48c689d2b5e600b5814f33775bb439ea52b924` |
-| 6 | `structure` | [FlatPrismMap](../../../../../ComputerScience/AlgorithmsInComputerScience/Morphism.lean/declarations/flatprismmap.md) | 61 | `declaration-track:7844d67a862096bc02fb5f907e3c4428aaf9ed39149c501d7eaf544b8096d06d` |
-| 7 | `structure` | [FaithfullyFlatPrismMap](../../../../../ComputerScience/AlgorithmsInComputerScience/Morphism.lean/declarations/faithfullyflatprismmap.md) | 68 | `declaration-track:14dd8d1b66f1d98e6456dac566a0ad96799106117bcc9e76637e24074c4b0def` |
-| 8 | `structure` | [BoundedFlatMapIdentificationCertificate](../../../../../ComputerScience/AlgorithmsInComputerScience/Morphism.lean/declarations/boundedflatmapidentificationcertificate.md) | 75 | `declaration-track:75d5b4f6c80f7a79c7916bf23abe13a1e22ae1d0b40b70c763fcdae4b14dc14b` |
-| 9 | `theorem` | [flat_maps_identify_with_completely_flat_delta_algebras](../../../../../ComputerScience/AlgorithmsInComputerScience/Morphism.lean/declarations/flat-maps-identify-with-completely-flat-delta-algebras.md) | 85 | `result-track:1775c8f5104f22965b8587d0c6f7fb410282573a4cbfa3905933f1157222f3c6` |
-| 10 | `def` | [unitPrismMap](../../../../../ComputerScience/AlgorithmsInComputerScience/Morphism.lean/declarations/unitprismmap.md) | 93 | `declaration-track:c1e6a8e83e3a845b77772c125a7906bcd8660ce266036dcbdbb6cde087240f10` |
+| 1 | `structure` | [MapsIdeal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Morphism.lean/declarations/mapsideal.md) | 17 | `declaration-track:b5dff2dcd58836c627559b967757a8ac45c64fb616128e68074ac4312db15aad` |
+| 2 | `structure` | [IdealExtensionEquals](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Morphism.lean/declarations/idealextensionequals.md) | 28 | `declaration-track:a7ad02322f22d5927cfec5758a0176eb33ed73a239a94027d095c29161879637` |
+| 3 | `structure` | [PrismMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Morphism.lean/declarations/prismmap.md) | 40 | `declaration-track:93c9261e8921e373d7c1b471a408f6caa8c03a55c791ca5891fb0a8d50e43739` |
+| 4 | `theorem` | [rigidity_of_maps](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Morphism.lean/declarations/rigidity-of-maps.md) | 48 | `result-track:36fa206398312e0fbe2653e38ac4f5959887274fe9271e3d0ef88bf0e60796be` |
+| 5 | `theorem` | [map_rigidity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Morphism.lean/declarations/map-rigidity.md) | 54 | `result-track:da22eb80a4455e1b88d1e7cbca48c689d2b5e600b5814f33775bb439ea52b924` |
+| 6 | `structure` | [FlatPrismMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Morphism.lean/declarations/flatprismmap.md) | 61 | `declaration-track:7844d67a862096bc02fb5f907e3c4428aaf9ed39149c501d7eaf544b8096d06d` |
+| 7 | `structure` | [FaithfullyFlatPrismMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Morphism.lean/declarations/faithfullyflatprismmap.md) | 68 | `declaration-track:14dd8d1b66f1d98e6456dac566a0ad96799106117bcc9e76637e24074c4b0def` |
+| 8 | `structure` | [BoundedFlatMapIdentificationCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Morphism.lean/declarations/boundedflatmapidentificationcertificate.md) | 75 | `declaration-track:75d5b4f6c80f7a79c7916bf23abe13a1e22ae1d0b40b70c763fcdae4b14dc14b` |
+| 9 | `theorem` | [flat_maps_identify_with_completely_flat_delta_algebras](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Morphism.lean/declarations/flat-maps-identify-with-completely-flat-delta-algebras.md) | 85 | `result-track:1775c8f5104f22965b8587d0c6f7fb410282573a4cbfa3905933f1157222f3c6` |
+| 10 | `def` | [unitPrismMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Morphism.lean/declarations/unitprismmap.md) | 93 | `declaration-track:c1e6a8e83e3a845b77772c125a7906bcd8660ce266036dcbdbb6cde087240f10` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

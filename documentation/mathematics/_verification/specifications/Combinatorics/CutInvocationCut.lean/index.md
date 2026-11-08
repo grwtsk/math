@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/CutInvocationCut.lean/index.md) · [Full source](../../../../Combinatorics/CutInvocationCut.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CutInvocationCut.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CutInvocationCut.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [InvocationCut](../../../../Combinatorics/CutInvocationCut.lean/declarations/invocationcut.md) | 15 | `declaration-track:7abebd50ca5164b8d84d9e9d438828232e7e6d42d0e9e04b78e925dd92d3eee9` |
-| 2 | `structure` | [CutValidator](../../../../Combinatorics/CutInvocationCut.lean/declarations/cutvalidator.md) | 38 | `declaration-track:cbcb0d992f726539f83146b5d75d9a651015addb7d359069f61cedb645fa5559` |
-| 3 | `structure` | [CommittedCut](../../../../Combinatorics/CutInvocationCut.lean/declarations/committedcut.md) | 51 | `declaration-track:0f96fe789cbddf9fda4f695db650fea5a5a80feef56f9f4e706f1127898377d3` |
+| 1 | `structure` | [InvocationCut](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CutInvocationCut.lean/declarations/invocationcut.md) | 15 | `declaration-track:7abebd50ca5164b8d84d9e9d438828232e7e6d42d0e9e04b78e925dd92d3eee9` |
+| 2 | `structure` | [CutValidator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CutInvocationCut.lean/declarations/cutvalidator.md) | 38 | `declaration-track:cbcb0d992f726539f83146b5d75d9a651015addb7d359069f61cedb645fa5559` |
+| 3 | `structure` | [CommittedCut](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CutInvocationCut.lean/declarations/committedcut.md) | 51 | `declaration-track:0f96fe789cbddf9fda4f695db650fea5a5a80feef56f9f4e706f1127898377d3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

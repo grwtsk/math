@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FixedLaplaceBoundaryLiteralSnippet.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FixedLaplaceBoundaryLiteralSnippet.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FixedLaplaceBoundaryLiteralSnippet.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FixedLaplaceBoundaryLiteralSnippet.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FixedLaplaceBoundaryLiteralSnippet.lean/declarations/example-source-edition-4.md) | 8 | `declaration-track:c49f91f3e0f5ee620c95762975b5cb954f81fc97d4e35b908d83ff355a26f95b` |
-| 2 | `example` | [(anonymous)](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FixedLaplaceBoundaryLiteralSnippet.lean/declarations/example.md) | 9 | `declaration-track:5065df652ed777acf869bd759b958fda6e3599299c0465a1322b4f197b444ad5` |
-| 3 | `example` | [(anonymous)](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FixedLaplaceBoundaryLiteralSnippet.lean/declarations/example-source-edition-5.md) | 11 | `declaration-track:e947b5162335d95649af9b301aae15c79d371d5697a9d48c762393da128c2a2a` |
-| 4 | `example` | [(anonymous)](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FixedLaplaceBoundaryLiteralSnippet.lean/declarations/example-source-edition-3.md) | 14 | `declaration-track:8c835b7e09433171cbddf3e10e95b9bb323fbe6bc77e6ea84e6fae64b64dcdfc` |
-| 5 | `example` | [(anonymous)](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FixedLaplaceBoundaryLiteralSnippet.lean/declarations/example-source-edition-2.md) | 17 | `declaration-track:7fd4684fde4898e830b89c92ef6960272432bb9199ab3a590729a7bf60da2338` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FixedLaplaceBoundaryLiteralSnippet.lean/declarations/example-source-edition-4.md) | 8 | `declaration-track:c49f91f3e0f5ee620c95762975b5cb954f81fc97d4e35b908d83ff355a26f95b` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FixedLaplaceBoundaryLiteralSnippet.lean/declarations/example.md) | 9 | `declaration-track:5065df652ed777acf869bd759b958fda6e3599299c0465a1322b4f197b444ad5` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FixedLaplaceBoundaryLiteralSnippet.lean/declarations/example-source-edition-5.md) | 11 | `declaration-track:e947b5162335d95649af9b301aae15c79d371d5697a9d48c762393da128c2a2a` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FixedLaplaceBoundaryLiteralSnippet.lean/declarations/example-source-edition-3.md) | 14 | `declaration-track:8c835b7e09433171cbddf3e10e95b9bb323fbe6bc77e6ea84e6fae64b64dcdfc` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FixedLaplaceBoundaryLiteralSnippet.lean/declarations/example-source-edition-2.md) | 17 | `declaration-track:7fd4684fde4898e830b89c92ef6960272432bb9199ab3a590729a7bf60da2338` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/IdentityAndCompositionMapData.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/IdentityAndCompositionMapData.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IdentityAndCompositionMapData.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IdentityAndCompositionMapData.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [ShellTwistGroup](../../../../GroupTheoryAndGeneralizations/IdentityAndCompositionMapData.lean/declarations/shelltwistgroup.md) | 41 | `declaration-track:d299378881588b780c3b48eb6c672a69458436492a0841a45bf9176c2dbea780` |
-| 2 | `structure` | [EllipticToShellTorsion](../../../../GroupTheoryAndGeneralizations/IdentityAndCompositionMapData.lean/declarations/elliptictoshelltorsion.md) | 46 | `declaration-track:a77cfba10660bcf6a53f5f79745cf7f96ca088d12638838fbe8a370acd32edeb` |
+| 1 | `abbrev` | [ShellTwistGroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IdentityAndCompositionMapData.lean/declarations/shelltwistgroup.md) | 41 | `declaration-track:d299378881588b780c3b48eb6c672a69458436492a0841a45bf9176c2dbea780` |
+| 2 | `structure` | [EllipticToShellTorsion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IdentityAndCompositionMapData.lean/declarations/elliptictoshelltorsion.md) | 46 | `declaration-track:a77cfba10660bcf6a53f5f79745cf7f96ca088d12638838fbe8a370acd32edeb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

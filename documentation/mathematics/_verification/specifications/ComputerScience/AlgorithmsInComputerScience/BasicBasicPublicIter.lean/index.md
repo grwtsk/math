@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicIter.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicIter.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicIter.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicIter.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [Iter.toStringList](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicIter.lean/declarations/iter-tostringlist.md) | 21 | `declaration-track:6b5242d113be0e5f311bcbcba027d5d5306d2d8931249ab0226cbd8060cc2254` |
-| 2 | `abbrev` | [Iter.toStringArray](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicIter.lean/declarations/iter-tostringarray.md) | 30 | `declaration-track:4b1bf4a6f8a65d3e03aa0826d74df37567c4fbbe5bd931ba46840eb59b986474` |
+| 1 | `abbrev` | [Iter.toStringList](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicIter.lean/declarations/iter-tostringlist.md) | 21 | `declaration-track:6b5242d113be0e5f311bcbcba027d5d5306d2d8931249ab0226cbd8060cc2254` |
+| 2 | `abbrev` | [Iter.toStringArray](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicIter.lean/declarations/iter-tostringarray.md) | 30 | `declaration-track:4b1bf4a6f8a65d3e03aa0826d74df37567c4fbbe5bd931ba46840eb59b986474` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

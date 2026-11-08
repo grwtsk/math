@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ProvenanceObstructionOccurrence.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ProvenanceObstructionOccurrence.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProvenanceObstructionOccurrence.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProvenanceObstructionOccurrence.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ObstructionOccurrence](../../../../../ComputerScience/AlgorithmsInComputerScience/ProvenanceObstructionOccurrence.lean/declarations/obstructionoccurrence.md) | 12 | `declaration-track:00f07a3d139955c3a592599ba1953dbdad892afee2950c833d11c550cf9c78f5` |
-| 2 | `structure` | [ObstructionProvenance](../../../../../ComputerScience/AlgorithmsInComputerScience/ProvenanceObstructionOccurrence.lean/declarations/obstructionprovenance.md) | 18 | `declaration-track:df7f111853d495aec3671e138d9d25b1afdcbfa46214178df7421cc1c8b15ff8` |
-| 3 | `theorem` | [canonicalization_retains_source_occurrences](../../../../../ComputerScience/AlgorithmsInComputerScience/ProvenanceObstructionOccurrence.lean/declarations/canonicalization-retains-source-occurrences.md) | 23 | `result-track:826f935ffe11fc29cc28fd72b8ff0512a86c15520ac7341bfa5e26fcfb61aa3d` |
+| 1 | `structure` | [ObstructionOccurrence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProvenanceObstructionOccurrence.lean/declarations/obstructionoccurrence.md) | 12 | `declaration-track:00f07a3d139955c3a592599ba1953dbdad892afee2950c833d11c550cf9c78f5` |
+| 2 | `structure` | [ObstructionProvenance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProvenanceObstructionOccurrence.lean/declarations/obstructionprovenance.md) | 18 | `declaration-track:df7f111853d495aec3671e138d9d25b1afdcbfa46214178df7421cc1c8b15ff8` |
+| 3 | `theorem` | [canonicalization_retains_source_occurrences](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProvenanceObstructionOccurrence.lean/declarations/canonicalization-retains-source-occurrences.md) | 23 | `result-track:826f935ffe11fc29cc28fd72b8ff0512a86c15520ac7341bfa5e26fcfb61aa3d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

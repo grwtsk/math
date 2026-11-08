@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AcceptanceDAG.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AcceptanceDAG.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AcceptanceDAG.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AcceptanceDAG.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [acceptance_dag_requires_all_nodes](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AcceptanceDAG.lean/declarations/acceptance-dag-requires-all-nodes.md) | 19 | `result-track:a169420dd98fe6d7fe9dd047a56da8cdb93ba04c9825bf7d0a5ad57b63b112e2` |
-| 2 | `theorem` | [acceptance_dag_requires_no_contracts](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AcceptanceDAG.lean/declarations/acceptance-dag-requires-no-contracts.md) | 24 | `result-track:cea8e92f08ca2260140f7b9cce765477baf9b494b7f1eab6130af14dba680027` |
-| 3 | `theorem` | [acceptance_dag_requires_zeta_specialization](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AcceptanceDAG.lean/declarations/acceptance-dag-requires-zeta-specialization.md) | 29 | `result-track:3d4c23941ffb45a5ac0af8cfce9c5f1bd876ae4547dfd6490749f3d69dd662a4` |
+| 1 | `theorem` | [acceptance_dag_requires_all_nodes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AcceptanceDAG.lean/declarations/acceptance-dag-requires-all-nodes.md) | 19 | `result-track:a169420dd98fe6d7fe9dd047a56da8cdb93ba04c9825bf7d0a5ad57b63b112e2` |
+| 2 | `theorem` | [acceptance_dag_requires_no_contracts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AcceptanceDAG.lean/declarations/acceptance-dag-requires-no-contracts.md) | 24 | `result-track:cea8e92f08ca2260140f7b9cce765477baf9b494b7f1eab6130af14dba680027` |
+| 3 | `theorem` | [acceptance_dag_requires_zeta_specialization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AcceptanceDAG.lean/declarations/acceptance-dag-requires-zeta-specialization.md) | 29 | `result-track:3d4c23941ffb45a5ac0af8cfce9c5f1bd876ae4547dfd6490749f3d69dd662a4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

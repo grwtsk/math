@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/CastNamespacedCastChooseEqPochhammerDiv.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/CastNamespacedCastChooseEqPochhammerDiv.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CastNamespacedCastChooseEqPochhammerDiv.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CastNamespacedCastChooseEqPochhammerDiv.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [cast_choose](../../../../../NumberTheory/ElementaryNumberTheory/CastNamespacedCastChooseEqPochhammerDiv.lean/declarations/cast-choose.md) | 33 | `result-track:b34aaeea387f0fb9cb62cc27fe0f8f51f3e2b9413ce40d411b78c0207d5548da` |
-| 2 | `theorem` | [cast_add_choose](../../../../../NumberTheory/ElementaryNumberTheory/CastNamespacedCastChooseEqPochhammerDiv.lean/declarations/cast-add-choose.md) | 39 | `result-track:a48f2e1cb2fc65d193f1d53ce50ce2edf84b53d0e3f13a6c3e5bd1511cb587dc` |
-| 3 | `theorem` | [cast_choose_eq_pochhammer_div](../../../../../NumberTheory/ElementaryNumberTheory/CastNamespacedCastChooseEqPochhammerDiv.lean/declarations/cast-choose-eq-pochhammer-div.md) | 43 | `result-track:99a5e2724a51e5f7efd89586f66d0619dcf799f023712417b92323bbf31cfaf4` |
-| 4 | `theorem` | [cast_choose_two](../../../../../NumberTheory/ElementaryNumberTheory/CastNamespacedCastChooseEqPochhammerDiv.lean/declarations/cast-choose-two.md) | 49 | `result-track:d8956f41f5b851161db6ee3cd6bb926c108eb992e8f61c9e4c67af8fa3c1b1dc` |
+| 1 | `theorem` | [cast_choose](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CastNamespacedCastChooseEqPochhammerDiv.lean/declarations/cast-choose.md) | 33 | `result-track:b34aaeea387f0fb9cb62cc27fe0f8f51f3e2b9413ce40d411b78c0207d5548da` |
+| 2 | `theorem` | [cast_add_choose](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CastNamespacedCastChooseEqPochhammerDiv.lean/declarations/cast-add-choose.md) | 39 | `result-track:a48f2e1cb2fc65d193f1d53ce50ce2edf84b53d0e3f13a6c3e5bd1511cb587dc` |
+| 3 | `theorem` | [cast_choose_eq_pochhammer_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CastNamespacedCastChooseEqPochhammerDiv.lean/declarations/cast-choose-eq-pochhammer-div.md) | 43 | `result-track:99a5e2724a51e5f7efd89586f66d0619dcf799f023712417b92323bbf31cfaf4` |
+| 4 | `theorem` | [cast_choose_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CastNamespacedCastChooseEqPochhammerDiv.lean/declarations/cast-choose-two.md) | 49 | `result-track:d8956f41f5b851161db6ee3cd6bb926c108eb992e8f61c9e4c67af8fa3c1b1dc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

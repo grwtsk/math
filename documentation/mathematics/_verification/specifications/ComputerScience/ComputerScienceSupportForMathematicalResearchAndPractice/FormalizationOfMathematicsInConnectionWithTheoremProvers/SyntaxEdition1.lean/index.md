@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SyntaxEdition1.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SyntaxEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SyntaxEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SyntaxEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [Expr](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SyntaxEdition1.lean/declarations/expr.md) | 23 | `declaration-track:c927de044c9dae8a25b3923b564da682c305646545ba0d71772095118f5ff402` |
-| 2 | `def` | [e](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SyntaxEdition1.lean/declarations/e.md) | 32 | `declaration-track:082d49aef8c8023c6b17953acd0031dba5e3e38b7545d5eca34a2bcb3261321f` |
-| 3 | `def` | [ln](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SyntaxEdition1.lean/declarations/ln.md) | 36 | `declaration-track:5f8646ede93c4b8b8c6229831e39f4466e0d390dbc88f0dbc5490ebbeaff7fe5` |
+| 1 | `inductive` | [Expr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SyntaxEdition1.lean/declarations/expr.md) | 23 | `declaration-track:c927de044c9dae8a25b3923b564da682c305646545ba0d71772095118f5ff402` |
+| 2 | `def` | [e](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SyntaxEdition1.lean/declarations/e.md) | 32 | `declaration-track:082d49aef8c8023c6b17953acd0031dba5e3e38b7545d5eca34a2bcb3261321f` |
+| 3 | `def` | [ln](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SyntaxEdition1.lean/declarations/ln.md) | 36 | `declaration-track:5f8646ede93c4b8b8c6229831e39f4466e0d390dbc88f0dbc5490ebbeaff7fe5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SqueezeScopeNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SqueezeScopeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SqueezeScopeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SqueezeScopeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `syntax` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SqueezeScopeNamespaced.lean/declarations/syntax.md) | 32 | `declaration-track:28e2426511c55ba1ecc31f82c18ccf3fafd26dd77cc19c66b015090ef9174390` |
-| 2 | `syntax` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SqueezeScopeNamespaced.lean/declarations/syntax-source-edition-2.md) | 38 | `declaration-track:b9849924578a9514525b47200513594738a313cb3fd273058ca5d75ae1158f09` |
-| 3 | `macro` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SqueezeScopeNamespaced.lean/declarations/macro.md) | 63 | `declaration-track:547c935f47db417d0d8500e96216038cbd3f8d84d651c56a524b55b585f61e4d` |
-| 4 | `initialize` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SqueezeScopeNamespaced.lean/declarations/initialize.md) | 82 | `declaration-track:bbebdf8ea92a6bab4c59b9530cf884bc727570c78274950538a67b0dfd5031d0` |
-| 5 | `elab_rules` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SqueezeScopeNamespaced.lean/declarations/elab-rules.md) | 84 | `declaration-track:2a8e42003717bebead206d48ba2a241fe93d5774350a0308b68a28e3a67a4c9a` |
-| 6 | `elab_rules` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SqueezeScopeNamespaced.lean/declarations/elab-rules-source-edition-2.md) | 101 | `declaration-track:403045f33404faf858fe60ab2f6e2f6c8863b73318dd435080334bed0145c236` |
+| 1 | `syntax` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SqueezeScopeNamespaced.lean/declarations/syntax.md) | 32 | `declaration-track:28e2426511c55ba1ecc31f82c18ccf3fafd26dd77cc19c66b015090ef9174390` |
+| 2 | `syntax` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SqueezeScopeNamespaced.lean/declarations/syntax-source-edition-2.md) | 38 | `declaration-track:b9849924578a9514525b47200513594738a313cb3fd273058ca5d75ae1158f09` |
+| 3 | `macro` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SqueezeScopeNamespaced.lean/declarations/macro.md) | 63 | `declaration-track:547c935f47db417d0d8500e96216038cbd3f8d84d651c56a524b55b585f61e4d` |
+| 4 | `initialize` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SqueezeScopeNamespaced.lean/declarations/initialize.md) | 82 | `declaration-track:bbebdf8ea92a6bab4c59b9530cf884bc727570c78274950538a67b0dfd5031d0` |
+| 5 | `elab_rules` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SqueezeScopeNamespaced.lean/declarations/elab-rules.md) | 84 | `declaration-track:2a8e42003717bebead206d48ba2a241fe93d5774350a0308b68a28e3a67a4c9a` |
+| 6 | `elab_rules` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SqueezeScopeNamespaced.lean/declarations/elab-rules-source-edition-2.md) | 101 | `declaration-track:403045f33404faf858fe60ab2f6e2f6c8863b73318dd435080334bed0145c236` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/NontrivialNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/NontrivialNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NontrivialNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NontrivialNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [nontrivial_of_algebraMap_injective_of_isDomain](../../../../CommutativeAlgebra/NontrivialNamespaced.lean/declarations/nontrivial-of-algebramap-injective-of-isdomain.md) | 32 | `result-track:d57abc637b4a8fa834a3694eb56ef9b3064caaf09396046cc17a4b013134306c` |
+| 1 | `theorem` | [nontrivial_of_algebraMap_injective_of_isDomain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NontrivialNamespaced.lean/declarations/nontrivial-of-algebramap-injective-of-isdomain.md) | 32 | `result-track:d57abc637b4a8fa834a3694eb56ef9b3064caaf09396046cc17a4b013134306c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

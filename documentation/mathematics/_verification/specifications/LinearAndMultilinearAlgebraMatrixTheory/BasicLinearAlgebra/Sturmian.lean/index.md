@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Sturmian.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Sturmian.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Sturmian.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Sturmian.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.LinearAlgebra.SchrodingerTransfer`](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SchrodingerTransfer.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.LinearAlgebra.SchrodingerTransfer`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SchrodingerTransfer.lean/index.md) — import line 5; pinned internal source present.
 - `Mathlib.Algebra.Order.Floor.Ring` — import line 6; external provider; requires a separately pinned dependency.
 - `Mathlib.LinearAlgebra.Matrix.Trace` — import line 7; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 8; external provider; requires a separately pinned dependency.
@@ -60,18 +60,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [bit](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Sturmian.lean/declarations/bit.md) | 19 | `declaration-track:6ae959d541d3ad51b623e8ea851b42ece1b6edb40d9949658911862f69f6f598` |
-| 2 | `def` | [potential](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Sturmian.lean/declarations/potential.md) | 22 | `declaration-track:0f0fdc31262763cbf6470b236ac9f21cc27dcbb08cebd35206f8d007b587bcb8` |
-| 3 | `def` | [transfer](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Sturmian.lean/declarations/transfer.md) | 24 | `declaration-track:d947db0da63ef3cd360c4627e3eb62d339dac58651d87c63d0f9cca8c53b1c34` |
-| 4 | `theorem` | [bit_zero_or_one](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Sturmian.lean/declarations/bit-zero-or-one.md) | 27 | `result-track:8a8f1be7b4919460574ec23c9bb9d80fd50443bc6c898f6e660389ebf78bbe5e` |
-| 5 | `theorem` | [potential_between_offsets](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Sturmian.lean/declarations/potential-between-offsets.md) | 31 | `result-track:48aa6be609ab12577048d694448f9beb0dd43b5fac94df2d28a360bd304317dd` |
-| 6 | `theorem` | [comparison_offset_width](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Sturmian.lean/declarations/comparison-offset-width.md) | 37 | `result-track:b137711093729c4204e3329165adb4bbb1af4fb240520e3830bfb5239089ad66` |
-| 7 | `theorem` | [abs_potential_sub_le](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Sturmian.lean/declarations/abs-potential-sub-le.md) | 42 | `result-track:0375b35eda44e8a7be170aab7cbd1809918faff92ecced04e9808824a4959df5` |
-| 8 | `theorem` | [potential_zero](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Sturmian.lean/declarations/potential-zero.md) | 46 | `result-track:31fb253636461bcbe05ca80f3cda13f336935d2f4d82abf6b11a44a3a2204cc1` |
-| 9 | `theorem` | [zero_coupling_transfer](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Sturmian.lean/declarations/zero-coupling-transfer.md) | 49 | `result-track:f003eb7e2f7e7ddf52d2ae8b68ecb9e923950d7e08f0334efa8087b47e670dae` |
-| 10 | `theorem` | [recurrence_iff_transfer](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Sturmian.lean/declarations/recurrence-iff-transfer.md) | 53 | `result-track:bac6760118709f9775c5c61e56d15d706930de92ec8ef6ba4fd64c17d5b08d18` |
-| 11 | `theorem` | [det_transfer](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Sturmian.lean/declarations/det-transfer.md) | 60 | `result-track:faa79c65f22fc4cc434ee1c24a0101ad1f23596f953aab0c45fef36d049e4a41` |
-| 12 | `theorem` | [zero_coupling_trace_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Sturmian.lean/declarations/zero-coupling-trace-iff.md) | 66 | `result-track:c33e27d23eb07bc3f7fb33e4b9fdb298560d762cf3aaacb3597c11a86b0c6b04` |
+| 1 | `def` | [bit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Sturmian.lean/declarations/bit.md) | 19 | `declaration-track:6ae959d541d3ad51b623e8ea851b42ece1b6edb40d9949658911862f69f6f598` |
+| 2 | `def` | [potential](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Sturmian.lean/declarations/potential.md) | 22 | `declaration-track:0f0fdc31262763cbf6470b236ac9f21cc27dcbb08cebd35206f8d007b587bcb8` |
+| 3 | `def` | [transfer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Sturmian.lean/declarations/transfer.md) | 24 | `declaration-track:d947db0da63ef3cd360c4627e3eb62d339dac58651d87c63d0f9cca8c53b1c34` |
+| 4 | `theorem` | [bit_zero_or_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Sturmian.lean/declarations/bit-zero-or-one.md) | 27 | `result-track:8a8f1be7b4919460574ec23c9bb9d80fd50443bc6c898f6e660389ebf78bbe5e` |
+| 5 | `theorem` | [potential_between_offsets](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Sturmian.lean/declarations/potential-between-offsets.md) | 31 | `result-track:48aa6be609ab12577048d694448f9beb0dd43b5fac94df2d28a360bd304317dd` |
+| 6 | `theorem` | [comparison_offset_width](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Sturmian.lean/declarations/comparison-offset-width.md) | 37 | `result-track:b137711093729c4204e3329165adb4bbb1af4fb240520e3830bfb5239089ad66` |
+| 7 | `theorem` | [abs_potential_sub_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Sturmian.lean/declarations/abs-potential-sub-le.md) | 42 | `result-track:0375b35eda44e8a7be170aab7cbd1809918faff92ecced04e9808824a4959df5` |
+| 8 | `theorem` | [potential_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Sturmian.lean/declarations/potential-zero.md) | 46 | `result-track:31fb253636461bcbe05ca80f3cda13f336935d2f4d82abf6b11a44a3a2204cc1` |
+| 9 | `theorem` | [zero_coupling_transfer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Sturmian.lean/declarations/zero-coupling-transfer.md) | 49 | `result-track:f003eb7e2f7e7ddf52d2ae8b68ecb9e923950d7e08f0334efa8087b47e670dae` |
+| 10 | `theorem` | [recurrence_iff_transfer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Sturmian.lean/declarations/recurrence-iff-transfer.md) | 53 | `result-track:bac6760118709f9775c5c61e56d15d706930de92ec8ef6ba4fd64c17d5b08d18` |
+| 11 | `theorem` | [det_transfer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Sturmian.lean/declarations/det-transfer.md) | 60 | `result-track:faa79c65f22fc4cc434ee1c24a0101ad1f23596f953aab0c45fef36d049e4a41` |
+| 12 | `theorem` | [zero_coupling_trace_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Sturmian.lean/declarations/zero-coupling-trace-iff.md) | 66 | `result-track:c33e27d23eb07bc3f7fb33e4b9fdb298560d762cf3aaacb3597c11a86b0c6b04` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

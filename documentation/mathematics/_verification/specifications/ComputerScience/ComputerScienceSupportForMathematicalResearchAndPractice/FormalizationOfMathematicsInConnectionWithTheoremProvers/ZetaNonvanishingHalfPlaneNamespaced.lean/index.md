@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ZetaNonvanishingHalfPlaneNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ZetaNonvanishingHalfPlaneNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ZetaNonvanishingHalfPlaneNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ZetaNonvanishingHalfPlaneNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [zetaComplexHalfPlane_mul_mobiusDirichletSeries](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ZetaNonvanishingHalfPlaneNamespaced.lean/declarations/zetacomplexhalfplane-mul-mobiusdirichletseries.md) | 22 | `result-track:54416559aba7f29609724aec26384ee9c92932a45544f4230eda1743106293ee` |
-| 2 | `theorem` | [zeta_mul_mobiusDirichletSeries](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ZetaNonvanishingHalfPlaneNamespaced.lean/declarations/zeta-mul-mobiusdirichletseries.md) | 40 | `result-track:61b7c6e88cd5ad5260e5f9a48df5ed64e651a2a4a6b059b3d13900bb98e9d7ff` |
-| 3 | `theorem` | [zetaComplexHalfPlane_ne_zero](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ZetaNonvanishingHalfPlaneNamespaced.lean/declarations/zetacomplexhalfplane-ne-zero.md) | 54 | `result-track:76812f42d60af40b2efaedfaa5129b5566e28e2925f2680021f847766810abe7` |
+| 1 | `theorem` | [zetaComplexHalfPlane_mul_mobiusDirichletSeries](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ZetaNonvanishingHalfPlaneNamespaced.lean/declarations/zetacomplexhalfplane-mul-mobiusdirichletseries.md) | 22 | `result-track:54416559aba7f29609724aec26384ee9c92932a45544f4230eda1743106293ee` |
+| 2 | `theorem` | [zeta_mul_mobiusDirichletSeries](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ZetaNonvanishingHalfPlaneNamespaced.lean/declarations/zeta-mul-mobiusdirichletseries.md) | 40 | `result-track:61b7c6e88cd5ad5260e5f9a48df5ed64e651a2a4a6b059b3d13900bb98e9d7ff` |
+| 3 | `theorem` | [zetaComplexHalfPlane_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ZetaNonvanishingHalfPlaneNamespaced.lean/declarations/zetacomplexhalfplane-ne-zero.md) | 54 | `result-track:76812f42d60af40b2efaedfaa5129b5566e28e2925f2680021f847766810abe7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

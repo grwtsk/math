@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/TorNamespacedTorMapApp.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/TorNamespacedTorMapApp.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/TorNamespacedTorMapApp.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/TorNamespacedTorMapApp.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Tor](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/TorNamespacedTorMapApp.lean/declarations/tor.md) | 51 | `declaration-track:5ddd9d6685c248eb052e05cdf60b8a34cf468a795d97dc48f314e032e9a62d51` |
-| 2 | `def` | [Tor'](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/TorNamespacedTorMapApp.lean/declarations/tor-source-edition-2.md) | 59 | `declaration-track:a4c3978240cf0884f70e4ecfc332375e08f6b9da786588c649ab4fef95eb6f31` |
-| 3 | `lemma` | [Tor'_map_app'](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/TorNamespacedTorMapApp.lean/declarations/tor-map-app.md) | 69 | `result-track:3cdd81522dff0f064a804dec9c0a33e4818ecbc3d2c68b3623dabf639fe08f43` |
-| 4 | `lemma` | [Tor'_obj_map](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/TorNamespacedTorMapApp.lean/declarations/tor-obj-map.md) | 76 | `result-track:7948af5560bfb495c36981d1c3b55029de39a804ba17d5a8a8f8b392ba6fcf50` |
-| 5 | `def` | [torSuccOfProjective](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/TorNamespacedTorMapApp.lean/declarations/torsuccofprojective.md) | 82 | `declaration-track:2d155b8465ff07996c890b72cb7f834c4661ef8138fe9c46d50ea20efd2cc6a5` |
-| 6 | `def` | [tor'SuccOfProjective](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/TorNamespacedTorMapApp.lean/declarations/tor-succofprojective.md) | 88 | `declaration-track:64a29ec8917f48e40d54ebf2d104e20bc89c08de401fdcde6896740cf0173868` |
+| 1 | `def` | [Tor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/TorNamespacedTorMapApp.lean/declarations/tor.md) | 51 | `declaration-track:5ddd9d6685c248eb052e05cdf60b8a34cf468a795d97dc48f314e032e9a62d51` |
+| 2 | `def` | [Tor'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/TorNamespacedTorMapApp.lean/declarations/tor-source-edition-2.md) | 59 | `declaration-track:a4c3978240cf0884f70e4ecfc332375e08f6b9da786588c649ab4fef95eb6f31` |
+| 3 | `lemma` | [Tor'_map_app'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/TorNamespacedTorMapApp.lean/declarations/tor-map-app.md) | 69 | `result-track:3cdd81522dff0f064a804dec9c0a33e4818ecbc3d2c68b3623dabf639fe08f43` |
+| 4 | `lemma` | [Tor'_obj_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/TorNamespacedTorMapApp.lean/declarations/tor-obj-map.md) | 76 | `result-track:7948af5560bfb495c36981d1c3b55029de39a804ba17d5a8a8f8b392ba6fcf50` |
+| 5 | `def` | [torSuccOfProjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/TorNamespacedTorMapApp.lean/declarations/torsuccofprojective.md) | 82 | `declaration-track:2d155b8465ff07996c890b72cb7f834c4661ef8138fe9c46d50ea20efd2cc6a5` |
+| 6 | `def` | [tor'SuccOfProjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/TorNamespacedTorMapApp.lean/declarations/tor-succofprojective.md) | 88 | `declaration-track:64a29ec8917f48e40d54ebf2d104e20bc89c08de401fdcde6896740cf0173868` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

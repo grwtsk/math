@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidAssociated.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidAssociated.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidAssociated.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidAssociated.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [instIsOrderedMonoid](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidAssociated.lean/declarations/instisorderedmonoid.md) | 30 | `declaration-track:b9a0e01a47030497965dc3250bd73fd793fb9e8c7900df002a6aadf26882eb41` |
-| 2 | `instance` | [(anonymous)](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidAssociated.lean/declarations/instance.md) | 33 | `declaration-track:176dcc9ebb81da6b6f0be040091313485a9bcf49eb2ca4eb79c0e00b20969e88` |
+| 1 | `instance` | [instIsOrderedMonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidAssociated.lean/declarations/instisorderedmonoid.md) | 30 | `declaration-track:b9a0e01a47030497965dc3250bd73fd793fb9e8c7900df002a6aadf26882eb41` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidAssociated.lean/declarations/instance.md) | 33 | `declaration-track:176dcc9ebb81da6b6f0be040091313485a9bcf49eb2ca4eb79c0e00b20969e88` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

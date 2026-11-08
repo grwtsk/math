@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeOption.lean/index.md) · [Full source](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeOption.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeOption.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeOption.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeOption.lean/declarations/instance.md) | 25 | `declaration-track:e97353d1e112e551b149ce26ddea32a62f9fd2e8a7df2223ab49b571ed47420a` |
-| 2 | `theorem` | [univ_option](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeOption.lean/declarations/univ-option.md) | 28 | `result-track:7795f3f401fed56e3759d3707e8d26982435597d026ed2809cd63809d509815c` |
-| 3 | `theorem` | [Fintype.card_option](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeOption.lean/declarations/fintype-card-option.md) | 32 | `result-track:53ce9e13769cbf267f6cfb88f6254eb30ed99c5dfc71c5c077385ced7b200b52` |
-| 4 | `def` | [fintypeOfOption](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeOption.lean/declarations/fintypeofoption.md) | 37 | `declaration-track:58bdfead269957d65ff2d779492597b62db6b87b93474cb21bae8a15dd61d2f4` |
-| 5 | `def` | [fintypeOfOptionEquiv](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeOption.lean/declarations/fintypeofoptionequiv.md) | 42 | `declaration-track:41f567578897d9b4d6cb05689c1787ecd3e719508239407aaec5f8c6863fd2b1` |
-| 6 | `def` | [truncRecEmptyOption](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeOption.lean/declarations/truncrecemptyoption.md) | 50 | `declaration-track:222960e9f2b499df0c102fe2707637ca4bd986d9a3721ab65ee6c488763283ed` |
-| 7 | `theorem` | [induction_empty_option](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeOption.lean/declarations/induction-empty-option.md) | 80 | `result-track:44fff0c6310a5c8eb98478a7f89867bfd75b1b7f842fd8123524fe7f6aac3543` |
-| 8 | `theorem` | [Finite.induction_empty_option](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeOption.lean/declarations/finite-induction-empty-option.md) | 99 | `result-track:3eedff425e84afb5c8c3a12e6116e488a6ed1beb3f822a9993d3a9fab811668f` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeOption.lean/declarations/instance.md) | 25 | `declaration-track:e97353d1e112e551b149ce26ddea32a62f9fd2e8a7df2223ab49b571ed47420a` |
+| 2 | `theorem` | [univ_option](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeOption.lean/declarations/univ-option.md) | 28 | `result-track:7795f3f401fed56e3759d3707e8d26982435597d026ed2809cd63809d509815c` |
+| 3 | `theorem` | [Fintype.card_option](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeOption.lean/declarations/fintype-card-option.md) | 32 | `result-track:53ce9e13769cbf267f6cfb88f6254eb30ed99c5dfc71c5c077385ced7b200b52` |
+| 4 | `def` | [fintypeOfOption](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeOption.lean/declarations/fintypeofoption.md) | 37 | `declaration-track:58bdfead269957d65ff2d779492597b62db6b87b93474cb21bae8a15dd61d2f4` |
+| 5 | `def` | [fintypeOfOptionEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeOption.lean/declarations/fintypeofoptionequiv.md) | 42 | `declaration-track:41f567578897d9b4d6cb05689c1787ecd3e719508239407aaec5f8c6863fd2b1` |
+| 6 | `def` | [truncRecEmptyOption](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeOption.lean/declarations/truncrecemptyoption.md) | 50 | `declaration-track:222960e9f2b499df0c102fe2707637ca4bd986d9a3721ab65ee6c488763283ed` |
+| 7 | `theorem` | [induction_empty_option](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeOption.lean/declarations/induction-empty-option.md) | 80 | `result-track:44fff0c6310a5c8eb98478a7f89867bfd75b1b7f842fd8123524fe7f6aac3543` |
+| 8 | `theorem` | [Finite.induction_empty_option](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeOption.lean/declarations/finite-induction-empty-option.md) | 99 | `result-track:3eedff425e84afb5c8c3a12e6116e488a6ed1beb3f822a9993d3a9fab811668f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

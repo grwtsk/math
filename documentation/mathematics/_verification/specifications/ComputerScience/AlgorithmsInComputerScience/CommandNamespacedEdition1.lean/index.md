@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/CommandNamespacedEdition1.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/CommandNamespacedEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CommandNamespacedEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CommandNamespacedEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ByteRange](../../../../../ComputerScience/AlgorithmsInComputerScience/CommandNamespacedEdition1.lean/declarations/byterange.md) | 17 | `declaration-track:14f6a57d96f50d0c613986fe09d188294fb38e5c33631f4469f1a6a114a5ef9b` |
-| 2 | `def` | [ByteRange.Valid](../../../../../ComputerScience/AlgorithmsInComputerScience/CommandNamespacedEdition1.lean/declarations/byterange-valid.md) | 22 | `declaration-track:fe9692892b3cc2491918c83e767bbd92138d3e751d6bc1289173a51b73396aca` |
-| 3 | `structure` | [LineColumnRange](../../../../../ComputerScience/AlgorithmsInComputerScience/CommandNamespacedEdition1.lean/declarations/linecolumnrange.md) | 25 | `declaration-track:cac33ac715614ee3344e39ce99bd8d73aed1d771984070b2f6e200ff87fe906b` |
-| 4 | `inductive` | [CommandAuthority](../../../../../ComputerScience/AlgorithmsInComputerScience/CommandNamespacedEdition1.lean/declarations/commandauthority.md) | 32 | `declaration-track:8cbe0a48b3bd12e6442846fdc27a2de3938f7f41ad2c3aac144bbb45cf8c7930` |
-| 5 | `structure` | [CommandRecord](../../../../../ComputerScience/AlgorithmsInComputerScience/CommandNamespacedEdition1.lean/declarations/commandrecord.md) | 40 | `declaration-track:36f3a7696606101b487b2e7c9c89ee0e2eb3fdfaa720c21a1d8a7059bcde4f24` |
+| 1 | `structure` | [ByteRange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CommandNamespacedEdition1.lean/declarations/byterange.md) | 17 | `declaration-track:14f6a57d96f50d0c613986fe09d188294fb38e5c33631f4469f1a6a114a5ef9b` |
+| 2 | `def` | [ByteRange.Valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CommandNamespacedEdition1.lean/declarations/byterange-valid.md) | 22 | `declaration-track:fe9692892b3cc2491918c83e767bbd92138d3e751d6bc1289173a51b73396aca` |
+| 3 | `structure` | [LineColumnRange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CommandNamespacedEdition1.lean/declarations/linecolumnrange.md) | 25 | `declaration-track:cac33ac715614ee3344e39ce99bd8d73aed1d771984070b2f6e200ff87fe906b` |
+| 4 | `inductive` | [CommandAuthority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CommandNamespacedEdition1.lean/declarations/commandauthority.md) | 32 | `declaration-track:8cbe0a48b3bd12e6442846fdc27a2de3938f7f41ad2c3aac144bbb45cf8c7930` |
+| 5 | `structure` | [CommandRecord](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CommandNamespacedEdition1.lean/declarations/commandrecord.md) | 40 | `declaration-track:36f3a7696606101b487b2e7c9c89ee0e2eb3fdfaa720c21a1d8a7059bcde4f24` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

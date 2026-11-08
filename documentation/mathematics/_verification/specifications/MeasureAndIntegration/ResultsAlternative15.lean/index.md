@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ResultsAlternative15.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ResultsAlternative15.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ResultsAlternative15.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ResultsAlternative15.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [monomial_laplace_integrable](../../../../MeasureAndIntegration/ResultsAlternative15.lean/declarations/monomial-laplace-integrable.md) | 24 | `result-track:7f5d1148744211af4a96a9a419ea00715855e7495cd26cf599cffbdf048117f0` |
-| 2 | `theorem` | [monomial_laplace_integral](../../../../MeasureAndIntegration/ResultsAlternative15.lean/declarations/monomial-laplace-integral.md) | 31 | `result-track:092c73b3a9ba2968387333443d691f5629355b18b56c08e0b8c20ba95004130a` |
-| 3 | `theorem` | [filter_weighted_laplace_integrable](../../../../MeasureAndIntegration/ResultsAlternative15.lean/declarations/filter-weighted-laplace-integrable.md) | 44 | `result-track:c94bffb8b52e037cbeb3fe182db11fee3442b2dd404aeb885b146c860a6f5514` |
-| 4 | `theorem` | [filter_weighted_laplace_integral](../../../../MeasureAndIntegration/ResultsAlternative15.lean/declarations/filter-weighted-laplace-integral.md) | 58 | `result-track:f96682d6aab5603650dfb0e5bfa404271fffa2281ff6e2c2de7d3da0de574c6d` |
-| 5 | `theorem` | [filter_laplace_transform](../../../../MeasureAndIntegration/ResultsAlternative15.lean/declarations/filter-laplace-transform.md) | 88 | `result-track:5412c03780b005714b93e4d4f5055036ff24612e3c95f6c01d323e4674349403` |
-| 6 | `theorem` | [filter_laplace_integrable](../../../../MeasureAndIntegration/ResultsAlternative15.lean/declarations/filter-laplace-integrable.md) | 100 | `result-track:e1e2fc0e6c18ad2f9911031147007ebf5c56a9c03dcb531624e4b075c5133644` |
-| 7 | `theorem` | [filter_first_moment_integrable](../../../../MeasureAndIntegration/ResultsAlternative15.lean/declarations/filter-first-moment-integrable.md) | 105 | `result-track:c928a5cf57c1061823d6731c592284c4b898d6818fc8aa96e8a9d9869906f936` |
-| 8 | `theorem` | [filter_zeroth_moment_zero](../../../../MeasureAndIntegration/ResultsAlternative15.lean/declarations/filter-zeroth-moment-zero.md) | 111 | `result-track:899d32625fe6f93e7f85f254348fc0a9ac5c5c0617db193081e95ce951505aec` |
-| 9 | `theorem` | [filter_first_moment_zero](../../../../MeasureAndIntegration/ResultsAlternative15.lean/declarations/filter-first-moment-zero.md) | 118 | `result-track:a586db565786b2700cf723cc20a8835b601318cd5bfc26c4a7b0802ce284af7c` |
-| 10 | `theorem` | [filter_laplace_transform_pos](../../../../MeasureAndIntegration/ResultsAlternative15.lean/declarations/filter-laplace-transform-pos.md) | 128 | `result-track:bdc50ff58307eb0b3af5487e9ab7d10b26cecc5cb7022f0e4b1330948809556b` |
+| 1 | `theorem` | [monomial_laplace_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ResultsAlternative15.lean/declarations/monomial-laplace-integrable.md) | 24 | `result-track:7f5d1148744211af4a96a9a419ea00715855e7495cd26cf599cffbdf048117f0` |
+| 2 | `theorem` | [monomial_laplace_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ResultsAlternative15.lean/declarations/monomial-laplace-integral.md) | 31 | `result-track:092c73b3a9ba2968387333443d691f5629355b18b56c08e0b8c20ba95004130a` |
+| 3 | `theorem` | [filter_weighted_laplace_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ResultsAlternative15.lean/declarations/filter-weighted-laplace-integrable.md) | 44 | `result-track:c94bffb8b52e037cbeb3fe182db11fee3442b2dd404aeb885b146c860a6f5514` |
+| 4 | `theorem` | [filter_weighted_laplace_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ResultsAlternative15.lean/declarations/filter-weighted-laplace-integral.md) | 58 | `result-track:f96682d6aab5603650dfb0e5bfa404271fffa2281ff6e2c2de7d3da0de574c6d` |
+| 5 | `theorem` | [filter_laplace_transform](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ResultsAlternative15.lean/declarations/filter-laplace-transform.md) | 88 | `result-track:5412c03780b005714b93e4d4f5055036ff24612e3c95f6c01d323e4674349403` |
+| 6 | `theorem` | [filter_laplace_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ResultsAlternative15.lean/declarations/filter-laplace-integrable.md) | 100 | `result-track:e1e2fc0e6c18ad2f9911031147007ebf5c56a9c03dcb531624e4b075c5133644` |
+| 7 | `theorem` | [filter_first_moment_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ResultsAlternative15.lean/declarations/filter-first-moment-integrable.md) | 105 | `result-track:c928a5cf57c1061823d6731c592284c4b898d6818fc8aa96e8a9d9869906f936` |
+| 8 | `theorem` | [filter_zeroth_moment_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ResultsAlternative15.lean/declarations/filter-zeroth-moment-zero.md) | 111 | `result-track:899d32625fe6f93e7f85f254348fc0a9ac5c5c0617db193081e95ce951505aec` |
+| 9 | `theorem` | [filter_first_moment_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ResultsAlternative15.lean/declarations/filter-first-moment-zero.md) | 118 | `result-track:a586db565786b2700cf723cc20a8835b601318cd5bfc26c4a7b0802ce284af7c` |
+| 10 | `theorem` | [filter_laplace_transform_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ResultsAlternative15.lean/declarations/filter-laplace-transform-pos.md) | 128 | `result-track:bdc50ff58307eb0b3af5487e9ab7d10b26cecc5cb7022f0e4b1330948809556b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

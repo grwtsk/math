@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/WeilSpecializationNamespaced.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/WeilSpecializationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/WeilSpecializationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/WeilSpecializationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [WeilTraceCorrespondence](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/WeilSpecializationNamespaced.lean/declarations/weiltracecorrespondence.md) | 26 | `declaration-track:27f161a5c4bd33cd9ed258a3b2157d787fa221b77d409fdee37dbd344a8ad329` |
-| 2 | `theorem` | [weilFunctional_invariant_of_exactCompensation](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/WeilSpecializationNamespaced.lean/declarations/weilfunctional-invariant-of-exactcompensation.md) | 57 | `result-track:bea9a1758e1c8d6ec29c80f5cc4c6720f84849c8ba1fe43d25d252f64b19eac4` |
+| 1 | `structure` | [WeilTraceCorrespondence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/WeilSpecializationNamespaced.lean/declarations/weiltracecorrespondence.md) | 26 | `declaration-track:27f161a5c4bd33cd9ed258a3b2157d787fa221b77d409fdee37dbd344a8ad329` |
+| 2 | `theorem` | [weilFunctional_invariant_of_exactCompensation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/WeilSpecializationNamespaced.lean/declarations/weilfunctional-invariant-of-exactcompensation.md) | 57 | `result-track:bea9a1758e1c8d6ec29c80f5cc4c6720f84849c8ba1fe43d25d252f64b19eac4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

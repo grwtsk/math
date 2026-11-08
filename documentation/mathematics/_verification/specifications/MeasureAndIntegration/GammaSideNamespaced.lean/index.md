@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/GammaSideNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/GammaSideNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GammaSideNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GammaSideNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,17 +62,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [rightHalfPlane](../../../../MeasureAndIntegration/GammaSideNamespaced.lean/declarations/righthalfplane.md) | 35 | `declaration-track:ad6806c174ff9a9f3104e56091b64bcd97fa1cc52d33e652cb2ea7f3e705dd5f` |
-| 2 | `lemma` | [isOpen_rightHalfPlane](../../../../MeasureAndIntegration/GammaSideNamespaced.lean/declarations/isopen-righthalfplane.md) | 37 | `result-track:1559ec626bdece3c00596cf0c4630b86169f2ba0b4f0aeec23a88b12d0838ef9` |
-| 3 | `lemma` | [Gamma_half_differentiableAt](../../../../MeasureAndIntegration/GammaSideNamespaced.lean/declarations/gamma-half-differentiableat.md) | 40 | `result-track:6ed6cb55abad599289d6f7d35ae374436fcaa37527dd80932e4cf9f1a655e8b2` |
-| 4 | `lemma` | [Gammaℝ_differentiableOn](../../../../MeasureAndIntegration/GammaSideNamespaced.lean/declarations/gamma-differentiableon.md) | 48 | `result-track:ae33280cc993c966e43bf37d5000d1035323b93fa4df14c363df8495e38ade87` |
-| 5 | `lemma` | [Gammaℝ_analyticOnNhd](../../../../MeasureAndIntegration/GammaSideNamespaced.lean/declarations/gamma-analyticonnhd.md) | 60 | `result-track:6982c466909564297aba3ea0ef583d314f361702ff278c0beab799a4496717da` |
-| 6 | `lemma` | [logDeriv_Gammaℝ_differentiableOn](../../../../MeasureAndIntegration/GammaSideNamespaced.lean/declarations/logderiv-gamma-differentiableon.md) | 64 | `result-track:c1dcb706bcce8bea972ddf8d0a334a7bf0cd40c435ed9cf9affef537f0c9fc90` |
-| 7 | `theorem` | [logDeriv_Gammaℝ](../../../../MeasureAndIntegration/GammaSideNamespaced.lean/declarations/logderiv-gamma.md) | 73 | `result-track:8b06042e5b7ce01083cd0f962a8f9b1741d5cf8d430783515d32c0f65afccb59` |
-| 8 | `theorem` | [re_logDeriv_Gammaℝ_half](../../../../MeasureAndIntegration/GammaSideNamespaced.lean/declarations/re-logderiv-gamma-half.md) | 115 | `result-track:405b2b6e2c041b4d632231424e59e21edf2a82a625040449b443f42246c59838` |
-| 9 | `theorem` | [gamma_side](../../../../MeasureAndIntegration/GammaSideNamespaced.lean/declarations/gamma-side.md) | 129 | `result-track:0b2acefaa5f902067b2dccc8e47b0134acd0104935186f13a9e002683d01bda3` |
-| 10 | `theorem` | [mu_continuous](../../../../MeasureAndIntegration/GammaSideNamespaced.lean/declarations/mu-continuous.md) | 169 | `result-track:48795cf6e9bdfb5aeb3c440568596f85263f77e2acaa67ead663f5c81dd2c0f4` |
-| 11 | `theorem` | [mu_le_log](../../../../MeasureAndIntegration/GammaSideNamespaced.lean/declarations/mu-le-log.md) | 173 | `result-track:a3693acccd0cd7edccaef1ee4f2c199b3f122e7e24161cfaedcd66e01de76d63` |
+| 1 | `def` | [rightHalfPlane](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GammaSideNamespaced.lean/declarations/righthalfplane.md) | 35 | `declaration-track:ad6806c174ff9a9f3104e56091b64bcd97fa1cc52d33e652cb2ea7f3e705dd5f` |
+| 2 | `lemma` | [isOpen_rightHalfPlane](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GammaSideNamespaced.lean/declarations/isopen-righthalfplane.md) | 37 | `result-track:1559ec626bdece3c00596cf0c4630b86169f2ba0b4f0aeec23a88b12d0838ef9` |
+| 3 | `lemma` | [Gamma_half_differentiableAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GammaSideNamespaced.lean/declarations/gamma-half-differentiableat.md) | 40 | `result-track:6ed6cb55abad599289d6f7d35ae374436fcaa37527dd80932e4cf9f1a655e8b2` |
+| 4 | `lemma` | [Gammaℝ_differentiableOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GammaSideNamespaced.lean/declarations/gamma-differentiableon.md) | 48 | `result-track:ae33280cc993c966e43bf37d5000d1035323b93fa4df14c363df8495e38ade87` |
+| 5 | `lemma` | [Gammaℝ_analyticOnNhd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GammaSideNamespaced.lean/declarations/gamma-analyticonnhd.md) | 60 | `result-track:6982c466909564297aba3ea0ef583d314f361702ff278c0beab799a4496717da` |
+| 6 | `lemma` | [logDeriv_Gammaℝ_differentiableOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GammaSideNamespaced.lean/declarations/logderiv-gamma-differentiableon.md) | 64 | `result-track:c1dcb706bcce8bea972ddf8d0a334a7bf0cd40c435ed9cf9affef537f0c9fc90` |
+| 7 | `theorem` | [logDeriv_Gammaℝ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GammaSideNamespaced.lean/declarations/logderiv-gamma.md) | 73 | `result-track:8b06042e5b7ce01083cd0f962a8f9b1741d5cf8d430783515d32c0f65afccb59` |
+| 8 | `theorem` | [re_logDeriv_Gammaℝ_half](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GammaSideNamespaced.lean/declarations/re-logderiv-gamma-half.md) | 115 | `result-track:405b2b6e2c041b4d632231424e59e21edf2a82a625040449b443f42246c59838` |
+| 9 | `theorem` | [gamma_side](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GammaSideNamespaced.lean/declarations/gamma-side.md) | 129 | `result-track:0b2acefaa5f902067b2dccc8e47b0134acd0104935186f13a9e002683d01bda3` |
+| 10 | `theorem` | [mu_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GammaSideNamespaced.lean/declarations/mu-continuous.md) | 169 | `result-track:48795cf6e9bdfb5aeb3c440568596f85263f77e2acaa67ead663f5c81dd2c0f4` |
+| 11 | `theorem` | [mu_le_log](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GammaSideNamespaced.lean/declarations/mu-le-log.md) | 173 | `result-track:a3693acccd0cd7edccaef1ee4f2c199b3f122e7e24161cfaedcd66e01de76d63` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/CompositionNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/CompositionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CompositionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CompositionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CandidateMeaning](../../../../Combinatorics/CompositionNamespaced.lean/declarations/candidatemeaning.md) | 17 | `declaration-track:2c1b7f2862976396d2b76f3e2565debc0b9b129e35af3daee8cd6f15bf9e56a7` |
-| 2 | `structure` | [CompositionRule](../../../../Combinatorics/CompositionNamespaced.lean/declarations/compositionrule.md) | 23 | `declaration-track:4845fd16be893cf0240dfd0af3cba03758ce33460fe1c508e3f98b80f2e78d4c` |
-| 3 | `def` | [CompositionRuleApplies](../../../../Combinatorics/CompositionNamespaced.lean/declarations/compositionruleapplies.md) | 34 | `declaration-track:9cb14a2ef3aae310ee29eb9f1500282b747d3b0795776fb74144ee0dfd0ccb16` |
-| 4 | `structure` | [CompositionCertificate](../../../../Combinatorics/CompositionNamespaced.lean/declarations/compositioncertificate.md) | 43 | `declaration-track:d2d8adf42b88157be247ec1397a1d464d130079680f0e65e134ef86040ed7be2` |
-| 5 | `theorem` | [composition_output_is_candidate](../../../../Combinatorics/CompositionNamespaced.lean/declarations/composition-output-is-candidate.md) | 60 | `result-track:08bf281e173e498222e22819306ddddb1d694a4872514c69166ece51dbf10857` |
+| 1 | `structure` | [CandidateMeaning](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CompositionNamespaced.lean/declarations/candidatemeaning.md) | 17 | `declaration-track:2c1b7f2862976396d2b76f3e2565debc0b9b129e35af3daee8cd6f15bf9e56a7` |
+| 2 | `structure` | [CompositionRule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CompositionNamespaced.lean/declarations/compositionrule.md) | 23 | `declaration-track:4845fd16be893cf0240dfd0af3cba03758ce33460fe1c508e3f98b80f2e78d4c` |
+| 3 | `def` | [CompositionRuleApplies](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CompositionNamespaced.lean/declarations/compositionruleapplies.md) | 34 | `declaration-track:9cb14a2ef3aae310ee29eb9f1500282b747d3b0795776fb74144ee0dfd0ccb16` |
+| 4 | `structure` | [CompositionCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CompositionNamespaced.lean/declarations/compositioncertificate.md) | 43 | `declaration-track:d2d8adf42b88157be247ec1397a1d464d130079680f0e65e134ef86040ed7be2` |
+| 5 | `theorem` | [composition_output_is_candidate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CompositionNamespaced.lean/declarations/composition-output-is-candidate.md) | 60 | `result-track:08bf281e173e498222e22819306ddddb1d694a4872514c69166ece51dbf10857` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

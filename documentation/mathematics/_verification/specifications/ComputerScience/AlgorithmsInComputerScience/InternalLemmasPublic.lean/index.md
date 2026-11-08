@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/InternalLemmasPublic.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/InternalLemmasPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InternalLemmasPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InternalLemmasPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Internal.iter_eq_toIteratorIter](../../../../../ComputerScience/AlgorithmsInComputerScience/InternalLemmasPublic.lean/declarations/internal-iter-eq-toiteratoriter.md) | 23 | `result-track:d7dbfe87943f42914d46cba5086f303f64008420a4c3f84c13a14787dc82f3c2` |
-| 2 | `theorem` | [Internal.forIn_iter](../../../../../ComputerScience/AlgorithmsInComputerScience/InternalLemmasPublic.lean/declarations/internal-forin-iter.md) | 28 | `result-track:3e87377c5f4f9fc760f89f4ad65e5d13371ece68f18bd45667ce413210b3de62` |
-| 3 | `theorem` | [Internal.size_eq_length_iter](../../../../../ComputerScience/AlgorithmsInComputerScience/InternalLemmasPublic.lean/declarations/internal-size-eq-length-iter.md) | 37 | `result-track:bad93967ed01bab64fc32585fe86e788f7b774eb7c99803bfa027ec71b36f82c` |
-| 4 | `theorem` | [Internal.toArray_eq_toArray_iter](../../../../../ComputerScience/AlgorithmsInComputerScience/InternalLemmasPublic.lean/declarations/internal-toarray-eq-toarray-iter.md) | 44 | `result-track:7269cde83af409bcf337210e5c27297aae9b9235aefb00ee098254c77b6c5479` |
-| 5 | `theorem` | [Internal.toList_eq_toList_iter](../../../../../ComputerScience/AlgorithmsInComputerScience/InternalLemmasPublic.lean/declarations/internal-tolist-eq-tolist-iter.md) | 50 | `result-track:114264d85340b10fd4ec69e6bb5fa1cd853a9a90eb64e5165d8811e1d7e65049` |
-| 6 | `theorem` | [Internal.toListRev_eq_toListRev_iter](../../../../../ComputerScience/AlgorithmsInComputerScience/InternalLemmasPublic.lean/declarations/internal-tolistrev-eq-tolistrev-iter.md) | 56 | `result-track:dd3770783e50fbc61fb460bf5534c671b528c19783b8ac132763a73fe3679e58` |
-| 7 | `theorem` | [Internal.fold_iter](../../../../../ComputerScience/AlgorithmsInComputerScience/InternalLemmasPublic.lean/declarations/internal-fold-iter.md) | 61 | `result-track:d281c0519dfa034ef1fbb3777406cef339aeae4796ab8ea05b23146849fd1224` |
-| 8 | `theorem` | [Internal.foldM_iter](../../../../../ComputerScience/AlgorithmsInComputerScience/InternalLemmasPublic.lean/declarations/internal-foldm-iter.md) | 66 | `result-track:4e3c6f03e91e837e501652992ee6bbbcd927b42afe09dbd7e28b7cba5844510a` |
+| 1 | `theorem` | [Internal.iter_eq_toIteratorIter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InternalLemmasPublic.lean/declarations/internal-iter-eq-toiteratoriter.md) | 23 | `result-track:d7dbfe87943f42914d46cba5086f303f64008420a4c3f84c13a14787dc82f3c2` |
+| 2 | `theorem` | [Internal.forIn_iter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InternalLemmasPublic.lean/declarations/internal-forin-iter.md) | 28 | `result-track:3e87377c5f4f9fc760f89f4ad65e5d13371ece68f18bd45667ce413210b3de62` |
+| 3 | `theorem` | [Internal.size_eq_length_iter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InternalLemmasPublic.lean/declarations/internal-size-eq-length-iter.md) | 37 | `result-track:bad93967ed01bab64fc32585fe86e788f7b774eb7c99803bfa027ec71b36f82c` |
+| 4 | `theorem` | [Internal.toArray_eq_toArray_iter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InternalLemmasPublic.lean/declarations/internal-toarray-eq-toarray-iter.md) | 44 | `result-track:7269cde83af409bcf337210e5c27297aae9b9235aefb00ee098254c77b6c5479` |
+| 5 | `theorem` | [Internal.toList_eq_toList_iter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InternalLemmasPublic.lean/declarations/internal-tolist-eq-tolist-iter.md) | 50 | `result-track:114264d85340b10fd4ec69e6bb5fa1cd853a9a90eb64e5165d8811e1d7e65049` |
+| 6 | `theorem` | [Internal.toListRev_eq_toListRev_iter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InternalLemmasPublic.lean/declarations/internal-tolistrev-eq-tolistrev-iter.md) | 56 | `result-track:dd3770783e50fbc61fb460bf5534c671b528c19783b8ac132763a73fe3679e58` |
+| 7 | `theorem` | [Internal.fold_iter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InternalLemmasPublic.lean/declarations/internal-fold-iter.md) | 61 | `result-track:d281c0519dfa034ef1fbb3777406cef339aeae4796ab8ea05b23146849fd1224` |
+| 8 | `theorem` | [Internal.foldM_iter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InternalLemmasPublic.lean/declarations/internal-foldm-iter.md) | 66 | `result-track:4e3c6f03e91e837e501652992ee6bbbcd927b42afe09dbd7e28b7cba5844510a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

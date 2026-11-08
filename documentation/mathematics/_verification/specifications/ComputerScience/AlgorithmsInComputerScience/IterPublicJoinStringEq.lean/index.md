@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/IterPublicJoinStringEq.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/IterPublicJoinStringEq.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IterPublicJoinStringEq.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IterPublicJoinStringEq.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [joinString_eq](../../../../../ComputerScience/AlgorithmsInComputerScience/IterPublicJoinStringEq.lean/declarations/joinstring-eq.md) | 20 | `result-track:c2648a05cda55e866fd2a72117b6457f30d1bce924980ae910844dfbef7f9d2b` |
-| 2 | `theorem` | [intercalateString_eq](../../../../../ComputerScience/AlgorithmsInComputerScience/IterPublicJoinStringEq.lean/declarations/intercalatestring-eq.md) | 26 | `result-track:37ce176bee4044a11c47e6741d3af039190766c08ba5f7f53f6e32c1f7ca8762` |
+| 1 | `theorem` | [joinString_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IterPublicJoinStringEq.lean/declarations/joinstring-eq.md) | 20 | `result-track:c2648a05cda55e866fd2a72117b6457f30d1bce924980ae910844dfbef7f9d2b` |
+| 2 | `theorem` | [intercalateString_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IterPublicJoinStringEq.lean/declarations/intercalatestring-eq.md) | 26 | `result-track:37ce176bee4044a11c47e6741d3af039190766c08ba5f7f53f6e32c1f7ca8762` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

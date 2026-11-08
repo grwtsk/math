@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NoninterferenceNodeProfile.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NoninterferenceNodeProfile.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NoninterferenceNodeProfile.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NoninterferenceNodeProfile.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [NodeProfile.withPresentation](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NoninterferenceNodeProfile.lean/declarations/nodeprofile-withpresentation.md) | 5 | `declaration-track:ebd8d48cddfb7db779fac96bacc553abe84ff21b4b4741673a1786e2f88e07f4` |
-| 2 | `theorem` | [presentation_preserves_capacity_reference](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NoninterferenceNodeProfile.lean/declarations/presentation-preserves-capacity-reference.md) | 15 | `result-track:5a67b302d090de7b7acdb49cb453828971574b64df2ee2ed3a4f3dc2f97ed0ce` |
-| 3 | `theorem` | [presentation_has_no_authoritative_effect](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NoninterferenceNodeProfile.lean/declarations/presentation-has-no-authoritative-effect.md) | 22 | `result-track:dd7391841c63f66f4b06d134c4dac69cf627d656b3e58a24c99b80b6eb1834a2` |
+| 1 | `def` | [NodeProfile.withPresentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NoninterferenceNodeProfile.lean/declarations/nodeprofile-withpresentation.md) | 5 | `declaration-track:ebd8d48cddfb7db779fac96bacc553abe84ff21b4b4741673a1786e2f88e07f4` |
+| 2 | `theorem` | [presentation_preserves_capacity_reference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NoninterferenceNodeProfile.lean/declarations/presentation-preserves-capacity-reference.md) | 15 | `result-track:5a67b302d090de7b7acdb49cb453828971574b64df2ee2ed3a4f3dc2f97ed0ce` |
+| 3 | `theorem` | [presentation_has_no_authoritative_effect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NoninterferenceNodeProfile.lean/declarations/presentation-has-no-authoritative-effect.md) | 22 | `result-track:dd7391841c63f66f4b06d134c4dac69cf627d656b3e58a24c99b80b6eb1834a2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

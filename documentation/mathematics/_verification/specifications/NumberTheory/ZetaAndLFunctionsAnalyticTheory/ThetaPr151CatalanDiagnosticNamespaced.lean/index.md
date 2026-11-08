@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ThetaPr151CatalanDiagnosticNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ThetaPr151CatalanDiagnosticNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ThetaPr151CatalanDiagnosticNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ThetaPr151CatalanDiagnosticNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualMagnitudeTape](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ThetaPr151CatalanDiagnosticNamespaced.lean/declarations/actualmagnitudetape.md) | 19 | `declaration-track:71831879b15c1455d43eb11e0caa7378f3967302d42b4c5decee802122385486` |
-| 2 | `theorem` | [actualMagnitudeTape_first_positive](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ThetaPr151CatalanDiagnosticNamespaced.lean/declarations/actualmagnitudetape-first-positive.md) | 24 | `result-track:8d55868342c3f3ff1111c6b627232f0b2ef865961a1322d398ef654cfb0e6633` |
-| 3 | `theorem` | [actualMagnitudeTape_not_scaled_free](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ThetaPr151CatalanDiagnosticNamespaced.lean/declarations/actualmagnitudetape-not-scaled-free.md) | 37 | `result-track:9dc5747f6a829351dfb023f0b8c08fe62f85bc3b1ad7d0412b337c190eee1b8f` |
+| 1 | `def` | [actualMagnitudeTape](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ThetaPr151CatalanDiagnosticNamespaced.lean/declarations/actualmagnitudetape.md) | 19 | `declaration-track:71831879b15c1455d43eb11e0caa7378f3967302d42b4c5decee802122385486` |
+| 2 | `theorem` | [actualMagnitudeTape_first_positive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ThetaPr151CatalanDiagnosticNamespaced.lean/declarations/actualmagnitudetape-first-positive.md) | 24 | `result-track:8d55868342c3f3ff1111c6b627232f0b2ef865961a1322d398ef654cfb0e6633` |
+| 3 | `theorem` | [actualMagnitudeTape_not_scaled_free](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ThetaPr151CatalanDiagnosticNamespaced.lean/declarations/actualmagnitudetape-not-scaled-free.md) | 37 | `result-track:9dc5747f6a829351dfb023f0b8c08fe62f85bc3b1ad7d0412b337c190eee1b8f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

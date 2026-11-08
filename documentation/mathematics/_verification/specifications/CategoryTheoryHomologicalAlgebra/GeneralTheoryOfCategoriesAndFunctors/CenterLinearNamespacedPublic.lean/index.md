@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CenterLinearNamespacedPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CenterLinearNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CenterLinearNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CenterLinearNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [toCatCenter](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CenterLinearNamespacedPublic.lean/declarations/tocatcenter.md) | 44 | `declaration-track:79d1ec25271816fbe51b9bdbc2133f85e3f058e20bdee00bbeb53306055be665` |
-| 2 | `def` | [smulOfRingMorphism](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CenterLinearNamespacedPublic.lean/declarations/smulofringmorphism.md) | 65 | `declaration-track:31de95259029e185b3e99b715987bebae18238f5169893d64259fc338100d120` |
-| 3 | `lemma` | [smulOfRingMorphism_smul_eq](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CenterLinearNamespacedPublic.lean/declarations/smulofringmorphism-smul-eq.md) | 70 | `result-track:29317648d03402b4c442a211dc41b2bfa10c24198ae5b62d5d7e00f5d9c1bb41` |
-| 4 | `lemma` | [smulOfRingMorphism_smul_eq'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CenterLinearNamespacedPublic.lean/declarations/smulofringmorphism-smul-eq-source-edition-2.md) | 75 | `result-track:602b2be9061151b032c123f750643c592086e1feccbdbb7290e9fee8182b8198` |
-| 5 | `def` | [homModuleOfRingMorphism](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CenterLinearNamespacedPublic.lean/declarations/hommoduleofringmorphism.md) | 86 | `declaration-track:abf789c378e9e1e5966c49359cfb7ef038c2df8c1783ff294bdbec3929acc67c` |
-| 6 | `def` | [ofRingMorphism](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CenterLinearNamespacedPublic.lean/declarations/ofringmorphism.md) | 108 | `declaration-track:c5b0c26d382e5424de83554ffd2ce7c9a26c2ca080ea9165c55aa7e008792cd1` |
+| 1 | `def` | [toCatCenter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CenterLinearNamespacedPublic.lean/declarations/tocatcenter.md) | 44 | `declaration-track:79d1ec25271816fbe51b9bdbc2133f85e3f058e20bdee00bbeb53306055be665` |
+| 2 | `def` | [smulOfRingMorphism](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CenterLinearNamespacedPublic.lean/declarations/smulofringmorphism.md) | 65 | `declaration-track:31de95259029e185b3e99b715987bebae18238f5169893d64259fc338100d120` |
+| 3 | `lemma` | [smulOfRingMorphism_smul_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CenterLinearNamespacedPublic.lean/declarations/smulofringmorphism-smul-eq.md) | 70 | `result-track:29317648d03402b4c442a211dc41b2bfa10c24198ae5b62d5d7e00f5d9c1bb41` |
+| 4 | `lemma` | [smulOfRingMorphism_smul_eq'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CenterLinearNamespacedPublic.lean/declarations/smulofringmorphism-smul-eq-source-edition-2.md) | 75 | `result-track:602b2be9061151b032c123f750643c592086e1feccbdbb7290e9fee8182b8198` |
+| 5 | `def` | [homModuleOfRingMorphism](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CenterLinearNamespacedPublic.lean/declarations/hommoduleofringmorphism.md) | 86 | `declaration-track:abf789c378e9e1e5966c49359cfb7ef038c2df8c1783ff294bdbec3929acc67c` |
+| 6 | `def` | [ofRingMorphism](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CenterLinearNamespacedPublic.lean/declarations/ofringmorphism.md) | 108 | `declaration-track:c5b0c26d382e5424de83554ffd2ce7c9a26c2ca080ea9165c55aa7e008792cd1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

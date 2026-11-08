@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/DirectedGraphPrefixTableCheckpoint.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/DirectedGraphPrefixTableCheckpoint.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DirectedGraphPrefixTableCheckpoint.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DirectedGraphPrefixTableCheckpoint.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Combinatorics.DirectedGraph.PrefixTableBatch`](../../../../../Combinatorics/GraphTheory/PrefixTableBatch.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.Combinatorics.DirectedGraph.PrefixTableBatch`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PrefixTableBatch.lean/index.md) — import line 6; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,18 +57,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [compactAt](../../../../../Combinatorics/GraphTheory/DirectedGraphPrefixTableCheckpoint.lean/declarations/compactat.md) | 29 | `declaration-track:a9284f056e1ab71f53333c0360ff74520aeca37912e1b12432beb4fd9a017bde` |
-| 2 | `theorem` | [compactAt_wellFormed](../../../../../Combinatorics/GraphTheory/DirectedGraphPrefixTableCheckpoint.lean/declarations/compactat-wellformed.md) | 33 | `result-track:69f6546a854772e2554bc1c542778fbd5b546f543e5fdc3623918b225ee25da4` |
-| 3 | `theorem` | [decode_compactAt](../../../../../Combinatorics/GraphTheory/DirectedGraphPrefixTableCheckpoint.lean/declarations/decode-compactat.md) | 37 | `result-track:3128a1b2baf483dc9340a0c9ebc6aeed406cbcbc8c4fffb0f4a88dfc824e999e` |
-| 4 | `theorem` | [split_runAt](../../../../../Combinatorics/GraphTheory/DirectedGraphPrefixTableCheckpoint.lean/declarations/split-runat.md) | 43 | `result-track:0e93395ae21d116307147008be83783084d238276b9699fc83c8996d95c07023` |
-| 5 | `def` | [executeAt](../../../../../Combinatorics/GraphTheory/DirectedGraphPrefixTableCheckpoint.lean/declarations/executeat.md) | 49 | `declaration-track:9bd3a5f03342ab3c636d77a2cb77d5fd2c92c231e409630709f90fea1217bc1a` |
-| 6 | `def` | [checkpoint](../../../../../Combinatorics/GraphTheory/DirectedGraphPrefixTableCheckpoint.lean/declarations/checkpoint.md) | 55 | `declaration-track:ec8ebdf831aff82f9ab53dfe306e743a9d6db918535770f894650d4b0911c339` |
-| 7 | `theorem` | [checkpoint_root](../../../../../Combinatorics/GraphTheory/DirectedGraphPrefixTableCheckpoint.lean/declarations/checkpoint-root.md) | 59 | `result-track:163533c0b4a9f808c02d2fc620d12444542e3d869869216b7010f708d763499e` |
-| 8 | `theorem` | [executeAt_wellFormed](../../../../../Combinatorics/GraphTheory/DirectedGraphPrefixTableCheckpoint.lean/declarations/executeat-wellformed.md) | 64 | `result-track:e885908d3f8975534e400cc56534f18922feaa643faa9ef0f671dc2a91f463da` |
-| 9 | `theorem` | [checkpoint_wellFormed](../../../../../Combinatorics/GraphTheory/DirectedGraphPrefixTableCheckpoint.lean/declarations/checkpoint-wellformed.md) | 70 | `result-track:b298538e0cdf048c11f8238c3e7dadc01bd4c20327c3cca653e5e53cd92134b8` |
-| 10 | `theorem` | [decode_executeAt](../../../../../Combinatorics/GraphTheory/DirectedGraphPrefixTableCheckpoint.lean/declarations/decode-executeat.md) | 76 | `result-track:40a6f4b78dd538259d2bd26b13cc933549de2658809301e0f6bd6fdf4bb686b1` |
-| 11 | `theorem` | [decode_checkpoint](../../../../../Combinatorics/GraphTheory/DirectedGraphPrefixTableCheckpoint.lean/declarations/decode-checkpoint.md) | 88 | `result-track:91df9e8573768e43e2f90212b670f7a96c65c02c1c361b3dcbac93588e2b6dd4` |
-| 12 | `theorem` | [checkpoint_histories](../../../../../Combinatorics/GraphTheory/DirectedGraphPrefixTableCheckpoint.lean/declarations/checkpoint-histories.md) | 95 | `result-track:c309f6f3c980f9a5ef6d2a4986e99227065568725317617ec927d4e14a7da73a` |
+| 1 | `def` | [compactAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DirectedGraphPrefixTableCheckpoint.lean/declarations/compactat.md) | 29 | `declaration-track:a9284f056e1ab71f53333c0360ff74520aeca37912e1b12432beb4fd9a017bde` |
+| 2 | `theorem` | [compactAt_wellFormed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DirectedGraphPrefixTableCheckpoint.lean/declarations/compactat-wellformed.md) | 33 | `result-track:69f6546a854772e2554bc1c542778fbd5b546f543e5fdc3623918b225ee25da4` |
+| 3 | `theorem` | [decode_compactAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DirectedGraphPrefixTableCheckpoint.lean/declarations/decode-compactat.md) | 37 | `result-track:3128a1b2baf483dc9340a0c9ebc6aeed406cbcbc8c4fffb0f4a88dfc824e999e` |
+| 4 | `theorem` | [split_runAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DirectedGraphPrefixTableCheckpoint.lean/declarations/split-runat.md) | 43 | `result-track:0e93395ae21d116307147008be83783084d238276b9699fc83c8996d95c07023` |
+| 5 | `def` | [executeAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DirectedGraphPrefixTableCheckpoint.lean/declarations/executeat.md) | 49 | `declaration-track:9bd3a5f03342ab3c636d77a2cb77d5fd2c92c231e409630709f90fea1217bc1a` |
+| 6 | `def` | [checkpoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DirectedGraphPrefixTableCheckpoint.lean/declarations/checkpoint.md) | 55 | `declaration-track:ec8ebdf831aff82f9ab53dfe306e743a9d6db918535770f894650d4b0911c339` |
+| 7 | `theorem` | [checkpoint_root](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DirectedGraphPrefixTableCheckpoint.lean/declarations/checkpoint-root.md) | 59 | `result-track:163533c0b4a9f808c02d2fc620d12444542e3d869869216b7010f708d763499e` |
+| 8 | `theorem` | [executeAt_wellFormed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DirectedGraphPrefixTableCheckpoint.lean/declarations/executeat-wellformed.md) | 64 | `result-track:e885908d3f8975534e400cc56534f18922feaa643faa9ef0f671dc2a91f463da` |
+| 9 | `theorem` | [checkpoint_wellFormed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DirectedGraphPrefixTableCheckpoint.lean/declarations/checkpoint-wellformed.md) | 70 | `result-track:b298538e0cdf048c11f8238c3e7dadc01bd4c20327c3cca653e5e53cd92134b8` |
+| 10 | `theorem` | [decode_executeAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DirectedGraphPrefixTableCheckpoint.lean/declarations/decode-executeat.md) | 76 | `result-track:40a6f4b78dd538259d2bd26b13cc933549de2658809301e0f6bd6fdf4bb686b1` |
+| 11 | `theorem` | [decode_checkpoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DirectedGraphPrefixTableCheckpoint.lean/declarations/decode-checkpoint.md) | 88 | `result-track:91df9e8573768e43e2f90212b670f7a96c65c02c1c361b3dcbac93588e2b6dd4` |
+| 12 | `theorem` | [checkpoint_histories](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DirectedGraphPrefixTableCheckpoint.lean/declarations/checkpoint-histories.md) | 95 | `result-track:c309f6f3c980f9a5ef6d2a4986e99227065568725317617ec927d4e14a7da73a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

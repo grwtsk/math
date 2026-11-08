@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/CoherentComparisonOfActualSolverChoiceStructuralQuines.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/CoherentComparisonOfActualSolverChoiceStructuralQuines.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CoherentComparisonOfActualSolverChoiceStructuralQuines.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CoherentComparisonOfActualSolverChoiceStructuralQuines.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [solverChoiceComparison](../../../../GroupTheoryAndGeneralizations/CoherentComparisonOfActualSolverChoiceStructuralQuines.lean/declarations/solverchoicecomparison.md) | 27 | `declaration-track:1f45cd15d5ef9c61986d148bcde49383d875fe4f35a21536fb9ea167f64acf77` |
-| 2 | `theorem` | [solverChoiceComparison_eq_refl](../../../../GroupTheoryAndGeneralizations/CoherentComparisonOfActualSolverChoiceStructuralQuines.lean/declarations/solverchoicecomparison-eq-refl.md) | 30 | `result-track:a46acff1418610f8cd3a2dea451b43b6727a1dc9eb2e01304910c677ba67b21d` |
-| 3 | `theorem` | [solverChoiceComparison_pairing](../../../../GroupTheoryAndGeneralizations/CoherentComparisonOfActualSolverChoiceStructuralQuines.lean/declarations/solverchoicecomparison-pairing.md) | 40 | `result-track:1906e809ca79b1f61c66ab25ba53eb0c029ff17af80ac513a64601c7f2c085b1` |
+| 1 | `def` | [solverChoiceComparison](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CoherentComparisonOfActualSolverChoiceStructuralQuines.lean/declarations/solverchoicecomparison.md) | 27 | `declaration-track:1f45cd15d5ef9c61986d148bcde49383d875fe4f35a21536fb9ea167f64acf77` |
+| 2 | `theorem` | [solverChoiceComparison_eq_refl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CoherentComparisonOfActualSolverChoiceStructuralQuines.lean/declarations/solverchoicecomparison-eq-refl.md) | 30 | `result-track:a46acff1418610f8cd3a2dea451b43b6727a1dc9eb2e01304910c677ba67b21d` |
+| 3 | `theorem` | [solverChoiceComparison_pairing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CoherentComparisonOfActualSolverChoiceStructuralQuines.lean/declarations/solverchoicecomparison-pairing.md) | 40 | `result-track:1906e809ca79b1f61c66ab25ba53eb0c029ff17af80ac513a64601c7f2c085b1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

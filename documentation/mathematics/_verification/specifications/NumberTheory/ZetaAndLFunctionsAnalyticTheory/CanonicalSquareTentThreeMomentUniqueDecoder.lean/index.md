@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentThreeMomentUniqueDecoder.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentThreeMomentUniqueDecoder.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentThreeMomentUniqueDecoder.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentThreeMomentUniqueDecoder.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentThirdCoordinateInformationLoss`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentThirdCoordinateInformationLoss.lean/index.md) — import line 6; pinned internal source present.
-- [`GRWTSK.Logic.InformationLoss.FactorizationUniqueReconstruction`](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FactorizationUniqueReconstruction.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentThirdCoordinateInformationLoss`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentThirdCoordinateInformationLoss.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.Logic.InformationLoss.FactorizationUniqueReconstruction`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FactorizationUniqueReconstruction.lean/index.md) — import line 7; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [existsUnique_source_readout_decoder](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentThreeMomentUniqueDecoder.lean/declarations/existsunique-source-readout-decoder.md) | 37 | `result-track:4f10555401e3bde5cec832f625e1ff69e80181c10e105183e9293d04b8973fc9` |
+| 1 | `theorem` | [existsUnique_source_readout_decoder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentThreeMomentUniqueDecoder.lean/declarations/existsunique-source-readout-decoder.md) | 37 | `result-track:4f10555401e3bde5cec832f625e1ff69e80181c10e105183e9293d04b8973fc9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

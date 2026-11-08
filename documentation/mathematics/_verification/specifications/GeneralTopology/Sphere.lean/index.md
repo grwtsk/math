@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/Sphere.lean/index.md) · [Full source](../../../../GeneralTopology/Sphere.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Sphere.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Sphere.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Sphere1](../../../../GeneralTopology/Sphere.lean/declarations/sphere1.md) | 8 | `declaration-track:13a6250f73c357e0184f8a3106838083fee4b0e19653d5797afbb277a19bfae1` |
-| 2 | `structure` | [Sphere2](../../../../GeneralTopology/Sphere.lean/declarations/sphere2.md) | 14 | `declaration-track:966624e976165120ea29c45ac677308a170fe26debcf3d771833638faa26af59` |
-| 3 | `structure` | [Sphere3](../../../../GeneralTopology/Sphere.lean/declarations/sphere3.md) | 20 | `declaration-track:894878f11e97841fc6fa3c0a6dddd664057cc826ce06abd32ecd9109614cebd2` |
+| 1 | `structure` | [Sphere1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Sphere.lean/declarations/sphere1.md) | 8 | `declaration-track:13a6250f73c357e0184f8a3106838083fee4b0e19653d5797afbb277a19bfae1` |
+| 2 | `structure` | [Sphere2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Sphere.lean/declarations/sphere2.md) | 14 | `declaration-track:966624e976165120ea29c45ac677308a170fe26debcf3d771833638faa26af59` |
+| 3 | `structure` | [Sphere3](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Sphere.lean/declarations/sphere3.md) | 20 | `declaration-track:894878f11e97841fc6fa3c0a6dddd664057cc826ce06abd32ecd9109614cebd2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

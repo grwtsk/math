@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/BranchHomotopy.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/BranchHomotopy.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/BranchHomotopy.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/BranchHomotopy.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [coefficientOneForm](../../../../FunctionsOfAComplexVariable/BranchHomotopy.lean/declarations/coefficientoneform.md) | 48 | `declaration-track:cbca9d22f93bef353e15f92c065e9e005dd7c89e6b3b4fe60bc75b447f5bf40a` |
-| 2 | `theorem` | [curveIntegral_coefficientOneForm_homotopy](../../../../FunctionsOfAComplexVariable/BranchHomotopy.lean/declarations/curveintegral-coefficientoneform-homotopy.md) | 57 | `result-track:50405450786a23586dfd4557323a9fb62afc49907118a90c17da6125d74b9d40` |
-| 3 | `def` | [HasSimplePoleCoefficientAt](../../../../FunctionsOfAComplexVariable/BranchHomotopy.lean/declarations/hassimplepolecoefficientat.md) | 88 | `declaration-track:1b7acb8271b50380663a85ce081435d9f0bee99ca2cf901fc437097bcac4eb82` |
-| 4 | `theorem` | [circleIntegral_eq_two_pi_I_mul_of_simplePoleCoefficient](../../../../FunctionsOfAComplexVariable/BranchHomotopy.lean/declarations/circleintegral-eq-two-pi-i-mul-of-simplepolecoefficient.md) | 93 | `result-track:c873f7764d4429beae7f14e68667db6cf62b8c7b394c4d8c1ae14f651ed1acac` |
-| 5 | `theorem` | [circleIntegral_eq_of_singleHole_annulus](../../../../FunctionsOfAComplexVariable/BranchHomotopy.lean/declarations/circleintegral-eq-of-singlehole-annulus.md) | 129 | `result-track:01512c3d6414ee2f9862d04002bedec7d62beed7757d67634c782a5dcded1c2b` |
+| 1 | `def` | [coefficientOneForm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/BranchHomotopy.lean/declarations/coefficientoneform.md) | 48 | `declaration-track:cbca9d22f93bef353e15f92c065e9e005dd7c89e6b3b4fe60bc75b447f5bf40a` |
+| 2 | `theorem` | [curveIntegral_coefficientOneForm_homotopy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/BranchHomotopy.lean/declarations/curveintegral-coefficientoneform-homotopy.md) | 57 | `result-track:50405450786a23586dfd4557323a9fb62afc49907118a90c17da6125d74b9d40` |
+| 3 | `def` | [HasSimplePoleCoefficientAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/BranchHomotopy.lean/declarations/hassimplepolecoefficientat.md) | 88 | `declaration-track:1b7acb8271b50380663a85ce081435d9f0bee99ca2cf901fc437097bcac4eb82` |
+| 4 | `theorem` | [circleIntegral_eq_two_pi_I_mul_of_simplePoleCoefficient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/BranchHomotopy.lean/declarations/circleintegral-eq-two-pi-i-mul-of-simplepolecoefficient.md) | 93 | `result-track:c873f7764d4429beae7f14e68667db6cf62b8c7b394c4d8c1ae14f651ed1acac` |
+| 5 | `theorem` | [circleIntegral_eq_of_singleHole_annulus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/BranchHomotopy.lean/declarations/circleintegral-eq-of-singlehole-annulus.md) | 129 | `result-track:01512c3d6414ee2f9862d04002bedec7d62beed7757d67634c782a5dcded1c2b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

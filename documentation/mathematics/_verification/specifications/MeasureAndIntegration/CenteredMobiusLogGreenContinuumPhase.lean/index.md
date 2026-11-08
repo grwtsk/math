@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CenteredMobiusLogGreenContinuumPhase.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CenteredMobiusLogGreenContinuumPhase.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenContinuumPhase.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenContinuumPhase.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenAliasing`](../../../../MeasureAndIntegration/CenteredMobiusLogGreenAliasing.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenAliasing`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenAliasing.lean/index.md) — import line 7; pinned internal source present.
 - `Mathlib.Tactic` — import line 8; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [greenPhaseAntiderivative](../../../../MeasureAndIntegration/CenteredMobiusLogGreenContinuumPhase.lean/declarations/greenphaseantiderivative.md) | 16 | `declaration-track:70b92abd80101b36061cdae135af5f71e0dfa6360050f3eb49d26724f3f26967` |
-| 2 | `theorem` | [greenPhaseAntiderivative_hasDerivAt](../../../../MeasureAndIntegration/CenteredMobiusLogGreenContinuumPhase.lean/declarations/greenphaseantiderivative-hasderivat.md) | 20 | `result-track:902fa07c87252f58d90d6a4a8d2aaae42fc4a2c6643cd839f97a672baff9145a` |
-| 3 | `def` | [greenReciprocalComplex](../../../../MeasureAndIntegration/CenteredMobiusLogGreenContinuumPhase.lean/declarations/greenreciprocalcomplex.md) | 27 | `declaration-track:3e1af82ca2cd67e6b4c99f6a319bc8a2c94bcf1b5407e400cc777b42dcd0b42d` |
-| 4 | `theorem` | [greenReciprocalComplex_hasDerivAt](../../../../MeasureAndIntegration/CenteredMobiusLogGreenContinuumPhase.lean/declarations/greenreciprocalcomplex-hasderivat.md) | 30 | `result-track:ffcbc752ad8ca6c5c76c874fa9bd34ea10f8e6f85bc25cc769376fc7f6f28ab6` |
-| 5 | `theorem` | [greenContinuumPhaseIntegral_ibp](../../../../MeasureAndIntegration/CenteredMobiusLogGreenContinuumPhase.lean/declarations/greencontinuumphaseintegral-ibp.md) | 45 | `result-track:168c986cf17e7b65511c8402d974ad36432f5a744f4d53cdcc9e1374993b1efc` |
-| 6 | `theorem` | [norm_greenContinuumPhaseIntegral_le](../../../../MeasureAndIntegration/CenteredMobiusLogGreenContinuumPhase.lean/declarations/norm-greencontinuumphaseintegral-le.md) | 71 | `result-track:e469de23bdc5309e0ab52c689c7e8b3c259f277a6b7cfc58d3c489f55e6da45f` |
-| 7 | `theorem` | [greenContinuumConstantIntegral_eq_log_two](../../../../MeasureAndIntegration/CenteredMobiusLogGreenContinuumPhase.lean/declarations/greencontinuumconstantintegral-eq-log-two.md) | 123 | `result-track:f1c3a48f0f8bd9397c963005486d42d0df35afca9f3751b5292853bf9bceb1c3` |
+| 1 | `def` | [greenPhaseAntiderivative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenContinuumPhase.lean/declarations/greenphaseantiderivative.md) | 16 | `declaration-track:70b92abd80101b36061cdae135af5f71e0dfa6360050f3eb49d26724f3f26967` |
+| 2 | `theorem` | [greenPhaseAntiderivative_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenContinuumPhase.lean/declarations/greenphaseantiderivative-hasderivat.md) | 20 | `result-track:902fa07c87252f58d90d6a4a8d2aaae42fc4a2c6643cd839f97a672baff9145a` |
+| 3 | `def` | [greenReciprocalComplex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenContinuumPhase.lean/declarations/greenreciprocalcomplex.md) | 27 | `declaration-track:3e1af82ca2cd67e6b4c99f6a319bc8a2c94bcf1b5407e400cc777b42dcd0b42d` |
+| 4 | `theorem` | [greenReciprocalComplex_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenContinuumPhase.lean/declarations/greenreciprocalcomplex-hasderivat.md) | 30 | `result-track:ffcbc752ad8ca6c5c76c874fa9bd34ea10f8e6f85bc25cc769376fc7f6f28ab6` |
+| 5 | `theorem` | [greenContinuumPhaseIntegral_ibp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenContinuumPhase.lean/declarations/greencontinuumphaseintegral-ibp.md) | 45 | `result-track:168c986cf17e7b65511c8402d974ad36432f5a744f4d53cdcc9e1374993b1efc` |
+| 6 | `theorem` | [norm_greenContinuumPhaseIntegral_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenContinuumPhase.lean/declarations/norm-greencontinuumphaseintegral-le.md) | 71 | `result-track:e469de23bdc5309e0ab52c689c7e8b3c259f277a6b7cfc58d3c489f55e6da45f` |
+| 7 | `theorem` | [greenContinuumConstantIntegral_eq_log_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenContinuumPhase.lean/declarations/greencontinuumconstantintegral-eq-log-two.md) | 123 | `result-track:f1c3a48f0f8bd9397c963005486d42d0df35afca9f3751b5292853bf9bceb1c3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

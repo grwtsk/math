@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceActualTiltProjectedGrowthEdition1.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceActualTiltProjectedGrowthEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualTiltProjectedGrowthEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualTiltProjectedGrowthEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [spectrum_continuous](../../../../MeasureAndIntegration/SourceActualTiltProjectedGrowthEdition1.lean/declarations/spectrum-continuous.md) | 21 | `result-track:1246f30de9bfe38e7e8b8036f9711a4772379916a6792640b719e3a48fa49cf9` |
-| 2 | `theorem` | [mellin_eq_spectrum_sq](../../../../MeasureAndIntegration/SourceActualTiltProjectedGrowthEdition1.lean/declarations/mellin-eq-spectrum-sq.md) | 30 | `result-track:45832bbf6433dd61b32169e135850dfbd59f6f3854a05fe75eaaf253f808ceaf` |
-| 3 | `theorem` | [polynomial_continuous](../../../../MeasureAndIntegration/SourceActualTiltProjectedGrowthEdition1.lean/declarations/polynomial-continuous.md) | 38 | `result-track:4635ad1c28f6c1d3369311321ed1f7e9c2f0ba12fe20a716bb5ab8e3ba73cfd2` |
-| 4 | `theorem` | [polynomial_norm_le](../../../../MeasureAndIntegration/SourceActualTiltProjectedGrowthEdition1.lean/declarations/polynomial-norm-le.md) | 52 | `result-track:2384705cd7a21a722a4a2cf7cf65ae8fc73edd103b588accfcceb4849723f663` |
-| 5 | `theorem` | [density_upper](../../../../MeasureAndIntegration/SourceActualTiltProjectedGrowthEdition1.lean/declarations/density-upper.md) | 68 | `result-track:b4795c386297f7e39b7d3b4122bafd475280a55d922ddccdb7ef8d470d43391e` |
-| 6 | `theorem` | [spectrum_energy_angular](../../../../MeasureAndIntegration/SourceActualTiltProjectedGrowthEdition1.lean/declarations/spectrum-energy-angular.md) | 83 | `result-track:1104358bd0663b4e93ebaba5a9214a6770884125d3015a3a5e8f8a6c768eb487` |
-| 7 | `theorem` | [actualCentralFrequencyMass_le_band_energy](../../../../MeasureAndIntegration/SourceActualTiltProjectedGrowthEdition1.lean/declarations/actualcentralfrequencymass-le-band-energy.md) | 97 | `result-track:9b0f6e6ee436f0d7833e565570dab88fda89d193e2dd240b9595f1e1375b5534` |
-| 8 | `theorem` | [actualTiltBandState_norm_sq_mono](../../../../MeasureAndIntegration/SourceActualTiltProjectedGrowthEdition1.lean/declarations/actualtiltbandstate-norm-sq-mono.md) | 132 | `result-track:31b85f4048ebe667e38e83cc1e1d35fca981020ce9d88da0719c79613172e609` |
-| 9 | `theorem` | [actualTiltBandState_moving_energy_eventually_lower](../../../../MeasureAndIntegration/SourceActualTiltProjectedGrowthEdition1.lean/declarations/actualtiltbandstate-moving-energy-eventually-lower.md) | 143 | `result-track:de66a7643678a509881eb78cf395206ca67ee98d4b8d7f9d47f486600d592e97` |
+| 1 | `theorem` | [spectrum_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualTiltProjectedGrowthEdition1.lean/declarations/spectrum-continuous.md) | 21 | `result-track:1246f30de9bfe38e7e8b8036f9711a4772379916a6792640b719e3a48fa49cf9` |
+| 2 | `theorem` | [mellin_eq_spectrum_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualTiltProjectedGrowthEdition1.lean/declarations/mellin-eq-spectrum-sq.md) | 30 | `result-track:45832bbf6433dd61b32169e135850dfbd59f6f3854a05fe75eaaf253f808ceaf` |
+| 3 | `theorem` | [polynomial_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualTiltProjectedGrowthEdition1.lean/declarations/polynomial-continuous.md) | 38 | `result-track:4635ad1c28f6c1d3369311321ed1f7e9c2f0ba12fe20a716bb5ab8e3ba73cfd2` |
+| 4 | `theorem` | [polynomial_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualTiltProjectedGrowthEdition1.lean/declarations/polynomial-norm-le.md) | 52 | `result-track:2384705cd7a21a722a4a2cf7cf65ae8fc73edd103b588accfcceb4849723f663` |
+| 5 | `theorem` | [density_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualTiltProjectedGrowthEdition1.lean/declarations/density-upper.md) | 68 | `result-track:b4795c386297f7e39b7d3b4122bafd475280a55d922ddccdb7ef8d470d43391e` |
+| 6 | `theorem` | [spectrum_energy_angular](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualTiltProjectedGrowthEdition1.lean/declarations/spectrum-energy-angular.md) | 83 | `result-track:1104358bd0663b4e93ebaba5a9214a6770884125d3015a3a5e8f8a6c768eb487` |
+| 7 | `theorem` | [actualCentralFrequencyMass_le_band_energy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualTiltProjectedGrowthEdition1.lean/declarations/actualcentralfrequencymass-le-band-energy.md) | 97 | `result-track:9b0f6e6ee436f0d7833e565570dab88fda89d193e2dd240b9595f1e1375b5534` |
+| 8 | `theorem` | [actualTiltBandState_norm_sq_mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualTiltProjectedGrowthEdition1.lean/declarations/actualtiltbandstate-norm-sq-mono.md) | 132 | `result-track:31b85f4048ebe667e38e83cc1e1d35fca981020ce9d88da0719c79613172e609` |
+| 9 | `theorem` | [actualTiltBandState_moving_energy_eventually_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualTiltProjectedGrowthEdition1.lean/declarations/actualtiltbandstate-moving-energy-eventually-lower.md) | 143 | `result-track:de66a7643678a509881eb78cf395206ca67ee98d4b8d7f9d47f486600d592e97` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedAbelianNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedAbelianNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedAbelianNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedAbelianNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,8 +60,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [CondensedAb](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedAbelianNamespaced.lean/declarations/condensedab.md) | 33 | `declaration-track:7f62e5964810141634c61f1b1979c9919c8bc8212943cc289142e45caedaddcd` |
-| 2 | `instance` | [CondensedAb.abelian](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedAbelianNamespaced.lean/declarations/condensedab-abelian.md) | 35 | `declaration-track:c01cf6e62acfd04b7c4c79bccdbc22b20198130a7ed74ef7b60a739cb694a66f` |
+| 1 | `abbrev` | [CondensedAb](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedAbelianNamespaced.lean/declarations/condensedab.md) | 33 | `declaration-track:7f62e5964810141634c61f1b1979c9919c8bc8212943cc289142e45caedaddcd` |
+| 2 | `instance` | [CondensedAb.abelian](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedAbelianNamespaced.lean/declarations/condensedab-abelian.md) | 35 | `declaration-track:c01cf6e62acfd04b7c4c79bccdbc22b20198130a7ed74ef7b60a739cb694a66f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

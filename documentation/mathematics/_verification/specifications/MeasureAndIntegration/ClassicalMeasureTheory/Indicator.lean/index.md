@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/Indicator.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/Indicator.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/Indicator.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/Indicator.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [condExp_ae_eq_restrict_zero](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/Indicator.lean/declarations/condexp-ae-eq-restrict-zero.md) | 36 | `result-track:a16876a8975ae4c09280a9ac2ca890ffc1b7a4ff357efc1cebb2185235f6d359` |
-| 2 | `theorem` | [condExp_indicator_aux](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/Indicator.lean/declarations/condexp-indicator-aux.md) | 63 | `result-track:6d41e8741a7de3c944573cc82c41670488ef1f8910fbdcb8867ede653f1ce657` |
-| 3 | `theorem` | [condExp_indicator](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/Indicator.lean/declarations/condexp-indicator.md) | 76 | `result-track:bd54bf954ffa236bc730706a6bd599c54092ac1a938d462fce1b7bd1fcfa8a94` |
-| 4 | `theorem` | [condExp_restrict_ae_eq_restrict](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/Indicator.lean/declarations/condexp-restrict-ae-eq-restrict.md) | 116 | `result-track:99bf7428dd8e733c00ad6e2f5c54284a9f960de9c1f3a37fcfeab3522b07d0f7` |
-| 5 | `theorem` | [condExp_ae_eq_restrict_of_measurableSpace_eq_on](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/Indicator.lean/declarations/condexp-ae-eq-restrict-of-measurablespace-eq-on.md) | 147 | `result-track:161b941591be22a43f51b7f4d479989447af9eaa62c559e4698053a6826b0ce2` |
+| 1 | `theorem` | [condExp_ae_eq_restrict_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/Indicator.lean/declarations/condexp-ae-eq-restrict-zero.md) | 36 | `result-track:a16876a8975ae4c09280a9ac2ca890ffc1b7a4ff357efc1cebb2185235f6d359` |
+| 2 | `theorem` | [condExp_indicator_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/Indicator.lean/declarations/condexp-indicator-aux.md) | 63 | `result-track:6d41e8741a7de3c944573cc82c41670488ef1f8910fbdcb8867ede653f1ce657` |
+| 3 | `theorem` | [condExp_indicator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/Indicator.lean/declarations/condexp-indicator.md) | 76 | `result-track:bd54bf954ffa236bc730706a6bd599c54092ac1a938d462fce1b7bd1fcfa8a94` |
+| 4 | `theorem` | [condExp_restrict_ae_eq_restrict](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/Indicator.lean/declarations/condexp-restrict-ae-eq-restrict.md) | 116 | `result-track:99bf7428dd8e733c00ad6e2f5c54284a9f960de9c1f3a37fcfeab3522b07d0f7` |
+| 5 | `theorem` | [condExp_ae_eq_restrict_of_measurableSpace_eq_on](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/Indicator.lean/declarations/condexp-ae-eq-restrict-of-measurablespace-eq-on.md) | 147 | `result-track:161b941591be22a43f51b7f4d479989447af9eaa62c559e4698053a6826b0ce2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

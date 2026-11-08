@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../IntegralTransformsOperationalCalculus/GaussianLogFlowMissingScale.lean/index.md) · [Full source](../../../../IntegralTransformsOperationalCalculus/GaussianLogFlowMissingScale.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/GaussianLogFlowMissingScale.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/GaussianLogFlowMissingScale.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.MellinTransform.Checks.Positive.GaussianLogFlow`](../../../../IntegralTransformsOperationalCalculus/PositiveGaussianLogFlow.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.Analysis.MellinTransform.Checks.Positive.GaussianLogFlow`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/PositiveGaussianLogFlow.lean/index.md) — import line 2; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../IntegralTransformsOperationalCalculus/GaussianLogFlowMissingScale.lean/declarations/example.md) | 5 | `declaration-track:bf62efa00199431a9e430980a379c5bb7c6e0149c028a5744eab9735b88f4893` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/GaussianLogFlowMissingScale.lean/declarations/example.md) | 5 | `declaration-track:bf62efa00199431a9e430980a379c5bb7c6e0149c028a5744eab9735b88f4893` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/MathlibAPIProbeNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/MathlibAPIProbeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MathlibAPIProbeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MathlibAPIProbeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,8 +60,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../GeneralTopology/MathlibAPIProbeNamespaced.lean/declarations/example-source-edition-2.md) | 57 | `declaration-track:d08f307b660b8e4ce59890e61ddb4c4ee1d562bc4c350d42807f29cee511cae8` |
-| 2 | `example` | [(anonymous)](../../../../GeneralTopology/MathlibAPIProbeNamespaced.lean/declarations/example.md) | 58 | `declaration-track:5d15b0823a1666c2dcf118ce7ce29ef1ee56752144149668142ccae77611b1cc` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MathlibAPIProbeNamespaced.lean/declarations/example-source-edition-2.md) | 57 | `declaration-track:d08f307b660b8e4ce59890e61ddb4c4ee1d562bc4c350d42807f29cee511cae8` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MathlibAPIProbeNamespaced.lean/declarations/example.md) | 58 | `declaration-track:5d15b0823a1666c2dcf118ce7ce29ef1ee56752144149668142ccae77611b1cc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

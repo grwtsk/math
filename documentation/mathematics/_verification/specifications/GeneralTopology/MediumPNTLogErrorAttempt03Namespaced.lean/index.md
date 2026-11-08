@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/MediumPNTLogErrorAttempt03Namespaced.lean/index.md) · [Full source](../../../../GeneralTopology/MediumPNTLogErrorAttempt03Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MediumPNTLogErrorAttempt03Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MediumPNTLogErrorAttempt03Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [psiRelativeError](../../../../GeneralTopology/MediumPNTLogErrorAttempt03Namespaced.lean/declarations/psirelativeerror.md) | 19 | `declaration-track:11c6ae9ce374af6dcc1ab679cc3c574bac2c787279c9e29e5255a0c6d40ebb34` |
-| 2 | `theorem` | [psiRelativeError_eq](../../../../GeneralTopology/MediumPNTLogErrorAttempt03Namespaced.lean/declarations/psirelativeerror-eq.md) | 21 | `result-track:f7ecc02531667eeb780360e655a115996736a5b8fbe7003eeb33d5f21a62f627` |
-| 3 | `theorem` | [psiRelativeError_medium_bound](../../../../GeneralTopology/MediumPNTLogErrorAttempt03Namespaced.lean/declarations/psirelativeerror-medium-bound.md) | 28 | `result-track:16c377e81203270ebfff1f930afb335634cd6de8bf20cd0eb878edaeb96172f5` |
-| 4 | `theorem` | [power_stretched_exp_tendsto_zero](../../../../GeneralTopology/MediumPNTLogErrorAttempt03Namespaced.lean/declarations/power-stretched-exp-tendsto-zero.md) | 48 | `result-track:187e1d0d52eefa45ac4ab9df8238f05e30094232864c595372a87d377c144e33` |
-| 5 | `theorem` | [psiRelativeError_mul_pow_tendsto_zero](../../../../GeneralTopology/MediumPNTLogErrorAttempt03Namespaced.lean/declarations/psirelativeerror-mul-pow-tendsto-zero.md) | 59 | `result-track:05c0630ba3550e1f3900979124a439d42db7eedf74b11fbc94a371d44d2c2d40` |
+| 1 | `def` | [psiRelativeError](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MediumPNTLogErrorAttempt03Namespaced.lean/declarations/psirelativeerror.md) | 19 | `declaration-track:11c6ae9ce374af6dcc1ab679cc3c574bac2c787279c9e29e5255a0c6d40ebb34` |
+| 2 | `theorem` | [psiRelativeError_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MediumPNTLogErrorAttempt03Namespaced.lean/declarations/psirelativeerror-eq.md) | 21 | `result-track:f7ecc02531667eeb780360e655a115996736a5b8fbe7003eeb33d5f21a62f627` |
+| 3 | `theorem` | [psiRelativeError_medium_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MediumPNTLogErrorAttempt03Namespaced.lean/declarations/psirelativeerror-medium-bound.md) | 28 | `result-track:16c377e81203270ebfff1f930afb335634cd6de8bf20cd0eb878edaeb96172f5` |
+| 4 | `theorem` | [power_stretched_exp_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MediumPNTLogErrorAttempt03Namespaced.lean/declarations/power-stretched-exp-tendsto-zero.md) | 48 | `result-track:187e1d0d52eefa45ac4ab9df8238f05e30094232864c595372a87d377c144e33` |
+| 5 | `theorem` | [psiRelativeError_mul_pow_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MediumPNTLogErrorAttempt03Namespaced.lean/declarations/psirelativeerror-mul-pow-tendsto-zero.md) | 59 | `result-track:05c0630ba3550e1f3900979124a439d42db7eedf74b11fbc94a371d44d2c2d40` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

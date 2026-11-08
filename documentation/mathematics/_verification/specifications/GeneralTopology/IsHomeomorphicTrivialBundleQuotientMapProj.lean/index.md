@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/IsHomeomorphicTrivialBundleQuotientMapProj.lean/index.md) · [Full source](../../../../GeneralTopology/IsHomeomorphicTrivialBundleQuotientMapProj.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/IsHomeomorphicTrivialBundleQuotientMapProj.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/IsHomeomorphicTrivialBundleQuotientMapProj.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [IsHomeomorphicTrivialFiberBundle](../../../../GeneralTopology/IsHomeomorphicTrivialBundleQuotientMapProj.lean/declarations/ishomeomorphictrivialfiberbundle.md) | 29 | `declaration-track:bdf7e061fd57c72809cec510678363d96a72f045c684eac9242bdf8206050bc2` |
-| 2 | `theorem` | [proj_eq](../../../../GeneralTopology/IsHomeomorphicTrivialBundleQuotientMapProj.lean/declarations/proj-eq.md) | 37 | `result-track:42cf6d4ed118ee4bedb6f2c746a2fce53eb87e1a31d2f3ba059919e2fc1a356e` |
-| 3 | `theorem` | [surjective_proj](../../../../GeneralTopology/IsHomeomorphicTrivialBundleQuotientMapProj.lean/declarations/surjective-proj.md) | 43 | `result-track:d23f5a51d116313418ea5e1548077d263a8f62e2b0ac2a8deaee5576e9cb500c` |
-| 4 | `theorem` | [continuous_proj](../../../../GeneralTopology/IsHomeomorphicTrivialBundleQuotientMapProj.lean/declarations/continuous-proj.md) | 50 | `result-track:5853fd239d849650b361d23ebb0a13bbe48298e3eb870bb20f78e34fa2bde025` |
-| 5 | `theorem` | [isOpenMap_proj](../../../../GeneralTopology/IsHomeomorphicTrivialBundleQuotientMapProj.lean/declarations/isopenmap-proj.md) | 55 | `result-track:1aa480ff62b010f3d53752b5b79dcae9395dc6aff0f1f6798229cc1d96fba45f` |
-| 6 | `theorem` | [quotientMap_proj](../../../../GeneralTopology/IsHomeomorphicTrivialBundleQuotientMapProj.lean/declarations/quotientmap-proj.md) | 60 | `result-track:9e68bdd60161d7a06da3e33f5104ca0de24d8fe73fa4143fb061c65e2ce2fbf5` |
-| 7 | `theorem` | [isHomeomorphicTrivialFiberBundle_fst](../../../../GeneralTopology/IsHomeomorphicTrivialBundleQuotientMapProj.lean/declarations/ishomeomorphictrivialfiberbundle-fst.md) | 68 | `result-track:c7ad25c34216702905c6eddfda16cfdb0b48ff3421722f914739cafcd31abd6a` |
-| 8 | `theorem` | [isHomeomorphicTrivialFiberBundle_snd](../../../../GeneralTopology/IsHomeomorphicTrivialBundleQuotientMapProj.lean/declarations/ishomeomorphictrivialfiberbundle-snd.md) | 74 | `result-track:ad71991ab3c5c5bdfa7b0081913fa9cf9d3f01c3445e260bd2c32e002d000e4a` |
+| 1 | `def` | [IsHomeomorphicTrivialFiberBundle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/IsHomeomorphicTrivialBundleQuotientMapProj.lean/declarations/ishomeomorphictrivialfiberbundle.md) | 29 | `declaration-track:bdf7e061fd57c72809cec510678363d96a72f045c684eac9242bdf8206050bc2` |
+| 2 | `theorem` | [proj_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/IsHomeomorphicTrivialBundleQuotientMapProj.lean/declarations/proj-eq.md) | 37 | `result-track:42cf6d4ed118ee4bedb6f2c746a2fce53eb87e1a31d2f3ba059919e2fc1a356e` |
+| 3 | `theorem` | [surjective_proj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/IsHomeomorphicTrivialBundleQuotientMapProj.lean/declarations/surjective-proj.md) | 43 | `result-track:d23f5a51d116313418ea5e1548077d263a8f62e2b0ac2a8deaee5576e9cb500c` |
+| 4 | `theorem` | [continuous_proj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/IsHomeomorphicTrivialBundleQuotientMapProj.lean/declarations/continuous-proj.md) | 50 | `result-track:5853fd239d849650b361d23ebb0a13bbe48298e3eb870bb20f78e34fa2bde025` |
+| 5 | `theorem` | [isOpenMap_proj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/IsHomeomorphicTrivialBundleQuotientMapProj.lean/declarations/isopenmap-proj.md) | 55 | `result-track:1aa480ff62b010f3d53752b5b79dcae9395dc6aff0f1f6798229cc1d96fba45f` |
+| 6 | `theorem` | [quotientMap_proj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/IsHomeomorphicTrivialBundleQuotientMapProj.lean/declarations/quotientmap-proj.md) | 60 | `result-track:9e68bdd60161d7a06da3e33f5104ca0de24d8fe73fa4143fb061c65e2ce2fbf5` |
+| 7 | `theorem` | [isHomeomorphicTrivialFiberBundle_fst](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/IsHomeomorphicTrivialBundleQuotientMapProj.lean/declarations/ishomeomorphictrivialfiberbundle-fst.md) | 68 | `result-track:c7ad25c34216702905c6eddfda16cfdb0b48ff3421722f914739cafcd31abd6a` |
+| 8 | `theorem` | [isHomeomorphicTrivialFiberBundle_snd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/IsHomeomorphicTrivialBundleQuotientMapProj.lean/declarations/ishomeomorphictrivialfiberbundle-snd.md) | 74 | `result-track:ad71991ab3c5c5bdfa7b0081913fa9cf9d3f01c3445e260bd2c32e002d000e4a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

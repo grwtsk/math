@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ThetaPhiWhitenedInertia.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ThetaPhiWhitenedInertia.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ThetaPhiWhitenedInertia.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ThetaPhiWhitenedInertia.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [fintypeProd_pos_of_even_negative_count](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ThetaPhiWhitenedInertia.lean/declarations/fintypeprod-pos-of-even-negative-count.md) | 28 | `result-track:239266be842d90e3b27de076fe873e6d8657affbe7fb2ef1fa69b45e0cb162ee` |
-| 2 | `theorem` | [thetaPhiNormalizedParityCompression_pos_of_even_negativeInertia](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ThetaPhiWhitenedInertia.lean/declarations/thetaphinormalizedparitycompression-pos-of-even-negativeinertia.md) | 60 | `result-track:3ac7d3cf65d5dad911d211c10d973dd4bf64080ca6f416be8e111e4eacf6c3dc` |
-| 3 | `theorem` | [thetaPhiNormalizedParityCompression_nonnegative_of_negativeInertiaParity](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ThetaPhiWhitenedInertia.lean/declarations/thetaphinormalizedparitycompression-nonnegative-of-negativeinertiaparity.md) | 81 | `result-track:3b9ede1f8b15b68e6a280ec84aa4b8e753f8995b41e91b6c28774abf8bfaea58` |
-| 4 | `theorem` | [thetaPhiChristoffelHankel_nonnegative_of_negativeInertiaParity](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ThetaPhiWhitenedInertia.lean/declarations/thetaphichristoffelhankel-nonnegative-of-negativeinertiaparity.md) | 110 | `result-track:db20ceabbf719e9fb681b1486b6a9c6a6c68c7212a5cd9709152a8278c12b39d` |
+| 1 | `theorem` | [fintypeProd_pos_of_even_negative_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ThetaPhiWhitenedInertia.lean/declarations/fintypeprod-pos-of-even-negative-count.md) | 28 | `result-track:239266be842d90e3b27de076fe873e6d8657affbe7fb2ef1fa69b45e0cb162ee` |
+| 2 | `theorem` | [thetaPhiNormalizedParityCompression_pos_of_even_negativeInertia](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ThetaPhiWhitenedInertia.lean/declarations/thetaphinormalizedparitycompression-pos-of-even-negativeinertia.md) | 60 | `result-track:3ac7d3cf65d5dad911d211c10d973dd4bf64080ca6f416be8e111e4eacf6c3dc` |
+| 3 | `theorem` | [thetaPhiNormalizedParityCompression_nonnegative_of_negativeInertiaParity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ThetaPhiWhitenedInertia.lean/declarations/thetaphinormalizedparitycompression-nonnegative-of-negativeinertiaparity.md) | 81 | `result-track:3b9ede1f8b15b68e6a280ec84aa4b8e753f8995b41e91b6c28774abf8bfaea58` |
+| 4 | `theorem` | [thetaPhiChristoffelHankel_nonnegative_of_negativeInertiaParity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ThetaPhiWhitenedInertia.lean/declarations/thetaphichristoffelhankel-nonnegative-of-negativeinertiaparity.md) | 110 | `result-track:db20ceabbf719e9fb681b1486b6a9c6a6c68c7212a5cd9709152a8278c12b39d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

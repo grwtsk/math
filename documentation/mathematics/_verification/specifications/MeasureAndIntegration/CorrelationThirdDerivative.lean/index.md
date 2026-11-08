@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CorrelationThirdDerivative.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CorrelationThirdDerivative.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CorrelationThirdDerivative.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CorrelationThirdDerivative.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [normalizedSecondTest_measurable](../../../../MeasureAndIntegration/CorrelationThirdDerivative.lean/declarations/normalizedsecondtest-measurable.md) | 20 | `result-track:2aa440061f13591e53f3f20824239f51d379bc8ada8dcf22c2eac942bd021692` |
-| 2 | `theorem` | [sourceCorrelation_third_derivative_integral](../../../../MeasureAndIntegration/CorrelationThirdDerivative.lean/declarations/sourcecorrelation-third-derivative-integral.md) | 24 | `result-track:11c882e7fb6a04281778fda9d08fc400559161bd35409be1d6f9ac53fd736a75` |
-| 3 | `theorem` | [sourceCorrelation_third_derivative_eq](../../../../MeasureAndIntegration/CorrelationThirdDerivative.lean/declarations/sourcecorrelation-third-derivative-eq.md) | 83 | `result-track:0bf2403d06b9e256357c64d55ffe3821765443b307356bcbb83ace201fc52ae8` |
-| 4 | `theorem` | [sourceCorrelation_third_derivative_continuous](../../../../MeasureAndIntegration/CorrelationThirdDerivative.lean/declarations/sourcecorrelation-third-derivative-continuous.md) | 91 | `result-track:42a02e4ece8c5f1ba3c454a00709417cd507f1d6f8e82e58c4f5669f746b00d1` |
-| 5 | `theorem` | [sourceCorrelation_second_derivative_contDiff](../../../../MeasureAndIntegration/CorrelationThirdDerivative.lean/declarations/sourcecorrelation-second-derivative-contdiff.md) | 106 | `result-track:23e798b58f80321df32060fea586802284eabf581f8260ebbf856290a70ced25` |
-| 6 | `theorem` | [abs_integral_mul_le_sqrt_bounds](../../../../MeasureAndIntegration/CorrelationThirdDerivative.lean/declarations/abs-integral-mul-le-sqrt-bounds.md) | 113 | `result-track:49052d518693dcf6a6d6ec406b6f05d5411c99a2c7c6e56047632b71fc7cc073` |
-| 7 | `theorem` | [sourceCorrelation_third_derivative_abs_le](../../../../MeasureAndIntegration/CorrelationThirdDerivative.lean/declarations/sourcecorrelation-third-derivative-abs-le.md) | 156 | `result-track:d2e2711d84a097a8a8c9ea1b68434ce15a93336197d69ee49eef2b65f01e9d30` |
+| 1 | `theorem` | [normalizedSecondTest_measurable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CorrelationThirdDerivative.lean/declarations/normalizedsecondtest-measurable.md) | 20 | `result-track:2aa440061f13591e53f3f20824239f51d379bc8ada8dcf22c2eac942bd021692` |
+| 2 | `theorem` | [sourceCorrelation_third_derivative_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CorrelationThirdDerivative.lean/declarations/sourcecorrelation-third-derivative-integral.md) | 24 | `result-track:11c882e7fb6a04281778fda9d08fc400559161bd35409be1d6f9ac53fd736a75` |
+| 3 | `theorem` | [sourceCorrelation_third_derivative_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CorrelationThirdDerivative.lean/declarations/sourcecorrelation-third-derivative-eq.md) | 83 | `result-track:0bf2403d06b9e256357c64d55ffe3821765443b307356bcbb83ace201fc52ae8` |
+| 4 | `theorem` | [sourceCorrelation_third_derivative_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CorrelationThirdDerivative.lean/declarations/sourcecorrelation-third-derivative-continuous.md) | 91 | `result-track:42a02e4ece8c5f1ba3c454a00709417cd507f1d6f8e82e58c4f5669f746b00d1` |
+| 5 | `theorem` | [sourceCorrelation_second_derivative_contDiff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CorrelationThirdDerivative.lean/declarations/sourcecorrelation-second-derivative-contdiff.md) | 106 | `result-track:23e798b58f80321df32060fea586802284eabf581f8260ebbf856290a70ced25` |
+| 6 | `theorem` | [abs_integral_mul_le_sqrt_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CorrelationThirdDerivative.lean/declarations/abs-integral-mul-le-sqrt-bounds.md) | 113 | `result-track:49052d518693dcf6a6d6ec406b6f05d5411c99a2c7c6e56047632b71fc7cc073` |
+| 7 | `theorem` | [sourceCorrelation_third_derivative_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CorrelationThirdDerivative.lean/declarations/sourcecorrelation-third-derivative-abs-le.md) | 156 | `result-track:d2e2711d84a097a8a8c9ea1b68434ce15a93336197d69ee49eef2b65f01e9d30` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/HardConstraintNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/HardConstraintNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/HardConstraintNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/HardConstraintNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [HardConstraint](../../../../../ComputerScience/AlgorithmsInComputerScience/HardConstraintNamespaced.lean/declarations/hardconstraint.md) | 16 | `declaration-track:3acf8aa9d8cd0828ba392bd961804fc9c74914f0f77137a33d89225149974247` |
-| 2 | `def` | [SatisfiesAll](../../../../../ComputerScience/AlgorithmsInComputerScience/HardConstraintNamespaced.lean/declarations/satisfiesall.md) | 22 | `declaration-track:bd244bc60bf7db6d61bb66fd05e59d04937edb9ba22f7566821096d6d2a026d6` |
+| 1 | `structure` | [HardConstraint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/HardConstraintNamespaced.lean/declarations/hardconstraint.md) | 16 | `declaration-track:3acf8aa9d8cd0828ba392bd961804fc9c74914f0f77137a33d89225149974247` |
+| 2 | `def` | [SatisfiesAll](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/HardConstraintNamespaced.lean/declarations/satisfiesall.md) | 22 | `declaration-track:bd244bc60bf7db6d61bb66fd05e59d04937edb9ba22f7566821096d6d2a026d6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

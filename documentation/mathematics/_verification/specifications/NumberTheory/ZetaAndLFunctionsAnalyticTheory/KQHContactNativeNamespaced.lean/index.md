@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/KQHContactNativeNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/KQHContactNativeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/KQHContactNativeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/KQHContactNativeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [native_translations_commute](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/KQHContactNativeNamespaced.lean/declarations/native-translations-commute.md) | 30 | `result-track:3bed363f02952e689e5c09fd08e36e9ad9a29f1bb192ed9feddfe9e65db8ed9b` |
-| 2 | `theorem` | [native_translation_loop](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/KQHContactNativeNamespaced.lean/declarations/native-translation-loop.md) | 34 | `result-track:befa75423249f43cd4d16b1d07a95847a065e94370fea2b34f623f94a530c6fe` |
-| 3 | `theorem` | [native_chart_translations_commute](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/KQHContactNativeNamespaced.lean/declarations/native-chart-translations-commute.md) | 41 | `result-track:6b959e36d415596925e28d1fd7c60d4b16b2226cf0541ddc3a287a8380dd145a` |
-| 4 | `theorem` | [native_weyl_phase_trivial](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/KQHContactNativeNamespaced.lean/declarations/native-weyl-phase-trivial.md) | 49 | `result-track:c222aa59565933eb7b4e928ab4f258296bd8462997138cc36f88cfbbe58fa302` |
-| 5 | `theorem` | [native_modulation_phase](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/KQHContactNativeNamespaced.lean/declarations/native-modulation-phase.md) | 62 | `result-track:82a7683f5794c6cec1981d34e992e6ef74d015410663aa8a4b34815718b43d82` |
-| 6 | `theorem` | [native_translation_modulation_weyl](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/KQHContactNativeNamespaced.lean/declarations/native-translation-modulation-weyl.md) | 71 | `result-track:03166ddf5320bf66da5ee667e61e5f840f66134236e5ba3f6486f7d815efeb3d` |
+| 1 | `theorem` | [native_translations_commute](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/KQHContactNativeNamespaced.lean/declarations/native-translations-commute.md) | 30 | `result-track:3bed363f02952e689e5c09fd08e36e9ad9a29f1bb192ed9feddfe9e65db8ed9b` |
+| 2 | `theorem` | [native_translation_loop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/KQHContactNativeNamespaced.lean/declarations/native-translation-loop.md) | 34 | `result-track:befa75423249f43cd4d16b1d07a95847a065e94370fea2b34f623f94a530c6fe` |
+| 3 | `theorem` | [native_chart_translations_commute](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/KQHContactNativeNamespaced.lean/declarations/native-chart-translations-commute.md) | 41 | `result-track:6b959e36d415596925e28d1fd7c60d4b16b2226cf0541ddc3a287a8380dd145a` |
+| 4 | `theorem` | [native_weyl_phase_trivial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/KQHContactNativeNamespaced.lean/declarations/native-weyl-phase-trivial.md) | 49 | `result-track:c222aa59565933eb7b4e928ab4f258296bd8462997138cc36f88cfbbe58fa302` |
+| 5 | `theorem` | [native_modulation_phase](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/KQHContactNativeNamespaced.lean/declarations/native-modulation-phase.md) | 62 | `result-track:82a7683f5794c6cec1981d34e992e6ef74d015410663aa8a4b34815718b43d82` |
+| 6 | `theorem` | [native_translation_modulation_weyl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/KQHContactNativeNamespaced.lean/declarations/native-translation-modulation-weyl.md) | 71 | `result-track:03166ddf5320bf66da5ee667e61e5f840f66134236e5ba3f6486f7d815efeb3d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

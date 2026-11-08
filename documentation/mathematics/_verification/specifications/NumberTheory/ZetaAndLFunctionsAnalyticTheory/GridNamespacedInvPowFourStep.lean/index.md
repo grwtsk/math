@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/GridNamespacedInvPowFourStep.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/GridNamespacedInvPowFourStep.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/GridNamespacedInvPowFourStep.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/GridNamespacedInvPowFourStep.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [inv_pow_four_step](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/GridNamespacedInvPowFourStep.lean/declarations/inv-pow-four-step.md) | 37 | `result-track:8063de9e81db3ae33a47590f98f6aa7180ea9e5b9b3ee209a97a5830dbf24d79` |
-| 2 | `lemma` | [sum_inv_pow_four_le_telescope](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/GridNamespacedInvPowFourStep.lean/declarations/sum-inv-pow-four-le-telescope.md) | 49 | `result-track:c0f5781638ea7d6e0040dcb36bb1531026a40adea0a3332c0cd16b16410fec07` |
-| 3 | `lemma` | [sum_inv_pow_four_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/GridNamespacedInvPowFourStep.lean/declarations/sum-inv-pow-four-le.md) | 71 | `result-track:80da2f2c0a60d4d973cc9fa43502164bcc2ce6330bbbaf0f1b934db3f88ef00f` |
-| 4 | `lemma` | [grid_const_bound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/GridNamespacedInvPowFourStep.lean/declarations/grid-const-bound.md) | 83 | `result-track:a0aea1c2ce1bea07daed76a30ac2de282c6deb06abfe2e537d288d87995bbc26` |
-| 5 | `theorem` | [grid_sum_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/GridNamespacedInvPowFourStep.lean/declarations/grid-sum-le.md) | 103 | `result-track:83a13986a01e073bea28d695f8b420a230b1f81fad1d7834d78b5bb03db10d7e` |
+| 1 | `lemma` | [inv_pow_four_step](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/GridNamespacedInvPowFourStep.lean/declarations/inv-pow-four-step.md) | 37 | `result-track:8063de9e81db3ae33a47590f98f6aa7180ea9e5b9b3ee209a97a5830dbf24d79` |
+| 2 | `lemma` | [sum_inv_pow_four_le_telescope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/GridNamespacedInvPowFourStep.lean/declarations/sum-inv-pow-four-le-telescope.md) | 49 | `result-track:c0f5781638ea7d6e0040dcb36bb1531026a40adea0a3332c0cd16b16410fec07` |
+| 3 | `lemma` | [sum_inv_pow_four_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/GridNamespacedInvPowFourStep.lean/declarations/sum-inv-pow-four-le.md) | 71 | `result-track:80da2f2c0a60d4d973cc9fa43502164bcc2ce6330bbbaf0f1b934db3f88ef00f` |
+| 4 | `lemma` | [grid_const_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/GridNamespacedInvPowFourStep.lean/declarations/grid-const-bound.md) | 83 | `result-track:a0aea1c2ce1bea07daed76a30ac2de282c6deb06abfe2e537d288d87995bbc26` |
+| 5 | `theorem` | [grid_sum_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/GridNamespacedInvPowFourStep.lean/declarations/grid-sum-le.md) | 103 | `result-track:83a13986a01e073bea28d695f8b420a230b1f81fad1d7834d78b5bb03db10d7e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

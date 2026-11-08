@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/Density.lean/index.md) · [Full source](../../../../Combinatorics/Density.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Density.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Density.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,17 +57,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [imbalance](../../../../Combinatorics/Density.lean/declarations/imbalance.md) | 23 | `declaration-track:d0ccbdd909a982ba696af71c75e60e0afc8d99e717fdf293a3e6d69c79683f59` |
-| 2 | `theorem` | [count_odd_eq_div_two](../../../../Combinatorics/Density.lean/declarations/count-odd-eq-div-two.md) | 26 | `result-track:e7867aea0691f60345b3a535ecc017ab8350f7b7d41a32a5ac531d96d8b6e687` |
-| 3 | `def` | [finOddEquiv](../../../../Combinatorics/Density.lean/declarations/finoddequiv.md) | 41 | `declaration-track:3d55cc283ef6ed1cbaf11b2ebcbdcf872bebbc70a9c753a591dfbb1c69a6beae` |
-| 4 | `theorem` | [card_fin_odd](../../../../Combinatorics/Density.lean/declarations/card-fin-odd.md) | 52 | `result-track:75e670101a8f2d02b809a469a45b01317e567b529d6aef5b270dddf51e4e292e` |
-| 5 | `theorem` | [card_fin_even](../../../../Combinatorics/Density.lean/declarations/card-fin-even.md) | 66 | `result-track:2dd15b51def5a2e9563365fcde2d4d5ea939d2072d5a5b48c0b4ecaa89c9f86f` |
-| 6 | `theorem` | [checkerboard_count_arithmetic](../../../../Combinatorics/Density.lean/declarations/checkerboard-count-arithmetic.md) | 77 | `result-track:3149a059262e077141c6995e6f3a76680a8d8f45623bf618904deb90b9ebe8bf` |
-| 7 | `theorem` | [checkerboard_one_iff](../../../../Combinatorics/Density.lean/declarations/checkerboard-one-iff.md) | 145 | `result-track:dcca8f84f444d1bcd35899fcb16936715e583350deb9433f96fb8d653fa9b2c3` |
-| 8 | `theorem` | [checkerboard_countOnes_eq](../../../../Combinatorics/Density.lean/declarations/checkerboard-countones-eq.md) | 152 | `result-track:9f69d5d8f761d8d5d8c3d17988553186103d4df8909c4c63c19ca21733eabaee` |
-| 9 | `theorem` | [checkerboard_countZeros_eq](../../../../Combinatorics/Density.lean/declarations/checkerboard-countzeros-eq.md) | 179 | `result-track:2d6112d4d952cdc2b78c1d811368d529802227a70cda9ac2d45d4d467cdfdf74` |
-| 10 | `theorem` | [checkerboard_count_imbalance_abs_le_one](../../../../Combinatorics/Density.lean/declarations/checkerboard-count-imbalance-abs-le-one.md) | 187 | `result-track:b51ea5807a8bb7f4782ed9cbd0608250d4d2d8f006a761f59c660346d26e2116` |
-| 11 | `theorem` | [checkerboard_average_half_bound](../../../../Combinatorics/Density.lean/declarations/checkerboard-average-half-bound.md) | 209 | `result-track:5e46ee59693e50c80230670809185b27ce82f6a2cc9a99c23a233148d7a27f92` |
+| 1 | `def` | [imbalance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Density.lean/declarations/imbalance.md) | 23 | `declaration-track:d0ccbdd909a982ba696af71c75e60e0afc8d99e717fdf293a3e6d69c79683f59` |
+| 2 | `theorem` | [count_odd_eq_div_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Density.lean/declarations/count-odd-eq-div-two.md) | 26 | `result-track:e7867aea0691f60345b3a535ecc017ab8350f7b7d41a32a5ac531d96d8b6e687` |
+| 3 | `def` | [finOddEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Density.lean/declarations/finoddequiv.md) | 41 | `declaration-track:3d55cc283ef6ed1cbaf11b2ebcbdcf872bebbc70a9c753a591dfbb1c69a6beae` |
+| 4 | `theorem` | [card_fin_odd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Density.lean/declarations/card-fin-odd.md) | 52 | `result-track:75e670101a8f2d02b809a469a45b01317e567b529d6aef5b270dddf51e4e292e` |
+| 5 | `theorem` | [card_fin_even](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Density.lean/declarations/card-fin-even.md) | 66 | `result-track:2dd15b51def5a2e9563365fcde2d4d5ea939d2072d5a5b48c0b4ecaa89c9f86f` |
+| 6 | `theorem` | [checkerboard_count_arithmetic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Density.lean/declarations/checkerboard-count-arithmetic.md) | 77 | `result-track:3149a059262e077141c6995e6f3a76680a8d8f45623bf618904deb90b9ebe8bf` |
+| 7 | `theorem` | [checkerboard_one_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Density.lean/declarations/checkerboard-one-iff.md) | 145 | `result-track:dcca8f84f444d1bcd35899fcb16936715e583350deb9433f96fb8d653fa9b2c3` |
+| 8 | `theorem` | [checkerboard_countOnes_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Density.lean/declarations/checkerboard-countones-eq.md) | 152 | `result-track:9f69d5d8f761d8d5d8c3d17988553186103d4df8909c4c63c19ca21733eabaee` |
+| 9 | `theorem` | [checkerboard_countZeros_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Density.lean/declarations/checkerboard-countzeros-eq.md) | 179 | `result-track:2d6112d4d952cdc2b78c1d811368d529802227a70cda9ac2d45d4d467cdfdf74` |
+| 10 | `theorem` | [checkerboard_count_imbalance_abs_le_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Density.lean/declarations/checkerboard-count-imbalance-abs-le-one.md) | 187 | `result-track:b51ea5807a8bb7f4782ed9cbd0608250d4d2d8f006a761f59c660346d26e2116` |
+| 11 | `theorem` | [checkerboard_average_half_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Density.lean/declarations/checkerboard-average-half-bound.md) | 209 | `result-track:5e46ee59693e50c80230670809185b27ce82f6a2cc9a99c23a233148d7a27f92` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

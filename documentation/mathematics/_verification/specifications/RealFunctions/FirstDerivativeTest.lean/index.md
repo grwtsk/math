@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/FirstDerivativeTest.lean/index.md) · [Full source](../../../../RealFunctions/FirstDerivativeTest.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FirstDerivativeTest.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FirstDerivativeTest.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [isLocalMax_of_deriv_Ioo](../../../../RealFunctions/FirstDerivativeTest.lean/declarations/islocalmax-of-deriv-ioo.md) | 45 | `result-track:075147ba524b799cac5a9c273e03573f6cef5a90571eb8cd4f871423557e33d2` |
-| 2 | `lemma` | [isLocalMin_of_deriv_Ioo](../../../../RealFunctions/FirstDerivativeTest.lean/declarations/islocalmin-of-deriv-ioo.md) | 63 | `result-track:b1d7c1d38b592082f64f038ea406a4ba37335e20c98dd8a36cc1f5ad115f84d2` |
-| 3 | `lemma` | [isLocalMax_of_deriv'](../../../../RealFunctions/FirstDerivativeTest.lean/declarations/islocalmax-of-deriv.md) | 76 | `result-track:6996dc5ef20dbdf3f2aac26506a52c06d9e0c2c96f6e2dfefee02ed34b13b359` |
-| 4 | `lemma` | [isLocalMin_of_deriv'](../../../../RealFunctions/FirstDerivativeTest.lean/declarations/islocalmin-of-deriv.md) | 89 | `result-track:28dbd33747e15ad55e42b5e0f73426c4f4e04ce783fa4e8b37d935222eb9ad79` |
-| 5 | `theorem` | [isLocalMax_of_deriv](../../../../RealFunctions/FirstDerivativeTest.lean/declarations/islocalmax-of-deriv-source-edition-2.md) | 101 | `result-track:e25afeb068c63fb10ad2325af8cdb83400b10f31e89e1066d54b513764a8bba1` |
-| 6 | `theorem` | [isLocalMin_of_deriv](../../../../RealFunctions/FirstDerivativeTest.lean/declarations/islocalmin-of-deriv-source-edition-2.md) | 108 | `result-track:72bf3448a22e00a2332cbb53c050ce1f31e23d3be5d34a91ee717d533ac539b1` |
+| 1 | `lemma` | [isLocalMax_of_deriv_Ioo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FirstDerivativeTest.lean/declarations/islocalmax-of-deriv-ioo.md) | 45 | `result-track:075147ba524b799cac5a9c273e03573f6cef5a90571eb8cd4f871423557e33d2` |
+| 2 | `lemma` | [isLocalMin_of_deriv_Ioo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FirstDerivativeTest.lean/declarations/islocalmin-of-deriv-ioo.md) | 63 | `result-track:b1d7c1d38b592082f64f038ea406a4ba37335e20c98dd8a36cc1f5ad115f84d2` |
+| 3 | `lemma` | [isLocalMax_of_deriv'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FirstDerivativeTest.lean/declarations/islocalmax-of-deriv.md) | 76 | `result-track:6996dc5ef20dbdf3f2aac26506a52c06d9e0c2c96f6e2dfefee02ed34b13b359` |
+| 4 | `lemma` | [isLocalMin_of_deriv'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FirstDerivativeTest.lean/declarations/islocalmin-of-deriv.md) | 89 | `result-track:28dbd33747e15ad55e42b5e0f73426c4f4e04ce783fa4e8b37d935222eb9ad79` |
+| 5 | `theorem` | [isLocalMax_of_deriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FirstDerivativeTest.lean/declarations/islocalmax-of-deriv-source-edition-2.md) | 101 | `result-track:e25afeb068c63fb10ad2325af8cdb83400b10f31e89e1066d54b513764a8bba1` |
+| 6 | `theorem` | [isLocalMin_of_deriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FirstDerivativeTest.lean/declarations/islocalmin-of-deriv-source-edition-2.md) | 108 | `result-track:72bf3448a22e00a2332cbb53c050ce1f31e23d3be5d34a91ee717d533ac539b1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

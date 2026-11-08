@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Artifact.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Artifact.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Artifact.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Artifact.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Artifact](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Artifact.lean/declarations/artifact.md) | 10 | `declaration-track:ee68056d6e96e04a89901565282244e6b79b53686f98bc0247ac82a44f9dbbee` |
-| 2 | `def` | [Artifact.centerControlled](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Artifact.lean/declarations/artifact-centercontrolled.md) | 14 | `declaration-track:f772e7bc82f6337657f8a051737d083a65b615cdfea49317dea506c866375ecb` |
-| 3 | `theorem` | [Artifact.centerControlled_of_artifact](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Artifact.lean/declarations/artifact-centercontrolled-of-artifact.md) | 17 | `result-track:23dc8df21bfd9e990a010cf86de601d061023b2b51e224d53d68de9681b723f3` |
+| 1 | `structure` | [Artifact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Artifact.lean/declarations/artifact.md) | 10 | `declaration-track:ee68056d6e96e04a89901565282244e6b79b53686f98bc0247ac82a44f9dbbee` |
+| 2 | `def` | [Artifact.centerControlled](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Artifact.lean/declarations/artifact-centercontrolled.md) | 14 | `declaration-track:f772e7bc82f6337657f8a051737d083a65b615cdfea49317dea506c866375ecb` |
+| 3 | `theorem` | [Artifact.centerControlled_of_artifact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Artifact.lean/declarations/artifact-centercontrolled-of-artifact.md) | 17 | `result-track:23dc8df21bfd9e990a010cf86de601d061023b2b51e224d53d68de9681b723f3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/CriticalStripCoverClearance.lean/index.md) · [Full source](../../../../GeneralTopology/CriticalStripCoverClearance.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CriticalStripCoverClearance.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CriticalStripCoverClearance.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripSquaredCover`](../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSquaredCover.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripSquaredCover`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSquaredCover.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Topology.Order.Compact` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,20 +58,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [span](../../../../GeneralTopology/CriticalStripCoverClearance.lean/declarations/span.md) | 26 | `declaration-track:1ff12aa0a2bdb0f20d6a0725589e617497ebf1a042f8989515158278ecfcb24c` |
-| 2 | `def` | [Within](../../../../GeneralTopology/CriticalStripCoverClearance.lean/declarations/within.md) | 29 | `declaration-track:3d3cb489d67b6ecbd7d3a19ac32bf7c9766bc9bc0cded4cc644c7cc9fdd45cda` |
-| 3 | `lemma` | [within_refl](../../../../GeneralTopology/CriticalStripCoverClearance.lean/declarations/within-refl.md) | 33 | `result-track:85c78c1839a8f4314390a3e50d78834eb337064a2cba34c2195d55dd9d3d1869` |
-| 4 | `lemma` | [Within.trans](../../../../GeneralTopology/CriticalStripCoverClearance.lean/declarations/within-trans.md) | 36 | `result-track:c9c170d5806651e04ec5dfc0190b0e9b7548d78d82aa65165f866ec89948e3d7` |
-| 5 | `lemma` | [Within.carrier_subset](../../../../GeneralTopology/CriticalStripCoverClearance.lean/declarations/within-carrier-subset.md) | 41 | `result-track:78c6786781e18cc349f30051a7913c73b88ff5f96454a49b64291151b2a03a66` |
-| 6 | `lemma` | [span_nonneg](../../../../GeneralTopology/CriticalStripCoverClearance.lean/declarations/span-nonneg.md) | 50 | `result-track:23371862c48835d795584f5eb6047dcc5ef9cc8dbfe18a619cba26276451ec76` |
-| 7 | `lemma` | [norm_sub_le_span](../../../../GeneralTopology/CriticalStripCoverClearance.lean/declarations/norm-sub-le-span.md) | 54 | `result-track:99e4bc328eb6c3016cd30731bf9aa2b058c443c41c248c55c18dc78fc48e4c0f` |
-| 8 | `def` | [UniformDiskClearance](../../../../GeneralTopology/CriticalStripCoverClearance.lean/declarations/uniformdiskclearance.md) | 74 | `declaration-track:1708eb633e03656b4c7be4f53b576c76601628fee8f245dcb02feaff56c5fb03` |
-| 9 | `def` | [SmallBoxCovered](../../../../GeneralTopology/CriticalStripCoverClearance.lean/declarations/smallboxcovered.md) | 81 | `declaration-track:c10220d6251bb560b63120f984f6d4efbb5d9c36bef6d40270c5665dfef3b45d` |
-| 10 | `theorem` | [UniformDiskClearance.smallBoxCovered](../../../../GeneralTopology/CriticalStripCoverClearance.lean/declarations/uniformdiskclearance-smallboxcovered.md) | 88 | `result-track:02b2bd444d1274441c5b87a7194239ebe1ad660e9a9b4fccc707135f36d6fbf7` |
-| 11 | `theorem` | [UniformDiskClearance.count_pos](../../../../GeneralTopology/CriticalStripCoverClearance.lean/declarations/uniformdiskclearance-count-pos.md) | 109 | `result-track:915131af7b801515e2aa9f1a17bb2be23d626d82e9ddc316ff95294c090b9ec1` |
-| 12 | `theorem` | [UniformDiskClearance.source_nonzero](../../../../GeneralTopology/CriticalStripCoverClearance.lean/declarations/uniformdiskclearance-source-nonzero.md) | 118 | `result-track:275e3ecb9a6e8dff05ed443127f4a53d6b05e351bd172443dc8dcbec69f0265e` |
-| 13 | `def` | [OpenDiskCover](../../../../GeneralTopology/CriticalStripCoverClearance.lean/declarations/opendiskcover.md) | 129 | `declaration-track:69da4c01517866d8d1233396236464ececa7d584d478494984fae1e4cdc16ca4` |
-| 14 | `theorem` | [exists_clearance_of_compact_openCover](../../../../GeneralTopology/CriticalStripCoverClearance.lean/declarations/exists-clearance-of-compact-opencover.md) | 136 | `result-track:97c66c9d79f48ac0c1da4b16ec5bceedebc94594689c96c954cf1bbba2883dda` |
+| 1 | `def` | [span](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CriticalStripCoverClearance.lean/declarations/span.md) | 26 | `declaration-track:1ff12aa0a2bdb0f20d6a0725589e617497ebf1a042f8989515158278ecfcb24c` |
+| 2 | `def` | [Within](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CriticalStripCoverClearance.lean/declarations/within.md) | 29 | `declaration-track:3d3cb489d67b6ecbd7d3a19ac32bf7c9766bc9bc0cded4cc644c7cc9fdd45cda` |
+| 3 | `lemma` | [within_refl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CriticalStripCoverClearance.lean/declarations/within-refl.md) | 33 | `result-track:85c78c1839a8f4314390a3e50d78834eb337064a2cba34c2195d55dd9d3d1869` |
+| 4 | `lemma` | [Within.trans](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CriticalStripCoverClearance.lean/declarations/within-trans.md) | 36 | `result-track:c9c170d5806651e04ec5dfc0190b0e9b7548d78d82aa65165f866ec89948e3d7` |
+| 5 | `lemma` | [Within.carrier_subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CriticalStripCoverClearance.lean/declarations/within-carrier-subset.md) | 41 | `result-track:78c6786781e18cc349f30051a7913c73b88ff5f96454a49b64291151b2a03a66` |
+| 6 | `lemma` | [span_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CriticalStripCoverClearance.lean/declarations/span-nonneg.md) | 50 | `result-track:23371862c48835d795584f5eb6047dcc5ef9cc8dbfe18a619cba26276451ec76` |
+| 7 | `lemma` | [norm_sub_le_span](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CriticalStripCoverClearance.lean/declarations/norm-sub-le-span.md) | 54 | `result-track:99e4bc328eb6c3016cd30731bf9aa2b058c443c41c248c55c18dc78fc48e4c0f` |
+| 8 | `def` | [UniformDiskClearance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CriticalStripCoverClearance.lean/declarations/uniformdiskclearance.md) | 74 | `declaration-track:1708eb633e03656b4c7be4f53b576c76601628fee8f245dcb02feaff56c5fb03` |
+| 9 | `def` | [SmallBoxCovered](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CriticalStripCoverClearance.lean/declarations/smallboxcovered.md) | 81 | `declaration-track:c10220d6251bb560b63120f984f6d4efbb5d9c36bef6d40270c5665dfef3b45d` |
+| 10 | `theorem` | [UniformDiskClearance.smallBoxCovered](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CriticalStripCoverClearance.lean/declarations/uniformdiskclearance-smallboxcovered.md) | 88 | `result-track:02b2bd444d1274441c5b87a7194239ebe1ad660e9a9b4fccc707135f36d6fbf7` |
+| 11 | `theorem` | [UniformDiskClearance.count_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CriticalStripCoverClearance.lean/declarations/uniformdiskclearance-count-pos.md) | 109 | `result-track:915131af7b801515e2aa9f1a17bb2be23d626d82e9ddc316ff95294c090b9ec1` |
+| 12 | `theorem` | [UniformDiskClearance.source_nonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CriticalStripCoverClearance.lean/declarations/uniformdiskclearance-source-nonzero.md) | 118 | `result-track:275e3ecb9a6e8dff05ed443127f4a53d6b05e351bd172443dc8dcbec69f0265e` |
+| 13 | `def` | [OpenDiskCover](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CriticalStripCoverClearance.lean/declarations/opendiskcover.md) | 129 | `declaration-track:69da4c01517866d8d1233396236464ececa7d584d478494984fae1e4cdc16ca4` |
+| 14 | `theorem` | [exists_clearance_of_compact_openCover](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CriticalStripCoverClearance.lean/declarations/exists-clearance-of-compact-opencover.md) | 136 | `result-track:97c66c9d79f48ac0c1da4b16ec5bceedebc94594689c96c954cf1bbba2883dda` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

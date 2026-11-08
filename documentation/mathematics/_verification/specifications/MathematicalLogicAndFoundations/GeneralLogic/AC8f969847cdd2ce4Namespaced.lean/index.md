@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AC8f969847cdd2ce4Namespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AC8f969847cdd2ce4Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AC8f969847cdd2ce4Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AC8f969847cdd2ce4Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,7 +61,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Valid](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AC8f969847cdd2ce4Namespaced.lean/declarations/valid.md) | 22 | `declaration-track:a69de4d3f135fbebbebfa6a3dc224c84645fdaabcf5bee5ae08eaa2bbb4b4b44` |
+| 1 | `structure` | [Valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AC8f969847cdd2ce4Namespaced.lean/declarations/valid.md) | 22 | `declaration-track:a69de4d3f135fbebbebfa6a3dc224c84645fdaabcf5bee5ae08eaa2bbb4b4b44` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

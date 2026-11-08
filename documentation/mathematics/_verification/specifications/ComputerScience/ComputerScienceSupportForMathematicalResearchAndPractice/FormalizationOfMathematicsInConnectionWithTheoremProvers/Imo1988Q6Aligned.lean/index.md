@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Imo1988Q6Aligned.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Imo1988Q6Aligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Imo1988Q6Aligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Imo1988Q6Aligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,9 +61,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [constant_descent_vieta_jumping](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Imo1988Q6Aligned.lean/declarations/constant-descent-vieta-jumping.md) | 66 | `result-track:c97fab9c69fa515ecf0a6dbc473663e9392e31485bcac41333566bff8e774347` |
-| 2 | `theorem` | [imo1988_q6](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Imo1988Q6Aligned.lean/declarations/imo1988-q6.md) | 201 | `result-track:b8fa5c84b8560031a60f50b785e94a02a0bc1a41ebe99e0f6d3e451d6d73724f` |
-| 3 | `example` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Imo1988Q6Aligned.lean/declarations/example.md) | 260 | `declaration-track:2116bb9932a8a8cc2f0959032306cdb56c8a48aaa77df2bc7f91f635d415f331` |
+| 1 | `theorem` | [constant_descent_vieta_jumping](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Imo1988Q6Aligned.lean/declarations/constant-descent-vieta-jumping.md) | 66 | `result-track:c97fab9c69fa515ecf0a6dbc473663e9392e31485bcac41333566bff8e774347` |
+| 2 | `theorem` | [imo1988_q6](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Imo1988Q6Aligned.lean/declarations/imo1988-q6.md) | 201 | `result-track:b8fa5c84b8560031a60f50b785e94a02a0bc1a41ebe99e0f6d3e451d6d73724f` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Imo1988Q6Aligned.lean/declarations/example.md) | 260 | `declaration-track:2116bb9932a8a8cc2f0959032306cdb56c8a48aaa77df2bc7f91f635d415f331` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

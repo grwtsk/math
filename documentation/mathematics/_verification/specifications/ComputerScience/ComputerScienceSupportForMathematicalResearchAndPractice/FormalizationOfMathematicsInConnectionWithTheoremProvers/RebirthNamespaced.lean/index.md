@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RebirthNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RebirthNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RebirthNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RebirthNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [AnchorRebirthCertificate](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RebirthNamespaced.lean/declarations/anchorrebirthcertificate.md) | 25 | `declaration-track:122f14365b95e0a98d2c31a6fb0c1c375c7cae415b33c0c25dae09faf793f9e6` |
-| 2 | `def` | [applyCandidate](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RebirthNamespaced.lean/declarations/applycandidate.md) | 43 | `declaration-track:fd0aa84a08ef0a808f1d1de871fc3240c409c0efcf13a69ae33e22a3b0ba4d2f` |
-| 3 | `theorem` | [rejectedCandidate_preserves_active](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RebirthNamespaced.lean/declarations/rejectedcandidate-preserves-active.md) | 49 | `result-track:b8481d619bda7fbf74c1e8ee279ca03367378ba68f67ce8bbc1b8900ff02fd9c` |
+| 1 | `structure` | [AnchorRebirthCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RebirthNamespaced.lean/declarations/anchorrebirthcertificate.md) | 25 | `declaration-track:122f14365b95e0a98d2c31a6fb0c1c375c7cae415b33c0c25dae09faf793f9e6` |
+| 2 | `def` | [applyCandidate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RebirthNamespaced.lean/declarations/applycandidate.md) | 43 | `declaration-track:fd0aa84a08ef0a808f1d1de871fc3240c409c0efcf13a69ae33e22a3b0ba4d2f` |
+| 3 | `theorem` | [rejectedCandidate_preserves_active](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RebirthNamespaced.lean/declarations/rejectedcandidate-preserves-active.md) | 49 | `result-track:b8481d619bda7fbf74c1e8ee279ca03367378ba68f67ce8bbc1b8900ff02fd9c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

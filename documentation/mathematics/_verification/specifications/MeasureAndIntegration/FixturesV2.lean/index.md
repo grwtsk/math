@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/FixturesV2.lean/index.md) · [Full source](../../../../MeasureAndIntegration/FixturesV2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixturesV2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixturesV2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../MeasureAndIntegration/FixturesV2.lean/declarations/example-source-edition-2.md) | 8 | `declaration-track:9b34483a8e9f19789ad48c5a644c8af9dbd1078f1e50eaf441bbe4091ed5df68` |
-| 2 | `example` | [(anonymous)](../../../../MeasureAndIntegration/FixturesV2.lean/declarations/example.md) | 12 | `declaration-track:2b23fbc4e5fc9530b9e31c954c3e0e884e6629c899c59ae9e4d7a5635419b167` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixturesV2.lean/declarations/example-source-edition-2.md) | 8 | `declaration-track:9b34483a8e9f19789ad48c5a644c8af9dbd1078f1e50eaf441bbe4091ed5df68` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixturesV2.lean/declarations/example.md) | 12 | `declaration-track:2b23fbc4e5fc9530b9e31c954c3e0e884e6629c899c59ae9e4d7a5635419b167` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

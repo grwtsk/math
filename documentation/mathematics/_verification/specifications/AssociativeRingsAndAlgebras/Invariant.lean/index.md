@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/Invariant.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/Invariant.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Invariant.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Invariant.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [IsInvariantSubring](../../../../AssociativeRingsAndAlgebras/Invariant.lean/declarations/isinvariantsubring.md) | 29 | `declaration-track:a0dfcfdabf7bcbe02379074e7387623d5e04a138b0b8dcfa06f57c5ca30a3a63` |
-| 2 | `instance` | [IsInvariantSubring.toMulSemiringAction](../../../../AssociativeRingsAndAlgebras/Invariant.lean/declarations/tomulsemiringaction.md) | 32 | `declaration-track:7ff7048e4ee268659cfb2f2cc8cedca5d91f2006061375900ff8c29ec2e88fac` |
-| 3 | `def` | [IsInvariantSubring.subtypeHom](../../../../AssociativeRingsAndAlgebras/Invariant.lean/declarations/subtypehom.md) | 51 | `declaration-track:fa7e9107fa6235ec04fac3b00f2e4146bdf930efdc86dfb49d05caad010a707a` |
-| 4 | `theorem` | [IsInvariantSubring.coe_subtypeHom](../../../../AssociativeRingsAndAlgebras/Invariant.lean/declarations/coe-subtypehom.md) | 55 | `result-track:5d12683920fc34050cf4a60c3b4d8547830f6b34fbae3cb369a6ddc72fc47f65` |
-| 5 | `theorem` | [IsInvariantSubring.coe_subtypeHom'](../../../../AssociativeRingsAndAlgebras/Invariant.lean/declarations/coe-subtypehom-source-line-59-occurrence-2.md) | 59 | `result-track:639c5ed6ef7db2f76bf40830c44088f8f2e2a659d3ee76c98b8b5971924bf8cb` |
+| 1 | `class` | [IsInvariantSubring](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Invariant.lean/declarations/isinvariantsubring.md) | 29 | `declaration-track:a0dfcfdabf7bcbe02379074e7387623d5e04a138b0b8dcfa06f57c5ca30a3a63` |
+| 2 | `instance` | [IsInvariantSubring.toMulSemiringAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Invariant.lean/declarations/tomulsemiringaction.md) | 32 | `declaration-track:7ff7048e4ee268659cfb2f2cc8cedca5d91f2006061375900ff8c29ec2e88fac` |
+| 3 | `def` | [IsInvariantSubring.subtypeHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Invariant.lean/declarations/subtypehom.md) | 51 | `declaration-track:fa7e9107fa6235ec04fac3b00f2e4146bdf930efdc86dfb49d05caad010a707a` |
+| 4 | `theorem` | [IsInvariantSubring.coe_subtypeHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Invariant.lean/declarations/coe-subtypehom.md) | 55 | `result-track:5d12683920fc34050cf4a60c3b4d8547830f6b34fbae3cb369a6ddc72fc47f65` |
+| 5 | `theorem` | [IsInvariantSubring.coe_subtypeHom'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Invariant.lean/declarations/coe-subtypehom-source-line-59-occurrence-2.md) | 59 | `result-track:639c5ed6ef7db2f76bf40830c44088f8f2e2a659d3ee76c98b8b5971924bf8cb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/ObservationNamespacedEdition1.lean/index.md) · [Full source](../../../../CommutativeAlgebra/ObservationNamespacedEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ObservationNamespacedEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ObservationNamespacedEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PolynomialSource](../../../../CommutativeAlgebra/ObservationNamespacedEdition1.lean/declarations/polynomialsource.md) | 27 | `declaration-track:550dc8d5a9cd7031a988fceb136ca576cbaa7c374a6f00478a4490e8eac565fb` |
-| 2 | `structure` | [RootPreservingCompilation](../../../../CommutativeAlgebra/ObservationNamespacedEdition1.lean/declarations/rootpreservingcompilation.md) | 39 | `declaration-track:cee5349fb8ec88695204e81d008d96dbb5816acecbf8b869f15b2d6d51d7ff7b` |
-| 3 | `def` | [scaleCompilation](../../../../CommutativeAlgebra/ObservationNamespacedEdition1.lean/declarations/scalecompilation.md) | 48 | `declaration-track:b7a428ae51f9f05edcc160b373eea40ae9e9b1caab3d9bf973397d043b3c05cb` |
-| 4 | `theorem` | [scale_compilation_sound](../../../../CommutativeAlgebra/ObservationNamespacedEdition1.lean/declarations/scale-compilation-sound.md) | 55 | `result-track:649e3ebbe90b0ed9bb3ed19a81eafae95f8b7845584db01251bfde03b0f28489` |
-| 5 | `theorem` | [square_preserves_integer_roots](../../../../CommutativeAlgebra/ObservationNamespacedEdition1.lean/declarations/square-preserves-integer-roots.md) | 60 | `result-track:253234ee1962c90edf1e2b991c87024d41b2c5b705856bf4c97b81f25173c604` |
-| 6 | `theorem` | [positive_power_preserves_integer_roots](../../../../CommutativeAlgebra/ObservationNamespacedEdition1.lean/declarations/positive-power-preserves-integer-roots.md) | 65 | `result-track:6e6df6b362ec52000f9d675f3f89f6777a5671495cfa12f60d9aed64b1386e2f` |
-| 7 | `theorem` | [arbitrary_degree_inflation](../../../../CommutativeAlgebra/ObservationNamespacedEdition1.lean/declarations/arbitrary-degree-inflation.md) | 71 | `result-track:f8e0a72ab9d51f7bd7fbaf139cbaee6611b359f93a388b26b9c0e77b972159ef` |
-| 8 | `theorem` | [root_equivalence_does_not_determine_degree](../../../../CommutativeAlgebra/ObservationNamespacedEdition1.lean/declarations/root-equivalence-does-not-determine-degree.md) | 80 | `result-track:e7b4087d31548001607c1766727e2e44900553a01a39c16ab00f06e4d62d7554` |
+| 1 | `structure` | [PolynomialSource](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ObservationNamespacedEdition1.lean/declarations/polynomialsource.md) | 27 | `declaration-track:550dc8d5a9cd7031a988fceb136ca576cbaa7c374a6f00478a4490e8eac565fb` |
+| 2 | `structure` | [RootPreservingCompilation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ObservationNamespacedEdition1.lean/declarations/rootpreservingcompilation.md) | 39 | `declaration-track:cee5349fb8ec88695204e81d008d96dbb5816acecbf8b869f15b2d6d51d7ff7b` |
+| 3 | `def` | [scaleCompilation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ObservationNamespacedEdition1.lean/declarations/scalecompilation.md) | 48 | `declaration-track:b7a428ae51f9f05edcc160b373eea40ae9e9b1caab3d9bf973397d043b3c05cb` |
+| 4 | `theorem` | [scale_compilation_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ObservationNamespacedEdition1.lean/declarations/scale-compilation-sound.md) | 55 | `result-track:649e3ebbe90b0ed9bb3ed19a81eafae95f8b7845584db01251bfde03b0f28489` |
+| 5 | `theorem` | [square_preserves_integer_roots](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ObservationNamespacedEdition1.lean/declarations/square-preserves-integer-roots.md) | 60 | `result-track:253234ee1962c90edf1e2b991c87024d41b2c5b705856bf4c97b81f25173c604` |
+| 6 | `theorem` | [positive_power_preserves_integer_roots](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ObservationNamespacedEdition1.lean/declarations/positive-power-preserves-integer-roots.md) | 65 | `result-track:6e6df6b362ec52000f9d675f3f89f6777a5671495cfa12f60d9aed64b1386e2f` |
+| 7 | `theorem` | [arbitrary_degree_inflation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ObservationNamespacedEdition1.lean/declarations/arbitrary-degree-inflation.md) | 71 | `result-track:f8e0a72ab9d51f7bd7fbaf139cbaee6611b359f93a388b26b9c0e77b972159ef` |
+| 8 | `theorem` | [root_equivalence_does_not_determine_degree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ObservationNamespacedEdition1.lean/declarations/root-equivalence-does-not-determine-degree.md) | 80 | `result-track:e7b4087d31548001607c1766727e2e44900553a01a39c16ab00f06e4d62d7554` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

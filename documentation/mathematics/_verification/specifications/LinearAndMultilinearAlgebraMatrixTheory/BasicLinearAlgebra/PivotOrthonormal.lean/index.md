@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotOrthonormal.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotOrthonormal.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotOrthonormal.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotOrthonormal.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_orthonormal_frame_of_intrinsicPlane](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotOrthonormal.lean/declarations/exists-orthonormal-frame-of-intrinsicplane.md) | 31 | `result-track:53548c3a57256e7be5251c545852573d378d3a6afb6037cece12313c5943b875` |
-| 2 | `theorem` | [exists_orthogonal_rowChange_of_orthonormal_frames](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotOrthonormal.lean/declarations/exists-orthogonal-rowchange-of-orthonormal-frames.md) | 68 | `result-track:b12f80f60a0756361641603cc10769673faef29724d2e6013f24e96fb205da1c` |
-| 3 | `theorem` | [intrinsicPlane_controlled_orthonormal_pivot](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotOrthonormal.lean/declarations/intrinsicplane-controlled-orthonormal-pivot.md) | 86 | `result-track:8fa704dc849f408c01973bda0c0231d1398c604fcd752e41307d80e64e2c8b2c` |
-| 4 | `theorem` | [controlledPivotDomain_orthonormal_representative_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotOrthonormal.lean/declarations/controlledpivotdomain-orthonormal-representative-iff.md) | 95 | `result-track:d08d9e93d2711d5ca0561b18a5a0e71fac464faa490c13a93091c8780af96349` |
+| 1 | `theorem` | [exists_orthonormal_frame_of_intrinsicPlane](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotOrthonormal.lean/declarations/exists-orthonormal-frame-of-intrinsicplane.md) | 31 | `result-track:53548c3a57256e7be5251c545852573d378d3a6afb6037cece12313c5943b875` |
+| 2 | `theorem` | [exists_orthogonal_rowChange_of_orthonormal_frames](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotOrthonormal.lean/declarations/exists-orthogonal-rowchange-of-orthonormal-frames.md) | 68 | `result-track:b12f80f60a0756361641603cc10769673faef29724d2e6013f24e96fb205da1c` |
+| 3 | `theorem` | [intrinsicPlane_controlled_orthonormal_pivot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotOrthonormal.lean/declarations/intrinsicplane-controlled-orthonormal-pivot.md) | 86 | `result-track:8fa704dc849f408c01973bda0c0231d1398c604fcd752e41307d80e64e2c8b2c` |
+| 4 | `theorem` | [controlledPivotDomain_orthonormal_representative_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotOrthonormal.lean/declarations/controlledpivotdomain-orthonormal-representative-iff.md) | 95 | `result-track:d08d9e93d2711d5ca0561b18a5a0e71fac464faa490c13a93091c8780af96349` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

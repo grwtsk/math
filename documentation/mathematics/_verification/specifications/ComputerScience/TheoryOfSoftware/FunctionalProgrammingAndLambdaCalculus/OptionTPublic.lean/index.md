@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/OptionTPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/OptionTPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/OptionTPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/OptionTPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [run_monadLift](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/OptionTPublic.lean/declarations/run-monadlift.md) | 21 | `result-track:751c81f5e86df446989fa28cd87512696b28a22f374171d64cf9f4c9bd1008c3` |
-| 2 | `theorem` | [run_mapConst](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/OptionTPublic.lean/declarations/run-mapconst.md) | 24 | `result-track:debf1c4a92cd71d73ef64468df0d10b55016ea76949c056cd0dddd346a82a897` |
-| 3 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/OptionTPublic.lean/declarations/instance.md) | 27 | `declaration-track:56aeb585e49d925450622c7af5691d289a373983e32822cd5b416ee75a85dc72` |
+| 1 | `theorem` | [run_monadLift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/OptionTPublic.lean/declarations/run-monadlift.md) | 21 | `result-track:751c81f5e86df446989fa28cd87512696b28a22f374171d64cf9f4c9bd1008c3` |
+| 2 | `theorem` | [run_mapConst](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/OptionTPublic.lean/declarations/run-mapconst.md) | 24 | `result-track:debf1c4a92cd71d73ef64468df0d10b55016ea76949c056cd0dddd346a82a897` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/OptionTPublic.lean/declarations/instance.md) | 27 | `declaration-track:56aeb585e49d925450622c7af5691d289a373983e32822cd5b416ee75a85dc72` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

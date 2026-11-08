@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/Subquiver.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/Subquiver.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/Subquiver.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/Subquiver.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,17 +58,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [WideSubquiver](../../../../../Combinatorics/GraphTheory/Subquiver.lean/declarations/widesubquiver.md) | 23 | `declaration-track:4d742c30236acee0e420809db767901585bec8377e0ba39f095478ae882b5f61` |
-| 2 | `def` | [WideSubquiver.toType](../../../../../Combinatorics/GraphTheory/Subquiver.lean/declarations/widesubquiver-totype.md) | 29 | `declaration-track:b1281677934667ad4cb1939482a4e1cfe4f6aa8f56c4a638cdf7a12f0986dbf5` |
-| 3 | `instance` | [wideSubquiverHasCoeToSort](../../../../../Combinatorics/GraphTheory/Subquiver.lean/declarations/widesubquiverhascoetosort.md) | 32 | `declaration-track:b50ec30cac1f0b6ce4bf7415329b90a9332297c6fc2697a9d690703e77589049` |
-| 4 | `instance` | [WideSubquiver.quiver](../../../../../Combinatorics/GraphTheory/Subquiver.lean/declarations/widesubquiver-quiver.md) | 36 | `declaration-track:76e8fe4c9fa4a9f79b1ff98e6cda0123b917cc0a2a526d1e95bb43677a0c311f` |
-| 5 | `instance` | [(anonymous)](../../../../../Combinatorics/GraphTheory/Subquiver.lean/declarations/instance-source-edition-2.md) | 41 | `declaration-track:828e403520712e1bac740c9244848c13bd3d430dc8cd5097c35c8896b780c6f2` |
-| 6 | `instance` | [(anonymous)](../../../../../Combinatorics/GraphTheory/Subquiver.lean/declarations/instance-source-edition-3.md) | 44 | `declaration-track:ab329742acf052920b8f10495e67dc62a246d850281c03d44fbf5490d40f5e69` |
-| 7 | `instance` | [(anonymous)](../../../../../Combinatorics/GraphTheory/Subquiver.lean/declarations/instance-source-edition-4.md) | 47 | `declaration-track:d1bf994a488cbac568edb05d69bd5c72fadb022643e059a76c6adfd1444bf132` |
-| 8 | `structure` | [Total](../../../../../Combinatorics/GraphTheory/Subquiver.lean/declarations/total.md) | 54 | `declaration-track:f84c876424f733c052ccb8cc8dbafd10b0678d32694de6778dc9f852db95f77c` |
-| 9 | `def` | [wideSubquiverEquivSetTotal](../../../../../Combinatorics/GraphTheory/Subquiver.lean/declarations/widesubquiverequivsettotal.md) | 63 | `declaration-track:576523b1303fe9447735927e39250282151639839713f1bccc8a444419107498` |
-| 10 | `def` | [Labelling](../../../../../Combinatorics/GraphTheory/Subquiver.lean/declarations/labelling.md) | 72 | `declaration-track:2627fd20372540f49b48f8632252fc981fea73ce1890c78a7f4a90b611b98036` |
-| 11 | `instance` | [(anonymous)](../../../../../Combinatorics/GraphTheory/Subquiver.lean/declarations/instance.md) | 75 | `declaration-track:4c7a8a416435e8b3dc825007dacf53129560de9294b4e463e0eb2ad9c7e3ca83` |
+| 1 | `def` | [WideSubquiver](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/Subquiver.lean/declarations/widesubquiver.md) | 23 | `declaration-track:4d742c30236acee0e420809db767901585bec8377e0ba39f095478ae882b5f61` |
+| 2 | `def` | [WideSubquiver.toType](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/Subquiver.lean/declarations/widesubquiver-totype.md) | 29 | `declaration-track:b1281677934667ad4cb1939482a4e1cfe4f6aa8f56c4a638cdf7a12f0986dbf5` |
+| 3 | `instance` | [wideSubquiverHasCoeToSort](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/Subquiver.lean/declarations/widesubquiverhascoetosort.md) | 32 | `declaration-track:b50ec30cac1f0b6ce4bf7415329b90a9332297c6fc2697a9d690703e77589049` |
+| 4 | `instance` | [WideSubquiver.quiver](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/Subquiver.lean/declarations/widesubquiver-quiver.md) | 36 | `declaration-track:76e8fe4c9fa4a9f79b1ff98e6cda0123b917cc0a2a526d1e95bb43677a0c311f` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/Subquiver.lean/declarations/instance-source-edition-2.md) | 41 | `declaration-track:828e403520712e1bac740c9244848c13bd3d430dc8cd5097c35c8896b780c6f2` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/Subquiver.lean/declarations/instance-source-edition-3.md) | 44 | `declaration-track:ab329742acf052920b8f10495e67dc62a246d850281c03d44fbf5490d40f5e69` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/Subquiver.lean/declarations/instance-source-edition-4.md) | 47 | `declaration-track:d1bf994a488cbac568edb05d69bd5c72fadb022643e059a76c6adfd1444bf132` |
+| 8 | `structure` | [Total](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/Subquiver.lean/declarations/total.md) | 54 | `declaration-track:f84c876424f733c052ccb8cc8dbafd10b0678d32694de6778dc9f852db95f77c` |
+| 9 | `def` | [wideSubquiverEquivSetTotal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/Subquiver.lean/declarations/widesubquiverequivsettotal.md) | 63 | `declaration-track:576523b1303fe9447735927e39250282151639839713f1bccc8a444419107498` |
+| 10 | `def` | [Labelling](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/Subquiver.lean/declarations/labelling.md) | 72 | `declaration-track:2627fd20372540f49b48f8632252fc981fea73ce1890c78a7f4a90b611b98036` |
+| 11 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/Subquiver.lean/declarations/instance.md) | 75 | `declaration-track:4c7a8a416435e8b3dc825007dacf53129560de9294b4e463e0eb2ad9c7e3ca83` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

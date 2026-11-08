@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/RCLikeLemmas.lean/index.md) · [Full source](../../../../FunctionalAnalysis/RCLikeLemmas.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/RCLikeLemmas.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/RCLikeLemmas.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,18 +58,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [ofReal_eval](../../../../FunctionalAnalysis/RCLikeLemmas.lean/declarations/ofreal-eval.md) | 17 | `result-track:0479712b2d90b4691ff9a879f9c3934f3a0efb0f1c76d0265bea599ccf973c87` |
-| 2 | `lemma` | [RCLike.span_one_I](../../../../FunctionalAnalysis/RCLikeLemmas.lean/declarations/rclike-span-one-i.md) | 23 | `result-track:36cf45fb006361246e12f39425b0cb0e7e5505aae564cfccb66ffa829f34be63` |
-| 3 | `lemma` | [RCLike.rank_le_two](../../../../FunctionalAnalysis/RCLikeLemmas.lean/declarations/rclike-rank-le-two.md) | 29 | `result-track:799278f64c2fa021d918359c64fa7c70221f09b759e6eb0064688f2da7fe2081` |
-| 4 | `lemma` | [RCLike.finrank_le_two](../../../../FunctionalAnalysis/RCLikeLemmas.lean/declarations/rclike-finrank-le-two.md) | 41 | `result-track:d86d69176a553d0fb29702ce3811f37ace2a336510e9a4d974a2245a124f195b` |
-| 5 | `instance` | [rclike_to_real](../../../../FunctionalAnalysis/RCLikeLemmas.lean/declarations/rclike-to-real.md) | 53 | `declaration-track:cc457119b764aad3873e35f4fb43009f5903366caa8ec5f0bedd554c5f0f0f39` |
-| 6 | `theorem` | [proper_rclike](../../../../FunctionalAnalysis/RCLikeLemmas.lean/declarations/proper-rclike.md) | 62 | `result-track:1dd270d30cc51abf9ed5a4c0bfc0280c679eee4016ab6a208ac6735257418edc` |
-| 7 | `instance` | [RCLike.properSpace_submodule](../../../../FunctionalAnalysis/RCLikeLemmas.lean/declarations/rclike-properspace-submodule.md) | 69 | `declaration-track:79ef0e31bf30886c7df9d3fcf5fec1372def88ac5457adc95379e420283b5d51` |
-| 8 | `theorem` | [reCLM_norm](../../../../FunctionalAnalysis/RCLikeLemmas.lean/declarations/reclm-norm.md) | 78 | `result-track:fae3738803bb0379df27f15bac84b0e73011c356582cc2905cefb788fe2ac16c` |
-| 9 | `theorem` | [conjCLE_norm](../../../../FunctionalAnalysis/RCLikeLemmas.lean/declarations/conjcle-norm.md) | 84 | `result-track:cb13f42bbfae6f6ea2b7528e2aafd4fc836dc09c0e3afaa873b876d4293926f7` |
-| 10 | `theorem` | [ofRealCLM_norm](../../../../FunctionalAnalysis/RCLikeLemmas.lean/declarations/ofrealclm-norm.md) | 88 | `result-track:cae30530583b835e7ac281e282a8c06ec971391a6cc32ae6c0904e7251b4a63c` |
-| 11 | `lemma` | [aeval_conj](../../../../FunctionalAnalysis/RCLikeLemmas.lean/declarations/aeval-conj.md) | 98 | `result-track:89be44a81475c5f47df01926d7d80ed4008f7cb69efc64058d59efea3741eb82` |
-| 12 | `lemma` | [aeval_ofReal](../../../../FunctionalAnalysis/RCLikeLemmas.lean/declarations/aeval-ofreal.md) | 101 | `result-track:559cfea17530d1e4ef34f64ff3477b8b689d7bb22b59a4e160a875cf6cad706b` |
+| 1 | `theorem` | [ofReal_eval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/RCLikeLemmas.lean/declarations/ofreal-eval.md) | 17 | `result-track:0479712b2d90b4691ff9a879f9c3934f3a0efb0f1c76d0265bea599ccf973c87` |
+| 2 | `lemma` | [RCLike.span_one_I](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/RCLikeLemmas.lean/declarations/rclike-span-one-i.md) | 23 | `result-track:36cf45fb006361246e12f39425b0cb0e7e5505aae564cfccb66ffa829f34be63` |
+| 3 | `lemma` | [RCLike.rank_le_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/RCLikeLemmas.lean/declarations/rclike-rank-le-two.md) | 29 | `result-track:799278f64c2fa021d918359c64fa7c70221f09b759e6eb0064688f2da7fe2081` |
+| 4 | `lemma` | [RCLike.finrank_le_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/RCLikeLemmas.lean/declarations/rclike-finrank-le-two.md) | 41 | `result-track:d86d69176a553d0fb29702ce3811f37ace2a336510e9a4d974a2245a124f195b` |
+| 5 | `instance` | [rclike_to_real](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/RCLikeLemmas.lean/declarations/rclike-to-real.md) | 53 | `declaration-track:cc457119b764aad3873e35f4fb43009f5903366caa8ec5f0bedd554c5f0f0f39` |
+| 6 | `theorem` | [proper_rclike](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/RCLikeLemmas.lean/declarations/proper-rclike.md) | 62 | `result-track:1dd270d30cc51abf9ed5a4c0bfc0280c679eee4016ab6a208ac6735257418edc` |
+| 7 | `instance` | [RCLike.properSpace_submodule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/RCLikeLemmas.lean/declarations/rclike-properspace-submodule.md) | 69 | `declaration-track:79ef0e31bf30886c7df9d3fcf5fec1372def88ac5457adc95379e420283b5d51` |
+| 8 | `theorem` | [reCLM_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/RCLikeLemmas.lean/declarations/reclm-norm.md) | 78 | `result-track:fae3738803bb0379df27f15bac84b0e73011c356582cc2905cefb788fe2ac16c` |
+| 9 | `theorem` | [conjCLE_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/RCLikeLemmas.lean/declarations/conjcle-norm.md) | 84 | `result-track:cb13f42bbfae6f6ea2b7528e2aafd4fc836dc09c0e3afaa873b876d4293926f7` |
+| 10 | `theorem` | [ofRealCLM_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/RCLikeLemmas.lean/declarations/ofrealclm-norm.md) | 88 | `result-track:cae30530583b835e7ac281e282a8c06ec971391a6cc32ae6c0904e7251b4a63c` |
+| 11 | `lemma` | [aeval_conj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/RCLikeLemmas.lean/declarations/aeval-conj.md) | 98 | `result-track:89be44a81475c5f47df01926d7d80ed4008f7cb69efc64058d59efea3741eb82` |
+| 12 | `lemma` | [aeval_ofReal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/RCLikeLemmas.lean/declarations/aeval-ofreal.md) | 101 | `result-track:559cfea17530d1e4ef34f64ff3477b8b689d7bb22b59a4e160a875cf6cad706b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

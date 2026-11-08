@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/HolomorphicLineGaugeMetric.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/HolomorphicLineGaugeMetric.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/HolomorphicLineGaugeMetric.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/HolomorphicLineGaugeMetric.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.HolomorphicLineMetric`](../../../../GeneralTopology/HolomorphicLineMetric.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.HolomorphicLineMetric`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineMetric.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,16 +57,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [transportMetric](../../../../FunctionsOfAComplexVariable/HolomorphicLineGaugeMetric.lean/declarations/transportmetric.md) | 25 | `declaration-track:476a99c853d2e32f4f86ad9e8e6e16edd6d5ef6bfdd4b2db6bae9cae739dd1ca` |
-| 2 | `theorem` | [transport_weight_mul](../../../../FunctionsOfAComplexVariable/HolomorphicLineGaugeMetric.lean/declarations/transport-weight-mul.md) | 43 | `result-track:2ad223b5f223b5043122a16f73abe5528a3cbb9e3ac49b7e34f7174ffbc025a9` |
-| 3 | `theorem` | [transportMetric_symm](../../../../FunctionsOfAComplexVariable/HolomorphicLineGaugeMetric.lean/declarations/transportmetric-symm.md) | 54 | `result-track:83d66ef797003d3e369bb0ee603afbf4328e09d900088c1cdf309846b99c01eb` |
-| 4 | `theorem` | [pairing_transport](../../../../FunctionsOfAComplexVariable/HolomorphicLineGaugeMetric.lean/declarations/pairing-transport.md) | 64 | `result-track:4bd49386338b478a9dfca8f6820d7448212c90baacfe5bcb55cc1b982fae35a5` |
-| 5 | `theorem` | [squaredNorm_transport](../../../../FunctionsOfAComplexVariable/HolomorphicLineGaugeMetric.lean/declarations/squarednorm-transport.md) | 75 | `result-track:cdc7404bb86608f2784fbc26bb54e2b9eb755a7fab08baa27792efb6cf6e6026` |
-| 6 | `theorem` | [fiberNorm_transport](../../../../FunctionsOfAComplexVariable/HolomorphicLineGaugeMetric.lean/declarations/fibernorm-transport.md) | 85 | `result-track:2e6ff0df2766325bd4c9f386aa120a3005e55f3cc71dfc0929d75f7328da88bb` |
-| 7 | `theorem` | [transportMetric_unique](../../../../FunctionsOfAComplexVariable/HolomorphicLineGaugeMetric.lean/declarations/transportmetric-unique.md) | 93 | `result-track:5ca6b38e369979716ac85ed8e0ba040af33fffd0d3be5eb7a77d403b59840886` |
-| 8 | `theorem` | [pairing_transport_to_selected](../../../../FunctionsOfAComplexVariable/HolomorphicLineGaugeMetric.lean/declarations/pairing-transport-to-selected.md) | 108 | `result-track:7419e4e00b3b396a55bbb153d35fa7012fed6dc98c6285051785d23f1905c57d` |
-| 9 | `theorem` | [positive_weights_can_mismatch](../../../../FunctionsOfAComplexVariable/HolomorphicLineGaugeMetric.lean/declarations/positive-weights-can-mismatch.md) | 123 | `result-track:50f8d94c13fc2a08dba182e27687f68d29037a668702fe6ea3968d8b0f8c67cb` |
-| 10 | `theorem` | [doubling_target_weight](../../../../FunctionsOfAComplexVariable/HolomorphicLineGaugeMetric.lean/declarations/doubling-target-weight.md) | 134 | `result-track:8a74ed97eee2db40adb8f8f4700728442dec0764027b37492da2e4e5d6e13bb8` |
+| 1 | `def` | [transportMetric](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/HolomorphicLineGaugeMetric.lean/declarations/transportmetric.md) | 25 | `declaration-track:476a99c853d2e32f4f86ad9e8e6e16edd6d5ef6bfdd4b2db6bae9cae739dd1ca` |
+| 2 | `theorem` | [transport_weight_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/HolomorphicLineGaugeMetric.lean/declarations/transport-weight-mul.md) | 43 | `result-track:2ad223b5f223b5043122a16f73abe5528a3cbb9e3ac49b7e34f7174ffbc025a9` |
+| 3 | `theorem` | [transportMetric_symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/HolomorphicLineGaugeMetric.lean/declarations/transportmetric-symm.md) | 54 | `result-track:83d66ef797003d3e369bb0ee603afbf4328e09d900088c1cdf309846b99c01eb` |
+| 4 | `theorem` | [pairing_transport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/HolomorphicLineGaugeMetric.lean/declarations/pairing-transport.md) | 64 | `result-track:4bd49386338b478a9dfca8f6820d7448212c90baacfe5bcb55cc1b982fae35a5` |
+| 5 | `theorem` | [squaredNorm_transport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/HolomorphicLineGaugeMetric.lean/declarations/squarednorm-transport.md) | 75 | `result-track:cdc7404bb86608f2784fbc26bb54e2b9eb755a7fab08baa27792efb6cf6e6026` |
+| 6 | `theorem` | [fiberNorm_transport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/HolomorphicLineGaugeMetric.lean/declarations/fibernorm-transport.md) | 85 | `result-track:2e6ff0df2766325bd4c9f386aa120a3005e55f3cc71dfc0929d75f7328da88bb` |
+| 7 | `theorem` | [transportMetric_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/HolomorphicLineGaugeMetric.lean/declarations/transportmetric-unique.md) | 93 | `result-track:5ca6b38e369979716ac85ed8e0ba040af33fffd0d3be5eb7a77d403b59840886` |
+| 8 | `theorem` | [pairing_transport_to_selected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/HolomorphicLineGaugeMetric.lean/declarations/pairing-transport-to-selected.md) | 108 | `result-track:7419e4e00b3b396a55bbb153d35fa7012fed6dc98c6285051785d23f1905c57d` |
+| 9 | `theorem` | [positive_weights_can_mismatch](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/HolomorphicLineGaugeMetric.lean/declarations/positive-weights-can-mismatch.md) | 123 | `result-track:50f8d94c13fc2a08dba182e27687f68d29037a668702fe6ea3968d8b0f8c67cb` |
+| 10 | `theorem` | [doubling_target_weight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/HolomorphicLineGaugeMetric.lean/declarations/doubling-target-weight.md) | 134 | `result-track:8a74ed97eee2db40adb8f8f4700728442dec0764027b37492da2e4e5d6e13bb8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

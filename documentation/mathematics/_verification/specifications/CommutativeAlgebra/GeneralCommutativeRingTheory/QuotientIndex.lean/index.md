@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/QuotientIndex.lean/index.md) · [Full source](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/QuotientIndex.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/QuotientIndex.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/QuotientIndex.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -65,11 +65,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [Submodule.finite_quotient_smul](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/QuotientIndex.lean/declarations/submodule-finite-quotient-smul.md) | 35 | `result-track:a3a8f2d28ffcef3f408774313309124eae33b1e31690556e9ec8240b61207b4c` |
-| 2 | `lemma` | [Submodule.index_smul_le](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/QuotientIndex.lean/declarations/submodule-index-smul-le.md) | 58 | `result-track:2f74f951d243fe4d5abbc179fe84d396cc62c98edfa4e1fb5e2e85be0d3787ab` |
-| 3 | `lemma` | [Ideal.finite_quotient_prod](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/QuotientIndex.lean/declarations/ideal-finite-quotient-prod.md) | 86 | `result-track:d1ede8d4c570f1e8b45e409ba6b5092d2ce75d9b4489739c6ca385f9f92dce36` |
-| 4 | `lemma` | [Ideal.finite_quotient_pow](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/QuotientIndex.lean/declarations/ideal-finite-quotient-pow.md) | 97 | `result-track:2531bd0336fd4b7b8d8d4b42283b57a46440c51cfa71a250eacb2ecfdab2fa9f` |
-| 5 | `lemma` | [Ideal.index_pow_le](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/QuotientIndex.lean/declarations/ideal-index-pow-le.md) | 105 | `result-track:a29a90575afb091c1a09a9385db6ad22cee439837b147cf177566663f9a5885a` |
+| 1 | `lemma` | [Submodule.finite_quotient_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/QuotientIndex.lean/declarations/submodule-finite-quotient-smul.md) | 35 | `result-track:a3a8f2d28ffcef3f408774313309124eae33b1e31690556e9ec8240b61207b4c` |
+| 2 | `lemma` | [Submodule.index_smul_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/QuotientIndex.lean/declarations/submodule-index-smul-le.md) | 58 | `result-track:2f74f951d243fe4d5abbc179fe84d396cc62c98edfa4e1fb5e2e85be0d3787ab` |
+| 3 | `lemma` | [Ideal.finite_quotient_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/QuotientIndex.lean/declarations/ideal-finite-quotient-prod.md) | 86 | `result-track:d1ede8d4c570f1e8b45e409ba6b5092d2ce75d9b4489739c6ca385f9f92dce36` |
+| 4 | `lemma` | [Ideal.finite_quotient_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/QuotientIndex.lean/declarations/ideal-finite-quotient-pow.md) | 97 | `result-track:2531bd0336fd4b7b8d8d4b42283b57a46440c51cfa71a250eacb2ecfdab2fa9f` |
+| 5 | `lemma` | [Ideal.index_pow_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/QuotientIndex.lean/declarations/ideal-index-pow-le.md) | 105 | `result-track:a29a90575afb091c1a09a9385db6ad22cee439837b147cf177566663f9a5885a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

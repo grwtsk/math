@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WeilCorrespondenceWeilBoundaryIdentification.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WeilCorrespondenceWeilBoundaryIdentification.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WeilCorrespondenceWeilBoundaryIdentification.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WeilCorrespondenceWeilBoundaryIdentification.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [WeilBoundaryIdentification](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WeilCorrespondenceWeilBoundaryIdentification.lean/declarations/weilboundaryidentification.md) | 14 | `declaration-track:6a9fcb127e0fb2de7a2423a5fee9f1516b76ab3751a0a07ca580b6982e56132f` |
+| 1 | `structure` | [WeilBoundaryIdentification](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WeilCorrespondenceWeilBoundaryIdentification.lean/declarations/weilboundaryidentification.md) | 14 | `declaration-track:6a9fcb127e0fb2de7a2423a5fee9f1516b76ab3751a0a07ca580b6982e56132f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

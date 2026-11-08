@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/HairerNamespacedPublic.lean/index.md) · [Full source](../../../../MeasureAndIntegration/HairerNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HairerNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HairerNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,18 +57,18 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ContDiffSupportedOn](../../../../MeasureAndIntegration/HairerNamespacedPublic.lean/declarations/contdiffsupportedon.md) | 48 | `declaration-track:2c6ec8fe79a888f1d147591071eac1503f97c436a1c8895e4926844a08971d29` |
-| 2 | `instance` | [(anonymous)](../../../../MeasureAndIntegration/HairerNamespacedPublic.lean/declarations/instance.md) | 60 | `declaration-track:3626ada27d639daf4642a4d027ff311f0b3df07c2ee3848a0038ac29418626be` |
-| 3 | `lemma` | [coe_mk](../../../../MeasureAndIntegration/HairerNamespacedPublic.lean/declarations/coe-mk.md) | 65 | `result-track:e4a00842a198e9d63fddc8e2655c7009ed722834a5bd3967e034b03f21b857f9` |
-| 4 | `lemma` | [tsupport_subset](../../../../MeasureAndIntegration/HairerNamespacedPublic.lean/declarations/tsupport-subset.md) | 67 | `result-track:55eea440e7899a90aa3531275341cfd388466dd6e2f413b1d0ffa7dce8ef7b73` |
-| 5 | `lemma` | [support_subset](../../../../MeasureAndIntegration/HairerNamespacedPublic.lean/declarations/support-subset.md) | 69 | `result-track:35fa06b0315abe6de2b62a586679429137e5e6186de989ddb349c500404f1f7f` |
-| 6 | `lemma` | [contDiff](../../../../MeasureAndIntegration/HairerNamespacedPublic.lean/declarations/contdiff.md) | 72 | `result-track:93d2d55edde8b392c9511da5887167762f419d290fcaaa23cddc5eea26095df6` |
-| 7 | `theorem` | [continuous](../../../../MeasureAndIntegration/HairerNamespacedPublic.lean/declarations/continuous.md) | 75 | `result-track:4cde6937f27d670c404c004a873fb38b5a03f269f342dacea5feb7f682ac8a7d` |
-| 8 | `lemma` | [hasCompactSupport](../../../../MeasureAndIntegration/HairerNamespacedPublic.lean/declarations/hascompactsupport.md) | 78 | `result-track:56b1bbf6cf4521e83661719147242f944c81d84fb3a7edd6af9f3a6cf5ee829b` |
-| 9 | `theorem` | [integrable_eval_mul](../../../../MeasureAndIntegration/HairerNamespacedPublic.lean/declarations/integrable-eval-mul.md) | 82 | `result-track:05f07ab7741aa255ced94425a59a766487d266bd2ed52c9a75dd224b936a2a89` |
-| 10 | `def` | [L](../../../../MeasureAndIntegration/HairerNamespacedPublic.lean/declarations/l.md) | 97 | `declaration-track:4529cf5db9b80880b8691823a52a19dc9ccf47ab64f73a919a193bfef160ffb0` |
-| 11 | `lemma` | [inj_L](../../../../MeasureAndIntegration/HairerNamespacedPublic.lean/declarations/inj-l.md) | 107 | `result-track:b1f607baf0601062b46cbcdc0815e3171a9b0a57b9cd5f8f0e29d0e001d31f61` |
-| 12 | `lemma` | [hairer](../../../../MeasureAndIntegration/HairerNamespacedPublic.lean/declarations/hairer.md) | 126 | `result-track:d63f3a992b26cab883f2dce8ebc5421306401f31b4cd9ed11a15550deb1b3503` |
+| 1 | `def` | [ContDiffSupportedOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HairerNamespacedPublic.lean/declarations/contdiffsupportedon.md) | 48 | `declaration-track:2c6ec8fe79a888f1d147591071eac1503f97c436a1c8895e4926844a08971d29` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HairerNamespacedPublic.lean/declarations/instance.md) | 60 | `declaration-track:3626ada27d639daf4642a4d027ff311f0b3df07c2ee3848a0038ac29418626be` |
+| 3 | `lemma` | [coe_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HairerNamespacedPublic.lean/declarations/coe-mk.md) | 65 | `result-track:e4a00842a198e9d63fddc8e2655c7009ed722834a5bd3967e034b03f21b857f9` |
+| 4 | `lemma` | [tsupport_subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HairerNamespacedPublic.lean/declarations/tsupport-subset.md) | 67 | `result-track:55eea440e7899a90aa3531275341cfd388466dd6e2f413b1d0ffa7dce8ef7b73` |
+| 5 | `lemma` | [support_subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HairerNamespacedPublic.lean/declarations/support-subset.md) | 69 | `result-track:35fa06b0315abe6de2b62a586679429137e5e6186de989ddb349c500404f1f7f` |
+| 6 | `lemma` | [contDiff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HairerNamespacedPublic.lean/declarations/contdiff.md) | 72 | `result-track:93d2d55edde8b392c9511da5887167762f419d290fcaaa23cddc5eea26095df6` |
+| 7 | `theorem` | [continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HairerNamespacedPublic.lean/declarations/continuous.md) | 75 | `result-track:4cde6937f27d670c404c004a873fb38b5a03f269f342dacea5feb7f682ac8a7d` |
+| 8 | `lemma` | [hasCompactSupport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HairerNamespacedPublic.lean/declarations/hascompactsupport.md) | 78 | `result-track:56b1bbf6cf4521e83661719147242f944c81d84fb3a7edd6af9f3a6cf5ee829b` |
+| 9 | `theorem` | [integrable_eval_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HairerNamespacedPublic.lean/declarations/integrable-eval-mul.md) | 82 | `result-track:05f07ab7741aa255ced94425a59a766487d266bd2ed52c9a75dd224b936a2a89` |
+| 10 | `def` | [L](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HairerNamespacedPublic.lean/declarations/l.md) | 97 | `declaration-track:4529cf5db9b80880b8691823a52a19dc9ccf47ab64f73a919a193bfef160ffb0` |
+| 11 | `lemma` | [inj_L](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HairerNamespacedPublic.lean/declarations/inj-l.md) | 107 | `result-track:b1f607baf0601062b46cbcdc0815e3171a9b0a57b9cd5f8f0e29d0e001d31f61` |
+| 12 | `lemma` | [hairer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HairerNamespacedPublic.lean/declarations/hairer.md) | 126 | `result-track:d63f3a992b26cab883f2dce8ebc5421306401f31b4cd9ed11a15550deb1b3503` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

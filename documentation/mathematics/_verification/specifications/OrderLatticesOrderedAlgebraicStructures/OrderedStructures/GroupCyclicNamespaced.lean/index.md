@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupCyclicNamespaced.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupCyclicNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupCyclicNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupCyclicNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [exists_generator_lt_one](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupCyclicNamespaced.lean/declarations/exists-generator-lt-one.md) | 39 | `result-track:222ef721f2da29f19f5d27dd2bcd5f1ff189f2204db36a206f845a52ed46f24d` |
-| 2 | `def` | [genLTOne](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupCyclicNamespaced.lean/declarations/genltone-source-edition-2.md) | 52 | `declaration-track:64b4d0071be5445222d78beee4ae400582332ddd20352e4e139cd99b794c26eb` |
-| 3 | `lemma` | [genLTOne_lt_one](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupCyclicNamespaced.lean/declarations/genltone-lt-one.md) | 55 | `result-track:030e8df61c4bae84f883eba5c70904d54602994aef395019f5a5ca81f55f6739` |
-| 4 | `lemma` | [genLTOne_zpowers_eq_top](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupCyclicNamespaced.lean/declarations/genltone-zpowers-eq-top.md) | 59 | `result-track:876dbb160844d0f38ca29ffe9c7a8c4ef0916eda5e22dcd27977a10a7aba8e0a` |
-| 5 | `def` | [genLTOne](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupCyclicNamespaced.lean/declarations/genltone.md) | 69 | `declaration-track:2c3c4345da9c001d5e3f8cfc69e9209b3fe8b70b52ce019d136a7ecdbc193f61` |
-| 6 | `lemma` | [genLTOne_eq_of_top](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupCyclicNamespaced.lean/declarations/genltone-eq-of-top.md) | 72 | `result-track:1599d67632be675a78b312cbbb5b83ffb7f586b3a11d19688b4b111195368c09` |
+| 1 | `lemma` | [exists_generator_lt_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupCyclicNamespaced.lean/declarations/exists-generator-lt-one.md) | 39 | `result-track:222ef721f2da29f19f5d27dd2bcd5f1ff189f2204db36a206f845a52ed46f24d` |
+| 2 | `def` | [genLTOne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupCyclicNamespaced.lean/declarations/genltone-source-edition-2.md) | 52 | `declaration-track:64b4d0071be5445222d78beee4ae400582332ddd20352e4e139cd99b794c26eb` |
+| 3 | `lemma` | [genLTOne_lt_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupCyclicNamespaced.lean/declarations/genltone-lt-one.md) | 55 | `result-track:030e8df61c4bae84f883eba5c70904d54602994aef395019f5a5ca81f55f6739` |
+| 4 | `lemma` | [genLTOne_zpowers_eq_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupCyclicNamespaced.lean/declarations/genltone-zpowers-eq-top.md) | 59 | `result-track:876dbb160844d0f38ca29ffe9c7a8c4ef0916eda5e22dcd27977a10a7aba8e0a` |
+| 5 | `def` | [genLTOne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupCyclicNamespaced.lean/declarations/genltone.md) | 69 | `declaration-track:2c3c4345da9c001d5e3f8cfc69e9209b3fe8b70b52ce019d136a7ecdbc193f61` |
+| 6 | `lemma` | [genLTOne_eq_of_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupCyclicNamespaced.lean/declarations/genltone-eq-of-top.md) | 72 | `result-track:1599d67632be675a78b312cbbb5b83ffb7f586b3a11d19688b4b111195368c09` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

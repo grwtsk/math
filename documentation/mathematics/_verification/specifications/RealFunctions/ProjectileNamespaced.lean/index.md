@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/ProjectileNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/ProjectileNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ProjectileNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ProjectileNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [vsq_upper](../../../../RealFunctions/ProjectileNamespaced.lean/declarations/vsq-upper.md) | 44 | `result-track:f81b4978219ca0d270179ad129ab657b30f5b5e1caffbe4163885556cd590766` |
-| 2 | `theorem` | [drag_accel_upper](../../../../RealFunctions/ProjectileNamespaced.lean/declarations/drag-accel-upper.md) | 49 | `result-track:174e70253b94c4c2765cbe9523a0a2ae3a1d69d7e68d4a0e537db27478f24a0e` |
-| 3 | `theorem` | [drag_nonneg](../../../../RealFunctions/ProjectileNamespaced.lean/declarations/drag-nonneg.md) | 54 | `result-track:1d66cd157427d43b0bb41850561b4a4c53a3c42581357b8e21ee153368e725f1` |
-| 4 | `theorem` | [net_accel_lower](../../../../RealFunctions/ProjectileNamespaced.lean/declarations/net-accel-lower.md) | 71 | `result-track:1247a31741c240dc932fa383d5cc8c559e2193e812c4a5ba83acf972f1ca1a4b` |
-| 5 | `theorem` | [net_accel_upper](../../../../RealFunctions/ProjectileNamespaced.lean/declarations/net-accel-upper.md) | 75 | `result-track:6767d20388364aee4bb5a20a49fc22c59f8a02fc75c41f5c573a8498be3f5d24` |
-| 6 | `theorem` | [kinetic_energy_upper](../../../../RealFunctions/ProjectileNamespaced.lean/declarations/kinetic-energy-upper.md) | 88 | `result-track:5c8763ae2b76cacf5ca382636f9d1095d60ebca29b0c60d920a635506bfec2cb` |
-| 7 | `theorem` | [exp_decay_lower](../../../../RealFunctions/ProjectileNamespaced.lean/declarations/exp-decay-lower.md) | 100 | `result-track:f048dd907f454cdbce54b2a536bde57197033476a53a7c594906f1fd6881fe35` |
-| 8 | `theorem` | [exp_decay_upper](../../../../RealFunctions/ProjectileNamespaced.lean/declarations/exp-decay-upper.md) | 104 | `result-track:bedd8820f7cf90ccd079fab5d5aad9478757394bd6d6c2fc44428260c19b9c47` |
+| 1 | `theorem` | [vsq_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ProjectileNamespaced.lean/declarations/vsq-upper.md) | 44 | `result-track:f81b4978219ca0d270179ad129ab657b30f5b5e1caffbe4163885556cd590766` |
+| 2 | `theorem` | [drag_accel_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ProjectileNamespaced.lean/declarations/drag-accel-upper.md) | 49 | `result-track:174e70253b94c4c2765cbe9523a0a2ae3a1d69d7e68d4a0e537db27478f24a0e` |
+| 3 | `theorem` | [drag_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ProjectileNamespaced.lean/declarations/drag-nonneg.md) | 54 | `result-track:1d66cd157427d43b0bb41850561b4a4c53a3c42581357b8e21ee153368e725f1` |
+| 4 | `theorem` | [net_accel_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ProjectileNamespaced.lean/declarations/net-accel-lower.md) | 71 | `result-track:1247a31741c240dc932fa383d5cc8c559e2193e812c4a5ba83acf972f1ca1a4b` |
+| 5 | `theorem` | [net_accel_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ProjectileNamespaced.lean/declarations/net-accel-upper.md) | 75 | `result-track:6767d20388364aee4bb5a20a49fc22c59f8a02fc75c41f5c573a8498be3f5d24` |
+| 6 | `theorem` | [kinetic_energy_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ProjectileNamespaced.lean/declarations/kinetic-energy-upper.md) | 88 | `result-track:5c8763ae2b76cacf5ca382636f9d1095d60ebca29b0c60d920a635506bfec2cb` |
+| 7 | `theorem` | [exp_decay_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ProjectileNamespaced.lean/declarations/exp-decay-lower.md) | 100 | `result-track:f048dd907f454cdbce54b2a536bde57197033476a53a7c594906f1fd6881fe35` |
+| 8 | `theorem` | [exp_decay_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ProjectileNamespaced.lean/declarations/exp-decay-upper.md) | 104 | `result-track:bedd8820f7cf90ccd079fab5d5aad9478757394bd6d6c2fc44428260c19b9c47` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

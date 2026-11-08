@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/ClosedCurveFactorIndex.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/ClosedCurveFactorIndex.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ClosedCurveFactorIndex.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ClosedCurveFactorIndex.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.LoopIndexOperations`](../../../../FunctionsOfAComplexVariable/LoopIndexOperations.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.LoopIndexOperations`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/LoopIndexOperations.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Topology.ContinuousMap.Algebra` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,23 +58,23 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [lift](../../../../FunctionsOfAComplexVariable/ClosedCurveFactorIndex.lean/declarations/lift.md) | 25 | `declaration-track:8a095b5d03d6092e251fe13d8b25dd999ee294291da403fb2a00539c4581e31c` |
-| 2 | `theorem` | [lift_closed](../../../../FunctionsOfAComplexVariable/ClosedCurveFactorIndex.lean/declarations/lift-closed.md) | 29 | `result-track:c8ff7d8c1baf87f2a8848feb24fe263e2b7c014dfde5152784a4ce049a6a10c2` |
-| 3 | `def` | [index](../../../../FunctionsOfAComplexVariable/ClosedCurveFactorIndex.lean/declarations/index.md) | 33 | `declaration-track:8b1661dbb362b7a138a6caf3fef1671ece4b7648e08a6058ca23ef1abe907a9a` |
-| 4 | `theorem` | [index_eq_winding](../../../../FunctionsOfAComplexVariable/ClosedCurveFactorIndex.lean/declarations/index-eq-winding.md) | 36 | `result-track:35d1757ec0bc22de3947decc81601269076f60fd3954ac467f3b11e793a5629f` |
-| 5 | `theorem` | [index_congr](../../../../FunctionsOfAComplexVariable/ClosedCurveFactorIndex.lean/declarations/index-congr.md) | 43 | `result-track:408b7ad153fb2326cb5cff589b1782e90668413310356fcee1964b2af9aa94c8` |
-| 6 | `theorem` | [index_homotopy](../../../../FunctionsOfAComplexVariable/ClosedCurveFactorIndex.lean/declarations/index-homotopy.md) | 51 | `result-track:758ec1ec5de02d7ad640b74cd779c052718dac2254ecbf2a9d4c7a3f3e28ab48` |
-| 7 | `theorem` | [index_const](../../../../FunctionsOfAComplexVariable/ClosedCurveFactorIndex.lean/declarations/index-const.md) | 63 | `result-track:e287320e3acd77cbc1f9e1c293ea66920ddfb9a67ceda142e8de89f714b85096` |
-| 8 | `theorem` | [mul_closed](../../../../FunctionsOfAComplexVariable/ClosedCurveFactorIndex.lean/declarations/mul-closed.md) | 69 | `result-track:335f0ed2767eb6265006e86bfec8da5f2be4804a9d79f9f96bc8832394dc6755` |
-| 9 | `theorem` | [mul_nonzero](../../../../FunctionsOfAComplexVariable/ClosedCurveFactorIndex.lean/declarations/mul-nonzero.md) | 72 | `result-track:bdb29e9c0a478f33bae8dbf37179bfa6edeb87b5cc8f132691514873f7622e01` |
-| 10 | `theorem` | [index_mul](../../../../FunctionsOfAComplexVariable/ClosedCurveFactorIndex.lean/declarations/index-mul.md) | 75 | `result-track:a664b289ee76fa80e2c3a52b62f75fb47dcb80ac6632315cd0a534cf020d19ae` |
-| 11 | `theorem` | [pow_closed](../../../../FunctionsOfAComplexVariable/ClosedCurveFactorIndex.lean/declarations/pow-closed.md) | 86 | `result-track:29aedeb3e7e144c8df30a5c58673b91bfa4dcc30786f6ca0517a8c8e0a1aa3ae` |
-| 12 | `theorem` | [pow_nonzero](../../../../FunctionsOfAComplexVariable/ClosedCurveFactorIndex.lean/declarations/pow-nonzero.md) | 89 | `result-track:41b57f47fcf857a51e1214c17f59e6607cedc06acfec37774b5f2ecaf0a311c0` |
-| 13 | `theorem` | [index_pow](../../../../FunctionsOfAComplexVariable/ClosedCurveFactorIndex.lean/declarations/index-pow.md) | 93 | `result-track:623b88ced6ee9ca73a69ae79f569df6d78954606bbe9e5da0ce5952fb435061b` |
-| 14 | `theorem` | [product_apply](../../../../FunctionsOfAComplexVariable/ClosedCurveFactorIndex.lean/declarations/product-apply.md) | 104 | `result-track:f7c7a609e28854e5ae7af2ff6623188aafd13419d63590ab04776c65501b42d7` |
-| 15 | `theorem` | [prod_closed](../../../../FunctionsOfAComplexVariable/ClosedCurveFactorIndex.lean/declarations/prod-closed.md) | 111 | `result-track:d232c3281c9c2c59dd5ea7321a9f9569d5085c0fee8eb99118f28e28f08f8f8a` |
-| 16 | `theorem` | [prod_nonzero](../../../../FunctionsOfAComplexVariable/ClosedCurveFactorIndex.lean/declarations/prod-nonzero.md) | 116 | `result-track:740ca46162e00642dbca0f4ee7f57862979f6ae67f0f113ebddcd245775d7fb9` |
-| 17 | `theorem` | [index_prod](../../../../FunctionsOfAComplexVariable/ClosedCurveFactorIndex.lean/declarations/index-prod.md) | 124 | `result-track:332e170e1452b8fc1ce206c08dec76d9dea465f8f192b711d4a41c169d5fd928` |
+| 1 | `def` | [lift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ClosedCurveFactorIndex.lean/declarations/lift.md) | 25 | `declaration-track:8a095b5d03d6092e251fe13d8b25dd999ee294291da403fb2a00539c4581e31c` |
+| 2 | `theorem` | [lift_closed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ClosedCurveFactorIndex.lean/declarations/lift-closed.md) | 29 | `result-track:c8ff7d8c1baf87f2a8848feb24fe263e2b7c014dfde5152784a4ce049a6a10c2` |
+| 3 | `def` | [index](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ClosedCurveFactorIndex.lean/declarations/index.md) | 33 | `declaration-track:8b1661dbb362b7a138a6caf3fef1671ece4b7648e08a6058ca23ef1abe907a9a` |
+| 4 | `theorem` | [index_eq_winding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ClosedCurveFactorIndex.lean/declarations/index-eq-winding.md) | 36 | `result-track:35d1757ec0bc22de3947decc81601269076f60fd3954ac467f3b11e793a5629f` |
+| 5 | `theorem` | [index_congr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ClosedCurveFactorIndex.lean/declarations/index-congr.md) | 43 | `result-track:408b7ad153fb2326cb5cff589b1782e90668413310356fcee1964b2af9aa94c8` |
+| 6 | `theorem` | [index_homotopy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ClosedCurveFactorIndex.lean/declarations/index-homotopy.md) | 51 | `result-track:758ec1ec5de02d7ad640b74cd779c052718dac2254ecbf2a9d4c7a3f3e28ab48` |
+| 7 | `theorem` | [index_const](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ClosedCurveFactorIndex.lean/declarations/index-const.md) | 63 | `result-track:e287320e3acd77cbc1f9e1c293ea66920ddfb9a67ceda142e8de89f714b85096` |
+| 8 | `theorem` | [mul_closed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ClosedCurveFactorIndex.lean/declarations/mul-closed.md) | 69 | `result-track:335f0ed2767eb6265006e86bfec8da5f2be4804a9d79f9f96bc8832394dc6755` |
+| 9 | `theorem` | [mul_nonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ClosedCurveFactorIndex.lean/declarations/mul-nonzero.md) | 72 | `result-track:bdb29e9c0a478f33bae8dbf37179bfa6edeb87b5cc8f132691514873f7622e01` |
+| 10 | `theorem` | [index_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ClosedCurveFactorIndex.lean/declarations/index-mul.md) | 75 | `result-track:a664b289ee76fa80e2c3a52b62f75fb47dcb80ac6632315cd0a534cf020d19ae` |
+| 11 | `theorem` | [pow_closed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ClosedCurveFactorIndex.lean/declarations/pow-closed.md) | 86 | `result-track:29aedeb3e7e144c8df30a5c58673b91bfa4dcc30786f6ca0517a8c8e0a1aa3ae` |
+| 12 | `theorem` | [pow_nonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ClosedCurveFactorIndex.lean/declarations/pow-nonzero.md) | 89 | `result-track:41b57f47fcf857a51e1214c17f59e6607cedc06acfec37774b5f2ecaf0a311c0` |
+| 13 | `theorem` | [index_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ClosedCurveFactorIndex.lean/declarations/index-pow.md) | 93 | `result-track:623b88ced6ee9ca73a69ae79f569df6d78954606bbe9e5da0ce5952fb435061b` |
+| 14 | `theorem` | [product_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ClosedCurveFactorIndex.lean/declarations/product-apply.md) | 104 | `result-track:f7c7a609e28854e5ae7af2ff6623188aafd13419d63590ab04776c65501b42d7` |
+| 15 | `theorem` | [prod_closed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ClosedCurveFactorIndex.lean/declarations/prod-closed.md) | 111 | `result-track:d232c3281c9c2c59dd5ea7321a9f9569d5085c0fee8eb99118f28e28f08f8f8a` |
+| 16 | `theorem` | [prod_nonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ClosedCurveFactorIndex.lean/declarations/prod-nonzero.md) | 116 | `result-track:740ca46162e00642dbca0f4ee7f57862979f6ae67f0f113ebddcd245775d7fb9` |
+| 17 | `theorem` | [index_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ClosedCurveFactorIndex.lean/declarations/index-prod.md) | 124 | `result-track:332e170e1452b8fc1ce206c08dec76d9dea465f8f192b711d4a41c169d5fd928` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

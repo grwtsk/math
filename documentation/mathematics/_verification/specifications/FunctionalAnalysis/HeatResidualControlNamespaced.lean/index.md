@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/HeatResidualControlNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/HeatResidualControlNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HeatResidualControlNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HeatResidualControlNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [heatVisible](../../../../FunctionalAnalysis/HeatResidualControlNamespaced.lean/declarations/heatvisible.md) | 27 | `declaration-track:09a9bcaa235f2738013ae5bdc9e0468038dc1ba45585925e2df0ac0cc4ce7cc3` |
-| 2 | `def` | [heatFiber](../../../../FunctionalAnalysis/HeatResidualControlNamespaced.lean/declarations/heatfiber.md) | 36 | `declaration-track:ed6604df077692af8d23126a17775f0c2f79260273358c74e557b9b6b44c3e53` |
-| 3 | `theorem` | [heat_visible_plus_fiber](../../../../FunctionalAnalysis/HeatResidualControlNamespaced.lean/declarations/heat-visible-plus-fiber.md) | 45 | `result-track:ef0ebab9b3b71316240ab3641f230c8f8f27a3a8204867a73fa1146f3f062a26` |
+| 1 | `def` | [heatVisible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HeatResidualControlNamespaced.lean/declarations/heatvisible.md) | 27 | `declaration-track:09a9bcaa235f2738013ae5bdc9e0468038dc1ba45585925e2df0ac0cc4ce7cc3` |
+| 2 | `def` | [heatFiber](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HeatResidualControlNamespaced.lean/declarations/heatfiber.md) | 36 | `declaration-track:ed6604df077692af8d23126a17775f0c2f79260273358c74e557b9b6b44c3e53` |
+| 3 | `theorem` | [heat_visible_plus_fiber](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HeatResidualControlNamespaced.lean/declarations/heat-visible-plus-fiber.md) | 45 | `result-track:ef0ebab9b3b71316240ab3641f230c8f8f27a3a8204867a73fa1146f3f062a26` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

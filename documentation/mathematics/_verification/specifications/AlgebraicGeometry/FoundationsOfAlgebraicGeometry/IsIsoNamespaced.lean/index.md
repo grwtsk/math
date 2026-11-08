@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/IsIsoNamespaced.lean/index.md) · [Full source](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/IsIsoNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/IsIsoNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/IsIsoNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [isomorphisms_eq_isOpenImmersion_inf_surjective](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/IsIsoNamespaced.lean/declarations/isomorphisms-eq-isopenimmersion-inf-surjective.md) | 26 | `result-track:ce34ff599a70a724c3d410b43c055fd4c3413f9155567c28e3f01d927fb955e5` |
-| 2 | `lemma` | [isomorphisms_eq_stalkwise](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/IsIsoNamespaced.lean/declarations/isomorphisms-eq-stalkwise.md) | 32 | `result-track:309036282291ac51bca904676639b42686975d26f84844232ddcf096bdd2316a` |
-| 3 | `instance` | [(anonymous)](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/IsIsoNamespaced.lean/declarations/instance.md) | 43 | `declaration-track:a1d136aeff6b01791e9bfabce5396a9c97cb2ad00b198eeabd6a1985066503c9` |
-| 4 | `instance` | [(anonymous)](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/IsIsoNamespaced.lean/declarations/instance-source-edition-3.md) | 46 | `declaration-track:cb794dcc97964fa30b103ca72df7be885994d42bcccaccebf44fc512aaa9a16d` |
-| 5 | `instance` | [(anonymous)](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/IsIsoNamespaced.lean/declarations/instance-source-edition-2.md) | 52 | `declaration-track:a955a36a280c3ee23f47a145e4704f49a6f569521b19314afe1c98bbbd205451` |
+| 1 | `lemma` | [isomorphisms_eq_isOpenImmersion_inf_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/IsIsoNamespaced.lean/declarations/isomorphisms-eq-isopenimmersion-inf-surjective.md) | 26 | `result-track:ce34ff599a70a724c3d410b43c055fd4c3413f9155567c28e3f01d927fb955e5` |
+| 2 | `lemma` | [isomorphisms_eq_stalkwise](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/IsIsoNamespaced.lean/declarations/isomorphisms-eq-stalkwise.md) | 32 | `result-track:309036282291ac51bca904676639b42686975d26f84844232ddcf096bdd2316a` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/IsIsoNamespaced.lean/declarations/instance.md) | 43 | `declaration-track:a1d136aeff6b01791e9bfabce5396a9c97cb2ad00b198eeabd6a1985066503c9` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/IsIsoNamespaced.lean/declarations/instance-source-edition-3.md) | 46 | `declaration-track:cb794dcc97964fa30b103ca72df7be885994d42bcccaccebf44fc512aaa9a16d` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/IsIsoNamespaced.lean/declarations/instance-source-edition-2.md) | 52 | `declaration-track:a955a36a280c3ee23f47a145e4704f49a6f569521b19314afe1c98bbbd205451` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

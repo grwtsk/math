@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/LocalRingDefs.lean/index.md) · [Full source](../../../../CommutativeAlgebra/LocalRingDefs.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalRingDefs.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalRingDefs.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [IsLocalRing](../../../../CommutativeAlgebra/LocalRingDefs.lean/declarations/islocalring.md) | 25 | `declaration-track:d0a4f9d75a607327629942998a1ec5603ed11e016ba55e65139fb88184679d33` |
+| 1 | `class` | [IsLocalRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalRingDefs.lean/declarations/islocalring.md) | 25 | `declaration-track:d0a4f9d75a607327629942998a1ec5603ed11e016ba55e65139fb88184679d33` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

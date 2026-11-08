@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SmoothContinuation.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SmoothContinuation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SmoothContinuation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SmoothContinuation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SmoothContinuation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SmoothContinuation.lean/declarations/smoothcontinuation.md) | 19 | `declaration-track:ba8476952cb18bff826ad3f6007adf28d0bcd493117ca5dd0d4ccf134102d212` |
-| 2 | `theorem` | [ns_continuation_maps_exist_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SmoothContinuation.lean/declarations/ns-continuation-maps-exist-if-supplied.md) | 31 | `result-track:c7a41301a03b2892402a342c4e30b10b18bfce67f597dc463cb57fe7427f23d1` |
-| 3 | `theorem` | [ns_preserves_true_nonlinearity_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SmoothContinuation.lean/declarations/ns-preserves-true-nonlinearity-if-supplied.md) | 36 | `result-track:9be691cb17d28c020f55afb199af1783368fc5d747e124c297505ff070a465bf` |
+| 1 | `structure` | [SmoothContinuation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SmoothContinuation.lean/declarations/smoothcontinuation.md) | 19 | `declaration-track:ba8476952cb18bff826ad3f6007adf28d0bcd493117ca5dd0d4ccf134102d212` |
+| 2 | `theorem` | [ns_continuation_maps_exist_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SmoothContinuation.lean/declarations/ns-continuation-maps-exist-if-supplied.md) | 31 | `result-track:c7a41301a03b2892402a342c4e30b10b18bfce67f597dc463cb57fe7427f23d1` |
+| 3 | `theorem` | [ns_preserves_true_nonlinearity_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SmoothContinuation.lean/declarations/ns-preserves-true-nonlinearity-if-supplied.md) | 36 | `result-track:9be691cb17d28c020f55afb199af1783368fc5d747e124c297505ff070a465bf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SectionComplexSectionComplex.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SectionComplexSectionComplex.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SectionComplexSectionComplex.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SectionComplexSectionComplex.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SectionComplex](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SectionComplexSectionComplex.lean/declarations/sectioncomplex.md) | 18 | `declaration-track:b9809c04b9d7ad2f2bed4e7ce0b34ab33850a2c5cae645591f582bb8d2a182ad` |
-| 2 | `theorem` | [section_complex_d_squared_zero](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SectionComplexSectionComplex.lean/declarations/section-complex-d-squared-zero.md) | 27 | `result-track:92b475199a02deb7bcacbcdd836500626914ab2d26ccadba0770d3965d25c9d8` |
-| 3 | `theorem` | [section_complex_bounded](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SectionComplexSectionComplex.lean/declarations/section-complex-bounded.md) | 32 | `result-track:e07714dcc2ecc2497a26d115a3c534fa1cfd75a17651a6e09781b7505dab776b` |
+| 1 | `structure` | [SectionComplex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SectionComplexSectionComplex.lean/declarations/sectioncomplex.md) | 18 | `declaration-track:b9809c04b9d7ad2f2bed4e7ce0b34ab33850a2c5cae645591f582bb8d2a182ad` |
+| 2 | `theorem` | [section_complex_d_squared_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SectionComplexSectionComplex.lean/declarations/section-complex-d-squared-zero.md) | 27 | `result-track:92b475199a02deb7bcacbcdd836500626914ab2d26ccadba0770d3965d25c9d8` |
+| 3 | `theorem` | [section_complex_bounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SectionComplexSectionComplex.lean/declarations/section-complex-bounded.md) | 32 | `result-track:e07714dcc2ecc2497a26d115a3c534fa1cfd75a17651a6e09781b7505dab776b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

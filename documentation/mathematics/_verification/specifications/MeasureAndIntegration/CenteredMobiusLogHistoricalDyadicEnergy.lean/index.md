@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CenteredMobiusLogHistoricalDyadicEnergy.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CenteredMobiusLogHistoricalDyadicEnergy.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogHistoricalDyadicEnergy.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogHistoricalDyadicEnergy.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenThreeSupplier`](../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenThreeSupplier.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenThreeSupplier`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenThreeSupplier.lean/index.md) — import line 7; pinned internal source present.
 - `Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic` — import line 8; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 9; external provider; requires a separately pinned dependency.
 
@@ -59,15 +59,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mass0](../../../../MeasureAndIntegration/CenteredMobiusLogHistoricalDyadicEnergy.lean/declarations/mass0.md) | 18 | `declaration-track:ebeec5007b45a29d1ff66d120c8ae59e20b0af4b06c05fdb8a4ea4431d70cfa4` |
-| 2 | `def` | [mass1](../../../../MeasureAndIntegration/CenteredMobiusLogHistoricalDyadicEnergy.lean/declarations/mass1.md) | 24 | `declaration-track:f14ca671953484129b4efa4649faf8305a72165c7f27e8778b4715d3d9025da9` |
-| 3 | `def` | [cumulative](../../../../MeasureAndIntegration/CenteredMobiusLogHistoricalDyadicEnergy.lean/declarations/cumulative.md) | 31 | `declaration-track:81f75566021ce9e4218a0e6bc2bbd98236e410c2116da9b28f403fb8b22e7e7b` |
-| 4 | `def` | [center](../../../../MeasureAndIntegration/CenteredMobiusLogHistoricalDyadicEnergy.lean/declarations/center.md) | 38 | `declaration-track:b75dbd31da05c11f336e6739b36d6634e2eb94bfa34532d46f3b7b2c3bed2d53` |
-| 5 | `def` | [greenEnergy](../../../../MeasureAndIntegration/CenteredMobiusLogHistoricalDyadicEnergy.lean/declarations/greenenergy.md) | 41 | `declaration-track:24a2c519081d742f891559a87e15f3dd5c2aebf41b341f6fc7ac97273e2c24e8` |
-| 6 | `def` | [augmentedEnergy](../../../../MeasureAndIntegration/CenteredMobiusLogHistoricalDyadicEnergy.lean/declarations/augmentedenergy.md) | 44 | `declaration-track:ac66589871fe8703f5d2236d4e012332f4e44e994989db8fc8137eae13def58b` |
-| 7 | `def` | [dyadicScale](../../../../MeasureAndIntegration/CenteredMobiusLogHistoricalDyadicEnergy.lean/declarations/dyadicscale.md) | 47 | `declaration-track:7682ec3fea779a112379933b8bc7dc770b772b41c0b45236970dd29c0fa70402` |
-| 8 | `def` | [AllDyadicEnergyBound](../../../../MeasureAndIntegration/CenteredMobiusLogHistoricalDyadicEnergy.lean/declarations/alldyadicenergybound.md) | 49 | `declaration-track:471c28d9678e5d5f63901e3ffd17a9000ae75056bd46ac16d5a9c25567d6ff29` |
-| 9 | `theorem` | [allDyadicEnergyBound_of_thin_and_parseval](../../../../MeasureAndIntegration/CenteredMobiusLogHistoricalDyadicEnergy.lean/declarations/alldyadicenergybound-of-thin-and-parseval.md) | 63 | `result-track:5d359a07ccb164fbcfe36060d58fd485b7187d2db0eaf475d57d5e3823486657` |
+| 1 | `def` | [mass0](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogHistoricalDyadicEnergy.lean/declarations/mass0.md) | 18 | `declaration-track:ebeec5007b45a29d1ff66d120c8ae59e20b0af4b06c05fdb8a4ea4431d70cfa4` |
+| 2 | `def` | [mass1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogHistoricalDyadicEnergy.lean/declarations/mass1.md) | 24 | `declaration-track:f14ca671953484129b4efa4649faf8305a72165c7f27e8778b4715d3d9025da9` |
+| 3 | `def` | [cumulative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogHistoricalDyadicEnergy.lean/declarations/cumulative.md) | 31 | `declaration-track:81f75566021ce9e4218a0e6bc2bbd98236e410c2116da9b28f403fb8b22e7e7b` |
+| 4 | `def` | [center](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogHistoricalDyadicEnergy.lean/declarations/center.md) | 38 | `declaration-track:b75dbd31da05c11f336e6739b36d6634e2eb94bfa34532d46f3b7b2c3bed2d53` |
+| 5 | `def` | [greenEnergy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogHistoricalDyadicEnergy.lean/declarations/greenenergy.md) | 41 | `declaration-track:24a2c519081d742f891559a87e15f3dd5c2aebf41b341f6fc7ac97273e2c24e8` |
+| 6 | `def` | [augmentedEnergy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogHistoricalDyadicEnergy.lean/declarations/augmentedenergy.md) | 44 | `declaration-track:ac66589871fe8703f5d2236d4e012332f4e44e994989db8fc8137eae13def58b` |
+| 7 | `def` | [dyadicScale](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogHistoricalDyadicEnergy.lean/declarations/dyadicscale.md) | 47 | `declaration-track:7682ec3fea779a112379933b8bc7dc770b772b41c0b45236970dd29c0fa70402` |
+| 8 | `def` | [AllDyadicEnergyBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogHistoricalDyadicEnergy.lean/declarations/alldyadicenergybound.md) | 49 | `declaration-track:471c28d9678e5d5f63901e3ffd17a9000ae75056bd46ac16d5a9c25567d6ff29` |
+| 9 | `theorem` | [allDyadicEnergyBound_of_thin_and_parseval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogHistoricalDyadicEnergy.lean/declarations/alldyadicenergybound-of-thin-and-parseval.md) | 63 | `result-track:5d359a07ccb164fbcfe36060d58fd485b7187d2db0eaf475d57d5e3823486657` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

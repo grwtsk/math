@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TorsionWitnessNamespaced.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TorsionWitnessNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TorsionWitnessNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TorsionWitnessNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [torsion_witness_sound](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TorsionWitnessNamespaced.lean/declarations/torsion-witness-sound.md) | 27 | `result-track:de907e40190f8b077aafbab1d4d7b8468800c604880675c85223e85cd870a20b` |
-| 2 | `theorem` | [modular_witness_exposes_claim](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TorsionWitnessNamespaced.lean/declarations/modular-witness-exposes-claim.md) | 36 | `result-track:1bcc16be08f9ddfaed8a9eaea036b4e158f308cbecf721dff97885fd0de52555` |
+| 1 | `theorem` | [torsion_witness_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TorsionWitnessNamespaced.lean/declarations/torsion-witness-sound.md) | 27 | `result-track:de907e40190f8b077aafbab1d4d7b8468800c604880675c85223e85cd870a20b` |
+| 2 | `theorem` | [modular_witness_exposes_claim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TorsionWitnessNamespaced.lean/declarations/modular-witness-exposes-claim.md) | 36 | `result-track:1bcc16be08f9ddfaed8a9eaea036b4e158f308cbecf721dff97885fd0de52555` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

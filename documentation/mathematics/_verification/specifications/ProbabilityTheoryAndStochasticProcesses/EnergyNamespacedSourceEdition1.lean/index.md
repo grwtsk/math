@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/EnergyNamespacedSourceEdition1.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/EnergyNamespacedSourceEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/EnergyNamespacedSourceEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/EnergyNamespacedSourceEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [bitEnergy](../../../../ProbabilityTheoryAndStochasticProcesses/EnergyNamespacedSourceEdition1.lean/declarations/bitenergy.md) | 29 | `declaration-track:2ccbe641c7e8a175259be657d9443a4d50f5eb16b3c7ada14eb4999acf7ef5b4` |
-| 2 | `def` | [matrixEnergy](../../../../ProbabilityTheoryAndStochasticProcesses/EnergyNamespacedSourceEdition1.lean/declarations/matrixenergy.md) | 32 | `declaration-track:8cbcd4c77e71c54381c1bc21ea4e206e480ccd696d96521564aeb1177f2c39f5` |
-| 3 | `theorem` | [matrixEnergy_nonnegative](../../../../ProbabilityTheoryAndStochasticProcesses/EnergyNamespacedSourceEdition1.lean/declarations/matrixenergy-nonnegative.md) | 35 | `result-track:8372b4b26bd707c52f4d6754db62a0f4f81e443aa4a8c608e013dfed685b6572` |
+| 1 | `def` | [bitEnergy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/EnergyNamespacedSourceEdition1.lean/declarations/bitenergy.md) | 29 | `declaration-track:2ccbe641c7e8a175259be657d9443a4d50f5eb16b3c7ada14eb4999acf7ef5b4` |
+| 2 | `def` | [matrixEnergy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/EnergyNamespacedSourceEdition1.lean/declarations/matrixenergy.md) | 32 | `declaration-track:8cbcd4c77e71c54381c1bc21ea4e206e480ccd696d96521564aeb1177f2c39f5` |
+| 3 | `theorem` | [matrixEnergy_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/EnergyNamespacedSourceEdition1.lean/declarations/matrixenergy-nonnegative.md) | 35 | `result-track:8372b4b26bd707c52f4d6754db62a0f4f81e443aa4a8c608e013dfed685b6572` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

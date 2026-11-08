@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnivNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnivNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnivNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnivNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,15 +59,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [univ](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnivNamespaced.lean/declarations/univ.md) | 56 | `declaration-track:5a2d23c40f6261d85ca6d03009beada75aabda7de64bfd2b6561cc4e7d8e9315` |
-| 2 | `lemma` | [univ_map_eval₂Hom](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnivNamespaced.lean/declarations/univ-map-eval-hom.md) | 61 | `result-track:12ccc84de1eca0b37bca4c4a71b44a106cbc00a7bf97e3e2289822db2f641b2b` |
-| 3 | `lemma` | [univ_map_map](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnivNamespaced.lean/declarations/univ-map-map.md) | 66 | `result-track:f8edfc49b99a8ffcf0bac3885eef06a8f1017f8d053cd7bf69e90b08767afb90` |
-| 4 | `lemma` | [univ_coeff_eval₂Hom](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnivNamespaced.lean/declarations/univ-coeff-eval-hom.md) | 71 | `result-track:78fe495bc1b0c4818605ddcc90ecaf9ece1469194bf41a4519933c10fdc1246b` |
-| 5 | `lemma` | [univ_monic](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnivNamespaced.lean/declarations/univ-monic.md) | 78 | `result-track:d28c0d470453ef46b090f4125edca0de0afdfbbe1ed341fc694d86392d888b9c` |
-| 6 | `lemma` | [univ_natDegree](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnivNamespaced.lean/declarations/univ-natdegree.md) | 80 | `result-track:778b23e2fbfe1d6eb2d3f7b586195028ead72c125ef53e28828e662af621a6f7` |
-| 7 | `lemma` | [univ_coeff_card](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnivNamespaced.lean/declarations/univ-coeff-card.md) | 84 | `result-track:2d7aece708fbf63d9fdb48c701f45552dc9b71cef78495bd06e831337e1b0743` |
-| 8 | `lemma` | [optionEquivLeft_symm_univ_isHomogeneous](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnivNamespaced.lean/declarations/optionequivleft-symm-univ-ishomogeneous.md) | 91 | `result-track:2654b233361c97311ccff939c81ef80797235057b1575565894589f2ad2a14ea` |
-| 9 | `lemma` | [univ_coeff_isHomogeneous](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnivNamespaced.lean/declarations/univ-coeff-ishomogeneous.md) | 108 | `result-track:c18452594f6f34817f526fbaed8788b249cb3d3c7cb30075a6b6b5ca70198f97` |
+| 1 | `abbrev` | [univ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnivNamespaced.lean/declarations/univ.md) | 56 | `declaration-track:5a2d23c40f6261d85ca6d03009beada75aabda7de64bfd2b6561cc4e7d8e9315` |
+| 2 | `lemma` | [univ_map_eval₂Hom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnivNamespaced.lean/declarations/univ-map-eval-hom.md) | 61 | `result-track:12ccc84de1eca0b37bca4c4a71b44a106cbc00a7bf97e3e2289822db2f641b2b` |
+| 3 | `lemma` | [univ_map_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnivNamespaced.lean/declarations/univ-map-map.md) | 66 | `result-track:f8edfc49b99a8ffcf0bac3885eef06a8f1017f8d053cd7bf69e90b08767afb90` |
+| 4 | `lemma` | [univ_coeff_eval₂Hom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnivNamespaced.lean/declarations/univ-coeff-eval-hom.md) | 71 | `result-track:78fe495bc1b0c4818605ddcc90ecaf9ece1469194bf41a4519933c10fdc1246b` |
+| 5 | `lemma` | [univ_monic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnivNamespaced.lean/declarations/univ-monic.md) | 78 | `result-track:d28c0d470453ef46b090f4125edca0de0afdfbbe1ed341fc694d86392d888b9c` |
+| 6 | `lemma` | [univ_natDegree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnivNamespaced.lean/declarations/univ-natdegree.md) | 80 | `result-track:778b23e2fbfe1d6eb2d3f7b586195028ead72c125ef53e28828e662af621a6f7` |
+| 7 | `lemma` | [univ_coeff_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnivNamespaced.lean/declarations/univ-coeff-card.md) | 84 | `result-track:2d7aece708fbf63d9fdb48c701f45552dc9b71cef78495bd06e831337e1b0743` |
+| 8 | `lemma` | [optionEquivLeft_symm_univ_isHomogeneous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnivNamespaced.lean/declarations/optionequivleft-symm-univ-ishomogeneous.md) | 91 | `result-track:2654b233361c97311ccff939c81ef80797235057b1575565894589f2ad2a14ea` |
+| 9 | `lemma` | [univ_coeff_isHomogeneous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnivNamespaced.lean/declarations/univ-coeff-ishomogeneous.md) | 108 | `result-track:c18452594f6f34817f526fbaed8788b249cb3d3c7cb30075a6b6b5ca70198f97` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

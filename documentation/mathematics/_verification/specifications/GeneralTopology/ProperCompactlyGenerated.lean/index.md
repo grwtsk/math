@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ProperCompactlyGenerated.lean/index.md) · [Full source](../../../../GeneralTopology/ProperCompactlyGenerated.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProperCompactlyGenerated.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProperCompactlyGenerated.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [isProperMap_iff_isCompact_preimage](../../../../GeneralTopology/ProperCompactlyGenerated.lean/declarations/ispropermap-iff-iscompact-preimage.md) | 28 | `result-track:72019bec3235fbc7192c656483b968f73ffb2ce6969bb85e95e4ac28b5a38d3a` |
-| 2 | `lemma` | [isProperMap_iff_tendsto_cocompact](../../../../GeneralTopology/ProperCompactlyGenerated.lean/declarations/ispropermap-iff-tendsto-cocompact.md) | 40 | `result-track:d5fa378cfe3c884dfd13960e64a40319030205b41e437d4fc4dc2554cb9afc3a` |
+| 1 | `theorem` | [isProperMap_iff_isCompact_preimage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProperCompactlyGenerated.lean/declarations/ispropermap-iff-iscompact-preimage.md) | 28 | `result-track:72019bec3235fbc7192c656483b968f73ffb2ce6969bb85e95e4ac28b5a38d3a` |
+| 2 | `lemma` | [isProperMap_iff_tendsto_cocompact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProperCompactlyGenerated.lean/declarations/ispropermap-iff-tendsto-cocompact.md) | 40 | `result-track:d5fa378cfe3c884dfd13960e64a40319030205b41e437d4fc4dc2554cb9afc3a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

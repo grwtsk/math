@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PositiveVerticalLineCriterion.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PositiveVerticalLineCriterion.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PositiveVerticalLineCriterion.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PositiveVerticalLineCriterion.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Moebius.VerticalLineCriterion`](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/MoebiusVerticalLineCriterion.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.VerticalLineCriterion`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/MoebiusVerticalLineCriterion.lean/index.md) — import line 1; pinned internal source present.
 - `Lean` — import line 2; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PositiveVerticalLineCriterion.lean/declarations/example-source-edition-2.md) | 8 | `declaration-track:52e10c0b09d4874fda37910af272f6f0e1d6130aae39318f5320398b8644e419` |
-| 2 | `example` | [(anonymous)](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PositiveVerticalLineCriterion.lean/declarations/example.md) | 11 | `declaration-track:27ee2203970a388311d8c66da67d0351cc67e489a5fbdac92558c08aa1b615fd` |
-| 3 | `example` | [(anonymous)](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PositiveVerticalLineCriterion.lean/declarations/example-source-edition-4.md) | 14 | `declaration-track:f054928a9d3a39502d3ba1ed0217c8b852e9a8fc8dc67f6b63a8765d5292fccd` |
-| 4 | `example` | [(anonymous)](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PositiveVerticalLineCriterion.lean/declarations/example-source-edition-3.md) | 19 | `declaration-track:cf0839bd5fc0e05ddf5ce031943cb3a143e52bb5e06a3a3a1ee27d4fee4ae1c8` |
-| 5 | `elab` | [(anonymous)](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PositiveVerticalLineCriterion.lean/declarations/elab.md) | 22 | `declaration-track:ad63128a41b9eddf954250c3b50d9fa92b289da5260064581a37565c94c932d1` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PositiveVerticalLineCriterion.lean/declarations/example-source-edition-2.md) | 8 | `declaration-track:52e10c0b09d4874fda37910af272f6f0e1d6130aae39318f5320398b8644e419` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PositiveVerticalLineCriterion.lean/declarations/example.md) | 11 | `declaration-track:27ee2203970a388311d8c66da67d0351cc67e489a5fbdac92558c08aa1b615fd` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PositiveVerticalLineCriterion.lean/declarations/example-source-edition-4.md) | 14 | `declaration-track:f054928a9d3a39502d3ba1ed0217c8b852e9a8fc8dc67f6b63a8765d5292fccd` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PositiveVerticalLineCriterion.lean/declarations/example-source-edition-3.md) | 19 | `declaration-track:cf0839bd5fc0e05ddf5ce031943cb3a143e52bb5e06a3a3a1ee27d4fee4ae1c8` |
+| 5 | `elab` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PositiveVerticalLineCriterion.lean/declarations/elab.md) | 22 | `declaration-track:ad63128a41b9eddf954250c3b50d9fa92b289da5260064581a37565c94c932d1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

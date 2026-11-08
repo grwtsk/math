@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/LeafIntegrals.lean/index.md) · [Full source](../../../../MeasureAndIntegration/LeafIntegrals.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LeafIntegrals.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LeafIntegrals.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,10 +61,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [integral_left](../../../../MeasureAndIntegration/LeafIntegrals.lean/declarations/integral-left.md) | 24 | `result-track:6a999cd85fec0d1e2df95479d7a384335bdaa91713ce3b507a3190307f74ac6b` |
-| 2 | `lemma` | [integral_right](../../../../MeasureAndIntegration/LeafIntegrals.lean/declarations/integral-right.md) | 50 | `result-track:e0d70e54b6c90f88b2b8657748081b0590985b2bbacf0bd26e2570f6d960f4b3` |
-| 3 | `theorem` | [Ig_core](../../../../MeasureAndIntegration/LeafIntegrals.lean/declarations/ig-core.md) | 76 | `result-track:f02ab3537c38fc735e68326d7d72402d2f405e50d7623eca7045660395afcfb6` |
-| 4 | `theorem` | [W3_core](../../../../MeasureAndIntegration/LeafIntegrals.lean/declarations/w3-core.md) | 118 | `result-track:d8a5f15a62b75ba89bc2e352cfdc1d94fecd7e4941077ce81acbec69a060ac76` |
+| 1 | `lemma` | [integral_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LeafIntegrals.lean/declarations/integral-left.md) | 24 | `result-track:6a999cd85fec0d1e2df95479d7a384335bdaa91713ce3b507a3190307f74ac6b` |
+| 2 | `lemma` | [integral_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LeafIntegrals.lean/declarations/integral-right.md) | 50 | `result-track:e0d70e54b6c90f88b2b8657748081b0590985b2bbacf0bd26e2570f6d960f4b3` |
+| 3 | `theorem` | [Ig_core](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LeafIntegrals.lean/declarations/ig-core.md) | 76 | `result-track:f02ab3537c38fc735e68326d7d72402d2f405e50d7623eca7045660395afcfb6` |
+| 4 | `theorem` | [W3_core](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LeafIntegrals.lean/declarations/w3-core.md) | 118 | `result-track:d8a5f15a62b75ba89bc2e352cfdc1d94fecd7e4941077ce81acbec69a060ac76` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

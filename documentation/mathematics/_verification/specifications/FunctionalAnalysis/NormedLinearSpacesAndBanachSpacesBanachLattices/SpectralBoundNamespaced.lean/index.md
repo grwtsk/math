@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/SpectralBoundNamespaced.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/SpectralBoundNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/SpectralBoundNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/SpectralBoundNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [SpectralBoundKind](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/SpectralBoundNamespaced.lean/declarations/spectralboundkind.md) | 30 | `declaration-track:e0ea77f9163a73a27af938116d2164ffbc2e486bf5b4f4f92cdf047856d5a8fb` |
-| 2 | `structure` | [SameSpectrumControl](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/SpectralBoundNamespaced.lean/declarations/samespectrumcontrol.md) | 39 | `declaration-track:232dc89eef20c4a3fba2c42d5b8d5a33fb484be07905eae588b245839201f16f` |
-| 3 | `theorem` | [spectral_sum_bound](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/SpectralBoundNamespaced.lean/declarations/spectral-sum-bound.md) | 81 | `result-track:81c9264875d9f25cd9c3c07b116d1775086b2d0062b95e388c327100b6914df7` |
-| 4 | `theorem` | [centeredDiscrepancy_bound](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/SpectralBoundNamespaced.lean/declarations/centereddiscrepancy-bound.md) | 108 | `result-track:5d6d0012415e760e4ac5563278c71908c67ab8b7be9f6df47546d267f6b06883` |
-| 5 | `theorem` | [centeredDiscrepancy_squareRootLog_bound](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/SpectralBoundNamespaced.lean/declarations/centereddiscrepancy-squarerootlog-bound.md) | 131 | `result-track:bfeddc7293e928dcfbd946b8456a1d6ea32cf77cd72d67c54897ca8a635a6984` |
+| 1 | `inductive` | [SpectralBoundKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/SpectralBoundNamespaced.lean/declarations/spectralboundkind.md) | 30 | `declaration-track:e0ea77f9163a73a27af938116d2164ffbc2e486bf5b4f4f92cdf047856d5a8fb` |
+| 2 | `structure` | [SameSpectrumControl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/SpectralBoundNamespaced.lean/declarations/samespectrumcontrol.md) | 39 | `declaration-track:232dc89eef20c4a3fba2c42d5b8d5a33fb484be07905eae588b245839201f16f` |
+| 3 | `theorem` | [spectral_sum_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/SpectralBoundNamespaced.lean/declarations/spectral-sum-bound.md) | 81 | `result-track:81c9264875d9f25cd9c3c07b116d1775086b2d0062b95e388c327100b6914df7` |
+| 4 | `theorem` | [centeredDiscrepancy_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/SpectralBoundNamespaced.lean/declarations/centereddiscrepancy-bound.md) | 108 | `result-track:5d6d0012415e760e4ac5563278c71908c67ab8b7be9f6df47546d267f6b06883` |
+| 5 | `theorem` | [centeredDiscrepancy_squareRootLog_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/SpectralBoundNamespaced.lean/declarations/centereddiscrepancy-squarerootlog-bound.md) | 131 | `result-track:bfeddc7293e928dcfbd946b8456a1d6ea32cf77cd72d67c54897ca8a635a6984` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

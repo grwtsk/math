@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/Resolver.lean/index.md) · [Full source](../../../../Combinatorics/Resolver.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Resolver.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Resolver.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ResolverProfile](../../../../Combinatorics/Resolver.lean/declarations/resolverprofile.md) | 17 | `declaration-track:9c552c7d3e8caf024f9331ce72bc8b1c64acee63c248e9a2984177e9defa6e97` |
-| 2 | `inductive` | [CertifiedResolution](../../../../Combinatorics/Resolver.lean/declarations/certifiedresolution.md) | 48 | `declaration-track:6ea1565676fb39552b465a0521c747ed69995f105149bd3d6c477e9a4ef28ff8` |
-| 3 | `def` | [CertifiedResolution.IsRejected](../../../../Combinatorics/Resolver.lean/declarations/certifiedresolution-isrejected.md) | 78 | `declaration-track:758f94872b493ee41ff057d1cc96da840c7e1b0ea7a0299a9768b5b8509aff32` |
-| 4 | `def` | [cfor](../../../../Combinatorics/Resolver.lean/declarations/cfor.md) | 96 | `declaration-track:260a9293d809968d07b1ccb0481bb9112e2013c39a116760240706d63165e2ac` |
-| 5 | `theorem` | [cfor_rejected_exactly_when_cut_invalid](../../../../Combinatorics/Resolver.lean/declarations/cfor-rejected-exactly-when-cut-invalid.md) | 137 | `result-track:2b13bc3508264493e0d1e3163eac0fffec8dbc15ccd8f72f521e47111957d136` |
-| 6 | `theorem` | [cfor_total](../../../../Combinatorics/Resolver.lean/declarations/cfor-total.md) | 160 | `result-track:7302e1099bcaf21e1f4cdcecd127c7caa8ac42c5cba95cc44a2c067956541ace` |
+| 1 | `structure` | [ResolverProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Resolver.lean/declarations/resolverprofile.md) | 17 | `declaration-track:9c552c7d3e8caf024f9331ce72bc8b1c64acee63c248e9a2984177e9defa6e97` |
+| 2 | `inductive` | [CertifiedResolution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Resolver.lean/declarations/certifiedresolution.md) | 48 | `declaration-track:6ea1565676fb39552b465a0521c747ed69995f105149bd3d6c477e9a4ef28ff8` |
+| 3 | `def` | [CertifiedResolution.IsRejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Resolver.lean/declarations/certifiedresolution-isrejected.md) | 78 | `declaration-track:758f94872b493ee41ff057d1cc96da840c7e1b0ea7a0299a9768b5b8509aff32` |
+| 4 | `def` | [cfor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Resolver.lean/declarations/cfor.md) | 96 | `declaration-track:260a9293d809968d07b1ccb0481bb9112e2013c39a116760240706d63165e2ac` |
+| 5 | `theorem` | [cfor_rejected_exactly_when_cut_invalid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Resolver.lean/declarations/cfor-rejected-exactly-when-cut-invalid.md) | 137 | `result-track:2b13bc3508264493e0d1e3163eac0fffec8dbc15ccd8f72f521e47111957d136` |
+| 6 | `theorem` | [cfor_total](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Resolver.lean/declarations/cfor-total.md) | 160 | `result-track:7302e1099bcaf21e1f4cdcecd127c7caa8ac42c5cba95cc44a2c067956541ace` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/ControlledMapNamespaced.lean/index.md) · [Full source](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/ControlledMapNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/ControlledMapNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/ControlledMapNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [ControlledMap](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/ControlledMapNamespaced.lean/declarations/controlledmap.md) | 26 | `declaration-track:9230713cc372402dd1fcbec758f9518b9a5206e333b01a4190c07b9849f49540` |
-| 2 | `def` | [identity](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/ControlledMapNamespaced.lean/declarations/identity.md) | 33 | `declaration-track:09872954b42093288e5e2a2bfb37964b8e7cada06c9275c91e255cc2b9cbe49a` |
-| 3 | `def` | [comp](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/ControlledMapNamespaced.lean/declarations/comp.md) | 38 | `declaration-track:5aaabc25718ed7a5f6d8082f708519256da505893a878327ba9197a5bc1d58e4` |
-| 4 | `theorem` | [comp_sound](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/ControlledMapNamespaced.lean/declarations/comp-sound.md) | 46 | `result-track:5d63072d89810067ef5689cdfc6c2ea75081f57d213a854be876765eb0a880df` |
-| 5 | `theorem` | [comp_assoc_behavior](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/ControlledMapNamespaced.lean/declarations/comp-assoc-behavior.md) | 62 | `result-track:697dbfce7522af9c4070d014f454cd16ec13424bce53e6b8c8628af79c944cd2` |
+| 1 | `abbrev` | [ControlledMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/ControlledMapNamespaced.lean/declarations/controlledmap.md) | 26 | `declaration-track:9230713cc372402dd1fcbec758f9518b9a5206e333b01a4190c07b9849f49540` |
+| 2 | `def` | [identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/ControlledMapNamespaced.lean/declarations/identity.md) | 33 | `declaration-track:09872954b42093288e5e2a2bfb37964b8e7cada06c9275c91e255cc2b9cbe49a` |
+| 3 | `def` | [comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/ControlledMapNamespaced.lean/declarations/comp.md) | 38 | `declaration-track:5aaabc25718ed7a5f6d8082f708519256da505893a878327ba9197a5bc1d58e4` |
+| 4 | `theorem` | [comp_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/ControlledMapNamespaced.lean/declarations/comp-sound.md) | 46 | `result-track:5d63072d89810067ef5689cdfc6c2ea75081f57d213a854be876765eb0a880df` |
+| 5 | `theorem` | [comp_assoc_behavior](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/ControlledMapNamespaced.lean/declarations/comp-assoc-behavior.md) | 62 | `result-track:697dbfce7522af9c4070d014f454cd16ec13424bce53e6b8c8628af79c944cd2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

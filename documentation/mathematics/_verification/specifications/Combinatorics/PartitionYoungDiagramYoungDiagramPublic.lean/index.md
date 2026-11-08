@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/PartitionYoungDiagramYoungDiagramPublic.lean/index.md) · [Full source](../../../../Combinatorics/PartitionYoungDiagramYoungDiagramPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PartitionYoungDiagramYoungDiagramPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PartitionYoungDiagramYoungDiagramPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [toPartition](../../../../Combinatorics/PartitionYoungDiagramYoungDiagramPublic.lean/declarations/topartition.md) | 30 | `declaration-track:b8bd55290919619d8e6f468ddbe3e441c202688a0f55adb2b13eba2edea4e813` |
-| 2 | `def` | [ofPartition](../../../../Combinatorics/PartitionYoungDiagramYoungDiagramPublic.lean/declarations/ofpartition.md) | 36 | `declaration-track:a44cc70ded98e34251fa2053dd58ebc234dcf03fd6eafb2ff2a270d0a2d407a1` |
-| 3 | `theorem` | [rowLens_ofPartition_eq_sort_parts](../../../../Combinatorics/PartitionYoungDiagramYoungDiagramPublic.lean/declarations/rowlens-ofpartition-eq-sort-parts.md) | 42 | `result-track:08a96866ac154deb07b07bfc954cc23b2a9f43850f1da8c7f4a03321488c920c` |
-| 4 | `theorem` | [card_ofPartition](../../../../Combinatorics/PartitionYoungDiagramYoungDiagramPublic.lean/declarations/card-ofpartition.md) | 47 | `result-track:a40720a1cadf00d3094df3735223b237189ed0453cc309e7bee98a26db962165` |
-| 5 | `theorem` | [ofPartition_toPartition](../../../../Combinatorics/PartitionYoungDiagramYoungDiagramPublic.lean/declarations/ofpartition-topartition.md) | 53 | `result-track:b473f0e135b342ed920947697b898eef433fec7d81fe6fc87b9d30cbc1a2866e` |
-| 6 | `theorem` | [toPartition_ofPartition](../../../../Combinatorics/PartitionYoungDiagramYoungDiagramPublic.lean/declarations/topartition-ofpartition.md) | 59 | `result-track:920fa2c3d4669fc504f384673993e4fdd2fb8174be664af357eb126449b0e18b` |
-| 7 | `def` | [equivPartition](../../../../Combinatorics/PartitionYoungDiagramYoungDiagramPublic.lean/declarations/equivpartition.md) | 65 | `declaration-track:2e19b8fe5add3d682d6d09a42f5878fc146dd3a71f4b85a9c9594484bb505b97` |
-| 8 | `def` | [conjugate](../../../../Combinatorics/PartitionYoungDiagramYoungDiagramPublic.lean/declarations/conjugate.md) | 76 | `declaration-track:6f00aded21f98906a2d1e5c0023e46938eb0bd52ce220d1dec44fdaa3b5a233c` |
-| 9 | `theorem` | [conjugate_conjugate](../../../../Combinatorics/PartitionYoungDiagramYoungDiagramPublic.lean/declarations/conjugate-conjugate.md) | 81 | `result-track:723041e6767630603128a8b44de72d6dfd8f3af17cda55da4003353f31baca1f` |
+| 1 | `def` | [toPartition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PartitionYoungDiagramYoungDiagramPublic.lean/declarations/topartition.md) | 30 | `declaration-track:b8bd55290919619d8e6f468ddbe3e441c202688a0f55adb2b13eba2edea4e813` |
+| 2 | `def` | [ofPartition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PartitionYoungDiagramYoungDiagramPublic.lean/declarations/ofpartition.md) | 36 | `declaration-track:a44cc70ded98e34251fa2053dd58ebc234dcf03fd6eafb2ff2a270d0a2d407a1` |
+| 3 | `theorem` | [rowLens_ofPartition_eq_sort_parts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PartitionYoungDiagramYoungDiagramPublic.lean/declarations/rowlens-ofpartition-eq-sort-parts.md) | 42 | `result-track:08a96866ac154deb07b07bfc954cc23b2a9f43850f1da8c7f4a03321488c920c` |
+| 4 | `theorem` | [card_ofPartition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PartitionYoungDiagramYoungDiagramPublic.lean/declarations/card-ofpartition.md) | 47 | `result-track:a40720a1cadf00d3094df3735223b237189ed0453cc309e7bee98a26db962165` |
+| 5 | `theorem` | [ofPartition_toPartition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PartitionYoungDiagramYoungDiagramPublic.lean/declarations/ofpartition-topartition.md) | 53 | `result-track:b473f0e135b342ed920947697b898eef433fec7d81fe6fc87b9d30cbc1a2866e` |
+| 6 | `theorem` | [toPartition_ofPartition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PartitionYoungDiagramYoungDiagramPublic.lean/declarations/topartition-ofpartition.md) | 59 | `result-track:920fa2c3d4669fc504f384673993e4fdd2fb8174be664af357eb126449b0e18b` |
+| 7 | `def` | [equivPartition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PartitionYoungDiagramYoungDiagramPublic.lean/declarations/equivpartition.md) | 65 | `declaration-track:2e19b8fe5add3d682d6d09a42f5878fc146dd3a71f4b85a9c9594484bb505b97` |
+| 8 | `def` | [conjugate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PartitionYoungDiagramYoungDiagramPublic.lean/declarations/conjugate.md) | 76 | `declaration-track:6f00aded21f98906a2d1e5c0023e46938eb0bd52ce220d1dec44fdaa3b5a233c` |
+| 9 | `theorem` | [conjugate_conjugate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PartitionYoungDiagramYoungDiagramPublic.lean/declarations/conjugate-conjugate.md) | 81 | `result-track:723041e6767630603128a8b44de72d6dfd8f3af17cda55da4003353f31baca1f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

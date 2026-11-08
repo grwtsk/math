@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Geometry/RealAndComplexGeometry/CrossProduct.lean/index.md) · [Full source](../../../../../Geometry/RealAndComplexGeometry/CrossProduct.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RealAndComplexGeometry/CrossProduct.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RealAndComplexGeometry/CrossProduct.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [norm_withLpEquiv_crossProduct](../../../../../Geometry/RealAndComplexGeometry/CrossProduct.lean/declarations/norm-withlpequiv-crossproduct.md) | 26 | `result-track:427f4963d3f63032d277f13d32e4526a09844e24387b7e55e35ce628c28af330` |
-| 2 | `theorem` | [norm_withLpEquiv_symm_crossProduct](../../../../../Geometry/RealAndComplexGeometry/CrossProduct.lean/declarations/norm-withlpequiv-symm-crossproduct.md) | 40 | `result-track:9cf3bb05678fe52c31c22e9ee571778b57588940642a26f6dbef45acd333f031` |
+| 1 | `theorem` | [norm_withLpEquiv_crossProduct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RealAndComplexGeometry/CrossProduct.lean/declarations/norm-withlpequiv-crossproduct.md) | 26 | `result-track:427f4963d3f63032d277f13d32e4526a09844e24387b7e55e35ce628c28af330` |
+| 2 | `theorem` | [norm_withLpEquiv_symm_crossProduct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RealAndComplexGeometry/CrossProduct.lean/declarations/norm-withlpequiv-symm-crossproduct.md) | 40 | `result-track:9cf3bb05678fe52c31c22e9ee571778b57588940642a26f6dbef45acd333f031` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

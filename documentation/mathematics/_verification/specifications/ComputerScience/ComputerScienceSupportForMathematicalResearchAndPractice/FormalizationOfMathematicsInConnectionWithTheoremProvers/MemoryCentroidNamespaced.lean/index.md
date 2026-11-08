@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MemoryCentroidNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MemoryCentroidNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MemoryCentroidNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MemoryCentroidNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [MemoryCentroidState](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MemoryCentroidNamespaced.lean/declarations/memorycentroidstate.md) | 15 | `declaration-track:3493d0e1baa7f22438282a8e3762d53d2a0268edafbdd8a4cb0cec2b6ba092c4` |
-| 2 | `def` | [defaultMemoryCentroidState](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MemoryCentroidNamespaced.lean/declarations/defaultmemorycentroidstate.md) | 24 | `declaration-track:8be04e7169c93af89cea4fc5165bd4fce4f9476f61cfa610a0177f262d2342cc` |
-| 3 | `def` | [centroidReady](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MemoryCentroidNamespaced.lean/declarations/centroidready.md) | 32 | `declaration-track:da24f651af1a32e3cdef3eb0d97e962cbc7c00390da39b58083db95251808a5c` |
-| 4 | `theorem` | [default_centroid_ready](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MemoryCentroidNamespaced.lean/declarations/default-centroid-ready.md) | 35 | `result-track:0a06587cf3687a856b04b574b79e893d11de2abd96eac1bddaa62579e5d811a0` |
+| 1 | `structure` | [MemoryCentroidState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MemoryCentroidNamespaced.lean/declarations/memorycentroidstate.md) | 15 | `declaration-track:3493d0e1baa7f22438282a8e3762d53d2a0268edafbdd8a4cb0cec2b6ba092c4` |
+| 2 | `def` | [defaultMemoryCentroidState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MemoryCentroidNamespaced.lean/declarations/defaultmemorycentroidstate.md) | 24 | `declaration-track:8be04e7169c93af89cea4fc5165bd4fce4f9476f61cfa610a0177f262d2342cc` |
+| 3 | `def` | [centroidReady](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MemoryCentroidNamespaced.lean/declarations/centroidready.md) | 32 | `declaration-track:da24f651af1a32e3cdef3eb0d97e962cbc7c00390da39b58083db95251808a5c` |
+| 4 | `theorem` | [default_centroid_ready](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MemoryCentroidNamespaced.lean/declarations/default-centroid-ready.md) | 35 | `result-track:0a06587cf3687a856b04b574b79e893d11de2abd96eac1bddaa62579e5d811a0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

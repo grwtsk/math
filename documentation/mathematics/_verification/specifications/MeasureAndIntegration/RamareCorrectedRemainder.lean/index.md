@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/RamareCorrectedRemainder.lean/index.md) · [Full source](../../../../MeasureAndIntegration/RamareCorrectedRemainder.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RamareCorrectedRemainder.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RamareCorrectedRemainder.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [firstMertensRemainder](../../../../MeasureAndIntegration/RamareCorrectedRemainder.lean/declarations/firstmertensremainder.md) | 33 | `declaration-track:6ac52ffe79c19c2c3bfbb191e5403f31e73b1c2ee0a881947fb0cceb509e326d` |
-| 2 | `def` | [chebyshevRemainder](../../../../MeasureAndIntegration/RamareCorrectedRemainder.lean/declarations/chebyshevremainder.md) | 37 | `declaration-track:9c5105878ba512ec0b0bb9e4a58c5e2ff10763435cc2e4542711abb0b626c0f2` |
-| 3 | `def` | [correctedRemainder](../../../../MeasureAndIntegration/RamareCorrectedRemainder.lean/declarations/correctedremainder.md) | 41 | `declaration-track:35d4bafb5ae519619fd71a8c1656cacf55d0f6675eafbf0f21eb7df6769f95a8` |
-| 4 | `theorem` | [correctedRemainder_sub_anchor](../../../../MeasureAndIntegration/RamareCorrectedRemainder.lean/declarations/correctedremainder-sub-anchor.md) | 47 | `result-track:9e472af0cbe50994787f5077f61d36a4df77570b4ab309560c1fe39032ebc05a` |
-| 5 | `theorem` | [correctedRemainder_drift_abs_le_of_integral](../../../../MeasureAndIntegration/RamareCorrectedRemainder.lean/declarations/correctedremainder-drift-abs-le-of-integral.md) | 57 | `result-track:d6f6e0ad383a4d058c61ffae4ceed4ac5fad242978fd1ac7e79ec329d6d9649e` |
-| 6 | `theorem` | [correctedRemainder_drift_abs_le_sqrt](../../../../MeasureAndIntegration/RamareCorrectedRemainder.lean/declarations/correctedremainder-drift-abs-le-sqrt.md) | 67 | `result-track:58a524df775a8614c2791ff82ed9ce99e61f9038c9d64bdbf4db3c42109f8bf1` |
-| 7 | `theorem` | [correctedRemainder_drift_abs_le_linear_sqrt](../../../../MeasureAndIntegration/RamareCorrectedRemainder.lean/declarations/correctedremainder-drift-abs-le-linear-sqrt.md) | 122 | `result-track:dbc5ca22ef614cf7a83217c3593289a07b81341f778d5ccb42719d06b8be2da9` |
-| 8 | `theorem` | [correctedRemainder_drift_abs_le_log_cube](../../../../MeasureAndIntegration/RamareCorrectedRemainder.lean/declarations/correctedremainder-drift-abs-le-log-cube.md) | 199 | `result-track:c63d36fe7f1779f593ab11002956f87aabe41a9c92bd1c9e36b1a2d2f5da30b6` |
+| 1 | `def` | [firstMertensRemainder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RamareCorrectedRemainder.lean/declarations/firstmertensremainder.md) | 33 | `declaration-track:6ac52ffe79c19c2c3bfbb191e5403f31e73b1c2ee0a881947fb0cceb509e326d` |
+| 2 | `def` | [chebyshevRemainder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RamareCorrectedRemainder.lean/declarations/chebyshevremainder.md) | 37 | `declaration-track:9c5105878ba512ec0b0bb9e4a58c5e2ff10763435cc2e4542711abb0b626c0f2` |
+| 3 | `def` | [correctedRemainder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RamareCorrectedRemainder.lean/declarations/correctedremainder.md) | 41 | `declaration-track:35d4bafb5ae519619fd71a8c1656cacf55d0f6675eafbf0f21eb7df6769f95a8` |
+| 4 | `theorem` | [correctedRemainder_sub_anchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RamareCorrectedRemainder.lean/declarations/correctedremainder-sub-anchor.md) | 47 | `result-track:9e472af0cbe50994787f5077f61d36a4df77570b4ab309560c1fe39032ebc05a` |
+| 5 | `theorem` | [correctedRemainder_drift_abs_le_of_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RamareCorrectedRemainder.lean/declarations/correctedremainder-drift-abs-le-of-integral.md) | 57 | `result-track:d6f6e0ad383a4d058c61ffae4ceed4ac5fad242978fd1ac7e79ec329d6d9649e` |
+| 6 | `theorem` | [correctedRemainder_drift_abs_le_sqrt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RamareCorrectedRemainder.lean/declarations/correctedremainder-drift-abs-le-sqrt.md) | 67 | `result-track:58a524df775a8614c2791ff82ed9ce99e61f9038c9d64bdbf4db3c42109f8bf1` |
+| 7 | `theorem` | [correctedRemainder_drift_abs_le_linear_sqrt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RamareCorrectedRemainder.lean/declarations/correctedremainder-drift-abs-le-linear-sqrt.md) | 122 | `result-track:dbc5ca22ef614cf7a83217c3593289a07b81341f778d5ccb42719d06b8be2da9` |
+| 8 | `theorem` | [correctedRemainder_drift_abs_le_log_cube](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RamareCorrectedRemainder.lean/declarations/correctedremainder-drift-abs-le-log-cube.md) | 199 | `result-track:c63d36fe7f1779f593ab11002956f87aabe41a9c92bd1c9e36b1a2d2f5da30b6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

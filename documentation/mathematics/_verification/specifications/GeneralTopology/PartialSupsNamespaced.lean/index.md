@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/PartialSupsNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/PartialSupsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PartialSupsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PartialSupsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [partialSups](../../../../GeneralTopology/PartialSupsNamespaced.lean/declarations/partialsups.md) | 33 | `result-track:191681e1b918caaca2bb95657d28a5966e73681cf94364ed55762eca3fe3db8b` |
-| 2 | `lemma` | [partialSups_apply](../../../../GeneralTopology/PartialSupsNamespaced.lean/declarations/partialsups-apply.md) | 39 | `result-track:4cad3e715ba8dcd81e25441e5569df3c088b16559ef12a4a5bacb343f73c5a68` |
-| 3 | `lemma` | [ContinuousAt.partialSups_apply](../../../../GeneralTopology/PartialSupsNamespaced.lean/declarations/continuousat-partialsups-apply.md) | 47 | `result-track:9835b321462fe294595081c3cc6980e474087f65d88aa54c50607c85fb2797ac` |
-| 4 | `lemma` | [ContinuousAt.partialSups](../../../../GeneralTopology/PartialSupsNamespaced.lean/declarations/continuousat-partialsups.md) | 51 | `result-track:4a20240c17dfa9cda8f83ac89906a7342f72e9d01bef63f30095ad6997bc9833` |
-| 5 | `lemma` | [ContinuousWithinAt.partialSups_apply](../../../../GeneralTopology/PartialSupsNamespaced.lean/declarations/continuouswithinat-partialsups-apply.md) | 55 | `result-track:c389b28f8f63e7b50caf7f06cac4fb8dc40d8df75ae271da94e7d539ac52b76d` |
-| 6 | `lemma` | [ContinuousWithinAt.partialSups](../../../../GeneralTopology/PartialSupsNamespaced.lean/declarations/continuouswithinat-partialsups.md) | 59 | `result-track:0656b7ed2f0bdb5ef9cd09194d8b45d36ab0342a0d30cce81ee8116f984c3171` |
-| 7 | `lemma` | [ContinuousOn.partialSups_apply](../../../../GeneralTopology/PartialSupsNamespaced.lean/declarations/continuouson-partialsups-apply.md) | 63 | `result-track:c53a194a3890a41db8640bcee1ce83b63ce299d954ab546eb59c9594710585ad` |
-| 8 | `lemma` | [ContinuousOn.partialSups](../../../../GeneralTopology/PartialSupsNamespaced.lean/declarations/continuouson-partialsups.md) | 67 | `result-track:a062dce1d4550c681d54e86c59dd973f72a8869781829e287b6551043f830d42` |
-| 9 | `lemma` | [Continuous.partialSups_apply](../../../../GeneralTopology/PartialSupsNamespaced.lean/declarations/continuous-partialsups-apply.md) | 71 | `result-track:9fcf536caff0fed68bc7634894226367a2899c2f65a026f51987e44eef057122` |
-| 10 | `lemma` | [Continuous.partialSups](../../../../GeneralTopology/PartialSupsNamespaced.lean/declarations/continuous-partialsups.md) | 76 | `result-track:4635296c023cdc460cffb0a9687391845a6db43b5dbd1cf5f5ce5f2593f3a43a` |
+| 1 | `lemma` | [partialSups](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PartialSupsNamespaced.lean/declarations/partialsups.md) | 33 | `result-track:191681e1b918caaca2bb95657d28a5966e73681cf94364ed55762eca3fe3db8b` |
+| 2 | `lemma` | [partialSups_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PartialSupsNamespaced.lean/declarations/partialsups-apply.md) | 39 | `result-track:4cad3e715ba8dcd81e25441e5569df3c088b16559ef12a4a5bacb343f73c5a68` |
+| 3 | `lemma` | [ContinuousAt.partialSups_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PartialSupsNamespaced.lean/declarations/continuousat-partialsups-apply.md) | 47 | `result-track:9835b321462fe294595081c3cc6980e474087f65d88aa54c50607c85fb2797ac` |
+| 4 | `lemma` | [ContinuousAt.partialSups](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PartialSupsNamespaced.lean/declarations/continuousat-partialsups.md) | 51 | `result-track:4a20240c17dfa9cda8f83ac89906a7342f72e9d01bef63f30095ad6997bc9833` |
+| 5 | `lemma` | [ContinuousWithinAt.partialSups_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PartialSupsNamespaced.lean/declarations/continuouswithinat-partialsups-apply.md) | 55 | `result-track:c389b28f8f63e7b50caf7f06cac4fb8dc40d8df75ae271da94e7d539ac52b76d` |
+| 6 | `lemma` | [ContinuousWithinAt.partialSups](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PartialSupsNamespaced.lean/declarations/continuouswithinat-partialsups.md) | 59 | `result-track:0656b7ed2f0bdb5ef9cd09194d8b45d36ab0342a0d30cce81ee8116f984c3171` |
+| 7 | `lemma` | [ContinuousOn.partialSups_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PartialSupsNamespaced.lean/declarations/continuouson-partialsups-apply.md) | 63 | `result-track:c53a194a3890a41db8640bcee1ce83b63ce299d954ab546eb59c9594710585ad` |
+| 8 | `lemma` | [ContinuousOn.partialSups](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PartialSupsNamespaced.lean/declarations/continuouson-partialsups.md) | 67 | `result-track:a062dce1d4550c681d54e86c59dd973f72a8869781829e287b6551043f830d42` |
+| 9 | `lemma` | [Continuous.partialSups_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PartialSupsNamespaced.lean/declarations/continuous-partialsups-apply.md) | 71 | `result-track:9fcf536caff0fed68bc7634894226367a2899c2f65a026f51987e44eef057122` |
+| 10 | `lemma` | [Continuous.partialSups](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PartialSupsNamespaced.lean/declarations/continuous-partialsups.md) | 76 | `result-track:4635296c023cdc460cffb0a9687391845a6db43b5dbd1cf5f5ce5f2593f3a43a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/LocalizationNormTraceAligned.lean/index.md) · [Full source](../../../../CommutativeAlgebra/LocalizationNormTraceAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalizationNormTraceAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalizationNormTraceAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Algebra.map_leftMulMatrix_localization](../../../../CommutativeAlgebra/LocalizationNormTraceAligned.lean/declarations/algebra-map-leftmulmatrix-localization.md) | 54 | `result-track:a87d85fe3b509c4f423cf7895fc2f6f6a10689740bfa054cb455581b1033ecd6` |
-| 2 | `theorem` | [Algebra.norm_localization](../../../../CommutativeAlgebra/LocalizationNormTraceAligned.lean/declarations/algebra-norm-localization.md) | 65 | `result-track:9e76904d1e23ee4ad3f5f99801a247cb1336c47bb85e6a390ad2d28ffdd5a8e2` |
-| 3 | `theorem` | [Algebra.trace_localization](../../../../CommutativeAlgebra/LocalizationNormTraceAligned.lean/declarations/algebra-trace-localization.md) | 79 | `result-track:5657bb897426f17c7bd31150e61e2034d03412ac7ecb40f01966fa013ece3a06` |
-| 4 | `theorem` | [Algebra.traceMatrix_localizationLocalization](../../../../CommutativeAlgebra/LocalizationNormTraceAligned.lean/declarations/algebra-tracematrix-localizationlocalization.md) | 100 | `result-track:979bf846611d84a94cfcf472c09bd21be2abe00b479f9819e5ae6db877122f0c` |
-| 5 | `theorem` | [Algebra.discr_localizationLocalization](../../../../CommutativeAlgebra/LocalizationNormTraceAligned.lean/declarations/algebra-discr-localizationlocalization.md) | 114 | `result-track:27812251a1136d512eaaea0799de6d64be1fb6257e1a8b3bd3ff29ae38bbbc22` |
+| 1 | `theorem` | [Algebra.map_leftMulMatrix_localization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalizationNormTraceAligned.lean/declarations/algebra-map-leftmulmatrix-localization.md) | 54 | `result-track:a87d85fe3b509c4f423cf7895fc2f6f6a10689740bfa054cb455581b1033ecd6` |
+| 2 | `theorem` | [Algebra.norm_localization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalizationNormTraceAligned.lean/declarations/algebra-norm-localization.md) | 65 | `result-track:9e76904d1e23ee4ad3f5f99801a247cb1336c47bb85e6a390ad2d28ffdd5a8e2` |
+| 3 | `theorem` | [Algebra.trace_localization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalizationNormTraceAligned.lean/declarations/algebra-trace-localization.md) | 79 | `result-track:5657bb897426f17c7bd31150e61e2034d03412ac7ecb40f01966fa013ece3a06` |
+| 4 | `theorem` | [Algebra.traceMatrix_localizationLocalization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalizationNormTraceAligned.lean/declarations/algebra-tracematrix-localizationlocalization.md) | 100 | `result-track:979bf846611d84a94cfcf472c09bd21be2abe00b479f9819e5ae6db877122f0c` |
+| 5 | `theorem` | [Algebra.discr_localizationLocalization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalizationNormTraceAligned.lean/declarations/algebra-discr-localizationlocalization.md) | 114 | `result-track:27812251a1136d512eaaea0799de6d64be1fb6257e1a8b3bd3ff29ae38bbbc22` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceCriticalRelativeConsumerNamespaced.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceCriticalRelativeConsumerNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceCriticalRelativeConsumerNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceCriticalRelativeConsumerNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [integer_bound_at_radius](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceCriticalRelativeConsumerNamespaced.lean/declarations/integer-bound-at-radius.md) | 27 | `result-track:8aadda00f205d9bca7146e51e7cb9cf31f20d525d7b4dd5a05443bc25f73cfa8` |
-| 2 | `theorem` | [residual_bound_at_radius](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceCriticalRelativeConsumerNamespaced.lean/declarations/residual-bound-at-radius.md) | 38 | `result-track:7fb0cb836ae215fb90ccd020f62d2e5406152415b8e014dd3a1447d5fea781de` |
-| 3 | `theorem` | [estimate_of_criticalRelativePairing_bound_at_radius](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceCriticalRelativeConsumerNamespaced.lean/declarations/estimate-of-criticalrelativepairing-bound-at-radius.md) | 46 | `result-track:8e40658d878ca54f017b5d5e60cf1cf106bfd595be48ad46f67eefe4dc29c74e` |
+| 1 | `theorem` | [integer_bound_at_radius](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceCriticalRelativeConsumerNamespaced.lean/declarations/integer-bound-at-radius.md) | 27 | `result-track:8aadda00f205d9bca7146e51e7cb9cf31f20d525d7b4dd5a05443bc25f73cfa8` |
+| 2 | `theorem` | [residual_bound_at_radius](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceCriticalRelativeConsumerNamespaced.lean/declarations/residual-bound-at-radius.md) | 38 | `result-track:7fb0cb836ae215fb90ccd020f62d2e5406152415b8e014dd3a1447d5fea781de` |
+| 3 | `theorem` | [estimate_of_criticalRelativePairing_bound_at_radius](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceCriticalRelativeConsumerNamespaced.lean/declarations/estimate-of-criticalrelativepairing-bound-at-radius.md) | 46 | `result-track:8e40658d878ca54f017b5d5e60cf1cf106bfd595be48ad46f67eefe4dc29c74e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

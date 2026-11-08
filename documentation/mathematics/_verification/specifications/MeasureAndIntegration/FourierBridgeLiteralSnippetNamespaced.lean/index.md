@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/FourierBridgeLiteralSnippetNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/FourierBridgeLiteralSnippetNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FourierBridgeLiteralSnippetNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FourierBridgeLiteralSnippetNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../MeasureAndIntegration/FourierBridgeLiteralSnippetNamespaced.lean/declarations/example-source-edition-6.md) | 13 | `declaration-track:d8a6a2bc9a3c2b8a8caef35d38c9622b884145784e48281ec6a334c2a146c3a2` |
-| 2 | `example` | [(anonymous)](../../../../MeasureAndIntegration/FourierBridgeLiteralSnippetNamespaced.lean/declarations/example-source-edition-2.md) | 17 | `declaration-track:741fd581a8c8aad784e664d3cfd128d0a2a6bc86f2907e23a45e67b3b85709c2` |
-| 3 | `example` | [(anonymous)](../../../../MeasureAndIntegration/FourierBridgeLiteralSnippetNamespaced.lean/declarations/example-source-edition-5.md) | 20 | `declaration-track:c95f65e1fcf8996085fb3ad399042be5078eaca52c4bbc01fa815185dca0cf04` |
-| 4 | `example` | [(anonymous)](../../../../MeasureAndIntegration/FourierBridgeLiteralSnippetNamespaced.lean/declarations/example-source-edition-4.md) | 24 | `declaration-track:a0a6c5e2d092e9668fcd2ded91a2a8464d1045ca9e3411184076ca3a61ceebed` |
-| 5 | `example` | [(anonymous)](../../../../MeasureAndIntegration/FourierBridgeLiteralSnippetNamespaced.lean/declarations/example-source-edition-3.md) | 27 | `declaration-track:90a625c88bc28a173024e5672e6a1e433cfa43c500da3b883a4b7ce9c499c1d7` |
-| 6 | `example` | [(anonymous)](../../../../MeasureAndIntegration/FourierBridgeLiteralSnippetNamespaced.lean/declarations/example.md) | 31 | `declaration-track:5aa79b110b5158611ad49380da3097a5db46ffe4ad98f71d6ffe6f03a6a08be0` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FourierBridgeLiteralSnippetNamespaced.lean/declarations/example-source-edition-6.md) | 13 | `declaration-track:d8a6a2bc9a3c2b8a8caef35d38c9622b884145784e48281ec6a334c2a146c3a2` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FourierBridgeLiteralSnippetNamespaced.lean/declarations/example-source-edition-2.md) | 17 | `declaration-track:741fd581a8c8aad784e664d3cfd128d0a2a6bc86f2907e23a45e67b3b85709c2` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FourierBridgeLiteralSnippetNamespaced.lean/declarations/example-source-edition-5.md) | 20 | `declaration-track:c95f65e1fcf8996085fb3ad399042be5078eaca52c4bbc01fa815185dca0cf04` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FourierBridgeLiteralSnippetNamespaced.lean/declarations/example-source-edition-4.md) | 24 | `declaration-track:a0a6c5e2d092e9668fcd2ded91a2a8464d1045ca9e3411184076ca3a61ceebed` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FourierBridgeLiteralSnippetNamespaced.lean/declarations/example-source-edition-3.md) | 27 | `declaration-track:90a625c88bc28a173024e5672e6a1e433cfa43c500da3b883a4b7ce9c499c1d7` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FourierBridgeLiteralSnippetNamespaced.lean/declarations/example.md) | 31 | `declaration-track:5aa79b110b5158611ad49380da3097a5db46ffe4ad98f71d6ffe6f03a6a08be0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

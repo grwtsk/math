@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/NonclaimCatalog.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/NonclaimCatalog.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/NonclaimCatalog.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/NonclaimCatalog.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [repository_output_is_not_settlement](../../../../../ComputerScience/AlgorithmsInComputerScience/NonclaimCatalog.lean/declarations/repository-output-is-not-settlement.md) | 7 | `declaration-track:c9fc4a5ef3a4c48408ee22c361bbf535f0cef9b0dfb2cb80a6e91b2892675e33` |
-| 2 | `def` | [rust_file_is_not_proof](../../../../../ComputerScience/AlgorithmsInComputerScience/NonclaimCatalog.lean/declarations/rust-file-is-not-proof.md) | 10 | `declaration-track:2af1f16052ce679122be93358544199615887e113ad61bc899e531ab660a15d7` |
-| 3 | `def` | [bitmatrix_is_not_theorem](../../../../../ComputerScience/AlgorithmsInComputerScience/NonclaimCatalog.lean/declarations/bitmatrix-is-not-theorem.md) | 13 | `declaration-track:77bfdbc8c8bba10465b2f9e34d7c53334592693592857017c90222e3a9701507` |
-| 4 | `def` | [receipt_is_not_proof](../../../../../ComputerScience/AlgorithmsInComputerScience/NonclaimCatalog.lean/declarations/receipt-is-not-proof.md) | 16 | `declaration-track:f4d0f61bd4d80d06d421c50bab66e134c12fbcdeb82baaab51104c19840dbc4b` |
-| 5 | `def` | [digest_is_not_truth](../../../../../ComputerScience/AlgorithmsInComputerScience/NonclaimCatalog.lean/declarations/digest-is-not-truth.md) | 19 | `declaration-track:15798024eb72c762af7b385647e2d736066777106fea2263cec7f7bb858b0332` |
-| 6 | `def` | [requiredNonclaims](../../../../../ComputerScience/AlgorithmsInComputerScience/NonclaimCatalog.lean/declarations/requirednonclaims.md) | 22 | `declaration-track:efdefefc76e1c6b4debad254d169568d39647dacca59d08d5a152659a0333e9d` |
-| 7 | `theorem` | [requiredNonclaims_count](../../../../../ComputerScience/AlgorithmsInComputerScience/NonclaimCatalog.lean/declarations/requirednonclaims-count.md) | 29 | `result-track:c6665a4a2616af7a6534cddcac1a4aa95c701c5afc21029afd19b96e6ff159dd` |
+| 1 | `def` | [repository_output_is_not_settlement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/NonclaimCatalog.lean/declarations/repository-output-is-not-settlement.md) | 7 | `declaration-track:c9fc4a5ef3a4c48408ee22c361bbf535f0cef9b0dfb2cb80a6e91b2892675e33` |
+| 2 | `def` | [rust_file_is_not_proof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/NonclaimCatalog.lean/declarations/rust-file-is-not-proof.md) | 10 | `declaration-track:2af1f16052ce679122be93358544199615887e113ad61bc899e531ab660a15d7` |
+| 3 | `def` | [bitmatrix_is_not_theorem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/NonclaimCatalog.lean/declarations/bitmatrix-is-not-theorem.md) | 13 | `declaration-track:77bfdbc8c8bba10465b2f9e34d7c53334592693592857017c90222e3a9701507` |
+| 4 | `def` | [receipt_is_not_proof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/NonclaimCatalog.lean/declarations/receipt-is-not-proof.md) | 16 | `declaration-track:f4d0f61bd4d80d06d421c50bab66e134c12fbcdeb82baaab51104c19840dbc4b` |
+| 5 | `def` | [digest_is_not_truth](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/NonclaimCatalog.lean/declarations/digest-is-not-truth.md) | 19 | `declaration-track:15798024eb72c762af7b385647e2d736066777106fea2263cec7f7bb858b0332` |
+| 6 | `def` | [requiredNonclaims](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/NonclaimCatalog.lean/declarations/requirednonclaims.md) | 22 | `declaration-track:efdefefc76e1c6b4debad254d169568d39647dacca59d08d5a152659a0333e9d` |
+| 7 | `theorem` | [requiredNonclaims_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/NonclaimCatalog.lean/declarations/requirednonclaims-count.md) | 29 | `result-track:c6665a4a2616af7a6534cddcac1a4aa95c701c5afc21029afd19b96e6ff159dd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

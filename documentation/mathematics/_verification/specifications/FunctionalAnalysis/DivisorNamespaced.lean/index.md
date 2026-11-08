@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/DivisorNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/DivisorNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/DivisorNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/DivisorNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,18 +59,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [divisor](../../../../FunctionalAnalysis/DivisorNamespaced.lean/declarations/divisor.md) | 42 | `declaration-track:211f82684e3381c6a24eefa8262130fa2f56ddf38e89b45de1062c30df492144` |
-| 2 | `theorem` | [divisor_def](../../../../FunctionalAnalysis/DivisorNamespaced.lean/declarations/divisor-def.md) | 63 | `result-track:1638798386238b59f1f34f825cbc4894cba212b5146e25d41d4ba5ef5b0ab12d` |
-| 3 | `lemma` | [divisor_apply](../../../../FunctionalAnalysis/DivisorNamespaced.lean/declarations/divisor-apply.md) | 72 | `result-track:183b44901a507d078bd2a89dfb06ced6a50f001406e8cd4015713d0585adc4f2` |
-| 4 | `theorem` | [divisor_congr_codiscreteWithin_of_eqOn_compl](../../../../FunctionalAnalysis/DivisorNamespaced.lean/declarations/divisor-congr-codiscretewithin-of-eqon-compl.md) | 83 | `result-track:167b554695f23ac7158997b6ec59fbcefece90ed910ead683f844c1e3c7e210d` |
-| 5 | `theorem` | [divisor_congr_codiscreteWithin](../../../../FunctionalAnalysis/DivisorNamespaced.lean/declarations/divisor-congr-codiscretewithin.md) | 102 | `result-track:714e06c9097af838425a306b5d1ca45e724d1fd7837ae16dbd3360b1349797c3` |
-| 6 | `theorem` | [AnalyticOnNhd.divisor_nonneg](../../../../FunctionalAnalysis/DivisorNamespaced.lean/declarations/analyticonnhd-divisor-nonneg.md) | 125 | `result-track:9fbf32362b98eec80851ba74c3714179c072160ee0137176ae627aec71fdc75b` |
-| 7 | `theorem` | [divisor_smul](../../../../FunctionalAnalysis/DivisorNamespaced.lean/declarations/divisor-smul.md) | 144 | `result-track:86d111d62a0b684ac22a941bf512cc60d2b7b8d565071a72e66705ae53574d33` |
-| 8 | `theorem` | [divisor_mul](../../../../FunctionalAnalysis/DivisorNamespaced.lean/declarations/divisor-mul.md) | 164 | `result-track:8695c66936f03aebc718eb0e26f6a1e00bd92c6741e90a282c26b47c2bd6cbf5` |
-| 9 | `theorem` | [divisor_inv](../../../../FunctionalAnalysis/DivisorNamespaced.lean/declarations/divisor-inv.md) | 172 | `result-track:5157f5a546869ec6d3e0c2aec1b35fae5005eaae17a3bd6fb20d32480829589e` |
-| 10 | `theorem` | [divisor_restrict](../../../../FunctionalAnalysis/DivisorNamespaced.lean/declarations/divisor-restrict.md) | 183 | `result-track:8af30ac1cc4f32ae4d2f41ec33b0440000e86ba544863a71d2cd824036313a57` |
-| 11 | `theorem` | [negPart_divisor_add_of_analyticNhdOn_right](../../../../FunctionalAnalysis/DivisorNamespaced.lean/declarations/negpart-divisor-add-of-analyticnhdon-right.md) | 192 | `result-track:e4dac2cac8a3ff6ce01e73d9273b8d0061c02bbd3336811ef288424a87db8d5b` |
-| 12 | `theorem` | [negPart_divisor_add_of_analyticNhdOn_left](../../../../FunctionalAnalysis/DivisorNamespaced.lean/declarations/negpart-divisor-add-of-analyticnhdon-left.md) | 214 | `result-track:dce7c7841cbb1f94f445b4d5cd784ecc17aae76fd8ae26c35e853ca7580a8f27` |
+| 1 | `def` | [divisor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/DivisorNamespaced.lean/declarations/divisor.md) | 42 | `declaration-track:211f82684e3381c6a24eefa8262130fa2f56ddf38e89b45de1062c30df492144` |
+| 2 | `theorem` | [divisor_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/DivisorNamespaced.lean/declarations/divisor-def.md) | 63 | `result-track:1638798386238b59f1f34f825cbc4894cba212b5146e25d41d4ba5ef5b0ab12d` |
+| 3 | `lemma` | [divisor_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/DivisorNamespaced.lean/declarations/divisor-apply.md) | 72 | `result-track:183b44901a507d078bd2a89dfb06ced6a50f001406e8cd4015713d0585adc4f2` |
+| 4 | `theorem` | [divisor_congr_codiscreteWithin_of_eqOn_compl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/DivisorNamespaced.lean/declarations/divisor-congr-codiscretewithin-of-eqon-compl.md) | 83 | `result-track:167b554695f23ac7158997b6ec59fbcefece90ed910ead683f844c1e3c7e210d` |
+| 5 | `theorem` | [divisor_congr_codiscreteWithin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/DivisorNamespaced.lean/declarations/divisor-congr-codiscretewithin.md) | 102 | `result-track:714e06c9097af838425a306b5d1ca45e724d1fd7837ae16dbd3360b1349797c3` |
+| 6 | `theorem` | [AnalyticOnNhd.divisor_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/DivisorNamespaced.lean/declarations/analyticonnhd-divisor-nonneg.md) | 125 | `result-track:9fbf32362b98eec80851ba74c3714179c072160ee0137176ae627aec71fdc75b` |
+| 7 | `theorem` | [divisor_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/DivisorNamespaced.lean/declarations/divisor-smul.md) | 144 | `result-track:86d111d62a0b684ac22a941bf512cc60d2b7b8d565071a72e66705ae53574d33` |
+| 8 | `theorem` | [divisor_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/DivisorNamespaced.lean/declarations/divisor-mul.md) | 164 | `result-track:8695c66936f03aebc718eb0e26f6a1e00bd92c6741e90a282c26b47c2bd6cbf5` |
+| 9 | `theorem` | [divisor_inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/DivisorNamespaced.lean/declarations/divisor-inv.md) | 172 | `result-track:5157f5a546869ec6d3e0c2aec1b35fae5005eaae17a3bd6fb20d32480829589e` |
+| 10 | `theorem` | [divisor_restrict](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/DivisorNamespaced.lean/declarations/divisor-restrict.md) | 183 | `result-track:8af30ac1cc4f32ae4d2f41ec33b0440000e86ba544863a71d2cd824036313a57` |
+| 11 | `theorem` | [negPart_divisor_add_of_analyticNhdOn_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/DivisorNamespaced.lean/declarations/negpart-divisor-add-of-analyticnhdon-right.md) | 192 | `result-track:e4dac2cac8a3ff6ce01e73d9273b8d0061c02bbd3336811ef288424a87db8d5b` |
+| 12 | `theorem` | [negPart_divisor_add_of_analyticNhdOn_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/DivisorNamespaced.lean/declarations/negpart-divisor-add-of-analyticnhdon-left.md) | 214 | `result-track:dce7c7841cbb1f94f445b4d5cd784ecc17aae76fd8ae26c35e853ca7580a8f27` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

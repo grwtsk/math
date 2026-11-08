@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RulePatternUniverseBugNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RulePatternUniverseBugNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RulePatternUniverseBugNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RulePatternUniverseBugNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [len](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RulePatternUniverseBugNamespaced.lean/declarations/len.md) | 27 | `declaration-track:bea4d3f8fe4c6c9bcd19ee48812b77b1c0911256d4f6a3e80288a24343eb7c90` |
-| 2 | `theorem` | [len_pos](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RulePatternUniverseBugNamespaced.lean/declarations/len-pos.md) | 33 | `result-track:dce273326559cf7fd22e22cbf260316f72254be7ad506f1afc603a21ea53c3a4` |
-| 3 | `def` | [indexOpt](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RulePatternUniverseBugNamespaced.lean/declarations/indexopt.md) | 37 | `declaration-track:bcd2e7c3d89062042d8608ca84e8beaacc1cacbf03a28e7243b1f3f594411c82` |
-| 4 | `theorem` | [indexOpt_bounds](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RulePatternUniverseBugNamespaced.lean/declarations/indexopt-bounds.md) | 42 | `result-track:23da2fa96aacd2a07e0b478079c0b5acaaf774cce92fbc4c241e3597635bf3cc` |
+| 1 | `def` | [len](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RulePatternUniverseBugNamespaced.lean/declarations/len.md) | 27 | `declaration-track:bea4d3f8fe4c6c9bcd19ee48812b77b1c0911256d4f6a3e80288a24343eb7c90` |
+| 2 | `theorem` | [len_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RulePatternUniverseBugNamespaced.lean/declarations/len-pos.md) | 33 | `result-track:dce273326559cf7fd22e22cbf260316f72254be7ad506f1afc603a21ea53c3a4` |
+| 3 | `def` | [indexOpt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RulePatternUniverseBugNamespaced.lean/declarations/indexopt.md) | 37 | `declaration-track:bcd2e7c3d89062042d8608ca84e8beaacc1cacbf03a28e7243b1f3f594411c82` |
+| 4 | `theorem` | [indexOpt_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RulePatternUniverseBugNamespaced.lean/declarations/indexopt-bounds.md) | 42 | `result-track:23da2fa96aacd2a07e0b478079c0b5acaaf774cce92fbc4c241e3597635bf3cc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

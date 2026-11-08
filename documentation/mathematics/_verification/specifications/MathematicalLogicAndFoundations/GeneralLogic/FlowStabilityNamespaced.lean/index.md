@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FlowStabilityNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FlowStabilityNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FlowStabilityNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FlowStabilityNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [HomologyStabilityCertificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FlowStabilityNamespaced.lean/declarations/homologystabilitycertificate.md) | 14 | `declaration-track:2cb65389730797c10303eff0de464a9110ad5214ecac5275ce401f1831df05d3` |
-| 2 | `def` | [HomologyStabilityCertificate.claimSoundInput](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FlowStabilityNamespaced.lean/declarations/homologystabilitycertificate-claimsoundinput.md) | 28 | `declaration-track:6df7beb66b2dd1c69e2d360aa989445e7433dc9c3e1ce2ff03f80e25d013c2b6` |
-| 3 | `theorem` | [HomologyStabilityCertificate.claimSound_id](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FlowStabilityNamespaced.lean/declarations/homologystabilitycertificate-claimsound-id.md) | 32 | `result-track:4e9de0f9f3309152ce9909a77d72dff4fca0a652906e8a2d2861953205f0115e` |
+| 1 | `structure` | [HomologyStabilityCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FlowStabilityNamespaced.lean/declarations/homologystabilitycertificate.md) | 14 | `declaration-track:2cb65389730797c10303eff0de464a9110ad5214ecac5275ce401f1831df05d3` |
+| 2 | `def` | [HomologyStabilityCertificate.claimSoundInput](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FlowStabilityNamespaced.lean/declarations/homologystabilitycertificate-claimsoundinput.md) | 28 | `declaration-track:6df7beb66b2dd1c69e2d360aa989445e7433dc9c3e1ce2ff03f80e25d013c2b6` |
+| 3 | `theorem` | [HomologyStabilityCertificate.claimSound_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FlowStabilityNamespaced.lean/declarations/homologystabilitycertificate-claimsound-id.md) | 32 | `result-track:4e9de0f9f3309152ce9909a77d72dff4fca0a652906e8a2d2861953205f0115e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

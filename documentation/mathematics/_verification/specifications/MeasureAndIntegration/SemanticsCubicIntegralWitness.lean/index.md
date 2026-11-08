@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SemanticsCubicIntegralWitness.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SemanticsCubicIntegralWitness.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SemanticsCubicIntegralWitness.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SemanticsCubicIntegralWitness.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CubicIntegralWitness](../../../../MeasureAndIntegration/SemanticsCubicIntegralWitness.lean/declarations/cubicintegralwitness-source-edition-2.md) | 20 | `declaration-track:abd03de767a2d4481418d704e341b5af7083340f30f4e39aa0fbd347eb77a286` |
-| 2 | `theorem` | [CubicIntegralWitness.correct](../../../../MeasureAndIntegration/SemanticsCubicIntegralWitness.lean/declarations/cubicintegralwitness-correct.md) | 27 | `result-track:92c292c05d82c01bcc812010ce536a0fd05ebc251276657f4427a146e1c0d58c` |
-| 3 | `theorem` | [CubicIntegralWitness.correct_endpointDifference](../../../../MeasureAndIntegration/SemanticsCubicIntegralWitness.lean/declarations/cubicintegralwitness-correct-endpointdifference.md) | 37 | `result-track:4f99f12e2e3c9606fcf68e22b72c69b9e8ae06e0145d710bc8bff92078dd4d08` |
-| 4 | `def` | [cubicIntegralWitness](../../../../MeasureAndIntegration/SemanticsCubicIntegralWitness.lean/declarations/cubicintegralwitness.md) | 45 | `declaration-track:8abfcba2487108edd9fd80470d6c15c086fc80ca06c321212d10f3e1bb23d587` |
-| 5 | `theorem` | [cubicIntegralWitness_value](../../../../MeasureAndIntegration/SemanticsCubicIntegralWitness.lean/declarations/cubicintegralwitness-value.md) | 51 | `result-track:32dd5f26b21b67f5e3a2a2ac5022e2052577246effc0b48dc68f6c5de055f22c` |
+| 1 | `structure` | [CubicIntegralWitness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SemanticsCubicIntegralWitness.lean/declarations/cubicintegralwitness-source-edition-2.md) | 20 | `declaration-track:abd03de767a2d4481418d704e341b5af7083340f30f4e39aa0fbd347eb77a286` |
+| 2 | `theorem` | [CubicIntegralWitness.correct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SemanticsCubicIntegralWitness.lean/declarations/cubicintegralwitness-correct.md) | 27 | `result-track:92c292c05d82c01bcc812010ce536a0fd05ebc251276657f4427a146e1c0d58c` |
+| 3 | `theorem` | [CubicIntegralWitness.correct_endpointDifference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SemanticsCubicIntegralWitness.lean/declarations/cubicintegralwitness-correct-endpointdifference.md) | 37 | `result-track:4f99f12e2e3c9606fcf68e22b72c69b9e8ae06e0145d710bc8bff92078dd4d08` |
+| 4 | `def` | [cubicIntegralWitness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SemanticsCubicIntegralWitness.lean/declarations/cubicintegralwitness.md) | 45 | `declaration-track:8abfcba2487108edd9fd80470d6c15c086fc80ca06c321212d10f3e1bb23d587` |
+| 5 | `theorem` | [cubicIntegralWitness_value](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SemanticsCubicIntegralWitness.lean/declarations/cubicintegralwitness-value.md) | 51 | `result-track:32dd5f26b21b67f5e3a2a2ac5022e2052577246effc0b48dc68f6c5de055f22c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

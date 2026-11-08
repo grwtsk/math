@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ReferenceFourierLiteralSnippetNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ReferenceFourierLiteralSnippetNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReferenceFourierLiteralSnippetNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReferenceFourierLiteralSnippetNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../MeasureAndIntegration/ReferenceFourierLiteralSnippetNamespaced.lean/declarations/example-source-edition-2.md) | 14 | `declaration-track:7e494e6a75badf93bc58b8a3d1ed27433b6bc32240756c415157ac7bd13d42e2` |
-| 2 | `example` | [(anonymous)](../../../../MeasureAndIntegration/ReferenceFourierLiteralSnippetNamespaced.lean/declarations/example-source-edition-4.md) | 18 | `declaration-track:e109a195f19384a5960df674e98b0b835a0e0ed862d2329860121be53f379eb4` |
-| 3 | `example` | [(anonymous)](../../../../MeasureAndIntegration/ReferenceFourierLiteralSnippetNamespaced.lean/declarations/example.md) | 21 | `declaration-track:67f18d190a97823e1b69aec4d639ad4e0a3152c432b9171ff878764eb1d53613` |
-| 4 | `example` | [(anonymous)](../../../../MeasureAndIntegration/ReferenceFourierLiteralSnippetNamespaced.lean/declarations/example-source-edition-3.md) | 24 | `declaration-track:a6116735f4e34bafae34b6ccf4a66ddcb6fde724b589af719288f0b52cb6964d` |
-| 5 | `example` | [(anonymous)](../../../../MeasureAndIntegration/ReferenceFourierLiteralSnippetNamespaced.lean/declarations/example-source-edition-5.md) | 27 | `declaration-track:fd0810db99221191c2c00ddab5aab17d4801658158352b80602156d078ce42d7` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReferenceFourierLiteralSnippetNamespaced.lean/declarations/example-source-edition-2.md) | 14 | `declaration-track:7e494e6a75badf93bc58b8a3d1ed27433b6bc32240756c415157ac7bd13d42e2` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReferenceFourierLiteralSnippetNamespaced.lean/declarations/example-source-edition-4.md) | 18 | `declaration-track:e109a195f19384a5960df674e98b0b835a0e0ed862d2329860121be53f379eb4` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReferenceFourierLiteralSnippetNamespaced.lean/declarations/example.md) | 21 | `declaration-track:67f18d190a97823e1b69aec4d639ad4e0a3152c432b9171ff878764eb1d53613` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReferenceFourierLiteralSnippetNamespaced.lean/declarations/example-source-edition-3.md) | 24 | `declaration-track:a6116735f4e34bafae34b6ccf4a66ddcb6fde724b589af719288f0b52cb6964d` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReferenceFourierLiteralSnippetNamespaced.lean/declarations/example-source-edition-5.md) | 27 | `declaration-track:fd0810db99221191c2c00ddab5aab17d4801658158352b80602156d078ce42d7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceFullXiOuterContractionAttempt01.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceFullXiOuterContractionAttempt01.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFullXiOuterContractionAttempt01.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFullXiOuterContractionAttempt01.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [literal_full_Xi_pairing_eq_contracted](../../../../MeasureAndIntegration/SourceFullXiOuterContractionAttempt01.lean/declarations/literal-full-xi-pairing-eq-contracted.md) | 21 | `result-track:7c837b4ee67801fefdb5abe006811a6785d0f40b8b72c496a28321fcbf2f78fd` |
-| 2 | `theorem` | [actual_signed_pairing_eq_contracted](../../../../MeasureAndIntegration/SourceFullXiOuterContractionAttempt01.lean/declarations/actual-signed-pairing-eq-contracted.md) | 36 | `result-track:cabca7eeddb7e34a85d04a6b0cc04cf46eedb607778de6a9446ca07221fe98f1` |
-| 3 | `theorem` | [remaining_lower_of_contracted_pairing](../../../../MeasureAndIntegration/SourceFullXiOuterContractionAttempt01.lean/declarations/remaining-lower-of-contracted-pairing.md) | 42 | `result-track:9cacb04edb9dbbe9a49684ced6f3850f6106a9ab6dfeaba6f1e82c3804972171` |
-| 4 | `theorem` | [estimate_of_contracted_pairing](../../../../MeasureAndIntegration/SourceFullXiOuterContractionAttempt01.lean/declarations/estimate-of-contracted-pairing.md) | 50 | `result-track:dcb7cbfa327c76bd6291be498eaaa638ef6583772d0f254440be307a161757a9` |
+| 1 | `theorem` | [literal_full_Xi_pairing_eq_contracted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFullXiOuterContractionAttempt01.lean/declarations/literal-full-xi-pairing-eq-contracted.md) | 21 | `result-track:7c837b4ee67801fefdb5abe006811a6785d0f40b8b72c496a28321fcbf2f78fd` |
+| 2 | `theorem` | [actual_signed_pairing_eq_contracted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFullXiOuterContractionAttempt01.lean/declarations/actual-signed-pairing-eq-contracted.md) | 36 | `result-track:cabca7eeddb7e34a85d04a6b0cc04cf46eedb607778de6a9446ca07221fe98f1` |
+| 3 | `theorem` | [remaining_lower_of_contracted_pairing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFullXiOuterContractionAttempt01.lean/declarations/remaining-lower-of-contracted-pairing.md) | 42 | `result-track:9cacb04edb9dbbe9a49684ced6f3850f6106a9ab6dfeaba6f1e82c3804972171` |
+| 4 | `theorem` | [estimate_of_contracted_pairing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFullXiOuterContractionAttempt01.lean/declarations/estimate-of-contracted-pairing.md) | 50 | `result-track:dcb7cbfa327c76bd6291be498eaaa638ef6583772d0f254440be307a161757a9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

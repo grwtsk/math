@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PEmpty.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PEmpty.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PEmpty.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PEmpty.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [emptyEquivalence](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PEmpty.lean/declarations/emptyequivalence.md) | 25 | `declaration-track:8926fceb95fedf919733747476df30fac3544cb9da98297501c51f00f31fb1c3` |
-| 2 | `def` | [empty](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PEmpty.lean/declarations/empty.md) | 41 | `declaration-track:8ad9cd69df5019d4212bb43b9ddf7e93744787ad7a0308def6a16b407e9dfa2a` |
-| 3 | `def` | [emptyExt](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PEmpty.lean/declarations/emptyext.md) | 48 | `declaration-track:6cb7302b199a5106a0013ae0cfa153fa28b464626e3c0478209968c108b72364` |
-| 4 | `def` | [uniqueFromEmpty](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PEmpty.lean/declarations/uniquefromempty.md) | 55 | `declaration-track:41077879a9a19d2955d81bf062526fad1909ed8a763cee3b03d96c56bfbda88a` |
-| 5 | `theorem` | [empty_ext'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PEmpty.lean/declarations/empty-ext.md) | 62 | `result-track:aaeb20e55f713a6b862fe406d03f9c0cb00909d77db4462aba4be3368c7c2770` |
+| 1 | `def` | [emptyEquivalence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PEmpty.lean/declarations/emptyequivalence.md) | 25 | `declaration-track:8926fceb95fedf919733747476df30fac3544cb9da98297501c51f00f31fb1c3` |
+| 2 | `def` | [empty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PEmpty.lean/declarations/empty.md) | 41 | `declaration-track:8ad9cd69df5019d4212bb43b9ddf7e93744787ad7a0308def6a16b407e9dfa2a` |
+| 3 | `def` | [emptyExt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PEmpty.lean/declarations/emptyext.md) | 48 | `declaration-track:6cb7302b199a5106a0013ae0cfa153fa28b464626e3c0478209968c108b72364` |
+| 4 | `def` | [uniqueFromEmpty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PEmpty.lean/declarations/uniquefromempty.md) | 55 | `declaration-track:41077879a9a19d2955d81bf062526fad1909ed8a763cee3b03d96c56bfbda88a` |
+| 5 | `theorem` | [empty_ext'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PEmpty.lean/declarations/empty-ext.md) | 62 | `result-track:aaeb20e55f713a6b862fe406d03f9c0cb00909d77db4462aba4be3368c7c2770` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

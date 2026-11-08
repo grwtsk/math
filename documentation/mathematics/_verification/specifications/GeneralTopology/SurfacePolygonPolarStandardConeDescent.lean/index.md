@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SurfacePolygonPolarStandardConeDescent.lean/index.md) · [Full source](../../../../GeneralTopology/SurfacePolygonPolarStandardConeDescent.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonPolarStandardConeDescent.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonPolarStandardConeDescent.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarFundamentalCover`](../../../../GeneralTopology/SurfacePolygonPolarFundamentalCover.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarFundamentalCover`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonPolarFundamentalCover.lean/index.md) — import line 8; pinned internal source present.
 - `Mathlib.Topology.Constructions` — import line 9; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 10; external provider; requires a separately pinned dependency.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [standardCircleConeConnected_jointPolar_eq](../../../../GeneralTopology/SurfacePolygonPolarStandardConeDescent.lean/declarations/standardcircleconeconnected-jointpolar-eq.md) | 38 | `result-track:7550d568d113d9e7b94ee08eeb79889a000600895d6dc19ab7f1bc3496387274` |
-| 2 | `def` | [standardConePolarDisk](../../../../GeneralTopology/SurfacePolygonPolarStandardConeDescent.lean/declarations/standardconepolardisk.md) | 55 | `declaration-track:e666e72c7c63f1b4027dda3a13413b96dd73be7a0d9c3aaa173909dd556419f0` |
-| 3 | `theorem` | [standardConePolarDisk_projection](../../../../GeneralTopology/SurfacePolygonPolarStandardConeDescent.lean/declarations/standardconepolardisk-projection.md) | 63 | `result-track:5ca749b1e34ac7c3e2afae1fba06a46ebdbd8826ddfedb5144dae29440c12d24` |
-| 4 | `theorem` | [standardConePolarDisk_norm_eq_radius](../../../../GeneralTopology/SurfacePolygonPolarStandardConeDescent.lean/declarations/standardconepolardisk-norm-eq-radius.md) | 71 | `result-track:ac0e11f2dcfa8e4adb43cf04889545d6ba89ec6f152aef148bbca0e5b534de86` |
-| 5 | `theorem` | [standardConePolarDisk_continuous](../../../../GeneralTopology/SurfacePolygonPolarStandardConeDescent.lean/declarations/standardconepolardisk-continuous.md) | 81 | `result-track:cdf5ffaa60da762eec1da602e9458bbc650c3f3a859f1f1b6a397524e1665304` |
-| 6 | `theorem` | [standardConePolarDisk_apex](../../../../GeneralTopology/SurfacePolygonPolarStandardConeDescent.lean/declarations/standardconepolardisk-apex.md) | 87 | `result-track:2041a7f088e2cedd0a1759356e7b77a19e87afe289f8d98714a8081cb52f4a60` |
-| 7 | `theorem` | [standardConePolarDisk_boundary_norm](../../../../GeneralTopology/SurfacePolygonPolarStandardConeDescent.lean/declarations/standardconepolardisk-boundary-norm.md) | 94 | `result-track:ae78d18bd7964585e6e03f7bf5ba2abdc770571a5328e9d75b3ccdc217970eb6` |
+| 1 | `theorem` | [standardCircleConeConnected_jointPolar_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonPolarStandardConeDescent.lean/declarations/standardcircleconeconnected-jointpolar-eq.md) | 38 | `result-track:7550d568d113d9e7b94ee08eeb79889a000600895d6dc19ab7f1bc3496387274` |
+| 2 | `def` | [standardConePolarDisk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonPolarStandardConeDescent.lean/declarations/standardconepolardisk.md) | 55 | `declaration-track:e666e72c7c63f1b4027dda3a13413b96dd73be7a0d9c3aaa173909dd556419f0` |
+| 3 | `theorem` | [standardConePolarDisk_projection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonPolarStandardConeDescent.lean/declarations/standardconepolardisk-projection.md) | 63 | `result-track:5ca749b1e34ac7c3e2afae1fba06a46ebdbd8826ddfedb5144dae29440c12d24` |
+| 4 | `theorem` | [standardConePolarDisk_norm_eq_radius](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonPolarStandardConeDescent.lean/declarations/standardconepolardisk-norm-eq-radius.md) | 71 | `result-track:ac0e11f2dcfa8e4adb43cf04889545d6ba89ec6f152aef148bbca0e5b534de86` |
+| 5 | `theorem` | [standardConePolarDisk_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonPolarStandardConeDescent.lean/declarations/standardconepolardisk-continuous.md) | 81 | `result-track:cdf5ffaa60da762eec1da602e9458bbc650c3f3a859f1f1b6a397524e1665304` |
+| 6 | `theorem` | [standardConePolarDisk_apex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonPolarStandardConeDescent.lean/declarations/standardconepolardisk-apex.md) | 87 | `result-track:2041a7f088e2cedd0a1759356e7b77a19e87afe289f8d98714a8081cb52f4a60` |
+| 7 | `theorem` | [standardConePolarDisk_boundary_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonPolarStandardConeDescent.lean/declarations/standardconepolardisk-boundary-norm.md) | 94 | `result-track:ae78d18bd7964585e6e03f7bf5ba2abdc770571a5328e9d75b3ccdc217970eb6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

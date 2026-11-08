@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MatcherPublicEdition1.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MatcherPublicEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MatcherPublicEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MatcherPublicEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Matcher](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MatcherPublicEdition1.lean/declarations/matcher.md) | 33 | `declaration-track:3737218b55c75e1c0853ec90b9dc0a058ab3dc0ee92e5260db06a3c175902724` |
-| 2 | `def` | [Matcher.ofList](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MatcherPublicEdition1.lean/declarations/matcher-oflist.md) | 38 | `declaration-track:a95776c0c0704791dd1ec51da83da5660ea7bc716f16a87bc1f0a2490f167cee` |
-| 3 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MatcherPublicEdition1.lean/declarations/instance.md) | 43 | `declaration-track:e354b6dca631de1afd572b337b61f49274121cc9139c81693b0bc4bf418d68f3` |
-| 4 | `def` | [Matcher.findAll](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MatcherPublicEdition1.lean/declarations/matcher-findall.md) | 52 | `declaration-track:86c475a5d6c072fc0bd3d47bc6af11ecf9d419077f8ada98bab8376648812532` |
-| 5 | `def` | [Matcher.find?](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MatcherPublicEdition1.lean/declarations/matcher-find.md) | 65 | `declaration-track:7eec2e9b01d8a9f05c2b1e68863487445e866f0f082581cb50e75f3be986f6a7` |
-| 6 | `def` | [findAllInfix](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MatcherPublicEdition1.lean/declarations/findallinfix.md) | 74 | `declaration-track:48326830e8bd506c0d72bee1caacce3357549ab5ea173bee9c91b50ba19a3c87` |
-| 7 | `def` | [findInfix?](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MatcherPublicEdition1.lean/declarations/findinfix.md) | 81 | `declaration-track:2aa9292fbef3470a92fef5073c05fdea0296cf131e557b46d336040476cd8828` |
-| 8 | `def` | [containsInfix](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MatcherPublicEdition1.lean/declarations/containsinfix.md) | 87 | `declaration-track:a168ef942863a117b856d3c2757e72f3051f5d36c3cc2c1ed74d276051177ebd` |
+| 1 | `structure` | [Matcher](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MatcherPublicEdition1.lean/declarations/matcher.md) | 33 | `declaration-track:3737218b55c75e1c0853ec90b9dc0a058ab3dc0ee92e5260db06a3c175902724` |
+| 2 | `def` | [Matcher.ofList](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MatcherPublicEdition1.lean/declarations/matcher-oflist.md) | 38 | `declaration-track:a95776c0c0704791dd1ec51da83da5660ea7bc716f16a87bc1f0a2490f167cee` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MatcherPublicEdition1.lean/declarations/instance.md) | 43 | `declaration-track:e354b6dca631de1afd572b337b61f49274121cc9139c81693b0bc4bf418d68f3` |
+| 4 | `def` | [Matcher.findAll](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MatcherPublicEdition1.lean/declarations/matcher-findall.md) | 52 | `declaration-track:86c475a5d6c072fc0bd3d47bc6af11ecf9d419077f8ada98bab8376648812532` |
+| 5 | `def` | [Matcher.find?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MatcherPublicEdition1.lean/declarations/matcher-find.md) | 65 | `declaration-track:7eec2e9b01d8a9f05c2b1e68863487445e866f0f082581cb50e75f3be986f6a7` |
+| 6 | `def` | [findAllInfix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MatcherPublicEdition1.lean/declarations/findallinfix.md) | 74 | `declaration-track:48326830e8bd506c0d72bee1caacce3357549ab5ea173bee9c91b50ba19a3c87` |
+| 7 | `def` | [findInfix?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MatcherPublicEdition1.lean/declarations/findinfix.md) | 81 | `declaration-track:2aa9292fbef3470a92fef5073c05fdea0296cf131e557b46d336040476cd8828` |
+| 8 | `def` | [containsInfix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MatcherPublicEdition1.lean/declarations/containsinfix.md) | 87 | `declaration-track:a168ef942863a117b856d3c2757e72f3051f5d36c3cc2c1ed74d276051177ebd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

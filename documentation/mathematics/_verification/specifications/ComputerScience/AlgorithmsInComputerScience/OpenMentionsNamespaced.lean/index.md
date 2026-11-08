@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/OpenMentionsNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/OpenMentionsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/OpenMentionsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/OpenMentionsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [allOpenMentions](../../../../../ComputerScience/AlgorithmsInComputerScience/OpenMentionsNamespaced.lean/declarations/allopenmentions.md) | 15 | `declaration-track:9e7e82ac5b402dc50b3a834f2ac16c1731ad00a522c5c52cd29e49af34873113` |
-| 2 | `def` | [allOpenMentionResidues](../../../../../ComputerScience/AlgorithmsInComputerScience/OpenMentionsNamespaced.lean/declarations/allopenmentionresidues.md) | 159 | `declaration-track:eeb78af28e4fa221d773f9b7fbd9b14198956f6aae43834fbcae996824bf09ef` |
-| 3 | `theorem` | [allOpenMentions_count](../../../../../ComputerScience/AlgorithmsInComputerScience/OpenMentionsNamespaced.lean/declarations/allopenmentions-count.md) | 162 | `result-track:13130f4c07b9447fe786c7a1a9d8a625e694938d629b261c5aba3e31e056ab39` |
-| 4 | `theorem` | [allOpenMentionResidues_count](../../../../../ComputerScience/AlgorithmsInComputerScience/OpenMentionsNamespaced.lean/declarations/allopenmentionresidues-count.md) | 165 | `result-track:ae57c7a73c97e25820257e2b699568d587a08a66761514f66bba87bcd12dfa0e` |
+| 1 | `def` | [allOpenMentions](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/OpenMentionsNamespaced.lean/declarations/allopenmentions.md) | 15 | `declaration-track:9e7e82ac5b402dc50b3a834f2ac16c1731ad00a522c5c52cd29e49af34873113` |
+| 2 | `def` | [allOpenMentionResidues](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/OpenMentionsNamespaced.lean/declarations/allopenmentionresidues.md) | 159 | `declaration-track:eeb78af28e4fa221d773f9b7fbd9b14198956f6aae43834fbcae996824bf09ef` |
+| 3 | `theorem` | [allOpenMentions_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/OpenMentionsNamespaced.lean/declarations/allopenmentions-count.md) | 162 | `result-track:13130f4c07b9447fe786c7a1a9d8a625e694938d629b261c5aba3e31e056ab39` |
+| 4 | `theorem` | [allOpenMentionResidues_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/OpenMentionsNamespaced.lean/declarations/allopenmentionresidues-count.md) | 165 | `result-track:ae57c7a73c97e25820257e2b699568d587a08a66761514f66bba87bcd12dfa0e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

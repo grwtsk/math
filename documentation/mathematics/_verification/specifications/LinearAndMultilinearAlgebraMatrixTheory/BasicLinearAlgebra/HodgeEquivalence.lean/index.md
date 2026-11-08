@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeEquivalence.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeEquivalence.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeEquivalence.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeEquivalence.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.LinearAlgebra.HodgePortConsequences`](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgePortConsequences.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.LinearAlgebra.HodgePortConsequences`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgePortConsequences.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,17 +57,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [HodgeEquiv](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeEquivalence.lean/declarations/hodgeequiv.md) | 22 | `declaration-track:cddcd147a1c5c000723a8b4fb793d49f7bcaf36841647f4ce5e335bccb505368` |
-| 2 | `def` | [toPort](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeEquivalence.lean/declarations/toport.md) | 39 | `declaration-track:c3cae48b6749a240d0d1f3461f203e9514e433ba4b045503ecafe9d481031990` |
-| 3 | `theorem` | [delta_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeEquivalence.lean/declarations/delta-apply.md) | 46 | `result-track:9c26344a4235d8f3360ffb9db67da46df3e9c029e2edeeb9e28c449be4ca4cc7` |
-| 4 | `theorem` | [deltaStar_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeEquivalence.lean/declarations/deltastar-apply.md) | 51 | `result-track:97ee787390dfd64bfdd6c8d55cec5f29c4ec5c95e8597049c1b7aee98b29efaa` |
-| 5 | `def` | [refl](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeEquivalence.lean/declarations/refl.md) | 56 | `declaration-track:4121fb045536b288c7a67826b4600cda1fa4c4fde79a4b4ef6e9894dbc0f9a16` |
-| 6 | `def` | [symm](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeEquivalence.lean/declarations/symm.md) | 63 | `declaration-track:f11c4ae2b21fad5f386433bf1bb908e519d81dcfa65307158aa1482c3cf8459f` |
-| 7 | `def` | [trans](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeEquivalence.lean/declarations/trans.md) | 76 | `declaration-track:85f25c4d593f9dd0d9b8ce60f2e8b4552d394f75df15cdc58215b299aab7330a` |
-| 8 | `theorem` | [harmonic0_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeEquivalence.lean/declarations/harmonic0-iff.md) | 91 | `result-track:840bbdb4cdbda8b675ae1189c466c85e1281f56439ca7303ca539ded79deb227` |
-| 9 | `theorem` | [harmonic1_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeEquivalence.lean/declarations/harmonic1-iff.md) | 100 | `result-track:0b93db6dddf053a5b3afa31a2f36bb4d888193174b0f4f95a74c6383925efd6e` |
-| 10 | `theorem` | [laplacian0_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeEquivalence.lean/declarations/laplacian0-apply.md) | 109 | `result-track:80c85684de47a967457aeec9d0ad43e300bb048cd5037abb0c5680dbe71c57cc` |
-| 11 | `theorem` | [laplacian1_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeEquivalence.lean/declarations/laplacian1-apply.md) | 115 | `result-track:34fdbb282826dcbaf9df35e8548fe31b8a12579b0e1b3e359d52066bd31f5540` |
+| 1 | `structure` | [HodgeEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeEquivalence.lean/declarations/hodgeequiv.md) | 22 | `declaration-track:cddcd147a1c5c000723a8b4fb793d49f7bcaf36841647f4ce5e335bccb505368` |
+| 2 | `def` | [toPort](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeEquivalence.lean/declarations/toport.md) | 39 | `declaration-track:c3cae48b6749a240d0d1f3461f203e9514e433ba4b045503ecafe9d481031990` |
+| 3 | `theorem` | [delta_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeEquivalence.lean/declarations/delta-apply.md) | 46 | `result-track:9c26344a4235d8f3360ffb9db67da46df3e9c029e2edeeb9e28c449be4ca4cc7` |
+| 4 | `theorem` | [deltaStar_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeEquivalence.lean/declarations/deltastar-apply.md) | 51 | `result-track:97ee787390dfd64bfdd6c8d55cec5f29c4ec5c95e8597049c1b7aee98b29efaa` |
+| 5 | `def` | [refl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeEquivalence.lean/declarations/refl.md) | 56 | `declaration-track:4121fb045536b288c7a67826b4600cda1fa4c4fde79a4b4ef6e9894dbc0f9a16` |
+| 6 | `def` | [symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeEquivalence.lean/declarations/symm.md) | 63 | `declaration-track:f11c4ae2b21fad5f386433bf1bb908e519d81dcfa65307158aa1482c3cf8459f` |
+| 7 | `def` | [trans](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeEquivalence.lean/declarations/trans.md) | 76 | `declaration-track:85f25c4d593f9dd0d9b8ce60f2e8b4552d394f75df15cdc58215b299aab7330a` |
+| 8 | `theorem` | [harmonic0_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeEquivalence.lean/declarations/harmonic0-iff.md) | 91 | `result-track:840bbdb4cdbda8b675ae1189c466c85e1281f56439ca7303ca539ded79deb227` |
+| 9 | `theorem` | [harmonic1_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeEquivalence.lean/declarations/harmonic1-iff.md) | 100 | `result-track:0b93db6dddf053a5b3afa31a2f36bb4d888193174b0f4f95a74c6383925efd6e` |
+| 10 | `theorem` | [laplacian0_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeEquivalence.lean/declarations/laplacian0-apply.md) | 109 | `result-track:80c85684de47a967457aeec9d0ad43e300bb048cd5037abb0c5680dbe71c57cc` |
+| 11 | `theorem` | [laplacian1_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HodgeEquivalence.lean/declarations/laplacian1-apply.md) | 115 | `result-track:34fdbb282826dcbaf9df35e8548fe31b8a12579b0e1b3e359d52066bd31f5540` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

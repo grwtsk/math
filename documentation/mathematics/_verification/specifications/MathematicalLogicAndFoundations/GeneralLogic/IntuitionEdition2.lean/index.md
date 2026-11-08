@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IntuitionEdition2.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IntuitionEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IntuitionEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IntuitionEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PriorityFeature](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IntuitionEdition2.lean/declarations/priorityfeature.md) | 13 | `declaration-track:171a9ad63c0a6ddb9df4e43079c0ced92783e384922828b5db6775925f96186e` |
-| 2 | `structure` | [IntuitionPriority](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IntuitionEdition2.lean/declarations/intuitionpriority.md) | 25 | `declaration-track:3e1872a22a52cbe93b9d19a1309d1eea5e4b459215d53d86bbf33109754881da` |
-| 3 | `structure` | [IntuitionKernel](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IntuitionEdition2.lean/declarations/intuitionkernel.md) | 43 | `declaration-track:1399dd0fe51b465106bff4bbd764e0d298b1b3aed8eef902d082345130b7d6df` |
-| 4 | `inductive` | [AttemptOutcome](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IntuitionEdition2.lean/declarations/attemptoutcome.md) | 53 | `declaration-track:de726af37392921c8a8e153baaa532e87713414aa8ad6257fe3f7d813ec22b90` |
-| 5 | `structure` | [IntuitionAttempt](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IntuitionEdition2.lean/declarations/intuitionattempt.md) | 67 | `declaration-track:f77be04c073a5dbe79ca3a1085c8723784433e4b8ed7dfae4f04d3f6b308f060` |
-| 6 | `theorem` | [intuition_replay](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IntuitionEdition2.lean/declarations/intuition-replay.md) | 81 | `result-track:cbe6191d76a8622bb686fb9fbd9ee7ed9661fcd60ba18a69b54319c0e973c57f` |
+| 1 | `structure` | [PriorityFeature](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IntuitionEdition2.lean/declarations/priorityfeature.md) | 13 | `declaration-track:171a9ad63c0a6ddb9df4e43079c0ced92783e384922828b5db6775925f96186e` |
+| 2 | `structure` | [IntuitionPriority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IntuitionEdition2.lean/declarations/intuitionpriority.md) | 25 | `declaration-track:3e1872a22a52cbe93b9d19a1309d1eea5e4b459215d53d86bbf33109754881da` |
+| 3 | `structure` | [IntuitionKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IntuitionEdition2.lean/declarations/intuitionkernel.md) | 43 | `declaration-track:1399dd0fe51b465106bff4bbd764e0d298b1b3aed8eef902d082345130b7d6df` |
+| 4 | `inductive` | [AttemptOutcome](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IntuitionEdition2.lean/declarations/attemptoutcome.md) | 53 | `declaration-track:de726af37392921c8a8e153baaa532e87713414aa8ad6257fe3f7d813ec22b90` |
+| 5 | `structure` | [IntuitionAttempt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IntuitionEdition2.lean/declarations/intuitionattempt.md) | 67 | `declaration-track:f77be04c073a5dbe79ca3a1085c8723784433e4b8ed7dfae4f04d3f6b308f060` |
+| 6 | `theorem` | [intuition_replay](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IntuitionEdition2.lean/declarations/intuition-replay.md) | 81 | `result-track:cbe6191d76a8622bb686fb9fbd9ee7ed9661fcd60ba18a69b54319c0e973c57f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

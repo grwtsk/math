@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/Equicontinuity.lean/index.md) · [Full source](../../../../GeneralTopology/Equicontinuity.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Equicontinuity.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Equicontinuity.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [equicontinuousAt_iff_right](../../../../GeneralTopology/Equicontinuity.lean/declarations/equicontinuousat-iff-right.md) | 43 | `result-track:2cf254a40fd1b788a43568fbe959139630ab20e78ea9b8b8d09b9d96494069c6` |
-| 2 | `theorem` | [equicontinuousAt_iff](../../../../GeneralTopology/Equicontinuity.lean/declarations/equicontinuousat-iff.md) | 48 | `result-track:5240dc7beecd115df72fa6940e24b9cb25e92301d5a97fe752a4b17908b44b7e` |
-| 3 | `theorem` | [equicontinuousAt_iff_pair](../../../../GeneralTopology/Equicontinuity.lean/declarations/equicontinuousat-iff-pair.md) | 54 | `result-track:6c0eca7197d01c30dc3c5cb1632353edf0ce32a1fd3f7ec7554b44dd12134df2` |
-| 4 | `theorem` | [uniformEquicontinuous_iff_right](../../../../GeneralTopology/Equicontinuity.lean/declarations/uniformequicontinuous-iff-right.md) | 69 | `result-track:d65ecb4e46fac45f685662b3e9e95799e3ad5299f83f572e5d6755311590f4d6` |
-| 5 | `theorem` | [uniformEquicontinuous_iff](../../../../GeneralTopology/Equicontinuity.lean/declarations/uniformequicontinuous-iff.md) | 75 | `result-track:6e031f68d77a5eb8ac8f25fdaab35e9e2c9b4328778faf3dc84a89e81c4bea64` |
-| 6 | `theorem` | [equicontinuousAt_of_continuity_modulus](../../../../GeneralTopology/Equicontinuity.lean/declarations/equicontinuousat-of-continuity-modulus.md) | 83 | `result-track:581531fdcdc23d706df9d481bd1f09ff7c5c6cfcfd9649aae0ec50be017a2bb5` |
-| 7 | `theorem` | [uniformEquicontinuous_of_continuity_modulus](../../../../GeneralTopology/Equicontinuity.lean/declarations/uniformequicontinuous-of-continuity-modulus.md) | 95 | `result-track:1fe40b5305361cf9057b5d5b38c5b331a115d6d54003e6a7757ce9960a155dd1` |
-| 8 | `theorem` | [equicontinuous_of_continuity_modulus](../../../../GeneralTopology/Equicontinuity.lean/declarations/equicontinuous-of-continuity-modulus.md) | 110 | `result-track:734b5caaa5ab97d9ba80273d73cd16df379d66f4310aded827aa2c3bca600574` |
+| 1 | `theorem` | [equicontinuousAt_iff_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Equicontinuity.lean/declarations/equicontinuousat-iff-right.md) | 43 | `result-track:2cf254a40fd1b788a43568fbe959139630ab20e78ea9b8b8d09b9d96494069c6` |
+| 2 | `theorem` | [equicontinuousAt_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Equicontinuity.lean/declarations/equicontinuousat-iff.md) | 48 | `result-track:5240dc7beecd115df72fa6940e24b9cb25e92301d5a97fe752a4b17908b44b7e` |
+| 3 | `theorem` | [equicontinuousAt_iff_pair](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Equicontinuity.lean/declarations/equicontinuousat-iff-pair.md) | 54 | `result-track:6c0eca7197d01c30dc3c5cb1632353edf0ce32a1fd3f7ec7554b44dd12134df2` |
+| 4 | `theorem` | [uniformEquicontinuous_iff_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Equicontinuity.lean/declarations/uniformequicontinuous-iff-right.md) | 69 | `result-track:d65ecb4e46fac45f685662b3e9e95799e3ad5299f83f572e5d6755311590f4d6` |
+| 5 | `theorem` | [uniformEquicontinuous_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Equicontinuity.lean/declarations/uniformequicontinuous-iff.md) | 75 | `result-track:6e031f68d77a5eb8ac8f25fdaab35e9e2c9b4328778faf3dc84a89e81c4bea64` |
+| 6 | `theorem` | [equicontinuousAt_of_continuity_modulus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Equicontinuity.lean/declarations/equicontinuousat-of-continuity-modulus.md) | 83 | `result-track:581531fdcdc23d706df9d481bd1f09ff7c5c6cfcfd9649aae0ec50be017a2bb5` |
+| 7 | `theorem` | [uniformEquicontinuous_of_continuity_modulus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Equicontinuity.lean/declarations/uniformequicontinuous-of-continuity-modulus.md) | 95 | `result-track:1fe40b5305361cf9057b5d5b38c5b331a115d6d54003e6a7757ce9960a155dd1` |
+| 8 | `theorem` | [equicontinuous_of_continuity_modulus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Equicontinuity.lean/declarations/equicontinuous-of-continuity-modulus.md) | 110 | `result-track:734b5caaa5ab97d9ba80273d73cd16df379d66f4310aded827aa2c3bca600574` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuppliedManifestRetraction.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuppliedManifestRetraction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuppliedManifestRetraction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuppliedManifestRetraction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,7 +61,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ManifestSerializer](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuppliedManifestRetraction.lean/declarations/manifestserializer.md) | 42 | `declaration-track:ed4bf65034d4b589fdcaf7cffa3b81c5bdbf5a0d93a3982670110a0200299b9d` |
+| 1 | `structure` | [ManifestSerializer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuppliedManifestRetraction.lean/declarations/manifestserializer.md) | 42 | `declaration-track:ed4bf65034d4b589fdcaf7cffa3b81c5bdbf5a0d93a3982670110a0200299b9d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/Laws.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/Laws.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Laws.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Laws.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,24 +57,24 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [bot_join](../../../../AssociativeRingsAndAlgebras/Laws.lean/declarations/bot-join.md) | 9 | `result-track:59bf4f405e0fea4ba9b2ae8234dec6a431d6237cf45d4a18c8902e16cb948382` |
-| 2 | `theorem` | [top_meet](../../../../AssociativeRingsAndAlgebras/Laws.lean/declarations/top-meet.md) | 13 | `result-track:f36e75ab94547f3d23a872fc11cfdd1688f50947d4e5b4fb97721e514c66a0c0` |
-| 3 | `theorem` | [compl_join](../../../../AssociativeRingsAndAlgebras/Laws.lean/declarations/compl-join.md) | 17 | `result-track:07f26ac26ef2449933978eb0fed6b20a47826f7cc5999358e749006661065d7d` |
-| 4 | `theorem` | [compl_meet](../../../../AssociativeRingsAndAlgebras/Laws.lean/declarations/compl-meet.md) | 21 | `result-track:5546f9572f9957901c89ef2bd3282ec6a9f365f26be8070bfa5ed5c16c46d8e4` |
-| 5 | `theorem` | [join_idem](../../../../AssociativeRingsAndAlgebras/Laws.lean/declarations/join-idem.md) | 26 | `result-track:e9e8fdd03dea11a7da78d228b150baf62f0b5d09a218667c6e8e6172729055e2` |
-| 6 | `theorem` | [meet_idem](../../../../AssociativeRingsAndAlgebras/Laws.lean/declarations/meet-idem.md) | 40 | `result-track:e32c8a64b5782ea8ebc3b65bd5278c85cd9d1589c123dbbe9d67b0649300529d` |
-| 7 | `theorem` | [join_top](../../../../AssociativeRingsAndAlgebras/Laws.lean/declarations/join-top.md) | 54 | `result-track:ad97b69d95ae1b2ad37cb950bad09e56d7c9a4e6d3df7276f52df19fa050f2fb` |
-| 8 | `theorem` | [top_join](../../../../AssociativeRingsAndAlgebras/Laws.lean/declarations/top-join.md) | 66 | `result-track:fd0fc7c834349eed46f10541467143c01d23f348412ec6c2bdaea5282d1e5e25` |
-| 9 | `theorem` | [meet_bot](../../../../AssociativeRingsAndAlgebras/Laws.lean/declarations/meet-bot.md) | 71 | `result-track:9feb8ecaed2fe05c5404b1eb2d6c7a07ec1f1a1c39b7ac198405f1126b3b40a3` |
-| 10 | `theorem` | [bot_meet](../../../../AssociativeRingsAndAlgebras/Laws.lean/declarations/bot-meet.md) | 83 | `result-track:b694a62dc6ccee1028ed8a71817d0ad9f9cd5ddfda6a5107eb1a97cc43eb64d7` |
-| 11 | `theorem` | [join_absorb](../../../../AssociativeRingsAndAlgebras/Laws.lean/declarations/join-absorb.md) | 88 | `result-track:6f04c8b1bc16085bb0b6e8565e24cddb52228e4c353a4818c589465756db5bfc` |
-| 12 | `theorem` | [meet_absorb](../../../../AssociativeRingsAndAlgebras/Laws.lean/declarations/meet-absorb.md) | 101 | `result-track:2725c91647ff52f85c49f03dec7c29e484981e5cdf1acd6a30607a944a889335` |
-| 13 | `theorem` | [join_left_comm](../../../../AssociativeRingsAndAlgebras/Laws.lean/declarations/join-left-comm.md) | 113 | `result-track:ceb9d11d4d1efc4863d754352534709808b758af62406f390c0f4f4250aedefb` |
-| 14 | `theorem` | [meet_left_comm](../../../../AssociativeRingsAndAlgebras/Laws.lean/declarations/meet-left-comm.md) | 123 | `result-track:4dc50b0be5102fc1a586e2a7d0b2da52e560a8d4624c63d8a9ad97c67903adf8` |
-| 15 | `theorem` | [compl_unique](../../../../AssociativeRingsAndAlgebras/Laws.lean/declarations/compl-unique.md) | 134 | `result-track:27cf164abbcfbdf88967bf280b11ee924c41aa7f1f4ee960d7f9dd074f73b9e4` |
-| 16 | `theorem` | [compl_involutive](../../../../AssociativeRingsAndAlgebras/Laws.lean/declarations/compl-involutive.md) | 167 | `result-track:d310d74b806e7285800089afe3429d549161e0b9529ea731528dde840fe87e67` |
-| 17 | `theorem` | [compl_join_eq_meet_compl](../../../../AssociativeRingsAndAlgebras/Laws.lean/declarations/compl-join-eq-meet-compl.md) | 174 | `result-track:ff1d3478f478fa328f4c39811d53b349e1cb6835571f0c87d7db09681f09fb7e` |
-| 18 | `theorem` | [compl_meet_eq_join_compl](../../../../AssociativeRingsAndAlgebras/Laws.lean/declarations/compl-meet-eq-join-compl.md) | 245 | `result-track:9589bdbf64de3c060190de523803d51dff3ad6d88ba300b8b37d469e856de773` |
+| 1 | `theorem` | [bot_join](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Laws.lean/declarations/bot-join.md) | 9 | `result-track:59bf4f405e0fea4ba9b2ae8234dec6a431d6237cf45d4a18c8902e16cb948382` |
+| 2 | `theorem` | [top_meet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Laws.lean/declarations/top-meet.md) | 13 | `result-track:f36e75ab94547f3d23a872fc11cfdd1688f50947d4e5b4fb97721e514c66a0c0` |
+| 3 | `theorem` | [compl_join](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Laws.lean/declarations/compl-join.md) | 17 | `result-track:07f26ac26ef2449933978eb0fed6b20a47826f7cc5999358e749006661065d7d` |
+| 4 | `theorem` | [compl_meet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Laws.lean/declarations/compl-meet.md) | 21 | `result-track:5546f9572f9957901c89ef2bd3282ec6a9f365f26be8070bfa5ed5c16c46d8e4` |
+| 5 | `theorem` | [join_idem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Laws.lean/declarations/join-idem.md) | 26 | `result-track:e9e8fdd03dea11a7da78d228b150baf62f0b5d09a218667c6e8e6172729055e2` |
+| 6 | `theorem` | [meet_idem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Laws.lean/declarations/meet-idem.md) | 40 | `result-track:e32c8a64b5782ea8ebc3b65bd5278c85cd9d1589c123dbbe9d67b0649300529d` |
+| 7 | `theorem` | [join_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Laws.lean/declarations/join-top.md) | 54 | `result-track:ad97b69d95ae1b2ad37cb950bad09e56d7c9a4e6d3df7276f52df19fa050f2fb` |
+| 8 | `theorem` | [top_join](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Laws.lean/declarations/top-join.md) | 66 | `result-track:fd0fc7c834349eed46f10541467143c01d23f348412ec6c2bdaea5282d1e5e25` |
+| 9 | `theorem` | [meet_bot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Laws.lean/declarations/meet-bot.md) | 71 | `result-track:9feb8ecaed2fe05c5404b1eb2d6c7a07ec1f1a1c39b7ac198405f1126b3b40a3` |
+| 10 | `theorem` | [bot_meet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Laws.lean/declarations/bot-meet.md) | 83 | `result-track:b694a62dc6ccee1028ed8a71817d0ad9f9cd5ddfda6a5107eb1a97cc43eb64d7` |
+| 11 | `theorem` | [join_absorb](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Laws.lean/declarations/join-absorb.md) | 88 | `result-track:6f04c8b1bc16085bb0b6e8565e24cddb52228e4c353a4818c589465756db5bfc` |
+| 12 | `theorem` | [meet_absorb](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Laws.lean/declarations/meet-absorb.md) | 101 | `result-track:2725c91647ff52f85c49f03dec7c29e484981e5cdf1acd6a30607a944a889335` |
+| 13 | `theorem` | [join_left_comm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Laws.lean/declarations/join-left-comm.md) | 113 | `result-track:ceb9d11d4d1efc4863d754352534709808b758af62406f390c0f4f4250aedefb` |
+| 14 | `theorem` | [meet_left_comm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Laws.lean/declarations/meet-left-comm.md) | 123 | `result-track:4dc50b0be5102fc1a586e2a7d0b2da52e560a8d4624c63d8a9ad97c67903adf8` |
+| 15 | `theorem` | [compl_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Laws.lean/declarations/compl-unique.md) | 134 | `result-track:27cf164abbcfbdf88967bf280b11ee924c41aa7f1f4ee960d7f9dd074f73b9e4` |
+| 16 | `theorem` | [compl_involutive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Laws.lean/declarations/compl-involutive.md) | 167 | `result-track:d310d74b806e7285800089afe3429d549161e0b9529ea731528dde840fe87e67` |
+| 17 | `theorem` | [compl_join_eq_meet_compl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Laws.lean/declarations/compl-join-eq-meet-compl.md) | 174 | `result-track:ff1d3478f478fa328f4c39811d53b349e1cb6835571f0c87d7db09681f09fb7e` |
+| 18 | `theorem` | [compl_meet_eq_join_compl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Laws.lean/declarations/compl-meet-eq-join-compl.md) | 245 | `result-track:9589bdbf64de3c060190de523803d51dff3ad6d88ba300b8b37d469e856de773` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Geometry/CoreNamespaced.lean/index.md) · [Full source](../../../../Geometry/CoreNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CoreNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CoreNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Spec](../../../../Geometry/CoreNamespaced.lean/declarations/spec.md) | 23 | `declaration-track:b9dd1259a52ae3332388d8ee77a7166d6645a849cb14cb575a14e4dfec73ec9c` |
-| 2 | `def` | [id](../../../../Geometry/CoreNamespaced.lean/declarations/id.md) | 29 | `declaration-track:00dbb885fce9ca8b37b12e9d8890ccc492178f3b4fa1f8c736bcbe500e60eb49` |
-| 3 | `def` | [comp](../../../../Geometry/CoreNamespaced.lean/declarations/comp.md) | 33 | `declaration-track:8b7ef3c9e53a4938bcc604db00aaa63c5c7d463cbaac26068138376b7cc570c1` |
-| 4 | `theorem` | [id_apply](../../../../Geometry/CoreNamespaced.lean/declarations/id-apply.md) | 37 | `result-track:3b4207003f08c2d81295097e6039b07fba9b681c958bb7f1e6850d51d570f020` |
-| 5 | `theorem` | [comp_apply](../../../../Geometry/CoreNamespaced.lean/declarations/comp-apply.md) | 41 | `result-track:8e1ab3c42b53779afcef239165a58551cf31489ef46bdcc906bd55af5b0c347e` |
-| 6 | `theorem` | [ext](../../../../Geometry/CoreNamespaced.lean/declarations/ext.md) | 46 | `result-track:a58548dd2f4740d64c748472be7a20f79959e5bae1689a62cb9610d067558c4e` |
-| 7 | `theorem` | [comp_assoc](../../../../Geometry/CoreNamespaced.lean/declarations/comp-assoc.md) | 52 | `result-track:a105ab59c029b23b7e048d8dca0f31a19181728d3a1626f491eecba40733c292` |
-| 8 | `theorem` | [id_comp](../../../../Geometry/CoreNamespaced.lean/declarations/id-comp.md) | 57 | `result-track:2ea6349dbc0d620fa7e5e6a28d2505abfff71f8e84cd7dac67e77fa04b726bba` |
-| 9 | `theorem` | [comp_id](../../../../Geometry/CoreNamespaced.lean/declarations/comp-id.md) | 61 | `result-track:1e4e4d7354429e0bddbb8ba8b1030f0e058787426be94deaaa30d522fb463a61` |
+| 1 | `structure` | [Spec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CoreNamespaced.lean/declarations/spec.md) | 23 | `declaration-track:b9dd1259a52ae3332388d8ee77a7166d6645a849cb14cb575a14e4dfec73ec9c` |
+| 2 | `def` | [id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CoreNamespaced.lean/declarations/id.md) | 29 | `declaration-track:00dbb885fce9ca8b37b12e9d8890ccc492178f3b4fa1f8c736bcbe500e60eb49` |
+| 3 | `def` | [comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CoreNamespaced.lean/declarations/comp.md) | 33 | `declaration-track:8b7ef3c9e53a4938bcc604db00aaa63c5c7d463cbaac26068138376b7cc570c1` |
+| 4 | `theorem` | [id_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CoreNamespaced.lean/declarations/id-apply.md) | 37 | `result-track:3b4207003f08c2d81295097e6039b07fba9b681c958bb7f1e6850d51d570f020` |
+| 5 | `theorem` | [comp_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CoreNamespaced.lean/declarations/comp-apply.md) | 41 | `result-track:8e1ab3c42b53779afcef239165a58551cf31489ef46bdcc906bd55af5b0c347e` |
+| 6 | `theorem` | [ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CoreNamespaced.lean/declarations/ext.md) | 46 | `result-track:a58548dd2f4740d64c748472be7a20f79959e5bae1689a62cb9610d067558c4e` |
+| 7 | `theorem` | [comp_assoc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CoreNamespaced.lean/declarations/comp-assoc.md) | 52 | `result-track:a105ab59c029b23b7e048d8dca0f31a19181728d3a1626f491eecba40733c292` |
+| 8 | `theorem` | [id_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CoreNamespaced.lean/declarations/id-comp.md) | 57 | `result-track:2ea6349dbc0d620fa7e5e6a28d2505abfff71f8e84cd7dac67e77fa04b726bba` |
+| 9 | `theorem` | [comp_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CoreNamespaced.lean/declarations/comp-id.md) | 61 | `result-track:1e4e4d7354429e0bddbb8ba8b1030f0e058787426be94deaaa30d522fb463a61` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

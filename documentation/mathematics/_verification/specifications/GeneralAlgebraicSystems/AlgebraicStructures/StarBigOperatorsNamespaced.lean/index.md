@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/StarBigOperatorsNamespaced.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/StarBigOperatorsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/StarBigOperatorsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/StarBigOperatorsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [star_prod](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/StarBigOperatorsNamespaced.lean/declarations/star-prod.md) | 26 | `result-track:cb1e120524426aea3fbe9689db3c4174e2cc8d7c6554a3f65bb847af910d9428` |
-| 2 | `theorem` | [star_sum](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/StarBigOperatorsNamespaced.lean/declarations/star-sum.md) | 30 | `result-track:00af1d9555ae24a8e8436ec1a8a1c05f5ee331d3ff577bbb574be1b3617af225` |
+| 1 | `theorem` | [star_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/StarBigOperatorsNamespaced.lean/declarations/star-prod.md) | 26 | `result-track:cb1e120524426aea3fbe9689db3c4174e2cc8d7c6554a3f65bb847af910d9428` |
+| 2 | `theorem` | [star_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/StarBigOperatorsNamespaced.lean/declarations/star-sum.md) | 30 | `result-track:00af1d9555ae24a8e8436ec1a8a1c05f5ee331d3ff577bbb574be1b3617af225` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

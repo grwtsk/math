@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearAlgebraTensorCalculus/TensorProductOppositeEdition2.lean/index.md) · [Full source](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearAlgebraTensorCalculus/TensorProductOppositeEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearAlgebraTensorCalculus/TensorProductOppositeEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearAlgebraTensorCalculus/TensorProductOppositeEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [opAlgEquiv](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearAlgebraTensorCalculus/TensorProductOppositeEdition2.lean/declarations/opalgequiv.md) | 31 | `declaration-track:b7e33ff8041a2e0515aab9c9bb593a5a1ef7dad485783cd4c6016efd359158ae` |
-| 2 | `theorem` | [opAlgEquiv_apply](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearAlgebraTensorCalculus/TensorProductOppositeEdition2.lean/declarations/opalgequiv-apply.md) | 44 | `result-track:cb63d0b27e8dc5b7364dac59dd0c1adb5795306644e15bc75e83a16e1dc120d1` |
-| 3 | `theorem` | [opAlgEquiv_symm_apply](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearAlgebraTensorCalculus/TensorProductOppositeEdition2.lean/declarations/opalgequiv-symm-apply.md) | 50 | `result-track:48f31d008c3b6c293c6f78bd1b59698211c2502b78b5c2db16ad2ccbcaafbeaf` |
-| 4 | `theorem` | [opAlgEquiv_tmul](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearAlgebraTensorCalculus/TensorProductOppositeEdition2.lean/declarations/opalgequiv-tmul.md) | 56 | `result-track:8fb0ee9cdb7664a5bafc72453851df4b7bed2005f0023d39e96ec93b1c2154b3` |
-| 5 | `theorem` | [opAlgEquiv_symm_tmul](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearAlgebraTensorCalculus/TensorProductOppositeEdition2.lean/declarations/opalgequiv-symm-tmul.md) | 61 | `result-track:9c81a58055b319a3b062af7beefd55b2ba2a4067b06623d6f1e062aa99b5b6bc` |
+| 1 | `def` | [opAlgEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearAlgebraTensorCalculus/TensorProductOppositeEdition2.lean/declarations/opalgequiv.md) | 31 | `declaration-track:b7e33ff8041a2e0515aab9c9bb593a5a1ef7dad485783cd4c6016efd359158ae` |
+| 2 | `theorem` | [opAlgEquiv_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearAlgebraTensorCalculus/TensorProductOppositeEdition2.lean/declarations/opalgequiv-apply.md) | 44 | `result-track:cb63d0b27e8dc5b7364dac59dd0c1adb5795306644e15bc75e83a16e1dc120d1` |
+| 3 | `theorem` | [opAlgEquiv_symm_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearAlgebraTensorCalculus/TensorProductOppositeEdition2.lean/declarations/opalgequiv-symm-apply.md) | 50 | `result-track:48f31d008c3b6c293c6f78bd1b59698211c2502b78b5c2db16ad2ccbcaafbeaf` |
+| 4 | `theorem` | [opAlgEquiv_tmul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearAlgebraTensorCalculus/TensorProductOppositeEdition2.lean/declarations/opalgequiv-tmul.md) | 56 | `result-track:8fb0ee9cdb7664a5bafc72453851df4b7bed2005f0023d39e96ec93b1c2154b3` |
+| 5 | `theorem` | [opAlgEquiv_symm_tmul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearAlgebraTensorCalculus/TensorProductOppositeEdition2.lean/declarations/opalgequiv-symm-tmul.md) | 61 | `result-track:9c81a58055b319a3b062af7beefd55b2ba2a4067b06623d6f1e062aa99b5b6bc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

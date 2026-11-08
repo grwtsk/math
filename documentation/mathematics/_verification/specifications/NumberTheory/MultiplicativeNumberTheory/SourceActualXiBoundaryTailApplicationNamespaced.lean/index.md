@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/MultiplicativeNumberTheory/SourceActualXiBoundaryTailApplicationNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/MultiplicativeNumberTheory/SourceActualXiBoundaryTailApplicationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/SourceActualXiBoundaryTailApplicationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/SourceActualXiBoundaryTailApplicationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [completeXiHead_eq_actualWholeXiHead](../../../../../NumberTheory/MultiplicativeNumberTheory/SourceActualXiBoundaryTailApplicationNamespaced.lean/declarations/completexihead-eq-actualwholexihead.md) | 27 | `result-track:4ffa63d16cb3370cdef083d107fef8fc42f316df66b3f02a6e47eb5dc061e52f` |
-| 2 | `theorem` | [residual_upper_implies_tail_lower_with_closed_boundary](../../../../../NumberTheory/MultiplicativeNumberTheory/SourceActualXiBoundaryTailApplicationNamespaced.lean/declarations/residual-upper-implies-tail-lower-with-closed-boundary.md) | 31 | `result-track:cc71652566d73485a485566dab6791a07e29790ea3d1d3562833eb4de19edb75` |
-| 3 | `theorem` | [estimate_of_complete_block_without_boundary](../../../../../NumberTheory/MultiplicativeNumberTheory/SourceActualXiBoundaryTailApplicationNamespaced.lean/declarations/estimate-of-complete-block-without-boundary.md) | 39 | `result-track:521144ecd6a2318d133c3816bebbb48aa8e513b3fb7d2b95048f6a6760fdddc0` |
+| 1 | `theorem` | [completeXiHead_eq_actualWholeXiHead](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/SourceActualXiBoundaryTailApplicationNamespaced.lean/declarations/completexihead-eq-actualwholexihead.md) | 27 | `result-track:4ffa63d16cb3370cdef083d107fef8fc42f316df66b3f02a6e47eb5dc061e52f` |
+| 2 | `theorem` | [residual_upper_implies_tail_lower_with_closed_boundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/SourceActualXiBoundaryTailApplicationNamespaced.lean/declarations/residual-upper-implies-tail-lower-with-closed-boundary.md) | 31 | `result-track:cc71652566d73485a485566dab6791a07e29790ea3d1d3562833eb4de19edb75` |
+| 3 | `theorem` | [estimate_of_complete_block_without_boundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/SourceActualXiBoundaryTailApplicationNamespaced.lean/declarations/estimate-of-complete-block-without-boundary.md) | 39 | `result-track:521144ecd6a2318d133c3816bebbb48aa8e513b3fb7d2b95048f6a6760fdddc0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EncodableLattice.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EncodableLattice.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EncodableLattice.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EncodableLattice.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [iSup_decode₂](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EncodableLattice.lean/declarations/isup-decode.md) | 28 | `result-track:dc4c0c3092f0366402d773e5300dfd203d87b1a0e3f7962568b11020f9e8936a` |
-| 2 | `theorem` | [iUnion_decode₂](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EncodableLattice.lean/declarations/iunion-decode.md) | 33 | `result-track:26c86501e55eb30288ef8a3cd7977438ad02c07b7eed3d9183c2d152829c3a82` |
-| 3 | `theorem` | [iUnion_decode₂_cases](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EncodableLattice.lean/declarations/iunion-decode-cases.md) | 37 | `result-track:51cf2191234dd16ea7eb831c9f8e6bed371f72cbe50cc1c9601a94d2252c4bbc` |
-| 4 | `theorem` | [iUnion_decode₂_disjoint_on](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EncodableLattice.lean/declarations/iunion-decode-disjoint-on.md) | 48 | `result-track:a2a999f6595bc58dd1e3eb42e9eb3df0393181307fedb17575bd1cf47977ab7f` |
+| 1 | `theorem` | [iSup_decode₂](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EncodableLattice.lean/declarations/isup-decode.md) | 28 | `result-track:dc4c0c3092f0366402d773e5300dfd203d87b1a0e3f7962568b11020f9e8936a` |
+| 2 | `theorem` | [iUnion_decode₂](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EncodableLattice.lean/declarations/iunion-decode.md) | 33 | `result-track:26c86501e55eb30288ef8a3cd7977438ad02c07b7eed3d9183c2d152829c3a82` |
+| 3 | `theorem` | [iUnion_decode₂_cases](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EncodableLattice.lean/declarations/iunion-decode-cases.md) | 37 | `result-track:51cf2191234dd16ea7eb831c9f8e6bed371f72cbe50cc1c9601a94d2252c4bbc` |
+| 4 | `theorem` | [iUnion_decode₂_disjoint_on](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EncodableLattice.lean/declarations/iunion-decode-disjoint-on.md) | 48 | `result-track:a2a999f6595bc58dd1e3eb42e9eb3df0393181307fedb17575bd1cf47977ab7f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

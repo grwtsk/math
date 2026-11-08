@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GroupTheoryAndGeneralizations/Semigroups/MultiplicativeFunctionNamespaced.lean/index.md) · [Full source](../../../../../GroupTheoryAndGeneralizations/Semigroups/MultiplicativeFunctionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Semigroups/MultiplicativeFunctionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Semigroups/MultiplicativeFunctionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [ArithFn](../../../../../GroupTheoryAndGeneralizations/Semigroups/MultiplicativeFunctionNamespaced.lean/declarations/arithfn.md) | 21 | `declaration-track:1a5ce444d875cc350e846cfc28d23544d4ea02b72c852746f65090dd6aec02ed` |
-| 2 | `def` | [IsMultiplicative](../../../../../GroupTheoryAndGeneralizations/Semigroups/MultiplicativeFunctionNamespaced.lean/declarations/ismultiplicative.md) | 23 | `declaration-track:e3014cb67074d0c8874e04b2103fb860f55d6a2888143bc583ab7f50c74dc49d` |
-| 3 | `def` | [IsCompletelyMultiplicative](../../../../../GroupTheoryAndGeneralizations/Semigroups/MultiplicativeFunctionNamespaced.lean/declarations/iscompletelymultiplicative.md) | 29 | `declaration-track:29fe127d43b1b585cc1bb05df99581e6fbe7f7bd4d648e3040801e98220ec5ff` |
-| 4 | `theorem` | [completely_multiplicative_is_multiplicative](../../../../../GroupTheoryAndGeneralizations/Semigroups/MultiplicativeFunctionNamespaced.lean/declarations/completely-multiplicative-is-multiplicative.md) | 35 | `result-track:7d6a60cf79217dc8d14b427e7c48cbcaedf827cfe6ade8d217a8770f795b0223` |
-| 5 | `theorem` | [multiplicative_mul](../../../../../GroupTheoryAndGeneralizations/Semigroups/MultiplicativeFunctionNamespaced.lean/declarations/multiplicative-mul.md) | 45 | `result-track:2563c8ec45c0092ce275feaf5d161dbff0aa2c2950a24bb37fb792c12ed34a7c` |
+| 1 | `abbrev` | [ArithFn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Semigroups/MultiplicativeFunctionNamespaced.lean/declarations/arithfn.md) | 21 | `declaration-track:1a5ce444d875cc350e846cfc28d23544d4ea02b72c852746f65090dd6aec02ed` |
+| 2 | `def` | [IsMultiplicative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Semigroups/MultiplicativeFunctionNamespaced.lean/declarations/ismultiplicative.md) | 23 | `declaration-track:e3014cb67074d0c8874e04b2103fb860f55d6a2888143bc583ab7f50c74dc49d` |
+| 3 | `def` | [IsCompletelyMultiplicative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Semigroups/MultiplicativeFunctionNamespaced.lean/declarations/iscompletelymultiplicative.md) | 29 | `declaration-track:29fe127d43b1b585cc1bb05df99581e6fbe7f7bd4d648e3040801e98220ec5ff` |
+| 4 | `theorem` | [completely_multiplicative_is_multiplicative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Semigroups/MultiplicativeFunctionNamespaced.lean/declarations/completely-multiplicative-is-multiplicative.md) | 35 | `result-track:7d6a60cf79217dc8d14b427e7c48cbcaedf827cfe6ade8d217a8770f795b0223` |
+| 5 | `theorem` | [multiplicative_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Semigroups/MultiplicativeFunctionNamespaced.lean/declarations/multiplicative-mul.md) | 45 | `result-track:2563c8ec45c0092ce275feaf5d161dbff0aa2c2950a24bb37fb792c12ed34a7c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

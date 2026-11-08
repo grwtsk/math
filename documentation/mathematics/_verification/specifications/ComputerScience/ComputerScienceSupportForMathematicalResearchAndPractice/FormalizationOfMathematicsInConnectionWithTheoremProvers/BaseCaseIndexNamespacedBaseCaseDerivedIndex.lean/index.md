@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BaseCaseIndexNamespacedBaseCaseDerivedIndex.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BaseCaseIndexNamespacedBaseCaseDerivedIndex.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BaseCaseIndexNamespacedBaseCaseDerivedIndex.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BaseCaseIndexNamespacedBaseCaseDerivedIndex.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [BaseCaseDerivedIndex](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BaseCaseIndexNamespacedBaseCaseDerivedIndex.lean/declarations/basecasederivedindex.md) | 27 | `declaration-track:2142299bbc3074d1d2fe94fb711c24e11f5298a8dc75340f13554b63489a926f` |
-| 2 | `theorem` | [base_case_derived_index_euler_nonzero](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BaseCaseIndexNamespacedBaseCaseDerivedIndex.lean/declarations/base-case-derived-index-euler-nonzero.md) | 36 | `result-track:9e5e6af06ed53beeb3a790f7b2de6ad9593075eb54554192f714fac23b0be138` |
-| 3 | `theorem` | [base_case_derived_index_same_complex](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BaseCaseIndexNamespacedBaseCaseDerivedIndex.lean/declarations/base-case-derived-index-same-complex.md) | 44 | `result-track:5ebec91023b2153f5b2c78fa58a11a13b0036c630029c4f56dafa92dd8d9ad25` |
+| 1 | `structure` | [BaseCaseDerivedIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BaseCaseIndexNamespacedBaseCaseDerivedIndex.lean/declarations/basecasederivedindex.md) | 27 | `declaration-track:2142299bbc3074d1d2fe94fb711c24e11f5298a8dc75340f13554b63489a926f` |
+| 2 | `theorem` | [base_case_derived_index_euler_nonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BaseCaseIndexNamespacedBaseCaseDerivedIndex.lean/declarations/base-case-derived-index-euler-nonzero.md) | 36 | `result-track:9e5e6af06ed53beeb3a790f7b2de6ad9593075eb54554192f714fac23b0be138` |
+| 3 | `theorem` | [base_case_derived_index_same_complex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BaseCaseIndexNamespacedBaseCaseDerivedIndex.lean/declarations/base-case-derived-index-same-complex.md) | 44 | `result-track:5ebec91023b2153f5b2c78fa58a11a13b0036c630029c4f56dafa92dd8d9ad25` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

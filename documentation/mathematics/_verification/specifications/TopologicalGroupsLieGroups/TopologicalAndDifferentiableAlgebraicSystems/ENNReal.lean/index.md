@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ENNReal.lean/index.md) · [Full source](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ENNReal.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ENNReal.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ENNReal.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [tsum_set_one](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ENNReal.lean/declarations/tsum-set-one.md) | 28 | `result-track:2140f2cf406653d33b3006bf6547a5c09187a6c3943006d478e35f1a421ec234` |
-| 2 | `lemma` | [tsum_set_const](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ENNReal.lean/declarations/tsum-set-const.md) | 35 | `result-track:1fddcbdb04a58dfe0640f05db5d8c9c10114fe5a50fe873a83ba3ae9ea9e5ef2` |
-| 3 | `lemma` | [tsum_one](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ENNReal.lean/declarations/tsum-one.md) | 42 | `result-track:6a2cc90980bfc4d56d129637ce5ec9433b916749e996db99c87b0230322a8234` |
-| 4 | `lemma` | [tsum_const](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ENNReal.lean/declarations/tsum-const.md) | 46 | `result-track:9f01e0020b6ea095c8eec68ae42845bc52affd9f4cb9ea452fb6ebaf5d1312a2` |
+| 1 | `lemma` | [tsum_set_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ENNReal.lean/declarations/tsum-set-one.md) | 28 | `result-track:2140f2cf406653d33b3006bf6547a5c09187a6c3943006d478e35f1a421ec234` |
+| 2 | `lemma` | [tsum_set_const](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ENNReal.lean/declarations/tsum-set-const.md) | 35 | `result-track:1fddcbdb04a58dfe0640f05db5d8c9c10114fe5a50fe873a83ba3ae9ea9e5ef2` |
+| 3 | `lemma` | [tsum_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ENNReal.lean/declarations/tsum-one.md) | 42 | `result-track:6a2cc90980bfc4d56d129637ce5ec9433b916749e996db99c87b0230322a8234` |
+| 4 | `lemma` | [tsum_const](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ENNReal.lean/declarations/tsum-const.md) | 46 | `result-track:9f01e0020b6ea095c8eec68ae42845bc52affd9f4cb9ea452fb6ebaf5d1312a2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

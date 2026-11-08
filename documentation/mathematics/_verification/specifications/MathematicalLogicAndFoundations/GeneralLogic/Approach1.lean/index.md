@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Approach1.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Approach1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Approach1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Approach1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CertificateFamily](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Approach1.lean/declarations/certificatefamily.md) | 5 | `declaration-track:16f9b5cb639fa2449e8a0cc6f902920d34ca0650ba1c84158de2aa3473a47f6f` |
-| 2 | `def` | [Equivalent](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Approach1.lean/declarations/equivalent.md) | 11 | `declaration-track:dc35c1f946c63f8297d761d805bb0df08ca915e554005b3b75b2ec55824e89e6` |
-| 3 | `structure` | [SufficientRepresentation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Approach1.lean/declarations/sufficientrepresentation.md) | 14 | `declaration-track:206cdb20e20b615fe509144f395fc683bcf4dca7e9e3bfde14c86ae7ba2e2e4d` |
-| 4 | `def` | [FactorsThrough](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Approach1.lean/declarations/factorsthrough.md) | 23 | `declaration-track:b6c2af09e73cff8a674f294e291a9ec0e00b6c491a2d0ca66181c99037a91cef` |
-| 5 | `def` | [IsMinimal](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Approach1.lean/declarations/isminimal.md) | 27 | `declaration-track:c4291185d41d294e1715ec0c6aa781feec222ca453dc55da918407cd6634d770` |
-| 6 | `theorem` | [factor_of_minimal](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Approach1.lean/declarations/factor-of-minimal.md) | 33 | `result-track:5ae660e72aa377dc126ce3dffc779811476948b4541505993138eba030c59933` |
+| 1 | `structure` | [CertificateFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Approach1.lean/declarations/certificatefamily.md) | 5 | `declaration-track:16f9b5cb639fa2449e8a0cc6f902920d34ca0650ba1c84158de2aa3473a47f6f` |
+| 2 | `def` | [Equivalent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Approach1.lean/declarations/equivalent.md) | 11 | `declaration-track:dc35c1f946c63f8297d761d805bb0df08ca915e554005b3b75b2ec55824e89e6` |
+| 3 | `structure` | [SufficientRepresentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Approach1.lean/declarations/sufficientrepresentation.md) | 14 | `declaration-track:206cdb20e20b615fe509144f395fc683bcf4dca7e9e3bfde14c86ae7ba2e2e4d` |
+| 4 | `def` | [FactorsThrough](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Approach1.lean/declarations/factorsthrough.md) | 23 | `declaration-track:b6c2af09e73cff8a674f294e291a9ec0e00b6c491a2d0ca66181c99037a91cef` |
+| 5 | `def` | [IsMinimal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Approach1.lean/declarations/isminimal.md) | 27 | `declaration-track:c4291185d41d294e1715ec0c6aa781feec222ca453dc55da918407cd6634d770` |
+| 6 | `theorem` | [factor_of_minimal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Approach1.lean/declarations/factor-of-minimal.md) | 33 | `result-track:5ae660e72aa377dc126ce3dffc779811476948b4541505993138eba030c59933` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

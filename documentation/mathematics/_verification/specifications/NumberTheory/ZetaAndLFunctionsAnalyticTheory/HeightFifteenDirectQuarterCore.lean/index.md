@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectQuarterCore.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectQuarterCore.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectQuarterCore.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectQuarterCore.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenDirectQuarterClosure`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectQuarterClosure.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenDirectQuarterControls`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectQuarterControls.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenDirectQuarterClosure`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectQuarterClosure.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenDirectQuarterControls`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectQuarterControls.lean/index.md) — import line 6; pinned internal source present.
 
 ## Top results and three-degree verification metric
 

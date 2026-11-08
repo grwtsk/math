@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/CanonicalTentRecordEvaluation.lean/index.md) · [Full source](../../../../NumberTheory/CanonicalTentRecordEvaluation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentRecordEvaluation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentRecordEvaluation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.TentKernelEnclosure`](../../../../FunctionsOfAComplexVariable/TentKernelEnclosure.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Chebyshev.CanonicalTentPrimeCriterion`](../../../../NumberTheory/CanonicalTentPrimeCriterion.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.TentKernelEnclosure`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/TentKernelEnclosure.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.CanonicalTentPrimeCriterion`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentPrimeCriterion.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [evaluatedHead](../../../../NumberTheory/CanonicalTentRecordEvaluation.lean/declarations/evaluatedhead.md) | 31 | `declaration-track:f1a70caebfcb9fee41ee3762e7114cbd4988a1d55aaa766afededf85bd87ad7b` |
-| 2 | `def` | [headError](../../../../NumberTheory/CanonicalTentRecordEvaluation.lean/declarations/headerror.md) | 37 | `declaration-track:189ce278d53a86d9c1a6801fce264e8687f75fedee732ace504e643257df9943` |
-| 3 | `theorem` | [norm_head_sub_evaluated_le](../../../../NumberTheory/CanonicalTentRecordEvaluation.lean/declarations/norm-head-sub-evaluated-le.md) | 43 | `result-track:d8976923bb0faea7616e1ed2832e0a0ecb218239922869616b71ed77d9545016` |
-| 4 | `theorem` | [headError_nonneg](../../../../NumberTheory/CanonicalTentRecordEvaluation.lean/declarations/headerror-nonneg.md) | 63 | `result-track:355d870d00d0bf7f80d0d86175d53bee2af62d14f785b0032f1ced99f665aed2` |
-| 5 | `theorem` | [norm_head_sub_rounded_le](../../../../NumberTheory/CanonicalTentRecordEvaluation.lean/declarations/norm-head-sub-rounded-le.md) | 69 | `result-track:befeca1a3e9274560557961f68f6f811b3853fcb6a4ee031e9d181a082702eae` |
-| 6 | `theorem` | [head_re_upper](../../../../NumberTheory/CanonicalTentRecordEvaluation.lean/declarations/head-re-upper.md) | 84 | `result-track:0ca00fdfc0aba25c7f0eabe3310d90376a6792623d378d69778983b067754457` |
-| 7 | `theorem` | [prime_in_square_of_records](../../../../NumberTheory/CanonicalTentRecordEvaluation.lean/declarations/prime-in-square-of-records.md) | 95 | `result-track:0148db4f19ddd3540bc7769c8e4b983c58f1a8f51607cdde5e6d6f9471d0dc2e` |
-| 8 | `theorem` | [prime_in_square_of_rounded_records](../../../../NumberTheory/CanonicalTentRecordEvaluation.lean/declarations/prime-in-square-of-rounded-records.md) | 106 | `result-track:6a168d14c7a510e66d0ecb121d274702482ade9753e209e9cf9151cda0b725ca` |
+| 1 | `def` | [evaluatedHead](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentRecordEvaluation.lean/declarations/evaluatedhead.md) | 31 | `declaration-track:f1a70caebfcb9fee41ee3762e7114cbd4988a1d55aaa766afededf85bd87ad7b` |
+| 2 | `def` | [headError](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentRecordEvaluation.lean/declarations/headerror.md) | 37 | `declaration-track:189ce278d53a86d9c1a6801fce264e8687f75fedee732ace504e643257df9943` |
+| 3 | `theorem` | [norm_head_sub_evaluated_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentRecordEvaluation.lean/declarations/norm-head-sub-evaluated-le.md) | 43 | `result-track:d8976923bb0faea7616e1ed2832e0a0ecb218239922869616b71ed77d9545016` |
+| 4 | `theorem` | [headError_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentRecordEvaluation.lean/declarations/headerror-nonneg.md) | 63 | `result-track:355d870d00d0bf7f80d0d86175d53bee2af62d14f785b0032f1ced99f665aed2` |
+| 5 | `theorem` | [norm_head_sub_rounded_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentRecordEvaluation.lean/declarations/norm-head-sub-rounded-le.md) | 69 | `result-track:befeca1a3e9274560557961f68f6f811b3853fcb6a4ee031e9d181a082702eae` |
+| 6 | `theorem` | [head_re_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentRecordEvaluation.lean/declarations/head-re-upper.md) | 84 | `result-track:0ca00fdfc0aba25c7f0eabe3310d90376a6792623d378d69778983b067754457` |
+| 7 | `theorem` | [prime_in_square_of_records](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentRecordEvaluation.lean/declarations/prime-in-square-of-records.md) | 95 | `result-track:0148db4f19ddd3540bc7769c8e4b983c58f1a8f51607cdde5e6d6f9471d0dc2e` |
+| 8 | `theorem` | [prime_in_square_of_rounded_records](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentRecordEvaluation.lean/declarations/prime-in-square-of-rounded-records.md) | 106 | `result-track:6a168d14c7a510e66d0ecb121d274702482ade9753e209e9cf9151cda0b725ca` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

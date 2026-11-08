@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CompleteFiniteQuadratureOnTheActualPositiveSamplingDomain.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CompleteFiniteQuadratureOnTheActualPositiveSamplingDomain.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompleteFiniteQuadratureOnTheActualPositiveSamplingDomain.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompleteFiniteQuadratureOnTheActualPositiveSamplingDomain.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [positive_domain_unit_error_identity](../../../../MeasureAndIntegration/CompleteFiniteQuadratureOnTheActualPositiveSamplingDomain.lean/declarations/positive-domain-unit-error-identity.md) | 22 | `result-track:b4648591e3c481ca7d9f554bf9c78af0793725c976ed25082e030b7955b00885` |
-| 2 | `theorem` | [positive_domain_unit_error_price](../../../../MeasureAndIntegration/CompleteFiniteQuadratureOnTheActualPositiveSamplingDomain.lean/declarations/positive-domain-unit-error-price.md) | 48 | `result-track:77c9ab08791fa0d594f57f8624310e2c7b59dc8df6376fb9aa80ea71b61b9f38` |
-| 3 | `theorem` | [positive_domain_integral_retains_every_unit_cell](../../../../MeasureAndIntegration/CompleteFiniteQuadratureOnTheActualPositiveSamplingDomain.lean/declarations/positive-domain-integral-retains-every-unit-cell.md) | 71 | `result-track:d321aab890a9a00149902c22e7181c430f4986df8a31829638ae2633f6b4f088` |
-| 4 | `theorem` | [complete_positive_domain_sampling_price](../../../../MeasureAndIntegration/CompleteFiniteQuadratureOnTheActualPositiveSamplingDomain.lean/declarations/complete-positive-domain-sampling-price.md) | 93 | `result-track:22501e5dbc7648129abb4bed9cecbf3b2c037baff85da0a89a639d60768f4336` |
+| 1 | `theorem` | [positive_domain_unit_error_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompleteFiniteQuadratureOnTheActualPositiveSamplingDomain.lean/declarations/positive-domain-unit-error-identity.md) | 22 | `result-track:b4648591e3c481ca7d9f554bf9c78af0793725c976ed25082e030b7955b00885` |
+| 2 | `theorem` | [positive_domain_unit_error_price](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompleteFiniteQuadratureOnTheActualPositiveSamplingDomain.lean/declarations/positive-domain-unit-error-price.md) | 48 | `result-track:77c9ab08791fa0d594f57f8624310e2c7b59dc8df6376fb9aa80ea71b61b9f38` |
+| 3 | `theorem` | [positive_domain_integral_retains_every_unit_cell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompleteFiniteQuadratureOnTheActualPositiveSamplingDomain.lean/declarations/positive-domain-integral-retains-every-unit-cell.md) | 71 | `result-track:d321aab890a9a00149902c22e7181c430f4986df8a31829638ae2633f6b4f088` |
+| 4 | `theorem` | [complete_positive_domain_sampling_price](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompleteFiniteQuadratureOnTheActualPositiveSamplingDomain.lean/declarations/complete-positive-domain-sampling-price.md) | 93 | `result-track:22501e5dbc7648129abb4bed9cecbf3b2c037baff85da0a89a639d60768f4336` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

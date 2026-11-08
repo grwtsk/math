@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../SpecialFunctions/RpowIsometric.lean/index.md) · [Full source](../../../../SpecialFunctions/RpowIsometric.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/RpowIsometric.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/RpowIsometric.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [nnnorm_nnrpow](../../../../SpecialFunctions/RpowIsometric.lean/declarations/nnnorm-nnrpow.md) | 34 | `result-track:140a2d35aa1740cf1c1f3775c157650a9b18b428c73d1de7027e7c696c0aed5e` |
-| 2 | `lemma` | [norm_nnrpow](../../../../SpecialFunctions/RpowIsometric.lean/declarations/norm-nnrpow.md) | 38 | `result-track:e981bbbb79f4368c67f1efe0985dee84dc0bb07c20fcf1baeeffdf0d63cfb991` |
-| 3 | `lemma` | [nnnorm_sqrt](../../../../SpecialFunctions/RpowIsometric.lean/declarations/nnnorm-sqrt.md) | 42 | `result-track:5ffc47c8b442079ded046da00aade22ec3c9086aaee445482cf8eb532cbe4151` |
-| 4 | `lemma` | [norm_sqrt](../../../../SpecialFunctions/RpowIsometric.lean/declarations/norm-sqrt.md) | 46 | `result-track:3ecf8265d634747ae782dcb9c708a12b35c48a20299d95bb4a9bff934934224b` |
-| 5 | `lemma` | [nnnorm_rpow](../../../../SpecialFunctions/RpowIsometric.lean/declarations/nnnorm-rpow.md) | 57 | `result-track:11f83173066d10297f84f7f569d403b282003c88078ab3e05745e96a920eee0a` |
-| 6 | `lemma` | [norm_rpow](../../../../SpecialFunctions/RpowIsometric.lean/declarations/norm-rpow.md) | 63 | `result-track:ba8575a320cd29afb58104b2d320f4fa08a470d50e14474d959805c1440fd589` |
+| 1 | `lemma` | [nnnorm_nnrpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/RpowIsometric.lean/declarations/nnnorm-nnrpow.md) | 34 | `result-track:140a2d35aa1740cf1c1f3775c157650a9b18b428c73d1de7027e7c696c0aed5e` |
+| 2 | `lemma` | [norm_nnrpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/RpowIsometric.lean/declarations/norm-nnrpow.md) | 38 | `result-track:e981bbbb79f4368c67f1efe0985dee84dc0bb07c20fcf1baeeffdf0d63cfb991` |
+| 3 | `lemma` | [nnnorm_sqrt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/RpowIsometric.lean/declarations/nnnorm-sqrt.md) | 42 | `result-track:5ffc47c8b442079ded046da00aade22ec3c9086aaee445482cf8eb532cbe4151` |
+| 4 | `lemma` | [norm_sqrt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/RpowIsometric.lean/declarations/norm-sqrt.md) | 46 | `result-track:3ecf8265d634747ae782dcb9c708a12b35c48a20299d95bb4a9bff934934224b` |
+| 5 | `lemma` | [nnnorm_rpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/RpowIsometric.lean/declarations/nnnorm-rpow.md) | 57 | `result-track:11f83173066d10297f84f7f569d403b282003c88078ab3e05745e96a920eee0a` |
+| 6 | `lemma` | [norm_rpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/RpowIsometric.lean/declarations/norm-rpow.md) | 63 | `result-track:ba8575a320cd29afb58104b2d320f4fa08a470d50e14474d959805c1440fd589` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

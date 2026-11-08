@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/TrivialZeroTentSeriesCore.lean/index.md) · [Full source](../../../../NumberTheory/TrivialZeroTentSeriesCore.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TrivialZeroTentSeriesCore.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TrivialZeroTentSeriesCore.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,10 +46,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Interfaces.CanonicalZetaResidueCore`](../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalZetaResidueCore.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.TrivialZeroResidues`](../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TrivialZeroResidues.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.NumberTheory.Chebyshev.TrivialZeroTentSeries`](../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TrivialZeroTentSeries.lean/index.md) — import line 6; pinned internal source present.
-- [`GRWTSK.NumberTheory.Chebyshev.Checks.TrivialZeroSeriesControls`](../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TrivialZeroSeriesControls.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.Interfaces.CanonicalZetaResidueCore`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalZetaResidueCore.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.TrivialZeroResidues`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TrivialZeroResidues.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.TrivialZeroTentSeries`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TrivialZeroTentSeries.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.Checks.TrivialZeroSeriesControls`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TrivialZeroSeriesControls.lean/index.md) — import line 7; pinned internal source present.
 
 ## Top results and three-degree verification metric
 

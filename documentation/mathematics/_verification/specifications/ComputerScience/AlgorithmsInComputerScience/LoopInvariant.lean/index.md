@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/LoopInvariant.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/LoopInvariant.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LoopInvariant.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LoopInvariant.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [LoopSurface](../../../../../ComputerScience/AlgorithmsInComputerScience/LoopInvariant.lean/declarations/loopsurface.md) | 10 | `declaration-track:06d358b39617a550519a545c8eaf9254d430593a4a88c26cd561706d01a07d55` |
-| 2 | `def` | [required](../../../../../ComputerScience/AlgorithmsInComputerScience/LoopInvariant.lean/declarations/required.md) | 18 | `declaration-track:f98275bf11a3dae0ba804491d03951103af796cdd5580e459d8c31e2176d2f8f` |
-| 3 | `theorem` | [required_length](../../../../../ComputerScience/AlgorithmsInComputerScience/LoopInvariant.lean/declarations/required-length.md) | 21 | `result-track:f8577cb3abe91a66178f976f1a0dc13f3ef22aed8891c187d8d79d5dc0ff3cb7` |
-| 4 | `structure` | [LoopImprovement](../../../../../ComputerScience/AlgorithmsInComputerScience/LoopInvariant.lean/declarations/loopimprovement.md) | 26 | `declaration-track:4ac96b469f2eb56339384262ec62c6d8d2d3c995144aa2369c73b7366113ad82` |
-| 5 | `def` | [closed](../../../../../ComputerScience/AlgorithmsInComputerScience/LoopInvariant.lean/declarations/closed.md) | 36 | `declaration-track:7a83e1de79f002a9f1ac2520d0f92a2fc43e21a64ea88b821fddbf53e69af916` |
-| 6 | `theorem` | [closed_implies_formal](../../../../../ComputerScience/AlgorithmsInComputerScience/LoopInvariant.lean/declarations/closed-implies-formal.md) | 39 | `result-track:186929e579f4fd95bf17d7d9abe1a98baa4d6a889f26577d075fd548115d7a46` |
-| 7 | `theorem` | [closed_implies_rust](../../../../../ComputerScience/AlgorithmsInComputerScience/LoopInvariant.lean/declarations/closed-implies-rust.md) | 44 | `result-track:3a7781e22308c9708fcfb80ea60fd46d7595f793bf97b2ed4e4b9140c483c0cd` |
-| 8 | `theorem` | [closed_implies_docs](../../../../../ComputerScience/AlgorithmsInComputerScience/LoopInvariant.lean/declarations/closed-implies-docs.md) | 50 | `result-track:a4f209aba827c4eef8504774d3b16cc71623ed1b5bc032e45e2e2ac7027aa3d1` |
-| 9 | `theorem` | [closed_implies_nonclaim_preserved](../../../../../ComputerScience/AlgorithmsInComputerScience/LoopInvariant.lean/declarations/closed-implies-nonclaim-preserved.md) | 56 | `result-track:1f6f3490628de7ed5bfcfee29b0029d548258902eeb79fd198c0988d8e24cfdd` |
-| 10 | `theorem` | [closed_implies_residue_tracked](../../../../../ComputerScience/AlgorithmsInComputerScience/LoopInvariant.lean/declarations/closed-implies-residue-tracked.md) | 63 | `result-track:1db299072f983c1aead01e3aec5e16fa9123c9b0259609959f624e929fe2bb89` |
+| 1 | `inductive` | [LoopSurface](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LoopInvariant.lean/declarations/loopsurface.md) | 10 | `declaration-track:06d358b39617a550519a545c8eaf9254d430593a4a88c26cd561706d01a07d55` |
+| 2 | `def` | [required](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LoopInvariant.lean/declarations/required.md) | 18 | `declaration-track:f98275bf11a3dae0ba804491d03951103af796cdd5580e459d8c31e2176d2f8f` |
+| 3 | `theorem` | [required_length](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LoopInvariant.lean/declarations/required-length.md) | 21 | `result-track:f8577cb3abe91a66178f976f1a0dc13f3ef22aed8891c187d8d79d5dc0ff3cb7` |
+| 4 | `structure` | [LoopImprovement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LoopInvariant.lean/declarations/loopimprovement.md) | 26 | `declaration-track:4ac96b469f2eb56339384262ec62c6d8d2d3c995144aa2369c73b7366113ad82` |
+| 5 | `def` | [closed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LoopInvariant.lean/declarations/closed.md) | 36 | `declaration-track:7a83e1de79f002a9f1ac2520d0f92a2fc43e21a64ea88b821fddbf53e69af916` |
+| 6 | `theorem` | [closed_implies_formal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LoopInvariant.lean/declarations/closed-implies-formal.md) | 39 | `result-track:186929e579f4fd95bf17d7d9abe1a98baa4d6a889f26577d075fd548115d7a46` |
+| 7 | `theorem` | [closed_implies_rust](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LoopInvariant.lean/declarations/closed-implies-rust.md) | 44 | `result-track:3a7781e22308c9708fcfb80ea60fd46d7595f793bf97b2ed4e4b9140c483c0cd` |
+| 8 | `theorem` | [closed_implies_docs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LoopInvariant.lean/declarations/closed-implies-docs.md) | 50 | `result-track:a4f209aba827c4eef8504774d3b16cc71623ed1b5bc032e45e2e2ac7027aa3d1` |
+| 9 | `theorem` | [closed_implies_nonclaim_preserved](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LoopInvariant.lean/declarations/closed-implies-nonclaim-preserved.md) | 56 | `result-track:1f6f3490628de7ed5bfcfee29b0029d548258902eeb79fd198c0988d8e24cfdd` |
+| 10 | `theorem` | [closed_implies_residue_tracked](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LoopInvariant.lean/declarations/closed-implies-residue-tracked.md) | 63 | `result-track:1db299072f983c1aead01e3aec5e16fa9123c9b0259609959f624e929fe2bb89` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

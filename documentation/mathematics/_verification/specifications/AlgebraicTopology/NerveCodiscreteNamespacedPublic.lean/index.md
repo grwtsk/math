@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/NerveCodiscreteNamespacedPublic.lean/index.md) · [Full source](../../../../AlgebraicTopology/NerveCodiscreteNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NerveCodiscreteNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NerveCodiscreteNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [equivFun](../../../../AlgebraicTopology/NerveCodiscreteNamespacedPublic.lean/declarations/equivfun.md) | 41 | `declaration-track:a6a1241c5dd3a337b36a4f0f5ff016342c867ae7438707da10920b3b3ec2d989` |
-| 2 | `instance` | [(anonymous)](../../../../AlgebraicTopology/NerveCodiscreteNamespacedPublic.lean/declarations/instance.md) | 47 | `declaration-track:9e5c0ea5fe5e646fed4bff592738656bb075331fd98aa06dd00bfb352b8e7d30` |
+| 1 | `def` | [equivFun](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NerveCodiscreteNamespacedPublic.lean/declarations/equivfun.md) | 41 | `declaration-track:a6a1241c5dd3a337b36a4f0f5ff016342c867ae7438707da10920b3b3ec2d989` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NerveCodiscreteNamespacedPublic.lean/declarations/instance.md) | 47 | `declaration-track:9e5c0ea5fe5e646fed4bff592738656bb075331fd98aa06dd00bfb352b8e7d30` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

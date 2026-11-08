@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedApplication.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedApplication.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedApplication.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedApplication.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [Application](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedApplication.lean/declarations/application.md) | 22 | `declaration-track:9a83c04624094c4c7afaca28d5b86057db915459657c9ec7d20ab2b40e930607` |
-| 2 | `def` | [identity](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedApplication.lean/declarations/identity.md) | 27 | `declaration-track:a136a318bd3d37cfac98b31969cd9f1490037440d4dcc1a3a0e52defe26ebd32` |
-| 3 | `def` | [comp](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedApplication.lean/declarations/comp.md) | 31 | `declaration-track:66aa987c30b60a4bc9f1dad043e2e7c95431784f6d191f31f0914eead76e7af3` |
-| 4 | `theorem` | [identity_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedApplication.lean/declarations/identity-apply.md) | 37 | `result-track:55fd3170551199a85db1f0b953863d5e14b92594cb8ec5ba1489b7855d803f29` |
-| 5 | `theorem` | [comp_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedApplication.lean/declarations/comp-apply.md) | 42 | `result-track:b78adf49e7c26d182b6ccbcd6e008b1d9414e67cea6a53e638252c990f7f6769` |
+| 1 | `abbrev` | [Application](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedApplication.lean/declarations/application.md) | 22 | `declaration-track:9a83c04624094c4c7afaca28d5b86057db915459657c9ec7d20ab2b40e930607` |
+| 2 | `def` | [identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedApplication.lean/declarations/identity.md) | 27 | `declaration-track:a136a318bd3d37cfac98b31969cd9f1490037440d4dcc1a3a0e52defe26ebd32` |
+| 3 | `def` | [comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedApplication.lean/declarations/comp.md) | 31 | `declaration-track:66aa987c30b60a4bc9f1dad043e2e7c95431784f6d191f31f0914eead76e7af3` |
+| 4 | `theorem` | [identity_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedApplication.lean/declarations/identity-apply.md) | 37 | `result-track:55fd3170551199a85db1f0b953863d5e14b92594cb8ec5ba1489b7855d803f29` |
+| 5 | `theorem` | [comp_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedApplication.lean/declarations/comp-apply.md) | 42 | `result-track:b78adf49e7c26d182b6ccbcd6e008b1d9414e67cea6a53e638252c990f7f6769` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

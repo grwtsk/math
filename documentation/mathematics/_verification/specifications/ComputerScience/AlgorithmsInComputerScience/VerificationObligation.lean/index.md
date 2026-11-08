@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/VerificationObligation.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/VerificationObligation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/VerificationObligation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/VerificationObligation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [VerificationObligation](../../../../../ComputerScience/AlgorithmsInComputerScience/VerificationObligation.lean/declarations/verificationobligation.md) | 11 | `declaration-track:ea5edd088a3f2e39e10b5ece90289768561483d81d8e1651762cf98423739932` |
-| 2 | `inductive` | [ObligationStatus](../../../../../ComputerScience/AlgorithmsInComputerScience/VerificationObligation.lean/declarations/obligationstatus.md) | 99 | `declaration-track:ff0dc5e53f90f92831c9d446b188be9421679bcb8885bf2cab21e85c04fa0737` |
-| 3 | `structure` | [VerificationObligationRecord](../../../../../ComputerScience/AlgorithmsInComputerScience/VerificationObligation.lean/declarations/verificationobligationrecord.md) | 106 | `declaration-track:67fd8c44d8553e13099a44d4c1d67cf414419a5e6c538e0b469e5075de4e5384` |
-| 4 | `structure` | [VerificationObligationSemantics](../../../../../ComputerScience/AlgorithmsInComputerScience/VerificationObligation.lean/declarations/verificationobligationsemantics.md) | 115 | `declaration-track:81150c03874f288c11da9fc0137e73433915407473f1298cf8ec521e5b7b6259` |
-| 5 | `structure` | [VerificationObligationLedger](../../../../../ComputerScience/AlgorithmsInComputerScience/VerificationObligation.lean/declarations/verificationobligationledger.md) | 125 | `declaration-track:e76e2398de91faae516c6ebe332c18df9af1b8270e61267c66e655fe5a48eacc` |
+| 1 | `inductive` | [VerificationObligation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/VerificationObligation.lean/declarations/verificationobligation.md) | 11 | `declaration-track:ea5edd088a3f2e39e10b5ece90289768561483d81d8e1651762cf98423739932` |
+| 2 | `inductive` | [ObligationStatus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/VerificationObligation.lean/declarations/obligationstatus.md) | 99 | `declaration-track:ff0dc5e53f90f92831c9d446b188be9421679bcb8885bf2cab21e85c04fa0737` |
+| 3 | `structure` | [VerificationObligationRecord](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/VerificationObligation.lean/declarations/verificationobligationrecord.md) | 106 | `declaration-track:67fd8c44d8553e13099a44d4c1d67cf414419a5e6c538e0b469e5075de4e5384` |
+| 4 | `structure` | [VerificationObligationSemantics](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/VerificationObligation.lean/declarations/verificationobligationsemantics.md) | 115 | `declaration-track:81150c03874f288c11da9fc0137e73433915407473f1298cf8ec521e5b7b6259` |
+| 5 | `structure` | [VerificationObligationLedger](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/VerificationObligation.lean/declarations/verificationobligationledger.md) | 125 | `declaration-track:e76e2398de91faae516c6ebe332c18df9af1b8270e61267c66e655fe5a48eacc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

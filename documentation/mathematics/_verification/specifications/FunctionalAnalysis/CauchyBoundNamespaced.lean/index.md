@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/CauchyBoundNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/CauchyBoundNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CauchyBoundNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CauchyBoundNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,16 +59,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [cauchyBound](../../../../FunctionalAnalysis/CauchyBoundNamespaced.lean/declarations/cauchybound.md) | 37 | `declaration-track:45f53a19a763f3ff1634fafe22d8bb3f4163cbd65e1924ef843ff71451ca3754` |
-| 2 | `lemma` | [one_le_cauchyBound](../../../../FunctionalAnalysis/CauchyBoundNamespaced.lean/declarations/one-le-cauchybound.md) | 41 | `result-track:26d53946b5a9a74247bf1bfea759eb6aa04e0f52e7b2eb4db316ec5417f4ec4a` |
-| 3 | `lemma` | [cauchyBound_zero](../../../../FunctionalAnalysis/CauchyBoundNamespaced.lean/declarations/cauchybound-zero.md) | 45 | `result-track:b1e0cd5029f921ef351d006d4d6b2e9cf55778dddf58ed0c819209220e8ea8fc` |
-| 4 | `lemma` | [cauchyBound_C](../../../../FunctionalAnalysis/CauchyBoundNamespaced.lean/declarations/cauchybound-c.md) | 49 | `result-track:9a761d6a1c5770a4eb183f0d8e15a1237ac819476ce0c7df187dea8d5671d489` |
-| 5 | `lemma` | [cauchyBound_one](../../../../FunctionalAnalysis/CauchyBoundNamespaced.lean/declarations/cauchybound-one.md) | 53 | `result-track:327100aba5253932347d2c1dbbbaa4e2673ca9a9226c692743fedda17e69de1d` |
-| 6 | `lemma` | [cauchyBound_X](../../../../FunctionalAnalysis/CauchyBoundNamespaced.lean/declarations/cauchybound-x.md) | 56 | `result-track:8e624ba63c7816166a67a6eb477961361ef4c02fe7e92e2c8abe9f0e56a3ca9e` |
-| 7 | `lemma` | [cauchyBound_X_add_C](../../../../FunctionalAnalysis/CauchyBoundNamespaced.lean/declarations/cauchybound-x-add-c.md) | 60 | `result-track:e1ee0170a8fce38769d90f10a7f8797b6f8d19a46a31c434ff77298790afdb2e` |
-| 8 | `lemma` | [cauchyBound_X_sub_C](../../../../FunctionalAnalysis/CauchyBoundNamespaced.lean/declarations/cauchybound-x-sub-c.md) | 64 | `result-track:c703eb3e4c43a204003bd54d3ecb75cbccaecba53fd482e09e3476d699f10ed7` |
-| 9 | `lemma` | [cauchyBound_smul](../../../../FunctionalAnalysis/CauchyBoundNamespaced.lean/declarations/cauchybound-smul.md) | 68 | `result-track:3a0b3164283359ec1368d6f52bdac05605c1059837bc2a00e876f942ee936c9c` |
-| 10 | `theorem` | [IsRoot.norm_lt_cauchyBound](../../../../FunctionalAnalysis/CauchyBoundNamespaced.lean/declarations/isroot-norm-lt-cauchybound.md) | 78 | `result-track:e65971d78c45dcad360f6a42103c88bceb884ec0250aab6486f1bc66a7da1e8d` |
+| 1 | `def` | [cauchyBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CauchyBoundNamespaced.lean/declarations/cauchybound.md) | 37 | `declaration-track:45f53a19a763f3ff1634fafe22d8bb3f4163cbd65e1924ef843ff71451ca3754` |
+| 2 | `lemma` | [one_le_cauchyBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CauchyBoundNamespaced.lean/declarations/one-le-cauchybound.md) | 41 | `result-track:26d53946b5a9a74247bf1bfea759eb6aa04e0f52e7b2eb4db316ec5417f4ec4a` |
+| 3 | `lemma` | [cauchyBound_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CauchyBoundNamespaced.lean/declarations/cauchybound-zero.md) | 45 | `result-track:b1e0cd5029f921ef351d006d4d6b2e9cf55778dddf58ed0c819209220e8ea8fc` |
+| 4 | `lemma` | [cauchyBound_C](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CauchyBoundNamespaced.lean/declarations/cauchybound-c.md) | 49 | `result-track:9a761d6a1c5770a4eb183f0d8e15a1237ac819476ce0c7df187dea8d5671d489` |
+| 5 | `lemma` | [cauchyBound_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CauchyBoundNamespaced.lean/declarations/cauchybound-one.md) | 53 | `result-track:327100aba5253932347d2c1dbbbaa4e2673ca9a9226c692743fedda17e69de1d` |
+| 6 | `lemma` | [cauchyBound_X](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CauchyBoundNamespaced.lean/declarations/cauchybound-x.md) | 56 | `result-track:8e624ba63c7816166a67a6eb477961361ef4c02fe7e92e2c8abe9f0e56a3ca9e` |
+| 7 | `lemma` | [cauchyBound_X_add_C](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CauchyBoundNamespaced.lean/declarations/cauchybound-x-add-c.md) | 60 | `result-track:e1ee0170a8fce38769d90f10a7f8797b6f8d19a46a31c434ff77298790afdb2e` |
+| 8 | `lemma` | [cauchyBound_X_sub_C](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CauchyBoundNamespaced.lean/declarations/cauchybound-x-sub-c.md) | 64 | `result-track:c703eb3e4c43a204003bd54d3ecb75cbccaecba53fd482e09e3476d699f10ed7` |
+| 9 | `lemma` | [cauchyBound_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CauchyBoundNamespaced.lean/declarations/cauchybound-smul.md) | 68 | `result-track:3a0b3164283359ec1368d6f52bdac05605c1059837bc2a00e876f942ee936c9c` |
+| 10 | `theorem` | [IsRoot.norm_lt_cauchyBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CauchyBoundNamespaced.lean/declarations/isroot-norm-lt-cauchybound.md) | 78 | `result-track:e65971d78c45dcad360f6a42103c88bceb884ec0250aab6486f1bc66a7da1e8d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

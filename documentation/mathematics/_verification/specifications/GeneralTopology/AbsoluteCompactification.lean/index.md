@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/AbsoluteCompactification.lean/index.md) · [Full source](../../../../GeneralTopology/AbsoluteCompactification.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AbsoluteCompactification.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AbsoluteCompactification.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [realizedIncidences](../../../../GeneralTopology/AbsoluteCompactification.lean/declarations/realizedincidences.md) | 23 | `declaration-track:d5bd7f196cfca4dcaa28524da993c775ed792b299905623f8c5694094d654099` |
-| 2 | `def` | [AbsoluteKnowledgeCompactification](../../../../GeneralTopology/AbsoluteCompactification.lean/declarations/absoluteknowledgecompactification.md) | 33 | `declaration-track:5ecd10904bc7ea626e2dbee8ad0ccbae980a3302f3264d489e28412a538b2257` |
-| 3 | `theorem` | [realized_mem_absoluteCompactification](../../../../GeneralTopology/AbsoluteCompactification.lean/declarations/realized-mem-absolutecompactification.md) | 40 | `result-track:dad56034df62d6d21a59f63e71a8ade874bc5c0d48d6288a77a87bba7c48884e` |
-| 4 | `theorem` | [absoluteKnowledgeCompactification_isCompact](../../../../GeneralTopology/AbsoluteCompactification.lean/declarations/absoluteknowledgecompactification-iscompact.md) | 52 | `result-track:28ae3d5df6faec41c216e45f327af4be2585cc084b40d132399fa65a184ac1fa` |
-| 5 | `theorem` | [incidenceSingleton_mem_absoluteCompactification](../../../../GeneralTopology/AbsoluteCompactification.lean/declarations/incidencesingleton-mem-absolutecompactification.md) | 63 | `result-track:ae40ea57045598cfa8a0f197b78706c6ec9f29f5dbd74288b5051a950b83da87` |
+| 1 | `def` | [realizedIncidences](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AbsoluteCompactification.lean/declarations/realizedincidences.md) | 23 | `declaration-track:d5bd7f196cfca4dcaa28524da993c775ed792b299905623f8c5694094d654099` |
+| 2 | `def` | [AbsoluteKnowledgeCompactification](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AbsoluteCompactification.lean/declarations/absoluteknowledgecompactification.md) | 33 | `declaration-track:5ecd10904bc7ea626e2dbee8ad0ccbae980a3302f3264d489e28412a538b2257` |
+| 3 | `theorem` | [realized_mem_absoluteCompactification](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AbsoluteCompactification.lean/declarations/realized-mem-absolutecompactification.md) | 40 | `result-track:dad56034df62d6d21a59f63e71a8ade874bc5c0d48d6288a77a87bba7c48884e` |
+| 4 | `theorem` | [absoluteKnowledgeCompactification_isCompact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AbsoluteCompactification.lean/declarations/absoluteknowledgecompactification-iscompact.md) | 52 | `result-track:28ae3d5df6faec41c216e45f327af4be2585cc084b40d132399fa65a184ac1fa` |
+| 5 | `theorem` | [incidenceSingleton_mem_absoluteCompactification](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AbsoluteCompactification.lean/declarations/incidencesingleton-mem-absolutecompactification.md) | 63 | `result-track:ae40ea57045598cfa8a0f197b78706c6ec9f29f5dbd74288b5051a950b83da87` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

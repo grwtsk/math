@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/CanonicalFourFamilyScaleBounds.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/CanonicalFourFamilyScaleBounds.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CanonicalFourFamilyScaleBounds.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CanonicalFourFamilyScaleBounds.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Moebius.CanonicalFourFamilyStrictGap`](../../../../AssociativeRingsAndAlgebras/CanonicalFourFamilyStrictGap.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.CanonicalFourFamilyStrictGap`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CanonicalFourFamilyStrictGap.lean/index.md) — import line 3; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [anchored_family_center_injective](../../../../AssociativeRingsAndAlgebras/CanonicalFourFamilyScaleBounds.lean/declarations/anchored-family-center-injective.md) | 14 | `result-track:38205fa1c2e515a2d26477472844bb1762c366ed7c1207681fecfb3f78d4802f` |
-| 2 | `theorem` | [selected_pair_unique](../../../../AssociativeRingsAndAlgebras/CanonicalFourFamilyScaleBounds.lean/declarations/selected-pair-unique.md) | 22 | `result-track:e9bdfdaa265c9dd80343b10d227e086a76eaa861ecfb12710c2adc577fd75cb1` |
-| 3 | `theorem` | [abs_fullMatrixEntry_le_log](../../../../AssociativeRingsAndAlgebras/CanonicalFourFamilyScaleBounds.lean/declarations/abs-fullmatrixentry-le-log.md) | 45 | `result-track:c08c1a04e15a43f9718ad20089ec1d875a2706ff9a6c32d0b6d5b5bca2cc3a5b` |
-| 4 | `def` | [fullMatrixScaleBudget](../../../../AssociativeRingsAndAlgebras/CanonicalFourFamilyScaleBounds.lean/declarations/fullmatrixscalebudget.md) | 94 | `declaration-track:507ab952e7d0e6c55cc87f3a13d54e6c867c96435864497c20a5a6c504e45e45` |
-| 5 | `theorem` | [fullMatrix_frobenius_le](../../../../AssociativeRingsAndAlgebras/CanonicalFourFamilyScaleBounds.lean/declarations/fullmatrix-frobenius-le.md) | 97 | `result-track:ef8c24ce234bac52dff5d5114707663d0aaa0fdb935c60552e068865793b3679` |
-| 6 | `theorem` | [fullAdjointDamping_scale_lower](../../../../AssociativeRingsAndAlgebras/CanonicalFourFamilyScaleBounds.lean/declarations/fulladjointdamping-scale-lower.md) | 116 | `result-track:7ed4394467a5cba29efa68f03666f2ce4a3a15eeae4f5639fa15edffb27da7ab` |
-| 7 | `theorem` | [fullAdjointResidual_scale_descent](../../../../AssociativeRingsAndAlgebras/CanonicalFourFamilyScaleBounds.lean/declarations/fulladjointresidual-scale-descent.md) | 127 | `result-track:21a50b1d6c948f14914904d136db69799ef78af997510774ef6d2b56014f1742` |
+| 1 | `theorem` | [anchored_family_center_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CanonicalFourFamilyScaleBounds.lean/declarations/anchored-family-center-injective.md) | 14 | `result-track:38205fa1c2e515a2d26477472844bb1762c366ed7c1207681fecfb3f78d4802f` |
+| 2 | `theorem` | [selected_pair_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CanonicalFourFamilyScaleBounds.lean/declarations/selected-pair-unique.md) | 22 | `result-track:e9bdfdaa265c9dd80343b10d227e086a76eaa861ecfb12710c2adc577fd75cb1` |
+| 3 | `theorem` | [abs_fullMatrixEntry_le_log](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CanonicalFourFamilyScaleBounds.lean/declarations/abs-fullmatrixentry-le-log.md) | 45 | `result-track:c08c1a04e15a43f9718ad20089ec1d875a2706ff9a6c32d0b6d5b5bca2cc3a5b` |
+| 4 | `def` | [fullMatrixScaleBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CanonicalFourFamilyScaleBounds.lean/declarations/fullmatrixscalebudget.md) | 94 | `declaration-track:507ab952e7d0e6c55cc87f3a13d54e6c867c96435864497c20a5a6c504e45e45` |
+| 5 | `theorem` | [fullMatrix_frobenius_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CanonicalFourFamilyScaleBounds.lean/declarations/fullmatrix-frobenius-le.md) | 97 | `result-track:ef8c24ce234bac52dff5d5114707663d0aaa0fdb935c60552e068865793b3679` |
+| 6 | `theorem` | [fullAdjointDamping_scale_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CanonicalFourFamilyScaleBounds.lean/declarations/fulladjointdamping-scale-lower.md) | 116 | `result-track:7ed4394467a5cba29efa68f03666f2ce4a3a15eeae4f5639fa15edffb27da7ab` |
+| 7 | `theorem` | [fullAdjointResidual_scale_descent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CanonicalFourFamilyScaleBounds.lean/declarations/fulladjointresidual-scale-descent.md) | 127 | `result-track:21a50b1d6c948f14914904d136db69799ef78af997510774ef6d2b56014f1742` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/CramerWoldPublic.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/CramerWoldPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CramerWoldPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CramerWoldPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [tendstoInDistribution_iff_tendstoInDistribution_inner](../../../../ProbabilityTheoryAndStochasticProcesses/CramerWoldPublic.lean/declarations/tendstoindistribution-iff-tendstoindistribution-inner.md) | 39 | `result-track:54894a76784bf1f3f4f2004b302ada22604c4faa761601c97f4249dc328ee8d3` |
+| 1 | `theorem` | [tendstoInDistribution_iff_tendstoInDistribution_inner](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CramerWoldPublic.lean/declarations/tendstoindistribution-iff-tendstoindistribution-inner.md) | 39 | `result-track:54894a76784bf1f3f4f2004b302ada22604c4faa761601c97f4249dc328ee8d3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

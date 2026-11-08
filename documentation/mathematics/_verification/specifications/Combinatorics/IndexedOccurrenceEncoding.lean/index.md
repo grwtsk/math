@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/IndexedOccurrenceEncoding.lean/index.md) · [Full source](../../../../Combinatorics/IndexedOccurrenceEncoding.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IndexedOccurrenceEncoding.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IndexedOccurrenceEncoding.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,9 +46,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.CombinatoricsAndDiscreteMathematics.EnumerativeCombinatorics.CombinatorialObjects.Words.TaggedOccurrenceProjection`](../../../../Combinatorics/TaggedOccurrenceProjection.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.CombinatoricsAndDiscreteMathematics.EnumerativeCombinatorics.CombinatorialObjects.Words.BoundedWordPartitions`](../../../../Combinatorics/BoundedWordPartitions.lean/index.md) — import line 2; pinned internal source present.
-- [`GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.IndexedDictionary`](../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesIndexedDictionary.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.CombinatoricsAndDiscreteMathematics.EnumerativeCombinatorics.CombinatorialObjects.Words.TaggedOccurrenceProjection`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TaggedOccurrenceProjection.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.CombinatoricsAndDiscreteMathematics.EnumerativeCombinatorics.CombinatorialObjects.Words.BoundedWordPartitions`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundedWordPartitions.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.IndexedDictionary`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesIndexedDictionary.lean/index.md) — import line 3; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [encode](../../../../Combinatorics/IndexedOccurrenceEncoding.lean/declarations/encode.md) | 21 | `declaration-track:230e28d039190b11e8046050e92dc771ae2fa2dc7a0fb7594b56b955c1115f78` |
-| 2 | `theorem` | [decode_encode](../../../../Combinatorics/IndexedOccurrenceEncoding.lean/declarations/decode-encode.md) | 25 | `result-track:bdb231aa4061feafadb62303110e455b2fc6f120008daf393062962413d51afc` |
-| 3 | `theorem` | [encode_injective](../../../../Combinatorics/IndexedOccurrenceEncoding.lean/declarations/encode-injective.md) | 29 | `result-track:0148e3fb8367d3e9263af209d8e14bf41238ff35bfd2a07e1e64a0095ff8cf51` |
-| 4 | `theorem` | [encoded_reference_count](../../../../Combinatorics/IndexedOccurrenceEncoding.lean/declarations/encoded-reference-count.md) | 35 | `result-track:31f31427a1a70a630c0d1d0b20b68e481fc0fb706ed86ac6b1996a1b86fabacb` |
-| 5 | `theorem` | [evidence_applicability](../../../../Combinatorics/IndexedOccurrenceEncoding.lean/declarations/evidence-applicability.md) | 40 | `result-track:27189ed38a802a98eade0a9b32eefe832c2fce9c6d2b1964ba116d4f8e0f9713` |
-| 6 | `theorem` | [roundtrip_does_not_manufacture_evidence](../../../../Combinatorics/IndexedOccurrenceEncoding.lean/declarations/roundtrip-does-not-manufacture-evidence.md) | 49 | `result-track:7566ef41beb0032f5c294359486d09d3d1d966b7f3e67ff7979eefec2c51ba90` |
+| 1 | `def` | [encode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IndexedOccurrenceEncoding.lean/declarations/encode.md) | 21 | `declaration-track:230e28d039190b11e8046050e92dc771ae2fa2dc7a0fb7594b56b955c1115f78` |
+| 2 | `theorem` | [decode_encode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IndexedOccurrenceEncoding.lean/declarations/decode-encode.md) | 25 | `result-track:bdb231aa4061feafadb62303110e455b2fc6f120008daf393062962413d51afc` |
+| 3 | `theorem` | [encode_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IndexedOccurrenceEncoding.lean/declarations/encode-injective.md) | 29 | `result-track:0148e3fb8367d3e9263af209d8e14bf41238ff35bfd2a07e1e64a0095ff8cf51` |
+| 4 | `theorem` | [encoded_reference_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IndexedOccurrenceEncoding.lean/declarations/encoded-reference-count.md) | 35 | `result-track:31f31427a1a70a630c0d1d0b20b68e481fc0fb706ed86ac6b1996a1b86fabacb` |
+| 5 | `theorem` | [evidence_applicability](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IndexedOccurrenceEncoding.lean/declarations/evidence-applicability.md) | 40 | `result-track:27189ed38a802a98eade0a9b32eefe832c2fce9c6d2b1964ba116d4f8e0f9713` |
+| 6 | `theorem` | [roundtrip_does_not_manufacture_evidence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IndexedOccurrenceEncoding.lean/declarations/roundtrip-does-not-manufacture-evidence.md) | 49 | `result-track:7566ef41beb0032f5c294359486d09d3d1d966b7f3e67ff7979eefec2c51ba90` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

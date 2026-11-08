@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoproductPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoproductPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoproductPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoproductPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [effectiveEpiStructIsColimitDescOfEffectiveEpiFamily](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoproductPublic.lean/declarations/effectiveepistructiscolimitdescofeffectiveepifamily.md) | 33 | `declaration-track:ab4b5961f86ec2ab0f3793d075c988c9600ac98ce8724a402fb07481762fa7d0` |
-| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoproductPublic.lean/declarations/instance.md) | 44 | `declaration-track:ef3463e2e43eef1c8227ed4c4e7a05f7310fdb06ae238fc0ae27eb6c5c5b732e` |
-| 3 | `example` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoproductPublic.lean/declarations/example.md) | 51 | `declaration-track:5b6e7fa1df1f14a675afbe502ce255a98cb3f69711e2c80502fdc7c2181e5b4b` |
-| 4 | `theorem` | [effectiveEpiFamilyStructOfEffectiveEpiDesc_aux](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoproductPublic.lean/declarations/effectiveepifamilystructofeffectiveepidesc-aux.md) | 58 | `result-track:868522bcacd8b512493cee874df51cf9fb1b3eeb3d21ec4f2615445bf549b570` |
-| 5 | `def` | [effectiveEpiFamilyStructOfEffectiveEpiDesc](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoproductPublic.lean/declarations/effectiveepifamilystructofeffectiveepidesc.md) | 98 | `declaration-track:0effddde3a50310883a0027bbf7ce3369a6b58ec6ca8ae4d5deb4652571238e1` |
+| 1 | `def` | [effectiveEpiStructIsColimitDescOfEffectiveEpiFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoproductPublic.lean/declarations/effectiveepistructiscolimitdescofeffectiveepifamily.md) | 33 | `declaration-track:ab4b5961f86ec2ab0f3793d075c988c9600ac98ce8724a402fb07481762fa7d0` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoproductPublic.lean/declarations/instance.md) | 44 | `declaration-track:ef3463e2e43eef1c8227ed4c4e7a05f7310fdb06ae238fc0ae27eb6c5c5b732e` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoproductPublic.lean/declarations/example.md) | 51 | `declaration-track:5b6e7fa1df1f14a675afbe502ce255a98cb3f69711e2c80502fdc7c2181e5b4b` |
+| 4 | `theorem` | [effectiveEpiFamilyStructOfEffectiveEpiDesc_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoproductPublic.lean/declarations/effectiveepifamilystructofeffectiveepidesc-aux.md) | 58 | `result-track:868522bcacd8b512493cee874df51cf9fb1b3eeb3d21ec4f2615445bf549b570` |
+| 5 | `def` | [effectiveEpiFamilyStructOfEffectiveEpiDesc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoproductPublic.lean/declarations/effectiveepifamilystructofeffectiveepidesc.md) | 98 | `declaration-track:0effddde3a50310883a0027bbf7ce3369a6b58ec6ca8ae4d5deb4652571238e1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

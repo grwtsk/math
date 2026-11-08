@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/LimitCorrespondence.lean/index.md) · [Full source](../../../../GeneralTopology/LimitCorrespondence.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LimitCorrespondence.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LimitCorrespondence.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [ArithmeticLimitMode](../../../../GeneralTopology/LimitCorrespondence.lean/declarations/arithmeticlimitmode.md) | 23 | `declaration-track:393ec5b66575b69ed9389ae8d9cb2fd1f9a73870a45b3d8547dcb0b34af85eaa` |
-| 2 | `structure` | [TestSpaceCompatibilityCertificate](../../../../GeneralTopology/LimitCorrespondence.lean/declarations/testspacecompatibilitycertificate.md) | 29 | `declaration-track:7c9b56acd7677b5f4288183cb83526dcbfdd9d70888f5eda637041a62e3f97f5` |
-| 3 | `structure` | [NormalizedLimitArithmeticCorrespondence](../../../../GeneralTopology/LimitCorrespondence.lean/declarations/normalizedlimitarithmeticcorrespondence.md) | 55 | `declaration-track:0a59d3afe48534741f66a07b5ae8cd29c50b93745ed7f62669fcd0b299234997` |
-| 4 | `abbrev` | [LimitArithmeticCorrespondence](../../../../GeneralTopology/LimitCorrespondence.lean/declarations/limitarithmeticcorrespondence.md) | 128 | `declaration-track:32e7b29391ae8c01da07fe5b6070ec91eeca14af72301b0a413846d7ad351ca4` |
-| 5 | `theorem` | [normalized_limit_arithmetic_trace_correspondence](../../../../GeneralTopology/LimitCorrespondence.lean/declarations/normalized-limit-arithmetic-trace-correspondence.md) | 131 | `result-track:0447451ade7594ba9122e767e4ee84f932321d14cafa2fff1c0b0ca9e52e8eeb` |
+| 1 | `inductive` | [ArithmeticLimitMode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LimitCorrespondence.lean/declarations/arithmeticlimitmode.md) | 23 | `declaration-track:393ec5b66575b69ed9389ae8d9cb2fd1f9a73870a45b3d8547dcb0b34af85eaa` |
+| 2 | `structure` | [TestSpaceCompatibilityCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LimitCorrespondence.lean/declarations/testspacecompatibilitycertificate.md) | 29 | `declaration-track:7c9b56acd7677b5f4288183cb83526dcbfdd9d70888f5eda637041a62e3f97f5` |
+| 3 | `structure` | [NormalizedLimitArithmeticCorrespondence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LimitCorrespondence.lean/declarations/normalizedlimitarithmeticcorrespondence.md) | 55 | `declaration-track:0a59d3afe48534741f66a07b5ae8cd29c50b93745ed7f62669fcd0b299234997` |
+| 4 | `abbrev` | [LimitArithmeticCorrespondence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LimitCorrespondence.lean/declarations/limitarithmeticcorrespondence.md) | 128 | `declaration-track:32e7b29391ae8c01da07fe5b6070ec91eeca14af72301b0a413846d7ad351ca4` |
+| 5 | `theorem` | [normalized_limit_arithmetic_trace_correspondence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LimitCorrespondence.lean/declarations/normalized-limit-arithmetic-trace-correspondence.md) | 131 | `result-track:0447451ade7594ba9122e767e4ee84f932321d14cafa2fff1c0b0ca9e52e8eeb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

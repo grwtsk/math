@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/Bimodule.lean/index.md) · [Full source](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/Bimodule.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/Bimodule.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/Bimodule.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mk](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/Bimodule.lean/declarations/mk.md) | 78 | `declaration-track:36a9d584ea5a3f337666f32d3e05d69443c9b95b6ec2c016ed3decb5d12aeef8` |
-| 2 | `theorem` | [smul_mem](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/Bimodule.lean/declarations/smul-mem.md) | 87 | `result-track:836883f1c01d6dec932bc8250d1076e0c5fd9bb1ada7542844626a102ee2305c` |
-| 3 | `theorem` | [smul_mem'](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/Bimodule.lean/declarations/smul-mem-source-edition-2.md) | 91 | `result-track:e1930e0255156066f375e98ea59a63f27d50b338b8d5a6ed672806bcd218de88` |
-| 4 | `def` | [baseChange](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/Bimodule.lean/declarations/basechange.md) | 98 | `declaration-track:05826d67036d05ae130a411bcaa9cff247b77f8fb74ae3fd4cf8f6e6a799b20d` |
-| 5 | `def` | [toSubmodule](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/Bimodule.lean/declarations/tosubmodule.md) | 105 | `declaration-track:003b3bcfab9d88704014bb4fa23111a761b94e57cb7447eeb0d64e4ddb6fe76a` |
-| 6 | `def` | [toSubmodule'](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/Bimodule.lean/declarations/tosubmodule-source-edition-2.md) | 112 | `declaration-track:4be487cff6892ec33e58cb5d2abe874094bd74d9ccc5f28a88a216633fd2ca7e` |
-| 7 | `def` | [toSubbimoduleInt](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/Bimodule.lean/declarations/tosubbimoduleint.md) | 127 | `declaration-track:0f79d2fe9d8e80d03bae612481604da97d9b6d57f0677d0844aa51d156242435` |
-| 8 | `def` | [toSubbimoduleNat](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/Bimodule.lean/declarations/tosubbimodulenat.md) | 133 | `declaration-track:ed20716e83839ab8b13f2d5df9b34bd6d565dacde31d1c0d460d53099185b395` |
+| 1 | `def` | [mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/Bimodule.lean/declarations/mk.md) | 78 | `declaration-track:36a9d584ea5a3f337666f32d3e05d69443c9b95b6ec2c016ed3decb5d12aeef8` |
+| 2 | `theorem` | [smul_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/Bimodule.lean/declarations/smul-mem.md) | 87 | `result-track:836883f1c01d6dec932bc8250d1076e0c5fd9bb1ada7542844626a102ee2305c` |
+| 3 | `theorem` | [smul_mem'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/Bimodule.lean/declarations/smul-mem-source-edition-2.md) | 91 | `result-track:e1930e0255156066f375e98ea59a63f27d50b338b8d5a6ed672806bcd218de88` |
+| 4 | `def` | [baseChange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/Bimodule.lean/declarations/basechange.md) | 98 | `declaration-track:05826d67036d05ae130a411bcaa9cff247b77f8fb74ae3fd4cf8f6e6a799b20d` |
+| 5 | `def` | [toSubmodule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/Bimodule.lean/declarations/tosubmodule.md) | 105 | `declaration-track:003b3bcfab9d88704014bb4fa23111a761b94e57cb7447eeb0d64e4ddb6fe76a` |
+| 6 | `def` | [toSubmodule'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/Bimodule.lean/declarations/tosubmodule-source-edition-2.md) | 112 | `declaration-track:4be487cff6892ec33e58cb5d2abe874094bd74d9ccc5f28a88a216633fd2ca7e` |
+| 7 | `def` | [toSubbimoduleInt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/Bimodule.lean/declarations/tosubbimoduleint.md) | 127 | `declaration-track:0f79d2fe9d8e80d03bae612481604da97d9b6d57f0677d0844aa51d156242435` |
+| 8 | `def` | [toSubbimoduleNat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/Bimodule.lean/declarations/tosubbimodulenat.md) | 133 | `declaration-track:ed20716e83839ab8b13f2d5df9b34bd6d565dacde31d1c0d460d53099185b395` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

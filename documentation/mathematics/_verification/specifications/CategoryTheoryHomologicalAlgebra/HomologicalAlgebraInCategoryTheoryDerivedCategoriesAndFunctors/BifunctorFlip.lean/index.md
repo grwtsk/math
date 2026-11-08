@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/BifunctorFlip.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/BifunctorFlip.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/BifunctorFlip.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/BifunctorFlip.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [hasMapBifunctor_flip_iff](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/BifunctorFlip.lean/declarations/hasmapbifunctor-flip-iff.md) | 33 | `result-track:eff92c59e4c2f1212d3439c8b580940e6740fe716b3408a85e585c1685f2c0a5` |
-| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/BifunctorFlip.lean/declarations/instance.md) | 39 | `declaration-track:c52fb8fabe6ec3f263b256fb479a9c867af76fcb6539ce9c6158535f22450c2f` |
-| 3 | `def` | [mapBifunctorFlipIso](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/BifunctorFlip.lean/declarations/mapbifunctorflipiso.md) | 44 | `declaration-track:57d05fb4fdb59f645e0a7e943ca22a6724fae093765e4747d34024a67a8412ef` |
-| 4 | `lemma` | [mapBifunctorFlipIso_flip](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/BifunctorFlip.lean/declarations/mapbifunctorflipiso-flip.md) | 48 | `result-track:c1e66de8f4096a406418dc05c9e2cf8e8d99e57561a13b60c4da0396b69031d3` |
+| 1 | `lemma` | [hasMapBifunctor_flip_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/BifunctorFlip.lean/declarations/hasmapbifunctor-flip-iff.md) | 33 | `result-track:eff92c59e4c2f1212d3439c8b580940e6740fe716b3408a85e585c1685f2c0a5` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/BifunctorFlip.lean/declarations/instance.md) | 39 | `declaration-track:c52fb8fabe6ec3f263b256fb479a9c867af76fcb6539ce9c6158535f22450c2f` |
+| 3 | `def` | [mapBifunctorFlipIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/BifunctorFlip.lean/declarations/mapbifunctorflipiso.md) | 44 | `declaration-track:57d05fb4fdb59f645e0a7e943ca22a6724fae093765e4747d34024a67a8412ef` |
+| 4 | `lemma` | [mapBifunctorFlipIso_flip](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/BifunctorFlip.lean/declarations/mapbifunctorflipiso-flip.md) | 48 | `result-track:c1e66de8f4096a406418dc05c9e2cf8e8d99e57561a13b60c4da0396b69031d3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

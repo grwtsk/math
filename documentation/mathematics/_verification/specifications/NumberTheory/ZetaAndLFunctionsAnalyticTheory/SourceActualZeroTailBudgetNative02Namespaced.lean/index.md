@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualZeroTailBudgetNative02Namespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualZeroTailBudgetNative02Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualZeroTailBudgetNative02Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualZeroTailBudgetNative02Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [bump_vertical_abs_re_norm_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualZeroTailBudgetNative02Namespaced.lean/declarations/bump-vertical-abs-re-norm-le.md) | 26 | `result-track:039be56da2b4661099bb42b2485544280ccea623edf0b38319e34b70df444d59` |
-| 2 | `theorem` | [bump_on_strip_norm_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualZeroTailBudgetNative02Namespaced.lean/declarations/bump-on-strip-norm-le.md) | 35 | `result-track:37d06767351ae68cea7b4e252adc2f6e83704fe0b45b8d60265f4f4e88513562` |
-| 3 | `theorem` | [pole_norm_on_strip_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualZeroTailBudgetNative02Namespaced.lean/declarations/pole-norm-on-strip-le.md) | 59 | `result-track:d8a4cbcd9281d6821da0f57b53a8efee25c525fa079d3016cd0ebbbf2eeef17f` |
-| 4 | `theorem` | [actualInitialPrimeMellin_strip_norm_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualZeroTailBudgetNative02Namespaced.lean/declarations/actualinitialprimemellin-strip-norm-le.md) | 81 | `result-track:6b4bdf94c4ad824d247a9f085c0d67b6b18cd0dd679cd3c030f820f1c33bddfa` |
+| 1 | `theorem` | [bump_vertical_abs_re_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualZeroTailBudgetNative02Namespaced.lean/declarations/bump-vertical-abs-re-norm-le.md) | 26 | `result-track:039be56da2b4661099bb42b2485544280ccea623edf0b38319e34b70df444d59` |
+| 2 | `theorem` | [bump_on_strip_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualZeroTailBudgetNative02Namespaced.lean/declarations/bump-on-strip-norm-le.md) | 35 | `result-track:37d06767351ae68cea7b4e252adc2f6e83704fe0b45b8d60265f4f4e88513562` |
+| 3 | `theorem` | [pole_norm_on_strip_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualZeroTailBudgetNative02Namespaced.lean/declarations/pole-norm-on-strip-le.md) | 59 | `result-track:d8a4cbcd9281d6821da0f57b53a8efee25c525fa079d3016cd0ebbbf2eeef17f` |
+| 4 | `theorem` | [actualInitialPrimeMellin_strip_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualZeroTailBudgetNative02Namespaced.lean/declarations/actualinitialprimemellin-strip-norm-le.md) | 81 | `result-track:6b4bdf94c4ad824d247a9f085c0d67b6b18cd0dd679cd3c030f820f1c33bddfa` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

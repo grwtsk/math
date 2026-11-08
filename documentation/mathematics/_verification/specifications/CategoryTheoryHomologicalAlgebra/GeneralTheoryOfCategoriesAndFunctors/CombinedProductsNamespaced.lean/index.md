@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CombinedProductsNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CombinedProductsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CombinedProductsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CombinedProductsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [combPairHoms](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CombinedProductsNamespaced.lean/declarations/combpairhoms.md) | 45 | `declaration-track:2dfed42edd39fd2517a3c8a4bb7aef1cd674b50f2cf316ee7fd77ccc1f69f758` |
-| 2 | `def` | [combPairIsLimit](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CombinedProductsNamespaced.lean/declarations/combpairislimit.md) | 53 | `declaration-track:4ee79a301d64c7d3153fa35d5ad3ea4c0af6a0ac4c3127d899c8d6673567e9dc` |
-| 3 | `abbrev` | [combPairHoms](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CombinedProductsNamespaced.lean/declarations/combpairhoms-source-edition-2.md) | 80 | `declaration-track:ed48ef59d8983bf62ffdba4b635eab58a5ebef221150a2ed70e1b9c74800f62a` |
-| 4 | `def` | [combPairIsColimit](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CombinedProductsNamespaced.lean/declarations/combpairiscolimit.md) | 88 | `declaration-track:17cc58a2bc906b6729e9cc3e30d28a5bc44d1e823132a5b66eac52b99efe34f5` |
+| 1 | `abbrev` | [combPairHoms](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CombinedProductsNamespaced.lean/declarations/combpairhoms.md) | 45 | `declaration-track:2dfed42edd39fd2517a3c8a4bb7aef1cd674b50f2cf316ee7fd77ccc1f69f758` |
+| 2 | `def` | [combPairIsLimit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CombinedProductsNamespaced.lean/declarations/combpairislimit.md) | 53 | `declaration-track:4ee79a301d64c7d3153fa35d5ad3ea4c0af6a0ac4c3127d899c8d6673567e9dc` |
+| 3 | `abbrev` | [combPairHoms](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CombinedProductsNamespaced.lean/declarations/combpairhoms-source-edition-2.md) | 80 | `declaration-track:ed48ef59d8983bf62ffdba4b635eab58a5ebef221150a2ed70e1b9c74800f62a` |
+| 4 | `def` | [combPairIsColimit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CombinedProductsNamespaced.lean/declarations/combpairiscolimit.md) | 88 | `declaration-track:17cc58a2bc906b6729e9cc3e30d28a5bc44d1e823132a5b66eac52b99efe34f5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

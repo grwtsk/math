@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/QuantifierNominalEvidence.lean/index.md) · [Full source](../../../../Combinatorics/QuantifierNominalEvidence.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/QuantifierNominalEvidence.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/QuantifierNominalEvidence.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,20 +57,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [version](../../../../Combinatorics/QuantifierNominalEvidence.lean/declarations/version.md) | 5 | `declaration-track:d00f585050e845f5563b3456f804498eef3ac523b559f951e7dd9f3d7e94db81` |
-| 2 | `def` | [boolTheory](../../../../Combinatorics/QuantifierNominalEvidence.lean/declarations/booltheory.md) | 8 | `declaration-track:edf7795f2360e8b81b77f3503852a35f28b968873a5c097ac11f94ad1633b14b` |
-| 3 | `def` | [natTheory](../../../../Combinatorics/QuantifierNominalEvidence.lean/declarations/nattheory.md) | 18 | `declaration-track:a4a7e0b6d617139d5fedb111eb65817660ae7f00c7e672ded628bce455f86258` |
-| 4 | `def` | [foundation](../../../../Combinatorics/QuantifierNominalEvidence.lean/declarations/foundation.md) | 28 | `declaration-track:7f726a9319a7e0263afd6862d2d2c71e42e58e5e6319cf6e6d84feb06455c4f1` |
-| 5 | `def` | [neutral](../../../../Combinatorics/QuantifierNominalEvidence.lean/declarations/neutral.md) | 29 | `declaration-track:69e02ada01597ce35d476152c0e23d8013e80474f62c77b14846c9c8e780b4bb` |
-| 6 | `def` | [boolVersion](../../../../Combinatorics/QuantifierNominalEvidence.lean/declarations/boolversion.md) | 31 | `declaration-track:dee0901c1b1268c49fb59bc57157747b9ab63db939f45f141bdceba5e680a1a1` |
-| 7 | `def` | [natVersion](../../../../Combinatorics/QuantifierNominalEvidence.lean/declarations/natversion.md) | 44 | `declaration-track:da717eabd416e1dbf8c7029a0a8a53a64a13fadbb912bf2091f7de404263ca74` |
-| 8 | `def` | [boolAssumptions](../../../../Combinatorics/QuantifierNominalEvidence.lean/declarations/boolassumptions.md) | 57 | `declaration-track:355735f97f7e1deee1c37a2779b5ed4abba02a1b6847a1f8114efcf8f75bee4e` |
-| 9 | `def` | [natAssumptions](../../../../Combinatorics/QuantifierNominalEvidence.lean/declarations/natassumptions.md) | 58 | `declaration-track:d7633db39c59dc522e7fb647b86cb5671fd1718f65f37b270417a49364484bb1` |
-| 10 | `def` | [boolScope](../../../../Combinatorics/QuantifierNominalEvidence.lean/declarations/boolscope.md) | 59 | `declaration-track:174a4c6451df2512ba71d6208a7de52db7d770d35520152345c8176868c21296` |
-| 11 | `def` | [natScope](../../../../Combinatorics/QuantifierNominalEvidence.lean/declarations/natscope.md) | 60 | `declaration-track:b2f4def04ca90bab5dcb4335548a65edc412593dd57ec5ee1d7429aba457cd46` |
-| 12 | `def` | [finiteToInfiniteTranslation](../../../../Combinatorics/QuantifierNominalEvidence.lean/declarations/finitetoinfinitetranslation.md) | 67 | `declaration-track:8f32512962cbf9ccdd0b79eb5e0af4bc8902d697150c3f4278e9c29888a2a4d7` |
-| 13 | `example` | [(anonymous)](../../../../Combinatorics/QuantifierNominalEvidence.lean/declarations/example.md) | 105 | `declaration-track:820880f17709ce18ce1e6aae5220b4d9e19b91f08df74aa8409c2b0c9ca5faf2` |
-| 14 | `example` | [(anonymous)](../../../../Combinatorics/QuantifierNominalEvidence.lean/declarations/example-source-edition-2.md) | 106 | `declaration-track:83fd70f26f99e5a285f212e508affcffcc801ba69a9f624a834682adb6772420` |
+| 1 | `def` | [version](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/QuantifierNominalEvidence.lean/declarations/version.md) | 5 | `declaration-track:d00f585050e845f5563b3456f804498eef3ac523b559f951e7dd9f3d7e94db81` |
+| 2 | `def` | [boolTheory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/QuantifierNominalEvidence.lean/declarations/booltheory.md) | 8 | `declaration-track:edf7795f2360e8b81b77f3503852a35f28b968873a5c097ac11f94ad1633b14b` |
+| 3 | `def` | [natTheory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/QuantifierNominalEvidence.lean/declarations/nattheory.md) | 18 | `declaration-track:a4a7e0b6d617139d5fedb111eb65817660ae7f00c7e672ded628bce455f86258` |
+| 4 | `def` | [foundation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/QuantifierNominalEvidence.lean/declarations/foundation.md) | 28 | `declaration-track:7f726a9319a7e0263afd6862d2d2c71e42e58e5e6319cf6e6d84feb06455c4f1` |
+| 5 | `def` | [neutral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/QuantifierNominalEvidence.lean/declarations/neutral.md) | 29 | `declaration-track:69e02ada01597ce35d476152c0e23d8013e80474f62c77b14846c9c8e780b4bb` |
+| 6 | `def` | [boolVersion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/QuantifierNominalEvidence.lean/declarations/boolversion.md) | 31 | `declaration-track:dee0901c1b1268c49fb59bc57157747b9ab63db939f45f141bdceba5e680a1a1` |
+| 7 | `def` | [natVersion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/QuantifierNominalEvidence.lean/declarations/natversion.md) | 44 | `declaration-track:da717eabd416e1dbf8c7029a0a8a53a64a13fadbb912bf2091f7de404263ca74` |
+| 8 | `def` | [boolAssumptions](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/QuantifierNominalEvidence.lean/declarations/boolassumptions.md) | 57 | `declaration-track:355735f97f7e1deee1c37a2779b5ed4abba02a1b6847a1f8114efcf8f75bee4e` |
+| 9 | `def` | [natAssumptions](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/QuantifierNominalEvidence.lean/declarations/natassumptions.md) | 58 | `declaration-track:d7633db39c59dc522e7fb647b86cb5671fd1718f65f37b270417a49364484bb1` |
+| 10 | `def` | [boolScope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/QuantifierNominalEvidence.lean/declarations/boolscope.md) | 59 | `declaration-track:174a4c6451df2512ba71d6208a7de52db7d770d35520152345c8176868c21296` |
+| 11 | `def` | [natScope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/QuantifierNominalEvidence.lean/declarations/natscope.md) | 60 | `declaration-track:b2f4def04ca90bab5dcb4335548a65edc412593dd57ec5ee1d7429aba457cd46` |
+| 12 | `def` | [finiteToInfiniteTranslation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/QuantifierNominalEvidence.lean/declarations/finitetoinfinitetranslation.md) | 67 | `declaration-track:8f32512962cbf9ccdd0b79eb5e0af4bc8902d697150c3f4278e9c29888a2a4d7` |
+| 13 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/QuantifierNominalEvidence.lean/declarations/example.md) | 105 | `declaration-track:820880f17709ce18ce1e6aae5220b4d9e19b91f08df74aa8409c2b0c9ca5faf2` |
+| 14 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/QuantifierNominalEvidence.lean/declarations/example-source-edition-2.md) | 106 | `declaration-track:83fd70f26f99e5a285f212e508affcffcc801ba69a9f624a834682adb6772420` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

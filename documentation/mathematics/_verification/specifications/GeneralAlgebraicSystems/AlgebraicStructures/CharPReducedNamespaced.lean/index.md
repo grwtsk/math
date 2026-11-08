@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPReducedNamespaced.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPReducedNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPReducedNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPReducedNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [iterateFrobenius_inj](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPReducedNamespaced.lean/declarations/iteratefrobenius-inj.md) | 28 | `result-track:797586237bd8e647b9788c8c6f64e90f151ec58823d192b807b0b4def184a1d1` |
-| 2 | `theorem` | [frobenius_inj](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPReducedNamespaced.lean/declarations/frobenius-inj.md) | 33 | `result-track:149c2aee139aac745e97ae855408e4f810636ef0e798d1f986c17ab8d916f68e` |
-| 3 | `theorem` | [isSquare_of_charTwo'](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPReducedNamespaced.lean/declarations/issquare-of-chartwo.md) | 40 | `result-track:bf6df49d56e2382ad7e8588372734acb7ac2708fa9306073d2ac8ea81f8edf0f` |
-| 4 | `theorem` | [ExpChar.pow_prime_pow_mul_eq_one_iff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPReducedNamespaced.lean/declarations/expchar-pow-prime-pow-mul-eq-one-iff.md) | 50 | `result-track:1d24b364b580a51fd5dc53c36944d6a231aef9a341b2ec042bd3cba0dac99e10` |
+| 1 | `theorem` | [iterateFrobenius_inj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPReducedNamespaced.lean/declarations/iteratefrobenius-inj.md) | 28 | `result-track:797586237bd8e647b9788c8c6f64e90f151ec58823d192b807b0b4def184a1d1` |
+| 2 | `theorem` | [frobenius_inj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPReducedNamespaced.lean/declarations/frobenius-inj.md) | 33 | `result-track:149c2aee139aac745e97ae855408e4f810636ef0e798d1f986c17ab8d916f68e` |
+| 3 | `theorem` | [isSquare_of_charTwo'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPReducedNamespaced.lean/declarations/issquare-of-chartwo.md) | 40 | `result-track:bf6df49d56e2382ad7e8588372734acb7ac2708fa9306073d2ac8ea81f8edf0f` |
+| 4 | `theorem` | [ExpChar.pow_prime_pow_mul_eq_one_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPReducedNamespaced.lean/declarations/expchar-pow-prime-pow-mul-eq-one-iff.md) | 50 | `result-track:1d24b364b580a51fd5dc53c36944d6a231aef9a341b2ec042bd3cba0dac99e10` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

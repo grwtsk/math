@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/Attempt05NamespacedPhysicalDecayHasDerivAt.lean/index.md) · [Full source](../../../../MeasureAndIntegration/Attempt05NamespacedPhysicalDecayHasDerivAt.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt05NamespacedPhysicalDecayHasDerivAt.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt05NamespacedPhysicalDecayHasDerivAt.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [physical_decay_hasDerivAt](../../../../MeasureAndIntegration/Attempt05NamespacedPhysicalDecayHasDerivAt.lean/declarations/physical-decay-hasderivat.md) | 29 | `result-track:36071814ce5ec0a423db7a4cafa8fe36e4e48352164be3c6883ff05510258ab2` |
-| 2 | `theorem` | [physical_decay_integral](../../../../MeasureAndIntegration/Attempt05NamespacedPhysicalDecayHasDerivAt.lean/declarations/physical-decay-integral.md) | 45 | `result-track:de3cdfe6ba79c395789e7859e1a220dc7989b0fe8cf47fb923ef9ebf213853ca` |
-| 3 | `theorem` | [physical_decay_integral_le](../../../../MeasureAndIntegration/Attempt05NamespacedPhysicalDecayHasDerivAt.lean/declarations/physical-decay-integral-le.md) | 61 | `result-track:e9c42caffcffe496577723590c568442a5437005e107c94aa2b7915b52bc09d6` |
-| 4 | `def` | [actualPhysicalPeriodicPrefixRow](../../../../MeasureAndIntegration/Attempt05NamespacedPhysicalDecayHasDerivAt.lean/declarations/actualphysicalperiodicprefixrow.md) | 68 | `declaration-track:651171612fb5941929b62da36626670b75cdcb9a43839e217c1155f77db25f70` |
-| 5 | `theorem` | [actualPhysicalPeriodicPrefixRow_abs_le](../../../../MeasureAndIntegration/Attempt05NamespacedPhysicalDecayHasDerivAt.lean/declarations/actualphysicalperiodicprefixrow-abs-le.md) | 75 | `result-track:0b2078df7a860a325862dd74f2eca6f9206b59c9ba1a12ca931dd47c71253471` |
-| 6 | `theorem` | [actualPhysicalPeriodicPrefixRow_zero_right](../../../../MeasureAndIntegration/Attempt05NamespacedPhysicalDecayHasDerivAt.lean/declarations/actualphysicalperiodicprefixrow-zero-right.md) | 147 | `result-track:f3c091d8fc3fa9a89e56c0b43caa8cec0600015f8f46679f382c96447caca67c` |
+| 1 | `theorem` | [physical_decay_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt05NamespacedPhysicalDecayHasDerivAt.lean/declarations/physical-decay-hasderivat.md) | 29 | `result-track:36071814ce5ec0a423db7a4cafa8fe36e4e48352164be3c6883ff05510258ab2` |
+| 2 | `theorem` | [physical_decay_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt05NamespacedPhysicalDecayHasDerivAt.lean/declarations/physical-decay-integral.md) | 45 | `result-track:de3cdfe6ba79c395789e7859e1a220dc7989b0fe8cf47fb923ef9ebf213853ca` |
+| 3 | `theorem` | [physical_decay_integral_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt05NamespacedPhysicalDecayHasDerivAt.lean/declarations/physical-decay-integral-le.md) | 61 | `result-track:e9c42caffcffe496577723590c568442a5437005e107c94aa2b7915b52bc09d6` |
+| 4 | `def` | [actualPhysicalPeriodicPrefixRow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt05NamespacedPhysicalDecayHasDerivAt.lean/declarations/actualphysicalperiodicprefixrow.md) | 68 | `declaration-track:651171612fb5941929b62da36626670b75cdcb9a43839e217c1155f77db25f70` |
+| 5 | `theorem` | [actualPhysicalPeriodicPrefixRow_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt05NamespacedPhysicalDecayHasDerivAt.lean/declarations/actualphysicalperiodicprefixrow-abs-le.md) | 75 | `result-track:0b2078df7a860a325862dd74f2eca6f9206b59c9ba1a12ca931dd47c71253471` |
+| 6 | `theorem` | [actualPhysicalPeriodicPrefixRow_zero_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt05NamespacedPhysicalDecayHasDerivAt.lean/declarations/actualphysicalperiodicprefixrow-zero-right.md) | 147 | `result-track:f3c091d8fc3fa9a89e56c0b43caa8cec0600015f8f46679f382c96447caca67c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

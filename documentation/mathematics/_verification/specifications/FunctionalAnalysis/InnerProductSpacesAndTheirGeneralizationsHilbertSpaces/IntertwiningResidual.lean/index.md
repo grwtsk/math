@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/IntertwiningResidual.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/IntertwiningResidual.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/IntertwiningResidual.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/IntertwiningResidual.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `Mathlib` — import line 9; external provider; requires a separately pinned dependency.
-- [`GRWTSK.Analysis.InnerProductSpace.VariationalResidual`](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/VariationalResidual.lean/index.md) — import line 10; pinned internal source present.
+- [`GRWTSK.Analysis.InnerProductSpace.VariationalResidual`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/VariationalResidual.lean/index.md) — import line 10; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [DomainEmbedding](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/IntertwiningResidual.lean/declarations/domainembedding.md) | 24 | `declaration-track:84a4c406ec8a21bb57661737116552530180cde95f8b8bf47c6c42801b00ab22` |
-| 2 | `def` | [defect](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/IntertwiningResidual.lean/declarations/defect.md) | 31 | `declaration-track:074263c51e0c58a894e32f8292d41055382951dcb77fb0661d9d5da5bb549b64` |
-| 3 | `theorem` | [full_residual_identity](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/IntertwiningResidual.lean/declarations/full-residual-identity.md) | 33 | `result-track:ed61b2c35129ac8a991c6991788c0d0ca81fbdfcd2d9e77a9a82924eaa651af3` |
-| 4 | `theorem` | [full_residual_bound](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/IntertwiningResidual.lean/declarations/full-residual-bound.md) | 39 | `result-track:94078ef125c12946e2dedd9a27b11561b4561671e452ea29cd21a576de88efae` |
-| 5 | `theorem` | [reading_difference_identity](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/IntertwiningResidual.lean/declarations/reading-difference-identity.md) | 53 | `result-track:48e82647d079d1c2ababef448b517c31097b2442b40c0928a3b52bce1a9edba4` |
-| 6 | `theorem` | [reading_difference_bound](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/IntertwiningResidual.lean/declarations/reading-difference-bound.md) | 62 | `result-track:691771b9de976067dbbe4eb5767b837eb2abd0416e08feb4305c36066abbfa34` |
-| 7 | `theorem` | [full_operator_enclosure](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/IntertwiningResidual.lean/declarations/full-operator-enclosure.md) | 91 | `result-track:bb2046b7286dd4dac9adbc9eb3e5db80cf4e73e28da56a67cfe864cfcc109e6c` |
+| 1 | `structure` | [DomainEmbedding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/IntertwiningResidual.lean/declarations/domainembedding.md) | 24 | `declaration-track:84a4c406ec8a21bb57661737116552530180cde95f8b8bf47c6c42801b00ab22` |
+| 2 | `def` | [defect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/IntertwiningResidual.lean/declarations/defect.md) | 31 | `declaration-track:074263c51e0c58a894e32f8292d41055382951dcb77fb0661d9d5da5bb549b64` |
+| 3 | `theorem` | [full_residual_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/IntertwiningResidual.lean/declarations/full-residual-identity.md) | 33 | `result-track:ed61b2c35129ac8a991c6991788c0d0ca81fbdfcd2d9e77a9a82924eaa651af3` |
+| 4 | `theorem` | [full_residual_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/IntertwiningResidual.lean/declarations/full-residual-bound.md) | 39 | `result-track:94078ef125c12946e2dedd9a27b11561b4561671e452ea29cd21a576de88efae` |
+| 5 | `theorem` | [reading_difference_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/IntertwiningResidual.lean/declarations/reading-difference-identity.md) | 53 | `result-track:48e82647d079d1c2ababef448b517c31097b2442b40c0928a3b52bce1a9edba4` |
+| 6 | `theorem` | [reading_difference_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/IntertwiningResidual.lean/declarations/reading-difference-bound.md) | 62 | `result-track:691771b9de976067dbbe4eb5767b837eb2abd0416e08feb4305c36066abbfa34` |
+| 7 | `theorem` | [full_operator_enclosure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/IntertwiningResidual.lean/declarations/full-operator-enclosure.md) | 91 | `result-track:bb2046b7286dd4dac9adbc9eb3e5db80cf4e73e28da56a67cfe864cfcc109e6c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

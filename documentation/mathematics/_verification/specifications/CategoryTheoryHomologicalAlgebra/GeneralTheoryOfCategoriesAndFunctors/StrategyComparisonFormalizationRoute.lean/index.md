@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StrategyComparisonFormalizationRoute.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StrategyComparisonFormalizationRoute.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StrategyComparisonFormalizationRoute.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StrategyComparisonFormalizationRoute.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [FormalizationRoute](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StrategyComparisonFormalizationRoute.lean/declarations/formalizationroute.md) | 18 | `declaration-track:0c3cd71ed1caf3c037db8ce0ab6790c3eefcb6f8edbb26476fc06570e24bd208` |
-| 2 | `structure` | [RouteAssessment](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StrategyComparisonFormalizationRoute.lean/declarations/routeassessment.md) | 24 | `declaration-track:ae9b09e49886b5ce9312700e0f100e2576fdb268ac57714cddfa5b92d3cfa25f` |
-| 3 | `def` | [recommendedRoute](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StrategyComparisonFormalizationRoute.lean/declarations/recommendedroute.md) | 30 | `declaration-track:ed15ba16f81305309507554ed800e602cd1ebef3bf405905814791bb38f50ddd` |
-| 4 | `theorem` | [recommended_route_is_adelic](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StrategyComparisonFormalizationRoute.lean/declarations/recommended-route-is-adelic.md) | 33 | `result-track:9168b7be8db0480f707c63a6d59672610a4bb5514cf8074ad8af7b03b231d05a` |
+| 1 | `inductive` | [FormalizationRoute](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StrategyComparisonFormalizationRoute.lean/declarations/formalizationroute.md) | 18 | `declaration-track:0c3cd71ed1caf3c037db8ce0ab6790c3eefcb6f8edbb26476fc06570e24bd208` |
+| 2 | `structure` | [RouteAssessment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StrategyComparisonFormalizationRoute.lean/declarations/routeassessment.md) | 24 | `declaration-track:ae9b09e49886b5ce9312700e0f100e2576fdb268ac57714cddfa5b92d3cfa25f` |
+| 3 | `def` | [recommendedRoute](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StrategyComparisonFormalizationRoute.lean/declarations/recommendedroute.md) | 30 | `declaration-track:ed15ba16f81305309507554ed800e602cd1ebef3bf405905814791bb38f50ddd` |
+| 4 | `theorem` | [recommended_route_is_adelic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StrategyComparisonFormalizationRoute.lean/declarations/recommended-route-is-adelic.md) | 33 | `result-track:9168b7be8db0480f707c63a6d59672610a4bb5514cf8074ad8af7b03b231d05a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

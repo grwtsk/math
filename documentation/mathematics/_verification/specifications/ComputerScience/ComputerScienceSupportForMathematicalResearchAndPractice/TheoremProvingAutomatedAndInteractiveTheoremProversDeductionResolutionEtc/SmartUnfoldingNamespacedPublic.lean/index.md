@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SmartUnfoldingNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SmartUnfoldingNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SmartUnfoldingNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SmartUnfoldingNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [addSmartUnfoldingDefAux](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SmartUnfoldingNamespacedPublic.lean/declarations/addsmartunfoldingdefaux.md) | 25 | `declaration-track:a213ea80db062bfbe1e3c16103295c187e6329aa07c6c8ed6d7edbff8be0228b` |
-| 2 | `def` | [addSmartUnfoldingDef](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SmartUnfoldingNamespacedPublic.lean/declarations/addsmartunfoldingdef.md) | 74 | `declaration-track:77447f40d2ff31ed479440cb3a3532ff2e7bfdc65a4ab695b8f3abb29ff29c00` |
+| 1 | `def` | [addSmartUnfoldingDefAux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SmartUnfoldingNamespacedPublic.lean/declarations/addsmartunfoldingdefaux.md) | 25 | `declaration-track:a213ea80db062bfbe1e3c16103295c187e6329aa07c6c8ed6d7edbff8be0228b` |
+| 2 | `def` | [addSmartUnfoldingDef](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SmartUnfoldingNamespacedPublic.lean/declarations/addsmartunfoldingdef.md) | 74 | `declaration-track:77447f40d2ff31ed479440cb3a3532ff2e7bfdc65a4ab695b8f3abb29ff29c00` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/LeastGreatest.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/LeastGreatest.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/LeastGreatest.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/LeastGreatest.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,14 +60,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [leastOfBdd](../../../../../NumberTheory/ElementaryNumberTheory/LeastGreatest.lean/declarations/leastofbdd.md) | 46 | `declaration-track:c8bab0be347f5ab718706736b6ee060a18c248f18414ced8305e0e8942e9871c` |
-| 2 | `lemma` | [isLeast_coe_leastOfBdd](../../../../../NumberTheory/ElementaryNumberTheory/LeastGreatest.lean/declarations/isleast-coe-leastofbdd.md) | 58 | `result-track:b0a7d58b2900669735f057d5fc87396a35e74d5b2f393c2282f22271290a305b` |
-| 3 | `theorem` | [exists_least_of_bdd](../../../../../NumberTheory/ElementaryNumberTheory/LeastGreatest.lean/declarations/exists-least-of-bdd.md) | 66 | `result-track:c97e372d3c25d1fef65fe989cf398c20a851f11ef0b92983d402874aec133562` |
-| 4 | `theorem` | [coe_leastOfBdd_eq](../../../../../NumberTheory/ElementaryNumberTheory/LeastGreatest.lean/declarations/coe-leastofbdd-eq.md) | 75 | `result-track:8759533d1a0c94aaf1d306daa71802215546dfeba178f3d5a2dc43dfc4e8f227` |
-| 5 | `def` | [greatestOfBdd](../../../../../NumberTheory/ElementaryNumberTheory/LeastGreatest.lean/declarations/greatestofbdd.md) | 85 | `declaration-track:accc68068a2a5eb4da2080933cdf315eab918372d151d0ea7049a4ef8304629b` |
-| 6 | `lemma` | [isGreatest_coe_greatestOfBdd](../../../../../NumberTheory/ElementaryNumberTheory/LeastGreatest.lean/declarations/isgreatest-coe-greatestofbdd.md) | 96 | `result-track:6f44861f7f52aec66d83375d68327818df5b6d1408c461ad7798a625a0d690c3` |
-| 7 | `theorem` | [exists_greatest_of_bdd](../../../../../NumberTheory/ElementaryNumberTheory/LeastGreatest.lean/declarations/exists-greatest-of-bdd.md) | 105 | `result-track:6ffd5b83ecf1e4d29bee050eeb1c7b5352da145cf5eda7a68ddae704b3cecd78` |
-| 8 | `theorem` | [coe_greatestOfBdd_eq](../../../../../NumberTheory/ElementaryNumberTheory/LeastGreatest.lean/declarations/coe-greatestofbdd-eq.md) | 114 | `result-track:f8ea761a5c68fdbd2d539d04740b16ee59e99089468c7b5d4b7ebb48fa08eb4d` |
+| 1 | `def` | [leastOfBdd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/LeastGreatest.lean/declarations/leastofbdd.md) | 46 | `declaration-track:c8bab0be347f5ab718706736b6ee060a18c248f18414ced8305e0e8942e9871c` |
+| 2 | `lemma` | [isLeast_coe_leastOfBdd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/LeastGreatest.lean/declarations/isleast-coe-leastofbdd.md) | 58 | `result-track:b0a7d58b2900669735f057d5fc87396a35e74d5b2f393c2282f22271290a305b` |
+| 3 | `theorem` | [exists_least_of_bdd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/LeastGreatest.lean/declarations/exists-least-of-bdd.md) | 66 | `result-track:c97e372d3c25d1fef65fe989cf398c20a851f11ef0b92983d402874aec133562` |
+| 4 | `theorem` | [coe_leastOfBdd_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/LeastGreatest.lean/declarations/coe-leastofbdd-eq.md) | 75 | `result-track:8759533d1a0c94aaf1d306daa71802215546dfeba178f3d5a2dc43dfc4e8f227` |
+| 5 | `def` | [greatestOfBdd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/LeastGreatest.lean/declarations/greatestofbdd.md) | 85 | `declaration-track:accc68068a2a5eb4da2080933cdf315eab918372d151d0ea7049a4ef8304629b` |
+| 6 | `lemma` | [isGreatest_coe_greatestOfBdd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/LeastGreatest.lean/declarations/isgreatest-coe-greatestofbdd.md) | 96 | `result-track:6f44861f7f52aec66d83375d68327818df5b6d1408c461ad7798a625a0d690c3` |
+| 7 | `theorem` | [exists_greatest_of_bdd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/LeastGreatest.lean/declarations/exists-greatest-of-bdd.md) | 105 | `result-track:6ffd5b83ecf1e4d29bee050eeb1c7b5352da145cf5eda7a68ddae704b3cecd78` |
+| 8 | `theorem` | [coe_greatestOfBdd_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/LeastGreatest.lean/declarations/coe-greatestofbdd-eq.md) | 114 | `result-track:f8ea761a5c68fdbd2d539d04740b16ee59e99089468c7b5d4b7ebb48fa08eb4d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

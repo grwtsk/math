@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PerfectFamilyTheoremTargetNamespacedArithmeticModuliStage.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PerfectFamilyTheoremTargetNamespacedArithmeticModuliStage.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PerfectFamilyTheoremTargetNamespacedArithmeticModuliStage.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PerfectFamilyTheoremTargetNamespacedArithmeticModuliStage.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ArithmeticModuliStage](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PerfectFamilyTheoremTargetNamespacedArithmeticModuliStage.lean/declarations/arithmeticmodulistage.md) | 28 | `declaration-track:860e69b8d8177d5cd1f5b1441d0cdf764c59e0df8d8a3cc95b6a2bc4aaba87f3` |
-| 2 | `structure` | [PerfectSectionComplexFamily](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PerfectFamilyTheoremTargetNamespacedArithmeticModuliStage.lean/declarations/perfectsectioncomplexfamily.md) | 34 | `declaration-track:1bd12f5ddf4d3bf4c4d17cd6b28f4308d1d1d1abd5c6c32737bf02b4bff367a9` |
-| 3 | `theorem` | [perfect_family_base_change_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PerfectFamilyTheoremTargetNamespacedArithmeticModuliStage.lean/declarations/perfect-family-base-change-if-supplied.md) | 44 | `result-track:173fa948a23f4f549c74e661e61994d9f517b0eb594365a1cac98c631c94a098` |
-| 4 | `theorem` | [perfect_family_perfect_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PerfectFamilyTheoremTargetNamespacedArithmeticModuliStage.lean/declarations/perfect-family-perfect-if-supplied.md) | 49 | `result-track:c2be5642d8a902e2ce33060716cea0c3631ee25dd123412e4430482ebb687fe7` |
+| 1 | `structure` | [ArithmeticModuliStage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PerfectFamilyTheoremTargetNamespacedArithmeticModuliStage.lean/declarations/arithmeticmodulistage.md) | 28 | `declaration-track:860e69b8d8177d5cd1f5b1441d0cdf764c59e0df8d8a3cc95b6a2bc4aaba87f3` |
+| 2 | `structure` | [PerfectSectionComplexFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PerfectFamilyTheoremTargetNamespacedArithmeticModuliStage.lean/declarations/perfectsectioncomplexfamily.md) | 34 | `declaration-track:1bd12f5ddf4d3bf4c4d17cd6b28f4308d1d1d1abd5c6c32737bf02b4bff367a9` |
+| 3 | `theorem` | [perfect_family_base_change_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PerfectFamilyTheoremTargetNamespacedArithmeticModuliStage.lean/declarations/perfect-family-base-change-if-supplied.md) | 44 | `result-track:173fa948a23f4f549c74e661e61994d9f517b0eb594365a1cac98c631c94a098` |
+| 4 | `theorem` | [perfect_family_perfect_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PerfectFamilyTheoremTargetNamespacedArithmeticModuliStage.lean/declarations/perfect-family-perfect-if-supplied.md) | 49 | `result-track:c2be5642d8a902e2ce33060716cea0c3631ee25dd123412e4430482ebb687fe7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

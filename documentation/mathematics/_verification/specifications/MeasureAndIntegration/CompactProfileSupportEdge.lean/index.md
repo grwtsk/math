@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CompactProfileSupportEdge.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CompactProfileSupportEdge.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactProfileSupportEdge.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactProfileSupportEdge.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,9 +46,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Convolution.CompactProfileFifthDerivativeObstruction`](../../../../GeneralTopology/CompactProfileFifthDerivativeObstruction.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.Calculus.SupportEdgeDifferentiability`](../../../../RealFunctions/DifferentialCalculusSupportEdgeDifferentiability.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.Analysis.Convolution.CompactSupportContact`](../../../../MeasureAndIntegration/CompactSupportContact.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.Analysis.Convolution.CompactProfileFifthDerivativeObstruction`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompactProfileFifthDerivativeObstruction.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Calculus.SupportEdgeDifferentiability`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DifferentialCalculusSupportEdgeDifferentiability.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Convolution.CompactSupportContact`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactSupportContact.lean/index.md) — import line 6; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [normalized_second_interior_even](../../../../MeasureAndIntegration/CompactProfileSupportEdge.lean/declarations/normalized-second-interior-even.md) | 35 | `result-track:0f179d2cebdfe59e130f2ef52816ee02c8d47320fb48e06aeadd6e48a99c8fe7` |
-| 2 | `theorem` | [normalized_second_interior_left_pos](../../../../MeasureAndIntegration/CompactProfileSupportEdge.lean/declarations/normalized-second-interior-left-pos.md) | 42 | `result-track:4ce25c4be43a04808685cd4755f66a870a5b7e948bee3379b26799cb3b44b1e7` |
-| 3 | `theorem` | [actual_second_autocorrelation_zero_ge_two_scale](../../../../MeasureAndIntegration/CompactProfileSupportEdge.lean/declarations/actual-second-autocorrelation-zero-ge-two-scale.md) | 47 | `result-track:39397a4f53c2796dc3c5d35a635b3c9c781327c99aaf245f7e538a591d5f8074` |
-| 4 | `theorem` | [actual_second_autocorrelation_left_contact](../../../../MeasureAndIntegration/CompactProfileSupportEdge.lean/declarations/actual-second-autocorrelation-left-contact.md) | 54 | `result-track:ee09cbe90c1c4b573eab2ed7f90b483785a26b11876df32ee4d60d3c7c65d7c0` |
-| 5 | `theorem` | [actual_second_autocorrelation_not_differentiable_at_two_scale](../../../../MeasureAndIntegration/CompactProfileSupportEdge.lean/declarations/actual-second-autocorrelation-not-differentiable-at-two-scale.md) | 72 | `result-track:7d1eac85b4942c127db117fd17ca7101c775f7442831429ec4ffdcaab42008f9` |
-| 6 | `theorem` | [fourth_correlation_not_differentiable_at_two_scale](../../../../MeasureAndIntegration/CompactProfileSupportEdge.lean/declarations/fourth-correlation-not-differentiable-at-two-scale.md) | 82 | `result-track:8d2471c83018514d902647b05caadc9fcf8fcf11a5a9e10491eb87044bbac5bc` |
+| 1 | `theorem` | [normalized_second_interior_even](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactProfileSupportEdge.lean/declarations/normalized-second-interior-even.md) | 35 | `result-track:0f179d2cebdfe59e130f2ef52816ee02c8d47320fb48e06aeadd6e48a99c8fe7` |
+| 2 | `theorem` | [normalized_second_interior_left_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactProfileSupportEdge.lean/declarations/normalized-second-interior-left-pos.md) | 42 | `result-track:4ce25c4be43a04808685cd4755f66a870a5b7e948bee3379b26799cb3b44b1e7` |
+| 3 | `theorem` | [actual_second_autocorrelation_zero_ge_two_scale](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactProfileSupportEdge.lean/declarations/actual-second-autocorrelation-zero-ge-two-scale.md) | 47 | `result-track:39397a4f53c2796dc3c5d35a635b3c9c781327c99aaf245f7e538a591d5f8074` |
+| 4 | `theorem` | [actual_second_autocorrelation_left_contact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactProfileSupportEdge.lean/declarations/actual-second-autocorrelation-left-contact.md) | 54 | `result-track:ee09cbe90c1c4b573eab2ed7f90b483785a26b11876df32ee4d60d3c7c65d7c0` |
+| 5 | `theorem` | [actual_second_autocorrelation_not_differentiable_at_two_scale](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactProfileSupportEdge.lean/declarations/actual-second-autocorrelation-not-differentiable-at-two-scale.md) | 72 | `result-track:7d1eac85b4942c127db117fd17ca7101c775f7442831429ec4ffdcaab42008f9` |
+| 6 | `theorem` | [fourth_correlation_not_differentiable_at_two_scale](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactProfileSupportEdge.lean/declarations/fourth-correlation-not-differentiable-at-two-scale.md) | 82 | `result-track:8d2471c83018514d902647b05caadc9fcf8fcf11a5a9e10491eb87044bbac5bc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

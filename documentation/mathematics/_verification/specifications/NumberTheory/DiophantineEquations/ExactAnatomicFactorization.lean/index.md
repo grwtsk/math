@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/DiophantineEquations/ExactAnatomicFactorization.lean/index.md) · [Full source](../../../../../NumberTheory/DiophantineEquations/ExactAnatomicFactorization.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ExactAnatomicFactorization.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ExactAnatomicFactorization.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.Radical`](../../../../../NumberTheory/DiophantineEquations/Radical.lean/index.md) — import line 17; pinned internal source present.
+- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.Radical`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/Radical.lean/index.md) — import line 17; pinned internal source present.
 - `Mathlib.Data.Nat.Factorization.Basic` — import line 18; external provider; requires a separately pinned dependency.
 - `Mathlib.Data.Nat.GCD.BigOperators` — import line 19; external provider; requires a separately pinned dependency.
 - `Mathlib.Data.Nat.Squarefree` — import line 20; external provider; requires a separately pinned dependency.
@@ -61,19 +61,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [multiplicityLayer](../../../../../NumberTheory/DiophantineEquations/ExactAnatomicFactorization.lean/declarations/multiplicitylayer.md) | 35 | `declaration-track:94a7b0316689e15f7cac42cd0880c8c186a433b2d330cad03538e86bff22b697` |
-| 2 | `theorem` | [multiplicityLayer_zero](../../../../../NumberTheory/DiophantineEquations/ExactAnatomicFactorization.lean/declarations/multiplicitylayer-zero.md) | 39 | `result-track:40fa6c3dfd5b983d05f2415c85248a5989b4410e3f68b2659fed38882f89720f` |
-| 3 | `theorem` | [multiplicityLayer_pos](../../../../../NumberTheory/DiophantineEquations/ExactAnatomicFactorization.lean/declarations/multiplicitylayer-pos.md) | 42 | `result-track:5a97d5f7acf78681a8153f9d759960458501d0365455d91502351b2fcce33151` |
-| 4 | `theorem` | [prod_multiplicityLayer_pow_eq_self_of_cover](../../../../../NumberTheory/DiophantineEquations/ExactAnatomicFactorization.lean/declarations/prod-multiplicitylayer-pow-eq-self-of-cover.md) | 48 | `result-track:7dde55537ee0e52d9a6ff5977d47ac8a4b90707a5d6691760811e9a3cad109ff` |
-| 5 | `theorem` | [prod_multiplicityLayer_pow_eq_self](../../../../../NumberTheory/DiophantineEquations/ExactAnatomicFactorization.lean/declarations/prod-multiplicitylayer-pow-eq-self.md) | 71 | `result-track:b2e1a4e72436f5d1635cd2811776d1f83754a36757a88fa49f89afd660b51c7a` |
-| 6 | `theorem` | [prime_dvd_multiplicityLayer_imp](../../../../../NumberTheory/DiophantineEquations/ExactAnatomicFactorization.lean/declarations/prime-dvd-multiplicitylayer-imp.md) | 80 | `result-track:1a32cb11a29d5c8c48a71eb07fbe494a1abbcb1c46bdfff53c49cccdf0f0665b` |
-| 7 | `theorem` | [multiplicityLayer_coprime](../../../../../NumberTheory/DiophantineEquations/ExactAnatomicFactorization.lean/declarations/multiplicitylayer-coprime.md) | 91 | `result-track:9f62b972a12449c509cdc8aefbd1ffe483a9066dabde8907d42da31b26c873f5` |
-| 8 | `theorem` | [squarefree_finset_prod](../../../../../NumberTheory/DiophantineEquations/ExactAnatomicFactorization.lean/declarations/squarefree-finset-prod.md) | 99 | `result-track:3d4d28a3694143bc704e9b9f2b1bb26a4671140a67c2560cc1c98354ee385690` |
-| 9 | `theorem` | [multiplicityLayer_squarefree](../../../../../NumberTheory/DiophantineEquations/ExactAnatomicFactorization.lean/declarations/multiplicitylayer-squarefree.md) | 117 | `result-track:682b38b36111a9665e743e63a64a27e5967a6122c8b32529c6e8c2a7edf13db0` |
-| 10 | `theorem` | [prod_multiplicityLayer_eq_radical](../../../../../NumberTheory/DiophantineEquations/ExactAnatomicFactorization.lean/declarations/prod-multiplicitylayer-eq-radical.md) | 127 | `result-track:6905cffba412d480d43487be3887ad15f43ecd402569830b048fc242426b322d` |
-| 11 | `structure` | [Data](../../../../../NumberTheory/DiophantineEquations/ExactAnatomicFactorization.lean/declarations/data.md) | 150 | `declaration-track:d8daae97a76a3210b50ac90fea7d78c6d3843d412a8727427382eb1b90877eb9` |
-| 12 | `def` | [canonical](../../../../../NumberTheory/DiophantineEquations/ExactAnatomicFactorization.lean/declarations/canonical.md) | 158 | `declaration-track:cb4747841aaca088fd61cb601ba5b0eab1ddb9ec402b0bfbe557c5284c42b7e0` |
-| 13 | `theorem` | [canonical_layer](../../../../../NumberTheory/DiophantineEquations/ExactAnatomicFactorization.lean/declarations/canonical-layer.md) | 166 | `result-track:7ea59aecec3a49f1cf5a45e03e989aff0ca93a5419f9a9301652e6043df4a8a5` |
+| 1 | `def` | [multiplicityLayer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ExactAnatomicFactorization.lean/declarations/multiplicitylayer.md) | 35 | `declaration-track:94a7b0316689e15f7cac42cd0880c8c186a433b2d330cad03538e86bff22b697` |
+| 2 | `theorem` | [multiplicityLayer_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ExactAnatomicFactorization.lean/declarations/multiplicitylayer-zero.md) | 39 | `result-track:40fa6c3dfd5b983d05f2415c85248a5989b4410e3f68b2659fed38882f89720f` |
+| 3 | `theorem` | [multiplicityLayer_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ExactAnatomicFactorization.lean/declarations/multiplicitylayer-pos.md) | 42 | `result-track:5a97d5f7acf78681a8153f9d759960458501d0365455d91502351b2fcce33151` |
+| 4 | `theorem` | [prod_multiplicityLayer_pow_eq_self_of_cover](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ExactAnatomicFactorization.lean/declarations/prod-multiplicitylayer-pow-eq-self-of-cover.md) | 48 | `result-track:7dde55537ee0e52d9a6ff5977d47ac8a4b90707a5d6691760811e9a3cad109ff` |
+| 5 | `theorem` | [prod_multiplicityLayer_pow_eq_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ExactAnatomicFactorization.lean/declarations/prod-multiplicitylayer-pow-eq-self.md) | 71 | `result-track:b2e1a4e72436f5d1635cd2811776d1f83754a36757a88fa49f89afd660b51c7a` |
+| 6 | `theorem` | [prime_dvd_multiplicityLayer_imp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ExactAnatomicFactorization.lean/declarations/prime-dvd-multiplicitylayer-imp.md) | 80 | `result-track:1a32cb11a29d5c8c48a71eb07fbe494a1abbcb1c46bdfff53c49cccdf0f0665b` |
+| 7 | `theorem` | [multiplicityLayer_coprime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ExactAnatomicFactorization.lean/declarations/multiplicitylayer-coprime.md) | 91 | `result-track:9f62b972a12449c509cdc8aefbd1ffe483a9066dabde8907d42da31b26c873f5` |
+| 8 | `theorem` | [squarefree_finset_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ExactAnatomicFactorization.lean/declarations/squarefree-finset-prod.md) | 99 | `result-track:3d4d28a3694143bc704e9b9f2b1bb26a4671140a67c2560cc1c98354ee385690` |
+| 9 | `theorem` | [multiplicityLayer_squarefree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ExactAnatomicFactorization.lean/declarations/multiplicitylayer-squarefree.md) | 117 | `result-track:682b38b36111a9665e743e63a64a27e5967a6122c8b32529c6e8c2a7edf13db0` |
+| 10 | `theorem` | [prod_multiplicityLayer_eq_radical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ExactAnatomicFactorization.lean/declarations/prod-multiplicitylayer-eq-radical.md) | 127 | `result-track:6905cffba412d480d43487be3887ad15f43ecd402569830b048fc242426b322d` |
+| 11 | `structure` | [Data](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ExactAnatomicFactorization.lean/declarations/data.md) | 150 | `declaration-track:d8daae97a76a3210b50ac90fea7d78c6d3843d412a8727427382eb1b90877eb9` |
+| 12 | `def` | [canonical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ExactAnatomicFactorization.lean/declarations/canonical.md) | 158 | `declaration-track:cb4747841aaca088fd61cb601ba5b0eab1ddb9ec402b0bfbe557c5284c42b7e0` |
+| 13 | `theorem` | [canonical_layer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ExactAnatomicFactorization.lean/declarations/canonical-layer.md) | 166 | `result-track:7ea59aecec3a49f1cf5a45e03e989aff0ca93a5419f9a9301652e6043df4a8a5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

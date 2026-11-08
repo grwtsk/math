@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/EquationSystem.lean/index.md) · [Full source](../../../../CommutativeAlgebra/EquationSystem.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EquationSystem.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EquationSystem.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [EquationSystem](../../../../CommutativeAlgebra/EquationSystem.lean/declarations/equationsystem.md) | 17 | `declaration-track:5a857d432195ef9c339a9bd8d9e61aad09cf549a262ff61119aa2c96148720f5` |
-| 2 | `def` | [EquationSystem.IsSolution](../../../../CommutativeAlgebra/EquationSystem.lean/declarations/equationsystem-issolution.md) | 22 | `declaration-track:e2d8febf5c4fa7601186295259a4ae99f46ee9da03cc10c140810f975518cb22` |
-| 3 | `abbrev` | [EquationSystem.SolutionSpace](../../../../CommutativeAlgebra/EquationSystem.lean/declarations/equationsystem-solutionspace.md) | 30 | `declaration-track:603ddc8c6872ab0b7ac72827a3852a0995c4eecd4b94fa0bb3ebb50e92ffc10e` |
-| 4 | `def` | [EquationSystem.SolutionSpace.coordinates](../../../../CommutativeAlgebra/EquationSystem.lean/declarations/equationsystem-solutionspace-coordinates.md) | 36 | `declaration-track:3a182e6eb4835df6a7108e73652b746875a66209c2b25c649cf1c83fe3ce543b` |
-| 5 | `def` | [EquationSystem.VanishesOn](../../../../CommutativeAlgebra/EquationSystem.lean/declarations/equationsystem-vanisheson.md) | 43 | `declaration-track:fa431548b4a0f3c82a81f7c4f28510d22ba2e717446915107ea9311ce30d32fa` |
-| 6 | `theorem` | [EquationSystem.SolutionSpace.ext](../../../../CommutativeAlgebra/EquationSystem.lean/declarations/equationsystem-solutionspace-ext.md) | 51 | `result-track:69dcfa2a3a54704488744c749c7434f840fb7d59163389327f4351c932a7b195` |
-| 7 | `structure` | [EquationFamily](../../../../CommutativeAlgebra/EquationSystem.lean/declarations/equationfamily.md) | 67 | `declaration-track:5598f5569f7dd5cd78569e928a94ce9559973d97b9936b402e8d2b95a7e6c368` |
-| 8 | `def` | [EquationFamily.transportSolution](../../../../CommutativeAlgebra/EquationSystem.lean/declarations/equationfamily-transportsolution.md) | 79 | `declaration-track:0b13f98e7551887702a2297b92889e8a8a4742657cf507db578ccd6c52fdedd6` |
+| 1 | `structure` | [EquationSystem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EquationSystem.lean/declarations/equationsystem.md) | 17 | `declaration-track:5a857d432195ef9c339a9bd8d9e61aad09cf549a262ff61119aa2c96148720f5` |
+| 2 | `def` | [EquationSystem.IsSolution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EquationSystem.lean/declarations/equationsystem-issolution.md) | 22 | `declaration-track:e2d8febf5c4fa7601186295259a4ae99f46ee9da03cc10c140810f975518cb22` |
+| 3 | `abbrev` | [EquationSystem.SolutionSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EquationSystem.lean/declarations/equationsystem-solutionspace.md) | 30 | `declaration-track:603ddc8c6872ab0b7ac72827a3852a0995c4eecd4b94fa0bb3ebb50e92ffc10e` |
+| 4 | `def` | [EquationSystem.SolutionSpace.coordinates](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EquationSystem.lean/declarations/equationsystem-solutionspace-coordinates.md) | 36 | `declaration-track:3a182e6eb4835df6a7108e73652b746875a66209c2b25c649cf1c83fe3ce543b` |
+| 5 | `def` | [EquationSystem.VanishesOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EquationSystem.lean/declarations/equationsystem-vanisheson.md) | 43 | `declaration-track:fa431548b4a0f3c82a81f7c4f28510d22ba2e717446915107ea9311ce30d32fa` |
+| 6 | `theorem` | [EquationSystem.SolutionSpace.ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EquationSystem.lean/declarations/equationsystem-solutionspace-ext.md) | 51 | `result-track:69dcfa2a3a54704488744c749c7434f840fb7d59163389327f4351c932a7b195` |
+| 7 | `structure` | [EquationFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EquationSystem.lean/declarations/equationfamily.md) | 67 | `declaration-track:5598f5569f7dd5cd78569e928a94ce9559973d97b9936b402e8d2b95a7e6c368` |
+| 8 | `def` | [EquationFamily.transportSolution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EquationSystem.lean/declarations/equationfamily-transportsolution.md) | 79 | `declaration-track:0b13f98e7551887702a2297b92889e8a8a4742657cf507db578ccd6c52fdedd6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/DirichletPolynomialProduct.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/DirichletPolynomialProduct.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/DirichletPolynomialProduct.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/DirichletPolynomialProduct.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,11 +61,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [dirichletPolynomialComplex](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/DirichletPolynomialProduct.lean/declarations/dirichletpolynomialcomplex.md) | 20 | `declaration-track:8c6837786ecadd8e576e873a46783dd8f3c4cebb0543d5fe694381a646fb27dc` |
-| 2 | `theorem` | [dirichletPolynomialComplex_zero_coeff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/DirichletPolynomialProduct.lean/declarations/dirichletpolynomialcomplex-zero-coeff.md) | 27 | `result-track:a4294245cc474a5b868f81c909acb2a573c498f08cbea60746880c6881c4c186` |
-| 3 | `theorem` | [dirichletPolynomialComplex_add](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/DirichletPolynomialProduct.lean/declarations/dirichletpolynomialcomplex-add.md) | 33 | `result-track:b22aa25571d63492bafdd8ddca5550984d8dbb16ebfe0ee3da98531992b40d15` |
-| 4 | `def` | [boundedDirichletConv](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/DirichletPolynomialProduct.lean/declarations/boundeddirichletconv.md) | 42 | `declaration-track:6cc89d2add88da556da19764aad67c22e2ea33536fcf5bca34098c61f475f203` |
-| 5 | `theorem` | [finite_dirichlet_cauchy_product_unweighted](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/DirichletPolynomialProduct.lean/declarations/finite-dirichlet-cauchy-product-unweighted.md) | 50 | `result-track:a60106ed1d40144d9e768cacefc12d628303360eddd347de95191ace15bc0fcb` |
+| 1 | `def` | [dirichletPolynomialComplex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/DirichletPolynomialProduct.lean/declarations/dirichletpolynomialcomplex.md) | 20 | `declaration-track:8c6837786ecadd8e576e873a46783dd8f3c4cebb0543d5fe694381a646fb27dc` |
+| 2 | `theorem` | [dirichletPolynomialComplex_zero_coeff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/DirichletPolynomialProduct.lean/declarations/dirichletpolynomialcomplex-zero-coeff.md) | 27 | `result-track:a4294245cc474a5b868f81c909acb2a573c498f08cbea60746880c6881c4c186` |
+| 3 | `theorem` | [dirichletPolynomialComplex_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/DirichletPolynomialProduct.lean/declarations/dirichletpolynomialcomplex-add.md) | 33 | `result-track:b22aa25571d63492bafdd8ddca5550984d8dbb16ebfe0ee3da98531992b40d15` |
+| 4 | `def` | [boundedDirichletConv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/DirichletPolynomialProduct.lean/declarations/boundeddirichletconv.md) | 42 | `declaration-track:6cc89d2add88da556da19764aad67c22e2ea33536fcf5bca34098c61f475f203` |
+| 5 | `theorem` | [finite_dirichlet_cauchy_product_unweighted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/DirichletPolynomialProduct.lean/declarations/finite-dirichlet-cauchy-product-unweighted.md) | 50 | `result-track:a60106ed1d40144d9e768cacefc12d628303360eddd347de95191ace15bc0fcb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

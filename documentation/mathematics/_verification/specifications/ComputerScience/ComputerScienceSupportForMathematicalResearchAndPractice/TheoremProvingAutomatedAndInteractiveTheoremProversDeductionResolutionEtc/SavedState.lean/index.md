@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SavedState.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SavedState.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SavedState.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SavedState.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [runMetaM](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SavedState.lean/declarations/runmetam.md) | 16 | `declaration-track:4fc53d5a049fa76b2874af7b4645cea3c79def9a5c0b42a38c0c2ee800a176f3` |
-| 2 | `def` | [runMetaM'](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SavedState.lean/declarations/runmetam-source-edition-2.md) | 24 | `declaration-track:5996c7a8d4844f476e65fa1cdd021f3438523c9f065650e1b326c64e15cc02c0` |
-| 3 | `def` | [getIntroducedExprMVars](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SavedState.lean/declarations/getintroducedexprmvars.md) | 34 | `declaration-track:becb1ecdd2d2a41ab5395b79c6a443e2a478459dc7df49019f5269a948018ae7` |
-| 4 | `def` | [getAssignedExprMVars](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SavedState.lean/declarations/getassignedexprmvars.md) | 44 | `declaration-track:39c2c8f7d1064f25ff99f2ab0b5f52e575d2eab3c408d1327c3c77c9db68dd10` |
+| 1 | `def` | [runMetaM](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SavedState.lean/declarations/runmetam.md) | 16 | `declaration-track:4fc53d5a049fa76b2874af7b4645cea3c79def9a5c0b42a38c0c2ee800a176f3` |
+| 2 | `def` | [runMetaM'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SavedState.lean/declarations/runmetam-source-edition-2.md) | 24 | `declaration-track:5996c7a8d4844f476e65fa1cdd021f3438523c9f065650e1b326c64e15cc02c0` |
+| 3 | `def` | [getIntroducedExprMVars](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SavedState.lean/declarations/getintroducedexprmvars.md) | 34 | `declaration-track:becb1ecdd2d2a41ab5395b79c6a443e2a478459dc7df49019f5269a948018ae7` |
+| 4 | `def` | [getAssignedExprMVars](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SavedState.lean/declarations/getassignedexprmvars.md) | 44 | `declaration-track:39c2c8f7d1064f25ff99f2ab0b5f52e575d2eab3c408d1327c3c77c9db68dd10` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

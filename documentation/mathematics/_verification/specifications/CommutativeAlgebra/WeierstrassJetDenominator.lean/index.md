@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/WeierstrassJetDenominator.lean/index.md) · [Full source](../../../../CommutativeAlgebra/WeierstrassJetDenominator.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/WeierstrassJetDenominator.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/WeierstrassJetDenominator.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.AlgebraicGeometry.EllipticCurve.WeierstrassRescaledJet`](../../../../CommutativeAlgebra/WeierstrassRescaledJet.lean/index.md) — import line 10; pinned internal source present.
-- [`GRWTSK.NumberTheory.Height.RationalVectorAffineHeight`](../../../../NumberTheory/RationalVectorAffineHeight.lean/index.md) — import line 11; pinned internal source present.
+- [`GRWTSK.AlgebraicGeometry.EllipticCurve.WeierstrassRescaledJet`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/WeierstrassRescaledJet.lean/index.md) — import line 10; pinned internal source present.
+- [`GRWTSK.NumberTheory.Height.RationalVectorAffineHeight`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RationalVectorAffineHeight.lean/index.md) — import line 11; pinned internal source present.
 - `Mathlib.Data.ZMod.Basic` — import line 12; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -59,18 +59,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [coefficients](../../../../CommutativeAlgebra/WeierstrassJetDenominator.lean/declarations/coefficients.md) | 24 | `declaration-track:9034ae22287ea972a2a64c49c89905fe088f034fd7b0a18af05fd7f0596db478` |
-| 2 | `theorem` | [coefficient_den_dvd](../../../../CommutativeAlgebra/WeierstrassJetDenominator.lean/declarations/coefficient-den-dvd.md) | 28 | `result-track:1b60582b44e39b08a2d77326b80ef29c72df0c13a40fc56015b5590584cb5b37` |
-| 3 | `theorem` | [common_den_dvd](../../../../CommutativeAlgebra/WeierstrassJetDenominator.lean/declarations/common-den-dvd.md) | 42 | `result-track:b5b169939bc2c323dbfe9f05c358ed5b2cbdec7b855395bc25f34cb5263d56cc` |
-| 4 | `theorem` | [coeff_X_mul_at](../../../../CommutativeAlgebra/WeierstrassJetDenominator.lean/declarations/coeff-x-mul-at.md) | 51 | `result-track:61c4ef993fef5560a8e4285836b54d57721a0b10184ec6bc2369933371910d26` |
-| 5 | `theorem` | [geometric_coefficient](../../../../CommutativeAlgebra/WeierstrassJetDenominator.lean/declarations/geometric-coefficient.md) | 58 | `result-track:6cff7cf0bea4ec96e3b7feee6e17e3733f0e7f06baabb2813178985eebe39618` |
-| 6 | `theorem` | [numerator_one_mod](../../../../CommutativeAlgebra/WeierstrassJetDenominator.lean/declarations/numerator-one-mod.md) | 76 | `result-track:ea182d58a2bf69f13b7365f800415c5021a60f5d4f0f04d194d07e503b4c4e20` |
-| 7 | `theorem` | [cancel_power](../../../../CommutativeAlgebra/WeierstrassJetDenominator.lean/declarations/cancel-power.md) | 89 | `result-track:6afde4b7c4637bc13c7d93f91153718f3332b9ce2c1153fd5c2d8266aa9c750e` |
-| 8 | `theorem` | [one_mod_clears](../../../../CommutativeAlgebra/WeierstrassJetDenominator.lean/declarations/one-mod-clears.md) | 112 | `result-track:b4b2e9b42a2cb06f8357cd672f1bc2e426b6a4bc6a482295a5910ad6ac9dfde5` |
-| 9 | `theorem` | [one_mod_denominator](../../../../CommutativeAlgebra/WeierstrassJetDenominator.lean/declarations/one-mod-denominator.md) | 135 | `result-track:1e86283b0c8466f0a47217df9a91180466ac62e410aa89ebb925608a5d399ae2` |
-| 10 | `theorem` | [sharp_coefficient_denominator](../../../../CommutativeAlgebra/WeierstrassJetDenominator.lean/declarations/sharp-coefficient-denominator.md) | 143 | `result-track:c86cf304f524cf7ad173027360cc389473fdb6a87c875a78bd719c28a81cbd6c` |
-| 11 | `theorem` | [sharp_common_denominator](../../../../CommutativeAlgebra/WeierstrassJetDenominator.lean/declarations/sharp-common-denominator.md) | 153 | `result-track:77d39eb369508eecac73562c74b6924620ab239120b0a8d753ca94f8ad6a921f` |
-| 12 | `theorem` | [power_exceeds](../../../../CommutativeAlgebra/WeierstrassJetDenominator.lean/declarations/power-exceeds.md) | 165 | `result-track:2fe4d56f68f985b18118445cf3f545282a157d7c6c60f68ad2851c9791ffd311` |
+| 1 | `def` | [coefficients](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/WeierstrassJetDenominator.lean/declarations/coefficients.md) | 24 | `declaration-track:9034ae22287ea972a2a64c49c89905fe088f034fd7b0a18af05fd7f0596db478` |
+| 2 | `theorem` | [coefficient_den_dvd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/WeierstrassJetDenominator.lean/declarations/coefficient-den-dvd.md) | 28 | `result-track:1b60582b44e39b08a2d77326b80ef29c72df0c13a40fc56015b5590584cb5b37` |
+| 3 | `theorem` | [common_den_dvd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/WeierstrassJetDenominator.lean/declarations/common-den-dvd.md) | 42 | `result-track:b5b169939bc2c323dbfe9f05c358ed5b2cbdec7b855395bc25f34cb5263d56cc` |
+| 4 | `theorem` | [coeff_X_mul_at](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/WeierstrassJetDenominator.lean/declarations/coeff-x-mul-at.md) | 51 | `result-track:61c4ef993fef5560a8e4285836b54d57721a0b10184ec6bc2369933371910d26` |
+| 5 | `theorem` | [geometric_coefficient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/WeierstrassJetDenominator.lean/declarations/geometric-coefficient.md) | 58 | `result-track:6cff7cf0bea4ec96e3b7feee6e17e3733f0e7f06baabb2813178985eebe39618` |
+| 6 | `theorem` | [numerator_one_mod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/WeierstrassJetDenominator.lean/declarations/numerator-one-mod.md) | 76 | `result-track:ea182d58a2bf69f13b7365f800415c5021a60f5d4f0f04d194d07e503b4c4e20` |
+| 7 | `theorem` | [cancel_power](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/WeierstrassJetDenominator.lean/declarations/cancel-power.md) | 89 | `result-track:6afde4b7c4637bc13c7d93f91153718f3332b9ce2c1153fd5c2d8266aa9c750e` |
+| 8 | `theorem` | [one_mod_clears](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/WeierstrassJetDenominator.lean/declarations/one-mod-clears.md) | 112 | `result-track:b4b2e9b42a2cb06f8357cd672f1bc2e426b6a4bc6a482295a5910ad6ac9dfde5` |
+| 9 | `theorem` | [one_mod_denominator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/WeierstrassJetDenominator.lean/declarations/one-mod-denominator.md) | 135 | `result-track:1e86283b0c8466f0a47217df9a91180466ac62e410aa89ebb925608a5d399ae2` |
+| 10 | `theorem` | [sharp_coefficient_denominator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/WeierstrassJetDenominator.lean/declarations/sharp-coefficient-denominator.md) | 143 | `result-track:c86cf304f524cf7ad173027360cc389473fdb6a87c875a78bd719c28a81cbd6c` |
+| 11 | `theorem` | [sharp_common_denominator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/WeierstrassJetDenominator.lean/declarations/sharp-common-denominator.md) | 153 | `result-track:77d39eb369508eecac73562c74b6924620ab239120b0a8d753ca94f8ad6a921f` |
+| 12 | `theorem` | [power_exceeds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/WeierstrassJetDenominator.lean/declarations/power-exceeds.md) | 165 | `result-track:2fe4d56f68f985b18118445cf3f545282a157d7c6c60f68ad2851c9791ffd311` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

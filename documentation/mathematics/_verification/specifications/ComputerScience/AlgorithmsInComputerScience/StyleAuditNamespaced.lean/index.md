@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/StyleAuditNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/StyleAuditNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StyleAuditNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StyleAuditNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [forbiddenGrandClaimPhrases](../../../../../ComputerScience/AlgorithmsInComputerScience/StyleAuditNamespaced.lean/declarations/forbiddengrandclaimphrases.md) | 23 | `declaration-track:08f70300f5988c08d8a651ae6e2e96b1a7b5c761146044df30425579d9926769` |
-| 2 | `structure` | [StyleAuditEntry](../../../../../ComputerScience/AlgorithmsInComputerScience/StyleAuditNamespaced.lean/declarations/styleauditentry.md) | 38 | `declaration-track:a6ed27b810b993e6d71db33ca9c893665db8ade0fe855c1e42c198c0c4366872` |
-| 3 | `def` | [StyleAuditEntry.containsForbiddenGrandClaim](../../../../../ComputerScience/AlgorithmsInComputerScience/StyleAuditNamespaced.lean/declarations/styleauditentry-containsforbiddengrandclaim.md) | 47 | `declaration-track:c5c4b5d4f95a383996cf917200c01f5fe0efd70a5da73bcef759d40e3184a3fe` |
-| 4 | `def` | [StyleAuditEntry.auditWarning](../../../../../ComputerScience/AlgorithmsInComputerScience/StyleAuditNamespaced.lean/declarations/styleauditentry-auditwarning.md) | 57 | `declaration-track:4531ac388811e987a60f4e1db2ae412b087a5acce72e9e55a08c98ecb99b6060` |
+| 1 | `def` | [forbiddenGrandClaimPhrases](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StyleAuditNamespaced.lean/declarations/forbiddengrandclaimphrases.md) | 23 | `declaration-track:08f70300f5988c08d8a651ae6e2e96b1a7b5c761146044df30425579d9926769` |
+| 2 | `structure` | [StyleAuditEntry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StyleAuditNamespaced.lean/declarations/styleauditentry.md) | 38 | `declaration-track:a6ed27b810b993e6d71db33ca9c893665db8ade0fe855c1e42c198c0c4366872` |
+| 3 | `def` | [StyleAuditEntry.containsForbiddenGrandClaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StyleAuditNamespaced.lean/declarations/styleauditentry-containsforbiddengrandclaim.md) | 47 | `declaration-track:c5c4b5d4f95a383996cf917200c01f5fe0efd70a5da73bcef759d40e3184a3fe` |
+| 4 | `def` | [StyleAuditEntry.auditWarning](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StyleAuditNamespaced.lean/declarations/styleauditentry-auditwarning.md) | 57 | `declaration-track:4531ac388811e987a60f4e1db2ae412b087a5acce72e9e55a08c98ecb99b6060` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

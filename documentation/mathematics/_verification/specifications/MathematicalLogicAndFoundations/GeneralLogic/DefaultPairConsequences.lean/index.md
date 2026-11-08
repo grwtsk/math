@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DefaultPairConsequences.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DefaultPairConsequences.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DefaultPairConsequences.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DefaultPairConsequences.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [Carrier Elements](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CarrierElements.lean/index.md) — import line 20; pinned internal source present.
+- [Carrier Elements](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CarrierElements.lean/index.md) — import line 20; pinned internal source present.
 - `Folder.Core.DualPivot` — import line 21; external provider; requires a separately pinned dependency.
 - `Folder.Spectral.Tensor` — import line 22; external provider; requires a separately pinned dependency.
 - `Folder.Spectral.Residual` — import line 23; external provider; requires a separately pinned dependency.
@@ -62,9 +62,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [CompositeStack.hasArithmeticPivot](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DefaultPairConsequences.lean/declarations/compositestack-hasarithmeticpivot.md) | 44 | `declaration-track:e2b09dc5d8871e9ae0129a81e9b8ff7466ba9fb5463c6c6dcdbb5a82d31f9d58` |
-| 2 | `def` | [CompositeStack.hasSpectralPivot](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DefaultPairConsequences.lean/declarations/compositestack-hasspectralpivot.md) | 48 | `declaration-track:3ca32594ae0f9ddb62bbe8defec98c200cf8bff4b652738b03b399ea982e36cf` |
-| 3 | `theorem` | [default_stack_pivots](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DefaultPairConsequences.lean/declarations/default-stack-pivots.md) | 52 | `result-track:5ba20e5097d6c4a478a8c2dd7eb7fdaddd9f4f269b9668efd681f173fd4757f2` |
+| 1 | `def` | [CompositeStack.hasArithmeticPivot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DefaultPairConsequences.lean/declarations/compositestack-hasarithmeticpivot.md) | 44 | `declaration-track:e2b09dc5d8871e9ae0129a81e9b8ff7466ba9fb5463c6c6dcdbb5a82d31f9d58` |
+| 2 | `def` | [CompositeStack.hasSpectralPivot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DefaultPairConsequences.lean/declarations/compositestack-hasspectralpivot.md) | 48 | `declaration-track:3ca32594ae0f9ddb62bbe8defec98c200cf8bff4b652738b03b399ea982e36cf` |
+| 3 | `theorem` | [default_stack_pivots](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DefaultPairConsequences.lean/declarations/default-stack-pivots.md) | 52 | `result-track:5ba20e5097d6c4a478a8c2dd7eb7fdaddd9f4f269b9668efd681f173fd4757f2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

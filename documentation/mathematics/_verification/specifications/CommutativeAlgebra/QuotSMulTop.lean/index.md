@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/QuotSMulTop.lean/index.md) · [Full source](../../../../CommutativeAlgebra/QuotSMulTop.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuotSMulTop.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuotSMulTop.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,22 +59,22 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [QuotSMulTop](../../../../CommutativeAlgebra/QuotSMulTop.lean/declarations/quotsmultop.md) | 32 | `declaration-track:5fd35e52b75ab23d170aaabc9819a0861f3ed00ce6d066ef1e33081f94c0bdeb` |
-| 2 | `def` | [equivQuotTensor](../../../../CommutativeAlgebra/QuotSMulTop.lean/declarations/equivquottensor.md) | 39 | `declaration-track:2d88954bdea90b67785384360304d1bff74169d611a22f49de8a6d0bcaea5934` |
-| 3 | `def` | [equivTensorQuot](../../../../CommutativeAlgebra/QuotSMulTop.lean/declarations/equivtensorquot.md) | 45 | `declaration-track:cdc64a25b21ba22a46232351061c958d43f41edd934f6fc07b28e2cffb472082` |
-| 4 | `def` | [map](../../../../CommutativeAlgebra/QuotSMulTop.lean/declarations/map.md) | 53 | `declaration-track:8214f58d7f774c87a617735b9a54aa68024403c0acce94d646f19288394868bd` |
-| 5 | `lemma` | [map_apply_mk](../../../../CommutativeAlgebra/QuotSMulTop.lean/declarations/map-apply-mk.md) | 59 | `result-track:2ff2ab1ceaccaef81e8456fad5c3b52694d1b014855bcf8fa68ddc2df692c09b` |
-| 6 | `lemma` | [map_comp_mkQ](../../../../CommutativeAlgebra/QuotSMulTop.lean/declarations/map-comp-mkq.md) | 64 | `result-track:44c55ad1826f40f1a6fd10150f6ac2823c454295c8a320804c0ea70df2c34663` |
-| 7 | `lemma` | [map_id](../../../../CommutativeAlgebra/QuotSMulTop.lean/declarations/map-id.md) | 71 | `result-track:7bdd4a9940c42f8151e72eec0c1d7fe57e7a931054d8d8e79adba30675124d57` |
-| 8 | `lemma` | [map_comp](../../../../CommutativeAlgebra/QuotSMulTop.lean/declarations/map-comp.md) | 77 | `result-track:81aecfd7c5bd41c5b0d032041b6797402182f20ad565401692b029659165d272` |
-| 9 | `lemma` | [equivQuotTensor_naturality_mk](../../../../CommutativeAlgebra/QuotSMulTop.lean/declarations/equivquottensor-naturality-mk.md) | 81 | `result-track:d0dba49d4fa196db7185e7c58085d89d5008a28415c37dccaa0216c623851931` |
-| 10 | `lemma` | [equivQuotTensor_naturality](../../../../CommutativeAlgebra/QuotSMulTop.lean/declarations/equivquottensor-naturality.md) | 87 | `result-track:fab7e49dd6b99c9679c8222f2d7ad8f67c3d15daae8c2cd326c1ebcbe7a50bc4` |
-| 11 | `lemma` | [equivTensorQuot_naturality_mk](../../../../CommutativeAlgebra/QuotSMulTop.lean/declarations/equivtensorquot-naturality-mk.md) | 92 | `result-track:c7893944b2392795daf4f7e8ff1a4c0170f9a3afc9bb597b49397991cabea565` |
-| 12 | `lemma` | [equivTensorQuot_naturality](../../../../CommutativeAlgebra/QuotSMulTop.lean/declarations/equivtensorquot-naturality.md) | 98 | `result-track:5d85e6608c3c899bcc160219d6fe01efc6c0a47890016e4d65f3ed43e2b85610` |
-| 13 | `lemma` | [map_surjective](../../../../CommutativeAlgebra/QuotSMulTop.lean/declarations/map-surjective.md) | 103 | `result-track:d1250e31fd2930693ee5bcc6f4d0b98e58abab46c6f994dde7f933f0d0a61547` |
-| 14 | `lemma` | [map_exact](../../../../CommutativeAlgebra/QuotSMulTop.lean/declarations/map-exact.md) | 108 | `result-track:d2291a4fc45575f789012dd665db2d9fea555dc3db929439fa4220692bf73ed2` |
-| 15 | `def` | [tensorQuotSMulTopEquivQuotSMulTop](../../../../CommutativeAlgebra/QuotSMulTop.lean/declarations/tensorquotsmultopequivquotsmultop.md) | 117 | `declaration-track:4a01cd0b382b77077181d15a281d404ccde1a5b780dcf29a53cf19cfb3cfacf6` |
-| 16 | `def` | [quotSMulTopTensorEquivQuotSMulTop](../../../../CommutativeAlgebra/QuotSMulTop.lean/declarations/quotsmultoptensorequivquotsmultop.md) | 124 | `declaration-track:8c36102dfd9b54d4aab0829e6466ce050e2c57e3297cdc9831a2e745bf6dd8de` |
+| 1 | `abbrev` | [QuotSMulTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuotSMulTop.lean/declarations/quotsmultop.md) | 32 | `declaration-track:5fd35e52b75ab23d170aaabc9819a0861f3ed00ce6d066ef1e33081f94c0bdeb` |
+| 2 | `def` | [equivQuotTensor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuotSMulTop.lean/declarations/equivquottensor.md) | 39 | `declaration-track:2d88954bdea90b67785384360304d1bff74169d611a22f49de8a6d0bcaea5934` |
+| 3 | `def` | [equivTensorQuot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuotSMulTop.lean/declarations/equivtensorquot.md) | 45 | `declaration-track:cdc64a25b21ba22a46232351061c958d43f41edd934f6fc07b28e2cffb472082` |
+| 4 | `def` | [map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuotSMulTop.lean/declarations/map.md) | 53 | `declaration-track:8214f58d7f774c87a617735b9a54aa68024403c0acce94d646f19288394868bd` |
+| 5 | `lemma` | [map_apply_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuotSMulTop.lean/declarations/map-apply-mk.md) | 59 | `result-track:2ff2ab1ceaccaef81e8456fad5c3b52694d1b014855bcf8fa68ddc2df692c09b` |
+| 6 | `lemma` | [map_comp_mkQ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuotSMulTop.lean/declarations/map-comp-mkq.md) | 64 | `result-track:44c55ad1826f40f1a6fd10150f6ac2823c454295c8a320804c0ea70df2c34663` |
+| 7 | `lemma` | [map_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuotSMulTop.lean/declarations/map-id.md) | 71 | `result-track:7bdd4a9940c42f8151e72eec0c1d7fe57e7a931054d8d8e79adba30675124d57` |
+| 8 | `lemma` | [map_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuotSMulTop.lean/declarations/map-comp.md) | 77 | `result-track:81aecfd7c5bd41c5b0d032041b6797402182f20ad565401692b029659165d272` |
+| 9 | `lemma` | [equivQuotTensor_naturality_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuotSMulTop.lean/declarations/equivquottensor-naturality-mk.md) | 81 | `result-track:d0dba49d4fa196db7185e7c58085d89d5008a28415c37dccaa0216c623851931` |
+| 10 | `lemma` | [equivQuotTensor_naturality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuotSMulTop.lean/declarations/equivquottensor-naturality.md) | 87 | `result-track:fab7e49dd6b99c9679c8222f2d7ad8f67c3d15daae8c2cd326c1ebcbe7a50bc4` |
+| 11 | `lemma` | [equivTensorQuot_naturality_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuotSMulTop.lean/declarations/equivtensorquot-naturality-mk.md) | 92 | `result-track:c7893944b2392795daf4f7e8ff1a4c0170f9a3afc9bb597b49397991cabea565` |
+| 12 | `lemma` | [equivTensorQuot_naturality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuotSMulTop.lean/declarations/equivtensorquot-naturality.md) | 98 | `result-track:5d85e6608c3c899bcc160219d6fe01efc6c0a47890016e4d65f3ed43e2b85610` |
+| 13 | `lemma` | [map_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuotSMulTop.lean/declarations/map-surjective.md) | 103 | `result-track:d1250e31fd2930693ee5bcc6f4d0b98e58abab46c6f994dde7f933f0d0a61547` |
+| 14 | `lemma` | [map_exact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuotSMulTop.lean/declarations/map-exact.md) | 108 | `result-track:d2291a4fc45575f789012dd665db2d9fea555dc3db929439fa4220692bf73ed2` |
+| 15 | `def` | [tensorQuotSMulTopEquivQuotSMulTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuotSMulTop.lean/declarations/tensorquotsmultopequivquotsmultop.md) | 117 | `declaration-track:4a01cd0b382b77077181d15a281d404ccde1a5b780dcf29a53cf19cfb3cfacf6` |
+| 16 | `def` | [quotSMulTopTensorEquivQuotSMulTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuotSMulTop.lean/declarations/quotsmultoptensorequivquotsmultop.md) | 124 | `declaration-track:8c36102dfd9b54d4aab0829e6466ce050e2c57e3297cdc9831a2e745bf6dd8de` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

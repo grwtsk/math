@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/Attempt01PrimeAtoms.lean/index.md) · [Full source](../../../../MeasureAndIntegration/Attempt01PrimeAtoms.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01PrimeAtoms.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01PrimeAtoms.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [primeAtoms](../../../../MeasureAndIntegration/Attempt01PrimeAtoms.lean/declarations/primeatoms.md) | 18 | `declaration-track:5897119d5082c7c60b7d1900d834d2d647c920b3841900b70c8d4f595ec4cbbd` |
-| 2 | `def` | [primeCorrected](../../../../MeasureAndIntegration/Attempt01PrimeAtoms.lean/declarations/primecorrected.md) | 22 | `declaration-track:325190c5d40c9cd8d4d8ac7afd3fc09f4e367317a0be6ed905c2e93270a70f8b` |
-| 3 | `theorem` | [primeCorrected_at_atom](../../../../MeasureAndIntegration/Attempt01PrimeAtoms.lean/declarations/primecorrected-at-atom.md) | 25 | `result-track:723c7fc53cbbaac8f21d91189242b95635ac66c6d9027a1fdcfd5a4d6d122829` |
-| 4 | `theorem` | [primeCorrected_ae](../../../../MeasureAndIntegration/Attempt01PrimeAtoms.lean/declarations/primecorrected-ae.md) | 32 | `result-track:49a654636bfc5a655edb2a2b831e0bfb1a16edf58a9af4e1157a26964d9fd687` |
-| 5 | `theorem` | [primeCorrected_integrable](../../../../MeasureAndIntegration/Attempt01PrimeAtoms.lean/declarations/primecorrected-integrable.md) | 38 | `result-track:e29c87cb7282629d039c8523ad333768a8afc0fb8ad6d877c8d5de649f6cabe8` |
-| 6 | `theorem` | [primeCorrected_primeLogSum](../../../../MeasureAndIntegration/Attempt01PrimeAtoms.lean/declarations/primecorrected-primelogsum.md) | 42 | `result-track:ce05468c10acf94298e1657a7df362632866eff1c067c84f6c917a47bd4c9203` |
-| 7 | `theorem` | [primeCorrected_density_integral](../../../../MeasureAndIntegration/Attempt01PrimeAtoms.lean/declarations/primecorrected-density-integral.md) | 50 | `result-track:bd106b6267c714ff9be3970deac11efa3878678ab633a2b3167ab00e7331113f` |
-| 8 | `theorem` | [primeCorrected_readout_error](../../../../MeasureAndIntegration/Attempt01PrimeAtoms.lean/declarations/primecorrected-readout-error.md) | 59 | `result-track:2176520535acd4e61a3017f2240ab8463d2272a148f9b5835eff85565fd76a50` |
+| 1 | `def` | [primeAtoms](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01PrimeAtoms.lean/declarations/primeatoms.md) | 18 | `declaration-track:5897119d5082c7c60b7d1900d834d2d647c920b3841900b70c8d4f595ec4cbbd` |
+| 2 | `def` | [primeCorrected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01PrimeAtoms.lean/declarations/primecorrected.md) | 22 | `declaration-track:325190c5d40c9cd8d4d8ac7afd3fc09f4e367317a0be6ed905c2e93270a70f8b` |
+| 3 | `theorem` | [primeCorrected_at_atom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01PrimeAtoms.lean/declarations/primecorrected-at-atom.md) | 25 | `result-track:723c7fc53cbbaac8f21d91189242b95635ac66c6d9027a1fdcfd5a4d6d122829` |
+| 4 | `theorem` | [primeCorrected_ae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01PrimeAtoms.lean/declarations/primecorrected-ae.md) | 32 | `result-track:49a654636bfc5a655edb2a2b831e0bfb1a16edf58a9af4e1157a26964d9fd687` |
+| 5 | `theorem` | [primeCorrected_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01PrimeAtoms.lean/declarations/primecorrected-integrable.md) | 38 | `result-track:e29c87cb7282629d039c8523ad333768a8afc0fb8ad6d877c8d5de649f6cabe8` |
+| 6 | `theorem` | [primeCorrected_primeLogSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01PrimeAtoms.lean/declarations/primecorrected-primelogsum.md) | 42 | `result-track:ce05468c10acf94298e1657a7df362632866eff1c067c84f6c917a47bd4c9203` |
+| 7 | `theorem` | [primeCorrected_density_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01PrimeAtoms.lean/declarations/primecorrected-density-integral.md) | 50 | `result-track:bd106b6267c714ff9be3970deac11efa3878678ab633a2b3167ab00e7331113f` |
+| 8 | `theorem` | [primeCorrected_readout_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01PrimeAtoms.lean/declarations/primecorrected-readout-error.md) | 59 | `result-track:2176520535acd4e61a3017f2240ab8463d2272a148f9b5835eff85565fd76a50` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

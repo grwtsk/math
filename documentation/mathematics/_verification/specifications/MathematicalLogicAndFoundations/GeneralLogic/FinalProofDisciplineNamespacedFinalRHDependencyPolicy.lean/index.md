@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FinalProofDisciplineNamespacedFinalRHDependencyPolicy.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FinalProofDisciplineNamespacedFinalRHDependencyPolicy.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FinalProofDisciplineNamespacedFinalRHDependencyPolicy.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FinalProofDisciplineNamespacedFinalRHDependencyPolicy.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FinalRHDependencyPolicy](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FinalProofDisciplineNamespacedFinalRHDependencyPolicy.lean/declarations/finalrhdependencypolicy.md) | 27 | `declaration-track:6b752939e1fce51b4b8dbf44337fe5985f63e7162184f5aba0a88fae192c54b9` |
-| 2 | `theorem` | [final_policy_imports_only_theorems](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FinalProofDisciplineNamespacedFinalRHDependencyPolicy.lean/declarations/final-policy-imports-only-theorems.md) | 38 | `result-track:aa8d768f9f3329722eda2230242145ac69bb61516299cd04ec88bfd55d24949b` |
-| 3 | `theorem` | [final_policy_has_no_contracts](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FinalProofDisciplineNamespacedFinalRHDependencyPolicy.lean/declarations/final-policy-has-no-contracts.md) | 43 | `result-track:36795c29ea67ae2e0e40f962597f4b396d2d1d689b3a37bb24936e504560c2c9` |
-| 4 | `theorem` | [final_policy_specializes_to_zeta](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FinalProofDisciplineNamespacedFinalRHDependencyPolicy.lean/declarations/final-policy-specializes-to-zeta.md) | 48 | `result-track:1a0200047ff001575ea71fbe17013c5f009aa6cd333b12b2416652dfc97dca26` |
+| 1 | `structure` | [FinalRHDependencyPolicy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FinalProofDisciplineNamespacedFinalRHDependencyPolicy.lean/declarations/finalrhdependencypolicy.md) | 27 | `declaration-track:6b752939e1fce51b4b8dbf44337fe5985f63e7162184f5aba0a88fae192c54b9` |
+| 2 | `theorem` | [final_policy_imports_only_theorems](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FinalProofDisciplineNamespacedFinalRHDependencyPolicy.lean/declarations/final-policy-imports-only-theorems.md) | 38 | `result-track:aa8d768f9f3329722eda2230242145ac69bb61516299cd04ec88bfd55d24949b` |
+| 3 | `theorem` | [final_policy_has_no_contracts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FinalProofDisciplineNamespacedFinalRHDependencyPolicy.lean/declarations/final-policy-has-no-contracts.md) | 43 | `result-track:36795c29ea67ae2e0e40f962597f4b396d2d1d689b3a37bb24936e504560c2c9` |
+| 4 | `theorem` | [final_policy_specializes_to_zeta](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FinalProofDisciplineNamespacedFinalRHDependencyPolicy.lean/declarations/final-policy-specializes-to-zeta.md) | 48 | `result-track:1a0200047ff001575ea71fbe17013c5f009aa6cd333b12b2416652dfc97dca26` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

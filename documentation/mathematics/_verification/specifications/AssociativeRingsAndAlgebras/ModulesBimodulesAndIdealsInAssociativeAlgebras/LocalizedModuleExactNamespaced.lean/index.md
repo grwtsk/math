@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/LocalizedModuleExactNamespaced.lean/index.md) · [Full source](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/LocalizedModuleExactNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/LocalizedModuleExactNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/LocalizedModuleExactNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [LocalizedModule.map_exact](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/LocalizedModuleExactNamespaced.lean/declarations/localizedmodule-map-exact.md) | 41 | `result-track:1de426763e2b57279c93e80ac307d8ddfdda733699508b4ad473d1d731f0a2af` |
-| 2 | `theorem` | [IsLocalizedModule.map_exact](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/LocalizedModuleExactNamespaced.lean/declarations/islocalizedmodule-map-exact.md) | 60 | `result-track:33a3eaca4fa694d69cc586deaa296bcd0d87fbc7c960886ecd06fa35c7c124cf` |
+| 1 | `lemma` | [LocalizedModule.map_exact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/LocalizedModuleExactNamespaced.lean/declarations/localizedmodule-map-exact.md) | 41 | `result-track:1de426763e2b57279c93e80ac307d8ddfdda733699508b4ad473d1d731f0a2af` |
+| 2 | `theorem` | [IsLocalizedModule.map_exact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/LocalizedModuleExactNamespaced.lean/declarations/islocalizedmodule-map-exact.md) | 60 | `result-track:33a3eaca4fa694d69cc586deaa296bcd0d87fbc7c960886ecd06fa35c7c124cf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

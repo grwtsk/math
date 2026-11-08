@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FilteredConnectedNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FilteredConnectedNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FilteredConnectedNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FilteredConnectedNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [IsFilteredOrEmpty.isPreconnected](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FilteredConnectedNamespaced.lean/declarations/isfilteredorempty-ispreconnected.md) | 27 | `result-track:418228686cd27b4251ebf6fec5460edaf420987b692fe2d6eb2030b2eb05efb1` |
-| 2 | `theorem` | [IsCofilteredOrEmpty.isPreconnected](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FilteredConnectedNamespaced.lean/declarations/iscofilteredorempty-ispreconnected.md) | 32 | `result-track:239ac4ce7d5d708414d3b3b611b6b1941818675226cedab8e8f8b081989be98a` |
-| 3 | `theorem` | [IsFiltered.isConnected](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FilteredConnectedNamespaced.lean/declarations/isfiltered-isconnected.md) | 38 | `result-track:87ee11d35ea9fff66edd6ad3db1993a688226c16b5cdbf439103fd88ab434055` |
-| 4 | `theorem` | [IsCofiltered.isConnected](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FilteredConnectedNamespaced.lean/declarations/iscofiltered-isconnected.md) | 42 | `result-track:c3de375b10a0a7b01294323814cebf3f483957a879ab1d6c58f1183b706df135` |
+| 1 | `theorem` | [IsFilteredOrEmpty.isPreconnected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FilteredConnectedNamespaced.lean/declarations/isfilteredorempty-ispreconnected.md) | 27 | `result-track:418228686cd27b4251ebf6fec5460edaf420987b692fe2d6eb2030b2eb05efb1` |
+| 2 | `theorem` | [IsCofilteredOrEmpty.isPreconnected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FilteredConnectedNamespaced.lean/declarations/iscofilteredorempty-ispreconnected.md) | 32 | `result-track:239ac4ce7d5d708414d3b3b611b6b1941818675226cedab8e8f8b081989be98a` |
+| 3 | `theorem` | [IsFiltered.isConnected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FilteredConnectedNamespaced.lean/declarations/isfiltered-isconnected.md) | 38 | `result-track:87ee11d35ea9fff66edd6ad3db1993a688226c16b5cdbf439103fd88ab434055` |
+| 4 | `theorem` | [IsCofiltered.isConnected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FilteredConnectedNamespaced.lean/declarations/iscofiltered-isconnected.md) | 42 | `result-track:c3de375b10a0a7b01294323814cebf3f483957a879ab1d6c58f1183b706df135` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

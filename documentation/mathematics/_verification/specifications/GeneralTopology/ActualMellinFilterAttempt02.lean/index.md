@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ActualMellinFilterAttempt02.lean/index.md) · [Full source](../../../../GeneralTopology/ActualMellinFilterAttempt02.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualMellinFilterAttempt02.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualMellinFilterAttempt02.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_mellin_eq_normalizedTransform](../../../../GeneralTopology/ActualMellinFilterAttempt02.lean/declarations/actual-mellin-eq-normalizedtransform.md) | 18 | `result-track:8bc15de6f39618be392406a4e9548d95e208dcb7ffe5381682844f63ecfc5b84` |
-| 2 | `theorem` | [actual_mellin_pole_filter](../../../../GeneralTopology/ActualMellinFilterAttempt02.lean/declarations/actual-mellin-pole-filter.md) | 23 | `result-track:2a3987bf8d091aee883c3e53ff888a917d9a4770c9fa1468cc602254ae5b29ea` |
-| 3 | `theorem` | [actual_mellin_pole_filter_unnormalized](../../../../GeneralTopology/ActualMellinFilterAttempt02.lean/declarations/actual-mellin-pole-filter-unnormalized.md) | 30 | `result-track:bb0a9f8039cb291c229075a6234258950d3973e19f96dcbc0a5d1d1c464fccaf` |
-| 4 | `theorem` | [actual_mellin_nonzero_iff_bump](../../../../GeneralTopology/ActualMellinFilterAttempt02.lean/declarations/actual-mellin-nonzero-iff-bump.md) | 36 | `result-track:26c9269d6bd4d45cfcaeb17e40a2bc9f833c63e50835187f9ccc1a5a4531d328` |
-| 5 | `theorem` | [actual_mellin_halfstrip_nonzero_iff_bump](../../../../GeneralTopology/ActualMellinFilterAttempt02.lean/declarations/actual-mellin-halfstrip-nonzero-iff-bump.md) | 46 | `result-track:5348b740733397a83d9764169c90e9c4f383c1e862af6c188df81b1187208784` |
+| 1 | `theorem` | [actual_mellin_eq_normalizedTransform](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualMellinFilterAttempt02.lean/declarations/actual-mellin-eq-normalizedtransform.md) | 18 | `result-track:8bc15de6f39618be392406a4e9548d95e208dcb7ffe5381682844f63ecfc5b84` |
+| 2 | `theorem` | [actual_mellin_pole_filter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualMellinFilterAttempt02.lean/declarations/actual-mellin-pole-filter.md) | 23 | `result-track:2a3987bf8d091aee883c3e53ff888a917d9a4770c9fa1468cc602254ae5b29ea` |
+| 3 | `theorem` | [actual_mellin_pole_filter_unnormalized](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualMellinFilterAttempt02.lean/declarations/actual-mellin-pole-filter-unnormalized.md) | 30 | `result-track:bb0a9f8039cb291c229075a6234258950d3973e19f96dcbc0a5d1d1c464fccaf` |
+| 4 | `theorem` | [actual_mellin_nonzero_iff_bump](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualMellinFilterAttempt02.lean/declarations/actual-mellin-nonzero-iff-bump.md) | 36 | `result-track:26c9269d6bd4d45cfcaeb17e40a2bc9f833c63e50835187f9ccc1a5a4531d328` |
+| 5 | `theorem` | [actual_mellin_halfstrip_nonzero_iff_bump](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualMellinFilterAttempt02.lean/declarations/actual-mellin-halfstrip-nonzero-iff-bump.md) | 46 | `result-track:5348b740733397a83d9764169c90e9c4f383c1e862af6c188df81b1187208784` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

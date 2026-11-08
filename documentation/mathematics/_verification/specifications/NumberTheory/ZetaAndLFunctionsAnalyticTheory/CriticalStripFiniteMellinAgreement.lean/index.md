@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripFiniteMellinAgreement.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripFiniteMellinAgreement.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripFiniteMellinAgreement.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripFiniteMellinAgreement.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripFinitePowerPatch`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripFinitePowerPatch.lean/index.md) — import line 3; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripMellinEnclosure`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripMellinEnclosure.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripFinitePowerPatch`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripFinitePowerPatch.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripMellinEnclosure`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripMellinEnclosure.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [derivative_bounds_agree](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripFiniteMellinAgreement.lean/declarations/derivative-bounds-agree.md) | 25 | `result-track:107a133c7251a8f394f8e2ef9c1dc539b05f373574d78f6114d88e93cba16800` |
-| 2 | `theorem` | [finitePower_prefix_residual](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripFiniteMellinAgreement.lean/declarations/finitepower-prefix-residual.md) | 29 | `result-track:85ab241171887df5a3fc2310874a75a693def24d62a211a1363a9ccf1af976c9` |
-| 3 | `theorem` | [finitePower_prefix_error](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripFiniteMellinAgreement.lean/declarations/finitepower-prefix-error.md) | 38 | `result-track:6cbe946cc1b2ae8910cebdf74449c18f2afd93549c62315a54cf9adebf3d589d` |
-| 4 | `theorem` | [sample_agreement_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripFiniteMellinAgreement.lean/declarations/sample-agreement-le.md) | 49 | `result-track:e6900f6199ebcecdaa91881e23432a9507e83cfde34ca999d35ed46c2be34894` |
-| 5 | `theorem` | [exact_margin_iff](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripFiniteMellinAgreement.lean/declarations/exact-margin-iff.md) | 68 | `result-track:fd4341ff164be6d35fc4766faea184b06b1911e194f7e04bff9e99a4be14e346` |
-| 6 | `theorem` | [no_strict_finitePower_margin_at_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripFiniteMellinAgreement.lean/declarations/no-strict-finitepower-margin-at-zero.md) | 76 | `result-track:b74f2b72d4b7b161da2f4deb2eceeb696627cb0aa5a4e70eb4c7bd18e96c7802` |
-| 7 | `theorem` | [nonzero_iff_exists_finitePower_margin](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripFiniteMellinAgreement.lean/declarations/nonzero-iff-exists-finitepower-margin.md) | 86 | `result-track:22f14488320c5a5b890b9d175351325f62784f4bea5ffd5732ebabcf6db78aff` |
-| 8 | `theorem` | [nonzero_of_power_sample](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripFiniteMellinAgreement.lean/declarations/nonzero-of-power-sample.md) | 102 | `result-track:149f5d1b04402294e44de4b315adf1e71e2979868ac949a00bd511824ae8ea7b` |
-| 9 | `theorem` | [pole_values_agree](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripFiniteMellinAgreement.lean/declarations/pole-values-agree.md) | 112 | `result-track:18a68e63f3a5b88e6b0e1abfa30b6a8cefab3c733f1ed3cdf611ea442a57ccff` |
+| 1 | `theorem` | [derivative_bounds_agree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripFiniteMellinAgreement.lean/declarations/derivative-bounds-agree.md) | 25 | `result-track:107a133c7251a8f394f8e2ef9c1dc539b05f373574d78f6114d88e93cba16800` |
+| 2 | `theorem` | [finitePower_prefix_residual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripFiniteMellinAgreement.lean/declarations/finitepower-prefix-residual.md) | 29 | `result-track:85ab241171887df5a3fc2310874a75a693def24d62a211a1363a9ccf1af976c9` |
+| 3 | `theorem` | [finitePower_prefix_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripFiniteMellinAgreement.lean/declarations/finitepower-prefix-error.md) | 38 | `result-track:6cbe946cc1b2ae8910cebdf74449c18f2afd93549c62315a54cf9adebf3d589d` |
+| 4 | `theorem` | [sample_agreement_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripFiniteMellinAgreement.lean/declarations/sample-agreement-le.md) | 49 | `result-track:e6900f6199ebcecdaa91881e23432a9507e83cfde34ca999d35ed46c2be34894` |
+| 5 | `theorem` | [exact_margin_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripFiniteMellinAgreement.lean/declarations/exact-margin-iff.md) | 68 | `result-track:fd4341ff164be6d35fc4766faea184b06b1911e194f7e04bff9e99a4be14e346` |
+| 6 | `theorem` | [no_strict_finitePower_margin_at_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripFiniteMellinAgreement.lean/declarations/no-strict-finitepower-margin-at-zero.md) | 76 | `result-track:b74f2b72d4b7b161da2f4deb2eceeb696627cb0aa5a4e70eb4c7bd18e96c7802` |
+| 7 | `theorem` | [nonzero_iff_exists_finitePower_margin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripFiniteMellinAgreement.lean/declarations/nonzero-iff-exists-finitepower-margin.md) | 86 | `result-track:22f14488320c5a5b890b9d175351325f62784f4bea5ffd5732ebabcf6db78aff` |
+| 8 | `theorem` | [nonzero_of_power_sample](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripFiniteMellinAgreement.lean/declarations/nonzero-of-power-sample.md) | 102 | `result-track:149f5d1b04402294e44de4b315adf1e71e2979868ac949a00bd511824ae8ea7b` |
+| 9 | `theorem` | [pole_values_agree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripFiniteMellinAgreement.lean/declarations/pole-values-agree.md) | 112 | `result-track:18a68e63f3a5b88e6b0e1abfa30b6a8cefab3c733f1ed3cdf611ea442a57ccff` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

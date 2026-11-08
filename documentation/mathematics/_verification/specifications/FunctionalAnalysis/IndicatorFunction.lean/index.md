@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/IndicatorFunction.lean/index.md) · [Full source](../../../../FunctionalAnalysis/IndicatorFunction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/IndicatorFunction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/IndicatorFunction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,15 +59,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [enorm_indicator_eq_indicator_enorm](../../../../FunctionalAnalysis/IndicatorFunction.lean/declarations/enorm-indicator-eq-indicator-enorm.md) | 25 | `result-track:38327122e3082dcebdf29ab8682438313b20f12df4d16da32d2f28391073f80e` |
-| 2 | `theorem` | [enorm_indicator_le_of_subset](../../../../FunctionalAnalysis/IndicatorFunction.lean/declarations/enorm-indicator-le-of-subset.md) | 29 | `result-track:a1de54e3665b6a2279ee3eeb2c0d45ef448ad6fc285b119e3a4e62f774041680` |
-| 3 | `theorem` | [indicator_enorm_le_enorm_self](../../../../FunctionalAnalysis/IndicatorFunction.lean/declarations/indicator-enorm-le-enorm-self.md) | 34 | `result-track:a3d32823510579b83f6cf6e739a93842fd8f97b06d2649ee9be7adf413707f56` |
-| 4 | `theorem` | [enorm_indicator_le_enorm_self](../../../../FunctionalAnalysis/IndicatorFunction.lean/declarations/enorm-indicator-le-enorm-self.md) | 37 | `result-track:44564d1b5fcbd3f665748b3663517694f07c63a9db08978af73b8d7e6affbe9c` |
-| 5 | `theorem` | [norm_indicator_eq_indicator_norm](../../../../FunctionalAnalysis/IndicatorFunction.lean/declarations/norm-indicator-eq-indicator-norm.md) | 47 | `result-track:9907fcf1d588970f741808b8844713b4fd37fcbfab285e9dd0e657ff509f9e65` |
-| 6 | `theorem` | [nnnorm_indicator_eq_indicator_nnnorm](../../../../FunctionalAnalysis/IndicatorFunction.lean/declarations/nnnorm-indicator-eq-indicator-nnnorm.md) | 50 | `result-track:5b6205469cbd3e93c57c15206d5b564c02ee6fd8c6518c4676ebd8937f966d3d` |
-| 7 | `theorem` | [norm_indicator_le_of_subset](../../../../FunctionalAnalysis/IndicatorFunction.lean/declarations/norm-indicator-le-of-subset.md) | 54 | `result-track:2db08c4751b95bd44d9df93247ac6839cdd2945d535db239ca804586b1d43f93` |
-| 8 | `theorem` | [indicator_norm_le_norm_self](../../../../FunctionalAnalysis/IndicatorFunction.lean/declarations/indicator-norm-le-norm-self.md) | 59 | `result-track:c6a7e0d8069f29bf28ff576e8cbc25c9dc9266043f57c38ce762df5ece55741d` |
-| 9 | `theorem` | [norm_indicator_le_norm_self](../../../../FunctionalAnalysis/IndicatorFunction.lean/declarations/norm-indicator-le-norm-self.md) | 62 | `result-track:ef62d6eb847eac410b5c9db06461784e4ee0ee9936f5436f77b7cf8b6fd107e9` |
+| 1 | `lemma` | [enorm_indicator_eq_indicator_enorm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/IndicatorFunction.lean/declarations/enorm-indicator-eq-indicator-enorm.md) | 25 | `result-track:38327122e3082dcebdf29ab8682438313b20f12df4d16da32d2f28391073f80e` |
+| 2 | `theorem` | [enorm_indicator_le_of_subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/IndicatorFunction.lean/declarations/enorm-indicator-le-of-subset.md) | 29 | `result-track:a1de54e3665b6a2279ee3eeb2c0d45ef448ad6fc285b119e3a4e62f774041680` |
+| 3 | `theorem` | [indicator_enorm_le_enorm_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/IndicatorFunction.lean/declarations/indicator-enorm-le-enorm-self.md) | 34 | `result-track:a3d32823510579b83f6cf6e739a93842fd8f97b06d2649ee9be7adf413707f56` |
+| 4 | `theorem` | [enorm_indicator_le_enorm_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/IndicatorFunction.lean/declarations/enorm-indicator-le-enorm-self.md) | 37 | `result-track:44564d1b5fcbd3f665748b3663517694f07c63a9db08978af73b8d7e6affbe9c` |
+| 5 | `theorem` | [norm_indicator_eq_indicator_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/IndicatorFunction.lean/declarations/norm-indicator-eq-indicator-norm.md) | 47 | `result-track:9907fcf1d588970f741808b8844713b4fd37fcbfab285e9dd0e657ff509f9e65` |
+| 6 | `theorem` | [nnnorm_indicator_eq_indicator_nnnorm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/IndicatorFunction.lean/declarations/nnnorm-indicator-eq-indicator-nnnorm.md) | 50 | `result-track:5b6205469cbd3e93c57c15206d5b564c02ee6fd8c6518c4676ebd8937f966d3d` |
+| 7 | `theorem` | [norm_indicator_le_of_subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/IndicatorFunction.lean/declarations/norm-indicator-le-of-subset.md) | 54 | `result-track:2db08c4751b95bd44d9df93247ac6839cdd2945d535db239ca804586b1d43f93` |
+| 8 | `theorem` | [indicator_norm_le_norm_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/IndicatorFunction.lean/declarations/indicator-norm-le-norm-self.md) | 59 | `result-track:c6a7e0d8069f29bf28ff576e8cbc25c9dc9266043f57c38ce762df5ece55741d` |
+| 9 | `theorem` | [norm_indicator_le_norm_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/IndicatorFunction.lean/declarations/norm-indicator-le-norm-self.md) | 62 | `result-track:ef62d6eb847eac410b5c9db06461784e4ee0ee9936f5436f77b7cf8b6fd107e9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

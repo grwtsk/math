@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StabilityNamespacedStabilityMode.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StabilityNamespacedStabilityMode.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StabilityNamespacedStabilityMode.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StabilityNamespacedStabilityMode.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [StabilityMode](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StabilityNamespacedStabilityMode.lean/declarations/stabilitymode.md) | 14 | `declaration-track:41eb64a167b0d42acef4a1e8f9b6b9e1d1dde7b80d1de6b0b43f8b649e9c9352` |
-| 2 | `structure` | [FlowConvergenceCertificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StabilityNamespacedStabilityMode.lean/declarations/flowconvergencecertificate.md) | 24 | `declaration-track:48dc1a8324bc3382f74152642609a520ad507fbfc25a210028ae064494f2e9b1` |
-| 3 | `structure` | [RicciSolitonCertificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StabilityNamespacedStabilityMode.lean/declarations/riccisolitoncertificate.md) | 29 | `declaration-track:b61d435ee0dd3bf592063bd3e4cd5655fd2c2eaa6e6755fdc79c892590d6ff58` |
+| 1 | `inductive` | [StabilityMode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StabilityNamespacedStabilityMode.lean/declarations/stabilitymode.md) | 14 | `declaration-track:41eb64a167b0d42acef4a1e8f9b6b9e1d1dde7b80d1de6b0b43f8b649e9c9352` |
+| 2 | `structure` | [FlowConvergenceCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StabilityNamespacedStabilityMode.lean/declarations/flowconvergencecertificate.md) | 24 | `declaration-track:48dc1a8324bc3382f74152642609a520ad507fbfc25a210028ae064494f2e9b1` |
+| 3 | `structure` | [RicciSolitonCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StabilityNamespacedStabilityMode.lean/declarations/riccisolitoncertificate.md) | 29 | `declaration-track:b61d435ee0dd3bf592063bd3e4cd5655fd2c2eaa6e6755fdc79c892590d6ff58` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

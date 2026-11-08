@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/Potential.lean/index.md) · [Full source](../../../../RealFunctions/Potential.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Potential.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Potential.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [cubicPotential](../../../../RealFunctions/Potential.lean/declarations/cubicpotential.md) | 18 | `declaration-track:836b7ac34f50785cad70f3cee5ff15692d2a785be77f366ab0f96f626ba36f2d` |
-| 2 | `theorem` | [eval_cubicPotential](../../../../RealFunctions/Potential.lean/declarations/eval-cubicpotential.md) | 24 | `result-track:0e71343095da940e7fa48a6cf9ad97d31ead91f084ba562cbef75da1d30243b7` |
-| 3 | `theorem` | [derivative_cubicPotential](../../../../RealFunctions/Potential.lean/declarations/derivative-cubicpotential.md) | 33 | `result-track:49a00253dca3228a69968306840d62f1fc9496ff2a4e28ca95b0a43f32030bff` |
-| 4 | `theorem` | [hasDerivAt_cubicPotential](../../../../RealFunctions/Potential.lean/declarations/hasderivat-cubicpotential.md) | 45 | `result-track:e236dc7d6ce37703311f3bb5a7dc7e5d74eb96a4f53ff3013f4cb2fd12ee8397` |
+| 1 | `def` | [cubicPotential](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Potential.lean/declarations/cubicpotential.md) | 18 | `declaration-track:836b7ac34f50785cad70f3cee5ff15692d2a785be77f366ab0f96f626ba36f2d` |
+| 2 | `theorem` | [eval_cubicPotential](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Potential.lean/declarations/eval-cubicpotential.md) | 24 | `result-track:0e71343095da940e7fa48a6cf9ad97d31ead91f084ba562cbef75da1d30243b7` |
+| 3 | `theorem` | [derivative_cubicPotential](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Potential.lean/declarations/derivative-cubicpotential.md) | 33 | `result-track:49a00253dca3228a69968306840d62f1fc9496ff2a4e28ca95b0a43f32030bff` |
+| 4 | `theorem` | [hasDerivAt_cubicPotential](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Potential.lean/declarations/hasderivat-cubicpotential.md) | 45 | `result-track:e236dc7d6ce37703311f3bb5a7dc7e5d74eb96a4f53ff3013f4cb2fd12ee8397` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

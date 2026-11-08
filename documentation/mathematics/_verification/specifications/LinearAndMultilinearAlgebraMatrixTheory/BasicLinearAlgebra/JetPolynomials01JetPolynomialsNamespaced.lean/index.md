@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/JetPolynomials01JetPolynomialsNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/JetPolynomials01JetPolynomialsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/JetPolynomials01JetPolynomialsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/JetPolynomials01JetPolynomialsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [thetaPhiJetPolynomial](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/JetPolynomials01JetPolynomialsNamespaced.lean/declarations/thetaphijetpolynomial.md) | 25 | `declaration-track:27fe871f7e9c7ec13cd4e1ea8bfd5000f532c1c85a260af18923ab500aead458` |
-| 2 | `theorem` | [thetaPhiJetPolynomial_abs_le](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/JetPolynomials01JetPolynomialsNamespaced.lean/declarations/thetaphijetpolynomial-abs-le.md) | 34 | `result-track:87671cbdc129881c30f17203c22b8dd8c743d637667330d1d9658c31131a7d7d` |
+| 1 | `def` | [thetaPhiJetPolynomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/JetPolynomials01JetPolynomialsNamespaced.lean/declarations/thetaphijetpolynomial.md) | 25 | `declaration-track:27fe871f7e9c7ec13cd4e1ea8bfd5000f532c1c85a260af18923ab500aead458` |
+| 2 | `theorem` | [thetaPhiJetPolynomial_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/JetPolynomials01JetPolynomialsNamespaced.lean/declarations/thetaphijetpolynomial-abs-le.md) | 34 | `result-track:87671cbdc129881c30f17203c22b8dd8c743d637667330d1d9658c31131a7d7d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

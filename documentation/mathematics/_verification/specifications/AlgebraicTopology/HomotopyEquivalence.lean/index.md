@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/HomotopyEquivalence.lean/index.md) · [Full source](../../../../AlgebraicTopology/HomotopyEquivalence.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomotopyEquivalence.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomotopyEquivalence.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [homotopyPToId](../../../../AlgebraicTopology/HomotopyEquivalence.lean/declarations/homotopyptoid.md) | 31 | `declaration-track:d0ee60044faff7147a9e4ab2951d3e1115590ec6187464c080c86b6dd057bdde` |
-| 2 | `def` | [homotopyQToZero](../../../../AlgebraicTopology/HomotopyEquivalence.lean/declarations/homotopyqtozero.md) | 43 | `declaration-track:0fae33d5a311121d32df28b78d8bd91ea2617c6735512f01e3270559b5138ee0` |
-| 3 | `theorem` | [homotopyPToId_eventually_constant](../../../../AlgebraicTopology/HomotopyEquivalence.lean/declarations/homotopyptoid-eventually-constant.md) | 46 | `result-track:13edcc5969b978c406ed47dbf47c9a81271fc09919fdc8832120a70963243cd5` |
-| 4 | `def` | [homotopyPInftyToId](../../../../AlgebraicTopology/HomotopyEquivalence.lean/declarations/homotopypinftytoid.md) | 57 | `declaration-track:53aa7838ff981b64b4aceb0601cb8fe24b630d84bc9631d8c0403d3219c7ed6c` |
-| 5 | `def` | [homotopyEquivNormalizedMooreComplexAlternatingFaceMapComplex](../../../../AlgebraicTopology/HomotopyEquivalence.lean/declarations/homotopyequivnormalizedmoorecomplexalternatingfacemapcomplex.md) | 74 | `declaration-track:5dab0ab47d26d4ea65fe642d1f23e6714b91c420937b4f357722a4d05f7dc9f3` |
+| 1 | `def` | [homotopyPToId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomotopyEquivalence.lean/declarations/homotopyptoid.md) | 31 | `declaration-track:d0ee60044faff7147a9e4ab2951d3e1115590ec6187464c080c86b6dd057bdde` |
+| 2 | `def` | [homotopyQToZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomotopyEquivalence.lean/declarations/homotopyqtozero.md) | 43 | `declaration-track:0fae33d5a311121d32df28b78d8bd91ea2617c6735512f01e3270559b5138ee0` |
+| 3 | `theorem` | [homotopyPToId_eventually_constant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomotopyEquivalence.lean/declarations/homotopyptoid-eventually-constant.md) | 46 | `result-track:13edcc5969b978c406ed47dbf47c9a81271fc09919fdc8832120a70963243cd5` |
+| 4 | `def` | [homotopyPInftyToId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomotopyEquivalence.lean/declarations/homotopypinftytoid.md) | 57 | `declaration-track:53aa7838ff981b64b4aceb0601cb8fe24b630d84bc9631d8c0403d3219c7ed6c` |
+| 5 | `def` | [homotopyEquivNormalizedMooreComplexAlternatingFaceMapComplex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomotopyEquivalence.lean/declarations/homotopyequivnormalizedmoorecomplexalternatingfacemapcomplex.md) | 74 | `declaration-track:5dab0ab47d26d4ea65fe642d1f23e6714b91c420937b4f357722a4d05f7dc9f3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

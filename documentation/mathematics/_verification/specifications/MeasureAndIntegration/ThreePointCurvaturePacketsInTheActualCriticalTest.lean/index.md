@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ThreePointCurvaturePacketsInTheActualCriticalTest.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ThreePointCurvaturePacketsInTheActualCriticalTest.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ThreePointCurvaturePacketsInTheActualCriticalTest.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ThreePointCurvaturePacketsInTheActualCriticalTest.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,15 +59,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [packetValue](../../../../MeasureAndIntegration/ThreePointCurvaturePacketsInTheActualCriticalTest.lean/declarations/packetvalue.md) | 29 | `declaration-track:7e4505b772cef30336265696c88a9b9abbc067a4f552ea08e2df5916de1d8efe` |
-| 2 | `theorem` | [packet_constant](../../../../MeasureAndIntegration/ThreePointCurvaturePacketsInTheActualCriticalTest.lean/declarations/packet-constant.md) | 32 | `result-track:afd804799d03f47691633a4385e2d10c729e52464ec5259e837359c2c01fa142` |
-| 3 | `theorem` | [packet_affine](../../../../MeasureAndIntegration/ThreePointCurvaturePacketsInTheActualCriticalTest.lean/declarations/packet-affine.md) | 38 | `result-track:6479da1a1531dc8051219bf01d9abc974f45c6a6d80a3f7a8f5af02f3d34a2d2` |
-| 4 | `theorem` | [packet_centered_second_moment](../../../../MeasureAndIntegration/ThreePointCurvaturePacketsInTheActualCriticalTest.lean/declarations/packet-centered-second-moment.md) | 44 | `result-track:54fde6d8bfe7acc1ba729463a88194192c8ff9ac82d3a43cba6286f7027866eb` |
-| 5 | `theorem` | [packet_green_local](../../../../MeasureAndIntegration/ThreePointCurvaturePacketsInTheActualCriticalTest.lean/declarations/packet-green-local.md) | 51 | `result-track:2baca3341027b0ffc4ed6b10cc7b3096796ce0ead09535a1a7c4fdadd0026202` |
-| 6 | `theorem` | [packet_green](../../../../MeasureAndIntegration/ThreePointCurvaturePacketsInTheActualCriticalTest.lean/declarations/packet-green.md) | 67 | `result-track:87d572e40893d889c9afc058a175ce6cc6f8e488dc2b78fc55eb7a7a35580d20` |
-| 7 | `theorem` | [packet_tent_mass](../../../../MeasureAndIntegration/ThreePointCurvaturePacketsInTheActualCriticalTest.lean/declarations/packet-tent-mass.md) | 91 | `result-track:2fe010e8e1743e41943d5d4ab84a81e573132814e6a6e1ee35893d33a4d3012e` |
-| 8 | `theorem` | [packet_abs_le_curvature](../../../../MeasureAndIntegration/ThreePointCurvaturePacketsInTheActualCriticalTest.lean/declarations/packet-abs-le-curvature.md) | 113 | `result-track:75bb879589dac4de06d50382897eb761d7d61e3dff32b3944d533d41a11fae36` |
-| 9 | `theorem` | [critical_packet_green](../../../../MeasureAndIntegration/ThreePointCurvaturePacketsInTheActualCriticalTest.lean/declarations/critical-packet-green.md) | 140 | `result-track:fb29a88171b33c8aa0dc3a587bd9bfeca13bc5f76b697d1eec58c610d4dc4363` |
+| 1 | `def` | [packetValue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ThreePointCurvaturePacketsInTheActualCriticalTest.lean/declarations/packetvalue.md) | 29 | `declaration-track:7e4505b772cef30336265696c88a9b9abbc067a4f552ea08e2df5916de1d8efe` |
+| 2 | `theorem` | [packet_constant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ThreePointCurvaturePacketsInTheActualCriticalTest.lean/declarations/packet-constant.md) | 32 | `result-track:afd804799d03f47691633a4385e2d10c729e52464ec5259e837359c2c01fa142` |
+| 3 | `theorem` | [packet_affine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ThreePointCurvaturePacketsInTheActualCriticalTest.lean/declarations/packet-affine.md) | 38 | `result-track:6479da1a1531dc8051219bf01d9abc974f45c6a6d80a3f7a8f5af02f3d34a2d2` |
+| 4 | `theorem` | [packet_centered_second_moment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ThreePointCurvaturePacketsInTheActualCriticalTest.lean/declarations/packet-centered-second-moment.md) | 44 | `result-track:54fde6d8bfe7acc1ba729463a88194192c8ff9ac82d3a43cba6286f7027866eb` |
+| 5 | `theorem` | [packet_green_local](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ThreePointCurvaturePacketsInTheActualCriticalTest.lean/declarations/packet-green-local.md) | 51 | `result-track:2baca3341027b0ffc4ed6b10cc7b3096796ce0ead09535a1a7c4fdadd0026202` |
+| 6 | `theorem` | [packet_green](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ThreePointCurvaturePacketsInTheActualCriticalTest.lean/declarations/packet-green.md) | 67 | `result-track:87d572e40893d889c9afc058a175ce6cc6f8e488dc2b78fc55eb7a7a35580d20` |
+| 7 | `theorem` | [packet_tent_mass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ThreePointCurvaturePacketsInTheActualCriticalTest.lean/declarations/packet-tent-mass.md) | 91 | `result-track:2fe010e8e1743e41943d5d4ab84a81e573132814e6a6e1ee35893d33a4d3012e` |
+| 8 | `theorem` | [packet_abs_le_curvature](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ThreePointCurvaturePacketsInTheActualCriticalTest.lean/declarations/packet-abs-le-curvature.md) | 113 | `result-track:75bb879589dac4de06d50382897eb761d7d61e3dff32b3944d533d41a11fae36` |
+| 9 | `theorem` | [critical_packet_green](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ThreePointCurvaturePacketsInTheActualCriticalTest.lean/declarations/critical-packet-green.md) | 140 | `result-track:fb29a88171b33c8aa0dc3a587bd9bfeca13bc5f76b697d1eec58c610d4dc4363` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

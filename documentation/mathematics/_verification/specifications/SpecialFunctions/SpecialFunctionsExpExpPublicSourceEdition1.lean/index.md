@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../SpecialFunctions/SpecialFunctionsExpExpPublicSourceEdition1.lean/index.md) · [Full source](../../../../SpecialFunctions/SpecialFunctionsExpExpPublicSourceEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/SpecialFunctionsExpExpPublicSourceEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/SpecialFunctionsExpExpPublicSourceEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [le_exp_self](../../../../SpecialFunctions/SpecialFunctionsExpExpPublicSourceEdition1.lean/declarations/le-exp-self.md) | 22 | `result-track:3ffe2b342613b34887903594e0ffd34be6b96d5343f416dff7772b46a3ce3a8f` |
-| 2 | `lemma` | [mul_four_le_exp_add](../../../../SpecialFunctions/SpecialFunctionsExpExpPublicSourceEdition1.lean/declarations/mul-four-le-exp-add.md) | 26 | `result-track:b4a9e4a5d88c75a1989ab43596b516ffcdb8ea9c578d8f5f04411f1ce16556a1` |
-| 3 | `lemma` | [two_mul_le_exp_two_mul_sq](../../../../SpecialFunctions/SpecialFunctionsExpExpPublicSourceEdition1.lean/declarations/two-mul-le-exp-two-mul-sq.md) | 42 | `result-track:3abd079e9e3d6bf4a3439f5680dfbf21f1b372f1cc2a0c4d271f8bbcc97def40` |
+| 1 | `theorem` | [le_exp_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/SpecialFunctionsExpExpPublicSourceEdition1.lean/declarations/le-exp-self.md) | 22 | `result-track:3ffe2b342613b34887903594e0ffd34be6b96d5343f416dff7772b46a3ce3a8f` |
+| 2 | `lemma` | [mul_four_le_exp_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/SpecialFunctionsExpExpPublicSourceEdition1.lean/declarations/mul-four-le-exp-add.md) | 26 | `result-track:b4a9e4a5d88c75a1989ab43596b516ffcdb8ea9c578d8f5f04411f1ce16556a1` |
+| 3 | `lemma` | [two_mul_le_exp_two_mul_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/SpecialFunctionsExpExpPublicSourceEdition1.lean/declarations/two-mul-le-exp-two-mul-sq.md) | 42 | `result-track:3abd079e9e3d6bf4a3439f5680dfbf21f1b372f1cc2a0c4d271f8bbcc97def40` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

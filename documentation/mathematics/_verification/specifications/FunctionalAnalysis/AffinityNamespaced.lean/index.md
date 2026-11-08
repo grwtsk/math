@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/AffinityNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/AffinityNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AffinityNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AffinityNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [normalizedRealAffinityValue](../../../../FunctionalAnalysis/AffinityNamespaced.lean/declarations/normalizedrealaffinityvalue.md) | 32 | `declaration-track:ce62789a3c3976ba8b0cba25e31dbd74c01be0b64553758f1874be5cb2401a6f` |
-| 2 | `def` | [normalizedRealAffinity](../../../../FunctionalAnalysis/AffinityNamespaced.lean/declarations/normalizedrealaffinity.md) | 37 | `declaration-track:b9fb233c5a49d74b6d5a6fff7b96f19b6891b85f04fb0888cb10f41b45731fe8` |
-| 3 | `theorem` | [normalizedRealAffinityValue_comm](../../../../FunctionalAnalysis/AffinityNamespaced.lean/declarations/normalizedrealaffinityvalue-comm.md) | 43 | `result-track:d4624811e3564aa498059ca1633762631ffaf47be187c83fb6490e9f67f18876` |
-| 4 | `theorem` | [normalizedRealAffinity_comm](../../../../FunctionalAnalysis/AffinityNamespaced.lean/declarations/normalizedrealaffinity-comm.md) | 58 | `result-track:8de6083702ea349891b14cb855170985a808443311469bbb384bad24c69aa17a` |
-| 5 | `theorem` | [abs_normalizedRealAffinityValue_le_one](../../../../FunctionalAnalysis/AffinityNamespaced.lean/declarations/abs-normalizedrealaffinityvalue-le-one.md) | 72 | `result-track:738e4a7b93f1831acf633b5c490f941c8d7aa262d05d37d3a87dc680ef0d7f43` |
-| 6 | `theorem` | [normalizedRealAffinity_mem_Icc](../../../../FunctionalAnalysis/AffinityNamespaced.lean/declarations/normalizedrealaffinity-mem-icc.md) | 81 | `result-track:aaae29ee59d0fbefadf6181b8777dfc6a1aa014ced627aca129c36e14bb4b11f` |
+| 1 | `def` | [normalizedRealAffinityValue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AffinityNamespaced.lean/declarations/normalizedrealaffinityvalue.md) | 32 | `declaration-track:ce62789a3c3976ba8b0cba25e31dbd74c01be0b64553758f1874be5cb2401a6f` |
+| 2 | `def` | [normalizedRealAffinity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AffinityNamespaced.lean/declarations/normalizedrealaffinity.md) | 37 | `declaration-track:b9fb233c5a49d74b6d5a6fff7b96f19b6891b85f04fb0888cb10f41b45731fe8` |
+| 3 | `theorem` | [normalizedRealAffinityValue_comm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AffinityNamespaced.lean/declarations/normalizedrealaffinityvalue-comm.md) | 43 | `result-track:d4624811e3564aa498059ca1633762631ffaf47be187c83fb6490e9f67f18876` |
+| 4 | `theorem` | [normalizedRealAffinity_comm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AffinityNamespaced.lean/declarations/normalizedrealaffinity-comm.md) | 58 | `result-track:8de6083702ea349891b14cb855170985a808443311469bbb384bad24c69aa17a` |
+| 5 | `theorem` | [abs_normalizedRealAffinityValue_le_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AffinityNamespaced.lean/declarations/abs-normalizedrealaffinityvalue-le-one.md) | 72 | `result-track:738e4a7b93f1831acf633b5c490f941c8d7aa262d05d37d3a87dc680ef0d7f43` |
+| 6 | `theorem` | [normalizedRealAffinity_mem_Icc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AffinityNamespaced.lean/declarations/normalizedrealaffinity-mem-icc.md) | 81 | `result-track:aaae29ee59d0fbefadf6181b8777dfc6a1aa014ced627aca129c36e14bb4b11f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

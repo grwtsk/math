@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../DifferentialGeometry/ManifoldSmoothEmbeddingNamespacedPublic.lean/index.md) · [Full source](../../../../DifferentialGeometry/ManifoldSmoothEmbeddingNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/ManifoldSmoothEmbeddingNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/ManifoldSmoothEmbeddingNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [IsSmoothEmbedding](../../../../DifferentialGeometry/ManifoldSmoothEmbeddingNamespacedPublic.lean/declarations/issmoothembedding.md) | 81 | `declaration-track:65f7f2badfb29b8abaf3b9e67e6209eef3acd978b215453fd675399f8dd93d15` |
-| 2 | `lemma` | [id](../../../../DifferentialGeometry/ManifoldSmoothEmbeddingNamespacedPublic.lean/declarations/id.md) | 89 | `result-track:eaed2cf94da4f1539bc1827dad25453fdc98d04158a2454c3d25df69f23e160f` |
-| 3 | `theorem` | [prodMap](../../../../DifferentialGeometry/ManifoldSmoothEmbeddingNamespacedPublic.lean/declarations/prodmap.md) | 93 | `result-track:4885d52c613ea9cc7db644126ff7e5b3bb31e6b1fbc3a8f344467e58dfd89d60` |
-| 4 | `lemma` | [of_opens](../../../../DifferentialGeometry/ManifoldSmoothEmbeddingNamespacedPublic.lean/declarations/of-opens.md) | 100 | `result-track:8406c702539d4bcbbfd331a7597e72feaaa9e2ecd31c5e0feda6f51e715d7814` |
-| 5 | `lemma` | [Manifold Smooth Embedding Namespaced Public](../../../../DifferentialGeometry/ManifoldSmoothEmbeddingNamespacedPublic.lean/declarations/issmoothembedding-source-line-106-occurrence-2.md) | 106 | `result-track:74e149cffd6bd8b521be08ecdcc568ad6dc564a82528ba375d3ce88a8452d022` |
-| 6 | `lemma` | [sumInl](../../../../DifferentialGeometry/ManifoldSmoothEmbeddingNamespacedPublic.lean/declarations/suminl.md) | 111 | `result-track:85f438d659a83c7b391d80800a53f468daf3f77d2ab868be95e704e46671a6a5` |
-| 7 | `lemma` | [sumInr](../../../../DifferentialGeometry/ManifoldSmoothEmbeddingNamespacedPublic.lean/declarations/suminr.md) | 116 | `result-track:14708c6ac4af4e9da5cf8aca50502cee3000da84a005a6c14b76e81c0841d2bf` |
-| 8 | `lemma` | [contMDiff](../../../../DifferentialGeometry/ManifoldSmoothEmbeddingNamespacedPublic.lean/declarations/contmdiff.md) | 121 | `result-track:49393ecf5bb0ba7ffd30776989ba9e496c745639ad19a7d1bb322c03f2a01691` |
+| 1 | `structure` | [IsSmoothEmbedding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/ManifoldSmoothEmbeddingNamespacedPublic.lean/declarations/issmoothembedding.md) | 81 | `declaration-track:65f7f2badfb29b8abaf3b9e67e6209eef3acd978b215453fd675399f8dd93d15` |
+| 2 | `lemma` | [id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/ManifoldSmoothEmbeddingNamespacedPublic.lean/declarations/id.md) | 89 | `result-track:eaed2cf94da4f1539bc1827dad25453fdc98d04158a2454c3d25df69f23e160f` |
+| 3 | `theorem` | [prodMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/ManifoldSmoothEmbeddingNamespacedPublic.lean/declarations/prodmap.md) | 93 | `result-track:4885d52c613ea9cc7db644126ff7e5b3bb31e6b1fbc3a8f344467e58dfd89d60` |
+| 4 | `lemma` | [of_opens](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/ManifoldSmoothEmbeddingNamespacedPublic.lean/declarations/of-opens.md) | 100 | `result-track:8406c702539d4bcbbfd331a7597e72feaaa9e2ecd31c5e0feda6f51e715d7814` |
+| 5 | `lemma` | [Manifold Smooth Embedding Namespaced Public](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/ManifoldSmoothEmbeddingNamespacedPublic.lean/declarations/issmoothembedding-source-line-106-occurrence-2.md) | 106 | `result-track:74e149cffd6bd8b521be08ecdcc568ad6dc564a82528ba375d3ce88a8452d022` |
+| 6 | `lemma` | [sumInl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/ManifoldSmoothEmbeddingNamespacedPublic.lean/declarations/suminl.md) | 111 | `result-track:85f438d659a83c7b391d80800a53f468daf3f77d2ab868be95e704e46671a6a5` |
+| 7 | `lemma` | [sumInr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/ManifoldSmoothEmbeddingNamespacedPublic.lean/declarations/suminr.md) | 116 | `result-track:14708c6ac4af4e9da5cf8aca50502cee3000da84a005a6c14b76e81c0841d2bf` |
+| 8 | `lemma` | [contMDiff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/ManifoldSmoothEmbeddingNamespacedPublic.lean/declarations/contmdiff.md) | 121 | `result-track:49393ecf5bb0ba7ffd30776989ba9e496c745639ad19a7d1bb322c03f2a01691` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/PrincipalFiniteCoverNamespaced.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/PrincipalFiniteCoverNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PrincipalFiniteCoverNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PrincipalFiniteCoverNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PrincipalFiniteCoverRealization](../../../../GroupTheoryAndGeneralizations/PrincipalFiniteCoverNamespaced.lean/declarations/principalfinitecoverrealization.md) | 24 | `declaration-track:5f6d2be6533ff6704a2a0906e53384cf36b4a8944e5f2328fa7e85bf91f5bcb8` |
+| 1 | `structure` | [PrincipalFiniteCoverRealization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PrincipalFiniteCoverNamespaced.lean/declarations/principalfinitecoverrealization.md) | 24 | `declaration-track:5f6d2be6533ff6704a2a0906e53384cf36b4a8944e5f2328fa7e85bf91f5bcb8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

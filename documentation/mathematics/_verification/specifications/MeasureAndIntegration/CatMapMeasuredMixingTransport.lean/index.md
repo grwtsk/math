@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CatMapMeasuredMixingTransport.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CatMapMeasuredMixingTransport.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CatMapMeasuredMixingTransport.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CatMapMeasuredMixingTransport.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Farey.CatMapContinuousPhaseObstruction`](../../../../GeneralTopology/CatMapContinuousPhaseObstruction.lean/index.md) — import line 11; pinned internal source present.
+- [`GRWTSK.NumberTheory.Farey.CatMapContinuousPhaseObstruction`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CatMapContinuousPhaseObstruction.lean/index.md) — import line 11; pinned internal source present.
 - `Mathlib.MeasureTheory.Measure.Real` — import line 12; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 13; external provider; requires a separately pinned dependency.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [HasPositiveOpenRealMass](../../../../MeasureAndIntegration/CatMapMeasuredMixingTransport.lean/declarations/haspositiveopenrealmass.md) | 59 | `declaration-track:4a37514c7a29d0f2d51c31785145c999fa45bbfc1060004ab08aaa9db93ac08a` |
-| 2 | `def` | [HasRealSetMixing](../../../../MeasureAndIntegration/CatMapMeasuredMixingTransport.lean/declarations/hasrealsetmixing.md) | 66 | `declaration-track:7e299c24b9e0144bcc1af4f8795850a8209f8723c17c033d3b78527d68487c6e` |
-| 3 | `theorem` | [eventualOpenMixing_of_realSetMixing](../../../../MeasureAndIntegration/CatMapMeasuredMixingTransport.lean/declarations/eventualopenmixing-of-realsetmixing.md) | 77 | `result-track:7238824aec0067ec126dc9d01a5eefb0ab357517f36ab31eb690259ca70d009a` |
-| 4 | `theorem` | [oddLocalReturns_of_realSetMixing](../../../../MeasureAndIntegration/CatMapMeasuredMixingTransport.lean/declarations/oddlocalreturns-of-realsetmixing.md) | 103 | `result-track:756f1f86ef936f5f6a1223d6d5757e92f284a0dbacb70c9d9f849f4561f64916` |
-| 5 | `theorem` | [catTorus_oddLocalReturns_of_realSetMixing](../../../../MeasureAndIntegration/CatMapMeasuredMixingTransport.lean/declarations/cattorus-oddlocalreturns-of-realsetmixing.md) | 115 | `result-track:6a2a63d6221d0f376278ca9f25b540318bbe03a3086bf20ce41ea8ab3c2a7504` |
-| 6 | `theorem` | [no_continuous_cat_phase_extension_of_realSetMixing](../../../../MeasureAndIntegration/CatMapMeasuredMixingTransport.lean/declarations/no-continuous-cat-phase-extension-of-realsetmixing.md) | 132 | `result-track:3bbf0ac8381106ff7ec5de4214c6f4dfeaafb94dceb2376a7eae8a61cc0b6dac` |
+| 1 | `def` | [HasPositiveOpenRealMass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CatMapMeasuredMixingTransport.lean/declarations/haspositiveopenrealmass.md) | 59 | `declaration-track:4a37514c7a29d0f2d51c31785145c999fa45bbfc1060004ab08aaa9db93ac08a` |
+| 2 | `def` | [HasRealSetMixing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CatMapMeasuredMixingTransport.lean/declarations/hasrealsetmixing.md) | 66 | `declaration-track:7e299c24b9e0144bcc1af4f8795850a8209f8723c17c033d3b78527d68487c6e` |
+| 3 | `theorem` | [eventualOpenMixing_of_realSetMixing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CatMapMeasuredMixingTransport.lean/declarations/eventualopenmixing-of-realsetmixing.md) | 77 | `result-track:7238824aec0067ec126dc9d01a5eefb0ab357517f36ab31eb690259ca70d009a` |
+| 4 | `theorem` | [oddLocalReturns_of_realSetMixing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CatMapMeasuredMixingTransport.lean/declarations/oddlocalreturns-of-realsetmixing.md) | 103 | `result-track:756f1f86ef936f5f6a1223d6d5757e92f284a0dbacb70c9d9f849f4561f64916` |
+| 5 | `theorem` | [catTorus_oddLocalReturns_of_realSetMixing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CatMapMeasuredMixingTransport.lean/declarations/cattorus-oddlocalreturns-of-realsetmixing.md) | 115 | `result-track:6a2a63d6221d0f376278ca9f25b540318bbe03a3086bf20ce41ea8ab3c2a7504` |
+| 6 | `theorem` | [no_continuous_cat_phase_extension_of_realSetMixing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CatMapMeasuredMixingTransport.lean/declarations/no-continuous-cat-phase-extension-of-realsetmixing.md) | 132 | `result-track:3bbf0ac8381106ff7ec5de4214c6f4dfeaafb94dceb2376a7eae8a61cc0b6dac` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

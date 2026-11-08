@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SlashSeparatedStringConstraints.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SlashSeparatedStringConstraints.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SlashSeparatedStringConstraints.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SlashSeparatedStringConstraints.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SafeRelPath](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SlashSeparatedStringConstraints.lean/declarations/saferelpath.md) | 36 | `declaration-track:b39980e90727795590dd4302ef16d42e1653ff37edc315b8e9419e67f38b32ad` |
-| 2 | `theorem` | [safeRelPath_no_dotdot](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SlashSeparatedStringConstraints.lean/declarations/saferelpath-no-dotdot.md) | 43 | `result-track:b1193e1e9afba2ee38f14ae386c1b87ba6f57d4bc8ab42b3707fc7194e8ad201` |
-| 3 | `theorem` | [safeRelPath_not_empty](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SlashSeparatedStringConstraints.lean/declarations/saferelpath-not-empty.md) | 48 | `result-track:04974e07afe7a833348e17b7a88f2f6e41d8d8b13f3f767eb0cfc01658837f08` |
+| 1 | `structure` | [SafeRelPath](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SlashSeparatedStringConstraints.lean/declarations/saferelpath.md) | 36 | `declaration-track:b39980e90727795590dd4302ef16d42e1653ff37edc315b8e9419e67f38b32ad` |
+| 2 | `theorem` | [safeRelPath_no_dotdot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SlashSeparatedStringConstraints.lean/declarations/saferelpath-no-dotdot.md) | 43 | `result-track:b1193e1e9afba2ee38f14ae386c1b87ba6f57d4bc8ab42b3707fc7194e8ad201` |
+| 3 | `theorem` | [safeRelPath_not_empty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SlashSeparatedStringConstraints.lean/declarations/saferelpath-not-empty.md) | 48 | `result-track:04974e07afe7a833348e17b7a88f2f6e41d8d8b13f3f767eb0cfc01658837f08` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

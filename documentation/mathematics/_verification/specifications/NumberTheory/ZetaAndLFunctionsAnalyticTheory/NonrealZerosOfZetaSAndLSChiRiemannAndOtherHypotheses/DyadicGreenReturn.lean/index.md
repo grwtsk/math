@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicGreenReturn.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicGreenReturn.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicGreenReturn.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicGreenReturn.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.GreenMellinContinuation`](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/GreenMellinContinuation.lean/index.md) — import line 7; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.LogDerivativeZeroExclusion`](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZetaLogDerivativeZeroExclusion.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.GreenMellinContinuation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/GreenMellinContinuation.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.LogDerivativeZeroExclusion`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZetaLogDerivativeZeroExclusion.lean/index.md) — import line 8; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [riemannHypothesis_of_energy](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicGreenReturn.lean/declarations/riemannhypothesis-of-energy.md) | 27 | `result-track:64b0796ffde4b79f8750e43832deee7140e9cc404cbf5d1c0ff4e48cbca866ac` |
-| 2 | `theorem` | [dyadicGreenReturn](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicGreenReturn.lean/declarations/dyadicgreenreturn.md) | 33 | `result-track:9efcd2b741f4598e8dee83f80878d4531d5d573fe21ccb9412bda979fb9ace33` |
-| 3 | `theorem` | [not_energy_of_offline_zero](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicGreenReturn.lean/declarations/not-energy-of-offline-zero.md) | 37 | `result-track:0e42fe3adcf42878d889eb36a0bf62ff9418802573aeb4d30b0ccb99e90b0fa6` |
+| 1 | `theorem` | [riemannHypothesis_of_energy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicGreenReturn.lean/declarations/riemannhypothesis-of-energy.md) | 27 | `result-track:64b0796ffde4b79f8750e43832deee7140e9cc404cbf5d1c0ff4e48cbca866ac` |
+| 2 | `theorem` | [dyadicGreenReturn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicGreenReturn.lean/declarations/dyadicgreenreturn.md) | 33 | `result-track:9efcd2b741f4598e8dee83f80878d4531d5d573fe21ccb9412bda979fb9ace33` |
+| 3 | `theorem` | [not_energy_of_offline_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicGreenReturn.lean/declarations/not-energy-of-offline-zero.md) | 37 | `result-track:0e42fe3adcf42878d889eb36a0bf62ff9418802573aeb4d30b0ccb99e90b0fa6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/TaxonEvidence.lean/index.md) · [Full source](../../../../Combinatorics/TaxonEvidence.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TaxonEvidence.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TaxonEvidence.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,12 +62,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [HomeCriterion](../../../../Combinatorics/TaxonEvidence.lean/declarations/homecriterion.md) | 15 | `declaration-track:1551ec6cae75c3ee219634734a21d4ddea6dfbd2928e4e7b9bf872287b6ce9a2` |
-| 2 | `structure` | [RoleEvidence](../../../../Combinatorics/TaxonEvidence.lean/declarations/roleevidence.md) | 22 | `declaration-track:f77d9404bc76612fceea7dd14c773c81151a1f6b260ed579ca8afb65fd815178` |
-| 3 | `structure` | [DomainEvidence](../../../../Combinatorics/TaxonEvidence.lean/declarations/domainevidence.md) | 28 | `declaration-track:4cb550ea48071ea55ce93e7287c90d054ce251e1765947b17d1bd88d8d08d538` |
-| 4 | `structure` | [FacetEvidence](../../../../Combinatorics/TaxonEvidence.lean/declarations/facetevidence.md) | 35 | `declaration-track:b2ca01f625b5d2bf67419726856f0e325fc5c60311d7437daa941caae8404ca8` |
-| 5 | `structure` | [StatusEvidence](../../../../Combinatorics/TaxonEvidence.lean/declarations/statusevidence.md) | 41 | `declaration-track:d4318ba33954a9c5b41877dc83f94f0eeda2bbeaf59237f16644afa2e75c103f` |
-| 6 | `structure` | [TaxonEvidence](../../../../Combinatorics/TaxonEvidence.lean/declarations/taxonevidence.md) | 47 | `declaration-track:ce29262a06c3c343fb2b418e627a7b439e7fdcb065a75df3b857d1b0ae1ab796` |
+| 1 | `inductive` | [HomeCriterion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TaxonEvidence.lean/declarations/homecriterion.md) | 15 | `declaration-track:1551ec6cae75c3ee219634734a21d4ddea6dfbd2928e4e7b9bf872287b6ce9a2` |
+| 2 | `structure` | [RoleEvidence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TaxonEvidence.lean/declarations/roleevidence.md) | 22 | `declaration-track:f77d9404bc76612fceea7dd14c773c81151a1f6b260ed579ca8afb65fd815178` |
+| 3 | `structure` | [DomainEvidence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TaxonEvidence.lean/declarations/domainevidence.md) | 28 | `declaration-track:4cb550ea48071ea55ce93e7287c90d054ce251e1765947b17d1bd88d8d08d538` |
+| 4 | `structure` | [FacetEvidence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TaxonEvidence.lean/declarations/facetevidence.md) | 35 | `declaration-track:b2ca01f625b5d2bf67419726856f0e325fc5c60311d7437daa941caae8404ca8` |
+| 5 | `structure` | [StatusEvidence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TaxonEvidence.lean/declarations/statusevidence.md) | 41 | `declaration-track:d4318ba33954a9c5b41877dc83f94f0eeda2bbeaf59237f16644afa2e75c103f` |
+| 6 | `structure` | [TaxonEvidence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TaxonEvidence.lean/declarations/taxonevidence.md) | 47 | `declaration-track:ce29262a06c3c343fb2b418e627a7b439e7fdcb065a75df3b857d1b0ae1ab796` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/Proper.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/Proper.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Proper.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Proper.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [IsProper](../../../../ProbabilityTheoryAndStochasticProcesses/Proper.lean/declarations/isproper.md) | 43 | `declaration-track:0881660704f564cba0075655e86dda4a2c196b8ee49de720268db8e7144f1490` |
-| 2 | `lemma` | [isProper_iff_restrict_eq_indicator_smul](../../../../ProbabilityTheoryAndStochasticProcesses/Proper.lean/declarations/isproper-iff-restrict-eq-indicator-smul.md) | 48 | `result-track:70cd5a81f6f009338eadb3bc40bd2afbdb4f313cdee83d9e28c55c963cf19008` |
-| 3 | `lemma` | [isProper_iff_inter_eq_indicator_mul](../../../../ProbabilityTheoryAndStochasticProcesses/Proper.lean/declarations/isproper-iff-inter-eq-indicator-mul.md) | 53 | `result-track:b20ed9adfbeeba31a3487da0e56c14f5d46560267575064e7273ac44ef993fc0` |
-| 4 | `lemma` | [IsProper.setLIntegral_eq_comp](../../../../ProbabilityTheoryAndStochasticProcesses/Proper.lean/declarations/isproper-setlintegral-eq-comp.md) | 69 | `result-track:4feb9ef9f3412d2019f3d7a1439d3c49eaf8bf85a6aab1af1a724baca662da8b` |
-| 5 | `lemma` | [IsProper.lintegral_indicator_mul_indicator](../../../../ProbabilityTheoryAndStochasticProcesses/Proper.lean/declarations/isproper-lintegral-indicator-mul-indicator.md) | 82 | `result-track:354c29127924d275a5ec9b042aa7d5301f726dd4a61df755449e351959f3dd63` |
-| 6 | `lemma` | [IsProper.lintegral_indicator_mul](../../../../ProbabilityTheoryAndStochasticProcesses/Proper.lean/declarations/isproper-lintegral-indicator-mul.md) | 95 | `result-track:93b55f11ba2d44d30b70872ceb9cc97522967702f64dd574da5fa1e4973a73bc` |
-| 7 | `lemma` | [IsProper.setLIntegral_eq_indicator_mul_lintegral](../../../../ProbabilityTheoryAndStochasticProcesses/Proper.lean/declarations/isproper-setlintegral-eq-indicator-mul-lintegral.md) | 112 | `result-track:975f66cbaa39fe21c7bc727786321c2588fa858398f573a1ccf29bec63aa77e5` |
-| 8 | `lemma` | [IsProper.setLIntegral_inter_eq_indicator_mul_setLIntegral](../../../../ProbabilityTheoryAndStochasticProcesses/Proper.lean/declarations/isproper-setlintegral-inter-eq-indicator-mul-setlintegral.md) | 118 | `result-track:7542215adc4a794909a745d4083295d71437d49c530437843b478f5b6af9a0fe` |
-| 9 | `lemma` | [IsProper.lintegral_mul](../../../../ProbabilityTheoryAndStochasticProcesses/Proper.lean/declarations/isproper-lintegral-mul.md) | 124 | `result-track:e261c94b8eab254a7d4c89a3c2d3b8478f1376de0938fe224928748807959c7a` |
+| 1 | `structure` | [IsProper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Proper.lean/declarations/isproper.md) | 43 | `declaration-track:0881660704f564cba0075655e86dda4a2c196b8ee49de720268db8e7144f1490` |
+| 2 | `lemma` | [isProper_iff_restrict_eq_indicator_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Proper.lean/declarations/isproper-iff-restrict-eq-indicator-smul.md) | 48 | `result-track:70cd5a81f6f009338eadb3bc40bd2afbdb4f313cdee83d9e28c55c963cf19008` |
+| 3 | `lemma` | [isProper_iff_inter_eq_indicator_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Proper.lean/declarations/isproper-iff-inter-eq-indicator-mul.md) | 53 | `result-track:b20ed9adfbeeba31a3487da0e56c14f5d46560267575064e7273ac44ef993fc0` |
+| 4 | `lemma` | [IsProper.setLIntegral_eq_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Proper.lean/declarations/isproper-setlintegral-eq-comp.md) | 69 | `result-track:4feb9ef9f3412d2019f3d7a1439d3c49eaf8bf85a6aab1af1a724baca662da8b` |
+| 5 | `lemma` | [IsProper.lintegral_indicator_mul_indicator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Proper.lean/declarations/isproper-lintegral-indicator-mul-indicator.md) | 82 | `result-track:354c29127924d275a5ec9b042aa7d5301f726dd4a61df755449e351959f3dd63` |
+| 6 | `lemma` | [IsProper.lintegral_indicator_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Proper.lean/declarations/isproper-lintegral-indicator-mul.md) | 95 | `result-track:93b55f11ba2d44d30b70872ceb9cc97522967702f64dd574da5fa1e4973a73bc` |
+| 7 | `lemma` | [IsProper.setLIntegral_eq_indicator_mul_lintegral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Proper.lean/declarations/isproper-setlintegral-eq-indicator-mul-lintegral.md) | 112 | `result-track:975f66cbaa39fe21c7bc727786321c2588fa858398f573a1ccf29bec63aa77e5` |
+| 8 | `lemma` | [IsProper.setLIntegral_inter_eq_indicator_mul_setLIntegral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Proper.lean/declarations/isproper-setlintegral-inter-eq-indicator-mul-setlintegral.md) | 118 | `result-track:7542215adc4a794909a745d4083295d71437d49c530437843b478f5b6af9a0fe` |
+| 9 | `lemma` | [IsProper.lintegral_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Proper.lean/declarations/isproper-lintegral-mul.md) | 124 | `result-track:e261c94b8eab254a7d4c89a3c2d3b8478f1376de0938fe224928748807959c7a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

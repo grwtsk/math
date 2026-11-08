@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourcePhysicalWindowCutoffsFixtures.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourcePhysicalWindowCutoffsFixtures.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePhysicalWindowCutoffsFixtures.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePhysicalWindowCutoffsFixtures.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [weak_natural_order_does_not_insert_adjacent](../../../../MeasureAndIntegration/SourcePhysicalWindowCutoffsFixtures.lean/declarations/weak-natural-order-does-not-insert-adjacent.md) | 28 | `result-track:8f39befb6fcc3b710d40fe59e8dc742937c07b0b339c38d7a036e07b03500ed2` |
-| 2 | `theorem` | [negative_scale_adjacent_bound_fails](../../../../MeasureAndIntegration/SourcePhysicalWindowCutoffsFixtures.lean/declarations/negative-scale-adjacent-bound-fails.md) | 32 | `result-track:6122c363f448dfe7317ddad58b95e770be91edac5af2b3bb6ded5d7370cc284b` |
-| 3 | `theorem` | [actual_unit_scale_strip_has_positive_width](../../../../MeasureAndIntegration/SourcePhysicalWindowCutoffsFixtures.lean/declarations/actual-unit-scale-strip-has-positive-width.md) | 43 | `result-track:1ac404cebaa3b1aa66c144799aef6a5d1f1d5f283de3bf6990d4027f9db7e5f7` |
-| 4 | `theorem` | [empty_actual_work_on_every_interval](../../../../MeasureAndIntegration/SourcePhysicalWindowCutoffsFixtures.lean/declarations/empty-actual-work-on-every-interval.md) | 50 | `result-track:3dd264d44781c922b2162dd6be37d9c48b78aab26d3ef6d2bd359f99efd4e617` |
-| 5 | `example` | [(anonymous)](../../../../MeasureAndIntegration/SourcePhysicalWindowCutoffsFixtures.lean/declarations/example-source-edition-3.md) | 59 | `declaration-track:c98fa4c6648753b969ff564901861a3478f46f14e0896886b3d109850bb09027` |
-| 6 | `example` | [(anonymous)](../../../../MeasureAndIntegration/SourcePhysicalWindowCutoffsFixtures.lean/declarations/example-source-edition-4.md) | 61 | `declaration-track:ce3c0c2cacbc28cd2672e85a62d0a8d0eff775b6bc476549da911ea1099ce905` |
-| 7 | `example` | [(anonymous)](../../../../MeasureAndIntegration/SourcePhysicalWindowCutoffsFixtures.lean/declarations/example-source-edition-2.md) | 64 | `declaration-track:1e1be88e70d316270dc4607e431b684909e5035b722be76895ab3d5eea491342` |
-| 8 | `example` | [(anonymous)](../../../../MeasureAndIntegration/SourcePhysicalWindowCutoffsFixtures.lean/declarations/example.md) | 67 | `declaration-track:11a5f269fdf8b326508eb484d70fda6fd3c7c72f44687fe9f4fe0c47c0eaec04` |
+| 1 | `theorem` | [weak_natural_order_does_not_insert_adjacent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePhysicalWindowCutoffsFixtures.lean/declarations/weak-natural-order-does-not-insert-adjacent.md) | 28 | `result-track:8f39befb6fcc3b710d40fe59e8dc742937c07b0b339c38d7a036e07b03500ed2` |
+| 2 | `theorem` | [negative_scale_adjacent_bound_fails](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePhysicalWindowCutoffsFixtures.lean/declarations/negative-scale-adjacent-bound-fails.md) | 32 | `result-track:6122c363f448dfe7317ddad58b95e770be91edac5af2b3bb6ded5d7370cc284b` |
+| 3 | `theorem` | [actual_unit_scale_strip_has_positive_width](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePhysicalWindowCutoffsFixtures.lean/declarations/actual-unit-scale-strip-has-positive-width.md) | 43 | `result-track:1ac404cebaa3b1aa66c144799aef6a5d1f1d5f283de3bf6990d4027f9db7e5f7` |
+| 4 | `theorem` | [empty_actual_work_on_every_interval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePhysicalWindowCutoffsFixtures.lean/declarations/empty-actual-work-on-every-interval.md) | 50 | `result-track:3dd264d44781c922b2162dd6be37d9c48b78aab26d3ef6d2bd359f99efd4e617` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePhysicalWindowCutoffsFixtures.lean/declarations/example-source-edition-3.md) | 59 | `declaration-track:c98fa4c6648753b969ff564901861a3478f46f14e0896886b3d109850bb09027` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePhysicalWindowCutoffsFixtures.lean/declarations/example-source-edition-4.md) | 61 | `declaration-track:ce3c0c2cacbc28cd2672e85a62d0a8d0eff775b6bc476549da911ea1099ce905` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePhysicalWindowCutoffsFixtures.lean/declarations/example-source-edition-2.md) | 64 | `declaration-track:1e1be88e70d316270dc4607e431b684909e5035b722be76895ab3d5eea491342` |
+| 8 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePhysicalWindowCutoffsFixtures.lean/declarations/example.md) | 67 | `declaration-track:11a5f269fdf8b326508eb484d70fda6fd3c7c72f44687fe9f4fe0c47c0eaec04` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

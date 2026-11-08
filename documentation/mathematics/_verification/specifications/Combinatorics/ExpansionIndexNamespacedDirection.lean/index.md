@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ExpansionIndexNamespacedDirection.lean/index.md) · [Full source](../../../../Combinatorics/ExpansionIndexNamespacedDirection.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ExpansionIndexNamespacedDirection.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ExpansionIndexNamespacedDirection.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [Direction](../../../../Combinatorics/ExpansionIndexNamespacedDirection.lean/declarations/direction.md) | 27 | `declaration-track:781508360d182cdf8e0e718c077ba356ccc3052a9304fe20db24fded1c621fc6` |
-| 2 | `abbrev` | [Address](../../../../Combinatorics/ExpansionIndexNamespacedDirection.lean/declarations/address.md) | 32 | `declaration-track:253b3e29d9d51c06ec142f66958200a9467fd02bf4ec07fd0b0c6a74d91820a9` |
-| 3 | `def` | [HasAddress](../../../../Combinatorics/ExpansionIndexNamespacedDirection.lean/declarations/hasaddress.md) | 36 | `declaration-track:9a085a93b925d01591f91bfbc375599f633e3a92469a858fe1569f98a68f5646` |
-| 4 | `def` | [expandAt?](../../../../Combinatorics/ExpansionIndexNamespacedDirection.lean/declarations/expandat.md) | 43 | `declaration-track:90b81e1174459309616bf193d7399c569c604705c864bb38721088964c54f163` |
-| 5 | `theorem` | [expandAt?_internal](../../../../Combinatorics/ExpansionIndexNamespacedDirection.lean/declarations/expandat-internal.md) | 56 | `result-track:473ba8a00d1de91c6939140037d471885065fcf14fa8b94dfa3867ec6e399847` |
-| 6 | `theorem` | [expandAt?_leaves](../../../../Combinatorics/ExpansionIndexNamespacedDirection.lean/declarations/expandat-leaves.md) | 99 | `result-track:550339549f907be7e9b4aee57e88e33479515d62cf4d616d99a9f1df0ce254da` |
+| 1 | `inductive` | [Direction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ExpansionIndexNamespacedDirection.lean/declarations/direction.md) | 27 | `declaration-track:781508360d182cdf8e0e718c077ba356ccc3052a9304fe20db24fded1c621fc6` |
+| 2 | `abbrev` | [Address](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ExpansionIndexNamespacedDirection.lean/declarations/address.md) | 32 | `declaration-track:253b3e29d9d51c06ec142f66958200a9467fd02bf4ec07fd0b0c6a74d91820a9` |
+| 3 | `def` | [HasAddress](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ExpansionIndexNamespacedDirection.lean/declarations/hasaddress.md) | 36 | `declaration-track:9a085a93b925d01591f91bfbc375599f633e3a92469a858fe1569f98a68f5646` |
+| 4 | `def` | [expandAt?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ExpansionIndexNamespacedDirection.lean/declarations/expandat.md) | 43 | `declaration-track:90b81e1174459309616bf193d7399c569c604705c864bb38721088964c54f163` |
+| 5 | `theorem` | [expandAt?_internal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ExpansionIndexNamespacedDirection.lean/declarations/expandat-internal.md) | 56 | `result-track:473ba8a00d1de91c6939140037d471885065fcf14fa8b94dfa3867ec6e399847` |
+| 6 | `theorem` | [expandAt?_leaves](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ExpansionIndexNamespacedDirection.lean/declarations/expandat-leaves.md) | 99 | `result-track:550339549f907be7e9b4aee57e88e33479515d62cf4d616d99a9f1df0ce254da` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

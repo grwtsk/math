@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderFieldDefsNamespaced.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderFieldDefsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderFieldDefsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderFieldDefsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [LinearOrderedSemifield](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderFieldDefsNamespaced.lean/declarations/linearorderedsemifield.md) | 38 | `declaration-track:d1aa5707786f2d58ad4cd024aa0b4a0634a08c767eb0b53422fc550571a78150` |
-| 2 | `structure` | [LinearOrderedField](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderFieldDefsNamespaced.lean/declarations/linearorderedfield.md) | 44 | `declaration-track:cad048c155b515313e6ee86b35d98c3175902d34d29edb634722c60b8b416ccb` |
+| 1 | `structure` | [LinearOrderedSemifield](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderFieldDefsNamespaced.lean/declarations/linearorderedsemifield.md) | 38 | `declaration-track:d1aa5707786f2d58ad4cd024aa0b4a0634a08c767eb0b53422fc550571a78150` |
+| 2 | `structure` | [LinearOrderedField](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderFieldDefsNamespaced.lean/declarations/linearorderedfield.md) | 44 | `declaration-track:cad048c155b515313e6ee86b35d98c3175902d34d29edb634722c60b8b416ccb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/WarningNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/WarningNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/WarningNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/WarningNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [scopeIsHead](../../../../../ComputerScience/AlgorithmsInComputerScience/WarningNamespaced.lean/declarations/scopeishead.md) | 42 | `declaration-track:05bc82ca8422d666d1b7268ffd3d84092f794d649d3cf09d02aa2efed5d2bd05` |
-| 2 | `def` | [shouldWarnNonDefaultScope](../../../../../ComputerScience/AlgorithmsInComputerScience/WarningNamespaced.lean/declarations/shouldwarnnondefaultscope.md) | 63 | `declaration-track:7aae41643e6dba6f3f7bdb7b9dcf1db40d021d61eeec91cb28e8b9907b66fd09` |
-| 3 | `def` | [printNonDefaultScopeWarning](../../../../../ComputerScience/AlgorithmsInComputerScience/WarningNamespaced.lean/declarations/printnondefaultscopewarning.md) | 103 | `declaration-track:7119f4562a125e354e7fab13caf4875b403474e8e4850a876f25527d7ec6769c` |
-| 4 | `def` | [getNonDefaultScopeReason](../../../../../ComputerScience/AlgorithmsInComputerScience/WarningNamespaced.lean/declarations/getnondefaultscopereason.md) | 124 | `declaration-track:f6d961152888d58d86d06a7ad33b5459f76f646d4043c16ca69a1074f40d3401` |
-| 5 | `def` | [warnIfNonDefaultScope](../../../../../ComputerScience/AlgorithmsInComputerScience/WarningNamespaced.lean/declarations/warnifnondefaultscope.md) | 166 | `declaration-track:21c644f556801ede1b412447bd13e150a627d0bca369db409a6f48a6fb61ac3a` |
-| 6 | `def` | [informIfHeadNotBuilt](../../../../../ComputerScience/AlgorithmsInComputerScience/WarningNamespaced.lean/declarations/informifheadnotbuilt.md) | 200 | `declaration-track:1969c89325c16bb4a9cffee86acf86d702e2d339046dc2e8cf437c71eec179f5` |
+| 1 | `def` | [scopeIsHead](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/WarningNamespaced.lean/declarations/scopeishead.md) | 42 | `declaration-track:05bc82ca8422d666d1b7268ffd3d84092f794d649d3cf09d02aa2efed5d2bd05` |
+| 2 | `def` | [shouldWarnNonDefaultScope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/WarningNamespaced.lean/declarations/shouldwarnnondefaultscope.md) | 63 | `declaration-track:7aae41643e6dba6f3f7bdb7b9dcf1db40d021d61eeec91cb28e8b9907b66fd09` |
+| 3 | `def` | [printNonDefaultScopeWarning](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/WarningNamespaced.lean/declarations/printnondefaultscopewarning.md) | 103 | `declaration-track:7119f4562a125e354e7fab13caf4875b403474e8e4850a876f25527d7ec6769c` |
+| 4 | `def` | [getNonDefaultScopeReason](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/WarningNamespaced.lean/declarations/getnondefaultscopereason.md) | 124 | `declaration-track:f6d961152888d58d86d06a7ad33b5459f76f646d4043c16ca69a1074f40d3401` |
+| 5 | `def` | [warnIfNonDefaultScope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/WarningNamespaced.lean/declarations/warnifnondefaultscope.md) | 166 | `declaration-track:21c644f556801ede1b412447bd13e150a627d0bca369db409a6f48a6fb61ac3a` |
+| 6 | `def` | [informIfHeadNotBuilt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/WarningNamespaced.lean/declarations/informifheadnotbuilt.md) | 200 | `declaration-track:1969c89325c16bb4a9cffee86acf86d702e2d339046dc2e8cf437c71eec179f5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

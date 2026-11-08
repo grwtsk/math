@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrderEmbedding.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrderEmbedding.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrderEmbedding.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrderEmbedding.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [preimage_Ici](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrderEmbedding.lean/declarations/preimage-ici.md) | 28 | `result-track:f98363953fd57816ba11e4aa76a7c1ac59533d1126d4b99bf37ab3f9bdea8148` |
-| 2 | `theorem` | [preimage_Iic](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrderEmbedding.lean/declarations/preimage-iic.md) | 29 | `result-track:37b79b570b20ed4aaff48e2d4b45b2d755c274ba7aeabdd7fc4a20b3a33f4c39` |
-| 3 | `theorem` | [preimage_Ioi](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrderEmbedding.lean/declarations/preimage-ioi.md) | 30 | `result-track:1c115155a19a0e24d933f4bfebdb1f6cf22e2edbe836ab915e37fa4234eaef6b` |
-| 4 | `theorem` | [preimage_Iio](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrderEmbedding.lean/declarations/preimage-iio.md) | 31 | `result-track:cd3fa5e4ad446c95d53085ac39c99d370efcbe42e102d1771022b133575e4ba7` |
-| 5 | `theorem` | [preimage_Icc](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrderEmbedding.lean/declarations/preimage-icc.md) | 33 | `result-track:e6bd242aca39118713e12dc7f290c69b25ffbcf58cb52e620ebf9425b5b31b12` |
-| 6 | `theorem` | [preimage_Ico](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrderEmbedding.lean/declarations/preimage-ico.md) | 34 | `result-track:36562b2032c2c478db003c7496ad20244f43e6446f578355f04b556f10dd3812` |
-| 7 | `theorem` | [preimage_Ioc](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrderEmbedding.lean/declarations/preimage-ioc.md) | 35 | `result-track:a9490ed139039e864faf95e26269f11c4161cd5c75a4d69ea8b7c63019540512` |
-| 8 | `theorem` | [preimage_Ioo](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrderEmbedding.lean/declarations/preimage-ioo.md) | 36 | `result-track:a59e46a4936d85d44f9a7e0c355c698aaf97938baf64a75f76a15f6b2ed3e71a` |
-| 9 | `theorem` | [preimage_uIcc](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrderEmbedding.lean/declarations/preimage-uicc.md) | 42 | `result-track:cfa9e4648343f044adfc0c9e3adcc3a4c413ad7454f8566bc8294e9beb4026ef` |
-| 10 | `theorem` | [preimage_uIoc](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrderEmbedding.lean/declarations/preimage-uioc.md) | 46 | `result-track:b56a391d5d52c9bc493e07b0e26c51fcadd75cc4997b131e7bca011cf4583c4c` |
+| 1 | `theorem` | [preimage_Ici](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrderEmbedding.lean/declarations/preimage-ici.md) | 28 | `result-track:f98363953fd57816ba11e4aa76a7c1ac59533d1126d4b99bf37ab3f9bdea8148` |
+| 2 | `theorem` | [preimage_Iic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrderEmbedding.lean/declarations/preimage-iic.md) | 29 | `result-track:37b79b570b20ed4aaff48e2d4b45b2d755c274ba7aeabdd7fc4a20b3a33f4c39` |
+| 3 | `theorem` | [preimage_Ioi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrderEmbedding.lean/declarations/preimage-ioi.md) | 30 | `result-track:1c115155a19a0e24d933f4bfebdb1f6cf22e2edbe836ab915e37fa4234eaef6b` |
+| 4 | `theorem` | [preimage_Iio](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrderEmbedding.lean/declarations/preimage-iio.md) | 31 | `result-track:cd3fa5e4ad446c95d53085ac39c99d370efcbe42e102d1771022b133575e4ba7` |
+| 5 | `theorem` | [preimage_Icc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrderEmbedding.lean/declarations/preimage-icc.md) | 33 | `result-track:e6bd242aca39118713e12dc7f290c69b25ffbcf58cb52e620ebf9425b5b31b12` |
+| 6 | `theorem` | [preimage_Ico](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrderEmbedding.lean/declarations/preimage-ico.md) | 34 | `result-track:36562b2032c2c478db003c7496ad20244f43e6446f578355f04b556f10dd3812` |
+| 7 | `theorem` | [preimage_Ioc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrderEmbedding.lean/declarations/preimage-ioc.md) | 35 | `result-track:a9490ed139039e864faf95e26269f11c4161cd5c75a4d69ea8b7c63019540512` |
+| 8 | `theorem` | [preimage_Ioo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrderEmbedding.lean/declarations/preimage-ioo.md) | 36 | `result-track:a59e46a4936d85d44f9a7e0c355c698aaf97938baf64a75f76a15f6b2ed3e71a` |
+| 9 | `theorem` | [preimage_uIcc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrderEmbedding.lean/declarations/preimage-uicc.md) | 42 | `result-track:cfa9e4648343f044adfc0c9e3adcc3a4c413ad7454f8566bc8294e9beb4026ef` |
+| 10 | `theorem` | [preimage_uIoc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrderEmbedding.lean/declarations/preimage-uioc.md) | 46 | `result-track:b56a391d5d52c9bc493e07b0e26c51fcadd75cc4997b131e7bca011cf4583c4c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ReciprocalPrefixVariationSummability.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ReciprocalPrefixVariationSummability.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReciprocalPrefixVariationSummability.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReciprocalPrefixVariationSummability.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Moebius.ReciprocalFluxKernelBounds`](../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ReciprocalFluxKernelBounds.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.ReciprocalFluxKernelBounds`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ReciprocalFluxKernelBounds.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [reciprocalLogVariationMajorant](../../../../MeasureAndIntegration/ReciprocalPrefixVariationSummability.lean/declarations/reciprocallogvariationmajorant.md) | 28 | `declaration-track:f9d588203156e84c6426c607ebbf0de11afd829a645409bf2c03c9432fe07d88` |
-| 2 | `theorem` | [reciprocalLogVariationMajorant_nonneg](../../../../MeasureAndIntegration/ReciprocalPrefixVariationSummability.lean/declarations/reciprocallogvariationmajorant-nonneg.md) | 32 | `result-track:7f035c9c1eb3bd0541c306332345ebacf8d7d007a7866ec6cc139e254290c366` |
-| 3 | `theorem` | [reciprocalCauchyBlock_le_logVariationMajorant](../../../../MeasureAndIntegration/ReciprocalPrefixVariationSummability.lean/declarations/reciprocalcauchyblock-le-logvariationmajorant.md) | 43 | `result-track:92aa80356c40eb07e813838e11d18a46a0d8e54fcd7a84db3e01d1bbb5fb3d28` |
-| 4 | `def` | [ReciprocalLogVariationSummable](../../../../MeasureAndIntegration/ReciprocalPrefixVariationSummability.lean/declarations/reciprocallogvariationsummable.md) | 106 | `declaration-track:5a9c8f99d28661f3ceb40238427d9095101cd068be036ec136de04874d3545a2` |
-| 5 | `theorem` | [criticalBoundary_of_reciprocalLogVariationSummable](../../../../MeasureAndIntegration/ReciprocalPrefixVariationSummability.lean/declarations/criticalboundary-of-reciprocallogvariationsummable.md) | 109 | `result-track:55bac828e54f6c3092153361a023e12c5ea296b6ff173124d7814f6122fe0070` |
+| 1 | `def` | [reciprocalLogVariationMajorant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReciprocalPrefixVariationSummability.lean/declarations/reciprocallogvariationmajorant.md) | 28 | `declaration-track:f9d588203156e84c6426c607ebbf0de11afd829a645409bf2c03c9432fe07d88` |
+| 2 | `theorem` | [reciprocalLogVariationMajorant_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReciprocalPrefixVariationSummability.lean/declarations/reciprocallogvariationmajorant-nonneg.md) | 32 | `result-track:7f035c9c1eb3bd0541c306332345ebacf8d7d007a7866ec6cc139e254290c366` |
+| 3 | `theorem` | [reciprocalCauchyBlock_le_logVariationMajorant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReciprocalPrefixVariationSummability.lean/declarations/reciprocalcauchyblock-le-logvariationmajorant.md) | 43 | `result-track:92aa80356c40eb07e813838e11d18a46a0d8e54fcd7a84db3e01d1bbb5fb3d28` |
+| 4 | `def` | [ReciprocalLogVariationSummable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReciprocalPrefixVariationSummability.lean/declarations/reciprocallogvariationsummable.md) | 106 | `declaration-track:5a9c8f99d28661f3ceb40238427d9095101cd068be036ec136de04874d3545a2` |
+| 5 | `theorem` | [criticalBoundary_of_reciprocalLogVariationSummable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReciprocalPrefixVariationSummability.lean/declarations/criticalboundary-of-reciprocallogvariationsummable.md) | 109 | `result-track:55bac828e54f6c3092153361a023e12c5ea296b6ff173124d7814f6122fe0070` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

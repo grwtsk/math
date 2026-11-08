@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/ModelDomainAndNonnegativity.lean/index.md) · [Full source](../../../../RealFunctions/ModelDomainAndNonnegativity.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ModelDomainAndNonnegativity.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ModelDomainAndNonnegativity.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -66,9 +66,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [precessionPhaseModel](../../../../RealFunctions/ModelDomainAndNonnegativity.lean/declarations/precessionphasemodel.md) | 43 | `declaration-track:36327c8588a5d88ebf5b8933e562792a730b19b19f716d17e7c53168efa9144b` |
-| 2 | `def` | [PrecessionAdmissible](../../../../RealFunctions/ModelDomainAndNonnegativity.lean/declarations/precessionadmissible.md) | 49 | `declaration-track:42ce05beebf27a4812c6d979dde818a5dc7bb457c873b14d158ada63ab42dd06` |
-| 3 | `theorem` | [precessionPhaseModel_nonnegative](../../../../RealFunctions/ModelDomainAndNonnegativity.lean/declarations/precessionphasemodel-nonnegative.md) | 52 | `result-track:4a74fe3acd286b5f92fbe85d313a5957c163c76aef957fb64c109b66a02b55bc` |
+| 1 | `def` | [precessionPhaseModel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ModelDomainAndNonnegativity.lean/declarations/precessionphasemodel.md) | 43 | `declaration-track:36327c8588a5d88ebf5b8933e562792a730b19b19f716d17e7c53168efa9144b` |
+| 2 | `def` | [PrecessionAdmissible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ModelDomainAndNonnegativity.lean/declarations/precessionadmissible.md) | 49 | `declaration-track:42ce05beebf27a4812c6d979dde818a5dc7bb457c873b14d158ada63ab42dd06` |
+| 3 | `theorem` | [precessionPhaseModel_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ModelDomainAndNonnegativity.lean/declarations/precessionphasemodel-nonnegative.md) | 52 | `result-track:4a74fe3acd286b5f92fbe85d313a5957c163c76aef957fb64c109b66a02b55bc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FieldTheoryAndPolynomials/FieldZModNamespaced.lean/index.md) · [Full source](../../../../FieldTheoryAndPolynomials/FieldZModNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldZModNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldZModNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [mul_inv_cancel_aux](../../../../FieldTheoryAndPolynomials/FieldZModNamespaced.lean/declarations/mul-inv-cancel-aux.md) | 24 | `result-track:f71498b6e4a801928844bdba830244d2452abc4f2cfb2b672e6adc9b068d6b08` |
-| 2 | `instance` | [(anonymous)](../../../../FieldTheoryAndPolynomials/FieldZModNamespaced.lean/declarations/instance-source-edition-2.md) | 31 | `declaration-track:56143a862c539f2f43b60d9b2f8d61eb649caf28db6beb4d0e1de59fc3be651e` |
-| 3 | `instance` | [(anonymous)](../../../../FieldTheoryAndPolynomials/FieldZModNamespaced.lean/declarations/instance.md) | 40 | `declaration-track:3680fa03e35cfbb329941c1a601b0a4b19b37ec8eab20af1281eeb2b7b4b6aca` |
+| 1 | `theorem` | [mul_inv_cancel_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldZModNamespaced.lean/declarations/mul-inv-cancel-aux.md) | 24 | `result-track:f71498b6e4a801928844bdba830244d2452abc4f2cfb2b672e6adc9b068d6b08` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldZModNamespaced.lean/declarations/instance-source-edition-2.md) | 31 | `declaration-track:56143a862c539f2f43b60d9b2f8d61eb649caf28db6beb4d0e1de59fc3be651e` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldZModNamespaced.lean/declarations/instance.md) | 40 | `declaration-track:3680fa03e35cfbb329941c1a601b0a4b19b37ec8eab20af1281eeb2b7b4b6aca` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

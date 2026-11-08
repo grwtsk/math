@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/TheFullIntegerCensusRetainsItsExponentialCutoffCellEdition1.lean/index.md) · [Full source](../../../../MeasureAndIntegration/TheFullIntegerCensusRetainsItsExponentialCutoffCellEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TheFullIntegerCensusRetainsItsExponentialCutoffCellEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TheFullIntegerCensusRetainsItsExponentialCutoffCellEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [censusCutoff](../../../../MeasureAndIntegration/TheFullIntegerCensusRetainsItsExponentialCutoffCellEdition1.lean/declarations/censuscutoff.md) | 22 | `declaration-track:469e452f62334866fb81fa4daf2b8049efc5fd81c35b8a7ee9874b7ca63e227c` |
-| 2 | `def` | [censusCount](../../../../MeasureAndIntegration/TheFullIntegerCensusRetainsItsExponentialCutoffCellEdition1.lean/declarations/censuscount.md) | 23 | `declaration-track:03bfd36ee67d8ea98795b6dc1030860f64b576a4980000a9ef8ea0b14420cde1` |
-| 3 | `def` | [actualCensus](../../../../MeasureAndIntegration/TheFullIntegerCensusRetainsItsExponentialCutoffCellEdition1.lean/declarations/actualcensus.md) | 24 | `declaration-track:e71c5423aa05476df158f1f189cf486be57f95bfa670ffcda33461e9a4377fef` |
-| 4 | `theorem` | [actual_sample_zero_at_and_beyond_cutoff](../../../../MeasureAndIntegration/TheFullIntegerCensusRetainsItsExponentialCutoffCellEdition1.lean/declarations/actual-sample-zero-at-and-beyond-cutoff.md) | 27 | `result-track:20ba3cd1d0b3a8369f3547338668b747b84f717d576e96646ce53593859d5dc5` |
-| 5 | `theorem` | [actual_census_integral_retains_final_cell](../../../../MeasureAndIntegration/TheFullIntegerCensusRetainsItsExponentialCutoffCellEdition1.lean/declarations/actual-census-integral-retains-final-cell.md) | 40 | `result-track:6a038e55b7e26590819bea38737dec98935cb964b3dd895fc2001d23d5942865` |
-| 6 | `theorem` | [actual_census_quadrature_price_le_fourteen](../../../../MeasureAndIntegration/TheFullIntegerCensusRetainsItsExponentialCutoffCellEdition1.lean/declarations/actual-census-quadrature-price-le-fourteen.md) | 70 | `result-track:10323f7b7fe22ec0749f0f93e387f6c440dd7090b5c919a8c07bd11aa4157415` |
+| 1 | `def` | [censusCutoff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TheFullIntegerCensusRetainsItsExponentialCutoffCellEdition1.lean/declarations/censuscutoff.md) | 22 | `declaration-track:469e452f62334866fb81fa4daf2b8049efc5fd81c35b8a7ee9874b7ca63e227c` |
+| 2 | `def` | [censusCount](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TheFullIntegerCensusRetainsItsExponentialCutoffCellEdition1.lean/declarations/censuscount.md) | 23 | `declaration-track:03bfd36ee67d8ea98795b6dc1030860f64b576a4980000a9ef8ea0b14420cde1` |
+| 3 | `def` | [actualCensus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TheFullIntegerCensusRetainsItsExponentialCutoffCellEdition1.lean/declarations/actualcensus.md) | 24 | `declaration-track:e71c5423aa05476df158f1f189cf486be57f95bfa670ffcda33461e9a4377fef` |
+| 4 | `theorem` | [actual_sample_zero_at_and_beyond_cutoff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TheFullIntegerCensusRetainsItsExponentialCutoffCellEdition1.lean/declarations/actual-sample-zero-at-and-beyond-cutoff.md) | 27 | `result-track:20ba3cd1d0b3a8369f3547338668b747b84f717d576e96646ce53593859d5dc5` |
+| 5 | `theorem` | [actual_census_integral_retains_final_cell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TheFullIntegerCensusRetainsItsExponentialCutoffCellEdition1.lean/declarations/actual-census-integral-retains-final-cell.md) | 40 | `result-track:6a038e55b7e26590819bea38737dec98935cb964b3dd895fc2001d23d5942865` |
+| 6 | `theorem` | [actual_census_quadrature_price_le_fourteen](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TheFullIntegerCensusRetainsItsExponentialCutoffCellEdition1.lean/declarations/actual-census-quadrature-price-le-fourteen.md) | 70 | `result-track:10323f7b7fe22ec0749f0f93e387f6c440dd7090b5c919a8c07bd11aa4157415` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

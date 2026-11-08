@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Period.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Period.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Period.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Period.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [findPeriodAux](../../../../../ComputerScience/AlgorithmsInComputerScience/Period.lean/declarations/findperiodaux.md) | 28 | `declaration-track:fbaee6af26329a32cec389b4a5a43e2345e20262077b3c7755d16104a55d3da6` |
-| 2 | `def` | [findPisanoPeriod](../../../../../ComputerScience/AlgorithmsInComputerScience/Period.lean/declarations/findpisanoperiod.md) | 40 | `declaration-track:6c994a267487340c7f51922ec9d6fd9f9c483f5c0a04765e4cdef5566504839e` |
-| 3 | `def` | [checkPeriod](../../../../../ComputerScience/AlgorithmsInComputerScience/Period.lean/declarations/checkperiod.md) | 48 | `declaration-track:17648048170392ba5fd9e902fc40246f6d0adf39ed8586ff18fe8cc78e4f265e` |
-| 4 | `def` | [checkPisanoPeriod](../../../../../ComputerScience/AlgorithmsInComputerScience/Period.lean/declarations/checkpisanoperiod.md) | 56 | `declaration-track:4e04adad997f1aefc0d8c5e4e21b040cdf04a723b4fae3a5897ae06d0553bb37` |
-| 5 | `def` | [primeFactors](../../../../../ComputerScience/AlgorithmsInComputerScience/Period.lean/declarations/primefactors.md) | 67 | `declaration-track:76f4d6866cc17cc8da882ed0f5aed4533724237a7e6b537b249195d1a6b5262f` |
-| 6 | `def` | [listLcm](../../../../../ComputerScience/AlgorithmsInComputerScience/Period.lean/declarations/listlcm.md) | 82 | `declaration-track:1b864ab2528b0faefb71be3568d847dbf331c1b74038badcc5ba22dce519f096` |
-| 7 | `def` | [checkPisanoFixedPoint](../../../../../ComputerScience/AlgorithmsInComputerScience/Period.lean/declarations/checkpisanofixedpoint.md) | 88 | `declaration-track:75486df989eba17c601461776add7e4728eca8f8ba6ac3b68b5ed3a726363d6f` |
-| 8 | `def` | [findPisanoFixedPoints](../../../../../ComputerScience/AlgorithmsInComputerScience/Period.lean/declarations/findpisanofixedpoints.md) | 94 | `declaration-track:62c66ad4c5442f7f2ff283c6d83e8b1627c1e21c4d681312cb9193472beac0f7` |
+| 1 | `def` | [findPeriodAux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Period.lean/declarations/findperiodaux.md) | 28 | `declaration-track:fbaee6af26329a32cec389b4a5a43e2345e20262077b3c7755d16104a55d3da6` |
+| 2 | `def` | [findPisanoPeriod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Period.lean/declarations/findpisanoperiod.md) | 40 | `declaration-track:6c994a267487340c7f51922ec9d6fd9f9c483f5c0a04765e4cdef5566504839e` |
+| 3 | `def` | [checkPeriod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Period.lean/declarations/checkperiod.md) | 48 | `declaration-track:17648048170392ba5fd9e902fc40246f6d0adf39ed8586ff18fe8cc78e4f265e` |
+| 4 | `def` | [checkPisanoPeriod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Period.lean/declarations/checkpisanoperiod.md) | 56 | `declaration-track:4e04adad997f1aefc0d8c5e4e21b040cdf04a723b4fae3a5897ae06d0553bb37` |
+| 5 | `def` | [primeFactors](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Period.lean/declarations/primefactors.md) | 67 | `declaration-track:76f4d6866cc17cc8da882ed0f5aed4533724237a7e6b537b249195d1a6b5262f` |
+| 6 | `def` | [listLcm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Period.lean/declarations/listlcm.md) | 82 | `declaration-track:1b864ab2528b0faefb71be3568d847dbf331c1b74038badcc5ba22dce519f096` |
+| 7 | `def` | [checkPisanoFixedPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Period.lean/declarations/checkpisanofixedpoint.md) | 88 | `declaration-track:75486df989eba17c601461776add7e4728eca8f8ba6ac3b68b5ed3a726363d6f` |
+| 8 | `def` | [findPisanoFixedPoints](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Period.lean/declarations/findpisanofixedpoints.md) | 94 | `declaration-track:62c66ad4c5442f7f2ff283c6d83e8b1627c1e21c4d681312cb9193472beac0f7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

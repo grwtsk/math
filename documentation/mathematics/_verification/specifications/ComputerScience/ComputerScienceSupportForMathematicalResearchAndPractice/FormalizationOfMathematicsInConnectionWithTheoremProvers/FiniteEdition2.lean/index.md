@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FiniteEdition2.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FiniteEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FiniteEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FiniteEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,10 +61,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [forall_on_of_finite_cover](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FiniteEdition2.lean/declarations/forall-on-of-finite-cover.md) | 20 | `result-track:d397f4451bbf8a437e4fe96d68d15b7de0fe953f3e69313ca4ed828c3babbcf6` |
-| 2 | `theorem` | [forall_on_of_finite_cover_and_tail](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FiniteEdition2.lean/declarations/forall-on-of-finite-cover-and-tail.md) | 31 | `result-track:699cf465c7ec3a952da6af009ef7a82f54de7c33886c046161a1bf67f2253a5d` |
-| 3 | `theorem` | [finite_range_does_not_imply_ray](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FiniteEdition2.lean/declarations/finite-range-does-not-imply-ray.md) | 44 | `result-track:f0bca483f44727be3148212d82db4ab7af96bac952b7d301d6125cd087d7da1c` |
-| 4 | `theorem` | [endpoints_do_not_cover_interval](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FiniteEdition2.lean/declarations/endpoints-do-not-cover-interval.md) | 56 | `result-track:4e7202a5899974415cee733dfeb976050d50556f83be072b6524989d454b0599` |
+| 1 | `theorem` | [forall_on_of_finite_cover](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FiniteEdition2.lean/declarations/forall-on-of-finite-cover.md) | 20 | `result-track:d397f4451bbf8a437e4fe96d68d15b7de0fe953f3e69313ca4ed828c3babbcf6` |
+| 2 | `theorem` | [forall_on_of_finite_cover_and_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FiniteEdition2.lean/declarations/forall-on-of-finite-cover-and-tail.md) | 31 | `result-track:699cf465c7ec3a952da6af009ef7a82f54de7c33886c046161a1bf67f2253a5d` |
+| 3 | `theorem` | [finite_range_does_not_imply_ray](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FiniteEdition2.lean/declarations/finite-range-does-not-imply-ray.md) | 44 | `result-track:f0bca483f44727be3148212d82db4ab7af96bac952b7d301d6125cd087d7da1c` |
+| 4 | `theorem` | [endpoints_do_not_cover_interval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FiniteEdition2.lean/declarations/endpoints-do-not-cover-interval.md) | 56 | `result-track:4e7202a5899974415cee733dfeb976050d50556f83be072b6524989d454b0599` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

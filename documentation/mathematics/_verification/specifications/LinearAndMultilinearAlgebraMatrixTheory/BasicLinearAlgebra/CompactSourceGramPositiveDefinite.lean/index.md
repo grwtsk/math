@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CompactSourceGramPositiveDefinite.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CompactSourceGramPositiveDefinite.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CompactSourceGramPositiveDefinite.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CompactSourceGramPositiveDefinite.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Convolution.FiniteTranslateIndependence`](../../../../../RealFunctions/ConvolutionFiniteTranslateIndependence.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.InnerProductSpace.DilationGram`](../../../../../MeasureAndIntegration/DilationGram.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Convolution.FiniteTranslateIndependence`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ConvolutionFiniteTranslateIndependence.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.InnerProductSpace.DilationGram`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DilationGram.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [normalized_source_support_bddAbove](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CompactSourceGramPositiveDefinite.lean/declarations/normalized-source-support-bddabove.md) | 35 | `result-track:ff10269f77bf2e70fa7c5bcebdb317cd631c2eeb37e8e56cb8d8f3dfa1986bb5` |
-| 2 | `theorem` | [normalized_source_support_nonempty](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CompactSourceGramPositiveDefinite.lean/declarations/normalized-source-support-nonempty.md) | 45 | `result-track:7e1153f684f2db1c188c457c61849bcf936f98292f7f29ee5d7286ee1736696a` |
-| 3 | `theorem` | [finite_source_combination_ne_zero](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CompactSourceGramPositiveDefinite.lean/declarations/finite-source-combination-ne-zero.md) | 59 | `result-track:9514dbf8174ae62c3c006fb1effce23821b4bf70dd186da01aaf5feeea5c6429` |
-| 4 | `theorem` | [distinct_source_vectors_linearIndependent](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CompactSourceGramPositiveDefinite.lean/declarations/distinct-source-vectors-linearindependent.md) | 82 | `result-track:579d7680e72108de052f64b8ba39dae2884d78b3f3f4bd927187155913b628e4` |
-| 5 | `theorem` | [finite_source_gram_positive](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CompactSourceGramPositiveDefinite.lean/declarations/finite-source-gram-positive.md) | 106 | `result-track:ef5d127d79259cb3300175cfefa11e8f2c7ce52119c6a1b416022a37838e029f` |
-| 6 | `theorem` | [distinct_source_gram_matrix_positive_definite](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CompactSourceGramPositiveDefinite.lean/declarations/distinct-source-gram-matrix-positive-definite.md) | 126 | `result-track:2ccf09cd31f4c5bdde38388d6d8dc1bbf704f272bcb0d5d1db4b13a1b6a071f2` |
+| 1 | `theorem` | [normalized_source_support_bddAbove](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CompactSourceGramPositiveDefinite.lean/declarations/normalized-source-support-bddabove.md) | 35 | `result-track:ff10269f77bf2e70fa7c5bcebdb317cd631c2eeb37e8e56cb8d8f3dfa1986bb5` |
+| 2 | `theorem` | [normalized_source_support_nonempty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CompactSourceGramPositiveDefinite.lean/declarations/normalized-source-support-nonempty.md) | 45 | `result-track:7e1153f684f2db1c188c457c61849bcf936f98292f7f29ee5d7286ee1736696a` |
+| 3 | `theorem` | [finite_source_combination_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CompactSourceGramPositiveDefinite.lean/declarations/finite-source-combination-ne-zero.md) | 59 | `result-track:9514dbf8174ae62c3c006fb1effce23821b4bf70dd186da01aaf5feeea5c6429` |
+| 4 | `theorem` | [distinct_source_vectors_linearIndependent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CompactSourceGramPositiveDefinite.lean/declarations/distinct-source-vectors-linearindependent.md) | 82 | `result-track:579d7680e72108de052f64b8ba39dae2884d78b3f3f4bd927187155913b628e4` |
+| 5 | `theorem` | [finite_source_gram_positive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CompactSourceGramPositiveDefinite.lean/declarations/finite-source-gram-positive.md) | 106 | `result-track:ef5d127d79259cb3300175cfefa11e8f2c7ce52119c6a1b416022a37838e029f` |
+| 6 | `theorem` | [distinct_source_gram_matrix_positive_definite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CompactSourceGramPositiveDefinite.lean/declarations/distinct-source-gram-matrix-positive-definite.md) | 126 | `result-track:2ccf09cd31f4c5bdde38388d6d8dc1bbf704f272bcb0d5d1db4b13a1b6a071f2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FixedTensorBridgeNamespacedFixedTensor.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FixedTensorBridgeNamespacedFixedTensor.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FixedTensorBridgeNamespacedFixedTensor.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FixedTensorBridgeNamespacedFixedTensor.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FixedTensor](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FixedTensorBridgeNamespacedFixedTensor.lean/declarations/fixedtensor.md) | 27 | `declaration-track:1408df2ed17edf5bc69f0b9aa6eba583a076c684e64fc0f9c88065bac25c062c` |
-| 2 | `structure` | [FixedTensorBridge](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FixedTensorBridgeNamespacedFixedTensor.lean/declarations/fixedtensorbridge.md) | 31 | `declaration-track:1522fcef190cb65e7a6f86dcca11b969b904d8497eb628be9974e6e226a312ec` |
-| 3 | `theorem` | [fixed_tensor_controls_spectral_trace_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FixedTensorBridgeNamespacedFixedTensor.lean/declarations/fixed-tensor-controls-spectral-trace-if-supplied.md) | 43 | `result-track:48f8fa74bd217ac7c22e17bee21b23c9fec4c42d5abe719845252256afdda7e4` |
-| 4 | `theorem` | [fixed_tensor_transport_invariant_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FixedTensorBridgeNamespacedFixedTensor.lean/declarations/fixed-tensor-transport-invariant-if-supplied.md) | 48 | `result-track:8492c9451b7a70cf3d228c3a4f8c219fdd0df386d9cd7ab77dc48e6296f8c8ed` |
+| 1 | `structure` | [FixedTensor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FixedTensorBridgeNamespacedFixedTensor.lean/declarations/fixedtensor.md) | 27 | `declaration-track:1408df2ed17edf5bc69f0b9aa6eba583a076c684e64fc0f9c88065bac25c062c` |
+| 2 | `structure` | [FixedTensorBridge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FixedTensorBridgeNamespacedFixedTensor.lean/declarations/fixedtensorbridge.md) | 31 | `declaration-track:1522fcef190cb65e7a6f86dcca11b969b904d8497eb628be9974e6e226a312ec` |
+| 3 | `theorem` | [fixed_tensor_controls_spectral_trace_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FixedTensorBridgeNamespacedFixedTensor.lean/declarations/fixed-tensor-controls-spectral-trace-if-supplied.md) | 43 | `result-track:48f8fa74bd217ac7c22e17bee21b23c9fec4c42d5abe719845252256afdda7e4` |
+| 4 | `theorem` | [fixed_tensor_transport_invariant_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FixedTensorBridgeNamespacedFixedTensor.lean/declarations/fixed-tensor-transport-invariant-if-supplied.md) | 48 | `result-track:8492c9451b7a70cf3d228c3a4f8c219fdd0df386d9cd7ab77dc48e6296f8c8ed` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

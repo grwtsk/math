@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DefinitionNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DefinitionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DefinitionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DefinitionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [HorizonEmbedding](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DefinitionNamespaced.lean/declarations/horizonembedding.md) | 17 | `declaration-track:b066a34289152d73288d2879e1cef3f6b91c03dfdedf0ca14855110f8660567a` |
-| 2 | `def` | [HorizonEmbedding.mapCut](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DefinitionNamespaced.lean/declarations/horizonembedding-mapcut.md) | 32 | `declaration-track:5b897226a6e41eb2fa916ac1530476566d231afa5996703908d1c8591dec776f` |
-| 3 | `theorem` | [HorizonEmbedding.mapCut_empty](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DefinitionNamespaced.lean/declarations/horizonembedding-mapcut-empty.md) | 40 | `result-track:88bbdc7dbf241524abe4bec975e550829eb603e3ca97e731f127eecd6ad95ff2` |
-| 4 | `theorem` | [HorizonEmbedding.mapCut_insert](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DefinitionNamespaced.lean/declarations/horizonembedding-mapcut-insert.md) | 47 | `result-track:941b3193531a19e1a4e3c1715abccfd0c84ee2ffa1708afdea4350c832ea500a` |
-| 5 | `theorem` | [HorizonEmbedding.mapCut_inj](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DefinitionNamespaced.lean/declarations/horizonembedding-mapcut-inj.md) | 58 | `result-track:42b63b1c8533a573ea3f2cbd623a38238b5ec57e3a8a21b45e80de755bbf796c` |
+| 1 | `structure` | [HorizonEmbedding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DefinitionNamespaced.lean/declarations/horizonembedding.md) | 17 | `declaration-track:b066a34289152d73288d2879e1cef3f6b91c03dfdedf0ca14855110f8660567a` |
+| 2 | `def` | [HorizonEmbedding.mapCut](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DefinitionNamespaced.lean/declarations/horizonembedding-mapcut.md) | 32 | `declaration-track:5b897226a6e41eb2fa916ac1530476566d231afa5996703908d1c8591dec776f` |
+| 3 | `theorem` | [HorizonEmbedding.mapCut_empty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DefinitionNamespaced.lean/declarations/horizonembedding-mapcut-empty.md) | 40 | `result-track:88bbdc7dbf241524abe4bec975e550829eb603e3ca97e731f127eecd6ad95ff2` |
+| 4 | `theorem` | [HorizonEmbedding.mapCut_insert](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DefinitionNamespaced.lean/declarations/horizonembedding-mapcut-insert.md) | 47 | `result-track:941b3193531a19e1a4e3c1715abccfd0c84ee2ffa1708afdea4350c832ea500a` |
+| 5 | `theorem` | [HorizonEmbedding.mapCut_inj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DefinitionNamespaced.lean/declarations/horizonembedding-mapcut-inj.md) | 58 | `result-track:42b63b1c8533a573ea3f2cbd623a38238b5ec57e3a8a21b45e80de755bbf796c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

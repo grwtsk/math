@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentMixedCoordinateExactness.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentMixedCoordinateExactness.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentMixedCoordinateExactness.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentMixedCoordinateExactness.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentMixedCoordinateRepair`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentMixedCoordinateRepair.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentMixedCoordinateRepair`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentMixedCoordinateRepair.lean/index.md) — import line 6; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [mixedCoordinate_degenerate_collision](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentMixedCoordinateExactness.lean/declarations/mixedcoordinate-degenerate-collision.md) | 36 | `result-track:933fcae1bbf7e6cb54faac51064bc90b9eca8288a50d657fe5a093c0bdf30b67` |
-| 2 | `theorem` | [mixedCoordinate_not_injective_of_degenerate](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentMixedCoordinateExactness.lean/declarations/mixedcoordinate-not-injective-of-degenerate.md) | 48 | `result-track:e8145f95a01037ec5d81720419e7c04cc248422f029ccbc40bf8e61d37ca7f2c` |
-| 3 | `theorem` | [mixedCoordinate_injective_iff](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentMixedCoordinateExactness.lean/declarations/mixedcoordinate-injective-iff.md) | 59 | `result-track:6bb010a9b21627a8d52c8024d979215b58b07d436523f3211fd4f822a088749a` |
+| 1 | `theorem` | [mixedCoordinate_degenerate_collision](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentMixedCoordinateExactness.lean/declarations/mixedcoordinate-degenerate-collision.md) | 36 | `result-track:933fcae1bbf7e6cb54faac51064bc90b9eca8288a50d657fe5a093c0bdf30b67` |
+| 2 | `theorem` | [mixedCoordinate_not_injective_of_degenerate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentMixedCoordinateExactness.lean/declarations/mixedcoordinate-not-injective-of-degenerate.md) | 48 | `result-track:e8145f95a01037ec5d81720419e7c04cc248422f029ccbc40bf8e61d37ca7f2c` |
+| 3 | `theorem` | [mixedCoordinate_injective_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentMixedCoordinateExactness.lean/declarations/mixedcoordinate-injective-iff.md) | 59 | `result-track:6bb010a9b21627a8d52c8024d979215b58b07d436523f3211fd4f822a088749a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

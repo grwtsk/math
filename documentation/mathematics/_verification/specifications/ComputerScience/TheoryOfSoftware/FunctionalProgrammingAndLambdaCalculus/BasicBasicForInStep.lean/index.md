@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicForInStep.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicForInStep.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicForInStep.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicForInStep.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ForInStep.bind](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicForInStep.lean/declarations/forinstep-bind.md) | 13 | `declaration-track:6d7c8c5717fe6c354a10234285a11b12b45c721558d4b92f955ff32bc345ae8a` |
-| 2 | `abbrev` | [ForInStep.bindM](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicForInStep.lean/declarations/forinstep-bindm.md) | 19 | `declaration-track:09290c17335ef4439e02397b2198f2ccc79d3d45f0d06c3b291a6ce00a2d1246` |
-| 3 | `def` | [ForInStep.run](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicForInStep.lean/declarations/forinstep-run.md) | 26 | `declaration-track:77c7d08d0a1371d2125dc885714ba598f713d5a173df30a552e585f125160e56` |
-| 4 | `def` | [ForInStep.bindList](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicForInStep.lean/declarations/forinstep-bindlist.md) | 31 | `declaration-track:d0504ca153ce2ffceafde64621c2dea64841f698fda411bc4cb6ea4f3f7aaf5a` |
+| 1 | `def` | [ForInStep.bind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicForInStep.lean/declarations/forinstep-bind.md) | 13 | `declaration-track:6d7c8c5717fe6c354a10234285a11b12b45c721558d4b92f955ff32bc345ae8a` |
+| 2 | `abbrev` | [ForInStep.bindM](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicForInStep.lean/declarations/forinstep-bindm.md) | 19 | `declaration-track:09290c17335ef4439e02397b2198f2ccc79d3d45f0d06c3b291a6ce00a2d1246` |
+| 3 | `def` | [ForInStep.run](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicForInStep.lean/declarations/forinstep-run.md) | 26 | `declaration-track:77c7d08d0a1371d2125dc885714ba598f713d5a173df30a552e585f125160e56` |
+| 4 | `def` | [ForInStep.bindList](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicForInStep.lean/declarations/forinstep-bindlist.md) | 31 | `declaration-track:d0504ca153ce2ffceafde64621c2dea64841f698fda411bc4cb6ea4f3f7aaf5a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

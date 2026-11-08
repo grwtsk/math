@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CorePositive.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CorePositive.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CorePositive.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CorePositive.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [identity](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CorePositive.lean/declarations/identity.md) | 4 | `declaration-track:a4da3459269dc0f6c27aaeea96f1d1b817e4baae1b20e8e77cdd4dce54840f90` |
-| 2 | `theorem` | [identity_eq](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CorePositive.lean/declarations/identity-eq.md) | 5 | `result-track:eff8d804b0c26a46184fd6a4b5d64ac5e3fac13997958bd9f1dcd54e9a694298` |
-| 3 | `inductive` | [Flag](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CorePositive.lean/declarations/flag.md) | 6 | `declaration-track:e2eef3eddddb6807649402334d603a989090c9bdc976dae2cf61e3f6a7c67ede` |
+| 1 | `def` | [identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CorePositive.lean/declarations/identity.md) | 4 | `declaration-track:a4da3459269dc0f6c27aaeea96f1d1b817e4baae1b20e8e77cdd4dce54840f90` |
+| 2 | `theorem` | [identity_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CorePositive.lean/declarations/identity-eq.md) | 5 | `result-track:eff8d804b0c26a46184fd6a4b5d64ac5e3fac13997958bd9f1dcd54e9a694298` |
+| 3 | `inductive` | [Flag](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CorePositive.lean/declarations/flag.md) | 6 | `declaration-track:e2eef3eddddb6807649402334d603a989090c9bdc976dae2cf61e3f6a7c67ede` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

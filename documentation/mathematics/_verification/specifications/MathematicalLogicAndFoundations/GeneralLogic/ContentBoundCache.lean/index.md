@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ContentBoundCache.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ContentBoundCache.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ContentBoundCache.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ContentBoundCache.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [observation_reuse](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ContentBoundCache.lean/declarations/observation-reuse.md) | 13 | `result-track:1effc476939f9cd3b040272cfe47d3ee0df93fc3c24e5ba76d4e211713cff110` |
-| 2 | `def` | [update](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ContentBoundCache.lean/declarations/update.md) | 21 | `declaration-track:d30cb91fd49af8bfab66a9cd819ede01778d811df21e30f32f12471352d4db1f` |
-| 3 | `theorem` | [unchanged_preserved](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ContentBoundCache.lean/declarations/unchanged-preserved.md) | 25 | `result-track:41521c03927f86cf18d0e7c8d41ac90c63da2ff91351782bba0727871f887c6d` |
-| 4 | `theorem` | [changed_refreshed](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ContentBoundCache.lean/declarations/changed-refreshed.md) | 30 | `result-track:52e978cf9600b749a28eecbe5a38062bcd99f30e03fa74db68cf86e450b45e1d` |
-| 5 | `def` | [CompletionAllowed](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ContentBoundCache.lean/declarations/completionallowed.md) | 35 | `declaration-track:6c69ad6696257b594ec3e23817675d80512ea81463734f051d72c2f0080c91d0` |
-| 6 | `theorem` | [stale_token_rejected](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ContentBoundCache.lean/declarations/stale-token-rejected.md) | 38 | `result-track:52d02fde44c520969f15d77f883f9c490b54722db81c0dee53163f5fe6c9d9aa` |
-| 7 | `theorem` | [expired_rejected](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ContentBoundCache.lean/declarations/expired-rejected.md) | 42 | `result-track:1a262ac71801df2b3244638d0cb3f88f125b80cd9750c6b7629c2696288b3dcd` |
-| 8 | `def` | [BoundCompletionAllowed](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ContentBoundCache.lean/declarations/boundcompletionallowed.md) | 47 | `declaration-track:baa97361e76783266946e6b5ce4b9a3046a3907a13892fdbc079bfa1a974076e` |
-| 9 | `theorem` | [changed_binding_rejected](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ContentBoundCache.lean/declarations/changed-binding-rejected.md) | 53 | `result-track:0e822f72a658b528380385ce9cfdc898fa2eafc33b5599139536d41cf03e8c5a` |
-| 10 | `theorem` | [bound_completion_conditions](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ContentBoundCache.lean/declarations/bound-completion-conditions.md) | 60 | `result-track:5748532777e9df7e8016e8ffe8f83a97be4bc2c831606cebce506fddacf008db` |
+| 1 | `theorem` | [observation_reuse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ContentBoundCache.lean/declarations/observation-reuse.md) | 13 | `result-track:1effc476939f9cd3b040272cfe47d3ee0df93fc3c24e5ba76d4e211713cff110` |
+| 2 | `def` | [update](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ContentBoundCache.lean/declarations/update.md) | 21 | `declaration-track:d30cb91fd49af8bfab66a9cd819ede01778d811df21e30f32f12471352d4db1f` |
+| 3 | `theorem` | [unchanged_preserved](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ContentBoundCache.lean/declarations/unchanged-preserved.md) | 25 | `result-track:41521c03927f86cf18d0e7c8d41ac90c63da2ff91351782bba0727871f887c6d` |
+| 4 | `theorem` | [changed_refreshed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ContentBoundCache.lean/declarations/changed-refreshed.md) | 30 | `result-track:52e978cf9600b749a28eecbe5a38062bcd99f30e03fa74db68cf86e450b45e1d` |
+| 5 | `def` | [CompletionAllowed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ContentBoundCache.lean/declarations/completionallowed.md) | 35 | `declaration-track:6c69ad6696257b594ec3e23817675d80512ea81463734f051d72c2f0080c91d0` |
+| 6 | `theorem` | [stale_token_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ContentBoundCache.lean/declarations/stale-token-rejected.md) | 38 | `result-track:52d02fde44c520969f15d77f883f9c490b54722db81c0dee53163f5fe6c9d9aa` |
+| 7 | `theorem` | [expired_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ContentBoundCache.lean/declarations/expired-rejected.md) | 42 | `result-track:1a262ac71801df2b3244638d0cb3f88f125b80cd9750c6b7629c2696288b3dcd` |
+| 8 | `def` | [BoundCompletionAllowed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ContentBoundCache.lean/declarations/boundcompletionallowed.md) | 47 | `declaration-track:baa97361e76783266946e6b5ce4b9a3046a3907a13892fdbc079bfa1a974076e` |
+| 9 | `theorem` | [changed_binding_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ContentBoundCache.lean/declarations/changed-binding-rejected.md) | 53 | `result-track:0e822f72a658b528380385ce9cfdc898fa2eafc33b5599139536d41cf03e8c5a` |
+| 10 | `theorem` | [bound_completion_conditions](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ContentBoundCache.lean/declarations/bound-completion-conditions.md) | 60 | `result-track:5748532777e9df7e8016e8ffe8f83a97be4bc2c831606cebce506fddacf008db` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

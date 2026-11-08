@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/RationalPowerIntegerSeed.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/RationalPowerIntegerSeed.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalPowerIntegerSeed.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalPowerIntegerSeed.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.IntegerTaylorPolynomial`](../../../../FunctionsOfAComplexVariable/IntegerTaylorPolynomial.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.RationalPowerTrace`](../../../../FunctionsOfAComplexVariable/RationalPowerTrace.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.IntegerTaylorPolynomial`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IntegerTaylorPolynomial.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.RationalPowerTrace`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalPowerTrace.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,24 +58,24 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Encoding](../../../../FunctionsOfAComplexVariable/RationalPowerIntegerSeed.lean/declarations/encoding.md) | 25 | `declaration-track:4384ff1ae144d714b70e0bea3d119a8651b294b6c8f14ad6a6e31fbe52301919` |
-| 2 | `structure` | [Valid](../../../../FunctionsOfAComplexVariable/RationalPowerIntegerSeed.lean/declarations/valid.md) | 35 | `declaration-track:de72a0d34f2a803e1551a6a3cc18597beb550ebb2a9752e3c55c122fc58dc83d` |
-| 3 | `structure` | [Binding](../../../../FunctionsOfAComplexVariable/RationalPowerIntegerSeed.lean/declarations/binding.md) | 44 | `declaration-track:7898a44a5749644190f0af05ed648a01c43c6c5032f94c05c8409b105ed6f9e0` |
-| 4 | `def` | [seedNum](../../../../FunctionsOfAComplexVariable/RationalPowerIntegerSeed.lean/declarations/seednum.md) | 52 | `declaration-track:d2f4637477d0138b40eb9192dc608f4b7b352e7b2f2d9944b8956adfbc9b0e0b` |
-| 5 | `def` | [seedDen](../../../../FunctionsOfAComplexVariable/RationalPowerIntegerSeed.lean/declarations/seedden.md) | 53 | `declaration-track:38c7bed96e92fd60b9c33c9e36f54d14348a21813176c439ac379fe4bd949272` |
-| 6 | `def` | [taylorNum](../../../../FunctionsOfAComplexVariable/RationalPowerIntegerSeed.lean/declarations/taylornum.md) | 55 | `declaration-track:e064f96af86a2bc602224241ea7da15c83cf0ab28dd95bb7e9efff183de04041` |
-| 7 | `def` | [taylorDen](../../../../FunctionsOfAComplexVariable/RationalPowerIntegerSeed.lean/declarations/taylorden.md) | 56 | `declaration-track:8c9b872eef4303771d65c7a5fb36039f87afbc3f8208aa7823383be00e47d48c` |
-| 8 | `def` | [errorNum](../../../../FunctionsOfAComplexVariable/RationalPowerIntegerSeed.lean/declarations/errornum.md) | 60 | `declaration-track:1af105b4c0014e8bc0b47f0ae60afc8b27bd8d14165e33a1d8b770969a7d2fc7` |
-| 9 | `def` | [errorDen](../../../../FunctionsOfAComplexVariable/RationalPowerIntegerSeed.lean/declarations/errorden.md) | 65 | `declaration-track:7740c2f278b1fe09058e5fc342d0e06ae427c35055784548cc2ea9d29752603b` |
-| 10 | `theorem` | [seedDen_pos](../../../../FunctionsOfAComplexVariable/RationalPowerIntegerSeed.lean/declarations/seedden-pos.md) | 68 | `result-track:ca4f5042def287ff31b1f6992fbe39ea9e2be86a4372e3a6f801ca71c0efb6a1` |
-| 11 | `theorem` | [taylorDen_pos](../../../../FunctionsOfAComplexVariable/RationalPowerIntegerSeed.lean/declarations/taylorden-pos.md) | 71 | `result-track:e89ce07b1a1a3bcbcb7fae02944038058894aed37ba2fc3e0789ebe80d76c86d` |
-| 12 | `theorem` | [errorDen_pos](../../../../FunctionsOfAComplexVariable/RationalPowerIntegerSeed.lean/declarations/errorden-pos.md) | 75 | `result-track:e44625437733d2245d93c82cb0f4ce6e420c6327d8054d3d1669479dde9fa806` |
-| 13 | `theorem` | [errorNum_nonneg](../../../../FunctionsOfAComplexVariable/RationalPowerIntegerSeed.lean/declarations/errornum-nonneg.md) | 78 | `result-track:df3c71de8cdb69e4333d762e6c910aa43b99a02afe3eaf0b6c3545130ac16495` |
-| 14 | `theorem` | [seed_identity](../../../../FunctionsOfAComplexVariable/RationalPowerIntegerSeed.lean/declarations/seed-identity.md) | 88 | `result-track:2bea2a53e6f8fe75b9ebb2fd4fecd933fec4a904afad656250da7c8a76e629f6` |
-| 15 | `theorem` | [seed_error_identity](../../../../FunctionsOfAComplexVariable/RationalPowerIntegerSeed.lean/declarations/seed-error-identity.md) | 96 | `result-track:40d0695092f43401054d3719dec62c0a76bc1fd76cad1c90c94a84b15a5e8bc6` |
-| 16 | `def` | [Windows](../../../../FunctionsOfAComplexVariable/RationalPowerIntegerSeed.lean/declarations/windows.md) | 111 | `declaration-track:d878565071fc04ed34ad72a50a9cf77cd4ae2e757cd81bdf7ab0b70d559f626f` |
-| 17 | `theorem` | [seed_valid](../../../../FunctionsOfAComplexVariable/RationalPowerIntegerSeed.lean/declarations/seed-valid.md) | 119 | `result-track:990de20abf37926e0e2f3ae5049203163eec04d4e185f58ad648563e47bebfd7` |
-| 18 | `theorem` | [endpoint_eq_of_windows](../../../../FunctionsOfAComplexVariable/RationalPowerIntegerSeed.lean/declarations/endpoint-eq-of-windows.md) | 144 | `result-track:ca056074a50d673cb59fb068d65e5d788d17cee34e85319a1384904059a3e6ce` |
+| 1 | `structure` | [Encoding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalPowerIntegerSeed.lean/declarations/encoding.md) | 25 | `declaration-track:4384ff1ae144d714b70e0bea3d119a8651b294b6c8f14ad6a6e31fbe52301919` |
+| 2 | `structure` | [Valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalPowerIntegerSeed.lean/declarations/valid.md) | 35 | `declaration-track:de72a0d34f2a803e1551a6a3cc18597beb550ebb2a9752e3c55c122fc58dc83d` |
+| 3 | `structure` | [Binding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalPowerIntegerSeed.lean/declarations/binding.md) | 44 | `declaration-track:7898a44a5749644190f0af05ed648a01c43c6c5032f94c05c8409b105ed6f9e0` |
+| 4 | `def` | [seedNum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalPowerIntegerSeed.lean/declarations/seednum.md) | 52 | `declaration-track:d2f4637477d0138b40eb9192dc608f4b7b352e7b2f2d9944b8956adfbc9b0e0b` |
+| 5 | `def` | [seedDen](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalPowerIntegerSeed.lean/declarations/seedden.md) | 53 | `declaration-track:38c7bed96e92fd60b9c33c9e36f54d14348a21813176c439ac379fe4bd949272` |
+| 6 | `def` | [taylorNum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalPowerIntegerSeed.lean/declarations/taylornum.md) | 55 | `declaration-track:e064f96af86a2bc602224241ea7da15c83cf0ab28dd95bb7e9efff183de04041` |
+| 7 | `def` | [taylorDen](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalPowerIntegerSeed.lean/declarations/taylorden.md) | 56 | `declaration-track:8c9b872eef4303771d65c7a5fb36039f87afbc3f8208aa7823383be00e47d48c` |
+| 8 | `def` | [errorNum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalPowerIntegerSeed.lean/declarations/errornum.md) | 60 | `declaration-track:1af105b4c0014e8bc0b47f0ae60afc8b27bd8d14165e33a1d8b770969a7d2fc7` |
+| 9 | `def` | [errorDen](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalPowerIntegerSeed.lean/declarations/errorden.md) | 65 | `declaration-track:7740c2f278b1fe09058e5fc342d0e06ae427c35055784548cc2ea9d29752603b` |
+| 10 | `theorem` | [seedDen_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalPowerIntegerSeed.lean/declarations/seedden-pos.md) | 68 | `result-track:ca4f5042def287ff31b1f6992fbe39ea9e2be86a4372e3a6f801ca71c0efb6a1` |
+| 11 | `theorem` | [taylorDen_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalPowerIntegerSeed.lean/declarations/taylorden-pos.md) | 71 | `result-track:e89ce07b1a1a3bcbcb7fae02944038058894aed37ba2fc3e0789ebe80d76c86d` |
+| 12 | `theorem` | [errorDen_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalPowerIntegerSeed.lean/declarations/errorden-pos.md) | 75 | `result-track:e44625437733d2245d93c82cb0f4ce6e420c6327d8054d3d1669479dde9fa806` |
+| 13 | `theorem` | [errorNum_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalPowerIntegerSeed.lean/declarations/errornum-nonneg.md) | 78 | `result-track:df3c71de8cdb69e4333d762e6c910aa43b99a02afe3eaf0b6c3545130ac16495` |
+| 14 | `theorem` | [seed_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalPowerIntegerSeed.lean/declarations/seed-identity.md) | 88 | `result-track:2bea2a53e6f8fe75b9ebb2fd4fecd933fec4a904afad656250da7c8a76e629f6` |
+| 15 | `theorem` | [seed_error_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalPowerIntegerSeed.lean/declarations/seed-error-identity.md) | 96 | `result-track:40d0695092f43401054d3719dec62c0a76bc1fd76cad1c90c94a84b15a5e8bc6` |
+| 16 | `def` | [Windows](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalPowerIntegerSeed.lean/declarations/windows.md) | 111 | `declaration-track:d878565071fc04ed34ad72a50a9cf77cd4ae2e757cd81bdf7ab0b70d559f626f` |
+| 17 | `theorem` | [seed_valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalPowerIntegerSeed.lean/declarations/seed-valid.md) | 119 | `result-track:990de20abf37926e0e2f3ae5049203163eec04d4e185f58ad648563e47bebfd7` |
+| 18 | `theorem` | [endpoint_eq_of_windows](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalPowerIntegerSeed.lean/declarations/endpoint-eq-of-windows.md) | 144 | `result-track:ca056074a50d673cb59fb068d65e5d788d17cee34e85319a1384904059a3e6ce` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

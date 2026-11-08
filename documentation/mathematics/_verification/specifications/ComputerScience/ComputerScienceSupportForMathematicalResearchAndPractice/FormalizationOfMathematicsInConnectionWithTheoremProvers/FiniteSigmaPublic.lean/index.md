@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FiniteSigmaPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FiniteSigmaPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FiniteSigmaPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FiniteSigmaPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FiniteSigmaPublic.lean/declarations/instance.md) | 22 | `declaration-track:10d0f788ef6f29df63a6f2898cd26b7a64c98cdb1e486b04c0e77eecc1f86a42` |
-| 2 | `instance` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FiniteSigmaPublic.lean/declarations/instance-source-edition-2.md) | 27 | `declaration-track:b6f5d1789a372bec3521490cfa84348b5c8e6fefa3c1717f13b82fca1d020d69` |
-| 3 | `instance` | [Set.finite_sigma](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FiniteSigmaPublic.lean/declarations/set-finite-sigma.md) | 30 | `declaration-track:9e8e69dc3f6959f11efbb86116acd5adec8351a7dcdece31256f3361084b22e5` |
-| 4 | `lemma` | [Finite.sigma](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FiniteSigmaPublic.lean/declarations/finite-sigma.md) | 39 | `result-track:08fd3fb9e79fd4342a4d05ad33826fb91523415293590697aff117ec8e150321` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FiniteSigmaPublic.lean/declarations/instance.md) | 22 | `declaration-track:10d0f788ef6f29df63a6f2898cd26b7a64c98cdb1e486b04c0e77eecc1f86a42` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FiniteSigmaPublic.lean/declarations/instance-source-edition-2.md) | 27 | `declaration-track:b6f5d1789a372bec3521490cfa84348b5c8e6fefa3c1717f13b82fca1d020d69` |
+| 3 | `instance` | [Set.finite_sigma](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FiniteSigmaPublic.lean/declarations/set-finite-sigma.md) | 30 | `declaration-track:9e8e69dc3f6959f11efbb86116acd5adec8351a7dcdece31256f3361084b22e5` |
+| 4 | `lemma` | [Finite.sigma](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FiniteSigmaPublic.lean/declarations/finite-sigma.md) | 39 | `result-track:08fd3fb9e79fd4342a4d05ad33826fb91523415293590697aff117ec8e150321` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

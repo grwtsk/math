@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/PreorderRestrictPublic.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/PreorderRestrictPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/PreorderRestrictPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/PreorderRestrictPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [measurable_restrictLe](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/PreorderRestrictPublic.lean/declarations/measurable-restrictle.md) | 25 | `result-track:0390bade2260c77a7bd8118e37303a23e987def39c9987be90e0ba9a11bbd460` |
-| 2 | `theorem` | [measurable_restrictLe₂](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/PreorderRestrictPublic.lean/declarations/measurable-restrictle-source-edition-2.md) | 29 | `result-track:7762ad03cfa6401d79cb0ba4d6885482999f28dfd3d6017a7db7e53229c92a3c` |
-| 3 | `theorem` | [measurable_frestrictLe](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/PreorderRestrictPublic.lean/declarations/measurable-frestrictle-source-edition-2.md) | 35 | `result-track:e795637aa7deefc9e37c8622dfb3bd8470fc93e0c18e81f26edbfec2422f5db3` |
-| 4 | `theorem` | [measurable_frestrictLe₂](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/PreorderRestrictPublic.lean/declarations/measurable-frestrictle.md) | 39 | `result-track:5a8329c1bc10dbd2b24e0f359a1a31adf1f64052039b1b5cd374d485266c9cf1` |
+| 1 | `theorem` | [measurable_restrictLe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/PreorderRestrictPublic.lean/declarations/measurable-restrictle.md) | 25 | `result-track:0390bade2260c77a7bd8118e37303a23e987def39c9987be90e0ba9a11bbd460` |
+| 2 | `theorem` | [measurable_restrictLe₂](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/PreorderRestrictPublic.lean/declarations/measurable-restrictle-source-edition-2.md) | 29 | `result-track:7762ad03cfa6401d79cb0ba4d6885482999f28dfd3d6017a7db7e53229c92a3c` |
+| 3 | `theorem` | [measurable_frestrictLe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/PreorderRestrictPublic.lean/declarations/measurable-frestrictle-source-edition-2.md) | 35 | `result-track:e795637aa7deefc9e37c8622dfb3bd8470fc93e0c18e81f26edbfec2422f5db3` |
+| 4 | `theorem` | [measurable_frestrictLe₂](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/PreorderRestrictPublic.lean/declarations/measurable-frestrictle.md) | 39 | `result-track:5a8329c1bc10dbd2b24e0f359a1a31adf1f64052039b1b5cd374d485266c9cf1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

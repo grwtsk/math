@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/ContractionScaleNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/ContractionScaleNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContractionScaleNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContractionScaleNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ContractionScaleRatio](../../../../RealFunctions/ContractionScaleNamespaced.lean/declarations/contractionscaleratio.md) | 23 | `declaration-track:7ed4088cef665cf0b297210dddb584eea0fcd0306ea39f2a3b0da66f2cf3335e` |
-| 2 | `structure` | [ContractionScaleCertificate](../../../../RealFunctions/ContractionScaleNamespaced.lean/declarations/contractionscalecertificate.md) | 28 | `declaration-track:ca6f25cc50792f71c1a2ebb146826668eba4078a06a5cd8d43b0f25009c942c4` |
-| 3 | `theorem` | [contraction_reaches_squareRoot_scale](../../../../RealFunctions/ContractionScaleNamespaced.lean/declarations/contraction-reaches-squareroot-scale.md) | 53 | `result-track:5d0d8842c6d04c77e3d3728e86c9dc724d24353006a36102567b000d695aa917` |
-| 4 | `structure` | [ContractionToDiscrepancyCertificate](../../../../RealFunctions/ContractionScaleNamespaced.lean/declarations/contractiontodiscrepancycertificate.md) | 64 | `declaration-track:9d0be8023097dc71e7f9d627dbcaa57c4ab949cfc0a97b02a23a8b897197f10a` |
-| 5 | `constant` | [(anonymous)](../../../../RealFunctions/ContractionScaleNamespaced.lean/declarations/constant.md) | 68 | `declaration-track:299ac9df39c87b9a2b13a4d1bf717ed968de48e342d9e95603b37ba260273c2a` |
-| 6 | `constant` | [*](../../../../RealFunctions/ContractionScaleNamespaced.lean/declarations/anonymous.md) | 74 | `declaration-track:84824a29d3c476b592399fe8fd863f08f2ffd95cf6d5040858e8210f3d717ab3` |
-| 7 | `theorem` | [contraction_discrepancy_bound](../../../../RealFunctions/ContractionScaleNamespaced.lean/declarations/contraction-discrepancy-bound.md) | 81 | `result-track:ddbe1f02f1b32abe3dae5697da5cf7f864c217db665b03c4ed99ffc922df34f8` |
+| 1 | `def` | [ContractionScaleRatio](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContractionScaleNamespaced.lean/declarations/contractionscaleratio.md) | 23 | `declaration-track:7ed4088cef665cf0b297210dddb584eea0fcd0306ea39f2a3b0da66f2cf3335e` |
+| 2 | `structure` | [ContractionScaleCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContractionScaleNamespaced.lean/declarations/contractionscalecertificate.md) | 28 | `declaration-track:ca6f25cc50792f71c1a2ebb146826668eba4078a06a5cd8d43b0f25009c942c4` |
+| 3 | `theorem` | [contraction_reaches_squareRoot_scale](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContractionScaleNamespaced.lean/declarations/contraction-reaches-squareroot-scale.md) | 53 | `result-track:5d0d8842c6d04c77e3d3728e86c9dc724d24353006a36102567b000d695aa917` |
+| 4 | `structure` | [ContractionToDiscrepancyCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContractionScaleNamespaced.lean/declarations/contractiontodiscrepancycertificate.md) | 64 | `declaration-track:9d0be8023097dc71e7f9d627dbcaa57c4ab949cfc0a97b02a23a8b897197f10a` |
+| 5 | `constant` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContractionScaleNamespaced.lean/declarations/constant.md) | 68 | `declaration-track:299ac9df39c87b9a2b13a4d1bf717ed968de48e342d9e95603b37ba260273c2a` |
+| 6 | `constant` | [*](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContractionScaleNamespaced.lean/declarations/anonymous.md) | 74 | `declaration-track:84824a29d3c476b592399fe8fd863f08f2ffd95cf6d5040858e8210f3d717ab3` |
+| 7 | `theorem` | [contraction_discrepancy_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContractionScaleNamespaced.lean/declarations/contraction-discrepancy-bound.md) | 81 | `result-track:ddbe1f02f1b32abe3dae5697da5cf7f864c217db665b03c4ed99ffc922df34f8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ResidueCoordinate.lean/index.md) · [Full source](../../../../Combinatorics/ResidueCoordinate.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResidueCoordinate.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResidueCoordinate.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [surfaceId](../../../../Combinatorics/ResidueCoordinate.lean/declarations/surfaceid.md) | 8 | `declaration-track:75bed8770b7214ed0949ae144246f4a36a462aeb5739800e2f9d129c6b1dd35d` |
-| 2 | `def` | [ownsDeclaredSurface](../../../../Combinatorics/ResidueCoordinate.lean/declarations/ownsdeclaredsurface.md) | 9 | `declaration-track:604c107d81c4d78dea9bbaf193fbd1fe3213e176c81e7dada5d962ff55f04151` |
-| 3 | `def` | [crossLeafReasoningRequiresGlue](../../../../Combinatorics/ResidueCoordinate.lean/declarations/crossleafreasoningrequiresglue.md) | 10 | `declaration-track:b60f9e1cbe70da56e9aafbeae3f3b44fd6ea3e254a491da8d26dbbeae2bf0ace` |
-| 4 | `theorem` | [surface_id_declared](../../../../Combinatorics/ResidueCoordinate.lean/declarations/surface-id-declared.md) | 12 | `result-track:6f4d2c42929d2d48d8c21937e9654d00cd425a9f9c525eb8bc8e75ecb9ceeca6` |
-| 5 | `theorem` | [owns_declared_surface](../../../../Combinatorics/ResidueCoordinate.lean/declarations/owns-declared-surface.md) | 16 | `result-track:f5d2de16b24757b13bd3a68a1545180f573c4a307515472c2b023c886bc255df` |
+| 1 | `def` | [surfaceId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResidueCoordinate.lean/declarations/surfaceid.md) | 8 | `declaration-track:75bed8770b7214ed0949ae144246f4a36a462aeb5739800e2f9d129c6b1dd35d` |
+| 2 | `def` | [ownsDeclaredSurface](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResidueCoordinate.lean/declarations/ownsdeclaredsurface.md) | 9 | `declaration-track:604c107d81c4d78dea9bbaf193fbd1fe3213e176c81e7dada5d962ff55f04151` |
+| 3 | `def` | [crossLeafReasoningRequiresGlue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResidueCoordinate.lean/declarations/crossleafreasoningrequiresglue.md) | 10 | `declaration-track:b60f9e1cbe70da56e9aafbeae3f3b44fd6ea3e254a491da8d26dbbeae2bf0ace` |
+| 4 | `theorem` | [surface_id_declared](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResidueCoordinate.lean/declarations/surface-id-declared.md) | 12 | `result-track:6f4d2c42929d2d48d8c21937e9654d00cd425a9f9c525eb8bc8e75ecb9ceeca6` |
+| 5 | `theorem` | [owns_declared_surface](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResidueCoordinate.lean/declarations/owns-declared-surface.md) | 16 | `result-track:f5d2de16b24757b13bd3a68a1545180f573c4a307515472c2b023c886bc255df` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

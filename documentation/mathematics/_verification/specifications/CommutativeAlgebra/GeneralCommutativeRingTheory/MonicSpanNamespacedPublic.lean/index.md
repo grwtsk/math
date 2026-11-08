@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/MonicSpanNamespacedPublic.lean/index.md) · [Full source](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/MonicSpanNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/MonicSpanNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/MonicSpanNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [exists_monic_span](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/MonicSpanNamespacedPublic.lean/declarations/exists-monic-span.md) | 35 | `result-track:c69cb01dcc1496b99190901ce60b371e845cc3048eaa0a7c001a73fafe7ea278` |
-| 2 | `lemma` | [exists_monic_span_sup_map_eq](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/MonicSpanNamespacedPublic.lean/declarations/exists-monic-span-sup-map-eq.md) | 43 | `result-track:f8556d1c6d7e67baebfbd062c7ee8f4784e92f608ea3ed9967adfcdd921a26b3` |
+| 1 | `lemma` | [exists_monic_span](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/MonicSpanNamespacedPublic.lean/declarations/exists-monic-span.md) | 35 | `result-track:c69cb01dcc1496b99190901ce60b371e845cc3048eaa0a7c001a73fafe7ea278` |
+| 2 | `lemma` | [exists_monic_span_sup_map_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/MonicSpanNamespacedPublic.lean/declarations/exists-monic-span-sup-map-eq.md) | 43 | `result-track:f8556d1c6d7e67baebfbd062c7ee8f4784e92f608ea3ed9967adfcdd921a26b3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

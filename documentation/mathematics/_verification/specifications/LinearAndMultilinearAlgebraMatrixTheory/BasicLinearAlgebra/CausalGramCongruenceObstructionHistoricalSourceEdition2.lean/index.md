@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CausalGramCongruenceObstructionHistoricalSourceEdition2.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CausalGramCongruenceObstructionHistoricalSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CausalGramCongruenceObstructionHistoricalSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CausalGramCongruenceObstructionHistoricalSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,9 +46,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.InnerProductSpace.CausalContactSeparation`](../../../../../MeasureAndIntegration/CausalContactSeparationHistoricalSourceEdition2.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.InnerProductSpace.CompactSourceGramPositiveDefinite`](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CompactSourceGramPositiveDefinite.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.LinearAlgebra.Matrix.SingularCongruenceObstruction`](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixTheorySingularCongruenceObstructionHistoricalSourceEdition2.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.Analysis.InnerProductSpace.CausalContactSeparation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalContactSeparationHistoricalSourceEdition2.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.InnerProductSpace.CompactSourceGramPositiveDefinite`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CompactSourceGramPositiveDefinite.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.LinearAlgebra.Matrix.SingularCongruenceObstruction`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixTheorySingularCongruenceObstructionHistoricalSourceEdition2.lean/index.md) — import line 6; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [finite_contact_square_congruence_ne_source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CausalGramCongruenceObstructionHistoricalSourceEdition2.lean/declarations/finite-contact-square-congruence-ne-source.md) | 42 | `result-track:8b775ce3bb4a10b9d8d88a2764226687ed4b5c6fead83af18bea66d2441c7b56` |
-| 2 | `theorem` | [original_inventory_square_congruence_ne_source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CausalGramCongruenceObstructionHistoricalSourceEdition2.lean/declarations/original-inventory-square-congruence-ne-source.md) | 56 | `result-track:a098c1cd0f8a33367c7008c4387a79d8cb9e6f5b3ad01804491ff90477a0b219` |
-| 3 | `theorem` | [prescribed_horizon_square_congruence_obstruction](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CausalGramCongruenceObstructionHistoricalSourceEdition2.lean/declarations/prescribed-horizon-square-congruence-obstruction.md) | 73 | `result-track:31370bfbf5b6e7854fffb5422a6edab35f950d255d1782b39b1a56774219dab3` |
+| 1 | `theorem` | [finite_contact_square_congruence_ne_source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CausalGramCongruenceObstructionHistoricalSourceEdition2.lean/declarations/finite-contact-square-congruence-ne-source.md) | 42 | `result-track:8b775ce3bb4a10b9d8d88a2764226687ed4b5c6fead83af18bea66d2441c7b56` |
+| 2 | `theorem` | [original_inventory_square_congruence_ne_source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CausalGramCongruenceObstructionHistoricalSourceEdition2.lean/declarations/original-inventory-square-congruence-ne-source.md) | 56 | `result-track:a098c1cd0f8a33367c7008c4387a79d8cb9e6f5b3ad01804491ff90477a0b219` |
+| 3 | `theorem` | [prescribed_horizon_square_congruence_obstruction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CausalGramCongruenceObstructionHistoricalSourceEdition2.lean/declarations/prescribed-horizon-square-congruence-obstruction.md) | 73 | `result-track:31370bfbf5b6e7854fffb5422a6edab35f950d255d1782b39b1a56774219dab3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

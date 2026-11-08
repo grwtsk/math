@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/StoneanEffectiveEpiNamespacedTwo.lean/index.md) · [Full source](../../../../GeneralTopology/StoneanEffectiveEpiNamespacedTwo.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StoneanEffectiveEpiNamespacedTwo.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StoneanEffectiveEpiNamespacedTwo.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [two](../../../../GeneralTopology/StoneanEffectiveEpiNamespacedTwo.lean/declarations/two.md) | 52 | `declaration-track:daae4f8fdb2fa589cca6ee960979f630325a8ca831ea77b004f0fa248dd04c59` |
-| 2 | `lemma` | [epi_iff_surjective](../../../../GeneralTopology/StoneanEffectiveEpiNamespacedTwo.lean/declarations/epi-iff-surjective.md) | 60 | `result-track:4607bac612767b236882777e600577e02d51d230b60255967b4856d84e8c13a2` |
-| 3 | `abbrev` | [F](../../../../GeneralTopology/StoneanEffectiveEpiNamespacedTwo.lean/declarations/f.md) | 115 | `declaration-track:ee3230f144d8b1090079514889935e16c0863130c2652201dc354001863f8734` |
-| 4 | `lemma` | [lift_desc_condition](../../../../GeneralTopology/StoneanEffectiveEpiNamespacedTwo.lean/declarations/lift-desc-condition.md) | 135 | `result-track:1f2b53508ac70b4290d4c4edd7659593f78d67ac896da4f840e4b88e13b6b39e` |
-| 5 | `def` | [struct](../../../../GeneralTopology/StoneanEffectiveEpiNamespacedTwo.lean/declarations/struct.md) | 156 | `declaration-track:8f4f0df2bb21f85c87a8f727e9266d3fcbf0b3d9af02aa16a92a2a301d090abd` |
-| 6 | `theorem` | [effectiveEpiFamily_of_jointly_surjective](../../../../GeneralTopology/StoneanEffectiveEpiNamespacedTwo.lean/declarations/effectiveepifamily-of-jointly-surjective.md) | 189 | `result-track:a90109fde3f55ff16d8df34b27a1f190b2d3cb068c8828a82e764c0a138dcf74` |
-| 7 | `theorem` | [effectiveEpiFamily_tfae](../../../../GeneralTopology/StoneanEffectiveEpiNamespacedTwo.lean/declarations/effectiveepifamily-tfae.md) | 203 | `result-track:263be32a6f1ca57ba2369ce32867058d9a59163ad0805e792fe71b2a1a5a7abc` |
-| 8 | `theorem` | [Stonean Effective Epi Namespaced Two](../../../../GeneralTopology/StoneanEffectiveEpiNamespacedTwo.lean/declarations/tocomphaus.md) | 245 | `result-track:4a3b4462b5a5b27fbfbd51788ef2ab2676091de1281c267759c44b40dd694d1b` |
-| 9 | `instance` | [instPrecoherent](../../../../GeneralTopology/StoneanEffectiveEpiNamespacedTwo.lean/declarations/instprecoherent.md) | 252 | `declaration-track:6262f727569ccc22819d1b2d326a7926d0ff1b81389db6a87d66b14b262d74ef` |
+| 1 | `def` | [two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StoneanEffectiveEpiNamespacedTwo.lean/declarations/two.md) | 52 | `declaration-track:daae4f8fdb2fa589cca6ee960979f630325a8ca831ea77b004f0fa248dd04c59` |
+| 2 | `lemma` | [epi_iff_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StoneanEffectiveEpiNamespacedTwo.lean/declarations/epi-iff-surjective.md) | 60 | `result-track:4607bac612767b236882777e600577e02d51d230b60255967b4856d84e8c13a2` |
+| 3 | `abbrev` | [F](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StoneanEffectiveEpiNamespacedTwo.lean/declarations/f.md) | 115 | `declaration-track:ee3230f144d8b1090079514889935e16c0863130c2652201dc354001863f8734` |
+| 4 | `lemma` | [lift_desc_condition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StoneanEffectiveEpiNamespacedTwo.lean/declarations/lift-desc-condition.md) | 135 | `result-track:1f2b53508ac70b4290d4c4edd7659593f78d67ac896da4f840e4b88e13b6b39e` |
+| 5 | `def` | [struct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StoneanEffectiveEpiNamespacedTwo.lean/declarations/struct.md) | 156 | `declaration-track:8f4f0df2bb21f85c87a8f727e9266d3fcbf0b3d9af02aa16a92a2a301d090abd` |
+| 6 | `theorem` | [effectiveEpiFamily_of_jointly_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StoneanEffectiveEpiNamespacedTwo.lean/declarations/effectiveepifamily-of-jointly-surjective.md) | 189 | `result-track:a90109fde3f55ff16d8df34b27a1f190b2d3cb068c8828a82e764c0a138dcf74` |
+| 7 | `theorem` | [effectiveEpiFamily_tfae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StoneanEffectiveEpiNamespacedTwo.lean/declarations/effectiveepifamily-tfae.md) | 203 | `result-track:263be32a6f1ca57ba2369ce32867058d9a59163ad0805e792fe71b2a1a5a7abc` |
+| 8 | `theorem` | [Stonean Effective Epi Namespaced Two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StoneanEffectiveEpiNamespacedTwo.lean/declarations/tocomphaus.md) | 245 | `result-track:4a3b4462b5a5b27fbfbd51788ef2ab2676091de1281c267759c44b40dd694d1b` |
+| 9 | `instance` | [instPrecoherent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StoneanEffectiveEpiNamespacedTwo.lean/declarations/instprecoherent.md) | 252 | `declaration-track:6262f727569ccc22819d1b2d326a7926d0ff1b81389db6a87d66b14b262d74ef` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

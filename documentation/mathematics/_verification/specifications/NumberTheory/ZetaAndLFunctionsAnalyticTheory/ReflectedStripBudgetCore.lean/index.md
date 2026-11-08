@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReflectedStripBudgetCore.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReflectedStripBudgetCore.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReflectedStripBudgetCore.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReflectedStripBudgetCore.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,11 +46,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Interfaces.JensenCentralLogDerivativeCore`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/JensenCentralLogDerivativeCore.lean/index.md) — import line 3; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.TrigonometricHeightBounds`](../../../../../FunctionsOfAComplexVariable/TrigonometricHeightBounds.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.GammaVerticalBound`](../../../../../FunctionsOfAComplexVariable/GammaVerticalBound.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.ReflectedStripBudget`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ReflectedStripBudget.lean/index.md) — import line 6; pinned internal source present.
-- [`GRWTSK.NumberTheory.Chebyshev.Checks.ReflectedStripControls`](../../../../../NumberTheory/ReflectedStripControls.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.Interfaces.JensenCentralLogDerivativeCore`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/JensenCentralLogDerivativeCore.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.TrigonometricHeightBounds`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/TrigonometricHeightBounds.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.GammaVerticalBound`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/GammaVerticalBound.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.ReflectedStripBudget`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ReflectedStripBudget.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.Checks.ReflectedStripControls`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ReflectedStripControls.lean/index.md) — import line 7; pinned internal source present.
 
 ## Top results and three-degree verification metric
 

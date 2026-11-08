@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/SetTheory/NormalFormCanonicalOrdinalTally.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/SetTheory/NormalFormCanonicalOrdinalTally.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/NormalFormCanonicalOrdinalTally.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/NormalFormCanonicalOrdinalTally.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CanonicalOrdinalTally](../../../../../MathematicalLogicAndFoundations/SetTheory/NormalFormCanonicalOrdinalTally.lean/declarations/canonicalordinaltally.md) | 11 | `declaration-track:a5d33be6c850d8a104f386654278b024c2528e4ea22cb95a0905f7591afd7d9e` |
-| 2 | `def` | [CanonicalOrdinalTally.semanticValue](../../../../../MathematicalLogicAndFoundations/SetTheory/NormalFormCanonicalOrdinalTally.lean/declarations/canonicalordinaltally-semanticvalue.md) | 21 | `declaration-track:52d13216832509696f474cc17f5df646bc4307b97c72c0f7a6d78c68341d759b` |
+| 1 | `structure` | [CanonicalOrdinalTally](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/NormalFormCanonicalOrdinalTally.lean/declarations/canonicalordinaltally.md) | 11 | `declaration-track:a5d33be6c850d8a104f386654278b024c2528e4ea22cb95a0905f7591afd7d9e` |
+| 2 | `def` | [CanonicalOrdinalTally.semanticValue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/NormalFormCanonicalOrdinalTally.lean/declarations/canonicalordinaltally-semanticvalue.md) | 21 | `declaration-track:52d13216832509696f474cc17f5df646bc4307b97c72c0f7a6d78c68341d759b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

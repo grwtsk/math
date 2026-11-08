@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AuditNamespacedRadiationAuditEntry.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AuditNamespacedRadiationAuditEntry.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AuditNamespacedRadiationAuditEntry.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AuditNamespacedRadiationAuditEntry.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RadiationAuditEntry](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AuditNamespacedRadiationAuditEntry.lean/declarations/radiationauditentry.md) | 27 | `declaration-track:404b72ad290a95750350e89161bd0569d26fa34c7eaa4d903d51c1921032c8be` |
-| 2 | `def` | [auditPurpose](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AuditNamespacedRadiationAuditEntry.lean/declarations/auditpurpose.md) | 33 | `declaration-track:9293749ed60aec259ea67e377a759c4eb1677e82f2b2a71c4634172d269876e4` |
+| 1 | `structure` | [RadiationAuditEntry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AuditNamespacedRadiationAuditEntry.lean/declarations/radiationauditentry.md) | 27 | `declaration-track:404b72ad290a95750350e89161bd0569d26fa34c7eaa4d903d51c1921032c8be` |
+| 2 | `def` | [auditPurpose](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AuditNamespacedRadiationAuditEntry.lean/declarations/auditpurpose.md) | 33 | `declaration-track:9293749ed60aec259ea67e377a759c4eb1677e82f2b2a71c4634172d269876e4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

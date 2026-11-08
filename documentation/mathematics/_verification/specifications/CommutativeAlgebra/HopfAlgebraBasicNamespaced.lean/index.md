@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/HopfAlgebraBasicNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/HopfAlgebraBasicNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HopfAlgebraBasicNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HopfAlgebraBasicNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,17 +57,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [HopfAlgebraStruct](../../../../CommutativeAlgebra/HopfAlgebraBasicNamespaced.lean/declarations/hopfalgebrastruct.md) | 57 | `declaration-track:5a4a6450fb95d042324d6eb2f33d54c7dd88f4938a2fb32dc377f28708227e54` |
-| 2 | `class` | [HopfAlgebra](../../../../CommutativeAlgebra/HopfAlgebraBasicNamespaced.lean/declarations/hopfalgebra.md) | 64 | `declaration-track:e87617c558ba6274b31d8039bb06b3af2b4ade5d487b6a01b49441315905bab2` |
-| 3 | `theorem` | [mul_antipode_rTensor_comul_apply](../../../../CommutativeAlgebra/HopfAlgebraBasicNamespaced.lean/declarations/mul-antipode-rtensor-comul-apply.md) | 80 | `result-track:7f760efb3408b9b0e769b854e3348da2f1b59456906b3e1dcf6fca7b53a35b28` |
-| 4 | `theorem` | [mul_antipode_lTensor_comul_apply](../../../../CommutativeAlgebra/HopfAlgebraBasicNamespaced.lean/declarations/mul-antipode-ltensor-comul-apply.md) | 86 | `result-track:4ad70d925c92e886a8c2061d5b322a60816dcad5619d088f5236f4330680b4e6` |
-| 5 | `theorem` | [antipode_one](../../../../CommutativeAlgebra/HopfAlgebraBasicNamespaced.lean/declarations/antipode-one.md) | 92 | `result-track:a57da19e4346375530dbe3f08b588b6c8b10929818afec42c945e6232b1adf38` |
-| 6 | `lemma` | [sum_antipode_mul_eq](../../../../CommutativeAlgebra/HopfAlgebraBasicNamespaced.lean/declarations/sum-antipode-mul-eq.md) | 99 | `result-track:c6ec80b6b7cc5b72993935cadb8c4cf7cf738411cf6d228afe5b0b4047538cde` |
-| 7 | `lemma` | [sum_mul_antipode_eq](../../../../CommutativeAlgebra/HopfAlgebraBasicNamespaced.lean/declarations/sum-mul-antipode-eq.md) | 105 | `result-track:5bad26daa3651043c4a7e3ceaa9e7b2372c2f2df0ec8e492db8b8a8abfc1333f` |
-| 8 | `lemma` | [sum_antipode_mul_eq_smul](../../../../CommutativeAlgebra/HopfAlgebraBasicNamespaced.lean/declarations/sum-antipode-mul-eq-smul.md) | 110 | `result-track:f94b8f0b07bb61033a7c6b6fa99eeb84a36cfb6364c094cbdcfac7758f96ae12` |
-| 9 | `lemma` | [sum_mul_antipode_eq_smul](../../../../CommutativeAlgebra/HopfAlgebraBasicNamespaced.lean/declarations/sum-mul-antipode-eq-smul.md) | 115 | `result-track:ebb05f66a90cc632dff9dc3bd0abbe8f2ad24bccdca5204585323189e639364f` |
-| 10 | `instance` | [toHopfAlgebra](../../../../CommutativeAlgebra/HopfAlgebraBasicNamespaced.lean/declarations/tohopfalgebra.md) | 129 | `declaration-track:08f478e197363e6ea628d5ea460f4695fbe6af845b220afad7a8cd61b41c3aa5` |
-| 11 | `theorem` | [antipode_eq_id](../../../../CommutativeAlgebra/HopfAlgebraBasicNamespaced.lean/declarations/antipode-eq-id.md) | 135 | `result-track:c0b4b7d6b25595b7d9a0706b1e2551f659a6922fbfa6ac9e17a0d940c52c724d` |
+| 1 | `class` | [HopfAlgebraStruct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HopfAlgebraBasicNamespaced.lean/declarations/hopfalgebrastruct.md) | 57 | `declaration-track:5a4a6450fb95d042324d6eb2f33d54c7dd88f4938a2fb32dc377f28708227e54` |
+| 2 | `class` | [HopfAlgebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HopfAlgebraBasicNamespaced.lean/declarations/hopfalgebra.md) | 64 | `declaration-track:e87617c558ba6274b31d8039bb06b3af2b4ade5d487b6a01b49441315905bab2` |
+| 3 | `theorem` | [mul_antipode_rTensor_comul_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HopfAlgebraBasicNamespaced.lean/declarations/mul-antipode-rtensor-comul-apply.md) | 80 | `result-track:7f760efb3408b9b0e769b854e3348da2f1b59456906b3e1dcf6fca7b53a35b28` |
+| 4 | `theorem` | [mul_antipode_lTensor_comul_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HopfAlgebraBasicNamespaced.lean/declarations/mul-antipode-ltensor-comul-apply.md) | 86 | `result-track:4ad70d925c92e886a8c2061d5b322a60816dcad5619d088f5236f4330680b4e6` |
+| 5 | `theorem` | [antipode_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HopfAlgebraBasicNamespaced.lean/declarations/antipode-one.md) | 92 | `result-track:a57da19e4346375530dbe3f08b588b6c8b10929818afec42c945e6232b1adf38` |
+| 6 | `lemma` | [sum_antipode_mul_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HopfAlgebraBasicNamespaced.lean/declarations/sum-antipode-mul-eq.md) | 99 | `result-track:c6ec80b6b7cc5b72993935cadb8c4cf7cf738411cf6d228afe5b0b4047538cde` |
+| 7 | `lemma` | [sum_mul_antipode_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HopfAlgebraBasicNamespaced.lean/declarations/sum-mul-antipode-eq.md) | 105 | `result-track:5bad26daa3651043c4a7e3ceaa9e7b2372c2f2df0ec8e492db8b8a8abfc1333f` |
+| 8 | `lemma` | [sum_antipode_mul_eq_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HopfAlgebraBasicNamespaced.lean/declarations/sum-antipode-mul-eq-smul.md) | 110 | `result-track:f94b8f0b07bb61033a7c6b6fa99eeb84a36cfb6364c094cbdcfac7758f96ae12` |
+| 9 | `lemma` | [sum_mul_antipode_eq_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HopfAlgebraBasicNamespaced.lean/declarations/sum-mul-antipode-eq-smul.md) | 115 | `result-track:ebb05f66a90cc632dff9dc3bd0abbe8f2ad24bccdca5204585323189e639364f` |
+| 10 | `instance` | [toHopfAlgebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HopfAlgebraBasicNamespaced.lean/declarations/tohopfalgebra.md) | 129 | `declaration-track:08f478e197363e6ea628d5ea460f4695fbe6af845b220afad7a8cd61b41c3aa5` |
+| 11 | `theorem` | [antipode_eq_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HopfAlgebraBasicNamespaced.lean/declarations/antipode-eq-id.md) | 135 | `result-track:c0b4b7d6b25595b7d9a0706b1e2551f659a6922fbfa6ac9e17a0d940c52c724d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

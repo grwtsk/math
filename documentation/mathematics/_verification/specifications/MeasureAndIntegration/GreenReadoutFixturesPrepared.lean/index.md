@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/GreenReadoutFixturesPrepared.lean/index.md) · [Full source](../../../../MeasureAndIntegration/GreenReadoutFixturesPrepared.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GreenReadoutFixturesPrepared.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GreenReadoutFixturesPrepared.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,20 +57,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [fixture01](../../../../MeasureAndIntegration/GreenReadoutFixturesPrepared.lean/declarations/fixture01.md) | 13 | `result-track:ee9940b7f03102bb0cc3da3c8d12df5fdbdde771f01dbb07548ced2c55959863` |
-| 2 | `theorem` | [fixture02](../../../../MeasureAndIntegration/GreenReadoutFixturesPrepared.lean/declarations/fixture02.md) | 20 | `result-track:4ec4c3bafaaf5114a43ee0e57e74cb7426ed2095c3052e2221808d1e0537aad6` |
-| 3 | `theorem` | [fixture03](../../../../MeasureAndIntegration/GreenReadoutFixturesPrepared.lean/declarations/fixture03.md) | 29 | `result-track:271df2c0dd0dbb9d38b0d52d14a588eb2d13e68477108e065de25c3efc33a40e` |
-| 4 | `theorem` | [fixture04](../../../../MeasureAndIntegration/GreenReadoutFixturesPrepared.lean/declarations/fixture04.md) | 41 | `result-track:8c5a1d185480d921fec9d0ddbfa13e1d3e653d7d9626e252877309c9f942094d` |
-| 5 | `theorem` | [fixture05](../../../../MeasureAndIntegration/GreenReadoutFixturesPrepared.lean/declarations/fixture05.md) | 44 | `result-track:dd796ec08c2442aa8067549e4eba2d80c1d664017dd3e9b55a4c58734ff9e138` |
-| 6 | `theorem` | [fixture06](../../../../MeasureAndIntegration/GreenReadoutFixturesPrepared.lean/declarations/fixture06.md) | 57 | `result-track:eebe83b3b0d9eac4d1d9082edd045706025f16b3d1fe1ee7889bf986fd3b2236` |
-| 7 | `theorem` | [fixture07](../../../../MeasureAndIntegration/GreenReadoutFixturesPrepared.lean/declarations/fixture07.md) | 61 | `result-track:8b78b86386107d4ff8a5be46049b805a6680471ea8d059d5558815c3e29fe1a3` |
-| 8 | `theorem` | [fixture08](../../../../MeasureAndIntegration/GreenReadoutFixturesPrepared.lean/declarations/fixture08.md) | 64 | `result-track:dc6d90d66e84af147719ae64435304dd5e3eed97c10f387783162db24c99c355` |
-| 9 | `theorem` | [fixture09](../../../../MeasureAndIntegration/GreenReadoutFixturesPrepared.lean/declarations/fixture09.md) | 68 | `result-track:e1ce77d59252a660e88f0f59e18d28792c228512647d78239d53feb1a267c2ef` |
-| 10 | `theorem` | [fixture10](../../../../MeasureAndIntegration/GreenReadoutFixturesPrepared.lean/declarations/fixture10.md) | 72 | `result-track:28a3d925851163cdd34fae8e5121047b5a8edd9bad0585865b55a5d87d9b82ce` |
-| 11 | `theorem` | [fixture11](../../../../MeasureAndIntegration/GreenReadoutFixturesPrepared.lean/declarations/fixture11.md) | 75 | `result-track:6a2145db8493e2646a12f3e4795a8792d006d7f9a6abf14ca9689e6fe27a9612` |
-| 12 | `theorem` | [fixture12](../../../../MeasureAndIntegration/GreenReadoutFixturesPrepared.lean/declarations/fixture12.md) | 79 | `result-track:16c6c16c3254597ad6df70075ade65f085f75173a0b1f11ce54bb428abfd34a7` |
-| 13 | `theorem` | [fixture13](../../../../MeasureAndIntegration/GreenReadoutFixturesPrepared.lean/declarations/fixture13.md) | 83 | `result-track:dfed0f8a058b6ffb706ae2e6966075eb78ab30e0dfae9e981ef724f0efea6cf1` |
-| 14 | `theorem` | [fixture14](../../../../MeasureAndIntegration/GreenReadoutFixturesPrepared.lean/declarations/fixture14.md) | 89 | `result-track:84e242e72e336918575fc0da00e55c187a7bd20ceee654e447134d0c17d1d8f6` |
+| 1 | `theorem` | [fixture01](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GreenReadoutFixturesPrepared.lean/declarations/fixture01.md) | 13 | `result-track:ee9940b7f03102bb0cc3da3c8d12df5fdbdde771f01dbb07548ced2c55959863` |
+| 2 | `theorem` | [fixture02](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GreenReadoutFixturesPrepared.lean/declarations/fixture02.md) | 20 | `result-track:4ec4c3bafaaf5114a43ee0e57e74cb7426ed2095c3052e2221808d1e0537aad6` |
+| 3 | `theorem` | [fixture03](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GreenReadoutFixturesPrepared.lean/declarations/fixture03.md) | 29 | `result-track:271df2c0dd0dbb9d38b0d52d14a588eb2d13e68477108e065de25c3efc33a40e` |
+| 4 | `theorem` | [fixture04](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GreenReadoutFixturesPrepared.lean/declarations/fixture04.md) | 41 | `result-track:8c5a1d185480d921fec9d0ddbfa13e1d3e653d7d9626e252877309c9f942094d` |
+| 5 | `theorem` | [fixture05](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GreenReadoutFixturesPrepared.lean/declarations/fixture05.md) | 44 | `result-track:dd796ec08c2442aa8067549e4eba2d80c1d664017dd3e9b55a4c58734ff9e138` |
+| 6 | `theorem` | [fixture06](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GreenReadoutFixturesPrepared.lean/declarations/fixture06.md) | 57 | `result-track:eebe83b3b0d9eac4d1d9082edd045706025f16b3d1fe1ee7889bf986fd3b2236` |
+| 7 | `theorem` | [fixture07](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GreenReadoutFixturesPrepared.lean/declarations/fixture07.md) | 61 | `result-track:8b78b86386107d4ff8a5be46049b805a6680471ea8d059d5558815c3e29fe1a3` |
+| 8 | `theorem` | [fixture08](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GreenReadoutFixturesPrepared.lean/declarations/fixture08.md) | 64 | `result-track:dc6d90d66e84af147719ae64435304dd5e3eed97c10f387783162db24c99c355` |
+| 9 | `theorem` | [fixture09](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GreenReadoutFixturesPrepared.lean/declarations/fixture09.md) | 68 | `result-track:e1ce77d59252a660e88f0f59e18d28792c228512647d78239d53feb1a267c2ef` |
+| 10 | `theorem` | [fixture10](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GreenReadoutFixturesPrepared.lean/declarations/fixture10.md) | 72 | `result-track:28a3d925851163cdd34fae8e5121047b5a8edd9bad0585865b55a5d87d9b82ce` |
+| 11 | `theorem` | [fixture11](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GreenReadoutFixturesPrepared.lean/declarations/fixture11.md) | 75 | `result-track:6a2145db8493e2646a12f3e4795a8792d006d7f9a6abf14ca9689e6fe27a9612` |
+| 12 | `theorem` | [fixture12](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GreenReadoutFixturesPrepared.lean/declarations/fixture12.md) | 79 | `result-track:16c6c16c3254597ad6df70075ade65f085f75173a0b1f11ce54bb428abfd34a7` |
+| 13 | `theorem` | [fixture13](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GreenReadoutFixturesPrepared.lean/declarations/fixture13.md) | 83 | `result-track:dfed0f8a058b6ffb706ae2e6966075eb78ab30e0dfae9e981ef724f0efea6cf1` |
+| 14 | `theorem` | [fixture14](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GreenReadoutFixturesPrepared.lean/declarations/fixture14.md) | 89 | `result-track:84e242e72e336918575fc0da00e55c187a7bd20ceee654e447134d0c17d1d8f6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SurfacePolygonDiskCharacteristic.lean/index.md) · [Full source](../../../../GeneralTopology/SurfacePolygonDiskCharacteristic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonDiskCharacteristic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonDiskCharacteristic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonStandardCircleConeDisk`](../../../../GeneralTopology/SurfacePolygonStandardCircleConeDisk.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonStandardCircleConeDisk`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonStandardCircleConeDisk.lean/index.md) — import line 8; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [diskCharacteristic](../../../../GeneralTopology/SurfacePolygonDiskCharacteristic.lean/declarations/diskcharacteristic.md) | 34 | `declaration-track:ed5afda48a2a41cf4e3c620de1766d5121eaa364a496ed963aaa2afe6e8fe025` |
-| 2 | `theorem` | [diskCharacteristic_continuous](../../../../GeneralTopology/SurfacePolygonDiskCharacteristic.lean/declarations/diskcharacteristic-continuous.md) | 40 | `result-track:220bd6f39d92be9f737401086a2faaa8acb20cc62292d2b0fe4ee8eff4797b46` |
-| 3 | `theorem` | [diskCharacteristic_surjective](../../../../GeneralTopology/SurfacePolygonDiskCharacteristic.lean/declarations/diskcharacteristic-surjective.md) | 47 | `result-track:d185fc228d15d3d7946b02a4fca028e498961994887e31642a4260d34a0d4d70` |
-| 4 | `theorem` | [diskCharacteristic_cone](../../../../GeneralTopology/SurfacePolygonDiskCharacteristic.lean/declarations/diskcharacteristic-cone.md) | 56 | `result-track:de6209907f6daef851e2a9c504bb0e91fffcbbd39cc6b2b59f50182a44a3767b` |
-| 5 | `theorem` | [diskCharacteristic_boundary](../../../../GeneralTopology/SurfacePolygonDiskCharacteristic.lean/declarations/diskcharacteristic-boundary.md) | 64 | `result-track:34e55267d113ec442f6041f6c89faa9f5411b422af243ca6c31da0c011c6c819` |
-| 6 | `theorem` | [diskCharacteristic_center](../../../../GeneralTopology/SurfacePolygonDiskCharacteristic.lean/declarations/diskcharacteristic-center.md) | 73 | `result-track:52167fd93127ca890326e5b8a859024553393834aea9d2758604f6a425bd546f` |
-| 7 | `theorem` | [diskCharacteristic_not_injective](../../../../GeneralTopology/SurfacePolygonDiskCharacteristic.lean/declarations/diskcharacteristic-not-injective.md) | 81 | `result-track:606f1947f7073de486d7bdea1245c43e3d675646c81b83a9ad7bfd04b6b06bd9` |
-| 8 | `theorem` | [genusTwo_diskCharacteristic_continuous](../../../../GeneralTopology/SurfacePolygonDiskCharacteristic.lean/declarations/genustwo-diskcharacteristic-continuous.md) | 91 | `result-track:ff066682b69daad049e15aa1a0feb6cda4e79ab72fe7143940e421387cb11c8f` |
-| 9 | `theorem` | [genusThree_diskCharacteristic_continuous](../../../../GeneralTopology/SurfacePolygonDiskCharacteristic.lean/declarations/genusthree-diskcharacteristic-continuous.md) | 96 | `result-track:116cdba098bf7c07a54dfba812aa654aea0d921a64b9dd7f104d30e9dc8b03d1` |
+| 1 | `def` | [diskCharacteristic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonDiskCharacteristic.lean/declarations/diskcharacteristic.md) | 34 | `declaration-track:ed5afda48a2a41cf4e3c620de1766d5121eaa364a496ed963aaa2afe6e8fe025` |
+| 2 | `theorem` | [diskCharacteristic_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonDiskCharacteristic.lean/declarations/diskcharacteristic-continuous.md) | 40 | `result-track:220bd6f39d92be9f737401086a2faaa8acb20cc62292d2b0fe4ee8eff4797b46` |
+| 3 | `theorem` | [diskCharacteristic_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonDiskCharacteristic.lean/declarations/diskcharacteristic-surjective.md) | 47 | `result-track:d185fc228d15d3d7946b02a4fca028e498961994887e31642a4260d34a0d4d70` |
+| 4 | `theorem` | [diskCharacteristic_cone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonDiskCharacteristic.lean/declarations/diskcharacteristic-cone.md) | 56 | `result-track:de6209907f6daef851e2a9c504bb0e91fffcbbd39cc6b2b59f50182a44a3767b` |
+| 5 | `theorem` | [diskCharacteristic_boundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonDiskCharacteristic.lean/declarations/diskcharacteristic-boundary.md) | 64 | `result-track:34e55267d113ec442f6041f6c89faa9f5411b422af243ca6c31da0c011c6c819` |
+| 6 | `theorem` | [diskCharacteristic_center](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonDiskCharacteristic.lean/declarations/diskcharacteristic-center.md) | 73 | `result-track:52167fd93127ca890326e5b8a859024553393834aea9d2758604f6a425bd546f` |
+| 7 | `theorem` | [diskCharacteristic_not_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonDiskCharacteristic.lean/declarations/diskcharacteristic-not-injective.md) | 81 | `result-track:606f1947f7073de486d7bdea1245c43e3d675646c81b83a9ad7bfd04b6b06bd9` |
+| 8 | `theorem` | [genusTwo_diskCharacteristic_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonDiskCharacteristic.lean/declarations/genustwo-diskcharacteristic-continuous.md) | 91 | `result-track:ff066682b69daad049e15aa1a0feb6cda4e79ab72fe7143940e421387cb11c8f` |
+| 9 | `theorem` | [genusThree_diskCharacteristic_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonDiskCharacteristic.lean/declarations/genusthree-diskcharacteristic-continuous.md) | 96 | `result-track:116cdba098bf7c07a54dfba812aa654aea0d921a64b9dd7f104d30e9dc8b03d1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

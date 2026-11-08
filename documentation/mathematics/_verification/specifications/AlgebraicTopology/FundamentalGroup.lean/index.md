@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/FundamentalGroup.lean/index.md) · [Full source](../../../../AlgebraicTopology/FundamentalGroup.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FundamentalGroup.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FundamentalGroup.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,15 +61,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [FundamentalGroup](../../../../AlgebraicTopology/FundamentalGroup.lean/declarations/fundamentalgroup.md) | 31 | `declaration-track:ee5a64198c57600e0b1a8cd8cb118cb29072609eed0f6acb88facc718547aa71` |
-| 2 | `instance` | [(anonymous)](../../../../AlgebraicTopology/FundamentalGroup.lean/declarations/instance.md) | 34 | `declaration-track:57587ea524768642ab76457f1bc459f126305cca17138a29aad5895bbedf4697` |
-| 3 | `instance` | [(anonymous)](../../../../AlgebraicTopology/FundamentalGroup.lean/declarations/instance-source-edition-2.md) | 38 | `declaration-track:ab0dbb62e9d6fd935ac82f79d51346a3f12c8ca2595d966da6edea09e76704f8` |
-| 4 | `def` | [fundamentalGroupMulEquivOfPath](../../../../AlgebraicTopology/FundamentalGroup.lean/declarations/fundamentalgroupmulequivofpath.md) | 47 | `declaration-track:93e1e758d4b6254307244bbcdb8ee29752e99bac0471c4db34e8e5deaac8d499` |
-| 5 | `def` | [fundamentalGroupMulEquivOfPathConnected](../../../../AlgebraicTopology/FundamentalGroup.lean/declarations/fundamentalgroupmulequivofpathconnected.md) | 54 | `declaration-track:4a8e5312e094ffa753a5c62f01058b5022c36c34418ba8a5048e506506ad034b` |
-| 6 | `abbrev` | [toArrow](../../../../AlgebraicTopology/FundamentalGroup.lean/declarations/toarrow.md) | 59 | `declaration-track:d67bb1b4c7cd09bc91bd8d117a25d03ff0810d6f9294524a81278a397c266ca9` |
-| 7 | `abbrev` | [toPath](../../../../AlgebraicTopology/FundamentalGroup.lean/declarations/topath.md) | 64 | `declaration-track:558062a586d8ac345b390d5d358df0fd71147d622ab56bef343787ae465e858c` |
-| 8 | `abbrev` | [fromArrow](../../../../AlgebraicTopology/FundamentalGroup.lean/declarations/fromarrow.md) | 68 | `declaration-track:ecce96582b6887ac0e6fff35951c97aac64ece58e80dcbeb729d3fd6ee703485` |
-| 9 | `abbrev` | [fromPath](../../../../AlgebraicTopology/FundamentalGroup.lean/declarations/frompath.md) | 75 | `declaration-track:a86dba47bb5e9a03a89a6ee63afaafa3ae2d992689ddca4e8ba24e2416489741` |
+| 1 | `def` | [FundamentalGroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FundamentalGroup.lean/declarations/fundamentalgroup.md) | 31 | `declaration-track:ee5a64198c57600e0b1a8cd8cb118cb29072609eed0f6acb88facc718547aa71` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FundamentalGroup.lean/declarations/instance.md) | 34 | `declaration-track:57587ea524768642ab76457f1bc459f126305cca17138a29aad5895bbedf4697` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FundamentalGroup.lean/declarations/instance-source-edition-2.md) | 38 | `declaration-track:ab0dbb62e9d6fd935ac82f79d51346a3f12c8ca2595d966da6edea09e76704f8` |
+| 4 | `def` | [fundamentalGroupMulEquivOfPath](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FundamentalGroup.lean/declarations/fundamentalgroupmulequivofpath.md) | 47 | `declaration-track:93e1e758d4b6254307244bbcdb8ee29752e99bac0471c4db34e8e5deaac8d499` |
+| 5 | `def` | [fundamentalGroupMulEquivOfPathConnected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FundamentalGroup.lean/declarations/fundamentalgroupmulequivofpathconnected.md) | 54 | `declaration-track:4a8e5312e094ffa753a5c62f01058b5022c36c34418ba8a5048e506506ad034b` |
+| 6 | `abbrev` | [toArrow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FundamentalGroup.lean/declarations/toarrow.md) | 59 | `declaration-track:d67bb1b4c7cd09bc91bd8d117a25d03ff0810d6f9294524a81278a397c266ca9` |
+| 7 | `abbrev` | [toPath](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FundamentalGroup.lean/declarations/topath.md) | 64 | `declaration-track:558062a586d8ac345b390d5d358df0fd71147d622ab56bef343787ae465e858c` |
+| 8 | `abbrev` | [fromArrow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FundamentalGroup.lean/declarations/fromarrow.md) | 68 | `declaration-track:ecce96582b6887ac0e6fff35951c97aac64ece58e80dcbeb729d3fd6ee703485` |
+| 9 | `abbrev` | [fromPath](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FundamentalGroup.lean/declarations/frompath.md) | 75 | `declaration-track:a86dba47bb5e9a03a89a6ee63afaafa3ae2d992689ddca4e8ba24e2416489741` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

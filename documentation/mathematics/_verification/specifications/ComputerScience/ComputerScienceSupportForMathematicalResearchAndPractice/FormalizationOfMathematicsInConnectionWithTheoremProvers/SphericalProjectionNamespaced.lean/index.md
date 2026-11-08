@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SphericalProjectionNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SphericalProjectionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SphericalProjectionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SphericalProjectionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SphereTarget](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SphericalProjectionNamespaced.lean/declarations/spheretarget.md) | 27 | `declaration-track:51b8a5e62ecec85a5454887b75c53b15c60200a97a5bb485847a436b6e32d852` |
-| 2 | `structure` | [SphericalCarrierProjection](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SphericalProjectionNamespaced.lean/declarations/sphericalcarrierprojection.md) | 37 | `declaration-track:efc52c3a122982b4d63e6f34d2f187260f22cdb5d5b2e3fadd4ae9358dafffe1` |
-| 3 | `theorem` | [spherical_carrier_projection_contract_if_supplied](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SphericalProjectionNamespaced.lean/declarations/spherical-carrier-projection-contract-if-supplied.md) | 43 | `result-track:0895013212f7bf34c314b44e09baf987cb00d2c3c2fffa4d0e8ac7ff0bc1bdff` |
+| 1 | `structure` | [SphereTarget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SphericalProjectionNamespaced.lean/declarations/spheretarget.md) | 27 | `declaration-track:51b8a5e62ecec85a5454887b75c53b15c60200a97a5bb485847a436b6e32d852` |
+| 2 | `structure` | [SphericalCarrierProjection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SphericalProjectionNamespaced.lean/declarations/sphericalcarrierprojection.md) | 37 | `declaration-track:efc52c3a122982b4d63e6f34d2f187260f22cdb5d5b2e3fadd4ae9358dafffe1` |
+| 3 | `theorem` | [spherical_carrier_projection_contract_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SphericalProjectionNamespaced.lean/declarations/spherical-carrier-projection-contract-if-supplied.md) | 43 | `result-track:0895013212f7bf34c314b44e09baf987cb00d2c3c2fffa4d0e8ac7ff0bc1bdff` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/MultiplicativeNumberTheory/QuadraticPrimeBoundary.lean/index.md) · [Full source](../../../../../NumberTheory/MultiplicativeNumberTheory/QuadraticPrimeBoundary.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/QuadraticPrimeBoundary.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/QuadraticPrimeBoundary.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Primes.QuadraticGaussianLine`](../../../../../NumberTheory/MultiplicativeNumberTheory/QuadraticGaussianLine.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Primes.QuadraticGaussianLine`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/QuadraticGaussianLine.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Tactic` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [quadraticPrimeLogWeight](../../../../../NumberTheory/MultiplicativeNumberTheory/QuadraticPrimeBoundary.lean/declarations/quadraticprimelogweight.md) | 33 | `declaration-track:7f4bd61032b635679dced07b85d44a53a78340ffb3b93563bc65148782848a59` |
-| 2 | `def` | [quadraticPrimeLogMass](../../../../../NumberTheory/MultiplicativeNumberTheory/QuadraticPrimeBoundary.lean/declarations/quadraticprimelogmass.md) | 39 | `declaration-track:34e0fcb640ce5871704f33f4e71eb21fc649f850bd17e0d933e6e72bb43832eb` |
-| 3 | `theorem` | [quadraticPrimeLogWeight_nonneg](../../../../../NumberTheory/MultiplicativeNumberTheory/QuadraticPrimeBoundary.lean/declarations/quadraticprimelogweight-nonneg.md) | 44 | `result-track:dd4b4a65236e25f1bc2c4854622642224159d9f3572f319d018eccc46d071183` |
-| 4 | `theorem` | [quadraticPrimeLogWeight_pos](../../../../../NumberTheory/MultiplicativeNumberTheory/QuadraticPrimeBoundary.lean/declarations/quadraticprimelogweight-pos.md) | 55 | `result-track:724ba22007b0df9332c2043f5f029a483f66e3d6299d9322b9661fbb84aae2b5` |
-| 5 | `theorem` | [quadraticPrimeLogMass_pos_iff](../../../../../NumberTheory/MultiplicativeNumberTheory/QuadraticPrimeBoundary.lean/declarations/quadraticprimelogmass-pos-iff.md) | 64 | `result-track:4fda2ccb8965bb1722a9b6f6157678edd9a8ada3c2eb5067a0679c70aed95be2` |
-| 6 | `def` | [quadraticGaussianPrimeLogMass](../../../../../NumberTheory/MultiplicativeNumberTheory/QuadraticPrimeBoundary.lean/declarations/quadraticgaussianprimelogmass.md) | 105 | `declaration-track:d1ae747dd8c6829aaf96588743f3573482abdc133077725dac21b3600d7ed26d` |
-| 7 | `theorem` | [quadraticGaussianPrimeLogMass_eq](../../../../../NumberTheory/MultiplicativeNumberTheory/QuadraticPrimeBoundary.lean/declarations/quadraticgaussianprimelogmass-eq.md) | 115 | `result-track:cab43cb6c2b0ae6df45184382243e6fcf7fdcc8d9d09a785a5e7f09db81ec890` |
-| 8 | `theorem` | [quadraticCount_pos_of_source_correction_bounds](../../../../../NumberTheory/MultiplicativeNumberTheory/QuadraticPrimeBoundary.lean/declarations/quadraticcount-pos-of-source-correction-bounds.md) | 135 | `result-track:672257f22bfb84a1e1bb36e432444794cefe7aeae43271589f7c4a2cb97283c1` |
-| 9 | `theorem` | [quadraticCount_pos_of_bilinear_residual_bounds](../../../../../NumberTheory/MultiplicativeNumberTheory/QuadraticPrimeBoundary.lean/declarations/quadraticcount-pos-of-bilinear-residual-bounds.md) | 152 | `result-track:2aa0e37952e32030f78088fa4e54698c5caa66e0becc92b4051620985afd99bf` |
+| 1 | `def` | [quadraticPrimeLogWeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/QuadraticPrimeBoundary.lean/declarations/quadraticprimelogweight.md) | 33 | `declaration-track:7f4bd61032b635679dced07b85d44a53a78340ffb3b93563bc65148782848a59` |
+| 2 | `def` | [quadraticPrimeLogMass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/QuadraticPrimeBoundary.lean/declarations/quadraticprimelogmass.md) | 39 | `declaration-track:34e0fcb640ce5871704f33f4e71eb21fc649f850bd17e0d933e6e72bb43832eb` |
+| 3 | `theorem` | [quadraticPrimeLogWeight_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/QuadraticPrimeBoundary.lean/declarations/quadraticprimelogweight-nonneg.md) | 44 | `result-track:dd4b4a65236e25f1bc2c4854622642224159d9f3572f319d018eccc46d071183` |
+| 4 | `theorem` | [quadraticPrimeLogWeight_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/QuadraticPrimeBoundary.lean/declarations/quadraticprimelogweight-pos.md) | 55 | `result-track:724ba22007b0df9332c2043f5f029a483f66e3d6299d9322b9661fbb84aae2b5` |
+| 5 | `theorem` | [quadraticPrimeLogMass_pos_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/QuadraticPrimeBoundary.lean/declarations/quadraticprimelogmass-pos-iff.md) | 64 | `result-track:4fda2ccb8965bb1722a9b6f6157678edd9a8ada3c2eb5067a0679c70aed95be2` |
+| 6 | `def` | [quadraticGaussianPrimeLogMass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/QuadraticPrimeBoundary.lean/declarations/quadraticgaussianprimelogmass.md) | 105 | `declaration-track:d1ae747dd8c6829aaf96588743f3573482abdc133077725dac21b3600d7ed26d` |
+| 7 | `theorem` | [quadraticGaussianPrimeLogMass_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/QuadraticPrimeBoundary.lean/declarations/quadraticgaussianprimelogmass-eq.md) | 115 | `result-track:cab43cb6c2b0ae6df45184382243e6fcf7fdcc8d9d09a785a5e7f09db81ec890` |
+| 8 | `theorem` | [quadraticCount_pos_of_source_correction_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/QuadraticPrimeBoundary.lean/declarations/quadraticcount-pos-of-source-correction-bounds.md) | 135 | `result-track:672257f22bfb84a1e1bb36e432444794cefe7aeae43271589f7c4a2cb97283c1` |
+| 9 | `theorem` | [quadraticCount_pos_of_bilinear_residual_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/QuadraticPrimeBoundary.lean/declarations/quadraticcount-pos-of-bilinear-residual-bounds.md) | 152 | `result-track:2aa0e37952e32030f78088fa4e54698c5caa66e0becc92b4051620985afd99bf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

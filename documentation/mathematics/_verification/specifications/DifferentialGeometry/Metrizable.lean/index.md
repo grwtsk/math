@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../DifferentialGeometry/Metrizable.lean/index.md) · [Full source](../../../../DifferentialGeometry/Metrizable.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/Metrizable.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/Metrizable.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [ManifoldWithCorners.metrizableSpace](../../../../DifferentialGeometry/Metrizable.lean/declarations/manifoldwithcorners-metrizablespace.md) | 24 | `result-track:8b362a8d5140e9cfa9bafdcbf3a3021c950557a134891f2f8908e3feb38c4337` |
+| 1 | `theorem` | [ManifoldWithCorners.metrizableSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/Metrizable.lean/declarations/manifoldwithcorners-metrizablespace.md) | 24 | `result-track:8b362a8d5140e9cfa9bafdcbf3a3021c950557a134891f2f8908e3feb38c4337` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

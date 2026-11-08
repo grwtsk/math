@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightModuleNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightModuleNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightModuleNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightModuleNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -64,14 +64,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [LightCondMod](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightModuleNamespaced.lean/declarations/lightcondmod.md) | 47 | `declaration-track:8e18b051b7679f74384046e6c4a9a222a888aa46a4f13e09784d23fadf709781` |
-| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightModuleNamespaced.lean/declarations/instance.md) | 49 | `declaration-track:9ad17d35c95b9e836c47fb4a32bebf54b5b3219abdda2c1f04d7b85220e22299` |
-| 3 | `def` | [LightCondensed.forget](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightModuleNamespaced.lean/declarations/lightcondensed-forget.md) | 52 | `declaration-track:fa159ba92bf60b78b02db188a3c42fbaf5f2d3f4e8bbaf24624ddd62dfe306a8` |
-| 4 | `def` | [LightCondensed.free](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightModuleNamespaced.lean/declarations/lightcondensed-free.md) | 59 | `declaration-track:322efd1e93ead07dc3a7e503e84024f0ce45ab91189af51a4b6921158ea80ed9` |
-| 5 | `def` | [LightCondensed.freeForgetAdjunction](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightModuleNamespaced.lean/declarations/lightcondensed-freeforgetadjunction.md) | 64 | `declaration-track:0b45a12c77bca874e512ce2fb34c69587f7007da2fa025e5849c61a1370e391f` |
-| 6 | `abbrev` | [LightCondAb](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightModuleNamespaced.lean/declarations/lightcondab.md) | 70 | `declaration-track:cbcc828ba615920cc791515af8528a4b773244d36fc52722b84005044e179fa1` |
-| 7 | `example` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightModuleNamespaced.lean/declarations/example.md) | 72 | `declaration-track:5b3018b4ef19c27b1754084c6d156cdc48fad111d636200bd616da82b293662f` |
-| 8 | `lemma` | [hom_naturality_apply](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightModuleNamespaced.lean/declarations/hom-naturality-apply.md) | 76 | `result-track:f7c38fb77a563dbdc0de7c20349f9a50feaba3f8c2bc0af05eb232c076dd3780` |
+| 1 | `abbrev` | [LightCondMod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightModuleNamespaced.lean/declarations/lightcondmod.md) | 47 | `declaration-track:8e18b051b7679f74384046e6c4a9a222a888aa46a4f13e09784d23fadf709781` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightModuleNamespaced.lean/declarations/instance.md) | 49 | `declaration-track:9ad17d35c95b9e836c47fb4a32bebf54b5b3219abdda2c1f04d7b85220e22299` |
+| 3 | `def` | [LightCondensed.forget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightModuleNamespaced.lean/declarations/lightcondensed-forget.md) | 52 | `declaration-track:fa159ba92bf60b78b02db188a3c42fbaf5f2d3f4e8bbaf24624ddd62dfe306a8` |
+| 4 | `def` | [LightCondensed.free](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightModuleNamespaced.lean/declarations/lightcondensed-free.md) | 59 | `declaration-track:322efd1e93ead07dc3a7e503e84024f0ce45ab91189af51a4b6921158ea80ed9` |
+| 5 | `def` | [LightCondensed.freeForgetAdjunction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightModuleNamespaced.lean/declarations/lightcondensed-freeforgetadjunction.md) | 64 | `declaration-track:0b45a12c77bca874e512ce2fb34c69587f7007da2fa025e5849c61a1370e391f` |
+| 6 | `abbrev` | [LightCondAb](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightModuleNamespaced.lean/declarations/lightcondab.md) | 70 | `declaration-track:cbcc828ba615920cc791515af8528a4b773244d36fc52722b84005044e179fa1` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightModuleNamespaced.lean/declarations/example.md) | 72 | `declaration-track:5b3018b4ef19c27b1754084c6d156cdc48fad111d636200bd616da82b293662f` |
+| 8 | `lemma` | [hom_naturality_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightModuleNamespaced.lean/declarations/hom-naturality-apply.md) | 76 | `result-track:f7c38fb77a563dbdc0de7c20349f9a50feaba3f8c2bc0af05eb232c076dd3780` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

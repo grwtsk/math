@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/PersistentBitFrontier.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/PersistentBitFrontier.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PersistentBitFrontier.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PersistentBitFrontier.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PersistentBitfieldProjection](../../../../../ComputerScience/AlgorithmsInComputerScience/PersistentBitFrontier.lean/declarations/persistentbitfieldprojection.md) | 10 | `declaration-track:7d886e6d427afeb1e931589e326adbb6b37233ead41255d4c5491a4fdcc606a6` |
-| 2 | `theorem` | [persistent_bitfield_projects](../../../../../ComputerScience/AlgorithmsInComputerScience/PersistentBitFrontier.lean/declarations/persistent-bitfield-projects.md) | 19 | `result-track:85dc61cac707455317d6573e7c6655b42d476b4c9ce210a3e2888940c7efe837` |
+| 1 | `structure` | [PersistentBitfieldProjection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PersistentBitFrontier.lean/declarations/persistentbitfieldprojection.md) | 10 | `declaration-track:7d886e6d427afeb1e931589e326adbb6b37233ead41255d4c5491a4fdcc606a6` |
+| 2 | `theorem` | [persistent_bitfield_projects](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PersistentBitFrontier.lean/declarations/persistent-bitfield-projects.md) | 19 | `result-track:85dc61cac707455317d6573e7c6655b42d476b4c9ce210a3e2888940c7efe837` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

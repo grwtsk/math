@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../CommutativeAlgebra/ArithmeticRingsAndOtherSpecialCommutativeRings/PolynomialRingsAndIdealsRingsOfIntegerValuedPolynomials/Gaussian.lean/index.md) · [Full source](../../../../../../CommutativeAlgebra/ArithmeticRingsAndOtherSpecialCommutativeRings/PolynomialRingsAndIdealsRingsOfIntegerValuedPolynomials/Gaussian.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ArithmeticRingsAndOtherSpecialCommutativeRings/PolynomialRingsAndIdealsRingsOfIntegerValuedPolynomials/Gaussian.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ArithmeticRingsAndOtherSpecialCommutativeRings/PolynomialRingsAndIdealsRingsOfIntegerValuedPolynomials/Gaussian.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,9 +61,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [deriv_gaussian_eq_hermite_mul_gaussian](../../../../../../CommutativeAlgebra/ArithmeticRingsAndOtherSpecialCommutativeRings/PolynomialRingsAndIdealsRingsOfIntegerValuedPolynomials/Gaussian.lean/declarations/deriv-gaussian-eq-hermite-mul-gaussian.md) | 38 | `result-track:1a45db80fec54af8b873c513b4980f403c5726af3fd0dee2077184275f72973d` |
-| 2 | `theorem` | [hermite_eq_deriv_gaussian](../../../../../../CommutativeAlgebra/ArithmeticRingsAndOtherSpecialCommutativeRings/PolynomialRingsAndIdealsRingsOfIntegerValuedPolynomials/Gaussian.lean/declarations/hermite-eq-deriv-gaussian.md) | 55 | `result-track:90e0b31f64688aed6441027db4af5b44461b9c4c435c170681bbb9b20e915c8c` |
-| 3 | `theorem` | [hermite_eq_deriv_gaussian'](../../../../../../CommutativeAlgebra/ArithmeticRingsAndOtherSpecialCommutativeRings/PolynomialRingsAndIdealsRingsOfIntegerValuedPolynomials/Gaussian.lean/declarations/hermite-eq-deriv-gaussian-source-edition-2.md) | 63 | `result-track:deb7926ff9febe7674103e546eb35ce1c413322d62d86d42fecd0c4d6eef8363` |
+| 1 | `theorem` | [deriv_gaussian_eq_hermite_mul_gaussian](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ArithmeticRingsAndOtherSpecialCommutativeRings/PolynomialRingsAndIdealsRingsOfIntegerValuedPolynomials/Gaussian.lean/declarations/deriv-gaussian-eq-hermite-mul-gaussian.md) | 38 | `result-track:1a45db80fec54af8b873c513b4980f403c5726af3fd0dee2077184275f72973d` |
+| 2 | `theorem` | [hermite_eq_deriv_gaussian](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ArithmeticRingsAndOtherSpecialCommutativeRings/PolynomialRingsAndIdealsRingsOfIntegerValuedPolynomials/Gaussian.lean/declarations/hermite-eq-deriv-gaussian.md) | 55 | `result-track:90e0b31f64688aed6441027db4af5b44461b9c4c435c170681bbb9b20e915c8c` |
+| 3 | `theorem` | [hermite_eq_deriv_gaussian'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ArithmeticRingsAndOtherSpecialCommutativeRings/PolynomialRingsAndIdealsRingsOfIntegerValuedPolynomials/Gaussian.lean/declarations/hermite-eq-deriv-gaussian-source-edition-2.md) | 63 | `result-track:deb7926ff9febe7674103e546eb35ce1c413322d62d86d42fecd0c4d6eef8363` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

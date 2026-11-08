@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/UnusedSimpArgsNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/UnusedSimpArgsNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/UnusedSimpArgsNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/UnusedSimpArgsNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [warnUnused](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/UnusedSimpArgsNamespacedPublic.lean/declarations/warnunused.md) | 28 | `declaration-track:02f71f108b704e9726e2765505c6ec000eb84c755ddbab0abe9ca7108c84887c` |
-| 2 | `def` | [unusedSimpArgs](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/UnusedSimpArgsNamespacedPublic.lean/declarations/unusedsimpargs.md) | 51 | `declaration-track:3a61cd6706bb8e026ca0a157e139ca1bfa7c70aabdf29e82e1c4d0d0c468f526` |
-| 3 | `builtin_initialize` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/UnusedSimpArgsNamespacedPublic.lean/declarations/builtin-initialize.md) | 89 | `declaration-track:ffb860fe9fe0e951cb82443f5f1d02bc05df32b7fbf4e5156239da74503fc6b9` |
+| 1 | `def` | [warnUnused](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/UnusedSimpArgsNamespacedPublic.lean/declarations/warnunused.md) | 28 | `declaration-track:02f71f108b704e9726e2765505c6ec000eb84c755ddbab0abe9ca7108c84887c` |
+| 2 | `def` | [unusedSimpArgs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/UnusedSimpArgsNamespacedPublic.lean/declarations/unusedsimpargs.md) | 51 | `declaration-track:3a61cd6706bb8e026ca0a157e139ca1bfa7c70aabdf29e82e1c4d0d0c468f526` |
+| 3 | `builtin_initialize` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/UnusedSimpArgsNamespacedPublic.lean/declarations/builtin-initialize.md) | 89 | `declaration-track:ffb860fe9fe0e951cb82443f5f1d02bc05df32b7fbf4e5156239da74503fc6b9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

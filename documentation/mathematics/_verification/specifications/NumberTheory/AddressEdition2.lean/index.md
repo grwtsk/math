@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/AddressEdition2.lean/index.md) · [Full source](../../../../NumberTheory/AddressEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AddressEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AddressEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,21 +59,21 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SequentialPrimeSpecification](../../../../NumberTheory/AddressEdition2.lean/declarations/sequentialprimespecification.md) | 18 | `declaration-track:ec23255709d0d652845a7c3fcb63758f722d01b06dce28c8060efbd021c0dbce` |
-| 2 | `def` | [rank](../../../../NumberTheory/AddressEdition2.lean/declarations/rank.md) | 27 | `declaration-track:193b7cf000bd11fa8d3a07c8faa4c6f053672a921ff625c2247d4e29acfd4a22` |
-| 3 | `structure` | [PrimeEnumeration](../../../../NumberTheory/AddressEdition2.lean/declarations/primeenumeration.md) | 31 | `declaration-track:6fe2b80820a9a3620fd905633e395118cb10835d5e0098b0510e5fb7a1bacd6a` |
-| 4 | `def` | [cantorPair](../../../../NumberTheory/AddressEdition2.lean/declarations/cantorpair.md) | 40 | `declaration-track:72665152a3d029a07c8eff9dd237e961aa46b14f37e1de1fd11c5d3c8e9d9037` |
-| 5 | `def` | [finiteSequenceCode](../../../../NumberTheory/AddressEdition2.lean/declarations/finitesequencecode.md) | 44 | `declaration-track:7d8a82145cd929cc4246d61a6d6d283f5f78e1dee94c1633cf8f4a79b2f858d2` |
-| 6 | `def` | [specificationCode](../../../../NumberTheory/AddressEdition2.lean/declarations/specificationcode.md) | 49 | `declaration-track:143c1ca626f1e51876b766f45bd6dfc76d9fe3ff2044062185cf76ce8f98284d` |
-| 7 | `structure` | [FiberCoordinate](../../../../NumberTheory/AddressEdition2.lean/declarations/fibercoordinate.md) | 54 | `declaration-track:ab4b607db01a7e2ed92043dfab5a43dbc25f607a8882bbab6fb690b363fd2c6b` |
-| 8 | `def` | [mixedRadixValues](../../../../NumberTheory/AddressEdition2.lean/declarations/mixedradixvalues.md) | 62 | `declaration-track:4749f655b31409ddfdd8bd60ff7b2efa918dafb70051f305e8a472e54c1e7b4a` |
-| 9 | `def` | [FiberCoordinate.mixedRadix](../../../../NumberTheory/AddressEdition2.lean/declarations/fibercoordinate-mixedradix.md) | 69 | `declaration-track:416a5211c0cb231e3c9879dc027e982f6287c89cedf217d7d0f9cc50b2b17fd1` |
-| 10 | `structure` | [MixedRadixEquivalence](../../../../NumberTheory/AddressEdition2.lean/declarations/mixedradixequivalence.md) | 77 | `declaration-track:3ef68346cc7bb2d5a82f0230019be815cfe6ec6cb442b555990dcb8aca1d72a3` |
-| 11 | `structure` | [RawCarrierAddress](../../../../NumberTheory/AddressEdition2.lean/declarations/rawcarrieraddress.md) | 86 | `declaration-track:6906e9bf29354dedcbd7a15597eeb62b58e247cdd1e279596e8435f2318ac609` |
-| 12 | `def` | [rawAddressCode](../../../../NumberTheory/AddressEdition2.lean/declarations/rawaddresscode.md) | 93 | `declaration-track:df85d1baa976c40a0ffb58893827255a87f77422f9432db2cd47da4b04cf258d` |
-| 13 | `structure` | [AddressEnumeration](../../../../NumberTheory/AddressEdition2.lean/declarations/addressenumeration.md) | 102 | `declaration-track:e07dbc1e3a5dda1e27ff1ff901bb7ff2411648bddf6fbd1335e12c11d616fc0c` |
-| 14 | `def` | [rawAddressEquivNat](../../../../NumberTheory/AddressEdition2.lean/declarations/rawaddressequivnat.md) | 110 | `declaration-track:ab1e3eeaf58a9457b553a57c01819f0ec91e00568ebd8a2723585f2c5afabe99` |
-| 15 | `def` | [rawAddressEnumeration](../../../../NumberTheory/AddressEdition2.lean/declarations/rawaddressenumeration.md) | 126 | `declaration-track:f3e1bcf8d658b4d23c397bbe95499b81b22ba275d79feda7673f5a155fe60b3d` |
+| 1 | `structure` | [SequentialPrimeSpecification](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AddressEdition2.lean/declarations/sequentialprimespecification.md) | 18 | `declaration-track:ec23255709d0d652845a7c3fcb63758f722d01b06dce28c8060efbd021c0dbce` |
+| 2 | `def` | [rank](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AddressEdition2.lean/declarations/rank.md) | 27 | `declaration-track:193b7cf000bd11fa8d3a07c8faa4c6f053672a921ff625c2247d4e29acfd4a22` |
+| 3 | `structure` | [PrimeEnumeration](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AddressEdition2.lean/declarations/primeenumeration.md) | 31 | `declaration-track:6fe2b80820a9a3620fd905633e395118cb10835d5e0098b0510e5fb7a1bacd6a` |
+| 4 | `def` | [cantorPair](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AddressEdition2.lean/declarations/cantorpair.md) | 40 | `declaration-track:72665152a3d029a07c8eff9dd237e961aa46b14f37e1de1fd11c5d3c8e9d9037` |
+| 5 | `def` | [finiteSequenceCode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AddressEdition2.lean/declarations/finitesequencecode.md) | 44 | `declaration-track:7d8a82145cd929cc4246d61a6d6d283f5f78e1dee94c1633cf8f4a79b2f858d2` |
+| 6 | `def` | [specificationCode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AddressEdition2.lean/declarations/specificationcode.md) | 49 | `declaration-track:143c1ca626f1e51876b766f45bd6dfc76d9fe3ff2044062185cf76ce8f98284d` |
+| 7 | `structure` | [FiberCoordinate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AddressEdition2.lean/declarations/fibercoordinate.md) | 54 | `declaration-track:ab4b607db01a7e2ed92043dfab5a43dbc25f607a8882bbab6fb690b363fd2c6b` |
+| 8 | `def` | [mixedRadixValues](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AddressEdition2.lean/declarations/mixedradixvalues.md) | 62 | `declaration-track:4749f655b31409ddfdd8bd60ff7b2efa918dafb70051f305e8a472e54c1e7b4a` |
+| 9 | `def` | [FiberCoordinate.mixedRadix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AddressEdition2.lean/declarations/fibercoordinate-mixedradix.md) | 69 | `declaration-track:416a5211c0cb231e3c9879dc027e982f6287c89cedf217d7d0f9cc50b2b17fd1` |
+| 10 | `structure` | [MixedRadixEquivalence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AddressEdition2.lean/declarations/mixedradixequivalence.md) | 77 | `declaration-track:3ef68346cc7bb2d5a82f0230019be815cfe6ec6cb442b555990dcb8aca1d72a3` |
+| 11 | `structure` | [RawCarrierAddress](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AddressEdition2.lean/declarations/rawcarrieraddress.md) | 86 | `declaration-track:6906e9bf29354dedcbd7a15597eeb62b58e247cdd1e279596e8435f2318ac609` |
+| 12 | `def` | [rawAddressCode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AddressEdition2.lean/declarations/rawaddresscode.md) | 93 | `declaration-track:df85d1baa976c40a0ffb58893827255a87f77422f9432db2cd47da4b04cf258d` |
+| 13 | `structure` | [AddressEnumeration](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AddressEdition2.lean/declarations/addressenumeration.md) | 102 | `declaration-track:e07dbc1e3a5dda1e27ff1ff901bb7ff2411648bddf6fbd1335e12c11d616fc0c` |
+| 14 | `def` | [rawAddressEquivNat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AddressEdition2.lean/declarations/rawaddressequivnat.md) | 110 | `declaration-track:ab1e3eeaf58a9457b553a57c01819f0ec91e00568ebd8a2723585f2c5afabe99` |
+| 15 | `def` | [rawAddressEnumeration](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AddressEdition2.lean/declarations/rawaddressenumeration.md) | 126 | `declaration-track:f3e1bcf8d658b4d23c397bbe95499b81b22ba275d79feda7673f5a155fe60b3d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

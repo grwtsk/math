@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/BKLNWA2TailBounds.lean/index.md) · [Full source](../../../../RealFunctions/BKLNWA2TailBounds.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BKLNWA2TailBounds.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BKLNWA2TailBounds.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,21 +58,21 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [head_100_lower](../../../../RealFunctions/BKLNWA2TailBounds.lean/declarations/head-100-lower.md) | 29 | `result-track:a9be5cfa9bc0a309f3eb8a2ac4d326f9b6d06c6e17faf5ece6559a506d552da1` |
-| 2 | `theorem` | [head_100_upper](../../../../RealFunctions/BKLNWA2TailBounds.lean/declarations/head-100-upper.md) | 33 | `result-track:f38f475272f6c5e416f8ac4edce075f0bc3dd9ddc3f8613ad6719c840ddbf396` |
-| 3 | `theorem` | [tail_100](../../../../RealFunctions/BKLNWA2TailBounds.lean/declarations/tail-100.md) | 37 | `result-track:5093d8597d0856ccdb8e6d5cbe3cef99ba4a3e5412447c7c0610fafdc1e5bdc5` |
-| 4 | `theorem` | [head_150_lower](../../../../RealFunctions/BKLNWA2TailBounds.lean/declarations/head-150-lower.md) | 49 | `result-track:4c6cf0d8136f48b431a2329851f569c11ab6614be43855b8f335b6cc3ea8d7c4` |
-| 5 | `theorem` | [head_150_upper](../../../../RealFunctions/BKLNWA2TailBounds.lean/declarations/head-150-upper.md) | 53 | `result-track:4a0d8ce2b5fafded6ff4d7b1ed6713563b40a8128c643c1b30b476b3bc05815f` |
-| 6 | `theorem` | [tail_150](../../../../RealFunctions/BKLNWA2TailBounds.lean/declarations/tail-150.md) | 57 | `result-track:e40f002288efff8bcd50a8cc5b4b3205b0d4118e7692bf36e553bcad4442dd65` |
-| 7 | `theorem` | [head_200_lower](../../../../RealFunctions/BKLNWA2TailBounds.lean/declarations/head-200-lower.md) | 69 | `result-track:05b26063da7a435e1f2b0666518d725d1cf4ca4fc5f6ac153188399d539404be` |
-| 8 | `theorem` | [head_200_upper](../../../../RealFunctions/BKLNWA2TailBounds.lean/declarations/head-200-upper.md) | 73 | `result-track:c791eedf73b3625f8761484e1da51cec86ab64f02528017dd1c45ffb6e2fb7e6` |
-| 9 | `theorem` | [tail_200](../../../../RealFunctions/BKLNWA2TailBounds.lean/declarations/tail-200.md) | 77 | `result-track:815e3c388ace5e04a74c1d86d7738a4244e5451ebba05c302f11d325d92ecde4` |
-| 10 | `theorem` | [head_250_lower](../../../../RealFunctions/BKLNWA2TailBounds.lean/declarations/head-250-lower.md) | 89 | `result-track:48c3577a5130e9b2a354cb9c7bb7fb9afb0455865c9d3c681620cf2200a95662` |
-| 11 | `theorem` | [head_250_upper](../../../../RealFunctions/BKLNWA2TailBounds.lean/declarations/head-250-upper.md) | 93 | `result-track:3bd1f2a1a5cf86c94768ae67a7cff60a62e13671b6e74fe5abde8d9374bb5c31` |
-| 12 | `theorem` | [tail_250](../../../../RealFunctions/BKLNWA2TailBounds.lean/declarations/tail-250.md) | 97 | `result-track:b8c5d904de178c3dda2423df014aacd3a5ad5aef95a6b0566c19f6254fe0ea44` |
-| 13 | `theorem` | [head_300_lower](../../../../RealFunctions/BKLNWA2TailBounds.lean/declarations/head-300-lower.md) | 109 | `result-track:98eca136f36ffbeb37d2808304e0fd79873692fa44b2e2fa462ed7643871fc63` |
-| 14 | `theorem` | [head_300_upper](../../../../RealFunctions/BKLNWA2TailBounds.lean/declarations/head-300-upper.md) | 113 | `result-track:f981cb555f7b18bfce38f6162a09d307aaba8e80c4dbfbde7d6d137be2a69119` |
-| 15 | `theorem` | [tail_300](../../../../RealFunctions/BKLNWA2TailBounds.lean/declarations/tail-300.md) | 117 | `result-track:044f688b90335a1bbc6d72473014f4e550e02c5079dc988dc1c64a02ac51dcc3` |
+| 1 | `theorem` | [head_100_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BKLNWA2TailBounds.lean/declarations/head-100-lower.md) | 29 | `result-track:a9be5cfa9bc0a309f3eb8a2ac4d326f9b6d06c6e17faf5ece6559a506d552da1` |
+| 2 | `theorem` | [head_100_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BKLNWA2TailBounds.lean/declarations/head-100-upper.md) | 33 | `result-track:f38f475272f6c5e416f8ac4edce075f0bc3dd9ddc3f8613ad6719c840ddbf396` |
+| 3 | `theorem` | [tail_100](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BKLNWA2TailBounds.lean/declarations/tail-100.md) | 37 | `result-track:5093d8597d0856ccdb8e6d5cbe3cef99ba4a3e5412447c7c0610fafdc1e5bdc5` |
+| 4 | `theorem` | [head_150_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BKLNWA2TailBounds.lean/declarations/head-150-lower.md) | 49 | `result-track:4c6cf0d8136f48b431a2329851f569c11ab6614be43855b8f335b6cc3ea8d7c4` |
+| 5 | `theorem` | [head_150_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BKLNWA2TailBounds.lean/declarations/head-150-upper.md) | 53 | `result-track:4a0d8ce2b5fafded6ff4d7b1ed6713563b40a8128c643c1b30b476b3bc05815f` |
+| 6 | `theorem` | [tail_150](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BKLNWA2TailBounds.lean/declarations/tail-150.md) | 57 | `result-track:e40f002288efff8bcd50a8cc5b4b3205b0d4118e7692bf36e553bcad4442dd65` |
+| 7 | `theorem` | [head_200_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BKLNWA2TailBounds.lean/declarations/head-200-lower.md) | 69 | `result-track:05b26063da7a435e1f2b0666518d725d1cf4ca4fc5f6ac153188399d539404be` |
+| 8 | `theorem` | [head_200_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BKLNWA2TailBounds.lean/declarations/head-200-upper.md) | 73 | `result-track:c791eedf73b3625f8761484e1da51cec86ab64f02528017dd1c45ffb6e2fb7e6` |
+| 9 | `theorem` | [tail_200](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BKLNWA2TailBounds.lean/declarations/tail-200.md) | 77 | `result-track:815e3c388ace5e04a74c1d86d7738a4244e5451ebba05c302f11d325d92ecde4` |
+| 10 | `theorem` | [head_250_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BKLNWA2TailBounds.lean/declarations/head-250-lower.md) | 89 | `result-track:48c3577a5130e9b2a354cb9c7bb7fb9afb0455865c9d3c681620cf2200a95662` |
+| 11 | `theorem` | [head_250_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BKLNWA2TailBounds.lean/declarations/head-250-upper.md) | 93 | `result-track:3bd1f2a1a5cf86c94768ae67a7cff60a62e13671b6e74fe5abde8d9374bb5c31` |
+| 12 | `theorem` | [tail_250](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BKLNWA2TailBounds.lean/declarations/tail-250.md) | 97 | `result-track:b8c5d904de178c3dda2423df014aacd3a5ad5aef95a6b0566c19f6254fe0ea44` |
+| 13 | `theorem` | [head_300_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BKLNWA2TailBounds.lean/declarations/head-300-lower.md) | 109 | `result-track:98eca136f36ffbeb37d2808304e0fd79873692fa44b2e2fa462ed7643871fc63` |
+| 14 | `theorem` | [head_300_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BKLNWA2TailBounds.lean/declarations/head-300-upper.md) | 113 | `result-track:f981cb555f7b18bfce38f6162a09d307aaba8e80c4dbfbde7d6d137be2a69119` |
+| 15 | `theorem` | [tail_300](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BKLNWA2TailBounds.lean/declarations/tail-300.md) | 117 | `result-track:044f688b90335a1bbc6d72473014f4e550e02c5079dc988dc1c64a02ac51dcc3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

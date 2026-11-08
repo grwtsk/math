@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesYonedaPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesYonedaPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesYonedaPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesYonedaPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [yonedaYonedaColimit](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesYonedaPublic.lean/declarations/yonedayonedacolimit.md) | 46 | `declaration-track:aac391eb6e1ebc69b6066c413102b5ff91184a79424d6fd93706c1f7b88e78fe` |
-| 2 | `theorem` | [yonedaYonedaColimit_app_inv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesYonedaPublic.lean/declarations/yonedayonedacolimit-app-inv.md) | 61 | `result-track:737022d964780893d8d0aec1fc9a1e1435a27f5d1654acfb7e6a04a1099ca97d` |
-| 3 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesYonedaPublic.lean/declarations/instance.md) | 81 | `declaration-track:0d1443f8bb614ac8c882c1540a24593d2219f4da0856dd7d77a7f03fec0c1f37` |
+| 1 | `def` | [yonedaYonedaColimit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesYonedaPublic.lean/declarations/yonedayonedacolimit.md) | 46 | `declaration-track:aac391eb6e1ebc69b6066c413102b5ff91184a79424d6fd93706c1f7b88e78fe` |
+| 2 | `theorem` | [yonedaYonedaColimit_app_inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesYonedaPublic.lean/declarations/yonedayonedacolimit-app-inv.md) | 61 | `result-track:737022d964780893d8d0aec1fc9a1e1435a27f5d1654acfb7e6a04a1099ca97d` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesYonedaPublic.lean/declarations/instance.md) | 81 | `declaration-track:0d1443f8bb614ac8c882c1540a24593d2219f4da0856dd7d77a7f03fec0c1f37` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/SafetyCertifiedPrograms.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/SafetyCertifiedPrograms.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SafetyCertifiedPrograms.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SafetyCertifiedPrograms.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `BitMatrix.Carrier.BooleanSpace` — import line 20; external provider; requires a separately pinned dependency.
-- [Instructions And One Step](../../../../../ComputerScience/AlgorithmsInComputerScience/InstructionsAndOneStep.lean/index.md) — import line 22; pinned internal source present.
+- [Instructions And One Step](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/InstructionsAndOneStep.lean/index.md) — import line 22; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [evaluateOperations](../../../../../ComputerScience/AlgorithmsInComputerScience/SafetyCertifiedPrograms.lean/declarations/evaluateoperations.md) | 47 | `declaration-track:fc57ca02c30dc59d4821ec7e4f66f56564000b29c492fd63c886e4d1329d178b` |
-| 2 | `def` | [validateOperationsFrom](../../../../../ComputerScience/AlgorithmsInComputerScience/SafetyCertifiedPrograms.lean/declarations/validateoperationsfrom.md) | 66 | `declaration-track:c6557a91f06ac21ac6d1b86e0dbb7a25e9b6624a23cc09cbedfb0a90fda3284a` |
-| 3 | `def` | [validateOperations](../../../../../ComputerScience/AlgorithmsInComputerScience/SafetyCertifiedPrograms.lean/declarations/validateoperations.md) | 78 | `declaration-track:0335f3f8922fd81ac983856285539973b9c75c66e073d3b5d5beffae6b187411` |
-| 4 | `structure` | [DecodedProgram](../../../../../ComputerScience/AlgorithmsInComputerScience/SafetyCertifiedPrograms.lean/declarations/decodedprogram.md) | 85 | `declaration-track:bd34519d3180cb7e1ab6cb40413c02c594fb10a034e7156660511fc7146080ae` |
-| 5 | `def` | [DecodedProgram.evaluate](../../../../../ComputerScience/AlgorithmsInComputerScience/SafetyCertifiedPrograms.lean/declarations/decodedprogram-evaluate.md) | 95 | `declaration-track:900ed7919c0510d1b1724a6a938b019bfff068a25b6bd3eb459a08399cfc6ad4` |
-| 6 | `theorem` | [DecodedProgram.evaluateOperations_eq_some_evaluate](../../../../../ComputerScience/AlgorithmsInComputerScience/SafetyCertifiedPrograms.lean/declarations/decodedprogram-evaluateoperations-eq-some-evaluate.md) | 102 | `result-track:00dc3d74ccbd81b65fa1a1ab590c6018bc61f28bf3c22d6906c8cac509e87d38` |
+| 1 | `def` | [evaluateOperations](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SafetyCertifiedPrograms.lean/declarations/evaluateoperations.md) | 47 | `declaration-track:fc57ca02c30dc59d4821ec7e4f66f56564000b29c492fd63c886e4d1329d178b` |
+| 2 | `def` | [validateOperationsFrom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SafetyCertifiedPrograms.lean/declarations/validateoperationsfrom.md) | 66 | `declaration-track:c6557a91f06ac21ac6d1b86e0dbb7a25e9b6624a23cc09cbedfb0a90fda3284a` |
+| 3 | `def` | [validateOperations](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SafetyCertifiedPrograms.lean/declarations/validateoperations.md) | 78 | `declaration-track:0335f3f8922fd81ac983856285539973b9c75c66e073d3b5d5beffae6b187411` |
+| 4 | `structure` | [DecodedProgram](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SafetyCertifiedPrograms.lean/declarations/decodedprogram.md) | 85 | `declaration-track:bd34519d3180cb7e1ab6cb40413c02c594fb10a034e7156660511fc7146080ae` |
+| 5 | `def` | [DecodedProgram.evaluate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SafetyCertifiedPrograms.lean/declarations/decodedprogram-evaluate.md) | 95 | `declaration-track:900ed7919c0510d1b1724a6a938b019bfff068a25b6bd3eb459a08399cfc6ad4` |
+| 6 | `theorem` | [DecodedProgram.evaluateOperations_eq_some_evaluate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SafetyCertifiedPrograms.lean/declarations/decodedprogram-evaluateoperations-eq-some-evaluate.md) | 102 | `result-track:00dc3d74ccbd81b65fa1a1ab590c6018bc61f28bf3c22d6906c8cac509e87d38` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

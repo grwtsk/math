@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/DyadicVariance.lean/index.md) · [Full source](../../../../RealFunctions/DyadicVariance.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DyadicVariance.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DyadicVariance.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,19 +57,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [pairMean](../../../../RealFunctions/DyadicVariance.lean/declarations/pairmean.md) | 17 | `declaration-track:50cbec307eea06a2d6105a98d3327e3508455ec3a0476e57f570ae5aff2fa834` |
-| 2 | `theorem` | [pair_centered_split](../../../../RealFunctions/DyadicVariance.lean/declarations/pair-centered-split.md) | 19 | `result-track:bc71dcd571822c51f9e76e25ce60e523d15ff4bd493ac190acef7df581aac7ba` |
-| 3 | `theorem` | [pair_mean_preserves_sum](../../../../RealFunctions/DyadicVariance.lean/declarations/pair-mean-preserves-sum.md) | 25 | `result-track:25c46bd0f2069b6a1c72c76d722762106f59dff43b4098b80b8bcbd5ce86fdc4` |
-| 4 | `theorem` | [refinement_gain_nonneg](../../../../RealFunctions/DyadicVariance.lean/declarations/refinement-gain-nonneg.md) | 29 | `result-track:426538a2a980901dc66b82529a273b89701270a67ad7435a435a82fb87ac64a1` |
-| 5 | `theorem` | [finite_refinement](../../../../RealFunctions/DyadicVariance.lean/declarations/finite-refinement.md) | 33 | `result-track:428cc1d96eaac16ed166e66935c855504ec7c87938bd2a4312f6d3dcaeb8e424` |
-| 6 | `theorem` | [finite_refinement_monotone](../../../../RealFunctions/DyadicVariance.lean/declarations/finite-refinement-monotone.md) | 40 | `result-track:9d080de89ad988703eba05d56d9d35fb8c44d34726a3b83fcb98b44f3b14d9c3` |
-| 7 | `theorem` | [quarter_range_moment_bound](../../../../RealFunctions/DyadicVariance.lean/declarations/quarter-range-moment-bound.md) | 49 | `result-track:8026bfee2185805d0367a01e09c1ede07f3bf13b78108d1adcc2dcce6e47c4cc` |
-| 8 | `theorem` | [retained_mean_identity](../../../../RealFunctions/DyadicVariance.lean/declarations/retained-mean-identity.md) | 54 | `result-track:0139ee63093502010f2e89ee2b3e3f7dc4abf405c8f6e088f51d046e0d0bf828` |
-| 9 | `theorem` | [finite_fine_budget](../../../../RealFunctions/DyadicVariance.lean/declarations/finite-fine-budget.md) | 58 | `result-track:35192a52faaf50d9d519487f8313414e38bd9923c1db5229cee7de910b5c82c7` |
-| 10 | `theorem` | [complete_return](../../../../RealFunctions/DyadicVariance.lean/declarations/complete-return.md) | 67 | `result-track:2cef40a8e50ef83c979ab11826cc6b081e659235cc44e42ab5795328146277be` |
-| 11 | `theorem` | [source_scale_budget](../../../../RealFunctions/DyadicVariance.lean/declarations/source-scale-budget.md) | 71 | `result-track:9128251a75a7ab3ffd297a0cc9d48e7d7b5c9c7bca0bce9b0e7e69cea85dde84` |
-| 12 | `theorem` | [endpoint_control](../../../../RealFunctions/DyadicVariance.lean/declarations/endpoint-control.md) | 78 | `result-track:5d0180542ce71fe7c7b25eb7ea84e5a0605582caf56e319744193c7bceb4fd66` |
-| 13 | `theorem` | [primitive_completion](../../../../RealFunctions/DyadicVariance.lean/declarations/primitive-completion.md) | 81 | `result-track:6cd7932126a085104ce87e9fa802fc3053d447fa6eebc61eebb0f42e23df1985` |
+| 1 | `def` | [pairMean](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DyadicVariance.lean/declarations/pairmean.md) | 17 | `declaration-track:50cbec307eea06a2d6105a98d3327e3508455ec3a0476e57f570ae5aff2fa834` |
+| 2 | `theorem` | [pair_centered_split](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DyadicVariance.lean/declarations/pair-centered-split.md) | 19 | `result-track:bc71dcd571822c51f9e76e25ce60e523d15ff4bd493ac190acef7df581aac7ba` |
+| 3 | `theorem` | [pair_mean_preserves_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DyadicVariance.lean/declarations/pair-mean-preserves-sum.md) | 25 | `result-track:25c46bd0f2069b6a1c72c76d722762106f59dff43b4098b80b8bcbd5ce86fdc4` |
+| 4 | `theorem` | [refinement_gain_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DyadicVariance.lean/declarations/refinement-gain-nonneg.md) | 29 | `result-track:426538a2a980901dc66b82529a273b89701270a67ad7435a435a82fb87ac64a1` |
+| 5 | `theorem` | [finite_refinement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DyadicVariance.lean/declarations/finite-refinement.md) | 33 | `result-track:428cc1d96eaac16ed166e66935c855504ec7c87938bd2a4312f6d3dcaeb8e424` |
+| 6 | `theorem` | [finite_refinement_monotone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DyadicVariance.lean/declarations/finite-refinement-monotone.md) | 40 | `result-track:9d080de89ad988703eba05d56d9d35fb8c44d34726a3b83fcb98b44f3b14d9c3` |
+| 7 | `theorem` | [quarter_range_moment_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DyadicVariance.lean/declarations/quarter-range-moment-bound.md) | 49 | `result-track:8026bfee2185805d0367a01e09c1ede07f3bf13b78108d1adcc2dcce6e47c4cc` |
+| 8 | `theorem` | [retained_mean_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DyadicVariance.lean/declarations/retained-mean-identity.md) | 54 | `result-track:0139ee63093502010f2e89ee2b3e3f7dc4abf405c8f6e088f51d046e0d0bf828` |
+| 9 | `theorem` | [finite_fine_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DyadicVariance.lean/declarations/finite-fine-budget.md) | 58 | `result-track:35192a52faaf50d9d519487f8313414e38bd9923c1db5229cee7de910b5c82c7` |
+| 10 | `theorem` | [complete_return](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DyadicVariance.lean/declarations/complete-return.md) | 67 | `result-track:2cef40a8e50ef83c979ab11826cc6b081e659235cc44e42ab5795328146277be` |
+| 11 | `theorem` | [source_scale_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DyadicVariance.lean/declarations/source-scale-budget.md) | 71 | `result-track:9128251a75a7ab3ffd297a0cc9d48e7d7b5c9c7bca0bce9b0e7e69cea85dde84` |
+| 12 | `theorem` | [endpoint_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DyadicVariance.lean/declarations/endpoint-control.md) | 78 | `result-track:5d0180542ce71fe7c7b25eb7ea84e5a0605582caf56e319744193c7bceb4fd66` |
+| 13 | `theorem` | [primitive_completion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DyadicVariance.lean/declarations/primitive-completion.md) | 81 | `result-track:6cd7932126a085104ce87e9fa802fc3053d447fa6eebc61eebb0f42e23df1985` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

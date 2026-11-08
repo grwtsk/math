@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Faithful.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Faithful.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Faithful.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Faithful.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [CancelMonoidWithZero.faithfulSMul](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Faithful.lean/declarations/cancelmonoidwithzero-faithfulsmul.md) | 20 | `declaration-track:15a9bbd69768a423cd00c308287987127460e376e26654074a7e12eaae062217` |
+| 1 | `instance` | [CancelMonoidWithZero.faithfulSMul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Faithful.lean/declarations/cancelmonoidwithzero-faithfulsmul.md) | 20 | `declaration-track:15a9bbd69768a423cd00c308287987127460e376e26654074a7e12eaae062217` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

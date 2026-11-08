@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerStrictProgress.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerStrictProgress.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerStrictProgress.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerStrictProgress.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteCountedEulerResidualTrail`](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerResidualTrail.lean/index.md) — import line 3; pinned internal source present.
-- [`GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteCountedEulerWalkConcat`](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerWalkConcat.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteCountedEulerResidualTrail`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerResidualTrail.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteCountedEulerWalkConcat`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerWalkConcat.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Tactic` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [FreshCountedTrail.exists_strict_progress_of_visited_unused_edge](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerStrictProgress.lean/declarations/freshcountedtrail-exists-strict-progress-of-visited-unused-edge.md) | 27 | `result-track:fb1ae290e279c824533957b5a74fb5ae83db86fcb9c16463180726d6ccb529f5` |
-| 2 | `theorem` | [FreshCountedTrail.complete_or_unused_edge](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerStrictProgress.lean/declarations/freshcountedtrail-complete-or-unused-edge.md) | 63 | `result-track:5e61f82955955549547f64b14e8fb937833227d73bf34c8d42ff63d2e0658e84` |
+| 1 | `theorem` | [FreshCountedTrail.exists_strict_progress_of_visited_unused_edge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerStrictProgress.lean/declarations/freshcountedtrail-exists-strict-progress-of-visited-unused-edge.md) | 27 | `result-track:fb1ae290e279c824533957b5a74fb5ae83db86fcb9c16463180726d6ccb529f5` |
+| 2 | `theorem` | [FreshCountedTrail.complete_or_unused_edge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerStrictProgress.lean/declarations/freshcountedtrail-complete-or-unused-edge.md) | 63 | `result-track:5e61f82955955549547f64b14e8fb937833227d73bf34c8d42ff63d2e0658e84` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

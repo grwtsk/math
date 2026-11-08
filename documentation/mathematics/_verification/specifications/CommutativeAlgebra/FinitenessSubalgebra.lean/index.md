@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/FinitenessSubalgebra.lean/index.md) · [Full source](../../../../CommutativeAlgebra/FinitenessSubalgebra.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessSubalgebra.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessSubalgebra.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [fg_bot_toSubmodule](../../../../CommutativeAlgebra/FinitenessSubalgebra.lean/declarations/fg-bot-tosubmodule.md) | 23 | `result-track:dc768ee095fd3b623e713759b8181feae199499e0b06ec28a772c5dcdcc09390` |
-| 2 | `instance` | [finite_bot](../../../../CommutativeAlgebra/FinitenessSubalgebra.lean/declarations/finite-bot.md) | 26 | `declaration-track:c82ed266807353a989ed78f39037479508bfa51578c18e51ba12b52c95e06ca3` |
-| 3 | `theorem` | [fg_unit](../../../../CommutativeAlgebra/FinitenessSubalgebra.lean/declarations/fg-unit.md) | 33 | `result-track:833fbb5f3f0758611814f51bbb12ba8f45c52350ce9a25d12594d650135b345f` |
-| 4 | `theorem` | [fg_of_isUnit](../../../../CommutativeAlgebra/FinitenessSubalgebra.lean/declarations/fg-of-isunit.md) | 42 | `result-track:f69a2c2aae64e85470c873cfd860faf623881dd39c9da5c541da0a6a8143dbc3` |
-| 5 | `theorem` | [FG.mul](../../../../CommutativeAlgebra/FinitenessSubalgebra.lean/declarations/fg-mul.md) | 51 | `result-track:0620359598dcae974a9d2bd2f8846a11b57ee833eff472b86925047ce4d6ab59` |
-| 6 | `theorem` | [FG.pow](../../../../CommutativeAlgebra/FinitenessSubalgebra.lean/declarations/fg-pow.md) | 54 | `result-track:07c1ba9e5f5a5ddbcda06b60b2ffc31c734780a24054c4cf4a0426f0827ae72f` |
+| 1 | `theorem` | [fg_bot_toSubmodule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessSubalgebra.lean/declarations/fg-bot-tosubmodule.md) | 23 | `result-track:dc768ee095fd3b623e713759b8181feae199499e0b06ec28a772c5dcdcc09390` |
+| 2 | `instance` | [finite_bot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessSubalgebra.lean/declarations/finite-bot.md) | 26 | `declaration-track:c82ed266807353a989ed78f39037479508bfa51578c18e51ba12b52c95e06ca3` |
+| 3 | `theorem` | [fg_unit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessSubalgebra.lean/declarations/fg-unit.md) | 33 | `result-track:833fbb5f3f0758611814f51bbb12ba8f45c52350ce9a25d12594d650135b345f` |
+| 4 | `theorem` | [fg_of_isUnit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessSubalgebra.lean/declarations/fg-of-isunit.md) | 42 | `result-track:f69a2c2aae64e85470c873cfd860faf623881dd39c9da5c541da0a6a8143dbc3` |
+| 5 | `theorem` | [FG.mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessSubalgebra.lean/declarations/fg-mul.md) | 51 | `result-track:0620359598dcae974a9d2bd2f8846a11b57ee833eff472b86925047ce4d6ab59` |
+| 6 | `theorem` | [FG.pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessSubalgebra.lean/declarations/fg-pow.md) | 54 | `result-track:07c1ba9e5f5a5ddbcda06b60b2ffc31c734780a24054c4cf4a0426f0827ae72f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

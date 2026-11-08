@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/MultiplicativeNumberTheory/FiveModeResidualFormulaNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/MultiplicativeNumberTheory/FiveModeResidualFormulaNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/FiveModeResidualFormulaNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/FiveModeResidualFormulaNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_residual_eq_prime_power](../../../../../NumberTheory/MultiplicativeNumberTheory/FiveModeResidualFormulaNamespaced.lean/declarations/actual-residual-eq-prime-power.md) | 32 | `result-track:561960c67a43f22590ed3850dcac0e407a87456f54805d4dc6e470ffcf9b670c` |
-| 2 | `theorem` | [actual_residual_matrix_formula](../../../../../NumberTheory/MultiplicativeNumberTheory/FiveModeResidualFormulaNamespaced.lean/declarations/actual-residual-matrix-formula.md) | 39 | `result-track:053261bf282bc0c666f3ea0ef845c40dd7836e4707a8ead01cfd3fec486b858c` |
-| 3 | `theorem` | [actual_finite_bounds_of_premises](../../../../../NumberTheory/MultiplicativeNumberTheory/FiveModeResidualFormulaNamespaced.lean/declarations/actual-finite-bounds-of-premises.md) | 49 | `result-track:dc25c06e81b3edfacbf565c94d183506c8e6f902fb285114635d73c6ac761bdf` |
+| 1 | `theorem` | [actual_residual_eq_prime_power](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/FiveModeResidualFormulaNamespaced.lean/declarations/actual-residual-eq-prime-power.md) | 32 | `result-track:561960c67a43f22590ed3850dcac0e407a87456f54805d4dc6e470ffcf9b670c` |
+| 2 | `theorem` | [actual_residual_matrix_formula](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/FiveModeResidualFormulaNamespaced.lean/declarations/actual-residual-matrix-formula.md) | 39 | `result-track:053261bf282bc0c666f3ea0ef845c40dd7836e4707a8ead01cfd3fec486b858c` |
+| 3 | `theorem` | [actual_finite_bounds_of_premises](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/FiveModeResidualFormulaNamespaced.lean/declarations/actual-finite-bounds-of-premises.md) | 49 | `result-track:dc25c06e81b3edfacbf565c94d183506c8e6f902fb285114635d73c6ac761bdf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

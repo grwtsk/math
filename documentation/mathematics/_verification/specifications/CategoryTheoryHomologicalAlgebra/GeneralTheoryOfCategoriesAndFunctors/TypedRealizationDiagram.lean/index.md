@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TypedRealizationDiagram.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TypedRealizationDiagram.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TypedRealizationDiagram.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TypedRealizationDiagram.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [Minimal Category Core Functor Data](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MinimalCategoryCoreFunctorData.lean/index.md) — import line 17; pinned internal source present.
+- [Minimal Category Core Functor Data](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MinimalCategoryCoreFunctorData.lean/index.md) — import line 17; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RealizationCategories](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TypedRealizationDiagram.lean/declarations/realizationcategories.md) | 30 | `declaration-track:0082d7288e552865097859051391d002d7000048f8ba1dc9d915fd22f95fe041` |
-| 2 | `structure` | [RealizationFunctors](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TypedRealizationDiagram.lean/declarations/realizationfunctors.md) | 43 | `declaration-track:b3b1d953da26ff25ad1397d24c3bbd9336a21ffbe34ae698629f2cee3ccce15b` |
-| 3 | `structure` | [FunctorialCarrier](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TypedRealizationDiagram.lean/declarations/functorialcarrier.md) | 56 | `declaration-track:a5d450796309e8d1f2bff9110fa063887fd0811fa2cfd1a74c915a5ac5194ee5` |
+| 1 | `structure` | [RealizationCategories](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TypedRealizationDiagram.lean/declarations/realizationcategories.md) | 30 | `declaration-track:0082d7288e552865097859051391d002d7000048f8ba1dc9d915fd22f95fe041` |
+| 2 | `structure` | [RealizationFunctors](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TypedRealizationDiagram.lean/declarations/realizationfunctors.md) | 43 | `declaration-track:b3b1d953da26ff25ad1397d24c3bbd9336a21ffbe34ae698629f2cee3ccce15b` |
+| 3 | `structure` | [FunctorialCarrier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TypedRealizationDiagram.lean/declarations/functorialcarrier.md) | 56 | `declaration-track:a5d450796309e8d1f2bff9110fa063887fd0811fa2cfd1a74c915a5ac5194ee5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

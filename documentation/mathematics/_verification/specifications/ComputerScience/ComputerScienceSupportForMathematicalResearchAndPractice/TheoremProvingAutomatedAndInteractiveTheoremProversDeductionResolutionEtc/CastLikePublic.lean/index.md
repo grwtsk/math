@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CastLikePublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CastLikePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CastLikePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CastLikePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [isCastLikeDeclName](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CastLikePublic.lean/declarations/iscastlikedeclname.md) | 14 | `declaration-track:7541d84886eccbb8bd7e534c7f8b9de473186123f502a26aae0f909d38a0f6e9` |
-| 2 | `def` | [isCastLikeFn](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CastLikePublic.lean/declarations/iscastlikefn.md) | 22 | `declaration-track:2875e4e4d553ed43c26db2a9fa2aa45740173a84e1a3c83ebfb4ffeaeac431b7` |
-| 3 | `def` | [isCastLikeApp](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CastLikePublic.lean/declarations/iscastlikeapp.md) | 26 | `declaration-track:b7262ae25da820b7fcde953071d2930bd3c7d326067487e790ab5a2b7db7c669` |
+| 1 | `def` | [isCastLikeDeclName](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CastLikePublic.lean/declarations/iscastlikedeclname.md) | 14 | `declaration-track:7541d84886eccbb8bd7e534c7f8b9de473186123f502a26aae0f909d38a0f6e9` |
+| 2 | `def` | [isCastLikeFn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CastLikePublic.lean/declarations/iscastlikefn.md) | 22 | `declaration-track:2875e4e4d553ed43c26db2a9fa2aa45740173a84e1a3c83ebfb4ffeaeac431b7` |
+| 3 | `def` | [isCastLikeApp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CastLikePublic.lean/declarations/iscastlikeapp.md) | 26 | `declaration-track:b7262ae25da820b7fcde953071d2930bd3c7d326067487e790ab5a2b7db7c669` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

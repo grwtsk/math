@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/LakefileEdition31.lean/index.md) · [Full source](../../../../MeasureAndIntegration/LakefileEdition31.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LakefileEdition31.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LakefileEdition31.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [preResolutionPatchNames](../../../../MeasureAndIntegration/LakefileEdition31.lean/declarations/preresolutionpatchnames.md) | 187 | `declaration-track:320676e6677a974fe267f4ad7291dad0a0ed0ed52af38a4485aea41b2235883e` |
-| 2 | `def` | [patchGit](../../../../MeasureAndIntegration/LakefileEdition31.lean/declarations/patchgit.md) | 192 | `declaration-track:85baeaa9f98b331c1b255d480ecce70c9a23934952a9f54c7c03109eacf0d546` |
-| 3 | `def` | [checkPatch](../../../../MeasureAndIntegration/LakefileEdition31.lean/declarations/checkpatch.md) | 195 | `declaration-track:9215d2c28196fad7074f6fae52e27a1bbd203a495c6f87cff638c91cdf6bd5ef` |
-| 4 | `inductive` | [PatchState](../../../../MeasureAndIntegration/LakefileEdition31.lean/declarations/patchstate.md) | 199 | `declaration-track:1ecb50b9cb692a9eaa1c0b982d192b651eaa344e4476643197c2488535106771` |
-| 5 | `structure` | [PatchPlan](../../../../MeasureAndIntegration/LakefileEdition31.lean/declarations/patchplan.md) | 204 | `declaration-track:881a5f2b68f07c07bb2250abe9522513f2a7589295f8ac30711579ffb3a5d3a7` |
-| 6 | `def` | [planDependencyPatch](../../../../MeasureAndIntegration/LakefileEdition31.lean/declarations/plandependencypatch.md) | 212 | `declaration-track:367fbd57aacf548eb8639aa362cb20a31f27ebf4ff53bbcaa96542b05b90e6f5` |
-| 7 | `def` | [applyDependencyPatch](../../../../MeasureAndIntegration/LakefileEdition31.lean/declarations/applydependencypatch.md) | 241 | `declaration-track:31b156240a7bf0e0e35f7d5e0a103417987bc3bf052edf24b1674243ea149f49` |
-| 8 | `def` | [preparePatchedDependencies](../../../../MeasureAndIntegration/LakefileEdition31.lean/declarations/preparepatcheddependencies.md) | 250 | `declaration-track:19338d6fab5ab821de4c24bb73c840f7358da5d30aa058fd5e0d04396d0024ae` |
+| 1 | `def` | [preResolutionPatchNames](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LakefileEdition31.lean/declarations/preresolutionpatchnames.md) | 187 | `declaration-track:320676e6677a974fe267f4ad7291dad0a0ed0ed52af38a4485aea41b2235883e` |
+| 2 | `def` | [patchGit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LakefileEdition31.lean/declarations/patchgit.md) | 192 | `declaration-track:85baeaa9f98b331c1b255d480ecce70c9a23934952a9f54c7c03109eacf0d546` |
+| 3 | `def` | [checkPatch](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LakefileEdition31.lean/declarations/checkpatch.md) | 195 | `declaration-track:9215d2c28196fad7074f6fae52e27a1bbd203a495c6f87cff638c91cdf6bd5ef` |
+| 4 | `inductive` | [PatchState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LakefileEdition31.lean/declarations/patchstate.md) | 199 | `declaration-track:1ecb50b9cb692a9eaa1c0b982d192b651eaa344e4476643197c2488535106771` |
+| 5 | `structure` | [PatchPlan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LakefileEdition31.lean/declarations/patchplan.md) | 204 | `declaration-track:881a5f2b68f07c07bb2250abe9522513f2a7589295f8ac30711579ffb3a5d3a7` |
+| 6 | `def` | [planDependencyPatch](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LakefileEdition31.lean/declarations/plandependencypatch.md) | 212 | `declaration-track:367fbd57aacf548eb8639aa362cb20a31f27ebf4ff53bbcaa96542b05b90e6f5` |
+| 7 | `def` | [applyDependencyPatch](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LakefileEdition31.lean/declarations/applydependencypatch.md) | 241 | `declaration-track:31b156240a7bf0e0e35f7d5e0a103417987bc3bf052edf24b1674243ea149f49` |
+| 8 | `def` | [preparePatchedDependencies](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LakefileEdition31.lean/declarations/preparepatcheddependencies.md) | 250 | `declaration-track:19338d6fab5ab821de4c24bb73c840f7358da5d30aa058fd5e0d04396d0024ae` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

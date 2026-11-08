@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/Attempt01NamespacedActualFarPeriodicWork.lean/index.md) · [Full source](../../../../MeasureAndIntegration/Attempt01NamespacedActualFarPeriodicWork.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01NamespacedActualFarPeriodicWork.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01NamespacedActualFarPeriodicWork.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualFarPeriodicWork](../../../../MeasureAndIntegration/Attempt01NamespacedActualFarPeriodicWork.lean/declarations/actualfarperiodicwork.md) | 35 | `declaration-track:53e1644a322edfc49077b1cd17ee42f26cc57151268d52c4f89354c7c6bb4b18` |
-| 2 | `def` | [actualFarPeriodicCutoff](../../../../MeasureAndIntegration/Attempt01NamespacedActualFarPeriodicWork.lean/declarations/actualfarperiodiccutoff.md) | 42 | `declaration-track:760159a66dc4efa3f3e1f50e54264d036ad35c2214a2c3d07ac6f8510d824c11` |
-| 3 | `theorem` | [physical_profile_measurable](../../../../MeasureAndIntegration/Attempt01NamespacedActualFarPeriodicWork.lean/declarations/physical-profile-measurable.md) | 45 | `result-track:1f06ec0137ddd095704151195c9bc6fee1a279b58e4161a089dc23bd690804fe` |
-| 4 | `theorem` | [row_stronglyMeasurable](../../../../MeasureAndIntegration/Attempt01NamespacedActualFarPeriodicWork.lean/declarations/row-stronglymeasurable.md) | 59 | `result-track:a2dc4a38874c2577482153f35f99bc9f14d23c3d923303fe2302865da9d3ddc8` |
-| 5 | `theorem` | [actualFarPeriodicWork_intervalIntegrable](../../../../MeasureAndIntegration/Attempt01NamespacedActualFarPeriodicWork.lean/declarations/actualfarperiodicwork-intervalintegrable.md) | 77 | `result-track:5bcf0b444a4dd7d0c8a6a58bc18203df574901370cdf7ea0c142e88aea7a37f2` |
+| 1 | `def` | [actualFarPeriodicWork](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01NamespacedActualFarPeriodicWork.lean/declarations/actualfarperiodicwork.md) | 35 | `declaration-track:53e1644a322edfc49077b1cd17ee42f26cc57151268d52c4f89354c7c6bb4b18` |
+| 2 | `def` | [actualFarPeriodicCutoff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01NamespacedActualFarPeriodicWork.lean/declarations/actualfarperiodiccutoff.md) | 42 | `declaration-track:760159a66dc4efa3f3e1f50e54264d036ad35c2214a2c3d07ac6f8510d824c11` |
+| 3 | `theorem` | [physical_profile_measurable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01NamespacedActualFarPeriodicWork.lean/declarations/physical-profile-measurable.md) | 45 | `result-track:1f06ec0137ddd095704151195c9bc6fee1a279b58e4161a089dc23bd690804fe` |
+| 4 | `theorem` | [row_stronglyMeasurable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01NamespacedActualFarPeriodicWork.lean/declarations/row-stronglymeasurable.md) | 59 | `result-track:a2dc4a38874c2577482153f35f99bc9f14d23c3d923303fe2302865da9d3ddc8` |
+| 5 | `theorem` | [actualFarPeriodicWork_intervalIntegrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01NamespacedActualFarPeriodicWork.lean/declarations/actualfarperiodicwork-intervalintegrable.md) | 77 | `result-track:5bcf0b444a4dd7d0c8a6a58bc18203df574901370cdf7ea0c142e88aea7a37f2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

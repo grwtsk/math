@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NCard.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NCard.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/NCard.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/NCard.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [measurable_encard](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NCard.lean/declarations/measurable-encard.md) | 21 | `result-track:0a07696f796b6597b44e603b8c50efa938db9e857dc74545faad4ac15393b4d4` |
-| 2 | `theorem` | [measurable_ncard](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NCard.lean/declarations/measurable-ncard.md) | 26 | `result-track:a1fc01155f86c67dd442752ed762bde799896adc9d4c21cb49f1bd1e3bfbd861` |
+| 1 | `theorem` | [measurable_encard](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/NCard.lean/declarations/measurable-encard.md) | 21 | `result-track:0a07696f796b6597b44e603b8c50efa938db9e857dc74545faad4ac15393b4d4` |
+| 2 | `theorem` | [measurable_ncard](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/NCard.lean/declarations/measurable-ncard.md) | 26 | `result-track:a1fc01155f86c67dd442752ed762bde799896adc9d4c21cb49f1bd1e3bfbd861` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

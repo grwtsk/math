@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/VacuousMultiSourceFanInNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/VacuousMultiSourceFanInNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/VacuousMultiSourceFanInNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/VacuousMultiSourceFanInNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [vacuousDerivation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/VacuousMultiSourceFanInNamespaced.lean/declarations/vacuousderivation.md) | 21 | `declaration-track:feb43793724a3939270146cd3c1a1f6e8eb93cfe8c05fb1785b93bb98ad13193` |
-| 2 | `theorem` | [acceptedDespiteIgnoringEverySource](../../../../../MathematicalLogicAndFoundations/GeneralLogic/VacuousMultiSourceFanInNamespaced.lean/declarations/accepteddespiteignoringeverysource.md) | 28 | `result-track:f2d9d2dc51affc965b6b8a7712278e4655e27c18e52a7ed45825887b01df8cc7` |
-| 3 | `theorem` | [targetProofWithoutSources](../../../../../MathematicalLogicAndFoundations/GeneralLogic/VacuousMultiSourceFanInNamespaced.lean/declarations/targetproofwithoutsources.md) | 37 | `result-track:7f9feb9ba7dc76e9108519004faea9bcf16ad85016cafba113facb517b972691` |
+| 1 | `def` | [vacuousDerivation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/VacuousMultiSourceFanInNamespaced.lean/declarations/vacuousderivation.md) | 21 | `declaration-track:feb43793724a3939270146cd3c1a1f6e8eb93cfe8c05fb1785b93bb98ad13193` |
+| 2 | `theorem` | [acceptedDespiteIgnoringEverySource](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/VacuousMultiSourceFanInNamespaced.lean/declarations/accepteddespiteignoringeverysource.md) | 28 | `result-track:f2d9d2dc51affc965b6b8a7712278e4655e27c18e52a7ed45825887b01df8cc7` |
+| 3 | `theorem` | [targetProofWithoutSources](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/VacuousMultiSourceFanInNamespaced.lean/declarations/targetproofwithoutsources.md) | 37 | `result-track:7f9feb9ba7dc76e9108519004faea9bcf16ad85016cafba113facb517b972691` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

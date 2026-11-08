@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeSuppliedObserverFactor.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeSuppliedObserverFactor.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeSuppliedObserverFactor.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeSuppliedObserverFactor.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -49,7 +49,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 - `DAF.Runtime.ReducerIR` — import line 19; external provider; requires a separately pinned dependency.
 - `FilesystemCodec.FieldRows` — import line 20; external provider; requires a separately pinned dependency.
 - `DAF.Causal.ObserverFactor` — import line 21; external provider; requires a separately pinned dependency.
-- [Shape Indexed Structural Reducers](../../../../../AssociativeRingsAndAlgebras/ShapeIndexedStructuralReducers.lean/index.md) — import line 23; pinned internal source present.
+- [Shape Indexed Structural Reducers](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ShapeIndexedStructuralReducers.lean/index.md) — import line 23; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -60,8 +60,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CertifiedReducerIR](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeSuppliedObserverFactor.lean/declarations/certifiedreducerir.md) | 59 | `declaration-track:1969e813fea69c955646212e2894a859d23f9604b56f142fe8c2b5ca2352a28b` |
-| 2 | `def` | [toObserverReducer](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeSuppliedObserverFactor.lean/declarations/toobserverreducer.md) | 78 | `declaration-track:a26cf45479e6f8a395f09da7712df1705374a50e3add47071fadee8abae3e519` |
+| 1 | `structure` | [CertifiedReducerIR](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeSuppliedObserverFactor.lean/declarations/certifiedreducerir.md) | 59 | `declaration-track:1969e813fea69c955646212e2894a859d23f9604b56f142fe8c2b5ca2352a28b` |
+| 2 | `def` | [toObserverReducer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeSuppliedObserverFactor.lean/declarations/toobserverreducer.md) | 78 | `declaration-track:a26cf45479e6f8a395f09da7712df1705374a50e3add47071fadee8abae3e519` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/HashSetNamespacedPublicAnyM.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/HashSetNamespacedPublicAnyM.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/HashSetNamespacedPublicAnyM.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/HashSetNamespacedPublicAnyM.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [anyM](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/HashSetNamespacedPublicAnyM.lean/declarations/anym.md) | 28 | `declaration-track:4439306160e9ce87bb96e2d8ee6f002d3f9010c1c43263a7750ef4bf2fb7de06` |
-| 2 | `def` | [allM](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/HashSetNamespacedPublicAnyM.lean/declarations/allm.md) | 38 | `declaration-track:90d4482abcef9da774583379b83e41dd618c66d3616efcf9bb238e6af257376f` |
-| 3 | `instance` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/HashSetNamespacedPublicAnyM.lean/declarations/instance.md) | 44 | `declaration-track:fbb3436105ea1f4717dd1089d23240274e22b5a173188d160d31b3468c6bb698` |
+| 1 | `def` | [anyM](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/HashSetNamespacedPublicAnyM.lean/declarations/anym.md) | 28 | `declaration-track:4439306160e9ce87bb96e2d8ee6f002d3f9010c1c43263a7750ef4bf2fb7de06` |
+| 2 | `def` | [allM](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/HashSetNamespacedPublicAnyM.lean/declarations/allm.md) | 38 | `declaration-track:90d4482abcef9da774583379b83e41dd618c66d3616efcf9bb238e6af257376f` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/HashSetNamespacedPublicAnyM.lean/declarations/instance.md) | 44 | `declaration-track:fbb3436105ea1f4717dd1089d23240274e22b5a173188d160d31b3468c6bb698` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

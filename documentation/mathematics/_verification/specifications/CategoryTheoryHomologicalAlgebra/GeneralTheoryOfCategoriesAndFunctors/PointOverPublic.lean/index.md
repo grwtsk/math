@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PointOverPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PointOverPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PointOverPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PointOverPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [over](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PointOverPublic.lean/declarations/over.md) | 44 | `declaration-track:e212e2378c4bc979ccaaabe85dfa6bcd4be543d21d71a48d04fecca1f96941e7` |
-| 2 | `lemma` | [IsConservativeFamilyOfPoints.over](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PointOverPublic.lean/declarations/isconservativefamilyofpoints-over.md) | 63 | `result-track:faf8245c823df87bb450dc0b225d547a32378d0e9631d9674efde0d3719d1741` |
-| 3 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PointOverPublic.lean/declarations/instance.md) | 87 | `declaration-track:a2b50aa2b2f8d152b4f73e7b9ebba64c30c3bfe2b4b8c0f01144aa2ec7b05bf0` |
+| 1 | `def` | [over](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PointOverPublic.lean/declarations/over.md) | 44 | `declaration-track:e212e2378c4bc979ccaaabe85dfa6bcd4be543d21d71a48d04fecca1f96941e7` |
+| 2 | `lemma` | [IsConservativeFamilyOfPoints.over](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PointOverPublic.lean/declarations/isconservativefamilyofpoints-over.md) | 63 | `result-track:faf8245c823df87bb450dc0b225d547a32378d0e9631d9674efde0d3719d1741` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PointOverPublic.lean/declarations/instance.md) | 87 | `declaration-track:a2b50aa2b2f8d152b4f73e7b9ebba64c30c3bfe2b4b8c0f01144aa2ec7b05bf0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

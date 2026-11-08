@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/CastFieldNamespacedCastDivCharZero.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/CastFieldNamespacedCastDivCharZero.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CastFieldNamespacedCastDivCharZero.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CastFieldNamespacedCastDivCharZero.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,9 +61,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [cast_div](../../../../../NumberTheory/ElementaryNumberTheory/CastFieldNamespacedCastDivCharZero.lean/declarations/cast-div.md) | 36 | `result-track:47a79113f534331335739974dc8c2dbe675ca9d26e16cf46c3a5d3b421937afd` |
-| 2 | `lemma` | [cast_div_charZero](../../../../../NumberTheory/ElementaryNumberTheory/CastFieldNamespacedCastDivCharZero.lean/declarations/cast-div-charzero.md) | 45 | `result-track:42b3274fcfc83ccea63d1e8ab801d6fcb6a8c83ac09c1d16e1a631d4384c6642` |
-| 3 | `lemma` | [cast_div_div_div_cancel_right](../../../../../NumberTheory/ElementaryNumberTheory/CastFieldNamespacedCastDivCharZero.lean/declarations/cast-div-div-div-cancel-right.md) | 48 | `result-track:4a54dff8b963e83144206658bcbb38f729c5e617c195e82028f7cc5ad5c8fd32` |
+| 1 | `lemma` | [cast_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CastFieldNamespacedCastDivCharZero.lean/declarations/cast-div.md) | 36 | `result-track:47a79113f534331335739974dc8c2dbe675ca9d26e16cf46c3a5d3b421937afd` |
+| 2 | `lemma` | [cast_div_charZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CastFieldNamespacedCastDivCharZero.lean/declarations/cast-div-charzero.md) | 45 | `result-track:42b3274fcfc83ccea63d1e8ab801d6fcb6a8c83ac09c1d16e1a631d4384c6642` |
+| 3 | `lemma` | [cast_div_div_div_cancel_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CastFieldNamespacedCastDivCharZero.lean/declarations/cast-div-div-div-cancel-right.md) | 48 | `result-track:4a54dff8b963e83144206658bcbb38f729c5e617c195e82028f7cc5ad5c8fd32` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

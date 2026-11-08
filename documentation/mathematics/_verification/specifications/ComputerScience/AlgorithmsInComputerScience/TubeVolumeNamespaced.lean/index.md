@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/TubeVolumeNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/TubeVolumeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TubeVolumeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TubeVolumeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TubeVolumeLowerBound](../../../../../ComputerScience/AlgorithmsInComputerScience/TubeVolumeNamespaced.lean/declarations/tubevolumelowerbound.md) | 26 | `declaration-track:7955683355b9bafc22ec24bae3f4d07d0d1e9134fff3540998fe40c85727ae34` |
-| 2 | `def` | [TubeVolumeLowerBound.usableForMajorProof](../../../../../ComputerScience/AlgorithmsInComputerScience/TubeVolumeNamespaced.lean/declarations/tubevolumelowerbound-usableformajorproof.md) | 33 | `declaration-track:99ccec429adccda4ce40ac8311898dac9603c4e3fb0fdd6770b08d396d13da9c` |
-| 3 | `theorem` | [TubeVolumeLowerBound.usableForMajorProof_of_fields](../../../../../ComputerScience/AlgorithmsInComputerScience/TubeVolumeNamespaced.lean/declarations/tubevolumelowerbound-usableformajorproof-of-fields.md) | 39 | `result-track:fb251294df887762a03d7303d1e1fb1c3ec7283a1a718fba818b39e0794aba5e` |
+| 1 | `structure` | [TubeVolumeLowerBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TubeVolumeNamespaced.lean/declarations/tubevolumelowerbound.md) | 26 | `declaration-track:7955683355b9bafc22ec24bae3f4d07d0d1e9134fff3540998fe40c85727ae34` |
+| 2 | `def` | [TubeVolumeLowerBound.usableForMajorProof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TubeVolumeNamespaced.lean/declarations/tubevolumelowerbound-usableformajorproof.md) | 33 | `declaration-track:99ccec429adccda4ce40ac8311898dac9603c4e3fb0fdd6770b08d396d13da9c` |
+| 3 | `theorem` | [TubeVolumeLowerBound.usableForMajorProof_of_fields](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TubeVolumeNamespaced.lean/declarations/tubevolumelowerbound-usableformajorproof-of-fields.md) | 39 | `result-track:fb251294df887762a03d7303d1e1fb1c3ec7283a1a718fba818b39e0794aba5e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

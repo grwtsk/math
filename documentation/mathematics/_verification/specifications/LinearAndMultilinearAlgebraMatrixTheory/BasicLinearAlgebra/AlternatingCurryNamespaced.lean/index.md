@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AlternatingCurryNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AlternatingCurryNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AlternatingCurryNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AlternatingCurryNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [curryLeft](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AlternatingCurryNamespaced.lean/declarations/curryleft.md) | 38 | `declaration-track:4db41a10e4a13f4903373cb401867492adb716dada131b398c33171a6ec82061` |
-| 2 | `theorem` | [curryLeft_zero](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AlternatingCurryNamespaced.lean/declarations/curryleft-zero.md) | 50 | `result-track:8393f6ed4f90953c561af26785229e19e70319bbfdfe81d3c6163a8d54d3907b` |
-| 3 | `theorem` | [curryLeft_add](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AlternatingCurryNamespaced.lean/declarations/curryleft-add.md) | 54 | `result-track:9efee1a06cbfdf8810e715c8a8c3cef945a646cda7e205486598c30766d2d052` |
-| 4 | `theorem` | [curryLeft_smul](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AlternatingCurryNamespaced.lean/declarations/curryleft-smul.md) | 59 | `result-track:94d53065a5d020483a979c6563828af0011d56d60a43a70c8561377a6c0374c7` |
-| 5 | `def` | [curryLeftLinearMap](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AlternatingCurryNamespaced.lean/declarations/curryleftlinearmap.md) | 66 | `declaration-track:595616a59494cfc2bb980baae5c1a2220e3e9d6eaaa54f392af00992ba45b633` |
-| 6 | `theorem` | [curryLeft_same](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AlternatingCurryNamespaced.lean/declarations/curryleft-same.md) | 74 | `result-track:8b206fea15c8b47e109d228e8c5e4bec1f262e1e839097dfcb83a0a2b2019b86` |
-| 7 | `theorem` | [curryLeft_compAlternatingMap](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AlternatingCurryNamespaced.lean/declarations/curryleft-compalternatingmap.md) | 79 | `result-track:40a9c5d1367139a0e05e15f2fe346c1c043699a5194509aee3160ddf2bcf7724` |
-| 8 | `theorem` | [curryLeft_compLinearMap](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AlternatingCurryNamespaced.lean/declarations/curryleft-complinearmap.md) | 85 | `result-track:1574cd2420ee63e3b823c1967905b2da63b4ae0d722af6fcc31e36b4cd1582b8` |
+| 1 | `def` | [curryLeft](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AlternatingCurryNamespaced.lean/declarations/curryleft.md) | 38 | `declaration-track:4db41a10e4a13f4903373cb401867492adb716dada131b398c33171a6ec82061` |
+| 2 | `theorem` | [curryLeft_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AlternatingCurryNamespaced.lean/declarations/curryleft-zero.md) | 50 | `result-track:8393f6ed4f90953c561af26785229e19e70319bbfdfe81d3c6163a8d54d3907b` |
+| 3 | `theorem` | [curryLeft_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AlternatingCurryNamespaced.lean/declarations/curryleft-add.md) | 54 | `result-track:9efee1a06cbfdf8810e715c8a8c3cef945a646cda7e205486598c30766d2d052` |
+| 4 | `theorem` | [curryLeft_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AlternatingCurryNamespaced.lean/declarations/curryleft-smul.md) | 59 | `result-track:94d53065a5d020483a979c6563828af0011d56d60a43a70c8561377a6c0374c7` |
+| 5 | `def` | [curryLeftLinearMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AlternatingCurryNamespaced.lean/declarations/curryleftlinearmap.md) | 66 | `declaration-track:595616a59494cfc2bb980baae5c1a2220e3e9d6eaaa54f392af00992ba45b633` |
+| 6 | `theorem` | [curryLeft_same](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AlternatingCurryNamespaced.lean/declarations/curryleft-same.md) | 74 | `result-track:8b206fea15c8b47e109d228e8c5e4bec1f262e1e839097dfcb83a0a2b2019b86` |
+| 7 | `theorem` | [curryLeft_compAlternatingMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AlternatingCurryNamespaced.lean/declarations/curryleft-compalternatingmap.md) | 79 | `result-track:40a9c5d1367139a0e05e15f2fe346c1c043699a5194509aee3160ddf2bcf7724` |
+| 8 | `theorem` | [curryLeft_compLinearMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AlternatingCurryNamespaced.lean/declarations/curryleft-complinearmap.md) | 85 | `result-track:1574cd2420ee63e3b823c1967905b2da63b4ae0d722af6fcc31e36b4cd1582b8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

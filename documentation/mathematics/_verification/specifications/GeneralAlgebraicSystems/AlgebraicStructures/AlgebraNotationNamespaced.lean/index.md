@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AlgebraNotationNamespaced.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AlgebraNotationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AlgebraNotationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AlgebraNotationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [PosPart](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AlgebraNotationNamespaced.lean/declarations/pospart.md) | 29 | `declaration-track:612066617045b77bc2f68af0e618baaa97af5b58a06cf4cc9689cccfbc416c0e` |
-| 2 | `class` | [OneLePart](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AlgebraNotationNamespaced.lean/declarations/onelepart.md) | 35 | `declaration-track:c76692bdb4bcf5fc2f96297581a54e38dded80078bff13e55981869b11027869` |
-| 3 | `class` | [NegPart](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AlgebraNotationNamespaced.lean/declarations/negpart.md) | 40 | `declaration-track:6bc54045baadea59e29d22b611b1d51e5f136d10df0440a3c3c16dc650739f63` |
-| 4 | `class` | [LeOnePart](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AlgebraNotationNamespaced.lean/declarations/leonepart.md) | 46 | `declaration-track:1b7581b143b3ee1605ae84cc5ef17831c3885c8d8453cc16e024c9a67eefa039` |
+| 1 | `class` | [PosPart](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AlgebraNotationNamespaced.lean/declarations/pospart.md) | 29 | `declaration-track:612066617045b77bc2f68af0e618baaa97af5b58a06cf4cc9689cccfbc416c0e` |
+| 2 | `class` | [OneLePart](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AlgebraNotationNamespaced.lean/declarations/onelepart.md) | 35 | `declaration-track:c76692bdb4bcf5fc2f96297581a54e38dded80078bff13e55981869b11027869` |
+| 3 | `class` | [NegPart](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AlgebraNotationNamespaced.lean/declarations/negpart.md) | 40 | `declaration-track:6bc54045baadea59e29d22b611b1d51e5f136d10df0440a3c3c16dc650739f63` |
+| 4 | `class` | [LeOnePart](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AlgebraNotationNamespaced.lean/declarations/leonepart.md) | 46 | `declaration-track:1b7581b143b3ee1605ae84cc5ef17831c3885c8d8453cc16e024c9a67eefa039` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

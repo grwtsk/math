@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LFunctionKindConsequences.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LFunctionKindConsequences.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LFunctionKindConsequences.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LFunctionKindConsequences.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [lFunctionZero_ne_spectralModeZero](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LFunctionKindConsequences.lean/declarations/lfunctionzero-ne-spectralmodezero.md) | 36 | `result-track:2d9d4f5a7e45ae50b5dc9a9697ca0d0a3a78de6b4298b65b354428ca93023ca9` |
-| 2 | `theorem` | [lFunctionZero_ne_deBruijnNewmanZero](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LFunctionKindConsequences.lean/declarations/lfunctionzero-ne-debruijnnewmanzero.md) | 41 | `result-track:a7e740a611b890d373c9ea1e9e37042bcf9979222fd34f3cd091dad01829be52` |
+| 1 | `theorem` | [lFunctionZero_ne_spectralModeZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LFunctionKindConsequences.lean/declarations/lfunctionzero-ne-spectralmodezero.md) | 36 | `result-track:2d9d4f5a7e45ae50b5dc9a9697ca0d0a3a78de6b4298b65b354428ca93023ca9` |
+| 2 | `theorem` | [lFunctionZero_ne_deBruijnNewmanZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LFunctionKindConsequences.lean/declarations/lfunctionzero-ne-debruijnnewmanzero.md) | 41 | `result-track:a7e740a611b890d373c9ea1e9e37042bcf9979222fd34f3cd091dad01829be52` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

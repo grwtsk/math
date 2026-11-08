@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SphericalMeshConditional.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SphericalMeshConditional.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SphericalMeshConditional.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SphericalMeshConditional.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ConditionalSphericalLimitInput](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SphericalMeshConditional.lean/declarations/conditionalsphericallimitinput.md) | 21 | `declaration-track:653cd4e91c377d6cb52f18e65198eb19ff5f19bd39d225b5c93a7f4dc9b3bfcb` |
-| 2 | `structure` | [ConditionalSphericalLimitConclusion](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SphericalMeshConditional.lean/declarations/conditionalsphericallimitconclusion.md) | 26 | `declaration-track:f6eedfb2d5f4cdf3b9bcfec0fae60a0ce9e45792f18cb68631cc09f00f33485c` |
-| 3 | `def` | [conditional_spherical_mesh_limit_package](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SphericalMeshConditional.lean/declarations/conditional-spherical-mesh-limit-package.md) | 34 | `declaration-track:837f644d8a29b79cabd969bd72c126688bde81bffcb2760571a04ff7d9776b84` |
-| 4 | `theorem` | [conditional_spherical_mesh_limit_package_label](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SphericalMeshConditional.lean/declarations/conditional-spherical-mesh-limit-package-label.md) | 42 | `result-track:b0a55667977835f623b6a8a56117f7c0227fe3959456c3e9b009b69167da5783` |
-| 5 | `theorem` | [conditional_spherical_limit_has_sample_contracts](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SphericalMeshConditional.lean/declarations/conditional-spherical-limit-has-sample-contracts.md) | 48 | `result-track:bec7be1daaab335ff30c048af5d71af783ee013edf8eafbab75051de1036a883` |
+| 1 | `structure` | [ConditionalSphericalLimitInput](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SphericalMeshConditional.lean/declarations/conditionalsphericallimitinput.md) | 21 | `declaration-track:653cd4e91c377d6cb52f18e65198eb19ff5f19bd39d225b5c93a7f4dc9b3bfcb` |
+| 2 | `structure` | [ConditionalSphericalLimitConclusion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SphericalMeshConditional.lean/declarations/conditionalsphericallimitconclusion.md) | 26 | `declaration-track:f6eedfb2d5f4cdf3b9bcfec0fae60a0ce9e45792f18cb68631cc09f00f33485c` |
+| 3 | `def` | [conditional_spherical_mesh_limit_package](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SphericalMeshConditional.lean/declarations/conditional-spherical-mesh-limit-package.md) | 34 | `declaration-track:837f644d8a29b79cabd969bd72c126688bde81bffcb2760571a04ff7d9776b84` |
+| 4 | `theorem` | [conditional_spherical_mesh_limit_package_label](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SphericalMeshConditional.lean/declarations/conditional-spherical-mesh-limit-package-label.md) | 42 | `result-track:b0a55667977835f623b6a8a56117f7c0227fe3959456c3e9b009b69167da5783` |
+| 5 | `theorem` | [conditional_spherical_limit_has_sample_contracts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SphericalMeshConditional.lean/declarations/conditional-spherical-limit-has-sample-contracts.md) | 48 | `result-track:bec7be1daaab335ff30c048af5d71af783ee013edf8eafbab75051de1036a883` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

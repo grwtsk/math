@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/Audit.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/Audit.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/Audit.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/Audit.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Polarization`](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/AnalysisPolarization.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Analysis.Polarization`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/AnalysisPolarization.lean/index.md) — import line 1; pinned internal source present.
 - `Lean` — import line 2; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [generic_inner_consumer](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/Audit.lean/declarations/generic-inner-consumer.md) | 6 | `result-track:bf11defa89acf904000cb648a79896ae49359d36db37630527d1f7d17bfe1fdf` |
-| 2 | `theorem` | [no_lower_bound_consumer](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/Audit.lean/declarations/no-lower-bound-consumer.md) | 9 | `result-track:5d5f130865d6a9fdd05e73314dabfe9a3f312f0f58956c6777966fce91f173d9` |
-| 3 | `elab` | [(anonymous)](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/Audit.lean/declarations/elab.md) | 13 | `declaration-track:5858aaa240a3be05a9fb7a7521e3e366d903593991cdea56baa3966b7e416f30` |
+| 1 | `theorem` | [generic_inner_consumer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/Audit.lean/declarations/generic-inner-consumer.md) | 6 | `result-track:bf11defa89acf904000cb648a79896ae49359d36db37630527d1f7d17bfe1fdf` |
+| 2 | `theorem` | [no_lower_bound_consumer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/Audit.lean/declarations/no-lower-bound-consumer.md) | 9 | `result-track:5d5f130865d6a9fdd05e73314dabfe9a3f312f0f58956c6777966fce91f173d9` |
+| 3 | `elab` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/Audit.lean/declarations/elab.md) | 13 | `declaration-track:5858aaa240a3be05a9fb7a7521e3e366d903593991cdea56baa3966b7e416f30` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

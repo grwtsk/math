@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/AtanhLogEnclosure.lean/index.md) · [Full source](../../../../RealFunctions/AtanhLogEnclosure.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AtanhLogEnclosure.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AtanhLogEnclosure.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [partialSum](../../../../RealFunctions/AtanhLogEnclosure.lean/declarations/partialsum.md) | 23 | `declaration-track:0c7ebf20d55aebf9248072722fb0043eae243940d8cb0ef86a6659c955928cab` |
-| 2 | `def` | [tail](../../../../RealFunctions/AtanhLogEnclosure.lean/declarations/tail.md) | 26 | `declaration-track:d1071f6cdbd35392b59e08b03260861bb260f2642d982f5e43c628952b745c7f` |
-| 3 | `theorem` | [partial_nonneg](../../../../RealFunctions/AtanhLogEnclosure.lean/declarations/partial-nonneg.md) | 30 | `result-track:2a6b48dc16db72b94136db8cec576d0ca1312b70c85b7181c4d34b7e32be2f37` |
-| 4 | `theorem` | [half_residual_bounds](../../../../RealFunctions/AtanhLogEnclosure.lean/declarations/half-residual-bounds.md) | 35 | `result-track:d22548c2d57a9d1d5f61cd2dbe34ad640e45be82434856eaa5b3448f8b04ce99` |
-| 5 | `theorem` | [log_ratio_bounds](../../../../RealFunctions/AtanhLogEnclosure.lean/declarations/log-ratio-bounds.md) | 80 | `result-track:6eae7e6b09b8514f7f122ba4bba2d4ef20eab708475082c8a975118a1f047621` |
-| 6 | `theorem` | [reduced_bounds](../../../../RealFunctions/AtanhLogEnclosure.lean/declarations/reduced-bounds.md) | 92 | `result-track:eaa419182ea1177b94605c47a9f80bfce0d77c2517ddb85815f67fb853ad7e22` |
-| 7 | `theorem` | [reduced_coordinate_le_third](../../../../RealFunctions/AtanhLogEnclosure.lean/declarations/reduced-coordinate-le-third.md) | 106 | `result-track:2ef3b9a8bdacec66b159faf9b6a4d70d4c3029518d86f8752bb3cfbdcf455c5b` |
+| 1 | `def` | [partialSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AtanhLogEnclosure.lean/declarations/partialsum.md) | 23 | `declaration-track:0c7ebf20d55aebf9248072722fb0043eae243940d8cb0ef86a6659c955928cab` |
+| 2 | `def` | [tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AtanhLogEnclosure.lean/declarations/tail.md) | 26 | `declaration-track:d1071f6cdbd35392b59e08b03260861bb260f2642d982f5e43c628952b745c7f` |
+| 3 | `theorem` | [partial_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AtanhLogEnclosure.lean/declarations/partial-nonneg.md) | 30 | `result-track:2a6b48dc16db72b94136db8cec576d0ca1312b70c85b7181c4d34b7e32be2f37` |
+| 4 | `theorem` | [half_residual_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AtanhLogEnclosure.lean/declarations/half-residual-bounds.md) | 35 | `result-track:d22548c2d57a9d1d5f61cd2dbe34ad640e45be82434856eaa5b3448f8b04ce99` |
+| 5 | `theorem` | [log_ratio_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AtanhLogEnclosure.lean/declarations/log-ratio-bounds.md) | 80 | `result-track:6eae7e6b09b8514f7f122ba4bba2d4ef20eab708475082c8a975118a1f047621` |
+| 6 | `theorem` | [reduced_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AtanhLogEnclosure.lean/declarations/reduced-bounds.md) | 92 | `result-track:eaa419182ea1177b94605c47a9f80bfce0d77c2517ddb85815f67fb853ad7e22` |
+| 7 | `theorem` | [reduced_coordinate_le_third](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AtanhLogEnclosure.lean/declarations/reduced-coordinate-le-third.md) | 106 | `result-track:2ef3b9a8bdacec66b159faf9b6a4d70d4c3029518d86f8752bb3cfbdcf455c5b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

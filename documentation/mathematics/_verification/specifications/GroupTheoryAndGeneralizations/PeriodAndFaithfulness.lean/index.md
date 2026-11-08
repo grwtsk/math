@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/PeriodAndFaithfulness.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/PeriodAndFaithfulness.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PeriodAndFaithfulness.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PeriodAndFaithfulness.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [HasExactPeriod](../../../../GroupTheoryAndGeneralizations/PeriodAndFaithfulness.lean/declarations/hasexactperiod.md) | 38 | `declaration-track:1da153adaba5279b506cfcb39d486ebab319adf8c27bec5c7e15319bc24ef9c6` |
-| 2 | `def` | [ActionFaithful](../../../../GroupTheoryAndGeneralizations/PeriodAndFaithfulness.lean/declarations/actionfaithful.md) | 51 | `declaration-track:709d287cd5bd99940449d666b4698c565c493ce15ed68626796c9bea9bdc049a` |
+| 1 | `def` | [HasExactPeriod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PeriodAndFaithfulness.lean/declarations/hasexactperiod.md) | 38 | `declaration-track:1da153adaba5279b506cfcb39d486ebab319adf8c27bec5c7e15319bc24ef9c6` |
+| 2 | `def` | [ActionFaithful](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PeriodAndFaithfulness.lean/declarations/actionfaithful.md) | 51 | `declaration-track:709d287cd5bd99940449d666b4698c565c493ce15ed68626796c9bea9bdc049a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

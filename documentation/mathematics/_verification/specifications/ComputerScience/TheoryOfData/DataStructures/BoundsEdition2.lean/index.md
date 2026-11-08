@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/BoundsEdition2.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/BoundsEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/BoundsEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/BoundsEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,12 +60,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [suffixLevenshtein_minimum_le_levenshtein_cons](../../../../../../ComputerScience/TheoryOfData/DataStructures/BoundsEdition2.lean/declarations/suffixlevenshtein-minimum-le-levenshtein-cons.md) | 25 | `result-track:21d906fc81896b315e918fae45241648df57edf8474b4f47579df9eb57a27d23` |
-| 2 | `theorem` | [le_suffixLevenshtein_cons_minimum](../../../../../../ComputerScience/TheoryOfData/DataStructures/BoundsEdition2.lean/declarations/le-suffixlevenshtein-cons-minimum.md) | 57 | `result-track:e7c0a93752d6c110fcab9a28f7fbf7982a73f9454118d4cb225802804221d05d` |
-| 3 | `theorem` | [le_suffixLevenshtein_append_minimum](../../../../../../ComputerScience/TheoryOfData/DataStructures/BoundsEdition2.lean/declarations/le-suffixlevenshtein-append-minimum.md) | 74 | `result-track:492424e9b28d9cd6c143e008e259ff1b9fa9569ffe5520d610e0e8811cdbff18` |
-| 4 | `theorem` | [suffixLevenshtein_minimum_le_levenshtein_append](../../../../../../ComputerScience/TheoryOfData/DataStructures/BoundsEdition2.lean/declarations/suffixlevenshtein-minimum-le-levenshtein-append.md) | 80 | `result-track:f9bf548596e046694528d7fbc6ebfd1b67053218bea2b80f659a12a282911aa6` |
-| 5 | `theorem` | [le_levenshtein_cons](../../../../../../ComputerScience/TheoryOfData/DataStructures/BoundsEdition2.lean/declarations/le-levenshtein-cons.md) | 88 | `result-track:414218c3f38d9b56a52c6815cbbebca5fe1b6732a97cffe0e7b59d80f63a2bc6` |
-| 6 | `theorem` | [le_levenshtein_append](../../../../../../ComputerScience/TheoryOfData/DataStructures/BoundsEdition2.lean/declarations/le-levenshtein-append.md) | 93 | `result-track:6632409c733c3b3897e42da4af8019f6094ca8eba1fba5e59de719b905c671e7` |
+| 1 | `theorem` | [suffixLevenshtein_minimum_le_levenshtein_cons](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/BoundsEdition2.lean/declarations/suffixlevenshtein-minimum-le-levenshtein-cons.md) | 25 | `result-track:21d906fc81896b315e918fae45241648df57edf8474b4f47579df9eb57a27d23` |
+| 2 | `theorem` | [le_suffixLevenshtein_cons_minimum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/BoundsEdition2.lean/declarations/le-suffixlevenshtein-cons-minimum.md) | 57 | `result-track:e7c0a93752d6c110fcab9a28f7fbf7982a73f9454118d4cb225802804221d05d` |
+| 3 | `theorem` | [le_suffixLevenshtein_append_minimum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/BoundsEdition2.lean/declarations/le-suffixlevenshtein-append-minimum.md) | 74 | `result-track:492424e9b28d9cd6c143e008e259ff1b9fa9569ffe5520d610e0e8811cdbff18` |
+| 4 | `theorem` | [suffixLevenshtein_minimum_le_levenshtein_append](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/BoundsEdition2.lean/declarations/suffixlevenshtein-minimum-le-levenshtein-append.md) | 80 | `result-track:f9bf548596e046694528d7fbc6ebfd1b67053218bea2b80f659a12a282911aa6` |
+| 5 | `theorem` | [le_levenshtein_cons](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/BoundsEdition2.lean/declarations/le-levenshtein-cons.md) | 88 | `result-track:414218c3f38d9b56a52c6815cbbebca5fe1b6732a97cffe0e7b59d80f63a2bc6` |
+| 6 | `theorem` | [le_levenshtein_append](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/BoundsEdition2.lean/declarations/le-levenshtein-append.md) | 93 | `result-track:6632409c733c3b3897e42da4af8019f6094ca8eba1fba5e59de719b905c671e7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

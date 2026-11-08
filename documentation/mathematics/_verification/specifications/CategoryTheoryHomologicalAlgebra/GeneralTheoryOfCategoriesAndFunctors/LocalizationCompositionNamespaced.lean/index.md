@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationCompositionNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationCompositionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationCompositionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationCompositionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [StrictUniversalPropertyFixedTarget.comp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationCompositionNamespaced.lean/declarations/strictuniversalpropertyfixedtarget-comp.md) | 43 | `declaration-track:fde56eb95b323a0cdf85f436b8b9601d39fabc81358b22e33f10647658ed5e03` |
-| 2 | `lemma` | [comp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationCompositionNamespaced.lean/declarations/comp.md) | 66 | `result-track:2d127943f95984ecddf91d6df27ca49a59296c5ec2c43a5ea36d3567f8b53af8` |
-| 3 | `lemma` | [of_comp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationCompositionNamespaced.lean/declarations/of-comp.md) | 118 | `result-track:19e0fea1739f5f99c88369d5028bd9883703bf10c366116198f380e64680fd81` |
+| 1 | `def` | [StrictUniversalPropertyFixedTarget.comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationCompositionNamespaced.lean/declarations/strictuniversalpropertyfixedtarget-comp.md) | 43 | `declaration-track:fde56eb95b323a0cdf85f436b8b9601d39fabc81358b22e33f10647658ed5e03` |
+| 2 | `lemma` | [comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationCompositionNamespaced.lean/declarations/comp.md) | 66 | `result-track:2d127943f95984ecddf91d6df27ca49a59296c5ec2c43a5ea36d3567f8b53af8` |
+| 3 | `lemma` | [of_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationCompositionNamespaced.lean/declarations/of-comp.md) | 118 | `result-track:19e0fea1739f5f99c88369d5028bd9883703bf10c366116198f380e64680fd81` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

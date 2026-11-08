@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/NatRangePublic.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/NatRangePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/NatRangePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/NatRangePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [disjoint_range_addLeftEmbedding](../../../../GroupTheoryAndGeneralizations/NatRangePublic.lean/declarations/disjoint-range-addleftembedding.md) | 23 | `result-track:a7737d27b9cf44673001a0b8da3534ebbc5ea42e55e64ad844dd0e54002ff862` |
-| 2 | `theorem` | [disjoint_range_addRightEmbedding](../../../../GroupTheoryAndGeneralizations/NatRangePublic.lean/declarations/disjoint-range-addrightembedding.md) | 29 | `result-track:db23aecbcbd2c7fccfbcd7905e4cb20c510a1e72ba86e5f80471287d8f96f9c9` |
-| 3 | `theorem` | [range_add](../../../../GroupTheoryAndGeneralizations/NatRangePublic.lean/declarations/range-add.md) | 34 | `result-track:57341568013392aa856dda23677c92084293ca3750e573163d5bcc6f65a33577` |
+| 1 | `theorem` | [disjoint_range_addLeftEmbedding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/NatRangePublic.lean/declarations/disjoint-range-addleftembedding.md) | 23 | `result-track:a7737d27b9cf44673001a0b8da3534ebbc5ea42e55e64ad844dd0e54002ff862` |
+| 2 | `theorem` | [disjoint_range_addRightEmbedding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/NatRangePublic.lean/declarations/disjoint-range-addrightembedding.md) | 29 | `result-track:db23aecbcbd2c7fccfbcd7905e4cb20c510a1e72ba86e5f80471287d8f96f9c9` |
+| 3 | `theorem` | [range_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/NatRangePublic.lean/declarations/range-add.md) | 34 | `result-track:57341568013392aa856dda23677c92084293ca3750e573163d5bcc6f65a33577` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CommutativeAlgebra/ChainConditionsFinitenessConditionsInCommutativeRingTheory/FilterNamespacedPublic.lean/index.md) · [Full source](../../../../../CommutativeAlgebra/ChainConditionsFinitenessConditionsInCommutativeRingTheory/FilterNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ChainConditionsFinitenessConditionsInCommutativeRingTheory/FilterNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ChainConditionsFinitenessConditionsInCommutativeRingTheory/FilterNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [eventuallyConst_of_isNoetherian](../../../../../CommutativeAlgebra/ChainConditionsFinitenessConditionsInCommutativeRingTheory/FilterNamespacedPublic.lean/declarations/eventuallyconst-of-isnoetherian.md) | 51 | `result-track:15f832dd8b08627483a43555eea633a11dd3ec0ca4fb976fb167d74e2f31a4b9` |
+| 1 | `theorem` | [eventuallyConst_of_isNoetherian](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ChainConditionsFinitenessConditionsInCommutativeRingTheory/FilterNamespacedPublic.lean/declarations/eventuallyconst-of-isnoetherian.md) | 51 | `result-track:15f832dd8b08627483a43555eea633a11dd3ec0ca4fb976fb167d74e2f31a4b9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

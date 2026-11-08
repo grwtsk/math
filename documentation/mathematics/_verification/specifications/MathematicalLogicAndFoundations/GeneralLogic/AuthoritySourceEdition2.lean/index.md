@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AuthoritySourceEdition2.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AuthoritySourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AuthoritySourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AuthoritySourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [SourceAuthority](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AuthoritySourceEdition2.lean/declarations/sourceauthority.md) | 14 | `declaration-track:f7f23c525b6268ee466c250feb79efe2a62353277f1447c48fce48b6c51f9123` |
-| 2 | `inductive` | [ResponseAuthority](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AuthoritySourceEdition2.lean/declarations/responseauthority.md) | 17 | `declaration-track:0fe734282d8878b0e58972fa88330d6ca23f4de6d5eae355225cc74c55fff601` |
-| 3 | `def` | [ResponseAuthority.rank](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AuthoritySourceEdition2.lean/declarations/responseauthority-rank.md) | 27 | `declaration-track:dc3ab68fb2cd423a8801d7e2c17b93c37a869b96d079023402c620146ac4839b` |
-| 4 | `def` | [ResponseAuthority.Supports](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AuthoritySourceEdition2.lean/declarations/responseauthority-supports.md) | 36 | `declaration-track:92872ae54ef6dc723717c944656b7792cbb41fd99c782cd47f84a69472d80d49` |
-| 5 | `instance` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AuthoritySourceEdition2.lean/declarations/instance.md) | 40 | `declaration-track:40c9aa79cbada1c3854c51ef9a328229885102031be50aeec905f74d162b3980` |
-| 6 | `theorem` | [ResponseAuthority.supports_refl](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AuthoritySourceEdition2.lean/declarations/responseauthority-supports-refl.md) | 44 | `result-track:201645671d0b62fa8bd3dbc8beea85767838aa7eac6dcca4cd5c73dcbc537ddf` |
-| 7 | `theorem` | [ResponseAuthority.supports_trans](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AuthoritySourceEdition2.lean/declarations/responseauthority-supports-trans.md) | 48 | `result-track:29954e9c6e88a7eb9a4874eee9d85c3ade1046a47c760c921f19591b61d35f24` |
-| 8 | `inductive` | [EstablishmentStatus](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AuthoritySourceEdition2.lean/declarations/establishmentstatus.md) | 56 | `declaration-track:f9651dab04197b255e65c67587eb1a037ef72e6d035c1fd88755ab5dc3e5a840` |
+| 1 | `abbrev` | [SourceAuthority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AuthoritySourceEdition2.lean/declarations/sourceauthority.md) | 14 | `declaration-track:f7f23c525b6268ee466c250feb79efe2a62353277f1447c48fce48b6c51f9123` |
+| 2 | `inductive` | [ResponseAuthority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AuthoritySourceEdition2.lean/declarations/responseauthority.md) | 17 | `declaration-track:0fe734282d8878b0e58972fa88330d6ca23f4de6d5eae355225cc74c55fff601` |
+| 3 | `def` | [ResponseAuthority.rank](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AuthoritySourceEdition2.lean/declarations/responseauthority-rank.md) | 27 | `declaration-track:dc3ab68fb2cd423a8801d7e2c17b93c37a869b96d079023402c620146ac4839b` |
+| 4 | `def` | [ResponseAuthority.Supports](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AuthoritySourceEdition2.lean/declarations/responseauthority-supports.md) | 36 | `declaration-track:92872ae54ef6dc723717c944656b7792cbb41fd99c782cd47f84a69472d80d49` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AuthoritySourceEdition2.lean/declarations/instance.md) | 40 | `declaration-track:40c9aa79cbada1c3854c51ef9a328229885102031be50aeec905f74d162b3980` |
+| 6 | `theorem` | [ResponseAuthority.supports_refl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AuthoritySourceEdition2.lean/declarations/responseauthority-supports-refl.md) | 44 | `result-track:201645671d0b62fa8bd3dbc8beea85767838aa7eac6dcca4cd5c73dcbc537ddf` |
+| 7 | `theorem` | [ResponseAuthority.supports_trans](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AuthoritySourceEdition2.lean/declarations/responseauthority-supports-trans.md) | 48 | `result-track:29954e9c6e88a7eb9a4874eee9d85c3ade1046a47c760c921f19591b61d35f24` |
+| 8 | `inductive` | [EstablishmentStatus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AuthoritySourceEdition2.lean/declarations/establishmentstatus.md) | 56 | `declaration-track:f9651dab04197b255e65c67587eb1a037ef72e6d035c1fd88755ab5dc3e5a840` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

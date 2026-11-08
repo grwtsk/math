@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/WienerIkeharaQOnePoleFourierControls.lean/index.md) · [Full source](../../../../MeasureAndIntegration/WienerIkeharaQOnePoleFourierControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/WienerIkeharaQOnePoleFourierControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/WienerIkeharaQOnePoleFourierControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.WienerIkeharaQOnePoleFourier`](../../../../MeasureAndIntegration/WienerIkeharaQOnePoleFourier.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.WienerIkeharaQOnePoleFourier`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/WienerIkeharaQOnePoleFourier.lean/index.md) — import line 8; pinned internal source present.
 - `Mathlib.Tactic` — import line 9; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [wienerPole_actual_integrable_product](../../../../MeasureAndIntegration/WienerIkeharaQOnePoleFourierControls.lean/declarations/wienerpole-actual-integrable-product.md) | 22 | `result-track:8ffd90147283798000a361cb3365fc4d2f382aae24877bf09cb59d3f1594c06d` |
-| 2 | `theorem` | [wienerPole_exact_product_norm](../../../../MeasureAndIntegration/WienerIkeharaQOnePoleFourierControls.lean/declarations/wienerpole-exact-product-norm.md) | 35 | `result-track:0af877967ca406f261ccceeb4396f0554add679ddb9f6a71dc07146fb303fd53` |
-| 3 | `theorem` | [wienerPole_zero_frequency](../../../../MeasureAndIntegration/WienerIkeharaQOnePoleFourierControls.lean/declarations/wienerpole-zero-frequency.md) | 44 | `result-track:212a2bfbef73a5bd1f48fe785f9d195bd1bc3bab4b68e7fbe613c49049d43398` |
-| 4 | `theorem` | [wienerPole_actual_Laplace_tail](../../../../MeasureAndIntegration/WienerIkeharaQOnePoleFourierControls.lean/declarations/wienerpole-actual-laplace-tail.md) | 52 | `result-track:ba57d6b47037ecbf31bf0d3d289a5b158d4453ed2d50dc405db12b563098e85c` |
-| 5 | `theorem` | [wienerPole_actual_secondFourier](../../../../MeasureAndIntegration/WienerIkeharaQOnePoleFourierControls.lean/declarations/wienerpole-actual-secondfourier.md) | 66 | `result-track:0d9bdb9dc1292e6508d5e048e5f3dcfff3ac5ddc86e3a87b4213cb98dc582379` |
-| 6 | `theorem` | [wienerPole_at_unit_scale](../../../../MeasureAndIntegration/WienerIkeharaQOnePoleFourierControls.lean/declarations/wienerpole-at-unit-scale.md) | 82 | `result-track:8a0b53041477c22daae5a75b7cb17f14d8b8e6e4b0c0e23a39afdc0c9ee75ad8` |
-| 7 | `def` | [wienerPole_nextObligations](../../../../MeasureAndIntegration/WienerIkeharaQOnePoleFourierControls.lean/declarations/wienerpole-nextobligations.md) | 99 | `declaration-track:2b6c5a097910920211f72b40e2dfc2fc33238b5fa21b27be2118714f06a93009` |
+| 1 | `theorem` | [wienerPole_actual_integrable_product](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/WienerIkeharaQOnePoleFourierControls.lean/declarations/wienerpole-actual-integrable-product.md) | 22 | `result-track:8ffd90147283798000a361cb3365fc4d2f382aae24877bf09cb59d3f1594c06d` |
+| 2 | `theorem` | [wienerPole_exact_product_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/WienerIkeharaQOnePoleFourierControls.lean/declarations/wienerpole-exact-product-norm.md) | 35 | `result-track:0af877967ca406f261ccceeb4396f0554add679ddb9f6a71dc07146fb303fd53` |
+| 3 | `theorem` | [wienerPole_zero_frequency](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/WienerIkeharaQOnePoleFourierControls.lean/declarations/wienerpole-zero-frequency.md) | 44 | `result-track:212a2bfbef73a5bd1f48fe785f9d195bd1bc3bab4b68e7fbe613c49049d43398` |
+| 4 | `theorem` | [wienerPole_actual_Laplace_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/WienerIkeharaQOnePoleFourierControls.lean/declarations/wienerpole-actual-laplace-tail.md) | 52 | `result-track:ba57d6b47037ecbf31bf0d3d289a5b158d4453ed2d50dc405db12b563098e85c` |
+| 5 | `theorem` | [wienerPole_actual_secondFourier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/WienerIkeharaQOnePoleFourierControls.lean/declarations/wienerpole-actual-secondfourier.md) | 66 | `result-track:0d9bdb9dc1292e6508d5e048e5f3dcfff3ac5ddc86e3a87b4213cb98dc582379` |
+| 6 | `theorem` | [wienerPole_at_unit_scale](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/WienerIkeharaQOnePoleFourierControls.lean/declarations/wienerpole-at-unit-scale.md) | 82 | `result-track:8a0b53041477c22daae5a75b7cb17f14d8b8e6e4b0c0e23a39afdc0c9ee75ad8` |
+| 7 | `def` | [wienerPole_nextObligations](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/WienerIkeharaQOnePoleFourierControls.lean/declarations/wienerpole-nextobligations.md) | 99 | `declaration-track:2b6c5a097910920211f72b40e2dfc2fc33238b5fa21b27be2118714f06a93009` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

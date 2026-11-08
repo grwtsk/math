@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueIntegralNamespacedIntegralCompAbs.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueIntegralNamespacedIntegralCompAbs.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/LebesgueIntegralNamespacedIntegralCompAbs.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/LebesgueIntegralNamespacedIntegralCompAbs.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [volume_regionBetween_eq_integral'](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueIntegralNamespacedIntegralCompAbs.lean/declarations/volume-regionbetween-eq-integral.md) | 28 | `result-track:1b228eb9688ec7e7926c2bd5c942ff07937c71086dc16898ebb87c265486cd95` |
-| 2 | `theorem` | [volume_regionBetween_eq_integral](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueIntegralNamespacedIntegralCompAbs.lean/declarations/volume-regionbetween-eq-integral-source-edition-2.md) | 42 | `result-track:3b6ef3290f3835ae408a0375e2a8063dc80aa85a479a46a0d7bfd554e8b2f51b` |
-| 3 | `theorem` | [Real.integrable_of_summable_norm_Icc](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueIntegralNamespacedIntegralCompAbs.lean/declarations/real-integrable-of-summable-norm-icc.md) | 59 | `result-track:e78d431f09580a2db8c6e18340f9d673ad020036d3e3b195968c7f8ee5d71ac1` |
-| 4 | `theorem` | [integral_comp_neg_Iic](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueIntegralNamespacedIntegralCompAbs.lean/declarations/integral-comp-neg-iic.md) | 89 | `result-track:47fdd28844e6d5f376fc00e771787930af331536fb671495d8e2a4b121c627c1` |
-| 5 | `theorem` | [integral_comp_neg_Ioi](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueIntegralNamespacedIntegralCompAbs.lean/declarations/integral-comp-neg-ioi.md) | 99 | `result-track:257f51c637ad3913eb9375216a3a2e2141890351830f85cd1009230d8f961132` |
-| 6 | `theorem` | [integral_comp_abs](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueIntegralNamespacedIntegralCompAbs.lean/declarations/integral-comp-abs.md) | 104 | `result-track:89cb1cad5367f1d642196ca65d6841e206c016feed40813b19b73f9d00507edc` |
+| 1 | `theorem` | [volume_regionBetween_eq_integral'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/LebesgueIntegralNamespacedIntegralCompAbs.lean/declarations/volume-regionbetween-eq-integral.md) | 28 | `result-track:1b228eb9688ec7e7926c2bd5c942ff07937c71086dc16898ebb87c265486cd95` |
+| 2 | `theorem` | [volume_regionBetween_eq_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/LebesgueIntegralNamespacedIntegralCompAbs.lean/declarations/volume-regionbetween-eq-integral-source-edition-2.md) | 42 | `result-track:3b6ef3290f3835ae408a0375e2a8063dc80aa85a479a46a0d7bfd554e8b2f51b` |
+| 3 | `theorem` | [Real.integrable_of_summable_norm_Icc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/LebesgueIntegralNamespacedIntegralCompAbs.lean/declarations/real-integrable-of-summable-norm-icc.md) | 59 | `result-track:e78d431f09580a2db8c6e18340f9d673ad020036d3e3b195968c7f8ee5d71ac1` |
+| 4 | `theorem` | [integral_comp_neg_Iic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/LebesgueIntegralNamespacedIntegralCompAbs.lean/declarations/integral-comp-neg-iic.md) | 89 | `result-track:47fdd28844e6d5f376fc00e771787930af331536fb671495d8e2a4b121c627c1` |
+| 5 | `theorem` | [integral_comp_neg_Ioi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/LebesgueIntegralNamespacedIntegralCompAbs.lean/declarations/integral-comp-neg-ioi.md) | 99 | `result-track:257f51c637ad3913eb9375216a3a2e2141890351830f85cd1009230d8f961132` |
+| 6 | `theorem` | [integral_comp_abs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/LebesgueIntegralNamespacedIntegralCompAbs.lean/declarations/integral-comp-abs.md) | 104 | `result-track:89cb1cad5367f1d642196ca65d6841e206c016feed40813b19b73f9d00507edc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

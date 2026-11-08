@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SectionEndomorphism.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SectionEndomorphism.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SectionEndomorphism.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SectionEndomorphism.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CrystalEndomorphism](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SectionEndomorphism.lean/declarations/crystalendomorphism.md) | 42 | `declaration-track:36448a8a134f7675c03b5edf83a250547b2e2757ae6c1d84f095949175cb8377` |
+| 1 | `structure` | [CrystalEndomorphism](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SectionEndomorphism.lean/declarations/crystalendomorphism.md) | 42 | `declaration-track:36448a8a134f7675c03b5edf83a250547b2e2757ae6c1d84f095949175cb8377` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/MichaelNamespacedPublic.lean/index.md) · [Full source](../../../../GeneralTopology/MichaelNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MichaelNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MichaelNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [LowerHemicontinuous.hasOpenCGraph_of_add_hasOpenCGraph](../../../../GeneralTopology/MichaelNamespacedPublic.lean/declarations/lowerhemicontinuous-hasopencgraph-of-add-hasopencgraph.md) | 46 | `result-track:7c1d9a520c30bfa8e3819b2feac88086716ac860c306933e8a9ee69f23c6fbf0` |
-| 2 | `lemma` | [HasOpenLowerSections.exists_continuous_selection](../../../../GeneralTopology/MichaelNamespacedPublic.lean/declarations/hasopenlowersections-exists-continuous-selection.md) | 74 | `result-track:e9b0011b95acd595ff362aec987b887feab10c37aa5b812764166af63319f1ca` |
-| 3 | `lemma` | [LowerHemicontinuous.exists_continuous_selection_refine](../../../../GeneralTopology/MichaelNamespacedPublic.lean/declarations/lowerhemicontinuous-exists-continuous-selection-refine.md) | 87 | `result-track:fda4e0bad8d8c569f90446da51d01f3ead4a2393ebd4ba2e68ca117b0e8e319d` |
-| 4 | `theorem` | [LowerHemicontinuous.exists_continuous_selection](../../../../GeneralTopology/MichaelNamespacedPublic.lean/declarations/lowerhemicontinuous-exists-continuous-selection.md) | 115 | `result-track:126a673d25781c10c19e976cbdb65d2e92926283ab0abd8bb32a9b92f49260be` |
+| 1 | `lemma` | [LowerHemicontinuous.hasOpenCGraph_of_add_hasOpenCGraph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MichaelNamespacedPublic.lean/declarations/lowerhemicontinuous-hasopencgraph-of-add-hasopencgraph.md) | 46 | `result-track:7c1d9a520c30bfa8e3819b2feac88086716ac860c306933e8a9ee69f23c6fbf0` |
+| 2 | `lemma` | [HasOpenLowerSections.exists_continuous_selection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MichaelNamespacedPublic.lean/declarations/hasopenlowersections-exists-continuous-selection.md) | 74 | `result-track:e9b0011b95acd595ff362aec987b887feab10c37aa5b812764166af63319f1ca` |
+| 3 | `lemma` | [LowerHemicontinuous.exists_continuous_selection_refine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MichaelNamespacedPublic.lean/declarations/lowerhemicontinuous-exists-continuous-selection-refine.md) | 87 | `result-track:fda4e0bad8d8c569f90446da51d01f3ead4a2393ebd4ba2e68ca117b0e8e319d` |
+| 4 | `theorem` | [LowerHemicontinuous.exists_continuous_selection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MichaelNamespacedPublic.lean/declarations/lowerhemicontinuous-exists-continuous-selection.md) | 115 | `result-track:126a673d25781c10c19e976cbdb65d2e92926283ab0abd8bb32a9b92f49260be` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

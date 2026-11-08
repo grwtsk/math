@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/NormDetPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/NormDetPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/NormDetPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/NormDetPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [normalizeBirdDet](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/NormDetPublic.lean/declarations/normalizebirddet.md) | 25 | `declaration-track:6a878d9ac76b72a721c511c12e0c7bcc8a82237f769935b140312feed056b52b` |
-| 2 | `def` | [normalizeDetFromEntries](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/NormDetPublic.lean/declarations/normalizedetfromentries.md) | 31 | `declaration-track:4a583f210862bff58ff0e8ba93817f653de276266563eb0f126b99a43a31ebac` |
-| 3 | `def` | [entriesOfMatrixLiteral?](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/NormDetPublic.lean/declarations/entriesofmatrixliteral.md) | 50 | `declaration-track:79ff560ff3b7126792a54562c9e15333f480321f7fb29248ca8974213e2e2c71` |
-| 4 | `macro` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/NormDetPublic.lean/declarations/macro.md) | 91 | `declaration-track:b0201fe90578233d553efe39c3d163ec6c998aac7c737f910b0f26a2ac8f2956` |
+| 1 | `def` | [normalizeBirdDet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/NormDetPublic.lean/declarations/normalizebirddet.md) | 25 | `declaration-track:6a878d9ac76b72a721c511c12e0c7bcc8a82237f769935b140312feed056b52b` |
+| 2 | `def` | [normalizeDetFromEntries](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/NormDetPublic.lean/declarations/normalizedetfromentries.md) | 31 | `declaration-track:4a583f210862bff58ff0e8ba93817f653de276266563eb0f126b99a43a31ebac` |
+| 3 | `def` | [entriesOfMatrixLiteral?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/NormDetPublic.lean/declarations/entriesofmatrixliteral.md) | 50 | `declaration-track:79ff560ff3b7126792a54562c9e15333f480321f7fb29248ca8974213e2e2c71` |
+| 4 | `macro` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/NormDetPublic.lean/declarations/macro.md) | 91 | `declaration-track:b0201fe90578233d553efe39c3d163ec6c998aac7c737f910b0f26a2ac8f2956` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

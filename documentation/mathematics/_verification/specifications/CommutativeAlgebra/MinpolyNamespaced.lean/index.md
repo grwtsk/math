@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/MinpolyNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/MinpolyNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MinpolyNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MinpolyNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [coeff_zero_minpoly](../../../../CommutativeAlgebra/MinpolyNamespaced.lean/declarations/coeff-zero-minpoly.md) | 42 | `result-track:57aa67f3896cd94546c843008e28860b9141b91a0c2a300972e17fbf98c8cea0` |
-| 2 | `theorem` | [pow_coeff_zero_ne_zero_of_unit](../../../../CommutativeAlgebra/MinpolyNamespaced.lean/declarations/pow-coeff-zero-ne-zero-of-unit.md) | 50 | `result-track:1670a4e0fb306bc5cfbcd80499dd06663eb09d8b6cd8977a45f9d14d04d4d7af` |
+| 1 | `theorem` | [coeff_zero_minpoly](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MinpolyNamespaced.lean/declarations/coeff-zero-minpoly.md) | 42 | `result-track:57aa67f3896cd94546c843008e28860b9141b91a0c2a300972e17fbf98c8cea0` |
+| 2 | `theorem` | [pow_coeff_zero_ne_zero_of_unit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MinpolyNamespaced.lean/declarations/pow-coeff-zero-ne-zero-of-unit.md) | 50 | `result-track:1670a4e0fb306bc5cfbcd80499dd06663eb09d8b6cd8977a45f9d14d04d4d7af` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualNumericCorrectionAttempt01.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualNumericCorrectionAttempt01.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualNumericCorrectionAttempt01.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualNumericCorrectionAttempt01.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_negative_mean_gt](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualNumericCorrectionAttempt01.lean/declarations/actual-negative-mean-gt.md) | 15 | `result-track:c64df18c8247f935e43482168813b19f2210ed5f5bae4935c10490518ab312b3` |
-| 2 | `theorem` | [actual_square_remainder_gt](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualNumericCorrectionAttempt01.lean/declarations/actual-square-remainder-gt.md) | 20 | `result-track:7ea749a58522f5d879f0530d93ddb28063aaf245632b0e8c112b93b5084f1357` |
-| 3 | `theorem` | [actual_square_remainder_paper_budget](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualNumericCorrectionAttempt01.lean/declarations/actual-square-remainder-paper-budget.md) | 29 | `result-track:b4c465d21db51134004767f019310b14c8a8cc9e3d167cb1d04e57c884700b3f` |
-| 4 | `theorem` | [actual_mean_offset_gt](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualNumericCorrectionAttempt01.lean/declarations/actual-mean-offset-gt.md) | 33 | `result-track:cdb973bc5d53433fcc0fea142e5c1ef418b11c3a4308e2fd8cf007ec3a538b67` |
-| 5 | `theorem` | [actual_mean_gt](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualNumericCorrectionAttempt01.lean/declarations/actual-mean-gt.md) | 40 | `result-track:6a94a904667790b96959ef035c44b68d71a422d9d03e2b2d2789d1ddead5d5d5` |
-| 6 | `theorem` | [actual_mean_gt_of_zero_budget](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualNumericCorrectionAttempt01.lean/declarations/actual-mean-gt-of-zero-budget.md) | 45 | `result-track:d829d85cdaaa4704e707ca790527be455b5e0c1e12a0df3763a4c9d94bdc9b4e` |
-| 7 | `theorem` | [actual_mean_gt_neg_eighteen](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualNumericCorrectionAttempt01.lean/declarations/actual-mean-gt-neg-eighteen.md) | 51 | `result-track:370bd483dc800d9491de08f4a2bd3573ce9e6c1eb99beec8e94967180215f774` |
+| 1 | `theorem` | [actual_negative_mean_gt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualNumericCorrectionAttempt01.lean/declarations/actual-negative-mean-gt.md) | 15 | `result-track:c64df18c8247f935e43482168813b19f2210ed5f5bae4935c10490518ab312b3` |
+| 2 | `theorem` | [actual_square_remainder_gt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualNumericCorrectionAttempt01.lean/declarations/actual-square-remainder-gt.md) | 20 | `result-track:7ea749a58522f5d879f0530d93ddb28063aaf245632b0e8c112b93b5084f1357` |
+| 3 | `theorem` | [actual_square_remainder_paper_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualNumericCorrectionAttempt01.lean/declarations/actual-square-remainder-paper-budget.md) | 29 | `result-track:b4c465d21db51134004767f019310b14c8a8cc9e3d167cb1d04e57c884700b3f` |
+| 4 | `theorem` | [actual_mean_offset_gt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualNumericCorrectionAttempt01.lean/declarations/actual-mean-offset-gt.md) | 33 | `result-track:cdb973bc5d53433fcc0fea142e5c1ef418b11c3a4308e2fd8cf007ec3a538b67` |
+| 5 | `theorem` | [actual_mean_gt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualNumericCorrectionAttempt01.lean/declarations/actual-mean-gt.md) | 40 | `result-track:6a94a904667790b96959ef035c44b68d71a422d9d03e2b2d2789d1ddead5d5d5` |
+| 6 | `theorem` | [actual_mean_gt_of_zero_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualNumericCorrectionAttempt01.lean/declarations/actual-mean-gt-of-zero-budget.md) | 45 | `result-track:d829d85cdaaa4704e707ca790527be455b5e0c1e12a0df3763a4c9d94bdc9b4e` |
+| 7 | `theorem` | [actual_mean_gt_neg_eighteen](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualNumericCorrectionAttempt01.lean/declarations/actual-mean-gt-neg-eighteen.md) | 51 | `result-track:370bd483dc800d9491de08f4a2bd3573ce9e6c1eb99beec8e94967180215f774` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

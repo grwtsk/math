@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/TensorProductFreeNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/TensorProductFreeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TensorProductFreeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TensorProductFreeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,18 +61,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [basisAux](../../../../CommutativeAlgebra/TensorProductFreeNamespaced.lean/declarations/basisaux.md) | 56 | `declaration-track:4e275333055ff3cd7790e3eb88eab8eda8cd0d5163c22e531a0954ed60a421e5` |
-| 2 | `theorem` | [basisAux_tmul](../../../../CommutativeAlgebra/TensorProductFreeNamespaced.lean/declarations/basisaux-tmul.md) | 61 | `result-track:bc26b7852825a642bf11606f5eff7bf5d55159033368b71a99fcf6f1338f16ba` |
-| 3 | `theorem` | [basisAux_map_smul](../../../../CommutativeAlgebra/TensorProductFreeNamespaced.lean/declarations/basisaux-map-smul.md) | 66 | `result-track:a649465720b7c8c0c9b9628000c0fa9e50f31b8c9343c8218dc74704d697dc17` |
-| 4 | `def` | [basis](../../../../CommutativeAlgebra/TensorProductFreeNamespaced.lean/declarations/basis.md) | 73 | `declaration-track:820d9993e906ed40abb91bf60ee0804ac2907f0b6eaaab1edce57a78933c4b91` |
-| 5 | `theorem` | [basis_repr_tmul](../../../../CommutativeAlgebra/TensorProductFreeNamespaced.lean/declarations/basis-repr-tmul.md) | 77 | `result-track:bc1a393515b9f56894af5d0cbbf1855ff69eef3dba9ee6b086a07df7dfa7829e` |
-| 6 | `theorem` | [basis_repr_symm_apply](../../../../CommutativeAlgebra/TensorProductFreeNamespaced.lean/declarations/basis-repr-symm-apply-source-edition-2.md) | 81 | `result-track:b8029ad93f30f9328c471139d8f55e48a6fc16872774395b64fca69eb52a958d` |
-| 7 | `theorem` | [basis_apply](../../../../CommutativeAlgebra/TensorProductFreeNamespaced.lean/declarations/basis-apply.md) | 87 | `result-track:e585ab80a6660189a16a22bbb82c3368fe372722909146d8100129d6ffdf9932` |
-| 8 | `theorem` | [basis_repr_symm_apply'](../../../../CommutativeAlgebra/TensorProductFreeNamespaced.lean/declarations/basis-repr-symm-apply.md) | 89 | `result-track:834523f390803b4f173a4eb3b10c3e1383e2c50bcaa6fe4ee59d6b2c64a11272` |
-| 9 | `lemma` | [Tensor Product Free Namespaced](../../../../CommutativeAlgebra/TensorProductFreeNamespaced.lean/declarations/basechange-linearmap.md) | 100 | `result-track:44fdb123d6844b88d14f93664073900d2430bda619540ae94c25792bd4326092` |
-| 10 | `lemma` | [Tensor Product Free Namespaced](../../../../CommutativeAlgebra/TensorProductFreeNamespaced.lean/declarations/basechange-end.md) | 110 | `result-track:de161ce937ed5d2753544286a8ad7bb150f46fd6d2c8731c31f819404308e2e0` |
-| 11 | `instance` | [instFree](../../../../CommutativeAlgebra/TensorProductFreeNamespaced.lean/declarations/instfree.md) | 118 | `declaration-track:4a18c17125a46e8d2cfa60e43bba038b939fb5710cd7f3da6b54883963e464c0` |
-| 12 | `lemma` | [toMatrix_baseChange](../../../../CommutativeAlgebra/TensorProductFreeNamespaced.lean/declarations/tomatrix-basechange.md) | 138 | `result-track:f842a45cc3d33006cd9e30c0fb916eb298949bcd635b0585d03dd37de49ab5dc` |
+| 1 | `def` | [basisAux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TensorProductFreeNamespaced.lean/declarations/basisaux.md) | 56 | `declaration-track:4e275333055ff3cd7790e3eb88eab8eda8cd0d5163c22e531a0954ed60a421e5` |
+| 2 | `theorem` | [basisAux_tmul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TensorProductFreeNamespaced.lean/declarations/basisaux-tmul.md) | 61 | `result-track:bc26b7852825a642bf11606f5eff7bf5d55159033368b71a99fcf6f1338f16ba` |
+| 3 | `theorem` | [basisAux_map_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TensorProductFreeNamespaced.lean/declarations/basisaux-map-smul.md) | 66 | `result-track:a649465720b7c8c0c9b9628000c0fa9e50f31b8c9343c8218dc74704d697dc17` |
+| 4 | `def` | [basis](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TensorProductFreeNamespaced.lean/declarations/basis.md) | 73 | `declaration-track:820d9993e906ed40abb91bf60ee0804ac2907f0b6eaaab1edce57a78933c4b91` |
+| 5 | `theorem` | [basis_repr_tmul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TensorProductFreeNamespaced.lean/declarations/basis-repr-tmul.md) | 77 | `result-track:bc1a393515b9f56894af5d0cbbf1855ff69eef3dba9ee6b086a07df7dfa7829e` |
+| 6 | `theorem` | [basis_repr_symm_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TensorProductFreeNamespaced.lean/declarations/basis-repr-symm-apply-source-edition-2.md) | 81 | `result-track:b8029ad93f30f9328c471139d8f55e48a6fc16872774395b64fca69eb52a958d` |
+| 7 | `theorem` | [basis_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TensorProductFreeNamespaced.lean/declarations/basis-apply.md) | 87 | `result-track:e585ab80a6660189a16a22bbb82c3368fe372722909146d8100129d6ffdf9932` |
+| 8 | `theorem` | [basis_repr_symm_apply'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TensorProductFreeNamespaced.lean/declarations/basis-repr-symm-apply.md) | 89 | `result-track:834523f390803b4f173a4eb3b10c3e1383e2c50bcaa6fe4ee59d6b2c64a11272` |
+| 9 | `lemma` | [Tensor Product Free Namespaced](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TensorProductFreeNamespaced.lean/declarations/basechange-linearmap.md) | 100 | `result-track:44fdb123d6844b88d14f93664073900d2430bda619540ae94c25792bd4326092` |
+| 10 | `lemma` | [Tensor Product Free Namespaced](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TensorProductFreeNamespaced.lean/declarations/basechange-end.md) | 110 | `result-track:de161ce937ed5d2753544286a8ad7bb150f46fd6d2c8731c31f819404308e2e0` |
+| 11 | `instance` | [instFree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TensorProductFreeNamespaced.lean/declarations/instfree.md) | 118 | `declaration-track:4a18c17125a46e8d2cfa60e43bba038b939fb5710cd7f3da6b54883963e464c0` |
+| 12 | `lemma` | [toMatrix_baseChange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TensorProductFreeNamespaced.lean/declarations/tomatrix-basechange.md) | 138 | `result-track:f842a45cc3d33006cd9e30c0fb916eb298949bcd635b0585d03dd37de49ab5dc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

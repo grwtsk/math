@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/SetLikeFintype.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/SetLikeFintype.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SetLikeFintype.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SetLikeFintype.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/SetLikeFintype.lean/declarations/instance.md) | 21 | `declaration-track:62ec2d6ccc86f738ae0963196f6520308e3e1c4845d55c32e8287cf05f07016c` |
-| 2 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/SetLikeFintype.lean/declarations/instance-source-edition-2.md) | 25 | `declaration-track:e31c6ff6c2ae5995220502fe03d5a7ce28d860c1e4dd749078dcde958efa2f45` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SetLikeFintype.lean/declarations/instance.md) | 21 | `declaration-track:62ec2d6ccc86f738ae0963196f6520308e3e1c4845d55c32e8287cf05f07016c` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SetLikeFintype.lean/declarations/instance-source-edition-2.md) | 25 | `declaration-track:e31c6ff6c2ae5995220502fe03d5a7ce28d860c1e4dd749078dcde958efa2f45` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

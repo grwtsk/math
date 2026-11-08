@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianSubobjectNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianSubobjectNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianSubobjectNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianSubobjectNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [subobjectIsoSubobjectOp](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianSubobjectNamespaced.lean/declarations/subobjectisosubobjectop.md) | 38 | `declaration-track:b6ff55cce61dc2ff568fff8cdb048b17563e3f492f2819bceb5fca8134ab5857` |
-| 2 | `instance` | [wellPowered_opposite](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianSubobjectNamespaced.lean/declarations/wellpowered-opposite.md) | 69 | `declaration-track:0e33afcd496cc48b429e5a291d1e49382b07addcf5310d40236b1da6f7c3f5ef` |
+| 1 | `def` | [subobjectIsoSubobjectOp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianSubobjectNamespaced.lean/declarations/subobjectisosubobjectop.md) | 38 | `declaration-track:b6ff55cce61dc2ff568fff8cdb048b17563e3f492f2819bceb5fca8134ab5857` |
+| 2 | `instance` | [wellPowered_opposite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianSubobjectNamespaced.lean/declarations/wellpowered-opposite.md) | 69 | `declaration-track:0e33afcd496cc48b429e5a291d1e49382b07addcf5310d40236b1da6f7c3f5ef` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

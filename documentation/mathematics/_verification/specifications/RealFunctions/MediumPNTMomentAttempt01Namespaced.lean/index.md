@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/MediumPNTMomentAttempt01Namespaced.lean/index.md) · [Full source](../../../../RealFunctions/MediumPNTMomentAttempt01Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/MediumPNTMomentAttempt01Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/MediumPNTMomentAttempt01Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [psiRelativeError_measurable](../../../../RealFunctions/MediumPNTMomentAttempt01Namespaced.lean/declarations/psirelativeerror-measurable.md) | 19 | `result-track:9f76df091c79dffe08166cc2e023dd6d04eb93bd5a5de16a4b09ec4073e7d853` |
-| 2 | `theorem` | [psiRelativeError_bound](../../../../RealFunctions/MediumPNTMomentAttempt01Namespaced.lean/declarations/psirelativeerror-bound.md) | 25 | `result-track:6e419678b1d1de9b08e2b0f4ba40afd8170fefc005a3a245fb64cf187e8bece0` |
-| 3 | `theorem` | [inverse_square_integrable](../../../../RealFunctions/MediumPNTMomentAttempt01Namespaced.lean/declarations/inverse-square-integrable.md) | 41 | `result-track:e4f3896e4e0b6c9c3b919bd33aa917d1fbacaf3a063b50428a558334333823d6` |
-| 4 | `theorem` | [psiRelativeError_mul_pow_integrable](../../../../RealFunctions/MediumPNTMomentAttempt01Namespaced.lean/declarations/psirelativeerror-mul-pow-integrable.md) | 50 | `result-track:7af52ccec06142f5b621d3c0f5f0ffd86c4c2392fb2d11ec24e0a5c489cfa267` |
-| 5 | `theorem` | [psiRelativeError_integrable](../../../../RealFunctions/MediumPNTMomentAttempt01Namespaced.lean/declarations/psirelativeerror-integrable.md) | 87 | `result-track:d148bb577a3015a767361752b9b3eb589e21f090502cdd7892d82917e88e688b` |
-| 6 | `theorem` | [psiRelativeError_first_moment_integrable](../../../../RealFunctions/MediumPNTMomentAttempt01Namespaced.lean/declarations/psirelativeerror-first-moment-integrable.md) | 91 | `result-track:3eb726ba44dce88335be8280eb0a4a42be0b1855d44298ba31ed85b146c0737a` |
+| 1 | `theorem` | [psiRelativeError_measurable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/MediumPNTMomentAttempt01Namespaced.lean/declarations/psirelativeerror-measurable.md) | 19 | `result-track:9f76df091c79dffe08166cc2e023dd6d04eb93bd5a5de16a4b09ec4073e7d853` |
+| 2 | `theorem` | [psiRelativeError_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/MediumPNTMomentAttempt01Namespaced.lean/declarations/psirelativeerror-bound.md) | 25 | `result-track:6e419678b1d1de9b08e2b0f4ba40afd8170fefc005a3a245fb64cf187e8bece0` |
+| 3 | `theorem` | [inverse_square_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/MediumPNTMomentAttempt01Namespaced.lean/declarations/inverse-square-integrable.md) | 41 | `result-track:e4f3896e4e0b6c9c3b919bd33aa917d1fbacaf3a063b50428a558334333823d6` |
+| 4 | `theorem` | [psiRelativeError_mul_pow_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/MediumPNTMomentAttempt01Namespaced.lean/declarations/psirelativeerror-mul-pow-integrable.md) | 50 | `result-track:7af52ccec06142f5b621d3c0f5f0ffd86c4c2392fb2d11ec24e0a5c489cfa267` |
+| 5 | `theorem` | [psiRelativeError_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/MediumPNTMomentAttempt01Namespaced.lean/declarations/psirelativeerror-integrable.md) | 87 | `result-track:d148bb577a3015a767361752b9b3eb589e21f090502cdd7892d82917e88e688b` |
+| 6 | `theorem` | [psiRelativeError_first_moment_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/MediumPNTMomentAttempt01Namespaced.lean/declarations/psirelativeerror-first-moment-integrable.md) | 91 | `result-track:3eb726ba44dce88335be8280eb0a4a42be0b1855d44298ba31ed85b146c0737a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

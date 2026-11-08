@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PushforwardContinuousNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PushforwardContinuousNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PushforwardContinuousNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PushforwardContinuousNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [pushforward](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PushforwardContinuousNamespaced.lean/declarations/pushforward.md) | 44 | `declaration-track:22bfa4eb3609975f8cea12389f7a2427ece1c1d7c5ab708971417c29c04711fa` |
-| 2 | `abbrev` | [over](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PushforwardContinuousNamespaced.lean/declarations/over.md) | 53 | `declaration-track:1f0e51807b1faa401129d3f63506d1a3017f290042de8b6dcf556aef0de2af08` |
+| 1 | `def` | [pushforward](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PushforwardContinuousNamespaced.lean/declarations/pushforward.md) | 44 | `declaration-track:22bfa4eb3609975f8cea12389f7a2427ece1c1d7c5ab708971417c29c04711fa` |
+| 2 | `abbrev` | [over](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PushforwardContinuousNamespaced.lean/declarations/over.md) | 53 | `declaration-track:1f0e51807b1faa401129d3f63506d1a3017f290042de8b6dcf556aef0de2af08` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

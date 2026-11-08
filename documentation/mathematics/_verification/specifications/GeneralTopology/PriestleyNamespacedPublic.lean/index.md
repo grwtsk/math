@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/PriestleyNamespacedPublic.lean/index.md) · [Full source](../../../../GeneralTopology/PriestleyNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PriestleyNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PriestleyNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [PriestleySpace](../../../../GeneralTopology/PriestleyNamespacedPublic.lean/declarations/priestleyspace.md) | 49 | `declaration-track:d021b2dddf1ad215ad5dcff12237cabaad35e824aa5c6e4c98be5ad3f76e93ec` |
-| 2 | `theorem` | [exists_isClopen_upper_of_not_le](../../../../GeneralTopology/PriestleyNamespacedPublic.lean/declarations/exists-isclopen-upper-of-not-le.md) | 58 | `result-track:66b3642363fba6368ef7bef93175b1bdfb0b393ab3e60ca8e899babf96093882` |
-| 3 | `theorem` | [exists_isClopen_lower_of_not_le](../../../../GeneralTopology/PriestleyNamespacedPublic.lean/declarations/exists-isclopen-lower-of-not-le.md) | 62 | `result-track:b4357acf1528f61e1e1da36e486a5d6449db333fc696b6071fdd25c9851c5808` |
-| 4 | `theorem` | [exists_isClopen_upper_or_lower_of_ne](../../../../GeneralTopology/PriestleyNamespacedPublic.lean/declarations/exists-isclopen-upper-or-lower-of-ne.md) | 73 | `result-track:0de8b163680f25eda58ca9bf8eb6a106d3636f6b1db9147d6866c75fe4603a7c` |
-| 5 | `instance` | [(anonymous)](../../../../GeneralTopology/PriestleyNamespacedPublic.lean/declarations/instance.md) | 81 | `declaration-track:8fc508a2fe075b4108e84a832fb95a00a168e041ee1c7ad365706f71ba5f1d4b` |
+| 1 | `class` | [PriestleySpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PriestleyNamespacedPublic.lean/declarations/priestleyspace.md) | 49 | `declaration-track:d021b2dddf1ad215ad5dcff12237cabaad35e824aa5c6e4c98be5ad3f76e93ec` |
+| 2 | `theorem` | [exists_isClopen_upper_of_not_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PriestleyNamespacedPublic.lean/declarations/exists-isclopen-upper-of-not-le.md) | 58 | `result-track:66b3642363fba6368ef7bef93175b1bdfb0b393ab3e60ca8e899babf96093882` |
+| 3 | `theorem` | [exists_isClopen_lower_of_not_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PriestleyNamespacedPublic.lean/declarations/exists-isclopen-lower-of-not-le.md) | 62 | `result-track:b4357acf1528f61e1e1da36e486a5d6449db333fc696b6071fdd25c9851c5808` |
+| 4 | `theorem` | [exists_isClopen_upper_or_lower_of_ne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PriestleyNamespacedPublic.lean/declarations/exists-isclopen-upper-or-lower-of-ne.md) | 73 | `result-track:0de8b163680f25eda58ca9bf8eb6a106d3636f6b1db9147d6866c75fe4603a7c` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PriestleyNamespacedPublic.lean/declarations/instance.md) | 81 | `declaration-track:8fc508a2fe075b4108e84a832fb95a00a168e041ee1c7ad365706f71ba5f1d4b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

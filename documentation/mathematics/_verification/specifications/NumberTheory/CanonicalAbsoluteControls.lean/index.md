@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/CanonicalAbsoluteControls.lean/index.md) · [Full source](../../../../NumberTheory/CanonicalAbsoluteControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalAbsoluteControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalAbsoluteControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Chebyshev.CanonicalTentExplicitFormula`](../../../../NumberTheory/CanonicalTentExplicitFormula.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.CanonicalTentExplicitFormula`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentExplicitFormula.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,16 +57,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [cutoff_counts_equal_atom](../../../../NumberTheory/CanonicalAbsoluteControls.lean/declarations/cutoff-counts-equal-atom.md) | 24 | `result-track:da7260d942d7e966f4b0fd74339d1296feaf8fa4e4ac50a0d6f39ffbf2219ee6` |
-| 2 | `theorem` | [cutoff_not_strict_tail](../../../../NumberTheory/CanonicalAbsoluteControls.lean/declarations/cutoff-not-strict-tail.md) | 32 | `result-track:1796548ac556cdeb11e2924ac131232ae478b8fa306f50627f82cdb6c2fea121` |
-| 3 | `theorem` | [multiplicity_not_cardinality](../../../../NumberTheory/CanonicalAbsoluteControls.lean/declarations/multiplicity-not-cardinality.md) | 35 | `result-track:9a8eff20256ebd4f7c3cb76ac6a836e0ff44311efaa1619ae48e442cee60c292` |
-| 4 | `theorem` | [same_height_distinct_locations](../../../../NumberTheory/CanonicalAbsoluteControls.lean/declarations/same-height-distinct-locations.md) | 43 | `result-track:82bb7bb728c97f31e28bbde1cdbd25c434c1038ce52858e2ce4c4ef33bd1061e` |
-| 5 | `theorem` | [zero_height_inverse_is_zero](../../../../NumberTheory/CanonicalAbsoluteControls.lean/declarations/zero-height-inverse-is-zero.md) | 53 | `result-track:d93cdf7ac8234faf67b1a5b875919643605456097babd3ba53b9a96677a84f1a` |
-| 6 | `theorem` | [zero_height_count_is_not_zero](../../../../NumberTheory/CanonicalAbsoluteControls.lean/declarations/zero-height-count-is-not-zero.md) | 55 | `result-track:4343ab4e1886c7d7a6661ed309549300ec4ee8c2180f36c2834f09c18b249901` |
-| 7 | `theorem` | [scale_cannot_be_dropped](../../../../NumberTheory/CanonicalAbsoluteControls.lean/declarations/scale-cannot-be-dropped.md) | 62 | `result-track:b34c4d5cf53e277fb29d10705b45dbc921285ca2512a406c8f92764857f9647b` |
-| 8 | `theorem` | [missing_record_rejected](../../../../NumberTheory/CanonicalAbsoluteControls.lean/declarations/missing-record-rejected.md) | 65 | `result-track:8abe6ce74419c5064761ded85d3ea0a1450eb59ca1daccc5853fb6fc489ae43e` |
-| 9 | `theorem` | [signed_correction_retained](../../../../NumberTheory/CanonicalAbsoluteControls.lean/declarations/signed-correction-retained.md) | 73 | `result-track:fa3590b315960da859da69cdfbda22cfbaf7205e102fe360a7e14de861d47b11` |
-| 10 | `theorem` | [first_square_outside_domain](../../../../NumberTheory/CanonicalAbsoluteControls.lean/declarations/first-square-outside-domain.md) | 77 | `result-track:e1cf48f93530484844879df4428b10189188e1a1ab06ffd55fb3e2f0dd0d68a4` |
+| 1 | `theorem` | [cutoff_counts_equal_atom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalAbsoluteControls.lean/declarations/cutoff-counts-equal-atom.md) | 24 | `result-track:da7260d942d7e966f4b0fd74339d1296feaf8fa4e4ac50a0d6f39ffbf2219ee6` |
+| 2 | `theorem` | [cutoff_not_strict_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalAbsoluteControls.lean/declarations/cutoff-not-strict-tail.md) | 32 | `result-track:1796548ac556cdeb11e2924ac131232ae478b8fa306f50627f82cdb6c2fea121` |
+| 3 | `theorem` | [multiplicity_not_cardinality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalAbsoluteControls.lean/declarations/multiplicity-not-cardinality.md) | 35 | `result-track:9a8eff20256ebd4f7c3cb76ac6a836e0ff44311efaa1619ae48e442cee60c292` |
+| 4 | `theorem` | [same_height_distinct_locations](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalAbsoluteControls.lean/declarations/same-height-distinct-locations.md) | 43 | `result-track:82bb7bb728c97f31e28bbde1cdbd25c434c1038ce52858e2ce4c4ef33bd1061e` |
+| 5 | `theorem` | [zero_height_inverse_is_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalAbsoluteControls.lean/declarations/zero-height-inverse-is-zero.md) | 53 | `result-track:d93cdf7ac8234faf67b1a5b875919643605456097babd3ba53b9a96677a84f1a` |
+| 6 | `theorem` | [zero_height_count_is_not_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalAbsoluteControls.lean/declarations/zero-height-count-is-not-zero.md) | 55 | `result-track:4343ab4e1886c7d7a6661ed309549300ec4ee8c2180f36c2834f09c18b249901` |
+| 7 | `theorem` | [scale_cannot_be_dropped](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalAbsoluteControls.lean/declarations/scale-cannot-be-dropped.md) | 62 | `result-track:b34c4d5cf53e277fb29d10705b45dbc921285ca2512a406c8f92764857f9647b` |
+| 8 | `theorem` | [missing_record_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalAbsoluteControls.lean/declarations/missing-record-rejected.md) | 65 | `result-track:8abe6ce74419c5064761ded85d3ea0a1450eb59ca1daccc5853fb6fc489ae43e` |
+| 9 | `theorem` | [signed_correction_retained](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalAbsoluteControls.lean/declarations/signed-correction-retained.md) | 73 | `result-track:fa3590b315960da859da69cdfbda22cfbaf7205e102fe360a7e14de861d47b11` |
+| 10 | `theorem` | [first_square_outside_domain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalAbsoluteControls.lean/declarations/first-square-outside-domain.md) | 77 | `result-track:e1cf48f93530484844879df4428b10189188e1a1ab06ffd55fb3e2f0dd0d68a4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

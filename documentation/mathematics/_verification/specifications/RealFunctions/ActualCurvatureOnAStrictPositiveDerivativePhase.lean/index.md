@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/ActualCurvatureOnAStrictPositiveDerivativePhase.lean/index.md) · [Full source](../../../../RealFunctions/ActualCurvatureOnAStrictPositiveDerivativePhase.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualCurvatureOnAStrictPositiveDerivativePhase.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualCurvatureOnAStrictPositiveDerivativePhase.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [pairedTailTest_second_deriv_eq_neg_of_deriv_pos](../../../../RealFunctions/ActualCurvatureOnAStrictPositiveDerivativePhase.lean/declarations/pairedtailtest-second-deriv-eq-neg-of-deriv-pos.md) | 24 | `result-track:2e2726a3bfecf774d95d9d682a1ee32365885400bbe965b9b89e99cf5098c972` |
+| 1 | `theorem` | [pairedTailTest_second_deriv_eq_neg_of_deriv_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualCurvatureOnAStrictPositiveDerivativePhase.lean/declarations/pairedtailtest-second-deriv-eq-neg-of-deriv-pos.md) | 24 | `result-track:2e2726a3bfecf774d95d9d682a1ee32365885400bbe965b9b89e99cf5098c972` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

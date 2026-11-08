@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/TopologistsSineCurvePublic.lean/index.md) · [Full source](../../../../GeneralTopology/TopologistsSineCurvePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologistsSineCurvePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologistsSineCurvePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,24 +57,24 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [S](../../../../GeneralTopology/TopologistsSineCurvePublic.lean/declarations/s.md) | 34 | `declaration-track:658f6f9610cedb9ce34c5770018cbc245b3488bdc29e4f2270a5042b505b6cb9` |
-| 2 | `def` | [Z](../../../../GeneralTopology/TopologistsSineCurvePublic.lean/declarations/z.md) | 38 | `declaration-track:55baef32b39d2ee9ca1b4c0bcb93716cae11f84eb4accc45e3a599905376c4dd` |
-| 3 | `def` | [T](../../../../GeneralTopology/TopologistsSineCurvePublic.lean/declarations/t.md) | 41 | `declaration-track:a59c1b774b8ed5d3d47ce8fa0e01c0eb013948471606dceb9cda16521c55d5ef` |
-| 4 | `def` | [xSeq](../../../../GeneralTopology/TopologistsSineCurvePublic.lean/declarations/xseq.md) | 44 | `declaration-track:1c90dffa29e601aef07de6cacca98073088f7caa1a6312d157e08b74b8c60ee8` |
-| 5 | `lemma` | [xSeq_pos](../../../../GeneralTopology/TopologistsSineCurvePublic.lean/declarations/xseq-pos.md) | 46 | `result-track:10c6f8559a202f45569e42db98a8a621f7558927d28141f729c77568b08f09d3` |
-| 6 | `lemma` | [sin_inv_xSeq](../../../../GeneralTopology/TopologistsSineCurvePublic.lean/declarations/sin-inv-xseq.md) | 50 | `result-track:e0af00a87799ab8bca0455062eba77bd7da282bc6ebc371f2f8acb4799d4d273` |
-| 7 | `lemma` | [xSeq_tendsto](../../../../GeneralTopology/TopologistsSineCurvePublic.lean/declarations/xseq-tendsto.md) | 53 | `result-track:dcf775eae44d599c768b6babba01226aa8226e1eb89cd26d4acf11e015cdbc4b` |
-| 8 | `lemma` | [closure_S](../../../../GeneralTopology/TopologistsSineCurvePublic.lean/declarations/closure-s.md) | 64 | `result-track:852e980af9cb822ed17a7dee2199ade01dccba9717eb3bafa773cc918c5af9f8` |
-| 9 | `lemma` | [isClosed_T](../../../../GeneralTopology/TopologistsSineCurvePublic.lean/declarations/isclosed-t.md) | 102 | `result-track:bffc215de2b87324190d7bb399d3da2fd053eb62fb1a8354aeb9a3764651cbd1` |
-| 10 | `theorem` | [isConnected_T](../../../../GeneralTopology/TopologistsSineCurvePublic.lean/declarations/isconnected-t.md) | 110 | `result-track:03d55d6786fe054958a944ae90de49b3f61e414f96c095246025e955859eb3c8` |
-| 11 | `lemma` | [zero_mem_T](../../../../GeneralTopology/TopologistsSineCurvePublic.lean/declarations/zero-mem-t.md) | 119 | `result-track:c051dd1f271379d6ad673b822d2da4b5d537712e97ca0da9f412ea4858ff94cd` |
-| 12 | `def` | [w](../../../../GeneralTopology/TopologistsSineCurvePublic.lean/declarations/w.md) | 124 | `declaration-track:370420e2ab090156671cdcf2390cc8087b9892c7dcb0bef8f2403f694192ac07` |
-| 13 | `lemma` | [w_mem_T](../../../../GeneralTopology/TopologistsSineCurvePublic.lean/declarations/w-mem-t.md) | 126 | `result-track:bef503b550906a6e70187b6d039a75a55a8fabfc23e9e9e7be7676ce445d3edb` |
-| 14 | `lemma` | [norm_ge_abs_snd](../../../../GeneralTopology/TopologistsSineCurvePublic.lean/declarations/norm-ge-abs-snd.md) | 128 | `result-track:fa94cdcd90906c1d8cc8a32f97d96654b6f7317ab0aafd896cf0afd5bf860d85` |
-| 15 | `lemma` | [exists_unitInterval_gt](../../../../GeneralTopology/TopologistsSineCurvePublic.lean/declarations/exists-unitinterval-gt.md) | 130 | `result-track:451284bf01c30ff472ca04a30430b7678f7ad97a86d8d85af8abd16bd0ef11e1` |
-| 16 | `lemma` | [mem_S_of_x_pos](../../../../GeneralTopology/TopologistsSineCurvePublic.lean/declarations/mem-s-of-x-pos.md) | 143 | `result-track:24d44bfe87b71b64c3c45fd7699991953ffc3855abc9884437fd748b7c1bd18c` |
-| 17 | `lemma` | [exists_mem_Ioc_of_y](../../../../GeneralTopology/TopologistsSineCurvePublic.lean/declarations/exists-mem-ioc-of-y.md) | 151 | `result-track:ba4a4f4ef352fdfc2ef8609be4f6c876f980df5026143bfcb01fa4325de347a1` |
-| 18 | `theorem` | [not_isPathConnected_T](../../../../GeneralTopology/TopologistsSineCurvePublic.lean/declarations/not-ispathconnected-t.md) | 159 | `result-track:d9e985ace870297e0e75afbb4667c70ab3b3a0a004ed206fb5e4b913f676958a` |
+| 1 | `def` | [S](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologistsSineCurvePublic.lean/declarations/s.md) | 34 | `declaration-track:658f6f9610cedb9ce34c5770018cbc245b3488bdc29e4f2270a5042b505b6cb9` |
+| 2 | `def` | [Z](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologistsSineCurvePublic.lean/declarations/z.md) | 38 | `declaration-track:55baef32b39d2ee9ca1b4c0bcb93716cae11f84eb4accc45e3a599905376c4dd` |
+| 3 | `def` | [T](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologistsSineCurvePublic.lean/declarations/t.md) | 41 | `declaration-track:a59c1b774b8ed5d3d47ce8fa0e01c0eb013948471606dceb9cda16521c55d5ef` |
+| 4 | `def` | [xSeq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologistsSineCurvePublic.lean/declarations/xseq.md) | 44 | `declaration-track:1c90dffa29e601aef07de6cacca98073088f7caa1a6312d157e08b74b8c60ee8` |
+| 5 | `lemma` | [xSeq_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologistsSineCurvePublic.lean/declarations/xseq-pos.md) | 46 | `result-track:10c6f8559a202f45569e42db98a8a621f7558927d28141f729c77568b08f09d3` |
+| 6 | `lemma` | [sin_inv_xSeq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologistsSineCurvePublic.lean/declarations/sin-inv-xseq.md) | 50 | `result-track:e0af00a87799ab8bca0455062eba77bd7da282bc6ebc371f2f8acb4799d4d273` |
+| 7 | `lemma` | [xSeq_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologistsSineCurvePublic.lean/declarations/xseq-tendsto.md) | 53 | `result-track:dcf775eae44d599c768b6babba01226aa8226e1eb89cd26d4acf11e015cdbc4b` |
+| 8 | `lemma` | [closure_S](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologistsSineCurvePublic.lean/declarations/closure-s.md) | 64 | `result-track:852e980af9cb822ed17a7dee2199ade01dccba9717eb3bafa773cc918c5af9f8` |
+| 9 | `lemma` | [isClosed_T](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologistsSineCurvePublic.lean/declarations/isclosed-t.md) | 102 | `result-track:bffc215de2b87324190d7bb399d3da2fd053eb62fb1a8354aeb9a3764651cbd1` |
+| 10 | `theorem` | [isConnected_T](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologistsSineCurvePublic.lean/declarations/isconnected-t.md) | 110 | `result-track:03d55d6786fe054958a944ae90de49b3f61e414f96c095246025e955859eb3c8` |
+| 11 | `lemma` | [zero_mem_T](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologistsSineCurvePublic.lean/declarations/zero-mem-t.md) | 119 | `result-track:c051dd1f271379d6ad673b822d2da4b5d537712e97ca0da9f412ea4858ff94cd` |
+| 12 | `def` | [w](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologistsSineCurvePublic.lean/declarations/w.md) | 124 | `declaration-track:370420e2ab090156671cdcf2390cc8087b9892c7dcb0bef8f2403f694192ac07` |
+| 13 | `lemma` | [w_mem_T](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologistsSineCurvePublic.lean/declarations/w-mem-t.md) | 126 | `result-track:bef503b550906a6e70187b6d039a75a55a8fabfc23e9e9e7be7676ce445d3edb` |
+| 14 | `lemma` | [norm_ge_abs_snd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologistsSineCurvePublic.lean/declarations/norm-ge-abs-snd.md) | 128 | `result-track:fa94cdcd90906c1d8cc8a32f97d96654b6f7317ab0aafd896cf0afd5bf860d85` |
+| 15 | `lemma` | [exists_unitInterval_gt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologistsSineCurvePublic.lean/declarations/exists-unitinterval-gt.md) | 130 | `result-track:451284bf01c30ff472ca04a30430b7678f7ad97a86d8d85af8abd16bd0ef11e1` |
+| 16 | `lemma` | [mem_S_of_x_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologistsSineCurvePublic.lean/declarations/mem-s-of-x-pos.md) | 143 | `result-track:24d44bfe87b71b64c3c45fd7699991953ffc3855abc9884437fd748b7c1bd18c` |
+| 17 | `lemma` | [exists_mem_Ioc_of_y](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologistsSineCurvePublic.lean/declarations/exists-mem-ioc-of-y.md) | 151 | `result-track:ba4a4f4ef352fdfc2ef8609be4f6c876f980df5026143bfcb01fa4325de347a1` |
+| 18 | `theorem` | [not_isPathConnected_T](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologistsSineCurvePublic.lean/declarations/not-ispathconnected-t.md) | 159 | `result-track:d9e985ace870297e0e75afbb4667c70ab3b3a0a004ed206fb5e4b913f676958a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

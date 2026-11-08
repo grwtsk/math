@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/DerangementsFiniteNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/DerangementsFiniteNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DerangementsFiniteNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DerangementsFiniteNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,18 +60,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../Combinatorics/DerangementsFiniteNamespaced.lean/declarations/instance.md) | 41 | `declaration-track:ef69ec691b447e5b9d1e1fac2f99466a2530f51393268027de7cab0abf772ce2` |
-| 2 | `instance` | [(anonymous)](../../../../Combinatorics/DerangementsFiniteNamespaced.lean/declarations/instance-source-edition-2.md) | 44 | `declaration-track:fb5bc191d69be7f9284c4b08124bd79cb99b5263c9969cf0ee1c1a021bf9ba8c` |
-| 3 | `theorem` | [card_derangements_invariant](../../../../Combinatorics/DerangementsFiniteNamespaced.lean/declarations/card-derangements-invariant.md) | 46 | `result-track:00b9a9b0329aa2c7e8d0dfc40032e3aad7416cce5fb36811900fcd4a58b0149b` |
-| 4 | `theorem` | [card_derangements_fin_add_two](../../../../Combinatorics/DerangementsFiniteNamespaced.lean/declarations/card-derangements-fin-add-two.md) | 50 | `result-track:d8c73884ecf3184dcda9f62ea2e12cd16f66efd0ff3022beab6fb8772f8c3cf4` |
-| 5 | `def` | [numDerangements](../../../../Combinatorics/DerangementsFiniteNamespaced.lean/declarations/numderangements.md) | 72 | `declaration-track:98b13107082d7ee28af183d4bc5460a1162295fc091adfa2af737c409b4d6502` |
-| 6 | `theorem` | [numDerangements_zero](../../../../Combinatorics/DerangementsFiniteNamespaced.lean/declarations/numderangements-zero.md) | 78 | `result-track:6b4b8b1f4306ed22a037947266546ba93760dc2ce651608f0515140de1e80d5a` |
-| 7 | `theorem` | [numDerangements_one](../../../../Combinatorics/DerangementsFiniteNamespaced.lean/declarations/numderangements-one.md) | 82 | `result-track:9dfe01a00b08e4e20963d0e14030f6aaedf7897d6a5899b770a3fb22ac184491` |
-| 8 | `theorem` | [numDerangements_add_two](../../../../Combinatorics/DerangementsFiniteNamespaced.lean/declarations/numderangements-add-two.md) | 85 | `result-track:3bc9ae9b9a6bf700a94c6041da1a148a017609abca9323f4520819e6b745679c` |
-| 9 | `theorem` | [numDerangements_succ](../../../../Combinatorics/DerangementsFiniteNamespaced.lean/declarations/numderangements-succ.md) | 89 | `result-track:5ef79a47d69d0bf839a115547fefcb377909b75ee3d67ffb107c4463916ed4f6` |
-| 10 | `theorem` | [card_derangements_fin_eq_numDerangements](../../../../Combinatorics/DerangementsFiniteNamespaced.lean/declarations/card-derangements-fin-eq-numderangements.md) | 97 | `result-track:b372c34467c6b1571e1937de69d66de66e4b6c11604c6d1a23bb190e64f61d70` |
-| 11 | `theorem` | [card_derangements_eq_numDerangements](../../../../Combinatorics/DerangementsFiniteNamespaced.lean/declarations/card-derangements-eq-numderangements.md) | 108 | `result-track:5225f93e34345a850ca8c923f0130f1a859dcf06b2a004dd525b2ce592c1b9b1` |
-| 12 | `theorem` | [numDerangements_sum](../../../../Combinatorics/DerangementsFiniteNamespaced.lean/declarations/numderangements-sum.md) | 113 | `result-track:571df610b28559a482746d4a8cb4ecf01673d8260caa2dca061ff51119e5e872` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DerangementsFiniteNamespaced.lean/declarations/instance.md) | 41 | `declaration-track:ef69ec691b447e5b9d1e1fac2f99466a2530f51393268027de7cab0abf772ce2` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DerangementsFiniteNamespaced.lean/declarations/instance-source-edition-2.md) | 44 | `declaration-track:fb5bc191d69be7f9284c4b08124bd79cb99b5263c9969cf0ee1c1a021bf9ba8c` |
+| 3 | `theorem` | [card_derangements_invariant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DerangementsFiniteNamespaced.lean/declarations/card-derangements-invariant.md) | 46 | `result-track:00b9a9b0329aa2c7e8d0dfc40032e3aad7416cce5fb36811900fcd4a58b0149b` |
+| 4 | `theorem` | [card_derangements_fin_add_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DerangementsFiniteNamespaced.lean/declarations/card-derangements-fin-add-two.md) | 50 | `result-track:d8c73884ecf3184dcda9f62ea2e12cd16f66efd0ff3022beab6fb8772f8c3cf4` |
+| 5 | `def` | [numDerangements](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DerangementsFiniteNamespaced.lean/declarations/numderangements.md) | 72 | `declaration-track:98b13107082d7ee28af183d4bc5460a1162295fc091adfa2af737c409b4d6502` |
+| 6 | `theorem` | [numDerangements_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DerangementsFiniteNamespaced.lean/declarations/numderangements-zero.md) | 78 | `result-track:6b4b8b1f4306ed22a037947266546ba93760dc2ce651608f0515140de1e80d5a` |
+| 7 | `theorem` | [numDerangements_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DerangementsFiniteNamespaced.lean/declarations/numderangements-one.md) | 82 | `result-track:9dfe01a00b08e4e20963d0e14030f6aaedf7897d6a5899b770a3fb22ac184491` |
+| 8 | `theorem` | [numDerangements_add_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DerangementsFiniteNamespaced.lean/declarations/numderangements-add-two.md) | 85 | `result-track:3bc9ae9b9a6bf700a94c6041da1a148a017609abca9323f4520819e6b745679c` |
+| 9 | `theorem` | [numDerangements_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DerangementsFiniteNamespaced.lean/declarations/numderangements-succ.md) | 89 | `result-track:5ef79a47d69d0bf839a115547fefcb377909b75ee3d67ffb107c4463916ed4f6` |
+| 10 | `theorem` | [card_derangements_fin_eq_numDerangements](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DerangementsFiniteNamespaced.lean/declarations/card-derangements-fin-eq-numderangements.md) | 97 | `result-track:b372c34467c6b1571e1937de69d66de66e4b6c11604c6d1a23bb190e64f61d70` |
+| 11 | `theorem` | [card_derangements_eq_numDerangements](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DerangementsFiniteNamespaced.lean/declarations/card-derangements-eq-numderangements.md) | 108 | `result-track:5225f93e34345a850ca8c923f0130f1a859dcf06b2a004dd525b2ce592c1b9b1` |
+| 12 | `theorem` | [numDerangements_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DerangementsFiniteNamespaced.lean/declarations/numderangements-sum.md) | 113 | `result-track:571df610b28559a482746d4a8cb4ecf01673d8260caa2dca061ff51119e5e872` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

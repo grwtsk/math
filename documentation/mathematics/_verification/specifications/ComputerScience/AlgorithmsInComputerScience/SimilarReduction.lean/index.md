@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/SimilarReduction.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/SimilarReduction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SimilarReduction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SimilarReduction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [SimilarityMetric](../../../../../ComputerScience/AlgorithmsInComputerScience/SimilarReduction.lean/declarations/similaritymetric.md) | 8 | `declaration-track:c23503056defa686fd38de2eefb99a4e56c0ec74637b1d45da82ae4926bbba72` |
-| 2 | `inductive` | [PaddingPolicyDescriptor](../../../../../ComputerScience/AlgorithmsInComputerScience/SimilarReduction.lean/declarations/paddingpolicydescriptor.md) | 14 | `declaration-track:9edec80959697908285667269dee71057ddbcbeac672092940cd2b308989032b` |
-| 3 | `inductive` | [TiePolicy](../../../../../ComputerScience/AlgorithmsInComputerScience/SimilarReduction.lean/declarations/tiepolicy.md) | 20 | `declaration-track:700cb16f42925544ac045bfcf9647eda7a51b567eab38e0fb1293c27b23fa975` |
-| 4 | `structure` | [MostSimilarReductionAttachment](../../../../../ComputerScience/AlgorithmsInComputerScience/SimilarReduction.lean/declarations/mostsimilarreductionattachment.md) | 26 | `declaration-track:e366df031a034e7652b23ffd2ecfc7cf4752ed9f4ae7e827a8535aea7e420700` |
-| 5 | `theorem` | [determinantFiber_attachment_uses_similarity](../../../../../ComputerScience/AlgorithmsInComputerScience/SimilarReduction.lean/declarations/determinantfiber-attachment-uses-similarity.md) | 36 | `result-track:0e875735bfdac5a80961b68b3053071f6c0bce760f198a6722a930ed3df76703` |
-| 6 | `theorem` | [mostSimilarReduction_boundary_visible](../../../../../ComputerScience/AlgorithmsInComputerScience/SimilarReduction.lean/declarations/mostsimilarreduction-boundary-visible.md) | 41 | `result-track:22490c42ae62864a0e7e61878570e91612015509d0d3d78e9d5f972a8b9abfe8` |
+| 1 | `inductive` | [SimilarityMetric](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SimilarReduction.lean/declarations/similaritymetric.md) | 8 | `declaration-track:c23503056defa686fd38de2eefb99a4e56c0ec74637b1d45da82ae4926bbba72` |
+| 2 | `inductive` | [PaddingPolicyDescriptor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SimilarReduction.lean/declarations/paddingpolicydescriptor.md) | 14 | `declaration-track:9edec80959697908285667269dee71057ddbcbeac672092940cd2b308989032b` |
+| 3 | `inductive` | [TiePolicy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SimilarReduction.lean/declarations/tiepolicy.md) | 20 | `declaration-track:700cb16f42925544ac045bfcf9647eda7a51b567eab38e0fb1293c27b23fa975` |
+| 4 | `structure` | [MostSimilarReductionAttachment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SimilarReduction.lean/declarations/mostsimilarreductionattachment.md) | 26 | `declaration-track:e366df031a034e7652b23ffd2ecfc7cf4752ed9f4ae7e827a8535aea7e420700` |
+| 5 | `theorem` | [determinantFiber_attachment_uses_similarity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SimilarReduction.lean/declarations/determinantfiber-attachment-uses-similarity.md) | 36 | `result-track:0e875735bfdac5a80961b68b3053071f6c0bce760f198a6722a930ed3df76703` |
+| 6 | `theorem` | [mostSimilarReduction_boundary_visible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SimilarReduction.lean/declarations/mostsimilarreduction-boundary-visible.md) | 41 | `result-track:22490c42ae62864a0e7e61878570e91612015509d0d3d78e9d5f972a8b9abfe8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

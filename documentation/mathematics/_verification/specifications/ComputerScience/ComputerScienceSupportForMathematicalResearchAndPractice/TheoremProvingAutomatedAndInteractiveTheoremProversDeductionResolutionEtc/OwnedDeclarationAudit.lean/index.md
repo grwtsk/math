@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/OwnedDeclarationAudit.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/OwnedDeclarationAudit.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/OwnedDeclarationAudit.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/OwnedDeclarationAudit.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mathTrustProjectRuntimeProfiles](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/OwnedDeclarationAudit.lean/declarations/mathtrustprojectruntimeprofiles.md) | 12 | `declaration-track:67b7fcf95ad9ad4059e9afa70a75dfc5cf6a5198d0f1a2f884de2f902ab99a04` |
-| 2 | `def` | [mathTrustFixtureRuntimeProfiles](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/OwnedDeclarationAudit.lean/declarations/mathtrustfixtureruntimeprofiles.md) | 30 | `declaration-track:9d4dcf3142e31ae06547f69226953278ea349306d629d9247c24436ce679c0de` |
-| 3 | `elab` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/OwnedDeclarationAudit.lean/declarations/elab.md) | 44 | `declaration-track:c86bdd4d86b2f4db4d2487e2e2344548cf6f2743717a60c35122d9d7cdfc583a` |
+| 1 | `def` | [mathTrustProjectRuntimeProfiles](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/OwnedDeclarationAudit.lean/declarations/mathtrustprojectruntimeprofiles.md) | 12 | `declaration-track:67b7fcf95ad9ad4059e9afa70a75dfc5cf6a5198d0f1a2f884de2f902ab99a04` |
+| 2 | `def` | [mathTrustFixtureRuntimeProfiles](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/OwnedDeclarationAudit.lean/declarations/mathtrustfixtureruntimeprofiles.md) | 30 | `declaration-track:9d4dcf3142e31ae06547f69226953278ea349306d629d9247c24436ce679c0de` |
+| 3 | `elab` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/OwnedDeclarationAudit.lean/declarations/elab.md) | 44 | `declaration-track:c86bdd4d86b2f4db4d2487e2e2344548cf6f2743717a60c35122d9d7cdfc583a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

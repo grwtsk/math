@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AuditNamespacedFourth.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AuditNamespacedFourth.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AuditNamespacedFourth.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AuditNamespacedFourth.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AuditNamespacedFourth.lean/declarations/example.md) | 28 | `declaration-track:0ce8bb3820280e81247e27ad4f0f54147894eb19c58cb6f4357e25db59e014ae` |
-| 2 | `theorem` | [fourth](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AuditNamespacedFourth.lean/declarations/fourth.md) | 37 | `result-track:2e446ab76e936f41ab29a58efda59c10f3afc2a80ef9c4d0ca99f61f4d1586f4` |
-| 3 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AuditNamespacedFourth.lean/declarations/example-source-edition-2.md) | 46 | `declaration-track:99a86500ca573bb3020a665e85d57f8d0f3cebf0f34f95691e67d4433757b34a` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AuditNamespacedFourth.lean/declarations/example.md) | 28 | `declaration-track:0ce8bb3820280e81247e27ad4f0f54147894eb19c58cb6f4357e25db59e014ae` |
+| 2 | `theorem` | [fourth](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AuditNamespacedFourth.lean/declarations/fourth.md) | 37 | `result-track:2e446ab76e936f41ab29a58efda59c10f3afc2a80ef9c4d0ca99f61f4d1586f4` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AuditNamespacedFourth.lean/declarations/example-source-edition-2.md) | 46 | `declaration-track:99a86500ca573bb3020a665e85d57f8d0f3cebf0f34f95691e67d4433757b34a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

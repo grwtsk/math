@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/IsPrimaryNamespacedPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/IsPrimaryNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsPrimaryNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsPrimaryNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [IsPrimary](../../../../CommutativeAlgebra/IsPrimaryNamespacedPublic.lean/declarations/isprimary.md) | 60 | `declaration-track:940c69c90953726af7394f5dc0c2466181b86fe6798ae80111010a1a9d4e3ef8` |
-| 2 | `lemma` | [IsPrimary.ne_top](../../../../CommutativeAlgebra/IsPrimaryNamespacedPublic.lean/declarations/isprimary-ne-top.md) | 65 | `result-track:4872cbd0dee23877985523ce98afdde2c86dc1bc42ca9a1a2de1aabf2e272f46` |
-| 3 | `lemma` | [IsPrimary.mem_or_mem](../../../../CommutativeAlgebra/IsPrimaryNamespacedPublic.lean/declarations/isprimary-mem-or-mem.md) | 67 | `result-track:7ce9a19e38f8d2cfb62165144c06b27351de8d717a3aecb5afbeedae1a850f02` |
-| 4 | `lemma` | [IsPrimary.inf](../../../../CommutativeAlgebra/IsPrimaryNamespacedPublic.lean/declarations/isprimary-inf.md) | 71 | `result-track:dfdb552d0f02beef8b30a0c7868de46ad412e152b7eba2886ae31339be609857` |
-| 5 | `lemma` | [isPrimary_finsetInf](../../../../CommutativeAlgebra/IsPrimaryNamespacedPublic.lean/declarations/isprimary-finsetinf.md) | 82 | `result-track:f2072d0ccdf6ddf6e541610b34786eda80064151f7027b5b8902c96ad144e077` |
-| 6 | `theorem` | [IsPrimary.isPrime_radical_colon](../../../../CommutativeAlgebra/IsPrimaryNamespacedPublic.lean/declarations/isprimary-isprime-radical-colon.md) | 100 | `result-track:b60041d7d1b9b2875c54178b1e812a2e279dc6a6b2d518f3af2fa436bca3b97c` |
-| 7 | `theorem` | [IsPrimary.radical_colon_singleton_of_notMem](../../../../CommutativeAlgebra/IsPrimaryNamespacedPublic.lean/declarations/isprimary-radical-colon-singleton-of-notmem.md) | 107 | `result-track:9e1d1d8b50eb4de788060b5f90e87602339c94311bdfda40644cdd3d89172d66` |
-| 8 | `theorem` | [IsPrimary.radical_colon_singleton_eq_ite](../../../../CommutativeAlgebra/IsPrimaryNamespacedPublic.lean/declarations/isprimary-radical-colon-singleton-eq-ite.md) | 113 | `result-track:ca614cb906698d3b1cc201f14c9645a4b83bbeb75b571527f6cdc61feead2877` |
-| 9 | `lemma` | [isPrimary_iff_zero_divisor_quotient_imp_nilpotent_smul](../../../../CommutativeAlgebra/IsPrimaryNamespacedPublic.lean/declarations/isprimary-iff-zero-divisor-quotient-imp-nilpotent-smul.md) | 125 | `result-track:5b49337415430dd3fb50afa0420f6fac309ee48780a9feec8c7daf4df6f844ad` |
+| 1 | `def` | [IsPrimary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsPrimaryNamespacedPublic.lean/declarations/isprimary.md) | 60 | `declaration-track:940c69c90953726af7394f5dc0c2466181b86fe6798ae80111010a1a9d4e3ef8` |
+| 2 | `lemma` | [IsPrimary.ne_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsPrimaryNamespacedPublic.lean/declarations/isprimary-ne-top.md) | 65 | `result-track:4872cbd0dee23877985523ce98afdde2c86dc1bc42ca9a1a2de1aabf2e272f46` |
+| 3 | `lemma` | [IsPrimary.mem_or_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsPrimaryNamespacedPublic.lean/declarations/isprimary-mem-or-mem.md) | 67 | `result-track:7ce9a19e38f8d2cfb62165144c06b27351de8d717a3aecb5afbeedae1a850f02` |
+| 4 | `lemma` | [IsPrimary.inf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsPrimaryNamespacedPublic.lean/declarations/isprimary-inf.md) | 71 | `result-track:dfdb552d0f02beef8b30a0c7868de46ad412e152b7eba2886ae31339be609857` |
+| 5 | `lemma` | [isPrimary_finsetInf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsPrimaryNamespacedPublic.lean/declarations/isprimary-finsetinf.md) | 82 | `result-track:f2072d0ccdf6ddf6e541610b34786eda80064151f7027b5b8902c96ad144e077` |
+| 6 | `theorem` | [IsPrimary.isPrime_radical_colon](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsPrimaryNamespacedPublic.lean/declarations/isprimary-isprime-radical-colon.md) | 100 | `result-track:b60041d7d1b9b2875c54178b1e812a2e279dc6a6b2d518f3af2fa436bca3b97c` |
+| 7 | `theorem` | [IsPrimary.radical_colon_singleton_of_notMem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsPrimaryNamespacedPublic.lean/declarations/isprimary-radical-colon-singleton-of-notmem.md) | 107 | `result-track:9e1d1d8b50eb4de788060b5f90e87602339c94311bdfda40644cdd3d89172d66` |
+| 8 | `theorem` | [IsPrimary.radical_colon_singleton_eq_ite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsPrimaryNamespacedPublic.lean/declarations/isprimary-radical-colon-singleton-eq-ite.md) | 113 | `result-track:ca614cb906698d3b1cc201f14c9645a4b83bbeb75b571527f6cdc61feead2877` |
+| 9 | `lemma` | [isPrimary_iff_zero_divisor_quotient_imp_nilpotent_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsPrimaryNamespacedPublic.lean/declarations/isprimary-iff-zero-divisor-quotient-imp-nilpotent-smul.md) | 125 | `result-track:5b49337415430dd3fb50afa0420f6fac309ee48780a9feec8c7daf4df6f844ad` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

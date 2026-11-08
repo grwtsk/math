@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/SpecialFunctionsInnerNamespacedAligned.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/SpecialFunctionsInnerNamespacedAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/SpecialFunctionsInnerNamespacedAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/SpecialFunctionsInnerNamespacedAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Measurable.inner](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/SpecialFunctionsInnerNamespacedAligned.lean/declarations/measurable-inner.md) | 31 | `result-track:2538e45f61b571effaafe6848fc53258f052a024eba31fce92f136cd0f7b94f0` |
-| 2 | `theorem` | [Measurable.const_inner](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/SpecialFunctionsInnerNamespacedAligned.lean/declarations/measurable-const-inner.md) | 38 | `result-track:f39e5ccdaafc1002b692e0679a38990467bb2238029df1f0114c6c06e5487004` |
-| 3 | `theorem` | [Measurable.inner_const](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/SpecialFunctionsInnerNamespacedAligned.lean/declarations/measurable-inner-const.md) | 44 | `result-track:1af5dc411f452d6dd78c27f6e6ef3552e7dd0b598e92b9b2f84ffcc9f2d6043d` |
-| 4 | `theorem` | [AEMeasurable.inner](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/SpecialFunctionsInnerNamespacedAligned.lean/declarations/aemeasurable-inner.md) | 50 | `result-track:98f00d521a83804cdf10d290d3dd25c156b994e3ffece22c00ff931ed11d2457` |
-| 5 | `theorem` | [AEMeasurable.const_inner](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/SpecialFunctionsInnerNamespacedAligned.lean/declarations/aemeasurable-const-inner.md) | 61 | `result-track:d41da9358ae0603df10b3e817ae2fc73dd654f894198486d2f910965f830cb02` |
-| 6 | `theorem` | [AEMeasurable.inner_const](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/SpecialFunctionsInnerNamespacedAligned.lean/declarations/aemeasurable-inner-const.md) | 69 | `result-track:90541ca11c6795186eb4edcef8e6316d7da2fc57daf2dde38a9768eee6050e73` |
+| 1 | `theorem` | [Measurable.inner](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/SpecialFunctionsInnerNamespacedAligned.lean/declarations/measurable-inner.md) | 31 | `result-track:2538e45f61b571effaafe6848fc53258f052a024eba31fce92f136cd0f7b94f0` |
+| 2 | `theorem` | [Measurable.const_inner](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/SpecialFunctionsInnerNamespacedAligned.lean/declarations/measurable-const-inner.md) | 38 | `result-track:f39e5ccdaafc1002b692e0679a38990467bb2238029df1f0114c6c06e5487004` |
+| 3 | `theorem` | [Measurable.inner_const](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/SpecialFunctionsInnerNamespacedAligned.lean/declarations/measurable-inner-const.md) | 44 | `result-track:1af5dc411f452d6dd78c27f6e6ef3552e7dd0b598e92b9b2f84ffcc9f2d6043d` |
+| 4 | `theorem` | [AEMeasurable.inner](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/SpecialFunctionsInnerNamespacedAligned.lean/declarations/aemeasurable-inner.md) | 50 | `result-track:98f00d521a83804cdf10d290d3dd25c156b994e3ffece22c00ff931ed11d2457` |
+| 5 | `theorem` | [AEMeasurable.const_inner](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/SpecialFunctionsInnerNamespacedAligned.lean/declarations/aemeasurable-const-inner.md) | 61 | `result-track:d41da9358ae0603df10b3e817ae2fc73dd654f894198486d2f910965f830cb02` |
+| 6 | `theorem` | [AEMeasurable.inner_const](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/SpecialFunctionsInnerNamespacedAligned.lean/declarations/aemeasurable-inner-const.md) | 69 | `result-track:90541ca11c6795186eb4edcef8e6316d7da2fc57daf2dde38a9768eee6050e73` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

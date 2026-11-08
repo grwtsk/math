@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/RemovalNamespaced.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/RemovalNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/RemovalNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/RemovalNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,18 +61,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [triangleRemovalBound](../../../../../Combinatorics/GraphTheory/RemovalNamespaced.lean/declarations/triangleremovalbound.md) | 41 | `declaration-track:5e14e1343cfb501ffcd363e283c80ccca8ce426e974028c84383fd3cee6d1656` |
-| 2 | `lemma` | [triangleRemovalBound_pos](../../../../../Combinatorics/GraphTheory/RemovalNamespaced.lean/declarations/triangleremovalbound-pos.md) | 44 | `result-track:50f6206f93b156d90cf93bf38d2bc4b2221a9fda8bcad90436046a8db5baee43` |
-| 3 | `lemma` | [triangleRemovalBound_nonpos](../../../../../Combinatorics/GraphTheory/RemovalNamespaced.lean/declarations/triangleremovalbound-nonpos.md) | 49 | `result-track:8f77b9eb71a82cf133d07f55c26ff64ac7bca17e16c298434155d058c723b196` |
-| 4 | `lemma` | [triangleRemovalBound_mul_cube_lt](../../../../../Combinatorics/GraphTheory/RemovalNamespaced.lean/declarations/triangleremovalbound-mul-cube-lt.md) | 52 | `result-track:6a68e2f536abf94799cf73815ccc919016b3c4d6ad86e4c7cee3ab35a93d5820` |
-| 5 | `lemma` | [aux](../../../../../Combinatorics/GraphTheory/RemovalNamespaced.lean/declarations/aux.md) | 59 | `result-track:731fa81b477217e26cb79a2d18884cfab1efff346b59b611fbc3108086909fe0` |
-| 6 | `lemma` | [card_bound](../../../../../Combinatorics/GraphTheory/RemovalNamespaced.lean/declarations/card-bound.md) | 65 | `result-track:c9007f18793c057eef087efd6e7e9cfd1211ae64b24e8aba6bc97f9828440e6f` |
-| 7 | `lemma` | [triangle_removal_aux](../../../../../Combinatorics/GraphTheory/RemovalNamespaced.lean/declarations/triangle-removal-aux.md) | 76 | `result-track:509b9d992913f852b979b8152efecbe6b688a73a6fd2bba9267093f6c31e7d96` |
-| 8 | `lemma` | [regularityReduced_edges_card_aux](../../../../../Combinatorics/GraphTheory/RemovalNamespaced.lean/declarations/regularityreduced-edges-card-aux.md) | 104 | `result-track:9cdb2780736083cc12ccfcdf99f81bfdf5abbea632676abd331b61aa33aad2fb` |
-| 9 | `lemma` | [FarFromTriangleFree.le_card_cliqueFinset](../../../../../Combinatorics/GraphTheory/RemovalNamespaced.lean/declarations/farfromtrianglefree-le-card-cliquefinset.md) | 132 | `result-track:2bc5547310fef4f07469b7138a19c55801218d14ad7fe8ffdf72177d964cc00b` |
-| 10 | `lemma` | [triangle_removal](../../../../../Combinatorics/GraphTheory/RemovalNamespaced.lean/declarations/triangle-removal.md) | 156 | `result-track:027a39c07c6c43e82d8626cd74ffc6175459cf3de0bfdd66b8e1547afb7d6483` |
-| 11 | `def` | [evalTriangleRemovalBound](../../../../../Combinatorics/GraphTheory/RemovalNamespaced.lean/declarations/evaltriangleremovalbound.md) | 174 | `declaration-track:ee470ffa118f74d2e33a6c3eee545eacf6eca92a62ea86b8fd07ec75f122ae6d` |
-| 12 | `example` | [(anonymous)](../../../../../Combinatorics/GraphTheory/RemovalNamespaced.lean/declarations/example.md) | 183 | `declaration-track:4d30850fb37bc66c7d604eb7eaa49a69f1dcf7a1994492b0a20b2cf830afe4da` |
+| 1 | `def` | [triangleRemovalBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/RemovalNamespaced.lean/declarations/triangleremovalbound.md) | 41 | `declaration-track:5e14e1343cfb501ffcd363e283c80ccca8ce426e974028c84383fd3cee6d1656` |
+| 2 | `lemma` | [triangleRemovalBound_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/RemovalNamespaced.lean/declarations/triangleremovalbound-pos.md) | 44 | `result-track:50f6206f93b156d90cf93bf38d2bc4b2221a9fda8bcad90436046a8db5baee43` |
+| 3 | `lemma` | [triangleRemovalBound_nonpos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/RemovalNamespaced.lean/declarations/triangleremovalbound-nonpos.md) | 49 | `result-track:8f77b9eb71a82cf133d07f55c26ff64ac7bca17e16c298434155d058c723b196` |
+| 4 | `lemma` | [triangleRemovalBound_mul_cube_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/RemovalNamespaced.lean/declarations/triangleremovalbound-mul-cube-lt.md) | 52 | `result-track:6a68e2f536abf94799cf73815ccc919016b3c4d6ad86e4c7cee3ab35a93d5820` |
+| 5 | `lemma` | [aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/RemovalNamespaced.lean/declarations/aux.md) | 59 | `result-track:731fa81b477217e26cb79a2d18884cfab1efff346b59b611fbc3108086909fe0` |
+| 6 | `lemma` | [card_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/RemovalNamespaced.lean/declarations/card-bound.md) | 65 | `result-track:c9007f18793c057eef087efd6e7e9cfd1211ae64b24e8aba6bc97f9828440e6f` |
+| 7 | `lemma` | [triangle_removal_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/RemovalNamespaced.lean/declarations/triangle-removal-aux.md) | 76 | `result-track:509b9d992913f852b979b8152efecbe6b688a73a6fd2bba9267093f6c31e7d96` |
+| 8 | `lemma` | [regularityReduced_edges_card_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/RemovalNamespaced.lean/declarations/regularityreduced-edges-card-aux.md) | 104 | `result-track:9cdb2780736083cc12ccfcdf99f81bfdf5abbea632676abd331b61aa33aad2fb` |
+| 9 | `lemma` | [FarFromTriangleFree.le_card_cliqueFinset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/RemovalNamespaced.lean/declarations/farfromtrianglefree-le-card-cliquefinset.md) | 132 | `result-track:2bc5547310fef4f07469b7138a19c55801218d14ad7fe8ffdf72177d964cc00b` |
+| 10 | `lemma` | [triangle_removal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/RemovalNamespaced.lean/declarations/triangle-removal.md) | 156 | `result-track:027a39c07c6c43e82d8626cd74ffc6175459cf3de0bfdd66b8e1547afb7d6483` |
+| 11 | `def` | [evalTriangleRemovalBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/RemovalNamespaced.lean/declarations/evaltriangleremovalbound.md) | 174 | `declaration-track:ee470ffa118f74d2e33a6c3eee545eacf6eca92a62ea86b8fd07ec75f122ae6d` |
+| 12 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/RemovalNamespaced.lean/declarations/example.md) | 183 | `declaration-track:4d30850fb37bc66c7d604eb7eaa49a69f1dcf7a1994492b0a20b2cf830afe4da` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

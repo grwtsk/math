@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceBoundaryBulkGrowth.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceBoundaryBulkGrowth.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceBoundaryBulkGrowth.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceBoundaryBulkGrowth.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [bulkSourceContinuum](../../../../MeasureAndIntegration/SourceBoundaryBulkGrowth.lean/declarations/bulksourcecontinuum.md) | 14 | `declaration-track:a97fca556496a9737ea5d7a72ae35a26295563a6dfb8c796ce8986b51eef3272` |
-| 2 | `theorem` | [pzero_window_bound](../../../../MeasureAndIntegration/SourceBoundaryBulkGrowth.lean/declarations/pzero-window-bound.md) | 18 | `result-track:93d71163b1d71447cfe6a98964294e0b6ba219d63d6f9290e3d1e414a6874640` |
-| 3 | `theorem` | [bulk_source_continuum_growth](../../../../MeasureAndIntegration/SourceBoundaryBulkGrowth.lean/declarations/bulk-source-continuum-growth.md) | 37 | `result-track:b4c8d282392b1e3987a951e68f5abf9e86bef34d85a33d021340c151c309d180` |
-| 4 | `theorem` | [bulk_source_continuum_tendsto_at_top](../../../../MeasureAndIntegration/SourceBoundaryBulkGrowth.lean/declarations/bulk-source-continuum-tendsto-at-top.md) | 110 | `result-track:c9ca25eeb797e9c2ca43d417b0dfbebb6fb80edf4a430f8ae0dd37d7b4b7f84c` |
+| 1 | `def` | [bulkSourceContinuum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceBoundaryBulkGrowth.lean/declarations/bulksourcecontinuum.md) | 14 | `declaration-track:a97fca556496a9737ea5d7a72ae35a26295563a6dfb8c796ce8986b51eef3272` |
+| 2 | `theorem` | [pzero_window_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceBoundaryBulkGrowth.lean/declarations/pzero-window-bound.md) | 18 | `result-track:93d71163b1d71447cfe6a98964294e0b6ba219d63d6f9290e3d1e414a6874640` |
+| 3 | `theorem` | [bulk_source_continuum_growth](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceBoundaryBulkGrowth.lean/declarations/bulk-source-continuum-growth.md) | 37 | `result-track:b4c8d282392b1e3987a951e68f5abf9e86bef34d85a33d021340c151c309d180` |
+| 4 | `theorem` | [bulk_source_continuum_tendsto_at_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceBoundaryBulkGrowth.lean/declarations/bulk-source-continuum-tendsto-at-top.md) | 110 | `result-track:c9ca25eeb797e9c2ca43d417b0dfbebb6fb80edf4a430f8ae0dd37d7b4b7f84c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/SetTheory/FundamentalSequenceRegisteredFundamentalSequence.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/SetTheory/FundamentalSequenceRegisteredFundamentalSequence.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/FundamentalSequenceRegisteredFundamentalSequence.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/FundamentalSequenceRegisteredFundamentalSequence.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RegisteredFundamentalSequence](../../../../../MathematicalLogicAndFoundations/SetTheory/FundamentalSequenceRegisteredFundamentalSequence.lean/declarations/registeredfundamentalsequence.md) | 12 | `declaration-track:02763915f3664aa61f821122a32b4607786ea6a6a499ff478718c2cbe7119630` |
-| 2 | `theorem` | [registeredFundamentalSequence_strict](../../../../../MathematicalLogicAndFoundations/SetTheory/FundamentalSequenceRegisteredFundamentalSequence.lean/declarations/registeredfundamentalsequence-strict.md) | 34 | `result-track:8b163d0f2457295c14515931cef5fd8ee55ddc6f6eea6011c676f126e9921587` |
-| 3 | `theorem` | [registeredFundamentalSequence_cofinal](../../../../../MathematicalLogicAndFoundations/SetTheory/FundamentalSequenceRegisteredFundamentalSequence.lean/declarations/registeredfundamentalsequence-cofinal.md) | 45 | `result-track:b332b5ef7f762d7b0d1c780ea99ee815eda8b0621990b0955341b310fe18a145` |
+| 1 | `structure` | [RegisteredFundamentalSequence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/FundamentalSequenceRegisteredFundamentalSequence.lean/declarations/registeredfundamentalsequence.md) | 12 | `declaration-track:02763915f3664aa61f821122a32b4607786ea6a6a499ff478718c2cbe7119630` |
+| 2 | `theorem` | [registeredFundamentalSequence_strict](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/FundamentalSequenceRegisteredFundamentalSequence.lean/declarations/registeredfundamentalsequence-strict.md) | 34 | `result-track:8b163d0f2457295c14515931cef5fd8ee55ddc6f6eea6011c676f126e9921587` |
+| 3 | `theorem` | [registeredFundamentalSequence_cofinal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/FundamentalSequenceRegisteredFundamentalSequence.lean/declarations/registeredfundamentalsequence-cofinal.md) | 45 | `result-track:b332b5ef7f762d7b0d1c780ea99ee815eda8b0621990b0955341b310fe18a145` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

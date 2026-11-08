@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/AdjoinTowerNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/AdjoinTowerNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdjoinTowerNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdjoinTowerNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [adjoin_restrictScalars](../../../../CommutativeAlgebra/AdjoinTowerNamespaced.lean/declarations/adjoin-restrictscalars.md) | 36 | `result-track:90f1bbdf44912620ec51b766c517681f2c35d5b3483cd3e205a5b335fb7be6a3` |
-| 2 | `theorem` | [adjoin_res_eq_adjoin_res](../../../../CommutativeAlgebra/AdjoinTowerNamespaced.lean/declarations/adjoin-res-eq-adjoin-res.md) | 54 | `result-track:d384e739834bb38554a0990e89a60da3fe2ceca2110a6f8406203104b7e210ea` |
-| 3 | `theorem` | [Algebra.fg_trans'](../../../../CommutativeAlgebra/AdjoinTowerNamespaced.lean/declarations/algebra-fg-trans.md) | 69 | `result-track:3093d183bee3254a03d757e820922b17cf8c9652d270616ef54b88d4ba84bb20` |
-| 4 | `theorem` | [exists_subalgebra_of_fg](../../../../CommutativeAlgebra/AdjoinTowerNamespaced.lean/declarations/exists-subalgebra-of-fg.md) | 95 | `result-track:39a30c62e0dde8a71636af8bb03aec05dfaf0a8949721478cd765b3ef3c1fb22` |
-| 5 | `theorem` | [fg_of_fg_of_fg](../../../../CommutativeAlgebra/AdjoinTowerNamespaced.lean/declarations/fg-of-fg-of-fg.md) | 154 | `result-track:51edf1362c301bbf645666c1c8c092d06c957f9b5f7bcffd7f4175195718702b` |
+| 1 | `theorem` | [adjoin_restrictScalars](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdjoinTowerNamespaced.lean/declarations/adjoin-restrictscalars.md) | 36 | `result-track:90f1bbdf44912620ec51b766c517681f2c35d5b3483cd3e205a5b335fb7be6a3` |
+| 2 | `theorem` | [adjoin_res_eq_adjoin_res](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdjoinTowerNamespaced.lean/declarations/adjoin-res-eq-adjoin-res.md) | 54 | `result-track:d384e739834bb38554a0990e89a60da3fe2ceca2110a6f8406203104b7e210ea` |
+| 3 | `theorem` | [Algebra.fg_trans'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdjoinTowerNamespaced.lean/declarations/algebra-fg-trans.md) | 69 | `result-track:3093d183bee3254a03d757e820922b17cf8c9652d270616ef54b88d4ba84bb20` |
+| 4 | `theorem` | [exists_subalgebra_of_fg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdjoinTowerNamespaced.lean/declarations/exists-subalgebra-of-fg.md) | 95 | `result-track:39a30c62e0dde8a71636af8bb03aec05dfaf0a8949721478cd765b3ef3c1fb22` |
+| 5 | `theorem` | [fg_of_fg_of_fg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdjoinTowerNamespaced.lean/declarations/fg-of-fg-of-fg.md) | 154 | `result-track:51edf1362c301bbf645666c1c8c092d06c957f9b5f7bcffd7f4175195718702b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

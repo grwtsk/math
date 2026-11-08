@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/NeZero.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/NeZero.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/NeZero.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/NeZero.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [one_le](../../../../../NumberTheory/ElementaryNumberTheory/NeZero.lean/declarations/one-le.md) | 16 | `result-track:a078dca44f22189318e9477c275e4f8c22c859022af5a8af7489b608b9fe2b5b` |
-| 2 | `lemma` | [natCast_ne](../../../../../NumberTheory/ElementaryNumberTheory/NeZero.lean/declarations/natcast-ne.md) | 18 | `result-track:1e26b95d2c9a284449a5e17644f011c8e0f8b91b99d1043db8cc52713cea8ea2` |
-| 3 | `lemma` | [of_neZero_natCast](../../../../../NumberTheory/ElementaryNumberTheory/NeZero.lean/declarations/of-nezero-natcast.md) | 20 | `result-track:aea7cf1f44254d096597c57a69a8db43695d7c34b20d59e80737fb991e0fda2f` |
-| 4 | `lemma` | [pos_of_neZero_natCast](../../../../../NumberTheory/ElementaryNumberTheory/NeZero.lean/declarations/pos-of-nezero-natcast.md) | 23 | `result-track:7acb7db9399b4f7d7e9288ecc4ec3852e4bfa9908e4263de8f3298349aebac60` |
+| 1 | `theorem` | [one_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/NeZero.lean/declarations/one-le.md) | 16 | `result-track:a078dca44f22189318e9477c275e4f8c22c859022af5a8af7489b608b9fe2b5b` |
+| 2 | `lemma` | [natCast_ne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/NeZero.lean/declarations/natcast-ne.md) | 18 | `result-track:1e26b95d2c9a284449a5e17644f011c8e0f8b91b99d1043db8cc52713cea8ea2` |
+| 3 | `lemma` | [of_neZero_natCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/NeZero.lean/declarations/of-nezero-natcast.md) | 20 | `result-track:aea7cf1f44254d096597c57a69a8db43695d7c34b20d59e80737fb991e0fda2f` |
+| 4 | `lemma` | [pos_of_neZero_natCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/NeZero.lean/declarations/pos-of-nezero-natcast.md) | 23 | `result-track:7acb7db9399b4f7d7e9288ecc4ec3852e4bfa9908e4263de8f3298349aebac60` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

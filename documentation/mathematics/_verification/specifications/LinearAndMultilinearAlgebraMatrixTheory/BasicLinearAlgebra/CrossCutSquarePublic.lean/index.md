@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CrossCutSquarePublic.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CrossCutSquarePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CrossCutSquarePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CrossCutSquarePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [HyperbolicSurgeryPlan.crossIntervalKernel](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CrossCutSquarePublic.lean/declarations/hyperbolicsurgeryplan-crossintervalkernel.md) | 28 | `declaration-track:a2675a42e4ecf0202c77493116f1b3cba88a226403aa678771c98e47e8e711c0` |
-| 2 | `def` | [EvaluatedSurgeryTree.nodeCrossCutIntervalSquareSum](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CrossCutSquarePublic.lean/declarations/evaluatedsurgerytree-nodecrosscutintervalsquaresum.md) | 37 | `declaration-track:122103e22df1a112557d7fc29f24af9539730505f97a960a423b8b1473ebd3bc` |
-| 3 | `def` | [LocalCrossCutSquareEstimateAtCut](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CrossCutSquarePublic.lean/declarations/localcrosscutsquareestimateatcut.md) | 50 | `declaration-track:d4878d261122f8fffe17044e28c1ce5ab546f7d25200746f0318895551f87430` |
-| 4 | `def` | [LocalCrossSquareEstimateAtCut](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CrossCutSquarePublic.lean/declarations/localcrosssquareestimateatcut.md) | 62 | `declaration-track:56721bebc4c2e43cde1dedc8211fde140eab564c209fce3cefc1d8bca39d5234` |
+| 1 | `def` | [HyperbolicSurgeryPlan.crossIntervalKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CrossCutSquarePublic.lean/declarations/hyperbolicsurgeryplan-crossintervalkernel.md) | 28 | `declaration-track:a2675a42e4ecf0202c77493116f1b3cba88a226403aa678771c98e47e8e711c0` |
+| 2 | `def` | [EvaluatedSurgeryTree.nodeCrossCutIntervalSquareSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CrossCutSquarePublic.lean/declarations/evaluatedsurgerytree-nodecrosscutintervalsquaresum.md) | 37 | `declaration-track:122103e22df1a112557d7fc29f24af9539730505f97a960a423b8b1473ebd3bc` |
+| 3 | `def` | [LocalCrossCutSquareEstimateAtCut](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CrossCutSquarePublic.lean/declarations/localcrosscutsquareestimateatcut.md) | 50 | `declaration-track:d4878d261122f8fffe17044e28c1ce5ab546f7d25200746f0318895551f87430` |
+| 4 | `def` | [LocalCrossSquareEstimateAtCut](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CrossCutSquarePublic.lean/declarations/localcrosssquareestimateatcut.md) | 62 | `declaration-track:56721bebc4c2e43cde1dedc8211fde140eab564c209fce3cefc1d8bca39d5234` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

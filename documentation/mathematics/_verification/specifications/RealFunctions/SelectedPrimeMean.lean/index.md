@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/SelectedPrimeMean.lean/index.md) · [Full source](../../../../RealFunctions/SelectedPrimeMean.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SelectedPrimeMean.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SelectedPrimeMean.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [correlation_deriv_zero](../../../../RealFunctions/SelectedPrimeMean.lean/declarations/correlation-deriv-zero.md) | 18 | `result-track:df2a7be129a1c07210a6b6d30845268d090d828c0f3cc26f84a316d9b3f16958` |
-| 2 | `theorem` | [correlation_deficit](../../../../RealFunctions/SelectedPrimeMean.lean/declarations/correlation-deficit.md) | 34 | `result-track:6ae13656d34e6ed54d75e710e3b7f10bccd4668c5fd958892c53e209d87cf2ec` |
-| 3 | `def` | [twoPrimeLoss](../../../../RealFunctions/SelectedPrimeMean.lean/declarations/twoprimeloss.md) | 44 | `declaration-track:a558ccbcb87c8bf7d1ff47a51028f42513c4fa94af15d83c5d6a8de4a2e856fc` |
-| 4 | `def` | [twoPrimeShift](../../../../RealFunctions/SelectedPrimeMean.lean/declarations/twoprimeshift.md) | 48 | `declaration-track:018868af2cd70b1244b7f0d676369881876ea16259248cd24ca444d7e8785da8` |
-| 5 | `def` | [twoPrimeShiftError](../../../../RealFunctions/SelectedPrimeMean.lean/declarations/twoprimeshifterror.md) | 54 | `declaration-track:7682c076d350b65bebe6ab90ce2ff4e39f94e103cb7dff1300506a401e649d6d` |
-| 6 | `theorem` | [twoPrimeShift_deficit](../../../../RealFunctions/SelectedPrimeMean.lean/declarations/twoprimeshift-deficit.md) | 59 | `result-track:402d3ef5f03986e6b4fbe60577d742c1ce7305e8b656e1c7cce19cc8c0f66cf1` |
+| 1 | `theorem` | [correlation_deriv_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SelectedPrimeMean.lean/declarations/correlation-deriv-zero.md) | 18 | `result-track:df2a7be129a1c07210a6b6d30845268d090d828c0f3cc26f84a316d9b3f16958` |
+| 2 | `theorem` | [correlation_deficit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SelectedPrimeMean.lean/declarations/correlation-deficit.md) | 34 | `result-track:6ae13656d34e6ed54d75e710e3b7f10bccd4668c5fd958892c53e209d87cf2ec` |
+| 3 | `def` | [twoPrimeLoss](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SelectedPrimeMean.lean/declarations/twoprimeloss.md) | 44 | `declaration-track:a558ccbcb87c8bf7d1ff47a51028f42513c4fa94af15d83c5d6a8de4a2e856fc` |
+| 4 | `def` | [twoPrimeShift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SelectedPrimeMean.lean/declarations/twoprimeshift.md) | 48 | `declaration-track:018868af2cd70b1244b7f0d676369881876ea16259248cd24ca444d7e8785da8` |
+| 5 | `def` | [twoPrimeShiftError](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SelectedPrimeMean.lean/declarations/twoprimeshifterror.md) | 54 | `declaration-track:7682c076d350b65bebe6ab90ce2ff4e39f94e103cb7dff1300506a401e649d6d` |
+| 6 | `theorem` | [twoPrimeShift_deficit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SelectedPrimeMean.lean/declarations/twoprimeshift-deficit.md) | 59 | `result-track:402d3ef5f03986e6b4fbe60577d742c1ce7305e8b656e1c7cce19cc8c0f66cf1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

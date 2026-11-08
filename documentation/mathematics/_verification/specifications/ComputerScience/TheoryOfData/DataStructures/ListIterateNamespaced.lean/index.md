@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListIterateNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListIterateNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListIterateNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListIterateNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [length_iterate](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListIterateNamespaced.lean/declarations/length-iterate.md) | 29 | `result-track:572e65bb22a9a757bd79415b281ca22dc2fb730cdcf579a1c2df5b470a5617cb` |
-| 2 | `theorem` | [iterate_eq_nil](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListIterateNamespaced.lean/declarations/iterate-eq-nil.md) | 33 | `result-track:b29d1efbd65da3d638750a25c9afec612472fe4443e70e0d2b8cc700c79e37ca` |
-| 3 | `theorem` | [getElem?_iterate](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListIterateNamespaced.lean/declarations/getelem-iterate.md) | 36 | `result-track:563205eb5340365a8d2dc212df6f91f77b877a848955485b2e3828bc3d9f2829` |
-| 4 | `theorem` | [getElem_iterate](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListIterateNamespaced.lean/declarations/getelem-iterate-source-edition-2.md) | 42 | `result-track:dc8746bef23e12430b1928a9a9a2ed101e29b72834f72fa8fcba9a0aaf21a81b` |
-| 5 | `theorem` | [mem_iterate](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListIterateNamespaced.lean/declarations/mem-iterate.md) | 47 | `result-track:3eb44edbed2efcead008c45d249191dd7f8411cee49510fcfee019823a49463b` |
-| 6 | `theorem` | [range_map_iterate](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListIterateNamespaced.lean/declarations/range-map-iterate.md) | 52 | `result-track:eb04f24b295302cb993f573cff88adcbff5895e8733a459dfc522c72e1cc6914` |
-| 7 | `theorem` | [iterate_add](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListIterateNamespaced.lean/declarations/iterate-add.md) | 56 | `result-track:6186590f7a46dda7095adeb9802a4948b8dea820ab1dc6315bef1f923039577e` |
-| 8 | `theorem` | [take_iterate](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListIterateNamespaced.lean/declarations/take-iterate.md) | 62 | `result-track:643e8bfbda47e2381531edae954c0b6e65cf662b878fd4e51b0140d7b215bfe8` |
+| 1 | `theorem` | [length_iterate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListIterateNamespaced.lean/declarations/length-iterate.md) | 29 | `result-track:572e65bb22a9a757bd79415b281ca22dc2fb730cdcf579a1c2df5b470a5617cb` |
+| 2 | `theorem` | [iterate_eq_nil](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListIterateNamespaced.lean/declarations/iterate-eq-nil.md) | 33 | `result-track:b29d1efbd65da3d638750a25c9afec612472fe4443e70e0d2b8cc700c79e37ca` |
+| 3 | `theorem` | [getElem?_iterate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListIterateNamespaced.lean/declarations/getelem-iterate.md) | 36 | `result-track:563205eb5340365a8d2dc212df6f91f77b877a848955485b2e3828bc3d9f2829` |
+| 4 | `theorem` | [getElem_iterate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListIterateNamespaced.lean/declarations/getelem-iterate-source-edition-2.md) | 42 | `result-track:dc8746bef23e12430b1928a9a9a2ed101e29b72834f72fa8fcba9a0aaf21a81b` |
+| 5 | `theorem` | [mem_iterate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListIterateNamespaced.lean/declarations/mem-iterate.md) | 47 | `result-track:3eb44edbed2efcead008c45d249191dd7f8411cee49510fcfee019823a49463b` |
+| 6 | `theorem` | [range_map_iterate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListIterateNamespaced.lean/declarations/range-map-iterate.md) | 52 | `result-track:eb04f24b295302cb993f573cff88adcbff5895e8733a459dfc522c72e1cc6914` |
+| 7 | `theorem` | [iterate_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListIterateNamespaced.lean/declarations/iterate-add.md) | 56 | `result-track:6186590f7a46dda7095adeb9802a4948b8dea820ab1dc6315bef1f923039577e` |
+| 8 | `theorem` | [take_iterate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListIterateNamespaced.lean/declarations/take-iterate.md) | 62 | `result-track:643e8bfbda47e2381531edae954c0b6e65cf662b878fd4e51b0140d7b215bfe8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

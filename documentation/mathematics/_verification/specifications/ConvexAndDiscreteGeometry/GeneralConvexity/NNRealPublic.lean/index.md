@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/NNRealPublic.lean/index.md) · [Full source](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/NNRealPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/NNRealPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/NNRealPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [Icc_subset_segment](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/NNRealPublic.lean/declarations/icc-subset-segment.md) | 26 | `result-track:0180ced928d8afc30f82443a7c5554ddea4e7f32c8d3d6b25e8b49b03244e813` |
-| 2 | `lemma` | [segment_eq_Icc](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/NNRealPublic.lean/declarations/segment-eq-icc.md) | 30 | `result-track:d374f59b739e184f5138f165519fde0f6586c7a942bedc7d05b571ac2b0f85d5` |
-| 3 | `lemma` | [segment_eq_uIcc](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/NNRealPublic.lean/declarations/segment-eq-uicc.md) | 34 | `result-track:ea69a2ee08951af480764e3476e8c35d8df3fad773fa63db1d672f9b1f7d3419` |
-| 4 | `lemma` | [convex_iff](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/NNRealPublic.lean/declarations/convex-iff.md) | 39 | `result-track:007050ea457531ac08e2fcde7b3a85cc65a828e297309e8ca6ca4bf25cf5c13e` |
+| 1 | `lemma` | [Icc_subset_segment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/NNRealPublic.lean/declarations/icc-subset-segment.md) | 26 | `result-track:0180ced928d8afc30f82443a7c5554ddea4e7f32c8d3d6b25e8b49b03244e813` |
+| 2 | `lemma` | [segment_eq_Icc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/NNRealPublic.lean/declarations/segment-eq-icc.md) | 30 | `result-track:d374f59b739e184f5138f165519fde0f6586c7a942bedc7d05b571ac2b0f85d5` |
+| 3 | `lemma` | [segment_eq_uIcc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/NNRealPublic.lean/declarations/segment-eq-uicc.md) | 34 | `result-track:ea69a2ee08951af480764e3476e8c35d8df3fad773fa63db1d672f9b1f7d3419` |
+| 4 | `lemma` | [convex_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/NNRealPublic.lean/declarations/convex-iff.md) | 39 | `result-track:007050ea457531ac08e2fcde7b3a85cc65a828e297309e8ca6ca4bf25cf5c13e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

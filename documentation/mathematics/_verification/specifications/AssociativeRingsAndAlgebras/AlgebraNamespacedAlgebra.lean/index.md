@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/AlgebraNamespacedAlgebra.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/AlgebraNamespacedAlgebra.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraNamespacedAlgebra.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraNamespacedAlgebra.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [Algebra](../../../../AssociativeRingsAndAlgebras/AlgebraNamespacedAlgebra.lean/declarations/algebra.md) | 31 | `declaration-track:2fd73030c8bf4a4c93aaa022df28b0140df48498c73fcb515cc7dfe922ed31db` |
+| 1 | `class` | [Algebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraNamespacedAlgebra.lean/declarations/algebra.md) | 31 | `declaration-track:2fd73030c8bf4a4c93aaa022df28b0140df48498c73fcb515cc7dfe922ed31db` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

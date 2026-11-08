@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/AStarNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/AStarNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AStarNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AStarNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [AStarPathCertificate](../../../../../ComputerScience/AlgorithmsInComputerScience/AStarNamespaced.lean/declarations/astarpathcertificate.md) | 20 | `declaration-track:ea8e4f9aad91301d0607c57260a8e7e07159a2754394b1eefdee668f691028fc` |
-| 2 | `theorem` | [astar_optimal_of_admissible_consistent](../../../../../ComputerScience/AlgorithmsInComputerScience/AStarNamespaced.lean/declarations/astar-optimal-of-admissible-consistent.md) | 31 | `result-track:a85593bffb1feefcc68ed3bc799273d1c5b8389ff72af0d98aae234ab92d46a7` |
+| 1 | `structure` | [AStarPathCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AStarNamespaced.lean/declarations/astarpathcertificate.md) | 20 | `declaration-track:ea8e4f9aad91301d0607c57260a8e7e07159a2754394b1eefdee668f691028fc` |
+| 2 | `theorem` | [astar_optimal_of_admissible_consistent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AStarNamespaced.lean/declarations/astar-optimal-of-admissible-consistent.md) | 31 | `result-track:a85593bffb1feefcc68ed3bc799273d1c5b8389ff72af0d98aae234ab92d46a7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

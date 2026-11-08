@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CharacterPublic.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CharacterPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CharacterPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CharacterPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [GRHForPrimitiveCharacter](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CharacterPublic.lean/declarations/grhforprimitivecharacter.md) | 29 | `declaration-track:0458dc5543e7370bd51fb88eef168d965e7aa97c8b723b11efb0e3aeb77ce97e` |
-| 2 | `def` | [IsCriticalStripZero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CharacterPublic.lean/declarations/iscriticalstripzero.md) | 39 | `declaration-track:9f6116009cfe8ad1f7752c1636828b1b7a95482a54a0e8a25543988c49c1f7ff` |
-| 3 | `theorem` | [grhForPrimitiveCharacter_iff_criticalStripZeros](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CharacterPublic.lean/declarations/grhforprimitivecharacter-iff-criticalstripzeros.md) | 44 | `result-track:45610cd7e50bcc21f7f0162eedc202334e3d8600404fb5c61f6a6899e2e1a2e3` |
+| 1 | `def` | [GRHForPrimitiveCharacter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CharacterPublic.lean/declarations/grhforprimitivecharacter.md) | 29 | `declaration-track:0458dc5543e7370bd51fb88eef168d965e7aa97c8b723b11efb0e3aeb77ce97e` |
+| 2 | `def` | [IsCriticalStripZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CharacterPublic.lean/declarations/iscriticalstripzero.md) | 39 | `declaration-track:9f6116009cfe8ad1f7752c1636828b1b7a95482a54a0e8a25543988c49c1f7ff` |
+| 3 | `theorem` | [grhForPrimitiveCharacter_iff_criticalStripZeros](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CharacterPublic.lean/declarations/grhforprimitivecharacter-iff-criticalstripzeros.md) | 44 | `result-track:45610cd7e50bcc21f7f0162eedc202334e3d8600404fb5c61f6a6899e2e1a2e3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

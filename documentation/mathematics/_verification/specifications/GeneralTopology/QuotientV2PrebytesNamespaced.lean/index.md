@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/QuotientV2PrebytesNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/QuotientV2PrebytesNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/QuotientV2PrebytesNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/QuotientV2PrebytesNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [continuousHalfDenominator](../../../../GeneralTopology/QuotientV2PrebytesNamespaced.lean/declarations/continuoushalfdenominator.md) | 35 | `declaration-track:15c10d5c2a2f73700e4f8218925a085886289ce9055fcdebc53377e981045873` |
-| 2 | `def` | [continuousHalfRational](../../../../GeneralTopology/QuotientV2PrebytesNamespaced.lean/declarations/continuoushalfrational.md) | 38 | `declaration-track:c201b23d06fc0a33dda50088ed11823a20d44019b6125430e304b3afae1eafcc` |
-| 3 | `def` | [continuousHalfScaleDerivative](../../../../GeneralTopology/QuotientV2PrebytesNamespaced.lean/declarations/continuoushalfscalederivative.md) | 42 | `declaration-track:ab7cdd571c1272c5ff0c8a57c2dd892d6df368d0eb1180e43b9048220a0f8720` |
-| 4 | `theorem` | [continuousHalfDenominator_pos](../../../../GeneralTopology/QuotientV2PrebytesNamespaced.lean/declarations/continuoushalfdenominator-pos.md) | 46 | `result-track:98d6c918fa7df29f53f1c30fa97a0d5935f1ae4e504f95c567d91c0f28ecb500` |
-| 5 | `theorem` | [continuousHalfRational_hasDerivAt](../../../../GeneralTopology/QuotientV2PrebytesNamespaced.lean/declarations/continuoushalfrational-hasderivat.md) | 51 | `result-track:af32c382d8fb20287e1996a7fcb052ae93986b7c3a7cae510be10ae89b2567dc` |
-| 6 | `theorem` | [continuousHalfRational_contDiff](../../../../GeneralTopology/QuotientV2PrebytesNamespaced.lean/declarations/continuoushalfrational-contdiff.md) | 63 | `result-track:31903d448591be920178aa7f601802f0a8363ef4b3cb5d00b0f4d17ce7bc64b7` |
-| 7 | `theorem` | [continuousHalfScaleDerivative_continuous](../../../../GeneralTopology/QuotientV2PrebytesNamespaced.lean/declarations/continuoushalfscalederivative-continuous.md) | 71 | `result-track:43bae668feeef82a8bae9b0af715d9f756c1b5cca827fd8e86b1ec311a431528` |
-| 8 | `theorem` | [continuousHalfScaleDerivative_lt_zero](../../../../GeneralTopology/QuotientV2PrebytesNamespaced.lean/declarations/continuoushalfscalederivative-lt-zero.md) | 80 | `result-track:3b89c3ed30d41ab838717555ef1afa6e2d4ae3fc17020cabc8bce4a8671822ec` |
+| 1 | `def` | [continuousHalfDenominator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/QuotientV2PrebytesNamespaced.lean/declarations/continuoushalfdenominator.md) | 35 | `declaration-track:15c10d5c2a2f73700e4f8218925a085886289ce9055fcdebc53377e981045873` |
+| 2 | `def` | [continuousHalfRational](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/QuotientV2PrebytesNamespaced.lean/declarations/continuoushalfrational.md) | 38 | `declaration-track:c201b23d06fc0a33dda50088ed11823a20d44019b6125430e304b3afae1eafcc` |
+| 3 | `def` | [continuousHalfScaleDerivative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/QuotientV2PrebytesNamespaced.lean/declarations/continuoushalfscalederivative.md) | 42 | `declaration-track:ab7cdd571c1272c5ff0c8a57c2dd892d6df368d0eb1180e43b9048220a0f8720` |
+| 4 | `theorem` | [continuousHalfDenominator_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/QuotientV2PrebytesNamespaced.lean/declarations/continuoushalfdenominator-pos.md) | 46 | `result-track:98d6c918fa7df29f53f1c30fa97a0d5935f1ae4e504f95c567d91c0f28ecb500` |
+| 5 | `theorem` | [continuousHalfRational_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/QuotientV2PrebytesNamespaced.lean/declarations/continuoushalfrational-hasderivat.md) | 51 | `result-track:af32c382d8fb20287e1996a7fcb052ae93986b7c3a7cae510be10ae89b2567dc` |
+| 6 | `theorem` | [continuousHalfRational_contDiff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/QuotientV2PrebytesNamespaced.lean/declarations/continuoushalfrational-contdiff.md) | 63 | `result-track:31903d448591be920178aa7f601802f0a8363ef4b3cb5d00b0f4d17ce7bc64b7` |
+| 7 | `theorem` | [continuousHalfScaleDerivative_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/QuotientV2PrebytesNamespaced.lean/declarations/continuoushalfscalederivative-continuous.md) | 71 | `result-track:43bae668feeef82a8bae9b0af715d9f756c1b5cca827fd8e86b1ec311a431528` |
+| 8 | `theorem` | [continuousHalfScaleDerivative_lt_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/QuotientV2PrebytesNamespaced.lean/declarations/continuoushalfscalederivative-lt-zero.md) | 80 | `result-track:3b89c3ed30d41ab838717555ef1afa6e2d4ae3fc17020cabc8bce4a8671822ec` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

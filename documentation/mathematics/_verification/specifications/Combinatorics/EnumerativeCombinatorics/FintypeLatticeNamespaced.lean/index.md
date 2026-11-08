@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeLatticeNamespaced.lean/index.md) · [Full source](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeLatticeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeLatticeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeLatticeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sup_univ_eq_iSup](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeLatticeNamespaced.lean/declarations/sup-univ-eq-isup.md) | 35 | `result-track:6682824582c6b7a7a1d2ac5bc38331fc46984cbe29bcc099a981a04095614c40` |
-| 2 | `theorem` | [inf_univ_eq_iInf](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeLatticeNamespaced.lean/declarations/inf-univ-eq-iinf.md) | 39 | `result-track:db6d47f56872aafac0d3275202db686240ad25e5edfdaab83e0a4d61032a6265` |
-| 3 | `theorem` | [fold_inf_univ](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeLatticeNamespaced.lean/declarations/fold-inf-univ.md) | 43 | `result-track:1100131b0c8be5b18f90fe1ba09092b81a7f0bc61b9994b90615a75d5acdd7b5` |
-| 4 | `theorem` | [fold_sup_univ](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeLatticeNamespaced.lean/declarations/fold-sup-univ.md) | 49 | `result-track:5c8a42d9a68fb120eef862c43dff72607bbef22f1707e4ad13e771a06ff0816f` |
-| 5 | `lemma` | [mem_inf](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeLatticeNamespaced.lean/declarations/mem-inf.md) | 53 | `result-track:1d09c756fad2ca805d8d0fddba49b15bdcf028779fd71027e6ee789000b97b42` |
-| 6 | `theorem` | [Finite.exists_max](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeLatticeNamespaced.lean/declarations/finite-exists-max.md) | 60 | `result-track:e5f53def04bd9b83a2c4dcfc462deb230a5edef57f5eec2a8f15062686d43ed5` |
-| 7 | `theorem` | [Finite.exists_min](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeLatticeNamespaced.lean/declarations/finite-exists-min.md) | 65 | `result-track:c3fa901e281860745e39d4f434171735ef779de897e55fbad0ddf649543bea3d` |
+| 1 | `theorem` | [sup_univ_eq_iSup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeLatticeNamespaced.lean/declarations/sup-univ-eq-isup.md) | 35 | `result-track:6682824582c6b7a7a1d2ac5bc38331fc46984cbe29bcc099a981a04095614c40` |
+| 2 | `theorem` | [inf_univ_eq_iInf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeLatticeNamespaced.lean/declarations/inf-univ-eq-iinf.md) | 39 | `result-track:db6d47f56872aafac0d3275202db686240ad25e5edfdaab83e0a4d61032a6265` |
+| 3 | `theorem` | [fold_inf_univ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeLatticeNamespaced.lean/declarations/fold-inf-univ.md) | 43 | `result-track:1100131b0c8be5b18f90fe1ba09092b81a7f0bc61b9994b90615a75d5acdd7b5` |
+| 4 | `theorem` | [fold_sup_univ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeLatticeNamespaced.lean/declarations/fold-sup-univ.md) | 49 | `result-track:5c8a42d9a68fb120eef862c43dff72607bbef22f1707e4ad13e771a06ff0816f` |
+| 5 | `lemma` | [mem_inf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeLatticeNamespaced.lean/declarations/mem-inf.md) | 53 | `result-track:1d09c756fad2ca805d8d0fddba49b15bdcf028779fd71027e6ee789000b97b42` |
+| 6 | `theorem` | [Finite.exists_max](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeLatticeNamespaced.lean/declarations/finite-exists-max.md) | 60 | `result-track:e5f53def04bd9b83a2c4dcfc462deb230a5edef57f5eec2a8f15062686d43ed5` |
+| 7 | `theorem` | [Finite.exists_min](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeLatticeNamespaced.lean/declarations/finite-exists-min.md) | 65 | `result-track:c3fa901e281860745e39d4f434171735ef779de897e55fbad0ddf649543bea3d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

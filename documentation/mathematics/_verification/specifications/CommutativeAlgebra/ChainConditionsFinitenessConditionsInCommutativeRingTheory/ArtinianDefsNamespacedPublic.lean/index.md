@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CommutativeAlgebra/ChainConditionsFinitenessConditionsInCommutativeRingTheory/ArtinianDefsNamespacedPublic.lean/index.md) · [Full source](../../../../../CommutativeAlgebra/ChainConditionsFinitenessConditionsInCommutativeRingTheory/ArtinianDefsNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ChainConditionsFinitenessConditionsInCommutativeRingTheory/ArtinianDefsNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ChainConditionsFinitenessConditionsInCommutativeRingTheory/ArtinianDefsNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [IsArtinian](../../../../../CommutativeAlgebra/ChainConditionsFinitenessConditionsInCommutativeRingTheory/ArtinianDefsNamespacedPublic.lean/declarations/isartinian.md) | 51 | `declaration-track:873018ceb04665943aa538aa50fe7f231854c7758dbd962ff95018912112ef96` |
-| 2 | `theorem` | [isArtinian_iff](../../../../../CommutativeAlgebra/ChainConditionsFinitenessConditionsInCommutativeRingTheory/ArtinianDefsNamespacedPublic.lean/declarations/isartinian-iff.md) | 55 | `result-track:788873cbb9aec1a27d515f10cb49ecfbfef3614f528c2fee0c4bee90aed41764` |
-| 3 | `theorem` | [IsArtinian.induction](../../../../../CommutativeAlgebra/ChainConditionsFinitenessConditionsInCommutativeRingTheory/ArtinianDefsNamespacedPublic.lean/declarations/isartinian-induction.md) | 60 | `result-track:a6c0b0947f2c21ebeca49be629b619fdce56e3fea27bc21a7d5bcf09b395886c` |
-| 4 | `abbrev` | [IsArtinianRing](../../../../../CommutativeAlgebra/ChainConditionsFinitenessConditionsInCommutativeRingTheory/ArtinianDefsNamespacedPublic.lean/declarations/isartinianring.md) | 75 | `declaration-track:514833c509b8197356ac15c47690cd263c87d89225d8484c8c78d07279b3ff66` |
-| 5 | `theorem` | [isArtinianRing_iff](../../../../../CommutativeAlgebra/ChainConditionsFinitenessConditionsInCommutativeRingTheory/ArtinianDefsNamespacedPublic.lean/declarations/isartinianring-iff.md) | 78 | `result-track:1f2c4f5b3e9a0cd593b2c123d3713605a6f8b0fcb944877bc1e41116e2900229` |
+| 1 | `abbrev` | [IsArtinian](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ChainConditionsFinitenessConditionsInCommutativeRingTheory/ArtinianDefsNamespacedPublic.lean/declarations/isartinian.md) | 51 | `declaration-track:873018ceb04665943aa538aa50fe7f231854c7758dbd962ff95018912112ef96` |
+| 2 | `theorem` | [isArtinian_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ChainConditionsFinitenessConditionsInCommutativeRingTheory/ArtinianDefsNamespacedPublic.lean/declarations/isartinian-iff.md) | 55 | `result-track:788873cbb9aec1a27d515f10cb49ecfbfef3614f528c2fee0c4bee90aed41764` |
+| 3 | `theorem` | [IsArtinian.induction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ChainConditionsFinitenessConditionsInCommutativeRingTheory/ArtinianDefsNamespacedPublic.lean/declarations/isartinian-induction.md) | 60 | `result-track:a6c0b0947f2c21ebeca49be629b619fdce56e3fea27bc21a7d5bcf09b395886c` |
+| 4 | `abbrev` | [IsArtinianRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ChainConditionsFinitenessConditionsInCommutativeRingTheory/ArtinianDefsNamespacedPublic.lean/declarations/isartinianring.md) | 75 | `declaration-track:514833c509b8197356ac15c47690cd263c87d89225d8484c8c78d07279b3ff66` |
+| 5 | `theorem` | [isArtinianRing_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ChainConditionsFinitenessConditionsInCommutativeRingTheory/ArtinianDefsNamespacedPublic.lean/declarations/isartinianring-iff.md) | 78 | `result-track:1f2c4f5b3e9a0cd593b2c123d3713605a6f8b0fcb944877bc1e41116e2900229` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

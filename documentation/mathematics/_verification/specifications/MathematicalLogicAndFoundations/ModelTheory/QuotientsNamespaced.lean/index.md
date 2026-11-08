@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/ModelTheory/QuotientsNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/ModelTheory/QuotientsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ModelTheory/QuotientsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ModelTheory/QuotientsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [Prestructure](../../../../../MathematicalLogicAndFoundations/ModelTheory/QuotientsNamespaced.lean/declarations/prestructure.md) | 43 | `declaration-track:b91fa19c1c7cc4fc43161096463bd31b74c059eb647d1152343caf1d101eba21` |
-| 2 | `instance` | [quotientStructure](../../../../../MathematicalLogicAndFoundations/ModelTheory/QuotientsNamespaced.lean/declarations/quotientstructure.md) | 52 | `declaration-track:f3b5b75b1671b68ad0f5069c928081f318089b93e56f5aedb2437fb49037ac46` |
-| 3 | `theorem` | [funMap_quotient_mk'](../../../../../MathematicalLogicAndFoundations/ModelTheory/QuotientsNamespaced.lean/declarations/funmap-quotient-mk.md) | 60 | `result-track:efbb5a586094056d77f7e903cfaeba9c85e03eddf2e163a9b373a119842baaf4` |
-| 4 | `theorem` | [relMap_quotient_mk'](../../../../../MathematicalLogicAndFoundations/ModelTheory/QuotientsNamespaced.lean/declarations/relmap-quotient-mk.md) | 67 | `result-track:4b02ede6aba10303d84bb790e27e74cd00b408865349263ead179f33dbdf307c` |
-| 5 | `theorem` | [Term.realize_quotient_mk'](../../../../../MathematicalLogicAndFoundations/ModelTheory/QuotientsNamespaced.lean/declarations/term-realize-quotient-mk.md) | 74 | `result-track:3457e7ae2a4dd168356f8e82ff590e8d865cdbdca9d03b3c7e719a93eeed6881` |
+| 1 | `class` | [Prestructure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ModelTheory/QuotientsNamespaced.lean/declarations/prestructure.md) | 43 | `declaration-track:b91fa19c1c7cc4fc43161096463bd31b74c059eb647d1152343caf1d101eba21` |
+| 2 | `instance` | [quotientStructure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ModelTheory/QuotientsNamespaced.lean/declarations/quotientstructure.md) | 52 | `declaration-track:f3b5b75b1671b68ad0f5069c928081f318089b93e56f5aedb2437fb49037ac46` |
+| 3 | `theorem` | [funMap_quotient_mk'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ModelTheory/QuotientsNamespaced.lean/declarations/funmap-quotient-mk.md) | 60 | `result-track:efbb5a586094056d77f7e903cfaeba9c85e03eddf2e163a9b373a119842baaf4` |
+| 4 | `theorem` | [relMap_quotient_mk'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ModelTheory/QuotientsNamespaced.lean/declarations/relmap-quotient-mk.md) | 67 | `result-track:4b02ede6aba10303d84bb790e27e74cd00b408865349263ead179f33dbdf307c` |
+| 5 | `theorem` | [Term.realize_quotient_mk'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ModelTheory/QuotientsNamespaced.lean/declarations/term-realize-quotient-mk.md) | 74 | `result-track:3457e7ae2a4dd168356f8e82ff590e8d865cdbdca9d03b3c7e719a93eeed6881` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

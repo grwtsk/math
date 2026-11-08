@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/UniformMultiplication.lean/index.md) · [Full source](../../../../RealFunctions/UniformMultiplication.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/UniformMultiplication.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/UniformMultiplication.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [mul_left_bounded](../../../../RealFunctions/UniformMultiplication.lean/declarations/mul-left-bounded.md) | 42 | `result-track:43c652e9b90df045fdcd10c465714c93205d2aaa7e9551ad7f6e3e4fa7e0254a` |
+| 1 | `theorem` | [mul_left_bounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/UniformMultiplication.lean/declarations/mul-left-bounded.md) | 42 | `result-track:43c652e9b90df045fdcd10c465714c93205d2aaa7e9551ad7f6e3e4fa7e0254a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

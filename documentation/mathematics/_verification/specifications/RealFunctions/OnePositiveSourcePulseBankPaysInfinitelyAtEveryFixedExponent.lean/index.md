@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/OnePositiveSourcePulseBankPaysInfinitelyAtEveryFixedExponent.lean/index.md) · [Full source](../../../../RealFunctions/OnePositiveSourcePulseBankPaysInfinitelyAtEveryFixedExponent.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/OnePositiveSourcePulseBankPaysInfinitelyAtEveryFixedExponent.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/OnePositiveSourcePulseBankPaysInfinitelyAtEveryFixedExponent.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [complete_linear_pulse_prices_not_summable](../../../../RealFunctions/OnePositiveSourcePulseBankPaysInfinitelyAtEveryFixedExponent.lean/declarations/complete-linear-pulse-prices-not-summable.md) | 25 | `result-track:2ab91ed55a0f50a5db716842570beb142a55d252acaf1bf8bd3dbc6ceefaf10c` |
-| 2 | `theorem` | [every_starting_pulse_has_infinite_fixed_p_price](../../../../RealFunctions/OnePositiveSourcePulseBankPaysInfinitelyAtEveryFixedExponent.lean/declarations/every-starting-pulse-has-infinite-fixed-p-price.md) | 47 | `result-track:8e14427522cba468c62729c297ac19d9df3d9f506a78740d5707eb7f995485b2` |
-| 3 | `theorem` | [one_positive_counting_bank_with_every_fixed_p_pulse_obstruction](../../../../RealFunctions/OnePositiveSourcePulseBankPaysInfinitelyAtEveryFixedExponent.lean/declarations/one-positive-counting-bank-with-every-fixed-p-pulse-obstruction.md) | 54 | `result-track:7d9d88ffafd5595bba51ac74a4bad378f9a15e5754512bf6d842dde5eaf45f0e` |
+| 1 | `theorem` | [complete_linear_pulse_prices_not_summable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/OnePositiveSourcePulseBankPaysInfinitelyAtEveryFixedExponent.lean/declarations/complete-linear-pulse-prices-not-summable.md) | 25 | `result-track:2ab91ed55a0f50a5db716842570beb142a55d252acaf1bf8bd3dbc6ceefaf10c` |
+| 2 | `theorem` | [every_starting_pulse_has_infinite_fixed_p_price](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/OnePositiveSourcePulseBankPaysInfinitelyAtEveryFixedExponent.lean/declarations/every-starting-pulse-has-infinite-fixed-p-price.md) | 47 | `result-track:8e14427522cba468c62729c297ac19d9df3d9f506a78740d5707eb7f995485b2` |
+| 3 | `theorem` | [one_positive_counting_bank_with_every_fixed_p_pulse_obstruction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/OnePositiveSourcePulseBankPaysInfinitelyAtEveryFixedExponent.lean/declarations/one-positive-counting-bank-with-every-fixed-p-pulse-obstruction.md) | 54 | `result-track:7d9d88ffafd5595bba51ac74a4bad378f9a15e5754512bf6d842dde5eaf45f0e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

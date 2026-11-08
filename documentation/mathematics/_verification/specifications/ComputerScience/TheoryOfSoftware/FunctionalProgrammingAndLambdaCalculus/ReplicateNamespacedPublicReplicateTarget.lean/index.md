@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ReplicateNamespacedPublicReplicateTarget.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ReplicateNamespacedPublicReplicateTarget.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ReplicateNamespacedPublicReplicateTarget.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ReplicateNamespacedPublicReplicateTarget.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ReplicateTarget](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ReplicateNamespacedPublicReplicateTarget.lean/declarations/replicatetarget.md) | 36 | `declaration-track:067d529f6aee10e513f002343e6f44e67584e8ce4d13b281594132409068bff7` |
-| 2 | `def` | [blastReplicate](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ReplicateNamespacedPublicReplicateTarget.lean/declarations/blastreplicate.md) | 42 | `declaration-track:f364aad62f20f0b7f0f5231ddb7bd85d546f63318f17edc31f196aaffb05ded7` |
-| 3 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ReplicateNamespacedPublicReplicateTarget.lean/declarations/instance.md) | 58 | `declaration-track:4ef5f93fcc95c4e7a493bdd0ce2fb2465666823a6df8aadfb0a6d0e26f1058dc` |
+| 1 | `structure` | [ReplicateTarget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ReplicateNamespacedPublicReplicateTarget.lean/declarations/replicatetarget.md) | 36 | `declaration-track:067d529f6aee10e513f002343e6f44e67584e8ce4d13b281594132409068bff7` |
+| 2 | `def` | [blastReplicate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ReplicateNamespacedPublicReplicateTarget.lean/declarations/blastreplicate.md) | 42 | `declaration-track:f364aad62f20f0b7f0f5231ddb7bd85d546f63318f17edc31f196aaffb05ded7` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ReplicateNamespacedPublicReplicateTarget.lean/declarations/instance.md) | 58 | `declaration-track:4ef5f93fcc95c4e7a493bdd0ce2fb2465666823a6df8aadfb0a6d0e26f1058dc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

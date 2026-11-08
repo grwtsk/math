@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/NegativeDensityLaplaceNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/NegativeDensityLaplaceNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NegativeDensityLaplaceNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NegativeDensityLaplaceNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [laplace_integrable](../../../../MeasureAndIntegration/NegativeDensityLaplaceNamespaced.lean/declarations/laplace-integrable.md) | 22 | `result-track:238a81cb02032dc890d696d6e03e6cd8df0322b4701577e555f19ecae23c6d35` |
-| 2 | `theorem` | [laplace_analytic](../../../../MeasureAndIntegration/NegativeDensityLaplaceNamespaced.lean/declarations/laplace-analytic.md) | 34 | `result-track:8041f3d82796846c33172611254bc1611d9b9c686ee9e1e72e054a56ef8e8e96` |
-| 3 | `theorem` | [negative_tilt_eq](../../../../MeasureAndIntegration/NegativeDensityLaplaceNamespaced.lean/declarations/negative-tilt-eq.md) | 74 | `result-track:d33228989d0a48bb09051c6db226842b5f5d4af56c88f8f5129d7ada31f5ef99` |
-| 4 | `theorem` | [negative_laplace_integrable](../../../../MeasureAndIntegration/NegativeDensityLaplaceNamespaced.lean/declarations/negative-laplace-integrable.md) | 84 | `result-track:139f2a874d42f6406566b372ec8be520b3d25081f70189b245f86d7f10f8d370` |
-| 5 | `theorem` | [negative_laplace_analytic](../../../../MeasureAndIntegration/NegativeDensityLaplaceNamespaced.lean/declarations/negative-laplace-analytic.md) | 93 | `result-track:aa31ab7706acd49d146d0c8fa30714f34164948fbe92c974ef910308d4287d5b` |
+| 1 | `theorem` | [laplace_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NegativeDensityLaplaceNamespaced.lean/declarations/laplace-integrable.md) | 22 | `result-track:238a81cb02032dc890d696d6e03e6cd8df0322b4701577e555f19ecae23c6d35` |
+| 2 | `theorem` | [laplace_analytic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NegativeDensityLaplaceNamespaced.lean/declarations/laplace-analytic.md) | 34 | `result-track:8041f3d82796846c33172611254bc1611d9b9c686ee9e1e72e054a56ef8e8e96` |
+| 3 | `theorem` | [negative_tilt_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NegativeDensityLaplaceNamespaced.lean/declarations/negative-tilt-eq.md) | 74 | `result-track:d33228989d0a48bb09051c6db226842b5f5d4af56c88f8f5129d7ada31f5ef99` |
+| 4 | `theorem` | [negative_laplace_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NegativeDensityLaplaceNamespaced.lean/declarations/negative-laplace-integrable.md) | 84 | `result-track:139f2a874d42f6406566b372ec8be520b3d25081f70189b245f86d7f10f8d370` |
+| 5 | `theorem` | [negative_laplace_analytic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NegativeDensityLaplaceNamespaced.lean/declarations/negative-laplace-analytic.md) | 93 | `result-track:aa31ab7706acd49d146d0c8fa30714f34164948fbe92c974ef910308d4287d5b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/EstimateSourceEdgeProfileNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/EstimateSourceEdgeProfileNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/EstimateSourceEdgeProfileNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/EstimateSourceEdgeProfileNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [unitSecond_factor](../../../../GeneralTopology/EstimateSourceEdgeProfileNamespaced.lean/declarations/unitsecond-factor.md) | 31 | `result-track:f8c1b658aadfe67d8a0fc5dd0eed308f3cdaf5b58c414b2fc63e48efce68b30c` |
-| 2 | `def` | [endpointPolynomial](../../../../GeneralTopology/EstimateSourceEdgeProfileNamespaced.lean/declarations/endpointpolynomial.md) | 37 | `declaration-track:73098907c2ca4b00281e9d7b07147ee115c43f07642bf8e2990fda4c6f023553` |
-| 3 | `theorem` | [sourceNormalization_ge_one_div_32](../../../../GeneralTopology/EstimateSourceEdgeProfileNamespaced.lean/declarations/sourcenormalization-ge-one-div-32.md) | 41 | `result-track:5208035951c018c4478e891b98dbc14a6542c4f1b9879a3d4e888310a4bf574d` |
-| 4 | `theorem` | [normalizedTest_endpoint](../../../../GeneralTopology/EstimateSourceEdgeProfileNamespaced.lean/declarations/normalizedtest-endpoint.md) | 50 | `result-track:53b1f2181203b04975171530e4209e98e8848de21fba8a375009e0ebdbb16ed3` |
-| 5 | `theorem` | [normalizedTest_even](../../../../GeneralTopology/EstimateSourceEdgeProfileNamespaced.lean/declarations/normalizedtest-even.md) | 64 | `result-track:473e3563527fb01b0108fa107aeb803796f158caafde86d4dce2fa54b1179028` |
-| 6 | `theorem` | [endpointPolynomial_continuous](../../../../GeneralTopology/EstimateSourceEdgeProfileNamespaced.lean/declarations/endpointpolynomial-continuous.md) | 72 | `result-track:ce0a766bb3b208cf80ced12d925cb47aa394e13a8aa6a0a9fbd57467b146bd75` |
-| 7 | `theorem` | [endpointPolynomial_abs_le](../../../../GeneralTopology/EstimateSourceEdgeProfileNamespaced.lean/declarations/endpointpolynomial-abs-le.md) | 77 | `result-track:0981ce77bbb0258abcf148a5dfc6eb26ce52a527228958906feb2981b0c5a65c` |
+| 1 | `theorem` | [unitSecond_factor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/EstimateSourceEdgeProfileNamespaced.lean/declarations/unitsecond-factor.md) | 31 | `result-track:f8c1b658aadfe67d8a0fc5dd0eed308f3cdaf5b58c414b2fc63e48efce68b30c` |
+| 2 | `def` | [endpointPolynomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/EstimateSourceEdgeProfileNamespaced.lean/declarations/endpointpolynomial.md) | 37 | `declaration-track:73098907c2ca4b00281e9d7b07147ee115c43f07642bf8e2990fda4c6f023553` |
+| 3 | `theorem` | [sourceNormalization_ge_one_div_32](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/EstimateSourceEdgeProfileNamespaced.lean/declarations/sourcenormalization-ge-one-div-32.md) | 41 | `result-track:5208035951c018c4478e891b98dbc14a6542c4f1b9879a3d4e888310a4bf574d` |
+| 4 | `theorem` | [normalizedTest_endpoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/EstimateSourceEdgeProfileNamespaced.lean/declarations/normalizedtest-endpoint.md) | 50 | `result-track:53b1f2181203b04975171530e4209e98e8848de21fba8a375009e0ebdbb16ed3` |
+| 5 | `theorem` | [normalizedTest_even](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/EstimateSourceEdgeProfileNamespaced.lean/declarations/normalizedtest-even.md) | 64 | `result-track:473e3563527fb01b0108fa107aeb803796f158caafde86d4dce2fa54b1179028` |
+| 6 | `theorem` | [endpointPolynomial_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/EstimateSourceEdgeProfileNamespaced.lean/declarations/endpointpolynomial-continuous.md) | 72 | `result-track:ce0a766bb3b208cf80ced12d925cb47aa394e13a8aa6a0a9fbd57467b146bd75` |
+| 7 | `theorem` | [endpointPolynomial_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/EstimateSourceEdgeProfileNamespaced.lean/declarations/endpointpolynomial-abs-le.md) | 77 | `result-track:0981ce77bbb0258abcf148a5dfc6eb26ce52a527228958906feb2981b0c5a65c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

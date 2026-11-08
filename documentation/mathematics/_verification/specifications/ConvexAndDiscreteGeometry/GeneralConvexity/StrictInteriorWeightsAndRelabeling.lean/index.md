@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/StrictInteriorWeightsAndRelabeling.lean/index.md) · [Full source](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/StrictInteriorWeightsAndRelabeling.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/StrictInteriorWeightsAndRelabeling.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/StrictInteriorWeightsAndRelabeling.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -49,7 +49,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 - `Mathlib.Algebra.BigOperators.Group.Finset.Basic` — import line 19; external provider; requires a separately pinned dependency.
 - `Mathlib.Data.Fintype.BigOperators` — import line 20; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 21; external provider; requires a separately pinned dependency.
-- [Normalized Weights And Relabeling](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/NormalizedWeightsAndRelabeling.lean/index.md) — import line 23; pinned internal source present.
+- [Normalized Weights And Relabeling](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/NormalizedWeightsAndRelabeling.lean/index.md) — import line 23; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [InteriorSimplexPoint](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/StrictInteriorWeightsAndRelabeling.lean/declarations/interiorsimplexpoint.md) | 39 | `declaration-track:9667b8994d91d3f4a560627597252603feb4eda81e1a75c2fa9530c9ceda318e` |
-| 2 | `instance` | [instCoeFunInteriorSimplexPoint](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/StrictInteriorWeightsAndRelabeling.lean/declarations/instcoefuninteriorsimplexpoint.md) | 47 | `declaration-track:ac47a2f049415fbae9091fe2e6f4c6291ca0fa660606bf7f346c4b3e7a9be722` |
-| 3 | `theorem` | [ext](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/StrictInteriorWeightsAndRelabeling.lean/declarations/ext.md) | 52 | `result-track:96ed1c206c3de9727d53d5692d9d6e4d5d5c3a5c927edf465760fd60ff15f380` |
-| 4 | `def` | [reindex](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/StrictInteriorWeightsAndRelabeling.lean/declarations/reindex.md) | 64 | `declaration-track:0c1740ff7d0010822b0d78f522070224f928e76a36ce1686b7cd5db4c438ce40` |
-| 5 | `theorem` | [reindex_apply](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/StrictInteriorWeightsAndRelabeling.lean/declarations/reindex-apply.md) | 70 | `result-track:2bb05a103bcae7a6be042d240e0faad650ea9bb4ed227602c82e3457ad3bdecf` |
+| 1 | `structure` | [InteriorSimplexPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/StrictInteriorWeightsAndRelabeling.lean/declarations/interiorsimplexpoint.md) | 39 | `declaration-track:9667b8994d91d3f4a560627597252603feb4eda81e1a75c2fa9530c9ceda318e` |
+| 2 | `instance` | [instCoeFunInteriorSimplexPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/StrictInteriorWeightsAndRelabeling.lean/declarations/instcoefuninteriorsimplexpoint.md) | 47 | `declaration-track:ac47a2f049415fbae9091fe2e6f4c6291ca0fa660606bf7f346c4b3e7a9be722` |
+| 3 | `theorem` | [ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/StrictInteriorWeightsAndRelabeling.lean/declarations/ext.md) | 52 | `result-track:96ed1c206c3de9727d53d5692d9d6e4d5d5c3a5c927edf465760fd60ff15f380` |
+| 4 | `def` | [reindex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/StrictInteriorWeightsAndRelabeling.lean/declarations/reindex.md) | 64 | `declaration-track:0c1740ff7d0010822b0d78f522070224f928e76a36ce1686b7cd5db4c438ce40` |
+| 5 | `theorem` | [reindex_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/StrictInteriorWeightsAndRelabeling.lean/declarations/reindex-apply.md) | 70 | `result-track:2bb05a103bcae7a6be042d240e0faad650ea9bb4ed227602c82e3457ad3bdecf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

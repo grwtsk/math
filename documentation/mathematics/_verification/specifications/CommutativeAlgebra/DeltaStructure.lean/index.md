@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/DeltaStructure.lean/index.md) · [Full source](../../../../CommutativeAlgebra/DeltaStructure.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DeltaStructure.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DeltaStructure.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [deltaAdditionCorrection](../../../../CommutativeAlgebra/DeltaStructure.lean/declarations/deltaadditioncorrection.md) | 21 | `declaration-track:c086a160547a2f07221e5efe6066984121ec9c652f3548b160a8bf5fc81884ae` |
-| 2 | `structure` | [PrimeDeltaStructure](../../../../CommutativeAlgebra/DeltaStructure.lean/declarations/primedeltastructure.md) | 28 | `declaration-track:83601952ad41050564f61036f0ca0f84ed338e41a61cdade99a4c52e2107f3fd` |
-| 3 | `theorem` | [frobenius_sub_power](../../../../CommutativeAlgebra/DeltaStructure.lean/declarations/frobenius-sub-power.md) | 58 | `result-track:b3ef4c1960430fd8fa58acb670576b09743fd8b1b1e696c70b94b9e2cebdf9fe` |
+| 1 | `def` | [deltaAdditionCorrection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DeltaStructure.lean/declarations/deltaadditioncorrection.md) | 21 | `declaration-track:c086a160547a2f07221e5efe6066984121ec9c652f3548b160a8bf5fc81884ae` |
+| 2 | `structure` | [PrimeDeltaStructure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DeltaStructure.lean/declarations/primedeltastructure.md) | 28 | `declaration-track:83601952ad41050564f61036f0ca0f84ed338e41a61cdade99a4c52e2107f3fd` |
+| 3 | `theorem` | [frobenius_sub_power](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DeltaStructure.lean/declarations/frobenius-sub-power.md) | 58 | `result-track:b3ef4c1960430fd8fa58acb670576b09743fd8b1b1e696c70b94b9e2cebdf9fe` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

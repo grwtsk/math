@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RodgersTaoHeat.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RodgersTaoHeat.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RodgersTaoHeat.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RodgersTaoHeat.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [rodgers_tao_newman_nonnegative](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RodgersTaoHeat.lean/declarations/rodgers-tao-newman-nonnegative.md) | 20 | `result-track:8e0b82fb59f6cc86873afa96ead357f98b371610cc3e8eac35ae282e6b582157` |
-| 2 | `theorem` | [rodgers_tao_backwards_heat](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RodgersTaoHeat.lean/declarations/rodgers-tao-backwards-heat.md) | 25 | `result-track:bc84c4f6b4bfd8dafe49a2fdbc184ab83315b9145982656d0ec8a16570363c05` |
-| 3 | `theorem` | [rodgers_tao_local_equilibrium](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RodgersTaoHeat.lean/declarations/rodgers-tao-local-equilibrium.md) | 30 | `result-track:9bd2e2bde1024da93d339a3e0b882b11c4864e7ac1cecdf6f1815f8c424e1ae8` |
+| 1 | `theorem` | [rodgers_tao_newman_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RodgersTaoHeat.lean/declarations/rodgers-tao-newman-nonnegative.md) | 20 | `result-track:8e0b82fb59f6cc86873afa96ead357f98b371610cc3e8eac35ae282e6b582157` |
+| 2 | `theorem` | [rodgers_tao_backwards_heat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RodgersTaoHeat.lean/declarations/rodgers-tao-backwards-heat.md) | 25 | `result-track:bc84c4f6b4bfd8dafe49a2fdbc184ab83315b9145982656d0ec8a16570363c05` |
+| 3 | `theorem` | [rodgers_tao_local_equilibrium](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RodgersTaoHeat.lean/declarations/rodgers-tao-local-equilibrium.md) | 30 | `result-track:9bd2e2bde1024da93d339a3e0b882b11c4864e7ac1cecdf6f1815f8c424e1ae8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ZeroBarrier.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ZeroBarrier.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ZeroBarrier.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ZeroBarrier.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PivotZeroBarrierContract](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ZeroBarrier.lean/declarations/pivotzerobarriercontract.md) | 22 | `declaration-track:c1d3e1a53c8a3a6ebf1b0145f8cc1856581554c091d87aa71ae03ac25d04134b` |
-| 2 | `theorem` | [pivot_zero_barrier_certificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ZeroBarrier.lean/declarations/pivot-zero-barrier-certificate.md) | 28 | `result-track:2fd05fb883d1f3658f6022bc2070aa234e9c71ff5c90baeee4abce5cc40a8140` |
-| 3 | `theorem` | [pivot_zero_barrier_independent_estimate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ZeroBarrier.lean/declarations/pivot-zero-barrier-independent-estimate.md) | 34 | `result-track:e92998d88f97095b494b6296e26c7fa5338546ccb239c6d482fc0398e3702951` |
+| 1 | `structure` | [PivotZeroBarrierContract](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ZeroBarrier.lean/declarations/pivotzerobarriercontract.md) | 22 | `declaration-track:c1d3e1a53c8a3a6ebf1b0145f8cc1856581554c091d87aa71ae03ac25d04134b` |
+| 2 | `theorem` | [pivot_zero_barrier_certificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ZeroBarrier.lean/declarations/pivot-zero-barrier-certificate.md) | 28 | `result-track:2fd05fb883d1f3658f6022bc2070aa234e9c71ff5c90baeee4abce5cc40a8140` |
+| 3 | `theorem` | [pivot_zero_barrier_independent_estimate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ZeroBarrier.lean/declarations/pivot-zero-barrier-independent-estimate.md) | 34 | `result-track:e92998d88f97095b494b6296e26c7fa5338546ccb239c6d482fc0398e3702951` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

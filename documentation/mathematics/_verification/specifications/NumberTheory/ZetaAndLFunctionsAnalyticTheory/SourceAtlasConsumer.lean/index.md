@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceAtlasConsumer.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceAtlasConsumer.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceAtlasConsumer.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceAtlasConsumer.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [certificate_coordinate_is_source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceAtlasConsumer.lean/declarations/certificate-coordinate-is-source.md) | 32 | `result-track:38fe1fe3dabee698c109eb0ed5465884c6aace28ab57839f08e90c3ae44aa52d` |
-| 2 | `theorem` | [certificate_decoder_is_source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceAtlasConsumer.lean/declarations/certificate-decoder-is-source.md) | 35 | `result-track:4932e5597c4e925477196d6c8a2daf2904c74cf2cbd6727beca016174472f4b8` |
-| 3 | `theorem` | [terminal_decoder_is_corrected](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceAtlasConsumer.lean/declarations/terminal-decoder-is-corrected.md) | 40 | `result-track:7d4a58cd48ca016c50536de73da8ba8f221d81fa4c1aef60c1980c6795051736` |
-| 4 | `theorem` | [original_lower_of_chart_terminal](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceAtlasConsumer.lean/declarations/original-lower-of-chart-terminal.md) | 45 | `result-track:06876c1be2b29739ba6ef384c0b66aa05d08d4aa97a8c1aafbdd5c58e18d35fe` |
-| 5 | `theorem` | [estimate_of_chart_terminal](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceAtlasConsumer.lean/declarations/estimate-of-chart-terminal.md) | 62 | `result-track:6c6911a4fcd98e65049621415042d83f3ca724838fb6d85327f505ad19099fab` |
+| 1 | `theorem` | [certificate_coordinate_is_source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceAtlasConsumer.lean/declarations/certificate-coordinate-is-source.md) | 32 | `result-track:38fe1fe3dabee698c109eb0ed5465884c6aace28ab57839f08e90c3ae44aa52d` |
+| 2 | `theorem` | [certificate_decoder_is_source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceAtlasConsumer.lean/declarations/certificate-decoder-is-source.md) | 35 | `result-track:4932e5597c4e925477196d6c8a2daf2904c74cf2cbd6727beca016174472f4b8` |
+| 3 | `theorem` | [terminal_decoder_is_corrected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceAtlasConsumer.lean/declarations/terminal-decoder-is-corrected.md) | 40 | `result-track:7d4a58cd48ca016c50536de73da8ba8f221d81fa4c1aef60c1980c6795051736` |
+| 4 | `theorem` | [original_lower_of_chart_terminal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceAtlasConsumer.lean/declarations/original-lower-of-chart-terminal.md) | 45 | `result-track:06876c1be2b29739ba6ef384c0b66aa05d08d4aa97a8c1aafbdd5c58e18d35fe` |
+| 5 | `theorem` | [estimate_of_chart_terminal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceAtlasConsumer.lean/declarations/estimate-of-chart-terminal.md) | 62 | `result-track:6c6911a4fcd98e65049621415042d83f3ca724838fb6d85327f505ad19099fab` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

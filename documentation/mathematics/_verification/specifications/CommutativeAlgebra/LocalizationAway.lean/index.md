@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/LocalizationAway.lean/index.md) · [Full source](../../../../CommutativeAlgebra/LocalizationAway.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalizationAway.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalizationAway.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [comp_localizationAway_ker](../../../../CommutativeAlgebra/LocalizationAway.lean/declarations/comp-localizationaway-ker.md) | 35 | `result-track:e309d89214eb41727362f9375ca414d5f9b5eb6ab6b34e5088282a3e7e7030b2` |
-| 2 | `def` | [compLocalizationAwayAlgHom](../../../../CommutativeAlgebra/LocalizationAway.lean/declarations/complocalizationawayalghom.md) | 53 | `declaration-track:42b104542dd40476e454d15cc39f046118e075b779d79ea7b24a2925c5cc0cdb` |
-| 3 | `lemma` | [compLocalizationAwayAlgHom_toAlgHom_toComp](../../../../CommutativeAlgebra/LocalizationAway.lean/declarations/complocalizationawayalghom-toalghom-tocomp.md) | 61 | `result-track:6190b232b1554654e82646fe34fe48d0fcc17042b4e7f9cdcc3c0c64aa405013` |
-| 4 | `lemma` | [compLocalizationAwayAlgHom_X_inl](../../../../CommutativeAlgebra/LocalizationAway.lean/declarations/complocalizationawayalghom-x-inl.md) | 70 | `result-track:8b81e8da2384a8e5458bd875c0045a6c344d6a76242f697147f22bcc02a2ee1c` |
-| 5 | `lemma` | [compLocalizationAwayAlgHom_relation_eq_zero](../../../../CommutativeAlgebra/LocalizationAway.lean/declarations/complocalizationawayalghom-relation-eq-zero.md) | 74 | `result-track:1545694cb6be5e8035434e4ef425d8539396a5d0cbd42fe48b3bb77722f3ec72` |
-| 6 | `lemma` | [sq_ker_comp_le_ker_compLocalizationAwayAlgHom](../../../../CommutativeAlgebra/LocalizationAway.lean/declarations/sq-ker-comp-le-ker-complocalizationawayalghom.md) | 82 | `result-track:99ebcf31bae2543fe2352a5dfa002b0ebfc838034c223e9b82f04ef2fd5ae115` |
-| 7 | `lemma` | [liftBaseChange_injective_of_isLocalizationAway](../../../../CommutativeAlgebra/LocalizationAway.lean/declarations/liftbasechange-injective-of-islocalizationaway.md) | 114 | `result-track:5e6476f375751647c4219c4cb0e4df3fc620454e14edaabc00915f87afdd0ea1` |
+| 1 | `lemma` | [comp_localizationAway_ker](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalizationAway.lean/declarations/comp-localizationaway-ker.md) | 35 | `result-track:e309d89214eb41727362f9375ca414d5f9b5eb6ab6b34e5088282a3e7e7030b2` |
+| 2 | `def` | [compLocalizationAwayAlgHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalizationAway.lean/declarations/complocalizationawayalghom.md) | 53 | `declaration-track:42b104542dd40476e454d15cc39f046118e075b779d79ea7b24a2925c5cc0cdb` |
+| 3 | `lemma` | [compLocalizationAwayAlgHom_toAlgHom_toComp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalizationAway.lean/declarations/complocalizationawayalghom-toalghom-tocomp.md) | 61 | `result-track:6190b232b1554654e82646fe34fe48d0fcc17042b4e7f9cdcc3c0c64aa405013` |
+| 4 | `lemma` | [compLocalizationAwayAlgHom_X_inl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalizationAway.lean/declarations/complocalizationawayalghom-x-inl.md) | 70 | `result-track:8b81e8da2384a8e5458bd875c0045a6c344d6a76242f697147f22bcc02a2ee1c` |
+| 5 | `lemma` | [compLocalizationAwayAlgHom_relation_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalizationAway.lean/declarations/complocalizationawayalghom-relation-eq-zero.md) | 74 | `result-track:1545694cb6be5e8035434e4ef425d8539396a5d0cbd42fe48b3bb77722f3ec72` |
+| 6 | `lemma` | [sq_ker_comp_le_ker_compLocalizationAwayAlgHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalizationAway.lean/declarations/sq-ker-comp-le-ker-complocalizationawayalghom.md) | 82 | `result-track:99ebcf31bae2543fe2352a5dfa002b0ebfc838034c223e9b82f04ef2fd5ae115` |
+| 7 | `lemma` | [liftBaseChange_injective_of_isLocalizationAway](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalizationAway.lean/declarations/liftbasechange-injective-of-islocalizationaway.md) | 114 | `result-track:5e6476f375751647c4219c4cb0e4df3fc620454e14edaabc00915f87afdd0ea1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

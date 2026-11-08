@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/BialgebraPrimitivePublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/BialgebraPrimitivePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BialgebraPrimitivePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BialgebraPrimitivePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [IsPrimitiveElem](../../../../CommutativeAlgebra/BialgebraPrimitivePublic.lean/declarations/isprimitiveelem.md) | 46 | `declaration-track:8ec12a070b06a03ae37a3319aec9ef8043f120d148aca75b91e56ce8f73f5216` |
-| 2 | `lemma` | [IsPrimitiveElem.ne_one](../../../../CommutativeAlgebra/BialgebraPrimitivePublic.lean/declarations/isprimitiveelem-ne-one.md) | 48 | `result-track:1c9678a2b3165ecaaf5231cf4f78e25d6e16f20e4065fb74b45f0dcc8b63362d` |
-| 3 | `lemma` | [counit_eq_zero_of_comul_eq_tmul_add_tmul](../../../../CommutativeAlgebra/BialgebraPrimitivePublic.lean/declarations/counit-eq-zero-of-comul-eq-tmul-add-tmul.md) | 54 | `result-track:d852eedd56a4eecc7c536ee19b11e11ed351636529832e10f5f89204c7bef949` |
-| 4 | `lemma` | [isPrimitiveElem_iff_comul_eq_tmul_add_tmul](../../../../CommutativeAlgebra/BialgebraPrimitivePublic.lean/declarations/isprimitiveelem-iff-comul-eq-tmul-add-tmul.md) | 58 | `result-track:1b87e6c27184dc3f42670f3f0acfcacebca0048638ec82f4745e07da74645d51` |
-| 5 | `lemma` | [IsPrimitiveElem.commutator](../../../../CommutativeAlgebra/BialgebraPrimitivePublic.lean/declarations/isprimitiveelem-commutator.md) | 68 | `result-track:5f21a73db3c46be49e6e745e3286247acf95734b2800eb305093bbc015593d46` |
+| 1 | `abbrev` | [IsPrimitiveElem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BialgebraPrimitivePublic.lean/declarations/isprimitiveelem.md) | 46 | `declaration-track:8ec12a070b06a03ae37a3319aec9ef8043f120d148aca75b91e56ce8f73f5216` |
+| 2 | `lemma` | [IsPrimitiveElem.ne_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BialgebraPrimitivePublic.lean/declarations/isprimitiveelem-ne-one.md) | 48 | `result-track:1c9678a2b3165ecaaf5231cf4f78e25d6e16f20e4065fb74b45f0dcc8b63362d` |
+| 3 | `lemma` | [counit_eq_zero_of_comul_eq_tmul_add_tmul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BialgebraPrimitivePublic.lean/declarations/counit-eq-zero-of-comul-eq-tmul-add-tmul.md) | 54 | `result-track:d852eedd56a4eecc7c536ee19b11e11ed351636529832e10f5f89204c7bef949` |
+| 4 | `lemma` | [isPrimitiveElem_iff_comul_eq_tmul_add_tmul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BialgebraPrimitivePublic.lean/declarations/isprimitiveelem-iff-comul-eq-tmul-add-tmul.md) | 58 | `result-track:1b87e6c27184dc3f42670f3f0acfcacebca0048638ec82f4745e07da74645d51` |
+| 5 | `lemma` | [IsPrimitiveElem.commutator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BialgebraPrimitivePublic.lean/declarations/isprimitiveelem-commutator.md) | 68 | `result-track:5f21a73db3c46be49e6e745e3286247acf95734b2800eb305093bbc015593d46` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

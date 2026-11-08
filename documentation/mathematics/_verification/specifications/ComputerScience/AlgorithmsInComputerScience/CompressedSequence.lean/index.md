@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/CompressedSequence.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/CompressedSequence.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CompressedSequence.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CompressedSequence.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [CompressedStep](../../../../../ComputerScience/AlgorithmsInComputerScience/CompressedSequence.lean/declarations/compressedstep.md) | 10 | `declaration-track:8d4bedde9f606863d6d486c046907b554cfd19c0815daba6fa070e4a4af21298` |
-| 2 | `def` | [compressedSequence](../../../../../ComputerScience/AlgorithmsInComputerScience/CompressedSequence.lean/declarations/compressedsequence.md) | 12 | `declaration-track:f1b9fc6bd215f47bc4dd7ec199aef542883ffbef3568c2cd6051ff651f139a40` |
-| 3 | `theorem` | [compressedSequence_count](../../../../../ComputerScience/AlgorithmsInComputerScience/CompressedSequence.lean/declarations/compressedsequence-count.md) | 15 | `result-track:075356c30197427d7e74d61476b20f99a1941d08cd738b53504bf703599f1b8f` |
+| 1 | `abbrev` | [CompressedStep](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CompressedSequence.lean/declarations/compressedstep.md) | 10 | `declaration-track:8d4bedde9f606863d6d486c046907b554cfd19c0815daba6fa070e4a4af21298` |
+| 2 | `def` | [compressedSequence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CompressedSequence.lean/declarations/compressedsequence.md) | 12 | `declaration-track:f1b9fc6bd215f47bc4dd7ec199aef542883ffbef3568c2cd6051ff651f139a40` |
+| 3 | `theorem` | [compressedSequence_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CompressedSequence.lean/declarations/compressedsequence-count.md) | 15 | `result-track:075356c30197427d7e74d61476b20f99a1941d08cd738b53504bf703599f1b8f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

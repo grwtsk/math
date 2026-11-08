@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ChoiceOperator.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ChoiceOperator.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ChoiceOperator.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ChoiceOperator.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [Set](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ChoiceOperator.lean/declarations/set.md) | 28 | `declaration-track:0a6dedce9b04e596d9cb622692782d99f2b22b761b0e5dd4107ed1998e60642f` |
-| 2 | `structure` | [ChoiceOperator](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ChoiceOperator.lean/declarations/choiceoperator.md) | 31 | `declaration-track:754a0a26d27aaede8286912b298146dd1050f7ae9dddca3385a0f35518e18a69` |
-| 3 | `structure` | [ChoiceAssumption](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ChoiceOperator.lean/declarations/choiceassumption.md) | 43 | `declaration-track:29c74f18a9e134df4d1775b4a4853a3b9482ce30a413c332158a08a280b8c660` |
+| 1 | `abbrev` | [Set](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ChoiceOperator.lean/declarations/set.md) | 28 | `declaration-track:0a6dedce9b04e596d9cb622692782d99f2b22b761b0e5dd4107ed1998e60642f` |
+| 2 | `structure` | [ChoiceOperator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ChoiceOperator.lean/declarations/choiceoperator.md) | 31 | `declaration-track:754a0a26d27aaede8286912b298146dd1050f7ae9dddca3385a0f35518e18a69` |
+| 3 | `structure` | [ChoiceAssumption](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ChoiceOperator.lean/declarations/choiceassumption.md) | 43 | `declaration-track:29c74f18a9e134df4d1775b4a4853a3b9482ce30a413c332158a08a280b8c660` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RestrictedAdditiveMultiplicativeBridgeAudit.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RestrictedAdditiveMultiplicativeBridgeAudit.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RestrictedAdditiveMultiplicativeBridgeAudit.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RestrictedAdditiveMultiplicativeBridgeAudit.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Moebius.NormControlledAdditiveMultiplicativeBridge`](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/NormControlledAdditiveMultiplicativeBridge.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.NormControlledAdditiveMultiplicativeBridge`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/NormControlledAdditiveMultiplicativeBridge.lean/index.md) — import line 8; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [RestrictedDifferenceSpace](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RestrictedAdditiveMultiplicativeBridgeAudit.lean/declarations/restricteddifferencespace.md) | 18 | `declaration-track:5384ef29ab7590448296d80e0f8e8dafa2fd215681ed959527aa5a38d1892cac` |
-| 2 | `def` | [HasRestrictedLowerFrameBound](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RestrictedAdditiveMultiplicativeBridgeAudit.lean/declarations/hasrestrictedlowerframebound.md) | 24 | `declaration-track:ace20834b5a8a8e8ba7090fe4de544fcce9cb8a5507513774c12f010d7777216` |
-| 3 | `theorem` | [not_hasRestrictedLowerFrameBound_of_admissibleKernel](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RestrictedAdditiveMultiplicativeBridgeAudit.lean/declarations/not-hasrestrictedlowerframebound-of-admissiblekernel.md) | 35 | `result-track:8983c01bbc8e43a5d4015170aa049cf467ce0ebf30aab9ab8c74a8add9a1ef1c` |
-| 4 | `theorem` | [ambientKernel_requires_admissibility](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RestrictedAdditiveMultiplicativeBridgeAudit.lean/declarations/ambientkernel-requires-admissibility.md) | 63 | `result-track:5510232cf4822fedac27eba292ae95d9c58c349c254eef10d288d66e7c5e5ce2` |
-| 5 | `structure` | [ActualArithmeticBridgeAvailability](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RestrictedAdditiveMultiplicativeBridgeAudit.lean/declarations/actualarithmeticbridgeavailability.md) | 79 | `declaration-track:a15906f3f207f6e5eb472d08eecd58b901c5053726ebb90557d6f0a37d096294` |
-| 6 | `def` | [ReconstructionResidual](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RestrictedAdditiveMultiplicativeBridgeAudit.lean/declarations/reconstructionresidual.md) | 90 | `declaration-track:6d88bb3c8a017e54f6e3e373ac3b5a23786a304caecaef6b26288552ccfe4eb3` |
+| 1 | `abbrev` | [RestrictedDifferenceSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RestrictedAdditiveMultiplicativeBridgeAudit.lean/declarations/restricteddifferencespace.md) | 18 | `declaration-track:5384ef29ab7590448296d80e0f8e8dafa2fd215681ed959527aa5a38d1892cac` |
+| 2 | `def` | [HasRestrictedLowerFrameBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RestrictedAdditiveMultiplicativeBridgeAudit.lean/declarations/hasrestrictedlowerframebound.md) | 24 | `declaration-track:ace20834b5a8a8e8ba7090fe4de544fcce9cb8a5507513774c12f010d7777216` |
+| 3 | `theorem` | [not_hasRestrictedLowerFrameBound_of_admissibleKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RestrictedAdditiveMultiplicativeBridgeAudit.lean/declarations/not-hasrestrictedlowerframebound-of-admissiblekernel.md) | 35 | `result-track:8983c01bbc8e43a5d4015170aa049cf467ce0ebf30aab9ab8c74a8add9a1ef1c` |
+| 4 | `theorem` | [ambientKernel_requires_admissibility](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RestrictedAdditiveMultiplicativeBridgeAudit.lean/declarations/ambientkernel-requires-admissibility.md) | 63 | `result-track:5510232cf4822fedac27eba292ae95d9c58c349c254eef10d288d66e7c5e5ce2` |
+| 5 | `structure` | [ActualArithmeticBridgeAvailability](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RestrictedAdditiveMultiplicativeBridgeAudit.lean/declarations/actualarithmeticbridgeavailability.md) | 79 | `declaration-track:a15906f3f207f6e5eb472d08eecd58b901c5053726ebb90557d6f0a37d096294` |
+| 6 | `def` | [ReconstructionResidual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RestrictedAdditiveMultiplicativeBridgeAudit.lean/declarations/reconstructionresidual.md) | 90 | `declaration-track:6d88bb3c8a017e54f6e3e373ac3b5a23786a304caecaef6b26288552ccfe4eb3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

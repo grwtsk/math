@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/DiophantineEquations/ExceptionalSetGeometryLatticeInput.lean/index.md) · [Full source](../../../../../NumberTheory/DiophantineEquations/ExceptionalSetGeometryLatticeInput.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ExceptionalSetGeometryLatticeInput.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ExceptionalSetGeometryLatticeInput.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.GeometryOfNumbers.PrimitiveLinearKernel`](../../../../../NumberTheory/PrimitiveLinearKernel.lean/index.md) — import line 20; pinned internal source present.
-- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.ExceptionalSetGeometryPrimitivity`](../../../../../NumberTheory/DiophantineEquations/ExceptionalSetGeometryPrimitivity.lean/index.md) — import line 21; pinned internal source present.
+- [`GRWTSK.GeometryOfNumbers.PrimitiveLinearKernel`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimitiveLinearKernel.lean/index.md) — import line 20; pinned internal source present.
+- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.ExceptionalSetGeometryPrimitivity`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ExceptionalSetGeometryPrimitivity.lean/index.md) — import line 21; pinned internal source present.
 - `Mathlib.Tactic` — import line 22; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [geometrySelectedMonomialUpper](../../../../../NumberTheory/DiophantineEquations/ExceptionalSetGeometryLatticeInput.lean/declarations/geometryselectedmonomialupper.md) | 39 | `declaration-track:732eec9607d22178f72ac86f4392aeec37b25a6977334802aa2fb547eb101afc` |
-| 2 | `theorem` | [paperSelectedMonomial_le_geometryUpper](../../../../../NumberTheory/DiophantineEquations/ExceptionalSetGeometryLatticeInput.lean/declarations/paperselectedmonomial-le-geometryupper.md) | 45 | `result-track:858cd88279c940d0c63611b406469a67080bd9fa835948d4f606ad4f3d63b301` |
-| 3 | `def` | [geometrySelectedPoint](../../../../../NumberTheory/DiophantineEquations/ExceptionalSetGeometryLatticeInput.lean/declarations/geometryselectedpoint.md) | 59 | `declaration-track:72b6aaa9284d064716ba44a3f3a7252d62ce2cdb18e555476c5b5575b0865159` |
-| 4 | `def` | [geometryPrimitiveLinearBoxData](../../../../../NumberTheory/DiophantineEquations/ExceptionalSetGeometryLatticeInput.lean/declarations/geometryprimitivelinearboxdata.md) | 68 | `declaration-track:071765221d237b96a1e74cddb5c7d03bea9232e40e1afbf2b2235cb8509fe91a` |
-| 5 | `theorem` | [geometrySelectedPoint_mem_primitivePositiveSolutions](../../../../../NumberTheory/DiophantineEquations/ExceptionalSetGeometryLatticeInput.lean/declarations/geometryselectedpoint-mem-primitivepositivesolutions.md) | 98 | `result-track:41468c9d6185c8c10df3ffce623f7816ff5802e03b8a989f6ffd71b3ecac969b` |
-| 6 | `theorem` | [geometrySelectedPoint_mem_linearKernel](../../../../../NumberTheory/DiophantineEquations/ExceptionalSetGeometryLatticeInput.lean/declarations/geometryselectedpoint-mem-linearkernel.md) | 126 | `result-track:dc3864227a0854c9d9d85544ea68bc6dc96060bd7cc4335b76bf6a5b4fcaa572` |
-| 7 | `theorem` | [geometryLatticeInput_of_paperAdmissible](../../../../../NumberTheory/DiophantineEquations/ExceptionalSetGeometryLatticeInput.lean/declarations/geometrylatticeinput-of-paperadmissible.md) | 143 | `result-track:4877c433f1aaa53b3728a3e9214ba4beacd1fc55cc85e710522add35ea9b3513` |
-| 8 | `theorem` | [lattice_input_does_not_supply_bound_fixture](../../../../../NumberTheory/DiophantineEquations/ExceptionalSetGeometryLatticeInput.lean/declarations/lattice-input-does-not-supply-bound-fixture.md) | 167 | `result-track:58fa2a0d14512a88f87637270144d6597189e7f42af50405ee26a138289a4702` |
+| 1 | `def` | [geometrySelectedMonomialUpper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ExceptionalSetGeometryLatticeInput.lean/declarations/geometryselectedmonomialupper.md) | 39 | `declaration-track:732eec9607d22178f72ac86f4392aeec37b25a6977334802aa2fb547eb101afc` |
+| 2 | `theorem` | [paperSelectedMonomial_le_geometryUpper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ExceptionalSetGeometryLatticeInput.lean/declarations/paperselectedmonomial-le-geometryupper.md) | 45 | `result-track:858cd88279c940d0c63611b406469a67080bd9fa835948d4f606ad4f3d63b301` |
+| 3 | `def` | [geometrySelectedPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ExceptionalSetGeometryLatticeInput.lean/declarations/geometryselectedpoint.md) | 59 | `declaration-track:72b6aaa9284d064716ba44a3f3a7252d62ce2cdb18e555476c5b5575b0865159` |
+| 4 | `def` | [geometryPrimitiveLinearBoxData](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ExceptionalSetGeometryLatticeInput.lean/declarations/geometryprimitivelinearboxdata.md) | 68 | `declaration-track:071765221d237b96a1e74cddb5c7d03bea9232e40e1afbf2b2235cb8509fe91a` |
+| 5 | `theorem` | [geometrySelectedPoint_mem_primitivePositiveSolutions](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ExceptionalSetGeometryLatticeInput.lean/declarations/geometryselectedpoint-mem-primitivepositivesolutions.md) | 98 | `result-track:41468c9d6185c8c10df3ffce623f7816ff5802e03b8a989f6ffd71b3ecac969b` |
+| 6 | `theorem` | [geometrySelectedPoint_mem_linearKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ExceptionalSetGeometryLatticeInput.lean/declarations/geometryselectedpoint-mem-linearkernel.md) | 126 | `result-track:dc3864227a0854c9d9d85544ea68bc6dc96060bd7cc4335b76bf6a5b4fcaa572` |
+| 7 | `theorem` | [geometryLatticeInput_of_paperAdmissible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ExceptionalSetGeometryLatticeInput.lean/declarations/geometrylatticeinput-of-paperadmissible.md) | 143 | `result-track:4877c433f1aaa53b3728a3e9214ba4beacd1fc55cc85e710522add35ea9b3513` |
+| 8 | `theorem` | [lattice_input_does_not_supply_bound_fixture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ExceptionalSetGeometryLatticeInput.lean/declarations/lattice-input-does-not-supply-bound-fixture.md) | 167 | `result-track:58fa2a0d14512a88f87637270144d6597189e7f42af50405ee26a138289a4702` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

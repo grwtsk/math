@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/GeodesicCompletion.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/GeodesicCompletion.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/GeodesicCompletion.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/GeodesicCompletion.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [OnBooleanGeodesic](../../../../../ComputerScience/AlgorithmsInComputerScience/GeodesicCompletion.lean/declarations/onbooleangeodesic.md) | 27 | `declaration-track:76d516c64c0964ba95262fe36f22b215537d92bf3aae36836df66e04011706fa` |
-| 2 | `def` | [BalancedLegs](../../../../../ComputerScience/AlgorithmsInComputerScience/GeodesicCompletion.lean/declarations/balancedlegs.md) | 34 | `declaration-track:a978823989d8f5966293d2e24be7cd8a4b2d5a04ff624ca1894b6717e0c170fa` |
-| 3 | `structure` | [BooleanMidpoint](../../../../../ComputerScience/AlgorithmsInComputerScience/GeodesicCompletion.lean/declarations/booleanmidpoint.md) | 40 | `declaration-track:30ca5ad8ee549ad27abfe77f7dfcf4212f7631a150a77044fd6a0a0be120aa3b` |
-| 4 | `structure` | [RealizedFiniteIncidence](../../../../../ComputerScience/AlgorithmsInComputerScience/GeodesicCompletion.lean/declarations/realizedfiniteincidence.md) | 51 | `declaration-track:721bb88669b3379a3fd34df6ee50bfe6b54ee1d2cb5d8bd4fa842095a4d9d227` |
-| 5 | `inductive` | [MidpointGenerated](../../../../../ComputerScience/AlgorithmsInComputerScience/GeodesicCompletion.lean/declarations/midpointgenerated.md) | 62 | `declaration-track:c381189a1d0f8df8a64a3e239cdd3825d8eeb669d6fa3873997a7a4060ac9c5f` |
-| 6 | `structure` | [CertifiedMidpointTower](../../../../../ComputerScience/AlgorithmsInComputerScience/GeodesicCompletion.lean/declarations/certifiedmidpointtower.md) | 86 | `declaration-track:d1097686476237ecb723a5ba2400b00d575ad738a359bd3e285df1f3d8a628de` |
-| 7 | `structure` | [CompatibleMidpointCompletion](../../../../../ComputerScience/AlgorithmsInComputerScience/GeodesicCompletion.lean/declarations/compatiblemidpointcompletion.md) | 100 | `declaration-track:292a1f619be838ef0d6ba736da42ea856813bb2654899d8bda0ee29f32fa360c` |
+| 1 | `def` | [OnBooleanGeodesic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/GeodesicCompletion.lean/declarations/onbooleangeodesic.md) | 27 | `declaration-track:76d516c64c0964ba95262fe36f22b215537d92bf3aae36836df66e04011706fa` |
+| 2 | `def` | [BalancedLegs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/GeodesicCompletion.lean/declarations/balancedlegs.md) | 34 | `declaration-track:a978823989d8f5966293d2e24be7cd8a4b2d5a04ff624ca1894b6717e0c170fa` |
+| 3 | `structure` | [BooleanMidpoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/GeodesicCompletion.lean/declarations/booleanmidpoint.md) | 40 | `declaration-track:30ca5ad8ee549ad27abfe77f7dfcf4212f7631a150a77044fd6a0a0be120aa3b` |
+| 4 | `structure` | [RealizedFiniteIncidence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/GeodesicCompletion.lean/declarations/realizedfiniteincidence.md) | 51 | `declaration-track:721bb88669b3379a3fd34df6ee50bfe6b54ee1d2cb5d8bd4fa842095a4d9d227` |
+| 5 | `inductive` | [MidpointGenerated](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/GeodesicCompletion.lean/declarations/midpointgenerated.md) | 62 | `declaration-track:c381189a1d0f8df8a64a3e239cdd3825d8eeb669d6fa3873997a7a4060ac9c5f` |
+| 6 | `structure` | [CertifiedMidpointTower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/GeodesicCompletion.lean/declarations/certifiedmidpointtower.md) | 86 | `declaration-track:d1097686476237ecb723a5ba2400b00d575ad738a359bd3e285df1f3d8a628de` |
+| 7 | `structure` | [CompatibleMidpointCompletion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/GeodesicCompletion.lean/declarations/compatiblemidpointcompletion.md) | 100 | `declaration-track:292a1f619be838ef0d6ba736da42ea856813bb2654899d8bda0ee29f32fa360c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

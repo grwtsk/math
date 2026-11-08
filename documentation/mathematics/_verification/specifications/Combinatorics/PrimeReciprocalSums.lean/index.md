@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/PrimeReciprocalSums.lean/index.md) · [Full source](../../../../Combinatorics/PrimeReciprocalSums.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeReciprocalSums.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeReciprocalSums.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [primeReciprocalPartial](../../../../Combinatorics/PrimeReciprocalSums.lean/declarations/primereciprocalpartial.md) | 16 | `declaration-track:bd9d9a166b28aa9194f10604e135533145413461e7c1765df895a60be7731eed` |
-| 2 | `theorem` | [primeReciprocalPartial_nonneg](../../../../Combinatorics/PrimeReciprocalSums.lean/declarations/primereciprocalpartial-nonneg.md) | 20 | `result-track:4125658f58e41e56f90309c6521b3430f0a193fc33f3255134984f0f0e525c08` |
-| 3 | `theorem` | [primesUpTo_subset_of_le](../../../../Combinatorics/PrimeReciprocalSums.lean/declarations/primesupto-subset-of-le.md) | 28 | `result-track:9370cd61f97342abe79f430649eea64021c52b929fa1b045f301b88aac88d6ec` |
-| 4 | `theorem` | [primeReciprocalPartial_mono](../../../../Combinatorics/PrimeReciprocalSums.lean/declarations/primereciprocalpartial-mono.md) | 36 | `result-track:de08d4aa7ff5ac4407f8ea175a360bd99ee176d2daae6b483da3d5b180a984b1` |
+| 1 | `def` | [primeReciprocalPartial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeReciprocalSums.lean/declarations/primereciprocalpartial.md) | 16 | `declaration-track:bd9d9a166b28aa9194f10604e135533145413461e7c1765df895a60be7731eed` |
+| 2 | `theorem` | [primeReciprocalPartial_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeReciprocalSums.lean/declarations/primereciprocalpartial-nonneg.md) | 20 | `result-track:4125658f58e41e56f90309c6521b3430f0a193fc33f3255134984f0f0e525c08` |
+| 3 | `theorem` | [primesUpTo_subset_of_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeReciprocalSums.lean/declarations/primesupto-subset-of-le.md) | 28 | `result-track:9370cd61f97342abe79f430649eea64021c52b929fa1b045f301b88aac88d6ec` |
+| 4 | `theorem` | [primeReciprocalPartial_mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeReciprocalSums.lean/declarations/primereciprocalpartial-mono.md) | 36 | `result-track:de08d4aa7ff5ac4407f8ea175a360bd99ee176d2daae6b483da3d5b180a984b1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

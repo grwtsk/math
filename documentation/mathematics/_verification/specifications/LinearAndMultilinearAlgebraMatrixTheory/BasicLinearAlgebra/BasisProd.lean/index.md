@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisProd.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisProd.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisProd.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisProd.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,15 +60,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [prod](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisProd.lean/declarations/prod.md) | 40 | `declaration-track:10c83e1b2a0b657f72e25f22b2915bf1f50b65c9bf8e133fc8997a6033f55fbc` |
-| 2 | `theorem` | [prod_repr_inl](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisProd.lean/declarations/prod-repr-inl.md) | 44 | `result-track:0af0f6d316279a413f26a7dd0073761675df3aef3dc929a138bda4121b3d0ad7` |
-| 3 | `theorem` | [prod_repr_inr](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisProd.lean/declarations/prod-repr-inr.md) | 48 | `result-track:5224d40c95b093c8e64420a19bf6d0cbe3eb117074d9a24060a3fc901655c3d2` |
-| 4 | `theorem` | [prod_apply_inl_fst](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisProd.lean/declarations/prod-apply-inl-fst.md) | 51 | `result-track:5967572289f01a0e210fb1596e591e5cbf032e77c1a1badc0a03bed0218ea477` |
-| 5 | `theorem` | [prod_apply_inr_fst](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisProd.lean/declarations/prod-apply-inr-fst.md) | 59 | `result-track:b268b0233e981efe53b1ca0aa0d63c5d1aa309dbc019377bc428a9c3bdc19357` |
-| 6 | `theorem` | [prod_apply_inl_snd](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisProd.lean/declarations/prod-apply-inl-snd.md) | 68 | `result-track:ebbe8e565d2c5bab2e44278b5aded9c7c824ca8e94725670b9d88298c5a2da22` |
-| 7 | `theorem` | [prod_apply_inr_snd](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisProd.lean/declarations/prod-apply-inr-snd.md) | 77 | `result-track:075c0cb2f201135736f8d2bfca3992e35aac54db864a19f4f12b9f55c476eaf8` |
-| 8 | `theorem` | [prod_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisProd.lean/declarations/prod-apply.md) | 86 | `result-track:2210ff6a32126a4b342b683cf90f5ce0b1b8a5319c1db67109ce8bec97c22b76` |
-| 9 | `instance` | [prod](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisProd.lean/declarations/prod-source-edition-2.md) | 99 | `declaration-track:67dd9f0f2fb3b2413feb45ef875691396c0c6041ef367e73960f773c1e93e52e` |
+| 1 | `def` | [prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisProd.lean/declarations/prod.md) | 40 | `declaration-track:10c83e1b2a0b657f72e25f22b2915bf1f50b65c9bf8e133fc8997a6033f55fbc` |
+| 2 | `theorem` | [prod_repr_inl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisProd.lean/declarations/prod-repr-inl.md) | 44 | `result-track:0af0f6d316279a413f26a7dd0073761675df3aef3dc929a138bda4121b3d0ad7` |
+| 3 | `theorem` | [prod_repr_inr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisProd.lean/declarations/prod-repr-inr.md) | 48 | `result-track:5224d40c95b093c8e64420a19bf6d0cbe3eb117074d9a24060a3fc901655c3d2` |
+| 4 | `theorem` | [prod_apply_inl_fst](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisProd.lean/declarations/prod-apply-inl-fst.md) | 51 | `result-track:5967572289f01a0e210fb1596e591e5cbf032e77c1a1badc0a03bed0218ea477` |
+| 5 | `theorem` | [prod_apply_inr_fst](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisProd.lean/declarations/prod-apply-inr-fst.md) | 59 | `result-track:b268b0233e981efe53b1ca0aa0d63c5d1aa309dbc019377bc428a9c3bdc19357` |
+| 6 | `theorem` | [prod_apply_inl_snd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisProd.lean/declarations/prod-apply-inl-snd.md) | 68 | `result-track:ebbe8e565d2c5bab2e44278b5aded9c7c824ca8e94725670b9d88298c5a2da22` |
+| 7 | `theorem` | [prod_apply_inr_snd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisProd.lean/declarations/prod-apply-inr-snd.md) | 77 | `result-track:075c0cb2f201135736f8d2bfca3992e35aac54db864a19f4f12b9f55c476eaf8` |
+| 8 | `theorem` | [prod_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisProd.lean/declarations/prod-apply.md) | 86 | `result-track:2210ff6a32126a4b342b683cf90f5ce0b1b8a5319c1db67109ce8bec97c22b76` |
+| 9 | `instance` | [prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisProd.lean/declarations/prod-source-edition-2.md) | 99 | `declaration-track:67dd9f0f2fb3b2413feb45ef875691396c0c6041ef367e73960f773c1e93e52e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

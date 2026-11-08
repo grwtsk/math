@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesLocallyBijectivePublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesLocallyBijectivePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesLocallyBijectivePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesLocallyBijectivePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [isLocallyInjective_whisker](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesLocallyBijectivePublic.lean/declarations/islocallyinjective-whisker.md) | 35 | `result-track:33eee35c9bb823b74d1f697351ac13d25c318be92be37397328d23429265cee7` |
-| 2 | `lemma` | [isLocallyInjective_of_whisker](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesLocallyBijectivePublic.lean/declarations/islocallyinjective-of-whisker.md) | 40 | `result-track:a5e78a67386ba3d2c6dae31dddae233276102d323efdfc5e74d29fcdb220cd4d` |
-| 3 | `lemma` | [isLocallyInjective_whisker_iff](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesLocallyBijectivePublic.lean/declarations/islocallyinjective-whisker-iff.md) | 56 | `result-track:014152341c98e89b116ef24cd4417812d949e78400c1bb0ec08ab8fb19966cfa` |
-| 4 | `lemma` | [isLocallySurjective_whisker](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesLocallyBijectivePublic.lean/declarations/islocallysurjective-whisker.md) | 61 | `result-track:013ca6904c25209668aafea89c10f05c5e3745616eafd618ae1f1fd6e96aa58c` |
-| 5 | `lemma` | [isLocallySurjective_of_whisker](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesLocallyBijectivePublic.lean/declarations/islocallysurjective-of-whisker.md) | 65 | `result-track:3f719f52f9c84e00b151c4f627153f1fc689c2882a37e68155f272d81962806d` |
-| 6 | `lemma` | [isLocallySurjective_whisker_iff](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesLocallyBijectivePublic.lean/declarations/islocallysurjective-whisker-iff.md) | 79 | `result-track:5d7fa1cb376333b178097ef98a45fd2f6ab0c24626461c52621d5a17b6257aa6` |
+| 1 | `lemma` | [isLocallyInjective_whisker](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesLocallyBijectivePublic.lean/declarations/islocallyinjective-whisker.md) | 35 | `result-track:33eee35c9bb823b74d1f697351ac13d25c318be92be37397328d23429265cee7` |
+| 2 | `lemma` | [isLocallyInjective_of_whisker](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesLocallyBijectivePublic.lean/declarations/islocallyinjective-of-whisker.md) | 40 | `result-track:a5e78a67386ba3d2c6dae31dddae233276102d323efdfc5e74d29fcdb220cd4d` |
+| 3 | `lemma` | [isLocallyInjective_whisker_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesLocallyBijectivePublic.lean/declarations/islocallyinjective-whisker-iff.md) | 56 | `result-track:014152341c98e89b116ef24cd4417812d949e78400c1bb0ec08ab8fb19966cfa` |
+| 4 | `lemma` | [isLocallySurjective_whisker](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesLocallyBijectivePublic.lean/declarations/islocallysurjective-whisker.md) | 61 | `result-track:013ca6904c25209668aafea89c10f05c5e3745616eafd618ae1f1fd6e96aa58c` |
+| 5 | `lemma` | [isLocallySurjective_of_whisker](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesLocallyBijectivePublic.lean/declarations/islocallysurjective-of-whisker.md) | 65 | `result-track:3f719f52f9c84e00b151c4f627153f1fc689c2882a37e68155f272d81962806d` |
+| 6 | `lemma` | [isLocallySurjective_whisker_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesLocallyBijectivePublic.lean/declarations/islocallysurjective-whisker-iff.md) | 79 | `result-track:5d7fa1cb376333b178097ef98a45fd2f6ab0c24626461c52621d5a17b6257aa6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

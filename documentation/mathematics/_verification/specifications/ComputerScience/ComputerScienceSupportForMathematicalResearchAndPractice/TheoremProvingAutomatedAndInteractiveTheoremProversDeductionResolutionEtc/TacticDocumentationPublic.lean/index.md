@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/TacticDocumentationPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/TacticDocumentationPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/TacticDocumentationPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/TacticDocumentationPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [isNonemptyDoc](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/TacticDocumentationPublic.lean/declarations/isnonemptydoc.md) | 27 | `declaration-track:c5d2587005748e970738daeb2e40ae257044635da530e1440375ef063ef2424d` |
-| 2 | `def` | [tacticDocs](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/TacticDocumentationPublic.lean/declarations/tacticdocs.md) | 31 | `declaration-track:efdd94a3de41374072e0186dd3704fc439be1b5b2138dde5bf1a5320352f36f3` |
-| 3 | `def` | [tacticAlt](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/TacticDocumentationPublic.lean/declarations/tacticalt.md) | 59 | `declaration-track:f731e28237b9f3f0fc9bf2e4eab65572c6b7c64f1fb616f997e0b305c36c1b67` |
+| 1 | `def` | [isNonemptyDoc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/TacticDocumentationPublic.lean/declarations/isnonemptydoc.md) | 27 | `declaration-track:c5d2587005748e970738daeb2e40ae257044635da530e1440375ef063ef2424d` |
+| 2 | `def` | [tacticDocs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/TacticDocumentationPublic.lean/declarations/tacticdocs.md) | 31 | `declaration-track:efdd94a3de41374072e0186dd3704fc439be1b5b2138dde5bf1a5320352f36f3` |
+| 3 | `def` | [tacticAlt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/TacticDocumentationPublic.lean/declarations/tacticalt.md) | 59 | `declaration-track:f731e28237b9f3f0fc9bf2e4eab65572c6b7c64f1fb616f997e0b305c36c1b67` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectEighthControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectEighthControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectEighthControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectEighthControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenDirectEighthClosure`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectEighthClosure.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenDirectEighthClosure`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectEighthClosure.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [eighth34_zero_rejected](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectEighthControls.lean/declarations/eighth34-zero-rejected.md) | 22 | `result-track:a5f57f7eef245c3daea0508a715ee73e19295b370263d2ff97aebd353dcddbab` |
-| 2 | `theorem` | [eighth00_one_rejected](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectEighthControls.lean/declarations/eighth00-one-rejected.md) | 27 | `result-track:f7ad9f7f56acdbd80fb2840fa2a227bb5d4226b88088e96a39d6c240ec72f29e` |
-| 3 | `theorem` | [final_three_present](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectEighthControls.lean/declarations/final-three-present.md) | 32 | `result-track:f2bc460f3d75152abd0f0dff552fdf05082fa539e660259ed43b1e305b1302a9` |
-| 4 | `theorem` | [exact_exhaustion](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectEighthControls.lean/declarations/exact-exhaustion.md) | 36 | `result-track:f497885f87964073d43a2bbac12c01903b66c137be5cb4c969578b66ea63ef86` |
-| 5 | `theorem` | [none_ne_successful_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectEighthControls.lean/declarations/none-ne-successful-zero.md) | 40 | `result-track:e940a9b800d33d1075c07c4cb915ff8eaa5e5e96760c078820806a83f4abcda4` |
-| 6 | `theorem` | [positive_quarter_exact](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectEighthControls.lean/declarations/positive-quarter-exact.md) | 42 | `result-track:ba68f291319817141cefa4d7a592a5898260b611c9842fb5d591fede5c28d40d` |
-| 7 | `theorem` | [positive_half_exact](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectEighthControls.lean/declarations/positive-half-exact.md) | 46 | `result-track:16738bd4d8111144c79ac8830d73a39ea4f3326465e786df4502f475a900e9b1` |
-| 8 | `theorem` | [positive_block_exact](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectEighthControls.lean/declarations/positive-block-exact.md) | 50 | `result-track:0788171552ce5e3289813a7205b167f1a302269b63adefeb5f74b051df1d1593` |
-| 9 | `theorem` | [claim_sum_one](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectEighthControls.lean/declarations/claim-sum-one.md) | 54 | `result-track:cca8c9e23c0a961bb64d913e7d1270b6c03cab35bdc70db13ece06538cb22fe3` |
+| 1 | `theorem` | [eighth34_zero_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectEighthControls.lean/declarations/eighth34-zero-rejected.md) | 22 | `result-track:a5f57f7eef245c3daea0508a715ee73e19295b370263d2ff97aebd353dcddbab` |
+| 2 | `theorem` | [eighth00_one_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectEighthControls.lean/declarations/eighth00-one-rejected.md) | 27 | `result-track:f7ad9f7f56acdbd80fb2840fa2a227bb5d4226b88088e96a39d6c240ec72f29e` |
+| 3 | `theorem` | [final_three_present](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectEighthControls.lean/declarations/final-three-present.md) | 32 | `result-track:f2bc460f3d75152abd0f0dff552fdf05082fa539e660259ed43b1e305b1302a9` |
+| 4 | `theorem` | [exact_exhaustion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectEighthControls.lean/declarations/exact-exhaustion.md) | 36 | `result-track:f497885f87964073d43a2bbac12c01903b66c137be5cb4c969578b66ea63ef86` |
+| 5 | `theorem` | [none_ne_successful_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectEighthControls.lean/declarations/none-ne-successful-zero.md) | 40 | `result-track:e940a9b800d33d1075c07c4cb915ff8eaa5e5e96760c078820806a83f4abcda4` |
+| 6 | `theorem` | [positive_quarter_exact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectEighthControls.lean/declarations/positive-quarter-exact.md) | 42 | `result-track:ba68f291319817141cefa4d7a592a5898260b611c9842fb5d591fede5c28d40d` |
+| 7 | `theorem` | [positive_half_exact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectEighthControls.lean/declarations/positive-half-exact.md) | 46 | `result-track:16738bd4d8111144c79ac8830d73a39ea4f3326465e786df4502f475a900e9b1` |
+| 8 | `theorem` | [positive_block_exact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectEighthControls.lean/declarations/positive-block-exact.md) | 50 | `result-track:0788171552ce5e3289813a7205b167f1a302269b63adefeb5f74b051df1d1593` |
+| 9 | `theorem` | [claim_sum_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectEighthControls.lean/declarations/claim-sum-one.md) | 54 | `result-track:cca8c9e23c0a961bb64d913e7d1270b6c03cab35bdc70db13ece06538cb22fe3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

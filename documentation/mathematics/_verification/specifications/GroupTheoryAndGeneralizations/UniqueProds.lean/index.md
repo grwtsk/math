@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/UniqueProds.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/UniqueProds.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/UniqueProds.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/UniqueProds.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,20 +57,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [UniqueMul](../../../../GroupTheoryAndGeneralizations/UniqueProds.lean/declarations/uniquemul.md) | 56 | `declaration-track:45319e99a86ad8c4c5fddf5f182c3b6421cc6afdb69ed5eb7244a41153bd8345` |
-| 2 | `theorem` | [mt](../../../../GroupTheoryAndGeneralizations/UniqueProds.lean/declarations/mt.md) | 65 | `result-track:d23db90b5c95966ee294eda34bba3f27ebccd1f71546906791e87f7b81cb2381` |
-| 3 | `theorem` | [subsingleton](../../../../GroupTheoryAndGeneralizations/UniqueProds.lean/declarations/subsingleton.md) | 72 | `result-track:6d5fdb9862497ea38a36a1fc9ef0ff37fd53bbe776eaddf81b46c53ab7391fb6` |
-| 4 | `theorem` | [set_subsingleton](../../../../GroupTheoryAndGeneralizations/UniqueProds.lean/declarations/set-subsingleton.md) | 82 | `result-track:df1ba899e4ae634441c3e92187be5a139dc610c8148028aa2e5d4e8f2a784edc` |
-| 5 | `theorem` | [iff_existsUnique](../../../../GroupTheoryAndGeneralizations/UniqueProds.lean/declarations/iff-existsunique.md) | 95 | `result-track:e5d7b11a44290d3c8dd6bdd481109d64a255672cdb113c7e924c5eea35a7a2a3` |
-| 6 | `theorem` | [exists_iff_exists_existsUnique](../../../../GroupTheoryAndGeneralizations/UniqueProds.lean/declarations/exists-iff-exists-existsunique.md) | 109 | `result-track:e00c0f11cea924b3968b9860f3ddc63186623cee5d2e65cd8d8762c5454a3102` |
-| 7 | `theorem` | [mulHom_preimage](../../../../GroupTheoryAndGeneralizations/UniqueProds.lean/declarations/mulhom-preimage.md) | 122 | `result-track:a429bca2fd87b4f8e0ca218e7c9cff6014acf7ca8e72eb8b31ffdae7531f7037` |
-| 8 | `theorem` | [mulHom_image_iff](../../../../GroupTheoryAndGeneralizations/UniqueProds.lean/declarations/mulhom-image-iff.md) | 139 | `result-track:438dd53c67c26de7ead2001d7d9e061dcfefc8691cc948c19fce8e19b2e3ebcd` |
-| 9 | `theorem` | [mulHom_map_iff](../../../../GroupTheoryAndGeneralizations/UniqueProds.lean/declarations/mulhom-map-iff.md) | 159 | `result-track:f1cc983b264326d6cef650af75a142a970f5bcde4781a79bc0e4999965863d17` |
-| 10 | `class` | [UniqueSums](../../../../GroupTheoryAndGeneralizations/UniqueProds.lean/declarations/uniquesums.md) | 173 | `declaration-track:74406a9802b533525f62886bac49e76d518ce65d28c4a8edcc753f0575938ec0` |
-| 11 | `class` | [UniqueProds](../../../../GroupTheoryAndGeneralizations/UniqueProds.lean/declarations/uniqueprods.md) | 183 | `declaration-track:6f3c0653710314e94d62bcc7c9a3787ad09be0153c98fd6870a073d5631dc236` |
-| 12 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/UniqueProds.lean/declarations/instance.md) | 194 | `declaration-track:4db54dcb2160b2502f3e0d0b59eb530d823b11bea2328a646e654fd885b20a78` |
-| 13 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/UniqueProds.lean/declarations/instance-source-edition-2.md) | 201 | `declaration-track:a017685edc57ec2cdd98e590a9002a9e7f1ee75964ef1cf52b0d0df47607fc6b` |
-| 14 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/UniqueProds.lean/declarations/instance-source-edition-3.md) | 212 | `declaration-track:ec67dfaadc2e1f5b3feffb0e7f7c1db9f357c37f0d242eb105ad86fbfb146077` |
+| 1 | `def` | [UniqueMul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/UniqueProds.lean/declarations/uniquemul.md) | 56 | `declaration-track:45319e99a86ad8c4c5fddf5f182c3b6421cc6afdb69ed5eb7244a41153bd8345` |
+| 2 | `theorem` | [mt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/UniqueProds.lean/declarations/mt.md) | 65 | `result-track:d23db90b5c95966ee294eda34bba3f27ebccd1f71546906791e87f7b81cb2381` |
+| 3 | `theorem` | [subsingleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/UniqueProds.lean/declarations/subsingleton.md) | 72 | `result-track:6d5fdb9862497ea38a36a1fc9ef0ff37fd53bbe776eaddf81b46c53ab7391fb6` |
+| 4 | `theorem` | [set_subsingleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/UniqueProds.lean/declarations/set-subsingleton.md) | 82 | `result-track:df1ba899e4ae634441c3e92187be5a139dc610c8148028aa2e5d4e8f2a784edc` |
+| 5 | `theorem` | [iff_existsUnique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/UniqueProds.lean/declarations/iff-existsunique.md) | 95 | `result-track:e5d7b11a44290d3c8dd6bdd481109d64a255672cdb113c7e924c5eea35a7a2a3` |
+| 6 | `theorem` | [exists_iff_exists_existsUnique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/UniqueProds.lean/declarations/exists-iff-exists-existsunique.md) | 109 | `result-track:e00c0f11cea924b3968b9860f3ddc63186623cee5d2e65cd8d8762c5454a3102` |
+| 7 | `theorem` | [mulHom_preimage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/UniqueProds.lean/declarations/mulhom-preimage.md) | 122 | `result-track:a429bca2fd87b4f8e0ca218e7c9cff6014acf7ca8e72eb8b31ffdae7531f7037` |
+| 8 | `theorem` | [mulHom_image_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/UniqueProds.lean/declarations/mulhom-image-iff.md) | 139 | `result-track:438dd53c67c26de7ead2001d7d9e061dcfefc8691cc948c19fce8e19b2e3ebcd` |
+| 9 | `theorem` | [mulHom_map_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/UniqueProds.lean/declarations/mulhom-map-iff.md) | 159 | `result-track:f1cc983b264326d6cef650af75a142a970f5bcde4781a79bc0e4999965863d17` |
+| 10 | `class` | [UniqueSums](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/UniqueProds.lean/declarations/uniquesums.md) | 173 | `declaration-track:74406a9802b533525f62886bac49e76d518ce65d28c4a8edcc753f0575938ec0` |
+| 11 | `class` | [UniqueProds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/UniqueProds.lean/declarations/uniqueprods.md) | 183 | `declaration-track:6f3c0653710314e94d62bcc7c9a3787ad09be0153c98fd6870a073d5631dc236` |
+| 12 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/UniqueProds.lean/declarations/instance.md) | 194 | `declaration-track:4db54dcb2160b2502f3e0d0b59eb530d823b11bea2328a646e654fd885b20a78` |
+| 13 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/UniqueProds.lean/declarations/instance-source-edition-2.md) | 201 | `declaration-track:a017685edc57ec2cdd98e590a9002a9e7f1ee75964ef1cf52b0d0df47607fc6b` |
+| 14 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/UniqueProds.lean/declarations/instance-source-edition-3.md) | 212 | `declaration-track:ec67dfaadc2e1f5b3feffb0e7f7c1db9f357c37f0d242eb105ad86fbfb146077` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

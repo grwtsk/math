@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FieldTheoryAndPolynomials/IsField.lean/index.md) · [Full source](../../../../FieldTheoryAndPolynomials/IsField.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/IsField.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/IsField.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [IsField](../../../../FieldTheoryAndPolynomials/IsField.lean/declarations/isfield.md) | 29 | `declaration-track:9abca3dd1048af459216aed5587b3c862581075d2840ade733ea5a78ad87e2f9` |
-| 2 | `theorem` | [Semifield.toIsField](../../../../FieldTheoryAndPolynomials/IsField.lean/declarations/semifield-toisfield.md) | 38 | `result-track:09ffc3ad52fd3e623ddec974386c838565d496600beae23e20e3d186fe56173a` |
-| 3 | `theorem` | [Field.toIsField](../../../../FieldTheoryAndPolynomials/IsField.lean/declarations/field-toisfield.md) | 43 | `result-track:d90b305cd9a6dac8ca77b6889388f991e3133ba792a8fe27313737ccaee0fc81` |
-| 4 | `theorem` | [IsField.nontrivial](../../../../FieldTheoryAndPolynomials/IsField.lean/declarations/isfield-nontrivial.md) | 47 | `result-track:a60cce86a5d05c0e2da72725069bb80cb055cffaf10e3593d452532aa52ddec7` |
-| 5 | `theorem` | [not_isField_of_subsingleton](../../../../FieldTheoryAndPolynomials/IsField.lean/declarations/not-isfield-of-subsingleton.md) | 51 | `result-track:45246e0d38aa253cfa31ad0ecdbd84713da7b3e42faa54959fad19a47b0f1200` |
-| 6 | `def` | [IsField.toSemifield](../../../../FieldTheoryAndPolynomials/IsField.lean/declarations/isfield-tosemifield.md) | 58 | `declaration-track:7330b1d01e007433897312cd2de9d21dd12b4dbde147ec3989bd5eb9d23b7e75` |
-| 7 | `def` | [IsField.toField](../../../../FieldTheoryAndPolynomials/IsField.lean/declarations/isfield-tofield.md) | 68 | `declaration-track:43d70b3f9493dbb634dfe370cdcf6f8235712d905025b189e3b8031b6c27f8ec` |
-| 8 | `theorem` | [uniq_inv_of_isField](../../../../FieldTheoryAndPolynomials/IsField.lean/declarations/uniq-inv-of-isfield.md) | 78 | `result-track:6002c990b1d76f29abc33ae75ec9eb8b4210b8ba07bf364453ad9aff5b21e847` |
+| 1 | `structure` | [IsField](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/IsField.lean/declarations/isfield.md) | 29 | `declaration-track:9abca3dd1048af459216aed5587b3c862581075d2840ade733ea5a78ad87e2f9` |
+| 2 | `theorem` | [Semifield.toIsField](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/IsField.lean/declarations/semifield-toisfield.md) | 38 | `result-track:09ffc3ad52fd3e623ddec974386c838565d496600beae23e20e3d186fe56173a` |
+| 3 | `theorem` | [Field.toIsField](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/IsField.lean/declarations/field-toisfield.md) | 43 | `result-track:d90b305cd9a6dac8ca77b6889388f991e3133ba792a8fe27313737ccaee0fc81` |
+| 4 | `theorem` | [IsField.nontrivial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/IsField.lean/declarations/isfield-nontrivial.md) | 47 | `result-track:a60cce86a5d05c0e2da72725069bb80cb055cffaf10e3593d452532aa52ddec7` |
+| 5 | `theorem` | [not_isField_of_subsingleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/IsField.lean/declarations/not-isfield-of-subsingleton.md) | 51 | `result-track:45246e0d38aa253cfa31ad0ecdbd84713da7b3e42faa54959fad19a47b0f1200` |
+| 6 | `def` | [IsField.toSemifield](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/IsField.lean/declarations/isfield-tosemifield.md) | 58 | `declaration-track:7330b1d01e007433897312cd2de9d21dd12b4dbde147ec3989bd5eb9d23b7e75` |
+| 7 | `def` | [IsField.toField](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/IsField.lean/declarations/isfield-tofield.md) | 68 | `declaration-track:43d70b3f9493dbb634dfe370cdcf6f8235712d905025b189e3b8031b6c27f8ec` |
+| 8 | `theorem` | [uniq_inv_of_isField](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/IsField.lean/declarations/uniq-inv-of-isfield.md) | 78 | `result-track:6002c990b1d76f29abc33ae75ec9eb8b4210b8ba07bf364453ad9aff5b21e847` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

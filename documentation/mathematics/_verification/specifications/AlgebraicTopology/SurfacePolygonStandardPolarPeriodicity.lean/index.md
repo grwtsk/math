@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/SurfacePolygonStandardPolarPeriodicity.lean/index.md) · [Full source](../../../../AlgebraicTopology/SurfacePolygonStandardPolarPeriodicity.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonStandardPolarPeriodicity.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonStandardPolarPeriodicity.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonStandardPolarRadiusFibers`](../../../../AlgebraicTopology/SurfacePolygonStandardPolarRadiusFibers.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonStandardPolarRadiusFibers`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonStandardPolarRadiusFibers.lean/index.md) — import line 8; pinned internal source present.
 - `Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic` — import line 9; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 10; external provider; requires a separately pinned dependency.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [realAnglePolar_add_one](../../../../AlgebraicTopology/SurfacePolygonStandardPolarPeriodicity.lean/declarations/realanglepolar-add-one.md) | 33 | `result-track:db3b392b810083a08227f82f5ee30fa835a3b3296e83c37208c56cd9d607ee81` |
-| 2 | `theorem` | [realAnglePolar_add_nat](../../../../AlgebraicTopology/SurfacePolygonStandardPolarPeriodicity.lean/declarations/realanglepolar-add-nat.md) | 49 | `result-track:d95bce746c6dad5ae4414464d25b96672a25894fb61a52faf4b68650fe326c48` |
-| 3 | `theorem` | [realAnglePolar_add_int](../../../../AlgebraicTopology/SurfacePolygonStandardPolarPeriodicity.lean/declarations/realanglepolar-add-int.md) | 59 | `result-track:a4675d47b32bab00cc61641e7810d2e6014a5554c55069a2e121b9b1df731620` |
+| 1 | `theorem` | [realAnglePolar_add_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonStandardPolarPeriodicity.lean/declarations/realanglepolar-add-one.md) | 33 | `result-track:db3b392b810083a08227f82f5ee30fa835a3b3296e83c37208c56cd9d607ee81` |
+| 2 | `theorem` | [realAnglePolar_add_nat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonStandardPolarPeriodicity.lean/declarations/realanglepolar-add-nat.md) | 49 | `result-track:d95bce746c6dad5ae4414464d25b96672a25894fb61a52faf4b68650fe326c48` |
+| 3 | `theorem` | [realAnglePolar_add_int](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonStandardPolarPeriodicity.lean/declarations/realanglepolar-add-int.md) | 59 | `result-track:a4675d47b32bab00cc61641e7810d2e6014a5554c55069a2e121b9b1df731620` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

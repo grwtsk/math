@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProductsConditionalAuditNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProductsConditionalAuditNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProductsConditionalAuditNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProductsConditionalAuditNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [thetaTail_ratio_eq_product](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProductsConditionalAuditNamespaced.lean/declarations/thetatail-ratio-eq-product.md) | 20 | `result-track:b3a9fa9e85ce7da48fe056bb40d2ebb08b05c1c41e1881c21d567fe42ca4323a` |
-| 2 | `theorem` | [thetaTail_ratio_product_antitone_of_succ](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProductsConditionalAuditNamespaced.lean/declarations/thetatail-ratio-product-antitone-of-succ.md) | 40 | `result-track:cc25fa34c814d86cee33d360c64a0a40a2c5b120980c5ee076ba38ecc34d33e4` |
-| 3 | `theorem` | [thetaTail_div_antitone_of_succ](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProductsConditionalAuditNamespaced.lean/declarations/thetatail-div-antitone-of-succ.md) | 48 | `result-track:7bfc832cd5b7252e6fa16a509b949227dd1a6897a39de82f9142196266368e3d` |
-| 4 | `theorem` | [thetaTailSignRegular_two_of_succ](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProductsConditionalAuditNamespaced.lean/declarations/thetatailsignregular-two-of-succ.md) | 56 | `result-track:7a67988658185f383292e5efcee82575e79f99b1c1f4e1f18f4c0e848d8e290d` |
+| 1 | `theorem` | [thetaTail_ratio_eq_product](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProductsConditionalAuditNamespaced.lean/declarations/thetatail-ratio-eq-product.md) | 20 | `result-track:b3a9fa9e85ce7da48fe056bb40d2ebb08b05c1c41e1881c21d567fe42ca4323a` |
+| 2 | `theorem` | [thetaTail_ratio_product_antitone_of_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProductsConditionalAuditNamespaced.lean/declarations/thetatail-ratio-product-antitone-of-succ.md) | 40 | `result-track:cc25fa34c814d86cee33d360c64a0a40a2c5b120980c5ee076ba38ecc34d33e4` |
+| 3 | `theorem` | [thetaTail_div_antitone_of_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProductsConditionalAuditNamespaced.lean/declarations/thetatail-div-antitone-of-succ.md) | 48 | `result-track:7bfc832cd5b7252e6fa16a509b949227dd1a6897a39de82f9142196266368e3d` |
+| 4 | `theorem` | [thetaTailSignRegular_two_of_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProductsConditionalAuditNamespaced.lean/declarations/thetatailsignregular-two-of-succ.md) | 56 | `result-track:7a67988658185f383292e5efcee82575e79f99b1c1f4e1f18f4c0e848d8e290d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

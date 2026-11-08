@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/FiveModeCountConstantsNamespaced.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/FiveModeCountConstantsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FiveModeCountConstantsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FiveModeCountConstantsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [cutoff_log_lt_twenty_nine](../../../../FunctionsOfAComplexVariable/FiveModeCountConstantsNamespaced.lean/declarations/cutoff-log-lt-twenty-nine.md) | 23 | `result-track:b189bdbbd294f94827349c7195a7d61af37092e35fd971c275283c7b7a1aa6a4` |
-| 2 | `theorem` | [cutoff_log_gt_one](../../../../FunctionsOfAComplexVariable/FiveModeCountConstantsNamespaced.lean/declarations/cutoff-log-gt-one.md) | 32 | `result-track:3e45ffbf81ec8d3359a51d63e5cead0b1fb8a0880dd28bc3b361806af83646b2` |
-| 3 | `theorem` | [cutoff_loglog_lt_four](../../../../FunctionsOfAComplexVariable/FiveModeCountConstantsNamespaced.lean/declarations/cutoff-loglog-lt-four.md) | 36 | `result-track:d952d0bb1b967276f7a5eadd295a5a7843220a03582d34884dc581dac26f9a78` |
-| 4 | `theorem` | [corrected_error_cutoff_lt_eight](../../../../FunctionsOfAComplexVariable/FiveModeCountConstantsNamespaced.lean/declarations/corrected-error-cutoff-lt-eight.md) | 45 | `result-track:899f9a08f95a4265853026883b977d4824c25e9924c503a20c261c6709fb4621` |
-| 5 | `theorem` | [count_envelope_cutoff_le_rational_cap](../../../../FunctionsOfAComplexVariable/FiveModeCountConstantsNamespaced.lean/declarations/count-envelope-cutoff-le-rational-cap.md) | 50 | `result-track:9f99651d78a20e755153dfcd40629fcb20f9a3730f7247c13b90ea555f99b005` |
+| 1 | `theorem` | [cutoff_log_lt_twenty_nine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FiveModeCountConstantsNamespaced.lean/declarations/cutoff-log-lt-twenty-nine.md) | 23 | `result-track:b189bdbbd294f94827349c7195a7d61af37092e35fd971c275283c7b7a1aa6a4` |
+| 2 | `theorem` | [cutoff_log_gt_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FiveModeCountConstantsNamespaced.lean/declarations/cutoff-log-gt-one.md) | 32 | `result-track:3e45ffbf81ec8d3359a51d63e5cead0b1fb8a0880dd28bc3b361806af83646b2` |
+| 3 | `theorem` | [cutoff_loglog_lt_four](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FiveModeCountConstantsNamespaced.lean/declarations/cutoff-loglog-lt-four.md) | 36 | `result-track:d952d0bb1b967276f7a5eadd295a5a7843220a03582d34884dc581dac26f9a78` |
+| 4 | `theorem` | [corrected_error_cutoff_lt_eight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FiveModeCountConstantsNamespaced.lean/declarations/corrected-error-cutoff-lt-eight.md) | 45 | `result-track:899f9a08f95a4265853026883b977d4824c25e9924c503a20c261c6709fb4621` |
+| 5 | `theorem` | [count_envelope_cutoff_le_rational_cap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FiveModeCountConstantsNamespaced.lean/declarations/count-envelope-cutoff-le-rational-cap.md) | 50 | `result-track:9f99651d78a20e755153dfcd40629fcb20f9a3730f7247c13b90ea555f99b005` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

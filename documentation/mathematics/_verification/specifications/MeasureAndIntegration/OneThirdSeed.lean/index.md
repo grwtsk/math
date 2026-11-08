@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/OneThirdSeed.lean/index.md) · [Full source](../../../../MeasureAndIntegration/OneThirdSeed.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OneThirdSeed.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OneThirdSeed.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.CoverDepth`](../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CoverDepth.lean/index.md) — import line 3; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripOneThirdSeed`](../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripOneThirdSeed.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.CoverDepth`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CoverDepth.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripOneThirdSeed`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripOneThirdSeed.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,28 +58,28 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../MeasureAndIntegration/OneThirdSeed.lean/declarations/example-source-edition-16.md) | 12 | `declaration-track:9501d044b6a9f1d86aad06182d8e3c34a0244ea48a794b1cd53ba92c581e7415` |
-| 2 | `example` | [(anonymous)](../../../../MeasureAndIntegration/OneThirdSeed.lean/declarations/example-source-edition-21.md) | 15 | `declaration-track:ef8998ac8f8bde855364f9bafe5e9938f71174bf1f0680f6413080b19c72fb51` |
-| 3 | `example` | [(anonymous)](../../../../MeasureAndIntegration/OneThirdSeed.lean/declarations/example-source-edition-13.md) | 21 | `declaration-track:7854e5d2b11a1c99b20bd1484f8335193898003405ac5c72c13f6edc77cff588` |
-| 4 | `example` | [(anonymous)](../../../../MeasureAndIntegration/OneThirdSeed.lean/declarations/example-source-edition-2.md) | 25 | `declaration-track:0e62c6caec3341696a79cb451ada5b11528c534e55eeb3de54a9618f10b92b57` |
-| 5 | `example` | [(anonymous)](../../../../MeasureAndIntegration/OneThirdSeed.lean/declarations/example-source-edition-5.md) | 29 | `declaration-track:244c14f964b68b8b9ecc401f826985a7bd0110063b8958f9eadfbed33d34e5e9` |
-| 6 | `example` | [(anonymous)](../../../../MeasureAndIntegration/OneThirdSeed.lean/declarations/example-source-edition-8.md) | 35 | `declaration-track:4fb21b1e1fa9c0839903ca3f3a2d6b6614bf36c3e920a2070f6b5144abef2ee3` |
-| 7 | `example` | [(anonymous)](../../../../MeasureAndIntegration/OneThirdSeed.lean/declarations/example-source-edition-12.md) | 38 | `declaration-track:6d5eb2397b5377634d42f7e7266fd0be3bb711ab61fe73ba7861e76f5b83464d` |
-| 8 | `example` | [(anonymous)](../../../../MeasureAndIntegration/OneThirdSeed.lean/declarations/example-source-edition-11.md) | 41 | `declaration-track:6991d934e6868742387f93d2d2a7970c1a0755b4c2256c20496c81cefdf1f453` |
-| 9 | `example` | [(anonymous)](../../../../MeasureAndIntegration/OneThirdSeed.lean/declarations/example-source-edition-19.md) | 44 | `declaration-track:b771228fc530581f44ab4bd535122124aa2110708c432bae86b206873d36fab3` |
-| 10 | `example` | [(anonymous)](../../../../MeasureAndIntegration/OneThirdSeed.lean/declarations/example-source-edition-7.md) | 48 | `declaration-track:3fbf4c31b2b76be3bdc51444400960f6b5bc3dd5d7d643d7ef81a7c6830a40b3` |
-| 11 | `example` | [(anonymous)](../../../../MeasureAndIntegration/OneThirdSeed.lean/declarations/example-source-edition-15.md) | 51 | `declaration-track:89b55a75ae6f553aac7aae1d38586b2682790e2a25da0345b242819f09bdae03` |
-| 12 | `example` | [(anonymous)](../../../../MeasureAndIntegration/OneThirdSeed.lean/declarations/example-source-edition-20.md) | 55 | `declaration-track:cfd1e1e0dd361bfe497f689a9d8db7949813420755541a1b44e96772dd05b46f` |
-| 13 | `example` | [(anonymous)](../../../../MeasureAndIntegration/OneThirdSeed.lean/declarations/example-source-edition-14.md) | 56 | `declaration-track:829b46f48a94a6bed0b334b51e2dcdd77bc8eb550b252ab88bf96191f972e16f` |
-| 14 | `example` | [(anonymous)](../../../../MeasureAndIntegration/OneThirdSeed.lean/declarations/example.md) | 57 | `declaration-track:051500b1a54eca80bd9c9919a1b8b8f9f53cc82e5bc098c5cbf5784ef8d84985` |
-| 15 | `example` | [(anonymous)](../../../../MeasureAndIntegration/OneThirdSeed.lean/declarations/example-source-edition-10.md) | 58 | `declaration-track:574ab316d31ef7dd3924ac7067371ba544a74158a941ca6edd969a7ebc13915b` |
-| 16 | `example` | [(anonymous)](../../../../MeasureAndIntegration/OneThirdSeed.lean/declarations/example-source-edition-9.md) | 59 | `declaration-track:516b60e527c3f15f2df7b72bb364b78d226420eb6547677c74cb8f9fbe06c979` |
-| 17 | `example` | [(anonymous)](../../../../MeasureAndIntegration/OneThirdSeed.lean/declarations/example-source-edition-4.md) | 60 | `declaration-track:1adcdd74388bc0afe8e2657faae52094f0a5b2b4ec0372f20eceeeecf327beea` |
-| 18 | `example` | [(anonymous)](../../../../MeasureAndIntegration/OneThirdSeed.lean/declarations/example-source-edition-22.md) | 61 | `declaration-track:f9806e81b2ebbc3607bbb9d2396a582746f349ea11cb2fa1c2da2aaf8b76791d` |
-| 19 | `example` | [(anonymous)](../../../../MeasureAndIntegration/OneThirdSeed.lean/declarations/example-source-edition-17.md) | 62 | `declaration-track:969f3503c2720802ffe260e1a3fed2b96a4732bd44da4c1a134404269f5cf754` |
-| 20 | `example` | [(anonymous)](../../../../MeasureAndIntegration/OneThirdSeed.lean/declarations/example-source-edition-6.md) | 65 | `declaration-track:2799f78e39a8b12402010c0436e8e920991a880d5516610d7dc07cef43fbf34b` |
-| 21 | `example` | [(anonymous)](../../../../MeasureAndIntegration/OneThirdSeed.lean/declarations/example-source-edition-18.md) | 70 | `declaration-track:9bfb9475cf7dd3801f5d3f92a0b3ac191063d4f7fef6c1fd3658467ab061d990` |
-| 22 | `example` | [(anonymous)](../../../../MeasureAndIntegration/OneThirdSeed.lean/declarations/example-source-edition-3.md) | 73 | `declaration-track:16dbe053e958eff1bd30c19db5eb9a6b6f166a816a54a16472d0dfe4ef29244d` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OneThirdSeed.lean/declarations/example-source-edition-16.md) | 12 | `declaration-track:9501d044b6a9f1d86aad06182d8e3c34a0244ea48a794b1cd53ba92c581e7415` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OneThirdSeed.lean/declarations/example-source-edition-21.md) | 15 | `declaration-track:ef8998ac8f8bde855364f9bafe5e9938f71174bf1f0680f6413080b19c72fb51` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OneThirdSeed.lean/declarations/example-source-edition-13.md) | 21 | `declaration-track:7854e5d2b11a1c99b20bd1484f8335193898003405ac5c72c13f6edc77cff588` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OneThirdSeed.lean/declarations/example-source-edition-2.md) | 25 | `declaration-track:0e62c6caec3341696a79cb451ada5b11528c534e55eeb3de54a9618f10b92b57` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OneThirdSeed.lean/declarations/example-source-edition-5.md) | 29 | `declaration-track:244c14f964b68b8b9ecc401f826985a7bd0110063b8958f9eadfbed33d34e5e9` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OneThirdSeed.lean/declarations/example-source-edition-8.md) | 35 | `declaration-track:4fb21b1e1fa9c0839903ca3f3a2d6b6614bf36c3e920a2070f6b5144abef2ee3` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OneThirdSeed.lean/declarations/example-source-edition-12.md) | 38 | `declaration-track:6d5eb2397b5377634d42f7e7266fd0be3bb711ab61fe73ba7861e76f5b83464d` |
+| 8 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OneThirdSeed.lean/declarations/example-source-edition-11.md) | 41 | `declaration-track:6991d934e6868742387f93d2d2a7970c1a0755b4c2256c20496c81cefdf1f453` |
+| 9 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OneThirdSeed.lean/declarations/example-source-edition-19.md) | 44 | `declaration-track:b771228fc530581f44ab4bd535122124aa2110708c432bae86b206873d36fab3` |
+| 10 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OneThirdSeed.lean/declarations/example-source-edition-7.md) | 48 | `declaration-track:3fbf4c31b2b76be3bdc51444400960f6b5bc3dd5d7d643d7ef81a7c6830a40b3` |
+| 11 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OneThirdSeed.lean/declarations/example-source-edition-15.md) | 51 | `declaration-track:89b55a75ae6f553aac7aae1d38586b2682790e2a25da0345b242819f09bdae03` |
+| 12 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OneThirdSeed.lean/declarations/example-source-edition-20.md) | 55 | `declaration-track:cfd1e1e0dd361bfe497f689a9d8db7949813420755541a1b44e96772dd05b46f` |
+| 13 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OneThirdSeed.lean/declarations/example-source-edition-14.md) | 56 | `declaration-track:829b46f48a94a6bed0b334b51e2dcdd77bc8eb550b252ab88bf96191f972e16f` |
+| 14 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OneThirdSeed.lean/declarations/example.md) | 57 | `declaration-track:051500b1a54eca80bd9c9919a1b8b8f9f53cc82e5bc098c5cbf5784ef8d84985` |
+| 15 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OneThirdSeed.lean/declarations/example-source-edition-10.md) | 58 | `declaration-track:574ab316d31ef7dd3924ac7067371ba544a74158a941ca6edd969a7ebc13915b` |
+| 16 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OneThirdSeed.lean/declarations/example-source-edition-9.md) | 59 | `declaration-track:516b60e527c3f15f2df7b72bb364b78d226420eb6547677c74cb8f9fbe06c979` |
+| 17 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OneThirdSeed.lean/declarations/example-source-edition-4.md) | 60 | `declaration-track:1adcdd74388bc0afe8e2657faae52094f0a5b2b4ec0372f20eceeeecf327beea` |
+| 18 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OneThirdSeed.lean/declarations/example-source-edition-22.md) | 61 | `declaration-track:f9806e81b2ebbc3607bbb9d2396a582746f349ea11cb2fa1c2da2aaf8b76791d` |
+| 19 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OneThirdSeed.lean/declarations/example-source-edition-17.md) | 62 | `declaration-track:969f3503c2720802ffe260e1a3fed2b96a4732bd44da4c1a134404269f5cf754` |
+| 20 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OneThirdSeed.lean/declarations/example-source-edition-6.md) | 65 | `declaration-track:2799f78e39a8b12402010c0436e8e920991a880d5516610d7dc07cef43fbf34b` |
+| 21 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OneThirdSeed.lean/declarations/example-source-edition-18.md) | 70 | `declaration-track:9bfb9475cf7dd3801f5d3f92a0b3ac191063d4f7fef6c1fd3658467ab061d990` |
+| 22 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OneThirdSeed.lean/declarations/example-source-edition-3.md) | 73 | `declaration-track:16dbe053e958eff1bd30c19db5eb9a6b6f166a816a54a16472d0dfe4ef29244d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

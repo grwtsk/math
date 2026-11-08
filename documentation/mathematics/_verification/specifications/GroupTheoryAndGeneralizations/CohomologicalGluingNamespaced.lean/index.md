@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/CohomologicalGluingNamespaced.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/CohomologicalGluingNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CohomologicalGluingNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CohomologicalGluingNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FiniteGluingControl](../../../../GroupTheoryAndGeneralizations/CohomologicalGluingNamespaced.lean/declarations/finitegluingcontrol.md) | 26 | `declaration-track:6f7bd3498e4a9c5399997fc4a729c9760cf97e15f4441c1350627d0db9e63ec9` |
-| 2 | `structure` | [CoverTopologyChannel](../../../../GroupTheoryAndGeneralizations/CohomologicalGluingNamespaced.lean/declarations/covertopologychannel.md) | 41 | `declaration-track:aa35b8998e66c29c03184e276345c4cd47f72122fb743a3fe667b90ca1dc2a96` |
-| 3 | `structure` | [TorsionRoundedCover](../../../../GroupTheoryAndGeneralizations/CohomologicalGluingNamespaced.lean/declarations/torsionroundedcover.md) | 59 | `declaration-track:2989a59fe3b4b5e53d2516a7b949eac980aa0fcbf000efbf7ec9c8e645e897e9` |
-| 4 | `def` | [withMetric](../../../../GroupTheoryAndGeneralizations/CohomologicalGluingNamespaced.lean/declarations/withmetric.md) | 82 | `declaration-track:5509788ce584f061aa159683e3b91f9232de3e9f16239fab122f445e9d365244` |
-| 5 | `theorem` | [withMetric_topology](../../../../GroupTheoryAndGeneralizations/CohomologicalGluingNamespaced.lean/declarations/withmetric-topology.md) | 91 | `result-track:7c9a134818de79b2fad379826c66b7d6f4c5fc349229071e25454c7cad9c3d67` |
-| 6 | `def` | [withTopology](../../../../GroupTheoryAndGeneralizations/CohomologicalGluingNamespaced.lean/declarations/withtopology.md) | 100 | `declaration-track:d0c44199d3dd4a09bd389220600843d7cffe5f9422814bf23fb4ffc9e30da71e` |
-| 7 | `theorem` | [withTopology_metric](../../../../GroupTheoryAndGeneralizations/CohomologicalGluingNamespaced.lean/declarations/withtopology-metric.md) | 110 | `result-track:d735ebda2d10137aa495cc80af337127b7f93d880dd8342e84eb738c5161e6aa` |
+| 1 | `structure` | [FiniteGluingControl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CohomologicalGluingNamespaced.lean/declarations/finitegluingcontrol.md) | 26 | `declaration-track:6f7bd3498e4a9c5399997fc4a729c9760cf97e15f4441c1350627d0db9e63ec9` |
+| 2 | `structure` | [CoverTopologyChannel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CohomologicalGluingNamespaced.lean/declarations/covertopologychannel.md) | 41 | `declaration-track:aa35b8998e66c29c03184e276345c4cd47f72122fb743a3fe667b90ca1dc2a96` |
+| 3 | `structure` | [TorsionRoundedCover](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CohomologicalGluingNamespaced.lean/declarations/torsionroundedcover.md) | 59 | `declaration-track:2989a59fe3b4b5e53d2516a7b949eac980aa0fcbf000efbf7ec9c8e645e897e9` |
+| 4 | `def` | [withMetric](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CohomologicalGluingNamespaced.lean/declarations/withmetric.md) | 82 | `declaration-track:5509788ce584f061aa159683e3b91f9232de3e9f16239fab122f445e9d365244` |
+| 5 | `theorem` | [withMetric_topology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CohomologicalGluingNamespaced.lean/declarations/withmetric-topology.md) | 91 | `result-track:7c9a134818de79b2fad379826c66b7d6f4c5fc349229071e25454c7cad9c3d67` |
+| 6 | `def` | [withTopology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CohomologicalGluingNamespaced.lean/declarations/withtopology.md) | 100 | `declaration-track:d0c44199d3dd4a09bd389220600843d7cffe5f9422814bf23fb4ffc9e30da71e` |
+| 7 | `theorem` | [withTopology_metric](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CohomologicalGluingNamespaced.lean/declarations/withtopology-metric.md) | 110 | `result-track:d735ebda2d10137aa495cc80af337127b7f93d880dd8342e84eb738c5161e6aa` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/HarmonicAnalyticPublic.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/HarmonicAnalyticPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/HarmonicAnalyticPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/HarmonicAnalyticPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [HarmonicAt.differentiableAt_complex_partial](../../../../FunctionsOfAComplexVariable/HarmonicAnalyticPublic.lean/declarations/harmonicat-differentiableat-complex-partial.md) | 31 | `result-track:66a32f9913d7172cca955de4cd547268ac01bf365491a364e818366d6b49a8e7` |
-| 2 | `theorem` | [HarmonicAt.analyticAt_complex_partial](../../../../FunctionsOfAComplexVariable/HarmonicAnalyticPublic.lean/declarations/harmonicat-analyticat-complex-partial.md) | 60 | `result-track:f4695c06caff1d0a5216d1b08e6d32ad57143afd87268529324c56b90358218d` |
-| 3 | `theorem` | [InnerProductSpace.HarmonicOnNhd.exists_analyticOnNhd_ball_re_eq](../../../../FunctionsOfAComplexVariable/HarmonicAnalyticPublic.lean/declarations/innerproductspace-harmoniconnhd-exists-analyticonnhd-ball-re-eq.md) | 70 | `result-track:9bb82ec4c504953de2e3d2ec2e4c592cea11fba95904731c850ef7810a9b4a3f` |
-| 4 | `theorem` | [InnerProductSpace.HarmonicOnNhd.exists_analyticOnNhd_univ_re_eq](../../../../FunctionsOfAComplexVariable/HarmonicAnalyticPublic.lean/declarations/innerproductspace-harmoniconnhd-exists-analyticonnhd-univ-re-eq.md) | 109 | `result-track:da37636c6dff0447182d3d49ce60ad70a0a7e065a7a82eb4d6ed3de879782dc2` |
-| 5 | `theorem` | [HarmonicAt.analyticAt](../../../../FunctionsOfAComplexVariable/HarmonicAnalyticPublic.lean/declarations/harmonicat-analyticat.md) | 143 | `result-track:5b7b17e071119b35a8224e403b2b7373ab221a8d1e135d9e9f51f91cb16ec308` |
+| 1 | `theorem` | [HarmonicAt.differentiableAt_complex_partial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/HarmonicAnalyticPublic.lean/declarations/harmonicat-differentiableat-complex-partial.md) | 31 | `result-track:66a32f9913d7172cca955de4cd547268ac01bf365491a364e818366d6b49a8e7` |
+| 2 | `theorem` | [HarmonicAt.analyticAt_complex_partial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/HarmonicAnalyticPublic.lean/declarations/harmonicat-analyticat-complex-partial.md) | 60 | `result-track:f4695c06caff1d0a5216d1b08e6d32ad57143afd87268529324c56b90358218d` |
+| 3 | `theorem` | [InnerProductSpace.HarmonicOnNhd.exists_analyticOnNhd_ball_re_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/HarmonicAnalyticPublic.lean/declarations/innerproductspace-harmoniconnhd-exists-analyticonnhd-ball-re-eq.md) | 70 | `result-track:9bb82ec4c504953de2e3d2ec2e4c592cea11fba95904731c850ef7810a9b4a3f` |
+| 4 | `theorem` | [InnerProductSpace.HarmonicOnNhd.exists_analyticOnNhd_univ_re_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/HarmonicAnalyticPublic.lean/declarations/innerproductspace-harmoniconnhd-exists-analyticonnhd-univ-re-eq.md) | 109 | `result-track:da37636c6dff0447182d3d49ce60ad70a0a7e065a7a82eb4d6ed3de879782dc2` |
+| 5 | `theorem` | [HarmonicAt.analyticAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/HarmonicAnalyticPublic.lean/declarations/harmonicat-analyticat.md) | 143 | `result-track:5b7b17e071119b35a8224e403b2b7373ab221a8d1e135d9e9f51f91cb16ec308` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BombieriHuffmanLosslessBoundary.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BombieriHuffmanLosslessBoundary.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BombieriHuffmanLosslessBoundary.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BombieriHuffmanLosslessBoundary.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.InformationTheory.Huffman.RoundTrip`](../../../../../InformationAndCommunicationTheoryCircuits/CommunicationInformation/PrefixLengthVariableCommaFreeCodes/RoundTrip.lean/index.md) — import line 8; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentInformationLoss`](../../../../../GroupTheoryAndGeneralizations/CanonicalSquareTentBombieriMomentInformationLoss.lean/index.md) — import line 9; pinned internal source present.
+- [`GRWTSK.InformationTheory.Huffman.RoundTrip`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/InformationAndCommunicationTheoryCircuits/CommunicationInformation/PrefixLengthVariableCommaFreeCodes/RoundTrip.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentInformationLoss`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CanonicalSquareTentBombieriMomentInformationLoss.lean/index.md) — import line 9; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [HasTotalLosslessDecoder](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BombieriHuffmanLosslessBoundary.lean/declarations/hastotallosslessdecoder.md) | 42 | `declaration-track:410f9f521ef49675859ae89d4e27571342f850750be012e84fb697867e4a268c` |
-| 2 | `theorem` | [injective_of_hasTotalLosslessDecoder](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BombieriHuffmanLosslessBoundary.lean/declarations/injective-of-hastotallosslessdecoder.md) | 46 | `result-track:62c2bbd2463659d8f25d9d4cf6376eb1d43781b73053ee444eb09a74e51ceb0a` |
-| 3 | `theorem` | [huffman_bytes_have_total_lossless_decoder](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BombieriHuffmanLosslessBoundary.lean/declarations/huffman-bytes-have-total-lossless-decoder.md) | 62 | `result-track:77b0456e4a93fa910e433499f8af4ea383485a131f7923f445173ac08ffa0ff0` |
-| 4 | `theorem` | [two_bombieri_moments_have_no_total_lossless_decoder](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BombieriHuffmanLosslessBoundary.lean/declarations/two-bombieri-moments-have-no-total-lossless-decoder.md) | 74 | `result-track:a320610038d56e5d75c35268e5be37c45b2cbbe95f1d50338b9150ca67e17b9c` |
-| 5 | `theorem` | [no_total_lossless_decoder_from_moment_only_postprocessing](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BombieriHuffmanLosslessBoundary.lean/declarations/no-total-lossless-decoder-from-moment-only-postprocessing.md) | 88 | `result-track:94aadaca300b91b5d5707fb2b279d266abcf3b3e4096a104884493e377f47eef` |
+| 1 | `def` | [HasTotalLosslessDecoder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BombieriHuffmanLosslessBoundary.lean/declarations/hastotallosslessdecoder.md) | 42 | `declaration-track:410f9f521ef49675859ae89d4e27571342f850750be012e84fb697867e4a268c` |
+| 2 | `theorem` | [injective_of_hasTotalLosslessDecoder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BombieriHuffmanLosslessBoundary.lean/declarations/injective-of-hastotallosslessdecoder.md) | 46 | `result-track:62c2bbd2463659d8f25d9d4cf6376eb1d43781b73053ee444eb09a74e51ceb0a` |
+| 3 | `theorem` | [huffman_bytes_have_total_lossless_decoder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BombieriHuffmanLosslessBoundary.lean/declarations/huffman-bytes-have-total-lossless-decoder.md) | 62 | `result-track:77b0456e4a93fa910e433499f8af4ea383485a131f7923f445173ac08ffa0ff0` |
+| 4 | `theorem` | [two_bombieri_moments_have_no_total_lossless_decoder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BombieriHuffmanLosslessBoundary.lean/declarations/two-bombieri-moments-have-no-total-lossless-decoder.md) | 74 | `result-track:a320610038d56e5d75c35268e5be37c45b2cbbe95f1d50338b9150ca67e17b9c` |
+| 5 | `theorem` | [no_total_lossless_decoder_from_moment_only_postprocessing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BombieriHuffmanLosslessBoundary.lean/declarations/no-total-lossless-decoder-from-moment-only-postprocessing.md) | 88 | `result-track:94aadaca300b91b5d5707fb2b279d266abcf3b3e4096a104884493e377f47eef` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/CommutativeCoefficientCarriers.lean/index.md) · [Full source](../../../../CommutativeAlgebra/CommutativeCoefficientCarriers.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CommutativeCoefficientCarriers.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CommutativeCoefficientCarriers.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,11 +61,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CoefficientContext](../../../../CommutativeAlgebra/CommutativeCoefficientCarriers.lean/declarations/coefficientcontext.md) | 39 | `declaration-track:6d11f388d851d7ed21c88bfbeb6d2e47e6791f306ab4ce911d792d38dbfd6323` |
-| 2 | `def` | [integral](../../../../CommutativeAlgebra/CommutativeCoefficientCarriers.lean/declarations/integral.md) | 48 | `declaration-track:0282b0a26dd7c7f489b90a962146dc14476a0675194f1974fb8dc5ed38aae0ea` |
-| 3 | `def` | [integralLifted](../../../../CommutativeAlgebra/CommutativeCoefficientCarriers.lean/declarations/integrallifted.md) | 52 | `declaration-track:4ab2b3a9fb67fd7ff1a2022ca8fa37234b5551d4240d60086c1af10b1fdde169` |
-| 4 | `def` | [rational](../../../../CommutativeAlgebra/CommutativeCoefficientCarriers.lean/declarations/rational.md) | 56 | `declaration-track:dfe4188c7cbf16f5de5cd2c5527c6a59b8c3c6ef0c4b8d026aeea1f84c74d288` |
-| 5 | `def` | [modulo](../../../../CommutativeAlgebra/CommutativeCoefficientCarriers.lean/declarations/modulo.md) | 60 | `declaration-track:3f4efcc1e58ff964df083a2def9449ca67dda4a5129b343d6d5823bee39d1e92` |
+| 1 | `structure` | [CoefficientContext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CommutativeCoefficientCarriers.lean/declarations/coefficientcontext.md) | 39 | `declaration-track:6d11f388d851d7ed21c88bfbeb6d2e47e6791f306ab4ce911d792d38dbfd6323` |
+| 2 | `def` | [integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CommutativeCoefficientCarriers.lean/declarations/integral.md) | 48 | `declaration-track:0282b0a26dd7c7f489b90a962146dc14476a0675194f1974fb8dc5ed38aae0ea` |
+| 3 | `def` | [integralLifted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CommutativeCoefficientCarriers.lean/declarations/integrallifted.md) | 52 | `declaration-track:4ab2b3a9fb67fd7ff1a2022ca8fa37234b5551d4240d60086c1af10b1fdde169` |
+| 4 | `def` | [rational](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CommutativeCoefficientCarriers.lean/declarations/rational.md) | 56 | `declaration-track:dfe4188c7cbf16f5de5cd2c5527c6a59b8c3c6ef0c4b8d026aeea1f84c74d288` |
+| 5 | `def` | [modulo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CommutativeCoefficientCarriers.lean/declarations/modulo.md) | 60 | `declaration-track:3f4efcc1e58ff964df083a2def9449ca67dda4a5129b343d6d5823bee39d1e92` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

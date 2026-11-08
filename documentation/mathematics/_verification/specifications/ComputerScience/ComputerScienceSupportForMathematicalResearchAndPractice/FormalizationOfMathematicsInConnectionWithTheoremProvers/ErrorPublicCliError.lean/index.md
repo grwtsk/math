@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ErrorPublicCliError.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ErrorPublicCliError.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ErrorPublicCliError.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ErrorPublicCliError.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [CliError](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ErrorPublicCliError.lean/declarations/clierror.md) | 16 | `declaration-track:dc210759262173525f08869ee05b65733ef6bb9c1a3ca0acc06be1546332e95d` |
-| 2 | `def` | [toString](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ErrorPublicCliError.lean/declarations/tostring.md) | 59 | `declaration-track:173e5151bf7d83f7a7a5e0bcf180a59f0344a2b2107072681485edb6bd8fafd0` |
-| 3 | `instance` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ErrorPublicCliError.lean/declarations/instance.md) | 94 | `declaration-track:a3925dd72d9b51b5e3029fdc61d0fb2fe54ebafefce4a82961cbec4813db71dd` |
+| 1 | `inductive` | [CliError](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ErrorPublicCliError.lean/declarations/clierror.md) | 16 | `declaration-track:dc210759262173525f08869ee05b65733ef6bb9c1a3ca0acc06be1546332e95d` |
+| 2 | `def` | [toString](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ErrorPublicCliError.lean/declarations/tostring.md) | 59 | `declaration-track:173e5151bf7d83f7a7a5e0bcf180a59f0344a2b2107072681485edb6bd8fafd0` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ErrorPublicCliError.lean/declarations/instance.md) | 94 | `declaration-track:a3925dd72d9b51b5e3029fdc61d0fb2fe54ebafefce4a82961cbec4813db71dd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Plurality.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Plurality.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Plurality.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Plurality.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [OracleFamily](../../../../../ComputerScience/AlgorithmsInComputerScience/Plurality.lean/declarations/oraclefamily.md) | 13 | `declaration-track:4f14a03013268cbe39fd7bbb73ef640ccb04de9c5d76f1deab76a282747ae478` |
-| 2 | `theorem` | [OracleFamily.no_private_point_universe](../../../../../ComputerScience/AlgorithmsInComputerScience/Plurality.lean/declarations/oraclefamily-no-private-point-universe.md) | 28 | `result-track:3f05fa0f075043794516d6c386ad44378e596c7897cbfa26bb10a33671494697` |
-| 3 | `theorem` | [OracleFamily.jurisdiction_valid](../../../../../ComputerScience/AlgorithmsInComputerScience/Plurality.lean/declarations/oraclefamily-jurisdiction-valid.md) | 36 | `result-track:be3b87abc49156a05146f2203315d328f1c11a00904b29cababb50a5011a81ad` |
+| 1 | `structure` | [OracleFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Plurality.lean/declarations/oraclefamily.md) | 13 | `declaration-track:4f14a03013268cbe39fd7bbb73ef640ccb04de9c5d76f1deab76a282747ae478` |
+| 2 | `theorem` | [OracleFamily.no_private_point_universe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Plurality.lean/declarations/oraclefamily-no-private-point-universe.md) | 28 | `result-track:3f05fa0f075043794516d6c386ad44378e596c7897cbfa26bb10a33671494697` |
+| 3 | `theorem` | [OracleFamily.jurisdiction_valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Plurality.lean/declarations/oraclefamily-jurisdiction-valid.md) | 36 | `result-track:be3b87abc49156a05146f2203315d328f1c11a00904b29cababb50a5011a81ad` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

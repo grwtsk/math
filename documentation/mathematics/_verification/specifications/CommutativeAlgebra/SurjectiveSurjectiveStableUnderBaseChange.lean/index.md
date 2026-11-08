@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/SurjectiveSurjectiveStableUnderBaseChange.lean/index.md) · [Full source](../../../../CommutativeAlgebra/SurjectiveSurjectiveStableUnderBaseChange.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SurjectiveSurjectiveStableUnderBaseChange.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SurjectiveSurjectiveStableUnderBaseChange.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [surjective_stableUnderComposition](../../../../CommutativeAlgebra/SurjectiveSurjectiveStableUnderBaseChange.lean/declarations/surjective-stableundercomposition.md) | 26 | `result-track:07b8abc773cb138b09ef9cb580289cdf452a968700519237b7cb5e0b78d429e1` |
-| 2 | `theorem` | [surjective_respectsIso](../../../../CommutativeAlgebra/SurjectiveSurjectiveStableUnderBaseChange.lean/declarations/surjective-respectsiso.md) | 30 | `result-track:23170b28321e093e11fe67c9dd44667349d1bff6ccca9f433191e80591d0f7a5` |
-| 3 | `theorem` | [surjective_stableUnderBaseChange](../../../../CommutativeAlgebra/SurjectiveSurjectiveStableUnderBaseChange.lean/declarations/surjective-stableunderbasechange.md) | 36 | `result-track:b55d296fdc41f656349712dfcf6e8865b3008785eea1a29fb2b08311f442948c` |
-| 4 | `theorem` | [surjective_ofLocalizationSpan](../../../../CommutativeAlgebra/SurjectiveSurjectiveStableUnderBaseChange.lean/declarations/surjective-oflocalizationspan.md) | 51 | `result-track:3b49c4ee52d6f20fc18a4d32b56a18080d2c9ab7fc119ddb0452ed4e287b0f54` |
+| 1 | `theorem` | [surjective_stableUnderComposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SurjectiveSurjectiveStableUnderBaseChange.lean/declarations/surjective-stableundercomposition.md) | 26 | `result-track:07b8abc773cb138b09ef9cb580289cdf452a968700519237b7cb5e0b78d429e1` |
+| 2 | `theorem` | [surjective_respectsIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SurjectiveSurjectiveStableUnderBaseChange.lean/declarations/surjective-respectsiso.md) | 30 | `result-track:23170b28321e093e11fe67c9dd44667349d1bff6ccca9f433191e80591d0f7a5` |
+| 3 | `theorem` | [surjective_stableUnderBaseChange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SurjectiveSurjectiveStableUnderBaseChange.lean/declarations/surjective-stableunderbasechange.md) | 36 | `result-track:b55d296fdc41f656349712dfcf6e8865b3008785eea1a29fb2b08311f442948c` |
+| 4 | `theorem` | [surjective_ofLocalizationSpan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SurjectiveSurjectiveStableUnderBaseChange.lean/declarations/surjective-oflocalizationspan.md) | 51 | `result-track:3b49c4ee52d6f20fc18a4d32b56a18080d2c9ab7fc119ddb0452ed4e287b0f54` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

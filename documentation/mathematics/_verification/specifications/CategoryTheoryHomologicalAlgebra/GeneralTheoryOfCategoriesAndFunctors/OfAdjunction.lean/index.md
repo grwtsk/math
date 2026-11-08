@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OfAdjunction.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OfAdjunction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OfAdjunction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OfAdjunction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [hasLeftCalculusOfFractions](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OfAdjunction.lean/declarations/hasleftcalculusoffractions.md) | 30 | `result-track:d1f951a20d0f7fec70cba917e1c26a686c87cbff0782432fb6f15c666e0f3d60` |
-| 2 | `lemma` | [hasRightCalculusOfFractions](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OfAdjunction.lean/declarations/hasrightcalculusoffractions.md) | 53 | `result-track:5ed5a0afef65c48aa0f9033d753ce9eda2cb038a6ddfbac1704c62f13b564f02` |
+| 1 | `lemma` | [hasLeftCalculusOfFractions](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OfAdjunction.lean/declarations/hasleftcalculusoffractions.md) | 30 | `result-track:d1f951a20d0f7fec70cba917e1c26a686c87cbff0782432fb6f15c666e0f3d60` |
+| 2 | `lemma` | [hasRightCalculusOfFractions](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OfAdjunction.lean/declarations/hasrightcalculusoffractions.md) | 53 | `result-track:5ed5a0afef65c48aa0f9033d753ce9eda2cb038a6ddfbac1704c62f13b564f02` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

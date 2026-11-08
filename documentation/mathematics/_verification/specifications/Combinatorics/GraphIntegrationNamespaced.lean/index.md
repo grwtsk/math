@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/GraphIntegrationNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/GraphIntegrationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphIntegrationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphIntegrationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [RHNodeClass](../../../../Combinatorics/GraphIntegrationNamespaced.lean/declarations/rhnodeclass.md) | 24 | `declaration-track:dccfc61cdba4da984ffbd1964da970ae76724357d72e97edd5bd3de654d59733` |
-| 2 | `inductive` | [RHEdgeClass](../../../../Combinatorics/GraphIntegrationNamespaced.lean/declarations/rhedgeclass.md) | 34 | `declaration-track:9e3084ff2d326997e25d3057e745276d33a7a7e34b1fdb9dd9b97004d5c9fd0b` |
-| 3 | `inductive` | [RHObjective](../../../../Combinatorics/GraphIntegrationNamespaced.lean/declarations/rhobjective.md) | 45 | `declaration-track:360d5611b64d265cd3edb293dcd71c16d28374322bf0553fe4dc00cc2a7e2b38` |
-| 4 | `def` | [canonicalGraphModePlan](../../../../Combinatorics/GraphIntegrationNamespaced.lean/declarations/canonicalgraphmodeplan.md) | 55 | `declaration-track:e9a9953f0ef497019608eb6a575491ea50b1df80ae12bf242466757f063fd3c9` |
-| 5 | `structure` | [RHGraphAccessPlan](../../../../Combinatorics/GraphIntegrationNamespaced.lean/declarations/rhgraphaccessplan.md) | 66 | `declaration-track:6968ce85a429e88c48c9f427a7e5707cf4280c9e46444d5f1319a6008ea74173` |
-| 6 | `def` | [RHObjective.toGraphAccessPlan](../../../../Combinatorics/GraphIntegrationNamespaced.lean/declarations/rhobjective-tographaccessplan.md) | 76 | `declaration-track:5eb3d3381f41461b9a6f319d209daafec2ff0ecbb471a63a2b32bf29d54fd143` |
-| 7 | `theorem` | [RHObjective.compiledPlan_supported](../../../../Combinatorics/GraphIntegrationNamespaced.lean/declarations/rhobjective-compiledplan-supported.md) | 151 | `result-track:dba710a90ca45c937f01ec648d2aa3bdb4176127797533bd88743522260bdb91` |
+| 1 | `inductive` | [RHNodeClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphIntegrationNamespaced.lean/declarations/rhnodeclass.md) | 24 | `declaration-track:dccfc61cdba4da984ffbd1964da970ae76724357d72e97edd5bd3de654d59733` |
+| 2 | `inductive` | [RHEdgeClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphIntegrationNamespaced.lean/declarations/rhedgeclass.md) | 34 | `declaration-track:9e3084ff2d326997e25d3057e745276d33a7a7e34b1fdb9dd9b97004d5c9fd0b` |
+| 3 | `inductive` | [RHObjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphIntegrationNamespaced.lean/declarations/rhobjective.md) | 45 | `declaration-track:360d5611b64d265cd3edb293dcd71c16d28374322bf0553fe4dc00cc2a7e2b38` |
+| 4 | `def` | [canonicalGraphModePlan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphIntegrationNamespaced.lean/declarations/canonicalgraphmodeplan.md) | 55 | `declaration-track:e9a9953f0ef497019608eb6a575491ea50b1df80ae12bf242466757f063fd3c9` |
+| 5 | `structure` | [RHGraphAccessPlan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphIntegrationNamespaced.lean/declarations/rhgraphaccessplan.md) | 66 | `declaration-track:6968ce85a429e88c48c9f427a7e5707cf4280c9e46444d5f1319a6008ea74173` |
+| 6 | `def` | [RHObjective.toGraphAccessPlan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphIntegrationNamespaced.lean/declarations/rhobjective-tographaccessplan.md) | 76 | `declaration-track:5eb3d3381f41461b9a6f319d209daafec2ff0ecbb471a63a2b32bf29d54fd143` |
+| 7 | `theorem` | [RHObjective.compiledPlan_supported](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphIntegrationNamespaced.lean/declarations/rhobjective-compiledplan-supported.md) | 151 | `result-track:dba710a90ca45c937f01ec648d2aa3bdb4176127797533bd88743522260bdb91` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

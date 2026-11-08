@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachFiniteSingularCore.lean/index.md) · [Full source](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachFiniteSingularCore.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachFiniteSingularCore.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachFiniteSingularCore.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,11 +46,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Interfaces.GoldbachCommonWindowCore`](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachCommonWindowCore.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Primes.GoldbachFiniteSingularExpansion`](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachFiniteSingularExpansion.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.NumberTheory.Primes.GoldbachFiniteSingularEvaluation`](../../../../../MeasureAndIntegration/GoldbachFiniteSingularEvaluation.lean/index.md) — import line 6; pinned internal source present.
-- [`GRWTSK.NumberTheory.Primes.GoldbachFiniteSingularBoundary`](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachFiniteSingularBoundary.lean/index.md) — import line 7; pinned internal source present.
-- [`GRWTSK.NumberTheory.Primes.Checks.GoldbachFiniteSingularControls`](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachFiniteSingularControls.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.Interfaces.GoldbachCommonWindowCore`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachCommonWindowCore.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Primes.GoldbachFiniteSingularExpansion`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachFiniteSingularExpansion.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Primes.GoldbachFiniteSingularEvaluation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GoldbachFiniteSingularEvaluation.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.NumberTheory.Primes.GoldbachFiniteSingularBoundary`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachFiniteSingularBoundary.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Primes.Checks.GoldbachFiniteSingularControls`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachFiniteSingularControls.lean/index.md) — import line 8; pinned internal source present.
 
 ## Top results and three-degree verification metric
 

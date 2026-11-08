@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/MoveNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/MoveNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MoveNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MoveNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [TerrainMoveKind](../../../../Combinatorics/MoveNamespaced.lean/declarations/terrainmovekind.md) | 23 | `declaration-track:e95e70875995b640643eca402f8c3ee5691c8a946f3aec3d1d74c45d57740b50` |
-| 2 | `structure` | [TerrainMove](../../../../Combinatorics/MoveNamespaced.lean/declarations/terrainmove.md) | 32 | `declaration-track:5564f9201dc11dab0ce5e71043c8341a4c18bf015612e5ffdcb735472762b3c3` |
-| 3 | `theorem` | [endpoints_have_absolute_loci](../../../../Combinatorics/MoveNamespaced.lean/declarations/endpoints-have-absolute-loci.md) | 58 | `result-track:8fb489caae89706ebce1315c689fa884c9f96f566a0159137b4e33b718eaa4ec` |
+| 1 | `inductive` | [TerrainMoveKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MoveNamespaced.lean/declarations/terrainmovekind.md) | 23 | `declaration-track:e95e70875995b640643eca402f8c3ee5691c8a946f3aec3d1d74c45d57740b50` |
+| 2 | `structure` | [TerrainMove](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MoveNamespaced.lean/declarations/terrainmove.md) | 32 | `declaration-track:5564f9201dc11dab0ce5e71043c8341a4c18bf015612e5ffdcb735472762b3c3` |
+| 3 | `theorem` | [endpoints_have_absolute_loci](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MoveNamespaced.lean/declarations/endpoints-have-absolute-loci.md) | 58 | `result-track:8fb489caae89706ebce1315c689fa884c9f96f566a0159137b4e33b718eaa4ec` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

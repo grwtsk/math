@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/FiniteHorizon.lean/index.md) · [Full source](../../../../Combinatorics/FiniteHorizon.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteHorizon.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteHorizon.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FiniteHorizonImage](../../../../Combinatorics/FiniteHorizon.lean/declarations/finitehorizonimage.md) | 14 | `declaration-track:d8aebc92c272c136e50d41a7461ffc8776ece54bb4d8416f29b20f0f3015cb4e` |
-| 2 | `structure` | [FiniteHorizonFiltration](../../../../Combinatorics/FiniteHorizon.lean/declarations/finitehorizonfiltration.md) | 29 | `declaration-track:f0452f030360f5f342d3ea437098bba8954fd48456b0c8445fc900d62e4bb609` |
+| 1 | `structure` | [FiniteHorizonImage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteHorizon.lean/declarations/finitehorizonimage.md) | 14 | `declaration-track:d8aebc92c272c136e50d41a7461ffc8776ece54bb4d8416f29b20f0f3015cb4e` |
+| 2 | `structure` | [FiniteHorizonFiltration](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteHorizon.lean/declarations/finitehorizonfiltration.md) | 29 | `declaration-track:f0452f030360f5f342d3ea437098bba8954fd48456b0c8445fc900d62e4bb609` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

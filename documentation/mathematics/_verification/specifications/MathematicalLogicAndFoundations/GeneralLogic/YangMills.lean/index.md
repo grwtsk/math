@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/YangMills.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/YangMills.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/YangMills.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/YangMills.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [ym_tube_concentration_excluded_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/YangMills.lean/declarations/ym-tube-concentration-excluded-if-supplied.md) | 20 | `result-track:c86ca91d621c5f6261023f2adf9a9d2bfc3863523ca6474178b5805ec991a23a` |
-| 2 | `theorem` | [ym_stickiness_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/YangMills.lean/declarations/ym-stickiness-if-supplied.md) | 25 | `result-track:f352b61302d09a4d91f44aee9788256976af5781544a89502c88489602a8eb40` |
-| 3 | `theorem` | [mirzakhani_volume_is_analogy_only](../../../../../MathematicalLogicAndFoundations/GeneralLogic/YangMills.lean/declarations/mirzakhani-volume-is-analogy-only.md) | 30 | `result-track:cceed7c9169e2a139df6856c6c8705a7bc4ef1055dd7b3322e67878dda511ddc` |
-| 4 | `theorem` | [ym_zero_mass_obstructed_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/YangMills.lean/declarations/ym-zero-mass-obstructed-if-supplied.md) | 35 | `result-track:54d0432abb0d10c8289173fd3498f6bd54d08ba000f13c5a3d94f51109b07f8f` |
-| 5 | `theorem` | [positive_energy_enters_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/YangMills.lean/declarations/positive-energy-enters-if-supplied.md) | 40 | `result-track:3ceb6ef0aa9dbd7d32ab15bbbd49e7414b153a6ca782a53e6899509ecb2df129` |
-| 6 | `theorem` | [zero_mass_escape_obstructed_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/YangMills.lean/declarations/zero-mass-escape-obstructed-if-supplied.md) | 45 | `result-track:8689b5eb2db50f309256b3394942758e3b603a828b5a154582683b28b4420520` |
-| 7 | `theorem` | [no_zero_mass_escape_without_obstruction](../../../../../MathematicalLogicAndFoundations/GeneralLogic/YangMills.lean/declarations/no-zero-mass-escape-without-obstruction.md) | 52 | `result-track:3b618e3b65581d205d4333a1b4d11eabd13d813a7b23ed0c9f9ad98671dca066` |
+| 1 | `theorem` | [ym_tube_concentration_excluded_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/YangMills.lean/declarations/ym-tube-concentration-excluded-if-supplied.md) | 20 | `result-track:c86ca91d621c5f6261023f2adf9a9d2bfc3863523ca6474178b5805ec991a23a` |
+| 2 | `theorem` | [ym_stickiness_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/YangMills.lean/declarations/ym-stickiness-if-supplied.md) | 25 | `result-track:f352b61302d09a4d91f44aee9788256976af5781544a89502c88489602a8eb40` |
+| 3 | `theorem` | [mirzakhani_volume_is_analogy_only](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/YangMills.lean/declarations/mirzakhani-volume-is-analogy-only.md) | 30 | `result-track:cceed7c9169e2a139df6856c6c8705a7bc4ef1055dd7b3322e67878dda511ddc` |
+| 4 | `theorem` | [ym_zero_mass_obstructed_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/YangMills.lean/declarations/ym-zero-mass-obstructed-if-supplied.md) | 35 | `result-track:54d0432abb0d10c8289173fd3498f6bd54d08ba000f13c5a3d94f51109b07f8f` |
+| 5 | `theorem` | [positive_energy_enters_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/YangMills.lean/declarations/positive-energy-enters-if-supplied.md) | 40 | `result-track:3ceb6ef0aa9dbd7d32ab15bbbd49e7414b153a6ca782a53e6899509ecb2df129` |
+| 6 | `theorem` | [zero_mass_escape_obstructed_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/YangMills.lean/declarations/zero-mass-escape-obstructed-if-supplied.md) | 45 | `result-track:8689b5eb2db50f309256b3394942758e3b603a828b5a154582683b28b4420520` |
+| 7 | `theorem` | [no_zero_mass_escape_without_obstruction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/YangMills.lean/declarations/no-zero-mass-escape-without-obstruction.md) | 52 | `result-track:3b618e3b65581d205d4333a1b4d11eabd13d813a7b23ed0c9f9ad98671dca066` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

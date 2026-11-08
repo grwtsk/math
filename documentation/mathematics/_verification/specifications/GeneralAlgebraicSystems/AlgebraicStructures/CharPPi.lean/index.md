@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPPi.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPPi.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPPi.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPPi.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [pi](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPPi.lean/declarations/pi.md) | 18 | `declaration-track:695bf16de22baa9755e91f4ced9497fcb3a3b77d62eaafe9048ed7122c8d330a` |
-| 2 | `instance` | [pi'](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPPi.lean/declarations/pi-source-edition-2.md) | 30 | `declaration-track:7361faf9c0bd87961a800d0baf17ae2d2935985ceb0af2bd1d4da62f764c3dda` |
+| 1 | `instance` | [pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPPi.lean/declarations/pi.md) | 18 | `declaration-track:695bf16de22baa9755e91f4ced9497fcb3a3b77d62eaafe9048ed7122c8d330a` |
+| 2 | `instance` | [pi'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPPi.lean/declarations/pi-source-edition-2.md) | 30 | `declaration-track:7361faf9c0bd87961a800d0baf17ae2d2935985ceb0af2bd1d4da62f764c3dda` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

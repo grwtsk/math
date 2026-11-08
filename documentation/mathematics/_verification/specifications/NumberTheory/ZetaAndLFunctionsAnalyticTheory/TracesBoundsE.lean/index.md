@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TracesBoundsE.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TracesBoundsE.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TracesBoundsE.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TracesBoundsE.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TracesBoundsE](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TracesBoundsE.lean/declarations/tracesboundse.md) | 33 | `declaration-track:445eee0ad51f2140f39c3864bf40772c9788890818d8b8838af879c3f363c3fd` |
-| 2 | `lemma` | [TracesBounds.toE](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TracesBoundsE.lean/declarations/tracesbounds-toe.md) | 40 | `result-track:a208cc2c7449ca8e4b5d15f908d5a9e17f45fad0beb1781da771d39c57d6205b` |
-| 3 | `lemma` | [TracesBoundsE.toTracesBounds](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TracesBoundsE.lean/declarations/tracesboundse-totracesbounds.md) | 44 | `result-track:3f205f5759dfb1e32115502f05f17effd8b311fc51fa601cef57045d332b89c0` |
-| 4 | `def` | [ThmTracesHypE](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TracesBoundsE.lean/declarations/thmtraceshype.md) | 49 | `declaration-track:3a6b212e5e591b7962ad25017f90ba67e5ceca45494457dc2e1db748608a103a` |
-| 5 | `lemma` | [thmTracesHyp_iff_E](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TracesBoundsE.lean/declarations/thmtraceshyp-iff-e.md) | 52 | `result-track:39120068a1b2b901b22e7799d3f2e720f55986be4adfa48bf961dd91504a0493` |
+| 1 | `structure` | [TracesBoundsE](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TracesBoundsE.lean/declarations/tracesboundse.md) | 33 | `declaration-track:445eee0ad51f2140f39c3864bf40772c9788890818d8b8838af879c3f363c3fd` |
+| 2 | `lemma` | [TracesBounds.toE](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TracesBoundsE.lean/declarations/tracesbounds-toe.md) | 40 | `result-track:a208cc2c7449ca8e4b5d15f908d5a9e17f45fad0beb1781da771d39c57d6205b` |
+| 3 | `lemma` | [TracesBoundsE.toTracesBounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TracesBoundsE.lean/declarations/tracesboundse-totracesbounds.md) | 44 | `result-track:3f205f5759dfb1e32115502f05f17effd8b311fc51fa601cef57045d332b89c0` |
+| 4 | `def` | [ThmTracesHypE](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TracesBoundsE.lean/declarations/thmtraceshype.md) | 49 | `declaration-track:3a6b212e5e591b7962ad25017f90ba67e5ceca45494457dc2e1db748608a103a` |
+| 5 | `lemma` | [thmTracesHyp_iff_E](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TracesBoundsE.lean/declarations/thmtraceshyp-iff-e.md) | 52 | `result-track:39120068a1b2b901b22e7799d3f2e720f55986be4adfa48bf961dd91504a0493` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

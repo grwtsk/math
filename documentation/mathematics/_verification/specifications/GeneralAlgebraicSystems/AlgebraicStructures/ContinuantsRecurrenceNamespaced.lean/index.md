@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ContinuantsRecurrenceNamespaced.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ContinuantsRecurrenceNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ContinuantsRecurrenceNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ContinuantsRecurrenceNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [contsAux_recurrence](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ContinuantsRecurrenceNamespaced.lean/declarations/contsaux-recurrence.md) | 32 | `result-track:525251382d06d02993ab3e4038ce42e06998a1ba6c2f62a2d9c04dfef3a6faf7` |
-| 2 | `theorem` | [conts_recurrenceAux](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ContinuantsRecurrenceNamespaced.lean/declarations/conts-recurrenceaux.md) | 38 | `result-track:c1f94c2a7b37ced4c79325fbc3799eb68829ebbca361860b0de39a45abe5a97c` |
-| 3 | `theorem` | [conts_recurrence](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ContinuantsRecurrenceNamespaced.lean/declarations/conts-recurrence.md) | 46 | `result-track:fad7386c5e7761c9699fd16e45b6b262bd032fc091772e1499563b4c84929c6c` |
-| 4 | `theorem` | [nums_recurrence](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ContinuantsRecurrenceNamespaced.lean/declarations/nums-recurrence.md) | 53 | `result-track:83dfdac0d546fa8e2ca7a431a6e71976354d2f105c7046acaca6927dd9eb9b7e` |
-| 5 | `theorem` | [dens_recurrence](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ContinuantsRecurrenceNamespaced.lean/declarations/dens-recurrence.md) | 65 | `result-track:25ebb95f537d52cae27d8558e0aef829f2592a52956e342358ccb92f9e5df2b8` |
+| 1 | `theorem` | [contsAux_recurrence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ContinuantsRecurrenceNamespaced.lean/declarations/contsaux-recurrence.md) | 32 | `result-track:525251382d06d02993ab3e4038ce42e06998a1ba6c2f62a2d9c04dfef3a6faf7` |
+| 2 | `theorem` | [conts_recurrenceAux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ContinuantsRecurrenceNamespaced.lean/declarations/conts-recurrenceaux.md) | 38 | `result-track:c1f94c2a7b37ced4c79325fbc3799eb68829ebbca361860b0de39a45abe5a97c` |
+| 3 | `theorem` | [conts_recurrence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ContinuantsRecurrenceNamespaced.lean/declarations/conts-recurrence.md) | 46 | `result-track:fad7386c5e7761c9699fd16e45b6b262bd032fc091772e1499563b4c84929c6c` |
+| 4 | `theorem` | [nums_recurrence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ContinuantsRecurrenceNamespaced.lean/declarations/nums-recurrence.md) | 53 | `result-track:83dfdac0d546fa8e2ca7a431a6e71976354d2f105c7046acaca6927dd9eb9b7e` |
+| 5 | `theorem` | [dens_recurrence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ContinuantsRecurrenceNamespaced.lean/declarations/dens-recurrence.md) | 65 | `result-track:25ebb95f537d52cae27d8558e0aef829f2592a52956e342358ccb92f9e5df2b8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

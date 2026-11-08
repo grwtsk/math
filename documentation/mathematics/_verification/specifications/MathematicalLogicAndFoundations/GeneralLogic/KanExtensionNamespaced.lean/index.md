@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/KanExtensionNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/KanExtensionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/KanExtensionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/KanExtensionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [LeftKanExtensionDatum](../../../../../MathematicalLogicAndFoundations/GeneralLogic/KanExtensionNamespaced.lean/declarations/leftkanextensiondatum.md) | 30 | `declaration-track:bd852ffeaf4aacc7b14a477655d82e5af79d0f3cb2978a5a18560fd53459cc11` |
-| 2 | `structure` | [DerivedLeftKanExtensionDatum](../../../../../MathematicalLogicAndFoundations/GeneralLogic/KanExtensionNamespaced.lean/declarations/derivedleftkanextensiondatum.md) | 52 | `declaration-track:f1cb238ca7a888f96d7c34e24f68b74c0f5d926f29cc325dd464c0f173e00f80` |
-| 3 | `structure` | [SimplicialResolution](../../../../../MathematicalLogicAndFoundations/GeneralLogic/KanExtensionNamespaced.lean/declarations/simplicialresolution.md) | 59 | `declaration-track:6b37631b9107acd518b5d8ca55d79fc8c30a37a4297470b950e5f3aad159b813` |
-| 4 | `structure` | [ResolutionFormula](../../../../../MathematicalLogicAndFoundations/GeneralLogic/KanExtensionNamespaced.lean/declarations/resolutionformula.md) | 71 | `declaration-track:8aa1e1dc84f0ab46221d64b0548ca08d967c02f86e2bc31c94a78ba3f598fcbe` |
+| 1 | `structure` | [LeftKanExtensionDatum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/KanExtensionNamespaced.lean/declarations/leftkanextensiondatum.md) | 30 | `declaration-track:bd852ffeaf4aacc7b14a477655d82e5af79d0f3cb2978a5a18560fd53459cc11` |
+| 2 | `structure` | [DerivedLeftKanExtensionDatum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/KanExtensionNamespaced.lean/declarations/derivedleftkanextensiondatum.md) | 52 | `declaration-track:f1cb238ca7a888f96d7c34e24f68b74c0f5d926f29cc325dd464c0f173e00f80` |
+| 3 | `structure` | [SimplicialResolution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/KanExtensionNamespaced.lean/declarations/simplicialresolution.md) | 59 | `declaration-track:6b37631b9107acd518b5d8ca55d79fc8c30a37a4297470b950e5f3aad159b813` |
+| 4 | `structure` | [ResolutionFormula](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/KanExtensionNamespaced.lean/declarations/resolutionformula.md) | 71 | `declaration-track:8aa1e1dc84f0ab46221d64b0548ca08d967c02f86e2bc31c94a78ba3f598fcbe` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

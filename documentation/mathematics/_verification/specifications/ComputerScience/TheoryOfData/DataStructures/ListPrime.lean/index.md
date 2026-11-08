@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListPrime.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListPrime.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListPrime.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListPrime.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Prime.dvd_prod_iff](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListPrime.lean/declarations/prime-dvd-prod-iff.md) | 24 | `result-track:59f09e0fae0e1549726c003e0e266bfadd33ee3c7554bcb1fe10ea444a5458b3` |
-| 2 | `theorem` | [Prime.not_dvd_prod](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListPrime.lean/declarations/prime-not-dvd-prod.md) | 37 | `result-track:cf58268a9853d3d20fbaae2e37ef2ff889dd5233000075b3591888e50626ca4e` |
-| 3 | `theorem` | [mem_list_primes_of_dvd_prod](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListPrime.lean/declarations/mem-list-primes-of-dvd-prod.md) | 47 | `result-track:7fddefa7e8ba673019e4f2cacd63b4b8f84fbdc21b13b4791e0d54317be14d25` |
-| 4 | `theorem` | [perm_of_prod_eq_prod](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListPrime.lean/declarations/perm-of-prod-eq-prod.md) | 52 | `result-track:4eda56008de6f50911d1181776adc7ce7df477e6639cb8ea137ade8cb68f8bba` |
+| 1 | `theorem` | [Prime.dvd_prod_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListPrime.lean/declarations/prime-dvd-prod-iff.md) | 24 | `result-track:59f09e0fae0e1549726c003e0e266bfadd33ee3c7554bcb1fe10ea444a5458b3` |
+| 2 | `theorem` | [Prime.not_dvd_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListPrime.lean/declarations/prime-not-dvd-prod.md) | 37 | `result-track:cf58268a9853d3d20fbaae2e37ef2ff889dd5233000075b3591888e50626ca4e` |
+| 3 | `theorem` | [mem_list_primes_of_dvd_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListPrime.lean/declarations/mem-list-primes-of-dvd-prod.md) | 47 | `result-track:7fddefa7e8ba673019e4f2cacd63b4b8f84fbdc21b13b4791e0d54317be14d25` |
+| 4 | `theorem` | [perm_of_prod_eq_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListPrime.lean/declarations/perm-of-prod-eq-prod.md) | 52 | `result-track:4eda56008de6f50911d1181776adc7ce7df477e6639cb8ea137ade8cb68f8bba` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

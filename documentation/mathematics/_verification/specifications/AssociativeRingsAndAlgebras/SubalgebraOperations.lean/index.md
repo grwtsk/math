@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/SubalgebraOperations.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/SubalgebraOperations.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubalgebraOperations.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubalgebraOperations.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [ker_rangeRestrict](../../../../AssociativeRingsAndAlgebras/SubalgebraOperations.lean/declarations/ker-rangerestrict.md) | 25 | `result-track:1edc19281c7c5e0f0c93381a482d8c3232eb5eba739cc239a5507598b9e15c85` |
-| 2 | `theorem` | [mem_of_finset_sum_eq_one_of_pow_smul_mem](../../../../AssociativeRingsAndAlgebras/SubalgebraOperations.lean/declarations/mem-of-finset-sum-eq-one-of-pow-smul-mem.md) | 40 | `result-track:5a126b478e0f3f0aedcabc779cbe5097025f93d265fc7d379dcdefd0b5418178` |
-| 3 | `theorem` | [mem_of_span_eq_top_of_smul_pow_mem](../../../../AssociativeRingsAndAlgebras/SubalgebraOperations.lean/declarations/mem-of-span-eq-top-of-smul-pow-mem.md) | 68 | `result-track:1dfb7079bb39ceb2e4094e75c14cab96c4525996a9c861064d5b9fd859a0bfb2` |
-| 4 | `def` | [FixedPoints.subring](../../../../AssociativeRingsAndAlgebras/SubalgebraOperations.lean/declarations/fixedpoints-subring.md) | 82 | `declaration-track:b6771b58f02100a96231f09d62b5cc3fa71ddcae70eef2dc57fd7ab9931dba57` |
-| 5 | `def` | [FixedPoints.subalgebra](../../../../AssociativeRingsAndAlgebras/SubalgebraOperations.lean/declarations/fixedpoints-subalgebra.md) | 87 | `declaration-track:8fc19db19005d42e179a8bf660b6b307d306cbf6ea0bf461cc6bbe5ae6f50698` |
+| 1 | `theorem` | [ker_rangeRestrict](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubalgebraOperations.lean/declarations/ker-rangerestrict.md) | 25 | `result-track:1edc19281c7c5e0f0c93381a482d8c3232eb5eba739cc239a5507598b9e15c85` |
+| 2 | `theorem` | [mem_of_finset_sum_eq_one_of_pow_smul_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubalgebraOperations.lean/declarations/mem-of-finset-sum-eq-one-of-pow-smul-mem.md) | 40 | `result-track:5a126b478e0f3f0aedcabc779cbe5097025f93d265fc7d379dcdefd0b5418178` |
+| 3 | `theorem` | [mem_of_span_eq_top_of_smul_pow_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubalgebraOperations.lean/declarations/mem-of-span-eq-top-of-smul-pow-mem.md) | 68 | `result-track:1dfb7079bb39ceb2e4094e75c14cab96c4525996a9c861064d5b9fd859a0bfb2` |
+| 4 | `def` | [FixedPoints.subring](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubalgebraOperations.lean/declarations/fixedpoints-subring.md) | 82 | `declaration-track:b6771b58f02100a96231f09d62b5cc3fa71ddcae70eef2dc57fd7ab9931dba57` |
+| 5 | `def` | [FixedPoints.subalgebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubalgebraOperations.lean/declarations/fixedpoints-subalgebra.md) | 87 | `declaration-track:8fc19db19005d42e179a8bf660b6b307d306cbf6ea0bf461cc6bbe5ae6f50698` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

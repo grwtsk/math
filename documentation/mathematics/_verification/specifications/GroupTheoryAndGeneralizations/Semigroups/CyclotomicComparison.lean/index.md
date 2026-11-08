@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GroupTheoryAndGeneralizations/Semigroups/CyclotomicComparison.lean/index.md) · [Full source](../../../../../GroupTheoryAndGeneralizations/Semigroups/CyclotomicComparison.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Semigroups/CyclotomicComparison.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Semigroups/CyclotomicComparison.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PrimeIndexedActionCandidate](../../../../../GroupTheoryAndGeneralizations/Semigroups/CyclotomicComparison.lean/declarations/primeindexedactioncandidate.md) | 22 | `declaration-track:970b48d6ffa17428d30292f78c6cb05eba2e8830f1c9bf39ae859be51575504b` |
-| 2 | `structure` | [RelativeKTCComparisonCandidate](../../../../../GroupTheoryAndGeneralizations/Semigroups/CyclotomicComparison.lean/declarations/relativektccomparisoncandidate.md) | 46 | `declaration-track:5bdcf0bd11efdfe1e1b4f1430f9c65ce0c1c41237b42841f0f51f90f17a97427` |
-| 3 | `structure` | [PrismaticCyclotomicComparisonCandidate](../../../../../GroupTheoryAndGeneralizations/Semigroups/CyclotomicComparison.lean/declarations/prismaticcyclotomiccomparisoncandidate.md) | 62 | `declaration-track:389e3cb6299e98a4437a21583b354005537dcfa7bb800a42abc51569d38ca621` |
+| 1 | `structure` | [PrimeIndexedActionCandidate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Semigroups/CyclotomicComparison.lean/declarations/primeindexedactioncandidate.md) | 22 | `declaration-track:970b48d6ffa17428d30292f78c6cb05eba2e8830f1c9bf39ae859be51575504b` |
+| 2 | `structure` | [RelativeKTCComparisonCandidate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Semigroups/CyclotomicComparison.lean/declarations/relativektccomparisoncandidate.md) | 46 | `declaration-track:5bdcf0bd11efdfe1e1b4f1430f9c65ce0c1c41237b42841f0f51f90f17a97427` |
+| 3 | `structure` | [PrismaticCyclotomicComparisonCandidate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Semigroups/CyclotomicComparison.lean/declarations/prismaticcyclotomiccomparisoncandidate.md) | 62 | `declaration-track:389e3cb6299e98a4437a21583b354005537dcfa7bb800a42abc51569d38ca621` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

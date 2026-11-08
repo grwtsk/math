@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoverageCertificate.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoverageCertificate.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoverageCertificate.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoverageCertificate.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [IndependentCoverageVerification](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoverageCertificate.lean/declarations/independentcoverageverification.md) | 10 | `declaration-track:d32012d06817cf82a5730afd0b973da418be617550d41165dd57bbad4a0ef42f` |
-| 2 | `theorem` | [independently_verified_coverage_is_accepted](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoverageCertificate.lean/declarations/independently-verified-coverage-is-accepted.md) | 19 | `result-track:1c6e5935a1198bfba17155d1c930b44b2ca45caed79fabd96d290daaa3b7e79f` |
+| 1 | `structure` | [IndependentCoverageVerification](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoverageCertificate.lean/declarations/independentcoverageverification.md) | 10 | `declaration-track:d32012d06817cf82a5730afd0b973da418be617550d41165dd57bbad4a0ef42f` |
+| 2 | `theorem` | [independently_verified_coverage_is_accepted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoverageCertificate.lean/declarations/independently-verified-coverage-is-accepted.md) | 19 | `result-track:1c6e5935a1198bfba17155d1c930b44b2ca45caed79fabd96d290daaa3b7e79f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ProposalNamespacedPublic.lean/index.md) · [Full source](../../../../Combinatorics/ProposalNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ProposalNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ProposalNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SourceSnapshot](../../../../Combinatorics/ProposalNamespacedPublic.lean/declarations/sourcesnapshot.md) | 29 | `declaration-track:b2d95168cd4b78e455bc03c0e806321a7c2030367d483eb344d4b135c201de96` |
-| 2 | `structure` | [RawProposal](../../../../Combinatorics/ProposalNamespacedPublic.lean/declarations/rawproposal.md) | 38 | `declaration-track:357cb367d9dc12d04770f0d7b717704e1f5973cf2f27b422dd471cf63786e8ab` |
-| 3 | `inductive` | [ProposalRejection](../../../../Combinatorics/ProposalNamespacedPublic.lean/declarations/proposalrejection.md) | 52 | `declaration-track:da2ae057ef0ebce6273163233ec02b10b3d0d3deea1949dbfc41009bf0963249` |
-| 4 | `def` | [MergeAdmissible](../../../../Combinatorics/ProposalNamespacedPublic.lean/declarations/mergeadmissible.md) | 70 | `declaration-track:6809066f17efc12245a51b0938a767a5c6ab3d249fd9896fcd30a7211d8d70a6` |
-| 5 | `instance` | [(anonymous)](../../../../Combinatorics/ProposalNamespacedPublic.lean/declarations/instance.md) | 77 | `declaration-track:670fc3f106800fd23feee053e0b045f4c880f8b98c092195984e767d41f27d6b` |
-| 6 | `structure` | [AdmittedProposal](../../../../Combinatorics/ProposalNamespacedPublic.lean/declarations/admittedproposal.md) | 87 | `declaration-track:601f6f27cb570ce87a9e7e2d631e91bff603ec089e661f91ff56d68ca9353ee3` |
-| 7 | `inductive` | [VerificationResult](../../../../Combinatorics/ProposalNamespacedPublic.lean/declarations/verificationresult.md) | 136 | `declaration-track:a2ec35f54f4424aa9580114d6b2a135b79f3324a835911f05ed7f119fde0ae59` |
+| 1 | `structure` | [SourceSnapshot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ProposalNamespacedPublic.lean/declarations/sourcesnapshot.md) | 29 | `declaration-track:b2d95168cd4b78e455bc03c0e806321a7c2030367d483eb344d4b135c201de96` |
+| 2 | `structure` | [RawProposal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ProposalNamespacedPublic.lean/declarations/rawproposal.md) | 38 | `declaration-track:357cb367d9dc12d04770f0d7b717704e1f5973cf2f27b422dd471cf63786e8ab` |
+| 3 | `inductive` | [ProposalRejection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ProposalNamespacedPublic.lean/declarations/proposalrejection.md) | 52 | `declaration-track:da2ae057ef0ebce6273163233ec02b10b3d0d3deea1949dbfc41009bf0963249` |
+| 4 | `def` | [MergeAdmissible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ProposalNamespacedPublic.lean/declarations/mergeadmissible.md) | 70 | `declaration-track:6809066f17efc12245a51b0938a767a5c6ab3d249fd9896fcd30a7211d8d70a6` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ProposalNamespacedPublic.lean/declarations/instance.md) | 77 | `declaration-track:670fc3f106800fd23feee053e0b045f4c880f8b98c092195984e767d41f27d6b` |
+| 6 | `structure` | [AdmittedProposal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ProposalNamespacedPublic.lean/declarations/admittedproposal.md) | 87 | `declaration-track:601f6f27cb570ce87a9e7e2d631e91bff603ec089e661f91ff56d68ca9353ee3` |
+| 7 | `inductive` | [VerificationResult](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ProposalNamespacedPublic.lean/declarations/verificationresult.md) | 136 | `declaration-track:a2ec35f54f4424aa9580114d6b2a135b79f3324a835911f05ed7f119fde0ae59` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

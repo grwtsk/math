@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/IncidenceNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/IncidenceNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/IncidenceNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/IncidenceNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [MembershipChangesAt](../../../../GeneralTopology/IncidenceNamespaced.lean/declarations/membershipchangesat.md) | 32 | `declaration-track:f0d815fe263c84eb5cc3b5512c29bc5473cec790176665fe970a561ab9198b51` |
-| 2 | `theorem` | [eventually_membership_eq_of_not_mem_frontier](../../../../GeneralTopology/IncidenceNamespaced.lean/declarations/eventually-membership-eq-of-not-mem-frontier.md) | 41 | `result-track:61db6824b0173bbba2de397760090fb99230e285ea555cb705014236269a82ca` |
-| 3 | `theorem` | [membershipChange_requires_frontier](../../../../GeneralTopology/IncidenceNamespaced.lean/declarations/membershipchange-requires-frontier.md) | 62 | `result-track:39cb4b013304109b5d0259e4f97a71441e13c2f1e6a22eab6f1cabe8bb55a8bd` |
-| 4 | `theorem` | [thresholdTrajectory_injective](../../../../GeneralTopology/IncidenceNamespaced.lean/declarations/thresholdtrajectory-injective.md) | 81 | `result-track:72d8103287b778fce286056a6a6067a9590f61bdd327131a7abe837dce471e13` |
+| 1 | `def` | [MembershipChangesAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/IncidenceNamespaced.lean/declarations/membershipchangesat.md) | 32 | `declaration-track:f0d815fe263c84eb5cc3b5512c29bc5473cec790176665fe970a561ab9198b51` |
+| 2 | `theorem` | [eventually_membership_eq_of_not_mem_frontier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/IncidenceNamespaced.lean/declarations/eventually-membership-eq-of-not-mem-frontier.md) | 41 | `result-track:61db6824b0173bbba2de397760090fb99230e285ea555cb705014236269a82ca` |
+| 3 | `theorem` | [membershipChange_requires_frontier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/IncidenceNamespaced.lean/declarations/membershipchange-requires-frontier.md) | 62 | `result-track:39cb4b013304109b5d0259e4f97a71441e13c2f1e6a22eab6f1cabe8bb55a8bd` |
+| 4 | `theorem` | [thresholdTrajectory_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/IncidenceNamespaced.lean/declarations/thresholdtrajectory-injective.md) | 81 | `result-track:72d8103287b778fce286056a6a6067a9590f61bdd327131a7abe837dce471e13` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

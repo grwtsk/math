@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/TypeTagsFiniteNamespacedPublic.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/TypeTagsFiniteNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/TypeTagsFiniteNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/TypeTagsFiniteNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/TypeTagsFiniteNamespacedPublic.lean/declarations/instance-source-edition-4.md) | 32 | `declaration-track:c570e1e865ac60557bcb74a67243953a9400e5ccc95380173705caf15708c1e2` |
-| 2 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/TypeTagsFiniteNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 35 | `declaration-track:b9e5198ac09088526adde72dacf1e7128322801cb3bb39ad4f5a2c6609282083` |
-| 3 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/TypeTagsFiniteNamespacedPublic.lean/declarations/instance.md) | 38 | `declaration-track:021c944dfb26cc174f55daf7f3f8f5d0cea7edd9097a651644fe640b6efe80fd` |
-| 4 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/TypeTagsFiniteNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 40 | `declaration-track:b06d97fe6ce080b1649b41d5fb96d14a3e15093d8166a54d2526e7492b2d1fbb` |
-| 5 | `instance` | [Additive.fintype](../../../../GroupTheoryAndGeneralizations/TypeTagsFiniteNamespacedPublic.lean/declarations/additive-fintype.md) | 42 | `declaration-track:1edfa83b713b255fdcbf51611e1cb576b8aee197e587912122cc7cffcce1ae6b` |
-| 6 | `instance` | [Multiplicative.fintype](../../../../GroupTheoryAndGeneralizations/TypeTagsFiniteNamespacedPublic.lean/declarations/multiplicative-fintype.md) | 45 | `declaration-track:3d07405b8b0cf23e2c04fc2c21761f6e462fc564522753acbd89695186b4a13a` |
-| 7 | `lemma` | [Fintype.card_multiplicative](../../../../GroupTheoryAndGeneralizations/TypeTagsFiniteNamespacedPublic.lean/declarations/fintype-card-multiplicative.md) | 48 | `result-track:2fe72352aab387eec36af3cb46a0dc74d31efc3ed2531c93b6d5c22c50243c6c` |
-| 8 | `lemma` | [Fintype.card_additive](../../../../GroupTheoryAndGeneralizations/TypeTagsFiniteNamespacedPublic.lean/declarations/fintype-card-additive.md) | 51 | `result-track:e1d75095efebf4662fa23c0765c726243c0d8bcda757e181f3977eb4ed443858` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/TypeTagsFiniteNamespacedPublic.lean/declarations/instance-source-edition-4.md) | 32 | `declaration-track:c570e1e865ac60557bcb74a67243953a9400e5ccc95380173705caf15708c1e2` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/TypeTagsFiniteNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 35 | `declaration-track:b9e5198ac09088526adde72dacf1e7128322801cb3bb39ad4f5a2c6609282083` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/TypeTagsFiniteNamespacedPublic.lean/declarations/instance.md) | 38 | `declaration-track:021c944dfb26cc174f55daf7f3f8f5d0cea7edd9097a651644fe640b6efe80fd` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/TypeTagsFiniteNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 40 | `declaration-track:b06d97fe6ce080b1649b41d5fb96d14a3e15093d8166a54d2526e7492b2d1fbb` |
+| 5 | `instance` | [Additive.fintype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/TypeTagsFiniteNamespacedPublic.lean/declarations/additive-fintype.md) | 42 | `declaration-track:1edfa83b713b255fdcbf51611e1cb576b8aee197e587912122cc7cffcce1ae6b` |
+| 6 | `instance` | [Multiplicative.fintype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/TypeTagsFiniteNamespacedPublic.lean/declarations/multiplicative-fintype.md) | 45 | `declaration-track:3d07405b8b0cf23e2c04fc2c21761f6e462fc564522753acbd89695186b4a13a` |
+| 7 | `lemma` | [Fintype.card_multiplicative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/TypeTagsFiniteNamespacedPublic.lean/declarations/fintype-card-multiplicative.md) | 48 | `result-track:2fe72352aab387eec36af3cb46a0dc74d31efc3ed2531c93b6d5c22c50243c6c` |
+| 8 | `lemma` | [Fintype.card_additive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/TypeTagsFiniteNamespacedPublic.lean/declarations/fintype-card-additive.md) | 51 | `result-track:e1d75095efebf4662fa23c0765c726243c0d8bcda757e181f3977eb4ed443858` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/SimpleRingMatrix.lean/index.md) · [Full source](../../../../CommutativeAlgebra/SimpleRingMatrix.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SimpleRingMatrix.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SimpleRingMatrix.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [matrix](../../../../CommutativeAlgebra/SimpleRingMatrix.lean/declarations/matrix.md) | 17 | `declaration-track:41b9f775e25ac57b869dfadd082e70f55fa91a163ea5c40600f48c2457485467` |
+| 1 | `instance` | [matrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SimpleRingMatrix.lean/declarations/matrix.md) | 17 | `declaration-track:41b9f775e25ac57b869dfadd082e70f55fa91a163ea5c40600f48c2457485467` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

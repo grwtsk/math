@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Geometry/RealAndComplexGeometry/InversionCalculusEdition2.lean/index.md) · [Full source](../../../../../Geometry/RealAndComplexGeometry/InversionCalculusEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RealAndComplexGeometry/InversionCalculusEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RealAndComplexGeometry/InversionCalculusEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,16 +59,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `macro_rules` | [(anonymous)](../../../../../Geometry/RealAndComplexGeometry/InversionCalculusEdition2.lean/declarations/macro-rules.md) | 25 | `declaration-track:0276712a7148620aaf1a2c90120f6015eaa24216665538734f97be04f60f41e6` |
-| 2 | `theorem` | [ContDiffWithinAt.inversion](../../../../../Geometry/RealAndComplexGeometry/InversionCalculusEdition2.lean/declarations/contdiffwithinat-inversion.md) | 39 | `result-track:74b7d08ad925cb3cc0f5e2e7715b7db38617b984a37fe4205c6730a44da02436` |
-| 3 | `theorem` | [ContDiffOn.inversion](../../../../../Geometry/RealAndComplexGeometry/InversionCalculusEdition2.lean/declarations/contdiffon-inversion.md) | 44 | `result-track:b34536c179461ab8f7032903e3aadc3bbf0fd4b9a1b37eaf2d3beb6d4c50ee2d` |
-| 4 | `theorem` | [ContDiffAt.inversion](../../../../../Geometry/RealAndComplexGeometry/InversionCalculusEdition2.lean/declarations/contdiffat-inversion.md) | 49 | `result-track:75851b9b85be85299f59005ba16c45e72804763b6cbb3ae68ce1f541385a438f` |
-| 5 | `theorem` | [ContDiff.inversion](../../../../../Geometry/RealAndComplexGeometry/InversionCalculusEdition2.lean/declarations/contdiff-inversion.md) | 54 | `result-track:090e44bf71e07387604d8d9d522d1981bb0a65461baeb36b65b7d9bba7b1ec6f` |
-| 6 | `theorem` | [DifferentiableWithinAt.inversion](../../../../../Geometry/RealAndComplexGeometry/InversionCalculusEdition2.lean/declarations/differentiablewithinat-inversion.md) | 59 | `result-track:e9671484885f30525741876eced4c98b74095d101d5c096b6d111b4c490127f3` |
-| 7 | `theorem` | [DifferentiableOn.inversion](../../../../../Geometry/RealAndComplexGeometry/InversionCalculusEdition2.lean/declarations/differentiableon-inversion.md) | 65 | `result-track:ad830fb22b6802554aecbed4cdb7526b87fb13b25e4b0101ae07c13712a176bc` |
-| 8 | `theorem` | [DifferentiableAt.inversion](../../../../../Geometry/RealAndComplexGeometry/InversionCalculusEdition2.lean/declarations/differentiableat-inversion.md) | 70 | `result-track:26a083714715d1887b0879e006a7a19df723ede729cf5b0100ab0f34a89c0408` |
-| 9 | `theorem` | [Differentiable.inversion](../../../../../Geometry/RealAndComplexGeometry/InversionCalculusEdition2.lean/declarations/differentiable-inversion.md) | 76 | `result-track:4475dd75894a8843425b1bc8b26319e1239a8de8f9ce3a38686015cb347fb070` |
-| 10 | `theorem` | [hasFDerivAt_inversion](../../../../../Geometry/RealAndComplexGeometry/InversionCalculusEdition2.lean/declarations/hasfderivat-inversion.md) | 88 | `result-track:b4cddd1b20a4307300d128063758a0ce1f2cec81d5e5f58b82c40421ca129a9c` |
+| 1 | `macro_rules` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RealAndComplexGeometry/InversionCalculusEdition2.lean/declarations/macro-rules.md) | 25 | `declaration-track:0276712a7148620aaf1a2c90120f6015eaa24216665538734f97be04f60f41e6` |
+| 2 | `theorem` | [ContDiffWithinAt.inversion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RealAndComplexGeometry/InversionCalculusEdition2.lean/declarations/contdiffwithinat-inversion.md) | 39 | `result-track:74b7d08ad925cb3cc0f5e2e7715b7db38617b984a37fe4205c6730a44da02436` |
+| 3 | `theorem` | [ContDiffOn.inversion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RealAndComplexGeometry/InversionCalculusEdition2.lean/declarations/contdiffon-inversion.md) | 44 | `result-track:b34536c179461ab8f7032903e3aadc3bbf0fd4b9a1b37eaf2d3beb6d4c50ee2d` |
+| 4 | `theorem` | [ContDiffAt.inversion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RealAndComplexGeometry/InversionCalculusEdition2.lean/declarations/contdiffat-inversion.md) | 49 | `result-track:75851b9b85be85299f59005ba16c45e72804763b6cbb3ae68ce1f541385a438f` |
+| 5 | `theorem` | [ContDiff.inversion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RealAndComplexGeometry/InversionCalculusEdition2.lean/declarations/contdiff-inversion.md) | 54 | `result-track:090e44bf71e07387604d8d9d522d1981bb0a65461baeb36b65b7d9bba7b1ec6f` |
+| 6 | `theorem` | [DifferentiableWithinAt.inversion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RealAndComplexGeometry/InversionCalculusEdition2.lean/declarations/differentiablewithinat-inversion.md) | 59 | `result-track:e9671484885f30525741876eced4c98b74095d101d5c096b6d111b4c490127f3` |
+| 7 | `theorem` | [DifferentiableOn.inversion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RealAndComplexGeometry/InversionCalculusEdition2.lean/declarations/differentiableon-inversion.md) | 65 | `result-track:ad830fb22b6802554aecbed4cdb7526b87fb13b25e4b0101ae07c13712a176bc` |
+| 8 | `theorem` | [DifferentiableAt.inversion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RealAndComplexGeometry/InversionCalculusEdition2.lean/declarations/differentiableat-inversion.md) | 70 | `result-track:26a083714715d1887b0879e006a7a19df723ede729cf5b0100ab0f34a89c0408` |
+| 9 | `theorem` | [Differentiable.inversion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RealAndComplexGeometry/InversionCalculusEdition2.lean/declarations/differentiable-inversion.md) | 76 | `result-track:4475dd75894a8843425b1bc8b26319e1239a8de8f9ce3a38686015cb347fb070` |
+| 10 | `theorem` | [hasFDerivAt_inversion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RealAndComplexGeometry/InversionCalculusEdition2.lean/declarations/hasfderivat-inversion.md) | 88 | `result-track:b4cddd1b20a4307300d128063758a0ce1f2cec81d5e5f58b82c40421ca129a9c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

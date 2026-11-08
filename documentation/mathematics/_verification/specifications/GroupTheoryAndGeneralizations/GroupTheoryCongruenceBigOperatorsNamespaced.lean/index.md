@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/GroupTheoryCongruenceBigOperatorsNamespaced.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/GroupTheoryCongruenceBigOperatorsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupTheoryCongruenceBigOperatorsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupTheoryCongruenceBigOperatorsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,9 +60,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [list_prod](../../../../GroupTheoryAndGeneralizations/GroupTheoryCongruenceBigOperatorsNamespaced.lean/declarations/list-prod.md) | 29 | `result-track:f7010bc78c11dbf8f26c7b9e57cfd8c487222924343fbd21d0135475d0a78bce` |
-| 2 | `theorem` | [multiset_prod](../../../../GroupTheoryAndGeneralizations/GroupTheoryCongruenceBigOperatorsNamespaced.lean/declarations/multiset-prod.md) | 41 | `result-track:bc99ed452e85e4b7282a47c322dd3e818dd339c7e7232a601eae1789a1194163` |
-| 3 | `theorem` | [finset_prod](../../../../GroupTheoryAndGeneralizations/GroupTheoryCongruenceBigOperatorsNamespaced.lean/declarations/finset-prod.md) | 48 | `result-track:060a09217b18e8bd5bc731b876e49e47add1fa785af02b763e2ac2173c73762d` |
+| 1 | `theorem` | [list_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupTheoryCongruenceBigOperatorsNamespaced.lean/declarations/list-prod.md) | 29 | `result-track:f7010bc78c11dbf8f26c7b9e57cfd8c487222924343fbd21d0135475d0a78bce` |
+| 2 | `theorem` | [multiset_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupTheoryCongruenceBigOperatorsNamespaced.lean/declarations/multiset-prod.md) | 41 | `result-track:bc99ed452e85e4b7282a47c322dd3e818dd339c7e7232a601eae1789a1194163` |
+| 3 | `theorem` | [finset_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupTheoryCongruenceBigOperatorsNamespaced.lean/declarations/finset-prod.md) | 48 | `result-track:060a09217b18e8bd5bc731b876e49e47add1fa785af02b763e2ac2173c73762d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

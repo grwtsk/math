@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteEulerResidualBalance.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteEulerResidualBalance.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteEulerResidualBalance.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteEulerResidualBalance.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteCyclicEdgeCertificate`](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteCyclicEdgeCertificate.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteCyclicEdgeCertificate`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteCyclicEdgeCertificate.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [countedOutEdges](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteEulerResidualBalance.lean/declarations/countedoutedges.md) | 24 | `declaration-track:c8c3f2bb69724d982431e2e81c32d620b32aed92a0f4cc218fe368a8bb5f5885` |
-| 2 | `def` | [countedInEdges](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteEulerResidualBalance.lean/declarations/countedinedges.md) | 30 | `declaration-track:5b71a50a3cb882bafad262386f40b4de314a4643d14e4b2419055c46e93f1d49` |
-| 3 | `def` | [CountedEdgeBalanced](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteEulerResidualBalance.lean/declarations/countededgebalanced.md) | 37 | `declaration-track:60dc7f4595deb865662c40a75984e48ac15fa5840ba11abc5e5f31eacae58258` |
-| 4 | `theorem` | [countedOutEdges_sdiff_card](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteEulerResidualBalance.lean/declarations/countedoutedges-sdiff-card.md) | 44 | `result-track:322b348d5b9af1e952d3e0f114d74034d26e077931c7b00e09d9fd14e704a899` |
-| 5 | `theorem` | [countedInEdges_sdiff_card](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteEulerResidualBalance.lean/declarations/countedinedges-sdiff-card.md) | 57 | `result-track:86f7692fb1d2fd18adbee1caeea5723e346ad4685daca0075ca81c819351d005` |
-| 6 | `theorem` | [countedEdgeBalanced_sdiff](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteEulerResidualBalance.lean/declarations/countededgebalanced-sdiff.md) | 72 | `result-track:0b926ca7ee6d6d5ee600231f06861ce2716d5f156074d7eed0298de2ee6030c7` |
+| 1 | `def` | [countedOutEdges](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteEulerResidualBalance.lean/declarations/countedoutedges.md) | 24 | `declaration-track:c8c3f2bb69724d982431e2e81c32d620b32aed92a0f4cc218fe368a8bb5f5885` |
+| 2 | `def` | [countedInEdges](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteEulerResidualBalance.lean/declarations/countedinedges.md) | 30 | `declaration-track:5b71a50a3cb882bafad262386f40b4de314a4643d14e4b2419055c46e93f1d49` |
+| 3 | `def` | [CountedEdgeBalanced](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteEulerResidualBalance.lean/declarations/countededgebalanced.md) | 37 | `declaration-track:60dc7f4595deb865662c40a75984e48ac15fa5840ba11abc5e5f31eacae58258` |
+| 4 | `theorem` | [countedOutEdges_sdiff_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteEulerResidualBalance.lean/declarations/countedoutedges-sdiff-card.md) | 44 | `result-track:322b348d5b9af1e952d3e0f114d74034d26e077931c7b00e09d9fd14e704a899` |
+| 5 | `theorem` | [countedInEdges_sdiff_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteEulerResidualBalance.lean/declarations/countedinedges-sdiff-card.md) | 57 | `result-track:86f7692fb1d2fd18adbee1caeea5723e346ad4685daca0075ca81c819351d005` |
+| 6 | `theorem` | [countedEdgeBalanced_sdiff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteEulerResidualBalance.lean/declarations/countededgebalanced-sdiff.md) | 72 | `result-track:0b926ca7ee6d6d5ee600231f06861ce2716d5f156074d7eed0298de2ee6030c7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/WeightedSchurBounds.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/WeightedSchurBounds.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/WeightedSchurBounds.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/WeightedSchurBounds.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,9 +60,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [weighted_symmetric_schur](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/WeightedSchurBounds.lean/declarations/weighted-symmetric-schur.md) | 29 | `result-track:6d85f668afa0d20f3305148776d19c7546b8c8e83def2eadb06e9b5e501fbfa9` |
-| 2 | `theorem` | [synthesis_of_weighted_gram_rows](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/WeightedSchurBounds.lean/declarations/synthesis-of-weighted-gram-rows.md) | 77 | `result-track:389fc8c8a2256d1afc5c489aa5d35638c38038d9e4912c0ff0ed7513872de19d` |
-| 3 | `theorem` | [bessel_of_weighted_gram_rows](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/WeightedSchurBounds.lean/declarations/bessel-of-weighted-gram-rows.md) | 129 | `result-track:f808c734808d4567786159ed731fe6a71a6867f11173cba27eb4e08add41f7b9` |
+| 1 | `theorem` | [weighted_symmetric_schur](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/WeightedSchurBounds.lean/declarations/weighted-symmetric-schur.md) | 29 | `result-track:6d85f668afa0d20f3305148776d19c7546b8c8e83def2eadb06e9b5e501fbfa9` |
+| 2 | `theorem` | [synthesis_of_weighted_gram_rows](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/WeightedSchurBounds.lean/declarations/synthesis-of-weighted-gram-rows.md) | 77 | `result-track:389fc8c8a2256d1afc5c489aa5d35638c38038d9e4912c0ff0ed7513872de19d` |
+| 3 | `theorem` | [bessel_of_weighted_gram_rows](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/WeightedSchurBounds.lean/declarations/bessel-of-weighted-gram-rows.md) | 129 | `result-track:f808c734808d4567786159ed731fe6a71a6867f11173cba27eb4e08add41f7b9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

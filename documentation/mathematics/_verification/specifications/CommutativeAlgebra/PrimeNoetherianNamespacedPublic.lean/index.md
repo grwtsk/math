@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/PrimeNoetherianNamespacedPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/PrimeNoetherianNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PrimeNoetherianNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PrimeNoetherianNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/PrimeNoetherianNamespacedPublic.lean/declarations/instance.md) | 40 | `declaration-track:3f29a9053aa4c295b317fbafc9bba66314754ac7c67fbfa61dab295af0cad261` |
-| 2 | `lemma` | [finite_setOfPred_isMin](../../../../CommutativeAlgebra/PrimeNoetherianNamespacedPublic.lean/declarations/finite-setofpred-ismin.md) | 43 | `result-track:195c7a5238b18bf0871c3567ee9d949128a634d531033fd66b34edc56181aab9` |
-| 3 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/PrimeNoetherianNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 62 | `declaration-track:49f609cfe2d047907c21d8a68e6c9d0ebd78316566265631c12f7ac1c9057511` |
-| 4 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/PrimeNoetherianNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 64 | `declaration-track:e2df19eb5239fa5b40df842c2e9cee07f1b5bf87c4b10342193825c91dcaa05c` |
-| 5 | `lemma` | [exists_not_mem_forall_mem_of_ne](../../../../CommutativeAlgebra/PrimeNoetherianNamespacedPublic.lean/declarations/exists-not-mem-forall-mem-of-ne.md) | 68 | `result-track:a2cb0b39c7476558fcda93e2cb69f6e88272f53fe3645d7891becb663c5ac239` |
-| 6 | `theorem` | [finrank_eq_sum_primeSpectrum](../../../../CommutativeAlgebra/PrimeNoetherianNamespacedPublic.lean/declarations/finrank-eq-sum-primespectrum.md) | 90 | `result-track:3597bfec1e682498aca72e662401c329d5f828e145a008a6cc838ae873a604b7` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PrimeNoetherianNamespacedPublic.lean/declarations/instance.md) | 40 | `declaration-track:3f29a9053aa4c295b317fbafc9bba66314754ac7c67fbfa61dab295af0cad261` |
+| 2 | `lemma` | [finite_setOfPred_isMin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PrimeNoetherianNamespacedPublic.lean/declarations/finite-setofpred-ismin.md) | 43 | `result-track:195c7a5238b18bf0871c3567ee9d949128a634d531033fd66b34edc56181aab9` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PrimeNoetherianNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 62 | `declaration-track:49f609cfe2d047907c21d8a68e6c9d0ebd78316566265631c12f7ac1c9057511` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PrimeNoetherianNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 64 | `declaration-track:e2df19eb5239fa5b40df842c2e9cee07f1b5bf87c4b10342193825c91dcaa05c` |
+| 5 | `lemma` | [exists_not_mem_forall_mem_of_ne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PrimeNoetherianNamespacedPublic.lean/declarations/exists-not-mem-forall-mem-of-ne.md) | 68 | `result-track:a2cb0b39c7476558fcda93e2cb69f6e88272f53fe3645d7891becb663c5ac239` |
+| 6 | `theorem` | [finrank_eq_sum_primeSpectrum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PrimeNoetherianNamespacedPublic.lean/declarations/finrank-eq-sum-primespectrum.md) | 90 | `result-track:3597bfec1e682498aca72e662401c329d5f828e145a008a6cc838ae873a604b7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

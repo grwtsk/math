@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ActionCenterNamespaced.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ActionCenterNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ActionCenterNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ActionCenterNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Subgroup.centerUnitsEquivUnitsCenter](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ActionCenterNamespaced.lean/declarations/subgroup-centerunitsequivunitscenter.md) | 25 | `declaration-track:35c6b177df76bd6fbd2936f1f11eecc1c3ea3907113ba032b30e0d503c9f9779` |
+| 1 | `def` | [Subgroup.centerUnitsEquivUnitsCenter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ActionCenterNamespaced.lean/declarations/subgroup-centerunitsequivunitscenter.md) | 25 | `declaration-track:35c6b177df76bd6fbd2936f1f11eecc1c3ea3907113ba032b30e0d503c9f9779` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

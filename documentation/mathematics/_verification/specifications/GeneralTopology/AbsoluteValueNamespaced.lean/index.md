@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/AbsoluteValueNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/AbsoluteValueNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AbsoluteValueNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AbsoluteValueNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [uniformSpace](../../../../GeneralTopology/AbsoluteValueNamespaced.lean/declarations/uniformspace.md) | 43 | `declaration-track:a3f66e84f35aa11b1b67fdea631de7a8585b5a00432264e694d1c3b5abb6b728` |
-| 2 | `theorem` | [hasBasis_uniformity](../../../../GeneralTopology/AbsoluteValueNamespaced.lean/declarations/hasbasis-uniformity.md) | 48 | `result-track:bd325ca0ff93d2fa0b276588d25488e327f35340885c78033d9f50f5e2f9e01f` |
+| 1 | `def` | [uniformSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AbsoluteValueNamespaced.lean/declarations/uniformspace.md) | 43 | `declaration-track:a3f66e84f35aa11b1b67fdea631de7a8585b5a00432264e694d1c3b5abb6b728` |
+| 2 | `theorem` | [hasBasis_uniformity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AbsoluteValueNamespaced.lean/declarations/hasbasis-uniformity.md) | 48 | `result-track:bd325ca0ff93d2fa0b276588d25488e327f35340885c78033d9f50f5e2f9e01f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

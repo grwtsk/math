@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RejectHarmonicityWithoutKernelTheoremCounterexample.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RejectHarmonicityWithoutKernelTheoremCounterexample.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RejectHarmonicityWithoutKernelTheoremCounterexample.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RejectHarmonicityWithoutKernelTheoremCounterexample.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Interfaces.GraphHodgePortCore`](../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GraphHodgePortCore.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Interfaces.GraphHodgePortCore`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GraphHodgePortCore.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [degenerateHodge](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RejectHarmonicityWithoutKernelTheoremCounterexample.lean/declarations/degeneratehodge.md) | 8 | `declaration-track:298fe37420bed5e5359492315f485b0b34347df019747e371ab8323c14a6373b` |
-| 2 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RejectHarmonicityWithoutKernelTheoremCounterexample.lean/declarations/example-source-edition-2.md) | 11 | `declaration-track:88bd808444b33f1af55f490a78a278737f2f5a080abf395c1e6f3469315ab275` |
-| 3 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RejectHarmonicityWithoutKernelTheoremCounterexample.lean/declarations/example.md) | 16 | `declaration-track:150c06743168c7af42b34c636fbf3473cd23156c4d933e99bab1431cc7b83970` |
-| 4 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RejectHarmonicityWithoutKernelTheoremCounterexample.lean/declarations/example-source-edition-3.md) | 23 | `declaration-track:c65558225cd3a54f3eea3b7207c8e4efabdec29b1079a051c320a274e2f4fbfc` |
+| 1 | `def` | [degenerateHodge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RejectHarmonicityWithoutKernelTheoremCounterexample.lean/declarations/degeneratehodge.md) | 8 | `declaration-track:298fe37420bed5e5359492315f485b0b34347df019747e371ab8323c14a6373b` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RejectHarmonicityWithoutKernelTheoremCounterexample.lean/declarations/example-source-edition-2.md) | 11 | `declaration-track:88bd808444b33f1af55f490a78a278737f2f5a080abf395c1e6f3469315ab275` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RejectHarmonicityWithoutKernelTheoremCounterexample.lean/declarations/example.md) | 16 | `declaration-track:150c06743168c7af42b34c636fbf3473cd23156c4d933e99bab1431cc7b83970` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RejectHarmonicityWithoutKernelTheoremCounterexample.lean/declarations/example-source-edition-3.md) | 23 | `declaration-track:c65558225cd3a54f3eea3b7207c8e4efabdec29b1079a051c320a274e2f4fbfc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

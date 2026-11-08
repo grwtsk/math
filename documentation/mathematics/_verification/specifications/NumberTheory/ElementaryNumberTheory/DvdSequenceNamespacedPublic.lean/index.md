@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/DvdSequenceNamespacedPublic.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/DvdSequenceNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/DvdSequenceNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/DvdSequenceNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,18 +57,18 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [smul_dvd_smul](../../../../../NumberTheory/ElementaryNumberTheory/DvdSequenceNamespacedPublic.lean/declarations/smul-dvd-smul.md) | 41 | `result-track:95855b9f1e59d9bf827c12b6d99d04441ae4e99ecd867d506a6efa75f27f4f82` |
-| 2 | `def` | [IsDvdSequence](../../../../../NumberTheory/ElementaryNumberTheory/DvdSequenceNamespacedPublic.lean/declarations/isdvdsequence.md) | 48 | `declaration-track:9f7da99b61b46a7d68af7aa4392763cfa748a9ccce7ea280c925b9a853a5692f` |
-| 3 | `theorem` | [id](../../../../../NumberTheory/ElementaryNumberTheory/DvdSequenceNamespacedPublic.lean/declarations/id.md) | 56 | `result-track:2dbded7f9dc904c82847fc3637b8df1b5d78a9410c9214bec3d7709310ebe5d2` |
-| 4 | `theorem` | [const](../../../../../NumberTheory/ElementaryNumberTheory/DvdSequenceNamespacedPublic.lean/declarations/const.md) | 60 | `result-track:4a2258cc53fe34dd4872624ac5e14c5dee9dc7f8ffd1fcc709bc2b0966c96206` |
-| 5 | `theorem` | [smul'](../../../../../NumberTheory/ElementaryNumberTheory/DvdSequenceNamespacedPublic.lean/declarations/smul-source-edition-2.md) | 63 | `result-track:1cda2da49eb8b33d87988d7317c4a3a37f208e94b0f0a9b657b36aade27e7a63` |
-| 6 | `theorem` | [mul](../../../../../NumberTheory/ElementaryNumberTheory/DvdSequenceNamespacedPublic.lean/declarations/mul.md) | 68 | `result-track:2783fb8450b8077c3813fea0579b22c3d03250fa5f2311869bff7abee103f9ed` |
-| 7 | `theorem` | [smul](../../../../../NumberTheory/ElementaryNumberTheory/DvdSequenceNamespacedPublic.lean/declarations/smul.md) | 72 | `result-track:187049b3177e70b5f6439edb256f61813779e1cb4daa72f2317060ffcce6f1d9` |
-| 8 | `theorem` | [comp](../../../../../NumberTheory/ElementaryNumberTheory/DvdSequenceNamespacedPublic.lean/declarations/comp.md) | 77 | `result-track:1f2e11b430489a9bbb686b4aef074c98339e9c926f85cda6dca53259b671fd88` |
-| 9 | `def` | [IsStrongDvdSequence](../../../../../NumberTheory/ElementaryNumberTheory/DvdSequenceNamespacedPublic.lean/declarations/isstrongdvdsequence.md) | 89 | `declaration-track:60739d73b0b6c5ae1bb9373f58b08ab249b8d90deeba97797c12d2e087cb3b00` |
-| 10 | `theorem` | [isDvdSequence](../../../../../NumberTheory/ElementaryNumberTheory/DvdSequenceNamespacedPublic.lean/declarations/isdvdsequence-source-edition-2.md) | 94 | `result-track:dd48d8eae1c0acea8daf6477f967112952038b281dff7b25147415448f5d398d` |
-| 11 | `theorem` | [id](../../../../../NumberTheory/ElementaryNumberTheory/DvdSequenceNamespacedPublic.lean/declarations/id-source-edition-2.md) | 98 | `result-track:d576252f9999f556460e654344603b924e51401623692170ff61801b7282d71c` |
-| 12 | `theorem` | [const](../../../../../NumberTheory/ElementaryNumberTheory/DvdSequenceNamespacedPublic.lean/declarations/const-source-edition-2.md) | 101 | `result-track:936e9ecb6f30fb76e768cf91abc6f869dfa378cd7488f46d03f11215392696e2` |
+| 1 | `lemma` | [smul_dvd_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/DvdSequenceNamespacedPublic.lean/declarations/smul-dvd-smul.md) | 41 | `result-track:95855b9f1e59d9bf827c12b6d99d04441ae4e99ecd867d506a6efa75f27f4f82` |
+| 2 | `def` | [IsDvdSequence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/DvdSequenceNamespacedPublic.lean/declarations/isdvdsequence.md) | 48 | `declaration-track:9f7da99b61b46a7d68af7aa4392763cfa748a9ccce7ea280c925b9a853a5692f` |
+| 3 | `theorem` | [id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/DvdSequenceNamespacedPublic.lean/declarations/id.md) | 56 | `result-track:2dbded7f9dc904c82847fc3637b8df1b5d78a9410c9214bec3d7709310ebe5d2` |
+| 4 | `theorem` | [const](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/DvdSequenceNamespacedPublic.lean/declarations/const.md) | 60 | `result-track:4a2258cc53fe34dd4872624ac5e14c5dee9dc7f8ffd1fcc709bc2b0966c96206` |
+| 5 | `theorem` | [smul'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/DvdSequenceNamespacedPublic.lean/declarations/smul-source-edition-2.md) | 63 | `result-track:1cda2da49eb8b33d87988d7317c4a3a37f208e94b0f0a9b657b36aade27e7a63` |
+| 6 | `theorem` | [mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/DvdSequenceNamespacedPublic.lean/declarations/mul.md) | 68 | `result-track:2783fb8450b8077c3813fea0579b22c3d03250fa5f2311869bff7abee103f9ed` |
+| 7 | `theorem` | [smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/DvdSequenceNamespacedPublic.lean/declarations/smul.md) | 72 | `result-track:187049b3177e70b5f6439edb256f61813779e1cb4daa72f2317060ffcce6f1d9` |
+| 8 | `theorem` | [comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/DvdSequenceNamespacedPublic.lean/declarations/comp.md) | 77 | `result-track:1f2e11b430489a9bbb686b4aef074c98339e9c926f85cda6dca53259b671fd88` |
+| 9 | `def` | [IsStrongDvdSequence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/DvdSequenceNamespacedPublic.lean/declarations/isstrongdvdsequence.md) | 89 | `declaration-track:60739d73b0b6c5ae1bb9373f58b08ab249b8d90deeba97797c12d2e087cb3b00` |
+| 10 | `theorem` | [isDvdSequence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/DvdSequenceNamespacedPublic.lean/declarations/isdvdsequence-source-edition-2.md) | 94 | `result-track:dd48d8eae1c0acea8daf6477f967112952038b281dff7b25147415448f5d398d` |
+| 11 | `theorem` | [id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/DvdSequenceNamespacedPublic.lean/declarations/id-source-edition-2.md) | 98 | `result-track:d576252f9999f556460e654344603b924e51401623692170ff61801b7282d71c` |
+| 12 | `theorem` | [const](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/DvdSequenceNamespacedPublic.lean/declarations/const-source-edition-2.md) | 101 | `result-track:936e9ecb6f30fb76e768cf91abc6f869dfa378cd7488f46d03f11215392696e2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

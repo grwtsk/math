@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DivisorTailBlockAuditNamespaced.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DivisorTailBlockAuditNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DivisorTailBlockAuditNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DivisorTailBlockAuditNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [divisor_sum](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DivisorTailBlockAuditNamespaced.lean/declarations/divisor-sum.md) | 19 | `result-track:5d9f2840f63a121b5a1e4b135b19051cadf7718dabd09e84ec90eb09e92f0a2b` |
-| 2 | `theorem` | [before_cutoff](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DivisorTailBlockAuditNamespaced.lean/declarations/before-cutoff.md) | 26 | `result-track:900f878691a2a9b6937d9a45fe595b2f37a4011fef16567fae312513c369b6ab` |
-| 3 | `theorem` | [first_dyadic_block](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DivisorTailBlockAuditNamespaced.lean/declarations/first-dyadic-block.md) | 36 | `result-track:56592a91bee99ef1a9245867bc7cc90335fe509abcbd130b1ce1064dcd78a3fd` |
-| 4 | `theorem` | [corrected_endpoint](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DivisorTailBlockAuditNamespaced.lean/declarations/corrected-endpoint.md) | 63 | `result-track:3b3f87644a8268e510f16d35f518dbffaacd5e8c724900f9d10130b5f2d25894` |
-| 5 | `theorem` | [corrected_first_block_prefix](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DivisorTailBlockAuditNamespaced.lean/declarations/corrected-first-block-prefix.md) | 70 | `result-track:240f13fdde94fe828769430076b5f267d26f833b14c03d72393549fd65a202fd` |
+| 1 | `theorem` | [divisor_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DivisorTailBlockAuditNamespaced.lean/declarations/divisor-sum.md) | 19 | `result-track:5d9f2840f63a121b5a1e4b135b19051cadf7718dabd09e84ec90eb09e92f0a2b` |
+| 2 | `theorem` | [before_cutoff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DivisorTailBlockAuditNamespaced.lean/declarations/before-cutoff.md) | 26 | `result-track:900f878691a2a9b6937d9a45fe595b2f37a4011fef16567fae312513c369b6ab` |
+| 3 | `theorem` | [first_dyadic_block](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DivisorTailBlockAuditNamespaced.lean/declarations/first-dyadic-block.md) | 36 | `result-track:56592a91bee99ef1a9245867bc7cc90335fe509abcbd130b1ce1064dcd78a3fd` |
+| 4 | `theorem` | [corrected_endpoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DivisorTailBlockAuditNamespaced.lean/declarations/corrected-endpoint.md) | 63 | `result-track:3b3f87644a8268e510f16d35f518dbffaacd5e8c724900f9d10130b5f2d25894` |
+| 5 | `theorem` | [corrected_first_block_prefix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DivisorTailBlockAuditNamespaced.lean/declarations/corrected-first-block-prefix.md) | 70 | `result-track:240f13fdde94fe828769430076b5f267d26f833b14c03d72393549fd65a202fd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/PolygonalQuarticSeparable.lean/index.md) · [Full source](../../../../CommutativeAlgebra/PolygonalQuarticSeparable.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PolygonalQuarticSeparable.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PolygonalQuarticSeparable.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.PolygonalQuarticSplitting`](../../../../AssociativeRingsAndAlgebras/PolygonalQuarticSplitting.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Algebra.PolygonalQuarticSplitting`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/PolygonalQuarticSplitting.lean/index.md) — import line 1; pinned internal source present.
 - `Mathlib.FieldTheory.Separable` — import line 2; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [adjacencyOne_sub_adjacencyTwo](../../../../CommutativeAlgebra/PolygonalQuarticSeparable.lean/declarations/adjacencyone-sub-adjacencytwo.md) | 23 | `result-track:9476b85ec4e2c95058a48dcb6ebdcd7f7e5efc4ae08a9a896211a97b9e45bbcd` |
-| 2 | `theorem` | [adjacencyOne_sub_adjacencyThree](../../../../CommutativeAlgebra/PolygonalQuarticSeparable.lean/declarations/adjacencyone-sub-adjacencythree.md) | 29 | `result-track:0f3fea0a9eebebea926c46683b8aad52dac90675b10c5935b77d4adbae09eeec` |
-| 3 | `theorem` | [adjacencyTwo_sub_adjacencyThree](../../../../CommutativeAlgebra/PolygonalQuarticSeparable.lean/declarations/adjacencytwo-sub-adjacencythree.md) | 35 | `result-track:60b4ac4e615b784814adce272cc89843177043ac94e789956ca0c0ff89298299` |
-| 4 | `theorem` | [adjacency_values_pairwise_distinct](../../../../CommutativeAlgebra/PolygonalQuarticSeparable.lean/declarations/adjacency-values-pairwise-distinct.md) | 45 | `result-track:bcdf92736076c129d78e7f6ac303f052fe6de44ee3f8225deaaa3b73ec7b9665` |
-| 5 | `theorem` | [adjacencyResolvent_separable](../../../../CommutativeAlgebra/PolygonalQuarticSeparable.lean/declarations/adjacencyresolvent-separable.md) | 71 | `result-track:99a38617631ec2c8cb0189fed93dd61edd483010929ab021e97484036a2f0660` |
-| 6 | `theorem` | [adjacencyResolvent_separable_of_quartic_enumeration](../../../../CommutativeAlgebra/PolygonalQuarticSeparable.lean/declarations/adjacencyresolvent-separable-of-quartic-enumeration.md) | 94 | `result-track:5f8a7a389ec073ff778053caa7a2c0f17468e61b268612d9067f9bc9efdeb8b9` |
-| 7 | `theorem` | [exists_separable_adjacencyResolvent_of_splitting_quartic](../../../../CommutativeAlgebra/PolygonalQuarticSeparable.lean/declarations/exists-separable-adjacencyresolvent-of-splitting-quartic.md) | 111 | `result-track:f74263635ead1bec331c8f31d81a44b72021a093868258a23da68cbe51134582` |
+| 1 | `theorem` | [adjacencyOne_sub_adjacencyTwo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PolygonalQuarticSeparable.lean/declarations/adjacencyone-sub-adjacencytwo.md) | 23 | `result-track:9476b85ec4e2c95058a48dcb6ebdcd7f7e5efc4ae08a9a896211a97b9e45bbcd` |
+| 2 | `theorem` | [adjacencyOne_sub_adjacencyThree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PolygonalQuarticSeparable.lean/declarations/adjacencyone-sub-adjacencythree.md) | 29 | `result-track:0f3fea0a9eebebea926c46683b8aad52dac90675b10c5935b77d4adbae09eeec` |
+| 3 | `theorem` | [adjacencyTwo_sub_adjacencyThree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PolygonalQuarticSeparable.lean/declarations/adjacencytwo-sub-adjacencythree.md) | 35 | `result-track:60b4ac4e615b784814adce272cc89843177043ac94e789956ca0c0ff89298299` |
+| 4 | `theorem` | [adjacency_values_pairwise_distinct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PolygonalQuarticSeparable.lean/declarations/adjacency-values-pairwise-distinct.md) | 45 | `result-track:bcdf92736076c129d78e7f6ac303f052fe6de44ee3f8225deaaa3b73ec7b9665` |
+| 5 | `theorem` | [adjacencyResolvent_separable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PolygonalQuarticSeparable.lean/declarations/adjacencyresolvent-separable.md) | 71 | `result-track:99a38617631ec2c8cb0189fed93dd61edd483010929ab021e97484036a2f0660` |
+| 6 | `theorem` | [adjacencyResolvent_separable_of_quartic_enumeration](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PolygonalQuarticSeparable.lean/declarations/adjacencyresolvent-separable-of-quartic-enumeration.md) | 94 | `result-track:5f8a7a389ec073ff778053caa7a2c0f17468e61b268612d9067f9bc9efdeb8b9` |
+| 7 | `theorem` | [exists_separable_adjacencyResolvent_of_splitting_quartic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PolygonalQuarticSeparable.lean/declarations/exists-separable-adjacencyresolvent-of-splitting-quartic.md) | 111 | `result-track:f74263635ead1bec331c8f31d81a44b72021a093868258a23da68cbe51134582` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

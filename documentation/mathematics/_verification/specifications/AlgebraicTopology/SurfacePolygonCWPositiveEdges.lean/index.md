@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/SurfacePolygonCWPositiveEdges.lean/index.md) · [Full source](../../../../AlgebraicTopology/SurfacePolygonCWPositiveEdges.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonCWPositiveEdges.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonCWPositiveEdges.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWOrbitClosure`](../../../../AlgebraicTopology/SurfacePolygonCWOrbitClosure.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWOrbitClosure`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonCWOrbitClosure.lean/index.md) — import line 8; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [positive_not_opposite_positive](../../../../AlgebraicTopology/SurfacePolygonCWPositiveEdges.lean/declarations/positive-not-opposite-positive.md) | 31 | `result-track:241ad18497940cc1fa97eb5d43685aa4a6e862f0dfcb0f1a48a634442a649ca1` |
-| 2 | `theorem` | [positive_interior_projection_eq_source](../../../../AlgebraicTopology/SurfacePolygonCWPositiveEdges.lean/declarations/positive-interior-projection-eq-source.md) | 41 | `result-track:8039143c44679717693c4a2a22944dbcc8c674b0782339397cde6aaf879dc75d` |
-| 3 | `theorem` | [positiveOneCell_injective_interior](../../../../AlgebraicTopology/SurfacePolygonCWPositiveEdges.lean/declarations/positiveonecell-injective-interior.md) | 56 | `result-track:9968c6abab9209d240a44cda7fcb94be60043817e04b2bdd63fdf9850b639aa3` |
-| 4 | `theorem` | [positiveOneCell_disjoint_interior](../../../../AlgebraicTopology/SurfacePolygonCWPositiveEdges.lean/declarations/positiveonecell-disjoint-interior.md) | 68 | `result-track:d0f902c252af3d822e96b8bdb88994befb6cd48b1c01c8546d050ea72ab27547` |
+| 1 | `theorem` | [positive_not_opposite_positive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonCWPositiveEdges.lean/declarations/positive-not-opposite-positive.md) | 31 | `result-track:241ad18497940cc1fa97eb5d43685aa4a6e862f0dfcb0f1a48a634442a649ca1` |
+| 2 | `theorem` | [positive_interior_projection_eq_source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonCWPositiveEdges.lean/declarations/positive-interior-projection-eq-source.md) | 41 | `result-track:8039143c44679717693c4a2a22944dbcc8c674b0782339397cde6aaf879dc75d` |
+| 3 | `theorem` | [positiveOneCell_injective_interior](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonCWPositiveEdges.lean/declarations/positiveonecell-injective-interior.md) | 56 | `result-track:9968c6abab9209d240a44cda7fcb94be60043817e04b2bdd63fdf9850b639aa3` |
+| 4 | `theorem` | [positiveOneCell_disjoint_interior](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonCWPositiveEdges.lean/declarations/positiveonecell-disjoint-interior.md) | 68 | `result-track:d0f902c252af3d822e96b8bdb88994befb6cd48b1c01c8546d050ea72ab27547` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

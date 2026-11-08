@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ColimitLimitNamespacedPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ColimitLimitNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ColimitLimitNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ColimitLimitNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [map_id_left_eq_curry_map](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ColimitLimitNamespacedPublic.lean/declarations/map-id-left-eq-curry-map.md) | 51 | `result-track:d160abe8391ed561a650a272929111a3287cd89cb8f356c7e64f2d3aaf536f60` |
-| 2 | `theorem` | [map_id_right_eq_curry_swap_map](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ColimitLimitNamespacedPublic.lean/declarations/map-id-right-eq-curry-swap-map.md) | 55 | `result-track:09dffc4b4d9033a5bfe4a43ae30ed55662c6f4a7403de5637d23536faae75394` |
-| 3 | `def` | [colimitLimitToLimitColimit](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ColimitLimitNamespacedPublic.lean/declarations/colimitlimittolimitcolimit-source-edition-2.md) | 66 | `declaration-track:ca0db7b09254f5ba2593b6de859b4bec4716bc74a64d3bfde0a79ce43bc1a5c9` |
-| 4 | `theorem` | [ι_colimitLimitToLimitColimit_π](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ColimitLimitNamespacedPublic.lean/declarations/colimitlimittolimitcolimit.md) | 98 | `result-track:c5abffd1050a133be5dd7a1a66c3a8c1ff0333de6524d968c03d7d31bbd2d810` |
-| 5 | `def` | [colimitLimitToLimitColimitCone](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ColimitLimitNamespacedPublic.lean/declarations/colimitlimittolimitcolimitcone.md) | 107 | `declaration-track:0ada3dd9700fe405e9ec61292706f3770bd9e78b7c3e33877bc0cb79099abc7c` |
+| 1 | `theorem` | [map_id_left_eq_curry_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ColimitLimitNamespacedPublic.lean/declarations/map-id-left-eq-curry-map.md) | 51 | `result-track:d160abe8391ed561a650a272929111a3287cd89cb8f356c7e64f2d3aaf536f60` |
+| 2 | `theorem` | [map_id_right_eq_curry_swap_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ColimitLimitNamespacedPublic.lean/declarations/map-id-right-eq-curry-swap-map.md) | 55 | `result-track:09dffc4b4d9033a5bfe4a43ae30ed55662c6f4a7403de5637d23536faae75394` |
+| 3 | `def` | [colimitLimitToLimitColimit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ColimitLimitNamespacedPublic.lean/declarations/colimitlimittolimitcolimit-source-edition-2.md) | 66 | `declaration-track:ca0db7b09254f5ba2593b6de859b4bec4716bc74a64d3bfde0a79ce43bc1a5c9` |
+| 4 | `theorem` | [ι_colimitLimitToLimitColimit_π](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ColimitLimitNamespacedPublic.lean/declarations/colimitlimittolimitcolimit.md) | 98 | `result-track:c5abffd1050a133be5dd7a1a66c3a8c1ff0333de6524d968c03d7d31bbd2d810` |
+| 5 | `def` | [colimitLimitToLimitColimitCone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ColimitLimitNamespacedPublic.lean/declarations/colimitlimittolimitcolimitcone.md) | 107 | `declaration-track:0ada3dd9700fe405e9ec61292706f3770bd9e78b7c3e33877bc0cb79099abc7c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

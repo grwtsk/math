@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../CommutativeAlgebra/ArithmeticRingsAndOtherSpecialCommutativeRings/PolynomialRingsAndIdealsRingsOfIntegerValuedPolynomials/PolynomialIdeal.lean/index.md) · [Full source](../../../../../../CommutativeAlgebra/ArithmeticRingsAndOtherSpecialCommutativeRings/PolynomialRingsAndIdealsRingsOfIntegerValuedPolynomials/PolynomialIdeal.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ArithmeticRingsAndOtherSpecialCommutativeRings/PolynomialRingsAndIdealsRingsOfIntegerValuedPolynomials/PolynomialIdeal.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ArithmeticRingsAndOtherSpecialCommutativeRings/PolynomialRingsAndIdealsRingsOfIntegerValuedPolynomials/PolynomialIdeal.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [mem_span_C_X_sub_C_X_sub_C_iff_eval_eval_eq_zero](../../../../../../CommutativeAlgebra/ArithmeticRingsAndOtherSpecialCommutativeRings/PolynomialRingsAndIdealsRingsOfIntegerValuedPolynomials/PolynomialIdeal.lean/declarations/mem-span-c-x-sub-c-x-sub-c-iff-eval-eval-eq-zero.md) | 26 | `result-track:c5a144c70bbd8a9898089f04dafd551b5d280aa41f93a74137ddf40a7eb784cd` |
-| 2 | `theorem` | [ker_evalRingHom](../../../../../../CommutativeAlgebra/ArithmeticRingsAndOtherSpecialCommutativeRings/PolynomialRingsAndIdealsRingsOfIntegerValuedPolynomials/PolynomialIdeal.lean/declarations/ker-evalringhom.md) | 36 | `result-track:ea183324ff62ec00b6cf9af185e7022d70105aa8c72860d4fa080e465a27389a` |
-| 3 | `theorem` | [ker_modByMonicHom](../../../../../../CommutativeAlgebra/ArithmeticRingsAndOtherSpecialCommutativeRings/PolynomialRingsAndIdealsRingsOfIntegerValuedPolynomials/PolynomialIdeal.lean/declarations/ker-modbymonichom.md) | 41 | `result-track:589b13d8ebe18b0e53cf2318a53f3b3909087ef0ca0d47679d97bde4a9d3ce7b` |
-| 4 | `lemma` | [_root_.Algebra.mem_ideal_map_adjoin](../../../../../../CommutativeAlgebra/ArithmeticRingsAndOtherSpecialCommutativeRings/PolynomialRingsAndIdealsRingsOfIntegerValuedPolynomials/PolynomialIdeal.lean/declarations/root-algebra-mem-ideal-map-adjoin.md) | 46 | `result-track:2a3ab4e2064aa8ce103f9fc620c8b8cdd6705aa2947834f6c38dbc857221108b` |
+| 1 | `theorem` | [mem_span_C_X_sub_C_X_sub_C_iff_eval_eval_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ArithmeticRingsAndOtherSpecialCommutativeRings/PolynomialRingsAndIdealsRingsOfIntegerValuedPolynomials/PolynomialIdeal.lean/declarations/mem-span-c-x-sub-c-x-sub-c-iff-eval-eval-eq-zero.md) | 26 | `result-track:c5a144c70bbd8a9898089f04dafd551b5d280aa41f93a74137ddf40a7eb784cd` |
+| 2 | `theorem` | [ker_evalRingHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ArithmeticRingsAndOtherSpecialCommutativeRings/PolynomialRingsAndIdealsRingsOfIntegerValuedPolynomials/PolynomialIdeal.lean/declarations/ker-evalringhom.md) | 36 | `result-track:ea183324ff62ec00b6cf9af185e7022d70105aa8c72860d4fa080e465a27389a` |
+| 3 | `theorem` | [ker_modByMonicHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ArithmeticRingsAndOtherSpecialCommutativeRings/PolynomialRingsAndIdealsRingsOfIntegerValuedPolynomials/PolynomialIdeal.lean/declarations/ker-modbymonichom.md) | 41 | `result-track:589b13d8ebe18b0e53cf2318a53f3b3909087ef0ca0d47679d97bde4a9d3ce7b` |
+| 4 | `lemma` | [_root_.Algebra.mem_ideal_map_adjoin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ArithmeticRingsAndOtherSpecialCommutativeRings/PolynomialRingsAndIdealsRingsOfIntegerValuedPolynomials/PolynomialIdeal.lean/declarations/root-algebra-mem-ideal-map-adjoin.md) | 46 | `result-track:2a3ab4e2064aa8ce103f9fc620c8b8cdd6705aa2947834f6c38dbc857221108b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

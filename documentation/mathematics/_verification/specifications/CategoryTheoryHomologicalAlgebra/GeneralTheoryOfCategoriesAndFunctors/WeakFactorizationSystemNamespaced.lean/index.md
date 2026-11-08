@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WeakFactorizationSystemNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WeakFactorizationSystemNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WeakFactorizationSystemNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WeakFactorizationSystemNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [IsWeakFactorizationSystem](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WeakFactorizationSystemNamespaced.lean/declarations/isweakfactorizationsystem.md) | 39 | `declaration-track:0fa30158e1d06ac6ecb4ba85549a78fed92213d334d52296fd5257341aa8d901` |
-| 2 | `lemma` | [mk'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WeakFactorizationSystemNamespaced.lean/declarations/mk.md) | 48 | `result-track:3f820f1f58b4bd074157fa02bc6323a9fd5652c3233444ee495060750b2d7493` |
-| 3 | `lemma` | [rlp_eq_of_wfs](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WeakFactorizationSystemNamespaced.lean/declarations/rlp-eq-of-wfs.md) | 64 | `result-track:c8339ded4d8240151cb79d1b2d87e9817b98337b25421d58044a81397949b2ea` |
-| 4 | `lemma` | [llp_eq_of_wfs](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WeakFactorizationSystemNamespaced.lean/declarations/llp-eq-of-wfs.md) | 66 | `result-track:2e4bf4c1732c17d878e35866f1adc325563b8794fd74b321d6621c101d46ed62` |
-| 5 | `lemma` | [hasLiftingProperty_of_wfs](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WeakFactorizationSystemNamespaced.lean/declarations/hasliftingproperty-of-wfs.md) | 69 | `result-track:37ed3e42012dc70825d10625b53c0e2416231ef03d657af920cf81a0ceff045d` |
+| 1 | `class` | [IsWeakFactorizationSystem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WeakFactorizationSystemNamespaced.lean/declarations/isweakfactorizationsystem.md) | 39 | `declaration-track:0fa30158e1d06ac6ecb4ba85549a78fed92213d334d52296fd5257341aa8d901` |
+| 2 | `lemma` | [mk'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WeakFactorizationSystemNamespaced.lean/declarations/mk.md) | 48 | `result-track:3f820f1f58b4bd074157fa02bc6323a9fd5652c3233444ee495060750b2d7493` |
+| 3 | `lemma` | [rlp_eq_of_wfs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WeakFactorizationSystemNamespaced.lean/declarations/rlp-eq-of-wfs.md) | 64 | `result-track:c8339ded4d8240151cb79d1b2d87e9817b98337b25421d58044a81397949b2ea` |
+| 4 | `lemma` | [llp_eq_of_wfs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WeakFactorizationSystemNamespaced.lean/declarations/llp-eq-of-wfs.md) | 66 | `result-track:2e4bf4c1732c17d878e35866f1adc325563b8794fd74b321d6621c101d46ed62` |
+| 5 | `lemma` | [hasLiftingProperty_of_wfs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WeakFactorizationSystemNamespaced.lean/declarations/hasliftingproperty-of-wfs.md) | 69 | `result-track:37ed3e42012dc70825d10625b53c0e2416231ef03d657af920cf81a0ceff045d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

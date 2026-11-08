@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ReconstructionNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ReconstructionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReconstructionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReconstructionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [manifest_serializer_decode_encode_copy](../../../../../ComputerScience/AlgorithmsInComputerScience/ReconstructionNamespaced.lean/declarations/manifest-serializer-decode-encode-copy.md) | 27 | `result-track:b534ce0bd65647596e998a42ab228aab59a2a3142773ce07b1c1ee4582c8c73b` |
-| 2 | `theorem` | [copy_archive_materializes_file_layers_with](../../../../../ComputerScience/AlgorithmsInComputerScience/ReconstructionNamespaced.lean/declarations/copy-archive-materializes-file-layers-with.md) | 35 | `result-track:8268b14ad8a13ddd804053f416da86932e38e8daf21abfa6fda5a069f7bf78ca` |
-| 3 | `theorem` | [materialize_index_spin_copy](../../../../../ComputerScience/AlgorithmsInComputerScience/ReconstructionNamespaced.lean/declarations/materialize-index-spin-copy.md) | 44 | `result-track:db21ea3d8f3e8526c3a8f00a79e9b8ac9a6407e2db3d4d3adfc5e7b95d44eea2` |
+| 1 | `theorem` | [manifest_serializer_decode_encode_copy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReconstructionNamespaced.lean/declarations/manifest-serializer-decode-encode-copy.md) | 27 | `result-track:b534ce0bd65647596e998a42ab228aab59a2a3142773ce07b1c1ee4582c8c73b` |
+| 2 | `theorem` | [copy_archive_materializes_file_layers_with](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReconstructionNamespaced.lean/declarations/copy-archive-materializes-file-layers-with.md) | 35 | `result-track:8268b14ad8a13ddd804053f416da86932e38e8daf21abfa6fda5a069f7bf78ca` |
+| 3 | `theorem` | [materialize_index_spin_copy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReconstructionNamespaced.lean/declarations/materialize-index-spin-copy.md) | 44 | `result-track:db21ea3d8f3e8526c3a8f00a79e9b8ac9a6407e2db3d4d3adfc5e7b95d44eea2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

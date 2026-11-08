@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/WitnessConsistencyNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/WitnessConsistencyNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/WitnessConsistencyNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/WitnessConsistencyNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [meanWitness_shell_consistent](../../../../FunctionalAnalysis/WitnessConsistencyNamespaced.lean/declarations/meanwitness-shell-consistent.md) | 29 | `result-track:e2d53d56ece501fb500b368ca221f091ace909e963b8eeb55e1153724e2ea01e` |
-| 2 | `theorem` | [energyWitness_shell_consistent](../../../../FunctionalAnalysis/WitnessConsistencyNamespaced.lean/declarations/energywitness-shell-consistent.md) | 39 | `result-track:a61bdb5701c41388d084f59b5e9668cbe1ba8c24f3d83dae1398b5024efe3278` |
-| 3 | `theorem` | [cellCountWitness_shell_consistent](../../../../FunctionalAnalysis/WitnessConsistencyNamespaced.lean/declarations/cellcountwitness-shell-consistent.md) | 49 | `result-track:f0e04a65a95eed48942810ba0550343dbd4c79a9cb58c23f7928b05dc457d9c6` |
+| 1 | `theorem` | [meanWitness_shell_consistent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/WitnessConsistencyNamespaced.lean/declarations/meanwitness-shell-consistent.md) | 29 | `result-track:e2d53d56ece501fb500b368ca221f091ace909e963b8eeb55e1153724e2ea01e` |
+| 2 | `theorem` | [energyWitness_shell_consistent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/WitnessConsistencyNamespaced.lean/declarations/energywitness-shell-consistent.md) | 39 | `result-track:a61bdb5701c41388d084f59b5e9668cbe1ba8c24f3d83dae1398b5024efe3278` |
+| 3 | `theorem` | [cellCountWitness_shell_consistent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/WitnessConsistencyNamespaced.lean/declarations/cellcountwitness-shell-consistent.md) | 49 | `result-track:f0e04a65a95eed48942810ba0550343dbd4c79a9cb58c23f7928b05dc457d9c6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

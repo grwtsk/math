@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CausalFiniteOperatorSeparation.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CausalFiniteOperatorSeparation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalFiniteOperatorSeparation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalFiniteOperatorSeparation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,9 +46,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.LinearAlgebra.LinearMap.FiniteMixingObstruction`](../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearMapFiniteMixingObstruction.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.InnerProductSpace.CausalContactHilbertSeparation`](../../../../MeasureAndIntegration/CausalContactHilbertSeparation.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.Analysis.InnerProductSpace.CompactSourceGramPositiveDefinite`](../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CompactSourceGramPositiveDefinite.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.LinearAlgebra.LinearMap.FiniteMixingObstruction`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearMapFiniteMixingObstruction.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.InnerProductSpace.CausalContactHilbertSeparation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalContactHilbertSeparation.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.InnerProductSpace.CompactSourceGramPositiveDefinite`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CompactSourceGramPositiveDefinite.lean/index.md) — import line 6; pinned internal source present.
 - `Mathlib.MeasureTheory.Function.LpSeminorm.Indicator` — import line 7; external provider; requires a separately pinned dependency.
 - `Mathlib.MeasureTheory.Measure.OpenPos` — import line 8; external provider; requires a separately pinned dependency.
 
@@ -61,15 +61,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [window_response_memLp](../../../../MeasureAndIntegration/CausalFiniteOperatorSeparation.lean/declarations/window-response-memlp.md) | 46 | `result-track:51563bb6a844a356519e811096b3c9f49b2bb6127a227cb494455d84d228441c` |
-| 2 | `def` | [originalWindowL2](../../../../MeasureAndIntegration/CausalFiniteOperatorSeparation.lean/declarations/originalwindowl2.md) | 55 | `declaration-track:edde6d0b10c4d4b17bfa390375f793678f1135f3b513b1b93907ba880ea07a43` |
-| 3 | `theorem` | [original_window_L2_contact_zero](../../../../MeasureAndIntegration/CausalFiniteOperatorSeparation.lean/declarations/original-window-l2-contact-zero.md) | 58 | `result-track:5951aebf759bfd1d2f346ba38cec0b9380ec87503f45c6d6e860e37811178497` |
-| 4 | `theorem` | [finite_source_L2_combination_ae](../../../../MeasureAndIntegration/CausalFiniteOperatorSeparation.lean/declarations/finite-source-l2-combination-ae.md) | 66 | `result-track:8f85a3cbcfe3bb2cd44ed7332111dcaad92d68e47d1bba02b393526c95748487` |
-| 5 | `theorem` | [distinct_source_L2_linearIndependent](../../../../MeasureAndIntegration/CausalFiniteOperatorSeparation.lean/declarations/distinct-source-l2-linearindependent.md) | 90 | `result-track:60246d77918dd4202053486c228a4b6ccc2b9265ad5270cd8f335a55da74454f` |
-| 6 | `theorem` | [finite_contact_functions_no_linear_mix](../../../../MeasureAndIntegration/CausalFiniteOperatorSeparation.lean/declarations/finite-contact-functions-no-linear-mix.md) | 115 | `result-track:3daa4f792344e2ddbd5a9c0c7b088576a13a198eaf7f36ecc7f04c7413d49751` |
-| 7 | `theorem` | [finite_contact_L2_no_linear_mix](../../../../MeasureAndIntegration/CausalFiniteOperatorSeparation.lean/declarations/finite-contact-l2-no-linear-mix.md) | 126 | `result-track:2279688f5117b87fd257296645f331f15bf64d829c628d2999e6f27533398fb5` |
-| 8 | `theorem` | [original_inventory_L2_no_linear_mix](../../../../MeasureAndIntegration/CausalFiniteOperatorSeparation.lean/declarations/original-inventory-l2-no-linear-mix.md) | 139 | `result-track:ac27a37c94bdfad3b3e85e0477e9246dc1d6499f2ec30c8921b0671917d75395` |
-| 9 | `theorem` | [prescribed_horizon_L2_linear_mix_obstruction](../../../../MeasureAndIntegration/CausalFiniteOperatorSeparation.lean/declarations/prescribed-horizon-l2-linear-mix-obstruction.md) | 153 | `result-track:4dc1d04472c1edcd7128b5d7e58b2ec2ab92e6d75ed5506c11628823430843bb` |
+| 1 | `theorem` | [window_response_memLp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalFiniteOperatorSeparation.lean/declarations/window-response-memlp.md) | 46 | `result-track:51563bb6a844a356519e811096b3c9f49b2bb6127a227cb494455d84d228441c` |
+| 2 | `def` | [originalWindowL2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalFiniteOperatorSeparation.lean/declarations/originalwindowl2.md) | 55 | `declaration-track:edde6d0b10c4d4b17bfa390375f793678f1135f3b513b1b93907ba880ea07a43` |
+| 3 | `theorem` | [original_window_L2_contact_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalFiniteOperatorSeparation.lean/declarations/original-window-l2-contact-zero.md) | 58 | `result-track:5951aebf759bfd1d2f346ba38cec0b9380ec87503f45c6d6e860e37811178497` |
+| 4 | `theorem` | [finite_source_L2_combination_ae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalFiniteOperatorSeparation.lean/declarations/finite-source-l2-combination-ae.md) | 66 | `result-track:8f85a3cbcfe3bb2cd44ed7332111dcaad92d68e47d1bba02b393526c95748487` |
+| 5 | `theorem` | [distinct_source_L2_linearIndependent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalFiniteOperatorSeparation.lean/declarations/distinct-source-l2-linearindependent.md) | 90 | `result-track:60246d77918dd4202053486c228a4b6ccc2b9265ad5270cd8f335a55da74454f` |
+| 6 | `theorem` | [finite_contact_functions_no_linear_mix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalFiniteOperatorSeparation.lean/declarations/finite-contact-functions-no-linear-mix.md) | 115 | `result-track:3daa4f792344e2ddbd5a9c0c7b088576a13a198eaf7f36ecc7f04c7413d49751` |
+| 7 | `theorem` | [finite_contact_L2_no_linear_mix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalFiniteOperatorSeparation.lean/declarations/finite-contact-l2-no-linear-mix.md) | 126 | `result-track:2279688f5117b87fd257296645f331f15bf64d829c628d2999e6f27533398fb5` |
+| 8 | `theorem` | [original_inventory_L2_no_linear_mix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalFiniteOperatorSeparation.lean/declarations/original-inventory-l2-no-linear-mix.md) | 139 | `result-track:ac27a37c94bdfad3b3e85e0477e9246dc1d6499f2ec30c8921b0671917d75395` |
+| 9 | `theorem` | [prescribed_horizon_L2_linear_mix_obstruction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalFiniteOperatorSeparation.lean/declarations/prescribed-horizon-l2-linear-mix-obstruction.md) | 153 | `result-track:4dc1d04472c1edcd7128b5d7e58b2ec2ab92e6d75ed5506c11628823430843bb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

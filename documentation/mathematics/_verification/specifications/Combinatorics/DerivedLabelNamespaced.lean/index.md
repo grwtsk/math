@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/DerivedLabelNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/DerivedLabelNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DerivedLabelNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DerivedLabelNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [DerivedLabel](../../../../Combinatorics/DerivedLabelNamespaced.lean/declarations/derivedlabel.md) | 23 | `declaration-track:cacf573e86eff4b0848c1b9f93c121d8ca5899165edc40a094f228cee789329c` |
-| 2 | `def` | [IsCanonical](../../../../Combinatorics/DerivedLabelNamespaced.lean/declarations/iscanonical.md) | 34 | `declaration-track:fd111249740d6d1cc4d1f69487b3abc00aa94374392cc4e334ad9d23f73cbbb9` |
-| 3 | `structure` | [Canonical](../../../../Combinatorics/DerivedLabelNamespaced.lean/declarations/canonical.md) | 48 | `declaration-track:b8cd451d579648bc3aaceb60eb5a654344bde26b859673ff2a4bc3e0867af227` |
-| 4 | `theorem` | [primitive_injective](../../../../Combinatorics/DerivedLabelNamespaced.lean/declarations/primitive-injective.md) | 52 | `result-track:cd3b2a495b36080d49990ab15d7ede418dd19c2e866694411bce472765d32067` |
-| 5 | `theorem` | [contract_injective](../../../../Combinatorics/DerivedLabelNamespaced.lean/declarations/contract-injective.md) | 58 | `result-track:e738baa64a5bf9dc7c893cfbf101574efa02d777bb07a91f889d41ba3708ed36` |
-| 6 | `theorem` | [quotientClass_injective](../../../../Combinatorics/DerivedLabelNamespaced.lean/declarations/quotientclass-injective.md) | 70 | `result-track:aa7bdec75753e3e8d8d3de8367513e8cae5e5b5b4e6ba061ec1aac580b4ba467` |
-| 7 | `theorem` | [constructors_disjoint](../../../../Combinatorics/DerivedLabelNamespaced.lean/declarations/constructors-disjoint.md) | 82 | `result-track:cd8dca59129d6f86c92c70c04a3178d35a21b40acd6faad66a0bfe35d9a3c322` |
+| 1 | `inductive` | [DerivedLabel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DerivedLabelNamespaced.lean/declarations/derivedlabel.md) | 23 | `declaration-track:cacf573e86eff4b0848c1b9f93c121d8ca5899165edc40a094f228cee789329c` |
+| 2 | `def` | [IsCanonical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DerivedLabelNamespaced.lean/declarations/iscanonical.md) | 34 | `declaration-track:fd111249740d6d1cc4d1f69487b3abc00aa94374392cc4e334ad9d23f73cbbb9` |
+| 3 | `structure` | [Canonical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DerivedLabelNamespaced.lean/declarations/canonical.md) | 48 | `declaration-track:b8cd451d579648bc3aaceb60eb5a654344bde26b859673ff2a4bc3e0867af227` |
+| 4 | `theorem` | [primitive_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DerivedLabelNamespaced.lean/declarations/primitive-injective.md) | 52 | `result-track:cd3b2a495b36080d49990ab15d7ede418dd19c2e866694411bce472765d32067` |
+| 5 | `theorem` | [contract_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DerivedLabelNamespaced.lean/declarations/contract-injective.md) | 58 | `result-track:e738baa64a5bf9dc7c893cfbf101574efa02d777bb07a91f889d41ba3708ed36` |
+| 6 | `theorem` | [quotientClass_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DerivedLabelNamespaced.lean/declarations/quotientclass-injective.md) | 70 | `result-track:aa7bdec75753e3e8d8d3de8367513e8cae5e5b5b4e6ba061ec1aac580b4ba467` |
+| 7 | `theorem` | [constructors_disjoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DerivedLabelNamespaced.lean/declarations/constructors-disjoint.md) | 82 | `result-track:cd8dca59129d6f86c92c70c04a3178d35a21b40acd6faad66a0bfe35d9a3c322` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

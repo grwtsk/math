@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AssumptionNamespacedPublicMGoal.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AssumptionNamespacedPublicMGoal.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AssumptionNamespacedPublicMGoal.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AssumptionNamespacedPublicMGoal.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [MGoal.assumption](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AssumptionNamespacedPublicMGoal.lean/declarations/mgoal-assumption.md) | 26 | `declaration-track:fec953bba619e3dec6cad2634d79f241cc06dbc0e3b5b0b8636d683062f58b76` |
-| 2 | `def` | [MGoal.assumptionPure](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AssumptionNamespacedPublicMGoal.lean/declarations/mgoal-assumptionpure.md) | 40 | `declaration-track:55c4ed085acc142d5007755de766b58495b0f7ea2c266154ade1e1bc3a1574fc` |
-| 3 | `def` | [elabMAssumption](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AssumptionNamespacedPublicMGoal.lean/declarations/elabmassumption.md) | 47 | `declaration-track:1444afa656e3954ee2e33dcca7bc5f593812125ec89665f716e1b4d8fd8d01a1` |
+| 1 | `def` | [MGoal.assumption](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AssumptionNamespacedPublicMGoal.lean/declarations/mgoal-assumption.md) | 26 | `declaration-track:fec953bba619e3dec6cad2634d79f241cc06dbc0e3b5b0b8636d683062f58b76` |
+| 2 | `def` | [MGoal.assumptionPure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AssumptionNamespacedPublicMGoal.lean/declarations/mgoal-assumptionpure.md) | 40 | `declaration-track:55c4ed085acc142d5007755de766b58495b0f7ea2c266154ade1e1bc3a1574fc` |
+| 3 | `def` | [elabMAssumption](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AssumptionNamespacedPublicMGoal.lean/declarations/elabmassumption.md) | 47 | `declaration-track:1444afa656e3954ee2e33dcca7bc5f593812125ec89665f716e1b4d8fd8d01a1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TMFFramingNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TMFFramingNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TMFFramingNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TMFFramingNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [tmf_has_witten_genus](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TMFFramingNamespaced.lean/declarations/tmf-has-witten-genus.md) | 28 | `result-track:841c57d65a245db20cad1f15eb0acc9a8646ab184cb4fe386a27aab18a58d0e9` |
-| 2 | `theorem` | [tmf_framing_trivialized](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TMFFramingNamespaced.lean/declarations/tmf-framing-trivialized.md) | 33 | `result-track:821a2683202816f46a15a98ae1a8d9d653f8ca5877f80f758ae4b1348e027415` |
+| 1 | `theorem` | [tmf_has_witten_genus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TMFFramingNamespaced.lean/declarations/tmf-has-witten-genus.md) | 28 | `result-track:841c57d65a245db20cad1f15eb0acc9a8646ab184cb4fe386a27aab18a58d0e9` |
+| 2 | `theorem` | [tmf_framing_trivialized](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TMFFramingNamespaced.lean/declarations/tmf-framing-trivialized.md) | 33 | `result-track:821a2683202816f46a15a98ae1a8d9d653f8ca5877f80f758ae4b1348e027415` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

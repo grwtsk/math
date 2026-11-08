@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Path.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Path.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Path.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Path.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [DeflectionPath](../../../../../ComputerScience/AlgorithmsInComputerScience/Path.lean/declarations/deflectionpath.md) | 16 | `declaration-track:a21baae2417502614adf2b7e09bf997cc9d61a30405ee6c5605f5377066c8805` |
-| 2 | `def` | [DeflectionPath.length](../../../../../ComputerScience/AlgorithmsInComputerScience/Path.lean/declarations/deflectionpath-length.md) | 28 | `declaration-track:e4b8b6e6f7ebec4951bb5c331ecdf6bc5ab334dceb0fb3b670ef765709cf4d18` |
-| 3 | `def` | [DeflectionPath.arcs](../../../../../ComputerScience/AlgorithmsInComputerScience/Path.lean/declarations/deflectionpath-arcs.md) | 35 | `declaration-track:c87810a5c5d02bc4e6b3c762147a54a399f600d559e6b4685d37091fda12e1e5` |
-| 4 | `def` | [DeflectionPath.AllArcs](../../../../../ComputerScience/AlgorithmsInComputerScience/Path.lean/declarations/deflectionpath-allarcs.md) | 43 | `declaration-track:4b1ec646efdbba3b70f4d848b7f5514e0c2e2770b4bd0055d646dbf40b701506` |
-| 5 | `def` | [DeflectionPath.phaseProduct](../../../../../ComputerScience/AlgorithmsInComputerScience/Path.lean/declarations/deflectionpath-phaseproduct.md) | 52 | `declaration-track:7e6605036a1c29df10f90a7f399f162aaf77a561d0fab2a993585149db34aa33` |
+| 1 | `inductive` | [DeflectionPath](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Path.lean/declarations/deflectionpath.md) | 16 | `declaration-track:a21baae2417502614adf2b7e09bf997cc9d61a30405ee6c5605f5377066c8805` |
+| 2 | `def` | [DeflectionPath.length](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Path.lean/declarations/deflectionpath-length.md) | 28 | `declaration-track:e4b8b6e6f7ebec4951bb5c331ecdf6bc5ab334dceb0fb3b670ef765709cf4d18` |
+| 3 | `def` | [DeflectionPath.arcs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Path.lean/declarations/deflectionpath-arcs.md) | 35 | `declaration-track:c87810a5c5d02bc4e6b3c762147a54a399f600d559e6b4685d37091fda12e1e5` |
+| 4 | `def` | [DeflectionPath.AllArcs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Path.lean/declarations/deflectionpath-allarcs.md) | 43 | `declaration-track:4b1ec646efdbba3b70f4d848b7f5514e0c2e2770b4bd0055d646dbf40b701506` |
+| 5 | `def` | [DeflectionPath.phaseProduct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Path.lean/declarations/deflectionpath-phaseproduct.md) | 52 | `declaration-track:7e6605036a1c29df10f90a7f399f162aaf77a561d0fab2a993585149db34aa33` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

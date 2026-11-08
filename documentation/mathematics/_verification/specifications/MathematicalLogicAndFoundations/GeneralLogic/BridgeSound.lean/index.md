@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BridgeSound.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BridgeSound.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BridgeSound.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BridgeSound.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,14 +60,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ResidueLedger](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BridgeSound.lean/declarations/residueledger.md) | 8 | `declaration-track:fd3801909264ab643d6c37bbe16c31889c99973fe0854738899da5d94417a2eb` |
-| 2 | `def` | [ResidueLedger.IsZeroOrExplicitlyLedgered](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BridgeSound.lean/declarations/residueledger-iszeroorexplicitlyledgered.md) | 11 | `declaration-track:392567e0da815f793ae59317be80c5a29d6c31fac7932f87708476f643a207c5` |
-| 3 | `structure` | [ModularWaveBridgeInput](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BridgeSound.lean/declarations/modularwavebridgeinput.md) | 15 | `declaration-track:2f3737748e26f535eb6340097ddbb582384b21220ff4b998b89572b3fb630624` |
-| 4 | `structure` | [ModularWaveBitstreamBridgeSound](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BridgeSound.lean/declarations/modularwavebitstreambridgesound.md) | 28 | `declaration-track:be2482658bc48d76a8e6ec1a8e9388a3e45d12886265a3f519a051553bb81cd6` |
-| 5 | `theorem` | [modular_wave_lfunction_bitmatrix_bridge_sound](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BridgeSound.lean/declarations/modular-wave-lfunction-bitmatrix-bridge-sound.md) | 64 | `result-track:83838206dab744ab862add2fd906c3af2b1fccb8ae8764138d2cc7c0fdb4f354` |
-| 6 | `theorem` | [finite_witness_boundary_preserved](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BridgeSound.lean/declarations/finite-witness-boundary-preserved.md) | 98 | `result-track:fc5fa6dc6e6eb1899124a39bb44ae5e60ec19d8b65dd9cc06b712c8eda1fe38d` |
-| 7 | `theorem` | [wiles_artifact_remains_external](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BridgeSound.lean/declarations/wiles-artifact-remains-external.md) | 105 | `result-track:8c4b11e3cda62a58de0e78596b55d3eb28ac490a85ae8d0dd1201d391cb298b1` |
-| 8 | `theorem` | [compact_shell_erases_order](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BridgeSound.lean/declarations/compact-shell-erases-order.md) | 111 | `result-track:54b119dceab513ba036d9fe773f0bab94837d416bbd823cc3400e34044967919` |
+| 1 | `structure` | [ResidueLedger](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BridgeSound.lean/declarations/residueledger.md) | 8 | `declaration-track:fd3801909264ab643d6c37bbe16c31889c99973fe0854738899da5d94417a2eb` |
+| 2 | `def` | [ResidueLedger.IsZeroOrExplicitlyLedgered](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BridgeSound.lean/declarations/residueledger-iszeroorexplicitlyledgered.md) | 11 | `declaration-track:392567e0da815f793ae59317be80c5a29d6c31fac7932f87708476f643a207c5` |
+| 3 | `structure` | [ModularWaveBridgeInput](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BridgeSound.lean/declarations/modularwavebridgeinput.md) | 15 | `declaration-track:2f3737748e26f535eb6340097ddbb582384b21220ff4b998b89572b3fb630624` |
+| 4 | `structure` | [ModularWaveBitstreamBridgeSound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BridgeSound.lean/declarations/modularwavebitstreambridgesound.md) | 28 | `declaration-track:be2482658bc48d76a8e6ec1a8e9388a3e45d12886265a3f519a051553bb81cd6` |
+| 5 | `theorem` | [modular_wave_lfunction_bitmatrix_bridge_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BridgeSound.lean/declarations/modular-wave-lfunction-bitmatrix-bridge-sound.md) | 64 | `result-track:83838206dab744ab862add2fd906c3af2b1fccb8ae8764138d2cc7c0fdb4f354` |
+| 6 | `theorem` | [finite_witness_boundary_preserved](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BridgeSound.lean/declarations/finite-witness-boundary-preserved.md) | 98 | `result-track:fc5fa6dc6e6eb1899124a39bb44ae5e60ec19d8b65dd9cc06b712c8eda1fe38d` |
+| 7 | `theorem` | [wiles_artifact_remains_external](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BridgeSound.lean/declarations/wiles-artifact-remains-external.md) | 105 | `result-track:8c4b11e3cda62a58de0e78596b55d3eb28ac490a85ae8d0dd1201d391cb298b1` |
+| 8 | `theorem` | [compact_shell_erases_order](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BridgeSound.lean/declarations/compact-shell-erases-order.md) | 111 | `result-track:54b119dceab513ba036d9fe773f0bab94837d416bbd823cc3400e34044967919` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

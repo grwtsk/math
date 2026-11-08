@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/TopCatSphereNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/TopCatSphereNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopCatSphereNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopCatSphereNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [disk](../../../../GeneralTopology/TopCatSphereNamespaced.lean/declarations/disk.md) | 32 | `declaration-track:227d5c4d848f96f461c080a0af53d7f9f45a445b606e143d2774b4c969a02ea6` |
-| 2 | `def` | [diskBoundary](../../../../GeneralTopology/TopCatSphereNamespaced.lean/declarations/diskboundary.md) | 36 | `declaration-track:369cf48a22243fbe43b1c5908f69a58b3026d7885aa9a8a15bd343e94258363e` |
-| 3 | `def` | [sphere](../../../../GeneralTopology/TopCatSphereNamespaced.lean/declarations/sphere.md) | 41 | `declaration-track:caddf8e074c34c39bc716384fcfbba11ff19e5de5acc7679b8957ea006128475` |
-| 4 | `def` | [diskBoundaryInclusion](../../../../GeneralTopology/TopCatSphereNamespaced.lean/declarations/diskboundaryinclusion.md) | 54 | `declaration-track:a58e6119f75254e96908b995b5dd3437be66a2bd45f7bdc992c5e90da279c3ca` |
+| 1 | `def` | [disk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopCatSphereNamespaced.lean/declarations/disk.md) | 32 | `declaration-track:227d5c4d848f96f461c080a0af53d7f9f45a445b606e143d2774b4c969a02ea6` |
+| 2 | `def` | [diskBoundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopCatSphereNamespaced.lean/declarations/diskboundary.md) | 36 | `declaration-track:369cf48a22243fbe43b1c5908f69a58b3026d7885aa9a8a15bd343e94258363e` |
+| 3 | `def` | [sphere](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopCatSphereNamespaced.lean/declarations/sphere.md) | 41 | `declaration-track:caddf8e074c34c39bc716384fcfbba11ff19e5de5acc7679b8957ea006128475` |
+| 4 | `def` | [diskBoundaryInclusion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopCatSphereNamespaced.lean/declarations/diskboundaryinclusion.md) | 54 | `declaration-track:a58e6119f75254e96908b995b5dd3437be66a2bd45f7bdc992c5e90da279c3ca` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

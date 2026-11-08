@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ElementaryConstructions.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ElementaryConstructions.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ElementaryConstructions.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ElementaryConstructions.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `Folder.Basic` — import line 23; external provider; requires a separately pinned dependency.
-- [Family Data](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FamilyData.lean/index.md) — import line 24; pinned internal source present.
+- [Family Data](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FamilyData.lean/index.md) — import line 24; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [empty](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ElementaryConstructions.lean/declarations/empty.md) | 50 | `declaration-track:ff718af9a73403f6b9be70a568e8df14b9482a57772a5e0ce8bbfcafdb683415` |
-| 2 | `def` | [identityCover](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ElementaryConstructions.lean/declarations/identitycover.md) | 55 | `declaration-track:a6c4aeec763facd935fb9271a90699dc5d5b689b0a6b70d6ca098eec47c8c741` |
-| 3 | `def` | [postcompose](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ElementaryConstructions.lean/declarations/postcompose.md) | 60 | `declaration-track:68605ed5d8c61dba788e976604e3011799563b619ac9a25ea63224c75382bd0c` |
-| 4 | `theorem` | [length_identityCover](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ElementaryConstructions.lean/declarations/length-identitycover.md) | 67 | `result-track:58573d775a8526e183dfb046c9af3f177070146382d87b15b186cf14b10c0ea2` |
-| 5 | `theorem` | [localArrow_identityCover](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ElementaryConstructions.lean/declarations/localarrow-identitycover.md) | 72 | `result-track:7612fc83db8c2386290a13ee99136cc6891a857feab851c14e7162b5a67a9845` |
+| 1 | `def` | [empty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ElementaryConstructions.lean/declarations/empty.md) | 50 | `declaration-track:ff718af9a73403f6b9be70a568e8df14b9482a57772a5e0ce8bbfcafdb683415` |
+| 2 | `def` | [identityCover](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ElementaryConstructions.lean/declarations/identitycover.md) | 55 | `declaration-track:a6c4aeec763facd935fb9271a90699dc5d5b689b0a6b70d6ca098eec47c8c741` |
+| 3 | `def` | [postcompose](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ElementaryConstructions.lean/declarations/postcompose.md) | 60 | `declaration-track:68605ed5d8c61dba788e976604e3011799563b619ac9a25ea63224c75382bd0c` |
+| 4 | `theorem` | [length_identityCover](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ElementaryConstructions.lean/declarations/length-identitycover.md) | 67 | `result-track:58573d775a8526e183dfb046c9af3f177070146382d87b15b186cf14b10c0ea2` |
+| 5 | `theorem` | [localArrow_identityCover](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ElementaryConstructions.lean/declarations/localarrow-identitycover.md) | 72 | `result-track:7612fc83db8c2386290a13ee99136cc6891a857feab851c14e7162b5a67a9845` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

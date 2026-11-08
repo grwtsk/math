@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/NullCrossAnnihilationEdition2.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/NullCrossAnnihilationEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/NullCrossAnnihilationEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/NullCrossAnnihilationEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [null_orthogonal](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/NullCrossAnnihilationEdition2.lean/declarations/null-orthogonal.md) | 31 | `result-track:e23c3ccd860b62d81c9152e67839a08d896c9375746379496963764a5a219f3e` |
-| 2 | `theorem` | [orthogonal_null](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/NullCrossAnnihilationEdition2.lean/declarations/orthogonal-null.md) | 65 | `result-track:09fce48e8f506dbe8cb1d4b3f99bcf79105d6ca4f841af0bc3d9288dd14b4c27` |
-| 3 | `theorem` | [provenance_null_cross_zero](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/NullCrossAnnihilationEdition2.lean/declarations/provenance-null-cross-zero.md) | 81 | `result-track:b2bf7d87a6aae87c8fe1ce6b477aea933974c44ab2343fa162d4b4a8590ae9c2` |
-| 4 | `theorem` | [matrix_kernel_cross_orthogonal](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/NullCrossAnnihilationEdition2.lean/declarations/matrix-kernel-cross-orthogonal.md) | 95 | `result-track:b5674dfc4e994ae44155185479492fed9ea9d6e792d7d45892bcd7579b2c5c37` |
-| 5 | `theorem` | [matrix_kernel_annihilates_cross](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/NullCrossAnnihilationEdition2.lean/declarations/matrix-kernel-annihilates-cross.md) | 115 | `result-track:44b58959ca39985c33fffe5b1cab6be4f7069ac1246bfdcbd8eb966dcf5c7f1c` |
+| 1 | `theorem` | [null_orthogonal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/NullCrossAnnihilationEdition2.lean/declarations/null-orthogonal.md) | 31 | `result-track:e23c3ccd860b62d81c9152e67839a08d896c9375746379496963764a5a219f3e` |
+| 2 | `theorem` | [orthogonal_null](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/NullCrossAnnihilationEdition2.lean/declarations/orthogonal-null.md) | 65 | `result-track:09fce48e8f506dbe8cb1d4b3f99bcf79105d6ca4f841af0bc3d9288dd14b4c27` |
+| 3 | `theorem` | [provenance_null_cross_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/NullCrossAnnihilationEdition2.lean/declarations/provenance-null-cross-zero.md) | 81 | `result-track:b2bf7d87a6aae87c8fe1ce6b477aea933974c44ab2343fa162d4b4a8590ae9c2` |
+| 4 | `theorem` | [matrix_kernel_cross_orthogonal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/NullCrossAnnihilationEdition2.lean/declarations/matrix-kernel-cross-orthogonal.md) | 95 | `result-track:b5674dfc4e994ae44155185479492fed9ea9d6e792d7d45892bcd7579b2c5c37` |
+| 5 | `theorem` | [matrix_kernel_annihilates_cross](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/NullCrossAnnihilationEdition2.lean/declarations/matrix-kernel-annihilates-cross.md) | 115 | `result-track:44b58959ca39985c33fffe5b1cab6be4f7069ac1246bfdcbd8eb966dcf5c7f1c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/OddEvenCardinalityAndMatrixCounts.lean/index.md) · [Full source](../../../../Combinatorics/OddEvenCardinalityAndMatrixCounts.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OddEvenCardinalityAndMatrixCounts.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OddEvenCardinalityAndMatrixCounts.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [count_odd_eq_div_two](../../../../Combinatorics/OddEvenCardinalityAndMatrixCounts.lean/declarations/count-odd-eq-div-two.md) | 41 | `result-track:c627d57062fc5baada8b2bdcd0615d354c292d2773ccc03429f4b1c4448677cb` |
-| 2 | `def` | [finOddEquiv](../../../../Combinatorics/OddEvenCardinalityAndMatrixCounts.lean/declarations/finoddequiv.md) | 56 | `declaration-track:7bcec878055eabb40014da7bfef6dd776d6707a90f1ea1d21cbeccdc2d36740c` |
-| 3 | `theorem` | [card_fin_odd](../../../../Combinatorics/OddEvenCardinalityAndMatrixCounts.lean/declarations/card-fin-odd.md) | 67 | `result-track:bd042de081a2e2c27cc494fc5367cd5964fd13d7ad718fd619b73b97be4e414c` |
-| 4 | `theorem` | [card_fin_even](../../../../Combinatorics/OddEvenCardinalityAndMatrixCounts.lean/declarations/card-fin-even.md) | 81 | `result-track:8ecf285a83b8253708ff6ff2bda57a22491dc07d6fa5d657dc52d1dfea2db4c8` |
-| 5 | `theorem` | [checkerboard_count_arithmetic](../../../../Combinatorics/OddEvenCardinalityAndMatrixCounts.lean/declarations/checkerboard-count-arithmetic.md) | 92 | `result-track:2a55952cd02e2bed8401c0c8177173bc8e58c19c986d8af7c62f6cf671a8650c` |
-| 6 | `theorem` | [checkerboard_one_iff](../../../../Combinatorics/OddEvenCardinalityAndMatrixCounts.lean/declarations/checkerboard-one-iff.md) | 160 | `result-track:92b921fee244c2cc967dec218157d39ac7e9a3b675298fbb73c76689497eaed7` |
-| 7 | `theorem` | [checkerboard_countOnes_eq](../../../../Combinatorics/OddEvenCardinalityAndMatrixCounts.lean/declarations/checkerboard-countones-eq.md) | 167 | `result-track:e96315b20b8c92487a741a58eb219634234d3aacdb1ddf00d354dfc5625bc81d` |
-| 8 | `theorem` | [checkerboard_countZeros_eq](../../../../Combinatorics/OddEvenCardinalityAndMatrixCounts.lean/declarations/checkerboard-countzeros-eq.md) | 194 | `result-track:e14306e90d81dc1cf2dc8de024f85058ea808dd680d5722f6a1e92e67777392c` |
+| 1 | `theorem` | [count_odd_eq_div_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OddEvenCardinalityAndMatrixCounts.lean/declarations/count-odd-eq-div-two.md) | 41 | `result-track:c627d57062fc5baada8b2bdcd0615d354c292d2773ccc03429f4b1c4448677cb` |
+| 2 | `def` | [finOddEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OddEvenCardinalityAndMatrixCounts.lean/declarations/finoddequiv.md) | 56 | `declaration-track:7bcec878055eabb40014da7bfef6dd776d6707a90f1ea1d21cbeccdc2d36740c` |
+| 3 | `theorem` | [card_fin_odd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OddEvenCardinalityAndMatrixCounts.lean/declarations/card-fin-odd.md) | 67 | `result-track:bd042de081a2e2c27cc494fc5367cd5964fd13d7ad718fd619b73b97be4e414c` |
+| 4 | `theorem` | [card_fin_even](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OddEvenCardinalityAndMatrixCounts.lean/declarations/card-fin-even.md) | 81 | `result-track:8ecf285a83b8253708ff6ff2bda57a22491dc07d6fa5d657dc52d1dfea2db4c8` |
+| 5 | `theorem` | [checkerboard_count_arithmetic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OddEvenCardinalityAndMatrixCounts.lean/declarations/checkerboard-count-arithmetic.md) | 92 | `result-track:2a55952cd02e2bed8401c0c8177173bc8e58c19c986d8af7c62f6cf671a8650c` |
+| 6 | `theorem` | [checkerboard_one_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OddEvenCardinalityAndMatrixCounts.lean/declarations/checkerboard-one-iff.md) | 160 | `result-track:92b921fee244c2cc967dec218157d39ac7e9a3b675298fbb73c76689497eaed7` |
+| 7 | `theorem` | [checkerboard_countOnes_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OddEvenCardinalityAndMatrixCounts.lean/declarations/checkerboard-countones-eq.md) | 167 | `result-track:e96315b20b8c92487a741a58eb219634234d3aacdb1ddf00d354dfc5625bc81d` |
+| 8 | `theorem` | [checkerboard_countZeros_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OddEvenCardinalityAndMatrixCounts.lean/declarations/checkerboard-countzeros-eq.md) | 194 | `result-track:e14306e90d81dc1cf2dc8de024f85058ea808dd680d5722f6a1e92e67777392c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TupleNamespaced.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TupleNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TupleNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TupleNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SafeResidueTuple](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TupleNamespaced.lean/declarations/saferesiduetuple.md) | 23 | `declaration-track:b7fcd35b3033ca118be07ef55e053c1d9269348d60a136ce8e7e3e1156205b4b` |
-| 2 | `def` | [SafeResidueTuple.total](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TupleNamespaced.lean/declarations/saferesiduetuple-total.md) | 30 | `declaration-track:f31faaaec8117caaa5453fd3e2a0c47a26291c8a07f8a21fd5e81e7c506bc5cc` |
-| 3 | `structure` | [TuplePhase](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TupleNamespaced.lean/declarations/tuplephase.md) | 37 | `declaration-track:4d1e100bfa91c23d51b203f13fb7ee72e111d24d7d04e095f0c7d7003f011261` |
-| 4 | `def` | [TuplePhase.act](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TupleNamespaced.lean/declarations/tuplephase-act.md) | 42 | `declaration-track:a03c48d281f14f561c92a2fe9493200f7329440b1d43c47147207c214e4a2db6` |
-| 5 | `def` | [TuplePhase.PreservesTotal](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TupleNamespaced.lean/declarations/tuplephase-preservestotal.md) | 58 | `declaration-track:d032d3c17bf4e1c3ee12ed5bc4662fa5dffa7c139a3a5e6e434b394664a036ba` |
-| 6 | `structure` | [TupleConstraintStabilizer](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TupleNamespaced.lean/declarations/tupleconstraintstabilizer.md) | 66 | `declaration-track:fd31bf67abe0feabe5002e1db7532352639567f05f8c96eb7348ce5d4f808791` |
+| 1 | `structure` | [SafeResidueTuple](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TupleNamespaced.lean/declarations/saferesiduetuple.md) | 23 | `declaration-track:b7fcd35b3033ca118be07ef55e053c1d9269348d60a136ce8e7e3e1156205b4b` |
+| 2 | `def` | [SafeResidueTuple.total](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TupleNamespaced.lean/declarations/saferesiduetuple-total.md) | 30 | `declaration-track:f31faaaec8117caaa5453fd3e2a0c47a26291c8a07f8a21fd5e81e7c506bc5cc` |
+| 3 | `structure` | [TuplePhase](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TupleNamespaced.lean/declarations/tuplephase.md) | 37 | `declaration-track:4d1e100bfa91c23d51b203f13fb7ee72e111d24d7d04e095f0c7d7003f011261` |
+| 4 | `def` | [TuplePhase.act](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TupleNamespaced.lean/declarations/tuplephase-act.md) | 42 | `declaration-track:a03c48d281f14f561c92a2fe9493200f7329440b1d43c47147207c214e4a2db6` |
+| 5 | `def` | [TuplePhase.PreservesTotal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TupleNamespaced.lean/declarations/tuplephase-preservestotal.md) | 58 | `declaration-track:d032d3c17bf4e1c3ee12ed5bc4662fa5dffa7c139a3a5e6e434b394664a036ba` |
+| 6 | `structure` | [TupleConstraintStabilizer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TupleNamespaced.lean/declarations/tupleconstraintstabilizer.md) | 66 | `declaration-track:fd31bf67abe0feabe5002e1db7532352639567f05f8c96eb7348ce5d4f808791` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

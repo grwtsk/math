@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/TypeGraph.lean/index.md) · [Full source](../../../../Combinatorics/TypeGraph.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TypeGraph.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TypeGraph.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TheoremHyperedge](../../../../Combinatorics/TypeGraph.lean/declarations/theoremhyperedge.md) | 6 | `declaration-track:d09da69d1600270faac3ee305702278c64d767b12bcb2201a8869e1072cb6402` |
-| 2 | `theorem` | [statement_support_idempotent](../../../../Combinatorics/TypeGraph.lean/declarations/statement-support-idempotent.md) | 13 | `result-track:4f0332020732902d647db7c43455cf92c7110cdacf4b5c87bb3b2548305643a6` |
+| 1 | `structure` | [TheoremHyperedge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TypeGraph.lean/declarations/theoremhyperedge.md) | 6 | `declaration-track:d09da69d1600270faac3ee305702278c64d767b12bcb2201a8869e1072cb6402` |
+| 2 | `theorem` | [statement_support_idempotent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TypeGraph.lean/declarations/statement-support-idempotent.md) | 13 | `result-track:4f0332020732902d647db7c43455cf92c7110cdacf4b5c87bb3b2548305643a6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

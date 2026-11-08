@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ChainComplexNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ChainComplexNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ChainComplexNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ChainComplexNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ChainComplex](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ChainComplexNamespaced.lean/declarations/chaincomplex.md) | 13 | `declaration-track:c4e94865b8e0fa817e54727eaf2e6c6c7ecbd88c180a8cd491f93337744e2103` |
-| 2 | `theorem` | [chainComplex_requires_boundary_squared_zero](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ChainComplexNamespaced.lean/declarations/chaincomplex-requires-boundary-squared-zero.md) | 17 | `result-track:3771771ea2959e0fa4bb151ee675121a89df9f4dd38d1ace93c4bc3f9efd1519` |
+| 1 | `structure` | [ChainComplex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ChainComplexNamespaced.lean/declarations/chaincomplex.md) | 13 | `declaration-track:c4e94865b8e0fa817e54727eaf2e6c6c7ecbd88c180a8cd491f93337744e2103` |
+| 2 | `theorem` | [chainComplex_requires_boundary_squared_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ChainComplexNamespaced.lean/declarations/chaincomplex-requires-boundary-squared-zero.md) | 17 | `result-track:3771771ea2959e0fa4bb151ee675121a89df9f4dd38d1ace93c4bc3f9efd1519` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

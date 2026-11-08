@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MainNamespacedAsDotGraph.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MainNamespacedAsDotGraph.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MainNamespacedAsDotGraph.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MainNamespacedAsDotGraph.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -63,10 +63,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [asDotGraph](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MainNamespacedAsDotGraph.lean/declarations/asdotgraph.md) | 33 | `declaration-track:cc4ac9b688870c8b4844a2fe2aace422da73a7a271f7a5338dd05b80f6d9aa5c` |
-| 2 | `def` | [importGraphCLI](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MainNamespacedAsDotGraph.lean/declarations/importgraphcli.md) | 45 | `declaration-track:b6b469ded3ff67b57874d510d63fc06bc19a4dc298da60a9d93bc274a378e377` |
-| 3 | `def` | [graph](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MainNamespacedAsDotGraph.lean/declarations/graph.md) | 92 | `declaration-track:cad6d63adeaeb9a61b67c000096b531d519859037a49d885b138b900b65775c7` |
-| 4 | `def` | [main](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MainNamespacedAsDotGraph.lean/declarations/main.md) | 112 | `declaration-track:2efd4437ac71f3279c2578381900385508fa0772a2c2377034d562fa8f12ecfd` |
+| 1 | `def` | [asDotGraph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MainNamespacedAsDotGraph.lean/declarations/asdotgraph.md) | 33 | `declaration-track:cc4ac9b688870c8b4844a2fe2aace422da73a7a271f7a5338dd05b80f6d9aa5c` |
+| 2 | `def` | [importGraphCLI](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MainNamespacedAsDotGraph.lean/declarations/importgraphcli.md) | 45 | `declaration-track:b6b469ded3ff67b57874d510d63fc06bc19a4dc298da60a9d93bc274a378e377` |
+| 3 | `def` | [graph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MainNamespacedAsDotGraph.lean/declarations/graph.md) | 92 | `declaration-track:cad6d63adeaeb9a61b67c000096b531d519859037a49d885b138b900b65775c7` |
+| 4 | `def` | [main](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MainNamespacedAsDotGraph.lean/declarations/main.md) | 112 | `declaration-track:2efd4437ac71f3279c2578381900385508fa0772a2c2377034d562fa8f12ecfd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GlobalIndexNonzeroNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GlobalIndexNonzeroNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GlobalIndexNonzeroNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GlobalIndexNonzeroNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [global_k_index_nonzero](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GlobalIndexNonzeroNamespaced.lean/declarations/global-k-index-nonzero.md) | 27 | `result-track:f4ee9ac8d517060b2c1d37fee7b9764c86373c9cb6734cbb5dedf7bfc7b0bcde` |
-| 2 | `theorem` | [elliptic_family_global_index_nonzero](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GlobalIndexNonzeroNamespaced.lean/declarations/elliptic-family-global-index-nonzero.md) | 35 | `result-track:1efdde979e3e5ef774e0e475c84424dd2da6074a4319e7b792c0da558f391b0a` |
+| 1 | `theorem` | [global_k_index_nonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GlobalIndexNonzeroNamespaced.lean/declarations/global-k-index-nonzero.md) | 27 | `result-track:f4ee9ac8d517060b2c1d37fee7b9764c86373c9cb6734cbb5dedf7bfc7b0bcde` |
+| 2 | `theorem` | [elliptic_family_global_index_nonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GlobalIndexNonzeroNamespaced.lean/declarations/elliptic-family-global-index-nonzero.md) | 35 | `result-track:1efdde979e3e5ef774e0e475c84424dd2da6074a4319e7b792c0da558f391b0a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

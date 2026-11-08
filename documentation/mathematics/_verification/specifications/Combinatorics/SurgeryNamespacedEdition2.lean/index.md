@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/SurgeryNamespacedEdition2.lean/index.md) · [Full source](../../../../Combinatorics/SurgeryNamespacedEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SurgeryNamespacedEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SurgeryNamespacedEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,18 +59,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [SurgeryLayer](../../../../Combinatorics/SurgeryNamespacedEdition2.lean/declarations/surgerylayer.md) | 29 | `declaration-track:ef1980e14e4f2c5fa5a1064ba13e45d7248ed4ec349c379b49631aa42fe6951a` |
-| 2 | `structure` | [GlobalSurgeryLocus](../../../../Combinatorics/SurgeryNamespacedEdition2.lean/declarations/globalsurgerylocus.md) | 44 | `declaration-track:9f3fecc77f72427e3776bd0a9b867652dd3bb6bbaef60c99a7476cf4713dde39` |
-| 3 | `structure` | [SurgeryPatch](../../../../Combinatorics/SurgeryNamespacedEdition2.lean/declarations/surgerypatch.md) | 50 | `declaration-track:425f6744ca92e2d455c86a9639d1d4abb14fa60123536f189807aba388df6bca` |
-| 4 | `inductive` | [TerrainSurgeryMode](../../../../Combinatorics/SurgeryNamespacedEdition2.lean/declarations/terrainsurgerymode.md) | 68 | `declaration-track:9a3bcf7e7c7fd271816b92ebe94e3aa187dd0ffa9ab2b16441c5a2719bc0b840` |
-| 5 | `structure` | [TerrainRollback](../../../../Combinatorics/SurgeryNamespacedEdition2.lean/declarations/terrainrollback.md) | 74 | `declaration-track:5596b45934d0035fa30217e4eb3b9a937e9778768f2f43578597b0fc6e4b0ee4` |
-| 6 | `structure` | [TerrainSurgery](../../../../Combinatorics/SurgeryNamespacedEdition2.lean/declarations/terrainsurgery.md) | 80 | `declaration-track:031d55efe24147898035d883fb3fbacd0186258b9fb75c2b128a8ed1f8e80fbc` |
-| 7 | `theorem` | [changed_vertex_has_global_locus](../../../../Combinatorics/SurgeryNamespacedEdition2.lean/declarations/changed-vertex-has-global-locus.md) | 128 | `result-track:93079a86155cc42b3c1f024a290462a3f23f5d40977c90ec52c8448e8c9621d6` |
-| 8 | `theorem` | [complement_adjacency_unchanged](../../../../Combinatorics/SurgeryNamespacedEdition2.lean/declarations/complement-adjacency-unchanged.md) | 134 | `result-track:b360512041f31b90f5ad4aea835a655f253b22b7b5e905820decafbd9890fb18` |
-| 9 | `theorem` | [rollback_recovers_before](../../../../Combinatorics/SurgeryNamespacedEdition2.lean/declarations/rollback-recovers-before.md) | 141 | `result-track:c5a220637d785ffd292e5e21c2fba64dadd6b4a008fc6a298f5f8da8050cbaea` |
-| 10 | `structure` | [ReversibleTerrainSurgery](../../../../Combinatorics/SurgeryNamespacedEdition2.lean/declarations/reversibleterrainsurgery.md) | 151 | `declaration-track:76f535dc594ccf65c6d51b33d372fe8d805d6ed8fbf11f8e6a24e0a54a660482` |
-| 11 | `structure` | [SurgeryObstruction](../../../../Combinatorics/SurgeryNamespacedEdition2.lean/declarations/surgeryobstruction.md) | 159 | `declaration-track:171fb6c431c3fcdd18c16ca6771d53938e7e78cfc4cdf1baa3f3f0b3293d7b19` |
-| 12 | `theorem` | [overlay_ne_rulesetRewrite](../../../../Combinatorics/SurgeryNamespacedEdition2.lean/declarations/overlay-ne-rulesetrewrite.md) | 168 | `result-track:43574acc0c27c1aff2523959a7484ea6449a284c0bda2c8fe801e392be6431e1` |
+| 1 | `inductive` | [SurgeryLayer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SurgeryNamespacedEdition2.lean/declarations/surgerylayer.md) | 29 | `declaration-track:ef1980e14e4f2c5fa5a1064ba13e45d7248ed4ec349c379b49631aa42fe6951a` |
+| 2 | `structure` | [GlobalSurgeryLocus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SurgeryNamespacedEdition2.lean/declarations/globalsurgerylocus.md) | 44 | `declaration-track:9f3fecc77f72427e3776bd0a9b867652dd3bb6bbaef60c99a7476cf4713dde39` |
+| 3 | `structure` | [SurgeryPatch](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SurgeryNamespacedEdition2.lean/declarations/surgerypatch.md) | 50 | `declaration-track:425f6744ca92e2d455c86a9639d1d4abb14fa60123536f189807aba388df6bca` |
+| 4 | `inductive` | [TerrainSurgeryMode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SurgeryNamespacedEdition2.lean/declarations/terrainsurgerymode.md) | 68 | `declaration-track:9a3bcf7e7c7fd271816b92ebe94e3aa187dd0ffa9ab2b16441c5a2719bc0b840` |
+| 5 | `structure` | [TerrainRollback](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SurgeryNamespacedEdition2.lean/declarations/terrainrollback.md) | 74 | `declaration-track:5596b45934d0035fa30217e4eb3b9a937e9778768f2f43578597b0fc6e4b0ee4` |
+| 6 | `structure` | [TerrainSurgery](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SurgeryNamespacedEdition2.lean/declarations/terrainsurgery.md) | 80 | `declaration-track:031d55efe24147898035d883fb3fbacd0186258b9fb75c2b128a8ed1f8e80fbc` |
+| 7 | `theorem` | [changed_vertex_has_global_locus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SurgeryNamespacedEdition2.lean/declarations/changed-vertex-has-global-locus.md) | 128 | `result-track:93079a86155cc42b3c1f024a290462a3f23f5d40977c90ec52c8448e8c9621d6` |
+| 8 | `theorem` | [complement_adjacency_unchanged](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SurgeryNamespacedEdition2.lean/declarations/complement-adjacency-unchanged.md) | 134 | `result-track:b360512041f31b90f5ad4aea835a655f253b22b7b5e905820decafbd9890fb18` |
+| 9 | `theorem` | [rollback_recovers_before](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SurgeryNamespacedEdition2.lean/declarations/rollback-recovers-before.md) | 141 | `result-track:c5a220637d785ffd292e5e21c2fba64dadd6b4a008fc6a298f5f8da8050cbaea` |
+| 10 | `structure` | [ReversibleTerrainSurgery](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SurgeryNamespacedEdition2.lean/declarations/reversibleterrainsurgery.md) | 151 | `declaration-track:76f535dc594ccf65c6d51b33d372fe8d805d6ed8fbf11f8e6a24e0a54a660482` |
+| 11 | `structure` | [SurgeryObstruction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SurgeryNamespacedEdition2.lean/declarations/surgeryobstruction.md) | 159 | `declaration-track:171fb6c431c3fcdd18c16ca6771d53938e7e78cfc4cdf1baa3f3f0b3293d7b19` |
+| 12 | `theorem` | [overlay_ne_rulesetRewrite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SurgeryNamespacedEdition2.lean/declarations/overlay-ne-rulesetrewrite.md) | 168 | `result-track:43574acc0c27c1aff2523959a7484ea6449a284c0bda2c8fe801e392be6431e1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

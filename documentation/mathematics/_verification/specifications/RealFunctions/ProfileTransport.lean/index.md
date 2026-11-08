@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/ProfileTransport.lean/index.md) · [Full source](../../../../RealFunctions/ProfileTransport.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ProfileTransport.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ProfileTransport.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,18 +60,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [deriv_eq_on_closed](../../../../RealFunctions/ProfileTransport.lean/declarations/deriv-eq-on-closed.md) | 14 | `result-track:8ad09d8b8bc4b299f3bafe77e8a441268f146d9b451fd306a2be9655d87e5e22` |
-| 2 | `def` | [scaledProfile](../../../../RealFunctions/ProfileTransport.lean/declarations/scaledprofile.md) | 23 | `declaration-track:8569ab0ad7a0a9e315ffeb277fcb3047b1b1ca92bf410d45c0f4ae1ac1c18233` |
-| 3 | `theorem` | [scaledProfile_hasDerivAt](../../../../RealFunctions/ProfileTransport.lean/declarations/scaledprofile-hasderivat.md) | 25 | `result-track:ad224f65a543c632b8a877f8a29fc286c3655cd8d8646c3dc708a593ac28b444` |
-| 4 | `theorem` | [scaledProfile_deriv](../../../../RealFunctions/ProfileTransport.lean/declarations/scaledprofile-deriv.md) | 35 | `result-track:6d7c77acd764961e4d9e92b3953f72e47ec076664ae0dab1c58f8ae2f838829a` |
-| 5 | `theorem` | [scaledProfile_second_hasDerivAt](../../../../RealFunctions/ProfileTransport.lean/declarations/scaledprofile-second-hasderivat.md) | 39 | `result-track:5cc54e40848671d5b3d23b17b3e19cab2aa3bf4d652aec794ecc45d2730d1107` |
-| 6 | `theorem` | [primitiveCorrelationZero_deriv_eq_scaledProfile](../../../../RealFunctions/ProfileTransport.lean/declarations/primitivecorrelationzero-deriv-eq-scaledprofile.md) | 54 | `result-track:81721edea6438ae31a1f1256fc996c6415bc3f4676647d2a8907511672771d88` |
-| 7 | `theorem` | [primitiveCorrelationZero_second_deriv_eq_scaledProfile](../../../../RealFunctions/ProfileTransport.lean/declarations/primitivecorrelationzero-second-deriv-eq-scaledprofile.md) | 63 | `result-track:564d973098a3d1d0ced10f2aaa9029b37081e27087f5ea2ad3dce521e4a851be` |
-| 8 | `theorem` | [primitiveCorrelationZero_deriv_eq_profile](../../../../RealFunctions/ProfileTransport.lean/declarations/primitivecorrelationzero-deriv-eq-profile.md) | 77 | `result-track:df851fdae60435d545ee933699b70ab8c70ba56f6e38be25e0adcff2b217c7ed` |
-| 9 | `theorem` | [primitiveCorrelationZero_second_deriv_eq_profile](../../../../RealFunctions/ProfileTransport.lean/declarations/primitivecorrelationzero-second-deriv-eq-profile.md) | 84 | `result-track:ceef6b5a019c3565268598f163ed3db01de211f082a0923c1323a125728fc140` |
-| 10 | `theorem` | [sourcePeanoPrimitive_eq_profile](../../../../RealFunctions/ProfileTransport.lean/declarations/sourcepeanoprimitive-eq-profile.md) | 92 | `result-track:431c52c0211c75fbdd377bb144f6d0defd9d83b9a50345566fbe09037e6d4241` |
-| 11 | `theorem` | [sourcePeanoPrimitive_nonneg](../../../../RealFunctions/ProfileTransport.lean/declarations/sourcepeanoprimitive-nonneg.md) | 103 | `result-track:04ee6750591a70358562ab8cabdc56d05b7766cd9323b467f619ee349fd8f353` |
-| 12 | `theorem` | [sourcePeanoPrimitive_nonneg_iff](../../../../RealFunctions/ProfileTransport.lean/declarations/sourcepeanoprimitive-nonneg-iff.md) | 115 | `result-track:2952d929c1201774e6a6eb13460f71e3c1234bcf0d4f6632bec1fcf76aebda5f` |
+| 1 | `theorem` | [deriv_eq_on_closed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ProfileTransport.lean/declarations/deriv-eq-on-closed.md) | 14 | `result-track:8ad09d8b8bc4b299f3bafe77e8a441268f146d9b451fd306a2be9655d87e5e22` |
+| 2 | `def` | [scaledProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ProfileTransport.lean/declarations/scaledprofile.md) | 23 | `declaration-track:8569ab0ad7a0a9e315ffeb277fcb3047b1b1ca92bf410d45c0f4ae1ac1c18233` |
+| 3 | `theorem` | [scaledProfile_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ProfileTransport.lean/declarations/scaledprofile-hasderivat.md) | 25 | `result-track:ad224f65a543c632b8a877f8a29fc286c3655cd8d8646c3dc708a593ac28b444` |
+| 4 | `theorem` | [scaledProfile_deriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ProfileTransport.lean/declarations/scaledprofile-deriv.md) | 35 | `result-track:6d7c77acd764961e4d9e92b3953f72e47ec076664ae0dab1c58f8ae2f838829a` |
+| 5 | `theorem` | [scaledProfile_second_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ProfileTransport.lean/declarations/scaledprofile-second-hasderivat.md) | 39 | `result-track:5cc54e40848671d5b3d23b17b3e19cab2aa3bf4d652aec794ecc45d2730d1107` |
+| 6 | `theorem` | [primitiveCorrelationZero_deriv_eq_scaledProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ProfileTransport.lean/declarations/primitivecorrelationzero-deriv-eq-scaledprofile.md) | 54 | `result-track:81721edea6438ae31a1f1256fc996c6415bc3f4676647d2a8907511672771d88` |
+| 7 | `theorem` | [primitiveCorrelationZero_second_deriv_eq_scaledProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ProfileTransport.lean/declarations/primitivecorrelationzero-second-deriv-eq-scaledprofile.md) | 63 | `result-track:564d973098a3d1d0ced10f2aaa9029b37081e27087f5ea2ad3dce521e4a851be` |
+| 8 | `theorem` | [primitiveCorrelationZero_deriv_eq_profile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ProfileTransport.lean/declarations/primitivecorrelationzero-deriv-eq-profile.md) | 77 | `result-track:df851fdae60435d545ee933699b70ab8c70ba56f6e38be25e0adcff2b217c7ed` |
+| 9 | `theorem` | [primitiveCorrelationZero_second_deriv_eq_profile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ProfileTransport.lean/declarations/primitivecorrelationzero-second-deriv-eq-profile.md) | 84 | `result-track:ceef6b5a019c3565268598f163ed3db01de211f082a0923c1323a125728fc140` |
+| 10 | `theorem` | [sourcePeanoPrimitive_eq_profile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ProfileTransport.lean/declarations/sourcepeanoprimitive-eq-profile.md) | 92 | `result-track:431c52c0211c75fbdd377bb144f6d0defd9d83b9a50345566fbe09037e6d4241` |
+| 11 | `theorem` | [sourcePeanoPrimitive_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ProfileTransport.lean/declarations/sourcepeanoprimitive-nonneg.md) | 103 | `result-track:04ee6750591a70358562ab8cabdc56d05b7766cd9323b467f619ee349fd8f353` |
+| 12 | `theorem` | [sourcePeanoPrimitive_nonneg_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ProfileTransport.lean/declarations/sourcepeanoprimitive-nonneg-iff.md) | 115 | `result-track:2952d929c1201774e6a6eb13460f71e3c1234bcf0d4f6632bec1fcf76aebda5f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

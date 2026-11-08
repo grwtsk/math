@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../DynamicalSystemsAndErgodicTheory/Iteration.lean/index.md) · [Full source](../../../../DynamicalSystemsAndErgodicTheory/Iteration.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/Iteration.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/Iteration.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.DynamicalSystems.DifferenceEquations.DiscreteEvolution.LinearRecurrences.NaturalAffineBounds.Basic`](../../../../DynamicalSystemsAndErgodicTheory/Basic.lean/index.md) — import line 23; pinned internal source present.
+- [`GRWTSK.DynamicalSystems.DifferenceEquations.DiscreteEvolution.LinearRecurrences.NaturalAffineBounds.Basic`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/Basic.lean/index.md) — import line 23; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [certified_integral_traversal_obeys_affine_bound](../../../../DynamicalSystemsAndErgodicTheory/Iteration.lean/declarations/certified-integral-traversal-obeys-affine-bound.md) | 31 | `result-track:0ee46fffa1e2fd016448d5156593223e20b3c777f98c245e392df811862f2635` |
-| 2 | `theorem` | [exact_zero_gain_converges_after_one_step](../../../../DynamicalSystemsAndErgodicTheory/Iteration.lean/declarations/exact-zero-gain-converges-after-one-step.md) | 50 | `result-track:197f2525821f44cc3cb25cfa765a2b1634fb5da12940f0798f61c56077792aa0` |
+| 1 | `theorem` | [certified_integral_traversal_obeys_affine_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/Iteration.lean/declarations/certified-integral-traversal-obeys-affine-bound.md) | 31 | `result-track:0ee46fffa1e2fd016448d5156593223e20b3c777f98c245e392df811862f2635` |
+| 2 | `theorem` | [exact_zero_gain_converges_after_one_step](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/Iteration.lean/declarations/exact-zero-gain-converges-after-one-step.md) | 50 | `result-track:197f2525821f44cc3cb25cfa765a2b1634fb5da12940f0798f61c56077792aa0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

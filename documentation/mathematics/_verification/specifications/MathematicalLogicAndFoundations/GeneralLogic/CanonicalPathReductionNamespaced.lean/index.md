@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CanonicalPathReductionNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CanonicalPathReductionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CanonicalPathReductionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CanonicalPathReductionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RHCanonicalPathReduction](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CanonicalPathReductionNamespaced.lean/declarations/rhcanonicalpathreduction.md) | 25 | `declaration-track:e61638e3ea43cf7142314b98bc580ed92a584b49835cfc4a3f696307a8deffbf` |
-| 2 | `theorem` | [rh_pivot_atlas_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CanonicalPathReductionNamespaced.lean/declarations/rh-pivot-atlas-if-supplied.md) | 41 | `result-track:320362dc4dc3983366ce9b1057afad24901c23e22e033b470d64e863a10d514d` |
-| 3 | `theorem` | [rh_spectral_boundary_criterion_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CanonicalPathReductionNamespaced.lean/declarations/rh-spectral-boundary-criterion-if-supplied.md) | 46 | `result-track:6f8bbd792a52c10d7bb928c837d07cebaef606a62f4f55ff80fb00af5f82602c` |
+| 1 | `structure` | [RHCanonicalPathReduction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CanonicalPathReductionNamespaced.lean/declarations/rhcanonicalpathreduction.md) | 25 | `declaration-track:e61638e3ea43cf7142314b98bc580ed92a584b49835cfc4a3f696307a8deffbf` |
+| 2 | `theorem` | [rh_pivot_atlas_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CanonicalPathReductionNamespaced.lean/declarations/rh-pivot-atlas-if-supplied.md) | 41 | `result-track:320362dc4dc3983366ce9b1057afad24901c23e22e033b470d64e863a10d514d` |
+| 3 | `theorem` | [rh_spectral_boundary_criterion_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CanonicalPathReductionNamespaced.lean/declarations/rh-spectral-boundary-criterion-if-supplied.md) | 46 | `result-track:6f8bbd792a52c10d7bb928c837d07cebaef606a62f4f55ff80fb00af5f82602c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

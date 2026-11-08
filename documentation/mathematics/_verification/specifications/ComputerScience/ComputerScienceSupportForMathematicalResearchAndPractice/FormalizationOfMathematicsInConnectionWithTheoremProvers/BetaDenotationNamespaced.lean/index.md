@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BetaDenotationNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BetaDenotationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BetaDenotationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BetaDenotationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [conversionSetoid](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BetaDenotationNamespaced.lean/declarations/conversionsetoid.md) | 26 | `declaration-track:c2db2fcd6f87d73ec2e442beb8235f74a158ab361ca4e3794fd4f0be8b5ba2b6` |
-| 2 | `def` | [denotation](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BetaDenotationNamespaced.lean/declarations/denotation.md) | 33 | `declaration-track:b9f0a1699e8cb9b8dd8a308dbd9da1678d0d1074ff81d05997f522beb74039d1` |
-| 3 | `theorem` | [step_preserves_denotation](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BetaDenotationNamespaced.lean/declarations/step-preserves-denotation.md) | 37 | `result-track:6fe1148872300d3bc78a1578ed0b1c33209e649aeeccec1721d4d0e0331bdf31` |
-| 4 | `theorem` | [normalizeFuel_preserves_denotation](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BetaDenotationNamespaced.lean/declarations/normalizefuel-preserves-denotation.md) | 42 | `result-track:6e9c7e57b47a904c44b1392fdef8a46cc400de970e98d6842769f6b6f77497f6` |
+| 1 | `def` | [conversionSetoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BetaDenotationNamespaced.lean/declarations/conversionsetoid.md) | 26 | `declaration-track:c2db2fcd6f87d73ec2e442beb8235f74a158ab361ca4e3794fd4f0be8b5ba2b6` |
+| 2 | `def` | [denotation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BetaDenotationNamespaced.lean/declarations/denotation.md) | 33 | `declaration-track:b9f0a1699e8cb9b8dd8a308dbd9da1678d0d1074ff81d05997f522beb74039d1` |
+| 3 | `theorem` | [step_preserves_denotation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BetaDenotationNamespaced.lean/declarations/step-preserves-denotation.md) | 37 | `result-track:6fe1148872300d3bc78a1578ed0b1c33209e649aeeccec1721d4d0e0331bdf31` |
+| 4 | `theorem` | [normalizeFuel_preserves_denotation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BetaDenotationNamespaced.lean/declarations/normalizefuel-preserves-denotation.md) | 42 | `result-track:6e9c7e57b47a904c44b1392fdef8a46cc400de970e98d6842769f6b6f77497f6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

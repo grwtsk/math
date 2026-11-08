@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/EnumerativeCombinatorics/LatticeUnionNamespacedPublic.lean/index.md) · [Full source](../../../../../Combinatorics/EnumerativeCombinatorics/LatticeUnionNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/LatticeUnionNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/LatticeUnionNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sup_biUnion](../../../../../Combinatorics/EnumerativeCombinatorics/LatticeUnionNamespacedPublic.lean/declarations/sup-biunion-source-edition-2.md) | 43 | `result-track:ab23a4b51ee394574beb8bea18a2978d8051bb3e984d9960af6cf8433990c5c3` |
-| 2 | `theorem` | [inf_biUnion](../../../../../Combinatorics/EnumerativeCombinatorics/LatticeUnionNamespacedPublic.lean/declarations/inf-biunion.md) | 53 | `result-track:5ca270dc8454b3fb2a7ac0fac9c2661e0632df9ee68d6e5529c315954fd4ccb4` |
-| 3 | `theorem` | [sup'_biUnion](../../../../../Combinatorics/EnumerativeCombinatorics/LatticeUnionNamespacedPublic.lean/declarations/sup-biunion.md) | 65 | `result-track:33ccb79db52de8fdd939f578c06a33c17c8a2c8f6ef109c8f2449fc20a1bbc0e` |
-| 4 | `theorem` | [inf'_biUnion](../../../../../Combinatorics/EnumerativeCombinatorics/LatticeUnionNamespacedPublic.lean/declarations/inf-biunion-source-edition-2.md) | 78 | `result-track:a50126fc585087c13e02d4b426f11d1873e1fe0ccd856b3ead975301e044ac55` |
-| 5 | `theorem` | [sup_eq_biUnion](../../../../../Combinatorics/EnumerativeCombinatorics/LatticeUnionNamespacedPublic.lean/declarations/sup-eq-biunion.md) | 87 | `result-track:d3d84d3d62e578ce8c39ddc91bcc9d41326f06892c483d7ec40a6406ec6c01c1` |
+| 1 | `theorem` | [sup_biUnion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/LatticeUnionNamespacedPublic.lean/declarations/sup-biunion-source-edition-2.md) | 43 | `result-track:ab23a4b51ee394574beb8bea18a2978d8051bb3e984d9960af6cf8433990c5c3` |
+| 2 | `theorem` | [inf_biUnion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/LatticeUnionNamespacedPublic.lean/declarations/inf-biunion.md) | 53 | `result-track:5ca270dc8454b3fb2a7ac0fac9c2661e0632df9ee68d6e5529c315954fd4ccb4` |
+| 3 | `theorem` | [sup'_biUnion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/LatticeUnionNamespacedPublic.lean/declarations/sup-biunion.md) | 65 | `result-track:33ccb79db52de8fdd939f578c06a33c17c8a2c8f6ef109c8f2449fc20a1bbc0e` |
+| 4 | `theorem` | [inf'_biUnion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/LatticeUnionNamespacedPublic.lean/declarations/inf-biunion-source-edition-2.md) | 78 | `result-track:a50126fc585087c13e02d4b426f11d1873e1fe0ccd856b3ead975301e044ac55` |
+| 5 | `theorem` | [sup_eq_biUnion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/LatticeUnionNamespacedPublic.lean/declarations/sup-eq-biunion.md) | 87 | `result-track:d3d84d3d62e578ce8c39ddc91bcc9d41326f06892c483d7ec40a6406ec6c01c1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

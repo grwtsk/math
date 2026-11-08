@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixMvPolynomialNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixMvPolynomialNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixMvPolynomialNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixMvPolynomialNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mvPolynomialX](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixMvPolynomialNamespaced.lean/declarations/mvpolynomialx.md) | 38 | `declaration-track:7dad7427aa964555878783ef7b763add144aacf7fd04979acef8418c2b39ef10` |
-| 2 | `theorem` | [mvPolynomialX_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixMvPolynomialNamespaced.lean/declarations/mvpolynomialx-apply.md) | 43 | `result-track:98e9220f2dca134904c6f952b12a7b2b46e00aff848e7dd8d5ab09d20519151d` |
-| 3 | `theorem` | [mvPolynomialX_map_eval₂](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixMvPolynomialNamespaced.lean/declarations/mvpolynomialx-map-eval.md) | 54 | `result-track:7f001c7546fe95f8f9e6e76a5b1f30d516b6ef5de39cb2fecbca27a95f91c82e` |
-| 4 | `theorem` | [mvPolynomialX_mapMatrix_eval](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixMvPolynomialNamespaced.lean/declarations/mvpolynomialx-mapmatrix-eval.md) | 59 | `result-track:118ce36476938391549bf7938e8f9b3c98dccfcadd4225d47fbbfb042c9b5b55` |
-| 5 | `theorem` | [mvPolynomialX_mapMatrix_aeval](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixMvPolynomialNamespaced.lean/declarations/mvpolynomialx-mapmatrix-aeval.md) | 67 | `result-track:14223615602550382649b14eb28ab7d4140407fee0372317ba14b1667e3471de` |
-| 6 | `theorem` | [det_mvPolynomialX_ne_zero](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixMvPolynomialNamespaced.lean/declarations/det-mvpolynomialx-ne-zero.md) | 75 | `result-track:87bcb81dea3fbfa662b5d40598bb44af745202ff3472cb0d9a779fa40301db7b` |
+| 1 | `def` | [mvPolynomialX](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixMvPolynomialNamespaced.lean/declarations/mvpolynomialx.md) | 38 | `declaration-track:7dad7427aa964555878783ef7b763add144aacf7fd04979acef8418c2b39ef10` |
+| 2 | `theorem` | [mvPolynomialX_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixMvPolynomialNamespaced.lean/declarations/mvpolynomialx-apply.md) | 43 | `result-track:98e9220f2dca134904c6f952b12a7b2b46e00aff848e7dd8d5ab09d20519151d` |
+| 3 | `theorem` | [mvPolynomialX_map_eval₂](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixMvPolynomialNamespaced.lean/declarations/mvpolynomialx-map-eval.md) | 54 | `result-track:7f001c7546fe95f8f9e6e76a5b1f30d516b6ef5de39cb2fecbca27a95f91c82e` |
+| 4 | `theorem` | [mvPolynomialX_mapMatrix_eval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixMvPolynomialNamespaced.lean/declarations/mvpolynomialx-mapmatrix-eval.md) | 59 | `result-track:118ce36476938391549bf7938e8f9b3c98dccfcadd4225d47fbbfb042c9b5b55` |
+| 5 | `theorem` | [mvPolynomialX_mapMatrix_aeval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixMvPolynomialNamespaced.lean/declarations/mvpolynomialx-mapmatrix-aeval.md) | 67 | `result-track:14223615602550382649b14eb28ab7d4140407fee0372317ba14b1667e3471de` |
+| 6 | `theorem` | [det_mvPolynomialX_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixMvPolynomialNamespaced.lean/declarations/det-mvpolynomialx-ne-zero.md) | 75 | `result-track:87bcb81dea3fbfa662b5d40598bb44af745202ff3472cb0d9a779fa40301db7b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

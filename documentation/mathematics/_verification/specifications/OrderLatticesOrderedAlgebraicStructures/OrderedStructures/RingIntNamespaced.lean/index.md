@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingIntNamespaced.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingIntNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingIntNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingIntNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,12 +61,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [instZeroLEOneClass](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingIntNamespaced.lean/declarations/instzeroleoneclass.md) | 44 | `declaration-track:56346d697564e2e786e3f73bb879843c8d0183bb06119203213d263ecd615a0d` |
-| 2 | `instance` | [instIsStrictOrderedRing](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingIntNamespaced.lean/declarations/instisstrictorderedring.md) | 45 | `declaration-track:1203046f5f4039cf0982888c90f9a9c36a959ba37a6cfbd6bbf7f4d90945718d` |
-| 3 | `lemma` | [isCompl_even_odd](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingIntNamespaced.lean/declarations/iscompl-even-odd.md) | 49 | `result-track:5ab0be39ec8728c5db1dde8f9be25b4432beac9b9b2c2d87856bd53c9314e1cc` |
-| 4 | `lemma` | [Ring Int Namespaced](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingIntNamespaced.lean/declarations/cast-natabs.md) | 52 | `result-track:9a5802e36b2b37400054c78a204c4dd17f5c399610fc22272998d0db702e8692` |
-| 5 | `lemma` | [two_le_iff_pos_of_even](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingIntNamespaced.lean/declarations/two-le-iff-pos-of-even.md) | 55 | `result-track:db4765ef66875dcd69fa1b85fe2b1379ff28ae266363b8e9ba7ec68d8b2519fa` |
-| 6 | `lemma` | [add_two_le_iff_lt_of_even_sub](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingIntNamespaced.lean/declarations/add-two-le-iff-lt-of-even-sub.md) | 58 | `result-track:114d71a3a4e826a20b7ba49c6e2dcbd25d85b752d7ba5a11af55338c22dd98c2` |
+| 1 | `instance` | [instZeroLEOneClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingIntNamespaced.lean/declarations/instzeroleoneclass.md) | 44 | `declaration-track:56346d697564e2e786e3f73bb879843c8d0183bb06119203213d263ecd615a0d` |
+| 2 | `instance` | [instIsStrictOrderedRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingIntNamespaced.lean/declarations/instisstrictorderedring.md) | 45 | `declaration-track:1203046f5f4039cf0982888c90f9a9c36a959ba37a6cfbd6bbf7f4d90945718d` |
+| 3 | `lemma` | [isCompl_even_odd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingIntNamespaced.lean/declarations/iscompl-even-odd.md) | 49 | `result-track:5ab0be39ec8728c5db1dde8f9be25b4432beac9b9b2c2d87856bd53c9314e1cc` |
+| 4 | `lemma` | [Ring Int Namespaced](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingIntNamespaced.lean/declarations/cast-natabs.md) | 52 | `result-track:9a5802e36b2b37400054c78a204c4dd17f5c399610fc22272998d0db702e8692` |
+| 5 | `lemma` | [two_le_iff_pos_of_even](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingIntNamespaced.lean/declarations/two-le-iff-pos-of-even.md) | 55 | `result-track:db4765ef66875dcd69fa1b85fe2b1379ff28ae266363b8e9ba7ec68d8b2519fa` |
+| 6 | `lemma` | [add_two_le_iff_lt_of_even_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingIntNamespaced.lean/declarations/add-two-le-iff-lt-of-even-sub.md) | 58 | `result-track:114d71a3a4e826a20b7ba49c6e2dcbd25d85b752d7ba5a11af55338c22dd98c2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

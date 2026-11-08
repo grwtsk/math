@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SingleCoordinateUpdateAndEquations.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SingleCoordinateUpdateAndEquations.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SingleCoordinateUpdateAndEquations.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SingleCoordinateUpdateAndEquations.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [set](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SingleCoordinateUpdateAndEquations.lean/declarations/set.md) | 29 | `declaration-track:38356032a3809ebfabaf7c95b91da9577c0e907ee2325e39ddc86bb5c0d0b123` |
-| 2 | `theorem` | [set_target](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SingleCoordinateUpdateAndEquations.lean/declarations/set-target.md) | 41 | `result-track:cc620f90159a9bfe33180b2418e25670202c42fef3ccf1b86acf77a5debccee0` |
-| 3 | `theorem` | [set_other](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SingleCoordinateUpdateAndEquations.lean/declarations/set-other.md) | 48 | `result-track:75eefae35ce4d49769684e6cb554b8457217ea101744ce71578dcf4fa2c0563b` |
+| 1 | `def` | [set](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SingleCoordinateUpdateAndEquations.lean/declarations/set.md) | 29 | `declaration-track:38356032a3809ebfabaf7c95b91da9577c0e907ee2325e39ddc86bb5c0d0b123` |
+| 2 | `theorem` | [set_target](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SingleCoordinateUpdateAndEquations.lean/declarations/set-target.md) | 41 | `result-track:cc620f90159a9bfe33180b2418e25670202c42fef3ccf1b86acf77a5debccee0` |
+| 3 | `theorem` | [set_other](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SingleCoordinateUpdateAndEquations.lean/declarations/set-other.md) | 48 | `result-track:75eefae35ce4d49769684e6cb554b8457217ea101744ce71578dcf4fa2c0563b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

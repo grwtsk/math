@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SheafNamespaced.lean/index.md) · [Full source](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SheafNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SheafNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SheafNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [Modules](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SheafNamespaced.lean/declarations/modules.md) | 35 | `declaration-track:21f50b73f3f4b222e0111d656f5c37758d64161d1fe1266c6aa65c0612cff494` |
-| 2 | `instance` | [(anonymous)](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SheafNamespaced.lean/declarations/instance.md) | 38 | `declaration-track:c04c898aa5277efd8440f3d110034547af373138db7da2218d02297b631f891c` |
+| 1 | `abbrev` | [Modules](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SheafNamespaced.lean/declarations/modules.md) | 35 | `declaration-track:21f50b73f3f4b222e0111d656f5c37758d64161d1fe1266c6aa65c0612cff494` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SheafNamespaced.lean/declarations/instance.md) | 38 | `declaration-track:c04c898aa5277efd8440f3d110034547af373138db7da2218d02297b631f891c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

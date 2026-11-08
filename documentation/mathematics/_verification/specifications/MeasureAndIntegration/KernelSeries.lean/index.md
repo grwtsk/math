@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/KernelSeries.lean/index.md) · [Full source](../../../../MeasureAndIntegration/KernelSeries.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/KernelSeries.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/KernelSeries.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [nonnegative_kernel_series_integrable](../../../../MeasureAndIntegration/KernelSeries.lean/declarations/nonnegative-kernel-series-integrable.md) | 15 | `result-track:199e7e105d83b5278bfe8226fd70af265f6f9d6fe6a304a64908337e571c68fa` |
-| 2 | `theorem` | [nonnegative_kernel_series_integral](../../../../MeasureAndIntegration/KernelSeries.lean/declarations/nonnegative-kernel-series-integral.md) | 39 | `result-track:2baa12bc4cb4efec50d81f8cdf2d0c619a0dd2064992f7f7b83bb3128edfe7d2` |
+| 1 | `theorem` | [nonnegative_kernel_series_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/KernelSeries.lean/declarations/nonnegative-kernel-series-integrable.md) | 15 | `result-track:199e7e105d83b5278bfe8226fd70af265f6f9d6fe6a304a64908337e571c68fa` |
+| 2 | `theorem` | [nonnegative_kernel_series_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/KernelSeries.lean/declarations/nonnegative-kernel-series-integral.md) | 39 | `result-track:2baa12bc4cb4efec50d81f8cdf2d0c619a0dd2064992f7f7b83bb3128edfe7d2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

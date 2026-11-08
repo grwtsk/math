@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/Continuous.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/Continuous.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/Continuous.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/Continuous.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [Lp.instContinuousSMulDomMulAct](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/Continuous.lean/declarations/lp-instcontinuoussmuldommulact.md) | 49 | `declaration-track:58c907a6ef01a66bd49136116293dc963a9c1002ea0aa81c9e347ea0809432a5` |
+| 1 | `instance` | [Lp.instContinuousSMulDomMulAct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/Continuous.lean/declarations/lp-instcontinuoussmuldommulact.md) | 49 | `declaration-track:58c907a6ef01a66bd49136116293dc963a9c1002ea0aa81c9e347ea0809432a5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

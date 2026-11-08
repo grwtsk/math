@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ProposalValidation.lean/index.md) · [Full source](../../../../Combinatorics/ProposalValidation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ProposalValidation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ProposalValidation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [ProposalRejectionReason](../../../../Combinatorics/ProposalValidation.lean/declarations/proposalrejectionreason.md) | 15 | `declaration-track:5378df68ea69dbe86425167bd453b2c054fadfe7e65777ba603a1280b320c3b4` |
-| 2 | `inductive` | [ProposalValidationDecision](../../../../Combinatorics/ProposalValidation.lean/declarations/proposalvalidationdecision.md) | 26 | `declaration-track:5962593741e11ffffb58f8b68c48a96b8202a54777f564088b7e4eddc26212b3` |
-| 3 | `structure` | [ValidatedNeuralProposal](../../../../Combinatorics/ProposalValidation.lean/declarations/validatedneuralproposal.md) | 32 | `declaration-track:18613ca03d115f7326a8a69789125d415a1374328d20dafca4d3cb181ad24a38` |
-| 4 | `theorem` | [ValidatedNeuralProposal.authority_remains_external](../../../../Combinatorics/ProposalValidation.lean/declarations/validatedneuralproposal-authority-remains-external.md) | 42 | `result-track:ffd4eb3c45477518d771e40d5ad3548b09b6c956cb47b80b3e4b4ca773397115` |
-| 5 | `def` | [preserveOnRejectedProposal](../../../../Combinatorics/ProposalValidation.lean/declarations/preserveonrejectedproposal.md) | 48 | `declaration-track:0c6480307bbb93f87b0a1e86740e220727e93c01b6b6d5d11843a54808918ce1` |
-| 6 | `theorem` | [rejected_proposal_preserves_certified_state](../../../../Combinatorics/ProposalValidation.lean/declarations/rejected-proposal-preserves-certified-state.md) | 58 | `result-track:6211f8e62db190786c895fe4162f3eac5ef1f6cd9c1258685c990b646df8f3b4` |
-| 7 | `def` | [projectCouplingProposal](../../../../Combinatorics/ProposalValidation.lean/declarations/projectcouplingproposal.md) | 68 | `declaration-track:1e996546a852be5a635dadcfbb0904fb6dbd83190b8b9d709bd202118809df0f` |
-| 8 | `theorem` | [projected_neural_weights_are_admissible](../../../../Combinatorics/ProposalValidation.lean/declarations/projected-neural-weights-are-admissible.md) | 77 | `result-track:fc1a51e8a278cdfb887713b4e35dcd8ce1769c2e3616c662f9d26ee922175ed9` |
-| 9 | `theorem` | [neural_confidence_is_not_proof_authority](../../../../Combinatorics/ProposalValidation.lean/declarations/neural-confidence-is-not-proof-authority.md) | 90 | `result-track:40480ea92bb4ddd763c0cb5f99974bfdd0fd216a829f41224204abe037a2d3a4` |
+| 1 | `inductive` | [ProposalRejectionReason](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ProposalValidation.lean/declarations/proposalrejectionreason.md) | 15 | `declaration-track:5378df68ea69dbe86425167bd453b2c054fadfe7e65777ba603a1280b320c3b4` |
+| 2 | `inductive` | [ProposalValidationDecision](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ProposalValidation.lean/declarations/proposalvalidationdecision.md) | 26 | `declaration-track:5962593741e11ffffb58f8b68c48a96b8202a54777f564088b7e4eddc26212b3` |
+| 3 | `structure` | [ValidatedNeuralProposal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ProposalValidation.lean/declarations/validatedneuralproposal.md) | 32 | `declaration-track:18613ca03d115f7326a8a69789125d415a1374328d20dafca4d3cb181ad24a38` |
+| 4 | `theorem` | [ValidatedNeuralProposal.authority_remains_external](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ProposalValidation.lean/declarations/validatedneuralproposal-authority-remains-external.md) | 42 | `result-track:ffd4eb3c45477518d771e40d5ad3548b09b6c956cb47b80b3e4b4ca773397115` |
+| 5 | `def` | [preserveOnRejectedProposal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ProposalValidation.lean/declarations/preserveonrejectedproposal.md) | 48 | `declaration-track:0c6480307bbb93f87b0a1e86740e220727e93c01b6b6d5d11843a54808918ce1` |
+| 6 | `theorem` | [rejected_proposal_preserves_certified_state](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ProposalValidation.lean/declarations/rejected-proposal-preserves-certified-state.md) | 58 | `result-track:6211f8e62db190786c895fe4162f3eac5ef1f6cd9c1258685c990b646df8f3b4` |
+| 7 | `def` | [projectCouplingProposal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ProposalValidation.lean/declarations/projectcouplingproposal.md) | 68 | `declaration-track:1e996546a852be5a635dadcfbb0904fb6dbd83190b8b9d709bd202118809df0f` |
+| 8 | `theorem` | [projected_neural_weights_are_admissible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ProposalValidation.lean/declarations/projected-neural-weights-are-admissible.md) | 77 | `result-track:fc1a51e8a278cdfb887713b4e35dcd8ce1769c2e3616c662f9d26ee922175ed9` |
+| 9 | `theorem` | [neural_confidence_is_not_proof_authority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ProposalValidation.lean/declarations/neural-confidence-is-not-proof-authority.md) | 90 | `result-track:40480ea92bb4ddd763c0cb5f99974bfdd0fd216a829f41224204abe037a2d3a4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

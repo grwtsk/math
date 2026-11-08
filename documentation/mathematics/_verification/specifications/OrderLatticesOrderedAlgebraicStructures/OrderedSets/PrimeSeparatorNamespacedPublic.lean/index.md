@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/PrimeSeparatorNamespacedPublic.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/PrimeSeparatorNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/PrimeSeparatorNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/PrimeSeparatorNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [Lattice.mem_ideal_sup_principal](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/PrimeSeparatorNamespacedPublic.lean/declarations/lattice-mem-ideal-sup-principal.md) | 45 | `result-track:e3e4880bd3d9df4ab7e6876a92d07e368e724aa0c330481b022c99a8b86680f8` |
-| 2 | `theorem` | [DistribLattice.prime_ideal_of_disjoint_filter_ideal](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/PrimeSeparatorNamespacedPublic.lean/declarations/distriblattice-prime-ideal-of-disjoint-filter-ideal.md) | 53 | `result-track:1d5a20b8f7c369d8e7694fcaddf07dba955f317b87dcf9a777102cb4a8f66445` |
+| 1 | `lemma` | [Lattice.mem_ideal_sup_principal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/PrimeSeparatorNamespacedPublic.lean/declarations/lattice-mem-ideal-sup-principal.md) | 45 | `result-track:e3e4880bd3d9df4ab7e6876a92d07e368e724aa0c330481b022c99a8b86680f8` |
+| 2 | `theorem` | [DistribLattice.prime_ideal_of_disjoint_filter_ideal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/PrimeSeparatorNamespacedPublic.lean/declarations/distriblattice-prime-ideal-of-disjoint-filter-ideal.md) | 53 | `result-track:1d5a20b8f7c369d8e7694fcaddf07dba955f317b87dcf9a777102cb4a8f66445` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

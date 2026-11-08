@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/TraceCorrespondenceNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/TraceCorrespondenceNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TraceCorrespondenceNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TraceCorrespondenceNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TraceFunctionals](../../../../Combinatorics/TraceCorrespondenceNamespaced.lean/declarations/tracefunctionals.md) | 22 | `declaration-track:4052aa1b86ce5dfdc33d553ccfb8580940ffcfd1716e2c11a96d56a5434b50c6` |
-| 2 | `def` | [TraceFunctionals.exactEquation](../../../../Combinatorics/TraceCorrespondenceNamespaced.lean/declarations/tracefunctionals-exactequation.md) | 30 | `declaration-track:a3881b9b71ad6590fdd0db8fd72cdc201047229f0a82bd492de7b0721044194e` |
-| 3 | `structure` | [CertifiedArithmeticTraceIdentity](../../../../Combinatorics/TraceCorrespondenceNamespaced.lean/declarations/certifiedarithmetictraceidentity.md) | 40 | `declaration-track:477649d4f5ad06cf543d4e0fcd009c6aff5058118bf64b9f5635ab30465bf264` |
-| 4 | `inductive` | [ArithmeticTraceCorrespondence](../../../../Combinatorics/TraceCorrespondenceNamespaced.lean/declarations/arithmetictracecorrespondence.md) | 47 | `declaration-track:8a166a53354e720633b0e6d90d56a0408304c629e65bcd96af999685dc6549a8` |
-| 5 | `def` | [ArithmeticTraceCorrespondence.status](../../../../Combinatorics/TraceCorrespondenceNamespaced.lean/declarations/arithmetictracecorrespondence-status.md) | 76 | `declaration-track:437747657daf92c93240e28b881f409e94961a72611402696631db39fdbffbcb` |
-| 6 | `theorem` | [CertifiedArithmeticTraceIdentity.sound](../../../../Combinatorics/TraceCorrespondenceNamespaced.lean/declarations/certifiedarithmetictraceidentity-sound.md) | 85 | `result-track:ade7bca15a24f7ef31114b607e0d6e62c94598ec99d46b6316f3f79b9dfddcf3` |
+| 1 | `structure` | [TraceFunctionals](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TraceCorrespondenceNamespaced.lean/declarations/tracefunctionals.md) | 22 | `declaration-track:4052aa1b86ce5dfdc33d553ccfb8580940ffcfd1716e2c11a96d56a5434b50c6` |
+| 2 | `def` | [TraceFunctionals.exactEquation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TraceCorrespondenceNamespaced.lean/declarations/tracefunctionals-exactequation.md) | 30 | `declaration-track:a3881b9b71ad6590fdd0db8fd72cdc201047229f0a82bd492de7b0721044194e` |
+| 3 | `structure` | [CertifiedArithmeticTraceIdentity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TraceCorrespondenceNamespaced.lean/declarations/certifiedarithmetictraceidentity.md) | 40 | `declaration-track:477649d4f5ad06cf543d4e0fcd009c6aff5058118bf64b9f5635ab30465bf264` |
+| 4 | `inductive` | [ArithmeticTraceCorrespondence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TraceCorrespondenceNamespaced.lean/declarations/arithmetictracecorrespondence.md) | 47 | `declaration-track:8a166a53354e720633b0e6d90d56a0408304c629e65bcd96af999685dc6549a8` |
+| 5 | `def` | [ArithmeticTraceCorrespondence.status](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TraceCorrespondenceNamespaced.lean/declarations/arithmetictracecorrespondence-status.md) | 76 | `declaration-track:437747657daf92c93240e28b881f409e94961a72611402696631db39fdbffbcb` |
+| 6 | `theorem` | [CertifiedArithmeticTraceIdentity.sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TraceCorrespondenceNamespaced.lean/declarations/certifiedarithmetictraceidentity-sound.md) | 85 | `result-track:ade7bca15a24f7ef31114b607e0d6e62c94598ec99d46b6316f3f79b9dfddcf3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

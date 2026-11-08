@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExactReducerKernelAndConditionalEquivalence.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExactReducerKernelAndConditionalEquivalence.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExactReducerKernelAndConditionalEquivalence.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExactReducerKernelAndConditionalEquivalence.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `DAF.Causal.CausalState` — import line 21; external provider; requires a separately pinned dependency.
-- [Whole Observer Reducer And Canonical Factor](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeObserverReducerAndCanonicalFactor.lean/index.md) — import line 22; pinned internal source present.
+- [Whole Observer Reducer And Canonical Factor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeObserverReducerAndCanonicalFactor.lean/index.md) — import line 22; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Exact](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExactReducerKernelAndConditionalEquivalence.lean/declarations/exact.md) | 61 | `declaration-track:be5d19a2246903a941f5d1d533abe51ad0e948af0173228ba69cb808c97f57ce` |
-| 2 | `theorem` | [toCanonicalLocal_injective_of_exact](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExactReducerKernelAndConditionalEquivalence.lean/declarations/tocanonicallocal-injective-of-exact.md) | 68 | `result-track:e12deb8854d484234442a836702c3c1ac73726d98e43f3129d81979254eb8277` |
-| 3 | `def` | [equivCanonicalLocal](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExactReducerKernelAndConditionalEquivalence.lean/declarations/equivcanonicallocal.md) | 80 | `declaration-track:7e273bc461ace0110324b01b5f5f26746dd46e4bff09e412fc40de5f88cebd0b` |
+| 1 | `def` | [Exact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExactReducerKernelAndConditionalEquivalence.lean/declarations/exact.md) | 61 | `declaration-track:be5d19a2246903a941f5d1d533abe51ad0e948af0173228ba69cb808c97f57ce` |
+| 2 | `theorem` | [toCanonicalLocal_injective_of_exact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExactReducerKernelAndConditionalEquivalence.lean/declarations/tocanonicallocal-injective-of-exact.md) | 68 | `result-track:e12deb8854d484234442a836702c3c1ac73726d98e43f3129d81979254eb8277` |
+| 3 | `def` | [equivCanonicalLocal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExactReducerKernelAndConditionalEquivalence.lean/declarations/equivcanonicallocal.md) | 80 | `declaration-track:7e273bc461ace0110324b01b5f5f26746dd46e4bff09e412fc40de5f88cebd0b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

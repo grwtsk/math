@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/EnumerativeCombinatorics/FintypePi.lean/index.md) · [Full source](../../../../../Combinatorics/EnumerativeCombinatorics/FintypePi.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypePi.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypePi.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,18 +58,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [piFinset](../../../../../Combinatorics/EnumerativeCombinatorics/FintypePi.lean/declarations/pifinset.md) | 28 | `declaration-track:a99cd515d28ebfaae49a83c83dcf083448b83dbe252f054b3c751b6e51afce9c` |
-| 2 | `theorem` | [mem_piFinset](../../../../../Combinatorics/EnumerativeCombinatorics/FintypePi.lean/declarations/mem-pifinset.md) | 34 | `result-track:2f72152d49d82d2d093da798c7a7c1b1436e6efd7f66098f4e8645bb80991ba3` |
-| 3 | `theorem` | [coe_piFinset](../../../../../Combinatorics/EnumerativeCombinatorics/FintypePi.lean/declarations/coe-pifinset.md) | 46 | `result-track:c49a9e9be825252bde3e70940e5c5a7df1124a75de5f1b927cc911ab13196b66` |
-| 4 | `theorem` | [piFinset_subset](../../../../../Combinatorics/EnumerativeCombinatorics/FintypePi.lean/declarations/pifinset-subset.md) | 53 | `result-track:d22022d5fa903c6aaf494b1b5d77623e2bde0a7b8707f661a67ce80851690142` |
-| 5 | `theorem` | [piFinset_empty](../../../../../Combinatorics/EnumerativeCombinatorics/FintypePi.lean/declarations/pifinset-empty.md) | 58 | `result-track:34c7096b9da4d3e93bfa438dafc63dd1235316675ad05fd7c60d1ca24342cad0` |
-| 6 | `theorem` | [piFinset_singleton](../../../../../Combinatorics/EnumerativeCombinatorics/FintypePi.lean/declarations/pifinset-singleton.md) | 63 | `result-track:6bbc3e12d580e5e84fd3ee65b87b6ebf72099e1cf7669a24e1f7e45abeb47300` |
-| 7 | `theorem` | [piFinset_subsingleton](../../../../../Combinatorics/EnumerativeCombinatorics/FintypePi.lean/declarations/pifinset-subsingleton.md) | 67 | `result-track:79a4304aefd0302516b7f939db2f2ddc20adf43fcd65690416e1171d849d55b4` |
-| 8 | `theorem` | [piFinset_disjoint_of_disjoint](../../../../../Combinatorics/EnumerativeCombinatorics/FintypePi.lean/declarations/pifinset-disjoint-of-disjoint.md) | 72 | `result-track:b85537751df9ad00449eab2288e817dacba9af1213107fb02ce110887b6d70eb` |
-| 9 | `instance` | [Pi.fintype](../../../../../Combinatorics/EnumerativeCombinatorics/FintypePi.lean/declarations/pi-fintype.md) | 84 | `declaration-track:d567ac84ab40d8a47914161da5ed02091aa1410cd80442342653e429504fd827` |
-| 10 | `theorem` | [Fintype.piFinset_univ](../../../../../Combinatorics/EnumerativeCombinatorics/FintypePi.lean/declarations/fintype-pifinset-univ.md) | 90 | `result-track:dce5d3551ad355dfa1938983b8edbbc02e26644273ba6110390cee7d0121b421` |
-| 11 | `instance` | [_root_.Function.Embedding.fintype](../../../../../Combinatorics/EnumerativeCombinatorics/FintypePi.lean/declarations/root-function-embedding-fintype.md) | 101 | `declaration-track:e22a27dbe0a4555a3cd4b85d3dbd2d00676776b971d8185d8c33e300c3f78d00` |
-| 12 | `theorem` | [Finset.univ_pi_univ](../../../../../Combinatorics/EnumerativeCombinatorics/FintypePi.lean/declarations/finset-univ-pi-univ.md) | 107 | `result-track:28f442572feeb7eb38021b832f09e17aca6c0b94bd78d5781315d997c192e829` |
+| 1 | `def` | [piFinset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypePi.lean/declarations/pifinset.md) | 28 | `declaration-track:a99cd515d28ebfaae49a83c83dcf083448b83dbe252f054b3c751b6e51afce9c` |
+| 2 | `theorem` | [mem_piFinset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypePi.lean/declarations/mem-pifinset.md) | 34 | `result-track:2f72152d49d82d2d093da798c7a7c1b1436e6efd7f66098f4e8645bb80991ba3` |
+| 3 | `theorem` | [coe_piFinset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypePi.lean/declarations/coe-pifinset.md) | 46 | `result-track:c49a9e9be825252bde3e70940e5c5a7df1124a75de5f1b927cc911ab13196b66` |
+| 4 | `theorem` | [piFinset_subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypePi.lean/declarations/pifinset-subset.md) | 53 | `result-track:d22022d5fa903c6aaf494b1b5d77623e2bde0a7b8707f661a67ce80851690142` |
+| 5 | `theorem` | [piFinset_empty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypePi.lean/declarations/pifinset-empty.md) | 58 | `result-track:34c7096b9da4d3e93bfa438dafc63dd1235316675ad05fd7c60d1ca24342cad0` |
+| 6 | `theorem` | [piFinset_singleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypePi.lean/declarations/pifinset-singleton.md) | 63 | `result-track:6bbc3e12d580e5e84fd3ee65b87b6ebf72099e1cf7669a24e1f7e45abeb47300` |
+| 7 | `theorem` | [piFinset_subsingleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypePi.lean/declarations/pifinset-subsingleton.md) | 67 | `result-track:79a4304aefd0302516b7f939db2f2ddc20adf43fcd65690416e1171d849d55b4` |
+| 8 | `theorem` | [piFinset_disjoint_of_disjoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypePi.lean/declarations/pifinset-disjoint-of-disjoint.md) | 72 | `result-track:b85537751df9ad00449eab2288e817dacba9af1213107fb02ce110887b6d70eb` |
+| 9 | `instance` | [Pi.fintype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypePi.lean/declarations/pi-fintype.md) | 84 | `declaration-track:d567ac84ab40d8a47914161da5ed02091aa1410cd80442342653e429504fd827` |
+| 10 | `theorem` | [Fintype.piFinset_univ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypePi.lean/declarations/fintype-pifinset-univ.md) | 90 | `result-track:dce5d3551ad355dfa1938983b8edbbc02e26644273ba6110390cee7d0121b421` |
+| 11 | `instance` | [_root_.Function.Embedding.fintype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypePi.lean/declarations/root-function-embedding-fintype.md) | 101 | `declaration-track:e22a27dbe0a4555a3cd4b85d3dbd2d00676776b971d8185d8c33e300c3f78d00` |
+| 12 | `theorem` | [Finset.univ_pi_univ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypePi.lean/declarations/finset-univ-pi-univ.md) | 107 | `result-track:28f442572feeb7eb38021b832f09e17aca6c0b94bd78d5781315d997c192e829` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

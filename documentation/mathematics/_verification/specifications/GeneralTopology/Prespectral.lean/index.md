@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/Prespectral.lean/index.md) · [Full source](../../../../GeneralTopology/Prespectral.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Prespectral.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Prespectral.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,16 +60,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [PrespectralSpace](../../../../GeneralTopology/Prespectral.lean/declarations/prespectralspace.md) | 25 | `declaration-track:695248b4323283c7a0509b473277bb30de82bbc3a313ecac28e53da611a12ad7` |
-| 2 | `lemma` | [PrespectralSpace.of_isTopologicalBasis](../../../../GeneralTopology/Prespectral.lean/declarations/prespectralspace-of-istopologicalbasis.md) | 29 | `result-track:866d0f1e61d9745db288794f630b617db616fe956feb058662e9380d175ff4f6` |
-| 3 | `lemma` | [PrespectralSpace.of_isTopologicalBasis'](../../../../GeneralTopology/Prespectral.lean/declarations/prespectralspace-of-istopologicalbasis-source-edition-2.md) | 37 | `result-track:d4c263c8895e711372777a807d060bc79c63592de4ba4f7776ccde79d31d3b8e` |
-| 4 | `instance` | [(anonymous)](../../../../GeneralTopology/Prespectral.lean/declarations/instance-source-edition-3.md) | 42 | `declaration-track:8e723b73a9aa1684a398fe77244cc9a45c85262c51efef83963d14aefdca29da` |
-| 5 | `instance` | [(anonymous)](../../../../GeneralTopology/Prespectral.lean/declarations/instance-source-edition-2.md) | 45 | `declaration-track:63ded6d5798e41c2c9339613b56b6c510a08e52c803de4f34f819d3f492c573a` |
-| 6 | `instance` | [(anonymous)](../../../../GeneralTopology/Prespectral.lean/declarations/instance.md) | 51 | `declaration-track:23cccfcaf6bf3f9f8f322a1bafc167f564f5aaa0e8430e8aec8fd834fa747b0e` |
-| 7 | `lemma` | [PrespectralSpace.of_isOpenCover](../../../../GeneralTopology/Prespectral.lean/declarations/prespectralspace-of-isopencover.md) | 57 | `result-track:2bb4e3cc6c7ec91d74d03865ff5be8a66fb49e2f570555fb6afff66715471980` |
-| 8 | `lemma` | [PrespectralSpace.of_isInducing](../../../../GeneralTopology/Prespectral.lean/declarations/prespectralspace-of-isinducing.md) | 65 | `result-track:136612d3be7cd0b600f7ad9cedb37996aa0cdb5fc0194c6633f8cd0aebcace96` |
-| 9 | `lemma` | [PrespectralSpace.of_isClosedEmbedding](../../../../GeneralTopology/Prespectral.lean/declarations/prespectralspace-of-isclosedembedding.md) | 72 | `result-track:d28445d76e624ce2e45948f2caa9c2ebc4d265f21b5354cbeb98275e453bdb2d` |
-| 10 | `def` | [PrespectralSpace.opensEquiv](../../../../GeneralTopology/Prespectral.lean/declarations/prespectralspace-opensequiv.md) | 77 | `declaration-track:11816c13a2f0f72d6bc781d2ca2fe13efe116dcb0213f41cfc7339451e80fd2c` |
+| 1 | `class` | [PrespectralSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Prespectral.lean/declarations/prespectralspace.md) | 25 | `declaration-track:695248b4323283c7a0509b473277bb30de82bbc3a313ecac28e53da611a12ad7` |
+| 2 | `lemma` | [PrespectralSpace.of_isTopologicalBasis](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Prespectral.lean/declarations/prespectralspace-of-istopologicalbasis.md) | 29 | `result-track:866d0f1e61d9745db288794f630b617db616fe956feb058662e9380d175ff4f6` |
+| 3 | `lemma` | [PrespectralSpace.of_isTopologicalBasis'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Prespectral.lean/declarations/prespectralspace-of-istopologicalbasis-source-edition-2.md) | 37 | `result-track:d4c263c8895e711372777a807d060bc79c63592de4ba4f7776ccde79d31d3b8e` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Prespectral.lean/declarations/instance-source-edition-3.md) | 42 | `declaration-track:8e723b73a9aa1684a398fe77244cc9a45c85262c51efef83963d14aefdca29da` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Prespectral.lean/declarations/instance-source-edition-2.md) | 45 | `declaration-track:63ded6d5798e41c2c9339613b56b6c510a08e52c803de4f34f819d3f492c573a` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Prespectral.lean/declarations/instance.md) | 51 | `declaration-track:23cccfcaf6bf3f9f8f322a1bafc167f564f5aaa0e8430e8aec8fd834fa747b0e` |
+| 7 | `lemma` | [PrespectralSpace.of_isOpenCover](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Prespectral.lean/declarations/prespectralspace-of-isopencover.md) | 57 | `result-track:2bb4e3cc6c7ec91d74d03865ff5be8a66fb49e2f570555fb6afff66715471980` |
+| 8 | `lemma` | [PrespectralSpace.of_isInducing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Prespectral.lean/declarations/prespectralspace-of-isinducing.md) | 65 | `result-track:136612d3be7cd0b600f7ad9cedb37996aa0cdb5fc0194c6633f8cd0aebcace96` |
+| 9 | `lemma` | [PrespectralSpace.of_isClosedEmbedding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Prespectral.lean/declarations/prespectralspace-of-isclosedembedding.md) | 72 | `result-track:d28445d76e624ce2e45948f2caa9c2ebc4d265f21b5354cbeb98275e453bdb2d` |
+| 10 | `def` | [PrespectralSpace.opensEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Prespectral.lean/declarations/prespectralspace-opensequiv.md) | 77 | `declaration-track:11816c13a2f0f72d6bc781d2ca2fe13efe116dcb0213f41cfc7339451e80fd2c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

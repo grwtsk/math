@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/DensityTheoremNamespaced.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/DensityTheoremNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/DensityTheoremNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/DensityTheoremNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [closedBall_mem_vitaliFamily_of_dist_le_mul](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/DensityTheoremNamespaced.lean/declarations/closedball-mem-vitalifamily-of-dist-le-mul.md) | 76 | `result-track:60199efc96d19022cd0e835c24f60e775c1bfeeef125ef215dcbe6acffddad01` |
-| 2 | `theorem` | [tendsto_closedBall_filterAt](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/DensityTheoremNamespaced.lean/declarations/tendsto-closedball-filterat.md) | 116 | `result-track:7bb09f3218e645cadb1ed6e4a75aa328365423fdff5c15fc1e8ae7a63a068f68` |
-| 3 | `theorem` | [ae_tendsto_measure_inter_div](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/DensityTheoremNamespaced.lean/declarations/ae-tendsto-measure-inter-div.md) | 149 | `result-track:2ad8348e88294d29c36687aa204b28d81f50bd089107d358723288ba2efaa9f3` |
-| 4 | `theorem` | [ae_tendsto_average_norm_sub](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/DensityTheoremNamespaced.lean/declarations/ae-tendsto-average-norm-sub.md) | 158 | `result-track:17261cdc209ec0e6905d842f2cdfdeeac7357549f303b39269a73ef9671c95ae` |
-| 5 | `theorem` | [ae_tendsto_average](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/DensityTheoremNamespaced.lean/declarations/ae-tendsto-average.md) | 167 | `result-track:c3d3f949a3a38bb869948b1d0e38ed5ccdff7a497a0c4e09b19726335ed67fa5` |
+| 1 | `theorem` | [closedBall_mem_vitaliFamily_of_dist_le_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/DensityTheoremNamespaced.lean/declarations/closedball-mem-vitalifamily-of-dist-le-mul.md) | 76 | `result-track:60199efc96d19022cd0e835c24f60e775c1bfeeef125ef215dcbe6acffddad01` |
+| 2 | `theorem` | [tendsto_closedBall_filterAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/DensityTheoremNamespaced.lean/declarations/tendsto-closedball-filterat.md) | 116 | `result-track:7bb09f3218e645cadb1ed6e4a75aa328365423fdff5c15fc1e8ae7a63a068f68` |
+| 3 | `theorem` | [ae_tendsto_measure_inter_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/DensityTheoremNamespaced.lean/declarations/ae-tendsto-measure-inter-div.md) | 149 | `result-track:2ad8348e88294d29c36687aa204b28d81f50bd089107d358723288ba2efaa9f3` |
+| 4 | `theorem` | [ae_tendsto_average_norm_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/DensityTheoremNamespaced.lean/declarations/ae-tendsto-average-norm-sub.md) | 158 | `result-track:17261cdc209ec0e6905d842f2cdfdeeac7357549f303b39269a73ef9671c95ae` |
+| 5 | `theorem` | [ae_tendsto_average](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/DensityTheoremNamespaced.lean/declarations/ae-tendsto-average.md) | 167 | `result-track:c3d3f949a3a38bb869948b1d0e38ed5ccdff7a497a0c4e09b19726335ed67fa5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

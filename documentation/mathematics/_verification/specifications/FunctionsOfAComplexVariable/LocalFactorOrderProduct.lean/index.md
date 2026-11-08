@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/LocalFactorOrderProduct.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/LocalFactorOrderProduct.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/LocalFactorOrderProduct.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/LocalFactorOrderProduct.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.LogarithmicOrderDetection`](../../../../GeneralTopology/LogarithmicOrderDetection.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.LogarithmicOrderDetection`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LogarithmicOrderDetection.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [product_local_factorization](../../../../FunctionsOfAComplexVariable/LocalFactorOrderProduct.lean/declarations/product-local-factorization.md) | 10 | `result-track:12db975b2e81b10734371c48d1c67aafcb9ec3fc6bf73262c1ef5ad47d4ef62d` |
-| 2 | `theorem` | [product_scaled_neg_logDeriv](../../../../FunctionsOfAComplexVariable/LocalFactorOrderProduct.lean/declarations/product-scaled-neg-logderiv.md) | 21 | `result-track:d24ac04cc957a07180c8ac25fc5ac49638f9e029ffeba1275da275c7b8b6adca` |
-| 3 | `theorem` | [analytic_unit_preserves_scaled_coefficient](../../../../FunctionsOfAComplexVariable/LocalFactorOrderProduct.lean/declarations/analytic-unit-preserves-scaled-coefficient.md) | 32 | `result-track:497101d5fc73b16fcbd5f4534a4a14a60040c99451036c314a8cf9bc6a832b65` |
+| 1 | `theorem` | [product_local_factorization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/LocalFactorOrderProduct.lean/declarations/product-local-factorization.md) | 10 | `result-track:12db975b2e81b10734371c48d1c67aafcb9ec3fc6bf73262c1ef5ad47d4ef62d` |
+| 2 | `theorem` | [product_scaled_neg_logDeriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/LocalFactorOrderProduct.lean/declarations/product-scaled-neg-logderiv.md) | 21 | `result-track:d24ac04cc957a07180c8ac25fc5ac49638f9e029ffeba1275da275c7b8b6adca` |
+| 3 | `theorem` | [analytic_unit_preserves_scaled_coefficient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/LocalFactorOrderProduct.lean/declarations/analytic-unit-preserves-scaled-coefficient.md) | 32 | `result-track:497101d5fc73b16fcbd5f4534a4a14a60040c99451036c314a8cf9bc6a832b65` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

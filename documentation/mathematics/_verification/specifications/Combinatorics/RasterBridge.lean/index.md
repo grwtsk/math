@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/RasterBridge.lean/index.md) · [Full source](../../../../Combinatorics/RasterBridge.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RasterBridge.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RasterBridge.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RasterSourceBridge](../../../../Combinatorics/RasterBridge.lean/declarations/rastersourcebridge.md) | 18 | `declaration-track:117623a1af27b61a7158ea7eab08767a761e6ac23fa438a09a9f81b230054f9a` |
-| 2 | `theorem` | [vertexCoordinate_injective](../../../../Combinatorics/RasterBridge.lean/declarations/vertexcoordinate-injective.md) | 44 | `result-track:9f135a2b00f4d089adbb6ee7cbc2d0d0719a02676f0a5a2d4e38460888bf8983` |
-| 3 | `theorem` | [realization_commutes_at_vertex](../../../../Combinatorics/RasterBridge.lean/declarations/realization-commutes-at-vertex.md) | 62 | `result-track:3a424e99f57025d88a404217a292056e01e7704465ae84f394f9e9e89d3dd902` |
+| 1 | `structure` | [RasterSourceBridge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RasterBridge.lean/declarations/rastersourcebridge.md) | 18 | `declaration-track:117623a1af27b61a7158ea7eab08767a761e6ac23fa438a09a9f81b230054f9a` |
+| 2 | `theorem` | [vertexCoordinate_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RasterBridge.lean/declarations/vertexcoordinate-injective.md) | 44 | `result-track:9f135a2b00f4d089adbb6ee7cbc2d0d0719a02676f0a5a2d4e38460888bf8983` |
+| 3 | `theorem` | [realization_commutes_at_vertex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RasterBridge.lean/declarations/realization-commutes-at-vertex.md) | 62 | `result-track:3a424e99f57025d88a404217a292056e01e7704465ae84f394f9e9e89d3dd902` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

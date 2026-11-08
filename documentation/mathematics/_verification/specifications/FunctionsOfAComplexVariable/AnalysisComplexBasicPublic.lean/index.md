@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/AnalysisComplexBasicPublic.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/AnalysisComplexBasicPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/AnalysisComplexBasicPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/AnalysisComplexBasicPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [div_sub_one_eq_one_add_one_div](../../../../FunctionsOfAComplexVariable/AnalysisComplexBasicPublic.lean/declarations/div-sub-one-eq-one-add-one-div.md) | 21 | `result-track:008bdf8fff9957af65a6435828b0c9a8f70beb2858c5c772fadcd12a003e4657` |
-| 2 | `lemma` | [exists_norm_bound_on_closedBall](../../../../FunctionsOfAComplexVariable/AnalysisComplexBasicPublic.lean/declarations/exists-norm-bound-on-closedball.md) | 29 | `result-track:1646fb74c7f8e5bfaa24d7c917347918145306e47d1a241296cdca677506742a` |
-| 3 | `theorem` | [exists_pos_radius_forall_mem_ball_re_ge](../../../../FunctionsOfAComplexVariable/AnalysisComplexBasicPublic.lean/declarations/exists-pos-radius-forall-mem-ball-re-ge.md) | 38 | `result-track:e95c00ce7ad0c27cf1da520bb7b0632c065764662d54a818030609b4bcee107d` |
+| 1 | `theorem` | [div_sub_one_eq_one_add_one_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/AnalysisComplexBasicPublic.lean/declarations/div-sub-one-eq-one-add-one-div.md) | 21 | `result-track:008bdf8fff9957af65a6435828b0c9a8f70beb2858c5c772fadcd12a003e4657` |
+| 2 | `lemma` | [exists_norm_bound_on_closedBall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/AnalysisComplexBasicPublic.lean/declarations/exists-norm-bound-on-closedball.md) | 29 | `result-track:1646fb74c7f8e5bfaa24d7c917347918145306e47d1a241296cdca677506742a` |
+| 3 | `theorem` | [exists_pos_radius_forall_mem_ball_re_ge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/AnalysisComplexBasicPublic.lean/declarations/exists-pos-radius-forall-mem-ball-re-ge.md) | 38 | `result-track:e95c00ce7ad0c27cf1da520bb7b0632c065764662d54a818030609b4bcee107d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

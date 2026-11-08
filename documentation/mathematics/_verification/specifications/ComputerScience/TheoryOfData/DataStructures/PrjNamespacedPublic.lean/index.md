@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/PrjNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/PrjNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/PrjNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/PrjNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Prj](../../../../../../ComputerScience/TheoryOfData/DataStructures/PrjNamespacedPublic.lean/declarations/prj.md) | 38 | `declaration-track:0b34e2926247245fa4652b5bbb57e39bf4139982ce03e305890c8d8676a08661` |
-| 2 | `instance` | [Prj.inhabited](../../../../../../ComputerScience/TheoryOfData/DataStructures/PrjNamespacedPublic.lean/declarations/prj-inhabited.md) | 40 | `declaration-track:7ab2589e919c365d46ceb04aaa4bea6e0aaba6f2d96788c91fc9346d6cf3ba08` |
-| 3 | `def` | [Prj.map](../../../../../../ComputerScience/TheoryOfData/DataStructures/PrjNamespacedPublic.lean/declarations/prj-map.md) | 44 | `declaration-track:8f3820ef24f6c1e03453c61d7b63377f9db7ea838dec9fe337f789e6e14a7433` |
-| 4 | `instance` | [Prj.mvfunctor](../../../../../../ComputerScience/TheoryOfData/DataStructures/PrjNamespacedPublic.lean/declarations/prj-mvfunctor.md) | 46 | `declaration-track:fd76109c05b9323f1350649431288a7bd361f599cd7c6d8f5ce37d2b30f15976` |
-| 5 | `def` | [Prj.P](../../../../../../ComputerScience/TheoryOfData/DataStructures/PrjNamespacedPublic.lean/declarations/prj-p.md) | 49 | `declaration-track:a4e23b2c3121e55df27c2902145ecc2f3f6d4adf94308d40779e5bb58c6db2c7` |
-| 6 | `def` | [Prj.abs](../../../../../../ComputerScience/TheoryOfData/DataStructures/PrjNamespacedPublic.lean/declarations/prj-abs.md) | 54 | `declaration-track:f43dc4a91ca9fdfdb05dc9e4c36d31645904ec950237723438c800b3160f83ae` |
-| 7 | `def` | [Prj.repr](../../../../../../ComputerScience/TheoryOfData/DataStructures/PrjNamespacedPublic.lean/declarations/prj-repr.md) | 58 | `declaration-track:7647f1a9d88be42528e956a274af959828e28fe4fa39ae9e4ec2e605a6618756` |
-| 8 | `instance` | [Prj.mvqpf](../../../../../../ComputerScience/TheoryOfData/DataStructures/PrjNamespacedPublic.lean/declarations/prj-mvqpf.md) | 61 | `declaration-track:09f3ab739690c60968a561c4eadee467550b2ab93d276ba9f03e3c3f8a9cf0ff` |
+| 1 | `def` | [Prj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/PrjNamespacedPublic.lean/declarations/prj.md) | 38 | `declaration-track:0b34e2926247245fa4652b5bbb57e39bf4139982ce03e305890c8d8676a08661` |
+| 2 | `instance` | [Prj.inhabited](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/PrjNamespacedPublic.lean/declarations/prj-inhabited.md) | 40 | `declaration-track:7ab2589e919c365d46ceb04aaa4bea6e0aaba6f2d96788c91fc9346d6cf3ba08` |
+| 3 | `def` | [Prj.map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/PrjNamespacedPublic.lean/declarations/prj-map.md) | 44 | `declaration-track:8f3820ef24f6c1e03453c61d7b63377f9db7ea838dec9fe337f789e6e14a7433` |
+| 4 | `instance` | [Prj.mvfunctor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/PrjNamespacedPublic.lean/declarations/prj-mvfunctor.md) | 46 | `declaration-track:fd76109c05b9323f1350649431288a7bd361f599cd7c6d8f5ce37d2b30f15976` |
+| 5 | `def` | [Prj.P](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/PrjNamespacedPublic.lean/declarations/prj-p.md) | 49 | `declaration-track:a4e23b2c3121e55df27c2902145ecc2f3f6d4adf94308d40779e5bb58c6db2c7` |
+| 6 | `def` | [Prj.abs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/PrjNamespacedPublic.lean/declarations/prj-abs.md) | 54 | `declaration-track:f43dc4a91ca9fdfdb05dc9e4c36d31645904ec950237723438c800b3160f83ae` |
+| 7 | `def` | [Prj.repr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/PrjNamespacedPublic.lean/declarations/prj-repr.md) | 58 | `declaration-track:7647f1a9d88be42528e956a274af959828e28fe4fa39ae9e4ec2e605a6618756` |
+| 8 | `instance` | [Prj.mvqpf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/PrjNamespacedPublic.lean/declarations/prj-mvqpf.md) | 61 | `declaration-track:09f3ab739690c60968a561c4eadee467550b2ab93d276ba9f03e3c3f8a9cf0ff` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

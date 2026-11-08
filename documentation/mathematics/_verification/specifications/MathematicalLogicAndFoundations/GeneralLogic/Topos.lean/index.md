@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Topos.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Topos.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Topos.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Topos.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [BundledKnowledgeTopos](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Topos.lean/declarations/bundledknowledgetopos.md) | 8 | `declaration-track:890463c2304b3f37af236a8e5995266ffaac28a8ddbdd05d6f1563d3a1cd6c6c` |
-| 2 | `def` | [BundledKnowledgeTopos.omegaIsHeyting](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Topos.lean/declarations/bundledknowledgetopos-omegaisheyting.md) | 17 | `declaration-track:9d8e99cff08d6f7adaef9939d2ba0241fbd4399bfa6dc0f0ea407dd5ae3a57ca` |
-| 3 | `theorem` | [BundledKnowledgeTopos.not_boolean_if_heyting](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Topos.lean/declarations/bundledknowledgetopos-not-boolean-if-heyting.md) | 21 | `result-track:d411ed8cc0f73457fc29506d0192379679cc0020adda6b08b526ae750e9fe6a1` |
-| 4 | `structure` | [KnowledgeToposArrow](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Topos.lean/declarations/knowledgetoposarrow.md) | 28 | `declaration-track:b066ddad763d7a17264a3d02471cdd24d6a5e97cae859eaa38505ab064096d9e` |
-| 5 | `def` | [KnowledgeToposArrow.inverse_image_left_exact](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Topos.lean/declarations/knowledgetoposarrow-inverse-image-left-exact.md) | 38 | `declaration-track:c1e5e6c9034ceba5a05b1b05e2ac6bdb5f23225aa17bd5949a31af1b2491eaae` |
-| 6 | `structure` | [ToposCategoryBoundary](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Topos.lean/declarations/toposcategoryboundary.md) | 43 | `declaration-track:a793732a3c75f0294f7a6d6be40a56771b20c7d2feca3389922638781508f608` |
-| 7 | `def` | [ToposCategoryBoundary.hom_inverse_image_left_exact](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Topos.lean/declarations/toposcategoryboundary-hom-inverse-image-left-exact.md) | 53 | `declaration-track:0a99034f2fbd088f1f1ca08e7cc2f71b4b667626739ceb6540ce3d204c4db0c0` |
+| 1 | `structure` | [BundledKnowledgeTopos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Topos.lean/declarations/bundledknowledgetopos.md) | 8 | `declaration-track:890463c2304b3f37af236a8e5995266ffaac28a8ddbdd05d6f1563d3a1cd6c6c` |
+| 2 | `def` | [BundledKnowledgeTopos.omegaIsHeyting](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Topos.lean/declarations/bundledknowledgetopos-omegaisheyting.md) | 17 | `declaration-track:9d8e99cff08d6f7adaef9939d2ba0241fbd4399bfa6dc0f0ea407dd5ae3a57ca` |
+| 3 | `theorem` | [BundledKnowledgeTopos.not_boolean_if_heyting](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Topos.lean/declarations/bundledknowledgetopos-not-boolean-if-heyting.md) | 21 | `result-track:d411ed8cc0f73457fc29506d0192379679cc0020adda6b08b526ae750e9fe6a1` |
+| 4 | `structure` | [KnowledgeToposArrow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Topos.lean/declarations/knowledgetoposarrow.md) | 28 | `declaration-track:b066ddad763d7a17264a3d02471cdd24d6a5e97cae859eaa38505ab064096d9e` |
+| 5 | `def` | [KnowledgeToposArrow.inverse_image_left_exact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Topos.lean/declarations/knowledgetoposarrow-inverse-image-left-exact.md) | 38 | `declaration-track:c1e5e6c9034ceba5a05b1b05e2ac6bdb5f23225aa17bd5949a31af1b2491eaae` |
+| 6 | `structure` | [ToposCategoryBoundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Topos.lean/declarations/toposcategoryboundary.md) | 43 | `declaration-track:a793732a3c75f0294f7a6d6be40a56771b20c7d2feca3389922638781508f608` |
+| 7 | `def` | [ToposCategoryBoundary.hom_inverse_image_left_exact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Topos.lean/declarations/toposcategoryboundary-hom-inverse-image-left-exact.md) | 53 | `declaration-track:0a99034f2fbd088f1f1ca08e7cc2f71b4b667626739ceb6540ce3d204c4db0c0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ConvenientLocalizationNamespacedPublic.lean/index.md) · [Full source](../../../../GeneralTopology/ConvenientLocalizationNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ConvenientLocalizationNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ConvenientLocalizationNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [morphismPropertyWithGeneratedByTopologyEquiv](../../../../GeneralTopology/ConvenientLocalizationNamespacedPublic.lean/declarations/morphismpropertywithgeneratedbytopologyequiv.md) | 48 | `declaration-track:d309ae2eb9797b8475957caf0e91772a439491ac97a84542a35552e01ce41784` |
-| 2 | `instance` | [(anonymous)](../../../../GeneralTopology/ConvenientLocalizationNamespacedPublic.lean/declarations/instance.md) | 51 | `declaration-track:bfcdae33f7190756674932e03320e85a5e41cdc9d1c9a4332883e5ff58f64370` |
-| 3 | `instance` | [(anonymous)](../../../../GeneralTopology/ConvenientLocalizationNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 57 | `declaration-track:fb1aa2d6cb877231a51e92de154d940aba74a3892493fc826ea1c43453dbf1a3` |
+| 1 | `def` | [morphismPropertyWithGeneratedByTopologyEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ConvenientLocalizationNamespacedPublic.lean/declarations/morphismpropertywithgeneratedbytopologyequiv.md) | 48 | `declaration-track:d309ae2eb9797b8475957caf0e91772a439491ac97a84542a35552e01ce41784` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ConvenientLocalizationNamespacedPublic.lean/declarations/instance.md) | 51 | `declaration-track:bfcdae33f7190756674932e03320e85a5e41cdc9d1c9a4332883e5ff58f64370` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ConvenientLocalizationNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 57 | `declaration-track:fb1aa2d6cb877231a51e92de154d940aba74a3892493fc826ea1c43453dbf1a3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

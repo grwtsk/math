@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/FinestObserverEquivalence.lean/index.md) · [Full source](../../../../Combinatorics/FinestObserverEquivalence.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FinestObserverEquivalence.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FinestObserverEquivalence.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -48,7 +48,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 - `DAF.Causal.ObserverFactor` — import line 19; external provider; requires a separately pinned dependency.
 - `Mathlib.Order.BoundedOrder.Basic` — import line 20; external provider; requires a separately pinned dependency.
-- [Quantizer Quotient Projection](../../../../MathematicalLogicAndFoundations/GeneralLogic/QuantizerQuotientProjection.lean/index.md) — import line 21; pinned internal source present.
+- [Quantizer Quotient Projection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/QuantizerQuotientProjection.lean/index.md) — import line 21; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [causalToFinestLocal_injective](../../../../Combinatorics/FinestObserverEquivalence.lean/declarations/causaltofinestlocal-injective.md) | 56 | `result-track:4d737949dd02a55cf579e3978a3fdb5075d47e15afce96a1a29f2de76e6b2d2b` |
-| 2 | `def` | [causalStateEquivFinestLocal](../../../../Combinatorics/FinestObserverEquivalence.lean/declarations/causalstateequivfinestlocal.md) | 81 | `declaration-track:d008fd2c7263b349e1de6e784b3ce497ae0d2f0c121652136e98d2a343d08553` |
-| 3 | `theorem` | [causalStateEquivFinestLocal_apply](../../../../Combinatorics/FinestObserverEquivalence.lean/declarations/causalstateequivfinestlocal-apply.md) | 89 | `result-track:2832fbc98c3b584210d44aaf854dff83af4712d0e96f7a85900abc4c38dfbd92` |
+| 1 | `theorem` | [causalToFinestLocal_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FinestObserverEquivalence.lean/declarations/causaltofinestlocal-injective.md) | 56 | `result-track:4d737949dd02a55cf579e3978a3fdb5075d47e15afce96a1a29f2de76e6b2d2b` |
+| 2 | `def` | [causalStateEquivFinestLocal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FinestObserverEquivalence.lean/declarations/causalstateequivfinestlocal.md) | 81 | `declaration-track:d008fd2c7263b349e1de6e784b3ce497ae0d2f0c121652136e98d2a343d08553` |
+| 3 | `theorem` | [causalStateEquivFinestLocal_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FinestObserverEquivalence.lean/declarations/causalstateequivfinestlocal-apply.md) | 89 | `result-track:2832fbc98c3b584210d44aaf854dff83af4712d0e96f7a85900abc4c38dfbd92` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

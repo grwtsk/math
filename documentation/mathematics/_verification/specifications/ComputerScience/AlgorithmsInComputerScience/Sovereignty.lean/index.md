@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Sovereignty.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Sovereignty.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Sovereignty.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Sovereignty.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TargetNativeRealization](../../../../../ComputerScience/AlgorithmsInComputerScience/Sovereignty.lean/declarations/targetnativerealization.md) | 14 | `declaration-track:be5dce1e052a20f44878f6f9f2ab63ca6c839fa3eede901ee3a73f7b919018c8` |
-| 2 | `structure` | [SovereignReflection](../../../../../ComputerScience/AlgorithmsInComputerScience/Sovereignty.lean/declarations/sovereignreflection.md) | 23 | `declaration-track:f472b73d810d4e6952a11405b6eaf74090033fa472eb00984355838aa85e7307` |
-| 3 | `theorem` | [SovereignReflection.target_native](../../../../../ComputerScience/AlgorithmsInComputerScience/Sovereignty.lean/declarations/sovereignreflection-target-native.md) | 39 | `result-track:7d244366d04151ae20fef48dfe115ae173a0bed1c859c8184ab55a36736b2fae` |
+| 1 | `structure` | [TargetNativeRealization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Sovereignty.lean/declarations/targetnativerealization.md) | 14 | `declaration-track:be5dce1e052a20f44878f6f9f2ab63ca6c839fa3eede901ee3a73f7b919018c8` |
+| 2 | `structure` | [SovereignReflection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Sovereignty.lean/declarations/sovereignreflection.md) | 23 | `declaration-track:f472b73d810d4e6952a11405b6eaf74090033fa472eb00984355838aa85e7307` |
+| 3 | `theorem` | [SovereignReflection.target_native](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Sovereignty.lean/declarations/sovereignreflection-target-native.md) | 39 | `result-track:7d244366d04151ae20fef48dfe115ae173a0bed1c859c8184ab55a36736b2fae` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

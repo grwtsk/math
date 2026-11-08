@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppIndicator.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppIndicator.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppIndicator.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppIndicator.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [indicator](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppIndicator.lean/declarations/indicator.md) | 30 | `declaration-track:f4343b03cf2a544b7a22e14f511c7329ff28f5b2efcc9bb1acea240c7fd29df1` |
-| 2 | `theorem` | [indicator_of_mem](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppIndicator.lean/declarations/indicator-of-mem.md) | 40 | `result-track:77d909595911de41ee1c154d65b158980af8bf17ab70b8b8de6da4de98588b83` |
-| 3 | `theorem` | [indicator_of_notMem](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppIndicator.lean/declarations/indicator-of-notmem.md) | 43 | `result-track:2ba144c22634f99a440e784c88e930c1c8e0a912371d41dba519ee3238b076ca` |
-| 4 | `theorem` | [indicator_apply](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppIndicator.lean/declarations/indicator-apply.md) | 51 | `result-track:5588337c93bc5213c1b74e54b02e70701edb3b56ff85fad73b48dbcaa6f64ec6` |
-| 5 | `theorem` | [indicator_injective](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppIndicator.lean/declarations/indicator-injective.md) | 55 | `result-track:80c684533e758a1bd132be87b0c9a8938caab7272350f1eab8586a18f536e1f9` |
-| 6 | `theorem` | [support_indicator_subset](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppIndicator.lean/declarations/support-indicator-subset.md) | 61 | `result-track:c1d3d905e487c59e433ef66ba3fe478b601cdad6dfa06102e70d2d727afbb414` |
-| 7 | `lemma` | [single_eq_indicator](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppIndicator.lean/declarations/single-eq-indicator.md) | 67 | `result-track:4e159ef2ce0b327f8b969750822746ad7cfca11780ddc75301c84d86ca887617` |
+| 1 | `def` | [indicator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppIndicator.lean/declarations/indicator.md) | 30 | `declaration-track:f4343b03cf2a544b7a22e14f511c7329ff28f5b2efcc9bb1acea240c7fd29df1` |
+| 2 | `theorem` | [indicator_of_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppIndicator.lean/declarations/indicator-of-mem.md) | 40 | `result-track:77d909595911de41ee1c154d65b158980af8bf17ab70b8b8de6da4de98588b83` |
+| 3 | `theorem` | [indicator_of_notMem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppIndicator.lean/declarations/indicator-of-notmem.md) | 43 | `result-track:2ba144c22634f99a440e784c88e930c1c8e0a912371d41dba519ee3238b076ca` |
+| 4 | `theorem` | [indicator_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppIndicator.lean/declarations/indicator-apply.md) | 51 | `result-track:5588337c93bc5213c1b74e54b02e70701edb3b56ff85fad73b48dbcaa6f64ec6` |
+| 5 | `theorem` | [indicator_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppIndicator.lean/declarations/indicator-injective.md) | 55 | `result-track:80c684533e758a1bd132be87b0c9a8938caab7272350f1eab8586a18f536e1f9` |
+| 6 | `theorem` | [support_indicator_subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppIndicator.lean/declarations/support-indicator-subset.md) | 61 | `result-track:c1d3d905e487c59e433ef66ba3fe478b601cdad6dfa06102e70d2d727afbb414` |
+| 7 | `lemma` | [single_eq_indicator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppIndicator.lean/declarations/single-eq-indicator.md) | 67 | `result-track:4e159ef2ce0b327f8b969750822746ad7cfca11780ddc75301c84d86ca887617` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

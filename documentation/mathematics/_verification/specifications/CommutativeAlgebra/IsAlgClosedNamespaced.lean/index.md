@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/IsAlgClosedNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/IsAlgClosedNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsAlgClosedNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsAlgClosedNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [IsSimpleRing.exists_algEquiv_matrix_of_isAlgClosed](../../../../CommutativeAlgebra/IsAlgClosedNamespaced.lean/declarations/issimplering-exists-algequiv-matrix-of-isalgclosed.md) | 21 | `result-track:c16782a7b91e11e51df054921f2bc7f151aa9998860e6236579b1eb28ab5d529` |
+| 1 | `theorem` | [IsSimpleRing.exists_algEquiv_matrix_of_isAlgClosed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsAlgClosedNamespaced.lean/declarations/issimplering-exists-algequiv-matrix-of-isalgclosed.md) | 21 | `result-track:c16782a7b91e11e51df054921f2bc7f151aa9998860e6236579b1eb28ab5d529` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

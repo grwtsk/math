@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/CohomologyLatticeNamespaced.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/CohomologyLatticeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/CohomologyLatticeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/CohomologyLatticeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FreeCohomologyLattice](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/CohomologyLatticeNamespaced.lean/declarations/freecohomologylattice.md) | 27 | `declaration-track:787e8e2ee1e4a67e48024805aa0e6b15c34218bbe5cdf047d803225c9c7b224d` |
-| 2 | `theorem` | [toReal_eq_zero_iff](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/CohomologyLatticeNamespaced.lean/declarations/toreal-eq-zero-iff.md) | 60 | `result-track:f067e4b56bcdf0052631dbfa189cb7057d3dde13ac5d1748dc24acab7fc72550` |
+| 1 | `structure` | [FreeCohomologyLattice](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/CohomologyLatticeNamespaced.lean/declarations/freecohomologylattice.md) | 27 | `declaration-track:787e8e2ee1e4a67e48024805aa0e6b15c34218bbe5cdf047d803225c9c7b224d` |
+| 2 | `theorem` | [toReal_eq_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/CohomologyLatticeNamespaced.lean/declarations/toreal-eq-zero-iff.md) | 60 | `result-track:f067e4b56bcdf0052631dbfa189cb7057d3dde13ac5d1748dc24acab7fc72550` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

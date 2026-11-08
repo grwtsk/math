@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/SubdivisionPublic.lean/index.md) · [Full source](../../../../AlgebraicTopology/SubdivisionPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SubdivisionPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SubdivisionPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [SimplexCategory.sd](../../../../AlgebraicTopology/SubdivisionPublic.lean/declarations/simplexcategory-sd.md) | 39 | `declaration-track:385d8599477be866161c25638196dc9f77b0c5fb649a4a3481812a2acb8623f1` |
-| 2 | `def` | [sd](../../../../AlgebraicTopology/SubdivisionPublic.lean/declarations/sd.md) | 45 | `declaration-track:e13b1fc5f84f9398f60fd6cd26de61e8f0b2352e1be04f59cbe6e9c5760df1d9` |
-| 3 | `def` | [ex](../../../../AlgebraicTopology/SubdivisionPublic.lean/declarations/ex.md) | 49 | `declaration-track:3d22de4876a710ece70aef369479051b7a905a8862cc146f7303e4241f7a1b49` |
-| 4 | `def` | [sdExAdjunction](../../../../AlgebraicTopology/SubdivisionPublic.lean/declarations/sdexadjunction.md) | 54 | `declaration-track:24eb1726c99ffc7f6fd375f7e8784a844f57c8218addc2b3f9659e0646e01d56` |
-| 5 | `instance` | [(anonymous)](../../../../AlgebraicTopology/SubdivisionPublic.lean/declarations/instance-source-edition-2.md) | 59 | `declaration-track:c7c3551052d4b6c3152b8fc14dedca1ada44ea0dee607ce10da1a010b5129da6` |
-| 6 | `instance` | [(anonymous)](../../../../AlgebraicTopology/SubdivisionPublic.lean/declarations/instance.md) | 61 | `declaration-track:7c81ef42552b725cddadc1c3d849a9bd22ef5b69ad3c4fd30d1fe19d8387f2f9` |
-| 7 | `def` | [sdIso](../../../../AlgebraicTopology/SubdivisionPublic.lean/declarations/sdiso.md) | 66 | `declaration-track:62cc657c114488632cdef3273e764cee2621b5e781696f7a10b3975d0d09d59a` |
-| 8 | `instance` | [(anonymous)](../../../../AlgebraicTopology/SubdivisionPublic.lean/declarations/instance-source-edition-3.md) | 71 | `declaration-track:fd1b0d7adb5ef24f7218bb52d24fc63998fce0c7b8ea834a62318359cc4ff6c0` |
+| 1 | `def` | [SimplexCategory.sd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SubdivisionPublic.lean/declarations/simplexcategory-sd.md) | 39 | `declaration-track:385d8599477be866161c25638196dc9f77b0c5fb649a4a3481812a2acb8623f1` |
+| 2 | `def` | [sd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SubdivisionPublic.lean/declarations/sd.md) | 45 | `declaration-track:e13b1fc5f84f9398f60fd6cd26de61e8f0b2352e1be04f59cbe6e9c5760df1d9` |
+| 3 | `def` | [ex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SubdivisionPublic.lean/declarations/ex.md) | 49 | `declaration-track:3d22de4876a710ece70aef369479051b7a905a8862cc146f7303e4241f7a1b49` |
+| 4 | `def` | [sdExAdjunction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SubdivisionPublic.lean/declarations/sdexadjunction.md) | 54 | `declaration-track:24eb1726c99ffc7f6fd375f7e8784a844f57c8218addc2b3f9659e0646e01d56` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SubdivisionPublic.lean/declarations/instance-source-edition-2.md) | 59 | `declaration-track:c7c3551052d4b6c3152b8fc14dedca1ada44ea0dee607ce10da1a010b5129da6` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SubdivisionPublic.lean/declarations/instance.md) | 61 | `declaration-track:7c81ef42552b725cddadc1c3d849a9bd22ef5b69ad3c4fd30d1fe19d8387f2f9` |
+| 7 | `def` | [sdIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SubdivisionPublic.lean/declarations/sdiso.md) | 66 | `declaration-track:62cc657c114488632cdef3273e764cee2621b5e781696f7a10b3975d0d09d59a` |
+| 8 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SubdivisionPublic.lean/declarations/instance-source-edition-3.md) | 71 | `declaration-track:fd1b0d7adb5ef24f7218bb52d24fc63998fce0c7b8ea834a62318359cc4ff6c0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

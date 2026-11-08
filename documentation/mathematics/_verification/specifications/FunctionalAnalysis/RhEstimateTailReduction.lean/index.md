@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/RhEstimateTailReduction.lean/index.md) · [Full source](../../../../FunctionalAnalysis/RhEstimateTailReduction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/RhEstimateTailReduction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/RhEstimateTailReduction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../FunctionalAnalysis/RhEstimateTailReduction.lean/declarations/example.md) | 9 | `declaration-track:f2520b1d43ced85c6f9f1906078c6822a09a3d3f9a12fe23b5269bd927f47f38` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/RhEstimateTailReduction.lean/declarations/example.md) | 9 | `declaration-track:f2520b1d43ced85c6f9f1906078c6822a09a3d3f9a12fe23b5269bd927f47f38` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

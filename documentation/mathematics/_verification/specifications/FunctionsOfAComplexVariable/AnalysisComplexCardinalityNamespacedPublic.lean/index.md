@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/AnalysisComplexCardinalityNamespacedPublic.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/AnalysisComplexCardinalityNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/AnalysisComplexCardinalityNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/AnalysisComplexCardinalityNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Cardinal.mk_complex](../../../../FunctionsOfAComplexVariable/AnalysisComplexCardinalityNamespacedPublic.lean/declarations/cardinal-mk-complex.md) | 33 | `result-track:01e4b249cdf0d258707403427d66d6fa86a7910257b72332d45a71c1dded4c87` |
-| 2 | `theorem` | [Cardinal.mk_univ_complex](../../../../FunctionsOfAComplexVariable/AnalysisComplexCardinalityNamespacedPublic.lean/declarations/cardinal-mk-univ-complex.md) | 37 | `result-track:58369c36840d786f27a903fe0e87560dff5212139938f8cc247b7a02d3aaab31` |
-| 3 | `theorem` | [not_countable_complex](../../../../FunctionsOfAComplexVariable/AnalysisComplexCardinalityNamespacedPublic.lean/declarations/not-countable-complex.md) | 40 | `result-track:003a62f2e992d0f96bac03c2b8fbd3cddb33f5066df93b661cb720ba35791015` |
+| 1 | `theorem` | [Cardinal.mk_complex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/AnalysisComplexCardinalityNamespacedPublic.lean/declarations/cardinal-mk-complex.md) | 33 | `result-track:01e4b249cdf0d258707403427d66d6fa86a7910257b72332d45a71c1dded4c87` |
+| 2 | `theorem` | [Cardinal.mk_univ_complex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/AnalysisComplexCardinalityNamespacedPublic.lean/declarations/cardinal-mk-univ-complex.md) | 37 | `result-track:58369c36840d786f27a903fe0e87560dff5212139938f8cc247b7a02d3aaab31` |
+| 3 | `theorem` | [not_countable_complex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/AnalysisComplexCardinalityNamespacedPublic.lean/declarations/not-countable-complex.md) | 40 | `result-track:003a62f2e992d0f96bac03c2b8fbd3cddb33f5066df93b661cb720ba35791015` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

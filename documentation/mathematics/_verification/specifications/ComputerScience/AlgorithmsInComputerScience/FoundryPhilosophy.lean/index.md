@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/FoundryPhilosophy.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/FoundryPhilosophy.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FoundryPhilosophy.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FoundryPhilosophy.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ReducerPipeline](../../../../../ComputerScience/AlgorithmsInComputerScience/FoundryPhilosophy.lean/declarations/reducerpipeline.md) | 14 | `declaration-track:f82a8db8cff6d371b339fb8030ed627740647b930c9beeeb5659757d279427c6` |
-| 2 | `structure` | [FoundryRootReducerPipeline](../../../../../ComputerScience/AlgorithmsInComputerScience/FoundryPhilosophy.lean/declarations/foundryrootreducerpipeline.md) | 23 | `declaration-track:195e1a4853a3445b9beba0e9efe215335e07e512ea90f89fdb4e1d1dd370a43d` |
-| 3 | `structure` | [FoundryPhilosophyCertificate](../../../../../ComputerScience/AlgorithmsInComputerScience/FoundryPhilosophy.lean/declarations/foundryphilosophycertificate.md) | 35 | `declaration-track:5718d2eb7172edcd001147638349fb62e6e117e6426d0ddd42d5b30e07101d0c` |
-| 4 | `theorem` | [foundry_hierarchy_preserves_philosophy](../../../../../ComputerScience/AlgorithmsInComputerScience/FoundryPhilosophy.lean/declarations/foundry-hierarchy-preserves-philosophy.md) | 51 | `result-track:46d291682dbc697fc2fa3a8714159a8a02aeafcde5de2e5fea4b09a5b991ab0a` |
+| 1 | `structure` | [ReducerPipeline](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FoundryPhilosophy.lean/declarations/reducerpipeline.md) | 14 | `declaration-track:f82a8db8cff6d371b339fb8030ed627740647b930c9beeeb5659757d279427c6` |
+| 2 | `structure` | [FoundryRootReducerPipeline](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FoundryPhilosophy.lean/declarations/foundryrootreducerpipeline.md) | 23 | `declaration-track:195e1a4853a3445b9beba0e9efe215335e07e512ea90f89fdb4e1d1dd370a43d` |
+| 3 | `structure` | [FoundryPhilosophyCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FoundryPhilosophy.lean/declarations/foundryphilosophycertificate.md) | 35 | `declaration-track:5718d2eb7172edcd001147638349fb62e6e117e6426d0ddd42d5b30e07101d0c` |
+| 4 | `theorem` | [foundry_hierarchy_preserves_philosophy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FoundryPhilosophy.lean/declarations/foundry-hierarchy-preserves-philosophy.md) | 51 | `result-track:46d291682dbc697fc2fa3a8714159a8a02aeafcde5de2e5fea4b09a5b991ab0a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

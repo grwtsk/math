@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ContinuityScratch.lean/index.md) · [Full source](../../../../GeneralTopology/ContinuityScratch.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuityScratch.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuityScratch.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [thetaPhiTerm_eq_gaussians](../../../../GeneralTopology/ContinuityScratch.lean/declarations/thetaphiterm-eq-gaussians.md) | 8 | `result-track:95df63f3e417ce4da12e964091033b22b6055d7ec1355256469ecfb064da3fa0` |
-| 2 | `def` | [thetaPhiCompactBound](../../../../GeneralTopology/ContinuityScratch.lean/declarations/thetaphicompactbound.md) | 22 | `declaration-track:aa0127e4baf3fb74a68df94595a0a0e6d84f1448d3b3d587f67092c1afb7acd9` |
-| 3 | `theorem` | [thetaPhiCompactBound_summable](../../../../GeneralTopology/ContinuityScratch.lean/declarations/thetaphicompactbound-summable.md) | 28 | `result-track:a1d0bca12812bf116c838d0b1cbdb50e07f3cb14b2add953bddb5de52ead5426` |
-| 4 | `theorem` | [thetaPhiTerm_norm_le_compactBound](../../../../GeneralTopology/ContinuityScratch.lean/declarations/thetaphiterm-norm-le-compactbound.md) | 34 | `result-track:b8675bc3f0f826764d1beecdd3314f47c20da05b00d6c761a460658df0cd9894` |
-| 5 | `theorem` | [continuous_thetaPhiTerm](../../../../GeneralTopology/ContinuityScratch.lean/declarations/continuous-thetaphiterm.md) | 58 | `result-track:38f553dab8d0506c8eb10c0357274817ecfd7b1dc9828918502f699c21415605` |
-| 6 | `theorem` | [continuousOn_thetaPhi_Icc](../../../../GeneralTopology/ContinuityScratch.lean/declarations/continuouson-thetaphi-icc.md) | 62 | `result-track:6cdee4d9709c4c4c51c697bc111bc7281dfdc62f475420939b57d7265237a8d2` |
-| 7 | `theorem` | [continuous_thetaPhi](../../../../GeneralTopology/ContinuityScratch.lean/declarations/continuous-thetaphi.md) | 66 | `result-track:564ee4776a9efd7a7f66721983f861f5257d0704ee902416bd7afbcfe9fc4a62` |
+| 1 | `theorem` | [thetaPhiTerm_eq_gaussians](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuityScratch.lean/declarations/thetaphiterm-eq-gaussians.md) | 8 | `result-track:95df63f3e417ce4da12e964091033b22b6055d7ec1355256469ecfb064da3fa0` |
+| 2 | `def` | [thetaPhiCompactBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuityScratch.lean/declarations/thetaphicompactbound.md) | 22 | `declaration-track:aa0127e4baf3fb74a68df94595a0a0e6d84f1448d3b3d587f67092c1afb7acd9` |
+| 3 | `theorem` | [thetaPhiCompactBound_summable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuityScratch.lean/declarations/thetaphicompactbound-summable.md) | 28 | `result-track:a1d0bca12812bf116c838d0b1cbdb50e07f3cb14b2add953bddb5de52ead5426` |
+| 4 | `theorem` | [thetaPhiTerm_norm_le_compactBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuityScratch.lean/declarations/thetaphiterm-norm-le-compactbound.md) | 34 | `result-track:b8675bc3f0f826764d1beecdd3314f47c20da05b00d6c761a460658df0cd9894` |
+| 5 | `theorem` | [continuous_thetaPhiTerm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuityScratch.lean/declarations/continuous-thetaphiterm.md) | 58 | `result-track:38f553dab8d0506c8eb10c0357274817ecfd7b1dc9828918502f699c21415605` |
+| 6 | `theorem` | [continuousOn_thetaPhi_Icc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuityScratch.lean/declarations/continuouson-thetaphi-icc.md) | 62 | `result-track:6cdee4d9709c4c4c51c697bc111bc7281dfdc62f475420939b57d7265237a8d2` |
+| 7 | `theorem` | [continuous_thetaPhi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuityScratch.lean/declarations/continuous-thetaphi.md) | 66 | `result-track:564ee4776a9efd7a7f66721983f861f5257d0704ee902416bd7afbcfe9fc4a62` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/CofilteredLimitNamespacedPublic.lean/index.md) · [Full source](../../../../GeneralTopology/CofilteredLimitNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CofilteredLimitNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CofilteredLimitNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_isClopen_of_cofiltered](../../../../GeneralTopology/CofilteredLimitNamespacedPublic.lean/declarations/exists-isclopen-of-cofiltered.md) | 48 | `result-track:689093caa975c1e27d11360608cb3b7f145088264864b029a7a390abf8ebafa6` |
-| 2 | `theorem` | [exists_locallyConstant_fin_two](../../../../GeneralTopology/CofilteredLimitNamespacedPublic.lean/declarations/exists-locallyconstant-fin-two.md) | 115 | `result-track:973f2c4b926d599cbcfebf3941a59c319cea21abfe17c4857aa519996f1cd27a` |
-| 3 | `theorem` | [exists_locallyConstant_finite_aux](../../../../GeneralTopology/CofilteredLimitNamespacedPublic.lean/declarations/exists-locallyconstant-finite-aux.md) | 129 | `result-track:1d56293342e419bc62992032a8299a59a1754bae9b00a83411b501cc6c330db3` |
-| 4 | `theorem` | [exists_locallyConstant_finite_nonempty](../../../../GeneralTopology/CofilteredLimitNamespacedPublic.lean/declarations/exists-locallyconstant-finite-nonempty.md) | 160 | `result-track:86869b65d624bb6d314bdf647b2eb58a80c58ea7c0f59a72d73776a8b49c85b9` |
-| 5 | `theorem` | [exists_locallyConstant](../../../../GeneralTopology/CofilteredLimitNamespacedPublic.lean/declarations/exists-locallyconstant.md) | 194 | `result-track:8012e442676cda0185ba453a06792529b8967c907f28f49f323bb2bff447d33b` |
+| 1 | `theorem` | [exists_isClopen_of_cofiltered](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CofilteredLimitNamespacedPublic.lean/declarations/exists-isclopen-of-cofiltered.md) | 48 | `result-track:689093caa975c1e27d11360608cb3b7f145088264864b029a7a390abf8ebafa6` |
+| 2 | `theorem` | [exists_locallyConstant_fin_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CofilteredLimitNamespacedPublic.lean/declarations/exists-locallyconstant-fin-two.md) | 115 | `result-track:973f2c4b926d599cbcfebf3941a59c319cea21abfe17c4857aa519996f1cd27a` |
+| 3 | `theorem` | [exists_locallyConstant_finite_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CofilteredLimitNamespacedPublic.lean/declarations/exists-locallyconstant-finite-aux.md) | 129 | `result-track:1d56293342e419bc62992032a8299a59a1754bae9b00a83411b501cc6c330db3` |
+| 4 | `theorem` | [exists_locallyConstant_finite_nonempty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CofilteredLimitNamespacedPublic.lean/declarations/exists-locallyconstant-finite-nonempty.md) | 160 | `result-track:86869b65d624bb6d314bdf647b2eb58a80c58ea7c0f59a72d73776a8b49c85b9` |
+| 5 | `theorem` | [exists_locallyConstant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CofilteredLimitNamespacedPublic.lean/declarations/exists-locallyconstant.md) | 194 | `result-track:8012e442676cda0185ba453a06792529b8967c907f28f49f323bb2bff447d33b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CylinderAlgebraNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CylinderAlgebraNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CylinderAlgebraNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CylinderAlgebraNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CylinderObservable](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CylinderAlgebraNamespaced.lean/declarations/cylinderobservable.md) | 17 | `declaration-track:c3fbf8bf46e59c16d9fabb223e867d00a5036f444ef9e7c0fcd9832a7eefe34f` |
-| 2 | `structure` | [CylinderAlgebraPresentation](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CylinderAlgebraNamespaced.lean/declarations/cylinderalgebrapresentation.md) | 22 | `declaration-track:3c25766b70c09d01e1734df91b7b758ae23746de9b2dc135fd8e4e861bb090a2` |
+| 1 | `structure` | [CylinderObservable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CylinderAlgebraNamespaced.lean/declarations/cylinderobservable.md) | 17 | `declaration-track:c3fbf8bf46e59c16d9fabb223e867d00a5036f444ef9e7c0fcd9832a7eefe34f` |
+| 2 | `structure` | [CylinderAlgebraPresentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CylinderAlgebraNamespaced.lean/declarations/cylinderalgebrapresentation.md) | 22 | `declaration-track:3c25766b70c09d01e1734df91b7b758ae23746de9b2dc135fd8e4e861bb090a2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

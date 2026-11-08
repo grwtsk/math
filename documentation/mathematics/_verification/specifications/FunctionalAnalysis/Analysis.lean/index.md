@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/Analysis.lean/index.md) · [Full source](../../../../FunctionalAnalysis/Analysis.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Analysis.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Analysis.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [conceptualSubdirectories](../../../../FunctionalAnalysis/Analysis.lean/declarations/conceptualsubdirectories.md) | 10 | `declaration-track:6bbbf9e1733ddff05e4f1684839ac15a5f2e4e5433fec92b127bdad10c4a60d7` |
-| 2 | `theorem` | [conceptualSubdirectories_count](../../../../FunctionalAnalysis/Analysis.lean/declarations/conceptualsubdirectories-count.md) | 17 | `result-track:63af8534ad641f99cb77dd0a818fc7d2f696c7e5b9e7a65247ebf7b18f3f600a` |
+| 1 | `def` | [conceptualSubdirectories](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Analysis.lean/declarations/conceptualsubdirectories.md) | 10 | `declaration-track:6bbbf9e1733ddff05e4f1684839ac15a5f2e4e5433fec92b127bdad10c4a60d7` |
+| 2 | `theorem` | [conceptualSubdirectories_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Analysis.lean/declarations/conceptualsubdirectories-count.md) | 17 | `result-track:63af8534ad641f99cb77dd0a818fc7d2f696c7e5b9e7a65247ebf7b18f3f600a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

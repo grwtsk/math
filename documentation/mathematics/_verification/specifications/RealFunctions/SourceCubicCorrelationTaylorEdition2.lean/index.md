@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/SourceCubicCorrelationTaylorEdition2.lean/index.md) · [Full source](../../../../RealFunctions/SourceCubicCorrelationTaylorEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceCubicCorrelationTaylorEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceCubicCorrelationTaylorEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [global_taylor_bound](../../../../RealFunctions/SourceCubicCorrelationTaylorEdition2.lean/declarations/global-taylor-bound.md) | 22 | `result-track:1fe256497038e916deecfb146b238c653c550eaf32c3a5157f0def4fe609a401` |
-| 2 | `def` | [cubicCorrelationJet](../../../../RealFunctions/SourceCubicCorrelationTaylorEdition2.lean/declarations/cubiccorrelationjet.md) | 46 | `declaration-track:ebf743003fa124cba8b4c5a52ce499cadcb4766bba60239e0f570e42a7103ecc` |
-| 3 | `def` | [cubicCorrelationRemainder](../../../../RealFunctions/SourceCubicCorrelationTaylorEdition2.lean/declarations/cubiccorrelationremainder.md) | 53 | `declaration-track:685112f3bea106286c5eff296cbb8563f76b9e4e05a58323f2dfcb5c0daf3ac6` |
-| 4 | `theorem` | [cubicCorrelationRemainder_abs_le](../../../../RealFunctions/SourceCubicCorrelationTaylorEdition2.lean/declarations/cubiccorrelationremainder-abs-le.md) | 57 | `result-track:fbf3a41a8ba49a8ffc8750c28f35c1ff0f3dc7e98d9f922a3b023dfa2469fcd5` |
-| 5 | `theorem` | [cubicCorrelationJet_hasDerivAt](../../../../RealFunctions/SourceCubicCorrelationTaylorEdition2.lean/declarations/cubiccorrelationjet-hasderivat.md) | 74 | `result-track:e7b2fec846930fd7dc7a7046ab3c46a20d6ffbd93bcd7deef2943f973c7ff3b8` |
-| 6 | `theorem` | [cubicCorrelationRemainder_hasDerivAt](../../../../RealFunctions/SourceCubicCorrelationTaylorEdition2.lean/declarations/cubiccorrelationremainder-hasderivat.md) | 90 | `result-track:93948e738001a178146aa323119bb252594ff0bf2d9b9540dbcc518c0d7b8b8d` |
-| 7 | `theorem` | [cubicCorrelationRemainder_deriv_abs_le](../../../../RealFunctions/SourceCubicCorrelationTaylorEdition2.lean/declarations/cubiccorrelationremainder-deriv-abs-le.md) | 103 | `result-track:c8fecf0413b848d3f92c2b7d26c943a2030ef56f1aeb51d183df22edca9647d2` |
+| 1 | `theorem` | [global_taylor_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceCubicCorrelationTaylorEdition2.lean/declarations/global-taylor-bound.md) | 22 | `result-track:1fe256497038e916deecfb146b238c653c550eaf32c3a5157f0def4fe609a401` |
+| 2 | `def` | [cubicCorrelationJet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceCubicCorrelationTaylorEdition2.lean/declarations/cubiccorrelationjet.md) | 46 | `declaration-track:ebf743003fa124cba8b4c5a52ce499cadcb4766bba60239e0f570e42a7103ecc` |
+| 3 | `def` | [cubicCorrelationRemainder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceCubicCorrelationTaylorEdition2.lean/declarations/cubiccorrelationremainder.md) | 53 | `declaration-track:685112f3bea106286c5eff296cbb8563f76b9e4e05a58323f2dfcb5c0daf3ac6` |
+| 4 | `theorem` | [cubicCorrelationRemainder_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceCubicCorrelationTaylorEdition2.lean/declarations/cubiccorrelationremainder-abs-le.md) | 57 | `result-track:fbf3a41a8ba49a8ffc8750c28f35c1ff0f3dc7e98d9f922a3b023dfa2469fcd5` |
+| 5 | `theorem` | [cubicCorrelationJet_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceCubicCorrelationTaylorEdition2.lean/declarations/cubiccorrelationjet-hasderivat.md) | 74 | `result-track:e7b2fec846930fd7dc7a7046ab3c46a20d6ffbd93bcd7deef2943f973c7ff3b8` |
+| 6 | `theorem` | [cubicCorrelationRemainder_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceCubicCorrelationTaylorEdition2.lean/declarations/cubiccorrelationremainder-hasderivat.md) | 90 | `result-track:93948e738001a178146aa323119bb252594ff0bf2d9b9540dbcc518c0d7b8b8d` |
+| 7 | `theorem` | [cubicCorrelationRemainder_deriv_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceCubicCorrelationTaylorEdition2.lean/declarations/cubiccorrelationremainder-deriv-abs-le.md) | 103 | `result-track:c8fecf0413b848d3f92c2b7d26c943a2030ef56f1aeb51d183df22edca9647d2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

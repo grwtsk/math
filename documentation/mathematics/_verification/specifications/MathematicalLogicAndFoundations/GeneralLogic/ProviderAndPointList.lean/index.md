@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProviderAndPointList.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProviderAndPointList.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProviderAndPointList.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProviderAndPointList.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [DistanceProvider](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProviderAndPointList.lean/declarations/distanceprovider.md) | 32 | `declaration-track:979df442a3aa3885ebe8d0323f0f281e13525da83642efe1acd4b5696974188b` |
-| 2 | `structure` | [PointedData](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProviderAndPointList.lean/declarations/pointeddata.md) | 37 | `declaration-track:843c380219a28ae92cb01921f7204a02c6c6db15277a87f7ad0b9410ddefb7fe` |
+| 1 | `structure` | [DistanceProvider](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProviderAndPointList.lean/declarations/distanceprovider.md) | 32 | `declaration-track:979df442a3aa3885ebe8d0323f0f281e13525da83642efe1acd4b5696974188b` |
+| 2 | `structure` | [PointedData](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProviderAndPointList.lean/declarations/pointeddata.md) | 37 | `declaration-track:843c380219a28ae92cb01921f7204a02c6c6db15277a87f7ad0b9410ddefb7fe` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

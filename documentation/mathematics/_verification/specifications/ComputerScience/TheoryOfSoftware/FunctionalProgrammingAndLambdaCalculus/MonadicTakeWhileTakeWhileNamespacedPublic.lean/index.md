@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MonadicTakeWhileTakeWhileNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MonadicTakeWhileTakeWhileNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MonadicTakeWhileTakeWhileNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MonadicTakeWhileTakeWhileNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [IterM.step_takeWhileWithPostcondition](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MonadicTakeWhileTakeWhileNamespacedPublic.lean/declarations/iterm-step-takewhilewithpostcondition.md) | 25 | `result-track:572e9aa90019d5c9c063facf15ba4da5aa113675441cbde36136577c8ba6b5f5` |
-| 2 | `theorem` | [IterM.step_takeWhileM](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MonadicTakeWhileTakeWhileNamespacedPublic.lean/declarations/iterm-step-takewhilem.md) | 39 | `result-track:36d0f3672bf2dc25c8cea1603d757e18024fd99331aa66748887c6dc80f6a1c7` |
-| 3 | `theorem` | [IterM.step_takeWhile](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MonadicTakeWhileTakeWhileNamespacedPublic.lean/declarations/iterm-step-takewhile.md) | 60 | `result-track:69246f08c8f6aef08248bc2252999b50d84d8a7abf5d93a06b72e253df5342da` |
+| 1 | `theorem` | [IterM.step_takeWhileWithPostcondition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MonadicTakeWhileTakeWhileNamespacedPublic.lean/declarations/iterm-step-takewhilewithpostcondition.md) | 25 | `result-track:572e9aa90019d5c9c063facf15ba4da5aa113675441cbde36136577c8ba6b5f5` |
+| 2 | `theorem` | [IterM.step_takeWhileM](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MonadicTakeWhileTakeWhileNamespacedPublic.lean/declarations/iterm-step-takewhilem.md) | 39 | `result-track:36d0f3672bf2dc25c8cea1603d757e18024fd99331aa66748887c6dc80f6a1c7` |
+| 3 | `theorem` | [IterM.step_takeWhile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MonadicTakeWhileTakeWhileNamespacedPublic.lean/declarations/iterm-step-takewhile.md) | 60 | `result-track:69246f08c8f6aef08248bc2252999b50d84d8a7abf5d93a06b72e253df5342da` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

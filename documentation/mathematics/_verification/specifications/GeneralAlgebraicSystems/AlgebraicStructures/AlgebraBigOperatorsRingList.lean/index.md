@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AlgebraBigOperatorsRingList.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AlgebraBigOperatorsRingList.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AlgebraBigOperatorsRingList.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AlgebraBigOperatorsRingList.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,16 +62,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [list_sum_right](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AlgebraBigOperatorsRingList.lean/declarations/list-sum-right.md) | 26 | `result-track:65cfe15b3652c816e3f5426aef97451231fb53c3f7ed9454065151c8fbf010f5` |
-| 2 | `lemma` | [list_sum_left](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AlgebraBigOperatorsRingList.lean/declarations/list-sum-left.md) | 33 | `result-track:482216cf42a903f4eb73f598434442ba7c39d854e277e798165b8e6ed63cd6dd` |
-| 3 | `lemma` | [prod_map_neg](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AlgebraBigOperatorsRingList.lean/declarations/prod-map-neg.md) | 43 | `result-track:bc5e9f22fe5b3fb1e9078b5eda50da3b222812b8cafd244a737675a3e11c52bb` |
-| 4 | `lemma` | [prod_eq_zero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AlgebraBigOperatorsRingList.lean/declarations/prod-eq-zero.md) | 55 | `result-track:60c6ac65f61fd7e8b497fa226897c127fa4cd755bbd77b54f3123d1d514f5eb9` |
-| 5 | `lemma` | [prod_eq_zero_iff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AlgebraBigOperatorsRingList.lean/declarations/prod-eq-zero-iff.md) | 66 | `result-track:5bd42a1dc55809012bf9b31c549c875a9a643e6ccdf45a231efffb9d337509d5` |
-| 6 | `lemma` | [prod_ne_zero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AlgebraBigOperatorsRingList.lean/declarations/prod-ne-zero.md) | 70 | `result-track:f69134c4620a806c0f053600817c49e7d0b1359ce233c3d638cd94081fe18fe4` |
-| 7 | `lemma` | [sum_map_mul_left](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AlgebraBigOperatorsRingList.lean/declarations/sum-map-mul-left.md) | 77 | `result-track:edb93ef158cdb35c53632b262d3dba604bc5ce452a504185f485c61a71794edd` |
-| 8 | `lemma` | [sum_map_mul_right](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AlgebraBigOperatorsRingList.lean/declarations/sum-map-mul-right.md) | 80 | `result-track:42727a71e25d1fd4ddf09ae1c7ec4cd335ac3e24a2ce404ba6ec59c82e864ddb` |
-| 9 | `lemma` | [dvd_sum](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AlgebraBigOperatorsRingList.lean/declarations/dvd-sum.md) | 85 | `result-track:ac3ac6e1bcb1e1df13ea805f27b4d78da93677d02099383b140866b0e17dcdb3` |
-| 10 | `lemma` | [sum_zipWith_distrib_left](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AlgebraBigOperatorsRingList.lean/declarations/sum-zipwith-distrib-left.md) | 92 | `result-track:897271ad2c8ceb907da16eae041cef4775afb8bec677dd9a983733c04b4bfb04` |
+| 1 | `lemma` | [list_sum_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AlgebraBigOperatorsRingList.lean/declarations/list-sum-right.md) | 26 | `result-track:65cfe15b3652c816e3f5426aef97451231fb53c3f7ed9454065151c8fbf010f5` |
+| 2 | `lemma` | [list_sum_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AlgebraBigOperatorsRingList.lean/declarations/list-sum-left.md) | 33 | `result-track:482216cf42a903f4eb73f598434442ba7c39d854e277e798165b8e6ed63cd6dd` |
+| 3 | `lemma` | [prod_map_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AlgebraBigOperatorsRingList.lean/declarations/prod-map-neg.md) | 43 | `result-track:bc5e9f22fe5b3fb1e9078b5eda50da3b222812b8cafd244a737675a3e11c52bb` |
+| 4 | `lemma` | [prod_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AlgebraBigOperatorsRingList.lean/declarations/prod-eq-zero.md) | 55 | `result-track:60c6ac65f61fd7e8b497fa226897c127fa4cd755bbd77b54f3123d1d514f5eb9` |
+| 5 | `lemma` | [prod_eq_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AlgebraBigOperatorsRingList.lean/declarations/prod-eq-zero-iff.md) | 66 | `result-track:5bd42a1dc55809012bf9b31c549c875a9a643e6ccdf45a231efffb9d337509d5` |
+| 6 | `lemma` | [prod_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AlgebraBigOperatorsRingList.lean/declarations/prod-ne-zero.md) | 70 | `result-track:f69134c4620a806c0f053600817c49e7d0b1359ce233c3d638cd94081fe18fe4` |
+| 7 | `lemma` | [sum_map_mul_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AlgebraBigOperatorsRingList.lean/declarations/sum-map-mul-left.md) | 77 | `result-track:edb93ef158cdb35c53632b262d3dba604bc5ce452a504185f485c61a71794edd` |
+| 8 | `lemma` | [sum_map_mul_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AlgebraBigOperatorsRingList.lean/declarations/sum-map-mul-right.md) | 80 | `result-track:42727a71e25d1fd4ddf09ae1c7ec4cd335ac3e24a2ce404ba6ec59c82e864ddb` |
+| 9 | `lemma` | [dvd_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AlgebraBigOperatorsRingList.lean/declarations/dvd-sum.md) | 85 | `result-track:ac3ac6e1bcb1e1df13ea805f27b4d78da93677d02099383b140866b0e17dcdb3` |
+| 10 | `lemma` | [sum_zipWith_distrib_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AlgebraBigOperatorsRingList.lean/declarations/sum-zipwith-distrib-left.md) | 92 | `result-track:897271ad2c8ceb907da16eae041cef4775afb8bec677dd9a983733c04b4bfb04` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

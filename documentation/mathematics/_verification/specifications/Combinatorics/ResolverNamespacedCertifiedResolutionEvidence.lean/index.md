@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ResolverNamespacedCertifiedResolutionEvidence.lean/index.md) · [Full source](../../../../Combinatorics/ResolverNamespacedCertifiedResolutionEvidence.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResolverNamespacedCertifiedResolutionEvidence.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResolverNamespacedCertifiedResolutionEvidence.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [FrontierResolution](../../../../Combinatorics/ResolverNamespacedCertifiedResolutionEvidence.lean/declarations/frontierresolution.md) | 23 | `declaration-track:2bb97d4757a8962b44d01cdd61a504558b5603ff4d736e6886a92afb35706a37` |
-| 2 | `inductive` | [CertifiedResolutionEvidence](../../../../Combinatorics/ResolverNamespacedCertifiedResolutionEvidence.lean/declarations/certifiedresolutionevidence.md) | 30 | `declaration-track:0575f4d6b3c877149064d31fae5f5ca4d878ae6d7dd283890e9e5f6674d50d53` |
-| 3 | `structure` | [FiniteCertifiedResolverInput](../../../../Combinatorics/ResolverNamespacedCertifiedResolutionEvidence.lean/declarations/finitecertifiedresolverinput.md) | 37 | `declaration-track:913565a834c1c32353c68ac8d2663ad93e21451d82dd639af53d7db0ff61839b` |
-| 4 | `def` | [resolveFiniteCertified](../../../../Combinatorics/ResolverNamespacedCertifiedResolutionEvidence.lean/declarations/resolvefinitecertified.md) | 48 | `declaration-track:b481892106648ce233f32d008f6af83f8f0887550dac1cb9e69d6c29f9f0de5b` |
-| 5 | `theorem` | [finite_certified_resolver_total](../../../../Combinatorics/ResolverNamespacedCertifiedResolutionEvidence.lean/declarations/finite-certified-resolver-total.md) | 67 | `result-track:dd32b57776eebdf1d927850d70234eafb2333a048da363bf8565d0180f73dbb7` |
+| 1 | `inductive` | [FrontierResolution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResolverNamespacedCertifiedResolutionEvidence.lean/declarations/frontierresolution.md) | 23 | `declaration-track:2bb97d4757a8962b44d01cdd61a504558b5603ff4d736e6886a92afb35706a37` |
+| 2 | `inductive` | [CertifiedResolutionEvidence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResolverNamespacedCertifiedResolutionEvidence.lean/declarations/certifiedresolutionevidence.md) | 30 | `declaration-track:0575f4d6b3c877149064d31fae5f5ca4d878ae6d7dd283890e9e5f6674d50d53` |
+| 3 | `structure` | [FiniteCertifiedResolverInput](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResolverNamespacedCertifiedResolutionEvidence.lean/declarations/finitecertifiedresolverinput.md) | 37 | `declaration-track:913565a834c1c32353c68ac8d2663ad93e21451d82dd639af53d7db0ff61839b` |
+| 4 | `def` | [resolveFiniteCertified](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResolverNamespacedCertifiedResolutionEvidence.lean/declarations/resolvefinitecertified.md) | 48 | `declaration-track:b481892106648ce233f32d008f6af83f8f0887550dac1cb9e69d6c29f9f0de5b` |
+| 5 | `theorem` | [finite_certified_resolver_total](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResolverNamespacedCertifiedResolutionEvidence.lean/declarations/finite-certified-resolver-total.md) | 67 | `result-track:dd32b57776eebdf1d927850d70234eafb2333a048da363bf8565d0180f73dbb7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

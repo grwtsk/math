@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/IsPowMulFaithfulNamespaced.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/IsPowMulFaithfulNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/IsPowMulFaithfulNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/IsPowMulFaithfulNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [contraction_of_isPowMul_of_boundedWrt](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/IsPowMulFaithfulNamespaced.lean/declarations/contraction-of-ispowmul-of-boundedwrt.md) | 40 | `result-track:afbe6abdde19aba7375d53ede81075ca35182cd049e9e99f7b11167c49ce9ef4` |
-| 2 | `theorem` | [contraction_of_isPowMul](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/IsPowMulFaithfulNamespaced.lean/declarations/contraction-of-ispowmul.md) | 64 | `result-track:97a3c2eddea6b80a269aa9b0d93af0987580fe62240cd9d6f216fc2264522518` |
-| 3 | `theorem` | [eq_seminorms](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/IsPowMulFaithfulNamespaced.lean/declarations/eq-seminorms.md) | 70 | `result-track:22e092ad7611a98433092d4f801d124b3bc3b0f259486f6c9b89c95e0d7bd9b5` |
-| 4 | `theorem` | [eq_of_powMul_faithful](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/IsPowMulFaithfulNamespaced.lean/declarations/eq-of-powmul-faithful.md) | 88 | `result-track:b0d5e3a72a70359a192c04d59c249361733553787f220999c5848fe4414b18b8` |
+| 1 | `theorem` | [contraction_of_isPowMul_of_boundedWrt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/IsPowMulFaithfulNamespaced.lean/declarations/contraction-of-ispowmul-of-boundedwrt.md) | 40 | `result-track:afbe6abdde19aba7375d53ede81075ca35182cd049e9e99f7b11167c49ce9ef4` |
+| 2 | `theorem` | [contraction_of_isPowMul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/IsPowMulFaithfulNamespaced.lean/declarations/contraction-of-ispowmul.md) | 64 | `result-track:97a3c2eddea6b80a269aa9b0d93af0987580fe62240cd9d6f216fc2264522518` |
+| 3 | `theorem` | [eq_seminorms](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/IsPowMulFaithfulNamespaced.lean/declarations/eq-seminorms.md) | 70 | `result-track:22e092ad7611a98433092d4f801d124b3bc3b0f259486f6c9b89c95e0d7bd9b5` |
+| 4 | `theorem` | [eq_of_powMul_faithful](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/IsPowMulFaithfulNamespaced.lean/declarations/eq-of-powmul-faithful.md) | 88 | `result-track:b0d5e3a72a70359a192c04d59c249361733553787f220999c5848fe4414b18b8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

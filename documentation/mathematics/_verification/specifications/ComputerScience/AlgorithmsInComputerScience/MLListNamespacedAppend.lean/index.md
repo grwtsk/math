@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/MLListNamespacedAppend.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/MLListNamespacedAppend.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MLListNamespacedAppend.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MLListNamespacedAppend.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [S](../../../../../ComputerScience/AlgorithmsInComputerScience/MLListNamespacedAppend.lean/declarations/s.md) | 17 | `declaration-track:2ace0a9e42ecf665bc8f9760a4f27ba07d2d54d7b6eaf176bf54b5c94609d3aa` |
-| 2 | `def` | [append](../../../../../ComputerScience/AlgorithmsInComputerScience/MLListNamespacedAppend.lean/declarations/append.md) | 18 | `declaration-track:4a741bd632a310bac58bc400d96fb04de68b613816cef48e100ffadddb3ed658` |
-| 3 | `def` | [F](../../../../../ComputerScience/AlgorithmsInComputerScience/MLListNamespacedAppend.lean/declarations/f.md) | 21 | `declaration-track:adb14814b7122ee5d50a84b85889222dc3607b08cf5f3a24f286d80e6694f944` |
-| 4 | `example` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/MLListNamespacedAppend.lean/declarations/example.md) | 36 | `declaration-track:1591bca42eb5f8449dbd3537f9a9d4c132d5ba480956e74bafedce1d75ec750a` |
-| 5 | `example` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/MLListNamespacedAppend.lean/declarations/example-source-edition-2.md) | 38 | `declaration-track:cdd6f6e45e0d00c3b2ef5ca024ef122b27b47125fd1d5f659186403f7c8f1630` |
-| 6 | `def` | [l1](../../../../../ComputerScience/AlgorithmsInComputerScience/MLListNamespacedAppend.lean/declarations/l1.md) | 43 | `declaration-track:e9ba7fc03f088f59a1455a70625aad63f6fe4d299cabe1c795c1426151a93406` |
-| 7 | `def` | [l2](../../../../../ComputerScience/AlgorithmsInComputerScience/MLListNamespacedAppend.lean/declarations/l2.md) | 44 | `declaration-track:b4859365a9e9653184613092a193dd6c01b6cf0f4134f5a34cb6b42a2fe5216d` |
-| 8 | `def` | [ll](../../../../../ComputerScience/AlgorithmsInComputerScience/MLListNamespacedAppend.lean/declarations/ll.md) | 45 | `declaration-track:bbe092f7158c47db91648bb596e7545909a18a6cd54451fee0b6d0617529fa45` |
-| 9 | `def` | [half_or_fail](../../../../../ComputerScience/AlgorithmsInComputerScience/MLListNamespacedAppend.lean/declarations/half-or-fail.md) | 51 | `declaration-track:8611312c4e60cbbda4bb926f18309068ee20a00b08ac1e50750ee1084b680dc0` |
+| 1 | `def` | [S](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MLListNamespacedAppend.lean/declarations/s.md) | 17 | `declaration-track:2ace0a9e42ecf665bc8f9760a4f27ba07d2d54d7b6eaf176bf54b5c94609d3aa` |
+| 2 | `def` | [append](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MLListNamespacedAppend.lean/declarations/append.md) | 18 | `declaration-track:4a741bd632a310bac58bc400d96fb04de68b613816cef48e100ffadddb3ed658` |
+| 3 | `def` | [F](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MLListNamespacedAppend.lean/declarations/f.md) | 21 | `declaration-track:adb14814b7122ee5d50a84b85889222dc3607b08cf5f3a24f286d80e6694f944` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MLListNamespacedAppend.lean/declarations/example.md) | 36 | `declaration-track:1591bca42eb5f8449dbd3537f9a9d4c132d5ba480956e74bafedce1d75ec750a` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MLListNamespacedAppend.lean/declarations/example-source-edition-2.md) | 38 | `declaration-track:cdd6f6e45e0d00c3b2ef5ca024ef122b27b47125fd1d5f659186403f7c8f1630` |
+| 6 | `def` | [l1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MLListNamespacedAppend.lean/declarations/l1.md) | 43 | `declaration-track:e9ba7fc03f088f59a1455a70625aad63f6fe4d299cabe1c795c1426151a93406` |
+| 7 | `def` | [l2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MLListNamespacedAppend.lean/declarations/l2.md) | 44 | `declaration-track:b4859365a9e9653184613092a193dd6c01b6cf0f4134f5a34cb6b42a2fe5216d` |
+| 8 | `def` | [ll](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MLListNamespacedAppend.lean/declarations/ll.md) | 45 | `declaration-track:bbe092f7158c47db91648bb596e7545909a18a6cd54451fee0b6d0617529fa45` |
+| 9 | `def` | [half_or_fail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MLListNamespacedAppend.lean/declarations/half-or-fail.md) | 51 | `declaration-track:8611312c4e60cbbda4bb926f18309068ee20a00b08ac1e50750ee1084b680dc0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

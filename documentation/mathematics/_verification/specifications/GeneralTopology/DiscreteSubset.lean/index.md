@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/DiscreteSubset.lean/index.md) · [Full source](../../../../GeneralTopology/DiscreteSubset.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiscreteSubset.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiscreteSubset.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [tendsto_cofinite_cocompact_iff](../../../../GeneralTopology/DiscreteSubset.lean/declarations/tendsto-cofinite-cocompact-iff.md) | 33 | `result-track:c533058ce2e18928f8b3038e4705a879fd7ac13ab787fbdef3476d176bea28ff` |
-| 2 | `lemma` | [Continuous.discrete_of_tendsto_cofinite_cocompact](../../../../GeneralTopology/DiscreteSubset.lean/declarations/continuous-discrete-of-tendsto-cofinite-cocompact.md) | 39 | `result-track:62d216957f086e51f724eb32cb30c16b17f9f9d14f4688d1fde83ba832978e37` |
-| 3 | `lemma` | [tendsto_cofinite_cocompact_of_discrete](../../../../GeneralTopology/DiscreteSubset.lean/declarations/tendsto-cofinite-cocompact-of-discrete.md) | 49 | `result-track:ee9fe3176d22b8299bf8a06a701c8b5671cee32021657bea6f54ea36ac007acb` |
-| 4 | `lemma` | [IsClosed.tendsto_coe_cofinite_of_discreteTopology](../../../../GeneralTopology/DiscreteSubset.lean/declarations/isclosed-tendsto-coe-cofinite-of-discretetopology.md) | 55 | `result-track:81f8daf52522b144ddb683324599f328168eea1c108339a4843df66c489d1e56` |
-| 5 | `lemma` | [IsClosed.tendsto_coe_cofinite_iff](../../../../GeneralTopology/DiscreteSubset.lean/declarations/isclosed-tendsto-coe-cofinite-iff.md) | 60 | `result-track:9b68120c0ad06ecc87bec38ab49c22d8207bda3809efc7cb074ca05c06b481ee` |
+| 1 | `lemma` | [tendsto_cofinite_cocompact_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiscreteSubset.lean/declarations/tendsto-cofinite-cocompact-iff.md) | 33 | `result-track:c533058ce2e18928f8b3038e4705a879fd7ac13ab787fbdef3476d176bea28ff` |
+| 2 | `lemma` | [Continuous.discrete_of_tendsto_cofinite_cocompact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiscreteSubset.lean/declarations/continuous-discrete-of-tendsto-cofinite-cocompact.md) | 39 | `result-track:62d216957f086e51f724eb32cb30c16b17f9f9d14f4688d1fde83ba832978e37` |
+| 3 | `lemma` | [tendsto_cofinite_cocompact_of_discrete](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiscreteSubset.lean/declarations/tendsto-cofinite-cocompact-of-discrete.md) | 49 | `result-track:ee9fe3176d22b8299bf8a06a701c8b5671cee32021657bea6f54ea36ac007acb` |
+| 4 | `lemma` | [IsClosed.tendsto_coe_cofinite_of_discreteTopology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiscreteSubset.lean/declarations/isclosed-tendsto-coe-cofinite-of-discretetopology.md) | 55 | `result-track:81f8daf52522b144ddb683324599f328168eea1c108339a4843df66c489d1e56` |
+| 5 | `lemma` | [IsClosed.tendsto_coe_cofinite_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DiscreteSubset.lean/declarations/isclosed-tendsto-coe-cofinite-iff.md) | 60 | `result-track:9b68120c0ad06ecc87bec38ab49c22d8207bda3809efc7cb074ca05c06b481ee` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

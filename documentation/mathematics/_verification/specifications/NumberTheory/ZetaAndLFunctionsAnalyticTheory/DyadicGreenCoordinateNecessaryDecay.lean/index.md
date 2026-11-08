@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenCoordinateNecessaryDecay.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenCoordinateNecessaryDecay.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenCoordinateNecessaryDecay.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenCoordinateNecessaryDecay.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.DyadicGreenCoordinateEnergyCriterion`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicGreenCoordinateEnergyCriterion.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.DyadicGreenCoordinateEnergyCriterion`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicGreenCoordinateEnergyCriterion.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [mass0_sq_le_arithmeticCoordinateStage](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenCoordinateNecessaryDecay.lean/declarations/mass0-sq-le-arithmeticcoordinatestage.md) | 34 | `result-track:00017bbe3960a0244f3a6d7f9293fbdd0785187ec8e17497a07a5bb42e6f6e85` |
-| 2 | `theorem` | [mass1_sq_le_arithmeticCoordinateStage](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenCoordinateNecessaryDecay.lean/declarations/mass1-sq-le-arithmeticcoordinatestage.md) | 45 | `result-track:0fd9605bb6a06ab59a9d6194052bebbd09ec8dc2702e70189fcc1c6827ea5a9c` |
-| 3 | `theorem` | [negOne_coordinate_sq_le_arithmeticCoordinateStage](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenCoordinateNecessaryDecay.lean/declarations/negone-coordinate-sq-le-arithmeticcoordinatestage.md) | 57 | `result-track:92fbb4121b19dc1d8bc9c141d80d4f234ca40bc3a13f1cf51520bf82b347628a` |
-| 4 | `theorem` | [one_coordinate_sq_le_arithmeticCoordinateStage](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenCoordinateNecessaryDecay.lean/declarations/one-coordinate-sq-le-arithmeticcoordinatestage.md) | 67 | `result-track:0691a3171b13d55cac41a0ba3513e2e3b4f2fb92074efa1791875a24ecfc3344` |
-| 5 | `theorem` | [coordinateBound_forces_mass0_sq_decay](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenCoordinateNecessaryDecay.lean/declarations/coordinatebound-forces-mass0-sq-decay.md) | 78 | `result-track:3af883cfd656fc7e31fb5dd15be4afb4f5184ad24dcbe31724b8841c9d190319` |
-| 6 | `theorem` | [coordinateBound_forces_mass1_sq_decay](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenCoordinateNecessaryDecay.lean/declarations/coordinatebound-forces-mass1-sq-decay.md) | 93 | `result-track:13c0abd0bb0f09dc5867e38a5850eff67fb1f313a80ed3c7a578667c8d328273` |
-| 7 | `theorem` | [coordinateBound_forces_negOne_sq_decay](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenCoordinateNecessaryDecay.lean/declarations/coordinatebound-forces-negone-sq-decay.md) | 108 | `result-track:96c1eb61256018379986dd1a2107a57a93161a4e25bc0575bb8843db6436e249` |
-| 8 | `theorem` | [coordinateBound_forces_one_sq_decay](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenCoordinateNecessaryDecay.lean/declarations/coordinatebound-forces-one-sq-decay.md) | 124 | `result-track:4c13d59116415906958fb3522c80c75bfd20d8ac77c5a3959c0cb72b8265074a` |
+| 1 | `theorem` | [mass0_sq_le_arithmeticCoordinateStage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenCoordinateNecessaryDecay.lean/declarations/mass0-sq-le-arithmeticcoordinatestage.md) | 34 | `result-track:00017bbe3960a0244f3a6d7f9293fbdd0785187ec8e17497a07a5bb42e6f6e85` |
+| 2 | `theorem` | [mass1_sq_le_arithmeticCoordinateStage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenCoordinateNecessaryDecay.lean/declarations/mass1-sq-le-arithmeticcoordinatestage.md) | 45 | `result-track:0fd9605bb6a06ab59a9d6194052bebbd09ec8dc2702e70189fcc1c6827ea5a9c` |
+| 3 | `theorem` | [negOne_coordinate_sq_le_arithmeticCoordinateStage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenCoordinateNecessaryDecay.lean/declarations/negone-coordinate-sq-le-arithmeticcoordinatestage.md) | 57 | `result-track:92fbb4121b19dc1d8bc9c141d80d4f234ca40bc3a13f1cf51520bf82b347628a` |
+| 4 | `theorem` | [one_coordinate_sq_le_arithmeticCoordinateStage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenCoordinateNecessaryDecay.lean/declarations/one-coordinate-sq-le-arithmeticcoordinatestage.md) | 67 | `result-track:0691a3171b13d55cac41a0ba3513e2e3b4f2fb92074efa1791875a24ecfc3344` |
+| 5 | `theorem` | [coordinateBound_forces_mass0_sq_decay](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenCoordinateNecessaryDecay.lean/declarations/coordinatebound-forces-mass0-sq-decay.md) | 78 | `result-track:3af883cfd656fc7e31fb5dd15be4afb4f5184ad24dcbe31724b8841c9d190319` |
+| 6 | `theorem` | [coordinateBound_forces_mass1_sq_decay](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenCoordinateNecessaryDecay.lean/declarations/coordinatebound-forces-mass1-sq-decay.md) | 93 | `result-track:13c0abd0bb0f09dc5867e38a5850eff67fb1f313a80ed3c7a578667c8d328273` |
+| 7 | `theorem` | [coordinateBound_forces_negOne_sq_decay](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenCoordinateNecessaryDecay.lean/declarations/coordinatebound-forces-negone-sq-decay.md) | 108 | `result-track:96c1eb61256018379986dd1a2107a57a93161a4e25bc0575bb8843db6436e249` |
+| 8 | `theorem` | [coordinateBound_forces_one_sq_decay](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenCoordinateNecessaryDecay.lean/declarations/coordinatebound-forces-one-sq-decay.md) | 124 | `result-track:4c13d59116415906958fb3522c80c75bfd20d8ac77c5a3959c0cb72b8265074a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

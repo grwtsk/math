@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AnalyticArithmeticKernel.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AnalyticArithmeticKernel.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AnalyticArithmeticKernel.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AnalyticArithmeticKernel.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,12 +46,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.ProofEvidence.DirichletResponseStatus`](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DirichletResponseStatusHistoricalSourceEdition2.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.ProofEvidence.MoebiusResponseStatus`](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MoebiusResponseStatusHistoricalSourceEdition2.lean/index.md) — import line 2; pinned internal source present.
-- [`GRWTSK.Analysis.CausalTranslation.ExponentialResponse`](../../../../../../RealFunctions/ExponentialResponse.lean/index.md) — import line 3; pinned internal source present.
-- [`GRWTSK.Analysis.AsymptoticAnalysis.MassWeightedRecurrence`](../../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/MassWeightedRecurrenceHistoricalSourceEdition2.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.ProofEvidence.MoebiusPrimeShellStatus`](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/MoebiusPrimeShellStatusHistoricalSourceEdition2.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.Analysis.InnerProductSpace.SignedWindowPacketCertificates`](../../../../../../MeasureAndIntegration/SignedWindowPacketCertificates.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.ProofEvidence.DirichletResponseStatus`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DirichletResponseStatusHistoricalSourceEdition2.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.ProofEvidence.MoebiusResponseStatus`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MoebiusResponseStatusHistoricalSourceEdition2.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.Analysis.CausalTranslation.ExponentialResponse`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExponentialResponse.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.Analysis.AsymptoticAnalysis.MassWeightedRecurrence`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/MassWeightedRecurrenceHistoricalSourceEdition2.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.ProofEvidence.MoebiusPrimeShellStatus`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/MoebiusPrimeShellStatusHistoricalSourceEdition2.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.InnerProductSpace.SignedWindowPacketCertificates`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SignedWindowPacketCertificates.lean/index.md) — import line 6; pinned internal source present.
 - `Lean.Util.CollectAxioms` — import line 7; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -63,7 +63,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [P04Audit.check](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AnalyticArithmeticKernel.lean/declarations/p04audit-check.md) | 15 | `declaration-track:2b3f4c0d5d525303d1c9ce26cdc9d0a28f582a588a7a9c980c7e65e2f04b7507` |
+| 1 | `def` | [P04Audit.check](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AnalyticArithmeticKernel.lean/declarations/p04audit-check.md) | 15 | `declaration-track:2b3f4c0d5d525303d1c9ce26cdc9d0a28f582a588a7a9c980c7e65e2f04b7507` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

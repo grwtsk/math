@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../SpecialFunctions/GaussianPoissonSummationPublic.lean/index.md) · [Full source](../../../../SpecialFunctions/GaussianPoissonSummationPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/GaussianPoissonSummationPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/GaussianPoissonSummationPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [rexp_neg_quadratic_isLittleO_rpow_atTop](../../../../SpecialFunctions/GaussianPoissonSummationPublic.lean/declarations/rexp-neg-quadratic-islittleo-rpow-attop.md) | 37 | `result-track:7580af30282307f750f6ef21d3bd7ec14544260426042242beaca4d3f2fe49d4` |
-| 2 | `lemma` | [cexp_neg_quadratic_isLittleO_rpow_atTop](../../../../SpecialFunctions/GaussianPoissonSummationPublic.lean/declarations/cexp-neg-quadratic-islittleo-rpow-attop.md) | 49 | `result-track:1eda76c2f614c151d3c559934332b7f207ee9369cdd33251d297422372beef4b` |
-| 3 | `lemma` | [cexp_neg_quadratic_isLittleO_abs_rpow_cocompact](../../../../SpecialFunctions/GaussianPoissonSummationPublic.lean/declarations/cexp-neg-quadratic-islittleo-abs-rpow-cocompact.md) | 56 | `result-track:7179b0456b99f277446198961edff6e33bda37c517215ba4c99ffee79270124d` |
-| 4 | `theorem` | [tendsto_rpow_abs_mul_exp_neg_mul_sq_cocompact](../../../../SpecialFunctions/GaussianPoissonSummationPublic.lean/declarations/tendsto-rpow-abs-mul-exp-neg-mul-sq-cocompact.md) | 68 | `result-track:c6603714bff0e3bbafaddb49cff55042e6ec0fa6d7fca32dbc8ad3f0778f5e48` |
-| 5 | `theorem` | [isLittleO_exp_neg_mul_sq_cocompact](../../../../SpecialFunctions/GaussianPoissonSummationPublic.lean/declarations/islittleo-exp-neg-mul-sq-cocompact.md) | 78 | `result-track:6f13f9c093b8dccd3d2363d290362c60bfc6300f197d1a314bd754051fc7ca54` |
-| 6 | `theorem` | [Complex.tsum_exp_neg_quadratic](../../../../SpecialFunctions/GaussianPoissonSummationPublic.lean/declarations/complex-tsum-exp-neg-quadratic.md) | 86 | `result-track:eda718a1975600d80eca4651b36d607299809389263804761482855d6194975f` |
-| 7 | `theorem` | [Complex.tsum_exp_neg_mul_int_sq](../../../../SpecialFunctions/GaussianPoissonSummationPublic.lean/declarations/complex-tsum-exp-neg-mul-int-sq.md) | 117 | `result-track:11262bc71928addc844cbf8bf11a18510df17359c9855e1a2a2025ec00f02419` |
-| 8 | `theorem` | [Real.tsum_exp_neg_mul_int_sq](../../../../SpecialFunctions/GaussianPoissonSummationPublic.lean/declarations/real-tsum-exp-neg-mul-int-sq.md) | 122 | `result-track:4096fe52cc450e7548e41e00f54289104e6fc6a5307f3e04136b486d42ba583d` |
+| 1 | `lemma` | [rexp_neg_quadratic_isLittleO_rpow_atTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/GaussianPoissonSummationPublic.lean/declarations/rexp-neg-quadratic-islittleo-rpow-attop.md) | 37 | `result-track:7580af30282307f750f6ef21d3bd7ec14544260426042242beaca4d3f2fe49d4` |
+| 2 | `lemma` | [cexp_neg_quadratic_isLittleO_rpow_atTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/GaussianPoissonSummationPublic.lean/declarations/cexp-neg-quadratic-islittleo-rpow-attop.md) | 49 | `result-track:1eda76c2f614c151d3c559934332b7f207ee9369cdd33251d297422372beef4b` |
+| 3 | `lemma` | [cexp_neg_quadratic_isLittleO_abs_rpow_cocompact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/GaussianPoissonSummationPublic.lean/declarations/cexp-neg-quadratic-islittleo-abs-rpow-cocompact.md) | 56 | `result-track:7179b0456b99f277446198961edff6e33bda37c517215ba4c99ffee79270124d` |
+| 4 | `theorem` | [tendsto_rpow_abs_mul_exp_neg_mul_sq_cocompact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/GaussianPoissonSummationPublic.lean/declarations/tendsto-rpow-abs-mul-exp-neg-mul-sq-cocompact.md) | 68 | `result-track:c6603714bff0e3bbafaddb49cff55042e6ec0fa6d7fca32dbc8ad3f0778f5e48` |
+| 5 | `theorem` | [isLittleO_exp_neg_mul_sq_cocompact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/GaussianPoissonSummationPublic.lean/declarations/islittleo-exp-neg-mul-sq-cocompact.md) | 78 | `result-track:6f13f9c093b8dccd3d2363d290362c60bfc6300f197d1a314bd754051fc7ca54` |
+| 6 | `theorem` | [Complex.tsum_exp_neg_quadratic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/GaussianPoissonSummationPublic.lean/declarations/complex-tsum-exp-neg-quadratic.md) | 86 | `result-track:eda718a1975600d80eca4651b36d607299809389263804761482855d6194975f` |
+| 7 | `theorem` | [Complex.tsum_exp_neg_mul_int_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/GaussianPoissonSummationPublic.lean/declarations/complex-tsum-exp-neg-mul-int-sq.md) | 117 | `result-track:11262bc71928addc844cbf8bf11a18510df17359c9855e1a2a2025ec00f02419` |
+| 8 | `theorem` | [Real.tsum_exp_neg_mul_int_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/GaussianPoissonSummationPublic.lean/declarations/real-tsum-exp-neg-mul-int-sq.md) | 122 | `result-track:4096fe52cc450e7548e41e00f54289104e6fc6a5307f3e04136b486d42ba583d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

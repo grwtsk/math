@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/UniqueNamespaced.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/UniqueNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/UniqueNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/UniqueNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [eq_condKernel_of_measure_eq_compProd'](../../../../ProbabilityTheoryAndStochasticProcesses/UniqueNamespaced.lean/declarations/eq-condkernel-of-measure-eq-compprod-source-edition-2.md) | 55 | `result-track:1457c7777d93ddf357e538264c4fdb7e9f03a866e0dd7a02756a723268924236` |
-| 2 | `lemma` | [eq_condKernel_of_measure_eq_compProd_real](../../../../ProbabilityTheoryAndStochasticProcesses/UniqueNamespaced.lean/declarations/eq-condkernel-of-measure-eq-compprod-real.md) | 67 | `result-track:5132bbaede132279671aaa0bdf658c082b9038b860ec107ac8b853445d695bbe` |
-| 3 | `theorem` | [eq_condKernel_of_measure_eq_compProd](../../../../ProbabilityTheoryAndStochasticProcesses/UniqueNamespaced.lean/declarations/eq-condkernel-of-measure-eq-compprod.md) | 88 | `result-track:0df1922f67555fabd8255adc8115a05eb5987be715469d5c8b47f58fd915d48b` |
-| 4 | `lemma` | [condKernel_compProd](../../../../ProbabilityTheoryAndStochasticProcesses/UniqueNamespaced.lean/declarations/condkernel-compprod.md) | 133 | `result-track:2c01b488419d7479ff69112006b4f5eb33f0ed71caeb574caa0f65e1a843e985` |
-| 5 | `lemma` | [Kernel.apply_eq_measure_condKernel_of_compProd_eq](../../../../ProbabilityTheoryAndStochasticProcesses/UniqueNamespaced.lean/declarations/kernel-apply-eq-measure-condkernel-of-compprod-eq.md) | 143 | `result-track:27a7d4be6b7daa9aa8c5ac1ad96fd2bb9835eb6be27301af91b05a7bc2953f15` |
-| 6 | `lemma` | [Kernel.condKernel_apply_eq_condKernel](../../../../ProbabilityTheoryAndStochasticProcesses/UniqueNamespaced.lean/declarations/kernel-condkernel-apply-eq-condkernel.md) | 159 | `result-track:f582939133ec3d0da507a9b884908a2f32d8811557cf5243bfb73fcf99b9e735` |
-| 7 | `lemma` | [condKernel_const](../../../../ProbabilityTheoryAndStochasticProcesses/UniqueNamespaced.lean/declarations/condkernel-const.md) | 164 | `result-track:b2eba7f74f37523da6e6bb1037c81bfe28af32de5d405aa2b69d60c1f37da459` |
-| 8 | `theorem` | [eq_condKernel_of_kernel_eq_compProd](../../../../ProbabilityTheoryAndStochasticProcesses/UniqueNamespaced.lean/declarations/eq-condkernel-of-kernel-eq-compprod.md) | 181 | `result-track:e74bea0a029258bbac7aed1d7cc141625e5534db8de9b2dfbedefcacf2462f60` |
+| 1 | `theorem` | [eq_condKernel_of_measure_eq_compProd'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/UniqueNamespaced.lean/declarations/eq-condkernel-of-measure-eq-compprod-source-edition-2.md) | 55 | `result-track:1457c7777d93ddf357e538264c4fdb7e9f03a866e0dd7a02756a723268924236` |
+| 2 | `lemma` | [eq_condKernel_of_measure_eq_compProd_real](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/UniqueNamespaced.lean/declarations/eq-condkernel-of-measure-eq-compprod-real.md) | 67 | `result-track:5132bbaede132279671aaa0bdf658c082b9038b860ec107ac8b853445d695bbe` |
+| 3 | `theorem` | [eq_condKernel_of_measure_eq_compProd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/UniqueNamespaced.lean/declarations/eq-condkernel-of-measure-eq-compprod.md) | 88 | `result-track:0df1922f67555fabd8255adc8115a05eb5987be715469d5c8b47f58fd915d48b` |
+| 4 | `lemma` | [condKernel_compProd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/UniqueNamespaced.lean/declarations/condkernel-compprod.md) | 133 | `result-track:2c01b488419d7479ff69112006b4f5eb33f0ed71caeb574caa0f65e1a843e985` |
+| 5 | `lemma` | [Kernel.apply_eq_measure_condKernel_of_compProd_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/UniqueNamespaced.lean/declarations/kernel-apply-eq-measure-condkernel-of-compprod-eq.md) | 143 | `result-track:27a7d4be6b7daa9aa8c5ac1ad96fd2bb9835eb6be27301af91b05a7bc2953f15` |
+| 6 | `lemma` | [Kernel.condKernel_apply_eq_condKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/UniqueNamespaced.lean/declarations/kernel-condkernel-apply-eq-condkernel.md) | 159 | `result-track:f582939133ec3d0da507a9b884908a2f32d8811557cf5243bfb73fcf99b9e735` |
+| 7 | `lemma` | [condKernel_const](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/UniqueNamespaced.lean/declarations/condkernel-const.md) | 164 | `result-track:b2eba7f74f37523da6e6bb1037c81bfe28af32de5d405aa2b69d60c1f37da459` |
+| 8 | `theorem` | [eq_condKernel_of_kernel_eq_compProd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/UniqueNamespaced.lean/declarations/eq-condkernel-of-kernel-eq-compprod.md) | 181 | `result-track:e74bea0a029258bbac7aed1d7cc141625e5534db8de9b2dfbedefcacf2462f60` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ContractionNamespacedNewtonContractionHasRoot.lean/index.md) · [Full source](../../../../GeneralTopology/ContractionNamespacedNewtonContractionHasRoot.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContractionNamespacedNewtonContractionHasRoot.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContractionNamespacedNewtonContractionHasRoot.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [newton_contraction_has_root](../../../../GeneralTopology/ContractionNamespacedNewtonContractionHasRoot.lean/declarations/newton-contraction-has-root.md) | 47 | `result-track:d02be8de55394377a4d12cd9e6c21b7884670f19b89bba0b0c5f42c6f298feae` |
-| 2 | `theorem` | [newton_contraction_unique_root](../../../../GeneralTopology/ContractionNamespacedNewtonContractionHasRoot.lean/declarations/newton-contraction-unique-root.md) | 385 | `result-track:c6f74387fabd28674af9f2ea794d62c124901bc5a6fdcea876c41e4b191b671e` |
-| 3 | `theorem` | [newtonIntervalGo_preserves_root](../../../../GeneralTopology/ContractionNamespacedNewtonContractionHasRoot.lean/declarations/newtonintervalgo-preserves-root.md) | 416 | `result-track:3ed8c9a00f63ded4ed0ff034205960367f8422af4502a680a9eacaadb34816d4` |
+| 1 | `theorem` | [newton_contraction_has_root](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContractionNamespacedNewtonContractionHasRoot.lean/declarations/newton-contraction-has-root.md) | 47 | `result-track:d02be8de55394377a4d12cd9e6c21b7884670f19b89bba0b0c5f42c6f298feae` |
+| 2 | `theorem` | [newton_contraction_unique_root](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContractionNamespacedNewtonContractionHasRoot.lean/declarations/newton-contraction-unique-root.md) | 385 | `result-track:c6f74387fabd28674af9f2ea794d62c124901bc5a6fdcea876c41e4b191b671e` |
+| 3 | `theorem` | [newtonIntervalGo_preserves_root](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContractionNamespacedNewtonContractionHasRoot.lean/declarations/newtonintervalgo-preserves-root.md) | 416 | `result-track:3ed8c9a00f63ded4ed0ff034205960367f8422af4502a680a9eacaadb34816d4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

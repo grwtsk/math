@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/Attempt03NamespacedScaledAmplitude.lean/index.md) · [Full source](../../../../GeneralTopology/Attempt03NamespacedScaledAmplitude.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Attempt03NamespacedScaledAmplitude.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Attempt03NamespacedScaledAmplitude.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [scaledAmplitude](../../../../GeneralTopology/Attempt03NamespacedScaledAmplitude.lean/declarations/scaledamplitude.md) | 28 | `declaration-track:4913115b91ad0b021c054ba9777abcfe540a6ee5668268855c6cbe7a349f696e` |
-| 2 | `def` | [leadingCoefficient](../../../../GeneralTopology/Attempt03NamespacedScaledAmplitude.lean/declarations/leadingcoefficient.md) | 32 | `declaration-track:5a8c8fc01d15f223de76d20995e9fa5b3c05c0f19e2aaed708238dc42183df95` |
-| 3 | `theorem` | [transformPolynomial_ratio](../../../../GeneralTopology/Attempt03NamespacedScaledAmplitude.lean/declarations/transformpolynomial-ratio.md) | 35 | `result-track:478f3e9ac9a9acb12f5b69c6ebc1e5e6eaca327cda6ca465401e92aa862eaf09` |
-| 4 | `theorem` | [transformPolynomial_ratio_tendsto](../../../../GeneralTopology/Attempt03NamespacedScaledAmplitude.lean/declarations/transformpolynomial-ratio-tendsto.md) | 43 | `result-track:80aee57a0dc3012ebfd9f1f18f504fca76cf3d2293417ff5deef33fc9d47b167` |
-| 5 | `theorem` | [negative_endpoint_exponential_tendsto](../../../../GeneralTopology/Attempt03NamespacedScaledAmplitude.lean/declarations/negative-endpoint-exponential-tendsto.md) | 64 | `result-track:1bd6a808a7c045b3bf2053842dd07411fd83dc557542c1b7ae320678a845cc0d` |
-| 6 | `theorem` | [sqrt_normalization_tendsto](../../../../GeneralTopology/Attempt03NamespacedScaledAmplitude.lean/declarations/sqrt-normalization-tendsto.md) | 74 | `result-track:afe8787805d54df1ab2df0e960a1b87ff153df0dbb353360d9f652286530dbee` |
-| 7 | `theorem` | [scaledAmplitude_exact](../../../../GeneralTopology/Attempt03NamespacedScaledAmplitude.lean/declarations/scaledamplitude-exact.md) | 81 | `result-track:d991116cd33a97ddd4d73e303b3e81cdf33ff5761b892628a8c20ea48e8c280e` |
+| 1 | `def` | [scaledAmplitude](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Attempt03NamespacedScaledAmplitude.lean/declarations/scaledamplitude.md) | 28 | `declaration-track:4913115b91ad0b021c054ba9777abcfe540a6ee5668268855c6cbe7a349f696e` |
+| 2 | `def` | [leadingCoefficient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Attempt03NamespacedScaledAmplitude.lean/declarations/leadingcoefficient.md) | 32 | `declaration-track:5a8c8fc01d15f223de76d20995e9fa5b3c05c0f19e2aaed708238dc42183df95` |
+| 3 | `theorem` | [transformPolynomial_ratio](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Attempt03NamespacedScaledAmplitude.lean/declarations/transformpolynomial-ratio.md) | 35 | `result-track:478f3e9ac9a9acb12f5b69c6ebc1e5e6eaca327cda6ca465401e92aa862eaf09` |
+| 4 | `theorem` | [transformPolynomial_ratio_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Attempt03NamespacedScaledAmplitude.lean/declarations/transformpolynomial-ratio-tendsto.md) | 43 | `result-track:80aee57a0dc3012ebfd9f1f18f504fca76cf3d2293417ff5deef33fc9d47b167` |
+| 5 | `theorem` | [negative_endpoint_exponential_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Attempt03NamespacedScaledAmplitude.lean/declarations/negative-endpoint-exponential-tendsto.md) | 64 | `result-track:1bd6a808a7c045b3bf2053842dd07411fd83dc557542c1b7ae320678a845cc0d` |
+| 6 | `theorem` | [sqrt_normalization_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Attempt03NamespacedScaledAmplitude.lean/declarations/sqrt-normalization-tendsto.md) | 74 | `result-track:afe8787805d54df1ab2df0e960a1b87ff153df0dbb353360d9f652286530dbee` |
+| 7 | `theorem` | [scaledAmplitude_exact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Attempt03NamespacedScaledAmplitude.lean/declarations/scaledamplitude-exact.md) | 81 | `result-track:d991116cd33a97ddd4d73e303b3e81cdf33ff5761b892628a8c20ea48e8c280e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

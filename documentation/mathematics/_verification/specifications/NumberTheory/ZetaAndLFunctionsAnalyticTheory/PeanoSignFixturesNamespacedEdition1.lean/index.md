@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PeanoSignFixturesNamespacedEdition1.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PeanoSignFixturesNamespacedEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PeanoSignFixturesNamespacedEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PeanoSignFixturesNamespacedEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [peano_five_nonnegative_with_negative_curvature](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PeanoSignFixturesNamespacedEdition1.lean/declarations/peano-five-nonnegative-with-negative-curvature.md) | 21 | `result-track:ffb6cc6b118f5128e6c83b0ec10cb8eff92908a2dc1dd89831ff8745efdf3966` |
-| 2 | `theorem` | [peano_five_curvature_at_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PeanoSignFixturesNamespacedEdition1.lean/declarations/peano-five-curvature-at-zero.md) | 36 | `result-track:79bffe01e7b952078252d5fd07b5aee1728a48238c336ad4760ebbe3cd4a8e3e` |
+| 1 | `theorem` | [peano_five_nonnegative_with_negative_curvature](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PeanoSignFixturesNamespacedEdition1.lean/declarations/peano-five-nonnegative-with-negative-curvature.md) | 21 | `result-track:ffb6cc6b118f5128e6c83b0ec10cb8eff92908a2dc1dd89831ff8745efdf3966` |
+| 2 | `theorem` | [peano_five_curvature_at_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PeanoSignFixturesNamespacedEdition1.lean/declarations/peano-five-curvature-at-zero.md) | 36 | `result-track:79bffe01e7b952078252d5fd07b5aee1728a48238c336ad4760ebbe3cd4a8e3e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PositiveConjugateQuartic.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PositiveConjugateQuartic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PositiveConjugateQuartic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PositiveConjugateQuartic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.Polynomial.ConjugateQuartic`](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PolynomialConjugateQuartic.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Algebra.Polynomial.ConjugateQuartic`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PolynomialConjugateQuartic.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PositiveConjugateQuartic.lean/declarations/example-source-edition-3.md) | 6 | `declaration-track:3a806ca2caa5cf9261a7ea0d46af1d0536b0dbbffcb90d34dd4375f99504fd08` |
-| 2 | `example` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PositiveConjugateQuartic.lean/declarations/example-source-edition-4.md) | 13 | `declaration-track:6ae5a15529a3ccfea09416b588e52fbd4c9b80a3b9943e22367021346242d37a` |
-| 3 | `example` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PositiveConjugateQuartic.lean/declarations/example.md) | 14 | `declaration-track:02d33ea60a4326f0af527edb003dac1306057549200a85933eceff5d62228e42` |
-| 4 | `example` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PositiveConjugateQuartic.lean/declarations/example-source-edition-6.md) | 17 | `declaration-track:b338e2d52d267cbe57eaf7a41669412bee26727779848230bcb01e0ee2c9a8d1` |
-| 5 | `example` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PositiveConjugateQuartic.lean/declarations/example-source-edition-2.md) | 18 | `declaration-track:310b8e7d7219854a84c3cc40afff4b838d8893fbf6eed89ec3c8cb9e79f8df3e` |
-| 6 | `example` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PositiveConjugateQuartic.lean/declarations/example-source-edition-7.md) | 19 | `declaration-track:d2ee85d3d6ac2f2a4b97e1f490f656224f44e62af3575d1ec02b1489b86e61d6` |
-| 7 | `example` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PositiveConjugateQuartic.lean/declarations/example-source-edition-5.md) | 22 | `declaration-track:a7d6036d3de06b5278dd0e702d74a89e0d71d98fc12e008496d5cf3e185e6f66` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PositiveConjugateQuartic.lean/declarations/example-source-edition-3.md) | 6 | `declaration-track:3a806ca2caa5cf9261a7ea0d46af1d0536b0dbbffcb90d34dd4375f99504fd08` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PositiveConjugateQuartic.lean/declarations/example-source-edition-4.md) | 13 | `declaration-track:6ae5a15529a3ccfea09416b588e52fbd4c9b80a3b9943e22367021346242d37a` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PositiveConjugateQuartic.lean/declarations/example.md) | 14 | `declaration-track:02d33ea60a4326f0af527edb003dac1306057549200a85933eceff5d62228e42` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PositiveConjugateQuartic.lean/declarations/example-source-edition-6.md) | 17 | `declaration-track:b338e2d52d267cbe57eaf7a41669412bee26727779848230bcb01e0ee2c9a8d1` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PositiveConjugateQuartic.lean/declarations/example-source-edition-2.md) | 18 | `declaration-track:310b8e7d7219854a84c3cc40afff4b838d8893fbf6eed89ec3c8cb9e79f8df3e` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PositiveConjugateQuartic.lean/declarations/example-source-edition-7.md) | 19 | `declaration-track:d2ee85d3d6ac2f2a4b97e1f490f656224f44e62af3575d1ec02b1489b86e61d6` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PositiveConjugateQuartic.lean/declarations/example-source-edition-5.md) | 22 | `declaration-track:a7d6036d3de06b5278dd0e702d74a89e0d71d98fc12e008496d5cf3e185e6f66` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

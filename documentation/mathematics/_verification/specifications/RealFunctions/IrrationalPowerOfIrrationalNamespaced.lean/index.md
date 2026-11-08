@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/IrrationalPowerOfIrrationalNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/IrrationalPowerOfIrrationalNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/IrrationalPowerOfIrrationalNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/IrrationalPowerOfIrrationalNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [not_irrational_rpow](../../../../RealFunctions/IrrationalPowerOfIrrationalNamespaced.lean/declarations/not-irrational-rpow.md) | 37 | `result-track:66747eb5074e91b627a991fa4a57b34cf73c05a0c5b6f1989487a16b8da0f8d0` |
+| 1 | `theorem` | [not_irrational_rpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/IrrationalPowerOfIrrationalNamespaced.lean/declarations/not-irrational-rpow.md) | 37 | `result-track:66747eb5074e91b627a991fa4a57b34cf73c05a0c5b6f1989487a16b8da0f8d0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

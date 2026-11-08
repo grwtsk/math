@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/NatSqrtNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/NatSqrtNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/NatSqrtNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/NatSqrtNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [nat_sqrt_helper](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/NatSqrtNamespacedPublic.lean/declarations/nat-sqrt-helper.md) | 31 | `result-track:686a732896e67c96f338e6b7b768098a9f068784fbce3f0db735329610e58f92` |
-| 2 | `theorem` | [isNat_sqrt](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/NatSqrtNamespacedPublic.lean/declarations/isnat-sqrt.md) | 37 | `result-track:c44e4d31ce787f4f77c1b6435998060678706e38596cc92bc8fedce8962f5746` |
-| 3 | `def` | [proveNatSqrt](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/NatSqrtNamespacedPublic.lean/declarations/provenatsqrt.md) | 42 | `declaration-track:bf8e05b6c583e76e17a31777f514d871a7c2655f358ed79797944ab71fc7ed26` |
-| 4 | `def` | [evalNatSqrt](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/NatSqrtNamespacedPublic.lean/declarations/evalnatsqrt.md) | 56 | `declaration-track:c37d9e863a0349f57b209a4374210027cf14495aea53b8449ff006dd01dcc1d2` |
+| 1 | `lemma` | [nat_sqrt_helper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/NatSqrtNamespacedPublic.lean/declarations/nat-sqrt-helper.md) | 31 | `result-track:686a732896e67c96f338e6b7b768098a9f068784fbce3f0db735329610e58f92` |
+| 2 | `theorem` | [isNat_sqrt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/NatSqrtNamespacedPublic.lean/declarations/isnat-sqrt.md) | 37 | `result-track:c44e4d31ce787f4f77c1b6435998060678706e38596cc92bc8fedce8962f5746` |
+| 3 | `def` | [proveNatSqrt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/NatSqrtNamespacedPublic.lean/declarations/provenatsqrt.md) | 42 | `declaration-track:bf8e05b6c583e76e17a31777f514d871a7c2655f358ed79797944ab71fc7ed26` |
+| 4 | `def` | [evalNatSqrt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/NatSqrtNamespacedPublic.lean/declarations/evalnatsqrt.md) | 56 | `declaration-track:c37d9e863a0349f57b209a4374210027cf14495aea53b8449ff006dd01dcc1d2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/EndpointThreeAlternative.lean/index.md) · [Full source](../../../../RealFunctions/EndpointThreeAlternative.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/EndpointThreeAlternative.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/EndpointThreeAlternative.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [endpoint_exponential_envelope_le_three](../../../../RealFunctions/EndpointThreeAlternative.lean/declarations/endpoint-exponential-envelope-le-three.md) | 13 | `result-track:72e6891264272447c8c4a956781856c43805b1e4beafa193b42b8cae54744993` |
+| 1 | `theorem` | [endpoint_exponential_envelope_le_three](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/EndpointThreeAlternative.lean/declarations/endpoint-exponential-envelope-le-three.md) | 13 | `result-track:72e6891264272447c8c4a956781856c43805b1e4beafa193b42b8cae54744993` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

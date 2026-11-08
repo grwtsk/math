@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/Limit.lean/index.md) · [Full source](../../../../MeasureAndIntegration/Limit.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Limit.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Limit.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [FlineF](../../../../MeasureAndIntegration/Limit.lean/declarations/flinef.md) | 32 | `declaration-track:38aa098aedebac7062bdfe4db05c9cfb4c7ba40e22ed3f0a504e23271733d263` |
-| 2 | `theorem` | [integrable_FlineF_of](../../../../MeasureAndIntegration/Limit.lean/declarations/integrable-flinef-of.md) | 38 | `result-track:4b7e578bba9db494e816001b941333c552e44ad5ed8dcf9109089bb939a2c280` |
-| 3 | `theorem` | [verticals_eq_F](../../../../MeasureAndIntegration/Limit.lean/declarations/verticals-eq-f.md) | 53 | `result-track:1bf689f4e2da6c81472f745b56c3f0cdd28168089732a750e96d6561b2dcf756` |
-| 4 | `theorem` | [horizontal_vanish_F](../../../../MeasureAndIntegration/Limit.lean/declarations/horizontal-vanish-f.md) | 96 | `result-track:69a7002f06472c308677cd67b0d505b137d0e8ddb52c96bc268ba9522dcaa5e8` |
-| 5 | `theorem` | [full_line_of_rectangles](../../../../MeasureAndIntegration/Limit.lean/declarations/full-line-of-rectangles.md) | 162 | `result-track:b68549c915db954daa6c169dc8cdc17572080678bb61b3eb5cfc42e59a88778d` |
+| 1 | `def` | [FlineF](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Limit.lean/declarations/flinef.md) | 32 | `declaration-track:38aa098aedebac7062bdfe4db05c9cfb4c7ba40e22ed3f0a504e23271733d263` |
+| 2 | `theorem` | [integrable_FlineF_of](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Limit.lean/declarations/integrable-flinef-of.md) | 38 | `result-track:4b7e578bba9db494e816001b941333c552e44ad5ed8dcf9109089bb939a2c280` |
+| 3 | `theorem` | [verticals_eq_F](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Limit.lean/declarations/verticals-eq-f.md) | 53 | `result-track:1bf689f4e2da6c81472f745b56c3f0cdd28168089732a750e96d6561b2dcf756` |
+| 4 | `theorem` | [horizontal_vanish_F](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Limit.lean/declarations/horizontal-vanish-f.md) | 96 | `result-track:69a7002f06472c308677cd67b0d505b137d0e8ddb52c96bc268ba9522dcaa5e8` |
+| 5 | `theorem` | [full_line_of_rectangles](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Limit.lean/declarations/full-line-of-rectangles.md) | 162 | `result-track:b68549c915db954daa6c169dc8cdc17572080678bb61b3eb5cfc42e59a88778d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

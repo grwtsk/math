@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SplitSparseCasesOnPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SplitSparseCasesOnPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SplitSparseCasesOnPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SplitSparseCasesOnPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,9 +62,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [rewriteGoalUsingEq](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SplitSparseCasesOnPublic.lean/declarations/rewritegoalusingeq.md) | 19 | `declaration-track:95d9b5a8f2ea5134a4d4aefd928949e47c12f454f2247c6f32aa3adb8a1cd1f8` |
-| 2 | `def` | [reduceSparseCasesOn](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SplitSparseCasesOnPublic.lean/declarations/reducesparsecaseson.md) | 26 | `declaration-track:2cf781b903e96e527c8d334a178641b78479b912b25455e5b54b58219ceb775f` |
-| 3 | `def` | [splitSparseCasesOn](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SplitSparseCasesOnPublic.lean/declarations/splitsparsecaseson.md) | 50 | `declaration-track:9eb226eeda16c546b89fe09d3f942c9f130ea056bc5c2ac9c3e8fdaa70c763fa` |
+| 1 | `def` | [rewriteGoalUsingEq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SplitSparseCasesOnPublic.lean/declarations/rewritegoalusingeq.md) | 19 | `declaration-track:95d9b5a8f2ea5134a4d4aefd928949e47c12f454f2247c6f32aa3adb8a1cd1f8` |
+| 2 | `def` | [reduceSparseCasesOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SplitSparseCasesOnPublic.lean/declarations/reducesparsecaseson.md) | 26 | `declaration-track:2cf781b903e96e527c8d334a178641b78479b912b25455e5b54b58219ceb775f` |
+| 3 | `def` | [splitSparseCasesOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SplitSparseCasesOnPublic.lean/declarations/splitsparsecaseson.md) | 50 | `declaration-track:9eb226eeda16c546b89fe09d3f942c9f130ea056bc5c2ac9c3e8fdaa70c763fa` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/AlgebraLocalization.lean/index.md) · [Full source](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/AlgebraLocalization.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/AlgebraLocalization.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/AlgebraLocalization.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Localization.ringTopology](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/AlgebraLocalization.lean/declarations/localization-ringtopology.md) | 30 | `declaration-track:d9011654d5acb69893e08e1d535684e91f3d95ef91a8f2bd13a89564f4e3f5b4` |
-| 2 | `instance` | [(anonymous)](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/AlgebraLocalization.lean/declarations/instance-source-edition-2.md) | 33 | `declaration-track:450b0d475b58c8804928bef24fd83036190e9523b1094c9084d5b7f01bc978a0` |
-| 3 | `instance` | [(anonymous)](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/AlgebraLocalization.lean/declarations/instance.md) | 36 | `declaration-track:05efe05e89a69a8686a51f162e79227f47563fa505be14c43d6820a6c58a6290` |
+| 1 | `def` | [Localization.ringTopology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/AlgebraLocalization.lean/declarations/localization-ringtopology.md) | 30 | `declaration-track:d9011654d5acb69893e08e1d535684e91f3d95ef91a8f2bd13a89564f4e3f5b4` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/AlgebraLocalization.lean/declarations/instance-source-edition-2.md) | 33 | `declaration-track:450b0d475b58c8804928bef24fd83036190e9523b1094c9084d5b7f01bc978a0` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/AlgebraLocalization.lean/declarations/instance.md) | 36 | `declaration-track:05efe05e89a69a8686a51f162e79227f47563fa505be14c43d6820a6c58a6290` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

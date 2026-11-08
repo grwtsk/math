@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ByteMatrixNamespacedBytesToMatrixWith.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ByteMatrixNamespacedBytesToMatrixWith.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ByteMatrixNamespacedBytesToMatrixWith.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ByteMatrixNamespacedBytesToMatrixWith.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [bytesToMatrixWith](../../../../../ComputerScience/AlgorithmsInComputerScience/ByteMatrixNamespacedBytesToMatrixWith.lean/declarations/bytestomatrixwith.md) | 27 | `declaration-track:af79255ceb5c3c9fdeca992a3196d28b09cee9d4c35e7380bf2d8275294d75cf` |
-| 2 | `def` | [matrixToBytesWith](../../../../../ComputerScience/AlgorithmsInComputerScience/ByteMatrixNamespacedBytesToMatrixWith.lean/declarations/matrixtobyteswith.md) | 34 | `declaration-track:86ed6bd7088c448354f8ee8a3121da61f45735875d041de217bc7b2c276531eb` |
-| 3 | `theorem` | [matrixToBytes?_bytesToMatrix_of_codec](../../../../../ComputerScience/AlgorithmsInComputerScience/ByteMatrixNamespacedBytesToMatrixWith.lean/declarations/matrixtobytes-bytestomatrix-of-codec.md) | 46 | `result-track:fa09c8b342c83361797fa1778275b7ecbd1001ac409faa1d0e35603c4b4b6ec7` |
+| 1 | `def` | [bytesToMatrixWith](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ByteMatrixNamespacedBytesToMatrixWith.lean/declarations/bytestomatrixwith.md) | 27 | `declaration-track:af79255ceb5c3c9fdeca992a3196d28b09cee9d4c35e7380bf2d8275294d75cf` |
+| 2 | `def` | [matrixToBytesWith](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ByteMatrixNamespacedBytesToMatrixWith.lean/declarations/matrixtobyteswith.md) | 34 | `declaration-track:86ed6bd7088c448354f8ee8a3121da61f45735875d041de217bc7b2c276531eb` |
+| 3 | `theorem` | [matrixToBytes?_bytesToMatrix_of_codec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ByteMatrixNamespacedBytesToMatrixWith.lean/declarations/matrixtobytes-bytestomatrix-of-codec.md) | 46 | `result-track:fa09c8b342c83361797fa1778275b7ecbd1001ac409faa1d0e35603c4b4b6ec7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

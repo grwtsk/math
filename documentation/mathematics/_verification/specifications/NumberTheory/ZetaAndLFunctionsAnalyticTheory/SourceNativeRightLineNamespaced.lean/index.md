@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceNativeRightLineNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceNativeRightLineNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceNativeRightLineNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceNativeRightLineNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [polynomial_norm_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceNativeRightLineNamespaced.lean/declarations/polynomial-norm-le.md) | 30 | `result-track:6fccab66c50ade631c3326446716937559b269387ef7cf55cc83f76cd20bd635` |
-| 2 | `theorem` | [bilateral_right_decay](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceNativeRightLineNamespaced.lean/declarations/bilateral-right-decay.md) | 54 | `result-track:2a03d9f01f5362eee5db2c6d50284c4af9936a1ec28d18a1af76cc95ad1025a6` |
-| 3 | `theorem` | [normalization_floor](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceNativeRightLineNamespaced.lean/declarations/normalization-floor.md) | 107 | `result-track:2352206369752f68d8f69d3094ec3793f8b13d323c5a0db3691716e6b3fd2bb6` |
-| 4 | `theorem` | [nativeMellin_right_decay](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceNativeRightLineNamespaced.lean/declarations/nativemellin-right-decay.md) | 116 | `result-track:152d381b01bbdfdc3ec585229ad84e3be48df756f5919aa7d43e512c278226ee` |
-| 5 | `theorem` | [nativeMellin_two_line_decay](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceNativeRightLineNamespaced.lean/declarations/nativemellin-two-line-decay.md) | 152 | `result-track:695d2598a8f61d542e13ed5264da292f3a96bacf88ec60ce0a7d8192efbcc7f2` |
+| 1 | `theorem` | [polynomial_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceNativeRightLineNamespaced.lean/declarations/polynomial-norm-le.md) | 30 | `result-track:6fccab66c50ade631c3326446716937559b269387ef7cf55cc83f76cd20bd635` |
+| 2 | `theorem` | [bilateral_right_decay](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceNativeRightLineNamespaced.lean/declarations/bilateral-right-decay.md) | 54 | `result-track:2a03d9f01f5362eee5db2c6d50284c4af9936a1ec28d18a1af76cc95ad1025a6` |
+| 3 | `theorem` | [normalization_floor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceNativeRightLineNamespaced.lean/declarations/normalization-floor.md) | 107 | `result-track:2352206369752f68d8f69d3094ec3793f8b13d323c5a0db3691716e6b3fd2bb6` |
+| 4 | `theorem` | [nativeMellin_right_decay](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceNativeRightLineNamespaced.lean/declarations/nativemellin-right-decay.md) | 116 | `result-track:152d381b01bbdfdc3ec585229ad84e3be48df756f5919aa7d43e512c278226ee` |
+| 5 | `theorem` | [nativeMellin_two_line_decay](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceNativeRightLineNamespaced.lean/declarations/nativemellin-two-line-decay.md) | 152 | `result-track:695d2598a8f61d542e13ed5264da292f3a96bacf88ec60ce0a7d8192efbcc7f2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

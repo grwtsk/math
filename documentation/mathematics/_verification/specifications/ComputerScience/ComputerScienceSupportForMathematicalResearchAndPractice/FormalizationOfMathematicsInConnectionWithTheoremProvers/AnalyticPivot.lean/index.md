@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AnalyticPivot.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AnalyticPivot.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AnalyticPivot.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AnalyticPivot.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [analyticEquilibrium](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AnalyticPivot.lean/declarations/analyticequilibrium.md) | 18 | `declaration-track:8e9b3e6b2f3aaad42b0bdf6a20651cfe84768c8135bb7fbdb8dda463b5ac469b` |
-| 2 | `def` | [CenteredAroundHalf](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AnalyticPivot.lean/declarations/centeredaroundhalf.md) | 20 | `declaration-track:0901a5c86dd17c30e9ee17cf0870e0ddaf376fbbb8176d5add22dfa8b33f5af1` |
+| 1 | `def` | [analyticEquilibrium](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AnalyticPivot.lean/declarations/analyticequilibrium.md) | 18 | `declaration-track:8e9b3e6b2f3aaad42b0bdf6a20651cfe84768c8135bb7fbdb8dda463b5ac469b` |
+| 2 | `def` | [CenteredAroundHalf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AnalyticPivot.lean/declarations/centeredaroundhalf.md) | 20 | `declaration-track:0901a5c86dd17c30e9ee17cf0870e0ddaf376fbbb8176d5add22dfa8b33f5af1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

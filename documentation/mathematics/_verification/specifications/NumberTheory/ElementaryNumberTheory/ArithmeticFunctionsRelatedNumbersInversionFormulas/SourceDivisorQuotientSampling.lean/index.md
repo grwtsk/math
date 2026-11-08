@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceDivisorQuotientSampling.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceDivisorQuotientSampling.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceDivisorQuotientSampling.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceDivisorQuotientSampling.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [divisorMultiplesInteraction_eq_quotient_sub_diagonal](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceDivisorQuotientSampling.lean/declarations/divisormultiplesinteraction-eq-quotient-sub-diagonal.md) | 28 | `result-track:6b2d3b15916233cad228682460168740ba1a0e2c6f1ad51e63ff9015ca73e66e` |
-| 2 | `theorem` | [divisorRemainder_eq_quotient_sampling](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceDivisorQuotientSampling.lean/declarations/divisorremainder-eq-quotient-sampling.md) | 68 | `result-track:9ba63f7e545b84efcaa2d8b79a9f04ea8bdb0f726a8ee7b051758a0a8673513b` |
-| 3 | `theorem` | [actual_multiple_eq_plain_sample](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceDivisorQuotientSampling.lean/declarations/actual-multiple-eq-plain-sample.md) | 83 | `result-track:5f218c99d73fa7982536708b672c0a99f1c629d6ddf208922ae4db170feb1f79` |
-| 4 | `theorem` | [actual_full_multiple_sample_sub_main_abs_le](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceDivisorQuotientSampling.lean/declarations/actual-full-multiple-sample-sub-main-abs-le.md) | 95 | `result-track:577cf5396a2cf31775237f99100fbb52d0bb9ecf37d469a26be83d1534cc4e49` |
+| 1 | `theorem` | [divisorMultiplesInteraction_eq_quotient_sub_diagonal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceDivisorQuotientSampling.lean/declarations/divisormultiplesinteraction-eq-quotient-sub-diagonal.md) | 28 | `result-track:6b2d3b15916233cad228682460168740ba1a0e2c6f1ad51e63ff9015ca73e66e` |
+| 2 | `theorem` | [divisorRemainder_eq_quotient_sampling](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceDivisorQuotientSampling.lean/declarations/divisorremainder-eq-quotient-sampling.md) | 68 | `result-track:9ba63f7e545b84efcaa2d8b79a9f04ea8bdb0f726a8ee7b051758a0a8673513b` |
+| 3 | `theorem` | [actual_multiple_eq_plain_sample](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceDivisorQuotientSampling.lean/declarations/actual-multiple-eq-plain-sample.md) | 83 | `result-track:5f218c99d73fa7982536708b672c0a99f1c629d6ddf208922ae4db170feb1f79` |
+| 4 | `theorem` | [actual_full_multiple_sample_sub_main_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceDivisorQuotientSampling.lean/declarations/actual-full-multiple-sample-sub-main-abs-le.md) | 95 | `result-track:577cf5396a2cf31775237f99100fbb52d0bb9ecf37d469a26be83d1534cc4e49` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

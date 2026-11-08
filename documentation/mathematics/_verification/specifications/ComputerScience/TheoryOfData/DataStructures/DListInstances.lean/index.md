@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/DListInstances.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/DListInstances.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DListInstances.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DListInstances.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [DList.listEquivDList](../../../../../../ComputerScience/TheoryOfData/DataStructures/DListInstances.lean/declarations/dlist-listequivdlist.md) | 26 | `declaration-track:a0224681bb1e387b4040bd5870af56c0224bee49a4ee2c479d2fa4d0aa73b95d` |
-| 2 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/DListInstances.lean/declarations/instance-source-edition-2.md) | 32 | `declaration-track:7ebde4b495d24eb99f098701a70ef290f3f73a71c72b49c64de21746325686c7` |
-| 3 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/DListInstances.lean/declarations/instance.md) | 35 | `declaration-track:30cf4cde4e71189c0112ee63161beeb827158fb6bc260daec36a1fdece32a7bd` |
-| 4 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/DListInstances.lean/declarations/instance-source-edition-3.md) | 38 | `declaration-track:b560b4ec4ddd0e8b7afef48077a001d76756e2342c0d210e936f7095c48d0da3` |
+| 1 | `def` | [DList.listEquivDList](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DListInstances.lean/declarations/dlist-listequivdlist.md) | 26 | `declaration-track:a0224681bb1e387b4040bd5870af56c0224bee49a4ee2c479d2fa4d0aa73b95d` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DListInstances.lean/declarations/instance-source-edition-2.md) | 32 | `declaration-track:7ebde4b495d24eb99f098701a70ef290f3f73a71c72b49c64de21746325686c7` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DListInstances.lean/declarations/instance.md) | 35 | `declaration-track:30cf4cde4e71189c0112ee63161beeb827158fb6bc260daec36a1fdece32a7bd` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DListInstances.lean/declarations/instance-source-edition-3.md) | 38 | `declaration-track:b560b4ec4ddd0e8b7afef48077a001d76756e2342c0d210e936f7095c48d0da3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

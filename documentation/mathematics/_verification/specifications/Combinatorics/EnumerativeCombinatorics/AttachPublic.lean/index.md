@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/EnumerativeCombinatorics/AttachPublic.lean/index.md) · [Full source](../../../../../Combinatorics/EnumerativeCombinatorics/AttachPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/AttachPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/AttachPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [attach](../../../../../Combinatorics/EnumerativeCombinatorics/AttachPublic.lean/declarations/attach.md) | 46 | `declaration-track:39a90bafc85d2bcdd444878b8c2088f88e8b72e8ac95f498aa30e131f9b7f2e4` |
-| 2 | `theorem` | [attach_val](../../../../../Combinatorics/EnumerativeCombinatorics/AttachPublic.lean/declarations/attach-val.md) | 50 | `result-track:c288830bb997c0bbd0f011a3f4d9c05e08bf1abc0edfb51f1bebfecdc245e44e` |
-| 3 | `theorem` | [mem_attach](../../../../../Combinatorics/EnumerativeCombinatorics/AttachPublic.lean/declarations/mem-attach.md) | 54 | `result-track:5acda081c534e864117fb5a51ec07cc82ffe0ca723734b7fb2085837cdf9297d` |
-| 4 | `theorem` | [coe_attach](../../../../../Combinatorics/EnumerativeCombinatorics/AttachPublic.lean/declarations/coe-attach.md) | 58 | `result-track:864eb9893d3b12abc15e26b1e01d4889ba8d56f4b54e8b6fe728615bc1aaa130` |
+| 1 | `def` | [attach](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/AttachPublic.lean/declarations/attach.md) | 46 | `declaration-track:39a90bafc85d2bcdd444878b8c2088f88e8b72e8ac95f498aa30e131f9b7f2e4` |
+| 2 | `theorem` | [attach_val](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/AttachPublic.lean/declarations/attach-val.md) | 50 | `result-track:c288830bb997c0bbd0f011a3f4d9c05e08bf1abc0edfb51f1bebfecdc245e44e` |
+| 3 | `theorem` | [mem_attach](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/AttachPublic.lean/declarations/mem-attach.md) | 54 | `result-track:5acda081c534e864117fb5a51ec07cc82ffe0ca723734b7fb2085837cdf9297d` |
+| 4 | `theorem` | [coe_attach](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/AttachPublic.lean/declarations/coe-attach.md) | 58 | `result-track:864eb9893d3b12abc15e26b1e01d4889ba8d56f4b54e8b6fe728615bc1aaa130` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

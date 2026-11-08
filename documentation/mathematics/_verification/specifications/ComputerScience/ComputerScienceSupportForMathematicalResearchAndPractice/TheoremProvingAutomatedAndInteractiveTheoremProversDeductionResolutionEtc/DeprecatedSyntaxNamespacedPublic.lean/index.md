@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DeprecatedSyntaxNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DeprecatedSyntaxNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DeprecatedSyntaxNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DeprecatedSyntaxNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SyntaxDeprecationEntry](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DeprecatedSyntaxNamespacedPublic.lean/declarations/syntaxdeprecationentry.md) | 35 | `declaration-track:41a4f67c71eb6e9c31e677ded6e289d12176e24a41c223713673c2e2842956e8` |
-| 2 | `builtin_initialize` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DeprecatedSyntaxNamespacedPublic.lean/declarations/builtin-initialize.md) | 43 | `declaration-track:09f5cebcfc2645a18a26a566fbd1d8d15b8e7aa6e7c1f4b0046be4d8313dc746` |
-| 3 | `def` | [checkDeprecatedSyntax](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DeprecatedSyntaxNamespacedPublic.lean/declarations/checkdeprecatedsyntax.md) | 56 | `declaration-track:46b497aa108471893a6734b1b0ef642609952056c3f0e5b8adc445a4e16d15f9` |
+| 1 | `structure` | [SyntaxDeprecationEntry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DeprecatedSyntaxNamespacedPublic.lean/declarations/syntaxdeprecationentry.md) | 35 | `declaration-track:41a4f67c71eb6e9c31e677ded6e289d12176e24a41c223713673c2e2842956e8` |
+| 2 | `builtin_initialize` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DeprecatedSyntaxNamespacedPublic.lean/declarations/builtin-initialize.md) | 43 | `declaration-track:09f5cebcfc2645a18a26a566fbd1d8d15b8e7aa6e7c1f4b0046be4d8313dc746` |
+| 3 | `def` | [checkDeprecatedSyntax](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DeprecatedSyntaxNamespacedPublic.lean/declarations/checkdeprecatedsyntax.md) | 56 | `declaration-track:46b497aa108471893a6734b1b0ef642609952056c3f0e5b8adc445a4e16d15f9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

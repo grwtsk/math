@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/BraidGaps.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/BraidGaps.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BraidGaps.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BraidGaps.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [TaxonomyGap](../../../../../ComputerScience/AlgorithmsInComputerScience/BraidGaps.lean/declarations/taxonomygap.md) | 9 | `declaration-track:4bee48d8ba040d7efdd1862c498f3543fdfa89244deeb82f1a0462ac3017c162` |
-| 2 | `structure` | [GapReport](../../../../../ComputerScience/AlgorithmsInComputerScience/BraidGaps.lean/declarations/gapreport.md) | 15 | `declaration-track:299b66dfed5b05a54176a5cb3ee9f7313da8a8bdea1f16db7f0a7116fcc1b2f9` |
-| 3 | `def` | [noTaxonomyGaps](../../../../../ComputerScience/AlgorithmsInComputerScience/BraidGaps.lean/declarations/notaxonomygaps.md) | 20 | `declaration-track:13fd7f0d48b98e7285384466ea9cf678cc90d77a974eb742aee4b9d4ea51bcc7` |
-| 4 | `theorem` | [noTaxonomyGaps_closed](../../../../../ComputerScience/AlgorithmsInComputerScience/BraidGaps.lean/declarations/notaxonomygaps-closed.md) | 22 | `result-track:d93046f0abe870671ded8e9c9152274ee435ef7f3091fe256128dd8a4f3fab4a` |
+| 1 | `inductive` | [TaxonomyGap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BraidGaps.lean/declarations/taxonomygap.md) | 9 | `declaration-track:4bee48d8ba040d7efdd1862c498f3543fdfa89244deeb82f1a0462ac3017c162` |
+| 2 | `structure` | [GapReport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BraidGaps.lean/declarations/gapreport.md) | 15 | `declaration-track:299b66dfed5b05a54176a5cb3ee9f7313da8a8bdea1f16db7f0a7116fcc1b2f9` |
+| 3 | `def` | [noTaxonomyGaps](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BraidGaps.lean/declarations/notaxonomygaps.md) | 20 | `declaration-track:13fd7f0d48b98e7285384466ea9cf678cc90d77a974eb742aee4b9d4ea51bcc7` |
+| 4 | `theorem` | [noTaxonomyGaps_closed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BraidGaps.lean/declarations/notaxonomygaps-closed.md) | 22 | `result-track:d93046f0abe870671ded8e9c9152274ee435ef7f3091fe256128dd8a4f3fab4a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

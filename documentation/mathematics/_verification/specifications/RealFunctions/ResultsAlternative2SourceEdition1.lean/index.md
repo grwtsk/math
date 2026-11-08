@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/ResultsAlternative2SourceEdition1.lean/index.md) · [Full source](../../../../RealFunctions/ResultsAlternative2SourceEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ResultsAlternative2SourceEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ResultsAlternative2SourceEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [conj_apply_symm](../../../../RealFunctions/ResultsAlternative2SourceEdition1.lean/declarations/conj-apply-symm.md) | 22 | `result-track:f1153ba90730b7c55b930e12770696200497ea1d45087b6e113c19bf1ddf3f20` |
+| 1 | `theorem` | [conj_apply_symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ResultsAlternative2SourceEdition1.lean/declarations/conj-apply-symm.md) | 22 | `result-track:f1153ba90730b7c55b930e12770696200497ea1d45087b6e113c19bf1ddf3f20` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

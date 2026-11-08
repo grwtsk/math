@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/PFRProfileNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/PFRProfileNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PFRProfileNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PFRProfileNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ParameterDependency](../../../../../ComputerScience/AlgorithmsInComputerScience/PFRProfileNamespaced.lean/declarations/parameterdependency.md) | 15 | `declaration-track:5e59a297e138b2e3518508a6f147ebc0014bec3ca83689a8598de6cbba8370fb` |
-| 2 | `structure` | [PFRProfile](../../../../../ComputerScience/AlgorithmsInComputerScience/PFRProfileNamespaced.lean/declarations/pfrprofile.md) | 21 | `declaration-track:b9b4f49596d442991bb07511166391bb6a6135731f1f863630c09856ea3a1533` |
+| 1 | `structure` | [ParameterDependency](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PFRProfileNamespaced.lean/declarations/parameterdependency.md) | 15 | `declaration-track:5e59a297e138b2e3518508a6f147ebc0014bec3ca83689a8598de6cbba8370fb` |
+| 2 | `structure` | [PFRProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PFRProfileNamespaced.lean/declarations/pfrprofile.md) | 21 | `declaration-track:b9b4f49596d442991bb07511166391bb6a6135731f1f863630c09856ea3a1533` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

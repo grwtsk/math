@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/LiesOverInstancesPublic.lean/index.md) · [Full source](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/LiesOverInstancesPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/LiesOverInstancesPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/LiesOverInstancesPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [completionMap](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/LiesOverInstancesPublic.lean/declarations/completionmap.md) | 31 | `declaration-track:ff53e4b1058dc70366a96ac66fc2969f8bb6f31b839d6bcf7e0a7fec1f9a71d0` |
-| 2 | `theorem` | [continuous_completionMap](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/LiesOverInstancesPublic.lean/declarations/continuous-completionmap.md) | 36 | `result-track:d87b5e8290c003482af1b9517821bbc87877149d00db7b3a1046d5d329315ed4` |
-| 3 | `theorem` | [completionMap_coe](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/LiesOverInstancesPublic.lean/declarations/completionmap-coe.md) | 40 | `result-track:4e8d76cbce0c8149bd6dac1ca94b1e331e2731262ad8be885cddbca42fbd40ac` |
-| 4 | `instance` | [(anonymous)](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/LiesOverInstancesPublic.lean/declarations/instance.md) | 46 | `declaration-track:0047ad75a5093869dd433e5bb55a4905d291583bf7108099126a0e0bfcab2a2c` |
-| 5 | `instance` | [(anonymous)](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/LiesOverInstancesPublic.lean/declarations/instance-source-edition-2.md) | 48 | `declaration-track:25e7236ccb38949a42142b66cc54061749f43c67c970f4aba674d5ab4a0740dd` |
-| 6 | `instance` | [(anonymous)](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/LiesOverInstancesPublic.lean/declarations/instance-source-edition-3.md) | 57 | `declaration-track:eebc89d4d75c9041eaae30500d56d2799197ca984fc001eac67bad4aced0b25c` |
+| 1 | `def` | [completionMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/LiesOverInstancesPublic.lean/declarations/completionmap.md) | 31 | `declaration-track:ff53e4b1058dc70366a96ac66fc2969f8bb6f31b839d6bcf7e0a7fec1f9a71d0` |
+| 2 | `theorem` | [continuous_completionMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/LiesOverInstancesPublic.lean/declarations/continuous-completionmap.md) | 36 | `result-track:d87b5e8290c003482af1b9517821bbc87877149d00db7b3a1046d5d329315ed4` |
+| 3 | `theorem` | [completionMap_coe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/LiesOverInstancesPublic.lean/declarations/completionmap-coe.md) | 40 | `result-track:4e8d76cbce0c8149bd6dac1ca94b1e331e2731262ad8be885cddbca42fbd40ac` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/LiesOverInstancesPublic.lean/declarations/instance.md) | 46 | `declaration-track:0047ad75a5093869dd433e5bb55a4905d291583bf7108099126a0e0bfcab2a2c` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/LiesOverInstancesPublic.lean/declarations/instance-source-edition-2.md) | 48 | `declaration-track:25e7236ccb38949a42142b66cc54061749f43c67c970f4aba674d5ab4a0740dd` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/LiesOverInstancesPublic.lean/declarations/instance-source-edition-3.md) | 57 | `declaration-track:eebc89d4d75c9041eaae30500d56d2799197ca984fc001eac67bad4aced0b25c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

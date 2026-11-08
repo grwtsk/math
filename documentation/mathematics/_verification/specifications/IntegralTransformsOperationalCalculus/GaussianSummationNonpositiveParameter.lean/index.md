@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../IntegralTransformsOperationalCalculus/GaussianSummationNonpositiveParameter.lean/index.md) · [Full source](../../../../IntegralTransformsOperationalCalculus/GaussianSummationNonpositiveParameter.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/GaussianSummationNonpositiveParameter.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/GaussianSummationNonpositiveParameter.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.MellinTransform.Checks.Positive.GaussianDyadicSummation`](../../../../IntegralTransformsOperationalCalculus/PositiveGaussianDyadicSummation.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.Analysis.MellinTransform.Checks.Positive.GaussianDyadicSummation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/PositiveGaussianDyadicSummation.lean/index.md) — import line 2; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../IntegralTransformsOperationalCalculus/GaussianSummationNonpositiveParameter.lean/declarations/example.md) | 6 | `declaration-track:244f0909b1a0d3ab740ed504c933757808e41d211fd82b167a7d6edb968413dc` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/GaussianSummationNonpositiveParameter.lean/declarations/example.md) | 6 | `declaration-track:244f0909b1a0d3ab740ed504c933757808e41d211fd82b167a7d6edb968413dc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

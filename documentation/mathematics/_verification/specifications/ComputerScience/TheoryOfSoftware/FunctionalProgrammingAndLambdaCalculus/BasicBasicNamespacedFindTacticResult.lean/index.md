@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicNamespacedFindTacticResult.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicNamespacedFindTacticResult.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicNamespacedFindTacticResult.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicNamespacedFindTacticResult.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,12 +61,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [holeCodeActionProvider](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicNamespacedFindTacticResult.lean/declarations/holecodeactionprovider.md) | 37 | `declaration-track:e29abb7d6f47b60d2eeb0311402631724eddbf77c8d8eccfb32f6f6ce3978ead` |
-| 2 | `inductive` | [FindTacticResult](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicNamespacedFindTacticResult.lean/declarations/findtacticresult.md) | 55 | `declaration-track:3922834bf576b3f3f5a62814553dd3d5bea7e325eb0d5fab5944f9b1e78825ec` |
-| 3 | `def` | [findTactic?](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicNamespacedFindTacticResult.lean/declarations/findtactic.md) | 85 | `declaration-track:c0b64f074874b39eb325536e5243371bbe9f99639564668a0ec05c763710b9e8` |
-| 4 | `def` | [findInfoTree?](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicNamespacedFindTacticResult.lean/declarations/findinfotree.md) | 154 | `declaration-track:5ffd27d656e35cc294087e340609cb9cb2ad61fb9afe9cffea01a0a5863d762f` |
-| 5 | `def` | [tacticCodeActionProvider](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicNamespacedFindTacticResult.lean/declarations/tacticcodeactionprovider.md) | 174 | `declaration-track:0302c7f775a2ceff7cee779b000c98bb7163b8a0fc53fcec7ba385d6ef022512` |
-| 6 | `def` | [cmdCodeActionProvider](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicNamespacedFindTacticResult.lean/declarations/cmdcodeactionprovider.md) | 221 | `declaration-track:ceed5540a9d2808511ca6a9dc3f377f4eacc671c0b0c7e3786af3ca5f39ceb11` |
+| 1 | `def` | [holeCodeActionProvider](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicNamespacedFindTacticResult.lean/declarations/holecodeactionprovider.md) | 37 | `declaration-track:e29abb7d6f47b60d2eeb0311402631724eddbf77c8d8eccfb32f6f6ce3978ead` |
+| 2 | `inductive` | [FindTacticResult](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicNamespacedFindTacticResult.lean/declarations/findtacticresult.md) | 55 | `declaration-track:3922834bf576b3f3f5a62814553dd3d5bea7e325eb0d5fab5944f9b1e78825ec` |
+| 3 | `def` | [findTactic?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicNamespacedFindTacticResult.lean/declarations/findtactic.md) | 85 | `declaration-track:c0b64f074874b39eb325536e5243371bbe9f99639564668a0ec05c763710b9e8` |
+| 4 | `def` | [findInfoTree?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicNamespacedFindTacticResult.lean/declarations/findinfotree.md) | 154 | `declaration-track:5ffd27d656e35cc294087e340609cb9cb2ad61fb9afe9cffea01a0a5863d762f` |
+| 5 | `def` | [tacticCodeActionProvider](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicNamespacedFindTacticResult.lean/declarations/tacticcodeactionprovider.md) | 174 | `declaration-track:0302c7f775a2ceff7cee779b000c98bb7163b8a0fc53fcec7ba385d6ef022512` |
+| 6 | `def` | [cmdCodeActionProvider](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicNamespacedFindTacticResult.lean/declarations/cmdcodeactionprovider.md) | 221 | `declaration-track:ceed5540a9d2808511ca6a9dc3f377f4eacc671c0b0c7e3786af3ca5f39ceb11` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OntologyBridge.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OntologyBridge.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OntologyBridge.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OntologyBridge.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [OntologyBridge](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OntologyBridge.lean/declarations/ontologybridge.md) | 19 | `declaration-track:fc1187f1a53c309a91fd7347aec2159ed20c7618eb57d555d667b07c8a6c5c81` |
-| 2 | `def` | [positiveNatToCellularBridge](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OntologyBridge.lean/declarations/positivenattocellularbridge.md) | 24 | `declaration-track:a607b27a3792e5d82d211791c697f55173f8d1926642e139f2bfdb186341df02` |
+| 1 | `structure` | [OntologyBridge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OntologyBridge.lean/declarations/ontologybridge.md) | 19 | `declaration-track:fc1187f1a53c309a91fd7347aec2159ed20c7618eb57d555d667b07c8a6c5c81` |
+| 2 | `def` | [positiveNatToCellularBridge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OntologyBridge.lean/declarations/positivenattocellularbridge.md) | 24 | `declaration-track:a607b27a3792e5d82d211791c697f55173f8d1926642e139f2bfdb186341df02` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

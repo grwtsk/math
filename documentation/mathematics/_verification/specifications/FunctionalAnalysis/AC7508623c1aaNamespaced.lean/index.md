@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/AC7508623c1aaNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/AC7508623c1aaNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AC7508623c1aaNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AC7508623c1aaNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [null_orthogonal_all](../../../../FunctionalAnalysis/AC7508623c1aaNamespaced.lean/declarations/null-orthogonal-all.md) | 26 | `result-track:c4187159f295c700a0d4eafbfb0a837f237596f1ab1e92a776a37a395c4dc54d` |
+| 1 | `theorem` | [null_orthogonal_all](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AC7508623c1aaNamespaced.lean/declarations/null-orthogonal-all.md) | 26 | `result-track:c4187159f295c700a0d4eafbfb0a837f237596f1ab1e92a776a37a395c4dc54d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

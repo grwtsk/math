@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompTypeclasses.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompTypeclasses.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompTypeclasses.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompTypeclasses.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [CompTriple](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompTypeclasses.lean/declarations/comptriple.md) | 27 | `declaration-track:ea6d65f4040ca40040c8f6bdb763ddbf5832d1a472ff9388d80c204ca72af2fb` |
-| 2 | `class` | [IsId](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompTypeclasses.lean/declarations/isid.md) | 36 | `declaration-track:f1fb8871215525bf19d8ff827f6c9e9f6b7fd2d63a81783462b74ae1c5cad41b` |
-| 3 | `instance` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompTypeclasses.lean/declarations/instance.md) | 39 | `declaration-track:443e8d59ddc29cdfd660f6e3ca40899dde015d47f9db76fd1a22b041837d4ab4` |
-| 4 | `instance` | [instComp_id](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompTypeclasses.lean/declarations/instcomp-id.md) | 42 | `declaration-track:4105ab506b1dd38bf696084609dfcf57bd1e4b5ae136ca22f0d4766c4ed34cb3` |
-| 5 | `instance` | [instId_comp](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompTypeclasses.lean/declarations/instid-comp.md) | 46 | `declaration-track:4e1f7003bef9789d0465369c5f3f90442d201a6b71175a0e01ff11324aff9ff4` |
-| 6 | `theorem` | [comp](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompTypeclasses.lean/declarations/comp.md) | 51 | `result-track:aa3ac9caceb5f57cdd0081f9b4ace4bd55cbe91f968fe42662c518de8403d37d` |
-| 7 | `lemma` | [comp_inv](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompTypeclasses.lean/declarations/comp-inv.md) | 56 | `result-track:c999712a3dbd46ca3b934e48859d9669f4c275d3817ed900b34768842a1f9062` |
-| 8 | `lemma` | [comp_apply](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompTypeclasses.lean/declarations/comp-apply.md) | 61 | `result-track:c932eecc6fdeb4459b9e2f67f1b0df820d71bad184df90fa9e2e4506cd3c8477` |
+| 1 | `class` | [CompTriple](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompTypeclasses.lean/declarations/comptriple.md) | 27 | `declaration-track:ea6d65f4040ca40040c8f6bdb763ddbf5832d1a472ff9388d80c204ca72af2fb` |
+| 2 | `class` | [IsId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompTypeclasses.lean/declarations/isid.md) | 36 | `declaration-track:f1fb8871215525bf19d8ff827f6c9e9f6b7fd2d63a81783462b74ae1c5cad41b` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompTypeclasses.lean/declarations/instance.md) | 39 | `declaration-track:443e8d59ddc29cdfd660f6e3ca40899dde015d47f9db76fd1a22b041837d4ab4` |
+| 4 | `instance` | [instComp_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompTypeclasses.lean/declarations/instcomp-id.md) | 42 | `declaration-track:4105ab506b1dd38bf696084609dfcf57bd1e4b5ae136ca22f0d4766c4ed34cb3` |
+| 5 | `instance` | [instId_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompTypeclasses.lean/declarations/instid-comp.md) | 46 | `declaration-track:4e1f7003bef9789d0465369c5f3f90442d201a6b71175a0e01ff11324aff9ff4` |
+| 6 | `theorem` | [comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompTypeclasses.lean/declarations/comp.md) | 51 | `result-track:aa3ac9caceb5f57cdd0081f9b4ace4bd55cbe91f968fe42662c518de8403d37d` |
+| 7 | `lemma` | [comp_inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompTypeclasses.lean/declarations/comp-inv.md) | 56 | `result-track:c999712a3dbd46ca3b934e48859d9669f4c275d3817ed900b34768842a1f9062` |
+| 8 | `lemma` | [comp_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompTypeclasses.lean/declarations/comp-apply.md) | 61 | `result-track:c932eecc6fdeb4459b9e2f67f1b0df820d71bad184df90fa9e2e4506cd3c8477` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

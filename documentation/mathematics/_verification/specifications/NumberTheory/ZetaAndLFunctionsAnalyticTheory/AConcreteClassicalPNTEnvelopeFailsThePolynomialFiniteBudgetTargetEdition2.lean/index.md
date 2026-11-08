@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AConcreteClassicalPNTEnvelopeFailsThePolynomialFiniteBudgetTargetEdition2.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AConcreteClassicalPNTEnvelopeFailsThePolynomialFiniteBudgetTargetEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AConcreteClassicalPNTEnvelopeFailsThePolynomialFiniteBudgetTargetEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AConcreteClassicalPNTEnvelopeFailsThePolynomialFiniteBudgetTargetEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [proposedSourceCost](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AConcreteClassicalPNTEnvelopeFailsThePolynomialFiniteBudgetTargetEdition2.lean/declarations/proposedsourcecost.md) | 26 | `declaration-track:9529afdb56f8ec0f712a2196ff03ee2c24cba3dfc6c9b18c1b10f7b967311f45` |
-| 2 | `theorem` | [classical_pnt_absolute_budget_not_eventually_polynomial](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AConcreteClassicalPNTEnvelopeFailsThePolynomialFiniteBudgetTargetEdition2.lean/declarations/classical-pnt-absolute-budget-not-eventually-polynomial.md) | 28 | `result-track:08089ab3d6adce9afef67316d41a1decb80d30531a2afd14f2f0cfc42fa70ad1` |
-| 3 | `theorem` | [proposed_scaled_source_cost_not_eventually_polynomial](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AConcreteClassicalPNTEnvelopeFailsThePolynomialFiniteBudgetTargetEdition2.lean/declarations/proposed-scaled-source-cost-not-eventually-polynomial.md) | 37 | `result-track:815609973c0d9c0611299dfc9b6dcd16d93acb18824321bdc28e428ea9c908af` |
+| 1 | `def` | [proposedSourceCost](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AConcreteClassicalPNTEnvelopeFailsThePolynomialFiniteBudgetTargetEdition2.lean/declarations/proposedsourcecost.md) | 26 | `declaration-track:9529afdb56f8ec0f712a2196ff03ee2c24cba3dfc6c9b18c1b10f7b967311f45` |
+| 2 | `theorem` | [classical_pnt_absolute_budget_not_eventually_polynomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AConcreteClassicalPNTEnvelopeFailsThePolynomialFiniteBudgetTargetEdition2.lean/declarations/classical-pnt-absolute-budget-not-eventually-polynomial.md) | 28 | `result-track:08089ab3d6adce9afef67316d41a1decb80d30531a2afd14f2f0cfc42fa70ad1` |
+| 3 | `theorem` | [proposed_scaled_source_cost_not_eventually_polynomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AConcreteClassicalPNTEnvelopeFailsThePolynomialFiniteBudgetTargetEdition2.lean/declarations/proposed-scaled-source-cost-not-eventually-polynomial.md) | 37 | `result-track:815609973c0d9c0611299dfc9b6dcd16d93acb18824321bdc28e428ea9c908af` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

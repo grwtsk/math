@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZeroFreeHalfPlaneControls.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZeroFreeHalfPlaneControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZeroFreeHalfPlaneControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZeroFreeHalfPlaneControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.ZeroFreeHalfPlaneCriterion`](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZeroFreeHalfPlaneCriterion.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.ZeroFreeHalfPlaneCriterion`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZeroFreeHalfPlaneCriterion.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [VerticalLineZero](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZeroFreeHalfPlaneControls.lean/declarations/verticallinezero.md) | 20 | `declaration-track:bf7a1e26ab1adac0dc106c7e676c4db41516414eff82332e77223cffc2493b93` |
-| 2 | `theorem` | [strict_right_half_plane_excludes_no_boundary_point](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZeroFreeHalfPlaneControls.lean/declarations/strict-right-half-plane-excludes-no-boundary-point.md) | 25 | `result-track:49cdb43e42a76aa713d50267ab1d0d762c7df315287827baa1cf4ab6f59faded` |
-| 3 | `theorem` | [larger_threshold_does_not_imply_smaller](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZeroFreeHalfPlaneControls.lean/declarations/larger-threshold-does-not-imply-smaller.md) | 37 | `result-track:ca717deb27c2cafca4ab627d8dc9e00f3b6887e521771ed4072633f2386b299f` |
-| 4 | `theorem` | [half_le_one](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZeroFreeHalfPlaneControls.lean/declarations/half-le-one.md) | 55 | `result-track:023b2c18b338b92df5434731f722a05ef9f85e76b8000b63011d38289da9495d` |
-| 5 | `theorem` | [criterion_requires_a_supplier](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZeroFreeHalfPlaneControls.lean/declarations/criterion-requires-a-supplier.md) | 59 | `result-track:9b5641a99a81f2f5acb194bf2e5c3b2a723b966034abc8dce4f2d4a956825103` |
+| 1 | `def` | [VerticalLineZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZeroFreeHalfPlaneControls.lean/declarations/verticallinezero.md) | 20 | `declaration-track:bf7a1e26ab1adac0dc106c7e676c4db41516414eff82332e77223cffc2493b93` |
+| 2 | `theorem` | [strict_right_half_plane_excludes_no_boundary_point](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZeroFreeHalfPlaneControls.lean/declarations/strict-right-half-plane-excludes-no-boundary-point.md) | 25 | `result-track:49cdb43e42a76aa713d50267ab1d0d762c7df315287827baa1cf4ab6f59faded` |
+| 3 | `theorem` | [larger_threshold_does_not_imply_smaller](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZeroFreeHalfPlaneControls.lean/declarations/larger-threshold-does-not-imply-smaller.md) | 37 | `result-track:ca717deb27c2cafca4ab627d8dc9e00f3b6887e521771ed4072633f2386b299f` |
+| 4 | `theorem` | [half_le_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZeroFreeHalfPlaneControls.lean/declarations/half-le-one.md) | 55 | `result-track:023b2c18b338b92df5434731f722a05ef9f85e76b8000b63011d38289da9495d` |
+| 5 | `theorem` | [criterion_requires_a_supplier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZeroFreeHalfPlaneControls.lean/declarations/criterion-requires-a-supplier.md) | 59 | `result-track:9b5641a99a81f2f5acb194bf2e5c3b2a723b966034abc8dce4f2d4a956825103` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

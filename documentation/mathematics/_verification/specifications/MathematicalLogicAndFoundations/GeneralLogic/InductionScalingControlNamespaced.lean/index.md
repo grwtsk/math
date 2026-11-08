@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/InductionScalingControlNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/InductionScalingControlNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/InductionScalingControlNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/InductionScalingControlNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [InductionScalingControl](../../../../../MathematicalLogicAndFoundations/GeneralLogic/InductionScalingControlNamespaced.lean/declarations/inductionscalingcontrol.md) | 33 | `declaration-track:18f27d8f2d2834237ac25ca1e26607c970be7b0ce01c57a05bc4b252a6f50d2f` |
-| 2 | `theorem` | [induction_scaling_decreases_glitch_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/InductionScalingControlNamespaced.lean/declarations/induction-scaling-decreases-glitch-if-supplied.md) | 42 | `result-track:05b6c04d63e104b5582b1cd6252ac32814dfa9be011b24418458a1ac4aedcc28` |
-| 3 | `theorem` | [induction_scaling_polynomial_move_bound_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/InductionScalingControlNamespaced.lean/declarations/induction-scaling-polynomial-move-bound-if-supplied.md) | 47 | `result-track:131fb505f1691a9a7de9ac6b2d195c93b5b413bde26387d661828c90007f8d5b` |
+| 1 | `structure` | [InductionScalingControl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/InductionScalingControlNamespaced.lean/declarations/inductionscalingcontrol.md) | 33 | `declaration-track:18f27d8f2d2834237ac25ca1e26607c970be7b0ce01c57a05bc4b252a6f50d2f` |
+| 2 | `theorem` | [induction_scaling_decreases_glitch_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/InductionScalingControlNamespaced.lean/declarations/induction-scaling-decreases-glitch-if-supplied.md) | 42 | `result-track:05b6c04d63e104b5582b1cd6252ac32814dfa9be011b24418458a1ac4aedcc28` |
+| 3 | `theorem` | [induction_scaling_polynomial_move_bound_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/InductionScalingControlNamespaced.lean/declarations/induction-scaling-polynomial-move-bound-if-supplied.md) | 47 | `result-track:131fb505f1691a9a7de9ac6b2d195c93b5b413bde26387d661828c90007f8d5b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

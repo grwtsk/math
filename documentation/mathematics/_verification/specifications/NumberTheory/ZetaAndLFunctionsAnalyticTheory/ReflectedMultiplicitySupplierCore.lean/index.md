@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReflectedMultiplicitySupplierCore.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReflectedMultiplicitySupplierCore.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReflectedMultiplicitySupplierCore.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ReflectedMultiplicitySupplierCore.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.AnalyticOrderTransport`](../../../../../FunctionsOfAComplexVariable/AnalyticOrderTransport.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.ReflectedMultiplicitySupplier`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ReflectedMultiplicitySupplier.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.AnalyticOrderTransport`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/AnalyticOrderTransport.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.ReflectedMultiplicitySupplier`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ReflectedMultiplicitySupplier.lean/index.md) — import line 2; pinned internal source present.
 
 ## Top results and three-degree verification metric
 

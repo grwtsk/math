@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RankThree012Parent.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RankThree012Parent.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RankThree012Parent.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RankThree012Parent.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [thetaTailRankThreeNumerator](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RankThree012Parent.lean/declarations/thetatailrankthreenumerator.md) | 17 | `declaration-track:eaf8fa7ad93f60b26649253fd99d2db6ec48900906ba00e290ded72682391ffa` |
-| 2 | `theorem` | [rankThree_compound_numerator_identity](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RankThree012Parent.lean/declarations/rankthree-compound-numerator-identity.md) | 24 | `result-track:bc85613a7f96ccd015fedce062c10cd7fdf7f45acde2f0a653c7b567e333bca9` |
-| 3 | `theorem` | [thetaTailRankThreeNumerator_eq](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RankThree012Parent.lean/declarations/thetatailrankthreenumerator-eq.md) | 32 | `result-track:d14be89d65f63fe0aae35fa5a9a23814101e3ad9d3d6471a0775ac8f06f22566` |
-| 4 | `theorem` | [hasDerivAt_thetaTail_compoundRatio](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RankThree012Parent.lean/declarations/hasderivat-thetatail-compoundratio.md) | 44 | `result-track:b6976f34d0c288100eace0f729bab6b2281b5a551c81d3af0914ecb3187173e3` |
-| 5 | `theorem` | [thetaTail_compoundRatio_antitone_iff](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RankThree012Parent.lean/declarations/thetatail-compoundratio-antitone-iff.md) | 55 | `result-track:fab23966aed6d3a66ea45987d6120b46e3f90428e4c7d83685d422690d9db9ac` |
+| 1 | `def` | [thetaTailRankThreeNumerator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RankThree012Parent.lean/declarations/thetatailrankthreenumerator.md) | 17 | `declaration-track:eaf8fa7ad93f60b26649253fd99d2db6ec48900906ba00e290ded72682391ffa` |
+| 2 | `theorem` | [rankThree_compound_numerator_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RankThree012Parent.lean/declarations/rankthree-compound-numerator-identity.md) | 24 | `result-track:bc85613a7f96ccd015fedce062c10cd7fdf7f45acde2f0a653c7b567e333bca9` |
+| 3 | `theorem` | [thetaTailRankThreeNumerator_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RankThree012Parent.lean/declarations/thetatailrankthreenumerator-eq.md) | 32 | `result-track:d14be89d65f63fe0aae35fa5a9a23814101e3ad9d3d6471a0775ac8f06f22566` |
+| 4 | `theorem` | [hasDerivAt_thetaTail_compoundRatio](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RankThree012Parent.lean/declarations/hasderivat-thetatail-compoundratio.md) | 44 | `result-track:b6976f34d0c288100eace0f729bab6b2281b5a551c81d3af0914ecb3187173e3` |
+| 5 | `theorem` | [thetaTail_compoundRatio_antitone_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RankThree012Parent.lean/declarations/thetatail-compoundratio-antitone-iff.md) | 55 | `result-track:fab23966aed6d3a66ea45987d6120b46e3f90428e4c7d83685d422690d9db9ac` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/AlgebraRepresentationBasicPublic.lean/index.md) · [Full source](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/AlgebraRepresentationBasicPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/AlgebraRepresentationBasicPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/AlgebraRepresentationBasicPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [IsSimpleModule.algebraMap_end_bijective_of_isAlgClosed](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/AlgebraRepresentationBasicPublic.lean/declarations/issimplemodule-algebramap-end-bijective-of-isalgclosed.md) | 28 | `result-track:e8d4f07ca13f8bb74ec9bfb4e636696dcedbb3ff9a2383b6a87e506fda4513bc` |
-| 2 | `theorem` | [IsSimpleModule.finrank_eq_one_of_isMulCommutative](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/AlgebraRepresentationBasicPublic.lean/declarations/issimplemodule-finrank-eq-one-of-ismulcommutative.md) | 39 | `result-track:4f854c400b8b755167efc7b0c16c439d48278292fcb4eaa2b0ab7e84c0c392e4` |
+| 1 | `theorem` | [IsSimpleModule.algebraMap_end_bijective_of_isAlgClosed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/AlgebraRepresentationBasicPublic.lean/declarations/issimplemodule-algebramap-end-bijective-of-isalgclosed.md) | 28 | `result-track:e8d4f07ca13f8bb74ec9bfb4e636696dcedbb3ff9a2383b6a87e506fda4513bc` |
+| 2 | `theorem` | [IsSimpleModule.finrank_eq_one_of_isMulCommutative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/AlgebraRepresentationBasicPublic.lean/declarations/issimplemodule-finrank-eq-one-of-ismulcommutative.md) | 39 | `result-track:4f854c400b8b755167efc7b0c16c439d48278292fcb4eaa2b0ab7e84c0c392e4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

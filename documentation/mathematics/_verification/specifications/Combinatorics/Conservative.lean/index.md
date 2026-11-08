@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/Conservative.lean/index.md) · [Full source](../../../../Combinatorics/Conservative.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Conservative.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Conservative.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [fixed_solution_sound](../../../../Combinatorics/Conservative.lean/declarations/fixed-solution-sound.md) | 11 | `result-track:b34914c94d57f294ece7b8809d5ae366f7cadd705efaba81dd22f0172721ddc8` |
-| 2 | `theorem` | [unknown_is_nonempty](../../../../Combinatorics/Conservative.lean/declarations/unknown-is-nonempty.md) | 25 | `result-track:40247c78580756c4b1236926592c56c15e5189a32fa4e3a51c2001e47b0cd9b2` |
-| 3 | `theorem` | [authority_schedule_noninterference](../../../../Combinatorics/Conservative.lean/declarations/authority-schedule-noninterference.md) | 32 | `result-track:52e434056de002704ea48edfba566de7b520fbbf4f45869fd74005ce8f2bde91` |
-| 4 | `theorem` | [certificate_extension_monotone](../../../../Combinatorics/Conservative.lean/declarations/certificate-extension-monotone.md) | 39 | `result-track:23c5f6b5d1a2693aeabcb3d28573bf15961aa59821e8bf8b586671765e191b36` |
-| 5 | `theorem` | [continuation_count_finite](../../../../Combinatorics/Conservative.lean/declarations/continuation-count-finite.md) | 50 | `result-track:76ad14e269652862bb53b4c2ffded3305273950bf7ab5e50221dc4e365bb3996` |
-| 6 | `theorem` | [total_factorization](../../../../Combinatorics/Conservative.lean/declarations/total-factorization.md) | 64 | `result-track:31bcd9d413ed916b69e27d4eed16bf5c873a08120940adc7b11d8aae3be10276` |
+| 1 | `theorem` | [fixed_solution_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Conservative.lean/declarations/fixed-solution-sound.md) | 11 | `result-track:b34914c94d57f294ece7b8809d5ae366f7cadd705efaba81dd22f0172721ddc8` |
+| 2 | `theorem` | [unknown_is_nonempty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Conservative.lean/declarations/unknown-is-nonempty.md) | 25 | `result-track:40247c78580756c4b1236926592c56c15e5189a32fa4e3a51c2001e47b0cd9b2` |
+| 3 | `theorem` | [authority_schedule_noninterference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Conservative.lean/declarations/authority-schedule-noninterference.md) | 32 | `result-track:52e434056de002704ea48edfba566de7b520fbbf4f45869fd74005ce8f2bde91` |
+| 4 | `theorem` | [certificate_extension_monotone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Conservative.lean/declarations/certificate-extension-monotone.md) | 39 | `result-track:23c5f6b5d1a2693aeabcb3d28573bf15961aa59821e8bf8b586671765e191b36` |
+| 5 | `theorem` | [continuation_count_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Conservative.lean/declarations/continuation-count-finite.md) | 50 | `result-track:76ad14e269652862bb53b4c2ffded3305273950bf7ab5e50221dc4e365bb3996` |
+| 6 | `theorem` | [total_factorization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Conservative.lean/declarations/total-factorization.md) | 64 | `result-track:31bcd9d413ed916b69e27d4eed16bf5c873a08120940adc7b11d8aae3be10276` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

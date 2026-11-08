@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ConditionalConsumersOfTheSignedPolynomialFrontier.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ConditionalConsumersOfTheSignedPolynomialFrontier.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ConditionalConsumersOfTheSignedPolynomialFrontier.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ConditionalConsumersOfTheSignedPolynomialFrontier.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [rh_of_problemP_and_rateStrip](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ConditionalConsumersOfTheSignedPolynomialFrontier.lean/declarations/rh-of-problemp-and-ratestrip.md) | 28 | `result-track:9c5332fe140c771ef57bc07261cf0f9d456db37531ea39c3a73a2253c177e16d` |
-| 2 | `theorem` | [rh_of_signedMertens_and_rateStrip](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ConditionalConsumersOfTheSignedPolynomialFrontier.lean/declarations/rh-of-signedmertens-and-ratestrip.md) | 45 | `result-track:02006126e251151437009be086b7ba3f5c8a5a3e68f54f003e3773eb0ad68f7e` |
-| 3 | `theorem` | [rh_of_firstPrimeWithSquareMain_and_rateStrip](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ConditionalConsumersOfTheSignedPolynomialFrontier.lean/declarations/rh-of-firstprimewithsquaremain-and-ratestrip.md) | 50 | `result-track:9fce81fd19ce19f3c8660c0eeebcb2d1fbaceb6e5caa9850dfca521c4901aee0` |
+| 1 | `theorem` | [rh_of_problemP_and_rateStrip](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ConditionalConsumersOfTheSignedPolynomialFrontier.lean/declarations/rh-of-problemp-and-ratestrip.md) | 28 | `result-track:9c5332fe140c771ef57bc07261cf0f9d456db37531ea39c3a73a2253c177e16d` |
+| 2 | `theorem` | [rh_of_signedMertens_and_rateStrip](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ConditionalConsumersOfTheSignedPolynomialFrontier.lean/declarations/rh-of-signedmertens-and-ratestrip.md) | 45 | `result-track:02006126e251151437009be086b7ba3f5c8a5a3e68f54f003e3773eb0ad68f7e` |
+| 3 | `theorem` | [rh_of_firstPrimeWithSquareMain_and_rateStrip](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ConditionalConsumersOfTheSignedPolynomialFrontier.lean/declarations/rh-of-firstprimewithsquaremain-and-ratestrip.md) | 50 | `result-track:9fce81fd19ce19f3c8660c0eeebcb2d1fbaceb6e5caa9850dfca521c4901aee0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

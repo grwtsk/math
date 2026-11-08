@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SharpTriangleMeanBudgetNamespacedEdition4.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SharpTriangleMeanBudgetNamespacedEdition4.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SharpTriangleMeanBudgetNamespacedEdition4.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SharpTriangleMeanBudgetNamespacedEdition4.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [cumulative](../../../../MeasureAndIntegration/SharpTriangleMeanBudgetNamespacedEdition4.lean/declarations/cumulative.md) | 23 | `declaration-track:870dc5cf399af570328105a6afbbdb98e50dafea7a4501a650fe3eac305f7f13` |
-| 2 | `theorem` | [cumulative_hasDerivAt](../../../../MeasureAndIntegration/SharpTriangleMeanBudgetNamespacedEdition4.lean/declarations/cumulative-hasderivat.md) | 25 | `result-track:b92232e752a6bf186f523006d9a202eb3a2e4d6683805bf21e79b975cbbaed19` |
-| 3 | `theorem` | [cumulative_continuous](../../../../MeasureAndIntegration/SharpTriangleMeanBudgetNamespacedEdition4.lean/declarations/cumulative-continuous.md) | 30 | `result-track:04cf7b795d24f60f5110541761165d7b4b3088e9b49d9c93c78964a9056a83e3` |
-| 4 | `theorem` | [triangle_integral_eq](../../../../MeasureAndIntegration/SharpTriangleMeanBudgetNamespacedEdition4.lean/declarations/triangle-integral-eq.md) | 34 | `result-track:51e9b9b85b04dffbfda427b895b786ca7995710432c57cad855758d0c65aa521` |
-| 5 | `theorem` | [triangle_integral_le](../../../../MeasureAndIntegration/SharpTriangleMeanBudgetNamespacedEdition4.lean/declarations/triangle-integral-le.md) | 83 | `result-track:54b527a8586a0780961330913a0bf761c71cee93662c03eaf8052889ea422627` |
+| 1 | `def` | [cumulative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SharpTriangleMeanBudgetNamespacedEdition4.lean/declarations/cumulative.md) | 23 | `declaration-track:870dc5cf399af570328105a6afbbdb98e50dafea7a4501a650fe3eac305f7f13` |
+| 2 | `theorem` | [cumulative_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SharpTriangleMeanBudgetNamespacedEdition4.lean/declarations/cumulative-hasderivat.md) | 25 | `result-track:b92232e752a6bf186f523006d9a202eb3a2e4d6683805bf21e79b975cbbaed19` |
+| 3 | `theorem` | [cumulative_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SharpTriangleMeanBudgetNamespacedEdition4.lean/declarations/cumulative-continuous.md) | 30 | `result-track:04cf7b795d24f60f5110541761165d7b4b3088e9b49d9c93c78964a9056a83e3` |
+| 4 | `theorem` | [triangle_integral_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SharpTriangleMeanBudgetNamespacedEdition4.lean/declarations/triangle-integral-eq.md) | 34 | `result-track:51e9b9b85b04dffbfda427b895b786ca7995710432c57cad855758d0c65aa521` |
+| 5 | `theorem` | [triangle_integral_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SharpTriangleMeanBudgetNamespacedEdition4.lean/declarations/triangle-integral-le.md) | 83 | `result-track:54b527a8586a0780961330913a0bf761c71cee93662c03eaf8052889ea422627` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

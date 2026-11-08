@@ -12,9 +12,9 @@ Exactly these selected families are listed; this is not a declaration-wide or co
 
 | Priority | Family | Status | Retained evidence label |
 |---:|---|---|---|
-| 1 | [Least natural prime](../../NumberTheory/MultiplicativeNumberTheory/least-prime.md) | verification | fresh-selected |
-| 2 | [Coverage and discrete quotas](../../Combinatorics/coverage-and-quotas.md) | verification pending | historical-source-relocated |
-| 3 | [Polynomial return with paid error](../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/polynomial-error.md) | verification pending | historical-source-relocated |
+| 1 | [Least natural prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/least-prime.md) | verification | fresh-selected |
+| 2 | [Coverage and discrete quotas](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/coverage-and-quotas.md) | verification pending | historical-source-relocated |
+| 3 | [Polynomial return with paid error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/polynomial-error.md) | verification pending | historical-source-relocated |
 
 ## Current replay scopes
 

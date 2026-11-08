@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/FractalSpaceNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/FractalSpaceNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FractalSpaceNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FractalSpaceNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [Real](../../../../MeasureAndIntegration/FractalSpaceNamespaced.lean/declarations/real.md) | 13 | `declaration-track:2769fbde6219a80990654d85a1b6408e1826128cce4544d1604ba00cd88fe97a` |
-| 2 | `structure` | [TopologicalSpace](../../../../MeasureAndIntegration/FractalSpaceNamespaced.lean/declarations/topologicalspace.md) | 15 | `declaration-track:643c0cd1f427ce84579d421887eea19da23a6335ddd9bb29705200ab485bdf04` |
-| 3 | `def` | [DifferentiableAt](../../../../MeasureAndIntegration/FractalSpaceNamespaced.lean/declarations/differentiableat.md) | 18 | `declaration-track:9fdef821ba4667e4f44e7549bb236ada7151ef456af05040c65ef8a3a3d7387b` |
-| 4 | `structure` | [FractalDomain](../../../../MeasureAndIntegration/FractalSpaceNamespaced.lean/declarations/fractaldomain.md) | 21 | `declaration-track:6fb7e6b4e297a9fe309af53e795416554290d58b255190f3f91756df74a9a6ec` |
-| 5 | `def` | [toCertifiedMeasurableSpace](../../../../MeasureAndIntegration/FractalSpaceNamespaced.lean/declarations/tocertifiedmeasurablespace.md) | 28 | `declaration-track:8fcafa24893a8bdd7c2f3b1148d721ea413340956a5679d4a4556baf13bbb95a` |
-| 6 | `structure` | [NowhereDifferentiableCertificate](../../../../MeasureAndIntegration/FractalSpaceNamespaced.lean/declarations/nowheredifferentiablecertificate.md) | 34 | `declaration-track:050c1c27b620831e6c7b0e44c745d9edec41f978466efbc9e96e6260b97e0d57` |
-| 7 | `inductive` | [FractalScaleLaw](../../../../MeasureAndIntegration/FractalSpaceNamespaced.lean/declarations/fractalscalelaw.md) | 39 | `declaration-track:c441f2580b493a26d6cae52892c953c26682d85b7fa6327ba1e3a28173949f16` |
-| 8 | `structure` | [FractalDescriptor](../../../../MeasureAndIntegration/FractalSpaceNamespaced.lean/declarations/fractaldescriptor.md) | 47 | `declaration-track:bb3a238350afe3c2703c935fb24144f5371c740f942672c1e4396751c05a1d5e` |
-| 9 | `structure` | [CertifiedNowhereDifferentiableFractalFunction](../../../../MeasureAndIntegration/FractalSpaceNamespaced.lean/declarations/certifiednowheredifferentiablefractalfunction.md) | 55 | `declaration-track:45d3a5ef7c9ed9b498de3ef087b85bc11572c5f789e29e9409d150d0c077adf2` |
-| 10 | `theorem` | [nowhereDifferentiableFractal_is_certifiedMeasurable](../../../../MeasureAndIntegration/FractalSpaceNamespaced.lean/declarations/nowheredifferentiablefractal-is-certifiedmeasurable.md) | 63 | `result-track:7b6e5851b9c2070daa1312f24c3753c6069e4bdd59ef318829dd39e70de5f2e2` |
+| 1 | `abbrev` | [Real](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FractalSpaceNamespaced.lean/declarations/real.md) | 13 | `declaration-track:2769fbde6219a80990654d85a1b6408e1826128cce4544d1604ba00cd88fe97a` |
+| 2 | `structure` | [TopologicalSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FractalSpaceNamespaced.lean/declarations/topologicalspace.md) | 15 | `declaration-track:643c0cd1f427ce84579d421887eea19da23a6335ddd9bb29705200ab485bdf04` |
+| 3 | `def` | [DifferentiableAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FractalSpaceNamespaced.lean/declarations/differentiableat.md) | 18 | `declaration-track:9fdef821ba4667e4f44e7549bb236ada7151ef456af05040c65ef8a3a3d7387b` |
+| 4 | `structure` | [FractalDomain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FractalSpaceNamespaced.lean/declarations/fractaldomain.md) | 21 | `declaration-track:6fb7e6b4e297a9fe309af53e795416554290d58b255190f3f91756df74a9a6ec` |
+| 5 | `def` | [toCertifiedMeasurableSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FractalSpaceNamespaced.lean/declarations/tocertifiedmeasurablespace.md) | 28 | `declaration-track:8fcafa24893a8bdd7c2f3b1148d721ea413340956a5679d4a4556baf13bbb95a` |
+| 6 | `structure` | [NowhereDifferentiableCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FractalSpaceNamespaced.lean/declarations/nowheredifferentiablecertificate.md) | 34 | `declaration-track:050c1c27b620831e6c7b0e44c745d9edec41f978466efbc9e96e6260b97e0d57` |
+| 7 | `inductive` | [FractalScaleLaw](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FractalSpaceNamespaced.lean/declarations/fractalscalelaw.md) | 39 | `declaration-track:c441f2580b493a26d6cae52892c953c26682d85b7fa6327ba1e3a28173949f16` |
+| 8 | `structure` | [FractalDescriptor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FractalSpaceNamespaced.lean/declarations/fractaldescriptor.md) | 47 | `declaration-track:bb3a238350afe3c2703c935fb24144f5371c740f942672c1e4396751c05a1d5e` |
+| 9 | `structure` | [CertifiedNowhereDifferentiableFractalFunction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FractalSpaceNamespaced.lean/declarations/certifiednowheredifferentiablefractalfunction.md) | 55 | `declaration-track:45d3a5ef7c9ed9b498de3ef087b85bc11572c5f789e29e9409d150d0c077adf2` |
+| 10 | `theorem` | [nowhereDifferentiableFractal_is_certifiedMeasurable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FractalSpaceNamespaced.lean/declarations/nowheredifferentiablefractal-is-certifiedmeasurable.md) | 63 | `result-track:7b6e5851b9c2070daa1312f24c3753c6069e4bdd59ef318829dd39e70de5f2e2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

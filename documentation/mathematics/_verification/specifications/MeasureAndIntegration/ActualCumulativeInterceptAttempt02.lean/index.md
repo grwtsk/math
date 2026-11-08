@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ActualCumulativeInterceptAttempt02.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ActualCumulativeInterceptAttempt02.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCumulativeInterceptAttempt02.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCumulativeInterceptAttempt02.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualAffineSlope](../../../../MeasureAndIntegration/ActualCumulativeInterceptAttempt02.lean/declarations/actualaffineslope.md) | 21 | `declaration-track:dcbd15c1b55f788049cbef98610b236e37dfb2b17c3584a7c60477f7e68c0508` |
-| 2 | `theorem` | [cumulative_discrepancy_eq_remainder](../../../../MeasureAndIntegration/ActualCumulativeInterceptAttempt02.lean/declarations/cumulative-discrepancy-eq-remainder.md) | 24 | `result-track:ebf8eec56bb630a8267dc1707073ffb1a09d329ca7703ebe0ea4ef87b88aee37` |
-| 3 | `theorem` | [actual_prime_remainder_intervalIntegrable](../../../../MeasureAndIntegration/ActualCumulativeInterceptAttempt02.lean/declarations/actual-prime-remainder-intervalintegrable.md) | 31 | `result-track:c78c38c068a7601b4f90090a1450cbe4d950b2980ced485ccd8c93bcca3955a6` |
-| 4 | `theorem` | [decay_integral](../../../../MeasureAndIntegration/ActualCumulativeInterceptAttempt02.lean/declarations/decay-integral.md) | 41 | `result-track:5b1945540dc1ab8ada289c8a051155f3894e5ad5d788d92b8d8eebbea38901cd` |
-| 5 | `theorem` | [actual_primitive_decomposition](../../../../MeasureAndIntegration/ActualCumulativeInterceptAttempt02.lean/declarations/actual-primitive-decomposition.md) | 51 | `result-track:81ad9460b799dd5132eb439ad831b44e6a9e559dd91f87c307d5f9a09b1744df` |
+| 1 | `def` | [actualAffineSlope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCumulativeInterceptAttempt02.lean/declarations/actualaffineslope.md) | 21 | `declaration-track:dcbd15c1b55f788049cbef98610b236e37dfb2b17c3584a7c60477f7e68c0508` |
+| 2 | `theorem` | [cumulative_discrepancy_eq_remainder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCumulativeInterceptAttempt02.lean/declarations/cumulative-discrepancy-eq-remainder.md) | 24 | `result-track:ebf8eec56bb630a8267dc1707073ffb1a09d329ca7703ebe0ea4ef87b88aee37` |
+| 3 | `theorem` | [actual_prime_remainder_intervalIntegrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCumulativeInterceptAttempt02.lean/declarations/actual-prime-remainder-intervalintegrable.md) | 31 | `result-track:c78c38c068a7601b4f90090a1450cbe4d950b2980ced485ccd8c93bcca3955a6` |
+| 4 | `theorem` | [decay_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCumulativeInterceptAttempt02.lean/declarations/decay-integral.md) | 41 | `result-track:5b1945540dc1ab8ada289c8a051155f3894e5ad5d788d92b8d8eebbea38901cd` |
+| 5 | `theorem` | [actual_primitive_decomposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCumulativeInterceptAttempt02.lean/declarations/actual-primitive-decomposition.md) | 51 | `result-track:81ad9460b799dd5132eb439ad831b44e6a9e559dd91f87c307d5f9a09b1744df` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

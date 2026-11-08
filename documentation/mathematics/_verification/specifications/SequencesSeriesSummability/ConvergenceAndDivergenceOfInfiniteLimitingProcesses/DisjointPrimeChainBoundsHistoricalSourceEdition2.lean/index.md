@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/DisjointPrimeChainBoundsHistoricalSourceEdition2.lean/index.md) · [Full source](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/DisjointPrimeChainBoundsHistoricalSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/DisjointPrimeChainBoundsHistoricalSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/DisjointPrimeChainBoundsHistoricalSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.AsymptoticAnalysis.PrimeMassPotentialBounds`](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/PrimeMassPotentialBoundsHistoricalSourceEdition2.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.NumberTheory.PrimeCounting.ReciprocalPrimeLogBound`](../../../../../MeasureAndIntegration/ReciprocalPrimeLogBound.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.Analysis.AsymptoticAnalysis.PrimeMassPotentialBounds`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/PrimeMassPotentialBoundsHistoricalSourceEdition2.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.NumberTheory.PrimeCounting.ReciprocalPrimeLogBound`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReciprocalPrimeLogBound.lean/index.md) — import line 2; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [harmonicMass_union](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/DisjointPrimeChainBoundsHistoricalSourceEdition2.lean/declarations/harmonicmass-union.md) | 15 | `result-track:d13cc1bfa76429c291f12adb8f75637d41dca09a2e622073dc50c93c57381ca7` |
-| 2 | `theorem` | [completion_prefix_mass](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/DisjointPrimeChainBoundsHistoricalSourceEdition2.lean/declarations/completion-prefix-mass.md) | 20 | `result-track:95b4adcfe7b3ebdb58dd24c2118062301355cfda84a986e7b51652a919e54084` |
-| 3 | `theorem` | [completion_total_mass](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/DisjointPrimeChainBoundsHistoricalSourceEdition2.lean/declarations/completion-total-mass.md) | 29 | `result-track:81905092a3aa301e4fdfdbb4765296f0380d45329c870f1f27708630475ee98b` |
-| 4 | `def` | [budgetedChain](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/DisjointPrimeChainBoundsHistoricalSourceEdition2.lean/declarations/budgetedchain.md) | 35 | `declaration-track:03791c8afc0ec426070c5133aee0b4ff87f9b3121788573b382789d634af2db3` |
-| 5 | `theorem` | [AS_with_complete_admissible_chains_implies_P04](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/DisjointPrimeChainBoundsHistoricalSourceEdition2.lean/declarations/as-with-complete-admissible-chains-implies-p04.md) | 46 | `result-track:678e000bf98a6f2f9da7543ffdc1834233d04c72d5d08c3362e1afc5931dfd7c` |
+| 1 | `theorem` | [harmonicMass_union](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/DisjointPrimeChainBoundsHistoricalSourceEdition2.lean/declarations/harmonicmass-union.md) | 15 | `result-track:d13cc1bfa76429c291f12adb8f75637d41dca09a2e622073dc50c93c57381ca7` |
+| 2 | `theorem` | [completion_prefix_mass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/DisjointPrimeChainBoundsHistoricalSourceEdition2.lean/declarations/completion-prefix-mass.md) | 20 | `result-track:95b4adcfe7b3ebdb58dd24c2118062301355cfda84a986e7b51652a919e54084` |
+| 3 | `theorem` | [completion_total_mass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/DisjointPrimeChainBoundsHistoricalSourceEdition2.lean/declarations/completion-total-mass.md) | 29 | `result-track:81905092a3aa301e4fdfdbb4765296f0380d45329c870f1f27708630475ee98b` |
+| 4 | `def` | [budgetedChain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/DisjointPrimeChainBoundsHistoricalSourceEdition2.lean/declarations/budgetedchain.md) | 35 | `declaration-track:03791c8afc0ec426070c5133aee0b4ff87f9b3121788573b382789d634af2db3` |
+| 5 | `theorem` | [AS_with_complete_admissible_chains_implies_P04](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/DisjointPrimeChainBoundsHistoricalSourceEdition2.lean/declarations/as-with-complete-admissible-chains-implies-p04.md) | 46 | `result-track:678e000bf98a6f2f9da7543ffdc1834233d04c72d5d08c3362e1afc5931dfd7c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

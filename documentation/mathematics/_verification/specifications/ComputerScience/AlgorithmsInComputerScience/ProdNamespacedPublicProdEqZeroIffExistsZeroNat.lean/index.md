@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ProdNamespacedPublicProdEqZeroIffExistsZeroNat.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ProdNamespacedPublicProdEqZeroIffExistsZeroNat.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProdNamespacedPublicProdEqZeroIffExistsZeroNat.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProdNamespacedPublicProdEqZeroIffExistsZeroNat.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [prod_eq_zero_iff_exists_zero_nat](../../../../../ComputerScience/AlgorithmsInComputerScience/ProdNamespacedPublicProdEqZeroIffExistsZeroNat.lean/declarations/prod-eq-zero-iff-exists-zero-nat.md) | 29 | `result-track:de7da6839a61c6109e56580ee566c4166068f65d3dc26548e8abc98aca6db4c1` |
-| 2 | `theorem` | [prod_pos_iff_forall_pos_nat](../../../../../ComputerScience/AlgorithmsInComputerScience/ProdNamespacedPublicProdEqZeroIffExistsZeroNat.lean/declarations/prod-pos-iff-forall-pos-nat.md) | 35 | `result-track:b246f2db7698b435e54391e3c9d5c2908d424537e4c6493cd66b36d5494d4875` |
-| 3 | `theorem` | [prod_replicate_nat](../../../../../ComputerScience/AlgorithmsInComputerScience/ProdNamespacedPublicProdEqZeroIffExistsZeroNat.lean/declarations/prod-replicate-nat.md) | 46 | `result-track:b7a8fcd07b9cbfc8f83cc9872633031162258707f57f56cb288611e28c90cf8b` |
-| 4 | `theorem` | [prod_append_nat](../../../../../ComputerScience/AlgorithmsInComputerScience/ProdNamespacedPublicProdEqZeroIffExistsZeroNat.lean/declarations/prod-append-nat.md) | 49 | `result-track:75b907ea263c9e1ab3432d5dace06ba7ce232a2222596ab8fdaf0a5360757dce` |
-| 5 | `theorem` | [prod_reverse_nat](../../../../../ComputerScience/AlgorithmsInComputerScience/ProdNamespacedPublicProdEqZeroIffExistsZeroNat.lean/declarations/prod-reverse-nat.md) | 52 | `result-track:33fee9f14fa4f103486f8e6f31e73b9d2079d86dc15c2d6cba8f6939ff5093f2` |
-| 6 | `theorem` | [prod_eq_foldl_nat](../../../../../ComputerScience/AlgorithmsInComputerScience/ProdNamespacedPublicProdEqZeroIffExistsZeroNat.lean/declarations/prod-eq-foldl-nat.md) | 55 | `result-track:5fb29b9746f9db1b47edd0c0760908201f51a8b87ab2ade4687b5038e32c80db` |
+| 1 | `theorem` | [prod_eq_zero_iff_exists_zero_nat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProdNamespacedPublicProdEqZeroIffExistsZeroNat.lean/declarations/prod-eq-zero-iff-exists-zero-nat.md) | 29 | `result-track:de7da6839a61c6109e56580ee566c4166068f65d3dc26548e8abc98aca6db4c1` |
+| 2 | `theorem` | [prod_pos_iff_forall_pos_nat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProdNamespacedPublicProdEqZeroIffExistsZeroNat.lean/declarations/prod-pos-iff-forall-pos-nat.md) | 35 | `result-track:b246f2db7698b435e54391e3c9d5c2908d424537e4c6493cd66b36d5494d4875` |
+| 3 | `theorem` | [prod_replicate_nat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProdNamespacedPublicProdEqZeroIffExistsZeroNat.lean/declarations/prod-replicate-nat.md) | 46 | `result-track:b7a8fcd07b9cbfc8f83cc9872633031162258707f57f56cb288611e28c90cf8b` |
+| 4 | `theorem` | [prod_append_nat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProdNamespacedPublicProdEqZeroIffExistsZeroNat.lean/declarations/prod-append-nat.md) | 49 | `result-track:75b907ea263c9e1ab3432d5dace06ba7ce232a2222596ab8fdaf0a5360757dce` |
+| 5 | `theorem` | [prod_reverse_nat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProdNamespacedPublicProdEqZeroIffExistsZeroNat.lean/declarations/prod-reverse-nat.md) | 52 | `result-track:33fee9f14fa4f103486f8e6f31e73b9d2079d86dc15c2d6cba8f6939ff5093f2` |
+| 6 | `theorem` | [prod_eq_foldl_nat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProdNamespacedPublicProdEqZeroIffExistsZeroNat.lean/declarations/prod-eq-foldl-nat.md) | 55 | `result-track:5fb29b9746f9db1b47edd0c0760908201f51a8b87ab2ade4687b5038e32c80db` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

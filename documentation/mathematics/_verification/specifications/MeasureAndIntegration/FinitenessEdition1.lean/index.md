@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/FinitenessEdition1.lean/index.md) · [Full source](../../../../MeasureAndIntegration/FinitenessEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FinitenessEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FinitenessEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,15 +59,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../MeasureAndIntegration/FinitenessEdition1.lean/declarations/example-source-edition-8.md) | 8 | `declaration-track:a434a05da23ff324f8f87d143f655f5cb64565498ae28deba49d4df004aa7ef9` |
-| 2 | `example` | [(anonymous)](../../../../MeasureAndIntegration/FinitenessEdition1.lean/declarations/example-source-edition-7.md) | 9 | `declaration-track:8d8b0937df711bea806b67af6194d65a08a1476cbdd85a087fb3a54b9cb8d5ad` |
-| 3 | `example` | [(anonymous)](../../../../MeasureAndIntegration/FinitenessEdition1.lean/declarations/example-source-edition-3.md) | 11 | `declaration-track:5cacb6529d887dfc8938911608b74abf00b8fabfabb03733be4a1ac059598834` |
-| 4 | `example` | [(anonymous)](../../../../MeasureAndIntegration/FinitenessEdition1.lean/declarations/example-source-edition-9.md) | 13 | `declaration-track:b5c327ecd21741340111a8d5d27ac8a085aa6f87b084b7e918f5a93ef694e8a5` |
-| 5 | `example` | [(anonymous)](../../../../MeasureAndIntegration/FinitenessEdition1.lean/declarations/example-source-edition-6.md) | 14 | `declaration-track:8810702704619a6f02e67367480710fba80342bc60d7f301980c1a62db0324a8` |
-| 6 | `example` | [(anonymous)](../../../../MeasureAndIntegration/FinitenessEdition1.lean/declarations/example-source-edition-2.md) | 19 | `declaration-track:1bd0f54c9cbe5b1c5e0b08fd0c05985eae44e3db8334453b843ba98505887dbf` |
-| 7 | `example` | [(anonymous)](../../../../MeasureAndIntegration/FinitenessEdition1.lean/declarations/example-source-edition-5.md) | 21 | `declaration-track:7bfe51ce1a1642aee659a13ac8021241d7c820fff2be7cbc93a889905dc1ad96` |
-| 8 | `example` | [(anonymous)](../../../../MeasureAndIntegration/FinitenessEdition1.lean/declarations/example-source-edition-4.md) | 23 | `declaration-track:78caf99ce7d87f3f382b0dcde87e582d109fdfb4a950c0b122b7211c21b3371c` |
-| 9 | `example` | [(anonymous)](../../../../MeasureAndIntegration/FinitenessEdition1.lean/declarations/example.md) | 25 | `declaration-track:124e96221babe4aceb5a871bddd1ebb35ab1759d241a3e14f03754de40a79379` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FinitenessEdition1.lean/declarations/example-source-edition-8.md) | 8 | `declaration-track:a434a05da23ff324f8f87d143f655f5cb64565498ae28deba49d4df004aa7ef9` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FinitenessEdition1.lean/declarations/example-source-edition-7.md) | 9 | `declaration-track:8d8b0937df711bea806b67af6194d65a08a1476cbdd85a087fb3a54b9cb8d5ad` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FinitenessEdition1.lean/declarations/example-source-edition-3.md) | 11 | `declaration-track:5cacb6529d887dfc8938911608b74abf00b8fabfabb03733be4a1ac059598834` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FinitenessEdition1.lean/declarations/example-source-edition-9.md) | 13 | `declaration-track:b5c327ecd21741340111a8d5d27ac8a085aa6f87b084b7e918f5a93ef694e8a5` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FinitenessEdition1.lean/declarations/example-source-edition-6.md) | 14 | `declaration-track:8810702704619a6f02e67367480710fba80342bc60d7f301980c1a62db0324a8` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FinitenessEdition1.lean/declarations/example-source-edition-2.md) | 19 | `declaration-track:1bd0f54c9cbe5b1c5e0b08fd0c05985eae44e3db8334453b843ba98505887dbf` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FinitenessEdition1.lean/declarations/example-source-edition-5.md) | 21 | `declaration-track:7bfe51ce1a1642aee659a13ac8021241d7c820fff2be7cbc93a889905dc1ad96` |
+| 8 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FinitenessEdition1.lean/declarations/example-source-edition-4.md) | 23 | `declaration-track:78caf99ce7d87f3f382b0dcde87e582d109fdfb4a950c0b122b7211c21b3371c` |
+| 9 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FinitenessEdition1.lean/declarations/example.md) | 25 | `declaration-track:124e96221babe4aceb5a871bddd1ebb35ab1759d241a3e14f03754de40a79379` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

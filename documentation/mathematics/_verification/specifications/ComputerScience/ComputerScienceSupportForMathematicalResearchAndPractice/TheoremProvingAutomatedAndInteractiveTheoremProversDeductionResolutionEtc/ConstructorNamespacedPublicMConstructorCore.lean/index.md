@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ConstructorNamespacedPublicMConstructorCore.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ConstructorNamespacedPublicMConstructorCore.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ConstructorNamespacedPublicMConstructorCore.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ConstructorNamespacedPublicMConstructorCore.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mConstructorCore](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ConstructorNamespacedPublicMConstructorCore.lean/declarations/mconstructorcore.md) | 26 | `declaration-track:3ad8fa712cf1130bbdafc6859c3f4af2c3e42f188edd22f6d5c191d8f04be3a7` |
-| 2 | `def` | [elabMConstructor](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ConstructorNamespacedPublicMConstructorCore.lean/declarations/elabmconstructor.md) | 38 | `declaration-track:d027941c60e28e57c96d4d9cd2f51b30b5d6a85c259ff64001162dc8124e8d96` |
+| 1 | `def` | [mConstructorCore](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ConstructorNamespacedPublicMConstructorCore.lean/declarations/mconstructorcore.md) | 26 | `declaration-track:3ad8fa712cf1130bbdafc6859c3f4af2c3e42f188edd22f6d5c191d8f04be3a7` |
+| 2 | `def` | [elabMConstructor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ConstructorNamespacedPublicMConstructorCore.lean/declarations/elabmconstructor.md) | 38 | `declaration-track:d027941c60e28e57c96d4d9cd2f51b30b5d6a85c259ff64001162dc8124e8d96` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

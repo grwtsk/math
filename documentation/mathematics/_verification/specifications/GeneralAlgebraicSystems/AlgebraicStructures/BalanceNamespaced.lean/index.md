@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BalanceNamespaced.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BalanceNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BalanceNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BalanceNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [balance](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BalanceNamespaced.lean/declarations/balance.md) | 37 | `declaration-track:6c91abe8f2831f6a5fdb9ea86a5a7b1742fbfc77addab8ccd7d63bae6ef3b8e9` |
-| 2 | `lemma` | [balance_apply](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BalanceNamespaced.lean/declarations/balance-apply.md) | 39 | `result-track:cc5af64910f6fa43172edfe54a661207acdaad1a37e85b833468a7e2c8e9cb93` |
-| 3 | `lemma` | [balance_zero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BalanceNamespaced.lean/declarations/balance-zero.md) | 41 | `result-track:a4afbc037327464a1d1ad8832433dba24a367120daebcf68afcbee5485f246ea` |
-| 4 | `lemma` | [balance_add](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BalanceNamespaced.lean/declarations/balance-add.md) | 43 | `result-track:1e3440b5910c937be03e30134dc1bfce9817f8b6b856f20ab4896030dcae2c7e` |
-| 5 | `lemma` | [balance_sub](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BalanceNamespaced.lean/declarations/balance-sub.md) | 46 | `result-track:fd34ee0ee435fcbcb27a435f336b149ad6a2e30d6a057cb462318f871f5f9dbe` |
-| 6 | `lemma` | [balance_neg](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BalanceNamespaced.lean/declarations/balance-neg.md) | 49 | `result-track:c605571498efe805ad9a2e3918ce48fcb93d43a022b543130ac4462de01a534b` |
-| 7 | `lemma` | [sum_balance](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BalanceNamespaced.lean/declarations/sum-balance.md) | 52 | `result-track:f31b6f7f6f58ecfd1a6aa4c8bc836201be139c9f6f5d6fe885917e9c55b60abc` |
-| 8 | `lemma` | [expect_balance](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BalanceNamespaced.lean/declarations/expect-balance.md) | 55 | `result-track:6c82456348aaae03be7d7021001994a7d12ff9f56f2d3f4ee0d8265e1ce8ef73` |
-| 9 | `lemma` | [balance_idem](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BalanceNamespaced.lean/declarations/balance-idem.md) | 57 | `result-track:380475abc3f1f8403c3c46a19af97c2216cfce633fa5ce705f6771440de0ee11` |
-| 10 | `lemma` | [map_balance](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BalanceNamespaced.lean/declarations/map-balance.md) | 60 | `result-track:905948bee568b374811510153d88fb1122f3e2a84d6528e926f9c7fadc2d3665` |
+| 1 | `def` | [balance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BalanceNamespaced.lean/declarations/balance.md) | 37 | `declaration-track:6c91abe8f2831f6a5fdb9ea86a5a7b1742fbfc77addab8ccd7d63bae6ef3b8e9` |
+| 2 | `lemma` | [balance_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BalanceNamespaced.lean/declarations/balance-apply.md) | 39 | `result-track:cc5af64910f6fa43172edfe54a661207acdaad1a37e85b833468a7e2c8e9cb93` |
+| 3 | `lemma` | [balance_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BalanceNamespaced.lean/declarations/balance-zero.md) | 41 | `result-track:a4afbc037327464a1d1ad8832433dba24a367120daebcf68afcbee5485f246ea` |
+| 4 | `lemma` | [balance_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BalanceNamespaced.lean/declarations/balance-add.md) | 43 | `result-track:1e3440b5910c937be03e30134dc1bfce9817f8b6b856f20ab4896030dcae2c7e` |
+| 5 | `lemma` | [balance_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BalanceNamespaced.lean/declarations/balance-sub.md) | 46 | `result-track:fd34ee0ee435fcbcb27a435f336b149ad6a2e30d6a057cb462318f871f5f9dbe` |
+| 6 | `lemma` | [balance_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BalanceNamespaced.lean/declarations/balance-neg.md) | 49 | `result-track:c605571498efe805ad9a2e3918ce48fcb93d43a022b543130ac4462de01a534b` |
+| 7 | `lemma` | [sum_balance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BalanceNamespaced.lean/declarations/sum-balance.md) | 52 | `result-track:f31b6f7f6f58ecfd1a6aa4c8bc836201be139c9f6f5d6fe885917e9c55b60abc` |
+| 8 | `lemma` | [expect_balance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BalanceNamespaced.lean/declarations/expect-balance.md) | 55 | `result-track:6c82456348aaae03be7d7021001994a7d12ff9f56f2d3f4ee0d8265e1ce8ef73` |
+| 9 | `lemma` | [balance_idem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BalanceNamespaced.lean/declarations/balance-idem.md) | 57 | `result-track:380475abc3f1f8403c3c46a19af97c2216cfce633fa5ce705f6771440de0ee11` |
+| 10 | `lemma` | [map_balance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BalanceNamespaced.lean/declarations/map-balance.md) | 60 | `result-track:905948bee568b374811510153d88fb1122f3e2a84d6528e926f9c7fadc2d3665` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

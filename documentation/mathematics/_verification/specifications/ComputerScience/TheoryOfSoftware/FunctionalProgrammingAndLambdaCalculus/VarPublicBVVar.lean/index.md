@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/VarPublicBVVar.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/VarPublicBVVar.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/VarPublicBVVar.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/VarPublicBVVar.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [BVVar](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/VarPublicBVVar.lean/declarations/bvvar.md) | 26 | `declaration-track:e35ce6be5b9f5a1cb4f932e3dead73cce77ab23a87fafe558013f6e282b93a7d` |
-| 2 | `def` | [blastVar](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/VarPublicBVVar.lean/declarations/blastvar.md) | 29 | `declaration-track:3c2312e8c4951d2a5042228ca15d638427c1a960c05b551759c383420d48d772` |
-| 3 | `theorem` | [blastVar.go_le_size](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/VarPublicBVVar.lean/declarations/blastvar-go-le-size.md) | 47 | `result-track:31c3c2c38381598e306414288e6cd20c8b859e0ef5586e3004b3c0ec4c962429` |
-| 4 | `theorem` | [blastVar.go_decl_eq](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/VarPublicBVVar.lean/declarations/blastvar-go-decl-eq.md) | 58 | `result-track:927e9f10da21f1ceb10aa2fd773d63e7f55bc9be5527d2e33ca459e86fcf50cc` |
-| 5 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/VarPublicBVVar.lean/declarations/instance.md) | 77 | `declaration-track:e10617efb99c46de61471b214483a4ac95e32d4b009f710418ba4d72a2e1e28a` |
+| 1 | `structure` | [BVVar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/VarPublicBVVar.lean/declarations/bvvar.md) | 26 | `declaration-track:e35ce6be5b9f5a1cb4f932e3dead73cce77ab23a87fafe558013f6e282b93a7d` |
+| 2 | `def` | [blastVar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/VarPublicBVVar.lean/declarations/blastvar.md) | 29 | `declaration-track:3c2312e8c4951d2a5042228ca15d638427c1a960c05b551759c383420d48d772` |
+| 3 | `theorem` | [blastVar.go_le_size](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/VarPublicBVVar.lean/declarations/blastvar-go-le-size.md) | 47 | `result-track:31c3c2c38381598e306414288e6cd20c8b859e0ef5586e3004b3c0ec4c962429` |
+| 4 | `theorem` | [blastVar.go_decl_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/VarPublicBVVar.lean/declarations/blastvar-go-decl-eq.md) | 58 | `result-track:927e9f10da21f1ceb10aa2fd773d63e7f55bc9be5527d2e33ca459e86fcf50cc` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/VarPublicBVVar.lean/declarations/instance.md) | 77 | `declaration-track:e10617efb99c46de61471b214483a4ac95e32d4b009f710418ba4d72a2e1e28a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

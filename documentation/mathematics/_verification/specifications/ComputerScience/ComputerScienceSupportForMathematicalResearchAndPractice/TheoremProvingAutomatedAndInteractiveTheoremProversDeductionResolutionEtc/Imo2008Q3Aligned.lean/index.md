@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/Imo2008Q3Aligned.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/Imo2008Q3Aligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/Imo2008Q3Aligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/Imo2008Q3Aligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,9 +62,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `macro_rules` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/Imo2008Q3Aligned.lean/declarations/macro-rules.md) | 34 | `declaration-track:e92456385d132faa6c7150a557c61145c9ba650040323b18895e22a000d03806` |
-| 2 | `theorem` | [p_lemma](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/Imo2008Q3Aligned.lean/declarations/p-lemma.md) | 38 | `result-track:35c41035d8b76afc3e66b91cda9b0aa0e9aaee050622ec5a45355c3930bfd62e` |
-| 3 | `theorem` | [imo2008_q3](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/Imo2008Q3Aligned.lean/declarations/imo2008-q3.md) | 80 | `result-track:b1c8d64062691a5bb67b0e9480577fc90bfec668d8f8d3f4c517d72ce9244c09` |
+| 1 | `macro_rules` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/Imo2008Q3Aligned.lean/declarations/macro-rules.md) | 34 | `declaration-track:e92456385d132faa6c7150a557c61145c9ba650040323b18895e22a000d03806` |
+| 2 | `theorem` | [p_lemma](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/Imo2008Q3Aligned.lean/declarations/p-lemma.md) | 38 | `result-track:35c41035d8b76afc3e66b91cda9b0aa0e9aaee050622ec5a45355c3930bfd62e` |
+| 3 | `theorem` | [imo2008_q3](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/Imo2008Q3Aligned.lean/declarations/imo2008-q3.md) | 80 | `result-track:b1c8d64062691a5bb67b0e9480577fc90bfec668d8f8d3f4c517d72ce9244c09` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

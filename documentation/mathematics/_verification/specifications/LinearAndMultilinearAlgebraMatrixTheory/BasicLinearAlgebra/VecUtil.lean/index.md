@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/VecUtil.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/VecUtil.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/VecUtil.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/VecUtil.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `initialize` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/VecUtil.lean/declarations/initialize.md) | 36 | `declaration-track:746e8eda798ed5042bac8c9a449d9ef05fb45d72c5ac6c43ad713a4def9778ac` |
-| 2 | `register_option` | [fuel](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/VecUtil.lean/declarations/fuel.md) | 39 | `declaration-track:20048c498198ca8f0a9c3b188b6ecf612da6c80b12e9401cbabeca497075a43c` |
-| 3 | `def` | [getFinVal?](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/VecUtil.lean/declarations/getfinval.md) | 47 | `declaration-track:440af23211579f1ed9f08d1bd23a14e0ee8c9286de6cba19754362f5492c60f0` |
-| 4 | `def` | [getVecElem](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/VecUtil.lean/declarations/getvecelem.md) | 92 | `declaration-track:5c9a486da969e4510f1781a647e0a920fbf4f9ba192b62e37b3565bb89bdd1ad` |
-| 5 | `macro` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/VecUtil.lean/declarations/macro.md) | 224 | `declaration-track:013ef8bcc893c4b23d671d8f26f3171ba8c4ce00ba287acdda204d3f2c21ca1d` |
+| 1 | `initialize` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/VecUtil.lean/declarations/initialize.md) | 36 | `declaration-track:746e8eda798ed5042bac8c9a449d9ef05fb45d72c5ac6c43ad713a4def9778ac` |
+| 2 | `register_option` | [fuel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/VecUtil.lean/declarations/fuel.md) | 39 | `declaration-track:20048c498198ca8f0a9c3b188b6ecf612da6c80b12e9401cbabeca497075a43c` |
+| 3 | `def` | [getFinVal?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/VecUtil.lean/declarations/getfinval.md) | 47 | `declaration-track:440af23211579f1ed9f08d1bd23a14e0ee8c9286de6cba19754362f5492c60f0` |
+| 4 | `def` | [getVecElem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/VecUtil.lean/declarations/getvecelem.md) | 92 | `declaration-track:5c9a486da969e4510f1781a647e0a920fbf4f9ba192b62e37b3565bb89bdd1ad` |
+| 5 | `macro` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/VecUtil.lean/declarations/macro.md) | 224 | `declaration-track:013ef8bcc893c4b23d671d8f26f3171ba8c4ce00ba287acdda204d3f2c21ca1d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

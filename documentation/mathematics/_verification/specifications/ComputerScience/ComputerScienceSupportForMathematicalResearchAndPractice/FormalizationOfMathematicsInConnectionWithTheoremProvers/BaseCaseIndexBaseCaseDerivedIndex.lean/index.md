@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BaseCaseIndexBaseCaseDerivedIndex.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BaseCaseIndexBaseCaseDerivedIndex.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BaseCaseIndexBaseCaseDerivedIndex.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BaseCaseIndexBaseCaseDerivedIndex.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [BaseCaseDerivedIndex](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BaseCaseIndexBaseCaseDerivedIndex.lean/declarations/basecasederivedindex.md) | 19 | `declaration-track:16a6a0551e20db60337ad659a4760e2c92c2b5a4607e0deaaf9ab7ba67e707bc` |
-| 2 | `theorem` | [base_case_derived_index_euler_nonzero](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BaseCaseIndexBaseCaseDerivedIndex.lean/declarations/base-case-derived-index-euler-nonzero.md) | 28 | `result-track:5a3a98032e069e23d879f505f6d0b8dc8cd0a58af93d40729f62a32292004434` |
-| 3 | `theorem` | [base_case_derived_index_same_complex](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BaseCaseIndexBaseCaseDerivedIndex.lean/declarations/base-case-derived-index-same-complex.md) | 36 | `result-track:e7362cb6067562ab62990bd7c04bcf25ff7c8be5da5a10a1854f1994a6b45b97` |
+| 1 | `structure` | [BaseCaseDerivedIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BaseCaseIndexBaseCaseDerivedIndex.lean/declarations/basecasederivedindex.md) | 19 | `declaration-track:16a6a0551e20db60337ad659a4760e2c92c2b5a4607e0deaaf9ab7ba67e707bc` |
+| 2 | `theorem` | [base_case_derived_index_euler_nonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BaseCaseIndexBaseCaseDerivedIndex.lean/declarations/base-case-derived-index-euler-nonzero.md) | 28 | `result-track:5a3a98032e069e23d879f505f6d0b8dc8cd0a58af93d40729f62a32292004434` |
+| 3 | `theorem` | [base_case_derived_index_same_complex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BaseCaseIndexBaseCaseDerivedIndex.lean/declarations/base-case-derived-index-same-complex.md) | 36 | `result-track:e7362cb6067562ab62990bd7c04bcf25ff7c8be5da5a10a1854f1994a6b45b97` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/OffLine.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/OffLine.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/OffLine.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/OffLine.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [OffCriticalLineCell](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/OffLine.lean/declarations/offcriticallinecell.md) | 13 | `declaration-track:f6b2fb6dad7e9797b6bbf6368b0a14bf44dfa028dc8a16cfcb87541350bc3a32` |
-| 2 | `structure` | [CertifiedOffLineZero](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/OffLine.lean/declarations/certifiedofflinezero.md) | 21 | `declaration-track:a0f9a6f9a06f6e48baaccedd094d780fc9d8cb823cabbf1d633c403d2138255f` |
-| 3 | `theorem` | [positive_count_in_offLineCell_gives_offLineZero](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/OffLine.lean/declarations/positive-count-in-offlinecell-gives-offlinezero.md) | 32 | `result-track:4e73754a97faba1bceaed4e86d531b60c41a97b53ea4ddfea3916bb2ff0b7249` |
-| 4 | `theorem` | [certifiedOffLineZero_refutes_finiteHeightRH](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/OffLine.lean/declarations/certifiedofflinezero-refutes-finiteheightrh.md) | 63 | `result-track:26f36664c6ac444042ce646a83dba5151c846d3e1f28dd1b55201d9d491a945c` |
+| 1 | `structure` | [OffCriticalLineCell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/OffLine.lean/declarations/offcriticallinecell.md) | 13 | `declaration-track:f6b2fb6dad7e9797b6bbf6368b0a14bf44dfa028dc8a16cfcb87541350bc3a32` |
+| 2 | `structure` | [CertifiedOffLineZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/OffLine.lean/declarations/certifiedofflinezero.md) | 21 | `declaration-track:a0f9a6f9a06f6e48baaccedd094d780fc9d8cb823cabbf1d633c403d2138255f` |
+| 3 | `theorem` | [positive_count_in_offLineCell_gives_offLineZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/OffLine.lean/declarations/positive-count-in-offlinecell-gives-offlinezero.md) | 32 | `result-track:4e73754a97faba1bceaed4e86d531b60c41a97b53ea4ddfea3916bb2ff0b7249` |
+| 4 | `theorem` | [certifiedOffLineZero_refutes_finiteHeightRH](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/OffLine.lean/declarations/certifiedofflinezero-refutes-finiteheightrh.md) | 63 | `result-track:26f36664c6ac444042ce646a83dba5151c846d3e1f28dd1b55201d9d491a945c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

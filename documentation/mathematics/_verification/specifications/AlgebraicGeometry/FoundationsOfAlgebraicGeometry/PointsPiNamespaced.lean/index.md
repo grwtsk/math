@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/PointsPiNamespaced.lean/index.md) · [Full source](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/PointsPiNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/PointsPiNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/PointsPiNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [Ideal.span_eq_top_of_span_image_evalRingHom](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/PointsPiNamespaced.lean/declarations/ideal-span-eq-top-of-span-image-evalringhom.md) | 33 | `result-track:dfcd0358b3900a961bc5b9b540f435a1befa337c5b0df6a8de0821d1f5f81de1` |
-| 2 | `lemma` | [eq_top_of_sigmaSpec_subset_of_isCompact](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/PointsPiNamespaced.lean/declarations/eq-top-of-sigmaspec-subset-of-iscompact.md) | 45 | `result-track:aebd8410dfb63462d3269da0c28799379e40c79f7d54858e4b545dffe676b926` |
-| 3 | `lemma` | [eq_bot_of_comp_quotientMk_eq_sigmaSpec](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/PointsPiNamespaced.lean/declarations/eq-bot-of-comp-quotientmk-eq-sigmaspec.md) | 69 | `result-track:394aec9369b42df2003cde252b4835afbdab20b74fd4c7ed705ce60d1ad459af` |
-| 4 | `lemma` | [isIso_of_comp_eq_sigmaSpec](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/PointsPiNamespaced.lean/declarations/isiso-of-comp-eq-sigmaspec.md) | 80 | `result-track:b6ce2880f49d944c03880fb086229a826a0aafd264e796a1726da827bacc5d92` |
-| 5 | `def` | [pointsPi](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/PointsPiNamespaced.lean/declarations/pointspi.md) | 103 | `declaration-track:8f64adc0fc35d3b6ceacf7b141fdebab584bf7d4edf7ead5f06df7d076d5bf61` |
-| 6 | `lemma` | [pointsPi_injective](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/PointsPiNamespaced.lean/declarations/pointspi-injective.md) | 106 | `result-track:8c6af4b8c20ee10ad62c9d1803bd5581e39ddb123642583e0d222e6390f2ceb4` |
-| 7 | `lemma` | [pointsPi_surjective_of_isAffine](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/PointsPiNamespaced.lean/declarations/pointspi-surjective-of-isaffine.md) | 113 | `result-track:d93cc56ae088a412275005a5cb74254b9eba026fa33f792286c4c244b0e696fc` |
-| 8 | `lemma` | [pointsPi_surjective](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/PointsPiNamespaced.lean/declarations/pointspi-surjective.md) | 121 | `result-track:9eaac44f7cbb0d50bb9eff51b84e9b8bc57a8854890ea9b3c9da4e1141d3598a` |
+| 1 | `lemma` | [Ideal.span_eq_top_of_span_image_evalRingHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/PointsPiNamespaced.lean/declarations/ideal-span-eq-top-of-span-image-evalringhom.md) | 33 | `result-track:dfcd0358b3900a961bc5b9b540f435a1befa337c5b0df6a8de0821d1f5f81de1` |
+| 2 | `lemma` | [eq_top_of_sigmaSpec_subset_of_isCompact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/PointsPiNamespaced.lean/declarations/eq-top-of-sigmaspec-subset-of-iscompact.md) | 45 | `result-track:aebd8410dfb63462d3269da0c28799379e40c79f7d54858e4b545dffe676b926` |
+| 3 | `lemma` | [eq_bot_of_comp_quotientMk_eq_sigmaSpec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/PointsPiNamespaced.lean/declarations/eq-bot-of-comp-quotientmk-eq-sigmaspec.md) | 69 | `result-track:394aec9369b42df2003cde252b4835afbdab20b74fd4c7ed705ce60d1ad459af` |
+| 4 | `lemma` | [isIso_of_comp_eq_sigmaSpec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/PointsPiNamespaced.lean/declarations/isiso-of-comp-eq-sigmaspec.md) | 80 | `result-track:b6ce2880f49d944c03880fb086229a826a0aafd264e796a1726da827bacc5d92` |
+| 5 | `def` | [pointsPi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/PointsPiNamespaced.lean/declarations/pointspi.md) | 103 | `declaration-track:8f64adc0fc35d3b6ceacf7b141fdebab584bf7d4edf7ead5f06df7d076d5bf61` |
+| 6 | `lemma` | [pointsPi_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/PointsPiNamespaced.lean/declarations/pointspi-injective.md) | 106 | `result-track:8c6af4b8c20ee10ad62c9d1803bd5581e39ddb123642583e0d222e6390f2ceb4` |
+| 7 | `lemma` | [pointsPi_surjective_of_isAffine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/PointsPiNamespaced.lean/declarations/pointspi-surjective-of-isaffine.md) | 113 | `result-track:d93cc56ae088a412275005a5cb74254b9eba026fa33f792286c4c244b0e696fc` |
+| 8 | `lemma` | [pointsPi_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/PointsPiNamespaced.lean/declarations/pointspi-surjective.md) | 121 | `result-track:9eaac44f7cbb0d50bb9eff51b84e9b8bc57a8854890ea9b3c9da4e1141d3598a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceActualSharpZeroTailNamespacedEdition1.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceActualSharpZeroTailNamespacedEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualSharpZeroTailNamespacedEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualSharpZeroTailNamespacedEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [pole_norm_joint_strip_le](../../../../MeasureAndIntegration/SourceActualSharpZeroTailNamespacedEdition1.lean/declarations/pole-norm-joint-strip-le.md) | 26 | `result-track:24196ce5ab8bffeeea62c7ade481893cc057080073e1550aaa492d5b6d1d0248` |
-| 2 | `theorem` | [endpoint_minus_norm_le](../../../../MeasureAndIntegration/SourceActualSharpZeroTailNamespacedEdition1.lean/declarations/endpoint-minus-norm-le.md) | 48 | `result-track:679a912db1771fe63fae474238b1de1576face83de480a960b323b08cdddc3a0` |
-| 3 | `theorem` | [endpoint_plus_norm_le](../../../../MeasureAndIntegration/SourceActualSharpZeroTailNamespacedEdition1.lean/declarations/endpoint-plus-norm-le.md) | 59 | `result-track:c7f690a713642279b2df171dcc01640c84759147ffda2ce80169c2e35759d5e7` |
-| 4 | `theorem` | [actual_bump_complete_endpoint_norm_le](../../../../MeasureAndIntegration/SourceActualSharpZeroTailNamespacedEdition1.lean/declarations/actual-bump-complete-endpoint-norm-le.md) | 71 | `result-track:2d748570a34354f0aa082b863846e17540f1bed378402990790eb930598e178b` |
-| 5 | `def` | [endpointScale](../../../../MeasureAndIntegration/SourceActualSharpZeroTailNamespacedEdition1.lean/declarations/endpointscale.md) | 96 | `declaration-track:a856b6fb1f0b6788a62f0ea2394b074edfb56eed8598e879af4777b5815a1787` |
-| 6 | `theorem` | [endpointScale_pos](../../../../MeasureAndIntegration/SourceActualSharpZeroTailNamespacedEdition1.lean/declarations/endpointscale-pos.md) | 99 | `result-track:31900601e19281caff3e02b98d1ceecc426104d869922a030c934eae7abed221` |
-| 7 | `theorem` | [endpointScale_antitone](../../../../MeasureAndIntegration/SourceActualSharpZeroTailNamespacedEdition1.lean/declarations/endpointscale-antitone.md) | 103 | `result-track:981014fc20bd38b726250b272efa0859451d0805a5dd43a22d2d282348e31b80` |
-| 8 | `theorem` | [actual_bump_endpoint_scale_norm_le](../../../../MeasureAndIntegration/SourceActualSharpZeroTailNamespacedEdition1.lean/declarations/actual-bump-endpoint-scale-norm-le.md) | 116 | `result-track:12da1fe3823f75c910c6da00ac917e9ce202428d20945a645300c50cf4d8f9c4` |
+| 1 | `theorem` | [pole_norm_joint_strip_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualSharpZeroTailNamespacedEdition1.lean/declarations/pole-norm-joint-strip-le.md) | 26 | `result-track:24196ce5ab8bffeeea62c7ade481893cc057080073e1550aaa492d5b6d1d0248` |
+| 2 | `theorem` | [endpoint_minus_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualSharpZeroTailNamespacedEdition1.lean/declarations/endpoint-minus-norm-le.md) | 48 | `result-track:679a912db1771fe63fae474238b1de1576face83de480a960b323b08cdddc3a0` |
+| 3 | `theorem` | [endpoint_plus_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualSharpZeroTailNamespacedEdition1.lean/declarations/endpoint-plus-norm-le.md) | 59 | `result-track:c7f690a713642279b2df171dcc01640c84759147ffda2ce80169c2e35759d5e7` |
+| 4 | `theorem` | [actual_bump_complete_endpoint_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualSharpZeroTailNamespacedEdition1.lean/declarations/actual-bump-complete-endpoint-norm-le.md) | 71 | `result-track:2d748570a34354f0aa082b863846e17540f1bed378402990790eb930598e178b` |
+| 5 | `def` | [endpointScale](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualSharpZeroTailNamespacedEdition1.lean/declarations/endpointscale.md) | 96 | `declaration-track:a856b6fb1f0b6788a62f0ea2394b074edfb56eed8598e879af4777b5815a1787` |
+| 6 | `theorem` | [endpointScale_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualSharpZeroTailNamespacedEdition1.lean/declarations/endpointscale-pos.md) | 99 | `result-track:31900601e19281caff3e02b98d1ceecc426104d869922a030c934eae7abed221` |
+| 7 | `theorem` | [endpointScale_antitone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualSharpZeroTailNamespacedEdition1.lean/declarations/endpointscale-antitone.md) | 103 | `result-track:981014fc20bd38b726250b272efa0859451d0805a5dd43a22d2d282348e31b80` |
+| 8 | `theorem` | [actual_bump_endpoint_scale_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualSharpZeroTailNamespacedEdition1.lean/declarations/actual-bump-endpoint-scale-norm-le.md) | 116 | `result-track:12da1fe3823f75c910c6da00ac917e9ce202428d20945a645300c50cf4d8f9c4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

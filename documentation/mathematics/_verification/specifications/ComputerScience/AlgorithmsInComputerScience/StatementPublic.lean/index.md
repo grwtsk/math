@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/StatementPublic.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/StatementPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StatementPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StatementPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [IfExpr](../../../../../ComputerScience/AlgorithmsInComputerScience/StatementPublic.lean/declarations/ifexpr.md) | 24 | `declaration-track:43d4fb7477b56401432bb52199069480570e9b665a1b92932220e229b34c527e` |
-| 2 | `def` | [hasNestedIf](../../../../../ComputerScience/AlgorithmsInComputerScience/StatementPublic.lean/declarations/hasnestedif.md) | 36 | `declaration-track:8cc8281ae954259e90fb14b8f1606f64f396f231c2c2eb277aba74cd29ee0092` |
-| 3 | `def` | [hasConstantIf](../../../../../ComputerScience/AlgorithmsInComputerScience/StatementPublic.lean/declarations/hasconstantif.md) | 46 | `declaration-track:2244091e3c4ae002c2123e00d29b94f81f7f03bf1610dd70977d0d84757a7bdc` |
-| 4 | `def` | [hasRedundantIf](../../../../../ComputerScience/AlgorithmsInComputerScience/StatementPublic.lean/declarations/hasredundantif.md) | 56 | `declaration-track:3b131fd254b6e9799185572b6e7150aa88945861d00eff12312496719d10b081` |
-| 5 | `def` | [vars](../../../../../ComputerScience/AlgorithmsInComputerScience/StatementPublic.lean/declarations/vars.md) | 64 | `declaration-track:334365e3aaf26465b66f00fd24367c7133a1b4dc20f34fd1963e208d06513a83` |
-| 6 | `def` | [_root_.List.disjoint](../../../../../ComputerScience/AlgorithmsInComputerScience/StatementPublic.lean/declarations/root-list-disjoint.md) | 72 | `declaration-track:a10e5b0494080f7943c44d6f3238c00168da9004d5a0f998dfa2d241d3e08efa` |
-| 7 | `def` | [disjoint](../../../../../ComputerScience/AlgorithmsInComputerScience/StatementPublic.lean/declarations/disjoint.md) | 81 | `declaration-track:4ea21ed61ea705a332d92a5333b965fa1bf6862c994c0e22a417c0f023dac598` |
-| 8 | `def` | [normalized](../../../../../ComputerScience/AlgorithmsInComputerScience/StatementPublic.lean/declarations/normalized.md) | 91 | `declaration-track:289ba0e3b308d81566002a8d91da479c71c8f2a08bb162f6f83ce4af9c1b2616` |
-| 9 | `def` | [eval](../../../../../ComputerScience/AlgorithmsInComputerScience/StatementPublic.lean/declarations/eval.md) | 97 | `declaration-track:a90e70c51768eb9ade2457047c1fd3d06de60bef9f0b1d3a8297513785cc4a26` |
-| 10 | `def` | [IfNormalization](../../../../../ComputerScience/AlgorithmsInComputerScience/StatementPublic.lean/declarations/ifnormalization.md) | 110 | `declaration-track:c005518c51282d87eeba5b648fac0d39f38c4c8aa65fd3633d36c03c0136e182` |
+| 1 | `inductive` | [IfExpr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StatementPublic.lean/declarations/ifexpr.md) | 24 | `declaration-track:43d4fb7477b56401432bb52199069480570e9b665a1b92932220e229b34c527e` |
+| 2 | `def` | [hasNestedIf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StatementPublic.lean/declarations/hasnestedif.md) | 36 | `declaration-track:8cc8281ae954259e90fb14b8f1606f64f396f231c2c2eb277aba74cd29ee0092` |
+| 3 | `def` | [hasConstantIf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StatementPublic.lean/declarations/hasconstantif.md) | 46 | `declaration-track:2244091e3c4ae002c2123e00d29b94f81f7f03bf1610dd70977d0d84757a7bdc` |
+| 4 | `def` | [hasRedundantIf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StatementPublic.lean/declarations/hasredundantif.md) | 56 | `declaration-track:3b131fd254b6e9799185572b6e7150aa88945861d00eff12312496719d10b081` |
+| 5 | `def` | [vars](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StatementPublic.lean/declarations/vars.md) | 64 | `declaration-track:334365e3aaf26465b66f00fd24367c7133a1b4dc20f34fd1963e208d06513a83` |
+| 6 | `def` | [_root_.List.disjoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StatementPublic.lean/declarations/root-list-disjoint.md) | 72 | `declaration-track:a10e5b0494080f7943c44d6f3238c00168da9004d5a0f998dfa2d241d3e08efa` |
+| 7 | `def` | [disjoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StatementPublic.lean/declarations/disjoint.md) | 81 | `declaration-track:4ea21ed61ea705a332d92a5333b965fa1bf6862c994c0e22a417c0f023dac598` |
+| 8 | `def` | [normalized](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StatementPublic.lean/declarations/normalized.md) | 91 | `declaration-track:289ba0e3b308d81566002a8d91da479c71c8f2a08bb162f6f83ce4af9c1b2616` |
+| 9 | `def` | [eval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StatementPublic.lean/declarations/eval.md) | 97 | `declaration-track:a90e70c51768eb9ade2457047c1fd3d06de60bef9f0b1d3a8297513785cc4a26` |
+| 10 | `def` | [IfNormalization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StatementPublic.lean/declarations/ifnormalization.md) | 110 | `declaration-track:c005518c51282d87eeba5b648fac0d39f38c4c8aa65fd3633d36c03c0136e182` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

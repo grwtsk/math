@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsEpiMono.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsEpiMono.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsEpiMono.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsEpiMono.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [mono_iff_fst_eq_snd](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsEpiMono.lean/declarations/mono-iff-fst-eq-snd.md) | 38 | `result-track:073dc1804fc7dd6fe685edfd14530c3e42ab692f0bc89d87d0194c5838cac3b9` |
-| 2 | `lemma` | [mono_iff_isIso_fst](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsEpiMono.lean/declarations/mono-iff-isiso-fst.md) | 48 | `result-track:2e61b83d11bd98f39e82758ef0d2e6c770c9e52638b8354d7b45c16ce66f0f6c` |
-| 3 | `lemma` | [mono_iff_isIso_snd](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsEpiMono.lean/declarations/mono-iff-isiso-snd.md) | 64 | `result-track:4798e1e4ea3e3bb3918f29a1ddd0101dc59fee7d486643e9ead808c804880593` |
-| 4 | `lemma` | [mono_iff_isPullback](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsEpiMono.lean/declarations/mono-iff-ispullback.md) | 69 | `result-track:ee1ed790af0846896f2958ba87b6ab04e6af956aa57354dd7ad8ad3657ad116f` |
-| 5 | `lemma` | [epi_iff_inl_eq_inr](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsEpiMono.lean/declarations/epi-iff-inl-eq-inr.md) | 82 | `result-track:e6393eed6d236deb3aee51da59bdd0ade0a5e7fe59e5f76ef219eac3e18a1e23` |
-| 6 | `lemma` | [epi_iff_isIso_inl](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsEpiMono.lean/declarations/epi-iff-isiso-inl.md) | 92 | `result-track:3e72fd04bdf9858d4b382ccbaad95d9645db9b6bd4f7a776d56ee4817df59726` |
-| 7 | `lemma` | [epi_iff_isIso_inr](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsEpiMono.lean/declarations/epi-iff-isiso-inr.md) | 108 | `result-track:32432dacca9557b7c3b54dd8235bfc86725f6ab32820eb112731b595155e49b2` |
-| 8 | `lemma` | [epi_iff_isPushout](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsEpiMono.lean/declarations/epi-iff-ispushout.md) | 113 | `result-track:566550b528bf35be8c0a2494a80b9964779a6db0e2becb9d84468d302741defb` |
+| 1 | `lemma` | [mono_iff_fst_eq_snd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsEpiMono.lean/declarations/mono-iff-fst-eq-snd.md) | 38 | `result-track:073dc1804fc7dd6fe685edfd14530c3e42ab692f0bc89d87d0194c5838cac3b9` |
+| 2 | `lemma` | [mono_iff_isIso_fst](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsEpiMono.lean/declarations/mono-iff-isiso-fst.md) | 48 | `result-track:2e61b83d11bd98f39e82758ef0d2e6c770c9e52638b8354d7b45c16ce66f0f6c` |
+| 3 | `lemma` | [mono_iff_isIso_snd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsEpiMono.lean/declarations/mono-iff-isiso-snd.md) | 64 | `result-track:4798e1e4ea3e3bb3918f29a1ddd0101dc59fee7d486643e9ead808c804880593` |
+| 4 | `lemma` | [mono_iff_isPullback](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsEpiMono.lean/declarations/mono-iff-ispullback.md) | 69 | `result-track:ee1ed790af0846896f2958ba87b6ab04e6af956aa57354dd7ad8ad3657ad116f` |
+| 5 | `lemma` | [epi_iff_inl_eq_inr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsEpiMono.lean/declarations/epi-iff-inl-eq-inr.md) | 82 | `result-track:e6393eed6d236deb3aee51da59bdd0ade0a5e7fe59e5f76ef219eac3e18a1e23` |
+| 6 | `lemma` | [epi_iff_isIso_inl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsEpiMono.lean/declarations/epi-iff-isiso-inl.md) | 92 | `result-track:3e72fd04bdf9858d4b382ccbaad95d9645db9b6bd4f7a776d56ee4817df59726` |
+| 7 | `lemma` | [epi_iff_isIso_inr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsEpiMono.lean/declarations/epi-iff-isiso-inr.md) | 108 | `result-track:32432dacca9557b7c3b54dd8235bfc86725f6ab32820eb112731b595155e49b2` |
+| 8 | `lemma` | [epi_iff_isPushout](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsEpiMono.lean/declarations/epi-iff-ispushout.md) | 113 | `result-track:566550b528bf35be8c0a2494a80b9964779a6db0e2becb9d84468d302741defb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

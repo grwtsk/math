@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Imo1986Q5NamespacedPublic.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Imo1986Q5NamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Imo1986Q5NamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Imo1986Q5NamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [IsGood](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Imo1986Q5NamespacedPublic.lean/declarations/isgood.md) | 45 | `declaration-track:ef449caa7985e11f5528a3b3aaf38e1cad2151131d371609617eb8311edb6c78` |
-| 2 | `theorem` | [map_add](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Imo1986Q5NamespacedPublic.lean/declarations/map-add.md) | 55 | `result-track:c163a800d1cd51a178fb9fa27337bfc5b3444dccd5559c1bd7dc2d46bf11c2fa` |
-| 3 | `theorem` | [map_eq_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Imo1986Q5NamespacedPublic.lean/declarations/map-eq-zero.md) | 58 | `result-track:0825a458c4c3b695ce7637b73444c611f3f99a3b1c4967091f9db6d9b69a7201` |
-| 4 | `theorem` | [map_ne_zero_iff](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Imo1986Q5NamespacedPublic.lean/declarations/map-ne-zero-iff.md) | 63 | `result-track:daf98864286b97bdd028f1d906fbc43b6fa05f8c20d6bed86a5b13fdcdf65af8` |
-| 5 | `theorem` | [map_of_lt_two](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Imo1986Q5NamespacedPublic.lean/declarations/map-of-lt-two.md) | 65 | `result-track:4cbae4b9a3246a3e0caa479b1ceb40fec3c8eb2a34725a7fa42f588249e08ca8` |
-| 6 | `theorem` | [map_eq](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Imo1986Q5NamespacedPublic.lean/declarations/map-eq.md) | 75 | `result-track:45ccdba4ce71309bb227314bdd593a677ad142e2cfcdf61eaa53bde15cae3013` |
-| 7 | `theorem` | [isGood_iff](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Imo1986Q5NamespacedPublic.lean/declarations/isgood-iff.md) | 82 | `result-track:081fdd4d87800642b619c348fd6e77e031d2c15eb030c87a217525ecb71873d7` |
+| 1 | `structure` | [IsGood](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Imo1986Q5NamespacedPublic.lean/declarations/isgood.md) | 45 | `declaration-track:ef449caa7985e11f5528a3b3aaf38e1cad2151131d371609617eb8311edb6c78` |
+| 2 | `theorem` | [map_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Imo1986Q5NamespacedPublic.lean/declarations/map-add.md) | 55 | `result-track:c163a800d1cd51a178fb9fa27337bfc5b3444dccd5559c1bd7dc2d46bf11c2fa` |
+| 3 | `theorem` | [map_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Imo1986Q5NamespacedPublic.lean/declarations/map-eq-zero.md) | 58 | `result-track:0825a458c4c3b695ce7637b73444c611f3f99a3b1c4967091f9db6d9b69a7201` |
+| 4 | `theorem` | [map_ne_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Imo1986Q5NamespacedPublic.lean/declarations/map-ne-zero-iff.md) | 63 | `result-track:daf98864286b97bdd028f1d906fbc43b6fa05f8c20d6bed86a5b13fdcdf65af8` |
+| 5 | `theorem` | [map_of_lt_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Imo1986Q5NamespacedPublic.lean/declarations/map-of-lt-two.md) | 65 | `result-track:4cbae4b9a3246a3e0caa479b1ceb40fec3c8eb2a34725a7fa42f588249e08ca8` |
+| 6 | `theorem` | [map_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Imo1986Q5NamespacedPublic.lean/declarations/map-eq.md) | 75 | `result-track:45ccdba4ce71309bb227314bdd593a677ad142e2cfcdf61eaa53bde15cae3013` |
+| 7 | `theorem` | [isGood_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Imo1986Q5NamespacedPublic.lean/declarations/isgood-iff.md) | 82 | `result-track:081fdd4d87800642b619c348fd6e77e031d2c15eb030c87a217525ecb71873d7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

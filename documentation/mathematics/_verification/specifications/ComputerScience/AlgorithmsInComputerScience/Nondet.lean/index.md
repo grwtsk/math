@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Nondet.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Nondet.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Nondet.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Nondet.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [M](../../../../../ComputerScience/AlgorithmsInComputerScience/Nondet.lean/declarations/m.md) | 8 | `declaration-track:bffdf94ed05273cbea9404f79ec9f57e4c07a072e047e1561e5d4ceecfe2ad99` |
-| 2 | `instance` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/Nondet.lean/declarations/instance.md) | 12 | `declaration-track:caa65e1f4cff9d58878b4c4b230fe953d232b01fca4c15c981e4aea4e7fb91fa` |
-| 3 | `def` | [record](../../../../../ComputerScience/AlgorithmsInComputerScience/Nondet.lean/declarations/record.md) | 16 | `declaration-track:ba8023b5f42d31cbecf71b2fad82393291c4081d0fcf07cb30354f35fbc9ab0c` |
-| 4 | `def` | [iotaM](../../../../../ComputerScience/AlgorithmsInComputerScience/Nondet.lean/declarations/iotam.md) | 19 | `declaration-track:019c25fbba7847222e2a19bd3bf4aa5e7c5c8a05fb56edeb176d44aec93fff89` |
-| 5 | `def` | [x](../../../../../ComputerScience/AlgorithmsInComputerScience/Nondet.lean/declarations/x.md) | 30 | `declaration-track:47e92c0b74acafe7eeb05cc48b7ead9e0cd89ba8af53b2c79860da826cfe9910` |
-| 6 | `def` | [divisors](../../../../../ComputerScience/AlgorithmsInComputerScience/Nondet.lean/declarations/divisors.md) | 42 | `declaration-track:c0338ed491cbf9db2e4202df153a817cf53693d09ffcda6b611c8c4cd24ef57a` |
-| 7 | `example` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/Nondet.lean/declarations/example.md) | 43 | `declaration-track:253db84777bda5ec7006a1166b1f97821d84224d4cde7a5460a2aa9ab2fc5863` |
-| 8 | `def` | [divisorsM](../../../../../ComputerScience/AlgorithmsInComputerScience/Nondet.lean/declarations/divisorsm.md) | 45 | `declaration-track:dfdd2bb0ed9b078b3775a43bd88c81923feecb4ab0cba5c44955ee0203cc8111` |
-| 9 | `def` | [y](../../../../../ComputerScience/AlgorithmsInComputerScience/Nondet.lean/declarations/y.md) | 49 | `declaration-track:8a161f42eefc2e51efe630cd9b14abfc44c9084710bd2e23357fab693af0d922` |
+| 1 | `def` | [M](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Nondet.lean/declarations/m.md) | 8 | `declaration-track:bffdf94ed05273cbea9404f79ec9f57e4c07a072e047e1561e5d4ceecfe2ad99` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Nondet.lean/declarations/instance.md) | 12 | `declaration-track:caa65e1f4cff9d58878b4c4b230fe953d232b01fca4c15c981e4aea4e7fb91fa` |
+| 3 | `def` | [record](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Nondet.lean/declarations/record.md) | 16 | `declaration-track:ba8023b5f42d31cbecf71b2fad82393291c4081d0fcf07cb30354f35fbc9ab0c` |
+| 4 | `def` | [iotaM](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Nondet.lean/declarations/iotam.md) | 19 | `declaration-track:019c25fbba7847222e2a19bd3bf4aa5e7c5c8a05fb56edeb176d44aec93fff89` |
+| 5 | `def` | [x](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Nondet.lean/declarations/x.md) | 30 | `declaration-track:47e92c0b74acafe7eeb05cc48b7ead9e0cd89ba8af53b2c79860da826cfe9910` |
+| 6 | `def` | [divisors](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Nondet.lean/declarations/divisors.md) | 42 | `declaration-track:c0338ed491cbf9db2e4202df153a817cf53693d09ffcda6b611c8c4cd24ef57a` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Nondet.lean/declarations/example.md) | 43 | `declaration-track:253db84777bda5ec7006a1166b1f97821d84224d4cde7a5460a2aa9ab2fc5863` |
+| 8 | `def` | [divisorsM](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Nondet.lean/declarations/divisorsm.md) | 45 | `declaration-track:dfdd2bb0ed9b078b3775a43bd88c81923feecb4ab0cba5c44955ee0203cc8111` |
+| 9 | `def` | [y](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Nondet.lean/declarations/y.md) | 49 | `declaration-track:8a161f42eefc2e51efe630cd9b14abfc44c9084710bd2e23357fab693af0d922` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

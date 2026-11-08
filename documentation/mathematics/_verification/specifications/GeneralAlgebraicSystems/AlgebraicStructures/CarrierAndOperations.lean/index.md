@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CarrierAndOperations.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CarrierAndOperations.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CarrierAndOperations.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CarrierAndOperations.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [ToyKClass](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CarrierAndOperations.lean/declarations/toykclass.md) | 36 | `declaration-track:75ed6962b21be32f0abcd1471f89bb403ee06437b0d0c32460decf5e5f129fd2` |
-| 2 | `def` | [standardKTheorySpace](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CarrierAndOperations.lean/declarations/standardktheoryspace.md) | 41 | `declaration-track:bb166fde49cdde673062c19fc838f38174ebe81756b37588ac18ba7efa192272` |
+| 1 | `inductive` | [ToyKClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CarrierAndOperations.lean/declarations/toykclass.md) | 36 | `declaration-track:75ed6962b21be32f0abcd1471f89bb403ee06437b0d0c32460decf5e5f129fd2` |
+| 2 | `def` | [standardKTheorySpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CarrierAndOperations.lean/declarations/standardktheoryspace.md) | 41 | `declaration-track:bb166fde49cdde673062c19fc838f38174ebe81756b37588ac18ba7efa192272` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

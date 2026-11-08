@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExactStringRetraction.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExactStringRetraction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExactStringRetraction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExactStringRetraction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `Folder.Basic` — import line 19; external provider; requires a separately pinned dependency.
-- [Finite Symbols And Inverse Table](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteSymbolsAndInverseTable.lean/index.md) — import line 21; pinned internal source present.
+- [Finite Symbols And Inverse Table](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteSymbolsAndInverseTable.lean/index.md) — import line 21; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [render](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExactStringRetraction.lean/declarations/render.md) | 40 | `declaration-track:bf4d4380be0dd46f32cf6c3bdc2e5604ecb5a15b4c4427382f599e32205ff9a0` |
-| 2 | `def` | [parse?](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExactStringRetraction.lean/declarations/parse.md) | 47 | `declaration-track:fc55e3b30b104188b2255cb3d911e330ecc61c02f485a0668174ac95330eb928` |
-| 3 | `theorem` | [parse?_render](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExactStringRetraction.lean/declarations/parse-render.md) | 55 | `result-track:e5b48754a5c10b7eb471203dc4bb6f8bdc808f719c9030eb3dd0180f23e912ce` |
-| 4 | `theorem` | [render_injective](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExactStringRetraction.lean/declarations/render-injective.md) | 61 | `result-track:b7ef52e57615e3309f27694f9fea37a70f20c4dd3d587b9f7025fe8548a136f7` |
+| 1 | `def` | [render](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExactStringRetraction.lean/declarations/render.md) | 40 | `declaration-track:bf4d4380be0dd46f32cf6c3bdc2e5604ecb5a15b4c4427382f599e32205ff9a0` |
+| 2 | `def` | [parse?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExactStringRetraction.lean/declarations/parse.md) | 47 | `declaration-track:fc55e3b30b104188b2255cb3d911e330ecc61c02f485a0668174ac95330eb928` |
+| 3 | `theorem` | [parse?_render](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExactStringRetraction.lean/declarations/parse-render.md) | 55 | `result-track:e5b48754a5c10b7eb471203dc4bb6f8bdc808f719c9030eb3dd0180f23e912ce` |
+| 4 | `theorem` | [render_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExactStringRetraction.lean/declarations/render-injective.md) | 61 | `result-track:b7ef52e57615e3309f27694f9fea37a70f20c4dd3d587b9f7025fe8548a136f7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

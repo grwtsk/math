@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/AnalysisComplexTrigonometricNamespacedPublicNormCosLeExpAbsIm.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/AnalysisComplexTrigonometricNamespacedPublicNormCosLeExpAbsIm.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/AnalysisComplexTrigonometricNamespacedPublicNormCosLeExpAbsIm.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/AnalysisComplexTrigonometricNamespacedPublicNormCosLeExpAbsIm.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [norm_cos_le_exp_abs_im](../../../../FunctionsOfAComplexVariable/AnalysisComplexTrigonometricNamespacedPublicNormCosLeExpAbsIm.lean/declarations/norm-cos-le-exp-abs-im.md) | 24 | `result-track:741af397bf53f39ba0c31bbc1f28e3c7420ab97189f8e60ebb8c5722399f2755` |
+| 1 | `lemma` | [norm_cos_le_exp_abs_im](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/AnalysisComplexTrigonometricNamespacedPublicNormCosLeExpAbsIm.lean/declarations/norm-cos-le-exp-abs-im.md) | 24 | `result-track:741af397bf53f39ba0c31bbc1f28e3c7420ab97189f8e60ebb8c5722399f2755` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

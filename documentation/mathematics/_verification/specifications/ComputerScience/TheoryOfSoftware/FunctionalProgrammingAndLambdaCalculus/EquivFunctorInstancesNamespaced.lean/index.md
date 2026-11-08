@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/EquivFunctorInstancesNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/EquivFunctorInstancesNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/EquivFunctorInstancesNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/EquivFunctorInstancesNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [EquivFunctorUnique](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/EquivFunctorInstancesNamespaced.lean/declarations/equivfunctorunique.md) | 28 | `declaration-track:3c00bb626dc30d107d395677b7932b987b009c9f05370b2efe449bc7bed58098` |
-| 2 | `instance` | [EquivFunctorPerm](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/EquivFunctorInstancesNamespaced.lean/declarations/equivfunctorperm.md) | 34 | `declaration-track:bc9dd55e8f9c33b85cacb79d25192d33801269c8353d973fc905488a1c93842c` |
-| 3 | `instance` | [EquivFunctorFinset](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/EquivFunctorInstancesNamespaced.lean/declarations/equivfunctorfinset.md) | 42 | `declaration-track:56d5f6718d5e374ef994e015a1033bbac02a2e3ee607022484e595d75f4165c7` |
-| 4 | `instance` | [EquivFunctorFintype](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/EquivFunctorInstancesNamespaced.lean/declarations/equivfunctorfintype.md) | 53 | `declaration-track:e50f5576d9367f124d79d568b1a6634e9c642a6ac998c83c25af5ed56e7971d3` |
+| 1 | `instance` | [EquivFunctorUnique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/EquivFunctorInstancesNamespaced.lean/declarations/equivfunctorunique.md) | 28 | `declaration-track:3c00bb626dc30d107d395677b7932b987b009c9f05370b2efe449bc7bed58098` |
+| 2 | `instance` | [EquivFunctorPerm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/EquivFunctorInstancesNamespaced.lean/declarations/equivfunctorperm.md) | 34 | `declaration-track:bc9dd55e8f9c33b85cacb79d25192d33801269c8353d973fc905488a1c93842c` |
+| 3 | `instance` | [EquivFunctorFinset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/EquivFunctorInstancesNamespaced.lean/declarations/equivfunctorfinset.md) | 42 | `declaration-track:56d5f6718d5e374ef994e015a1033bbac02a2e3ee607022484e595d75f4165c7` |
+| 4 | `instance` | [EquivFunctorFintype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/EquivFunctorInstancesNamespaced.lean/declarations/equivfunctorfintype.md) | 53 | `declaration-track:e50f5576d9367f124d79d568b1a6634e9c642a6ac998c83c25af5ed56e7971d3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

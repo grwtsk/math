@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ParacompactPublic.lean/index.md) · [Full source](../../../../GeneralTopology/ParacompactPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ParacompactPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ParacompactPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../GeneralTopology/ParacompactPublic.lean/declarations/instance.md) | 44 | `declaration-track:ab454f9e50022d7cda674d571c8151bffa2c0f5a2f9183de25438b5a3a8441ed` |
-| 2 | `theorem` | [t4Space](../../../../GeneralTopology/ParacompactPublic.lean/declarations/t4space.md) | 168 | `result-track:b702d1e222aa27dcc2fc8605e6edc4f375cd3ac14e6c45a6ef3f88554f1ca640` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ParacompactPublic.lean/declarations/instance.md) | 44 | `declaration-track:ab454f9e50022d7cda674d571c8151bffa2c0f5a2f9183de25438b5a3a8441ed` |
+| 2 | `theorem` | [t4Space](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ParacompactPublic.lean/declarations/t4space.md) | 168 | `result-track:b702d1e222aa27dcc2fc8605e6edc4f375cd3ac14e6c45a6ef3f88554f1ca640` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

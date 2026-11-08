@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/TypeGraphNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/TypeGraphNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TypeGraphNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TypeGraphNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TheoremHyperedge](../../../../Combinatorics/TypeGraphNamespaced.lean/declarations/theoremhyperedge.md) | 14 | `declaration-track:adc9f31fa6d21d7df2ce47bc5822183688ef6e22118bd6adba803e8aa2942771` |
-| 2 | `theorem` | [statement_support_idempotent](../../../../Combinatorics/TypeGraphNamespaced.lean/declarations/statement-support-idempotent.md) | 21 | `result-track:5836c072263189614966848505d735f406c3ce4e7aef251cf0db6148e64a692c` |
+| 1 | `structure` | [TheoremHyperedge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TypeGraphNamespaced.lean/declarations/theoremhyperedge.md) | 14 | `declaration-track:adc9f31fa6d21d7df2ce47bc5822183688ef6e22118bd6adba803e8aa2942771` |
+| 2 | `theorem` | [statement_support_idempotent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TypeGraphNamespaced.lean/declarations/statement-support-idempotent.md) | 21 | `result-track:5836c072263189614966848505d735f406c3ce4e7aef251cf0db6148e64a692c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

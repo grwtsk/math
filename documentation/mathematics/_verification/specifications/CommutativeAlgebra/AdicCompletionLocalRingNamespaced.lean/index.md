@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/AdicCompletionLocalRingNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/AdicCompletionLocalRingNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdicCompletionLocalRingNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdicCompletionLocalRingNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [isUnit_iff_notMem_of_isAdicComplete_maximal](../../../../CommutativeAlgebra/AdicCompletionLocalRingNamespaced.lean/declarations/isunit-iff-notmem-of-isadiccomplete-maximal.md) | 30 | `result-track:ee72060e57d19ee9f9594e41c66b75ba43c8a723d108ed385a97fd941e5e5ca8` |
-| 2 | `theorem` | [isLocalRing_of_isAdicComplete_maximal](../../../../CommutativeAlgebra/AdicCompletionLocalRingNamespaced.lean/declarations/islocalring-of-isadiccomplete-maximal.md) | 83 | `result-track:3edc99da974d2ce65f1c515056df398d490b56fc6b8299f01deee8d5fbaced0b` |
+| 1 | `lemma` | [isUnit_iff_notMem_of_isAdicComplete_maximal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdicCompletionLocalRingNamespaced.lean/declarations/isunit-iff-notmem-of-isadiccomplete-maximal.md) | 30 | `result-track:ee72060e57d19ee9f9594e41c66b75ba43c8a723d108ed385a97fd941e5e5ca8` |
+| 2 | `theorem` | [isLocalRing_of_isAdicComplete_maximal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdicCompletionLocalRingNamespaced.lean/declarations/islocalring-of-isadiccomplete-maximal.md) | 83 | `result-track:3edc99da974d2ce65f1c515056df398d490b56fc6b8299f01deee8d5fbaced0b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

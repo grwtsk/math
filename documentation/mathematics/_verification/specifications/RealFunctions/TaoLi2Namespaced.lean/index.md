@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/TaoLi2Namespaced.lean/index.md) · [Full source](../../../../RealFunctions/TaoLi2Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TaoLi2Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TaoLi2Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,23 +58,23 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [log_one_plus_upper](../../../../RealFunctions/TaoLi2Namespaced.lean/declarations/log-one-plus-upper.md) | 48 | `result-track:a9a81b1cbcafb8934eae9eb1fcd254115e383d58de88e972d78e13b3bdd91443` |
-| 2 | `theorem` | [log_one_plus_lower](../../../../RealFunctions/TaoLi2Namespaced.lean/declarations/log-one-plus-lower.md) | 59 | `result-track:20f7ef041b3d50892759f58f4d92b76706e68221efd82619af0d3ae9716567a1` |
-| 3 | `theorem` | [log_1_5_lower](../../../../RealFunctions/TaoLi2Namespaced.lean/declarations/log-1-5-lower.md) | 80 | `result-track:6a31ec319d25ab33823c638a6cb8a2790786e3847c284e458e82418e7defb660` |
-| 4 | `theorem` | [log_1_5_upper](../../../../RealFunctions/TaoLi2Namespaced.lean/declarations/log-1-5-upper.md) | 84 | `result-track:f40233825baf2cb7e2039af04c826533d22644f9bea216db79952ebfc821a03f` |
-| 5 | `theorem` | [log_1_5_bounds](../../../../RealFunctions/TaoLi2Namespaced.lean/declarations/log-1-5-bounds.md) | 88 | `result-track:34b8d5d1f3d670723cef030f4e029685f875687c690f8f87ad0c62cff07e0000` |
-| 6 | `theorem` | [log_0_5_lower](../../../../RealFunctions/TaoLi2Namespaced.lean/declarations/log-0-5-lower.md) | 93 | `result-track:ff34ce1cd6c23caa703cd9f2d0fd28ecd53d1b5872e7d98aa95c2654a78ddedb` |
-| 7 | `theorem` | [log_0_5_upper](../../../../RealFunctions/TaoLi2Namespaced.lean/declarations/log-0-5-upper.md) | 97 | `result-track:21227c82457da6490d76747d18c871517f105dca4af8326dac58661dc3bad934` |
-| 8 | `theorem` | [log_0_5_bounds](../../../../RealFunctions/TaoLi2Namespaced.lean/declarations/log-0-5-bounds.md) | 101 | `result-track:8065532986b8eef5ab8c55fe8d337a31df9d486f17be4ff26f18ab9b378bf0e2` |
-| 9 | `theorem` | [cancellation_at_0_1](../../../../RealFunctions/TaoLi2Namespaced.lean/declarations/cancellation-at-0-1.md) | 141 | `result-track:513e55325b97ebb19a55634f2872b7514a2120baf002fd1f17a567855df38762` |
-| 10 | `theorem` | [symmetric_log_combination_limit](../../../../RealFunctions/TaoLi2Namespaced.lean/declarations/symmetric-log-combination-limit.md) | 163 | `result-track:dbe3987795c39fdc2e199aa6218dc6b36239bd91d39fb95ac05338045202602c` |
-| 11 | `theorem` | [symmetric_log_alt_form](../../../../RealFunctions/TaoLi2Namespaced.lean/declarations/symmetric-log-alt-form.md) | 170 | `result-track:7d079a73f791b040e448baf99594ee5460320c0b17bd16805bfb6a23e8e80768` |
-| 12 | `theorem` | [log_lower_on_2_3](../../../../RealFunctions/TaoLi2Namespaced.lean/declarations/log-lower-on-2-3.md) | 198 | `result-track:21066eb6a7871c70485d9b3f7054bf320f60f69e0a65ef695ff16b7404f531db` |
-| 13 | `theorem` | [log_upper_on_2_3](../../../../RealFunctions/TaoLi2Namespaced.lean/declarations/log-upper-on-2-3.md) | 202 | `result-track:03604b1d8f8580d000e08728ffc4a6ac61d598882e8055ac7f682a1660e91b54` |
-| 14 | `theorem` | [int_2_to_3_bounds](../../../../RealFunctions/TaoLi2Namespaced.lean/declarations/int-2-to-3-bounds.md) | 206 | `result-track:d16038d443955aea11d0956c222d9f74b0fdb256723b7dc9c2ad3dea1fbd2b42` |
-| 15 | `theorem` | [symmetric_bound_at_0_3](../../../../RealFunctions/TaoLi2Namespaced.lean/declarations/symmetric-bound-at-0-3.md) | 289 | `result-track:5d876160cdc914cd47de126fd68ca23c88278b5ae93ed72dc9dbcef8d356225c` |
-| 16 | `theorem` | [symmetric_bound_at_0_49](../../../../RealFunctions/TaoLi2Namespaced.lean/declarations/symmetric-bound-at-0-49.md) | 300 | `result-track:f3be5ecdd0770c42138e0fbfe05fb8bbee1f0aeae7616c343860822d09ae7c2a` |
-| 17 | `theorem` | [li2_integral_exists](../../../../RealFunctions/TaoLi2Namespaced.lean/declarations/li2-integral-exists.md) | 328 | `result-track:41b606cad3360254ba82aa0b46f4afe2afc275f92102bfca6f7937912559252a` |
+| 1 | `theorem` | [log_one_plus_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TaoLi2Namespaced.lean/declarations/log-one-plus-upper.md) | 48 | `result-track:a9a81b1cbcafb8934eae9eb1fcd254115e383d58de88e972d78e13b3bdd91443` |
+| 2 | `theorem` | [log_one_plus_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TaoLi2Namespaced.lean/declarations/log-one-plus-lower.md) | 59 | `result-track:20f7ef041b3d50892759f58f4d92b76706e68221efd82619af0d3ae9716567a1` |
+| 3 | `theorem` | [log_1_5_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TaoLi2Namespaced.lean/declarations/log-1-5-lower.md) | 80 | `result-track:6a31ec319d25ab33823c638a6cb8a2790786e3847c284e458e82418e7defb660` |
+| 4 | `theorem` | [log_1_5_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TaoLi2Namespaced.lean/declarations/log-1-5-upper.md) | 84 | `result-track:f40233825baf2cb7e2039af04c826533d22644f9bea216db79952ebfc821a03f` |
+| 5 | `theorem` | [log_1_5_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TaoLi2Namespaced.lean/declarations/log-1-5-bounds.md) | 88 | `result-track:34b8d5d1f3d670723cef030f4e029685f875687c690f8f87ad0c62cff07e0000` |
+| 6 | `theorem` | [log_0_5_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TaoLi2Namespaced.lean/declarations/log-0-5-lower.md) | 93 | `result-track:ff34ce1cd6c23caa703cd9f2d0fd28ecd53d1b5872e7d98aa95c2654a78ddedb` |
+| 7 | `theorem` | [log_0_5_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TaoLi2Namespaced.lean/declarations/log-0-5-upper.md) | 97 | `result-track:21227c82457da6490d76747d18c871517f105dca4af8326dac58661dc3bad934` |
+| 8 | `theorem` | [log_0_5_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TaoLi2Namespaced.lean/declarations/log-0-5-bounds.md) | 101 | `result-track:8065532986b8eef5ab8c55fe8d337a31df9d486f17be4ff26f18ab9b378bf0e2` |
+| 9 | `theorem` | [cancellation_at_0_1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TaoLi2Namespaced.lean/declarations/cancellation-at-0-1.md) | 141 | `result-track:513e55325b97ebb19a55634f2872b7514a2120baf002fd1f17a567855df38762` |
+| 10 | `theorem` | [symmetric_log_combination_limit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TaoLi2Namespaced.lean/declarations/symmetric-log-combination-limit.md) | 163 | `result-track:dbe3987795c39fdc2e199aa6218dc6b36239bd91d39fb95ac05338045202602c` |
+| 11 | `theorem` | [symmetric_log_alt_form](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TaoLi2Namespaced.lean/declarations/symmetric-log-alt-form.md) | 170 | `result-track:7d079a73f791b040e448baf99594ee5460320c0b17bd16805bfb6a23e8e80768` |
+| 12 | `theorem` | [log_lower_on_2_3](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TaoLi2Namespaced.lean/declarations/log-lower-on-2-3.md) | 198 | `result-track:21066eb6a7871c70485d9b3f7054bf320f60f69e0a65ef695ff16b7404f531db` |
+| 13 | `theorem` | [log_upper_on_2_3](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TaoLi2Namespaced.lean/declarations/log-upper-on-2-3.md) | 202 | `result-track:03604b1d8f8580d000e08728ffc4a6ac61d598882e8055ac7f682a1660e91b54` |
+| 14 | `theorem` | [int_2_to_3_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TaoLi2Namespaced.lean/declarations/int-2-to-3-bounds.md) | 206 | `result-track:d16038d443955aea11d0956c222d9f74b0fdb256723b7dc9c2ad3dea1fbd2b42` |
+| 15 | `theorem` | [symmetric_bound_at_0_3](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TaoLi2Namespaced.lean/declarations/symmetric-bound-at-0-3.md) | 289 | `result-track:5d876160cdc914cd47de126fd68ca23c88278b5ae93ed72dc9dbcef8d356225c` |
+| 16 | `theorem` | [symmetric_bound_at_0_49](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TaoLi2Namespaced.lean/declarations/symmetric-bound-at-0-49.md) | 300 | `result-track:f3be5ecdd0770c42138e0fbfe05fb8bbee1f0aeae7616c343860822d09ae7c2a` |
+| 17 | `theorem` | [li2_integral_exists](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TaoLi2Namespaced.lean/declarations/li2-integral-exists.md) | 328 | `result-track:41b606cad3360254ba82aa0b46f4afe2afc275f92102bfca6f7937912559252a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

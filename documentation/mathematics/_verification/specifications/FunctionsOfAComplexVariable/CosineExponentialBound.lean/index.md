@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/CosineExponentialBound.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/CosineExponentialBound.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/CosineExponentialBound.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/CosineExponentialBound.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [norm_cos_le_exp_abs_im](../../../../FunctionsOfAComplexVariable/CosineExponentialBound.lean/declarations/norm-cos-le-exp-abs-im.md) | 36 | `result-track:0deac326afe9bbb487c280bc3897fe384abf5aeae002c0f16008b2e6e774abf3` |
+| 1 | `lemma` | [norm_cos_le_exp_abs_im](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/CosineExponentialBound.lean/declarations/norm-cos-le-exp-abs-im.md) | 36 | `result-track:0deac326afe9bbb487c280bc3897fe384abf5aeae002c0f16008b2e6e774abf3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

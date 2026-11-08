@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CountableShadowTowerExamples.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CountableShadowTowerExamples.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CountableShadowTowerExamples.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CountableShadowTowerExamples.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CountableShadowTowerExamples.lean/declarations/example-source-edition-3.md) | 18 | `declaration-track:b574dcb83bcbe6b1ba71812d8b63aa4ed19641e68a328f4d8f2108b1239c87fc` |
-| 2 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CountableShadowTowerExamples.lean/declarations/example.md) | 21 | `declaration-track:03e5e46002783a1b31dece1e3b42a972a98631e8c33115b22f2c816dce250bd4` |
-| 3 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CountableShadowTowerExamples.lean/declarations/example-source-edition-2.md) | 26 | `declaration-track:686a3a1f26856df3a72f61c08eef62b730e2f5496e4d2e35712a5b92e4ebf6aa` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CountableShadowTowerExamples.lean/declarations/example-source-edition-3.md) | 18 | `declaration-track:b574dcb83bcbe6b1ba71812d8b63aa4ed19641e68a328f4d8f2108b1239c87fc` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CountableShadowTowerExamples.lean/declarations/example.md) | 21 | `declaration-track:03e5e46002783a1b31dece1e3b42a972a98631e8c33115b22f2c816dce250bd4` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CountableShadowTowerExamples.lean/declarations/example-source-edition-2.md) | 26 | `declaration-track:686a3a1f26856df3a72f61c08eef62b730e2f5496e4d2e35712a5b92e4ebf6aa` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

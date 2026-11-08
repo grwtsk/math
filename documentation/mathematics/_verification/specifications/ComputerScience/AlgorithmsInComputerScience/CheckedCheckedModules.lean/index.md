@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/CheckedCheckedModules.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/CheckedCheckedModules.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CheckedCheckedModules.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CheckedCheckedModules.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [checkedModules](../../../../../ComputerScience/AlgorithmsInComputerScience/CheckedCheckedModules.lean/declarations/checkedmodules.md) | 11 | `declaration-track:a43a9d3fcd4020d04a2cfa5935a96f90ed324f85e97d165a467baa6ff6529350` |
-| 2 | `theorem` | [checkedModules_count](../../../../../ComputerScience/AlgorithmsInComputerScience/CheckedCheckedModules.lean/declarations/checkedmodules-count.md) | 18 | `result-track:610faa469a904799a29360a3d2cb1c20b3838af50c5e2a0c107ede435c45a79b` |
+| 1 | `def` | [checkedModules](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CheckedCheckedModules.lean/declarations/checkedmodules.md) | 11 | `declaration-track:a43a9d3fcd4020d04a2cfa5935a96f90ed324f85e97d165a467baa6ff6529350` |
+| 2 | `theorem` | [checkedModules_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CheckedCheckedModules.lean/declarations/checkedmodules-count.md) | 18 | `result-track:610faa469a904799a29360a3d2cb1c20b3838af50c5e2a0c107ede435c45a79b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

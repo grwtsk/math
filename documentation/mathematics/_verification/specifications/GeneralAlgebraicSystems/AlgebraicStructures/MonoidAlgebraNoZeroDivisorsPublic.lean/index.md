@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraNoZeroDivisorsPublic.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraNoZeroDivisorsPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraNoZeroDivisorsPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraNoZeroDivisorsPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [coeff_mul_mul_of_uniqueMul](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraNoZeroDivisorsPublic.lean/declarations/coeff-mul-mul-of-uniquemul.md) | 73 | `result-track:c1437ba2eed8bfd6ee94d81836415cff6726af1aff8317488da15b4321931e9f` |
-| 2 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraNoZeroDivisorsPublic.lean/declarations/instance-source-edition-3.md) | 91 | `declaration-track:400aa2471abc0230135037b7869f8d48608ffe59c97b72d76b0eb4f292d8d305` |
-| 3 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraNoZeroDivisorsPublic.lean/declarations/instance-source-edition-5.md) | 101 | `declaration-track:ba56444b3539f750b67dcbf109167f915f045b6ce949f17aa598d8f0ead35dff` |
-| 4 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraNoZeroDivisorsPublic.lean/declarations/instance.md) | 122 | `declaration-track:2730c8bb5d815e8bdd3ecbf0ffd5f2f358894fb2348fc32d76b03f888adcbd06` |
-| 5 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraNoZeroDivisorsPublic.lean/declarations/instance-source-edition-2.md) | 128 | `declaration-track:30f1ef4b994da1fb20643f68fdf4346cb95bbbf3992971557c565720e9e6f16b` |
-| 6 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraNoZeroDivisorsPublic.lean/declarations/instance-source-edition-4.md) | 131 | `declaration-track:5a0d2b31a51c17402f0e71b403918becd1448b13b4ac0c45236453ddefd1082e` |
+| 1 | `theorem` | [coeff_mul_mul_of_uniqueMul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraNoZeroDivisorsPublic.lean/declarations/coeff-mul-mul-of-uniquemul.md) | 73 | `result-track:c1437ba2eed8bfd6ee94d81836415cff6726af1aff8317488da15b4321931e9f` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraNoZeroDivisorsPublic.lean/declarations/instance-source-edition-3.md) | 91 | `declaration-track:400aa2471abc0230135037b7869f8d48608ffe59c97b72d76b0eb4f292d8d305` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraNoZeroDivisorsPublic.lean/declarations/instance-source-edition-5.md) | 101 | `declaration-track:ba56444b3539f750b67dcbf109167f915f045b6ce949f17aa598d8f0ead35dff` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraNoZeroDivisorsPublic.lean/declarations/instance.md) | 122 | `declaration-track:2730c8bb5d815e8bdd3ecbf0ffd5f2f358894fb2348fc32d76b03f888adcbd06` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraNoZeroDivisorsPublic.lean/declarations/instance-source-edition-2.md) | 128 | `declaration-track:30f1ef4b994da1fb20643f68fdf4346cb95bbbf3992971557c565720e9e6f16b` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraNoZeroDivisorsPublic.lean/declarations/instance-source-edition-4.md) | 131 | `declaration-track:5a0d2b31a51c17402f0e71b403918becd1448b13b4ac0c45236453ddefd1082e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/StronglyMeasurable.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/StronglyMeasurable.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/StronglyMeasurable.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/StronglyMeasurable.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [measurableSet_exists_tendsto](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/StronglyMeasurable.lean/declarations/measurableset-exists-tendsto.md) | 31 | `result-track:f1975f12f6234ba06d4e5f039d43187b7c7090e738ac47c7e519aa833172a446` |
-| 2 | `theorem` | [limUnder](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/StronglyMeasurable.lean/declarations/limunder.md) | 49 | `result-track:9f786889ea79a688d6c0d12c60faacd0312f7329c71c3350620814fb71ad9364` |
+| 1 | `theorem` | [measurableSet_exists_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/StronglyMeasurable.lean/declarations/measurableset-exists-tendsto.md) | 31 | `result-track:f1975f12f6234ba06d4e5f039d43187b7c7090e738ac47c7e519aa833172a446` |
+| 2 | `theorem` | [limUnder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/StronglyMeasurable.lean/declarations/limunder.md) | 49 | `result-track:9f786889ea79a688d6c0d12c60faacd0312f7329c71c3350620814fb71ad9364` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

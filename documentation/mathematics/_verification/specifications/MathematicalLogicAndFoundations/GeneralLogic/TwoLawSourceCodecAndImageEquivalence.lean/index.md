@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TwoLawSourceCodecAndImageEquivalence.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TwoLawSourceCodecAndImageEquivalence.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TwoLawSourceCodecAndImageEquivalence.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TwoLawSourceCodecAndImageEquivalence.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `BitMatrix.Carrier.BooleanSpace` — import line 19; external provider; requires a separately pinned dependency.
-- [Canonical String Carrier](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CanonicalStringCarrier.lean/index.md) — import line 21; pinned internal source present.
+- [Canonical String Carrier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CanonicalStringCarrier.lean/index.md) — import line 21; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SourceCodec](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TwoLawSourceCodecAndImageEquivalence.lean/declarations/sourcecodec.md) | 44 | `declaration-track:a5c2ef80fc4f3d7c0bd21e3b90e3804be3e498bff099fb57be11c92cf302e214` |
-| 2 | `theorem` | [encode_injective](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TwoLawSourceCodecAndImageEquivalence.lean/declarations/encode-injective.md) | 53 | `result-track:77d6fc23491cc521f8857d75ec6466ab9142bb29c6743e71f853f10ba24e44f2` |
-| 3 | `def` | [SourceState](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TwoLawSourceCodecAndImageEquivalence.lean/declarations/sourcestate.md) | 64 | `declaration-track:66ace59a377585d5d69b5ec8aa8163bb4efeaebde11f6e5174e254a5ac39d82b` |
-| 4 | `def` | [sourceEquiv](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TwoLawSourceCodecAndImageEquivalence.lean/declarations/sourceequiv.md) | 72 | `declaration-track:adf919d97818a16bc3f95284e4cef1e78fbf3bdb63240acd1f3e57e93376b44b` |
-| 5 | `theorem` | [sourceEquiv_apply](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TwoLawSourceCodecAndImageEquivalence.lean/declarations/sourceequiv-apply.md) | 89 | `result-track:8d0541fb4bd93054d3dc16962b3af2f8e8e954b0d08f35c27ef690b821527ac1` |
-| 6 | `def` | [sourceBaseline](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TwoLawSourceCodecAndImageEquivalence.lean/declarations/sourcebaseline.md) | 98 | `declaration-track:942dd2164bb7c8f740b441531352c1f89a0bb43611fe569d69887b0609406b75` |
+| 1 | `structure` | [SourceCodec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TwoLawSourceCodecAndImageEquivalence.lean/declarations/sourcecodec.md) | 44 | `declaration-track:a5c2ef80fc4f3d7c0bd21e3b90e3804be3e498bff099fb57be11c92cf302e214` |
+| 2 | `theorem` | [encode_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TwoLawSourceCodecAndImageEquivalence.lean/declarations/encode-injective.md) | 53 | `result-track:77d6fc23491cc521f8857d75ec6466ab9142bb29c6743e71f853f10ba24e44f2` |
+| 3 | `def` | [SourceState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TwoLawSourceCodecAndImageEquivalence.lean/declarations/sourcestate.md) | 64 | `declaration-track:66ace59a377585d5d69b5ec8aa8163bb4efeaebde11f6e5174e254a5ac39d82b` |
+| 4 | `def` | [sourceEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TwoLawSourceCodecAndImageEquivalence.lean/declarations/sourceequiv.md) | 72 | `declaration-track:adf919d97818a16bc3f95284e4cef1e78fbf3bdb63240acd1f3e57e93376b44b` |
+| 5 | `theorem` | [sourceEquiv_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TwoLawSourceCodecAndImageEquivalence.lean/declarations/sourceequiv-apply.md) | 89 | `result-track:8d0541fb4bd93054d3dc16962b3af2f8e8e954b0d08f35c27ef690b821527ac1` |
+| 6 | `def` | [sourceBaseline](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TwoLawSourceCodecAndImageEquivalence.lean/declarations/sourcebaseline.md) | 98 | `declaration-track:942dd2164bb7c8f740b441531352c1f89a0bb43611fe569d69887b0609406b75` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

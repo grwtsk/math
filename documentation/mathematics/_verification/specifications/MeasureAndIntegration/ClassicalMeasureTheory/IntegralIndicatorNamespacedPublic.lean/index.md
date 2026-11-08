@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntegralIndicatorNamespacedPublic.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntegralIndicatorNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntegralIndicatorNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntegralIndicatorNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [tendsto_measure_of_ae_tendsto_indicator](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntegralIndicatorNamespacedPublic.lean/declarations/tendsto-measure-of-ae-tendsto-indicator.md) | 55 | `result-track:6c4b2c5a538f0e05782314fb396c4d751e3763ed7989b6cae018f35faf9f07db` |
-| 2 | `lemma` | [tendsto_measure_of_ae_tendsto_indicator_of_isFiniteMeasure](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntegralIndicatorNamespacedPublic.lean/declarations/tendsto-measure-of-ae-tendsto-indicator-of-isfinitemeasure.md) | 73 | `result-track:61bb8dceff3d76b3d4fd5c06febec97590ca742803cdbca9eb8e34129caa8aa4` |
-| 3 | `lemma` | [tendsto_measure_of_tendsto_indicator](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntegralIndicatorNamespacedPublic.lean/declarations/tendsto-measure-of-tendsto-indicator.md) | 83 | `result-track:879159a72b201ee5bac3b3f63c33fe23df221078cc05939c7cc8b3d7084fcc7d` |
-| 4 | `lemma` | [tendsto_measure_of_tendsto_indicator_of_isFiniteMeasure](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntegralIndicatorNamespacedPublic.lean/declarations/tendsto-measure-of-tendsto-indicator-of-isfinitemeasure.md) | 96 | `result-track:f2c139e151005aef0a18be6c80aaf9db59d3b60122f0ab093007eb1653f7ab2b` |
+| 1 | `lemma` | [tendsto_measure_of_ae_tendsto_indicator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntegralIndicatorNamespacedPublic.lean/declarations/tendsto-measure-of-ae-tendsto-indicator.md) | 55 | `result-track:6c4b2c5a538f0e05782314fb396c4d751e3763ed7989b6cae018f35faf9f07db` |
+| 2 | `lemma` | [tendsto_measure_of_ae_tendsto_indicator_of_isFiniteMeasure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntegralIndicatorNamespacedPublic.lean/declarations/tendsto-measure-of-ae-tendsto-indicator-of-isfinitemeasure.md) | 73 | `result-track:61bb8dceff3d76b3d4fd5c06febec97590ca742803cdbca9eb8e34129caa8aa4` |
+| 3 | `lemma` | [tendsto_measure_of_tendsto_indicator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntegralIndicatorNamespacedPublic.lean/declarations/tendsto-measure-of-tendsto-indicator.md) | 83 | `result-track:879159a72b201ee5bac3b3f63c33fe23df221078cc05939c7cc8b3d7084fcc7d` |
+| 4 | `lemma` | [tendsto_measure_of_tendsto_indicator_of_isFiniteMeasure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntegralIndicatorNamespacedPublic.lean/declarations/tendsto-measure-of-tendsto-indicator-of-isfinitemeasure.md) | 96 | `result-track:f2c139e151005aef0a18be6c80aaf9db59d3b60122f0ab093007eb1653f7ab2b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

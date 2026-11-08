@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/RingPUnit.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/RingPUnit.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingPUnit.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingPUnit.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [commRing](../../../../AssociativeRingsAndAlgebras/RingPUnit.lean/declarations/commring.md) | 20 | `declaration-track:679e1f878130e871419194cd8d2cf6e5ae2c5ac7f96139ed3f3fe2bcb5b8217c` |
-| 2 | `instance` | [cancelCommMonoidWithZero](../../../../AssociativeRingsAndAlgebras/RingPUnit.lean/declarations/cancelcommmonoidwithzero.md) | 29 | `declaration-track:bd1d7ef350fcafdc1ae5b38af7878fcf926a49027fc1a4eb5a00eef3e5b800e0` |
+| 1 | `instance` | [commRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingPUnit.lean/declarations/commring.md) | 20 | `declaration-track:679e1f878130e871419194cd8d2cf6e5ae2c5ac7f96139ed3f3fe2bcb5b8217c` |
+| 2 | `instance` | [cancelCommMonoidWithZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingPUnit.lean/declarations/cancelcommmonoidwithzero.md) | 29 | `declaration-track:bd1d7ef350fcafdc1ae5b38af7878fcf926a49027fc1a4eb5a00eef3e5b800e0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckAxiomsIndization.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckAxiomsIndization.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckAxiomsIndization.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckAxiomsIndization.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,9 +62,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckAxiomsIndization.lean/declarations/instance-source-edition-2.md) | 28 | `declaration-track:ea74ab2b8e3b56505c821ea3d6055518a54b171bf8980bffab8c8cd139e2a325` |
-| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckAxiomsIndization.lean/declarations/instance.md) | 32 | `declaration-track:2debcf95c5918669e2cbe65070bb1789a2c3289ad7143b9729ba41f8f7116b39` |
-| 3 | `instance` | [isGrothendieckAbelian_ind](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckAxiomsIndization.lean/declarations/isgrothendieckabelian-ind.md) | 41 | `declaration-track:d34e07f8ed43acdb78c019d85eeedad97160e9c5538770f9a4a2e795b7fd1692` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckAxiomsIndization.lean/declarations/instance-source-edition-2.md) | 28 | `declaration-track:ea74ab2b8e3b56505c821ea3d6055518a54b171bf8980bffab8c8cd139e2a325` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckAxiomsIndization.lean/declarations/instance.md) | 32 | `declaration-track:2debcf95c5918669e2cbe65070bb1789a2c3289ad7143b9729ba41f8f7116b39` |
+| 3 | `instance` | [isGrothendieckAbelian_ind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckAxiomsIndization.lean/declarations/isgrothendieckabelian-ind.md) | 41 | `declaration-track:d34e07f8ed43acdb78c019d85eeedad97160e9c5538770f9a4a2e795b7fd1692` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

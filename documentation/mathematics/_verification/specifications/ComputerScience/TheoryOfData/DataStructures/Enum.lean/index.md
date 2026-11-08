@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/Enum.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/Enum.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Enum.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Enum.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [forall_mem_zipIdx](../../../../../../ComputerScience/TheoryOfData/DataStructures/Enum.lean/declarations/forall-mem-zipidx-source-edition-2.md) | 24 | `result-track:cc155258d4e340cf6a4a3673d7c3958718ee9af1afec69d954a44f0c0f976dbf` |
-| 2 | `theorem` | [forall_mem_zipIdx'](../../../../../../ComputerScience/TheoryOfData/DataStructures/Enum.lean/declarations/forall-mem-zipidx.md) | 29 | `result-track:3f6b990f62b83b437f76e50d3a2b538d40ad85026b64b01b67df252bd4c5b6c0` |
-| 3 | `theorem` | [exists_mem_zipIdx](../../../../../../ComputerScience/TheoryOfData/DataStructures/Enum.lean/declarations/exists-mem-zipidx.md) | 33 | `result-track:a4ab64259766d82f02c5be9534f6efd579c3fc22af03d198956f5bf4a4752623` |
-| 4 | `theorem` | [exists_mem_zipIdx'](../../../../../../ComputerScience/TheoryOfData/DataStructures/Enum.lean/declarations/exists-mem-zipidx-source-edition-2.md) | 38 | `result-track:b2bc68a75a366263a3ae06516532bcd16ff900eccdea70c353974ddf11d9baaf` |
+| 1 | `theorem` | [forall_mem_zipIdx](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Enum.lean/declarations/forall-mem-zipidx-source-edition-2.md) | 24 | `result-track:cc155258d4e340cf6a4a3673d7c3958718ee9af1afec69d954a44f0c0f976dbf` |
+| 2 | `theorem` | [forall_mem_zipIdx'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Enum.lean/declarations/forall-mem-zipidx.md) | 29 | `result-track:3f6b990f62b83b437f76e50d3a2b538d40ad85026b64b01b67df252bd4c5b6c0` |
+| 3 | `theorem` | [exists_mem_zipIdx](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Enum.lean/declarations/exists-mem-zipidx.md) | 33 | `result-track:a4ab64259766d82f02c5be9534f6efd579c3fc22af03d198956f5bf4a4752623` |
+| 4 | `theorem` | [exists_mem_zipIdx'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Enum.lean/declarations/exists-mem-zipidx-source-edition-2.md) | 38 | `result-track:b2bc68a75a366263a3ae06516532bcd16ff900eccdea70c353974ddf11d9baaf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

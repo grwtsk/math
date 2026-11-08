@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ElementalMathematics.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ElementalMathematics.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ElementalMathematics.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ElementalMathematics.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -67,9 +67,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ElementalMathematics](../../../../../ComputerScience/AlgorithmsInComputerScience/ElementalMathematics.lean/declarations/elementalmathematics.md) | 24 | `declaration-track:0d48fb9d819bcb315788a396bfdb73dd40a7a34e538ce2f12b91c809f8f65265` |
-| 2 | `structure` | [ElementalGoverningInvariant](../../../../../ComputerScience/AlgorithmsInComputerScience/ElementalMathematics.lean/declarations/elementalgoverninginvariant.md) | 91 | `declaration-track:3b17a19e01064854c0d8d147ee00ef751753624ea830731843c90018882939da` |
-| 3 | `theorem` | [ElementalMathematics.governingInvariant](../../../../../ComputerScience/AlgorithmsInComputerScience/ElementalMathematics.lean/declarations/governinginvariant.md) | 152 | `result-track:1b7ad41daa93bdb5dbdc93d663c1405bbcd88d45b0b4ed0cb22dba4dc284d71b` |
+| 1 | `structure` | [ElementalMathematics](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ElementalMathematics.lean/declarations/elementalmathematics.md) | 24 | `declaration-track:0d48fb9d819bcb315788a396bfdb73dd40a7a34e538ce2f12b91c809f8f65265` |
+| 2 | `structure` | [ElementalGoverningInvariant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ElementalMathematics.lean/declarations/elementalgoverninginvariant.md) | 91 | `declaration-track:3b17a19e01064854c0d8d147ee00ef751753624ea830731843c90018882939da` |
+| 3 | `theorem` | [ElementalMathematics.governingInvariant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ElementalMathematics.lean/declarations/governinginvariant.md) | 152 | `result-track:1b7ad41daa93bdb5dbdc93d663c1405bbcd88d45b0b4ed0cb22dba4dc284d71b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

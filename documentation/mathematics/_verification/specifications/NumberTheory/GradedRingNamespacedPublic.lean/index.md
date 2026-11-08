@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/GradedRingNamespacedPublic.lean/index.md) · [Full source](../../../../NumberTheory/GradedRingNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/GradedRingNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/GradedRingNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [E₄CubeSubE₆SqForm](../../../../NumberTheory/GradedRingNamespacedPublic.lean/declarations/e-cubesube-sqform.md) | 41 | `declaration-track:e286eb3dc4b8f3894050ee430fe616b6d19d3d280acec5925ca37eb3e8080d1c` |
-| 2 | `lemma` | [E₄CubeSubE₆SqForm_apply](../../../../NumberTheory/GradedRingNamespacedPublic.lean/declarations/e-cubesube-sqform-apply.md) | 44 | `result-track:a6bfaec0e451c43b1bb0f4d87210dfce3275cc5ffffa5300142134af3abde39f` |
-| 3 | `lemma` | [E₄CubeSubE₆SqForm_qExpansion_eq](../../../../NumberTheory/GradedRingNamespacedPublic.lean/declarations/e-cubesube-sqform-qexpansion-eq.md) | 48 | `result-track:dda0ba5612d0206f333742fd87e01986c068775e356f01eed88ab24a044d85c0` |
-| 4 | `lemma` | [E₄CubeSubE₆SqForm_isCuspForm](../../../../NumberTheory/GradedRingNamespacedPublic.lean/declarations/e-cubesube-sqform-iscuspform.md) | 56 | `result-track:0543e94ba3bd79bd9a66e42b7452db8b4690d249251c02c48d86761257102abc` |
-| 5 | `lemma` | [E₄CubeSubE₆SqForm_qExpansion_coeff_one](../../../../NumberTheory/GradedRingNamespacedPublic.lean/declarations/e-cubesube-sqform-qexpansion-coeff-one.md) | 61 | `result-track:059e3d2a2ec1015a50bd746df630fc9cb159c34397fc11181523214344583d66` |
-| 6 | `theorem` | [discriminant_eq_E₄_cube_sub_E₆_sq](../../../../NumberTheory/GradedRingNamespacedPublic.lean/declarations/discriminant-eq-e-cube-sub-e-sq.md) | 69 | `result-track:2e706b3af6b315891e5481f3e4e2c81ddcfe590ba21f0095707e7e99fd3ed1eb` |
-| 7 | `theorem` | [discriminant_eq_E₄_cube_sub_E₆_sq_graded](../../../../NumberTheory/GradedRingNamespacedPublic.lean/declarations/discriminant-eq-e-cube-sub-e-sq-graded.md) | 88 | `result-track:3a62d8712466c862bde15bd131fe202844434460122e26a614209321039a9af4` |
+| 1 | `def` | [E₄CubeSubE₆SqForm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/GradedRingNamespacedPublic.lean/declarations/e-cubesube-sqform.md) | 41 | `declaration-track:e286eb3dc4b8f3894050ee430fe616b6d19d3d280acec5925ca37eb3e8080d1c` |
+| 2 | `lemma` | [E₄CubeSubE₆SqForm_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/GradedRingNamespacedPublic.lean/declarations/e-cubesube-sqform-apply.md) | 44 | `result-track:a6bfaec0e451c43b1bb0f4d87210dfce3275cc5ffffa5300142134af3abde39f` |
+| 3 | `lemma` | [E₄CubeSubE₆SqForm_qExpansion_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/GradedRingNamespacedPublic.lean/declarations/e-cubesube-sqform-qexpansion-eq.md) | 48 | `result-track:dda0ba5612d0206f333742fd87e01986c068775e356f01eed88ab24a044d85c0` |
+| 4 | `lemma` | [E₄CubeSubE₆SqForm_isCuspForm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/GradedRingNamespacedPublic.lean/declarations/e-cubesube-sqform-iscuspform.md) | 56 | `result-track:0543e94ba3bd79bd9a66e42b7452db8b4690d249251c02c48d86761257102abc` |
+| 5 | `lemma` | [E₄CubeSubE₆SqForm_qExpansion_coeff_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/GradedRingNamespacedPublic.lean/declarations/e-cubesube-sqform-qexpansion-coeff-one.md) | 61 | `result-track:059e3d2a2ec1015a50bd746df630fc9cb159c34397fc11181523214344583d66` |
+| 6 | `theorem` | [discriminant_eq_E₄_cube_sub_E₆_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/GradedRingNamespacedPublic.lean/declarations/discriminant-eq-e-cube-sub-e-sq.md) | 69 | `result-track:2e706b3af6b315891e5481f3e4e2c81ddcfe590ba21f0095707e7e99fd3ed1eb` |
+| 7 | `theorem` | [discriminant_eq_E₄_cube_sub_E₆_sq_graded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/GradedRingNamespacedPublic.lean/declarations/discriminant-eq-e-cube-sub-e-sq-graded.md) | 88 | `result-track:3a62d8712466c862bde15bd131fe202844434460122e26a614209321039a9af4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

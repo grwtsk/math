@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ContextConservative.lean/index.md) · [Full source](../../../../Combinatorics/ContextConservative.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContextConservative.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContextConservative.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [context_solution_sound](../../../../Combinatorics/ContextConservative.lean/declarations/context-solution-sound.md) | 11 | `result-track:8b42910657217311561b1635aceb47e1be3c0bb18cf63ddaef531492daefe576` |
-| 2 | `theorem` | [context_authority_view_noninterference](../../../../Combinatorics/ContextConservative.lean/declarations/context-authority-view-noninterference.md) | 23 | `result-track:291b16b12a1989edfb25f182274c0a614c88feb290684151d4d13b6037235785` |
-| 3 | `theorem` | [context_certificate_extension_monotone](../../../../Combinatorics/ContextConservative.lean/declarations/context-certificate-extension-monotone.md) | 30 | `result-track:e7aafb160a59cd11b67e5ead6068a96b69b7c835634ebfc6a6976796a02993bb` |
-| 4 | `theorem` | [resolveCut_rejected_exactly_when_context_invalid](../../../../Combinatorics/ContextConservative.lean/declarations/resolvecut-rejected-exactly-when-context-invalid.md) | 42 | `result-track:d32f046c2b0e50096b0740d70439c89876f00f2e519ca1be4cd948a01a263be1` |
-| 5 | `theorem` | [resolveCut_total](../../../../Combinatorics/ContextConservative.lean/declarations/resolvecut-total.md) | 62 | `result-track:9ade819d31669707183564f31af52b8b58e639abebe95332e5e728f89566a4fa` |
+| 1 | `theorem` | [context_solution_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContextConservative.lean/declarations/context-solution-sound.md) | 11 | `result-track:8b42910657217311561b1635aceb47e1be3c0bb18cf63ddaef531492daefe576` |
+| 2 | `theorem` | [context_authority_view_noninterference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContextConservative.lean/declarations/context-authority-view-noninterference.md) | 23 | `result-track:291b16b12a1989edfb25f182274c0a614c88feb290684151d4d13b6037235785` |
+| 3 | `theorem` | [context_certificate_extension_monotone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContextConservative.lean/declarations/context-certificate-extension-monotone.md) | 30 | `result-track:e7aafb160a59cd11b67e5ead6068a96b69b7c835634ebfc6a6976796a02993bb` |
+| 4 | `theorem` | [resolveCut_rejected_exactly_when_context_invalid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContextConservative.lean/declarations/resolvecut-rejected-exactly-when-context-invalid.md) | 42 | `result-track:d32f046c2b0e50096b0740d70439c89876f00f2e519ca1be4cd948a01a263be1` |
+| 5 | `theorem` | [resolveCut_total](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContextConservative.lean/declarations/resolvecut-total.md) | 62 | `result-track:9ade819d31669707183564f31af52b8b58e639abebe95332e5e728f89566a4fa` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

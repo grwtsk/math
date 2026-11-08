@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CenteredDigammaKernel.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CenteredDigammaKernel.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredDigammaKernel.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredDigammaKernel.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,16 +60,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [term](../../../../MeasureAndIntegration/CenteredDigammaKernel.lean/declarations/term.md) | 18 | `declaration-track:32f87582be91a26f2325e535bd3fc9ab50a2bb4b83af811fd3f67e98e2706662` |
-| 2 | `def` | [compensatedKernel](../../../../MeasureAndIntegration/CenteredDigammaKernel.lean/declarations/compensatedkernel.md) | 21 | `declaration-track:5a167bb18dde8f1d1cba7196a174b3987a89c25f0c52d397585d4dcaefe551fa` |
-| 3 | `theorem` | [cosine_deficit](../../../../MeasureAndIntegration/CenteredDigammaKernel.lean/declarations/cosine-deficit.md) | 24 | `result-track:037713715861bf9d304663009f23ca2bfe513939bc407989d1af1693246d80be` |
-| 4 | `theorem` | [compensatedKernel_integrable](../../../../MeasureAndIntegration/CenteredDigammaKernel.lean/declarations/compensatedkernel-integrable.md) | 31 | `result-track:90ce570a75075e2430fef7fcead348de2f704417e4e6410fc0cb9f7b576bc0d7` |
-| 5 | `theorem` | [term_integrable](../../../../MeasureAndIntegration/CenteredDigammaKernel.lean/declarations/term-integrable.md) | 44 | `result-track:55e85f93657a8e910960ac9bade9a152e18c9f9fa0c323e1b46076086cfce130` |
-| 6 | `theorem` | [term_nonneg](../../../../MeasureAndIntegration/CenteredDigammaKernel.lean/declarations/term-nonneg.md) | 47 | `result-track:61e2844ad4d3a571a4e911f58b143ab0e6061b5dc4314c393a4eb68536902a6b` |
-| 7 | `theorem` | [hasSum_terms](../../../../MeasureAndIntegration/CenteredDigammaKernel.lean/declarations/hassum-terms.md) | 50 | `result-track:a32ea739a0ab745ffd0adc90c3106e0d9195b34a44de58917940fe761a5fa7fe` |
-| 8 | `theorem` | [norm_integrals_summable](../../../../MeasureAndIntegration/CenteredDigammaKernel.lean/declarations/norm-integrals-summable.md) | 68 | `result-track:cf91db418c90ec86fc0eb8c9253d28d8f5adae27d153b57dfad89971df7c9029` |
-| 9 | `theorem` | [actual_multiplier_integral](../../../../MeasureAndIntegration/CenteredDigammaKernel.lean/declarations/actual-multiplier-integral.md) | 77 | `result-track:ee85b45bf4c0bf6930460c0959d2b33606069901dc7fdb86076cfc4e9e070661` |
-| 10 | `theorem` | [actual_multiplier_integral_explicit](../../../../MeasureAndIntegration/CenteredDigammaKernel.lean/declarations/actual-multiplier-integral-explicit.md) | 92 | `result-track:70dea6b670366190a6270082b2b025a931063fd4ce864fc58ac3f2cd08c7626a` |
+| 1 | `def` | [term](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredDigammaKernel.lean/declarations/term.md) | 18 | `declaration-track:32f87582be91a26f2325e535bd3fc9ab50a2bb4b83af811fd3f67e98e2706662` |
+| 2 | `def` | [compensatedKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredDigammaKernel.lean/declarations/compensatedkernel.md) | 21 | `declaration-track:5a167bb18dde8f1d1cba7196a174b3987a89c25f0c52d397585d4dcaefe551fa` |
+| 3 | `theorem` | [cosine_deficit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredDigammaKernel.lean/declarations/cosine-deficit.md) | 24 | `result-track:037713715861bf9d304663009f23ca2bfe513939bc407989d1af1693246d80be` |
+| 4 | `theorem` | [compensatedKernel_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredDigammaKernel.lean/declarations/compensatedkernel-integrable.md) | 31 | `result-track:90ce570a75075e2430fef7fcead348de2f704417e4e6410fc0cb9f7b576bc0d7` |
+| 5 | `theorem` | [term_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredDigammaKernel.lean/declarations/term-integrable.md) | 44 | `result-track:55e85f93657a8e910960ac9bade9a152e18c9f9fa0c323e1b46076086cfce130` |
+| 6 | `theorem` | [term_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredDigammaKernel.lean/declarations/term-nonneg.md) | 47 | `result-track:61e2844ad4d3a571a4e911f58b143ab0e6061b5dc4314c393a4eb68536902a6b` |
+| 7 | `theorem` | [hasSum_terms](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredDigammaKernel.lean/declarations/hassum-terms.md) | 50 | `result-track:a32ea739a0ab745ffd0adc90c3106e0d9195b34a44de58917940fe761a5fa7fe` |
+| 8 | `theorem` | [norm_integrals_summable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredDigammaKernel.lean/declarations/norm-integrals-summable.md) | 68 | `result-track:cf91db418c90ec86fc0eb8c9253d28d8f5adae27d153b57dfad89971df7c9029` |
+| 9 | `theorem` | [actual_multiplier_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredDigammaKernel.lean/declarations/actual-multiplier-integral.md) | 77 | `result-track:ee85b45bf4c0bf6930460c0959d2b33606069901dc7fdb86076cfc4e9e070661` |
+| 10 | `theorem` | [actual_multiplier_integral_explicit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredDigammaKernel.lean/declarations/actual-multiplier-integral-explicit.md) | 92 | `result-track:70dea6b670366190a6270082b2b025a931063fd4ce864fc58ac3f2cd08c7626a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

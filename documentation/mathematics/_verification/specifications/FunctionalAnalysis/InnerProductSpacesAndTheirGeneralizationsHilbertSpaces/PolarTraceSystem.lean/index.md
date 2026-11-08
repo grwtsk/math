@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PolarTraceSystem.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PolarTraceSystem.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PolarTraceSystem.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PolarTraceSystem.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PolarTraceSystem](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PolarTraceSystem.lean/declarations/polartracesystem.md) | 17 | `declaration-track:d50ffb3c60ae8c7efe6cc3c880b239ff3905b616def2cc803fd7eaa4143ba4f2` |
-| 2 | `def` | [PolarTraceSystem.packetEnergy](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PolarTraceSystem.lean/declarations/polartracesystem-packetenergy.md) | 50 | `declaration-track:6e5995469c5e557c9a6a13b3882e1396399a320659b12113db453d2efdbf2aa6` |
+| 1 | `structure` | [PolarTraceSystem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PolarTraceSystem.lean/declarations/polartracesystem.md) | 17 | `declaration-track:d50ffb3c60ae8c7efe6cc3c880b239ff3905b616def2cc803fd7eaa4143ba4f2` |
+| 2 | `def` | [PolarTraceSystem.packetEnergy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PolarTraceSystem.lean/declarations/polartracesystem-packetenergy.md) | 50 | `declaration-track:6e5995469c5e557c9a6a13b3882e1396399a320659b12113db453d2efdbf2aa6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TextCarrierRawText.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TextCarrierRawText.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TextCarrierRawText.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TextCarrierRawText.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RawText](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TextCarrierRawText.lean/declarations/rawtext.md) | 9 | `declaration-track:854e14521106c2fe87c71772a29ad9779e80cad1e1e439365ccb5d2f39fd151f` |
-| 2 | `structure` | [TextCarrier](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TextCarrierRawText.lean/declarations/textcarrier.md) | 15 | `declaration-track:890c89ae7db4f650c62ac161205ea90158350bd343fa770a7f4a22e0622a9ecb` |
-| 3 | `def` | [SameTextVersion](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TextCarrierRawText.lean/declarations/sametextversion.md) | 22 | `declaration-track:89f360f8b418f1ddd4f1e3ffd37ee8054da9493e5c3ba1d10d7db0140f0803bd` |
-| 4 | `theorem` | [sameTextVersion_refl](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TextCarrierRawText.lean/declarations/sametextversion-refl.md) | 27 | `result-track:c588584e136c70f2453531635fdd291de3fdb957fd99249d2b42322b21130698` |
-| 5 | `theorem` | [sameTextVersion_symm](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TextCarrierRawText.lean/declarations/sametextversion-symm.md) | 31 | `result-track:d8b26917c4b00433c013119777e5016774e78c0c3c0bf8565e2aa25d2b8f2053` |
-| 6 | `theorem` | [sameTextVersion_trans](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TextCarrierRawText.lean/declarations/sametextversion-trans.md) | 37 | `result-track:830bbdfc9bbc8168b2cb76ac56c50baf74e01bf00852831468447401141cca0c` |
+| 1 | `structure` | [RawText](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TextCarrierRawText.lean/declarations/rawtext.md) | 9 | `declaration-track:854e14521106c2fe87c71772a29ad9779e80cad1e1e439365ccb5d2f39fd151f` |
+| 2 | `structure` | [TextCarrier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TextCarrierRawText.lean/declarations/textcarrier.md) | 15 | `declaration-track:890c89ae7db4f650c62ac161205ea90158350bd343fa770a7f4a22e0622a9ecb` |
+| 3 | `def` | [SameTextVersion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TextCarrierRawText.lean/declarations/sametextversion.md) | 22 | `declaration-track:89f360f8b418f1ddd4f1e3ffd37ee8054da9493e5c3ba1d10d7db0140f0803bd` |
+| 4 | `theorem` | [sameTextVersion_refl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TextCarrierRawText.lean/declarations/sametextversion-refl.md) | 27 | `result-track:c588584e136c70f2453531635fdd291de3fdb957fd99249d2b42322b21130698` |
+| 5 | `theorem` | [sameTextVersion_symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TextCarrierRawText.lean/declarations/sametextversion-symm.md) | 31 | `result-track:d8b26917c4b00433c013119777e5016774e78c0c3c0bf8565e2aa25d2b8f2053` |
+| 6 | `theorem` | [sameTextVersion_trans](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TextCarrierRawText.lean/declarations/sametextversion-trans.md) | 37 | `result-track:830bbdfc9bbc8168b2cb76ac56c50baf74e01bf00852831468447401141cca0c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

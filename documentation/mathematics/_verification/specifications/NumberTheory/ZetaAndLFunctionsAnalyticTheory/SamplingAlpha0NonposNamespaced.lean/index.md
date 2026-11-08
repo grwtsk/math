@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SamplingAlpha0NonposNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SamplingAlpha0NonposNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SamplingAlpha0NonposNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SamplingAlpha0NonposNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [samplingAlpha0_nonpos](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SamplingAlpha0NonposNamespaced.lean/declarations/samplingalpha0-nonpos.md) | 27 | `result-track:d827944d34592cc75a741ab0e651657ba698bad2c5532f63833dd9ab1bf5da7e` |
+| 1 | `theorem` | [samplingAlpha0_nonpos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SamplingAlpha0NonposNamespaced.lean/declarations/samplingalpha0-nonpos.md) | 27 | `result-track:d827944d34592cc75a741ab0e651657ba698bad2c5532f63833dd9ab1bf5da7e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

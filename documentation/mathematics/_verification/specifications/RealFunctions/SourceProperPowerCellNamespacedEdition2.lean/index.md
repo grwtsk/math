@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/SourceProperPowerCellNamespacedEdition2.lean/index.md) · [Full source](../../../../RealFunctions/SourceProperPowerCellNamespacedEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceProperPowerCellNamespacedEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceProperPowerCellNamespacedEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [powerTailBudget](../../../../RealFunctions/SourceProperPowerCellNamespacedEdition2.lean/declarations/powertailbudget.md) | 24 | `declaration-track:73f9a408fb10d9d7ef99e53d145677705c5ff0fb767e9720ef04913a1224e5b3` |
-| 2 | `theorem` | [log_le_half_sub_inv](../../../../RealFunctions/SourceProperPowerCellNamespacedEdition2.lean/declarations/log-le-half-sub-inv.md) | 26 | `result-track:cf7b09110cbc60824f443e71ce48dc2a765e4c4b65ffafdd05f9128977a43b30` |
-| 3 | `theorem` | [powerTailBudget_nonneg](../../../../RealFunctions/SourceProperPowerCellNamespacedEdition2.lean/declarations/powertailbudget-nonneg.md) | 46 | `result-track:2c1ee7c5e8b3ad9ef3f3b973642ff9fcf16306850ca8d316a760929dd3795b09` |
-| 4 | `theorem` | [integer_cell_le](../../../../RealFunctions/SourceProperPowerCellNamespacedEdition2.lean/declarations/integer-cell-le.md) | 52 | `result-track:c8e60f02031118eb821e89ec942feb0b3c7a632af46d0460fa8bffd8ee7c104e` |
-| 5 | `theorem` | [finite_integer_tail_le](../../../../RealFunctions/SourceProperPowerCellNamespacedEdition2.lean/declarations/finite-integer-tail-le.md) | 79 | `result-track:1d5de849ea204f08438df0d0f30e8a5aeec23e27e5267b6e745c29e46e73264a` |
-| 6 | `theorem` | [finite_integer_tail_budget](../../../../RealFunctions/SourceProperPowerCellNamespacedEdition2.lean/declarations/finite-integer-tail-budget.md) | 91 | `result-track:ca5a833de616fc5ce9f39d10b5b465cbac739a9146a92bcf943fa3a06b29c70f` |
+| 1 | `def` | [powerTailBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceProperPowerCellNamespacedEdition2.lean/declarations/powertailbudget.md) | 24 | `declaration-track:73f9a408fb10d9d7ef99e53d145677705c5ff0fb767e9720ef04913a1224e5b3` |
+| 2 | `theorem` | [log_le_half_sub_inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceProperPowerCellNamespacedEdition2.lean/declarations/log-le-half-sub-inv.md) | 26 | `result-track:cf7b09110cbc60824f443e71ce48dc2a765e4c4b65ffafdd05f9128977a43b30` |
+| 3 | `theorem` | [powerTailBudget_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceProperPowerCellNamespacedEdition2.lean/declarations/powertailbudget-nonneg.md) | 46 | `result-track:2c1ee7c5e8b3ad9ef3f3b973642ff9fcf16306850ca8d316a760929dd3795b09` |
+| 4 | `theorem` | [integer_cell_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceProperPowerCellNamespacedEdition2.lean/declarations/integer-cell-le.md) | 52 | `result-track:c8e60f02031118eb821e89ec942feb0b3c7a632af46d0460fa8bffd8ee7c104e` |
+| 5 | `theorem` | [finite_integer_tail_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceProperPowerCellNamespacedEdition2.lean/declarations/finite-integer-tail-le.md) | 79 | `result-track:1d5de849ea204f08438df0d0f30e8a5aeec23e27e5267b6e745c29e46e73264a` |
+| 6 | `theorem` | [finite_integer_tail_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceProperPowerCellNamespacedEdition2.lean/declarations/finite-integer-tail-budget.md) | 91 | `result-track:ca5a833de616fc5ce9f39d10b5b465cbac739a9146a92bcf943fa3a06b29c70f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

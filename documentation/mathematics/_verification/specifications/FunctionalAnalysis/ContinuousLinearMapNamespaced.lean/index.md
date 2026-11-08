@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/ContinuousLinearMapNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/ContinuousLinearMapNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ContinuousLinearMapNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ContinuousLinearMapNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../FunctionalAnalysis/ContinuousLinearMapNamespaced.lean/declarations/instance.md) | 25 | `declaration-track:6e017b6e00d3f15af395b387f52b8ec4c07ccf7d2fe8c585d44de7205824b580` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ContinuousLinearMapNamespaced.lean/declarations/instance.md) | 25 | `declaration-track:6e017b6e00d3f15af395b387f52b8ec4c07ccf7d2fe8c585d44de7205824b580` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

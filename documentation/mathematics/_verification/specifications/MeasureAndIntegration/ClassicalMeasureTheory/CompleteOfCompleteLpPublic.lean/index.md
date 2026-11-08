@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/CompleteOfCompleteLpPublic.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/CompleteOfCompleteLpPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/CompleteOfCompleteLpPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/CompleteOfCompleteLpPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [FinStronglyMeasurable.exists_measurableSet_measure_pos_lt_top](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/CompleteOfCompleteLpPublic.lean/declarations/finstronglymeasurable-exists-measurableset-measure-pos-lt-top.md) | 23 | `result-track:80b761126fadae958e09c7edc41378a39c44e06ab79b12f9ecb6752c9af86a6f` |
-| 2 | `lemma` | [AEFinStronglyMeasurable.exists_measurableSet_measure_pos_lt_top](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/CompleteOfCompleteLpPublic.lean/declarations/aefinstronglymeasurable-exists-measurableset-measure-pos-lt-top.md) | 37 | `result-track:c4d5c749078aaa50e54f683fd38e3faa3f273e91b8cbe5e6bfe21c300b97cf06` |
-| 3 | `lemma` | [nontrivial_Lp_real_of_nontrivial_Lp](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/CompleteOfCompleteLpPublic.lean/declarations/nontrivial-lp-real-of-nontrivial-lp.md) | 45 | `result-track:2f64174fd4827d39b1b0f435a910bba99f4f11e9defa92ff27cc1d138149f60d` |
-| 4 | `lemma` | [completeSpace_of_completeSpace_Lp](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/CompleteOfCompleteLpPublic.lean/declarations/completespace-of-completespace-lp.md) | 80 | `result-track:f589dd2ac8e1a70288d27b29322a427835150259ad2615a811b67e8c8a010886` |
+| 1 | `lemma` | [FinStronglyMeasurable.exists_measurableSet_measure_pos_lt_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/CompleteOfCompleteLpPublic.lean/declarations/finstronglymeasurable-exists-measurableset-measure-pos-lt-top.md) | 23 | `result-track:80b761126fadae958e09c7edc41378a39c44e06ab79b12f9ecb6752c9af86a6f` |
+| 2 | `lemma` | [AEFinStronglyMeasurable.exists_measurableSet_measure_pos_lt_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/CompleteOfCompleteLpPublic.lean/declarations/aefinstronglymeasurable-exists-measurableset-measure-pos-lt-top.md) | 37 | `result-track:c4d5c749078aaa50e54f683fd38e3faa3f273e91b8cbe5e6bfe21c300b97cf06` |
+| 3 | `lemma` | [nontrivial_Lp_real_of_nontrivial_Lp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/CompleteOfCompleteLpPublic.lean/declarations/nontrivial-lp-real-of-nontrivial-lp.md) | 45 | `result-track:2f64174fd4827d39b1b0f435a910bba99f4f11e9defa92ff27cc1d138149f60d` |
+| 4 | `lemma` | [completeSpace_of_completeSpace_Lp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/CompleteOfCompleteLpPublic.lean/declarations/completespace-of-completespace-lp.md) | 80 | `result-track:f589dd2ac8e1a70288d27b29322a427835150259ad2615a811b67e8c8a010886` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

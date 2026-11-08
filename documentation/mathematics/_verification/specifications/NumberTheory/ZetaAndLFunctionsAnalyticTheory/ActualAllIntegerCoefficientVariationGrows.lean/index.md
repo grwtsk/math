@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualAllIntegerCoefficientVariationGrows.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualAllIntegerCoefficientVariationGrows.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualAllIntegerCoefficientVariationGrows.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualAllIntegerCoefficientVariationGrows.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [coefficientVariation_real_lower](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualAllIntegerCoefficientVariationGrows.lean/declarations/coefficientvariation-real-lower.md) | 24 | `result-track:c436f559a8750e8d457087771878ecd3f88f7362fb597552df3ff201a57e16da` |
+| 1 | `theorem` | [coefficientVariation_real_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualAllIntegerCoefficientVariationGrows.lean/declarations/coefficientvariation-real-lower.md) | 24 | `result-track:c436f559a8750e8d457087771878ecd3f88f7362fb597552df3ff201a57e16da` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

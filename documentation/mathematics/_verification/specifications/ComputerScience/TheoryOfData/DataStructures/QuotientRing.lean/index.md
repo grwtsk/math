@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/QuotientRing.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/QuotientRing.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/QuotientRing.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/QuotientRing.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [quotientSpanNatEquivZMod](../../../../../../ComputerScience/TheoryOfData/DataStructures/QuotientRing.lean/declarations/quotientspannatequivzmod.md) | 33 | `declaration-track:840666248530bd3e4384f8be49f22b2f633334dba09413dba8e3642db5d31e1c` |
-| 2 | `def` | [quotientSpanEquivZMod](../../../../../../ComputerScience/TheoryOfData/DataStructures/QuotientRing.lean/declarations/quotientspanequivzmod.md) | 39 | `declaration-track:7572b1bbf0c50de35a05d65bd7c694c68439e41d4f5fa434a7d0e481ace8bb85` |
-| 3 | `def` | [ZMod.prodEquivPi](../../../../../../ComputerScience/TheoryOfData/DataStructures/QuotientRing.lean/declarations/zmod-prodequivpi.md) | 50 | `declaration-track:0d6be4c2f48b744c7eaeef9445c1335190f63fe5bc049e2eed5e0ef254162ddb` |
+| 1 | `def` | [quotientSpanNatEquivZMod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/QuotientRing.lean/declarations/quotientspannatequivzmod.md) | 33 | `declaration-track:840666248530bd3e4384f8be49f22b2f633334dba09413dba8e3642db5d31e1c` |
+| 2 | `def` | [quotientSpanEquivZMod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/QuotientRing.lean/declarations/quotientspanequivzmod.md) | 39 | `declaration-track:7572b1bbf0c50de35a05d65bd7c694c68439e41d4f5fa434a7d0e481ace8bb85` |
+| 3 | `def` | [ZMod.prodEquivPi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/QuotientRing.lean/declarations/zmod-prodequivpi.md) | 50 | `declaration-track:0d6be4c2f48b744c7eaeef9445c1335190f63fe5bc049e2eed5e0ef254162ddb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

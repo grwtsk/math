@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Implication.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Implication.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Implication.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Implication.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [implicationAffinity](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Implication.lean/declarations/implicationaffinity.md) | 17 | `declaration-track:894f74da05142158ebd9b732f2ea2ef4fa927165931c0b137be95ea482b44f16` |
-| 2 | `theorem` | [implicationAffinity_mem_Icc](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Implication.lean/declarations/implicationaffinity-mem-icc.md) | 25 | `result-track:f9b8dd298013fc61d7a153a7c334407d85c5d4a8bb6009beddcab857bea60333` |
-| 3 | `structure` | [CertifiedImplication](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Implication.lean/declarations/certifiedimplication.md) | 35 | `declaration-track:d035320526f1de518b88211c97438aa97f46bc824e5ebff9502a2c08de62de22` |
-| 4 | `theorem` | [apply](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Implication.lean/declarations/apply.md) | 47 | `result-track:2a4c502599028e72147e3f080fecf219b440ecd733544fbde0cdfa82fb7f4282` |
+| 1 | `def` | [implicationAffinity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Implication.lean/declarations/implicationaffinity.md) | 17 | `declaration-track:894f74da05142158ebd9b732f2ea2ef4fa927165931c0b137be95ea482b44f16` |
+| 2 | `theorem` | [implicationAffinity_mem_Icc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Implication.lean/declarations/implicationaffinity-mem-icc.md) | 25 | `result-track:f9b8dd298013fc61d7a153a7c334407d85c5d4a8bb6009beddcab857bea60333` |
+| 3 | `structure` | [CertifiedImplication](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Implication.lean/declarations/certifiedimplication.md) | 35 | `declaration-track:d035320526f1de518b88211c97438aa97f46bc824e5ebff9502a2c08de62de22` |
+| 4 | `theorem` | [apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Implication.lean/declarations/apply.md) | 47 | `result-track:2a4c502599028e72147e3f080fecf219b440ecd733544fbde0cdfa82fb7f4282` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

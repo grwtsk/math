@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/ExtensionField.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/ExtensionField.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ExtensionField.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ExtensionField.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ExtensionFieldBasis](../../../../GroupTheoryAndGeneralizations/ExtensionField.lean/declarations/extensionfieldbasis.md) | 14 | `declaration-track:641d54ff221cd71db91904eb3668a050b24e4777ebde324d698dfaa70b31acb9` |
-| 2 | `def` | [extensionFieldRealization](../../../../GroupTheoryAndGeneralizations/ExtensionField.lean/declarations/extensionfieldrealization.md) | 22 | `declaration-track:dc378794210bdb4a3644a6b43dac75e546b9bc6c8d42fa635f29d23a4168f7b6` |
-| 3 | `theorem` | [extensionFieldRealization_apply](../../../../GroupTheoryAndGeneralizations/ExtensionField.lean/declarations/extensionfieldrealization-apply.md) | 31 | `result-track:4b2c332026a90ca4ba1e24c21f9d4c17215a4309f2b001af8c5c9ecf58844479` |
+| 1 | `structure` | [ExtensionFieldBasis](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ExtensionField.lean/declarations/extensionfieldbasis.md) | 14 | `declaration-track:641d54ff221cd71db91904eb3668a050b24e4777ebde324d698dfaa70b31acb9` |
+| 2 | `def` | [extensionFieldRealization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ExtensionField.lean/declarations/extensionfieldrealization.md) | 22 | `declaration-track:dc378794210bdb4a3644a6b43dac75e546b9bc6c8d42fa635f29d23a4168f7b6` |
+| 3 | `theorem` | [extensionFieldRealization_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ExtensionField.lean/declarations/extensionfieldrealization-apply.md) | 31 | `result-track:4b2c332026a90ca4ba1e24c21f9d4c17215a4309f2b001af8c5c9ecf58844479` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

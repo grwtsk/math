@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/UltraConstructionsConstructions.lean/index.md) · [Full source](../../../../GeneralTopology/UltraConstructionsConstructions.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UltraConstructionsConstructions.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UltraConstructionsConstructions.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [IsTransitiveRel.entourageProd](../../../../GeneralTopology/UltraConstructionsConstructions.lean/declarations/istransitiverel-entourageprod.md) | 29 | `result-track:e90d0847c5b27dd433a772787624378b42f6832ce8a2bbf948031e3f771437a5` |
-| 2 | `lemma` | [IsUltraUniformity.comap](../../../../GeneralTopology/UltraConstructionsConstructions.lean/declarations/isultrauniformity-comap.md) | 34 | `result-track:aa9ed2e91b7bcb397b37943ae91488d5639fac5f0bf00cc8c7690cd8802c4a5b` |
-| 3 | `lemma` | [IsUltraUniformity.inf](../../../../GeneralTopology/UltraConstructionsConstructions.lean/declarations/isultrauniformity-inf.md) | 41 | `result-track:b214c0b585adfd95c3ad96762b695918c47f113870ad41ae11db83fb08f78c9c` |
-| 4 | `instance` | [IsUltraUniformity.prod](../../../../GeneralTopology/UltraConstructionsConstructions.lean/declarations/isultrauniformity-prod.md) | 51 | `declaration-track:8377bc6ee995032b02f6b3b75f46252de6fd44e63e18c89b09992588f29690ec` |
-| 5 | `lemma` | [IsUltraUniformity.iInf](../../../../GeneralTopology/UltraConstructionsConstructions.lean/declarations/isultrauniformity-iinf.md) | 56 | `result-track:3c55db16d6e8f5f0919e4539398a47cb3c1ec4730210847ab82814ae78dae77a` |
-| 6 | `instance` | [IsUltraUniformity.pi](../../../../GeneralTopology/UltraConstructionsConstructions.lean/declarations/isultrauniformity-pi.md) | 66 | `declaration-track:7d1324a55d18ef79968dba3c67c67637d9b0083467fb8ab132186da6b466d99c` |
+| 1 | `lemma` | [IsTransitiveRel.entourageProd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UltraConstructionsConstructions.lean/declarations/istransitiverel-entourageprod.md) | 29 | `result-track:e90d0847c5b27dd433a772787624378b42f6832ce8a2bbf948031e3f771437a5` |
+| 2 | `lemma` | [IsUltraUniformity.comap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UltraConstructionsConstructions.lean/declarations/isultrauniformity-comap.md) | 34 | `result-track:aa9ed2e91b7bcb397b37943ae91488d5639fac5f0bf00cc8c7690cd8802c4a5b` |
+| 3 | `lemma` | [IsUltraUniformity.inf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UltraConstructionsConstructions.lean/declarations/isultrauniformity-inf.md) | 41 | `result-track:b214c0b585adfd95c3ad96762b695918c47f113870ad41ae11db83fb08f78c9c` |
+| 4 | `instance` | [IsUltraUniformity.prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UltraConstructionsConstructions.lean/declarations/isultrauniformity-prod.md) | 51 | `declaration-track:8377bc6ee995032b02f6b3b75f46252de6fd44e63e18c89b09992588f29690ec` |
+| 5 | `lemma` | [IsUltraUniformity.iInf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UltraConstructionsConstructions.lean/declarations/isultrauniformity-iinf.md) | 56 | `result-track:3c55db16d6e8f5f0919e4539398a47cb3c1ec4730210847ab82814ae78dae77a` |
+| 6 | `instance` | [IsUltraUniformity.pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UltraConstructionsConstructions.lean/declarations/isultrauniformity-pi.md) | 66 | `declaration-track:7d1324a55d18ef79968dba3c67c67637d9b0083467fb8ab132186da6b466d99c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/QuarticAdjacencyDiscriminantCriterion.lean/index.md) · [Full source](../../../../CommutativeAlgebra/QuarticAdjacencyDiscriminantCriterion.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticAdjacencyDiscriminantCriterion.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticAdjacencyDiscriminantCriterion.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.QuarticAdjacencyDiscriminant`](../../../../CommutativeAlgebra/QuarticAdjacencyDiscriminant.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Algebra.QuarticAdjacencyDiscriminant`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticAdjacencyDiscriminant.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [adjacencyVandermonde_ne_zero_iff](../../../../CommutativeAlgebra/QuarticAdjacencyDiscriminantCriterion.lean/declarations/adjacencyvandermonde-ne-zero-iff.md) | 22 | `result-track:ea838cfcaa6a96a10ccaf97bea3ae297e2adee466e78c8b58cc8419a1aaf3a06` |
-| 2 | `theorem` | [adjacencyVandermonde_span_eq](../../../../CommutativeAlgebra/QuarticAdjacencyDiscriminantCriterion.lean/declarations/adjacencyvandermonde-span-eq.md) | 30 | `result-track:9d4226f79560c2cfd3c139393f8b73943450902f8196bede7004fbc275188c41` |
-| 3 | `theorem` | [adjacencyVandermonde_isUnit_iff](../../../../CommutativeAlgebra/QuarticAdjacencyDiscriminantCriterion.lean/declarations/adjacencyvandermonde-isunit-iff.md) | 38 | `result-track:fbedb1f413d9cbd665bee7bef41d990d26a6bdf197fb69af9be3a63ae547d941` |
-| 4 | `theorem` | [adjacency_discriminant_product_isUnit_iff](../../../../CommutativeAlgebra/QuarticAdjacencyDiscriminantCriterion.lean/declarations/adjacency-discriminant-product-isunit-iff.md) | 45 | `result-track:14057bb070c05cb06e4d75498657f95882a152f6aa3ac32cbe074ca851841e8d` |
+| 1 | `theorem` | [adjacencyVandermonde_ne_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticAdjacencyDiscriminantCriterion.lean/declarations/adjacencyvandermonde-ne-zero-iff.md) | 22 | `result-track:ea838cfcaa6a96a10ccaf97bea3ae297e2adee466e78c8b58cc8419a1aaf3a06` |
+| 2 | `theorem` | [adjacencyVandermonde_span_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticAdjacencyDiscriminantCriterion.lean/declarations/adjacencyvandermonde-span-eq.md) | 30 | `result-track:9d4226f79560c2cfd3c139393f8b73943450902f8196bede7004fbc275188c41` |
+| 3 | `theorem` | [adjacencyVandermonde_isUnit_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticAdjacencyDiscriminantCriterion.lean/declarations/adjacencyvandermonde-isunit-iff.md) | 38 | `result-track:fbedb1f413d9cbd665bee7bef41d990d26a6bdf197fb69af9be3a63ae547d941` |
+| 4 | `theorem` | [adjacency_discriminant_product_isUnit_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticAdjacencyDiscriminantCriterion.lean/declarations/adjacency-discriminant-product-isunit-iff.md) | 45 | `result-track:14057bb070c05cb06e4d75498657f95882a152f6aa3ac32cbe074ca851841e8d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

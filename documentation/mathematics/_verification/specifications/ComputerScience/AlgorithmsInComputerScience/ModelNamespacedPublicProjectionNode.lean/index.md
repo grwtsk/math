@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ModelNamespacedPublicProjectionNode.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ModelNamespacedPublicProjectionNode.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ModelNamespacedPublicProjectionNode.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ModelNamespacedPublicProjectionNode.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ProjectionNode](../../../../../ComputerScience/AlgorithmsInComputerScience/ModelNamespacedPublicProjectionNode.lean/declarations/projectionnode.md) | 29 | `declaration-track:1d62566a06680b3e88ce8a3188e0ee46807d9bdd5866870837aecb1c3984ef89` |
-| 2 | `structure` | [PresentationModel](../../../../../ComputerScience/AlgorithmsInComputerScience/ModelNamespacedPublicProjectionNode.lean/declarations/presentationmodel.md) | 37 | `declaration-track:287b0255d90cc975f485a9bc3f86fee18c333a22dc88a0668a616f846e2581a3` |
-| 3 | `def` | [PresentationModel.payloadAt?](../../../../../ComputerScience/AlgorithmsInComputerScience/ModelNamespacedPublicProjectionNode.lean/declarations/presentationmodel-payloadat.md) | 43 | `declaration-track:29001ae9f873069583673804ef9436f2e62317cc4c822d1120aeeace0b16f476` |
-| 4 | `def` | [PresentationModel.revisionAt?](../../../../../ComputerScience/AlgorithmsInComputerScience/ModelNamespacedPublicProjectionNode.lean/declarations/presentationmodel-revisionat.md) | 50 | `declaration-track:a19b838a8e73fd4f58dc47ed525406852950a9bd264e25ceb071c2a54aba6919` |
-| 5 | `structure` | [ProjectionAdapter](../../../../../ComputerScience/AlgorithmsInComputerScience/ModelNamespacedPublicProjectionNode.lean/declarations/projectionadapter.md) | 57 | `declaration-track:949164dbedabced79984132c9a31c797e2b065c368396997fb3536a627640197` |
-| 6 | `structure` | [PreparedPublication](../../../../../ComputerScience/AlgorithmsInComputerScience/ModelNamespacedPublicProjectionNode.lean/declarations/preparedpublication.md) | 61 | `declaration-track:cf482be0224a68039b360957f6674f7df7d8c0fb4bf440096bfa81958207d706` |
-| 7 | `inductive` | [PublicationStatus](../../../../../ComputerScience/AlgorithmsInComputerScience/ModelNamespacedPublicProjectionNode.lean/declarations/publicationstatus.md) | 70 | `declaration-track:db0a0cd6842c64651ae4fed93cec397cf38a1879636898df8347190efee78bdf` |
-| 8 | `structure` | [PublicationResult](../../../../../ComputerScience/AlgorithmsInComputerScience/ModelNamespacedPublicProjectionNode.lean/declarations/publicationresult.md) | 81 | `declaration-track:3696e1a09201268bc51e0054955f36cf6f2b5fc9a6acdfc83c35aa0a75349e41` |
+| 1 | `structure` | [ProjectionNode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ModelNamespacedPublicProjectionNode.lean/declarations/projectionnode.md) | 29 | `declaration-track:1d62566a06680b3e88ce8a3188e0ee46807d9bdd5866870837aecb1c3984ef89` |
+| 2 | `structure` | [PresentationModel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ModelNamespacedPublicProjectionNode.lean/declarations/presentationmodel.md) | 37 | `declaration-track:287b0255d90cc975f485a9bc3f86fee18c333a22dc88a0668a616f846e2581a3` |
+| 3 | `def` | [PresentationModel.payloadAt?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ModelNamespacedPublicProjectionNode.lean/declarations/presentationmodel-payloadat.md) | 43 | `declaration-track:29001ae9f873069583673804ef9436f2e62317cc4c822d1120aeeace0b16f476` |
+| 4 | `def` | [PresentationModel.revisionAt?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ModelNamespacedPublicProjectionNode.lean/declarations/presentationmodel-revisionat.md) | 50 | `declaration-track:a19b838a8e73fd4f58dc47ed525406852950a9bd264e25ceb071c2a54aba6919` |
+| 5 | `structure` | [ProjectionAdapter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ModelNamespacedPublicProjectionNode.lean/declarations/projectionadapter.md) | 57 | `declaration-track:949164dbedabced79984132c9a31c797e2b065c368396997fb3536a627640197` |
+| 6 | `structure` | [PreparedPublication](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ModelNamespacedPublicProjectionNode.lean/declarations/preparedpublication.md) | 61 | `declaration-track:cf482be0224a68039b360957f6674f7df7d8c0fb4bf440096bfa81958207d706` |
+| 7 | `inductive` | [PublicationStatus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ModelNamespacedPublicProjectionNode.lean/declarations/publicationstatus.md) | 70 | `declaration-track:db0a0cd6842c64651ae4fed93cec397cf38a1879636898df8347190efee78bdf` |
+| 8 | `structure` | [PublicationResult](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ModelNamespacedPublicProjectionNode.lean/declarations/publicationresult.md) | 81 | `declaration-track:3696e1a09201268bc51e0054955f36cf6f2b5fc9a6acdfc83c35aa0a75349e41` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

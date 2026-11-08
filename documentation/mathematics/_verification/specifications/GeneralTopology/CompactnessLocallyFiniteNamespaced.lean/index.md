@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/CompactnessLocallyFiniteNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/CompactnessLocallyFiniteNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompactnessLocallyFiniteNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompactnessLocallyFiniteNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [finite_nonempty_inter_compact](../../../../GeneralTopology/CompactnessLocallyFiniteNamespaced.lean/declarations/finite-nonempty-inter-compact.md) | 30 | `result-track:44b62abe4a7b89800e6ce5976a2fd0aea892285d371bca9e9b9ceeb1ebe3a4a5` |
-| 2 | `theorem` | [finite_nonempty_of_compact](../../../../GeneralTopology/CompactnessLocallyFiniteNamespaced.lean/declarations/finite-nonempty-of-compact.md) | 41 | `result-track:7aec4c5000a2c4ae92eb580df8563e10a57578f011c3ab734558e9c6ac67bcd7` |
-| 3 | `theorem` | [finite_of_compact](../../../../GeneralTopology/CompactnessLocallyFiniteNamespaced.lean/declarations/finite-of-compact.md) | 47 | `result-track:6fc1dbb298b19cc334dbe51283e2b454598233c8740a606e2db6c43388efd04f` |
-| 4 | `def` | [fintypeOfCompact](../../../../GeneralTopology/CompactnessLocallyFiniteNamespaced.lean/declarations/fintypeofcompact.md) | 53 | `declaration-track:6c52d1b0c81f31589584a76d9d4a76ae59c6f155049e15fcb94457696d5caf7a` |
+| 1 | `theorem` | [finite_nonempty_inter_compact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompactnessLocallyFiniteNamespaced.lean/declarations/finite-nonempty-inter-compact.md) | 30 | `result-track:44b62abe4a7b89800e6ce5976a2fd0aea892285d371bca9e9b9ceeb1ebe3a4a5` |
+| 2 | `theorem` | [finite_nonempty_of_compact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompactnessLocallyFiniteNamespaced.lean/declarations/finite-nonempty-of-compact.md) | 41 | `result-track:7aec4c5000a2c4ae92eb580df8563e10a57578f011c3ab734558e9c6ac67bcd7` |
+| 3 | `theorem` | [finite_of_compact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompactnessLocallyFiniteNamespaced.lean/declarations/finite-of-compact.md) | 47 | `result-track:6fc1dbb298b19cc334dbe51283e2b454598233c8740a606e2db6c43388efd04f` |
+| 4 | `def` | [fintypeOfCompact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompactnessLocallyFiniteNamespaced.lean/declarations/fintypeofcompact.md) | 53 | `declaration-track:6c52d1b0c81f31589584a76d9d4a76ae59c6f155049e15fcb94457696d5caf7a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

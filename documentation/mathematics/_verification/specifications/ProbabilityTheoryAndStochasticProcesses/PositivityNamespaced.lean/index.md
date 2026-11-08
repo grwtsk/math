@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/PositivityNamespaced.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/PositivityNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/PositivityNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/PositivityNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [exponentialTerm](../../../../ProbabilityTheoryAndStochasticProcesses/PositivityNamespaced.lean/declarations/exponentialterm.md) | 38 | `declaration-track:045e1e5e93b6bb5b9a0ef8f470f18556843653d53a944054515954d38935e901` |
-| 2 | `lemma` | [exponentialTerm_hasSum](../../../../ProbabilityTheoryAndStochasticProcesses/PositivityNamespaced.lean/declarations/exponentialterm-hassum.md) | 42 | `result-track:8bdaa4f590d3e66901ce9a423d80384ff134bb731395cebbc85f1da5e14c3a1e` |
-| 3 | `theorem` | [integrable_exp_add_of_summable_moments](../../../../ProbabilityTheoryAndStochasticProcesses/PositivityNamespaced.lean/declarations/integrable-exp-add-of-summable-moments.md) | 58 | `result-track:35b49be3cb2d26ffb0c5777eb05ce4fd1174f92bb9a0c00e40c1e062ffd01d3e` |
-| 4 | `theorem` | [integrable_exp_add_of_summable_mgf_moments](../../../../ProbabilityTheoryAndStochasticProcesses/PositivityNamespaced.lean/declarations/integrable-exp-add-of-summable-mgf-moments.md) | 97 | `result-track:ca71f76cf25bdf49e260150a5382a8eeaee1fe0f57e6bd64f769d11fdb6f9afd` |
-| 5 | `lemma` | [iteratedDeriv_complexMGF_real](../../../../ProbabilityTheoryAndStochasticProcesses/PositivityNamespaced.lean/declarations/iteratedderiv-complexmgf-real.md) | 106 | `result-track:208a950344e11897e317f042305c718b89133a50aaaca90a8fac2048307f3978` |
-| 6 | `theorem` | [integrable_exp_add_of_holomorphic_extension](../../../../ProbabilityTheoryAndStochasticProcesses/PositivityNamespaced.lean/declarations/integrable-exp-add-of-holomorphic-extension.md) | 116 | `result-track:6a16d437e62ad7c15f0e21e48ba42258b07b54d555f5e77b1efcecd86bad713b` |
-| 7 | `theorem` | [not_analyticAt_of_finite_convergence_boundary](../../../../ProbabilityTheoryAndStochasticProcesses/PositivityNamespaced.lean/declarations/not-analyticat-of-finite-convergence-boundary.md) | 147 | `result-track:54f88c3a90d10b3915cff3cfb5d7ff42a796bb66ec91c9649fe8495a7d95d17b` |
-| 8 | `theorem` | [not_analyticAt_laplace_of_finite_abscissa](../../../../ProbabilityTheoryAndStochasticProcesses/PositivityNamespaced.lean/declarations/not-analyticat-laplace-of-finite-abscissa.md) | 196 | `result-track:52e3a31a88bda168196855ffebf0919a5332c2cc1e814bf169e6c695637485b2` |
+| 1 | `def` | [exponentialTerm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/PositivityNamespaced.lean/declarations/exponentialterm.md) | 38 | `declaration-track:045e1e5e93b6bb5b9a0ef8f470f18556843653d53a944054515954d38935e901` |
+| 2 | `lemma` | [exponentialTerm_hasSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/PositivityNamespaced.lean/declarations/exponentialterm-hassum.md) | 42 | `result-track:8bdaa4f590d3e66901ce9a423d80384ff134bb731395cebbc85f1da5e14c3a1e` |
+| 3 | `theorem` | [integrable_exp_add_of_summable_moments](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/PositivityNamespaced.lean/declarations/integrable-exp-add-of-summable-moments.md) | 58 | `result-track:35b49be3cb2d26ffb0c5777eb05ce4fd1174f92bb9a0c00e40c1e062ffd01d3e` |
+| 4 | `theorem` | [integrable_exp_add_of_summable_mgf_moments](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/PositivityNamespaced.lean/declarations/integrable-exp-add-of-summable-mgf-moments.md) | 97 | `result-track:ca71f76cf25bdf49e260150a5382a8eeaee1fe0f57e6bd64f769d11fdb6f9afd` |
+| 5 | `lemma` | [iteratedDeriv_complexMGF_real](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/PositivityNamespaced.lean/declarations/iteratedderiv-complexmgf-real.md) | 106 | `result-track:208a950344e11897e317f042305c718b89133a50aaaca90a8fac2048307f3978` |
+| 6 | `theorem` | [integrable_exp_add_of_holomorphic_extension](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/PositivityNamespaced.lean/declarations/integrable-exp-add-of-holomorphic-extension.md) | 116 | `result-track:6a16d437e62ad7c15f0e21e48ba42258b07b54d555f5e77b1efcecd86bad713b` |
+| 7 | `theorem` | [not_analyticAt_of_finite_convergence_boundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/PositivityNamespaced.lean/declarations/not-analyticat-of-finite-convergence-boundary.md) | 147 | `result-track:54f88c3a90d10b3915cff3cfb5d7ff42a796bb66ec91c9649fe8495a7d95d17b` |
+| 8 | `theorem` | [not_analyticAt_laplace_of_finite_abscissa](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/PositivityNamespaced.lean/declarations/not-analyticat-laplace-of-finite-abscissa.md) | 196 | `result-track:52e3a31a88bda168196855ffebf0919a5332c2cc1e814bf169e6c695637485b2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

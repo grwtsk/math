@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixStdBasis.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixStdBasis.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixStdBasis.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixStdBasis.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [matrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixStdBasis.lean/declarations/matrix-source-edition-2.md) | 22 | `declaration-track:648211e27a13d40cabf8f1adf2528e5d8c72f8f168e35b9e49795265696811ed` |
-| 2 | `theorem` | [matrix_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixStdBasis.lean/declarations/matrix-apply.md) | 31 | `result-track:794e4090df14975b6974b2c34df921bba02cd673d56d0cf574c50541113343d2` |
-| 3 | `def` | [stdBasis](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixStdBasis.lean/declarations/stdbasis.md) | 42 | `declaration-track:79328ca482eae77a91509fce84690ad79f83e4907184ae3340b2d0f4eb3de9ff` |
-| 4 | `theorem` | [stdBasis_eq_single](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixStdBasis.lean/declarations/stdbasis-eq-single.md) | 48 | `result-track:fd1ff6b8889ebfa5cf0f5bdb5a245ccc1015a9c6877ec3b0c5170de0f50e5c88` |
-| 5 | `instance` | [matrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixStdBasis.lean/declarations/matrix.md) | 61 | `declaration-track:34f37d67eaed4dee3236e8d88c068c75b5bb73f7cdeb75276d2840b14f916f8d` |
+| 1 | `def` | [matrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixStdBasis.lean/declarations/matrix-source-edition-2.md) | 22 | `declaration-track:648211e27a13d40cabf8f1adf2528e5d8c72f8f168e35b9e49795265696811ed` |
+| 2 | `theorem` | [matrix_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixStdBasis.lean/declarations/matrix-apply.md) | 31 | `result-track:794e4090df14975b6974b2c34df921bba02cd673d56d0cf574c50541113343d2` |
+| 3 | `def` | [stdBasis](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixStdBasis.lean/declarations/stdbasis.md) | 42 | `declaration-track:79328ca482eae77a91509fce84690ad79f83e4907184ae3340b2d0f4eb3de9ff` |
+| 4 | `theorem` | [stdBasis_eq_single](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixStdBasis.lean/declarations/stdbasis-eq-single.md) | 48 | `result-track:fd1ff6b8889ebfa5cf0f5bdb5a245ccc1015a9c6877ec3b0c5170de0f50e5c88` |
+| 5 | `instance` | [matrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixStdBasis.lean/declarations/matrix.md) | 61 | `declaration-track:34f37d67eaed4dee3236e8d88c068c75b5bb73f7cdeb75276d2840b14f916f8d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

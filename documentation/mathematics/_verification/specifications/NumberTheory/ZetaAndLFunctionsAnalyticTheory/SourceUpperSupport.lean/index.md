@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceUpperSupport.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceUpperSupport.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceUpperSupport.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceUpperSupport.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sourceSamplingKernel_zero_of_two_mul_ge](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceUpperSupport.lean/declarations/sourcesamplingkernel-zero-of-two-mul-ge.md) | 14 | `result-track:7768c3f651b375aba460f04f445a34dc905fbf6d1316757dc20e53ffe36eb8fa` |
-| 2 | `theorem` | [thetaKernel_zero_of_two_mul_ge](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceUpperSupport.lean/declarations/thetakernel-zero-of-two-mul-ge.md) | 26 | `result-track:ff28dd8a84d20ff09b812c322ce3d17d02119f4c819bcdcd0534f0fa12b9f891` |
-| 3 | `theorem` | [thetaKernel_eq_sourceSamplingKernel](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceUpperSupport.lean/declarations/thetakernel-eq-sourcesamplingkernel.md) | 38 | `result-track:931ab885f71c0e5310effb153ba655e3b5e22e13aadf7b90c32580d721f982d3` |
-| 4 | `theorem` | [sourceSamplingKernel_eq_two_channels](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceUpperSupport.lean/declarations/sourcesamplingkernel-eq-two-channels.md) | 58 | `result-track:f24bef4be9e12ad9890fc4951da5a760ce5d926c3f746f6a8b07d3dcdae5aae1` |
-| 5 | `theorem` | [thetaKernel_eq_two_channels](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceUpperSupport.lean/declarations/thetakernel-eq-two-channels.md) | 98 | `result-track:6102378f62fe3a8ca022bc0b1da00090ee7a403857d0ede6459fb8b334a425cb` |
-| 6 | `theorem` | [thetaRemainder_eq_neg_rankOne_of_two_mul_ge](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceUpperSupport.lean/declarations/thetaremainder-eq-neg-rankone-of-two-mul-ge.md) | 110 | `result-track:9587397b1a890dfaf33f4b8e479174f63d988fa4b911cd34cd02302e0ef38562` |
+| 1 | `theorem` | [sourceSamplingKernel_zero_of_two_mul_ge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceUpperSupport.lean/declarations/sourcesamplingkernel-zero-of-two-mul-ge.md) | 14 | `result-track:7768c3f651b375aba460f04f445a34dc905fbf6d1316757dc20e53ffe36eb8fa` |
+| 2 | `theorem` | [thetaKernel_zero_of_two_mul_ge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceUpperSupport.lean/declarations/thetakernel-zero-of-two-mul-ge.md) | 26 | `result-track:ff28dd8a84d20ff09b812c322ce3d17d02119f4c819bcdcd0534f0fa12b9f891` |
+| 3 | `theorem` | [thetaKernel_eq_sourceSamplingKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceUpperSupport.lean/declarations/thetakernel-eq-sourcesamplingkernel.md) | 38 | `result-track:931ab885f71c0e5310effb153ba655e3b5e22e13aadf7b90c32580d721f982d3` |
+| 4 | `theorem` | [sourceSamplingKernel_eq_two_channels](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceUpperSupport.lean/declarations/sourcesamplingkernel-eq-two-channels.md) | 58 | `result-track:f24bef4be9e12ad9890fc4951da5a760ce5d926c3f746f6a8b07d3dcdae5aae1` |
+| 5 | `theorem` | [thetaKernel_eq_two_channels](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceUpperSupport.lean/declarations/thetakernel-eq-two-channels.md) | 98 | `result-track:6102378f62fe3a8ca022bc0b1da00090ee7a403857d0ede6459fb8b334a425cb` |
+| 6 | `theorem` | [thetaRemainder_eq_neg_rankOne_of_two_mul_ge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceUpperSupport.lean/declarations/thetaremainder-eq-neg-rankone-of-two-mul-ge.md) | 110 | `result-track:9587397b1a890dfaf33f4b8e479174f63d988fa4b911cd34cd02302e0ef38562` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

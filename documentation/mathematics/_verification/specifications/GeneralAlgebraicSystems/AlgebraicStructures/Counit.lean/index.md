@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Counit.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Counit.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Counit.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Counit.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,18 +57,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ACounit](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Counit.lean/declarations/acounit.md) | 37 | `declaration-track:045ecc1519a36498ad496240e331caac2b001bdf695886866b8fa8065d2ab74a` |
-| 2 | `theorem` | [ACounit_X](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Counit.lean/declarations/acounit-x.md) | 43 | `result-track:2fc4804ff32d91cc1b5e6e4a5721a43c2cb67287f46e4e93c520da38a40a2a23` |
-| 3 | `theorem` | [ACounit_C](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Counit.lean/declarations/acounit-c.md) | 48 | `result-track:a69aa0e5fdf94bf55866c0888727b1a6439c4c82b2bf0561e78b7c843870b257` |
-| 4 | `theorem` | [ACounit_surjective](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Counit.lean/declarations/acounit-surjective.md) | 53 | `result-track:5285e1ed4a80102ec5520dad0644d0ea968fcb1d056fa5f3c741d2b00816a1be` |
-| 5 | `def` | [counit](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Counit.lean/declarations/counit.md) | 60 | `declaration-track:620c4d129837a0870549eb6cfd86b67b7bc8ec328147b2c71b852673cb55efe1` |
-| 6 | `def` | [counitNat](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Counit.lean/declarations/counitnat.md) | 68 | `declaration-track:af1e8a5935f8681e2b3552729dff354499b341878deffdd0a63df8aa8c09fd3d` |
-| 7 | `theorem` | [counit_surjective](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Counit.lean/declarations/counit-surjective.md) | 71 | `result-track:7b8b37ccb5fb3a17a6d5f83baed61ff9aa8589c4b886b456845279f6b5f61124` |
-| 8 | `theorem` | [counitNat_surjective](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Counit.lean/declarations/counitnat-surjective.md) | 74 | `result-track:96174fcf526b83185cd7729280b823839773839555bd01e94923d88ca3fd96ab` |
-| 9 | `theorem` | [counit_C](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Counit.lean/declarations/counit-c.md) | 77 | `result-track:aa5c502f7bc7cb749cfbb621ff0f429e2aa4ec92b01ba60e8330ea3dfcc883a0` |
-| 10 | `theorem` | [counitNat_C](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Counit.lean/declarations/counitnat-c.md) | 80 | `result-track:f47e71a9124b64ccb98ce5b524833f4300189dcb3ead16091a8b386de2fdedd1` |
-| 11 | `theorem` | [counit_X](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Counit.lean/declarations/counit-x.md) | 86 | `result-track:c074cccfd96025bfcf8c6fbfcbe1f613b0f2ed713a418e08fc207adb6b4c22de` |
-| 12 | `theorem` | [counitNat_X](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Counit.lean/declarations/counitnat-x.md) | 90 | `result-track:032578b17f6f67011615c4584321a9a6d71e2143e469a35beb57e076181322e5` |
+| 1 | `def` | [ACounit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Counit.lean/declarations/acounit.md) | 37 | `declaration-track:045ecc1519a36498ad496240e331caac2b001bdf695886866b8fa8065d2ab74a` |
+| 2 | `theorem` | [ACounit_X](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Counit.lean/declarations/acounit-x.md) | 43 | `result-track:2fc4804ff32d91cc1b5e6e4a5721a43c2cb67287f46e4e93c520da38a40a2a23` |
+| 3 | `theorem` | [ACounit_C](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Counit.lean/declarations/acounit-c.md) | 48 | `result-track:a69aa0e5fdf94bf55866c0888727b1a6439c4c82b2bf0561e78b7c843870b257` |
+| 4 | `theorem` | [ACounit_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Counit.lean/declarations/acounit-surjective.md) | 53 | `result-track:5285e1ed4a80102ec5520dad0644d0ea968fcb1d056fa5f3c741d2b00816a1be` |
+| 5 | `def` | [counit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Counit.lean/declarations/counit.md) | 60 | `declaration-track:620c4d129837a0870549eb6cfd86b67b7bc8ec328147b2c71b852673cb55efe1` |
+| 6 | `def` | [counitNat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Counit.lean/declarations/counitnat.md) | 68 | `declaration-track:af1e8a5935f8681e2b3552729dff354499b341878deffdd0a63df8aa8c09fd3d` |
+| 7 | `theorem` | [counit_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Counit.lean/declarations/counit-surjective.md) | 71 | `result-track:7b8b37ccb5fb3a17a6d5f83baed61ff9aa8589c4b886b456845279f6b5f61124` |
+| 8 | `theorem` | [counitNat_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Counit.lean/declarations/counitnat-surjective.md) | 74 | `result-track:96174fcf526b83185cd7729280b823839773839555bd01e94923d88ca3fd96ab` |
+| 9 | `theorem` | [counit_C](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Counit.lean/declarations/counit-c.md) | 77 | `result-track:aa5c502f7bc7cb749cfbb621ff0f429e2aa4ec92b01ba60e8330ea3dfcc883a0` |
+| 10 | `theorem` | [counitNat_C](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Counit.lean/declarations/counitnat-c.md) | 80 | `result-track:f47e71a9124b64ccb98ce5b524833f4300189dcb3ead16091a8b386de2fdedd1` |
+| 11 | `theorem` | [counit_X](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Counit.lean/declarations/counit-x.md) | 86 | `result-track:c074cccfd96025bfcf8c6fbfcbe1f613b0f2ed713a418e08fc207adb6b4c22de` |
+| 12 | `theorem` | [counitNat_X](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Counit.lean/declarations/counitnat-x.md) | 90 | `result-track:032578b17f6f67011615c4584321a9a6d71e2143e469a35beb57e076181322e5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

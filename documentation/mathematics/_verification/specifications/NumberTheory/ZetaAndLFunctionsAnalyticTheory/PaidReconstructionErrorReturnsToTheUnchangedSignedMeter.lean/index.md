@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PaidReconstructionErrorReturnsToTheUnchangedSignedMeter.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PaidReconstructionErrorReturnsToTheUnchangedSignedMeter.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PaidReconstructionErrorReturnsToTheUnchangedSignedMeter.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PaidReconstructionErrorReturnsToTheUnchangedSignedMeter.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [paid_candidate_return](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PaidReconstructionErrorReturnsToTheUnchangedSignedMeter.lean/declarations/paid-candidate-return.md) | 19 | `result-track:238bc6c0282e418eb9b86953c6415fa9f22510c5e7a1235809bcbfcc28326884` |
-| 2 | `theorem` | [all_candidates_paid_return](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PaidReconstructionErrorReturnsToTheUnchangedSignedMeter.lean/declarations/all-candidates-paid-return.md) | 33 | `result-track:968c7984c74cc8564ec6bb547345f9c67a0c7e497b4131d06227f2ad82d517a5` |
-| 3 | `theorem` | [original_allowance_paid_return](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PaidReconstructionErrorReturnsToTheUnchangedSignedMeter.lean/declarations/original-allowance-paid-return.md) | 46 | `result-track:bae475f9d6a9e9fa15c80c8236a8500f37277970d34a551bf6e5167e13c88b51` |
-| 4 | `theorem` | [original_supplier_of_paid_signed_reconstruction](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PaidReconstructionErrorReturnsToTheUnchangedSignedMeter.lean/declarations/original-supplier-of-paid-signed-reconstruction.md) | 56 | `result-track:6ce2c277a7e97e7a3a1178fcc912e28b4e40345a6370d95af1b75d94229d8acf` |
+| 1 | `theorem` | [paid_candidate_return](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PaidReconstructionErrorReturnsToTheUnchangedSignedMeter.lean/declarations/paid-candidate-return.md) | 19 | `result-track:238bc6c0282e418eb9b86953c6415fa9f22510c5e7a1235809bcbfcc28326884` |
+| 2 | `theorem` | [all_candidates_paid_return](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PaidReconstructionErrorReturnsToTheUnchangedSignedMeter.lean/declarations/all-candidates-paid-return.md) | 33 | `result-track:968c7984c74cc8564ec6bb547345f9c67a0c7e497b4131d06227f2ad82d517a5` |
+| 3 | `theorem` | [original_allowance_paid_return](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PaidReconstructionErrorReturnsToTheUnchangedSignedMeter.lean/declarations/original-allowance-paid-return.md) | 46 | `result-track:bae475f9d6a9e9fa15c80c8236a8500f37277970d34a551bf6e5167e13c88b51` |
+| 4 | `theorem` | [original_supplier_of_paid_signed_reconstruction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PaidReconstructionErrorReturnsToTheUnchangedSignedMeter.lean/declarations/original-supplier-of-paid-signed-reconstruction.md) | 56 | `result-track:6ce2c277a7e97e7a3a1178fcc912e28b4e40345a6370d95af1b75d94229d8acf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

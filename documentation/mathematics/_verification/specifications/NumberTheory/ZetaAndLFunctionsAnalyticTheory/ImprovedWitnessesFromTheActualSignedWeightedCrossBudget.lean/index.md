@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ImprovedWitnessesFromTheActualSignedWeightedCrossBudget.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ImprovedWitnessesFromTheActualSignedWeightedCrossBudget.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ImprovedWitnessesFromTheActualSignedWeightedCrossBudget.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ImprovedWitnessesFromTheActualSignedWeightedCrossBudget.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [sharpConstant](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ImprovedWitnessesFromTheActualSignedWeightedCrossBudget.lean/declarations/sharpconstant.md) | 25 | `declaration-track:ae1b99ba630bbed787361f0a4969e98953f1867a54ef0c58cc5e5c0778ca17af` |
-| 2 | `theorem` | [sharp_energy_return](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ImprovedWitnessesFromTheActualSignedWeightedCrossBudget.lean/declarations/sharp-energy-return.md) | 27 | `result-track:3310ed0b09e7fb387e511c14c66c56707f5a06914d91a0dee179539328e980c2` |
-| 3 | `theorem` | [sharp_norm_return](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ImprovedWitnessesFromTheActualSignedWeightedCrossBudget.lean/declarations/sharp-norm-return.md) | 39 | `result-track:057477b14775dde10ea30a317b3c549d7c50761f0fe6760c89ae9e6639638cb7` |
-| 4 | `theorem` | [sharp_pickup_return](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ImprovedWitnessesFromTheActualSignedWeightedCrossBudget.lean/declarations/sharp-pickup-return.md) | 52 | `result-track:c4b82eb13f3c8b902c218335fc12b9f6158487ed4468ba019bd93ec94356304e` |
-| 5 | `theorem` | [sharp_signed_meter_return](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ImprovedWitnessesFromTheActualSignedWeightedCrossBudget.lean/declarations/sharp-signed-meter-return.md) | 61 | `result-track:a16a78a1fd82c36df6709b4b8f05bd094cfa46b3f1a1707574e739f6e0144bd7` |
-| 6 | `theorem` | [original_supplier_sharp](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ImprovedWitnessesFromTheActualSignedWeightedCrossBudget.lean/declarations/original-supplier-sharp.md) | 76 | `result-track:49999c45fe1d7cbfbb36417eef72eaa2bd8ec3eb2299a936a8d73a28d3cbb0f9` |
+| 1 | `def` | [sharpConstant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ImprovedWitnessesFromTheActualSignedWeightedCrossBudget.lean/declarations/sharpconstant.md) | 25 | `declaration-track:ae1b99ba630bbed787361f0a4969e98953f1867a54ef0c58cc5e5c0778ca17af` |
+| 2 | `theorem` | [sharp_energy_return](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ImprovedWitnessesFromTheActualSignedWeightedCrossBudget.lean/declarations/sharp-energy-return.md) | 27 | `result-track:3310ed0b09e7fb387e511c14c66c56707f5a06914d91a0dee179539328e980c2` |
+| 3 | `theorem` | [sharp_norm_return](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ImprovedWitnessesFromTheActualSignedWeightedCrossBudget.lean/declarations/sharp-norm-return.md) | 39 | `result-track:057477b14775dde10ea30a317b3c549d7c50761f0fe6760c89ae9e6639638cb7` |
+| 4 | `theorem` | [sharp_pickup_return](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ImprovedWitnessesFromTheActualSignedWeightedCrossBudget.lean/declarations/sharp-pickup-return.md) | 52 | `result-track:c4b82eb13f3c8b902c218335fc12b9f6158487ed4468ba019bd93ec94356304e` |
+| 5 | `theorem` | [sharp_signed_meter_return](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ImprovedWitnessesFromTheActualSignedWeightedCrossBudget.lean/declarations/sharp-signed-meter-return.md) | 61 | `result-track:a16a78a1fd82c36df6709b4b8f05bd094cfa46b3f1a1707574e739f6e0144bd7` |
+| 6 | `theorem` | [original_supplier_sharp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ImprovedWitnessesFromTheActualSignedWeightedCrossBudget.lean/declarations/original-supplier-sharp.md) | 76 | `result-track:49999c45fe1d7cbfbb36417eef72eaa2bd8ec3eb2299a936a8d73a28d3cbb0f9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

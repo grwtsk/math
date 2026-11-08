@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceOuterPsiFubiniAttempt01Namespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceOuterPsiFubiniAttempt01Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceOuterPsiFubiniAttempt01Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceOuterPsiFubiniAttempt01Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [finiteDensity](../../../../MeasureAndIntegration/SourceOuterPsiFubiniAttempt01Namespaced.lean/declarations/finitedensity.md) | 28 | `declaration-track:5249db9f032caf390793a800239f16fa9d1c1ae6aa2a5d5884f3737549629424` |
-| 2 | `theorem` | [threshold_order](../../../../MeasureAndIntegration/SourceOuterPsiFubiniAttempt01Namespaced.lean/declarations/threshold-order.md) | 33 | `result-track:d24449921fe6bf0c937df8d7a89ab0d1f05fb98e9f41b8141089d3d304ca90ab` |
-| 3 | `theorem` | [finiteDensity_integrable](../../../../MeasureAndIntegration/SourceOuterPsiFubiniAttempt01Namespaced.lean/declarations/finitedensity-integrable.md) | 37 | `result-track:2b0839d56eef4b3b032f0a65cf31efebe2bc032f16d1c9517c23809feba33e54` |
-| 4 | `theorem` | [density_left_slice](../../../../MeasureAndIntegration/SourceOuterPsiFubiniAttempt01Namespaced.lean/declarations/density-left-slice.md) | 90 | `result-track:67e7b1e808fe27394c2c72b250a64064af175ce8e12d35ce39fc65de20630c6f` |
-| 5 | `theorem` | [density_right_slice](../../../../MeasureAndIntegration/SourceOuterPsiFubiniAttempt01Namespaced.lean/declarations/density-right-slice.md) | 112 | `result-track:bcc234568702158a706f04b6120957396860c9facf0be37cff03946d0026f9f3` |
-| 6 | `theorem` | [actualFiniteSecondReadout_outer_fubini](../../../../MeasureAndIntegration/SourceOuterPsiFubiniAttempt01Namespaced.lean/declarations/actualfinitesecondreadout-outer-fubini.md) | 138 | `result-track:1e06a8a760a7af9ab63717f150f728f4af54497bd4ed6e01252dbb44d39ff36b` |
+| 1 | `def` | [finiteDensity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceOuterPsiFubiniAttempt01Namespaced.lean/declarations/finitedensity.md) | 28 | `declaration-track:5249db9f032caf390793a800239f16fa9d1c1ae6aa2a5d5884f3737549629424` |
+| 2 | `theorem` | [threshold_order](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceOuterPsiFubiniAttempt01Namespaced.lean/declarations/threshold-order.md) | 33 | `result-track:d24449921fe6bf0c937df8d7a89ab0d1f05fb98e9f41b8141089d3d304ca90ab` |
+| 3 | `theorem` | [finiteDensity_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceOuterPsiFubiniAttempt01Namespaced.lean/declarations/finitedensity-integrable.md) | 37 | `result-track:2b0839d56eef4b3b032f0a65cf31efebe2bc032f16d1c9517c23809feba33e54` |
+| 4 | `theorem` | [density_left_slice](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceOuterPsiFubiniAttempt01Namespaced.lean/declarations/density-left-slice.md) | 90 | `result-track:67e7b1e808fe27394c2c72b250a64064af175ce8e12d35ce39fc65de20630c6f` |
+| 5 | `theorem` | [density_right_slice](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceOuterPsiFubiniAttempt01Namespaced.lean/declarations/density-right-slice.md) | 112 | `result-track:bcc234568702158a706f04b6120957396860c9facf0be37cff03946d0026f9f3` |
+| 6 | `theorem` | [actualFiniteSecondReadout_outer_fubini](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceOuterPsiFubiniAttempt01Namespaced.lean/declarations/actualfinitesecondreadout-outer-fubini.md) | 138 | `result-track:1e06a8a760a7af9ab63717f150f728f4af54497bd4ed6e01252dbb44d39ff36b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

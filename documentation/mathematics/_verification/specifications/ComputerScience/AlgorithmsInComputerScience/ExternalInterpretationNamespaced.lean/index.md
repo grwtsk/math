@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ExternalInterpretationNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ExternalInterpretationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExternalInterpretationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExternalInterpretationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ExternalAssertion](../../../../../ComputerScience/AlgorithmsInComputerScience/ExternalInterpretationNamespaced.lean/declarations/externalassertion.md) | 20 | `declaration-track:e3ea6050af0fe3541b948a8489a3e43e97af3b89f5e6d851846c31b23312f94c` |
-| 2 | `structure` | [SomeExternalAssertion](../../../../../ComputerScience/AlgorithmsInComputerScience/ExternalInterpretationNamespaced.lean/declarations/someexternalassertion.md) | 39 | `declaration-track:8e04a3a2261fe75805f4a3e8f22600e4ad2106a2a8733f0433261d8cafcbebda` |
-| 3 | `structure` | [MeaningPayload](../../../../../ComputerScience/AlgorithmsInComputerScience/ExternalInterpretationNamespaced.lean/declarations/meaningpayload.md) | 43 | `declaration-track:b53f99f63495e67038fafb6084cb72776dc9f27bd55f7449c14303809c40d691` |
-| 4 | `structure` | [ExternalContextualReading](../../../../../ComputerScience/AlgorithmsInComputerScience/ExternalInterpretationNamespaced.lean/declarations/externalcontextualreading.md) | 48 | `declaration-track:47c6a5e3a260975a8796fa26de62529e2e22c57c47a8dfc8515ad00b8511e33b` |
-| 5 | `theorem` | [ExternalAssertion.has_evidence](../../../../../ComputerScience/AlgorithmsInComputerScience/ExternalInterpretationNamespaced.lean/declarations/externalassertion-has-evidence.md) | 64 | `result-track:bc52a2036ab78913ca739d9f6221238f1df6ef975040748e3de771958a658bbe` |
+| 1 | `structure` | [ExternalAssertion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExternalInterpretationNamespaced.lean/declarations/externalassertion.md) | 20 | `declaration-track:e3ea6050af0fe3541b948a8489a3e43e97af3b89f5e6d851846c31b23312f94c` |
+| 2 | `structure` | [SomeExternalAssertion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExternalInterpretationNamespaced.lean/declarations/someexternalassertion.md) | 39 | `declaration-track:8e04a3a2261fe75805f4a3e8f22600e4ad2106a2a8733f0433261d8cafcbebda` |
+| 3 | `structure` | [MeaningPayload](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExternalInterpretationNamespaced.lean/declarations/meaningpayload.md) | 43 | `declaration-track:b53f99f63495e67038fafb6084cb72776dc9f27bd55f7449c14303809c40d691` |
+| 4 | `structure` | [ExternalContextualReading](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExternalInterpretationNamespaced.lean/declarations/externalcontextualreading.md) | 48 | `declaration-track:47c6a5e3a260975a8796fa26de62529e2e22c57c47a8dfc8515ad00b8511e33b` |
+| 5 | `theorem` | [ExternalAssertion.has_evidence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExternalInterpretationNamespaced.lean/declarations/externalassertion-has-evidence.md) | 64 | `result-track:bc52a2036ab78913ca739d9f6221238f1df6ef975040748e3de771958a658bbe` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

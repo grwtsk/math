@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedCartesianClosed.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedCartesianClosed.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedCartesianClosed.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedCartesianClosed.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,8 +60,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedCartesianClosed.lean/declarations/instance-source-edition-2.md) | 21 | `declaration-track:b8eee12803c5dbc9cfa8ba8ad014aa658fc21c59a14b8e13b29eafce94d728ea` |
-| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedCartesianClosed.lean/declarations/instance.md) | 25 | `declaration-track:7d1a1ee160f8541947c7027ec2f470d9476205283f692c1975146cf6e0df5935` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedCartesianClosed.lean/declarations/instance-source-edition-2.md) | 21 | `declaration-track:b8eee12803c5dbc9cfa8ba8ad014aa658fc21c59a14b8e13b29eafce94d728ea` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedCartesianClosed.lean/declarations/instance.md) | 25 | `declaration-track:7d1a1ee160f8541947c7027ec2f470d9476205283f692c1975146cf6e0df5935` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

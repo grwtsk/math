@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/MaximalDefs.lean/index.md) · [Full source](../../../../CommutativeAlgebra/MaximalDefs.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MaximalDefs.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MaximalDefs.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [MaximalSpectrum](../../../../CommutativeAlgebra/MaximalDefs.lean/declarations/maximalspectrum.md) | 23 | `declaration-track:837a775d853617ddaeedbe1cc2893d19d170b3bec9592fef7ffd16c5d1f52cb5` |
+| 1 | `structure` | [MaximalSpectrum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MaximalDefs.lean/declarations/maximalspectrum.md) | 23 | `declaration-track:837a775d853617ddaeedbe1cc2893d19d170b3bec9592fef7ffd16c5d1f52cb5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

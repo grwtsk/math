@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeatureEdition1.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeatureEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeatureEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeatureEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [scalarFeatureKernel](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeatureEdition1.lean/declarations/scalarfeaturekernel.md) | 24 | `declaration-track:55ac272996827bae3d91f80b15cba6c25292983d44afe97c8512afa303a53ac1` |
-| 2 | `theorem` | [scalarFeatureKernel_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeatureEdition1.lean/declarations/scalarfeaturekernel-apply.md) | 59 | `result-track:4c12fa31e91c9262262000ffb453b791e6171d5b675f0bcec493f27764b1812d` |
-| 3 | `def` | [finiteFeatureKernel](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeatureEdition1.lean/declarations/finitefeaturekernel.md) | 65 | `declaration-track:f85f16982ba7373dfc6fdc8e28d9e53b45b7ed6c693486b49a89046c55536a8d` |
-| 4 | `theorem` | [finiteFeatureKernel_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeatureEdition1.lean/declarations/finitefeaturekernel-apply.md) | 75 | `result-track:0b1c533b5f80af0b659d3f31bbb0c47062a56d5476a6774ff49e7d7942a84ec5` |
-| 5 | `structure` | [FiniteFeatureFamily](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeatureEdition1.lean/declarations/finitefeaturefamily.md) | 87 | `declaration-track:f827bed12f98d0d1a4ee264697cd314d9e750dcbd7fefb94aa47ec3c78bb62bc` |
-| 6 | `def` | [FiniteFeatureFamily.kernel](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeatureEdition1.lean/declarations/finitefeaturefamily-kernel.md) | 92 | `declaration-track:2f4712b25e82d04524e6bc3c408c7685ccd2cb54f6c3152066ce127a68bf4371` |
+| 1 | `def` | [scalarFeatureKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeatureEdition1.lean/declarations/scalarfeaturekernel.md) | 24 | `declaration-track:55ac272996827bae3d91f80b15cba6c25292983d44afe97c8512afa303a53ac1` |
+| 2 | `theorem` | [scalarFeatureKernel_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeatureEdition1.lean/declarations/scalarfeaturekernel-apply.md) | 59 | `result-track:4c12fa31e91c9262262000ffb453b791e6171d5b675f0bcec493f27764b1812d` |
+| 3 | `def` | [finiteFeatureKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeatureEdition1.lean/declarations/finitefeaturekernel.md) | 65 | `declaration-track:f85f16982ba7373dfc6fdc8e28d9e53b45b7ed6c693486b49a89046c55536a8d` |
+| 4 | `theorem` | [finiteFeatureKernel_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeatureEdition1.lean/declarations/finitefeaturekernel-apply.md) | 75 | `result-track:0b1c533b5f80af0b659d3f31bbb0c47062a56d5476a6774ff49e7d7942a84ec5` |
+| 5 | `structure` | [FiniteFeatureFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeatureEdition1.lean/declarations/finitefeaturefamily.md) | 87 | `declaration-track:f827bed12f98d0d1a4ee264697cd314d9e750dcbd7fefb94aa47ec3c78bb62bc` |
+| 6 | `def` | [FiniteFeatureFamily.kernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FeatureEdition1.lean/declarations/finitefeaturefamily-kernel.md) | 92 | `declaration-track:2f4712b25e82d04524e6bc3c408c7685ccd2cb54f6c3152066ce127a68bf4371` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

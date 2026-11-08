@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/TentEdgeBoundsCore.lean/index.md) · [Full source](../../../../NumberTheory/TentEdgeBoundsCore.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentEdgeBoundsCore.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentEdgeBoundsCore.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,9 +46,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Interfaces.HeightIndexedTentResidueCore`](../../../../NumberTheory/HeightIndexedTentResidueCore.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Chebyshev.TentEdgeBounds`](../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TentEdgeBounds.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.NumberTheory.Chebyshev.Checks.TentEdgeBoundControls`](../../../../NumberTheory/TentEdgeBoundControls.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.Interfaces.HeightIndexedTentResidueCore`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/HeightIndexedTentResidueCore.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.TentEdgeBounds`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TentEdgeBounds.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.Checks.TentEdgeBoundControls`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentEdgeBoundControls.lean/index.md) — import line 6; pinned internal source present.
 
 ## Top results and three-degree verification metric
 

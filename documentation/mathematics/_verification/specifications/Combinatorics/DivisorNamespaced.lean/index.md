@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/DivisorNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/DivisorNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DivisorNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DivisorNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [AnalyticZeroDivisor](../../../../Combinatorics/DivisorNamespaced.lean/declarations/analyticzerodivisor.md) | 24 | `declaration-track:4cbe1078127da2116f3c261b54acb5fa982069b90059c5541d8e0ac358a526d8` |
-| 2 | `def` | [AnalyticZeroDivisor.count](../../../../Combinatorics/DivisorNamespaced.lean/declarations/analyticzerodivisor-count.md) | 37 | `declaration-track:35b133e9bde5ecc20c7aab7bb521ce39f875f8dd18129221a81fbf2c3ce67cb6` |
-| 3 | `theorem` | [AnalyticZeroDivisor.card_le_count](../../../../Combinatorics/DivisorNamespaced.lean/declarations/analyticzerodivisor-card-le-count.md) | 44 | `result-track:fcc25c447fb3c99eef0dbbdbedf4169e1709d5f39e16b6e76fd65e52efe2c800` |
-| 4 | `theorem` | [AnalyticZeroDivisor.nonempty_of_count_pos](../../../../Combinatorics/DivisorNamespaced.lean/declarations/analyticzerodivisor-nonempty-of-count-pos.md) | 54 | `result-track:3550bd1fbd22d754aa1d00cb9eee02138d9353cc6770a37c2a5858a62e766fcc` |
-| 5 | `theorem` | [AnalyticZeroDivisor.exists_zero_of_count_pos](../../../../Combinatorics/DivisorNamespaced.lean/declarations/analyticzerodivisor-exists-zero-of-count-pos.md) | 65 | `result-track:474e1078b27e9ba60477834dc868a64955b2c175ea01a1a16b80072bb9ee40a9` |
+| 1 | `structure` | [AnalyticZeroDivisor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DivisorNamespaced.lean/declarations/analyticzerodivisor.md) | 24 | `declaration-track:4cbe1078127da2116f3c261b54acb5fa982069b90059c5541d8e0ac358a526d8` |
+| 2 | `def` | [AnalyticZeroDivisor.count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DivisorNamespaced.lean/declarations/analyticzerodivisor-count.md) | 37 | `declaration-track:35b133e9bde5ecc20c7aab7bb521ce39f875f8dd18129221a81fbf2c3ce67cb6` |
+| 3 | `theorem` | [AnalyticZeroDivisor.card_le_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DivisorNamespaced.lean/declarations/analyticzerodivisor-card-le-count.md) | 44 | `result-track:fcc25c447fb3c99eef0dbbdbedf4169e1709d5f39e16b6e76fd65e52efe2c800` |
+| 4 | `theorem` | [AnalyticZeroDivisor.nonempty_of_count_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DivisorNamespaced.lean/declarations/analyticzerodivisor-nonempty-of-count-pos.md) | 54 | `result-track:3550bd1fbd22d754aa1d00cb9eee02138d9353cc6770a37c2a5858a62e766fcc` |
+| 5 | `theorem` | [AnalyticZeroDivisor.exists_zero_of_count_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DivisorNamespaced.lean/declarations/analyticzerodivisor-exists-zero-of-count-pos.md) | 65 | `result-track:474e1078b27e9ba60477834dc868a64955b2c175ea01a1a16b80072bb9ee40a9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

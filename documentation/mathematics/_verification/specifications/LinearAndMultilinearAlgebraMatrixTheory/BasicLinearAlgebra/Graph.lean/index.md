@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Graph.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Graph.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Graph.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Graph.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Tree.childEdgesFrom](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Graph.lean/declarations/tree-childedgesfrom.md) | 15 | `declaration-track:8e075f060beb7f4c2b30364719b811d972477824d5d4a398e68c42b3968984b1` |
-| 2 | `def` | [Tree.adjacencyMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Graph.lean/declarations/tree-adjacencymatrix.md) | 58 | `declaration-track:56b21beb3ec1f876b916a3a72cfc14ac37c9e613444729f664cfe4afe0a69b0d` |
-| 3 | `theorem` | [Tree.entry_adjacencyMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Graph.lean/declarations/tree-entry-adjacencymatrix.md) | 63 | `result-track:86dd073e38007c6ee4438e4410a7345c8c880e0f449472ed26babf707f16e910` |
-| 4 | `def` | [Tree.reachabilityMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Graph.lean/declarations/tree-reachabilitymatrix.md) | 75 | `declaration-track:d4e129dfbfa4f8441c2ac694bd3b5a55e8daa11566b2684411f8ddc6bb6de927` |
+| 1 | `def` | [Tree.childEdgesFrom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Graph.lean/declarations/tree-childedgesfrom.md) | 15 | `declaration-track:8e075f060beb7f4c2b30364719b811d972477824d5d4a398e68c42b3968984b1` |
+| 2 | `def` | [Tree.adjacencyMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Graph.lean/declarations/tree-adjacencymatrix.md) | 58 | `declaration-track:56b21beb3ec1f876b916a3a72cfc14ac37c9e613444729f664cfe4afe0a69b0d` |
+| 3 | `theorem` | [Tree.entry_adjacencyMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Graph.lean/declarations/tree-entry-adjacencymatrix.md) | 63 | `result-track:86dd073e38007c6ee4438e4410a7345c8c880e0f449472ed26babf707f16e910` |
+| 4 | `def` | [Tree.reachabilityMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Graph.lean/declarations/tree-reachabilitymatrix.md) | 75 | `declaration-track:d4e129dfbfa4f8441c2ac694bd3b5a55e8daa11566b2684411f8ddc6bb6de927` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

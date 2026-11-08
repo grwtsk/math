@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/RotationStateAndCycleCounts.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/RotationStateAndCycleCounts.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/RotationStateAndCycleCounts.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/RotationStateAndCycleCounts.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [zetaRotate3Indices](../../../../GroupTheoryAndGeneralizations/RotationStateAndCycleCounts.lean/declarations/zetarotate3indices.md) | 40 | `declaration-track:d3d747df11ab799b0f21e2d5354afc7d7ec6039ede53aca0f3a4d5892e396c83` |
-| 2 | `def` | [zetaRotate3](../../../../GroupTheoryAndGeneralizations/RotationStateAndCycleCounts.lean/declarations/zetarotate3.md) | 44 | `declaration-track:4f99c26a561337178572f887d411d4f8739d2c239045d624bf6955547677453d` |
-| 3 | `example` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/RotationStateAndCycleCounts.lean/declarations/example-source-edition-2.md) | 47 | `declaration-track:8b16b62d8bdf6293c8fd0c4265f60ee6da6cf1764667bcb81f77898bb9a1fa61` |
-| 4 | `example` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/RotationStateAndCycleCounts.lean/declarations/example-source-edition-5.md) | 50 | `declaration-track:c87be16b9710afe50a2a2405d2352be3b95159c0d7ae00d6083fdb9442ae3b54` |
-| 5 | `example` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/RotationStateAndCycleCounts.lean/declarations/example-source-edition-3.md) | 53 | `declaration-track:8c4c74c710f96aae02886ae1a1af9629ae2660e023ccc7ca7fa7ab3d1dd06fe2` |
-| 6 | `example` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/RotationStateAndCycleCounts.lean/declarations/example-source-edition-4.md) | 56 | `declaration-track:aaeae6d538ca958afc07497c82d2d2884a5967ab47c0844682f538b1089ca5e8` |
-| 7 | `example` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/RotationStateAndCycleCounts.lean/declarations/example-source-edition-6.md) | 59 | `declaration-track:cb81f0f7cf28cc7e6b5e8b02f77e159800aa4d02e314a8bec2df179baf7ac9a4` |
-| 8 | `example` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/RotationStateAndCycleCounts.lean/declarations/example.md) | 62 | `declaration-track:6f4102ca12f868784bb0cb5aab42f9255fef3c0318d8bb093bf03c71d9a16e32` |
-| 9 | `example` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/RotationStateAndCycleCounts.lean/declarations/example-source-edition-7.md) | 65 | `declaration-track:de6b5808397f1a710fea4bf7226373b1d2d8b4662be8a3d208f82dae212767c2` |
+| 1 | `def` | [zetaRotate3Indices](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/RotationStateAndCycleCounts.lean/declarations/zetarotate3indices.md) | 40 | `declaration-track:d3d747df11ab799b0f21e2d5354afc7d7ec6039ede53aca0f3a4d5892e396c83` |
+| 2 | `def` | [zetaRotate3](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/RotationStateAndCycleCounts.lean/declarations/zetarotate3.md) | 44 | `declaration-track:4f99c26a561337178572f887d411d4f8739d2c239045d624bf6955547677453d` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/RotationStateAndCycleCounts.lean/declarations/example-source-edition-2.md) | 47 | `declaration-track:8b16b62d8bdf6293c8fd0c4265f60ee6da6cf1764667bcb81f77898bb9a1fa61` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/RotationStateAndCycleCounts.lean/declarations/example-source-edition-5.md) | 50 | `declaration-track:c87be16b9710afe50a2a2405d2352be3b95159c0d7ae00d6083fdb9442ae3b54` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/RotationStateAndCycleCounts.lean/declarations/example-source-edition-3.md) | 53 | `declaration-track:8c4c74c710f96aae02886ae1a1af9629ae2660e023ccc7ca7fa7ab3d1dd06fe2` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/RotationStateAndCycleCounts.lean/declarations/example-source-edition-4.md) | 56 | `declaration-track:aaeae6d538ca958afc07497c82d2d2884a5967ab47c0844682f538b1089ca5e8` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/RotationStateAndCycleCounts.lean/declarations/example-source-edition-6.md) | 59 | `declaration-track:cb81f0f7cf28cc7e6b5e8b02f77e159800aa4d02e314a8bec2df179baf7ac9a4` |
+| 8 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/RotationStateAndCycleCounts.lean/declarations/example.md) | 62 | `declaration-track:6f4102ca12f868784bb0cb5aab42f9255fef3c0318d8bb093bf03c71d9a16e32` |
+| 9 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/RotationStateAndCycleCounts.lean/declarations/example-source-edition-7.md) | 65 | `declaration-track:de6b5808397f1a710fea4bf7226373b1d2d8b4662be8a3d208f82dae212767c2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

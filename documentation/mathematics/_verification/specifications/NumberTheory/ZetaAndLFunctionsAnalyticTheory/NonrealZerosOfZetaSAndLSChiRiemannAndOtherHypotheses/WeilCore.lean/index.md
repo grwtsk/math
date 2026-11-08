@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/WeilCore.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/WeilCore.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/WeilCore.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/WeilCore.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.WeilPolarization`](../../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/WeilPolarization.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.WeilPolarization`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/WeilPolarization.lean/index.md) — import line 3; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/WeilCore.lean/declarations/example-source-edition-4.md) | 19 | `declaration-track:451527630df18db87a20e270289ee0112a17614324b0d3fb1f7e9fb4894ee8f2` |
-| 2 | `example` | [(anonymous)](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/WeilCore.lean/declarations/example-source-edition-7.md) | 20 | `declaration-track:7a77962ce02439edcad181b28ae8887dea5947ae5e9641d4472346625c1fcf77` |
-| 3 | `example` | [(anonymous)](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/WeilCore.lean/declarations/example-source-edition-6.md) | 22 | `declaration-track:6f0a6c952505ad9826b9ca726b551d2e05b02de847b5f62ed050f939c6ba3710` |
-| 4 | `example` | [(anonymous)](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/WeilCore.lean/declarations/example-source-edition-3.md) | 25 | `declaration-track:1e3505a290c30063d0c74c9742b049311b045107cc6f8817b6b2f9f7f9e7ff90` |
-| 5 | `example` | [(anonymous)](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/WeilCore.lean/declarations/example-source-edition-8.md) | 28 | `declaration-track:a7d365a18c8f2e7f3ae8a8446c6f9d28a10c35395d7ba794b3bb730d95b5a341` |
-| 6 | `example` | [(anonymous)](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/WeilCore.lean/declarations/example-source-edition-5.md) | 31 | `declaration-track:5698edeb2f9a95000844e86edf73bed4c87ab2a545674f158b672a2cef9fe08d` |
-| 7 | `example` | [(anonymous)](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/WeilCore.lean/declarations/example.md) | 34 | `declaration-track:076e0329428d883589b86bbfc93509ca66fa1a27bcab84d2122896d1eb4d1083` |
-| 8 | `example` | [(anonymous)](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/WeilCore.lean/declarations/example-source-edition-9.md) | 37 | `declaration-track:f93ab41ae13d4ba154ad384ae04c6994e351482fdac03af960675037160959dc` |
-| 9 | `example` | [(anonymous)](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/WeilCore.lean/declarations/example-source-edition-2.md) | 42 | `declaration-track:1d58b8bdb6d1227176c62067f6f6a6487a638c89c1e54552d2c3fe02a0d3aa63` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/WeilCore.lean/declarations/example-source-edition-4.md) | 19 | `declaration-track:451527630df18db87a20e270289ee0112a17614324b0d3fb1f7e9fb4894ee8f2` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/WeilCore.lean/declarations/example-source-edition-7.md) | 20 | `declaration-track:7a77962ce02439edcad181b28ae8887dea5947ae5e9641d4472346625c1fcf77` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/WeilCore.lean/declarations/example-source-edition-6.md) | 22 | `declaration-track:6f0a6c952505ad9826b9ca726b551d2e05b02de847b5f62ed050f939c6ba3710` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/WeilCore.lean/declarations/example-source-edition-3.md) | 25 | `declaration-track:1e3505a290c30063d0c74c9742b049311b045107cc6f8817b6b2f9f7f9e7ff90` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/WeilCore.lean/declarations/example-source-edition-8.md) | 28 | `declaration-track:a7d365a18c8f2e7f3ae8a8446c6f9d28a10c35395d7ba794b3bb730d95b5a341` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/WeilCore.lean/declarations/example-source-edition-5.md) | 31 | `declaration-track:5698edeb2f9a95000844e86edf73bed4c87ab2a545674f158b672a2cef9fe08d` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/WeilCore.lean/declarations/example.md) | 34 | `declaration-track:076e0329428d883589b86bbfc93509ca66fa1a27bcab84d2122896d1eb4d1083` |
+| 8 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/WeilCore.lean/declarations/example-source-edition-9.md) | 37 | `declaration-track:f93ab41ae13d4ba154ad384ae04c6994e351482fdac03af960675037160959dc` |
+| 9 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/WeilCore.lean/declarations/example-source-edition-2.md) | 42 | `declaration-track:1d58b8bdb6d1227176c62067f6f6a6487a638c89c1e54552d2c3fe02a0d3aa63` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

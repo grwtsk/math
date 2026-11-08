@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/PVIdentity.lean/index.md) · [Full source](../../../../MeasureAndIntegration/PVIdentity.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PVIdentity.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PVIdentity.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,17 +59,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [integral_exp_div_neg_eq](../../../../MeasureAndIntegration/PVIdentity.lean/declarations/integral-exp-div-neg-eq.md) | 32 | `result-track:743e075c5a8242907d492651a2b8220eee24fe6c9d456cf49ea1aace8155676e` |
-| 2 | `lemma` | [integral_exp_div_split](../../../../MeasureAndIntegration/PVIdentity.lean/declarations/integral-exp-div-split.md) | 46 | `result-track:f2d2ddcd048607f89ee33f9a9380ad631107ac669eecd63340e4431afed62f54` |
-| 3 | `lemma` | [integrableOn_one_sub_exp_neg_div](../../../../MeasureAndIntegration/PVIdentity.lean/declarations/integrableon-one-sub-exp-neg-div.md) | 60 | `result-track:744732993e32e678e6336bd346ee29a09a19bb839f505b63097adb91b0e1ab4d` |
-| 4 | `lemma` | [integrableOn_exp_neg_div_Ioi](../../../../MeasureAndIntegration/PVIdentity.lean/declarations/integrableon-exp-neg-div-ioi.md) | 73 | `result-track:772a97286410e17a0aaa76314b7aad30a8eb1d4971f548ccb5ef2ea023981eda` |
-| 5 | `lemma` | [integrableOn_exp_sub_one_div](../../../../MeasureAndIntegration/PVIdentity.lean/declarations/integrableon-exp-sub-one-div.md) | 87 | `result-track:acd7c20297028c30a34e8ba11e3b27ea052df5ea8f410118519405824da49678` |
-| 6 | `lemma` | [tendsto_integral_one_sub_exp_neg_div](../../../../MeasureAndIntegration/PVIdentity.lean/declarations/tendsto-integral-one-sub-exp-neg-div.md) | 101 | `result-track:2f1b4fdd0b090c3a86bae3c2f4d6fee9efb3a3fd9d18fc162e888bb4851d40b6` |
-| 7 | `lemma` | [tendsto_integral_exp_neg_div_Ioi](../../../../MeasureAndIntegration/PVIdentity.lean/declarations/tendsto-integral-exp-neg-div-ioi.md) | 122 | `result-track:4451f4f0f13a837e67b3803353667c27098b31133518d7f187e59a8bdd8eb70c` |
-| 8 | `lemma` | [tendsto_integral_exp_sub_one_div](../../../../MeasureAndIntegration/PVIdentity.lean/declarations/tendsto-integral-exp-sub-one-div.md) | 136 | `result-track:3b9283f246704acc4b86e43cb2ffdd71658caa12962e4b04cdbc4728aa456839` |
-| 9 | `lemma` | [eulerMascheroni_eq_integral](../../../../MeasureAndIntegration/PVIdentity.lean/declarations/eulermascheroni-eq-integral.md) | 177 | `result-track:76e61db026795e93b19077082d9131d873789b85e05e65aab1538ed1a75804ac` |
-| 10 | `lemma` | [pv_rewrite](../../../../MeasureAndIntegration/PVIdentity.lean/declarations/pv-rewrite.md) | 403 | `result-track:dcf3b736a6c6a6946be49dfdaf961020031b2115a0421fd0d3249f380ad79807` |
-| 11 | `theorem` | [pv_exp_div_eq_gamma_add_log_add_integral](../../../../MeasureAndIntegration/PVIdentity.lean/declarations/pv-exp-div-eq-gamma-add-log-add-integral.md) | 437 | `result-track:c2f65706cc22b62bd60744f8fcb97389a0d867d7fb6201f4f21aa860c502690d` |
+| 1 | `lemma` | [integral_exp_div_neg_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PVIdentity.lean/declarations/integral-exp-div-neg-eq.md) | 32 | `result-track:743e075c5a8242907d492651a2b8220eee24fe6c9d456cf49ea1aace8155676e` |
+| 2 | `lemma` | [integral_exp_div_split](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PVIdentity.lean/declarations/integral-exp-div-split.md) | 46 | `result-track:f2d2ddcd048607f89ee33f9a9380ad631107ac669eecd63340e4431afed62f54` |
+| 3 | `lemma` | [integrableOn_one_sub_exp_neg_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PVIdentity.lean/declarations/integrableon-one-sub-exp-neg-div.md) | 60 | `result-track:744732993e32e678e6336bd346ee29a09a19bb839f505b63097adb91b0e1ab4d` |
+| 4 | `lemma` | [integrableOn_exp_neg_div_Ioi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PVIdentity.lean/declarations/integrableon-exp-neg-div-ioi.md) | 73 | `result-track:772a97286410e17a0aaa76314b7aad30a8eb1d4971f548ccb5ef2ea023981eda` |
+| 5 | `lemma` | [integrableOn_exp_sub_one_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PVIdentity.lean/declarations/integrableon-exp-sub-one-div.md) | 87 | `result-track:acd7c20297028c30a34e8ba11e3b27ea052df5ea8f410118519405824da49678` |
+| 6 | `lemma` | [tendsto_integral_one_sub_exp_neg_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PVIdentity.lean/declarations/tendsto-integral-one-sub-exp-neg-div.md) | 101 | `result-track:2f1b4fdd0b090c3a86bae3c2f4d6fee9efb3a3fd9d18fc162e888bb4851d40b6` |
+| 7 | `lemma` | [tendsto_integral_exp_neg_div_Ioi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PVIdentity.lean/declarations/tendsto-integral-exp-neg-div-ioi.md) | 122 | `result-track:4451f4f0f13a837e67b3803353667c27098b31133518d7f187e59a8bdd8eb70c` |
+| 8 | `lemma` | [tendsto_integral_exp_sub_one_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PVIdentity.lean/declarations/tendsto-integral-exp-sub-one-div.md) | 136 | `result-track:3b9283f246704acc4b86e43cb2ffdd71658caa12962e4b04cdbc4728aa456839` |
+| 9 | `lemma` | [eulerMascheroni_eq_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PVIdentity.lean/declarations/eulermascheroni-eq-integral.md) | 177 | `result-track:76e61db026795e93b19077082d9131d873789b85e05e65aab1538ed1a75804ac` |
+| 10 | `lemma` | [pv_rewrite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PVIdentity.lean/declarations/pv-rewrite.md) | 403 | `result-track:dcf3b736a6c6a6946be49dfdaf961020031b2115a0421fd0d3249f380ad79807` |
+| 11 | `theorem` | [pv_exp_div_eq_gamma_add_log_add_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PVIdentity.lean/declarations/pv-exp-div-eq-gamma-add-log-add-integral.md) | 437 | `result-track:c2f65706cc22b62bd60744f8fcb97389a0d867d7fb6201f4f21aa860c502690d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

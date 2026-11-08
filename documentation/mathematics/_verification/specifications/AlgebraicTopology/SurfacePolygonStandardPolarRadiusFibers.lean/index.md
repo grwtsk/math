@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/SurfacePolygonStandardPolarRadiusFibers.lean/index.md) · [Full source](../../../../AlgebraicTopology/SurfacePolygonStandardPolarRadiusFibers.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonStandardPolarRadiusFibers.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonStandardPolarRadiusFibers.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonStandardConeDisk`](../../../../AlgebraicTopology/SurfacePolygonStandardConeDisk.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonStandardConeDisk`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonStandardConeDisk.lean/index.md) — import line 8; pinned internal source present.
 - `Mathlib.Tactic` — import line 9; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [radius_eq_of_realAnglePolar_eq](../../../../AlgebraicTopology/SurfacePolygonStandardPolarRadiusFibers.lean/declarations/radius-eq-of-realanglepolar-eq.md) | 27 | `result-track:c0bf76fa77e040810b18d2037b87a6ca4576fa400da2944133931b7f43e8119e` |
-| 2 | `theorem` | [realAnglePolar_eq_zero_iff](../../../../AlgebraicTopology/SurfacePolygonStandardPolarRadiusFibers.lean/declarations/realanglepolar-eq-zero-iff.md) | 36 | `result-track:3c865e774000688cb8cadf7623df4be1d1dc8313ee0755c2e8e918dd880c9970` |
-| 3 | `theorem` | [realAnglePolar_apex_fiber](../../../../AlgebraicTopology/SurfacePolygonStandardPolarRadiusFibers.lean/declarations/realanglepolar-apex-fiber.md) | 48 | `result-track:a40bf4e38e873dead26c066a7d947a234a53114109444fdfce45c769159c23e4` |
-| 4 | `theorem` | [realAnglePolar_ne_zero](../../../../AlgebraicTopology/SurfacePolygonStandardPolarRadiusFibers.lean/declarations/realanglepolar-ne-zero.md) | 53 | `result-track:40ebff7f186d7a188fdef596eab8bce63346fda5cde376d540cae0b99d400494` |
-| 5 | `theorem` | [diskPolar_radius_eq](../../../../AlgebraicTopology/SurfacePolygonStandardPolarRadiusFibers.lean/declarations/diskpolar-radius-eq.md) | 61 | `result-track:6b02b110e022ecef87334ccd9861d18da22184176a24d9894b05228e83896cec` |
+| 1 | `theorem` | [radius_eq_of_realAnglePolar_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonStandardPolarRadiusFibers.lean/declarations/radius-eq-of-realanglepolar-eq.md) | 27 | `result-track:c0bf76fa77e040810b18d2037b87a6ca4576fa400da2944133931b7f43e8119e` |
+| 2 | `theorem` | [realAnglePolar_eq_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonStandardPolarRadiusFibers.lean/declarations/realanglepolar-eq-zero-iff.md) | 36 | `result-track:3c865e774000688cb8cadf7623df4be1d1dc8313ee0755c2e8e918dd880c9970` |
+| 3 | `theorem` | [realAnglePolar_apex_fiber](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonStandardPolarRadiusFibers.lean/declarations/realanglepolar-apex-fiber.md) | 48 | `result-track:a40bf4e38e873dead26c066a7d947a234a53114109444fdfce45c769159c23e4` |
+| 4 | `theorem` | [realAnglePolar_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonStandardPolarRadiusFibers.lean/declarations/realanglepolar-ne-zero.md) | 53 | `result-track:40ebff7f186d7a188fdef596eab8bce63346fda5cde376d540cae0b99d400494` |
+| 5 | `theorem` | [diskPolar_radius_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonStandardPolarRadiusFibers.lean/declarations/diskpolar-radius-eq.md) | 61 | `result-track:6b02b110e022ecef87334ccd9861d18da22184176a24d9894b05228e83896cec` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

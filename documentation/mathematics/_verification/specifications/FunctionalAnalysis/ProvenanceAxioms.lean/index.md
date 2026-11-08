@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/ProvenanceAxioms.lean/index.md) · [Full source](../../../../FunctionalAnalysis/ProvenanceAxioms.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ProvenanceAxioms.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ProvenanceAxioms.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ProvenancePreservingTranslation](../../../../FunctionalAnalysis/ProvenanceAxioms.lean/declarations/provenancepreservingtranslation.md) | 23 | `declaration-track:592cfd479770cbca444ff846bd60edf9ca5b80fec39afb1530180dbd9e55f62a` |
-| 2 | `theorem` | [ProvenancePreservingTranslation.retains_source](../../../../FunctionalAnalysis/ProvenanceAxioms.lean/declarations/provenancepreservingtranslation-retains-source.md) | 30 | `result-track:04808f39ce10bb176380da79b1a27233e5cf08f837b69fd3b2a056cf405898fa` |
-| 3 | `theorem` | [ProvenancePreservingTranslation.checked_statement](../../../../FunctionalAnalysis/ProvenanceAxioms.lean/declarations/provenancepreservingtranslation-checked-statement.md) | 37 | `result-track:c6dd53a3b9bb8f68ebc611a30d9604e6c8faeb54e41aae9f9353a3487cdc1b80` |
+| 1 | `structure` | [ProvenancePreservingTranslation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ProvenanceAxioms.lean/declarations/provenancepreservingtranslation.md) | 23 | `declaration-track:592cfd479770cbca444ff846bd60edf9ca5b80fec39afb1530180dbd9e55f62a` |
+| 2 | `theorem` | [ProvenancePreservingTranslation.retains_source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ProvenanceAxioms.lean/declarations/provenancepreservingtranslation-retains-source.md) | 30 | `result-track:04808f39ce10bb176380da79b1a27233e5cf08f837b69fd3b2a056cf405898fa` |
+| 3 | `theorem` | [ProvenancePreservingTranslation.checked_statement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ProvenanceAxioms.lean/declarations/provenancepreservingtranslation-checked-statement.md) | 37 | `result-track:c6dd53a3b9bb8f68ebc611a30d9604e6c8faeb54e41aae9f9353a3487cdc1b80` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

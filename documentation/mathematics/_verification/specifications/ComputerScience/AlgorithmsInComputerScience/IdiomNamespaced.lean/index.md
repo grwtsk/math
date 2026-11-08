@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/IdiomNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/IdiomNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IdiomNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IdiomNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [IdiomProductivity](../../../../../ComputerScience/AlgorithmsInComputerScience/IdiomNamespaced.lean/declarations/idiomproductivity.md) | 15 | `declaration-track:48aaae0d49326bba4304d08caf3cb778a7f31a52ff219876594e643f40bde7df` |
-| 2 | `structure` | [IdiomCertificate](../../../../../ComputerScience/AlgorithmsInComputerScience/IdiomNamespaced.lean/declarations/idiomcertificate.md) | 22 | `declaration-track:099b06cf36d3cb65d35e186ca98dfaa7024d9db13520640b23728881e4a1a101` |
-| 3 | `structure` | [IdiomRecord](../../../../../ComputerScience/AlgorithmsInComputerScience/IdiomNamespaced.lean/declarations/idiomrecord.md) | 36 | `declaration-track:0fac2292417c9a17f3357ba318fea2d539531d0ac78c69cf66c9480e762a3ad7` |
-| 4 | `theorem` | [IdiomRecord.is_idiomatic](../../../../../ComputerScience/AlgorithmsInComputerScience/IdiomNamespaced.lean/declarations/idiomrecord-is-idiomatic.md) | 42 | `result-track:730ebccc73a5e1f671ec7035c09229edbb1215958fe8254ebec611f3369dd10f` |
+| 1 | `inductive` | [IdiomProductivity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IdiomNamespaced.lean/declarations/idiomproductivity.md) | 15 | `declaration-track:48aaae0d49326bba4304d08caf3cb778a7f31a52ff219876594e643f40bde7df` |
+| 2 | `structure` | [IdiomCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IdiomNamespaced.lean/declarations/idiomcertificate.md) | 22 | `declaration-track:099b06cf36d3cb65d35e186ca98dfaa7024d9db13520640b23728881e4a1a101` |
+| 3 | `structure` | [IdiomRecord](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IdiomNamespaced.lean/declarations/idiomrecord.md) | 36 | `declaration-track:0fac2292417c9a17f3357ba318fea2d539531d0ac78c69cf66c9480e762a3ad7` |
+| 4 | `theorem` | [IdiomRecord.is_idiomatic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IdiomNamespaced.lean/declarations/idiomrecord-is-idiomatic.md) | 42 | `result-track:730ebccc73a5e1f671ec7035c09229edbb1215958fe8254ebec611f3369dd10f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

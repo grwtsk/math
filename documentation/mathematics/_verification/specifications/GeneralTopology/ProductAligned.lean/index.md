@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ProductAligned.lean/index.md) · [Full source](../../../../GeneralTopology/ProductAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProductAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProductAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,25 +58,25 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [HomotopyRel.pi](../../../../GeneralTopology/ProductAligned.lean/declarations/homotopyrel-pi.md) | 73 | `declaration-track:11285a0d71a7cc8f25a5889a296bcaaa8c77d1ac551e82433bf22cd041f3c93a` |
-| 2 | `def` | [Homotopy.prod](../../../../GeneralTopology/ProductAligned.lean/declarations/homotopy-prod.md) | 94 | `declaration-track:c6386a4662f1df231481ce770d5f6781a73c9e40b910507b56f271b3232a8160` |
-| 3 | `def` | [HomotopyRel.prod](../../../../GeneralTopology/ProductAligned.lean/declarations/homotopyrel-prod.md) | 104 | `declaration-track:2b0c89bbac9146e413afccc0abf8fa0436476d92c45608c2a957c1ffc9a423a2` |
-| 4 | `def` | [piHomotopy](../../../../GeneralTopology/ProductAligned.lean/declarations/pihomotopy.md) | 130 | `declaration-track:5fea2ab67ebbbcd5d68cdfb0dfd2e1ff44f46f5709832fee29762eaf78f5f3d1` |
-| 5 | `def` | [pi](../../../../GeneralTopology/ProductAligned.lean/declarations/pi.md) | 136 | `declaration-track:a5a07921e19c97d2a62fef6dc5421c0dcb098f6d5b7e11b7cd552bced6a906ff` |
-| 6 | `theorem` | [pi_lift](../../../../GeneralTopology/ProductAligned.lean/declarations/pi-lift.md) | 141 | `result-track:b96aa8d8a614aaf6f7cd12eef5a3bb03be457a3cc0822dc5423da80d143f2938` |
-| 7 | `theorem` | [comp_pi_eq_pi_comp](../../../../GeneralTopology/ProductAligned.lean/declarations/comp-pi-eq-pi-comp.md) | 147 | `result-track:d752b8cc94098599a6b1b5157f532dcd3853d07e815726aa1c9169987a670c21` |
-| 8 | `def` | [proj](../../../../GeneralTopology/ProductAligned.lean/declarations/proj.md) | 160 | `declaration-track:1d35d1ce813d5555669f3f16cd5db14f851010991e56bff494223e82859a793e` |
-| 9 | `theorem` | [proj_pi](../../../../GeneralTopology/ProductAligned.lean/declarations/proj-pi.md) | 166 | `result-track:2033c55be4466fdc9d7b56cbbba131b57aa7693aca99205078b003b5ba7945d6` |
-| 10 | `theorem` | [pi_proj](../../../../GeneralTopology/ProductAligned.lean/declarations/pi-proj.md) | 175 | `result-track:7cc63b3b87802efa11b617edb790389e9d55756fb7ec69b60e374b71c61a38be` |
-| 11 | `def` | [prodHomotopy](../../../../GeneralTopology/ProductAligned.lean/declarations/prodhomotopy.md) | 193 | `declaration-track:3f5caf10ce638d4e32216c93b25eec92ddfd6099dc64a9a3d991983c46bbebe7` |
-| 12 | `def` | [prod](../../../../GeneralTopology/ProductAligned.lean/declarations/prod.md) | 199 | `declaration-track:05c5a50270eb7c038417fa5afa492fc05721110aebecfe9538bf4ddcf9000663` |
-| 13 | `theorem` | [prod_lift](../../../../GeneralTopology/ProductAligned.lean/declarations/prod-lift.md) | 206 | `result-track:4b9dc74ed943b700674b5ec9f0fb090bc317a380cebc53a0e843e4e62a1c229b` |
-| 14 | `theorem` | [comp_prod_eq_prod_comp](../../../../GeneralTopology/ProductAligned.lean/declarations/comp-prod-eq-prod-comp.md) | 214 | `result-track:4a5db03b1cbd27441df9f9dbe29a60b2a79e0c1ed1120f725aad7b5897702754` |
-| 15 | `def` | [projLeft](../../../../GeneralTopology/ProductAligned.lean/declarations/projleft.md) | 226 | `declaration-track:1f42e35c9e5f6e4e711aad3db84a26665ec3ef2feb03eafe67bdd6379b0af57b` |
-| 16 | `def` | [projRight](../../../../GeneralTopology/ProductAligned.lean/declarations/projright.md) | 232 | `declaration-track:dcf46bd55fbb8e5852e015889ee9498f9d3b643d549e5eb8e477f3ebe6b42476` |
-| 17 | `theorem` | [projLeft_prod](../../../../GeneralTopology/ProductAligned.lean/declarations/projleft-prod.md) | 238 | `result-track:3f5e8c985b7de5e5df287990a2106ae7501cf978ae0549965e4d7fab6ab39d63` |
-| 18 | `theorem` | [projRight_prod](../../../../GeneralTopology/ProductAligned.lean/declarations/projright-prod.md) | 247 | `result-track:682aae29d6bd7ff13604c013c9c5a4e6f67b1b937b064905dc8c16d785d56356` |
-| 19 | `theorem` | [prod_projLeft_projRight](../../../../GeneralTopology/ProductAligned.lean/declarations/prod-projleft-projright.md) | 256 | `result-track:a9168e8729ce9c5359a92b649daf3e0509698c8eff762c402ac5f1277d9f94ec` |
+| 1 | `def` | [HomotopyRel.pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProductAligned.lean/declarations/homotopyrel-pi.md) | 73 | `declaration-track:11285a0d71a7cc8f25a5889a296bcaaa8c77d1ac551e82433bf22cd041f3c93a` |
+| 2 | `def` | [Homotopy.prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProductAligned.lean/declarations/homotopy-prod.md) | 94 | `declaration-track:c6386a4662f1df231481ce770d5f6781a73c9e40b910507b56f271b3232a8160` |
+| 3 | `def` | [HomotopyRel.prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProductAligned.lean/declarations/homotopyrel-prod.md) | 104 | `declaration-track:2b0c89bbac9146e413afccc0abf8fa0436476d92c45608c2a957c1ffc9a423a2` |
+| 4 | `def` | [piHomotopy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProductAligned.lean/declarations/pihomotopy.md) | 130 | `declaration-track:5fea2ab67ebbbcd5d68cdfb0dfd2e1ff44f46f5709832fee29762eaf78f5f3d1` |
+| 5 | `def` | [pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProductAligned.lean/declarations/pi.md) | 136 | `declaration-track:a5a07921e19c97d2a62fef6dc5421c0dcb098f6d5b7e11b7cd552bced6a906ff` |
+| 6 | `theorem` | [pi_lift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProductAligned.lean/declarations/pi-lift.md) | 141 | `result-track:b96aa8d8a614aaf6f7cd12eef5a3bb03be457a3cc0822dc5423da80d143f2938` |
+| 7 | `theorem` | [comp_pi_eq_pi_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProductAligned.lean/declarations/comp-pi-eq-pi-comp.md) | 147 | `result-track:d752b8cc94098599a6b1b5157f532dcd3853d07e815726aa1c9169987a670c21` |
+| 8 | `def` | [proj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProductAligned.lean/declarations/proj.md) | 160 | `declaration-track:1d35d1ce813d5555669f3f16cd5db14f851010991e56bff494223e82859a793e` |
+| 9 | `theorem` | [proj_pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProductAligned.lean/declarations/proj-pi.md) | 166 | `result-track:2033c55be4466fdc9d7b56cbbba131b57aa7693aca99205078b003b5ba7945d6` |
+| 10 | `theorem` | [pi_proj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProductAligned.lean/declarations/pi-proj.md) | 175 | `result-track:7cc63b3b87802efa11b617edb790389e9d55756fb7ec69b60e374b71c61a38be` |
+| 11 | `def` | [prodHomotopy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProductAligned.lean/declarations/prodhomotopy.md) | 193 | `declaration-track:3f5caf10ce638d4e32216c93b25eec92ddfd6099dc64a9a3d991983c46bbebe7` |
+| 12 | `def` | [prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProductAligned.lean/declarations/prod.md) | 199 | `declaration-track:05c5a50270eb7c038417fa5afa492fc05721110aebecfe9538bf4ddcf9000663` |
+| 13 | `theorem` | [prod_lift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProductAligned.lean/declarations/prod-lift.md) | 206 | `result-track:4b9dc74ed943b700674b5ec9f0fb090bc317a380cebc53a0e843e4e62a1c229b` |
+| 14 | `theorem` | [comp_prod_eq_prod_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProductAligned.lean/declarations/comp-prod-eq-prod-comp.md) | 214 | `result-track:4a5db03b1cbd27441df9f9dbe29a60b2a79e0c1ed1120f725aad7b5897702754` |
+| 15 | `def` | [projLeft](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProductAligned.lean/declarations/projleft.md) | 226 | `declaration-track:1f42e35c9e5f6e4e711aad3db84a26665ec3ef2feb03eafe67bdd6379b0af57b` |
+| 16 | `def` | [projRight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProductAligned.lean/declarations/projright.md) | 232 | `declaration-track:dcf46bd55fbb8e5852e015889ee9498f9d3b643d549e5eb8e477f3ebe6b42476` |
+| 17 | `theorem` | [projLeft_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProductAligned.lean/declarations/projleft-prod.md) | 238 | `result-track:3f5e8c985b7de5e5df287990a2106ae7501cf978ae0549965e4d7fab6ab39d63` |
+| 18 | `theorem` | [projRight_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProductAligned.lean/declarations/projright-prod.md) | 247 | `result-track:682aae29d6bd7ff13604c013c9c5a4e6f67b1b937b064905dc8c16d785d56356` |
+| 19 | `theorem` | [prod_projLeft_projRight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProductAligned.lean/declarations/prod-projleft-projright.md) | 256 | `result-track:a9168e8729ce9c5359a92b649daf3e0509698c8eff762c402ac5f1277d9f94ec` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

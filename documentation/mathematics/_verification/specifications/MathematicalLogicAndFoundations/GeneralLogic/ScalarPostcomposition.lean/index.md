@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ScalarPostcomposition.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ScalarPostcomposition.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ScalarPostcomposition.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ScalarPostcomposition.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -48,7 +48,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 - `Folder.Expansion.Shell` — import line 19; external provider; requires a separately pinned dependency.
 - `Folder.Spectral.Tensor` — import line 20; external provider; requires a separately pinned dependency.
-- [Zero Add Function Data](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ZeroAddFunctionData.lean/index.md) — import line 22; pinned internal source present.
+- [Zero Add Function Data](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ZeroAddFunctionData.lean/index.md) — import line 22; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [map](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ScalarPostcomposition.lean/declarations/map.md) | 45 | `declaration-track:4da31126f4f1cd785e8005573be39612f005621a81907530218a4e09aa7b30c1` |
-| 2 | `theorem` | [value_map](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ScalarPostcomposition.lean/declarations/value-map.md) | 53 | `result-track:c6de1aa11309341665a62f5a0f7280724d67cbddc41b1532a2d6990c0c17fd0b` |
+| 1 | `def` | [map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ScalarPostcomposition.lean/declarations/map.md) | 45 | `declaration-track:4da31126f4f1cd785e8005573be39612f005621a81907530218a4e09aa7b30c1` |
+| 2 | `theorem` | [value_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ScalarPostcomposition.lean/declarations/value-map.md) | 53 | `result-track:c6de1aa11309341665a62f5a0f7280724d67cbddc41b1532a2d6990c0c17fd0b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/KraftNamespacedPublic.lean/index.md) · [Full source](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/KraftNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/KraftNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/KraftNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [IsPrefixFree.finsetSum_one_div_card_pow_length_le_one](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/KraftNamespacedPublic.lean/declarations/isprefixfree-finsetsum-one-div-card-pow-length-le-one.md) | 51 | `result-track:f76a94872c762f7c523b8bfda485a24cf3e6d18d77a7e04b5d947a6f1ec23c54` |
-| 2 | `lemma` | [IsPrefixFree.finsetSum_one_div_card_pow_length_of_subtype](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/KraftNamespacedPublic.lean/declarations/isprefixfree-finsetsum-one-div-card-pow-length-of-subtype.md) | 60 | `result-track:a5f1b4a8beedb626e9953868b90522181c20dbbb867393e3ae6fcfad89b65b94` |
-| 3 | `theorem` | [IsPrefixFree.summable_one_div_card_pow_length](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/KraftNamespacedPublic.lean/declarations/isprefixfree-summable-one-div-card-pow-length.md) | 72 | `result-track:bbb223376d59b9c64f25692bd743451f5af36db709b75a8087322a7c185274b9` |
-| 4 | `theorem` | [IsPrefixFree.tsum_one_div_card_pow_length_le_one](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/KraftNamespacedPublic.lean/declarations/isprefixfree-tsum-one-div-card-pow-length-le-one.md) | 79 | `result-track:8213bef050845cca014b25d3382caa2a3f1065a1fbd2afce9a7b03311ec81458` |
+| 1 | `theorem` | [IsPrefixFree.finsetSum_one_div_card_pow_length_le_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/KraftNamespacedPublic.lean/declarations/isprefixfree-finsetsum-one-div-card-pow-length-le-one.md) | 51 | `result-track:f76a94872c762f7c523b8bfda485a24cf3e6d18d77a7e04b5d947a6f1ec23c54` |
+| 2 | `lemma` | [IsPrefixFree.finsetSum_one_div_card_pow_length_of_subtype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/KraftNamespacedPublic.lean/declarations/isprefixfree-finsetsum-one-div-card-pow-length-of-subtype.md) | 60 | `result-track:a5f1b4a8beedb626e9953868b90522181c20dbbb867393e3ae6fcfad89b65b94` |
+| 3 | `theorem` | [IsPrefixFree.summable_one_div_card_pow_length](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/KraftNamespacedPublic.lean/declarations/isprefixfree-summable-one-div-card-pow-length.md) | 72 | `result-track:bbb223376d59b9c64f25692bd743451f5af36db709b75a8087322a7c185274b9` |
+| 4 | `theorem` | [IsPrefixFree.tsum_one_div_card_pow_length_le_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/KraftNamespacedPublic.lean/declarations/isprefixfree-tsum-one-div-card-pow-length-le-one.md) | 79 | `result-track:8213bef050845cca014b25d3382caa2a3f1065a1fbd2afce9a7b03311ec81458` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

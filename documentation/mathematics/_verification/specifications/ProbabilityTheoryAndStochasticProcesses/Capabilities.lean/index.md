@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/Capabilities.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/Capabilities.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Capabilities.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Capabilities.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,17 +58,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PacketEquiv](../../../../ProbabilityTheoryAndStochasticProcesses/Capabilities.lean/declarations/packetequiv.md) | 24 | `declaration-track:1039724f98dcd58d07551cca26ca65cdeb2b456411bbc6feeb2466f67b3673fa` |
-| 2 | `theorem` | [expectation_preserved](../../../../ProbabilityTheoryAndStochasticProcesses/Capabilities.lean/declarations/expectation-preserved.md) | 40 | `result-track:2b509a55d179f10e4867ceeb3b384c61d2d966c334ba9981a63c80603d2af1d0` |
-| 3 | `theorem` | [spectralExpectation_preserved](../../../../ProbabilityTheoryAndStochasticProcesses/Capabilities.lean/declarations/spectralexpectation-preserved.md) | 59 | `result-track:19bc5503fc589b06bf9dc8edab5c187ddbf6dd9a80aadc748c97293e901f8480` |
-| 4 | `structure` | [FamilyTurnCovariance](../../../../ProbabilityTheoryAndStochasticProcesses/Capabilities.lean/declarations/familyturncovariance.md) | 75 | `declaration-track:45a07662f6bf3774ad11620ad47de57b3b80ae440ed5c2f5f2d1a8fc2c0c1e34` |
-| 5 | `def` | [sumOutcomeEquiv](../../../../ProbabilityTheoryAndStochasticProcesses/Capabilities.lean/declarations/sumoutcomeequiv.md) | 91 | `declaration-track:94f7d8b4a070f849758eb35755af52d73a83e194df1f0a8be77ac9757353dfbb` |
-| 6 | `def` | [mixtureEquiv](../../../../ProbabilityTheoryAndStochasticProcesses/Capabilities.lean/declarations/mixtureequiv.md) | 98 | `declaration-track:0b6e3f7bb9d1761e49b6fe7df9716b3ee0a007df037c5f4c0d4b861062557ce5` |
-| 7 | `theorem` | [spectralExpectation_reindex](../../../../ProbabilityTheoryAndStochasticProcesses/Capabilities.lean/declarations/spectralexpectation-reindex.md) | 118 | `result-track:d050114485bbf4fd05ce50b857989a670106213ad0bfa81491a1b24a0c91af8d` |
-| 8 | `structure` | [OperatorSemantics](../../../../ProbabilityTheoryAndStochasticProcesses/Capabilities.lean/declarations/operatorsemantics.md) | 130 | `declaration-track:ca2d78d5873a76761d2351b46e6a124bb48ba33ce7c19cace9d9be65845b4b0e` |
-| 9 | `structure` | [OperatorRealization](../../../../ProbabilityTheoryAndStochasticProcesses/Capabilities.lean/declarations/operatorrealization.md) | 139 | `declaration-track:f3e22eb9fa7e664afd71dd3b7d426bb8891b0f9ebd476aa060b9556d1bccf74a` |
-| 10 | `structure` | [UnitaryTransportSemantics](../../../../ProbabilityTheoryAndStochasticProcesses/Capabilities.lean/declarations/unitarytransportsemantics.md) | 155 | `declaration-track:8e8a023f19e1cb5ff90056836b19e4c00ab26d6ddcac6208241ab04573bf0258` |
-| 11 | `structure` | [OperatorTurnCovariance](../../../../ProbabilityTheoryAndStochasticProcesses/Capabilities.lean/declarations/operatorturncovariance.md) | 164 | `declaration-track:44f504639e8527d3b80d6066fb8907d01ce6e79317992d3a73fd580aba0e51cb` |
+| 1 | `structure` | [PacketEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Capabilities.lean/declarations/packetequiv.md) | 24 | `declaration-track:1039724f98dcd58d07551cca26ca65cdeb2b456411bbc6feeb2466f67b3673fa` |
+| 2 | `theorem` | [expectation_preserved](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Capabilities.lean/declarations/expectation-preserved.md) | 40 | `result-track:2b509a55d179f10e4867ceeb3b384c61d2d966c334ba9981a63c80603d2af1d0` |
+| 3 | `theorem` | [spectralExpectation_preserved](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Capabilities.lean/declarations/spectralexpectation-preserved.md) | 59 | `result-track:19bc5503fc589b06bf9dc8edab5c187ddbf6dd9a80aadc748c97293e901f8480` |
+| 4 | `structure` | [FamilyTurnCovariance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Capabilities.lean/declarations/familyturncovariance.md) | 75 | `declaration-track:45a07662f6bf3774ad11620ad47de57b3b80ae440ed5c2f5f2d1a8fc2c0c1e34` |
+| 5 | `def` | [sumOutcomeEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Capabilities.lean/declarations/sumoutcomeequiv.md) | 91 | `declaration-track:94f7d8b4a070f849758eb35755af52d73a83e194df1f0a8be77ac9757353dfbb` |
+| 6 | `def` | [mixtureEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Capabilities.lean/declarations/mixtureequiv.md) | 98 | `declaration-track:0b6e3f7bb9d1761e49b6fe7df9716b3ee0a007df037c5f4c0d4b861062557ce5` |
+| 7 | `theorem` | [spectralExpectation_reindex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Capabilities.lean/declarations/spectralexpectation-reindex.md) | 118 | `result-track:d050114485bbf4fd05ce50b857989a670106213ad0bfa81491a1b24a0c91af8d` |
+| 8 | `structure` | [OperatorSemantics](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Capabilities.lean/declarations/operatorsemantics.md) | 130 | `declaration-track:ca2d78d5873a76761d2351b46e6a124bb48ba33ce7c19cace9d9be65845b4b0e` |
+| 9 | `structure` | [OperatorRealization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Capabilities.lean/declarations/operatorrealization.md) | 139 | `declaration-track:f3e22eb9fa7e664afd71dd3b7d426bb8891b0f9ebd476aa060b9556d1bccf74a` |
+| 10 | `structure` | [UnitaryTransportSemantics](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Capabilities.lean/declarations/unitarytransportsemantics.md) | 155 | `declaration-track:8e8a023f19e1cb5ff90056836b19e4c00ab26d6ddcac6208241ab04573bf0258` |
+| 11 | `structure` | [OperatorTurnCovariance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Capabilities.lean/declarations/operatorturncovariance.md) | 164 | `declaration-track:44f504639e8527d3b80d6066fb8907d01ce6e79317992d3a73fd580aba0e51cb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

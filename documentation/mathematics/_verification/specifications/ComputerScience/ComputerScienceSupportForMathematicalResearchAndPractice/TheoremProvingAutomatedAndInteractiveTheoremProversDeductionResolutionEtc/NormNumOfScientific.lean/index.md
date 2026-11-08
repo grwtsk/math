@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/NormNumOfScientific.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/NormNumOfScientific.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/NormNumOfScientific.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/NormNumOfScientific.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [isRat_ofScientific_of_true](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/NormNumOfScientific.lean/declarations/israt-ofscientific-of-true.md) | 23 | `result-track:1f5888fd50b3e9742c09cf9adb78055873677b646d275c577caa9789505389ae` |
-| 2 | `theorem` | [isNat_ofScientific_of_false](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/NormNumOfScientific.lean/declarations/isnat-ofscientific-of-false.md) | 30 | `result-track:e75b251e5c9dfc60358f74523351f72bd9490f705a78fe3eb461844689b0e7df` |
-| 3 | `def` | [evalOfScientific](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/NormNumOfScientific.lean/declarations/evalofscientific.md) | 41 | `declaration-track:2a0d86ba54969b32e606199a00ff4b6492b0c54f6cc7ab4262a11f9b01254026` |
+| 1 | `theorem` | [isRat_ofScientific_of_true](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/NormNumOfScientific.lean/declarations/israt-ofscientific-of-true.md) | 23 | `result-track:1f5888fd50b3e9742c09cf9adb78055873677b646d275c577caa9789505389ae` |
+| 2 | `theorem` | [isNat_ofScientific_of_false](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/NormNumOfScientific.lean/declarations/isnat-ofscientific-of-false.md) | 30 | `result-track:e75b251e5c9dfc60358f74523351f72bd9490f705a78fe3eb461844689b0e7df` |
+| 3 | `def` | [evalOfScientific](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/NormNumOfScientific.lean/declarations/evalofscientific.md) | 41 | `declaration-track:2a0d86ba54969b32e606199a00ff4b6492b0c54f6cc7ab4262a11f9b01254026` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

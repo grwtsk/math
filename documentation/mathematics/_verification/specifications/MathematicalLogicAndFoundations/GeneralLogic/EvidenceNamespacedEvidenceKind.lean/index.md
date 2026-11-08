@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EvidenceNamespacedEvidenceKind.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EvidenceNamespacedEvidenceKind.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EvidenceNamespacedEvidenceKind.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EvidenceNamespacedEvidenceKind.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [EvidenceKind](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EvidenceNamespacedEvidenceKind.lean/declarations/evidencekind.md) | 22 | `declaration-track:4ec5e21dd6dfb89785501e1af9176fa1a57c2fc02cb606337249a076f23125d0` |
-| 2 | `def` | [contributesTheoremAuthority](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EvidenceNamespacedEvidenceKind.lean/declarations/contributestheoremauthority.md) | 31 | `declaration-track:d40f6693b66e139a93fcf2bc0d580b09e4de95cf5d177e7aaf38bb856180ee84` |
-| 3 | `structure` | [FixedPredicateCertificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EvidenceNamespacedEvidenceKind.lean/declarations/fixedpredicatecertificate.md) | 40 | `declaration-track:691667f73a1685f2ab4917781fce6b015954483d6ff860f7ecdee262e5471ce3` |
-| 4 | `structure` | [ContractPayload](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EvidenceNamespacedEvidenceKind.lean/declarations/contractpayload.md) | 46 | `declaration-track:ba9080a033ef145213ee129503d251e62009326f1aeb31e8ca469b8e9126a2aa` |
-| 5 | `theorem` | [no_promotion_from_model](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EvidenceNamespacedEvidenceKind.lean/declarations/no-promotion-from-model.md) | 50 | `result-track:b450b5a87272846569048ffe24e45a37f4e8da4f04e549dff4750213d6a2e295` |
-| 6 | `theorem` | [no_promotion_from_runtime_trace](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EvidenceNamespacedEvidenceKind.lean/declarations/no-promotion-from-runtime-trace.md) | 53 | `result-track:a116403b7b9c2c6ab72a9c20fc266de75c99859eede978d20b3e0c2fc00a671f` |
-| 7 | `theorem` | [no_promotion_from_contract](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EvidenceNamespacedEvidenceKind.lean/declarations/no-promotion-from-contract.md) | 56 | `result-track:9448840b64997cddf327983070c22eb2001279a4ecab26237b14d349eac507b8` |
+| 1 | `inductive` | [EvidenceKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EvidenceNamespacedEvidenceKind.lean/declarations/evidencekind.md) | 22 | `declaration-track:4ec5e21dd6dfb89785501e1af9176fa1a57c2fc02cb606337249a076f23125d0` |
+| 2 | `def` | [contributesTheoremAuthority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EvidenceNamespacedEvidenceKind.lean/declarations/contributestheoremauthority.md) | 31 | `declaration-track:d40f6693b66e139a93fcf2bc0d580b09e4de95cf5d177e7aaf38bb856180ee84` |
+| 3 | `structure` | [FixedPredicateCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EvidenceNamespacedEvidenceKind.lean/declarations/fixedpredicatecertificate.md) | 40 | `declaration-track:691667f73a1685f2ab4917781fce6b015954483d6ff860f7ecdee262e5471ce3` |
+| 4 | `structure` | [ContractPayload](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EvidenceNamespacedEvidenceKind.lean/declarations/contractpayload.md) | 46 | `declaration-track:ba9080a033ef145213ee129503d251e62009326f1aeb31e8ca469b8e9126a2aa` |
+| 5 | `theorem` | [no_promotion_from_model](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EvidenceNamespacedEvidenceKind.lean/declarations/no-promotion-from-model.md) | 50 | `result-track:b450b5a87272846569048ffe24e45a37f4e8da4f04e549dff4750213d6a2e295` |
+| 6 | `theorem` | [no_promotion_from_runtime_trace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EvidenceNamespacedEvidenceKind.lean/declarations/no-promotion-from-runtime-trace.md) | 53 | `result-track:a116403b7b9c2c6ab72a9c20fc266de75c99859eede978d20b3e0c2fc00a671f` |
+| 7 | `theorem` | [no_promotion_from_contract](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EvidenceNamespacedEvidenceKind.lean/declarations/no-promotion-from-contract.md) | 56 | `result-track:9448840b64997cddf327983070c22eb2001279a4ecab26237b14d349eac507b8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

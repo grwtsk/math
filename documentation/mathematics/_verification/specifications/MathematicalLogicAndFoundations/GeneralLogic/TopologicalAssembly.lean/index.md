@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TopologicalAssembly.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TopologicalAssembly.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TopologicalAssembly.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TopologicalAssembly.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -68,9 +68,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TopologicalAdmittedGraphHierarchyResult](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TopologicalAssembly.lean/declarations/topologicaladmittedgraphhierarchyresult.md) | 33 | `declaration-track:90b226bea9163878d5d6653a7d534652d6eaf6bc3c7f69d8a2c335cd1ae7ae59` |
-| 2 | `theorem` | [assembleTopologicalAdmittedGraphHierarchy](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TopologicalAssembly.lean/declarations/assembletopologicaladmittedgraphhierarchy.md) | 64 | `result-track:28906b28ee77e0ba9b07879113202cfc89905777158737f86a8265bd7117a1be` |
-| 3 | `theorem` | [topological_admitted_graph_scoped_hierarchy](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TopologicalAssembly.lean/declarations/topological-admitted-graph-scoped-hierarchy.md) | 103 | `result-track:d0d27146330941369d57c96d28afa6100bc235924f163d5cba6f678df0f58ae7` |
+| 1 | `structure` | [TopologicalAdmittedGraphHierarchyResult](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TopologicalAssembly.lean/declarations/topologicaladmittedgraphhierarchyresult.md) | 33 | `declaration-track:90b226bea9163878d5d6653a7d534652d6eaf6bc3c7f69d8a2c335cd1ae7ae59` |
+| 2 | `theorem` | [assembleTopologicalAdmittedGraphHierarchy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TopologicalAssembly.lean/declarations/assembletopologicaladmittedgraphhierarchy.md) | 64 | `result-track:28906b28ee77e0ba9b07879113202cfc89905777158737f86a8265bd7117a1be` |
+| 3 | `theorem` | [topological_admitted_graph_scoped_hierarchy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TopologicalAssembly.lean/declarations/topological-admitted-graph-scoped-hierarchy.md) | 103 | `result-track:d0d27146330941369d57c96d28afa6100bc235924f163d5cba6f678df0f58ae7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

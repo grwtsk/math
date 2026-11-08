@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MetadataNamespacedMachineValidationStatus.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MetadataNamespacedMachineValidationStatus.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MetadataNamespacedMachineValidationStatus.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MetadataNamespacedMachineValidationStatus.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [MachineValidationStatus](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MetadataNamespacedMachineValidationStatus.lean/declarations/machinevalidationstatus.md) | 16 | `declaration-track:cf41fdc3965c2ce8c2213dd1b4f965c53af9731ba4f19bcaf1e21d08eadd6e4c` |
-| 2 | `structure` | [ArtifactMetadata](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MetadataNamespacedMachineValidationStatus.lean/declarations/artifactmetadata.md) | 23 | `declaration-track:a9cfc4d1540d55d18ae82ed98af7a658be68c076e2f5c19b9794edc57bdc5309` |
-| 3 | `def` | [algHenCompletenessMetadata](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MetadataNamespacedMachineValidationStatus.lean/declarations/alghencompletenessmetadata.md) | 33 | `declaration-track:6c35bbfd918a0c721cc69e5eec986528dcf3e5ea4626e6149da36bc45ad8b5a3` |
+| 1 | `inductive` | [MachineValidationStatus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MetadataNamespacedMachineValidationStatus.lean/declarations/machinevalidationstatus.md) | 16 | `declaration-track:cf41fdc3965c2ce8c2213dd1b4f965c53af9731ba4f19bcaf1e21d08eadd6e4c` |
+| 2 | `structure` | [ArtifactMetadata](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MetadataNamespacedMachineValidationStatus.lean/declarations/artifactmetadata.md) | 23 | `declaration-track:a9cfc4d1540d55d18ae82ed98af7a658be68c076e2f5c19b9794edc57bdc5309` |
+| 3 | `def` | [algHenCompletenessMetadata](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MetadataNamespacedMachineValidationStatus.lean/declarations/alghencompletenessmetadata.md) | 33 | `declaration-track:6c35bbfd918a0c721cc69e5eec986528dcf3e5ea4626e6149da36bc45ad8b5a3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

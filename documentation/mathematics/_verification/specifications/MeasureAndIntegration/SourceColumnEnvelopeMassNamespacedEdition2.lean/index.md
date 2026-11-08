@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceColumnEnvelopeMassNamespacedEdition2.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceColumnEnvelopeMassNamespacedEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceColumnEnvelopeMassNamespacedEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceColumnEnvelopeMassNamespacedEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [inverse_sqrt_antiderivative](../../../../MeasureAndIntegration/SourceColumnEnvelopeMassNamespacedEdition2.lean/declarations/inverse-sqrt-antiderivative.md) | 29 | `result-track:9eaa3286e0c4075b5afdc5ed0058f16524abfad6a9bcd44d62c673803a175ddc` |
-| 2 | `theorem` | [inverse_sqrt_cell_integrable](../../../../MeasureAndIntegration/SourceColumnEnvelopeMassNamespacedEdition2.lean/declarations/inverse-sqrt-cell-integrable.md) | 40 | `result-track:027e240534923eb9dd6b066364e180892c07998cd3d2426bb9eeba33484852a5` |
-| 3 | `theorem` | [inverse_sqrt_integral](../../../../MeasureAndIntegration/SourceColumnEnvelopeMassNamespacedEdition2.lean/declarations/inverse-sqrt-integral.md) | 49 | `result-track:b3ee3861610fe77908f36e5688f4f453da5f257a746f32cbd726128db584ee70` |
-| 4 | `def` | [columnEnvelopeMass](../../../../MeasureAndIntegration/SourceColumnEnvelopeMassNamespacedEdition2.lean/declarations/columnenvelopemass.md) | 59 | `declaration-track:b0e731a3702d92ef3313ef1615b9830b00f34c5792a16d450e24f668f70954fa` |
-| 5 | `theorem` | [columnEnvelopeMass_le](../../../../MeasureAndIntegration/SourceColumnEnvelopeMassNamespacedEdition2.lean/declarations/columnenvelopemass-le.md) | 66 | `result-track:3a06881561736ff3ae335f0002e7b88b9f9ab48e5c5f9bc9afb065d365a03da9` |
+| 1 | `theorem` | [inverse_sqrt_antiderivative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceColumnEnvelopeMassNamespacedEdition2.lean/declarations/inverse-sqrt-antiderivative.md) | 29 | `result-track:9eaa3286e0c4075b5afdc5ed0058f16524abfad6a9bcd44d62c673803a175ddc` |
+| 2 | `theorem` | [inverse_sqrt_cell_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceColumnEnvelopeMassNamespacedEdition2.lean/declarations/inverse-sqrt-cell-integrable.md) | 40 | `result-track:027e240534923eb9dd6b066364e180892c07998cd3d2426bb9eeba33484852a5` |
+| 3 | `theorem` | [inverse_sqrt_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceColumnEnvelopeMassNamespacedEdition2.lean/declarations/inverse-sqrt-integral.md) | 49 | `result-track:b3ee3861610fe77908f36e5688f4f453da5f257a746f32cbd726128db584ee70` |
+| 4 | `def` | [columnEnvelopeMass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceColumnEnvelopeMassNamespacedEdition2.lean/declarations/columnenvelopemass.md) | 59 | `declaration-track:b0e731a3702d92ef3313ef1615b9830b00f34c5792a16d450e24f668f70954fa` |
+| 5 | `theorem` | [columnEnvelopeMass_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceColumnEnvelopeMassNamespacedEdition2.lean/declarations/columnenvelopemass-le.md) | 66 | `result-track:3a06881561736ff3ae335f0002e7b88b9f9ab48e5c5f9bc9afb065d365a03da9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

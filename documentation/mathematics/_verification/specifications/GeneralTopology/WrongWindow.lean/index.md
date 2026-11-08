@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/WrongWindow.lean/index.md) · [Full source](../../../../GeneralTopology/WrongWindow.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/WrongWindow.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/WrongWindow.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Moebius.PrimeFilterLaplace`](../../../../MeasureAndIntegration/MoebiusPrimeFilterLaplace.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.PrimeFilterLaplace`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MoebiusPrimeFilterLaplace.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../GeneralTopology/WrongWindow.lean/declarations/example.md) | 3 | `declaration-track:fcba40237a2b84ffa5b435767c6610df771aef6c174ffdb9dc28aed20fadff26` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/WrongWindow.lean/declarations/example.md) | 3 | `declaration-track:fcba40237a2b84ffa5b435767c6610df771aef6c174ffdb9dc28aed20fadff26` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

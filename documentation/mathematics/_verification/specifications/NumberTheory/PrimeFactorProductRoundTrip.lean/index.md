@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/PrimeFactorProductRoundTrip.lean/index.md) · [Full source](../../../../NumberTheory/PrimeFactorProductRoundTrip.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimeFactorProductRoundTrip.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimeFactorProductRoundTrip.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `Folder.NumberTheory.FundamentalTheorem` — import line 19; external provider; requires a separately pinned dependency.
-- [Positive Index Data](../../../../NumberTheory/PositiveIndexData.lean/index.md) — import line 21; pinned internal source present.
+- [Positive Index Data](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PositiveIndexData.lean/index.md) — import line 21; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [FactorTreeLayerIndex.factorMap](../../../../NumberTheory/PrimeFactorProductRoundTrip.lean/declarations/factortreelayerindex-factormap.md) | 39 | `declaration-track:88392fd49da7a1a4af40635fc5657f4b2dce4b9e2b04a183d14a5b3b8640a51c` |
-| 2 | `theorem` | [factorTreeLayerIndex_decodes](../../../../NumberTheory/PrimeFactorProductRoundTrip.lean/declarations/factortreelayerindex-decodes.md) | 44 | `result-track:4af6b55eb316993646eaad76d201da1ec4f2df592bb023a424c76ca137af1547` |
+| 1 | `def` | [FactorTreeLayerIndex.factorMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimeFactorProductRoundTrip.lean/declarations/factortreelayerindex-factormap.md) | 39 | `declaration-track:88392fd49da7a1a4af40635fc5657f4b2dce4b9e2b04a183d14a5b3b8640a51c` |
+| 2 | `theorem` | [factorTreeLayerIndex_decodes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimeFactorProductRoundTrip.lean/declarations/factortreelayerindex-decodes.md) | 44 | `result-track:4af6b55eb316993646eaad76d201da1ec4f2df592bb023a424c76ca137af1547` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

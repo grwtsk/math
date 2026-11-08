@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotOperatorFixtures.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotOperatorFixtures.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotOperatorFixtures.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotOperatorFixtures.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [intrinsicControlledPivot_normalization_bound](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotOperatorFixtures.lean/declarations/intrinsiccontrolledpivot-normalization-bound.md) | 27 | `result-track:83dbc7c49d714f66d2b90fe5778201431ced53d1ccc9496da545edddebcdbe56` |
-| 2 | `theorem` | [intrinsicControlledPivot_transition_bounds](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotOperatorFixtures.lean/declarations/intrinsiccontrolledpivot-transition-bounds.md) | 35 | `result-track:076388bcfc31e689804187634167e0c0c257929c082c9a38b6e7cc0f80461b41` |
-| 3 | `theorem` | [intrinsicPlane_controlled_normalization_budget](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotOperatorFixtures.lean/declarations/intrinsicplane-controlled-normalization-budget.md) | 46 | `result-track:5f47ed9ea4c3f7744b11027dc39008291ecd74d00a6dcaae5f966ed0740c96dc` |
-| 4 | `theorem` | [line_atlas_controlled_normalization](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotOperatorFixtures.lean/declarations/line-atlas-controlled-normalization.md) | 60 | `result-track:8eaca89c6d096ff0de9f4fdaa624f15a9bc6bfa2ccc96f5aaefd5f6fe1b08e3a` |
+| 1 | `theorem` | [intrinsicControlledPivot_normalization_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotOperatorFixtures.lean/declarations/intrinsiccontrolledpivot-normalization-bound.md) | 27 | `result-track:83dbc7c49d714f66d2b90fe5778201431ced53d1ccc9496da545edddebcdbe56` |
+| 2 | `theorem` | [intrinsicControlledPivot_transition_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotOperatorFixtures.lean/declarations/intrinsiccontrolledpivot-transition-bounds.md) | 35 | `result-track:076388bcfc31e689804187634167e0c0c257929c082c9a38b6e7cc0f80461b41` |
+| 3 | `theorem` | [intrinsicPlane_controlled_normalization_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotOperatorFixtures.lean/declarations/intrinsicplane-controlled-normalization-budget.md) | 46 | `result-track:5f47ed9ea4c3f7744b11027dc39008291ecd74d00a6dcaae5f966ed0740c96dc` |
+| 4 | `theorem` | [line_atlas_controlled_normalization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotOperatorFixtures.lean/declarations/line-atlas-controlled-normalization.md) | 60 | `result-track:8eaca89c6d096ff0de9f4fdaa624f15a9bc6bfa2ccc96f5aaefd5f6fe1b08e3a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

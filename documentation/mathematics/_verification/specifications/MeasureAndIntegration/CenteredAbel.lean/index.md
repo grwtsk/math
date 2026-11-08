@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CenteredAbel.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CenteredAbel.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredAbel.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredAbel.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,19 +59,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [fracPlus](../../../../MeasureAndIntegration/CenteredAbel.lean/declarations/fracplus.md) | 18 | `declaration-track:5227a01cec6bc59bde25c4b6e946e3e1692fca79120f96e6c6b2b747e57eb276` |
-| 2 | `theorem` | [fracPlus_bounds](../../../../MeasureAndIntegration/CenteredAbel.lean/declarations/fracplus-bounds.md) | 20 | `result-track:70379b700aaf8b88759310f7fb4f5c810bd11438c6345c4bfabd725532b9704f` |
-| 3 | `theorem` | [fracPlus_eq_fract](../../../../MeasureAndIntegration/CenteredAbel.lean/declarations/fracplus-eq-fract.md) | 27 | `result-track:78874198bf98af149dc7095d68d80ee65ecb415e0a9f8b1c37992a84eecc294a` |
-| 4 | `theorem` | [fracPlus_centered_abs_le](../../../../MeasureAndIntegration/CenteredAbel.lean/declarations/fracplus-centered-abs-le.md) | 30 | `result-track:0c427c689a4fcdfdd95b04bdf669d7dfa1ed5e9b22ca4cc532975344f594cac7` |
-| 5 | `theorem` | [fracPlus_measurable](../../../../MeasureAndIntegration/CenteredAbel.lean/declarations/fracplus-measurable.md) | 35 | `result-track:c0f546157cb976776b15bff9aeaf7f7e6f5602f3d5fdd93d1686c6d3dacd8632` |
-| 6 | `def` | [unitCoeff](../../../../MeasureAndIntegration/CenteredAbel.lean/declarations/unitcoeff.md) | 39 | `declaration-track:607dfa3b4037027a47f7df71f2152d3547f277d85e90124f34089b5bcd836d66` |
-| 7 | `theorem` | [unitCoeff_sum](../../../../MeasureAndIntegration/CenteredAbel.lean/declarations/unitcoeff-sum.md) | 41 | `result-track:d6c833a98cf420ab9876677277fcca1caa2547dc8f6660083970ae9009179067` |
-| 8 | `theorem` | [unitCoeff_weighted_sum](../../../../MeasureAndIntegration/CenteredAbel.lean/declarations/unitcoeff-weighted-sum.md) | 49 | `result-track:b14ce4a508616e091f6da2a420a9b6840f5382a702d53ea7a82b5045b2cb0823` |
-| 9 | `theorem` | [fracPlus_deriv_intervalIntegrable](../../../../MeasureAndIntegration/CenteredAbel.lean/declarations/fracplus-deriv-intervalintegrable.md) | 72 | `result-track:f0955150090cb943e6a305bbed41be8007ad2ecbdd7d0f2b2033e385ed820b41` |
-| 10 | `theorem` | [centered_deriv_intervalIntegrable](../../../../MeasureAndIntegration/CenteredAbel.lean/declarations/centered-deriv-intervalintegrable.md) | 85 | `result-track:ca179149b497a7d50fbdc531813d1b06ff2ab61c7dcf9d28d607e10382988f93` |
-| 11 | `theorem` | [sum_eq_integral_add_frac](../../../../MeasureAndIntegration/CenteredAbel.lean/declarations/sum-eq-integral-add-frac.md) | 92 | `result-track:7c6e653109684f86e3c98fdedf13625a81d77a6623635249fca0b8d49b0d63bd` |
-| 12 | `theorem` | [sum_eq_integral_add_centered](../../../../MeasureAndIntegration/CenteredAbel.lean/declarations/sum-eq-integral-add-centered.md) | 133 | `result-track:e3ebc7700a9f115eca22d06e71987714933c05b98dcc8f6fed9ee559f03af195` |
-| 13 | `theorem` | [centered_eq_uncentered_of_endpoints_zero](../../../../MeasureAndIntegration/CenteredAbel.lean/declarations/centered-eq-uncentered-of-endpoints-zero.md) | 151 | `result-track:04676e9484e87a53c13c5a31bf0f3d8fdf6b5aa971163ed64b31e73812d474a7` |
+| 1 | `def` | [fracPlus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredAbel.lean/declarations/fracplus.md) | 18 | `declaration-track:5227a01cec6bc59bde25c4b6e946e3e1692fca79120f96e6c6b2b747e57eb276` |
+| 2 | `theorem` | [fracPlus_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredAbel.lean/declarations/fracplus-bounds.md) | 20 | `result-track:70379b700aaf8b88759310f7fb4f5c810bd11438c6345c4bfabd725532b9704f` |
+| 3 | `theorem` | [fracPlus_eq_fract](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredAbel.lean/declarations/fracplus-eq-fract.md) | 27 | `result-track:78874198bf98af149dc7095d68d80ee65ecb415e0a9f8b1c37992a84eecc294a` |
+| 4 | `theorem` | [fracPlus_centered_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredAbel.lean/declarations/fracplus-centered-abs-le.md) | 30 | `result-track:0c427c689a4fcdfdd95b04bdf669d7dfa1ed5e9b22ca4cc532975344f594cac7` |
+| 5 | `theorem` | [fracPlus_measurable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredAbel.lean/declarations/fracplus-measurable.md) | 35 | `result-track:c0f546157cb976776b15bff9aeaf7f7e6f5602f3d5fdd93d1686c6d3dacd8632` |
+| 6 | `def` | [unitCoeff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredAbel.lean/declarations/unitcoeff.md) | 39 | `declaration-track:607dfa3b4037027a47f7df71f2152d3547f277d85e90124f34089b5bcd836d66` |
+| 7 | `theorem` | [unitCoeff_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredAbel.lean/declarations/unitcoeff-sum.md) | 41 | `result-track:d6c833a98cf420ab9876677277fcca1caa2547dc8f6660083970ae9009179067` |
+| 8 | `theorem` | [unitCoeff_weighted_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredAbel.lean/declarations/unitcoeff-weighted-sum.md) | 49 | `result-track:b14ce4a508616e091f6da2a420a9b6840f5382a702d53ea7a82b5045b2cb0823` |
+| 9 | `theorem` | [fracPlus_deriv_intervalIntegrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredAbel.lean/declarations/fracplus-deriv-intervalintegrable.md) | 72 | `result-track:f0955150090cb943e6a305bbed41be8007ad2ecbdd7d0f2b2033e385ed820b41` |
+| 10 | `theorem` | [centered_deriv_intervalIntegrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredAbel.lean/declarations/centered-deriv-intervalintegrable.md) | 85 | `result-track:ca179149b497a7d50fbdc531813d1b06ff2ab61c7dcf9d28d607e10382988f93` |
+| 11 | `theorem` | [sum_eq_integral_add_frac](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredAbel.lean/declarations/sum-eq-integral-add-frac.md) | 92 | `result-track:7c6e653109684f86e3c98fdedf13625a81d77a6623635249fca0b8d49b0d63bd` |
+| 12 | `theorem` | [sum_eq_integral_add_centered](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredAbel.lean/declarations/sum-eq-integral-add-centered.md) | 133 | `result-track:e3ebc7700a9f115eca22d06e71987714933c05b98dcc8f6fed9ee559f03af195` |
+| 13 | `theorem` | [centered_eq_uncentered_of_endpoints_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredAbel.lean/declarations/centered-eq-uncentered-of-endpoints-zero.md) | 151 | `result-track:04676e9484e87a53c13c5a31bf0f3d8fdf6b5aa971163ed64b31e73812d474a7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

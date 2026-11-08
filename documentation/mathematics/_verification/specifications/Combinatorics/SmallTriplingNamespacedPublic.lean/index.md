@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/SmallTriplingNamespacedPublic.lean/index.md) · [Full source](../../../../Combinatorics/SmallTriplingNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SmallTriplingNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SmallTriplingNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [inductive_claim_mul](../../../../Combinatorics/SmallTriplingNamespacedPublic.lean/declarations/inductive-claim-mul.md) | 46 | `result-track:afa13f9933e4fdf58c962242e12b9a00c4c4e78620dbc0fc36a61d407cd7cd4a` |
-| 2 | `lemma` | [small_neg_pos_pos_mul](../../../../Combinatorics/SmallTriplingNamespacedPublic.lean/declarations/small-neg-pos-pos-mul.md) | 79 | `result-track:f152e2e1956b0d5e376504de4f4e98bb744d5adba87dd4367a1c3a4625ada8a1` |
-| 3 | `lemma` | [small_neg_neg_pos_mul](../../../../Combinatorics/SmallTriplingNamespacedPublic.lean/declarations/small-neg-neg-pos-mul.md) | 97 | `result-track:f014318d00c9fa4f7af5b4fd4170afa8154bb77de7e7eee7ceaa5beb04757cfe` |
-| 4 | `lemma` | [small_pos_neg_neg_mul](../../../../Combinatorics/SmallTriplingNamespacedPublic.lean/declarations/small-pos-neg-neg-mul.md) | 102 | `result-track:2dcaf961293b8ffd4173a80e350454987d885bcc599dea18565a7bbd89032ace` |
-| 5 | `lemma` | [small_pos_pos_neg_mul](../../../../Combinatorics/SmallTriplingNamespacedPublic.lean/declarations/small-pos-pos-neg-mul.md) | 106 | `result-track:8ccf5ab75824219fae9d8c344e1da1a4cbe962e53f8c9a4887200610af62a598` |
-| 6 | `lemma` | [small_pos_neg_pos_mul](../../../../Combinatorics/SmallTriplingNamespacedPublic.lean/declarations/small-pos-neg-pos-mul.md) | 111 | `result-track:ce02566ed4157099f0cb29000afe14d61ce027c575e5bb23e0d81ebda9552c19` |
-| 7 | `lemma` | [small_neg_pos_neg_mul](../../../../Combinatorics/SmallTriplingNamespacedPublic.lean/declarations/small-neg-pos-neg-mul.md) | 128 | `result-track:5370acaaf1cacffa78160cbbaeec2c4bca33294fadd65a495e809e6e4fabf4e6` |
-| 8 | `lemma` | [small_alternating_pow_of_small_tripling](../../../../Combinatorics/SmallTriplingNamespacedPublic.lean/declarations/small-alternating-pow-of-small-tripling.md) | 145 | `result-track:4904989a1486dea668eb93ec0ef9dc6abb4eeb9763ed35614d4138f6567a3a42` |
-| 9 | `lemma` | [small_pow_of_small_tripling](../../../../Combinatorics/SmallTriplingNamespacedPublic.lean/declarations/small-pow-of-small-tripling.md) | 185 | `result-track:cc50a96864953782f67cb66b5899da09625dbd53eaa1f4b66e6596ce7d764664` |
+| 1 | `lemma` | [inductive_claim_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SmallTriplingNamespacedPublic.lean/declarations/inductive-claim-mul.md) | 46 | `result-track:afa13f9933e4fdf58c962242e12b9a00c4c4e78620dbc0fc36a61d407cd7cd4a` |
+| 2 | `lemma` | [small_neg_pos_pos_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SmallTriplingNamespacedPublic.lean/declarations/small-neg-pos-pos-mul.md) | 79 | `result-track:f152e2e1956b0d5e376504de4f4e98bb744d5adba87dd4367a1c3a4625ada8a1` |
+| 3 | `lemma` | [small_neg_neg_pos_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SmallTriplingNamespacedPublic.lean/declarations/small-neg-neg-pos-mul.md) | 97 | `result-track:f014318d00c9fa4f7af5b4fd4170afa8154bb77de7e7eee7ceaa5beb04757cfe` |
+| 4 | `lemma` | [small_pos_neg_neg_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SmallTriplingNamespacedPublic.lean/declarations/small-pos-neg-neg-mul.md) | 102 | `result-track:2dcaf961293b8ffd4173a80e350454987d885bcc599dea18565a7bbd89032ace` |
+| 5 | `lemma` | [small_pos_pos_neg_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SmallTriplingNamespacedPublic.lean/declarations/small-pos-pos-neg-mul.md) | 106 | `result-track:8ccf5ab75824219fae9d8c344e1da1a4cbe962e53f8c9a4887200610af62a598` |
+| 6 | `lemma` | [small_pos_neg_pos_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SmallTriplingNamespacedPublic.lean/declarations/small-pos-neg-pos-mul.md) | 111 | `result-track:ce02566ed4157099f0cb29000afe14d61ce027c575e5bb23e0d81ebda9552c19` |
+| 7 | `lemma` | [small_neg_pos_neg_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SmallTriplingNamespacedPublic.lean/declarations/small-neg-pos-neg-mul.md) | 128 | `result-track:5370acaaf1cacffa78160cbbaeec2c4bca33294fadd65a495e809e6e4fabf4e6` |
+| 8 | `lemma` | [small_alternating_pow_of_small_tripling](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SmallTriplingNamespacedPublic.lean/declarations/small-alternating-pow-of-small-tripling.md) | 145 | `result-track:4904989a1486dea668eb93ec0ef9dc6abb4eeb9763ed35614d4138f6567a3a42` |
+| 9 | `lemma` | [small_pow_of_small_tripling](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SmallTriplingNamespacedPublic.lean/declarations/small-pow-of-small-tripling.md) | 185 | `result-track:cc50a96864953782f67cb66b5899da09625dbd53eaa1f4b66e6596ce7d764664` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

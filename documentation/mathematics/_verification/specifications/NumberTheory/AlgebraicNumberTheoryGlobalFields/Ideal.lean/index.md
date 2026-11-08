@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/Ideal.lean/index.md) · [Full source](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/Ideal.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/Ideal.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/Ideal.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [tendsto_norm_le_and_mk_eq_div_atTop_aux₁](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/Ideal.lean/declarations/tendsto-norm-le-and-mk-eq-div-attop-aux.md) | 37 | `result-track:c7449cee80ebd02458aeebe33202253cfd73ee4df7a9dc3214d90369e277f790` |
-| 2 | `def` | [tendsto_norm_le_and_mk_eq_div_atTop_aux₂](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/Ideal.lean/declarations/tendsto-norm-le-and-mk-eq-div-attop-aux-source-edition-2.md) | 52 | `declaration-track:e0273c1a2c1d5bc2f8010dc41bd48cf0fbea28c64a974e41bb7e60559430cde0` |
-| 3 | `theorem` | [tendsto_norm_le_and_mk_eq_div_atTop](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/Ideal.lean/declarations/tendsto-norm-le-and-mk-eq-div-attop.md) | 73 | `result-track:2c986c38310c7698fe09976f24f69f412839b2bb6a4935734a26f57451c0fcfb` |
-| 4 | `theorem` | [tendsto_norm_le_div_atTop₀](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/Ideal.lean/declarations/tendsto-norm-le-div-attop.md) | 121 | `result-track:611da592ae923ad35bf68709a550c5e771952cbcd68b15d245acbc1d7a622571` |
-| 5 | `theorem` | [tendsto_norm_le_div_atTop](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/Ideal.lean/declarations/tendsto-norm-le-div-attop-source-edition-2.md) | 144 | `result-track:eb6659642dd8b3294533b2f8a9670492b059b7604d2cba43e2ae3f0fe40c1551` |
+| 1 | `theorem` | [tendsto_norm_le_and_mk_eq_div_atTop_aux₁](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/Ideal.lean/declarations/tendsto-norm-le-and-mk-eq-div-attop-aux.md) | 37 | `result-track:c7449cee80ebd02458aeebe33202253cfd73ee4df7a9dc3214d90369e277f790` |
+| 2 | `def` | [tendsto_norm_le_and_mk_eq_div_atTop_aux₂](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/Ideal.lean/declarations/tendsto-norm-le-and-mk-eq-div-attop-aux-source-edition-2.md) | 52 | `declaration-track:e0273c1a2c1d5bc2f8010dc41bd48cf0fbea28c64a974e41bb7e60559430cde0` |
+| 3 | `theorem` | [tendsto_norm_le_and_mk_eq_div_atTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/Ideal.lean/declarations/tendsto-norm-le-and-mk-eq-div-attop.md) | 73 | `result-track:2c986c38310c7698fe09976f24f69f412839b2bb6a4935734a26f57451c0fcfb` |
+| 4 | `theorem` | [tendsto_norm_le_div_atTop₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/Ideal.lean/declarations/tendsto-norm-le-div-attop.md) | 121 | `result-track:611da592ae923ad35bf68709a550c5e771952cbcd68b15d245acbc1d7a622571` |
+| 5 | `theorem` | [tendsto_norm_le_div_atTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/Ideal.lean/declarations/tendsto-norm-le-div-attop-source-edition-2.md) | 144 | `result-track:eb6659642dd8b3294533b2f8a9670492b059b7604d2cba43e2ae3f0fe40c1551` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

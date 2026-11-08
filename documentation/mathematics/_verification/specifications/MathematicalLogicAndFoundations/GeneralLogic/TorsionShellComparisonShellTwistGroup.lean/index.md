@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TorsionShellComparisonShellTwistGroup.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TorsionShellComparisonShellTwistGroup.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TorsionShellComparisonShellTwistGroup.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TorsionShellComparisonShellTwistGroup.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [ShellTwistGroup](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TorsionShellComparisonShellTwistGroup.lean/declarations/shelltwistgroup.md) | 22 | `declaration-track:f2f46a0e7a608b1090f91a79c8b66c43fed186ae32e1a1bfe6fa5096a8575954` |
-| 2 | `structure` | [EllipticToShellTorsion](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TorsionShellComparisonShellTwistGroup.lean/declarations/elliptictoshelltorsion.md) | 26 | `declaration-track:02d8531f163e7948d931a86ee92523a93d5cb3007474d67e12be437d63b3331f` |
-| 3 | `def` | [UsesTorsionClass](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TorsionShellComparisonShellTwistGroup.lean/declarations/usestorsionclass.md) | 40 | `declaration-track:fe9033174359c15bbe679974bfe6fa881812c904f30727437f3a532f206deee1` |
-| 4 | `theorem` | [shell_twist_of_zero_is_identity](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TorsionShellComparisonShellTwistGroup.lean/declarations/shell-twist-of-zero-is-identity.md) | 49 | `result-track:147959f736f3c5fea7d7a435ba327f00b911b3abe18c12ebe2e5c2633041b253` |
-| 5 | `theorem` | [shell_twist_respects_add](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TorsionShellComparisonShellTwistGroup.lean/declarations/shell-twist-respects-add.md) | 59 | `result-track:8e15a74a68f810a6299ceb1f195cca517832b76ab49e73f3751fccf3b45a4a42` |
+| 1 | `abbrev` | [ShellTwistGroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TorsionShellComparisonShellTwistGroup.lean/declarations/shelltwistgroup.md) | 22 | `declaration-track:f2f46a0e7a608b1090f91a79c8b66c43fed186ae32e1a1bfe6fa5096a8575954` |
+| 2 | `structure` | [EllipticToShellTorsion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TorsionShellComparisonShellTwistGroup.lean/declarations/elliptictoshelltorsion.md) | 26 | `declaration-track:02d8531f163e7948d931a86ee92523a93d5cb3007474d67e12be437d63b3331f` |
+| 3 | `def` | [UsesTorsionClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TorsionShellComparisonShellTwistGroup.lean/declarations/usestorsionclass.md) | 40 | `declaration-track:fe9033174359c15bbe679974bfe6fa881812c904f30727437f3a532f206deee1` |
+| 4 | `theorem` | [shell_twist_of_zero_is_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TorsionShellComparisonShellTwistGroup.lean/declarations/shell-twist-of-zero-is-identity.md) | 49 | `result-track:147959f736f3c5fea7d7a435ba327f00b911b3abe18c12ebe2e5c2633041b253` |
+| 5 | `theorem` | [shell_twist_respects_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TorsionShellComparisonShellTwistGroup.lean/declarations/shell-twist-respects-add.md) | 59 | `result-track:8e15a74a68f810a6299ceb1f195cca517832b76ab49e73f3751fccf3b45a4a42` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

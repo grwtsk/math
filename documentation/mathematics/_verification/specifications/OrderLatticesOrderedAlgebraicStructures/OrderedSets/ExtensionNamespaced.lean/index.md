@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/ExtensionNamespaced.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/ExtensionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/ExtensionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/ExtensionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [MonotoneOn.exists_monotone_extension](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/ExtensionNamespaced.lean/declarations/monotoneon-exists-monotone-extension.md) | 31 | `result-track:4a55f30adf6fbc5581efaae0da7900611f360e1fe1344db24d1a4d973eb8a14a` |
-| 2 | `theorem` | [AntitoneOn.exists_antitone_extension](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/ExtensionNamespaced.lean/declarations/antitoneon-exists-antitone-extension.md) | 58 | `result-track:995dbe9cfaba8fbe8c13734bad33a7903a387473060650c51055c9f5681253f7` |
+| 1 | `theorem` | [MonotoneOn.exists_monotone_extension](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/ExtensionNamespaced.lean/declarations/monotoneon-exists-monotone-extension.md) | 31 | `result-track:4a55f30adf6fbc5581efaae0da7900611f360e1fe1344db24d1a4d973eb8a14a` |
+| 2 | `theorem` | [AntitoneOn.exists_antitone_extension](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/ExtensionNamespaced.lean/declarations/antitoneon-exists-antitone-extension.md) | 58 | `result-track:995dbe9cfaba8fbe8c13734bad33a7903a387473060650c51055c9f5681253f7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

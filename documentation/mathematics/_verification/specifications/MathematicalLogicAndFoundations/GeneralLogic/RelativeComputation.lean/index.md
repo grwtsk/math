@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RelativeComputation.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RelativeComputation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RelativeComputation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RelativeComputation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [every_function_is_computable_relative_to_its_evaluation_oracle](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RelativeComputation.lean/declarations/every-function-is-computable-relative-to-its-evaluation-oracle.md) | 16 | `result-track:56a58c8b895bc831ea9700fc47e0cc45dbcd571a0d696c3d3ec499a7973a99c2` |
+| 1 | `theorem` | [every_function_is_computable_relative_to_its_evaluation_oracle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RelativeComputation.lean/declarations/every-function-is-computable-relative-to-its-evaluation-oracle.md) | 16 | `result-track:56a58c8b895bc831ea9700fc47e0cc45dbcd571a0d696c3d3ec499a7973a99c2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

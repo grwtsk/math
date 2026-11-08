@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachCompositeCoefficientCore.lean/index.md) · [Full source](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachCompositeCoefficientCore.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachCompositeCoefficientCore.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachCompositeCoefficientCore.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,11 +46,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Interfaces.GoldbachFejerCore`](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachFejerCore.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Primes.GoldbachCompositeRamanujan`](../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/GoldbachCompositeRamanujan.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.NumberTheory.Primes.GoldbachCompositeCoefficient`](../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/GoldbachCompositeCoefficient.lean/index.md) — import line 6; pinned internal source present.
-- [`GRWTSK.NumberTheory.Primes.GoldbachPrimorialEulerTail`](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachPrimorialEulerTail.lean/index.md) — import line 7; pinned internal source present.
-- [`GRWTSK.NumberTheory.Primes.Checks.GoldbachCompositeCoefficientControls`](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachCompositeCoefficientControls.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.Interfaces.GoldbachFejerCore`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachFejerCore.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Primes.GoldbachCompositeRamanujan`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/GoldbachCompositeRamanujan.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Primes.GoldbachCompositeCoefficient`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/GoldbachCompositeCoefficient.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.NumberTheory.Primes.GoldbachPrimorialEulerTail`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachPrimorialEulerTail.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Primes.Checks.GoldbachCompositeCoefficientControls`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachCompositeCoefficientControls.lean/index.md) — import line 8; pinned internal source present.
 
 ## Top results and three-degree verification metric
 

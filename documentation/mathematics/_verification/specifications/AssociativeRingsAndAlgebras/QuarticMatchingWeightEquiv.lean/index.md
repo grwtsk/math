@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/QuarticMatchingWeightEquiv.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/QuarticMatchingWeightEquiv.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticMatchingWeightEquiv.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticMatchingWeightEquiv.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.QuarticMatchingAdjacency`](../../../../CommutativeAlgebra/QuarticMatchingAdjacency.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Algebra.QuarticMatchingAdjacency`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticMatchingAdjacency.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [AdjacencyRange](../../../../AssociativeRingsAndAlgebras/QuarticMatchingWeightEquiv.lean/declarations/adjacencyrange.md) | 27 | `declaration-track:89d5c5ecda621fb6f5e0d143879799e755c3694f0f4c1c94a1b141f55a6e0bf7` |
-| 2 | `def` | [matchingEquivAdjacencyRange](../../../../AssociativeRingsAndAlgebras/QuarticMatchingWeightEquiv.lean/declarations/matchingequivadjacencyrange.md) | 32 | `declaration-track:417e14cbe99f0115f82f7216ce6c9ea5956e7ded649871b16b0e48aac9ae0bd6` |
-| 3 | `def` | [quarticMatchingEquivAdjacencyRange](../../../../AssociativeRingsAndAlgebras/QuarticMatchingWeightEquiv.lean/declarations/quarticmatchingequivadjacencyrange.md) | 49 | `declaration-track:72bc81360d29e6c3a5ec09d4f54084d51b4c66fe3b976e04b6ad80797f24d7ba` |
-| 4 | `def` | [adjacencyRangePerm](../../../../AssociativeRingsAndAlgebras/QuarticMatchingWeightEquiv.lean/declarations/adjacencyrangeperm.md) | 59 | `declaration-track:fcd6e510f38b696218eb77fcc109100741f3210a4c5ab7dfa12c327d5d7be41a` |
-| 5 | `theorem` | [adjacencyRangePerm_apply](../../../../AssociativeRingsAndAlgebras/QuarticMatchingWeightEquiv.lean/declarations/adjacencyrangeperm-apply.md) | 65 | `result-track:8ea408547e9e1207d54e124cabf620f9524f222da347658f9d6d2d1337914a6e` |
+| 1 | `def` | [AdjacencyRange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticMatchingWeightEquiv.lean/declarations/adjacencyrange.md) | 27 | `declaration-track:89d5c5ecda621fb6f5e0d143879799e755c3694f0f4c1c94a1b141f55a6e0bf7` |
+| 2 | `def` | [matchingEquivAdjacencyRange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticMatchingWeightEquiv.lean/declarations/matchingequivadjacencyrange.md) | 32 | `declaration-track:417e14cbe99f0115f82f7216ce6c9ea5956e7ded649871b16b0e48aac9ae0bd6` |
+| 3 | `def` | [quarticMatchingEquivAdjacencyRange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticMatchingWeightEquiv.lean/declarations/quarticmatchingequivadjacencyrange.md) | 49 | `declaration-track:72bc81360d29e6c3a5ec09d4f54084d51b4c66fe3b976e04b6ad80797f24d7ba` |
+| 4 | `def` | [adjacencyRangePerm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticMatchingWeightEquiv.lean/declarations/adjacencyrangeperm.md) | 59 | `declaration-track:fcd6e510f38b696218eb77fcc109100741f3210a4c5ab7dfa12c327d5d7be41a` |
+| 5 | `theorem` | [adjacencyRangePerm_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticMatchingWeightEquiv.lean/declarations/adjacencyrangeperm-apply.md) | 65 | `result-track:8ea408547e9e1207d54e124cabf620f9524f222da347658f9d6d2d1337914a6e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

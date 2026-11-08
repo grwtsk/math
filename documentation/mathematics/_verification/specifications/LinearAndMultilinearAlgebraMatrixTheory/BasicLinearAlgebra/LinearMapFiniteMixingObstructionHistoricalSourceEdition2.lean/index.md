@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearMapFiniteMixingObstructionHistoricalSourceEdition2.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearMapFiniteMixingObstructionHistoricalSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearMapFiniteMixingObstructionHistoricalSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearMapFiniteMixingObstructionHistoricalSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [synthesis_eq_of_basis_realization](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearMapFiniteMixingObstructionHistoricalSourceEdition2.lean/declarations/synthesis-eq-of-basis-realization.md) | 34 | `result-track:9a2f042a66c5c12d948eced5b3ffa20ec94655cb05655d61af184d9f71b00e88` |
-| 2 | `theorem` | [independent_linear_mix_requires_independent_input](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearMapFiniteMixingObstructionHistoricalSourceEdition2.lean/declarations/independent-linear-mix-requires-independent-input.md) | 50 | `result-track:4229f41feca5a05fbd6f142820dcbf58ab22609b962563bcf40f77d3ad9e68ff` |
-| 3 | `theorem` | [zero_coordinate_no_independent_linear_mix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearMapFiniteMixingObstructionHistoricalSourceEdition2.lean/declarations/zero-coordinate-no-independent-linear-mix.md) | 75 | `result-track:d00f6a7a6c25ad389c7fe8de1b94e667a8064bd4bf37a68ba8d9e53469fcc2a4` |
+| 1 | `theorem` | [synthesis_eq_of_basis_realization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearMapFiniteMixingObstructionHistoricalSourceEdition2.lean/declarations/synthesis-eq-of-basis-realization.md) | 34 | `result-track:9a2f042a66c5c12d948eced5b3ffa20ec94655cb05655d61af184d9f71b00e88` |
+| 2 | `theorem` | [independent_linear_mix_requires_independent_input](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearMapFiniteMixingObstructionHistoricalSourceEdition2.lean/declarations/independent-linear-mix-requires-independent-input.md) | 50 | `result-track:4229f41feca5a05fbd6f142820dcbf58ab22609b962563bcf40f77d3ad9e68ff` |
+| 3 | `theorem` | [zero_coordinate_no_independent_linear_mix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearMapFiniteMixingObstructionHistoricalSourceEdition2.lean/declarations/zero-coordinate-no-independent-linear-mix.md) | 75 | `result-track:d00f6a7a6c25ad389c7fe8de1b94e667a8064bd4bf37a68ba8d9e53469fcc2a4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

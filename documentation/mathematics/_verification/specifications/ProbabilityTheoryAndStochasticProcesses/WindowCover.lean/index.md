@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/WindowCover.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/WindowCover.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/WindowCover.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/WindowCover.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,16 +59,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [GlobalWindowSystem](../../../../ProbabilityTheoryAndStochasticProcesses/WindowCover.lean/declarations/globalwindowsystem.md) | 22 | `declaration-track:5c89ddc77890617e1804e3a217016a5f4ce491c4324cc5365b83fd10d281bb65` |
-| 2 | `def` | [kappa](../../../../ProbabilityTheoryAndStochasticProcesses/WindowCover.lean/declarations/kappa.md) | 48 | `declaration-track:21ff388ff3523bcc7d2d53a39a1b191dc48e60d051b47c795ec64546e1128104` |
-| 3 | `theorem` | [mem_kappa_iff](../../../../ProbabilityTheoryAndStochasticProcesses/WindowCover.lean/declarations/mem-kappa-iff.md) | 52 | `result-track:88a27f9d37744de1700feeb18f700678dbf893cb9cee3c3b3d8e41e42c417bae` |
-| 4 | `theorem` | [kappa_query_order_independent](../../../../ProbabilityTheoryAndStochasticProcesses/WindowCover.lean/declarations/kappa-query-order-independent.md) | 63 | `result-track:dbf993da06a8f5ef84bec44f7a2cbbe61c7519a3f3b9eb4650861437e3b0acdc` |
-| 5 | `def` | [denominator](../../../../ProbabilityTheoryAndStochasticProcesses/WindowCover.lean/declarations/denominator.md) | 69 | `declaration-track:4e490806caec21ab9ed0a6ca3188e61f94415e1c0723e983d8dc5e889645a760` |
-| 6 | `theorem` | [denominator_pos](../../../../ProbabilityTheoryAndStochasticProcesses/WindowCover.lean/declarations/denominator-pos.md) | 73 | `result-track:714124cac4ab2b8427358b689f94a05579f714c673559892c3a25787a03d2e42` |
-| 7 | `theorem` | [denominator_ne_zero](../../../../ProbabilityTheoryAndStochasticProcesses/WindowCover.lean/declarations/denominator-ne-zero.md) | 78 | `result-track:12e76be5fb0f80641ec0709e81b61d1d082330243faad27a95ec15db5bfdc574` |
-| 8 | `theorem` | [weight_eq_zero_outside](../../../../ProbabilityTheoryAndStochasticProcesses/WindowCover.lean/declarations/weight-eq-zero-outside.md) | 82 | `result-track:f01f2f309a66f6cea5fe9442ac2caa6cf25c275cf695e39c38fee79b2a373dc8` |
-| 9 | `structure` | [CoverageObstruction](../../../../ProbabilityTheoryAndStochasticProcesses/WindowCover.lean/declarations/coverageobstruction.md) | 92 | `declaration-track:f0ab6f34eea95309f09c3e5687c442f8b550937af20f8c9926daa9dd90964548` |
-| 10 | `structure` | [FixedQueryCostBound](../../../../ProbabilityTheoryAndStochasticProcesses/WindowCover.lean/declarations/fixedquerycostbound.md) | 99 | `declaration-track:b3e800f6d9000dfc34c48b34adaca05418c0652ec0bddcc0d8500bb862f84bd7` |
+| 1 | `structure` | [GlobalWindowSystem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/WindowCover.lean/declarations/globalwindowsystem.md) | 22 | `declaration-track:5c89ddc77890617e1804e3a217016a5f4ce491c4324cc5365b83fd10d281bb65` |
+| 2 | `def` | [kappa](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/WindowCover.lean/declarations/kappa.md) | 48 | `declaration-track:21ff388ff3523bcc7d2d53a39a1b191dc48e60d051b47c795ec64546e1128104` |
+| 3 | `theorem` | [mem_kappa_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/WindowCover.lean/declarations/mem-kappa-iff.md) | 52 | `result-track:88a27f9d37744de1700feeb18f700678dbf893cb9cee3c3b3d8e41e42c417bae` |
+| 4 | `theorem` | [kappa_query_order_independent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/WindowCover.lean/declarations/kappa-query-order-independent.md) | 63 | `result-track:dbf993da06a8f5ef84bec44f7a2cbbe61c7519a3f3b9eb4650861437e3b0acdc` |
+| 5 | `def` | [denominator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/WindowCover.lean/declarations/denominator.md) | 69 | `declaration-track:4e490806caec21ab9ed0a6ca3188e61f94415e1c0723e983d8dc5e889645a760` |
+| 6 | `theorem` | [denominator_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/WindowCover.lean/declarations/denominator-pos.md) | 73 | `result-track:714124cac4ab2b8427358b689f94a05579f714c673559892c3a25787a03d2e42` |
+| 7 | `theorem` | [denominator_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/WindowCover.lean/declarations/denominator-ne-zero.md) | 78 | `result-track:12e76be5fb0f80641ec0709e81b61d1d082330243faad27a95ec15db5bfdc574` |
+| 8 | `theorem` | [weight_eq_zero_outside](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/WindowCover.lean/declarations/weight-eq-zero-outside.md) | 82 | `result-track:f01f2f309a66f6cea5fe9442ac2caa6cf25c275cf695e39c38fee79b2a373dc8` |
+| 9 | `structure` | [CoverageObstruction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/WindowCover.lean/declarations/coverageobstruction.md) | 92 | `declaration-track:f0ab6f34eea95309f09c3e5687c442f8b550937af20f8c9926daa9dd90964548` |
+| 10 | `structure` | [FixedQueryCostBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/WindowCover.lean/declarations/fixedquerycostbound.md) | 99 | `declaration-track:b3e800f6d9000dfc34c48b34adaca05418c0652ec0bddcc0d8500bb862f84bd7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DerivesTriangulatedNamespacedPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DerivesTriangulatedNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DerivesTriangulatedNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DerivesTriangulatedNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [isTriangulated_of_isRightDerivedFunctor](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DerivesTriangulatedNamespacedPublic.lean/declarations/istriangulated-of-isrightderivedfunctor.md) | 59 | `result-track:79837b3a8c0c356eb5f7a38dc92ceebf7015eb74ba2e29ebcc8d9adb3217aaf7` |
-| 2 | `lemma` | [isTriangulated_of_isLeftDerivedFunctor](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DerivesTriangulatedNamespacedPublic.lean/declarations/istriangulated-of-isleftderivedfunctor.md) | 76 | `result-track:6c58606ef800fa00338ecf30fd0577fdac45928ac0f9cee10a98bf266e09c737` |
+| 1 | `lemma` | [isTriangulated_of_isRightDerivedFunctor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DerivesTriangulatedNamespacedPublic.lean/declarations/istriangulated-of-isrightderivedfunctor.md) | 59 | `result-track:79837b3a8c0c356eb5f7a38dc92ceebf7015eb74ba2e29ebcc8d9adb3217aaf7` |
+| 2 | `lemma` | [isTriangulated_of_isLeftDerivedFunctor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DerivesTriangulatedNamespacedPublic.lean/declarations/istriangulated-of-isleftderivedfunctor.md) | 76 | `result-track:6c58606ef800fa00338ecf30fd0577fdac45928ac0f9cee10a98bf266e09c737` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

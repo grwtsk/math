@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/TermCongr2Namespaced.lean/index.md) · [Full source](../../../../Combinatorics/TermCongr2Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TermCongr2Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TermCongr2Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../Combinatorics/TermCongr2Namespaced.lean/declarations/example-source-edition-2.md) | 23 | `declaration-track:773cdf48d4b2762cf875003de15f7a00bfbb516cb300de8a53e8ae8aec3ae665` |
-| 2 | `example` | [(anonymous)](../../../../Combinatorics/TermCongr2Namespaced.lean/declarations/example.md) | 26 | `declaration-track:3eb1c46eb245f54fdf21e3547c38314746bec0b6fa3de7604e5cd92f35945b9d` |
-| 3 | `example` | [(anonymous)](../../../../Combinatorics/TermCongr2Namespaced.lean/declarations/example-source-edition-3.md) | 29 | `declaration-track:ab847b0e2b7648cf0960de6d75d21d769aecb06a4de6638aa1942249b176907f` |
-| 4 | `example` | [(anonymous)](../../../../Combinatorics/TermCongr2Namespaced.lean/declarations/example-source-edition-4.md) | 36 | `declaration-track:c322cb4177094a45d98e69059a8473186fb67afeb8de1afa1bdf3cea5ecfa74d` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TermCongr2Namespaced.lean/declarations/example-source-edition-2.md) | 23 | `declaration-track:773cdf48d4b2762cf875003de15f7a00bfbb516cb300de8a53e8ae8aec3ae665` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TermCongr2Namespaced.lean/declarations/example.md) | 26 | `declaration-track:3eb1c46eb245f54fdf21e3547c38314746bec0b6fa3de7604e5cd92f35945b9d` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TermCongr2Namespaced.lean/declarations/example-source-edition-3.md) | 29 | `declaration-track:ab847b0e2b7648cf0960de6d75d21d769aecb06a4de6638aa1942249b176907f` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TermCongr2Namespaced.lean/declarations/example-source-edition-4.md) | 36 | `declaration-track:c322cb4177094a45d98e69059a8473186fb67afeb8de1afa1bdf3cea5ecfa74d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

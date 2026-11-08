@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ZeroExtendNamespacedPublicBlastZeroExtend.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ZeroExtendNamespacedPublicBlastZeroExtend.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ZeroExtendNamespacedPublicBlastZeroExtend.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ZeroExtendNamespacedPublicBlastZeroExtend.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [blastZeroExtend](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ZeroExtendNamespacedPublicBlastZeroExtend.lean/declarations/blastzeroextend.md) | 36 | `declaration-track:09c9a7202968b3d0449fdf9642a869d49aa2030aa90dd5c7ed33d0d41a758409` |
-| 2 | `theorem` | [go_le_size](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ZeroExtendNamespacedPublicBlastZeroExtend.lean/declarations/go-le-size.md) | 59 | `result-track:23493ede3139eba3aef4b066ebf8bd428de906b2d5d07b9db9373026beda12e5` |
-| 3 | `theorem` | [go_decl_eq](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ZeroExtendNamespacedPublicBlastZeroExtend.lean/declarations/go-decl-eq.md) | 71 | `result-track:b25a5931083e3da7e66056a630d3ed14b335b1b5883de3d4e99bae72df5f8989` |
-| 4 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ZeroExtendNamespacedPublicBlastZeroExtend.lean/declarations/instance.md) | 91 | `declaration-track:d9a5c53878a9b96792fb31bb1d9616f30a6e4bb5d8ab6f8c8cc37650bae11941` |
+| 1 | `def` | [blastZeroExtend](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ZeroExtendNamespacedPublicBlastZeroExtend.lean/declarations/blastzeroextend.md) | 36 | `declaration-track:09c9a7202968b3d0449fdf9642a869d49aa2030aa90dd5c7ed33d0d41a758409` |
+| 2 | `theorem` | [go_le_size](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ZeroExtendNamespacedPublicBlastZeroExtend.lean/declarations/go-le-size.md) | 59 | `result-track:23493ede3139eba3aef4b066ebf8bd428de906b2d5d07b9db9373026beda12e5` |
+| 3 | `theorem` | [go_decl_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ZeroExtendNamespacedPublicBlastZeroExtend.lean/declarations/go-decl-eq.md) | 71 | `result-track:b25a5931083e3da7e66056a630d3ed14b335b1b5883de3d4e99bae72df5f8989` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ZeroExtendNamespacedPublicBlastZeroExtend.lean/declarations/instance.md) | 91 | `declaration-track:d9a5c53878a9b96792fb31bb1d9616f30a6e4bb5d8ab6f8c8cc37650bae11941` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

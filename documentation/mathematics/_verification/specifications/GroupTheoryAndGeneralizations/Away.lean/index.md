@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/Away.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/Away.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Away.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Away.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,23 +58,23 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [AwayMap](../../../../GroupTheoryAndGeneralizations/Away.lean/declarations/awaymap.md) | 43 | `declaration-track:1d4f48cd719d731b25f507d381c6b01bfeb532189b7fc0660b3aa525a12fc8a3` |
-| 2 | `def` | [AwayMap.invSelf](../../../../GroupTheoryAndGeneralizations/Away.lean/declarations/awaymap-invself.md) | 48 | `declaration-track:84829cfc8e24f72fe4d4dcf9cb63c8de79637b0183547027ee0a0d905c953b90` |
-| 3 | `def` | [AwayMap.lift](../../../../GroupTheoryAndGeneralizations/Away.lean/declarations/awaymap-lift-source-edition-2.md) | 53 | `declaration-track:d99a8cdbf759c96b01def4dbae600f450cf4468e491d4a0842a398f73b1ac480` |
-| 4 | `theorem` | [AwayMap.lift_eq](../../../../GroupTheoryAndGeneralizations/Away.lean/declarations/awaymap-lift-eq-source-edition-2.md) | 61 | `result-track:92bfcca309886eacf318efb1d712fd022cf4851543e10ca3756e34991db67dff` |
-| 5 | `theorem` | [AwayMap.lift_comp](../../../../GroupTheoryAndGeneralizations/Away.lean/declarations/awaymap-lift-comp-source-edition-2.md) | 65 | `result-track:bc1eac497f9b3ca9b75cdd0f62d531689740bc9d14334e5c00fdb9a49f82c91c` |
-| 6 | `def` | [awayToAwayRight](../../../../GroupTheoryAndGeneralizations/Away.lean/declarations/awaytoawayright-source-edition-2.md) | 70 | `declaration-track:d8ac105207d1032b100aa098c81e6811d242f0b90aef77aa0c8e0b062f43dea2` |
-| 7 | `def` | [AwayMap.negSelf](../../../../GroupTheoryAndGeneralizations/Away.lean/declarations/awaymap-negself.md) | 92 | `declaration-track:2227604cba67b88734a32a7145248100c174dcfea72f0e15641e575294a84a0c` |
-| 8 | `def` | [AwayMap.lift](../../../../GroupTheoryAndGeneralizations/Away.lean/declarations/awaymap-lift.md) | 98 | `declaration-track:37c65a06ebbc7c24904b6e3adb5d6f9cd0ee1bd856084e11eea9fb12014e0288` |
-| 9 | `theorem` | [AwayMap.lift_eq](../../../../GroupTheoryAndGeneralizations/Away.lean/declarations/awaymap-lift-eq.md) | 108 | `result-track:8ca5876d845984599c699f8e488bc336a108078bf94b8497c66e7b25abe90fe1` |
-| 10 | `theorem` | [AwayMap.lift_comp](../../../../GroupTheoryAndGeneralizations/Away.lean/declarations/awaymap-lift-comp.md) | 112 | `result-track:b439f54f51db9ea809c47798f0ea62d8b157f1bee897d9d7c37ba755fe0778d8` |
-| 11 | `def` | [awayToAwayRight](../../../../GroupTheoryAndGeneralizations/Away.lean/declarations/awaytoawayright.md) | 117 | `declaration-track:187062224efd6eb74f32ac116b8590fa1d501145d02c1c9c450026f2a98ef867` |
-| 12 | `abbrev` | [Away](../../../../GroupTheoryAndGeneralizations/Away.lean/declarations/away.md) | 138 | `declaration-track:b4758aea213775c688cf32ca79081a8a261ede4f5789b0baf09bb4b907697f74` |
-| 13 | `def` | [Away.invSelf](../../../../GroupTheoryAndGeneralizations/Away.lean/declarations/away-invself.md) | 146 | `declaration-track:cb9a6bbdedfbd86b60d2611ddc0561458c76dbd194209351c59cadced938703e` |
-| 14 | `class` | [of](../../../../GroupTheoryAndGeneralizations/Away.lean/declarations/of.md) | 153 | `declaration-track:0265c767c4e6854d24aabfb0a5d6f810ba704298a3871791f829df47a3803b73` |
-| 15 | `abbrev` | [Away.monoidOf](../../../../GroupTheoryAndGeneralizations/Away.lean/declarations/away-monoidof.md) | 154 | `declaration-track:dd9d7435b60097acadbc46e8bdad05f406514b84e16d7ad6755dd2cc74bdf79d` |
-| 16 | `theorem` | [Away.mk_eq_monoidOf_mk'](../../../../GroupTheoryAndGeneralizations/Away.lean/declarations/away-mk-eq-monoidof-mk.md) | 158 | `result-track:082dd2d980e91101629c9664dd108fc9841fcd59d8c57dc8098eb4539a6dfbbe` |
-| 17 | `def` | [Away.mulEquivOfQuotient](../../../../GroupTheoryAndGeneralizations/Away.lean/declarations/away-mulequivofquotient.md) | 166 | `declaration-track:ac8c330cc92690a89b146b8bf1911978eefa747e4a552008c0aeeed27aaad029` |
+| 1 | `abbrev` | [AwayMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Away.lean/declarations/awaymap.md) | 43 | `declaration-track:1d4f48cd719d731b25f507d381c6b01bfeb532189b7fc0660b3aa525a12fc8a3` |
+| 2 | `def` | [AwayMap.invSelf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Away.lean/declarations/awaymap-invself.md) | 48 | `declaration-track:84829cfc8e24f72fe4d4dcf9cb63c8de79637b0183547027ee0a0d905c953b90` |
+| 3 | `def` | [AwayMap.lift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Away.lean/declarations/awaymap-lift-source-edition-2.md) | 53 | `declaration-track:d99a8cdbf759c96b01def4dbae600f450cf4468e491d4a0842a398f73b1ac480` |
+| 4 | `theorem` | [AwayMap.lift_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Away.lean/declarations/awaymap-lift-eq-source-edition-2.md) | 61 | `result-track:92bfcca309886eacf318efb1d712fd022cf4851543e10ca3756e34991db67dff` |
+| 5 | `theorem` | [AwayMap.lift_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Away.lean/declarations/awaymap-lift-comp-source-edition-2.md) | 65 | `result-track:bc1eac497f9b3ca9b75cdd0f62d531689740bc9d14334e5c00fdb9a49f82c91c` |
+| 6 | `def` | [awayToAwayRight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Away.lean/declarations/awaytoawayright-source-edition-2.md) | 70 | `declaration-track:d8ac105207d1032b100aa098c81e6811d242f0b90aef77aa0c8e0b062f43dea2` |
+| 7 | `def` | [AwayMap.negSelf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Away.lean/declarations/awaymap-negself.md) | 92 | `declaration-track:2227604cba67b88734a32a7145248100c174dcfea72f0e15641e575294a84a0c` |
+| 8 | `def` | [AwayMap.lift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Away.lean/declarations/awaymap-lift.md) | 98 | `declaration-track:37c65a06ebbc7c24904b6e3adb5d6f9cd0ee1bd856084e11eea9fb12014e0288` |
+| 9 | `theorem` | [AwayMap.lift_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Away.lean/declarations/awaymap-lift-eq.md) | 108 | `result-track:8ca5876d845984599c699f8e488bc336a108078bf94b8497c66e7b25abe90fe1` |
+| 10 | `theorem` | [AwayMap.lift_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Away.lean/declarations/awaymap-lift-comp.md) | 112 | `result-track:b439f54f51db9ea809c47798f0ea62d8b157f1bee897d9d7c37ba755fe0778d8` |
+| 11 | `def` | [awayToAwayRight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Away.lean/declarations/awaytoawayright.md) | 117 | `declaration-track:187062224efd6eb74f32ac116b8590fa1d501145d02c1c9c450026f2a98ef867` |
+| 12 | `abbrev` | [Away](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Away.lean/declarations/away.md) | 138 | `declaration-track:b4758aea213775c688cf32ca79081a8a261ede4f5789b0baf09bb4b907697f74` |
+| 13 | `def` | [Away.invSelf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Away.lean/declarations/away-invself.md) | 146 | `declaration-track:cb9a6bbdedfbd86b60d2611ddc0561458c76dbd194209351c59cadced938703e` |
+| 14 | `class` | [of](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Away.lean/declarations/of.md) | 153 | `declaration-track:0265c767c4e6854d24aabfb0a5d6f810ba704298a3871791f829df47a3803b73` |
+| 15 | `abbrev` | [Away.monoidOf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Away.lean/declarations/away-monoidof.md) | 154 | `declaration-track:dd9d7435b60097acadbc46e8bdad05f406514b84e16d7ad6755dd2cc74bdf79d` |
+| 16 | `theorem` | [Away.mk_eq_monoidOf_mk'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Away.lean/declarations/away-mk-eq-monoidof-mk.md) | 158 | `result-track:082dd2d980e91101629c9664dd108fc9841fcd59d8c57dc8098eb4539a6dfbbe` |
+| 17 | `def` | [Away.mulEquivOfQuotient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Away.lean/declarations/away-mulequivofquotient.md) | 166 | `declaration-track:ac8c330cc92690a89b146b8bf1911978eefa747e4a552008c0aeeed27aaad029` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

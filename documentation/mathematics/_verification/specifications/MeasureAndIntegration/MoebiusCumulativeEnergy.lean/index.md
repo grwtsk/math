@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/MoebiusCumulativeEnergy.lean/index.md) · [Full source](../../../../MeasureAndIntegration/MoebiusCumulativeEnergy.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MoebiusCumulativeEnergy.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MoebiusCumulativeEnergy.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.InnerProductSpace.MoebiusResponseGramExpansion`](../../../../GeneralTopology/MoebiusResponseGramExpansion.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.NumberTheory.Moebius.DiagonalEnergyBound`](../../../../MeasureAndIntegration/DiagonalEnergyBound.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.Analysis.InnerProductSpace.MoebiusResponseGramExpansion`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MoebiusResponseGramExpansion.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.DiagonalEnergyBound`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DiagonalEnergyBound.lean/index.md) — import line 2; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,20 +58,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [globalPickup](../../../../MeasureAndIntegration/MoebiusCumulativeEnergy.lean/declarations/globalpickup.md) | 13 | `declaration-track:b3e59ea4eecdc96997a907c7154692115679fa135340f22a70cb4d17412bec86` |
-| 2 | `theorem` | [inventory_mono](../../../../MeasureAndIntegration/MoebiusCumulativeEnergy.lean/declarations/inventory-mono.md) | 15 | `result-track:71f885bbe7d004d15bf3453a1089e5f408de748d7a9026d129b7b9dca71eadb8` |
-| 3 | `theorem` | [pickup_cutoff_consistent](../../../../MeasureAndIntegration/MoebiusCumulativeEnergy.lean/declarations/pickup-cutoff-consistent.md) | 21 | `result-track:2fe6da3c8b15ce4ce1aea93e3786a3cb493a76bdd34fbbe5d26c636e91331e5e` |
-| 4 | `theorem` | [pickup_continuous](../../../../MeasureAndIntegration/MoebiusCumulativeEnergy.lean/declarations/pickup-continuous.md) | 34 | `result-track:f254de3ae305f9ea6e9a0cfa094308aca7e46dde72673b8d3ba9bdae066e0f38` |
-| 5 | `theorem` | [globalPickup_continuous](../../../../MeasureAndIntegration/MoebiusCumulativeEnergy.lean/declarations/globalpickup-continuous.md) | 41 | `result-track:af93463892fa510803f54a183fc5291deb93c1362e558cd43349f931975d88f2` |
-| 6 | `theorem` | [energy_eq_global_integral](../../../../MeasureAndIntegration/MoebiusCumulativeEnergy.lean/declarations/energy-eq-global-integral.md) | 48 | `result-track:8d72bd49ce7736dd998ff657e5e02d65dbca2791cc966e123ab8360273409e5d` |
-| 7 | `theorem` | [energy_common_cutoff](../../../../MeasureAndIntegration/MoebiusCumulativeEnergy.lean/declarations/energy-common-cutoff.md) | 55 | `result-track:c63aca508c2ef424af54f120c76c4f2160cefdb09aa85257ee214c5c7246cfcc` |
-| 8 | `theorem` | [energy_monotone](../../../../MeasureAndIntegration/MoebiusCumulativeEnergy.lean/declarations/energy-monotone.md) | 62 | `result-track:e5de8a93bd9fc7dd3ec2aaa0218b1b434454c399063de6caf434d64eacaa148a` |
-| 9 | `theorem` | [energy_zero](../../../../MeasureAndIntegration/MoebiusCumulativeEnergy.lean/declarations/energy-zero.md) | 68 | `result-track:b3bb8d96d590d60d5b6f481c1b674779f55b73f9a23455de323acf0f56d69f50` |
-| 10 | `def` | [windowEnergy](../../../../MeasureAndIntegration/MoebiusCumulativeEnergy.lean/declarations/windowenergy.md) | 70 | `declaration-track:8c9476385883a3f2c0944d2e21daa99112b18d5fa737ee7340acb0c647108691` |
-| 11 | `theorem` | [windowEnergy_common_cutoff](../../../../MeasureAndIntegration/MoebiusCumulativeEnergy.lean/declarations/windowenergy-common-cutoff.md) | 72 | `result-track:6cb5ffccd0e197371778573dc76e0f1ded0fd9924c5dfa25d3fa31c2936ed53f` |
-| 12 | `theorem` | [energy_successor](../../../../MeasureAndIntegration/MoebiusCumulativeEnergy.lean/declarations/energy-successor.md) | 79 | `result-track:cf3a3a693dd18bf38ab500ac9b8d164addbcd15a899edc8878550030e3037c2c` |
-| 13 | `theorem` | [fixed_window_implies_energy_polynomial](../../../../MeasureAndIntegration/MoebiusCumulativeEnergy.lean/declarations/fixed-window-implies-energy-polynomial.md) | 98 | `result-track:3d5c09d5d0200024442f5ffa61e9af7627c501a183cf000ea94ad7c0b52a9db7` |
-| 14 | `theorem` | [fixed_window_implies_literal_P04](../../../../MeasureAndIntegration/MoebiusCumulativeEnergy.lean/declarations/fixed-window-implies-literal-p04.md) | 132 | `result-track:fb92100e4035772cf5c2a1ea3f2329d4c1abc1fd1136ea70c6827d418b75806a` |
+| 1 | `def` | [globalPickup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MoebiusCumulativeEnergy.lean/declarations/globalpickup.md) | 13 | `declaration-track:b3e59ea4eecdc96997a907c7154692115679fa135340f22a70cb4d17412bec86` |
+| 2 | `theorem` | [inventory_mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MoebiusCumulativeEnergy.lean/declarations/inventory-mono.md) | 15 | `result-track:71f885bbe7d004d15bf3453a1089e5f408de748d7a9026d129b7b9dca71eadb8` |
+| 3 | `theorem` | [pickup_cutoff_consistent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MoebiusCumulativeEnergy.lean/declarations/pickup-cutoff-consistent.md) | 21 | `result-track:2fe6da3c8b15ce4ce1aea93e3786a3cb493a76bdd34fbbe5d26c636e91331e5e` |
+| 4 | `theorem` | [pickup_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MoebiusCumulativeEnergy.lean/declarations/pickup-continuous.md) | 34 | `result-track:f254de3ae305f9ea6e9a0cfa094308aca7e46dde72673b8d3ba9bdae066e0f38` |
+| 5 | `theorem` | [globalPickup_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MoebiusCumulativeEnergy.lean/declarations/globalpickup-continuous.md) | 41 | `result-track:af93463892fa510803f54a183fc5291deb93c1362e558cd43349f931975d88f2` |
+| 6 | `theorem` | [energy_eq_global_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MoebiusCumulativeEnergy.lean/declarations/energy-eq-global-integral.md) | 48 | `result-track:8d72bd49ce7736dd998ff657e5e02d65dbca2791cc966e123ab8360273409e5d` |
+| 7 | `theorem` | [energy_common_cutoff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MoebiusCumulativeEnergy.lean/declarations/energy-common-cutoff.md) | 55 | `result-track:c63aca508c2ef424af54f120c76c4f2160cefdb09aa85257ee214c5c7246cfcc` |
+| 8 | `theorem` | [energy_monotone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MoebiusCumulativeEnergy.lean/declarations/energy-monotone.md) | 62 | `result-track:e5de8a93bd9fc7dd3ec2aaa0218b1b434454c399063de6caf434d64eacaa148a` |
+| 9 | `theorem` | [energy_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MoebiusCumulativeEnergy.lean/declarations/energy-zero.md) | 68 | `result-track:b3bb8d96d590d60d5b6f481c1b674779f55b73f9a23455de323acf0f56d69f50` |
+| 10 | `def` | [windowEnergy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MoebiusCumulativeEnergy.lean/declarations/windowenergy.md) | 70 | `declaration-track:8c9476385883a3f2c0944d2e21daa99112b18d5fa737ee7340acb0c647108691` |
+| 11 | `theorem` | [windowEnergy_common_cutoff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MoebiusCumulativeEnergy.lean/declarations/windowenergy-common-cutoff.md) | 72 | `result-track:6cb5ffccd0e197371778573dc76e0f1ded0fd9924c5dfa25d3fa31c2936ed53f` |
+| 12 | `theorem` | [energy_successor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MoebiusCumulativeEnergy.lean/declarations/energy-successor.md) | 79 | `result-track:cf3a3a693dd18bf38ab500ac9b8d164addbcd15a899edc8878550030e3037c2c` |
+| 13 | `theorem` | [fixed_window_implies_energy_polynomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MoebiusCumulativeEnergy.lean/declarations/fixed-window-implies-energy-polynomial.md) | 98 | `result-track:3d5c09d5d0200024442f5ffa61e9af7627c501a183cf000ea94ad7c0b52a9db7` |
+| 14 | `theorem` | [fixed_window_implies_literal_P04](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MoebiusCumulativeEnergy.lean/declarations/fixed-window-implies-literal-p04.md) | 132 | `result-track:fb92100e4035772cf5c2a1ea3f2329d4c1abc1fd1136ea70c6827d418b75806a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

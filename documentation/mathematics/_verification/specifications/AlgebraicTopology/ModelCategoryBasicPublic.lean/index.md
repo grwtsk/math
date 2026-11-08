@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/ModelCategoryBasicPublic.lean/index.md) · [Full source](../../../../AlgebraicTopology/ModelCategoryBasicPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ModelCategoryBasicPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ModelCategoryBasicPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [ModelCategory](../../../../AlgebraicTopology/ModelCategoryBasicPublic.lean/declarations/modelcategory.md) | 43 | `declaration-track:7d2443c7787a940d55df3a0702368db09f458eae4bf813630dcd85c0c2da1be9` |
-| 2 | `instance` | [(anonymous)](../../../../AlgebraicTopology/ModelCategoryBasicPublic.lean/declarations/instance.md) | 73 | `declaration-track:01f477c09538c6063ee1232b35dac3fdd41dc02e3afc6bda276fb2a0285eaf85` |
-| 3 | `instance` | [(anonymous)](../../../../AlgebraicTopology/ModelCategoryBasicPublic.lean/declarations/instance-source-edition-2.md) | 79 | `declaration-track:4f01b9e743f27863402455a31d8efad1295f45dba413c32dae42b03f4d6fce81` |
-| 4 | `lemma` | [mk'.cm3a_aux](../../../../AlgebraicTopology/ModelCategoryBasicPublic.lean/declarations/mk-cm3a-aux.md) | 94 | `result-track:3721a9a8066bc6e39ac8bc98d6bfc679ac0cebf3c9334c91e8ff52a4d3996e16` |
-| 5 | `def` | [mk'](../../../../AlgebraicTopology/ModelCategoryBasicPublic.lean/declarations/mk.md) | 120 | `declaration-track:78c8606eecd023f713488df9baabe4bbc4842d98dbd621819067e93114b4fca4` |
+| 1 | `class` | [ModelCategory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ModelCategoryBasicPublic.lean/declarations/modelcategory.md) | 43 | `declaration-track:7d2443c7787a940d55df3a0702368db09f458eae4bf813630dcd85c0c2da1be9` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ModelCategoryBasicPublic.lean/declarations/instance.md) | 73 | `declaration-track:01f477c09538c6063ee1232b35dac3fdd41dc02e3afc6bda276fb2a0285eaf85` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ModelCategoryBasicPublic.lean/declarations/instance-source-edition-2.md) | 79 | `declaration-track:4f01b9e743f27863402455a31d8efad1295f45dba413c32dae42b03f4d6fce81` |
+| 4 | `lemma` | [mk'.cm3a_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ModelCategoryBasicPublic.lean/declarations/mk-cm3a-aux.md) | 94 | `result-track:3721a9a8066bc6e39ac8bc98d6bfc679ac0cebf3c9334c91e8ff52a4d3996e16` |
+| 5 | `def` | [mk'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ModelCategoryBasicPublic.lean/declarations/mk.md) | 120 | `declaration-track:78c8606eecd023f713488df9baabe4bbc4842d98dbd621819067e93114b4fca4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

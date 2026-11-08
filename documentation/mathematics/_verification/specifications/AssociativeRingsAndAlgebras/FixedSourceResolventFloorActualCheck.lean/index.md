@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/FixedSourceResolventFloorActualCheck.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/FixedSourceResolventFloorActualCheck.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/FixedSourceResolventFloorActualCheck.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/FixedSourceResolventFloorActualCheck.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sourceMass_kernel_overlap_le](../../../../AssociativeRingsAndAlgebras/FixedSourceResolventFloorActualCheck.lean/declarations/sourcemass-kernel-overlap-le.md) | 13 | `result-track:85639174dd202e51a87a6e2bab9df49f3fed92f1cefc2da711a3e0093145dfcd` |
-| 2 | `theorem` | [occurrence_sourceMass_floor](../../../../AssociativeRingsAndAlgebras/FixedSourceResolventFloorActualCheck.lean/declarations/occurrence-sourcemass-floor.md) | 21 | `result-track:7c709e7a56b84dedd713226d7c4e14b8f100049b673f86e07e9dde9ec1383070` |
-| 3 | `theorem` | [nontrivial_sourceMass_uniform_positive_floor](../../../../AssociativeRingsAndAlgebras/FixedSourceResolventFloorActualCheck.lean/declarations/nontrivial-sourcemass-uniform-positive-floor.md) | 29 | `result-track:55721b7c4658881e30bd554232c352091a7d7336870a2fb314b66c266668b0d8` |
-| 4 | `example` | [(anonymous)](../../../../AssociativeRingsAndAlgebras/FixedSourceResolventFloorActualCheck.lean/declarations/example.md) | 47 | `declaration-track:74fc0496b9064e7a593af934dcf56d6bf2d7c65f75cbadcc2ab66c232985141b` |
-| 5 | `example` | [(anonymous)](../../../../AssociativeRingsAndAlgebras/FixedSourceResolventFloorActualCheck.lean/declarations/example-source-edition-3.md) | 51 | `declaration-track:e3b668764b24a9586b8e6cc74ac82530152c549b2cfb157f2dc43e041b8e54f1` |
-| 6 | `example` | [(anonymous)](../../../../AssociativeRingsAndAlgebras/FixedSourceResolventFloorActualCheck.lean/declarations/example-source-edition-2.md) | 55 | `declaration-track:7d47307f7f567c89753febf7aa93cadf5eaf91f0c8cae22c05ac127c73f7d55a` |
-| 7 | `example` | [(anonymous)](../../../../AssociativeRingsAndAlgebras/FixedSourceResolventFloorActualCheck.lean/declarations/example-source-edition-4.md) | 59 | `declaration-track:f157d204b563a1421d0eeb95a919a9dda1a3d89c4bc0e8fbdd16a065515b80e9` |
+| 1 | `theorem` | [sourceMass_kernel_overlap_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/FixedSourceResolventFloorActualCheck.lean/declarations/sourcemass-kernel-overlap-le.md) | 13 | `result-track:85639174dd202e51a87a6e2bab9df49f3fed92f1cefc2da711a3e0093145dfcd` |
+| 2 | `theorem` | [occurrence_sourceMass_floor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/FixedSourceResolventFloorActualCheck.lean/declarations/occurrence-sourcemass-floor.md) | 21 | `result-track:7c709e7a56b84dedd713226d7c4e14b8f100049b673f86e07e9dde9ec1383070` |
+| 3 | `theorem` | [nontrivial_sourceMass_uniform_positive_floor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/FixedSourceResolventFloorActualCheck.lean/declarations/nontrivial-sourcemass-uniform-positive-floor.md) | 29 | `result-track:55721b7c4658881e30bd554232c352091a7d7336870a2fb314b66c266668b0d8` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/FixedSourceResolventFloorActualCheck.lean/declarations/example.md) | 47 | `declaration-track:74fc0496b9064e7a593af934dcf56d6bf2d7c65f75cbadcc2ab66c232985141b` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/FixedSourceResolventFloorActualCheck.lean/declarations/example-source-edition-3.md) | 51 | `declaration-track:e3b668764b24a9586b8e6cc74ac82530152c549b2cfb157f2dc43e041b8e54f1` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/FixedSourceResolventFloorActualCheck.lean/declarations/example-source-edition-2.md) | 55 | `declaration-track:7d47307f7f567c89753febf7aa93cadf5eaf91f0c8cae22c05ac127c73f7d55a` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/FixedSourceResolventFloorActualCheck.lean/declarations/example-source-edition-4.md) | 59 | `declaration-track:f157d204b563a1421d0eeb95a919a9dda1a3d89c4bc0e8fbdd16a065515b80e9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

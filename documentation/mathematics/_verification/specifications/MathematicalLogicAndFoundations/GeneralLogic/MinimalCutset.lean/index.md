@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MinimalCutset.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MinimalCutset.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MinimalCutset.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MinimalCutset.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [HitsEveryFrontier](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MinimalCutset.lean/declarations/hitseveryfrontier.md) | 11 | `declaration-track:a7a456e5d3410757cc16ae6669ab9988e1ac36873cff337031cb88ed84597bfb` |
-| 2 | `structure` | [MinimalCutset](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MinimalCutset.lean/declarations/minimalcutset.md) | 19 | `declaration-track:c113894bb92c9c7c2dad6cc2fede3b76c12211abac9229d2c97232da996bdd90` |
-| 3 | `theorem` | [minimalCutset_nonempty_of_nonempty_frontier](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MinimalCutset.lean/declarations/minimalcutset-nonempty-of-nonempty-frontier.md) | 29 | `result-track:fb4bab8100450ce61aa762328b8c56070d893adb1eaaa8ab770c178b4e5e4972` |
+| 1 | `def` | [HitsEveryFrontier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MinimalCutset.lean/declarations/hitseveryfrontier.md) | 11 | `declaration-track:a7a456e5d3410757cc16ae6669ab9988e1ac36873cff337031cb88ed84597bfb` |
+| 2 | `structure` | [MinimalCutset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MinimalCutset.lean/declarations/minimalcutset.md) | 19 | `declaration-track:c113894bb92c9c7c2dad6cc2fede3b76c12211abac9229d2c97232da996bdd90` |
+| 3 | `theorem` | [minimalCutset_nonempty_of_nonempty_frontier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MinimalCutset.lean/declarations/minimalcutset-nonempty-of-nonempty-frontier.md) | 29 | `result-track:fb4bab8100450ce61aa762328b8c56070d893adb1eaaa8ab770c178b4e5e4972` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

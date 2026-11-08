@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WhilePublicRepeatMEqOfMonadTail.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WhilePublicRepeatMEqOfMonadTail.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WhilePublicRepeatMEqOfMonadTail.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WhilePublicRepeatMEqOfMonadTail.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [repeatM.body_monotone_of_monadTail](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WhilePublicRepeatMEqOfMonadTail.lean/declarations/repeatm-body-monotone-of-monadtail.md) | 30 | `result-track:9b70bd45cac7d1a97f5688d988e3748b8b0dc1f664f1bbbe12567afc66dab01f` |
-| 2 | `theorem` | [repeatM_eq_of_monadTail](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WhilePublicRepeatMEqOfMonadTail.lean/declarations/repeatm-eq-of-monadtail.md) | 38 | `result-track:1b2f797976712e97093217d32e49214333e178bd9dd2ca1cf96f8817219634cc` |
-| 3 | `theorem` | [Loop.forIn_eq_of_monadTail](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WhilePublicRepeatMEqOfMonadTail.lean/declarations/loop-forin-eq-of-monadtail.md) | 47 | `result-track:6fcdc18e7d33019b63d879a7a6392bec65373fba6ef94166208bd77d98f8b4f6` |
+| 1 | `theorem` | [repeatM.body_monotone_of_monadTail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WhilePublicRepeatMEqOfMonadTail.lean/declarations/repeatm-body-monotone-of-monadtail.md) | 30 | `result-track:9b70bd45cac7d1a97f5688d988e3748b8b0dc1f664f1bbbe12567afc66dab01f` |
+| 2 | `theorem` | [repeatM_eq_of_monadTail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WhilePublicRepeatMEqOfMonadTail.lean/declarations/repeatm-eq-of-monadtail.md) | 38 | `result-track:1b2f797976712e97093217d32e49214333e178bd9dd2ca1cf96f8817219634cc` |
+| 3 | `theorem` | [Loop.forIn_eq_of_monadTail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WhilePublicRepeatMEqOfMonadTail.lean/declarations/loop-forin-eq-of-monadtail.md) | 47 | `result-track:6fcdc18e7d33019b63d879a7a6392bec65373fba6ef94166208bd77d98f8b4f6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

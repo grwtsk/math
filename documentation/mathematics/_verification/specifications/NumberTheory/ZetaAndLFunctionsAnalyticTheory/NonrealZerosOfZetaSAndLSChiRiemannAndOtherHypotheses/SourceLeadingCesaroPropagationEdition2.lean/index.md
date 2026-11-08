@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceLeadingCesaroPropagationEdition2.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceLeadingCesaroPropagationEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceLeadingCesaroPropagationEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceLeadingCesaroPropagationEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_leading_upper_of_residual_upper](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceLeadingCesaroPropagationEdition2.lean/declarations/actual-leading-upper-of-residual-upper.md) | 24 | `result-track:f4eeb52cfe2c25f090117682c9248ade38e6e271ea5bb195156ee7344486e404` |
-| 2 | `theorem` | [actual_leading_upper_of_five_cesaro](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceLeadingCesaroPropagationEdition2.lean/declarations/actual-leading-upper-of-five-cesaro.md) | 31 | `result-track:44053c08a1a700cfe65916fe09c00337b6b231f3c24df7d81185ec880400f356` |
-| 3 | `theorem` | [actual_leading_upper_of_signed_cesaro](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceLeadingCesaroPropagationEdition2.lean/declarations/actual-leading-upper-of-signed-cesaro.md) | 44 | `result-track:45f15f264157871c67f8b9ec05b4f628ebb97024397133fc88b20a0828972b97` |
+| 1 | `theorem` | [actual_leading_upper_of_residual_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceLeadingCesaroPropagationEdition2.lean/declarations/actual-leading-upper-of-residual-upper.md) | 24 | `result-track:f4eeb52cfe2c25f090117682c9248ade38e6e271ea5bb195156ee7344486e404` |
+| 2 | `theorem` | [actual_leading_upper_of_five_cesaro](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceLeadingCesaroPropagationEdition2.lean/declarations/actual-leading-upper-of-five-cesaro.md) | 31 | `result-track:44053c08a1a700cfe65916fe09c00337b6b231f3c24df7d81185ec880400f356` |
+| 3 | `theorem` | [actual_leading_upper_of_signed_cesaro](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceLeadingCesaroPropagationEdition2.lean/declarations/actual-leading-upper-of-signed-cesaro.md) | 44 | `result-track:45f15f264157871c67f8b9ec05b4f628ebb97024397133fc88b20a0828972b97` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

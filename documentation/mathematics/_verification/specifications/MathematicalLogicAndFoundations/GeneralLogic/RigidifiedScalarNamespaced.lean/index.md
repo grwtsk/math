@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RigidifiedScalarNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RigidifiedScalarNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RigidifiedScalarNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RigidifiedScalarNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [LosslessNatEncoding](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RigidifiedScalarNamespaced.lean/declarations/losslessnatencoding.md) | 23 | `declaration-track:120a12444c74ee56bb64ecf3fbf5e069f153f50e7622d5e84fce84acc83a2cf5` |
-| 2 | `theorem` | [losslessNatEncoding_injective](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RigidifiedScalarNamespaced.lean/declarations/losslessnatencoding-injective.md) | 28 | `result-track:75af64fd87a087e779f331fbb55d5741cbaad446c9f36a1a968c626ec8a512d9` |
-| 3 | `structure` | [RigidifiedScalarInput](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RigidifiedScalarNamespaced.lean/declarations/rigidifiedscalarinput.md) | 41 | `declaration-track:6b86f571c9553c803aae4ad91cf7a4f32492ce6919f077133fa3bbc531ff58a1` |
-| 4 | `def` | [rigidifiedScalar](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RigidifiedScalarNamespaced.lean/declarations/rigidifiedscalar.md) | 48 | `declaration-track:037e79a2982a7673ca47026cb7083acebc341084eb4904159160a366ed289585` |
-| 5 | `theorem` | [rigidifiedScalar_exact](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RigidifiedScalarNamespaced.lean/declarations/rigidifiedscalar-exact.md) | 53 | `result-track:1d5224f33d750a8f7691520ec8cb5144185f301ca2580d06bf183173acb916e2` |
-| 6 | `structure` | [ExactProjectionEvaluator](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RigidifiedScalarNamespaced.lean/declarations/exactprojectionevaluator.md) | 64 | `declaration-track:9026cdcbb9c65d87cd05e08d3b0908d0944766ba0515d34040f45c32840a1e58` |
-| 7 | `def` | [ExactProjectionEvaluator.decode](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RigidifiedScalarNamespaced.lean/declarations/exactprojectionevaluator-decode.md) | 69 | `declaration-track:cf772ea42fb10d7ef890aaa93ae68628d068b6aefba07bd8f6cb8c6c725d9ea2` |
-| 8 | `theorem` | [exact_projection_from_rigidifiedScalar](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RigidifiedScalarNamespaced.lean/declarations/exact-projection-from-rigidifiedscalar.md) | 81 | `result-track:e53980c051e5fbfa96f2555c25da975060dc84a1f6c4dcdc081821f1d3334e18` |
+| 1 | `structure` | [LosslessNatEncoding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RigidifiedScalarNamespaced.lean/declarations/losslessnatencoding.md) | 23 | `declaration-track:120a12444c74ee56bb64ecf3fbf5e069f153f50e7622d5e84fce84acc83a2cf5` |
+| 2 | `theorem` | [losslessNatEncoding_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RigidifiedScalarNamespaced.lean/declarations/losslessnatencoding-injective.md) | 28 | `result-track:75af64fd87a087e779f331fbb55d5741cbaad446c9f36a1a968c626ec8a512d9` |
+| 3 | `structure` | [RigidifiedScalarInput](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RigidifiedScalarNamespaced.lean/declarations/rigidifiedscalarinput.md) | 41 | `declaration-track:6b86f571c9553c803aae4ad91cf7a4f32492ce6919f077133fa3bbc531ff58a1` |
+| 4 | `def` | [rigidifiedScalar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RigidifiedScalarNamespaced.lean/declarations/rigidifiedscalar.md) | 48 | `declaration-track:037e79a2982a7673ca47026cb7083acebc341084eb4904159160a366ed289585` |
+| 5 | `theorem` | [rigidifiedScalar_exact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RigidifiedScalarNamespaced.lean/declarations/rigidifiedscalar-exact.md) | 53 | `result-track:1d5224f33d750a8f7691520ec8cb5144185f301ca2580d06bf183173acb916e2` |
+| 6 | `structure` | [ExactProjectionEvaluator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RigidifiedScalarNamespaced.lean/declarations/exactprojectionevaluator.md) | 64 | `declaration-track:9026cdcbb9c65d87cd05e08d3b0908d0944766ba0515d34040f45c32840a1e58` |
+| 7 | `def` | [ExactProjectionEvaluator.decode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RigidifiedScalarNamespaced.lean/declarations/exactprojectionevaluator-decode.md) | 69 | `declaration-track:cf772ea42fb10d7ef890aaa93ae68628d068b6aefba07bd8f6cb8c6c725d9ea2` |
+| 8 | `theorem` | [exact_projection_from_rigidifiedScalar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RigidifiedScalarNamespaced.lean/declarations/exact-projection-from-rigidifiedscalar.md) | 81 | `result-track:e53980c051e5fbfa96f2555c25da975060dc84a1f6c4dcdc081821f1d3334e18` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

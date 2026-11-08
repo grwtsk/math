@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/HypercubeNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/HypercubeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HypercubeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HypercubeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [AxisEvidence](../../../../Combinatorics/HypercubeNamespaced.lean/declarations/axisevidence.md) | 19 | `declaration-track:57ed50b8843040c16b4fa0c8d0a7ea8c0bd11692bef136f023ab3a8ab9580439` |
-| 2 | `structure` | [HypercubicCell](../../../../Combinatorics/HypercubeNamespaced.lean/declarations/hypercubiccell.md) | 25 | `declaration-track:8468827c8d0b063af0ab3d513246c7f81025825ab265626432a8976afb2dae7b` |
-| 3 | `def` | [Closed](../../../../Combinatorics/HypercubeNamespaced.lean/declarations/closed.md) | 44 | `declaration-track:58b0e23ea9d18ce5c92129cea1cce36db2903b4d2c5adbd9ce26925310329a3d` |
-| 4 | `theorem` | [evidence_present](../../../../Combinatorics/HypercubeNamespaced.lean/declarations/evidence-present.md) | 48 | `result-track:5e3f9ec69022b8f3b442ccbfcb3dd6292ac291f869c114ecd74b1ec435b8be15` |
-| 5 | `structure` | [FaceTransition](../../../../Combinatorics/HypercubeNamespaced.lean/declarations/facetransition.md) | 57 | `declaration-track:a7afe5f0d9362583621a6d0c4d57288d3bf2a12865fc092ccf492c2da2686785` |
-| 6 | `theorem` | [FaceTransition.trans](../../../../Combinatorics/HypercubeNamespaced.lean/declarations/facetransition-trans.md) | 63 | `result-track:01b33b75f338ff4cf66b1f7073c56a641774a0855e73be60bf7b086ebd70d1cd` |
-| 7 | `structure` | [TheoremCell](../../../../Combinatorics/HypercubeNamespaced.lean/declarations/theoremcell.md) | 77 | `declaration-track:db9f058bc9e0fad14f96422f82fa441eb7c76f9eb4a06a77c0bac5b2b465fddc` |
+| 1 | `structure` | [AxisEvidence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HypercubeNamespaced.lean/declarations/axisevidence.md) | 19 | `declaration-track:57ed50b8843040c16b4fa0c8d0a7ea8c0bd11692bef136f023ab3a8ab9580439` |
+| 2 | `structure` | [HypercubicCell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HypercubeNamespaced.lean/declarations/hypercubiccell.md) | 25 | `declaration-track:8468827c8d0b063af0ab3d513246c7f81025825ab265626432a8976afb2dae7b` |
+| 3 | `def` | [Closed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HypercubeNamespaced.lean/declarations/closed.md) | 44 | `declaration-track:58b0e23ea9d18ce5c92129cea1cce36db2903b4d2c5adbd9ce26925310329a3d` |
+| 4 | `theorem` | [evidence_present](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HypercubeNamespaced.lean/declarations/evidence-present.md) | 48 | `result-track:5e3f9ec69022b8f3b442ccbfcb3dd6292ac291f869c114ecd74b1ec435b8be15` |
+| 5 | `structure` | [FaceTransition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HypercubeNamespaced.lean/declarations/facetransition.md) | 57 | `declaration-track:a7afe5f0d9362583621a6d0c4d57288d3bf2a12865fc092ccf492c2da2686785` |
+| 6 | `theorem` | [FaceTransition.trans](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HypercubeNamespaced.lean/declarations/facetransition-trans.md) | 63 | `result-track:01b33b75f338ff4cf66b1f7073c56a641774a0855e73be60bf7b086ebd70d1cd` |
+| 7 | `structure` | [TheoremCell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HypercubeNamespaced.lean/declarations/theoremcell.md) | 77 | `declaration-track:db9f058bc9e0fad14f96422f82fa441eb7c76f9eb4a06a77c0bac5b2b465fddc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

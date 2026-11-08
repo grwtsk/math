@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RealNamespacedPublic.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RealNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RealNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RealNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [Real.instStarOrderedRing](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RealNamespacedPublic.lean/declarations/real-inststarorderedring.md) | 32 | `declaration-track:8eed4fd048e49422bc08c63c629c4670f8e34fa46d68db9f12e56dd42a814b46` |
-| 2 | `instance` | [NNReal.instStarOrderedRing](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RealNamespacedPublic.lean/declarations/nnreal-inststarorderedring.md) | 38 | `declaration-track:21a47ec235a1fb25d027d373008e4a3da5319b12b3db0a6ccc168ac17bb99d25` |
-| 3 | `instance` | [(anonymous)](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RealNamespacedPublic.lean/declarations/instance.md) | 48 | `declaration-track:4036caff1da0460279658bdf424b4f56dc83d387428e7cf3f1c9c5028fb0ae38` |
+| 1 | `instance` | [Real.instStarOrderedRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RealNamespacedPublic.lean/declarations/real-inststarorderedring.md) | 32 | `declaration-track:8eed4fd048e49422bc08c63c629c4670f8e34fa46d68db9f12e56dd42a814b46` |
+| 2 | `instance` | [NNReal.instStarOrderedRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RealNamespacedPublic.lean/declarations/nnreal-inststarorderedring.md) | 38 | `declaration-track:21a47ec235a1fb25d027d373008e4a3da5319b12b3db0a6ccc168ac17bb99d25` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RealNamespacedPublic.lean/declarations/instance.md) | 48 | `declaration-track:4036caff1da0460279658bdf424b4f56dc83d387428e7cf3f1c9c5028fb0ae38` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DiscreteStructuredArrowPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DiscreteStructuredArrowPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DiscreteStructuredArrowPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DiscreteStructuredArrowPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [structuredArrowEquivalenceOfUnique](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DiscreteStructuredArrowPublic.lean/declarations/structuredarrowequivalenceofunique.md) | 35 | `declaration-track:2f11d6f6e60da4190fac03096b801104a9941edb8c8cdd04daf483b2250bb022` |
-| 2 | `def` | [costructuredArrowEquivalenceOfUnique](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DiscreteStructuredArrowPublic.lean/declarations/costructuredarrowequivalenceofunique.md) | 48 | `declaration-track:599ddf307dcf4aed43e644f16bef7f36045333e451943918d233e4bf4b7fb5ed` |
+| 1 | `def` | [structuredArrowEquivalenceOfUnique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DiscreteStructuredArrowPublic.lean/declarations/structuredarrowequivalenceofunique.md) | 35 | `declaration-track:2f11d6f6e60da4190fac03096b801104a9941edb8c8cdd04daf483b2250bb022` |
+| 2 | `def` | [costructuredArrowEquivalenceOfUnique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/DiscreteStructuredArrowPublic.lean/declarations/costructuredarrowequivalenceofunique.md) | 48 | `declaration-track:599ddf307dcf4aed43e644f16bef7f36045333e451943918d233e4bf4b7fb5ed` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LpNamespaced.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LpNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/LpNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/LpNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [MemLp.finStronglyMeasurable_of_stronglyMeasurable](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LpNamespaced.lean/declarations/memlp-finstronglymeasurable-of-stronglymeasurable.md) | 47 | `result-track:b8769196e80107503c021e12134913ba6a34656996ff371480164f2579e79b30` |
-| 2 | `theorem` | [MemLp.aefinStronglyMeasurable](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LpNamespaced.lean/declarations/memlp-aefinstronglymeasurable.md) | 67 | `result-track:09af6161a7ae3564520856412f0a5589bb367956e0188533652befacaa327b92` |
-| 3 | `theorem` | [Integrable.aefinStronglyMeasurable](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LpNamespaced.lean/declarations/integrable-aefinstronglymeasurable.md) | 78 | `result-track:45a9b80755d3b5b89468beb9986e4cc37fdfad604c823fd2e6299961995322db` |
-| 4 | `theorem` | [Lp.finStronglyMeasurable](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LpNamespaced.lean/declarations/lp-finstronglymeasurable.md) | 81 | `result-track:06322db91bdfef72172a38ba692df41f6177b0f38ad7f9d1a794c9095384cefc` |
+| 1 | `theorem` | [MemLp.finStronglyMeasurable_of_stronglyMeasurable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/LpNamespaced.lean/declarations/memlp-finstronglymeasurable-of-stronglymeasurable.md) | 47 | `result-track:b8769196e80107503c021e12134913ba6a34656996ff371480164f2579e79b30` |
+| 2 | `theorem` | [MemLp.aefinStronglyMeasurable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/LpNamespaced.lean/declarations/memlp-aefinstronglymeasurable.md) | 67 | `result-track:09af6161a7ae3564520856412f0a5589bb367956e0188533652befacaa327b92` |
+| 3 | `theorem` | [Integrable.aefinStronglyMeasurable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/LpNamespaced.lean/declarations/integrable-aefinstronglymeasurable.md) | 78 | `result-track:45a9b80755d3b5b89468beb9986e4cc37fdfad604c823fd2e6299961995322db` |
+| 4 | `theorem` | [Lp.finStronglyMeasurable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/LpNamespaced.lean/declarations/lp-finstronglymeasurable.md) | 81 | `result-track:06322db91bdfef72172a38ba692df41f6177b0f38ad7f9d1a794c9095384cefc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

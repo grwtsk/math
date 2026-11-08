@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SigmaComparison.lean/index.md) · [Full source](../../../../GeneralTopology/SigmaComparison.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SigmaComparison.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SigmaComparison.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../GeneralTopology/SigmaComparison.lean/declarations/instance.md) | 32 | `declaration-track:79db3b917190f12b8c62477ea8b6a6830415c041e85f5b0436ca960d4e7f9d94` |
-| 2 | `def` | [sigmaComparison](../../../../GeneralTopology/SigmaComparison.lean/declarations/sigmacomparison.md) | 38 | `declaration-track:83953111baae966422b7f75ca6b326857e7a5225d5438925b14a9fe6572faad4` |
-| 3 | `theorem` | [sigmaComparison_eq_comp_isos](../../../../GeneralTopology/SigmaComparison.lean/declarations/sigmacomparison-eq-comp-isos.md) | 41 | `result-track:f9ad28cb0031d3e72f30cc81f69becd53e6b8221d1a1b31de0d32aa84397f0ea` |
-| 4 | `instance` | [isIsoSigmaComparison](../../../../GeneralTopology/SigmaComparison.lean/declarations/isisosigmacomparison.md) | 62 | `declaration-track:ebe008fbb760b6ed6bb1d817a15faa092946d9f5662ad2d794deac58b8c796b3` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SigmaComparison.lean/declarations/instance.md) | 32 | `declaration-track:79db3b917190f12b8c62477ea8b6a6830415c041e85f5b0436ca960d4e7f9d94` |
+| 2 | `def` | [sigmaComparison](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SigmaComparison.lean/declarations/sigmacomparison.md) | 38 | `declaration-track:83953111baae966422b7f75ca6b326857e7a5225d5438925b14a9fe6572faad4` |
+| 3 | `theorem` | [sigmaComparison_eq_comp_isos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SigmaComparison.lean/declarations/sigmacomparison-eq-comp-isos.md) | 41 | `result-track:f9ad28cb0031d3e72f30cc81f69becd53e6b8221d1a1b31de0d32aa84397f0ea` |
+| 4 | `instance` | [isIsoSigmaComparison](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SigmaComparison.lean/declarations/isisosigmacomparison.md) | 62 | `declaration-track:ebe008fbb760b6ed6bb1d817a15faa092946d9f5662ad2d794deac58b8c796b3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

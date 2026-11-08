@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/SubgroupEvenNamespaced.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/SubgroupEvenNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SubgroupEvenNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SubgroupEvenNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,17 +58,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [square](../../../../GroupTheoryAndGeneralizations/SubgroupEvenNamespaced.lean/declarations/square-source-edition-2.md) | 35 | `declaration-track:5a79de16d0ebaa7d3c40e0010558f2a658afe963bb4fc0664c7eeaabdb913371` |
-| 2 | `theorem` | [mem_square](../../../../GroupTheoryAndGeneralizations/SubgroupEvenNamespaced.lean/declarations/mem-square-source-edition-2.md) | 40 | `result-track:336cfd95fd50aa0a5d6a6ff23d32fa5a876d584cd0dc3cfe057dad860aee0206` |
-| 3 | `theorem` | [coe_square](../../../../GroupTheoryAndGeneralizations/SubgroupEvenNamespaced.lean/declarations/coe-square.md) | 43 | `result-track:36d98d4c7931ff72fd53a51caf24c855c78d9dd5dd22cabca705ee7d7a36c9c2` |
-| 4 | `def` | [square](../../../../GroupTheoryAndGeneralizations/SubgroupEvenNamespaced.lean/declarations/square-source-edition-3.md) | 57 | `declaration-track:8147c0c27bdecfb5483b7db0df73b860a4962cf449baa21533cad5c6ba9fb8b2` |
-| 5 | `theorem` | [square_toSubsemigroup](../../../../GroupTheoryAndGeneralizations/SubgroupEvenNamespaced.lean/declarations/square-tosubsemigroup.md) | 62 | `result-track:78d6067bc486d8785c14451f35723760b2892a4e7ede24ab6cee0adf555be93d` |
-| 6 | `theorem` | [mem_square](../../../../GroupTheoryAndGeneralizations/SubgroupEvenNamespaced.lean/declarations/mem-square.md) | 65 | `result-track:27be563a53cf56886ac635d0ffdc5251af02a19b5fd964bcdf1f03f5c5d3d78b` |
-| 7 | `theorem` | [coe_square](../../../../GroupTheoryAndGeneralizations/SubgroupEvenNamespaced.lean/declarations/coe-square-source-edition-3.md) | 68 | `result-track:cb08bc9449887773559b791693837e3d6a9229326bdec29521bb777098ba24e5` |
-| 8 | `def` | [square](../../../../GroupTheoryAndGeneralizations/SubgroupEvenNamespaced.lean/declarations/square.md) | 82 | `declaration-track:2071fd685776964e1e0145f1f5a9dbec7f2468b16cd8f2ab4163e1afc5325e7c` |
-| 9 | `theorem` | [square_toSubmonoid](../../../../GroupTheoryAndGeneralizations/SubgroupEvenNamespaced.lean/declarations/square-tosubmonoid.md) | 87 | `result-track:8d94a74ac5e1aca92b1eb1ba9ff02baa20a5593a005b4bae7a9825192d111ff8` |
-| 10 | `theorem` | [mem_square](../../../../GroupTheoryAndGeneralizations/SubgroupEvenNamespaced.lean/declarations/mem-square-source-edition-3.md) | 90 | `result-track:b3e681cef452dcb6860f4a8a1edc1f6446265ef728d22823cc64d9d642313fc0` |
-| 11 | `theorem` | [coe_square](../../../../GroupTheoryAndGeneralizations/SubgroupEvenNamespaced.lean/declarations/coe-square-source-edition-2.md) | 93 | `result-track:9ae1cd51460d748ccc6341599bef21868b0f007b1c0ab864177d593520b1dc70` |
+| 1 | `def` | [square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SubgroupEvenNamespaced.lean/declarations/square-source-edition-2.md) | 35 | `declaration-track:5a79de16d0ebaa7d3c40e0010558f2a658afe963bb4fc0664c7eeaabdb913371` |
+| 2 | `theorem` | [mem_square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SubgroupEvenNamespaced.lean/declarations/mem-square-source-edition-2.md) | 40 | `result-track:336cfd95fd50aa0a5d6a6ff23d32fa5a876d584cd0dc3cfe057dad860aee0206` |
+| 3 | `theorem` | [coe_square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SubgroupEvenNamespaced.lean/declarations/coe-square.md) | 43 | `result-track:36d98d4c7931ff72fd53a51caf24c855c78d9dd5dd22cabca705ee7d7a36c9c2` |
+| 4 | `def` | [square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SubgroupEvenNamespaced.lean/declarations/square-source-edition-3.md) | 57 | `declaration-track:8147c0c27bdecfb5483b7db0df73b860a4962cf449baa21533cad5c6ba9fb8b2` |
+| 5 | `theorem` | [square_toSubsemigroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SubgroupEvenNamespaced.lean/declarations/square-tosubsemigroup.md) | 62 | `result-track:78d6067bc486d8785c14451f35723760b2892a4e7ede24ab6cee0adf555be93d` |
+| 6 | `theorem` | [mem_square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SubgroupEvenNamespaced.lean/declarations/mem-square.md) | 65 | `result-track:27be563a53cf56886ac635d0ffdc5251af02a19b5fd964bcdf1f03f5c5d3d78b` |
+| 7 | `theorem` | [coe_square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SubgroupEvenNamespaced.lean/declarations/coe-square-source-edition-3.md) | 68 | `result-track:cb08bc9449887773559b791693837e3d6a9229326bdec29521bb777098ba24e5` |
+| 8 | `def` | [square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SubgroupEvenNamespaced.lean/declarations/square.md) | 82 | `declaration-track:2071fd685776964e1e0145f1f5a9dbec7f2468b16cd8f2ab4163e1afc5325e7c` |
+| 9 | `theorem` | [square_toSubmonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SubgroupEvenNamespaced.lean/declarations/square-tosubmonoid.md) | 87 | `result-track:8d94a74ac5e1aca92b1eb1ba9ff02baa20a5593a005b4bae7a9825192d111ff8` |
+| 10 | `theorem` | [mem_square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SubgroupEvenNamespaced.lean/declarations/mem-square-source-edition-3.md) | 90 | `result-track:b3e681cef452dcb6860f4a8a1edc1f6446265ef728d22823cc64d9d642313fc0` |
+| 11 | `theorem` | [coe_square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SubgroupEvenNamespaced.lean/declarations/coe-square-source-edition-2.md) | 93 | `result-track:9ae1cd51460d748ccc6341599bef21868b0f007b1c0ab864177d593520b1dc70` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

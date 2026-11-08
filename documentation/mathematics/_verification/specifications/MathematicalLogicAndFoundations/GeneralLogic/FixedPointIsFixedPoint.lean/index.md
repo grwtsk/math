@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FixedPointIsFixedPoint.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FixedPointIsFixedPoint.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FixedPointIsFixedPoint.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FixedPointIsFixedPoint.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [IsFixedPoint](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FixedPointIsFixedPoint.lean/declarations/isfixedpoint.md) | 7 | `declaration-track:6861bac89128ccf5c41ee2bce754a5aa6842c358a4e2766f7f2fc3170e32cfc6` |
-| 2 | `structure` | [FixedPointCertificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FixedPointIsFixedPoint.lean/declarations/fixedpointcertificate.md) | 10 | `declaration-track:ac9b00720e64f157ba9fffec4d2aea27deeffb06c16aec612c5b3d5715ff83d6` |
-| 3 | `theorem` | [certified_point_satisfies_exact_equation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FixedPointIsFixedPoint.lean/declarations/certified-point-satisfies-exact-equation.md) | 17 | `result-track:fe67ecbe1238c1652bf82803f5a124a725d29617f79c300a94f5dd1ab41757f6` |
-| 4 | `structure` | [FixedPointAnalyticObligations](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FixedPointIsFixedPoint.lean/declarations/fixedpointanalyticobligations.md) | 24 | `declaration-track:326ac38435d643c40ef6f34824c36db9f072131f439ed8ca31a8d237051b7aa9` |
-| 5 | `theorem` | [fixed_point_unique_from_separation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FixedPointIsFixedPoint.lean/declarations/fixed-point-unique-from-separation.md) | 46 | `result-track:a36d6dadcf074a96ca1d03eb1a698bdb62912c6772f84093104da625b0264650` |
+| 1 | `def` | [IsFixedPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FixedPointIsFixedPoint.lean/declarations/isfixedpoint.md) | 7 | `declaration-track:6861bac89128ccf5c41ee2bce754a5aa6842c358a4e2766f7f2fc3170e32cfc6` |
+| 2 | `structure` | [FixedPointCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FixedPointIsFixedPoint.lean/declarations/fixedpointcertificate.md) | 10 | `declaration-track:ac9b00720e64f157ba9fffec4d2aea27deeffb06c16aec612c5b3d5715ff83d6` |
+| 3 | `theorem` | [certified_point_satisfies_exact_equation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FixedPointIsFixedPoint.lean/declarations/certified-point-satisfies-exact-equation.md) | 17 | `result-track:fe67ecbe1238c1652bf82803f5a124a725d29617f79c300a94f5dd1ab41757f6` |
+| 4 | `structure` | [FixedPointAnalyticObligations](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FixedPointIsFixedPoint.lean/declarations/fixedpointanalyticobligations.md) | 24 | `declaration-track:326ac38435d643c40ef6f34824c36db9f072131f439ed8ca31a8d237051b7aa9` |
+| 5 | `theorem` | [fixed_point_unique_from_separation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FixedPointIsFixedPoint.lean/declarations/fixed-point-unique-from-separation.md) | 46 | `result-track:a36d6dadcf074a96ca1d03eb1a698bdb62912c6772f84093104da625b0264650` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

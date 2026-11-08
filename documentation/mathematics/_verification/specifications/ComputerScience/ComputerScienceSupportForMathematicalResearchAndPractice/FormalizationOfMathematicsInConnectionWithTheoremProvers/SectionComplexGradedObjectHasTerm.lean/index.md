@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SectionComplexGradedObjectHasTerm.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SectionComplexGradedObjectHasTerm.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SectionComplexGradedObjectHasTerm.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SectionComplexGradedObjectHasTerm.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [graded_object_has_term](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SectionComplexGradedObjectHasTerm.lean/declarations/graded-object-has-term.md) | 19 | `result-track:c142ffaf9e55d9e008d477ebbd89cba4ac5e1dd5f1725f910aeaaedc1f416432` |
-| 2 | `theorem` | [section_complex_d_squared_zero](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SectionComplexGradedObjectHasTerm.lean/declarations/section-complex-d-squared-zero.md) | 25 | `result-track:2f0a178f30ec3826bbe8b665d69287452407acd7649a1c03d6d4a95f8879529b` |
-| 3 | `theorem` | [section_complex_bounded](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SectionComplexGradedObjectHasTerm.lean/declarations/section-complex-bounded.md) | 30 | `result-track:b6afe2e353c1b5e200e0f026e3348aa3d471ecb76db56472231ab90cf8cc3cf8` |
+| 1 | `theorem` | [graded_object_has_term](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SectionComplexGradedObjectHasTerm.lean/declarations/graded-object-has-term.md) | 19 | `result-track:c142ffaf9e55d9e008d477ebbd89cba4ac5e1dd5f1725f910aeaaedc1f416432` |
+| 2 | `theorem` | [section_complex_d_squared_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SectionComplexGradedObjectHasTerm.lean/declarations/section-complex-d-squared-zero.md) | 25 | `result-track:2f0a178f30ec3826bbe8b665d69287452407acd7649a1c03d6d4a95f8879529b` |
+| 3 | `theorem` | [section_complex_bounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SectionComplexGradedObjectHasTerm.lean/declarations/section-complex-bounded.md) | 30 | `result-track:b6afe2e353c1b5e200e0f026e3348aa3d471ecb76db56472231ab90cf8cc3cf8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/ContDiffWithLp.lean/index.md) · [Full source](../../../../RealFunctions/ContDiffWithLp.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContDiffWithLp.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContDiffWithLp.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,18 +58,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [contDiffWithinAt_piLp](../../../../RealFunctions/ContDiffWithLp.lean/declarations/contdiffwithinat-pilp-source-edition-2.md) | 22 | `result-track:9f776481857fa83598b860f2d5e1129a948eeaed6fa12a9e25f2d3133ad4bb17` |
-| 2 | `theorem` | [contDiffWithinAt_piLp'](../../../../RealFunctions/ContDiffWithLp.lean/declarations/contdiffwithinat-pilp.md) | 28 | `result-track:7ffe7a8fb4e12aa6db95065a312301148a627ba8e115420890015ed785f1de9d` |
-| 3 | `theorem` | [contDiffWithinAt_piLp_apply](../../../../RealFunctions/ContDiffWithLp.lean/declarations/contdiffwithinat-pilp-apply.md) | 33 | `result-track:c2051119f129f0ddbc3bf26290fe6e546bf10a6a217b1da5d2d2515aa25ec800` |
-| 4 | `theorem` | [contDiffAt_piLp](../../../../RealFunctions/ContDiffWithLp.lean/declarations/contdiffat-pilp.md) | 37 | `result-track:8c71bf3723ac7b66275eef42a5a4878b28ab961348b838b5dc56bf92d59daceb` |
-| 5 | `theorem` | [contDiffAt_piLp'](../../../../RealFunctions/ContDiffWithLp.lean/declarations/contdiffat-pilp-source-edition-2.md) | 43 | `result-track:b1e37034ae85a3c45e885ba93500b5f824a96c93adf224c99cabdd218d027ebe` |
-| 6 | `theorem` | [contDiffAt_piLp_apply](../../../../RealFunctions/ContDiffWithLp.lean/declarations/contdiffat-pilp-apply.md) | 48 | `result-track:d0cfbbe39898c1bfee0ebf276aeab068b58f7bb1ca5995855254c13eece8015b` |
-| 7 | `theorem` | [contDiffOn_piLp](../../../../RealFunctions/ContDiffWithLp.lean/declarations/contdiffon-pilp-source-edition-2.md) | 52 | `result-track:af1b465fecfebcc530a25714cbf4e55bacf0b772b87578e213c7b80f8a5b9654` |
-| 8 | `theorem` | [contDiffOn_piLp'](../../../../RealFunctions/ContDiffWithLp.lean/declarations/contdiffon-pilp.md) | 58 | `result-track:30d673a832a4fd82ef0f262ce7f2e53c1a1f03b15508537a0527109f9a26ffbf` |
-| 9 | `theorem` | [contDiffOn_piLp_apply](../../../../RealFunctions/ContDiffWithLp.lean/declarations/contdiffon-pilp-apply.md) | 63 | `result-track:619eed26f9e6a0130eb4e881168efc5623a8716dcf6c00ea0150eac487347f3e` |
-| 10 | `theorem` | [contDiff_piLp](../../../../RealFunctions/ContDiffWithLp.lean/declarations/contdiff-pilp-source-edition-2.md) | 67 | `result-track:e4ab4740f3822f1d3e1208956553605879d4d5bd40f8d14f2a6a2aefe0056451` |
-| 11 | `theorem` | [contDiff_piLp'](../../../../RealFunctions/ContDiffWithLp.lean/declarations/contdiff-pilp.md) | 72 | `result-track:0a2899af18dab464db613c6cbfc116cd3180283b528ecf21e996f876085f5c5a` |
-| 12 | `theorem` | [contDiff_piLp_apply](../../../../RealFunctions/ContDiffWithLp.lean/declarations/contdiff-pilp-apply.md) | 77 | `result-track:e44aa96ab8e9de28f0e21a3b8ad5603ba541d3f765b27414b340e23f5899f87a` |
+| 1 | `theorem` | [contDiffWithinAt_piLp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContDiffWithLp.lean/declarations/contdiffwithinat-pilp-source-edition-2.md) | 22 | `result-track:9f776481857fa83598b860f2d5e1129a948eeaed6fa12a9e25f2d3133ad4bb17` |
+| 2 | `theorem` | [contDiffWithinAt_piLp'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContDiffWithLp.lean/declarations/contdiffwithinat-pilp.md) | 28 | `result-track:7ffe7a8fb4e12aa6db95065a312301148a627ba8e115420890015ed785f1de9d` |
+| 3 | `theorem` | [contDiffWithinAt_piLp_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContDiffWithLp.lean/declarations/contdiffwithinat-pilp-apply.md) | 33 | `result-track:c2051119f129f0ddbc3bf26290fe6e546bf10a6a217b1da5d2d2515aa25ec800` |
+| 4 | `theorem` | [contDiffAt_piLp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContDiffWithLp.lean/declarations/contdiffat-pilp.md) | 37 | `result-track:8c71bf3723ac7b66275eef42a5a4878b28ab961348b838b5dc56bf92d59daceb` |
+| 5 | `theorem` | [contDiffAt_piLp'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContDiffWithLp.lean/declarations/contdiffat-pilp-source-edition-2.md) | 43 | `result-track:b1e37034ae85a3c45e885ba93500b5f824a96c93adf224c99cabdd218d027ebe` |
+| 6 | `theorem` | [contDiffAt_piLp_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContDiffWithLp.lean/declarations/contdiffat-pilp-apply.md) | 48 | `result-track:d0cfbbe39898c1bfee0ebf276aeab068b58f7bb1ca5995855254c13eece8015b` |
+| 7 | `theorem` | [contDiffOn_piLp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContDiffWithLp.lean/declarations/contdiffon-pilp-source-edition-2.md) | 52 | `result-track:af1b465fecfebcc530a25714cbf4e55bacf0b772b87578e213c7b80f8a5b9654` |
+| 8 | `theorem` | [contDiffOn_piLp'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContDiffWithLp.lean/declarations/contdiffon-pilp.md) | 58 | `result-track:30d673a832a4fd82ef0f262ce7f2e53c1a1f03b15508537a0527109f9a26ffbf` |
+| 9 | `theorem` | [contDiffOn_piLp_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContDiffWithLp.lean/declarations/contdiffon-pilp-apply.md) | 63 | `result-track:619eed26f9e6a0130eb4e881168efc5623a8716dcf6c00ea0150eac487347f3e` |
+| 10 | `theorem` | [contDiff_piLp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContDiffWithLp.lean/declarations/contdiff-pilp-source-edition-2.md) | 67 | `result-track:e4ab4740f3822f1d3e1208956553605879d4d5bd40f8d14f2a6a2aefe0056451` |
+| 11 | `theorem` | [contDiff_piLp'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContDiffWithLp.lean/declarations/contdiff-pilp.md) | 72 | `result-track:0a2899af18dab464db613c6cbfc116cd3180283b528ecf21e996f876085f5c5a` |
+| 12 | `theorem` | [contDiff_piLp_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContDiffWithLp.lean/declarations/contdiff-pilp-apply.md) | 77 | `result-track:e44aa96ab8e9de28f0e21a3b8ad5603ba541d3f765b27414b340e23f5899f87a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

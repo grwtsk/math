@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Principal.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Principal.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Principal.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Principal.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [PrincipalId](../../../../../ComputerScience/AlgorithmsInComputerScience/Principal.lean/declarations/principalid.md) | 14 | `declaration-track:47a197faea40c87aa378466f7032fe9a44e2cf8787a4140994085425ad9025ed` |
-| 2 | `abbrev` | [DeviceId](../../../../../ComputerScience/AlgorithmsInComputerScience/Principal.lean/declarations/deviceid.md) | 15 | `declaration-track:986ac7da5ebf7e604da29633442f1a16c70e2264ccccd2d20b3db5da2ecb6f73` |
-| 3 | `abbrev` | [PurposeId](../../../../../ComputerScience/AlgorithmsInComputerScience/Principal.lean/declarations/purposeid.md) | 16 | `declaration-track:cfca8f55dfe790fe81e6e01b50e0770ba51e236b603347819c38b9fb1bf39ad3` |
-| 4 | `abbrev` | [LeaseId](../../../../../ComputerScience/AlgorithmsInComputerScience/Principal.lean/declarations/leaseid.md) | 17 | `declaration-track:471b896f2941c8e820ae04c19a23172d9a789235b77c5ab8d314be8efe74256c` |
-| 5 | `abbrev` | [GrantId](../../../../../ComputerScience/AlgorithmsInComputerScience/Principal.lean/declarations/grantid.md) | 18 | `declaration-track:fc373cb08ea53362e04da2435713c40c0c5365bf0c5657504f2f0e82c3f585d6` |
-| 6 | `abbrev` | [RequestId](../../../../../ComputerScience/AlgorithmsInComputerScience/Principal.lean/declarations/requestid.md) | 19 | `declaration-track:310b3982b1c9f4c68ba735c8cb79d261c740525728a93d52695700b64ada149e` |
-| 7 | `abbrev` | [ChartId](../../../../../ComputerScience/AlgorithmsInComputerScience/Principal.lean/declarations/chartid.md) | 20 | `declaration-track:3b11024ae5500018d617dd510af70be733644ffadf800069249a8f3a38a26990` |
-| 8 | `inductive` | [PrincipalKind](../../../../../ComputerScience/AlgorithmsInComputerScience/Principal.lean/declarations/principalkind.md) | 22 | `declaration-track:e3ebdbab1043f6e5799aaf1f94c3f9abd9f8a419f263d07ca5d95ccb227ed093` |
-| 9 | `structure` | [Principal](../../../../../ComputerScience/AlgorithmsInComputerScience/Principal.lean/declarations/principal.md) | 29 | `declaration-track:a77f0f035bedef9de26aaef4336666bacd0690848f193cc9aa4ad4ae3ca9aa76` |
-| 10 | `structure` | [CompetenceProfile](../../../../../ComputerScience/AlgorithmsInComputerScience/Principal.lean/declarations/competenceprofile.md) | 35 | `declaration-track:777409b5883a118c7fea15da11031754c4ca05b7bc4b36e3ac3059be3728d9e2` |
+| 1 | `abbrev` | [PrincipalId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Principal.lean/declarations/principalid.md) | 14 | `declaration-track:47a197faea40c87aa378466f7032fe9a44e2cf8787a4140994085425ad9025ed` |
+| 2 | `abbrev` | [DeviceId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Principal.lean/declarations/deviceid.md) | 15 | `declaration-track:986ac7da5ebf7e604da29633442f1a16c70e2264ccccd2d20b3db5da2ecb6f73` |
+| 3 | `abbrev` | [PurposeId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Principal.lean/declarations/purposeid.md) | 16 | `declaration-track:cfca8f55dfe790fe81e6e01b50e0770ba51e236b603347819c38b9fb1bf39ad3` |
+| 4 | `abbrev` | [LeaseId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Principal.lean/declarations/leaseid.md) | 17 | `declaration-track:471b896f2941c8e820ae04c19a23172d9a789235b77c5ab8d314be8efe74256c` |
+| 5 | `abbrev` | [GrantId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Principal.lean/declarations/grantid.md) | 18 | `declaration-track:fc373cb08ea53362e04da2435713c40c0c5365bf0c5657504f2f0e82c3f585d6` |
+| 6 | `abbrev` | [RequestId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Principal.lean/declarations/requestid.md) | 19 | `declaration-track:310b3982b1c9f4c68ba735c8cb79d261c740525728a93d52695700b64ada149e` |
+| 7 | `abbrev` | [ChartId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Principal.lean/declarations/chartid.md) | 20 | `declaration-track:3b11024ae5500018d617dd510af70be733644ffadf800069249a8f3a38a26990` |
+| 8 | `inductive` | [PrincipalKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Principal.lean/declarations/principalkind.md) | 22 | `declaration-track:e3ebdbab1043f6e5799aaf1f94c3f9abd9f8a419f263d07ca5d95ccb227ed093` |
+| 9 | `structure` | [Principal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Principal.lean/declarations/principal.md) | 29 | `declaration-track:a77f0f035bedef9de26aaef4336666bacd0690848f193cc9aa4ad4ae3ca9aa76` |
+| 10 | `structure` | [CompetenceProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Principal.lean/declarations/competenceprofile.md) | 35 | `declaration-track:777409b5883a118c7fea15da11031754c4ca05b7bc4b36e3ac3059be3728d9e2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

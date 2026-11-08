@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../IntegralTransformsOperationalCalculus/GaussianWindowMissingRootFactor.lean/index.md) · [Full source](../../../../IntegralTransformsOperationalCalculus/GaussianWindowMissingRootFactor.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/GaussianWindowMissingRootFactor.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/GaussianWindowMissingRootFactor.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.MellinTransform.Checks.Positive.CompactGaussianWindow`](../../../../IntegralTransformsOperationalCalculus/PositiveCompactGaussianWindow.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.Analysis.MellinTransform.Checks.Positive.CompactGaussianWindow`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/PositiveCompactGaussianWindow.lean/index.md) — import line 2; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../IntegralTransformsOperationalCalculus/GaussianWindowMissingRootFactor.lean/declarations/example.md) | 9 | `declaration-track:7d394bf1ec877859d7f82dfbc3e7b0dccf75db48fb0789934787c38cc5b8d31b` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/GaussianWindowMissingRootFactor.lean/declarations/example.md) | 9 | `declaration-track:7d394bf1ec877859d7f82dfbc3e7b0dccf75db48fb0789934787c38cc5b8d31b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

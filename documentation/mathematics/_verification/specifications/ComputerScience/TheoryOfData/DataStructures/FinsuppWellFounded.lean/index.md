@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppWellFounded.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppWellFounded.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppWellFounded.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppWellFounded.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Lex.acc](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppWellFounded.lean/declarations/lex-acc.md) | 34 | `result-track:94afbd43b2f50eb0879900da44f41d610464c4df5cf47a4368617638cff7ca3d` |
-| 2 | `theorem` | [Lex.wellFounded](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppWellFounded.lean/declarations/lex-wellfounded-source-edition-2.md) | 42 | `result-track:966246254f4e27d7e75b07632d7892d3df8c42aa5557a0943f6112b77d1b5a7f` |
-| 3 | `theorem` | [Lex.wellFounded'](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppWellFounded.lean/declarations/lex-wellfounded.md) | 46 | `result-track:31da6efde5cf1125fcc32a9bc980c0c346bbb0588a8555193475d985633e0acf` |
-| 4 | `instance` | [Lex.wellFoundedLT](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppWellFounded.lean/declarations/lex-wellfoundedlt.md) | 51 | `declaration-track:4a1c3f1519e103ae8a60295b26d3da159697aa265df725f1db11a2de7177e4b6` |
-| 5 | `theorem` | [Lex.wellFounded_of_finite](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppWellFounded.lean/declarations/lex-wellfounded-of-finite.md) | 58 | `result-track:be3dab7cc611512984c695a12f13880f7071a7a07af039144369c15084b67e18` |
-| 6 | `theorem` | [Lex.wellFoundedLT_of_finite](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppWellFounded.lean/declarations/lex-wellfoundedlt-of-finite.md) | 62 | `result-track:d75e9cf86248f8d59ab96826db2f58e7e88763936ea818bce94d4f2624625060` |
-| 7 | `theorem` | [wellFoundedLT](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppWellFounded.lean/declarations/wellfoundedlt.md) | 66 | `result-track:4b99287b50b9c327d52d6258567aad0caab742d8b6bc4b64d8c3874b24e19420` |
-| 8 | `instance` | [wellFoundedLT'](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppWellFounded.lean/declarations/wellfoundedlt-source-edition-2.md) | 70 | `declaration-track:7f8a2f5988762fd004e81603f933c755c894b75a0d2aec73358c4e1e791a73a9` |
-| 9 | `instance` | [wellFoundedLT_of_finite](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppWellFounded.lean/declarations/wellfoundedlt-of-finite.md) | 75 | `declaration-track:a0c9f1accbca48c7f7ab0ac7107e9e6ccfbee8b23d129e2985552b6eeea36bd9` |
+| 1 | `theorem` | [Lex.acc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppWellFounded.lean/declarations/lex-acc.md) | 34 | `result-track:94afbd43b2f50eb0879900da44f41d610464c4df5cf47a4368617638cff7ca3d` |
+| 2 | `theorem` | [Lex.wellFounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppWellFounded.lean/declarations/lex-wellfounded-source-edition-2.md) | 42 | `result-track:966246254f4e27d7e75b07632d7892d3df8c42aa5557a0943f6112b77d1b5a7f` |
+| 3 | `theorem` | [Lex.wellFounded'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppWellFounded.lean/declarations/lex-wellfounded.md) | 46 | `result-track:31da6efde5cf1125fcc32a9bc980c0c346bbb0588a8555193475d985633e0acf` |
+| 4 | `instance` | [Lex.wellFoundedLT](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppWellFounded.lean/declarations/lex-wellfoundedlt.md) | 51 | `declaration-track:4a1c3f1519e103ae8a60295b26d3da159697aa265df725f1db11a2de7177e4b6` |
+| 5 | `theorem` | [Lex.wellFounded_of_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppWellFounded.lean/declarations/lex-wellfounded-of-finite.md) | 58 | `result-track:be3dab7cc611512984c695a12f13880f7071a7a07af039144369c15084b67e18` |
+| 6 | `theorem` | [Lex.wellFoundedLT_of_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppWellFounded.lean/declarations/lex-wellfoundedlt-of-finite.md) | 62 | `result-track:d75e9cf86248f8d59ab96826db2f58e7e88763936ea818bce94d4f2624625060` |
+| 7 | `theorem` | [wellFoundedLT](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppWellFounded.lean/declarations/wellfoundedlt.md) | 66 | `result-track:4b99287b50b9c327d52d6258567aad0caab742d8b6bc4b64d8c3874b24e19420` |
+| 8 | `instance` | [wellFoundedLT'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppWellFounded.lean/declarations/wellfoundedlt-source-edition-2.md) | 70 | `declaration-track:7f8a2f5988762fd004e81603f933c755c894b75a0d2aec73358c4e1e791a73a9` |
+| 9 | `instance` | [wellFoundedLT_of_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppWellFounded.lean/declarations/wellfoundedlt-of-finite.md) | 75 | `declaration-track:a0c9f1accbca48c7f7ab0ac7107e9e6ccfbee8b23d129e2985552b6eeea36bd9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

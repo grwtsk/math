@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/UtilAssertExists.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/UtilAssertExists.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/UtilAssertExists.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/UtilAssertExists.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `elab` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/UtilAssertExists.lean/declarations/elab.md) | 43 | `declaration-track:64e01a75c255f91508a36206eb79e6738fb18f289d8b7465777b123301f1daf7` |
-| 2 | `elab` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/UtilAssertExists.lean/declarations/elab-source-edition-3.md) | 75 | `declaration-track:b977ae06b4e88d3db470e46241998c2ef74693a8ef3044a40e1e2cbbb8b664e4` |
-| 3 | `def` | [importPathMessage](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/UtilAssertExists.lean/declarations/importpathmessage.md) | 90 | `declaration-track:6cf74526b8fc7fadcc32bf14b5fda4a4d85b7859ccac3ec7c652fa0acf43e69e` |
-| 4 | `elab` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/UtilAssertExists.lean/declarations/elab-source-edition-4.md) | 114 | `declaration-track:ef31be8ef8e2a9ea2a8de4aedf73956939c06c564a31ab557767eff56dd2f51c` |
-| 5 | `elab` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/UtilAssertExists.lean/declarations/elab-source-edition-2.md) | 139 | `declaration-track:b732f4107c44b6f0e0bc3bfa902f613b928a3f261aff15296fa4dd4f876675f5` |
+| 1 | `elab` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/UtilAssertExists.lean/declarations/elab.md) | 43 | `declaration-track:64e01a75c255f91508a36206eb79e6738fb18f289d8b7465777b123301f1daf7` |
+| 2 | `elab` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/UtilAssertExists.lean/declarations/elab-source-edition-3.md) | 75 | `declaration-track:b977ae06b4e88d3db470e46241998c2ef74693a8ef3044a40e1e2cbbb8b664e4` |
+| 3 | `def` | [importPathMessage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/UtilAssertExists.lean/declarations/importpathmessage.md) | 90 | `declaration-track:6cf74526b8fc7fadcc32bf14b5fda4a4d85b7859ccac3ec7c652fa0acf43e69e` |
+| 4 | `elab` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/UtilAssertExists.lean/declarations/elab-source-edition-4.md) | 114 | `declaration-track:ef31be8ef8e2a9ea2a8de4aedf73956939c06c564a31ab557767eff56dd2f51c` |
+| 5 | `elab` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/UtilAssertExists.lean/declarations/elab-source-edition-2.md) | 139 | `declaration-track:b732f4107c44b6f0e0bc3bfa902f613b928a3f261aff15296fa4dd4f876675f5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

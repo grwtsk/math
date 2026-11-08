@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/RCLikeExtendPublic.lean/index.md) · [Full source](../../../../FunctionalAnalysis/RCLikeExtendPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/RCLikeExtendPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/RCLikeExtendPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,17 +57,17 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [extendRCLike](../../../../FunctionalAnalysis/RCLikeExtendPublic.lean/declarations/extendrclike.md) | 48 | `declaration-track:26fa32dbd9686300569c5e40b0cb4d3c955ffe5599db92e8965f36208661a021` |
-| 2 | `theorem` | [extendRCLike_apply](../../../../FunctionalAnalysis/RCLikeExtendPublic.lean/declarations/extendrclike-apply.md) | 67 | `result-track:a530ae38ae943d241c20f93e431aa0786d44252798be59af2acf2e11efa6f984` |
-| 3 | `theorem` | [re_extendRCLike_apply](../../../../FunctionalAnalysis/RCLikeExtendPublic.lean/declarations/re-extendrclike-apply.md) | 71 | `result-track:002bb6ca69833ced85cb42d6a127878f46ea7c64998e76d44dabf976d2ccc5f3` |
-| 4 | `lemma` | [im_extendRCLike_apply](../../../../FunctionalAnalysis/RCLikeExtendPublic.lean/declarations/im-extendrclike-apply-source-edition-2.md) | 75 | `result-track:a91629579dbee43bebe31e94934bd8ed75131bcb20cd0b5930e3574d987c8c77` |
-| 5 | `theorem` | [norm_extendRCLike_apply_sq](../../../../FunctionalAnalysis/RCLikeExtendPublic.lean/declarations/norm-extendrclike-apply-sq.md) | 80 | `result-track:ea9b20b1569f0732f2deceab775ff62f9ea6dcadab236332ae70a24f8daaae32` |
-| 6 | `def` | [extendRCLikeₗ](../../../../FunctionalAnalysis/RCLikeExtendPublic.lean/declarations/extendrclike-source-edition-3.md) | 89 | `declaration-track:9fc6094aaf915f0c88a34f276178b980f712e35918737965109c407c06ffd91e` |
-| 7 | `def` | [extendRCLike](../../../../FunctionalAnalysis/RCLikeExtendPublic.lean/declarations/extendrclike-source-edition-4.md) | 108 | `declaration-track:aef12c479137d20c53da32e9b677672e3ef4da79c98523598167bce9c96e5352` |
-| 8 | `theorem` | [extendRCLike_apply](../../../../FunctionalAnalysis/RCLikeExtendPublic.lean/declarations/extendrclike-apply-source-edition-2.md) | 112 | `result-track:d402fd8937861910b4e416e478537641a63e94ecf82cc285799e1f0f08c5a44b` |
-| 9 | `lemma` | [re_extendRCLike_apply](../../../../FunctionalAnalysis/RCLikeExtendPublic.lean/declarations/re-extendrclike-apply-source-edition-2.md) | 116 | `result-track:6041ad7bea8b690f2d7bcb6894613fb04cf37e3abec1e08ff58ec54f051476d0` |
-| 10 | `lemma` | [im_extendRCLike_apply](../../../../FunctionalAnalysis/RCLikeExtendPublic.lean/declarations/im-extendrclike-apply.md) | 121 | `result-track:7ea60356470469906764d52249902c66bcbe7d8011d6babd585534fd052e8608` |
-| 11 | `def` | [extendRCLikeₗ](../../../../FunctionalAnalysis/RCLikeExtendPublic.lean/declarations/extendrclike-source-edition-2.md) | 131 | `declaration-track:6d6242b7c3a30963ad966fd28001517e7e6dd376e74d7a685bdeb29600531d66` |
+| 1 | `def` | [extendRCLike](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/RCLikeExtendPublic.lean/declarations/extendrclike.md) | 48 | `declaration-track:26fa32dbd9686300569c5e40b0cb4d3c955ffe5599db92e8965f36208661a021` |
+| 2 | `theorem` | [extendRCLike_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/RCLikeExtendPublic.lean/declarations/extendrclike-apply.md) | 67 | `result-track:a530ae38ae943d241c20f93e431aa0786d44252798be59af2acf2e11efa6f984` |
+| 3 | `theorem` | [re_extendRCLike_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/RCLikeExtendPublic.lean/declarations/re-extendrclike-apply.md) | 71 | `result-track:002bb6ca69833ced85cb42d6a127878f46ea7c64998e76d44dabf976d2ccc5f3` |
+| 4 | `lemma` | [im_extendRCLike_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/RCLikeExtendPublic.lean/declarations/im-extendrclike-apply-source-edition-2.md) | 75 | `result-track:a91629579dbee43bebe31e94934bd8ed75131bcb20cd0b5930e3574d987c8c77` |
+| 5 | `theorem` | [norm_extendRCLike_apply_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/RCLikeExtendPublic.lean/declarations/norm-extendrclike-apply-sq.md) | 80 | `result-track:ea9b20b1569f0732f2deceab775ff62f9ea6dcadab236332ae70a24f8daaae32` |
+| 6 | `def` | [extendRCLikeₗ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/RCLikeExtendPublic.lean/declarations/extendrclike-source-edition-3.md) | 89 | `declaration-track:9fc6094aaf915f0c88a34f276178b980f712e35918737965109c407c06ffd91e` |
+| 7 | `def` | [extendRCLike](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/RCLikeExtendPublic.lean/declarations/extendrclike-source-edition-4.md) | 108 | `declaration-track:aef12c479137d20c53da32e9b677672e3ef4da79c98523598167bce9c96e5352` |
+| 8 | `theorem` | [extendRCLike_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/RCLikeExtendPublic.lean/declarations/extendrclike-apply-source-edition-2.md) | 112 | `result-track:d402fd8937861910b4e416e478537641a63e94ecf82cc285799e1f0f08c5a44b` |
+| 9 | `lemma` | [re_extendRCLike_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/RCLikeExtendPublic.lean/declarations/re-extendrclike-apply-source-edition-2.md) | 116 | `result-track:6041ad7bea8b690f2d7bcb6894613fb04cf37e3abec1e08ff58ec54f051476d0` |
+| 10 | `lemma` | [im_extendRCLike_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/RCLikeExtendPublic.lean/declarations/im-extendrclike-apply.md) | 121 | `result-track:7ea60356470469906764d52249902c66bcbe7d8011d6babd585534fd052e8608` |
+| 11 | `def` | [extendRCLikeₗ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/RCLikeExtendPublic.lean/declarations/extendrclike-source-edition-2.md) | 131 | `declaration-track:6d6242b7c3a30963ad966fd28001517e7e6dd376e74d7a685bdeb29600531d66` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

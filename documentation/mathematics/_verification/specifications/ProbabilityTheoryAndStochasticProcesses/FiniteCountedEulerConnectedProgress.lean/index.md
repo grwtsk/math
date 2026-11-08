@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerConnectedProgress.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerConnectedProgress.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerConnectedProgress.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerConnectedProgress.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,9 +46,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteCountedEulerStrictProgress`](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerStrictProgress.lean/index.md) — import line 3; pinned internal source present.
-- [`GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteCountedEulerSupportCut`](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerSupportCut.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteCountedEulerVisitedSupport`](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerVisitedSupport.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteCountedEulerStrictProgress`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerStrictProgress.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteCountedEulerSupportCut`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerSupportCut.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteCountedEulerVisitedSupport`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerVisitedSupport.lean/index.md) — import line 5; pinned internal source present.
 - `Mathlib.Tactic` — import line 6; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -60,9 +60,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [FreshCountedTrail.complete_or_strict_connected_progress](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerConnectedProgress.lean/declarations/freshcountedtrail-complete-or-strict-connected-progress.md) | 26 | `result-track:5994f67648be4e0d4741daac2f866215ac171c824c56e695be856721f285129e` |
-| 2 | `theorem` | [FreshCountedTrail.exists_complete_connected_extension](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerConnectedProgress.lean/declarations/freshcountedtrail-exists-complete-connected-extension.md) | 65 | `result-track:9b858d4f82e2e5e313d5c4b2b3279d1cb6c22f8e4e9e98c31306ef1ea0474448` |
-| 3 | `theorem` | [exists_complete_counted_closed_trail](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerConnectedProgress.lean/declarations/exists-complete-counted-closed-trail.md) | 102 | `result-track:c23e76272c8f4fe5f05010acb92afa8fd7f52618adf071c43e133cbbc0e66e6a` |
+| 1 | `theorem` | [FreshCountedTrail.complete_or_strict_connected_progress](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerConnectedProgress.lean/declarations/freshcountedtrail-complete-or-strict-connected-progress.md) | 26 | `result-track:5994f67648be4e0d4741daac2f866215ac171c824c56e695be856721f285129e` |
+| 2 | `theorem` | [FreshCountedTrail.exists_complete_connected_extension](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerConnectedProgress.lean/declarations/freshcountedtrail-exists-complete-connected-extension.md) | 65 | `result-track:9b858d4f82e2e5e313d5c4b2b3279d1cb6c22f8e4e9e98c31306ef1ea0474448` |
+| 3 | `theorem` | [exists_complete_counted_closed_trail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerConnectedProgress.lean/declarations/exists-complete-counted-closed-trail.md) | 102 | `result-track:c23e76272c8f4fe5f05010acb92afa8fd7f52618adf071c43e133cbbc0e66e6a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

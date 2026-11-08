@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Composition.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Composition.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Composition.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Composition.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CompositionRule](../../../../../ComputerScience/AlgorithmsInComputerScience/Composition.lean/declarations/compositionrule.md) | 7 | `declaration-track:1bf1384d3f73ea1a95d0ffd9edce280df40618c04bebbd118ffed0a27e1eb19b` |
-| 2 | `structure` | [CompositionCertificate](../../../../../ComputerScience/AlgorithmsInComputerScience/Composition.lean/declarations/compositioncertificate.md) | 20 | `declaration-track:3fc5068536e77a3b887f795253cfb5c98d37a7623651651e42f0a051d20e34f2` |
-| 3 | `structure` | [LiteralReading](../../../../../ComputerScience/AlgorithmsInComputerScience/Composition.lean/declarations/literalreading.md) | 30 | `declaration-track:817302296d2ad09c2a98cbc83fe3f7ccca20355c5f2a3a46b23d17c0a479b54b` |
-| 4 | `theorem` | [CompositionCertificate.output_exact](../../../../../ComputerScience/AlgorithmsInComputerScience/Composition.lean/declarations/compositioncertificate-output-exact.md) | 37 | `result-track:ece899233ac920d3cba77a2342dcdcf20b62a8de3b9d614ff9af4893f78ef431` |
+| 1 | `structure` | [CompositionRule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Composition.lean/declarations/compositionrule.md) | 7 | `declaration-track:1bf1384d3f73ea1a95d0ffd9edce280df40618c04bebbd118ffed0a27e1eb19b` |
+| 2 | `structure` | [CompositionCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Composition.lean/declarations/compositioncertificate.md) | 20 | `declaration-track:3fc5068536e77a3b887f795253cfb5c98d37a7623651651e42f0a051d20e34f2` |
+| 3 | `structure` | [LiteralReading](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Composition.lean/declarations/literalreading.md) | 30 | `declaration-track:817302296d2ad09c2a98cbc83fe3f7ccca20355c5f2a3a46b23d17c0a479b54b` |
+| 4 | `theorem` | [CompositionCertificate.output_exact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Composition.lean/declarations/compositioncertificate-output-exact.md) | 37 | `result-track:ece899233ac920d3cba77a2342dcdcf20b62a8de3b9d614ff9af4893f78ef431` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ToStringNamespacedPublicReprEqIf.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ToStringNamespacedPublicReprEqIf.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ToStringNamespacedPublicReprEqIf.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ToStringNamespacedPublicReprEqIf.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [repr_eq_if](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ToStringNamespacedPublicReprEqIf.lean/declarations/repr-eq-if.md) | 24 | `result-track:b450458617a37c821f8269f503f308b881129ac240d7b409c8c472054a88b019` |
-| 2 | `theorem` | [toString_eq_repr](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ToStringNamespacedPublicReprEqIf.lean/declarations/tostring-eq-repr.md) | 29 | `result-track:95040b10af818885f08350db437da8f1481c63005739a7ef326d5e87c35bdc3a` |
+| 1 | `theorem` | [repr_eq_if](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ToStringNamespacedPublicReprEqIf.lean/declarations/repr-eq-if.md) | 24 | `result-track:b450458617a37c821f8269f503f308b881129ac240d7b409c8c472054a88b019` |
+| 2 | `theorem` | [toString_eq_repr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ToStringNamespacedPublicReprEqIf.lean/declarations/tostring-eq-repr.md) | 29 | `result-track:95040b10af818885f08350db437da8f1481c63005739a7ef326d5e87c35bdc3a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

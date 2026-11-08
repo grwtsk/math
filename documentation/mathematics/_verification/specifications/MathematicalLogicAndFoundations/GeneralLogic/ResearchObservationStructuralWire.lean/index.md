@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResearchObservationStructuralWire.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResearchObservationStructuralWire.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResearchObservationStructuralWire.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResearchObservationStructuralWire.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.ResearchObservation`](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResearchObservation.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.ResearchObservation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResearchObservation.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [stateWire_recordObservation_structural](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResearchObservationStructuralWire.lean/declarations/statewire-recordobservation-structural.md) | 27 | `result-track:a5996b9e45ce7d7d5ac7d2d6fcc2458db9b6b5014c2972cb26b18d1a8e540dae` |
-| 2 | `theorem` | [stateWire_recordObservation_of_components](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResearchObservationStructuralWire.lean/declarations/statewire-recordobservation-of-components.md) | 41 | `result-track:9ecb03f04f57440997ef548777ea3005ca2e76834a6ac2870de82db777dd5c97` |
-| 3 | `theorem` | [renderBytes_recordObservation_of_components](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResearchObservationStructuralWire.lean/declarations/renderbytes-recordobservation-of-components.md) | 60 | `result-track:df067c1ab53a465e75ab85878a71c99573836f6796cee8ab85c8802a5de64645` |
-| 4 | `theorem` | [admitted_of_stateWire](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResearchObservationStructuralWire.lean/declarations/admitted-of-statewire.md) | 80 | `result-track:8344ed7b6a93dcf1049f6d122f7de4998be5415643fa237e1f75756f96bba20a` |
-| 5 | `theorem` | [admitted_of_structural_wires](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResearchObservationStructuralWire.lean/declarations/admitted-of-structural-wires.md) | 89 | `result-track:f01a8fa5f41f05985a8f61c8de5c65b5aecadc768e515ef555298aba0b807492` |
-| 6 | `theorem` | [change_of_structural_wires](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResearchObservationStructuralWire.lean/declarations/change-of-structural-wires.md) | 111 | `result-track:020e155d5f9e61da5332be46493699168c79b9ef1426024e1cfe918ec147769e` |
+| 1 | `theorem` | [stateWire_recordObservation_structural](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResearchObservationStructuralWire.lean/declarations/statewire-recordobservation-structural.md) | 27 | `result-track:a5996b9e45ce7d7d5ac7d2d6fcc2458db9b6b5014c2972cb26b18d1a8e540dae` |
+| 2 | `theorem` | [stateWire_recordObservation_of_components](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResearchObservationStructuralWire.lean/declarations/statewire-recordobservation-of-components.md) | 41 | `result-track:9ecb03f04f57440997ef548777ea3005ca2e76834a6ac2870de82db777dd5c97` |
+| 3 | `theorem` | [renderBytes_recordObservation_of_components](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResearchObservationStructuralWire.lean/declarations/renderbytes-recordobservation-of-components.md) | 60 | `result-track:df067c1ab53a465e75ab85878a71c99573836f6796cee8ab85c8802a5de64645` |
+| 4 | `theorem` | [admitted_of_stateWire](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResearchObservationStructuralWire.lean/declarations/admitted-of-statewire.md) | 80 | `result-track:8344ed7b6a93dcf1049f6d122f7de4998be5415643fa237e1f75756f96bba20a` |
+| 5 | `theorem` | [admitted_of_structural_wires](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResearchObservationStructuralWire.lean/declarations/admitted-of-structural-wires.md) | 89 | `result-track:f01a8fa5f41f05985a8f61c8de5c65b5aecadc768e515ef555298aba0b807492` |
+| 6 | `theorem` | [change_of_structural_wires](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResearchObservationStructuralWire.lean/declarations/change-of-structural-wires.md) | 111 | `result-track:020e155d5f9e61da5332be46493699168c79b9ef1426024e1cfe918ec147769e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

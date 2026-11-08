@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TypeNamespacedPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TypeNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TypeNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TypeNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [sectionsPrecomp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TypeNamespacedPublic.lean/declarations/sectionsprecomp.md) | 48 | `declaration-track:271c14b9ffb29fdbed116228c89f2939b1d24d2260c905bb9621a2ecceca7046` |
-| 2 | `lemma` | [bijective_sectionsPrecomp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TypeNamespacedPublic.lean/declarations/bijective-sectionsprecomp.md) | 54 | `result-track:ab6d42142ab129eab13e8ef1f5ab6105f0d8b87cc606f8d908e93d632753d5a3` |
-| 3 | `def` | [colimitTypePrecomp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TypeNamespacedPublic.lean/declarations/colimittypeprecomp.md) | 81 | `declaration-track:f78f98ba495e51dd04ebc6d7042a3b4634cc33daba2230bf12a6f39cf22229e2` |
-| 4 | `lemma` | [colimitTypePrecomp_ιColimitType](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TypeNamespacedPublic.lean/declarations/colimittypeprecomp-colimittype.md) | 86 | `result-track:73c45a34ad1e9bf870ff8344d143cf86ed25f44cac816a007ee605fd6d0b5113` |
-| 5 | `lemma` | [bijective_colimitTypePrecomp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TypeNamespacedPublic.lean/declarations/bijective-colimittypeprecomp.md) | 92 | `result-track:91ff8369a9b5ccdbfa44f317a38e8692c34288d4deba6afd5d37404dee445053` |
+| 1 | `def` | [sectionsPrecomp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TypeNamespacedPublic.lean/declarations/sectionsprecomp.md) | 48 | `declaration-track:271c14b9ffb29fdbed116228c89f2939b1d24d2260c905bb9621a2ecceca7046` |
+| 2 | `lemma` | [bijective_sectionsPrecomp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TypeNamespacedPublic.lean/declarations/bijective-sectionsprecomp.md) | 54 | `result-track:ab6d42142ab129eab13e8ef1f5ab6105f0d8b87cc606f8d908e93d632753d5a3` |
+| 3 | `def` | [colimitTypePrecomp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TypeNamespacedPublic.lean/declarations/colimittypeprecomp.md) | 81 | `declaration-track:f78f98ba495e51dd04ebc6d7042a3b4634cc33daba2230bf12a6f39cf22229e2` |
+| 4 | `lemma` | [colimitTypePrecomp_ιColimitType](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TypeNamespacedPublic.lean/declarations/colimittypeprecomp-colimittype.md) | 86 | `result-track:73c45a34ad1e9bf870ff8344d143cf86ed25f44cac816a007ee605fd6d0b5113` |
+| 5 | `lemma` | [bijective_colimitTypePrecomp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TypeNamespacedPublic.lean/declarations/bijective-colimittypeprecomp.md) | 92 | `result-track:91ff8369a9b5ccdbfa44f317a38e8692c34288d4deba6afd5d37404dee445053` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

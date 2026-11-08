@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/TentLeftDecayControls.lean/index.md) · [Full source](../../../../NumberTheory/TentLeftDecayControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentLeftDecayControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentLeftDecayControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Chebyshev.TentLeftDecay`](../../../../NumberTheory/TentLeftDecay.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.TentLeftDecay`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentLeftDecay.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [first_left_real_part](../../../../NumberTheory/TentLeftDecayControls.lean/declarations/first-left-real-part.md) | 21 | `result-track:2ce28e39eef1bcc89fbf9a0efcbc6f9a6bd39129286f88aa0a705db033e07b90` |
-| 2 | `theorem` | [second_left_reflection](../../../../NumberTheory/TentLeftDecayControls.lean/declarations/second-left-reflection.md) | 24 | `result-track:980d313020216262ba896417b7818c95109709cdea875360823d2a4e3c8ae322` |
-| 3 | `theorem` | [zero_height_reciprocal](../../../../NumberTheory/TentLeftDecayControls.lean/declarations/zero-height-reciprocal.md) | 29 | `result-track:030ae0eda9f255702926e0f0c6f9f2732ed13185b4e12289a220d68bc757b6b5` |
-| 4 | `theorem` | [two_reciprocals_not_zero](../../../../NumberTheory/TentLeftDecayControls.lean/declarations/two-reciprocals-not-zero.md) | 31 | `result-track:5b4be01965941099c890a1a2a19798c27e9fdc17556e68bb0a857356b8e8ad62` |
-| 5 | `theorem` | [zero_shift_digamma](../../../../NumberTheory/TentLeftDecayControls.lean/declarations/zero-shift-digamma.md) | 35 | `result-track:be605d541f9f2324b960d435ec9ad2863c4529c9d5eb1fcfd5aa9dd20fa49d52` |
-| 6 | `theorem` | [fixed_parameter_model](../../../../NumberTheory/TentLeftDecayControls.lean/declarations/fixed-parameter-model.md) | 39 | `result-track:2aed4c95d2f7aad19e052c37bb3dc5eefa5e3176edfe25329df3c0db7ec9e201` |
-| 7 | `theorem` | [growing_parameter_model](../../../../NumberTheory/TentLeftDecayControls.lean/declarations/growing-parameter-model.md) | 46 | `result-track:f56e12c350c091319bae591aa558a5262c4a060815a639c6376000363f70ea37` |
-| 8 | `theorem` | [no_damping_at_one](../../../../NumberTheory/TentLeftDecayControls.lean/declarations/no-damping-at-one.md) | 50 | `result-track:d5df636f9ac214f3b7a733a28b491dbb88d06faa32b7a70647eae3daa764b52d` |
+| 1 | `theorem` | [first_left_real_part](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentLeftDecayControls.lean/declarations/first-left-real-part.md) | 21 | `result-track:2ce28e39eef1bcc89fbf9a0efcbc6f9a6bd39129286f88aa0a705db033e07b90` |
+| 2 | `theorem` | [second_left_reflection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentLeftDecayControls.lean/declarations/second-left-reflection.md) | 24 | `result-track:980d313020216262ba896417b7818c95109709cdea875360823d2a4e3c8ae322` |
+| 3 | `theorem` | [zero_height_reciprocal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentLeftDecayControls.lean/declarations/zero-height-reciprocal.md) | 29 | `result-track:030ae0eda9f255702926e0f0c6f9f2732ed13185b4e12289a220d68bc757b6b5` |
+| 4 | `theorem` | [two_reciprocals_not_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentLeftDecayControls.lean/declarations/two-reciprocals-not-zero.md) | 31 | `result-track:5b4be01965941099c890a1a2a19798c27e9fdc17556e68bb0a857356b8e8ad62` |
+| 5 | `theorem` | [zero_shift_digamma](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentLeftDecayControls.lean/declarations/zero-shift-digamma.md) | 35 | `result-track:be605d541f9f2324b960d435ec9ad2863c4529c9d5eb1fcfd5aa9dd20fa49d52` |
+| 6 | `theorem` | [fixed_parameter_model](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentLeftDecayControls.lean/declarations/fixed-parameter-model.md) | 39 | `result-track:2aed4c95d2f7aad19e052c37bb3dc5eefa5e3176edfe25329df3c0db7ec9e201` |
+| 7 | `theorem` | [growing_parameter_model](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentLeftDecayControls.lean/declarations/growing-parameter-model.md) | 46 | `result-track:f56e12c350c091319bae591aa558a5262c4a060815a639c6376000363f70ea37` |
+| 8 | `theorem` | [no_damping_at_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentLeftDecayControls.lean/declarations/no-damping-at-one.md) | 50 | `result-track:d5df636f9ac214f3b7a733a28b491dbb88d06faa32b7a70647eae3daa764b52d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

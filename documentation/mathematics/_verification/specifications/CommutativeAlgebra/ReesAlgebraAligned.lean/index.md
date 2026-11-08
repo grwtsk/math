@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/ReesAlgebraAligned.lean/index.md) · [Full source](../../../../CommutativeAlgebra/ReesAlgebraAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ReesAlgebraAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ReesAlgebraAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [reesAlgebra](../../../../CommutativeAlgebra/ReesAlgebraAligned.lean/declarations/reesalgebra.md) | 38 | `declaration-track:29e70f04364b2713f7e1bbc165d011100a76eedb63f2d631cce663c21d740d11` |
-| 2 | `theorem` | [mem_reesAlgebra_iff](../../../../CommutativeAlgebra/ReesAlgebraAligned.lean/declarations/mem-reesalgebra-iff.md) | 64 | `result-track:0c0bf181486cb465a29aca70018bca62d65f4cf3158ff6d42f2451078c15f417` |
-| 3 | `theorem` | [mem_reesAlgebra_iff_support](../../../../CommutativeAlgebra/ReesAlgebraAligned.lean/declarations/mem-reesalgebra-iff-support.md) | 68 | `result-track:b889daddaf5f5370741f986ae4b19689f0a21b73452a7337729a64230c6e4f7a` |
-| 4 | `theorem` | [reesAlgebra.monomial_mem](../../../../CommutativeAlgebra/ReesAlgebraAligned.lean/declarations/reesalgebra-monomial-mem.md) | 76 | `result-track:e89fd93d6d24810de1d7c9eb6b0409c5e32313a4c71b720d9fe9877e848443a9` |
-| 5 | `theorem` | [monomial_mem_adjoin_monomial](../../../../CommutativeAlgebra/ReesAlgebraAligned.lean/declarations/monomial-mem-adjoin-monomial.md) | 82 | `result-track:928c8fd2b8b93b0a9e52e91b30d635690e48dd3fe393f2642539dbf961e33013` |
-| 6 | `theorem` | [adjoin_monomial_eq_reesAlgebra](../../../../CommutativeAlgebra/ReesAlgebraAligned.lean/declarations/adjoin-monomial-eq-reesalgebra.md) | 98 | `result-track:98607c70b6a1e9b28fbbb9b2bbe7013245d6df2fecefc629414af735a203af10` |
-| 7 | `theorem` | [reesAlgebra.fg](../../../../CommutativeAlgebra/ReesAlgebraAligned.lean/declarations/reesalgebra-fg.md) | 113 | `result-track:8ab030bc3463a7a759a25726cd6b8cc70ec7188b6af90097aa93061f3b93fcd2` |
-| 8 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/ReesAlgebraAligned.lean/declarations/instance.md) | 126 | `declaration-track:9dfc5b7e20dddd83fbcc0142ec2bc2625982ba7537126ca501c0bbf146fa61b2` |
-| 9 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/ReesAlgebraAligned.lean/declarations/instance-source-edition-2.md) | 129 | `declaration-track:f2a0491e5e1fa2a25eee60ded36ba9a9e9707fada92fa29e1165f79d26c6ee98` |
+| 1 | `def` | [reesAlgebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ReesAlgebraAligned.lean/declarations/reesalgebra.md) | 38 | `declaration-track:29e70f04364b2713f7e1bbc165d011100a76eedb63f2d631cce663c21d740d11` |
+| 2 | `theorem` | [mem_reesAlgebra_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ReesAlgebraAligned.lean/declarations/mem-reesalgebra-iff.md) | 64 | `result-track:0c0bf181486cb465a29aca70018bca62d65f4cf3158ff6d42f2451078c15f417` |
+| 3 | `theorem` | [mem_reesAlgebra_iff_support](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ReesAlgebraAligned.lean/declarations/mem-reesalgebra-iff-support.md) | 68 | `result-track:b889daddaf5f5370741f986ae4b19689f0a21b73452a7337729a64230c6e4f7a` |
+| 4 | `theorem` | [reesAlgebra.monomial_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ReesAlgebraAligned.lean/declarations/reesalgebra-monomial-mem.md) | 76 | `result-track:e89fd93d6d24810de1d7c9eb6b0409c5e32313a4c71b720d9fe9877e848443a9` |
+| 5 | `theorem` | [monomial_mem_adjoin_monomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ReesAlgebraAligned.lean/declarations/monomial-mem-adjoin-monomial.md) | 82 | `result-track:928c8fd2b8b93b0a9e52e91b30d635690e48dd3fe393f2642539dbf961e33013` |
+| 6 | `theorem` | [adjoin_monomial_eq_reesAlgebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ReesAlgebraAligned.lean/declarations/adjoin-monomial-eq-reesalgebra.md) | 98 | `result-track:98607c70b6a1e9b28fbbb9b2bbe7013245d6df2fecefc629414af735a203af10` |
+| 7 | `theorem` | [reesAlgebra.fg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ReesAlgebraAligned.lean/declarations/reesalgebra-fg.md) | 113 | `result-track:8ab030bc3463a7a759a25726cd6b8cc70ec7188b6af90097aa93061f3b93fcd2` |
+| 8 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ReesAlgebraAligned.lean/declarations/instance.md) | 126 | `declaration-track:9dfc5b7e20dddd83fbcc0142ec2bc2625982ba7537126ca501c0bbf146fa61b2` |
+| 9 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ReesAlgebraAligned.lean/declarations/instance-source-edition-2.md) | 129 | `declaration-track:f2a0491e5e1fa2a25eee60ded36ba9a9e9707fada92fa29e1165f79d26c6ee98` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

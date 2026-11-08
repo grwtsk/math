@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/FullActualCensusComparedWithItsUnchangedLaplaceMoment.lean/index.md) · [Full source](../../../../MeasureAndIntegration/FullActualCensusComparedWithItsUnchangedLaplaceMoment.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FullActualCensusComparedWithItsUnchangedLaplaceMoment.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FullActualCensusComparedWithItsUnchangedLaplaceMoment.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exact_decaying_exponential_interval](../../../../MeasureAndIntegration/FullActualCensusComparedWithItsUnchangedLaplaceMoment.lean/declarations/exact-decaying-exponential-interval.md) | 25 | `result-track:af750a91fc536f4938fcae8478430e93d26671bcb4c01bc4955dd26c980ba1d3` |
-| 2 | `theorem` | [actual_negative_half_price_le_radius](../../../../MeasureAndIntegration/FullActualCensusComparedWithItsUnchangedLaplaceMoment.lean/declarations/actual-negative-half-price-le-radius.md) | 39 | `result-track:ded8714377cf81c227541816188f11370fecc2eea66784f706271bc3b433f45c` |
-| 3 | `theorem` | [actual_cutoff_integral_moment_error_le_one](../../../../MeasureAndIntegration/FullActualCensusComparedWithItsUnchangedLaplaceMoment.lean/declarations/actual-cutoff-integral-moment-error-le-one.md) | 53 | `result-track:45e2e77c741584bbceac9576f3174cc20dc6f5725029d6413f3ee2b11bb91df4` |
-| 4 | `theorem` | [actual_complete_census_moment_error_le_fifteen](../../../../MeasureAndIntegration/FullActualCensusComparedWithItsUnchangedLaplaceMoment.lean/declarations/actual-complete-census-moment-error-le-fifteen.md) | 70 | `result-track:58850c87bc93eb105ebae6f2f1ec847112e1432fe7e818ecbd30c07bd4417a16` |
-| 5 | `theorem` | [actual_square_census_bounded](../../../../MeasureAndIntegration/FullActualCensusComparedWithItsUnchangedLaplaceMoment.lean/declarations/actual-square-census-bounded.md) | 81 | `result-track:457dd69b4a036e8173b2ecc7e691a2957d684a3392c1ba5093e65855f336451b` |
-| 6 | `theorem` | [actual_sixth_census_retains_moment](../../../../MeasureAndIntegration/FullActualCensusComparedWithItsUnchangedLaplaceMoment.lean/declarations/actual-sixth-census-retains-moment.md) | 88 | `result-track:34189b7e56f260ff0b0a7a08d8f2cfd7bad87984f75d24e2f7bc5ce21c3373f5` |
+| 1 | `theorem` | [exact_decaying_exponential_interval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FullActualCensusComparedWithItsUnchangedLaplaceMoment.lean/declarations/exact-decaying-exponential-interval.md) | 25 | `result-track:af750a91fc536f4938fcae8478430e93d26671bcb4c01bc4955dd26c980ba1d3` |
+| 2 | `theorem` | [actual_negative_half_price_le_radius](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FullActualCensusComparedWithItsUnchangedLaplaceMoment.lean/declarations/actual-negative-half-price-le-radius.md) | 39 | `result-track:ded8714377cf81c227541816188f11370fecc2eea66784f706271bc3b433f45c` |
+| 3 | `theorem` | [actual_cutoff_integral_moment_error_le_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FullActualCensusComparedWithItsUnchangedLaplaceMoment.lean/declarations/actual-cutoff-integral-moment-error-le-one.md) | 53 | `result-track:45e2e77c741584bbceac9576f3174cc20dc6f5725029d6413f3ee2b11bb91df4` |
+| 4 | `theorem` | [actual_complete_census_moment_error_le_fifteen](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FullActualCensusComparedWithItsUnchangedLaplaceMoment.lean/declarations/actual-complete-census-moment-error-le-fifteen.md) | 70 | `result-track:58850c87bc93eb105ebae6f2f1ec847112e1432fe7e818ecbd30c07bd4417a16` |
+| 5 | `theorem` | [actual_square_census_bounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FullActualCensusComparedWithItsUnchangedLaplaceMoment.lean/declarations/actual-square-census-bounded.md) | 81 | `result-track:457dd69b4a036e8173b2ecc7e691a2957d684a3392c1ba5093e65855f336451b` |
+| 6 | `theorem` | [actual_sixth_census_retains_moment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FullActualCensusComparedWithItsUnchangedLaplaceMoment.lean/declarations/actual-sixth-census-retains-moment.md) | 88 | `result-track:34189b7e56f260ff0b0a7a08d8f2cfd7bad87984f75d24e2f7bc5ce21c3373f5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

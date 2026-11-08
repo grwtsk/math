@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/SubadditiveNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/SubadditiveNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SubadditiveNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SubadditiveNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,12 +60,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Subadditive](../../../../FunctionalAnalysis/SubadditiveNamespaced.lean/declarations/subadditive.md) | 38 | `declaration-track:6c706ea000ed42889d92fbdda0d8ce7dd580ecbd960e7bcf931390087d4595fc` |
-| 2 | `def` | [lim](../../../../FunctionalAnalysis/SubadditiveNamespaced.lean/declarations/lim.md) | 48 | `declaration-track:29e43e14da3980241b11205727cf8908d9e1788e1811385744e2dc787d8ee3be` |
-| 3 | `theorem` | [lim_le_div](../../../../FunctionalAnalysis/SubadditiveNamespaced.lean/declarations/lim-le-div.md) | 51 | `result-track:1fa0316a888a38c59764431ecd898669a70b232f2d0c7b560eb22fbdb9f48af3` |
-| 4 | `theorem` | [apply_mul_add_le](../../../../FunctionalAnalysis/SubadditiveNamespaced.lean/declarations/apply-mul-add-le.md) | 57 | `result-track:ffd4ff96c12df31f557f0d7a19ed168333c9f6d82bb516c8c4127e65ce12f8ed` |
-| 5 | `theorem` | [eventually_div_lt_of_div_lt](../../../../FunctionalAnalysis/SubadditiveNamespaced.lean/declarations/eventually-div-lt-of-div-lt.md) | 68 | `result-track:e574599703da3ffd00485d79840d955efb3f4a7c5bc299b21886ff5ab42d50fc` |
-| 6 | `theorem` | [tendsto_lim](../../../../FunctionalAnalysis/SubadditiveNamespaced.lean/declarations/tendsto-lim.md) | 90 | `result-track:7436334d707e3b7f67f5fdf21b65ce23d30e2778dd07a37e238a6f91ef6a1384` |
+| 1 | `def` | [Subadditive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SubadditiveNamespaced.lean/declarations/subadditive.md) | 38 | `declaration-track:6c706ea000ed42889d92fbdda0d8ce7dd580ecbd960e7bcf931390087d4595fc` |
+| 2 | `def` | [lim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SubadditiveNamespaced.lean/declarations/lim.md) | 48 | `declaration-track:29e43e14da3980241b11205727cf8908d9e1788e1811385744e2dc787d8ee3be` |
+| 3 | `theorem` | [lim_le_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SubadditiveNamespaced.lean/declarations/lim-le-div.md) | 51 | `result-track:1fa0316a888a38c59764431ecd898669a70b232f2d0c7b560eb22fbdb9f48af3` |
+| 4 | `theorem` | [apply_mul_add_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SubadditiveNamespaced.lean/declarations/apply-mul-add-le.md) | 57 | `result-track:ffd4ff96c12df31f557f0d7a19ed168333c9f6d82bb516c8c4127e65ce12f8ed` |
+| 5 | `theorem` | [eventually_div_lt_of_div_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SubadditiveNamespaced.lean/declarations/eventually-div-lt-of-div-lt.md) | 68 | `result-track:e574599703da3ffd00485d79840d955efb3f4a7c5bc299b21886ff5ab42d50fc` |
+| 6 | `theorem` | [tendsto_lim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SubadditiveNamespaced.lean/declarations/tendsto-lim.md) | 90 | `result-track:7436334d707e3b7f67f5fdf21b65ce23d30e2778dd07a37e238a6f91ef6a1384` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

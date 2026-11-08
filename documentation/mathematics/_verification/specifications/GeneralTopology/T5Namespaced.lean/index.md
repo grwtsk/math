@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/T5Namespaced.lean/index.md) · [Full source](../../../../GeneralTopology/T5Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/T5Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/T5Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [ordConnectedComponent_mem_nhds](../../../../GeneralTopology/T5Namespaced.lean/declarations/ordconnectedcomponent-mem-nhds.md) | 33 | `result-track:3630aef03ed7b527f51be35c27a7110c3b4ec7a0e1206d1746d120069114668b` |
-| 2 | `theorem` | [compl_ordConnectedSection_ordSeparatingSet_mem_nhdsGE](../../../../GeneralTopology/T5Namespaced.lean/declarations/compl-ordconnectedsection-ordseparatingset-mem-nhdsge.md) | 38 | `result-track:1bbcdf21b0bbb6e23213ff0f518f07919f76f8baada4478b58e138f7d0016438` |
-| 3 | `theorem` | [compl_ordConnectedSection_ordSeparatingSet_mem_nhdsLE](../../../../GeneralTopology/T5Namespaced.lean/declarations/compl-ordconnectedsection-ordseparatingset-mem-nhdsle.md) | 74 | `result-track:ee6c75c16b385168e3dc6f213db245f11d98736be3896457d5a026371bc8d616` |
-| 4 | `theorem` | [compl_ordConnectedSection_ordSeparatingSet_mem_nhds](../../../../GeneralTopology/T5Namespaced.lean/declarations/compl-ordconnectedsection-ordseparatingset-mem-nhds.md) | 85 | `result-track:6404f674083c9cd55490aaf4b32f5a0f8be0bfb91d922ccc507515db90f8b914` |
-| 5 | `theorem` | [ordT5Nhd_mem_nhdsSet](../../../../GeneralTopology/T5Namespaced.lean/declarations/ordt5nhd-mem-nhdsset.md) | 94 | `result-track:f56da241245ab3d2686ea67bf57b6690213e64cce5b95dbb3bdd8d5e96b878a1` |
-| 6 | `instance` | [(anonymous)](../../../../GeneralTopology/T5Namespaced.lean/declarations/instance-source-edition-2.md) | 106 | `declaration-track:dada762e4cdcb9b7d1a083439fd8602b69fcbf05121dd0faa7447ec07d8085e4` |
-| 7 | `instance` | [(anonymous)](../../../../GeneralTopology/T5Namespaced.lean/declarations/instance.md) | 111 | `declaration-track:1aea704c907e93ba702691fd3530d5cf3a89dc08de80a98d0911c17509194584` |
+| 1 | `theorem` | [ordConnectedComponent_mem_nhds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/T5Namespaced.lean/declarations/ordconnectedcomponent-mem-nhds.md) | 33 | `result-track:3630aef03ed7b527f51be35c27a7110c3b4ec7a0e1206d1746d120069114668b` |
+| 2 | `theorem` | [compl_ordConnectedSection_ordSeparatingSet_mem_nhdsGE](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/T5Namespaced.lean/declarations/compl-ordconnectedsection-ordseparatingset-mem-nhdsge.md) | 38 | `result-track:1bbcdf21b0bbb6e23213ff0f518f07919f76f8baada4478b58e138f7d0016438` |
+| 3 | `theorem` | [compl_ordConnectedSection_ordSeparatingSet_mem_nhdsLE](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/T5Namespaced.lean/declarations/compl-ordconnectedsection-ordseparatingset-mem-nhdsle.md) | 74 | `result-track:ee6c75c16b385168e3dc6f213db245f11d98736be3896457d5a026371bc8d616` |
+| 4 | `theorem` | [compl_ordConnectedSection_ordSeparatingSet_mem_nhds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/T5Namespaced.lean/declarations/compl-ordconnectedsection-ordseparatingset-mem-nhds.md) | 85 | `result-track:6404f674083c9cd55490aaf4b32f5a0f8be0bfb91d922ccc507515db90f8b914` |
+| 5 | `theorem` | [ordT5Nhd_mem_nhdsSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/T5Namespaced.lean/declarations/ordt5nhd-mem-nhdsset.md) | 94 | `result-track:f56da241245ab3d2686ea67bf57b6690213e64cce5b95dbb3bdd8d5e96b878a1` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/T5Namespaced.lean/declarations/instance-source-edition-2.md) | 106 | `declaration-track:dada762e4cdcb9b7d1a083439fd8602b69fcbf05121dd0faa7447ec07d8085e4` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/T5Namespaced.lean/declarations/instance.md) | 111 | `declaration-track:1aea704c907e93ba702691fd3530d5cf3a89dc08de80a98d0911c17509194584` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

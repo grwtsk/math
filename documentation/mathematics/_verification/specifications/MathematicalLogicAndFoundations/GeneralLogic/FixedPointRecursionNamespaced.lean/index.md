@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FixedPointRecursionNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FixedPointRecursionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FixedPointRecursionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FixedPointRecursionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [EllipticCurveObject](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FixedPointRecursionNamespaced.lean/declarations/ellipticcurveobject.md) | 27 | `declaration-track:11ef9d40e9f5eb81034d86ec2c707e4b993cfc98fd4cddd97c357caed2aeffd0` |
-| 2 | `structure` | [FixedPointRecursion](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FixedPointRecursionNamespaced.lean/declarations/fixedpointrecursion.md) | 30 | `declaration-track:d2d3ffed2202de7539a35747cd2a27811d29f02a4232fa25fcfcb5e560e0ce71` |
-| 3 | `theorem` | [fixed_point_recursion_compatible_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FixedPointRecursionNamespaced.lean/declarations/fixed-point-recursion-compatible-if-supplied.md) | 37 | `result-track:855c534aa2c4042ef91f7fc2c0b423e2b1dcd9eaeb58af9f377b08ec38f7d4b6` |
+| 1 | `structure` | [EllipticCurveObject](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FixedPointRecursionNamespaced.lean/declarations/ellipticcurveobject.md) | 27 | `declaration-track:11ef9d40e9f5eb81034d86ec2c707e4b993cfc98fd4cddd97c357caed2aeffd0` |
+| 2 | `structure` | [FixedPointRecursion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FixedPointRecursionNamespaced.lean/declarations/fixedpointrecursion.md) | 30 | `declaration-track:d2d3ffed2202de7539a35747cd2a27811d29f02a4232fa25fcfcb5e560e0ce71` |
+| 3 | `theorem` | [fixed_point_recursion_compatible_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FixedPointRecursionNamespaced.lean/declarations/fixed-point-recursion-compatible-if-supplied.md) | 37 | `result-track:855c534aa2c4042ef91f7fc2c0b423e2b1dcd9eaeb58af9f377b08ec38f7d4b6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/TransportBudget.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/TransportBudget.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/TransportBudget.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/TransportBudget.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ArithmeticTransportBudget](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/TransportBudget.lean/declarations/arithmetictransportbudget.md) | 14 | `declaration-track:fd7096b991685a06c018f07ec5000d47ab49c6ec006715b2534f637954213a1c` |
-| 2 | `theorem` | [abs_add_five](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/TransportBudget.lean/declarations/abs-add-five.md) | 85 | `result-track:c224f50a8110abe9ef52edaa036ec31db32f64304ac87ebcf2b468fbd8d3be38` |
-| 3 | `theorem` | [arithmeticTrace_transport_bound](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/TransportBudget.lean/declarations/arithmetictrace-transport-bound.md) | 103 | `result-track:f82efa60ce10b2b685ffdcdbb491fec77072b72b25f42fca183ec13ed2af4289` |
+| 1 | `structure` | [ArithmeticTransportBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/TransportBudget.lean/declarations/arithmetictransportbudget.md) | 14 | `declaration-track:fd7096b991685a06c018f07ec5000d47ab49c6ec006715b2534f637954213a1c` |
+| 2 | `theorem` | [abs_add_five](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/TransportBudget.lean/declarations/abs-add-five.md) | 85 | `result-track:c224f50a8110abe9ef52edaa036ec31db32f64304ac87ebcf2b468fbd8d3be38` |
+| 3 | `theorem` | [arithmeticTrace_transport_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/TransportBudget.lean/declarations/arithmetictrace-transport-bound.md) | 103 | `result-track:f82efa60ce10b2b685ffdcdbb491fec77072b72b25f42fca183ec13ed2af4289` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

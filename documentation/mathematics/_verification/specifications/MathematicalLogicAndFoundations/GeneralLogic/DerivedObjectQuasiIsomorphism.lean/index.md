@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DerivedObjectQuasiIsomorphism.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DerivedObjectQuasiIsomorphism.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DerivedObjectQuasiIsomorphism.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DerivedObjectQuasiIsomorphism.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [QuasiIsomorphism](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DerivedObjectQuasiIsomorphism.lean/declarations/quasiisomorphism.md) | 18 | `declaration-track:7eadcd67079b4f64f3bbe5c840dcabdd4aa09efa872d59d3ed0e9a02c2f4686f` |
-| 2 | `structure` | [DerivedObject](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DerivedObjectQuasiIsomorphism.lean/declarations/derivedobject.md) | 24 | `declaration-track:7c861529ea4cef5fbbecaf722ae61df4e41252600546d6b9889f6fc1459a3a26` |
-| 3 | `theorem` | [derived_object_localized](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DerivedObjectQuasiIsomorphism.lean/declarations/derived-object-localized.md) | 30 | `result-track:e69fc7c81df315a8b64f213efc1237016c15eb86ea242f56470a19e7fb80b22c` |
-| 4 | `theorem` | [quasi_iso_induces_cohomology_iso](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DerivedObjectQuasiIsomorphism.lean/declarations/quasi-iso-induces-cohomology-iso.md) | 35 | `result-track:43c1156598ddb61d561802fa9b6393d129d0f66e467e946dfa323679895cb849` |
+| 1 | `structure` | [QuasiIsomorphism](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DerivedObjectQuasiIsomorphism.lean/declarations/quasiisomorphism.md) | 18 | `declaration-track:7eadcd67079b4f64f3bbe5c840dcabdd4aa09efa872d59d3ed0e9a02c2f4686f` |
+| 2 | `structure` | [DerivedObject](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DerivedObjectQuasiIsomorphism.lean/declarations/derivedobject.md) | 24 | `declaration-track:7c861529ea4cef5fbbecaf722ae61df4e41252600546d6b9889f6fc1459a3a26` |
+| 3 | `theorem` | [derived_object_localized](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DerivedObjectQuasiIsomorphism.lean/declarations/derived-object-localized.md) | 30 | `result-track:e69fc7c81df315a8b64f213efc1237016c15eb86ea242f56470a19e7fb80b22c` |
+| 4 | `theorem` | [quasi_iso_induces_cohomology_iso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DerivedObjectQuasiIsomorphism.lean/declarations/quasi-iso-induces-cohomology-iso.md) | 35 | `result-track:43c1156598ddb61d561802fa9b6393d129d0f66e467e946dfa323679895cb849` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

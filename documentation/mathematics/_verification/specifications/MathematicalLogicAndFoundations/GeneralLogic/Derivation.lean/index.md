@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Derivation.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Derivation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Derivation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Derivation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TransportDerivationIdentity](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Derivation.lean/declarations/transportderivationidentity.md) | 15 | `declaration-track:60e9d44cb13062ff36b9aec7cfa29a61e04585682eb008abeb6ec284dda8c9e5` |
-| 2 | `def` | [ofSupplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Derivation.lean/declarations/ofsupplied.md) | 48 | `declaration-track:a4eef41d8dc9e558c9d224fae2792378bf5a9d6f076b26944e58db6d78bb3e00` |
-| 3 | `structure` | [TransportDerivation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Derivation.lean/declarations/transportderivation.md) | 115 | `declaration-track:585bbae242e3a94a6c53cb66d9202262e910ab5c8c4181a83f9d4cb2904cb6c6` |
-| 4 | `structure` | [ReflectiveRecoveryProvenance](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Derivation.lean/declarations/reflectiverecoveryprovenance.md) | 196 | `declaration-track:dbfa24d94ba7cced4412f9fd094509a183ee7f239927d8d1d75523cd3849df1e` |
-| 5 | `def` | [ofDerivation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Derivation.lean/declarations/ofderivation.md) | 241 | `declaration-track:8b4f38381b1e2f37c9ce4495fb6373bda66ecc14615f523cd08435e1e4ca6531` |
-| 6 | `structure` | [TransportDerivationRetains](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Derivation.lean/declarations/transportderivationretains.md) | 291 | `declaration-track:e7634d6a6786dad39d5429e05c4c88ffa8e12e162f99509f51bc047610e1c5c6` |
+| 1 | `structure` | [TransportDerivationIdentity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Derivation.lean/declarations/transportderivationidentity.md) | 15 | `declaration-track:60e9d44cb13062ff36b9aec7cfa29a61e04585682eb008abeb6ec284dda8c9e5` |
+| 2 | `def` | [ofSupplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Derivation.lean/declarations/ofsupplied.md) | 48 | `declaration-track:a4eef41d8dc9e558c9d224fae2792378bf5a9d6f076b26944e58db6d78bb3e00` |
+| 3 | `structure` | [TransportDerivation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Derivation.lean/declarations/transportderivation.md) | 115 | `declaration-track:585bbae242e3a94a6c53cb66d9202262e910ab5c8c4181a83f9d4cb2904cb6c6` |
+| 4 | `structure` | [ReflectiveRecoveryProvenance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Derivation.lean/declarations/reflectiverecoveryprovenance.md) | 196 | `declaration-track:dbfa24d94ba7cced4412f9fd094509a183ee7f239927d8d1d75523cd3849df1e` |
+| 5 | `def` | [ofDerivation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Derivation.lean/declarations/ofderivation.md) | 241 | `declaration-track:8b4f38381b1e2f37c9ce4495fb6373bda66ecc14615f523cd08435e1e4ca6531` |
+| 6 | `structure` | [TransportDerivationRetains](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Derivation.lean/declarations/transportderivationretains.md) | 291 | `declaration-track:e7634d6a6786dad39d5429e05c4c88ffa8e12e162f99509f51bc047610e1c5c6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

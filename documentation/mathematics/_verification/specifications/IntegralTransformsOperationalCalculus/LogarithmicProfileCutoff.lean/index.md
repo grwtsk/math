@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../IntegralTransformsOperationalCalculus/LogarithmicProfileCutoff.lean/index.md) · [Full source](../../../../IntegralTransformsOperationalCalculus/LogarithmicProfileCutoff.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/LogarithmicProfileCutoff.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/LogarithmicProfileCutoff.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,9 +61,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exponential_floor_bounds](../../../../IntegralTransformsOperationalCalculus/LogarithmicProfileCutoff.lean/declarations/exponential-floor-bounds.md) | 24 | `result-track:f83fab6bc03e7d70328cee8e5f761e0cc6d777fb9c182a8bf1c25f2d1a84c41c` |
-| 2 | `theorem` | [logarithmic_profile_zero_above_floor](../../../../IntegralTransformsOperationalCalculus/LogarithmicProfileCutoff.lean/declarations/logarithmic-profile-zero-above-floor.md) | 32 | `result-track:35885b05b56ada0e5392250f7f56435b105d8f3151cef6442b438881f3ba4c42` |
-| 3 | `theorem` | [full_logarithmic_integer_inventory](../../../../IntegralTransformsOperationalCalculus/LogarithmicProfileCutoff.lean/declarations/full-logarithmic-integer-inventory.md) | 42 | `result-track:4292c3fab6aca2fb1c63a89789271b4c92b1ad623794a5e338c6686f5dc3837a` |
+| 1 | `theorem` | [exponential_floor_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/LogarithmicProfileCutoff.lean/declarations/exponential-floor-bounds.md) | 24 | `result-track:f83fab6bc03e7d70328cee8e5f761e0cc6d777fb9c182a8bf1c25f2d1a84c41c` |
+| 2 | `theorem` | [logarithmic_profile_zero_above_floor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/LogarithmicProfileCutoff.lean/declarations/logarithmic-profile-zero-above-floor.md) | 32 | `result-track:35885b05b56ada0e5392250f7f56435b105d8f3151cef6442b438881f3ba4c42` |
+| 3 | `theorem` | [full_logarithmic_integer_inventory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/LogarithmicProfileCutoff.lean/declarations/full-logarithmic-integer-inventory.md) | 42 | `result-track:4292c3fab6aca2fb1c63a89789271b4c92b1ad623794a5e338c6686f5dc3837a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

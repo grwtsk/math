@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/RamanujanFormulaNamespacedPublic.lean/index.md) · [Full source](../../../../NumberTheory/RamanujanFormulaNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RamanujanFormulaNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RamanujanFormulaNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [serreDerivative_eq_smul](../../../../NumberTheory/RamanujanFormulaNamespacedPublic.lean/declarations/serrederivative-eq-smul.md) | 51 | `result-track:9c7a77d69ff7d95d460aa17aba9a8eb82755b1eab8253502f563c0e513acb385` |
-| 2 | `theorem` | [serreDerivative_E₄](../../../../NumberTheory/RamanujanFormulaNamespacedPublic.lean/declarations/serrederivative-e-source-edition-2.md) | 67 | `result-track:8f7ff31d0e03f07c8a0d1961bd7bce1c25935785cb979fc82032c0938f9cbe71` |
-| 3 | `theorem` | [serreDerivative_E₆](../../../../NumberTheory/RamanujanFormulaNamespacedPublic.lean/declarations/serrederivative-e.md) | 72 | `result-track:4c5b223f744cb901554517ecebcc8372fa954fe059c9833af231a353d765ccce` |
-| 4 | `lemma` | [normalizedDerivOfComplex_D2](../../../../NumberTheory/RamanujanFormulaNamespacedPublic.lean/declarations/normalizedderivofcomplex-d2.md) | 80 | `result-track:d08aad8607e9c7c5c64213e8be480c43fdbaaa278c24b9f52e2420add0825fb0` |
-| 5 | `lemma` | [serreDerivativeOne_E2_slash](../../../../NumberTheory/RamanujanFormulaNamespacedPublic.lean/declarations/serrederivativeone-e2-slash.md) | 94 | `result-track:06b274a01ede4569b8f753b88ada5179c683d5e037a92be7aa1c2e6e55b02923` |
-| 6 | `def` | [serreDerivativeOneE2](../../../../NumberTheory/RamanujanFormulaNamespacedPublic.lean/declarations/serrederivativeonee2.md) | 123 | `declaration-track:62416eb2f41174a33bc1e9924879744f89ed093bd741d4b8993dc9b9f74f3d98` |
-| 7 | `theorem` | [serreDerivative_E₂](../../../../NumberTheory/RamanujanFormulaNamespacedPublic.lean/declarations/serrederivative-e-source-edition-3.md) | 132 | `result-track:a9d7762a9446bbc37df9e27e0587a7faed3fd8ccd1c764f33d6a6f07cf7fb5fa` |
-| 8 | `theorem` | [normalizedDerivOfComplex_E₂](../../../../NumberTheory/RamanujanFormulaNamespacedPublic.lean/declarations/normalizedderivofcomplex-e.md) | 139 | `result-track:6326b1314aad9e223c1255db26719e615a623e0489bc63711b8698ca8e776f95` |
-| 9 | `theorem` | [normalizedDerivOfComplex_E₄](../../../../NumberTheory/RamanujanFormulaNamespacedPublic.lean/declarations/normalizedderivofcomplex-e-source-edition-2.md) | 143 | `result-track:8a48196189495ab91bf2f8d17debe7c39653d13e0142ed7442eb8d8eaeae31cd` |
-| 10 | `theorem` | [normalizedDerivOfComplex_E₆](../../../../NumberTheory/RamanujanFormulaNamespacedPublic.lean/declarations/normalizedderivofcomplex-e-source-edition-3.md) | 147 | `result-track:a4569c9d57c9fca5b559900b9b964d68d175a2ce0f7d2be5ea3786aebb51fd5b` |
+| 1 | `lemma` | [serreDerivative_eq_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RamanujanFormulaNamespacedPublic.lean/declarations/serrederivative-eq-smul.md) | 51 | `result-track:9c7a77d69ff7d95d460aa17aba9a8eb82755b1eab8253502f563c0e513acb385` |
+| 2 | `theorem` | [serreDerivative_E₄](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RamanujanFormulaNamespacedPublic.lean/declarations/serrederivative-e-source-edition-2.md) | 67 | `result-track:8f7ff31d0e03f07c8a0d1961bd7bce1c25935785cb979fc82032c0938f9cbe71` |
+| 3 | `theorem` | [serreDerivative_E₆](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RamanujanFormulaNamespacedPublic.lean/declarations/serrederivative-e.md) | 72 | `result-track:4c5b223f744cb901554517ecebcc8372fa954fe059c9833af231a353d765ccce` |
+| 4 | `lemma` | [normalizedDerivOfComplex_D2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RamanujanFormulaNamespacedPublic.lean/declarations/normalizedderivofcomplex-d2.md) | 80 | `result-track:d08aad8607e9c7c5c64213e8be480c43fdbaaa278c24b9f52e2420add0825fb0` |
+| 5 | `lemma` | [serreDerivativeOne_E2_slash](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RamanujanFormulaNamespacedPublic.lean/declarations/serrederivativeone-e2-slash.md) | 94 | `result-track:06b274a01ede4569b8f753b88ada5179c683d5e037a92be7aa1c2e6e55b02923` |
+| 6 | `def` | [serreDerivativeOneE2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RamanujanFormulaNamespacedPublic.lean/declarations/serrederivativeonee2.md) | 123 | `declaration-track:62416eb2f41174a33bc1e9924879744f89ed093bd741d4b8993dc9b9f74f3d98` |
+| 7 | `theorem` | [serreDerivative_E₂](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RamanujanFormulaNamespacedPublic.lean/declarations/serrederivative-e-source-edition-3.md) | 132 | `result-track:a9d7762a9446bbc37df9e27e0587a7faed3fd8ccd1c764f33d6a6f07cf7fb5fa` |
+| 8 | `theorem` | [normalizedDerivOfComplex_E₂](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RamanujanFormulaNamespacedPublic.lean/declarations/normalizedderivofcomplex-e.md) | 139 | `result-track:6326b1314aad9e223c1255db26719e615a623e0489bc63711b8698ca8e776f95` |
+| 9 | `theorem` | [normalizedDerivOfComplex_E₄](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RamanujanFormulaNamespacedPublic.lean/declarations/normalizedderivofcomplex-e-source-edition-2.md) | 143 | `result-track:8a48196189495ab91bf2f8d17debe7c39653d13e0142ed7442eb8d8eaeae31cd` |
+| 10 | `theorem` | [normalizedDerivOfComplex_E₆](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RamanujanFormulaNamespacedPublic.lean/declarations/normalizedderivofcomplex-e-source-edition-3.md) | 147 | `result-track:a4569c9d57c9fca5b559900b9b964d68d175a2ce0f7d2be5ea3786aebb51fd5b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

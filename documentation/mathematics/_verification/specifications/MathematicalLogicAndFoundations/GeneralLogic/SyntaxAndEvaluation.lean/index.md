@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SyntaxAndEvaluation.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SyntaxAndEvaluation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SyntaxAndEvaluation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SyntaxAndEvaluation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [NandExpr](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SyntaxAndEvaluation.lean/declarations/nandexpr.md) | 37 | `declaration-track:198ba72d11f546af0b58e8118d685fa2374fc772e10478471d83ab52618e441e` |
-| 2 | `def` | [eval](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SyntaxAndEvaluation.lean/declarations/eval.md) | 44 | `declaration-track:88ba7ef5c4fd76c83ceeffd9a2b62f237376e65c3dc2a90aa271e785c1d939c8` |
-| 3 | `theorem` | [eval_var](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SyntaxAndEvaluation.lean/declarations/eval-var.md) | 49 | `result-track:5f9c80afb78dc7d81f7c1f502678fcef8d19050d3c27311089197994309c9284` |
-| 4 | `theorem` | [eval_nand](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SyntaxAndEvaluation.lean/declarations/eval-nand.md) | 54 | `result-track:57a30acda68ce5fe671bb6367a03708c4892f08ff6e6f862191a0c66b9ab1a85` |
+| 1 | `inductive` | [NandExpr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SyntaxAndEvaluation.lean/declarations/nandexpr.md) | 37 | `declaration-track:198ba72d11f546af0b58e8118d685fa2374fc772e10478471d83ab52618e441e` |
+| 2 | `def` | [eval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SyntaxAndEvaluation.lean/declarations/eval.md) | 44 | `declaration-track:88ba7ef5c4fd76c83ceeffd9a2b62f237376e65c3dc2a90aa271e785c1d939c8` |
+| 3 | `theorem` | [eval_var](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SyntaxAndEvaluation.lean/declarations/eval-var.md) | 49 | `result-track:5f9c80afb78dc7d81f7c1f502678fcef8d19050d3c27311089197994309c9284` |
+| 4 | `theorem` | [eval_nand](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SyntaxAndEvaluation.lean/declarations/eval-nand.md) | 54 | `result-track:57a30acda68ce5fe671bb6367a03708c4892f08ff6e6f862191a0c66b9ab1a85` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

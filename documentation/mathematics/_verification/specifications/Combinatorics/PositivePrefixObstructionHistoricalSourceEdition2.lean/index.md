@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/PositivePrefixObstructionHistoricalSourceEdition2.lean/index.md) · [Full source](../../../../Combinatorics/PositivePrefixObstructionHistoricalSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PositivePrefixObstructionHistoricalSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PositivePrefixObstructionHistoricalSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Order.Embeddings.PrefixObstruction`](../../../../Combinatorics/OrderEmbeddingsPrefixObstructionHistoricalSourceEdition2.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Order.Embeddings.PrefixObstruction`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OrderEmbeddingsPrefixObstructionHistoricalSourceEdition2.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../Combinatorics/PositivePrefixObstructionHistoricalSourceEdition2.lean/declarations/example-source-edition-5.md) | 7 | `declaration-track:4aeceba9bcc272c98b52236839e9607998a009a99dfea65929717410e07c0d1a` |
-| 2 | `example` | [(anonymous)](../../../../Combinatorics/PositivePrefixObstructionHistoricalSourceEdition2.lean/declarations/example-source-edition-8.md) | 14 | `declaration-track:e9858594d2768d2422bfb09d4ed388c0a07321ce77c23c64818919be22200235` |
-| 3 | `example` | [(anonymous)](../../../../Combinatorics/PositivePrefixObstructionHistoricalSourceEdition2.lean/declarations/example-source-edition-2.md) | 17 | `declaration-track:1ceb05e59c84be0838c1e822275b93a37c031d20d8472aad159a9d980a7d586b` |
-| 4 | `example` | [(anonymous)](../../../../Combinatorics/PositivePrefixObstructionHistoricalSourceEdition2.lean/declarations/example-source-edition-9.md) | 23 | `declaration-track:f5f26e51c2373e823a2b939b935c1f14ee4f7660d7c2f09135fa2c564211a59c` |
-| 5 | `example` | [(anonymous)](../../../../Combinatorics/PositivePrefixObstructionHistoricalSourceEdition2.lean/declarations/example-source-edition-3.md) | 24 | `declaration-track:2647b6dff810d18f059af5fe0af2d0068cafe2c422fae5c8a6f053f5f75cdefd` |
-| 6 | `example` | [(anonymous)](../../../../Combinatorics/PositivePrefixObstructionHistoricalSourceEdition2.lean/declarations/example-source-edition-7.md) | 25 | `declaration-track:99a6ddce11f177d2f3bdb23dc5a90fcf36f517860c8ab9f25304cd0f02fcd765` |
-| 7 | `example` | [(anonymous)](../../../../Combinatorics/PositivePrefixObstructionHistoricalSourceEdition2.lean/declarations/example-source-edition-4.md) | 27 | `declaration-track:3a6b95eb622e6ff45de88d5b86677a6e26ce1de8fe060fd90f0b517fd80d0711` |
-| 8 | `example` | [(anonymous)](../../../../Combinatorics/PositivePrefixObstructionHistoricalSourceEdition2.lean/declarations/example-source-edition-6.md) | 28 | `declaration-track:7bc8099dd3eb3080385e37138d1fcef633ff1545875204f06af42444367c063a` |
-| 9 | `example` | [(anonymous)](../../../../Combinatorics/PositivePrefixObstructionHistoricalSourceEdition2.lean/declarations/example.md) | 30 | `declaration-track:0eaaac99b73cfa7d65014c36281c7ade85bc58fc278accc0de33016127d6a2c4` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PositivePrefixObstructionHistoricalSourceEdition2.lean/declarations/example-source-edition-5.md) | 7 | `declaration-track:4aeceba9bcc272c98b52236839e9607998a009a99dfea65929717410e07c0d1a` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PositivePrefixObstructionHistoricalSourceEdition2.lean/declarations/example-source-edition-8.md) | 14 | `declaration-track:e9858594d2768d2422bfb09d4ed388c0a07321ce77c23c64818919be22200235` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PositivePrefixObstructionHistoricalSourceEdition2.lean/declarations/example-source-edition-2.md) | 17 | `declaration-track:1ceb05e59c84be0838c1e822275b93a37c031d20d8472aad159a9d980a7d586b` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PositivePrefixObstructionHistoricalSourceEdition2.lean/declarations/example-source-edition-9.md) | 23 | `declaration-track:f5f26e51c2373e823a2b939b935c1f14ee4f7660d7c2f09135fa2c564211a59c` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PositivePrefixObstructionHistoricalSourceEdition2.lean/declarations/example-source-edition-3.md) | 24 | `declaration-track:2647b6dff810d18f059af5fe0af2d0068cafe2c422fae5c8a6f053f5f75cdefd` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PositivePrefixObstructionHistoricalSourceEdition2.lean/declarations/example-source-edition-7.md) | 25 | `declaration-track:99a6ddce11f177d2f3bdb23dc5a90fcf36f517860c8ab9f25304cd0f02fcd765` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PositivePrefixObstructionHistoricalSourceEdition2.lean/declarations/example-source-edition-4.md) | 27 | `declaration-track:3a6b95eb622e6ff45de88d5b86677a6e26ce1de8fe060fd90f0b517fd80d0711` |
+| 8 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PositivePrefixObstructionHistoricalSourceEdition2.lean/declarations/example-source-edition-6.md) | 28 | `declaration-track:7bc8099dd3eb3080385e37138d1fcef633ff1545875204f06af42444367c063a` |
+| 9 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PositivePrefixObstructionHistoricalSourceEdition2.lean/declarations/example.md) | 30 | `declaration-track:0eaaac99b73cfa7d65014c36281c7ade85bc58fc278accc0de33016127d6a2c4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

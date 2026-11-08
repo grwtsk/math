@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ImportGraphNamespacedPublicImportsOf.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ImportGraphNamespacedPublicImportsOf.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ImportGraphNamespacedPublicImportsOf.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ImportGraphNamespacedPublicImportsOf.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [importsOf](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ImportGraphNamespacedPublicImportsOf.lean/declarations/importsof.md) | 24 | `declaration-track:27a567844475df44bf3b0fa739271c145333faab884d2e3bccc21e85b73e1da9` |
-| 2 | `def` | [importGraph](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ImportGraphNamespacedPublicImportsOf.lean/declarations/importgraph.md) | 39 | `declaration-track:f6e1ee940e7680044ae6b2fc2ec0c5ac3f219ecd3d1b8db209f581d8f2d85f05` |
+| 1 | `def` | [importsOf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ImportGraphNamespacedPublicImportsOf.lean/declarations/importsof.md) | 24 | `declaration-track:27a567844475df44bf3b0fa739271c145333faab884d2e3bccc21e85b73e1da9` |
+| 2 | `def` | [importGraph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ImportGraphNamespacedPublicImportsOf.lean/declarations/importgraph.md) | 39 | `declaration-track:f6e1ee940e7680044ae6b2fc2ec0c5ac3f219ecd3d1b8db209f581d8f2d85f05` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

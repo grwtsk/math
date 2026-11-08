@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/GraphCellGraph.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/GraphCellGraph.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/GraphCellGraph.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/GraphCellGraph.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CellGraph](../../../../../Combinatorics/GraphTheory/GraphCellGraph.lean/declarations/cellgraph.md) | 21 | `declaration-track:bf0028511249df850b8e821af28b5495529ffb89ca272584fb894bd26ef40992` |
-| 2 | `def` | [gridEdgeGraph](../../../../../Combinatorics/GraphTheory/GraphCellGraph.lean/declarations/gridedgegraph.md) | 29 | `declaration-track:c8b94951592e44eb146b7e92ec142c1d72eb7507dce86411dda9a7e780442fd6` |
+| 1 | `structure` | [CellGraph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/GraphCellGraph.lean/declarations/cellgraph.md) | 21 | `declaration-track:bf0028511249df850b8e821af28b5495529ffb89ca272584fb894bd26ef40992` |
+| 2 | `def` | [gridEdgeGraph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/GraphCellGraph.lean/declarations/gridedgegraph.md) | 29 | `declaration-track:c8b94951592e44eb146b7e92ec142c1d72eb7507dce86411dda9a7e780442fd6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

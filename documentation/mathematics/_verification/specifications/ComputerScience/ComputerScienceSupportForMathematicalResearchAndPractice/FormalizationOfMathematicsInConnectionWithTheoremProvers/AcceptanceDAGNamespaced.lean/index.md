@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AcceptanceDAGNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AcceptanceDAGNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AcceptanceDAGNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AcceptanceDAGNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [acceptance_dag_requires_all_nodes](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AcceptanceDAGNamespaced.lean/declarations/acceptance-dag-requires-all-nodes.md) | 27 | `result-track:86afa5b49f3d892ff607a1fa9db7a61aa8dfdf26207d1b36b96b8354b59ede46` |
-| 2 | `theorem` | [acceptance_dag_requires_no_contracts](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AcceptanceDAGNamespaced.lean/declarations/acceptance-dag-requires-no-contracts.md) | 32 | `result-track:2f5b30d66a73ec2d8a7f2c06a36ece24b9812915bb0cb10c2c16e299ae38c9df` |
-| 3 | `theorem` | [acceptance_dag_requires_zeta_specialization](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AcceptanceDAGNamespaced.lean/declarations/acceptance-dag-requires-zeta-specialization.md) | 37 | `result-track:1a9774adf4aff6a124b4638b51b754aa040f9f83b075615f31d187d3fd59ba7b` |
+| 1 | `theorem` | [acceptance_dag_requires_all_nodes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AcceptanceDAGNamespaced.lean/declarations/acceptance-dag-requires-all-nodes.md) | 27 | `result-track:86afa5b49f3d892ff607a1fa9db7a61aa8dfdf26207d1b36b96b8354b59ede46` |
+| 2 | `theorem` | [acceptance_dag_requires_no_contracts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AcceptanceDAGNamespaced.lean/declarations/acceptance-dag-requires-no-contracts.md) | 32 | `result-track:2f5b30d66a73ec2d8a7f2c06a36ece24b9812915bb0cb10c2c16e299ae38c9df` |
+| 3 | `theorem` | [acceptance_dag_requires_zeta_specialization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AcceptanceDAGNamespaced.lean/declarations/acceptance-dag-requires-zeta-specialization.md) | 37 | `result-track:1a9774adf4aff6a124b4638b51b754aa040f9f83b075615f31d187d3fd59ba7b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

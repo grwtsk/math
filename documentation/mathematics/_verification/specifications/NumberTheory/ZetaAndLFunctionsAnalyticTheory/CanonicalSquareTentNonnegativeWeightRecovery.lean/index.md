@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentNonnegativeWeightRecovery.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentNonnegativeWeightRecovery.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentNonnegativeWeightRecovery.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentNonnegativeWeightRecovery.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentExceptionalWeightRealAxis`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentExceptionalWeightRealAxis.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentExceptionalWeightRealAxis`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentExceptionalWeightRealAxis.lean/index.md) — import line 6; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [right_half_plane_injective](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentNonnegativeWeightRecovery.lean/declarations/right-half-plane-injective.md) | 30 | `result-track:c64e04c140d4c1cc4ed7fe5633a6c75bc2499eaed91649fffcc1d24bf0c11b08` |
-| 2 | `theorem` | [nonnegative_real_weight_injective](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentNonnegativeWeightRecovery.lean/declarations/nonnegative-real-weight-injective.md) | 41 | `result-track:5905b1bc1f96aa2bd7228680077827d7aeeb2b6aed8a7306319ec6c7597adbb6` |
+| 1 | `theorem` | [right_half_plane_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentNonnegativeWeightRecovery.lean/declarations/right-half-plane-injective.md) | 30 | `result-track:c64e04c140d4c1cc4ed7fe5633a6c75bc2499eaed91649fffcc1d24bf0c11b08` |
+| 2 | `theorem` | [nonnegative_real_weight_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentNonnegativeWeightRecovery.lean/declarations/nonnegative-real-weight-injective.md) | 41 | `result-track:5905b1bc1f96aa2bd7228680077827d7aeeb2b6aed8a7306319ec6c7597adbb6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

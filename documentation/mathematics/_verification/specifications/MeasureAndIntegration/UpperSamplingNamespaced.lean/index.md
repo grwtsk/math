@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/UpperSamplingNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/UpperSamplingNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/UpperSamplingNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/UpperSamplingNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [upperWeight](../../../../MeasureAndIntegration/UpperSamplingNamespaced.lean/declarations/upperweight.md) | 26 | `declaration-track:c7ea3bd73e44096f7bd33b4f2d6b14c927b9688c8f47050ab2956b814b1276bd` |
-| 2 | `theorem` | [upperWeight_exp](../../../../MeasureAndIntegration/UpperSamplingNamespaced.lean/declarations/upperweight-exp.md) | 28 | `result-track:749a6355271f64f9ca610b20bdb6aaa7800cf77fb6233e33b1d5df5a9be8e900` |
-| 3 | `theorem` | [upperWeight_integrable](../../../../MeasureAndIntegration/UpperSamplingNamespaced.lean/declarations/upperweight-integrable.md) | 37 | `result-track:4f47c58f591a8cdf4586334acc941d1d597857deef96bef4da32c72c6c2fb022` |
-| 4 | `theorem` | [upperWeight_integral](../../../../MeasureAndIntegration/UpperSamplingNamespaced.lean/declarations/upperweight-integral.md) | 47 | `result-track:8d379c4dd14df42fb8c5506114fc3171c5faf94572339a2830cf7152e84dcd9d` |
-| 5 | `theorem` | [upper_log_moments](../../../../MeasureAndIntegration/UpperSamplingNamespaced.lean/declarations/upper-log-moments.md) | 57 | `result-track:06c97224e485a250fe4f69fe2b38c82cd903c7ec9f4ccfbe4865af1aca253e61` |
-| 6 | `def` | [actualRemainder](../../../../MeasureAndIntegration/UpperSamplingNamespaced.lean/declarations/actualremainder.md) | 63 | `declaration-track:cfdbfe992bb44474c01cfb47c61a326ac0e5c26747e9d5b2d1a763e402c541ce` |
-| 7 | `theorem` | [actualRemainder_measurable](../../../../MeasureAndIntegration/UpperSamplingNamespaced.lean/declarations/actualremainder-measurable.md) | 66 | `result-track:d54c44b1adc07ac40f158e010986da44d004df05e65d98229514c8cf4bf521f8` |
-| 8 | `theorem` | [upper_remainder_pointwise](../../../../MeasureAndIntegration/UpperSamplingNamespaced.lean/declarations/upper-remainder-pointwise.md) | 72 | `result-track:aa8497cacbbfff4158991b98624f1a2b5addd65fa0006be3d268e7af578314e5` |
-| 9 | `theorem` | [upper_remainder_integrable](../../../../MeasureAndIntegration/UpperSamplingNamespaced.lean/declarations/upper-remainder-integrable.md) | 91 | `result-track:073fc5354261ffc59730b6f828d916a30038de6b8e566860ef68ff8ada79f93d` |
-| 10 | `theorem` | [upper_remainder_bound](../../../../MeasureAndIntegration/UpperSamplingNamespaced.lean/declarations/upper-remainder-bound.md) | 99 | `result-track:222130e3a93f8dc95afbe2db6a3b30f668226e636bb1ea9e3128fcde97c576e7` |
+| 1 | `def` | [upperWeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/UpperSamplingNamespaced.lean/declarations/upperweight.md) | 26 | `declaration-track:c7ea3bd73e44096f7bd33b4f2d6b14c927b9688c8f47050ab2956b814b1276bd` |
+| 2 | `theorem` | [upperWeight_exp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/UpperSamplingNamespaced.lean/declarations/upperweight-exp.md) | 28 | `result-track:749a6355271f64f9ca610b20bdb6aaa7800cf77fb6233e33b1d5df5a9be8e900` |
+| 3 | `theorem` | [upperWeight_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/UpperSamplingNamespaced.lean/declarations/upperweight-integrable.md) | 37 | `result-track:4f47c58f591a8cdf4586334acc941d1d597857deef96bef4da32c72c6c2fb022` |
+| 4 | `theorem` | [upperWeight_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/UpperSamplingNamespaced.lean/declarations/upperweight-integral.md) | 47 | `result-track:8d379c4dd14df42fb8c5506114fc3171c5faf94572339a2830cf7152e84dcd9d` |
+| 5 | `theorem` | [upper_log_moments](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/UpperSamplingNamespaced.lean/declarations/upper-log-moments.md) | 57 | `result-track:06c97224e485a250fe4f69fe2b38c82cd903c7ec9f4ccfbe4865af1aca253e61` |
+| 6 | `def` | [actualRemainder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/UpperSamplingNamespaced.lean/declarations/actualremainder.md) | 63 | `declaration-track:cfdbfe992bb44474c01cfb47c61a326ac0e5c26747e9d5b2d1a763e402c541ce` |
+| 7 | `theorem` | [actualRemainder_measurable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/UpperSamplingNamespaced.lean/declarations/actualremainder-measurable.md) | 66 | `result-track:d54c44b1adc07ac40f158e010986da44d004df05e65d98229514c8cf4bf521f8` |
+| 8 | `theorem` | [upper_remainder_pointwise](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/UpperSamplingNamespaced.lean/declarations/upper-remainder-pointwise.md) | 72 | `result-track:aa8497cacbbfff4158991b98624f1a2b5addd65fa0006be3d268e7af578314e5` |
+| 9 | `theorem` | [upper_remainder_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/UpperSamplingNamespaced.lean/declarations/upper-remainder-integrable.md) | 91 | `result-track:073fc5354261ffc59730b6f828d916a30038de6b8e566860ef68ff8ada79f93d` |
+| 10 | `theorem` | [upper_remainder_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/UpperSamplingNamespaced.lean/declarations/upper-remainder-bound.md) | 99 | `result-track:222130e3a93f8dc95afbe2db6a3b30f668226e636bb1ea9e3128fcde97c576e7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

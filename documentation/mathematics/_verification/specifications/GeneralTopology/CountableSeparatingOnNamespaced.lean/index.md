@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/CountableSeparatingOnNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/CountableSeparatingOnNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CountableSeparatingOnNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CountableSeparatingOnNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../GeneralTopology/CountableSeparatingOnNamespaced.lean/declarations/instance-source-edition-2.md) | 31 | `declaration-track:3ec92b2a4424ee74a07d2a6fd8585157ca37312cf2cd3c708f047e926c6fba58` |
-| 2 | `instance` | [(anonymous)](../../../../GeneralTopology/CountableSeparatingOnNamespaced.lean/declarations/instance.md) | 40 | `declaration-track:0ef4329c47a2490b8a70d95becd7b61e85baa8d197fa4242ec167d34a41754f4` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CountableSeparatingOnNamespaced.lean/declarations/instance-source-edition-2.md) | 31 | `declaration-track:3ec92b2a4424ee74a07d2a6fd8585157ca37312cf2cd3c708f047e926c6fba58` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CountableSeparatingOnNamespaced.lean/declarations/instance.md) | 40 | `declaration-track:0ef4329c47a2490b8a70d95becd7b61e85baa8d197fa4242ec167d34a41754f4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

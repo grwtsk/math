@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SingularLinearSolverEdition1.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SingularLinearSolverEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SingularLinearSolverEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SingularLinearSolverEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [LinearRangeFactorization](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SingularLinearSolverEdition1.lean/declarations/linearrangefactorization.md) | 32 | `declaration-track:61fe603b34c1d0e145642a256aa89c105203cee533c9704377a21b7d2a2bd5d6` |
-| 2 | `def` | [ofRangeLe](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SingularLinearSolverEdition1.lean/declarations/ofrangele.md) | 41 | `declaration-track:2669562cf6d8b10329fcea87bda3a1fba506abf26e95d2e06e9bd5b5f54a5f5b` |
-| 3 | `theorem` | [factor_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SingularLinearSolverEdition1.lean/declarations/factor-apply.md) | 62 | `result-track:a279f087757efd2b14e7c5b7836678840fe3e321543ec83db3dab0d59d12a115` |
-| 4 | `def` | [singularProvenanceFactorization](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SingularLinearSolverEdition1.lean/declarations/singularprovenancefactorization.md) | 73 | `declaration-track:69e856764bfae1184bdb0f8e26e3b9826a5113e5258df805a3c669bf2653b930` |
-| 5 | `theorem` | [singularProvenanceFactorization_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SingularLinearSolverEdition1.lean/declarations/singularprovenancefactorization-apply.md) | 89 | `result-track:e61631322909c0850d255e2bd90124fd063c53f2bbee54b5ac74a0edb22af35e` |
-| 6 | `def` | [singularBlockSchurSolver](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SingularLinearSolverEdition1.lean/declarations/singularblockschursolver.md) | 105 | `declaration-track:6e762713c58179905a21a88e503309344c82c6e90439d49fd525ce6c56cf8841` |
-| 7 | `theorem` | [singular_schur_nonnegative](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SingularLinearSolverEdition1.lean/declarations/singular-schur-nonnegative.md) | 140 | `result-track:a72998babec0f362d3a0a24763620b7a3219241809e24e819091c306dce92fff` |
+| 1 | `structure` | [LinearRangeFactorization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SingularLinearSolverEdition1.lean/declarations/linearrangefactorization.md) | 32 | `declaration-track:61fe603b34c1d0e145642a256aa89c105203cee533c9704377a21b7d2a2bd5d6` |
+| 2 | `def` | [ofRangeLe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SingularLinearSolverEdition1.lean/declarations/ofrangele.md) | 41 | `declaration-track:2669562cf6d8b10329fcea87bda3a1fba506abf26e95d2e06e9bd5b5f54a5f5b` |
+| 3 | `theorem` | [factor_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SingularLinearSolverEdition1.lean/declarations/factor-apply.md) | 62 | `result-track:a279f087757efd2b14e7c5b7836678840fe3e321543ec83db3dab0d59d12a115` |
+| 4 | `def` | [singularProvenanceFactorization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SingularLinearSolverEdition1.lean/declarations/singularprovenancefactorization.md) | 73 | `declaration-track:69e856764bfae1184bdb0f8e26e3b9826a5113e5258df805a3c669bf2653b930` |
+| 5 | `theorem` | [singularProvenanceFactorization_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SingularLinearSolverEdition1.lean/declarations/singularprovenancefactorization-apply.md) | 89 | `result-track:e61631322909c0850d255e2bd90124fd063c53f2bbee54b5ac74a0edb22af35e` |
+| 6 | `def` | [singularBlockSchurSolver](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SingularLinearSolverEdition1.lean/declarations/singularblockschursolver.md) | 105 | `declaration-track:6e762713c58179905a21a88e503309344c82c6e90439d49fd525ce6c56cf8841` |
+| 7 | `theorem` | [singular_schur_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SingularLinearSolverEdition1.lean/declarations/singular-schur-nonnegative.md) | 140 | `result-track:a72998babec0f362d3a0a24763620b7a3219241809e24e819091c306dce92fff` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

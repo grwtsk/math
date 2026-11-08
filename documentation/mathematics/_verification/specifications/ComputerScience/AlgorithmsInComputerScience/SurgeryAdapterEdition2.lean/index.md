@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/SurgeryAdapterEdition2.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/SurgeryAdapterEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SurgeryAdapterEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SurgeryAdapterEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SurgicalPatchAdapter](../../../../../ComputerScience/AlgorithmsInComputerScience/SurgeryAdapterEdition2.lean/declarations/surgicalpatchadapter.md) | 28 | `declaration-track:fb25f2032c97ee20bbd11fe222cf70e5ac1bfc4127e3a222874507d324329a72` |
-| 2 | `theorem` | [boundary_compatible](../../../../../ComputerScience/AlgorithmsInComputerScience/SurgeryAdapterEdition2.lean/declarations/boundary-compatible.md) | 42 | `result-track:485a5151046fa3a817befebace86ee5b986604093c1cc8a704b5af5d320d7ecc` |
-| 3 | `def` | [extension](../../../../../ComputerScience/AlgorithmsInComputerScience/SurgeryAdapterEdition2.lean/declarations/extension.md) | 53 | `declaration-track:0e60e7c3f8d239372d3d853c061c509ad4b01163156c861925dfdfa523225b77` |
-| 4 | `theorem` | [extendsTo](../../../../../ComputerScience/AlgorithmsInComputerScience/SurgeryAdapterEdition2.lean/declarations/extendsto.md) | 62 | `result-track:6e9fc13fe4e68ca076a0d9fe49fdcfb2a208dbd1c49ef3a7743496f17963ac03` |
+| 1 | `structure` | [SurgicalPatchAdapter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SurgeryAdapterEdition2.lean/declarations/surgicalpatchadapter.md) | 28 | `declaration-track:fb25f2032c97ee20bbd11fe222cf70e5ac1bfc4127e3a222874507d324329a72` |
+| 2 | `theorem` | [boundary_compatible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SurgeryAdapterEdition2.lean/declarations/boundary-compatible.md) | 42 | `result-track:485a5151046fa3a817befebace86ee5b986604093c1cc8a704b5af5d320d7ecc` |
+| 3 | `def` | [extension](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SurgeryAdapterEdition2.lean/declarations/extension.md) | 53 | `declaration-track:0e60e7c3f8d239372d3d853c061c509ad4b01163156c861925dfdfa523225b77` |
+| 4 | `theorem` | [extendsTo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SurgeryAdapterEdition2.lean/declarations/extendsto.md) | 62 | `result-track:6e9fc13fe4e68ca076a0d9fe49fdcfb2a208dbd1c49ef3a7743496f17963ac03` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

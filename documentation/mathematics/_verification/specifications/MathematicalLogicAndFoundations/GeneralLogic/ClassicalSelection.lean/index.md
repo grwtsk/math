@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ClassicalSelection.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ClassicalSelection.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ClassicalSelection.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ClassicalSelection.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [classicalSelectedWitness](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ClassicalSelection.lean/declarations/classicalselectedwitness.md) | 15 | `declaration-track:ae37b6e1b35635a113ff8b049fa84c941c216fa4fb3c39f44293b39937a84935` |
+| 1 | `def` | [classicalSelectedWitness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ClassicalSelection.lean/declarations/classicalselectedwitness.md) | 15 | `declaration-track:ae37b6e1b35635a113ff8b049fa84c941c216fa4fb3c39f44293b39937a84935` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

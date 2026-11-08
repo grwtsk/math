@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/Injective.lean/index.md) · [Full source](../../../../CommutativeAlgebra/Injective.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Injective.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Injective.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [_root_.RingHom.injective_stableUnderComposition](../../../../CommutativeAlgebra/Injective.lean/declarations/root-ringhom-injective-stableundercomposition.md) | 10 | `result-track:b571ced68700a90c6a496a5880b5a87747951574c1623463f2703168442c0aa6` |
-| 2 | `lemma` | [_root_.RingHom.injective_respectsIso](../../../../CommutativeAlgebra/Injective.lean/declarations/root-ringhom-injective-respectsiso.md) | 16 | `result-track:9539197332f55acfb724bb27f78c29fba0e0d1a123cc13a2ce645ba8788972ac` |
+| 1 | `lemma` | [_root_.RingHom.injective_stableUnderComposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Injective.lean/declarations/root-ringhom-injective-stableundercomposition.md) | 10 | `result-track:b571ced68700a90c6a496a5880b5a87747951574c1623463f2703168442c0aa6` |
+| 2 | `lemma` | [_root_.RingHom.injective_respectsIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Injective.lean/declarations/root-ringhom-injective-respectsiso.md) | 16 | `result-track:9539197332f55acfb724bb27f78c29fba0e0d1a123cc13a2ce645ba8788972ac` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

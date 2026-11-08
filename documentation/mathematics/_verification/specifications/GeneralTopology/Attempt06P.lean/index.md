@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/Attempt06P.lean/index.md) · [Full source](../../../../GeneralTopology/Attempt06P.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Attempt06P.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Attempt06P.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,18 +58,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [p](../../../../GeneralTopology/Attempt06P.lean/declarations/p.md) | 15 | `declaration-track:80876c54a5b716839f91fb5f891ef0430e6002bfbc746e0bcdd0f7fe0a1ce3ab` |
-| 2 | `def` | [normalizedSquare](../../../../GeneralTopology/Attempt06P.lean/declarations/normalizedsquare.md) | 17 | `declaration-track:ed35910bf33e2ad6c569fcebc218fb24ca27c2002158cdb827bddc11c9695c53` |
-| 3 | `theorem` | [p_coe](../../../../GeneralTopology/Attempt06P.lean/declarations/p-coe.md) | 20 | `result-track:89014db3480c011e4dc5522e6d7b8b4e301a6bbf1c11cb5c89cefe7443ad817a` |
-| 4 | `theorem` | [actual_scaled_square_real](../../../../GeneralTopology/Attempt06P.lean/declarations/actual-scaled-square-real.md) | 23 | `result-track:c9cbae09372220edd629cdad26c4509be5df46b9c12371fcb530a638dec33314` |
-| 5 | `theorem` | [p_ratio](../../../../GeneralTopology/Attempt06P.lean/declarations/p-ratio.md) | 49 | `result-track:d8c5b2c30571155ccbf60f071d455ed6efa10af79d1b6e0213bdf7f3a110ee9c` |
-| 6 | `theorem` | [p_ratio_tendsto](../../../../GeneralTopology/Attempt06P.lean/declarations/p-ratio-tendsto.md) | 53 | `result-track:9a10d95b19f938b4064858522dc0b3862c5f9a1ae873f4aa910ceb2969cb7d4b` |
-| 7 | `theorem` | [normalization_tendsto](../../../../GeneralTopology/Attempt06P.lean/declarations/normalization-tendsto.md) | 70 | `result-track:045221702df8738771ef2c9598b0e9256516cbea076a7e26353629bc545a1484` |
-| 8 | `theorem` | [exp_scaled_neg_tendsto](../../../../GeneralTopology/Attempt06P.lean/declarations/exp-scaled-neg-tendsto.md) | 79 | `result-track:9a1f2e59340114dba5f6f0134bfdba689176c1e50c9d9e069a8d7e6a25d8af90` |
-| 9 | `theorem` | [exp_square_rescale](../../../../GeneralTopology/Attempt06P.lean/declarations/exp-square-rescale.md) | 84 | `result-track:4d0db746beb7755e225d9cf556077674d8d98e1b2476fc346834bfd32330ddae` |
-| 10 | `theorem` | [scaled_square_exact](../../../../GeneralTopology/Attempt06P.lean/declarations/scaled-square-exact.md) | 93 | `result-track:8c070e7df61ac3d0d3864b1c6ce348c6b135b3f5c17e71f4af9e02a8ac077b6b` |
-| 11 | `theorem` | [scaled_square_tendsto](../../../../GeneralTopology/Attempt06P.lean/declarations/scaled-square-tendsto.md) | 115 | `result-track:c4b804c11b2d577a2322a727a1620faaddd769033625dd8be6f330b9d8b836fc` |
-| 12 | `theorem` | [quarter_scaled_limit](../../../../GeneralTopology/Attempt06P.lean/declarations/quarter-scaled-limit.md) | 135 | `result-track:7c257f2ffe09b8e2057a42103b808071f1929208b65c98907b98fb47dcec5e03` |
+| 1 | `def` | [p](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Attempt06P.lean/declarations/p.md) | 15 | `declaration-track:80876c54a5b716839f91fb5f891ef0430e6002bfbc746e0bcdd0f7fe0a1ce3ab` |
+| 2 | `def` | [normalizedSquare](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Attempt06P.lean/declarations/normalizedsquare.md) | 17 | `declaration-track:ed35910bf33e2ad6c569fcebc218fb24ca27c2002158cdb827bddc11c9695c53` |
+| 3 | `theorem` | [p_coe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Attempt06P.lean/declarations/p-coe.md) | 20 | `result-track:89014db3480c011e4dc5522e6d7b8b4e301a6bbf1c11cb5c89cefe7443ad817a` |
+| 4 | `theorem` | [actual_scaled_square_real](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Attempt06P.lean/declarations/actual-scaled-square-real.md) | 23 | `result-track:c9cbae09372220edd629cdad26c4509be5df46b9c12371fcb530a638dec33314` |
+| 5 | `theorem` | [p_ratio](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Attempt06P.lean/declarations/p-ratio.md) | 49 | `result-track:d8c5b2c30571155ccbf60f071d455ed6efa10af79d1b6e0213bdf7f3a110ee9c` |
+| 6 | `theorem` | [p_ratio_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Attempt06P.lean/declarations/p-ratio-tendsto.md) | 53 | `result-track:9a10d95b19f938b4064858522dc0b3862c5f9a1ae873f4aa910ceb2969cb7d4b` |
+| 7 | `theorem` | [normalization_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Attempt06P.lean/declarations/normalization-tendsto.md) | 70 | `result-track:045221702df8738771ef2c9598b0e9256516cbea076a7e26353629bc545a1484` |
+| 8 | `theorem` | [exp_scaled_neg_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Attempt06P.lean/declarations/exp-scaled-neg-tendsto.md) | 79 | `result-track:9a1f2e59340114dba5f6f0134bfdba689176c1e50c9d9e069a8d7e6a25d8af90` |
+| 9 | `theorem` | [exp_square_rescale](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Attempt06P.lean/declarations/exp-square-rescale.md) | 84 | `result-track:4d0db746beb7755e225d9cf556077674d8d98e1b2476fc346834bfd32330ddae` |
+| 10 | `theorem` | [scaled_square_exact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Attempt06P.lean/declarations/scaled-square-exact.md) | 93 | `result-track:8c070e7df61ac3d0d3864b1c6ce348c6b135b3f5c17e71f4af9e02a8ac077b6b` |
+| 11 | `theorem` | [scaled_square_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Attempt06P.lean/declarations/scaled-square-tendsto.md) | 115 | `result-track:c4b804c11b2d577a2322a727a1620faaddd769033625dd8be6f330b9d8b836fc` |
+| 12 | `theorem` | [quarter_scaled_limit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Attempt06P.lean/declarations/quarter-scaled-limit.md) | 135 | `result-track:7c257f2ffe09b8e2057a42103b808071f1929208b65c98907b98fb47dcec5e03` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

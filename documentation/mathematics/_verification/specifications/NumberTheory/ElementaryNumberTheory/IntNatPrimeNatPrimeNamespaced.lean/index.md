@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/IntNatPrimeNatPrimeNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/IntNatPrimeNatPrimeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/IntNatPrimeNatPrimeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/IntNatPrimeNatPrimeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [not_prime_of_int_mul](../../../../../NumberTheory/ElementaryNumberTheory/IntNatPrimeNatPrimeNamespaced.lean/declarations/not-prime-of-int-mul.md) | 27 | `result-track:eef79e6fa9c231332a92ba12cef31b7a95a0e6231d48f0d895e485da628112bd` |
-| 2 | `theorem` | [succ_dvd_or_succ_dvd_of_succ_sum_dvd_mul](../../../../../NumberTheory/ElementaryNumberTheory/IntNatPrimeNatPrimeNamespaced.lean/declarations/succ-dvd-or-succ-dvd-of-succ-sum-dvd-mul.md) | 31 | `result-track:c6b1863b3616f3232bc81357671443a63470525cefc12dfa13304033af9607d2` |
-| 3 | `theorem` | [Prime.dvd_natAbs_of_coe_dvd_sq](../../../../../NumberTheory/ElementaryNumberTheory/IntNatPrimeNatPrimeNamespaced.lean/declarations/prime-dvd-natabs-of-coe-dvd-sq.md) | 42 | `result-track:5325c954bd52612098788ae26014b1c551f1683cb1de73e960886dbca3cfbafa` |
+| 1 | `theorem` | [not_prime_of_int_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/IntNatPrimeNatPrimeNamespaced.lean/declarations/not-prime-of-int-mul.md) | 27 | `result-track:eef79e6fa9c231332a92ba12cef31b7a95a0e6231d48f0d895e485da628112bd` |
+| 2 | `theorem` | [succ_dvd_or_succ_dvd_of_succ_sum_dvd_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/IntNatPrimeNatPrimeNamespaced.lean/declarations/succ-dvd-or-succ-dvd-of-succ-sum-dvd-mul.md) | 31 | `result-track:c6b1863b3616f3232bc81357671443a63470525cefc12dfa13304033af9607d2` |
+| 3 | `theorem` | [Prime.dvd_natAbs_of_coe_dvd_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/IntNatPrimeNatPrimeNamespaced.lean/declarations/prime-dvd-natabs-of-coe-dvd-sq.md) | 42 | `result-track:5325c954bd52612098788ae26014b1c551f1683cb1de73e960886dbca3cfbafa` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

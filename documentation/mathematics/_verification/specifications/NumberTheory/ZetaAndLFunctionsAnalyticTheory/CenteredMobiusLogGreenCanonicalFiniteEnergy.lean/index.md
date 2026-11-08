@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenCanonicalFiniteEnergy.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenCanonicalFiniteEnergy.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenCanonicalFiniteEnergy.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenCanonicalFiniteEnergy.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenCanonicalPSeries`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenCanonicalPSeries.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenCanonicalPSeries`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenCanonicalPSeries.lean/index.md) — import line 7; pinned internal source present.
 - `Mathlib.Tactic` — import line 8; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [greenHighA2Majorant_le_canonical](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenCanonicalFiniteEnergy.lean/declarations/greenhigha2majorant-le-canonical.md) | 15 | `result-track:3f49ca538d43bffb5c17966c0859d0d504a51f7b0ac8834b76d221beb5900184` |
-| 2 | `theorem` | [greenHighC2Majorant_le_canonical](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenCanonicalFiniteEnergy.lean/declarations/greenhighc2majorant-le-canonical.md) | 43 | `result-track:1043c6429ea8170f6cc42f1c999a4b45070e365a78e730dbcab8d467e1796e8d` |
-| 3 | `theorem` | [greenHighNonaliasResidualEnergy_le_canonical](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenCanonicalFiniteEnergy.lean/declarations/greenhighnonaliasresidualenergy-le-canonical.md) | 68 | `result-track:f39caf6ae64221fea896d3153ed7c7ebe070d355fb8ec11581cc41b2b9edba98` |
-| 4 | `theorem` | [greenFiniteHybridResidualEnergy_le_canonical](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenCanonicalFiniteEnergy.lean/declarations/greenfinitehybridresidualenergy-le-canonical.md) | 85 | `result-track:573624f8eb4bee4846d35eef03f00536470fa808320db8211feadc4c18c64060` |
+| 1 | `theorem` | [greenHighA2Majorant_le_canonical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenCanonicalFiniteEnergy.lean/declarations/greenhigha2majorant-le-canonical.md) | 15 | `result-track:3f49ca538d43bffb5c17966c0859d0d504a51f7b0ac8834b76d221beb5900184` |
+| 2 | `theorem` | [greenHighC2Majorant_le_canonical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenCanonicalFiniteEnergy.lean/declarations/greenhighc2majorant-le-canonical.md) | 43 | `result-track:1043c6429ea8170f6cc42f1c999a4b45070e365a78e730dbcab8d467e1796e8d` |
+| 3 | `theorem` | [greenHighNonaliasResidualEnergy_le_canonical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenCanonicalFiniteEnergy.lean/declarations/greenhighnonaliasresidualenergy-le-canonical.md) | 68 | `result-track:f39caf6ae64221fea896d3153ed7c7ebe070d355fb8ec11581cc41b2b9edba98` |
+| 4 | `theorem` | [greenFiniteHybridResidualEnergy_le_canonical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenCanonicalFiniteEnergy.lean/declarations/greenfinitehybridresidualenergy-le-canonical.md) | 85 | `result-track:573624f8eb4bee4846d35eef03f00536470fa808320db8211feadc4c18c64060` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

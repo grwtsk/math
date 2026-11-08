@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/SimplicialSetFinitePublic.lean/index.md) · [Full source](../../../../AlgebraicTopology/SimplicialSetFinitePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialSetFinitePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialSetFinitePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,19 +57,19 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [Finite](../../../../AlgebraicTopology/SimplicialSetFinitePublic.lean/declarations/finite.md) | 33 | `declaration-track:5747f1a8e31f2a272ff0526d82af0979e1ed52e6ce6b5e5720b3a599c7d80367` |
-| 2 | `instance` | [(anonymous)](../../../../AlgebraicTopology/SimplicialSetFinitePublic.lean/declarations/instance.md) | 38 | `declaration-track:67daa849aed2ea16f994923d2e4106f714c220002d28785d6e363691e90295b7` |
-| 3 | `lemma` | [finite_of_hasDimensionLT](../../../../AlgebraicTopology/SimplicialSetFinitePublic.lean/declarations/finite-of-hasdimensionlt.md) | 43 | `result-track:d68ffaca42fa991ce1dabc03d49e7efa1f6e4e02d94920c1a8a3ec1156e43b81` |
-| 4 | `lemma` | [hasDimensionLT_of_finite](../../../../AlgebraicTopology/SimplicialSetFinitePublic.lean/declarations/hasdimensionlt-of-finite.md) | 56 | `result-track:0492ff1080c31c9b256c0572cfbf722ad80c4bfe2a0a57f94eda2803ee7f6af1` |
-| 5 | `instance` | [(anonymous)](../../../../AlgebraicTopology/SimplicialSetFinitePublic.lean/declarations/instance-source-edition-3.md) | 76 | `declaration-track:f21a167f61f128f02ca01904d1f9f9ef2302ff258909d969dd243289886c0222` |
-| 6 | `instance` | [(anonymous)](../../../../AlgebraicTopology/SimplicialSetFinitePublic.lean/declarations/instance-source-edition-2.md) | 87 | `declaration-track:689132ddb0c42ceab24156069e1b3746e09580f1f4ef24215874a8c14cdbe7c7` |
-| 7 | `lemma` | [finite_of_mono](../../../../AlgebraicTopology/SimplicialSetFinitePublic.lean/declarations/finite-of-mono.md) | 96 | `result-track:dffeb6df5015c7e57e71dd5eeaaf48218ebf3c8777d9d147936db6956d6cec69` |
-| 8 | `lemma` | [finite_of_epi](../../../../AlgebraicTopology/SimplicialSetFinitePublic.lean/declarations/finite-of-epi.md) | 103 | `result-track:e30e731c4bdaaf43ef13b84e1fc7703c7bbf7a93006921b461e8d738b7f4b666` |
-| 9 | `lemma` | [finite_of_iso](../../../../AlgebraicTopology/SimplicialSetFinitePublic.lean/declarations/finite-of-iso.md) | 113 | `result-track:3d7a5082fbe6292a34b794ed00b0b65c7c85f8e52dadc92e99f2e01580beb454` |
-| 10 | `lemma` | [finite_iff_of_iso](../../../../AlgebraicTopology/SimplicialSetFinitePublic.lean/declarations/finite-iff-of-iso.md) | 116 | `result-track:8c690e58ea78b87a0fcfc76b228730b09db195aada6d2ada454bc172c4524a72` |
-| 11 | `lemma` | [finite_subcomplex_top_iff](../../../../AlgebraicTopology/SimplicialSetFinitePublic.lean/declarations/finite-subcomplex-top-iff.md) | 120 | `result-track:57ad4f6df63617a0748d969a48ea96db0c899115a3e05847f353e1762119a1ba` |
-| 12 | `instance` | [finite_range](../../../../AlgebraicTopology/SimplicialSetFinitePublic.lean/declarations/finite-range.md) | 124 | `declaration-track:174936c07e5b4744007b526a01e622fea7d405b367e36b7b731712563ad7ef50` |
-| 13 | `lemma` | [finite_iSup_iff](../../../../AlgebraicTopology/SimplicialSetFinitePublic.lean/declarations/finite-isup-iff.md) | 128 | `result-track:7405b8fd30464e17a375bdf8149248695518a48fa3e3b298ce126144e915e146` |
+| 1 | `class` | [Finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialSetFinitePublic.lean/declarations/finite.md) | 33 | `declaration-track:5747f1a8e31f2a272ff0526d82af0979e1ed52e6ce6b5e5720b3a599c7d80367` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialSetFinitePublic.lean/declarations/instance.md) | 38 | `declaration-track:67daa849aed2ea16f994923d2e4106f714c220002d28785d6e363691e90295b7` |
+| 3 | `lemma` | [finite_of_hasDimensionLT](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialSetFinitePublic.lean/declarations/finite-of-hasdimensionlt.md) | 43 | `result-track:d68ffaca42fa991ce1dabc03d49e7efa1f6e4e02d94920c1a8a3ec1156e43b81` |
+| 4 | `lemma` | [hasDimensionLT_of_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialSetFinitePublic.lean/declarations/hasdimensionlt-of-finite.md) | 56 | `result-track:0492ff1080c31c9b256c0572cfbf722ad80c4bfe2a0a57f94eda2803ee7f6af1` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialSetFinitePublic.lean/declarations/instance-source-edition-3.md) | 76 | `declaration-track:f21a167f61f128f02ca01904d1f9f9ef2302ff258909d969dd243289886c0222` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialSetFinitePublic.lean/declarations/instance-source-edition-2.md) | 87 | `declaration-track:689132ddb0c42ceab24156069e1b3746e09580f1f4ef24215874a8c14cdbe7c7` |
+| 7 | `lemma` | [finite_of_mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialSetFinitePublic.lean/declarations/finite-of-mono.md) | 96 | `result-track:dffeb6df5015c7e57e71dd5eeaaf48218ebf3c8777d9d147936db6956d6cec69` |
+| 8 | `lemma` | [finite_of_epi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialSetFinitePublic.lean/declarations/finite-of-epi.md) | 103 | `result-track:e30e731c4bdaaf43ef13b84e1fc7703c7bbf7a93006921b461e8d738b7f4b666` |
+| 9 | `lemma` | [finite_of_iso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialSetFinitePublic.lean/declarations/finite-of-iso.md) | 113 | `result-track:3d7a5082fbe6292a34b794ed00b0b65c7c85f8e52dadc92e99f2e01580beb454` |
+| 10 | `lemma` | [finite_iff_of_iso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialSetFinitePublic.lean/declarations/finite-iff-of-iso.md) | 116 | `result-track:8c690e58ea78b87a0fcfc76b228730b09db195aada6d2ada454bc172c4524a72` |
+| 11 | `lemma` | [finite_subcomplex_top_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialSetFinitePublic.lean/declarations/finite-subcomplex-top-iff.md) | 120 | `result-track:57ad4f6df63617a0748d969a48ea96db0c899115a3e05847f353e1762119a1ba` |
+| 12 | `instance` | [finite_range](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialSetFinitePublic.lean/declarations/finite-range.md) | 124 | `declaration-track:174936c07e5b4744007b526a01e622fea7d405b367e36b7b731712563ad7ef50` |
+| 13 | `lemma` | [finite_iSup_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialSetFinitePublic.lean/declarations/finite-isup-iff.md) | 128 | `result-track:7405b8fd30464e17a375bdf8149248695518a48fa3e3b298ce126144e915e146` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

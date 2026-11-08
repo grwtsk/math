@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ChannelApplication.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ChannelApplication.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ChannelApplication.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ChannelApplication.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [Complete Threshold Specification](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompleteThresholdSpecification.lean/index.md) — import line 19; pinned internal source present.
+- [Complete Threshold Specification](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompleteThresholdSpecification.lean/index.md) — import line 19; pinned internal source present.
 - `Folder.Carrier.BinaryMatrix` — import line 21; external provider; requires a separately pinned dependency.
 - `Folder.Spectral.Tensor` — import line 22; external provider; requires a separately pinned dependency.
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [quantizeChannel](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ChannelApplication.lean/declarations/quantizechannel.md) | 44 | `declaration-track:1720fb65a76855a8e63243e623ba0000cdfbbe7730db468914600fba35d4b969` |
+| 1 | `def` | [quantizeChannel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ChannelApplication.lean/declarations/quantizechannel.md) | 44 | `declaration-track:1720fb65a76855a8e63243e623ba0000cdfbbe7730db468914600fba35d4b969` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

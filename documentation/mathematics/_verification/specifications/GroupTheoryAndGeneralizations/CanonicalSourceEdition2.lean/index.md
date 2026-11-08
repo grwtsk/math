@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/CanonicalSourceEdition2.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/CanonicalSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CanonicalSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CanonicalSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [orbitFinset](../../../../GroupTheoryAndGeneralizations/CanonicalSourceEdition2.lean/declarations/orbitfinset.md) | 25 | `declaration-track:94dae703f90405a26dbdab33b7302b405b462248cfb2ac529c97454c1baf0b41` |
-| 2 | `theorem` | [orbitFinset_nonempty](../../../../GroupTheoryAndGeneralizations/CanonicalSourceEdition2.lean/declarations/orbitfinset-nonempty.md) | 32 | `result-track:1b9e1acc28be20b299343a9ef39a2f67c974fa0cb3540f933c8937aa3688d17e` |
-| 3 | `theorem` | [orbit_nonempty](../../../../GroupTheoryAndGeneralizations/CanonicalSourceEdition2.lean/declarations/orbit-nonempty.md) | 41 | `result-track:1eef9938246554cc974f55eb3fa8e474fb919ccaf3baa08fcec5635ac229e964` |
-| 4 | `def` | [canon](../../../../GroupTheoryAndGeneralizations/CanonicalSourceEdition2.lean/declarations/canon.md) | 48 | `declaration-track:9601998154eef4e3ea429077507c153d45cbb44d518795bef8b2544f476a573c` |
-| 5 | `theorem` | [canon_mem_orbit](../../../../GroupTheoryAndGeneralizations/CanonicalSourceEdition2.lean/declarations/canon-mem-orbit.md) | 55 | `result-track:5d91ff9ac1e94f34eaea01c17eff08fa93407fa7058958c626db43b213431881` |
-| 6 | `theorem` | [orbitFinset_smul](../../../../GroupTheoryAndGeneralizations/CanonicalSourceEdition2.lean/declarations/orbitfinset-smul.md) | 65 | `result-track:38afefdd5c8e3d04917c5da9577e9f17d78c62d8f2835d79e7deb1b27e64dc26` |
-| 7 | `theorem` | [canon_smul](../../../../GroupTheoryAndGeneralizations/CanonicalSourceEdition2.lean/declarations/canon-smul.md) | 84 | `result-track:2d72e017241ec5fb85711c7cf72e0f54a8e95bbc81ba3aad0dce3347c3626e01` |
-| 8 | `theorem` | [canon_idempotent](../../../../GroupTheoryAndGeneralizations/CanonicalSourceEdition2.lean/declarations/canon-idempotent.md) | 95 | `result-track:d81ccd4e9d0233e5e20e92d90f1a24c66c3e1857cd20cff59278bc440ef50f96` |
-| 9 | `theorem` | [canon_eq_iff_same_orbit](../../../../GroupTheoryAndGeneralizations/CanonicalSourceEdition2.lean/declarations/canon-eq-iff-same-orbit.md) | 117 | `result-track:eb36c41a71079c9338d2fec7678b2c36aa03843915dc6298be9c458984df06e5` |
-| 10 | `structure` | [OrderedEncoding](../../../../GroupTheoryAndGeneralizations/CanonicalSourceEdition2.lean/declarations/orderedencoding.md) | 169 | `declaration-track:38869100be8f531ecb81ae383eeae772fc1926d2b79b0955799fc27b3a4d1891` |
+| 1 | `def` | [orbitFinset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CanonicalSourceEdition2.lean/declarations/orbitfinset.md) | 25 | `declaration-track:94dae703f90405a26dbdab33b7302b405b462248cfb2ac529c97454c1baf0b41` |
+| 2 | `theorem` | [orbitFinset_nonempty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CanonicalSourceEdition2.lean/declarations/orbitfinset-nonempty.md) | 32 | `result-track:1b9e1acc28be20b299343a9ef39a2f67c974fa0cb3540f933c8937aa3688d17e` |
+| 3 | `theorem` | [orbit_nonempty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CanonicalSourceEdition2.lean/declarations/orbit-nonempty.md) | 41 | `result-track:1eef9938246554cc974f55eb3fa8e474fb919ccaf3baa08fcec5635ac229e964` |
+| 4 | `def` | [canon](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CanonicalSourceEdition2.lean/declarations/canon.md) | 48 | `declaration-track:9601998154eef4e3ea429077507c153d45cbb44d518795bef8b2544f476a573c` |
+| 5 | `theorem` | [canon_mem_orbit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CanonicalSourceEdition2.lean/declarations/canon-mem-orbit.md) | 55 | `result-track:5d91ff9ac1e94f34eaea01c17eff08fa93407fa7058958c626db43b213431881` |
+| 6 | `theorem` | [orbitFinset_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CanonicalSourceEdition2.lean/declarations/orbitfinset-smul.md) | 65 | `result-track:38afefdd5c8e3d04917c5da9577e9f17d78c62d8f2835d79e7deb1b27e64dc26` |
+| 7 | `theorem` | [canon_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CanonicalSourceEdition2.lean/declarations/canon-smul.md) | 84 | `result-track:2d72e017241ec5fb85711c7cf72e0f54a8e95bbc81ba3aad0dce3347c3626e01` |
+| 8 | `theorem` | [canon_idempotent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CanonicalSourceEdition2.lean/declarations/canon-idempotent.md) | 95 | `result-track:d81ccd4e9d0233e5e20e92d90f1a24c66c3e1857cd20cff59278bc440ef50f96` |
+| 9 | `theorem` | [canon_eq_iff_same_orbit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CanonicalSourceEdition2.lean/declarations/canon-eq-iff-same-orbit.md) | 117 | `result-track:eb36c41a71079c9338d2fec7678b2c36aa03843915dc6298be9c458984df06e5` |
+| 10 | `structure` | [OrderedEncoding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CanonicalSourceEdition2.lean/declarations/orderedencoding.md) | 169 | `declaration-track:38869100be8f531ecb81ae383eeae772fc1926d2b79b0955799fc27b3a4d1891` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/WithZeroNamespaced.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/WithZeroNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/WithZeroNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/WithZeroNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [instLeftDistribClass](../../../../AssociativeRingsAndAlgebras/WithZeroNamespaced.lean/declarations/instleftdistribclass.md) | 24 | `declaration-track:a8bd880f529c4965f63337fa94eb38fbd6de16488ed614022474d6db391a34e0` |
-| 2 | `instance` | [instRightDistribClass](../../../../AssociativeRingsAndAlgebras/WithZeroNamespaced.lean/declarations/instrightdistribclass.md) | 31 | `declaration-track:309abd159a04658ced815b1a84eaec75282d517a06f1677f821a7fa92453ca0b` |
-| 3 | `instance` | [instDistrib](../../../../AssociativeRingsAndAlgebras/WithZeroNamespaced.lean/declarations/instdistrib.md) | 38 | `declaration-track:9c7e988b4651ba15326693eb4b4281f2e034df9dcd51022c6140d418d0e0ca5c` |
-| 4 | `instance` | [instSemiring](../../../../AssociativeRingsAndAlgebras/WithZeroNamespaced.lean/declarations/instsemiring.md) | 42 | `declaration-track:6068249c71e249494bc29dfc2eda9ffd512c214727d85b785bcb01593ae832aa` |
+| 1 | `instance` | [instLeftDistribClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/WithZeroNamespaced.lean/declarations/instleftdistribclass.md) | 24 | `declaration-track:a8bd880f529c4965f63337fa94eb38fbd6de16488ed614022474d6db391a34e0` |
+| 2 | `instance` | [instRightDistribClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/WithZeroNamespaced.lean/declarations/instrightdistribclass.md) | 31 | `declaration-track:309abd159a04658ced815b1a84eaec75282d517a06f1677f821a7fa92453ca0b` |
+| 3 | `instance` | [instDistrib](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/WithZeroNamespaced.lean/declarations/instdistrib.md) | 38 | `declaration-track:9c7e988b4651ba15326693eb4b4281f2e034df9dcd51022c6140d418d0e0ca5c` |
+| 4 | `instance` | [instSemiring](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/WithZeroNamespaced.lean/declarations/instsemiring.md) | 42 | `declaration-track:6068249c71e249494bc29dfc2eda9ffd512c214727d85b785bcb01593ae832aa` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

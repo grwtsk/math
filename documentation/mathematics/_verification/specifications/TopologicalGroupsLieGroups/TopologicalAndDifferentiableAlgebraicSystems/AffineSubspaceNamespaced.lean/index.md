@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/AffineSubspaceNamespaced.lean/index.md) · [Full source](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/AffineSubspaceNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/AffineSubspaceNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/AffineSubspaceNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [subtypeA](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/AffineSubspaceNamespaced.lean/declarations/subtypea.md) | 38 | `declaration-track:8a0918449f3e61c5199d6b843e1b08d7bac8b564725291d90649af28e71e6571` |
-| 2 | `lemma` | [coe_subtypeA](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/AffineSubspaceNamespaced.lean/declarations/coe-subtypea.md) | 42 | `result-track:5bb9a7e2780147f914565092a9f3d360c016216e5c938ba9514775a957d8ac3c` |
-| 3 | `lemma` | [subtypeA_toAffineMap](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/AffineSubspaceNamespaced.lean/declarations/subtypea-toaffinemap.md) | 45 | `result-track:f0fee0b32055c629f2e5d4cdd0a9a693a2512af77a628e593ff3f8dae0069c5a` |
+| 1 | `def` | [subtypeA](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/AffineSubspaceNamespaced.lean/declarations/subtypea.md) | 38 | `declaration-track:8a0918449f3e61c5199d6b843e1b08d7bac8b564725291d90649af28e71e6571` |
+| 2 | `lemma` | [coe_subtypeA](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/AffineSubspaceNamespaced.lean/declarations/coe-subtypea.md) | 42 | `result-track:5bb9a7e2780147f914565092a9f3d360c016216e5c938ba9514775a957d8ac3c` |
+| 3 | `lemma` | [subtypeA_toAffineMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/AffineSubspaceNamespaced.lean/declarations/subtypea-toaffinemap.md) | 45 | `result-track:f0fee0b32055c629f2e5d4cdd0a9a693a2512af77a628e593ff3f8dae0069c5a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/PackageNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/PackageNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PackageNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PackageNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [C1_nonneg](../../../../MeasureAndIntegration/PackageNamespaced.lean/declarations/c1-nonneg.md) | 36 | `result-track:c6fb27d48d60f4aef1128320205912ddee42e271a27df3ea195c1776bd473132` |
-| 2 | `theorem` | [eventually_tailPackage](../../../../MeasureAndIntegration/PackageNamespaced.lean/declarations/eventually-tailpackage.md) | 44 | `result-track:841c5bd4e11e7bc092ca3f3b4339f1794a03ca42636c4cd165de0b0ce19c9528` |
+| 1 | `lemma` | [C1_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PackageNamespaced.lean/declarations/c1-nonneg.md) | 36 | `result-track:c6fb27d48d60f4aef1128320205912ddee42e271a27df3ea195c1776bd473132` |
+| 2 | `theorem` | [eventually_tailPackage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PackageNamespaced.lean/declarations/eventually-tailpackage.md) | 44 | `result-track:841c5bd4e11e7bc092ca3f3b4339f1794a03ca42636c4cd165de0b0ce19c9528` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

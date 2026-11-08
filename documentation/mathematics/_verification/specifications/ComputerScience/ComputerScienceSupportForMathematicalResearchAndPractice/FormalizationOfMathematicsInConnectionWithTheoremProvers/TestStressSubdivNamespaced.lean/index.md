@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TestStressSubdivNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TestStressSubdivNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TestStressSubdivNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TestStressSubdivNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TestStressSubdivNamespaced.lean/declarations/example-source-edition-2.md) | 14 | `declaration-track:38b28458dfdd003ec84ac96fa5ab0f51f1199030e550f2b463b2fecadf7e8701` |
-| 2 | `example` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TestStressSubdivNamespaced.lean/declarations/example.md) | 17 | `declaration-track:2c225cacfd431b0e9cfda60d1924e18b8d0bc173b7b970dd07937404d0f1cbc2` |
-| 3 | `example` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TestStressSubdivNamespaced.lean/declarations/example-source-edition-4.md) | 20 | `declaration-track:b085b0c4c5756bbf7abc74a13ff762eab4d90d272bc21b312d622b1c6b4fe204` |
-| 4 | `example` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TestStressSubdivNamespaced.lean/declarations/example-source-edition-3.md) | 23 | `declaration-track:79da75fdfb2664a980dfe2dc942d91c33cc8f157200e854649d817745a9c7cde` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TestStressSubdivNamespaced.lean/declarations/example-source-edition-2.md) | 14 | `declaration-track:38b28458dfdd003ec84ac96fa5ab0f51f1199030e550f2b463b2fecadf7e8701` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TestStressSubdivNamespaced.lean/declarations/example.md) | 17 | `declaration-track:2c225cacfd431b0e9cfda60d1924e18b8d0bc173b7b970dd07937404d0f1cbc2` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TestStressSubdivNamespaced.lean/declarations/example-source-edition-4.md) | 20 | `declaration-track:b085b0c4c5756bbf7abc74a13ff762eab4d90d272bc21b312d622b1c6b4fe204` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TestStressSubdivNamespaced.lean/declarations/example-source-edition-3.md) | 23 | `declaration-track:79da75fdfb2664a980dfe2dc942d91c33cc8f157200e854649d817745a9c7cde` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

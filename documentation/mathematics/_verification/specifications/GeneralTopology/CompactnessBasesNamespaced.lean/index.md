@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/CompactnessBasesNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/CompactnessBasesNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompactnessBasesNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompactnessBasesNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [eq_finite_iUnion_of_isTopologicalBasis_of_isCompact_open](../../../../GeneralTopology/CompactnessBasesNamespaced.lean/declarations/eq-finite-iunion-of-istopologicalbasis-of-iscompact-open.md) | 25 | `result-track:9f251a742fca843077bf778a54bdbfbcaeef8246990fc266ab46880ee1ebb757` |
-| 2 | `lemma` | [eq_sUnion_finset_of_isTopologicalBasis_of_isCompact_open](../../../../GeneralTopology/CompactnessBasesNamespaced.lean/declarations/eq-sunion-finset-of-istopologicalbasis-of-iscompact-open.md) | 46 | `result-track:f9eaca11a129e077325fd5ea1a34dfc76fce4a4cac977a8dec6650c6afc4abc9` |
-| 3 | `theorem` | [isCompact_open_iff_eq_finite_iUnion_of_isTopologicalBasis](../../../../GeneralTopology/CompactnessBasesNamespaced.lean/declarations/iscompact-open-iff-eq-finite-iunion-of-istopologicalbasis.md) | 59 | `result-track:750900e4adbde3d34ed7c1d7f314c5020170a4bb1357e9c4d1a907d746704c17` |
+| 1 | `lemma` | [eq_finite_iUnion_of_isTopologicalBasis_of_isCompact_open](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompactnessBasesNamespaced.lean/declarations/eq-finite-iunion-of-istopologicalbasis-of-iscompact-open.md) | 25 | `result-track:9f251a742fca843077bf778a54bdbfbcaeef8246990fc266ab46880ee1ebb757` |
+| 2 | `lemma` | [eq_sUnion_finset_of_isTopologicalBasis_of_isCompact_open](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompactnessBasesNamespaced.lean/declarations/eq-sunion-finset-of-istopologicalbasis-of-iscompact-open.md) | 46 | `result-track:f9eaca11a129e077325fd5ea1a34dfc76fce4a4cac977a8dec6650c6afc4abc9` |
+| 3 | `theorem` | [isCompact_open_iff_eq_finite_iUnion_of_isTopologicalBasis](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompactnessBasesNamespaced.lean/declarations/iscompact-open-iff-eq-finite-iunion-of-istopologicalbasis.md) | 59 | `result-track:750900e4adbde3d34ed7c1d7f314c5020170a4bb1357e9c4d1a907d746704c17` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

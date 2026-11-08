@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/Productive.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/Productive.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Productive.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Productive.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [Productive](../../../../../../ComputerScience/TheoryOfData/DataStructures/Productive.lean/declarations/productive.md) | 27 | `declaration-track:1b778a730233b4832b9e4914aa23121d7d7172c32753171178cbcd57b6d9cf70` |
-| 2 | `theorem` | [productive_iff](../../../../../../ComputerScience/TheoryOfData/DataStructures/Productive.lean/declarations/productive-iff.md) | 30 | `result-track:4160ece99c7be789680a0e921e154c32e88d75bb18aa3d34585977f2c3cdb0fc` |
-| 3 | `instance` | [get?_terminates](../../../../../../ComputerScience/TheoryOfData/DataStructures/Productive.lean/declarations/get-terminates.md) | 33 | `declaration-track:4c3ee9effee8aba687820a031516860b572202d6f1d1bb5b182e0b15b14f0986` |
-| 4 | `instance` | [head_terminates](../../../../../../ComputerScience/TheoryOfData/DataStructures/Productive.lean/declarations/head-terminates.md) | 36 | `declaration-track:717db8a6c1872dcc69f470ea3c14c65314ebccdc8972ff7ac71450356f7485f8` |
-| 5 | `instance` | [productive_tail](../../../../../../ComputerScience/TheoryOfData/DataStructures/Productive.lean/declarations/productive-tail.md) | 39 | `declaration-track:f59a54564120ba466f5bc6a610952c9e54bbcc126030eb7d69920b6f15a70ea6` |
-| 6 | `instance` | [productive_dropn](../../../../../../ComputerScience/TheoryOfData/DataStructures/Productive.lean/declarations/productive-dropn.md) | 42 | `declaration-track:e91fea93ad9fb1da63649cf4d97d838188e6364ef03a0272b411ee184c42c6e3` |
-| 7 | `instance` | [productive_ofSeq](../../../../../../ComputerScience/TheoryOfData/DataStructures/Productive.lean/declarations/productive-ofseq.md) | 47 | `declaration-track:4dffd834357a90c2c91350e60897da4fedfa35360adfa1d69052cfedf83bb73f` |
-| 8 | `theorem` | [productive_congr](../../../../../../ComputerScience/TheoryOfData/DataStructures/Productive.lean/declarations/productive-congr.md) | 50 | `result-track:d10ffee37416ff05edaa94408b9c4b04fb886b4768a08fb7621d4f7e423049c1` |
-| 9 | `def` | [toSeq](../../../../../../ComputerScience/TheoryOfData/DataStructures/Productive.lean/declarations/toseq.md) | 55 | `declaration-track:b2a63db6c12598e2a427bfec2477694d7ed131595eb9d06393fd249ce7c373cf` |
-| 10 | `theorem` | [toSeq_ofSeq](../../../../../../ComputerScience/TheoryOfData/DataStructures/Productive.lean/declarations/toseq-ofseq.md) | 66 | `result-track:25d5658ef82bb902c4ef36a35146793c30ca9fcec15f2522874065b2245411d1` |
+| 1 | `class` | [Productive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Productive.lean/declarations/productive.md) | 27 | `declaration-track:1b778a730233b4832b9e4914aa23121d7d7172c32753171178cbcd57b6d9cf70` |
+| 2 | `theorem` | [productive_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Productive.lean/declarations/productive-iff.md) | 30 | `result-track:4160ece99c7be789680a0e921e154c32e88d75bb18aa3d34585977f2c3cdb0fc` |
+| 3 | `instance` | [get?_terminates](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Productive.lean/declarations/get-terminates.md) | 33 | `declaration-track:4c3ee9effee8aba687820a031516860b572202d6f1d1bb5b182e0b15b14f0986` |
+| 4 | `instance` | [head_terminates](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Productive.lean/declarations/head-terminates.md) | 36 | `declaration-track:717db8a6c1872dcc69f470ea3c14c65314ebccdc8972ff7ac71450356f7485f8` |
+| 5 | `instance` | [productive_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Productive.lean/declarations/productive-tail.md) | 39 | `declaration-track:f59a54564120ba466f5bc6a610952c9e54bbcc126030eb7d69920b6f15a70ea6` |
+| 6 | `instance` | [productive_dropn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Productive.lean/declarations/productive-dropn.md) | 42 | `declaration-track:e91fea93ad9fb1da63649cf4d97d838188e6364ef03a0272b411ee184c42c6e3` |
+| 7 | `instance` | [productive_ofSeq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Productive.lean/declarations/productive-ofseq.md) | 47 | `declaration-track:4dffd834357a90c2c91350e60897da4fedfa35360adfa1d69052cfedf83bb73f` |
+| 8 | `theorem` | [productive_congr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Productive.lean/declarations/productive-congr.md) | 50 | `result-track:d10ffee37416ff05edaa94408b9c4b04fb886b4768a08fb7621d4f7e423049c1` |
+| 9 | `def` | [toSeq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Productive.lean/declarations/toseq.md) | 55 | `declaration-track:b2a63db6c12598e2a427bfec2477694d7ed131595eb9d06393fd249ce7c373cf` |
+| 10 | `theorem` | [toSeq_ofSeq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Productive.lean/declarations/toseq-ofseq.md) | 66 | `result-track:25d5658ef82bb902c4ef36a35146793c30ca9fcec15f2522874065b2245411d1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

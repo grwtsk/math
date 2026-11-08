@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/SpecializationNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/SpecializationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SpecializationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SpecializationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ClassPrimeFactorization](../../../../../ComputerScience/AlgorithmsInComputerScience/SpecializationNamespaced.lean/declarations/classprimefactorization.md) | 23 | `declaration-track:d4b48aeef28e2fa270668f69561418c6636fb1b23d582568c98fdbafc884fbad` |
-| 2 | `theorem` | [ClassPrimeFactorization.class_binding_deterministic](../../../../../ComputerScience/AlgorithmsInComputerScience/SpecializationNamespaced.lean/declarations/classprimefactorization-class-binding-deterministic.md) | 35 | `result-track:ff951082f94e9e469b814d52faf672d031d6e90fb72915553e3b83229cf4c580` |
-| 3 | `structure` | [PrimeBinding](../../../../../ComputerScience/AlgorithmsInComputerScience/SpecializationNamespaced.lean/declarations/primebinding.md) | 47 | `declaration-track:5fcbf06678a32a25ecb78c916b7b5f4ca20ce33024304af0d7099b391f45705a` |
-| 4 | `def` | [PrimeBinding.SortCorrect](../../../../../ComputerScience/AlgorithmsInComputerScience/SpecializationNamespaced.lean/declarations/primebinding-sortcorrect.md) | 52 | `declaration-track:337c9baff1facaca704fa3f63cb8068e1e522adf47813522ef60aae76a03c54c` |
-| 5 | `def` | [PrimeBinding.BoundaryCorrect](../../../../../ComputerScience/AlgorithmsInComputerScience/SpecializationNamespaced.lean/declarations/primebinding-boundarycorrect.md) | 55 | `declaration-track:f7c4c70f2400907366c8761fbe847496510e00a1f996cd5728b089d008d4a386` |
+| 1 | `structure` | [ClassPrimeFactorization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SpecializationNamespaced.lean/declarations/classprimefactorization.md) | 23 | `declaration-track:d4b48aeef28e2fa270668f69561418c6636fb1b23d582568c98fdbafc884fbad` |
+| 2 | `theorem` | [ClassPrimeFactorization.class_binding_deterministic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SpecializationNamespaced.lean/declarations/classprimefactorization-class-binding-deterministic.md) | 35 | `result-track:ff951082f94e9e469b814d52faf672d031d6e90fb72915553e3b83229cf4c580` |
+| 3 | `structure` | [PrimeBinding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SpecializationNamespaced.lean/declarations/primebinding.md) | 47 | `declaration-track:5fcbf06678a32a25ecb78c916b7b5f4ca20ce33024304af0d7099b391f45705a` |
+| 4 | `def` | [PrimeBinding.SortCorrect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SpecializationNamespaced.lean/declarations/primebinding-sortcorrect.md) | 52 | `declaration-track:337c9baff1facaca704fa3f63cb8068e1e522adf47813522ef60aae76a03c54c` |
+| 5 | `def` | [PrimeBinding.BoundaryCorrect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SpecializationNamespaced.lean/declarations/primebinding-boundarycorrect.md) | 55 | `declaration-track:f7c4c70f2400907366c8761fbe847496510e00a1f996cd5728b089d008d4a386` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

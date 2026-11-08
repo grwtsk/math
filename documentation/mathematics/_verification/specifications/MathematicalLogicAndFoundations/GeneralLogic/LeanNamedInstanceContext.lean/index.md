@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LeanNamedInstanceContext.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LeanNamedInstanceContext.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LeanNamedInstanceContext.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LeanNamedInstanceContext.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [attrKind](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LeanNamedInstanceContext.lean/declarations/attrkind.md) | 14 | `declaration-track:9ec16e35228d1c5299e0db3425fe8e848be0f637b7985a0e3010837f53fbe3b7` |
-| 2 | `def` | [observe](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LeanNamedInstanceContext.lean/declarations/observe.md) | 19 | `declaration-track:ff059560733174b8ab85205727f17144a0867bf336a6e5dfcad5b3f9757f0604` |
+| 1 | `def` | [attrKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LeanNamedInstanceContext.lean/declarations/attrkind.md) | 14 | `declaration-track:9ec16e35228d1c5299e0db3425fe8e848be0f637b7985a0e3010837f53fbe3b7` |
+| 2 | `def` | [observe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LeanNamedInstanceContext.lean/declarations/observe.md) | 19 | `declaration-track:ff059560733174b8ab85205727f17144a0867bf336a6e5dfcad5b3f9757f0604` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

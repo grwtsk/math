@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/ArborescencePublic.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/ArborescencePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ArborescencePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ArborescencePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [Arborescence](../../../../../Combinatorics/GraphTheory/ArborescencePublic.lean/declarations/arborescence.md) | 39 | `declaration-track:d2cbdd826cef4be4d13f2ac35dbcdf57dc33b5a8d0f79dc7a199387cbac477ee` |
-| 2 | `def` | [root](../../../../../Combinatorics/GraphTheory/ArborescencePublic.lean/declarations/root.md) | 46 | `declaration-track:288ad602d662acbb7825ed631b5071f6514357bbf2b298a8427147c8ac782d85` |
-| 3 | `instance` | [(anonymous)](../../../../../Combinatorics/GraphTheory/ArborescencePublic.lean/declarations/instance.md) | 49 | `declaration-track:12bde2fe5aa95303edf5d704506b93f00f35553b03dbd20a7b0a6b0772475ed5` |
-| 4 | `def` | [arborescenceMk](../../../../../Combinatorics/GraphTheory/ArborescencePublic.lean/declarations/arborescencemk.md) | 58 | `declaration-track:c7ae5f3df9075d42cf001f68f428f0fd0bd4dc47a6c80e85a6444a0248b7c503` |
-| 5 | `class` | [RootedConnected](../../../../../Combinatorics/GraphTheory/ArborescencePublic.lean/declarations/rootedconnected.md) | 95 | `declaration-track:9d6b7e07bbbc276776cb11fe70b0ea177f75aa120023d4099b80393b0021e4d8` |
-| 6 | `def` | [shortestPath](../../../../../Combinatorics/GraphTheory/ArborescencePublic.lean/declarations/shortestpath.md) | 105 | `declaration-track:c80db9d203c0c1facc627dac8b234f3b66a5b747553f9df45baf17308cb4af63` |
-| 7 | `theorem` | [shortest_path_spec](../../../../../Combinatorics/GraphTheory/ArborescencePublic.lean/declarations/shortest-path-spec.md) | 109 | `result-track:859da86e938f7a70fcec694ffea9d7ddb86351285e1fe76ebcca17939bbae81a` |
-| 8 | `def` | [geodesicSubtree](../../../../../Combinatorics/GraphTheory/ArborescencePublic.lean/declarations/geodesicsubtree.md) | 113 | `declaration-track:289ae35a4e29effa0982d59934fd059a71843531d8b05aea7e0ac6fd9cfa4d1e` |
-| 9 | `instance` | [geodesicArborescence](../../../../../Combinatorics/GraphTheory/ArborescencePublic.lean/declarations/geodesicarborescence.md) | 117 | `declaration-track:4ef0b1acf5ecda2eda562a2a9f7ce3d4609bcb5b5286188c961c1d3182311b43` |
+| 1 | `class` | [Arborescence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ArborescencePublic.lean/declarations/arborescence.md) | 39 | `declaration-track:d2cbdd826cef4be4d13f2ac35dbcdf57dc33b5a8d0f79dc7a199387cbac477ee` |
+| 2 | `def` | [root](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ArborescencePublic.lean/declarations/root.md) | 46 | `declaration-track:288ad602d662acbb7825ed631b5071f6514357bbf2b298a8427147c8ac782d85` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ArborescencePublic.lean/declarations/instance.md) | 49 | `declaration-track:12bde2fe5aa95303edf5d704506b93f00f35553b03dbd20a7b0a6b0772475ed5` |
+| 4 | `def` | [arborescenceMk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ArborescencePublic.lean/declarations/arborescencemk.md) | 58 | `declaration-track:c7ae5f3df9075d42cf001f68f428f0fd0bd4dc47a6c80e85a6444a0248b7c503` |
+| 5 | `class` | [RootedConnected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ArborescencePublic.lean/declarations/rootedconnected.md) | 95 | `declaration-track:9d6b7e07bbbc276776cb11fe70b0ea177f75aa120023d4099b80393b0021e4d8` |
+| 6 | `def` | [shortestPath](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ArborescencePublic.lean/declarations/shortestpath.md) | 105 | `declaration-track:c80db9d203c0c1facc627dac8b234f3b66a5b747553f9df45baf17308cb4af63` |
+| 7 | `theorem` | [shortest_path_spec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ArborescencePublic.lean/declarations/shortest-path-spec.md) | 109 | `result-track:859da86e938f7a70fcec694ffea9d7ddb86351285e1fe76ebcca17939bbae81a` |
+| 8 | `def` | [geodesicSubtree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ArborescencePublic.lean/declarations/geodesicsubtree.md) | 113 | `declaration-track:289ae35a4e29effa0982d59934fd059a71843531d8b05aea7e0ac6fd9cfa4d1e` |
+| 9 | `instance` | [geodesicArborescence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ArborescencePublic.lean/declarations/geodesicarborescence.md) | 117 | `declaration-track:4ef0b1acf5ecda2eda562a2a9f7ce3d4609bcb5b5286188c961c1d3182311b43` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

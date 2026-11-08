@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/OctahedralFundamentalCycle.lean/index.md) · [Full source](../../../../AlgebraicTopology/OctahedralFundamentalCycle.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/OctahedralFundamentalCycle.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/OctahedralFundamentalCycle.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `Boolean.Cube.PrismaticGeometry.Sphere` — import line 18; external provider; requires a separately pinned dependency.
-- [Octahedral Finite Cells](../../../../GeneralTopology/OctahedralFiniteCells.lean/index.md) — import line 19; pinned internal source present.
+- [Octahedral Finite Cells](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OctahedralFiniteCells.lean/index.md) — import line 19; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [octahedralSphereChain](../../../../AlgebraicTopology/OctahedralFundamentalCycle.lean/declarations/octahedralspherechain.md) | 37 | `declaration-track:a2543656a7d726a04f25697325487c16c680b4765efa6932ae6cc8845002fe26` |
-| 2 | `def` | [octahedralSphereBoundary](../../../../AlgebraicTopology/OctahedralFundamentalCycle.lean/declarations/octahedralsphereboundary.md) | 42 | `declaration-track:4791a3ccd574e88e48bf4b3a8e7aca24048e9c6d4ca16660a87a4b0e17a3b641` |
-| 3 | `def` | [octahedralEdgeCoefficient](../../../../AlgebraicTopology/OctahedralFundamentalCycle.lean/declarations/octahedraledgecoefficient.md) | 46 | `declaration-track:5dc48a5bb120cea1eb33b264a9bd787fd511d04b820e2ff8616e2bc570ee26a1` |
-| 4 | `def` | [OctahedralSphereClosed](../../../../AlgebraicTopology/OctahedralFundamentalCycle.lean/declarations/octahedralsphereclosed.md) | 55 | `declaration-track:ac737e9c8637c1c007058f0a3f8c2b0b93b0de8bdeeeb47154843bb9473ae2ce` |
-| 5 | `theorem` | [octahedralSphereClosedProof](../../../../AlgebraicTopology/OctahedralFundamentalCycle.lean/declarations/octahedralsphereclosedproof.md) | 60 | `result-track:6e46529bbbca29c7f33d08c2056d776d42d6a4130b44f1ff3fccd10235d8f5c3` |
-| 6 | `def` | [octahedralClosedSphereChain](../../../../AlgebraicTopology/OctahedralFundamentalCycle.lean/declarations/octahedralclosedspherechain.md) | 67 | `declaration-track:9fcad591a13fb28e07d32eafe0b716d7e545d91e1e232cd2e5eb68515396d69a` |
+| 1 | `def` | [octahedralSphereChain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/OctahedralFundamentalCycle.lean/declarations/octahedralspherechain.md) | 37 | `declaration-track:a2543656a7d726a04f25697325487c16c680b4765efa6932ae6cc8845002fe26` |
+| 2 | `def` | [octahedralSphereBoundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/OctahedralFundamentalCycle.lean/declarations/octahedralsphereboundary.md) | 42 | `declaration-track:4791a3ccd574e88e48bf4b3a8e7aca24048e9c6d4ca16660a87a4b0e17a3b641` |
+| 3 | `def` | [octahedralEdgeCoefficient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/OctahedralFundamentalCycle.lean/declarations/octahedraledgecoefficient.md) | 46 | `declaration-track:5dc48a5bb120cea1eb33b264a9bd787fd511d04b820e2ff8616e2bc570ee26a1` |
+| 4 | `def` | [OctahedralSphereClosed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/OctahedralFundamentalCycle.lean/declarations/octahedralsphereclosed.md) | 55 | `declaration-track:ac737e9c8637c1c007058f0a3f8c2b0b93b0de8bdeeeb47154843bb9473ae2ce` |
+| 5 | `theorem` | [octahedralSphereClosedProof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/OctahedralFundamentalCycle.lean/declarations/octahedralsphereclosedproof.md) | 60 | `result-track:6e46529bbbca29c7f33d08c2056d776d42d6a4130b44f1ff3fccd10235d8f5c3` |
+| 6 | `def` | [octahedralClosedSphereChain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/OctahedralFundamentalCycle.lean/declarations/octahedralclosedspherechain.md) | 67 | `declaration-track:9fcad591a13fb28e07d32eafe0b716d7e545d91e1e232cd2e5eb68515396d69a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

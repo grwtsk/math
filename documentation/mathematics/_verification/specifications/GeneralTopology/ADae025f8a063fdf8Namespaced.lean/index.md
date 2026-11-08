@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ADae025f8a063fdf8Namespaced.lean/index.md) · [Full source](../../../../GeneralTopology/ADae025f8a063fdf8Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ADae025f8a063fdf8Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ADae025f8a063fdf8Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [RegularityRequest](../../../../GeneralTopology/ADae025f8a063fdf8Namespaced.lean/declarations/regularityrequest.md) | 15 | `declaration-track:117d47c4185a7d2704dd34ae47379c228cc7e101a24b9a25ffffdd3fff2866d9` |
+| 1 | `inductive` | [RegularityRequest](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ADae025f8a063fdf8Namespaced.lean/declarations/regularityrequest.md) | 15 | `declaration-track:117d47c4185a7d2704dd34ae47379c228cc7e101a24b9a25ffffdd3fff2866d9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

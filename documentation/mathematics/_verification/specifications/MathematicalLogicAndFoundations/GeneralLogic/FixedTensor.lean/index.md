@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FixedTensor.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FixedTensor.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FixedTensor.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FixedTensor.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FixedTensor](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FixedTensor.lean/declarations/fixedtensor.md) | 43 | `declaration-track:a2147412f77ab78ea2180a4590d9dba1b644abdb0b3fad5149d87ced7a0f07cc` |
-| 2 | `theorem` | [fixed_tensor_is_horizontal](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FixedTensor.lean/declarations/fixed-tensor-is-horizontal.md) | 55 | `result-track:407e6667609cb1c80649155420132d83f868360ace1656b789693201a06f0436` |
-| 3 | `theorem` | [fixed_tensor_is_fixed](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FixedTensor.lean/declarations/fixed-tensor-is-fixed.md) | 65 | `result-track:787be31f5fbf196713f704f873783fe029ff01a2ef7c8108e3329834b9a92003` |
+| 1 | `structure` | [FixedTensor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FixedTensor.lean/declarations/fixedtensor.md) | 43 | `declaration-track:a2147412f77ab78ea2180a4590d9dba1b644abdb0b3fad5149d87ced7a0f07cc` |
+| 2 | `theorem` | [fixed_tensor_is_horizontal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FixedTensor.lean/declarations/fixed-tensor-is-horizontal.md) | 55 | `result-track:407e6667609cb1c80649155420132d83f868360ace1656b789693201a06f0436` |
+| 3 | `theorem` | [fixed_tensor_is_fixed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FixedTensor.lean/declarations/fixed-tensor-is-fixed.md) | 65 | `result-track:787be31f5fbf196713f704f873783fe029ff01a2ef7c8108e3329834b9a92003` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConductorThreeVaughanTypeIBridgeNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConductorThreeVaughanTypeIBridgeNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConductorThreeVaughanTypeIBridgeNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConductorThreeVaughanTypeIBridgeNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [convolutionTypeIPrefix_eq_public](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConductorThreeVaughanTypeIBridgeNamespacedPublic.lean/declarations/convolutiontypeiprefix-eq-public.md) | 38 | `result-track:2ec6a5d12fbfa1799cf59dd3c116ba0dea29f4291f95785ea6eb790af5b4e006` |
-| 2 | `theorem` | [exactTypeIPrefixExpansion_implies_uniformPublic](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConductorThreeVaughanTypeIBridgeNamespacedPublic.lean/declarations/exacttypeiprefixexpansion-implies-uniformpublic.md) | 46 | `result-track:5759a52d65b1f372cad50a4dab1f9c976c3f02b6b0d704506de7fa4b4964f7b8` |
+| 1 | `theorem` | [convolutionTypeIPrefix_eq_public](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConductorThreeVaughanTypeIBridgeNamespacedPublic.lean/declarations/convolutiontypeiprefix-eq-public.md) | 38 | `result-track:2ec6a5d12fbfa1799cf59dd3c116ba0dea29f4291f95785ea6eb790af5b4e006` |
+| 2 | `theorem` | [exactTypeIPrefixExpansion_implies_uniformPublic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConductorThreeVaughanTypeIBridgeNamespacedPublic.lean/declarations/exacttypeiprefixexpansion-implies-uniformpublic.md) | 46 | `result-track:5759a52d65b1f372cad50a4dab1f9c976c3f02b6b0d704506de7fa4b4964f7b8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

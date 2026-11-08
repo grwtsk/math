@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/QuotientOrderNamespaced.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/QuotientOrderNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/QuotientOrderNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/QuotientOrderNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [denominator_order](../../../../FunctionsOfAComplexVariable/QuotientOrderNamespaced.lean/declarations/denominator-order.md) | 28 | `result-track:78d46701adca02cd300527443c10d2122dd36c0c744086a543d8b480ae8d1daa` |
-| 2 | `theorem` | [reduced_quotient_meromorphic_order](../../../../FunctionsOfAComplexVariable/QuotientOrderNamespaced.lean/declarations/reduced-quotient-meromorphic-order.md) | 38 | `result-track:b07604f57b947c816a5dd1f18dc5b7f93cfb28f0d4bb9a73d9a36809fb55008a` |
-| 3 | `theorem` | [reduced_quotient_analytic_and_order](../../../../FunctionsOfAComplexVariable/QuotientOrderNamespaced.lean/declarations/reduced-quotient-analytic-and-order.md) | 52 | `result-track:e87808f55b0910871d974340db3cf282c478e54fbabefd86d19444d9d02d53ea` |
-| 4 | `example` | [(anonymous)](../../../../FunctionsOfAComplexVariable/QuotientOrderNamespaced.lean/declarations/example.md) | 74 | `declaration-track:30f2a332576beac3d4ee115cc627f8fd1271de73a835ae161e8bb51a8cf3a7fb` |
-| 5 | `example` | [(anonymous)](../../../../FunctionsOfAComplexVariable/QuotientOrderNamespaced.lean/declarations/example-source-edition-2.md) | 77 | `declaration-track:5ac70aedb165bc4563d28dfc373200b090adf43e2cf8ee6e0daac04e6afdec9e` |
-| 6 | `example` | [(anonymous)](../../../../FunctionsOfAComplexVariable/QuotientOrderNamespaced.lean/declarations/example-source-edition-3.md) | 84 | `declaration-track:7740ee84b0ae89b31095cbd7f881571aa7791955b67468c5bd51b39a337ca190` |
+| 1 | `theorem` | [denominator_order](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/QuotientOrderNamespaced.lean/declarations/denominator-order.md) | 28 | `result-track:78d46701adca02cd300527443c10d2122dd36c0c744086a543d8b480ae8d1daa` |
+| 2 | `theorem` | [reduced_quotient_meromorphic_order](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/QuotientOrderNamespaced.lean/declarations/reduced-quotient-meromorphic-order.md) | 38 | `result-track:b07604f57b947c816a5dd1f18dc5b7f93cfb28f0d4bb9a73d9a36809fb55008a` |
+| 3 | `theorem` | [reduced_quotient_analytic_and_order](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/QuotientOrderNamespaced.lean/declarations/reduced-quotient-analytic-and-order.md) | 52 | `result-track:e87808f55b0910871d974340db3cf282c478e54fbabefd86d19444d9d02d53ea` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/QuotientOrderNamespaced.lean/declarations/example.md) | 74 | `declaration-track:30f2a332576beac3d4ee115cc627f8fd1271de73a835ae161e8bb51a8cf3a7fb` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/QuotientOrderNamespaced.lean/declarations/example-source-edition-2.md) | 77 | `declaration-track:5ac70aedb165bc4563d28dfc373200b090adf43e2cf8ee6e0daac04e6afdec9e` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/QuotientOrderNamespaced.lean/declarations/example-source-edition-3.md) | 84 | `declaration-track:7740ee84b0ae89b31095cbd7f881571aa7791955b67468c5bd51b39a337ca190` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

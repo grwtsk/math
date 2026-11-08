@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ChainMap.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ChainMap.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ChainMap.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ChainMap.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ChainMapDescriptor](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ChainMap.lean/declarations/chainmapdescriptor.md) | 5 | `declaration-track:1a3ddc9aa8526ec148338a197ed592b9bf1a9bc1dcd36a93a3cb1e8d04cd008a` |
-| 2 | `theorem` | [chainMap_requires_boundary_commutation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ChainMap.lean/declarations/chainmap-requires-boundary-commutation.md) | 10 | `result-track:d2fe62f7c362378b6a17e551927fc4be19bbd51a6a651ee329a83c43c80cdedb` |
+| 1 | `structure` | [ChainMapDescriptor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ChainMap.lean/declarations/chainmapdescriptor.md) | 5 | `declaration-track:1a3ddc9aa8526ec148338a197ed592b9bf1a9bc1dcd36a93a3cb1e8d04cd008a` |
+| 2 | `theorem` | [chainMap_requires_boundary_commutation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ChainMap.lean/declarations/chainmap-requires-boundary-commutation.md) | 10 | `result-track:d2fe62f7c362378b6a17e551927fc4be19bbd51a6a651ee329a83c43c80cdedb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

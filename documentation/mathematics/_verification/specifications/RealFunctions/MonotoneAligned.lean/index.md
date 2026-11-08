@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/MonotoneAligned.lean/index.md) · [Full source](../../../../RealFunctions/MonotoneAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/MonotoneAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/MonotoneAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `macro_rules` | [(anonymous)](../../../../RealFunctions/MonotoneAligned.lean/declarations/macro-rules.md) | 39 | `declaration-track:64d5ab17a1ed16998af391a20c0de75cd9fc162abe082a61c82af1acc6b16445` |
-| 2 | `theorem` | [tendsto_apply_add_mul_sq_div_sub](../../../../RealFunctions/MonotoneAligned.lean/declarations/tendsto-apply-add-mul-sq-div-sub.md) | 46 | `result-track:d696312b7d0115fd2e1f047ab6c876996594c641046ffdc8ad937ba2af2b4afc` |
-| 3 | `theorem` | [StieltjesFunction.ae_hasDerivAt](../../../../RealFunctions/MonotoneAligned.lean/declarations/stieltjesfunction-ae-hasderivat.md) | 69 | `result-track:57f6ef465697073226b57b35204a419f9e0163a25dc73768a389ed81cf4e06f7` |
-| 4 | `theorem` | [Monotone.ae_hasDerivAt](../../../../RealFunctions/MonotoneAligned.lean/declarations/monotone-ae-hasderivat.md) | 138 | `result-track:3487487df7abcacbd7cd965ce8cf019b48999731e505ff8bf027ef84f7123d65` |
-| 5 | `theorem` | [Monotone.ae_differentiableAt](../../../../RealFunctions/MonotoneAligned.lean/declarations/monotone-ae-differentiableat.md) | 218 | `result-track:1a2e83bc90b49148a2b4de7605250c3921b91694c4590029a761c9c902643e5d` |
-| 6 | `theorem` | [MonotoneOn.ae_differentiableWithinAt_of_mem](../../../../RealFunctions/MonotoneAligned.lean/declarations/monotoneon-ae-differentiablewithinat-of-mem.md) | 227 | `result-track:fda6223738b5337ae80184e4e5bda4c625fb1f9b7a978b30c5646d7eea17c8c8` |
-| 7 | `theorem` | [MonotoneOn.ae_differentiableWithinAt](../../../../RealFunctions/MonotoneAligned.lean/declarations/monotoneon-ae-differentiablewithinat.md) | 250 | `result-track:b62e6ea2346ea5f42b4571e2b8442649a3a675e733d708f4bcee2e9ec9b718ec` |
+| 1 | `macro_rules` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/MonotoneAligned.lean/declarations/macro-rules.md) | 39 | `declaration-track:64d5ab17a1ed16998af391a20c0de75cd9fc162abe082a61c82af1acc6b16445` |
+| 2 | `theorem` | [tendsto_apply_add_mul_sq_div_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/MonotoneAligned.lean/declarations/tendsto-apply-add-mul-sq-div-sub.md) | 46 | `result-track:d696312b7d0115fd2e1f047ab6c876996594c641046ffdc8ad937ba2af2b4afc` |
+| 3 | `theorem` | [StieltjesFunction.ae_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/MonotoneAligned.lean/declarations/stieltjesfunction-ae-hasderivat.md) | 69 | `result-track:57f6ef465697073226b57b35204a419f9e0163a25dc73768a389ed81cf4e06f7` |
+| 4 | `theorem` | [Monotone.ae_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/MonotoneAligned.lean/declarations/monotone-ae-hasderivat.md) | 138 | `result-track:3487487df7abcacbd7cd965ce8cf019b48999731e505ff8bf027ef84f7123d65` |
+| 5 | `theorem` | [Monotone.ae_differentiableAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/MonotoneAligned.lean/declarations/monotone-ae-differentiableat.md) | 218 | `result-track:1a2e83bc90b49148a2b4de7605250c3921b91694c4590029a761c9c902643e5d` |
+| 6 | `theorem` | [MonotoneOn.ae_differentiableWithinAt_of_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/MonotoneAligned.lean/declarations/monotoneon-ae-differentiablewithinat-of-mem.md) | 227 | `result-track:fda6223738b5337ae80184e4e5bda4c625fb1f9b7a978b30c5646d7eea17c8c8` |
+| 7 | `theorem` | [MonotoneOn.ae_differentiableWithinAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/MonotoneAligned.lean/declarations/monotoneon-ae-differentiablewithinat.md) | 250 | `result-track:b62e6ea2346ea5f42b4571e2b8442649a3a675e733d708f4bcee2e9ec9b718ec` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

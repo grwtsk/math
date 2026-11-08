@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/ArbitrarilyLateNearMaximalValuesOfTheLiteralTwoFrequencyPath.lean/index.md) · [Full source](../../../../NumberTheory/ArbitrarilyLateNearMaximalValuesOfTheLiteralTwoFrequencyPath.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArbitrarilyLateNearMaximalValuesOfTheLiteralTwoFrequencyPath.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArbitrarilyLateNearMaximalValuesOfTheLiteralTwoFrequencyPath.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [literal_two_mode_near_two_after_every_threshold](../../../../NumberTheory/ArbitrarilyLateNearMaximalValuesOfTheLiteralTwoFrequencyPath.lean/declarations/literal-two-mode-near-two-after-every-threshold.md) | 20 | `result-track:4ee98768f75820b18a050581df6010cf1a7c9a81d3226a85fb8a175de76507a1` |
-| 2 | `theorem` | [literal_two_mode_tail_supremum_unattained](../../../../NumberTheory/ArbitrarilyLateNearMaximalValuesOfTheLiteralTwoFrequencyPath.lean/declarations/literal-two-mode-tail-supremum-unattained.md) | 78 | `result-track:80456af785d7744edccc446f82cf250f6b5cc28f4fdd222d9b45b8f00850a051` |
+| 1 | `theorem` | [literal_two_mode_near_two_after_every_threshold](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArbitrarilyLateNearMaximalValuesOfTheLiteralTwoFrequencyPath.lean/declarations/literal-two-mode-near-two-after-every-threshold.md) | 20 | `result-track:4ee98768f75820b18a050581df6010cf1a7c9a81d3226a85fb8a175de76507a1` |
+| 2 | `theorem` | [literal_two_mode_tail_supremum_unattained](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArbitrarilyLateNearMaximalValuesOfTheLiteralTwoFrequencyPath.lean/declarations/literal-two-mode-tail-supremum-unattained.md) | 78 | `result-track:80456af785d7744edccc446f82cf250f6b5cc28f4fdd222d9b45b8f00850a051` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

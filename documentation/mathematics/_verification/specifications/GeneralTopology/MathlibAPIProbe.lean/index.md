@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/MathlibAPIProbe.lean/index.md) · [Full source](../../../../GeneralTopology/MathlibAPIProbe.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MathlibAPIProbe.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MathlibAPIProbe.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,8 +60,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../GeneralTopology/MathlibAPIProbe.lean/declarations/example-source-edition-2.md) | 49 | `declaration-track:d37f7a5554fce5ef917251ee1f462a7b2a4a51aada04b4862eb4cc57cfa777aa` |
-| 2 | `example` | [(anonymous)](../../../../GeneralTopology/MathlibAPIProbe.lean/declarations/example.md) | 50 | `declaration-track:b1f27637a8f71af95dd829d3c9e02b54a6c0a2014e8ff663bd01f4688fedf620` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MathlibAPIProbe.lean/declarations/example-source-edition-2.md) | 49 | `declaration-track:d37f7a5554fce5ef917251ee1f462a7b2a4a51aada04b4862eb4cc57cfa777aa` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MathlibAPIProbe.lean/declarations/example.md) | 50 | `declaration-track:b1f27637a8f71af95dd829d3c9e02b54a6c0a2014e8ff663bd01f4688fedf620` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

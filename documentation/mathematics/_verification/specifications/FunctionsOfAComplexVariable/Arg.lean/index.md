@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/Arg.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/Arg.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/Arg.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/Arg.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sameRay_iff](../../../../FunctionsOfAComplexVariable/Arg.lean/declarations/sameray-iff.md) | 29 | `result-track:4940eaf9ffd7f8bbfae3fa43a7d025d76a111df350a2d58e6b7581145ecd3f7f` |
-| 2 | `theorem` | [sameRay_iff_arg_div_eq_zero](../../../../FunctionsOfAComplexVariable/Arg.lean/declarations/sameray-iff-arg-div-eq-zero.md) | 38 | `result-track:3dcfd9d19b8181e47b29d1025e0cd7197b4623d67fd634068765eaac6c69cf09` |
-| 3 | `theorem` | [norm_add_eq_iff](../../../../FunctionsOfAComplexVariable/Arg.lean/declarations/norm-add-eq-iff.md) | 44 | `result-track:db45c58390de22672b9e04613b0de1f512a6b729718e9d68e0986b8db6518a95` |
-| 4 | `theorem` | [norm_sub_eq_iff](../../../../FunctionsOfAComplexVariable/Arg.lean/declarations/norm-sub-eq-iff.md) | 47 | `result-track:6f67a77572171bb79fa3257c2fb9fb2823025ecf3fe021fc3abff3f71407efa2` |
-| 5 | `theorem` | [sameRay_of_arg_eq](../../../../FunctionsOfAComplexVariable/Arg.lean/declarations/sameray-of-arg-eq.md) | 50 | `result-track:3211aeddd4509cdb6e34007c1b69aba2a58fe804ef9473154d55212318d98e01` |
-| 6 | `theorem` | [norm_add_eq](../../../../FunctionsOfAComplexVariable/Arg.lean/declarations/norm-add-eq.md) | 53 | `result-track:75c475653ef2110d226b9f58674662597cf1f45d1dc945ac46314c2ce8bdd889` |
-| 7 | `theorem` | [norm_sub_eq](../../../../FunctionsOfAComplexVariable/Arg.lean/declarations/norm-sub-eq.md) | 56 | `result-track:4f00ea3fb213239e20f6dae350cb93aeaef2aee0ad453f60a15fe478a7f5cd04` |
+| 1 | `theorem` | [sameRay_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/Arg.lean/declarations/sameray-iff.md) | 29 | `result-track:4940eaf9ffd7f8bbfae3fa43a7d025d76a111df350a2d58e6b7581145ecd3f7f` |
+| 2 | `theorem` | [sameRay_iff_arg_div_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/Arg.lean/declarations/sameray-iff-arg-div-eq-zero.md) | 38 | `result-track:3dcfd9d19b8181e47b29d1025e0cd7197b4623d67fd634068765eaac6c69cf09` |
+| 3 | `theorem` | [norm_add_eq_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/Arg.lean/declarations/norm-add-eq-iff.md) | 44 | `result-track:db45c58390de22672b9e04613b0de1f512a6b729718e9d68e0986b8db6518a95` |
+| 4 | `theorem` | [norm_sub_eq_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/Arg.lean/declarations/norm-sub-eq-iff.md) | 47 | `result-track:6f67a77572171bb79fa3257c2fb9fb2823025ecf3fe021fc3abff3f71407efa2` |
+| 5 | `theorem` | [sameRay_of_arg_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/Arg.lean/declarations/sameray-of-arg-eq.md) | 50 | `result-track:3211aeddd4509cdb6e34007c1b69aba2a58fe804ef9473154d55212318d98e01` |
+| 6 | `theorem` | [norm_add_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/Arg.lean/declarations/norm-add-eq.md) | 53 | `result-track:75c475653ef2110d226b9f58674662597cf1f45d1dc945ac46314c2ce8bdd889` |
+| 7 | `theorem` | [norm_sub_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/Arg.lean/declarations/norm-sub-eq.md) | 56 | `result-track:4f00ea3fb213239e20f6dae350cb93aeaef2aee0ad453f60a15fe478a7f5cd04` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

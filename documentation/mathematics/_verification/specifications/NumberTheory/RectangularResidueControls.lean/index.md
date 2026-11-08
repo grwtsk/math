@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/RectangularResidueControls.lean/index.md) · [Full source](../../../../NumberTheory/RectangularResidueControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RectangularResidueControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RectangularResidueControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Chebyshev.TentFiniteResidues`](../../../../NumberTheory/TentFiniteResidues.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.TentFiniteResidues`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentFiniteResidues.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Tactic.NormNum` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [centered_interior](../../../../NumberTheory/RectangularResidueControls.lean/declarations/centered-interior.md) | 21 | `result-track:c1b88410fd1ceb269ff4d06ed00813cc780600a96e9f9cc352b7824a13affc51` |
-| 2 | `theorem` | [noncentral_interior](../../../../NumberTheory/RectangularResidueControls.lean/declarations/noncentral-interior.md) | 26 | `result-track:7542e6aca1d9ae3b047916194313e3080430b8f4502e2ba53894da98a6368e13` |
-| 3 | `theorem` | [exterior_is_zero](../../../../NumberTheory/RectangularResidueControls.lean/declarations/exterior-is-zero.md) | 31 | `result-track:73d4c90f4aaed58c330546f5ababca0b9ba3737cb2cb89d6a31ed7325c319597` |
-| 4 | `theorem` | [coefficient_minus_two](../../../../NumberTheory/RectangularResidueControls.lean/declarations/coefficient-minus-two.md) | 35 | `result-track:b05a96eb51b3b9affa368b8b762a4c17fd037f5144198597163d010d8304520a` |
-| 5 | `theorem` | [reversed_orientation](../../../../NumberTheory/RectangularResidueControls.lean/declarations/reversed-orientation.md) | 41 | `result-track:8fc563c7375b26e524e4a6f64d8ba77238e2e771bc0bef3b67d62106b97dfc81` |
-| 6 | `theorem` | [boundary_point_not_interior](../../../../NumberTheory/RectangularResidueControls.lean/declarations/boundary-point-not-interior.md) | 46 | `result-track:5a36486cb340decb032000f03d9d1ea57f5f6c9d1a1555d2d1018984a7204630` |
-| 7 | `theorem` | [boundary_point_not_exterior](../../../../NumberTheory/RectangularResidueControls.lean/declarations/boundary-point-not-exterior.md) | 50 | `result-track:9211c923a03490dfd4e4bd1e8fba822ad835c56d218a816fd79e16cce280c031` |
-| 8 | `theorem` | [zero_height_guard](../../../../NumberTheory/RectangularResidueControls.lean/declarations/zero-height-guard.md) | 53 | `result-track:2935ce3a1ac10201b7f4e56614e3904ccd6ffd44511de41aeabb6c3ae75e6016` |
-| 9 | `theorem` | [negative_corner_has_opposite_sign](../../../../NumberTheory/RectangularResidueControls.lean/declarations/negative-corner-has-opposite-sign.md) | 56 | `result-track:7585d01266a25c8b37125cb937291e9c36fa61206ef6334881d2949bfcfe6d5c` |
+| 1 | `theorem` | [centered_interior](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RectangularResidueControls.lean/declarations/centered-interior.md) | 21 | `result-track:c1b88410fd1ceb269ff4d06ed00813cc780600a96e9f9cc352b7824a13affc51` |
+| 2 | `theorem` | [noncentral_interior](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RectangularResidueControls.lean/declarations/noncentral-interior.md) | 26 | `result-track:7542e6aca1d9ae3b047916194313e3080430b8f4502e2ba53894da98a6368e13` |
+| 3 | `theorem` | [exterior_is_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RectangularResidueControls.lean/declarations/exterior-is-zero.md) | 31 | `result-track:73d4c90f4aaed58c330546f5ababca0b9ba3737cb2cb89d6a31ed7325c319597` |
+| 4 | `theorem` | [coefficient_minus_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RectangularResidueControls.lean/declarations/coefficient-minus-two.md) | 35 | `result-track:b05a96eb51b3b9affa368b8b762a4c17fd037f5144198597163d010d8304520a` |
+| 5 | `theorem` | [reversed_orientation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RectangularResidueControls.lean/declarations/reversed-orientation.md) | 41 | `result-track:8fc563c7375b26e524e4a6f64d8ba77238e2e771bc0bef3b67d62106b97dfc81` |
+| 6 | `theorem` | [boundary_point_not_interior](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RectangularResidueControls.lean/declarations/boundary-point-not-interior.md) | 46 | `result-track:5a36486cb340decb032000f03d9d1ea57f5f6c9d1a1555d2d1018984a7204630` |
+| 7 | `theorem` | [boundary_point_not_exterior](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RectangularResidueControls.lean/declarations/boundary-point-not-exterior.md) | 50 | `result-track:9211c923a03490dfd4e4bd1e8fba822ad835c56d218a816fd79e16cce280c031` |
+| 8 | `theorem` | [zero_height_guard](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RectangularResidueControls.lean/declarations/zero-height-guard.md) | 53 | `result-track:2935ce3a1ac10201b7f4e56614e3904ccd6ffd44511de41aeabb6c3ae75e6016` |
+| 9 | `theorem` | [negative_corner_has_opposite_sign](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RectangularResidueControls.lean/declarations/negative-corner-has-opposite-sign.md) | 56 | `result-track:7585d01266a25c8b37125cb937291e9c36fa61206ef6334881d2949bfcfe6d5c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

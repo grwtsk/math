@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BasicBasicPresheaf.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BasicBasicPresheaf.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BasicBasicPresheaf.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BasicBasicPresheaf.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Presheaf](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BasicBasicPresheaf.lean/declarations/presheaf.md) | 23 | `declaration-track:ef410cc12181ec7b0b0f23fa7ee4c782ee56ea54820a80bf534c446a371a09fa` |
-| 2 | `def` | [restrict](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BasicBasicPresheaf.lean/declarations/restrict.md) | 28 | `declaration-track:1297167acbc74d05870e8b27c4e82f1764f7d9fea0e3e554c3fd86e26428e052` |
-| 3 | `structure` | [IsSheaf](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BasicBasicPresheaf.lean/declarations/issheaf.md) | 39 | `declaration-track:c7d31561810edcb32f43ba27b0f319c337c59eb4bc812d8ff7fe9d912af59976` |
+| 1 | `structure` | [Presheaf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BasicBasicPresheaf.lean/declarations/presheaf.md) | 23 | `declaration-track:ef410cc12181ec7b0b0f23fa7ee4c782ee56ea54820a80bf534c446a371a09fa` |
+| 2 | `def` | [restrict](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BasicBasicPresheaf.lean/declarations/restrict.md) | 28 | `declaration-track:1297167acbc74d05870e8b27c4e82f1764f7d9fea0e3e554c3fd86e26428e052` |
+| 3 | `structure` | [IsSheaf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BasicBasicPresheaf.lean/declarations/issheaf.md) | 39 | `declaration-track:c7d31561810edcb32f43ba27b0f319c337c59eb4bc812d8ff7fe9d912af59976` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

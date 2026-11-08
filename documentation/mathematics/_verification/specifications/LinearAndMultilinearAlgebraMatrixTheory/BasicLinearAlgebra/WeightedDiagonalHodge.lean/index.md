@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedDiagonalHodge.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedDiagonalHodge.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedDiagonalHodge.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedDiagonalHodge.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.LinearAlgebra.FinitePositiveHodgeHeat`](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinitePositiveHodgeHeat.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.LinearAlgebra.FinitePositiveHodgeHeat`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinitePositiveHodgeHeat.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [weightedDot](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedDiagonalHodge.lean/declarations/weighteddot.md) | 16 | `declaration-track:ddaf0f8e30f4cd0d2b28c8e5636b391e409e39c91f3e676ba5d7f9dee295a5b2` |
-| 2 | `theorem` | [weightedDot_self_eq_zero_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedDiagonalHodge.lean/declarations/weighteddot-self-eq-zero-iff.md) | 20 | `result-track:8819afa6319be1d04e69abff11278e0ac79017ecfc4abc06457c21f019212175` |
-| 3 | `def` | [weightedDiagonalHodge](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedDiagonalHodge.lean/declarations/weighteddiagonalhodge.md) | 47 | `declaration-track:a1783047e9f930d75e49e4ef3723b6651fbde4710509f425f8678390421c5e65` |
-| 4 | `theorem` | [weighted_adjoint](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedDiagonalHodge.lean/declarations/weighted-adjoint.md) | 53 | `result-track:3031005ed095759b8ca7d140fe7c2d999a68d7399807bb1ab3f39608b4c19cf9` |
-| 5 | `theorem` | [weighted_laplacian0_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedDiagonalHodge.lean/declarations/weighted-laplacian0-apply.md) | 66 | `result-track:4af379e6c43504032506dabbeacfdee34a40261bd30d4eac2e57a5733400e7cc` |
-| 6 | `def` | [energy](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedDiagonalHodge.lean/declarations/energy.md) | 75 | `declaration-track:c07ccf85873d91c18ceea7d225515ab89351e33bbe506fccdc0670b65768a381` |
-| 7 | `theorem` | [energy_nonneg](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedDiagonalHodge.lean/declarations/energy-nonneg.md) | 79 | `result-track:1babb02449b59e9dac075078902f17bd61541ed46ff853948ce816b267e06167` |
-| 8 | `theorem` | [energy_eq_zero_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedDiagonalHodge.lean/declarations/energy-eq-zero-iff.md) | 89 | `result-track:f9ca3d04702e39fe5cd08ac7b5357269b3d2cce2ee8e36535e0af699db2d633a` |
+| 1 | `def` | [weightedDot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedDiagonalHodge.lean/declarations/weighteddot.md) | 16 | `declaration-track:ddaf0f8e30f4cd0d2b28c8e5636b391e409e39c91f3e676ba5d7f9dee295a5b2` |
+| 2 | `theorem` | [weightedDot_self_eq_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedDiagonalHodge.lean/declarations/weighteddot-self-eq-zero-iff.md) | 20 | `result-track:8819afa6319be1d04e69abff11278e0ac79017ecfc4abc06457c21f019212175` |
+| 3 | `def` | [weightedDiagonalHodge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedDiagonalHodge.lean/declarations/weighteddiagonalhodge.md) | 47 | `declaration-track:a1783047e9f930d75e49e4ef3723b6651fbde4710509f425f8678390421c5e65` |
+| 4 | `theorem` | [weighted_adjoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedDiagonalHodge.lean/declarations/weighted-adjoint.md) | 53 | `result-track:3031005ed095759b8ca7d140fe7c2d999a68d7399807bb1ab3f39608b4c19cf9` |
+| 5 | `theorem` | [weighted_laplacian0_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedDiagonalHodge.lean/declarations/weighted-laplacian0-apply.md) | 66 | `result-track:4af379e6c43504032506dabbeacfdee34a40261bd30d4eac2e57a5733400e7cc` |
+| 6 | `def` | [energy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedDiagonalHodge.lean/declarations/energy.md) | 75 | `declaration-track:c07ccf85873d91c18ceea7d225515ab89351e33bbe506fccdc0670b65768a381` |
+| 7 | `theorem` | [energy_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedDiagonalHodge.lean/declarations/energy-nonneg.md) | 79 | `result-track:1babb02449b59e9dac075078902f17bd61541ed46ff853948ce816b267e06167` |
+| 8 | `theorem` | [energy_eq_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedDiagonalHodge.lean/declarations/energy-eq-zero-iff.md) | 89 | `result-track:f9ca3d04702e39fe5cd08ac7b5357269b3d2cce2ee8e36535e0af699db2d633a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

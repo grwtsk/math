@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/EveryLeafHasLatticePointNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/EveryLeafHasLatticePointNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EveryLeafHasLatticePointNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EveryLeafHasLatticePointNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [surfaceId](../../../../Combinatorics/EveryLeafHasLatticePointNamespaced.lean/declarations/surfaceid.md) | 16 | `declaration-track:27cb3a2fc45dda6928996674eadabe4e8121c33059a1bdb235537cd53cde7536` |
-| 2 | `def` | [ownsDeclaredSurface](../../../../Combinatorics/EveryLeafHasLatticePointNamespaced.lean/declarations/ownsdeclaredsurface.md) | 17 | `declaration-track:39843db48e706bcc2dc8b561c8d4b392d4f7225912f92ca24bef7b02d6ff75e2` |
-| 3 | `def` | [crossLeafReasoningRequiresGlue](../../../../Combinatorics/EveryLeafHasLatticePointNamespaced.lean/declarations/crossleafreasoningrequiresglue.md) | 18 | `declaration-track:8bc47231165e94341d84341daa24711a30d34620b88e341b9d6358db7bc45cf3` |
-| 4 | `theorem` | [surface_id_declared](../../../../Combinatorics/EveryLeafHasLatticePointNamespaced.lean/declarations/surface-id-declared.md) | 20 | `result-track:ad38f233ee94d6aa9a8e97179c8eb8b59405cc66ebe00d9c76d95844d666cd79` |
-| 5 | `theorem` | [owns_declared_surface](../../../../Combinatorics/EveryLeafHasLatticePointNamespaced.lean/declarations/owns-declared-surface.md) | 24 | `result-track:663cf8d5a1471c31d1114e8dd78be649df17d50b7786e95860f16ca0de619138` |
+| 1 | `def` | [surfaceId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EveryLeafHasLatticePointNamespaced.lean/declarations/surfaceid.md) | 16 | `declaration-track:27cb3a2fc45dda6928996674eadabe4e8121c33059a1bdb235537cd53cde7536` |
+| 2 | `def` | [ownsDeclaredSurface](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EveryLeafHasLatticePointNamespaced.lean/declarations/ownsdeclaredsurface.md) | 17 | `declaration-track:39843db48e706bcc2dc8b561c8d4b392d4f7225912f92ca24bef7b02d6ff75e2` |
+| 3 | `def` | [crossLeafReasoningRequiresGlue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EveryLeafHasLatticePointNamespaced.lean/declarations/crossleafreasoningrequiresglue.md) | 18 | `declaration-track:8bc47231165e94341d84341daa24711a30d34620b88e341b9d6358db7bc45cf3` |
+| 4 | `theorem` | [surface_id_declared](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EveryLeafHasLatticePointNamespaced.lean/declarations/surface-id-declared.md) | 20 | `result-track:ad38f233ee94d6aa9a8e97179c8eb8b59405cc66ebe00d9c76d95844d666cd79` |
+| 5 | `theorem` | [owns_declared_surface](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EveryLeafHasLatticePointNamespaced.lean/declarations/owns-declared-surface.md) | 24 | `result-track:663cf8d5a1471c31d1114e8dd78be649df17d50b7786e95860f16ca0de619138` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

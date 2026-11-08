@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Record4239RankCriterion.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Record4239RankCriterion.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Record4239RankCriterion.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Record4239RankCriterion.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.LinearAlgebra.ModTwoIndependenceDescent`](../../../../../GroupTheoryAndGeneralizations/ModTwoIndependenceDescent.lean/index.md) — import line 13; pinned internal source present.
-- [`GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.Record4239FiniteCharacterMatrix`](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Record4239FiniteCharacterMatrix.lean/index.md) — import line 14; pinned internal source present.
+- [`GRWTSK.LinearAlgebra.ModTwoIndependenceDescent`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ModTwoIndependenceDescent.lean/index.md) — import line 13; pinned internal source present.
+- [`GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.Record4239FiniteCharacterMatrix`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Record4239FiniteCharacterMatrix.lean/index.md) — import line 14; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [linearIndependent_of_characterValues](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Record4239RankCriterion.lean/declarations/linearindependent-of-charactervalues.md) | 46 | `result-track:4ea2a9edd259169fc3ab4c8d14761a041088d4df7025a57d790a3fa2448346ea` |
+| 1 | `theorem` | [linearIndependent_of_characterValues](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Record4239RankCriterion.lean/declarations/linearindependent-of-charactervalues.md) | 46 | `result-track:4ea2a9edd259169fc3ab4c8d14761a041088d4df7025a57d790a3fa2448346ea` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

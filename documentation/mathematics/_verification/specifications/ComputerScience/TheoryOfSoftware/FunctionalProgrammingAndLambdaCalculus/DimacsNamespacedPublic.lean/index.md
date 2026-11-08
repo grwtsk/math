@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DimacsNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DimacsNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DimacsNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DimacsNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [DimacsState](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DimacsNamespacedPublic.lean/declarations/dimacsstate.md) | 26 | `declaration-track:f582f5bf916f9a71ce6ce4d95511d9b602ed69d66221b4ff78df17b3b44f1b8b` |
-| 2 | `abbrev` | [DimacsM](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DimacsNamespacedPublic.lean/declarations/dimacsm.md) | 30 | `declaration-track:64ba9c390a920f3d615b2e7c6a89222627d9f72f034ab19b425f8cf6b6a64b6c` |
-| 3 | `def` | [handleLit](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DimacsNamespacedPublic.lean/declarations/handlelit.md) | 35 | `declaration-track:e6ccd48447d1b83feea150901fc7fc65eeaece0bc18d29bfde62749ccb9d2fd3` |
-| 4 | `def` | [incrementClauses](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DimacsNamespacedPublic.lean/declarations/incrementclauses.md) | 39 | `declaration-track:11ab73f9f8fe93f1cad7b7474873e4d3ca34bf926d389dcf88cc463e2ff077bb` |
-| 5 | `def` | [dimacs](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DimacsNamespacedPublic.lean/declarations/dimacs.md) | 50 | `declaration-track:31b2a74e8489fbddc3c62997a115a31d3098453e5884e718c40b82b3371b9bdc` |
+| 1 | `structure` | [DimacsState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DimacsNamespacedPublic.lean/declarations/dimacsstate.md) | 26 | `declaration-track:f582f5bf916f9a71ce6ce4d95511d9b602ed69d66221b4ff78df17b3b44f1b8b` |
+| 2 | `abbrev` | [DimacsM](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DimacsNamespacedPublic.lean/declarations/dimacsm.md) | 30 | `declaration-track:64ba9c390a920f3d615b2e7c6a89222627d9f72f034ab19b425f8cf6b6a64b6c` |
+| 3 | `def` | [handleLit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DimacsNamespacedPublic.lean/declarations/handlelit.md) | 35 | `declaration-track:e6ccd48447d1b83feea150901fc7fc65eeaece0bc18d29bfde62749ccb9d2fd3` |
+| 4 | `def` | [incrementClauses](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DimacsNamespacedPublic.lean/declarations/incrementclauses.md) | 39 | `declaration-track:11ab73f9f8fe93f1cad7b7474873e4d3ca34bf926d389dcf88cc463e2ff077bb` |
+| 5 | `def` | [dimacs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DimacsNamespacedPublic.lean/declarations/dimacs.md) | 50 | `declaration-track:31b2a74e8489fbddc3c62997a115a31d3098453e5884e718c40b82b3371b9bdc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/SpectralSizeNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/SpectralSizeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralSizeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralSizeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [UniformSpectralSizeCertificate](../../../../FunctionalAnalysis/SpectralSizeNamespaced.lean/declarations/uniformspectralsizecertificate.md) | 22 | `declaration-track:379e1bf5097714cc9b4bcc1084bb8ec92eda132e7c0c08f0c2b162533f00a0ea` |
+| 1 | `structure` | [UniformSpectralSizeCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralSizeNamespaced.lean/declarations/uniformspectralsizecertificate.md) | 22 | `declaration-track:379e1bf5097714cc9b4bcc1084bb8ec92eda132e7c0c08f0c2b162533f00a0ea` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

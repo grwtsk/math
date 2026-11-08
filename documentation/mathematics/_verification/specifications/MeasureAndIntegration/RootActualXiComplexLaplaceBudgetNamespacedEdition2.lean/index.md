@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/RootActualXiComplexLaplaceBudgetNamespacedEdition2.lean/index.md) · [Full source](../../../../MeasureAndIntegration/RootActualXiComplexLaplaceBudgetNamespacedEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RootActualXiComplexLaplaceBudgetNamespacedEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RootActualXiComplexLaplaceBudgetNamespacedEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualXiComplexLaplace](../../../../MeasureAndIntegration/RootActualXiComplexLaplaceBudgetNamespacedEdition2.lean/declarations/actualxicomplexlaplace.md) | 28 | `declaration-track:459a3a88470e9d3cc942b71512fc41d8d4e1b706b3bf244298a3612f7fcb9200` |
-| 2 | `theorem` | [coefficient_nonneg](../../../../MeasureAndIntegration/RootActualXiComplexLaplaceBudgetNamespacedEdition2.lean/declarations/coefficient-nonneg.md) | 32 | `result-track:3aaa1fe02cc38289b099ce6abf2725bb33c5ce60efb6f6897dde862fc7add9e8` |
-| 3 | `theorem` | [primitive_continuousOn_Ici](../../../../MeasureAndIntegration/RootActualXiComplexLaplaceBudgetNamespacedEdition2.lean/declarations/primitive-continuouson-ici.md) | 36 | `result-track:10942778194249a837cfb28f7e8e4eeef1c50e37a34a69748240b8c2d0a38670` |
-| 4 | `theorem` | [actualXiComplexLaplaceKernel_norm_le](../../../../MeasureAndIntegration/RootActualXiComplexLaplaceBudgetNamespacedEdition2.lean/declarations/actualxicomplexlaplacekernel-norm-le.md) | 49 | `result-track:0f3c237ac85bdd75a979ddf3dcb612b89040b4dcb8b0a307a6b81bb9442c6cfc` |
-| 5 | `theorem` | [actualXiComplexLaplace_integrableOn](../../../../MeasureAndIntegration/RootActualXiComplexLaplaceBudgetNamespacedEdition2.lean/declarations/actualxicomplexlaplace-integrableon.md) | 64 | `result-track:8f4495a3b0c0a18f9f176eee7f50c2ab760e1d890190869e74dcada6d92a1777` |
-| 6 | `theorem` | [actualXiComplexLaplace_norm_le](../../../../MeasureAndIntegration/RootActualXiComplexLaplaceBudgetNamespacedEdition2.lean/declarations/actualxicomplexlaplace-norm-le.md) | 80 | `result-track:a858b369c8e176a176a16c42669b3db932e7d58216b6915dd3635e3258247200` |
+| 1 | `def` | [actualXiComplexLaplace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RootActualXiComplexLaplaceBudgetNamespacedEdition2.lean/declarations/actualxicomplexlaplace.md) | 28 | `declaration-track:459a3a88470e9d3cc942b71512fc41d8d4e1b706b3bf244298a3612f7fcb9200` |
+| 2 | `theorem` | [coefficient_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RootActualXiComplexLaplaceBudgetNamespacedEdition2.lean/declarations/coefficient-nonneg.md) | 32 | `result-track:3aaa1fe02cc38289b099ce6abf2725bb33c5ce60efb6f6897dde862fc7add9e8` |
+| 3 | `theorem` | [primitive_continuousOn_Ici](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RootActualXiComplexLaplaceBudgetNamespacedEdition2.lean/declarations/primitive-continuouson-ici.md) | 36 | `result-track:10942778194249a837cfb28f7e8e4eeef1c50e37a34a69748240b8c2d0a38670` |
+| 4 | `theorem` | [actualXiComplexLaplaceKernel_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RootActualXiComplexLaplaceBudgetNamespacedEdition2.lean/declarations/actualxicomplexlaplacekernel-norm-le.md) | 49 | `result-track:0f3c237ac85bdd75a979ddf3dcb612b89040b4dcb8b0a307a6b81bb9442c6cfc` |
+| 5 | `theorem` | [actualXiComplexLaplace_integrableOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RootActualXiComplexLaplaceBudgetNamespacedEdition2.lean/declarations/actualxicomplexlaplace-integrableon.md) | 64 | `result-track:8f4495a3b0c0a18f9f176eee7f50c2ab760e1d890190869e74dcada6d92a1777` |
+| 6 | `theorem` | [actualXiComplexLaplace_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RootActualXiComplexLaplaceBudgetNamespacedEdition2.lean/declarations/actualxicomplexlaplace-norm-le.md) | 80 | `result-track:a858b369c8e176a176a16c42669b3db932e7d58216b6915dd3635e3258247200` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ZifyNamespaced.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ZifyNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ZifyNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ZifyNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `axiom` | [test_sorry](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ZifyNamespaced.lean/declarations/test-sorry.md) | 21 | `declaration-track:f6391b51fa63ceff5237bd16894d371fa0e9b7f522cd3aa7361e0d6bc1d82e77` |
-| 2 | `example` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ZifyNamespaced.lean/declarations/example-source-edition-4.md) | 22 | `declaration-track:8a6b28edabaac1324190e4817706606eb5ca34196eb646c5e36329c6133d6039` |
-| 3 | `example` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ZifyNamespaced.lean/declarations/example.md) | 32 | `declaration-track:23e9e9ce65c17982fa49f2ef431f7bff1b43d85adf4d7241ebadb8dfc0a6e652` |
-| 4 | `example` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ZifyNamespaced.lean/declarations/example-source-edition-2.md) | 38 | `declaration-track:3778a0df2fb7366576fe35a5f22efd3bf7b08c144043ea5137dbfb0601b23e89` |
-| 5 | `example` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ZifyNamespaced.lean/declarations/example-source-edition-3.md) | 49 | `declaration-track:45c814332be2bfa9d258e151010ec5620656d90bef0410840444db578d8a2af8` |
-| 6 | `example` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ZifyNamespaced.lean/declarations/example-source-edition-6.md) | 54 | `declaration-track:dcb81375ee8da60bb1a3dae253be73a1a670bbcddf71e1ca1c9a9fc95003e939` |
-| 7 | `example` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ZifyNamespaced.lean/declarations/example-source-edition-5.md) | 59 | `declaration-track:be2ff7fae4fd071595d08cfa807b256d3b582d770046b5b3e0e6dad9bea3b271` |
+| 1 | `axiom` | [test_sorry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ZifyNamespaced.lean/declarations/test-sorry.md) | 21 | `declaration-track:f6391b51fa63ceff5237bd16894d371fa0e9b7f522cd3aa7361e0d6bc1d82e77` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ZifyNamespaced.lean/declarations/example-source-edition-4.md) | 22 | `declaration-track:8a6b28edabaac1324190e4817706606eb5ca34196eb646c5e36329c6133d6039` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ZifyNamespaced.lean/declarations/example.md) | 32 | `declaration-track:23e9e9ce65c17982fa49f2ef431f7bff1b43d85adf4d7241ebadb8dfc0a6e652` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ZifyNamespaced.lean/declarations/example-source-edition-2.md) | 38 | `declaration-track:3778a0df2fb7366576fe35a5f22efd3bf7b08c144043ea5137dbfb0601b23e89` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ZifyNamespaced.lean/declarations/example-source-edition-3.md) | 49 | `declaration-track:45c814332be2bfa9d258e151010ec5620656d90bef0410840444db578d8a2af8` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ZifyNamespaced.lean/declarations/example-source-edition-6.md) | 54 | `declaration-track:dcb81375ee8da60bb1a3dae253be73a1a670bbcddf71e1ca1c9a9fc95003e939` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ZifyNamespaced.lean/declarations/example-source-edition-5.md) | 59 | `declaration-track:be2ff7fae4fd071595d08cfa807b256d3b582d770046b5b3e0e6dad9bea3b271` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

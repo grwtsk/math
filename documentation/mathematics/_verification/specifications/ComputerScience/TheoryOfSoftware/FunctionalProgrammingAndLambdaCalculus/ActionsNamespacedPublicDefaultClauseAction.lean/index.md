@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ActionsNamespacedPublicDefaultClauseAction.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ActionsNamespacedPublicDefaultClauseAction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ActionsNamespacedPublicDefaultClauseAction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ActionsNamespacedPublicDefaultClauseAction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [DefaultClauseAction](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ActionsNamespacedPublicDefaultClauseAction.lean/declarations/defaultclauseaction.md) | 33 | `declaration-track:3e13d11368c70748ce43aabd47e63a5cf293976cbe88952b1579837264aa7025` |
-| 2 | `def` | [WellFormedAction](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ActionsNamespacedPublicDefaultClauseAction.lean/declarations/wellformedaction.md) | 46 | `declaration-track:645de5fa2151a88d569e1aad7ec9fc0dbbdd4d2f0eaca601f323ab1c38111114` |
-| 3 | `def` | [natLiteralToPosFinLiteral](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ActionsNamespacedPublicDefaultClauseAction.lean/declarations/natliteraltoposfinliteral.md) | 52 | `declaration-track:0957b177ce81929286962a777232e5d2a33c1a24a30791dad3bff396ea90d093` |
-| 4 | `def` | [intToLiteral](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ActionsNamespacedPublicDefaultClauseAction.lean/declarations/inttoliteral.md) | 59 | `declaration-track:73f8c5e3ca3500fc2e5194db73725c9826392c9ebe5f05ee71b167b1f2a0c5c1` |
-| 5 | `def` | [intActionToDefaultClauseAction](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ActionsNamespacedPublicDefaultClauseAction.lean/declarations/intactiontodefaultclauseaction.md) | 78 | `declaration-track:f2c335599320bdd5b28907cd19467b3e2c380a4a844f4cb19a570df8669fda19` |
+| 1 | `abbrev` | [DefaultClauseAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ActionsNamespacedPublicDefaultClauseAction.lean/declarations/defaultclauseaction.md) | 33 | `declaration-track:3e13d11368c70748ce43aabd47e63a5cf293976cbe88952b1579837264aa7025` |
+| 2 | `def` | [WellFormedAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ActionsNamespacedPublicDefaultClauseAction.lean/declarations/wellformedaction.md) | 46 | `declaration-track:645de5fa2151a88d569e1aad7ec9fc0dbbdd4d2f0eaca601f323ab1c38111114` |
+| 3 | `def` | [natLiteralToPosFinLiteral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ActionsNamespacedPublicDefaultClauseAction.lean/declarations/natliteraltoposfinliteral.md) | 52 | `declaration-track:0957b177ce81929286962a777232e5d2a33c1a24a30791dad3bff396ea90d093` |
+| 4 | `def` | [intToLiteral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ActionsNamespacedPublicDefaultClauseAction.lean/declarations/inttoliteral.md) | 59 | `declaration-track:73f8c5e3ca3500fc2e5194db73725c9826392c9ebe5f05ee71b167b1f2a0c5c1` |
+| 5 | `def` | [intActionToDefaultClauseAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ActionsNamespacedPublicDefaultClauseAction.lean/declarations/intactiontodefaultclauseaction.md) | 78 | `declaration-track:f2c335599320bdd5b28907cd19467b3e2c380a4a844f4cb19a570df8669fda19` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

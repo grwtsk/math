@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IndizationEqualizersNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IndizationEqualizersNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IndizationEqualizersNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IndizationEqualizersNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [isIndObject_limit_comp_yoneda_comp_colim](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IndizationEqualizersNamespaced.lean/declarations/isindobject-limit-comp-yoneda-comp-colim.md) | 59 | `result-track:40ea4ef578a0a260a7b32f484cc3213b0483468df3b0b9592f46f198430ae277` |
-| 2 | `theorem` | [closedUnderLimitsOfShape_walkingParallelPair_isIndObject](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IndizationEqualizersNamespaced.lean/declarations/closedunderlimitsofshape-walkingparallelpair-isindobject.md) | 74 | `result-track:aaf007d9d3669282375feafa8044ea7ef7a882389be468bd3cc11ea49da2f949` |
+| 1 | `theorem` | [isIndObject_limit_comp_yoneda_comp_colim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IndizationEqualizersNamespaced.lean/declarations/isindobject-limit-comp-yoneda-comp-colim.md) | 59 | `result-track:40ea4ef578a0a260a7b32f484cc3213b0483468df3b0b9592f46f198430ae277` |
+| 2 | `theorem` | [closedUnderLimitsOfShape_walkingParallelPair_isIndObject](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IndizationEqualizersNamespaced.lean/declarations/closedunderlimitsofshape-walkingparallelpair-isindobject.md) | 74 | `result-track:aaf007d9d3669282375feafa8044ea7ef7a882389be468bd3cc11ea49da2f949` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

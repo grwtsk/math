@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/StarOrdered.lean/index.md) · [Full source](../../../../RealFunctions/StarOrdered.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/StarOrdered.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/StarOrdered.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [Real.instStarOrderedRing](../../../../RealFunctions/StarOrdered.lean/declarations/real-inststarorderedring.md) | 20 | `declaration-track:9c25c27205a60f024d95b2a64055fe66eb5f4575f894aabbb1692f6215a0f269` |
-| 2 | `instance` | [NNReal.instStarOrderedRing](../../../../RealFunctions/StarOrdered.lean/declarations/nnreal-inststarorderedring.md) | 26 | `declaration-track:4debb2cafc8ec5291753647c411eddb4feab05e690918d1adc7ade990d42e8a6` |
+| 1 | `instance` | [Real.instStarOrderedRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/StarOrdered.lean/declarations/real-inststarorderedring.md) | 20 | `declaration-track:9c25c27205a60f024d95b2a64055fe66eb5f4575f894aabbb1692f6215a0f269` |
+| 2 | `instance` | [NNReal.instStarOrderedRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/StarOrdered.lean/declarations/nnreal-inststarorderedring.md) | 26 | `declaration-track:4debb2cafc8ec5291753647c411eddb4feab05e690918d1adc7ade990d42e8a6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

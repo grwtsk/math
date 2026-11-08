@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BetaConversionNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BetaConversionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BetaConversionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BetaConversionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [conversion_iff_normal_eq](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BetaConversionNamespaced.lean/declarations/conversion-iff-normal-eq.md) | 29 | `result-track:70d2f2062ecc92e49e735f29086b1df80b3584b3d37087deb35ef066a4df4a91` |
-| 2 | `def` | [conversionFuel](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BetaConversionNamespaced.lean/declarations/conversionfuel.md) | 44 | `declaration-track:242bab1d5b764595b3d96520a26ddb7cf2229af953ac89d6ef46496339bc2de6` |
-| 3 | `theorem` | [conversionFuel_correct](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BetaConversionNamespaced.lean/declarations/conversionfuel-correct.md) | 54 | `result-track:3259ef87d5dfb2e2deb02b48b338422e43101b0f4ccffe073d1cf291648faa7f` |
-| 4 | `theorem` | [conversionFuel_complete](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BetaConversionNamespaced.lean/declarations/conversionfuel-complete.md) | 72 | `result-track:4ff77597f117efd2dfc8426e10469d114b6ee6090b06d2d88dffc8ccf34aac2f` |
+| 1 | `theorem` | [conversion_iff_normal_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BetaConversionNamespaced.lean/declarations/conversion-iff-normal-eq.md) | 29 | `result-track:70d2f2062ecc92e49e735f29086b1df80b3584b3d37087deb35ef066a4df4a91` |
+| 2 | `def` | [conversionFuel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BetaConversionNamespaced.lean/declarations/conversionfuel.md) | 44 | `declaration-track:242bab1d5b764595b3d96520a26ddb7cf2229af953ac89d6ef46496339bc2de6` |
+| 3 | `theorem` | [conversionFuel_correct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BetaConversionNamespaced.lean/declarations/conversionfuel-correct.md) | 54 | `result-track:3259ef87d5dfb2e2deb02b48b338422e43101b0f4ccffe073d1cf291648faa7f` |
+| 4 | `theorem` | [conversionFuel_complete](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BetaConversionNamespaced.lean/declarations/conversionfuel-complete.md) | 72 | `result-track:4ff77597f117efd2dfc8426e10469d114b6ee6090b06d2d88dffc8ccf34aac2f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

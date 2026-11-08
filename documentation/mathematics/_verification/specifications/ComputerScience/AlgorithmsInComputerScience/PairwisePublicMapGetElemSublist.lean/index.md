@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/PairwisePublicMapGetElemSublist.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/PairwisePublicMapGetElemSublist.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PairwisePublicMapGetElemSublist.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PairwisePublicMapGetElemSublist.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,13 +61,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [map_getElem_sublist](../../../../../ComputerScience/AlgorithmsInComputerScience/PairwisePublicMapGetElemSublist.lean/declarations/map-getelem-sublist.md) | 32 | `result-track:fadb9df8f7df90f4b668f8dd99b004dab3b2985ed3d8224bdfb974a4c7da844c` |
-| 2 | `theorem` | [sublist_eq_map_getElem](../../../../../ComputerScience/AlgorithmsInComputerScience/PairwisePublicMapGetElemSublist.lean/declarations/sublist-eq-map-getelem.md) | 51 | `result-track:9ea02d22cd25c2d4a305cd2752750911a7b328c0d45cc53fca5cdc257cdee513` |
-| 3 | `theorem` | [pairwise_iff_getElem](../../../../../ComputerScience/AlgorithmsInComputerScience/PairwisePublicMapGetElemSublist.lean/declarations/pairwise-iff-getelem.md) | 67 | `result-track:7a0e89917cc00e3bed733e23025046006293d1464d0925b4a5041728b831dbd1` |
-| 4 | `theorem` | [pairwise_lt_finRange](../../../../../ComputerScience/AlgorithmsInComputerScience/PairwisePublicMapGetElemSublist.lean/declarations/pairwise-lt-finrange.md) | 81 | `result-track:6c506a1f26b544b4f6e4d43ba8e2edb198ca61b1f8c021bab928a180ad4cd2f6` |
-| 5 | `theorem` | [pairwise_le_finRange](../../../../../ComputerScience/AlgorithmsInComputerScience/PairwisePublicMapGetElemSublist.lean/declarations/pairwise-le-finrange.md) | 88 | `result-track:c6e7a713c1c99bb616b5cf2178b9099b87e7855d1cb33e895f080c3cbce6c42e` |
-| 6 | `theorem` | [nodup_finRange](../../../../../ComputerScience/AlgorithmsInComputerScience/PairwisePublicMapGetElemSublist.lean/declarations/nodup-finrange.md) | 95 | `result-track:b21a25a1a5bfa73016b4a6711d46fb6e2460a0bd2938455b9ff01d4f343212cb` |
-| 7 | `theorem` | [Nodup.idxOf_getElem](../../../../../ComputerScience/AlgorithmsInComputerScience/PairwisePublicMapGetElemSublist.lean/declarations/nodup-idxof-getelem.md) | 101 | `result-track:0397e0aac74a162aecfe437050932fd50073ae5694fb0d88def08a907380225e` |
+| 1 | `theorem` | [map_getElem_sublist](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PairwisePublicMapGetElemSublist.lean/declarations/map-getelem-sublist.md) | 32 | `result-track:fadb9df8f7df90f4b668f8dd99b004dab3b2985ed3d8224bdfb974a4c7da844c` |
+| 2 | `theorem` | [sublist_eq_map_getElem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PairwisePublicMapGetElemSublist.lean/declarations/sublist-eq-map-getelem.md) | 51 | `result-track:9ea02d22cd25c2d4a305cd2752750911a7b328c0d45cc53fca5cdc257cdee513` |
+| 3 | `theorem` | [pairwise_iff_getElem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PairwisePublicMapGetElemSublist.lean/declarations/pairwise-iff-getelem.md) | 67 | `result-track:7a0e89917cc00e3bed733e23025046006293d1464d0925b4a5041728b831dbd1` |
+| 4 | `theorem` | [pairwise_lt_finRange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PairwisePublicMapGetElemSublist.lean/declarations/pairwise-lt-finrange.md) | 81 | `result-track:6c506a1f26b544b4f6e4d43ba8e2edb198ca61b1f8c021bab928a180ad4cd2f6` |
+| 5 | `theorem` | [pairwise_le_finRange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PairwisePublicMapGetElemSublist.lean/declarations/pairwise-le-finrange.md) | 88 | `result-track:c6e7a713c1c99bb616b5cf2178b9099b87e7855d1cb33e895f080c3cbce6c42e` |
+| 6 | `theorem` | [nodup_finRange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PairwisePublicMapGetElemSublist.lean/declarations/nodup-finrange.md) | 95 | `result-track:b21a25a1a5bfa73016b4a6711d46fb6e2460a0bd2938455b9ff01d4f343212cb` |
+| 7 | `theorem` | [Nodup.idxOf_getElem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PairwisePublicMapGetElemSublist.lean/declarations/nodup-idxof-getelem.md) | 101 | `result-track:0397e0aac74a162aecfe437050932fd50073ae5694fb0d88def08a907380225e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

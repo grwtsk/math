@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCubicSamplingRemainderNamespacedAlternative.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCubicSamplingRemainderNamespacedAlternative.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCubicSamplingRemainderNamespacedAlternative.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCubicSamplingRemainderNamespacedAlternative.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [cubicLogModelDerivative](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCubicSamplingRemainderNamespacedAlternative.lean/declarations/cubiclogmodelderivative.md) | 29 | `declaration-track:e939344fe65ced4ed8a7f9c9f570f32b6d1cd421657ed86d24b04ec825f1488f` |
-| 2 | `theorem` | [cubic_log_derivative_difference](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCubicSamplingRemainderNamespacedAlternative.lean/declarations/cubic-log-derivative-difference.md) | 35 | `result-track:58134e18e645ed9296ce10a4bf6b7e9cc2d6d02946ab078e7fa8ef528ae85c1e` |
-| 3 | `theorem` | [cubic_log_derivative_difference_abs_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCubicSamplingRemainderNamespacedAlternative.lean/declarations/cubic-log-derivative-difference-abs-le.md) | 48 | `result-track:edab421835293a531eea3c9abf9a8acf1f4c221f3ce9cb94e62281b4224b4649` |
+| 1 | `def` | [cubicLogModelDerivative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCubicSamplingRemainderNamespacedAlternative.lean/declarations/cubiclogmodelderivative.md) | 29 | `declaration-track:e939344fe65ced4ed8a7f9c9f570f32b6d1cd421657ed86d24b04ec825f1488f` |
+| 2 | `theorem` | [cubic_log_derivative_difference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCubicSamplingRemainderNamespacedAlternative.lean/declarations/cubic-log-derivative-difference.md) | 35 | `result-track:58134e18e645ed9296ce10a4bf6b7e9cc2d6d02946ab078e7fa8ef528ae85c1e` |
+| 3 | `theorem` | [cubic_log_derivative_difference_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCubicSamplingRemainderNamespacedAlternative.lean/declarations/cubic-log-derivative-difference-abs-le.md) | 48 | `result-track:edab421835293a531eea3c9abf9a8acf1f4c221f3ce9cb94e62281b4224b4649` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

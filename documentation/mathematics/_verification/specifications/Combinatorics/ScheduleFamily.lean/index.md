@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ScheduleFamily.lean/index.md) · [Full source](../../../../Combinatorics/ScheduleFamily.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ScheduleFamily.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ScheduleFamily.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RegisteredScheduleFamily](../../../../Combinatorics/ScheduleFamily.lean/declarations/registeredschedulefamily.md) | 9 | `declaration-track:333bee96e66ed8d3ea60184b366223d852fd848f3db7a8ec583d915ce146b209` |
+| 1 | `structure` | [RegisteredScheduleFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ScheduleFamily.lean/declarations/registeredschedulefamily.md) | 9 | `declaration-track:333bee96e66ed8d3ea60184b366223d852fd848f3db7a8ec583d915ce146b209` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

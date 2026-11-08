@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/Imo1959Q1NamespacedPublic.lean/index.md) · [Full source](../../../../NumberTheory/Imo1959Q1NamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Imo1959Q1NamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Imo1959Q1NamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [calculation](../../../../NumberTheory/Imo1959Q1NamespacedPublic.lean/declarations/calculation.md) | 34 | `result-track:3e4adc76003e6db0ba83b8bcaae50ed6dfe1185cbfc9d0dcbd4b673f19cc533e` |
-| 2 | `theorem` | [imo1959_q1](../../../../NumberTheory/Imo1959Q1NamespacedPublic.lean/declarations/imo1959-q1.md) | 44 | `result-track:fc7e391796483206f2e51b48c462fbd0d33eea6a0c274161d6c7e836a68d6aa1` |
+| 1 | `theorem` | [calculation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Imo1959Q1NamespacedPublic.lean/declarations/calculation.md) | 34 | `result-track:3e4adc76003e6db0ba83b8bcaae50ed6dfe1185cbfc9d0dcbd4b673f19cc533e` |
+| 2 | `theorem` | [imo1959_q1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Imo1959Q1NamespacedPublic.lean/declarations/imo1959-q1.md) | 44 | `result-track:fc7e391796483206f2e51b48c462fbd0d33eea6a0c274161d6c7e836a68d6aa1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

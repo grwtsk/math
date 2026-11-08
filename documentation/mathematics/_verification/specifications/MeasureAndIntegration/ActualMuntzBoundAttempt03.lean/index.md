@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ActualMuntzBoundAttempt03.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ActualMuntzBoundAttempt03.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualMuntzBoundAttempt03.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualMuntzBoundAttempt03.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_source_interval_integral_zero](../../../../MeasureAndIntegration/ActualMuntzBoundAttempt03.lean/declarations/actual-source-interval-integral-zero.md) | 13 | `result-track:e53a033e3e2f61db37df5e635937c5ddeb890a42efe2d061236384e4a1dc01aa` |
-| 2 | `theorem` | [scaled_source_interval_integral_zero](../../../../MeasureAndIntegration/ActualMuntzBoundAttempt03.lean/declarations/scaled-source-interval-integral-zero.md) | 37 | `result-track:31920cf83053b198b214f9a869c1dcb8f002fa6b0b9f6e89826d7150c59ae883` |
-| 3 | `theorem` | [actual_scaled_Abel](../../../../MeasureAndIntegration/ActualMuntzBoundAttempt03.lean/declarations/actual-scaled-abel.md) | 42 | `result-track:6a11915f9823b925a2481fc2aaa58d1cb03a17f8c1486b0c9fbccb8a28dff3cc` |
-| 4 | `theorem` | [actual_scaled_linear_derivative_integral_zero](../../../../MeasureAndIntegration/ActualMuntzBoundAttempt03.lean/declarations/actual-scaled-linear-derivative-integral-zero.md) | 69 | `result-track:861456248ca4cbf18dc326b90a06e2197d05401e023fa141cd6afeb2c816b20e` |
-| 5 | `def` | [eulerWeight](../../../../MeasureAndIntegration/ActualMuntzBoundAttempt03.lean/declarations/eulerweight.md) | 89 | `declaration-track:3b5fc1ca9a3c57343f22736a5060a3a2cdd0048bab44e386a8407099113af080` |
-| 6 | `theorem` | [eulerWeight_abs_le_one](../../../../MeasureAndIntegration/ActualMuntzBoundAttempt03.lean/declarations/eulerweight-abs-le-one.md) | 91 | `result-track:80d0046f90f794aded341e40024213500d5a5f946d96c7591fb5a317329d7a29` |
-| 7 | `theorem` | [scaled_residual_integrable](../../../../MeasureAndIntegration/ActualMuntzBoundAttempt03.lean/declarations/scaled-residual-integrable.md) | 98 | `result-track:4f1517520352fe7c8ace500fb1cf65bfc039b90e3658a69e80e5443f160a3180` |
-| 8 | `theorem` | [actual_scaled_Euler](../../../../MeasureAndIntegration/ActualMuntzBoundAttempt03.lean/declarations/actual-scaled-euler.md) | 117 | `result-track:d04868e50362f58595ec96a2ab1d0246c728d24c8f21184789ad878540b54c10` |
-| 9 | `theorem` | [actualMuntz_abs_le_scaled_derivative](../../../../MeasureAndIntegration/ActualMuntzBoundAttempt03.lean/declarations/actualmuntz-abs-le-scaled-derivative.md) | 140 | `result-track:cea09415844921ef76676402df76655c761530f8224c88526c8d0c3ff5b22c27` |
+| 1 | `theorem` | [actual_source_interval_integral_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualMuntzBoundAttempt03.lean/declarations/actual-source-interval-integral-zero.md) | 13 | `result-track:e53a033e3e2f61db37df5e635937c5ddeb890a42efe2d061236384e4a1dc01aa` |
+| 2 | `theorem` | [scaled_source_interval_integral_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualMuntzBoundAttempt03.lean/declarations/scaled-source-interval-integral-zero.md) | 37 | `result-track:31920cf83053b198b214f9a869c1dcb8f002fa6b0b9f6e89826d7150c59ae883` |
+| 3 | `theorem` | [actual_scaled_Abel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualMuntzBoundAttempt03.lean/declarations/actual-scaled-abel.md) | 42 | `result-track:6a11915f9823b925a2481fc2aaa58d1cb03a17f8c1486b0c9fbccb8a28dff3cc` |
+| 4 | `theorem` | [actual_scaled_linear_derivative_integral_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualMuntzBoundAttempt03.lean/declarations/actual-scaled-linear-derivative-integral-zero.md) | 69 | `result-track:861456248ca4cbf18dc326b90a06e2197d05401e023fa141cd6afeb2c816b20e` |
+| 5 | `def` | [eulerWeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualMuntzBoundAttempt03.lean/declarations/eulerweight.md) | 89 | `declaration-track:3b5fc1ca9a3c57343f22736a5060a3a2cdd0048bab44e386a8407099113af080` |
+| 6 | `theorem` | [eulerWeight_abs_le_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualMuntzBoundAttempt03.lean/declarations/eulerweight-abs-le-one.md) | 91 | `result-track:80d0046f90f794aded341e40024213500d5a5f946d96c7591fb5a317329d7a29` |
+| 7 | `theorem` | [scaled_residual_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualMuntzBoundAttempt03.lean/declarations/scaled-residual-integrable.md) | 98 | `result-track:4f1517520352fe7c8ace500fb1cf65bfc039b90e3658a69e80e5443f160a3180` |
+| 8 | `theorem` | [actual_scaled_Euler](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualMuntzBoundAttempt03.lean/declarations/actual-scaled-euler.md) | 117 | `result-track:d04868e50362f58595ec96a2ab1d0246c728d24c8f21184789ad878540b54c10` |
+| 9 | `theorem` | [actualMuntz_abs_le_scaled_derivative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualMuntzBoundAttempt03.lean/declarations/actualmuntz-abs-le-scaled-derivative.md) | 140 | `result-track:cea09415844921ef76676402df76655c761530f8224c88526c8d0c3ff5b22c27` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/CyclicCharactersNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/CyclicCharactersNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CyclicCharactersNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CyclicCharactersNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -63,15 +63,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [cyclicCharacter_normSq](../../../../Combinatorics/CyclicCharactersNamespaced.lean/declarations/cycliccharacter-normsq.md) | 36 | `result-track:495b58b963b7885a0162b3afa8e0cca7f6e308b50acccab06a807b977d778666` |
-| 2 | `theorem` | [cyclicCharacter_conj_mul_self](../../../../Combinatorics/CyclicCharactersNamespaced.lean/declarations/cycliccharacter-conj-mul-self.md) | 42 | `result-track:45b834327571bf34241c650280d3043158c299be5cc42fdfcf2935dbaa46672f` |
-| 3 | `theorem` | [cyclicCharacterCoefficient_projector](../../../../Combinatorics/CyclicCharactersNamespaced.lean/declarations/cycliccharactercoefficient-projector.md) | 47 | `result-track:c729d2434e6d5fc41786954c194f47e5d2cbb14292ef9a9919fea7b014c0c1da` |
-| 4 | `theorem` | [cyclicCharacterProjector_idempotent](../../../../Combinatorics/CyclicCharactersNamespaced.lean/declarations/cycliccharacterprojector-idempotent.md) | 84 | `result-track:ff1aac32a51efdbf2f1eaf6555d5e46b0d7d37803ce46ec6076ee71638224e5d` |
-| 5 | `theorem` | [conj_cyclicCharacterCoefficient](../../../../Combinatorics/CyclicCharactersNamespaced.lean/declarations/conj-cycliccharactercoefficient.md) | 96 | `result-track:019843edd1cdcf9cc9a08c651b519d45325535e8a849b8bcdba198ba18268391` |
-| 6 | `theorem` | [conj_natCast_inv](../../../../Combinatorics/CyclicCharactersNamespaced.lean/declarations/conj-natcast-inv.md) | 110 | `result-track:8a4497e95b4aeb7979015a158497f14ba91ceb68f120f3efdd324aa4bb2abcc7` |
-| 7 | `theorem` | [cyclicInnerProduct_projector_left](../../../../Combinatorics/CyclicCharactersNamespaced.lean/declarations/cyclicinnerproduct-projector-left.md) | 114 | `result-track:da0f54cf7ebbd8211e06d40b8904e773ed1f25cab1763d07bb91e9eb1530a2df` |
-| 8 | `theorem` | [cyclicInnerProduct_projector_right](../../../../Combinatorics/CyclicCharactersNamespaced.lean/declarations/cyclicinnerproduct-projector-right.md) | 144 | `result-track:45273da27337eeb7d21be0cbfba79929d2aaee3d0c2b0b007820c6e2cfc75f13` |
-| 9 | `theorem` | [cyclicCharacterProjector_selfAdjoint](../../../../Combinatorics/CyclicCharactersNamespaced.lean/declarations/cycliccharacterprojector-selfadjoint.md) | 176 | `result-track:364156ae2fad3663d9a8bda84931ec99bb1b84595c8f1914454092644a6ef61f` |
+| 1 | `theorem` | [cyclicCharacter_normSq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CyclicCharactersNamespaced.lean/declarations/cycliccharacter-normsq.md) | 36 | `result-track:495b58b963b7885a0162b3afa8e0cca7f6e308b50acccab06a807b977d778666` |
+| 2 | `theorem` | [cyclicCharacter_conj_mul_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CyclicCharactersNamespaced.lean/declarations/cycliccharacter-conj-mul-self.md) | 42 | `result-track:45b834327571bf34241c650280d3043158c299be5cc42fdfcf2935dbaa46672f` |
+| 3 | `theorem` | [cyclicCharacterCoefficient_projector](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CyclicCharactersNamespaced.lean/declarations/cycliccharactercoefficient-projector.md) | 47 | `result-track:c729d2434e6d5fc41786954c194f47e5d2cbb14292ef9a9919fea7b014c0c1da` |
+| 4 | `theorem` | [cyclicCharacterProjector_idempotent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CyclicCharactersNamespaced.lean/declarations/cycliccharacterprojector-idempotent.md) | 84 | `result-track:ff1aac32a51efdbf2f1eaf6555d5e46b0d7d37803ce46ec6076ee71638224e5d` |
+| 5 | `theorem` | [conj_cyclicCharacterCoefficient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CyclicCharactersNamespaced.lean/declarations/conj-cycliccharactercoefficient.md) | 96 | `result-track:019843edd1cdcf9cc9a08c651b519d45325535e8a849b8bcdba198ba18268391` |
+| 6 | `theorem` | [conj_natCast_inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CyclicCharactersNamespaced.lean/declarations/conj-natcast-inv.md) | 110 | `result-track:8a4497e95b4aeb7979015a158497f14ba91ceb68f120f3efdd324aa4bb2abcc7` |
+| 7 | `theorem` | [cyclicInnerProduct_projector_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CyclicCharactersNamespaced.lean/declarations/cyclicinnerproduct-projector-left.md) | 114 | `result-track:da0f54cf7ebbd8211e06d40b8904e773ed1f25cab1763d07bb91e9eb1530a2df` |
+| 8 | `theorem` | [cyclicInnerProduct_projector_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CyclicCharactersNamespaced.lean/declarations/cyclicinnerproduct-projector-right.md) | 144 | `result-track:45273da27337eeb7d21be0cbfba79929d2aaee3d0c2b0b007820c6e2cfc75f13` |
+| 9 | `theorem` | [cyclicCharacterProjector_selfAdjoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CyclicCharactersNamespaced.lean/declarations/cycliccharacterprojector-selfadjoint.md) | 176 | `result-track:364156ae2fad3663d9a8bda84931ec99bb1b84595c8f1914454092644a6ef61f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

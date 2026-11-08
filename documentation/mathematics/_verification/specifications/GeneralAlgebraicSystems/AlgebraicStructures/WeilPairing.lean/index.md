@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/WeilPairing.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/WeilPairing.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/WeilPairing.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/WeilPairing.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [MTorsionPoint](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/WeilPairing.lean/declarations/mtorsionpoint.md) | 20 | `declaration-track:b8a8602e4129735703f12c20a110ab8b1cd56bd5f2fababfbcf68e810579bc5b` |
-| 2 | `structure` | [WeilPairingContract](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/WeilPairing.lean/declarations/weilpairingcontract.md) | 28 | `declaration-track:bf24ebbb2f106452b6665e0500e36f8982e601e088fad067fd9bc619ec47bdf3` |
-| 3 | `theorem` | [weil_pairing_alternating](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/WeilPairing.lean/declarations/weil-pairing-alternating.md) | 44 | `result-track:978bfe8ab51ceca70dc3b84a6712134b048d69893c200029da19c7e97d35f631` |
+| 1 | `structure` | [MTorsionPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/WeilPairing.lean/declarations/mtorsionpoint.md) | 20 | `declaration-track:b8a8602e4129735703f12c20a110ab8b1cd56bd5f2fababfbcf68e810579bc5b` |
+| 2 | `structure` | [WeilPairingContract](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/WeilPairing.lean/declarations/weilpairingcontract.md) | 28 | `declaration-track:bf24ebbb2f106452b6665e0500e36f8982e601e088fad067fd9bc619ec47bdf3` |
+| 3 | `theorem` | [weil_pairing_alternating](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/WeilPairing.lean/declarations/weil-pairing-alternating.md) | 44 | `result-track:978bfe8ab51ceca70dc3b84a6712134b048d69893c200029da19c7e97d35f631` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PresentationAdapterNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PresentationAdapterNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PresentationAdapterNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PresentationAdapterNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [defaultBoundaryKind](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PresentationAdapterNamespaced.lean/declarations/defaultboundarykind.md) | 38 | `declaration-track:17dcc7118b3b9ea5ff261a2bb4abc827e1488511e7637e8d8aa8e1704cec3957` |
-| 2 | `def` | [analyticContext](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PresentationAdapterNamespaced.lean/declarations/analyticcontext.md) | 75 | `declaration-track:f20a01ad4407b9c4d6f23c87ae63c5c546b02c49a83b56ac1e25d3f5887a8e76` |
-| 3 | `def` | [analyticClaim](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PresentationAdapterNamespaced.lean/declarations/analyticclaim.md) | 83 | `declaration-track:06683b76e8fd4c6ed5f91736be46623ec3d72c2fa8196989a05c442425e0095c` |
-| 4 | `def` | [SpineRealizationCertificate.toAnalyticCertificate](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PresentationAdapterNamespaced.lean/declarations/spinerealizationcertificate-toanalyticcertificate.md) | 94 | `declaration-track:4aaf4bbdf71528a67d691bb33ea06dc7e4a90a74fa8885cf2b3a991580e835a8` |
-| 5 | `def` | [SpineRealizationCertificate.toAnalyticAuthorityToken](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PresentationAdapterNamespaced.lean/declarations/spinerealizationcertificate-toanalyticauthoritytoken.md) | 106 | `declaration-track:7538758fff01fe2fdeb535e594a3b806700e36c43fc1aa6b9e6f500f71fb8738` |
-| 6 | `theorem` | [spine_realization_through_boundary_calculus](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PresentationAdapterNamespaced.lean/declarations/spine-realization-through-boundary-calculus.md) | 122 | `result-track:30e6c292bb28f030c30685ff1bf4d3d9858717a67c3d2c6e6de252f5f1543c5a` |
-| 7 | `theorem` | [raw_spine_presentation_not_analytic_authority](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PresentationAdapterNamespaced.lean/declarations/raw-spine-presentation-not-analytic-authority.md) | 134 | `result-track:d0cab14bb601373d263b2b1c67115e21dcfe39727a6b2128edc1a19d9fbcd3e9` |
+| 1 | `def` | [defaultBoundaryKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PresentationAdapterNamespaced.lean/declarations/defaultboundarykind.md) | 38 | `declaration-track:17dcc7118b3b9ea5ff261a2bb4abc827e1488511e7637e8d8aa8e1704cec3957` |
+| 2 | `def` | [analyticContext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PresentationAdapterNamespaced.lean/declarations/analyticcontext.md) | 75 | `declaration-track:f20a01ad4407b9c4d6f23c87ae63c5c546b02c49a83b56ac1e25d3f5887a8e76` |
+| 3 | `def` | [analyticClaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PresentationAdapterNamespaced.lean/declarations/analyticclaim.md) | 83 | `declaration-track:06683b76e8fd4c6ed5f91736be46623ec3d72c2fa8196989a05c442425e0095c` |
+| 4 | `def` | [SpineRealizationCertificate.toAnalyticCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PresentationAdapterNamespaced.lean/declarations/spinerealizationcertificate-toanalyticcertificate.md) | 94 | `declaration-track:4aaf4bbdf71528a67d691bb33ea06dc7e4a90a74fa8885cf2b3a991580e835a8` |
+| 5 | `def` | [SpineRealizationCertificate.toAnalyticAuthorityToken](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PresentationAdapterNamespaced.lean/declarations/spinerealizationcertificate-toanalyticauthoritytoken.md) | 106 | `declaration-track:7538758fff01fe2fdeb535e594a3b806700e36c43fc1aa6b9e6f500f71fb8738` |
+| 6 | `theorem` | [spine_realization_through_boundary_calculus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PresentationAdapterNamespaced.lean/declarations/spine-realization-through-boundary-calculus.md) | 122 | `result-track:30e6c292bb28f030c30685ff1bf4d3d9858717a67c3d2c6e6de252f5f1543c5a` |
+| 7 | `theorem` | [raw_spine_presentation_not_analytic_authority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PresentationAdapterNamespaced.lean/declarations/raw-spine-presentation-not-analytic-authority.md) | 134 | `result-track:d0cab14bb601373d263b2b1c67115e21dcfe39727a6b2128edc1a19d9fbcd3e9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

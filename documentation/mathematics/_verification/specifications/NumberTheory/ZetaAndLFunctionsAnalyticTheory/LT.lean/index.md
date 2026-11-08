@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LT.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LT.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LT.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LT.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [re_LT](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LT.lean/declarations/re-lt.md) | 17 | `result-track:dcfbd786b0d5f1b871692f54e30d87211d00eba1902f40aa5f9dd54f366bbe96` |
-| 2 | `lemma` | [im_LT](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LT.lean/declarations/im-lt.md) | 19 | `result-track:5f0960a5baad9273c5959f4ee6834e685c48fd5184cfb1b7fe9c7cc7cbd3c42f` |
-| 3 | `lemma` | [abs_im_LT_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LT.lean/declarations/abs-im-lt-le.md) | 21 | `result-track:3aba4b2fd95e4ba3dfbf12ca50610be9377c622e1eadd50233a342c31f94e5bb` |
-| 4 | `lemma` | [norm_LT_ge](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LT.lean/declarations/norm-lt-ge.md) | 25 | `result-track:8a2f0636acdc62da95a1cc40d2ef462ee3414919afb97306e193c0f994a4cb1d` |
-| 5 | `lemma` | [LT_ne_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LT.lean/declarations/lt-ne-zero.md) | 29 | `result-track:3bacbc70f7674590aea0a84eb267f9fcc2528f908b990b257ba355e2287fc9e9` |
-| 6 | `lemma` | [LT_add_ne_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LT.lean/declarations/lt-add-ne-zero.md) | 35 | `result-track:fd281aaf329f14546df91ae46539e309d4ad7a26c6083a8c60af1f38901924cb` |
+| 1 | `lemma` | [re_LT](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LT.lean/declarations/re-lt.md) | 17 | `result-track:dcfbd786b0d5f1b871692f54e30d87211d00eba1902f40aa5f9dd54f366bbe96` |
+| 2 | `lemma` | [im_LT](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LT.lean/declarations/im-lt.md) | 19 | `result-track:5f0960a5baad9273c5959f4ee6834e685c48fd5184cfb1b7fe9c7cc7cbd3c42f` |
+| 3 | `lemma` | [abs_im_LT_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LT.lean/declarations/abs-im-lt-le.md) | 21 | `result-track:3aba4b2fd95e4ba3dfbf12ca50610be9377c622e1eadd50233a342c31f94e5bb` |
+| 4 | `lemma` | [norm_LT_ge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LT.lean/declarations/norm-lt-ge.md) | 25 | `result-track:8a2f0636acdc62da95a1cc40d2ef462ee3414919afb97306e193c0f994a4cb1d` |
+| 5 | `lemma` | [LT_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LT.lean/declarations/lt-ne-zero.md) | 29 | `result-track:3bacbc70f7674590aea0a84eb267f9fcc2528f908b990b257ba355e2287fc9e9` |
+| 6 | `lemma` | [LT_add_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LT.lean/declarations/lt-add-ne-zero.md) | 35 | `result-track:fd281aaf329f14546df91ae46539e309d4ad7a26c6083a8c60af1f38901924cb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupFinsetPreimage.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupFinsetPreimage.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupFinsetPreimage.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupFinsetPreimage.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [prod_preimage'](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupFinsetPreimage.lean/declarations/prod-preimage-source-edition-2.md) | 24 | `result-track:b2b7cd432fbab53a381ef42e206992a66c68031f3ce5bc98fb5f5b244228b06b` |
-| 2 | `lemma` | [prod_preimage](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupFinsetPreimage.lean/declarations/prod-preimage.md) | 33 | `result-track:24a74bd559526b8bf8c3ecad914d15d7b2526473f3d5893ff6bea8414de66614` |
-| 3 | `lemma` | [prod_preimage_of_bij](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupFinsetPreimage.lean/declarations/prod-preimage-of-bij.md) | 39 | `result-track:d26ae07af1516cc453266f1f7bc2f96af770849a4668724d6ffc0da38bc39e60` |
+| 1 | `lemma` | [prod_preimage'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupFinsetPreimage.lean/declarations/prod-preimage-source-edition-2.md) | 24 | `result-track:b2b7cd432fbab53a381ef42e206992a66c68031f3ce5bc98fb5f5b244228b06b` |
+| 2 | `lemma` | [prod_preimage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupFinsetPreimage.lean/declarations/prod-preimage.md) | 33 | `result-track:24a74bd559526b8bf8c3ecad914d15d7b2526473f3d5893ff6bea8414de66614` |
+| 3 | `lemma` | [prod_preimage_of_bij](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupFinsetPreimage.lean/declarations/prod-preimage-of-bij.md) | 39 | `result-track:d26ae07af1516cc453266f1f7bc2f96af770849a4668724d6ffc0da38bc39e60` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

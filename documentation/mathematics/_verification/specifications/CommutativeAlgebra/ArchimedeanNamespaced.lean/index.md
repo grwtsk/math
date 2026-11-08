@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/ArchimedeanNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/ArchimedeanNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ArchimedeanNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ArchimedeanNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/ArchimedeanNamespaced.lean/declarations/instance.md) | 28 | `declaration-track:6657e965bb71e3ba9eed4992329eec58eb1b7d48297d6b2179b12673ceb3dda5` |
-| 2 | `lemma` | [wfDvdMonoid_iff_wellFounded_gt_on_v](../../../../CommutativeAlgebra/ArchimedeanNamespaced.lean/declarations/wfdvdmonoid-iff-wellfounded-gt-on-v.md) | 43 | `result-track:1b89b0158ee353b03574ab9b49a2961b6cc070999446809824f81159f9c63ae7` |
-| 3 | `lemma` | [wellFounded_gt_on_v_iff_discrete_mrange](../../../../CommutativeAlgebra/ArchimedeanNamespaced.lean/declarations/wellfounded-gt-on-v-iff-discrete-mrange.md) | 49 | `result-track:66c08a3b2c8c15e2fbd653a72fbcf7a11eca3905582123c0f86ad47c5eb803ab` |
-| 4 | `lemma` | [isPrincipalIdealRing_iff_not_denselyOrdered](../../../../CommutativeAlgebra/ArchimedeanNamespaced.lean/declarations/isprincipalidealring-iff-not-denselyordered.md) | 71 | `result-track:a932152c8c4477a46359cd69a8e51d72b5c0479000be4f15a02c1d9476097185` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ArchimedeanNamespaced.lean/declarations/instance.md) | 28 | `declaration-track:6657e965bb71e3ba9eed4992329eec58eb1b7d48297d6b2179b12673ceb3dda5` |
+| 2 | `lemma` | [wfDvdMonoid_iff_wellFounded_gt_on_v](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ArchimedeanNamespaced.lean/declarations/wfdvdmonoid-iff-wellfounded-gt-on-v.md) | 43 | `result-track:1b89b0158ee353b03574ab9b49a2961b6cc070999446809824f81159f9c63ae7` |
+| 3 | `lemma` | [wellFounded_gt_on_v_iff_discrete_mrange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ArchimedeanNamespaced.lean/declarations/wellfounded-gt-on-v-iff-discrete-mrange.md) | 49 | `result-track:66c08a3b2c8c15e2fbd653a72fbcf7a11eca3905582123c0f86ad47c5eb803ab` |
+| 4 | `lemma` | [isPrincipalIdealRing_iff_not_denselyOrdered](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ArchimedeanNamespaced.lean/declarations/isprincipalidealring-iff-not-denselyordered.md) | 71 | `result-track:a932152c8c4477a46359cd69a8e51d72b5c0479000be4f15a02c1d9476097185` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

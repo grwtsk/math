@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/BijectionNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/BijectionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BijectionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BijectionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ScaledContinuousBijection](../../../../GeneralTopology/BijectionNamespaced.lean/declarations/scaledcontinuousbijection.md) | 15 | `declaration-track:802c54071ea84dddb193b98227a839590e69e47db0ec271ce96e6bf48e04c543` |
-| 2 | `theorem` | [continuous_bijection_scales](../../../../GeneralTopology/BijectionNamespaced.lean/declarations/continuous-bijection-scales.md) | 20 | `result-track:8b1187aad5cce363a9f405955dd47fb05b51a1a2952d98e9180f0beabcafd5a8` |
-| 3 | `def` | [ScaledFiveLayerBijection](../../../../GeneralTopology/BijectionNamespaced.lean/declarations/scaledfivelayerbijection.md) | 26 | `declaration-track:bd68bafcbbe032918e12741b5e7e81ef86a7c46f4613f14ce06e85d753c19cb1` |
-| 4 | `theorem` | [five_layer_bijection_scales](../../../../GeneralTopology/BijectionNamespaced.lean/declarations/five-layer-bijection-scales.md) | 31 | `result-track:b86bd2b8f03ed563a90b190f5bf1aa3908a53bcc91d6471ed71ab275a9fad05b` |
-| 5 | `def` | [ScaledCategoricalObjectBijection](../../../../GeneralTopology/BijectionNamespaced.lean/declarations/scaledcategoricalobjectbijection.md) | 37 | `declaration-track:7d36cccb6804c1cd339c1e9ef96be94afb8b0b1373582c99d39440405eada996` |
-| 6 | `theorem` | [categorical_object_bijection_scales](../../../../GeneralTopology/BijectionNamespaced.lean/declarations/categorical-object-bijection-scales.md) | 42 | `result-track:d4a744e608e422689960b03258f3bfbefc7d74011519cf1f1b08ad6df1eda0eb` |
+| 1 | `def` | [ScaledContinuousBijection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BijectionNamespaced.lean/declarations/scaledcontinuousbijection.md) | 15 | `declaration-track:802c54071ea84dddb193b98227a839590e69e47db0ec271ce96e6bf48e04c543` |
+| 2 | `theorem` | [continuous_bijection_scales](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BijectionNamespaced.lean/declarations/continuous-bijection-scales.md) | 20 | `result-track:8b1187aad5cce363a9f405955dd47fb05b51a1a2952d98e9180f0beabcafd5a8` |
+| 3 | `def` | [ScaledFiveLayerBijection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BijectionNamespaced.lean/declarations/scaledfivelayerbijection.md) | 26 | `declaration-track:bd68bafcbbe032918e12741b5e7e81ef86a7c46f4613f14ce06e85d753c19cb1` |
+| 4 | `theorem` | [five_layer_bijection_scales](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BijectionNamespaced.lean/declarations/five-layer-bijection-scales.md) | 31 | `result-track:b86bd2b8f03ed563a90b190f5bf1aa3908a53bcc91d6471ed71ab275a9fad05b` |
+| 5 | `def` | [ScaledCategoricalObjectBijection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BijectionNamespaced.lean/declarations/scaledcategoricalobjectbijection.md) | 37 | `declaration-track:7d36cccb6804c1cd339c1e9ef96be94afb8b0b1373582c99d39440405eada996` |
+| 6 | `theorem` | [categorical_object_bijection_scales](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BijectionNamespaced.lean/declarations/categorical-object-bijection-scales.md) | 42 | `result-track:d4a744e608e422689960b03258f3bfbefc7d74011519cf1f1b08ad6df1eda0eb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

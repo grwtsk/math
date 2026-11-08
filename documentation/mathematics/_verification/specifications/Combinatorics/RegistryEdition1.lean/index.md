@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/RegistryEdition1.lean/index.md) · [Full source](../../../../Combinatorics/RegistryEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RegistryEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RegistryEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,17 +57,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Registry](../../../../Combinatorics/RegistryEdition1.lean/declarations/registry.md) | 7 | `declaration-track:d48973248679ae0802ad34a34d5e4a1551caaa049216a14f2a2c32a8ca9d8c53` |
-| 2 | `def` | [UniqueTaxonIds](../../../../Combinatorics/RegistryEdition1.lean/declarations/uniquetaxonids.md) | 19 | `declaration-track:e9adcf95959881d78b93dd3c360a23ca6ca11952a124807aee9a2abe2cebc3a6` |
-| 3 | `def` | [UniqueConceptTaxa](../../../../Combinatorics/RegistryEdition1.lean/declarations/uniqueconcepttaxa.md) | 22 | `declaration-track:3935a2637845e6b9a7a38097ce1313e23682895ef2270ee775b5ba7c78109d23` |
-| 4 | `def` | [UniqueEvidenceIds](../../../../Combinatorics/RegistryEdition1.lean/declarations/uniqueevidenceids.md) | 25 | `declaration-track:2de542d0c5e8923a08a60e3282f8366d28ea190f2e86d94ae49739bec4c53daf` |
-| 5 | `def` | [UniqueWitnessEvidenceIds](../../../../Combinatorics/RegistryEdition1.lean/declarations/uniquewitnessevidenceids.md) | 28 | `declaration-track:11b86ed9d32365c656d7b7be5c7de5798e0b94693fddea11e37b53361c88fb3a` |
-| 6 | `def` | [UniqueRelationIds](../../../../Combinatorics/RegistryEdition1.lean/declarations/uniquerelationids.md) | 31 | `declaration-track:0719e4896d63e9aecc47e6348b198d8456fc9014f98c8775a13bcf4da5ab8a59` |
-| 7 | `def` | [UniqueProjectionIds](../../../../Combinatorics/RegistryEdition1.lean/declarations/uniqueprojectionids.md) | 34 | `declaration-track:095f80619b5095f63389eca0f8cc0ef7c09045d41c1962eba89ad16f6f668522` |
-| 8 | `def` | [findTaxon?](../../../../Combinatorics/RegistryEdition1.lean/declarations/findtaxon.md) | 37 | `declaration-track:09bab2f927fdafad4d42c404b66cdbdda6491a930be525444f997c9118d9522e` |
-| 9 | `def` | [findEvidence?](../../../../Combinatorics/RegistryEdition1.lean/declarations/findevidence.md) | 41 | `declaration-track:1922d9690bbc2f70a11212428ae9c345679b434134edb37d577585e0bb7a8013` |
-| 10 | `def` | [findWitnessEvidence?](../../../../Combinatorics/RegistryEdition1.lean/declarations/findwitnessevidence.md) | 45 | `declaration-track:d66dc4737da73e743d6fbb61f36443d8d290bfa96e36482bf06455306a89678c` |
-| 11 | `def` | [WitnessesResolveAs](../../../../Combinatorics/RegistryEdition1.lean/declarations/witnessesresolveas.md) | 51 | `declaration-track:81fe08e7621eac7659234e6e859692761ec5b5cecc5c74362e5b5b2e91ebeaf2` |
+| 1 | `structure` | [Registry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RegistryEdition1.lean/declarations/registry.md) | 7 | `declaration-track:d48973248679ae0802ad34a34d5e4a1551caaa049216a14f2a2c32a8ca9d8c53` |
+| 2 | `def` | [UniqueTaxonIds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RegistryEdition1.lean/declarations/uniquetaxonids.md) | 19 | `declaration-track:e9adcf95959881d78b93dd3c360a23ca6ca11952a124807aee9a2abe2cebc3a6` |
+| 3 | `def` | [UniqueConceptTaxa](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RegistryEdition1.lean/declarations/uniqueconcepttaxa.md) | 22 | `declaration-track:3935a2637845e6b9a7a38097ce1313e23682895ef2270ee775b5ba7c78109d23` |
+| 4 | `def` | [UniqueEvidenceIds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RegistryEdition1.lean/declarations/uniqueevidenceids.md) | 25 | `declaration-track:2de542d0c5e8923a08a60e3282f8366d28ea190f2e86d94ae49739bec4c53daf` |
+| 5 | `def` | [UniqueWitnessEvidenceIds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RegistryEdition1.lean/declarations/uniquewitnessevidenceids.md) | 28 | `declaration-track:11b86ed9d32365c656d7b7be5c7de5798e0b94693fddea11e37b53361c88fb3a` |
+| 6 | `def` | [UniqueRelationIds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RegistryEdition1.lean/declarations/uniquerelationids.md) | 31 | `declaration-track:0719e4896d63e9aecc47e6348b198d8456fc9014f98c8775a13bcf4da5ab8a59` |
+| 7 | `def` | [UniqueProjectionIds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RegistryEdition1.lean/declarations/uniqueprojectionids.md) | 34 | `declaration-track:095f80619b5095f63389eca0f8cc0ef7c09045d41c1962eba89ad16f6f668522` |
+| 8 | `def` | [findTaxon?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RegistryEdition1.lean/declarations/findtaxon.md) | 37 | `declaration-track:09bab2f927fdafad4d42c404b66cdbdda6491a930be525444f997c9118d9522e` |
+| 9 | `def` | [findEvidence?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RegistryEdition1.lean/declarations/findevidence.md) | 41 | `declaration-track:1922d9690bbc2f70a11212428ae9c345679b434134edb37d577585e0bb7a8013` |
+| 10 | `def` | [findWitnessEvidence?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RegistryEdition1.lean/declarations/findwitnessevidence.md) | 45 | `declaration-track:d66dc4737da73e743d6fbb61f36443d8d290bfa96e36482bf06455306a89678c` |
+| 11 | `def` | [WitnessesResolveAs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RegistryEdition1.lean/declarations/witnessesresolveas.md) | 51 | `declaration-track:81fe08e7621eac7659234e6e859692761ec5b5cecc5c74362e5b5b2e91ebeaf2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

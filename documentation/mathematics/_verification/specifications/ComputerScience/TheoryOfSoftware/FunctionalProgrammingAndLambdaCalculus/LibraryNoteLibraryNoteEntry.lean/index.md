@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LibraryNoteLibraryNoteEntry.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LibraryNoteLibraryNoteEntry.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LibraryNoteLibraryNoteEntry.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LibraryNoteLibraryNoteEntry.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [LibraryNoteEntry](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LibraryNoteLibraryNoteEntry.lean/declarations/librarynoteentry.md) | 17 | `declaration-track:27648c7b4ade020c5310b8b494c9d1ac84b93ed2849132b73427bc1107403cdb` |
-| 2 | `initialize` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LibraryNoteLibraryNoteEntry.lean/declarations/initialize.md) | 20 | `declaration-track:39d6b4673fc92f37ac5ca0d28e1a5aa269de28c8c8b36962e005f736a36dd973` |
-| 3 | `elab` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LibraryNoteLibraryNoteEntry.lean/declarations/elab.md) | 39 | `declaration-track:765678e6268d40fae3910583ef7697e4056d0947bc8395b106cd31641d65356d` |
+| 1 | `def` | [LibraryNoteEntry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LibraryNoteLibraryNoteEntry.lean/declarations/librarynoteentry.md) | 17 | `declaration-track:27648c7b4ade020c5310b8b494c9d1ac84b93ed2849132b73427bc1107403cdb` |
+| 2 | `initialize` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LibraryNoteLibraryNoteEntry.lean/declarations/initialize.md) | 20 | `declaration-track:39d6b4673fc92f37ac5ca0d28e1a5aa269de28c8c8b36962e005f736a36dd973` |
+| 3 | `elab` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LibraryNoteLibraryNoteEntry.lean/declarations/elab.md) | 39 | `declaration-track:765678e6268d40fae3910583ef7697e4056d0947bc8395b106cd31641d65356d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

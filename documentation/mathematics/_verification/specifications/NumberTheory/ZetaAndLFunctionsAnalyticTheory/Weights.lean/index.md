@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Weights.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Weights.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Weights.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Weights.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [thetaModeWeight](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Weights.lean/declarations/thetamodeweight.md) | 6 | `declaration-track:1e1ebcbc2b1fdb923b653415fd5e0e2ac9b5f0ea9a4d7e962783218c5fc7fad6` |
-| 2 | `lemma` | [thetaModeWeight_positive](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Weights.lean/declarations/thetamodeweight-positive.md) | 8 | `result-track:d0ac629fccab7142618b28326bb810f5b665ca1db5aea5fc4db4786bc11f0523` |
-| 3 | `lemma` | [thetaModeWeight_summable](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Weights.lean/declarations/thetamodeweight-summable.md) | 12 | `result-track:43c84662a89a6be3eff6b50445981f79570357ad67b6eec3cac3e0e8e66d2348` |
-| 4 | `lemma` | [thetaModeWeight_sum_one](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Weights.lean/declarations/thetamodeweight-sum-one.md) | 15 | `result-track:61d66580bd0de7662f9af30704366ad3dabfa62ac9e972151911385aa89638bf` |
-| 5 | `lemma` | [thetaPhiTerm_zero_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Weights.lean/declarations/thetaphiterm-zero-le.md) | 21 | `result-track:3c7553179ad78aed4caa75d1c65a4ea129e7d66d52cbdbb714487510bd71bc53` |
-| 6 | `lemma` | [thetaModeWeight_le_modeRatio](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Weights.lean/declarations/thetamodeweight-le-moderatio.md) | 24 | `result-track:90cdd610ecfe09bf01b25880c1df1f6c0bc0ef4e40cd6d4f4c2a74b183f066b1` |
+| 1 | `def` | [thetaModeWeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Weights.lean/declarations/thetamodeweight.md) | 6 | `declaration-track:1e1ebcbc2b1fdb923b653415fd5e0e2ac9b5f0ea9a4d7e962783218c5fc7fad6` |
+| 2 | `lemma` | [thetaModeWeight_positive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Weights.lean/declarations/thetamodeweight-positive.md) | 8 | `result-track:d0ac629fccab7142618b28326bb810f5b665ca1db5aea5fc4db4786bc11f0523` |
+| 3 | `lemma` | [thetaModeWeight_summable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Weights.lean/declarations/thetamodeweight-summable.md) | 12 | `result-track:43c84662a89a6be3eff6b50445981f79570357ad67b6eec3cac3e0e8e66d2348` |
+| 4 | `lemma` | [thetaModeWeight_sum_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Weights.lean/declarations/thetamodeweight-sum-one.md) | 15 | `result-track:61d66580bd0de7662f9af30704366ad3dabfa62ac9e972151911385aa89638bf` |
+| 5 | `lemma` | [thetaPhiTerm_zero_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Weights.lean/declarations/thetaphiterm-zero-le.md) | 21 | `result-track:3c7553179ad78aed4caa75d1c65a4ea129e7d66d52cbdbb714487510bd71bc53` |
+| 6 | `lemma` | [thetaModeWeight_le_modeRatio](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Weights.lean/declarations/thetamodeweight-le-moderatio.md) | 24 | `result-track:90cdd610ecfe09bf01b25880c1df1f6c0bc0ef4e40cd6d4f4c2a74b183f066b1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

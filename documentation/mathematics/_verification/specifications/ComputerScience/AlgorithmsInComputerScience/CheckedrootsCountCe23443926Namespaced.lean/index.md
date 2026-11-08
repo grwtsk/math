@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/CheckedrootsCountCe23443926Namespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/CheckedrootsCountCe23443926Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CheckedrootsCountCe23443926Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CheckedrootsCountCe23443926Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [checkedRoots](../../../../../ComputerScience/AlgorithmsInComputerScience/CheckedrootsCountCe23443926Namespaced.lean/declarations/checkedroots.md) | 23 | `declaration-track:11943b053b3d31ea4d46883a0c84a7545bed40ac5f721f827608921663771781` |
-| 2 | `theorem` | [checkedRoots_count](../../../../../ComputerScience/AlgorithmsInComputerScience/CheckedrootsCountCe23443926Namespaced.lean/declarations/checkedroots-count.md) | 30 | `result-track:e77ca14f5f80206c455de351b1a71ce436e3fb97a20a2ab68459c52c6b07277c` |
+| 1 | `def` | [checkedRoots](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CheckedrootsCountCe23443926Namespaced.lean/declarations/checkedroots.md) | 23 | `declaration-track:11943b053b3d31ea4d46883a0c84a7545bed40ac5f721f827608921663771781` |
+| 2 | `theorem` | [checkedRoots_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CheckedrootsCountCe23443926Namespaced.lean/declarations/checkedroots-count.md) | 30 | `result-track:e77ca14f5f80206c455de351b1a71ce436e3fb97a20a2ab68459c52c6b07277c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicDoubleSum.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicDoubleSum.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicDoubleSum.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicDoubleSum.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeFejerCyclicConvexContraction`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicConvexContraction.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeFejerCyclicConvexContraction`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicConvexContraction.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [cyclicConvolutionDoubleSumReindexing](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicDoubleSum.lean/declarations/cyclicconvolutiondoublesumreindexing.md) | 14 | `result-track:5648e7b5a7f34167f7bc2e292291b0fbac86ee5fb4c01ee77b8661d900e5bcaf` |
-| 2 | `theorem` | [cyclicConvolutionL1ByTranslation](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicDoubleSum.lean/declarations/cyclicconvolutionl1bytranslation.md) | 65 | `result-track:8917c9ce194a4604a52617e17188c7ff30e58fb0d8750c646880ed29930b9d0c` |
-| 3 | `def` | [CyclicIntervalTranslationCountOnlyFrontier](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicDoubleSum.lean/declarations/cyclicintervaltranslationcountonlyfrontier.md) | 72 | `declaration-track:6b7d5a7083aac08345abccfee3754f9040be3843fbee33a3acb6fe740208088a` |
+| 1 | `theorem` | [cyclicConvolutionDoubleSumReindexing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicDoubleSum.lean/declarations/cyclicconvolutiondoublesumreindexing.md) | 14 | `result-track:5648e7b5a7f34167f7bc2e292291b0fbac86ee5fb4c01ee77b8661d900e5bcaf` |
+| 2 | `theorem` | [cyclicConvolutionL1ByTranslation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicDoubleSum.lean/declarations/cyclicconvolutionl1bytranslation.md) | 65 | `result-track:8917c9ce194a4604a52617e17188c7ff30e58fb0d8750c646880ed29930b9d0c` |
+| 3 | `def` | [CyclicIntervalTranslationCountOnlyFrontier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicDoubleSum.lean/declarations/cyclicintervaltranslationcountonlyfrontier.md) | 72 | `declaration-track:6b7d5a7083aac08345abccfee3754f9040be3843fbee33a3acb6fe740208088a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

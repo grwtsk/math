@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SurfacePolygonRadialAdjunctionInverse.lean/index.md) · [Full source](../../../../GeneralTopology/SurfacePolygonRadialAdjunctionInverse.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonRadialAdjunctionInverse.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonRadialAdjunctionInverse.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonReverseAdjunction`](../../../../GeneralTopology/SurfacePolygonReverseAdjunction.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonReverseAdjunction`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonReverseAdjunction.lean/index.md) — import line 3; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [cornerProductTopology_eq_bot](../../../../GeneralTopology/SurfacePolygonRadialAdjunctionInverse.lean/declarations/cornerproducttopology-eq-bot.md) | 29 | `result-track:fcd64f6f58c1ea14f9392ebafae002c225245307a6c07ec37a63af3cd2e87f3f` |
-| 2 | `theorem` | [reverse_forward_source](../../../../GeneralTopology/SurfacePolygonRadialAdjunctionInverse.lean/declarations/reverse-forward-source.md) | 36 | `result-track:d10d865dc452f7748f2b73b6b35c0d80567c48fbbbb3e07c6ff800e65ac005a8` |
-| 3 | `theorem` | [reverse_forward](../../../../GeneralTopology/SurfacePolygonRadialAdjunctionInverse.lean/declarations/reverse-forward.md) | 55 | `result-track:395f701d52330a428fe8fbcfe9f1ab61a90676502ff6d39caa8fef0b9c67424e` |
-| 4 | `theorem` | [forward_reverse_skeleton](../../../../GeneralTopology/SurfacePolygonRadialAdjunctionInverse.lean/declarations/forward-reverse-skeleton.md) | 64 | `result-track:640a25dcdd85173fa936414c2d2f35de3c9eb56c4ed5638df1edd224d1bae96c` |
-| 5 | `theorem` | [forward_reverse_disk](../../../../GeneralTopology/SurfacePolygonRadialAdjunctionInverse.lean/declarations/forward-reverse-disk.md) | 82 | `result-track:60719cdfd2c6acb04feed2d02c96fbadf7d178b2d4baa67c45452e89cf50aa2a` |
-| 6 | `theorem` | [forward_reverse](../../../../GeneralTopology/SurfacePolygonRadialAdjunctionInverse.lean/declarations/forward-reverse.md) | 111 | `result-track:5ba8848374ec2c8a264efb24e8c2c1a8e81cb74e01c5313ed41aef23a60904cb` |
-| 7 | `def` | [filledPolygonHomeomorphAttachedDisk](../../../../GeneralTopology/SurfacePolygonRadialAdjunctionInverse.lean/declarations/filledpolygonhomeomorphattacheddisk.md) | 123 | `declaration-track:cd1188c4dee7e02508d1eaad0f9448f7ea4994d7bc6eaef4cf58cd1ceb45a6a0` |
+| 1 | `theorem` | [cornerProductTopology_eq_bot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonRadialAdjunctionInverse.lean/declarations/cornerproducttopology-eq-bot.md) | 29 | `result-track:fcd64f6f58c1ea14f9392ebafae002c225245307a6c07ec37a63af3cd2e87f3f` |
+| 2 | `theorem` | [reverse_forward_source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonRadialAdjunctionInverse.lean/declarations/reverse-forward-source.md) | 36 | `result-track:d10d865dc452f7748f2b73b6b35c0d80567c48fbbbb3e07c6ff800e65ac005a8` |
+| 3 | `theorem` | [reverse_forward](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonRadialAdjunctionInverse.lean/declarations/reverse-forward.md) | 55 | `result-track:395f701d52330a428fe8fbcfe9f1ab61a90676502ff6d39caa8fef0b9c67424e` |
+| 4 | `theorem` | [forward_reverse_skeleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonRadialAdjunctionInverse.lean/declarations/forward-reverse-skeleton.md) | 64 | `result-track:640a25dcdd85173fa936414c2d2f35de3c9eb56c4ed5638df1edd224d1bae96c` |
+| 5 | `theorem` | [forward_reverse_disk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonRadialAdjunctionInverse.lean/declarations/forward-reverse-disk.md) | 82 | `result-track:60719cdfd2c6acb04feed2d02c96fbadf7d178b2d4baa67c45452e89cf50aa2a` |
+| 6 | `theorem` | [forward_reverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonRadialAdjunctionInverse.lean/declarations/forward-reverse.md) | 111 | `result-track:5ba8848374ec2c8a264efb24e8c2c1a8e81cb74e01c5313ed41aef23a60904cb` |
+| 7 | `def` | [filledPolygonHomeomorphAttachedDisk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonRadialAdjunctionInverse.lean/declarations/filledpolygonhomeomorphattacheddisk.md) | 123 | `declaration-track:cd1188c4dee7e02508d1eaad0f9448f7ea4994d7bc6eaef4cf58cd1ceb45a6a0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

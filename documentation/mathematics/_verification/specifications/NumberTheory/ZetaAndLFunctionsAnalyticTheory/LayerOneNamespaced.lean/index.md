@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LayerOneNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LayerOneNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LayerOneNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LayerOneNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [norm_sq_prime_term](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LayerOneNamespaced.lean/declarations/norm-sq-prime-term.md) | 34 | `result-track:a7effa29e9604d101731aceec0658ba9351bd60135f42cd845cc2e80778cad7d` |
-| 2 | `lemma` | [re_sq_add_im_sq_inv](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LayerOneNamespaced.lean/declarations/re-sq-add-im-sq-inv.md) | 43 | `result-track:2c695c7f9a0ad5771f4cadaa39667acc6cd4c2bbceb14309c1120db5dd9c4f67` |
-| 3 | `def` | [primeLogPowSum](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LayerOneNamespaced.lean/declarations/primelogpowsum.md) | 50 | `declaration-track:133c421805f2a9c729f2088d8cc5834413809eb385d8fa264cf9eb6c6869c78f` |
-| 4 | `lemma` | [sfPart_one_eq](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LayerOneNamespaced.lean/declarations/sfpart-one-eq.md) | 54 | `result-track:ae2f10189035c34f32186397e0f5b7725e207a601b327b31b7c32cb0b8d05b4e` |
-| 5 | `theorem` | [sfPart_one_asymp](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LayerOneNamespaced.lean/declarations/sfpart-one-asymp.md) | 72 | `result-track:ba202586bb79dfb2afabe8ad77ce739512dfca6e7188b6242902584f56a68b26` |
+| 1 | `lemma` | [norm_sq_prime_term](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LayerOneNamespaced.lean/declarations/norm-sq-prime-term.md) | 34 | `result-track:a7effa29e9604d101731aceec0658ba9351bd60135f42cd845cc2e80778cad7d` |
+| 2 | `lemma` | [re_sq_add_im_sq_inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LayerOneNamespaced.lean/declarations/re-sq-add-im-sq-inv.md) | 43 | `result-track:2c695c7f9a0ad5771f4cadaa39667acc6cd4c2bbceb14309c1120db5dd9c4f67` |
+| 3 | `def` | [primeLogPowSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LayerOneNamespaced.lean/declarations/primelogpowsum.md) | 50 | `declaration-track:133c421805f2a9c729f2088d8cc5834413809eb385d8fa264cf9eb6c6869c78f` |
+| 4 | `lemma` | [sfPart_one_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LayerOneNamespaced.lean/declarations/sfpart-one-eq.md) | 54 | `result-track:ae2f10189035c34f32186397e0f5b7725e207a601b327b31b7c32cb0b8d05b4e` |
+| 5 | `theorem` | [sfPart_one_asymp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LayerOneNamespaced.lean/declarations/sfpart-one-asymp.md) | 72 | `result-track:ba202586bb79dfb2afabe8ad77ce739512dfca6e7188b6242902584f56a68b26` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/SpectralPacket.lean/index.md) · [Full source](../../../../FunctionalAnalysis/SpectralPacket.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralPacket.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralPacket.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,16 +60,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SpectralPacketData](../../../../FunctionalAnalysis/SpectralPacket.lean/declarations/spectralpacketdata.md) | 22 | `declaration-track:a244f96cc64f0796b82bcb5574db5fb3f685d75e4dcae095b6944519a21b17d4` |
-| 2 | `def` | [rawAmplitude](../../../../FunctionalAnalysis/SpectralPacket.lean/declarations/rawamplitude.md) | 33 | `declaration-track:d89de5089247b0185c5ef87e6b34320d1a3f4cb924f2ea48ca22d8b0c01db623` |
-| 3 | `theorem` | [rawAmplitude_pos](../../../../FunctionalAnalysis/SpectralPacket.lean/declarations/rawamplitude-pos.md) | 38 | `result-track:2b04cd339986c2c3bea9ba690a4fa2fcec3ec3ceb5600bc42ba446eb020a809d` |
-| 4 | `def` | [rawVector](../../../../FunctionalAnalysis/SpectralPacket.lean/declarations/rawvector.md) | 44 | `declaration-track:60be17d05062342d95bb399f52d03f8b1b27f8011e3f3440a4a4c5a2f912d5b5` |
-| 5 | `theorem` | [rawVector_apply_zero](../../../../FunctionalAnalysis/SpectralPacket.lean/declarations/rawvector-apply-zero.md) | 51 | `result-track:7c94a99eb02dac65557ea26f1b81c8cfe4eb55d4083adbff3a2170989a6942f1` |
-| 6 | `theorem` | [rawVector_ne_zero](../../../../FunctionalAnalysis/SpectralPacket.lean/declarations/rawvector-ne-zero.md) | 56 | `result-track:2f1c0b9abac466760618900de567c24b51f5ac24ca8fe61e19041adeec43f0dc` |
-| 7 | `def` | [vector](../../../../FunctionalAnalysis/SpectralPacket.lean/declarations/vector.md) | 66 | `declaration-track:e3f44df630ea16e44191a3bd03ff2f97c14bd6b8c084da2ba8846700daefca0b` |
-| 8 | `theorem` | [vector_norm](../../../../FunctionalAnalysis/SpectralPacket.lean/declarations/vector-norm.md) | 70 | `result-track:6f77d32a371e4968665603105b344cdd182336361f844731a03ed89371d83ee9` |
-| 9 | `structure` | [NormalizedSpectralPacket](../../../../FunctionalAnalysis/SpectralPacket.lean/declarations/normalizedspectralpacket.md) | 79 | `declaration-track:ef147bfbe0d3da495ba304242ce2fa0d37c4c895f83d7e20cbe82ba96396e7a8` |
-| 10 | `def` | [normalized](../../../../FunctionalAnalysis/SpectralPacket.lean/declarations/normalized.md) | 84 | `declaration-track:632e0c3b04980ec605baa75f151875946788952f4d0bf78c944b9c53dca4d158` |
+| 1 | `structure` | [SpectralPacketData](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralPacket.lean/declarations/spectralpacketdata.md) | 22 | `declaration-track:a244f96cc64f0796b82bcb5574db5fb3f685d75e4dcae095b6944519a21b17d4` |
+| 2 | `def` | [rawAmplitude](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralPacket.lean/declarations/rawamplitude.md) | 33 | `declaration-track:d89de5089247b0185c5ef87e6b34320d1a3f4cb924f2ea48ca22d8b0c01db623` |
+| 3 | `theorem` | [rawAmplitude_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralPacket.lean/declarations/rawamplitude-pos.md) | 38 | `result-track:2b04cd339986c2c3bea9ba690a4fa2fcec3ec3ceb5600bc42ba446eb020a809d` |
+| 4 | `def` | [rawVector](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralPacket.lean/declarations/rawvector.md) | 44 | `declaration-track:60be17d05062342d95bb399f52d03f8b1b27f8011e3f3440a4a4c5a2f912d5b5` |
+| 5 | `theorem` | [rawVector_apply_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralPacket.lean/declarations/rawvector-apply-zero.md) | 51 | `result-track:7c94a99eb02dac65557ea26f1b81c8cfe4eb55d4083adbff3a2170989a6942f1` |
+| 6 | `theorem` | [rawVector_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralPacket.lean/declarations/rawvector-ne-zero.md) | 56 | `result-track:2f1c0b9abac466760618900de567c24b51f5ac24ca8fe61e19041adeec43f0dc` |
+| 7 | `def` | [vector](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralPacket.lean/declarations/vector.md) | 66 | `declaration-track:e3f44df630ea16e44191a3bd03ff2f97c14bd6b8c084da2ba8846700daefca0b` |
+| 8 | `theorem` | [vector_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralPacket.lean/declarations/vector-norm.md) | 70 | `result-track:6f77d32a371e4968665603105b344cdd182336361f844731a03ed89371d83ee9` |
+| 9 | `structure` | [NormalizedSpectralPacket](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralPacket.lean/declarations/normalizedspectralpacket.md) | 79 | `declaration-track:ef147bfbe0d3da495ba304242ce2fa0d37c4c895f83d7e20cbe82ba96396e7a8` |
+| 10 | `def` | [normalized](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralPacket.lean/declarations/normalized.md) | 84 | `declaration-track:632e0c3b04980ec605baa75f151875946788952f4d0bf78c944b9c53dca4d158` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

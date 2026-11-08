@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Geometry/CMNumberFieldIndex.lean/index.md) · [Full source](../../../../Geometry/CMNumberFieldIndex.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CMNumberFieldIndex.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CMNumberFieldIndex.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.AlgebraicGeometry.Hodge.CMGaloisIndex`](../../../../GroupTheoryAndGeneralizations/CMGaloisIndex.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.AlgebraicGeometry.Hodge.CMGaloisIndex`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CMGaloisIndex.lean/index.md) — import line 5; pinned internal source present.
 - `Mathlib.NumberTheory.NumberField.CMField` — import line 6; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [galoisComplexConj](../../../../Geometry/CMNumberFieldIndex.lean/declarations/galoiscomplexconj.md) | 32 | `declaration-track:28d2a7f0c2c0f14109e528600a51e5dd4c0021a6bb71a8201e0ef04276b692d9` |
-| 2 | `theorem` | [galoisComplexConj_apply](../../../../Geometry/CMNumberFieldIndex.lean/declarations/galoiscomplexconj-apply.md) | 36 | `result-track:84aedc67542a0729dd69a4a101b3584ad08254aa7589a50b6414a0b8e6ed231d` |
-| 3 | `theorem` | [galoisComplexConj_apply_apply](../../../../Geometry/CMNumberFieldIndex.lean/declarations/galoiscomplexconj-apply-apply.md) | 41 | `result-track:03323a8dd6ef518a11b8b8be5cdee03cadfaabd05eb1cd9fadefff2db9f7d7ae` |
-| 4 | `theorem` | [galoisComplexConj_commute_apply](../../../../Geometry/CMNumberFieldIndex.lean/declarations/galoiscomplexconj-commute-apply.md) | 51 | `result-track:637316be321572f695842738ff591dadb4c1c8693bccaf8336d36fa476bc3892` |
-| 5 | `def` | [centralInvolution](../../../../Geometry/CMNumberFieldIndex.lean/declarations/centralinvolution.md) | 72 | `declaration-track:26074037db739756707ad03b56a92079410c0c2718ffdcdcd6fc9ae5176c2e06` |
-| 6 | `theorem` | [centralInvolution_conj_apply](../../../../Geometry/CMNumberFieldIndex.lean/declarations/centralinvolution-conj-apply.md) | 87 | `result-track:9c0cdd1508b45dac15d51479e50c0f42dd82190e52e384d1d8e59db491d89e24` |
-| 7 | `abbrev` | [OddSignRow](../../../../Geometry/CMNumberFieldIndex.lean/declarations/oddsignrow.md) | 93 | `declaration-track:5130671c6438897c6c3878f43a21ba97f7f1095b7eee63e81177ead92a8eaa9e` |
-| 8 | `def` | [FourBalance](../../../../Geometry/CMNumberFieldIndex.lean/declarations/fourbalance.md) | 97 | `declaration-track:9a74c7d2b3a0efc06f8762f575c79960ccbe94a7d32a613709fbb287e8abe425` |
-| 9 | `theorem` | [fourBalance_twoTwoSignProfile](../../../../Geometry/CMNumberFieldIndex.lean/declarations/fourbalance-twotwosignprofile.md) | 102 | `result-track:4769cc068ef65fd61648eae4ee2f4310758276259692be46ad97a740c3b7d146` |
+| 1 | `def` | [galoisComplexConj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CMNumberFieldIndex.lean/declarations/galoiscomplexconj.md) | 32 | `declaration-track:28d2a7f0c2c0f14109e528600a51e5dd4c0021a6bb71a8201e0ef04276b692d9` |
+| 2 | `theorem` | [galoisComplexConj_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CMNumberFieldIndex.lean/declarations/galoiscomplexconj-apply.md) | 36 | `result-track:84aedc67542a0729dd69a4a101b3584ad08254aa7589a50b6414a0b8e6ed231d` |
+| 3 | `theorem` | [galoisComplexConj_apply_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CMNumberFieldIndex.lean/declarations/galoiscomplexconj-apply-apply.md) | 41 | `result-track:03323a8dd6ef518a11b8b8be5cdee03cadfaabd05eb1cd9fadefff2db9f7d7ae` |
+| 4 | `theorem` | [galoisComplexConj_commute_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CMNumberFieldIndex.lean/declarations/galoiscomplexconj-commute-apply.md) | 51 | `result-track:637316be321572f695842738ff591dadb4c1c8693bccaf8336d36fa476bc3892` |
+| 5 | `def` | [centralInvolution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CMNumberFieldIndex.lean/declarations/centralinvolution.md) | 72 | `declaration-track:26074037db739756707ad03b56a92079410c0c2718ffdcdcd6fc9ae5176c2e06` |
+| 6 | `theorem` | [centralInvolution_conj_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CMNumberFieldIndex.lean/declarations/centralinvolution-conj-apply.md) | 87 | `result-track:9c0cdd1508b45dac15d51479e50c0f42dd82190e52e384d1d8e59db491d89e24` |
+| 7 | `abbrev` | [OddSignRow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CMNumberFieldIndex.lean/declarations/oddsignrow.md) | 93 | `declaration-track:5130671c6438897c6c3878f43a21ba97f7f1095b7eee63e81177ead92a8eaa9e` |
+| 8 | `def` | [FourBalance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CMNumberFieldIndex.lean/declarations/fourbalance.md) | 97 | `declaration-track:9a74c7d2b3a0efc06f8762f575c79960ccbe94a7d32a613709fbb287e8abe425` |
+| 9 | `theorem` | [fourBalance_twoTwoSignProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CMNumberFieldIndex.lean/declarations/fourbalance-twotwosignprofile.md) | 102 | `result-track:4769cc068ef65fd61648eae4ee2f4310758276259692be46ad97a740c3b7d146` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

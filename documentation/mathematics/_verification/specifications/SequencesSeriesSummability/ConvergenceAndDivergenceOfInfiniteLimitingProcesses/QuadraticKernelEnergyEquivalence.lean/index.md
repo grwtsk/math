@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/QuadraticKernelEnergyEquivalence.lean/index.md) · [Full source](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/QuadraticKernelEnergyEquivalence.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/QuadraticKernelEnergyEquivalence.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/QuadraticKernelEnergyEquivalence.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Fourier.ReciprocalZetaQuadraticKernel`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ReciprocalZetaQuadraticKernel.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Analysis.Fourier.ReciprocalZetaQuadraticKernel`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ReciprocalZetaQuadraticKernel.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [signed_head_return](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/QuadraticKernelEnergyEquivalence.lean/declarations/signed-head-return.md) | 12 | `result-track:5a916ec242f6fb775ee0237f89151a2c1f7564c7fc318b8a4e91035df0ab16a4` |
-| 2 | `theorem` | [signed_settlement_iff_literal_P04](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/QuadraticKernelEnergyEquivalence.lean/declarations/signed-settlement-iff-literal-p04.md) | 19 | `result-track:c0025f95c6e395eb94f99275da8b49bfe1bca834ee8bb80c1c52490582a6ef12` |
+| 1 | `theorem` | [signed_head_return](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/QuadraticKernelEnergyEquivalence.lean/declarations/signed-head-return.md) | 12 | `result-track:5a916ec242f6fb775ee0237f89151a2c1f7564c7fc318b8a4e91035df0ab16a4` |
+| 2 | `theorem` | [signed_settlement_iff_literal_P04](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/QuadraticKernelEnergyEquivalence.lean/declarations/signed-settlement-iff-literal-p04.md) | 19 | `result-track:c0025f95c6e395eb94f99275da8b49bfe1bca834ee8bb80c1c52490582a6ef12` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

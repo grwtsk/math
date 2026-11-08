@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ModelNamespacedInfiniteTimeComputationModel.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ModelNamespacedInfiniteTimeComputationModel.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ModelNamespacedInfiniteTimeComputationModel.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ModelNamespacedInfiniteTimeComputationModel.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [InfiniteTimeComputationModel](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ModelNamespacedInfiniteTimeComputationModel.lean/declarations/infinitetimecomputationmodel.md) | 22 | `declaration-track:7ebb8e7bd2e64b3d9629c9a4cdb436888d0fa943d625901d15443d269586c726` |
-| 2 | `def` | [EventuallyStable](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ModelNamespacedInfiniteTimeComputationModel.lean/declarations/eventuallystable.md) | 28 | `declaration-track:6f8a2ea08230bc6ff120a6a174b986328db5201de7e9b4fb6d7014c9efc8892d` |
+| 1 | `structure` | [InfiniteTimeComputationModel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ModelNamespacedInfiniteTimeComputationModel.lean/declarations/infinitetimecomputationmodel.md) | 22 | `declaration-track:7ebb8e7bd2e64b3d9629c9a4cdb436888d0fa943d625901d15443d269586c726` |
+| 2 | `def` | [EventuallyStable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ModelNamespacedInfiniteTimeComputationModel.lean/declarations/eventuallystable.md) | 28 | `declaration-track:6f8a2ea08230bc6ff120a6a174b986328db5201de7e9b4fb6d7014c9efc8892d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuppliedFunctionFieldTypePackages.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuppliedFunctionFieldTypePackages.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuppliedFunctionFieldTypePackages.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuppliedFunctionFieldTypePackages.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FunctionFieldBase](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuppliedFunctionFieldTypePackages.lean/declarations/functionfieldbase.md) | 42 | `declaration-track:898fb4c5148f43d06ebeaa5ea71c39b9c693287334cc95b801a4f07ecf0564e0` |
-| 2 | `structure` | [CohomologicalSpectralRealization](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuppliedFunctionFieldTypePackages.lean/declarations/cohomologicalspectralrealization.md) | 52 | `declaration-track:6893be5cd53c9dabdc3edebafd4b05b3bb5ff83594cd1c88237678418bac3e47` |
-| 3 | `theorem` | [function_field_zeros_realized_by_frobenius](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuppliedFunctionFieldTypePackages.lean/declarations/function-field-zeros-realized-by-frobenius.md) | 64 | `result-track:ed470da487881481b27c7e555f974569da4f9d6425db69ac0b5149c4618d3338` |
-| 4 | `structure` | [FunctionFieldIndexPrototype](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuppliedFunctionFieldTypePackages.lean/declarations/functionfieldindexprototype.md) | 74 | `declaration-track:5860250103deabd9bc71eea6ef5479c1ca4659c1b3fa1156996d824b2d69ae7c` |
-| 5 | `theorem` | [function_field_trace_identity_holds](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuppliedFunctionFieldTypePackages.lean/declarations/function-field-trace-identity-holds.md) | 85 | `result-track:a6d31b70c41edce9c113cf8c97fcf742914be5e25c8ab6048a1c79d6c7b6ecb6` |
-| 6 | `theorem` | [function_field_alignment_conclusion](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuppliedFunctionFieldTypePackages.lean/declarations/function-field-alignment-conclusion.md) | 91 | `result-track:22d3429da0b89cda485001af3f4bea0e8f5fd073535862e6174126d92cd77f12` |
+| 1 | `structure` | [FunctionFieldBase](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuppliedFunctionFieldTypePackages.lean/declarations/functionfieldbase.md) | 42 | `declaration-track:898fb4c5148f43d06ebeaa5ea71c39b9c693287334cc95b801a4f07ecf0564e0` |
+| 2 | `structure` | [CohomologicalSpectralRealization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuppliedFunctionFieldTypePackages.lean/declarations/cohomologicalspectralrealization.md) | 52 | `declaration-track:6893be5cd53c9dabdc3edebafd4b05b3bb5ff83594cd1c88237678418bac3e47` |
+| 3 | `theorem` | [function_field_zeros_realized_by_frobenius](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuppliedFunctionFieldTypePackages.lean/declarations/function-field-zeros-realized-by-frobenius.md) | 64 | `result-track:ed470da487881481b27c7e555f974569da4f9d6425db69ac0b5149c4618d3338` |
+| 4 | `structure` | [FunctionFieldIndexPrototype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuppliedFunctionFieldTypePackages.lean/declarations/functionfieldindexprototype.md) | 74 | `declaration-track:5860250103deabd9bc71eea6ef5479c1ca4659c1b3fa1156996d824b2d69ae7c` |
+| 5 | `theorem` | [function_field_trace_identity_holds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuppliedFunctionFieldTypePackages.lean/declarations/function-field-trace-identity-holds.md) | 85 | `result-track:a6d31b70c41edce9c113cf8c97fcf742914be5e25c8ab6048a1c79d6c7b6ecb6` |
+| 6 | `theorem` | [function_field_alignment_conclusion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuppliedFunctionFieldTypePackages.lean/declarations/function-field-alignment-conclusion.md) | 91 | `result-track:22d3429da0b89cda485001af3f4bea0e8f5fd073535862e6174126d92cd77f12` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

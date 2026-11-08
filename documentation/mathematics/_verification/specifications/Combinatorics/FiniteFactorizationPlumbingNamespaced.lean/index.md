@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/FiniteFactorizationPlumbingNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/FiniteFactorizationPlumbingNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteFactorizationPlumbingNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteFactorizationPlumbingNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [factorization_prime_power_eval](../../../../Combinatorics/FiniteFactorizationPlumbingNamespaced.lean/declarations/factorization-prime-power-eval.md) | 25 | `result-track:12ff24bbc22a061671421d9db200ec7fdb27ab851b61364b2d2387ffc0ea099f` |
-| 2 | `theorem` | [factorization_exponentVectorNat](../../../../Combinatorics/FiniteFactorizationPlumbingNamespaced.lean/declarations/factorization-exponentvectornat.md) | 44 | `result-track:f9685934fc52bbf46f39e0957db196d37adede332c252529d74c1d1645403d2d` |
-| 3 | `theorem` | [factorization_exponentVectorNat_at_mem](../../../../Combinatorics/FiniteFactorizationPlumbingNamespaced.lean/declarations/factorization-exponentvectornat-at-mem.md) | 107 | `result-track:10b1b22d33588063f8959a402aa2e9428969c64d7748d900ce1363fae8f9b334` |
-| 4 | `theorem` | [factorization_exponentVectorNat_at_not_mem](../../../../Combinatorics/FiniteFactorizationPlumbingNamespaced.lean/declarations/factorization-exponentvectornat-at-not-mem.md) | 119 | `result-track:2a1e485f50578881f8a1dec35a5505ef721d5a5d67a524f5e15649fd7b8b9f58` |
-| 5 | `theorem` | [exponentVectorNat_injective_of_prime_set](../../../../Combinatorics/FiniteFactorizationPlumbingNamespaced.lean/declarations/exponentvectornat-injective-of-prime-set.md) | 137 | `result-track:01413f94695cc5f2513bc1c8011b0a7e3d12e5201f5052384ed73230b012d02c` |
+| 1 | `theorem` | [factorization_prime_power_eval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteFactorizationPlumbingNamespaced.lean/declarations/factorization-prime-power-eval.md) | 25 | `result-track:12ff24bbc22a061671421d9db200ec7fdb27ab851b61364b2d2387ffc0ea099f` |
+| 2 | `theorem` | [factorization_exponentVectorNat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteFactorizationPlumbingNamespaced.lean/declarations/factorization-exponentvectornat.md) | 44 | `result-track:f9685934fc52bbf46f39e0957db196d37adede332c252529d74c1d1645403d2d` |
+| 3 | `theorem` | [factorization_exponentVectorNat_at_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteFactorizationPlumbingNamespaced.lean/declarations/factorization-exponentvectornat-at-mem.md) | 107 | `result-track:10b1b22d33588063f8959a402aa2e9428969c64d7748d900ce1363fae8f9b334` |
+| 4 | `theorem` | [factorization_exponentVectorNat_at_not_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteFactorizationPlumbingNamespaced.lean/declarations/factorization-exponentvectornat-at-not-mem.md) | 119 | `result-track:2a1e485f50578881f8a1dec35a5505ef721d5a5d67a524f5e15649fd7b8b9f58` |
+| 5 | `theorem` | [exponentVectorNat_injective_of_prime_set](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteFactorizationPlumbingNamespaced.lean/declarations/exponentvectornat-injective-of-prime-set.md) | 137 | `result-track:01413f94695cc5f2513bc1c8011b0a7e3d12e5201f5052384ed73230b012d02c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

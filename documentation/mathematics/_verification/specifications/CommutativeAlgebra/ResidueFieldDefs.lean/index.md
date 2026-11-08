@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/ResidueFieldDefs.lean/index.md) · [Full source](../../../../CommutativeAlgebra/ResidueFieldDefs.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ResidueFieldDefs.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ResidueFieldDefs.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ResidueField](../../../../CommutativeAlgebra/ResidueFieldDefs.lean/declarations/residuefield.md) | 24 | `declaration-track:cb03e24b7030604c8515cccc1b1885ae0ea0fc0501f46cd34624d11f3013401c` |
-| 2 | `instance` | [ResidueFieldCommRing](../../../../CommutativeAlgebra/ResidueFieldDefs.lean/declarations/residuefieldcommring.md) | 30 | `declaration-track:0019141aa355388f1e0bb25f28832a813bf07df350873a3f5b0a3a0d6e643ad9` |
-| 3 | `instance` | [ResidueFieldInhabited](../../../../CommutativeAlgebra/ResidueFieldDefs.lean/declarations/residuefieldinhabited.md) | 33 | `declaration-track:244c17e7bffdbed89b70dc3cebdbebb60ddf51cb870749f8f614d57848d05e94` |
-| 4 | `instance` | [ResidueField.field](../../../../CommutativeAlgebra/ResidueFieldDefs.lean/declarations/residuefield-field.md) | 36 | `declaration-track:533e916dec06b589fbf4a401dffc0b003f43ce2ed5ef7e38f255aeb95e8bb401` |
-| 5 | `def` | [residue](../../../../CommutativeAlgebra/ResidueFieldDefs.lean/declarations/residue.md) | 40 | `declaration-track:7c7e8183f170a0c022cacc863396217a6667245e729401f030d89c1bac9f9b61` |
+| 1 | `def` | [ResidueField](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ResidueFieldDefs.lean/declarations/residuefield.md) | 24 | `declaration-track:cb03e24b7030604c8515cccc1b1885ae0ea0fc0501f46cd34624d11f3013401c` |
+| 2 | `instance` | [ResidueFieldCommRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ResidueFieldDefs.lean/declarations/residuefieldcommring.md) | 30 | `declaration-track:0019141aa355388f1e0bb25f28832a813bf07df350873a3f5b0a3a0d6e643ad9` |
+| 3 | `instance` | [ResidueFieldInhabited](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ResidueFieldDefs.lean/declarations/residuefieldinhabited.md) | 33 | `declaration-track:244c17e7bffdbed89b70dc3cebdbebb60ddf51cb870749f8f614d57848d05e94` |
+| 4 | `instance` | [ResidueField.field](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ResidueFieldDefs.lean/declarations/residuefield-field.md) | 36 | `declaration-track:533e916dec06b589fbf4a401dffc0b003f43ce2ed5ef7e38f255aeb95e8bb401` |
+| 5 | `def` | [residue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ResidueFieldDefs.lean/declarations/residue.md) | 40 | `declaration-track:7c7e8183f170a0c022cacc863396217a6667245e729401f030d89c1bac9f9b61` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceRemainderLaplaceAttempt01.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceRemainderLaplaceAttempt01.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceRemainderLaplaceAttempt01.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceRemainderLaplaceAttempt01.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualRemainder](../../../../MeasureAndIntegration/SourceRemainderLaplaceAttempt01.lean/declarations/actualremainder.md) | 13 | `declaration-track:86eaebf8c58221d161b0ab75a5264e8c5342efc9dd910c3bda8cbb48be128a77` |
-| 2 | `def` | [actualLaplace](../../../../MeasureAndIntegration/SourceRemainderLaplaceAttempt01.lean/declarations/actuallaplace.md) | 16 | `declaration-track:128efaa4cdd464bc0824c64c10868a664a10c82b91b1821c8e7d16cfd323b103` |
-| 3 | `theorem` | [laplaceWeight_abs_le_one](../../../../MeasureAndIntegration/SourceRemainderLaplaceAttempt01.lean/declarations/laplaceweight-abs-le-one.md) | 19 | `result-track:7ce7b2f264bc0f3db14a7b798232658750d4cae4a0123312d3cdda99dda0fe52` |
-| 4 | `theorem` | [actual_weighted_remainder_integrable](../../../../MeasureAndIntegration/SourceRemainderLaplaceAttempt01.lean/declarations/actual-weighted-remainder-integrable.md) | 25 | `result-track:8a55474cd2a6d2f49715fb3aad144217fb707ce2ab88431950db346a8b4909b2` |
-| 5 | `theorem` | [actual_laplace_tendsto_right](../../../../MeasureAndIntegration/SourceRemainderLaplaceAttempt01.lean/declarations/actual-laplace-tendsto-right.md) | 33 | `result-track:d16fd372aa0a0f5882df6dff04c0b421e7999d5b46d49c05ef85a7a7bbe182af` |
+| 1 | `def` | [actualRemainder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceRemainderLaplaceAttempt01.lean/declarations/actualremainder.md) | 13 | `declaration-track:86eaebf8c58221d161b0ab75a5264e8c5342efc9dd910c3bda8cbb48be128a77` |
+| 2 | `def` | [actualLaplace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceRemainderLaplaceAttempt01.lean/declarations/actuallaplace.md) | 16 | `declaration-track:128efaa4cdd464bc0824c64c10868a664a10c82b91b1821c8e7d16cfd323b103` |
+| 3 | `theorem` | [laplaceWeight_abs_le_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceRemainderLaplaceAttempt01.lean/declarations/laplaceweight-abs-le-one.md) | 19 | `result-track:7ce7b2f264bc0f3db14a7b798232658750d4cae4a0123312d3cdda99dda0fe52` |
+| 4 | `theorem` | [actual_weighted_remainder_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceRemainderLaplaceAttempt01.lean/declarations/actual-weighted-remainder-integrable.md) | 25 | `result-track:8a55474cd2a6d2f49715fb3aad144217fb707ce2ab88431950db346a8b4909b2` |
+| 5 | `theorem` | [actual_laplace_tendsto_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceRemainderLaplaceAttempt01.lean/declarations/actual-laplace-tendsto-right.md) | 33 | `result-track:d16fd372aa0a0f5882df6dff04c0b421e7999d5b46d49c05ef85a7a7bbe182af` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

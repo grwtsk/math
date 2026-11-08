@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SourceBoundaryUniform.lean/index.md) · [Full source](../../../../GeneralTopology/SourceBoundaryUniform.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceBoundaryUniform.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceBoundaryUniform.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [uniform_test](../../../../GeneralTopology/SourceBoundaryUniform.lean/declarations/uniform-test.md) | 12 | `result-track:27a87e0bcadbe64dabf0c6f8fa80d93eeb8b8f1aaf4aeec09ffa34cde5245aee` |
+| 1 | `theorem` | [uniform_test](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceBoundaryUniform.lean/declarations/uniform-test.md) | 12 | `result-track:27a87e0bcadbe64dabf0c6f8fa80d93eeb8b8f1aaf4aeec09ffa34cde5245aee` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PrismaticPivotConditional.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PrismaticPivotConditional.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PrismaticPivotConditional.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PrismaticPivotConditional.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ConditionalPrismaticPivotInput](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PrismaticPivotConditional.lean/declarations/conditionalprismaticpivotinput.md) | 21 | `declaration-track:2dc92c21e67c1253c36b3c485b1b6ded5d3772f7f852a882719c69ab7dad982a` |
-| 2 | `structure` | [ConditionalPrismaticPivotConclusion](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PrismaticPivotConditional.lean/declarations/conditionalprismaticpivotconclusion.md) | 27 | `declaration-track:c7271db97542e8a4a4a2bc4f45d6ab82a0e99a785e01b8eaaadda2144cd78266` |
-| 3 | `def` | [conditional_prismatic_heatflow_pivot_package](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PrismaticPivotConditional.lean/declarations/conditional-prismatic-heatflow-pivot-package.md) | 35 | `declaration-track:32402589b48d0fe3a0fb4f0968fa1f97e908bdcc0695af7ee6ec3319632a829c` |
-| 4 | `theorem` | [conditional_prismatic_heatflow_pivot_package_label](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PrismaticPivotConditional.lean/declarations/conditional-prismatic-heatflow-pivot-package-label.md) | 40 | `result-track:57ac483e4536902e8a9473a178ef09655a8af8799b6884bf64a7e0ee07b06aa4` |
-| 5 | `theorem` | [conditional_prismatic_heatflow_pivot_has_no_rh_claim](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PrismaticPivotConditional.lean/declarations/conditional-prismatic-heatflow-pivot-has-no-rh-claim.md) | 46 | `result-track:2e61b71a153b7cac54a8b6b68085fbc03995cb5e5f5ae90153b326cf8c77aae7` |
+| 1 | `structure` | [ConditionalPrismaticPivotInput](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PrismaticPivotConditional.lean/declarations/conditionalprismaticpivotinput.md) | 21 | `declaration-track:2dc92c21e67c1253c36b3c485b1b6ded5d3772f7f852a882719c69ab7dad982a` |
+| 2 | `structure` | [ConditionalPrismaticPivotConclusion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PrismaticPivotConditional.lean/declarations/conditionalprismaticpivotconclusion.md) | 27 | `declaration-track:c7271db97542e8a4a4a2bc4f45d6ab82a0e99a785e01b8eaaadda2144cd78266` |
+| 3 | `def` | [conditional_prismatic_heatflow_pivot_package](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PrismaticPivotConditional.lean/declarations/conditional-prismatic-heatflow-pivot-package.md) | 35 | `declaration-track:32402589b48d0fe3a0fb4f0968fa1f97e908bdcc0695af7ee6ec3319632a829c` |
+| 4 | `theorem` | [conditional_prismatic_heatflow_pivot_package_label](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PrismaticPivotConditional.lean/declarations/conditional-prismatic-heatflow-pivot-package-label.md) | 40 | `result-track:57ac483e4536902e8a9473a178ef09655a8af8799b6884bf64a7e0ee07b06aa4` |
+| 5 | `theorem` | [conditional_prismatic_heatflow_pivot_has_no_rh_claim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PrismaticPivotConditional.lean/declarations/conditional-prismatic-heatflow-pivot-has-no-rh-claim.md) | 46 | `result-track:2e61b71a153b7cac54a8b6b68085fbc03995cb5e5f5ae90153b326cf8c77aae7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

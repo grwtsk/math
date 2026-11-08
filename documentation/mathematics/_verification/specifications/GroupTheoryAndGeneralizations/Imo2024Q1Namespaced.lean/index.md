@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/Imo2024Q1Namespaced.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/Imo2024Q1Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Imo2024Q1Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Imo2024Q1Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -63,16 +63,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Condition](../../../../GroupTheoryAndGeneralizations/Imo2024Q1Namespaced.lean/declarations/condition.md) | 42 | `declaration-track:f85e07c5809822f89da9e9fd9e3fb87a18f457255e2b74b21b5abbcfc4081269` |
-| 2 | `def` | [solutionSet](../../../../GroupTheoryAndGeneralizations/Imo2024Q1Namespaced.lean/declarations/solutionset.md) | 45 | `declaration-track:ec671f336091ab08db60ba373430080f8aa219eb6e6f24b367b3c4755f4e9638` |
-| 3 | `lemma` | [condition_two_mul_int](../../../../GroupTheoryAndGeneralizations/Imo2024Q1Namespaced.lean/declarations/condition-two-mul-int.md) | 47 | `result-track:cfac30f49e9a503da221e83d98b8ddccfa11afe0ecfa86663edbeaaadf425c63` |
-| 4 | `lemma` | [condition_sub_two_mul_int_iff](../../../../GroupTheoryAndGeneralizations/Imo2024Q1Namespaced.lean/declarations/condition-sub-two-mul-int-iff.md) | 57 | `result-track:186544212c9ec9c53e5246b67a9561c1034aed478b598e1d8beeb6c5a5cfc9d3` |
-| 5 | `lemma` | [condition_toIcoMod_iff](../../../../GroupTheoryAndGeneralizations/Imo2024Q1Namespaced.lean/declarations/condition-toicomod-iff.md) | 68 | `result-track:5511ad48a429ddc309c88a8e825be47b58079428262712cbfcd127ec06446a5e` |
-| 6 | `lemma` | [mem_Ico_one_of_mem_Ioo](../../../../GroupTheoryAndGeneralizations/Imo2024Q1Namespaced.lean/declarations/mem-ico-one-of-mem-ioo.md) | 77 | `result-track:8fc8b01407767930659d312ed9c5e5eae8da4eba6af6c5bb59f1915312d43f03` |
-| 7 | `lemma` | [mem_Ico_n_of_mem_Ioo](../../../../GroupTheoryAndGeneralizations/Imo2024Q1Namespaced.lean/declarations/mem-ico-n-of-mem-ioo.md) | 107 | `result-track:bc6ef5701df6490990adc7e7681a0a4adf70ef7c63cbfe6e029379b6373844ed` |
-| 8 | `lemma` | [not_condition_of_mem_Ioo](../../../../GroupTheoryAndGeneralizations/Imo2024Q1Namespaced.lean/declarations/not-condition-of-mem-ioo.md) | 155 | `result-track:bc51be71122ef241b9d2a4cb37e3e2d02d36e0f7090056feb614476e336d0d89` |
-| 9 | `lemma` | [condition_iff_of_mem_Ico](../../../../GroupTheoryAndGeneralizations/Imo2024Q1Namespaced.lean/declarations/condition-iff-of-mem-ico.md) | 169 | `result-track:83da1503dea0441b21a75106a1042ff15089aded31a746aef953ecafcc387954` |
-| 10 | `theorem` | [result](../../../../GroupTheoryAndGeneralizations/Imo2024Q1Namespaced.lean/declarations/result.md) | 182 | `result-track:6ee1b913b39721e7df9dc8abf6c9c116fc62166557fca25297b7a6a1359778f5` |
+| 1 | `def` | [Condition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Imo2024Q1Namespaced.lean/declarations/condition.md) | 42 | `declaration-track:f85e07c5809822f89da9e9fd9e3fb87a18f457255e2b74b21b5abbcfc4081269` |
+| 2 | `def` | [solutionSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Imo2024Q1Namespaced.lean/declarations/solutionset.md) | 45 | `declaration-track:ec671f336091ab08db60ba373430080f8aa219eb6e6f24b367b3c4755f4e9638` |
+| 3 | `lemma` | [condition_two_mul_int](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Imo2024Q1Namespaced.lean/declarations/condition-two-mul-int.md) | 47 | `result-track:cfac30f49e9a503da221e83d98b8ddccfa11afe0ecfa86663edbeaaadf425c63` |
+| 4 | `lemma` | [condition_sub_two_mul_int_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Imo2024Q1Namespaced.lean/declarations/condition-sub-two-mul-int-iff.md) | 57 | `result-track:186544212c9ec9c53e5246b67a9561c1034aed478b598e1d8beeb6c5a5cfc9d3` |
+| 5 | `lemma` | [condition_toIcoMod_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Imo2024Q1Namespaced.lean/declarations/condition-toicomod-iff.md) | 68 | `result-track:5511ad48a429ddc309c88a8e825be47b58079428262712cbfcd127ec06446a5e` |
+| 6 | `lemma` | [mem_Ico_one_of_mem_Ioo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Imo2024Q1Namespaced.lean/declarations/mem-ico-one-of-mem-ioo.md) | 77 | `result-track:8fc8b01407767930659d312ed9c5e5eae8da4eba6af6c5bb59f1915312d43f03` |
+| 7 | `lemma` | [mem_Ico_n_of_mem_Ioo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Imo2024Q1Namespaced.lean/declarations/mem-ico-n-of-mem-ioo.md) | 107 | `result-track:bc6ef5701df6490990adc7e7681a0a4adf70ef7c63cbfe6e029379b6373844ed` |
+| 8 | `lemma` | [not_condition_of_mem_Ioo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Imo2024Q1Namespaced.lean/declarations/not-condition-of-mem-ioo.md) | 155 | `result-track:bc51be71122ef241b9d2a4cb37e3e2d02d36e0f7090056feb614476e336d0d89` |
+| 9 | `lemma` | [condition_iff_of_mem_Ico](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Imo2024Q1Namespaced.lean/declarations/condition-iff-of-mem-ico.md) | 169 | `result-track:83da1503dea0441b21a75106a1042ff15089aded31a746aef953ecafcc387954` |
+| 10 | `theorem` | [result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Imo2024Q1Namespaced.lean/declarations/result.md) | 182 | `result-track:6ee1b913b39721e7df9dc8abf6c9c116fc62166557fca25297b7a6a1359778f5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

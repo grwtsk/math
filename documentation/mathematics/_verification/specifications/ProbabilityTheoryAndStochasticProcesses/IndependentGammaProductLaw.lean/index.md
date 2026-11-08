@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/IndependentGammaProductLaw.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/IndependentGammaProductLaw.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/IndependentGammaProductLaw.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/IndependentGammaProductLaw.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -54,7 +54,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 - `Mathlib.MeasureTheory.Measure.Decomposition.RadonNikodym` — import line 24; external provider; requires a separately pinned dependency.
 - `Mathlib.Probability.Distributions.Gamma` — import line 25; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 26; external provider; requires a separately pinned dependency.
-- [Positive Shape Scale Parameter Algebra](../../../../ProbabilityTheoryAndStochasticProcesses/PositiveShapeScaleParameterAlgebra.lean/index.md) — import line 28; pinned internal source present.
+- [Positive Shape Scale Parameter Algebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/PositiveShapeScaleParameterAlgebra.lean/index.md) — import line 28; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -65,8 +65,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [gammaProductMeasure](../../../../ProbabilityTheoryAndStochasticProcesses/IndependentGammaProductLaw.lean/declarations/gammaproductmeasure.md) | 60 | `declaration-track:00210026602404345365747775f9e85599622f8013f3fa3785a7e05cc147b367` |
-| 2 | `theorem` | [gammaProductMeasure_probability](../../../../ProbabilityTheoryAndStochasticProcesses/IndependentGammaProductLaw.lean/declarations/gammaproductmeasure-probability.md) | 65 | `result-track:ee1670b7edfca249d71f28fbb98b29ab5318702d928f2ac13c6f170843b8b2cb` |
+| 1 | `def` | [gammaProductMeasure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/IndependentGammaProductLaw.lean/declarations/gammaproductmeasure.md) | 60 | `declaration-track:00210026602404345365747775f9e85599622f8013f3fa3785a7e05cc147b367` |
+| 2 | `theorem` | [gammaProductMeasure_probability](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/IndependentGammaProductLaw.lean/declarations/gammaproductmeasure-probability.md) | 65 | `result-track:ee1670b7edfca249d71f28fbb98b29ab5318702d928f2ac13c6f170843b8b2cb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

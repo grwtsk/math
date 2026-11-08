@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Rational.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Rational.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Rational.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Rational.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RationalMatrixCode](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Rational.lean/declarations/rationalmatrixcode.md) | 5 | `declaration-track:2893d465aa50068247b1ac1fed6c09cc2e0f70cc8c55303e6e5cc47ee06ac2b2` |
-| 2 | `def` | [encodeRational](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Rational.lean/declarations/encoderational.md) | 11 | `declaration-track:bcdfa836defc86776fc13549b650ce8a9f27ed08b0a23d9547e93319d31012ae` |
-| 3 | `def` | [decodeRational?](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Rational.lean/declarations/decoderational.md) | 14 | `declaration-track:62b96190efa6c15b11654cdd3aa30dcd7140b4389a7d5bc87adad398c3f2697b` |
-| 4 | `theorem` | [rational_blm_roundTrip](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Rational.lean/declarations/rational-blm-roundtrip.md) | 17 | `result-track:37f47685b1fd2935dd3be6543a45e5c1837d1a558af4bd34ee4a15b2be9d0f9c` |
-| 5 | `structure` | [RationalNormalizationCertificate](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Rational.lean/declarations/rationalnormalizationcertificate.md) | 21 | `declaration-track:146ccf687884bfc770d4e34465be4dfb5e4c921ecb0cc0a4b6e2e7358ff52bd7` |
-| 6 | `theorem` | [rational_normalization_certificate_projects](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Rational.lean/declarations/rational-normalization-certificate-projects.md) | 26 | `result-track:35dcfcec87c983fe37e0b28d401ce9b66e601833c6e66a585c11794ab579d20e` |
+| 1 | `structure` | [RationalMatrixCode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Rational.lean/declarations/rationalmatrixcode.md) | 5 | `declaration-track:2893d465aa50068247b1ac1fed6c09cc2e0f70cc8c55303e6e5cc47ee06ac2b2` |
+| 2 | `def` | [encodeRational](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Rational.lean/declarations/encoderational.md) | 11 | `declaration-track:bcdfa836defc86776fc13549b650ce8a9f27ed08b0a23d9547e93319d31012ae` |
+| 3 | `def` | [decodeRational?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Rational.lean/declarations/decoderational.md) | 14 | `declaration-track:62b96190efa6c15b11654cdd3aa30dcd7140b4389a7d5bc87adad398c3f2697b` |
+| 4 | `theorem` | [rational_blm_roundTrip](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Rational.lean/declarations/rational-blm-roundtrip.md) | 17 | `result-track:37f47685b1fd2935dd3be6543a45e5c1837d1a558af4bd34ee4a15b2be9d0f9c` |
+| 5 | `structure` | [RationalNormalizationCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Rational.lean/declarations/rationalnormalizationcertificate.md) | 21 | `declaration-track:146ccf687884bfc770d4e34465be4dfb5e4c921ecb0cc0a4b6e2e7358ff52bd7` |
+| 6 | `theorem` | [rational_normalization_certificate_projects](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Rational.lean/declarations/rational-normalization-certificate-projects.md) | 26 | `result-track:35dcfcec87c983fe37e0b28d401ce9b66e601833c6e66a585c11794ab579d20e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

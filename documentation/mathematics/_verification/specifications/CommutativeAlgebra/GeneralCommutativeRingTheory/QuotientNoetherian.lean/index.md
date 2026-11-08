@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/QuotientNoetherian.lean/index.md) · [Full source](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/QuotientNoetherian.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/QuotientNoetherian.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/QuotientNoetherian.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [Ideal.Quotient.isNoetherianRing](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/QuotientNoetherian.lean/declarations/ideal-quotient-isnoetherianring.md) | 13 | `declaration-track:880d0449c5a3a3f89d56540561c7f59b01f67b08ffb58c2e796e370d3203b8d2` |
+| 1 | `instance` | [Ideal.Quotient.isNoetherianRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/QuotientNoetherian.lean/declarations/ideal-quotient-isnoetherianring.md) | 13 | `declaration-track:880d0449c5a3a3f89d56540561c7f59b01f67b08ffb58c2e796e370d3203b8d2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

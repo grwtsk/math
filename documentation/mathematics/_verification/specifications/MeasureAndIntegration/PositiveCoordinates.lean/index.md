@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/PositiveCoordinates.lean/index.md) · [Full source](../../../../MeasureAndIntegration/PositiveCoordinates.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveCoordinates.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveCoordinates.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,21 +57,21 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [power](../../../../MeasureAndIntegration/PositiveCoordinates.lean/declarations/power.md) | 19 | `declaration-track:c0e13cb68b6de98ba4c884358113fbb4fd51c454a496b01365af260ae03233c9` |
-| 2 | `theorem` | [power_zero](../../../../MeasureAndIntegration/PositiveCoordinates.lean/declarations/power-zero.md) | 21 | `result-track:7c4b145764005d02fe92dd0f885ff6ff65ebcff53c094ca9624cc8fd207c358b` |
-| 3 | `theorem` | [power_one_base](../../../../MeasureAndIntegration/PositiveCoordinates.lean/declarations/power-one-base.md) | 23 | `result-track:8adeada7eec878bbeeb205822776d81699a73ad019955932c5b0f04d0866b272` |
-| 4 | `theorem` | [power_one](../../../../MeasureAndIntegration/PositiveCoordinates.lean/declarations/power-one.md) | 25 | `result-track:78f3bb0aadf927c0aad5485a00e70e2f3e52126ee57d562d591039d2022c0f84` |
-| 5 | `theorem` | [power_add](../../../../MeasureAndIntegration/PositiveCoordinates.lean/declarations/power-add.md) | 29 | `result-track:1c7a3fa01f3bbddcedb30a265fa7ce9042f0f8fbd7f7deafc7fd081bb961166e` |
-| 6 | `theorem` | [power_mul](../../../../MeasureAndIntegration/PositiveCoordinates.lean/declarations/power-mul.md) | 33 | `result-track:c4112a7bcf6fddd3f2210df7b1fcf0d51c0b16e0df9d8afc22260d4a0cf40c45` |
-| 7 | `theorem` | [power_div](../../../../MeasureAndIntegration/PositiveCoordinates.lean/declarations/power-div.md) | 38 | `result-track:3374aa26b0ea8614c358bef840de7aa39430a6e5cf2f41a588956d341b5106eb` |
-| 8 | `theorem` | [power_div_coordinate](../../../../MeasureAndIntegration/PositiveCoordinates.lean/declarations/power-div-coordinate.md) | 43 | `result-track:ab65f212d7b381e3542259f0affa1a64b4a84bebd42c05e440e458ac831e98bc` |
-| 9 | `theorem` | [power_one_sub](../../../../MeasureAndIntegration/PositiveCoordinates.lean/declarations/power-one-sub.md) | 48 | `result-track:5ec2fbe9d8590d410b17e4f1a19d40716c19de407dda9941b35eb91c19b180be` |
-| 10 | `theorem` | [norm_power](../../../../MeasureAndIntegration/PositiveCoordinates.lean/declarations/norm-power.md) | 52 | `result-track:a207e91528bbe03ff1c8d13feb45a7a020b02849bcc997f185831125fad9964e` |
-| 11 | `theorem` | [power_hasDerivAt](../../../../MeasureAndIntegration/PositiveCoordinates.lean/declarations/power-hasderivat.md) | 56 | `result-track:4b65bacc2dacaf444b6a15888a6b8a1750ea105961f49adee78696ae67fa97bf` |
-| 12 | `theorem` | [power_differentiable_parameter](../../../../MeasureAndIntegration/PositiveCoordinates.lean/declarations/power-differentiable-parameter.md) | 63 | `result-track:9542d80ee644b80ad912b2fba1675d3d8e9447965fbf3fac394361e45059fda2` |
-| 13 | `theorem` | [atom_scaling](../../../../MeasureAndIntegration/PositiveCoordinates.lean/declarations/atom-scaling.md) | 69 | `result-track:0d129bae27335cc7c5b6720e9c0201e39659f6791afabf5bf800d79218a14b25` |
-| 14 | `theorem` | [density_scaling](../../../../MeasureAndIntegration/PositiveCoordinates.lean/declarations/density-scaling.md) | 88 | `result-track:6f1d832cf819dad2edd59a92bc5b5d87caefa4bfc8f0e23bc878333cefeb1ed3` |
-| 15 | `theorem` | [integral_scaling](../../../../MeasureAndIntegration/PositiveCoordinates.lean/declarations/integral-scaling.md) | 98 | `result-track:29e51803ae2702419bce18f1ad1e5355cbd317db9c854d9183a4392d6a4236bb` |
+| 1 | `def` | [power](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveCoordinates.lean/declarations/power.md) | 19 | `declaration-track:c0e13cb68b6de98ba4c884358113fbb4fd51c454a496b01365af260ae03233c9` |
+| 2 | `theorem` | [power_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveCoordinates.lean/declarations/power-zero.md) | 21 | `result-track:7c4b145764005d02fe92dd0f885ff6ff65ebcff53c094ca9624cc8fd207c358b` |
+| 3 | `theorem` | [power_one_base](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveCoordinates.lean/declarations/power-one-base.md) | 23 | `result-track:8adeada7eec878bbeeb205822776d81699a73ad019955932c5b0f04d0866b272` |
+| 4 | `theorem` | [power_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveCoordinates.lean/declarations/power-one.md) | 25 | `result-track:78f3bb0aadf927c0aad5485a00e70e2f3e52126ee57d562d591039d2022c0f84` |
+| 5 | `theorem` | [power_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveCoordinates.lean/declarations/power-add.md) | 29 | `result-track:1c7a3fa01f3bbddcedb30a265fa7ce9042f0f8fbd7f7deafc7fd081bb961166e` |
+| 6 | `theorem` | [power_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveCoordinates.lean/declarations/power-mul.md) | 33 | `result-track:c4112a7bcf6fddd3f2210df7b1fcf0d51c0b16e0df9d8afc22260d4a0cf40c45` |
+| 7 | `theorem` | [power_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveCoordinates.lean/declarations/power-div.md) | 38 | `result-track:3374aa26b0ea8614c358bef840de7aa39430a6e5cf2f41a588956d341b5106eb` |
+| 8 | `theorem` | [power_div_coordinate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveCoordinates.lean/declarations/power-div-coordinate.md) | 43 | `result-track:ab65f212d7b381e3542259f0affa1a64b4a84bebd42c05e440e458ac831e98bc` |
+| 9 | `theorem` | [power_one_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveCoordinates.lean/declarations/power-one-sub.md) | 48 | `result-track:5ec2fbe9d8590d410b17e4f1a19d40716c19de407dda9941b35eb91c19b180be` |
+| 10 | `theorem` | [norm_power](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveCoordinates.lean/declarations/norm-power.md) | 52 | `result-track:a207e91528bbe03ff1c8d13feb45a7a020b02849bcc997f185831125fad9964e` |
+| 11 | `theorem` | [power_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveCoordinates.lean/declarations/power-hasderivat.md) | 56 | `result-track:4b65bacc2dacaf444b6a15888a6b8a1750ea105961f49adee78696ae67fa97bf` |
+| 12 | `theorem` | [power_differentiable_parameter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveCoordinates.lean/declarations/power-differentiable-parameter.md) | 63 | `result-track:9542d80ee644b80ad912b2fba1675d3d8e9447965fbf3fac394361e45059fda2` |
+| 13 | `theorem` | [atom_scaling](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveCoordinates.lean/declarations/atom-scaling.md) | 69 | `result-track:0d129bae27335cc7c5b6720e9c0201e39659f6791afabf5bf800d79218a14b25` |
+| 14 | `theorem` | [density_scaling](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveCoordinates.lean/declarations/density-scaling.md) | 88 | `result-track:6f1d832cf819dad2edd59a92bc5b5d87caefa4bfc8f0e23bc878333cefeb1ed3` |
+| 15 | `theorem` | [integral_scaling](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveCoordinates.lean/declarations/integral-scaling.md) | 98 | `result-track:29e51803ae2702419bce18f1ad1e5355cbd317db9c854d9183a4392d6a4236bb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

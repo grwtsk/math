@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/ExpRemainderProbeNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/ExpRemainderProbeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExpRemainderProbeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExpRemainderProbeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exp_negative_remainder](../../../../RealFunctions/ExpRemainderProbeNamespaced.lean/declarations/exp-negative-remainder.md) | 12 | `result-track:fff9710f915312b1461567a697d910454dc82b17530f0f0f4f52e2ae6437131f` |
+| 1 | `theorem` | [exp_negative_remainder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExpRemainderProbeNamespaced.lean/declarations/exp-negative-remainder.md) | 12 | `result-track:fff9710f915312b1461567a697d910454dc82b17530f0f0f4f52e2ae6437131f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

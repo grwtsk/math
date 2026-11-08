@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ActualSource.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ActualSource.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualSource.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualSource.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [logProfile_deriv_eq](../../../../MeasureAndIntegration/ActualSource.lean/declarations/logprofile-deriv-eq.md) | 21 | `result-track:0742a783359a46510ac3c808021c69742bc9d9f640b666728cf49d501065869f` |
-| 2 | `theorem` | [logProfile_deriv_abs_le_density](../../../../MeasureAndIntegration/ActualSource.lean/declarations/logprofile-deriv-abs-le-density.md) | 32 | `result-track:47381845afc32a7b79e1c4adfe287beae758f417800003b6950f7efed32b3cb7` |
-| 3 | `theorem` | [logProfile_deriv_abs_le](../../../../MeasureAndIntegration/ActualSource.lean/declarations/logprofile-deriv-abs-le.md) | 67 | `result-track:c7eeebf479c6d4e45c8d66d0184942e20e0c0a7ad74d648e750ca641e475df34` |
-| 4 | `theorem` | [logProfile_eq_literal](../../../../MeasureAndIntegration/ActualSource.lean/declarations/logprofile-eq-literal.md) | 79 | `result-track:341e1f0edcb854decf9476b7a3199599a586a485a9767a1f0d61d5f98896a54e` |
-| 5 | `theorem` | [logProfile_at_one](../../../../MeasureAndIntegration/ActualSource.lean/declarations/logprofile-at-one.md) | 87 | `result-track:014cd15c83ff5460d5748b420b44c3002624930b877d565581ea09fcccb3f2ea` |
-| 6 | `theorem` | [unit_plainProfile_hasDerivAt](../../../../MeasureAndIntegration/ActualSource.lean/declarations/unit-plainprofile-hasderivat.md) | 91 | `result-track:587dde52d608e1512ea6c7fbbf3aa34d685231c4e1e21d4d5eba998d3d401992` |
-| 7 | `theorem` | [unit_plainProfile_deriv_abs_le](../../../../MeasureAndIntegration/ActualSource.lean/declarations/unit-plainprofile-deriv-abs-le.md) | 101 | `result-track:6aa7a0d799d15e1ac96ff61a52f090e099f5ed437188acf0424a368a3198a63d` |
-| 8 | `theorem` | [actual_derivative_energy_coarse](../../../../MeasureAndIntegration/ActualSource.lean/declarations/actual-derivative-energy-coarse.md) | 121 | `result-track:aff737afe90eec789bf2b29672a367c0000e00249a494bfb926036d187d395d1` |
-| 9 | `theorem` | [plainProfile_scale_identity](../../../../MeasureAndIntegration/ActualSource.lean/declarations/plainprofile-scale-identity.md) | 131 | `result-track:5b6afd13357c263cc66a6f93d144b5b1776de9d1b26f92182f1bb44dbefbc93c` |
-| 10 | `theorem` | [logProfile_hasDerivAt_chain](../../../../MeasureAndIntegration/ActualSource.lean/declarations/logprofile-hasderivat-chain.md) | 141 | `result-track:519a1ecadd8d5c446d780c51b7901312caaff797c69eedbf06de2ab86338c3e3` |
+| 1 | `theorem` | [logProfile_deriv_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualSource.lean/declarations/logprofile-deriv-eq.md) | 21 | `result-track:0742a783359a46510ac3c808021c69742bc9d9f640b666728cf49d501065869f` |
+| 2 | `theorem` | [logProfile_deriv_abs_le_density](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualSource.lean/declarations/logprofile-deriv-abs-le-density.md) | 32 | `result-track:47381845afc32a7b79e1c4adfe287beae758f417800003b6950f7efed32b3cb7` |
+| 3 | `theorem` | [logProfile_deriv_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualSource.lean/declarations/logprofile-deriv-abs-le.md) | 67 | `result-track:c7eeebf479c6d4e45c8d66d0184942e20e0c0a7ad74d648e750ca641e475df34` |
+| 4 | `theorem` | [logProfile_eq_literal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualSource.lean/declarations/logprofile-eq-literal.md) | 79 | `result-track:341e1f0edcb854decf9476b7a3199599a586a485a9767a1f0d61d5f98896a54e` |
+| 5 | `theorem` | [logProfile_at_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualSource.lean/declarations/logprofile-at-one.md) | 87 | `result-track:014cd15c83ff5460d5748b420b44c3002624930b877d565581ea09fcccb3f2ea` |
+| 6 | `theorem` | [unit_plainProfile_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualSource.lean/declarations/unit-plainprofile-hasderivat.md) | 91 | `result-track:587dde52d608e1512ea6c7fbbf3aa34d685231c4e1e21d4d5eba998d3d401992` |
+| 7 | `theorem` | [unit_plainProfile_deriv_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualSource.lean/declarations/unit-plainprofile-deriv-abs-le.md) | 101 | `result-track:6aa7a0d799d15e1ac96ff61a52f090e099f5ed437188acf0424a368a3198a63d` |
+| 8 | `theorem` | [actual_derivative_energy_coarse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualSource.lean/declarations/actual-derivative-energy-coarse.md) | 121 | `result-track:aff737afe90eec789bf2b29672a367c0000e00249a494bfb926036d187d395d1` |
+| 9 | `theorem` | [plainProfile_scale_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualSource.lean/declarations/plainprofile-scale-identity.md) | 131 | `result-track:5b6afd13357c263cc66a6f93d144b5b1776de9d1b26f92182f1bb44dbefbc93c` |
+| 10 | `theorem` | [logProfile_hasDerivAt_chain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualSource.lean/declarations/logprofile-hasderivat-chain.md) | 141 | `result-track:519a1ecadd8d5c446d780c51b7901312caaff797c69eedbf06de2ab86338c3e3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

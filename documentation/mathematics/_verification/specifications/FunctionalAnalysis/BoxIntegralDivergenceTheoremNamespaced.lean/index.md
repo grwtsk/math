@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/BoxIntegralDivergenceTheoremNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/BoxIntegralDivergenceTheoremNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BoxIntegralDivergenceTheoremNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BoxIntegralDivergenceTheoremNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [norm_volume_sub_integral_face_upper_sub_lower_smul_le](../../../../FunctionalAnalysis/BoxIntegralDivergenceTheoremNamespaced.lean/declarations/norm-volume-sub-integral-face-upper-sub-lower-smul-le.md) | 70 | `result-track:44222be314eae61a08ed8a4ac74647b972311e9d9295894b6fca5d33c860f743` |
-| 2 | `theorem` | [hasIntegral_GP_pderiv](../../../../FunctionalAnalysis/BoxIntegralDivergenceTheoremNamespaced.lean/declarations/hasintegral-gp-pderiv.md) | 154 | `result-track:0f71e0a750175e99a1371d0fd14a3613b4c5acc6722197351f45c77ce38fc821` |
-| 3 | `theorem` | [hasIntegral_GP_divergence_of_forall_hasDerivWithinAt](../../../../FunctionalAnalysis/BoxIntegralDivergenceTheoremNamespaced.lean/declarations/hasintegral-gp-divergence-of-forall-hasderivwithinat.md) | 266 | `result-track:452f5418193823030a7c0703ba28f4c403d657945bef9dacb46e2f4df1ec269b` |
+| 1 | `theorem` | [norm_volume_sub_integral_face_upper_sub_lower_smul_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BoxIntegralDivergenceTheoremNamespaced.lean/declarations/norm-volume-sub-integral-face-upper-sub-lower-smul-le.md) | 70 | `result-track:44222be314eae61a08ed8a4ac74647b972311e9d9295894b6fca5d33c860f743` |
+| 2 | `theorem` | [hasIntegral_GP_pderiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BoxIntegralDivergenceTheoremNamespaced.lean/declarations/hasintegral-gp-pderiv.md) | 154 | `result-track:0f71e0a750175e99a1371d0fd14a3613b4c5acc6722197351f45c77ce38fc821` |
+| 3 | `theorem` | [hasIntegral_GP_divergence_of_forall_hasDerivWithinAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BoxIntegralDivergenceTheoremNamespaced.lean/declarations/hasintegral-gp-divergence-of-forall-hasderivwithinat.md) | 266 | `result-track:452f5418193823030a7c0703ba28f4c403d657945bef9dacb46e2f4df1ec269b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SurfacePolygonRadialAdjunctionContinuity.lean/index.md) · [Full source](../../../../GeneralTopology/SurfacePolygonRadialAdjunctionContinuity.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonRadialAdjunctionContinuity.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonRadialAdjunctionContinuity.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialAdjunctionComparison`](../../../../AlgebraicTopology/SurfacePolygonRadialAdjunctionComparison.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialAdjunctionComparison`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonRadialAdjunctionComparison.lean/index.md) — import line 6; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [cornerDiscreteTopology](../../../../GeneralTopology/SurfacePolygonRadialAdjunctionContinuity.lean/declarations/cornerdiscretetopology.md) | 31 | `declaration-track:3e5fc2f21e0a50ff82dc2ccac24a96f63ceb25c8656e1da4a86a93eaa14c704f` |
-| 2 | `theorem` | [cornerProductTopology_eq_bot](../../../../GeneralTopology/SurfacePolygonRadialAdjunctionContinuity.lean/declarations/cornerproducttopology-eq-bot.md) | 34 | `result-track:96dbf3657cc929189b11c85ad34183c78d2fc563e16b9eb10ca75fc059ee6f75` |
-| 3 | `theorem` | [perimeterRadiusSource_continuous](../../../../GeneralTopology/SurfacePolygonRadialAdjunctionContinuity.lean/declarations/perimeterradiussource-continuous.md) | 41 | `result-track:c9e25825329891cc5579511dce1201a2a9a795c13085b822285ae8eee0ce29e7` |
-| 4 | `theorem` | [sourceCone_continuous](../../../../GeneralTopology/SurfacePolygonRadialAdjunctionContinuity.lean/declarations/sourcecone-continuous.md) | 49 | `result-track:05ae76563d7ca034e583202bf2692e80714a91261afe3df7f07a54d4700cda7a` |
-| 5 | `theorem` | [radialSourceToAdjunction_continuous](../../../../GeneralTopology/SurfacePolygonRadialAdjunctionContinuity.lean/declarations/radialsourcetoadjunction-continuous.md) | 64 | `result-track:b05d28bf216c5ec0dd30eab2a69b2489d4344c9793b6b4bbc370e8170a3efe9a` |
-| 6 | `theorem` | [radialFillingToAdjunction_continuous](../../../../GeneralTopology/SurfacePolygonRadialAdjunctionContinuity.lean/declarations/radialfillingtoadjunction-continuous.md) | 78 | `result-track:617103fe8485ed9ba101ef619b9e0b23dd6af44c3b719257d01c0f0ed23f30e2` |
+| 1 | `instance` | [cornerDiscreteTopology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonRadialAdjunctionContinuity.lean/declarations/cornerdiscretetopology.md) | 31 | `declaration-track:3e5fc2f21e0a50ff82dc2ccac24a96f63ceb25c8656e1da4a86a93eaa14c704f` |
+| 2 | `theorem` | [cornerProductTopology_eq_bot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonRadialAdjunctionContinuity.lean/declarations/cornerproducttopology-eq-bot.md) | 34 | `result-track:96dbf3657cc929189b11c85ad34183c78d2fc563e16b9eb10ca75fc059ee6f75` |
+| 3 | `theorem` | [perimeterRadiusSource_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonRadialAdjunctionContinuity.lean/declarations/perimeterradiussource-continuous.md) | 41 | `result-track:c9e25825329891cc5579511dce1201a2a9a795c13085b822285ae8eee0ce29e7` |
+| 4 | `theorem` | [sourceCone_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonRadialAdjunctionContinuity.lean/declarations/sourcecone-continuous.md) | 49 | `result-track:05ae76563d7ca034e583202bf2692e80714a91261afe3df7f07a54d4700cda7a` |
+| 5 | `theorem` | [radialSourceToAdjunction_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonRadialAdjunctionContinuity.lean/declarations/radialsourcetoadjunction-continuous.md) | 64 | `result-track:b05d28bf216c5ec0dd30eab2a69b2489d4344c9793b6b4bbc370e8170a3efe9a` |
+| 6 | `theorem` | [radialFillingToAdjunction_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonRadialAdjunctionContinuity.lean/declarations/radialfillingtoadjunction-continuous.md) | 78 | `result-track:617103fe8485ed9ba101ef619b9e0b23dd6af44c3b719257d01c0f0ed23f30e2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

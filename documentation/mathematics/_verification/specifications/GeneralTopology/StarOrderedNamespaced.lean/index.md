@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/StarOrderedNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/StarOrderedNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StarOrderedNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StarOrderedNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [ContinuousSqrt](../../../../GeneralTopology/StarOrderedNamespaced.lean/declarations/continuoussqrt.md) | 48 | `declaration-track:213f55671e098e1cfeb32486052abf2d86754f7b442ebf5c22a7a29de21f171b` |
-| 2 | `instance` | [(anonymous)](../../../../GeneralTopology/StarOrderedNamespaced.lean/declarations/instance.md) | 59 | `declaration-track:1bd4bbfa4bd3e65ade2de7835a86b1f3bcb6f7075910275e4e899a0511d3bd7c` |
-| 3 | `instance` | [instStarOrderedRing](../../../../GeneralTopology/StarOrderedNamespaced.lean/declarations/inststarorderedring.md) | 81 | `declaration-track:b05934a8e0cd7883a3f3e4d7ef9333be44b62b33fe21d76bd431c65074bf3400` |
+| 1 | `class` | [ContinuousSqrt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StarOrderedNamespaced.lean/declarations/continuoussqrt.md) | 48 | `declaration-track:213f55671e098e1cfeb32486052abf2d86754f7b442ebf5c22a7a29de21f171b` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StarOrderedNamespaced.lean/declarations/instance.md) | 59 | `declaration-track:1bd4bbfa4bd3e65ade2de7835a86b1f3bcb6f7075910275e4e899a0511d3bd7c` |
+| 3 | `instance` | [instStarOrderedRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StarOrderedNamespaced.lean/declarations/inststarorderedring.md) | 81 | `declaration-track:b05934a8e0cd7883a3f3e4d7ef9333be44b62b33fe21d76bd431c65074bf3400` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/MuMuChiNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/MuMuChiNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MuMuChiNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MuMuChiNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [abs_inner_sub_le_chi](../../../../MeasureAndIntegration/MuMuChiNamespaced.lean/declarations/abs-inner-sub-le-chi.md) | 46 | `result-track:6d25e850910daff98a05c79e3c9debdf0eef90e0f73649f415eb894b3de69470` |
-| 2 | `theorem` | [mumu_core_chi](../../../../MeasureAndIntegration/MuMuChiNamespaced.lean/declarations/mumu-core-chi.md) | 158 | `result-track:a040683da74920ba4d9b7d000263721bc129a20114866378b6633412aa2bb210` |
-| 3 | `theorem` | [prop_mumu_chi](../../../../MeasureAndIntegration/MuMuChiNamespaced.lean/declarations/prop-mumu-chi.md) | 221 | `result-track:c1d02317cbe2902c08b3b3cca7f766e0aa74f1bfd18d1e44a4df5cb93f1e96bf` |
+| 1 | `theorem` | [abs_inner_sub_le_chi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MuMuChiNamespaced.lean/declarations/abs-inner-sub-le-chi.md) | 46 | `result-track:6d25e850910daff98a05c79e3c9debdf0eef90e0f73649f415eb894b3de69470` |
+| 2 | `theorem` | [mumu_core_chi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MuMuChiNamespaced.lean/declarations/mumu-core-chi.md) | 158 | `result-track:a040683da74920ba4d9b7d000263721bc129a20114866378b6633412aa2bb210` |
+| 3 | `theorem` | [prop_mumu_chi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MuMuChiNamespaced.lean/declarations/prop-mumu-chi.md) | 221 | `result-track:c1d02317cbe2902c08b3b3cca7f766e0aa74f1bfd18d1e44a4df5cb93f1e96bf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

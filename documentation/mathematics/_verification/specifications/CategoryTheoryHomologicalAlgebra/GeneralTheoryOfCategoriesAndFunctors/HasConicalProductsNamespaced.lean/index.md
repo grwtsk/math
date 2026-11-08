@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HasConicalProductsNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HasConicalProductsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HasConicalProductsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HasConicalProductsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [HasConicalProducts](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HasConicalProductsNamespaced.lean/declarations/hasconicalproducts.md) | 27 | `declaration-track:a523fb05c71a383ae2857cbd6686d91cf8f427a07485faf8bb9581a369db001d` |
-| 2 | `abbrev` | [HasConicalProduct](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HasConicalProductsNamespaced.lean/declarations/hasconicalproduct.md) | 40 | `declaration-track:c9b567cf8a6cb0ac0626e5f930a3e0ba6c5192cf5efeb58e6af631229cef2211` |
-| 3 | `example` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HasConicalProductsNamespaced.lean/declarations/example.md) | 44 | `declaration-track:ab7829639a975a0eaf1683ec41ad3bc85c96c3383c2d18ec141b3c752f703a6e` |
+| 1 | `class` | [HasConicalProducts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HasConicalProductsNamespaced.lean/declarations/hasconicalproducts.md) | 27 | `declaration-track:a523fb05c71a383ae2857cbd6686d91cf8f427a07485faf8bb9581a369db001d` |
+| 2 | `abbrev` | [HasConicalProduct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HasConicalProductsNamespaced.lean/declarations/hasconicalproduct.md) | 40 | `declaration-track:c9b567cf8a6cb0ac0626e5f930a3e0ba6c5192cf5efeb58e6af631229cef2211` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HasConicalProductsNamespaced.lean/declarations/example.md) | 44 | `declaration-track:ab7829639a975a0eaf1683ec41ad3bc85c96c3383c2d18ec141b3c752f703a6e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

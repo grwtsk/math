@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/TreeRefinementEdge.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/TreeRefinementEdge.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TreeRefinementEdge.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TreeRefinementEdge.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RefinementEdge](../../../../../ComputerScience/AlgorithmsInComputerScience/TreeRefinementEdge.lean/declarations/refinementedge.md) | 13 | `declaration-track:08559324e1db8da9e7a95f9a96a7bd6032437981dcd0730a1030efa335c61dc4` |
-| 2 | `structure` | [CompleteBooleanSplit](../../../../../ComputerScience/AlgorithmsInComputerScience/TreeRefinementEdge.lean/declarations/completebooleansplit.md) | 22 | `declaration-track:941c75ee3dcc8b3540272320cff294e7b765105cf19a0cfdd6ca1154c61ac958` |
-| 3 | `def` | [CompleteBooleanSplit.zeroResolution](../../../../../ComputerScience/AlgorithmsInComputerScience/TreeRefinementEdge.lean/declarations/completebooleansplit-zeroresolution.md) | 37 | `declaration-track:6b86d1820e17128487aaabb7fbd9f5b97318083563619f6537aa3583147764e5` |
-| 4 | `def` | [CompleteBooleanSplit.oneResolution](../../../../../ComputerScience/AlgorithmsInComputerScience/TreeRefinementEdge.lean/declarations/completebooleansplit-oneresolution.md) | 46 | `declaration-track:2b72f8bf99eb6eb21cd651f47053749edbefbe37925d934e79dcfef47f38af7c` |
-| 5 | `theorem` | [completeBooleanSplit_children_extend](../../../../../ComputerScience/AlgorithmsInComputerScience/TreeRefinementEdge.lean/declarations/completebooleansplit-children-extend.md) | 55 | `result-track:9fb385c5e02c510da20aae18beb8653b8ffb92a0e6decfcfaf1ded3a79af3642` |
+| 1 | `structure` | [RefinementEdge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TreeRefinementEdge.lean/declarations/refinementedge.md) | 13 | `declaration-track:08559324e1db8da9e7a95f9a96a7bd6032437981dcd0730a1030efa335c61dc4` |
+| 2 | `structure` | [CompleteBooleanSplit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TreeRefinementEdge.lean/declarations/completebooleansplit.md) | 22 | `declaration-track:941c75ee3dcc8b3540272320cff294e7b765105cf19a0cfdd6ca1154c61ac958` |
+| 3 | `def` | [CompleteBooleanSplit.zeroResolution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TreeRefinementEdge.lean/declarations/completebooleansplit-zeroresolution.md) | 37 | `declaration-track:6b86d1820e17128487aaabb7fbd9f5b97318083563619f6537aa3583147764e5` |
+| 4 | `def` | [CompleteBooleanSplit.oneResolution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TreeRefinementEdge.lean/declarations/completebooleansplit-oneresolution.md) | 46 | `declaration-track:2b72f8bf99eb6eb21cd651f47053749edbefbe37925d934e79dcfef47f38af7c` |
+| 5 | `theorem` | [completeBooleanSplit_children_extend](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TreeRefinementEdge.lean/declarations/completebooleansplit-children-extend.md) | 55 | `result-track:9fb385c5e02c510da20aae18beb8653b8ffb92a0e6decfcfaf1ded3a79af3642` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

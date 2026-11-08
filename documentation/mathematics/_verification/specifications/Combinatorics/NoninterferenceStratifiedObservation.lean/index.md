@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/NoninterferenceStratifiedObservation.lean/index.md) · [Full source](../../../../Combinatorics/NoninterferenceStratifiedObservation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NoninterferenceStratifiedObservation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NoninterferenceStratifiedObservation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [StratifiedObservation](../../../../Combinatorics/NoninterferenceStratifiedObservation.lean/declarations/stratifiedobservation.md) | 13 | `declaration-track:c1fe66144e73574d320aba3981802c44f5628df629f85f1d858a4ef078be710d` |
-| 2 | `def` | [StratifiedObservation.authoritativeEffect](../../../../Combinatorics/NoninterferenceStratifiedObservation.lean/declarations/stratifiedobservation-authoritativeeffect.md) | 19 | `declaration-track:b79d76447700ea12b2407a5cca2da3a50a88fe3b45c6aae0dac44f547d582bd7` |
-| 3 | `theorem` | [stratified_observation_nonauthoritative](../../../../Combinatorics/NoninterferenceStratifiedObservation.lean/declarations/stratified-observation-nonauthoritative.md) | 23 | `result-track:a13d22f057f7f439c46c1e5058c5aee06e41ad8f2f5401ec1bde4b4dee1086f6` |
-| 4 | `structure` | [ExternalAdmissionCertificate](../../../../Combinatorics/NoninterferenceStratifiedObservation.lean/declarations/externaladmissioncertificate.md) | 28 | `declaration-track:021354da5d5026d9a983f1d3a94c8062361a2a196df96aad37e5663e5c33efa3` |
-| 5 | `inductive` | [AdmissionResult](../../../../Combinatorics/NoninterferenceStratifiedObservation.lean/declarations/admissionresult.md) | 36 | `declaration-track:efe5a3e163bcc9c6c6680bb52312fe2f79d34112ddedb9f55bf592531a9a7513` |
-| 6 | `theorem` | [accepted_requires_external_certificate](../../../../Combinatorics/NoninterferenceStratifiedObservation.lean/declarations/accepted-requires-external-certificate.md) | 43 | `result-track:2e3a55add9d0923e1f03a27a5f6e5cdc9f466c04b715a3510c2100f31dbba22e` |
+| 1 | `structure` | [StratifiedObservation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NoninterferenceStratifiedObservation.lean/declarations/stratifiedobservation.md) | 13 | `declaration-track:c1fe66144e73574d320aba3981802c44f5628df629f85f1d858a4ef078be710d` |
+| 2 | `def` | [StratifiedObservation.authoritativeEffect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NoninterferenceStratifiedObservation.lean/declarations/stratifiedobservation-authoritativeeffect.md) | 19 | `declaration-track:b79d76447700ea12b2407a5cca2da3a50a88fe3b45c6aae0dac44f547d582bd7` |
+| 3 | `theorem` | [stratified_observation_nonauthoritative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NoninterferenceStratifiedObservation.lean/declarations/stratified-observation-nonauthoritative.md) | 23 | `result-track:a13d22f057f7f439c46c1e5058c5aee06e41ad8f2f5401ec1bde4b4dee1086f6` |
+| 4 | `structure` | [ExternalAdmissionCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NoninterferenceStratifiedObservation.lean/declarations/externaladmissioncertificate.md) | 28 | `declaration-track:021354da5d5026d9a983f1d3a94c8062361a2a196df96aad37e5663e5c33efa3` |
+| 5 | `inductive` | [AdmissionResult](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NoninterferenceStratifiedObservation.lean/declarations/admissionresult.md) | 36 | `declaration-track:efe5a3e163bcc9c6c6680bb52312fe2f79d34112ddedb9f55bf592531a9a7513` |
+| 6 | `theorem` | [accepted_requires_external_certificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NoninterferenceStratifiedObservation.lean/declarations/accepted-requires-external-certificate.md) | 43 | `result-track:2e3a55add9d0923e1f03a27a5f6e5cdc9f466c04b715a3510c2100f31dbba22e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

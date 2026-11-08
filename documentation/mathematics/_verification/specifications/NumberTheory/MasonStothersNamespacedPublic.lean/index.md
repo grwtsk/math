@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/MasonStothersNamespacedPublic.lean/index.md) · [Full source](../../../../NumberTheory/MasonStothersNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MasonStothersNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MasonStothersNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [abc_subcall](../../../../NumberTheory/MasonStothersNamespacedPublic.lean/declarations/abc-subcall.md) | 38 | `result-track:a2644d979b0177eff9773b5450aaaf4ea5cfc8a9f0ecbadffd102ac864f58928` |
-| 2 | `theorem` | [Polynomial.abc](../../../../NumberTheory/MasonStothersNamespacedPublic.lean/declarations/polynomial-abc.md) | 63 | `result-track:71cb968944dc7f3a818c85460e20f1dc3d592356c6aee96816fc7bf903d7cd7f` |
+| 1 | `theorem` | [abc_subcall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MasonStothersNamespacedPublic.lean/declarations/abc-subcall.md) | 38 | `result-track:a2644d979b0177eff9773b5450aaaf4ea5cfc8a9f0ecbadffd102ac864f58928` |
+| 2 | `theorem` | [Polynomial.abc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MasonStothersNamespacedPublic.lean/declarations/polynomial-abc.md) | 63 | `result-track:71cb968944dc7f3a818c85460e20f1dc3d592356c6aee96816fc7bf903d7cd7f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CommandInterface.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CommandInterface.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CommandInterface.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CommandInterface.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Command](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CommandInterface.lean/declarations/command.md) | 40 | `declaration-track:e79d930f6faa4073c9160a855c7f2c5259430d2ec192bc89448b75fc74ae394a` |
-| 2 | `theorem` | [run_agrees_with_partial_map](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CommandInterface.lean/declarations/run-agrees-with-partial-map.md) | 79 | `result-track:da2f1dc2e042376dbea9a3f08d27ec1b650b150520a0d80b2a2e884726437813` |
+| 1 | `structure` | [Command](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CommandInterface.lean/declarations/command.md) | 40 | `declaration-track:e79d930f6faa4073c9160a855c7f2c5259430d2ec192bc89448b75fc74ae394a` |
+| 2 | `theorem` | [run_agrees_with_partial_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CommandInterface.lean/declarations/run-agrees-with-partial-map.md) | 79 | `result-track:da2f1dc2e042376dbea9a3f08d27ec1b650b150520a0d80b2a2e884726437813` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CrossMuPChiNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CrossMuPChiNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CrossMuPChiNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CrossMuPChiNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,8 +60,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [Mform_mu_PXc_eq](../../../../MeasureAndIntegration/CrossMuPChiNamespaced.lean/declarations/mform-mu-pxc-eq.md) | 44 | `result-track:32992736361d410791ffc73c06b2d9729e04ccbac3db847cb762657ad555c132` |
-| 2 | `theorem` | [prop_cross_muP_chi_proved](../../../../MeasureAndIntegration/CrossMuPChiNamespaced.lean/declarations/prop-cross-mup-chi-proved.md) | 84 | `result-track:635482551da47c6b3be3d915d6cc48031a52dc57545fc2ace49057f5b210d080` |
+| 1 | `lemma` | [Mform_mu_PXc_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CrossMuPChiNamespaced.lean/declarations/mform-mu-pxc-eq.md) | 44 | `result-track:32992736361d410791ffc73c06b2d9729e04ccbac3db847cb762657ad555c132` |
+| 2 | `theorem` | [prop_cross_muP_chi_proved](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CrossMuPChiNamespaced.lean/declarations/prop-cross-mup-chi-proved.md) | 84 | `result-track:635482551da47c6b3be3d915d6cc48031a52dc57545fc2ace49057f5b210d080` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

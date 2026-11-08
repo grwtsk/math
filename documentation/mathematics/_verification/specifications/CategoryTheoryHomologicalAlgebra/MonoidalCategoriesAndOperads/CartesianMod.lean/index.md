@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/CartesianMod.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/CartesianMod.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/CartesianMod.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/CartesianMod.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Mod_.trivialAction](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/CartesianMod.lean/declarations/mod-trivialaction.md) | 22 | `declaration-track:429837a185edc6192a75b9b1252cf0ecfd578f8995d07f64601bcf1e80deaf65` |
-| 2 | `def` | [Mod_Class.trivialAction](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/CartesianMod.lean/declarations/mod-class-trivialaction.md) | 27 | `declaration-track:6472018626fa13ed8559be72b859a72ecaf19d0a15dd556e7096bf6d597b664c` |
+| 1 | `def` | [Mod_.trivialAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/CartesianMod.lean/declarations/mod-trivialaction.md) | 22 | `declaration-track:429837a185edc6192a75b9b1252cf0ecfd578f8995d07f64601bcf1e80deaf65` |
+| 2 | `def` | [Mod_Class.trivialAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/CartesianMod.lean/declarations/mod-class-trivialaction.md) | 27 | `declaration-track:6472018626fa13ed8559be72b859a72ecaf19d0a15dd556e7096bf6d597b664c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/ActionField.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/ActionField.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ActionField.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ActionField.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [smul_inv''](../../../../AssociativeRingsAndAlgebras/ActionField.lean/declarations/smul-inv.md) | 19 | `result-track:5e40638d9ad29dbfc84c4630163e3eb0eba8a273652c13fbdc26ceb10e57fbe8` |
+| 1 | `theorem` | [smul_inv''](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ActionField.lean/declarations/smul-inv.md) | 19 | `result-track:5e40638d9ad29dbfc84c4630163e3eb0eba8a273652c13fbdc26ceb10e57fbe8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

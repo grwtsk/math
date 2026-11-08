@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/NewtonBlockAcceptanceControls.lean/index.md) · [Full source](../../../../NumberTheory/NewtonBlockAcceptanceControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NewtonBlockAcceptanceControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NewtonBlockAcceptanceControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.ConcreteNewtonBlockAcceptance`](../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ConcreteNewtonBlockAcceptance.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.ConcreteNewtonBlockAcceptance`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ConcreteNewtonBlockAcceptance.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,18 +57,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [empty_prefix_check](../../../../NumberTheory/NewtonBlockAcceptanceControls.lean/declarations/empty-prefix-check.md) | 18 | `result-track:d30d8623d320969062b9cebe396a81803f953e97fd8fbc7c7b4310998d261d36` |
-| 2 | `theorem` | [no_empty_cover](../../../../NumberTheory/NewtonBlockAcceptanceControls.lean/declarations/no-empty-cover.md) | 23 | `result-track:3ad0f56911add2dd89b46bba520412559fecbf38ae8624aa1847c7250e994467` |
-| 3 | `theorem` | [first_index_in_first_block](../../../../NumberTheory/NewtonBlockAcceptanceControls.lean/declarations/first-index-in-first-block.md) | 29 | `result-track:bde42939cbee44ea6b6da461958c6b0be093f6645666ba72793f45625b56023b` |
-| 4 | `theorem` | [last_index_in_first_block](../../../../NumberTheory/NewtonBlockAcceptanceControls.lean/declarations/last-index-in-first-block.md) | 34 | `result-track:de995cc4d120c46346898b80885aa8335d1fdede51ac6f2507737c22b54b4e4c` |
-| 5 | `theorem` | [next_index_in_next_block](../../../../NumberTheory/NewtonBlockAcceptanceControls.lean/declarations/next-index-in-next-block.md) | 39 | `result-track:eb7546c3b5c9224842d6558338e2a9050d3b4c88345c043220cbd4b02b4d6146` |
-| 6 | `theorem` | [final_index_in_final_block](../../../../NumberTheory/NewtonBlockAcceptanceControls.lean/declarations/final-index-in-final-block.md) | 44 | `result-track:74b1ac3266490cc1a655a4178f4d599b2804288ef1febf88df2a01a2e6572686` |
-| 7 | `theorem` | [terminal_not_prefix](../../../../NumberTheory/NewtonBlockAcceptanceControls.lean/declarations/terminal-not-prefix.md) | 50 | `result-track:1ae39639aff926a51104c38c518144b27495f2e665a73369fb208bd1b5d7f781` |
-| 8 | `theorem` | [distinct_blocks_disjoint](../../../../NumberTheory/NewtonBlockAcceptanceControls.lean/declarations/distinct-blocks-disjoint.md) | 54 | `result-track:caf0a9441ce69e9b6db6b1751658464d8db4c335b68bb807f73fe64c9e4e8126` |
-| 9 | `theorem` | [cancellation_does_not_identify_rows](../../../../NumberTheory/NewtonBlockAcceptanceControls.lean/declarations/cancellation-does-not-identify-rows.md) | 61 | `result-track:8458cf2577838babee49d8d2e546ac6202f778073843bedab016261fdd341706` |
-| 10 | `theorem` | [accepted_shared_row_eq](../../../../NumberTheory/NewtonBlockAcceptanceControls.lean/declarations/accepted-shared-row-eq.md) | 65 | `result-track:0fe29ef0f853535bf6ca57a66c5503de77d44c4d5885d66fc4e4ab7247e34bfc` |
-| 11 | `theorem` | [accepted_shared_error_eq](../../../../NumberTheory/NewtonBlockAcceptanceControls.lean/declarations/accepted-shared-error-eq.md) | 75 | `result-track:81f6ce49a7da8d45e1fbec03edaf974f7aa295ee114a08a7e7a4b720d302e891` |
-| 12 | `theorem` | [repeated_block_not_new_coverage](../../../../NumberTheory/NewtonBlockAcceptanceControls.lean/declarations/repeated-block-not-new-coverage.md) | 83 | `result-track:20b38040af1cfbc164d99ab4552a96977623d2402250c7ad13772a85187d058a` |
+| 1 | `theorem` | [empty_prefix_check](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NewtonBlockAcceptanceControls.lean/declarations/empty-prefix-check.md) | 18 | `result-track:d30d8623d320969062b9cebe396a81803f953e97fd8fbc7c7b4310998d261d36` |
+| 2 | `theorem` | [no_empty_cover](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NewtonBlockAcceptanceControls.lean/declarations/no-empty-cover.md) | 23 | `result-track:3ad0f56911add2dd89b46bba520412559fecbf38ae8624aa1847c7250e994467` |
+| 3 | `theorem` | [first_index_in_first_block](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NewtonBlockAcceptanceControls.lean/declarations/first-index-in-first-block.md) | 29 | `result-track:bde42939cbee44ea6b6da461958c6b0be093f6645666ba72793f45625b56023b` |
+| 4 | `theorem` | [last_index_in_first_block](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NewtonBlockAcceptanceControls.lean/declarations/last-index-in-first-block.md) | 34 | `result-track:de995cc4d120c46346898b80885aa8335d1fdede51ac6f2507737c22b54b4e4c` |
+| 5 | `theorem` | [next_index_in_next_block](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NewtonBlockAcceptanceControls.lean/declarations/next-index-in-next-block.md) | 39 | `result-track:eb7546c3b5c9224842d6558338e2a9050d3b4c88345c043220cbd4b02b4d6146` |
+| 6 | `theorem` | [final_index_in_final_block](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NewtonBlockAcceptanceControls.lean/declarations/final-index-in-final-block.md) | 44 | `result-track:74b1ac3266490cc1a655a4178f4d599b2804288ef1febf88df2a01a2e6572686` |
+| 7 | `theorem` | [terminal_not_prefix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NewtonBlockAcceptanceControls.lean/declarations/terminal-not-prefix.md) | 50 | `result-track:1ae39639aff926a51104c38c518144b27495f2e665a73369fb208bd1b5d7f781` |
+| 8 | `theorem` | [distinct_blocks_disjoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NewtonBlockAcceptanceControls.lean/declarations/distinct-blocks-disjoint.md) | 54 | `result-track:caf0a9441ce69e9b6db6b1751658464d8db4c335b68bb807f73fe64c9e4e8126` |
+| 9 | `theorem` | [cancellation_does_not_identify_rows](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NewtonBlockAcceptanceControls.lean/declarations/cancellation-does-not-identify-rows.md) | 61 | `result-track:8458cf2577838babee49d8d2e546ac6202f778073843bedab016261fdd341706` |
+| 10 | `theorem` | [accepted_shared_row_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NewtonBlockAcceptanceControls.lean/declarations/accepted-shared-row-eq.md) | 65 | `result-track:0fe29ef0f853535bf6ca57a66c5503de77d44c4d5885d66fc4e4ab7247e34bfc` |
+| 11 | `theorem` | [accepted_shared_error_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NewtonBlockAcceptanceControls.lean/declarations/accepted-shared-error-eq.md) | 75 | `result-track:81f6ce49a7da8d45e1fbec03edaf974f7aa295ee114a08a7e7a4b720d302e891` |
+| 12 | `theorem` | [repeated_block_not_new_coverage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NewtonBlockAcceptanceControls.lean/declarations/repeated-block-not-new-coverage.md) | 83 | `result-track:20b38040af1cfbc164d99ab4552a96977623d2402250c7ad13772a85187d058a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

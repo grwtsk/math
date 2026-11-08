@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/Cubic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/Cubic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Cubic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Cubic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [cubic](../../../../CommutativeAlgebra/Cubic.lean/declarations/cubic.md) | 16 | `declaration-track:2e5f9d57aa78deff25af16c439a2350097e2dd64d855466238739798eec8c245` |
-| 2 | `theorem` | [eval_cubic](../../../../CommutativeAlgebra/Cubic.lean/declarations/eval-cubic.md) | 19 | `result-track:ef2320da44758ed392d57db3344f753580562f12cbe9ac7f3ed2cd3d37142f4d` |
+| 1 | `def` | [cubic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Cubic.lean/declarations/cubic.md) | 16 | `declaration-track:2e5f9d57aa78deff25af16c439a2350097e2dd64d855466238739798eec8c245` |
+| 2 | `theorem` | [eval_cubic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Cubic.lean/declarations/eval-cubic.md) | 19 | `result-track:ef2320da44758ed392d57db3344f753580562f12cbe9ac7f3ed2cd3d37142f4d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

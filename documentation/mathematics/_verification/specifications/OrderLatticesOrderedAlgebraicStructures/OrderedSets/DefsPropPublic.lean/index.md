@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/DefsPropPublic.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/DefsPropPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/DefsPropPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/DefsPropPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [Pi.hasLe](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/DefsPropPublic.lean/declarations/pi-hasle.md) | 19 | `declaration-track:a47a9ab9febcf84c3e70691ba1f122b2d2d2af673d7d0d5c6eb734e524d84115` |
-| 2 | `theorem` | [Pi.le_def](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/DefsPropPublic.lean/declarations/pi-le-def.md) | 23 | `result-track:bb42ba6b04c51372acfe2a88a9940148a3bdcbfc4afd02b53a7f1db7cb506bf9` |
-| 3 | `instance` | [Prop.le](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/DefsPropPublic.lean/declarations/prop-le.md) | 28 | `declaration-track:618881e3ea1f1d8d5f805112c55caebef32012b6ae1987a7584af0fd3fa79530` |
-| 4 | `theorem` | [le_Prop_eq](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/DefsPropPublic.lean/declarations/le-prop-eq.md) | 32 | `result-track:379ad1e8270728593f4115d2f143cc670f7620bc1952af4cec52fec08188bf3c` |
+| 1 | `instance` | [Pi.hasLe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/DefsPropPublic.lean/declarations/pi-hasle.md) | 19 | `declaration-track:a47a9ab9febcf84c3e70691ba1f122b2d2d2af673d7d0d5c6eb734e524d84115` |
+| 2 | `theorem` | [Pi.le_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/DefsPropPublic.lean/declarations/pi-le-def.md) | 23 | `result-track:bb42ba6b04c51372acfe2a88a9940148a3bdcbfc4afd02b53a7f1db7cb506bf9` |
+| 3 | `instance` | [Prop.le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/DefsPropPublic.lean/declarations/prop-le.md) | 28 | `declaration-track:618881e3ea1f1d8d5f805112c55caebef32012b6ae1987a7584af0fd3fa79530` |
+| 4 | `theorem` | [le_Prop_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/DefsPropPublic.lean/declarations/le-prop-eq.md) | 32 | `result-track:379ad1e8270728593f4115d2f143cc670f7620bc1952af4cec52fec08188bf3c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

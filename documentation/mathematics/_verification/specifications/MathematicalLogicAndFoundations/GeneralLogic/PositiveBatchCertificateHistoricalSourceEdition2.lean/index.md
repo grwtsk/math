@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PositiveBatchCertificateHistoricalSourceEdition2.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PositiveBatchCertificateHistoricalSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PositiveBatchCertificateHistoricalSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PositiveBatchCertificateHistoricalSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Logic.FiniteSequences.BatchCertificate`](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesBatchCertificate.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Logic.FiniteSequences.BatchCertificate`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesBatchCertificate.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PositiveBatchCertificateHistoricalSourceEdition2.lean/declarations/example-source-edition-2.md) | 10 | `declaration-track:93262badae22e68214939aa6965f6f6e0fcd05947ab0ba6b261329517e271e52` |
-| 2 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PositiveBatchCertificateHistoricalSourceEdition2.lean/declarations/example-source-edition-3.md) | 17 | `declaration-track:d8819529cd9debfa2c7e61cea89fa8b1941d1ce4cbfd8670b227bff1c2dedd1d` |
-| 3 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PositiveBatchCertificateHistoricalSourceEdition2.lean/declarations/example-source-edition-4.md) | 28 | `declaration-track:d965616cbc5ec9fbfe9617466312b51cd718ca224606c18fe45014f3a181a81c` |
-| 4 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PositiveBatchCertificateHistoricalSourceEdition2.lean/declarations/example.md) | 35 | `declaration-track:02e33dae932373bf0013d030ea794568cd97c90a1ffcc606352eab82b4d53e3e` |
-| 5 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PositiveBatchCertificateHistoricalSourceEdition2.lean/declarations/example-source-edition-5.md) | 40 | `declaration-track:f0852340ad5a3cc00f6a982f02ab0a92b656c384262cb50c7cabad5c37eb8b9d` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PositiveBatchCertificateHistoricalSourceEdition2.lean/declarations/example-source-edition-2.md) | 10 | `declaration-track:93262badae22e68214939aa6965f6f6e0fcd05947ab0ba6b261329517e271e52` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PositiveBatchCertificateHistoricalSourceEdition2.lean/declarations/example-source-edition-3.md) | 17 | `declaration-track:d8819529cd9debfa2c7e61cea89fa8b1941d1ce4cbfd8670b227bff1c2dedd1d` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PositiveBatchCertificateHistoricalSourceEdition2.lean/declarations/example-source-edition-4.md) | 28 | `declaration-track:d965616cbc5ec9fbfe9617466312b51cd718ca224606c18fe45014f3a181a81c` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PositiveBatchCertificateHistoricalSourceEdition2.lean/declarations/example.md) | 35 | `declaration-track:02e33dae932373bf0013d030ea794568cd97c90a1ffcc606352eab82b4d53e3e` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PositiveBatchCertificateHistoricalSourceEdition2.lean/declarations/example-source-edition-5.md) | 40 | `declaration-track:f0852340ad5a3cc00f6a982f02ab0a92b656c384262cb50c7cabad5c37eb8b9d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

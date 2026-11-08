@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/Basis.lean/index.md) · [Full source](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/Basis.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/Basis.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/Basis.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [basisSpanSingleton](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/Basis.lean/declarations/basisspansingleton.md) | 22 | `declaration-track:5d8c74ebf01fd6a0b9e0d26e42f77ccc5f33140bbd883a098630a6aed80b054f` |
-| 2 | `theorem` | [basisSpanSingleton_apply](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/Basis.lean/declarations/basisspansingleton-apply.md) | 33 | `result-track:7166745da684a8af46d20aa320629c5637c8ac7ffe481a1a9fb2e507be09f5fc` |
-| 3 | `theorem` | [constr_basisSpanSingleton](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/Basis.lean/declarations/constr-basisspansingleton.md) | 40 | `result-track:93ef81fb18bcf4ba0e6cdc03387020b96a8c857930b40d6b739e32e95f31ae9b` |
-| 4 | `theorem` | [Basis.mem_ideal_iff](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/Basis.lean/declarations/basis-mem-ideal-iff-source-edition-2.md) | 50 | `result-track:e3f09f114d746354b1941d060d5fabc5ff6e92eb6b5c37da6b806bbef1bc1ef3` |
-| 5 | `theorem` | [Basis.mem_ideal_iff'](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/Basis.lean/declarations/basis-mem-ideal-iff.md) | 57 | `result-track:c614e4a2428165d3b4d19d17e925ea4f06f613fe2de422d8461749fb85688863` |
+| 1 | `def` | [basisSpanSingleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/Basis.lean/declarations/basisspansingleton.md) | 22 | `declaration-track:5d8c74ebf01fd6a0b9e0d26e42f77ccc5f33140bbd883a098630a6aed80b054f` |
+| 2 | `theorem` | [basisSpanSingleton_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/Basis.lean/declarations/basisspansingleton-apply.md) | 33 | `result-track:7166745da684a8af46d20aa320629c5637c8ac7ffe481a1a9fb2e507be09f5fc` |
+| 3 | `theorem` | [constr_basisSpanSingleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/Basis.lean/declarations/constr-basisspansingleton.md) | 40 | `result-track:93ef81fb18bcf4ba0e6cdc03387020b96a8c857930b40d6b739e32e95f31ae9b` |
+| 4 | `theorem` | [Basis.mem_ideal_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/Basis.lean/declarations/basis-mem-ideal-iff-source-edition-2.md) | 50 | `result-track:e3f09f114d746354b1941d060d5fabc5ff6e92eb6b5c37da6b806bbef1bc1ef3` |
+| 5 | `theorem` | [Basis.mem_ideal_iff'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/Basis.lean/declarations/basis-mem-ideal-iff.md) | 57 | `result-track:c614e4a2428165d3b4d19d17e925ea4f06f613fe2de422d8461749fb85688863` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

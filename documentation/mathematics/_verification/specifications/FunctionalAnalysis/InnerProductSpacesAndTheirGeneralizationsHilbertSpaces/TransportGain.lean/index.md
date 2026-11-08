@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/TransportGain.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/TransportGain.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/TransportGain.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/TransportGain.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [pathTransportGain](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/TransportGain.lean/declarations/pathtransportgain.md) | 16 | `declaration-track:415e2c46264339a2730580f9509ee894b92d6ac7229984796c608836210fe257` |
-| 2 | `theorem` | [pathTransportGain_nonnegative](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/TransportGain.lean/declarations/pathtransportgain-nonnegative.md) | 33 | `result-track:dcaf62217cfb438d09427c627b6e7516f9bdcfede0aff24863c4db82d821ce1b` |
-| 3 | `theorem` | [packetNorm_path_transport](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/TransportGain.lean/declarations/packetnorm-path-transport.md) | 53 | `result-track:3b0aa21bfc8b25ca1ab6b03fbebbdb357cc5b44a71f7e4fbc8afe172652690ba` |
+| 1 | `def` | [pathTransportGain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/TransportGain.lean/declarations/pathtransportgain.md) | 16 | `declaration-track:415e2c46264339a2730580f9509ee894b92d6ac7229984796c608836210fe257` |
+| 2 | `theorem` | [pathTransportGain_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/TransportGain.lean/declarations/pathtransportgain-nonnegative.md) | 33 | `result-track:dcaf62217cfb438d09427c627b6e7516f9bdcfede0aff24863c4db82d821ce1b` |
+| 3 | `theorem` | [packetNorm_path_transport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/TransportGain.lean/declarations/packetnorm-path-transport.md) | 53 | `result-track:3b0aa21bfc8b25ca1ab6b03fbebbdb357cc5b44a71f7e4fbc8afe172652690ba` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Sifted.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Sifted.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Sifted.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Sifted.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [IsSiftedOrEmpty](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Sifted.lean/declarations/issiftedorempty.md) | 34 | `declaration-track:67e52ff2836fa419afb83b0d59f5360022da7293d07d53ab35764469c507e8c2` |
-| 2 | `class` | [IsSifted](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Sifted.lean/declarations/issifted.md) | 39 | `declaration-track:895dc3d8d4b0dab5f839826a0f9e26898336279eb695fa4bf91bc56724ffcdff` |
-| 3 | `lemma` | [isSifted_of_equiv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Sifted.lean/declarations/issifted-of-equiv.md) | 53 | `result-track:147ffbb0898439593d87593a4b734e038de0abcde922c22deb73c019cb577247` |
-| 4 | `lemma` | [isSifted_iff_asSmallIsSifted](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Sifted.lean/declarations/issifted-iff-assmallissifted.md) | 65 | `result-track:8ffe2ff92e5b08b3ded9e1edd093ca25e6b27c43b7377769f033a6f52ff5e93b` |
-| 5 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Sifted.lean/declarations/instance.md) | 70 | `declaration-track:1228cb987e359977b0e928284825fb6b2d1444ffbc270c08e2045ce41323cb6a` |
-| 6 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Sifted.lean/declarations/instance-source-edition-2.md) | 85 | `declaration-track:d3c8a47cdceb42853938cd53642d2ffe3f76e7944dbc000845f0bf637914b0a2` |
-| 7 | `instance` | [isSifted_of_hasBinaryCoproducts_and_nonempty](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Sifted.lean/declarations/issifted-of-hasbinarycoproducts-and-nonempty.md) | 101 | `declaration-track:af5f82bfd5f8932a813e64dd99d852b8bbccf975afe50cb95e7222d8cf1074ea` |
-| 8 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Sifted.lean/declarations/instance-source-edition-3.md) | 113 | `declaration-track:fd82901c6806c665cb7cd756a62be1146ff6b6ad7e71a59fcfa517ca0c79bcba` |
+| 1 | `abbrev` | [IsSiftedOrEmpty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Sifted.lean/declarations/issiftedorempty.md) | 34 | `declaration-track:67e52ff2836fa419afb83b0d59f5360022da7293d07d53ab35764469c507e8c2` |
+| 2 | `class` | [IsSifted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Sifted.lean/declarations/issifted.md) | 39 | `declaration-track:895dc3d8d4b0dab5f839826a0f9e26898336279eb695fa4bf91bc56724ffcdff` |
+| 3 | `lemma` | [isSifted_of_equiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Sifted.lean/declarations/issifted-of-equiv.md) | 53 | `result-track:147ffbb0898439593d87593a4b734e038de0abcde922c22deb73c019cb577247` |
+| 4 | `lemma` | [isSifted_iff_asSmallIsSifted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Sifted.lean/declarations/issifted-iff-assmallissifted.md) | 65 | `result-track:8ffe2ff92e5b08b3ded9e1edd093ca25e6b27c43b7377769f033a6f52ff5e93b` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Sifted.lean/declarations/instance.md) | 70 | `declaration-track:1228cb987e359977b0e928284825fb6b2d1444ffbc270c08e2045ce41323cb6a` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Sifted.lean/declarations/instance-source-edition-2.md) | 85 | `declaration-track:d3c8a47cdceb42853938cd53642d2ffe3f76e7944dbc000845f0bf637914b0a2` |
+| 7 | `instance` | [isSifted_of_hasBinaryCoproducts_and_nonempty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Sifted.lean/declarations/issifted-of-hasbinarycoproducts-and-nonempty.md) | 101 | `declaration-track:af5f82bfd5f8932a813e64dd99d852b8bbccf975afe50cb95e7222d8cf1074ea` |
+| 8 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Sifted.lean/declarations/instance-source-edition-3.md) | 113 | `declaration-track:fd82901c6806c665cb7cd756a62be1146ff6b6ad7e71a59fcfa517ca0c79bcba` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

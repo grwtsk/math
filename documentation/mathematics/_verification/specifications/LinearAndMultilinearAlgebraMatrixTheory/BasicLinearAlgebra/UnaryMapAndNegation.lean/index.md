@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnaryMapAndNegation.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnaryMapAndNegation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnaryMapAndNegation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnaryMapAndNegation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [map](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnaryMapAndNegation.lean/declarations/map.md) | 29 | `declaration-track:363a06b74bce9d6bdb7eddd373f267a1019e75477e7326111863fa2585c4cfd2` |
-| 2 | `theorem` | [map_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnaryMapAndNegation.lean/declarations/map-apply.md) | 36 | `result-track:89bb11969a5d1d4e1797708ba5d7b1ffe240f3f29f932b2356274092b9f0cc68` |
-| 3 | `def` | [not](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnaryMapAndNegation.lean/declarations/not.md) | 45 | `declaration-track:45aa3f49c0e21e526491db77a15d5018eea23377a7a36cb78ccdf2c185484a5f` |
+| 1 | `def` | [map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnaryMapAndNegation.lean/declarations/map.md) | 29 | `declaration-track:363a06b74bce9d6bdb7eddd373f267a1019e75477e7326111863fa2585c4cfd2` |
+| 2 | `theorem` | [map_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnaryMapAndNegation.lean/declarations/map-apply.md) | 36 | `result-track:89bb11969a5d1d4e1797708ba5d7b1ffe240f3f29f932b2356274092b9f0cc68` |
+| 3 | `def` | [not](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnaryMapAndNegation.lean/declarations/not.md) | 45 | `declaration-track:45aa3f49c0e21e526491db77a15d5018eea23377a7a36cb78ccdf2c185484a5f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

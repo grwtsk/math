@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/TuranDensityPublic.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/TuranDensityPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/TuranDensityPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/TuranDensityPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [antitoneOn_extremalNumber_div_choose_two](../../../../../Combinatorics/GraphTheory/TuranDensityPublic.lean/declarations/antitoneon-extremalnumber-div-choose-two.md) | 47 | `result-track:cea563ae833fb28de121ab30008ad671abc831e5a7dc6a854afc9b60727156f8` |
-| 2 | `def` | [turanDensity](../../../../../Combinatorics/GraphTheory/TuranDensityPublic.lean/declarations/turandensity.md) | 81 | `declaration-track:2a0aee6ce3eb9eb8232d9b5fd00cb004b005bf0aa70905453e0f8c98814451eb` |
-| 3 | `theorem` | [isGLB_turanDensity](../../../../../Combinatorics/GraphTheory/TuranDensityPublic.lean/declarations/isglb-turandensity.md) | 84 | `result-track:f2064c80f8d67418b9a47d3d0aff895a514149ed26f0b973f0d405ef99a85a29` |
-| 4 | `theorem` | [turanDensity_eq_csInf](../../../../../Combinatorics/GraphTheory/TuranDensityPublic.lean/declarations/turandensity-eq-csinf.md) | 96 | `result-track:db1ec0f63a6261470e7433d2ab8236c0948439b07433acf2036f973c6fddc71c` |
-| 5 | `theorem` | [tendsto_turanDensity](../../../../../Combinatorics/GraphTheory/TuranDensityPublic.lean/declarations/tendsto-turandensity.md) | 102 | `result-track:3337ed6b4003427eac18ff3302e4749f2ca9e134fc6448c88f709d05bf57c839` |
-| 6 | `theorem` | [isEquivalent_extremalNumber](../../../../../Combinatorics/GraphTheory/TuranDensityPublic.lean/declarations/isequivalent-extremalnumber.md) | 110 | `result-track:c05985aa1359d511df54da01f5652b9027130d589620ab58637d1de6dce66be2` |
-| 7 | `theorem` | [eventually_isContained_of_card_edgeFinset](../../../../../Combinatorics/GraphTheory/TuranDensityPublic.lean/declarations/eventually-iscontained-of-card-edgefinset.md) | 123 | `result-track:46a8f445d010c84be245a49e99cc643e2ae2410df07f5f982513c5eff7401944` |
-| 8 | `abbrev` | [turanDensityConst](../../../../../Combinatorics/GraphTheory/TuranDensityPublic.lean/declarations/turandensityconst.md) | 153 | `declaration-track:ea7885e73cf3c7c13d6266517e9d53de4817e42d180a67dd2194f1421b6bc1dc` |
-| 9 | `theorem` | [isContained_of_card_edgeFinset](../../../../../Combinatorics/GraphTheory/TuranDensityPublic.lean/declarations/iscontained-of-card-edgefinset.md) | 160 | `result-track:7a4d296725046b3af0def0c0159b81535c18ba50e4d6aa430594ed41731104db` |
+| 1 | `lemma` | [antitoneOn_extremalNumber_div_choose_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/TuranDensityPublic.lean/declarations/antitoneon-extremalnumber-div-choose-two.md) | 47 | `result-track:cea563ae833fb28de121ab30008ad671abc831e5a7dc6a854afc9b60727156f8` |
+| 2 | `def` | [turanDensity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/TuranDensityPublic.lean/declarations/turandensity.md) | 81 | `declaration-track:2a0aee6ce3eb9eb8232d9b5fd00cb004b005bf0aa70905453e0f8c98814451eb` |
+| 3 | `theorem` | [isGLB_turanDensity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/TuranDensityPublic.lean/declarations/isglb-turandensity.md) | 84 | `result-track:f2064c80f8d67418b9a47d3d0aff895a514149ed26f0b973f0d405ef99a85a29` |
+| 4 | `theorem` | [turanDensity_eq_csInf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/TuranDensityPublic.lean/declarations/turandensity-eq-csinf.md) | 96 | `result-track:db1ec0f63a6261470e7433d2ab8236c0948439b07433acf2036f973c6fddc71c` |
+| 5 | `theorem` | [tendsto_turanDensity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/TuranDensityPublic.lean/declarations/tendsto-turandensity.md) | 102 | `result-track:3337ed6b4003427eac18ff3302e4749f2ca9e134fc6448c88f709d05bf57c839` |
+| 6 | `theorem` | [isEquivalent_extremalNumber](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/TuranDensityPublic.lean/declarations/isequivalent-extremalnumber.md) | 110 | `result-track:c05985aa1359d511df54da01f5652b9027130d589620ab58637d1de6dce66be2` |
+| 7 | `theorem` | [eventually_isContained_of_card_edgeFinset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/TuranDensityPublic.lean/declarations/eventually-iscontained-of-card-edgefinset.md) | 123 | `result-track:46a8f445d010c84be245a49e99cc643e2ae2410df07f5f982513c5eff7401944` |
+| 8 | `abbrev` | [turanDensityConst](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/TuranDensityPublic.lean/declarations/turandensityconst.md) | 153 | `declaration-track:ea7885e73cf3c7c13d6266517e9d53de4817e42d180a67dd2194f1421b6bc1dc` |
+| 9 | `theorem` | [isContained_of_card_edgeFinset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/TuranDensityPublic.lean/declarations/iscontained-of-card-edgefinset.md) | 160 | `result-track:7a4d296725046b3af0def0c0159b81535c18ba50e4d6aa430594ed41731104db` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

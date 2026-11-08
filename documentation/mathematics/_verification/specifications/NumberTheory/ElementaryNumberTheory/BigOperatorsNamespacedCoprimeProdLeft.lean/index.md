@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/BigOperatorsNamespacedCoprimeProdLeft.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/BigOperatorsNamespacedCoprimeProdLeft.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/BigOperatorsNamespacedCoprimeProdLeft.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/BigOperatorsNamespacedCoprimeProdLeft.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [coprime_prod_left](../../../../../NumberTheory/ElementaryNumberTheory/BigOperatorsNamespacedCoprimeProdLeft.lean/declarations/coprime-prod-left.md) | 30 | `result-track:fe3b1c5705214b9211615b9ba1542fbf88fd5e27f80ae672771f50a17c2159b9` |
-| 2 | `theorem` | [coprime_prod_right](../../../../../NumberTheory/ElementaryNumberTheory/BigOperatorsNamespacedCoprimeProdLeft.lean/declarations/coprime-prod-right.md) | 36 | `result-track:89a918bb96f0c3a3725fd748fdd9bca98b8aa0ad018bbc743081015e76eeb358` |
+| 1 | `theorem` | [coprime_prod_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/BigOperatorsNamespacedCoprimeProdLeft.lean/declarations/coprime-prod-left.md) | 30 | `result-track:fe3b1c5705214b9211615b9ba1542fbf88fd5e27f80ae672771f50a17c2159b9` |
+| 2 | `theorem` | [coprime_prod_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/BigOperatorsNamespacedCoprimeProdLeft.lean/declarations/coprime-prod-right.md) | 36 | `result-track:89a918bb96f0c3a3725fd748fdd9bca98b8aa0ad018bbc743081015e76eeb358` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

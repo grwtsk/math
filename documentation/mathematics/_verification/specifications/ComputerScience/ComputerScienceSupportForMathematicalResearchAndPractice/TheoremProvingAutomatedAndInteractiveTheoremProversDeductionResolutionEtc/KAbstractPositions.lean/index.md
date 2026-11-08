@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/KAbstractPositions.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/KAbstractPositions.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/KAbstractPositions.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/KAbstractPositions.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,9 +60,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [kabstractPositions](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/KAbstractPositions.lean/declarations/kabstractpositions.md) | 31 | `declaration-track:33de6bcd110f5b3810d3f592fd3fcf0a602482054ce4febd7ee236b4539e609d` |
-| 2 | `def` | [viewKAbstractSubExpr](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/KAbstractPositions.lean/declarations/viewkabstractsubexpr.md) | 69 | `declaration-track:81858ff33d582cdf629b2ea2f6697eeb77bcfb11104e27606bd62f6c25cefb43` |
-| 3 | `def` | [kabstractIsTypeCorrect](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/KAbstractPositions.lean/declarations/kabstractistypecorrect.md) | 87 | `declaration-track:b3c408b96668bb978f8491ff9b3efad74132c8186aed96203d19e6d069455617` |
+| 1 | `def` | [kabstractPositions](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/KAbstractPositions.lean/declarations/kabstractpositions.md) | 31 | `declaration-track:33de6bcd110f5b3810d3f592fd3fcf0a602482054ce4febd7ee236b4539e609d` |
+| 2 | `def` | [viewKAbstractSubExpr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/KAbstractPositions.lean/declarations/viewkabstractsubexpr.md) | 69 | `declaration-track:81858ff33d582cdf629b2ea2f6697eeb77bcfb11104e27606bd62f6c25cefb43` |
+| 3 | `def` | [kabstractIsTypeCorrect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/KAbstractPositions.lean/declarations/kabstractistypecorrect.md) | 87 | `declaration-track:b3c408b96668bb978f8491ff9b3efad74132c8186aed96203d19e6d069455617` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

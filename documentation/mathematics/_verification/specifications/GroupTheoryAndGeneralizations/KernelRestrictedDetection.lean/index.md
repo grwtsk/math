@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/KernelRestrictedDetection.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/KernelRestrictedDetection.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/KernelRestrictedDetection.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/KernelRestrictedDetection.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Logic.InformationLoss.JointLinearIdentifiability`](../../../../GroupTheoryAndGeneralizations/JointLinearIdentifiability.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.Logic.InformationLoss.JointLinearIdentifiability`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/JointLinearIdentifiability.lean/index.md) — import line 6; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [pairedLinear_injective_iff_extra_detects_old_kernel](../../../../GroupTheoryAndGeneralizations/KernelRestrictedDetection.lean/declarations/pairedlinear-injective-iff-extra-detects-old-kernel.md) | 31 | `result-track:162358931adfef44b5a6f77c0aaf0508ff904d4f0265e0bac33c3cf24e8eb861` |
-| 2 | `theorem` | [pairedLinear_injective_of_kernel_restriction](../../../../GroupTheoryAndGeneralizations/KernelRestrictedDetection.lean/declarations/pairedlinear-injective-of-kernel-restriction.md) | 39 | `result-track:6565fba5418ef349c9b5998190a76e427dc337a71b7dd976c10ed5df64322904` |
-| 3 | `theorem` | [readout_recoverable_of_kernel_restriction](../../../../GroupTheoryAndGeneralizations/KernelRestrictedDetection.lean/declarations/readout-recoverable-of-kernel-restriction.md) | 51 | `result-track:7e2a1899aa4e62ab450b5a7b28210c6edcd5dca9c87b267ba3af1d85c9fd727f` |
+| 1 | `theorem` | [pairedLinear_injective_iff_extra_detects_old_kernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/KernelRestrictedDetection.lean/declarations/pairedlinear-injective-iff-extra-detects-old-kernel.md) | 31 | `result-track:162358931adfef44b5a6f77c0aaf0508ff904d4f0265e0bac33c3cf24e8eb861` |
+| 2 | `theorem` | [pairedLinear_injective_of_kernel_restriction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/KernelRestrictedDetection.lean/declarations/pairedlinear-injective-of-kernel-restriction.md) | 39 | `result-track:6565fba5418ef349c9b5998190a76e427dc337a71b7dd976c10ed5df64322904` |
+| 3 | `theorem` | [readout_recoverable_of_kernel_restriction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/KernelRestrictedDetection.lean/declarations/readout-recoverable-of-kernel-restriction.md) | 51 | `result-track:7e2a1899aa4e62ab450b5a7b28210c6edcd5dca9c87b267ba3af1d85c9fd727f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

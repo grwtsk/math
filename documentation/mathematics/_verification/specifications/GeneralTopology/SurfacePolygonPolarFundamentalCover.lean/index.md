@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SurfacePolygonPolarFundamentalCover.lean/index.md) · [Full source](../../../../GeneralTopology/SurfacePolygonPolarFundamentalCover.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonPolarFundamentalCover.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonPolarFundamentalCover.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarCompactDescent`](../../../../GeneralTopology/SurfacePolygonPolarCompactDescent.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarCompactDescent`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonPolarCompactDescent.lean/index.md) — import line 8; pinned internal source present.
 - `Mathlib.Topology.Instances.AddCircle.Defs` — import line 9; external provider; requires a separately pinned dependency.
 - `Mathlib.Topology.Instances.AddCircle.Real` — import line 10; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 11; external provider; requires a separately pinned dependency.
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [unitAddCircle_unitInterval_surjective](../../../../GeneralTopology/SurfacePolygonPolarFundamentalCover.lean/declarations/unitaddcircle-unitinterval-surjective.md) | 40 | `result-track:a1eb822f98ab3e67aed81aff7c1cc1e36594732fcbbb2babe23df247f50cb57b` |
-| 2 | `theorem` | [compactPolarProjection_isQuotientMap](../../../../GeneralTopology/SurfacePolygonPolarFundamentalCover.lean/declarations/compactpolarprojection-isquotientmap.md) | 53 | `result-track:b9366a605715536c7a2eae779cc8c25f39544021c9768084628b81037cb522c7` |
-| 3 | `theorem` | [polarProductProjection_isQuotientMap](../../../../GeneralTopology/SurfacePolygonPolarFundamentalCover.lean/declarations/polarproductprojection-isquotientmap.md) | 63 | `result-track:6918bb069f8b5dab6db9c48ec74ef43025f98122cb3ae6d34f3091a84c022918` |
-| 4 | `theorem` | [unitCircleJointPolar_continuous](../../../../GeneralTopology/SurfacePolygonPolarFundamentalCover.lean/declarations/unitcirclejointpolar-continuous.md) | 73 | `result-track:98db7dc854824ac4835d5e75360ff2a585b40e9dd8150ef346d6aa41398f55f3` |
-| 5 | `theorem` | [unitCircleJointPolar_existsUnique_continuous_source](../../../../GeneralTopology/SurfacePolygonPolarFundamentalCover.lean/declarations/unitcirclejointpolar-existsunique-continuous-source.md) | 83 | `result-track:94f2ca50ce59e964a57db1e920d78d163c806195a5aa16e879c88baa90164620` |
+| 1 | `theorem` | [unitAddCircle_unitInterval_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonPolarFundamentalCover.lean/declarations/unitaddcircle-unitinterval-surjective.md) | 40 | `result-track:a1eb822f98ab3e67aed81aff7c1cc1e36594732fcbbb2babe23df247f50cb57b` |
+| 2 | `theorem` | [compactPolarProjection_isQuotientMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonPolarFundamentalCover.lean/declarations/compactpolarprojection-isquotientmap.md) | 53 | `result-track:b9366a605715536c7a2eae779cc8c25f39544021c9768084628b81037cb522c7` |
+| 3 | `theorem` | [polarProductProjection_isQuotientMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonPolarFundamentalCover.lean/declarations/polarproductprojection-isquotientmap.md) | 63 | `result-track:6918bb069f8b5dab6db9c48ec74ef43025f98122cb3ae6d34f3091a84c022918` |
+| 4 | `theorem` | [unitCircleJointPolar_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonPolarFundamentalCover.lean/declarations/unitcirclejointpolar-continuous.md) | 73 | `result-track:98db7dc854824ac4835d5e75360ff2a585b40e9dd8150ef346d6aa41398f55f3` |
+| 5 | `theorem` | [unitCircleJointPolar_existsUnique_continuous_source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonPolarFundamentalCover.lean/declarations/unitcirclejointpolar-existsunique-continuous-source.md) | 83 | `result-track:94f2ca50ce59e964a57db1e920d78d163c806195a5aa16e879c88baa90164620` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

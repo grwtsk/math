@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/PositivePathOccurrences.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/PositivePathOccurrences.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PositivePathOccurrences.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PositivePathOccurrences.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.PathOccurrences`](../../../../../Combinatorics/GraphTheory/DirectedGraphPathOccurrencesHistoricalSourceEdition2.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.PathOccurrences`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DirectedGraphPathOccurrencesHistoricalSourceEdition2.lean/index.md) — import line 1; pinned internal source present.
 - `Mathlib.Combinatorics.SimpleGraph.Basic` — import line 2; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../Combinatorics/GraphTheory/PositivePathOccurrences.lean/declarations/example-source-edition-7.md) | 9 | `declaration-track:8bc9b6550bab9b2fb79b0ab9798d950d9950a5f61133fae8e0cb4f8773c7b024` |
-| 2 | `example` | [(anonymous)](../../../../../Combinatorics/GraphTheory/PositivePathOccurrences.lean/declarations/example-source-edition-5.md) | 14 | `declaration-track:76b49f010578677c4d0a915a244f0959e4a222c84049f84a0e614a88d6841a99` |
-| 3 | `example` | [(anonymous)](../../../../../Combinatorics/GraphTheory/PositivePathOccurrences.lean/declarations/example-source-edition-8.md) | 21 | `declaration-track:dceb4c77363391359dc6b9d3270f876a111511107e4f12d81ac8f359c00375da` |
-| 4 | `example` | [(anonymous)](../../../../../Combinatorics/GraphTheory/PositivePathOccurrences.lean/declarations/example-source-edition-9.md) | 26 | `declaration-track:e0c7f9f6dba867076dffdbb1e87e83fc395acfcc0acebf2e57438382e2b562c6` |
-| 5 | `example` | [(anonymous)](../../../../../Combinatorics/GraphTheory/PositivePathOccurrences.lean/declarations/example-source-edition-4.md) | 32 | `declaration-track:6eb214dc65c01e44ad6974f98ecf45e1d3c8d579925ca07cc5229f09cf1cffd9` |
-| 6 | `example` | [(anonymous)](../../../../../Combinatorics/GraphTheory/PositivePathOccurrences.lean/declarations/example-source-edition-3.md) | 33 | `declaration-track:4ff2be190f072d488fd0e14baa5395de2befa5d3b6d9d30f339bd85158c7a3af` |
-| 7 | `example` | [(anonymous)](../../../../../Combinatorics/GraphTheory/PositivePathOccurrences.lean/declarations/example-source-edition-6.md) | 36 | `declaration-track:7fc93a55d91beb5a147c5984d29360e1d39837edb8db1bd716da9fe5b49a1caa` |
-| 8 | `example` | [(anonymous)](../../../../../Combinatorics/GraphTheory/PositivePathOccurrences.lean/declarations/example-source-edition-2.md) | 37 | `declaration-track:4939b41bd0d90fcca4e66bef06ed0c5d761cb14f2db57ea92b9a5e3413b6b6d0` |
-| 9 | `example` | [(anonymous)](../../../../../Combinatorics/GraphTheory/PositivePathOccurrences.lean/declarations/example.md) | 40 | `declaration-track:3518d64539967d56086bfa2ba55c362fd02ceebc081598364a895057a584b59d` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PositivePathOccurrences.lean/declarations/example-source-edition-7.md) | 9 | `declaration-track:8bc9b6550bab9b2fb79b0ab9798d950d9950a5f61133fae8e0cb4f8773c7b024` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PositivePathOccurrences.lean/declarations/example-source-edition-5.md) | 14 | `declaration-track:76b49f010578677c4d0a915a244f0959e4a222c84049f84a0e614a88d6841a99` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PositivePathOccurrences.lean/declarations/example-source-edition-8.md) | 21 | `declaration-track:dceb4c77363391359dc6b9d3270f876a111511107e4f12d81ac8f359c00375da` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PositivePathOccurrences.lean/declarations/example-source-edition-9.md) | 26 | `declaration-track:e0c7f9f6dba867076dffdbb1e87e83fc395acfcc0acebf2e57438382e2b562c6` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PositivePathOccurrences.lean/declarations/example-source-edition-4.md) | 32 | `declaration-track:6eb214dc65c01e44ad6974f98ecf45e1d3c8d579925ca07cc5229f09cf1cffd9` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PositivePathOccurrences.lean/declarations/example-source-edition-3.md) | 33 | `declaration-track:4ff2be190f072d488fd0e14baa5395de2befa5d3b6d9d30f339bd85158c7a3af` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PositivePathOccurrences.lean/declarations/example-source-edition-6.md) | 36 | `declaration-track:7fc93a55d91beb5a147c5984d29360e1d39837edb8db1bd716da9fe5b49a1caa` |
+| 8 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PositivePathOccurrences.lean/declarations/example-source-edition-2.md) | 37 | `declaration-track:4939b41bd0d90fcca4e66bef06ed0c5d761cb14f2db57ea92b9a5e3413b6b6d0` |
+| 9 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PositivePathOccurrences.lean/declarations/example.md) | 40 | `declaration-track:3518d64539967d56086bfa2ba55c362fd02ceebc081598364a895057a584b59d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ThetaScaleComparison.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ThetaScaleComparison.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ThetaScaleComparison.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ThetaScaleComparison.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [thetaRemainder_scale_difference_abs_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ThetaScaleComparison.lean/declarations/thetaremainder-scale-difference-abs-le.md) | 12 | `result-track:e212c52c48b34160744adf2d3773f627f0ce8f1b999cdea72d02a1df3bdabb91` |
+| 1 | `theorem` | [thetaRemainder_scale_difference_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ThetaScaleComparison.lean/declarations/thetaremainder-scale-difference-abs-le.md) | 12 | `result-track:e212c52c48b34160744adf2d3773f627f0ce8f1b999cdea72d02a1df3bdabb91` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

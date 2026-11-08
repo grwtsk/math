@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExactMoment.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExactMoment.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExactMoment.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExactMoment.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Data.TypedMoments`](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypedMoments.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Data.TypedMoments`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TypedMoments.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,20 +57,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [ObjectFormat](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExactMoment.lean/declarations/objectformat.md) | 21 | `declaration-track:1ec5c01a6c3354ecf1c520f9012eced44217a046985de69f8b07e50c282b4caf` |
-| 2 | `def` | [ObjectFormat.width](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExactMoment.lean/declarations/objectformat-width.md) | 27 | `declaration-track:d92a28224fba931d252d4d242cf8ea684bd67194041c79925f200fa0e753837a` |
-| 3 | `structure` | [ObjectName](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExactMoment.lean/declarations/objectname.md) | 32 | `declaration-track:a04336add297bf2cb01682f8ebddf6242b93d77c68da5d75ce295f15b48043a0` |
-| 4 | `structure` | [Source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExactMoment.lean/declarations/source.md) | 40 | `declaration-track:16b8f9fb4f9fc3bdd6d01b3b3bb1b763ed831e7b0fafa5752c338ea4dacfa38a` |
-| 5 | `structure` | [Checkin](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExactMoment.lean/declarations/checkin.md) | 49 | `declaration-track:60ac91d8eb8c464edf65988e2cb57f3eb948e1e03b2b9d8a3c13751e451a811b` |
-| 6 | `structure` | [Moment](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExactMoment.lean/declarations/moment.md) | 55 | `declaration-track:c5cddf2ef371690f3b1663ab879863f852702eb3582bd78f6492cbf30f19eb35` |
-| 7 | `theorem` | [Moment.same_source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExactMoment.lean/declarations/moment-same-source.md) | 59 | `result-track:564764f93057825103d0842cb31f3d5490d7f8ad9e59559db23573b2aea7c228` |
-| 8 | `theorem` | [Moment.same_occurrence](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExactMoment.lean/declarations/moment-same-occurrence.md) | 63 | `result-track:99a7dda8b3b82debec9f9605f555ccc60a3a58e9fe825357510ee24a9a9b341b` |
-| 9 | `theorem` | [Moment.ne_of_commit_ne](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExactMoment.lean/declarations/moment-ne-of-commit-ne.md) | 68 | `result-track:c66e17e203aa1dfc5a43d96297d7065b93c897239efa3087f3b1f3006a615e8d` |
-| 10 | `theorem` | [Moment.ne_of_occurrence_ne](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExactMoment.lean/declarations/moment-ne-of-occurrence-ne.md) | 75 | `result-track:a37db5049dced3e6b1c71466c6bda778e3b59d61b12ee3b19abf97c1973856b1` |
-| 11 | `theorem` | [Moment.ne_of_source_ne](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExactMoment.lean/declarations/moment-ne-of-source-ne.md) | 82 | `result-track:3a331d3988350cf20c092482dfd8d25bbfe0373a2b8551672d075306c546bbd3` |
-| 12 | `def` | [recordTyped](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExactMoment.lean/declarations/recordtyped.md) | 88 | `declaration-track:4ac76fb34910755ab6bc285be5e1dd08cfef947d3d666c1c4e660936be069e9d` |
-| 13 | `theorem` | [recordTyped_ne_of_checkin_ne](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExactMoment.lean/declarations/recordtyped-ne-of-checkin-ne.md) | 94 | `result-track:31c59276e51daf44e16278ccf99c915bcafc08e530f547d4653ffd2a663edb1a` |
-| 14 | `theorem` | [value_projection_not_injective](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExactMoment.lean/declarations/value-projection-not-injective.md) | 103 | `result-track:b8dfca26af38b1ce49a761c067ef54ced17589f72ab796c6dcab20e0fba9694e` |
+| 1 | `inductive` | [ObjectFormat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExactMoment.lean/declarations/objectformat.md) | 21 | `declaration-track:1ec5c01a6c3354ecf1c520f9012eced44217a046985de69f8b07e50c282b4caf` |
+| 2 | `def` | [ObjectFormat.width](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExactMoment.lean/declarations/objectformat-width.md) | 27 | `declaration-track:d92a28224fba931d252d4d242cf8ea684bd67194041c79925f200fa0e753837a` |
+| 3 | `structure` | [ObjectName](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExactMoment.lean/declarations/objectname.md) | 32 | `declaration-track:a04336add297bf2cb01682f8ebddf6242b93d77c68da5d75ce295f15b48043a0` |
+| 4 | `structure` | [Source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExactMoment.lean/declarations/source.md) | 40 | `declaration-track:16b8f9fb4f9fc3bdd6d01b3b3bb1b763ed831e7b0fafa5752c338ea4dacfa38a` |
+| 5 | `structure` | [Checkin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExactMoment.lean/declarations/checkin.md) | 49 | `declaration-track:60ac91d8eb8c464edf65988e2cb57f3eb948e1e03b2b9d8a3c13751e451a811b` |
+| 6 | `structure` | [Moment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExactMoment.lean/declarations/moment.md) | 55 | `declaration-track:c5cddf2ef371690f3b1663ab879863f852702eb3582bd78f6492cbf30f19eb35` |
+| 7 | `theorem` | [Moment.same_source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExactMoment.lean/declarations/moment-same-source.md) | 59 | `result-track:564764f93057825103d0842cb31f3d5490d7f8ad9e59559db23573b2aea7c228` |
+| 8 | `theorem` | [Moment.same_occurrence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExactMoment.lean/declarations/moment-same-occurrence.md) | 63 | `result-track:99a7dda8b3b82debec9f9605f555ccc60a3a58e9fe825357510ee24a9a9b341b` |
+| 9 | `theorem` | [Moment.ne_of_commit_ne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExactMoment.lean/declarations/moment-ne-of-commit-ne.md) | 68 | `result-track:c66e17e203aa1dfc5a43d96297d7065b93c897239efa3087f3b1f3006a615e8d` |
+| 10 | `theorem` | [Moment.ne_of_occurrence_ne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExactMoment.lean/declarations/moment-ne-of-occurrence-ne.md) | 75 | `result-track:a37db5049dced3e6b1c71466c6bda778e3b59d61b12ee3b19abf97c1973856b1` |
+| 11 | `theorem` | [Moment.ne_of_source_ne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExactMoment.lean/declarations/moment-ne-of-source-ne.md) | 82 | `result-track:3a331d3988350cf20c092482dfd8d25bbfe0373a2b8551672d075306c546bbd3` |
+| 12 | `def` | [recordTyped](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExactMoment.lean/declarations/recordtyped.md) | 88 | `declaration-track:4ac76fb34910755ab6bc285be5e1dd08cfef947d3d666c1c4e660936be069e9d` |
+| 13 | `theorem` | [recordTyped_ne_of_checkin_ne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExactMoment.lean/declarations/recordtyped-ne-of-checkin-ne.md) | 94 | `result-track:31c59276e51daf44e16278ccf99c915bcafc08e530f547d4653ffd2a663edb1a` |
+| 14 | `theorem` | [value_projection_not_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExactMoment.lean/declarations/value-projection-not-injective.md) | 103 | `result-track:b8dfca26af38b1ce49a761c067ef54ced17589f72ab796c6dcab20e0fba9694e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

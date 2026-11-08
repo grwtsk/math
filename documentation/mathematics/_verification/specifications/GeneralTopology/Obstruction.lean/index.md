@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/Obstruction.lean/index.md) · [Full source](../../../../GeneralTopology/Obstruction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Obstruction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Obstruction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [ObstructionDegree](../../../../GeneralTopology/Obstruction.lean/declarations/obstructiondegree.md) | 13 | `declaration-track:2afed97097f925183530f6db3ffb811f162c83b90aa9d4345085694649c7997b` |
-| 2 | `inductive` | [ObstructionKind](../../../../GeneralTopology/Obstruction.lean/declarations/obstructionkind.md) | 20 | `declaration-track:a4b507cd878917a6285a3496b9b1d9c954a8fbe67da4332ee2a8230ef3434d10` |
-| 3 | `structure` | [CoherenceObstruction](../../../../GeneralTopology/Obstruction.lean/declarations/coherenceobstruction.md) | 35 | `declaration-track:a87838a173aed789ffdaa90bb26115984761dc511927931ccd48a713b0c8f949` |
-| 4 | `def` | [CoherenceObstruction.IsOpen](../../../../GeneralTopology/Obstruction.lean/declarations/coherenceobstruction-isopen.md) | 54 | `declaration-track:b4ece925ca836da4ff6551d51647561d02c738816c851504860f2a451df1c276` |
+| 1 | `inductive` | [ObstructionDegree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Obstruction.lean/declarations/obstructiondegree.md) | 13 | `declaration-track:2afed97097f925183530f6db3ffb811f162c83b90aa9d4345085694649c7997b` |
+| 2 | `inductive` | [ObstructionKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Obstruction.lean/declarations/obstructionkind.md) | 20 | `declaration-track:a4b507cd878917a6285a3496b9b1d9c954a8fbe67da4332ee2a8230ef3434d10` |
+| 3 | `structure` | [CoherenceObstruction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Obstruction.lean/declarations/coherenceobstruction.md) | 35 | `declaration-track:a87838a173aed789ffdaa90bb26115984761dc511927931ccd48a713b0c8f949` |
+| 4 | `def` | [CoherenceObstruction.IsOpen](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Obstruction.lean/declarations/coherenceobstruction-isopen.md) | 54 | `declaration-track:b4ece925ca836da4ff6551d51647561d02c738816c851504860f2a451df1c276` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

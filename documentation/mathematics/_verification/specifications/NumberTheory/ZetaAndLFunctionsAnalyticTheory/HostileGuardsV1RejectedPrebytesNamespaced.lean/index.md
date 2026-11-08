@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HostileGuardsV1RejectedPrebytesNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HostileGuardsV1RejectedPrebytesNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HostileGuardsV1RejectedPrebytesNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HostileGuardsV1RejectedPrebytesNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HostileGuardsV1RejectedPrebytesNamespaced.lean/declarations/example-source-edition-2.md) | 19 | `declaration-track:a50499aa8a49f575f57d260763d1f2baeaa2e5b4045ddd1fb005f5e9a1151564` |
-| 2 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HostileGuardsV1RejectedPrebytesNamespaced.lean/declarations/example.md) | 24 | `declaration-track:576b6cd23a28831be8876f6817d0bd14adc4d82cccf81c25fc3390ae0c065fbb` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HostileGuardsV1RejectedPrebytesNamespaced.lean/declarations/example-source-edition-2.md) | 19 | `declaration-track:a50499aa8a49f575f57d260763d1f2baeaa2e5b4045ddd1fb005f5e9a1151564` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HostileGuardsV1RejectedPrebytesNamespaced.lean/declarations/example.md) | 24 | `declaration-track:576b6cd23a28831be8876f6817d0bd14adc4d82cccf81c25fc3390ae0c065fbb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

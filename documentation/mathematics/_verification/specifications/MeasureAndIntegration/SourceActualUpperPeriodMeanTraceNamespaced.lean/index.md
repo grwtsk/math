@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceActualUpperPeriodMeanTraceNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceActualUpperPeriodMeanTraceNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualUpperPeriodMeanTraceNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualUpperPeriodMeanTraceNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualUpperPeriodMeanTrace](../../../../MeasureAndIntegration/SourceActualUpperPeriodMeanTraceNamespaced.lean/declarations/actualupperperiodmeantrace.md) | 34 | `declaration-track:5c1fc8c9ea3233c9e4f28a42539baca22fbef12d31c865b1f5dfcd6fa45d4b9c` |
-| 2 | `theorem` | [upper_time_orders](../../../../MeasureAndIntegration/SourceActualUpperPeriodMeanTraceNamespaced.lean/declarations/upper-time-orders.md) | 40 | `result-track:01f2899d8f8813497dd04d0dba2ba612e55ae7b9d6934a9b83ff61c79b2899b4` |
-| 3 | `theorem` | [time_factor_intervalIntegrable](../../../../MeasureAndIntegration/SourceActualUpperPeriodMeanTraceNamespaced.lean/declarations/time-factor-intervalintegrable.md) | 65 | `result-track:3af537d877d2430ae7e9bdfa3ed2c7391c152c616ad280424dd2eb8245486ee4` |
-| 4 | `theorem` | [actualUpperPeriodMeanTimeFactor_eq_support](../../../../MeasureAndIntegration/SourceActualUpperPeriodMeanTraceNamespaced.lean/declarations/actualupperperiodmeantimefactor-eq-support.md) | 82 | `result-track:217e0f003e2c5f5f4f7d88a45a762efcb6e55fee7ed9aaa78c5ec3c7c3ef7810` |
-| 5 | `theorem` | [mean_jet_abs_le](../../../../MeasureAndIntegration/SourceActualUpperPeriodMeanTraceNamespaced.lean/declarations/mean-jet-abs-le.md) | 113 | `result-track:e65df14be7eb85f77f1f63c176f5d499675e46c5efaca7eb404298f4782ecc8f` |
-| 6 | `theorem` | [upper_factor_abs_le](../../../../MeasureAndIntegration/SourceActualUpperPeriodMeanTraceNamespaced.lean/declarations/upper-factor-abs-le.md) | 135 | `result-track:c3c3761374bd2db1699e1705554f0d355565d2962e8a4dd513c3b1a75eaf0ecd` |
-| 7 | `theorem` | [actualUpperPeriodMeanTrace_abs_le](../../../../MeasureAndIntegration/SourceActualUpperPeriodMeanTraceNamespaced.lean/declarations/actualupperperiodmeantrace-abs-le.md) | 215 | `result-track:00a874ddd5b3e27539db1c1fdbd5d9db95d997c2cf7d7c8794698ac4fc22aff9` |
-| 8 | `theorem` | [actualUpperPeriodMeanTrace_tendsto_zero](../../../../MeasureAndIntegration/SourceActualUpperPeriodMeanTraceNamespaced.lean/declarations/actualupperperiodmeantrace-tendsto-zero.md) | 277 | `result-track:f7dbd34579c284cedc112bc432db3b66147addb785bb5ec225cc8b173e8d5aad` |
+| 1 | `def` | [actualUpperPeriodMeanTrace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualUpperPeriodMeanTraceNamespaced.lean/declarations/actualupperperiodmeantrace.md) | 34 | `declaration-track:5c1fc8c9ea3233c9e4f28a42539baca22fbef12d31c865b1f5dfcd6fa45d4b9c` |
+| 2 | `theorem` | [upper_time_orders](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualUpperPeriodMeanTraceNamespaced.lean/declarations/upper-time-orders.md) | 40 | `result-track:01f2899d8f8813497dd04d0dba2ba612e55ae7b9d6934a9b83ff61c79b2899b4` |
+| 3 | `theorem` | [time_factor_intervalIntegrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualUpperPeriodMeanTraceNamespaced.lean/declarations/time-factor-intervalintegrable.md) | 65 | `result-track:3af537d877d2430ae7e9bdfa3ed2c7391c152c616ad280424dd2eb8245486ee4` |
+| 4 | `theorem` | [actualUpperPeriodMeanTimeFactor_eq_support](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualUpperPeriodMeanTraceNamespaced.lean/declarations/actualupperperiodmeantimefactor-eq-support.md) | 82 | `result-track:217e0f003e2c5f5f4f7d88a45a762efcb6e55fee7ed9aaa78c5ec3c7c3ef7810` |
+| 5 | `theorem` | [mean_jet_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualUpperPeriodMeanTraceNamespaced.lean/declarations/mean-jet-abs-le.md) | 113 | `result-track:e65df14be7eb85f77f1f63c176f5d499675e46c5efaca7eb404298f4782ecc8f` |
+| 6 | `theorem` | [upper_factor_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualUpperPeriodMeanTraceNamespaced.lean/declarations/upper-factor-abs-le.md) | 135 | `result-track:c3c3761374bd2db1699e1705554f0d355565d2962e8a4dd513c3b1a75eaf0ecd` |
+| 7 | `theorem` | [actualUpperPeriodMeanTrace_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualUpperPeriodMeanTraceNamespaced.lean/declarations/actualupperperiodmeantrace-abs-le.md) | 215 | `result-track:00a874ddd5b3e27539db1c1fdbd5d9db95d997c2cf7d7c8794698ac4fc22aff9` |
+| 8 | `theorem` | [actualUpperPeriodMeanTrace_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualUpperPeriodMeanTraceNamespaced.lean/declarations/actualupperperiodmeantrace-tendsto-zero.md) | 277 | `result-track:f7dbd34579c284cedc112bc432db3b66147addb785bb5ec225cc8b173e8d5aad` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

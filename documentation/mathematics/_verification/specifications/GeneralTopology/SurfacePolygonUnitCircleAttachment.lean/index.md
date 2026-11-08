@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SurfacePolygonUnitCircleAttachment.lean/index.md) · [Full source](../../../../GeneralTopology/SurfacePolygonUnitCircleAttachment.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonUnitCircleAttachment.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonUnitCircleAttachment.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleEquivalence`](../../../../GeneralTopology/SurfacePolygonPerimeterCircleEquivalence.lean/index.md) — import line 9; pinned internal source present.
+- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleEquivalence`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonPerimeterCircleEquivalence.lean/index.md) — import line 9; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,16 +57,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [cornerDiscreteTopology](../../../../GeneralTopology/SurfacePolygonUnitCircleAttachment.lean/declarations/cornerdiscretetopology.md) | 33 | `declaration-track:2aa5c16a7b541f8034b42c1cf7cbac324b93d3b12a0496bb03bceb212e456383` |
-| 2 | `def` | [unitCircleAttachingMap](../../../../GeneralTopology/SurfacePolygonUnitCircleAttachment.lean/declarations/unitcircleattachingmap.md) | 37 | `declaration-track:157371c974d7bf404af641596efc3464667caa5c0bccf3e55eaaf525265f04bd` |
-| 3 | `theorem` | [unitCircleAttachingMap_continuous](../../../../GeneralTopology/SurfacePolygonUnitCircleAttachment.lean/declarations/unitcircleattachingmap-continuous.md) | 42 | `result-track:2db63c0abdc06b31d32ace95eae458d174464a9b1f81dcd5e17017fd56dfbe7b` |
-| 4 | `theorem` | [unitCircleAttachingMap_source](../../../../GeneralTopology/SurfacePolygonUnitCircleAttachment.lean/declarations/unitcircleattachingmap-source.md) | 49 | `result-track:9b714779069eeb9ef0ffe4c9c2e8d6adee1dead7316b149cee74a447502270bf` |
-| 5 | `theorem` | [unitCircleAttachingMap_factorization](../../../../GeneralTopology/SurfacePolygonUnitCircleAttachment.lean/declarations/unitcircleattachingmap-factorization.md) | 59 | `result-track:ecfb85b68d3d7f9006c9ea4d4d64e2a03527484f6ad41e617e58dfbdbc8a086c` |
-| 6 | `theorem` | [unitCircleAttachingMap_surjective](../../../../GeneralTopology/SurfacePolygonUnitCircleAttachment.lean/declarations/unitcircleattachingmap-surjective.md) | 66 | `result-track:78dfc74f666d1b052e304ce8aaf6a3d6d8b643ebe22a94ca49f2ee008373e2d3` |
-| 7 | `theorem` | [unitCircleAttachingMap_pairs_a](../../../../GeneralTopology/SurfacePolygonUnitCircleAttachment.lean/declarations/unitcircleattachingmap-pairs-a.md) | 74 | `result-track:b59963470c3277116b21526243a9622270ebd81553d9fa76e32da76c52a9eb60` |
-| 8 | `theorem` | [unitCircleAttachingMap_pairs_b](../../../../GeneralTopology/SurfacePolygonUnitCircleAttachment.lean/declarations/unitcircleattachingmap-pairs-b.md) | 86 | `result-track:5f4b0c194a6c54c8198342f287c31ce0eb4f0a3777cc6e804e63de7187c23983` |
-| 9 | `theorem` | [unitCircleAttachingMap_not_injective](../../../../GeneralTopology/SurfacePolygonUnitCircleAttachment.lean/declarations/unitcircleattachingmap-not-injective.md) | 99 | `result-track:dc61d8bd827eea6119cdcee0fa529c06f47116c07cac52eeaec8d619544fe90a` |
-| 10 | `theorem` | [unitCircleAttachingMap_kernel](../../../../GeneralTopology/SurfacePolygonUnitCircleAttachment.lean/declarations/unitcircleattachingmap-kernel.md) | 111 | `result-track:871cafa74bfbe847c9f9e7a22fb69f08e577eaa0d362f03e92519db6170b44fd` |
+| 1 | `instance` | [cornerDiscreteTopology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonUnitCircleAttachment.lean/declarations/cornerdiscretetopology.md) | 33 | `declaration-track:2aa5c16a7b541f8034b42c1cf7cbac324b93d3b12a0496bb03bceb212e456383` |
+| 2 | `def` | [unitCircleAttachingMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonUnitCircleAttachment.lean/declarations/unitcircleattachingmap.md) | 37 | `declaration-track:157371c974d7bf404af641596efc3464667caa5c0bccf3e55eaaf525265f04bd` |
+| 3 | `theorem` | [unitCircleAttachingMap_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonUnitCircleAttachment.lean/declarations/unitcircleattachingmap-continuous.md) | 42 | `result-track:2db63c0abdc06b31d32ace95eae458d174464a9b1f81dcd5e17017fd56dfbe7b` |
+| 4 | `theorem` | [unitCircleAttachingMap_source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonUnitCircleAttachment.lean/declarations/unitcircleattachingmap-source.md) | 49 | `result-track:9b714779069eeb9ef0ffe4c9c2e8d6adee1dead7316b149cee74a447502270bf` |
+| 5 | `theorem` | [unitCircleAttachingMap_factorization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonUnitCircleAttachment.lean/declarations/unitcircleattachingmap-factorization.md) | 59 | `result-track:ecfb85b68d3d7f9006c9ea4d4d64e2a03527484f6ad41e617e58dfbdbc8a086c` |
+| 6 | `theorem` | [unitCircleAttachingMap_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonUnitCircleAttachment.lean/declarations/unitcircleattachingmap-surjective.md) | 66 | `result-track:78dfc74f666d1b052e304ce8aaf6a3d6d8b643ebe22a94ca49f2ee008373e2d3` |
+| 7 | `theorem` | [unitCircleAttachingMap_pairs_a](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonUnitCircleAttachment.lean/declarations/unitcircleattachingmap-pairs-a.md) | 74 | `result-track:b59963470c3277116b21526243a9622270ebd81553d9fa76e32da76c52a9eb60` |
+| 8 | `theorem` | [unitCircleAttachingMap_pairs_b](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonUnitCircleAttachment.lean/declarations/unitcircleattachingmap-pairs-b.md) | 86 | `result-track:5f4b0c194a6c54c8198342f287c31ce0eb4f0a3777cc6e804e63de7187c23983` |
+| 9 | `theorem` | [unitCircleAttachingMap_not_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonUnitCircleAttachment.lean/declarations/unitcircleattachingmap-not-injective.md) | 99 | `result-track:dc61d8bd827eea6119cdcee0fa529c06f47116c07cac52eeaec8d619544fe90a` |
+| 10 | `theorem` | [unitCircleAttachingMap_kernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonUnitCircleAttachment.lean/declarations/unitcircleattachingmap-kernel.md) | 111 | `result-track:871cafa74bfbe847c9f9e7a22fb69f08e577eaa0d362f03e92519db6170b44fd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

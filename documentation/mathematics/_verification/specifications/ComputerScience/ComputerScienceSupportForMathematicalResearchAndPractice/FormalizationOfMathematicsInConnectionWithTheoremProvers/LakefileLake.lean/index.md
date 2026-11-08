@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LakefileLake.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LakefileLake.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LakefileLake.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LakefileLake.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [widgetDir](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LakefileLake.lean/declarations/widgetdir.md) | 6 | `declaration-track:ea3b004395f3dc911037f95d6d671a89187f0c2563844e449a945f82e52745d2` |
-| 2 | `def` | [Lake.Package.widgetDir](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LakefileLake.lean/declarations/lake-package-widgetdir.md) | 8 | `declaration-track:2a7d723521481e3b10742b68d5bee50cfa5a88ad87fe095ba952592fb3346bb0` |
-| 3 | `def` | [Lake.Package.runNpmCommand](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LakefileLake.lean/declarations/lake-package-runnpmcommand.md) | 11 | `declaration-track:b8ff5dd21553c6d1efcf66f68635e7eb97669ecc6089637f05316e72d5ceea3b` |
-| 4 | `def` | [widgetJsAllTarget](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LakefileLake.lean/declarations/widgetjsalltarget.md) | 54 | `declaration-track:07f6b367b66dbdb77f6b04c8e42d2c75c4816489a0cc9a34e5fa8d9e01f47a29` |
+| 1 | `def` | [widgetDir](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LakefileLake.lean/declarations/widgetdir.md) | 6 | `declaration-track:ea3b004395f3dc911037f95d6d671a89187f0c2563844e449a945f82e52745d2` |
+| 2 | `def` | [Lake.Package.widgetDir](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LakefileLake.lean/declarations/lake-package-widgetdir.md) | 8 | `declaration-track:2a7d723521481e3b10742b68d5bee50cfa5a88ad87fe095ba952592fb3346bb0` |
+| 3 | `def` | [Lake.Package.runNpmCommand](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LakefileLake.lean/declarations/lake-package-runnpmcommand.md) | 11 | `declaration-track:b8ff5dd21553c6d1efcf66f68635e7eb97669ecc6089637f05316e72d5ceea3b` |
+| 4 | `def` | [widgetJsAllTarget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LakefileLake.lean/declarations/widgetjsalltarget.md) | 54 | `declaration-track:07f6b367b66dbdb77f6b04c8e42d2c75c4816489a0cc9a34e5fa8d9e01f47a29` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

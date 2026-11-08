@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BialgCatMonoidalPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BialgCatMonoidalPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BialgCatMonoidalPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BialgCatMonoidalPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [instMonoidalCategoryStruct](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BialgCatMonoidalPublic.lean/declarations/instmonoidalcategorystruct.md) | 36 | `declaration-track:6f1e630ee580c7b5bf2d66ed2d6054e3ffc7ecfa8e5bf944cea38989b91b07c0` |
-| 2 | `def` | [MonoidalCategory.inducingFunctorData](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BialgCatMonoidalPublic.lean/declarations/monoidalcategory-inducingfunctordata.md) | 50 | `declaration-track:e8f2589af67ea40215c3c97395ca0034e3bd9c6d98db6e4f0511a8ea965b1ddd` |
-| 3 | `instance` | [instMonoidalCategory](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BialgCatMonoidalPublic.lean/declarations/instmonoidalcategory.md) | 62 | `declaration-track:9486070cfd122748b22a495dc1dcf1eeac5c004f17c66d211e1463cff98aea98` |
-| 4 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BialgCatMonoidalPublic.lean/declarations/instance.md) | 66 | `declaration-track:0d45ab0943baae620ece51b2d1947b2b0fbf683e10e6eb30f93dc0bd55e01674` |
-| 5 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BialgCatMonoidalPublic.lean/declarations/instance-source-edition-2.md) | 70 | `declaration-track:a183f0736249810f35f28f7b06d790255dd961816bf64744a56876d84695a332` |
+| 1 | `instance` | [instMonoidalCategoryStruct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BialgCatMonoidalPublic.lean/declarations/instmonoidalcategorystruct.md) | 36 | `declaration-track:6f1e630ee580c7b5bf2d66ed2d6054e3ffc7ecfa8e5bf944cea38989b91b07c0` |
+| 2 | `def` | [MonoidalCategory.inducingFunctorData](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BialgCatMonoidalPublic.lean/declarations/monoidalcategory-inducingfunctordata.md) | 50 | `declaration-track:e8f2589af67ea40215c3c97395ca0034e3bd9c6d98db6e4f0511a8ea965b1ddd` |
+| 3 | `instance` | [instMonoidalCategory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BialgCatMonoidalPublic.lean/declarations/instmonoidalcategory.md) | 62 | `declaration-track:9486070cfd122748b22a495dc1dcf1eeac5c004f17c66d211e1463cff98aea98` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BialgCatMonoidalPublic.lean/declarations/instance.md) | 66 | `declaration-track:0d45ab0943baae620ece51b2d1947b2b0fbf683e10e6eb30f93dc0bd55e01674` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BialgCatMonoidalPublic.lean/declarations/instance-source-edition-2.md) | 70 | `declaration-track:a183f0736249810f35f28f7b06d790255dd961816bf64744a56876d84695a332` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

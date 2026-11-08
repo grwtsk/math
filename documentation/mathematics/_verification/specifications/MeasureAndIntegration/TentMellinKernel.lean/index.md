@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/TentMellinKernel.lean/index.md) · [Full source](../../../../MeasureAndIntegration/TentMellinKernel.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentMellinKernel.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentMellinKernel.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Real.TentWeight`](../../../../RealFunctions/TentWeight.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.IntervalMellinKernel`](../../../../MeasureAndIntegration/IntervalMellinKernel.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Real.TentWeight`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TentWeight.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.IntervalMellinKernel`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntervalMellinKernel.lean/index.md) — import line 5; pinned internal source present.
 - `Mathlib.Tactic.FieldSimp` — import line 6; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -59,15 +59,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [tentKernel](../../../../MeasureAndIntegration/TentMellinKernel.lean/declarations/tentkernel.md) | 34 | `declaration-track:2797452d8feb69adac2336523a8a1b2f7556de3b35b4a635d897c7fdeb78f493` |
-| 2 | `theorem` | [density_add_one](../../../../MeasureAndIntegration/TentMellinKernel.lean/declarations/density-add-one.md) | 38 | `result-track:70a003b692216b4a39511c6c7c776d18ccc73df7722462e2f229377f9e1e4722` |
-| 3 | `theorem` | [logPower_add_one](../../../../MeasureAndIntegration/TentMellinKernel.lean/declarations/logpower-add-one.md) | 46 | `result-track:a99663fbcdbd9086c384ea6ee6542c1ed26a0f230fe9d435b5b3ac6be44efd86` |
-| 4 | `theorem` | [tentKernel_eq_split_integral](../../../../MeasureAndIntegration/TentMellinKernel.lean/declarations/tentkernel-eq-split-integral.md) | 52 | `result-track:100c6d8ae1116d800c16426ea4031cf6cbc7237d07f75ab807fa8365ae3ba325` |
-| 5 | `theorem` | [tentKernel_eq_quotient](../../../../MeasureAndIntegration/TentMellinKernel.lean/declarations/tentkernel-eq-quotient.md) | 108 | `result-track:d10b1742645becece1f3570f5efa564a1108f5f1d2c97e93d3490de03025c3b5` |
-| 6 | `theorem` | [norm_tent_numerator_le](../../../../MeasureAndIntegration/TentMellinKernel.lean/declarations/norm-tent-numerator-le.md) | 128 | `result-track:476a1a972271fc82daa7317b322a98cc40645fc0248197db1f20e80f2f9c91e3` |
-| 7 | `theorem` | [norm_tentKernel_le_inverse_height_sq](../../../../MeasureAndIntegration/TentMellinKernel.lean/declarations/norm-tentkernel-le-inverse-height-sq.md) | 154 | `result-track:be3d0400b0ee9883f37bd3a5d4e2006ff31b40036feedd3f993848583aaee362` |
-| 8 | `theorem` | [tentKernel_one](../../../../MeasureAndIntegration/TentMellinKernel.lean/declarations/tentkernel-one.md) | 185 | `result-track:4bb249011a7f1d15740c1a12abea57bcf04ca77675dd0cfff9e533cde7c7b513` |
-| 9 | `theorem` | [finite_weighted_tail_bound](../../../../MeasureAndIntegration/TentMellinKernel.lean/declarations/finite-weighted-tail-bound.md) | 205 | `result-track:706d4a457fc666ce4bfd33ca566903b173221ecae9f5d34e51492cb4f0859f90` |
+| 1 | `def` | [tentKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentMellinKernel.lean/declarations/tentkernel.md) | 34 | `declaration-track:2797452d8feb69adac2336523a8a1b2f7556de3b35b4a635d897c7fdeb78f493` |
+| 2 | `theorem` | [density_add_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentMellinKernel.lean/declarations/density-add-one.md) | 38 | `result-track:70a003b692216b4a39511c6c7c776d18ccc73df7722462e2f229377f9e1e4722` |
+| 3 | `theorem` | [logPower_add_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentMellinKernel.lean/declarations/logpower-add-one.md) | 46 | `result-track:a99663fbcdbd9086c384ea6ee6542c1ed26a0f230fe9d435b5b3ac6be44efd86` |
+| 4 | `theorem` | [tentKernel_eq_split_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentMellinKernel.lean/declarations/tentkernel-eq-split-integral.md) | 52 | `result-track:100c6d8ae1116d800c16426ea4031cf6cbc7237d07f75ab807fa8365ae3ba325` |
+| 5 | `theorem` | [tentKernel_eq_quotient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentMellinKernel.lean/declarations/tentkernel-eq-quotient.md) | 108 | `result-track:d10b1742645becece1f3570f5efa564a1108f5f1d2c97e93d3490de03025c3b5` |
+| 6 | `theorem` | [norm_tent_numerator_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentMellinKernel.lean/declarations/norm-tent-numerator-le.md) | 128 | `result-track:476a1a972271fc82daa7317b322a98cc40645fc0248197db1f20e80f2f9c91e3` |
+| 7 | `theorem` | [norm_tentKernel_le_inverse_height_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentMellinKernel.lean/declarations/norm-tentkernel-le-inverse-height-sq.md) | 154 | `result-track:be3d0400b0ee9883f37bd3a5d4e2006ff31b40036feedd3f993848583aaee362` |
+| 8 | `theorem` | [tentKernel_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentMellinKernel.lean/declarations/tentkernel-one.md) | 185 | `result-track:4bb249011a7f1d15740c1a12abea57bcf04ca77675dd0cfff9e533cde7c7b513` |
+| 9 | `theorem` | [finite_weighted_tail_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentMellinKernel.lean/declarations/finite-weighted-tail-bound.md) | 205 | `result-track:706d4a457fc666ce4bfd33ca566903b173221ecae9f5d34e51492cb4f0859f90` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

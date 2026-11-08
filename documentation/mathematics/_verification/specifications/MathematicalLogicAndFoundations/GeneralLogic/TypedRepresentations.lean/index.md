@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypedRepresentations.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypedRepresentations.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TypedRepresentations.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TypedRepresentations.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [Rep](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypedRepresentations.lean/declarations/rep.md) | 49 | `declaration-track:0d49fbe259941f5798a74b68b6bd743ad17680b9b244bd97baee8060a519b58a` |
-| 2 | `def` | [Rep.ofRuntime](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypedRepresentations.lean/declarations/rep-ofruntime.md) | 61 | `declaration-track:6f514cb068c633c91bd976b41e708e2e948141c7d1b02a4fb8b86dd33d64c5ce` |
-| 3 | `def` | [Rep.Denote](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypedRepresentations.lean/declarations/rep-denote.md) | 67 | `declaration-track:62b57f9c276d1b62a97ecbcebe2cd527b859abea6047ca693b8a54e2c9082ead` |
+| 1 | `inductive` | [Rep](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TypedRepresentations.lean/declarations/rep.md) | 49 | `declaration-track:0d49fbe259941f5798a74b68b6bd743ad17680b9b244bd97baee8060a519b58a` |
+| 2 | `def` | [Rep.ofRuntime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TypedRepresentations.lean/declarations/rep-ofruntime.md) | 61 | `declaration-track:6f514cb068c633c91bd976b41e708e2e948141c7d1b02a4fb8b86dd33d64c5ce` |
+| 3 | `def` | [Rep.Denote](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TypedRepresentations.lean/declarations/rep-denote.md) | 67 | `declaration-track:62b57f9c276d1b62a97ecbcebe2cd527b859abea6047ca693b8a54e2c9082ead` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

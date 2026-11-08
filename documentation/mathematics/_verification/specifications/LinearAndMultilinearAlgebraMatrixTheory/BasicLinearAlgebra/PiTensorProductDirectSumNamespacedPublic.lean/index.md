@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PiTensorProductDirectSumNamespacedPublic.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PiTensorProductDirectSumNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PiTensorProductDirectSumNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PiTensorProductDirectSumNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ofDirectSumEquiv](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PiTensorProductDirectSumNamespacedPublic.lean/declarations/ofdirectsumequiv.md) | 42 | `declaration-track:6eae7310eda62fe8e3770d08317453f640778bf959bedb58ec74502659897588` |
-| 2 | `theorem` | [ofDirectSumEquiv_tprod_lof](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PiTensorProductDirectSumNamespacedPublic.lean/declarations/ofdirectsumequiv-tprod-lof.md) | 48 | `result-track:60d9276e634b29576c7e4a37fc43bf2a43c66496301b9f53b8fd2f88cf8c57c7` |
-| 3 | `theorem` | [ofDirectSumEquiv_symm_lof_tprod](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PiTensorProductDirectSumNamespacedPublic.lean/declarations/ofdirectsumequiv-symm-lof-tprod.md) | 57 | `result-track:94ac4f6312d4acbacf27d43f333fa57a6bd65ec6704efb9702a90a8fb293cc2a` |
-| 4 | `theorem` | [ofDirectSumEquiv_tprod_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PiTensorProductDirectSumNamespacedPublic.lean/declarations/ofdirectsumequiv-tprod-apply.md) | 66 | `result-track:7570c290b7dff9106d257f5f0cecb824b3bb4ebf57ac7ef19fa2950f15e2b863` |
+| 1 | `def` | [ofDirectSumEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PiTensorProductDirectSumNamespacedPublic.lean/declarations/ofdirectsumequiv.md) | 42 | `declaration-track:6eae7310eda62fe8e3770d08317453f640778bf959bedb58ec74502659897588` |
+| 2 | `theorem` | [ofDirectSumEquiv_tprod_lof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PiTensorProductDirectSumNamespacedPublic.lean/declarations/ofdirectsumequiv-tprod-lof.md) | 48 | `result-track:60d9276e634b29576c7e4a37fc43bf2a43c66496301b9f53b8fd2f88cf8c57c7` |
+| 3 | `theorem` | [ofDirectSumEquiv_symm_lof_tprod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PiTensorProductDirectSumNamespacedPublic.lean/declarations/ofdirectsumequiv-symm-lof-tprod.md) | 57 | `result-track:94ac4f6312d4acbacf27d43f333fa57a6bd65ec6704efb9702a90a8fb293cc2a` |
+| 4 | `theorem` | [ofDirectSumEquiv_tprod_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PiTensorProductDirectSumNamespacedPublic.lean/declarations/ofdirectsumequiv-tprod-apply.md) | 66 | `result-track:7570c290b7dff9106d257f5f0cecb824b3bb4ebf57ac7ef19fa2950f15e2b863` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

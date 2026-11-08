@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/Fold.lean/index.md) · [Full source](../../../../Combinatorics/Fold.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Fold.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Fold.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [ctree_fold_leaf](../../../../Combinatorics/Fold.lean/declarations/ctree-fold-leaf.md) | 19 | `result-track:3ef5432ba909c2d9b63b53b814d3a01200b8fac1b8a331a6695e487e2c0f4f1b` |
-| 2 | `theorem` | [ctree_fold_node](../../../../Combinatorics/Fold.lean/declarations/ctree-fold-node.md) | 23 | `result-track:81349f25c44f635962f21a2ba33366a075b6c21f33510e713c3ea90d47f26b4f` |
-| 3 | `theorem` | [ctree_fold_unique](../../../../Combinatorics/Fold.lean/declarations/ctree-fold-unique.md) | 31 | `result-track:7d2c58eda5088b7046974f81bd5c49cbcbd78a55259d05c95889b52e8903983a` |
+| 1 | `theorem` | [ctree_fold_leaf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Fold.lean/declarations/ctree-fold-leaf.md) | 19 | `result-track:3ef5432ba909c2d9b63b53b814d3a01200b8fac1b8a331a6695e487e2c0f4f1b` |
+| 2 | `theorem` | [ctree_fold_node](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Fold.lean/declarations/ctree-fold-node.md) | 23 | `result-track:81349f25c44f635962f21a2ba33366a075b6c21f33510e713c3ea90d47f26b4f` |
+| 3 | `theorem` | [ctree_fold_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Fold.lean/declarations/ctree-fold-unique.md) | 31 | `result-track:7d2c58eda5088b7046974f81bd5c49cbcbd78a55259d05c95889b52e8903983a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

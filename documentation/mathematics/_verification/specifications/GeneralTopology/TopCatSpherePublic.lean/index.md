@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/TopCatSpherePublic.lean/index.md) · [Full source](../../../../GeneralTopology/TopCatSpherePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopCatSpherePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopCatSpherePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [disk](../../../../GeneralTopology/TopCatSpherePublic.lean/declarations/disk.md) | 28 | `declaration-track:f513064d37e8d4bfd5eae58d7f317a8ab535a2065804add7c832a6cc02c466a7` |
-| 2 | `def` | [diskBoundary](../../../../GeneralTopology/TopCatSpherePublic.lean/declarations/diskboundary.md) | 32 | `declaration-track:0051e4b7b84f7b246c32d142acf7eafaafb1f4f977bc750ddb8789abaa0ea3c1` |
-| 3 | `def` | [sphere](../../../../GeneralTopology/TopCatSpherePublic.lean/declarations/sphere.md) | 37 | `declaration-track:988d0bf6904c176bf44302bcbebf30ba93e9315b452166ead85afaab3b2d104a` |
-| 4 | `def` | [ball](../../../../GeneralTopology/TopCatSpherePublic.lean/declarations/ball.md) | 42 | `declaration-track:abe51242a6036c5e29fe29d2f41d887bcd7ce8b41a31b07bf28216f518435d5c` |
-| 5 | `def` | [diskBoundaryInclusion](../../../../GeneralTopology/TopCatSpherePublic.lean/declarations/diskboundaryinclusion.md) | 58 | `declaration-track:66ef151e0ecc97b131ae123760b63953bf2811368e1a8cd591a0b8c438c94a03` |
-| 6 | `def` | [ballInclusion](../../../../GeneralTopology/TopCatSpherePublic.lean/declarations/ballinclusion.md) | 66 | `declaration-track:ad8d7082a6fcdb7c98281260c461906f528a39363f1ada77d31816df9a563aeb` |
-| 7 | `instance` | [(anonymous)](../../../../GeneralTopology/TopCatSpherePublic.lean/declarations/instance-source-edition-4.md) | 74 | `declaration-track:bd74844c3b9994c7a3a384011978fac1b2fdc579ed3b7f24050401b1d0f79d9a` |
-| 8 | `instance` | [(anonymous)](../../../../GeneralTopology/TopCatSpherePublic.lean/declarations/instance-source-edition-3.md) | 80 | `declaration-track:ae41566cefa084f056970fb128d00726bf482834cd253d157f0ce37b0f6c49ac` |
-| 9 | `instance` | [(anonymous)](../../../../GeneralTopology/TopCatSpherePublic.lean/declarations/instance.md) | 85 | `declaration-track:8662ab387c96351e3df17b6b54f81db34283e228a3398c179936fd2a6719d5b0` |
-| 10 | `instance` | [(anonymous)](../../../../GeneralTopology/TopCatSpherePublic.lean/declarations/instance-source-edition-2.md) | 89 | `declaration-track:a5b9b7b95d0f3e733c51e438f8a15ce1d22cbe82bf4bf02f155e6000ed303fb2` |
+| 1 | `def` | [disk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopCatSpherePublic.lean/declarations/disk.md) | 28 | `declaration-track:f513064d37e8d4bfd5eae58d7f317a8ab535a2065804add7c832a6cc02c466a7` |
+| 2 | `def` | [diskBoundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopCatSpherePublic.lean/declarations/diskboundary.md) | 32 | `declaration-track:0051e4b7b84f7b246c32d142acf7eafaafb1f4f977bc750ddb8789abaa0ea3c1` |
+| 3 | `def` | [sphere](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopCatSpherePublic.lean/declarations/sphere.md) | 37 | `declaration-track:988d0bf6904c176bf44302bcbebf30ba93e9315b452166ead85afaab3b2d104a` |
+| 4 | `def` | [ball](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopCatSpherePublic.lean/declarations/ball.md) | 42 | `declaration-track:abe51242a6036c5e29fe29d2f41d887bcd7ce8b41a31b07bf28216f518435d5c` |
+| 5 | `def` | [diskBoundaryInclusion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopCatSpherePublic.lean/declarations/diskboundaryinclusion.md) | 58 | `declaration-track:66ef151e0ecc97b131ae123760b63953bf2811368e1a8cd591a0b8c438c94a03` |
+| 6 | `def` | [ballInclusion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopCatSpherePublic.lean/declarations/ballinclusion.md) | 66 | `declaration-track:ad8d7082a6fcdb7c98281260c461906f528a39363f1ada77d31816df9a563aeb` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopCatSpherePublic.lean/declarations/instance-source-edition-4.md) | 74 | `declaration-track:bd74844c3b9994c7a3a384011978fac1b2fdc579ed3b7f24050401b1d0f79d9a` |
+| 8 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopCatSpherePublic.lean/declarations/instance-source-edition-3.md) | 80 | `declaration-track:ae41566cefa084f056970fb128d00726bf482834cd253d157f0ce37b0f6c49ac` |
+| 9 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopCatSpherePublic.lean/declarations/instance.md) | 85 | `declaration-track:8662ab387c96351e3df17b6b54f81db34283e228a3398c179936fd2a6719d5b0` |
+| 10 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopCatSpherePublic.lean/declarations/instance-source-edition-2.md) | 89 | `declaration-track:a5b9b7b95d0f3e733c51e438f8a15ce1d22cbe82bf4bf02f155e6000ed303fb2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

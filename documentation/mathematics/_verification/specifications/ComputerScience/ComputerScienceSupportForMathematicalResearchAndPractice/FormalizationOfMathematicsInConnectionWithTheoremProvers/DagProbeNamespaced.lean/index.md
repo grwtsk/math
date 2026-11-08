@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DagProbeNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DagProbeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DagProbeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DagProbeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ExprDag](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DagProbeNamespaced.lean/declarations/exprdag.md) | 11 | `declaration-track:4d7144d1dd5d637f0659c143f68455abffc218fdc06f00a38802c6fb8aace435` |
-| 2 | `def` | [encodeExpr](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DagProbeNamespaced.lean/declarations/encodeexpr.md) | 15 | `declaration-track:a11c5a6b1c03b932eae8d0414d510b8d11914634f0afd370a9f3bab9e8459ecd` |
-| 3 | `def` | [serialize](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DagProbeNamespaced.lean/declarations/serialize.md) | 38 | `declaration-track:1db15646a91954a366836ef0f6ebc45ba698157f8e042b2e3e065f8f9e45d42c` |
+| 1 | `structure` | [ExprDag](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DagProbeNamespaced.lean/declarations/exprdag.md) | 11 | `declaration-track:4d7144d1dd5d637f0659c143f68455abffc218fdc06f00a38802c6fb8aace435` |
+| 2 | `def` | [encodeExpr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DagProbeNamespaced.lean/declarations/encodeexpr.md) | 15 | `declaration-track:a11c5a6b1c03b932eae8d0414d510b8d11914634f0afd370a9f3bab9e8459ecd` |
+| 3 | `def` | [serialize](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DagProbeNamespaced.lean/declarations/serialize.md) | 38 | `declaration-track:1db15646a91954a366836ef0f6ebc45ba698157f8e042b2e3e065f8f9e45d42c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffEightJetBernstein.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffEightJetBernstein.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffEightJetBernstein.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffEightJetBernstein.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripCutoffEightJetData`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffEightJetData.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripSevenHeightBernstein`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSevenHeightBernstein.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripCutoffEightJetData`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffEightJetData.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripSevenHeightBernstein`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSevenHeightBernstein.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [projection](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffEightJetBernstein.lean/declarations/projection.md) | 22 | `declaration-track:a86de65507efae55175300b1b599319c6879601a9b5f7365cf173e2bc2cd3da1` |
-| 2 | `def` | [coefficients](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffEightJetBernstein.lean/declarations/coefficients.md) | 24 | `declaration-track:12e950d88b23799e05a9949978d767b5497e871d4fb6e7ebc533d3b212bbcc7a` |
-| 3 | `lemma` | [tensor_identity](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffEightJetBernstein.lean/declarations/tensor-identity.md) | 39 | `result-track:723243db7c463e54eefcbea844c8d183993792c758cff83f5d097945b833c515` |
-| 4 | `lemma` | [polynomial_projection_lower](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffEightJetBernstein.lean/declarations/polynomial-projection-lower.md) | 48 | `result-track:dcac0dff023c5f1059a5507b7ada3fbf9d64e15a881d6b663d411ebcaf945e5e` |
+| 1 | `def` | [projection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffEightJetBernstein.lean/declarations/projection.md) | 22 | `declaration-track:a86de65507efae55175300b1b599319c6879601a9b5f7365cf173e2bc2cd3da1` |
+| 2 | `def` | [coefficients](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffEightJetBernstein.lean/declarations/coefficients.md) | 24 | `declaration-track:12e950d88b23799e05a9949978d767b5497e871d4fb6e7ebc533d3b212bbcc7a` |
+| 3 | `lemma` | [tensor_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffEightJetBernstein.lean/declarations/tensor-identity.md) | 39 | `result-track:723243db7c463e54eefcbea844c8d183993792c758cff83f5d097945b833c515` |
+| 4 | `lemma` | [polynomial_projection_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffEightJetBernstein.lean/declarations/polynomial-projection-lower.md) | 48 | `result-track:dcac0dff023c5f1059a5507b7ada3fbf9d64e15a881d6b663d411ebcaf945e5e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

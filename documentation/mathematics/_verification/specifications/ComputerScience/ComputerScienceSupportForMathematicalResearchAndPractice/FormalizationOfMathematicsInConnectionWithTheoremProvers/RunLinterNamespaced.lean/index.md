@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RunLinterNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RunLinterNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RunLinterNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RunLinterNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [NoLints](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RunLinterNamespaced.lean/declarations/nolints.md) | 15 | `declaration-track:9d8bccdf93c2f2b3169255f15aad58f5c6a5216d68eea4a06f90bdba4e966969` |
-| 2 | `def` | [readJsonFile](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RunLinterNamespaced.lean/declarations/readjsonfile.md) | 17 | `declaration-track:2ec0cbe43de5668378f5a19ae517d1bc934a4786b359ba61ef7a370da09abc5f` |
-| 3 | `def` | [writeJsonFile](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RunLinterNamespaced.lean/declarations/writejsonfile.md) | 21 | `declaration-track:426d4ae25d6665119b53fc47065f4a35ac18edafb01772e2628147f4ffdc6e0a` |
-| 4 | `def` | [main](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RunLinterNamespaced.lean/declarations/main.md) | 24 | `declaration-track:ed1d538db3396d61e941f272e14196d4bba9186f9bdb6bb60c980c7d1efa73ee` |
+| 1 | `abbrev` | [NoLints](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RunLinterNamespaced.lean/declarations/nolints.md) | 15 | `declaration-track:9d8bccdf93c2f2b3169255f15aad58f5c6a5216d68eea4a06f90bdba4e966969` |
+| 2 | `def` | [readJsonFile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RunLinterNamespaced.lean/declarations/readjsonfile.md) | 17 | `declaration-track:2ec0cbe43de5668378f5a19ae517d1bc934a4786b359ba61ef7a370da09abc5f` |
+| 3 | `def` | [writeJsonFile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RunLinterNamespaced.lean/declarations/writejsonfile.md) | 21 | `declaration-track:426d4ae25d6665119b53fc47065f4a35ac18edafb01772e2628147f4ffdc6e0a` |
+| 4 | `def` | [main](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RunLinterNamespaced.lean/declarations/main.md) | 24 | `declaration-track:ed1d538db3396d61e941f272e14196d4bba9186f9bdb6bb60c980c7d1efa73ee` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

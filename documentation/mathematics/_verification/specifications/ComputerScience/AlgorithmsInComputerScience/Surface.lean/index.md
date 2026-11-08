@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Surface.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Surface.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Surface.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Surface.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -63,11 +63,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [authorityBands](../../../../../ComputerScience/AlgorithmsInComputerScience/Surface.lean/declarations/authoritybands.md) | 20 | `declaration-track:dd5ff27285f44b6458ccee88007d6d950e19945ee34874f36b8cdac5bedc6ed7` |
-| 2 | `theorem` | [authorityBands_count](../../../../../ComputerScience/AlgorithmsInComputerScience/Surface.lean/declarations/authoritybands-count.md) | 28 | `result-track:98cc6a586e60165e5286da518918ffa603161cbce8ac98e94d2fabb1ca020190` |
-| 3 | `def` | [conceptualMapModule](../../../../../ComputerScience/AlgorithmsInComputerScience/Surface.lean/declarations/conceptualmapmodule.md) | 31 | `declaration-track:bfbbae18463f83679e936965535fe7c44bd1d7e18aa175e6973ddfa3d8b103d6` |
-| 4 | `def` | [bandVocabularyModule](../../../../../ComputerScience/AlgorithmsInComputerScience/Surface.lean/declarations/bandvocabularymodule.md) | 33 | `declaration-track:289a3ae609ff4dc8daf16324a93534d1e35bb963943d5c8e5d78d7cf3dbea569` |
-| 5 | `def` | [layoutAlgorithmModule](../../../../../ComputerScience/AlgorithmsInComputerScience/Surface.lean/declarations/layoutalgorithmmodule.md) | 35 | `declaration-track:a596b1b193bd8fd6b37f78548bda834ddf1adf830ae6cc3198b6d7ff9b4a5c69` |
+| 1 | `def` | [authorityBands](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Surface.lean/declarations/authoritybands.md) | 20 | `declaration-track:dd5ff27285f44b6458ccee88007d6d950e19945ee34874f36b8cdac5bedc6ed7` |
+| 2 | `theorem` | [authorityBands_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Surface.lean/declarations/authoritybands-count.md) | 28 | `result-track:98cc6a586e60165e5286da518918ffa603161cbce8ac98e94d2fabb1ca020190` |
+| 3 | `def` | [conceptualMapModule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Surface.lean/declarations/conceptualmapmodule.md) | 31 | `declaration-track:bfbbae18463f83679e936965535fe7c44bd1d7e18aa175e6973ddfa3d8b103d6` |
+| 4 | `def` | [bandVocabularyModule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Surface.lean/declarations/bandvocabularymodule.md) | 33 | `declaration-track:289a3ae609ff4dc8daf16324a93534d1e35bb963943d5c8e5d78d7cf3dbea569` |
+| 5 | `def` | [layoutAlgorithmModule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Surface.lean/declarations/layoutalgorithmmodule.md) | 35 | `declaration-track:a596b1b193bd8fd6b37f78548bda834ddf1adf830ae6cc3198b6d7ff9b4a5c69` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberPortfolioLedger.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberPortfolioLedger.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberPortfolioLedger.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberPortfolioLedger.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.PortFiberTheoremPortfolio`](../../../../../AssociativeRingsAndAlgebras/PortFiberTheoremPortfolio.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.Interfaces.OptionalAdapterComposition`](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OptionalAdapterComposition.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.PortFiberTheoremPortfolio`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/PortFiberTheoremPortfolio.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Interfaces.OptionalAdapterComposition`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OptionalAdapterComposition.lean/index.md) — import line 2; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,19 +58,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [GovernedPortfolio](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberPortfolioLedger.lean/declarations/governedportfolio.md) | 16 | `declaration-track:07b99ff4247fe967dfbbfe223893fa4c897e3c72b2f9d861aa28211a7ffaab3d` |
-| 2 | `def` | [localDisposition](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberPortfolioLedger.lean/declarations/localdisposition.md) | 30 | `declaration-track:0520003247bd0ec800fa36f92c36c5b79fce400c755957467779ad6fbba5e6cb` |
-| 3 | `def` | [targetDisposition](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberPortfolioLedger.lean/declarations/targetdisposition.md) | 36 | `declaration-track:b9613c9703ec277ecde478d824c46ec0180b353a8fa5b1f43f8ddf2a229c8782` |
-| 4 | `theorem` | [ledger_eq_of_not_touches](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberPortfolioLedger.lean/declarations/ledger-eq-of-not-touches.md) | 42 | `result-track:3bfdf70d17a64bea59e0292ef18596979302b0d5d7da00c3ef0be92fc86185a0` |
-| 5 | `theorem` | [ledger_none_of_not_touches](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberPortfolioLedger.lean/declarations/ledger-none-of-not-touches.md) | 49 | `result-track:4c8b0fa773e66b09c9527360946f248512733707a33abe384c9a2ac92c244d01` |
-| 6 | `def` | [retarget](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberPortfolioLedger.lean/declarations/retarget.md) | 57 | `declaration-track:fbebfa6e6041c8680f7d04ca8f6f67e2dc69acd121bc6515637766c26a905b8b` |
-| 7 | `theorem` | [retarget_local](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberPortfolioLedger.lean/declarations/retarget-local.md) | 66 | `result-track:35cc4c95d1121e76909e036d2f10cb1771ce3bafa678a0a5688e7fa6ab794b1f` |
-| 8 | `def` | [updateLocal](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberPortfolioLedger.lean/declarations/updatelocal.md) | 74 | `declaration-track:1001b2eba6f35242fd4ce25e76d1c6be165401481ffefc7bb757c1d5e52c9ce0` |
-| 9 | `theorem` | [updateLocal_target](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberPortfolioLedger.lean/declarations/updatelocal-target.md) | 82 | `result-track:ea06e9ce40c6ba058dfd246cf157b7b27d6f0f04c54af5b0fded30a2ebb1081c` |
-| 10 | `def` | [unresolvedNoPlan](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberPortfolioLedger.lean/declarations/unresolvednoplan.md) | 97 | `declaration-track:008f1f68c562466fc52be47626b1c7e8c0940f764f58a285dbcc881dcfb0555d` |
-| 11 | `theorem` | [unresolvedNoPlan_local](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberPortfolioLedger.lean/declarations/unresolvednoplan-local.md) | 105 | `result-track:b40e0e1946b6792bdc52639666c0d63fdeffc1a126eac8243f8ea0c06841de20` |
-| 12 | `theorem` | [unresolvedNoPlan_ledger](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberPortfolioLedger.lean/declarations/unresolvednoplan-ledger.md) | 112 | `result-track:950e4ecdabdf4d93428aa7ed60ed202e6787f337205c5ccb67bba0d50dd16a3b` |
-| 13 | `theorem` | [hypothetical_refutation_preserves_local](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PortFiberPortfolioLedger.lean/declarations/hypothetical-refutation-preserves-local.md) | 119 | `result-track:9fdd8a2efd7b984803d8bf0dfd21e097d5619b1ea9a3b6bddd11d3732c1d358e` |
+| 1 | `structure` | [GovernedPortfolio](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberPortfolioLedger.lean/declarations/governedportfolio.md) | 16 | `declaration-track:07b99ff4247fe967dfbbfe223893fa4c897e3c72b2f9d861aa28211a7ffaab3d` |
+| 2 | `def` | [localDisposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberPortfolioLedger.lean/declarations/localdisposition.md) | 30 | `declaration-track:0520003247bd0ec800fa36f92c36c5b79fce400c755957467779ad6fbba5e6cb` |
+| 3 | `def` | [targetDisposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberPortfolioLedger.lean/declarations/targetdisposition.md) | 36 | `declaration-track:b9613c9703ec277ecde478d824c46ec0180b353a8fa5b1f43f8ddf2a229c8782` |
+| 4 | `theorem` | [ledger_eq_of_not_touches](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberPortfolioLedger.lean/declarations/ledger-eq-of-not-touches.md) | 42 | `result-track:3bfdf70d17a64bea59e0292ef18596979302b0d5d7da00c3ef0be92fc86185a0` |
+| 5 | `theorem` | [ledger_none_of_not_touches](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberPortfolioLedger.lean/declarations/ledger-none-of-not-touches.md) | 49 | `result-track:4c8b0fa773e66b09c9527360946f248512733707a33abe384c9a2ac92c244d01` |
+| 6 | `def` | [retarget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberPortfolioLedger.lean/declarations/retarget.md) | 57 | `declaration-track:fbebfa6e6041c8680f7d04ca8f6f67e2dc69acd121bc6515637766c26a905b8b` |
+| 7 | `theorem` | [retarget_local](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberPortfolioLedger.lean/declarations/retarget-local.md) | 66 | `result-track:35cc4c95d1121e76909e036d2f10cb1771ce3bafa678a0a5688e7fa6ab794b1f` |
+| 8 | `def` | [updateLocal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberPortfolioLedger.lean/declarations/updatelocal.md) | 74 | `declaration-track:1001b2eba6f35242fd4ce25e76d1c6be165401481ffefc7bb757c1d5e52c9ce0` |
+| 9 | `theorem` | [updateLocal_target](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberPortfolioLedger.lean/declarations/updatelocal-target.md) | 82 | `result-track:ea06e9ce40c6ba058dfd246cf157b7b27d6f0f04c54af5b0fded30a2ebb1081c` |
+| 10 | `def` | [unresolvedNoPlan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberPortfolioLedger.lean/declarations/unresolvednoplan.md) | 97 | `declaration-track:008f1f68c562466fc52be47626b1c7e8c0940f764f58a285dbcc881dcfb0555d` |
+| 11 | `theorem` | [unresolvedNoPlan_local](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberPortfolioLedger.lean/declarations/unresolvednoplan-local.md) | 105 | `result-track:b40e0e1946b6792bdc52639666c0d63fdeffc1a126eac8243f8ea0c06841de20` |
+| 12 | `theorem` | [unresolvedNoPlan_ledger](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberPortfolioLedger.lean/declarations/unresolvednoplan-ledger.md) | 112 | `result-track:950e4ecdabdf4d93428aa7ed60ed202e6787f337205c5ccb67bba0d50dd16a3b` |
+| 13 | `theorem` | [hypothetical_refutation_preserves_local](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PortFiberPortfolioLedger.lean/declarations/hypothetical-refutation-preserves-local.md) | 119 | `result-track:9fdd8a2efd7b984803d8bf0dfd21e097d5619b1ea9a3b6bddd11d3732c1d358e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

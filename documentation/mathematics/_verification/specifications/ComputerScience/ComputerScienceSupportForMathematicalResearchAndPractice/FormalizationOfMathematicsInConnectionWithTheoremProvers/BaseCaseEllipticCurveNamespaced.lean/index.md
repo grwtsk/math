@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BaseCaseEllipticCurveNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BaseCaseEllipticCurveNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BaseCaseEllipticCurveNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BaseCaseEllipticCurveNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CertifiedBaseCaseEllipticCurve](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BaseCaseEllipticCurveNamespaced.lean/declarations/certifiedbasecaseellipticcurve.md) | 34 | `declaration-track:0ffee93dcbe73a4aff263ced353986ba9b80bc8c92dc71ca90991c7ffc28be4b` |
-| 2 | `theorem` | [certified_base_curve_lvalue_nonzero](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BaseCaseEllipticCurveNamespaced.lean/declarations/certified-base-curve-lvalue-nonzero.md) | 47 | `result-track:f129eec40b6bc060921e6b9493dcb1d4d953a2c125477c894faf3c2326e9bb84` |
-| 3 | `theorem` | [certified_base_curve_center_normalized](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BaseCaseEllipticCurveNamespaced.lean/declarations/certified-base-curve-center-normalized.md) | 52 | `result-track:66ac7b73d22531354b3842cf8bec771c0a886efb1666ab4cc7670d2929406ad0` |
+| 1 | `structure` | [CertifiedBaseCaseEllipticCurve](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BaseCaseEllipticCurveNamespaced.lean/declarations/certifiedbasecaseellipticcurve.md) | 34 | `declaration-track:0ffee93dcbe73a4aff263ced353986ba9b80bc8c92dc71ca90991c7ffc28be4b` |
+| 2 | `theorem` | [certified_base_curve_lvalue_nonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BaseCaseEllipticCurveNamespaced.lean/declarations/certified-base-curve-lvalue-nonzero.md) | 47 | `result-track:f129eec40b6bc060921e6b9493dcb1d4d953a2c125477c894faf3c2326e9bb84` |
+| 3 | `theorem` | [certified_base_curve_center_normalized](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BaseCaseEllipticCurveNamespaced.lean/declarations/certified-base-curve-center-normalized.md) | 52 | `result-track:66ac7b73d22531354b3842cf8bec771c0a886efb1666ab4cc7670d2929406ad0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

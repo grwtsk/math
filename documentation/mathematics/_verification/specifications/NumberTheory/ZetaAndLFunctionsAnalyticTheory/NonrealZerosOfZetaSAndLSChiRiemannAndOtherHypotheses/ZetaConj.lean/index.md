@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZetaConj.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZetaConj.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZetaConj.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZetaConj.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [deriv_conj_conj'](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZetaConj.lean/declarations/deriv-conj-conj.md) | 20 | `result-track:d319c1fac2abfbb870c2c38859da936c78d0562038a3b137a90a5527d52d25cc` |
-| 2 | `theorem` | [deriv_riemannZeta_conj](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZetaConj.lean/declarations/deriv-riemannzeta-conj.md) | 26 | `result-track:cdf2cad96bc07a4ac6af966c5333691760a31d7468be480e96d44ab0a7065345` |
-| 3 | `theorem` | [logDerivZeta_conj](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZetaConj.lean/declarations/logderivzeta-conj.md) | 30 | `result-track:6c795213c12dbaeb9f7d8b469f7f18dc2a4c4ecdb0daef64adc0a5af87728c21` |
-| 4 | `theorem` | [logDerivZeta_conj'](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZetaConj.lean/declarations/logderivzeta-conj-source-edition-2.md) | 34 | `result-track:8360b52d873e32c3cc09af2e51fb3a7b11823ebb6b6de4d696a6bb4234a11cad` |
-| 5 | `theorem` | [intervalIntegral_conj](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZetaConj.lean/declarations/intervalintegral-conj.md) | 38 | `result-track:9dd3f4d42f9cba57f88eb9c6818cf26f9d567b57da69cef73bee5d0896cb34ab` |
+| 1 | `theorem` | [deriv_conj_conj'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZetaConj.lean/declarations/deriv-conj-conj.md) | 20 | `result-track:d319c1fac2abfbb870c2c38859da936c78d0562038a3b137a90a5527d52d25cc` |
+| 2 | `theorem` | [deriv_riemannZeta_conj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZetaConj.lean/declarations/deriv-riemannzeta-conj.md) | 26 | `result-track:cdf2cad96bc07a4ac6af966c5333691760a31d7468be480e96d44ab0a7065345` |
+| 3 | `theorem` | [logDerivZeta_conj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZetaConj.lean/declarations/logderivzeta-conj.md) | 30 | `result-track:6c795213c12dbaeb9f7d8b469f7f18dc2a4c4ecdb0daef64adc0a5af87728c21` |
+| 4 | `theorem` | [logDerivZeta_conj'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZetaConj.lean/declarations/logderivzeta-conj-source-edition-2.md) | 34 | `result-track:8360b52d873e32c3cc09af2e51fb3a7b11823ebb6b6de4d696a6bb4234a11cad` |
+| 5 | `theorem` | [intervalIntegral_conj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZetaConj.lean/declarations/intervalintegral-conj.md) | 38 | `result-track:9dd3f4d42f9cba57f88eb9c6818cf26f9d567b57da69cef73bee5d0896cb34ab` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

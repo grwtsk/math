@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderRingNatNamespaced.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderRingNatNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderRingNatNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderRingNatNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,9 +61,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [instIsStrictOrderedRing](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderRingNatNamespaced.lean/declarations/instisstrictorderedring.md) | 32 | `declaration-track:139861898afaa25e8985ff91c4711cac7c25e35f4ef6b84f1557ee75584aa0a4` |
-| 2 | `instance` | [instLinearOrderedCommMonoidWithZero](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderRingNatNamespaced.lean/declarations/instlinearorderedcommmonoidwithzero.md) | 40 | `declaration-track:f48383598184a6aea4071d9c4a83cd85a39c97bb2ac67847ffb0c5dacfee8750` |
-| 3 | `lemma` | [isCompl_even_odd](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderRingNatNamespaced.lean/declarations/iscompl-even-odd.md) | 48 | `result-track:624bfeed62d059adc24f606f1e2d78c94da70dfa87ef6089cf9839d45333e46c` |
+| 1 | `instance` | [instIsStrictOrderedRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderRingNatNamespaced.lean/declarations/instisstrictorderedring.md) | 32 | `declaration-track:139861898afaa25e8985ff91c4711cac7c25e35f4ef6b84f1557ee75584aa0a4` |
+| 2 | `instance` | [instLinearOrderedCommMonoidWithZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderRingNatNamespaced.lean/declarations/instlinearorderedcommmonoidwithzero.md) | 40 | `declaration-track:f48383598184a6aea4071d9c4a83cd85a39c97bb2ac67847ffb0c5dacfee8750` |
+| 3 | `lemma` | [isCompl_even_odd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderRingNatNamespaced.lean/declarations/iscompl-even-odd.md) | 48 | `result-track:624bfeed62d059adc24f606f1e2d78c94da70dfa87ef6089cf9839d45333e46c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

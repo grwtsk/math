@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RestrictionNaturality.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RestrictionNaturality.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RestrictionNaturality.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RestrictionNaturality.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [content_byteLength_natural](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RestrictionNaturality.lean/declarations/content-bytelength-natural.md) | 26 | `result-track:1b0eb6a4f08d62dfb31897c5766fee8f678e9f15ee4c90d19551fbca65ebb419` |
-| 2 | `theorem` | [diagnostic_severity_natural](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RestrictionNaturality.lean/declarations/diagnostic-severity-natural.md) | 35 | `result-track:66c2239856232c88a37ae31b0b34c71c3417e4da9b563798a7cf9e91bcbfb72f` |
-| 3 | `theorem` | [file_path_natural](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RestrictionNaturality.lean/declarations/file-path-natural.md) | 44 | `result-track:51d2882c555560d97adea31002103216454e07e0cdf2ea3f6009db55bf434b65` |
+| 1 | `theorem` | [content_byteLength_natural](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RestrictionNaturality.lean/declarations/content-bytelength-natural.md) | 26 | `result-track:1b0eb6a4f08d62dfb31897c5766fee8f678e9f15ee4c90d19551fbca65ebb419` |
+| 2 | `theorem` | [diagnostic_severity_natural](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RestrictionNaturality.lean/declarations/diagnostic-severity-natural.md) | 35 | `result-track:66c2239856232c88a37ae31b0b34c71c3417e4da9b563798a7cf9e91bcbfb72f` |
+| 3 | `theorem` | [file_path_natural](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RestrictionNaturality.lean/declarations/file-path-natural.md) | 44 | `result-track:51d2882c555560d97adea31002103216454e07e0cdf2ea3f6009db55bf434b65` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

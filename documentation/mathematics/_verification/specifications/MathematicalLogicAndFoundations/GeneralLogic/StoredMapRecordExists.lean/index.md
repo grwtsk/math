@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StoredMapRecordExists.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StoredMapRecordExists.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StoredMapRecordExists.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StoredMapRecordExists.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [rodgers_tao_flow_has_quasi_isomorphism](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StoredMapRecordExists.lean/declarations/rodgers-tao-flow-has-quasi-isomorphism.md) | 31 | `result-track:e8726df3e717057a570a8c5b6384a7c82959356f54b27ae5c093321ecf5880cd` |
+| 1 | `theorem` | [rodgers_tao_flow_has_quasi_isomorphism](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StoredMapRecordExists.lean/declarations/rodgers-tao-flow-has-quasi-isomorphism.md) | 31 | `result-track:e8726df3e717057a570a8c5b6384a7c82959356f54b27ae5c093321ecf5880cd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

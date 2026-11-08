@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StacksAttribute.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StacksAttribute.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StacksAttribute.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StacksAttribute.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [tagged](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StacksAttribute.lean/declarations/tagged.md) | 11 | `result-track:672e5f2144845dc6d42d54e1c98f5931abdf804ac41cfffd5097cbf1d0d40c72` |
-| 2 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StacksAttribute.lean/declarations/example-source-edition-4.md) | 26 | `declaration-track:879c9d77e59b1f30357a7e38a533a53e866243252bda905f9c4158098af809e3` |
-| 3 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StacksAttribute.lean/declarations/example.md) | 29 | `declaration-track:3c575caed45e0695a122a970403aff5ab86db4cf8117f906c4a21eb1a7ca9746` |
-| 4 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StacksAttribute.lean/declarations/example-source-edition-5.md) | 32 | `declaration-track:cf1394b819a03630268086ee245f8ad9108ec3cff533196ddce2737ccf413ead` |
-| 5 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StacksAttribute.lean/declarations/example-source-edition-2.md) | 35 | `declaration-track:7958c902af6e723b3580e7782cd00790f1179f9c0d3e45bd105313fe9900ca32` |
-| 6 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StacksAttribute.lean/declarations/example-source-edition-3.md) | 38 | `declaration-track:7c054f68dfceeada1b11e46114453bd44ba2da1efc711edda165924686e3ca72` |
-| 7 | `def` | [captureException](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StacksAttribute.lean/declarations/captureexception.md) | 76 | `declaration-track:21e99923f783d9e91a94768e698266b3c7f27040bfc2d09eda06112994792a1e` |
+| 1 | `theorem` | [tagged](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StacksAttribute.lean/declarations/tagged.md) | 11 | `result-track:672e5f2144845dc6d42d54e1c98f5931abdf804ac41cfffd5097cbf1d0d40c72` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StacksAttribute.lean/declarations/example-source-edition-4.md) | 26 | `declaration-track:879c9d77e59b1f30357a7e38a533a53e866243252bda905f9c4158098af809e3` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StacksAttribute.lean/declarations/example.md) | 29 | `declaration-track:3c575caed45e0695a122a970403aff5ab86db4cf8117f906c4a21eb1a7ca9746` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StacksAttribute.lean/declarations/example-source-edition-5.md) | 32 | `declaration-track:cf1394b819a03630268086ee245f8ad9108ec3cff533196ddce2737ccf413ead` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StacksAttribute.lean/declarations/example-source-edition-2.md) | 35 | `declaration-track:7958c902af6e723b3580e7782cd00790f1179f9c0d3e45bd105313fe9900ca32` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StacksAttribute.lean/declarations/example-source-edition-3.md) | 38 | `declaration-track:7c054f68dfceeada1b11e46114453bd44ba2da1efc711edda165924686e3ca72` |
+| 7 | `def` | [captureException](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StacksAttribute.lean/declarations/captureexception.md) | 76 | `declaration-track:21e99923f783d9e91a94768e698266b3c7f27040bfc2d09eda06112994792a1e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

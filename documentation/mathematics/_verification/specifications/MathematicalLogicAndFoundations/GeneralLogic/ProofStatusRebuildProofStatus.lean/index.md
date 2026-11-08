@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProofStatusRebuildProofStatus.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProofStatusRebuildProofStatus.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProofStatusRebuildProofStatus.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProofStatusRebuildProofStatus.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [RebuildProofStatus](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProofStatusRebuildProofStatus.lean/declarations/rebuildproofstatus.md) | 10 | `declaration-track:627db5d7a4ff8e54af90652b78e4217d5a28fe4c2235c0255bda4d4575038997` |
-| 2 | `def` | [RebuildProofStatus.allowedAsProofDependency](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProofStatusRebuildProofStatus.lean/declarations/rebuildproofstatus-allowedasproofdependency.md) | 20 | `declaration-track:322ada81fed87b44707177a1c3e53a8f35c24c595f4bdd771779ced96bd95217` |
-| 3 | `theorem` | [classicalAnchorOnly_not_allowed_as_proof_dependency](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProofStatusRebuildProofStatus.lean/declarations/classicalanchoronly-not-allowed-as-proof-dependency.md) | 27 | `result-track:e15e01cd8edd136fb7a3451d9efc37c32746d9493dd8b4482feac2c627275ce6` |
-| 4 | `theorem` | [theoremTarget_not_allowed_as_proof_dependency](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProofStatusRebuildProofStatus.lean/declarations/theoremtarget-not-allowed-as-proof-dependency.md) | 33 | `result-track:0571f51e6fa75aa989f2004d6e1f53ea78b622d1c731958e5904c2f7ea0ce91b` |
-| 5 | `theorem` | [toyModel_not_allowed_as_proof_dependency](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProofStatusRebuildProofStatus.lean/declarations/toymodel-not-allowed-as-proof-dependency.md) | 39 | `result-track:896022e314607b720ab83dfe1ae89ba34fd1d28ffb8cbff2dffc8d1b8b2549f8` |
-| 6 | `theorem` | [rejectedClaim_not_allowed_as_proof_dependency](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProofStatusRebuildProofStatus.lean/declarations/rejectedclaim-not-allowed-as-proof-dependency.md) | 45 | `result-track:3627d88e3b37e259a447735f844495219d11eb02bfff130b7939fd46b2545c6c` |
+| 1 | `inductive` | [RebuildProofStatus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProofStatusRebuildProofStatus.lean/declarations/rebuildproofstatus.md) | 10 | `declaration-track:627db5d7a4ff8e54af90652b78e4217d5a28fe4c2235c0255bda4d4575038997` |
+| 2 | `def` | [RebuildProofStatus.allowedAsProofDependency](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProofStatusRebuildProofStatus.lean/declarations/rebuildproofstatus-allowedasproofdependency.md) | 20 | `declaration-track:322ada81fed87b44707177a1c3e53a8f35c24c595f4bdd771779ced96bd95217` |
+| 3 | `theorem` | [classicalAnchorOnly_not_allowed_as_proof_dependency](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProofStatusRebuildProofStatus.lean/declarations/classicalanchoronly-not-allowed-as-proof-dependency.md) | 27 | `result-track:e15e01cd8edd136fb7a3451d9efc37c32746d9493dd8b4482feac2c627275ce6` |
+| 4 | `theorem` | [theoremTarget_not_allowed_as_proof_dependency](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProofStatusRebuildProofStatus.lean/declarations/theoremtarget-not-allowed-as-proof-dependency.md) | 33 | `result-track:0571f51e6fa75aa989f2004d6e1f53ea78b622d1c731958e5904c2f7ea0ce91b` |
+| 5 | `theorem` | [toyModel_not_allowed_as_proof_dependency](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProofStatusRebuildProofStatus.lean/declarations/toymodel-not-allowed-as-proof-dependency.md) | 39 | `result-track:896022e314607b720ab83dfe1ae89ba34fd1d28ffb8cbff2dffc8d1b8b2549f8` |
+| 6 | `theorem` | [rejectedClaim_not_allowed_as_proof_dependency](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProofStatusRebuildProofStatus.lean/declarations/rejectedclaim-not-allowed-as-proof-dependency.md) | 45 | `result-track:3627d88e3b37e259a447735f844495219d11eb02bfff130b7939fd46b2545c6c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

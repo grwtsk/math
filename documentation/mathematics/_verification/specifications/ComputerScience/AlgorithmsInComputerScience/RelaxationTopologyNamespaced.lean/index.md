@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/RelaxationTopologyNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/RelaxationTopologyNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RelaxationTopologyNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RelaxationTopologyNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RelaxedSymmetryAverage](../../../../../ComputerScience/AlgorithmsInComputerScience/RelaxationTopologyNamespaced.lean/declarations/relaxedsymmetryaverage.md) | 18 | `declaration-track:c863f6770ddbcae9a397f8ae537641524eee06f4c78d4cf6e69e75b6fb4fc412` |
-| 2 | `structure` | [ComparisonNeighborhood](../../../../../ComputerScience/AlgorithmsInComputerScience/RelaxationTopologyNamespaced.lean/declarations/comparisonneighborhood.md) | 27 | `declaration-track:32b6aca00e0397c2e889e3ed928f0c946857db88539a57ba21b9fe2aeab5b8f7` |
-| 3 | `structure` | [RelaxedSymmetryTopology](../../../../../ComputerScience/AlgorithmsInComputerScience/RelaxationTopologyNamespaced.lean/declarations/relaxedsymmetrytopology.md) | 33 | `declaration-track:abf6b7942053908127ed1887bd83f3132359a7cf54818e2943b3bb0b267ac704` |
-| 4 | `structure` | [GeneralizedPascalTreeReducerPipeline](../../../../../ComputerScience/AlgorithmsInComputerScience/RelaxationTopologyNamespaced.lean/declarations/generalizedpascaltreereducerpipeline.md) | 39 | `declaration-track:53b5841bf2ff7c686148fc3f11e6ee5da93e2f15ab426b954952c9c9425382a8` |
-| 5 | `theorem` | [relaxedSymmetryAverage_not_flow_without_certificate](../../../../../ComputerScience/AlgorithmsInComputerScience/RelaxationTopologyNamespaced.lean/declarations/relaxedsymmetryaverage-not-flow-without-certificate.md) | 52 | `result-track:1a7284bb4a435418055db3ec7e0c69b3ef128c84c4a4293011ceb1c845eb0742` |
-| 6 | `theorem` | [relaxationTopology_supports_comparison](../../../../../ComputerScience/AlgorithmsInComputerScience/RelaxationTopologyNamespaced.lean/declarations/relaxationtopology-supports-comparison.md) | 57 | `result-track:a426d718ece1341076a94ed0bc1de6d3ebc9239442312cabbfbfa726d8a7a447` |
-| 7 | `theorem` | [reducerPipeline_arrows_have_boundaries](../../../../../ComputerScience/AlgorithmsInComputerScience/RelaxationTopologyNamespaced.lean/declarations/reducerpipeline-arrows-have-boundaries.md) | 63 | `result-track:5d03705c2c05d10453426df7765c510dc99ebcae763f8392734ced8f95abc585` |
+| 1 | `structure` | [RelaxedSymmetryAverage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RelaxationTopologyNamespaced.lean/declarations/relaxedsymmetryaverage.md) | 18 | `declaration-track:c863f6770ddbcae9a397f8ae537641524eee06f4c78d4cf6e69e75b6fb4fc412` |
+| 2 | `structure` | [ComparisonNeighborhood](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RelaxationTopologyNamespaced.lean/declarations/comparisonneighborhood.md) | 27 | `declaration-track:32b6aca00e0397c2e889e3ed928f0c946857db88539a57ba21b9fe2aeab5b8f7` |
+| 3 | `structure` | [RelaxedSymmetryTopology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RelaxationTopologyNamespaced.lean/declarations/relaxedsymmetrytopology.md) | 33 | `declaration-track:abf6b7942053908127ed1887bd83f3132359a7cf54818e2943b3bb0b267ac704` |
+| 4 | `structure` | [GeneralizedPascalTreeReducerPipeline](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RelaxationTopologyNamespaced.lean/declarations/generalizedpascaltreereducerpipeline.md) | 39 | `declaration-track:53b5841bf2ff7c686148fc3f11e6ee5da93e2f15ab426b954952c9c9425382a8` |
+| 5 | `theorem` | [relaxedSymmetryAverage_not_flow_without_certificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RelaxationTopologyNamespaced.lean/declarations/relaxedsymmetryaverage-not-flow-without-certificate.md) | 52 | `result-track:1a7284bb4a435418055db3ec7e0c69b3ef128c84c4a4293011ceb1c845eb0742` |
+| 6 | `theorem` | [relaxationTopology_supports_comparison](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RelaxationTopologyNamespaced.lean/declarations/relaxationtopology-supports-comparison.md) | 57 | `result-track:a426d718ece1341076a94ed0bc1de6d3ebc9239442312cabbfbfa726d8a7a447` |
+| 7 | `theorem` | [reducerPipeline_arrows_have_boundaries](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RelaxationTopologyNamespaced.lean/declarations/reducerpipeline-arrows-have-boundaries.md) | 63 | `result-track:5d03705c2c05d10453426df7765c510dc99ebcae763f8392734ced8f95abc585` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

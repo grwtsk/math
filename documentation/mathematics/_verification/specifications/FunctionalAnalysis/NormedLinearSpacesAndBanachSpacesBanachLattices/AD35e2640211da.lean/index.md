@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/AD35e2640211da.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/AD35e2640211da.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/AD35e2640211da.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/AD35e2640211da.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -64,7 +64,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RotationEquivariantNamingSuture](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/AD35e2640211da.lean/declarations/rotationequivariantnamingsuture.md) | 19 | `declaration-track:4dc64d0c01d49807138e93521d9b694d678417ac6b4b5fd2055a1bf5a07bb709` |
+| 1 | `structure` | [RotationEquivariantNamingSuture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/AD35e2640211da.lean/declarations/rotationequivariantnamingsuture.md) | 19 | `declaration-track:4dc64d0c01d49807138e93521d9b694d678417ac6b4b5fd2055a1bf5a07bb709` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

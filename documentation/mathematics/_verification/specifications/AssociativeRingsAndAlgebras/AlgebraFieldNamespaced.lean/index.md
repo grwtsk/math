@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/AlgebraFieldNamespaced.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/AlgebraFieldNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraFieldNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraFieldNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [coe_inj](../../../../AssociativeRingsAndAlgebras/AlgebraFieldNamespaced.lean/declarations/coe-inj.md) | 30 | `result-track:ccadd3c9d5e7fa494b6c353a177840eada2d3360479941de528f7f1f4c09a5ff` |
-| 2 | `theorem` | [lift_map_eq_zero_iff](../../../../AssociativeRingsAndAlgebras/AlgebraFieldNamespaced.lean/declarations/lift-map-eq-zero-iff.md) | 34 | `result-track:4c1a55742caf3359522c534f6436ae36efb7b93c9d2af7fff09eda2616383520` |
-| 3 | `theorem` | [coe_inv](../../../../AssociativeRingsAndAlgebras/AlgebraFieldNamespaced.lean/declarations/coe-inv.md) | 43 | `result-track:0f749fe1ee6b86534d7837b6c8097acce217fb3c94eb98305571e0373cf74eb7` |
-| 4 | `theorem` | [coe_div](../../../../AssociativeRingsAndAlgebras/AlgebraFieldNamespaced.lean/declarations/coe-div.md) | 47 | `result-track:e11977bf5910bae31cb32a3c6405c9987d518eb83926242554e1ff5ccbad9296` |
-| 5 | `theorem` | [coe_zpow](../../../../AssociativeRingsAndAlgebras/AlgebraFieldNamespaced.lean/declarations/coe-zpow.md) | 51 | `result-track:728270daf9aec775ff1ddd0c68c3398f16eaedaebb908f7e2f139ecd386a35c6` |
-| 6 | `theorem` | [coe_ratCast](../../../../AssociativeRingsAndAlgebras/AlgebraFieldNamespaced.lean/declarations/coe-ratcast.md) | 61 | `result-track:8ff83e5fbebcd1d876ba2de7f243e231c02b046f994078ebb2b95d61c74c7e1b` |
+| 1 | `theorem` | [coe_inj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraFieldNamespaced.lean/declarations/coe-inj.md) | 30 | `result-track:ccadd3c9d5e7fa494b6c353a177840eada2d3360479941de528f7f1f4c09a5ff` |
+| 2 | `theorem` | [lift_map_eq_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraFieldNamespaced.lean/declarations/lift-map-eq-zero-iff.md) | 34 | `result-track:4c1a55742caf3359522c534f6436ae36efb7b93c9d2af7fff09eda2616383520` |
+| 3 | `theorem` | [coe_inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraFieldNamespaced.lean/declarations/coe-inv.md) | 43 | `result-track:0f749fe1ee6b86534d7837b6c8097acce217fb3c94eb98305571e0373cf74eb7` |
+| 4 | `theorem` | [coe_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraFieldNamespaced.lean/declarations/coe-div.md) | 47 | `result-track:e11977bf5910bae31cb32a3c6405c9987d518eb83926242554e1ff5ccbad9296` |
+| 5 | `theorem` | [coe_zpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraFieldNamespaced.lean/declarations/coe-zpow.md) | 51 | `result-track:728270daf9aec775ff1ddd0c68c3398f16eaedaebb908f7e2f139ecd386a35c6` |
+| 6 | `theorem` | [coe_ratCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraFieldNamespaced.lean/declarations/coe-ratcast.md) | 61 | `result-track:8ff83e5fbebcd1d876ba2de7f243e231c02b046f994078ebb2b95d61c74c7e1b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

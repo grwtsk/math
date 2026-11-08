@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/PathNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/PathNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PathNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PathNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [DeflectionPath](../../../../../ComputerScience/AlgorithmsInComputerScience/PathNamespaced.lean/declarations/deflectionpath.md) | 24 | `declaration-track:2474c31e8d5dee35bd3d0dd571e1a1e51706fef1b5047da341134783815efb83` |
-| 2 | `def` | [DeflectionPath.length](../../../../../ComputerScience/AlgorithmsInComputerScience/PathNamespaced.lean/declarations/deflectionpath-length.md) | 36 | `declaration-track:7c8f0da41eaffbcf449cab03925d48a1300dd50e1c6f50c10e430e986dd3ef04` |
-| 3 | `def` | [DeflectionPath.arcs](../../../../../ComputerScience/AlgorithmsInComputerScience/PathNamespaced.lean/declarations/deflectionpath-arcs.md) | 43 | `declaration-track:8fbb6b0b7974f50efc237d65652c28cfca45b4a80b14839f2e4c8d2a11f6fdc0` |
-| 4 | `def` | [DeflectionPath.AllArcs](../../../../../ComputerScience/AlgorithmsInComputerScience/PathNamespaced.lean/declarations/deflectionpath-allarcs.md) | 51 | `declaration-track:2e6e64c659a74d298e8813df1faaae1936935823b93ce3e4fa9f61c1ad6c1f6a` |
-| 5 | `def` | [DeflectionPath.phaseProduct](../../../../../ComputerScience/AlgorithmsInComputerScience/PathNamespaced.lean/declarations/deflectionpath-phaseproduct.md) | 60 | `declaration-track:90de0ad197de06187e0de7d499ec74c44a3b2e36ca394dda7034cbca0474a4f7` |
+| 1 | `inductive` | [DeflectionPath](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PathNamespaced.lean/declarations/deflectionpath.md) | 24 | `declaration-track:2474c31e8d5dee35bd3d0dd571e1a1e51706fef1b5047da341134783815efb83` |
+| 2 | `def` | [DeflectionPath.length](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PathNamespaced.lean/declarations/deflectionpath-length.md) | 36 | `declaration-track:7c8f0da41eaffbcf449cab03925d48a1300dd50e1c6f50c10e430e986dd3ef04` |
+| 3 | `def` | [DeflectionPath.arcs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PathNamespaced.lean/declarations/deflectionpath-arcs.md) | 43 | `declaration-track:8fbb6b0b7974f50efc237d65652c28cfca45b4a80b14839f2e4c8d2a11f6fdc0` |
+| 4 | `def` | [DeflectionPath.AllArcs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PathNamespaced.lean/declarations/deflectionpath-allarcs.md) | 51 | `declaration-track:2e6e64c659a74d298e8813df1faaae1936935823b93ce3e4fa9f61c1ad6c1f6a` |
+| 5 | `def` | [DeflectionPath.phaseProduct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PathNamespaced.lean/declarations/deflectionpath-phaseproduct.md) | 60 | `declaration-track:90de0ad197de06187e0de7d499ec74c44a3b2e36ca394dda7034cbca0474a4f7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

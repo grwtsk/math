@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/EndsNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/EndsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/EndsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/EndsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Bconst_sq_le](../../../../GeneralTopology/EndsNamespaced.lean/declarations/bconst-sq-le.md) | 62 | `result-track:41d1d893dc4f5f9e7850b7aa710956ff565907224742c6af7d156e0ac17201c1` |
-| 2 | `theorem` | [lem_ends_nu_W](../../../../GeneralTopology/EndsNamespaced.lean/declarations/lem-ends-nu-w.md) | 72 | `result-track:172c6964c3ec982c0b9e870d6cd9adfe777acb06e2d7455008305467a798bad9` |
-| 3 | `theorem` | [lem_ends_nu](../../../../GeneralTopology/EndsNamespaced.lean/declarations/lem-ends-nu.md) | 122 | `result-track:fc994ee3e8ee01ed43f02507ae46098b33ce0206ee140bc4138bb3b0bbefc4a2` |
-| 4 | `theorem` | [nuBound_eventually](../../../../GeneralTopology/EndsNamespaced.lean/declarations/nubound-eventually.md) | 138 | `result-track:e57920e210f2a5bad7283fd569d09b67a31b5e9aea992cb7d812f2c12cff6a22` |
-| 5 | `theorem` | [lem_ends](../../../../GeneralTopology/EndsNamespaced.lean/declarations/lem-ends.md) | 151 | `result-track:45c0e33094a3873d8238df029b01b62bbc88d44191eede5d7f4c9be290998df4` |
+| 1 | `theorem` | [Bconst_sq_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/EndsNamespaced.lean/declarations/bconst-sq-le.md) | 62 | `result-track:41d1d893dc4f5f9e7850b7aa710956ff565907224742c6af7d156e0ac17201c1` |
+| 2 | `theorem` | [lem_ends_nu_W](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/EndsNamespaced.lean/declarations/lem-ends-nu-w.md) | 72 | `result-track:172c6964c3ec982c0b9e870d6cd9adfe777acb06e2d7455008305467a798bad9` |
+| 3 | `theorem` | [lem_ends_nu](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/EndsNamespaced.lean/declarations/lem-ends-nu.md) | 122 | `result-track:fc994ee3e8ee01ed43f02507ae46098b33ce0206ee140bc4138bb3b0bbefc4a2` |
+| 4 | `theorem` | [nuBound_eventually](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/EndsNamespaced.lean/declarations/nubound-eventually.md) | 138 | `result-track:e57920e210f2a5bad7283fd569d09b67a31b5e9aea992cb7d812f2c12cff6a22` |
+| 5 | `theorem` | [lem_ends](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/EndsNamespaced.lean/declarations/lem-ends.md) | 151 | `result-track:45c0e33094a3873d8238df029b01b62bbc88d44191eede5d7f4c9be290998df4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

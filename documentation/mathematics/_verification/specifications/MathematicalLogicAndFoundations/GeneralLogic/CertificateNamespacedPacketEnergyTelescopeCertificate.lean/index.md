@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CertificateNamespacedPacketEnergyTelescopeCertificate.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CertificateNamespacedPacketEnergyTelescopeCertificate.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CertificateNamespacedPacketEnergyTelescopeCertificate.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CertificateNamespacedPacketEnergyTelescopeCertificate.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PacketEnergyTelescopeCertificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CertificateNamespacedPacketEnergyTelescopeCertificate.lean/declarations/packetenergytelescopecertificate.md) | 17 | `declaration-track:9b9b7de0224b056b24e122cdd0b61a4ddc390bbd313b945c23106eaf992fccee` |
+| 1 | `structure` | [PacketEnergyTelescopeCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CertificateNamespacedPacketEnergyTelescopeCertificate.lean/declarations/packetenergytelescopecertificate.md) | 17 | `declaration-track:9b9b7de0224b056b24e122cdd0b61a4ddc390bbd313b945c23106eaf992fccee` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

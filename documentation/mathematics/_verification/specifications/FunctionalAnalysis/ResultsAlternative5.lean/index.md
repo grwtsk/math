@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/ResultsAlternative5.lean/index.md) · [Full source](../../../../FunctionalAnalysis/ResultsAlternative5.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ResultsAlternative5.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ResultsAlternative5.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,7 +61,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [kroneckerHilbertBasis](../../../../FunctionalAnalysis/ResultsAlternative5.lean/declarations/kroneckerhilbertbasis.md) | 27 | `declaration-track:1e4622e5679b882afb32abfea21d2e5212fb3993446f2ddc4823c42e8db4fba9` |
+| 1 | `def` | [kroneckerHilbertBasis](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ResultsAlternative5.lean/declarations/kroneckerhilbertbasis.md) | 27 | `declaration-track:1e4622e5679b882afb32abfea21d2e5212fb3993446f2ddc4823c42e8db4fba9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

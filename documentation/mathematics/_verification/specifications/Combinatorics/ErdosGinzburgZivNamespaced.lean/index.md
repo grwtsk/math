@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ErdosGinzburgZivNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/ErdosGinzburgZivNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ErdosGinzburgZivNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ErdosGinzburgZivNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,15 +59,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [f₁](../../../../Combinatorics/ErdosGinzburgZivNamespaced.lean/declarations/f.md) | 40 | `declaration-track:3e35a5710adbc7cbd0085957ef94ea9a5da76ac576d329e2e31e2e8f2abd1207` |
-| 2 | `def` | [f₂](../../../../Combinatorics/ErdosGinzburgZivNamespaced.lean/declarations/f-source-edition-2.md) | 44 | `declaration-track:8c0e3673057584bbb8f9240eb34d55f6f1129736cde4ac343c396f4ae1053d35` |
-| 3 | `lemma` | [totalDegree_f₁_add_totalDegree_f₂](../../../../Combinatorics/ErdosGinzburgZivNamespaced.lean/declarations/totaldegree-f-add-totaldegree-f.md) | 47 | `result-track:234671c3ebd67ef6d976202467cca8b83adf73e1fcdd4b93e90b06cb341cf283` |
-| 4 | `theorem` | [ZMod.erdos_ginzburg_ziv_prime](../../../../Combinatorics/ErdosGinzburgZivNamespaced.lean/declarations/zmod-erdos-ginzburg-ziv-prime.md) | 60 | `result-track:d5e871317de9adb51513c14343c4acb86d80443364b71bc987f2fb483cb1117c` |
-| 5 | `theorem` | [Int.erdos_ginzburg_ziv_prime](../../../../Combinatorics/ErdosGinzburgZivNamespaced.lean/declarations/int-erdos-ginzburg-ziv-prime.md) | 100 | `result-track:3c87eeb96a9d2b08121af6f82a59f5f6a35bd255ba30d17d1884326ff9aa02fd` |
-| 6 | `theorem` | [Int.erdos_ginzburg_ziv](../../../../Combinatorics/ErdosGinzburgZivNamespaced.lean/declarations/int-erdos-ginzburg-ziv.md) | 114 | `result-track:c33256a1f93bac79e9e6984da484d6945797547edb7dd633fdd30f5f95e823c6` |
-| 7 | `theorem` | [ZMod.erdos_ginzburg_ziv](../../../../Combinatorics/ErdosGinzburgZivNamespaced.lean/declarations/zmod-erdos-ginzburg-ziv.md) | 188 | `result-track:aead29541ca4960c7aaaaeecd9f8fb1f884ce49b8e21f94261ab6f65ad571c22` |
-| 8 | `theorem` | [Int.erdos_ginzburg_ziv_multiset](../../../../Combinatorics/ErdosGinzburgZivNamespaced.lean/declarations/int-erdos-ginzburg-ziv-multiset.md) | 196 | `result-track:4c132c9b60cf3a9e623e211f3ea5f1c1d4e84325a9514256880a2dba6898296b` |
-| 9 | `theorem` | [ZMod.erdos_ginzburg_ziv_multiset](../../../../Combinatorics/ErdosGinzburgZivNamespaced.lean/declarations/zmod-erdos-ginzburg-ziv-multiset.md) | 205 | `result-track:5b4ff9f3cf68b0496fd7230ab10888333d88e2cf5ff8519836a02ad8d75226e3` |
+| 1 | `def` | [f₁](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ErdosGinzburgZivNamespaced.lean/declarations/f.md) | 40 | `declaration-track:3e35a5710adbc7cbd0085957ef94ea9a5da76ac576d329e2e31e2e8f2abd1207` |
+| 2 | `def` | [f₂](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ErdosGinzburgZivNamespaced.lean/declarations/f-source-edition-2.md) | 44 | `declaration-track:8c0e3673057584bbb8f9240eb34d55f6f1129736cde4ac343c396f4ae1053d35` |
+| 3 | `lemma` | [totalDegree_f₁_add_totalDegree_f₂](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ErdosGinzburgZivNamespaced.lean/declarations/totaldegree-f-add-totaldegree-f.md) | 47 | `result-track:234671c3ebd67ef6d976202467cca8b83adf73e1fcdd4b93e90b06cb341cf283` |
+| 4 | `theorem` | [ZMod.erdos_ginzburg_ziv_prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ErdosGinzburgZivNamespaced.lean/declarations/zmod-erdos-ginzburg-ziv-prime.md) | 60 | `result-track:d5e871317de9adb51513c14343c4acb86d80443364b71bc987f2fb483cb1117c` |
+| 5 | `theorem` | [Int.erdos_ginzburg_ziv_prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ErdosGinzburgZivNamespaced.lean/declarations/int-erdos-ginzburg-ziv-prime.md) | 100 | `result-track:3c87eeb96a9d2b08121af6f82a59f5f6a35bd255ba30d17d1884326ff9aa02fd` |
+| 6 | `theorem` | [Int.erdos_ginzburg_ziv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ErdosGinzburgZivNamespaced.lean/declarations/int-erdos-ginzburg-ziv.md) | 114 | `result-track:c33256a1f93bac79e9e6984da484d6945797547edb7dd633fdd30f5f95e823c6` |
+| 7 | `theorem` | [ZMod.erdos_ginzburg_ziv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ErdosGinzburgZivNamespaced.lean/declarations/zmod-erdos-ginzburg-ziv.md) | 188 | `result-track:aead29541ca4960c7aaaaeecd9f8fb1f884ce49b8e21f94261ab6f65ad571c22` |
+| 8 | `theorem` | [Int.erdos_ginzburg_ziv_multiset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ErdosGinzburgZivNamespaced.lean/declarations/int-erdos-ginzburg-ziv-multiset.md) | 196 | `result-track:4c132c9b60cf3a9e623e211f3ea5f1c1d4e84325a9514256880a2dba6898296b` |
+| 9 | `theorem` | [ZMod.erdos_ginzburg_ziv_multiset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ErdosGinzburgZivNamespaced.lean/declarations/zmod-erdos-ginzburg-ziv-multiset.md) | 205 | `result-track:5b4ff9f3cf68b0496fd7230ab10888333d88e2cf5ff8519836a02ad8d75226e3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/Int.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/Int.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/Int.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/Int.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [prime_iff_prime_int](../../../../../NumberTheory/ElementaryNumberTheory/Int.lean/declarations/prime-iff-prime-int.md) | 20 | `result-track:822b7ef838e0f788d6c4850ebb0dbd2f760cfc94d273c742e7f388971a31a6f5` |
-| 2 | `lemma` | [Prime.pow_inj](../../../../../NumberTheory/ElementaryNumberTheory/Int.lean/declarations/prime-pow-inj.md) | 33 | `result-track:8900c073e4b5e97a379aeb21b12d9519110a1be1b0e612ca85a1799a98e3b8ed` |
-| 3 | `theorem` | [prime_ofNat_iff](../../../../../NumberTheory/ElementaryNumberTheory/Int.lean/declarations/prime-ofnat-iff.md) | 44 | `result-track:ecca60f676ab834884de24e743d80c2631b16f8f588ac94b27fbdb93bc8013ce` |
-| 4 | `theorem` | [prime_two](../../../../../NumberTheory/ElementaryNumberTheory/Int.lean/declarations/prime-two.md) | 48 | `result-track:53dc07c21003b723773e02169a9f91950d23dbe22dda30813243f7103530e36d` |
-| 5 | `theorem` | [prime_three](../../../../../NumberTheory/ElementaryNumberTheory/Int.lean/declarations/prime-three.md) | 51 | `result-track:9278335a87ee7a128cec6d3e7a5cb1902f42db20dd4a655e03d0fa26f5c354ba` |
+| 1 | `theorem` | [prime_iff_prime_int](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/Int.lean/declarations/prime-iff-prime-int.md) | 20 | `result-track:822b7ef838e0f788d6c4850ebb0dbd2f760cfc94d273c742e7f388971a31a6f5` |
+| 2 | `lemma` | [Prime.pow_inj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/Int.lean/declarations/prime-pow-inj.md) | 33 | `result-track:8900c073e4b5e97a379aeb21b12d9519110a1be1b0e612ca85a1799a98e3b8ed` |
+| 3 | `theorem` | [prime_ofNat_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/Int.lean/declarations/prime-ofnat-iff.md) | 44 | `result-track:ecca60f676ab834884de24e743d80c2631b16f8f588ac94b27fbdb93bc8013ce` |
+| 4 | `theorem` | [prime_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/Int.lean/declarations/prime-two.md) | 48 | `result-track:53dc07c21003b723773e02169a9f91950d23dbe22dda30813243f7103530e36d` |
+| 5 | `theorem` | [prime_three](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/Int.lean/declarations/prime-three.md) | 51 | `result-track:9278335a87ee7a128cec6d3e7a5cb1902f42db20dd4a655e03d0fa26f5c354ba` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

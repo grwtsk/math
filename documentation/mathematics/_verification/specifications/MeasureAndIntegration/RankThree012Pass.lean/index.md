@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/RankThree012Pass.lean/index.md) · [Full source](../../../../MeasureAndIntegration/RankThree012Pass.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RankThree012Pass.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RankThree012Pass.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [thetaTailRankThreeNumerator](../../../../MeasureAndIntegration/RankThree012Pass.lean/declarations/thetatailrankthreenumerator.md) | 18 | `declaration-track:8adf0fa733006d77bc752736d02a316b45f23c40ddd431d14d1050d9098aa587` |
-| 2 | `theorem` | [rankThree_compound_numerator_identity](../../../../MeasureAndIntegration/RankThree012Pass.lean/declarations/rankthree-compound-numerator-identity.md) | 25 | `result-track:c1216f931f47715bbdcc8b2b4ed4f3e231f988515507567893833cea90c30594` |
-| 3 | `theorem` | [thetaTailRankThreeNumerator_eq](../../../../MeasureAndIntegration/RankThree012Pass.lean/declarations/thetatailrankthreenumerator-eq.md) | 33 | `result-track:f34c5b9ac5496ea7dc407f22505a07d7dfb5f267248173f651c216756e85d17f` |
-| 4 | `theorem` | [hasDerivAt_thetaTail_compoundRatio](../../../../MeasureAndIntegration/RankThree012Pass.lean/declarations/hasderivat-thetatail-compoundratio.md) | 45 | `result-track:cd49d53e16b320e4a624cb79ea0adee724d628ed7f49eec749a634e7c6b958a3` |
-| 5 | `theorem` | [thetaTail_compoundRatio_antitone_iff](../../../../MeasureAndIntegration/RankThree012Pass.lean/declarations/thetatail-compoundratio-antitone-iff.md) | 56 | `result-track:423b6d6db8a6c436d63ee5c73c0886df427344e46106b70eb2da6ddbc9df0815` |
-| 6 | `theorem` | [thetaTail012_det_nonpos_of_numerator_nonpos](../../../../MeasureAndIntegration/RankThree012Pass.lean/declarations/thetatail012-det-nonpos-of-numerator-nonpos.md) | 78 | `result-track:318897133cc211989cd1f7e83b182e67bd04b6dd68d6db33d05025c17793eea4` |
-| 7 | `theorem` | [thetaTailSignRegular_three_zero_one_two_of_numerator_nonpos](../../../../MeasureAndIntegration/RankThree012Pass.lean/declarations/thetatailsignregular-three-zero-one-two-of-numerator-nonpos.md) | 123 | `result-track:c641bacabdf5cec52202decd0f6e72f7b7156090675753c183ad97ffbf0f1a6d` |
-| 8 | `theorem` | [thetaPhi_jet_det_nonpos_of_wronskian](../../../../MeasureAndIntegration/RankThree012Pass.lean/declarations/thetaphi-jet-det-nonpos-of-wronskian.md) | 142 | `result-track:0b39c953ac7c43fd54a50b2f91eaf33df58c7fc5d0597722a583471c40326331` |
-| 9 | `theorem` | [thetaTailRankThreeNumerator_nonpos_of_wronskian](../../../../MeasureAndIntegration/RankThree012Pass.lean/declarations/thetatailrankthreenumerator-nonpos-of-wronskian.md) | 160 | `result-track:2cea617b1e670bfc3ea745d3133d17d8cb0284901550081524c3907086a901fb` |
+| 1 | `def` | [thetaTailRankThreeNumerator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RankThree012Pass.lean/declarations/thetatailrankthreenumerator.md) | 18 | `declaration-track:8adf0fa733006d77bc752736d02a316b45f23c40ddd431d14d1050d9098aa587` |
+| 2 | `theorem` | [rankThree_compound_numerator_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RankThree012Pass.lean/declarations/rankthree-compound-numerator-identity.md) | 25 | `result-track:c1216f931f47715bbdcc8b2b4ed4f3e231f988515507567893833cea90c30594` |
+| 3 | `theorem` | [thetaTailRankThreeNumerator_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RankThree012Pass.lean/declarations/thetatailrankthreenumerator-eq.md) | 33 | `result-track:f34c5b9ac5496ea7dc407f22505a07d7dfb5f267248173f651c216756e85d17f` |
+| 4 | `theorem` | [hasDerivAt_thetaTail_compoundRatio](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RankThree012Pass.lean/declarations/hasderivat-thetatail-compoundratio.md) | 45 | `result-track:cd49d53e16b320e4a624cb79ea0adee724d628ed7f49eec749a634e7c6b958a3` |
+| 5 | `theorem` | [thetaTail_compoundRatio_antitone_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RankThree012Pass.lean/declarations/thetatail-compoundratio-antitone-iff.md) | 56 | `result-track:423b6d6db8a6c436d63ee5c73c0886df427344e46106b70eb2da6ddbc9df0815` |
+| 6 | `theorem` | [thetaTail012_det_nonpos_of_numerator_nonpos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RankThree012Pass.lean/declarations/thetatail012-det-nonpos-of-numerator-nonpos.md) | 78 | `result-track:318897133cc211989cd1f7e83b182e67bd04b6dd68d6db33d05025c17793eea4` |
+| 7 | `theorem` | [thetaTailSignRegular_three_zero_one_two_of_numerator_nonpos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RankThree012Pass.lean/declarations/thetatailsignregular-three-zero-one-two-of-numerator-nonpos.md) | 123 | `result-track:c641bacabdf5cec52202decd0f6e72f7b7156090675753c183ad97ffbf0f1a6d` |
+| 8 | `theorem` | [thetaPhi_jet_det_nonpos_of_wronskian](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RankThree012Pass.lean/declarations/thetaphi-jet-det-nonpos-of-wronskian.md) | 142 | `result-track:0b39c953ac7c43fd54a50b2f91eaf33df58c7fc5d0597722a583471c40326331` |
+| 9 | `theorem` | [thetaTailRankThreeNumerator_nonpos_of_wronskian](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RankThree012Pass.lean/declarations/thetatailrankthreenumerator-nonpos-of-wronskian.md) | 160 | `result-track:2cea617b1e670bfc3ea745d3133d17d8cb0284901550081524c3907086a901fb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

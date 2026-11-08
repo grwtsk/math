@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AuthorityPublicFiniteTransportArtifact.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AuthorityPublicFiniteTransportArtifact.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AuthorityPublicFiniteTransportArtifact.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AuthorityPublicFiniteTransportArtifact.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FiniteTransportArtifact](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AuthorityPublicFiniteTransportArtifact.lean/declarations/finitetransportartifact.md) | 18 | `declaration-track:0122f48accd01cc787480b7e62cff1866a1759be76a3e69ad6fd0a19f0140fde` |
-| 2 | `def` | [FiniteTransportHasTheoremAuthority](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AuthorityPublicFiniteTransportArtifact.lean/declarations/finitetransporthastheoremauthority.md) | 23 | `declaration-track:699b5ca9a5e81b56ebee8bbac6289b9318c57f4341fd97616751465fe96294e9` |
-| 3 | `theorem` | [finiteTransport_has_no_theorem_authority](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AuthorityPublicFiniteTransportArtifact.lean/declarations/finitetransport-has-no-theorem-authority.md) | 28 | `result-track:80053863b952aff7ecae605bc5ea117dd7d166ee74a7078d7db1b9f3e645709d` |
+| 1 | `structure` | [FiniteTransportArtifact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AuthorityPublicFiniteTransportArtifact.lean/declarations/finitetransportartifact.md) | 18 | `declaration-track:0122f48accd01cc787480b7e62cff1866a1759be76a3e69ad6fd0a19f0140fde` |
+| 2 | `def` | [FiniteTransportHasTheoremAuthority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AuthorityPublicFiniteTransportArtifact.lean/declarations/finitetransporthastheoremauthority.md) | 23 | `declaration-track:699b5ca9a5e81b56ebee8bbac6289b9318c57f4341fd97616751465fe96294e9` |
+| 3 | `theorem` | [finiteTransport_has_no_theorem_authority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AuthorityPublicFiniteTransportArtifact.lean/declarations/finitetransport-has-no-theorem-authority.md) | 28 | `result-track:80053863b952aff7ecae605bc5ea117dd7d166ee74a7078d7db1b9f3e645709d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

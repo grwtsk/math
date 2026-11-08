@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/AnnihilatedPoint.lean/index.md) · [Full source](../../../../../NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/AnnihilatedPoint.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/AnnihilatedPoint.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/AnnihilatedPoint.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [MTorsionPoint](../../../../../NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/AnnihilatedPoint.lean/declarations/mtorsionpoint.md) | 40 | `declaration-track:7a0f3306112285a065dc5fbc62051b32976f8e67db78bfd352ef01e9d6314af6` |
+| 1 | `structure` | [MTorsionPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/AnnihilatedPoint.lean/declarations/mtorsionpoint.md) | 40 | `declaration-track:7a0f3306112285a065dc5fbc62051b32976f8e67db78bfd352ef01e9d6314af6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

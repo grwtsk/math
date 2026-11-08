@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/FunLikeModulePublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/FunLikeModulePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FunLikeModulePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FunLikeModulePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [isScalarTower](../../../../../../ComputerScience/TheoryOfData/DataStructures/FunLikeModulePublic.lean/declarations/isscalartower.md) | 34 | `result-track:3e4317dd5a52cb585d1dc9acb68f599d448df4980f5be31c0b1c972a295b966a` |
-| 2 | `theorem` | [smulCommClass](../../../../../../ComputerScience/TheoryOfData/DataStructures/FunLikeModulePublic.lean/declarations/smulcommclass.md) | 38 | `result-track:93b2810787a9077d8e3f8812ea3bb1f008fd9b31207dd9784cfd0041236c8e88` |
-| 3 | `theorem` | [isCentralScalar](../../../../../../ComputerScience/TheoryOfData/DataStructures/FunLikeModulePublic.lean/declarations/iscentralscalar.md) | 46 | `result-track:8c61243b2bcba1120059053aa6c182f8c428da9a19ed0e6af44c3b0d08922912` |
-| 4 | `abbrev` | [distribSMul](../../../../../../ComputerScience/TheoryOfData/DataStructures/FunLikeModulePublic.lean/declarations/distribsmul.md) | 53 | `declaration-track:a571d1ce39dee54ee5e8e1533b695ed498128ac47242c3400a67fcaeecd9d1b2` |
-| 5 | `abbrev` | [mulAction](../../../../../../ComputerScience/TheoryOfData/DataStructures/FunLikeModulePublic.lean/declarations/mulaction.md) | 62 | `declaration-track:9690a904a70d7597e4fc0219c0e1aa77072cbb1d23d39dfd9bb4059f7707a020` |
-| 6 | `abbrev` | [distribMulAction](../../../../../../ComputerScience/TheoryOfData/DataStructures/FunLikeModulePublic.lean/declarations/distribmulaction.md) | 68 | `declaration-track:6cac586fbd8b29956eb81a01b1dbd8fbca05ca1f0f9a5fd1982e6f5d6d7c6ff6` |
-| 7 | `abbrev` | [module](../../../../../../ComputerScience/TheoryOfData/DataStructures/FunLikeModulePublic.lean/declarations/module.md) | 76 | `declaration-track:6031daf839c8c7e9a39f50125e32c433fadb68624f1530367764b5aa31fe24b4` |
-| 8 | `theorem` | [moduleIsTorsionFree](../../../../../../ComputerScience/TheoryOfData/DataStructures/FunLikeModulePublic.lean/declarations/moduleistorsionfree.md) | 80 | `result-track:5b7c825a7336fc7ae158dfeb2ca746013645c3f5fa11d91cd172bb1dc14a18c2` |
+| 1 | `theorem` | [isScalarTower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FunLikeModulePublic.lean/declarations/isscalartower.md) | 34 | `result-track:3e4317dd5a52cb585d1dc9acb68f599d448df4980f5be31c0b1c972a295b966a` |
+| 2 | `theorem` | [smulCommClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FunLikeModulePublic.lean/declarations/smulcommclass.md) | 38 | `result-track:93b2810787a9077d8e3f8812ea3bb1f008fd9b31207dd9784cfd0041236c8e88` |
+| 3 | `theorem` | [isCentralScalar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FunLikeModulePublic.lean/declarations/iscentralscalar.md) | 46 | `result-track:8c61243b2bcba1120059053aa6c182f8c428da9a19ed0e6af44c3b0d08922912` |
+| 4 | `abbrev` | [distribSMul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FunLikeModulePublic.lean/declarations/distribsmul.md) | 53 | `declaration-track:a571d1ce39dee54ee5e8e1533b695ed498128ac47242c3400a67fcaeecd9d1b2` |
+| 5 | `abbrev` | [mulAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FunLikeModulePublic.lean/declarations/mulaction.md) | 62 | `declaration-track:9690a904a70d7597e4fc0219c0e1aa77072cbb1d23d39dfd9bb4059f7707a020` |
+| 6 | `abbrev` | [distribMulAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FunLikeModulePublic.lean/declarations/distribmulaction.md) | 68 | `declaration-track:6cac586fbd8b29956eb81a01b1dbd8fbca05ca1f0f9a5fd1982e6f5d6d7c6ff6` |
+| 7 | `abbrev` | [module](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FunLikeModulePublic.lean/declarations/module.md) | 76 | `declaration-track:6031daf839c8c7e9a39f50125e32c433fadb68624f1530367764b5aa31fe24b4` |
+| 8 | `theorem` | [moduleIsTorsionFree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FunLikeModulePublic.lean/declarations/moduleistorsionfree.md) | 80 | `result-track:5b7c825a7336fc7ae158dfeb2ca746013645c3f5fa11d91cd172bb1dc14a18c2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

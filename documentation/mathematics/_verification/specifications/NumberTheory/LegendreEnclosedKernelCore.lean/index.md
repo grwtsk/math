@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/LegendreEnclosedKernelCore.lean/index.md) · [Full source](../../../../NumberTheory/LegendreEnclosedKernelCore.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LegendreEnclosedKernelCore.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LegendreEnclosedKernelCore.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,10 +46,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Interfaces.LegendreLogBudgetCore`](../../../../NumberTheory/LegendreLogBudgetCore.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.ErrorBounds.ComplexSourceBudget`](../../../../RealFunctions/ComplexSourceBudget.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.NumberTheory.Chebyshev.LegendreEnclosedKernel`](../../../../NumberTheory/LegendreEnclosedKernel.lean/index.md) — import line 6; pinned internal source present.
-- [`GRWTSK.NumberTheory.Chebyshev.Checks.EnclosedKernelControls`](../../../../NumberTheory/EnclosedKernelControls.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.Interfaces.LegendreLogBudgetCore`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LegendreLogBudgetCore.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.ErrorBounds.ComplexSourceBudget`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ComplexSourceBudget.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.LegendreEnclosedKernel`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LegendreEnclosedKernel.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.Checks.EnclosedKernelControls`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/EnclosedKernelControls.lean/index.md) — import line 7; pinned internal source present.
 
 ## Top results and three-degree verification metric
 

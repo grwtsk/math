@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ProjectionReversibleProjection.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ProjectionReversibleProjection.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ProjectionReversibleProjection.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ProjectionReversibleProjection.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ReversibleProjection](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ProjectionReversibleProjection.lean/declarations/reversibleprojection.md) | 15 | `declaration-track:664e5c23bd012b77049925a6fa41a03f878593604a384e1f7e92d4d4b00ed843` |
-| 2 | `theorem` | [ReversibleProjection.rehydrate_project](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ProjectionReversibleProjection.lean/declarations/reversibleprojection-rehydrate-project.md) | 25 | `result-track:31f55467563fc6cd36ff1e65cd40395957e16dbab061813c43274efd6d8fa50f` |
-| 3 | `structure` | [ObligationProjection](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ProjectionReversibleProjection.lean/declarations/obligationprojection.md) | 33 | `declaration-track:3c375da609683941a09697c052a9d873563bef1b5317b1960c9f87b478bb66a8` |
+| 1 | `structure` | [ReversibleProjection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ProjectionReversibleProjection.lean/declarations/reversibleprojection.md) | 15 | `declaration-track:664e5c23bd012b77049925a6fa41a03f878593604a384e1f7e92d4d4b00ed843` |
+| 2 | `theorem` | [ReversibleProjection.rehydrate_project](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ProjectionReversibleProjection.lean/declarations/reversibleprojection-rehydrate-project.md) | 25 | `result-track:31f55467563fc6cd36ff1e65cd40395957e16dbab061813c43274efd6d8fa50f` |
+| 3 | `structure` | [ObligationProjection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ProjectionReversibleProjection.lean/declarations/obligationprojection.md) | 33 | `declaration-track:3c375da609683941a09697c052a9d873563bef1b5317b1960c9f87b478bb66a8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

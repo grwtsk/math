@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/SpectralDiracBridgeNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/SpectralDiracBridgeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralDiracBridgeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralDiracBridgeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [crystalline_dirac_has_spectral_object](../../../../FunctionalAnalysis/SpectralDiracBridgeNamespaced.lean/declarations/crystalline-dirac-has-spectral-object.md) | 27 | `result-track:637a3b21436fc75464cf2d615c210c60dfa2185ce13f0491191a24d39cda799b` |
+| 1 | `theorem` | [crystalline_dirac_has_spectral_object](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralDiracBridgeNamespaced.lean/declarations/crystalline-dirac-has-spectral-object.md) | 27 | `result-track:637a3b21436fc75464cf2d615c210c60dfa2185ce13f0491191a24d39cda799b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

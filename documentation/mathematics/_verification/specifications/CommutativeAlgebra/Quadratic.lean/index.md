@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/Quadratic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/Quadratic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Quadratic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Quadratic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [quadratic](../../../../CommutativeAlgebra/Quadratic.lean/declarations/quadratic.md) | 17 | `declaration-track:fa5ca4402d2ab639a0a0f6a0f3cb51d52f47b9edae8929269375f9508dddcde5` |
-| 2 | `theorem` | [eval_quadratic](../../../../CommutativeAlgebra/Quadratic.lean/declarations/eval-quadratic.md) | 20 | `result-track:b7ac3cb9111044cad0106e5caee3cb66e0f1b222258557c40dedd47f4ebcf4ae` |
+| 1 | `def` | [quadratic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Quadratic.lean/declarations/quadratic.md) | 17 | `declaration-track:fa5ca4402d2ab639a0a0f6a0f3cb51d52f47b9edae8929269375f9508dddcde5` |
+| 2 | `theorem` | [eval_quadratic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Quadratic.lean/declarations/eval-quadratic.md) | 20 | `result-track:b7ac3cb9111044cad0106e5caee3cb66e0f1b222258557c40dedd47f4ebcf4ae` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

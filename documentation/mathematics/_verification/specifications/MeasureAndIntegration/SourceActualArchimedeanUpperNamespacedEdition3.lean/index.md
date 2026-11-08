@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceActualArchimedeanUpperNamespacedEdition3.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceActualArchimedeanUpperNamespacedEdition3.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualArchimedeanUpperNamespacedEdition3.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualArchimedeanUpperNamespacedEdition3.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [kernel_quarter_quadratic](../../../../MeasureAndIntegration/SourceActualArchimedeanUpperNamespacedEdition3.lean/declarations/kernel-quarter-quadratic.md) | 29 | `result-track:fc0cc74a72f6e873558a076016e2115a1ab6108ea8489c1596bda11c2bc52b3f` |
-| 2 | `theorem` | [actual_multiplier_quadratic_upper](../../../../MeasureAndIntegration/SourceActualArchimedeanUpperNamespacedEdition3.lean/declarations/actual-multiplier-quadratic-upper.md) | 35 | `result-track:ae651cb29685134f787d181fe72ef34a954bd13b7d3a66541d601aa3b9677ba8` |
-| 3 | `theorem` | [actual_archimedean_upper_by_derivative_energy](../../../../MeasureAndIntegration/SourceActualArchimedeanUpperNamespacedEdition3.lean/declarations/actual-archimedean-upper-by-derivative-energy.md) | 49 | `result-track:57293fe5a31d1589113c349364872f67b8ab1aad1b4c119e588ba99c815cf500` |
-| 4 | `theorem` | [actual_archimedean_quadratic_upper](../../../../MeasureAndIntegration/SourceActualArchimedeanUpperNamespacedEdition3.lean/declarations/actual-archimedean-quadratic-upper.md) | 75 | `result-track:7610cc0f48cb89ca6c7e7cf7045db09e54fec16ae219eafb906ded36cca8d297` |
-| 5 | `theorem` | [actual_archimedean_two_sided](../../../../MeasureAndIntegration/SourceActualArchimedeanUpperNamespacedEdition3.lean/declarations/actual-archimedean-two-sided.md) | 87 | `result-track:fcfa2301f9bc71652b406a86a918ae6851395e898ee442bd960422015785ba8b` |
+| 1 | `theorem` | [kernel_quarter_quadratic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualArchimedeanUpperNamespacedEdition3.lean/declarations/kernel-quarter-quadratic.md) | 29 | `result-track:fc0cc74a72f6e873558a076016e2115a1ab6108ea8489c1596bda11c2bc52b3f` |
+| 2 | `theorem` | [actual_multiplier_quadratic_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualArchimedeanUpperNamespacedEdition3.lean/declarations/actual-multiplier-quadratic-upper.md) | 35 | `result-track:ae651cb29685134f787d181fe72ef34a954bd13b7d3a66541d601aa3b9677ba8` |
+| 3 | `theorem` | [actual_archimedean_upper_by_derivative_energy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualArchimedeanUpperNamespacedEdition3.lean/declarations/actual-archimedean-upper-by-derivative-energy.md) | 49 | `result-track:57293fe5a31d1589113c349364872f67b8ab1aad1b4c119e588ba99c815cf500` |
+| 4 | `theorem` | [actual_archimedean_quadratic_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualArchimedeanUpperNamespacedEdition3.lean/declarations/actual-archimedean-quadratic-upper.md) | 75 | `result-track:7610cc0f48cb89ca6c7e7cf7045db09e54fec16ae219eafb906ded36cca8d297` |
+| 5 | `theorem` | [actual_archimedean_two_sided](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualArchimedeanUpperNamespacedEdition3.lean/declarations/actual-archimedean-two-sided.md) | 87 | `result-track:fcfa2301f9bc71652b406a86a918ae6851395e898ee442bd960422015785ba8b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

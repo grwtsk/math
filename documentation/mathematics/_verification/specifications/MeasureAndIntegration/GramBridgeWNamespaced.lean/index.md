@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/GramBridgeWNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/GramBridgeWNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GramBridgeWNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GramBridgeWNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,13 +60,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [literatureRHSW](../../../../MeasureAndIntegration/GramBridgeWNamespaced.lean/declarations/literaturerhsw.md) | 41 | `declaration-track:287e2e08826342ef0d6bbc8cede92e6cd8cb50afc9cbc318401c478822f3f2a1` |
-| 2 | `theorem` | [literatureRHSW_eq](../../../../MeasureAndIntegration/GramBridgeWNamespaced.lean/declarations/literaturerhsw-eq.md) | 46 | `result-track:9fa714f25bc4f062ca4472780a9b7fc26b73bf7aa0d649edc7ba8c1c71be1472` |
-| 3 | `theorem` | [nucW_xiCoeff_eq'](../../../../MeasureAndIntegration/GramBridgeWNamespaced.lean/declarations/nucw-xicoeff-eq.md) | 53 | `result-track:ff858d1849811e74d3f90ee88e7a7a0c480f02c4b0ca667377596d1597752e0b` |
-| 4 | `theorem` | [nucW_two_neg_vonMangoldt](../../../../MeasureAndIntegration/GramBridgeWNamespaced.lean/declarations/nucw-two-neg-vonmangoldt.md) | 65 | `result-track:2fbfab4331fd9fec7b2a7197f8595e14ed8b39073d08459993266e0505b965ab` |
-| 5 | `theorem` | [literatureRHSW_eq_integral_nucW](../../../../MeasureAndIntegration/GramBridgeWNamespaced.lean/declarations/literaturerhsw-eq-integral-nucw.md) | 74 | `result-track:a718df79d467281eca52ade6006ead372a19759e7de6c50cdc98aa851c659dd9` |
-| 6 | `theorem` | [integrable_paperFT_pairTest_mul_nucW2](../../../../MeasureAndIntegration/GramBridgeWNamespaced.lean/declarations/integrable-paperft-pairtest-mul-nucw2.md) | 99 | `result-track:83e4f53f35f53fdde56caebce684f8e8b907b45cca6acda9fd65171072a426f7` |
-| 7 | `theorem` | [GentryW1_eq](../../../../MeasureAndIntegration/GramBridgeWNamespaced.lean/declarations/gentryw1-eq.md) | 118 | `result-track:2607030f12cf40d407217b9b35292048c359ecf3c21fb8ba3833f6025fe20d5e` |
+| 1 | `def` | [literatureRHSW](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GramBridgeWNamespaced.lean/declarations/literaturerhsw.md) | 41 | `declaration-track:287e2e08826342ef0d6bbc8cede92e6cd8cb50afc9cbc318401c478822f3f2a1` |
+| 2 | `theorem` | [literatureRHSW_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GramBridgeWNamespaced.lean/declarations/literaturerhsw-eq.md) | 46 | `result-track:9fa714f25bc4f062ca4472780a9b7fc26b73bf7aa0d649edc7ba8c1c71be1472` |
+| 3 | `theorem` | [nucW_xiCoeff_eq'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GramBridgeWNamespaced.lean/declarations/nucw-xicoeff-eq.md) | 53 | `result-track:ff858d1849811e74d3f90ee88e7a7a0c480f02c4b0ca667377596d1597752e0b` |
+| 4 | `theorem` | [nucW_two_neg_vonMangoldt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GramBridgeWNamespaced.lean/declarations/nucw-two-neg-vonmangoldt.md) | 65 | `result-track:2fbfab4331fd9fec7b2a7197f8595e14ed8b39073d08459993266e0505b965ab` |
+| 5 | `theorem` | [literatureRHSW_eq_integral_nucW](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GramBridgeWNamespaced.lean/declarations/literaturerhsw-eq-integral-nucw.md) | 74 | `result-track:a718df79d467281eca52ade6006ead372a19759e7de6c50cdc98aa851c659dd9` |
+| 6 | `theorem` | [integrable_paperFT_pairTest_mul_nucW2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GramBridgeWNamespaced.lean/declarations/integrable-paperft-pairtest-mul-nucw2.md) | 99 | `result-track:83e4f53f35f53fdde56caebce684f8e8b907b45cca6acda9fd65171072a426f7` |
+| 7 | `theorem` | [GentryW1_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GramBridgeWNamespaced.lean/declarations/gentryw1-eq.md) | 118 | `result-track:2607030f12cf40d407217b9b35292048c359ecf3c21fb8ba3833f6025fe20d5e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

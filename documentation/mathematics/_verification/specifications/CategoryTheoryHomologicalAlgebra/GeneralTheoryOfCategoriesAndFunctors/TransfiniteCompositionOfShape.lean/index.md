@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TransfiniteCompositionOfShape.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TransfiniteCompositionOfShape.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TransfiniteCompositionOfShape.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TransfiniteCompositionOfShape.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -65,13 +65,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TransfiniteCompositionOfShape](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TransfiniteCompositionOfShape.lean/declarations/transfinitecompositionofshape.md) | 44 | `declaration-track:b5272f572e8a030f39a9b65e3f2cc0dd9c65aaf7187183fc24625954b3cdee87` |
-| 2 | `def` | [ofArrowIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TransfiniteCompositionOfShape.lean/declarations/ofarrowiso.md) | 66 | `declaration-track:15bd061d96e2143186ce97eac50828b30953dd0ccff7efb03dd19250dc411ded` |
-| 3 | `def` | [ofComposableArrows](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TransfiniteCompositionOfShape.lean/declarations/ofcomposablearrows.md) | 77 | `declaration-track:20c90af059efbaa0301f6738222c37e23a59a48cf9a43003060ac263eb3a9655` |
-| 4 | `def` | [ofOrderIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TransfiniteCompositionOfShape.lean/declarations/oforderiso.md) | 88 | `declaration-track:a6ee428df9592ec46202d405e32e0b064cd5d298b3298a411d9768e9660372c1` |
-| 5 | `def` | [map](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TransfiniteCompositionOfShape.lean/declarations/map.md) | 99 | `declaration-track:00e22929650f56c15fe878ea42fdabe7c572d170b329af519fb44c425d799182` |
-| 6 | `def` | [iic](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TransfiniteCompositionOfShape.lean/declarations/iic.md) | 113 | `declaration-track:adcf87b8b31ebcb82adad2ad186f5bff20f8317ca4ecc55dc10cc477ac0b9d49` |
-| 7 | `def` | [ici](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TransfiniteCompositionOfShape.lean/declarations/ici.md) | 128 | `declaration-track:66df635e1a75b723a3d0f0ed8279694102bd59b2bf75ff850ee4a07e7b050305` |
+| 1 | `structure` | [TransfiniteCompositionOfShape](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TransfiniteCompositionOfShape.lean/declarations/transfinitecompositionofshape.md) | 44 | `declaration-track:b5272f572e8a030f39a9b65e3f2cc0dd9c65aaf7187183fc24625954b3cdee87` |
+| 2 | `def` | [ofArrowIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TransfiniteCompositionOfShape.lean/declarations/ofarrowiso.md) | 66 | `declaration-track:15bd061d96e2143186ce97eac50828b30953dd0ccff7efb03dd19250dc411ded` |
+| 3 | `def` | [ofComposableArrows](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TransfiniteCompositionOfShape.lean/declarations/ofcomposablearrows.md) | 77 | `declaration-track:20c90af059efbaa0301f6738222c37e23a59a48cf9a43003060ac263eb3a9655` |
+| 4 | `def` | [ofOrderIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TransfiniteCompositionOfShape.lean/declarations/oforderiso.md) | 88 | `declaration-track:a6ee428df9592ec46202d405e32e0b064cd5d298b3298a411d9768e9660372c1` |
+| 5 | `def` | [map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TransfiniteCompositionOfShape.lean/declarations/map.md) | 99 | `declaration-track:00e22929650f56c15fe878ea42fdabe7c572d170b329af519fb44c425d799182` |
+| 6 | `def` | [iic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TransfiniteCompositionOfShape.lean/declarations/iic.md) | 113 | `declaration-track:adcf87b8b31ebcb82adad2ad186f5bff20f8317ca4ecc55dc10cc477ac0b9d49` |
+| 7 | `def` | [ici](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TransfiniteCompositionOfShape.lean/declarations/ici.md) | 128 | `declaration-track:66df635e1a75b723a3d0f0ed8279694102bd59b2bf75ff850ee4a07e7b050305` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

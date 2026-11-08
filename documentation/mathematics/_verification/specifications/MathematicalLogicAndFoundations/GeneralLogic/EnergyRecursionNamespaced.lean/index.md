@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EnergyRecursionNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EnergyRecursionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EnergyRecursionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EnergyRecursionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [YangMillsEnergyRecursion](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EnergyRecursionNamespaced.lean/declarations/yangmillsenergyrecursion.md) | 34 | `declaration-track:050051a2b4fa8d65173d8b27a165e123fddccc6d57ce1750a989423892f76d0a` |
-| 2 | `theorem` | [positive_energy_enters_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EnergyRecursionNamespaced.lean/declarations/positive-energy-enters-if-supplied.md) | 47 | `result-track:f4441b349523a7dffa53ffcbcbbaf455c6fba1692bd8f5c03fc55c973d540a84` |
-| 3 | `theorem` | [sticky_mass_boundary_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EnergyRecursionNamespaced.lean/declarations/sticky-mass-boundary-if-supplied.md) | 52 | `result-track:c8e04c4146dffd7888bb208cf5421725fd4aac0ed6b8bbdb87f6c6de64ec2194` |
-| 4 | `theorem` | [zero_mass_escape_obstructed_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EnergyRecursionNamespaced.lean/declarations/zero-mass-escape-obstructed-if-supplied.md) | 59 | `result-track:2dfff8c025ef6d120f23401c592c4ede403a10a50803f0db9abfa1e2fd72f966` |
-| 5 | `theorem` | [no_zero_mass_escape_without_obstruction](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EnergyRecursionNamespaced.lean/declarations/no-zero-mass-escape-without-obstruction.md) | 66 | `result-track:829262e0a1badb77d7af27b7d359f07c3da24c2f5a4adbcf69242d88a6761226` |
+| 1 | `structure` | [YangMillsEnergyRecursion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EnergyRecursionNamespaced.lean/declarations/yangmillsenergyrecursion.md) | 34 | `declaration-track:050051a2b4fa8d65173d8b27a165e123fddccc6d57ce1750a989423892f76d0a` |
+| 2 | `theorem` | [positive_energy_enters_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EnergyRecursionNamespaced.lean/declarations/positive-energy-enters-if-supplied.md) | 47 | `result-track:f4441b349523a7dffa53ffcbcbbaf455c6fba1692bd8f5c03fc55c973d540a84` |
+| 3 | `theorem` | [sticky_mass_boundary_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EnergyRecursionNamespaced.lean/declarations/sticky-mass-boundary-if-supplied.md) | 52 | `result-track:c8e04c4146dffd7888bb208cf5421725fd4aac0ed6b8bbdb87f6c6de64ec2194` |
+| 4 | `theorem` | [zero_mass_escape_obstructed_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EnergyRecursionNamespaced.lean/declarations/zero-mass-escape-obstructed-if-supplied.md) | 59 | `result-track:2dfff8c025ef6d120f23401c592c4ede403a10a50803f0db9abfa1e2fd72f966` |
+| 5 | `theorem` | [no_zero_mass_escape_without_obstruction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EnergyRecursionNamespaced.lean/declarations/no-zero-mass-escape-without-obstruction.md) | 66 | `result-track:829262e0a1badb77d7af27b7d359f07c3da24c2f5a4adbcf69242d88a6761226` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

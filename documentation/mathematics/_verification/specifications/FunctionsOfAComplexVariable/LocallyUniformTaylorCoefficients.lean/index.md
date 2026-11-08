@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/LocallyUniformTaylorCoefficients.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/LocallyUniformTaylorCoefficients.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/LocallyUniformTaylorCoefficients.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/LocallyUniformTaylorCoefficients.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,9 +60,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [tendstoLocallyUniformlyOn_iterate_deriv](../../../../FunctionsOfAComplexVariable/LocallyUniformTaylorCoefficients.lean/declarations/tendstolocallyuniformlyon-iterate-deriv.md) | 57 | `result-track:b7eaac681cc57cc7dcf2cb36dce716ab19a11da340b7c51fa1bddf956a8d92e1` |
-| 2 | `theorem` | [tendsto_iteratedDeriv_zero_of_locallyUniform](../../../../FunctionsOfAComplexVariable/LocallyUniformTaylorCoefficients.lean/declarations/tendsto-iteratedderiv-zero-of-locallyuniform.md) | 73 | `result-track:598d6295127c47f24f8a40fc267e20abb312c9b9dc274c27274e0073ef4a50d1` |
-| 3 | `theorem` | [tendsto_taylorCoefficient_zero_of_locallyUniform](../../../../FunctionsOfAComplexVariable/LocallyUniformTaylorCoefficients.lean/declarations/tendsto-taylorcoefficient-zero-of-locallyuniform.md) | 86 | `result-track:51f4ce80130e2f8b98c9044de5ccc68ca811d28aeec69210b169543c4943af4b` |
+| 1 | `theorem` | [tendstoLocallyUniformlyOn_iterate_deriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/LocallyUniformTaylorCoefficients.lean/declarations/tendstolocallyuniformlyon-iterate-deriv.md) | 57 | `result-track:b7eaac681cc57cc7dcf2cb36dce716ab19a11da340b7c51fa1bddf956a8d92e1` |
+| 2 | `theorem` | [tendsto_iteratedDeriv_zero_of_locallyUniform](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/LocallyUniformTaylorCoefficients.lean/declarations/tendsto-iteratedderiv-zero-of-locallyuniform.md) | 73 | `result-track:598d6295127c47f24f8a40fc267e20abb312c9b9dc274c27274e0073ef4a50d1` |
+| 3 | `theorem` | [tendsto_taylorCoefficient_zero_of_locallyUniform](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/LocallyUniformTaylorCoefficients.lean/declarations/tendsto-taylorcoefficient-zero-of-locallyuniform.md) | 86 | `result-track:51f4ce80130e2f8b98c9044de5ccc68ca811d28aeec69210b169543c4943af4b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

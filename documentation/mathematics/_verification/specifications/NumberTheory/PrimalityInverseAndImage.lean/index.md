@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/PrimalityInverseAndImage.lean/index.md) · [Full source](../../../../NumberTheory/PrimalityInverseAndImage.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimalityInverseAndImage.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimalityInverseAndImage.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../NumberTheory/PrimalityInverseAndImage.lean/declarations/example-source-edition-2.md) | 29 | `declaration-track:84eedc997753452f4080c7f42ad866daef74fdedb25a26f023d90221277db42f` |
-| 2 | `example` | [(anonymous)](../../../../NumberTheory/PrimalityInverseAndImage.lean/declarations/example.md) | 35 | `declaration-track:4f2ce18a235c8131637797d0f95fd4f70df88da164ce96f1f0a50976f1a8e4f5` |
-| 3 | `example` | [(anonymous)](../../../../NumberTheory/PrimalityInverseAndImage.lean/declarations/example-source-edition-3.md) | 40 | `declaration-track:a1aed81d8ef414bd80eec7bca2f1d2cf882be95f7e2297e248ebef0064d2e462` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimalityInverseAndImage.lean/declarations/example-source-edition-2.md) | 29 | `declaration-track:84eedc997753452f4080c7f42ad866daef74fdedb25a26f023d90221277db42f` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimalityInverseAndImage.lean/declarations/example.md) | 35 | `declaration-track:4f2ce18a235c8131637797d0f95fd4f70df88da164ce96f1f0a50976f1a8e4f5` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimalityInverseAndImage.lean/declarations/example-source-edition-3.md) | 40 | `declaration-track:a1aed81d8ef414bd80eec7bca2f1d2cf882be95f7e2297e248ebef0064d2e462` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

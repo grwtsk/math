@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LimitInvariantLawNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LimitInvariantLawNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LimitInvariantLawNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LimitInvariantLawNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [UniqueProjectiveInvariantLaw](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LimitInvariantLawNamespaced.lean/declarations/uniqueprojectiveinvariantlaw.md) | 17 | `declaration-track:725d607eaf66deccdc931c9b245fa0cc24aa95e5e9011d7ed9ab06a38725223a` |
-| 2 | `theorem` | [projective_limit_invariant_law_unique](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LimitInvariantLawNamespaced.lean/declarations/projective-limit-invariant-law-unique.md) | 32 | `result-track:f58c556aedc18226920db96905dd25ae439eb2bb2696bdbd29acdd93183b9d6e` |
+| 1 | `structure` | [UniqueProjectiveInvariantLaw](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LimitInvariantLawNamespaced.lean/declarations/uniqueprojectiveinvariantlaw.md) | 17 | `declaration-track:725d607eaf66deccdc931c9b245fa0cc24aa95e5e9011d7ed9ab06a38725223a` |
+| 2 | `theorem` | [projective_limit_invariant_law_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LimitInvariantLawNamespaced.lean/declarations/projective-limit-invariant-law-unique.md) | 32 | `result-track:f58c556aedc18226920db96905dd25ae439eb2bb2696bdbd29acdd93183b9d6e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

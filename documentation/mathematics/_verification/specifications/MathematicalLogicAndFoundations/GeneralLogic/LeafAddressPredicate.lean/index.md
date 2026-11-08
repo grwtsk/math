@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LeafAddressPredicate.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LeafAddressPredicate.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LeafAddressPredicate.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LeafAddressPredicate.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `Folder.Catalan.Tree` — import line 21; external provider; requires a separately pinned dependency.
-- [Direction Words And Addresses](../../../../../Combinatorics/DirectionWordsAndAddresses.lean/index.md) — import line 22; pinned internal source present.
+- [Direction Words And Addresses](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DirectionWordsAndAddresses.lean/index.md) — import line 22; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [HasAddress](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LeafAddressPredicate.lean/declarations/hasaddress.md) | 42 | `declaration-track:7b06246f97e3fbdb3773ed557601ebe2816e1ba7c88c39b7021391cbac6fc2e7` |
+| 1 | `def` | [HasAddress](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LeafAddressPredicate.lean/declarations/hasaddress.md) | 42 | `declaration-track:7b06246f97e3fbdb3773ed557601ebe2816e1ba7c88c39b7021391cbac6fc2e7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

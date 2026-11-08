@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/WithWeakNamespacePublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/WithWeakNamespacePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/WithWeakNamespacePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/WithWeakNamespacePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [resolveNamespaceRelative](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/WithWeakNamespacePublic.lean/declarations/resolvenamespacerelative.md) | 19 | `declaration-track:a09cd9ac9fa04898a704bb9618aa0da9cd3548471222b5cb2cfc50989ab2c4a0` |
-| 2 | `def` | [withWeakNamespace](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/WithWeakNamespacePublic.lean/declarations/withweaknamespace.md) | 26 | `declaration-track:0a5fb8da2f2acf00958f0bbfbdc4a619ddf270a40bdaa0b4e63f84303e722697` |
-| 3 | `def` | [elabWithWeakNamespace](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/WithWeakNamespacePublic.lean/declarations/elabwithweaknamespace.md) | 34 | `declaration-track:d1d81ce01c6de886825aa27c44701affb01848aa2dac04c79bab445be7427237` |
+| 1 | `def` | [resolveNamespaceRelative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/WithWeakNamespacePublic.lean/declarations/resolvenamespacerelative.md) | 19 | `declaration-track:a09cd9ac9fa04898a704bb9618aa0da9cd3548471222b5cb2cfc50989ab2c4a0` |
+| 2 | `def` | [withWeakNamespace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/WithWeakNamespacePublic.lean/declarations/withweaknamespace.md) | 26 | `declaration-track:0a5fb8da2f2acf00958f0bbfbdc4a619ddf270a40bdaa0b4e63f84303e722697` |
+| 3 | `def` | [elabWithWeakNamespace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/WithWeakNamespacePublic.lean/declarations/elabwithweaknamespace.md) | 34 | `declaration-track:d1d81ce01c6de886825aa27c44701affb01848aa2dac04c79bab445be7427237` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AdelicSpectralSheafAdelicSpectralSheaf.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AdelicSpectralSheafAdelicSpectralSheaf.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AdelicSpectralSheafAdelicSpectralSheaf.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AdelicSpectralSheafAdelicSpectralSheaf.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,10 +60,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [AdelicSpectralSheaf](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AdelicSpectralSheafAdelicSpectralSheaf.lean/declarations/adelicspectralsheaf.md) | 21 | `declaration-track:a537cd51d6e4fadfe79a27173536b76490610514734939adc266677d6f9176fe` |
-| 2 | `theorem` | [adelic_sheaf_has_hyperdescent](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AdelicSpectralSheafAdelicSpectralSheaf.lean/declarations/adelic-sheaf-has-hyperdescent.md) | 35 | `result-track:7c1acf4da93586fc20b24156fcc2b56f9f7e48048a55f00864f256ae92752d24` |
-| 3 | `theorem` | [adelic_sheaf_has_local_factor_compatibility](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AdelicSpectralSheafAdelicSpectralSheaf.lean/declarations/adelic-sheaf-has-local-factor-compatibility.md) | 40 | `result-track:7f4e6ded120de0cb815f4f7b0c9f00644ea53e7a85bd47de81c84ed2dd065c9d` |
-| 4 | `theorem` | [adelic_sheaf_has_product_formula_compatibility](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AdelicSpectralSheafAdelicSpectralSheaf.lean/declarations/adelic-sheaf-has-product-formula-compatibility.md) | 45 | `result-track:61724c47e29a3935e20af49fcf6b50484a3a78cd6aee09ec7ef45358fe882f26` |
+| 1 | `structure` | [AdelicSpectralSheaf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AdelicSpectralSheafAdelicSpectralSheaf.lean/declarations/adelicspectralsheaf.md) | 21 | `declaration-track:a537cd51d6e4fadfe79a27173536b76490610514734939adc266677d6f9176fe` |
+| 2 | `theorem` | [adelic_sheaf_has_hyperdescent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AdelicSpectralSheafAdelicSpectralSheaf.lean/declarations/adelic-sheaf-has-hyperdescent.md) | 35 | `result-track:7c1acf4da93586fc20b24156fcc2b56f9f7e48048a55f00864f256ae92752d24` |
+| 3 | `theorem` | [adelic_sheaf_has_local_factor_compatibility](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AdelicSpectralSheafAdelicSpectralSheaf.lean/declarations/adelic-sheaf-has-local-factor-compatibility.md) | 40 | `result-track:7f4e6ded120de0cb815f4f7b0c9f00644ea53e7a85bd47de81c84ed2dd065c9d` |
+| 4 | `theorem` | [adelic_sheaf_has_product_formula_compatibility](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AdelicSpectralSheafAdelicSpectralSheaf.lean/declarations/adelic-sheaf-has-product-formula-compatibility.md) | 45 | `result-track:61724c47e29a3935e20af49fcf6b50484a3a78cd6aee09ec7ef45358fe882f26` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

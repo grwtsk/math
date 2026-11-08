@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/CarrierNamespaced.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/CarrierNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CarrierNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CarrierNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [Algebra](../../../../AssociativeRingsAndAlgebras/CarrierNamespaced.lean/declarations/algebra.md) | 22 | `declaration-track:bb5e1b9f22cc988455512294c7da8f600c7753ca304498f6bb2b4e0090fefbfd` |
-| 2 | `abbrev` | [boolAlgebra](../../../../AssociativeRingsAndAlgebras/CarrierNamespaced.lean/declarations/boolalgebra.md) | 25 | `declaration-track:cfd6fe07b668c974dd569a00793485b4888b8131bf7e7e1de63310268449be75` |
-| 3 | `theorem` | [bool_join](../../../../AssociativeRingsAndAlgebras/CarrierNamespaced.lean/declarations/bool-join.md) | 27 | `result-track:d3093bd4b97309266b7d8f24bccd1a0ee16b24d1a262d56fc922b701ca0b1d29` |
-| 4 | `theorem` | [bool_meet](../../../../AssociativeRingsAndAlgebras/CarrierNamespaced.lean/declarations/bool-meet.md) | 31 | `result-track:a06e63f07de5bd95dc32461fbea292848fb69c186a2907b0febeb87991e5cecd` |
-| 5 | `theorem` | [bool_complement](../../../../AssociativeRingsAndAlgebras/CarrierNamespaced.lean/declarations/bool-complement.md) | 35 | `result-track:f91eb800edd33771673868b1f5d9908d2cdb5362b4869198f4fc9cbb54f0e5bc` |
+| 1 | `abbrev` | [Algebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CarrierNamespaced.lean/declarations/algebra.md) | 22 | `declaration-track:bb5e1b9f22cc988455512294c7da8f600c7753ca304498f6bb2b4e0090fefbfd` |
+| 2 | `abbrev` | [boolAlgebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CarrierNamespaced.lean/declarations/boolalgebra.md) | 25 | `declaration-track:cfd6fe07b668c974dd569a00793485b4888b8131bf7e7e1de63310268449be75` |
+| 3 | `theorem` | [bool_join](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CarrierNamespaced.lean/declarations/bool-join.md) | 27 | `result-track:d3093bd4b97309266b7d8f24bccd1a0ee16b24d1a262d56fc922b701ca0b1d29` |
+| 4 | `theorem` | [bool_meet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CarrierNamespaced.lean/declarations/bool-meet.md) | 31 | `result-track:a06e63f07de5bd95dc32461fbea292848fb69c186a2907b0febeb87991e5cecd` |
+| 5 | `theorem` | [bool_complement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CarrierNamespaced.lean/declarations/bool-complement.md) | 35 | `result-track:f91eb800edd33771673868b1f5d9908d2cdb5362b4869198f4fc9cbb54f0e5bc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

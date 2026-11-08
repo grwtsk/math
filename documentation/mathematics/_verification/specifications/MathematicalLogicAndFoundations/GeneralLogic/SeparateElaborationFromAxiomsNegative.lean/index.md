@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SeparateElaborationFromAxiomsNegative.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SeparateElaborationFromAxiomsNegative.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SeparateElaborationFromAxiomsNegative.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SeparateElaborationFromAxiomsNegative.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Interfaces.GraphHodgePortCore`](../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GraphHodgePortCore.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Interfaces.GraphHodgePortCore`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GraphHodgePortCore.lean/index.md) — import line 1; pinned internal source present.
 - `Lean.Util.CollectAxioms` — import line 2; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `axiom` | [injected](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SeparateElaborationFromAxiomsNegative.lean/declarations/injected.md) | 4 | `declaration-track:bdc255eb8b8cbb0ec91f416e2f520a62f39e032dad60859e1f6238015ce34def` |
-| 2 | `theorem` | [exploit](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SeparateElaborationFromAxiomsNegative.lean/declarations/exploit.md) | 5 | `result-track:dfbd4947f72d42798d3cf4744f20653010604dc9bee7ba54f988c8c26a76a28c` |
+| 1 | `axiom` | [injected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SeparateElaborationFromAxiomsNegative.lean/declarations/injected.md) | 4 | `declaration-track:bdc255eb8b8cbb0ec91f416e2f520a62f39e032dad60859e1f6238015ce34def` |
+| 2 | `theorem` | [exploit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SeparateElaborationFromAxiomsNegative.lean/declarations/exploit.md) | 5 | `result-track:dfbd4947f72d42798d3cf4744f20653010604dc9bee7ba54f988c8c26a76a28c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NatNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NatNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NatNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NatNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [boolProdNatEquivNat](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NatNamespaced.lean/declarations/boolprodnatequivnat.md) | 35 | `declaration-track:0568b993d29d68161b35ca74a05b47fab4504ad4a77355fedb874704ae23e301` |
-| 2 | `def` | [natSumNatEquivNat](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NatNamespaced.lean/declarations/natsumnatequivnat.md) | 45 | `declaration-track:099c310823ead3e8eb36602b7c7795f81e2a47b686f4ca759525a10f0c8e2e02` |
-| 3 | `theorem` | [natSumNatEquivNat_apply](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NatNamespaced.lean/declarations/natsumnatequivnat-apply.md) | 49 | `result-track:eeba429ea7845e8a1bccac5658d3ac7dc018d3fc3bfb72445641174e43941bdc` |
-| 4 | `def` | [intEquivNat](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NatNamespaced.lean/declarations/intequivnat.md) | 54 | `declaration-track:2c51255f9dfe2ca5d8433a80483ffd07bf88fbd7aaa41805e88f11f115ddac36` |
-| 5 | `def` | [prodEquivOfEquivNat](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NatNamespaced.lean/declarations/prodequivofequivnat.md) | 59 | `declaration-track:6a938848cc16163c94d52c78d98d5c02f963b8bd23a77a6a7ae7947ef9e9d28d` |
+| 1 | `def` | [boolProdNatEquivNat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NatNamespaced.lean/declarations/boolprodnatequivnat.md) | 35 | `declaration-track:0568b993d29d68161b35ca74a05b47fab4504ad4a77355fedb874704ae23e301` |
+| 2 | `def` | [natSumNatEquivNat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NatNamespaced.lean/declarations/natsumnatequivnat.md) | 45 | `declaration-track:099c310823ead3e8eb36602b7c7795f81e2a47b686f4ca759525a10f0c8e2e02` |
+| 3 | `theorem` | [natSumNatEquivNat_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NatNamespaced.lean/declarations/natsumnatequivnat-apply.md) | 49 | `result-track:eeba429ea7845e8a1bccac5658d3ac7dc018d3fc3bfb72445641174e43941bdc` |
+| 4 | `def` | [intEquivNat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NatNamespaced.lean/declarations/intequivnat.md) | 54 | `declaration-track:2c51255f9dfe2ca5d8433a80483ffd07bf88fbd7aaa41805e88f11f115ddac36` |
+| 5 | `def` | [prodEquivOfEquivNat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NatNamespaced.lean/declarations/prodequivofequivnat.md) | 59 | `declaration-track:6a938848cc16163c94d52c78d98d5c02f963b8bd23a77a6a7ae7947ef9e9d28d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

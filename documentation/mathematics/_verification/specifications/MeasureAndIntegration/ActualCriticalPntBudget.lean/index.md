@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ActualCriticalPntBudget.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ActualCriticalPntBudget.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCriticalPntBudget.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCriticalPntBudget.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualCriticalPntAbsoluteIntegrand](../../../../MeasureAndIntegration/ActualCriticalPntBudget.lean/declarations/actualcriticalpntabsoluteintegrand.md) | 23 | `declaration-track:1448ccdd3db98c2812f278aba2e9a4520ef0a1b34cabca5b50fbe3f479c56381` |
-| 2 | `def` | [actualCriticalPntAbsoluteBudget](../../../../MeasureAndIntegration/ActualCriticalPntBudget.lean/declarations/actualcriticalpntabsolutebudget.md) | 26 | `declaration-track:79a8ef505a516cf79d916900d64aa50435ed05131c7f72d2eb95c2f0ea03088d` |
-| 3 | `theorem` | [baseline_continuous](../../../../MeasureAndIntegration/ActualCriticalPntBudget.lean/declarations/baseline-continuous.md) | 29 | `result-track:db1ff6e34221471dcae554b511b0720c0cf02f5918ecb1eed89dc7be823fd287` |
-| 4 | `theorem` | [pnt_integrand_continuous](../../../../MeasureAndIntegration/ActualCriticalPntBudget.lean/declarations/pnt-integrand-continuous.md) | 36 | `result-track:d8645494c890964c82bff6c8f48e5a0eb4a40c3b92814a9128006637df8058c8` |
-| 5 | `theorem` | [actualCriticalPntAbsoluteIntegrand_integrable](../../../../MeasureAndIntegration/ActualCriticalPntBudget.lean/declarations/actualcriticalpntabsoluteintegrand-integrable.md) | 43 | `result-track:9d6a9f7644163a5abd6ab2b42ba773809eeeabf0b4e00178951462dca0856201` |
-| 6 | `theorem` | [actualCriticalPntAbsoluteBudget_lower](../../../../MeasureAndIntegration/ActualCriticalPntBudget.lean/declarations/actualcriticalpntabsolutebudget-lower.md) | 55 | `result-track:3290903fab0e8dfdd9e46dfd7ee12a50e45e3687d7ab7669d3f76d46d7ac320a` |
-| 7 | `theorem` | [actualCriticalPntAbsoluteBudget_tendsto_atTop](../../../../MeasureAndIntegration/ActualCriticalPntBudget.lean/declarations/actualcriticalpntabsolutebudget-tendsto-attop.md) | 91 | `result-track:5b7cd9ef8442e7d07fac991de09c62f627b044ee599bf26acc5e654fa63616da` |
+| 1 | `def` | [actualCriticalPntAbsoluteIntegrand](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCriticalPntBudget.lean/declarations/actualcriticalpntabsoluteintegrand.md) | 23 | `declaration-track:1448ccdd3db98c2812f278aba2e9a4520ef0a1b34cabca5b50fbe3f479c56381` |
+| 2 | `def` | [actualCriticalPntAbsoluteBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCriticalPntBudget.lean/declarations/actualcriticalpntabsolutebudget.md) | 26 | `declaration-track:79a8ef505a516cf79d916900d64aa50435ed05131c7f72d2eb95c2f0ea03088d` |
+| 3 | `theorem` | [baseline_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCriticalPntBudget.lean/declarations/baseline-continuous.md) | 29 | `result-track:db1ff6e34221471dcae554b511b0720c0cf02f5918ecb1eed89dc7be823fd287` |
+| 4 | `theorem` | [pnt_integrand_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCriticalPntBudget.lean/declarations/pnt-integrand-continuous.md) | 36 | `result-track:d8645494c890964c82bff6c8f48e5a0eb4a40c3b92814a9128006637df8058c8` |
+| 5 | `theorem` | [actualCriticalPntAbsoluteIntegrand_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCriticalPntBudget.lean/declarations/actualcriticalpntabsoluteintegrand-integrable.md) | 43 | `result-track:9d6a9f7644163a5abd6ab2b42ba773809eeeabf0b4e00178951462dca0856201` |
+| 6 | `theorem` | [actualCriticalPntAbsoluteBudget_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCriticalPntBudget.lean/declarations/actualcriticalpntabsolutebudget-lower.md) | 55 | `result-track:3290903fab0e8dfdd9e46dfd7ee12a50e45e3687d7ab7669d3f76d46d7ac320a` |
+| 7 | `theorem` | [actualCriticalPntAbsoluteBudget_tendsto_atTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCriticalPntBudget.lean/declarations/actualcriticalpntabsolutebudget-tendsto-attop.md) | 91 | `result-track:5b7cd9ef8442e7d07fac991de09c62f627b044ee599bf26acc5e654fa63616da` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

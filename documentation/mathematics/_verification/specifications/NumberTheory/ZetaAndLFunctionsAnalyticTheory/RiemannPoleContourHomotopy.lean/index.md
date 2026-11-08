@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannPoleContourHomotopy.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannPoleContourHomotopy.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannPoleContourHomotopy.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannPoleContourHomotopy.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.PolygonFreeHomotopy`](../../../../../GeneralTopology/PolygonFreeHomotopy.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.RationalPoleContourTube`](../../../../../GeneralTopology/RationalPoleContourTube.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.PolygonFreeHomotopy`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PolygonFreeHomotopy.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.RationalPoleContourTube`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RationalPoleContourTube.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [vertices](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannPoleContourHomotopy.lean/declarations/vertices.md) | 28 | `declaration-track:36b95f6fb4735844a8daa73a72c6f221492636f055924a01fc2c2cb7e5061cc6` |
-| 2 | `def` | [sourceLoop](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannPoleContourHomotopy.lean/declarations/sourceloop.md) | 30 | `declaration-track:b8115ee5eb7dc5e5fc67eceb37faab3fdf8656a118c4067c41d9a396c46a577c` |
-| 3 | `def` | [imageLoop](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannPoleContourHomotopy.lean/declarations/imageloop.md) | 34 | `declaration-track:2b0e2afb011de272a438b346bd1f17365e494bda936ecbad9ae56c30d7abbdca` |
-| 4 | `theorem` | [checked_cells](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannPoleContourHomotopy.lean/declarations/checked-cells.md) | 38 | `result-track:233e40ae7e1fd5f93cee0e322290b622ae9ad937dff08e512f8d3d0ec2fe3bf2` |
-| 5 | `theorem` | [domain_range](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannPoleContourHomotopy.lean/declarations/domain-range.md) | 45 | `result-track:7744a6227b26da457e47ab2c2f548ebcfb221bb28c5519eef86f89a0e4feae29` |
-| 6 | `def` | [freeHomotopy](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannPoleContourHomotopy.lean/declarations/freehomotopy.md) | 53 | `declaration-track:740262f6c3823ad1e57e8bc27f452673a9fde1ec1d65f46a2eb61d8244903a21` |
-| 7 | `theorem` | [source_endpoint](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannPoleContourHomotopy.lean/declarations/source-endpoint.md) | 64 | `result-track:8c051a67756e015045f5b9f19a99b67c8ecce0f81950d99bf64547df72b41e89` |
-| 8 | `theorem` | [image_endpoint](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannPoleContourHomotopy.lean/declarations/image-endpoint.md) | 69 | `result-track:ddedcfaac73ca1b4b3b05525fe7233759698c35cc8c7878d95ef0c11d2c8653d` |
-| 9 | `def` | [puncturedHomotopy](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannPoleContourHomotopy.lean/declarations/puncturedhomotopy.md) | 74 | `declaration-track:03ac9d5d5a9ae9ceb82f4f45f1a0e88be0ab52ff16d9f718bf88c3952a0ba580` |
-| 10 | `theorem` | [basepoint_formula](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannPoleContourHomotopy.lean/declarations/basepoint-formula.md) | 84 | `result-track:e5102e90ad1d5ab8f0c5dd38dcbb9638f2af9e89b1fbbb80d7c5b549feb0e130` |
+| 1 | `def` | [vertices](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannPoleContourHomotopy.lean/declarations/vertices.md) | 28 | `declaration-track:36b95f6fb4735844a8daa73a72c6f221492636f055924a01fc2c2cb7e5061cc6` |
+| 2 | `def` | [sourceLoop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannPoleContourHomotopy.lean/declarations/sourceloop.md) | 30 | `declaration-track:b8115ee5eb7dc5e5fc67eceb37faab3fdf8656a118c4067c41d9a396c46a577c` |
+| 3 | `def` | [imageLoop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannPoleContourHomotopy.lean/declarations/imageloop.md) | 34 | `declaration-track:2b0e2afb011de272a438b346bd1f17365e494bda936ecbad9ae56c30d7abbdca` |
+| 4 | `theorem` | [checked_cells](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannPoleContourHomotopy.lean/declarations/checked-cells.md) | 38 | `result-track:233e40ae7e1fd5f93cee0e322290b622ae9ad937dff08e512f8d3d0ec2fe3bf2` |
+| 5 | `theorem` | [domain_range](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannPoleContourHomotopy.lean/declarations/domain-range.md) | 45 | `result-track:7744a6227b26da457e47ab2c2f548ebcfb221bb28c5519eef86f89a0e4feae29` |
+| 6 | `def` | [freeHomotopy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannPoleContourHomotopy.lean/declarations/freehomotopy.md) | 53 | `declaration-track:740262f6c3823ad1e57e8bc27f452673a9fde1ec1d65f46a2eb61d8244903a21` |
+| 7 | `theorem` | [source_endpoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannPoleContourHomotopy.lean/declarations/source-endpoint.md) | 64 | `result-track:8c051a67756e015045f5b9f19a99b67c8ecce0f81950d99bf64547df72b41e89` |
+| 8 | `theorem` | [image_endpoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannPoleContourHomotopy.lean/declarations/image-endpoint.md) | 69 | `result-track:ddedcfaac73ca1b4b3b05525fe7233759698c35cc8c7878d95ef0c11d2c8653d` |
+| 9 | `def` | [puncturedHomotopy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannPoleContourHomotopy.lean/declarations/puncturedhomotopy.md) | 74 | `declaration-track:03ac9d5d5a9ae9ceb82f4f45f1a0e88be0ab52ff16d9f718bf88c3952a0ba580` |
+| 10 | `theorem` | [basepoint_formula](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannPoleContourHomotopy.lean/declarations/basepoint-formula.md) | 84 | `result-track:e5102e90ad1d5ab8f0c5dd38dcbb9638f2af9e89b1fbbb80d7c5b549feb0e130` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

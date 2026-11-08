@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourcePeanoOneSidedMassNamespacedEdition1.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourcePeanoOneSidedMassNamespacedEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePeanoOneSidedMassNamespacedEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePeanoOneSidedMassNamespacedEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [criticalOneSidedMass](../../../../MeasureAndIntegration/SourcePeanoOneSidedMassNamespacedEdition1.lean/declarations/criticalonesidedmass.md) | 24 | `declaration-track:8a332ecd1505cbd3d318881504f401415db96d52a88ead25e6e9c1d98aa55052` |
-| 2 | `def` | [actualOneSidedPairing](../../../../MeasureAndIntegration/SourcePeanoOneSidedMassNamespacedEdition1.lean/declarations/actualonesidedpairing.md) | 27 | `declaration-track:ad2668159fba016a16e3e84d9c6c7019cb6da2a8c64d4f58b35a616ccef96f31` |
-| 3 | `theorem` | [actualOneSidedPairing_integrable](../../../../MeasureAndIntegration/SourcePeanoOneSidedMassNamespacedEdition1.lean/declarations/actualonesidedpairing-integrable.md) | 31 | `result-track:fcd2972c8502fc07391fe99d7fc17d178fc7abf19e57516e2a313203882c01f6` |
-| 4 | `theorem` | [oneSided_window_pointwise](../../../../MeasureAndIntegration/SourcePeanoOneSidedMassNamespacedEdition1.lean/declarations/onesided-window-pointwise.md) | 37 | `result-track:ad41b1d1833b6e93522b25a4a9a235d748122e7d46ad54a5662e6b5c4bb80986` |
-| 5 | `theorem` | [criticalOneSidedMass_window_integrable](../../../../MeasureAndIntegration/SourcePeanoOneSidedMassNamespacedEdition1.lean/declarations/criticalonesidedmass-window-integrable.md) | 50 | `result-track:c4ce11a0b2885dd05cba33451723cf5d70b4ba0101b001c1a44aad8595ee7b8d` |
-| 6 | `theorem` | [actualOneSidedPairing_dominates_window](../../../../MeasureAndIntegration/SourcePeanoOneSidedMassNamespacedEdition1.lean/declarations/actualonesidedpairing-dominates-window.md) | 70 | `result-track:421f8903e03517e5286d6304989f71529523045a4eef38496a194b3ccdcfb855` |
-| 7 | `theorem` | [oneSided_spikes_transfer](../../../../MeasureAndIntegration/SourcePeanoOneSidedMassNamespacedEdition1.lean/declarations/onesided-spikes-transfer.md) | 91 | `result-track:bc46b59eca21e6e6a36436f53dbe417d226381e30dc41169f32af454a2da3243` |
+| 1 | `def` | [criticalOneSidedMass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePeanoOneSidedMassNamespacedEdition1.lean/declarations/criticalonesidedmass.md) | 24 | `declaration-track:8a332ecd1505cbd3d318881504f401415db96d52a88ead25e6e9c1d98aa55052` |
+| 2 | `def` | [actualOneSidedPairing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePeanoOneSidedMassNamespacedEdition1.lean/declarations/actualonesidedpairing.md) | 27 | `declaration-track:ad2668159fba016a16e3e84d9c6c7019cb6da2a8c64d4f58b35a616ccef96f31` |
+| 3 | `theorem` | [actualOneSidedPairing_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePeanoOneSidedMassNamespacedEdition1.lean/declarations/actualonesidedpairing-integrable.md) | 31 | `result-track:fcd2972c8502fc07391fe99d7fc17d178fc7abf19e57516e2a313203882c01f6` |
+| 4 | `theorem` | [oneSided_window_pointwise](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePeanoOneSidedMassNamespacedEdition1.lean/declarations/onesided-window-pointwise.md) | 37 | `result-track:ad41b1d1833b6e93522b25a4a9a235d748122e7d46ad54a5662e6b5c4bb80986` |
+| 5 | `theorem` | [criticalOneSidedMass_window_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePeanoOneSidedMassNamespacedEdition1.lean/declarations/criticalonesidedmass-window-integrable.md) | 50 | `result-track:c4ce11a0b2885dd05cba33451723cf5d70b4ba0101b001c1a44aad8595ee7b8d` |
+| 6 | `theorem` | [actualOneSidedPairing_dominates_window](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePeanoOneSidedMassNamespacedEdition1.lean/declarations/actualonesidedpairing-dominates-window.md) | 70 | `result-track:421f8903e03517e5286d6304989f71529523045a4eef38496a194b3ccdcfb855` |
+| 7 | `theorem` | [oneSided_spikes_transfer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePeanoOneSidedMassNamespacedEdition1.lean/declarations/onesided-spikes-transfer.md) | 91 | `result-track:bc46b59eca21e6e6a36436f53dbe417d226381e30dc41169f32af454a2da3243` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

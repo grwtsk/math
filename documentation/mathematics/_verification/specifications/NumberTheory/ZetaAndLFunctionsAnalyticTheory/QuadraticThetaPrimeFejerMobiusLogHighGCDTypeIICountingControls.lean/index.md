@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogHighGCDTypeIICountingControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogHighGCDTypeIICountingControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogHighGCDTypeIICountingControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogHighGCDTypeIICountingControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeFejerMobiusLogHighGCDTypeIICounting`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogHighGCDTypeIICounting.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeFejerMobiusLogHighGCDTypeIICounting`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogHighGCDTypeIICounting.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [exactFrontier](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogHighGCDTypeIICountingControls.lean/declarations/exactfrontier.md) | 15 | `declaration-track:a6c070a38e2b8e8865055599864b1e96878aeecee127a3ea06c0447d3c4b92de` |
-| 2 | `theorem` | [finiteDivisorSummatoryClosed](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogHighGCDTypeIICountingControls.lean/declarations/finitedivisorsummatoryclosed.md) | 31 | `result-track:18a610f369e4c1b90ba16f25092af300e2b8eb50554d1259bec16ae84060ee36` |
-| 3 | `theorem` | [exactFejerShiftWeightUnitBoundClosed](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogHighGCDTypeIICountingControls.lean/declarations/exactfejershiftweightunitboundclosed.md) | 38 | `result-track:036f96e1592556791f6c95e5f25e2f65765552cf4a5a45439d14051ea89e8ff5` |
-| 4 | `theorem` | [absoluteHighGCDTypeIIClosed](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogHighGCDTypeIICountingControls.lean/declarations/absolutehighgcdtypeiiclosed.md) | 48 | `result-track:2bdb721ddeb2999c6f62b222c75215cbb68ff40be7eeb1d2508e53b4dd553d13` |
-| 5 | `def` | [remainingArithmeticFrontier](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogHighGCDTypeIICountingControls.lean/declarations/remainingarithmeticfrontier.md) | 53 | `declaration-track:2ccc0f6e03c388d5633195b33617c937c57fc24dbce51d44b0ba429c6d177e64` |
+| 1 | `def` | [exactFrontier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogHighGCDTypeIICountingControls.lean/declarations/exactfrontier.md) | 15 | `declaration-track:a6c070a38e2b8e8865055599864b1e96878aeecee127a3ea06c0447d3c4b92de` |
+| 2 | `theorem` | [finiteDivisorSummatoryClosed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogHighGCDTypeIICountingControls.lean/declarations/finitedivisorsummatoryclosed.md) | 31 | `result-track:18a610f369e4c1b90ba16f25092af300e2b8eb50554d1259bec16ae84060ee36` |
+| 3 | `theorem` | [exactFejerShiftWeightUnitBoundClosed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogHighGCDTypeIICountingControls.lean/declarations/exactfejershiftweightunitboundclosed.md) | 38 | `result-track:036f96e1592556791f6c95e5f25e2f65765552cf4a5a45439d14051ea89e8ff5` |
+| 4 | `theorem` | [absoluteHighGCDTypeIIClosed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogHighGCDTypeIICountingControls.lean/declarations/absolutehighgcdtypeiiclosed.md) | 48 | `result-track:2bdb721ddeb2999c6f62b222c75215cbb68ff40be7eeb1d2508e53b4dd553d13` |
+| 5 | `def` | [remainingArithmeticFrontier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogHighGCDTypeIICountingControls.lean/declarations/remainingarithmeticfrontier.md) | 53 | `declaration-track:2ccc0f6e03c388d5633195b33617c937c57fc24dbce51d44b0ba429c6d177e64` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

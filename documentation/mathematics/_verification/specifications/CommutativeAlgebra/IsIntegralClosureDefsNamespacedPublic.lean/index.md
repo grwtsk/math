@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/IsIntegralClosureDefsNamespacedPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/IsIntegralClosureDefsNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsIntegralClosureDefsNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsIntegralClosureDefsNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [IsIntegralClosure](../../../../CommutativeAlgebra/IsIntegralClosureDefsNamespacedPublic.lean/declarations/isintegralclosure.md) | 36 | `declaration-track:f215962ce3e22150d0fae5b6c6f2a2be802a2898261c93e6779101862f2990d8` |
-| 2 | `theorem` | [IsIntegralClosure.faithfulSMul](../../../../CommutativeAlgebra/IsIntegralClosureDefsNamespacedPublic.lean/declarations/isintegralclosure-faithfulsmul.md) | 41 | `result-track:461bdbeb3ad7de3f5a0877f277c1e6ad123819bcb228bc3903101f431ec69085` |
+| 1 | `class` | [IsIntegralClosure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsIntegralClosureDefsNamespacedPublic.lean/declarations/isintegralclosure.md) | 36 | `declaration-track:f215962ce3e22150d0fae5b6c6f2a2be802a2898261c93e6779101862f2990d8` |
+| 2 | `theorem` | [IsIntegralClosure.faithfulSMul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsIntegralClosureDefsNamespacedPublic.lean/declarations/isintegralclosure-faithfulsmul.md) | 41 | `result-track:461bdbeb3ad7de3f5a0877f277c1e6ad123819bcb228bc3903101f431ec69085` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

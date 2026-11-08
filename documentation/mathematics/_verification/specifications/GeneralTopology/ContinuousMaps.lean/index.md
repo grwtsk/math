@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ContinuousMaps.lean/index.md) · [Full source](../../../../GeneralTopology/ContinuousMaps.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousMaps.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousMaps.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [ContinuousMap.isUltrametricDist](../../../../GeneralTopology/ContinuousMaps.lean/declarations/continuousmap-isultrametricdist.md) | 15 | `declaration-track:8ab41d5651e27ca1e3e284821bb3ce7f90b060a1aa16a889fc3cbb9fe7333ae1` |
+| 1 | `instance` | [ContinuousMap.isUltrametricDist](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousMaps.lean/declarations/continuousmap-isultrametricdist.md) | 15 | `declaration-track:8ab41d5651e27ca1e3e284821bb3ce7f90b060a1aa16a889fc3cbb9fe7333ae1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CausalResponseGram.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CausalResponseGram.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalResponseGram.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalResponseGram.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Moebius.WeightedIntegralEnergy`](../../../../MeasureAndIntegration/WeightedIntegralEnergy.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.WeightedIntegralEnergy`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/WeightedIntegralEnergy.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,19 +57,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [signedSignal](../../../../MeasureAndIntegration/CausalResponseGram.lean/declarations/signedsignal.md) | 34 | `declaration-track:7a4a841d8a3a0e54425929759efdaf13370393ede2d78f5a1d0e69c051f2f441` |
-| 2 | `def` | [quadraticForm](../../../../MeasureAndIntegration/CausalResponseGram.lean/declarations/quadraticform.md) | 38 | `declaration-track:8e1687098447e8414992f8c0210dfd5eb581c7b732b0d0f2a7de8177ae2f49e0` |
-| 3 | `theorem` | [weighted_response_product_integrable](../../../../MeasureAndIntegration/CausalResponseGram.lean/declarations/weighted-response-product-integrable.md) | 42 | `result-track:03e5c96ff782469687182368b61c5eb1733826d79ca9408cdd1cc3372f1c02d4` |
-| 4 | `theorem` | [weighted_response_row_integrable](../../../../MeasureAndIntegration/CausalResponseGram.lean/declarations/weighted-response-row-integrable.md) | 47 | `result-track:68bd5aab9750f9b1201ecf0943421194f9b3c33cae6c0c40bda2c814cf76ef23` |
-| 5 | `theorem` | [signedSignal_square](../../../../MeasureAndIntegration/CausalResponseGram.lean/declarations/signedsignal-square.md) | 54 | `result-track:71f5d1b3e26732c5681c7f5d6eae9a2c7f13707e9c6f37276343c622bf35a8c5` |
-| 6 | `theorem` | [signedSignal_square_integrable](../../../../MeasureAndIntegration/CausalResponseGram.lean/declarations/signedsignal-square-integrable.md) | 68 | `result-track:05451f765131ff29de137ffc115912d5dc50382d6e3f45c10be4e7aafb791fc1` |
-| 7 | `theorem` | [signedSignal_integral_square_eq_quadraticForm](../../../../MeasureAndIntegration/CausalResponseGram.lean/declarations/signedsignal-integral-square-eq-quadraticform.md) | 80 | `result-track:486946a5a7f87976aeb0ab4aee1f81f04f995d6e2ae9f624d33d8282772eb8cb` |
-| 8 | `theorem` | [gram_symmetric](../../../../MeasureAndIntegration/CausalResponseGram.lean/declarations/gram-symmetric.md) | 104 | `result-track:4fe4927fc89c9d43a839df74abc090c9fd095f715f7f202bb0228599b853c389` |
-| 9 | `theorem` | [gram_diagonal_nonnegative](../../../../MeasureAndIntegration/CausalResponseGram.lean/declarations/gram-diagonal-nonnegative.md) | 110 | `result-track:ddb2ad7638c7ab9d61f5754048c3ed19f54db94cc4421cd031b3ff4c70b7966d` |
-| 10 | `theorem` | [quadraticForm_nonnegative](../../../../MeasureAndIntegration/CausalResponseGram.lean/declarations/quadraticform-nonnegative.md) | 118 | `result-track:fd74c19a3eecb153ec81b241b890a81cc9a3bc03bc4873488ee517f7a9a6736e` |
-| 11 | `theorem` | [actual_energy_nonnegative](../../../../MeasureAndIntegration/CausalResponseGram.lean/declarations/actual-energy-nonnegative.md) | 126 | `result-track:90219066b7a6d355ec664894ae2969cc9358e3ad5a6321ef1b1b84589073c5e3` |
-| 12 | `theorem` | [actual_diagonal_nonnegative](../../../../MeasureAndIntegration/CausalResponseGram.lean/declarations/actual-diagonal-nonnegative.md) | 131 | `result-track:d6b47c009d7b2bd2023eab636bc0e4c1996fd89bcff34ac2b42300837a951b51` |
-| 13 | `theorem` | [actual_cross_lower_bound](../../../../MeasureAndIntegration/CausalResponseGram.lean/declarations/actual-cross-lower-bound.md) | 139 | `result-track:ae2afafc055b3475a382629e5e398866f462ce51d4b6e6f1da31478057c4fe7f` |
+| 1 | `def` | [signedSignal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalResponseGram.lean/declarations/signedsignal.md) | 34 | `declaration-track:7a4a841d8a3a0e54425929759efdaf13370393ede2d78f5a1d0e69c051f2f441` |
+| 2 | `def` | [quadraticForm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalResponseGram.lean/declarations/quadraticform.md) | 38 | `declaration-track:8e1687098447e8414992f8c0210dfd5eb581c7b732b0d0f2a7de8177ae2f49e0` |
+| 3 | `theorem` | [weighted_response_product_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalResponseGram.lean/declarations/weighted-response-product-integrable.md) | 42 | `result-track:03e5c96ff782469687182368b61c5eb1733826d79ca9408cdd1cc3372f1c02d4` |
+| 4 | `theorem` | [weighted_response_row_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalResponseGram.lean/declarations/weighted-response-row-integrable.md) | 47 | `result-track:68bd5aab9750f9b1201ecf0943421194f9b3c33cae6c0c40bda2c814cf76ef23` |
+| 5 | `theorem` | [signedSignal_square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalResponseGram.lean/declarations/signedsignal-square.md) | 54 | `result-track:71f5d1b3e26732c5681c7f5d6eae9a2c7f13707e9c6f37276343c622bf35a8c5` |
+| 6 | `theorem` | [signedSignal_square_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalResponseGram.lean/declarations/signedsignal-square-integrable.md) | 68 | `result-track:05451f765131ff29de137ffc115912d5dc50382d6e3f45c10be4e7aafb791fc1` |
+| 7 | `theorem` | [signedSignal_integral_square_eq_quadraticForm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalResponseGram.lean/declarations/signedsignal-integral-square-eq-quadraticform.md) | 80 | `result-track:486946a5a7f87976aeb0ab4aee1f81f04f995d6e2ae9f624d33d8282772eb8cb` |
+| 8 | `theorem` | [gram_symmetric](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalResponseGram.lean/declarations/gram-symmetric.md) | 104 | `result-track:4fe4927fc89c9d43a839df74abc090c9fd095f715f7f202bb0228599b853c389` |
+| 9 | `theorem` | [gram_diagonal_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalResponseGram.lean/declarations/gram-diagonal-nonnegative.md) | 110 | `result-track:ddb2ad7638c7ab9d61f5754048c3ed19f54db94cc4421cd031b3ff4c70b7966d` |
+| 10 | `theorem` | [quadraticForm_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalResponseGram.lean/declarations/quadraticform-nonnegative.md) | 118 | `result-track:fd74c19a3eecb153ec81b241b890a81cc9a3bc03bc4873488ee517f7a9a6736e` |
+| 11 | `theorem` | [actual_energy_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalResponseGram.lean/declarations/actual-energy-nonnegative.md) | 126 | `result-track:90219066b7a6d355ec664894ae2969cc9358e3ad5a6321ef1b1b84589073c5e3` |
+| 12 | `theorem` | [actual_diagonal_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalResponseGram.lean/declarations/actual-diagonal-nonnegative.md) | 131 | `result-track:d6b47c009d7b2bd2023eab636bc0e4c1996fd89bcff34ac2b42300837a951b51` |
+| 13 | `theorem` | [actual_cross_lower_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalResponseGram.lean/declarations/actual-cross-lower-bound.md) | 139 | `result-track:ae2afafc055b3475a382629e5e398866f462ce51d4b6e6f1da31478057c4fe7f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RealizedRecipeStreamAndListValues.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RealizedRecipeStreamAndListValues.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RealizedRecipeStreamAndListValues.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RealizedRecipeStreamAndListValues.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SymmetricMatrixStream](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RealizedRecipeStreamAndListValues.lean/declarations/symmetricmatrixstream.md) | 39 | `declaration-track:b00eed405e1d5a44f72146642255cb10dfc8f6fcd498f40283d3ab3967b35286` |
-| 2 | `def` | [materialize?](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RealizedRecipeStreamAndListValues.lean/declarations/materialize.md) | 48 | `declaration-track:5f258012c954ea728baaa01d0d21435c12197f1ddffe466ad55001015e1da1a9` |
-| 3 | `def` | [binaryMatrixStreamOfList](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RealizedRecipeStreamAndListValues.lean/declarations/binarymatrixstreamoflist.md) | 61 | `declaration-track:eaaaf29c81ad2305051f55ac28d94522b9ea52de6335834f8a04b45629999c22` |
+| 1 | `structure` | [SymmetricMatrixStream](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RealizedRecipeStreamAndListValues.lean/declarations/symmetricmatrixstream.md) | 39 | `declaration-track:b00eed405e1d5a44f72146642255cb10dfc8f6fcd498f40283d3ab3967b35286` |
+| 2 | `def` | [materialize?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RealizedRecipeStreamAndListValues.lean/declarations/materialize.md) | 48 | `declaration-track:5f258012c954ea728baaa01d0d21435c12197f1ddffe466ad55001015e1da1a9` |
+| 3 | `def` | [binaryMatrixStreamOfList](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RealizedRecipeStreamAndListValues.lean/declarations/binarymatrixstreamoflist.md) | 61 | `declaration-track:eaaaf29c81ad2305051f55ac28d94522b9ea52de6335834f8a04b45629999c22` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

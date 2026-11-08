@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LeanNotationNamespacedLeanLatexNotation.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LeanNotationNamespacedLeanLatexNotation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LeanNotationNamespacedLeanLatexNotation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LeanNotationNamespacedLeanLatexNotation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [LeanLatexNotation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LeanNotationNamespacedLeanLatexNotation.lean/declarations/leanlatexnotation.md) | 26 | `declaration-track:f4060e510ad24a08c62112623dcc271aee4d8c70d5d90e18921bc580d6caa9ed` |
-| 2 | `theorem` | [leanLatexNotation_escapesSpecialChars](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LeanNotationNamespacedLeanLatexNotation.lean/declarations/leanlatexnotation-escapesspecialchars.md) | 32 | `result-track:8f09ee60e825546ce0daeb2550e92da5296dd861cc322c311524e0bbf7830198` |
+| 1 | `structure` | [LeanLatexNotation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LeanNotationNamespacedLeanLatexNotation.lean/declarations/leanlatexnotation.md) | 26 | `declaration-track:f4060e510ad24a08c62112623dcc271aee4d8c70d5d90e18921bc580d6caa9ed` |
+| 2 | `theorem` | [leanLatexNotation_escapesSpecialChars](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LeanNotationNamespacedLeanLatexNotation.lean/declarations/leanlatexnotation-escapesspecialchars.md) | 32 | `result-track:8f09ee60e825546ce0daeb2550e92da5296dd861cc322c311524e0bbf7830198` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

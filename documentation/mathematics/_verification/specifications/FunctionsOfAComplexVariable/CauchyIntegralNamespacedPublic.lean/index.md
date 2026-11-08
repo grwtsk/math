@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/CauchyIntegralNamespacedPublic.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/CauchyIntegralNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/CauchyIntegralNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/CauchyIntegralNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Cauchy Integral Namespaced Public](../../../../FunctionsOfAComplexVariable/CauchyIntegralNamespacedPublic.lean/declarations/root-grwtsk-analysis-realanalysis-differentialcalculus-rootdifferentiabl.md) | 25 | `result-track:42f0874fc7264a41cc62d3f9ea32efeb910215f88ac3174f2501ad109693ddff` |
+| 1 | `theorem` | [Cauchy Integral Namespaced Public](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/CauchyIntegralNamespacedPublic.lean/declarations/root-grwtsk-analysis-realanalysis-differentialcalculus-rootdifferentiabl.md) | 25 | `result-track:42f0874fc7264a41cc62d3f9ea32efeb910215f88ac3174f2501ad109693ddff` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

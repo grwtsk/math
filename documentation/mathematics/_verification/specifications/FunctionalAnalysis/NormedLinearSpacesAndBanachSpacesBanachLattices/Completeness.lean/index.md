@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/Completeness.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/Completeness.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/Completeness.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/Completeness.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [Metric.exists_subseq_summable_dist_of_cauchySeq](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/Completeness.lean/declarations/metric-exists-subseq-summable-dist-of-cauchyseq.md) | 39 | `result-track:9d5ac79be8a558a3254e941fb4e13a491fca9934b10a35df6ab8b7be78cf9219` |
-| 2 | `lemma` | [NormedAddCommGroup.completeSpace_of_summable_imp_tendsto](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/Completeness.lean/declarations/normedaddcommgroup-completespace-of-summable-imp-tendsto.md) | 55 | `result-track:3a76b949eba86cb801d93cd294ff83bf38e246fda8d279425e7e1caa3049cf3e` |
-| 3 | `lemma` | [NormedAddCommGroup.summable_imp_tendsto_of_complete](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/Completeness.lean/declarations/normedaddcommgroup-summable-imp-tendsto-of-complete.md) | 77 | `result-track:70ce296eca52d66e439fbe6a029a40923a6d18a13fda0dfa1a6d806f4d268ea3` |
-| 4 | `lemma` | [NormedAddCommGroup.summable_imp_tendsto_iff_completeSpace](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/Completeness.lean/declarations/normedaddcommgroup-summable-imp-tendsto-iff-completespace.md) | 84 | `result-track:09675372f0544f9a5be3c9b4f59dc126a064427813259b0b5cae8b4a9b7bc0c7` |
+| 1 | `lemma` | [Metric.exists_subseq_summable_dist_of_cauchySeq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/Completeness.lean/declarations/metric-exists-subseq-summable-dist-of-cauchyseq.md) | 39 | `result-track:9d5ac79be8a558a3254e941fb4e13a491fca9934b10a35df6ab8b7be78cf9219` |
+| 2 | `lemma` | [NormedAddCommGroup.completeSpace_of_summable_imp_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/Completeness.lean/declarations/normedaddcommgroup-completespace-of-summable-imp-tendsto.md) | 55 | `result-track:3a76b949eba86cb801d93cd294ff83bf38e246fda8d279425e7e1caa3049cf3e` |
+| 3 | `lemma` | [NormedAddCommGroup.summable_imp_tendsto_of_complete](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/Completeness.lean/declarations/normedaddcommgroup-summable-imp-tendsto-of-complete.md) | 77 | `result-track:70ce296eca52d66e439fbe6a029a40923a6d18a13fda0dfa1a6d806f4d268ea3` |
+| 4 | `lemma` | [NormedAddCommGroup.summable_imp_tendsto_iff_completeSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/Completeness.lean/declarations/normedaddcommgroup-summable-imp-tendsto-iff-completespace.md) | 84 | `result-track:09675372f0544f9a5be3c9b4f59dc126a064427813259b0b5cae8b4a9b7bc0c7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

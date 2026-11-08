@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CubicCoefficientCalibrationNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CubicCoefficientCalibrationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CubicCoefficientCalibrationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CubicCoefficientCalibrationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [fourthDisplacementEnergyPolynomial](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CubicCoefficientCalibrationNamespaced.lean/declarations/fourthdisplacementenergypolynomial.md) | 27 | `declaration-track:14e8825d54730d320006f9856cf09d372456e9f1d47aa0221bbdb9eda8d04356` |
-| 2 | `theorem` | [cubic_energy_ratio_le_sixty_seven](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CubicCoefficientCalibrationNamespaced.lean/declarations/cubic-energy-ratio-le-sixty-seven.md) | 31 | `result-track:e620fe05dd28a6c363cef6bc2d86f25a1d3b17abd332d5f3ef315c923175fc06` |
-| 3 | `theorem` | [cubic_energy_ratio_le_sixty_seven_of_scale](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CubicCoefficientCalibrationNamespaced.lean/declarations/cubic-energy-ratio-le-sixty-seven-of-scale.md) | 40 | `result-track:47c59614f8358c13d04803609fd797f87f9b3afce0d35a1641dc1323896aa98d` |
-| 4 | `theorem` | [refined_cubic_calibration_budget_lt](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CubicCoefficientCalibrationNamespaced.lean/declarations/refined-cubic-calibration-budget-lt.md) | 49 | `result-track:5f246633563a6200217d2990a25352d0fc5c6f5ab88ad9677d5167c474af1d46` |
+| 1 | `def` | [fourthDisplacementEnergyPolynomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CubicCoefficientCalibrationNamespaced.lean/declarations/fourthdisplacementenergypolynomial.md) | 27 | `declaration-track:14e8825d54730d320006f9856cf09d372456e9f1d47aa0221bbdb9eda8d04356` |
+| 2 | `theorem` | [cubic_energy_ratio_le_sixty_seven](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CubicCoefficientCalibrationNamespaced.lean/declarations/cubic-energy-ratio-le-sixty-seven.md) | 31 | `result-track:e620fe05dd28a6c363cef6bc2d86f25a1d3b17abd332d5f3ef315c923175fc06` |
+| 3 | `theorem` | [cubic_energy_ratio_le_sixty_seven_of_scale](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CubicCoefficientCalibrationNamespaced.lean/declarations/cubic-energy-ratio-le-sixty-seven-of-scale.md) | 40 | `result-track:47c59614f8358c13d04803609fd797f87f9b3afce0d35a1641dc1323896aa98d` |
+| 4 | `theorem` | [refined_cubic_calibration_budget_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CubicCoefficientCalibrationNamespaced.lean/declarations/refined-cubic-calibration-budget-lt.md) | 49 | `result-track:5f246633563a6200217d2990a25352d0fc5c6f5ab88ad9677d5167c474af1d46` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

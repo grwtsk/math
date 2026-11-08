@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Outline.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Outline.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Outline.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Outline.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SectionEntry](../../../../../ComputerScience/AlgorithmsInComputerScience/Outline.lean/declarations/sectionentry.md) | 7 | `declaration-track:3c12f2905f5d781c74c24f1258132650eb0224b99edc10a8f9498f1c9b8f4a6c` |
-| 2 | `def` | [sections](../../../../../ComputerScience/AlgorithmsInComputerScience/Outline.lean/declarations/sections.md) | 19 | `declaration-track:33e9e2ac411d36e55bebe5154bcbfe553ec5964531b3caa37522e5e020244902` |
-| 3 | `def` | [sectionCount](../../../../../ComputerScience/AlgorithmsInComputerScience/Outline.lean/declarations/sectioncount.md) | 38 | `declaration-track:b8c82b5e291ac9c07f4533a19db9cdfe926fb730d2be6826305c8a76636249a3` |
+| 1 | `structure` | [SectionEntry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Outline.lean/declarations/sectionentry.md) | 7 | `declaration-track:3c12f2905f5d781c74c24f1258132650eb0224b99edc10a8f9498f1c9b8f4a6c` |
+| 2 | `def` | [sections](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Outline.lean/declarations/sections.md) | 19 | `declaration-track:33e9e2ac411d36e55bebe5154bcbfe553ec5964531b3caa37522e5e020244902` |
+| 3 | `def` | [sectionCount](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Outline.lean/declarations/sectioncount.md) | 38 | `declaration-track:b8c82b5e291ac9c07f4533a19db9cdfe926fb730d2be6826305c8a76636249a3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

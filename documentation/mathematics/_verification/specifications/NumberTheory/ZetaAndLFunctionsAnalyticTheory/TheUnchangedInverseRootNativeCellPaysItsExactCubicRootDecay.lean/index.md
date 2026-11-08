@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheUnchangedInverseRootNativeCellPaysItsExactCubicRootDecay.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheUnchangedInverseRootNativeCellPaysItsExactCubicRootDecay.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheUnchangedInverseRootNativeCellPaysItsExactCubicRootDecay.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheUnchangedInverseRootNativeCellPaysItsExactCubicRootDecay.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [literal_native_cell_decay](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheUnchangedInverseRootNativeCellPaysItsExactCubicRootDecay.lean/declarations/literal-native-cell-decay.md) | 20 | `result-track:56909e61e4ca3e939f7e7ff5ac4ba3fae8a98a98b624f54db0cdbe4c89b7526f` |
-| 2 | `theorem` | [actual_crossing_cell_decay](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheUnchangedInverseRootNativeCellPaysItsExactCubicRootDecay.lean/declarations/actual-crossing-cell-decay.md) | 45 | `result-track:e9b25ddca04dc00b42ab19556db9f77d8ba771d60b73e892d31ee75fab2de48e` |
+| 1 | `theorem` | [literal_native_cell_decay](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheUnchangedInverseRootNativeCellPaysItsExactCubicRootDecay.lean/declarations/literal-native-cell-decay.md) | 20 | `result-track:56909e61e4ca3e939f7e7ff5ac4ba3fae8a98a98b624f54db0cdbe4c89b7526f` |
+| 2 | `theorem` | [actual_crossing_cell_decay](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheUnchangedInverseRootNativeCellPaysItsExactCubicRootDecay.lean/declarations/actual-crossing-cell-decay.md) | 45 | `result-track:e9b25ddca04dc00b42ab19556db9f77d8ba771d60b73e892d31ee75fab2de48e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

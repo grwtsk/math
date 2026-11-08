@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OriginalZeroLabelsConstructorDistinctions.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OriginalZeroLabelsConstructorDistinctions.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OriginalZeroLabelsConstructorDistinctions.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OriginalZeroLabelsConstructorDistinctions.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [spectralFieldZero_ne_ellipticIdentityZero](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OriginalZeroLabelsConstructorDistinctions.lean/declarations/spectralfieldzero-ne-ellipticidentityzero.md) | 35 | `result-track:5353de832b4121263a9a116418a5e17bf74b3fe2def353721f96802b3429eac5` |
-| 2 | `theorem` | [heatResidualZero_ne_lFunctionZero](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OriginalZeroLabelsConstructorDistinctions.lean/declarations/heatresidualzero-ne-lfunctionzero.md) | 40 | `result-track:6803a39579db6f31a504a270d9a1772124e4bdb17d6a31b8f1f367dcf24a9eb8` |
-| 3 | `theorem` | [shellHolonomyZero_ne_deBruijnNewmanZero](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OriginalZeroLabelsConstructorDistinctions.lean/declarations/shellholonomyzero-ne-debruijnnewmanzero.md) | 45 | `result-track:be71a46a189ba23bb0bd6487f4b0ffb18957d1561e91f29e87e12f50ad6a54d8` |
-| 4 | `theorem` | [neutralPhaseZero_ne_spectralModeZero](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OriginalZeroLabelsConstructorDistinctions.lean/declarations/neutralphasezero-ne-spectralmodezero.md) | 50 | `result-track:e5369596b9944442c98b69e78ee1c91ab722fdbd3fd929f4ff30a021b59ae598` |
+| 1 | `theorem` | [spectralFieldZero_ne_ellipticIdentityZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OriginalZeroLabelsConstructorDistinctions.lean/declarations/spectralfieldzero-ne-ellipticidentityzero.md) | 35 | `result-track:5353de832b4121263a9a116418a5e17bf74b3fe2def353721f96802b3429eac5` |
+| 2 | `theorem` | [heatResidualZero_ne_lFunctionZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OriginalZeroLabelsConstructorDistinctions.lean/declarations/heatresidualzero-ne-lfunctionzero.md) | 40 | `result-track:6803a39579db6f31a504a270d9a1772124e4bdb17d6a31b8f1f367dcf24a9eb8` |
+| 3 | `theorem` | [shellHolonomyZero_ne_deBruijnNewmanZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OriginalZeroLabelsConstructorDistinctions.lean/declarations/shellholonomyzero-ne-debruijnnewmanzero.md) | 45 | `result-track:be71a46a189ba23bb0bd6487f4b0ffb18957d1561e91f29e87e12f50ad6a54d8` |
+| 4 | `theorem` | [neutralPhaseZero_ne_spectralModeZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OriginalZeroLabelsConstructorDistinctions.lean/declarations/neutralphasezero-ne-spectralmodezero.md) | 50 | `result-track:e5369596b9944442c98b69e78ee1c91ab722fdbd3fd929f4ff30a021b59ae598` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ActualCenteredPeriodMeanBudget.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ActualCenteredPeriodMeanBudget.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ActualCenteredPeriodMeanBudget.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ActualCenteredPeriodMeanBudget.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actualDivisorPeriodicResidual_one_zero](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ActualCenteredPeriodMeanBudget.lean/declarations/actualdivisorperiodicresidual-one-zero.md) | 18 | `result-track:81a16f7b096082d25d82fc4f5231f4f5ccd3ade97b59ff29eb916097130ff027` |
-| 2 | `theorem` | [actualDivisorPeriodicResidual_abs_le](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ActualCenteredPeriodMeanBudget.lean/declarations/actualdivisorperiodicresidual-abs-le.md) | 24 | `result-track:030c6421d1b6d618659c0d07682b2e85215dffa91cc950c751be9a69f52b1679` |
-| 3 | `theorem` | [actual_signed_periodic_residual_abs_le](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ActualCenteredPeriodMeanBudget.lean/declarations/actual-signed-periodic-residual-abs-le.md) | 42 | `result-track:9c9ce65c91ec8a26ba5369cde20d2497e71e2b36a407fea14f921f528fb8c813` |
-| 4 | `theorem` | [actualCenteredPrefixPeriodMean_abs_le](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ActualCenteredPeriodMeanBudget.lean/declarations/actualcenteredprefixperiodmean-abs-le.md) | 67 | `result-track:f7577d050d42065b6572f75fa97f31b2ada4d2e80c0568d5025b12d30e48c0a5` |
+| 1 | `theorem` | [actualDivisorPeriodicResidual_one_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ActualCenteredPeriodMeanBudget.lean/declarations/actualdivisorperiodicresidual-one-zero.md) | 18 | `result-track:81a16f7b096082d25d82fc4f5231f4f5ccd3ade97b59ff29eb916097130ff027` |
+| 2 | `theorem` | [actualDivisorPeriodicResidual_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ActualCenteredPeriodMeanBudget.lean/declarations/actualdivisorperiodicresidual-abs-le.md) | 24 | `result-track:030c6421d1b6d618659c0d07682b2e85215dffa91cc950c751be9a69f52b1679` |
+| 3 | `theorem` | [actual_signed_periodic_residual_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ActualCenteredPeriodMeanBudget.lean/declarations/actual-signed-periodic-residual-abs-le.md) | 42 | `result-track:9c9ce65c91ec8a26ba5369cde20d2497e71e2b36a407fea14f921f528fb8c813` |
+| 4 | `theorem` | [actualCenteredPrefixPeriodMean_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ActualCenteredPeriodMeanBudget.lean/declarations/actualcenteredprefixperiodmean-abs-le.md) | 67 | `result-track:f7577d050d42065b6572f75fa97f31b2ada4d2e80c0568d5025b12d30e48c0a5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

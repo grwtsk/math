@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/ResultsAlternative27.lean/index.md) · [Full source](../../../../FunctionalAnalysis/ResultsAlternative27.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ResultsAlternative27.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ResultsAlternative27.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [rawEnergyZero_orthogonal_all](../../../../FunctionalAnalysis/ResultsAlternative27.lean/declarations/rawenergyzero-orthogonal-all.md) | 18 | `result-track:a57f73a1cb4d9d733c21d859496ba4900d7ac5339777069a86a6667a759e3ce7` |
+| 1 | `theorem` | [rawEnergyZero_orthogonal_all](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ResultsAlternative27.lean/declarations/rawenergyzero-orthogonal-all.md) | 18 | `result-track:a57f73a1cb4d9d733c21d859496ba4900d7ac5339777069a86a6667a759e3ce7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

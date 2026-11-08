@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CanonicalPortWeakToStrong.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CanonicalPortWeakToStrong.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CanonicalPortWeakToStrong.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CanonicalPortWeakToStrong.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Logic.ExternalPTSSystemTransport`](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExternalPTSSystemTransport.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Logic.ExternalPTSSystemTransport`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExternalPTSSystemTransport.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [refl](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CanonicalPortWeakToStrong.lean/declarations/refl-source-edition-2.md) | 10 | `declaration-track:bcc9655c863e8f2041a81cae9771c6d3290838adebfe2de271def68ed0f44150` |
-| 2 | `def` | [refl](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CanonicalPortWeakToStrong.lean/declarations/refl.md) | 20 | `declaration-track:2ad4da8b72de9237e6008d62ac0afc239746b8f99b608d80ec431d185726a3b0` |
-| 3 | `def` | [canonicalPortSource](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CanonicalPortWeakToStrong.lean/declarations/canonicalportsource.md) | 37 | `declaration-track:05f144837bce345cf1dbc6a5b1bb3038fd7cc891b5fe65ae0c7938ceb0bdee64` |
-| 4 | `def` | [canonicalPortWeakToStrong](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CanonicalPortWeakToStrong.lean/declarations/canonicalportweaktostrong.md) | 49 | `declaration-track:2233fd509e112e06b13a81d39c9172f5a031bfecec7c923bcf8316e248da15a3` |
-| 5 | `theorem` | [canonicalPortStrong_of_weak](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CanonicalPortWeakToStrong.lean/declarations/canonicalportstrong-of-weak.md) | 58 | `result-track:e010bb8075a37b1afc7aa8587a670a11c633103936152379ff5e5cd16e8de6d1` |
-| 6 | `def` | [canonicalPortWeakToStrong_identityTransport](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CanonicalPortWeakToStrong.lean/declarations/canonicalportweaktostrong-identitytransport.md) | 64 | `declaration-track:c240ba955ef3698686418bc634a9c5504d0f8abb9fe4822a8e0684eba476ff4c` |
+| 1 | `def` | [refl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CanonicalPortWeakToStrong.lean/declarations/refl-source-edition-2.md) | 10 | `declaration-track:bcc9655c863e8f2041a81cae9771c6d3290838adebfe2de271def68ed0f44150` |
+| 2 | `def` | [refl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CanonicalPortWeakToStrong.lean/declarations/refl.md) | 20 | `declaration-track:2ad4da8b72de9237e6008d62ac0afc239746b8f99b608d80ec431d185726a3b0` |
+| 3 | `def` | [canonicalPortSource](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CanonicalPortWeakToStrong.lean/declarations/canonicalportsource.md) | 37 | `declaration-track:05f144837bce345cf1dbc6a5b1bb3038fd7cc891b5fe65ae0c7938ceb0bdee64` |
+| 4 | `def` | [canonicalPortWeakToStrong](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CanonicalPortWeakToStrong.lean/declarations/canonicalportweaktostrong.md) | 49 | `declaration-track:2233fd509e112e06b13a81d39c9172f5a031bfecec7c923bcf8316e248da15a3` |
+| 5 | `theorem` | [canonicalPortStrong_of_weak](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CanonicalPortWeakToStrong.lean/declarations/canonicalportstrong-of-weak.md) | 58 | `result-track:e010bb8075a37b1afc7aa8587a670a11c633103936152379ff5e5cd16e8de6d1` |
+| 6 | `def` | [canonicalPortWeakToStrong_identityTransport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CanonicalPortWeakToStrong.lean/declarations/canonicalportweaktostrong-identitytransport.md) | 64 | `declaration-track:c240ba955ef3698686418bc634a9c5504d0f8abb9fe4822a8e0684eba476ff4c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EuclideanDomainFieldPublic.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EuclideanDomainFieldPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EuclideanDomainFieldPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EuclideanDomainFieldPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EuclideanDomainFieldPublic.lean/declarations/instance.md) | 25 | `declaration-track:da4b0453f9c051fabbaa9c2e3273088a40536b90610763310c6c9dd352a7c3f1` |
-| 2 | `theorem` | [mod_eq](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EuclideanDomainFieldPublic.lean/declarations/mod-eq.md) | 38 | `result-track:f592637fd4ff80cc59c76e27f8787c7ba4b391b1125396020512e9049b5a1e11` |
-| 3 | `theorem` | [gcd_eq](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EuclideanDomainFieldPublic.lean/declarations/gcd-eq.md) | 41 | `result-track:dd5ff90035fb38d8b81cc095a1cbce0653272c4c9ac1de18c1e159e40d6673a5` |
-| 4 | `theorem` | [gcd_zero_eq](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EuclideanDomainFieldPublic.lean/declarations/gcd-zero-eq.md) | 46 | `result-track:7f179ceaccbddef315721f6edcce2be3cda68eb21917ee4aced9612a6eca5e80` |
-| 5 | `theorem` | [gcd_eq_of_ne](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EuclideanDomainFieldPublic.lean/declarations/gcd-eq-of-ne.md) | 50 | `result-track:3e92611c63c3a86e051ee45f8916aef3b95d3487b88c5a22319ce56d8d3368a1` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EuclideanDomainFieldPublic.lean/declarations/instance.md) | 25 | `declaration-track:da4b0453f9c051fabbaa9c2e3273088a40536b90610763310c6c9dd352a7c3f1` |
+| 2 | `theorem` | [mod_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EuclideanDomainFieldPublic.lean/declarations/mod-eq.md) | 38 | `result-track:f592637fd4ff80cc59c76e27f8787c7ba4b391b1125396020512e9049b5a1e11` |
+| 3 | `theorem` | [gcd_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EuclideanDomainFieldPublic.lean/declarations/gcd-eq.md) | 41 | `result-track:dd5ff90035fb38d8b81cc095a1cbce0653272c4c9ac1de18c1e159e40d6673a5` |
+| 4 | `theorem` | [gcd_zero_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EuclideanDomainFieldPublic.lean/declarations/gcd-zero-eq.md) | 46 | `result-track:7f179ceaccbddef315721f6edcce2be3cda68eb21917ee4aced9612a6eca5e80` |
+| 5 | `theorem` | [gcd_eq_of_ne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EuclideanDomainFieldPublic.lean/declarations/gcd-eq-of-ne.md) | 50 | `result-track:3e92611c63c3a86e051ee45f8916aef3b95d3487b88c5a22319ce56d8d3368a1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

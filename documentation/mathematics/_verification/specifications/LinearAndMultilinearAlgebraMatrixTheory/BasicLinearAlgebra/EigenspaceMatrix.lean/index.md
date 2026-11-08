@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/EigenspaceMatrix.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/EigenspaceMatrix.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/EigenspaceMatrix.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/EigenspaceMatrix.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [hasEigenvector_toLin_diagonal](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/EigenspaceMatrix.lean/declarations/haseigenvector-tolin-diagonal-source-edition-2.md) | 32 | `result-track:ddb11461f0fcc428d855819534b744cc1fe43e7374735a88c9e167e4fbabd436` |
-| 2 | `lemma` | [hasEigenvector_toLin'_diagonal](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/EigenspaceMatrix.lean/declarations/haseigenvector-tolin-diagonal.md) | 37 | `result-track:1b3a9a456870fd6ca8d52302a52d8dc977ae76c76b69d255e26bff33005cc966` |
-| 3 | `lemma` | [hasEigenvalue_toLin_diagonal_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/EigenspaceMatrix.lean/declarations/haseigenvalue-tolin-diagonal-iff-source-edition-2.md) | 42 | `result-track:4db773d439b1aad91ad239a8c367fef64833282d431f718360a33fa7a9bd26a5` |
-| 4 | `lemma` | [hasEigenvalue_toLin'_diagonal_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/EigenspaceMatrix.lean/declarations/haseigenvalue-tolin-diagonal-iff.md) | 66 | `result-track:03de2832aff5a1b48a09f2f104fab016aa3c45d0667fe5254ad15c49c77e8a07` |
-| 5 | `lemma` | [spectrum_diagonal](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/EigenspaceMatrix.lean/declarations/spectrum-diagonal.md) | 73 | `result-track:7849c09d7df50f0da4a788009fcadd1605699f33acd569e8212b60c3d5640e87` |
+| 1 | `lemma` | [hasEigenvector_toLin_diagonal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/EigenspaceMatrix.lean/declarations/haseigenvector-tolin-diagonal-source-edition-2.md) | 32 | `result-track:ddb11461f0fcc428d855819534b744cc1fe43e7374735a88c9e167e4fbabd436` |
+| 2 | `lemma` | [hasEigenvector_toLin'_diagonal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/EigenspaceMatrix.lean/declarations/haseigenvector-tolin-diagonal.md) | 37 | `result-track:1b3a9a456870fd6ca8d52302a52d8dc977ae76c76b69d255e26bff33005cc966` |
+| 3 | `lemma` | [hasEigenvalue_toLin_diagonal_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/EigenspaceMatrix.lean/declarations/haseigenvalue-tolin-diagonal-iff-source-edition-2.md) | 42 | `result-track:4db773d439b1aad91ad239a8c367fef64833282d431f718360a33fa7a9bd26a5` |
+| 4 | `lemma` | [hasEigenvalue_toLin'_diagonal_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/EigenspaceMatrix.lean/declarations/haseigenvalue-tolin-diagonal-iff.md) | 66 | `result-track:03de2832aff5a1b48a09f2f104fab016aa3c45d0667fe5254ad15c49c77e8a07` |
+| 5 | `lemma` | [spectrum_diagonal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/EigenspaceMatrix.lean/declarations/spectrum-diagonal.md) | 73 | `result-track:7849c09d7df50f0da4a788009fcadd1605699f33acd569e8212b60c3d5640e87` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

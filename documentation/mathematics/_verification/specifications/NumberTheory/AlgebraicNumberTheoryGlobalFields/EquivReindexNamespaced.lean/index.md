@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/EquivReindexNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/EquivReindexNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/EquivReindexNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/EquivReindexNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [equivReindex](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/EquivReindexNamespaced.lean/declarations/equivreindex.md) | 37 | `declaration-track:fc98b3e375e58f9802f4129d7f09890ebf043624eca5e8ddb7a6cad01dc614ac` |
-| 2 | `abbrev` | [basisMatrix](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/EquivReindexNamespaced.lean/declarations/basismatrix.md) | 44 | `declaration-track:9c2274a27291a7ce2ae9b44a99b3ae9c6dc667502bba150428dc9ca63d549375` |
-| 3 | `theorem` | [det_of_basisMatrix_non_zero](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/EquivReindexNamespaced.lean/declarations/det-of-basismatrix-non-zero.md) | 47 | `result-track:155366827f84673bbd6a5ee79b55159062b08fafa2f079fce5e68a35976ee8ee` |
-| 4 | `instance` | [(anonymous)](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/EquivReindexNamespaced.lean/declarations/instance.md) | 60 | `declaration-track:59de22094500fff0676beb8d9f32591450a2288802e29b29c7db275d3e8c8738` |
-| 5 | `theorem` | [canonicalEmbedding_eq_basisMatrix_mulVec](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/EquivReindexNamespaced.lean/declarations/canonicalembedding-eq-basismatrix-mulvec.md) | 65 | `result-track:ed04ce9011ae6d32b3e71168ea2cd935d5666a8519117cc54aa8ed7bc7a47f8d` |
-| 6 | `theorem` | [inverse_basisMatrix_mulVec_eq_repr](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/EquivReindexNamespaced.lean/declarations/inverse-basismatrix-mulvec-eq-repr.md) | 74 | `result-track:b7cf5e861c5902f28367756f6bc80f0d0478c59525f339d6d6e8b9ae92069441` |
+| 1 | `abbrev` | [equivReindex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/EquivReindexNamespaced.lean/declarations/equivreindex.md) | 37 | `declaration-track:fc98b3e375e58f9802f4129d7f09890ebf043624eca5e8ddb7a6cad01dc614ac` |
+| 2 | `abbrev` | [basisMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/EquivReindexNamespaced.lean/declarations/basismatrix.md) | 44 | `declaration-track:9c2274a27291a7ce2ae9b44a99b3ae9c6dc667502bba150428dc9ca63d549375` |
+| 3 | `theorem` | [det_of_basisMatrix_non_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/EquivReindexNamespaced.lean/declarations/det-of-basismatrix-non-zero.md) | 47 | `result-track:155366827f84673bbd6a5ee79b55159062b08fafa2f079fce5e68a35976ee8ee` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/EquivReindexNamespaced.lean/declarations/instance.md) | 60 | `declaration-track:59de22094500fff0676beb8d9f32591450a2288802e29b29c7db275d3e8c8738` |
+| 5 | `theorem` | [canonicalEmbedding_eq_basisMatrix_mulVec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/EquivReindexNamespaced.lean/declarations/canonicalembedding-eq-basismatrix-mulvec.md) | 65 | `result-track:ed04ce9011ae6d32b3e71168ea2cd935d5666a8519117cc54aa8ed7bc7a47f8d` |
+| 6 | `theorem` | [inverse_basisMatrix_mulVec_eq_repr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/EquivReindexNamespaced.lean/declarations/inverse-basismatrix-mulvec-eq-repr.md) | 74 | `result-track:b7cf5e861c5902f28367756f6bc80f0d0478c59525f339d6d6e8b9ae92069441` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

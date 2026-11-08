@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HasConicalTerminal.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HasConicalTerminal.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HasConicalTerminal.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HasConicalTerminal.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [HasConicalTerminal](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HasConicalTerminal.lean/declarations/hasconicalterminal.md) | 20 | `declaration-track:e892272ee4e24cfb5f7bdf04840ae21a9b97952b1357fc468a4749b63407d6e2` |
-| 2 | `example` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HasConicalTerminal.lean/declarations/example.md) | 25 | `declaration-track:68b201d4254a60c5f1ccfd7efb6e61704f1bde571e5ac28a31e5babb72ee0722` |
-| 3 | `instance` | [HasConicalProducts.hasConicalTerminal](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HasConicalTerminal.lean/declarations/hasconicalproducts-hasconicalterminal.md) | 27 | `declaration-track:a8c49276e013586aeba68e18919ae3b0381665138d87799d857f7efa1f1251b6` |
+| 1 | `abbrev` | [HasConicalTerminal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HasConicalTerminal.lean/declarations/hasconicalterminal.md) | 20 | `declaration-track:e892272ee4e24cfb5f7bdf04840ae21a9b97952b1357fc468a4749b63407d6e2` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HasConicalTerminal.lean/declarations/example.md) | 25 | `declaration-track:68b201d4254a60c5f1ccfd7efb6e61704f1bde571e5ac28a31e5babb72ee0722` |
+| 3 | `instance` | [HasConicalProducts.hasConicalTerminal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HasConicalTerminal.lean/declarations/hasconicalproducts-hasconicalterminal.md) | 27 | `declaration-track:a8c49276e013586aeba68e18919ae3b0381665138d87799d857f7efa1f1251b6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

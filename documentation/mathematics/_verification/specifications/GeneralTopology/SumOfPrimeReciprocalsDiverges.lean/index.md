@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SumOfPrimeReciprocalsDiverges.lean/index.md) · [Full source](../../../../GeneralTopology/SumOfPrimeReciprocalsDiverges.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SumOfPrimeReciprocalsDiverges.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SumOfPrimeReciprocalsDiverges.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [P](../../../../GeneralTopology/SumOfPrimeReciprocalsDiverges.lean/declarations/p.md) | 47 | `declaration-track:f31301f8365abb5c65145a159a3f55aab0240265d3cffb566de495c0db3c8c48` |
-| 2 | `def` | [U](../../../../GeneralTopology/SumOfPrimeReciprocalsDiverges.lean/declarations/u.md) | 52 | `declaration-track:7c9c1164007c000ce813f945bc24186a6be092f11991f0dddb0a733f2a5be153` |
-| 3 | `def` | [M](../../../../GeneralTopology/SumOfPrimeReciprocalsDiverges.lean/declarations/m.md) | 57 | `declaration-track:c00e258a4e4e37b579ad7b9e3ebe9baf42fc45411ac12bc61dd0e99c8e2a0768` |
-| 4 | `theorem` | [sum_lt_half_of_not_tendsto](../../../../GeneralTopology/SumOfPrimeReciprocalsDiverges.lean/declarations/sum-lt-half-of-not-tendsto.md) | 66 | `result-track:20fc7c7f87e66f3a4df1df04e83dba41257b5502dcd59956efa64d8999eca78d` |
-| 5 | `theorem` | [range_sdiff_eq_biUnion](../../../../GeneralTopology/SumOfPrimeReciprocalsDiverges.lean/declarations/range-sdiff-eq-biunion.md) | 96 | `result-track:ab806f5a0ab494ddd3af9d88a523cbd6f40ddd19dc54634d38ef964cc4f97fc6` |
-| 6 | `theorem` | [card_le_mul_sum](../../../../GeneralTopology/SumOfPrimeReciprocalsDiverges.lean/declarations/card-le-mul-sum.md) | 113 | `result-track:2aedc4f05e8be898e7affbba36612d28c2d22c4aafe041c0a4114ed9425bed7b` |
-| 7 | `theorem` | [card_le_two_pow](../../../../GeneralTopology/SumOfPrimeReciprocalsDiverges.lean/declarations/card-le-two-pow.md) | 127 | `result-track:18ea9b934724d0ba069236b26596d2e79556ccc2c1363e54a24b912ecb34f0a6` |
-| 8 | `theorem` | [card_le_two_pow_mul_sqrt](../../../../GeneralTopology/SumOfPrimeReciprocalsDiverges.lean/declarations/card-le-two-pow-mul-sqrt.md) | 160 | `result-track:da40c50874a0c294c7caf9b588b3afbbd8738ef3555a2ab5b15424a1e27cede0` |
-| 9 | `theorem` | [Real.tendsto_sum_one_div_prime_atTop](../../../../GeneralTopology/SumOfPrimeReciprocalsDiverges.lean/declarations/real-tendsto-sum-one-div-prime-attop.md) | 192 | `result-track:c36504dd2c6b577bb7f20315ed9f6ca40254a7c8e4bec9635d48e93525dae4db` |
+| 1 | `def` | [P](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SumOfPrimeReciprocalsDiverges.lean/declarations/p.md) | 47 | `declaration-track:f31301f8365abb5c65145a159a3f55aab0240265d3cffb566de495c0db3c8c48` |
+| 2 | `def` | [U](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SumOfPrimeReciprocalsDiverges.lean/declarations/u.md) | 52 | `declaration-track:7c9c1164007c000ce813f945bc24186a6be092f11991f0dddb0a733f2a5be153` |
+| 3 | `def` | [M](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SumOfPrimeReciprocalsDiverges.lean/declarations/m.md) | 57 | `declaration-track:c00e258a4e4e37b579ad7b9e3ebe9baf42fc45411ac12bc61dd0e99c8e2a0768` |
+| 4 | `theorem` | [sum_lt_half_of_not_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SumOfPrimeReciprocalsDiverges.lean/declarations/sum-lt-half-of-not-tendsto.md) | 66 | `result-track:20fc7c7f87e66f3a4df1df04e83dba41257b5502dcd59956efa64d8999eca78d` |
+| 5 | `theorem` | [range_sdiff_eq_biUnion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SumOfPrimeReciprocalsDiverges.lean/declarations/range-sdiff-eq-biunion.md) | 96 | `result-track:ab806f5a0ab494ddd3af9d88a523cbd6f40ddd19dc54634d38ef964cc4f97fc6` |
+| 6 | `theorem` | [card_le_mul_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SumOfPrimeReciprocalsDiverges.lean/declarations/card-le-mul-sum.md) | 113 | `result-track:2aedc4f05e8be898e7affbba36612d28c2d22c4aafe041c0a4114ed9425bed7b` |
+| 7 | `theorem` | [card_le_two_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SumOfPrimeReciprocalsDiverges.lean/declarations/card-le-two-pow.md) | 127 | `result-track:18ea9b934724d0ba069236b26596d2e79556ccc2c1363e54a24b912ecb34f0a6` |
+| 8 | `theorem` | [card_le_two_pow_mul_sqrt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SumOfPrimeReciprocalsDiverges.lean/declarations/card-le-two-pow-mul-sqrt.md) | 160 | `result-track:da40c50874a0c294c7caf9b588b3afbbd8738ef3555a2ab5b15424a1e27cede0` |
+| 9 | `theorem` | [Real.tendsto_sum_one_div_prime_atTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SumOfPrimeReciprocalsDiverges.lean/declarations/real-tendsto-sum-one-div-prime-attop.md) | 192 | `result-track:c36504dd2c6b577bb7f20315ed9f6ca40254a7c8e4bec9635d48e93525dae4db` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

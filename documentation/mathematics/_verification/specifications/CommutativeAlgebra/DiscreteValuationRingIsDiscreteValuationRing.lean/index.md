@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/DiscreteValuationRingIsDiscreteValuationRing.lean/index.md) · [Full source](../../../../CommutativeAlgebra/DiscreteValuationRingIsDiscreteValuationRing.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DiscreteValuationRingIsDiscreteValuationRing.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DiscreteValuationRingIsDiscreteValuationRing.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,15 +60,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [succNthValUnits](../../../../CommutativeAlgebra/DiscreteValuationRingIsDiscreteValuationRing.lean/declarations/succnthvalunits.md) | 42 | `declaration-track:6b53ca4aee53bac0c9d1687ad530bc59d234f0e84f2c6dda33d9bd8a1a2419c4` |
-| 2 | `def` | [inverseCoeff](../../../../CommutativeAlgebra/DiscreteValuationRingIsDiscreteValuationRing.lean/declarations/inversecoeff.md) | 50 | `declaration-track:0e47cfe5d72f3c75e4905d63c35959ac54789c4a3b5d1833aa3614f3ae7b2321` |
-| 3 | `def` | [mkUnit](../../../../CommutativeAlgebra/DiscreteValuationRingIsDiscreteValuationRing.lean/declarations/mkunit.md) | 57 | `declaration-track:15e3af4933d5319f62e71a7bb91418febb19406aa3a8d18b695048040e57d8e0` |
-| 4 | `theorem` | [coe_mkUnit](../../../../CommutativeAlgebra/DiscreteValuationRingIsDiscreteValuationRing.lean/declarations/coe-mkunit.md) | 73 | `result-track:3def9a2dfef153d9b183cf0938c3cc75de1270d10d22aa11ca6267b20685d1d2` |
-| 5 | `theorem` | [isUnit_of_coeff_zero_ne_zero](../../../../CommutativeAlgebra/DiscreteValuationRingIsDiscreteValuationRing.lean/declarations/isunit-of-coeff-zero-ne-zero.md) | 82 | `result-track:cf5e0ff8ebce9b0a6caa42773882db8cd04286314ad5a626fadad5b84b75e1e6` |
-| 6 | `theorem` | [irreducible](../../../../CommutativeAlgebra/DiscreteValuationRingIsDiscreteValuationRing.lean/declarations/irreducible.md) | 89 | `result-track:55502d3134259ed07870b2649a1948980509ca536afc52514983e5089fd0d782` |
-| 7 | `theorem` | [exists_eq_pow_p_mul](../../../../CommutativeAlgebra/DiscreteValuationRingIsDiscreteValuationRing.lean/declarations/exists-eq-pow-p-mul-source-edition-2.md) | 113 | `result-track:dec8144c87c943b4392022ee4012ef7b4ce3d096abed96ab8d58312917eb2c82` |
-| 8 | `theorem` | [exists_eq_pow_p_mul'](../../../../CommutativeAlgebra/DiscreteValuationRingIsDiscreteValuationRing.lean/declarations/exists-eq-pow-p-mul.md) | 135 | `result-track:5a169d9c67d6bc833f3e0d42e1b30f85f61c14a3332f83fa37bc1482ae0b2aa8` |
-| 9 | `theorem` | [isDiscreteValuationRing](../../../../CommutativeAlgebra/DiscreteValuationRingIsDiscreteValuationRing.lean/declarations/isdiscretevaluationring.md) | 150 | `result-track:1ee393e9dc2d848f94f605beac61002421bedb64bb644f172fc3f11e4fedb4f0` |
+| 1 | `def` | [succNthValUnits](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DiscreteValuationRingIsDiscreteValuationRing.lean/declarations/succnthvalunits.md) | 42 | `declaration-track:6b53ca4aee53bac0c9d1687ad530bc59d234f0e84f2c6dda33d9bd8a1a2419c4` |
+| 2 | `def` | [inverseCoeff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DiscreteValuationRingIsDiscreteValuationRing.lean/declarations/inversecoeff.md) | 50 | `declaration-track:0e47cfe5d72f3c75e4905d63c35959ac54789c4a3b5d1833aa3614f3ae7b2321` |
+| 3 | `def` | [mkUnit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DiscreteValuationRingIsDiscreteValuationRing.lean/declarations/mkunit.md) | 57 | `declaration-track:15e3af4933d5319f62e71a7bb91418febb19406aa3a8d18b695048040e57d8e0` |
+| 4 | `theorem` | [coe_mkUnit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DiscreteValuationRingIsDiscreteValuationRing.lean/declarations/coe-mkunit.md) | 73 | `result-track:3def9a2dfef153d9b183cf0938c3cc75de1270d10d22aa11ca6267b20685d1d2` |
+| 5 | `theorem` | [isUnit_of_coeff_zero_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DiscreteValuationRingIsDiscreteValuationRing.lean/declarations/isunit-of-coeff-zero-ne-zero.md) | 82 | `result-track:cf5e0ff8ebce9b0a6caa42773882db8cd04286314ad5a626fadad5b84b75e1e6` |
+| 6 | `theorem` | [irreducible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DiscreteValuationRingIsDiscreteValuationRing.lean/declarations/irreducible.md) | 89 | `result-track:55502d3134259ed07870b2649a1948980509ca536afc52514983e5089fd0d782` |
+| 7 | `theorem` | [exists_eq_pow_p_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DiscreteValuationRingIsDiscreteValuationRing.lean/declarations/exists-eq-pow-p-mul-source-edition-2.md) | 113 | `result-track:dec8144c87c943b4392022ee4012ef7b4ce3d096abed96ab8d58312917eb2c82` |
+| 8 | `theorem` | [exists_eq_pow_p_mul'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DiscreteValuationRingIsDiscreteValuationRing.lean/declarations/exists-eq-pow-p-mul.md) | 135 | `result-track:5a169d9c67d6bc833f3e0d42e1b30f85f61c14a3332f83fa37bc1482ae0b2aa8` |
+| 9 | `theorem` | [isDiscreteValuationRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DiscreteValuationRingIsDiscreteValuationRing.lean/declarations/isdiscretevaluationring.md) | 150 | `result-track:1ee393e9dc2d848f94f605beac61002421bedb64bb644f172fc3f11e4fedb4f0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

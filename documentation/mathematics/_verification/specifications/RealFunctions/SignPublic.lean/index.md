@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/SignPublic.lean/index.md) · [Full source](../../../../RealFunctions/SignPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SignPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SignPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,20 +57,20 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [sign](../../../../RealFunctions/SignPublic.lean/declarations/sign.md) | 34 | `declaration-track:c80c6dc1de3d628a5a031f2877570c596b5db209e0b46b2b54ae65f4af414d1b` |
-| 2 | `theorem` | [sign_of_neg](../../../../RealFunctions/SignPublic.lean/declarations/sign-of-neg.md) | 37 | `result-track:ec2c951deb11b670d94859aceca71c8a05920ed30031f6d892d0b7f80c58d85d` |
-| 3 | `theorem` | [sign_of_pos](../../../../RealFunctions/SignPublic.lean/declarations/sign-of-pos.md) | 39 | `result-track:9ab090e05ce231f68e411420a45fa3f71ef97f9a19b59f841c8842a206ae0083` |
-| 4 | `theorem` | [sign_zero](../../../../RealFunctions/SignPublic.lean/declarations/sign-zero.md) | 43 | `result-track:1f0daeb5e000e89eaae7a475e97cd048aebbce8bcf47572f90f6ef1f591f3b6b` |
-| 5 | `theorem` | [sign_one](../../../../RealFunctions/SignPublic.lean/declarations/sign-one.md) | 47 | `result-track:6ce7a0942a3d36aab49543114e68d1e75bf34784ed605352f212ce3db7cd0879` |
-| 6 | `theorem` | [sign_apply_eq](../../../../RealFunctions/SignPublic.lean/declarations/sign-apply-eq.md) | 50 | `result-track:5213661569a84a4e6f117f13b185153b5cd20ffb7b11be4db64cf5c62da9fd7d` |
-| 7 | `theorem` | [sign_apply_eq_of_ne_zero](../../../../RealFunctions/SignPublic.lean/declarations/sign-apply-eq-of-ne-zero.md) | 57 | `result-track:7a5e19b7dfd02f6e7c91de8bdd6978d9958b804b9e02868e9cb6703991903add` |
-| 8 | `theorem` | [sign_eq_zero_iff](../../../../RealFunctions/SignPublic.lean/declarations/sign-eq-zero-iff.md) | 61 | `result-track:27f457a4d9c85b17022697319bb2d86cb1894dbf057b0280d1a96bc0d5016f25` |
-| 9 | `theorem` | [sign_intCast](../../../../RealFunctions/SignPublic.lean/declarations/sign-intcast.md) | 70 | `result-track:07492c36c6d99429285cfdc733428eff43e137ef642953396304a8ee4b72f282` |
-| 10 | `theorem` | [sign_neg](../../../../RealFunctions/SignPublic.lean/declarations/sign-neg.md) | 77 | `result-track:ddb92f532a71ec92f0606449db0b01bc593d1d3af23ac75950472ff2d468c502` |
-| 11 | `theorem` | [sign_mul_nonneg](../../../../RealFunctions/SignPublic.lean/declarations/sign-mul-nonneg.md) | 83 | `result-track:7b196c5cf5107c0e7feecb81f02b9d9506086960a81e1d725ff337c9bcf055cc` |
-| 12 | `theorem` | [sign_mul_pos_of_ne_zero](../../../../RealFunctions/SignPublic.lean/declarations/sign-mul-pos-of-ne-zero.md) | 91 | `result-track:cccc5f1623a0ffb2c657ab75c7e86c1c016c147d143860cfd493b5eff7c42c55` |
-| 13 | `theorem` | [inv_sign](../../../../RealFunctions/SignPublic.lean/declarations/inv-sign.md) | 97 | `result-track:976759563bc1853ed88a782c0ad126ea4ccdabfdbf82733c3fdb44c136681cf8` |
-| 14 | `theorem` | [sign_inv](../../../../RealFunctions/SignPublic.lean/declarations/sign-inv.md) | 107 | `result-track:f8608c904318290a575f347072274fb7f7450870e229aa79791656542740d81b` |
+| 1 | `def` | [sign](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SignPublic.lean/declarations/sign.md) | 34 | `declaration-track:c80c6dc1de3d628a5a031f2877570c596b5db209e0b46b2b54ae65f4af414d1b` |
+| 2 | `theorem` | [sign_of_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SignPublic.lean/declarations/sign-of-neg.md) | 37 | `result-track:ec2c951deb11b670d94859aceca71c8a05920ed30031f6d892d0b7f80c58d85d` |
+| 3 | `theorem` | [sign_of_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SignPublic.lean/declarations/sign-of-pos.md) | 39 | `result-track:9ab090e05ce231f68e411420a45fa3f71ef97f9a19b59f841c8842a206ae0083` |
+| 4 | `theorem` | [sign_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SignPublic.lean/declarations/sign-zero.md) | 43 | `result-track:1f0daeb5e000e89eaae7a475e97cd048aebbce8bcf47572f90f6ef1f591f3b6b` |
+| 5 | `theorem` | [sign_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SignPublic.lean/declarations/sign-one.md) | 47 | `result-track:6ce7a0942a3d36aab49543114e68d1e75bf34784ed605352f212ce3db7cd0879` |
+| 6 | `theorem` | [sign_apply_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SignPublic.lean/declarations/sign-apply-eq.md) | 50 | `result-track:5213661569a84a4e6f117f13b185153b5cd20ffb7b11be4db64cf5c62da9fd7d` |
+| 7 | `theorem` | [sign_apply_eq_of_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SignPublic.lean/declarations/sign-apply-eq-of-ne-zero.md) | 57 | `result-track:7a5e19b7dfd02f6e7c91de8bdd6978d9958b804b9e02868e9cb6703991903add` |
+| 8 | `theorem` | [sign_eq_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SignPublic.lean/declarations/sign-eq-zero-iff.md) | 61 | `result-track:27f457a4d9c85b17022697319bb2d86cb1894dbf057b0280d1a96bc0d5016f25` |
+| 9 | `theorem` | [sign_intCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SignPublic.lean/declarations/sign-intcast.md) | 70 | `result-track:07492c36c6d99429285cfdc733428eff43e137ef642953396304a8ee4b72f282` |
+| 10 | `theorem` | [sign_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SignPublic.lean/declarations/sign-neg.md) | 77 | `result-track:ddb92f532a71ec92f0606449db0b01bc593d1d3af23ac75950472ff2d468c502` |
+| 11 | `theorem` | [sign_mul_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SignPublic.lean/declarations/sign-mul-nonneg.md) | 83 | `result-track:7b196c5cf5107c0e7feecb81f02b9d9506086960a81e1d725ff337c9bcf055cc` |
+| 12 | `theorem` | [sign_mul_pos_of_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SignPublic.lean/declarations/sign-mul-pos-of-ne-zero.md) | 91 | `result-track:cccc5f1623a0ffb2c657ab75c7e86c1c016c147d143860cfd493b5eff7c42c55` |
+| 13 | `theorem` | [inv_sign](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SignPublic.lean/declarations/inv-sign.md) | 97 | `result-track:976759563bc1853ed88a782c0ad126ea4ccdabfdbf82733c3fdb44c136681cf8` |
+| 14 | `theorem` | [sign_inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SignPublic.lean/declarations/sign-inv.md) | 107 | `result-track:f8608c904318290a575f347072274fb7f7450870e229aa79791656542740d81b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

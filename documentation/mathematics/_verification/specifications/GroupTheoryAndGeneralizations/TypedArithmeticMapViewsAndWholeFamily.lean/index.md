@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/TypedArithmeticMapViewsAndWholeFamily.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/TypedArithmeticMapViewsAndWholeFamily.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/TypedArithmeticMapViewsAndWholeFamily.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/TypedArithmeticMapViewsAndWholeFamily.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,14 +61,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [comparison](../../../../GroupTheoryAndGeneralizations/TypedArithmeticMapViewsAndWholeFamily.lean/declarations/comparison-source-edition-2.md) | 51 | `declaration-track:fe35252c3f6b904362063f09b5de64c406834bfd2d6abfd8ab6a3dd9570874b4` |
-| 2 | `theorem` | [comparison_apply](../../../../GroupTheoryAndGeneralizations/TypedArithmeticMapViewsAndWholeFamily.lean/declarations/comparison-apply-source-edition-2.md) | 59 | `result-track:fccecea7930f8473d3eba2937c7b7e8e0aff5803055ea12f16dd6d6ffa0a97dd` |
-| 3 | `structure` | [RepresentationFamily](../../../../GroupTheoryAndGeneralizations/TypedArithmeticMapViewsAndWholeFamily.lean/declarations/representationfamily.md) | 77 | `declaration-track:2412fce6eca2e4a286dc6f3b45f79099849a28580cfff0608a11a3da3d1bbfb8` |
-| 4 | `def` | [comparison](../../../../GroupTheoryAndGeneralizations/TypedArithmeticMapViewsAndWholeFamily.lean/declarations/comparison.md) | 102 | `declaration-track:64bb2cdc03fa11957dfa54e525b9f69d0b0a15f3da8e4b06d29d28b51c58860d` |
-| 5 | `theorem` | [comparison_apply](../../../../GroupTheoryAndGeneralizations/TypedArithmeticMapViewsAndWholeFamily.lean/declarations/comparison-apply.md) | 113 | `result-track:088e3379d390c30b00163822cc325a2185f9def82c30c5aa0351e42250c0dfe6` |
-| 6 | `def` | [comparisonAt](../../../../GroupTheoryAndGeneralizations/TypedArithmeticMapViewsAndWholeFamily.lean/declarations/comparisonat.md) | 124 | `declaration-track:4b01c34817e57f84bc43aa8d366c80e6a7d7bd90cecfe5f1d31ca55fe8d09a05` |
-| 7 | `def` | [spec](../../../../GroupTheoryAndGeneralizations/TypedArithmeticMapViewsAndWholeFamily.lean/declarations/spec.md) | 137 | `declaration-track:bbdaa3f17f396e1504d8e93ee37b2ecd457b09a916b23dcaa811224f4542d4e9` |
-| 8 | `theorem` | [spec_apply](../../../../GroupTheoryAndGeneralizations/TypedArithmeticMapViewsAndWholeFamily.lean/declarations/spec-apply.md) | 145 | `result-track:4d92c5c7f22eb1c936dcb8df43b5246fd8beff8cf5e34d45ec68ace317e665c7` |
+| 1 | `def` | [comparison](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/TypedArithmeticMapViewsAndWholeFamily.lean/declarations/comparison-source-edition-2.md) | 51 | `declaration-track:fe35252c3f6b904362063f09b5de64c406834bfd2d6abfd8ab6a3dd9570874b4` |
+| 2 | `theorem` | [comparison_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/TypedArithmeticMapViewsAndWholeFamily.lean/declarations/comparison-apply-source-edition-2.md) | 59 | `result-track:fccecea7930f8473d3eba2937c7b7e8e0aff5803055ea12f16dd6d6ffa0a97dd` |
+| 3 | `structure` | [RepresentationFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/TypedArithmeticMapViewsAndWholeFamily.lean/declarations/representationfamily.md) | 77 | `declaration-track:2412fce6eca2e4a286dc6f3b45f79099849a28580cfff0608a11a3da3d1bbfb8` |
+| 4 | `def` | [comparison](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/TypedArithmeticMapViewsAndWholeFamily.lean/declarations/comparison.md) | 102 | `declaration-track:64bb2cdc03fa11957dfa54e525b9f69d0b0a15f3da8e4b06d29d28b51c58860d` |
+| 5 | `theorem` | [comparison_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/TypedArithmeticMapViewsAndWholeFamily.lean/declarations/comparison-apply.md) | 113 | `result-track:088e3379d390c30b00163822cc325a2185f9def82c30c5aa0351e42250c0dfe6` |
+| 6 | `def` | [comparisonAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/TypedArithmeticMapViewsAndWholeFamily.lean/declarations/comparisonat.md) | 124 | `declaration-track:4b01c34817e57f84bc43aa8d366c80e6a7d7bd90cecfe5f1d31ca55fe8d09a05` |
+| 7 | `def` | [spec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/TypedArithmeticMapViewsAndWholeFamily.lean/declarations/spec.md) | 137 | `declaration-track:bbdaa3f17f396e1504d8e93ee37b2ecd457b09a916b23dcaa811224f4542d4e9` |
+| 8 | `theorem` | [spec_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/TypedArithmeticMapViewsAndWholeFamily.lean/declarations/spec-apply.md) | 145 | `result-track:4d92c5c7f22eb1c936dcb8df43b5246fd8beff8cf5e34d45ec68ace317e665c7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

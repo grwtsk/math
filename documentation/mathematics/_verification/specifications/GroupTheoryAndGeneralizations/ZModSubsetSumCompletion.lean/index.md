@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/ZModSubsetSumCompletion.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/ZModSubsetSumCompletion.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ZModSubsetSumCompletion.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ZModSubsetSumCompletion.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Fourier.ZModSubsetSum`](../../../../HarmonicAnalysisOnEuclideanSpaces/ZModSubsetSum.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Fourier.ZModSubsetSum`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/ZModSubsetSum.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [deletion_exposure_injective](../../../../GroupTheoryAndGeneralizations/ZModSubsetSumCompletion.lean/declarations/deletion-exposure-injective.md) | 26 | `result-track:d9cac02d5d7e900b3614cc86e912bf3c807505536a6bac505b29327bad31d548` |
-| 2 | `theorem` | [constrained_deletion_count](../../../../GroupTheoryAndGeneralizations/ZModSubsetSumCompletion.lean/declarations/constrained-deletion-count.md) | 43 | `result-track:fbcb255c1624b8ebd243b20b221680f4be1230aefb8cc7f22f847cdbae08e1c7` |
-| 3 | `theorem` | [subsetSumFiber_card_mul_remaining_le](../../../../GroupTheoryAndGeneralizations/ZModSubsetSumCompletion.lean/declarations/subsetsumfiber-card-mul-remaining-le.md) | 75 | `result-track:89b85cd4d8b0465b13a7aeb6d406ac70f666ca38bff91ae948756d1fbca4d99b` |
-| 4 | `theorem` | [subsetSumProbability_le_one_div_remaining](../../../../GroupTheoryAndGeneralizations/ZModSubsetSumCompletion.lean/declarations/subsetsumprobability-le-one-div-remaining.md) | 91 | `result-track:eeb1fb73b058de14544e5cc7df938de415bdb0b9251f6a0fbd369d5dcba0721e` |
-| 5 | `theorem` | [complement_sum](../../../../GroupTheoryAndGeneralizations/ZModSubsetSumCompletion.lean/declarations/complement-sum.md) | 105 | `result-track:74331a50f768dd30f9b33338faeee607212dc08812057063505702f160b032db` |
-| 6 | `theorem` | [subsetSumFiber_complement_mem](../../../../GroupTheoryAndGeneralizations/ZModSubsetSumCompletion.lean/declarations/subsetsumfiber-complement-mem.md) | 109 | `result-track:4815358a839574a46671be47063013503ce69853b176d483e2975ae0f3e52f22` |
-| 7 | `theorem` | [subsetSumFiber_complement_image](../../../../GroupTheoryAndGeneralizations/ZModSubsetSumCompletion.lean/declarations/subsetsumfiber-complement-image.md) | 121 | `result-track:67cfb5cfcdeda114309d681752af6d024369345d5455a800aff1a5eda4e9f8fc` |
-| 8 | `theorem` | [subsetSumFiber_complement_card](../../../../GroupTheoryAndGeneralizations/ZModSubsetSumCompletion.lean/declarations/subsetsumfiber-complement-card.md) | 137 | `result-track:2aa568ef81470d6a40f178a159cab997846fcbf3e0cc6cc4f29b0633102fbdcc` |
-| 9 | `theorem` | [subsetSumProbability_complement](../../../../GroupTheoryAndGeneralizations/ZModSubsetSumCompletion.lean/declarations/subsetsumprobability-complement.md) | 153 | `result-track:f38a6913ce1889e9de169ba96a56fae2417c72aa89714609e8ebbe9506133ec8` |
+| 1 | `theorem` | [deletion_exposure_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ZModSubsetSumCompletion.lean/declarations/deletion-exposure-injective.md) | 26 | `result-track:d9cac02d5d7e900b3614cc86e912bf3c807505536a6bac505b29327bad31d548` |
+| 2 | `theorem` | [constrained_deletion_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ZModSubsetSumCompletion.lean/declarations/constrained-deletion-count.md) | 43 | `result-track:fbcb255c1624b8ebd243b20b221680f4be1230aefb8cc7f22f847cdbae08e1c7` |
+| 3 | `theorem` | [subsetSumFiber_card_mul_remaining_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ZModSubsetSumCompletion.lean/declarations/subsetsumfiber-card-mul-remaining-le.md) | 75 | `result-track:89b85cd4d8b0465b13a7aeb6d406ac70f666ca38bff91ae948756d1fbca4d99b` |
+| 4 | `theorem` | [subsetSumProbability_le_one_div_remaining](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ZModSubsetSumCompletion.lean/declarations/subsetsumprobability-le-one-div-remaining.md) | 91 | `result-track:eeb1fb73b058de14544e5cc7df938de415bdb0b9251f6a0fbd369d5dcba0721e` |
+| 5 | `theorem` | [complement_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ZModSubsetSumCompletion.lean/declarations/complement-sum.md) | 105 | `result-track:74331a50f768dd30f9b33338faeee607212dc08812057063505702f160b032db` |
+| 6 | `theorem` | [subsetSumFiber_complement_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ZModSubsetSumCompletion.lean/declarations/subsetsumfiber-complement-mem.md) | 109 | `result-track:4815358a839574a46671be47063013503ce69853b176d483e2975ae0f3e52f22` |
+| 7 | `theorem` | [subsetSumFiber_complement_image](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ZModSubsetSumCompletion.lean/declarations/subsetsumfiber-complement-image.md) | 121 | `result-track:67cfb5cfcdeda114309d681752af6d024369345d5455a800aff1a5eda4e9f8fc` |
+| 8 | `theorem` | [subsetSumFiber_complement_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ZModSubsetSumCompletion.lean/declarations/subsetsumfiber-complement-card.md) | 137 | `result-track:2aa568ef81470d6a40f178a159cab997846fcbf3e0cc6cc4f29b0633102fbdcc` |
+| 9 | `theorem` | [subsetSumProbability_complement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ZModSubsetSumCompletion.lean/declarations/subsetsumprobability-complement.md) | 153 | `result-track:f38a6913ce1889e9de169ba96a56fae2417c72aa89714609e8ebbe9506133ec8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

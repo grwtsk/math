@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FiniteMeasurePiNamespacedPublic.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FiniteMeasurePiNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/FiniteMeasurePiNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/FiniteMeasurePiNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [pi](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FiniteMeasurePiNamespacedPublic.lean/declarations/pi-source-edition-2.md) | 52 | `declaration-track:e265c61bf1e797cd7c8409e02989c57ccacc9ebb1958399205364878fd4696f7` |
-| 2 | `lemma` | [toMeasure_pi](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FiniteMeasurePiNamespacedPublic.lean/declarations/tomeasure-pi.md) | 57 | `result-track:3afeff5d38ae000b6ce7d9aa908e19a86800bad0b172c1a18a70beea5b5f829e` |
-| 3 | `lemma` | [pi_pi](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FiniteMeasurePiNamespacedPublic.lean/declarations/pi-pi-source-edition-2.md) | 59 | `result-track:1fb50c8d3c545001ad07437ddc46cb385e5f9dfb9340b4c88ee2d03f9e5ced3d` |
-| 4 | `lemma` | [mass_pi](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FiniteMeasurePiNamespacedPublic.lean/declarations/mass-pi.md) | 63 | `result-track:a88eb7f54809c02bba39add03a63d74f38a6ea67e1eddb6a7f0ee1b71a9a241c` |
-| 5 | `lemma` | [pi_map_pi](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FiniteMeasurePiNamespacedPublic.lean/declarations/pi-map-pi.md) | 67 | `result-track:729f26d25e7671abb8f4f07c7383f90ab6fed2eb692f33fd6132ac4fba677814` |
-| 6 | `def` | [pi](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FiniteMeasurePiNamespacedPublic.lean/declarations/pi.md) | 80 | `declaration-track:4c219dc822b37be807f785a20fa7b1b8aeea4680f22099eb354309ab627a1390` |
-| 7 | `lemma` | [toMeasure_pi](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FiniteMeasurePiNamespacedPublic.lean/declarations/tomeasure-pi-source-edition-2.md) | 85 | `result-track:f03d6542d8fc50ce10b9274c8192485ab64ffef47eb822be5853bf3f96ce9b16` |
-| 8 | `lemma` | [pi_pi](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FiniteMeasurePiNamespacedPublic.lean/declarations/pi-pi.md) | 88 | `result-track:00bcad7ea22c0018282489d6a8556f8607b895768ad97494e2c3e87e1269eae3` |
-| 9 | `theorem` | [continuous_pi](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FiniteMeasurePiNamespacedPublic.lean/declarations/continuous-pi.md) | 96 | `result-track:3e786cf021bdb85c6da52dbb824727c0092e18d675e4f088eca56d4e9ba157e4` |
+| 1 | `def` | [pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/FiniteMeasurePiNamespacedPublic.lean/declarations/pi-source-edition-2.md) | 52 | `declaration-track:e265c61bf1e797cd7c8409e02989c57ccacc9ebb1958399205364878fd4696f7` |
+| 2 | `lemma` | [toMeasure_pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/FiniteMeasurePiNamespacedPublic.lean/declarations/tomeasure-pi.md) | 57 | `result-track:3afeff5d38ae000b6ce7d9aa908e19a86800bad0b172c1a18a70beea5b5f829e` |
+| 3 | `lemma` | [pi_pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/FiniteMeasurePiNamespacedPublic.lean/declarations/pi-pi-source-edition-2.md) | 59 | `result-track:1fb50c8d3c545001ad07437ddc46cb385e5f9dfb9340b4c88ee2d03f9e5ced3d` |
+| 4 | `lemma` | [mass_pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/FiniteMeasurePiNamespacedPublic.lean/declarations/mass-pi.md) | 63 | `result-track:a88eb7f54809c02bba39add03a63d74f38a6ea67e1eddb6a7f0ee1b71a9a241c` |
+| 5 | `lemma` | [pi_map_pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/FiniteMeasurePiNamespacedPublic.lean/declarations/pi-map-pi.md) | 67 | `result-track:729f26d25e7671abb8f4f07c7383f90ab6fed2eb692f33fd6132ac4fba677814` |
+| 6 | `def` | [pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/FiniteMeasurePiNamespacedPublic.lean/declarations/pi.md) | 80 | `declaration-track:4c219dc822b37be807f785a20fa7b1b8aeea4680f22099eb354309ab627a1390` |
+| 7 | `lemma` | [toMeasure_pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/FiniteMeasurePiNamespacedPublic.lean/declarations/tomeasure-pi-source-edition-2.md) | 85 | `result-track:f03d6542d8fc50ce10b9274c8192485ab64ffef47eb822be5853bf3f96ce9b16` |
+| 8 | `lemma` | [pi_pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/FiniteMeasurePiNamespacedPublic.lean/declarations/pi-pi.md) | 88 | `result-track:00bcad7ea22c0018282489d6a8556f8607b895768ad97494e2c3e87e1269eae3` |
+| 9 | `theorem` | [continuous_pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/FiniteMeasurePiNamespacedPublic.lean/declarations/continuous-pi.md) | 96 | `result-track:3e786cf021bdb85c6da52dbb824727c0092e18d675e4f088eca56d4e9ba157e4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

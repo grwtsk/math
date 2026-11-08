@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/AesopCat.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/AesopCat.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/AesopCat.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/AesopCat.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Foo](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/AesopCat.lean/declarations/foo.md) | 3 | `declaration-track:9d103a200021e9bfbd561a076e2a171110ed591e19dbf690fd6eeb813e5b7938` |
-| 2 | `example` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/AesopCat.lean/declarations/example-source-edition-2.md) | 9 | `declaration-track:d1c8d7f5e5665ab245dfb5b52425f5391a2c48d2b70422cb147c38ff46b18e42` |
-| 3 | `example` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/AesopCat.lean/declarations/example.md) | 22 | `declaration-track:7cdb6fca34ba52bc6538e8c74a5cc4c48267c82c8cdbd6a63b083aba45a3c155` |
+| 1 | `structure` | [Foo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/AesopCat.lean/declarations/foo.md) | 3 | `declaration-track:9d103a200021e9bfbd561a076e2a171110ed591e19dbf690fd6eeb813e5b7938` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/AesopCat.lean/declarations/example-source-edition-2.md) | 9 | `declaration-track:d1c8d7f5e5665ab245dfb5b52425f5391a2c48d2b70422cb147c38ff46b18e42` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/AesopCat.lean/declarations/example.md) | 22 | `declaration-track:7cdb6fca34ba52bc6538e8c74a5cc4c48267c82c8cdbd6a63b083aba45a3c155` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

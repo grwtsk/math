@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NormCastNamespacedEdition3.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NormCastNamespacedEdition3.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NormCastNamespacedEdition3.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NormCastNamespacedEdition3.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NormCastNamespacedEdition3.lean/declarations/example-source-edition-3.md) | 20 | `declaration-track:487ff5985b7329c05418212ab1d1a39e22a0b6b2c19bcdfbd4b93b82b93a73fe` |
-| 2 | `example` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NormCastNamespacedEdition3.lean/declarations/example.md) | 23 | `declaration-track:141bb8cf505f71c4a5250d60605e84230e8dde4da234f5c4ae4bfe86822d950d` |
-| 3 | `example` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NormCastNamespacedEdition3.lean/declarations/example-source-edition-2.md) | 26 | `declaration-track:2bda1284be4f3c0c28775aea00a1bf8b2631411c18652b6cb768f6182c97cfab` |
-| 4 | `example` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NormCastNamespacedEdition3.lean/declarations/example-source-edition-4.md) | 27 | `declaration-track:db50433f8132fbb9a84f8ca88009c8c7437ef76ecdef3e5b4289b3ffea3fef02` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NormCastNamespacedEdition3.lean/declarations/example-source-edition-3.md) | 20 | `declaration-track:487ff5985b7329c05418212ab1d1a39e22a0b6b2c19bcdfbd4b93b82b93a73fe` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NormCastNamespacedEdition3.lean/declarations/example.md) | 23 | `declaration-track:141bb8cf505f71c4a5250d60605e84230e8dde4da234f5c4ae4bfe86822d950d` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NormCastNamespacedEdition3.lean/declarations/example-source-edition-2.md) | 26 | `declaration-track:2bda1284be4f3c0c28775aea00a1bf8b2631411c18652b6cb768f6182c97cfab` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NormCastNamespacedEdition3.lean/declarations/example-source-edition-4.md) | 27 | `declaration-track:db50433f8132fbb9a84f8ca88009c8c7437ef76ecdef3e5b4289b3ffea3fef02` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

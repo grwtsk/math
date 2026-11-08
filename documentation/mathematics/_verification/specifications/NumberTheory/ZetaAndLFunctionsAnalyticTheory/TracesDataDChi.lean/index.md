@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TracesDataDChi.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TracesDataDChi.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TracesDataDChi.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TracesDataDChi.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,19 +59,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [DataDChi](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TracesDataDChi.lean/declarations/datadchi.md) | 29 | `declaration-track:5c1e46e73cbc4575cdb5095bda12f7ab2205f707f19413b7b8fde3154dab202d` |
-| 2 | `structure` | [FactsDChi](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TracesDataDChi.lean/declarations/factsdchi.md) | 37 | `declaration-track:271083eee978b3df74c425dfef9398c8d9d529337a62552b509c586798ff56d1` |
-| 3 | `lemma` | [NcntD_lower](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TracesDataDChi.lean/declarations/ncntd-lower.md) | 65 | `result-track:fb8ac3555fcfd3badc4dff0add837af881e8cf24b9ea6da3e6acdb828754ce34` |
-| 4 | `lemma` | [T_le_NcntD](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TracesDataDChi.lean/declarations/t-le-ncntd.md) | 81 | `result-track:9d5086b2d5eff6ea662d49b7fc57b82a42817f369b7c1d0818abaa98eb3e4f71` |
-| 5 | `lemma` | [NcntD_pos](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TracesDataDChi.lean/declarations/ncntd-pos.md) | 90 | `result-track:50a182857770b2c95de3cc39480922c45619c9e424e7120d623dd3694c286064` |
-| 6 | `lemma` | [regimeD](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TracesDataDChi.lean/declarations/regimed.md) | 97 | `result-track:5331e6099de95d0e855e0c586294985989d58e8c12f817de8cb16bed64e28552` |
-| 7 | `lemma` | [tr1'D](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TracesDataDChi.lean/declarations/tr1-d.md) | 107 | `result-track:b020d7eaed79c7254b0740f10a657e38c0878b185d0e625edf9473212fb5a9d5` |
-| 8 | `def` | [mainTr2D](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TracesDataDChi.lean/declarations/maintr2d.md) | 145 | `declaration-track:c15ad69d33a2ab5426a83d0de5bc291342c3e07a7efb5d9024577ff34e6c7d95` |
-| 9 | `lemma` | [tr2_firstD](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TracesDataDChi.lean/declarations/tr2-firstd.md) | 149 | `result-track:a4a915bdb4396599dfa7e75adc24f520974c428971a53a15bfb7ba3982851e97` |
-| 10 | `lemma` | [tr2D](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TracesDataDChi.lean/declarations/tr2d.md) | 187 | `result-track:85479864724181ad1f580ffa5db6b01a963f9ecee44c124bb3ad28caef0be8e6` |
-| 11 | `lemma` | [ratioD](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TracesDataDChi.lean/declarations/ratiod.md) | 211 | `result-track:66d6381468d57a45991245703863a7e1463460fbc995c9387b63ab588a422494` |
-| 12 | `lemma` | [frhatD](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TracesDataDChi.lean/declarations/frhatd.md) | 242 | `result-track:35ce554c46b9f10864735cfcb6ccfc973994c93ef9004ac25d28db2e871a56ae` |
-| 13 | `theorem` | [tracesBoundsDChi_of_factsDChi](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TracesDataDChi.lean/declarations/tracesboundsdchi-of-factsdchi.md) | 267 | `result-track:fd839654f78d35ce881bceaf7ebc4465610b7540c0c0a7506712d6ce8f68c0a2` |
+| 1 | `structure` | [DataDChi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TracesDataDChi.lean/declarations/datadchi.md) | 29 | `declaration-track:5c1e46e73cbc4575cdb5095bda12f7ab2205f707f19413b7b8fde3154dab202d` |
+| 2 | `structure` | [FactsDChi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TracesDataDChi.lean/declarations/factsdchi.md) | 37 | `declaration-track:271083eee978b3df74c425dfef9398c8d9d529337a62552b509c586798ff56d1` |
+| 3 | `lemma` | [NcntD_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TracesDataDChi.lean/declarations/ncntd-lower.md) | 65 | `result-track:fb8ac3555fcfd3badc4dff0add837af881e8cf24b9ea6da3e6acdb828754ce34` |
+| 4 | `lemma` | [T_le_NcntD](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TracesDataDChi.lean/declarations/t-le-ncntd.md) | 81 | `result-track:9d5086b2d5eff6ea662d49b7fc57b82a42817f369b7c1d0818abaa98eb3e4f71` |
+| 5 | `lemma` | [NcntD_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TracesDataDChi.lean/declarations/ncntd-pos.md) | 90 | `result-track:50a182857770b2c95de3cc39480922c45619c9e424e7120d623dd3694c286064` |
+| 6 | `lemma` | [regimeD](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TracesDataDChi.lean/declarations/regimed.md) | 97 | `result-track:5331e6099de95d0e855e0c586294985989d58e8c12f817de8cb16bed64e28552` |
+| 7 | `lemma` | [tr1'D](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TracesDataDChi.lean/declarations/tr1-d.md) | 107 | `result-track:b020d7eaed79c7254b0740f10a657e38c0878b185d0e625edf9473212fb5a9d5` |
+| 8 | `def` | [mainTr2D](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TracesDataDChi.lean/declarations/maintr2d.md) | 145 | `declaration-track:c15ad69d33a2ab5426a83d0de5bc291342c3e07a7efb5d9024577ff34e6c7d95` |
+| 9 | `lemma` | [tr2_firstD](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TracesDataDChi.lean/declarations/tr2-firstd.md) | 149 | `result-track:a4a915bdb4396599dfa7e75adc24f520974c428971a53a15bfb7ba3982851e97` |
+| 10 | `lemma` | [tr2D](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TracesDataDChi.lean/declarations/tr2d.md) | 187 | `result-track:85479864724181ad1f580ffa5db6b01a963f9ecee44c124bb3ad28caef0be8e6` |
+| 11 | `lemma` | [ratioD](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TracesDataDChi.lean/declarations/ratiod.md) | 211 | `result-track:66d6381468d57a45991245703863a7e1463460fbc995c9387b63ab588a422494` |
+| 12 | `lemma` | [frhatD](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TracesDataDChi.lean/declarations/frhatd.md) | 242 | `result-track:35ce554c46b9f10864735cfcb6ccfc973994c93ef9004ac25d28db2e871a56ae` |
+| 13 | `theorem` | [tracesBoundsDChi_of_factsDChi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TracesDataDChi.lean/declarations/tracesboundsdchi-of-factsdchi.md) | 267 | `result-track:fd839654f78d35ce881bceaf7ebc4465610b7540c0c0a7506712d6ce8f68c0a2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/NamingResidue.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/NamingResidue.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/NamingResidue.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/NamingResidue.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PersistentNamingResidue](../../../../../ComputerScience/AlgorithmsInComputerScience/NamingResidue.lean/declarations/persistentnamingresidue.md) | 25 | `declaration-track:64e22e79c9e40692f1bb061260126dc8ade1e66e3a0b725bd8775a22e047c3d5` |
-| 2 | `def` | [fixedRoute](../../../../../ComputerScience/AlgorithmsInComputerScience/NamingResidue.lean/declarations/fixedroute.md) | 37 | `declaration-track:8fdb433522b201c8ae7b304c189bf70c9d81bef09870d6ea571b5ea6f9b5fdb1` |
-| 3 | `def` | [activationRequired](../../../../../ComputerScience/AlgorithmsInComputerScience/NamingResidue.lean/declarations/activationrequired.md) | 42 | `declaration-track:97901a39f40383218db85ebebb0a2193b47509dd1de16eab168dd23ceb7fe2ab` |
-| 4 | `theorem` | [activates](../../../../../ComputerScience/AlgorithmsInComputerScience/NamingResidue.lean/declarations/activates.md) | 46 | `result-track:33ae576cb17ee83a3d7f3ff401b2f69d28c90882be7460e3821264d24f0e1136` |
-| 5 | `structure` | [NamingHeatInjectionRequest](../../../../../ComputerScience/AlgorithmsInComputerScience/NamingResidue.lean/declarations/namingheatinjectionrequest.md) | 57 | `declaration-track:cc487d1bf376b5cbc79c6a5b6c892c675ffe445e27bca0d1faad5a45ceefbb2a` |
+| 1 | `structure` | [PersistentNamingResidue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/NamingResidue.lean/declarations/persistentnamingresidue.md) | 25 | `declaration-track:64e22e79c9e40692f1bb061260126dc8ade1e66e3a0b725bd8775a22e047c3d5` |
+| 2 | `def` | [fixedRoute](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/NamingResidue.lean/declarations/fixedroute.md) | 37 | `declaration-track:8fdb433522b201c8ae7b304c189bf70c9d81bef09870d6ea571b5ea6f9b5fdb1` |
+| 3 | `def` | [activationRequired](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/NamingResidue.lean/declarations/activationrequired.md) | 42 | `declaration-track:97901a39f40383218db85ebebb0a2193b47509dd1de16eab168dd23ceb7fe2ab` |
+| 4 | `theorem` | [activates](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/NamingResidue.lean/declarations/activates.md) | 46 | `result-track:33ae576cb17ee83a3d7f3ff401b2f69d28c90882be7460e3821264d24f0e1136` |
+| 5 | `structure` | [NamingHeatInjectionRequest](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/NamingResidue.lean/declarations/namingheatinjectionrequest.md) | 57 | `declaration-track:cc487d1bf376b5cbc79c6a5b6c892c675ffe445e27bca0d1faad5a45ceefbb2a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

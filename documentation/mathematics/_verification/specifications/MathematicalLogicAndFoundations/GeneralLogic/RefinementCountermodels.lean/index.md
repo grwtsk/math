@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RefinementCountermodels.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RefinementCountermodels.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RefinementCountermodels.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RefinementCountermodels.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [no_uniform_readout_bound](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RefinementCountermodels.lean/declarations/no-uniform-readout-bound.md) | 14 | `result-track:f1befe25dac4c86fd061d5044a2a1810f2b34f01a6ba1086c14728fff74f51e2` |
-| 2 | `theorem` | [zero_cycle_unbounded_prefix](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RefinementCountermodels.lean/declarations/zero-cycle-unbounded-prefix.md) | 24 | `result-track:1ff8c80d18918dae50585cb5e20230debee2a855ab3f16ec170ca3850199452c` |
+| 1 | `theorem` | [no_uniform_readout_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RefinementCountermodels.lean/declarations/no-uniform-readout-bound.md) | 14 | `result-track:f1befe25dac4c86fd061d5044a2a1810f2b34f01a6ba1086c14728fff74f51e2` |
+| 2 | `theorem` | [zero_cycle_unbounded_prefix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RefinementCountermodels.lean/declarations/zero-cycle-unbounded-prefix.md) | 24 | `result-track:1ff8c80d18918dae50585cb5e20230debee2a855ab3f16ec170ca3850199452c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

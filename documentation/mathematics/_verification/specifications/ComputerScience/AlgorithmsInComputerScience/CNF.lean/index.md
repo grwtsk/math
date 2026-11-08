@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/CNF.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/CNF.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CNF.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CNF.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [toCNF](../../../../../ComputerScience/AlgorithmsInComputerScience/CNF.lean/declarations/tocnf.md) | 11 | `declaration-track:4807483fbd9334504b2d0b6c88980b7f2aba514bd95cf4fc89116f4cd82631d3` |
-| 2 | `theorem` | [eval_toCNF](../../../../../ComputerScience/AlgorithmsInComputerScience/CNF.lean/declarations/eval-tocnf.md) | 14 | `result-track:7fc3a6c40ace4405f62c771c213971e28aa7de427c96d0b9c89279f3c3898662` |
+| 1 | `def` | [toCNF](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CNF.lean/declarations/tocnf.md) | 11 | `declaration-track:4807483fbd9334504b2d0b6c88980b7f2aba514bd95cf4fc89116f4cd82631d3` |
+| 2 | `theorem` | [eval_toCNF](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CNF.lean/declarations/eval-tocnf.md) | 14 | `result-track:7fc3a6c40ace4405f62c771c213971e28aa7de427c96d0b9c89279f3c3898662` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/PPGoalPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/PPGoalPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/PPGoalPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/PPGoalPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ppGoal.shouldShowLetValue](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/PPGoalPublic.lean/declarations/ppgoal-shouldshowletvalue.md) | 54 | `declaration-track:69aeea930eabc340068ae825275e48b7ca4444873945a8c096f5d1eee7160c4f` |
-| 2 | `def` | [addLine](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/PPGoalPublic.lean/declarations/addline.md) | 66 | `declaration-track:54bc83111c43b425321f906937e87af04d18387452482747886594964d787a65` |
-| 3 | `def` | [getGoalPrefix](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/PPGoalPublic.lean/declarations/getgoalprefix.md) | 69 | `declaration-track:7b5d2e7b30d1fce1b17c6fc5ab4bd95cf3b2427889b743042ed598e0d433e823` |
-| 4 | `def` | [ppGoal](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/PPGoalPublic.lean/declarations/ppgoal.md) | 76 | `declaration-track:98d82bf90751fb8543839c7f0248efe09b4bd7b6f8c705c29beca1b00796f38d` |
+| 1 | `def` | [ppGoal.shouldShowLetValue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/PPGoalPublic.lean/declarations/ppgoal-shouldshowletvalue.md) | 54 | `declaration-track:69aeea930eabc340068ae825275e48b7ca4444873945a8c096f5d1eee7160c4f` |
+| 2 | `def` | [addLine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/PPGoalPublic.lean/declarations/addline.md) | 66 | `declaration-track:54bc83111c43b425321f906937e87af04d18387452482747886594964d787a65` |
+| 3 | `def` | [getGoalPrefix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/PPGoalPublic.lean/declarations/getgoalprefix.md) | 69 | `declaration-track:7b5d2e7b30d1fce1b17c6fc5ab4bd95cf3b2427889b743042ed598e0d433e823` |
+| 4 | `def` | [ppGoal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/PPGoalPublic.lean/declarations/ppgoal.md) | 76 | `declaration-track:98d82bf90751fb8543839c7f0248efe09b4bd7b6f8c705c29beca1b00796f38d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

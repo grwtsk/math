@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/LogarithmicSourceAttempt01.lean/index.md) · [Full source](../../../../MeasureAndIntegration/LogarithmicSourceAttempt01.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogarithmicSourceAttempt01.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogarithmicSourceAttempt01.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,16 +60,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [positiveLogLift](../../../../MeasureAndIntegration/LogarithmicSourceAttempt01.lean/declarations/positiveloglift.md) | 18 | `declaration-track:63b1b2061798cf73ac7d85c3525d486bb847640411cb0512faf11884a83c9f04` |
-| 2 | `theorem` | [positiveLogLift_exp](../../../../MeasureAndIntegration/LogarithmicSourceAttempt01.lean/declarations/positiveloglift-exp.md) | 21 | `result-track:b5490b74c9a8ccf79037d933289838f7d21c3cef4a811ecefc57329b9d48b493` |
-| 3 | `theorem` | [exp_square_weight](../../../../MeasureAndIntegration/LogarithmicSourceAttempt01.lean/declarations/exp-square-weight.md) | 25 | `result-track:bfa1caa6b9df6a9687b406871a008eea43ad9ee06eafbeb178012cdfc9c1ba3b` |
-| 4 | `theorem` | [lift_square_jacobian](../../../../MeasureAndIntegration/LogarithmicSourceAttempt01.lean/declarations/lift-square-jacobian.md) | 30 | `result-track:6ac4374cabb24382e4c44dc5181f2aecd18a1a5592020ba03c821b72ed73e285` |
-| 5 | `theorem` | [lift_square_integrable_iff](../../../../MeasureAndIntegration/LogarithmicSourceAttempt01.lean/declarations/lift-square-integrable-iff.md) | 37 | `result-track:0ed4844b54368e310ad54c44d073c664886b475e2465475c913450045113acd5` |
-| 6 | `theorem` | [lift_square_integral](../../../../MeasureAndIntegration/LogarithmicSourceAttempt01.lean/declarations/lift-square-integral.md) | 48 | `result-track:10adc62612348dacab59a1e9d0f54b1e96f5c57ef41cb86c635ea0801167a738` |
-| 7 | `def` | [actualLogSource](../../../../MeasureAndIntegration/LogarithmicSourceAttempt01.lean/declarations/actuallogsource.md) | 59 | `declaration-track:cfde5fd46814e4b3c95869efb3cc4c7b0c84374ec13710df74608f4e7b76c8d1` |
-| 8 | `theorem` | [actualLogSource_square_integrable](../../../../MeasureAndIntegration/LogarithmicSourceAttempt01.lean/declarations/actuallogsource-square-integrable.md) | 62 | `result-track:66d6b2ed172a2b1c9ed894b3ef747432c908437d8c0503e920a9d8533b0b91af` |
-| 9 | `theorem` | [actualLogSource_square_integral](../../../../MeasureAndIntegration/LogarithmicSourceAttempt01.lean/declarations/actuallogsource-square-integral.md) | 66 | `result-track:b90a616aa562274f9f7e94dc302b01f61296545b0d346fbf838ad02ad430cf65` |
-| 10 | `theorem` | [positiveLogLift_dilation](../../../../MeasureAndIntegration/LogarithmicSourceAttempt01.lean/declarations/positiveloglift-dilation.md) | 71 | `result-track:7ae31d4ee7db3b7985e767bd7a5540559e62a34e10704e4dd9e26258c22fbb42` |
+| 1 | `def` | [positiveLogLift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogarithmicSourceAttempt01.lean/declarations/positiveloglift.md) | 18 | `declaration-track:63b1b2061798cf73ac7d85c3525d486bb847640411cb0512faf11884a83c9f04` |
+| 2 | `theorem` | [positiveLogLift_exp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogarithmicSourceAttempt01.lean/declarations/positiveloglift-exp.md) | 21 | `result-track:b5490b74c9a8ccf79037d933289838f7d21c3cef4a811ecefc57329b9d48b493` |
+| 3 | `theorem` | [exp_square_weight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogarithmicSourceAttempt01.lean/declarations/exp-square-weight.md) | 25 | `result-track:bfa1caa6b9df6a9687b406871a008eea43ad9ee06eafbeb178012cdfc9c1ba3b` |
+| 4 | `theorem` | [lift_square_jacobian](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogarithmicSourceAttempt01.lean/declarations/lift-square-jacobian.md) | 30 | `result-track:6ac4374cabb24382e4c44dc5181f2aecd18a1a5592020ba03c821b72ed73e285` |
+| 5 | `theorem` | [lift_square_integrable_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogarithmicSourceAttempt01.lean/declarations/lift-square-integrable-iff.md) | 37 | `result-track:0ed4844b54368e310ad54c44d073c664886b475e2465475c913450045113acd5` |
+| 6 | `theorem` | [lift_square_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogarithmicSourceAttempt01.lean/declarations/lift-square-integral.md) | 48 | `result-track:10adc62612348dacab59a1e9d0f54b1e96f5c57ef41cb86c635ea0801167a738` |
+| 7 | `def` | [actualLogSource](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogarithmicSourceAttempt01.lean/declarations/actuallogsource.md) | 59 | `declaration-track:cfde5fd46814e4b3c95869efb3cc4c7b0c84374ec13710df74608f4e7b76c8d1` |
+| 8 | `theorem` | [actualLogSource_square_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogarithmicSourceAttempt01.lean/declarations/actuallogsource-square-integrable.md) | 62 | `result-track:66d6b2ed172a2b1c9ed894b3ef747432c908437d8c0503e920a9d8533b0b91af` |
+| 9 | `theorem` | [actualLogSource_square_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogarithmicSourceAttempt01.lean/declarations/actuallogsource-square-integral.md) | 66 | `result-track:b90a616aa562274f9f7e94dc302b01f61296545b0d346fbf838ad02ad430cf65` |
+| 10 | `theorem` | [positiveLogLift_dilation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogarithmicSourceAttempt01.lean/declarations/positiveloglift-dilation.md) | 71 | `result-track:7ae31d4ee7db3b7985e767bd7a5540559e62a34e10704e4dd9e26258c22fbb42` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

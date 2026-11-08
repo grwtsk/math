@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/ContinuousOfBoundedNamespacedPublic.lean/index.md) · [Full source](../../../../FunctionalAnalysis/ContinuousOfBoundedNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ContinuousOfBoundedNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ContinuousOfBoundedNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [LinearMap.clmOfExistsBoundedImage](../../../../FunctionalAnalysis/ContinuousOfBoundedNamespacedPublic.lean/declarations/linearmap-clmofexistsboundedimage.md) | 51 | `declaration-track:327bda57d37c7a57ee5ed3f26da7e9439fee81326f9e499291f8a1ec84c93fc8` |
-| 2 | `theorem` | [LinearMap.clmOfExistsBoundedImage_coe](../../../../FunctionalAnalysis/ContinuousOfBoundedNamespacedPublic.lean/declarations/linearmap-clmofexistsboundedimage-coe.md) | 75 | `result-track:b217d4acb98f86262a61ca3e9622dca0e8e1b2504db4880f0e74fc7d8d7f227a` |
-| 3 | `theorem` | [LinearMap.clmOfExistsBoundedImage_apply](../../../../FunctionalAnalysis/ContinuousOfBoundedNamespacedPublic.lean/declarations/linearmap-clmofexistsboundedimage-apply.md) | 81 | `result-track:fb61034f662b30ca32456fcf82e307accd4d68104c061743c6e68b095a89ed4c` |
-| 4 | `theorem` | [LinearMap.continuousAt_zero_of_locally_bounded](../../../../FunctionalAnalysis/ContinuousOfBoundedNamespacedPublic.lean/declarations/linearmap-continuousat-zero-of-locally-bounded.md) | 88 | `result-track:dbcdcfb594a900c4e3d2e217ee1dadeb3868fe40c116ea47fcfed9e6734c445f` |
-| 5 | `theorem` | [LinearMap.continuous_of_locally_bounded](../../../../FunctionalAnalysis/ContinuousOfBoundedNamespacedPublic.lean/declarations/linearmap-continuous-of-locally-bounded.md) | 133 | `result-track:48e99445f6f71d560687a7bc93bbb906412879cc4cbd4632fca6d1fea9b84557` |
+| 1 | `def` | [LinearMap.clmOfExistsBoundedImage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ContinuousOfBoundedNamespacedPublic.lean/declarations/linearmap-clmofexistsboundedimage.md) | 51 | `declaration-track:327bda57d37c7a57ee5ed3f26da7e9439fee81326f9e499291f8a1ec84c93fc8` |
+| 2 | `theorem` | [LinearMap.clmOfExistsBoundedImage_coe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ContinuousOfBoundedNamespacedPublic.lean/declarations/linearmap-clmofexistsboundedimage-coe.md) | 75 | `result-track:b217d4acb98f86262a61ca3e9622dca0e8e1b2504db4880f0e74fc7d8d7f227a` |
+| 3 | `theorem` | [LinearMap.clmOfExistsBoundedImage_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ContinuousOfBoundedNamespacedPublic.lean/declarations/linearmap-clmofexistsboundedimage-apply.md) | 81 | `result-track:fb61034f662b30ca32456fcf82e307accd4d68104c061743c6e68b095a89ed4c` |
+| 4 | `theorem` | [LinearMap.continuousAt_zero_of_locally_bounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ContinuousOfBoundedNamespacedPublic.lean/declarations/linearmap-continuousat-zero-of-locally-bounded.md) | 88 | `result-track:dbcdcfb594a900c4e3d2e217ee1dadeb3868fe40c116ea47fcfed9e6734c445f` |
+| 5 | `theorem` | [LinearMap.continuous_of_locally_bounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ContinuousOfBoundedNamespacedPublic.lean/declarations/linearmap-continuous-of-locally-bounded.md) | 133 | `result-track:48e99445f6f71d560687a7bc93bbb906412879cc4cbd4632fca6d1fea9b84557` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AdelicSpectralSheafNamespacedAdelicSpectralSheaf.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AdelicSpectralSheafNamespacedAdelicSpectralSheaf.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AdelicSpectralSheafNamespacedAdelicSpectralSheaf.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AdelicSpectralSheafNamespacedAdelicSpectralSheaf.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,10 +60,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [AdelicSpectralSheaf](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AdelicSpectralSheafNamespacedAdelicSpectralSheaf.lean/declarations/adelicspectralsheaf.md) | 29 | `declaration-track:c8238678ec9c03dbe6d6e917d49a1931e57e849fb0ffdbb7b2b959df10e9a6ce` |
-| 2 | `theorem` | [adelic_sheaf_has_hyperdescent](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AdelicSpectralSheafNamespacedAdelicSpectralSheaf.lean/declarations/adelic-sheaf-has-hyperdescent.md) | 43 | `result-track:05088aa6086b745808f63a2fa6c7d59a59271fa26b2f951c13ebeaad007a92af` |
-| 3 | `theorem` | [adelic_sheaf_has_local_factor_compatibility](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AdelicSpectralSheafNamespacedAdelicSpectralSheaf.lean/declarations/adelic-sheaf-has-local-factor-compatibility.md) | 48 | `result-track:ea63a1b2f1c9473af7703a2572a5ece642657dd251888f71284395f10b9d618d` |
-| 4 | `theorem` | [adelic_sheaf_has_product_formula_compatibility](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AdelicSpectralSheafNamespacedAdelicSpectralSheaf.lean/declarations/adelic-sheaf-has-product-formula-compatibility.md) | 53 | `result-track:f6f68270952b7125582e2fab3597eb577e79921acb2a891038058ccd0c9ef457` |
+| 1 | `structure` | [AdelicSpectralSheaf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AdelicSpectralSheafNamespacedAdelicSpectralSheaf.lean/declarations/adelicspectralsheaf.md) | 29 | `declaration-track:c8238678ec9c03dbe6d6e917d49a1931e57e849fb0ffdbb7b2b959df10e9a6ce` |
+| 2 | `theorem` | [adelic_sheaf_has_hyperdescent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AdelicSpectralSheafNamespacedAdelicSpectralSheaf.lean/declarations/adelic-sheaf-has-hyperdescent.md) | 43 | `result-track:05088aa6086b745808f63a2fa6c7d59a59271fa26b2f951c13ebeaad007a92af` |
+| 3 | `theorem` | [adelic_sheaf_has_local_factor_compatibility](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AdelicSpectralSheafNamespacedAdelicSpectralSheaf.lean/declarations/adelic-sheaf-has-local-factor-compatibility.md) | 48 | `result-track:ea63a1b2f1c9473af7703a2572a5ece642657dd251888f71284395f10b9d618d` |
+| 4 | `theorem` | [adelic_sheaf_has_product_formula_compatibility](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AdelicSpectralSheafNamespacedAdelicSpectralSheaf.lean/declarations/adelic-sheaf-has-product-formula-compatibility.md) | 53 | `result-track:f6f68270952b7125582e2fab3597eb577e79921acb2a891038058ccd0c9ef457` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

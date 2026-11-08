@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ProposalAtomNameIR.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ProposalAtomNameIR.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProposalAtomNameIR.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProposalAtomNameIR.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [AtomNameIR](../../../../../ComputerScience/AlgorithmsInComputerScience/ProposalAtomNameIR.lean/declarations/atomnameir.md) | 9 | `declaration-track:e6bf3400527459b86c5ddb1dbfc0edcbf8e725fdfb5044cb60319906f026bc00` |
-| 2 | `structure` | [OracleCandidate](../../../../../ComputerScience/AlgorithmsInComputerScience/ProposalAtomNameIR.lean/declarations/oraclecandidate.md) | 20 | `declaration-track:847bb7085b12e087d670bffbbed7ef73d94997e87eeb7bc37511614177282d4c` |
-| 3 | `structure` | [ModelProposal](../../../../../ComputerScience/AlgorithmsInComputerScience/ProposalAtomNameIR.lean/declarations/modelproposal.md) | 30 | `declaration-track:52145e72cb876854d8643c2c5688ef6522e5ee6c33ed74b76526acc83437aaf0` |
-| 4 | `def` | [ProposalAgreement](../../../../../ComputerScience/AlgorithmsInComputerScience/ProposalAtomNameIR.lean/declarations/proposalagreement.md) | 39 | `declaration-track:4e116ec011971959c1783001f04161a6af6f8a716b2ead7f635c4c6cc2110c75` |
+| 1 | `structure` | [AtomNameIR](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProposalAtomNameIR.lean/declarations/atomnameir.md) | 9 | `declaration-track:e6bf3400527459b86c5ddb1dbfc0edcbf8e725fdfb5044cb60319906f026bc00` |
+| 2 | `structure` | [OracleCandidate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProposalAtomNameIR.lean/declarations/oraclecandidate.md) | 20 | `declaration-track:847bb7085b12e087d670bffbbed7ef73d94997e87eeb7bc37511614177282d4c` |
+| 3 | `structure` | [ModelProposal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProposalAtomNameIR.lean/declarations/modelproposal.md) | 30 | `declaration-track:52145e72cb876854d8643c2c5688ef6522e5ee6c33ed74b76526acc83437aaf0` |
+| 4 | `def` | [ProposalAgreement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProposalAtomNameIR.lean/declarations/proposalagreement.md) | 39 | `declaration-track:4e116ec011971959c1783001f04161a6af6f8a716b2ead7f635c4c6cc2110c75` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

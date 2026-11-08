@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LengthNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LengthNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LengthNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LengthNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [Length](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LengthNamespacedPublic.lean/declarations/length.md) | 35 | `declaration-track:25c24c483038e695c68b3c291b74714cb783f8c462970cbe902f68814a1d11e2` |
-| 2 | `def` | [isChunked](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LengthNamespacedPublic.lean/declarations/ischunked.md) | 54 | `declaration-track:d5963828b60562b059daf82cf26eeebde837c5165bca03fbb7c665a67e7a60b4` |
-| 3 | `def` | [isFixed](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LengthNamespacedPublic.lean/declarations/isfixed.md) | 62 | `declaration-track:f7e5897407c2bf6c01459d193d52eb4461a2fcedcbc0b3be33b46ab6824e9bf0` |
+| 1 | `inductive` | [Length](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LengthNamespacedPublic.lean/declarations/length.md) | 35 | `declaration-track:25c24c483038e695c68b3c291b74714cb783f8c462970cbe902f68814a1d11e2` |
+| 2 | `def` | [isChunked](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LengthNamespacedPublic.lean/declarations/ischunked.md) | 54 | `declaration-track:d5963828b60562b059daf82cf26eeebde837c5165bca03fbb7c665a67e7a60b4` |
+| 3 | `def` | [isFixed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LengthNamespacedPublic.lean/declarations/isfixed.md) | 62 | `declaration-track:f7e5897407c2bf6c01459d193d52eb4461a2fcedcbc0b3be33b46ab6824e9bf0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

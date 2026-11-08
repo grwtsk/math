@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetSort.lean/index.md) · [Full source](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetSort.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetSort.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetSort.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,19 +59,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [sort](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetSort.lean/declarations/sort.md) | 27 | `declaration-track:54a75284ff150e45c6058e8d19091819286b89da08ff1e1ea6e931c88adb3729` |
-| 2 | `theorem` | [coe_sort](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetSort.lean/declarations/coe-sort.md) | 36 | `result-track:c20b331bc8c91ef39eff2cedb6a0c735c786e33c3561f2d35c8f492c4defdf6c` |
-| 3 | `theorem` | [sort_sorted](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetSort.lean/declarations/sort-sorted.md) | 40 | `result-track:c9a082c0c667a47e9734c264ea6438f60bef257a7ccf54065a611f0121aaf312` |
-| 4 | `theorem` | [sort_eq](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetSort.lean/declarations/sort-eq.md) | 44 | `result-track:4d332f7e67f495f6ab192fcfda2222bde819707f432c5ec4a9893e809a40b144` |
-| 5 | `theorem` | [mem_sort](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetSort.lean/declarations/mem-sort.md) | 48 | `result-track:4ca5a7059bfc3da6e6082ff8e95bef216e3fd50b99bafaf38843503280135cc5` |
-| 6 | `theorem` | [length_sort](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetSort.lean/declarations/length-sort.md) | 51 | `result-track:3f0a91925880d3764b58443196e38dc8dd8773366abb8aed79fe66e4ba53a7b6` |
-| 7 | `theorem` | [sort_zero](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetSort.lean/declarations/sort-zero.md) | 55 | `result-track:06dfd73bb0b145f824da7bd4ca14d902513ffa57b838c9da099f6693d8ca386a` |
-| 8 | `theorem` | [sort_singleton](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetSort.lean/declarations/sort-singleton.md) | 59 | `result-track:81c33ba0467a12aeedb071325212df3a1898f3b9cb62db82b2f8a8456d6e9f52` |
-| 9 | `theorem` | [map_sort](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetSort.lean/declarations/map-sort.md) | 62 | `result-track:eaacf34f88fac14df3eed5bdf45f8d0602b3f66a4b59fe3f5839488ebc8246f0` |
-| 10 | `theorem` | [sort_cons](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetSort.lean/declarations/sort-cons.md) | 68 | `result-track:c71dba330c29b7d893b3a1330b4da863dab807db118a7694acae1ba0c90311e8` |
-| 11 | `theorem` | [sort_range](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetSort.lean/declarations/sort-range.md) | 74 | `result-track:29d73dd7a581e9c73181a0ff501bf7c647f8e7ba28312cc16d27ced5a84b2088` |
-| 12 | `instance` | [(anonymous)](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetSort.lean/declarations/instance.md) | 81 | `declaration-track:03cb40786d0798d069a46376bf8dde43104f80f50c9d89cb02ae98571f38c410` |
-| 13 | `instance` | [(anonymous)](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetSort.lean/declarations/instance-source-edition-2.md) | 93 | `declaration-track:80bc2d87c60ef81efb47010f40949ffc72f17b32ebc774f8f9932ea8092ab6a1` |
+| 1 | `def` | [sort](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetSort.lean/declarations/sort.md) | 27 | `declaration-track:54a75284ff150e45c6058e8d19091819286b89da08ff1e1ea6e931c88adb3729` |
+| 2 | `theorem` | [coe_sort](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetSort.lean/declarations/coe-sort.md) | 36 | `result-track:c20b331bc8c91ef39eff2cedb6a0c735c786e33c3561f2d35c8f492c4defdf6c` |
+| 3 | `theorem` | [sort_sorted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetSort.lean/declarations/sort-sorted.md) | 40 | `result-track:c9a082c0c667a47e9734c264ea6438f60bef257a7ccf54065a611f0121aaf312` |
+| 4 | `theorem` | [sort_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetSort.lean/declarations/sort-eq.md) | 44 | `result-track:4d332f7e67f495f6ab192fcfda2222bde819707f432c5ec4a9893e809a40b144` |
+| 5 | `theorem` | [mem_sort](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetSort.lean/declarations/mem-sort.md) | 48 | `result-track:4ca5a7059bfc3da6e6082ff8e95bef216e3fd50b99bafaf38843503280135cc5` |
+| 6 | `theorem` | [length_sort](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetSort.lean/declarations/length-sort.md) | 51 | `result-track:3f0a91925880d3764b58443196e38dc8dd8773366abb8aed79fe66e4ba53a7b6` |
+| 7 | `theorem` | [sort_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetSort.lean/declarations/sort-zero.md) | 55 | `result-track:06dfd73bb0b145f824da7bd4ca14d902513ffa57b838c9da099f6693d8ca386a` |
+| 8 | `theorem` | [sort_singleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetSort.lean/declarations/sort-singleton.md) | 59 | `result-track:81c33ba0467a12aeedb071325212df3a1898f3b9cb62db82b2f8a8456d6e9f52` |
+| 9 | `theorem` | [map_sort](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetSort.lean/declarations/map-sort.md) | 62 | `result-track:eaacf34f88fac14df3eed5bdf45f8d0602b3f66a4b59fe3f5839488ebc8246f0` |
+| 10 | `theorem` | [sort_cons](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetSort.lean/declarations/sort-cons.md) | 68 | `result-track:c71dba330c29b7d893b3a1330b4da863dab807db118a7694acae1ba0c90311e8` |
+| 11 | `theorem` | [sort_range](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetSort.lean/declarations/sort-range.md) | 74 | `result-track:29d73dd7a581e9c73181a0ff501bf7c647f8e7ba28312cc16d27ced5a84b2088` |
+| 12 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetSort.lean/declarations/instance.md) | 81 | `declaration-track:03cb40786d0798d069a46376bf8dde43104f80f50c9d89cb02ae98571f38c410` |
+| 13 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetSort.lean/declarations/instance-source-edition-2.md) | 93 | `declaration-track:80bc2d87c60ef81efb47010f40949ffc72f17b32ebc774f8f9932ea8092ab6a1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

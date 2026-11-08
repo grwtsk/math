@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TestEdgeRefuteNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TestEdgeRefuteNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TestEdgeRefuteNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TestEdgeRefuteNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [I01](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TestEdgeRefuteNamespaced.lean/declarations/i01.md) | 15 | `declaration-track:e5b5b63a26d2de6fd9d550a5be2df05e04f0b583406f06126c6b5407dfee473a` |
-| 2 | `theorem` | [edge_refute_intervalrat](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TestEdgeRefuteNamespaced.lean/declarations/edge-refute-intervalrat.md) | 17 | `result-track:2b07c0363aa735f8f8ee16cd35293649db7bedfecc7666381b5e4ff3272f6098` |
-| 3 | `theorem` | [edge_refute_strict_intervalrat](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TestEdgeRefuteNamespaced.lean/declarations/edge-refute-strict-intervalrat.md) | 21 | `result-track:71ead83a4f41d5abe235d849e178a17071fe0559b114fb26f698c7d70c13944b` |
+| 1 | `def` | [I01](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TestEdgeRefuteNamespaced.lean/declarations/i01.md) | 15 | `declaration-track:e5b5b63a26d2de6fd9d550a5be2df05e04f0b583406f06126c6b5407dfee473a` |
+| 2 | `theorem` | [edge_refute_intervalrat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TestEdgeRefuteNamespaced.lean/declarations/edge-refute-intervalrat.md) | 17 | `result-track:2b07c0363aa735f8f8ee16cd35293649db7bedfecc7666381b5e4ff3272f6098` |
+| 3 | `theorem` | [edge_refute_strict_intervalrat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TestEdgeRefuteNamespaced.lean/declarations/edge-refute-strict-intervalrat.md) | 21 | `result-track:71ead83a4f41d5abe235d849e178a17071fe0559b114fb26f698c7d70c13944b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

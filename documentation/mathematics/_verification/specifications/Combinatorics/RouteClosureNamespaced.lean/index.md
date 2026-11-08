@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/RouteClosureNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/RouteClosureNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RouteClosureNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RouteClosureNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [RouteCandidateDisposition](../../../../Combinatorics/RouteClosureNamespaced.lean/declarations/routecandidatedisposition.md) | 27 | `declaration-track:956be1bc11d1bcd42107fc49e14c4cba4845fb77e15ec0ba638b95d1422bfc8e` |
-| 2 | `structure` | [ExactFiniteRouteClosure](../../../../Combinatorics/RouteClosureNamespaced.lean/declarations/exactfiniterouteclosure.md) | 35 | `declaration-track:a38c817af3eccc0a8b169ff567a64596fc62fb4ffa7fd3d9e3092d52fb86e022` |
-| 3 | `theorem` | [eligible_iff_mem](../../../../Combinatorics/RouteClosureNamespaced.lean/declarations/eligible-iff-mem.md) | 62 | `result-track:90d5fdc10d1d3407413f81f5132bb9ecaa5b1dfeaecb04df34d44380247ff071` |
-| 4 | `theorem` | [included_iff_mem](../../../../Combinatorics/RouteClosureNamespaced.lean/declarations/included-iff-mem.md) | 74 | `result-track:0ac1dd291ff0f541d5cafe6001c903c886191bf299ae2cd221185bcfebb06aea` |
-| 5 | `theorem` | [omitted_is_ineligible](../../../../Combinatorics/RouteClosureNamespaced.lean/declarations/omitted-is-ineligible.md) | 89 | `result-track:9569510d035230ad789fa4ecc3b2c594d5555e1fd1069c1c863aee0e208ebd5a` |
-| 6 | `structure` | [BoundedRouteClosure](../../../../Combinatorics/RouteClosureNamespaced.lean/declarations/boundedrouteclosure.md) | 105 | `declaration-track:98852b03d637a5fc339e1f4c74e5bad5953baacecde188773d6afdce0e57c35e` |
-| 7 | `structure` | [EnumerativeRouteClosure](../../../../Combinatorics/RouteClosureNamespaced.lean/declarations/enumerativerouteclosure.md) | 113 | `declaration-track:02f0a9b512f841d4cefbf7115aea82ebed95f256cc0c00d30c732a8d00cedc7c` |
-| 8 | `inductive` | [RouteClosureClaim](../../../../Combinatorics/RouteClosureNamespaced.lean/declarations/routeclosureclaim.md) | 121 | `declaration-track:d60014cf428468d04aeb80a977be1b009661c6cf13be180f4a995e837eb3674c` |
+| 1 | `inductive` | [RouteCandidateDisposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RouteClosureNamespaced.lean/declarations/routecandidatedisposition.md) | 27 | `declaration-track:956be1bc11d1bcd42107fc49e14c4cba4845fb77e15ec0ba638b95d1422bfc8e` |
+| 2 | `structure` | [ExactFiniteRouteClosure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RouteClosureNamespaced.lean/declarations/exactfiniterouteclosure.md) | 35 | `declaration-track:a38c817af3eccc0a8b169ff567a64596fc62fb4ffa7fd3d9e3092d52fb86e022` |
+| 3 | `theorem` | [eligible_iff_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RouteClosureNamespaced.lean/declarations/eligible-iff-mem.md) | 62 | `result-track:90d5fdc10d1d3407413f81f5132bb9ecaa5b1dfeaecb04df34d44380247ff071` |
+| 4 | `theorem` | [included_iff_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RouteClosureNamespaced.lean/declarations/included-iff-mem.md) | 74 | `result-track:0ac1dd291ff0f541d5cafe6001c903c886191bf299ae2cd221185bcfebb06aea` |
+| 5 | `theorem` | [omitted_is_ineligible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RouteClosureNamespaced.lean/declarations/omitted-is-ineligible.md) | 89 | `result-track:9569510d035230ad789fa4ecc3b2c594d5555e1fd1069c1c863aee0e208ebd5a` |
+| 6 | `structure` | [BoundedRouteClosure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RouteClosureNamespaced.lean/declarations/boundedrouteclosure.md) | 105 | `declaration-track:98852b03d637a5fc339e1f4c74e5bad5953baacecde188773d6afdce0e57c35e` |
+| 7 | `structure` | [EnumerativeRouteClosure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RouteClosureNamespaced.lean/declarations/enumerativerouteclosure.md) | 113 | `declaration-track:02f0a9b512f841d4cefbf7115aea82ebed95f256cc0c00d30c732a8d00cedc7c` |
+| 8 | `inductive` | [RouteClosureClaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RouteClosureNamespaced.lean/declarations/routeclosureclaim.md) | 121 | `declaration-track:d60014cf428468d04aeb80a977be1b009661c6cf13be180f4a995e837eb3674c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

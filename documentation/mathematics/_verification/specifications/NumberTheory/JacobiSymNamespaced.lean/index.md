@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/JacobiSymNamespaced.lean/index.md) · [Full source](../../../../NumberTheory/JacobiSymNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/JacobiSymNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/JacobiSymNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [prime_1000003](../../../../NumberTheory/JacobiSymNamespaced.lean/declarations/prime-1000003.md) | 45 | `declaration-track:f887fbcd03e4b94056d15f4b23f20e2df8e792a304038341cab56ae44a86e9ed` |
+| 1 | `instance` | [prime_1000003](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/JacobiSymNamespaced.lean/declarations/prime-1000003.md) | 45 | `declaration-track:f887fbcd03e4b94056d15f4b23f20e2df8e792a304038341cab56ae44a86e9ed` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/ActualPairedProductInfrastructureNamespacedSourceEdition1.lean/index.md) · [Full source](../../../../RealFunctions/ActualPairedProductInfrastructureNamespacedSourceEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualPairedProductInfrastructureNamespacedSourceEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualPairedProductInfrastructureNamespacedSourceEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [deriv_square](../../../../RealFunctions/ActualPairedProductInfrastructureNamespacedSourceEdition1.lean/declarations/deriv-square.md) | 35 | `result-track:390b78665ff3d28472385ef26e5dce98346a15028cdebf5c6900a02106b06d81` |
-| 2 | `theorem` | [meromorphicOrderAt_comp_square](../../../../RealFunctions/ActualPairedProductInfrastructureNamespacedSourceEdition1.lean/declarations/meromorphicorderat-comp-square.md) | 41 | `result-track:1b90eb6029e880c828fa1b524ab25b7b17915a697cb2d6e654215a8ea97ebfaa` |
-| 3 | `theorem` | [tendstoLocallyUniformlyOn_iterate_deriv](../../../../RealFunctions/ActualPairedProductInfrastructureNamespacedSourceEdition1.lean/declarations/tendstolocallyuniformlyon-iterate-deriv.md) | 51 | `result-track:a493b970d3e324a3da2940b82bbabee2a37d08896cf97ccb6ad7c432d372ec80` |
-| 4 | `theorem` | [tendsto_iteratedDeriv_zero_of_locallyUniform](../../../../RealFunctions/ActualPairedProductInfrastructureNamespacedSourceEdition1.lean/declarations/tendsto-iteratedderiv-zero-of-locallyuniform.md) | 67 | `result-track:a51ea0449f274c571a5faca549d377f9c2b445e41d1283f755236194676af6c6` |
-| 5 | `theorem` | [tendsto_taylorCoefficient_zero_of_locallyUniform](../../../../RealFunctions/ActualPairedProductInfrastructureNamespacedSourceEdition1.lean/declarations/tendsto-taylorcoefficient-zero-of-locallyuniform.md) | 80 | `result-track:43d3fdc3ecfb7b06ba6b3c70abd6d0feb783aff5e76dd86bf837be42de603d8b` |
+| 1 | `theorem` | [deriv_square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualPairedProductInfrastructureNamespacedSourceEdition1.lean/declarations/deriv-square.md) | 35 | `result-track:390b78665ff3d28472385ef26e5dce98346a15028cdebf5c6900a02106b06d81` |
+| 2 | `theorem` | [meromorphicOrderAt_comp_square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualPairedProductInfrastructureNamespacedSourceEdition1.lean/declarations/meromorphicorderat-comp-square.md) | 41 | `result-track:1b90eb6029e880c828fa1b524ab25b7b17915a697cb2d6e654215a8ea97ebfaa` |
+| 3 | `theorem` | [tendstoLocallyUniformlyOn_iterate_deriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualPairedProductInfrastructureNamespacedSourceEdition1.lean/declarations/tendstolocallyuniformlyon-iterate-deriv.md) | 51 | `result-track:a493b970d3e324a3da2940b82bbabee2a37d08896cf97ccb6ad7c432d372ec80` |
+| 4 | `theorem` | [tendsto_iteratedDeriv_zero_of_locallyUniform](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualPairedProductInfrastructureNamespacedSourceEdition1.lean/declarations/tendsto-iteratedderiv-zero-of-locallyuniform.md) | 67 | `result-track:a51ea0449f274c571a5faca549d377f9c2b445e41d1283f755236194676af6c6` |
+| 5 | `theorem` | [tendsto_taylorCoefficient_zero_of_locallyUniform](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualPairedProductInfrastructureNamespacedSourceEdition1.lean/declarations/tendsto-taylorcoefficient-zero-of-locallyuniform.md) | 80 | `result-track:43d3fdc3ecfb7b06ba6b3c70abd6d0feb783aff5e76dd86bf837be42de603d8b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

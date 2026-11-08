@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TrustEdition1.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TrustEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TrustEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TrustEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TrustAssumption](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TrustEdition1.lean/declarations/trustassumption.md) | 11 | `declaration-track:35c9fad7440bdaa0fcabffd46ef3bb2c7ac7b95ba02f6b73dc5da42ac56e3a91` |
-| 2 | `structure` | [TrustClosure](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TrustEdition1.lean/declarations/trustclosure.md) | 17 | `declaration-track:3e2f5561ac036e80afb3aaf55a88400769161ae7cbbf89f15dabb6b11c114b94` |
-| 3 | `def` | [Resolved](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TrustEdition1.lean/declarations/resolved.md) | 31 | `declaration-track:4661eb92aeab5c852c5196135a86cf6a053d67c5faf5b6b9110a28c1cbea8de4` |
+| 1 | `structure` | [TrustAssumption](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TrustEdition1.lean/declarations/trustassumption.md) | 11 | `declaration-track:35c9fad7440bdaa0fcabffd46ef3bb2c7ac7b95ba02f6b73dc5da42ac56e3a91` |
+| 2 | `structure` | [TrustClosure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TrustEdition1.lean/declarations/trustclosure.md) | 17 | `declaration-track:3e2f5561ac036e80afb3aaf55a88400769161ae7cbbf89f15dabb6b11c114b94` |
+| 3 | `def` | [Resolved](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TrustEdition1.lean/declarations/resolved.md) | 31 | `declaration-track:4661eb92aeab5c852c5196135a86cf6a053d67c5faf5b6b9110a28c1cbea8de4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

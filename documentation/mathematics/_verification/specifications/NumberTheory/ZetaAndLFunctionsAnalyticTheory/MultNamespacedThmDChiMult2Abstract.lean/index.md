@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MultNamespacedThmDChiMult2Abstract.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MultNamespacedThmDChiMult2Abstract.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MultNamespacedThmDChiMult2Abstract.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MultNamespacedThmDChiMult2Abstract.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [thmDChi_mult2_abstract](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MultNamespacedThmDChiMult2Abstract.lean/declarations/thmdchi-mult2-abstract.md) | 42 | `result-track:4e934a0ea650ddebf679d357bd245404f4a910a04c336becfbe2584ab586c412` |
-| 2 | `theorem` | [thmDChi_mult3_abstract](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MultNamespacedThmDChiMult2Abstract.lean/declarations/thmdchi-mult3-abstract.md) | 201 | `result-track:d3172d9a3daf46fede390992bdadcc6bd6f8f0258b9bd7b8376d5457f1dd50d2` |
-| 3 | `theorem` | [thmDChi_mult_lam_abstract](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MultNamespacedThmDChiMult2Abstract.lean/declarations/thmdchi-mult-lam-abstract.md) | 375 | `result-track:6498de19da956a335d5492aa650cddff58a4ad5140203c975a7401f2a6171417` |
-| 4 | `theorem` | [thmE_D_simple_mult_lam](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MultNamespacedThmDChiMult2Abstract.lean/declarations/thme-d-simple-mult-lam.md) | 416 | `result-track:4f701cdd90f53306e7d641039695af48904d0ee2b5b271aa383d13f6af6d40bb` |
-| 5 | `theorem` | [thmE_D_dist_mult_lam](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MultNamespacedThmDChiMult2Abstract.lean/declarations/thme-d-dist-mult-lam.md) | 426 | `result-track:d189a2ba0f4be26155b58088d63230c3bb6a490311976dd881cc35f415bafcde` |
-| 6 | `theorem` | [thmE_D₀_simple_mult](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MultNamespacedThmDChiMult2Abstract.lean/declarations/thme-d-simple-mult.md) | 437 | `result-track:1338ed7082b142ea6251f0e4178c5c4ff23bdd0793c7229052f357b74ebd1222` |
-| 7 | `theorem` | [thmE_D₀_dist_mult](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MultNamespacedThmDChiMult2Abstract.lean/declarations/thme-d-dist-mult.md) | 445 | `result-track:43894ab6f922dce6aa077c752b6b365ad7b05c1edad4cb974029765eb91823c1` |
+| 1 | `theorem` | [thmDChi_mult2_abstract](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MultNamespacedThmDChiMult2Abstract.lean/declarations/thmdchi-mult2-abstract.md) | 42 | `result-track:4e934a0ea650ddebf679d357bd245404f4a910a04c336becfbe2584ab586c412` |
+| 2 | `theorem` | [thmDChi_mult3_abstract](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MultNamespacedThmDChiMult2Abstract.lean/declarations/thmdchi-mult3-abstract.md) | 201 | `result-track:d3172d9a3daf46fede390992bdadcc6bd6f8f0258b9bd7b8376d5457f1dd50d2` |
+| 3 | `theorem` | [thmDChi_mult_lam_abstract](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MultNamespacedThmDChiMult2Abstract.lean/declarations/thmdchi-mult-lam-abstract.md) | 375 | `result-track:6498de19da956a335d5492aa650cddff58a4ad5140203c975a7401f2a6171417` |
+| 4 | `theorem` | [thmE_D_simple_mult_lam](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MultNamespacedThmDChiMult2Abstract.lean/declarations/thme-d-simple-mult-lam.md) | 416 | `result-track:4f701cdd90f53306e7d641039695af48904d0ee2b5b271aa383d13f6af6d40bb` |
+| 5 | `theorem` | [thmE_D_dist_mult_lam](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MultNamespacedThmDChiMult2Abstract.lean/declarations/thme-d-dist-mult-lam.md) | 426 | `result-track:d189a2ba0f4be26155b58088d63230c3bb6a490311976dd881cc35f415bafcde` |
+| 6 | `theorem` | [thmE_D₀_simple_mult](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MultNamespacedThmDChiMult2Abstract.lean/declarations/thme-d-simple-mult.md) | 437 | `result-track:1338ed7082b142ea6251f0e4178c5c4ff23bdd0793c7229052f357b74ebd1222` |
+| 7 | `theorem` | [thmE_D₀_dist_mult](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MultNamespacedThmDChiMult2Abstract.lean/declarations/thme-d-dist-mult.md) | 445 | `result-track:43894ab6f922dce6aa077c752b6b365ad7b05c1edad4cb974029765eb91823c1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

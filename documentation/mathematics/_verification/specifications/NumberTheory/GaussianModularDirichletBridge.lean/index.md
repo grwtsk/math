@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/GaussianModularDirichletBridge.lean/index.md) · [Full source](../../../../NumberTheory/GaussianModularDirichletBridge.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/GaussianModularDirichletBridge.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/GaussianModularDirichletBridge.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,10 +46,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Farey.ResolvableQuintic`](../../../../NumberTheory/ResolvableQuintic.lean/index.md) — import line 10; pinned internal source present.
-- [`GRWTSK.NumberTheory.Primes.QuadraticGaussianLine`](../../../../NumberTheory/MultiplicativeNumberTheory/QuadraticGaussianLine.lean/index.md) — import line 11; pinned internal source present.
-- [`GRWTSK.Analysis.Fourier.FiniteAdditiveProjector`](../../../../HarmonicAnalysisOnEuclideanSpaces/FiniteAdditiveProjector.lean/index.md) — import line 12; pinned internal source present.
-- [`GRWTSK.NumberTheory.Moebius.DirichletNonunitResidueObstruction`](../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DirichletNonunitResidueObstruction.lean/index.md) — import line 13; pinned internal source present.
+- [`GRWTSK.NumberTheory.Farey.ResolvableQuintic`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ResolvableQuintic.lean/index.md) — import line 10; pinned internal source present.
+- [`GRWTSK.NumberTheory.Primes.QuadraticGaussianLine`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/QuadraticGaussianLine.lean/index.md) — import line 11; pinned internal source present.
+- [`GRWTSK.Analysis.Fourier.FiniteAdditiveProjector`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/FiniteAdditiveProjector.lean/index.md) — import line 12; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.DirichletNonunitResidueObstruction`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DirichletNonunitResidueObstruction.lean/index.md) — import line 13; pinned internal source present.
 - `Mathlib.Tactic` — import line 14; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -61,22 +61,22 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [leftGaussian](../../../../NumberTheory/GaussianModularDirichletBridge.lean/declarations/leftgaussian.md) | 48 | `declaration-track:cb84a611c0a6701d32f1bb5830e52257670c82f7f26133fdbf678b2a52cf28d3` |
-| 2 | `def` | [conjugateRightGaussian](../../../../NumberTheory/GaussianModularDirichletBridge.lean/declarations/conjugaterightgaussian.md) | 52 | `declaration-track:a23597b4686f0aa8fd17690673c315002a6f7bf422ad5eaa268ebe302a50c26a` |
-| 3 | `theorem` | [gaussian_cross_im_eq_one](../../../../NumberTheory/GaussianModularDirichletBridge.lean/declarations/gaussian-cross-im-eq-one.md) | 57 | `result-track:034b10d8d0a5125a690d1060d774330791d503c589fc02c35256fae5852e5a69` |
-| 4 | `def` | [modularDet](../../../../NumberTheory/GaussianModularDirichletBridge.lean/declarations/modulardet.md) | 74 | `declaration-track:f4885c758896fd0a64faf8d40430e983ab1bdb6cd583bf301ba71e33f3706552` |
-| 5 | `theorem` | [modularDet_eq_one](../../../../NumberTheory/GaussianModularDirichletBridge.lean/declarations/modulardet-eq-one.md) | 79 | `result-track:e619bd3f3286efc35ed99db7ff688d3a6506828b8a10bafdd0d23ad516e18818` |
-| 6 | `theorem` | [mediant_numerator_projector](../../../../NumberTheory/GaussianModularDirichletBridge.lean/declarations/mediant-numerator-projector.md) | 92 | `result-track:88645b79b74f98da0072e8c38284a7fb68f0f540db4829d5487fe3721bb45a8a` |
-| 7 | `theorem` | [mediant_denominator_projector](../../../../NumberTheory/GaussianModularDirichletBridge.lean/declarations/mediant-denominator-projector.md) | 99 | `result-track:8719bdf38e4f9cc6ccfd1f91cfa3637f003887df8837e42f9ce46fda7885cfd3` |
-| 8 | `def` | [GaussianModularEye](../../../../NumberTheory/GaussianModularDirichletBridge.lean/declarations/gaussianmodulareye.md) | 108 | `declaration-track:bf17812f8ff5f3cad1e43b97d7ca135e2109d808d1684e6c54659efb8d28490e` |
-| 9 | `theorem` | [gaussianModularEye_iff](../../../../NumberTheory/GaussianModularDirichletBridge.lean/declarations/gaussianmodulareye-iff.md) | 120 | `result-track:1534ad2bf12198d9fc841be5a29c9cfdaa2f46fd9716af0e82eb6a2063245268` |
-| 10 | `theorem` | [gaussianModularEye_refine](../../../../NumberTheory/GaussianModularDirichletBridge.lean/declarations/gaussianmodulareye-refine.md) | 132 | `result-track:57e7bf02a897dec4ac0fd871ad46c58e29953bf62b9658d5b7ab2e44e84d4d3f` |
-| 11 | `def` | [nonunitEye](../../../../NumberTheory/GaussianModularDirichletBridge.lean/declarations/nonuniteye.md) | 144 | `declaration-track:ddb3c8521c0aa28557df3bcf46cf5df7faccccd001082ee032def36fb5573523` |
-| 12 | `theorem` | [nonunitEye_resolves](../../../../NumberTheory/GaussianModularDirichletBridge.lean/declarations/nonuniteye-resolves.md) | 154 | `result-track:dbdf6e40cae6b856da63228bb3129acf3799b9a62c80c76e917a4b0b4517244c` |
-| 13 | `theorem` | [nonunitEye_right_nonunit](../../../../NumberTheory/GaussianModularDirichletBridge.lean/declarations/nonuniteye-right-nonunit.md) | 162 | `result-track:d056a4d989e63f42683cf7bd47f61d8f2c205df24185ab025416bbbe1454073e` |
-| 14 | `theorem` | [nonunitEye_right_dirichlet_vanishes](../../../../NumberTheory/GaussianModularDirichletBridge.lean/declarations/nonuniteye-right-dirichlet-vanishes.md) | 169 | `result-track:305e016d8c6f428dd1d9bb76eaef17d12c9e2a3a438c309421fd5a390792c138` |
-| 15 | `theorem` | [nonunitEye_right_additive_selector](../../../../NumberTheory/GaussianModularDirichletBridge.lean/declarations/nonuniteye-right-additive-selector.md) | 177 | `result-track:de02bd3ddcb125a94e2614286fc2a0624cec05d8c6f909c16f1e6483d153a727` |
-| 16 | `theorem` | [nonunitEye_gaussian_modular_dirichlet_obstruction](../../../../NumberTheory/GaussianModularDirichletBridge.lean/declarations/nonuniteye-gaussian-modular-dirichlet-obstruction.md) | 186 | `result-track:8dfa456068f82f74359add1b3cbd79033e0519a4654c1cc9455b464a4f2fcb11` |
+| 1 | `def` | [leftGaussian](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/GaussianModularDirichletBridge.lean/declarations/leftgaussian.md) | 48 | `declaration-track:cb84a611c0a6701d32f1bb5830e52257670c82f7f26133fdbf678b2a52cf28d3` |
+| 2 | `def` | [conjugateRightGaussian](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/GaussianModularDirichletBridge.lean/declarations/conjugaterightgaussian.md) | 52 | `declaration-track:a23597b4686f0aa8fd17690673c315002a6f7bf422ad5eaa268ebe302a50c26a` |
+| 3 | `theorem` | [gaussian_cross_im_eq_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/GaussianModularDirichletBridge.lean/declarations/gaussian-cross-im-eq-one.md) | 57 | `result-track:034b10d8d0a5125a690d1060d774330791d503c589fc02c35256fae5852e5a69` |
+| 4 | `def` | [modularDet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/GaussianModularDirichletBridge.lean/declarations/modulardet.md) | 74 | `declaration-track:f4885c758896fd0a64faf8d40430e983ab1bdb6cd583bf301ba71e33f3706552` |
+| 5 | `theorem` | [modularDet_eq_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/GaussianModularDirichletBridge.lean/declarations/modulardet-eq-one.md) | 79 | `result-track:e619bd3f3286efc35ed99db7ff688d3a6506828b8a10bafdd0d23ad516e18818` |
+| 6 | `theorem` | [mediant_numerator_projector](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/GaussianModularDirichletBridge.lean/declarations/mediant-numerator-projector.md) | 92 | `result-track:88645b79b74f98da0072e8c38284a7fb68f0f540db4829d5487fe3721bb45a8a` |
+| 7 | `theorem` | [mediant_denominator_projector](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/GaussianModularDirichletBridge.lean/declarations/mediant-denominator-projector.md) | 99 | `result-track:8719bdf38e4f9cc6ccfd1f91cfa3637f003887df8837e42f9ce46fda7885cfd3` |
+| 8 | `def` | [GaussianModularEye](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/GaussianModularDirichletBridge.lean/declarations/gaussianmodulareye.md) | 108 | `declaration-track:bf17812f8ff5f3cad1e43b97d7ca135e2109d808d1684e6c54659efb8d28490e` |
+| 9 | `theorem` | [gaussianModularEye_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/GaussianModularDirichletBridge.lean/declarations/gaussianmodulareye-iff.md) | 120 | `result-track:1534ad2bf12198d9fc841be5a29c9cfdaa2f46fd9716af0e82eb6a2063245268` |
+| 10 | `theorem` | [gaussianModularEye_refine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/GaussianModularDirichletBridge.lean/declarations/gaussianmodulareye-refine.md) | 132 | `result-track:57e7bf02a897dec4ac0fd871ad46c58e29953bf62b9658d5b7ab2e44e84d4d3f` |
+| 11 | `def` | [nonunitEye](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/GaussianModularDirichletBridge.lean/declarations/nonuniteye.md) | 144 | `declaration-track:ddb3c8521c0aa28557df3bcf46cf5df7faccccd001082ee032def36fb5573523` |
+| 12 | `theorem` | [nonunitEye_resolves](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/GaussianModularDirichletBridge.lean/declarations/nonuniteye-resolves.md) | 154 | `result-track:dbdf6e40cae6b856da63228bb3129acf3799b9a62c80c76e917a4b0b4517244c` |
+| 13 | `theorem` | [nonunitEye_right_nonunit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/GaussianModularDirichletBridge.lean/declarations/nonuniteye-right-nonunit.md) | 162 | `result-track:d056a4d989e63f42683cf7bd47f61d8f2c205df24185ab025416bbbe1454073e` |
+| 14 | `theorem` | [nonunitEye_right_dirichlet_vanishes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/GaussianModularDirichletBridge.lean/declarations/nonuniteye-right-dirichlet-vanishes.md) | 169 | `result-track:305e016d8c6f428dd1d9bb76eaef17d12c9e2a3a438c309421fd5a390792c138` |
+| 15 | `theorem` | [nonunitEye_right_additive_selector](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/GaussianModularDirichletBridge.lean/declarations/nonuniteye-right-additive-selector.md) | 177 | `result-track:de02bd3ddcb125a94e2614286fc2a0624cec05d8c6f909c16f1e6483d153a727` |
+| 16 | `theorem` | [nonunitEye_gaussian_modular_dirichlet_obstruction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/GaussianModularDirichletBridge.lean/declarations/nonuniteye-gaussian-modular-dirichlet-obstruction.md) | 186 | `result-track:8dfa456068f82f74359add1b3cbd79033e0519a4654c1cc9455b464a4f2fcb11` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

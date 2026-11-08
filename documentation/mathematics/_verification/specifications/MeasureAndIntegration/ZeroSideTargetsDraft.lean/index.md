@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ZeroSideTargetsDraft.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ZeroSideTargetsDraft.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSideTargetsDraft.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSideTargetsDraft.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualTest](../../../../MeasureAndIntegration/ZeroSideTargetsDraft.lean/declarations/actualtest.md) | 22 | `declaration-track:eeee493fc37ae82282a5a9ac95b1e39f7e65af91f2cfd0c759b353ca1a80d23f` |
-| 2 | `def` | [bilateralTransform](../../../../MeasureAndIntegration/ZeroSideTargetsDraft.lean/declarations/bilateraltransform.md) | 25 | `declaration-track:47d4eae5688f452d2d79b4a978b13e8d32a03adcae22c2abf5f1353ab27dece1` |
-| 3 | `def` | [transformPolynomial](../../../../MeasureAndIntegration/ZeroSideTargetsDraft.lean/declarations/transformpolynomial.md) | 29 | `declaration-track:74eafc4ae32fc36ecdfa63ec7925efddc9f0f37e640934aa7142d3c27cf5e0cd` |
-| 4 | `def` | [dividedTransform](../../../../MeasureAndIntegration/ZeroSideTargetsDraft.lean/declarations/dividedtransform.md) | 32 | `declaration-track:5e5a2a33421c4a777d1a50a214ed318d7f40d22665c2739b0c5f11f0bf4350c0` |
-| 5 | `def` | [BilateralTransformObligation](../../../../MeasureAndIntegration/ZeroSideTargetsDraft.lean/declarations/bilateraltransformobligation.md) | 38 | `declaration-track:1468f7ad8682b1c38613c05f10bd2098fa3913f1de443c4069d994459e606c5f` |
-| 6 | `def` | [ZeroSummabilityObligation](../../../../MeasureAndIntegration/ZeroSideTargetsDraft.lean/declarations/zerosummabilityobligation.md) | 44 | `declaration-track:583342a273b444f7b434d765cf4a1ff4aff6c7f9f40f4d5ffc421e769ac9c635` |
-| 7 | `def` | [ActualFormAdmission](../../../../MeasureAndIntegration/ZeroSideTargetsDraft.lean/declarations/actualformadmission.md) | 49 | `declaration-track:7b01ce2f53aec9514350f5fbec92e2c26a314d275a74229065b3358c8f8516db` |
-| 8 | `def` | [ZeroSideIdentityObligation](../../../../MeasureAndIntegration/ZeroSideTargetsDraft.lean/declarations/zerosideidentityobligation.md) | 59 | `declaration-track:8a94bbc5283bba6719ca9c282555e39b9120bd8093c928cd90d46a06b4c7ff59` |
+| 1 | `def` | [actualTest](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSideTargetsDraft.lean/declarations/actualtest.md) | 22 | `declaration-track:eeee493fc37ae82282a5a9ac95b1e39f7e65af91f2cfd0c759b353ca1a80d23f` |
+| 2 | `def` | [bilateralTransform](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSideTargetsDraft.lean/declarations/bilateraltransform.md) | 25 | `declaration-track:47d4eae5688f452d2d79b4a978b13e8d32a03adcae22c2abf5f1353ab27dece1` |
+| 3 | `def` | [transformPolynomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSideTargetsDraft.lean/declarations/transformpolynomial.md) | 29 | `declaration-track:74eafc4ae32fc36ecdfa63ec7925efddc9f0f37e640934aa7142d3c27cf5e0cd` |
+| 4 | `def` | [dividedTransform](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSideTargetsDraft.lean/declarations/dividedtransform.md) | 32 | `declaration-track:5e5a2a33421c4a777d1a50a214ed318d7f40d22665c2739b0c5f11f0bf4350c0` |
+| 5 | `def` | [BilateralTransformObligation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSideTargetsDraft.lean/declarations/bilateraltransformobligation.md) | 38 | `declaration-track:1468f7ad8682b1c38613c05f10bd2098fa3913f1de443c4069d994459e606c5f` |
+| 6 | `def` | [ZeroSummabilityObligation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSideTargetsDraft.lean/declarations/zerosummabilityobligation.md) | 44 | `declaration-track:583342a273b444f7b434d765cf4a1ff4aff6c7f9f40f4d5ffc421e769ac9c635` |
+| 7 | `def` | [ActualFormAdmission](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSideTargetsDraft.lean/declarations/actualformadmission.md) | 49 | `declaration-track:7b01ce2f53aec9514350f5fbec92e2c26a314d275a74229065b3358c8f8516db` |
+| 8 | `def` | [ZeroSideIdentityObligation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSideTargetsDraft.lean/declarations/zerosideidentityobligation.md) | 59 | `declaration-track:8a94bbc5283bba6719ca9c282555e39b9120bd8093c928cd90d46a06b4c7ff59` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

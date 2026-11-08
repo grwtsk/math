@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Theorem.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Theorem.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Theorem.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Theorem.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CertifiedIntervalTheorem](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Theorem.lean/declarations/certifiedintervaltheorem.md) | 8 | `declaration-track:20799ae7ab8e07beb08a5fb92cc12750286f11617e00431068610bfe15c35842` |
-| 2 | `structure` | [ProfileRefines](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Theorem.lean/declarations/profilerefines.md) | 24 | `declaration-track:2593f33dd4f22e4d12af69e3033e58e44f2cb521905829447efaa9d1db96594a` |
-| 3 | `theorem` | [transportClaim](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Theorem.lean/declarations/transportclaim.md) | 47 | `result-track:ad90178a1fd9307cdbad870954b3d68038b55e32df63d590361f2d282582d8ce` |
+| 1 | `structure` | [CertifiedIntervalTheorem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Theorem.lean/declarations/certifiedintervaltheorem.md) | 8 | `declaration-track:20799ae7ab8e07beb08a5fb92cc12750286f11617e00431068610bfe15c35842` |
+| 2 | `structure` | [ProfileRefines](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Theorem.lean/declarations/profilerefines.md) | 24 | `declaration-track:2593f33dd4f22e4d12af69e3033e58e44f2cb521905829447efaa9d1db96594a` |
+| 3 | `theorem` | [transportClaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Theorem.lean/declarations/transportclaim.md) | 47 | `result-track:ad90178a1fd9307cdbad870954b3d68038b55e32df63d590361f2d282582d8ce` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

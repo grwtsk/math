@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/BinaryRicciFlowSanityNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/BinaryRicciFlowSanityNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryRicciFlowSanityNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryRicciFlowSanityNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [dGamma_nonneg](../../../../Combinatorics/BinaryRicciFlowSanityNamespaced.lean/declarations/dgamma-nonneg.md) | 28 | `result-track:63ce113dc6a14ce0157eedda0aa9829335883b4eced83b1e7377751981829612` |
-| 2 | `theorem` | [dGamma_symm](../../../../Combinatorics/BinaryRicciFlowSanityNamespaced.lean/declarations/dgamma-symm.md) | 36 | `result-track:c52c06a60133c157ec72042e83f1ed450e5fe95d0dc7844874e1f3575a3ae7e7` |
-| 3 | `theorem` | [kernel_pos](../../../../Combinatorics/BinaryRicciFlowSanityNamespaced.lean/declarations/kernel-pos.md) | 46 | `result-track:b77aad3644703241494e8accce22b76e77fd246381c7b3547ef4a78fb57c424d` |
-| 4 | `theorem` | [kernel_symm](../../../../Combinatorics/BinaryRicciFlowSanityNamespaced.lean/declarations/kernel-symm.md) | 54 | `result-track:77c7c9836034ca77efdb7fcd8b87a47d8bdbe82a363987ccf35e9cee79e7ea69` |
-| 5 | `theorem` | [dGamma_eq_sum_range_of_supports_le](../../../../Combinatorics/BinaryRicciFlowSanityNamespaced.lean/declarations/dgamma-eq-sum-range-of-supports-le.md) | 62 | `result-track:3104a8bc36c60f1e148d9dd56aeebef52d50fc6f520f6fc89ee4a3a420d7d2c8` |
-| 6 | `theorem` | [dGamma_triangle](../../../../Combinatorics/BinaryRicciFlowSanityNamespaced.lean/declarations/dgamma-triangle.md) | 86 | `result-track:a7181f18bc153889f412c53b2252c5af5cb6d1426e3174efe44140c3759e17da` |
-| 7 | `theorem` | [bitReal_injective](../../../../Combinatorics/BinaryRicciFlowSanityNamespaced.lean/declarations/bitreal-injective.md) | 117 | `result-track:d5ee6929a7e2e639f97e6c13d5bbf869f3684321e3f9a9aa3ec2924fd0a0093f` |
-| 8 | `theorem` | [dGamma_eq_zero_iff](../../../../Combinatorics/BinaryRicciFlowSanityNamespaced.lean/declarations/dgamma-eq-zero-iff.md) | 124 | `result-track:48a0195453c207deb7316fdff046837865f520bc659d958e424ca027e722dc73` |
-| 9 | `theorem` | [dGamma_metricLike](../../../../Combinatorics/BinaryRicciFlowSanityNamespaced.lean/declarations/dgamma-metriclike.md) | 169 | `result-track:25cfbe8d52a196d44dfeeed06b6739b4f231cb05b9cfc4d581ae44eaba2cfb7b` |
+| 1 | `theorem` | [dGamma_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryRicciFlowSanityNamespaced.lean/declarations/dgamma-nonneg.md) | 28 | `result-track:63ce113dc6a14ce0157eedda0aa9829335883b4eced83b1e7377751981829612` |
+| 2 | `theorem` | [dGamma_symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryRicciFlowSanityNamespaced.lean/declarations/dgamma-symm.md) | 36 | `result-track:c52c06a60133c157ec72042e83f1ed450e5fe95d0dc7844874e1f3575a3ae7e7` |
+| 3 | `theorem` | [kernel_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryRicciFlowSanityNamespaced.lean/declarations/kernel-pos.md) | 46 | `result-track:b77aad3644703241494e8accce22b76e77fd246381c7b3547ef4a78fb57c424d` |
+| 4 | `theorem` | [kernel_symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryRicciFlowSanityNamespaced.lean/declarations/kernel-symm.md) | 54 | `result-track:77c7c9836034ca77efdb7fcd8b87a47d8bdbe82a363987ccf35e9cee79e7ea69` |
+| 5 | `theorem` | [dGamma_eq_sum_range_of_supports_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryRicciFlowSanityNamespaced.lean/declarations/dgamma-eq-sum-range-of-supports-le.md) | 62 | `result-track:3104a8bc36c60f1e148d9dd56aeebef52d50fc6f520f6fc89ee4a3a420d7d2c8` |
+| 6 | `theorem` | [dGamma_triangle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryRicciFlowSanityNamespaced.lean/declarations/dgamma-triangle.md) | 86 | `result-track:a7181f18bc153889f412c53b2252c5af5cb6d1426e3174efe44140c3759e17da` |
+| 7 | `theorem` | [bitReal_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryRicciFlowSanityNamespaced.lean/declarations/bitreal-injective.md) | 117 | `result-track:d5ee6929a7e2e639f97e6c13d5bbf869f3684321e3f9a9aa3ec2924fd0a0093f` |
+| 8 | `theorem` | [dGamma_eq_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryRicciFlowSanityNamespaced.lean/declarations/dgamma-eq-zero-iff.md) | 124 | `result-track:48a0195453c207deb7316fdff046837865f520bc659d958e424ca027e722dc73` |
+| 9 | `theorem` | [dGamma_metricLike](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryRicciFlowSanityNamespaced.lean/declarations/dgamma-metriclike.md) | 169 | `result-track:25cfbe8d52a196d44dfeeed06b6739b4f231cb05b9cfc4d581ae44eaba2cfb7b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

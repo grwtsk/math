@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/JensenDiskQuotientLog.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/JensenDiskQuotientLog.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/JensenDiskQuotientLog.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/JensenDiskQuotientLog.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.JensenDiskLogDerivative`](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/JensenDiskLogDerivative.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.BlaschkeQuotientLogarithm`](../../../../../../FunctionsOfAComplexVariable/BlaschkeQuotientLogarithm.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.JensenDiskLogDerivative`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/JensenDiskLogDerivative.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.BlaschkeQuotientLogarithm`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/BlaschkeQuotientLogarithm.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_zeta_disk_log_of_quotient](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/JensenDiskQuotientLog.lean/declarations/exists-zeta-disk-log-of-quotient.md) | 32 | `result-track:31f9cde4c0e0f84572c927056fbd5fdf04ae29a6a014eaf7b25dd5f45691c2e9` |
-| 2 | `theorem` | [norm_zeta_logDeriv_of_quotient](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/JensenDiskQuotientLog.lean/declarations/norm-zeta-logderiv-of-quotient.md) | 70 | `result-track:4c3432b8d3de76efe3ed768676b45a79f7aa614aacd32e48d88854fa61385f70` |
+| 1 | `theorem` | [exists_zeta_disk_log_of_quotient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/JensenDiskQuotientLog.lean/declarations/exists-zeta-disk-log-of-quotient.md) | 32 | `result-track:31f9cde4c0e0f84572c927056fbd5fdf04ae29a6a014eaf7b25dd5f45691c2e9` |
+| 2 | `theorem` | [norm_zeta_logDeriv_of_quotient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/JensenDiskQuotientLog.lean/declarations/norm-zeta-logderiv-of-quotient.md) | 70 | `result-track:4c3432b8d3de76efe3ed768676b45a79f7aa614aacd32e48d88854fa61385f70` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

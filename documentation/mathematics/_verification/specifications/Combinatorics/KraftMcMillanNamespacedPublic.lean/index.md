@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/KraftMcMillanNamespacedPublic.lean/index.md) · [Full source](../../../../Combinatorics/KraftMcMillanNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/KraftMcMillanNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/KraftMcMillanNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [concatFn](../../../../Combinatorics/KraftMcMillanNamespacedPublic.lean/declarations/concatfn.md) | 56 | `declaration-track:8fb8def7ffa45b0c991c225da73e8e7e7852beb4b04e04d42cec0638bdabb1b5` |
-| 2 | `lemma` | [concatFn_length](../../../../Combinatorics/KraftMcMillanNamespacedPublic.lean/declarations/concatfn-length.md) | 59 | `result-track:7ac04696c2be6f57a0d30548391a65f4f1bbe2dad4341f1ef0aed6dc14871c58` |
-| 3 | `lemma` | [concatFn_injective_of_isUniquelyDecodable](../../../../Combinatorics/KraftMcMillanNamespacedPublic.lean/declarations/concatfn-injective-of-isuniquelydecodable.md) | 68 | `result-track:2919eb1011cb60e62c4afb0c1c71e94709d55d04f5d6105c552905271e7601d5` |
-| 4 | `lemma` | [sum_pow_length_filter_eq_le_card_mul](../../../../Combinatorics/KraftMcMillanNamespacedPublic.lean/declarations/sum-pow-length-filter-eq-le-card-mul.md) | 76 | `result-track:30441a6f12ef6948912201c3b0400390aaa459c9f2739c8833773c91d65188d2` |
-| 5 | `lemma` | [concatFn_length_mem_Icc](../../../../Combinatorics/KraftMcMillanNamespacedPublic.lean/declarations/concatfn-length-mem-icc.md) | 89 | `result-track:6de8fbea671aecc02b104725156ac17b388520690812712dddb271430c7db1db` |
-| 6 | `lemma` | [kraft_mcmillan_inequality_aux](../../../../Combinatorics/KraftMcMillanNamespacedPublic.lean/declarations/kraft-mcmillan-inequality-aux.md) | 107 | `result-track:654db9c9b9d668b649e7f52346dacba838621717c6fe315e132ea022fd05655a` |
-| 7 | `theorem` | [IsUniquelyDecodable.finsetSum_one_div_card_pow_length_le_one](../../../../Combinatorics/KraftMcMillanNamespacedPublic.lean/declarations/isuniquelydecodable-finsetsum-one-div-card-pow-length-le-one.md) | 153 | `result-track:83b8799e09d1476327080a9bef632622b864d1035c6c84c7e5dd4c26993b6804` |
+| 1 | `def` | [concatFn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/KraftMcMillanNamespacedPublic.lean/declarations/concatfn.md) | 56 | `declaration-track:8fb8def7ffa45b0c991c225da73e8e7e7852beb4b04e04d42cec0638bdabb1b5` |
+| 2 | `lemma` | [concatFn_length](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/KraftMcMillanNamespacedPublic.lean/declarations/concatfn-length.md) | 59 | `result-track:7ac04696c2be6f57a0d30548391a65f4f1bbe2dad4341f1ef0aed6dc14871c58` |
+| 3 | `lemma` | [concatFn_injective_of_isUniquelyDecodable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/KraftMcMillanNamespacedPublic.lean/declarations/concatfn-injective-of-isuniquelydecodable.md) | 68 | `result-track:2919eb1011cb60e62c4afb0c1c71e94709d55d04f5d6105c552905271e7601d5` |
+| 4 | `lemma` | [sum_pow_length_filter_eq_le_card_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/KraftMcMillanNamespacedPublic.lean/declarations/sum-pow-length-filter-eq-le-card-mul.md) | 76 | `result-track:30441a6f12ef6948912201c3b0400390aaa459c9f2739c8833773c91d65188d2` |
+| 5 | `lemma` | [concatFn_length_mem_Icc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/KraftMcMillanNamespacedPublic.lean/declarations/concatfn-length-mem-icc.md) | 89 | `result-track:6de8fbea671aecc02b104725156ac17b388520690812712dddb271430c7db1db` |
+| 6 | `lemma` | [kraft_mcmillan_inequality_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/KraftMcMillanNamespacedPublic.lean/declarations/kraft-mcmillan-inequality-aux.md) | 107 | `result-track:654db9c9b9d668b649e7f52346dacba838621717c6fe315e132ea022fd05655a` |
+| 7 | `theorem` | [IsUniquelyDecodable.finsetSum_one_div_card_pow_length_le_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/KraftMcMillanNamespacedPublic.lean/declarations/isuniquelydecodable-finsetsum-one-div-card-pow-length-le-one.md) | 153 | `result-track:83b8799e09d1476327080a9bef632622b864d1035c6c84c7e5dd4c26993b6804` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

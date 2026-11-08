@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/SimpleRingField.lean/index.md) · [Full source](../../../../CommutativeAlgebra/SimpleRingField.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SimpleRingField.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SimpleRingField.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [isField_center](../../../../CommutativeAlgebra/SimpleRingField.lean/declarations/isfield-center.md) | 23 | `result-track:179d985fa8f0e4288523f9e4720cebf698a5de7c89fb66709e2c0f7f9f4f83c5` |
-| 2 | `lemma` | [isSimpleRing_iff_isField](../../../../CommutativeAlgebra/SimpleRingField.lean/declarations/issimplering-iff-isfield.md) | 51 | `result-track:b0aef1424bf064466351614815e6299c37c76cd1deeb8c913a8f8272aa2cb30c` |
+| 1 | `lemma` | [isField_center](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SimpleRingField.lean/declarations/isfield-center.md) | 23 | `result-track:179d985fa8f0e4288523f9e4720cebf698a5de7c89fb66709e2c0f7f9f4f83c5` |
+| 2 | `lemma` | [isSimpleRing_iff_isField](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SimpleRingField.lean/declarations/issimplering-iff-isfield.md) | 51 | `result-track:b0aef1424bf064466351614815e6299c37c76cd1deeb8c913a8f8272aa2cb30c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

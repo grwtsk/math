@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SafeShiftedVonMangoldtPackingControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SafeShiftedVonMangoldtPackingControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SafeShiftedVonMangoldtPackingControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SafeShiftedVonMangoldtPackingControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.SafeShiftedVonMangoldtPacking`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SafeShiftedVonMangoldtPacking.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.SafeShiftedVonMangoldtPacking`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SafeShiftedVonMangoldtPacking.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [safe_plus_stays_right_of_one](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SafeShiftedVonMangoldtPackingControls.lean/declarations/safe-plus-stays-right-of-one.md) | 14 | `result-track:a0e0f4708333ba7be9554237ade7ac558b0511487ee023fc7d4f839b71b826d6` |
-| 2 | `theorem` | [safe_minus_stays_right_of_one](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SafeShiftedVonMangoldtPackingControls.lean/declarations/safe-minus-stays-right-of-one.md) | 18 | `result-track:863cd1e43268ef12f5bcff4dd26f6e83c7fcc0518619adf5f14be14e3d739feb` |
-| 3 | `theorem` | [safe_shift_packing_positive](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SafeShiftedVonMangoldtPackingControls.lean/declarations/safe-shift-packing-positive.md) | 22 | `result-track:b976d5559f8a1d50c996bce55919aa5d0e935a84a4f383337cbac828b8573472` |
+| 1 | `theorem` | [safe_plus_stays_right_of_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SafeShiftedVonMangoldtPackingControls.lean/declarations/safe-plus-stays-right-of-one.md) | 14 | `result-track:a0e0f4708333ba7be9554237ade7ac558b0511487ee023fc7d4f839b71b826d6` |
+| 2 | `theorem` | [safe_minus_stays_right_of_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SafeShiftedVonMangoldtPackingControls.lean/declarations/safe-minus-stays-right-of-one.md) | 18 | `result-track:863cd1e43268ef12f5bcff4dd26f6e83c7fcc0518619adf5f14be14e3d739feb` |
+| 3 | `theorem` | [safe_shift_packing_positive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SafeShiftedVonMangoldtPackingControls.lean/declarations/safe-shift-packing-positive.md) | 22 | `result-track:b976d5559f8a1d50c996bce55919aa5d0e935a84a4f383337cbac828b8573472` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

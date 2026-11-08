@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ArithmeticErrorIntegrabilityFragment.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ArithmeticErrorIntegrabilityFragment.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ArithmeticErrorIntegrabilityFragment.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ArithmeticErrorIntegrabilityFragment.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actualLaplace_boundary_norm_le](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ArithmeticErrorIntegrabilityFragment.lean/declarations/actuallaplace-boundary-norm-le.md) | 13 | `result-track:c5d306484c5bb4444f36572cefb25d74eb7d0f4862596f1815276d16fe49c3b7` |
-| 2 | `def` | [arithmeticErrorSq](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ArithmeticErrorIntegrabilityFragment.lean/declarations/arithmeticerrorsq.md) | 21 | `declaration-track:1af60bfa361c64e46394fa4ae1b3a9e69bed09b3730401b44b8e96c80b32cbdd` |
-| 3 | `theorem` | [arithmetic_error_sq_integrable](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ArithmeticErrorIntegrabilityFragment.lean/declarations/arithmetic-error-sq-integrable.md) | 27 | `result-track:74379e351381f698ddb38d8cd96ea5a2fba0c9a054a43dc3f6f4bcad453ff089` |
+| 1 | `theorem` | [actualLaplace_boundary_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ArithmeticErrorIntegrabilityFragment.lean/declarations/actuallaplace-boundary-norm-le.md) | 13 | `result-track:c5d306484c5bb4444f36572cefb25d74eb7d0f4862596f1815276d16fe49c3b7` |
+| 2 | `def` | [arithmeticErrorSq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ArithmeticErrorIntegrabilityFragment.lean/declarations/arithmeticerrorsq.md) | 21 | `declaration-track:1af60bfa361c64e46394fa4ae1b3a9e69bed09b3730401b44b8e96c80b32cbdd` |
+| 3 | `theorem` | [arithmetic_error_sq_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ArithmeticErrorIntegrabilityFragment.lean/declarations/arithmetic-error-sq-integrable.md) | 27 | `result-track:74379e351381f698ddb38d8cd96ea5a2fba0c9a054a43dc3f6f4bcad453ff089` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

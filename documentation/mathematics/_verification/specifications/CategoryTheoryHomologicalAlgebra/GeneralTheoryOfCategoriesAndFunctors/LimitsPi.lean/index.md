@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPi.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPi.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPi.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPi.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [coneCompEval](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPi.lean/declarations/conecompeval.md) | 34 | `declaration-track:afe8936febc39ce4a4dbf5303d0df86a01b835dd02c1007036bc848b3a9613ff` |
-| 2 | `def` | [coconeCompEval](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPi.lean/declarations/coconecompeval.md) | 43 | `declaration-track:26c4223fbf38ff3313aa7bdbf620ae720896ce4ebfc065af548cc640f00b4214` |
-| 3 | `def` | [coneOfConeCompEval](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPi.lean/declarations/coneofconecompeval.md) | 52 | `declaration-track:daf0342768cf346c12f8108a0dd58f1f78c15cc044bca69e922bd0a27bd52315` |
-| 4 | `def` | [coconeOfCoconeCompEval](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPi.lean/declarations/coconeofcoconecompeval.md) | 63 | `declaration-track:e4f9dacff0d315d5f07c13100331fc518377f401ee0ba6db0f079131668c95a3` |
-| 5 | `def` | [coneOfConeEvalIsLimit](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPi.lean/declarations/coneofconeevalislimit.md) | 74 | `declaration-track:e7a9965e39c98cbb320efd7d2d716eed50ce0dcebf67fddd0fde6a2b0e0d6e22` |
-| 6 | `def` | [coconeOfCoconeEvalIsColimit](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPi.lean/declarations/coconeofcoconeevaliscolimit.md) | 87 | `declaration-track:ecf9c4e5942a0d7abafa97659c4cbe910659441f03f1e02b452987a64483aa2d` |
-| 7 | `theorem` | [hasLimit_of_hasLimit_comp_eval](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPi.lean/declarations/haslimit-of-haslimit-comp-eval.md) | 105 | `result-track:ec88572eaca8128e8f2c323c0957b0546373a80d2ddd693671e973a47433a084` |
-| 8 | `theorem` | [hasColimit_of_hasColimit_comp_eval](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPi.lean/declarations/hascolimit-of-hascolimit-comp-eval.md) | 120 | `result-track:bc38e6e22208b3f6cfddf021b0f5360dfd7900fe572093ed36028ae336ef0cfb` |
+| 1 | `def` | [coneCompEval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPi.lean/declarations/conecompeval.md) | 34 | `declaration-track:afe8936febc39ce4a4dbf5303d0df86a01b835dd02c1007036bc848b3a9613ff` |
+| 2 | `def` | [coconeCompEval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPi.lean/declarations/coconecompeval.md) | 43 | `declaration-track:26c4223fbf38ff3313aa7bdbf620ae720896ce4ebfc065af548cc640f00b4214` |
+| 3 | `def` | [coneOfConeCompEval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPi.lean/declarations/coneofconecompeval.md) | 52 | `declaration-track:daf0342768cf346c12f8108a0dd58f1f78c15cc044bca69e922bd0a27bd52315` |
+| 4 | `def` | [coconeOfCoconeCompEval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPi.lean/declarations/coconeofcoconecompeval.md) | 63 | `declaration-track:e4f9dacff0d315d5f07c13100331fc518377f401ee0ba6db0f079131668c95a3` |
+| 5 | `def` | [coneOfConeEvalIsLimit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPi.lean/declarations/coneofconeevalislimit.md) | 74 | `declaration-track:e7a9965e39c98cbb320efd7d2d716eed50ce0dcebf67fddd0fde6a2b0e0d6e22` |
+| 6 | `def` | [coconeOfCoconeEvalIsColimit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPi.lean/declarations/coconeofcoconeevaliscolimit.md) | 87 | `declaration-track:ecf9c4e5942a0d7abafa97659c4cbe910659441f03f1e02b452987a64483aa2d` |
+| 7 | `theorem` | [hasLimit_of_hasLimit_comp_eval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPi.lean/declarations/haslimit-of-haslimit-comp-eval.md) | 105 | `result-track:ec88572eaca8128e8f2c323c0957b0546373a80d2ddd693671e973a47433a084` |
+| 8 | `theorem` | [hasColimit_of_hasColimit_comp_eval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPi.lean/declarations/hascolimit-of-hascolimit-comp-eval.md) | 120 | `result-track:bc38e6e22208b3f6cfddf021b0f5360dfd7900fe572093ed36028ae336ef0cfb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

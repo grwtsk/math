@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/GradedAlgebraRadical.lean/index.md) · [Full source](../../../../CommutativeAlgebra/GradedAlgebraRadical.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GradedAlgebraRadical.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GradedAlgebraRadical.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Ideal.IsHomogeneous.isPrime_of_homogeneous_mem_or_mem](../../../../CommutativeAlgebra/GradedAlgebraRadical.lean/declarations/ideal-ishomogeneous-isprime-of-homogeneous-mem-or-mem.md) | 45 | `result-track:6eeb81bd95245fb6a898327e7b95065445c6d947dd56a8256cf14c9726506279` |
-| 2 | `theorem` | [Ideal.IsHomogeneous.isPrime_iff](../../../../CommutativeAlgebra/GradedAlgebraRadical.lean/declarations/ideal-ishomogeneous-isprime-iff.md) | 136 | `result-track:fcffcee1ed951c8ae413ce5c590c10361712da371e1646ff87a5a4e7ee1aa380` |
-| 3 | `theorem` | [Ideal.IsPrime.homogeneousCore](../../../../CommutativeAlgebra/GradedAlgebraRadical.lean/declarations/ideal-isprime-homogeneouscore.md) | 145 | `result-track:01376a028467cca9f2e289b7ef9a53c331cc26385fbadd328dc27310c1d8054b` |
-| 4 | `theorem` | [Ideal.IsHomogeneous.radical_eq](../../../../CommutativeAlgebra/GradedAlgebraRadical.lean/declarations/ideal-ishomogeneous-radical-eq.md) | 155 | `result-track:0d1cd5e0b3e19740856493f77d315594618f06be1ff853dd643f9967f93c0dd3` |
-| 5 | `theorem` | [Ideal.IsHomogeneous.radical](../../../../CommutativeAlgebra/GradedAlgebraRadical.lean/declarations/ideal-ishomogeneous-radical.md) | 166 | `result-track:c4cf1ba4747013025023d703a99e6719fd2a01ab84231007c1e2d7072451f7c2` |
-| 6 | `def` | [HomogeneousIdeal.radical](../../../../CommutativeAlgebra/GradedAlgebraRadical.lean/declarations/homogeneousideal-radical.md) | 172 | `declaration-track:2a43136624ce318dfaaa82180c7293722a123f6907e39dfb5c913347a23a42ad` |
-| 7 | `theorem` | [HomogeneousIdeal.coe_radical](../../../../CommutativeAlgebra/GradedAlgebraRadical.lean/declarations/homogeneousideal-coe-radical.md) | 176 | `result-track:183cbc92799b6475211d8651f02c6a28773e608d118dcefaa9447fe0a86fa6df` |
+| 1 | `theorem` | [Ideal.IsHomogeneous.isPrime_of_homogeneous_mem_or_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GradedAlgebraRadical.lean/declarations/ideal-ishomogeneous-isprime-of-homogeneous-mem-or-mem.md) | 45 | `result-track:6eeb81bd95245fb6a898327e7b95065445c6d947dd56a8256cf14c9726506279` |
+| 2 | `theorem` | [Ideal.IsHomogeneous.isPrime_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GradedAlgebraRadical.lean/declarations/ideal-ishomogeneous-isprime-iff.md) | 136 | `result-track:fcffcee1ed951c8ae413ce5c590c10361712da371e1646ff87a5a4e7ee1aa380` |
+| 3 | `theorem` | [Ideal.IsPrime.homogeneousCore](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GradedAlgebraRadical.lean/declarations/ideal-isprime-homogeneouscore.md) | 145 | `result-track:01376a028467cca9f2e289b7ef9a53c331cc26385fbadd328dc27310c1d8054b` |
+| 4 | `theorem` | [Ideal.IsHomogeneous.radical_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GradedAlgebraRadical.lean/declarations/ideal-ishomogeneous-radical-eq.md) | 155 | `result-track:0d1cd5e0b3e19740856493f77d315594618f06be1ff853dd643f9967f93c0dd3` |
+| 5 | `theorem` | [Ideal.IsHomogeneous.radical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GradedAlgebraRadical.lean/declarations/ideal-ishomogeneous-radical.md) | 166 | `result-track:c4cf1ba4747013025023d703a99e6719fd2a01ab84231007c1e2d7072451f7c2` |
+| 6 | `def` | [HomogeneousIdeal.radical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GradedAlgebraRadical.lean/declarations/homogeneousideal-radical.md) | 172 | `declaration-track:2a43136624ce318dfaaa82180c7293722a123f6907e39dfb5c913347a23a42ad` |
+| 7 | `theorem` | [HomogeneousIdeal.coe_radical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GradedAlgebraRadical.lean/declarations/homogeneousideal-coe-radical.md) | 176 | `result-track:183cbc92799b6475211d8651f02c6a28773e608d118dcefaa9447fe0a86fa6df` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

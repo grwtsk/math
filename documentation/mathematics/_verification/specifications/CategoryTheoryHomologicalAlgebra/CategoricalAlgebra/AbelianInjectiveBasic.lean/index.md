@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianInjectiveBasic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianInjectiveBasic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianInjectiveBasic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianInjectiveBasic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,9 +61,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [preservesHomology_preadditiveYonedaObj_of_injective](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianInjectiveBasic.lean/declarations/preserveshomology-preadditiveyonedaobj-of-injective.md) | 31 | `declaration-track:38a734543ecdcbc352d3bd852275850c8b4eb3fd70385607403242be6ca3259b` |
-| 2 | `instance` | [preservesFiniteColimits_preadditiveYonedaObj_of_injective](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianInjectiveBasic.lean/declarations/preservesfinitecolimits-preadditiveyonedaobj-of-injective.md) | 37 | `declaration-track:f12a407a3a4d86bdd3ada4a537ebdb59c7804eaece24605855faa91c87022bd2` |
-| 3 | `theorem` | [injective_of_preservesFiniteColimits_preadditiveYonedaObj](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianInjectiveBasic.lean/declarations/injective-of-preservesfinitecolimits-preadditiveyonedaobj.md) | 42 | `result-track:496fb1823cd1b361ed57ecfb9189c0bfdeeaf523d00d1a1791ee85ac78a40e85` |
+| 1 | `instance` | [preservesHomology_preadditiveYonedaObj_of_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianInjectiveBasic.lean/declarations/preserveshomology-preadditiveyonedaobj-of-injective.md) | 31 | `declaration-track:38a734543ecdcbc352d3bd852275850c8b4eb3fd70385607403242be6ca3259b` |
+| 2 | `instance` | [preservesFiniteColimits_preadditiveYonedaObj_of_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianInjectiveBasic.lean/declarations/preservesfinitecolimits-preadditiveyonedaobj-of-injective.md) | 37 | `declaration-track:f12a407a3a4d86bdd3ada4a537ebdb59c7804eaece24605855faa91c87022bd2` |
+| 3 | `theorem` | [injective_of_preservesFiniteColimits_preadditiveYonedaObj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianInjectiveBasic.lean/declarations/injective-of-preservesfinitecolimits-preadditiveyonedaobj.md) | 42 | `result-track:496fb1823cd1b361ed57ecfb9189c0bfdeeaf523d00d1a1791ee85ac78a40e85` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

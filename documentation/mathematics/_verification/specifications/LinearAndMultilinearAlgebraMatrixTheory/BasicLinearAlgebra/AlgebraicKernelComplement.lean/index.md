@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AlgebraicKernelComplement.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AlgebraicKernelComplement.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AlgebraicKernelComplement.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AlgebraicKernelComplement.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Logic.InformationLoss.KernelComplementExistence`](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KernelComplementExistence.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.Logic.InformationLoss.KernelComplementExistence`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KernelComplementExistence.lean/index.md) — import line 6; pinned internal source present.
 - `Mathlib.LinearAlgebra.Basis.VectorSpace` — import line 7; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_old_kernel_complement](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AlgebraicKernelComplement.lean/declarations/exists-old-kernel-complement.md) | 31 | `result-track:cc9626202524a49d8234d1b102f0310d197b81eaedafb5dd602a95bdd4c04932` |
-| 2 | `theorem` | [exists_sharp_extra_algebraically](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AlgebraicKernelComplement.lean/declarations/exists-sharp-extra-algebraically.md) | 38 | `result-track:da6023220f3a1b698a48215e9c0a69e18e870057604b8768c404c4e59fae2961` |
+| 1 | `theorem` | [exists_old_kernel_complement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AlgebraicKernelComplement.lean/declarations/exists-old-kernel-complement.md) | 31 | `result-track:cc9626202524a49d8234d1b102f0310d197b81eaedafb5dd602a95bdd4c04932` |
+| 2 | `theorem` | [exists_sharp_extra_algebraically](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AlgebraicKernelComplement.lean/declarations/exists-sharp-extra-algebraically.md) | 38 | `result-track:da6023220f3a1b698a48215e9c0a69e18e870057604b8768c404c4e59fae2961` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

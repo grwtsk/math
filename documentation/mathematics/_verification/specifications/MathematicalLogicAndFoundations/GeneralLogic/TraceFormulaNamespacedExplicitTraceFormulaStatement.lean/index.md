@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TraceFormulaNamespacedExplicitTraceFormulaStatement.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TraceFormulaNamespacedExplicitTraceFormulaStatement.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TraceFormulaNamespacedExplicitTraceFormulaStatement.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TraceFormulaNamespacedExplicitTraceFormulaStatement.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ExplicitTraceFormulaStatement](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TraceFormulaNamespacedExplicitTraceFormulaStatement.lean/declarations/explicittraceformulastatement.md) | 36 | `declaration-track:7ee1445b453be77e1a7bbd5c3a5b04672fd68adc1cdfedbbef660be65024363c` |
-| 2 | `theorem` | [explicit_trace_formula](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TraceFormulaNamespacedExplicitTraceFormulaStatement.lean/declarations/explicit-trace-formula.md) | 40 | `result-track:1d8d32997ddb91a9cb5b5990a262d9378c4ff00ba4e78196833bfbaf29c4b320` |
+| 1 | `def` | [ExplicitTraceFormulaStatement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TraceFormulaNamespacedExplicitTraceFormulaStatement.lean/declarations/explicittraceformulastatement.md) | 36 | `declaration-track:7ee1445b453be77e1a7bbd5c3a5b04672fd68adc1cdfedbbef660be65024363c` |
+| 2 | `theorem` | [explicit_trace_formula](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TraceFormulaNamespacedExplicitTraceFormulaStatement.lean/declarations/explicit-trace-formula.md) | 40 | `result-track:1d8d32997ddb91a9cb5b5990a262d9378c4ff00ba4e78196833bfbaf29c4b320` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/EvenUpperRow.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/EvenUpperRow.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/EvenUpperRow.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/EvenUpperRow.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [doubled_interval_iff](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/EvenUpperRow.lean/declarations/doubled-interval-iff.md) | 10 | `result-track:1894133da8cef78bb9f00d2960733ba3c455765bd398efcd88a3837ae5d52bc3` |
-| 2 | `theorem` | [even_interval_reindex](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/EvenUpperRow.lean/declarations/even-interval-reindex.md) | 14 | `result-track:0947740e012a38537c0228d812804c60bd21f19cccaab308a8dc4cbb2955ddc5` |
-| 3 | `theorem` | [even_interval_signed](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/EvenUpperRow.lean/declarations/even-interval-signed.md) | 41 | `result-track:28a9f22f23c8dd1c9aff943416012c484fdb14656231519514ba26b79571adcc` |
-| 4 | `theorem` | [moebius_interval_two_split](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/EvenUpperRow.lean/declarations/moebius-interval-two-split.md) | 53 | `result-track:cc331fb9b2b1af6a742d3f5ce8e5e175e73923b146fb3144a587b5f2da2b2d4b` |
-| 5 | `theorem` | [source_even_upper_row](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/EvenUpperRow.lean/declarations/source-even-upper-row.md) | 65 | `result-track:61cf9addb7f38ef8cc1f738c6ffdf16a3a2b6c4d99bd5c91754f6055fa4c4cb4` |
-| 6 | `theorem` | [source_full_upper_row](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/EvenUpperRow.lean/declarations/source-full-upper-row.md) | 78 | `result-track:6e52458fa31065231508bfe17e4780aacc3878e875bde510b7e29c76d169ec3a` |
+| 1 | `theorem` | [doubled_interval_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/EvenUpperRow.lean/declarations/doubled-interval-iff.md) | 10 | `result-track:1894133da8cef78bb9f00d2960733ba3c455765bd398efcd88a3837ae5d52bc3` |
+| 2 | `theorem` | [even_interval_reindex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/EvenUpperRow.lean/declarations/even-interval-reindex.md) | 14 | `result-track:0947740e012a38537c0228d812804c60bd21f19cccaab308a8dc4cbb2955ddc5` |
+| 3 | `theorem` | [even_interval_signed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/EvenUpperRow.lean/declarations/even-interval-signed.md) | 41 | `result-track:28a9f22f23c8dd1c9aff943416012c484fdb14656231519514ba26b79571adcc` |
+| 4 | `theorem` | [moebius_interval_two_split](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/EvenUpperRow.lean/declarations/moebius-interval-two-split.md) | 53 | `result-track:cc331fb9b2b1af6a742d3f5ce8e5e175e73923b146fb3144a587b5f2da2b2d4b` |
+| 5 | `theorem` | [source_even_upper_row](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/EvenUpperRow.lean/declarations/source-even-upper-row.md) | 65 | `result-track:61cf9addb7f38ef8cc1f738c6ffdf16a3a2b6c4d99bd5c91754f6055fa4c4cb4` |
+| 6 | `theorem` | [source_full_upper_row](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/EvenUpperRow.lean/declarations/source-full-upper-row.md) | 78 | `result-track:6e52458fa31065231508bfe17e4780aacc3878e875bde510b7e29c76d169ec3a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

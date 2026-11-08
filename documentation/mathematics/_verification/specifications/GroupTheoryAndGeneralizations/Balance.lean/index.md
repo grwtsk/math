@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/Balance.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/Balance.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Balance.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Balance.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ArchimedeanBalance](../../../../GroupTheoryAndGeneralizations/Balance.lean/declarations/archimedeanbalance.md) | 17 | `declaration-track:aa5c34c1cd34ef1eeb4acfa91df425c5282af09e04d9b8336a3f63b99b667779` |
-| 2 | `structure` | [ArchimedeanBalanceExistence](../../../../GroupTheoryAndGeneralizations/Balance.lean/declarations/archimedeanbalanceexistence.md) | 42 | `declaration-track:7780f753813ba182a10592b427fce5fa979b5773862556655b51a3bcdb93da5f` |
-| 3 | `structure` | [ArchimedeanBalanceNaturality](../../../../GroupTheoryAndGeneralizations/Balance.lean/declarations/archimedeanbalancenaturality.md) | 55 | `declaration-track:647261084aa7470dc7d3194a78a9ee8c2f640eaeaae923496ed7b4fd636cb1ae` |
+| 1 | `structure` | [ArchimedeanBalance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Balance.lean/declarations/archimedeanbalance.md) | 17 | `declaration-track:aa5c34c1cd34ef1eeb4acfa91df425c5282af09e04d9b8336a3f63b99b667779` |
+| 2 | `structure` | [ArchimedeanBalanceExistence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Balance.lean/declarations/archimedeanbalanceexistence.md) | 42 | `declaration-track:7780f753813ba182a10592b427fce5fa979b5773862556655b51a3bcdb93da5f` |
+| 3 | `structure` | [ArchimedeanBalanceNaturality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Balance.lean/declarations/archimedeanbalancenaturality.md) | 55 | `declaration-track:647261084aa7470dc7d3194a78a9ee8c2f640eaeaae923496ed7b4fd636cb1ae` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

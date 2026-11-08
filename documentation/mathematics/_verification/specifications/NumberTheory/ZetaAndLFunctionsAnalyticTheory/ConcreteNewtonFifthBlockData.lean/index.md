@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFifthBlockData.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFifthBlockData.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFifthBlockData.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFifthBlockData.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.ConcreteNewtonFourthBlockData`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFourthBlockData.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.ConcreteNewtonFourthBlockData`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFourthBlockData.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [base](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFifthBlockData.lean/declarations/base.md) | 14 | `declaration-track:0fbb0512d3f80382902d786c6d7690745069891ffb09588b652602e3e061775b` |
-| 2 | `def` | [initial](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFifthBlockData.lean/declarations/initial.md) | 16 | `declaration-track:83c5eaf8c082ecb3b7c36a41b57e8cc88c1305e6bb0f73756c1ecc29a72ec658` |
-| 3 | `def` | [sourceArgument](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFifthBlockData.lean/declarations/sourceargument.md) | 83 | `declaration-track:ac2e2c10c5f5ca5a1f588aa61db327968a409ef4b6f5817bdc97ed8815aae060` |
-| 4 | `def` | [sourceRadius](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFifthBlockData.lean/declarations/sourceradius.md) | 85 | `declaration-track:6c0818bd59db999231d338e04a6e497d32deff805ce005603c118c7c03b10ba3` |
-| 5 | `def` | [sourceDisplacement](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFifthBlockData.lean/declarations/sourcedisplacement.md) | 87 | `declaration-track:3af6bfea0cf32672fbd5293945a5941a89982f6298aaa38040d60912ae70b814` |
-| 6 | `def` | [InputValid](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFifthBlockData.lean/declarations/inputvalid.md) | 90 | `declaration-track:93d849fd73666aab33aa663995fec7a828f46642d986488cdbc3d096f3e68c59` |
-| 7 | `def` | [SeedWindows](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFifthBlockData.lean/declarations/seedwindows.md) | 94 | `declaration-track:1392e765930d56fa64b9c2c94e47278d999a853c7385ce80e5d970ecd8473d12` |
+| 1 | `def` | [base](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFifthBlockData.lean/declarations/base.md) | 14 | `declaration-track:0fbb0512d3f80382902d786c6d7690745069891ffb09588b652602e3e061775b` |
+| 2 | `def` | [initial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFifthBlockData.lean/declarations/initial.md) | 16 | `declaration-track:83c5eaf8c082ecb3b7c36a41b57e8cc88c1305e6bb0f73756c1ecc29a72ec658` |
+| 3 | `def` | [sourceArgument](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFifthBlockData.lean/declarations/sourceargument.md) | 83 | `declaration-track:ac2e2c10c5f5ca5a1f588aa61db327968a409ef4b6f5817bdc97ed8815aae060` |
+| 4 | `def` | [sourceRadius](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFifthBlockData.lean/declarations/sourceradius.md) | 85 | `declaration-track:6c0818bd59db999231d338e04a6e497d32deff805ce005603c118c7c03b10ba3` |
+| 5 | `def` | [sourceDisplacement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFifthBlockData.lean/declarations/sourcedisplacement.md) | 87 | `declaration-track:3af6bfea0cf32672fbd5293945a5941a89982f6298aaa38040d60912ae70b814` |
+| 6 | `def` | [InputValid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFifthBlockData.lean/declarations/inputvalid.md) | 90 | `declaration-track:93d849fd73666aab33aa663995fec7a828f46642d986488cdbc3d096f3e68c59` |
+| 7 | `def` | [SeedWindows](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFifthBlockData.lean/declarations/seedwindows.md) | 94 | `declaration-track:1392e765930d56fa64b9c2c94e47278d999a853c7385ce80e5d970ecd8473d12` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

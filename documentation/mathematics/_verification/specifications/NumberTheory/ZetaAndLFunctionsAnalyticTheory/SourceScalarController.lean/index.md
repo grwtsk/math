@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceScalarController.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceScalarController.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceScalarController.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceScalarController.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,15 +59,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [kappa](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceScalarController.lean/declarations/kappa.md) | 13 | `declaration-track:dab61ba5099ac778878cd359747a46ee6abe60384a624fac428587e0151881a4` |
-| 2 | `theorem` | [kappa_pos](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceScalarController.lean/declarations/kappa-pos.md) | 15 | `result-track:5c6c6a8d3df5f9001f02064fe84dc123a7f6b9e21a878aa318960bd5186006b4` |
-| 3 | `theorem` | [reference_source_inner_re](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceScalarController.lean/declarations/reference-source-inner-re.md) | 17 | `result-track:5df0ac8d006b01a037f97a65e935390e842c207082e805b660a6b949d4a7664f` |
-| 4 | `theorem` | [source_reference_norm_sq_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceScalarController.lean/declarations/source-reference-norm-sq-le.md) | 30 | `result-track:efb728b885629868d0ea327f319f9e148891d357e2fc74f5d62aa79eda218db7` |
-| 5 | `theorem` | [scaled_reference_full_energy](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceScalarController.lean/declarations/scaled-reference-full-energy.md) | 38 | `result-track:8d853ccce1c94c60aa0b35830f2a98a8463b1aa5caf8bb61bafc10c5884694b1` |
-| 6 | `def` | [scalarController](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceScalarController.lean/declarations/scalarcontroller.md) | 55 | `declaration-track:37b3fb2bd193f5604fd8c21b64758456a00ed7a5d47ec248b1b4884788d69b89` |
-| 7 | `theorem` | [scalarController_full_energy_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceScalarController.lean/declarations/scalarcontroller-full-energy-le.md) | 58 | `result-track:ecdd1e51a9f290c0f71b9486942aea33d5e439cf44f2e2732e4358875e10ad4f` |
-| 8 | `theorem` | [sourceMass_le_scalar_improvement](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceScalarController.lean/declarations/sourcemass-le-scalar-improvement.md) | 73 | `result-track:ecb3a72f3f2de9b2ff26aa819f2f0ded74f683e00cbfdd2c78f43872378f79d2` |
-| 9 | `theorem` | [sourceMass_lt_reference_norm_sq](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceScalarController.lean/declarations/sourcemass-lt-reference-norm-sq.md) | 78 | `result-track:cc1e8bb10a4a18ac99ce169034cbcf87f0c045f9322d70c24368c42330f79f99` |
+| 1 | `def` | [kappa](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceScalarController.lean/declarations/kappa.md) | 13 | `declaration-track:dab61ba5099ac778878cd359747a46ee6abe60384a624fac428587e0151881a4` |
+| 2 | `theorem` | [kappa_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceScalarController.lean/declarations/kappa-pos.md) | 15 | `result-track:5c6c6a8d3df5f9001f02064fe84dc123a7f6b9e21a878aa318960bd5186006b4` |
+| 3 | `theorem` | [reference_source_inner_re](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceScalarController.lean/declarations/reference-source-inner-re.md) | 17 | `result-track:5df0ac8d006b01a037f97a65e935390e842c207082e805b660a6b949d4a7664f` |
+| 4 | `theorem` | [source_reference_norm_sq_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceScalarController.lean/declarations/source-reference-norm-sq-le.md) | 30 | `result-track:efb728b885629868d0ea327f319f9e148891d357e2fc74f5d62aa79eda218db7` |
+| 5 | `theorem` | [scaled_reference_full_energy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceScalarController.lean/declarations/scaled-reference-full-energy.md) | 38 | `result-track:8d853ccce1c94c60aa0b35830f2a98a8463b1aa5caf8bb61bafc10c5884694b1` |
+| 6 | `def` | [scalarController](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceScalarController.lean/declarations/scalarcontroller.md) | 55 | `declaration-track:37b3fb2bd193f5604fd8c21b64758456a00ed7a5d47ec248b1b4884788d69b89` |
+| 7 | `theorem` | [scalarController_full_energy_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceScalarController.lean/declarations/scalarcontroller-full-energy-le.md) | 58 | `result-track:ecdd1e51a9f290c0f71b9486942aea33d5e439cf44f2e2732e4358875e10ad4f` |
+| 8 | `theorem` | [sourceMass_le_scalar_improvement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceScalarController.lean/declarations/sourcemass-le-scalar-improvement.md) | 73 | `result-track:ecb3a72f3f2de9b2ff26aa819f2f0ded74f683e00cbfdd2c78f43872378f79d2` |
+| 9 | `theorem` | [sourceMass_lt_reference_norm_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceScalarController.lean/declarations/sourcemass-lt-reference-norm-sq.md) | 78 | `result-track:cc1e8bb10a4a18ac99ce169034cbcf87f0c045f9322d70c24368c42330f79f99` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

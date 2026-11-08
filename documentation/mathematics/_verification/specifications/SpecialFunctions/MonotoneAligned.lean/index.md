@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../SpecialFunctions/MonotoneAligned.lean/index.md) · [Full source](../../../../SpecialFunctions/MonotoneAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/MonotoneAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/MonotoneAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [log_mul_self_monotoneOn](../../../../SpecialFunctions/MonotoneAligned.lean/declarations/log-mul-self-monotoneon.md) | 32 | `result-track:dbec18bb4fca5ce9a16224ad65cf1037f3d32cc89c546b9b5a3096d17345ed13` |
-| 2 | `theorem` | [log_div_self_antitoneOn](../../../../SpecialFunctions/MonotoneAligned.lean/declarations/log-div-self-antitoneon.md) | 42 | `result-track:4d52729deb4368cad8d0745f06c0256f77acab6821f0a6bdaf61eb5e5ada46e8` |
-| 3 | `theorem` | [log_div_self_rpow_antitoneOn](../../../../SpecialFunctions/MonotoneAligned.lean/declarations/log-div-self-rpow-antitoneon.md) | 57 | `result-track:33dd69ac01463d8cef6d05490195ea16c9e783803383c3473a5dfcdea2d63581` |
-| 4 | `theorem` | [log_div_sqrt_antitoneOn](../../../../SpecialFunctions/MonotoneAligned.lean/declarations/log-div-sqrt-antitoneon.md) | 86 | `result-track:7707f056b85b9024649d62c1ce22afe08bff02e914d3cf70e91df00d2c02fb16` |
+| 1 | `theorem` | [log_mul_self_monotoneOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/MonotoneAligned.lean/declarations/log-mul-self-monotoneon.md) | 32 | `result-track:dbec18bb4fca5ce9a16224ad65cf1037f3d32cc89c546b9b5a3096d17345ed13` |
+| 2 | `theorem` | [log_div_self_antitoneOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/MonotoneAligned.lean/declarations/log-div-self-antitoneon.md) | 42 | `result-track:4d52729deb4368cad8d0745f06c0256f77acab6821f0a6bdaf61eb5e5ada46e8` |
+| 3 | `theorem` | [log_div_self_rpow_antitoneOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/MonotoneAligned.lean/declarations/log-div-self-rpow-antitoneon.md) | 57 | `result-track:33dd69ac01463d8cef6d05490195ea16c9e783803383c3473a5dfcdea2d63581` |
+| 4 | `theorem` | [log_div_sqrt_antitoneOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/MonotoneAligned.lean/declarations/log-div-sqrt-antitoneon.md) | 86 | `result-track:7707f056b85b9024649d62c1ce22afe08bff02e914d3cf70e91df00d2c02fb16` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

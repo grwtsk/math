@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceAttempt03Kernel.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceAttempt03Kernel.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceAttempt03Kernel.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceAttempt03Kernel.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [kernel](../../../../MeasureAndIntegration/SourceAttempt03Kernel.lean/declarations/kernel.md) | 13 | `declaration-track:c71d6e4edba6405b0def83e99eb88c9b8c27cfb920ef81124f19df818dcf4893` |
-| 2 | `def` | [secondMomentIntegrand](../../../../MeasureAndIntegration/SourceAttempt03Kernel.lean/declarations/secondmomentintegrand.md) | 14 | `declaration-track:a85a994fd744ab840ba9dc7fa192e4efa8b7564b0a7f9edf61d2918c8cc53e78` |
-| 3 | `def` | [majorant](../../../../MeasureAndIntegration/SourceAttempt03Kernel.lean/declarations/majorant.md) | 15 | `declaration-track:d8a68892033f05a2ce961b314fb6dbf85ae236a47ea5727df7c440f9c07e0cd0` |
-| 4 | `theorem` | [denominator_pos](../../../../MeasureAndIntegration/SourceAttempt03Kernel.lean/declarations/denominator-pos.md) | 17 | `result-track:7f4f25d3bc24a4019c8827bc95bec7279ef99b886a36e1c2a88971aadbf48107` |
-| 5 | `theorem` | [kernel_nonneg](../../../../MeasureAndIntegration/SourceAttempt03Kernel.lean/declarations/kernel-nonneg.md) | 22 | `result-track:0e4e9cd095a5d54e1f7e95fd5d487596787fe74367d49376a4c140ba395aa314` |
-| 6 | `theorem` | [reciprocal_denominator_bound](../../../../MeasureAndIntegration/SourceAttempt03Kernel.lean/declarations/reciprocal-denominator-bound.md) | 25 | `result-track:4321a2c790f69d2fc61817d972b8ef67d6a5078c1ca7b5ffbcee9875c05c11f5` |
-| 7 | `theorem` | [secondMoment_bound](../../../../MeasureAndIntegration/SourceAttempt03Kernel.lean/declarations/secondmoment-bound.md) | 37 | `result-track:4b72d6bf20426a43b5a2c954ff1bea1323f00d47b7598df472a4e334b349417a` |
-| 8 | `theorem` | [polynomial_exp_integrable](../../../../MeasureAndIntegration/SourceAttempt03Kernel.lean/declarations/polynomial-exp-integrable.md) | 49 | `result-track:af26e0f374e42e69f4f3009489f6079f03d3e0814cea27767a29a7674b18dfa4` |
-| 9 | `theorem` | [polynomial_exp_integral](../../../../MeasureAndIntegration/SourceAttempt03Kernel.lean/declarations/polynomial-exp-integral.md) | 56 | `result-track:13b4e1f7848977627233c3fb02260bf78c914769fc6dc8ba34a460b57b114de5` |
+| 1 | `def` | [kernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceAttempt03Kernel.lean/declarations/kernel.md) | 13 | `declaration-track:c71d6e4edba6405b0def83e99eb88c9b8c27cfb920ef81124f19df818dcf4893` |
+| 2 | `def` | [secondMomentIntegrand](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceAttempt03Kernel.lean/declarations/secondmomentintegrand.md) | 14 | `declaration-track:a85a994fd744ab840ba9dc7fa192e4efa8b7564b0a7f9edf61d2918c8cc53e78` |
+| 3 | `def` | [majorant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceAttempt03Kernel.lean/declarations/majorant.md) | 15 | `declaration-track:d8a68892033f05a2ce961b314fb6dbf85ae236a47ea5727df7c440f9c07e0cd0` |
+| 4 | `theorem` | [denominator_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceAttempt03Kernel.lean/declarations/denominator-pos.md) | 17 | `result-track:7f4f25d3bc24a4019c8827bc95bec7279ef99b886a36e1c2a88971aadbf48107` |
+| 5 | `theorem` | [kernel_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceAttempt03Kernel.lean/declarations/kernel-nonneg.md) | 22 | `result-track:0e4e9cd095a5d54e1f7e95fd5d487596787fe74367d49376a4c140ba395aa314` |
+| 6 | `theorem` | [reciprocal_denominator_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceAttempt03Kernel.lean/declarations/reciprocal-denominator-bound.md) | 25 | `result-track:4321a2c790f69d2fc61817d972b8ef67d6a5078c1ca7b5ffbcee9875c05c11f5` |
+| 7 | `theorem` | [secondMoment_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceAttempt03Kernel.lean/declarations/secondmoment-bound.md) | 37 | `result-track:4b72d6bf20426a43b5a2c954ff1bea1323f00d47b7598df472a4e334b349417a` |
+| 8 | `theorem` | [polynomial_exp_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceAttempt03Kernel.lean/declarations/polynomial-exp-integrable.md) | 49 | `result-track:af26e0f374e42e69f4f3009489f6079f03d3e0814cea27767a29a7674b18dfa4` |
+| 9 | `theorem` | [polynomial_exp_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceAttempt03Kernel.lean/declarations/polynomial-exp-integral.md) | 56 | `result-track:13b4e1f7848977627233c3fb02260bf78c914769fc6dc8ba34a460b57b114de5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

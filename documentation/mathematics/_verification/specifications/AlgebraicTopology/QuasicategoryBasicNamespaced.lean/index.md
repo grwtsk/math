@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/QuasicategoryBasicNamespaced.lean/index.md) · [Full source](../../../../AlgebraicTopology/QuasicategoryBasicNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/QuasicategoryBasicNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/QuasicategoryBasicNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [Quasicategory](../../../../AlgebraicTopology/QuasicategoryBasicNamespaced.lean/declarations/quasicategory.md) | 44 | `declaration-track:938e302b73334aff3e79251066904f895cef7c800a874dbf3b66e058464b8064` |
-| 2 | `lemma` | [Quasicategory.hornFilling](../../../../AlgebraicTopology/QuasicategoryBasicNamespaced.lean/declarations/quasicategory-hornfilling.md) | 49 | `result-track:927dce34aa15839ec981202fead435fc058848d4a836a1a7e67af264d686f79a` |
-| 3 | `instance` | [(anonymous)](../../../../AlgebraicTopology/QuasicategoryBasicNamespaced.lean/declarations/instance.md) | 63 | `declaration-track:884f94f0d3df05b950880e4af8180570dd672e029b47f219063aa74ae018461a` |
-| 4 | `lemma` | [quasicategory_of_filler](../../../../AlgebraicTopology/QuasicategoryBasicNamespaced.lean/declarations/quasicategory-of-filler.md) | 66 | `result-track:b21f1fcfb84e39b6678fecd266c364c985a15d027147d02878c2c923f44aa36b` |
+| 1 | `class` | [Quasicategory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/QuasicategoryBasicNamespaced.lean/declarations/quasicategory.md) | 44 | `declaration-track:938e302b73334aff3e79251066904f895cef7c800a874dbf3b66e058464b8064` |
+| 2 | `lemma` | [Quasicategory.hornFilling](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/QuasicategoryBasicNamespaced.lean/declarations/quasicategory-hornfilling.md) | 49 | `result-track:927dce34aa15839ec981202fead435fc058848d4a836a1a7e67af264d686f79a` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/QuasicategoryBasicNamespaced.lean/declarations/instance.md) | 63 | `declaration-track:884f94f0d3df05b950880e4af8180570dd672e029b47f219063aa74ae018461a` |
+| 4 | `lemma` | [quasicategory_of_filler](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/QuasicategoryBasicNamespaced.lean/declarations/quasicategory-of-filler.md) | 66 | `result-track:b21f1fcfb84e39b6678fecd266c364c985a15d027147d02878c2c923f44aa36b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

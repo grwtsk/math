@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Warshall.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Warshall.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Warshall.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Warshall.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [BoolMatrix.warshallStep](../../../../../ComputerScience/AlgorithmsInComputerScience/Warshall.lean/declarations/boolmatrix-warshallstep.md) | 11 | `declaration-track:55fd48518bfb01e900a974d14f909ea2ad59a128bf5495b6f1bc7b0b241deac1` |
-| 2 | `theorem` | [BoolMatrix.entry_warshallStep](../../../../../ComputerScience/AlgorithmsInComputerScience/Warshall.lean/declarations/boolmatrix-entry-warshallstep.md) | 18 | `result-track:e966dfbb0d48b24c445ff854a4e9cd7c04bd44994237e039a7ec3c6c1671830c` |
-| 3 | `def` | [BoolMatrix.warshallAux](../../../../../ComputerScience/AlgorithmsInComputerScience/Warshall.lean/declarations/boolmatrix-warshallaux.md) | 35 | `declaration-track:ae2e2bf27405ff1b6105051f44963f43c8111b47948b253c6f11abf845be2f15` |
-| 4 | `def` | [BoolMatrix.warshall](../../../../../ComputerScience/AlgorithmsInComputerScience/Warshall.lean/declarations/boolmatrix-warshall.md) | 55 | `declaration-track:352d36a92ead211908d3c007f8992ecd395ba1704b5ea770745666b28509042d` |
-| 5 | `theorem` | [BoolMatrix.warshallAux_zero](../../../../../ComputerScience/AlgorithmsInComputerScience/Warshall.lean/declarations/boolmatrix-warshallaux-zero.md) | 61 | `result-track:ed3e4732b5532568eb45b3ab7975251ad6ca7a9dd277bb52a9917dfe66337e80` |
+| 1 | `def` | [BoolMatrix.warshallStep](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Warshall.lean/declarations/boolmatrix-warshallstep.md) | 11 | `declaration-track:55fd48518bfb01e900a974d14f909ea2ad59a128bf5495b6f1bc7b0b241deac1` |
+| 2 | `theorem` | [BoolMatrix.entry_warshallStep](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Warshall.lean/declarations/boolmatrix-entry-warshallstep.md) | 18 | `result-track:e966dfbb0d48b24c445ff854a4e9cd7c04bd44994237e039a7ec3c6c1671830c` |
+| 3 | `def` | [BoolMatrix.warshallAux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Warshall.lean/declarations/boolmatrix-warshallaux.md) | 35 | `declaration-track:ae2e2bf27405ff1b6105051f44963f43c8111b47948b253c6f11abf845be2f15` |
+| 4 | `def` | [BoolMatrix.warshall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Warshall.lean/declarations/boolmatrix-warshall.md) | 55 | `declaration-track:352d36a92ead211908d3c007f8992ecd395ba1704b5ea770745666b28509042d` |
+| 5 | `theorem` | [BoolMatrix.warshallAux_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Warshall.lean/declarations/boolmatrix-warshallaux-zero.md) | 61 | `result-track:ed3e4732b5532568eb45b3ab7975251ad6ca7a9dd277bb52a9917dfe66337e80` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

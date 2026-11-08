@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/SpanFamily.lean/index.md) · [Full source](../../../../Combinatorics/SpanFamily.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SpanFamily.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SpanFamily.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,17 +57,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [CandidateSpanSource](../../../../Combinatorics/SpanFamily.lean/declarations/candidatespansource.md) | 9 | `declaration-track:6afacd7efb81c52f8f57cb69e1df1d8c2c262567c75c8c5147aaeb21119c9736` |
-| 2 | `structure` | [CandidateSpanConfiguration](../../../../Combinatorics/SpanFamily.lean/declarations/candidatespanconfiguration.md) | 24 | `declaration-track:2021f0d512dba0cdb20f45b5c894d989e50b0d0e996eb536b8a30a5935ff4f53` |
-| 3 | `structure` | [CandidateSpanFamily](../../../../Combinatorics/SpanFamily.lean/declarations/candidatespanfamily.md) | 31 | `declaration-track:989bcfdd21a36e8d8fa5a3a43075a7d34904a6284ae1829d37974c3076aaaae7` |
-| 4 | `def` | [OrderedSpans](../../../../Combinatorics/SpanFamily.lean/declarations/orderedspans.md) | 36 | `declaration-track:eadb32ed31f853f0d3dddd25668a669266db008b7d9a5f5f815647de390ea87a` |
-| 5 | `def` | [PairwiseDisjoint](../../../../Combinatorics/SpanFamily.lean/declarations/pairwisedisjoint.md) | 40 | `declaration-track:5436b110d65954e800d545502a1ee549878975960dda88875e44437dee5e2a9b` |
-| 6 | `structure` | [TextRegion](../../../../Combinatorics/SpanFamily.lean/declarations/textregion.md) | 44 | `declaration-track:a3059efd4710d829ba3c6e6b339f5850f6fe37d20923efbbc5eb17ecd9708cfd` |
-| 7 | `structure` | [IgnoredRegion](../../../../Combinatorics/SpanFamily.lean/declarations/ignoredregion.md) | 47 | `declaration-track:9fe6c0e1ba9d5388964aece9f206871afd76e54bf294112af69ea3c9fddc66e9` |
-| 8 | `def` | [Covers](../../../../Combinatorics/SpanFamily.lean/declarations/covers.md) | 51 | `declaration-track:e03424da2c10f1593ec0b9f0e0d118d909982e52f73e8617a4294d698ae1a17a` |
-| 9 | `structure` | [EvidenceRequiredSpans](../../../../Combinatorics/SpanFamily.lean/declarations/evidencerequiredspans.md) | 58 | `declaration-track:c1a1f4ade77d532d3319fc9c986a772dceaf848af9f0710b662efdec1255fb2f` |
-| 10 | `structure` | [CandidateCoverageCertificate](../../../../Combinatorics/SpanFamily.lean/declarations/candidatecoveragecertificate.md) | 62 | `declaration-track:1c9dd89b8dbab082501a3d90c3cc1ad58757caefe5c6dcd15ad9f4fb263b8a96` |
-| 11 | `theorem` | [candidateCoverage_contains](../../../../Combinatorics/SpanFamily.lean/declarations/candidatecoverage-contains.md) | 70 | `result-track:b5c0ca9733fdd55b3585ee618827e4176028d4e46a31d18df8634effa29b1224` |
+| 1 | `inductive` | [CandidateSpanSource](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SpanFamily.lean/declarations/candidatespansource.md) | 9 | `declaration-track:6afacd7efb81c52f8f57cb69e1df1d8c2c262567c75c8c5147aaeb21119c9736` |
+| 2 | `structure` | [CandidateSpanConfiguration](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SpanFamily.lean/declarations/candidatespanconfiguration.md) | 24 | `declaration-track:2021f0d512dba0cdb20f45b5c894d989e50b0d0e996eb536b8a30a5935ff4f53` |
+| 3 | `structure` | [CandidateSpanFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SpanFamily.lean/declarations/candidatespanfamily.md) | 31 | `declaration-track:989bcfdd21a36e8d8fa5a3a43075a7d34904a6284ae1829d37974c3076aaaae7` |
+| 4 | `def` | [OrderedSpans](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SpanFamily.lean/declarations/orderedspans.md) | 36 | `declaration-track:eadb32ed31f853f0d3dddd25668a669266db008b7d9a5f5f815647de390ea87a` |
+| 5 | `def` | [PairwiseDisjoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SpanFamily.lean/declarations/pairwisedisjoint.md) | 40 | `declaration-track:5436b110d65954e800d545502a1ee549878975960dda88875e44437dee5e2a9b` |
+| 6 | `structure` | [TextRegion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SpanFamily.lean/declarations/textregion.md) | 44 | `declaration-track:a3059efd4710d829ba3c6e6b339f5850f6fe37d20923efbbc5eb17ecd9708cfd` |
+| 7 | `structure` | [IgnoredRegion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SpanFamily.lean/declarations/ignoredregion.md) | 47 | `declaration-track:9fe6c0e1ba9d5388964aece9f206871afd76e54bf294112af69ea3c9fddc66e9` |
+| 8 | `def` | [Covers](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SpanFamily.lean/declarations/covers.md) | 51 | `declaration-track:e03424da2c10f1593ec0b9f0e0d118d909982e52f73e8617a4294d698ae1a17a` |
+| 9 | `structure` | [EvidenceRequiredSpans](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SpanFamily.lean/declarations/evidencerequiredspans.md) | 58 | `declaration-track:c1a1f4ade77d532d3319fc9c986a772dceaf848af9f0710b662efdec1255fb2f` |
+| 10 | `structure` | [CandidateCoverageCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SpanFamily.lean/declarations/candidatecoveragecertificate.md) | 62 | `declaration-track:1c9dd89b8dbab082501a3d90c3cc1ad58757caefe5c6dcd15ad9f4fb263b8a96` |
+| 11 | `theorem` | [candidateCoverage_contains](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SpanFamily.lean/declarations/candidatecoverage-contains.md) | 70 | `result-track:b5c0ca9733fdd55b3585ee618827e4176028d4e46a31d18df8634effa29b1224` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

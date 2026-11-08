@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/AllNamespacedFamilyCounts.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/AllNamespacedFamilyCounts.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AllNamespacedFamilyCounts.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AllNamespacedFamilyCounts.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -66,8 +66,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [familyCounts](../../../../../ComputerScience/AlgorithmsInComputerScience/AllNamespacedFamilyCounts.lean/declarations/familycounts.md) | 24 | `declaration-track:b3d8db3a933f6c3ca209f5414faa19e1c9bc4267f502dd3040dafb5190adfd4a` |
-| 2 | `theorem` | [familyCounts_sum](../../../../../ComputerScience/AlgorithmsInComputerScience/AllNamespacedFamilyCounts.lean/declarations/familycounts-sum.md) | 36 | `result-track:ac22bea106f2c8e843dd4c6dbb008e2b9a97ee880ae6f9e89e3bfe3f05c91f08` |
+| 1 | `def` | [familyCounts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AllNamespacedFamilyCounts.lean/declarations/familycounts.md) | 24 | `declaration-track:b3d8db3a933f6c3ca209f5414faa19e1c9bc4267f502dd3040dafb5190adfd4a` |
+| 2 | `theorem` | [familyCounts_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AllNamespacedFamilyCounts.lean/declarations/familycounts-sum.md) | 36 | `result-track:ac22bea106f2c8e843dd4c6dbb008e2b9a97ee880ae6f9e89e3bfe3f05c91f08` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

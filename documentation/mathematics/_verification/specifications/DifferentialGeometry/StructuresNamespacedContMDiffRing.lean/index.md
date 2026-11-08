@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../DifferentialGeometry/StructuresNamespacedContMDiffRing.lean/index.md) · [Full source](../../../../DifferentialGeometry/StructuresNamespacedContMDiffRing.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/StructuresNamespacedContMDiffRing.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/StructuresNamespacedContMDiffRing.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [ContMDiffRing](../../../../DifferentialGeometry/StructuresNamespacedContMDiffRing.lean/declarations/contmdiffring.md) | 34 | `declaration-track:1e61178cdb0956401f14f53b11779cdb351334b4f90b7f7d97bb62ddbf92939a` |
-| 2 | `instance` | [(anonymous)](../../../../DifferentialGeometry/StructuresNamespacedContMDiffRing.lean/declarations/instance-source-edition-2.md) | 42 | `declaration-track:743558079452e86da8614b543ef4e633447ced7631836c1d32a46ebdcec8ae06` |
-| 3 | `instance` | [(anonymous)](../../../../DifferentialGeometry/StructuresNamespacedContMDiffRing.lean/declarations/instance-source-edition-3.md) | 48 | `declaration-track:7efc7bca58812913024094faca1d042bf0d3729dbe5103fce4d6317fdf0ae68c` |
-| 4 | `instance` | [(anonymous)](../../../../DifferentialGeometry/StructuresNamespacedContMDiffRing.lean/declarations/instance.md) | 57 | `declaration-track:2c76f92059da79507c0985850ac5c481868fffa4fb1cad4414e473e8174e1c68` |
-| 5 | `theorem` | [topologicalSemiring_of_contMDiffRing](../../../../DifferentialGeometry/StructuresNamespacedContMDiffRing.lean/declarations/topologicalsemiring-of-contmdiffring.md) | 74 | `result-track:a0937169cbf8dc4e79cb5fb46f08c5fef31022babf6d4588e8f032e4177aa21a` |
+| 1 | `class` | [ContMDiffRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/StructuresNamespacedContMDiffRing.lean/declarations/contmdiffring.md) | 34 | `declaration-track:1e61178cdb0956401f14f53b11779cdb351334b4f90b7f7d97bb62ddbf92939a` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/StructuresNamespacedContMDiffRing.lean/declarations/instance-source-edition-2.md) | 42 | `declaration-track:743558079452e86da8614b543ef4e633447ced7631836c1d32a46ebdcec8ae06` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/StructuresNamespacedContMDiffRing.lean/declarations/instance-source-edition-3.md) | 48 | `declaration-track:7efc7bca58812913024094faca1d042bf0d3729dbe5103fce4d6317fdf0ae68c` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/StructuresNamespacedContMDiffRing.lean/declarations/instance.md) | 57 | `declaration-track:2c76f92059da79507c0985850ac5c481868fffa4fb1cad4414e473e8174e1c68` |
+| 5 | `theorem` | [topologicalSemiring_of_contMDiffRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/StructuresNamespacedContMDiffRing.lean/declarations/topologicalsemiring-of-contmdiffring.md) | 74 | `result-track:a0937169cbf8dc4e79cb5fb46f08c5fef31022babf6d4588e8f032e4177aa21a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

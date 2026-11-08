@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/BoundedOperation.lean/index.md) · [Full source](../../../../GeneralTopology/BoundedOperation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BoundedOperation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BoundedOperation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,21 +59,21 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [BoundedSub](../../../../GeneralTopology/BoundedOperation.lean/declarations/boundedsub.md) | 38 | `declaration-track:bb2ef5209b74b010098bbe393bc0a6fe2b85e26f5b59ec2ee258374f1877bec3` |
-| 2 | `lemma` | [isBounded_sub](../../../../GeneralTopology/BoundedOperation.lean/declarations/isbounded-sub.md) | 44 | `result-track:d83677dcd95cc2422f9a14eca0b2f7f83b4c1c89e5b0fc7fc18f97c8f16f0f3a` |
-| 3 | `lemma` | [sub_bounded_of_bounded_of_bounded](../../../../GeneralTopology/BoundedOperation.lean/declarations/sub-bounded-of-bounded-of-bounded.md) | 48 | `result-track:455ef40400587343514c367844108feea04cd34bb9b99381df2ccd79ab66a25f` |
-| 4 | `lemma` | [boundedSub_of_lipschitzWith_sub](../../../../GeneralTopology/BoundedOperation.lean/declarations/boundedsub-of-lipschitzwith-sub.md) | 59 | `result-track:65108e3e15b58bd70b73a4ad2296258d7974dbc3922eb2364fd9cd19010dd7e4` |
-| 5 | `class` | [BoundedAdd](../../../../GeneralTopology/BoundedOperation.lean/declarations/boundedadd.md) | 86 | `declaration-track:099c5c23c8539d9b83b559a148b39abf30af3709dcf38a5f3d9332b75965ce55` |
-| 6 | `class` | [BoundedMul](../../../../GeneralTopology/BoundedOperation.lean/declarations/boundedmul.md) | 94 | `declaration-track:d60fc471b088de275cfb0bfa77601bc2bfde13ab8beb5069f4ebb33e318c7c12` |
-| 7 | `lemma` | [isBounded_mul](../../../../GeneralTopology/BoundedOperation.lean/declarations/isbounded-mul.md) | 101 | `result-track:a7b59d0c57aecaf7d422af3d26cdb4239d9126fcc759a3d472fd17de12a1a0b6` |
-| 8 | `lemma` | [isBounded_pow](../../../../GeneralTopology/BoundedOperation.lean/declarations/isbounded-pow.md) | 106 | `result-track:7c4174ddf5d25f3733e35b8f3e38fb4e49f4ed383564e415e94ef8c4d98c5650` |
-| 9 | `lemma` | [mul_bounded_of_bounded_of_bounded](../../../../GeneralTopology/BoundedOperation.lean/declarations/mul-bounded-of-bounded-of-bounded.md) | 126 | `result-track:875aa30b9d43b15ad97d5acb76dd34f6c0533d4a5b59492291eeb403683579c3` |
-| 10 | `instance` | [(anonymous)](../../../../GeneralTopology/BoundedOperation.lean/declarations/instance-source-edition-3.md) | 138 | `declaration-track:71fd22600c5fe48c990940ddee6ff68435d9eae35550e298bc3d32486dd24aa2` |
-| 11 | `lemma` | [SeminormedAddCommGroup.lipschitzWith_sub](../../../../GeneralTopology/BoundedOperation.lean/declarations/seminormedaddcommgroup-lipschitzwith-sub.md) | 160 | `result-track:0a4841bece2a4f84e807fb80c6461d9192c2d10e1f85dfaad4d5d319ef800adc` |
-| 12 | `instance` | [(anonymous)](../../../../GeneralTopology/BoundedOperation.lean/declarations/instance-source-edition-5.md) | 165 | `declaration-track:db96abcfb3d640a8694c400d8b7eff02dda07796d1ee97e08f4b287a2ac9d9d3` |
-| 13 | `instance` | [(anonymous)](../../../../GeneralTopology/BoundedOperation.lean/declarations/instance-source-edition-4.md) | 176 | `declaration-track:a8bef5d13863a67d357762bae32fc659908bfc40cc099075d645322c5a520538` |
-| 14 | `instance` | [(anonymous)](../../../../GeneralTopology/BoundedOperation.lean/declarations/instance-source-edition-2.md) | 204 | `declaration-track:6cf499f72d365df8a4807702445cc680c744b217b728cde4ab64ba4d094ee609` |
-| 15 | `instance` | [(anonymous)](../../../../GeneralTopology/BoundedOperation.lean/declarations/instance.md) | 207 | `declaration-track:173b8cf66feab07149d37e6b5114928ff3a52c16da8dacbe3eeb60c9edad394f` |
+| 1 | `class` | [BoundedSub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BoundedOperation.lean/declarations/boundedsub.md) | 38 | `declaration-track:bb2ef5209b74b010098bbe393bc0a6fe2b85e26f5b59ec2ee258374f1877bec3` |
+| 2 | `lemma` | [isBounded_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BoundedOperation.lean/declarations/isbounded-sub.md) | 44 | `result-track:d83677dcd95cc2422f9a14eca0b2f7f83b4c1c89e5b0fc7fc18f97c8f16f0f3a` |
+| 3 | `lemma` | [sub_bounded_of_bounded_of_bounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BoundedOperation.lean/declarations/sub-bounded-of-bounded-of-bounded.md) | 48 | `result-track:455ef40400587343514c367844108feea04cd34bb9b99381df2ccd79ab66a25f` |
+| 4 | `lemma` | [boundedSub_of_lipschitzWith_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BoundedOperation.lean/declarations/boundedsub-of-lipschitzwith-sub.md) | 59 | `result-track:65108e3e15b58bd70b73a4ad2296258d7974dbc3922eb2364fd9cd19010dd7e4` |
+| 5 | `class` | [BoundedAdd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BoundedOperation.lean/declarations/boundedadd.md) | 86 | `declaration-track:099c5c23c8539d9b83b559a148b39abf30af3709dcf38a5f3d9332b75965ce55` |
+| 6 | `class` | [BoundedMul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BoundedOperation.lean/declarations/boundedmul.md) | 94 | `declaration-track:d60fc471b088de275cfb0bfa77601bc2bfde13ab8beb5069f4ebb33e318c7c12` |
+| 7 | `lemma` | [isBounded_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BoundedOperation.lean/declarations/isbounded-mul.md) | 101 | `result-track:a7b59d0c57aecaf7d422af3d26cdb4239d9126fcc759a3d472fd17de12a1a0b6` |
+| 8 | `lemma` | [isBounded_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BoundedOperation.lean/declarations/isbounded-pow.md) | 106 | `result-track:7c4174ddf5d25f3733e35b8f3e38fb4e49f4ed383564e415e94ef8c4d98c5650` |
+| 9 | `lemma` | [mul_bounded_of_bounded_of_bounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BoundedOperation.lean/declarations/mul-bounded-of-bounded-of-bounded.md) | 126 | `result-track:875aa30b9d43b15ad97d5acb76dd34f6c0533d4a5b59492291eeb403683579c3` |
+| 10 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BoundedOperation.lean/declarations/instance-source-edition-3.md) | 138 | `declaration-track:71fd22600c5fe48c990940ddee6ff68435d9eae35550e298bc3d32486dd24aa2` |
+| 11 | `lemma` | [SeminormedAddCommGroup.lipschitzWith_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BoundedOperation.lean/declarations/seminormedaddcommgroup-lipschitzwith-sub.md) | 160 | `result-track:0a4841bece2a4f84e807fb80c6461d9192c2d10e1f85dfaad4d5d319ef800adc` |
+| 12 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BoundedOperation.lean/declarations/instance-source-edition-5.md) | 165 | `declaration-track:db96abcfb3d640a8694c400d8b7eff02dda07796d1ee97e08f4b287a2ac9d9d3` |
+| 13 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BoundedOperation.lean/declarations/instance-source-edition-4.md) | 176 | `declaration-track:a8bef5d13863a67d357762bae32fc659908bfc40cc099075d645322c5a520538` |
+| 14 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BoundedOperation.lean/declarations/instance-source-edition-2.md) | 204 | `declaration-track:6cf499f72d365df8a4807702445cc680c744b217b728cde4ab64ba4d094ee609` |
+| 15 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BoundedOperation.lean/declarations/instance.md) | 207 | `declaration-track:173b8cf66feab07149d37e6b5114928ff3a52c16da8dacbe3eeb60c9edad394f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

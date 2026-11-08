@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/WeightedIntegralGrowth.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/WeightedIntegralGrowth.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/WeightedIntegralGrowth.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/WeightedIntegralGrowth.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Moebius.WeightedSummatoryIntegral`](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/WeightedSummatoryIntegral.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.WeightedSummatoryIntegral`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/WeightedSummatoryIntegral.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [MaterialPickupPoly](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/WeightedIntegralGrowth.lean/declarations/materialpickuppoly.md) | 25 | `declaration-track:f99bb4a2ea9f7463393db1cd71ec64149fafa0f2ac6b9961f48f33ba8a05be1e` |
-| 2 | `theorem` | [pickup_bound_iff_material_bound](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/WeightedIntegralGrowth.lean/declarations/pickup-bound-iff-material-bound.md) | 30 | `result-track:b40daa6a943f32738a4de60c7d42bed9e5e18233504133babac64b4392e4c671` |
-| 3 | `theorem` | [whole_pickup_poly_iff_material](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/WeightedIntegralGrowth.lean/declarations/whole-pickup-poly-iff-material.md) | 44 | `result-track:e987495d2f86f45682182f05b097d745b4068159ad8f172adb40eeffd115186c` |
-| 4 | `theorem` | [pickup_reset_bound](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/WeightedIntegralGrowth.lean/declarations/pickup-reset-bound.md) | 53 | `result-track:4e797a0cbf4c826ce7125ab3e5504a5e0a2784b94cd498bb5b2d1cea0b4738a9` |
-| 5 | `theorem` | [pickup_reset_signed_bound](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/WeightedIntegralGrowth.lean/declarations/pickup-reset-signed-bound.md) | 85 | `result-track:de289166ae035cea7b781d91371a92169086297ed99f3c7d3ec130a5970ea31f` |
-| 6 | `theorem` | [whole_pickup_poly_reset](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/WeightedIntegralGrowth.lean/declarations/whole-pickup-poly-reset.md) | 96 | `result-track:2538735e47e803df2505476df775fe751dfd2c5f40f956e1258fe409baed31ae` |
+| 1 | `def` | [MaterialPickupPoly](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/WeightedIntegralGrowth.lean/declarations/materialpickuppoly.md) | 25 | `declaration-track:f99bb4a2ea9f7463393db1cd71ec64149fafa0f2ac6b9961f48f33ba8a05be1e` |
+| 2 | `theorem` | [pickup_bound_iff_material_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/WeightedIntegralGrowth.lean/declarations/pickup-bound-iff-material-bound.md) | 30 | `result-track:b40daa6a943f32738a4de60c7d42bed9e5e18233504133babac64b4392e4c671` |
+| 3 | `theorem` | [whole_pickup_poly_iff_material](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/WeightedIntegralGrowth.lean/declarations/whole-pickup-poly-iff-material.md) | 44 | `result-track:e987495d2f86f45682182f05b097d745b4068159ad8f172adb40eeffd115186c` |
+| 4 | `theorem` | [pickup_reset_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/WeightedIntegralGrowth.lean/declarations/pickup-reset-bound.md) | 53 | `result-track:4e797a0cbf4c826ce7125ab3e5504a5e0a2784b94cd498bb5b2d1cea0b4738a9` |
+| 5 | `theorem` | [pickup_reset_signed_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/WeightedIntegralGrowth.lean/declarations/pickup-reset-signed-bound.md) | 85 | `result-track:de289166ae035cea7b781d91371a92169086297ed99f3c7d3ec130a5970ea31f` |
+| 6 | `theorem` | [whole_pickup_poly_reset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/WeightedIntegralGrowth.lean/declarations/whole-pickup-poly-reset.md) | 96 | `result-track:2538735e47e803df2505476df775fe751dfd2c5f40f956e1258fe409baed31ae` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

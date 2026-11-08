@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/ProbabilityBorelCantelliBorelCantelliNamespacedAligned.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/ProbabilityBorelCantelliBorelCantelliNamespacedAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ProbabilityBorelCantelliBorelCantelliNamespacedAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ProbabilityBorelCantelliBorelCantelliNamespacedAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [iIndepFun.indep_comap_natural_of_lt](../../../../ProbabilityTheoryAndStochasticProcesses/ProbabilityBorelCantelliBorelCantelliNamespacedAligned.lean/declarations/iindepfun-indep-comap-natural-of-lt.md) | 49 | `result-track:11073f1a8f1310c7c58f3b455fd57a9867f3f3762914eabba109ffeef56084c6` |
-| 2 | `theorem` | [iIndepFun.condexp_natural_ae_eq_of_lt](../../../../ProbabilityTheoryAndStochasticProcesses/ProbabilityBorelCantelliBorelCantelliNamespacedAligned.lean/declarations/iindepfun-condexp-natural-ae-eq-of-lt.md) | 58 | `result-track:5118b064d2a2b5a02ac247f79d7a930a37f7e1cbed0a4e5c7f956609e49fb80d` |
-| 3 | `theorem` | [iIndepSet.condexp_indicator_filtrationOfSet_ae_eq](../../../../ProbabilityTheoryAndStochasticProcesses/ProbabilityBorelCantelliBorelCantelliNamespacedAligned.lean/declarations/iindepset-condexp-indicator-filtrationofset-ae-eq.md) | 66 | `result-track:4d76d6773a8e16feb4e6ba052ebd554a95d73cccc532833c987602837a6e78c6` |
-| 4 | `theorem` | [measure_limsup_eq_one](../../../../ProbabilityTheoryAndStochasticProcesses/ProbabilityBorelCantelliBorelCantelliNamespacedAligned.lean/declarations/measure-limsup-eq-one.md) | 80 | `result-track:893dd45e1795f6137480e98f4986ea7a221ca4a129849a2f3cb9c03f0eccfa69` |
+| 1 | `theorem` | [iIndepFun.indep_comap_natural_of_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ProbabilityBorelCantelliBorelCantelliNamespacedAligned.lean/declarations/iindepfun-indep-comap-natural-of-lt.md) | 49 | `result-track:11073f1a8f1310c7c58f3b455fd57a9867f3f3762914eabba109ffeef56084c6` |
+| 2 | `theorem` | [iIndepFun.condexp_natural_ae_eq_of_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ProbabilityBorelCantelliBorelCantelliNamespacedAligned.lean/declarations/iindepfun-condexp-natural-ae-eq-of-lt.md) | 58 | `result-track:5118b064d2a2b5a02ac247f79d7a930a37f7e1cbed0a4e5c7f956609e49fb80d` |
+| 3 | `theorem` | [iIndepSet.condexp_indicator_filtrationOfSet_ae_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ProbabilityBorelCantelliBorelCantelliNamespacedAligned.lean/declarations/iindepset-condexp-indicator-filtrationofset-ae-eq.md) | 66 | `result-track:4d76d6773a8e16feb4e6ba052ebd554a95d73cccc532833c987602837a6e78c6` |
+| 4 | `theorem` | [measure_limsup_eq_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ProbabilityBorelCantelliBorelCantelliNamespacedAligned.lean/declarations/measure-limsup-eq-one.md) | 80 | `result-track:893dd45e1795f6137480e98f4986ea7a221ca4a129849a2f3cb9c03f0eccfa69` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

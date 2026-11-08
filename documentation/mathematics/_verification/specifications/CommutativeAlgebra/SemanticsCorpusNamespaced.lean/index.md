@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/SemanticsCorpusNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/SemanticsCorpusNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SemanticsCorpusNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SemanticsCorpusNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [source](../../../../CommutativeAlgebra/SemanticsCorpusNamespaced.lean/declarations/source.md) | 27 | `declaration-track:babcce79dd70a50204440015e7c0a7094026175532a7e2ee848d8caa59d39bda` |
-| 2 | `def` | [witnessCarrier](../../../../CommutativeAlgebra/SemanticsCorpusNamespaced.lean/declarations/witnesscarrier.md) | 52 | `declaration-track:981b7de5eb22f58874af2f9d587c5fc4f2c71b9a6671b94b10f418de422f3de2` |
-| 3 | `def` | [endpointCorrectness](../../../../CommutativeAlgebra/SemanticsCorpusNamespaced.lean/declarations/endpointcorrectness.md) | 71 | `declaration-track:e6ddc51fa3013dc36b416a081a7496c422e5a138f8449b2d46ba39d7b06bc396` |
-| 4 | `def` | [integralCorrectness](../../../../CommutativeAlgebra/SemanticsCorpusNamespaced.lean/declarations/integralcorrectness.md) | 91 | `declaration-track:f328d97626068b0b2c65d4be090f6dbbb82cbbd8bfee8bf22e41f114fc4c297f` |
-| 5 | `def` | [links](../../../../CommutativeAlgebra/SemanticsCorpusNamespaced.lean/declarations/links.md) | 110 | `declaration-track:25e515ebda969828ca744510e156f8ea2ca372b08acb7d8ab68cedaafb4298c1` |
-| 6 | `theorem` | [links_length](../../../../CommutativeAlgebra/SemanticsCorpusNamespaced.lean/declarations/links-length.md) | 116 | `result-track:37d12dc5ff89995bdef31ef377e76f9fb873545226845c1bc4d02a0c26672b8f` |
+| 1 | `def` | [source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SemanticsCorpusNamespaced.lean/declarations/source.md) | 27 | `declaration-track:babcce79dd70a50204440015e7c0a7094026175532a7e2ee848d8caa59d39bda` |
+| 2 | `def` | [witnessCarrier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SemanticsCorpusNamespaced.lean/declarations/witnesscarrier.md) | 52 | `declaration-track:981b7de5eb22f58874af2f9d587c5fc4f2c71b9a6671b94b10f418de422f3de2` |
+| 3 | `def` | [endpointCorrectness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SemanticsCorpusNamespaced.lean/declarations/endpointcorrectness.md) | 71 | `declaration-track:e6ddc51fa3013dc36b416a081a7496c422e5a138f8449b2d46ba39d7b06bc396` |
+| 4 | `def` | [integralCorrectness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SemanticsCorpusNamespaced.lean/declarations/integralcorrectness.md) | 91 | `declaration-track:f328d97626068b0b2c65d4be090f6dbbb82cbbd8bfee8bf22e41f114fc4c297f` |
+| 5 | `def` | [links](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SemanticsCorpusNamespaced.lean/declarations/links.md) | 110 | `declaration-track:25e515ebda969828ca744510e156f8ea2ca372b08acb7d8ab68cedaafb4298c1` |
+| 6 | `theorem` | [links_length](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SemanticsCorpusNamespaced.lean/declarations/links-length.md) | 116 | `result-track:37d12dc5ff89995bdef31ef377e76f9fb873545226845c1bc4d02a0c26672b8f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

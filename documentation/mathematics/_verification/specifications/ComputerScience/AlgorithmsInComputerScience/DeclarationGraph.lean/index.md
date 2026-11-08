@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/DeclarationGraph.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/DeclarationGraph.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DeclarationGraph.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DeclarationGraph.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [DeclarationGraph](../../../../../ComputerScience/AlgorithmsInComputerScience/DeclarationGraph.lean/declarations/declarationgraph.md) | 7 | `declaration-track:3640a4f00f95b38e035de93b1c3a10fac9fc45419e16dc196d707e45a68fb75f` |
-| 2 | `def` | [theoremDeclarations](../../../../../ComputerScience/AlgorithmsInComputerScience/DeclarationGraph.lean/declarations/theoremdeclarations.md) | 9 | `declaration-track:901111e695d53c4f51d2e3fb3c310a9680b53bcda26a922ad479e79fd2d0ebc6` |
-| 3 | `theorem` | [theoremDeclarations_are_theorems](../../../../../ComputerScience/AlgorithmsInComputerScience/DeclarationGraph.lean/declarations/theoremdeclarations-are-theorems.md) | 13 | `result-track:aa450432c72f8d1dd0530392e6d1fc4eda282ace8b1bf5484278f8f4106e9721` |
+| 1 | `def` | [DeclarationGraph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DeclarationGraph.lean/declarations/declarationgraph.md) | 7 | `declaration-track:3640a4f00f95b38e035de93b1c3a10fac9fc45419e16dc196d707e45a68fb75f` |
+| 2 | `def` | [theoremDeclarations](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DeclarationGraph.lean/declarations/theoremdeclarations.md) | 9 | `declaration-track:901111e695d53c4f51d2e3fb3c310a9680b53bcda26a922ad479e79fd2d0ebc6` |
+| 3 | `theorem` | [theoremDeclarations_are_theorems](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DeclarationGraph.lean/declarations/theoremdeclarations-are-theorems.md) | 13 | `result-track:aa450432c72f8d1dd0530392e6d1fc4eda282ace8b1bf5484278f8f4106e9721` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

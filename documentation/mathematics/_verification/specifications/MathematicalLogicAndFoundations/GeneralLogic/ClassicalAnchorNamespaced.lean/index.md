@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ClassicalAnchorNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ClassicalAnchorNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ClassicalAnchorNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ClassicalAnchorNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ClassicalAnchor](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ClassicalAnchorNamespaced.lean/declarations/classicalanchor.md) | 21 | `declaration-track:cbb2579169c5a657396788c360c8c9edd5ad2c2d161ba9be3deaba581c414d24` |
-| 2 | `def` | [euclidInfinitudeAnchor](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ClassicalAnchorNamespaced.lean/declarations/euclidinfinitudeanchor.md) | 30 | `declaration-track:87e428c1b3305979466ee8859bcefce99bd878a9ab5ce9dcfa4525c4ed240cda` |
-| 3 | `def` | [eulerProductAnchor](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ClassicalAnchorNamespaced.lean/declarations/eulerproductanchor.md) | 39 | `declaration-track:710e74204a0062dcc9d354a94ebd643169f8cfca1fb21d9ef2038115c954b4db` |
-| 4 | `def` | [pntAnchor](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ClassicalAnchorNamespaced.lean/declarations/pntanchor.md) | 48 | `declaration-track:962a7af4481db924e23bc1629d23215a2c2c527c0f22f53fca2c49dd56ee3243` |
-| 5 | `def` | [wienerIkeharaAnchor](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ClassicalAnchorNamespaced.lean/declarations/wienerikeharaanchor.md) | 57 | `declaration-track:0313d0b5e08f427ebf3ff4faf4cc23446f9e02bae30e421cd70ef9b6ae53d467` |
-| 6 | `def` | [prismaticTorsionAnchor](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ClassicalAnchorNamespaced.lean/declarations/prismatictorsionanchor.md) | 66 | `declaration-track:3c3886560c94e7622d9f51fe9967a1363982f9a968e2896911a9938b876dcfb6` |
-| 7 | `def` | [ricciFlowSurgeryAnchor](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ClassicalAnchorNamespaced.lean/declarations/ricciflowsurgeryanchor.md) | 75 | `declaration-track:2bacd819f56824b122dd0711adf46760f5cbc924e460a11e938ca7b4eb6ee64f` |
+| 1 | `structure` | [ClassicalAnchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ClassicalAnchorNamespaced.lean/declarations/classicalanchor.md) | 21 | `declaration-track:cbb2579169c5a657396788c360c8c9edd5ad2c2d161ba9be3deaba581c414d24` |
+| 2 | `def` | [euclidInfinitudeAnchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ClassicalAnchorNamespaced.lean/declarations/euclidinfinitudeanchor.md) | 30 | `declaration-track:87e428c1b3305979466ee8859bcefce99bd878a9ab5ce9dcfa4525c4ed240cda` |
+| 3 | `def` | [eulerProductAnchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ClassicalAnchorNamespaced.lean/declarations/eulerproductanchor.md) | 39 | `declaration-track:710e74204a0062dcc9d354a94ebd643169f8cfca1fb21d9ef2038115c954b4db` |
+| 4 | `def` | [pntAnchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ClassicalAnchorNamespaced.lean/declarations/pntanchor.md) | 48 | `declaration-track:962a7af4481db924e23bc1629d23215a2c2c527c0f22f53fca2c49dd56ee3243` |
+| 5 | `def` | [wienerIkeharaAnchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ClassicalAnchorNamespaced.lean/declarations/wienerikeharaanchor.md) | 57 | `declaration-track:0313d0b5e08f427ebf3ff4faf4cc23446f9e02bae30e421cd70ef9b6ae53d467` |
+| 6 | `def` | [prismaticTorsionAnchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ClassicalAnchorNamespaced.lean/declarations/prismatictorsionanchor.md) | 66 | `declaration-track:3c3886560c94e7622d9f51fe9967a1363982f9a968e2896911a9938b876dcfb6` |
+| 7 | `def` | [ricciFlowSurgeryAnchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ClassicalAnchorNamespaced.lean/declarations/ricciflowsurgeryanchor.md) | 75 | `declaration-track:2bacd819f56824b122dd0711adf46760f5cbc924e460a11e938ca7b4eb6ee64f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

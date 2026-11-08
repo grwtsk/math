@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/QuadraticIntervals.lean/index.md) · [Full source](../../../../NumberTheory/QuadraticIntervals.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/QuadraticIntervals.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/QuadraticIntervals.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Chebyshev.CorrelationPairing`](../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CorrelationPairing.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.CorrelationPairing`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CorrelationPairing.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Algebra.Order.Floor.Semiring` — import line 5; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic.Linarith` — import line 6; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic.NormNum` — import line 7; external provider; requires a separately pinned dependency.
@@ -62,18 +62,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [floor_nat_add_shift](../../../../NumberTheory/QuadraticIntervals.lean/declarations/floor-nat-add-shift.md) | 29 | `result-track:b756144bd490028f59692771a5c752d36cd99980e37f8f6ac9484147f7e01885` |
-| 2 | `theorem` | [nat_add_shift_ne_natCast](../../../../NumberTheory/QuadraticIntervals.lean/declarations/nat-add-shift-ne-natcast.md) | 35 | `result-track:e21bf96335c0131d3fcee4f7f4e1ae07708ba5f9be1a7fd3d1e5baac5eff7296` |
-| 3 | `theorem` | [chebyshevPrimePower_nat_add_shift](../../../../NumberTheory/QuadraticIntervals.lean/declarations/chebyshevprimepower-nat-add-shift.md) | 44 | `result-track:ab3d2d1295e2c06948fb1bebd553ab077eec792895c9f9b6e2aebbb99cf298de` |
-| 4 | `def` | [squareEndpoint](../../../../NumberTheory/QuadraticIntervals.lean/declarations/squareendpoint.md) | 50 | `declaration-track:509063f9a4ed99376e1e9265e96898a5b21bc19629620ea79e37e9c9233ad0d6` |
-| 5 | `theorem` | [squareEndpoint_gt_one](../../../../NumberTheory/QuadraticIntervals.lean/declarations/squareendpoint-gt-one.md) | 53 | `result-track:3ca1ad991535787ec038c43b029f7b205a9d28c5495eec42c8277dc88d854546` |
-| 6 | `theorem` | [squareEndpoint_ne_natCast](../../../../NumberTheory/QuadraticIntervals.lean/declarations/squareendpoint-ne-natcast.md) | 59 | `result-track:804729c39997cf8851b2f7509b741992a037e3d0adebe554e9ece14863358e46` |
-| 7 | `theorem` | [chebyshevPrimePower_squareEndpoint](../../../../NumberTheory/QuadraticIntervals.lean/declarations/chebyshevprimepower-squareendpoint.md) | 66 | `result-track:28a0783245e4ba366a8e3b462463b6f3c6962f5f39f5171cf7148b86b700aeef` |
-| 8 | `theorem` | [squareEndpoint_width](../../../../NumberTheory/QuadraticIntervals.lean/declarations/squareendpoint-width.md) | 75 | `result-track:97b1abcbbe5fd25acb75904711a144e95115053659047cf90d9337d2ba7020ab` |
-| 9 | `def` | [squareIncrement](../../../../NumberTheory/QuadraticIntervals.lean/declarations/squareincrement.md) | 81 | `declaration-track:c405cefa6856dda95f0b78d83543a4ab7020de8b3adb25ef4da0517451686999` |
-| 10 | `theorem` | [squareIncrement_eq_shifted](../../../../NumberTheory/QuadraticIntervals.lean/declarations/squareincrement-eq-shifted.md) | 85 | `result-track:7e8da3b1375374fdc3f016fc23ded49b1894674dedab9519a9e5a6489d7c7811` |
-| 11 | `theorem` | [squareIncrement_error](../../../../NumberTheory/QuadraticIntervals.lean/declarations/squareincrement-error.md) | 92 | `result-track:0b9b27d825d5be2d96c9426eca551153dba6c34c51ff8baaeff4fd891d7ec67f` |
-| 12 | `theorem` | [shift_one_control](../../../../NumberTheory/QuadraticIntervals.lean/declarations/shift-one-control.md) | 99 | `result-track:0541696987b03b9a4fcf7f874653978635925742a5b4ae1deac4e05e41c6458e` |
+| 1 | `theorem` | [floor_nat_add_shift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/QuadraticIntervals.lean/declarations/floor-nat-add-shift.md) | 29 | `result-track:b756144bd490028f59692771a5c752d36cd99980e37f8f6ac9484147f7e01885` |
+| 2 | `theorem` | [nat_add_shift_ne_natCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/QuadraticIntervals.lean/declarations/nat-add-shift-ne-natcast.md) | 35 | `result-track:e21bf96335c0131d3fcee4f7f4e1ae07708ba5f9be1a7fd3d1e5baac5eff7296` |
+| 3 | `theorem` | [chebyshevPrimePower_nat_add_shift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/QuadraticIntervals.lean/declarations/chebyshevprimepower-nat-add-shift.md) | 44 | `result-track:ab3d2d1295e2c06948fb1bebd553ab077eec792895c9f9b6e2aebbb99cf298de` |
+| 4 | `def` | [squareEndpoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/QuadraticIntervals.lean/declarations/squareendpoint.md) | 50 | `declaration-track:509063f9a4ed99376e1e9265e96898a5b21bc19629620ea79e37e9c9233ad0d6` |
+| 5 | `theorem` | [squareEndpoint_gt_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/QuadraticIntervals.lean/declarations/squareendpoint-gt-one.md) | 53 | `result-track:3ca1ad991535787ec038c43b029f7b205a9d28c5495eec42c8277dc88d854546` |
+| 6 | `theorem` | [squareEndpoint_ne_natCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/QuadraticIntervals.lean/declarations/squareendpoint-ne-natcast.md) | 59 | `result-track:804729c39997cf8851b2f7509b741992a037e3d0adebe554e9ece14863358e46` |
+| 7 | `theorem` | [chebyshevPrimePower_squareEndpoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/QuadraticIntervals.lean/declarations/chebyshevprimepower-squareendpoint.md) | 66 | `result-track:28a0783245e4ba366a8e3b462463b6f3c6962f5f39f5171cf7148b86b700aeef` |
+| 8 | `theorem` | [squareEndpoint_width](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/QuadraticIntervals.lean/declarations/squareendpoint-width.md) | 75 | `result-track:97b1abcbbe5fd25acb75904711a144e95115053659047cf90d9337d2ba7020ab` |
+| 9 | `def` | [squareIncrement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/QuadraticIntervals.lean/declarations/squareincrement.md) | 81 | `declaration-track:c405cefa6856dda95f0b78d83543a4ab7020de8b3adb25ef4da0517451686999` |
+| 10 | `theorem` | [squareIncrement_eq_shifted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/QuadraticIntervals.lean/declarations/squareincrement-eq-shifted.md) | 85 | `result-track:7e8da3b1375374fdc3f016fc23ded49b1894674dedab9519a9e5a6489d7c7811` |
+| 11 | `theorem` | [squareIncrement_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/QuadraticIntervals.lean/declarations/squareincrement-error.md) | 92 | `result-track:0b9b27d825d5be2d96c9426eca551153dba6c34c51ff8baaeff4fd891d7ec67f` |
+| 12 | `theorem` | [shift_one_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/QuadraticIntervals.lean/declarations/shift-one-control.md) | 99 | `result-track:0541696987b03b9a4fcf7f874653978635925742a5b4ae1deac4e05e41c6458e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

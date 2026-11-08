@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ActualPhaseCurvature.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ActualPhaseCurvature.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualPhaseCurvature.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualPhaseCurvature.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_positiveMass_pos](../../../../MeasureAndIntegration/ActualPhaseCurvature.lean/declarations/actual-positivemass-pos.md) | 18 | `result-track:51a803e987debeec46cd64e71bb0260c09678605f1378da56b23514b03640ffb` |
-| 2 | `theorem` | [actual_massRatio_pos](../../../../MeasureAndIntegration/ActualPhaseCurvature.lean/declarations/actual-massratio-pos.md) | 27 | `result-track:8e96fb277c63b748fb4e406c58dbc82bfff17808eadf563c71c18d5a94f553ea` |
-| 3 | `theorem` | [actual_massRatio_lt_one](../../../../MeasureAndIntegration/ActualPhaseCurvature.lean/declarations/actual-massratio-lt-one.md) | 31 | `result-track:acc232f8548cd8e7599c59bb5f9137953b649da596e17fa02de549fae41d57bd` |
-| 4 | `theorem` | [actual_massRatio_deficit](../../../../MeasureAndIntegration/ActualPhaseCurvature.lean/declarations/actual-massratio-deficit.md) | 38 | `result-track:888842b933a5274c253c996333a876908c7593609d654d383db05e8b49ad9483` |
-| 5 | `theorem` | [actual_excursion_le_positiveMass](../../../../MeasureAndIntegration/ActualPhaseCurvature.lean/declarations/actual-excursion-le-positivemass.md) | 48 | `result-track:33be06b24c9177efe59d7d4be7ef27e920d1339b903eb419abf734ed4beff1d6` |
-| 6 | `theorem` | [actual_negative_phase_hasDerivAt](../../../../MeasureAndIntegration/ActualPhaseCurvature.lean/declarations/actual-negative-phase-hasderivat.md) | 71 | `result-track:61cd8881f15ddd070edb0277f34de8484af3cff53e7b48d93a9991452d0e674a` |
-| 7 | `theorem` | [actual_negative_phase_curvature](../../../../MeasureAndIntegration/ActualPhaseCurvature.lean/declarations/actual-negative-phase-curvature.md) | 87 | `result-track:6eead5ea5af1589cf837e6d8da5b18cdc4f107b9b976dd0f895f6db71947e5ef` |
-| 8 | `theorem` | [actual_positive_phase_hasDerivAt](../../../../MeasureAndIntegration/ActualPhaseCurvature.lean/declarations/actual-positive-phase-hasderivat.md) | 93 | `result-track:dda52e35d7e7ccadbd33704e12b6539536354f6aa320130a5e165dca1fbe168a` |
-| 9 | `theorem` | [actual_positive_phase_curvature](../../../../MeasureAndIntegration/ActualPhaseCurvature.lean/declarations/actual-positive-phase-curvature.md) | 109 | `result-track:6383943d4244e4967ff2133a5c0b619ebb344ccb547eccd5bf90b0fb70a64c48` |
-| 10 | `theorem` | [actual_curvature_neg_of_negative_slope_positive_curvature](../../../../MeasureAndIntegration/ActualPhaseCurvature.lean/declarations/actual-curvature-neg-of-negative-slope-positive-curvature.md) | 115 | `result-track:ef3483634275d33c6f275edc83909e08ce37119bad6646f972741db43c524585` |
+| 1 | `theorem` | [actual_positiveMass_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualPhaseCurvature.lean/declarations/actual-positivemass-pos.md) | 18 | `result-track:51a803e987debeec46cd64e71bb0260c09678605f1378da56b23514b03640ffb` |
+| 2 | `theorem` | [actual_massRatio_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualPhaseCurvature.lean/declarations/actual-massratio-pos.md) | 27 | `result-track:8e96fb277c63b748fb4e406c58dbc82bfff17808eadf563c71c18d5a94f553ea` |
+| 3 | `theorem` | [actual_massRatio_lt_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualPhaseCurvature.lean/declarations/actual-massratio-lt-one.md) | 31 | `result-track:acc232f8548cd8e7599c59bb5f9137953b649da596e17fa02de549fae41d57bd` |
+| 4 | `theorem` | [actual_massRatio_deficit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualPhaseCurvature.lean/declarations/actual-massratio-deficit.md) | 38 | `result-track:888842b933a5274c253c996333a876908c7593609d654d383db05e8b49ad9483` |
+| 5 | `theorem` | [actual_excursion_le_positiveMass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualPhaseCurvature.lean/declarations/actual-excursion-le-positivemass.md) | 48 | `result-track:33be06b24c9177efe59d7d4be7ef27e920d1339b903eb419abf734ed4beff1d6` |
+| 6 | `theorem` | [actual_negative_phase_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualPhaseCurvature.lean/declarations/actual-negative-phase-hasderivat.md) | 71 | `result-track:61cd8881f15ddd070edb0277f34de8484af3cff53e7b48d93a9991452d0e674a` |
+| 7 | `theorem` | [actual_negative_phase_curvature](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualPhaseCurvature.lean/declarations/actual-negative-phase-curvature.md) | 87 | `result-track:6eead5ea5af1589cf837e6d8da5b18cdc4f107b9b976dd0f895f6db71947e5ef` |
+| 8 | `theorem` | [actual_positive_phase_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualPhaseCurvature.lean/declarations/actual-positive-phase-hasderivat.md) | 93 | `result-track:dda52e35d7e7ccadbd33704e12b6539536354f6aa320130a5e165dca1fbe168a` |
+| 9 | `theorem` | [actual_positive_phase_curvature](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualPhaseCurvature.lean/declarations/actual-positive-phase-curvature.md) | 109 | `result-track:6383943d4244e4967ff2133a5c0b619ebb344ccb547eccd5bf90b0fb70a64c48` |
+| 10 | `theorem` | [actual_curvature_neg_of_negative_slope_positive_curvature](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualPhaseCurvature.lean/declarations/actual-curvature-neg-of-negative-slope-positive-curvature.md) | 115 | `result-track:ef3483634275d33c6f275edc83909e08ce37119bad6646f972741db43c524585` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

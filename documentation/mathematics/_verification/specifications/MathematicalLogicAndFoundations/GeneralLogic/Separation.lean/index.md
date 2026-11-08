@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Separation.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Separation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Separation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Separation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [StratifiedLimitObjects](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Separation.lean/declarations/stratifiedlimitobjects.md) | 21 | `declaration-track:49f6fe904372038ae543e180448c99083ac017cc6255c8f56d87fe2ef6261780` |
-| 2 | `def` | [boundaryCode](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Separation.lean/declarations/boundarycode.md) | 49 | `declaration-track:a00f96aea375433d4f691f29d1d23ecaf68b9235e03d24c28e2df468c9295376` |
-| 3 | `def` | [authoritativeEffect](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Separation.lean/declarations/authoritativeeffect.md) | 66 | `declaration-track:739fa123536b351433e9f190ec6725ccbed63862c18e8cc1bfe30bf885a3739b` |
-| 4 | `theorem` | [nonauthoritative](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Separation.lean/declarations/nonauthoritative.md) | 80 | `result-track:d6bbd294a298c80abdd7faebdcd137ed15d8522da61ed02fb11f99169b808976` |
+| 1 | `structure` | [StratifiedLimitObjects](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Separation.lean/declarations/stratifiedlimitobjects.md) | 21 | `declaration-track:49f6fe904372038ae543e180448c99083ac017cc6255c8f56d87fe2ef6261780` |
+| 2 | `def` | [boundaryCode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Separation.lean/declarations/boundarycode.md) | 49 | `declaration-track:a00f96aea375433d4f691f29d1d23ecaf68b9235e03d24c28e2df468c9295376` |
+| 3 | `def` | [authoritativeEffect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Separation.lean/declarations/authoritativeeffect.md) | 66 | `declaration-track:739fa123536b351433e9f190ec6725ccbed63862c18e8cc1bfe30bf885a3739b` |
+| 4 | `theorem` | [nonauthoritative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Separation.lean/declarations/nonauthoritative.md) | 80 | `result-track:d6bbd294a298c80abdd7faebdcd137ed15d8522da61ed02fb11f99169b808976` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

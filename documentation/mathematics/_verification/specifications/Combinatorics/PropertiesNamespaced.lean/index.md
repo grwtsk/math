@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/PropertiesNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/PropertiesNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PropertiesNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PropertiesNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [soninIncrement_isOrthogonalProjection](../../../../Combinatorics/PropertiesNamespaced.lean/declarations/soninincrement-isorthogonalprojection.md) | 17 | `result-track:787b3a7edf38c0cf4a36f43569088795901673bbadac9016e93547838892a653` |
-| 2 | `theorem` | [soninIncrement_nonnegative](../../../../Combinatorics/PropertiesNamespaced.lean/declarations/soninincrement-nonnegative.md) | 31 | `result-track:4e136638d3be946b6e3185046558000fb42890724fe072fa795dd0e2a7b89d36` |
-| 3 | `theorem` | [soninIncrement_idempotent](../../../../Combinatorics/PropertiesNamespaced.lean/declarations/soninincrement-idempotent.md) | 44 | `result-track:4322bc10c21ff518b0bd2f12f4021aac889f6b18887d9f9dbc0391b4ff711df9` |
-| 4 | `theorem` | [soninIncrement_selfAdjoint](../../../../Combinatorics/PropertiesNamespaced.lean/declarations/soninincrement-selfadjoint.md) | 57 | `result-track:b64a870cb828dacc4390524357ca9eb529d75028aa09f2c2553b99bd6fd273f6` |
+| 1 | `theorem` | [soninIncrement_isOrthogonalProjection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PropertiesNamespaced.lean/declarations/soninincrement-isorthogonalprojection.md) | 17 | `result-track:787b3a7edf38c0cf4a36f43569088795901673bbadac9016e93547838892a653` |
+| 2 | `theorem` | [soninIncrement_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PropertiesNamespaced.lean/declarations/soninincrement-nonnegative.md) | 31 | `result-track:4e136638d3be946b6e3185046558000fb42890724fe072fa795dd0e2a7b89d36` |
+| 3 | `theorem` | [soninIncrement_idempotent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PropertiesNamespaced.lean/declarations/soninincrement-idempotent.md) | 44 | `result-track:4322bc10c21ff518b0bd2f12f4021aac889f6b18887d9f9dbc0391b4ff711df9` |
+| 4 | `theorem` | [soninIncrement_selfAdjoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PropertiesNamespaced.lean/declarations/soninincrement-selfadjoint.md) | 57 | `result-track:b64a870cb828dacc4390524357ca9eb529d75028aa09f2c2553b99bd6fd273f6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

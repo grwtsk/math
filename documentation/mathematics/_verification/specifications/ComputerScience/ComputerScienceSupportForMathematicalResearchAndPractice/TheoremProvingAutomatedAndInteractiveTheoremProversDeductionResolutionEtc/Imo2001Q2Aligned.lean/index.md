@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/Imo2001Q2Aligned.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/Imo2001Q2Aligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/Imo2001Q2Aligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/Imo2001Q2Aligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `macro_rules` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/Imo2001Q2Aligned.lean/declarations/macro-rules.md) | 35 | `declaration-track:b012224a0a456552882c6e1d678c5f4cd1c900ff769d8a481881ad28da1e223e` |
-| 2 | `theorem` | [bound](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/Imo2001Q2Aligned.lean/declarations/bound.md) | 39 | `result-track:4761a8d26b00e2951be093f3f6131ec4214762c2ccc40d69d2d17a57245aa06d` |
-| 3 | `theorem` | [imo2001_q2'](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/Imo2001Q2Aligned.lean/declarations/imo2001-q2-source-edition-2.md) | 55 | `result-track:e58c55902801f08b94845d991ff1dd627416e66759593011292f51bf4fd490de` |
-| 4 | `theorem` | [imo2001_q2](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/Imo2001Q2Aligned.lean/declarations/imo2001-q2.md) | 69 | `result-track:168c1d5096c8d7bb1e4de576d522234e9fad0e4bb04e7f28521389e507017d36` |
+| 1 | `macro_rules` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/Imo2001Q2Aligned.lean/declarations/macro-rules.md) | 35 | `declaration-track:b012224a0a456552882c6e1d678c5f4cd1c900ff769d8a481881ad28da1e223e` |
+| 2 | `theorem` | [bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/Imo2001Q2Aligned.lean/declarations/bound.md) | 39 | `result-track:4761a8d26b00e2951be093f3f6131ec4214762c2ccc40d69d2d17a57245aa06d` |
+| 3 | `theorem` | [imo2001_q2'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/Imo2001Q2Aligned.lean/declarations/imo2001-q2-source-edition-2.md) | 55 | `result-track:e58c55902801f08b94845d991ff1dd627416e66759593011292f51bf4fd490de` |
+| 4 | `theorem` | [imo2001_q2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/Imo2001Q2Aligned.lean/declarations/imo2001-q2.md) | 69 | `result-track:168c1d5096c8d7bb1e4de576d522234e9fad0e4bb04e7f28521389e507017d36` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

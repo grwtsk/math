@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/NearCUENamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/NearCUENamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NearCUENamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NearCUENamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [NearCUE](../../../../MeasureAndIntegration/NearCUENamespaced.lean/declarations/nearcue.md) | 42 | `declaration-track:7e139fde4e0ddcea7d191270981d55762dd9e289ce959b7fbe3b6ed5b237f0e7` |
-| 2 | `lemma` | [abs_T_sub_le](../../../../MeasureAndIntegration/NearCUENamespaced.lean/declarations/abs-t-sub-le.md) | 45 | `result-track:1e60bb289812ceb7bf6159d3ea9eb1adfeed507493b4502e64c54445104d9754` |
-| 3 | `lemma` | [abs_U_sub_le](../../../../MeasureAndIntegration/NearCUENamespaced.lean/declarations/abs-u-sub-le.md) | 63 | `result-track:ffa1463723e3cbba9e79be34d4f78e7ee928788319adb3ad4954b6d6097a4d62` |
-| 4 | `lemma` | [ii_Dfun](../../../../MeasureAndIntegration/NearCUENamespaced.lean/declarations/ii-dfun.md) | 83 | `result-track:2003f6fd8158ab07abdb37cc403ac5f38c7170c83223620a9f66e7cf2ee5496e` |
-| 5 | `lemma` | [Efun_cell](../../../../MeasureAndIntegration/NearCUENamespaced.lean/declarations/efun-cell.md) | 89 | `result-track:d00a5f6bd1a711eb953d998833d6daca81f05833baaebca1e15d4e857c64b266` |
-| 6 | `lemma` | [cubic_bounds](../../../../MeasureAndIntegration/NearCUENamespaced.lean/declarations/cubic-bounds.md) | 125 | `result-track:4a05f8bbbef670ee65097746e00b534e32a2c68130acf90358c8884eeae867b6` |
-| 7 | `theorem` | [abs_Efun_le_of_nearCUE](../../../../MeasureAndIntegration/NearCUENamespaced.lean/declarations/abs-efun-le-of-nearcue.md) | 139 | `result-track:69a52ba3157c3998ab41498fc66314ceb372c86d49bd437000f4b577316ab527` |
-| 8 | `theorem` | [abs_Efun_one_le_of_nearCUE](../../../../MeasureAndIntegration/NearCUENamespaced.lean/declarations/abs-efun-one-le-of-nearcue.md) | 208 | `result-track:a7f6340fc7cd59e8d62a3ffb0d0cd69962b98f6321e61222ccab2c323c9c819b` |
-| 9 | `theorem` | [ceiling_nearCUE](../../../../MeasureAndIntegration/NearCUENamespaced.lean/declarations/ceiling-nearcue.md) | 218 | `result-track:4656296c162cfbcd11a964ffcb95ca556b2733b1d3e564a01a75b86046698af7` |
+| 1 | `def` | [NearCUE](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NearCUENamespaced.lean/declarations/nearcue.md) | 42 | `declaration-track:7e139fde4e0ddcea7d191270981d55762dd9e289ce959b7fbe3b6ed5b237f0e7` |
+| 2 | `lemma` | [abs_T_sub_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NearCUENamespaced.lean/declarations/abs-t-sub-le.md) | 45 | `result-track:1e60bb289812ceb7bf6159d3ea9eb1adfeed507493b4502e64c54445104d9754` |
+| 3 | `lemma` | [abs_U_sub_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NearCUENamespaced.lean/declarations/abs-u-sub-le.md) | 63 | `result-track:ffa1463723e3cbba9e79be34d4f78e7ee928788319adb3ad4954b6d6097a4d62` |
+| 4 | `lemma` | [ii_Dfun](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NearCUENamespaced.lean/declarations/ii-dfun.md) | 83 | `result-track:2003f6fd8158ab07abdb37cc403ac5f38c7170c83223620a9f66e7cf2ee5496e` |
+| 5 | `lemma` | [Efun_cell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NearCUENamespaced.lean/declarations/efun-cell.md) | 89 | `result-track:d00a5f6bd1a711eb953d998833d6daca81f05833baaebca1e15d4e857c64b266` |
+| 6 | `lemma` | [cubic_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NearCUENamespaced.lean/declarations/cubic-bounds.md) | 125 | `result-track:4a05f8bbbef670ee65097746e00b534e32a2c68130acf90358c8884eeae867b6` |
+| 7 | `theorem` | [abs_Efun_le_of_nearCUE](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NearCUENamespaced.lean/declarations/abs-efun-le-of-nearcue.md) | 139 | `result-track:69a52ba3157c3998ab41498fc66314ceb372c86d49bd437000f4b577316ab527` |
+| 8 | `theorem` | [abs_Efun_one_le_of_nearCUE](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NearCUENamespaced.lean/declarations/abs-efun-one-le-of-nearcue.md) | 208 | `result-track:a7f6340fc7cd59e8d62a3ffb0d0cd69962b98f6321e61222ccab2c323c9c819b` |
+| 9 | `theorem` | [ceiling_nearCUE](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NearCUENamespaced.lean/declarations/ceiling-nearcue.md) | 218 | `result-track:4656296c162cfbcd11a964ffcb95ca556b2733b1d3e564a01a75b86046698af7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

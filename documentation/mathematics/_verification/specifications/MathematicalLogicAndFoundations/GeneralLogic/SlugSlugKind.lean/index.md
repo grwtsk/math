@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SlugSlugKind.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SlugSlugKind.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SlugSlugKind.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SlugSlugKind.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [SlugKind](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SlugSlugKind.lean/declarations/slugkind.md) | 7 | `declaration-track:0b8f407d974bdcfcb94a4a57d91bd702781ec4dfc091649b7f8280de432f2ddd` |
-| 2 | `structure` | [Slug](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SlugSlugKind.lean/declarations/slug.md) | 23 | `declaration-track:69f24060e01b5d71dbec51d1a9b37ee5503de1a6819f051b6a73f148fede86a9` |
-| 3 | `def` | [Nonempty](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SlugSlugKind.lean/declarations/nonempty.md) | 33 | `declaration-track:710234a444f0d3f379eacb8fe5fed5183d82b18b1925fe297cb4df3c68504bf5` |
-| 4 | `structure` | [ExportedAstNode](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SlugSlugKind.lean/declarations/exportedastnode.md) | 38 | `declaration-track:5e33fd9b8086003a4049cf2722d36956bee061e8e74f4012fa23ba16ec286607` |
-| 5 | `def` | [ExportedAstNodeValid](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SlugSlugKind.lean/declarations/exportedastnodevalid.md) | 44 | `declaration-track:019d6abe7ee65d610f033e335cf1bf41d6a7b1d6360d15377b47dbc0fde71e71` |
-| 6 | `theorem` | [exported_ast_node_slug_nonempty](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SlugSlugKind.lean/declarations/exported-ast-node-slug-nonempty.md) | 47 | `result-track:061c3c54bdc673d8426e2b4a1bdd812b21501368bb5600fc9f56a745e148d7a3` |
+| 1 | `inductive` | [SlugKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SlugSlugKind.lean/declarations/slugkind.md) | 7 | `declaration-track:0b8f407d974bdcfcb94a4a57d91bd702781ec4dfc091649b7f8280de432f2ddd` |
+| 2 | `structure` | [Slug](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SlugSlugKind.lean/declarations/slug.md) | 23 | `declaration-track:69f24060e01b5d71dbec51d1a9b37ee5503de1a6819f051b6a73f148fede86a9` |
+| 3 | `def` | [Nonempty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SlugSlugKind.lean/declarations/nonempty.md) | 33 | `declaration-track:710234a444f0d3f379eacb8fe5fed5183d82b18b1925fe297cb4df3c68504bf5` |
+| 4 | `structure` | [ExportedAstNode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SlugSlugKind.lean/declarations/exportedastnode.md) | 38 | `declaration-track:5e33fd9b8086003a4049cf2722d36956bee061e8e74f4012fa23ba16ec286607` |
+| 5 | `def` | [ExportedAstNodeValid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SlugSlugKind.lean/declarations/exportedastnodevalid.md) | 44 | `declaration-track:019d6abe7ee65d610f033e335cf1bf41d6a7b1d6360d15377b47dbc0fde71e71` |
+| 6 | `theorem` | [exported_ast_node_slug_nonempty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SlugSlugKind.lean/declarations/exported-ast-node-slug-nonempty.md) | 47 | `result-track:061c3c54bdc673d8426e2b4a1bdd812b21501368bb5600fc9f56a745e148d7a3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

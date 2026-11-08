@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/VertexGroupNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/VertexGroupNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/VertexGroupNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/VertexGroupNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,11 +61,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [vertexGroup](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/VertexGroupNamespaced.lean/declarations/vertexgroup.md) | 48 | `declaration-track:3c8a3301970477142bf8500b050afd1d8cf327b6fc738c6d6427a070dc5606c9` |
-| 2 | `theorem` | [vertexGroup.inv_eq_inv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/VertexGroupNamespaced.lean/declarations/vertexgroup-inv-eq-inv.md) | 58 | `result-track:7a5e66cca949950028a6d529ffea89a78a7356ff93a12169f1a6d582a97beb7f` |
-| 3 | `def` | [vertexGroupIsomOfMap](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/VertexGroupNamespaced.lean/declarations/vertexgroupisomofmap.md) | 65 | `declaration-track:8b1a059bc1da1ec3ca711bb965b871c254776154881e630330858e136be1b851` |
-| 4 | `def` | [vertexGroupIsomOfPath](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/VertexGroupNamespaced.lean/declarations/vertexgroupisomofpath.md) | 79 | `declaration-track:73c78b83166b00b85e9ed14cc7bf6398cbb41c6693c26f75d927e294c0143721` |
-| 5 | `def` | [CategoryTheory.Functor.mapVertexGroup](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/VertexGroupNamespaced.lean/declarations/categorytheory-functor-mapvertexgroup.md) | 84 | `declaration-track:55d9bcd617016e3f7294cd26f1c0ae9d8eab47904921124d747ab5ce970dfbf8` |
+| 1 | `instance` | [vertexGroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/VertexGroupNamespaced.lean/declarations/vertexgroup.md) | 48 | `declaration-track:3c8a3301970477142bf8500b050afd1d8cf327b6fc738c6d6427a070dc5606c9` |
+| 2 | `theorem` | [vertexGroup.inv_eq_inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/VertexGroupNamespaced.lean/declarations/vertexgroup-inv-eq-inv.md) | 58 | `result-track:7a5e66cca949950028a6d529ffea89a78a7356ff93a12169f1a6d582a97beb7f` |
+| 3 | `def` | [vertexGroupIsomOfMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/VertexGroupNamespaced.lean/declarations/vertexgroupisomofmap.md) | 65 | `declaration-track:8b1a059bc1da1ec3ca711bb965b871c254776154881e630330858e136be1b851` |
+| 4 | `def` | [vertexGroupIsomOfPath](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/VertexGroupNamespaced.lean/declarations/vertexgroupisomofpath.md) | 79 | `declaration-track:73c78b83166b00b85e9ed14cc7bf6398cbb41c6693c26f75d927e294c0143721` |
+| 5 | `def` | [CategoryTheory.Functor.mapVertexGroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/VertexGroupNamespaced.lean/declarations/categorytheory-functor-mapvertexgroup.md) | 84 | `declaration-track:55d9bcd617016e3f7294cd26f1c0ae9d8eab47904921124d747ab5ce970dfbf8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

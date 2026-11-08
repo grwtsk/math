@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AA021f1d49c4c48fcNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AA021f1d49c4c48fcNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AA021f1d49c4c48fcNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AA021f1d49c4c48fcNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [UniqueConceptTaxa](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AA021f1d49c4c48fcNamespaced.lean/declarations/uniqueconcepttaxa.md) | 19 | `declaration-track:64b812c8f1fc12f51a1934ef9beb265bba823afc6c408963868e3db6b5ae6883` |
+| 1 | `def` | [UniqueConceptTaxa](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AA021f1d49c4c48fcNamespaced.lean/declarations/uniqueconcepttaxa.md) | 19 | `declaration-track:64b812c8f1fc12f51a1934ef9beb265bba823afc6c408963868e3db6b5ae6883` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

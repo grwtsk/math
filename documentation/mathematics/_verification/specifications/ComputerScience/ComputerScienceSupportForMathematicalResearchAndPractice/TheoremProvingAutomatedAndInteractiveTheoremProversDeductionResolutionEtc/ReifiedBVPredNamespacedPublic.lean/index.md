@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ReifiedBVPredNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ReifiedBVPredNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ReifiedBVPredNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ReifiedBVPredNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [boolAtom](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ReifiedBVPredNamespacedPublic.lean/declarations/boolatom.md) | 32 | `declaration-track:6bd836a4de0d8e9bb8024d94d4ffbfc56be8bd0d5705e9cb4d35efb9e021fa0b` |
-| 2 | `def` | [mkBinPred](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ReifiedBVPredNamespacedPublic.lean/declarations/mkbinpred.md) | 62 | `declaration-track:eae67d1c59baf211128c0644e3238c09377172ce05dbed09e58c42662b422c0f` |
-| 3 | `def` | [mkGetLsbD](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ReifiedBVPredNamespacedPublic.lean/declarations/mkgetlsbd.md) | 103 | `declaration-track:1a3cabb6e9d4f4b360c306f9ec90bdb896041412f5f69c759d3cf76e9212e345` |
+| 1 | `def` | [boolAtom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ReifiedBVPredNamespacedPublic.lean/declarations/boolatom.md) | 32 | `declaration-track:6bd836a4de0d8e9bb8024d94d4ffbfc56be8bd0d5705e9cb4d35efb9e021fa0b` |
+| 2 | `def` | [mkBinPred](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ReifiedBVPredNamespacedPublic.lean/declarations/mkbinpred.md) | 62 | `declaration-track:eae67d1c59baf211128c0644e3238c09377172ce05dbed09e58c42662b422c0f` |
+| 3 | `def` | [mkGetLsbD](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ReifiedBVPredNamespacedPublic.lean/declarations/mkgetlsbd.md) | 103 | `declaration-track:1a3cabb6e9d4f4b360c306f9ec90bdb896041412f5f69c759d3cf76e9212e345` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

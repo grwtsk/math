@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/AxiomAuditNamespacedPublicEdition2.lean/index.md) · [Full source](../../../../Combinatorics/AxiomAuditNamespacedPublicEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AxiomAuditNamespacedPublicEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AxiomAuditNamespacedPublicEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [verbose_identity](../../../../Combinatorics/AxiomAuditNamespacedPublicEdition2.lean/declarations/verbose-identity.md) | 26 | `result-track:3a9efe1adc742c7a9f4661844098741249b2d8817325327221f920e21b627950` |
-| 2 | `theorem` | [identity_with_local_auxiliary](../../../../Combinatorics/AxiomAuditNamespacedPublicEdition2.lean/declarations/identity-with-local-auxiliary.md) | 32 | `result-track:8d459e51d8a41ead90a52b83937c8979e68e57e304b2f68d82152c7accd2fc4b` |
-| 3 | `theorem` | [sandbox_guard_identity](../../../../Combinatorics/AxiomAuditNamespacedPublicEdition2.lean/declarations/sandbox-guard-identity.md) | 35 | `result-track:68d389526f95304fcb0970de9d4e130cad0eaf120ce4f3fc076325360b8e15f8` |
-| 4 | `def` | [import_sensitive_cardinality](../../../../Combinatorics/AxiomAuditNamespacedPublicEdition2.lean/declarations/import-sensitive-cardinality.md) | 40 | `declaration-track:5d91fc4cbbae710a42f305d4082529acac219efb50e11f45392fbccef107bf37` |
+| 1 | `theorem` | [verbose_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AxiomAuditNamespacedPublicEdition2.lean/declarations/verbose-identity.md) | 26 | `result-track:3a9efe1adc742c7a9f4661844098741249b2d8817325327221f920e21b627950` |
+| 2 | `theorem` | [identity_with_local_auxiliary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AxiomAuditNamespacedPublicEdition2.lean/declarations/identity-with-local-auxiliary.md) | 32 | `result-track:8d459e51d8a41ead90a52b83937c8979e68e57e304b2f68d82152c7accd2fc4b` |
+| 3 | `theorem` | [sandbox_guard_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AxiomAuditNamespacedPublicEdition2.lean/declarations/sandbox-guard-identity.md) | 35 | `result-track:68d389526f95304fcb0970de9d4e130cad0eaf120ce4f3fc076325360b8e15f8` |
+| 4 | `def` | [import_sensitive_cardinality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AxiomAuditNamespacedPublicEdition2.lean/declarations/import-sensitive-cardinality.md) | 40 | `declaration-track:5d91fc4cbbae710a42f305d4082529acac219efb50e11f45392fbccef107bf37` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

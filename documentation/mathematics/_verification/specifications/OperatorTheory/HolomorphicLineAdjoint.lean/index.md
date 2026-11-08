@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../OperatorTheory/HolomorphicLineAdjoint.lean/index.md) · [Full source](../../../../OperatorTheory/HolomorphicLineAdjoint.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/HolomorphicLineAdjoint.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/HolomorphicLineAdjoint.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.HolomorphicLineGaugeMetric`](../../../../FunctionsOfAComplexVariable/HolomorphicLineGaugeMetric.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.Analysis.Operator.HolomorphicLineGaugePort`](../../../../OperatorTheory/HolomorphicLineGaugePort.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.HolomorphicLineGaugeMetric`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/HolomorphicLineGaugeMetric.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Analysis.Operator.HolomorphicLineGaugePort`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/HolomorphicLineGaugePort.lean/index.md) — import line 2; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,22 +58,22 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [coefficient](../../../../OperatorTheory/HolomorphicLineAdjoint.lean/declarations/coefficient.md) | 28 | `declaration-track:3da1c02623a26380145eb9386b670b96ceb6ff5157ac8a71d8bf98b78c76d7d4` |
-| 2 | `theorem` | [localOp_eq_mul](../../../../OperatorTheory/HolomorphicLineAdjoint.lean/declarations/localop-eq-mul.md) | 31 | `result-track:cad7fb8fd4fd78dd325953a24444ad7e5556eaaf3b735ae15525e20a0919b042` |
-| 3 | `theorem` | [coefficient_matching](../../../../OperatorTheory/HolomorphicLineAdjoint.lean/declarations/coefficient-matching.md) | 38 | `result-track:1c285544bd162e5e26a2c5950331dad3c10136eec28ffbd2ab74c42c7b79238f` |
-| 4 | `theorem` | [ext_localOp](../../../../OperatorTheory/HolomorphicLineAdjoint.lean/declarations/ext-localop.md) | 49 | `result-track:59df18e4fa02a171bc840c2321a0067b889c8f052561c699990dfe5791659bda` |
-| 5 | `def` | [adjoint](../../../../OperatorTheory/HolomorphicLineAdjoint.lean/declarations/adjoint.md) | 56 | `declaration-track:f02e77d6de27965ab7e26eaabae200aa105170bdcf98589c15bf00dd1612b9b3` |
-| 6 | `theorem` | [adjoint_coefficient](../../../../OperatorTheory/HolomorphicLineAdjoint.lean/declarations/adjoint-coefficient.md) | 65 | `result-track:f3ee4246cabcc722967474f4f18eff15db0f2cb9bebc682d97d9d85c9d36b8f7` |
-| 7 | `theorem` | [adjoint_pairing](../../../../OperatorTheory/HolomorphicLineAdjoint.lean/declarations/adjoint-pairing.md) | 72 | `result-track:8c6e5724895f95ac991000cde19d3b4ad7fe9bafd8be59b0a05335573dc81696` |
-| 8 | `theorem` | [adjoint_unique](../../../../OperatorTheory/HolomorphicLineAdjoint.lean/declarations/adjoint-unique.md) | 85 | `result-track:d1a5499858b31d5e1a67cfb0bb64be8d0dd2eb841d7698a0413e8f7d7c8cc7a4` |
-| 9 | `theorem` | [adjoint_involutive](../../../../OperatorTheory/HolomorphicLineAdjoint.lean/declarations/adjoint-involutive.md) | 99 | `result-track:88a7fdfbe1fc88a8edffa4579f1450ff6f68be7c4f2961033f5fe7f049355929` |
-| 10 | `theorem` | [transport_coefficient](../../../../OperatorTheory/HolomorphicLineAdjoint.lean/declarations/transport-coefficient.md) | 110 | `result-track:a3897a68b6d961443d8d27ad431fac42415ffdc5616af1f989407296b6fee2c5` |
-| 11 | `theorem` | [adjoint_transport](../../../../OperatorTheory/HolomorphicLineAdjoint.lean/declarations/adjoint-transport.md) | 119 | `result-track:d226ad22aa5a1fb268e3e3c17aa5e767a7f22c7224dadb80eaea63052e5fecb7` |
-| 12 | `theorem` | [adjoint_intertwines](../../../../OperatorTheory/HolomorphicLineAdjoint.lean/declarations/adjoint-intertwines.md) | 129 | `result-track:1036646419e56acf86ceb9f8488b55c859424d241301095cb09ac0af5ee93465` |
-| 13 | `theorem` | [squaredNorm_descend](../../../../OperatorTheory/HolomorphicLineAdjoint.lean/declarations/squarednorm-descend.md) | 138 | `result-track:779ac67d6887f419e699f07754bbeafc79df4782064599db7a7f8a0781be55bd` |
-| 14 | `theorem` | [preservesHolomorphy_iff](../../../../OperatorTheory/HolomorphicLineAdjoint.lean/declarations/preservesholomorphy-iff.md) | 150 | `result-track:575d2c4755722f9820bbcaeb187f01bdfac4fa945769a8fecaf8d69b043981d7` |
-| 15 | `theorem` | [adjoint_preservesHolomorphy_iff](../../../../OperatorTheory/HolomorphicLineAdjoint.lean/declarations/adjoint-preservesholomorphy-iff.md) | 165 | `result-track:0650b02e95afe57ab68309ee22eee805ac990c9645c86ae16fbae3b30c04e10a` |
-| 16 | `theorem` | [imaginary_multiplication_not_selfAdjoint](../../../../OperatorTheory/HolomorphicLineAdjoint.lean/declarations/imaginary-multiplication-not-selfadjoint.md) | 177 | `result-track:0533fe358c18814bf3c5fd97d4b5e83557d4ab97c094d85278425dfc011aaa63` |
+| 1 | `def` | [coefficient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/HolomorphicLineAdjoint.lean/declarations/coefficient.md) | 28 | `declaration-track:3da1c02623a26380145eb9386b670b96ceb6ff5157ac8a71d8bf98b78c76d7d4` |
+| 2 | `theorem` | [localOp_eq_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/HolomorphicLineAdjoint.lean/declarations/localop-eq-mul.md) | 31 | `result-track:cad7fb8fd4fd78dd325953a24444ad7e5556eaaf3b735ae15525e20a0919b042` |
+| 3 | `theorem` | [coefficient_matching](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/HolomorphicLineAdjoint.lean/declarations/coefficient-matching.md) | 38 | `result-track:1c285544bd162e5e26a2c5950331dad3c10136eec28ffbd2ab74c42c7b79238f` |
+| 4 | `theorem` | [ext_localOp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/HolomorphicLineAdjoint.lean/declarations/ext-localop.md) | 49 | `result-track:59df18e4fa02a171bc840c2321a0067b889c8f052561c699990dfe5791659bda` |
+| 5 | `def` | [adjoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/HolomorphicLineAdjoint.lean/declarations/adjoint.md) | 56 | `declaration-track:f02e77d6de27965ab7e26eaabae200aa105170bdcf98589c15bf00dd1612b9b3` |
+| 6 | `theorem` | [adjoint_coefficient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/HolomorphicLineAdjoint.lean/declarations/adjoint-coefficient.md) | 65 | `result-track:f3ee4246cabcc722967474f4f18eff15db0f2cb9bebc682d97d9d85c9d36b8f7` |
+| 7 | `theorem` | [adjoint_pairing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/HolomorphicLineAdjoint.lean/declarations/adjoint-pairing.md) | 72 | `result-track:8c6e5724895f95ac991000cde19d3b4ad7fe9bafd8be59b0a05335573dc81696` |
+| 8 | `theorem` | [adjoint_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/HolomorphicLineAdjoint.lean/declarations/adjoint-unique.md) | 85 | `result-track:d1a5499858b31d5e1a67cfb0bb64be8d0dd2eb841d7698a0413e8f7d7c8cc7a4` |
+| 9 | `theorem` | [adjoint_involutive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/HolomorphicLineAdjoint.lean/declarations/adjoint-involutive.md) | 99 | `result-track:88a7fdfbe1fc88a8edffa4579f1450ff6f68be7c4f2961033f5fe7f049355929` |
+| 10 | `theorem` | [transport_coefficient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/HolomorphicLineAdjoint.lean/declarations/transport-coefficient.md) | 110 | `result-track:a3897a68b6d961443d8d27ad431fac42415ffdc5616af1f989407296b6fee2c5` |
+| 11 | `theorem` | [adjoint_transport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/HolomorphicLineAdjoint.lean/declarations/adjoint-transport.md) | 119 | `result-track:d226ad22aa5a1fb268e3e3c17aa5e767a7f22c7224dadb80eaea63052e5fecb7` |
+| 12 | `theorem` | [adjoint_intertwines](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/HolomorphicLineAdjoint.lean/declarations/adjoint-intertwines.md) | 129 | `result-track:1036646419e56acf86ceb9f8488b55c859424d241301095cb09ac0af5ee93465` |
+| 13 | `theorem` | [squaredNorm_descend](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/HolomorphicLineAdjoint.lean/declarations/squarednorm-descend.md) | 138 | `result-track:779ac67d6887f419e699f07754bbeafc79df4782064599db7a7f8a0781be55bd` |
+| 14 | `theorem` | [preservesHolomorphy_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/HolomorphicLineAdjoint.lean/declarations/preservesholomorphy-iff.md) | 150 | `result-track:575d2c4755722f9820bbcaeb187f01bdfac4fa945769a8fecaf8d69b043981d7` |
+| 15 | `theorem` | [adjoint_preservesHolomorphy_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/HolomorphicLineAdjoint.lean/declarations/adjoint-preservesholomorphy-iff.md) | 165 | `result-track:0650b02e95afe57ab68309ee22eee805ac990c9645c86ae16fbae3b30c04e10a` |
+| 16 | `theorem` | [imaginary_multiplication_not_selfAdjoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/HolomorphicLineAdjoint.lean/declarations/imaginary-multiplication-not-selfadjoint.md) | 177 | `result-track:0533fe358c18814bf3c5fd97d4b5e83557d4ab97c094d85278425dfc011aaa63` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

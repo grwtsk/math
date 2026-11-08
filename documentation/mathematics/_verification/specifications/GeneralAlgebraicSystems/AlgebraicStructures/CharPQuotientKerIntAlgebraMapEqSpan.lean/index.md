@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPQuotientKerIntAlgebraMapEqSpan.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPQuotientKerIntAlgebraMapEqSpan.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPQuotientKerIntAlgebraMapEqSpan.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPQuotientKerIntAlgebraMapEqSpan.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,12 +60,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [ker_intAlgebraMap_eq_span](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPQuotientKerIntAlgebraMapEqSpan.lean/declarations/ker-intalgebramap-eq-span.md) | 20 | `result-track:02a88565bca965b562354ac5f47a6b3963512f6d32b6c0dd3488f5544e4106d0` |
-| 2 | `theorem` | [quotient](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPQuotientKerIntAlgebraMapEqSpan.lean/declarations/quotient-source-edition-2.md) | 26 | `result-track:97f2c2f7c4135f35729c501b54efb249d3ec1e64391dd1bae78e910a988de198` |
-| 3 | `theorem` | [quotient'](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPQuotientKerIntAlgebraMapEqSpan.lean/declarations/quotient.md) | 41 | `result-track:4e43242d3919c2e9963c6b5710586b297eecf131ca6bae4b2a65f67e369456a4` |
-| 4 | `theorem` | [quotient_iff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPQuotientKerIntAlgebraMapEqSpan.lean/declarations/quotient-iff.md) | 50 | `result-track:33c87c407d1eaef0a2f72a57fe88ce65cd280e62ba2197bf7e41fcfb0a94091b` |
-| 5 | `theorem` | [quotient_iff_le_ker_natCast](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPQuotientKerIntAlgebraMapEqSpan.lean/declarations/quotient-iff-le-ker-natcast.md) | 57 | `result-track:3cff4759aa8d78c06afbfc2890344bb979e0dbf07beff12161668e508f49c2a4` |
-| 6 | `theorem` | [Ideal.Quotient.index_eq_zero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPQuotientKerIntAlgebraMapEqSpan.lean/declarations/ideal-quotient-index-eq-zero.md) | 63 | `result-track:13030ba8b076be36ca42aae25d067623771fc87c4db2559f120b23196bd73b9c` |
+| 1 | `theorem` | [ker_intAlgebraMap_eq_span](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPQuotientKerIntAlgebraMapEqSpan.lean/declarations/ker-intalgebramap-eq-span.md) | 20 | `result-track:02a88565bca965b562354ac5f47a6b3963512f6d32b6c0dd3488f5544e4106d0` |
+| 2 | `theorem` | [quotient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPQuotientKerIntAlgebraMapEqSpan.lean/declarations/quotient-source-edition-2.md) | 26 | `result-track:97f2c2f7c4135f35729c501b54efb249d3ec1e64391dd1bae78e910a988de198` |
+| 3 | `theorem` | [quotient'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPQuotientKerIntAlgebraMapEqSpan.lean/declarations/quotient.md) | 41 | `result-track:4e43242d3919c2e9963c6b5710586b297eecf131ca6bae4b2a65f67e369456a4` |
+| 4 | `theorem` | [quotient_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPQuotientKerIntAlgebraMapEqSpan.lean/declarations/quotient-iff.md) | 50 | `result-track:33c87c407d1eaef0a2f72a57fe88ce65cd280e62ba2197bf7e41fcfb0a94091b` |
+| 5 | `theorem` | [quotient_iff_le_ker_natCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPQuotientKerIntAlgebraMapEqSpan.lean/declarations/quotient-iff-le-ker-natcast.md) | 57 | `result-track:3cff4759aa8d78c06afbfc2890344bb979e0dbf07beff12161668e508f49c2a4` |
+| 6 | `theorem` | [Ideal.Quotient.index_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPQuotientKerIntAlgebraMapEqSpan.lean/declarations/ideal-quotient-index-eq-zero.md) | 63 | `result-track:13030ba8b076be36ca42aae25d067623771fc87c4db2559f120b23196bd73b9c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

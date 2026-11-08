@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupZeroAtInfty.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupZeroAtInfty.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupZeroAtInfty.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupZeroAtInfty.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [ZeroAtInftyContinuousMapClass.norm_le](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupZeroAtInfty.lean/declarations/zeroatinftycontinuousmapclass-norm-le.md) | 24 | `result-track:66e192f2b33ffabc6eaf4c39d91804c6576718a4ece8ef2a66e133b3b1ae2e63` |
-| 2 | `theorem` | [zero_at_infty_of_norm_le](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupZeroAtInfty.lean/declarations/zero-at-infty-of-norm-le.md) | 38 | `result-track:b212a2541d42fc320ff938dd29e31a21b22e8db70603c5bec3b9608965da3b88` |
+| 1 | `theorem` | [ZeroAtInftyContinuousMapClass.norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupZeroAtInfty.lean/declarations/zeroatinftycontinuousmapclass-norm-le.md) | 24 | `result-track:66e192f2b33ffabc6eaf4c39d91804c6576718a4ece8ef2a66e133b3b1ae2e63` |
+| 2 | `theorem` | [zero_at_infty_of_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupZeroAtInfty.lean/declarations/zero-at-infty-of-norm-le.md) | 38 | `result-track:b212a2541d42fc320ff938dd29e31a21b22e8db70603c5bec3b9608965da3b88` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

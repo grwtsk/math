@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ControllerScheduleFullAudit.lean/index.md) · [Full source](../../../../GeneralTopology/ControllerScheduleFullAudit.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ControllerScheduleFullAudit.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ControllerScheduleFullAudit.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,17 +57,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [cumulativeCost](../../../../GeneralTopology/ControllerScheduleFullAudit.lean/declarations/cumulativecost.md) | 17 | `declaration-track:bee74e50e26c5502653e5b78997c973090adccfa8f6388c71e90269094bad586` |
-| 2 | `def` | [controllerAlpha](../../../../GeneralTopology/ControllerScheduleFullAudit.lean/declarations/controlleralpha.md) | 21 | `declaration-track:b5eb70315d5501dab7e6a2791fd2a5f9bee4d98a8db0a00487f93870ff8b2152` |
-| 3 | `theorem` | [cumulativeCost_nonneg](../../../../GeneralTopology/ControllerScheduleFullAudit.lean/declarations/cumulativecost-nonneg.md) | 25 | `result-track:c34cad14034257a916df748896c5cd5a89fa64181430610303e5e7569e8548ff` |
-| 4 | `theorem` | [cumulativeCost_monotone](../../../../GeneralTopology/ControllerScheduleFullAudit.lean/declarations/cumulativecost-monotone.md) | 29 | `result-track:f8632939f54f1a63c6a708c0d1bfad63330df69a012a33c4c99ef572c4d9c751` |
-| 5 | `theorem` | [controllerAlpha_pos](../../../../GeneralTopology/ControllerScheduleFullAudit.lean/declarations/controlleralpha-pos.md) | 35 | `result-track:7a5e38d3e9d041f13749ca6f357c511e9f0f609d3cfa07242c212d0abfc8b801` |
-| 6 | `theorem` | [controllerAlpha_strictAntiOn](../../../../GeneralTopology/ControllerScheduleFullAudit.lean/declarations/controlleralpha-strictantion.md) | 43 | `result-track:77ba8fc5701b17014530b16069d546350ef1d6342636c981faaf4d7ea80630db` |
-| 7 | `theorem` | [controllerAlpha_le_one_div](../../../../GeneralTopology/ControllerScheduleFullAudit.lean/declarations/controlleralpha-le-one-div.md) | 57 | `result-track:6bbf1a3713bf0e723d76208ce4cbb62a743b82d91b4a94d0c81ad52f284b5e77` |
-| 8 | `theorem` | [controllerAlpha_input_cost_le](../../../../GeneralTopology/ControllerScheduleFullAudit.lean/declarations/controlleralpha-input-cost-le.md) | 66 | `result-track:1b041a96e3b83d87f49ffb94c7cf3d38a70fac2e39ec8397c771a753d87a0d09` |
-| 9 | `theorem` | [controllerAlpha_tendsto_zero](../../../../GeneralTopology/ControllerScheduleFullAudit.lean/declarations/controlleralpha-tendsto-zero.md) | 79 | `result-track:e074c30d588654a22a2cca388de712219b7c2b2956989fb5694631f40d60950c` |
-| 10 | `theorem` | [sourceMass_controllerAlpha_le](../../../../GeneralTopology/ControllerScheduleFullAudit.lean/declarations/sourcemass-controlleralpha-le.md) | 90 | `result-track:d7645fcb44f4ee6667140c378070043586377a61c0dad10117b3a1fe0ab8df98` |
-| 11 | `theorem` | [sourceMass_controllerAlpha_tendsto_zero](../../../../GeneralTopology/ControllerScheduleFullAudit.lean/declarations/sourcemass-controlleralpha-tendsto-zero.md) | 99 | `result-track:081b1105959d64a07ea8e239cf77137b4e632328763c2067e29aecd261b68b3e` |
+| 1 | `def` | [cumulativeCost](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ControllerScheduleFullAudit.lean/declarations/cumulativecost.md) | 17 | `declaration-track:bee74e50e26c5502653e5b78997c973090adccfa8f6388c71e90269094bad586` |
+| 2 | `def` | [controllerAlpha](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ControllerScheduleFullAudit.lean/declarations/controlleralpha.md) | 21 | `declaration-track:b5eb70315d5501dab7e6a2791fd2a5f9bee4d98a8db0a00487f93870ff8b2152` |
+| 3 | `theorem` | [cumulativeCost_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ControllerScheduleFullAudit.lean/declarations/cumulativecost-nonneg.md) | 25 | `result-track:c34cad14034257a916df748896c5cd5a89fa64181430610303e5e7569e8548ff` |
+| 4 | `theorem` | [cumulativeCost_monotone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ControllerScheduleFullAudit.lean/declarations/cumulativecost-monotone.md) | 29 | `result-track:f8632939f54f1a63c6a708c0d1bfad63330df69a012a33c4c99ef572c4d9c751` |
+| 5 | `theorem` | [controllerAlpha_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ControllerScheduleFullAudit.lean/declarations/controlleralpha-pos.md) | 35 | `result-track:7a5e38d3e9d041f13749ca6f357c511e9f0f609d3cfa07242c212d0abfc8b801` |
+| 6 | `theorem` | [controllerAlpha_strictAntiOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ControllerScheduleFullAudit.lean/declarations/controlleralpha-strictantion.md) | 43 | `result-track:77ba8fc5701b17014530b16069d546350ef1d6342636c981faaf4d7ea80630db` |
+| 7 | `theorem` | [controllerAlpha_le_one_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ControllerScheduleFullAudit.lean/declarations/controlleralpha-le-one-div.md) | 57 | `result-track:6bbf1a3713bf0e723d76208ce4cbb62a743b82d91b4a94d0c81ad52f284b5e77` |
+| 8 | `theorem` | [controllerAlpha_input_cost_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ControllerScheduleFullAudit.lean/declarations/controlleralpha-input-cost-le.md) | 66 | `result-track:1b041a96e3b83d87f49ffb94c7cf3d38a70fac2e39ec8397c771a753d87a0d09` |
+| 9 | `theorem` | [controllerAlpha_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ControllerScheduleFullAudit.lean/declarations/controlleralpha-tendsto-zero.md) | 79 | `result-track:e074c30d588654a22a2cca388de712219b7c2b2956989fb5694631f40d60950c` |
+| 10 | `theorem` | [sourceMass_controllerAlpha_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ControllerScheduleFullAudit.lean/declarations/sourcemass-controlleralpha-le.md) | 90 | `result-track:d7645fcb44f4ee6667140c378070043586377a61c0dad10117b3a1fe0ab8df98` |
+| 11 | `theorem` | [sourceMass_controllerAlpha_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ControllerScheduleFullAudit.lean/declarations/sourcemass-controlleralpha-tendsto-zero.md) | 99 | `result-track:081b1105959d64a07ea8e239cf77137b4e632328763c2067e29aecd261b68b3e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

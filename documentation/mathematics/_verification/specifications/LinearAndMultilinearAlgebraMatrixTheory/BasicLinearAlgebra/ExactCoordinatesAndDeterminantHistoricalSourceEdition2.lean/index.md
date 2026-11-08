@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExactCoordinatesAndDeterminantHistoricalSourceEdition2.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExactCoordinatesAndDeterminantHistoricalSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExactCoordinatesAndDeterminantHistoricalSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExactCoordinatesAndDeterminantHistoricalSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.LinearAlgebra.SchrodingerTransfer`](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SchrodingerTransferHistoricalSourceEdition2.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Algebra.LinearAlgebra.SchrodingerTransfer`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SchrodingerTransferHistoricalSourceEdition2.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExactCoordinatesAndDeterminantHistoricalSourceEdition2.lean/declarations/example.md) | 3 | `declaration-track:0405332b142968646a686f13aeda7573ca3083d3f9fa212c125236bcc96b6f57` |
-| 2 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExactCoordinatesAndDeterminantHistoricalSourceEdition2.lean/declarations/example-source-edition-2.md) | 4 | `declaration-track:40833d4bdb9bd8e3ec98fc67f0a9ff7e082a0d92d5ca39c81842369f15d003e8` |
-| 3 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExactCoordinatesAndDeterminantHistoricalSourceEdition2.lean/declarations/example-source-edition-3.md) | 5 | `declaration-track:6acd2a6bd37873c33c3679eda22d7bfd169d7ceff1d3e24f6cea3c031e6d3af9` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExactCoordinatesAndDeterminantHistoricalSourceEdition2.lean/declarations/example.md) | 3 | `declaration-track:0405332b142968646a686f13aeda7573ca3083d3f9fa212c125236bcc96b6f57` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExactCoordinatesAndDeterminantHistoricalSourceEdition2.lean/declarations/example-source-edition-2.md) | 4 | `declaration-track:40833d4bdb9bd8e3ec98fc67f0a9ff7e082a0d92d5ca39c81842369f15d003e8` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExactCoordinatesAndDeterminantHistoricalSourceEdition2.lean/declarations/example-source-edition-3.md) | 5 | `declaration-track:6acd2a6bd37873c33c3679eda22d7bfd169d7ceff1d3e24f6cea3c031e6d3af9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

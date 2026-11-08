@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ClopenBoxNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/ClopenBoxNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ClopenBoxNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ClopenBoxNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,12 +60,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_prod_subset](../../../../GeneralTopology/ClopenBoxNamespaced.lean/declarations/exists-prod-subset.md) | 48 | `result-track:437b061351db45a2600554f3c21c5cff52b633968c19388c4957a6d0ffae72aa` |
-| 2 | `theorem` | [exists_finset_eq_sup_prod](../../../../GeneralTopology/ClopenBoxNamespaced.lean/declarations/exists-finset-eq-sup-prod.md) | 62 | `result-track:6bad17c571a0824ba1de7599808373b9c3412178015524c65ece1630b73ab53e` |
-| 3 | `lemma` | [surjective_finset_sup_prod](../../../../GeneralTopology/ClopenBoxNamespaced.lean/declarations/surjective-finset-sup-prod.md) | 75 | `result-track:b08851d688397dfb436f2d39a6717d16abff0d546fd5e5b03fcb01eefc034f11` |
-| 4 | `instance` | [countable_prod](../../../../GeneralTopology/ClopenBoxNamespaced.lean/declarations/countable-prod.md) | 79 | `declaration-track:d7eb7e897fac61c353ef7caf3a6191463b57db8bc512031330c2803eda4f07dc` |
-| 5 | `instance` | [finite_prod](../../../../GeneralTopology/ClopenBoxNamespaced.lean/declarations/finite-prod.md) | 83 | `declaration-track:977bcafb59e8a59801af203ce2b12586e9263fec71480a7e5ff47d6aa6954dec` |
-| 6 | `lemma` | [countable_iff_secondCountable](../../../../GeneralTopology/ClopenBoxNamespaced.lean/declarations/countable-iff-secondcountable.md) | 89 | `result-track:9fcd8e46706eec5d7519c4ea5c576ffd1298f5c312293cea9f6718781370e589` |
+| 1 | `theorem` | [exists_prod_subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ClopenBoxNamespaced.lean/declarations/exists-prod-subset.md) | 48 | `result-track:437b061351db45a2600554f3c21c5cff52b633968c19388c4957a6d0ffae72aa` |
+| 2 | `theorem` | [exists_finset_eq_sup_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ClopenBoxNamespaced.lean/declarations/exists-finset-eq-sup-prod.md) | 62 | `result-track:6bad17c571a0824ba1de7599808373b9c3412178015524c65ece1630b73ab53e` |
+| 3 | `lemma` | [surjective_finset_sup_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ClopenBoxNamespaced.lean/declarations/surjective-finset-sup-prod.md) | 75 | `result-track:b08851d688397dfb436f2d39a6717d16abff0d546fd5e5b03fcb01eefc034f11` |
+| 4 | `instance` | [countable_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ClopenBoxNamespaced.lean/declarations/countable-prod.md) | 79 | `declaration-track:d7eb7e897fac61c353ef7caf3a6191463b57db8bc512031330c2803eda4f07dc` |
+| 5 | `instance` | [finite_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ClopenBoxNamespaced.lean/declarations/finite-prod.md) | 83 | `declaration-track:977bcafb59e8a59801af203ce2b12586e9263fec71480a7e5ff47d6aa6954dec` |
+| 6 | `lemma` | [countable_iff_secondCountable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ClopenBoxNamespaced.lean/declarations/countable-iff-secondcountable.md) | 89 | `result-track:9fcd8e46706eec5d7519c4ea5c576ffd1298f5c312293cea9f6718781370e589` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/DiffNamespacedEdition1.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/DiffNamespacedEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DiffNamespacedEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DiffNamespacedEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [DeclarationChange](../../../../../ComputerScience/AlgorithmsInComputerScience/DiffNamespacedEdition1.lean/declarations/declarationchange.md) | 17 | `declaration-track:750c35538c390e0b16bcc9694503ddb32cf9892b50ec4f31ed8e836340d1bb6e` |
-| 2 | `structure` | [DeclarationDiff](../../../../../ComputerScience/AlgorithmsInComputerScience/DiffNamespacedEdition1.lean/declarations/declarationdiff.md) | 34 | `declaration-track:2f360e6246000f81f6478a6123175001e5c135863734a29e750eae25f594319a` |
+| 1 | `inductive` | [DeclarationChange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DiffNamespacedEdition1.lean/declarations/declarationchange.md) | 17 | `declaration-track:750c35538c390e0b16bcc9694503ddb32cf9892b50ec4f31ed8e836340d1bb6e` |
+| 2 | `structure` | [DeclarationDiff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DiffNamespacedEdition1.lean/declarations/declarationdiff.md) | 34 | `declaration-track:2f360e6246000f81f6478a6123175001e5c135863734a29e750eae25f594319a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RationalSubspaceDescent.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RationalSubspaceDescent.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RationalSubspaceDescent.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RationalSubspaceDescent.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent`](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GaloisScalarDescent.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GaloisScalarDescent.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [AllConjugatesSubspaceWitness](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RationalSubspaceDescent.lean/declarations/allconjugatessubspacewitness.md) | 27 | `declaration-track:1bef935b5537db5d6fab2d721b79e5a2a9ec9770b4d5b1ad01cf47d20eb3ba63` |
-| 2 | `theorem` | [AllConjugatesSubspaceWitness.descends](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RationalSubspaceDescent.lean/declarations/allconjugatessubspacewitness-descends.md) | 37 | `result-track:4f7253b7575396b1e1d9d39bddacc8a2b9950aebfd2e65ed5b1cb843ac10dced` |
-| 3 | `structure` | [RationalSubspaceWitness](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RationalSubspaceDescent.lean/declarations/rationalsubspacewitness.md) | 47 | `declaration-track:412a76820fb66a381b4a69a58670751c1edc260c8d39c937a523ac5c50581ca7` |
-| 4 | `def` | [AllConjugatesSubspaceWitness.toRationalWitness](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RationalSubspaceDescent.lean/declarations/allconjugatessubspacewitness-torationalwitness.md) | 54 | `declaration-track:abf9ab8962d458db82afa1769509b710f0a34aa729d7d3793f6b799d33363fc4` |
+| 1 | `structure` | [AllConjugatesSubspaceWitness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RationalSubspaceDescent.lean/declarations/allconjugatessubspacewitness.md) | 27 | `declaration-track:1bef935b5537db5d6fab2d721b79e5a2a9ec9770b4d5b1ad01cf47d20eb3ba63` |
+| 2 | `theorem` | [AllConjugatesSubspaceWitness.descends](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RationalSubspaceDescent.lean/declarations/allconjugatessubspacewitness-descends.md) | 37 | `result-track:4f7253b7575396b1e1d9d39bddacc8a2b9950aebfd2e65ed5b1cb843ac10dced` |
+| 3 | `structure` | [RationalSubspaceWitness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RationalSubspaceDescent.lean/declarations/rationalsubspacewitness.md) | 47 | `declaration-track:412a76820fb66a381b4a69a58670751c1edc260c8d39c937a523ac5c50581ca7` |
+| 4 | `def` | [AllConjugatesSubspaceWitness.toRationalWitness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RationalSubspaceDescent.lean/declarations/allconjugatessubspacewitness-torationalwitness.md) | 54 | `declaration-track:abf9ab8962d458db82afa1769509b710f0a34aa729d7d3793f6b799d33363fc4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

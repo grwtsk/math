@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/FunPropBy.lean/index.md) · [Full source](../../../../MeasureAndIntegration/FunPropBy.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FunPropBy.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FunPropBy.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,10 +62,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../MeasureAndIntegration/FunPropBy.lean/declarations/example-source-edition-4.md) | 80 | `declaration-track:f20f884ed3a01c75d345674e7dd15dfb5633ab1961dd923eeb1a17689b817b0b` |
-| 2 | `example` | [(anonymous)](../../../../MeasureAndIntegration/FunPropBy.lean/declarations/example.md) | 113 | `declaration-track:8f00b5aed8f227648942ef3abcecfa6bdb5656d236c4278f116efc888487a66a` |
-| 3 | `example` | [(anonymous)](../../../../MeasureAndIntegration/FunPropBy.lean/declarations/example-source-edition-3.md) | 165 | `declaration-track:cc2d4298724d7aa83a906f95d3dc239522b9ab2c86c303afaae0dabff04db3dd` |
-| 4 | `example` | [(anonymous)](../../../../MeasureAndIntegration/FunPropBy.lean/declarations/example-source-edition-2.md) | 203 | `declaration-track:c469709143fa11c14cbd1fcd215ec12a06331c6a808cf4555dfade10910d8e85` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FunPropBy.lean/declarations/example-source-edition-4.md) | 80 | `declaration-track:f20f884ed3a01c75d345674e7dd15dfb5633ab1961dd923eeb1a17689b817b0b` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FunPropBy.lean/declarations/example.md) | 113 | `declaration-track:8f00b5aed8f227648942ef3abcecfa6bdb5656d236c4278f116efc888487a66a` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FunPropBy.lean/declarations/example-source-edition-3.md) | 165 | `declaration-track:cc2d4298724d7aa83a906f95d3dc239522b9ab2c86c303afaae0dabff04db3dd` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FunPropBy.lean/declarations/example-source-edition-2.md) | 203 | `declaration-track:c469709143fa11c14cbd1fcd215ec12a06331c6a808cf4555dfade10910d8e85` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

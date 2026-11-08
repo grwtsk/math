@@ -2,19 +2,19 @@
 
 <!-- BEGIN GENERATED MATHEMATICS NAVIGATION -->
 
-[Results index](../index.md) · [Up one directory](../index.md)
+[Results index](../../../../../index.md) · [Up one directory](../../../../../index.md)
 
 This directory groups existing source guides. Its storage name does not establish a reviewed semantic subject association.
 
 ## Complete source publication
 
-[Every source module and declaration](../complete-source-index.md). All source families and verification outcomes are included. Preview limits below do not limit catalogue membership.
+[Current Lean source folders by subject](../../../../../complete-source-index.md). All source families and verification outcomes are included. Preview limits below do not limit catalogue membership.
 
-[Every source beneath this directory](complete-source-index.md). This follows the complete source path hierarchy at this level.
+Every source beneath this directory (historical branch catalogue unavailable). The original branch catalogue is not present in the maintained tree.
 
 | Complete source branch | Modules | Declaration observations | Theorem/lemma occurrences |
 |---|---:|---:|---:|
-| [Spectral](complete-source-index.md) | 29 | 249 | 133 |
+| Spectral (historical branch catalogue unavailable) | 29 | 249 | 133 |
 
 Each source article links to its static verification target and scoped public evidence. Source observations do not establish elaborated declaration identities or proof acceptance. Source-path branches retain their original placement; semantic associations require review.
 
@@ -30,7 +30,7 @@ Counts deduplicate shared article identities. Verification coverage reports supp
 
 No article is currently placed or explicitly associated here. No score or theorem acceptance is inferred from the subject definition.
 
-[Ranking definition and weight profile](../../reference/ranking-profile.json) · [Article standard](../../reference/result-article-standard.md).
+[Ranking definition and weight profile](../../../ranking-profile.json) · [Article standard](../../../result-article-standard.md).
 Ranking profile: `spectral-volume-radius3-v1` · SHA-256 `72d348b5be89dd5aad88aeaac60d482693913193e74bf5bb87d0c156d5e876fa`.
 
 ## Immediate specializations and directories

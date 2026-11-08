@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/CertifiedLayerNamespaced.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/CertifiedLayerNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/CertifiedLayerNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/CertifiedLayerNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [CertificationResult](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/CertifiedLayerNamespaced.lean/declarations/certificationresult.md) | 24 | `declaration-track:bf6e9174ed9a2af3f884494a797fdba65439d655af47e54bcf5df38d4c8a1eab` |
-| 2 | `structure` | [CertifiedLayer](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/CertifiedLayerNamespaced.lean/declarations/certifiedlayer.md) | 33 | `declaration-track:622c16af801d2b4b2bb0e8b897e33cc7e7d663596376010d64cda8a89daf1916` |
-| 3 | `def` | [step](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/CertifiedLayerNamespaced.lean/declarations/step.md) | 52 | `declaration-track:d8c3bf85131493eedc1a98862c5da2af53ba784fcb6f37af0aeebd42ba6fc54f` |
-| 4 | `theorem` | [exact_state_preservation](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/CertifiedLayerNamespaced.lean/declarations/exact-state-preservation.md) | 59 | `result-track:f95c75d5257ce4c2efa98925592b7e68a9b18493e6123b7cab2c4945cd236d9c` |
+| 1 | `inductive` | [CertificationResult](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/CertifiedLayerNamespaced.lean/declarations/certificationresult.md) | 24 | `declaration-track:bf6e9174ed9a2af3f884494a797fdba65439d655af47e54bcf5df38d4c8a1eab` |
+| 2 | `structure` | [CertifiedLayer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/CertifiedLayerNamespaced.lean/declarations/certifiedlayer.md) | 33 | `declaration-track:622c16af801d2b4b2bb0e8b897e33cc7e7d663596376010d64cda8a89daf1916` |
+| 3 | `def` | [step](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/CertifiedLayerNamespaced.lean/declarations/step.md) | 52 | `declaration-track:d8c3bf85131493eedc1a98862c5da2af53ba784fcb6f37af0aeebd42ba6fc54f` |
+| 4 | `theorem` | [exact_state_preservation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/CertifiedLayerNamespaced.lean/declarations/exact-state-preservation.md) | 59 | `result-track:f95c75d5257ce4c2efa98925592b7e68a9b18493e6123b7cab2c4945cd236d9c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

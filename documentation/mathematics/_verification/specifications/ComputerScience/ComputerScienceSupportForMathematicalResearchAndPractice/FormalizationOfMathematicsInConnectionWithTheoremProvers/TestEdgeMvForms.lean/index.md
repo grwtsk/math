@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TestEdgeMvForms.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TestEdgeMvForms.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TestEdgeMvForms.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TestEdgeMvForms.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [edge_minimize_mv_and](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TestEdgeMvForms.lean/declarations/edge-minimize-mv-and.md) | 3 | `result-track:d27a715463e65e22906d0cbdaaeecb3c7c190d6ae752c8403ee539e9fd323f1f` |
-| 2 | `theorem` | [edge_minimize_mv_arrow](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TestEdgeMvForms.lean/declarations/edge-minimize-mv-arrow.md) | 10 | `result-track:3adcc8c4983f977427b7bd455080000473adf7dc2b7ff9b6b17f920e92500c24` |
-| 3 | `theorem` | [edge_maximize_mv_setof](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TestEdgeMvForms.lean/declarations/edge-maximize-mv-setof.md) | 17 | `result-track:bd778761e40438b09f1695704e0e82cc05ba3e0016e24c6854b41b4b0dfcb7a9` |
+| 1 | `theorem` | [edge_minimize_mv_and](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TestEdgeMvForms.lean/declarations/edge-minimize-mv-and.md) | 3 | `result-track:d27a715463e65e22906d0cbdaaeecb3c7c190d6ae752c8403ee539e9fd323f1f` |
+| 2 | `theorem` | [edge_minimize_mv_arrow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TestEdgeMvForms.lean/declarations/edge-minimize-mv-arrow.md) | 10 | `result-track:3adcc8c4983f977427b7bd455080000473adf7dc2b7ff9b6b17f920e92500c24` |
+| 3 | `theorem` | [edge_maximize_mv_setof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TestEdgeMvForms.lean/declarations/edge-maximize-mv-setof.md) | 17 | `result-track:bd778761e40438b09f1695704e0e82cc05ba3e0016e24c6854b41b4b0dfcb7a9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

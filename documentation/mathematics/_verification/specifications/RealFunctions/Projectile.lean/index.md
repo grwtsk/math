@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/Projectile.lean/index.md) · [Full source](../../../../RealFunctions/Projectile.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Projectile.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Projectile.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [vsq_upper](../../../../RealFunctions/Projectile.lean/declarations/vsq-upper.md) | 36 | `result-track:2856d7ebd71186a7acc7f35ec36e707f048b822d19cda49a8bb1bdca5241d0e1` |
-| 2 | `theorem` | [drag_accel_upper](../../../../RealFunctions/Projectile.lean/declarations/drag-accel-upper.md) | 41 | `result-track:96c6d3774c0a2d10d5fe28dd120e5dd4933ca3abba9182d8574408cd7abe5770` |
-| 3 | `theorem` | [drag_nonneg](../../../../RealFunctions/Projectile.lean/declarations/drag-nonneg.md) | 46 | `result-track:bffa6d950b4258d5fe556b33fdf737b8abb10e4ef558bbbef086be41c14b2aad` |
-| 4 | `theorem` | [net_accel_lower](../../../../RealFunctions/Projectile.lean/declarations/net-accel-lower.md) | 63 | `result-track:13e41eae44663763385c2f26b8f50c43924c9a682e34d9fce8a2cae9312d990f` |
-| 5 | `theorem` | [net_accel_upper](../../../../RealFunctions/Projectile.lean/declarations/net-accel-upper.md) | 67 | `result-track:c17c8fca3aaa5907d514bf3d40263645aed876f5d557408d0e4705b6c5aed5d0` |
-| 6 | `theorem` | [kinetic_energy_upper](../../../../RealFunctions/Projectile.lean/declarations/kinetic-energy-upper.md) | 80 | `result-track:fd987cd5bb2ed4c00a35a270563c2517ae4d730b705b50fdb7973079a294fd08` |
-| 7 | `theorem` | [exp_decay_lower](../../../../RealFunctions/Projectile.lean/declarations/exp-decay-lower.md) | 92 | `result-track:92956ee982c56bce4f0e67b2971108ee476f406330827a3b28d7b30ec8979909` |
-| 8 | `theorem` | [exp_decay_upper](../../../../RealFunctions/Projectile.lean/declarations/exp-decay-upper.md) | 96 | `result-track:5b06eb16daf210a56680d1062a4d83c04e4a625a94f6141813a7d71a218b318d` |
+| 1 | `theorem` | [vsq_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Projectile.lean/declarations/vsq-upper.md) | 36 | `result-track:2856d7ebd71186a7acc7f35ec36e707f048b822d19cda49a8bb1bdca5241d0e1` |
+| 2 | `theorem` | [drag_accel_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Projectile.lean/declarations/drag-accel-upper.md) | 41 | `result-track:96c6d3774c0a2d10d5fe28dd120e5dd4933ca3abba9182d8574408cd7abe5770` |
+| 3 | `theorem` | [drag_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Projectile.lean/declarations/drag-nonneg.md) | 46 | `result-track:bffa6d950b4258d5fe556b33fdf737b8abb10e4ef558bbbef086be41c14b2aad` |
+| 4 | `theorem` | [net_accel_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Projectile.lean/declarations/net-accel-lower.md) | 63 | `result-track:13e41eae44663763385c2f26b8f50c43924c9a682e34d9fce8a2cae9312d990f` |
+| 5 | `theorem` | [net_accel_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Projectile.lean/declarations/net-accel-upper.md) | 67 | `result-track:c17c8fca3aaa5907d514bf3d40263645aed876f5d557408d0e4705b6c5aed5d0` |
+| 6 | `theorem` | [kinetic_energy_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Projectile.lean/declarations/kinetic-energy-upper.md) | 80 | `result-track:fd987cd5bb2ed4c00a35a270563c2517ae4d730b705b50fdb7973079a294fd08` |
+| 7 | `theorem` | [exp_decay_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Projectile.lean/declarations/exp-decay-lower.md) | 92 | `result-track:92956ee982c56bce4f0e67b2971108ee476f406330827a3b28d7b30ec8979909` |
+| 8 | `theorem` | [exp_decay_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Projectile.lean/declarations/exp-decay-upper.md) | 96 | `result-track:5b06eb16daf210a56680d1062a4d83c04e4a625a94f6141813a7d71a218b318d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

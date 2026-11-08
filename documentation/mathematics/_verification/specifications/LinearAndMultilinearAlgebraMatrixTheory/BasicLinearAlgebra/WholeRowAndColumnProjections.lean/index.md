@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WholeRowAndColumnProjections.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WholeRowAndColumnProjections.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WholeRowAndColumnProjections.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WholeRowAndColumnProjections.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [FixedMatrixRingState](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WholeRowAndColumnProjections.lean/declarations/fixedmatrixringstate.md) | 34 | `declaration-track:1ef8beccb609c13df2c2b1c0688030ef8e6546dc9849859881a791af9bd3a9bd` |
-| 2 | `def` | [selectedRowsObservation](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WholeRowAndColumnProjections.lean/declarations/selectedrowsobservation.md) | 39 | `declaration-track:a86e0c24bb486731ae08562b64820bb5aec0549e3f44e69337276d71a2c31a0f` |
-| 3 | `def` | [selectedColumnsObservation](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WholeRowAndColumnProjections.lean/declarations/selectedcolumnsobservation.md) | 46 | `declaration-track:e6eb7f7f8ce5198e0321310b72f2a749eb95e6ea10c63eb3ab0f1703bc5694d4` |
+| 1 | `abbrev` | [FixedMatrixRingState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WholeRowAndColumnProjections.lean/declarations/fixedmatrixringstate.md) | 34 | `declaration-track:1ef8beccb609c13df2c2b1c0688030ef8e6546dc9849859881a791af9bd3a9bd` |
+| 2 | `def` | [selectedRowsObservation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WholeRowAndColumnProjections.lean/declarations/selectedrowsobservation.md) | 39 | `declaration-track:a86e0c24bb486731ae08562b64820bb5aec0549e3f44e69337276d71a2c31a0f` |
+| 3 | `def` | [selectedColumnsObservation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WholeRowAndColumnProjections.lean/declarations/selectedcolumnsobservation.md) | 46 | `declaration-track:e6eb7f7f8ce5198e0321310b72f2a749eb95e6ea10c63eb3ab0f1703bc5694d4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

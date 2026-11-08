@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NoninterferenceNamespacedNodeProfile.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NoninterferenceNamespacedNodeProfile.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NoninterferenceNamespacedNodeProfile.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NoninterferenceNamespacedNodeProfile.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [NodeProfile.withPresentation](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NoninterferenceNamespacedNodeProfile.lean/declarations/nodeprofile-withpresentation.md) | 13 | `declaration-track:6b57ea82d367ba39e17ae47bbc6b5185e6ddbf2195ec3e4613b18f489fce4be7` |
-| 2 | `theorem` | [presentation_preserves_capacity_reference](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NoninterferenceNamespacedNodeProfile.lean/declarations/presentation-preserves-capacity-reference.md) | 23 | `result-track:a3c6c2dbec8edb89a5c3aa0af4c95a37b7ad2735b7c25dba8c7c4e85fc38304e` |
-| 3 | `theorem` | [presentation_has_no_authoritative_effect](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NoninterferenceNamespacedNodeProfile.lean/declarations/presentation-has-no-authoritative-effect.md) | 30 | `result-track:ee5056bfb4f763245b79644000aed929af9ddd75e4e09d0a3e7ae15463382f4a` |
+| 1 | `def` | [NodeProfile.withPresentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NoninterferenceNamespacedNodeProfile.lean/declarations/nodeprofile-withpresentation.md) | 13 | `declaration-track:6b57ea82d367ba39e17ae47bbc6b5185e6ddbf2195ec3e4613b18f489fce4be7` |
+| 2 | `theorem` | [presentation_preserves_capacity_reference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NoninterferenceNamespacedNodeProfile.lean/declarations/presentation-preserves-capacity-reference.md) | 23 | `result-track:a3c6c2dbec8edb89a5c3aa0af4c95a37b7ad2735b7c25dba8c7c4e85fc38304e` |
+| 3 | `theorem` | [presentation_has_no_authoritative_effect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NoninterferenceNamespacedNodeProfile.lean/declarations/presentation-has-no-authoritative-effect.md) | 30 | `result-track:ee5056bfb4f763245b79644000aed929af9ddd75e4e09d0a3e7ae15463382f4a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

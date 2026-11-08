@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PrimeSpokesNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PrimeSpokesNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PrimeSpokesNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PrimeSpokesNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,12 +61,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FinitePrimeSpoke](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PrimeSpokesNamespaced.lean/declarations/finiteprimespoke.md) | 32 | `declaration-track:84f2673446dca5c4b255293a83f34e0ce617a018f4d2947a0e64a1c8bf95bbaa` |
-| 2 | `def` | [FinitePrimeSpoke.characterValue](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PrimeSpokesNamespaced.lean/declarations/finiteprimespoke-charactervalue.md) | 40 | `declaration-track:2e384334748b2d843744f9acd4af102de3e451eb23a9731aebb7cfc6fcb89ca9` |
-| 3 | `def` | [finitePrimeSpokeBlock](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PrimeSpokesNamespaced.lean/declarations/finiteprimespokeblock.md) | 46 | `declaration-track:44ba96f895afa58c3a35719b91117c73ed6b1058ac7858d7b4e59b32068e690d` |
-| 4 | `theorem` | [finitePrimeSpokeBlock_selfAdjoint](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PrimeSpokesNamespaced.lean/declarations/finiteprimespokeblock-selfadjoint.md) | 52 | `result-track:393051db14b7a63884422ed647452e5261bd8682d49a1d465c68b3e4bbdb99c5` |
-| 5 | `def` | [finitePrimeSpokeOperator](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PrimeSpokesNamespaced.lean/declarations/finiteprimespokeoperator.md) | 63 | `declaration-track:98d7d9155f87f3b6b189497fdc0dfda1632044dbbd0ee8c915909dd67eb6935a` |
-| 6 | `theorem` | [finitePrimeSpokeOperator_selfAdjoint](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PrimeSpokesNamespaced.lean/declarations/finiteprimespokeoperator-selfadjoint.md) | 70 | `result-track:82cfc2e373f07d072d465f8a0ead32c64705fd1dc4bab1287766215a121b1bd3` |
+| 1 | `structure` | [FinitePrimeSpoke](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PrimeSpokesNamespaced.lean/declarations/finiteprimespoke.md) | 32 | `declaration-track:84f2673446dca5c4b255293a83f34e0ce617a018f4d2947a0e64a1c8bf95bbaa` |
+| 2 | `def` | [FinitePrimeSpoke.characterValue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PrimeSpokesNamespaced.lean/declarations/finiteprimespoke-charactervalue.md) | 40 | `declaration-track:2e384334748b2d843744f9acd4af102de3e451eb23a9731aebb7cfc6fcb89ca9` |
+| 3 | `def` | [finitePrimeSpokeBlock](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PrimeSpokesNamespaced.lean/declarations/finiteprimespokeblock.md) | 46 | `declaration-track:44ba96f895afa58c3a35719b91117c73ed6b1058ac7858d7b4e59b32068e690d` |
+| 4 | `theorem` | [finitePrimeSpokeBlock_selfAdjoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PrimeSpokesNamespaced.lean/declarations/finiteprimespokeblock-selfadjoint.md) | 52 | `result-track:393051db14b7a63884422ed647452e5261bd8682d49a1d465c68b3e4bbdb99c5` |
+| 5 | `def` | [finitePrimeSpokeOperator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PrimeSpokesNamespaced.lean/declarations/finiteprimespokeoperator.md) | 63 | `declaration-track:98d7d9155f87f3b6b189497fdc0dfda1632044dbbd0ee8c915909dd67eb6935a` |
+| 6 | `theorem` | [finitePrimeSpokeOperator_selfAdjoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PrimeSpokesNamespaced.lean/declarations/finiteprimespokeoperator-selfadjoint.md) | 70 | `result-track:82cfc2e373f07d072d465f8a0ead32c64705fd1dc4bab1287766215a121b1bd3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

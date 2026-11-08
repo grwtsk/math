@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ModuleRecordNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ModuleRecordNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ModuleRecordNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ModuleRecordNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -67,10 +67,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ImportRecord](../../../../../ComputerScience/AlgorithmsInComputerScience/ModuleRecordNamespaced.lean/declarations/importrecord.md) | 28 | `declaration-track:c0b7da17333ae90af26c430e056fbb58f1ca0f2b228544426fa7aee24a5c6dbb` |
-| 2 | `structure` | [EffectiveImportRecord](../../../../../ComputerScience/AlgorithmsInComputerScience/ModuleRecordNamespaced.lean/declarations/effectiveimportrecord.md) | 38 | `declaration-track:6c31603637dd6ba6d4d46468c4610c1999f0afc3179d940fefbfb2a2eca7d2d2` |
-| 3 | `structure` | [DeprecationRecord](../../../../../ComputerScience/AlgorithmsInComputerScience/ModuleRecordNamespaced.lean/declarations/deprecationrecord.md) | 49 | `declaration-track:9134ce37efc804e3d84b5c466451c1465941918b5b1726ea4862001e295f30a7` |
-| 4 | `structure` | [ModuleRecord](../../../../../ComputerScience/AlgorithmsInComputerScience/ModuleRecordNamespaced.lean/declarations/modulerecord.md) | 55 | `declaration-track:8a7aada558b38de632a13fd4c67e8b14a4aff18df0546dc574155fc4ebe118f8` |
+| 1 | `structure` | [ImportRecord](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ModuleRecordNamespaced.lean/declarations/importrecord.md) | 28 | `declaration-track:c0b7da17333ae90af26c430e056fbb58f1ca0f2b228544426fa7aee24a5c6dbb` |
+| 2 | `structure` | [EffectiveImportRecord](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ModuleRecordNamespaced.lean/declarations/effectiveimportrecord.md) | 38 | `declaration-track:6c31603637dd6ba6d4d46468c4610c1999f0afc3179d940fefbfb2a2eca7d2d2` |
+| 3 | `structure` | [DeprecationRecord](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ModuleRecordNamespaced.lean/declarations/deprecationrecord.md) | 49 | `declaration-track:9134ce37efc804e3d84b5c466451c1465941918b5b1726ea4862001e295f30a7` |
+| 4 | `structure` | [ModuleRecord](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ModuleRecordNamespaced.lean/declarations/modulerecord.md) | 55 | `declaration-track:8a7aada558b38de632a13fd4c67e8b14a4aff18df0546dc574155fc4ebe118f8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

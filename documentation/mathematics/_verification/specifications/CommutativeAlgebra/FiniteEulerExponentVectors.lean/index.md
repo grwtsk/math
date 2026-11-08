@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/FiniteEulerExponentVectors.lean/index.md) · [Full source](../../../../CommutativeAlgebra/FiniteEulerExponentVectors.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiniteEulerExponentVectors.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiniteEulerExponentVectors.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ExponentVector](../../../../CommutativeAlgebra/FiniteEulerExponentVectors.lean/declarations/exponentvector.md) | 16 | `declaration-track:0c9d770787f4f7f1b59ce8b9d86e3529bea3b60e827c1cb23dca3d42d6782b95` |
-| 2 | `instance` | [exponentVectorFintype](../../../../CommutativeAlgebra/FiniteEulerExponentVectors.lean/declarations/exponentvectorfintype.md) | 21 | `declaration-track:3c586284b35ffbd3330aed0cb4d90bf98b836f52b9d84acf46fbb8e87a5fe725` |
-| 3 | `instance` | [exponentVectorDecidableEq](../../../../CommutativeAlgebra/FiniteEulerExponentVectors.lean/declarations/exponentvectordecidableeq.md) | 28 | `declaration-track:c80dc419eafa4e88f5f1daaee80f791a6eb906b6368382dc4be821f726a8cd42` |
-| 4 | `def` | [exponentVectorWeightReal](../../../../CommutativeAlgebra/FiniteEulerExponentVectors.lean/declarations/exponentvectorweightreal.md) | 35 | `declaration-track:1fe598b17326de352c21ecc40b0135ca76570f6715515c2acceabd0b1af5bbcc` |
-| 5 | `theorem` | [finiteZetaEulerFactorReal_eq_fin_sum](../../../../CommutativeAlgebra/FiniteEulerExponentVectors.lean/declarations/finitezetaeulerfactorreal-eq-fin-sum.md) | 43 | `result-track:351443d1ab5296412b937fdda77395e28a6d97be2f2d1be24a7c840b46d2ebc9` |
-| 6 | `theorem` | [finite_product_sum_expansion_subtype](../../../../CommutativeAlgebra/FiniteEulerExponentVectors.lean/declarations/finite-product-sum-expansion-subtype.md) | 52 | `result-track:d81c1cfcaac62dff6d5ad118f2e0a4b34b493e25c2c108737135e68ce1ce9ed9` |
-| 7 | `theorem` | [finiteZetaEulerProductReal_expands_exponent_vectors](../../../../CommutativeAlgebra/FiniteEulerExponentVectors.lean/declarations/finitezetaeulerproductreal-expands-exponent-vectors.md) | 76 | `result-track:edc2b5acbe56626ea50720ee2a5fefe8b0ca76adf8f4ab2739e5a37b1e07aaff` |
+| 1 | `def` | [ExponentVector](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiniteEulerExponentVectors.lean/declarations/exponentvector.md) | 16 | `declaration-track:0c9d770787f4f7f1b59ce8b9d86e3529bea3b60e827c1cb23dca3d42d6782b95` |
+| 2 | `instance` | [exponentVectorFintype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiniteEulerExponentVectors.lean/declarations/exponentvectorfintype.md) | 21 | `declaration-track:3c586284b35ffbd3330aed0cb4d90bf98b836f52b9d84acf46fbb8e87a5fe725` |
+| 3 | `instance` | [exponentVectorDecidableEq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiniteEulerExponentVectors.lean/declarations/exponentvectordecidableeq.md) | 28 | `declaration-track:c80dc419eafa4e88f5f1daaee80f791a6eb906b6368382dc4be821f726a8cd42` |
+| 4 | `def` | [exponentVectorWeightReal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiniteEulerExponentVectors.lean/declarations/exponentvectorweightreal.md) | 35 | `declaration-track:1fe598b17326de352c21ecc40b0135ca76570f6715515c2acceabd0b1af5bbcc` |
+| 5 | `theorem` | [finiteZetaEulerFactorReal_eq_fin_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiniteEulerExponentVectors.lean/declarations/finitezetaeulerfactorreal-eq-fin-sum.md) | 43 | `result-track:351443d1ab5296412b937fdda77395e28a6d97be2f2d1be24a7c840b46d2ebc9` |
+| 6 | `theorem` | [finite_product_sum_expansion_subtype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiniteEulerExponentVectors.lean/declarations/finite-product-sum-expansion-subtype.md) | 52 | `result-track:d81c1cfcaac62dff6d5ad118f2e0a4b34b493e25c2c108737135e68ce1ce9ed9` |
+| 7 | `theorem` | [finiteZetaEulerProductReal_expands_exponent_vectors](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiniteEulerExponentVectors.lean/declarations/finitezetaeulerproductreal-expands-exponent-vectors.md) | 76 | `result-track:edc2b5acbe56626ea50720ee2a5fefe8b0ca76adf8f4ab2739e5a37b1e07aaff` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

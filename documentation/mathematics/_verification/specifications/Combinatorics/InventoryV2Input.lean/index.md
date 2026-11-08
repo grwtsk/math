@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/InventoryV2Input.lean/index.md) · [Full source](../../../../Combinatorics/InventoryV2Input.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/InventoryV2Input.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/InventoryV2Input.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [HigherIndex](../../../../Combinatorics/InventoryV2Input.lean/declarations/higherindex.md) | 7 | `declaration-track:c0307265cdb4d3054f8ebb14e64c50092df3ca7f8285e0008cb69649a2139641` |
-| 2 | `def` | [atomNatural](../../../../Combinatorics/InventoryV2Input.lean/declarations/atomnatural.md) | 9 | `declaration-track:aa890269994ec88ecfabfe14efd7413c1300281784e6b9b2d7dc0f821931460b` |
-| 3 | `theorem` | [atomNatural_injective](../../../../Combinatorics/InventoryV2Input.lean/declarations/atomnatural-injective.md) | 11 | `result-track:847ef67ea4a2419ac6bf58ad541beaa405c7404b86b02afc9784da6deec46701` |
-| 4 | `theorem` | [prime_of_mem](../../../../Combinatorics/InventoryV2Input.lean/declarations/prime-of-mem.md) | 20 | `result-track:3a5b41d61ed917b73e2a927b71bbc9c91b55e4ea980ec6d81d7dbab92b9cb72b` |
-| 5 | `theorem` | [exponent_of_mem](../../../../Combinatorics/InventoryV2Input.lean/declarations/exponent-of-mem.md) | 24 | `result-track:cb75612d929569c6e716f4a4d0d539ec21f6f15ffea6ed1dacc631a57b56c7a1` |
-| 6 | `def` | [inventoryIndex](../../../../Combinatorics/InventoryV2Input.lean/declarations/inventoryindex.md) | 28 | `declaration-track:c6a9a131629a877fb1dad2273374ca7fc0038b8d529cedb401e66a7867e2857a` |
-| 7 | `def` | [atomInventory](../../../../Combinatorics/InventoryV2Input.lean/declarations/atominventory.md) | 31 | `declaration-track:b6fc7fd5c01ecf16939f48156de1158cff5412a13888f6432dd167eb5d2eb59f` |
-| 8 | `theorem` | [inventoryIndex_natural](../../../../Combinatorics/InventoryV2Input.lean/declarations/inventoryindex-natural.md) | 35 | `result-track:b4ea9715b4aeae6db9f2ed628c9e858febba0f2465ccba63852edb83ab0ff93b` |
-| 9 | `theorem` | [atomNatural_mem_inventory_iff](../../../../Combinatorics/InventoryV2Input.lean/declarations/atomnatural-mem-inventory-iff.md) | 42 | `result-track:10b5a8bf5c2197e35429c502cc11060e770ddc925544cd99890bf04a10121fc4` |
-| 10 | `theorem` | [mem_atomInventory_iff](../../../../Combinatorics/InventoryV2Input.lean/declarations/mem-atominventory-iff.md) | 66 | `result-track:bb0b3911557194798bcdee5d055266fc9225b8a028256d4a5ad3665506626634` |
+| 1 | `abbrev` | [HigherIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/InventoryV2Input.lean/declarations/higherindex.md) | 7 | `declaration-track:c0307265cdb4d3054f8ebb14e64c50092df3ca7f8285e0008cb69649a2139641` |
+| 2 | `def` | [atomNatural](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/InventoryV2Input.lean/declarations/atomnatural.md) | 9 | `declaration-track:aa890269994ec88ecfabfe14efd7413c1300281784e6b9b2d7dc0f821931460b` |
+| 3 | `theorem` | [atomNatural_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/InventoryV2Input.lean/declarations/atomnatural-injective.md) | 11 | `result-track:847ef67ea4a2419ac6bf58ad541beaa405c7404b86b02afc9784da6deec46701` |
+| 4 | `theorem` | [prime_of_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/InventoryV2Input.lean/declarations/prime-of-mem.md) | 20 | `result-track:3a5b41d61ed917b73e2a927b71bbc9c91b55e4ea980ec6d81d7dbab92b9cb72b` |
+| 5 | `theorem` | [exponent_of_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/InventoryV2Input.lean/declarations/exponent-of-mem.md) | 24 | `result-track:cb75612d929569c6e716f4a4d0d539ec21f6f15ffea6ed1dacc631a57b56c7a1` |
+| 6 | `def` | [inventoryIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/InventoryV2Input.lean/declarations/inventoryindex.md) | 28 | `declaration-track:c6a9a131629a877fb1dad2273374ca7fc0038b8d529cedb401e66a7867e2857a` |
+| 7 | `def` | [atomInventory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/InventoryV2Input.lean/declarations/atominventory.md) | 31 | `declaration-track:b6fc7fd5c01ecf16939f48156de1158cff5412a13888f6432dd167eb5d2eb59f` |
+| 8 | `theorem` | [inventoryIndex_natural](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/InventoryV2Input.lean/declarations/inventoryindex-natural.md) | 35 | `result-track:b4ea9715b4aeae6db9f2ed628c9e858febba0f2465ccba63852edb83ab0ff93b` |
+| 9 | `theorem` | [atomNatural_mem_inventory_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/InventoryV2Input.lean/declarations/atomnatural-mem-inventory-iff.md) | 42 | `result-track:10b5a8bf5c2197e35429c502cc11060e770ddc925544cd99890bf04a10121fc4` |
+| 10 | `theorem` | [mem_atomInventory_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/InventoryV2Input.lean/declarations/mem-atominventory-iff.md) | 66 | `result-track:bb0b3911557194798bcdee5d055266fc9225b8a028256d4a5ad3665506626634` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

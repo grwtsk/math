@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LemmasLemmasNamespacedPublicUnpackMantissaPackComponents.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LemmasLemmasNamespacedPublicUnpackMantissaPackComponents.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LemmasLemmasNamespacedPublicUnpackMantissaPackComponents.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LemmasLemmasNamespacedPublicUnpackMantissaPackComponents.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [unpackMantissa_packComponents](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LemmasLemmasNamespacedPublicUnpackMantissaPackComponents.lean/declarations/unpackmantissa-packcomponents.md) | 33 | `result-track:85a52d3ccc314c4a7bbbad5c6c9cd4e8dad10304cfbfced9c9c3c21a3e4c8fec` |
-| 2 | `theorem` | [unpackExponent_packComponents](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LemmasLemmasNamespacedPublicUnpackMantissaPackComponents.lean/declarations/unpackexponent-packcomponents.md) | 39 | `result-track:db65129b7365b6b5a0d8dc2a029af96885e65b099752bbf3cac46431d11ab942` |
-| 3 | `theorem` | [valid_pack](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LemmasLemmasNamespacedPublicUnpackMantissaPackComponents.lean/declarations/valid-pack.md) | 45 | `result-track:8dd26970e18ec902ef9ef22013fe8375fd57e8ed00035acdb03bed009d554097` |
+| 1 | `theorem` | [unpackMantissa_packComponents](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LemmasLemmasNamespacedPublicUnpackMantissaPackComponents.lean/declarations/unpackmantissa-packcomponents.md) | 33 | `result-track:85a52d3ccc314c4a7bbbad5c6c9cd4e8dad10304cfbfced9c9c3c21a3e4c8fec` |
+| 2 | `theorem` | [unpackExponent_packComponents](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LemmasLemmasNamespacedPublicUnpackMantissaPackComponents.lean/declarations/unpackexponent-packcomponents.md) | 39 | `result-track:db65129b7365b6b5a0d8dc2a029af96885e65b099752bbf3cac46431d11ab942` |
+| 3 | `theorem` | [valid_pack](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LemmasLemmasNamespacedPublicUnpackMantissaPackComponents.lean/declarations/valid-pack.md) | 45 | `result-track:8dd26970e18ec902ef9ef22013fe8375fd57e8ed00035acdb03bed009d554097` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

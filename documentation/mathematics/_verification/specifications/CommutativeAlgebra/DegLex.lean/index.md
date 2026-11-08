@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/DegLex.lean/index.md) · [Full source](../../../../CommutativeAlgebra/DegLex.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DegLex.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DegLex.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [degree_degLexDegree](../../../../CommutativeAlgebra/DegLex.lean/declarations/degree-deglexdegree.md) | 23 | `result-track:7031ff86d1bbebb98dea943580c16f9a9d7c165d17ba229944f11b5fc0b73990` |
-| 2 | `theorem` | [degLex_totalDegree_monotone](../../../../CommutativeAlgebra/DegLex.lean/declarations/deglex-totaldegree-monotone.md) | 33 | `result-track:054bedbd669094da497705eddf23b044870bfc57e037a05c6cf3ba0e2d1afb01` |
-| 3 | `theorem` | [totalDegree_mul_of_isDomain](../../../../CommutativeAlgebra/DegLex.lean/declarations/totaldegree-mul-of-isdomain.md) | 40 | `result-track:b644730df3d42cfc1a3000934f4afd256eda695258a9d6dfb0acb297601879b2` |
+| 1 | `theorem` | [degree_degLexDegree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DegLex.lean/declarations/degree-deglexdegree.md) | 23 | `result-track:7031ff86d1bbebb98dea943580c16f9a9d7c165d17ba229944f11b5fc0b73990` |
+| 2 | `theorem` | [degLex_totalDegree_monotone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DegLex.lean/declarations/deglex-totaldegree-monotone.md) | 33 | `result-track:054bedbd669094da497705eddf23b044870bfc57e037a05c6cf3ba0e2d1afb01` |
+| 3 | `theorem` | [totalDegree_mul_of_isDomain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DegLex.lean/declarations/totaldegree-mul-of-isdomain.md) | 40 | `result-track:b644730df3d42cfc1a3000934f4afd256eda695258a9d6dfb0acb297601879b2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

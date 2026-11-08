@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/SubsumptionLink.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/SubsumptionLink.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SubsumptionLink.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SubsumptionLink.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [link](../../../../../ComputerScience/AlgorithmsInComputerScience/SubsumptionLink.lean/declarations/link.md) | 18 | `declaration-track:dc1966179af9a0d836a5b1df2bfc9ddd96ea43332cde0e7af0788e19fb739b9d` |
-| 2 | `def` | [scaleData](../../../../../ComputerScience/AlgorithmsInComputerScience/SubsumptionLink.lean/declarations/scaledata.md) | 42 | `declaration-track:6080e1566d02bfb5c0b7ba255f17a502a117158db6c9496b3ffd71283b290e4d` |
-| 3 | `def` | [tube](../../../../../ComputerScience/AlgorithmsInComputerScience/SubsumptionLink.lean/declarations/tube.md) | 48 | `declaration-track:699e104a949d4b30b192a8c22cf246f8b607e18cde16d24dcbfde80debafe15c` |
-| 4 | `def` | [tubeConfiguration](../../../../../ComputerScience/AlgorithmsInComputerScience/SubsumptionLink.lean/declarations/tubeconfiguration.md) | 54 | `declaration-track:495c4d5f6d2589803bcb1217f51969053ab8671bd7bc4c2833f1ab9d0e7b6ede` |
-| 5 | `def` | [links](../../../../../ComputerScience/AlgorithmsInComputerScience/SubsumptionLink.lean/declarations/links.md) | 60 | `declaration-track:58dd7c5466ae09f509f7868d364a7ceb00b3591b0cca01eafbeb48d1d903e585` |
-| 6 | `theorem` | [links_length](../../../../../ComputerScience/AlgorithmsInComputerScience/SubsumptionLink.lean/declarations/links-length.md) | 66 | `result-track:b2af4b8c6a5cee6376a4092e2175801820f786045ee6c6bf31722f2d88359e88` |
-| 7 | `theorem` | [links_proposal_only](../../../../../ComputerScience/AlgorithmsInComputerScience/SubsumptionLink.lean/declarations/links-proposal-only.md) | 68 | `result-track:1bca663f60928f387fc10558ef63f36a7513fd23b4f7b0a4f00e66a47ba7d68c` |
+| 1 | `def` | [link](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SubsumptionLink.lean/declarations/link.md) | 18 | `declaration-track:dc1966179af9a0d836a5b1df2bfc9ddd96ea43332cde0e7af0788e19fb739b9d` |
+| 2 | `def` | [scaleData](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SubsumptionLink.lean/declarations/scaledata.md) | 42 | `declaration-track:6080e1566d02bfb5c0b7ba255f17a502a117158db6c9496b3ffd71283b290e4d` |
+| 3 | `def` | [tube](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SubsumptionLink.lean/declarations/tube.md) | 48 | `declaration-track:699e104a949d4b30b192a8c22cf246f8b607e18cde16d24dcbfde80debafe15c` |
+| 4 | `def` | [tubeConfiguration](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SubsumptionLink.lean/declarations/tubeconfiguration.md) | 54 | `declaration-track:495c4d5f6d2589803bcb1217f51969053ab8671bd7bc4c2833f1ab9d0e7b6ede` |
+| 5 | `def` | [links](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SubsumptionLink.lean/declarations/links.md) | 60 | `declaration-track:58dd7c5466ae09f509f7868d364a7ceb00b3591b0cca01eafbeb48d1d903e585` |
+| 6 | `theorem` | [links_length](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SubsumptionLink.lean/declarations/links-length.md) | 66 | `result-track:b2af4b8c6a5cee6376a4092e2175801820f786045ee6c6bf31722f2d88359e88` |
+| 7 | `theorem` | [links_proposal_only](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SubsumptionLink.lean/declarations/links-proposal-only.md) | 68 | `result-track:1bca663f60928f387fc10558ef63f36a7513fd23b4f7b0a4f00e66a47ba7d68c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

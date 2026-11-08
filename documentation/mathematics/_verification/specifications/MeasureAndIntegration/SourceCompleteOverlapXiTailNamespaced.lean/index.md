@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceCompleteOverlapXiTailNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceCompleteOverlapXiTailNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCompleteOverlapXiTailNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCompleteOverlapXiTailNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [completeXiHead](../../../../MeasureAndIntegration/SourceCompleteOverlapXiTailNamespaced.lean/declarations/completexihead.md) | 32 | `declaration-track:af775eb2b1be6e96ada3c5ff5522b65c5971342c9264a4adea04c6f883862428` |
-| 2 | `theorem` | [remaining_work_eq_gamma_head_tail](../../../../MeasureAndIntegration/SourceCompleteOverlapXiTailNamespaced.lean/declarations/remaining-work-eq-gamma-head-tail.md) | 34 | `result-track:1f0fc371147efb05a482aeb92c17903507c565e3be8b50374041d0a96e10701d` |
-| 3 | `theorem` | [complete_tail_eq_joint_overlap_corrections](../../../../MeasureAndIntegration/SourceCompleteOverlapXiTailNamespaced.lean/declarations/complete-tail-eq-joint-overlap-corrections.md) | 62 | `result-track:64a16784387c69812e924a591e2584511cb4b6c8fbca1713b68adc34a00bc3df` |
-| 4 | `theorem` | [complete_tail_lower_of_joint_inputs](../../../../MeasureAndIntegration/SourceCompleteOverlapXiTailNamespaced.lean/declarations/complete-tail-lower-of-joint-inputs.md) | 74 | `result-track:2b70ba08ed785fabf4fc8bff2aba0122b7f055ddd950806e3bc3010971a90f12` |
+| 1 | `def` | [completeXiHead](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCompleteOverlapXiTailNamespaced.lean/declarations/completexihead.md) | 32 | `declaration-track:af775eb2b1be6e96ada3c5ff5522b65c5971342c9264a4adea04c6f883862428` |
+| 2 | `theorem` | [remaining_work_eq_gamma_head_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCompleteOverlapXiTailNamespaced.lean/declarations/remaining-work-eq-gamma-head-tail.md) | 34 | `result-track:1f0fc371147efb05a482aeb92c17903507c565e3be8b50374041d0a96e10701d` |
+| 3 | `theorem` | [complete_tail_eq_joint_overlap_corrections](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCompleteOverlapXiTailNamespaced.lean/declarations/complete-tail-eq-joint-overlap-corrections.md) | 62 | `result-track:64a16784387c69812e924a591e2584511cb4b6c8fbca1713b68adc34a00bc3df` |
+| 4 | `theorem` | [complete_tail_lower_of_joint_inputs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCompleteOverlapXiTailNamespaced.lean/declarations/complete-tail-lower-of-joint-inputs.md) | 74 | `result-track:2b70ba08ed785fabf4fc8bff2aba0122b7f055ddd950806e3bc3010971a90f12` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/DirichletLine.lean/index.md) · [Full source](../../../../MeasureAndIntegration/DirichletLine.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DirichletLine.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DirichletLine.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,19 +58,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [LSeries_term_line](../../../../MeasureAndIntegration/DirichletLine.lean/declarations/lseries-term-line.md) | 25 | `result-track:be5209c661699037533cb1761f5d75a272b743a31b723a02049f4a675bf89e4d` |
-| 2 | `theorem` | [norm_LSeries_term_line](../../../../MeasureAndIntegration/DirichletLine.lean/declarations/norm-lseries-term-line.md) | 47 | `result-track:0d46d129e76ad41f9fdad1037fa2105af9f7ccb0f94ab58bc39b12712fac6c71` |
-| 3 | `theorem` | [integrand_eq_tsum_gen](../../../../MeasureAndIntegration/DirichletLine.lean/declarations/integrand-eq-tsum-gen.md) | 57 | `result-track:f3adc5fa53b49de7693bd29b86a544d9d831147a93d0a35802d575feb1edd177` |
-| 4 | `theorem` | [per_n_line_integral_gen](../../../../MeasureAndIntegration/DirichletLine.lean/declarations/per-n-line-integral-gen.md) | 64 | `result-track:67c0f2dd79695f38b5dc4bb09f8de58558bcd605596e58aa5b8ff2102adb98c8` |
-| 5 | `theorem` | [continuous_LSeries_term_line](../../../../MeasureAndIntegration/DirichletLine.lean/declarations/continuous-lseries-term-line.md) | 109 | `result-track:ab81f162475943a2e3a2dd3d842a1853007bcb45709b53e3f8fc74ce9703d08d` |
-| 6 | `theorem` | [summable_coeff_bound](../../../../MeasureAndIntegration/DirichletLine.lean/declarations/summable-coeff-bound.md) | 120 | `result-track:2d33849e9b2e05263143c1a1d1c60e695199478e42116e2239de307e268fd7ef` |
-| 7 | `theorem` | [continuous_LSeries_line](../../../../MeasureAndIntegration/DirichletLine.lean/declarations/continuous-lseries-line.md) | 129 | `result-track:93b46ce55a5f843a9daefa87d24a8c9c2d640bdecab19a4c132eb5a1457d743a` |
-| 8 | `theorem` | [norm_LSeries_line_le](../../../../MeasureAndIntegration/DirichletLine.lean/declarations/norm-lseries-line-le.md) | 137 | `result-track:af938562be4e65fa85d541cceaac83c1773e4ac8710db96986c7a93bae8f8fdf` |
-| 9 | `theorem` | [line_terms_integrable](../../../../MeasureAndIntegration/DirichletLine.lean/declarations/line-terms-integrable.md) | 147 | `result-track:b5cf5b4a4794686d83565e0e7835d8d964ba97a7f4e4571417ebab88a60f73ca` |
-| 10 | `theorem` | [line_integral_swap_gen](../../../../MeasureAndIntegration/DirichletLine.lean/declarations/line-integral-swap-gen.md) | 182 | `result-track:82ce3d6cc8d2ebab7fac44daab7743a2a501af14a81406b42841c42e4e771b8f` |
-| 11 | `theorem` | [integrable_Hfn_mul_LSeries](../../../../MeasureAndIntegration/DirichletLine.lean/declarations/integrable-hfn-mul-lseries.md) | 190 | `result-track:53365713d9f6156bee9dc206fad1230d0040a7f680fbb6fc2e988cc2a9bcbbe0` |
-| 12 | `theorem` | [dirichlet_line](../../../../MeasureAndIntegration/DirichletLine.lean/declarations/dirichlet-line.md) | 207 | `result-track:8ab63cb3935c6848126a77a68ec56e3d9b01647e8dabcd67f8cb778d0e92cdf7` |
-| 13 | `theorem` | [dirichlet_line_mirror](../../../../MeasureAndIntegration/DirichletLine.lean/declarations/dirichlet-line-mirror.md) | 230 | `result-track:3e91420621caca09581ef1502884c89fe0e6d94b54e04e5369c09ac2acf8cf84` |
+| 1 | `theorem` | [LSeries_term_line](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DirichletLine.lean/declarations/lseries-term-line.md) | 25 | `result-track:be5209c661699037533cb1761f5d75a272b743a31b723a02049f4a675bf89e4d` |
+| 2 | `theorem` | [norm_LSeries_term_line](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DirichletLine.lean/declarations/norm-lseries-term-line.md) | 47 | `result-track:0d46d129e76ad41f9fdad1037fa2105af9f7ccb0f94ab58bc39b12712fac6c71` |
+| 3 | `theorem` | [integrand_eq_tsum_gen](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DirichletLine.lean/declarations/integrand-eq-tsum-gen.md) | 57 | `result-track:f3adc5fa53b49de7693bd29b86a544d9d831147a93d0a35802d575feb1edd177` |
+| 4 | `theorem` | [per_n_line_integral_gen](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DirichletLine.lean/declarations/per-n-line-integral-gen.md) | 64 | `result-track:67c0f2dd79695f38b5dc4bb09f8de58558bcd605596e58aa5b8ff2102adb98c8` |
+| 5 | `theorem` | [continuous_LSeries_term_line](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DirichletLine.lean/declarations/continuous-lseries-term-line.md) | 109 | `result-track:ab81f162475943a2e3a2dd3d842a1853007bcb45709b53e3f8fc74ce9703d08d` |
+| 6 | `theorem` | [summable_coeff_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DirichletLine.lean/declarations/summable-coeff-bound.md) | 120 | `result-track:2d33849e9b2e05263143c1a1d1c60e695199478e42116e2239de307e268fd7ef` |
+| 7 | `theorem` | [continuous_LSeries_line](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DirichletLine.lean/declarations/continuous-lseries-line.md) | 129 | `result-track:93b46ce55a5f843a9daefa87d24a8c9c2d640bdecab19a4c132eb5a1457d743a` |
+| 8 | `theorem` | [norm_LSeries_line_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DirichletLine.lean/declarations/norm-lseries-line-le.md) | 137 | `result-track:af938562be4e65fa85d541cceaac83c1773e4ac8710db96986c7a93bae8f8fdf` |
+| 9 | `theorem` | [line_terms_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DirichletLine.lean/declarations/line-terms-integrable.md) | 147 | `result-track:b5cf5b4a4794686d83565e0e7835d8d964ba97a7f4e4571417ebab88a60f73ca` |
+| 10 | `theorem` | [line_integral_swap_gen](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DirichletLine.lean/declarations/line-integral-swap-gen.md) | 182 | `result-track:82ce3d6cc8d2ebab7fac44daab7743a2a501af14a81406b42841c42e4e771b8f` |
+| 11 | `theorem` | [integrable_Hfn_mul_LSeries](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DirichletLine.lean/declarations/integrable-hfn-mul-lseries.md) | 190 | `result-track:53365713d9f6156bee9dc206fad1230d0040a7f680fbb6fc2e988cc2a9bcbbe0` |
+| 12 | `theorem` | [dirichlet_line](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DirichletLine.lean/declarations/dirichlet-line.md) | 207 | `result-track:8ab63cb3935c6848126a77a68ec56e3d9b01647e8dabcd67f8cb778d0e92cdf7` |
+| 13 | `theorem` | [dirichlet_line_mirror](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DirichletLine.lean/declarations/dirichlet-line-mirror.md) | 230 | `result-track:3e91420621caca09581ef1502884c89fe0e6d94b54e04e5369c09ac2acf8cf84` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

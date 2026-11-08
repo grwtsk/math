@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDDivisorSqrtBound.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDDivisorSqrtBound.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDDivisorSqrtBound.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDDivisorSqrtBound.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Moebius.CenteredLowGCDCoefficients`](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDCoefficients.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.CenteredLowGCDCoefficients`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDCoefficients.lean/index.md) — import line 7; pinned internal source present.
 - `Mathlib.Analysis.Real.Sqrt` — import line 8; external provider; requires a separately pinned dependency.
 - `Mathlib.NumberTheory.ArithmeticFunction.Misc` — import line 9; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 10; external provider; requires a separately pinned dependency.
@@ -60,10 +60,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [divisorSqrtCode](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDDivisorSqrtBound.lean/declarations/divisorsqrtcode.md) | 30 | `declaration-track:2e2f478d0b6068802f390b24572442821cf71b767db75693d7082ae8f6c4b66f` |
-| 2 | `theorem` | [divisorSqrtCode_injective](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDDivisorSqrtBound.lean/declarations/divisorsqrtcode-injective.md) | 48 | `result-track:4618a02ee1f91717a3ee8586d4b6739247193792e7c5d688cc42064494be2c90` |
-| 3 | `theorem` | [card_divisors_le_two_mul_sqrt_succ](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDDivisorSqrtBound.lean/declarations/card-divisors-le-two-mul-sqrt-succ.md) | 84 | `result-track:00f18fd6b2db88a21732a89aed1848698d9ebd84f76adc80fe167a7373f88e13` |
-| 4 | `theorem` | [card_divisors_cast_le_six_mul_sqrt_scale](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDDivisorSqrtBound.lean/declarations/card-divisors-cast-le-six-mul-sqrt-scale.md) | 96 | `result-track:076a06d6f05683ba9f5007e12c0c4afefed2bf4f24a133f193b8fe01d4a63175` |
+| 1 | `def` | [divisorSqrtCode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDDivisorSqrtBound.lean/declarations/divisorsqrtcode.md) | 30 | `declaration-track:2e2f478d0b6068802f390b24572442821cf71b767db75693d7082ae8f6c4b66f` |
+| 2 | `theorem` | [divisorSqrtCode_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDDivisorSqrtBound.lean/declarations/divisorsqrtcode-injective.md) | 48 | `result-track:4618a02ee1f91717a3ee8586d4b6739247193792e7c5d688cc42064494be2c90` |
+| 3 | `theorem` | [card_divisors_le_two_mul_sqrt_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDDivisorSqrtBound.lean/declarations/card-divisors-le-two-mul-sqrt-succ.md) | 84 | `result-track:00f18fd6b2db88a21732a89aed1848698d9ebd84f76adc80fe167a7373f88e13` |
+| 4 | `theorem` | [card_divisors_cast_le_six_mul_sqrt_scale](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDDivisorSqrtBound.lean/declarations/card-divisors-cast-le-six-mul-sqrt-scale.md) | 96 | `result-track:076a06d6f05683ba9f5007e12c0c4afefed2bf4f24a133f193b8fe01d4a63175` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

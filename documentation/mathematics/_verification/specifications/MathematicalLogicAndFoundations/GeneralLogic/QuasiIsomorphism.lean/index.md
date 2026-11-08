@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/QuasiIsomorphism.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/QuasiIsomorphism.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/QuasiIsomorphism.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/QuasiIsomorphism.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [QuasiIsomorphismDescriptor](../../../../../MathematicalLogicAndFoundations/GeneralLogic/QuasiIsomorphism.lean/declarations/quasiisomorphismdescriptor.md) | 5 | `declaration-track:392c40229ff158e9fc648b65b9cb2ff9f70755662b0a674c26281e15b5ae7aae` |
-| 2 | `theorem` | [quasiIsomorphism_requires_homology_certificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/QuasiIsomorphism.lean/declarations/quasiisomorphism-requires-homology-certificate.md) | 9 | `result-track:79f8eadd9a51d2f4cd3ad033871546a7ee8e46b44defca78ac8aa5b600304c5a` |
+| 1 | `structure` | [QuasiIsomorphismDescriptor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/QuasiIsomorphism.lean/declarations/quasiisomorphismdescriptor.md) | 5 | `declaration-track:392c40229ff158e9fc648b65b9cb2ff9f70755662b0a674c26281e15b5ae7aae` |
+| 2 | `theorem` | [quasiIsomorphism_requires_homology_certificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/QuasiIsomorphism.lean/declarations/quasiisomorphism-requires-homology-certificate.md) | 9 | `result-track:79f8eadd9a51d2f4cd3ad033871546a7ee8e46b44defca78ac8aa5b600304c5a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

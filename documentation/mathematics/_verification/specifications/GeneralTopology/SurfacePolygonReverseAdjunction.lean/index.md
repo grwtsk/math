@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SurfacePolygonReverseAdjunction.lean/index.md) · [Full source](../../../../GeneralTopology/SurfacePolygonReverseAdjunction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonReverseAdjunction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonReverseAdjunction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonReverseCone`](../../../../GeneralTopology/SurfacePolygonReverseCone.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonReverseCone`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonReverseCone.lean/index.md) — import line 3; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [cornerProductTopology_eq_bot](../../../../GeneralTopology/SurfacePolygonReverseAdjunction.lean/declarations/cornerproducttopology-eq-bot.md) | 17 | `result-track:3acc80061c96aec961072e512c71b3ef952d357324cd76223442d8acd433631e` |
-| 2 | `theorem` | [reverse_boundary_commutes](../../../../GeneralTopology/SurfacePolygonReverseAdjunction.lean/declarations/reverse-boundary-commutes.md) | 24 | `result-track:3383d7e71c98126f0d5633f6edc4dace57ec680af63dddb52e1bb0fd42855e77` |
-| 3 | `def` | [adjunctionToFilling](../../../../GeneralTopology/SurfacePolygonReverseAdjunction.lean/declarations/adjunctiontofilling.md) | 35 | `declaration-track:6f13704f2a11198f436a2d893ed473b02a2f6bf48d798076dde013b27888a7b0` |
-| 4 | `theorem` | [adjunctionToFilling_continuous](../../../../GeneralTopology/SurfacePolygonReverseAdjunction.lean/declarations/adjunctiontofilling-continuous.md) | 40 | `result-track:5255e21fad18e95b8562564f1d74f6030eee12b87870961666eaed66f2a221d5` |
-| 5 | `theorem` | [adjunctionToFilling_skeleton](../../../../GeneralTopology/SurfacePolygonReverseAdjunction.lean/declarations/adjunctiontofilling-skeleton.md) | 57 | `result-track:5c4bb78a3097363d692b18e4fac42a42df491ab55c74596c9a53505408537917` |
-| 6 | `theorem` | [adjunctionToFilling_disk](../../../../GeneralTopology/SurfacePolygonReverseAdjunction.lean/declarations/adjunctiontofilling-disk.md) | 63 | `result-track:11b3ee7f681e4fc28a4362c56ab737a73ecc91c794d0981dc8832fb42ac94efc` |
+| 1 | `theorem` | [cornerProductTopology_eq_bot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonReverseAdjunction.lean/declarations/cornerproducttopology-eq-bot.md) | 17 | `result-track:3acc80061c96aec961072e512c71b3ef952d357324cd76223442d8acd433631e` |
+| 2 | `theorem` | [reverse_boundary_commutes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonReverseAdjunction.lean/declarations/reverse-boundary-commutes.md) | 24 | `result-track:3383d7e71c98126f0d5633f6edc4dace57ec680af63dddb52e1bb0fd42855e77` |
+| 3 | `def` | [adjunctionToFilling](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonReverseAdjunction.lean/declarations/adjunctiontofilling.md) | 35 | `declaration-track:6f13704f2a11198f436a2d893ed473b02a2f6bf48d798076dde013b27888a7b0` |
+| 4 | `theorem` | [adjunctionToFilling_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonReverseAdjunction.lean/declarations/adjunctiontofilling-continuous.md) | 40 | `result-track:5255e21fad18e95b8562564f1d74f6030eee12b87870961666eaed66f2a221d5` |
+| 5 | `theorem` | [adjunctionToFilling_skeleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonReverseAdjunction.lean/declarations/adjunctiontofilling-skeleton.md) | 57 | `result-track:5c4bb78a3097363d692b18e4fac42a42df491ab55c74596c9a53505408537917` |
+| 6 | `theorem` | [adjunctionToFilling_disk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonReverseAdjunction.lean/declarations/adjunctiontofilling-disk.md) | 63 | `result-track:11b3ee7f681e4fc28a4362c56ab737a73ecc91c794d0981dc8832fb42ac94efc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

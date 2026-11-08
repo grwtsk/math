@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CenteredMobiusLogGreenQuadratureGlobal.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CenteredMobiusLogGreenQuadratureGlobal.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenQuadratureGlobal.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenQuadratureGlobal.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenQuadratureError`](../../../../MeasureAndIntegration/CenteredMobiusLogGreenQuadratureError.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenQuadratureError`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenQuadratureError.lean/index.md) — import line 7; pinned internal source present.
 - `Mathlib.Tactic` — import line 8; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [greenFourierBackgroundCoordinate_eq_sum_cells](../../../../MeasureAndIntegration/CenteredMobiusLogGreenQuadratureGlobal.lean/declarations/greenfourierbackgroundcoordinate-eq-sum-cells.md) | 17 | `result-track:5754a6a5c8dbee7eed756bba8c891854d75ff5b9eba19bc75b45bace3ef2cbc7` |
-| 2 | `theorem` | [greenCenteringResidual_eq_cellErrorSum](../../../../MeasureAndIntegration/CenteredMobiusLogGreenQuadratureGlobal.lean/declarations/greencenteringresidual-eq-cellerrorsum.md) | 59 | `result-track:0f79974e89ff1f54411339e471c484da6f3bb8dd0d53ed4814b1c04ab136ab13` |
-| 3 | `theorem` | [norm_greenCenteringResidual_le](../../../../MeasureAndIntegration/CenteredMobiusLogGreenQuadratureGlobal.lean/declarations/norm-greencenteringresidual-le.md) | 73 | `result-track:2d68f05bef9af7aa3bfb9983a4e6fe61010a1e60e23dc5ab037693d0f7898f64` |
-| 4 | `theorem` | [norm_greenCenteringResidual_le_explicit](../../../../MeasureAndIntegration/CenteredMobiusLogGreenQuadratureGlobal.lean/declarations/norm-greencenteringresidual-le-explicit.md) | 98 | `result-track:f286b48c5b8e56f9e18abdc3c19263207430496d23850a18325c1cf3b216a91b` |
+| 1 | `theorem` | [greenFourierBackgroundCoordinate_eq_sum_cells](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenQuadratureGlobal.lean/declarations/greenfourierbackgroundcoordinate-eq-sum-cells.md) | 17 | `result-track:5754a6a5c8dbee7eed756bba8c891854d75ff5b9eba19bc75b45bace3ef2cbc7` |
+| 2 | `theorem` | [greenCenteringResidual_eq_cellErrorSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenQuadratureGlobal.lean/declarations/greencenteringresidual-eq-cellerrorsum.md) | 59 | `result-track:0f79974e89ff1f54411339e471c484da6f3bb8dd0d53ed4814b1c04ab136ab13` |
+| 3 | `theorem` | [norm_greenCenteringResidual_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenQuadratureGlobal.lean/declarations/norm-greencenteringresidual-le.md) | 73 | `result-track:2d68f05bef9af7aa3bfb9983a4e6fe61010a1e60e23dc5ab037693d0f7898f64` |
+| 4 | `theorem` | [norm_greenCenteringResidual_le_explicit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenQuadratureGlobal.lean/declarations/norm-greencenteringresidual-le-explicit.md) | 98 | `result-track:f286b48c5b8e56f9e18abdc3c19263207430496d23850a18325c1cf3b216a91b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

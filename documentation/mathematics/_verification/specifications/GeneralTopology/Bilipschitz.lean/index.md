@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/Bilipschitz.lean/index.md) · [Full source](../../../../GeneralTopology/Bilipschitz.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Bilipschitz.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Bilipschitz.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [uniformity_eq_of_bilipschitz](../../../../GeneralTopology/Bilipschitz.lean/declarations/uniformity-eq-of-bilipschitz.md) | 56 | `result-track:2aa5ab4c2cc3a088f70751a54567b306f5b0372220e80994496681ee9f6cbe37` |
-| 2 | `lemma` | [bornology_eq_of_bilipschitz](../../../../GeneralTopology/Bilipschitz.lean/declarations/bornology-eq-of-bilipschitz.md) | 71 | `result-track:f4ebeb27b157ecd77d2c4b68c6509b3f86f87f32a77faeab6666f7d7b9a8701f` |
-| 3 | `lemma` | [isBounded_iff_of_bilipschitz](../../../../GeneralTopology/Bilipschitz.lean/declarations/isbounded-iff-of-bilipschitz.md) | 93 | `result-track:be8e23aa38d455600da8b67e2198c2ec545890606165fca64bfd2471c544f6c1` |
+| 1 | `lemma` | [uniformity_eq_of_bilipschitz](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Bilipschitz.lean/declarations/uniformity-eq-of-bilipschitz.md) | 56 | `result-track:2aa5ab4c2cc3a088f70751a54567b306f5b0372220e80994496681ee9f6cbe37` |
+| 2 | `lemma` | [bornology_eq_of_bilipschitz](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Bilipschitz.lean/declarations/bornology-eq-of-bilipschitz.md) | 71 | `result-track:f4ebeb27b157ecd77d2c4b68c6509b3f86f87f32a77faeab6666f7d7b9a8701f` |
+| 3 | `lemma` | [isBounded_iff_of_bilipschitz](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Bilipschitz.lean/declarations/isbounded-iff-of-bilipschitz.md) | 93 | `result-track:be8e23aa38d455600da8b67e2198c2ec545890606165fca64bfd2471c544f6c1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

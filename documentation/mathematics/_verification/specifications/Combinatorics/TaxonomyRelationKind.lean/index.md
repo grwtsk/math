@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/TaxonomyRelationKind.lean/index.md) · [Full source](../../../../Combinatorics/TaxonomyRelationKind.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TaxonomyRelationKind.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TaxonomyRelationKind.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [TaxonomyRelationKind](../../../../Combinatorics/TaxonomyRelationKind.lean/declarations/taxonomyrelationkind.md) | 12 | `declaration-track:92f3cad8ebdc1b7f4536760458c428df84b48df7653d23e1be3f0e4e4e04b815` |
-| 2 | `inductive` | [TaxonomyRelationAuthority](../../../../Combinatorics/TaxonomyRelationKind.lean/declarations/taxonomyrelationauthority.md) | 27 | `declaration-track:63d44acf19ed40e62ed48da26f3fd1c1fa0c29486ad66bf515e60a34269c05cd` |
-| 3 | `structure` | [TaxonomyRelationRecord](../../../../Combinatorics/TaxonomyRelationKind.lean/declarations/taxonomyrelationrecord.md) | 34 | `declaration-track:b4e63c07ed129fc1d483fef16e8c2180e21fee960345b1a4de9bbac50aaf791b` |
+| 1 | `inductive` | [TaxonomyRelationKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TaxonomyRelationKind.lean/declarations/taxonomyrelationkind.md) | 12 | `declaration-track:92f3cad8ebdc1b7f4536760458c428df84b48df7653d23e1be3f0e4e4e04b815` |
+| 2 | `inductive` | [TaxonomyRelationAuthority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TaxonomyRelationKind.lean/declarations/taxonomyrelationauthority.md) | 27 | `declaration-track:63d44acf19ed40e62ed48da26f3fd1c1fa0c29486ad66bf515e60a34269c05cd` |
+| 3 | `structure` | [TaxonomyRelationRecord](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TaxonomyRelationKind.lean/declarations/taxonomyrelationrecord.md) | 34 | `declaration-track:b4e63c07ed129fc1d483fef16e8c2180e21fee960345b1a4de9bbac50aaf791b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

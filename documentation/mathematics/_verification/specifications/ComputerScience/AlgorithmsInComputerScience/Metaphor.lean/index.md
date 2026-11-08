@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Metaphor.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Metaphor.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Metaphor.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Metaphor.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [MetaphorMapping](../../../../../ComputerScience/AlgorithmsInComputerScience/Metaphor.lean/declarations/metaphormapping.md) | 7 | `declaration-track:5558f6a3b75a477661adbfc53a61f1a7ab32572d6994f21179dae72ae797f1f0` |
-| 2 | `structure` | [MetaphorCertificate](../../../../../ComputerScience/AlgorithmsInComputerScience/Metaphor.lean/declarations/metaphorcertificate.md) | 11 | `declaration-track:9adb4cb629a6c439ca18cc897cf33369d9cf9335c99945d4d5b2c4d3faf0e36a` |
-| 3 | `structure` | [MixedReadingCertificate](../../../../../ComputerScience/AlgorithmsInComputerScience/Metaphor.lean/declarations/mixedreadingcertificate.md) | 27 | `declaration-track:3d180d2745d0c7d4d502cfe0db35d763fbc7df289838111b52ff996ab8e9e1ef` |
+| 1 | `structure` | [MetaphorMapping](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Metaphor.lean/declarations/metaphormapping.md) | 7 | `declaration-track:5558f6a3b75a477661adbfc53a61f1a7ab32572d6994f21179dae72ae797f1f0` |
+| 2 | `structure` | [MetaphorCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Metaphor.lean/declarations/metaphorcertificate.md) | 11 | `declaration-track:9adb4cb629a6c439ca18cc897cf33369d9cf9335c99945d4d5b2c4d3faf0e36a` |
+| 3 | `structure` | [MixedReadingCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Metaphor.lean/declarations/mixedreadingcertificate.md) | 27 | `declaration-track:3d180d2745d0c7d4d502cfe0db35d763fbc7df289838111b52ff996ab8e9e1ef` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

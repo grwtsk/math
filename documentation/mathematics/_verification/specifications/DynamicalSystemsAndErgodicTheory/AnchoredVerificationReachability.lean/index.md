@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../DynamicalSystemsAndErgodicTheory/AnchoredVerificationReachability.lean/index.md) · [Full source](../../../../DynamicalSystemsAndErgodicTheory/AnchoredVerificationReachability.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/AnchoredVerificationReachability.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/AnchoredVerificationReachability.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Logic.Certificates.AnchoredBatchVerification`](../../../../MathematicalLogicAndFoundations/GeneralLogic/AnchoredBatchVerification.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Logic.Certificates.AnchoredDependencyRevision`](../../../../MathematicalLogicAndFoundations/GeneralLogic/AnchoredDependencyRevision.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Logic.Certificates.AnchoredBatchVerification`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AnchoredBatchVerification.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Logic.Certificates.AnchoredDependencyRevision`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AnchoredDependencyRevision.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,17 +58,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [ReplayWorkflow](../../../../DynamicalSystemsAndErgodicTheory/AnchoredVerificationReachability.lean/declarations/replayworkflow.md) | 40 | `declaration-track:a92d3622e7536e08fe291459c56540e7c038585adb83aa92155d758353950741` |
-| 2 | `theorem` | [replay_workflow_safe](../../../../DynamicalSystemsAndErgodicTheory/AnchoredVerificationReachability.lean/declarations/replay-workflow-safe.md) | 54 | `result-track:c419ee19aeb39ddceaeb0d0c6e19e63ba4870a25d9b9eebec93a66bb89dccf1c` |
-| 3 | `theorem` | [replay_workflow_issued_preserved](../../../../DynamicalSystemsAndErgodicTheory/AnchoredVerificationReachability.lean/declarations/replay-workflow-issued-preserved.md) | 65 | `result-track:48b91c1af602558a07afa87487cc5c6069ca30c081313c9d74f55844c5b92a35` |
-| 4 | `theorem` | [replay_workflow_global_archive_preserved](../../../../DynamicalSystemsAndErgodicTheory/AnchoredVerificationReachability.lean/declarations/replay-workflow-global-archive-preserved.md) | 78 | `result-track:549b33201e8433dc66c0867a85fd840039e847fe1c92a0b9804ff0f824943f6a` |
-| 5 | `theorem` | [replay_workflow_archive_prefix](../../../../DynamicalSystemsAndErgodicTheory/AnchoredVerificationReachability.lean/declarations/replay-workflow-archive-prefix.md) | 90 | `result-track:86aabf07074cb7ba41963b501c2936dc2de42dd45591cffebef3aacb50535001` |
-| 6 | `theorem` | [replay_workflow_receipts_preserved](../../../../DynamicalSystemsAndErgodicTheory/AnchoredVerificationReachability.lean/declarations/replay-workflow-receipts-preserved.md) | 103 | `result-track:084b0cb87da46472f194be072d7658b7e863ad8c71b8850d9511edf9728f85e1` |
-| 7 | `theorem` | [replay_workflow_correction_prefix](../../../../DynamicalSystemsAndErgodicTheory/AnchoredVerificationReachability.lean/declarations/replay-workflow-correction-prefix.md) | 116 | `result-track:841fb0366756c45e7010a5f36a4bd730420245b07018b9c91c4442bc57ccdb02` |
-| 8 | `theorem` | [replay_workflow_obligation_retained](../../../../DynamicalSystemsAndErgodicTheory/AnchoredVerificationReachability.lean/declarations/replay-workflow-obligation-retained.md) | 133 | `result-track:0ae2c0c944548a6639fcbc3beeb6c0e71e208ccf74adc08de582b1d5e86d1e2d` |
-| 9 | `theorem` | [replay_workflow_prior_status_accounted](../../../../DynamicalSystemsAndErgodicTheory/AnchoredVerificationReachability.lean/declarations/replay-workflow-prior-status-accounted.md) | 144 | `result-track:fe4618f356e95ee6f7164f17d7f610e3f8c1558e11d43c4fa5307ab71c21b894` |
-| 10 | `theorem` | [replay_workflow_verified_target](../../../../DynamicalSystemsAndErgodicTheory/AnchoredVerificationReachability.lean/declarations/replay-workflow-verified-target.md) | 156 | `result-track:a54113eb5b149094287d253a2b0b78fad056597972f25bf74a048e0343428d2d` |
-| 11 | `theorem` | [replay_workflow_verified_to_terminal](../../../../DynamicalSystemsAndErgodicTheory/AnchoredVerificationReachability.lean/declarations/replay-workflow-verified-to-terminal.md) | 165 | `result-track:1eb9934691968ac4eff0ba8d3cbef43927458140d149db6d96a5c218993b77a3` |
+| 1 | `inductive` | [ReplayWorkflow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/AnchoredVerificationReachability.lean/declarations/replayworkflow.md) | 40 | `declaration-track:a92d3622e7536e08fe291459c56540e7c038585adb83aa92155d758353950741` |
+| 2 | `theorem` | [replay_workflow_safe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/AnchoredVerificationReachability.lean/declarations/replay-workflow-safe.md) | 54 | `result-track:c419ee19aeb39ddceaeb0d0c6e19e63ba4870a25d9b9eebec93a66bb89dccf1c` |
+| 3 | `theorem` | [replay_workflow_issued_preserved](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/AnchoredVerificationReachability.lean/declarations/replay-workflow-issued-preserved.md) | 65 | `result-track:48b91c1af602558a07afa87487cc5c6069ca30c081313c9d74f55844c5b92a35` |
+| 4 | `theorem` | [replay_workflow_global_archive_preserved](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/AnchoredVerificationReachability.lean/declarations/replay-workflow-global-archive-preserved.md) | 78 | `result-track:549b33201e8433dc66c0867a85fd840039e847fe1c92a0b9804ff0f824943f6a` |
+| 5 | `theorem` | [replay_workflow_archive_prefix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/AnchoredVerificationReachability.lean/declarations/replay-workflow-archive-prefix.md) | 90 | `result-track:86aabf07074cb7ba41963b501c2936dc2de42dd45591cffebef3aacb50535001` |
+| 6 | `theorem` | [replay_workflow_receipts_preserved](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/AnchoredVerificationReachability.lean/declarations/replay-workflow-receipts-preserved.md) | 103 | `result-track:084b0cb87da46472f194be072d7658b7e863ad8c71b8850d9511edf9728f85e1` |
+| 7 | `theorem` | [replay_workflow_correction_prefix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/AnchoredVerificationReachability.lean/declarations/replay-workflow-correction-prefix.md) | 116 | `result-track:841fb0366756c45e7010a5f36a4bd730420245b07018b9c91c4442bc57ccdb02` |
+| 8 | `theorem` | [replay_workflow_obligation_retained](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/AnchoredVerificationReachability.lean/declarations/replay-workflow-obligation-retained.md) | 133 | `result-track:0ae2c0c944548a6639fcbc3beeb6c0e71e208ccf74adc08de582b1d5e86d1e2d` |
+| 9 | `theorem` | [replay_workflow_prior_status_accounted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/AnchoredVerificationReachability.lean/declarations/replay-workflow-prior-status-accounted.md) | 144 | `result-track:fe4618f356e95ee6f7164f17d7f610e3f8c1558e11d43c4fa5307ab71c21b894` |
+| 10 | `theorem` | [replay_workflow_verified_target](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/AnchoredVerificationReachability.lean/declarations/replay-workflow-verified-target.md) | 156 | `result-track:a54113eb5b149094287d253a2b0b78fad056597972f25bf74a048e0343428d2d` |
+| 11 | `theorem` | [replay_workflow_verified_to_terminal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/AnchoredVerificationReachability.lean/declarations/replay-workflow-verified-to-terminal.md) | 165 | `result-track:1eb9934691968ac4eff0ba8d3cbef43927458140d149db6d96a5c218993b77a3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

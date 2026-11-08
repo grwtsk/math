@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/VarNamespacedPublicGoGetAux.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/VarNamespacedPublicGoGetAux.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/VarNamespacedPublicGoGetAux.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/VarNamespacedPublicGoGetAux.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [go_get_aux](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/VarNamespacedPublicGoGetAux.lean/declarations/go-get-aux.md) | 39 | `result-track:189a7fd435179326c417114f550ebc1be788db29c318f3a8f979a7cdfbeab78d` |
-| 2 | `theorem` | [go_get](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/VarNamespacedPublicGoGetAux.lean/declarations/go-get.md) | 66 | `result-track:67558f4f6e2be16dc0b174c874e91d04f8a5a74651f4594baaf4c7704ad5c812` |
-| 3 | `theorem` | [go_denote_mem_prefix](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/VarNamespacedPublicGoGetAux.lean/declarations/go-denote-mem-prefix.md) | 75 | `result-track:7afa2937e3197eeb2caf2f4ed10563772d6278aff2c2153eab3fe8b2cec87f24` |
-| 4 | `theorem` | [go_denote_eq](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/VarNamespacedPublicGoGetAux.lean/declarations/go-denote-eq.md) | 91 | `result-track:132115dc852d9f0a9e6e2beff6abee7a0765464209b7f5d90e5e922040f23da1` |
-| 5 | `theorem` | [denote_blastVar](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/VarNamespacedPublicGoGetAux.lean/declarations/denote-blastvar.md) | 131 | `result-track:b321be74b6fff9fc60d9644e42a10e5a69344d9fabb8cc11166d2d9294100c68` |
+| 1 | `theorem` | [go_get_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/VarNamespacedPublicGoGetAux.lean/declarations/go-get-aux.md) | 39 | `result-track:189a7fd435179326c417114f550ebc1be788db29c318f3a8f979a7cdfbeab78d` |
+| 2 | `theorem` | [go_get](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/VarNamespacedPublicGoGetAux.lean/declarations/go-get.md) | 66 | `result-track:67558f4f6e2be16dc0b174c874e91d04f8a5a74651f4594baaf4c7704ad5c812` |
+| 3 | `theorem` | [go_denote_mem_prefix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/VarNamespacedPublicGoGetAux.lean/declarations/go-denote-mem-prefix.md) | 75 | `result-track:7afa2937e3197eeb2caf2f4ed10563772d6278aff2c2153eab3fe8b2cec87f24` |
+| 4 | `theorem` | [go_denote_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/VarNamespacedPublicGoGetAux.lean/declarations/go-denote-eq.md) | 91 | `result-track:132115dc852d9f0a9e6e2beff6abee7a0765464209b7f5d90e5e922040f23da1` |
+| 5 | `theorem` | [denote_blastVar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/VarNamespacedPublicGoGetAux.lean/declarations/denote-blastvar.md) | 131 | `result-track:b321be74b6fff9fc60d9644e42a10e5a69344d9fabb8cc11166d2d9294100c68` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/LogSquareQuadratureAuditNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/LogSquareQuadratureAuditNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogSquareQuadratureAuditNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogSquareQuadratureAuditNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [logSquareQuadrature](../../../../MeasureAndIntegration/LogSquareQuadratureAuditNamespaced.lean/declarations/logsquarequadrature.md) | 24 | `declaration-track:ee4c2b21dc4a4643f83b846807e18ecf240f92a3f192da2ee531061e05eceb67` |
-| 2 | `theorem` | [logSquare_monotoneOn](../../../../MeasureAndIntegration/LogSquareQuadratureAuditNamespaced.lean/declarations/logsquare-monotoneon.md) | 28 | `result-track:75ed5f1c9cc8e81fd52a7f4b93b7a18431edf6db8c53a84a3c6a93635a5414eb` |
-| 3 | `theorem` | [logSquare_intervalIntegrable](../../../../MeasureAndIntegration/LogSquareQuadratureAuditNamespaced.lean/declarations/logsquare-intervalintegrable.md) | 33 | `result-track:e5aaece8926d668c793ba7ba486066ff301dbf6baeb191d464b7b7b1a04594db` |
-| 4 | `theorem` | [logSquare_integer_bounds](../../../../MeasureAndIntegration/LogSquareQuadratureAuditNamespaced.lean/declarations/logsquare-integer-bounds.md) | 40 | `result-track:32d0257001e7ec368f869acaf17a45ddaf9bf5b24126696fa5b074c1cf23ad9c` |
-| 5 | `theorem` | [logSquareQuadrature_abs_le](../../../../MeasureAndIntegration/LogSquareQuadratureAuditNamespaced.lean/declarations/logsquarequadrature-abs-le.md) | 73 | `result-track:1827ff5448255cd4aaaec1f8058eddfe1c726e9f914c15fc194a7f1ef19bf130` |
+| 1 | `def` | [logSquareQuadrature](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogSquareQuadratureAuditNamespaced.lean/declarations/logsquarequadrature.md) | 24 | `declaration-track:ee4c2b21dc4a4643f83b846807e18ecf240f92a3f192da2ee531061e05eceb67` |
+| 2 | `theorem` | [logSquare_monotoneOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogSquareQuadratureAuditNamespaced.lean/declarations/logsquare-monotoneon.md) | 28 | `result-track:75ed5f1c9cc8e81fd52a7f4b93b7a18431edf6db8c53a84a3c6a93635a5414eb` |
+| 3 | `theorem` | [logSquare_intervalIntegrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogSquareQuadratureAuditNamespaced.lean/declarations/logsquare-intervalintegrable.md) | 33 | `result-track:e5aaece8926d668c793ba7ba486066ff301dbf6baeb191d464b7b7b1a04594db` |
+| 4 | `theorem` | [logSquare_integer_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogSquareQuadratureAuditNamespaced.lean/declarations/logsquare-integer-bounds.md) | 40 | `result-track:32d0257001e7ec368f869acaf17a45ddaf9bf5b24126696fa5b074c1cf23ad9c` |
+| 5 | `theorem` | [logSquareQuadrature_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogSquareQuadratureAuditNamespaced.lean/declarations/logsquarequadrature-abs-le.md) | 73 | `result-track:1827ff5448255cd4aaaec1f8058eddfe1c726e9f914c15fc194a7f1ef19bf130` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

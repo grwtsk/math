@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/VectorMeasureDecompositionRadonNikodymNamespaced.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/VectorMeasureDecompositionRadonNikodymNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/VectorMeasureDecompositionRadonNikodymNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/VectorMeasureDecompositionRadonNikodymNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [withDensityᵥ_rnDeriv_eq](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/VectorMeasureDecompositionRadonNikodymNamespaced.lean/declarations/withdensity-rnderiv-eq.md) | 33 | `result-track:9f67584038ee0e6977af41c3c4ce5ed9856172a3c58cc2c75c2d1e70f1b9cc77` |
-| 2 | `theorem` | [absolutelyContinuous_iff_withDensityᵥ_rnDeriv_eq](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/VectorMeasureDecompositionRadonNikodymNamespaced.lean/declarations/absolutelycontinuous-iff-withdensity-rnderiv-eq.md) | 52 | `result-track:4b6e8578f784f34ed39342527e2d9724446a65a4fd78c591c5bcf550836db433` |
-| 3 | `theorem` | [withDensityᵥ_rnDeriv_smul](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/VectorMeasureDecompositionRadonNikodymNamespaced.lean/declarations/withdensity-rnderiv-smul.md) | 58 | `result-track:2ecbb24277844fcbe7cc9b5cde6fc545380cbe1de0cdf2937b2f85b817961479` |
+| 1 | `theorem` | [withDensityᵥ_rnDeriv_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/VectorMeasureDecompositionRadonNikodymNamespaced.lean/declarations/withdensity-rnderiv-eq.md) | 33 | `result-track:9f67584038ee0e6977af41c3c4ce5ed9856172a3c58cc2c75c2d1e70f1b9cc77` |
+| 2 | `theorem` | [absolutelyContinuous_iff_withDensityᵥ_rnDeriv_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/VectorMeasureDecompositionRadonNikodymNamespaced.lean/declarations/absolutelycontinuous-iff-withdensity-rnderiv-eq.md) | 52 | `result-track:4b6e8578f784f34ed39342527e2d9724446a65a4fd78c591c5bcf550836db433` |
+| 3 | `theorem` | [withDensityᵥ_rnDeriv_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/VectorMeasureDecompositionRadonNikodymNamespaced.lean/declarations/withdensity-rnderiv-smul.md) | 58 | `result-track:2ecbb24277844fcbe7cc9b5cde6fc545380cbe1de0cdf2937b2f85b817961479` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Pseudoelement.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Pseudoelement.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Pseudoelement.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Pseudoelement.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [x](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Pseudoelement.lean/declarations/x.md) | 41 | `declaration-track:52146f620679b31f9f5da9b4563836e531a19c9547146ba19fab2d3e928a9a04` |
-| 2 | `def` | [y](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Pseudoelement.lean/declarations/y.md) | 45 | `declaration-track:5bc697474cea3b40434574d947d6330add44632390ac21b74b85e25c0cace77f` |
-| 3 | `theorem` | [fst_x_pseudo_eq_fst_y](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Pseudoelement.lean/declarations/fst-x-pseudo-eq-fst-y.md) | 49 | `result-track:69d2d6e74fcf246c6c623724847cd7f1f3fda1af6f9b9d2ccea24c2ba60faf66` |
-| 4 | `theorem` | [snd_x_pseudo_eq_snd_y](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Pseudoelement.lean/declarations/snd-x-pseudo-eq-snd-y.md) | 56 | `result-track:918db7fd7f9c9b500f7fe733024167369adcde1c71f3778de78ebccd072a3d87` |
-| 5 | `theorem` | [x_not_pseudo_eq](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Pseudoelement.lean/declarations/x-not-pseudo-eq.md) | 67 | `result-track:2c2e462a3399552a9f1455441af904a84b0df331da8e1de325913807b6d7dbc7` |
-| 6 | `theorem` | [fst_mk'_x_eq_fst_mk'_y](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Pseudoelement.lean/declarations/fst-mk-x-eq-fst-mk-y.md) | 93 | `result-track:54c35dd55908676f4714afce864c89b4400cfc0c6743178d4fcfe66fd1e5de71` |
-| 7 | `theorem` | [snd_mk'_x_eq_snd_mk'_y](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Pseudoelement.lean/declarations/snd-mk-x-eq-snd-mk-y.md) | 98 | `result-track:093050839c6acc9828ef8a43bc9f5bbe17d9a6cc65ce75155e62f07dff845c9d` |
-| 8 | `theorem` | [mk'_x_ne_mk'_y](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Pseudoelement.lean/declarations/mk-x-ne-mk-y.md) | 106 | `result-track:24829749afeac07bb715e79762dd44ae2c0369dada5ed6c359ca32496f837bc1` |
-| 9 | `theorem` | [exist_ne_and_fst_eq_fst_and_snd_eq_snd](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Pseudoelement.lean/declarations/exist-ne-and-fst-eq-fst-and-snd-eq-snd.md) | 111 | `result-track:8bb55771e9112f9b32b6318820d855730af2720d44659f0a17d38f928abaec2b` |
+| 1 | `def` | [x](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Pseudoelement.lean/declarations/x.md) | 41 | `declaration-track:52146f620679b31f9f5da9b4563836e531a19c9547146ba19fab2d3e928a9a04` |
+| 2 | `def` | [y](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Pseudoelement.lean/declarations/y.md) | 45 | `declaration-track:5bc697474cea3b40434574d947d6330add44632390ac21b74b85e25c0cace77f` |
+| 3 | `theorem` | [fst_x_pseudo_eq_fst_y](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Pseudoelement.lean/declarations/fst-x-pseudo-eq-fst-y.md) | 49 | `result-track:69d2d6e74fcf246c6c623724847cd7f1f3fda1af6f9b9d2ccea24c2ba60faf66` |
+| 4 | `theorem` | [snd_x_pseudo_eq_snd_y](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Pseudoelement.lean/declarations/snd-x-pseudo-eq-snd-y.md) | 56 | `result-track:918db7fd7f9c9b500f7fe733024167369adcde1c71f3778de78ebccd072a3d87` |
+| 5 | `theorem` | [x_not_pseudo_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Pseudoelement.lean/declarations/x-not-pseudo-eq.md) | 67 | `result-track:2c2e462a3399552a9f1455441af904a84b0df331da8e1de325913807b6d7dbc7` |
+| 6 | `theorem` | [fst_mk'_x_eq_fst_mk'_y](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Pseudoelement.lean/declarations/fst-mk-x-eq-fst-mk-y.md) | 93 | `result-track:54c35dd55908676f4714afce864c89b4400cfc0c6743178d4fcfe66fd1e5de71` |
+| 7 | `theorem` | [snd_mk'_x_eq_snd_mk'_y](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Pseudoelement.lean/declarations/snd-mk-x-eq-snd-mk-y.md) | 98 | `result-track:093050839c6acc9828ef8a43bc9f5bbe17d9a6cc65ce75155e62f07dff845c9d` |
+| 8 | `theorem` | [mk'_x_ne_mk'_y](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Pseudoelement.lean/declarations/mk-x-ne-mk-y.md) | 106 | `result-track:24829749afeac07bb715e79762dd44ae2c0369dada5ed6c359ca32496f837bc1` |
+| 9 | `theorem` | [exist_ne_and_fst_eq_fst_and_snd_eq_snd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Pseudoelement.lean/declarations/exist-ne-and-fst-eq-fst-and-snd-eq-snd.md) | 111 | `result-track:8bb55771e9112f9b32b6318820d855730af2720d44659f0a17d38f928abaec2b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

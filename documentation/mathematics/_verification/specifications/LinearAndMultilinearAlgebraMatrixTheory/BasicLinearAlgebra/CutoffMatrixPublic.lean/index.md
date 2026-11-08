@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CutoffMatrixPublic.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CutoffMatrixPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CutoffMatrixPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CutoffMatrixPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [productCutoffMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CutoffMatrixPublic.lean/declarations/productcutoffmatrix.md) | 29 | `declaration-track:09abbfdfba84d47cf9a7107c433f3a6a41acefd656f3e264988fb7df93b4083e` |
-| 2 | `def` | [productFiberIncrementMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CutoffMatrixPublic.lean/declarations/productfiberincrementmatrix.md) | 37 | `declaration-track:1d85f548426e169c893ccf91a75b06e9c0fa04046bead65eede1befbadd68809` |
-| 3 | `theorem` | [productCutoffMatrix_zero_of_positive](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CutoffMatrixPublic.lean/declarations/productcutoffmatrix-zero-of-positive.md) | 46 | `result-track:1569034b4e169fd1074761e29d9d0acd686a869bb09c71aef8822e7772c21924` |
-| 4 | `theorem` | [productCutoffMatrix_succ](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CutoffMatrixPublic.lean/declarations/productcutoffmatrix-succ.md) | 60 | `result-track:80ab65fbc3d7b9f255d24788cea9c91d5eecc3786519f956be2ff8fcf48ba3d0` |
-| 5 | `theorem` | [productCutoffMatrix_eq_sum_productFiberIncrements](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CutoffMatrixPublic.lean/declarations/productcutoffmatrix-eq-sum-productfiberincrements.md) | 81 | `result-track:9c98c97f1b262c5ddde44eab26ccca70a952fec3a02d4015918aaabdc7d7fb9d` |
-| 6 | `theorem` | [bilinearMatrixPairing_productCutoff_eq_sum_increments](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CutoffMatrixPublic.lean/declarations/bilinearmatrixpairing-productcutoff-eq-sum-increments.md) | 99 | `result-track:5015540fc528bf1c5a4201d840d3eaac28e9ab92468a3aa7d7dabbd87baf8b18` |
+| 1 | `def` | [productCutoffMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CutoffMatrixPublic.lean/declarations/productcutoffmatrix.md) | 29 | `declaration-track:09abbfdfba84d47cf9a7107c433f3a6a41acefd656f3e264988fb7df93b4083e` |
+| 2 | `def` | [productFiberIncrementMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CutoffMatrixPublic.lean/declarations/productfiberincrementmatrix.md) | 37 | `declaration-track:1d85f548426e169c893ccf91a75b06e9c0fa04046bead65eede1befbadd68809` |
+| 3 | `theorem` | [productCutoffMatrix_zero_of_positive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CutoffMatrixPublic.lean/declarations/productcutoffmatrix-zero-of-positive.md) | 46 | `result-track:1569034b4e169fd1074761e29d9d0acd686a869bb09c71aef8822e7772c21924` |
+| 4 | `theorem` | [productCutoffMatrix_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CutoffMatrixPublic.lean/declarations/productcutoffmatrix-succ.md) | 60 | `result-track:80ab65fbc3d7b9f255d24788cea9c91d5eecc3786519f956be2ff8fcf48ba3d0` |
+| 5 | `theorem` | [productCutoffMatrix_eq_sum_productFiberIncrements](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CutoffMatrixPublic.lean/declarations/productcutoffmatrix-eq-sum-productfiberincrements.md) | 81 | `result-track:9c98c97f1b262c5ddde44eab26ccca70a952fec3a02d4015918aaabdc7d7fb9d` |
+| 6 | `theorem` | [bilinearMatrixPairing_productCutoff_eq_sum_increments](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CutoffMatrixPublic.lean/declarations/bilinearmatrixpairing-productcutoff-eq-sum-increments.md) | 99 | `result-track:5015540fc528bf1c5a4201d840d3eaac28e9ab92468a3aa7d7dabbd87baf8b18` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

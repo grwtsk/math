@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/Linear.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/Linear.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/Linear.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/Linear.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [extend_partialOrder](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/Linear.lean/declarations/extend-partialorder.md) | 21 | `result-track:c6f8db7956938cbbea220859e87cffd4a66a9e1cfc45345840fe0c975cd59073` |
-| 2 | `def` | [LinearExtension](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/Linear.lean/declarations/linearextension.md) | 72 | `declaration-track:3b2c95cfe2e65d1c522a8108df13ce3cdcb47a58e21bc4571be11a76661e6c55` |
-| 3 | `instance` | [(anonymous)](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/Linear.lean/declarations/instance-source-edition-2.md) | 75 | `declaration-track:2b64531d87362076336dbd0686889993addd279ccd796f4788714a6b569b4ff0` |
-| 4 | `def` | [toLinearExtension](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/Linear.lean/declarations/tolinearextension.md) | 84 | `declaration-track:9ba6245eeb40cc1cda6a9b20f7d1809bff5b5aa969fe8de3f5db18f35e46d459` |
-| 5 | `instance` | [(anonymous)](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/Linear.lean/declarations/instance.md) | 88 | `declaration-track:1d8d53ad4297a494f25321995285598ba7481ce4e34170d5b870ef5b56094fce` |
+| 1 | `theorem` | [extend_partialOrder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/Linear.lean/declarations/extend-partialorder.md) | 21 | `result-track:c6f8db7956938cbbea220859e87cffd4a66a9e1cfc45345840fe0c975cd59073` |
+| 2 | `def` | [LinearExtension](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/Linear.lean/declarations/linearextension.md) | 72 | `declaration-track:3b2c95cfe2e65d1c522a8108df13ce3cdcb47a58e21bc4571be11a76661e6c55` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/Linear.lean/declarations/instance-source-edition-2.md) | 75 | `declaration-track:2b64531d87362076336dbd0686889993addd279ccd796f4788714a6b569b4ff0` |
+| 4 | `def` | [toLinearExtension](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/Linear.lean/declarations/tolinearextension.md) | 84 | `declaration-track:9ba6245eeb40cc1cda6a9b20f7d1809bff5b5aa969fe8de3f5db18f35e46d459` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/Linear.lean/declarations/instance.md) | 88 | `declaration-track:1d8d53ad4297a494f25321995285598ba7481ce4e34170d5b870ef5b56094fce` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

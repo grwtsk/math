@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TerrainRealizationNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TerrainRealizationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TerrainRealizationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TerrainRealizationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TerrainSourceRealization](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TerrainRealizationNamespaced.lean/declarations/terrainsourcerealization.md) | 31 | `declaration-track:7cebc04e820311aa4d8a90f7d44b21fb8fce24bfedcc7cbe276ffb717450a1bf` |
-| 2 | `def` | [coordinateCell](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TerrainRealizationNamespaced.lean/declarations/coordinatecell.md) | 47 | `declaration-track:c876564af82ede12deb4da3eaec37fbe20d6b0ff153f0d917701c289b411a0b4` |
-| 3 | `theorem` | [cellAt_injective](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TerrainRealizationNamespaced.lean/declarations/cellat-injective.md) | 58 | `result-track:f98e0fa68e44eae8c109d563e4554a90ddc219ae8c369eda3e045151582822ae` |
-| 4 | `theorem` | [reference_realization_commutes](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TerrainRealizationNamespaced.lean/declarations/reference-realization-commutes.md) | 68 | `result-track:5d1d93976ca5af43797162b65eeb2f8b88e6f0855bfc0909349b00008e919bbc` |
+| 1 | `structure` | [TerrainSourceRealization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TerrainRealizationNamespaced.lean/declarations/terrainsourcerealization.md) | 31 | `declaration-track:7cebc04e820311aa4d8a90f7d44b21fb8fce24bfedcc7cbe276ffb717450a1bf` |
+| 2 | `def` | [coordinateCell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TerrainRealizationNamespaced.lean/declarations/coordinatecell.md) | 47 | `declaration-track:c876564af82ede12deb4da3eaec37fbe20d6b0ff153f0d917701c289b411a0b4` |
+| 3 | `theorem` | [cellAt_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TerrainRealizationNamespaced.lean/declarations/cellat-injective.md) | 58 | `result-track:f98e0fa68e44eae8c109d563e4554a90ddc219ae8c369eda3e045151582822ae` |
+| 4 | `theorem` | [reference_realization_commutes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TerrainRealizationNamespaced.lean/declarations/reference-realization-commutes.md) | 68 | `result-track:5d1d93976ca5af43797162b65eeb2f8b88e6f0855bfc0909349b00008e919bbc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

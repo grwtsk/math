@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LocalProductAnalyticContinuation.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LocalProductAnalyticContinuation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LocalProductAnalyticContinuation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LocalProductAnalyticContinuation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.LinearAlgebra.Matrix.ConvergentLocalProduct`](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ConvergentLocalProduct.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.LinearAlgebra.Matrix.ConvergentLocalProduct`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ConvergentLocalProduct.lean/index.md) — import line 1; pinned internal source present.
 - `Mathlib.Analysis.Analytic.Uniqueness` — import line 2; external provider; requires a separately pinned dependency.
 - `Mathlib.Analysis.Analytic.Order` — import line 3; external provider; requires a separately pinned dependency.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [analytic_eqOn_of_local_products](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LocalProductAnalyticContinuation.lean/declarations/analytic-eqon-of-local-products.md) | 14 | `result-track:ae716ef6af1fd7fd159f23911d8edf0002387a90f938347076019afada7bad7d` |
-| 2 | `theorem` | [germ_eq_of_eqOn_open](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LocalProductAnalyticContinuation.lean/declarations/germ-eq-of-eqon-open.md) | 32 | `result-track:af707a83333816bf95f3616b531a3d36bbbce5475ae840f703e7d86416d00867` |
-| 3 | `theorem` | [analytic_order_eq_of_eqOn_open](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LocalProductAnalyticContinuation.lean/declarations/analytic-order-eq-of-eqon-open.md) | 38 | `result-track:37de008f1f5de4e2a7e297dd88499aa4ea93a9648f1f6c072c334332da4f664a` |
+| 1 | `theorem` | [analytic_eqOn_of_local_products](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LocalProductAnalyticContinuation.lean/declarations/analytic-eqon-of-local-products.md) | 14 | `result-track:ae716ef6af1fd7fd159f23911d8edf0002387a90f938347076019afada7bad7d` |
+| 2 | `theorem` | [germ_eq_of_eqOn_open](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LocalProductAnalyticContinuation.lean/declarations/germ-eq-of-eqon-open.md) | 32 | `result-track:af707a83333816bf95f3616b531a3d36bbbce5475ae840f703e7d86416d00867` |
+| 3 | `theorem` | [analytic_order_eq_of_eqOn_open](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LocalProductAnalyticContinuation.lean/declarations/analytic-order-eq-of-eqon-open.md) | 38 | `result-track:37de008f1f5de4e2a7e297dd88499aa4ea93a9648f1f6c072c334332da4f664a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/FiniteEnergyFullAudit.lean/index.md) · [Full source](../../../../MeasureAndIntegration/FiniteEnergyFullAudit.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteEnergyFullAudit.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteEnergyFullAudit.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [finiteController](../../../../MeasureAndIntegration/FiniteEnergyFullAudit.lean/declarations/finitecontroller.md) | 19 | `declaration-track:81956e7da1fef8ca712462467ace5123b4cb84885c766bb37899b15bb231f88a` |
-| 2 | `def` | [sourceGram](../../../../MeasureAndIntegration/FiniteEnergyFullAudit.lean/declarations/sourcegram.md) | 23 | `declaration-track:109f6031f9f03d3d7c335ca9c6432a84bb802b50ae2c6feb7feb53087d8659b2` |
-| 3 | `theorem` | [finiteController_reference_re](../../../../MeasureAndIntegration/FiniteEnergyFullAudit.lean/declarations/finitecontroller-reference-re.md) | 27 | `result-track:1d6a07be9af4e49d0650f995a667669b9a479f763378ea318dae30ec87561b84` |
-| 4 | `theorem` | [finiteController_norm_sq](../../../../MeasureAndIntegration/FiniteEnergyFullAudit.lean/declarations/finitecontroller-norm-sq.md) | 44 | `result-track:f6681b2f740bec65fee3dc46c4f93c09d21db451e32aa3960aa2f8700db70566` |
-| 5 | `theorem` | [finiteController_response_norm_sq](../../../../MeasureAndIntegration/FiniteEnergyFullAudit.lean/declarations/finitecontroller-response-norm-sq.md) | 60 | `result-track:0429a6fb2f4542087d5dce170b137e944ff5b2f75ddebe2ad632257addb73bd5` |
-| 6 | `theorem` | [finiteController_energy](../../../../MeasureAndIntegration/FiniteEnergyFullAudit.lean/declarations/finitecontroller-energy.md) | 81 | `result-track:507679e0b44d2fab11117e3a58fa495247fd29ebcfa4b8c4fdada0b02a4cc08b` |
+| 1 | `def` | [finiteController](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteEnergyFullAudit.lean/declarations/finitecontroller.md) | 19 | `declaration-track:81956e7da1fef8ca712462467ace5123b4cb84885c766bb37899b15bb231f88a` |
+| 2 | `def` | [sourceGram](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteEnergyFullAudit.lean/declarations/sourcegram.md) | 23 | `declaration-track:109f6031f9f03d3d7c335ca9c6432a84bb802b50ae2c6feb7feb53087d8659b2` |
+| 3 | `theorem` | [finiteController_reference_re](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteEnergyFullAudit.lean/declarations/finitecontroller-reference-re.md) | 27 | `result-track:1d6a07be9af4e49d0650f995a667669b9a479f763378ea318dae30ec87561b84` |
+| 4 | `theorem` | [finiteController_norm_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteEnergyFullAudit.lean/declarations/finitecontroller-norm-sq.md) | 44 | `result-track:f6681b2f740bec65fee3dc46c4f93c09d21db451e32aa3960aa2f8700db70566` |
+| 5 | `theorem` | [finiteController_response_norm_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteEnergyFullAudit.lean/declarations/finitecontroller-response-norm-sq.md) | 60 | `result-track:0429a6fb2f4542087d5dce170b137e944ff5b2f75ddebe2ad632257addb73bd5` |
+| 6 | `theorem` | [finiteController_energy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiniteEnergyFullAudit.lean/declarations/finitecontroller-energy.md) | 81 | `result-track:507679e0b44d2fab11117e3a58fa495247fd29ebcfa4b8c4fdada0b02a4cc08b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

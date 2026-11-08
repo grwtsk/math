@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/FinitenessProdNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/FinitenessProdNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessProdNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessProdNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [FG.prod](../../../../CommutativeAlgebra/FinitenessProdNamespaced.lean/declarations/fg-prod.md) | 33 | `result-track:fd7d52c62956d59c8c8e55dd76111d9b9da61aa4506be23a6b5983e3b8bc3478` |
-| 2 | `instance` | [prod](../../../../CommutativeAlgebra/FinitenessProdNamespaced.lean/declarations/prod.md) | 50 | `declaration-track:2fa90cb98495b355bebab283c0e11e58a2bf416d7341d3a0a427baa6f6e27111` |
+| 1 | `theorem` | [FG.prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessProdNamespaced.lean/declarations/fg-prod.md) | 33 | `result-track:fd7d52c62956d59c8c8e55dd76111d9b9da61aa4506be23a6b5983e3b8bc3478` |
+| 2 | `instance` | [prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessProdNamespaced.lean/declarations/prod.md) | 50 | `declaration-track:2fa90cb98495b355bebab283c0e11e58a2bf416d7341d3a0a427baa6f6e27111` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

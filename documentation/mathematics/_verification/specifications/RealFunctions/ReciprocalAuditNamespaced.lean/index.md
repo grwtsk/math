@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/ReciprocalAuditNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/ReciprocalAuditNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ReciprocalAuditNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ReciprocalAuditNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../RealFunctions/ReciprocalAuditNamespaced.lean/declarations/example-source-edition-3.md) | 20 | `declaration-track:e4d3797b9c76b8589a3bd1957b7860a58ad1b43a2581c8ff975339596a43cb61` |
-| 2 | `example` | [(anonymous)](../../../../RealFunctions/ReciprocalAuditNamespaced.lean/declarations/example.md) | 21 | `declaration-track:aab2479491b3b1eb3713bb91cccbc7544390f8130dc41cbd99614f5f8ed68d65` |
-| 3 | `example` | [(anonymous)](../../../../RealFunctions/ReciprocalAuditNamespaced.lean/declarations/example-source-edition-2.md) | 23 | `declaration-track:dec4f966fc50ce82657e3a59bbe4ca6ab303356ad6a2228fffea8272399aee4f` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ReciprocalAuditNamespaced.lean/declarations/example-source-edition-3.md) | 20 | `declaration-track:e4d3797b9c76b8589a3bd1957b7860a58ad1b43a2581c8ff975339596a43cb61` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ReciprocalAuditNamespaced.lean/declarations/example.md) | 21 | `declaration-track:aab2479491b3b1eb3713bb91cccbc7544390f8130dc41cbd99614f5f8ed68d65` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ReciprocalAuditNamespaced.lean/declarations/example-source-edition-2.md) | 23 | `declaration-track:dec4f966fc50ce82657e3a59bbe4ca6ab303356ad6a2228fffea8272399aee4f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

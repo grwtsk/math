@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/CongruenceOpposite.lean/index.md) · [Full source](../../../../CommutativeAlgebra/CongruenceOpposite.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CongruenceOpposite.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CongruenceOpposite.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [op](../../../../CommutativeAlgebra/CongruenceOpposite.lean/declarations/op.md) | 25 | `declaration-track:f7e3f322319e0c2fd8c0e2c12b38b16bd2954547b40b1e5750de00c207def327` |
-| 2 | `lemma` | [op_iff](../../../../CommutativeAlgebra/CongruenceOpposite.lean/declarations/op-iff.md) | 30 | `result-track:50163e6fe8cfab96973ffd1a48ab9695541d25bbfdcf6bd19ed5ba18359300fb` |
-| 3 | `def` | [unop](../../../../CommutativeAlgebra/CongruenceOpposite.lean/declarations/unop.md) | 35 | `declaration-track:532dfb68a5eb84c3dbe205f82c043709ee9945e65437ac5a1b32dba0eabb4097` |
-| 4 | `lemma` | [unop_iff](../../../../CommutativeAlgebra/CongruenceOpposite.lean/declarations/unop-iff.md) | 40 | `result-track:992662e436c3120deb0863adb0db44d360c1875da913e7ed09c06d5f3761a575` |
-| 5 | `def` | [opOrderIso](../../../../CommutativeAlgebra/CongruenceOpposite.lean/declarations/oporderiso.md) | 46 | `declaration-track:751de40b468ec1d9ed4f4f3b34dc105f12bb6fae6f6b975dc9a97fe4eba5e2a2` |
+| 1 | `def` | [op](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CongruenceOpposite.lean/declarations/op.md) | 25 | `declaration-track:f7e3f322319e0c2fd8c0e2c12b38b16bd2954547b40b1e5750de00c207def327` |
+| 2 | `lemma` | [op_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CongruenceOpposite.lean/declarations/op-iff.md) | 30 | `result-track:50163e6fe8cfab96973ffd1a48ab9695541d25bbfdcf6bd19ed5ba18359300fb` |
+| 3 | `def` | [unop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CongruenceOpposite.lean/declarations/unop.md) | 35 | `declaration-track:532dfb68a5eb84c3dbe205f82c043709ee9945e65437ac5a1b32dba0eabb4097` |
+| 4 | `lemma` | [unop_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CongruenceOpposite.lean/declarations/unop-iff.md) | 40 | `result-track:992662e436c3120deb0863adb0db44d360c1875da913e7ed09c06d5f3761a575` |
+| 5 | `def` | [opOrderIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CongruenceOpposite.lean/declarations/oporderiso.md) | 46 | `declaration-track:751de40b468ec1d9ed4f4f3b34dc105f12bb6fae6f6b975dc9a97fe4eba5e2a2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

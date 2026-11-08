@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/SpecificLimitsRCLikeRCLike.lean/index.md) · [Full source](../../../../FunctionalAnalysis/SpecificLimitsRCLikeRCLike.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpecificLimitsRCLikeRCLike.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpecificLimitsRCLikeRCLike.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [tendsto_inverse_atTop_nhds_zero_nat](../../../../FunctionalAnalysis/SpecificLimitsRCLikeRCLike.lean/declarations/tendsto-inverse-attop-nhds-zero-nat.md) | 21 | `result-track:6ad185aedd4908b6f1d2a073d1a6c43ab53bde7afb3218739912e468e2eb9cfc` |
-| 2 | `theorem` | [tendsto_ofReal_cobounded_cobounded](../../../../FunctionalAnalysis/SpecificLimitsRCLikeRCLike.lean/declarations/tendsto-ofreal-cobounded-cobounded.md) | 26 | `result-track:bf8e059a7c6d605285947c6ca0d7084bd4b447a717f3fb8271b188a91b7e9bcf` |
-| 3 | `theorem` | [tendsto_ofReal_atTop_cobounded](../../../../FunctionalAnalysis/SpecificLimitsRCLikeRCLike.lean/declarations/tendsto-ofreal-attop-cobounded.md) | 30 | `result-track:f7502a40a641aecc4ac5dd5abbf34c52ab8431dc2a84ee080db7f79c6bf07ce8` |
-| 4 | `theorem` | [tendsto_ofReal_atBot_cobounded](../../../../FunctionalAnalysis/SpecificLimitsRCLikeRCLike.lean/declarations/tendsto-ofreal-atbot-cobounded.md) | 34 | `result-track:da0edeae61d620c58d946292d03dbda69ce5ca35eb7fcf1fa8e42cade4905fa6` |
-| 5 | `theorem` | [tendsto_add_mul_div_add_mul_atTop_nhds](../../../../FunctionalAnalysis/SpecificLimitsRCLikeRCLike.lean/declarations/tendsto-add-mul-div-add-mul-attop-nhds.md) | 40 | `result-track:fd7c9de15f3db72f078d012f56ce9011f64637c0a803775f9a83bfe8953133fc` |
+| 1 | `theorem` | [tendsto_inverse_atTop_nhds_zero_nat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpecificLimitsRCLikeRCLike.lean/declarations/tendsto-inverse-attop-nhds-zero-nat.md) | 21 | `result-track:6ad185aedd4908b6f1d2a073d1a6c43ab53bde7afb3218739912e468e2eb9cfc` |
+| 2 | `theorem` | [tendsto_ofReal_cobounded_cobounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpecificLimitsRCLikeRCLike.lean/declarations/tendsto-ofreal-cobounded-cobounded.md) | 26 | `result-track:bf8e059a7c6d605285947c6ca0d7084bd4b447a717f3fb8271b188a91b7e9bcf` |
+| 3 | `theorem` | [tendsto_ofReal_atTop_cobounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpecificLimitsRCLikeRCLike.lean/declarations/tendsto-ofreal-attop-cobounded.md) | 30 | `result-track:f7502a40a641aecc4ac5dd5abbf34c52ab8431dc2a84ee080db7f79c6bf07ce8` |
+| 4 | `theorem` | [tendsto_ofReal_atBot_cobounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpecificLimitsRCLikeRCLike.lean/declarations/tendsto-ofreal-atbot-cobounded.md) | 34 | `result-track:da0edeae61d620c58d946292d03dbda69ce5ca35eb7fcf1fa8e42cade4905fa6` |
+| 5 | `theorem` | [tendsto_add_mul_div_add_mul_atTop_nhds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpecificLimitsRCLikeRCLike.lean/declarations/tendsto-add-mul-div-add-mul-attop-nhds.md) | 40 | `result-track:fd7c9de15f3db72f078d012f56ce9011f64637c0a803775f9a83bfe8953133fc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

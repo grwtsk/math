@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/FrobeniusTypology.lean/index.md) · [Full source](../../../../FunctionalAnalysis/FrobeniusTypology.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FrobeniusTypology.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FrobeniusTypology.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [AnalyticFrobeniusEnergy](../../../../FunctionalAnalysis/FrobeniusTypology.lean/declarations/analyticfrobeniusenergy.md) | 19 | `declaration-track:acacbcef57621fdae21a0e71d66874011aaa50674d96a7b3185e737ecba0b736` |
-| 2 | `structure` | [ArithmeticFrobeniusWitness](../../../../FunctionalAnalysis/FrobeniusTypology.lean/declarations/arithmeticfrobeniuswitness.md) | 24 | `declaration-track:834949b2caf4b6dfa0a97ed8e31d3c0d630eaa5febe4bc5526a13cbba3fc6eb8` |
-| 3 | `theorem` | [analytic_frobenius_nonnegative](../../../../FunctionalAnalysis/FrobeniusTypology.lean/declarations/analytic-frobenius-nonnegative.md) | 32 | `result-track:1c472c99631a8c1141e6967d833b6ad621f49e0ebb0e0131af0b4ff520f2192c` |
-| 4 | `theorem` | [arithmetic_frobenius_has_bound](../../../../FunctionalAnalysis/FrobeniusTypology.lean/declarations/arithmetic-frobenius-has-bound.md) | 38 | `result-track:8431c215f3118d20810e0ec9afae53e454427b51ffa1cc2d7cd9fbd3f3fabb9f` |
+| 1 | `structure` | [AnalyticFrobeniusEnergy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FrobeniusTypology.lean/declarations/analyticfrobeniusenergy.md) | 19 | `declaration-track:acacbcef57621fdae21a0e71d66874011aaa50674d96a7b3185e737ecba0b736` |
+| 2 | `structure` | [ArithmeticFrobeniusWitness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FrobeniusTypology.lean/declarations/arithmeticfrobeniuswitness.md) | 24 | `declaration-track:834949b2caf4b6dfa0a97ed8e31d3c0d630eaa5febe4bc5526a13cbba3fc6eb8` |
+| 3 | `theorem` | [analytic_frobenius_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FrobeniusTypology.lean/declarations/analytic-frobenius-nonnegative.md) | 32 | `result-track:1c472c99631a8c1141e6967d833b6ad621f49e0ebb0e0131af0b4ff520f2192c` |
+| 4 | `theorem` | [arithmetic_frobenius_has_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FrobeniusTypology.lean/declarations/arithmetic-frobenius-has-bound.md) | 38 | `result-track:8431c215f3118d20810e0ec9afae53e454427b51ffa1cc2d7cd9fbd3f3fabb9f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

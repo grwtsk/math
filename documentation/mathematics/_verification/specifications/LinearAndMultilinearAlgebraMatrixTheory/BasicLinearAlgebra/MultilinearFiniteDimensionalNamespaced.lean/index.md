@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearFiniteDimensionalNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearFiniteDimensionalNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearFiniteDimensionalNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearFiniteDimensionalNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [free_and_finite_fin](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearFiniteDimensionalNamespaced.lean/declarations/free-and-finite-fin.md) | 37 | `result-track:061e225cec3ddc511f3b676895eaa4cb3e8ba00fa6fa41d6bf372feae434229d` |
-| 2 | `theorem` | [free_and_finite](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearFiniteDimensionalNamespaced.lean/declarations/free-and-finite.md) | 61 | `result-track:338e3f1415cbf544c2b92907c2d8f5bc5126a03e5ae8169c05429d524b8505e0` |
-| 3 | `instance` | [Multilinear Finite Dimensional Namespaced](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearFiniteDimensionalNamespaced.lean/declarations/multilinearmap-source-line-70-occurrence-2.md) | 70 | `declaration-track:e84d9b68ff7b26211fd50ed9fc2e52f3a7bc5f71b3ae97415fcd732918157b80` |
-| 4 | `instance` | [Multilinear Finite Dimensional Namespaced](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearFiniteDimensionalNamespaced.lean/declarations/multilinearmap.md) | 73 | `declaration-track:d81f4565e58f40900b0b934cb942bfa34cebb4d3f03068c60e8f140d2857c589` |
+| 1 | `theorem` | [free_and_finite_fin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearFiniteDimensionalNamespaced.lean/declarations/free-and-finite-fin.md) | 37 | `result-track:061e225cec3ddc511f3b676895eaa4cb3e8ba00fa6fa41d6bf372feae434229d` |
+| 2 | `theorem` | [free_and_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearFiniteDimensionalNamespaced.lean/declarations/free-and-finite.md) | 61 | `result-track:338e3f1415cbf544c2b92907c2d8f5bc5126a03e5ae8169c05429d524b8505e0` |
+| 3 | `instance` | [Multilinear Finite Dimensional Namespaced](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearFiniteDimensionalNamespaced.lean/declarations/multilinearmap-source-line-70-occurrence-2.md) | 70 | `declaration-track:e84d9b68ff7b26211fd50ed9fc2e52f3a7bc5f71b3ae97415fcd732918157b80` |
+| 4 | `instance` | [Multilinear Finite Dimensional Namespaced](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearFiniteDimensionalNamespaced.lean/declarations/multilinearmap.md) | 73 | `declaration-track:d81f4565e58f40900b0b934cb942bfa34cebb4d3f03068c60e8f140d2857c589` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

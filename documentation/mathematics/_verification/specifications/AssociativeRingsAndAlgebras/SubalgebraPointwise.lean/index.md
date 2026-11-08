@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/SubalgebraPointwise.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/SubalgebraPointwise.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubalgebraPointwise.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubalgebraPointwise.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [mul_toSubmodule_le](../../../../AssociativeRingsAndAlgebras/SubalgebraPointwise.lean/declarations/mul-tosubmodule-le.md) | 23 | `result-track:b30275427fd8342a291bc281f590e8b8f0cd79fe1b95ae5ecddb2817e6526a2f` |
-| 2 | `theorem` | [isIdempotentElem_toSubmodule](../../../../AssociativeRingsAndAlgebras/SubalgebraPointwise.lean/declarations/isidempotentelem-tosubmodule.md) | 32 | `result-track:da7c06ff0b6df56da87d4ecdbb90138ad7157ae509bb26ab706982104c6aed80` |
-| 3 | `theorem` | [mul_toSubmodule](../../../../AssociativeRingsAndAlgebras/SubalgebraPointwise.lean/declarations/mul-tosubmodule.md) | 44 | `result-track:d9da841687cda76f608f36371a21eca0ae0f7b6c9090c9dc0e0f68b0d4b5c179` |
-| 4 | `def` | [pointwiseMulAction](../../../../AssociativeRingsAndAlgebras/SubalgebraPointwise.lean/declarations/pointwisemulaction.md) | 69 | `declaration-track:994dd99438d6286c002f3163e7a186f0aa6b4120e7970e70eea0599a148f4bc0` |
-| 5 | `theorem` | [coe_pointwise_smul](../../../../AssociativeRingsAndAlgebras/SubalgebraPointwise.lean/declarations/coe-pointwise-smul.md) | 80 | `result-track:9de37f217618e78ddebcd13b341cd34b79634438687f07c354147564641b5467` |
-| 6 | `theorem` | [pointwise_smul_toSubsemiring](../../../../AssociativeRingsAndAlgebras/SubalgebraPointwise.lean/declarations/pointwise-smul-tosubsemiring.md) | 84 | `result-track:a4015339f9a8b0fd5825d25d597675e5496a5c582edd3d89653ad2fa11f9963a` |
-| 7 | `theorem` | [pointwise_smul_toSubmodule](../../../../AssociativeRingsAndAlgebras/SubalgebraPointwise.lean/declarations/pointwise-smul-tosubmodule.md) | 89 | `result-track:d5660920fef9bd072c94d51579f4ec6cd398122b2ef99169ab6dc69cfef37e34` |
-| 8 | `theorem` | [pointwise_smul_toSubring](../../../../AssociativeRingsAndAlgebras/SubalgebraPointwise.lean/declarations/pointwise-smul-tosubring.md) | 94 | `result-track:3706bcae1a10ce8c2417c86d141ad90c5992b2f4dc564afdcb985c936c3f05d5` |
-| 9 | `theorem` | [smul_mem_pointwise_smul](../../../../AssociativeRingsAndAlgebras/SubalgebraPointwise.lean/declarations/smul-mem-pointwise-smul.md) | 99 | `result-track:f18fb02d74c9204d1954a8779b18fff5548446f7a2870d725fe36414ab736104` |
-| 10 | `instance` | [(anonymous)](../../../../AssociativeRingsAndAlgebras/SubalgebraPointwise.lean/declarations/instance.md) | 102 | `declaration-track:a252118d940ac1d417a753c79f80c2336a995f6016b27a115920db5ad622711b` |
+| 1 | `theorem` | [mul_toSubmodule_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubalgebraPointwise.lean/declarations/mul-tosubmodule-le.md) | 23 | `result-track:b30275427fd8342a291bc281f590e8b8f0cd79fe1b95ae5ecddb2817e6526a2f` |
+| 2 | `theorem` | [isIdempotentElem_toSubmodule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubalgebraPointwise.lean/declarations/isidempotentelem-tosubmodule.md) | 32 | `result-track:da7c06ff0b6df56da87d4ecdbb90138ad7157ae509bb26ab706982104c6aed80` |
+| 3 | `theorem` | [mul_toSubmodule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubalgebraPointwise.lean/declarations/mul-tosubmodule.md) | 44 | `result-track:d9da841687cda76f608f36371a21eca0ae0f7b6c9090c9dc0e0f68b0d4b5c179` |
+| 4 | `def` | [pointwiseMulAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubalgebraPointwise.lean/declarations/pointwisemulaction.md) | 69 | `declaration-track:994dd99438d6286c002f3163e7a186f0aa6b4120e7970e70eea0599a148f4bc0` |
+| 5 | `theorem` | [coe_pointwise_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubalgebraPointwise.lean/declarations/coe-pointwise-smul.md) | 80 | `result-track:9de37f217618e78ddebcd13b341cd34b79634438687f07c354147564641b5467` |
+| 6 | `theorem` | [pointwise_smul_toSubsemiring](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubalgebraPointwise.lean/declarations/pointwise-smul-tosubsemiring.md) | 84 | `result-track:a4015339f9a8b0fd5825d25d597675e5496a5c582edd3d89653ad2fa11f9963a` |
+| 7 | `theorem` | [pointwise_smul_toSubmodule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubalgebraPointwise.lean/declarations/pointwise-smul-tosubmodule.md) | 89 | `result-track:d5660920fef9bd072c94d51579f4ec6cd398122b2ef99169ab6dc69cfef37e34` |
+| 8 | `theorem` | [pointwise_smul_toSubring](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubalgebraPointwise.lean/declarations/pointwise-smul-tosubring.md) | 94 | `result-track:3706bcae1a10ce8c2417c86d141ad90c5992b2f4dc564afdcb985c936c3f05d5` |
+| 9 | `theorem` | [smul_mem_pointwise_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubalgebraPointwise.lean/declarations/smul-mem-pointwise-smul.md) | 99 | `result-track:f18fb02d74c9204d1954a8779b18fff5548446f7a2870d725fe36414ab736104` |
+| 10 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubalgebraPointwise.lean/declarations/instance.md) | 102 | `declaration-track:a252118d940ac1d417a753c79f80c2336a995f6016b27a115920db5ad622711b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

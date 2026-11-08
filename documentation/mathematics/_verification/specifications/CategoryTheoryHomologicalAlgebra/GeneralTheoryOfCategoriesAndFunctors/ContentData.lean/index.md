@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ContentData.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ContentData.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ContentData.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ContentData.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Content](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ContentData.lean/declarations/content.md) | 38 | `declaration-track:6073edee1dc762be85632be36369faf0eb54d02be66fa29e8d2d5b6e3af9aa73` |
-| 2 | `def` | [restrict](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ContentData.lean/declarations/restrict.md) | 45 | `declaration-track:2d7928cb1c06857b7998fcdead6067e9694e555cbcefd0c450362663e3b94c3c` |
-| 3 | `theorem` | [byteLength_natural](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ContentData.lean/declarations/bytelength-natural.md) | 51 | `result-track:8781c59fb45c4133b500da2144267554c82ef211ab19c0ced87c400003c16b12` |
+| 1 | `structure` | [Content](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ContentData.lean/declarations/content.md) | 38 | `declaration-track:6073edee1dc762be85632be36369faf0eb54d02be66fa29e8d2d5b6e3af9aa73` |
+| 2 | `def` | [restrict](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ContentData.lean/declarations/restrict.md) | 45 | `declaration-track:2d7928cb1c06857b7998fcdead6067e9694e555cbcefd0c450362663e3b94c3c` |
+| 3 | `theorem` | [byteLength_natural](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ContentData.lean/declarations/bytelength-natural.md) | 51 | `result-track:8781c59fb45c4133b500da2144267554c82ef211ab19c0ced87c400003c16b12` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

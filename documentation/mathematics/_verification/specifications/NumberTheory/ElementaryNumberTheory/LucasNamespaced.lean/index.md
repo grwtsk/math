@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/LucasNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/LucasNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/LucasNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/LucasNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [choose_modEq_choose_mod_mul_choose_div](../../../../../NumberTheory/ElementaryNumberTheory/LucasNamespaced.lean/declarations/choose-modeq-choose-mod-mul-choose-div.md) | 42 | `result-track:3bd834fec1e7274e78327059c6c6a8dc411f42a5f663dffce95825c0121711fc` |
-| 2 | `theorem` | [choose_modEq_choose_mod_mul_choose_div_nat](../../../../../NumberTheory/ElementaryNumberTheory/LucasNamespaced.lean/declarations/choose-modeq-choose-mod-mul-choose-div-nat.md) | 72 | `result-track:728e18df88f036bafe2ca42d8da536c704f44ad62bdc4fd33c3d7a1002e4855e` |
-| 3 | `theorem` | [choose_modEq_choose_mul_prod_range_choose](../../../../../NumberTheory/ElementaryNumberTheory/LucasNamespaced.lean/declarations/choose-modeq-choose-mul-prod-range-choose.md) | 79 | `result-track:7c1f8b4e963aac3479dc9dbf3d9074a25e28878a4dc09e84655bced6275c4d6e` |
-| 4 | `theorem` | [choose_modEq_prod_range_choose](../../../../../NumberTheory/ElementaryNumberTheory/LucasNamespaced.lean/declarations/choose-modeq-prod-range-choose.md) | 92 | `result-track:9acafb5b4edeff00daa2535d3eac9798ea571071d9b40b811af054b6f80bf35a` |
-| 5 | `theorem` | [choose_modEq_prod_range_choose_nat](../../../../../NumberTheory/ElementaryNumberTheory/LucasNamespaced.lean/declarations/choose-modeq-prod-range-choose-nat.md) | 100 | `result-track:8af12b5e7a60f38dd23d6c61bae35f4bf2a414c1664671319107f2fb007874ee` |
+| 1 | `theorem` | [choose_modEq_choose_mod_mul_choose_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/LucasNamespaced.lean/declarations/choose-modeq-choose-mod-mul-choose-div.md) | 42 | `result-track:3bd834fec1e7274e78327059c6c6a8dc411f42a5f663dffce95825c0121711fc` |
+| 2 | `theorem` | [choose_modEq_choose_mod_mul_choose_div_nat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/LucasNamespaced.lean/declarations/choose-modeq-choose-mod-mul-choose-div-nat.md) | 72 | `result-track:728e18df88f036bafe2ca42d8da536c704f44ad62bdc4fd33c3d7a1002e4855e` |
+| 3 | `theorem` | [choose_modEq_choose_mul_prod_range_choose](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/LucasNamespaced.lean/declarations/choose-modeq-choose-mul-prod-range-choose.md) | 79 | `result-track:7c1f8b4e963aac3479dc9dbf3d9074a25e28878a4dc09e84655bced6275c4d6e` |
+| 4 | `theorem` | [choose_modEq_prod_range_choose](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/LucasNamespaced.lean/declarations/choose-modeq-prod-range-choose.md) | 92 | `result-track:9acafb5b4edeff00daa2535d3eac9798ea571071d9b40b811af054b6f80bf35a` |
+| 5 | `theorem` | [choose_modEq_prod_range_choose_nat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/LucasNamespaced.lean/declarations/choose-modeq-prod-range-choose-nat.md) | 100 | `result-track:8af12b5e7a60f38dd23d6c61bae35f4bf2a414c1664671319107f2fb007874ee` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

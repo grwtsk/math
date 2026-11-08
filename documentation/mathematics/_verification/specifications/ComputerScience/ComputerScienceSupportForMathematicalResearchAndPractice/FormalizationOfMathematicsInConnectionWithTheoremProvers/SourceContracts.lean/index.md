@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SourceContracts.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SourceContracts.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SourceContracts.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SourceContracts.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [AdmissionStatus](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SourceContracts.lean/declarations/admissionstatus.md) | 5 | `declaration-track:b3d72e0f60970e87a763995c192844cc7776fa21978c3cc0deb51b843dd5108e` |
-| 2 | `inductive` | [Authority](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SourceContracts.lean/declarations/authority.md) | 8 | `declaration-track:ee0e49f841f73bb30697059832fe346df5043b8fe93bc8b93855e83b6944f454` |
-| 3 | `theorem` | [projection_has_no_source_authority](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SourceContracts.lean/declarations/projection-has-no-source-authority.md) | 12 | `result-track:d554105a68c583d081238600d2b0d4f8c0f6c5e7a4bdb3e1d53a9e6d0f47202c` |
-| 4 | `theorem` | [filesystem_has_no_kernel_authority](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SourceContracts.lean/declarations/filesystem-has-no-kernel-authority.md) | 15 | `result-track:396e379bfb99a7803a451bd07b1dba5bdb4973ea0b1edb0cd47fd13215a62628` |
+| 1 | `inductive` | [AdmissionStatus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SourceContracts.lean/declarations/admissionstatus.md) | 5 | `declaration-track:b3d72e0f60970e87a763995c192844cc7776fa21978c3cc0deb51b843dd5108e` |
+| 2 | `inductive` | [Authority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SourceContracts.lean/declarations/authority.md) | 8 | `declaration-track:ee0e49f841f73bb30697059832fe346df5043b8fe93bc8b93855e83b6944f454` |
+| 3 | `theorem` | [projection_has_no_source_authority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SourceContracts.lean/declarations/projection-has-no-source-authority.md) | 12 | `result-track:d554105a68c583d081238600d2b0d4f8c0f6c5e7a4bdb3e1d53a9e6d0f47202c` |
+| 4 | `theorem` | [filesystem_has_no_kernel_authority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SourceContracts.lean/declarations/filesystem-has-no-kernel-authority.md) | 15 | `result-track:396e379bfb99a7803a451bd07b1dba5bdb4973ea0b1edb0cd47fd13215a62628` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

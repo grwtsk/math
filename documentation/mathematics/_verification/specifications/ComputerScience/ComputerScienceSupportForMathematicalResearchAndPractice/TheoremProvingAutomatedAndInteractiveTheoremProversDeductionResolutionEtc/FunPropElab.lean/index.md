@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/FunPropElab.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/FunPropElab.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/FunPropElab.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/FunPropElab.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `syntax` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/FunPropElab.lean/declarations/syntax.md) | 23 | `declaration-track:13680a5f024683fc926ff4e4eec7142addff9bc5a68aaab3c5470a1d9aebc24d` |
-| 2 | `def` | [emptyDischarge](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/FunPropElab.lean/declarations/emptydischarge.md) | 26 | `declaration-track:a573c8ea049a4c8dcb7d1f98189b06533a8a30ac885b1dd9638480b2e0bb0ee4` |
-| 3 | `def` | [funPropTac](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/FunPropElab.lean/declarations/funproptac.md) | 34 | `declaration-track:8a8015b276af4823fc15b21a65d14c82a41e40ebd15a1878e6f23af72c90e0c7` |
-| 4 | `elab` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/FunPropElab.lean/declarations/elab.md) | 113 | `declaration-track:3a388bc0e52ce72e37428d188a4e42610dcbf7595b9ec86070477d5981951796` |
+| 1 | `syntax` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/FunPropElab.lean/declarations/syntax.md) | 23 | `declaration-track:13680a5f024683fc926ff4e4eec7142addff9bc5a68aaab3c5470a1d9aebc24d` |
+| 2 | `def` | [emptyDischarge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/FunPropElab.lean/declarations/emptydischarge.md) | 26 | `declaration-track:a573c8ea049a4c8dcb7d1f98189b06533a8a30ac885b1dd9638480b2e0bb0ee4` |
+| 3 | `def` | [funPropTac](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/FunPropElab.lean/declarations/funproptac.md) | 34 | `declaration-track:8a8015b276af4823fc15b21a65d14c82a41e40ebd15a1878e6f23af72c90e0c7` |
+| 4 | `elab` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/FunPropElab.lean/declarations/elab.md) | 113 | `declaration-track:3a388bc0e52ce72e37428d188a4e42610dcbf7595b9ec86070477d5981951796` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/PrefixScheduleRemapComposition.lean/index.md) · [Full source](../../../../Combinatorics/PrefixScheduleRemapComposition.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrefixScheduleRemapComposition.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrefixScheduleRemapComposition.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableSchedule`](../../../../Combinatorics/GraphTheory/PositivePrefixTableSchedule.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableSchedule`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PositivePrefixTableSchedule.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../Combinatorics/PrefixScheduleRemapComposition.lean/declarations/example.md) | 11 | `declaration-track:cea9381199d58555dd6ffbb43f3f160908f421c9556ae8d844bf5b8957955174` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrefixScheduleRemapComposition.lean/declarations/example.md) | 11 | `declaration-track:cea9381199d58555dd6ffbb43f3f160908f421c9556ae8d844bf5b8957955174` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

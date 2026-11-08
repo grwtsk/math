@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/Holonomy.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/Holonomy.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Holonomy.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Holonomy.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [LoopGeneratingSet](../../../../GroupTheoryAndGeneralizations/Holonomy.lean/declarations/loopgeneratingset.md) | 14 | `declaration-track:31d44fafcf91bbb7e806bc03b07b9ccff56b985548ae743918f43d380a3a41f5` |
-| 2 | `abbrev` | [CycleConsistencyCertificate](../../../../GroupTheoryAndGeneralizations/Holonomy.lean/declarations/cycleconsistencycertificate.md) | 18 | `declaration-track:305fdb5dbbeb7dae84670844e3f0407b1384c6180ffafa0807fe75115254f90d` |
-| 3 | `theorem` | [cycle_consistency_on_all_loops](../../../../GroupTheoryAndGeneralizations/Holonomy.lean/declarations/cycle-consistency-on-all-loops.md) | 27 | `result-track:14ff4c28c5d2434c5a1553ed2292a773d0e512da205aef0f05f8f04ecd607cff` |
+| 1 | `abbrev` | [LoopGeneratingSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Holonomy.lean/declarations/loopgeneratingset.md) | 14 | `declaration-track:31d44fafcf91bbb7e806bc03b07b9ccff56b985548ae743918f43d380a3a41f5` |
+| 2 | `abbrev` | [CycleConsistencyCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Holonomy.lean/declarations/cycleconsistencycertificate.md) | 18 | `declaration-track:305fdb5dbbeb7dae84670844e3f0407b1384c6180ffafa0807fe75115254f90d` |
+| 3 | `theorem` | [cycle_consistency_on_all_loops](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Holonomy.lean/declarations/cycle-consistency-on-all-loops.md) | 27 | `result-track:14ff4c28c5d2434c5a1553ed2292a773d0e512da205aef0f05f8f04ecd607cff` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ListSublistsNamespacedEdition1.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ListSublistsNamespacedEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ListSublistsNamespacedEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ListSublistsNamespacedEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/ListSublistsNamespacedEdition1.lean/declarations/example-source-edition-2.md) | 13 | `declaration-track:4a41afecdd38f3b1e0276d34f539e7bb677a26faa135ad5b118ec3d0eb7516eb` |
-| 2 | `example` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/ListSublistsNamespacedEdition1.lean/declarations/example-source-edition-3.md) | 17 | `declaration-track:8d5a0415b4df10519a0b96ccb309329fe7b05d20aa45c9d3d387ef9e37d9697d` |
-| 3 | `example` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/ListSublistsNamespacedEdition1.lean/declarations/example.md) | 18 | `declaration-track:3501d5bdd6da83b9ed79a1f6da12473d23a96dba6cf77c8a04130d7861573aec` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ListSublistsNamespacedEdition1.lean/declarations/example-source-edition-2.md) | 13 | `declaration-track:4a41afecdd38f3b1e0276d34f539e7bb677a26faa135ad5b118ec3d0eb7516eb` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ListSublistsNamespacedEdition1.lean/declarations/example-source-edition-3.md) | 17 | `declaration-track:8d5a0415b4df10519a0b96ccb309329fe7b05d20aa45c9d3d387ef9e37d9697d` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ListSublistsNamespacedEdition1.lean/declarations/example.md) | 18 | `declaration-track:3501d5bdd6da83b9ed79a1f6da12473d23a96dba6cf77c8a04130d7861573aec` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

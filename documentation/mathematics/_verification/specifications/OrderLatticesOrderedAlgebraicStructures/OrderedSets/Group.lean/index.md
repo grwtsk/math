@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/Group.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/Group.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/Group.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/Group.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [ciSup_mul_le_ciSup_mul_ciSup](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/Group.lean/declarations/cisup-mul-le-cisup-mul-cisup.md) | 22 | `result-track:6daa01c689904662721d2d19f270aa0367cdd8d56fb04e8ebad955fd9bafe0e5` |
-| 2 | `lemma` | [ciInf_mul_ciInf_le_ciInf_mul](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/Group.lean/declarations/ciinf-mul-ciinf-le-ciinf-mul.md) | 28 | `result-track:39bf7aa54baa6d2b657a0b5ceb3ac6e5428ca013de0733f2bd52daf01e7a8658` |
-| 3 | `theorem` | [le_mul_ciInf](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/Group.lean/declarations/le-mul-ciinf.md) | 41 | `result-track:43e03d49d050382884a8762e44569a376cfb27bf793c0911b38c8e1faa0bd309` |
-| 4 | `theorem` | [mul_ciSup_le](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/Group.lean/declarations/mul-cisup-le.md) | 46 | `result-track:86bc04ba24743512e546b77b7b20414da62272afa69954bc149b6a45a98b4619` |
-| 5 | `theorem` | [le_ciInf_mul](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/Group.lean/declarations/le-ciinf-mul.md) | 51 | `result-track:650383c5c74c53f356b8ee28aa5a722ac1c5c7b861e7d8efcdbbc0d5859b950f` |
-| 6 | `theorem` | [ciSup_mul_le](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/Group.lean/declarations/cisup-mul-le.md) | 56 | `result-track:2b1739c8461d090bd6b2ff80ffed7c795600d79e64f9e48b7be2f168a3f64aa2` |
-| 7 | `theorem` | [le_ciInf_mul_ciInf](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/Group.lean/declarations/le-ciinf-mul-ciinf.md) | 61 | `result-track:10f593d9dc68aeff65b0a88141489c6dbfc70585103a5c2b61eea849358a682a` |
-| 8 | `theorem` | [ciSup_mul_ciSup_le](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/Group.lean/declarations/cisup-mul-cisup-le.md) | 66 | `result-track:287029ec3e48bd512038ac6e11d0b40ab3690f3616a98e6ae34b0dfae5e3d4ce` |
+| 1 | `lemma` | [ciSup_mul_le_ciSup_mul_ciSup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/Group.lean/declarations/cisup-mul-le-cisup-mul-cisup.md) | 22 | `result-track:6daa01c689904662721d2d19f270aa0367cdd8d56fb04e8ebad955fd9bafe0e5` |
+| 2 | `lemma` | [ciInf_mul_ciInf_le_ciInf_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/Group.lean/declarations/ciinf-mul-ciinf-le-ciinf-mul.md) | 28 | `result-track:39bf7aa54baa6d2b657a0b5ceb3ac6e5428ca013de0733f2bd52daf01e7a8658` |
+| 3 | `theorem` | [le_mul_ciInf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/Group.lean/declarations/le-mul-ciinf.md) | 41 | `result-track:43e03d49d050382884a8762e44569a376cfb27bf793c0911b38c8e1faa0bd309` |
+| 4 | `theorem` | [mul_ciSup_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/Group.lean/declarations/mul-cisup-le.md) | 46 | `result-track:86bc04ba24743512e546b77b7b20414da62272afa69954bc149b6a45a98b4619` |
+| 5 | `theorem` | [le_ciInf_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/Group.lean/declarations/le-ciinf-mul.md) | 51 | `result-track:650383c5c74c53f356b8ee28aa5a722ac1c5c7b861e7d8efcdbbc0d5859b950f` |
+| 6 | `theorem` | [ciSup_mul_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/Group.lean/declarations/cisup-mul-le.md) | 56 | `result-track:2b1739c8461d090bd6b2ff80ffed7c795600d79e64f9e48b7be2f168a3f64aa2` |
+| 7 | `theorem` | [le_ciInf_mul_ciInf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/Group.lean/declarations/le-ciinf-mul-ciinf.md) | 61 | `result-track:10f593d9dc68aeff65b0a88141489c6dbfc70585103a5c2b61eea849358a682a` |
+| 8 | `theorem` | [ciSup_mul_ciSup_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/Group.lean/declarations/cisup-mul-cisup-le.md) | 66 | `result-track:287029ec3e48bd512038ac6e11d0b40ab3690f3616a98e6ae34b0dfae5e3d4ce` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

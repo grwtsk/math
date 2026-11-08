@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NamespacedAlternative7.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NamespacedAlternative7.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NamespacedAlternative7.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NamespacedAlternative7.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Involutive](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NamespacedAlternative7.lean/declarations/involutive.md) | 19 | `declaration-track:b4e63ad382185d1520751d50b3c704ef65f024827590d8b4f7c7e4b6f2fc8611` |
-| 2 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NamespacedAlternative7.lean/declarations/example.md) | 22 | `declaration-track:41ac0b4fda1d478d53c2e416fa00df53f10a14f396268c9f9c9db76184894813` |
-| 3 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NamespacedAlternative7.lean/declarations/example-source-edition-2.md) | 25 | `declaration-track:b7bc56f4c8d3b606c23674b52ff89951c4893e25fae2f2ba828117023ca74f11` |
+| 1 | `def` | [Involutive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NamespacedAlternative7.lean/declarations/involutive.md) | 19 | `declaration-track:b4e63ad382185d1520751d50b3c704ef65f024827590d8b4f7c7e4b6f2fc8611` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NamespacedAlternative7.lean/declarations/example.md) | 22 | `declaration-track:41ac0b4fda1d478d53c2e416fa00df53f10a14f396268c9f9c9db76184894813` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NamespacedAlternative7.lean/declarations/example-source-edition-2.md) | 25 | `declaration-track:b7bc56f4c8d3b606c23674b52ff89951c4893e25fae2f2ba828117023ca74f11` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

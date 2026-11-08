@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HandleComplex.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HandleComplex.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HandleComplex.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HandleComplex.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [handle_complex_has_section_complex](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HandleComplex.lean/declarations/handle-complex-has-section-complex.md) | 23 | `result-track:1861807eb231af515c388891705f9b3d2103f18c53faa1e9b3abaaf2897a794c` |
-| 2 | `theorem` | [handle_complex_identity_compatible](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HandleComplex.lean/declarations/handle-complex-identity-compatible.md) | 30 | `result-track:14bc17efb46315918113177e36ab5072f42d061b1f3e0796770ee9115fe26c53` |
+| 1 | `theorem` | [handle_complex_has_section_complex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HandleComplex.lean/declarations/handle-complex-has-section-complex.md) | 23 | `result-track:1861807eb231af515c388891705f9b3d2103f18c53faa1e9b3abaaf2897a794c` |
+| 2 | `theorem` | [handle_complex_identity_compatible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HandleComplex.lean/declarations/handle-complex-identity-compatible.md) | 30 | `result-track:14bc17efb46315918113177e36ab5072f42d061b1f3e0796770ee9115fe26c53` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreEmpty.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreEmpty.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreEmpty.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreEmpty.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [Matrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreEmpty.lean/declarations/matrix.md) | 18 | `declaration-track:3e5ec922eb63e6217fca447185192ed243cb0e6f3f187c0ef1c7f8a15f6240d8` |
-| 2 | `theorem` | [ext](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreEmpty.lean/declarations/ext.md) | 24 | `result-track:e6791fe02d7d5ecf21dc45f24d56b131f715172ccb6490dc8e924118a5126fe2` |
-| 3 | `def` | [empty](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreEmpty.lean/declarations/empty.md) | 32 | `declaration-track:9b82952c9f3a05a11907ad8a56e6060937a2714999020f4e9c22697282b716ea` |
-| 4 | `theorem` | [empty_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreEmpty.lean/declarations/empty-apply.md) | 36 | `result-track:bfe338a7cdf7e603a98cea800e3888b567828c01047cf70dc495d2c51d2948c3` |
+| 1 | `abbrev` | [Matrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreEmpty.lean/declarations/matrix.md) | 18 | `declaration-track:3e5ec922eb63e6217fca447185192ed243cb0e6f3f187c0ef1c7f8a15f6240d8` |
+| 2 | `theorem` | [ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreEmpty.lean/declarations/ext.md) | 24 | `result-track:e6791fe02d7d5ecf21dc45f24d56b131f715172ccb6490dc8e924118a5126fe2` |
+| 3 | `def` | [empty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreEmpty.lean/declarations/empty.md) | 32 | `declaration-track:9b82952c9f3a05a11907ad8a56e6060937a2714999020f4e9c22697282b716ea` |
+| 4 | `theorem` | [empty_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreEmpty.lean/declarations/empty-apply.md) | 36 | `result-track:bfe338a7cdf7e603a98cea800e3888b567828c01047cf70dc495d2c51d2948c3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

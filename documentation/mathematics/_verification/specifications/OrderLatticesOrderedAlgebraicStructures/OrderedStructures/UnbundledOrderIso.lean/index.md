@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnbundledOrderIso.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnbundledOrderIso.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnbundledOrderIso.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnbundledOrderIso.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mulLeft₀](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnbundledOrderIso.lean/declarations/mulleft.md) | 24 | `declaration-track:9b3f50c5a3d92649898a0e822dce00f1d66dac8a64b9c99ad45fab04302b763c` |
-| 2 | `lemma` | [mulLeft₀_symm](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnbundledOrderIso.lean/declarations/mulleft-symm.md) | 28 | `result-track:971e77c69d451132f123fe3846ccb7b8ef6443328973be00697e1bd26310f1c7` |
-| 3 | `def` | [mulRight₀](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnbundledOrderIso.lean/declarations/mulright.md) | 40 | `declaration-track:2d1fbce388b308e3602c19c99a798b4f2c99395cc30f250112cd6620a0e57275` |
-| 4 | `lemma` | [mulRight₀_symm](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnbundledOrderIso.lean/declarations/mulright-symm.md) | 44 | `result-track:cfa75390b84741c2d1475cbbfcbdd83dfc06d2024243024d6b46eb81a59126d7` |
-| 5 | `def` | [divRight₀](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnbundledOrderIso.lean/declarations/divright.md) | 49 | `declaration-track:484d2efc6fcebc0c31d0fcccf1542d8898ab9b492e77744949fb8413df037649` |
+| 1 | `def` | [mulLeft₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnbundledOrderIso.lean/declarations/mulleft.md) | 24 | `declaration-track:9b3f50c5a3d92649898a0e822dce00f1d66dac8a64b9c99ad45fab04302b763c` |
+| 2 | `lemma` | [mulLeft₀_symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnbundledOrderIso.lean/declarations/mulleft-symm.md) | 28 | `result-track:971e77c69d451132f123fe3846ccb7b8ef6443328973be00697e1bd26310f1c7` |
+| 3 | `def` | [mulRight₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnbundledOrderIso.lean/declarations/mulright.md) | 40 | `declaration-track:2d1fbce388b308e3602c19c99a798b4f2c99395cc30f250112cd6620a0e57275` |
+| 4 | `lemma` | [mulRight₀_symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnbundledOrderIso.lean/declarations/mulright-symm.md) | 44 | `result-track:cfa75390b84741c2d1475cbbfcbdd83dfc06d2024243024d6b46eb81a59126d7` |
+| 5 | `def` | [divRight₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnbundledOrderIso.lean/declarations/divright.md) | 49 | `declaration-track:484d2efc6fcebc0c31d0fcccf1542d8898ab9b492e77744949fb8413df037649` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

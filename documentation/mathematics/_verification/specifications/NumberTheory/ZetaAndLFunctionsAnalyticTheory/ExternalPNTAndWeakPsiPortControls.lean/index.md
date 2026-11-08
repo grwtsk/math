@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExternalPNTAndWeakPsiPortControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExternalPNTAndWeakPsiPortControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExternalPNTAndWeakPsiPortControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExternalPNTAndWeakPsiPortControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.ExternalPNTAndWeakPsiPort`](../../../../../NumberTheory/MultiplicativeNumberTheory/AsymptoticResultsOnArithmeticFunctions/ExternalPNTAndWeakPsiPort.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.ExternalPNTAndWeakPsiPort`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/AsymptoticResultsOnArithmeticFunctions/ExternalPNTAndWeakPsiPort.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Tactic` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [replay_inclusiveMangoldt_eq_psi](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExternalPNTAndWeakPsiPortControls.lean/declarations/replay-inclusivemangoldt-eq-psi.md) | 16 | `result-track:b0fd276451729c8eb4bf5c7a38ad1c1037554d74efdd1da692b259bb20cb05c7` |
-| 2 | `theorem` | [replay_inclusive_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExternalPNTAndWeakPsiPortControls.lean/declarations/replay-inclusive-zero.md) | 21 | `result-track:1a189f27e1e608984ed423cc0d08c8d8b1fa21a4b50834cb8d13b22224aba315` |
-| 3 | `theorem` | [replay_sqrt_correction_isLittleO](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExternalPNTAndWeakPsiPortControls.lean/declarations/replay-sqrt-correction-islittleo.md) | 28 | `result-track:a9ce519196ec84bd9ec8952c9bef0c19d824f295b7979af3864864ad1db7dac8` |
-| 4 | `theorem` | [replay_weakInclusivePNT_to_thetaPNT](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExternalPNTAndWeakPsiPortControls.lean/declarations/replay-weakinclusivepnt-to-thetapnt.md) | 36 | `result-track:8a92c70641242ebf965cd48208726ffdfe1dac8d7886ee2411e48664449ce2d6` |
-| 5 | `theorem` | [replay_weakInclusivePNT_to_not_fixedCapacity](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExternalPNTAndWeakPsiPortControls.lean/declarations/replay-weakinclusivepnt-to-not-fixedcapacity.md) | 43 | `result-track:7f4d7221111f7ce6d63c9ae95c96b194ab4926d9bfa0018e981dd474b17599f2` |
-| 6 | `def` | [remainingWeakPNTPortObligations](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExternalPNTAndWeakPsiPortControls.lean/declarations/remainingweakpntportobligations.md) | 50 | `declaration-track:76e51eaa781a9a400757bbf23edde9f9d08a3765f99ad333db4daafbe241f46a` |
-| 7 | `def` | [prohibitedPromotions](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExternalPNTAndWeakPsiPortControls.lean/declarations/prohibitedpromotions.md) | 58 | `declaration-track:5c2a0c30f17a0c47a0d403b3e65ce713a60cfc60c2a7294acf50ece19fb20cc1` |
+| 1 | `theorem` | [replay_inclusiveMangoldt_eq_psi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExternalPNTAndWeakPsiPortControls.lean/declarations/replay-inclusivemangoldt-eq-psi.md) | 16 | `result-track:b0fd276451729c8eb4bf5c7a38ad1c1037554d74efdd1da692b259bb20cb05c7` |
+| 2 | `theorem` | [replay_inclusive_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExternalPNTAndWeakPsiPortControls.lean/declarations/replay-inclusive-zero.md) | 21 | `result-track:1a189f27e1e608984ed423cc0d08c8d8b1fa21a4b50834cb8d13b22224aba315` |
+| 3 | `theorem` | [replay_sqrt_correction_isLittleO](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExternalPNTAndWeakPsiPortControls.lean/declarations/replay-sqrt-correction-islittleo.md) | 28 | `result-track:a9ce519196ec84bd9ec8952c9bef0c19d824f295b7979af3864864ad1db7dac8` |
+| 4 | `theorem` | [replay_weakInclusivePNT_to_thetaPNT](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExternalPNTAndWeakPsiPortControls.lean/declarations/replay-weakinclusivepnt-to-thetapnt.md) | 36 | `result-track:8a92c70641242ebf965cd48208726ffdfe1dac8d7886ee2411e48664449ce2d6` |
+| 5 | `theorem` | [replay_weakInclusivePNT_to_not_fixedCapacity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExternalPNTAndWeakPsiPortControls.lean/declarations/replay-weakinclusivepnt-to-not-fixedcapacity.md) | 43 | `result-track:7f4d7221111f7ce6d63c9ae95c96b194ab4926d9bfa0018e981dd474b17599f2` |
+| 6 | `def` | [remainingWeakPNTPortObligations](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExternalPNTAndWeakPsiPortControls.lean/declarations/remainingweakpntportobligations.md) | 50 | `declaration-track:76e51eaa781a9a400757bbf23edde9f9d08a3765f99ad333db4daafbe241f46a` |
+| 7 | `def` | [prohibitedPromotions](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExternalPNTAndWeakPsiPortControls.lean/declarations/prohibitedpromotions.md) | 58 | `declaration-track:5c2a0c30f17a0c47a0d403b3e65ce713a60cfc60c2a7294acf50ece19fb20cc1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

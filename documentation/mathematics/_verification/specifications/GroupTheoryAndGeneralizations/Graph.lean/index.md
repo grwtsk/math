@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/Graph.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/Graph.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Graph.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Graph.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,20 +57,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mgraph](../../../../GroupTheoryAndGeneralizations/Graph.lean/declarations/mgraph.md) | 42 | `declaration-track:a9fd64fa3130e5ec7fd2f3b49944886e63544989ae303e30e3e7080929c850c6` |
-| 2 | `lemma` | [mem_mgraph](../../../../GroupTheoryAndGeneralizations/Graph.lean/declarations/mem-mgraph.md) | 54 | `result-track:5ae89b76cbf4bc712126bf4977927218b94172621c7e76cf1c42a198fae32808` |
-| 3 | `lemma` | [mgraph_eq_mrange_prod](../../../../GroupTheoryAndGeneralizations/Graph.lean/declarations/mgraph-eq-mrange-prod.md) | 57 | `result-track:b07b992a1aa6772d49da8cc07bc9babd78f25817e48c84a7975134528fea5f00` |
-| 4 | `lemma` | [exists_mrange_eq_mgraph](../../../../GroupTheoryAndGeneralizations/Graph.lean/declarations/exists-mrange-eq-mgraph.md) | 72 | `result-track:d8b4247936ecbbdbb7b9331d635bd920861eba06898ecb053fec7ba6bfd55947` |
-| 5 | `lemma` | [exists_mulEquiv_mrange_eq_mgraph](../../../../GroupTheoryAndGeneralizations/Graph.lean/declarations/exists-mulequiv-mrange-eq-mgraph.md) | 98 | `result-track:d9b9393270cab5e6ee480b36c275735d9395d35dbe063ef64920f98dcc49ebef` |
-| 6 | `lemma` | [Submonoid.exists_eq_mgraph](../../../../GroupTheoryAndGeneralizations/Graph.lean/declarations/submonoid-exists-eq-mgraph.md) | 125 | `result-track:bdcbef5366091c0e9ac157f1513eb623fca09c87c443fcbd65efb4e7e899a0ba` |
-| 7 | `lemma` | [Submonoid.exists_mulEquiv_eq_mgraph](../../../../GroupTheoryAndGeneralizations/Graph.lean/declarations/submonoid-exists-mulequiv-eq-mgraph.md) | 138 | `result-track:419973adf8a3679c1087978ee8e2f79a661982cc64f2495564b9b969964621f6` |
-| 8 | `def` | [graph](../../../../GroupTheoryAndGeneralizations/Graph.lean/declarations/graph.md) | 158 | `declaration-track:ac69c2ec6145c714240f6e26f51654531eb452ac8b4cf322769dcbdee1f5df2f` |
-| 9 | `lemma` | [mem_graph](../../../../GroupTheoryAndGeneralizations/Graph.lean/declarations/mem-graph.md) | 169 | `result-track:3fbfb524d0a695391afc3d32bf414050f5f788721d766d36c687ba2693445a83` |
-| 10 | `lemma` | [graph_eq_range_prod](../../../../GroupTheoryAndGeneralizations/Graph.lean/declarations/graph-eq-range-prod.md) | 172 | `result-track:f7c3194bbfb33c5018a9156785590f33f66b22505eb37bca27079513c2162f9d` |
-| 11 | `lemma` | [exists_range_eq_graph](../../../../GroupTheoryAndGeneralizations/Graph.lean/declarations/exists-range-eq-graph.md) | 187 | `result-track:e0ecd153d2cbbc3c5782ddaa6c28cb507de4833b3768a75b4f740faa1a72081d` |
-| 12 | `lemma` | [exists_mulEquiv_range_eq_graph](../../../../GroupTheoryAndGeneralizations/Graph.lean/declarations/exists-mulequiv-range-eq-graph.md) | 204 | `result-track:3cce49f6d442b216626f93a0147dc30c62a3d50d6ffc45eafacac4cdfd592eed` |
-| 13 | `lemma` | [Subgroup.exists_eq_graph](../../../../GroupTheoryAndGeneralizations/Graph.lean/declarations/subgroup-exists-eq-graph.md) | 220 | `result-track:da4519d405e42ba501dc954e481035a1914dd2542fc0a0a7e656f1b35a11fa30` |
-| 14 | `lemma` | [Subgroup.exists_mulEquiv_eq_graph](../../../../GroupTheoryAndGeneralizations/Graph.lean/declarations/subgroup-exists-mulequiv-eq-graph.md) | 232 | `result-track:66d946bc8152c800ed8cdab7127378ea0758a4e2a6318f14d4d6a0606127fc00` |
+| 1 | `def` | [mgraph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Graph.lean/declarations/mgraph.md) | 42 | `declaration-track:a9fd64fa3130e5ec7fd2f3b49944886e63544989ae303e30e3e7080929c850c6` |
+| 2 | `lemma` | [mem_mgraph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Graph.lean/declarations/mem-mgraph.md) | 54 | `result-track:5ae89b76cbf4bc712126bf4977927218b94172621c7e76cf1c42a198fae32808` |
+| 3 | `lemma` | [mgraph_eq_mrange_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Graph.lean/declarations/mgraph-eq-mrange-prod.md) | 57 | `result-track:b07b992a1aa6772d49da8cc07bc9babd78f25817e48c84a7975134528fea5f00` |
+| 4 | `lemma` | [exists_mrange_eq_mgraph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Graph.lean/declarations/exists-mrange-eq-mgraph.md) | 72 | `result-track:d8b4247936ecbbdbb7b9331d635bd920861eba06898ecb053fec7ba6bfd55947` |
+| 5 | `lemma` | [exists_mulEquiv_mrange_eq_mgraph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Graph.lean/declarations/exists-mulequiv-mrange-eq-mgraph.md) | 98 | `result-track:d9b9393270cab5e6ee480b36c275735d9395d35dbe063ef64920f98dcc49ebef` |
+| 6 | `lemma` | [Submonoid.exists_eq_mgraph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Graph.lean/declarations/submonoid-exists-eq-mgraph.md) | 125 | `result-track:bdcbef5366091c0e9ac157f1513eb623fca09c87c443fcbd65efb4e7e899a0ba` |
+| 7 | `lemma` | [Submonoid.exists_mulEquiv_eq_mgraph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Graph.lean/declarations/submonoid-exists-mulequiv-eq-mgraph.md) | 138 | `result-track:419973adf8a3679c1087978ee8e2f79a661982cc64f2495564b9b969964621f6` |
+| 8 | `def` | [graph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Graph.lean/declarations/graph.md) | 158 | `declaration-track:ac69c2ec6145c714240f6e26f51654531eb452ac8b4cf322769dcbdee1f5df2f` |
+| 9 | `lemma` | [mem_graph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Graph.lean/declarations/mem-graph.md) | 169 | `result-track:3fbfb524d0a695391afc3d32bf414050f5f788721d766d36c687ba2693445a83` |
+| 10 | `lemma` | [graph_eq_range_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Graph.lean/declarations/graph-eq-range-prod.md) | 172 | `result-track:f7c3194bbfb33c5018a9156785590f33f66b22505eb37bca27079513c2162f9d` |
+| 11 | `lemma` | [exists_range_eq_graph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Graph.lean/declarations/exists-range-eq-graph.md) | 187 | `result-track:e0ecd153d2cbbc3c5782ddaa6c28cb507de4833b3768a75b4f740faa1a72081d` |
+| 12 | `lemma` | [exists_mulEquiv_range_eq_graph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Graph.lean/declarations/exists-mulequiv-range-eq-graph.md) | 204 | `result-track:3cce49f6d442b216626f93a0147dc30c62a3d50d6ffc45eafacac4cdfd592eed` |
+| 13 | `lemma` | [Subgroup.exists_eq_graph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Graph.lean/declarations/subgroup-exists-eq-graph.md) | 220 | `result-track:da4519d405e42ba501dc954e481035a1914dd2542fc0a0a7e656f1b35a11fa30` |
+| 14 | `lemma` | [Subgroup.exists_mulEquiv_eq_graph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Graph.lean/declarations/subgroup-exists-mulequiv-eq-graph.md) | 232 | `result-track:66d946bc8152c800ed8cdab7127378ea0758a4e2a6318f14d4d6a0606127fc00` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

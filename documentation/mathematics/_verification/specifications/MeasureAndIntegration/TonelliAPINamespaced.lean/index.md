@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/TonelliAPINamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/TonelliAPINamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TonelliAPINamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TonelliAPINamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [nonnegative_integral_integral_swap](../../../../MeasureAndIntegration/TonelliAPINamespaced.lean/declarations/nonnegative-integral-integral-swap.md) | 20 | `result-track:85d7b943bd9f2c960a52c2fd9d5f7fd85b023ac239b2a48813e03bba7adf63e7` |
+| 1 | `theorem` | [nonnegative_integral_integral_swap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TonelliAPINamespaced.lean/declarations/nonnegative-integral-integral-swap.md) | 20 | `result-track:85d7b943bd9f2c960a52c2fd9d5f7fd85b023ac239b2a48813e03bba7adf63e7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

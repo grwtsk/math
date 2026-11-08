@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/MUSNamespacedUnsatCore.lean/index.md) · [Full source](../../../../Combinatorics/MUSNamespacedUnsatCore.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MUSNamespacedUnsatCore.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MUSNamespacedUnsatCore.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [UnsatCore](../../../../Combinatorics/MUSNamespacedUnsatCore.lean/declarations/unsatcore.md) | 25 | `declaration-track:321f342edf1915bd8e4d1268b092b821387c38ef4bca11fbd10b953f0417ec6f` |
-| 2 | `structure` | [PrimitiveCore](../../../../Combinatorics/MUSNamespacedUnsatCore.lean/declarations/primitivecore.md) | 43 | `declaration-track:6b850d54a9d2f37fefd15815cac1c3606a90f5c50b772b0864ad797001e4a484` |
-| 3 | `theorem` | [PrimitiveCore.primitive_core_unsatisfiable](../../../../Combinatorics/MUSNamespacedUnsatCore.lean/declarations/primitivecore-primitive-core-unsatisfiable.md) | 60 | `result-track:0a52896be6837fe616abb2aa2fda3f2b8c87b3ff36cdad224ed10201c32039a9` |
-| 4 | `theorem` | [PrimitiveCore.every_proper_subset_feasible](../../../../Combinatorics/MUSNamespacedUnsatCore.lean/declarations/primitivecore-every-proper-subset-feasible.md) | 76 | `result-track:d172e979fadda7827be417d0a126a3dba1a2cffc3b769776ad64baf84d0316f1` |
-| 5 | `def` | [primitive_of_all_proper_subsets](../../../../Combinatorics/MUSNamespacedUnsatCore.lean/declarations/primitive-of-all-proper-subsets.md) | 103 | `declaration-track:ab1bb5068c3b1515b1a9df3cd938ca0a010f5702c8122e4e05d1c4d1334f6337` |
-| 6 | `def` | [PrimitiveCore.extendRegistry](../../../../Combinatorics/MUSNamespacedUnsatCore.lean/declarations/primitivecore-extendregistry.md) | 128 | `declaration-track:e62aac2309612289d7c2a66569689ee2864917bb7d29469c303e453361ac33b3` |
-| 7 | `abbrev` | [PrimitiveCoreAt](../../../../Combinatorics/MUSNamespacedUnsatCore.lean/declarations/primitivecoreat.md) | 155 | `declaration-track:2c0de5caa8b65803a37febd809e96c899b13eabf856828818c0ea32c61290014` |
-| 8 | `abbrev` | [ExtractedPrimitiveCore](../../../../Combinatorics/MUSNamespacedUnsatCore.lean/declarations/extractedprimitivecore.md) | 166 | `declaration-track:02d6f9161e9efd35ab67881916d1b2d8ec14ed3cb3c505cad4d8273581d94839` |
-| 9 | `structure` | [MUSExtractor](../../../../Combinatorics/MUSNamespacedUnsatCore.lean/declarations/musextractor.md) | 179 | `declaration-track:fd34eacf1df4e69e3a1ffd002d8e7c8e2a04dd1c13bb3ffde8ceb86b89474e7a` |
+| 1 | `structure` | [UnsatCore](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MUSNamespacedUnsatCore.lean/declarations/unsatcore.md) | 25 | `declaration-track:321f342edf1915bd8e4d1268b092b821387c38ef4bca11fbd10b953f0417ec6f` |
+| 2 | `structure` | [PrimitiveCore](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MUSNamespacedUnsatCore.lean/declarations/primitivecore.md) | 43 | `declaration-track:6b850d54a9d2f37fefd15815cac1c3606a90f5c50b772b0864ad797001e4a484` |
+| 3 | `theorem` | [PrimitiveCore.primitive_core_unsatisfiable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MUSNamespacedUnsatCore.lean/declarations/primitivecore-primitive-core-unsatisfiable.md) | 60 | `result-track:0a52896be6837fe616abb2aa2fda3f2b8c87b3ff36cdad224ed10201c32039a9` |
+| 4 | `theorem` | [PrimitiveCore.every_proper_subset_feasible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MUSNamespacedUnsatCore.lean/declarations/primitivecore-every-proper-subset-feasible.md) | 76 | `result-track:d172e979fadda7827be417d0a126a3dba1a2cffc3b769776ad64baf84d0316f1` |
+| 5 | `def` | [primitive_of_all_proper_subsets](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MUSNamespacedUnsatCore.lean/declarations/primitive-of-all-proper-subsets.md) | 103 | `declaration-track:ab1bb5068c3b1515b1a9df3cd938ca0a010f5702c8122e4e05d1c4d1334f6337` |
+| 6 | `def` | [PrimitiveCore.extendRegistry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MUSNamespacedUnsatCore.lean/declarations/primitivecore-extendregistry.md) | 128 | `declaration-track:e62aac2309612289d7c2a66569689ee2864917bb7d29469c303e453361ac33b3` |
+| 7 | `abbrev` | [PrimitiveCoreAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MUSNamespacedUnsatCore.lean/declarations/primitivecoreat.md) | 155 | `declaration-track:2c0de5caa8b65803a37febd809e96c899b13eabf856828818c0ea32c61290014` |
+| 8 | `abbrev` | [ExtractedPrimitiveCore](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MUSNamespacedUnsatCore.lean/declarations/extractedprimitivecore.md) | 166 | `declaration-track:02d6f9161e9efd35ab67881916d1b2d8ec14ed3cb3c505cad4d8273581d94839` |
+| 9 | `structure` | [MUSExtractor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MUSNamespacedUnsatCore.lean/declarations/musextractor.md) | 179 | `declaration-track:fd34eacf1df4e69e3a1ffd002d8e7c8e2a04dd1c13bb3ffde8ceb86b89474e7a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

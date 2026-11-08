@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/WallisAligned.lean/index.md) · [Full source](../../../../RealFunctions/WallisAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/WallisAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/WallisAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `macro_rules` | [(anonymous)](../../../../RealFunctions/WallisAligned.lean/declarations/macro-rules.md) | 43 | `declaration-track:d3de597fc36b42e446f25b8f214f2771e61d25420624a1dc99bef9950a1a2e8a` |
-| 2 | `def` | [W](../../../../RealFunctions/WallisAligned.lean/declarations/w.md) | 48 | `declaration-track:e8b3d782889879cc7960022cf046f5be095f4499573188b714e37c1081923651` |
-| 3 | `theorem` | [W_succ](../../../../RealFunctions/WallisAligned.lean/declarations/w-succ.md) | 52 | `result-track:d8dddb72d96745460e3be2ee7e5eb742d81f172d4b246c86ceb8a0cb66cf7945` |
-| 4 | `theorem` | [W_pos](../../../../RealFunctions/WallisAligned.lean/declarations/w-pos.md) | 57 | `result-track:9f47657b99a2e024ce49b140778a1c752f0d122ea76885dd09e297e8d56fa976` |
-| 5 | `theorem` | [W_eq_factorial_ratio](../../../../RealFunctions/WallisAligned.lean/declarations/w-eq-factorial-ratio.md) | 64 | `result-track:9acfc83ec40bdbe2790121f876ec70da79b822cd25a2ad557df331559df28c46` |
-| 6 | `theorem` | [W_eq_integral_sin_pow_div_integral_sin_pow](../../../../RealFunctions/WallisAligned.lean/declarations/w-eq-integral-sin-pow-div-integral-sin-pow.md) | 80 | `result-track:a3b1b651e63fbff01bac73e3cfa0982291394728776348ff8176a8f7d93a0859` |
-| 7 | `theorem` | [W_le](../../../../RealFunctions/WallisAligned.lean/declarations/w-le.md) | 87 | `result-track:69495f50ba000008298cf9c08f04e62d68f2b4c4566a1c6d7a79619398bf5c34` |
-| 8 | `theorem` | [le_W](../../../../RealFunctions/WallisAligned.lean/declarations/le-w.md) | 93 | `result-track:ddeca159b4e5543e4be0f70bca32d07b70049e023f4d99ebb149d912e04790f2` |
-| 9 | `theorem` | [tendsto_W_nhds_pi_div_two](../../../../RealFunctions/WallisAligned.lean/declarations/tendsto-w-nhds-pi-div-two.md) | 103 | `result-track:c3e187bb4d2cc37aaaac986239860886f66d100b3f9d2e3af747aa5ad9c61700` |
-| 10 | `theorem` | [Real.tendsto_prod_pi_div_two](../../../../RealFunctions/WallisAligned.lean/declarations/real-tendsto-prod-pi-div-two.md) | 124 | `result-track:a541398d59210cf6b61104f32ed46232d7297d7f883afff8617f2aefd6bc5ad3` |
+| 1 | `macro_rules` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/WallisAligned.lean/declarations/macro-rules.md) | 43 | `declaration-track:d3de597fc36b42e446f25b8f214f2771e61d25420624a1dc99bef9950a1a2e8a` |
+| 2 | `def` | [W](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/WallisAligned.lean/declarations/w.md) | 48 | `declaration-track:e8b3d782889879cc7960022cf046f5be095f4499573188b714e37c1081923651` |
+| 3 | `theorem` | [W_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/WallisAligned.lean/declarations/w-succ.md) | 52 | `result-track:d8dddb72d96745460e3be2ee7e5eb742d81f172d4b246c86ceb8a0cb66cf7945` |
+| 4 | `theorem` | [W_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/WallisAligned.lean/declarations/w-pos.md) | 57 | `result-track:9f47657b99a2e024ce49b140778a1c752f0d122ea76885dd09e297e8d56fa976` |
+| 5 | `theorem` | [W_eq_factorial_ratio](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/WallisAligned.lean/declarations/w-eq-factorial-ratio.md) | 64 | `result-track:9acfc83ec40bdbe2790121f876ec70da79b822cd25a2ad557df331559df28c46` |
+| 6 | `theorem` | [W_eq_integral_sin_pow_div_integral_sin_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/WallisAligned.lean/declarations/w-eq-integral-sin-pow-div-integral-sin-pow.md) | 80 | `result-track:a3b1b651e63fbff01bac73e3cfa0982291394728776348ff8176a8f7d93a0859` |
+| 7 | `theorem` | [W_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/WallisAligned.lean/declarations/w-le.md) | 87 | `result-track:69495f50ba000008298cf9c08f04e62d68f2b4c4566a1c6d7a79619398bf5c34` |
+| 8 | `theorem` | [le_W](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/WallisAligned.lean/declarations/le-w.md) | 93 | `result-track:ddeca159b4e5543e4be0f70bca32d07b70049e023f4d99ebb149d912e04790f2` |
+| 9 | `theorem` | [tendsto_W_nhds_pi_div_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/WallisAligned.lean/declarations/tendsto-w-nhds-pi-div-two.md) | 103 | `result-track:c3e187bb4d2cc37aaaac986239860886f66d100b3f9d2e3af747aa5ad9c61700` |
+| 10 | `theorem` | [Real.tendsto_prod_pi_div_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/WallisAligned.lean/declarations/real-tendsto-prod-pi-div-two.md) | 124 | `result-track:a541398d59210cf6b61104f32ed46232d7297d7f883afff8617f2aefd6bc5ad3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

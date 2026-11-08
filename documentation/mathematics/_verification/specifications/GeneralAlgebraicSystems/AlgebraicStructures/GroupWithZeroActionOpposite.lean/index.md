@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionOpposite.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionOpposite.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionOpposite.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionOpposite.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,12 +60,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [instSMulZeroClass](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionOpposite.lean/declarations/instsmulzeroclass.md) | 41 | `declaration-track:8284b294fea389fc03252eb58babf528e64625365c86743198c6b642be4ea05e` |
-| 2 | `instance` | [instSMulWithZero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionOpposite.lean/declarations/instsmulwithzero.md) | 44 | `declaration-track:1eca98dbacbc7f1b0b8ccd23dea5ebd7e1d47b7536dad9a250d4dd8bda617e15` |
-| 3 | `instance` | [instMulActionWithZero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionOpposite.lean/declarations/instmulactionwithzero.md) | 48 | `declaration-track:a71c977251768a8a0d730880cecd83910f6c09b4a4bc8998ea727c6ab2a7080f` |
-| 4 | `instance` | [instDistribMulAction](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionOpposite.lean/declarations/instdistribmulaction.md) | 53 | `declaration-track:b0a1523fd87f60b2879eeafc60fc97cf034d75410a3da2182c19dc304c353887` |
-| 5 | `instance` | [instMulDistribMulAction](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionOpposite.lean/declarations/instmuldistribmulaction.md) | 58 | `declaration-track:65b781dc5ad1aebc7860181a9c65a4cdcb4865dff61bc7c081aa08418e558ac2` |
-| 6 | `instance` | [CancelMonoidWithZero.toFaithfulSMul_opposite](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionOpposite.lean/declarations/cancelmonoidwithzero-tofaithfulsmul-opposite.md) | 76 | `declaration-track:4cab17b7ba12ce7aede099bc5b2f7cae45463e76ffc3a41290d7d81cbe2c44ff` |
+| 1 | `instance` | [instSMulZeroClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionOpposite.lean/declarations/instsmulzeroclass.md) | 41 | `declaration-track:8284b294fea389fc03252eb58babf528e64625365c86743198c6b642be4ea05e` |
+| 2 | `instance` | [instSMulWithZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionOpposite.lean/declarations/instsmulwithzero.md) | 44 | `declaration-track:1eca98dbacbc7f1b0b8ccd23dea5ebd7e1d47b7536dad9a250d4dd8bda617e15` |
+| 3 | `instance` | [instMulActionWithZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionOpposite.lean/declarations/instmulactionwithzero.md) | 48 | `declaration-track:a71c977251768a8a0d730880cecd83910f6c09b4a4bc8998ea727c6ab2a7080f` |
+| 4 | `instance` | [instDistribMulAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionOpposite.lean/declarations/instdistribmulaction.md) | 53 | `declaration-track:b0a1523fd87f60b2879eeafc60fc97cf034d75410a3da2182c19dc304c353887` |
+| 5 | `instance` | [instMulDistribMulAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionOpposite.lean/declarations/instmuldistribmulaction.md) | 58 | `declaration-track:65b781dc5ad1aebc7860181a9c65a4cdcb4865dff61bc7c081aa08418e558ac2` |
+| 6 | `instance` | [CancelMonoidWithZero.toFaithfulSMul_opposite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroActionOpposite.lean/declarations/cancelmonoidwithzero-tofaithfulsmul-opposite.md) | 76 | `declaration-track:4cab17b7ba12ce7aede099bc5b2f7cae45463e76ffc3a41290d7d81cbe2c44ff` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

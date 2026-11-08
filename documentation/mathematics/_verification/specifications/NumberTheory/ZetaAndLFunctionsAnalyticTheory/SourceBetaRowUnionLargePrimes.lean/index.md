@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceBetaRowUnionLargePrimes.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceBetaRowUnionLargePrimes.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceBetaRowUnionLargePrimes.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceBetaRowUnionLargePrimes.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [betaRow_union_large_primes](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceBetaRowUnionLargePrimes.lean/declarations/betarow-union-large-primes.md) | 23 | `result-track:f754f7935019ffb88e118d5dfb7130457fcccebe8c7dc120a11be3b94e5ea652` |
-| 2 | `theorem` | [readout_union_large_primes](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceBetaRowUnionLargePrimes.lean/declarations/readout-union-large-primes.md) | 50 | `result-track:1a5ae2a6e0a51b28962e6669077d40d03de3cd85f52b5b8da6ed4e058cb9c444` |
-| 3 | `theorem` | [actual_readout_large_prime_sum](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceBetaRowUnionLargePrimes.lean/declarations/actual-readout-large-prime-sum.md) | 82 | `result-track:113ca6e4a350996381e9b3d47954665ac3971e846975dcfdb9b3d905707e586b` |
+| 1 | `theorem` | [betaRow_union_large_primes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceBetaRowUnionLargePrimes.lean/declarations/betarow-union-large-primes.md) | 23 | `result-track:f754f7935019ffb88e118d5dfb7130457fcccebe8c7dc120a11be3b94e5ea652` |
+| 2 | `theorem` | [readout_union_large_primes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceBetaRowUnionLargePrimes.lean/declarations/readout-union-large-primes.md) | 50 | `result-track:1a5ae2a6e0a51b28962e6669077d40d03de3cd85f52b5b8da6ed4e058cb9c444` |
+| 3 | `theorem` | [actual_readout_large_prime_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceBetaRowUnionLargePrimes.lean/declarations/actual-readout-large-prime-sum.md) | 82 | `result-track:113ca6e4a350996381e9b3d47954665ac3971e846975dcfdb9b3d905707e586b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

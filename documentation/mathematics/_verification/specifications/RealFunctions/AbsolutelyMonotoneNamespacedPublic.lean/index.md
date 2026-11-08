@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/AbsolutelyMonotoneNamespacedPublic.lean/index.md) · [Full source](../../../../RealFunctions/AbsolutelyMonotoneNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AbsolutelyMonotoneNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AbsolutelyMonotoneNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [AbsolutelyMonotoneOn](../../../../RealFunctions/AbsolutelyMonotoneNamespacedPublic.lean/declarations/absolutelymonotoneon.md) | 65 | `declaration-track:08d1e0f6e8b49ace0c774531d0f9635200180f5ca8ce2880dac478fbce1553c8` |
-| 2 | `theorem` | [contDiffOn](../../../../RealFunctions/AbsolutelyMonotoneNamespacedPublic.lean/declarations/contdiffon.md) | 75 | `result-track:ea3060fdee5ccc76f163f9be4ae0c60eeb3d306e3e77744abafebc263f59882d` |
-| 3 | `theorem` | [of_contDiff](../../../../RealFunctions/AbsolutelyMonotoneNamespacedPublic.lean/declarations/of-contdiff.md) | 81 | `result-track:20388fd84e5d0f3985eda4ae248778499aa1217c3456b3326b5d82489905f91d` |
-| 4 | `theorem` | [iteratedDerivWithin_nonneg](../../../../RealFunctions/AbsolutelyMonotoneNamespacedPublic.lean/declarations/iteratedderivwithin-nonneg.md) | 88 | `result-track:3d1760e918b082faa2f6c3a0e8e0d1300fd0cfbb720f1869269c85c1e03ef4a4` |
-| 5 | `theorem` | [iff_iteratedDerivWithin_nonneg](../../../../RealFunctions/AbsolutelyMonotoneNamespacedPublic.lean/declarations/iff-iteratedderivwithin-nonneg.md) | 98 | `result-track:b0a749eb601854f3dcd4540f96ec2a4a1518909e45c96699e2b53328b03a889b` |
-| 6 | `theorem` | [add](../../../../RealFunctions/AbsolutelyMonotoneNamespacedPublic.lean/declarations/add.md) | 109 | `result-track:a58ce28e54808fd582210ec7c0439e260ab88746d826c59496bef5d0856d3d75` |
-| 7 | `theorem` | [smul](../../../../RealFunctions/AbsolutelyMonotoneNamespacedPublic.lean/declarations/smul.md) | 118 | `result-track:f5bb07d0d07f03cfd52e247fb6117b1ee4010d4ab76b90cbfdf91b41d9d80449` |
+| 1 | `def` | [AbsolutelyMonotoneOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AbsolutelyMonotoneNamespacedPublic.lean/declarations/absolutelymonotoneon.md) | 65 | `declaration-track:08d1e0f6e8b49ace0c774531d0f9635200180f5ca8ce2880dac478fbce1553c8` |
+| 2 | `theorem` | [contDiffOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AbsolutelyMonotoneNamespacedPublic.lean/declarations/contdiffon.md) | 75 | `result-track:ea3060fdee5ccc76f163f9be4ae0c60eeb3d306e3e77744abafebc263f59882d` |
+| 3 | `theorem` | [of_contDiff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AbsolutelyMonotoneNamespacedPublic.lean/declarations/of-contdiff.md) | 81 | `result-track:20388fd84e5d0f3985eda4ae248778499aa1217c3456b3326b5d82489905f91d` |
+| 4 | `theorem` | [iteratedDerivWithin_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AbsolutelyMonotoneNamespacedPublic.lean/declarations/iteratedderivwithin-nonneg.md) | 88 | `result-track:3d1760e918b082faa2f6c3a0e8e0d1300fd0cfbb720f1869269c85c1e03ef4a4` |
+| 5 | `theorem` | [iff_iteratedDerivWithin_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AbsolutelyMonotoneNamespacedPublic.lean/declarations/iff-iteratedderivwithin-nonneg.md) | 98 | `result-track:b0a749eb601854f3dcd4540f96ec2a4a1518909e45c96699e2b53328b03a889b` |
+| 6 | `theorem` | [add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AbsolutelyMonotoneNamespacedPublic.lean/declarations/add.md) | 109 | `result-track:a58ce28e54808fd582210ec7c0439e260ab88746d826c59496bef5d0856d3d75` |
+| 7 | `theorem` | [smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AbsolutelyMonotoneNamespacedPublic.lean/declarations/smul.md) | 118 | `result-track:f5bb07d0d07f03cfd52e247fb6117b1ee4010d4ab76b90cbfdf91b41d9d80449` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

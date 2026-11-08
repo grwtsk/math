@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/RawPairedOscillation.lean/index.md) · [Full source](../../../../MeasureAndIntegration/RawPairedOscillation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RawPairedOscillation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RawPairedOscillation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Chebyshev.RawSymmetricAverages`](../../../../MeasureAndIntegration/RawSymmetricAverages.lean/index.md) — import line 3; pinned internal source present.
-- [`GRWTSK.Analysis.Real.ClassicalRawCorrection`](../../../../RealFunctions/ClassicalRawCorrection.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.RawSymmetricAverages`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RawSymmetricAverages.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.Analysis.Real.ClassicalRawCorrection`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ClassicalRawCorrection.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [rawClassicalHead_eq_log_correction](../../../../MeasureAndIntegration/RawPairedOscillation.lean/declarations/rawclassicalhead-eq-log-correction.md) | 18 | `result-track:cb7183958b1b482a7e654eb92b3f424cd76b879b3b23db13cfd06770525733a3` |
-| 2 | `def` | [pairedOscillation](../../../../MeasureAndIntegration/RawPairedOscillation.lean/declarations/pairedoscillation.md) | 26 | `declaration-track:ac1dd6c6ed1f3ab81aa0a954d81039db4bca20e58c2c46edd8dd0cf1d2cb7332` |
-| 3 | `def` | [jumpProfile](../../../../MeasureAndIntegration/RawPairedOscillation.lean/declarations/jumpprofile.md) | 30 | `declaration-track:b7a82bd992c5451a6f52263ffab0b9bd3843a9f26e6fdb07b4fb250f88fff57b` |
-| 4 | `theorem` | [jumpProfile_pair](../../../../MeasureAndIntegration/RawPairedOscillation.lean/declarations/jumpprofile-pair.md) | 32 | `result-track:1eb2f2bea5d0bcc2ac63cc18bc7992b258cc2b4f3840595e8a0d14e525ae3d9b` |
-| 5 | `theorem` | [norm_average_sub_point_le_paired](../../../../MeasureAndIntegration/RawPairedOscillation.lean/declarations/norm-average-sub-point-le-paired.md) | 39 | `result-track:7198077a90ec1ddcff60e026945dbe11ee6b3e8f51b6a5c758e7a5b1851f5587` |
-| 6 | `theorem` | [norm_source_sub_raw_le_paired](../../../../MeasureAndIntegration/RawPairedOscillation.lean/declarations/norm-source-sub-raw-le-paired.md) | 74 | `result-track:a349ba750612f197f4e54810400fc0cbd58f0b831f558876c32879e7e44331b8` |
-| 7 | `theorem` | [exists_raw_reconstruction_paired](../../../../MeasureAndIntegration/RawPairedOscillation.lean/declarations/exists-raw-reconstruction-paired.md) | 82 | `result-track:b457da744b2501a545a2111e5f527f56888b06253281eb269ccfd6b51745a435` |
+| 1 | `theorem` | [rawClassicalHead_eq_log_correction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RawPairedOscillation.lean/declarations/rawclassicalhead-eq-log-correction.md) | 18 | `result-track:cb7183958b1b482a7e654eb92b3f424cd76b879b3b23db13cfd06770525733a3` |
+| 2 | `def` | [pairedOscillation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RawPairedOscillation.lean/declarations/pairedoscillation.md) | 26 | `declaration-track:ac1dd6c6ed1f3ab81aa0a954d81039db4bca20e58c2c46edd8dd0cf1d2cb7332` |
+| 3 | `def` | [jumpProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RawPairedOscillation.lean/declarations/jumpprofile.md) | 30 | `declaration-track:b7a82bd992c5451a6f52263ffab0b9bd3843a9f26e6fdb07b4fb250f88fff57b` |
+| 4 | `theorem` | [jumpProfile_pair](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RawPairedOscillation.lean/declarations/jumpprofile-pair.md) | 32 | `result-track:1eb2f2bea5d0bcc2ac63cc18bc7992b258cc2b4f3840595e8a0d14e525ae3d9b` |
+| 5 | `theorem` | [norm_average_sub_point_le_paired](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RawPairedOscillation.lean/declarations/norm-average-sub-point-le-paired.md) | 39 | `result-track:7198077a90ec1ddcff60e026945dbe11ee6b3e8f51b6a5c758e7a5b1851f5587` |
+| 6 | `theorem` | [norm_source_sub_raw_le_paired](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RawPairedOscillation.lean/declarations/norm-source-sub-raw-le-paired.md) | 74 | `result-track:a349ba750612f197f4e54810400fc0cbd58f0b831f558876c32879e7e44331b8` |
+| 7 | `theorem` | [exists_raw_reconstruction_paired](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RawPairedOscillation.lean/declarations/exists-raw-reconstruction-paired.md) | 82 | `result-track:b457da744b2501a545a2111e5f527f56888b06253281eb269ccfd6b51745a435` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

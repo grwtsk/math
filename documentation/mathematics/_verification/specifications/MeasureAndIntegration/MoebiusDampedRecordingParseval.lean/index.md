@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/MoebiusDampedRecordingParseval.lean/index.md) · [Full source](../../../../MeasureAndIntegration/MoebiusDampedRecordingParseval.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MoebiusDampedRecordingParseval.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MoebiusDampedRecordingParseval.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Fourier.AngularFrequencyParseval`](../../../../MeasureAndIntegration/AngularFrequencyParseval.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Moebius.FinitePrimeProductDebt`](../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/FinitePrimeProductDebt.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Fourier.AngularFrequencyParseval`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AngularFrequencyParseval.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.FinitePrimeProductDebt`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/FinitePrimeProductDebt.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,17 +58,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [window](../../../../MeasureAndIntegration/MoebiusDampedRecordingParseval.lean/declarations/window.md) | 32 | `declaration-track:6992f42411af764b389062a4fb87781573ab6c16c2cd36e07c563f15c1805791` |
-| 2 | `theorem` | [window_base_continuous](../../../../MeasureAndIntegration/MoebiusDampedRecordingParseval.lean/declarations/window-base-continuous.md) | 36 | `result-track:87b4c29e09101f801989018d6065c1515b74950071d0a423938f809c84ccccfc` |
-| 3 | `theorem` | [window_integrable](../../../../MeasureAndIntegration/MoebiusDampedRecordingParseval.lean/declarations/window-integrable.md) | 45 | `result-track:352d99bc783652a4d92df52fd003161b96be2578eade93e98804458afa5262a9` |
-| 4 | `theorem` | [window_memLp_two](../../../../MeasureAndIntegration/MoebiusDampedRecordingParseval.lean/declarations/window-memlp-two.md) | 49 | `result-track:71d9b0707ba853cf3d0ec64cda985da59b5e4e68f3795ed6e99e3db927df70dc` |
-| 5 | `theorem` | [rawFourier_window](../../../../MeasureAndIntegration/MoebiusDampedRecordingParseval.lean/declarations/rawfourier-window.md) | 70 | `result-track:cb547a59247e6096b35eea01a78e4e8d1fd60c940e454ca61f7a864189c0c021` |
-| 6 | `theorem` | [window_norm_sq_integral](../../../../MeasureAndIntegration/MoebiusDampedRecordingParseval.lean/declarations/window-norm-sq-integral.md) | 108 | `result-track:410adefd4045e4390630c31a26ba7281c4a0e717191ad9c7f3cf480dd487e740` |
-| 7 | `theorem` | [verticalLine_parseval](../../../../MeasureAndIntegration/MoebiusDampedRecordingParseval.lean/declarations/verticalline-parseval.md) | 128 | `result-track:6ef13ca6cddecc03d014881ab0fd5c5209c0225aa3a5fd8ea5ff55ae38e2d57b` |
-| 8 | `theorem` | [verticalZ_ne_zero](../../../../MeasureAndIntegration/MoebiusDampedRecordingParseval.lean/declarations/verticalz-ne-zero.md) | 139 | `result-track:e96de65dcedebe73a1ac9cc829a6c12354c656e49fa358e2c7b7184461710caf` |
-| 9 | `theorem` | [verticalS_ne_zero](../../../../MeasureAndIntegration/MoebiusDampedRecordingParseval.lean/declarations/verticals-ne-zero.md) | 148 | `result-track:a99d547f000f8b3de7cf2895a3f192e09ccd28d4c8bcc445427b6176367eaf5f` |
-| 10 | `theorem` | [verticalLine_completed_formula](../../../../MeasureAndIntegration/MoebiusDampedRecordingParseval.lean/declarations/verticalline-completed-formula.md) | 157 | `result-track:d9f59def4d18ccd7464b03374e338ba545f5b9daa0777ac620d61630feb7e256` |
-| 11 | `theorem` | [completedNumerator_verticalLine_parseval](../../../../MeasureAndIntegration/MoebiusDampedRecordingParseval.lean/declarations/completednumerator-verticalline-parseval.md) | 174 | `result-track:70aaea5861af79005a022b8120f4a225f9a9992041357e5e83f87b4eeb023686` |
+| 1 | `def` | [window](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MoebiusDampedRecordingParseval.lean/declarations/window.md) | 32 | `declaration-track:6992f42411af764b389062a4fb87781573ab6c16c2cd36e07c563f15c1805791` |
+| 2 | `theorem` | [window_base_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MoebiusDampedRecordingParseval.lean/declarations/window-base-continuous.md) | 36 | `result-track:87b4c29e09101f801989018d6065c1515b74950071d0a423938f809c84ccccfc` |
+| 3 | `theorem` | [window_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MoebiusDampedRecordingParseval.lean/declarations/window-integrable.md) | 45 | `result-track:352d99bc783652a4d92df52fd003161b96be2578eade93e98804458afa5262a9` |
+| 4 | `theorem` | [window_memLp_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MoebiusDampedRecordingParseval.lean/declarations/window-memlp-two.md) | 49 | `result-track:71d9b0707ba853cf3d0ec64cda985da59b5e4e68f3795ed6e99e3db927df70dc` |
+| 5 | `theorem` | [rawFourier_window](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MoebiusDampedRecordingParseval.lean/declarations/rawfourier-window.md) | 70 | `result-track:cb547a59247e6096b35eea01a78e4e8d1fd60c940e454ca61f7a864189c0c021` |
+| 6 | `theorem` | [window_norm_sq_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MoebiusDampedRecordingParseval.lean/declarations/window-norm-sq-integral.md) | 108 | `result-track:410adefd4045e4390630c31a26ba7281c4a0e717191ad9c7f3cf480dd487e740` |
+| 7 | `theorem` | [verticalLine_parseval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MoebiusDampedRecordingParseval.lean/declarations/verticalline-parseval.md) | 128 | `result-track:6ef13ca6cddecc03d014881ab0fd5c5209c0225aa3a5fd8ea5ff55ae38e2d57b` |
+| 8 | `theorem` | [verticalZ_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MoebiusDampedRecordingParseval.lean/declarations/verticalz-ne-zero.md) | 139 | `result-track:e96de65dcedebe73a1ac9cc829a6c12354c656e49fa358e2c7b7184461710caf` |
+| 9 | `theorem` | [verticalS_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MoebiusDampedRecordingParseval.lean/declarations/verticals-ne-zero.md) | 148 | `result-track:a99d547f000f8b3de7cf2895a3f192e09ccd28d4c8bcc445427b6176367eaf5f` |
+| 10 | `theorem` | [verticalLine_completed_formula](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MoebiusDampedRecordingParseval.lean/declarations/verticalline-completed-formula.md) | 157 | `result-track:d9f59def4d18ccd7464b03374e338ba545f5b9daa0777ac620d61630feb7e256` |
+| 11 | `theorem` | [completedNumerator_verticalLine_parseval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MoebiusDampedRecordingParseval.lean/declarations/completednumerator-verticalline-parseval.md) | 174 | `result-track:70aaea5861af79005a022b8120f4a225f9a9992041357e5e83f87b4eeb023686` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

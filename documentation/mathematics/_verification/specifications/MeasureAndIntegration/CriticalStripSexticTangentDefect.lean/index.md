@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CriticalStripSexticTangentDefect.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CriticalStripSexticTangentDefect.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripSexticTangentDefect.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripSexticTangentDefect.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripSexticBernsteinMass`](../../../../MeasureAndIntegration/CriticalStripSexticBernsteinMass.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripSexticBernsteinMass`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripSexticBernsteinMass.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Analysis.SpecialFunctions.Log.Basic` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [tangent7_le](../../../../MeasureAndIntegration/CriticalStripSexticTangentDefect.lean/declarations/tangent7-le.md) | 24 | `result-track:a1888e8402827a2b197a662be45c8535e44edd6cc7fb3e608750ec82ed37ec70` |
-| 2 | `lemma` | [tangent8_le](../../../../MeasureAndIntegration/CriticalStripSexticTangentDefect.lean/declarations/tangent8-le.md) | 36 | `result-track:dcfc17e5513e49ec71c4d2d8909ff8622aee3179ac13200906302ae114021569` |
-| 3 | `lemma` | [variable_weight_lower](../../../../MeasureAndIntegration/CriticalStripSexticTangentDefect.lean/declarations/variable-weight-lower.md) | 49 | `result-track:2ca56c06e7ade2eb2385768bb30e6ccebcc54a4b964b6d1a0ea6f49dc3bb90ea` |
-| 4 | `lemma` | [defect_lower_on_subcell](../../../../MeasureAndIntegration/CriticalStripSexticTangentDefect.lean/declarations/defect-lower-on-subcell.md) | 83 | `result-track:91f5a446a9f05a96616ec6f9743ecd4755fab3f0081a7c7300451d549f832cba` |
-| 5 | `lemma` | [subcell_integral_lower](../../../../MeasureAndIntegration/CriticalStripSexticTangentDefect.lean/declarations/subcell-integral-lower.md) | 106 | `result-track:f1d1c413dc89a757631a9972904abf0dfe2ac2e8c73210a8a17621fee72d495d` |
-| 6 | `lemma` | [first_cell_lower](../../../../MeasureAndIntegration/CriticalStripSexticTangentDefect.lean/declarations/first-cell-lower.md) | 127 | `result-track:dab399b29d9bfacaf3ebe074f60ece11ff9139520ec7cbbeaf8e8208bec251b8` |
-| 7 | `lemma` | [full_defect_lower](../../../../MeasureAndIntegration/CriticalStripSexticTangentDefect.lean/declarations/full-defect-lower.md) | 144 | `result-track:ffe1ad35eeaf260cc469648559b229b8bf32471f4763bff136fc15c08d52526e` |
-| 8 | `lemma` | [normalized_saving](../../../../MeasureAndIntegration/CriticalStripSexticTangentDefect.lean/declarations/normalized-saving.md) | 171 | `result-track:bfd3d6d694275febde43a75b0f0b1df8f73c1f30abdd2736dacdf14ed8736d09` |
-| 9 | `theorem` | [first_tail_improved](../../../../MeasureAndIntegration/CriticalStripSexticTangentDefect.lean/declarations/first-tail-improved.md) | 178 | `result-track:0037705a6c0e9f82d2a873a3e3175a234571e8ed3f4a6b510f3709bdedf23955` |
+| 1 | `lemma` | [tangent7_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripSexticTangentDefect.lean/declarations/tangent7-le.md) | 24 | `result-track:a1888e8402827a2b197a662be45c8535e44edd6cc7fb3e608750ec82ed37ec70` |
+| 2 | `lemma` | [tangent8_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripSexticTangentDefect.lean/declarations/tangent8-le.md) | 36 | `result-track:dcfc17e5513e49ec71c4d2d8909ff8622aee3179ac13200906302ae114021569` |
+| 3 | `lemma` | [variable_weight_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripSexticTangentDefect.lean/declarations/variable-weight-lower.md) | 49 | `result-track:2ca56c06e7ade2eb2385768bb30e6ccebcc54a4b964b6d1a0ea6f49dc3bb90ea` |
+| 4 | `lemma` | [defect_lower_on_subcell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripSexticTangentDefect.lean/declarations/defect-lower-on-subcell.md) | 83 | `result-track:91f5a446a9f05a96616ec6f9743ecd4755fab3f0081a7c7300451d549f832cba` |
+| 5 | `lemma` | [subcell_integral_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripSexticTangentDefect.lean/declarations/subcell-integral-lower.md) | 106 | `result-track:f1d1c413dc89a757631a9972904abf0dfe2ac2e8c73210a8a17621fee72d495d` |
+| 6 | `lemma` | [first_cell_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripSexticTangentDefect.lean/declarations/first-cell-lower.md) | 127 | `result-track:dab399b29d9bfacaf3ebe074f60ece11ff9139520ec7cbbeaf8e8208bec251b8` |
+| 7 | `lemma` | [full_defect_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripSexticTangentDefect.lean/declarations/full-defect-lower.md) | 144 | `result-track:ffe1ad35eeaf260cc469648559b229b8bf32471f4763bff136fc15c08d52526e` |
+| 8 | `lemma` | [normalized_saving](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripSexticTangentDefect.lean/declarations/normalized-saving.md) | 171 | `result-track:bfd3d6d694275febde43a75b0f0b1df8f73c1f30abdd2736dacdf14ed8736d09` |
+| 9 | `theorem` | [first_tail_improved](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripSexticTangentDefect.lean/declarations/first-tail-improved.md) | 178 | `result-track:0037705a6c0e9f82d2a873a3e3175a234571e8ed3f4a6b510f3709bdedf23955` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

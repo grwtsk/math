@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/TaoPNTLi2.lean/index.md) · [Full source](../../../../MeasureAndIntegration/TaoPNTLi2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TaoPNTLi2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TaoPNTLi2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [symmetric_combination_removable_singularity](../../../../MeasureAndIntegration/TaoPNTLi2.lean/declarations/symmetric-combination-removable-singularity.md) | 34 | `result-track:c8c8d15d90c124215f01462c424f5aafea608d4c2956eabf949bddc150d5c06e` |
-| 2 | `theorem` | [symmetric_combination_bounded](../../../../MeasureAndIntegration/TaoPNTLi2.lean/declarations/symmetric-combination-bounded.md) | 41 | `result-track:798882914ca9118d8c5b8b03de0c0422b524c83048366f35caaa3e8ce78283c6` |
-| 3 | `theorem` | [symmetric_combination_alt_form](../../../../MeasureAndIntegration/TaoPNTLi2.lean/declarations/symmetric-combination-alt-form.md) | 46 | `result-track:954c0d783df3931f29d41fe0dbbe8846380253841184408bb90b53821c6aacb0` |
-| 4 | `def` | [li2](../../../../MeasureAndIntegration/TaoPNTLi2.lean/declarations/li2.md) | 65 | `declaration-track:efc7226d1ac26b34c8e9a44c7840ba2a24c9e52da1097506b5d771452cae2dad` |
-| 5 | `theorem` | [li2_le_two](../../../../MeasureAndIntegration/TaoPNTLi2.lean/declarations/li2-le-two.md) | 74 | `result-track:03fd257097647cceadd8015ed8131eebceb62822ebc1a950fdc7667d33d8d177` |
-| 6 | `theorem` | [li2_pos](../../../../MeasureAndIntegration/TaoPNTLi2.lean/declarations/li2-pos.md) | 78 | `result-track:0f9a41d20c13ef60d2ef1d70ed492ec9990c6014717d6e9e94d49e858289aed7` |
+| 1 | `theorem` | [symmetric_combination_removable_singularity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TaoPNTLi2.lean/declarations/symmetric-combination-removable-singularity.md) | 34 | `result-track:c8c8d15d90c124215f01462c424f5aafea608d4c2956eabf949bddc150d5c06e` |
+| 2 | `theorem` | [symmetric_combination_bounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TaoPNTLi2.lean/declarations/symmetric-combination-bounded.md) | 41 | `result-track:798882914ca9118d8c5b8b03de0c0422b524c83048366f35caaa3e8ce78283c6` |
+| 3 | `theorem` | [symmetric_combination_alt_form](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TaoPNTLi2.lean/declarations/symmetric-combination-alt-form.md) | 46 | `result-track:954c0d783df3931f29d41fe0dbbe8846380253841184408bb90b53821c6aacb0` |
+| 4 | `def` | [li2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TaoPNTLi2.lean/declarations/li2.md) | 65 | `declaration-track:efc7226d1ac26b34c8e9a44c7840ba2a24c9e52da1097506b5d771452cae2dad` |
+| 5 | `theorem` | [li2_le_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TaoPNTLi2.lean/declarations/li2-le-two.md) | 74 | `result-track:03fd257097647cceadd8015ed8131eebceb62822ebc1a950fdc7667d33d8d177` |
+| 6 | `theorem` | [li2_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TaoPNTLi2.lean/declarations/li2-pos.md) | 78 | `result-track:0f9a41d20c13ef60d2ef1d70ed492ec9990c6014717d6e9e94d49e858289aed7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

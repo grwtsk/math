@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ControllerRHTransport.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ControllerRHTransport.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ControllerRHTransport.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ControllerRHTransport.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,10 +60,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [nontrivial_re_le_half_of_mass_subsequence](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ControllerRHTransport.lean/declarations/nontrivial-re-le-half-of-mass-subsequence.md) | 21 | `result-track:3b94e195a2d94921d7d66f2cc41e74acfb340b58ce1b6402ca73c207b1940579` |
-| 2 | `theorem` | [nontrivial_re_eq_half_of_mass_subsequence](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ControllerRHTransport.lean/declarations/nontrivial-re-eq-half-of-mass-subsequence.md) | 34 | `result-track:39a4cf40af0c1f5689014f68e350cbf7f24ae18e55c9c00bd370b8b53d3cec57` |
-| 3 | `theorem` | [conditional_rh_of_mass_subsequence](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ControllerRHTransport.lean/declarations/conditional-rh-of-mass-subsequence.md) | 45 | `result-track:33d1d467f990fba8cad9ca3c72d99d5597a59b788a0d855a9d6ad861c0df0752` |
-| 4 | `theorem` | [conditional_rh_of_full_residual](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ControllerRHTransport.lean/declarations/conditional-rh-of-full-residual.md) | 56 | `result-track:8a970749383e1b435d4198056fce0a995911bb0dd9af1283efb223bb6b34a8c0` |
+| 1 | `theorem` | [nontrivial_re_le_half_of_mass_subsequence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ControllerRHTransport.lean/declarations/nontrivial-re-le-half-of-mass-subsequence.md) | 21 | `result-track:3b94e195a2d94921d7d66f2cc41e74acfb340b58ce1b6402ca73c207b1940579` |
+| 2 | `theorem` | [nontrivial_re_eq_half_of_mass_subsequence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ControllerRHTransport.lean/declarations/nontrivial-re-eq-half-of-mass-subsequence.md) | 34 | `result-track:39a4cf40af0c1f5689014f68e350cbf7f24ae18e55c9c00bd370b8b53d3cec57` |
+| 3 | `theorem` | [conditional_rh_of_mass_subsequence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ControllerRHTransport.lean/declarations/conditional-rh-of-mass-subsequence.md) | 45 | `result-track:33d1d467f990fba8cad9ca3c72d99d5597a59b788a0d855a9d6ad861c0df0752` |
+| 4 | `theorem` | [conditional_rh_of_full_residual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ControllerRHTransport.lean/declarations/conditional-rh-of-full-residual.md) | 56 | `result-track:8a970749383e1b435d4198056fce0a995911bb0dd9af1283efb223bb6b34a8c0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

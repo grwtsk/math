@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/NormalizeNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/NormalizeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/NormalizeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/NormalizeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Tree.nnf](../../../../../ComputerScience/AlgorithmsInComputerScience/NormalizeNamespaced.lean/declarations/tree-nnf.md) | 25 | `declaration-track:a436d3a329802ad01a891ba2c9a2d3d6bfdc70f525baa87bac43409fb59d2a12` |
-| 2 | `def` | [Tree.negNnf](../../../../../ComputerScience/AlgorithmsInComputerScience/NormalizeNamespaced.lean/declarations/tree-negnnf.md) | 39 | `declaration-track:72229b0e47c52f57c97748956cbd1b7e789bbdf94d59c08b2287481f21054407` |
-| 3 | `theorem` | [Tree.eval_nnf_and_negNnf](../../../../../ComputerScience/AlgorithmsInComputerScience/NormalizeNamespaced.lean/declarations/tree-eval-nnf-and-negnnf.md) | 55 | `result-track:5a8890ba782ad3dcd0aee5a1fe6a87d6f61fdee5f3d8fc168279a0bd22379524` |
-| 4 | `theorem` | [Tree.eval_nnf](../../../../../ComputerScience/AlgorithmsInComputerScience/NormalizeNamespaced.lean/declarations/tree-eval-nnf.md) | 105 | `result-track:46222c37ba3f3d23310d6ee42ebb10d6a1b32738601c3c4b75a939109696e142` |
-| 5 | `theorem` | [Tree.eval_negNnf](../../../../../ComputerScience/AlgorithmsInComputerScience/NormalizeNamespaced.lean/declarations/tree-eval-negnnf.md) | 111 | `result-track:6b7da7a6cee5280a0a2b11b909a7ec4a95b4837c6d6398dadda1f9f1ab172219` |
+| 1 | `def` | [Tree.nnf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/NormalizeNamespaced.lean/declarations/tree-nnf.md) | 25 | `declaration-track:a436d3a329802ad01a891ba2c9a2d3d6bfdc70f525baa87bac43409fb59d2a12` |
+| 2 | `def` | [Tree.negNnf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/NormalizeNamespaced.lean/declarations/tree-negnnf.md) | 39 | `declaration-track:72229b0e47c52f57c97748956cbd1b7e789bbdf94d59c08b2287481f21054407` |
+| 3 | `theorem` | [Tree.eval_nnf_and_negNnf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/NormalizeNamespaced.lean/declarations/tree-eval-nnf-and-negnnf.md) | 55 | `result-track:5a8890ba782ad3dcd0aee5a1fe6a87d6f61fdee5f3d8fc168279a0bd22379524` |
+| 4 | `theorem` | [Tree.eval_nnf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/NormalizeNamespaced.lean/declarations/tree-eval-nnf.md) | 105 | `result-track:46222c37ba3f3d23310d6ee42ebb10d6a1b32738601c3c4b75a939109696e142` |
+| 5 | `theorem` | [Tree.eval_negNnf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/NormalizeNamespaced.lean/declarations/tree-eval-negnnf.md) | 111 | `result-track:6b7da7a6cee5280a0a2b11b909a7ec4a95b4837c6d6398dadda1f9f1ab172219` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

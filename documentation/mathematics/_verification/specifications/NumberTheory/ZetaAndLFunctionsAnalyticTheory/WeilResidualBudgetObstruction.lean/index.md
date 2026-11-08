@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilResidualBudgetObstruction.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilResidualBudgetObstruction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilResidualBudgetObstruction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilResidualBudgetObstruction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.WeilPositiveLimitCore`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/WeilPositiveLimitCore.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.WeilPositiveLimitCore`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/WeilPositiveLimitCore.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Tactic` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ResidualFamily.absoluteBudget](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilResidualBudgetObstruction.lean/declarations/residualfamily-absolutebudget.md) | 27 | `declaration-track:c986c8037e663998e611e3003b2a9c48886f8e08e245b565c21a59dce2116652` |
-| 2 | `theorem` | [ResidualFamily.absoluteBudget_nonnegative](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilResidualBudgetObstruction.lean/declarations/residualfamily-absolutebudget-nonnegative.md) | 39 | `result-track:d0442cb60b1da7f718132d8304d5b91e784a984c6956ae87a0053a74e04d20a0` |
-| 3 | `theorem` | [ResidualFamily.abs_total_le_absoluteBudget](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilResidualBudgetObstruction.lean/declarations/residualfamily-abs-total-le-absolutebudget.md) | 46 | `result-track:7f8e32ddbaefeff6e74c0720bf120d08e060f47c17d9f67187fc8786c4e6fb44` |
-| 4 | `theorem` | [ExactResidualComparison.gap_le_absoluteBudget](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilResidualBudgetObstruction.lean/declarations/exactresidualcomparison-gap-le-absolutebudget.md) | 82 | `result-track:7cb809eadd7968bec71dbc4c551967f059191dc616c51b60b23388bf05982af6` |
-| 5 | `theorem` | [ExactResidualComparison.no_vanishing_absoluteBudget](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilResidualBudgetObstruction.lean/declarations/exactresidualcomparison-no-vanishing-absolutebudget.md) | 102 | `result-track:37b34d15ee1b08b26dba17b299a33dc4739579bcc48e2b186775f8a938f2767b` |
-| 6 | `def` | [tailOnlyResiduals](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilResidualBudgetObstruction.lean/declarations/tailonlyresiduals.md) | 121 | `declaration-track:48cf6a3d32dc192f894f10ec344f6c841e6ff981d51c0215b13dcb3707263e1b` |
-| 7 | `def` | [tailOnlyComparison](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilResidualBudgetObstruction.lean/declarations/tailonlycomparison.md) | 132 | `declaration-track:57ef54b307c7edf02e6b2ec0cab01945b34e86b7162bd585eb6464b5b8cde78d` |
-| 8 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilResidualBudgetObstruction.lean/declarations/example.md) | 140 | `declaration-track:94cfdfffe628a3c350a9c3e49f086cbe6d0ba51ad38a7970c4c3ecaac46456d9` |
+| 1 | `def` | [ResidualFamily.absoluteBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilResidualBudgetObstruction.lean/declarations/residualfamily-absolutebudget.md) | 27 | `declaration-track:c986c8037e663998e611e3003b2a9c48886f8e08e245b565c21a59dce2116652` |
+| 2 | `theorem` | [ResidualFamily.absoluteBudget_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilResidualBudgetObstruction.lean/declarations/residualfamily-absolutebudget-nonnegative.md) | 39 | `result-track:d0442cb60b1da7f718132d8304d5b91e784a984c6956ae87a0053a74e04d20a0` |
+| 3 | `theorem` | [ResidualFamily.abs_total_le_absoluteBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilResidualBudgetObstruction.lean/declarations/residualfamily-abs-total-le-absolutebudget.md) | 46 | `result-track:7f8e32ddbaefeff6e74c0720bf120d08e060f47c17d9f67187fc8786c4e6fb44` |
+| 4 | `theorem` | [ExactResidualComparison.gap_le_absoluteBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilResidualBudgetObstruction.lean/declarations/exactresidualcomparison-gap-le-absolutebudget.md) | 82 | `result-track:7cb809eadd7968bec71dbc4c551967f059191dc616c51b60b23388bf05982af6` |
+| 5 | `theorem` | [ExactResidualComparison.no_vanishing_absoluteBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilResidualBudgetObstruction.lean/declarations/exactresidualcomparison-no-vanishing-absolutebudget.md) | 102 | `result-track:37b34d15ee1b08b26dba17b299a33dc4739579bcc48e2b186775f8a938f2767b` |
+| 6 | `def` | [tailOnlyResiduals](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilResidualBudgetObstruction.lean/declarations/tailonlyresiduals.md) | 121 | `declaration-track:48cf6a3d32dc192f894f10ec344f6c841e6ff981d51c0215b13dcb3707263e1b` |
+| 7 | `def` | [tailOnlyComparison](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilResidualBudgetObstruction.lean/declarations/tailonlycomparison.md) | 132 | `declaration-track:57ef54b307c7edf02e6b2ec0cab01945b34e86b7162bd585eb6464b5b8cde78d` |
+| 8 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilResidualBudgetObstruction.lean/declarations/example.md) | 140 | `declaration-track:94cfdfffe628a3c350a9c3e49f086cbe6d0ba51ad38a7970c4c3ecaac46456d9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

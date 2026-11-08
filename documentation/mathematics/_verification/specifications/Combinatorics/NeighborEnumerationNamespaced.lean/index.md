@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/NeighborEnumerationNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/NeighborEnumerationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NeighborEnumerationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NeighborEnumerationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,18 +58,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [EligibleArc](../../../../Combinatorics/NeighborEnumerationNamespaced.lean/declarations/eligiblearc.md) | 22 | `declaration-track:0f6e9521f2d32d2f213a1066b924fe49dae46c4be722cb6bed52bc294c38df2c` |
-| 2 | `instance` | [(anonymous)](../../../../Combinatorics/NeighborEnumerationNamespaced.lean/declarations/instance.md) | 32 | `declaration-track:7dac759e358604dd5bc14d2d5f2745fb2262093864c884be9f907e2def763b4e` |
-| 3 | `def` | [canonicalNeighborSet](../../../../Combinatorics/NeighborEnumerationNamespaced.lean/declarations/canonicalneighborset.md) | 43 | `declaration-track:30eb24db078ce27060d021b9c43a262a10f1892f73e632e2ba626a2db1e84e4d` |
-| 4 | `def` | [canonicalNeighborList](../../../../Combinatorics/NeighborEnumerationNamespaced.lean/declarations/canonicalneighborlist.md) | 51 | `declaration-track:117eafab9e2a807bf5fa1dee7ecd85df6992ce5c7d372b051f2757e98256a17c` |
-| 5 | `theorem` | [mem_canonicalNeighborList](../../../../Combinatorics/NeighborEnumerationNamespaced.lean/declarations/mem-canonicalneighborlist.md) | 59 | `result-track:3d53d222d4de8fa9ae041a85328e0af3dab83a87c7fdec6b47ea09f6bbcdc989` |
-| 6 | `theorem` | [canonicalNeighborList_nodup](../../../../Combinatorics/NeighborEnumerationNamespaced.lean/declarations/canonicalneighborlist-nodup.md) | 69 | `result-track:46cc43229f0592d875ddad04b04ab3c84ee6792a06a7d8541a57ca7d76ca949f` |
-| 7 | `theorem` | [canonicalNeighborList_sorted](../../../../Combinatorics/NeighborEnumerationNamespaced.lean/declarations/canonicalneighborlist-sorted.md) | 77 | `result-track:53a3a1c535cdadb2c740fc236e9de59466415a38e1f27839328e912fb9c3cb17` |
-| 8 | `structure` | [NeighborEnumeration](../../../../Combinatorics/NeighborEnumerationNamespaced.lean/declarations/neighborenumeration.md) | 90 | `declaration-track:de92a64d161971ba35cfc3c324fd0fa74da9e03c1055ab74d0e46ae2fcced7ac` |
-| 9 | `theorem` | [mem_iff](../../../../Combinatorics/NeighborEnumerationNamespaced.lean/declarations/mem-iff.md) | 110 | `result-track:7f6943f35daea5206968053c0c28e5f7b54fc335a4756e3895a2814fd846a716` |
-| 10 | `theorem` | [eq_canonical](../../../../Combinatorics/NeighborEnumerationNamespaced.lean/declarations/eq-canonical.md) | 123 | `result-track:e01a88d72bf22f43c02b0009221688f6e04ebc74c617daed8f0ea1b8b7d04e63` |
-| 11 | `theorem` | [ext](../../../../Combinatorics/NeighborEnumerationNamespaced.lean/declarations/ext.md) | 139 | `result-track:9eb392051fb815aa1c611563de89b34c54df6b9554e1168cb737fab949558543` |
-| 12 | `def` | [canonical](../../../../Combinatorics/NeighborEnumerationNamespaced.lean/declarations/canonical.md) | 150 | `declaration-track:bccca7383428c6130a4386dfa496f01b99360dc74cf221b63c6f349a0f3c85cf` |
+| 1 | `def` | [EligibleArc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NeighborEnumerationNamespaced.lean/declarations/eligiblearc.md) | 22 | `declaration-track:0f6e9521f2d32d2f213a1066b924fe49dae46c4be722cb6bed52bc294c38df2c` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NeighborEnumerationNamespaced.lean/declarations/instance.md) | 32 | `declaration-track:7dac759e358604dd5bc14d2d5f2745fb2262093864c884be9f907e2def763b4e` |
+| 3 | `def` | [canonicalNeighborSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NeighborEnumerationNamespaced.lean/declarations/canonicalneighborset.md) | 43 | `declaration-track:30eb24db078ce27060d021b9c43a262a10f1892f73e632e2ba626a2db1e84e4d` |
+| 4 | `def` | [canonicalNeighborList](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NeighborEnumerationNamespaced.lean/declarations/canonicalneighborlist.md) | 51 | `declaration-track:117eafab9e2a807bf5fa1dee7ecd85df6992ce5c7d372b051f2757e98256a17c` |
+| 5 | `theorem` | [mem_canonicalNeighborList](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NeighborEnumerationNamespaced.lean/declarations/mem-canonicalneighborlist.md) | 59 | `result-track:3d53d222d4de8fa9ae041a85328e0af3dab83a87c7fdec6b47ea09f6bbcdc989` |
+| 6 | `theorem` | [canonicalNeighborList_nodup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NeighborEnumerationNamespaced.lean/declarations/canonicalneighborlist-nodup.md) | 69 | `result-track:46cc43229f0592d875ddad04b04ab3c84ee6792a06a7d8541a57ca7d76ca949f` |
+| 7 | `theorem` | [canonicalNeighborList_sorted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NeighborEnumerationNamespaced.lean/declarations/canonicalneighborlist-sorted.md) | 77 | `result-track:53a3a1c535cdadb2c740fc236e9de59466415a38e1f27839328e912fb9c3cb17` |
+| 8 | `structure` | [NeighborEnumeration](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NeighborEnumerationNamespaced.lean/declarations/neighborenumeration.md) | 90 | `declaration-track:de92a64d161971ba35cfc3c324fd0fa74da9e03c1055ab74d0e46ae2fcced7ac` |
+| 9 | `theorem` | [mem_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NeighborEnumerationNamespaced.lean/declarations/mem-iff.md) | 110 | `result-track:7f6943f35daea5206968053c0c28e5f7b54fc335a4756e3895a2814fd846a716` |
+| 10 | `theorem` | [eq_canonical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NeighborEnumerationNamespaced.lean/declarations/eq-canonical.md) | 123 | `result-track:e01a88d72bf22f43c02b0009221688f6e04ebc74c617daed8f0ea1b8b7d04e63` |
+| 11 | `theorem` | [ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NeighborEnumerationNamespaced.lean/declarations/ext.md) | 139 | `result-track:9eb392051fb815aa1c611563de89b34c54df6b9554e1168cb737fab949558543` |
+| 12 | `def` | [canonical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NeighborEnumerationNamespaced.lean/declarations/canonical.md) | 150 | `declaration-track:bccca7383428c6130a4386dfa496f01b99360dc74cf221b63c6f349a0f3c85cf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

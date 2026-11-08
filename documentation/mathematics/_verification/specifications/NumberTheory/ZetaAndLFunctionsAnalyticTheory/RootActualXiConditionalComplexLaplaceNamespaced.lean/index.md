@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualXiConditionalComplexLaplaceNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualXiConditionalComplexLaplaceNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualXiConditionalComplexLaplaceNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualXiConditionalComplexLaplaceNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [primitive_continuousOn_Ici](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualXiConditionalComplexLaplaceNamespaced.lean/declarations/primitive-continuouson-ici.md) | 27 | `result-track:aa94bbe1aa1001ca62c9ce37115b3cf327ee7dae7ba82e88c1e6810ea5d706ca` |
-| 2 | `theorem` | [actualXiComplexLaplaceKernel_norm_eq](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualXiConditionalComplexLaplaceNamespaced.lean/declarations/actualxicomplexlaplacekernel-norm-eq.md) | 40 | `result-track:24338776d0f7637a01338ce1ecab4fcf862a0cf32e24ed3b2617188ddad58799` |
-| 3 | `theorem` | [actualXiComplexLaplace_integrableOn_of_future_average](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualXiConditionalComplexLaplaceNamespaced.lean/declarations/actualxicomplexlaplace-integrableon-of-future-average.md) | 48 | `result-track:e4a1396eeb3c115cbeb78345f611ab46051ae335b95c8d49ea12ae45c08629f3` |
-| 4 | `theorem` | [actualXiComplexLaplace_norm_le_of_future_average](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualXiConditionalComplexLaplaceNamespaced.lean/declarations/actualxicomplexlaplace-norm-le-of-future-average.md) | 64 | `result-track:2863df3541029dc406b5bdf15a88aec67ee2037a298aa82b86a76bbce641f270` |
+| 1 | `theorem` | [primitive_continuousOn_Ici](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualXiConditionalComplexLaplaceNamespaced.lean/declarations/primitive-continuouson-ici.md) | 27 | `result-track:aa94bbe1aa1001ca62c9ce37115b3cf327ee7dae7ba82e88c1e6810ea5d706ca` |
+| 2 | `theorem` | [actualXiComplexLaplaceKernel_norm_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualXiConditionalComplexLaplaceNamespaced.lean/declarations/actualxicomplexlaplacekernel-norm-eq.md) | 40 | `result-track:24338776d0f7637a01338ce1ecab4fcf862a0cf32e24ed3b2617188ddad58799` |
+| 3 | `theorem` | [actualXiComplexLaplace_integrableOn_of_future_average](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualXiConditionalComplexLaplaceNamespaced.lean/declarations/actualxicomplexlaplace-integrableon-of-future-average.md) | 48 | `result-track:e4a1396eeb3c115cbeb78345f611ab46051ae335b95c8d49ea12ae45c08629f3` |
+| 4 | `theorem` | [actualXiComplexLaplace_norm_le_of_future_average](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualXiConditionalComplexLaplaceNamespaced.lean/declarations/actualxicomplexlaplace-norm-le-of-future-average.md) | 64 | `result-track:2863df3541029dc406b5bdf15a88aec67ee2037a298aa82b86a76bbce641f270` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

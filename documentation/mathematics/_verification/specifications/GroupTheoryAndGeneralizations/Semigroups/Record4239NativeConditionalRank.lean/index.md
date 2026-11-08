@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GroupTheoryAndGeneralizations/Semigroups/Record4239NativeConditionalRank.lean/index.md) · [Full source](../../../../../GroupTheoryAndGeneralizations/Semigroups/Record4239NativeConditionalRank.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Semigroups/Record4239NativeConditionalRank.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Semigroups/Record4239NativeConditionalRank.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,9 +46,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.Record4239NativeTwoTorsion`](../../../../../NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239NativeTwoTorsion.lean/index.md) — import line 12; pinned internal source present.
-- [`GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.Record4239SquareClassBridge`](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Record4239SquareClassBridge.lean/index.md) — import line 13; pinned internal source present.
-- [`GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.Record4239IntegralOrderReduction`](../../../../../NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239IntegralOrderReduction.lean/index.md) — import line 14; pinned internal source present.
+- [`GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.Record4239NativeTwoTorsion`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239NativeTwoTorsion.lean/index.md) — import line 12; pinned internal source present.
+- [`GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.Record4239SquareClassBridge`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Record4239SquareClassBridge.lean/index.md) — import line 13; pinned internal source present.
+- [`GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.Record4239IntegralOrderReduction`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239IntegralOrderReduction.lean/index.md) — import line 14; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [NativeDescentEvidence](../../../../../GroupTheoryAndGeneralizations/Semigroups/Record4239NativeConditionalRank.lean/declarations/nativedescentevidence.md) | 65 | `declaration-track:efce56ac13da3df76b4dd36336ed4a4aa313c71f75a9e6605f5fa28ef35f02cd` |
-| 2 | `theorem` | [NativeDescentEvidence.characterValues](../../../../../GroupTheoryAndGeneralizations/Semigroups/Record4239NativeConditionalRank.lean/declarations/nativedescentevidence-charactervalues.md) | 76 | `result-track:6f6d6afadb5e27ac6ded90d23965dc0dd62be3cfdfcac5593b323094f6d784bf` |
-| 3 | `theorem` | [nativePoints_linearIndependent_of_descent](../../../../../GroupTheoryAndGeneralizations/Semigroups/Record4239NativeConditionalRank.lean/declarations/nativepoints-linearindependent-of-descent.md) | 88 | `result-track:6724b26c7fb0136418645fa7567c25a7d33ce03d5d244a2592a410794a0c147a` |
-| 4 | `theorem` | [nativeCurve_finrank_ge_32_of_descent](../../../../../GroupTheoryAndGeneralizations/Semigroups/Record4239NativeConditionalRank.lean/declarations/nativecurve-finrank-ge-32-of-descent.md) | 103 | `result-track:4ced002c1c488c265a584c89fae2c787f405da389ccccd5b890df04a887e97cc` |
+| 1 | `structure` | [NativeDescentEvidence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Semigroups/Record4239NativeConditionalRank.lean/declarations/nativedescentevidence.md) | 65 | `declaration-track:efce56ac13da3df76b4dd36336ed4a4aa313c71f75a9e6605f5fa28ef35f02cd` |
+| 2 | `theorem` | [NativeDescentEvidence.characterValues](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Semigroups/Record4239NativeConditionalRank.lean/declarations/nativedescentevidence-charactervalues.md) | 76 | `result-track:6f6d6afadb5e27ac6ded90d23965dc0dd62be3cfdfcac5593b323094f6d784bf` |
+| 3 | `theorem` | [nativePoints_linearIndependent_of_descent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Semigroups/Record4239NativeConditionalRank.lean/declarations/nativepoints-linearindependent-of-descent.md) | 88 | `result-track:6724b26c7fb0136418645fa7567c25a7d33ce03d5d244a2592a410794a0c147a` |
+| 4 | `theorem` | [nativeCurve_finrank_ge_32_of_descent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Semigroups/Record4239NativeConditionalRank.lean/declarations/nativecurve-finrank-ge-32-of-descent.md) | 103 | `result-track:4ced002c1c488c265a584c89fae2c787f405da389ccccd5b890df04a887e97cc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

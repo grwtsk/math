@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/RingTheoryNormTraceNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/RingTheoryNormTraceNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryNormTraceNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryNormTraceNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [Algebra.norm_one_add_smul](../../../../CommutativeAlgebra/RingTheoryNormTraceNamespaced.lean/declarations/algebra-norm-one-add-smul.md) | 22 | `result-track:794b22e9598187ada0737b3274805ddeb8d24daef67123bbc708e1fd9271ea58` |
+| 1 | `lemma` | [Algebra.norm_one_add_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryNormTraceNamespaced.lean/declarations/algebra-norm-one-add-smul.md) | 22 | `result-track:794b22e9598187ada0737b3274805ddeb8d24daef67123bbc708e1fd9271ea58` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

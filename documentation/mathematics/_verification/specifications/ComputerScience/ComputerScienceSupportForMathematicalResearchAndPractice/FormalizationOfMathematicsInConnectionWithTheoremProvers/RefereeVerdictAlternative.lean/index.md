@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RefereeVerdictAlternative.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RefereeVerdictAlternative.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RefereeVerdictAlternative.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RefereeVerdictAlternative.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [accept_research_ne_accept_rh_proof](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RefereeVerdictAlternative.lean/declarations/accept-research-ne-accept-rh-proof.md) | 19 | `result-track:cff1daf0fdb67b469311c9390cb81cc1d420c059bc0fd949c5bc4ab7424423ab` |
-| 2 | `theorem` | [current_verdict_rejects_as_rh_proof](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RefereeVerdictAlternative.lean/declarations/current-verdict-rejects-as-rh-proof.md) | 24 | `result-track:183906a40ac2464dc0a744ae8df7533368968114e4698e7700d482e891d130bc` |
+| 1 | `theorem` | [accept_research_ne_accept_rh_proof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RefereeVerdictAlternative.lean/declarations/accept-research-ne-accept-rh-proof.md) | 19 | `result-track:cff1daf0fdb67b469311c9390cb81cc1d420c059bc0fd949c5bc4ab7424423ab` |
+| 2 | `theorem` | [current_verdict_rejects_as_rh_proof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RefereeVerdictAlternative.lean/declarations/current-verdict-rejects-as-rh-proof.md) | 24 | `result-track:183906a40ac2464dc0a744ae8df7533368968114e4698e7700d482e891d130bc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

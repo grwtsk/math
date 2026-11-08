@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExtNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExtNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExtNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExtNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [ext](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExtNamespaced.lean/declarations/ext.md) | 16 | `result-track:b2aa8234cbd938e26687b112a654c744dad3ab07a12e4240ae6d7afa44e78fd3` |
-| 2 | `def` | [pointwiseEq](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExtNamespaced.lean/declarations/pointwiseeq.md) | 25 | `declaration-track:49d85d87914035a39292f74f61715aaee51061ea52b4c9c9e4a7c333b1e80bb3` |
+| 1 | `theorem` | [ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExtNamespaced.lean/declarations/ext.md) | 16 | `result-track:b2aa8234cbd938e26687b112a654c744dad3ab07a12e4240ae6d7afa44e78fd3` |
+| 2 | `def` | [pointwiseEq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExtNamespaced.lean/declarations/pointwiseeq.md) | 25 | `declaration-track:49d85d87914035a39292f74f61715aaee51061ea52b4c9c9e4a7c333b1e80bb3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

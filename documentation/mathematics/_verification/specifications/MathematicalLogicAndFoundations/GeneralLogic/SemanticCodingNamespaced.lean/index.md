@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SemanticCodingNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SemanticCodingNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SemanticCodingNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SemanticCodingNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SemanticTyping](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SemanticCodingNamespaced.lean/declarations/semantictyping.md) | 24 | `declaration-track:f2fbd4b0623e7deafd787cedf2c1d2c62a711a278738f5286aa298f1f975ff33` |
-| 2 | `structure` | [CodingEquivalenceInvariant](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SemanticCodingNamespaced.lean/declarations/codingequivalenceinvariant.md) | 38 | `declaration-track:ede828ea8d8ffd9075649ac30a074bfbed551121c458db45ce62d91eaa5a5021` |
-| 3 | `theorem` | [encode_injective](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SemanticCodingNamespaced.lean/declarations/encode-injective.md) | 52 | `result-track:a6ac3bc3bf069bc58a07042bff1e56b72d8c2fe3e62883b7161e45247d31427c` |
-| 4 | `theorem` | [encode_surjective](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SemanticCodingNamespaced.lean/declarations/encode-surjective.md) | 63 | `result-track:ec48c4fd4f9d6afb065f2fc658fd3aa0d3ff5b1c2c7150e16ed8098908c6bf4a` |
-| 5 | `structure` | [SemanticAutomorphism](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SemanticCodingNamespaced.lean/declarations/semanticautomorphism.md) | 80 | `declaration-track:a1d9ddf65b17712cc1c124f467ac9767dbf6656ce842c766bd41c8f9e1bc389a` |
-| 6 | `theorem` | [SemanticAutomorphism.encode_equivariant](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SemanticCodingNamespaced.lean/declarations/encode-equivariant.md) | 93 | `result-track:56c3410d6537bd90b7ebed706510046163a00694bcaf5a6a1fbfc708010d4dfc` |
+| 1 | `structure` | [SemanticTyping](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SemanticCodingNamespaced.lean/declarations/semantictyping.md) | 24 | `declaration-track:f2fbd4b0623e7deafd787cedf2c1d2c62a711a278738f5286aa298f1f975ff33` |
+| 2 | `structure` | [CodingEquivalenceInvariant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SemanticCodingNamespaced.lean/declarations/codingequivalenceinvariant.md) | 38 | `declaration-track:ede828ea8d8ffd9075649ac30a074bfbed551121c458db45ce62d91eaa5a5021` |
+| 3 | `theorem` | [encode_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SemanticCodingNamespaced.lean/declarations/encode-injective.md) | 52 | `result-track:a6ac3bc3bf069bc58a07042bff1e56b72d8c2fe3e62883b7161e45247d31427c` |
+| 4 | `theorem` | [encode_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SemanticCodingNamespaced.lean/declarations/encode-surjective.md) | 63 | `result-track:ec48c4fd4f9d6afb065f2fc658fd3aa0d3ff5b1c2c7150e16ed8098908c6bf4a` |
+| 5 | `structure` | [SemanticAutomorphism](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SemanticCodingNamespaced.lean/declarations/semanticautomorphism.md) | 80 | `declaration-track:a1d9ddf65b17712cc1c124f467ac9767dbf6656ce842c766bd41c8f9e1bc389a` |
+| 6 | `theorem` | [SemanticAutomorphism.encode_equivariant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SemanticCodingNamespaced.lean/declarations/encode-equivariant.md) | 93 | `result-track:56c3410d6537bd90b7ebed706510046163a00694bcaf5a6a1fbfc708010d4dfc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

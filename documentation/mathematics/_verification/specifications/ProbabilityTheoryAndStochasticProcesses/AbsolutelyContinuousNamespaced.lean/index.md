@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/AbsolutelyContinuousNamespaced.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/AbsolutelyContinuousNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/AbsolutelyContinuousNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/AbsolutelyContinuousNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [MutuallySingular.compProd_of_right](../../../../ProbabilityTheoryAndStochasticProcesses/AbsolutelyContinuousNamespaced.lean/declarations/mutuallysingular-compprod-of-right.md) | 46 | `result-track:3758600d1a6b6a659526ab02da9b4c1f105826999a1452cd2802ae0c4f6f7851` |
-| 2 | `lemma` | [MutuallySingular.compProd_of_right'](../../../../ProbabilityTheoryAndStochasticProcesses/AbsolutelyContinuousNamespaced.lean/declarations/mutuallysingular-compprod-of-right-source-edition-2.md) | 65 | `result-track:929efeabccd122c0acbbffe2b70261e76e4554224003e1f21ff9b2caac8d19f3` |
-| 3 | `lemma` | [mutuallySingular_compProd_right_iff](../../../../ProbabilityTheoryAndStochasticProcesses/AbsolutelyContinuousNamespaced.lean/declarations/mutuallysingular-compprod-right-iff.md) | 70 | `result-track:c759756bbb3dc97707c1420d711eb6b0cfa7f8b005ed6f9309a25e1976e3d73f` |
-| 4 | `lemma` | [AbsolutelyContinuous.kernel_of_compProd](../../../../ProbabilityTheoryAndStochasticProcesses/AbsolutelyContinuousNamespaced.lean/declarations/absolutelycontinuous-kernel-of-compprod.md) | 75 | `result-track:2aa463d158b83399f4d63ebe38e9a166d692388a5c6c7545d6ed58647ecbfadb` |
-| 5 | `lemma` | [absolutelyContinuous_compProd_iff'](../../../../ProbabilityTheoryAndStochasticProcesses/AbsolutelyContinuousNamespaced.lean/declarations/absolutelycontinuous-compprod-iff.md) | 86 | `result-track:1d947b958eae2d70783a31fff11e0c278dfacc57962a77cfe2058d49b57343e0` |
-| 6 | `lemma` | [absolutelyContinuous_compProd_right_iff](../../../../ProbabilityTheoryAndStochasticProcesses/AbsolutelyContinuousNamespaced.lean/declarations/absolutelycontinuous-compprod-right-iff.md) | 90 | `result-track:ba8329a9d9da4c7dda1b461d750b16abdfd27d451a2c42bb18c75eaf68801e35` |
+| 1 | `lemma` | [MutuallySingular.compProd_of_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/AbsolutelyContinuousNamespaced.lean/declarations/mutuallysingular-compprod-of-right.md) | 46 | `result-track:3758600d1a6b6a659526ab02da9b4c1f105826999a1452cd2802ae0c4f6f7851` |
+| 2 | `lemma` | [MutuallySingular.compProd_of_right'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/AbsolutelyContinuousNamespaced.lean/declarations/mutuallysingular-compprod-of-right-source-edition-2.md) | 65 | `result-track:929efeabccd122c0acbbffe2b70261e76e4554224003e1f21ff9b2caac8d19f3` |
+| 3 | `lemma` | [mutuallySingular_compProd_right_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/AbsolutelyContinuousNamespaced.lean/declarations/mutuallysingular-compprod-right-iff.md) | 70 | `result-track:c759756bbb3dc97707c1420d711eb6b0cfa7f8b005ed6f9309a25e1976e3d73f` |
+| 4 | `lemma` | [AbsolutelyContinuous.kernel_of_compProd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/AbsolutelyContinuousNamespaced.lean/declarations/absolutelycontinuous-kernel-of-compprod.md) | 75 | `result-track:2aa463d158b83399f4d63ebe38e9a166d692388a5c6c7545d6ed58647ecbfadb` |
+| 5 | `lemma` | [absolutelyContinuous_compProd_iff'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/AbsolutelyContinuousNamespaced.lean/declarations/absolutelycontinuous-compprod-iff.md) | 86 | `result-track:1d947b958eae2d70783a31fff11e0c278dfacc57962a77cfe2058d49b57343e0` |
+| 6 | `lemma` | [absolutelyContinuous_compProd_right_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/AbsolutelyContinuousNamespaced.lean/declarations/absolutelycontinuous-compprod-right-iff.md) | 90 | `result-track:ba8329a9d9da4c7dda1b461d750b16abdfd27d451a2c42bb18c75eaf68801e35` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

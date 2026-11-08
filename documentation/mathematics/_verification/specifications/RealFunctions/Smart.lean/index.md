@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/Smart.lean/index.md) · [Full source](../../../../RealFunctions/Smart.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Smart.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Smart.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [checkLowerBoundSmart](../../../../RealFunctions/Smart.lean/declarations/checklowerboundsmart.md) | 51 | `declaration-track:72966f5f11278771847aacf200dc4c6b14a8e31a6609514f2a66e8325bec83fd` |
-| 2 | `def` | [checkUpperBoundSmart](../../../../RealFunctions/Smart.lean/declarations/checkupperboundsmart.md) | 74 | `declaration-track:a80fbccf7fb12aea3b527a3cfd15f3ee577f13c3f045d29cb35c447bb824df74` |
-| 3 | `theorem` | [increasing_min_at_left_core](../../../../RealFunctions/Smart.lean/declarations/increasing-min-at-left-core.md) | 92 | `result-track:49647e9317163703414c64dd2d99f4b65b7402fdc486714631394cde76021810` |
-| 4 | `theorem` | [decreasing_min_at_right_core](../../../../RealFunctions/Smart.lean/declarations/decreasing-min-at-right-core.md) | 135 | `result-track:24338ef520c566141d0cd61bbd3c89c08be8fd5a7351dfe60b35fd14a411257d` |
-| 5 | `theorem` | [verify_lower_bound_smart](../../../../RealFunctions/Smart.lean/declarations/verify-lower-bound-smart.md) | 171 | `result-track:bf3cc342ce365d33fe1b95aa0e3aba53f91be129af123847ef99d3107f7479fe` |
-| 6 | `theorem` | [increasing_max_at_right_core](../../../../RealFunctions/Smart.lean/declarations/increasing-max-at-right-core.md) | 220 | `result-track:91bcfba3b821ea2405ee9e99f7bb83761133e4ed7f5a7ce7d1d4f6b9fe94d951` |
-| 7 | `theorem` | [decreasing_max_at_left_core](../../../../RealFunctions/Smart.lean/declarations/decreasing-max-at-left-core.md) | 256 | `result-track:e535e58e322148d0f40fd07fb8e7255746f75ab064b465b265a72f1c2db850e7` |
-| 8 | `theorem` | [verify_upper_bound_smart](../../../../RealFunctions/Smart.lean/declarations/verify-upper-bound-smart.md) | 292 | `result-track:0fa73633e9b06e4e66878fd65f6f560f62310e773b86298ce4cfef3e759ac8d1` |
+| 1 | `def` | [checkLowerBoundSmart](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Smart.lean/declarations/checklowerboundsmart.md) | 51 | `declaration-track:72966f5f11278771847aacf200dc4c6b14a8e31a6609514f2a66e8325bec83fd` |
+| 2 | `def` | [checkUpperBoundSmart](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Smart.lean/declarations/checkupperboundsmart.md) | 74 | `declaration-track:a80fbccf7fb12aea3b527a3cfd15f3ee577f13c3f045d29cb35c447bb824df74` |
+| 3 | `theorem` | [increasing_min_at_left_core](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Smart.lean/declarations/increasing-min-at-left-core.md) | 92 | `result-track:49647e9317163703414c64dd2d99f4b65b7402fdc486714631394cde76021810` |
+| 4 | `theorem` | [decreasing_min_at_right_core](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Smart.lean/declarations/decreasing-min-at-right-core.md) | 135 | `result-track:24338ef520c566141d0cd61bbd3c89c08be8fd5a7351dfe60b35fd14a411257d` |
+| 5 | `theorem` | [verify_lower_bound_smart](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Smart.lean/declarations/verify-lower-bound-smart.md) | 171 | `result-track:bf3cc342ce365d33fe1b95aa0e3aba53f91be129af123847ef99d3107f7479fe` |
+| 6 | `theorem` | [increasing_max_at_right_core](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Smart.lean/declarations/increasing-max-at-right-core.md) | 220 | `result-track:91bcfba3b821ea2405ee9e99f7bb83761133e4ed7f5a7ce7d1d4f6b9fe94d951` |
+| 7 | `theorem` | [decreasing_max_at_left_core](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Smart.lean/declarations/decreasing-max-at-left-core.md) | 256 | `result-track:e535e58e322148d0f40fd07fb8e7255746f75ab064b465b265a72f1c2db850e7` |
+| 8 | `theorem` | [verify_upper_bound_smart](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Smart.lean/declarations/verify-upper-bound-smart.md) | 292 | `result-track:0fa73633e9b06e4e66878fd65f6f560f62310e773b86298ce4cfef3e759ac8d1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

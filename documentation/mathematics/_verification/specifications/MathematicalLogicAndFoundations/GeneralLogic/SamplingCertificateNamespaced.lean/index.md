@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SamplingCertificateNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SamplingCertificateNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SamplingCertificateNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SamplingCertificateNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [IndependentSamplingVerification](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SamplingCertificateNamespaced.lean/declarations/independentsamplingverification.md) | 17 | `declaration-track:0b7a296373173419687c20cd73d9f8dc9e452613244edabbfe56cfdba75fb580` |
-| 2 | `theorem` | [independently_verified_sampling_bound_is_accepted](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SamplingCertificateNamespaced.lean/declarations/independently-verified-sampling-bound-is-accepted.md) | 25 | `result-track:946df6cbc4e9b6fea77766d295c97b7e6e5f378d8fcf26916fabc6dbe9828e51` |
+| 1 | `structure` | [IndependentSamplingVerification](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SamplingCertificateNamespaced.lean/declarations/independentsamplingverification.md) | 17 | `declaration-track:0b7a296373173419687c20cd73d9f8dc9e452613244edabbfe56cfdba75fb580` |
+| 2 | `theorem` | [independently_verified_sampling_bound_is_accepted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SamplingCertificateNamespaced.lean/declarations/independently-verified-sampling-bound-is-accepted.md) | 25 | `result-track:946df6cbc4e9b6fea77766d295c97b7e6e5f378d8fcf26916fabc6dbe9828e51` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

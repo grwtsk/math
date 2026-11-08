@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/WeightedCauchyReindexedNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/WeightedCauchyReindexedNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/WeightedCauchyReindexedNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/WeightedCauchyReindexedNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [pairProductByValue_weighted_grouping](../../../../CommutativeAlgebra/WeightedCauchyReindexedNamespaced.lean/declarations/pairproductbyvalue-weighted-grouping.md) | 25 | `result-track:855e885c7c3f51b94cb57b4c5819f65086ddfe56eac50e25540d5737acab2221` |
-| 2 | `theorem` | [dirichletPolynomialPairProductComplex_grouped](../../../../CommutativeAlgebra/WeightedCauchyReindexedNamespaced.lean/declarations/dirichletpolynomialpairproductcomplex-grouped.md) | 94 | `result-track:3a97bf5cde66cf34cf0b80087671f04baa686204d0a4060098d899e707c5f3c0` |
-| 3 | `theorem` | [dirichletPolynomialComplex_mul_boundedConv](../../../../CommutativeAlgebra/WeightedCauchyReindexedNamespaced.lean/declarations/dirichletpolynomialcomplex-mul-boundedconv.md) | 124 | `result-track:602f3ce132b3addb765737712af7e523fc7624261baf3851593284b11c9e9852` |
+| 1 | `theorem` | [pairProductByValue_weighted_grouping](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/WeightedCauchyReindexedNamespaced.lean/declarations/pairproductbyvalue-weighted-grouping.md) | 25 | `result-track:855e885c7c3f51b94cb57b4c5819f65086ddfe56eac50e25540d5737acab2221` |
+| 2 | `theorem` | [dirichletPolynomialPairProductComplex_grouped](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/WeightedCauchyReindexedNamespaced.lean/declarations/dirichletpolynomialpairproductcomplex-grouped.md) | 94 | `result-track:3a97bf5cde66cf34cf0b80087671f04baa686204d0a4060098d899e707c5f3c0` |
+| 3 | `theorem` | [dirichletPolynomialComplex_mul_boundedConv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/WeightedCauchyReindexedNamespaced.lean/declarations/dirichletpolynomialcomplex-mul-boundedconv.md) | 124 | `result-track:602f3ce132b3addb765737712af7e523fc7624261baf3851593284b11c9e9852` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/DerivationLieLieSourceEdition2.lean/index.md) · [Full source](../../../../CommutativeAlgebra/DerivationLieLieSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DerivationLieLieSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DerivationLieLieSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/DerivationLieLieSourceEdition2.lean/declarations/instance-source-edition-2.md) | 33 | `declaration-track:e2e4f4621ebc26f70d71d9f3308651cbf3e8d6633d9b062f50d4336a7822eedc` |
-| 2 | `theorem` | [commutator_coe_linear_map](../../../../CommutativeAlgebra/DerivationLieLieSourceEdition2.lean/declarations/commutator-coe-linear-map.md) | 41 | `result-track:ef9140043e1af35b77b6766d717d95c2ded89412e6d756a5f1a1e41d78a78cce` |
-| 3 | `theorem` | [commutator_apply](../../../../CommutativeAlgebra/DerivationLieLieSourceEdition2.lean/declarations/commutator-apply.md) | 45 | `result-track:ebb339c9b535b29c917a3e2991b6f4baecc80ad0999cc2c06d00e24f2e38a714` |
-| 4 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/DerivationLieLieSourceEdition2.lean/declarations/instance.md) | 49 | `declaration-track:88cea8f98a9c829edb37c9603d37fe31aaba51ead4ee8b89225be5c5e44de537` |
-| 5 | `instance` | [instLieAlgebra](../../../../CommutativeAlgebra/DerivationLieLieSourceEdition2.lean/declarations/instliealgebra.md) | 55 | `declaration-track:8f27d7827e8f6976c05649b5b9392069cfed7bdbdebac54c23af7829686bd3b4` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DerivationLieLieSourceEdition2.lean/declarations/instance-source-edition-2.md) | 33 | `declaration-track:e2e4f4621ebc26f70d71d9f3308651cbf3e8d6633d9b062f50d4336a7822eedc` |
+| 2 | `theorem` | [commutator_coe_linear_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DerivationLieLieSourceEdition2.lean/declarations/commutator-coe-linear-map.md) | 41 | `result-track:ef9140043e1af35b77b6766d717d95c2ded89412e6d756a5f1a1e41d78a78cce` |
+| 3 | `theorem` | [commutator_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DerivationLieLieSourceEdition2.lean/declarations/commutator-apply.md) | 45 | `result-track:ebb339c9b535b29c917a3e2991b6f4baecc80ad0999cc2c06d00e24f2e38a714` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DerivationLieLieSourceEdition2.lean/declarations/instance.md) | 49 | `declaration-track:88cea8f98a9c829edb37c9603d37fe31aaba51ead4ee8b89225be5c5e44de537` |
+| 5 | `instance` | [instLieAlgebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DerivationLieLieSourceEdition2.lean/declarations/instliealgebra.md) | 55 | `declaration-track:8f27d7827e8f6976c05649b5b9392069cfed7bdbdebac54c23af7829686bd3b4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

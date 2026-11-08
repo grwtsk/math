@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrbitSequence.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrbitSequence.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrbitSequence.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrbitSequence.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `BooleanMatrix.Application.Core` — import line 21; external provider; requires a separately pinned dependency.
-- [Finite Iteration](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteIteration.lean/index.md) — import line 22; pinned internal source present.
+- [Finite Iteration](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteIteration.lean/index.md) — import line 22; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [orbit](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrbitSequence.lean/declarations/orbit.md) | 32 | `declaration-track:3aa37c2ed43d88c31a980fdfe5e7079f9852dd3d39a7b3b4c42e03d5d3f5fec9` |
-| 2 | `theorem` | [orbit_zero](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrbitSequence.lean/declarations/orbit-zero.md) | 39 | `result-track:8ce3f55f385ed79225edea9a8a8fa74a597102ddbc3a95416c174c37b1f0371c` |
-| 3 | `theorem` | [orbit_succ](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrbitSequence.lean/declarations/orbit-succ.md) | 46 | `result-track:b3b95d84d3535b7125337fdad23bf85bfc3c013a29a9ded2802062509f6135aa` |
+| 1 | `def` | [orbit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrbitSequence.lean/declarations/orbit.md) | 32 | `declaration-track:3aa37c2ed43d88c31a980fdfe5e7079f9852dd3d39a7b3b4c42e03d5d3f5fec9` |
+| 2 | `theorem` | [orbit_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrbitSequence.lean/declarations/orbit-zero.md) | 39 | `result-track:8ce3f55f385ed79225edea9a8a8fa74a597102ddbc3a95416c174c37b1f0371c` |
+| 3 | `theorem` | [orbit_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrbitSequence.lean/declarations/orbit-succ.md) | 46 | `result-track:b3b95d84d3535b7125337fdad23bf85bfc3c013a29a9ded2802062509f6135aa` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

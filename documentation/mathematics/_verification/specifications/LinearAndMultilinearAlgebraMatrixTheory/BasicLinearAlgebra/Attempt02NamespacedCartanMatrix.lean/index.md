@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Attempt02NamespacedCartanMatrix.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Attempt02NamespacedCartanMatrix.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Attempt02NamespacedCartanMatrix.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Attempt02NamespacedCartanMatrix.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [cartanMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Attempt02NamespacedCartanMatrix.lean/declarations/cartanmatrix.md) | 22 | `declaration-track:605a726f5ff600caee6f6f90d986dd830367a42334b9edae7513454eb41250f7` |
-| 2 | `theorem` | [mutationMatrix_cartan](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Attempt02NamespacedCartanMatrix.lean/declarations/mutationmatrix-cartan.md) | 25 | `result-track:ab21b635cd919d480f887ce3e02f65659a15d85dbccadc0b213817574f15c81b` |
-| 3 | `theorem` | [mutation_form_entry](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Attempt02NamespacedCartanMatrix.lean/declarations/mutation-form-entry.md) | 41 | `result-track:d2ad28c0e970c3c4fefe0a0a57dfbd4ca9b76cff390eff039e69bb34f2889211` |
+| 1 | `def` | [cartanMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Attempt02NamespacedCartanMatrix.lean/declarations/cartanmatrix.md) | 22 | `declaration-track:605a726f5ff600caee6f6f90d986dd830367a42334b9edae7513454eb41250f7` |
+| 2 | `theorem` | [mutationMatrix_cartan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Attempt02NamespacedCartanMatrix.lean/declarations/mutationmatrix-cartan.md) | 25 | `result-track:ab21b635cd919d480f887ce3e02f65659a15d85dbccadc0b213817574f15c81b` |
+| 3 | `theorem` | [mutation_form_entry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Attempt02NamespacedCartanMatrix.lean/declarations/mutation-form-entry.md) | 41 | `result-track:d2ad28c0e970c3c4fefe0a0a57dfbd4ca9b76cff390eff039e69bb34f2889211` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

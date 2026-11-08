@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualXiPrincipalTailWitness.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualXiPrincipalTailWitness.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualXiPrincipalTailWitness.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualXiPrincipalTailWitness.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [principalCompleteTailBudget](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualXiPrincipalTailWitness.lean/declarations/principalcompletetailbudget.md) | 19 | `declaration-track:5869cbadcfd823fddff54d8ded9b821da60a7287f4dcc7248440212ab0d25fba` |
-| 2 | `theorem` | [principalCompleteTailBudget_nonneg](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualXiPrincipalTailWitness.lean/declarations/principalcompletetailbudget-nonneg.md) | 23 | `result-track:d703ec3f75fc19f06f94db7f4a878ad9e19660e695f644f9d90df591afb80507` |
-| 3 | `theorem` | [complete_tail_lower_of_actual_signed_block](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualXiPrincipalTailWitness.lean/declarations/complete-tail-lower-of-actual-signed-block.md) | 27 | `result-track:6ee8bc94ea51d17e1498aadc02f35442a45b4c3d979b99408a725348124123b9` |
-| 4 | `theorem` | [complete_tail_witness_of_actual_signed_block](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualXiPrincipalTailWitness.lean/declarations/complete-tail-witness-of-actual-signed-block.md) | 45 | `result-track:61c6b4fcb666af5cc4fda505919b02d1a681d8e4909820a6d47a50f4dd8c748a` |
+| 1 | `def` | [principalCompleteTailBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualXiPrincipalTailWitness.lean/declarations/principalcompletetailbudget.md) | 19 | `declaration-track:5869cbadcfd823fddff54d8ded9b821da60a7287f4dcc7248440212ab0d25fba` |
+| 2 | `theorem` | [principalCompleteTailBudget_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualXiPrincipalTailWitness.lean/declarations/principalcompletetailbudget-nonneg.md) | 23 | `result-track:d703ec3f75fc19f06f94db7f4a878ad9e19660e695f644f9d90df591afb80507` |
+| 3 | `theorem` | [complete_tail_lower_of_actual_signed_block](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualXiPrincipalTailWitness.lean/declarations/complete-tail-lower-of-actual-signed-block.md) | 27 | `result-track:6ee8bc94ea51d17e1498aadc02f35442a45b4c3d979b99408a725348124123b9` |
+| 4 | `theorem` | [complete_tail_witness_of_actual_signed_block](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualXiPrincipalTailWitness.lean/declarations/complete-tail-witness-of-actual-signed-block.md) | 45 | `result-track:61c6b4fcb666af5cc4fda505919b02d1a681d8e4909820a6d47a50f4dd8c748a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

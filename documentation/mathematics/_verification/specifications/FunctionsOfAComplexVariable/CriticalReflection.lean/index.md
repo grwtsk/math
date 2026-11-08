@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/CriticalReflection.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/CriticalReflection.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/CriticalReflection.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/CriticalReflection.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [criticalReflection](../../../../FunctionsOfAComplexVariable/CriticalReflection.lean/declarations/criticalreflection.md) | 13 | `declaration-track:35ef1f29a9244caf95b4b8ff3204aeba407168a6a32c57b080380a5ea81d5428` |
-| 2 | `theorem` | [critical_reflection_involutive](../../../../FunctionsOfAComplexVariable/CriticalReflection.lean/declarations/critical-reflection-involutive.md) | 16 | `result-track:8c5751886f48b014ab6df48e37d11e05ca76001c717e659f4efd40c6502642f6` |
+| 1 | `def` | [criticalReflection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/CriticalReflection.lean/declarations/criticalreflection.md) | 13 | `declaration-track:35ef1f29a9244caf95b4b8ff3204aeba407168a6a32c57b080380a5ea81d5428` |
+| 2 | `theorem` | [critical_reflection_involutive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/CriticalReflection.lean/declarations/critical-reflection-involutive.md) | 16 | `result-track:8c5751886f48b014ab6df48e37d11e05ca76001c717e659f4efd40c6502642f6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

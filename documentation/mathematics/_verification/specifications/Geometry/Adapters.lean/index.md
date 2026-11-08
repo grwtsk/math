@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Geometry/Adapters.lean/index.md) · [Full source](../../../../Geometry/Adapters.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/Adapters.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/Adapters.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,15 +60,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [falseMatrix](../../../../Geometry/Adapters.lean/declarations/falsematrix.md) | 18 | `declaration-track:0bc8387fc74bb2830e00a0021ab06b737301f36518c2691f834c71b3457b8e59` |
-| 2 | `example` | [(anonymous)](../../../../Geometry/Adapters.lean/declarations/example-source-edition-6.md) | 21 | `declaration-track:d24951dcd8ebec46e9a8acfa0398f45b51a6c3d94094f1a890e1f3efd8b1d21d` |
-| 3 | `example` | [(anonymous)](../../../../Geometry/Adapters.lean/declarations/example-source-edition-5.md) | 28 | `declaration-track:a208110fde59129873cb711dcef2b3be0041be6e8d7a2e63aee36b7704471a72` |
-| 4 | `def` | [bitMatrixAbstraction](../../../../Geometry/Adapters.lean/declarations/bitmatrixabstraction.md) | 32 | `declaration-track:7cbb88e198476a83557241504b79c11d60063866d97eb49dae685bdba59cad35` |
-| 5 | `example` | [(anonymous)](../../../../Geometry/Adapters.lean/declarations/example.md) | 36 | `declaration-track:0f5cf6f42fe9b6aa7a6021ab9bcd9db7b67a7a60f33db8999d5fdbcc2ab5297b` |
-| 6 | `example` | [(anonymous)](../../../../Geometry/Adapters.lean/declarations/example-source-edition-4.md) | 42 | `declaration-track:41e80a7fe1098f5674002c7d66e7f5c4bc7cd72ad54f61b291d1d684dd6fc8fd` |
-| 7 | `example` | [(anonymous)](../../../../Geometry/Adapters.lean/declarations/example-source-edition-2.md) | 47 | `declaration-track:16c0a68701856b0999b723940b1693090ae5782f45614307f3570e35634b938d` |
-| 8 | `def` | [matrixCellImplementation](../../../../Geometry/Adapters.lean/declarations/matrixcellimplementation.md) | 52 | `declaration-track:42017699c72ced9c353b931cef350fb0cbc7add5edcf36081db8dc1a4d899ec4` |
-| 9 | `example` | [(anonymous)](../../../../Geometry/Adapters.lean/declarations/example-source-edition-3.md) | 58 | `declaration-track:3946d8d3bebf424b4a437e82be3a9c3ae79088b80439b618aadee6d10d97c1aa` |
+| 1 | `def` | [falseMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/Adapters.lean/declarations/falsematrix.md) | 18 | `declaration-track:0bc8387fc74bb2830e00a0021ab06b737301f36518c2691f834c71b3457b8e59` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/Adapters.lean/declarations/example-source-edition-6.md) | 21 | `declaration-track:d24951dcd8ebec46e9a8acfa0398f45b51a6c3d94094f1a890e1f3efd8b1d21d` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/Adapters.lean/declarations/example-source-edition-5.md) | 28 | `declaration-track:a208110fde59129873cb711dcef2b3be0041be6e8d7a2e63aee36b7704471a72` |
+| 4 | `def` | [bitMatrixAbstraction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/Adapters.lean/declarations/bitmatrixabstraction.md) | 32 | `declaration-track:7cbb88e198476a83557241504b79c11d60063866d97eb49dae685bdba59cad35` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/Adapters.lean/declarations/example.md) | 36 | `declaration-track:0f5cf6f42fe9b6aa7a6021ab9bcd9db7b67a7a60f33db8999d5fdbcc2ab5297b` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/Adapters.lean/declarations/example-source-edition-4.md) | 42 | `declaration-track:41e80a7fe1098f5674002c7d66e7f5c4bc7cd72ad54f61b291d1d684dd6fc8fd` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/Adapters.lean/declarations/example-source-edition-2.md) | 47 | `declaration-track:16c0a68701856b0999b723940b1693090ae5782f45614307f3570e35634b938d` |
+| 8 | `def` | [matrixCellImplementation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/Adapters.lean/declarations/matrixcellimplementation.md) | 52 | `declaration-track:42017699c72ced9c353b931cef350fb0cbc7add5edcf36081db8dc1a4d899ec4` |
+| 9 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/Adapters.lean/declarations/example-source-edition-3.md) | 58 | `declaration-track:3946d8d3bebf424b4a437e82be3a9c3ae79088b80439b618aadee6d10d97c1aa` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

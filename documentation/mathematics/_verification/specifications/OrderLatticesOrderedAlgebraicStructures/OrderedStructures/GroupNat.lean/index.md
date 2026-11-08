@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupNat.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupNat.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupNat.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupNat.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [instIsOrderedAddMonoid](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupNat.lean/declarations/instisorderedaddmonoid.md) | 22 | `declaration-track:832f38e073e3b9a9b5f2e041df674bb0a6540af136f2485bcfc26cdba6d340f0` |
-| 2 | `instance` | [instIsOrderedCancelAddMonoid](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupNat.lean/declarations/instisorderedcanceladdmonoid.md) | 25 | `declaration-track:44334540ce27a73ecd3afbe8508c9b241c0851606a0c68b788d240af4dbed037` |
-| 3 | `instance` | [instCanonicallyOrderedAdd](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupNat.lean/declarations/instcanonicallyorderedadd.md) | 29 | `declaration-track:5220ab7c2983b7719d8ee9ea6be08bd600e177dc520a1b483de4e4b1477bcfbb` |
-| 4 | `instance` | [instOrderedSub](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupNat.lean/declarations/instorderedsub.md) | 33 | `declaration-track:94d6e70f97b6a7b498976c58a29ba9245c1c42869ec82cd2f995f7bcf5983d34` |
-| 5 | `lemma` | [pow_left_strictMono](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupNat.lean/declarations/pow-left-strictmono.md) | 44 | `result-track:0367cab3b513343f01d3706af2198ba0e8a28126ec3632957e03383caae7db47` |
-| 6 | `lemma` | [_root_.StrictMono.nat_pow](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupNat.lean/declarations/root-strictmono-nat-pow.md) | 47 | `result-track:146c679bf3fd14bb12e12622e79e6bc49ebba9e741f3765378cd538837eeebdc` |
+| 1 | `instance` | [instIsOrderedAddMonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupNat.lean/declarations/instisorderedaddmonoid.md) | 22 | `declaration-track:832f38e073e3b9a9b5f2e041df674bb0a6540af136f2485bcfc26cdba6d340f0` |
+| 2 | `instance` | [instIsOrderedCancelAddMonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupNat.lean/declarations/instisorderedcanceladdmonoid.md) | 25 | `declaration-track:44334540ce27a73ecd3afbe8508c9b241c0851606a0c68b788d240af4dbed037` |
+| 3 | `instance` | [instCanonicallyOrderedAdd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupNat.lean/declarations/instcanonicallyorderedadd.md) | 29 | `declaration-track:5220ab7c2983b7719d8ee9ea6be08bd600e177dc520a1b483de4e4b1477bcfbb` |
+| 4 | `instance` | [instOrderedSub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupNat.lean/declarations/instorderedsub.md) | 33 | `declaration-track:94d6e70f97b6a7b498976c58a29ba9245c1c42869ec82cd2f995f7bcf5983d34` |
+| 5 | `lemma` | [pow_left_strictMono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupNat.lean/declarations/pow-left-strictmono.md) | 44 | `result-track:0367cab3b513343f01d3706af2198ba0e8a28126ec3632957e03383caae7db47` |
+| 6 | `lemma` | [_root_.StrictMono.nat_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupNat.lean/declarations/root-strictmono-nat-pow.md) | 47 | `result-track:146c679bf3fd14bb12e12622e79e6bc49ebba9e741f3765378cd538837eeebdc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

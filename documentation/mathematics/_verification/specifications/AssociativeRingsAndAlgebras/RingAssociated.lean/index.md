@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/RingAssociated.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/RingAssociated.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingAssociated.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingAssociated.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [neg_left](../../../../AssociativeRingsAndAlgebras/RingAssociated.lean/declarations/neg-left.md) | 18 | `result-track:96a719956046820ec94ce5edc98af9b4a132ac7f8e2c1d9cff934ea6719ecfbb` |
-| 2 | `lemma` | [neg_right](../../../../AssociativeRingsAndAlgebras/RingAssociated.lean/declarations/neg-right.md) | 19 | `result-track:0856df15a0ba430cf6704215ad143282b3c7a4ce45b517bab36fbff7e7606319` |
-| 3 | `lemma` | [neg_neg](../../../../AssociativeRingsAndAlgebras/RingAssociated.lean/declarations/neg-neg.md) | 20 | `result-track:ded82f099de9f161ea856d58bed720850190a6f7e9d3e5d07bd0cbd305b4e908` |
-| 4 | `lemma` | [neg_left_iff](../../../../AssociativeRingsAndAlgebras/RingAssociated.lean/declarations/neg-left-iff.md) | 23 | `result-track:67d48255f63276efd7d1d2abc00a902baa41bfb2c1f5a11b4d9652ac885825aa` |
-| 5 | `lemma` | [neg_right_iff](../../../../AssociativeRingsAndAlgebras/RingAssociated.lean/declarations/neg-right-iff.md) | 27 | `result-track:db195d195427167817712287659e323f94273413390338583d119f675d284e1d` |
+| 1 | `lemma` | [neg_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingAssociated.lean/declarations/neg-left.md) | 18 | `result-track:96a719956046820ec94ce5edc98af9b4a132ac7f8e2c1d9cff934ea6719ecfbb` |
+| 2 | `lemma` | [neg_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingAssociated.lean/declarations/neg-right.md) | 19 | `result-track:0856df15a0ba430cf6704215ad143282b3c7a4ce45b517bab36fbff7e7606319` |
+| 3 | `lemma` | [neg_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingAssociated.lean/declarations/neg-neg.md) | 20 | `result-track:ded82f099de9f161ea856d58bed720850190a6f7e9d3e5d07bd0cbd305b4e908` |
+| 4 | `lemma` | [neg_left_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingAssociated.lean/declarations/neg-left-iff.md) | 23 | `result-track:67d48255f63276efd7d1d2abc00a902baa41bfb2c1f5a11b4d9652ac885825aa` |
+| 5 | `lemma` | [neg_right_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingAssociated.lean/declarations/neg-right-iff.md) | 27 | `result-track:db195d195427167817712287659e323f94273413390338583d119f675d284e1d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

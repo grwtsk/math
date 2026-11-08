@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/BoundedRicciFlowNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/BoundedRicciFlowNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundedRicciFlowNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundedRicciFlowNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [BoundedRicciReferenceFlow](../../../../Combinatorics/BoundedRicciFlowNamespaced.lean/declarations/boundedriccireferenceflow.md) | 28 | `declaration-track:9dc80d2e7201b599021333cdcff2062fbf5315681305de126c5928649375748a` |
-| 2 | `theorem` | [edgeWeight_pos](../../../../Combinatorics/BoundedRicciFlowNamespaced.lean/declarations/edgeweight-pos.md) | 66 | `result-track:7ccbed6d7c887bfa2ac585b5beca3e8ce622b568ad193223b88357c937346642` |
-| 3 | `theorem` | [illegal_edge_excluded](../../../../Combinatorics/BoundedRicciFlowNamespaced.lean/declarations/illegal-edge-excluded.md) | 75 | `result-track:c90608447ee821ab1da6ec72f15afbe056208366e7b3a919234cfdddee51c98a` |
-| 4 | `theorem` | [semantics_ne_smoothManifold](../../../../Combinatorics/BoundedRicciFlowNamespaced.lean/declarations/semantics-ne-smoothmanifold.md) | 84 | `result-track:369b64da114eeda799ca62f6a79f8f38295b0a71b761c21f58194c05dc76a381` |
-| 5 | `theorem` | [metric_succ](../../../../Combinatorics/BoundedRicciFlowNamespaced.lean/declarations/metric-succ.md) | 90 | `result-track:0d1a9bc6e1cd5edc691a7f752d26bd256e6348c154b90f386515cf69fa37fe49` |
-| 6 | `theorem` | [distance_to_reference_nonincreasing](../../../../Combinatorics/BoundedRicciFlowNamespaced.lean/declarations/distance-to-reference-nonincreasing.md) | 99 | `result-track:b2c068b946e32ea9ae2c7499b401fa8b6cd4da4b77bc4693b2efccd41c41f792` |
+| 1 | `structure` | [BoundedRicciReferenceFlow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundedRicciFlowNamespaced.lean/declarations/boundedriccireferenceflow.md) | 28 | `declaration-track:9dc80d2e7201b599021333cdcff2062fbf5315681305de126c5928649375748a` |
+| 2 | `theorem` | [edgeWeight_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundedRicciFlowNamespaced.lean/declarations/edgeweight-pos.md) | 66 | `result-track:7ccbed6d7c887bfa2ac585b5beca3e8ce622b568ad193223b88357c937346642` |
+| 3 | `theorem` | [illegal_edge_excluded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundedRicciFlowNamespaced.lean/declarations/illegal-edge-excluded.md) | 75 | `result-track:c90608447ee821ab1da6ec72f15afbe056208366e7b3a919234cfdddee51c98a` |
+| 4 | `theorem` | [semantics_ne_smoothManifold](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundedRicciFlowNamespaced.lean/declarations/semantics-ne-smoothmanifold.md) | 84 | `result-track:369b64da114eeda799ca62f6a79f8f38295b0a71b761c21f58194c05dc76a381` |
+| 5 | `theorem` | [metric_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundedRicciFlowNamespaced.lean/declarations/metric-succ.md) | 90 | `result-track:0d1a9bc6e1cd5edc691a7f752d26bd256e6348c154b90f386515cf69fa37fe49` |
+| 6 | `theorem` | [distance_to_reference_nonincreasing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundedRicciFlowNamespaced.lean/declarations/distance-to-reference-nonincreasing.md) | 99 | `result-track:b2c068b946e32ea9ae2c7499b401fa8b6cd4da4b77bc4693b2efccd41c41f792` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

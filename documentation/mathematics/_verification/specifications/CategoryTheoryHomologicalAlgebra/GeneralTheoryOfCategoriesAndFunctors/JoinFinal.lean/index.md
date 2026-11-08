@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/JoinFinal.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/JoinFinal.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/JoinFinal.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/JoinFinal.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [costructuredArrowEquiv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/JoinFinal.lean/declarations/costructuredarrowequiv.md) | 24 | `declaration-track:f72e690071c7ce93f5768849dc10bf7d0bdecfe91debba950fec2d84e5ac06ca` |
-| 2 | `def` | [structuredArrowEquiv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/JoinFinal.lean/declarations/structuredarrowequiv.md) | 34 | `declaration-track:4003be03efdcecaa15d6a61f2de7826e4b96dbe5f6f449a29bd2b8cb10b92e0a` |
-| 3 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/JoinFinal.lean/declarations/instance.md) | 42 | `declaration-track:2b018e5690492d69357df72545cd979a51ee791c6da8342d769a0bfe5908e800` |
-| 4 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/JoinFinal.lean/declarations/instance-source-edition-2.md) | 47 | `declaration-track:57775b335f34fc1388eba19775edf9a87a9df27eacf9ff82cead44a3cd8b88e0` |
+| 1 | `def` | [costructuredArrowEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/JoinFinal.lean/declarations/costructuredarrowequiv.md) | 24 | `declaration-track:f72e690071c7ce93f5768849dc10bf7d0bdecfe91debba950fec2d84e5ac06ca` |
+| 2 | `def` | [structuredArrowEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/JoinFinal.lean/declarations/structuredarrowequiv.md) | 34 | `declaration-track:4003be03efdcecaa15d6a61f2de7826e4b96dbe5f6f449a29bd2b8cb10b92e0a` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/JoinFinal.lean/declarations/instance.md) | 42 | `declaration-track:2b018e5690492d69357df72545cd979a51ee791c6da8342d769a0bfe5908e800` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/JoinFinal.lean/declarations/instance-source-edition-2.md) | 47 | `declaration-track:57775b335f34fc1388eba19775edf9a87a9df27eacf9ff82cead44a3cd8b88e0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

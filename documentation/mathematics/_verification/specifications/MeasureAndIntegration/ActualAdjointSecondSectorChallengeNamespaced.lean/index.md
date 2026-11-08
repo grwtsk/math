@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ActualAdjointSecondSectorChallengeNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ActualAdjointSecondSectorChallengeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualAdjointSecondSectorChallengeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualAdjointSecondSectorChallengeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actualDerivativeEnergy_ge_four](../../../../MeasureAndIntegration/ActualAdjointSecondSectorChallengeNamespaced.lean/declarations/actualderivativeenergy-ge-four.md) | 33 | `result-track:e37e87e8c91fd00764f63afa28810d874ea08d547dc4cde80bd70616734e0a7c` |
-| 2 | `theorem` | [actualCorrelation_second_zero_le_neg_four](../../../../MeasureAndIntegration/ActualAdjointSecondSectorChallengeNamespaced.lean/declarations/actualcorrelation-second-zero-le-neg-four.md) | 47 | `result-track:b8e06ede0d021dbc770503b539c8ce21edaf14d12cf9b79ca7df45f4dc6b6d78` |
-| 3 | `theorem` | [actualCorrelation_second_increment_abs](../../../../MeasureAndIntegration/ActualAdjointSecondSectorChallengeNamespaced.lean/declarations/actualcorrelation-second-increment-abs.md) | 54 | `result-track:c42bf987bd66bd6f9192033a0f045c8ffc7eb1952da34d9fba6357db732a75af` |
-| 4 | `theorem` | [actualMixed_rectangle_second_upper](../../../../MeasureAndIntegration/ActualAdjointSecondSectorChallengeNamespaced.lean/declarations/actualmixed-rectangle-second-upper.md) | 75 | `result-track:b037b0feee66c69641a068dab2536755e8c924c50cc5eb5054b7048083f5463b` |
-| 5 | `theorem` | [actualAdjoint_original_rectangle_kernel_lower](../../../../MeasureAndIntegration/ActualAdjointSecondSectorChallengeNamespaced.lean/declarations/actualadjoint-original-rectangle-kernel-lower.md) | 96 | `result-track:62e242dbc43abfdc07398a6bed67f398450c7511b499ebc9c0e41ca5c4cbc2e8` |
-| 6 | `theorem` | [actualAdjoint_original_rectangle_density_lower](../../../../MeasureAndIntegration/ActualAdjointSecondSectorChallengeNamespaced.lean/declarations/actualadjoint-original-rectangle-density-lower.md) | 126 | `result-track:d98827fb63d54b520d31e55e418c3302d9753a2bc634f5254adc24de38c5f758` |
+| 1 | `theorem` | [actualDerivativeEnergy_ge_four](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualAdjointSecondSectorChallengeNamespaced.lean/declarations/actualderivativeenergy-ge-four.md) | 33 | `result-track:e37e87e8c91fd00764f63afa28810d874ea08d547dc4cde80bd70616734e0a7c` |
+| 2 | `theorem` | [actualCorrelation_second_zero_le_neg_four](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualAdjointSecondSectorChallengeNamespaced.lean/declarations/actualcorrelation-second-zero-le-neg-four.md) | 47 | `result-track:b8e06ede0d021dbc770503b539c8ce21edaf14d12cf9b79ca7df45f4dc6b6d78` |
+| 3 | `theorem` | [actualCorrelation_second_increment_abs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualAdjointSecondSectorChallengeNamespaced.lean/declarations/actualcorrelation-second-increment-abs.md) | 54 | `result-track:c42bf987bd66bd6f9192033a0f045c8ffc7eb1952da34d9fba6357db732a75af` |
+| 4 | `theorem` | [actualMixed_rectangle_second_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualAdjointSecondSectorChallengeNamespaced.lean/declarations/actualmixed-rectangle-second-upper.md) | 75 | `result-track:b037b0feee66c69641a068dab2536755e8c924c50cc5eb5054b7048083f5463b` |
+| 5 | `theorem` | [actualAdjoint_original_rectangle_kernel_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualAdjointSecondSectorChallengeNamespaced.lean/declarations/actualadjoint-original-rectangle-kernel-lower.md) | 96 | `result-track:62e242dbc43abfdc07398a6bed67f398450c7511b499ebc9c0e41ca5c4cbc2e8` |
+| 6 | `theorem` | [actualAdjoint_original_rectangle_density_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualAdjointSecondSectorChallengeNamespaced.lean/declarations/actualadjoint-original-rectangle-density-lower.md) | 126 | `result-track:d98827fb63d54b520d31e55e418c3302d9753a2bc634f5254adc24de38c5f758` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

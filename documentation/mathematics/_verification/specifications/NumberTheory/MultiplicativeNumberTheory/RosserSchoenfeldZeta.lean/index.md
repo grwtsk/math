@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/MultiplicativeNumberTheory/RosserSchoenfeldZeta.lean/index.md) · [Full source](../../../../../NumberTheory/MultiplicativeNumberTheory/RosserSchoenfeldZeta.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/RosserSchoenfeldZeta.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/RosserSchoenfeldZeta.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [theorem_19](../../../../../NumberTheory/MultiplicativeNumberTheory/RosserSchoenfeldZeta.lean/declarations/theorem-19.md) | 18 | `result-track:5f1effb32fc44a9fbca826343f21fdfab8f79bc6b87059b1c2cb4fc81bdf39cb` |
+| 1 | `theorem` | [theorem_19](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/RosserSchoenfeldZeta.lean/declarations/theorem-19.md) | 18 | `result-track:5f1effb32fc44a9fbca826343f21fdfab8f79bc6b87059b1c2cb4fc81bdf39cb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

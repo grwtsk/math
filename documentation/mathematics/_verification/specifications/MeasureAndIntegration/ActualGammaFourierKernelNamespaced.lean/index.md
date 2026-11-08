@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ActualGammaFourierKernelNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ActualGammaFourierKernelNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualGammaFourierKernelNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualGammaFourierKernelNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,16 +59,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [jointIntegrand](../../../../MeasureAndIntegration/ActualGammaFourierKernelNamespaced.lean/declarations/jointintegrand.md) | 26 | `declaration-track:250b8fe793c666ba8032cbc8e4114a2d72038c0051705aec811315dd8903e258` |
-| 2 | `theorem` | [sourceSquare_measurable](../../../../MeasureAndIntegration/ActualGammaFourierKernelNamespaced.lean/declarations/sourcesquare-measurable.md) | 29 | `result-track:75e300df268d0ffb7d315e3579ecc7973fe864639f4b392d20dcf0540eca0309` |
-| 3 | `theorem` | [joint_measurable](../../../../MeasureAndIntegration/ActualGammaFourierKernelNamespaced.lean/declarations/joint-measurable.md) | 34 | `result-track:ebf0afeb1a4ed23a0d0ea6a2fbe049fcad84781a3dba3447e5def63e1ef6e461` |
-| 4 | `theorem` | [joint_nonneg](../../../../MeasureAndIntegration/ActualGammaFourierKernelNamespaced.lean/declarations/joint-nonneg.md) | 40 | `result-track:c75bc1b6e999c6ed3be1ee9230cf7541ebbc3bca165d4ebb111cfd44c121919d` |
-| 5 | `theorem` | [centered_frequency_integrable](../../../../MeasureAndIntegration/ActualGammaFourierKernelNamespaced.lean/declarations/centered-frequency-integrable.md) | 47 | `result-track:73deced9f054c951f98fe7073dfb41504ed07c17d9120b1c8e708e2f4ab5f8e7` |
-| 6 | `theorem` | [inner_norm_integral](../../../../MeasureAndIntegration/ActualGammaFourierKernelNamespaced.lean/declarations/inner-norm-integral.md) | 62 | `result-track:e9f08e23d5a1cc8ac9b275ac206fa3a5c2d804b36a82ececeee8e2bae2e610bc` |
-| 7 | `theorem` | [joint_integrable](../../../../MeasureAndIntegration/ActualGammaFourierKernelNamespaced.lean/declarations/joint-integrable.md) | 75 | `result-track:270e826f88080a3405d2d58c6285e041f81f9af4657aa3693351a9d387b2b175` |
-| 8 | `theorem` | [inner_frequency_integral](../../../../MeasureAndIntegration/ActualGammaFourierKernelNamespaced.lean/declarations/inner-frequency-integral.md) | 83 | `result-track:23afb08722bff856e94d328494d5ba0996d7be86fdd2e184befa917dae391f82` |
-| 9 | `theorem` | [centered_source_integral](../../../../MeasureAndIntegration/ActualGammaFourierKernelNamespaced.lean/declarations/centered-source-integral.md) | 102 | `result-track:30f3832bec847d7f0525e26b93cb3f2cb9e49c6e78b3f1f0da700345f2dcf3a2` |
-| 10 | `theorem` | [actual_sourceGamma_identity](../../../../MeasureAndIntegration/ActualGammaFourierKernelNamespaced.lean/declarations/actual-sourcegamma-identity.md) | 126 | `result-track:a8ebbb77a56d0e510d35ae49817a3f96ecb22cafeddccc6412acc073b19727ab` |
+| 1 | `def` | [jointIntegrand](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualGammaFourierKernelNamespaced.lean/declarations/jointintegrand.md) | 26 | `declaration-track:250b8fe793c666ba8032cbc8e4114a2d72038c0051705aec811315dd8903e258` |
+| 2 | `theorem` | [sourceSquare_measurable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualGammaFourierKernelNamespaced.lean/declarations/sourcesquare-measurable.md) | 29 | `result-track:75e300df268d0ffb7d315e3579ecc7973fe864639f4b392d20dcf0540eca0309` |
+| 3 | `theorem` | [joint_measurable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualGammaFourierKernelNamespaced.lean/declarations/joint-measurable.md) | 34 | `result-track:ebf0afeb1a4ed23a0d0ea6a2fbe049fcad84781a3dba3447e5def63e1ef6e461` |
+| 4 | `theorem` | [joint_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualGammaFourierKernelNamespaced.lean/declarations/joint-nonneg.md) | 40 | `result-track:c75bc1b6e999c6ed3be1ee9230cf7541ebbc3bca165d4ebb111cfd44c121919d` |
+| 5 | `theorem` | [centered_frequency_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualGammaFourierKernelNamespaced.lean/declarations/centered-frequency-integrable.md) | 47 | `result-track:73deced9f054c951f98fe7073dfb41504ed07c17d9120b1c8e708e2f4ab5f8e7` |
+| 6 | `theorem` | [inner_norm_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualGammaFourierKernelNamespaced.lean/declarations/inner-norm-integral.md) | 62 | `result-track:e9f08e23d5a1cc8ac9b275ac206fa3a5c2d804b36a82ececeee8e2bae2e610bc` |
+| 7 | `theorem` | [joint_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualGammaFourierKernelNamespaced.lean/declarations/joint-integrable.md) | 75 | `result-track:270e826f88080a3405d2d58c6285e041f81f9af4657aa3693351a9d387b2b175` |
+| 8 | `theorem` | [inner_frequency_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualGammaFourierKernelNamespaced.lean/declarations/inner-frequency-integral.md) | 83 | `result-track:23afb08722bff856e94d328494d5ba0996d7be86fdd2e184befa917dae391f82` |
+| 9 | `theorem` | [centered_source_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualGammaFourierKernelNamespaced.lean/declarations/centered-source-integral.md) | 102 | `result-track:30f3832bec847d7f0525e26b93cb3f2cb9e49c6e78b3f1f0da700345f2dcf3a2` |
+| 10 | `theorem` | [actual_sourceGamma_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualGammaFourierKernelNamespaced.lean/declarations/actual-sourcegamma-identity.md) | 126 | `result-track:a8ebbb77a56d0e510d35ae49817a3f96ecb22cafeddccc6412acc073b19727ab` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

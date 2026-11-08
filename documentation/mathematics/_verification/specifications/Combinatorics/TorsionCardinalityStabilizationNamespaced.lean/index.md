@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/TorsionCardinalityStabilizationNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/TorsionCardinalityStabilizationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TorsionCardinalityStabilizationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TorsionCardinalityStabilizationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [torsionCardinality_eventuallyConstant](../../../../Combinatorics/TorsionCardinalityStabilizationNamespaced.lean/declarations/torsioncardinality-eventuallyconstant.md) | 22 | `result-track:e330cc9323a32fec76f3569f72aa30b9d3d9fc47e185786145952e62c95621d4` |
+| 1 | `theorem` | [torsionCardinality_eventuallyConstant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TorsionCardinalityStabilizationNamespaced.lean/declarations/torsioncardinality-eventuallyconstant.md) | 22 | `result-track:e330cc9323a32fec76f3569f72aa30b9d3d9fc47e185786145952e62c95621d4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

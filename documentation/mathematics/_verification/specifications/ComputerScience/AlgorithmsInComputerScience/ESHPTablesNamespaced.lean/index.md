@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ESHPTablesNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ESHPTablesNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ESHPTablesNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ESHPTablesNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [table_8](../../../../../ComputerScience/AlgorithmsInComputerScience/ESHPTablesNamespaced.lean/declarations/table-8.md) | 24 | `declaration-track:d7c2bd9906144666a8d174ceb9eaf0d5de97ed4611bcbfc73c7e76a69673c1ff` |
-| 2 | `def` | [table_9](../../../../../ComputerScience/AlgorithmsInComputerScience/ESHPTablesNamespaced.lean/declarations/table-9.md) | 59 | `declaration-track:6eda1fb994e44b7406aed87d8b6e2bc27c54aa8d901991462b0e79a921ec3c4a` |
+| 1 | `def` | [table_8](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ESHPTablesNamespaced.lean/declarations/table-8.md) | 24 | `declaration-track:d7c2bd9906144666a8d174ceb9eaf0d5de97ed4611bcbfc73c7e76a69673c1ff` |
+| 2 | `def` | [table_9](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ESHPTablesNamespaced.lean/declarations/table-9.md) | 59 | `declaration-track:6eda1fb994e44b7406aed87d8b6e2bc27c54aa8d901991462b0e79a921ec3c4a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

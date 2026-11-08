@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/WalshCylinder.lean/index.md) · [Full source](../../../../RealFunctions/WalshCylinder.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/WalshCylinder.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/WalshCylinder.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [bitSign](../../../../RealFunctions/WalshCylinder.lean/declarations/bitsign.md) | 34 | `declaration-track:10622ebb4be058e31924fa42ba8aabed3a2df9632a5b6f7a35e76456e3f89887` |
-| 2 | `def` | [finiteMoment](../../../../RealFunctions/WalshCylinder.lean/declarations/finitemoment.md) | 39 | `declaration-track:917e3013cd1c8df516694936857dd60c0e4dc06a551de2eb87f493a7d477c91a` |
-| 3 | `def` | [rawCylinderSum](../../../../RealFunctions/WalshCylinder.lean/declarations/rawcylindersum.md) | 43 | `declaration-track:a24413e7dbd6b6ceb7720b8fd172d313164867e3d3800a9d61d1da4fe5520863` |
-| 4 | `def` | [binaryPatternCount](../../../../RealFunctions/WalshCylinder.lean/declarations/binarypatterncount.md) | 50 | `declaration-track:1eaec0206af664adfd88f0d7542fbb928c09c752f00eecccde598a690d73abda` |
-| 5 | `theorem` | [finiteMoment_empty](../../../../RealFunctions/WalshCylinder.lean/declarations/finitemoment-empty.md) | 56 | `result-track:b2265a77606779102a9338643ebe763f61295f189020eb125939fd8f1009cf9d` |
-| 6 | `theorem` | [binaryPatternCount_empty](../../../../RealFunctions/WalshCylinder.lean/declarations/binarypatterncount-empty.md) | 62 | `result-track:e9a271fcaf64ce8e7f97ff8bdf3065c6693af3ba9c24a3a8cd97ad92dba4f100` |
-| 7 | `theorem` | [rawCylinderSum_eq_sum_moments](../../../../RealFunctions/WalshCylinder.lean/declarations/rawcylindersum-eq-sum-moments.md) | 70 | `result-track:c32821ab48987efe6548d6e68b07b18b8afac1e99bdae693925c241f1cb01390` |
-| 8 | `theorem` | [bitSign_match_factor](../../../../RealFunctions/WalshCylinder.lean/declarations/bitsign-match-factor.md) | 96 | `result-track:8c349d8f3ea591c433f7b40698aa6953fd3556cc2e1b6095bc0bbc020bdc94e8` |
-| 9 | `theorem` | [rawCylinderSum_eq_scaled_binaryPatternCount](../../../../RealFunctions/WalshCylinder.lean/declarations/rawcylindersum-eq-scaled-binarypatterncount.md) | 103 | `result-track:588d62684cd2280422ab3e003a0603a54fbab90124e8d08219b31457a2e5130d` |
-| 10 | `theorem` | [binaryPatternCount_walsh](../../../../RealFunctions/WalshCylinder.lean/declarations/binarypatterncount-walsh.md) | 134 | `result-track:f10e5fe9eca9288dada0975f4476cbfd67a3ddf7c49d4dfa3b853ead39537f60` |
+| 1 | `def` | [bitSign](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/WalshCylinder.lean/declarations/bitsign.md) | 34 | `declaration-track:10622ebb4be058e31924fa42ba8aabed3a2df9632a5b6f7a35e76456e3f89887` |
+| 2 | `def` | [finiteMoment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/WalshCylinder.lean/declarations/finitemoment.md) | 39 | `declaration-track:917e3013cd1c8df516694936857dd60c0e4dc06a551de2eb87f493a7d477c91a` |
+| 3 | `def` | [rawCylinderSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/WalshCylinder.lean/declarations/rawcylindersum.md) | 43 | `declaration-track:a24413e7dbd6b6ceb7720b8fd172d313164867e3d3800a9d61d1da4fe5520863` |
+| 4 | `def` | [binaryPatternCount](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/WalshCylinder.lean/declarations/binarypatterncount.md) | 50 | `declaration-track:1eaec0206af664adfd88f0d7542fbb928c09c752f00eecccde598a690d73abda` |
+| 5 | `theorem` | [finiteMoment_empty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/WalshCylinder.lean/declarations/finitemoment-empty.md) | 56 | `result-track:b2265a77606779102a9338643ebe763f61295f189020eb125939fd8f1009cf9d` |
+| 6 | `theorem` | [binaryPatternCount_empty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/WalshCylinder.lean/declarations/binarypatterncount-empty.md) | 62 | `result-track:e9a271fcaf64ce8e7f97ff8bdf3065c6693af3ba9c24a3a8cd97ad92dba4f100` |
+| 7 | `theorem` | [rawCylinderSum_eq_sum_moments](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/WalshCylinder.lean/declarations/rawcylindersum-eq-sum-moments.md) | 70 | `result-track:c32821ab48987efe6548d6e68b07b18b8afac1e99bdae693925c241f1cb01390` |
+| 8 | `theorem` | [bitSign_match_factor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/WalshCylinder.lean/declarations/bitsign-match-factor.md) | 96 | `result-track:8c349d8f3ea591c433f7b40698aa6953fd3556cc2e1b6095bc0bbc020bdc94e8` |
+| 9 | `theorem` | [rawCylinderSum_eq_scaled_binaryPatternCount](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/WalshCylinder.lean/declarations/rawcylindersum-eq-scaled-binarypatterncount.md) | 103 | `result-track:588d62684cd2280422ab3e003a0603a54fbab90124e8d08219b31457a2e5130d` |
+| 10 | `theorem` | [binaryPatternCount_walsh](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/WalshCylinder.lean/declarations/binarypatterncount-walsh.md) | 134 | `result-track:f10e5fe9eca9288dada0975f4476cbfd67a3ddf7c49d4dfa3b853ead39537f60` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

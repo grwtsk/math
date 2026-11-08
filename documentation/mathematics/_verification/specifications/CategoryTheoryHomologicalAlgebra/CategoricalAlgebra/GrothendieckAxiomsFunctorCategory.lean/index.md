@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckAxiomsFunctorCategory.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckAxiomsFunctorCategory.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckAxiomsFunctorCategory.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckAxiomsFunctorCategory.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckAxiomsFunctorCategory.lean/declarations/instance-source-edition-2.md) | 21 | `declaration-track:420a7383ded4081d6912924d0eccb298bde0a02752759079c6590bb29e0e181a` |
-| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckAxiomsFunctorCategory.lean/declarations/instance.md) | 25 | `declaration-track:1fe6bd45ce3e1e47281c480f93aa51fd1382cccc7d651a96c710cd08672fbb07` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckAxiomsFunctorCategory.lean/declarations/instance-source-edition-2.md) | 21 | `declaration-track:420a7383ded4081d6912924d0eccb298bde0a02752759079c6590bb29e0e181a` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckAxiomsFunctorCategory.lean/declarations/instance.md) | 25 | `declaration-track:1fe6bd45ce3e1e47281c480f93aa51fd1382cccc7d651a96c710cd08672fbb07` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

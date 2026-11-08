@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/LiftedNegation.lean/index.md) · [Full source](../../../../Combinatorics/LiftedNegation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LiftedNegation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LiftedNegation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `BooleanMatrix.Codec.Lift` — import line 21; external provider; requires a separately pinned dependency.
-- [Boolean Codec](../../../../Combinatorics/BooleanCodec.lean/index.md) — import line 22; pinned internal source present.
+- [Boolean Codec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BooleanCodec.lean/index.md) — import line 22; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [boolNot](../../../../Combinatorics/LiftedNegation.lean/declarations/boolnot.md) | 32 | `declaration-track:4755d53b62ba8392501fe77df17433657aeb77054ffbe498ae8c0c1d376ff0bc` |
-| 2 | `theorem` | [boolNot_encode](../../../../Combinatorics/LiftedNegation.lean/declarations/boolnot-encode.md) | 36 | `result-track:370d754ba87a4bb71ddb48d91a7688ac255e9caf7d10e5ba03e02d1b554b53fd` |
+| 1 | `def` | [boolNot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LiftedNegation.lean/declarations/boolnot.md) | 32 | `declaration-track:4755d53b62ba8392501fe77df17433657aeb77054ffbe498ae8c0c1d376ff0bc` |
+| 2 | `theorem` | [boolNot_encode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LiftedNegation.lean/declarations/boolnot-encode.md) | 36 | `result-track:370d754ba87a4bb71ddb48d91a7688ac255e9caf7d10e5ba03e02d1b554b53fd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

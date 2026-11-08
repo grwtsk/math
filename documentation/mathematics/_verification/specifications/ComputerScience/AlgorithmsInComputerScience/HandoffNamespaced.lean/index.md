@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/HandoffNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/HandoffNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/HandoffNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/HandoffNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [HandoffContext](../../../../../ComputerScience/AlgorithmsInComputerScience/HandoffNamespaced.lean/declarations/handoffcontext.md) | 20 | `declaration-track:190ad6efebb829fc925dfe76423243514baf6976c92a8733e4d1d3b885333d20` |
-| 2 | `def` | [HandoffContext.transferredLease](../../../../../ComputerScience/AlgorithmsInComputerScience/HandoffNamespaced.lean/declarations/handoffcontext-transferredlease.md) | 29 | `declaration-track:d04ada570565eb0023d02f1ff25cf973eecdaa2c810eba3264e98f4d1e4a0b4c` |
-| 3 | `theorem` | [handoff_transfers_no_lease](../../../../../ComputerScience/AlgorithmsInComputerScience/HandoffNamespaced.lean/declarations/handoff-transfers-no-lease.md) | 34 | `result-track:73d3f977d09497f590934111e30347d5570718b3620ea9c4c97ba58f3710b7b3` |
-| 4 | `theorem` | [source_lease_does_not_authorize_target](../../../../../ComputerScience/AlgorithmsInComputerScience/HandoffNamespaced.lean/declarations/source-lease-does-not-authorize-target.md) | 39 | `result-track:8e5c12f894cb354a0452ef25615256dfe627f2ce409a9ca2a3760ce76b0f0937` |
+| 1 | `structure` | [HandoffContext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/HandoffNamespaced.lean/declarations/handoffcontext.md) | 20 | `declaration-track:190ad6efebb829fc925dfe76423243514baf6976c92a8733e4d1d3b885333d20` |
+| 2 | `def` | [HandoffContext.transferredLease](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/HandoffNamespaced.lean/declarations/handoffcontext-transferredlease.md) | 29 | `declaration-track:d04ada570565eb0023d02f1ff25cf973eecdaa2c810eba3264e98f4d1e4a0b4c` |
+| 3 | `theorem` | [handoff_transfers_no_lease](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/HandoffNamespaced.lean/declarations/handoff-transfers-no-lease.md) | 34 | `result-track:73d3f977d09497f590934111e30347d5570718b3620ea9c4c97ba58f3710b7b3` |
+| 4 | `theorem` | [source_lease_does_not_authorize_target](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/HandoffNamespaced.lean/declarations/source-lease-does-not-authorize-target.md) | 39 | `result-track:8e5c12f894cb354a0452ef25615256dfe627f2ce409a9ca2a3760ce76b0f0937` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/ControlledMap.lean/index.md) · [Full source](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/ControlledMap.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/ControlledMap.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/ControlledMap.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [ControlledMap](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/ControlledMap.lean/declarations/controlledmap.md) | 18 | `declaration-track:8545d66a3a5ba8841ea5db6a3750e353aed3bac994069e638aefed09d7bf0335` |
-| 2 | `def` | [identity](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/ControlledMap.lean/declarations/identity.md) | 25 | `declaration-track:13ed0e1c90e4f70319356e048c65f4cb20f3245012e83ce815286d81ce37264e` |
-| 3 | `def` | [comp](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/ControlledMap.lean/declarations/comp.md) | 30 | `declaration-track:78a3de3d2b56e175116f8b2a0a7520972a9a52009d5700dadf9b0fd50dbe3c18` |
-| 4 | `theorem` | [comp_sound](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/ControlledMap.lean/declarations/comp-sound.md) | 38 | `result-track:f87eee5fecc726ae93c35baddaf80c2b1f2c979872081772a8d992bcc4ead16e` |
-| 5 | `theorem` | [comp_assoc_behavior](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/ControlledMap.lean/declarations/comp-assoc-behavior.md) | 54 | `result-track:7a80bdefe6d101956987ce6bc3ae08b5635bacb61185af01afd894fb73879fd8` |
+| 1 | `abbrev` | [ControlledMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/ControlledMap.lean/declarations/controlledmap.md) | 18 | `declaration-track:8545d66a3a5ba8841ea5db6a3750e353aed3bac994069e638aefed09d7bf0335` |
+| 2 | `def` | [identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/ControlledMap.lean/declarations/identity.md) | 25 | `declaration-track:13ed0e1c90e4f70319356e048c65f4cb20f3245012e83ce815286d81ce37264e` |
+| 3 | `def` | [comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/ControlledMap.lean/declarations/comp.md) | 30 | `declaration-track:78a3de3d2b56e175116f8b2a0a7520972a9a52009d5700dadf9b0fd50dbe3c18` |
+| 4 | `theorem` | [comp_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/ControlledMap.lean/declarations/comp-sound.md) | 38 | `result-track:f87eee5fecc726ae93c35baddaf80c2b1f2c979872081772a8d992bcc4ead16e` |
+| 5 | `theorem` | [comp_assoc_behavior](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/ControlledMap.lean/declarations/comp-assoc-behavior.md) | 54 | `result-track:7a80bdefe6d101956987ce6bc3ae08b5635bacb61185af01afd894fb73879fd8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

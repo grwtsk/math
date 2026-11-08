@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/FiberNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/FiberNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FiberNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FiberNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SpectralShellFiber](../../../../FunctionalAnalysis/FiberNamespaced.lean/declarations/spectralshellfiber.md) | 30 | `declaration-track:3c168d205445afe995ff7c7a12cdf7ecc5ef692c2bd24110f0f205cb2f98f0e0` |
-| 2 | `theorem` | [ext](../../../../FunctionalAnalysis/FiberNamespaced.lean/declarations/ext.md) | 40 | `result-track:d372db8c6569a14016f29cac0b8e06d1b28e6f158c0bbb1a6c622d59ca386faa` |
-| 3 | `def` | [zero](../../../../FunctionalAnalysis/FiberNamespaced.lean/declarations/zero.md) | 50 | `declaration-track:f7324b946e7befb871a9e740135be281b87be6f02b45d4ad6c84cad9dcb881dd` |
-| 4 | `def` | [add](../../../../FunctionalAnalysis/FiberNamespaced.lean/declarations/add.md) | 53 | `declaration-track:7be7c9124bfa4a3fbb06626dab0cdc6df5758a1be6cec5214ed03898593d02e7` |
-| 5 | `def` | [map](../../../../FunctionalAnalysis/FiberNamespaced.lean/declarations/map.md) | 58 | `declaration-track:50c7df06a46a8d1cb18fd15fe2fc024cfd056acb2e89a80ae33d6f294b41b172` |
-| 6 | `instance` | [(anonymous)](../../../../FunctionalAnalysis/FiberNamespaced.lean/declarations/instance-source-edition-2.md) | 64 | `declaration-track:fcdfb548d86906282d4494392932d9e10824c09d8268d2418ff60420c6de3537` |
-| 7 | `instance` | [(anonymous)](../../../../FunctionalAnalysis/FiberNamespaced.lean/declarations/instance.md) | 67 | `declaration-track:137f7da13b212e6595ce6d57ead2a5755c117121b5db4266ce9e919d488b7ad9` |
-| 8 | `theorem` | [value_zero](../../../../FunctionalAnalysis/FiberNamespaced.lean/declarations/value-zero.md) | 71 | `result-track:89bf0e2e532f5038db49bf0b67d0ac01c5f26237ba490219eff254b32025b4f9` |
-| 9 | `theorem` | [value_add](../../../../FunctionalAnalysis/FiberNamespaced.lean/declarations/value-add.md) | 78 | `result-track:790c74e92a7d455923e7425e657d4da7acc046733ab40d61c2331caf8d820331` |
-| 10 | `theorem` | [value_map](../../../../FunctionalAnalysis/FiberNamespaced.lean/declarations/value-map.md) | 86 | `result-track:49725db13f0cf14dec3454cd3bcdd069869892e9b5a1a41ce734c7e4fdd1d005` |
+| 1 | `structure` | [SpectralShellFiber](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FiberNamespaced.lean/declarations/spectralshellfiber.md) | 30 | `declaration-track:3c168d205445afe995ff7c7a12cdf7ecc5ef692c2bd24110f0f205cb2f98f0e0` |
+| 2 | `theorem` | [ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FiberNamespaced.lean/declarations/ext.md) | 40 | `result-track:d372db8c6569a14016f29cac0b8e06d1b28e6f158c0bbb1a6c622d59ca386faa` |
+| 3 | `def` | [zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FiberNamespaced.lean/declarations/zero.md) | 50 | `declaration-track:f7324b946e7befb871a9e740135be281b87be6f02b45d4ad6c84cad9dcb881dd` |
+| 4 | `def` | [add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FiberNamespaced.lean/declarations/add.md) | 53 | `declaration-track:7be7c9124bfa4a3fbb06626dab0cdc6df5758a1be6cec5214ed03898593d02e7` |
+| 5 | `def` | [map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FiberNamespaced.lean/declarations/map.md) | 58 | `declaration-track:50c7df06a46a8d1cb18fd15fe2fc024cfd056acb2e89a80ae33d6f294b41b172` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FiberNamespaced.lean/declarations/instance-source-edition-2.md) | 64 | `declaration-track:fcdfb548d86906282d4494392932d9e10824c09d8268d2418ff60420c6de3537` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FiberNamespaced.lean/declarations/instance.md) | 67 | `declaration-track:137f7da13b212e6595ce6d57ead2a5755c117121b5db4266ce9e919d488b7ad9` |
+| 8 | `theorem` | [value_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FiberNamespaced.lean/declarations/value-zero.md) | 71 | `result-track:89bf0e2e532f5038db49bf0b67d0ac01c5f26237ba490219eff254b32025b4f9` |
+| 9 | `theorem` | [value_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FiberNamespaced.lean/declarations/value-add.md) | 78 | `result-track:790c74e92a7d455923e7425e657d4da7acc046733ab40d61c2331caf8d820331` |
+| 10 | `theorem` | [value_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FiberNamespaced.lean/declarations/value-map.md) | 86 | `result-track:49725db13f0cf14dec3454cd3bcdd069869892e9b5a1a41ce734c7e4fdd1d005` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

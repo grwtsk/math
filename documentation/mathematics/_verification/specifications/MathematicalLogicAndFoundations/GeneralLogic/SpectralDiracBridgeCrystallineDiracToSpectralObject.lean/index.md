@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SpectralDiracBridgeCrystallineDiracToSpectralObject.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SpectralDiracBridgeCrystallineDiracToSpectralObject.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SpectralDiracBridgeCrystallineDiracToSpectralObject.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SpectralDiracBridgeCrystallineDiracToSpectralObject.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CrystallineDiracToSpectralObject](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SpectralDiracBridgeCrystallineDiracToSpectralObject.lean/declarations/crystallinediractospectralobject.md) | 19 | `declaration-track:5e62a5cb19c94435f4efd97316816c3cd87a1847eac7fdb8a219fdaf119ac44f` |
-| 2 | `theorem` | [crystalline_dirac_has_spectral_object](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SpectralDiracBridgeCrystallineDiracToSpectralObject.lean/declarations/crystalline-dirac-has-spectral-object.md) | 28 | `result-track:2da8a0460373976fe1061f45251cee37d6367acfd98a3c807f42d3fc85b5cc7a` |
+| 1 | `structure` | [CrystallineDiracToSpectralObject](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SpectralDiracBridgeCrystallineDiracToSpectralObject.lean/declarations/crystallinediractospectralobject.md) | 19 | `declaration-track:5e62a5cb19c94435f4efd97316816c3cd87a1847eac7fdb8a219fdaf119ac44f` |
+| 2 | `theorem` | [crystalline_dirac_has_spectral_object](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SpectralDiracBridgeCrystallineDiracToSpectralObject.lean/declarations/crystalline-dirac-has-spectral-object.md) | 28 | `result-track:2da8a0460373976fe1061f45251cee37d6367acfd98a3c807f42d3fc85b5cc7a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

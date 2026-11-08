@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Permutation.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Permutation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Permutation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Permutation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [Equiv.Perm.permMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Permutation.lean/declarations/equiv-perm-permmatrix.md) | 34 | `declaration-track:a04b46bacc6fc52ae8568f8e31be9e7aba804f2561a297afba563b814b5203f2` |
-| 2 | `lemma` | [transpose_permMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Permutation.lean/declarations/transpose-permmatrix.md) | 40 | `result-track:5b141203f24dbb3d81200a4a8b4acf7bbbaca65610d4c1d31b3b3be4520c914f` |
-| 3 | `lemma` | [conjTranspose_permMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Permutation.lean/declarations/conjtranspose-permmatrix.md) | 44 | `result-track:9db98663af0903cd0d6f47b780143ab3db079a2af82268840c57ae3e84188cd4` |
-| 4 | `theorem` | [det_permutation](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Permutation.lean/declarations/det-permutation.md) | 53 | `result-track:b1ac5f368777cadcb694342c720ba9d9ff9a6d9fa6c224154a3a5349e6a14040` |
-| 5 | `theorem` | [trace_permutation](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Permutation.lean/declarations/trace-permutation.md) | 58 | `result-track:817f82bc53eae7cd42954f41f7a61d7a8d943c3777a324ea805fba7cebb4a95f` |
+| 1 | `abbrev` | [Equiv.Perm.permMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Permutation.lean/declarations/equiv-perm-permmatrix.md) | 34 | `declaration-track:a04b46bacc6fc52ae8568f8e31be9e7aba804f2561a297afba563b814b5203f2` |
+| 2 | `lemma` | [transpose_permMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Permutation.lean/declarations/transpose-permmatrix.md) | 40 | `result-track:5b141203f24dbb3d81200a4a8b4acf7bbbaca65610d4c1d31b3b3be4520c914f` |
+| 3 | `lemma` | [conjTranspose_permMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Permutation.lean/declarations/conjtranspose-permmatrix.md) | 44 | `result-track:9db98663af0903cd0d6f47b780143ab3db079a2af82268840c57ae3e84188cd4` |
+| 4 | `theorem` | [det_permutation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Permutation.lean/declarations/det-permutation.md) | 53 | `result-track:b1ac5f368777cadcb694342c720ba9d9ff9a6d9fa6c224154a3a5349e6a14040` |
+| 5 | `theorem` | [trace_permutation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Permutation.lean/declarations/trace-permutation.md) | 58 | `result-track:817f82bc53eae7cd42954f41f7a61d7a8d943c3777a324ea805fba7cebb4a95f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

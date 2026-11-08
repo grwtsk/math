@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UmodNamespacedPublicBlastUmod.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UmodNamespacedPublicBlastUmod.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UmodNamespacedPublicBlastUmod.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UmodNamespacedPublicBlastUmod.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [blastUmod](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UmodNamespacedPublicBlastUmod.lean/declarations/blastumod.md) | 35 | `declaration-track:c7efb0345c2055974ae5bf54441b85e1ad00a0af3a6adc023431664620a8228c` |
-| 2 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UmodNamespacedPublicBlastUmod.lean/declarations/instance.md) | 56 | `declaration-track:0de09c0bc538120d86353bd2dcfe08418758b395764752366b624f50f8f885bf` |
+| 1 | `def` | [blastUmod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UmodNamespacedPublicBlastUmod.lean/declarations/blastumod.md) | 35 | `declaration-track:c7efb0345c2055974ae5bf54441b85e1ad00a0af3a6adc023431664620a8228c` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UmodNamespacedPublicBlastUmod.lean/declarations/instance.md) | 56 | `declaration-track:0de09c0bc538120d86353bd2dcfe08418758b395764752366b624f50f8f885bf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

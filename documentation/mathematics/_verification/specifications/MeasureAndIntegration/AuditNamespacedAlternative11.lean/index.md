@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/AuditNamespacedAlternative11.lean/index.md) · [Full source](../../../../MeasureAndIntegration/AuditNamespacedAlternative11.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AuditNamespacedAlternative11.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AuditNamespacedAlternative11.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,11 +61,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [cumulativeSum](../../../../MeasureAndIntegration/AuditNamespacedAlternative11.lean/declarations/cumulativesum.md) | 28 | `declaration-track:dbaadefec0cbf235fd4a67b87a2184bbfb140f9b0c1b9bd10ce21e2106daa97e` |
-| 2 | `theorem` | [signed_sum_by_parts](../../../../MeasureAndIntegration/AuditNamespacedAlternative11.lean/declarations/signed-sum-by-parts.md) | 33 | `result-track:2ec9c103c452270911841582d1d0aa6fdb85213e6670e31453e727bd6fd5f3ac` |
-| 3 | `theorem` | [abs_weighted_sum_le_prefix_variation](../../../../MeasureAndIntegration/AuditNamespacedAlternative11.lean/declarations/abs-weighted-sum-le-prefix-variation.md) | 46 | `result-track:317939dc0148bf00ef57abde77da2fd7d53f52fd013d9d1f0dc381346b1da766` |
-| 4 | `theorem` | [weighted_actual_le_model_add_budget](../../../../MeasureAndIntegration/AuditNamespacedAlternative11.lean/declarations/weighted-actual-le-model-add-budget.md) | 64 | `result-track:dcc8100217a17c9015fdc0dae6451c9cde80d8abbaf1b2b51d7413dc838fc617` |
-| 5 | `theorem` | [closed_sum_eq_neg_cumulative_integral](../../../../MeasureAndIntegration/AuditNamespacedAlternative11.lean/declarations/closed-sum-eq-neg-cumulative-integral.md) | 81 | `result-track:0c941bf06cb7790d8cbc6ed56d098bed9cb2c7d729e904872930df45f057b1f4` |
+| 1 | `def` | [cumulativeSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AuditNamespacedAlternative11.lean/declarations/cumulativesum.md) | 28 | `declaration-track:dbaadefec0cbf235fd4a67b87a2184bbfb140f9b0c1b9bd10ce21e2106daa97e` |
+| 2 | `theorem` | [signed_sum_by_parts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AuditNamespacedAlternative11.lean/declarations/signed-sum-by-parts.md) | 33 | `result-track:2ec9c103c452270911841582d1d0aa6fdb85213e6670e31453e727bd6fd5f3ac` |
+| 3 | `theorem` | [abs_weighted_sum_le_prefix_variation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AuditNamespacedAlternative11.lean/declarations/abs-weighted-sum-le-prefix-variation.md) | 46 | `result-track:317939dc0148bf00ef57abde77da2fd7d53f52fd013d9d1f0dc381346b1da766` |
+| 4 | `theorem` | [weighted_actual_le_model_add_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AuditNamespacedAlternative11.lean/declarations/weighted-actual-le-model-add-budget.md) | 64 | `result-track:dcc8100217a17c9015fdc0dae6451c9cde80d8abbaf1b2b51d7413dc838fc617` |
+| 5 | `theorem` | [closed_sum_eq_neg_cumulative_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AuditNamespacedAlternative11.lean/declarations/closed-sum-eq-neg-cumulative-integral.md) | 81 | `result-track:0c941bf06cb7790d8cbc6ed56d098bed9cb2c7d729e904872930df45f057b1f4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

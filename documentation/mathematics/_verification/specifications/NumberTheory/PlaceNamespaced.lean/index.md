@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/PlaceNamespaced.lean/index.md) · [Full source](../../../../NumberTheory/PlaceNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PlaceNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PlaceNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [Place](../../../../NumberTheory/PlaceNamespaced.lean/declarations/place.md) | 26 | `declaration-track:85d985f7822a900c2153f58c0951759e35685e58320bee69aafcb839fc86c24c` |
-| 2 | `def` | [IsFinitePrimePlace](../../../../NumberTheory/PlaceNamespaced.lean/declarations/isfiniteprimeplace.md) | 31 | `declaration-track:3c7d2cdb9c5eea3beca259d5fb2ca4d69101e4ba728708f451f2fb7178a13fbd` |
-| 3 | `def` | [IsBadTMFPrime](../../../../NumberTheory/PlaceNamespaced.lean/declarations/isbadtmfprime.md) | 34 | `declaration-track:bd2b9567358dfd66fa06bb8369ab5b51726294d49ed0bd53f826dc9c17164b35` |
-| 4 | `def` | [IsArchimedeanPlace](../../../../NumberTheory/PlaceNamespaced.lean/declarations/isarchimedeanplace.md) | 37 | `declaration-track:b5b91adb500f0be0414f3e85ffc6274acb9ae2e97bd305289fc3810bcd7d3838` |
-| 5 | `theorem` | [archimedean_ne_finite](../../../../NumberTheory/PlaceNamespaced.lean/declarations/archimedean-ne-finite.md) | 40 | `result-track:eda3863c1e19c217bbf84255cab8fb5fe7dfebabf27b34261fb45ff732f733db` |
-| 6 | `theorem` | [bad_tmf_prime_is_finite](../../../../NumberTheory/PlaceNamespaced.lean/declarations/bad-tmf-prime-is-finite.md) | 46 | `result-track:2f9266f4130763a660ccb6b1e967f95a7f0473e3d46694b1114d7aa7985277e5` |
+| 1 | `inductive` | [Place](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PlaceNamespaced.lean/declarations/place.md) | 26 | `declaration-track:85d985f7822a900c2153f58c0951759e35685e58320bee69aafcb839fc86c24c` |
+| 2 | `def` | [IsFinitePrimePlace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PlaceNamespaced.lean/declarations/isfiniteprimeplace.md) | 31 | `declaration-track:3c7d2cdb9c5eea3beca259d5fb2ca4d69101e4ba728708f451f2fb7178a13fbd` |
+| 3 | `def` | [IsBadTMFPrime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PlaceNamespaced.lean/declarations/isbadtmfprime.md) | 34 | `declaration-track:bd2b9567358dfd66fa06bb8369ab5b51726294d49ed0bd53f826dc9c17164b35` |
+| 4 | `def` | [IsArchimedeanPlace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PlaceNamespaced.lean/declarations/isarchimedeanplace.md) | 37 | `declaration-track:b5b91adb500f0be0414f3e85ffc6274acb9ae2e97bd305289fc3810bcd7d3838` |
+| 5 | `theorem` | [archimedean_ne_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PlaceNamespaced.lean/declarations/archimedean-ne-finite.md) | 40 | `result-track:eda3863c1e19c217bbf84255cab8fb5fe7dfebabf27b34261fb45ff732f733db` |
+| 6 | `theorem` | [bad_tmf_prime_is_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PlaceNamespaced.lean/declarations/bad-tmf-prime-is-finite.md) | 46 | `result-track:2f9266f4130763a660ccb6b1e967f95a7f0473e3d46694b1114d7aa7985277e5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

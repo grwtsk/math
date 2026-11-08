@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FieldTheoryAndPolynomials/AlgebraFieldGeomSumPublic.lean/index.md) · [Full source](../../../../FieldTheoryAndPolynomials/AlgebraFieldGeomSumPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/AlgebraFieldGeomSumPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/AlgebraFieldGeomSumPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Commute.geom_sum₂](../../../../FieldTheoryAndPolynomials/AlgebraFieldGeomSumPublic.lean/declarations/commute-geom-sum.md) | 38 | `result-track:ab9f1bac81dbe2ade9f2d295d2f6b9e0cfbf5a6776445794c07763d1fab7868c` |
-| 2 | `theorem` | [geom_sum_eq](../../../../FieldTheoryAndPolynomials/AlgebraFieldGeomSumPublic.lean/declarations/geom-sum-eq.md) | 43 | `result-track:4d1e6d532ca5c89b91bd2bba8e5aa7a8de2150ab0c87a03028cff576a5fcbccb` |
-| 3 | `theorem` | [Commute.geom_sum₂_Ico](../../../../FieldTheoryAndPolynomials/AlgebraFieldGeomSumPublic.lean/declarations/commute-geom-sum-ico.md) | 47 | `result-track:c20f362a1db43459cc1ea66e716d02b21a55b57347cdc8d1010ddadcfc9feef2` |
-| 4 | `lemma` | [geom_sum_Ico](../../../../FieldTheoryAndPolynomials/AlgebraFieldGeomSumPublic.lean/declarations/geom-sum-ico-source-edition-2.md) | 52 | `result-track:a28f58b43054eb195effdf1d572668cf34f22bc64391da57cdc6e307442f1eb6` |
-| 5 | `lemma` | [geom_sum_Ico'](../../../../FieldTheoryAndPolynomials/AlgebraFieldGeomSumPublic.lean/declarations/geom-sum-ico-source-edition-3.md) | 56 | `result-track:e459d1155be2c0781d7cd47a3e2f2325b5ef78d6105767595d2c64cd7679b09b` |
-| 6 | `lemma` | [geom_sum_inv](../../../../FieldTheoryAndPolynomials/AlgebraFieldGeomSumPublic.lean/declarations/geom-sum-inv.md) | 60 | `result-track:408799a6a5c8e35aaf7085ff1663dbed117488c9969cbcc50621ea60ce02a3cb` |
-| 7 | `lemma` | [geom₂_sum](../../../../FieldTheoryAndPolynomials/AlgebraFieldGeomSumPublic.lean/declarations/geom-sum.md) | 80 | `result-track:70c7dfa2b63255416a38d178a132a4b70f7e6be78eae67863b288661baf1fb6c` |
-| 8 | `lemma` | [geom_sum₂_Ico](../../../../FieldTheoryAndPolynomials/AlgebraFieldGeomSumPublic.lean/declarations/geom-sum-ico.md) | 84 | `result-track:9435465555ef0c6cad09e996feb681a0346b7c084992fb77c567a481828547ee` |
+| 1 | `theorem` | [Commute.geom_sum₂](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/AlgebraFieldGeomSumPublic.lean/declarations/commute-geom-sum.md) | 38 | `result-track:ab9f1bac81dbe2ade9f2d295d2f6b9e0cfbf5a6776445794c07763d1fab7868c` |
+| 2 | `theorem` | [geom_sum_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/AlgebraFieldGeomSumPublic.lean/declarations/geom-sum-eq.md) | 43 | `result-track:4d1e6d532ca5c89b91bd2bba8e5aa7a8de2150ab0c87a03028cff576a5fcbccb` |
+| 3 | `theorem` | [Commute.geom_sum₂_Ico](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/AlgebraFieldGeomSumPublic.lean/declarations/commute-geom-sum-ico.md) | 47 | `result-track:c20f362a1db43459cc1ea66e716d02b21a55b57347cdc8d1010ddadcfc9feef2` |
+| 4 | `lemma` | [geom_sum_Ico](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/AlgebraFieldGeomSumPublic.lean/declarations/geom-sum-ico-source-edition-2.md) | 52 | `result-track:a28f58b43054eb195effdf1d572668cf34f22bc64391da57cdc6e307442f1eb6` |
+| 5 | `lemma` | [geom_sum_Ico'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/AlgebraFieldGeomSumPublic.lean/declarations/geom-sum-ico-source-edition-3.md) | 56 | `result-track:e459d1155be2c0781d7cd47a3e2f2325b5ef78d6105767595d2c64cd7679b09b` |
+| 6 | `lemma` | [geom_sum_inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/AlgebraFieldGeomSumPublic.lean/declarations/geom-sum-inv.md) | 60 | `result-track:408799a6a5c8e35aaf7085ff1663dbed117488c9969cbcc50621ea60ce02a3cb` |
+| 7 | `lemma` | [geom₂_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/AlgebraFieldGeomSumPublic.lean/declarations/geom-sum.md) | 80 | `result-track:70c7dfa2b63255416a38d178a132a4b70f7e6be78eae67863b288661baf1fb6c` |
+| 8 | `lemma` | [geom_sum₂_Ico](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/AlgebraFieldGeomSumPublic.lean/declarations/geom-sum-ico.md) | 84 | `result-track:9435465555ef0c6cad09e996feb681a0346b7c084992fb77c567a481828547ee` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

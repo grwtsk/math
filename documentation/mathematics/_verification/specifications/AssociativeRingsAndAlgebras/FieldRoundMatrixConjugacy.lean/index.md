@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/FieldRoundMatrixConjugacy.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/FieldRoundMatrixConjugacy.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/FieldRoundMatrixConjugacy.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/FieldRoundMatrixConjugacy.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -48,7 +48,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 - `BitMatrix.FiniteField.Galois` — import line 19; external provider; requires a separately pinned dependency.
 - `BitMatrix.FiniteField.Round` — import line 20; external provider; requires a separately pinned dependency.
-- [Linear Encoding Bit Code](../../../../AssociativeRingsAndAlgebras/LinearEncodingBitCode.lean/index.md) — import line 22; pinned internal source present.
+- [Linear Encoding Bit Code](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/LinearEncodingBitCode.lean/index.md) — import line 22; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [transportToMatrix](../../../../AssociativeRingsAndAlgebras/FieldRoundMatrixConjugacy.lean/declarations/transporttomatrix.md) | 56 | `declaration-track:07c94c8278931d0149277b0dbef4e33149dc758806200810a58fcda6e14e12e5` |
-| 2 | `theorem` | [flatten_transportToMatrix](../../../../AssociativeRingsAndAlgebras/FieldRoundMatrixConjugacy.lean/declarations/flatten-transporttomatrix.md) | 66 | `result-track:21e3293060e31425ebceee5803f02a2f70dd5c182b7c278f871b564751ae5a4e` |
-| 3 | `def` | [encodeFieldRound](../../../../AssociativeRingsAndAlgebras/FieldRoundMatrixConjugacy.lean/declarations/encodefieldround.md) | 77 | `declaration-track:68f8da38706556c93174e04550c72b99d34a5c1c87477b9f63985649e39515a1` |
-| 4 | `theorem` | [encodeFieldRound_bijective](../../../../AssociativeRingsAndAlgebras/FieldRoundMatrixConjugacy.lean/declarations/encodefieldround-bijective.md) | 87 | `result-track:e38cf415a05c75c950b4ef61adb9d97764fb50c5f81af5eae980832d941a74b2` |
+| 1 | `def` | [transportToMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/FieldRoundMatrixConjugacy.lean/declarations/transporttomatrix.md) | 56 | `declaration-track:07c94c8278931d0149277b0dbef4e33149dc758806200810a58fcda6e14e12e5` |
+| 2 | `theorem` | [flatten_transportToMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/FieldRoundMatrixConjugacy.lean/declarations/flatten-transporttomatrix.md) | 66 | `result-track:21e3293060e31425ebceee5803f02a2f70dd5c182b7c278f871b564751ae5a4e` |
+| 3 | `def` | [encodeFieldRound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/FieldRoundMatrixConjugacy.lean/declarations/encodefieldround.md) | 77 | `declaration-track:68f8da38706556c93174e04550c72b99d34a5c1c87477b9f63985649e39515a1` |
+| 4 | `theorem` | [encodeFieldRound_bijective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/FieldRoundMatrixConjugacy.lean/declarations/encodefieldround-bijective.md) | 87 | `result-track:e38cf415a05c75c950b4ef61adb9d97764fb50c5f81af5eae980832d941a74b2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

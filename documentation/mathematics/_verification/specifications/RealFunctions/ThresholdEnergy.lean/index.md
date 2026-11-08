@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/ThresholdEnergy.lean/index.md) · [Full source](../../../../RealFunctions/ThresholdEnergy.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ThresholdEnergy.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ThresholdEnergy.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [largeSet](../../../../RealFunctions/ThresholdEnergy.lean/declarations/largeset.md) | 13 | `declaration-track:06c474740fd1bb232adae98811bf2080a46eb90241ab47118ad56bc01c3607cc` |
-| 2 | `theorem` | [threshold_pointwise](../../../../RealFunctions/ThresholdEnergy.lean/declarations/threshold-pointwise.md) | 16 | `result-track:2abb608be0adfb248d33c28ffc4e54140502625478bfa3c94ba558f5c3661fa7` |
-| 3 | `theorem` | [sum_energy_threshold](../../../../RealFunctions/ThresholdEnergy.lean/declarations/sum-energy-threshold.md) | 22 | `result-track:da02409a17d7cf6783da01cb8534594bb3febf8e6c098c5712b4d07c4dd4b8f9` |
-| 4 | `theorem` | [energy_of_count_bound](../../../../RealFunctions/ThresholdEnergy.lean/declarations/energy-of-count-bound.md) | 32 | `result-track:7efa19545cee9a58d63b65dbcdf89c8d135b80ff3e9b3fd152addc55fd78c425` |
-| 5 | `theorem` | [empty_of_subunit](../../../../RealFunctions/ThresholdEnergy.lean/declarations/empty-of-subunit.md) | 40 | `result-track:584a2eee83fc1f40e12dff2731aed6b99548d34aeb8b8741683e9a294c040282` |
+| 1 | `def` | [largeSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ThresholdEnergy.lean/declarations/largeset.md) | 13 | `declaration-track:06c474740fd1bb232adae98811bf2080a46eb90241ab47118ad56bc01c3607cc` |
+| 2 | `theorem` | [threshold_pointwise](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ThresholdEnergy.lean/declarations/threshold-pointwise.md) | 16 | `result-track:2abb608be0adfb248d33c28ffc4e54140502625478bfa3c94ba558f5c3661fa7` |
+| 3 | `theorem` | [sum_energy_threshold](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ThresholdEnergy.lean/declarations/sum-energy-threshold.md) | 22 | `result-track:da02409a17d7cf6783da01cb8534594bb3febf8e6c098c5712b4d07c4dd4b8f9` |
+| 4 | `theorem` | [energy_of_count_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ThresholdEnergy.lean/declarations/energy-of-count-bound.md) | 32 | `result-track:7efa19545cee9a58d63b65dbcdf89c8d135b80ff3e9b3fd152addc55fd78c425` |
+| 5 | `theorem` | [empty_of_subunit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ThresholdEnergy.lean/declarations/empty-of-subunit.md) | 40 | `result-track:584a2eee83fc1f40e12dff2731aed6b99548d34aeb8b8741683e9a294c040282` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ArrayScan.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ArrayScan.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArrayScan.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArrayScan.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/ArrayScan.lean/declarations/example-source-edition-4.md) | 7 | `declaration-track:856a6dc79eeb5b5154f9d5d13207fb78c31646fd6fd11c79e27270ab03550c87` |
-| 2 | `example` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/ArrayScan.lean/declarations/example.md) | 15 | `declaration-track:02611ed8fae1822377c2b0e907e3090d76492f24ee17fbd6d56b2799345b0135` |
-| 3 | `example` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/ArrayScan.lean/declarations/example-source-edition-3.md) | 22 | `declaration-track:7a34dd5bff6e32de610c3238407a7081b64456e17a45f0dbe1f1f459b390bf72` |
-| 4 | `example` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/ArrayScan.lean/declarations/example-source-edition-2.md) | 30 | `declaration-track:161a986803b542443188db9e7b93d29263b20ed81b44a7071c67f644455dd859` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArrayScan.lean/declarations/example-source-edition-4.md) | 7 | `declaration-track:856a6dc79eeb5b5154f9d5d13207fb78c31646fd6fd11c79e27270ab03550c87` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArrayScan.lean/declarations/example.md) | 15 | `declaration-track:02611ed8fae1822377c2b0e907e3090d76492f24ee17fbd6d56b2799345b0135` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArrayScan.lean/declarations/example-source-edition-3.md) | 22 | `declaration-track:7a34dd5bff6e32de610c3238407a7081b64456e17a45f0dbe1f1f459b390bf72` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArrayScan.lean/declarations/example-source-edition-2.md) | 30 | `declaration-track:161a986803b542443188db9e7b93d29263b20ed81b44a7071c67f644455dd859` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

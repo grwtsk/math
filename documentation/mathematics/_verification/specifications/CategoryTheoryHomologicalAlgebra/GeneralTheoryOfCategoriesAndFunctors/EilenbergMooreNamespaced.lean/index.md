@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EilenbergMooreNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EilenbergMooreNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EilenbergMooreNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EilenbergMooreNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [Monad.algebraPreadditive](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EilenbergMooreNamespaced.lean/declarations/monad-algebrapreadditive.md) | 38 | `declaration-track:40757b1f7a719a9378f125c1d13fa12503d7d527b085a98f4ade0fd3625300e2` |
-| 2 | `instance` | [Monad.forget_additive](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EilenbergMooreNamespaced.lean/declarations/monad-forget-additive.md) | 112 | `declaration-track:64b93feffbe22a3511126d147ec21c148381dfd635e7d4200652bb11429d730b` |
-| 3 | `instance` | [Comonad.coalgebraPreadditive](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EilenbergMooreNamespaced.lean/declarations/comonad-coalgebrapreadditive.md) | 118 | `declaration-track:f59dfd1be28ebfa9d684d6f1cb657c222bf9b367afcbd9c2dcb7e5a780fc74ee` |
-| 4 | `instance` | [Comonad.forget_additive](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EilenbergMooreNamespaced.lean/declarations/comonad-forget-additive.md) | 192 | `declaration-track:0a45b36d91f526551bf8d3dde0436efdecbfa4f68a11d91147d15a88c5932f58` |
+| 1 | `instance` | [Monad.algebraPreadditive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EilenbergMooreNamespaced.lean/declarations/monad-algebrapreadditive.md) | 38 | `declaration-track:40757b1f7a719a9378f125c1d13fa12503d7d527b085a98f4ade0fd3625300e2` |
+| 2 | `instance` | [Monad.forget_additive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EilenbergMooreNamespaced.lean/declarations/monad-forget-additive.md) | 112 | `declaration-track:64b93feffbe22a3511126d147ec21c148381dfd635e7d4200652bb11429d730b` |
+| 3 | `instance` | [Comonad.coalgebraPreadditive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EilenbergMooreNamespaced.lean/declarations/comonad-coalgebrapreadditive.md) | 118 | `declaration-track:f59dfd1be28ebfa9d684d6f1cb657c222bf9b367afcbd9c2dcb7e5a780fc74ee` |
+| 4 | `instance` | [Comonad.forget_additive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EilenbergMooreNamespaced.lean/declarations/comonad-forget-additive.md) | 192 | `declaration-track:0a45b36d91f526551bf8d3dde0436efdecbfa4f68a11d91147d15a88c5932f58` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

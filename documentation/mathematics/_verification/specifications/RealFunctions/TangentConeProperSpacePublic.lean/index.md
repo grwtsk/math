@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/TangentConeProperSpacePublic.lean/index.md) · [Full source](../../../../RealFunctions/TangentConeProperSpacePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TangentConeProperSpacePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TangentConeProperSpacePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [tangentConeAt_nonempty_of_properSpace](../../../../RealFunctions/TangentConeProperSpacePublic.lean/declarations/tangentconeat-nonempty-of-properspace.md) | 27 | `result-track:692c7adbfb12073d7a4dc6efe1ad9751e20ca0b78dc015d6237c902e524ddbaf` |
+| 1 | `theorem` | [tangentConeAt_nonempty_of_properSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TangentConeProperSpacePublic.lean/declarations/tangentconeat-nonempty-of-properspace.md) | 27 | `result-track:692c7adbfb12073d7a4dc6efe1ad9751e20ca0b78dc015d6237c902e524ddbaf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

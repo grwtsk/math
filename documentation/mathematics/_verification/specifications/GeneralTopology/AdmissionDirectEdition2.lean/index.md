@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/AdmissionDirectEdition2.lean/index.md) · [Full source](../../../../GeneralTopology/AdmissionDirectEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AdmissionDirectEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AdmissionDirectEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_multiplier_continuous](../../../../GeneralTopology/AdmissionDirectEdition2.lean/declarations/actual-multiplier-continuous.md) | 24 | `result-track:062b789af1d1a749e4505d8bbeae54998e686303e95e46f846b78b331dbc3a64` |
-| 2 | `def` | [LogarithmicMajorantObligation](../../../../GeneralTopology/AdmissionDirectEdition2.lean/declarations/logarithmicmajorantobligation.md) | 53 | `declaration-track:54f3c2d78088a8040855f19d8a48e57dd1b69d0c0b5ddb8da2a16a926d3ddd3a` |
-| 3 | `def` | [EventualMajorantObligation](../../../../GeneralTopology/AdmissionDirectEdition2.lean/declarations/eventualmajorantobligation.md) | 59 | `declaration-track:e9c99992c3caa84db1adfcbdd340210a15cc85ffd62486883d4462b6bafee72a` |
-| 4 | `theorem` | [global_majorant_of_eventual](../../../../GeneralTopology/AdmissionDirectEdition2.lean/declarations/global-majorant-of-eventual.md) | 66 | `result-track:7509fdf902b0ddcff2813e32a59de09d9e093e97485dde2c75b7bcf945836766` |
-| 5 | `theorem` | [archimedean_integrability_of_majorant](../../../../GeneralTopology/AdmissionDirectEdition2.lean/declarations/archimedean-integrability-of-majorant.md) | 85 | `result-track:e1ff8863a4b6f515768c5d99ab91457b4ba1634939139dbf3b5f1138054804f8` |
-| 6 | `theorem` | [admission_of_eventual_majorant](../../../../GeneralTopology/AdmissionDirectEdition2.lean/declarations/admission-of-eventual-majorant.md) | 109 | `result-track:ea49842e201f368e64e5089f77e35a1a30d70c55c6ca50b11ba19add7c9abb77` |
+| 1 | `theorem` | [actual_multiplier_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AdmissionDirectEdition2.lean/declarations/actual-multiplier-continuous.md) | 24 | `result-track:062b789af1d1a749e4505d8bbeae54998e686303e95e46f846b78b331dbc3a64` |
+| 2 | `def` | [LogarithmicMajorantObligation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AdmissionDirectEdition2.lean/declarations/logarithmicmajorantobligation.md) | 53 | `declaration-track:54f3c2d78088a8040855f19d8a48e57dd1b69d0c0b5ddb8da2a16a926d3ddd3a` |
+| 3 | `def` | [EventualMajorantObligation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AdmissionDirectEdition2.lean/declarations/eventualmajorantobligation.md) | 59 | `declaration-track:e9c99992c3caa84db1adfcbdd340210a15cc85ffd62486883d4462b6bafee72a` |
+| 4 | `theorem` | [global_majorant_of_eventual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AdmissionDirectEdition2.lean/declarations/global-majorant-of-eventual.md) | 66 | `result-track:7509fdf902b0ddcff2813e32a59de09d9e093e97485dde2c75b7bcf945836766` |
+| 5 | `theorem` | [archimedean_integrability_of_majorant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AdmissionDirectEdition2.lean/declarations/archimedean-integrability-of-majorant.md) | 85 | `result-track:e1ff8863a4b6f515768c5d99ab91457b4ba1634939139dbf3b5f1138054804f8` |
+| 6 | `theorem` | [admission_of_eventual_majorant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AdmissionDirectEdition2.lean/declarations/admission-of-eventual-majorant.md) | 109 | `result-track:ea49842e201f368e64e5089f77e35a1a30d70c55c6ca50b11ba19add7c9abb77` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

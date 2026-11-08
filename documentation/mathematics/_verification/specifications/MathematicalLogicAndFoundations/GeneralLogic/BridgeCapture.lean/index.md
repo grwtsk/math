@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BridgeCapture.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BridgeCapture.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BridgeCapture.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BridgeCapture.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [circularEvidence](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BridgeCapture.lean/declarations/circularevidence.md) | 45 | `declaration-track:996335fc25ee94371c595ff00e2f1e165b13556206ca96e07dd3923700256a59` |
+| 1 | `def` | [circularEvidence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BridgeCapture.lean/declarations/circularevidence.md) | 45 | `declaration-track:996335fc25ee94371c595ff00e2f1e165b13556206ca96e07dd3923700256a59` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

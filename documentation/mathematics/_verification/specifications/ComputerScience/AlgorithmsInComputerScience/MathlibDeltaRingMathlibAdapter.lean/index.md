@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/MathlibDeltaRingMathlibAdapter.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/MathlibDeltaRingMathlibAdapter.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MathlibDeltaRingMathlibAdapter.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MathlibDeltaRingMathlibAdapter.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [DeltaRingMathlibAdapter](../../../../../ComputerScience/AlgorithmsInComputerScience/MathlibDeltaRingMathlibAdapter.lean/declarations/deltaringmathlibadapter.md) | 24 | `declaration-track:a9536e3d61c03bd74cec845d514549b2621f48c337021f20dcaceb8dba3c236a` |
-| 2 | `def` | [DeltaRingMathlibAdapter.usableForFinalTheorem](../../../../../ComputerScience/AlgorithmsInComputerScience/MathlibDeltaRingMathlibAdapter.lean/declarations/deltaringmathlibadapter-usableforfinaltheorem.md) | 48 | `declaration-track:5950f7d58549527346cc31b36af600d5f6b92c11d25649208f92e7af4d9ea9bd` |
-| 3 | `theorem` | [DeltaRingMathlibAdapter.unavailable_not_usableForFinalTheorem](../../../../../ComputerScience/AlgorithmsInComputerScience/MathlibDeltaRingMathlibAdapter.lean/declarations/deltaringmathlibadapter-unavailable-not-usableforfinaltheorem.md) | 55 | `result-track:f5b9f5eb34946f51eb3eb473d9707c4653e71441514078f6b4af9e53dbf62a8f` |
-| 4 | `theorem` | [DeltaRingMathlibAdapter.finalTheorem_requires_importedMathlib](../../../../../ComputerScience/AlgorithmsInComputerScience/MathlibDeltaRingMathlibAdapter.lean/declarations/deltaringmathlibadapter-finaltheorem-requires-importedmathlib.md) | 65 | `result-track:583b23b2573e4fe0e98755b3ec50e9f8808f0bc8caa67aee960830e438e4e4b5` |
+| 1 | `structure` | [DeltaRingMathlibAdapter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MathlibDeltaRingMathlibAdapter.lean/declarations/deltaringmathlibadapter.md) | 24 | `declaration-track:a9536e3d61c03bd74cec845d514549b2621f48c337021f20dcaceb8dba3c236a` |
+| 2 | `def` | [DeltaRingMathlibAdapter.usableForFinalTheorem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MathlibDeltaRingMathlibAdapter.lean/declarations/deltaringmathlibadapter-usableforfinaltheorem.md) | 48 | `declaration-track:5950f7d58549527346cc31b36af600d5f6b92c11d25649208f92e7af4d9ea9bd` |
+| 3 | `theorem` | [DeltaRingMathlibAdapter.unavailable_not_usableForFinalTheorem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MathlibDeltaRingMathlibAdapter.lean/declarations/deltaringmathlibadapter-unavailable-not-usableforfinaltheorem.md) | 55 | `result-track:f5b9f5eb34946f51eb3eb473d9707c4653e71441514078f6b4af9e53dbf62a8f` |
+| 4 | `theorem` | [DeltaRingMathlibAdapter.finalTheorem_requires_importedMathlib](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MathlibDeltaRingMathlibAdapter.lean/declarations/deltaringmathlibadapter-finaltheorem-requires-importedmathlib.md) | 65 | `result-track:583b23b2573e4fe0e98755b3ec50e9f8808f0bc8caa67aee960830e438e4e4b5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

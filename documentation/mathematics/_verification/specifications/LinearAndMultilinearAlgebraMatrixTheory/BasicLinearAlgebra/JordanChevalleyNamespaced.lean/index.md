@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/JordanChevalleyNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/JordanChevalleyNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/JordanChevalleyNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/JordanChevalleyNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_isNilpotent_isSemisimple_of_separable_of_dvd_pow](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/JordanChevalleyNamespaced.lean/declarations/exists-isnilpotent-issemisimple-of-separable-of-dvd-pow.md) | 51 | `result-track:3df60eba69538427da9e64238e2f0081506a394bb93189fcf8899b29ff391b31` |
-| 2 | `theorem` | [exists_isNilpotent_isSemisimple](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/JordanChevalleyNamespaced.lean/declarations/exists-isnilpotent-issemisimple.md) | 82 | `result-track:320e1ed6853ae015e822cbc16bd00a1f1e5fadc880e4db8025364c64e63eb3a1` |
+| 1 | `theorem` | [exists_isNilpotent_isSemisimple_of_separable_of_dvd_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/JordanChevalleyNamespaced.lean/declarations/exists-isnilpotent-issemisimple-of-separable-of-dvd-pow.md) | 51 | `result-track:3df60eba69538427da9e64238e2f0081506a394bb93189fcf8899b29ff391b31` |
+| 2 | `theorem` | [exists_isNilpotent_isSemisimple](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/JordanChevalleyNamespaced.lean/declarations/exists-isnilpotent-issemisimple.md) | 82 | `result-track:320e1ed6853ae015e822cbc16bd00a1f1e5fadc880e4db8025364c64e63eb3a1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

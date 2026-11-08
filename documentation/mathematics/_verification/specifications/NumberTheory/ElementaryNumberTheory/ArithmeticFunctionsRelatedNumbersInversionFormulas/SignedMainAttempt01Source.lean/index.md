@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SignedMainAttempt01Source.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SignedMainAttempt01Source.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SignedMainAttempt01Source.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SignedMainAttempt01Source.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [adaptiveLogSample](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SignedMainAttempt01Source.lean/declarations/adaptivelogsample.md) | 16 | `declaration-track:aabc12bef309ff306d7f0efe71174a24a0b86733aa46a4dd14360770d669ef64` |
-| 2 | `def` | [adaptivePlainSample](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SignedMainAttempt01Source.lean/declarations/adaptiveplainsample.md) | 20 | `declaration-track:c0949efbb88e1124d41555e1c6d8f35d1e67162bf9ee34f3f0c6674d83573da3` |
-| 3 | `def` | [adaptiveIndependentMain](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SignedMainAttempt01Source.lean/declarations/adaptiveindependentmain.md) | 25 | `declaration-track:36365db8f9b621ccd68ddad2c3af95cb02dea277bdbce8f9bd2541a597c88ded` |
-| 4 | `def` | [adaptiveSignedSamplingError](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SignedMainAttempt01Source.lean/declarations/adaptivesignedsamplingerror.md) | 35 | `declaration-track:bb3d56fa250b10d47b62fb70cc043a5b362c0d6fe05fdba31bf4fb5fd7a7c155` |
-| 5 | `theorem` | [fullMangoldtRow_eq_adaptiveIndependentMain_add_signedError](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SignedMainAttempt01Source.lean/declarations/fullmangoldtrow-eq-adaptiveindependentmain-add-signederror.md) | 42 | `result-track:35f4598fb89ef03af6c6eedfb00792ea6b2a9965a2a7786805e6e39ac13a1583` |
+| 1 | `def` | [adaptiveLogSample](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SignedMainAttempt01Source.lean/declarations/adaptivelogsample.md) | 16 | `declaration-track:aabc12bef309ff306d7f0efe71174a24a0b86733aa46a4dd14360770d669ef64` |
+| 2 | `def` | [adaptivePlainSample](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SignedMainAttempt01Source.lean/declarations/adaptiveplainsample.md) | 20 | `declaration-track:c0949efbb88e1124d41555e1c6d8f35d1e67162bf9ee34f3f0c6674d83573da3` |
+| 3 | `def` | [adaptiveIndependentMain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SignedMainAttempt01Source.lean/declarations/adaptiveindependentmain.md) | 25 | `declaration-track:36365db8f9b621ccd68ddad2c3af95cb02dea277bdbce8f9bd2541a597c88ded` |
+| 4 | `def` | [adaptiveSignedSamplingError](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SignedMainAttempt01Source.lean/declarations/adaptivesignedsamplingerror.md) | 35 | `declaration-track:bb3d56fa250b10d47b62fb70cc043a5b362c0d6fe05fdba31bf4fb5fd7a7c155` |
+| 5 | `theorem` | [fullMangoldtRow_eq_adaptiveIndependentMain_add_signedError](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SignedMainAttempt01Source.lean/declarations/fullmangoldtrow-eq-adaptiveindependentmain-add-signederror.md) | 42 | `result-track:35f4598fb89ef03af6c6eedfb00792ea6b2a9965a2a7786805e6e39ac13a1583` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/TangentPolynomialSplitting.lean/index.md) · [Full source](../../../../CommutativeAlgebra/TangentPolynomialSplitting.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TangentPolynomialSplitting.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TangentPolynomialSplitting.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,19 +62,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [tangentPolynomial](../../../../CommutativeAlgebra/TangentPolynomialSplitting.lean/declarations/tangentpolynomial.md) | 28 | `declaration-track:a8c915976e1d46b3b9fafe48a465c52ccb50b0ea239c841037c4ad2e84de2ca8` |
-| 2 | `theorem` | [map_tangentPolynomial](../../../../CommutativeAlgebra/TangentPolynomialSplitting.lean/declarations/map-tangentpolynomial.md) | 32 | `result-track:7205cdda707f18afd1cb28d2b664ccdcb5cde7588173f8aeb53cd06d0fd5ec1c` |
-| 3 | `def` | [tangentForm](../../../../CommutativeAlgebra/TangentPolynomialSplitting.lean/declarations/tangentform.md) | 37 | `declaration-track:a72c1e02575229265be3bdea40f8d578e75e7cea79ca6f68363153f6392c3202` |
-| 4 | `theorem` | [affine_expansion](../../../../CommutativeAlgebra/TangentPolynomialSplitting.lean/declarations/affine-expansion.md) | 41 | `result-track:9fedda7fe9c3aa32e1bbff8d35b500ad1f979c0bf7893c953aa45845ac17422e` |
-| 5 | `theorem` | [singular_expansion](../../../../CommutativeAlgebra/TangentPolynomialSplitting.lean/declarations/singular-expansion.md) | 51 | `result-track:c34ac96af943321e803f232bb6083b190b020b86bb8c3f5962346db8b458b080` |
-| 6 | `theorem` | [splits_map_equiv](../../../../CommutativeAlgebra/TangentPolynomialSplitting.lean/declarations/splits-map-equiv.md) | 66 | `result-track:99b2b36853a627716fbfa58db384c9a9baade11a06303f4d28f39408c0b17c81` |
-| 7 | `theorem` | [splits_C_mul_iff](../../../../CommutativeAlgebra/TangentPolynomialSplitting.lean/declarations/splits-c-mul-iff.md) | 77 | `result-track:fe8a40114eee1d64ae85f2dd2f1350e849494965573c065bc89c4dee18bff5ba` |
-| 8 | `theorem` | [splits_quadratic_iff](../../../../CommutativeAlgebra/TangentPolynomialSplitting.lean/declarations/splits-quadratic-iff.md) | 88 | `result-track:538b1a231a7490cd3d7f0cc7de7b7b9f43f8f0fb60e5600e05c0a30932e19dfb` |
-| 9 | `theorem` | [splits_scaled_quadratic_iff](../../../../CommutativeAlgebra/TangentPolynomialSplitting.lean/declarations/splits-scaled-quadratic-iff.md) | 104 | `result-track:ade0641653f0c4d602a06ec8bd5f21416d6888ac03dd7026f6b58054d416437a` |
-| 10 | `theorem` | [distinct_slopes](../../../../CommutativeAlgebra/TangentPolynomialSplitting.lean/declarations/distinct-slopes.md) | 109 | `result-track:649a023c2f5bce9f5583466a4fecaa19d908c396caf4dd935b4b2501d015eb2e` |
-| 11 | `theorem` | [tangent_factorization](../../../../CommutativeAlgebra/TangentPolynomialSplitting.lean/declarations/tangent-factorization.md) | 119 | `result-track:98f06fe4d75de64b88b64f3e98669a71f7bb9d0cb41697e0cae88fa75ca87d64` |
-| 12 | `theorem` | [supplied_integralModel](../../../../CommutativeAlgebra/TangentPolynomialSplitting.lean/declarations/supplied-integralmodel.md) | 131 | `result-track:33ee91681fc4fd1a9fea34ba0d21cbe82cb12331b6c0269b6ded5536610fde8b` |
-| 13 | `theorem` | [split_iff_supplied_model](../../../../CommutativeAlgebra/TangentPolynomialSplitting.lean/declarations/split-iff-supplied-model.md) | 148 | `result-track:3acb7c526da1e73c70e4f7a5647d4047387743072dbf24b92dee2428d50aff5b` |
+| 1 | `def` | [tangentPolynomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TangentPolynomialSplitting.lean/declarations/tangentpolynomial.md) | 28 | `declaration-track:a8c915976e1d46b3b9fafe48a465c52ccb50b0ea239c841037c4ad2e84de2ca8` |
+| 2 | `theorem` | [map_tangentPolynomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TangentPolynomialSplitting.lean/declarations/map-tangentpolynomial.md) | 32 | `result-track:7205cdda707f18afd1cb28d2b664ccdcb5cde7588173f8aeb53cd06d0fd5ec1c` |
+| 3 | `def` | [tangentForm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TangentPolynomialSplitting.lean/declarations/tangentform.md) | 37 | `declaration-track:a72c1e02575229265be3bdea40f8d578e75e7cea79ca6f68363153f6392c3202` |
+| 4 | `theorem` | [affine_expansion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TangentPolynomialSplitting.lean/declarations/affine-expansion.md) | 41 | `result-track:9fedda7fe9c3aa32e1bbff8d35b500ad1f979c0bf7893c953aa45845ac17422e` |
+| 5 | `theorem` | [singular_expansion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TangentPolynomialSplitting.lean/declarations/singular-expansion.md) | 51 | `result-track:c34ac96af943321e803f232bb6083b190b020b86bb8c3f5962346db8b458b080` |
+| 6 | `theorem` | [splits_map_equiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TangentPolynomialSplitting.lean/declarations/splits-map-equiv.md) | 66 | `result-track:99b2b36853a627716fbfa58db384c9a9baade11a06303f4d28f39408c0b17c81` |
+| 7 | `theorem` | [splits_C_mul_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TangentPolynomialSplitting.lean/declarations/splits-c-mul-iff.md) | 77 | `result-track:fe8a40114eee1d64ae85f2dd2f1350e849494965573c065bc89c4dee18bff5ba` |
+| 8 | `theorem` | [splits_quadratic_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TangentPolynomialSplitting.lean/declarations/splits-quadratic-iff.md) | 88 | `result-track:538b1a231a7490cd3d7f0cc7de7b7b9f43f8f0fb60e5600e05c0a30932e19dfb` |
+| 9 | `theorem` | [splits_scaled_quadratic_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TangentPolynomialSplitting.lean/declarations/splits-scaled-quadratic-iff.md) | 104 | `result-track:ade0641653f0c4d602a06ec8bd5f21416d6888ac03dd7026f6b58054d416437a` |
+| 10 | `theorem` | [distinct_slopes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TangentPolynomialSplitting.lean/declarations/distinct-slopes.md) | 109 | `result-track:649a023c2f5bce9f5583466a4fecaa19d908c396caf4dd935b4b2501d015eb2e` |
+| 11 | `theorem` | [tangent_factorization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TangentPolynomialSplitting.lean/declarations/tangent-factorization.md) | 119 | `result-track:98f06fe4d75de64b88b64f3e98669a71f7bb9d0cb41697e0cae88fa75ca87d64` |
+| 12 | `theorem` | [supplied_integralModel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TangentPolynomialSplitting.lean/declarations/supplied-integralmodel.md) | 131 | `result-track:33ee91681fc4fd1a9fea34ba0d21cbe82cb12331b6c0269b6ded5536610fde8b` |
+| 13 | `theorem` | [split_iff_supplied_model](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TangentPolynomialSplitting.lean/declarations/split-iff-supplied-model.md) | 148 | `result-track:3acb7c526da1e73c70e4f7a5647d4047387743072dbf24b92dee2428d50aff5b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

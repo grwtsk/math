@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ArchimedeanSubmonoidNamespacedPublic.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ArchimedeanSubmonoidNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ArchimedeanSubmonoidNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ArchimedeanSubmonoidNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [SubmonoidClass.instMulArchimedean](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ArchimedeanSubmonoidNamespacedPublic.lean/declarations/submonoidclass-instmularchimedean.md) | 40 | `declaration-track:3c27ff7c19beace0de92d2f83fbef2ee00f705f4bfde8fb1c0512a5815fa67e6` |
+| 1 | `instance` | [SubmonoidClass.instMulArchimedean](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ArchimedeanSubmonoidNamespacedPublic.lean/declarations/submonoidclass-instmularchimedean.md) | 40 | `declaration-track:3c27ff7c19beace0de92d2f83fbef2ee00f705f4bfde8fb1c0512a5815fa67e6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

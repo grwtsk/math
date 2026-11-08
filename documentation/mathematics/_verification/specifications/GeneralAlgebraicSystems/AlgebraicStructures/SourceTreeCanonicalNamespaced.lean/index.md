@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SourceTreeCanonicalNamespaced.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SourceTreeCanonicalNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SourceTreeCanonicalNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SourceTreeCanonicalNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [ideal_pruned_tree_count](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SourceTreeCanonicalNamespaced.lean/declarations/ideal-pruned-tree-count.md) | 15 | `result-track:71cc2cd43d67825139dd49b0342b70db942f5797b9476a032311ae49769d5c0f` |
-| 2 | `theorem` | [compression_rules_count](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SourceTreeCanonicalNamespaced.lean/declarations/compression-rules-count.md) | 19 | `result-track:bf6e69437ca02a52529ddbf877c528b947fd43a4434cd1bbc37baa37d0935978` |
-| 3 | `theorem` | [phase_table_contraction_preserves_weight](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SourceTreeCanonicalNamespaced.lean/declarations/phase-table-contraction-preserves-weight.md) | 23 | `result-track:81ee3c20c12d5321fe12a805fa02dfa99cf0546f1d70488806595aa5e337d449` |
+| 1 | `theorem` | [ideal_pruned_tree_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SourceTreeCanonicalNamespaced.lean/declarations/ideal-pruned-tree-count.md) | 15 | `result-track:71cc2cd43d67825139dd49b0342b70db942f5797b9476a032311ae49769d5c0f` |
+| 2 | `theorem` | [compression_rules_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SourceTreeCanonicalNamespaced.lean/declarations/compression-rules-count.md) | 19 | `result-track:bf6e69437ca02a52529ddbf877c528b947fd43a4434cd1bbc37baa37d0935978` |
+| 3 | `theorem` | [phase_table_contraction_preserves_weight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SourceTreeCanonicalNamespaced.lean/declarations/phase-table-contraction-preserves-weight.md) | 23 | `result-track:81ee3c20c12d5321fe12a805fa02dfa99cf0546f1d70488806595aa5e337d449` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

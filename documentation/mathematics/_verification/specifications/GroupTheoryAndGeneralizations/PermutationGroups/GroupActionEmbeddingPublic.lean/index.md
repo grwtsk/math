@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionEmbeddingPublic.lean/index.md) · [Full source](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionEmbeddingPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/GroupActionEmbeddingPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/GroupActionEmbeddingPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [smul](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionEmbeddingPublic.lean/declarations/smul.md) | 32 | `declaration-track:1874fc89fc3397b580122f6e2931d89c02fba87e1136e392d36b3de656943795` |
-| 2 | `theorem` | [smul_def](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionEmbeddingPublic.lean/declarations/smul-def.md) | 36 | `result-track:aada7ad40b4a7e6ed1d9b3a6aa6a0004deb9bc5d4dff4b8bb2a782bbdc48bde7` |
-| 3 | `theorem` | [smul_apply](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionEmbeddingPublic.lean/declarations/smul-apply.md) | 41 | `result-track:66100717da16321ae6e6619a38b4414577bc7d5d2faad8ed061056fbfbdd59c4` |
-| 4 | `theorem` | [coe_smul](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionEmbeddingPublic.lean/declarations/coe-smul.md) | 45 | `result-track:ab42c872295fba3389bccdde2ac1cfe9fe8cfd97e5297de9831f8a6f950392a7` |
-| 5 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionEmbeddingPublic.lean/declarations/instance-source-edition-3.md) | 48 | `declaration-track:ebcd6b9676e8878ffeca5c99593f3023a27409d38e26270ff9be6841874f733c` |
-| 6 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionEmbeddingPublic.lean/declarations/instance.md) | 53 | `declaration-track:96505e7da9c953b758ff6f39efa3aac5b0a82d4d0cbfcd8c35ed53f485998501` |
-| 7 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionEmbeddingPublic.lean/declarations/instance-source-edition-2.md) | 57 | `declaration-track:d4ac6fafb852452b004ac803eb756af207692b8c72bca7408ebdd529d6ce4186` |
-| 8 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionEmbeddingPublic.lean/declarations/instance-source-edition-4.md) | 62 | `declaration-track:fa9a4e49cc8fe23c7e5a8a5912875f13e483cc7f27f2f1d02a127bf7dbf76aa9` |
+| 1 | `instance` | [smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/GroupActionEmbeddingPublic.lean/declarations/smul.md) | 32 | `declaration-track:1874fc89fc3397b580122f6e2931d89c02fba87e1136e392d36b3de656943795` |
+| 2 | `theorem` | [smul_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/GroupActionEmbeddingPublic.lean/declarations/smul-def.md) | 36 | `result-track:aada7ad40b4a7e6ed1d9b3a6aa6a0004deb9bc5d4dff4b8bb2a782bbdc48bde7` |
+| 3 | `theorem` | [smul_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/GroupActionEmbeddingPublic.lean/declarations/smul-apply.md) | 41 | `result-track:66100717da16321ae6e6619a38b4414577bc7d5d2faad8ed061056fbfbdd59c4` |
+| 4 | `theorem` | [coe_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/GroupActionEmbeddingPublic.lean/declarations/coe-smul.md) | 45 | `result-track:ab42c872295fba3389bccdde2ac1cfe9fe8cfd97e5297de9831f8a6f950392a7` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/GroupActionEmbeddingPublic.lean/declarations/instance-source-edition-3.md) | 48 | `declaration-track:ebcd6b9676e8878ffeca5c99593f3023a27409d38e26270ff9be6841874f733c` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/GroupActionEmbeddingPublic.lean/declarations/instance.md) | 53 | `declaration-track:96505e7da9c953b758ff6f39efa3aac5b0a82d4d0cbfcd8c35ed53f485998501` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/GroupActionEmbeddingPublic.lean/declarations/instance-source-edition-2.md) | 57 | `declaration-track:d4ac6fafb852452b004ac803eb756af207692b8c72bca7408ebdd529d6ce4186` |
+| 8 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/GroupActionEmbeddingPublic.lean/declarations/instance-source-edition-4.md) | 62 | `declaration-track:fa9a4e49cc8fe23c7e5a8a5912875f13e483cc7f27f2f1d02a127bf7dbf76aa9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

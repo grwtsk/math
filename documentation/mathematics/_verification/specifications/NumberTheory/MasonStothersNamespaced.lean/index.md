@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/MasonStothersNamespaced.lean/index.md) · [Full source](../../../../NumberTheory/MasonStothersNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MasonStothersNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MasonStothersNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [abc_subcall](../../../../NumberTheory/MasonStothersNamespaced.lean/declarations/abc-subcall.md) | 34 | `result-track:0c741c145af399cf3f5384e5f6be13b6bfd54a2d3f8413e2b64712ae7b15eae0` |
-| 2 | `theorem` | [Polynomial.abc](../../../../NumberTheory/MasonStothersNamespaced.lean/declarations/polynomial-abc.md) | 59 | `result-track:25a04863e016c15c02e3a2979acbf95df5db43473b6922116b41bbd4044c42ab` |
+| 1 | `theorem` | [abc_subcall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MasonStothersNamespaced.lean/declarations/abc-subcall.md) | 34 | `result-track:0c741c145af399cf3f5384e5f6be13b6bfd54a2d3f8413e2b64712ae7b15eae0` |
+| 2 | `theorem` | [Polynomial.abc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MasonStothersNamespaced.lean/declarations/polynomial-abc.md) | 59 | `result-track:25a04863e016c15c02e3a2979acbf95df5db43473b6922116b41bbd4044c42ab` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

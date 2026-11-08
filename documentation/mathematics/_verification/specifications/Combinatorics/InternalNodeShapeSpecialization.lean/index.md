@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/InternalNodeShapeSpecialization.lean/index.md) · [Full source](../../../../Combinatorics/InternalNodeShapeSpecialization.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/InternalNodeShapeSpecialization.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/InternalNodeShapeSpecialization.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -51,7 +51,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 - `Folder.Spectral.Expansion` — import line 21; external provider; requires a separately pinned dependency.
 - `Folder.Spectral.Fiber` — import line 22; external provider; requires a separately pinned dependency.
 - `Folder.Spectral.Tensor` — import line 23; external provider; requires a separately pinned dependency.
-- [Level Shapes](../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LevelShapes.lean/index.md) — import line 25; pinned internal source present.
+- [Level Shapes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LevelShapes.lean/index.md) — import line 25; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -62,9 +62,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [catalanShape](../../../../Combinatorics/InternalNodeShapeSpecialization.lean/declarations/catalanshape.md) | 48 | `declaration-track:b760ec42e21b4c29314bbbf779cb946b9de7e897a96519308259c2d700b98dd2` |
-| 2 | `theorem` | [catalanShape_rows_of_internal_succ](../../../../Combinatorics/InternalNodeShapeSpecialization.lean/declarations/catalanshape-rows-of-internal-succ.md) | 54 | `result-track:ea137f1428b956ddfaadc9b73af839286e593fed54a8fa30a2dca82631ba4241` |
-| 3 | `theorem` | [catalanShape_cols_of_internal_succ](../../../../Combinatorics/InternalNodeShapeSpecialization.lean/declarations/catalanshape-cols-of-internal-succ.md) | 65 | `result-track:e876d4525b4f9f0c0ec8389bcd015c18bcd8c17f3f72177006152515e2ae1d60` |
+| 1 | `def` | [catalanShape](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/InternalNodeShapeSpecialization.lean/declarations/catalanshape.md) | 48 | `declaration-track:b760ec42e21b4c29314bbbf779cb946b9de7e897a96519308259c2d700b98dd2` |
+| 2 | `theorem` | [catalanShape_rows_of_internal_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/InternalNodeShapeSpecialization.lean/declarations/catalanshape-rows-of-internal-succ.md) | 54 | `result-track:ea137f1428b956ddfaadc9b73af839286e593fed54a8fa30a2dca82631ba4241` |
+| 3 | `theorem` | [catalanShape_cols_of_internal_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/InternalNodeShapeSpecialization.lean/declarations/catalanshape-cols-of-internal-succ.md) | 65 | `result-track:e876d4525b4f9f0c0ec8389bcd015c18bcd8c17f3f72177006152515e2ae1d60` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

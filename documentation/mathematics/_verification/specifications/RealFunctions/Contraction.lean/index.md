@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/Contraction.lean/index.md) · [Full source](../../../../RealFunctions/Contraction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Contraction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Contraction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ContractionCertificate](../../../../RealFunctions/Contraction.lean/declarations/contractioncertificate.md) | 7 | `declaration-track:b4b6357ff4c1060250f712dc5a92ad5e60a21ffbd35e7ae4c5fc842ae3f300c3` |
-| 2 | `structure` | [BanachFixedPointObligation](../../../../RealFunctions/Contraction.lean/declarations/banachfixedpointobligation.md) | 17 | `declaration-track:12d2d5dfd086bda44261d2a413797801294b9a5d7d3d1defb8894fcc1d8042ac` |
-| 3 | `theorem` | [certified_integral_traversal_obeys_affine_bound](../../../../RealFunctions/Contraction.lean/declarations/certified-integral-traversal-obeys-affine-bound.md) | 29 | `result-track:6f1be3c87e24bd6b9d9a0e0ad86e388257e17e2121b04adab56b852f2307a0eb` |
-| 4 | `theorem` | [exact_zero_gain_converges_after_one_step](../../../../RealFunctions/Contraction.lean/declarations/exact-zero-gain-converges-after-one-step.md) | 48 | `result-track:bbff6fb759b9f44e9d6ca9fa7f51dee87bf130e4b35f6bc656f1b7bc81a757e0` |
-| 5 | `structure` | [ResidualFloorObligation](../../../../RealFunctions/Contraction.lean/declarations/residualfloorobligation.md) | 56 | `declaration-track:40343888297a5ffc7dd1aae5d7c3cb90a88f6e16a51ef6fcf3a4e99740b05661` |
+| 1 | `structure` | [ContractionCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Contraction.lean/declarations/contractioncertificate.md) | 7 | `declaration-track:b4b6357ff4c1060250f712dc5a92ad5e60a21ffbd35e7ae4c5fc842ae3f300c3` |
+| 2 | `structure` | [BanachFixedPointObligation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Contraction.lean/declarations/banachfixedpointobligation.md) | 17 | `declaration-track:12d2d5dfd086bda44261d2a413797801294b9a5d7d3d1defb8894fcc1d8042ac` |
+| 3 | `theorem` | [certified_integral_traversal_obeys_affine_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Contraction.lean/declarations/certified-integral-traversal-obeys-affine-bound.md) | 29 | `result-track:6f1be3c87e24bd6b9d9a0e0ad86e388257e17e2121b04adab56b852f2307a0eb` |
+| 4 | `theorem` | [exact_zero_gain_converges_after_one_step](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Contraction.lean/declarations/exact-zero-gain-converges-after-one-step.md) | 48 | `result-track:bbff6fb759b9f44e9d6ca9fa7f51dee87bf130e4b35f6bc656f1b7bc81a757e0` |
+| 5 | `structure` | [ResidualFloorObligation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Contraction.lean/declarations/residualfloorobligation.md) | 56 | `declaration-track:40343888297a5ffc7dd1aae5d7c3cb90a88f6e16a51ef6fcf3a4e99740b05661` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

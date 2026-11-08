@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/OnePointEquivNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/OnePointEquivNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OnePointEquivNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OnePointEquivNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [equivProjectivization](../../../../GeneralTopology/OnePointEquivNamespaced.lean/declarations/equivprojectivization.md) | 44 | `declaration-track:dc742359764edb3aa138eaff28aab69a3a0a6493127e4a6f0a4a93c141594745` |
-| 2 | `lemma` | [equivProjectivization_apply_infinity](../../../../GeneralTopology/OnePointEquivNamespaced.lean/declarations/equivprojectivization-apply-infinity.md) | 65 | `result-track:315c58d2c5bdb37af454f23f4cdc187c89d977c959f94f9806b6ab655f5772f3` |
-| 3 | `lemma` | [equivProjectivization_apply_coe](../../../../GeneralTopology/OnePointEquivNamespaced.lean/declarations/equivprojectivization-apply-coe.md) | 70 | `result-track:0d3637afb5fec1b24a29a7928423db3c9e915965cd8ced5dc6c6a324ec53490c` |
-| 4 | `lemma` | [equivProjectivization_symm_apply_mk](../../../../GeneralTopology/OnePointEquivNamespaced.lean/declarations/equivprojectivization-symm-apply-mk.md) | 75 | `result-track:6666d10238621b959a19dd6f21a71429d64811ca487632ca677797ce75231a5f` |
+| 1 | `def` | [equivProjectivization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OnePointEquivNamespaced.lean/declarations/equivprojectivization.md) | 44 | `declaration-track:dc742359764edb3aa138eaff28aab69a3a0a6493127e4a6f0a4a93c141594745` |
+| 2 | `lemma` | [equivProjectivization_apply_infinity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OnePointEquivNamespaced.lean/declarations/equivprojectivization-apply-infinity.md) | 65 | `result-track:315c58d2c5bdb37af454f23f4cdc187c89d977c959f94f9806b6ab655f5772f3` |
+| 3 | `lemma` | [equivProjectivization_apply_coe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OnePointEquivNamespaced.lean/declarations/equivprojectivization-apply-coe.md) | 70 | `result-track:0d3637afb5fec1b24a29a7928423db3c9e915965cd8ced5dc6c6a324ec53490c` |
+| 4 | `lemma` | [equivProjectivization_symm_apply_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OnePointEquivNamespaced.lean/declarations/equivprojectivization-symm-apply-mk.md) | 75 | `result-track:6666d10238621b959a19dd6f21a71429d64811ca487632ca677797ce75231a5f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ExactUniformSourceCensusErrorFromTheRetainedDerivativeSupport.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ExactUniformSourceCensusErrorFromTheRetainedDerivativeSupport.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ExactUniformSourceCensusErrorFromTheRetainedDerivativeSupport.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ExactUniformSourceCensusErrorFromTheRetainedDerivativeSupport.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_correlation_derivative_zero_above_support](../../../../MeasureAndIntegration/ExactUniformSourceCensusErrorFromTheRetainedDerivativeSupport.lean/declarations/actual-correlation-derivative-zero-above-support.md) | 28 | `result-track:70535a20ffee08738da4b9299e69ddf02983a2f877bdd527072fec2a679fece7` |
-| 2 | `theorem` | [actual_logarithmic_derivative_zero_after_cutoff](../../../../MeasureAndIntegration/ExactUniformSourceCensusErrorFromTheRetainedDerivativeSupport.lean/declarations/actual-logarithmic-derivative-zero-after-cutoff.md) | 36 | `result-track:9b4fa40d2c7d06d91edac13f352459600b257fd7e7538bc1fab2109b0c7e4f97` |
-| 3 | `theorem` | [exact_native_logarithmic_derivative_price](../../../../MeasureAndIntegration/ExactUniformSourceCensusErrorFromTheRetainedDerivativeSupport.lean/declarations/exact-native-logarithmic-derivative-price.md) | 49 | `result-track:ebfa44d5be51fccf6167b5ee48ea5f1a84d9ff83d8bb3ed969e77ab2843d6288` |
-| 4 | `theorem` | [actual_full_census_quadrature_exact_uniform_price](../../../../MeasureAndIntegration/ExactUniformSourceCensusErrorFromTheRetainedDerivativeSupport.lean/declarations/actual-full-census-quadrature-exact-uniform-price.md) | 65 | `result-track:eedf015ccca9a66f418c706df846c29c3c6001d2e6ad2d0645bb89dd86c157fc` |
-| 5 | `theorem` | [actual_census_exact_uniform_moment_error](../../../../MeasureAndIntegration/ExactUniformSourceCensusErrorFromTheRetainedDerivativeSupport.lean/declarations/actual-census-exact-uniform-moment-error.md) | 116 | `result-track:eed225ed4f07c80e70cd9fe46fa24148252d52d706ae78e822065288364c2d9f` |
+| 1 | `theorem` | [actual_correlation_derivative_zero_above_support](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ExactUniformSourceCensusErrorFromTheRetainedDerivativeSupport.lean/declarations/actual-correlation-derivative-zero-above-support.md) | 28 | `result-track:70535a20ffee08738da4b9299e69ddf02983a2f877bdd527072fec2a679fece7` |
+| 2 | `theorem` | [actual_logarithmic_derivative_zero_after_cutoff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ExactUniformSourceCensusErrorFromTheRetainedDerivativeSupport.lean/declarations/actual-logarithmic-derivative-zero-after-cutoff.md) | 36 | `result-track:9b4fa40d2c7d06d91edac13f352459600b257fd7e7538bc1fab2109b0c7e4f97` |
+| 3 | `theorem` | [exact_native_logarithmic_derivative_price](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ExactUniformSourceCensusErrorFromTheRetainedDerivativeSupport.lean/declarations/exact-native-logarithmic-derivative-price.md) | 49 | `result-track:ebfa44d5be51fccf6167b5ee48ea5f1a84d9ff83d8bb3ed969e77ab2843d6288` |
+| 4 | `theorem` | [actual_full_census_quadrature_exact_uniform_price](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ExactUniformSourceCensusErrorFromTheRetainedDerivativeSupport.lean/declarations/actual-full-census-quadrature-exact-uniform-price.md) | 65 | `result-track:eedf015ccca9a66f418c706df846c29c3c6001d2e6ad2d0645bb89dd86c157fc` |
+| 5 | `theorem` | [actual_census_exact_uniform_moment_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ExactUniformSourceCensusErrorFromTheRetainedDerivativeSupport.lean/declarations/actual-census-exact-uniform-moment-error.md) | 116 | `result-track:eed225ed4f07c80e70cd9fe46fa24148252d52d706ae78e822065288364c2d9f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

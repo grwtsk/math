@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedEpiPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedEpiPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedEpiPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedEpiPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [epi_iff_locallySurjective_on_compHaus](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedEpiPublic.lean/declarations/epi-iff-locallysurjective-on-comphaus-source-edition-2.md) | 42 | `result-track:92a5b822d933c45db3ac1d86dd4469e16d0874ed37635f6d9574f9a1cdf6f0b8` |
-| 2 | `lemma` | [epi_iff_surjective_on_stonean](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedEpiPublic.lean/declarations/epi-iff-surjective-on-stonean.md) | 58 | `result-track:55b5b0ea103d723b7a69990d2a18583fd0d2b4343a00c2dbe642961a9b36d48a` |
-| 3 | `lemma` | [epi_iff_locallySurjective_on_compHaus](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedEpiPublic.lean/declarations/epi-iff-locallysurjective-on-comphaus.md) | 71 | `result-track:1459f097770d032ebea61785e026b0476a3301b6dcdef8301f24fa760c903d94` |
-| 4 | `lemma` | [epi_iff_surjective_on_stonean](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedEpiPublic.lean/declarations/epi-iff-surjective-on-stonean-source-edition-2.md) | 77 | `result-track:976e4536d2b336ceca80f34a9ea42e235a564b049ab43b1485c75aa381677781` |
-| 5 | `lemma` | [epi_iff_locallySurjective_on_compHaus](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedEpiPublic.lean/declarations/epi-iff-locallysurjective-on-comphaus-source-edition-3.md) | 87 | `result-track:d62a629cbc8dd76e0330c6e82feecd37f26d0bdf3a7a05ac28a44b26ee045c7b` |
-| 6 | `lemma` | [epi_iff_surjective_on_stonean](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedEpiPublic.lean/declarations/epi-iff-surjective-on-stonean-source-edition-3.md) | 93 | `result-track:f3ad03b4050018e34f15cd68d525f4c8f3c0eb10ad21ead80b2280b830b41047` |
+| 1 | `lemma` | [epi_iff_locallySurjective_on_compHaus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedEpiPublic.lean/declarations/epi-iff-locallysurjective-on-comphaus-source-edition-2.md) | 42 | `result-track:92a5b822d933c45db3ac1d86dd4469e16d0874ed37635f6d9574f9a1cdf6f0b8` |
+| 2 | `lemma` | [epi_iff_surjective_on_stonean](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedEpiPublic.lean/declarations/epi-iff-surjective-on-stonean.md) | 58 | `result-track:55b5b0ea103d723b7a69990d2a18583fd0d2b4343a00c2dbe642961a9b36d48a` |
+| 3 | `lemma` | [epi_iff_locallySurjective_on_compHaus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedEpiPublic.lean/declarations/epi-iff-locallysurjective-on-comphaus.md) | 71 | `result-track:1459f097770d032ebea61785e026b0476a3301b6dcdef8301f24fa760c903d94` |
+| 4 | `lemma` | [epi_iff_surjective_on_stonean](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedEpiPublic.lean/declarations/epi-iff-surjective-on-stonean-source-edition-2.md) | 77 | `result-track:976e4536d2b336ceca80f34a9ea42e235a564b049ab43b1485c75aa381677781` |
+| 5 | `lemma` | [epi_iff_locallySurjective_on_compHaus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedEpiPublic.lean/declarations/epi-iff-locallysurjective-on-comphaus-source-edition-3.md) | 87 | `result-track:d62a629cbc8dd76e0330c6e82feecd37f26d0bdf3a7a05ac28a44b26ee045c7b` |
+| 6 | `lemma` | [epi_iff_surjective_on_stonean](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/CondensedEpiPublic.lean/declarations/epi-iff-surjective-on-stonean-source-edition-3.md) | 93 | `result-track:f3ad03b4050018e34f15cd68d525f4c8f3c0eb10ad21ead80b2280b830b41047` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

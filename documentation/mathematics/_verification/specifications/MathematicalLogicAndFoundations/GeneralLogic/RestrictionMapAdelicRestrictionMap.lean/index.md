@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RestrictionMapAdelicRestrictionMap.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RestrictionMapAdelicRestrictionMap.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RestrictionMapAdelicRestrictionMap.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RestrictionMapAdelicRestrictionMap.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [AdelicRestrictionMap](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RestrictionMapAdelicRestrictionMap.lean/declarations/adelicrestrictionmap.md) | 18 | `declaration-track:af836b7e7b892091edfa68659c06d1fda37a20c4020ef0700c0399bea106e0ff` |
-| 2 | `theorem` | [restriction_compatible_with_boundary](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RestrictionMapAdelicRestrictionMap.lean/declarations/restriction-compatible-with-boundary.md) | 30 | `result-track:dda4b84cbd047daed7b552a737d5bfec084d72bb0b0f94e784cdc98f9b95517f` |
+| 1 | `structure` | [AdelicRestrictionMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RestrictionMapAdelicRestrictionMap.lean/declarations/adelicrestrictionmap.md) | 18 | `declaration-track:af836b7e7b892091edfa68659c06d1fda37a20c4020ef0700c0399bea106e0ff` |
+| 2 | `theorem` | [restriction_compatible_with_boundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RestrictionMapAdelicRestrictionMap.lean/declarations/restriction-compatible-with-boundary.md) | 30 | `result-track:dda4b84cbd047daed7b552a737d5bfec084d72bb0b0f94e784cdc98f9b95517f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/CheckedNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/CheckedNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CheckedNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CheckedNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [Checked](../../../../../ComputerScience/AlgorithmsInComputerScience/CheckedNamespaced.lean/declarations/checked.md) | 18 | `declaration-track:6262c3cfb1ba5e444dcaeaf46a026bb560d64156483727b8151edefb6ec8d5aa` |
-| 2 | `def` | [residues](../../../../../ComputerScience/AlgorithmsInComputerScience/CheckedNamespaced.lean/declarations/residues.md) | 24 | `declaration-track:49bce9a6ef1fe6eae04f6c49c2bf9d6b8c2b576dc9a109587a51ce4a5f36a9a7` |
-| 3 | `def` | [hasResidue](../../../../../ComputerScience/AlgorithmsInComputerScience/CheckedNamespaced.lean/declarations/hasresidue.md) | 28 | `declaration-track:f674ed420a9df6ea862f886c38e220ff2991f381322a008beb1362776df1b8f8` |
-| 4 | `def` | [isProved](../../../../../ComputerScience/AlgorithmsInComputerScience/CheckedNamespaced.lean/declarations/isproved.md) | 32 | `declaration-track:f7e6e285e623b92e3ba45bf882643062dbdfd3a0bf9b8a5e8959f5da6a3fe4d3` |
+| 1 | `inductive` | [Checked](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CheckedNamespaced.lean/declarations/checked.md) | 18 | `declaration-track:6262c3cfb1ba5e444dcaeaf46a026bb560d64156483727b8151edefb6ec8d5aa` |
+| 2 | `def` | [residues](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CheckedNamespaced.lean/declarations/residues.md) | 24 | `declaration-track:49bce9a6ef1fe6eae04f6c49c2bf9d6b8c2b576dc9a109587a51ce4a5f36a9a7` |
+| 3 | `def` | [hasResidue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CheckedNamespaced.lean/declarations/hasresidue.md) | 28 | `declaration-track:f674ed420a9df6ea862f886c38e220ff2991f381322a008beb1362776df1b8f8` |
+| 4 | `def` | [isProved](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CheckedNamespaced.lean/declarations/isproved.md) | 32 | `declaration-track:f7e6e285e623b92e3ba45bf882643062dbdfd3a0bf9b8a5e8959f5da6a3fe4d3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

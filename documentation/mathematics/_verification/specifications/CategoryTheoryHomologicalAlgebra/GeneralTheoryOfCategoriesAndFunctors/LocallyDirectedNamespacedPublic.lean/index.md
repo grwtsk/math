@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocallyDirectedNamespacedPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocallyDirectedNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocallyDirectedNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocallyDirectedNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [Functor.IsLocallyDirected](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocallyDirectedNamespacedPublic.lean/declarations/functor-islocallydirected.md) | 54 | `declaration-track:442e7ba3d104cd95bae01e87a2634b6f3b862e38a8ccf7ca3c2df47eb1e6aa27` |
-| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocallyDirectedNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 61 | `declaration-track:a79bd03861370e6fde25c141f4e5afe15b713925b0973a0b14e0e531eba4669d` |
-| 3 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocallyDirectedNamespacedPublic.lean/declarations/instance.md) | 66 | `declaration-track:5c046db7f1910370e2b81a24c670dab92821ada39c3291079c6bc1364aa504a7` |
+| 1 | `class` | [Functor.IsLocallyDirected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocallyDirectedNamespacedPublic.lean/declarations/functor-islocallydirected.md) | 54 | `declaration-track:442e7ba3d104cd95bae01e87a2634b6f3b862e38a8ccf7ca3c2df47eb1e6aa27` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocallyDirectedNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 61 | `declaration-track:a79bd03861370e6fde25c141f4e5afe15b713925b0973a0b14e0e531eba4669d` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocallyDirectedNamespacedPublic.lean/declarations/instance.md) | 66 | `declaration-track:5c046db7f1910370e2b81a24c670dab92821ada39c3291079c6bc1364aa504a7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

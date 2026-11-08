@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/GoingDownPublic.lean/index.md) · [Full source](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/GoingDownPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/GoingDownPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/GoingDownPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [Algebra.HasGoingDown](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/GoingDownPublic.lean/declarations/algebra-hasgoingdown.md) | 44 | `declaration-track:4a3cccae8e94d22345df628cf15759582cda67d913e934c321283ff4fdff7593` |
-| 2 | `lemma` | [Ideal.exists_ideal_le_liesOver_of_le](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/GoingDownPublic.lean/declarations/ideal-exists-ideal-le-liesover-of-le.md) | 50 | `result-track:73eea1249733b225aa819dc8e79f6d84732a90f84751c51ec3ac0873529d46eb` |
-| 3 | `lemma` | [Ideal.exists_ideal_lt_liesOver_of_lt](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/GoingDownPublic.lean/declarations/ideal-exists-ideal-lt-liesover-of-lt.md) | 61 | `result-track:24fa681965ac17b5b2b506604b61608e9e00aff3d8f5fe7d02b6e98d3dc015e6` |
-| 4 | `lemma` | [Ideal.exists_ltSeries_of_hasGoingDown](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/GoingDownPublic.lean/declarations/ideal-exists-ltseries-of-hasgoingdown.md) | 71 | `result-track:e6ba8d3342e13e7553676c4cd6d0d868d2f2c8537183a4a414279c826ce9bbfa` |
-| 5 | `lemma` | [iff_generalizingMap_primeSpectrumComap](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/GoingDownPublic.lean/declarations/iff-generalizingmap-primespectrumcomap.md) | 106 | `result-track:379d9b372f76b521da9756ea77afb9b52675672435412f0fd902efed371c3dab` |
-| 6 | `lemma` | [trans](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/GoingDownPublic.lean/declarations/trans.md) | 125 | `result-track:14e9ea48d5406edaaa8cfd3e3808a5c82efc1eeaa1ca12e1ce11de5a9fa71b69` |
-| 7 | `lemma` | [of_comap_localRingHom_surjective](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/GoingDownPublic.lean/declarations/of-comap-localringhom-surjective.md) | 136 | `result-track:e1327283aac092042336721b5e62b1df82ba51a2cb0af7e037881c2d82b5b1f8` |
-| 8 | `instance` | [of_flat](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/GoingDownPublic.lean/declarations/of-flat.md) | 154 | `declaration-track:e490a5e7fe5b522282b163117ddf169b85b62ab867b7dbf2b422acdf51a17d53` |
+| 1 | `class` | [Algebra.HasGoingDown](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/GoingDownPublic.lean/declarations/algebra-hasgoingdown.md) | 44 | `declaration-track:4a3cccae8e94d22345df628cf15759582cda67d913e934c321283ff4fdff7593` |
+| 2 | `lemma` | [Ideal.exists_ideal_le_liesOver_of_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/GoingDownPublic.lean/declarations/ideal-exists-ideal-le-liesover-of-le.md) | 50 | `result-track:73eea1249733b225aa819dc8e79f6d84732a90f84751c51ec3ac0873529d46eb` |
+| 3 | `lemma` | [Ideal.exists_ideal_lt_liesOver_of_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/GoingDownPublic.lean/declarations/ideal-exists-ideal-lt-liesover-of-lt.md) | 61 | `result-track:24fa681965ac17b5b2b506604b61608e9e00aff3d8f5fe7d02b6e98d3dc015e6` |
+| 4 | `lemma` | [Ideal.exists_ltSeries_of_hasGoingDown](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/GoingDownPublic.lean/declarations/ideal-exists-ltseries-of-hasgoingdown.md) | 71 | `result-track:e6ba8d3342e13e7553676c4cd6d0d868d2f2c8537183a4a414279c826ce9bbfa` |
+| 5 | `lemma` | [iff_generalizingMap_primeSpectrumComap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/GoingDownPublic.lean/declarations/iff-generalizingmap-primespectrumcomap.md) | 106 | `result-track:379d9b372f76b521da9756ea77afb9b52675672435412f0fd902efed371c3dab` |
+| 6 | `lemma` | [trans](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/GoingDownPublic.lean/declarations/trans.md) | 125 | `result-track:14e9ea48d5406edaaa8cfd3e3808a5c82efc1eeaa1ca12e1ce11de5a9fa71b69` |
+| 7 | `lemma` | [of_comap_localRingHom_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/GoingDownPublic.lean/declarations/of-comap-localringhom-surjective.md) | 136 | `result-track:e1327283aac092042336721b5e62b1df82ba51a2cb0af7e037881c2d82b5b1f8` |
+| 8 | `instance` | [of_flat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/GoingDownPublic.lean/declarations/of-flat.md) | 154 | `declaration-track:e490a5e7fe5b522282b163117ddf169b85b62ab867b7dbf2b422acdf51a17d53` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

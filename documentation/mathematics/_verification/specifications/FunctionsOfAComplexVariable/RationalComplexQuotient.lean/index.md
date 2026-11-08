@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/RationalComplexQuotient.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/RationalComplexQuotient.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalComplexQuotient.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalComplexQuotient.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.RationalRoundedArithmetic`](../../../../FunctionsOfAComplexVariable/RationalRoundedArithmetic.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.RationalRoundedArithmetic`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalRoundedArithmetic.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [sub](../../../../FunctionsOfAComplexVariable/RationalComplexQuotient.lean/declarations/sub.md) | 21 | `declaration-track:afb0f3608631d4f8405f28baf72d728fc08ddd74d0f7cf6cb20238cb5e1fd159` |
-| 2 | `def` | [normSq](../../../../FunctionsOfAComplexVariable/RationalComplexQuotient.lean/declarations/normsq.md) | 22 | `declaration-track:94ce80702d73acab9ea76470489da6e2abea8e792dc1ccb17780405534ca3e11` |
-| 3 | `def` | [div](../../../../FunctionsOfAComplexVariable/RationalComplexQuotient.lean/declarations/div.md) | 24 | `declaration-track:bd7f34bb9e7e7ed21eb7f30e7f510e6b82f0f05e1b8b3f8ffa881e46d6051abc` |
-| 4 | `theorem` | [embed_sub](../../../../FunctionsOfAComplexVariable/RationalComplexQuotient.lean/declarations/embed-sub.md) | 28 | `result-track:e1b2daebae102c62dc5929ea6178f7218b8817d4dcbb32c7f67ad3e4b6811ae7` |
-| 5 | `theorem` | [cast_normSq](../../../../FunctionsOfAComplexVariable/RationalComplexQuotient.lean/declarations/cast-normsq.md) | 31 | `result-track:e2ad0338f1f1e995a7e7d0ae6bfa41f5e41cddc0493eb2a2afa9064da8865b78` |
-| 6 | `theorem` | [embed_div](../../../../FunctionsOfAComplexVariable/RationalComplexQuotient.lean/declarations/embed-div.md) | 37 | `result-track:0ea554f4d390d7121746b0b2a34a2239f159d4c0c073822c1a9442aced6b6bf7` |
-| 7 | `theorem` | [denominator_lower](../../../../FunctionsOfAComplexVariable/RationalComplexQuotient.lean/declarations/denominator-lower.md) | 42 | `result-track:45db86ef6cfa6153d9e59be1bfb269feb7eb36908457259587c4a7e044b659d6` |
-| 8 | `theorem` | [initialState_sound](../../../../FunctionsOfAComplexVariable/RationalComplexQuotient.lean/declarations/initialstate-sound.md) | 61 | `result-track:49782f16be7ae717ad886a5f80275ac5f64c415666be00bf5d42abde1c1a4ef8` |
+| 1 | `def` | [sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalComplexQuotient.lean/declarations/sub.md) | 21 | `declaration-track:afb0f3608631d4f8405f28baf72d728fc08ddd74d0f7cf6cb20238cb5e1fd159` |
+| 2 | `def` | [normSq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalComplexQuotient.lean/declarations/normsq.md) | 22 | `declaration-track:94ce80702d73acab9ea76470489da6e2abea8e792dc1ccb17780405534ca3e11` |
+| 3 | `def` | [div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalComplexQuotient.lean/declarations/div.md) | 24 | `declaration-track:bd7f34bb9e7e7ed21eb7f30e7f510e6b82f0f05e1b8b3f8ffa881e46d6051abc` |
+| 4 | `theorem` | [embed_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalComplexQuotient.lean/declarations/embed-sub.md) | 28 | `result-track:e1b2daebae102c62dc5929ea6178f7218b8817d4dcbb32c7f67ad3e4b6811ae7` |
+| 5 | `theorem` | [cast_normSq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalComplexQuotient.lean/declarations/cast-normsq.md) | 31 | `result-track:e2ad0338f1f1e995a7e7d0ae6bfa41f5e41cddc0493eb2a2afa9064da8865b78` |
+| 6 | `theorem` | [embed_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalComplexQuotient.lean/declarations/embed-div.md) | 37 | `result-track:0ea554f4d390d7121746b0b2a34a2239f159d4c0c073822c1a9442aced6b6bf7` |
+| 7 | `theorem` | [denominator_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalComplexQuotient.lean/declarations/denominator-lower.md) | 42 | `result-track:45db86ef6cfa6153d9e59be1bfb269feb7eb36908457259587c4a7e044b659d6` |
+| 8 | `theorem` | [initialState_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalComplexQuotient.lean/declarations/initialstate-sound.md) | 61 | `result-track:49782f16be7ae717ad886a5f80275ac5f64c415666be00bf5d42abde1c1a4ef8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

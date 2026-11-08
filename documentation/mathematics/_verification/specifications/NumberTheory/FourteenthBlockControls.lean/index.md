@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/FourteenthBlockControls.lean/index.md) · [Full source](../../../../NumberTheory/FourteenthBlockControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FourteenthBlockControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FourteenthBlockControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.ConcreteNewtonFourteenBlocksAndTerminal`](../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFourteenBlocksAndTerminal.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.ConcreteNewtonFourteenBlocksAndTerminal`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFourteenBlocksAndTerminal.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [base_boundaries](../../../../NumberTheory/FourteenthBlockControls.lean/declarations/base-boundaries.md) | 13 | `result-track:dad0e3556bf72321ebe4a1c3bf34d52d784973cd88b7179ae57f18a975734423` |
-| 2 | `theorem` | [prefix_boundaries](../../../../NumberTheory/FourteenthBlockControls.lean/declarations/prefix-boundaries.md) | 17 | `result-track:17094e2e4b0d60901f6e66a02f628e060c738dd6d0d194ee22e623c8f90dd9de` |
-| 3 | `theorem` | [fourteenth_block_endpoints](../../../../NumberTheory/FourteenthBlockControls.lean/declarations/fourteenth-block-endpoints.md) | 21 | `result-track:591ab0eb3c51ab708e395e4d6d32032c44c0abc1590974b4c37c2670702317e1` |
-| 4 | `theorem` | [adjacent_positions_excluded](../../../../NumberTheory/FourteenthBlockControls.lean/declarations/adjacent-positions-excluded.md) | 26 | `result-track:110e6167372a89f365f7f5744205c677caa907a8ebe6e65c63303feed6df347c` |
-| 5 | `theorem` | [logarithm_reduction_uniform](../../../../NumberTheory/FourteenthBlockControls.lean/declarations/logarithm-reduction-uniform.md) | 31 | `result-track:7ccb1b0f7649e3f9a9dd17aef6d2a3cc530eb88888726d190cb9e16b4f36f13c` |
-| 6 | `theorem` | [terminal_not_fourteenth_block](../../../../NumberTheory/FourteenthBlockControls.lean/declarations/terminal-not-fourteenth-block.md) | 35 | `result-track:29296cb4333211c427d2263820d737963d35203d95081396c93ff4d5e0b869c5` |
-| 7 | `theorem` | [first_unfilled_preserved](../../../../NumberTheory/FourteenthBlockControls.lean/declarations/first-unfilled-preserved.md) | 40 | `result-track:ce6a5d080ae4785dfd23777ba948d9f65fa64d829df81305a51569ef40a31679` |
-| 8 | `theorem` | [terminal_is_copied_exactly](../../../../NumberTheory/FourteenthBlockControls.lean/declarations/terminal-is-copied-exactly.md) | 45 | `result-track:be82e48e9292c80c841daa92250246a49e93d6d374a347a484e3a02a0511e1d9` |
-| 9 | `theorem` | [remaining_label_boundaries](../../../../NumberTheory/FourteenthBlockControls.lean/declarations/remaining-label-boundaries.md) | 49 | `result-track:7cf5120b013d2c1d3838463790b3c5379ea0e6ec98e585612c49049e14ddae37` |
+| 1 | `theorem` | [base_boundaries](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FourteenthBlockControls.lean/declarations/base-boundaries.md) | 13 | `result-track:dad0e3556bf72321ebe4a1c3bf34d52d784973cd88b7179ae57f18a975734423` |
+| 2 | `theorem` | [prefix_boundaries](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FourteenthBlockControls.lean/declarations/prefix-boundaries.md) | 17 | `result-track:17094e2e4b0d60901f6e66a02f628e060c738dd6d0d194ee22e623c8f90dd9de` |
+| 3 | `theorem` | [fourteenth_block_endpoints](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FourteenthBlockControls.lean/declarations/fourteenth-block-endpoints.md) | 21 | `result-track:591ab0eb3c51ab708e395e4d6d32032c44c0abc1590974b4c37c2670702317e1` |
+| 4 | `theorem` | [adjacent_positions_excluded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FourteenthBlockControls.lean/declarations/adjacent-positions-excluded.md) | 26 | `result-track:110e6167372a89f365f7f5744205c677caa907a8ebe6e65c63303feed6df347c` |
+| 5 | `theorem` | [logarithm_reduction_uniform](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FourteenthBlockControls.lean/declarations/logarithm-reduction-uniform.md) | 31 | `result-track:7ccb1b0f7649e3f9a9dd17aef6d2a3cc530eb88888726d190cb9e16b4f36f13c` |
+| 6 | `theorem` | [terminal_not_fourteenth_block](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FourteenthBlockControls.lean/declarations/terminal-not-fourteenth-block.md) | 35 | `result-track:29296cb4333211c427d2263820d737963d35203d95081396c93ff4d5e0b869c5` |
+| 7 | `theorem` | [first_unfilled_preserved](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FourteenthBlockControls.lean/declarations/first-unfilled-preserved.md) | 40 | `result-track:ce6a5d080ae4785dfd23777ba948d9f65fa64d829df81305a51569ef40a31679` |
+| 8 | `theorem` | [terminal_is_copied_exactly](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FourteenthBlockControls.lean/declarations/terminal-is-copied-exactly.md) | 45 | `result-track:be82e48e9292c80c841daa92250246a49e93d6d374a347a484e3a02a0511e1d9` |
+| 9 | `theorem` | [remaining_label_boundaries](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FourteenthBlockControls.lean/declarations/remaining-label-boundaries.md) | 49 | `result-track:7cf5120b013d2c1d3838463790b3c5379ea0e6ec98e585612c49049e14ddae37` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

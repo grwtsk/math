@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/SupportedRecordReconstruction.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/SupportedRecordReconstruction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/SupportedRecordReconstruction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/SupportedRecordReconstruction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.FoundationsLogicAndTypeTheory.Computability.RecursiveFunctions.ValueParserReconstruction`](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/ValueParserReconstruction.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.FoundationsLogicAndTypeTheory.Computability.RecursiveFunctions.ValueParserReconstruction`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/ValueParserReconstruction.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [decode_reconstruct_supported](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/SupportedRecordReconstruction.lean/declarations/decode-reconstruct-supported.md) | 7 | `result-track:9317ee9f112214979017176784eb0d186e203f97bc43a2c881862848bf585e6a` |
-| 2 | `theorem` | [accepted_byte_inverse](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/SupportedRecordReconstruction.lean/declarations/accepted-byte-inverse.md) | 50 | `result-track:6404f976206af822a944a7726231a188dc4425968617b1d7929920a4dbaeb65b` |
-| 3 | `theorem` | [decode_supported](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/SupportedRecordReconstruction.lean/declarations/decode-supported.md) | 53 | `result-track:30569244743bea99603d3ef1ac500b6f681aa3d5ca944f8eee874bcaf8c9187a` |
-| 4 | `theorem` | [accepted_bytes_iff](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/SupportedRecordReconstruction.lean/declarations/accepted-bytes-iff.md) | 56 | `result-track:de4e478fb481f3887356a318dbc51db279221cc07b35e841225134e233a3722d` |
+| 1 | `theorem` | [decode_reconstruct_supported](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/SupportedRecordReconstruction.lean/declarations/decode-reconstruct-supported.md) | 7 | `result-track:9317ee9f112214979017176784eb0d186e203f97bc43a2c881862848bf585e6a` |
+| 2 | `theorem` | [accepted_byte_inverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/SupportedRecordReconstruction.lean/declarations/accepted-byte-inverse.md) | 50 | `result-track:6404f976206af822a944a7726231a188dc4425968617b1d7929920a4dbaeb65b` |
+| 3 | `theorem` | [decode_supported](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/SupportedRecordReconstruction.lean/declarations/decode-supported.md) | 53 | `result-track:30569244743bea99603d3ef1ac500b6f681aa3d5ca944f8eee874bcaf8c9187a` |
+| 4 | `theorem` | [accepted_bytes_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/SupportedRecordReconstruction.lean/declarations/accepted-bytes-iff.md) | 56 | `result-track:de4e478fb481f3887356a318dbc51db279221cc07b35e841225134e233a3722d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

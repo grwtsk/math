@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/ResidueAPINamespacedPublicEdition1.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/ResidueAPINamespacedPublicEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ResidueAPINamespacedPublicEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ResidueAPINamespacedPublicEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [HasResidueCoefficientAt](../../../../FunctionsOfAComplexVariable/ResidueAPINamespacedPublicEdition1.lean/declarations/hasresiduecoefficientat.md) | 39 | `declaration-track:3aff3daac108bc54296ec9f1a969fa502fb547624b14d29b81254088367981f7` |
-| 2 | `theorem` | [logDeriv_eventuallyEq_order_div_sub_add_regular](../../../../FunctionsOfAComplexVariable/ResidueAPINamespacedPublicEdition1.lean/declarations/logderiv-eventuallyeq-order-div-sub-add-regular.md) | 45 | `result-track:0ee1f040f25b2e990fbd3f0a21a88036983e3388fba9836d3fd20d6ca1f1d18d` |
-| 3 | `theorem` | [logDeriv_hasResidueCoefficientAt_order](../../../../FunctionsOfAComplexVariable/ResidueAPINamespacedPublicEdition1.lean/declarations/logderiv-hasresiduecoefficientat-order.md) | 57 | `result-track:fe93c8ed5d0ecae7b7103e4512f77c79e2ade43f941e3b0bfec7d496148292cf` |
-| 4 | `theorem` | [logDeriv_smallCircle_normalizedIntegral_eq_order](../../../../FunctionsOfAComplexVariable/ResidueAPINamespacedPublicEdition1.lean/declarations/logderiv-smallcircle-normalizedintegral-eq-order.md) | 66 | `result-track:317dbc33c11a6c9775b75f7e9d2bce27b46e45c09a7d9e5ce8f9316ac9083a5e` |
+| 1 | `abbrev` | [HasResidueCoefficientAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ResidueAPINamespacedPublicEdition1.lean/declarations/hasresiduecoefficientat.md) | 39 | `declaration-track:3aff3daac108bc54296ec9f1a969fa502fb547624b14d29b81254088367981f7` |
+| 2 | `theorem` | [logDeriv_eventuallyEq_order_div_sub_add_regular](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ResidueAPINamespacedPublicEdition1.lean/declarations/logderiv-eventuallyeq-order-div-sub-add-regular.md) | 45 | `result-track:0ee1f040f25b2e990fbd3f0a21a88036983e3388fba9836d3fd20d6ca1f1d18d` |
+| 3 | `theorem` | [logDeriv_hasResidueCoefficientAt_order](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ResidueAPINamespacedPublicEdition1.lean/declarations/logderiv-hasresiduecoefficientat-order.md) | 57 | `result-track:fe93c8ed5d0ecae7b7103e4512f77c79e2ade43f941e3b0bfec7d496148292cf` |
+| 4 | `theorem` | [logDeriv_smallCircle_normalizedIntegral_eq_order](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ResidueAPINamespacedPublicEdition1.lean/declarations/logderiv-smallcircle-normalizedintegral-eq-order.md) | 66 | `result-track:317dbc33c11a6c9775b75f7e9d2bce27b46e45c09a7d9e5ce8f9316ac9083a5e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

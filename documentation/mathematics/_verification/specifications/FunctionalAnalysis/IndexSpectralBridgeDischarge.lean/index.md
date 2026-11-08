@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/IndexSpectralBridgeDischarge.lean/index.md) · [Full source](../../../../FunctionalAnalysis/IndexSpectralBridgeDischarge.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/IndexSpectralBridgeDischarge.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/IndexSpectralBridgeDischarge.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [trace_pairing_in_index_spectral_bridge_discharge_checklist](../../../../FunctionalAnalysis/IndexSpectralBridgeDischarge.lean/declarations/trace-pairing-in-index-spectral-bridge-discharge-checklist.md) | 20 | `result-track:5ecdfcc2948321392412ad1af05102a8b42fa0a1322b06cbf476bc7636ee72c7` |
-| 2 | `theorem` | [spectral_distribution_in_index_spectral_bridge_discharge_checklist](../../../../FunctionalAnalysis/IndexSpectralBridgeDischarge.lean/declarations/spectral-distribution-in-index-spectral-bridge-discharge-checklist.md) | 25 | `result-track:b29aabd4483f03e3a2356b59f4b6a8983396a61a83b52b344e3418e976c24d3b` |
-| 3 | `theorem` | [index_distribution_in_index_spectral_bridge_discharge_checklist](../../../../FunctionalAnalysis/IndexSpectralBridgeDischarge.lean/declarations/index-distribution-in-index-spectral-bridge-discharge-checklist.md) | 30 | `result-track:92b1420002418af310166c5c976b06381eaa1b2488bf2cfef3f6e08caeb7f445` |
-| 4 | `theorem` | [distribution_equality_in_index_spectral_bridge_discharge_checklist](../../../../FunctionalAnalysis/IndexSpectralBridgeDischarge.lean/declarations/distribution-equality-in-index-spectral-bridge-discharge-checklist.md) | 35 | `result-track:338041c082beec8711ee6fa1485aabf5b08acd72c37ede474a4f787ab640572c` |
-| 5 | `theorem` | [operator_compatibility_in_index_spectral_bridge_discharge_checklist](../../../../FunctionalAnalysis/IndexSpectralBridgeDischarge.lean/declarations/operator-compatibility-in-index-spectral-bridge-discharge-checklist.md) | 40 | `result-track:839f373b5f711874e6507390784121d7cf95ca04f580360ac516bbd4d23408d2` |
-| 6 | `theorem` | [nonboundary_audit_in_index_spectral_bridge_discharge_checklist](../../../../FunctionalAnalysis/IndexSpectralBridgeDischarge.lean/declarations/nonboundary-audit-in-index-spectral-bridge-discharge-checklist.md) | 45 | `result-track:e434df788db20831611bd87b25b120df53d34575608e18695bcd1c9a9d8b6933` |
+| 1 | `theorem` | [trace_pairing_in_index_spectral_bridge_discharge_checklist](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/IndexSpectralBridgeDischarge.lean/declarations/trace-pairing-in-index-spectral-bridge-discharge-checklist.md) | 20 | `result-track:5ecdfcc2948321392412ad1af05102a8b42fa0a1322b06cbf476bc7636ee72c7` |
+| 2 | `theorem` | [spectral_distribution_in_index_spectral_bridge_discharge_checklist](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/IndexSpectralBridgeDischarge.lean/declarations/spectral-distribution-in-index-spectral-bridge-discharge-checklist.md) | 25 | `result-track:b29aabd4483f03e3a2356b59f4b6a8983396a61a83b52b344e3418e976c24d3b` |
+| 3 | `theorem` | [index_distribution_in_index_spectral_bridge_discharge_checklist](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/IndexSpectralBridgeDischarge.lean/declarations/index-distribution-in-index-spectral-bridge-discharge-checklist.md) | 30 | `result-track:92b1420002418af310166c5c976b06381eaa1b2488bf2cfef3f6e08caeb7f445` |
+| 4 | `theorem` | [distribution_equality_in_index_spectral_bridge_discharge_checklist](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/IndexSpectralBridgeDischarge.lean/declarations/distribution-equality-in-index-spectral-bridge-discharge-checklist.md) | 35 | `result-track:338041c082beec8711ee6fa1485aabf5b08acd72c37ede474a4f787ab640572c` |
+| 5 | `theorem` | [operator_compatibility_in_index_spectral_bridge_discharge_checklist](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/IndexSpectralBridgeDischarge.lean/declarations/operator-compatibility-in-index-spectral-bridge-discharge-checklist.md) | 40 | `result-track:839f373b5f711874e6507390784121d7cf95ca04f580360ac516bbd4d23408d2` |
+| 6 | `theorem` | [nonboundary_audit_in_index_spectral_bridge_discharge_checklist](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/IndexSpectralBridgeDischarge.lean/declarations/nonboundary-audit-in-index-spectral-bridge-discharge-checklist.md) | 45 | `result-track:e434df788db20831611bd87b25b120df53d34575608e18695bcd1c9a9d8b6933` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

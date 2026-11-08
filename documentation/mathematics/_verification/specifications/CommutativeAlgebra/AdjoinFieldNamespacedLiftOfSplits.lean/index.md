@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/AdjoinFieldNamespacedLiftOfSplits.lean/index.md) · [Full source](../../../../CommutativeAlgebra/AdjoinFieldNamespacedLiftOfSplits.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdjoinFieldNamespacedLiftOfSplits.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdjoinFieldNamespacedLiftOfSplits.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [AlgEquiv.adjoinSingletonEquivAdjoinRootMinpoly](../../../../CommutativeAlgebra/AdjoinFieldNamespacedLiftOfSplits.lean/declarations/algequiv-adjoinsingletonequivadjoinrootminpoly.md) | 43 | `declaration-track:1fce081e1e61df46d81c28b55e1e9091b04cb18ecae6a806cd5b411fab511c53` |
-| 2 | `theorem` | [lift_of_splits](../../../../CommutativeAlgebra/AdjoinFieldNamespacedLiftOfSplits.lean/declarations/lift-of-splits.md) | 71 | `result-track:bb737fd0b057e777826904a084b806c4f123e2d55470958ccb2e5216e7a018e2` |
+| 1 | `def` | [AlgEquiv.adjoinSingletonEquivAdjoinRootMinpoly](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdjoinFieldNamespacedLiftOfSplits.lean/declarations/algequiv-adjoinsingletonequivadjoinrootminpoly.md) | 43 | `declaration-track:1fce081e1e61df46d81c28b55e1e9091b04cb18ecae6a806cd5b411fab511c53` |
+| 2 | `theorem` | [lift_of_splits](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdjoinFieldNamespacedLiftOfSplits.lean/declarations/lift-of-splits.md) | 71 | `result-track:bb737fd0b057e777826904a084b806c4f123e2d55470958ccb2e5216e7a018e2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

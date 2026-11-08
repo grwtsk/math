@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/FiniteAbelianNamespaced.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/FiniteAbelianNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteAbelianNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteAbelianNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [finite_of_fg_torsion](../../../../GroupTheoryAndGeneralizations/FiniteAbelianNamespaced.lean/declarations/finite-of-fg-torsion-source-edition-3.md) | 39 | `result-track:fa1c3e871462886abb6d0bd55ad65dc5873d44ef75599c7d04a1417544bae1ce` |
-| 2 | `theorem` | [equiv_free_prod_directSum_zmod](../../../../GroupTheoryAndGeneralizations/FiniteAbelianNamespaced.lean/declarations/equiv-free-prod-directsum-zmod.md) | 62 | `result-track:b92229ef0e5808b48071eb73a6a1c2594fcf7af97bb188bfca2af94db838b8e2` |
-| 3 | `theorem` | [equiv_directSum_zmod_of_fintype](../../../../GroupTheoryAndGeneralizations/FiniteAbelianNamespaced.lean/declarations/equiv-directsum-zmod-of-fintype.md) | 79 | `result-track:3570f75bdc002cde057ed367b8e46b30545ff59a87884850e03b5e80fe13eddf` |
-| 4 | `theorem` | [finite_of_fg_torsion](../../../../GroupTheoryAndGeneralizations/FiniteAbelianNamespaced.lean/declarations/finite-of-fg-torsion-source-edition-2.md) | 94 | `result-track:d9848087e7d18f61f793a546ad3fb284d7ed333ad6645a723833c48c872d172b` |
-| 5 | `theorem` | [finite_of_fg_torsion](../../../../GroupTheoryAndGeneralizations/FiniteAbelianNamespaced.lean/declarations/finite-of-fg-torsion.md) | 103 | `result-track:d3bb404a09d75b6c808e71c256ced0f54429c67bd8e6c873766b9e07567a535b` |
+| 1 | `theorem` | [finite_of_fg_torsion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteAbelianNamespaced.lean/declarations/finite-of-fg-torsion-source-edition-3.md) | 39 | `result-track:fa1c3e871462886abb6d0bd55ad65dc5873d44ef75599c7d04a1417544bae1ce` |
+| 2 | `theorem` | [equiv_free_prod_directSum_zmod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteAbelianNamespaced.lean/declarations/equiv-free-prod-directsum-zmod.md) | 62 | `result-track:b92229ef0e5808b48071eb73a6a1c2594fcf7af97bb188bfca2af94db838b8e2` |
+| 3 | `theorem` | [equiv_directSum_zmod_of_fintype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteAbelianNamespaced.lean/declarations/equiv-directsum-zmod-of-fintype.md) | 79 | `result-track:3570f75bdc002cde057ed367b8e46b30545ff59a87884850e03b5e80fe13eddf` |
+| 4 | `theorem` | [finite_of_fg_torsion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteAbelianNamespaced.lean/declarations/finite-of-fg-torsion-source-edition-2.md) | 94 | `result-track:d9848087e7d18f61f793a546ad3fb284d7ed333ad6645a723833c48c872d172b` |
+| 5 | `theorem` | [finite_of_fg_torsion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteAbelianNamespaced.lean/declarations/finite-of-fg-torsion.md) | 103 | `result-track:d3bb404a09d75b6c808e71c256ced0f54429c67bd8e6c873766b9e07567a535b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

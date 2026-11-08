@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StoredWittIndexExistence.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StoredWittIndexExistence.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StoredWittIndexExistence.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StoredWittIndexExistence.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [arithmetic_bridge_has_witt_index](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StoredWittIndexExistence.lean/declarations/arithmetic-bridge-has-witt-index.md) | 39 | `result-track:f5896a58536d8ccf3359f6196aac872273b9c26c46701feab10a2f5c03308e99` |
+| 1 | `theorem` | [arithmetic_bridge_has_witt_index](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StoredWittIndexExistence.lean/declarations/arithmetic-bridge-has-witt-index.md) | 39 | `result-track:f5896a58536d8ccf3359f6196aac872273b9c26c46701feab10a2f5c03308e99` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

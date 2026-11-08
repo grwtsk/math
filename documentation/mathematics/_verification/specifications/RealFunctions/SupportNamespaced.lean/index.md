@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/SupportNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/SupportNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SupportNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SupportNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [support_deriv_subset](../../../../RealFunctions/SupportNamespaced.lean/declarations/support-deriv-subset.md) | 42 | `result-track:7940b7df8ebd7e5d258b184dafe496d9ac266a24fc3eabefc7f0474c5cbdfe85` |
-| 2 | `theorem` | [HasCompactSupport.deriv](../../../../RealFunctions/SupportNamespaced.lean/declarations/hascompactsupport-deriv.md) | 49 | `result-track:70b53eca0d4d60673c138a3f29d1c73e626a232e788eec61bce6d42252a0b2fc` |
+| 1 | `theorem` | [support_deriv_subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SupportNamespaced.lean/declarations/support-deriv-subset.md) | 42 | `result-track:7940b7df8ebd7e5d258b184dafe496d9ac266a24fc3eabefc7f0474c5cbdfe85` |
+| 2 | `theorem` | [HasCompactSupport.deriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SupportNamespaced.lean/declarations/hascompactsupport-deriv.md) | 49 | `result-track:70b53eca0d4d60673c138a3f29d1c73e626a232e788eec61bce6d42252a0b2fc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

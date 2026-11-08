@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/PrefixCheckpointStaleSlots.lean/index.md) · [Full source](../../../../Combinatorics/PrefixCheckpointStaleSlots.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrefixCheckpointStaleSlots.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrefixCheckpointStaleSlots.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableCheckpoint`](../../../../Combinatorics/GraphTheory/PositivePrefixTableCheckpoint.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableCheckpoint`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PositivePrefixTableCheckpoint.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../Combinatorics/PrefixCheckpointStaleSlots.lean/declarations/example.md) | 12 | `declaration-track:1a4549841b4eb127c29cf8488e85b24d719837e1218995eaebc98d82dc6bcebf` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrefixCheckpointStaleSlots.lean/declarations/example.md) | 12 | `declaration-track:1a4549841b4eb127c29cf8488e85b24d719837e1218995eaebc98d82dc6bcebf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

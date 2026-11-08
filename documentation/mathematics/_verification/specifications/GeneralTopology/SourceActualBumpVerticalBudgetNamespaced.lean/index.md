@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SourceActualBumpVerticalBudgetNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/SourceActualBumpVerticalBudgetNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceActualBumpVerticalBudgetNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceActualBumpVerticalBudgetNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [endpointPrimitive](../../../../GeneralTopology/SourceActualBumpVerticalBudgetNamespaced.lean/declarations/endpointprimitive.md) | 25 | `declaration-track:e049fc605edabcb7769ba609e80ba77a7d6d0b41bbc6cefec9f6893c7a3fd84c` |
-| 2 | `theorem` | [endpoint_antiderivative](../../../../GeneralTopology/SourceActualBumpVerticalBudgetNamespaced.lean/declarations/endpoint-antiderivative.md) | 37 | `result-track:a18ec46cf1f8260fcb4e55597e3934398fc0145cf58bfc9e6e56d8f6d7042c4a` |
-| 3 | `theorem` | [bump_laplace_endpoint_formula](../../../../GeneralTopology/SourceActualBumpVerticalBudgetNamespaced.lean/declarations/bump-laplace-endpoint-formula.md) | 74 | `result-track:05534264c66f274c7a87bba6e541aa8b6d492521ee448f79d4e706317bf92adf` |
-| 4 | `theorem` | [endpoint_minus_norm_le](../../../../GeneralTopology/SourceActualBumpVerticalBudgetNamespaced.lean/declarations/endpoint-minus-norm-le.md) | 92 | `result-track:8fd8ef2ef7f069e1603ec09a5b330929e7d5ad04e90e4a7a3efe1575a1bf84ab` |
-| 5 | `theorem` | [endpoint_plus_norm_le](../../../../GeneralTopology/SourceActualBumpVerticalBudgetNamespaced.lean/declarations/endpoint-plus-norm-le.md) | 107 | `result-track:a79df39ff475a6ca368c5686269a986178c2cc7fbc8c55077d232b773d0690c8` |
-| 6 | `theorem` | [actual_bump_vertical_norm_le](../../../../GeneralTopology/SourceActualBumpVerticalBudgetNamespaced.lean/declarations/actual-bump-vertical-norm-le.md) | 114 | `result-track:7b59c78704695a3830591de9181b2f74d4d4f4ceef84849c6e37f41330749713` |
+| 1 | `def` | [endpointPrimitive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceActualBumpVerticalBudgetNamespaced.lean/declarations/endpointprimitive.md) | 25 | `declaration-track:e049fc605edabcb7769ba609e80ba77a7d6d0b41bbc6cefec9f6893c7a3fd84c` |
+| 2 | `theorem` | [endpoint_antiderivative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceActualBumpVerticalBudgetNamespaced.lean/declarations/endpoint-antiderivative.md) | 37 | `result-track:a18ec46cf1f8260fcb4e55597e3934398fc0145cf58bfc9e6e56d8f6d7042c4a` |
+| 3 | `theorem` | [bump_laplace_endpoint_formula](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceActualBumpVerticalBudgetNamespaced.lean/declarations/bump-laplace-endpoint-formula.md) | 74 | `result-track:05534264c66f274c7a87bba6e541aa8b6d492521ee448f79d4e706317bf92adf` |
+| 4 | `theorem` | [endpoint_minus_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceActualBumpVerticalBudgetNamespaced.lean/declarations/endpoint-minus-norm-le.md) | 92 | `result-track:8fd8ef2ef7f069e1603ec09a5b330929e7d5ad04e90e4a7a3efe1575a1bf84ab` |
+| 5 | `theorem` | [endpoint_plus_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceActualBumpVerticalBudgetNamespaced.lean/declarations/endpoint-plus-norm-le.md) | 107 | `result-track:a79df39ff475a6ca368c5686269a986178c2cc7fbc8c55077d232b773d0690c8` |
+| 6 | `theorem` | [actual_bump_vertical_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceActualBumpVerticalBudgetNamespaced.lean/declarations/actual-bump-vertical-norm-le.md) | 114 | `result-track:7b59c78704695a3830591de9181b2f74d4d4f4ceef84849c6e37f41330749713` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

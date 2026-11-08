@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/GadgetPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/GadgetPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/GadgetPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/GadgetPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [assertGadget](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/GadgetPublic.lean/declarations/assertgadget.md) | 29 | `declaration-track:c61d97982c9cc4abcfd32a2a92f8ce95bcc0338f1a77a49af09243ab02c52243` |
-| 2 | `theorem` | [Spec.assertGadget](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/GadgetPublic.lean/declarations/spec-assertgadget.md) | 34 | `result-track:27a975cb04661c91b97f4a82381cc5ec49a4b0bf3ac243b55cdad7d90c0c31f0` |
+| 1 | `def` | [assertGadget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/GadgetPublic.lean/declarations/assertgadget.md) | 29 | `declaration-track:c61d97982c9cc4abcfd32a2a92f8ce95bcc0338f1a77a49af09243ab02c52243` |
+| 2 | `theorem` | [Spec.assertGadget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/GadgetPublic.lean/declarations/spec-assertgadget.md) | 34 | `result-track:27a975cb04661c91b97f4a82381cc5ec49a4b0bf3ac243b55cdad7d90c0c31f0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

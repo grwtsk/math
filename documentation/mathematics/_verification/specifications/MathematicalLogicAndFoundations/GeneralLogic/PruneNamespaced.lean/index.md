@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PruneNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PruneNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PruneNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PruneNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PruneAdmissible](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PruneNamespaced.lean/declarations/pruneadmissible.md) | 17 | `declaration-track:6f1bd0506659c6b39e644c7d31a44a06a876a8233887edc693e7d05f9721477e` |
-| 2 | `def` | [phase37Prune](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PruneNamespaced.lean/declarations/phase37prune.md) | 25 | `declaration-track:e0fffa48cfd3e94d925cb8cef7b508dd01054d273e14acba10104e2013645920` |
-| 3 | `theorem` | [phase37Prune_preservesWeight](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PruneNamespaced.lean/declarations/phase37prune-preservesweight.md) | 33 | `result-track:352379bf8fee8fba6ef681d6692fd24773f767c0d2cd132f1bb5a5207dfca48d` |
+| 1 | `structure` | [PruneAdmissible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PruneNamespaced.lean/declarations/pruneadmissible.md) | 17 | `declaration-track:6f1bd0506659c6b39e644c7d31a44a06a876a8233887edc693e7d05f9721477e` |
+| 2 | `def` | [phase37Prune](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PruneNamespaced.lean/declarations/phase37prune.md) | 25 | `declaration-track:e0fffa48cfd3e94d925cb8cef7b508dd01054d273e14acba10104e2013645920` |
+| 3 | `theorem` | [phase37Prune_preservesWeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PruneNamespaced.lean/declarations/phase37prune-preservesweight.md) | 33 | `result-track:352379bf8fee8fba6ef681d6692fd24773f767c0d2cd132f1bb5a5207dfca48d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

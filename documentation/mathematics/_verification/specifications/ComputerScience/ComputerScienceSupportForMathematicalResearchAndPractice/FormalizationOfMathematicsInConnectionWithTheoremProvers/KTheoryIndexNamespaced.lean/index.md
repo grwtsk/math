@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KTheoryIndexNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KTheoryIndexNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KTheoryIndexNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KTheoryIndexNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [ktheory_index_class_of_perfect_complex](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KTheoryIndexNamespaced.lean/declarations/ktheory-index-class-of-perfect-complex.md) | 27 | `result-track:abf19c36093328205e456f78d7bcb785bd47a6eee7f7e1fc1579776d0e011fc2` |
-| 2 | `theorem` | [ktheory_index_has_class](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KTheoryIndexNamespaced.lean/declarations/ktheory-index-has-class.md) | 33 | `result-track:da139938c7249fb939d8299f5525ecc629bd0e2abc3e8a8a9a8d94253718e436` |
+| 1 | `theorem` | [ktheory_index_class_of_perfect_complex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KTheoryIndexNamespaced.lean/declarations/ktheory-index-class-of-perfect-complex.md) | 27 | `result-track:abf19c36093328205e456f78d7bcb785bd47a6eee7f7e1fc1579776d0e011fc2` |
+| 2 | `theorem` | [ktheory_index_has_class](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KTheoryIndexNamespaced.lean/declarations/ktheory-index-has-class.md) | 33 | `result-track:da139938c7249fb939d8299f5525ecc629bd0e2abc3e8a8a9a8d94253718e436` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

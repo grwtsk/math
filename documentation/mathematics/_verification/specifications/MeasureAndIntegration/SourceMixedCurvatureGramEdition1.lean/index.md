@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceMixedCurvatureGramEdition1.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceMixedCurvatureGramEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceMixedCurvatureGramEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceMixedCurvatureGramEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_source_shift_product_integrable](../../../../MeasureAndIntegration/SourceMixedCurvatureGramEdition1.lean/declarations/actual-source-shift-product-integrable.md) | 32 | `result-track:cbeaa799fb40deed6e5a499f7a72686ce8723fff56ba93eae1d913f102e6478a` |
-| 2 | `theorem` | [actual_deriv_shift_product_integrable](../../../../MeasureAndIntegration/SourceMixedCurvatureGramEdition1.lean/declarations/actual-deriv-shift-product-integrable.md) | 40 | `result-track:f6daf8277235d8c8bafe4e01ba7a877ba35af6c9ea5ea3c78984f24eca4333b7` |
-| 3 | `theorem` | [actual_correlation_at_difference_eq](../../../../MeasureAndIntegration/SourceMixedCurvatureGramEdition1.lean/declarations/actual-correlation-at-difference-eq.md) | 49 | `result-track:ee5b6ed41f542c469c51871716aad9df00796ba352c92af2557636f11df704dc` |
-| 4 | `theorem` | [actual_curvature_at_difference_eq](../../../../MeasureAndIntegration/SourceMixedCurvatureGramEdition1.lean/declarations/actual-curvature-at-difference-eq.md) | 65 | `result-track:5f7a00f3d22c5ce8a65ca62c74b806006dd9cfde8574f5aa8d6dea301da6bde2` |
-| 5 | `theorem` | [integral_finite_square](../../../../MeasureAndIntegration/SourceMixedCurvatureGramEdition1.lean/declarations/integral-finite-square.md) | 86 | `result-track:f564ff7202e13b330562c84e8c327a6dd2046f6453e92195d729a4ed77db20d2` |
-| 6 | `theorem` | [actual_mixed_curvature_finite_gram_eq_neg_squares](../../../../MeasureAndIntegration/SourceMixedCurvatureGramEdition1.lean/declarations/actual-mixed-curvature-finite-gram-eq-neg-squares.md) | 115 | `result-track:cfd5d8257484d472f3934f850d727d207927286768bc6ea86a95e20b22a545b9` |
-| 7 | `theorem` | [actual_mixed_curvature_finite_gram_nonpos](../../../../MeasureAndIntegration/SourceMixedCurvatureGramEdition1.lean/declarations/actual-mixed-curvature-finite-gram-nonpos.md) | 137 | `result-track:51f649dbea8b16f0217d536b3107eb8214fa1b6a55d13e7020e4ca52b59721f9` |
+| 1 | `theorem` | [actual_source_shift_product_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceMixedCurvatureGramEdition1.lean/declarations/actual-source-shift-product-integrable.md) | 32 | `result-track:cbeaa799fb40deed6e5a499f7a72686ce8723fff56ba93eae1d913f102e6478a` |
+| 2 | `theorem` | [actual_deriv_shift_product_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceMixedCurvatureGramEdition1.lean/declarations/actual-deriv-shift-product-integrable.md) | 40 | `result-track:f6daf8277235d8c8bafe4e01ba7a877ba35af6c9ea5ea3c78984f24eca4333b7` |
+| 3 | `theorem` | [actual_correlation_at_difference_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceMixedCurvatureGramEdition1.lean/declarations/actual-correlation-at-difference-eq.md) | 49 | `result-track:ee5b6ed41f542c469c51871716aad9df00796ba352c92af2557636f11df704dc` |
+| 4 | `theorem` | [actual_curvature_at_difference_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceMixedCurvatureGramEdition1.lean/declarations/actual-curvature-at-difference-eq.md) | 65 | `result-track:5f7a00f3d22c5ce8a65ca62c74b806006dd9cfde8574f5aa8d6dea301da6bde2` |
+| 5 | `theorem` | [integral_finite_square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceMixedCurvatureGramEdition1.lean/declarations/integral-finite-square.md) | 86 | `result-track:f564ff7202e13b330562c84e8c327a6dd2046f6453e92195d729a4ed77db20d2` |
+| 6 | `theorem` | [actual_mixed_curvature_finite_gram_eq_neg_squares](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceMixedCurvatureGramEdition1.lean/declarations/actual-mixed-curvature-finite-gram-eq-neg-squares.md) | 115 | `result-track:cfd5d8257484d472f3934f850d727d207927286768bc6ea86a95e20b22a545b9` |
+| 7 | `theorem` | [actual_mixed_curvature_finite_gram_nonpos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceMixedCurvatureGramEdition1.lean/declarations/actual-mixed-curvature-finite-gram-nonpos.md) | 137 | `result-track:51f649dbea8b16f0217d536b3107eb8214fa1b6a55d13e7020e4ca52b59721f9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

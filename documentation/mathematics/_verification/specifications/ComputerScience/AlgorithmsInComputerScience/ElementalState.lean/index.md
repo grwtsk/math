@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ElementalState.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ElementalState.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ElementalState.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ElementalState.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ElementalState](../../../../../ComputerScience/AlgorithmsInComputerScience/ElementalState.lean/declarations/elementalstate.md) | 14 | `declaration-track:ee2f560be53143d4c2eccafed6ada8e13ecb58364ef0a20f44d345e71338e40b` |
-| 2 | `structure` | [EmbeddingObservation](../../../../../ComputerScience/AlgorithmsInComputerScience/ElementalState.lean/declarations/embeddingobservation.md) | 26 | `declaration-track:19fa984c0b3a42608a0ff2b81cc899e1d19016dbcc9bec7ddeb9a97579f2a648` |
+| 1 | `structure` | [ElementalState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ElementalState.lean/declarations/elementalstate.md) | 14 | `declaration-track:ee2f560be53143d4c2eccafed6ada8e13ecb58364ef0a20f44d345e71338e40b` |
+| 2 | `structure` | [EmbeddingObservation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ElementalState.lean/declarations/embeddingobservation.md) | 26 | `declaration-track:19fa984c0b3a42608a0ff2b81cc899e1d19016dbcc9bec7ddeb9a97579f2a648` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

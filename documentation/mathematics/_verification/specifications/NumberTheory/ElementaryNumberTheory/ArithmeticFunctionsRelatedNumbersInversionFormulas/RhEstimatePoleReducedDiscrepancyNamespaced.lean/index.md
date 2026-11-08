@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RhEstimatePoleReducedDiscrepancyNamespaced.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RhEstimatePoleReducedDiscrepancyNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RhEstimatePoleReducedDiscrepancyNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RhEstimatePoleReducedDiscrepancyNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RhEstimatePoleReducedDiscrepancyNamespaced.lean/declarations/example.md) | 18 | `declaration-track:0c155a88f6424b0b3cfdb89ec8f3565cb4886a1d3d54991bcb9ee8c336bd02ee` |
-| 2 | `example` | [(anonymous)](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RhEstimatePoleReducedDiscrepancyNamespaced.lean/declarations/example-source-edition-2.md) | 27 | `declaration-track:8ebad7b2a79083225e60665fad46ca3e6b3ad63edd01456b33e63863fa6a502b` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RhEstimatePoleReducedDiscrepancyNamespaced.lean/declarations/example.md) | 18 | `declaration-track:0c155a88f6424b0b3cfdb89ec8f3565cb4886a1d3d54991bcb9ee8c336bd02ee` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RhEstimatePoleReducedDiscrepancyNamespaced.lean/declarations/example-source-edition-2.md) | 27 | `declaration-track:8ebad7b2a79083225e60665fad46ca3e6b3ad63edd01456b33e63863fa6a502b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

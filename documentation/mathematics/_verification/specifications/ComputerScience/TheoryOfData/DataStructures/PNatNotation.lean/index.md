@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatNotation.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatNotation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/PNatNotation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/PNatNotation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [PNat](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatNotation.lean/declarations/pnat.md) | 14 | `declaration-track:d4279ac16dc15ba659a8bb93976432e1193737a8c78c528410953775bf68f19f` |
-| 2 | `def` | [PNat.val](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatNotation.lean/declarations/pnat-val.md) | 21 | `declaration-track:8b8e9728bd539ed45e22e9e89880bf876bf1aea6a6b25533e04b4bd5832be09d` |
-| 3 | `instance` | [coePNatNat](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatNotation.lean/declarations/coepnatnat.md) | 23 | `declaration-track:5a95b1ad627acf36e2288087a869b06fc13941b2e68e21ed9f7026b5f8c20013` |
-| 4 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatNotation.lean/declarations/instance.md) | 26 | `declaration-track:432da5132d59fcbb618de36390663cdf761a1c3550a5fc429fab25de185723bc` |
+| 1 | `def` | [PNat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/PNatNotation.lean/declarations/pnat.md) | 14 | `declaration-track:d4279ac16dc15ba659a8bb93976432e1193737a8c78c528410953775bf68f19f` |
+| 2 | `def` | [PNat.val](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/PNatNotation.lean/declarations/pnat-val.md) | 21 | `declaration-track:8b8e9728bd539ed45e22e9e89880bf876bf1aea6a6b25533e04b4bd5832be09d` |
+| 3 | `instance` | [coePNatNat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/PNatNotation.lean/declarations/coepnatnat.md) | 23 | `declaration-track:5a95b1ad627acf36e2288087a869b06fc13941b2e68e21ed9f7026b5f8c20013` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/PNatNotation.lean/declarations/instance.md) | 26 | `declaration-track:432da5132d59fcbb618de36390663cdf761a1c3550a5fc429fab25de185723bc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

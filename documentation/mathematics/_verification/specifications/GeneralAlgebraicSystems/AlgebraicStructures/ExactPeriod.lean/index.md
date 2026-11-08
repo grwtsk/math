@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ExactPeriod.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ExactPeriod.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ExactPeriod.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ExactPeriod.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exact_period_of_hasOrder_and_faithful](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ExactPeriod.lean/declarations/exact-period-of-hasorder-and-faithful.md) | 21 | `result-track:8005ff5af4ad39186f57fd0d353f7bc010a7c112cb2cafe780e283f311f323f2` |
+| 1 | `theorem` | [exact_period_of_hasOrder_and_faithful](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ExactPeriod.lean/declarations/exact-period-of-hasorder-and-faithful.md) | 21 | `result-track:8005ff5af4ad39186f57fd0d353f7bc010a7c112cb2cafe780e283f311f323f2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

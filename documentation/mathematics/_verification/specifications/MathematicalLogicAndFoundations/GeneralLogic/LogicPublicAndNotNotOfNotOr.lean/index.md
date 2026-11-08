@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LogicPublicAndNotNotOfNotOr.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LogicPublicAndNotNotOfNotOr.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LogicPublicAndNotNotOfNotOr.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LogicPublicAndNotNotOfNotOr.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [and_not_not_of_not_or](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LogicPublicAndNotNotOfNotOr.lean/declarations/and-not-not-of-not-or.md) | 24 | `result-track:e2c4564e02e89297f8fdbbc0d8a5cc8a4c3dd9e3721828a4c87b6c68339a96de` |
-| 2 | `theorem` | [Decidable.or_not_not_of_not_and](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LogicPublicAndNotNotOfNotOr.lean/declarations/decidable-or-not-not-of-not-and.md) | 26 | `result-track:ea10c6124458201d80b2c2f5e9db253c94d3c0f8ce7f39ada939a2fe2754684b` |
-| 3 | `theorem` | [Decidable.and_or_not_and_not_of_iff](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LogicPublicAndNotNotOfNotOr.lean/declarations/decidable-and-or-not-and-not-of-iff.md) | 30 | `result-track:517f88b12fcc1885ddeba57f62e924c49f04829a72a2ca6e084fdf84770994a6` |
-| 4 | `theorem` | [Decidable.not_iff_iff_and_not_or_not_and](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LogicPublicAndNotNotOfNotOr.lean/declarations/decidable-not-iff-iff-and-not-or-not-and.md) | 33 | `result-track:ca319b25b5a6c5d4cc3084edb7c96f12f4cf31f92787108ec9bc0bc6e53a6e89` |
-| 5 | `theorem` | [Decidable.and_not_or_not_and_of_not_iff](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LogicPublicAndNotNotOfNotOr.lean/declarations/decidable-and-not-or-not-and-of-not-iff.md) | 41 | `result-track:e59465a45a87a85bc9876264d018cd75bd6578d3275f8a0e3f1aa05ec578cec0` |
-| 6 | `theorem` | [Decidable.and_not_of_not_imp](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LogicPublicAndNotNotOfNotOr.lean/declarations/decidable-and-not-of-not-imp.md) | 45 | `result-track:d7dd583f0e2d9409eb73996145796a3249fcf9062d5098d7519e4f24d8bc5ae8` |
-| 7 | `theorem` | [ite_disjunction](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LogicPublicAndNotNotOfNotOr.lean/declarations/ite-disjunction.md) | 48 | `result-track:3477d5fb1be5010af531e53034ed777038f73af4b8b64ac568ccf3e5e14501ca` |
+| 1 | `theorem` | [and_not_not_of_not_or](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LogicPublicAndNotNotOfNotOr.lean/declarations/and-not-not-of-not-or.md) | 24 | `result-track:e2c4564e02e89297f8fdbbc0d8a5cc8a4c3dd9e3721828a4c87b6c68339a96de` |
+| 2 | `theorem` | [Decidable.or_not_not_of_not_and](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LogicPublicAndNotNotOfNotOr.lean/declarations/decidable-or-not-not-of-not-and.md) | 26 | `result-track:ea10c6124458201d80b2c2f5e9db253c94d3c0f8ce7f39ada939a2fe2754684b` |
+| 3 | `theorem` | [Decidable.and_or_not_and_not_of_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LogicPublicAndNotNotOfNotOr.lean/declarations/decidable-and-or-not-and-not-of-iff.md) | 30 | `result-track:517f88b12fcc1885ddeba57f62e924c49f04829a72a2ca6e084fdf84770994a6` |
+| 4 | `theorem` | [Decidable.not_iff_iff_and_not_or_not_and](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LogicPublicAndNotNotOfNotOr.lean/declarations/decidable-not-iff-iff-and-not-or-not-and.md) | 33 | `result-track:ca319b25b5a6c5d4cc3084edb7c96f12f4cf31f92787108ec9bc0bc6e53a6e89` |
+| 5 | `theorem` | [Decidable.and_not_or_not_and_of_not_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LogicPublicAndNotNotOfNotOr.lean/declarations/decidable-and-not-or-not-and-of-not-iff.md) | 41 | `result-track:e59465a45a87a85bc9876264d018cd75bd6578d3275f8a0e3f1aa05ec578cec0` |
+| 6 | `theorem` | [Decidable.and_not_of_not_imp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LogicPublicAndNotNotOfNotOr.lean/declarations/decidable-and-not-of-not-imp.md) | 45 | `result-track:d7dd583f0e2d9409eb73996145796a3249fcf9062d5098d7519e4f24d8bc5ae8` |
+| 7 | `theorem` | [ite_disjunction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LogicPublicAndNotNotOfNotOr.lean/declarations/ite-disjunction.md) | 48 | `result-track:3477d5fb1be5010af531e53034ed777038f73af4b8b64ac568ccf3e5e14501ca` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

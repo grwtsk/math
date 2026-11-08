@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/LimitAction.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/LimitAction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/LimitAction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/LimitAction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ProjectiveAutomorphismSystem](../../../../ProbabilityTheoryAndStochasticProcesses/LimitAction.lean/declarations/projectiveautomorphismsystem.md) | 19 | `declaration-track:5c274f58b5f5470b5162e9b3a4eb03c08c4109c5483af278972e26da9fc22f08` |
-| 2 | `structure` | [CompatibleLimitAutomorphism](../../../../ProbabilityTheoryAndStochasticProcesses/LimitAction.lean/declarations/compatiblelimitautomorphism.md) | 78 | `declaration-track:a14cc4286c01105a287e09c8378494776b19738881160c386b0da0440a9149d6` |
-| 3 | `structure` | [LimitAutomorphismAction](../../../../ProbabilityTheoryAndStochasticProcesses/LimitAction.lean/declarations/limitautomorphismaction.md) | 98 | `declaration-track:d5991e7cc3b8547e4b59fb7a4bc6bd006d5d450c4b1a0b87fd8e57d9b030f393` |
-| 4 | `theorem` | [limit_automorphism_preserves_boundary_law](../../../../ProbabilityTheoryAndStochasticProcesses/LimitAction.lean/declarations/limit-automorphism-preserves-boundary-law.md) | 134 | `result-track:b14266ffadddc33eea9f46848d1b1dfab565ff2f78e35f814ebabeb10a4b71ae` |
+| 1 | `structure` | [ProjectiveAutomorphismSystem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/LimitAction.lean/declarations/projectiveautomorphismsystem.md) | 19 | `declaration-track:5c274f58b5f5470b5162e9b3a4eb03c08c4109c5483af278972e26da9fc22f08` |
+| 2 | `structure` | [CompatibleLimitAutomorphism](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/LimitAction.lean/declarations/compatiblelimitautomorphism.md) | 78 | `declaration-track:a14cc4286c01105a287e09c8378494776b19738881160c386b0da0440a9149d6` |
+| 3 | `structure` | [LimitAutomorphismAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/LimitAction.lean/declarations/limitautomorphismaction.md) | 98 | `declaration-track:d5991e7cc3b8547e4b59fb7a4bc6bd006d5d450c4b1a0b87fd8e57d9b030f393` |
+| 4 | `theorem` | [limit_automorphism_preserves_boundary_law](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/LimitAction.lean/declarations/limit-automorphism-preserves-boundary-law.md) | 134 | `result-track:b14266ffadddc33eea9f46848d1b1dfab565ff2f78e35f814ebabeb10a4b71ae` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

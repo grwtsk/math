@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ReferenceGraphNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ReferenceGraphNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReferenceGraphNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReferenceGraphNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ModuleId](../../../../../ComputerScience/AlgorithmsInComputerScience/ReferenceGraphNamespaced.lean/declarations/moduleid.md) | 26 | `declaration-track:0da47b7b2154a91bc9d21f81fbf2bc7ef91aad005c37fac7fdf1801b8029dd38` |
-| 2 | `structure` | [DeclarationId](../../../../../ComputerScience/AlgorithmsInComputerScience/ReferenceGraphNamespaced.lean/declarations/declarationid.md) | 30 | `declaration-track:1ee9d352a21f6a18de862400006390ba24e876909e76542acc8662621117419b` |
-| 3 | `inductive` | [ReferenceKind](../../../../../ComputerScience/AlgorithmsInComputerScience/ReferenceGraphNamespaced.lean/declarations/referencekind.md) | 35 | `declaration-track:86f956c8c4e89eda95d0b7e6099505982cb7e17b666de6cab1ee7da53c695998` |
-| 4 | `structure` | [ReferenceEdge](../../../../../ComputerScience/AlgorithmsInComputerScience/ReferenceGraphNamespaced.lean/declarations/referenceedge.md) | 44 | `declaration-track:9b6aa0a107bd655f8be7acf3efd305f591f9b6aace88582dab381d4cee8011f0` |
-| 5 | `structure` | [ReferenceGraph](../../../../../ComputerScience/AlgorithmsInComputerScience/ReferenceGraphNamespaced.lean/declarations/referencegraph.md) | 51 | `declaration-track:b0aa2ffd063cc6cf22122d2c63dd27ec4da4a69287d7a551df8674e103463956` |
-| 6 | `def` | [inboundWeight](../../../../../ComputerScience/AlgorithmsInComputerScience/ReferenceGraphNamespaced.lean/declarations/inboundweight.md) | 56 | `declaration-track:9d4f737681af66d425e5323b7f2c95f81bea32c3cd82c8c12068330cce46f671` |
-| 7 | `def` | [outboundWeight](../../../../../ComputerScience/AlgorithmsInComputerScience/ReferenceGraphNamespaced.lean/declarations/outboundweight.md) | 62 | `declaration-track:3645af8052da691e6d7dff9644e0c8969e06ef9527e5946b7b3acc6741e774bf` |
+| 1 | `structure` | [ModuleId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReferenceGraphNamespaced.lean/declarations/moduleid.md) | 26 | `declaration-track:0da47b7b2154a91bc9d21f81fbf2bc7ef91aad005c37fac7fdf1801b8029dd38` |
+| 2 | `structure` | [DeclarationId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReferenceGraphNamespaced.lean/declarations/declarationid.md) | 30 | `declaration-track:1ee9d352a21f6a18de862400006390ba24e876909e76542acc8662621117419b` |
+| 3 | `inductive` | [ReferenceKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReferenceGraphNamespaced.lean/declarations/referencekind.md) | 35 | `declaration-track:86f956c8c4e89eda95d0b7e6099505982cb7e17b666de6cab1ee7da53c695998` |
+| 4 | `structure` | [ReferenceEdge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReferenceGraphNamespaced.lean/declarations/referenceedge.md) | 44 | `declaration-track:9b6aa0a107bd655f8be7acf3efd305f591f9b6aace88582dab381d4cee8011f0` |
+| 5 | `structure` | [ReferenceGraph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReferenceGraphNamespaced.lean/declarations/referencegraph.md) | 51 | `declaration-track:b0aa2ffd063cc6cf22122d2c63dd27ec4da4a69287d7a551df8674e103463956` |
+| 6 | `def` | [inboundWeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReferenceGraphNamespaced.lean/declarations/inboundweight.md) | 56 | `declaration-track:9d4f737681af66d425e5323b7f2c95f81bea32c3cd82c8c12068330cce46f671` |
+| 7 | `def` | [outboundWeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReferenceGraphNamespaced.lean/declarations/outboundweight.md) | 62 | `declaration-track:3645af8052da691e6d7dff9644e0c8969e06ef9527e5946b7b3acc6741e774bf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

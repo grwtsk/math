@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/MultiplicativeNumberTheory/PNTPsiBoundsNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/MultiplicativeNumberTheory/PNTPsiBoundsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/PNTPsiBoundsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/PNTPsiBoundsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [allChecks_11723_slope111_100](../../../../../NumberTheory/MultiplicativeNumberTheory/PNTPsiBoundsNamespaced.lean/declarations/allchecks-11723-slope111-100.md) | 36 | `result-track:b03d347b3e86babff019e917ab049714d3fad404aa4879f83ed6721a00db7045` |
-| 2 | `theorem` | [checkPsiLeMul_le_11723](../../../../../NumberTheory/MultiplicativeNumberTheory/PNTPsiBoundsNamespaced.lean/declarations/checkpsilemul-le-11723.md) | 41 | `result-track:9d5516cfa8ccfc01aa2516e447f478f8548dbd4885d66aeea3d9e96e5956e248` |
-| 3 | `theorem` | [psi_le_nat](../../../../../NumberTheory/MultiplicativeNumberTheory/PNTPsiBoundsNamespaced.lean/declarations/psi-le-nat.md) | 48 | `result-track:03bbc4752c9c0c88ba2bf4796f3970955c53fa2044b076446279f4bc4bd677af` |
-| 4 | `theorem` | [psi_le_mul_11723](../../../../../NumberTheory/MultiplicativeNumberTheory/PNTPsiBoundsNamespaced.lean/declarations/psi-le-mul-11723.md) | 57 | `result-track:5c6584ab456780009afea6600aafe1644a60bf335914133279d267943123b304` |
+| 1 | `theorem` | [allChecks_11723_slope111_100](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/PNTPsiBoundsNamespaced.lean/declarations/allchecks-11723-slope111-100.md) | 36 | `result-track:b03d347b3e86babff019e917ab049714d3fad404aa4879f83ed6721a00db7045` |
+| 2 | `theorem` | [checkPsiLeMul_le_11723](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/PNTPsiBoundsNamespaced.lean/declarations/checkpsilemul-le-11723.md) | 41 | `result-track:9d5516cfa8ccfc01aa2516e447f478f8548dbd4885d66aeea3d9e96e5956e248` |
+| 3 | `theorem` | [psi_le_nat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/PNTPsiBoundsNamespaced.lean/declarations/psi-le-nat.md) | 48 | `result-track:03bbc4752c9c0c88ba2bf4796f3970955c53fa2044b076446279f4bc4bd677af` |
+| 4 | `theorem` | [psi_le_mul_11723](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/PNTPsiBoundsNamespaced.lean/declarations/psi-le-mul-11723.md) | 57 | `result-track:5c6584ab456780009afea6600aafe1644a60bf335914133279d267943123b304` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

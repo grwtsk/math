@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/RhGevreyInitial.lean/index.md) · [Full source](../../../../MeasureAndIntegration/RhGevreyInitial.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RhGevreyInitial.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RhGevreyInitial.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RhGevreyInitial.lean/declarations/example-source-edition-7.md) | 10 | `declaration-track:dcb6396ba6152b54f323f72b86228935c9fcf24eae5d23dce9cbf2d42fc65014` |
-| 2 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RhGevreyInitial.lean/declarations/example.md) | 17 | `declaration-track:0377304fc547e0fa2bd1e50e4be529261c58917062206b5523e4b0951519a768` |
-| 3 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RhGevreyInitial.lean/declarations/example-source-edition-6.md) | 24 | `declaration-track:d5378dec67682c480b2f78f90677bb74c90121c3dab1b31bc13a0e0896d13bd8` |
-| 4 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RhGevreyInitial.lean/declarations/example-source-edition-2.md) | 28 | `declaration-track:1565338aa896ff44ae1951e867d845dc4a53607f6424f8230b7c2bec0635f342` |
-| 5 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RhGevreyInitial.lean/declarations/example-source-edition-9.md) | 33 | `declaration-track:fa6f81eed87b3342f499eb4b6a4524a2db306b562b753d8e4083520721b4cd2a` |
-| 6 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RhGevreyInitial.lean/declarations/example-source-edition-4.md) | 43 | `declaration-track:6f70584bc99ddf1fa12ed92e813058cf4e4f911f858b223c91fedd9bd8d24518` |
-| 7 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RhGevreyInitial.lean/declarations/example-source-edition-5.md) | 49 | `declaration-track:992e6d7e67759227a3e96ad60dbd99fe7e5a22a9a5219df3ba4450a471a708ea` |
-| 8 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RhGevreyInitial.lean/declarations/example-source-edition-8.md) | 54 | `declaration-track:f265d3518a771f8a649afb7f0e5fdaeee1a5ed5e9467f4e6ab03b4a2529ad8f8` |
-| 9 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RhGevreyInitial.lean/declarations/example-source-edition-3.md) | 58 | `declaration-track:2717a8e737edc652b3e6c08666988297ff4f7d5888f358184addca9c5e4d77c0` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RhGevreyInitial.lean/declarations/example-source-edition-7.md) | 10 | `declaration-track:dcb6396ba6152b54f323f72b86228935c9fcf24eae5d23dce9cbf2d42fc65014` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RhGevreyInitial.lean/declarations/example.md) | 17 | `declaration-track:0377304fc547e0fa2bd1e50e4be529261c58917062206b5523e4b0951519a768` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RhGevreyInitial.lean/declarations/example-source-edition-6.md) | 24 | `declaration-track:d5378dec67682c480b2f78f90677bb74c90121c3dab1b31bc13a0e0896d13bd8` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RhGevreyInitial.lean/declarations/example-source-edition-2.md) | 28 | `declaration-track:1565338aa896ff44ae1951e867d845dc4a53607f6424f8230b7c2bec0635f342` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RhGevreyInitial.lean/declarations/example-source-edition-9.md) | 33 | `declaration-track:fa6f81eed87b3342f499eb4b6a4524a2db306b562b753d8e4083520721b4cd2a` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RhGevreyInitial.lean/declarations/example-source-edition-4.md) | 43 | `declaration-track:6f70584bc99ddf1fa12ed92e813058cf4e4f911f858b223c91fedd9bd8d24518` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RhGevreyInitial.lean/declarations/example-source-edition-5.md) | 49 | `declaration-track:992e6d7e67759227a3e96ad60dbd99fe7e5a22a9a5219df3ba4450a471a708ea` |
+| 8 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RhGevreyInitial.lean/declarations/example-source-edition-8.md) | 54 | `declaration-track:f265d3518a771f8a649afb7f0e5fdaeee1a5ed5e9467f4e6ab03b4a2529ad8f8` |
+| 9 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RhGevreyInitial.lean/declarations/example-source-edition-3.md) | 58 | `declaration-track:2717a8e737edc652b3e6c08666988297ff4f7d5888f358184addca9c5e4d77c0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

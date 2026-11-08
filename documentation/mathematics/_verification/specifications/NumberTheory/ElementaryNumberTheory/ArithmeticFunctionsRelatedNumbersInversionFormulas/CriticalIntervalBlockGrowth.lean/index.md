@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CriticalIntervalBlockGrowth.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CriticalIntervalBlockGrowth.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CriticalIntervalBlockGrowth.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CriticalIntervalBlockGrowth.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Moebius.ReciprocalPrefixKernel`](../../../../../../MeasureAndIntegration/ReciprocalPrefixKernel.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.ReciprocalPrefixKernel`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReciprocalPrefixKernel.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.NumberTheory.Harmonic.Bounds` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [pickupMertensPrefix_abs_le_natCast](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CriticalIntervalBlockGrowth.lean/declarations/pickupmertensprefix-abs-le-natcast.md) | 30 | `result-track:1c3bd7d6503d8b153a17091cf03ed935c877160beffdc5c1feab94290f5531b5` |
-| 2 | `theorem` | [pickupWeightedPrefix_abs_le_two_sqrt](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CriticalIntervalBlockGrowth.lean/declarations/pickupweightedprefix-abs-le-two-sqrt.md) | 47 | `result-track:d4b6290315fa5951356140c1697cb127f01a70597dc651c0e572f8988aabf863` |
-| 3 | `theorem` | [criticalIntervalBlock_le_harmonic](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CriticalIntervalBlockGrowth.lean/declarations/criticalintervalblock-le-harmonic.md) | 56 | `result-track:7905aa29a53ede166a3b3bddbe066303c16f311e244f7c830d5536872f11c51d` |
-| 4 | `theorem` | [criticalIntervalBlockSum_le_harmonic](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CriticalIntervalBlockGrowth.lean/declarations/criticalintervalblocksum-le-harmonic.md) | 108 | `result-track:52195dc7e63df41274dae044ea39e8c71191566e64210f07aed50f20d38ffa43` |
-| 5 | `theorem` | [criticalIntervalBlockSum_le_log](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CriticalIntervalBlockGrowth.lean/declarations/criticalintervalblocksum-le-log.md) | 123 | `result-track:fb24d6deb480e90bad55937ab93e26ae7bac769a215cd4b3af3d28e9abf30f5d` |
+| 1 | `theorem` | [pickupMertensPrefix_abs_le_natCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CriticalIntervalBlockGrowth.lean/declarations/pickupmertensprefix-abs-le-natcast.md) | 30 | `result-track:1c3bd7d6503d8b153a17091cf03ed935c877160beffdc5c1feab94290f5531b5` |
+| 2 | `theorem` | [pickupWeightedPrefix_abs_le_two_sqrt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CriticalIntervalBlockGrowth.lean/declarations/pickupweightedprefix-abs-le-two-sqrt.md) | 47 | `result-track:d4b6290315fa5951356140c1697cb127f01a70597dc651c0e572f8988aabf863` |
+| 3 | `theorem` | [criticalIntervalBlock_le_harmonic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CriticalIntervalBlockGrowth.lean/declarations/criticalintervalblock-le-harmonic.md) | 56 | `result-track:7905aa29a53ede166a3b3bddbe066303c16f311e244f7c830d5536872f11c51d` |
+| 4 | `theorem` | [criticalIntervalBlockSum_le_harmonic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CriticalIntervalBlockGrowth.lean/declarations/criticalintervalblocksum-le-harmonic.md) | 108 | `result-track:52195dc7e63df41274dae044ea39e8c71191566e64210f07aed50f20d38ffa43` |
+| 5 | `theorem` | [criticalIntervalBlockSum_le_log](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CriticalIntervalBlockGrowth.lean/declarations/criticalintervalblocksum-le-log.md) | 123 | `result-track:fb24d6deb480e90bad55937ab93e26ae7bac769a215cd4b3af3d28e9abf30f5d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

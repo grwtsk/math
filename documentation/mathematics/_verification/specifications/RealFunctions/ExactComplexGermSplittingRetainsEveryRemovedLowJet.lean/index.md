@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/ExactComplexGermSplittingRetainsEveryRemovedLowJet.lean/index.md) · [Full source](../../../../RealFunctions/ExactComplexGermSplittingRetainsEveryRemovedLowJet.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExactComplexGermSplittingRetainsEveryRemovedLowJet.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExactComplexGermSplittingRetainsEveryRemovedLowJet.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exact_germ_jet_split](../../../../RealFunctions/ExactComplexGermSplittingRetainsEveryRemovedLowJet.lean/declarations/exact-germ-jet-split.md) | 26 | `result-track:8d9a21dd5dd93b6267a0fbca81fb04c7d5a244dd69ca62cd6142a43887f2ebb1` |
-| 2 | `theorem` | [vanishing_high_jet_is_retained](../../../../RealFunctions/ExactComplexGermSplittingRetainsEveryRemovedLowJet.lean/declarations/vanishing-high-jet-is-retained.md) | 34 | `result-track:9fd5443dfffa90bc453522ff29080b9121afa38482b6ad208da0b003f142b4f1` |
-| 3 | `theorem` | [all_low_jets_conserved](../../../../RealFunctions/ExactComplexGermSplittingRetainsEveryRemovedLowJet.lean/declarations/all-low-jets-conserved.md) | 42 | `result-track:d5a33869a9c163db4cf779feac17f6db27d8862776f005cc6b0a5789efea2fc4` |
-| 4 | `theorem` | [nonzero_source_germ_cannot_have_two_zero_children](../../../../RealFunctions/ExactComplexGermSplittingRetainsEveryRemovedLowJet.lean/declarations/nonzero-source-germ-cannot-have-two-zero-children.md) | 49 | `result-track:04dc89cd20d25e19d8581eed20147d38997f745e7992816d832224e904212702` |
+| 1 | `theorem` | [exact_germ_jet_split](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExactComplexGermSplittingRetainsEveryRemovedLowJet.lean/declarations/exact-germ-jet-split.md) | 26 | `result-track:8d9a21dd5dd93b6267a0fbca81fb04c7d5a244dd69ca62cd6142a43887f2ebb1` |
+| 2 | `theorem` | [vanishing_high_jet_is_retained](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExactComplexGermSplittingRetainsEveryRemovedLowJet.lean/declarations/vanishing-high-jet-is-retained.md) | 34 | `result-track:9fd5443dfffa90bc453522ff29080b9121afa38482b6ad208da0b003f142b4f1` |
+| 3 | `theorem` | [all_low_jets_conserved](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExactComplexGermSplittingRetainsEveryRemovedLowJet.lean/declarations/all-low-jets-conserved.md) | 42 | `result-track:d5a33869a9c163db4cf779feac17f6db27d8862776f005cc6b0a5789efea2fc4` |
+| 4 | `theorem` | [nonzero_source_germ_cannot_have_two_zero_children](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExactComplexGermSplittingRetainsEveryRemovedLowJet.lean/declarations/nonzero-source-germ-cannot-have-two-zero-children.md) | 49 | `result-track:04dc89cd20d25e19d8581eed20147d38997f745e7992816d832224e904212702` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/AffineShift.lean/index.md) · [Full source](../../../../RealFunctions/AffineShift.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AffineShift.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AffineShift.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [AffineCriticalShift](../../../../RealFunctions/AffineShift.lean/declarations/affinecriticalshift.md) | 46 | `declaration-track:dd507f7736aa670e9f6fb9d14ece9f915515ed013d8a8c750bcffd9bb2612edc` |
-| 2 | `def` | [AffineCriticalShift.normalize](../../../../RealFunctions/AffineShift.lean/declarations/affinecriticalshift-normalize.md) | 52 | `declaration-track:e6b218caa887a91bd6b14a4c309ee6f523684aac4152d31df76adfe332278cdc` |
-| 3 | `theorem` | [affine_shift_sends_raw_to_spectral](../../../../RealFunctions/AffineShift.lean/declarations/affine-shift-sends-raw-to-spectral.md) | 58 | `result-track:52028be8b57d9de982adee2827346eb34dc87f3cae4d348921769b215d8af088` |
+| 1 | `structure` | [AffineCriticalShift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AffineShift.lean/declarations/affinecriticalshift.md) | 46 | `declaration-track:dd507f7736aa670e9f6fb9d14ece9f915515ed013d8a8c750bcffd9bb2612edc` |
+| 2 | `def` | [AffineCriticalShift.normalize](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AffineShift.lean/declarations/affinecriticalshift-normalize.md) | 52 | `declaration-track:e6b218caa887a91bd6b14a4c309ee6f523684aac4152d31df76adfe332278cdc` |
+| 3 | `theorem` | [affine_shift_sends_raw_to_spectral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AffineShift.lean/declarations/affine-shift-sends-raw-to-spectral.md) | 58 | `result-track:52028be8b57d9de982adee2827346eb34dc87f3cae4d348921769b215d8af088` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

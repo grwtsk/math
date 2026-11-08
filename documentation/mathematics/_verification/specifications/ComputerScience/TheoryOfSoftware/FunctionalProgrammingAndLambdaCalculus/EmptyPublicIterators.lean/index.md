@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/EmptyPublicIterators.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/EmptyPublicIterators.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/EmptyPublicIterators.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/EmptyPublicIterators.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Iterators.Types.Empty](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/EmptyPublicIterators.lean/declarations/iterators-types-empty.md) | 24 | `declaration-track:169aedf7263dfe0440e08fe891714dc896a4087586a7b9e14c4375dbeff2d0d6` |
-| 2 | `def` | [IterM.empty](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/EmptyPublicIterators.lean/declarations/iterm-empty.md) | 36 | `declaration-track:33f3a37024278306548b85414b5297d1ecdb2e6ae2b341464d8bff3f362c7966` |
-| 3 | `def` | [Empty.PlausibleStep](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/EmptyPublicIterators.lean/declarations/empty-plausiblestep.md) | 41 | `declaration-track:889c8849829435c83691f599bd41fc1316773dc2a529419606b8cbddbb51c8b9` |
-| 4 | `instance` | [Empty.instIterator](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/EmptyPublicIterators.lean/declarations/empty-institerator.md) | 45 | `declaration-track:5dbbcddf047319b8e7096b97383f4bd5f82950543673bbb60613e53bbf841de4` |
-| 5 | `def` | [Empty.instFinitenessRelation](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/EmptyPublicIterators.lean/declarations/empty-instfinitenessrelation.md) | 49 | `declaration-track:099d5535e4fb70ec3006225cd440076b26d672de166cab27638104d5c26a9bfa` |
-| 6 | `instance` | [Empty.instFinite](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/EmptyPublicIterators.lean/declarations/empty-instfinite.md) | 58 | `declaration-track:705b32bf9b2181b52fe927ab8b8a93fd3ba1910d32baf92932d6a8837c75dcff` |
-| 7 | `instance` | [Empty.instIteratorLoop](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/EmptyPublicIterators.lean/declarations/empty-institeratorloop.md) | 61 | `declaration-track:b214eeb99c113612e21abfb441db3b56894b8eeecac362b1b69f9f7abff5b565` |
+| 1 | `structure` | [Iterators.Types.Empty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/EmptyPublicIterators.lean/declarations/iterators-types-empty.md) | 24 | `declaration-track:169aedf7263dfe0440e08fe891714dc896a4087586a7b9e14c4375dbeff2d0d6` |
+| 2 | `def` | [IterM.empty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/EmptyPublicIterators.lean/declarations/iterm-empty.md) | 36 | `declaration-track:33f3a37024278306548b85414b5297d1ecdb2e6ae2b341464d8bff3f362c7966` |
+| 3 | `def` | [Empty.PlausibleStep](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/EmptyPublicIterators.lean/declarations/empty-plausiblestep.md) | 41 | `declaration-track:889c8849829435c83691f599bd41fc1316773dc2a529419606b8cbddbb51c8b9` |
+| 4 | `instance` | [Empty.instIterator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/EmptyPublicIterators.lean/declarations/empty-institerator.md) | 45 | `declaration-track:5dbbcddf047319b8e7096b97383f4bd5f82950543673bbb60613e53bbf841de4` |
+| 5 | `def` | [Empty.instFinitenessRelation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/EmptyPublicIterators.lean/declarations/empty-instfinitenessrelation.md) | 49 | `declaration-track:099d5535e4fb70ec3006225cd440076b26d672de166cab27638104d5c26a9bfa` |
+| 6 | `instance` | [Empty.instFinite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/EmptyPublicIterators.lean/declarations/empty-instfinite.md) | 58 | `declaration-track:705b32bf9b2181b52fe927ab8b8a93fd3ba1910d32baf92932d6a8837c75dcff` |
+| 7 | `instance` | [Empty.instIteratorLoop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/EmptyPublicIterators.lean/declarations/empty-institeratorloop.md) | 61 | `declaration-track:b214eeb99c113612e21abfb441db3b56894b8eeecac362b1b69f9f7abff5b565` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

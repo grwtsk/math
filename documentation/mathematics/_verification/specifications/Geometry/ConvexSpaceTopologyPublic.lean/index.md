@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Geometry/ConvexSpaceTopologyPublic.lean/index.md) · [Full source](../../../../Geometry/ConvexSpaceTopologyPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/ConvexSpaceTopologyPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/ConvexSpaceTopologyPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,19 +57,19 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [topologicalSpaceInduced](../../../../Geometry/ConvexSpaceTopologyPublic.lean/declarations/topologicalspaceinduced.md) | 34 | `declaration-track:3aa2c0ad6b48dc39c2d7dbaac19771194fbf3daee1c6f9aebcd50aa9adf91358` |
-| 2 | `lemma` | [continuous_iff](../../../../Geometry/ConvexSpaceTopologyPublic.lean/declarations/continuous-iff-source-edition-2.md) | 41 | `result-track:9825dd99ec749c2eb10514f6fdf20e046a1c9d1b855725bbd2c48d18823fa811` |
-| 3 | `lemma` | [continuous_weights_apply](../../../../Geometry/ConvexSpaceTopologyPublic.lean/declarations/continuous-weights-apply.md) | 47 | `result-track:76e5fa88cbb0fb081a86f691a1140674914c17fe8b9402ab2ef36e9f7dba0e62` |
-| 4 | `lemma` | [continuous_map_weights_apply](../../../../Geometry/ConvexSpaceTopologyPublic.lean/declarations/continuous-map-weights-apply.md) | 53 | `result-track:e47bb8b1760fa2946634f64b9e2e32ef4fe56c6008aa5b39921da54af31566f5` |
-| 5 | `lemma` | [continuous_map](../../../../Geometry/ConvexSpaceTopologyPublic.lean/declarations/continuous-map-source-edition-2.md) | 70 | `result-track:2eeb28cbe151d3d5bc7bff816e69cb6e2e788deb706cb2a2090dde977d031794` |
-| 6 | `instance` | [topologicalSpace](../../../../Geometry/ConvexSpaceTopologyPublic.lean/declarations/topologicalspace.md) | 89 | `declaration-track:ff4f4b4c461ffa57ae470ab03e3bc9f147ca92233bcb4e2220819fbbabdb6690` |
-| 7 | `lemma` | [topologicalSpace_eq](../../../../Geometry/ConvexSpaceTopologyPublic.lean/declarations/topologicalspace-eq.md) | 93 | `result-track:791dee2aa3ca523bbc890c7184fb19c58d31fc1bd9e3a6c1299586bd889ae31c` |
-| 8 | `lemma` | [continuous_iff](../../../../Geometry/ConvexSpaceTopologyPublic.lean/declarations/continuous-iff.md) | 105 | `result-track:453fa042739723905df064b37b585fb904f9fd33d6afa4bd42721151a25ac05e` |
-| 9 | `lemma` | [continuous_map](../../../../Geometry/ConvexSpaceTopologyPublic.lean/declarations/continuous-map.md) | 118 | `result-track:24508b0d3cf3c57d6a88313dd1b1c4a6ac5b70024ce8cbadc5e60a2caaecb5dd` |
-| 10 | `lemma` | [continuous_iff'](../../../../Geometry/ConvexSpaceTopologyPublic.lean/declarations/continuous-iff-source-edition-3.md) | 142 | `result-track:c0059d49a65a866243010006e489d1a49c8b9464e0f34c30532ab4620e0522c3` |
-| 11 | `lemma` | [continuous_weights_apply](../../../../Geometry/ConvexSpaceTopologyPublic.lean/declarations/continuous-weights-apply-source-edition-2.md) | 153 | `result-track:7eda06ec3c3661db95c39416697f0bc6aad62fda16022c9d8415d7da0022d772` |
-| 12 | `lemma` | [isEmbedding_toFun_comp_weights](../../../../Geometry/ConvexSpaceTopologyPublic.lean/declarations/isembedding-tofun-comp-weights.md) | 160 | `result-track:cc0409796903244c88a5c3011a6aaabc8ff9b304d2c62f4f83769337d2fc19e7` |
-| 13 | `lemma` | [isClosedEmbedding_toFun_comp_weights](../../../../Geometry/ConvexSpaceTopologyPublic.lean/declarations/isclosedembedding-tofun-comp-weights.md) | 165 | `result-track:e21e37009c5f75283f0a3b3277f2b492ec22b3af1e7a81cd537a7e6b39912016` |
+| 1 | `abbrev` | [topologicalSpaceInduced](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/ConvexSpaceTopologyPublic.lean/declarations/topologicalspaceinduced.md) | 34 | `declaration-track:3aa2c0ad6b48dc39c2d7dbaac19771194fbf3daee1c6f9aebcd50aa9adf91358` |
+| 2 | `lemma` | [continuous_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/ConvexSpaceTopologyPublic.lean/declarations/continuous-iff-source-edition-2.md) | 41 | `result-track:9825dd99ec749c2eb10514f6fdf20e046a1c9d1b855725bbd2c48d18823fa811` |
+| 3 | `lemma` | [continuous_weights_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/ConvexSpaceTopologyPublic.lean/declarations/continuous-weights-apply.md) | 47 | `result-track:76e5fa88cbb0fb081a86f691a1140674914c17fe8b9402ab2ef36e9f7dba0e62` |
+| 4 | `lemma` | [continuous_map_weights_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/ConvexSpaceTopologyPublic.lean/declarations/continuous-map-weights-apply.md) | 53 | `result-track:e47bb8b1760fa2946634f64b9e2e32ef4fe56c6008aa5b39921da54af31566f5` |
+| 5 | `lemma` | [continuous_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/ConvexSpaceTopologyPublic.lean/declarations/continuous-map-source-edition-2.md) | 70 | `result-track:2eeb28cbe151d3d5bc7bff816e69cb6e2e788deb706cb2a2090dde977d031794` |
+| 6 | `instance` | [topologicalSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/ConvexSpaceTopologyPublic.lean/declarations/topologicalspace.md) | 89 | `declaration-track:ff4f4b4c461ffa57ae470ab03e3bc9f147ca92233bcb4e2220819fbbabdb6690` |
+| 7 | `lemma` | [topologicalSpace_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/ConvexSpaceTopologyPublic.lean/declarations/topologicalspace-eq.md) | 93 | `result-track:791dee2aa3ca523bbc890c7184fb19c58d31fc1bd9e3a6c1299586bd889ae31c` |
+| 8 | `lemma` | [continuous_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/ConvexSpaceTopologyPublic.lean/declarations/continuous-iff.md) | 105 | `result-track:453fa042739723905df064b37b585fb904f9fd33d6afa4bd42721151a25ac05e` |
+| 9 | `lemma` | [continuous_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/ConvexSpaceTopologyPublic.lean/declarations/continuous-map.md) | 118 | `result-track:24508b0d3cf3c57d6a88313dd1b1c4a6ac5b70024ce8cbadc5e60a2caaecb5dd` |
+| 10 | `lemma` | [continuous_iff'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/ConvexSpaceTopologyPublic.lean/declarations/continuous-iff-source-edition-3.md) | 142 | `result-track:c0059d49a65a866243010006e489d1a49c8b9464e0f34c30532ab4620e0522c3` |
+| 11 | `lemma` | [continuous_weights_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/ConvexSpaceTopologyPublic.lean/declarations/continuous-weights-apply-source-edition-2.md) | 153 | `result-track:7eda06ec3c3661db95c39416697f0bc6aad62fda16022c9d8415d7da0022d772` |
+| 12 | `lemma` | [isEmbedding_toFun_comp_weights](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/ConvexSpaceTopologyPublic.lean/declarations/isembedding-tofun-comp-weights.md) | 160 | `result-track:cc0409796903244c88a5c3011a6aaabc8ff9b304d2c62f4f83769337d2fc19e7` |
+| 13 | `lemma` | [isClosedEmbedding_toFun_comp_weights](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/ConvexSpaceTopologyPublic.lean/declarations/isclosedembedding-tofun-comp-weights.md) | 165 | `result-track:e21e37009c5f75283f0a3b3277f2b492ec22b3af1e7a81cd537a7e6b39912016` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/UnknownLedger.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/UnknownLedger.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/UnknownLedger.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/UnknownLedger.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [OpenAnalyticalBridge](../../../../../ComputerScience/AlgorithmsInComputerScience/UnknownLedger.lean/declarations/openanalyticalbridge.md) | 11 | `declaration-track:829f8b8f214e6c69f744197a0634fe12c7cd9e7dfa43559b461e44cb0b54cf6c` |
-| 2 | `def` | [openAnalyticalBridges](../../../../../ComputerScience/AlgorithmsInComputerScience/UnknownLedger.lean/declarations/openanalyticalbridges.md) | 58 | `declaration-track:ad149c0644ece3dec6f013268d727fabe6284076f2084762d4653a1c327a9181` |
-| 3 | `inductive` | [ObligationState](../../../../../ComputerScience/AlgorithmsInComputerScience/UnknownLedger.lean/declarations/obligationstate.md) | 105 | `declaration-track:57dada1ec4bafbabfa2be5e28fb0b329e61fd83784a83f91b342c7e0355de3c5` |
-| 4 | `structure` | [OpenBridgeStatus](../../../../../ComputerScience/AlgorithmsInComputerScience/UnknownLedger.lean/declarations/openbridgestatus.md) | 109 | `declaration-track:255d8fc1d46dfd012507fa4e38e32aeaab0aa7c2ee7a783efffddfd63c06baf8` |
-| 5 | `def` | [openBridgeStatus](../../../../../ComputerScience/AlgorithmsInComputerScience/UnknownLedger.lean/declarations/openbridgestatus-source-edition-2.md) | 115 | `declaration-track:41c56fc71c5e8c46784450f1ecf0d1c0432331014672f64f44cbefdb6975f4ac` |
-| 6 | `theorem` | [hardy_capacity_relation_is_open](../../../../../ComputerScience/AlgorithmsInComputerScience/UnknownLedger.lean/declarations/hardy-capacity-relation-is-open.md) | 123 | `result-track:256e35740ebc8cb7186dd4923732c163f6ab7acbd22e5961943f53595e6be607` |
-| 7 | `theorem` | [sonin_capacity_relation_is_open](../../../../../ComputerScience/AlgorithmsInComputerScience/UnknownLedger.lean/declarations/sonin-capacity-relation-is-open.md) | 127 | `result-track:b1a256261d0a34256053bec6bcc543f97d075cd75435d12e2f95eef9b9198518` |
-| 8 | `theorem` | [arithmetic_correspondence_is_open](../../../../../ComputerScience/AlgorithmsInComputerScience/UnknownLedger.lean/declarations/arithmetic-correspondence-is-open.md) | 131 | `result-track:d8e6b02eee0cbbe4edef098270d0d39811e0c42704c53050d84ebeaddb221f9d` |
+| 1 | `inductive` | [OpenAnalyticalBridge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/UnknownLedger.lean/declarations/openanalyticalbridge.md) | 11 | `declaration-track:829f8b8f214e6c69f744197a0634fe12c7cd9e7dfa43559b461e44cb0b54cf6c` |
+| 2 | `def` | [openAnalyticalBridges](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/UnknownLedger.lean/declarations/openanalyticalbridges.md) | 58 | `declaration-track:ad149c0644ece3dec6f013268d727fabe6284076f2084762d4653a1c327a9181` |
+| 3 | `inductive` | [ObligationState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/UnknownLedger.lean/declarations/obligationstate.md) | 105 | `declaration-track:57dada1ec4bafbabfa2be5e28fb0b329e61fd83784a83f91b342c7e0355de3c5` |
+| 4 | `structure` | [OpenBridgeStatus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/UnknownLedger.lean/declarations/openbridgestatus.md) | 109 | `declaration-track:255d8fc1d46dfd012507fa4e38e32aeaab0aa7c2ee7a783efffddfd63c06baf8` |
+| 5 | `def` | [openBridgeStatus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/UnknownLedger.lean/declarations/openbridgestatus-source-edition-2.md) | 115 | `declaration-track:41c56fc71c5e8c46784450f1ecf0d1c0432331014672f64f44cbefdb6975f4ac` |
+| 6 | `theorem` | [hardy_capacity_relation_is_open](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/UnknownLedger.lean/declarations/hardy-capacity-relation-is-open.md) | 123 | `result-track:256e35740ebc8cb7186dd4923732c163f6ab7acbd22e5961943f53595e6be607` |
+| 7 | `theorem` | [sonin_capacity_relation_is_open](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/UnknownLedger.lean/declarations/sonin-capacity-relation-is-open.md) | 127 | `result-track:b1a256261d0a34256053bec6bcc543f97d075cd75435d12e2f95eef9b9198518` |
+| 8 | `theorem` | [arithmetic_correspondence_is_open](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/UnknownLedger.lean/declarations/arithmetic-correspondence-is-open.md) | 131 | `result-track:d8e6b02eee0cbbe4edef098270d0d39811e0c42704c53050d84ebeaddb221f9d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

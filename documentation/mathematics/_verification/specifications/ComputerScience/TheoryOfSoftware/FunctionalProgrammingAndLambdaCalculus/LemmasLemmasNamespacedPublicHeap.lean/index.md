@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNamespacedPublicHeap.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNamespacedPublicHeap.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNamespacedPublicHeap.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNamespacedPublicHeap.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Heap.findMin_val](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNamespacedPublicHeap.lean/declarations/heap-findmin-val.md) | 23 | `result-track:850434273275749668209cd9d9ab326b63632f0c43b2ba619043bc465fb68b45` |
-| 2 | `theorem` | [Heap.deleteMin_fst](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNamespacedPublicHeap.lean/declarations/heap-deletemin-fst.md) | 28 | `result-track:d99d039dc93774a34b432a844e84dd73dda80f4c0800e3388c14be542031a5d2` |
-| 3 | `theorem` | [HeapNode.WF.realSize_eq](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNamespacedPublicHeap.lean/declarations/heapnode-wf-realsize-eq.md) | 33 | `result-track:0384c9646992f6ed4dd1d3343923ece4f819ac66ec40407e62b40974ed70de5c` |
-| 4 | `theorem` | [Heap.WF.size_eq](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNamespacedPublicHeap.lean/declarations/heap-wf-size-eq.md) | 40 | `result-track:224ae084763307e5e20dcd7d2ebc2d6ebc01d84cfc15f5bcae76da8e2efc2f48` |
+| 1 | `theorem` | [Heap.findMin_val](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNamespacedPublicHeap.lean/declarations/heap-findmin-val.md) | 23 | `result-track:850434273275749668209cd9d9ab326b63632f0c43b2ba619043bc465fb68b45` |
+| 2 | `theorem` | [Heap.deleteMin_fst](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNamespacedPublicHeap.lean/declarations/heap-deletemin-fst.md) | 28 | `result-track:d99d039dc93774a34b432a844e84dd73dda80f4c0800e3388c14be542031a5d2` |
+| 3 | `theorem` | [HeapNode.WF.realSize_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNamespacedPublicHeap.lean/declarations/heapnode-wf-realsize-eq.md) | 33 | `result-track:0384c9646992f6ed4dd1d3343923ece4f819ac66ec40407e62b40974ed70de5c` |
+| 4 | `theorem` | [Heap.WF.size_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNamespacedPublicHeap.lean/declarations/heap-wf-size-eq.md) | 40 | `result-track:224ae084763307e5e20dcd7d2ebc2d6ebc01d84cfc15f5bcae76da8e2efc2f48` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentCofactorZeroSign.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentCofactorZeroSign.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentCofactorZeroSign.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentCofactorZeroSign.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentMixedWeightClassification`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentMixedWeightClassification.lean/index.md) — import line 6; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentRankObstruction`](../../../../../MeasureAndIntegration/CanonicalSquareTentBombieriMomentRankObstruction.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentMixedWeightClassification`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentMixedWeightClassification.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentRankObstruction`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CanonicalSquareTentBombieriMomentRankObstruction.lean/index.md) — import line 7; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [cofactorZero_pos_of_ratio_order](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentCofactorZeroSign.lean/declarations/cofactorzero-pos-of-ratio-order.md) | 30 | `result-track:c7bb8afbf4a69aa671aa3d9bd0a03337e76cbfc0a9604141423fd647351e8f4f` |
-| 2 | `theorem` | [cofactorZero_ne_zero_of_ratio_order](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentCofactorZeroSign.lean/declarations/cofactorzero-ne-zero-of-ratio-order.md) | 47 | `result-track:c84aaaede12990c27534116f1d92164bfeabf459810fae21c52414e0323557c9` |
+| 1 | `theorem` | [cofactorZero_pos_of_ratio_order](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentCofactorZeroSign.lean/declarations/cofactorzero-pos-of-ratio-order.md) | 30 | `result-track:c7bb8afbf4a69aa671aa3d9bd0a03337e76cbfc0a9604141423fd647351e8f4f` |
+| 2 | `theorem` | [cofactorZero_ne_zero_of_ratio_order](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentCofactorZeroSign.lean/declarations/cofactorzero-ne-zero-of-ratio-order.md) | 47 | `result-track:c84aaaede12990c27534116f1d92164bfeabf459810fae21c52414e0323557c9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

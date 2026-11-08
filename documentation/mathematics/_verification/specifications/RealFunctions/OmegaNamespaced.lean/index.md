@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/OmegaNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/OmegaNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/OmegaNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/OmegaNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,22 +57,22 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [omegaW](../../../../RealFunctions/OmegaNamespaced.lean/declarations/omegaw.md) | 34 | `declaration-track:043e237f4bdb37d46068c2b732b273c5b00fb6695ca148339f292939d34a3566` |
-| 2 | `lemma` | [omegaW_def](../../../../RealFunctions/OmegaNamespaced.lean/declarations/omegaw-def.md) | 36 | `result-track:8c46c9a9631f5508fee17999debb7b709d652e55a519071a3127eeb150fb956e` |
-| 3 | `theorem` | [omegaW_analyticAt](../../../../RealFunctions/OmegaNamespaced.lean/declarations/omegaw-analyticat.md) | 38 | `result-track:2d6eb5a619092d770b10f66ba535bd9ebdd4854001dd2c27688b2f9f65f59070` |
-| 4 | `theorem` | [omegaW_analyticOnNhd](../../../../RealFunctions/OmegaNamespaced.lean/declarations/omegaw-analyticonnhd.md) | 41 | `result-track:b6cb2b113386bc3e33e3f8e3f96c049beab41952e1d4a0704afe86716c635d12` |
-| 5 | `theorem` | [omegaW_eq_zero_iff](../../../../RealFunctions/OmegaNamespaced.lean/declarations/omegaw-eq-zero-iff.md) | 44 | `result-track:b57f844870846b7930ed4413135d0b1db1a050f24780f633c93310a7ac6c5fea` |
-| 6 | `theorem` | [analyticOrderAt_omegaW](../../../../RealFunctions/OmegaNamespaced.lean/declarations/analyticorderat-omegaw.md) | 48 | `result-track:2d9a28c39d50f3763ee30866863414336338f8b3c7b6335e58080722a941123d` |
-| 7 | `theorem` | [analyticOrderNatAt_omegaW](../../../../RealFunctions/OmegaNamespaced.lean/declarations/analyticordernatat-omegaw.md) | 54 | `result-track:58434450c2ce54e6adda30d50428c46ce8577abeed2ac4898cd5d47d2e2aab67` |
-| 8 | `theorem` | [omegaW_one_sub](../../../../RealFunctions/OmegaNamespaced.lean/declarations/omegaw-one-sub.md) | 58 | `result-track:add8acdfa6d9565796155f733bffaa2d090026e5f700eb5b3ad8e037d90977a5` |
-| 9 | `theorem` | [omegaW_conj](../../../../RealFunctions/OmegaNamespaced.lean/declarations/omegaw-conj.md) | 63 | `result-track:c1a334ecf3d36edcb16dd6362de694a91dbcc86cef8be239bf18b26d1d17a1a6` |
-| 10 | `theorem` | [omegaW_differentiableAt](../../../../RealFunctions/OmegaNamespaced.lean/declarations/omegaw-differentiableat.md) | 66 | `result-track:5b5bbd35a98a5bbb2d3a55f1c98b8b1797c051d7b3ed0c493b04528265a86513` |
-| 11 | `theorem` | [deriv_omegaW_one_sub](../../../../RealFunctions/OmegaNamespaced.lean/declarations/deriv-omegaw-one-sub.md) | 70 | `result-track:87e486976106d4a336536df4ce4d4a3eb8dbcf3351720a198ee7d3b26940b547` |
-| 12 | `theorem` | [deriv_omegaW_conj](../../../../RealFunctions/OmegaNamespaced.lean/declarations/deriv-omegaw-conj.md) | 82 | `result-track:9f51109fde311835a137df9e256b7ccb7ebc054db905552349af463cb7a39ddc` |
-| 13 | `theorem` | [logDeriv_omegaW_one_sub](../../../../RealFunctions/OmegaNamespaced.lean/declarations/logderiv-omegaw-one-sub.md) | 88 | `result-track:772d0784368ca7a51e38215fa6c7498f645189479975011a73f391df2840cb26` |
-| 14 | `theorem` | [logDeriv_omegaW_conj](../../../../RealFunctions/OmegaNamespaced.lean/declarations/logderiv-omegaw-conj.md) | 91 | `result-track:ef0ab2b96700ae069b9a241b81c39104b8353d824402029deed53317fc08f5c9` |
-| 15 | `theorem` | [logDeriv_omegaW_one_sub_conj](../../../../RealFunctions/OmegaNamespaced.lean/declarations/logderiv-omegaw-one-sub-conj.md) | 96 | `result-track:16f065e0009d4717e050e8450644a24f05963c4de387dcd74985962a69c22eb1` |
-| 16 | `theorem` | [logDeriv_omegaW_eq](../../../../RealFunctions/OmegaNamespaced.lean/declarations/logderiv-omegaw-eq.md) | 102 | `result-track:8cbbd21cd59dc164ebcee59a615bdaeb1a96cc856531fae89070aed5750de691` |
+| 1 | `def` | [omegaW](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/OmegaNamespaced.lean/declarations/omegaw.md) | 34 | `declaration-track:043e237f4bdb37d46068c2b732b273c5b00fb6695ca148339f292939d34a3566` |
+| 2 | `lemma` | [omegaW_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/OmegaNamespaced.lean/declarations/omegaw-def.md) | 36 | `result-track:8c46c9a9631f5508fee17999debb7b709d652e55a519071a3127eeb150fb956e` |
+| 3 | `theorem` | [omegaW_analyticAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/OmegaNamespaced.lean/declarations/omegaw-analyticat.md) | 38 | `result-track:2d6eb5a619092d770b10f66ba535bd9ebdd4854001dd2c27688b2f9f65f59070` |
+| 4 | `theorem` | [omegaW_analyticOnNhd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/OmegaNamespaced.lean/declarations/omegaw-analyticonnhd.md) | 41 | `result-track:b6cb2b113386bc3e33e3f8e3f96c049beab41952e1d4a0704afe86716c635d12` |
+| 5 | `theorem` | [omegaW_eq_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/OmegaNamespaced.lean/declarations/omegaw-eq-zero-iff.md) | 44 | `result-track:b57f844870846b7930ed4413135d0b1db1a050f24780f633c93310a7ac6c5fea` |
+| 6 | `theorem` | [analyticOrderAt_omegaW](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/OmegaNamespaced.lean/declarations/analyticorderat-omegaw.md) | 48 | `result-track:2d9a28c39d50f3763ee30866863414336338f8b3c7b6335e58080722a941123d` |
+| 7 | `theorem` | [analyticOrderNatAt_omegaW](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/OmegaNamespaced.lean/declarations/analyticordernatat-omegaw.md) | 54 | `result-track:58434450c2ce54e6adda30d50428c46ce8577abeed2ac4898cd5d47d2e2aab67` |
+| 8 | `theorem` | [omegaW_one_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/OmegaNamespaced.lean/declarations/omegaw-one-sub.md) | 58 | `result-track:add8acdfa6d9565796155f733bffaa2d090026e5f700eb5b3ad8e037d90977a5` |
+| 9 | `theorem` | [omegaW_conj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/OmegaNamespaced.lean/declarations/omegaw-conj.md) | 63 | `result-track:c1a334ecf3d36edcb16dd6362de694a91dbcc86cef8be239bf18b26d1d17a1a6` |
+| 10 | `theorem` | [omegaW_differentiableAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/OmegaNamespaced.lean/declarations/omegaw-differentiableat.md) | 66 | `result-track:5b5bbd35a98a5bbb2d3a55f1c98b8b1797c051d7b3ed0c493b04528265a86513` |
+| 11 | `theorem` | [deriv_omegaW_one_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/OmegaNamespaced.lean/declarations/deriv-omegaw-one-sub.md) | 70 | `result-track:87e486976106d4a336536df4ce4d4a3eb8dbcf3351720a198ee7d3b26940b547` |
+| 12 | `theorem` | [deriv_omegaW_conj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/OmegaNamespaced.lean/declarations/deriv-omegaw-conj.md) | 82 | `result-track:9f51109fde311835a137df9e256b7ccb7ebc054db905552349af463cb7a39ddc` |
+| 13 | `theorem` | [logDeriv_omegaW_one_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/OmegaNamespaced.lean/declarations/logderiv-omegaw-one-sub.md) | 88 | `result-track:772d0784368ca7a51e38215fa6c7498f645189479975011a73f391df2840cb26` |
+| 14 | `theorem` | [logDeriv_omegaW_conj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/OmegaNamespaced.lean/declarations/logderiv-omegaw-conj.md) | 91 | `result-track:ef0ab2b96700ae069b9a241b81c39104b8353d824402029deed53317fc08f5c9` |
+| 15 | `theorem` | [logDeriv_omegaW_one_sub_conj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/OmegaNamespaced.lean/declarations/logderiv-omegaw-one-sub-conj.md) | 96 | `result-track:16f065e0009d4717e050e8450644a24f05963c4de387dcd74985962a69c22eb1` |
+| 16 | `theorem` | [logDeriv_omegaW_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/OmegaNamespaced.lean/declarations/logderiv-omegaw-eq.md) | 102 | `result-track:8cbbd21cd59dc164ebcee59a615bdaeb1a96cc856531fae89070aed5750de691` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/Compare.lean/index.md) · [Full source](../../../../CommutativeAlgebra/Compare.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Compare.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Compare.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,25 +59,25 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [eq_of_le_of_cast_pow_eq_zero](../../../../CommutativeAlgebra/Compare.lean/declarations/eq-of-le-of-cast-pow-eq-zero.md) | 41 | `result-track:bbc746cf4d90bbfaf294fded68fc405ce74177bb18ef3cef059a46e2bca7d9ea` |
-| 2 | `theorem` | [card_zmod](../../../../CommutativeAlgebra/Compare.lean/declarations/card-zmod.md) | 57 | `result-track:0c2e8aeaa557707c268a6d7c5af868bc6098ea1a8defbafc571a641fa7e49b23` |
-| 3 | `theorem` | [charP_zmod](../../../../CommutativeAlgebra/Compare.lean/declarations/charp-zmod.md) | 60 | `result-track:c4f688ff2dc285fa6fdfddcf6ebb7a85326adc64f5728c387a919a7c56f8fcd7` |
-| 4 | `def` | [zmodEquivTrunc](../../../../CommutativeAlgebra/Compare.lean/declarations/zmodequivtrunc.md) | 70 | `declaration-track:282f3a47ed06c2fc0eed43dd88944d9594b8a1eb84b15ec4ca7aaa95c7de695a` |
-| 5 | `theorem` | [zmodEquivTrunc_apply](../../../../CommutativeAlgebra/Compare.lean/declarations/zmodequivtrunc-apply.md) | 73 | `result-track:47cb7d315dfee03fe687bffa45dcc75272c605cb076f9dd85a025c82344c4ba1` |
-| 6 | `theorem` | [commutes](../../../../CommutativeAlgebra/Compare.lean/declarations/commutes.md) | 90 | `result-track:05afd98ae7fa9dc882bcbb4d788ba95d1f237df11352995ed184d7651f78a89d` |
-| 7 | `theorem` | [commutes'](../../../../CommutativeAlgebra/Compare.lean/declarations/commutes-source-edition-2.md) | 95 | `result-track:836b07f1fb2b1b80a47f4e796dbdb131bde511572f95d95a7bdcdd7f5fb77f2f` |
-| 8 | `theorem` | [commutes_symm'](../../../../CommutativeAlgebra/Compare.lean/declarations/commutes-symm-source-edition-2.md) | 99 | `result-track:c2517d100a1849ec8394f81cd7d62eb1a10bfe829b67e9154eeae835bafa418f` |
-| 9 | `theorem` | [commutes_symm](../../../../CommutativeAlgebra/Compare.lean/declarations/commutes-symm.md) | 118 | `result-track:4f2ff33fcaf27ca5691463f663a80cdafcc03271c801c6ec37707e207d5cc31c` |
-| 10 | `def` | [toZModPow](../../../../CommutativeAlgebra/Compare.lean/declarations/tozmodpow.md) | 135 | `declaration-track:9ce529b77048795168d869bb782a06872d77ce11e3f13401226331cb164b837e` |
-| 11 | `theorem` | [toZModPow_compat](../../../../CommutativeAlgebra/Compare.lean/declarations/tozmodpow-compat.md) | 138 | `result-track:8c680e12210ccf87ffb8306b3031352c2c76d89f7891ca57641ae3b7d417310d` |
-| 12 | `def` | [toPadicInt](../../../../CommutativeAlgebra/Compare.lean/declarations/topadicint.md) | 151 | `declaration-track:f45474e69295421d41bbf3b4a53a50c7eaacac2464afa3c61264ae1afc705eba` |
-| 13 | `theorem` | [zmodEquivTrunc_compat](../../../../CommutativeAlgebra/Compare.lean/declarations/zmodequivtrunc-compat.md) | 154 | `result-track:f8e2832b2044a40838f3a99ab56f1d4c5a15ab4e547dfa1bffe212d4b606c34b` |
-| 14 | `def` | [fromPadicInt](../../../../CommutativeAlgebra/Compare.lean/declarations/frompadicint.md) | 164 | `declaration-track:1c892adaaca9d7f973a9612857f97871777b5f6a1c8937a6d9bc05bca7a0a934` |
-| 15 | `theorem` | [toPadicInt_comp_fromPadicInt](../../../../CommutativeAlgebra/Compare.lean/declarations/topadicint-comp-frompadicint.md) | 168 | `result-track:09a8d4f63f6d087eca809fc1d28b04cb3f4fc81288335cea46a5390ad755c7e8` |
-| 16 | `theorem` | [toPadicInt_comp_fromPadicInt_ext](../../../../CommutativeAlgebra/Compare.lean/declarations/topadicint-comp-frompadicint-ext.md) | 176 | `result-track:05cfc63a686213a2752e2d08613a616d3186d568c89d503274cb3fed26ed75e2` |
-| 17 | `theorem` | [fromPadicInt_comp_toPadicInt](../../../../CommutativeAlgebra/Compare.lean/declarations/frompadicint-comp-topadicint.md) | 180 | `result-track:e201a7187d5023a36331a77101de25f998817a5e02f0bc0c8aa03c0126f75cd2` |
-| 18 | `theorem` | [fromPadicInt_comp_toPadicInt_ext](../../../../CommutativeAlgebra/Compare.lean/declarations/frompadicint-comp-topadicint-ext.md) | 188 | `result-track:8c051c435f2e2af9d90e22461932750b95cd30c41573fc59cf4c9eaadb96528c` |
-| 19 | `def` | [equiv](../../../../CommutativeAlgebra/Compare.lean/declarations/equiv.md) | 195 | `declaration-track:1df1fb025f99501fe98033f806ce492abc96c0de346c62fb881d3e3e0a191529` |
+| 1 | `theorem` | [eq_of_le_of_cast_pow_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Compare.lean/declarations/eq-of-le-of-cast-pow-eq-zero.md) | 41 | `result-track:bbc746cf4d90bbfaf294fded68fc405ce74177bb18ef3cef059a46e2bca7d9ea` |
+| 2 | `theorem` | [card_zmod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Compare.lean/declarations/card-zmod.md) | 57 | `result-track:0c2e8aeaa557707c268a6d7c5af868bc6098ea1a8defbafc571a641fa7e49b23` |
+| 3 | `theorem` | [charP_zmod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Compare.lean/declarations/charp-zmod.md) | 60 | `result-track:c4f688ff2dc285fa6fdfddcf6ebb7a85326adc64f5728c387a919a7c56f8fcd7` |
+| 4 | `def` | [zmodEquivTrunc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Compare.lean/declarations/zmodequivtrunc.md) | 70 | `declaration-track:282f3a47ed06c2fc0eed43dd88944d9594b8a1eb84b15ec4ca7aaa95c7de695a` |
+| 5 | `theorem` | [zmodEquivTrunc_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Compare.lean/declarations/zmodequivtrunc-apply.md) | 73 | `result-track:47cb7d315dfee03fe687bffa45dcc75272c605cb076f9dd85a025c82344c4ba1` |
+| 6 | `theorem` | [commutes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Compare.lean/declarations/commutes.md) | 90 | `result-track:05afd98ae7fa9dc882bcbb4d788ba95d1f237df11352995ed184d7651f78a89d` |
+| 7 | `theorem` | [commutes'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Compare.lean/declarations/commutes-source-edition-2.md) | 95 | `result-track:836b07f1fb2b1b80a47f4e796dbdb131bde511572f95d95a7bdcdd7f5fb77f2f` |
+| 8 | `theorem` | [commutes_symm'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Compare.lean/declarations/commutes-symm-source-edition-2.md) | 99 | `result-track:c2517d100a1849ec8394f81cd7d62eb1a10bfe829b67e9154eeae835bafa418f` |
+| 9 | `theorem` | [commutes_symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Compare.lean/declarations/commutes-symm.md) | 118 | `result-track:4f2ff33fcaf27ca5691463f663a80cdafcc03271c801c6ec37707e207d5cc31c` |
+| 10 | `def` | [toZModPow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Compare.lean/declarations/tozmodpow.md) | 135 | `declaration-track:9ce529b77048795168d869bb782a06872d77ce11e3f13401226331cb164b837e` |
+| 11 | `theorem` | [toZModPow_compat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Compare.lean/declarations/tozmodpow-compat.md) | 138 | `result-track:8c680e12210ccf87ffb8306b3031352c2c76d89f7891ca57641ae3b7d417310d` |
+| 12 | `def` | [toPadicInt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Compare.lean/declarations/topadicint.md) | 151 | `declaration-track:f45474e69295421d41bbf3b4a53a50c7eaacac2464afa3c61264ae1afc705eba` |
+| 13 | `theorem` | [zmodEquivTrunc_compat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Compare.lean/declarations/zmodequivtrunc-compat.md) | 154 | `result-track:f8e2832b2044a40838f3a99ab56f1d4c5a15ab4e547dfa1bffe212d4b606c34b` |
+| 14 | `def` | [fromPadicInt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Compare.lean/declarations/frompadicint.md) | 164 | `declaration-track:1c892adaaca9d7f973a9612857f97871777b5f6a1c8937a6d9bc05bca7a0a934` |
+| 15 | `theorem` | [toPadicInt_comp_fromPadicInt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Compare.lean/declarations/topadicint-comp-frompadicint.md) | 168 | `result-track:09a8d4f63f6d087eca809fc1d28b04cb3f4fc81288335cea46a5390ad755c7e8` |
+| 16 | `theorem` | [toPadicInt_comp_fromPadicInt_ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Compare.lean/declarations/topadicint-comp-frompadicint-ext.md) | 176 | `result-track:05cfc63a686213a2752e2d08613a616d3186d568c89d503274cb3fed26ed75e2` |
+| 17 | `theorem` | [fromPadicInt_comp_toPadicInt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Compare.lean/declarations/frompadicint-comp-topadicint.md) | 180 | `result-track:e201a7187d5023a36331a77101de25f998817a5e02f0bc0c8aa03c0126f75cd2` |
+| 18 | `theorem` | [fromPadicInt_comp_toPadicInt_ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Compare.lean/declarations/frompadicint-comp-topadicint-ext.md) | 188 | `result-track:8c051c435f2e2af9d90e22461932750b95cd30c41573fc59cf4c9eaadb96528c` |
+| 19 | `def` | [equiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Compare.lean/declarations/equiv.md) | 195 | `declaration-track:1df1fb025f99501fe98033f806ce492abc96c0de346c62fb881d3e3e0a191529` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/OrderArchimedeanDenseOfNotIsolatedZero.lean/index.md) · [Full source](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/OrderArchimedeanDenseOfNotIsolatedZero.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/OrderArchimedeanDenseOfNotIsolatedZero.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/OrderArchimedeanDenseOfNotIsolatedZero.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Rat.denseRange_cast](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/OrderArchimedeanDenseOfNotIsolatedZero.lean/declarations/rat-denserange-cast.md) | 29 | `result-track:492afd7fc30001dfe8a887994123625bd1dc9249184d60c68af909c7d8a0296d` |
-| 2 | `theorem` | [dense_of_not_isolated_zero](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/OrderArchimedeanDenseOfNotIsolatedZero.lean/declarations/dense-of-not-isolated-zero.md) | 42 | `result-track:bc6f22b59ce0c3ef282f3e9cf6a07a212ba265e1e9f6330d65a212ffeb82c88d` |
-| 3 | `theorem` | [dense_of_no_min](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/OrderArchimedeanDenseOfNotIsolatedZero.lean/declarations/dense-of-no-min.md) | 58 | `result-track:2824cf934d47d30a545996f7ac884a27bb052e2721bec8b9e32c6e1cecc170f2` |
-| 4 | `theorem` | [dense_or_cyclic](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/OrderArchimedeanDenseOfNotIsolatedZero.lean/declarations/dense-or-cyclic.md) | 67 | `result-track:10fcbdef9c7e4e46690f0a15a2b0dbbf9d802b0e676afc92a9246d7cdc98c722` |
+| 1 | `theorem` | [Rat.denseRange_cast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/OrderArchimedeanDenseOfNotIsolatedZero.lean/declarations/rat-denserange-cast.md) | 29 | `result-track:492afd7fc30001dfe8a887994123625bd1dc9249184d60c68af909c7d8a0296d` |
+| 2 | `theorem` | [dense_of_not_isolated_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/OrderArchimedeanDenseOfNotIsolatedZero.lean/declarations/dense-of-not-isolated-zero.md) | 42 | `result-track:bc6f22b59ce0c3ef282f3e9cf6a07a212ba265e1e9f6330d65a212ffeb82c88d` |
+| 3 | `theorem` | [dense_of_no_min](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/OrderArchimedeanDenseOfNotIsolatedZero.lean/declarations/dense-of-no-min.md) | 58 | `result-track:2824cf934d47d30a545996f7ac884a27bb052e2721bec8b9e32c6e1cecc170f2` |
+| 4 | `theorem` | [dense_or_cyclic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/OrderArchimedeanDenseOfNotIsolatedZero.lean/declarations/dense-or-cyclic.md) | 67 | `result-track:10fcbdef9c7e4e46690f0a15a2b0dbbf9d802b0e676afc92a9246d7cdc98c722` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

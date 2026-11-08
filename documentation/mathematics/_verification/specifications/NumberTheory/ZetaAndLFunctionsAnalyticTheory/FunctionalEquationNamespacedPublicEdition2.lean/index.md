@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FunctionalEquationNamespacedPublicEdition2.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FunctionalEquationNamespacedPublicEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FunctionalEquationNamespacedPublicEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FunctionalEquationNamespacedPublicEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [criticalReflection](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FunctionalEquationNamespacedPublicEdition2.lean/declarations/criticalreflection.md) | 38 | `declaration-track:97adef7e4e10865153935e78f0d058a7784d31e13be323165851a70cca575206` |
-| 2 | `theorem` | [criticalReflection_re](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FunctionalEquationNamespacedPublicEdition2.lean/declarations/criticalreflection-re.md) | 42 | `result-track:7cfdabe1c3c1f015a805b53cf40430a9fa5eb677b4ba905da22538cf05f148ff` |
-| 3 | `structure` | [PrimitiveFunctionalEquationSquare](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FunctionalEquationNamespacedPublicEdition2.lean/declarations/primitivefunctionalequationsquare.md) | 53 | `declaration-track:6897a81d9f6f32ef9c9af82c42f995ae7b84c59fd492a50ac308088e8555f758` |
-| 4 | `theorem` | [PrimitiveFunctionalEquationSquare.reflects_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FunctionalEquationNamespacedPublicEdition2.lean/declarations/primitivefunctionalequationsquare-reflects-zero.md) | 72 | `result-track:2f70dee3c29606671da8948e0e93e46f3fed1c0bc2b729f0b5f087fbacecf711` |
+| 1 | `def` | [criticalReflection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FunctionalEquationNamespacedPublicEdition2.lean/declarations/criticalreflection.md) | 38 | `declaration-track:97adef7e4e10865153935e78f0d058a7784d31e13be323165851a70cca575206` |
+| 2 | `theorem` | [criticalReflection_re](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FunctionalEquationNamespacedPublicEdition2.lean/declarations/criticalreflection-re.md) | 42 | `result-track:7cfdabe1c3c1f015a805b53cf40430a9fa5eb677b4ba905da22538cf05f148ff` |
+| 3 | `structure` | [PrimitiveFunctionalEquationSquare](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FunctionalEquationNamespacedPublicEdition2.lean/declarations/primitivefunctionalequationsquare.md) | 53 | `declaration-track:6897a81d9f6f32ef9c9af82c42f995ae7b84c59fd492a50ac308088e8555f758` |
+| 4 | `theorem` | [PrimitiveFunctionalEquationSquare.reflects_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FunctionalEquationNamespacedPublicEdition2.lean/declarations/primitivefunctionalequationsquare-reflects-zero.md) | 72 | `result-track:2f70dee3c29606671da8948e0e93e46f3fed1c0bc2b729f0b5f087fbacecf711` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

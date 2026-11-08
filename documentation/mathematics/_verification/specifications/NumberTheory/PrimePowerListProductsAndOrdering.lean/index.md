@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/PrimePowerListProductsAndOrdering.lean/index.md) · [Full source](../../../../NumberTheory/PrimePowerListProductsAndOrdering.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimePowerListProductsAndOrdering.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimePowerListProductsAndOrdering.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CellularArithmeticTree](../../../../NumberTheory/PrimePowerListProductsAndOrdering.lean/declarations/cellulararithmetictree.md) | 38 | `declaration-track:d4299f593bfdf48baebfd8a0287bed7450a528a2c10cd1ebce8ace1d4df32188` |
-| 2 | `def` | [decode](../../../../NumberTheory/PrimePowerListProductsAndOrdering.lean/declarations/decode.md) | 43 | `declaration-track:9d52c5c13ee3ea94830c7b9b81be1111152d98999b170e0bd8626d6f8a042e82` |
-| 3 | `def` | [PrimeStrictlyIncreasing](../../../../NumberTheory/PrimePowerListProductsAndOrdering.lean/declarations/primestrictlyincreasing.md) | 46 | `declaration-track:98a1e7d31bf82b178713d54e79bccb8f821c7eb49ba070abc4f69ff92401ead3` |
-| 4 | `def` | [Canonical](../../../../NumberTheory/PrimePowerListProductsAndOrdering.lean/declarations/canonical.md) | 50 | `declaration-track:726013f9550afaec9d78bc3eb4e0c87c589277dd6aafc078706edeef50dccc0d` |
-| 5 | `theorem` | [decode_empty](../../../../NumberTheory/PrimePowerListProductsAndOrdering.lean/declarations/decode-empty.md) | 55 | `result-track:6f07bdcb1953b1638227905d4fbf3a45b6dcb4e1d64899c692dbe612fddd2f6e` |
-| 6 | `theorem` | [decode_cons](../../../../NumberTheory/PrimePowerListProductsAndOrdering.lean/declarations/decode-cons.md) | 59 | `result-track:e7d413c37e9dbd2b597f52762bb74534a7fa6244ad0612a29adabe701d65cb96` |
+| 1 | `structure` | [CellularArithmeticTree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimePowerListProductsAndOrdering.lean/declarations/cellulararithmetictree.md) | 38 | `declaration-track:d4299f593bfdf48baebfd8a0287bed7450a528a2c10cd1ebce8ace1d4df32188` |
+| 2 | `def` | [decode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimePowerListProductsAndOrdering.lean/declarations/decode.md) | 43 | `declaration-track:9d52c5c13ee3ea94830c7b9b81be1111152d98999b170e0bd8626d6f8a042e82` |
+| 3 | `def` | [PrimeStrictlyIncreasing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimePowerListProductsAndOrdering.lean/declarations/primestrictlyincreasing.md) | 46 | `declaration-track:98a1e7d31bf82b178713d54e79bccb8f821c7eb49ba070abc4f69ff92401ead3` |
+| 4 | `def` | [Canonical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimePowerListProductsAndOrdering.lean/declarations/canonical.md) | 50 | `declaration-track:726013f9550afaec9d78bc3eb4e0c87c589277dd6aafc078706edeef50dccc0d` |
+| 5 | `theorem` | [decode_empty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimePowerListProductsAndOrdering.lean/declarations/decode-empty.md) | 55 | `result-track:6f07bdcb1953b1638227905d4fbf3a45b6dcb4e1d64899c692dbe612fddd2f6e` |
+| 6 | `theorem` | [decode_cons](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimePowerListProductsAndOrdering.lean/declarations/decode-cons.md) | 59 | `result-track:e7d413c37e9dbd2b597f52762bb74534a7fa6244ad0612a29adabe701d65cb96` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

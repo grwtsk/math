@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FieldTheoryAndPolynomials/AbsoluteGaloisGroupPublic.lean/index.md) · [Full source](../../../../FieldTheoryAndPolynomials/AbsoluteGaloisGroupPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/AbsoluteGaloisGroupPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/AbsoluteGaloisGroupPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [absoluteGaloisGroup](../../../../FieldTheoryAndPolynomials/AbsoluteGaloisGroupPublic.lean/declarations/absolutegaloisgroup.md) | 43 | `declaration-track:b98e0fcad9c8e049470a39f8d3d08fe13253738eea2045733c6d672771249fea` |
-| 2 | `def` | [absoluteGaloisGroup.mapOfAlgebra](../../../../FieldTheoryAndPolynomials/AbsoluteGaloisGroupPublic.lean/declarations/absolutegaloisgroup-mapofalgebra.md) | 60 | `declaration-track:2d7dcefad0a093211346c93cf6271a3b798b960a893aa328255fcf21583c9319` |
-| 3 | `def` | [absoluteGaloisGroup.map](../../../../FieldTheoryAndPolynomials/AbsoluteGaloisGroupPublic.lean/declarations/absolutegaloisgroup-map.md) | 88 | `declaration-track:521c13e2f57868462023bcbedce47efa75f8368b150fa096921dd306e1aa71d8` |
-| 4 | `instance` | [absoluteGaloisGroup.commutator_closure_isNormal](../../../../FieldTheoryAndPolynomials/AbsoluteGaloisGroupPublic.lean/declarations/absolutegaloisgroup-commutator-closure-isnormal.md) | 96 | `declaration-track:66548962aed5d143bfd26ffa8ffe52c403a2387be5dfd8e939327b9e276fba6f` |
-| 5 | `abbrev` | [absoluteGaloisGroupAbelianization](../../../../FieldTheoryAndPolynomials/AbsoluteGaloisGroupPublic.lean/declarations/absolutegaloisgroupabelianization.md) | 102 | `declaration-track:a97f124b456a5e22b8fe84094b06af1028cbb4404c875335c0833a6d5b59e9d4` |
+| 1 | `def` | [absoluteGaloisGroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/AbsoluteGaloisGroupPublic.lean/declarations/absolutegaloisgroup.md) | 43 | `declaration-track:b98e0fcad9c8e049470a39f8d3d08fe13253738eea2045733c6d672771249fea` |
+| 2 | `def` | [absoluteGaloisGroup.mapOfAlgebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/AbsoluteGaloisGroupPublic.lean/declarations/absolutegaloisgroup-mapofalgebra.md) | 60 | `declaration-track:2d7dcefad0a093211346c93cf6271a3b798b960a893aa328255fcf21583c9319` |
+| 3 | `def` | [absoluteGaloisGroup.map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/AbsoluteGaloisGroupPublic.lean/declarations/absolutegaloisgroup-map.md) | 88 | `declaration-track:521c13e2f57868462023bcbedce47efa75f8368b150fa096921dd306e1aa71d8` |
+| 4 | `instance` | [absoluteGaloisGroup.commutator_closure_isNormal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/AbsoluteGaloisGroupPublic.lean/declarations/absolutegaloisgroup-commutator-closure-isnormal.md) | 96 | `declaration-track:66548962aed5d143bfd26ffa8ffe52c403a2387be5dfd8e939327b9e276fba6f` |
+| 5 | `abbrev` | [absoluteGaloisGroupAbelianization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/AbsoluteGaloisGroupPublic.lean/declarations/absolutegaloisgroupabelianization.md) | 102 | `declaration-track:a97f124b456a5e22b8fe84094b06af1028cbb4404c875335c0833a6d5b59e9d4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

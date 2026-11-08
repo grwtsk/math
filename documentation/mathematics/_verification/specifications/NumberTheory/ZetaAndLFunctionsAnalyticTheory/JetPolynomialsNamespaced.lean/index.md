@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetPolynomialsNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetPolynomialsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetPolynomialsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetPolynomialsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [thetaPhiJetPolynomial](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetPolynomialsNamespaced.lean/declarations/thetaphijetpolynomial.md) | 25 | `declaration-track:cc197f2fc1e47ee7654d369b797c886e018322a310607f4b23970ef7ed0ae807` |
-| 2 | `theorem` | [thetaPhiJetPolynomial_abs_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetPolynomialsNamespaced.lean/declarations/thetaphijetpolynomial-abs-le.md) | 34 | `result-track:6bd60c0e04840f308a598b0f21c7d636981956352339a5c47cd770cfbbaa8a84` |
+| 1 | `def` | [thetaPhiJetPolynomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetPolynomialsNamespaced.lean/declarations/thetaphijetpolynomial.md) | 25 | `declaration-track:cc197f2fc1e47ee7654d369b797c886e018322a310607f4b23970ef7ed0ae807` |
+| 2 | `theorem` | [thetaPhiJetPolynomial_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetPolynomialsNamespaced.lean/declarations/thetaphijetpolynomial-abs-le.md) | 34 | `result-track:6bd60c0e04840f308a598b0f21c7d636981956352339a5c47cd770cfbbaa8a84` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

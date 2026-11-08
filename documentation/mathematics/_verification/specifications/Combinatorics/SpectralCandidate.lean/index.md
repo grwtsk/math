@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/SpectralCandidate.lean/index.md) · [Full source](../../../../Combinatorics/SpectralCandidate.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SpectralCandidate.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SpectralCandidate.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [EigenvalueCluster](../../../../Combinatorics/SpectralCandidate.lean/declarations/eigenvaluecluster.md) | 12 | `declaration-track:1e25c0f70dfe1850fa186f526d0ce726a91ec541e48e83e663823bf7472f157c` |
-| 2 | `structure` | [SpectralCandidate](../../../../Combinatorics/SpectralCandidate.lean/declarations/spectralcandidate.md) | 17 | `declaration-track:9a6d14066feebb5431b678f34f4163f94bf99ae39f7af9ffd6a12117be07b4ee` |
-| 3 | `def` | [SpectralCandidate.modelRegion](../../../../Combinatorics/SpectralCandidate.lean/declarations/spectralcandidate-modelregion.md) | 32 | `declaration-track:1db381ee83520742ba50e750c682792d7d2231465c195b3f470dd09c660974b7` |
-| 4 | `def` | [CarriesAnalyticZeroAuthority](../../../../Combinatorics/SpectralCandidate.lean/declarations/carriesanalyticzeroauthority.md) | 42 | `declaration-track:7052c877eef9befe75e0565579d9216bbb93b0c251b6a9e7b3779a041cea7ba7` |
-| 5 | `theorem` | [spectralCandidate_has_no_analyticAuthority](../../../../Combinatorics/SpectralCandidate.lean/declarations/spectralcandidate-has-no-analyticauthority.md) | 46 | `result-track:8677c1cd57be1a7deab52decd622dadee71a111a500508a4b5bb708e369b1a9a` |
-| 6 | `theorem` | [spectral_candidate_has_no_analytic_zero_field](../../../../Combinatorics/SpectralCandidate.lean/declarations/spectral-candidate-has-no-analytic-zero-field.md) | 51 | `result-track:2e08b7b8e07b1b292776340858a04c1e67e5bae6f3de9a444b62d7cda79d1862` |
-| 7 | `structure` | [SelfAdjointSpectralCut](../../../../Combinatorics/SpectralCandidate.lean/declarations/selfadjointspectralcut.md) | 56 | `declaration-track:8dd0b4a1aafbeaeb401124b55ec53cc835bc521d3dba7e5a65abccd46ca9d2a4` |
-| 8 | `theorem` | [selfAdjoint_modelCandidates_on_modelLine](../../../../Combinatorics/SpectralCandidate.lean/declarations/selfadjoint-modelcandidates-on-modelline.md) | 74 | `result-track:34c6561e0ea61bc7a36e045881ac56dc8ca65dfd928dd31678ad48898095420d` |
+| 1 | `structure` | [EigenvalueCluster](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SpectralCandidate.lean/declarations/eigenvaluecluster.md) | 12 | `declaration-track:1e25c0f70dfe1850fa186f526d0ce726a91ec541e48e83e663823bf7472f157c` |
+| 2 | `structure` | [SpectralCandidate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SpectralCandidate.lean/declarations/spectralcandidate.md) | 17 | `declaration-track:9a6d14066feebb5431b678f34f4163f94bf99ae39f7af9ffd6a12117be07b4ee` |
+| 3 | `def` | [SpectralCandidate.modelRegion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SpectralCandidate.lean/declarations/spectralcandidate-modelregion.md) | 32 | `declaration-track:1db381ee83520742ba50e750c682792d7d2231465c195b3f470dd09c660974b7` |
+| 4 | `def` | [CarriesAnalyticZeroAuthority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SpectralCandidate.lean/declarations/carriesanalyticzeroauthority.md) | 42 | `declaration-track:7052c877eef9befe75e0565579d9216bbb93b0c251b6a9e7b3779a041cea7ba7` |
+| 5 | `theorem` | [spectralCandidate_has_no_analyticAuthority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SpectralCandidate.lean/declarations/spectralcandidate-has-no-analyticauthority.md) | 46 | `result-track:8677c1cd57be1a7deab52decd622dadee71a111a500508a4b5bb708e369b1a9a` |
+| 6 | `theorem` | [spectral_candidate_has_no_analytic_zero_field](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SpectralCandidate.lean/declarations/spectral-candidate-has-no-analytic-zero-field.md) | 51 | `result-track:2e08b7b8e07b1b292776340858a04c1e67e5bae6f3de9a444b62d7cda79d1862` |
+| 7 | `structure` | [SelfAdjointSpectralCut](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SpectralCandidate.lean/declarations/selfadjointspectralcut.md) | 56 | `declaration-track:8dd0b4a1aafbeaeb401124b55ec53cc835bc521d3dba7e5a65abccd46ca9d2a4` |
+| 8 | `theorem` | [selfAdjoint_modelCandidates_on_modelLine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SpectralCandidate.lean/declarations/selfadjoint-modelcandidates-on-modelline.md) | 74 | `result-track:34c6561e0ea61bc7a36e045881ac56dc8ca65dfd928dd31678ad48898095420d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

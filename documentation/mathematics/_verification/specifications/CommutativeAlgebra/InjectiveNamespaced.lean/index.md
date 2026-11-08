@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/InjectiveNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/InjectiveNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InjectiveNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InjectiveNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [Injective Namespaced](../../../../CommutativeAlgebra/InjectiveNamespaced.lean/declarations/injective-stableundercomposition.md) | 18 | `result-track:5d1829dd047bf099685fe79c79655fed78ae9bd0a7cbf59473ab342cdb1e1e51` |
-| 2 | `lemma` | [Injective Namespaced](../../../../CommutativeAlgebra/InjectiveNamespaced.lean/declarations/injective-respectsiso.md) | 24 | `result-track:edbc086e254bf41eb54c41a174aec85ba9096ecfff6323205697e90ff578b179` |
+| 1 | `lemma` | [Injective Namespaced](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InjectiveNamespaced.lean/declarations/injective-stableundercomposition.md) | 18 | `result-track:5d1829dd047bf099685fe79c79655fed78ae9bd0a7cbf59473ab342cdb1e1e51` |
+| 2 | `lemma` | [Injective Namespaced](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/InjectiveNamespaced.lean/declarations/injective-respectsiso.md) | 24 | `result-track:edbc086e254bf41eb54c41a174aec85ba9096ecfff6323205697e90ff578b179` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

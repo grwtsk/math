@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/NatIsUniformEmbeddingCoeReal.lean/index.md) · [Full source](../../../../GeneralTopology/NatIsUniformEmbeddingCoeReal.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/NatIsUniformEmbeddingCoeReal.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/NatIsUniformEmbeddingCoeReal.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,19 +58,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../GeneralTopology/NatIsUniformEmbeddingCoeReal.lean/declarations/instance-source-edition-2.md) | 21 | `declaration-track:2290b47af8c6464a38e7cb4c342a0acbba1afdf55ab18dbff15b3c0d27c89e09` |
-| 2 | `theorem` | [dist_eq](../../../../GeneralTopology/NatIsUniformEmbeddingCoeReal.lean/declarations/dist-eq.md) | 24 | `result-track:aba23eb8d45b5b2ec2c8d6f2d393a6518b8a81b5eb6954bf22b224f46ce973a3` |
-| 3 | `theorem` | [dist_coe_int](../../../../GeneralTopology/NatIsUniformEmbeddingCoeReal.lean/declarations/dist-coe-int.md) | 26 | `result-track:ca3b58c90fec6d145de14f33b7b834c6b81184fd63215733dd954599130ce583` |
-| 4 | `theorem` | [dist_cast_real](../../../../GeneralTopology/NatIsUniformEmbeddingCoeReal.lean/declarations/dist-cast-real.md) | 29 | `result-track:eb21e3b4012a056fc9b5b1b1fd336da461de3dafbd7bf601e606596e7b989478` |
-| 5 | `theorem` | [pairwise_one_le_dist](../../../../GeneralTopology/NatIsUniformEmbeddingCoeReal.lean/declarations/pairwise-one-le-dist.md) | 31 | `result-track:2960a934ab3236120d388bdf76582f5b83117192b4ccbc399dbd37d6b4046ec6` |
-| 6 | `theorem` | [isUniformEmbedding_coe_real](../../../../GeneralTopology/NatIsUniformEmbeddingCoeReal.lean/declarations/isuniformembedding-coe-real.md) | 34 | `result-track:f391bdb10f91e5182dadf1e27bc646f553fe41727e55c5048c858466138cf40f` |
-| 7 | `theorem` | [isClosedEmbedding_coe_real](../../../../GeneralTopology/NatIsUniformEmbeddingCoeReal.lean/declarations/isclosedembedding-coe-real.md) | 37 | `result-track:e06085d670deddec92122b31849f04bb9022251f399023d79f52f6a6a70809dd` |
-| 8 | `instance` | [(anonymous)](../../../../GeneralTopology/NatIsUniformEmbeddingCoeReal.lean/declarations/instance.md) | 40 | `declaration-track:18e6d5cd128b60f9fa65729ecd8b9c7dacb4445c32230cf576b5ba3c22acf409` |
-| 9 | `theorem` | [preimage_ball](../../../../GeneralTopology/NatIsUniformEmbeddingCoeReal.lean/declarations/preimage-ball.md) | 42 | `result-track:e4bc3324ec7e5e1f24228611926ee7531caf22aa81d42c3449434670d4b72b26` |
-| 10 | `theorem` | [preimage_closedBall](../../../../GeneralTopology/NatIsUniformEmbeddingCoeReal.lean/declarations/preimage-closedball.md) | 44 | `result-track:f5b1f8ea0d010ac8a1902a2319d9d674a41a1c8f079993dc1441c47b2636a2ca` |
-| 11 | `theorem` | [closedBall_eq_Icc](../../../../GeneralTopology/NatIsUniformEmbeddingCoeReal.lean/declarations/closedball-eq-icc.md) | 46 | `result-track:c229c701a35e8bda0454c75fa180a0d8e1e5a96e1e9fb84a61b0f08201f9cf38` |
-| 12 | `instance` | [(anonymous)](../../../../GeneralTopology/NatIsUniformEmbeddingCoeReal.lean/declarations/instance-source-edition-3.md) | 56 | `declaration-track:35c5d3f73938ee7efec0f160231071b87f99082ddd8b2210803dd05262ea9707` |
-| 13 | `instance` | [(anonymous)](../../../../GeneralTopology/NatIsUniformEmbeddingCoeReal.lean/declarations/instance-source-edition-4.md) | 61 | `declaration-track:df68a80b6446f267ca5bc8472591632a0796c64d8cbcf7b33cff4f8d8f2306bf` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/NatIsUniformEmbeddingCoeReal.lean/declarations/instance-source-edition-2.md) | 21 | `declaration-track:2290b47af8c6464a38e7cb4c342a0acbba1afdf55ab18dbff15b3c0d27c89e09` |
+| 2 | `theorem` | [dist_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/NatIsUniformEmbeddingCoeReal.lean/declarations/dist-eq.md) | 24 | `result-track:aba23eb8d45b5b2ec2c8d6f2d393a6518b8a81b5eb6954bf22b224f46ce973a3` |
+| 3 | `theorem` | [dist_coe_int](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/NatIsUniformEmbeddingCoeReal.lean/declarations/dist-coe-int.md) | 26 | `result-track:ca3b58c90fec6d145de14f33b7b834c6b81184fd63215733dd954599130ce583` |
+| 4 | `theorem` | [dist_cast_real](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/NatIsUniformEmbeddingCoeReal.lean/declarations/dist-cast-real.md) | 29 | `result-track:eb21e3b4012a056fc9b5b1b1fd336da461de3dafbd7bf601e606596e7b989478` |
+| 5 | `theorem` | [pairwise_one_le_dist](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/NatIsUniformEmbeddingCoeReal.lean/declarations/pairwise-one-le-dist.md) | 31 | `result-track:2960a934ab3236120d388bdf76582f5b83117192b4ccbc399dbd37d6b4046ec6` |
+| 6 | `theorem` | [isUniformEmbedding_coe_real](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/NatIsUniformEmbeddingCoeReal.lean/declarations/isuniformembedding-coe-real.md) | 34 | `result-track:f391bdb10f91e5182dadf1e27bc646f553fe41727e55c5048c858466138cf40f` |
+| 7 | `theorem` | [isClosedEmbedding_coe_real](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/NatIsUniformEmbeddingCoeReal.lean/declarations/isclosedembedding-coe-real.md) | 37 | `result-track:e06085d670deddec92122b31849f04bb9022251f399023d79f52f6a6a70809dd` |
+| 8 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/NatIsUniformEmbeddingCoeReal.lean/declarations/instance.md) | 40 | `declaration-track:18e6d5cd128b60f9fa65729ecd8b9c7dacb4445c32230cf576b5ba3c22acf409` |
+| 9 | `theorem` | [preimage_ball](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/NatIsUniformEmbeddingCoeReal.lean/declarations/preimage-ball.md) | 42 | `result-track:e4bc3324ec7e5e1f24228611926ee7531caf22aa81d42c3449434670d4b72b26` |
+| 10 | `theorem` | [preimage_closedBall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/NatIsUniformEmbeddingCoeReal.lean/declarations/preimage-closedball.md) | 44 | `result-track:f5b1f8ea0d010ac8a1902a2319d9d674a41a1c8f079993dc1441c47b2636a2ca` |
+| 11 | `theorem` | [closedBall_eq_Icc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/NatIsUniformEmbeddingCoeReal.lean/declarations/closedball-eq-icc.md) | 46 | `result-track:c229c701a35e8bda0454c75fa180a0d8e1e5a96e1e9fb84a61b0f08201f9cf38` |
+| 12 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/NatIsUniformEmbeddingCoeReal.lean/declarations/instance-source-edition-3.md) | 56 | `declaration-track:35c5d3f73938ee7efec0f160231071b87f99082ddd8b2210803dd05262ea9707` |
+| 13 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/NatIsUniformEmbeddingCoeReal.lean/declarations/instance-source-edition-4.md) | 61 | `declaration-track:df68a80b6446f267ca5bc8472591632a0796c64d8cbcf7b33cff4f8d8f2306bf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

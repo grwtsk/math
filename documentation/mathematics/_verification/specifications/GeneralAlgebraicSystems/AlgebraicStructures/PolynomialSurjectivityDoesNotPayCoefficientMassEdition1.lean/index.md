@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PolynomialSurjectivityDoesNotPayCoefficientMassEdition1.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PolynomialSurjectivityDoesNotPayCoefficientMassEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PolynomialSurjectivityDoesNotPayCoefficientMassEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PolynomialSurjectivityDoesNotPayCoefficientMassEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [coefficientMass](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PolynomialSurjectivityDoesNotPayCoefficientMassEdition1.lean/declarations/coefficientmass.md) | 23 | `declaration-track:dbee466e5fce0984fb24ad0f78b85bd058e03a423ce86f7fb43a38c6fd3be004` |
-| 2 | `theorem` | [nonconstant_monomial_small](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PolynomialSurjectivityDoesNotPayCoefficientMassEdition1.lean/declarations/nonconstant-monomial-small.md) | 26 | `result-track:51a8a0df98a769af65d0731ada7a36d336c8324a93c102a79609165e1092c418` |
-| 3 | `theorem` | [evaluation_paid_by_coefficients](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PolynomialSurjectivityDoesNotPayCoefficientMassEdition1.lean/declarations/evaluation-paid-by-coefficients.md) | 53 | `result-track:486efd2654279c71559b66c893263277bef72454a12a7f41f386a1413cf2ed09` |
-| 4 | `theorem` | [coefficient_mass_exponential_return](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PolynomialSurjectivityDoesNotPayCoefficientMassEdition1.lean/declarations/coefficient-mass-exponential-return.md) | 70 | `result-track:746394f8f9cc95190e877d917677e2f345e6e4d1b9fbf01c84642fe05604c3ab` |
+| 1 | `def` | [coefficientMass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PolynomialSurjectivityDoesNotPayCoefficientMassEdition1.lean/declarations/coefficientmass.md) | 23 | `declaration-track:dbee466e5fce0984fb24ad0f78b85bd058e03a423ce86f7fb43a38c6fd3be004` |
+| 2 | `theorem` | [nonconstant_monomial_small](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PolynomialSurjectivityDoesNotPayCoefficientMassEdition1.lean/declarations/nonconstant-monomial-small.md) | 26 | `result-track:51a8a0df98a769af65d0731ada7a36d336c8324a93c102a79609165e1092c418` |
+| 3 | `theorem` | [evaluation_paid_by_coefficients](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PolynomialSurjectivityDoesNotPayCoefficientMassEdition1.lean/declarations/evaluation-paid-by-coefficients.md) | 53 | `result-track:486efd2654279c71559b66c893263277bef72454a12a7f41f386a1413cf2ed09` |
+| 4 | `theorem` | [coefficient_mass_exponential_return](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PolynomialSurjectivityDoesNotPayCoefficientMassEdition1.lean/declarations/coefficient-mass-exponential-return.md) | 70 | `result-track:746394f8f9cc95190e877d917677e2f345e6e4d1b9fbf01c84642fe05604c3ab` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

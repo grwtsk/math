@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IndexFixedTensorBridgeNamespacedIndexToFixedTensorBridge.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IndexFixedTensorBridgeNamespacedIndexToFixedTensorBridge.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IndexFixedTensorBridgeNamespacedIndexToFixedTensorBridge.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IndexFixedTensorBridgeNamespacedIndexToFixedTensorBridge.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [IndexToFixedTensorBridge](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IndexFixedTensorBridgeNamespacedIndexToFixedTensorBridge.lean/declarations/indextofixedtensorbridge.md) | 33 | `declaration-track:9327b9f4eb7f19fb921d1f0290409d630ea7694143a7edc12b873954bc64bb2a` |
-| 2 | `theorem` | [fixed_tensor_from_nonzero_index](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IndexFixedTensorBridgeNamespacedIndexToFixedTensorBridge.lean/declarations/fixed-tensor-from-nonzero-index.md) | 51 | `result-track:41c68132befbd67e8b27882577f05536964fa72b030dfe0faa1ecc105458e368` |
+| 1 | `structure` | [IndexToFixedTensorBridge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IndexFixedTensorBridgeNamespacedIndexToFixedTensorBridge.lean/declarations/indextofixedtensorbridge.md) | 33 | `declaration-track:9327b9f4eb7f19fb921d1f0290409d630ea7694143a7edc12b873954bc64bb2a` |
+| 2 | `theorem` | [fixed_tensor_from_nonzero_index](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IndexFixedTensorBridgeNamespacedIndexToFixedTensorBridge.lean/declarations/fixed-tensor-from-nonzero-index.md) | 51 | `result-track:41c68132befbd67e8b27882577f05536964fa72b030dfe0faa1ecc105458e368` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

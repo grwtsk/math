@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteChainNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteChainNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteChainNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteChainNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [FiniteFree](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteChainNamespaced.lean/declarations/finitefree.md) | 26 | `declaration-track:8b36a43e70222d5c706a202f95b7f3fe3db2daa12f531b73c4c9984847ae15ef` |
-| 2 | `structure` | [FiniteIntegralChain](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteChainNamespaced.lean/declarations/finiteintegralchain.md) | 29 | `declaration-track:43f3d2748a06486ae42f56294dbb345523f82b4b4651d7c7408a188d189baa9b` |
-| 3 | `def` | [boundaryMap](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteChainNamespaced.lean/declarations/boundarymap.md) | 43 | `declaration-track:0bffdec06e10d4dcaf995787db708758b99d4bfc55d420e5426edce35e1e6f0e` |
-| 4 | `theorem` | [boundaryMap_squared](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteChainNamespaced.lean/declarations/boundarymap-squared.md) | 50 | `result-track:f586b4fde00be88c1d5618f5e25f110d0e0a1b7ca1765c40c8ad9b01166a3d03` |
+| 1 | `abbrev` | [FiniteFree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteChainNamespaced.lean/declarations/finitefree.md) | 26 | `declaration-track:8b36a43e70222d5c706a202f95b7f3fe3db2daa12f531b73c4c9984847ae15ef` |
+| 2 | `structure` | [FiniteIntegralChain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteChainNamespaced.lean/declarations/finiteintegralchain.md) | 29 | `declaration-track:43f3d2748a06486ae42f56294dbb345523f82b4b4651d7c7408a188d189baa9b` |
+| 3 | `def` | [boundaryMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteChainNamespaced.lean/declarations/boundarymap.md) | 43 | `declaration-track:0bffdec06e10d4dcaf995787db708758b99d4bfc55d420e5426edce35e1e6f0e` |
+| 4 | `theorem` | [boundaryMap_squared](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteChainNamespaced.lean/declarations/boundarymap-squared.md) | 50 | `result-track:f586b4fde00be88c1d5618f5e25f110d0e0a1b7ca1765c40c8ad9b01166a3d03` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

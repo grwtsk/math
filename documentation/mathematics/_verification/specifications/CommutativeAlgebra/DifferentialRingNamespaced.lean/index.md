@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/DifferentialRingNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/DifferentialRingNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DifferentialRingNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DifferentialRingNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [Differential](../../../../CommutativeAlgebra/DifferentialRingNamespaced.lean/declarations/differential.md) | 25 | `declaration-track:738a7064162d3ba6af43dc812c321404f3fd03b1892bde48e4fd42815f871563` |
-| 2 | `def` | [delabDeriv](../../../../CommutativeAlgebra/DifferentialRingNamespaced.lean/declarations/delabderiv.md) | 40 | `declaration-track:dc059cd37aa408153e4c9e9de65be0c0f8b2006662c1abbc4b13256999271e4e` |
-| 3 | `class` | [DifferentialAlgebra](../../../../CommutativeAlgebra/DifferentialRingNamespaced.lean/declarations/differentialalgebra.md) | 50 | `declaration-track:5236481073190d0a560f012287aa620c1c2bafb11f409034891f83737a26b09d` |
-| 4 | `lemma` | [algebraMap.coe_deriv](../../../../CommutativeAlgebra/DifferentialRingNamespaced.lean/declarations/algebramap-coe-deriv.md) | 57 | `result-track:74f1d6ade85fa50446f6795e7e9741c000de373a4f3a6c4e9cd44bccdb3fbe19` |
-| 5 | `class` | [Differential.ContainConstants](../../../../CommutativeAlgebra/DifferentialRingNamespaced.lean/declarations/differential-containconstants.md) | 66 | `declaration-track:661497ea9c1a6bb509739445eb05dbe2c2f3427fd7dcc16e134d2d972b09e842` |
-| 6 | `lemma` | [mem_range_of_deriv_eq_zero](../../../../CommutativeAlgebra/DifferentialRingNamespaced.lean/declarations/mem-range-of-deriv-eq-zero.md) | 71 | `result-track:6f3b4003935c6d8c267c00d0804be771be32c82fdfa9b66043cf325bafe0beb2` |
-| 7 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/DifferentialRingNamespaced.lean/declarations/instance-source-edition-2.md) | 76 | `declaration-track:9385c374131d800cedfba8c128e845ee7f345c09fa4713654223782572f3f138` |
-| 8 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/DifferentialRingNamespaced.lean/declarations/instance.md) | 79 | `declaration-track:63e15ba6cf3e22d10bd9fc4dab9ea62be906f049ee26bd5836069ba4b5a93b1b` |
-| 9 | `def` | [Differential.equiv](../../../../CommutativeAlgebra/DifferentialRingNamespaced.lean/declarations/differential-equiv.md) | 84 | `declaration-track:c205f2f7907bc3b1010315cf186df7b03686e9b972967a5e21408b50bed21976` |
-| 10 | `lemma` | [DifferentialAlgebra.equiv](../../../../CommutativeAlgebra/DifferentialRingNamespaced.lean/declarations/differentialalgebra-equiv.md) | 92 | `result-track:c77286984ab881fec346ec5edbdc8a87c581bf4844fe6a99719b69c7e640f045` |
+| 1 | `class` | [Differential](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DifferentialRingNamespaced.lean/declarations/differential.md) | 25 | `declaration-track:738a7064162d3ba6af43dc812c321404f3fd03b1892bde48e4fd42815f871563` |
+| 2 | `def` | [delabDeriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DifferentialRingNamespaced.lean/declarations/delabderiv.md) | 40 | `declaration-track:dc059cd37aa408153e4c9e9de65be0c0f8b2006662c1abbc4b13256999271e4e` |
+| 3 | `class` | [DifferentialAlgebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DifferentialRingNamespaced.lean/declarations/differentialalgebra.md) | 50 | `declaration-track:5236481073190d0a560f012287aa620c1c2bafb11f409034891f83737a26b09d` |
+| 4 | `lemma` | [algebraMap.coe_deriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DifferentialRingNamespaced.lean/declarations/algebramap-coe-deriv.md) | 57 | `result-track:74f1d6ade85fa50446f6795e7e9741c000de373a4f3a6c4e9cd44bccdb3fbe19` |
+| 5 | `class` | [Differential.ContainConstants](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DifferentialRingNamespaced.lean/declarations/differential-containconstants.md) | 66 | `declaration-track:661497ea9c1a6bb509739445eb05dbe2c2f3427fd7dcc16e134d2d972b09e842` |
+| 6 | `lemma` | [mem_range_of_deriv_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DifferentialRingNamespaced.lean/declarations/mem-range-of-deriv-eq-zero.md) | 71 | `result-track:6f3b4003935c6d8c267c00d0804be771be32c82fdfa9b66043cf325bafe0beb2` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DifferentialRingNamespaced.lean/declarations/instance-source-edition-2.md) | 76 | `declaration-track:9385c374131d800cedfba8c128e845ee7f345c09fa4713654223782572f3f138` |
+| 8 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DifferentialRingNamespaced.lean/declarations/instance.md) | 79 | `declaration-track:63e15ba6cf3e22d10bd9fc4dab9ea62be906f049ee26bd5836069ba4b5a93b1b` |
+| 9 | `def` | [Differential.equiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DifferentialRingNamespaced.lean/declarations/differential-equiv.md) | 84 | `declaration-track:c205f2f7907bc3b1010315cf186df7b03686e9b972967a5e21408b50bed21976` |
+| 10 | `lemma` | [DifferentialAlgebra.equiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DifferentialRingNamespaced.lean/declarations/differentialalgebra-equiv.md) | 92 | `result-track:c77286984ab881fec346ec5edbdc8a87c581bf4844fe6a99719b69c7e640f045` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

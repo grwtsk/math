@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/CriticalReflectionHistoricalSourceEdition2.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/CriticalReflectionHistoricalSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/CriticalReflectionHistoricalSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/CriticalReflectionHistoricalSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [criticalReflection](../../../../FunctionsOfAComplexVariable/CriticalReflectionHistoricalSourceEdition2.lean/declarations/criticalreflection.md) | 13 | `declaration-track:0664555b4556e4ac0a321eecf7b49a5e966af21f4a780b3a5c585208c5d4de35` |
-| 2 | `theorem` | [critical_reflection_involutive](../../../../FunctionsOfAComplexVariable/CriticalReflectionHistoricalSourceEdition2.lean/declarations/critical-reflection-involutive.md) | 16 | `result-track:1aed160636eb47ed562fe279d71f6cfd25a9dfda4c4af9096a16276254862fc2` |
+| 1 | `def` | [criticalReflection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/CriticalReflectionHistoricalSourceEdition2.lean/declarations/criticalreflection.md) | 13 | `declaration-track:0664555b4556e4ac0a321eecf7b49a5e966af21f4a780b3a5c585208c5d4de35` |
+| 2 | `theorem` | [critical_reflection_involutive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/CriticalReflectionHistoricalSourceEdition2.lean/declarations/critical-reflection-involutive.md) | 16 | `result-track:1aed160636eb47ed562fe279d71f6cfd25a9dfda4c4af9096a16276254862fc2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/PersistentBitFrontierNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/PersistentBitFrontierNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PersistentBitFrontierNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PersistentBitFrontierNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PersistentBitfieldProjection](../../../../../ComputerScience/AlgorithmsInComputerScience/PersistentBitFrontierNamespaced.lean/declarations/persistentbitfieldprojection.md) | 18 | `declaration-track:5f2435199d96b4aed9ee9f5c713d062eb9527759fd94b59b4c70f6cd81bd7345` |
-| 2 | `theorem` | [persistent_bitfield_projects](../../../../../ComputerScience/AlgorithmsInComputerScience/PersistentBitFrontierNamespaced.lean/declarations/persistent-bitfield-projects.md) | 27 | `result-track:da9b921a87ff39cdd85f190d70b9e6edadaf58cc5c3d437fa3b982071cb22ed4` |
+| 1 | `structure` | [PersistentBitfieldProjection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PersistentBitFrontierNamespaced.lean/declarations/persistentbitfieldprojection.md) | 18 | `declaration-track:5f2435199d96b4aed9ee9f5c713d062eb9527759fd94b59b4c70f6cd81bd7345` |
+| 2 | `theorem` | [persistent_bitfield_projects](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PersistentBitFrontierNamespaced.lean/declarations/persistent-bitfield-projects.md) | 27 | `result-track:da9b921a87ff39cdd85f190d70b9e6edadaf58cc5c3d437fa3b982071cb22ed4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

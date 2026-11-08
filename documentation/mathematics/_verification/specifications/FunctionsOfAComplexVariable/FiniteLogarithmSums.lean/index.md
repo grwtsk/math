@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/FiniteLogarithmSums.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/FiniteLogarithmSums.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FiniteLogarithmSums.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FiniteLogarithmSums.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [partialLogSum](../../../../FunctionsOfAComplexVariable/FiniteLogarithmSums.lean/declarations/partiallogsum.md) | 48 | `declaration-track:778067cd93481ddf1351344b1e129622b80f4ae166d94553ff61b01abb467b43` |
-| 2 | `lemma` | [partialLogSum_zero](../../../../FunctionsOfAComplexVariable/FiniteLogarithmSums.lean/declarations/partiallogsum-zero.md) | 52 | `result-track:1fb621c76c7c8754cf376a47ae7bd792292b6e8b3239e2e6db0d369a3850b91d` |
-| 3 | `lemma` | [partialLogSum_at_zero](../../../../FunctionsOfAComplexVariable/FiniteLogarithmSums.lean/declarations/partiallogsum-at-zero.md) | 56 | `result-track:0f66122b8e7ce81897e8c216b59e6ef051b79a8a341e03646b07416703631ce0` |
-| 4 | `lemma` | [logTaylor_succ_neg](../../../../FunctionsOfAComplexVariable/FiniteLogarithmSums.lean/declarations/logtaylor-succ-neg.md) | 59 | `result-track:de4efddbf9cb3a54db338c6a6a101ee15ec80cca08f65fe6035df82bf215b77f` |
-| 5 | `lemma` | [partialLogSum_succ](../../../../FunctionsOfAComplexVariable/FiniteLogarithmSums.lean/declarations/partiallogsum-succ.md) | 76 | `result-track:b572323e8e64c387c9f3562d31df1fa0b3b51f371ebd304fada115f9753ff754` |
-| 6 | `lemma` | [logTaylor_neg_eq_neg_sum](../../../../FunctionsOfAComplexVariable/FiniteLogarithmSums.lean/declarations/logtaylor-neg-eq-neg-sum.md) | 83 | `result-track:881ddd9e5c33646d7237ce4fdd1f349db50928b3af98ec608bf6c0601870725a` |
-| 7 | `lemma` | [partialLogSum_eq_sum](../../../../FunctionsOfAComplexVariable/FiniteLogarithmSums.lean/declarations/partiallogsum-eq-sum.md) | 96 | `result-track:c9e595fdb5e67db7b3e019e854ac9a81145941b33c23da56ea628f3fa8eb0b08` |
-| 8 | `lemma` | [norm_partialLogSum_le_nat_mul_max_one_norm_pow](../../../../FunctionsOfAComplexVariable/FiniteLogarithmSums.lean/declarations/norm-partiallogsum-le-nat-mul-max-one-norm-pow.md) | 100 | `result-track:6e1b7cd14ff05c2a6f2e524657c859b9219ea85f0619b358ba7868ffeb94306f` |
+| 1 | `def` | [partialLogSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FiniteLogarithmSums.lean/declarations/partiallogsum.md) | 48 | `declaration-track:778067cd93481ddf1351344b1e129622b80f4ae166d94553ff61b01abb467b43` |
+| 2 | `lemma` | [partialLogSum_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FiniteLogarithmSums.lean/declarations/partiallogsum-zero.md) | 52 | `result-track:1fb621c76c7c8754cf376a47ae7bd792292b6e8b3239e2e6db0d369a3850b91d` |
+| 3 | `lemma` | [partialLogSum_at_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FiniteLogarithmSums.lean/declarations/partiallogsum-at-zero.md) | 56 | `result-track:0f66122b8e7ce81897e8c216b59e6ef051b79a8a341e03646b07416703631ce0` |
+| 4 | `lemma` | [logTaylor_succ_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FiniteLogarithmSums.lean/declarations/logtaylor-succ-neg.md) | 59 | `result-track:de4efddbf9cb3a54db338c6a6a101ee15ec80cca08f65fe6035df82bf215b77f` |
+| 5 | `lemma` | [partialLogSum_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FiniteLogarithmSums.lean/declarations/partiallogsum-succ.md) | 76 | `result-track:b572323e8e64c387c9f3562d31df1fa0b3b51f371ebd304fada115f9753ff754` |
+| 6 | `lemma` | [logTaylor_neg_eq_neg_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FiniteLogarithmSums.lean/declarations/logtaylor-neg-eq-neg-sum.md) | 83 | `result-track:881ddd9e5c33646d7237ce4fdd1f349db50928b3af98ec608bf6c0601870725a` |
+| 7 | `lemma` | [partialLogSum_eq_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FiniteLogarithmSums.lean/declarations/partiallogsum-eq-sum.md) | 96 | `result-track:c9e595fdb5e67db7b3e019e854ac9a81145941b33c23da56ea628f3fa8eb0b08` |
+| 8 | `lemma` | [norm_partialLogSum_le_nat_mul_max_one_norm_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FiniteLogarithmSums.lean/declarations/norm-partiallogsum-le-nat-mul-max-one-norm-pow.md) | 100 | `result-track:6e1b7cd14ff05c2a6f2e524657c859b9219ea85f0619b358ba7868ffeb94306f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

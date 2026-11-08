@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WitnessNamespacedEdition1.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WitnessNamespacedEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WitnessNamespacedEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WitnessNamespacedEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [rustLeaf](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WitnessNamespacedEdition1.lean/declarations/rustleaf.md) | 11 | `declaration-track:e3ed71e739d3909b308b9eee754e9bd33d523dfb727270c96b67cf132e7b0d28` |
-| 2 | `def` | [leanLeaf](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WitnessNamespacedEdition1.lean/declarations/leanleaf.md) | 13 | `declaration-track:d117ba7dd63005172010f5f2bac11b11b59371b442c30cfd151fe6f01d67e353` |
-| 3 | `theorem` | [authority_witness_leaf_maps_to_rust_leaf](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WitnessNamespacedEdition1.lean/declarations/authority-witness-leaf-maps-to-rust-leaf.md) | 15 | `result-track:ea0f902379fabcf81e402accbc77fc8cb8c6d4f899a52c284d5c43f601610d03` |
+| 1 | `def` | [rustLeaf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WitnessNamespacedEdition1.lean/declarations/rustleaf.md) | 11 | `declaration-track:e3ed71e739d3909b308b9eee754e9bd33d523dfb727270c96b67cf132e7b0d28` |
+| 2 | `def` | [leanLeaf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WitnessNamespacedEdition1.lean/declarations/leanleaf.md) | 13 | `declaration-track:d117ba7dd63005172010f5f2bac11b11b59371b442c30cfd151fe6f01d67e353` |
+| 3 | `theorem` | [authority_witness_leaf_maps_to_rust_leaf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WitnessNamespacedEdition1.lean/declarations/authority-witness-leaf-maps-to-rust-leaf.md) | 15 | `result-track:ea0f902379fabcf81e402accbc77fc8cb8c6d4f899a52c284d5c43f601610d03` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

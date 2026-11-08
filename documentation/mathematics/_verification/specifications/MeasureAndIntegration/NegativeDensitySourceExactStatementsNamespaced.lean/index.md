@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/NegativeDensitySourceExactStatementsNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/NegativeDensitySourceExactStatementsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NegativeDensitySourceExactStatementsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NegativeDensitySourceExactStatementsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../MeasureAndIntegration/NegativeDensitySourceExactStatementsNamespaced.lean/declarations/example-source-edition-4.md) | 21 | `declaration-track:766f60f787b17016b0d1afa5be5908249874abe7fcff57c382d612d0e77f8d5c` |
-| 2 | `example` | [(anonymous)](../../../../MeasureAndIntegration/NegativeDensitySourceExactStatementsNamespaced.lean/declarations/example-source-edition-5.md) | 25 | `declaration-track:ff746d19e3c76e935096d9cffd34147b26ffcddd5c6315400964fc202381c342` |
-| 3 | `example` | [(anonymous)](../../../../MeasureAndIntegration/NegativeDensitySourceExactStatementsNamespaced.lean/declarations/example-source-edition-2.md) | 31 | `declaration-track:31e935e009e6abd094b7ff95a761d87a9d520d400e890f56f2d14dab739dc4e9` |
-| 4 | `example` | [(anonymous)](../../../../MeasureAndIntegration/NegativeDensitySourceExactStatementsNamespaced.lean/declarations/example-source-edition-3.md) | 37 | `declaration-track:3739d8b39efc07721ba9c8aa47c32ea3f78f68129461bbfb4ef7c67c73e7b3bc` |
-| 5 | `example` | [(anonymous)](../../../../MeasureAndIntegration/NegativeDensitySourceExactStatementsNamespaced.lean/declarations/example.md) | 43 | `declaration-track:28a77a13e7e4058272081cd60fc5cef2d60ac7340c258cbbfd20e83f788c3a65` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NegativeDensitySourceExactStatementsNamespaced.lean/declarations/example-source-edition-4.md) | 21 | `declaration-track:766f60f787b17016b0d1afa5be5908249874abe7fcff57c382d612d0e77f8d5c` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NegativeDensitySourceExactStatementsNamespaced.lean/declarations/example-source-edition-5.md) | 25 | `declaration-track:ff746d19e3c76e935096d9cffd34147b26ffcddd5c6315400964fc202381c342` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NegativeDensitySourceExactStatementsNamespaced.lean/declarations/example-source-edition-2.md) | 31 | `declaration-track:31e935e009e6abd094b7ff95a761d87a9d520d400e890f56f2d14dab739dc4e9` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NegativeDensitySourceExactStatementsNamespaced.lean/declarations/example-source-edition-3.md) | 37 | `declaration-track:3739d8b39efc07721ba9c8aa47c32ea3f78f68129461bbfb4ef7c67c73e7b3bc` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NegativeDensitySourceExactStatementsNamespaced.lean/declarations/example.md) | 43 | `declaration-track:28a77a13e7e4058272081cd60fc5cef2d60ac7340c258cbbfd20e83f788c3a65` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

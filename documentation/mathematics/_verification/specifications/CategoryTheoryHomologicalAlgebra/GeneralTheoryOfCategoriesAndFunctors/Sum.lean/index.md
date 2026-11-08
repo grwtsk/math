@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Sum.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Sum.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Sum.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Sum.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [fromSum](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Sum.lean/declarations/fromsum.md) | 25 | `declaration-track:58487e84df822f1a4e081e81163a82583b952a7a004621c16611672f75cab469` |
-| 2 | `lemma` | [fromSum_map_inl](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Sum.lean/declarations/fromsum-map-inl.md) | 29 | `result-track:d61bc83f628b8f1a9d0d26f2e970c8749ec8b1c417fbc5e2ea85651cca7770d6` |
-| 3 | `lemma` | [fromSum_map_inr](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Sum.lean/declarations/fromsum-map-inr.md) | 35 | `result-track:06432ec62d1297a1358ae033d865ed7a9718861335e7948690b771bb638979d6` |
-| 4 | `def` | [inlCompFromSum](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Sum.lean/declarations/inlcompfromsum.md) | 41 | `declaration-track:cabe090c81c5d979c2b9a460ca1e121206ab68c7adfe00c8ac5cd6b4ea104f30` |
-| 5 | `def` | [inrCompFromSum](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Sum.lean/declarations/inrcompfromsum.md) | 45 | `declaration-track:b998b8edab98bc18a8c53ebb9e0006579f1adf076efc42299fe3b91a280418cf` |
-| 6 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Sum.lean/declarations/instance.md) | 47 | `declaration-track:5c228b13ef5a07990015bbdb7380f218f8bf59a565e233939496bf4d6c78a770` |
-| 7 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Sum.lean/declarations/instance-source-edition-2.md) | 52 | `declaration-track:e5277da4e53bb815b3d8b2f508cf0179d23d0d6c322217a1e89a4c64e33b6d63` |
+| 1 | `def` | [fromSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Sum.lean/declarations/fromsum.md) | 25 | `declaration-track:58487e84df822f1a4e081e81163a82583b952a7a004621c16611672f75cab469` |
+| 2 | `lemma` | [fromSum_map_inl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Sum.lean/declarations/fromsum-map-inl.md) | 29 | `result-track:d61bc83f628b8f1a9d0d26f2e970c8749ec8b1c417fbc5e2ea85651cca7770d6` |
+| 3 | `lemma` | [fromSum_map_inr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Sum.lean/declarations/fromsum-map-inr.md) | 35 | `result-track:06432ec62d1297a1358ae033d865ed7a9718861335e7948690b771bb638979d6` |
+| 4 | `def` | [inlCompFromSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Sum.lean/declarations/inlcompfromsum.md) | 41 | `declaration-track:cabe090c81c5d979c2b9a460ca1e121206ab68c7adfe00c8ac5cd6b4ea104f30` |
+| 5 | `def` | [inrCompFromSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Sum.lean/declarations/inrcompfromsum.md) | 45 | `declaration-track:b998b8edab98bc18a8c53ebb9e0006579f1adf076efc42299fe3b91a280418cf` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Sum.lean/declarations/instance.md) | 47 | `declaration-track:5c228b13ef5a07990015bbdb7380f218f8bf59a565e233939496bf4d6c78a770` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Sum.lean/declarations/instance-source-edition-2.md) | 52 | `declaration-track:e5277da4e53bb815b3d8b2f508cf0179d23d0d6c322217a1e89a4c64e33b6d63` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

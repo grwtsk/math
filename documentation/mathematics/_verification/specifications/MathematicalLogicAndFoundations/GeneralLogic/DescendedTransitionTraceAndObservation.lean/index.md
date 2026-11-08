@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DescendedTransitionTraceAndObservation.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DescendedTransitionTraceAndObservation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DescendedTransitionTraceAndObservation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DescendedTransitionTraceAndObservation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -49,7 +49,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 - `DAF.Causal.ObservableRecursion` — import line 21; external provider; requires a separately pinned dependency.
 - `Mathlib.Data.Quot` — import line 22; external provider; requires a separately pinned dependency.
 - `Mathlib.Logic.Equiv.Defs` — import line 23; external provider; requires a separately pinned dependency.
-- [Parameterized Future Trace Quotient](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ParameterizedFutureTraceQuotient.lean/index.md) — import line 24; pinned internal source present.
+- [Parameterized Future Trace Quotient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ParameterizedFutureTraceQuotient.lean/index.md) — import line 24; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -60,15 +60,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [causalEquivalent_step](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DescendedTransitionTraceAndObservation.lean/declarations/causalequivalent-step.md) | 55 | `result-track:8b18f435ee415660c204541e657e3dd931e057b0605bc122f68ecffa86530b41` |
-| 2 | `def` | [causalStep](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DescendedTransitionTraceAndObservation.lean/declarations/causalstep.md) | 65 | `declaration-track:adfb7ae21fe887fff60baf30cfecd89904e1e1776ce1daf26d064d398ea843eb` |
-| 3 | `theorem` | [causalStep_toCausal](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DescendedTransitionTraceAndObservation.lean/declarations/causalstep-tocausal.md) | 73 | `result-track:d1b6920519de73cc0f203fd2adb58da14ed61f79ae5b40cd0735c6eb3a27bfac` |
-| 4 | `def` | [runCausal](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DescendedTransitionTraceAndObservation.lean/declarations/runcausal.md) | 82 | `declaration-track:6caaead4242dc544fdc839fc49bcf73413da49d82c5e938be31815e6a5dbeab1` |
-| 5 | `theorem` | [runCausal_toCausal](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DescendedTransitionTraceAndObservation.lean/declarations/runcausal-tocausal.md) | 91 | `result-track:2881374ebbcc01675cd6cdc12095824af05f38721464a796359286cdf8266af6` |
-| 6 | `theorem` | [causalEquivalent_observe](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DescendedTransitionTraceAndObservation.lean/declarations/causalequivalent-observe.md) | 104 | `result-track:bf4b6e1bc2f668709c44638fea76ffbc0e4b49aa16cdd133b5a7423dc0fb7164` |
-| 7 | `def` | [causalObserve](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DescendedTransitionTraceAndObservation.lean/declarations/causalobserve.md) | 113 | `declaration-track:3afbe083988cbd326574c47199391e4c8d9449e9656afb9262b28f6a28a9bd77` |
-| 8 | `theorem` | [causalObserve_toCausal](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DescendedTransitionTraceAndObservation.lean/declarations/causalobserve-tocausal.md) | 121 | `result-track:6b2c8cabe7b951bf047b3282c6440dd307f8c9bcd7e53db1e50f8845baff1329` |
-| 9 | `theorem` | [causalObserve_runCausal](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DescendedTransitionTraceAndObservation.lean/declarations/causalobserve-runcausal.md) | 129 | `result-track:8126192a6abc5939892f6f488b9c8e69d16cc61417e1b8de2a87306b84cc62f3` |
+| 1 | `theorem` | [causalEquivalent_step](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DescendedTransitionTraceAndObservation.lean/declarations/causalequivalent-step.md) | 55 | `result-track:8b18f435ee415660c204541e657e3dd931e057b0605bc122f68ecffa86530b41` |
+| 2 | `def` | [causalStep](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DescendedTransitionTraceAndObservation.lean/declarations/causalstep.md) | 65 | `declaration-track:adfb7ae21fe887fff60baf30cfecd89904e1e1776ce1daf26d064d398ea843eb` |
+| 3 | `theorem` | [causalStep_toCausal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DescendedTransitionTraceAndObservation.lean/declarations/causalstep-tocausal.md) | 73 | `result-track:d1b6920519de73cc0f203fd2adb58da14ed61f79ae5b40cd0735c6eb3a27bfac` |
+| 4 | `def` | [runCausal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DescendedTransitionTraceAndObservation.lean/declarations/runcausal.md) | 82 | `declaration-track:6caaead4242dc544fdc839fc49bcf73413da49d82c5e938be31815e6a5dbeab1` |
+| 5 | `theorem` | [runCausal_toCausal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DescendedTransitionTraceAndObservation.lean/declarations/runcausal-tocausal.md) | 91 | `result-track:2881374ebbcc01675cd6cdc12095824af05f38721464a796359286cdf8266af6` |
+| 6 | `theorem` | [causalEquivalent_observe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DescendedTransitionTraceAndObservation.lean/declarations/causalequivalent-observe.md) | 104 | `result-track:bf4b6e1bc2f668709c44638fea76ffbc0e4b49aa16cdd133b5a7423dc0fb7164` |
+| 7 | `def` | [causalObserve](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DescendedTransitionTraceAndObservation.lean/declarations/causalobserve.md) | 113 | `declaration-track:3afbe083988cbd326574c47199391e4c8d9449e9656afb9262b28f6a28a9bd77` |
+| 8 | `theorem` | [causalObserve_toCausal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DescendedTransitionTraceAndObservation.lean/declarations/causalobserve-tocausal.md) | 121 | `result-track:6b2c8cabe7b951bf047b3282c6440dd307f8c9bcd7e53db1e50f8845baff1329` |
+| 9 | `theorem` | [causalObserve_runCausal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DescendedTransitionTraceAndObservation.lean/declarations/causalobserve-runcausal.md) | 129 | `result-track:8126192a6abc5939892f6f488b9c8e69d16cc61417e1b8de2a87306b84cc62f3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

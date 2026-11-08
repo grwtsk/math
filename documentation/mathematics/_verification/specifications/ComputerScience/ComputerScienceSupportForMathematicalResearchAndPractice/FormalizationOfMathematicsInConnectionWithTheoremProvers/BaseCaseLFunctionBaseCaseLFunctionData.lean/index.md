@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BaseCaseLFunctionBaseCaseLFunctionData.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BaseCaseLFunctionBaseCaseLFunctionData.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BaseCaseLFunctionBaseCaseLFunctionData.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BaseCaseLFunctionBaseCaseLFunctionData.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [BaseCaseLFunctionData](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BaseCaseLFunctionBaseCaseLFunctionData.lean/declarations/basecaselfunctiondata.md) | 26 | `declaration-track:381db75ad3df72f2370952c58af932995c83ab7cb6066b494b7bb6b07fe602b6` |
-| 2 | `theorem` | [base_lfunction_center_is_spectral_pivot](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BaseCaseLFunctionBaseCaseLFunctionData.lean/declarations/base-lfunction-center-is-spectral-pivot.md) | 40 | `result-track:2c8ae07b282dba8e075c7b4998b6566d99203c9ce146b1282bbd313f3b1fd772` |
-| 3 | `theorem` | [base_lfunction_central_value_nonzero](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BaseCaseLFunctionBaseCaseLFunctionData.lean/declarations/base-lfunction-central-value-nonzero.md) | 45 | `result-track:f05eee38a10df6e63a3a958695c02b37f8882a526412fd458e999ccc6e197c6b` |
+| 1 | `structure` | [BaseCaseLFunctionData](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BaseCaseLFunctionBaseCaseLFunctionData.lean/declarations/basecaselfunctiondata.md) | 26 | `declaration-track:381db75ad3df72f2370952c58af932995c83ab7cb6066b494b7bb6b07fe602b6` |
+| 2 | `theorem` | [base_lfunction_center_is_spectral_pivot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BaseCaseLFunctionBaseCaseLFunctionData.lean/declarations/base-lfunction-center-is-spectral-pivot.md) | 40 | `result-track:2c8ae07b282dba8e075c7b4998b6566d99203c9ce146b1282bbd313f3b1fd772` |
+| 3 | `theorem` | [base_lfunction_central_value_nonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BaseCaseLFunctionBaseCaseLFunctionData.lean/declarations/base-lfunction-central-value-nonzero.md) | 45 | `result-track:f05eee38a10df6e63a3a958695c02b37f8882a526412fd458e999ccc6e197c6b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

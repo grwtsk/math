@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreCodec.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreCodec.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreCodec.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreCodec.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Codec](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreCodec.lean/declarations/codec.md) | 19 | `declaration-track:6fe2ce062eef2a78272a03294ae236b4e203a2524fe5f70a30c19290c3bb54ec` |
-| 2 | `def` | [format](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreCodec.lean/declarations/format.md) | 31 | `declaration-track:bf9a02a4b3d9c68650b31599f38fab2d76e49879e44d37b190268ca17e9cb92c` |
+| 1 | `structure` | [Codec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreCodec.lean/declarations/codec.md) | 19 | `declaration-track:6fe2ce062eef2a78272a03294ae236b4e203a2524fe5f70a30c19290c3bb54ec` |
+| 2 | `def` | [format](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreCodec.lean/declarations/format.md) | 31 | `declaration-track:bf9a02a4b3d9c68650b31599f38fab2d76e49879e44d37b190268ca17e9cb92c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

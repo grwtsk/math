@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholePublicFingerprintConsistencyHypothesis.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholePublicFingerprintConsistencyHypothesis.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholePublicFingerprintConsistencyHypothesis.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholePublicFingerprintConsistencyHypothesis.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `DAF.Manifest` — import line 21; external provider; requires a separately pinned dependency.
-- [Finite Rebuild Policy And Tenant Impact](../../../../../Combinatorics/GraphTheory/FiniteRebuildPolicyAndTenantImpact.lean/index.md) — import line 22; pinned internal source present.
+- [Finite Rebuild Policy And Tenant Impact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/FiniteRebuildPolicyAndTenantImpact.lean/index.md) — import line 22; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [SemanticallyUnchanged](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholePublicFingerprintConsistencyHypothesis.lean/declarations/semanticallyunchanged.md) | 54 | `declaration-track:d6085e3a38df020549074a8a932523038012cc4fed56885afd58f144e8a0ec41` |
-| 2 | `structure` | [PublicFingerprintConsistency](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholePublicFingerprintConsistencyHypothesis.lean/declarations/publicfingerprintconsistency.md) | 67 | `declaration-track:2019a25b30d55bbec49343794a270068d61e8717bd49ea230382d44725079957` |
-| 3 | `theorem` | [not_affected_implies_semantically_unchanged](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholePublicFingerprintConsistencyHypothesis.lean/declarations/not-affected-implies-semantically-unchanged.md) | 82 | `result-track:51a0b370dfb9b94f840c16cb9b83cafd756fc644097f5621dc2c99ef970f41af` |
+| 1 | `def` | [SemanticallyUnchanged](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholePublicFingerprintConsistencyHypothesis.lean/declarations/semanticallyunchanged.md) | 54 | `declaration-track:d6085e3a38df020549074a8a932523038012cc4fed56885afd58f144e8a0ec41` |
+| 2 | `structure` | [PublicFingerprintConsistency](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholePublicFingerprintConsistencyHypothesis.lean/declarations/publicfingerprintconsistency.md) | 67 | `declaration-track:2019a25b30d55bbec49343794a270068d61e8717bd49ea230382d44725079957` |
+| 3 | `theorem` | [not_affected_implies_semantically_unchanged](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholePublicFingerprintConsistencyHypothesis.lean/declarations/not-affected-implies-semantically-unchanged.md) | 82 | `result-track:51a0b370dfb9b94f840c16cb9b83cafd756fc644097f5621dc2c99ef970f41af` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

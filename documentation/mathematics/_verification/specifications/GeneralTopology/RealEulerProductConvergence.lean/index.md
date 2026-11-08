@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/RealEulerProductConvergence.lean/index.md) · [Full source](../../../../GeneralTopology/RealEulerProductConvergence.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RealEulerProductConvergence.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RealEulerProductConvergence.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,14 +60,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [zetaEulerApproxReal](../../../../GeneralTopology/RealEulerProductConvergence.lean/declarations/zetaeulerapproxreal.md) | 19 | `declaration-track:bb6a1db122e8bae6ce1deed94085fba3c23dabafbb15f0629a94151e0264a51c` |
-| 2 | `theorem` | [zetaEulerApproxReal_expands_boundedSmoothNumbers](../../../../GeneralTopology/RealEulerProductConvergence.lean/declarations/zetaeulerapproxreal-expands-boundedsmoothnumbers.md) | 24 | `result-track:f46c66a5cf0afe310245fc40b1a4b67a17bdaf052e4a2bbe9cfce3e8816b1b1f` |
-| 3 | `theorem` | [zetaPartialReal_le_zetaEulerApproxReal](../../../../GeneralTopology/RealEulerProductConvergence.lean/declarations/zetapartialreal-le-zetaeulerapproxreal.md) | 36 | `result-track:6fc01115ba4982e700464a4047395f42a660eb3c37a370936a6fbab286dca45c` |
-| 4 | `theorem` | [sum_le_tsum_of_nonneg_summable](../../../../GeneralTopology/RealEulerProductConvergence.lean/declarations/sum-le-tsum-of-nonneg-summable.md) | 47 | `result-track:1151573cf2960b4703eecc41109ae340587f76d47e72b53ecf4515f93c71d018` |
-| 5 | `theorem` | [zetaEulerApproxReal_le_zetaRealHalfPlane](../../../../GeneralTopology/RealEulerProductConvergence.lean/declarations/zetaeulerapproxreal-le-zetarealhalfplane.md) | 55 | `result-track:dea6a67a1089383276c03ae6c95f891d9e3dbccd2d4681aa3dba53eb61a59e3b` |
-| 6 | `theorem` | [zetaEulerApproxReal_pos](../../../../GeneralTopology/RealEulerProductConvergence.lean/declarations/zetaeulerapproxreal-pos.md) | 67 | `result-track:903be5550ce369cc49e31a71091f70ebf8a839b66dd3f3afc8e6215bf5a11e51` |
-| 7 | `theorem` | [zetaEulerApproxReal_ge_one](../../../../GeneralTopology/RealEulerProductConvergence.lean/declarations/zetaeulerapproxreal-ge-one.md) | 76 | `result-track:9f81d5677b6f5409a71036665aa0aa78d051557ddb56f854567d61beb59abdf2` |
-| 8 | `theorem` | [tendsto_zetaEulerApproxReal](../../../../GeneralTopology/RealEulerProductConvergence.lean/declarations/tendsto-zetaeulerapproxreal.md) | 95 | `result-track:1482c987ee02264106eb1b1bcacabd2751c9bcbd28f9f4f477d06049cde7b7cd` |
+| 1 | `def` | [zetaEulerApproxReal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RealEulerProductConvergence.lean/declarations/zetaeulerapproxreal.md) | 19 | `declaration-track:bb6a1db122e8bae6ce1deed94085fba3c23dabafbb15f0629a94151e0264a51c` |
+| 2 | `theorem` | [zetaEulerApproxReal_expands_boundedSmoothNumbers](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RealEulerProductConvergence.lean/declarations/zetaeulerapproxreal-expands-boundedsmoothnumbers.md) | 24 | `result-track:f46c66a5cf0afe310245fc40b1a4b67a17bdaf052e4a2bbe9cfce3e8816b1b1f` |
+| 3 | `theorem` | [zetaPartialReal_le_zetaEulerApproxReal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RealEulerProductConvergence.lean/declarations/zetapartialreal-le-zetaeulerapproxreal.md) | 36 | `result-track:6fc01115ba4982e700464a4047395f42a660eb3c37a370936a6fbab286dca45c` |
+| 4 | `theorem` | [sum_le_tsum_of_nonneg_summable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RealEulerProductConvergence.lean/declarations/sum-le-tsum-of-nonneg-summable.md) | 47 | `result-track:1151573cf2960b4703eecc41109ae340587f76d47e72b53ecf4515f93c71d018` |
+| 5 | `theorem` | [zetaEulerApproxReal_le_zetaRealHalfPlane](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RealEulerProductConvergence.lean/declarations/zetaeulerapproxreal-le-zetarealhalfplane.md) | 55 | `result-track:dea6a67a1089383276c03ae6c95f891d9e3dbccd2d4681aa3dba53eb61a59e3b` |
+| 6 | `theorem` | [zetaEulerApproxReal_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RealEulerProductConvergence.lean/declarations/zetaeulerapproxreal-pos.md) | 67 | `result-track:903be5550ce369cc49e31a71091f70ebf8a839b66dd3f3afc8e6215bf5a11e51` |
+| 7 | `theorem` | [zetaEulerApproxReal_ge_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RealEulerProductConvergence.lean/declarations/zetaeulerapproxreal-ge-one.md) | 76 | `result-track:9f81d5677b6f5409a71036665aa0aa78d051557ddb56f854567d61beb59abdf2` |
+| 8 | `theorem` | [tendsto_zetaEulerApproxReal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RealEulerProductConvergence.lean/declarations/tendsto-zetaeulerapproxreal.md) | 95 | `result-track:1482c987ee02264106eb1b1bcacabd2751c9bcbd28f9f4f477d06049cde7b7cd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

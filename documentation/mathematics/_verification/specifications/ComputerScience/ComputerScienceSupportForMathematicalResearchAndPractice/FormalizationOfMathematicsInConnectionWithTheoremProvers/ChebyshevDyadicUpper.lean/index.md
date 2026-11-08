@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ChebyshevDyadicUpper.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ChebyshevDyadicUpper.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ChebyshevDyadicUpper.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ChebyshevDyadicUpper.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [dyadic_upper_from_doubling_difference](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ChebyshevDyadicUpper.lean/declarations/dyadic-upper-from-doubling-difference.md) | 15 | `result-track:69b30ffb2eb5c3f4278030317ddd90626a05234242132f531d5cb844a0790f0f` |
-| 2 | `theorem` | [chebyshevTheta_zero](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ChebyshevDyadicUpper.lean/declarations/chebyshevtheta-zero.md) | 83 | `result-track:d60976ed09f3d635ffa692147e830875fc7b1ed7fc8cd1d753cc66a22adc469c` |
-| 3 | `theorem` | [chebyshevTheta_linear_upper_from_dyadic](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ChebyshevDyadicUpper.lean/declarations/chebyshevtheta-linear-upper-from-dyadic.md) | 87 | `result-track:553558377fda4e0df12f5764ce46c96b660138051d6030ac01db95179942e9ce` |
+| 1 | `theorem` | [dyadic_upper_from_doubling_difference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ChebyshevDyadicUpper.lean/declarations/dyadic-upper-from-doubling-difference.md) | 15 | `result-track:69b30ffb2eb5c3f4278030317ddd90626a05234242132f531d5cb844a0790f0f` |
+| 2 | `theorem` | [chebyshevTheta_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ChebyshevDyadicUpper.lean/declarations/chebyshevtheta-zero.md) | 83 | `result-track:d60976ed09f3d635ffa692147e830875fc7b1ed7fc8cd1d753cc66a22adc469c` |
+| 3 | `theorem` | [chebyshevTheta_linear_upper_from_dyadic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ChebyshevDyadicUpper.lean/declarations/chebyshevtheta-linear-upper-from-dyadic.md) | 87 | `result-track:553558377fda4e0df12f5764ce46c96b660138051d6030ac01db95179942e9ce` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

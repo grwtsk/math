@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinSuccPred.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinSuccPred.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinSuccPred.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinSuccPred.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinSuccPred.lean/declarations/instance-source-edition-2.md) | 21 | `declaration-track:77bb7dee1057ee43a2dba02c601705c9597df2d2a95993121d778f6c93305b03` |
-| 2 | `lemma` | [orderSucc_eq](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinSuccPred.lean/declarations/ordersucc-eq.md) | 32 | `result-track:ebf95983044a4746f9e2b23bf35fbf0330774f91b481ca548ecc45742cc01a1b` |
-| 3 | `lemma` | [orderSucc_apply](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinSuccPred.lean/declarations/ordersucc-apply.md) | 35 | `result-track:00862f912334d06b15bddf18569e4de7896f29542b374c93fac0308eb518a366` |
-| 4 | `lemma` | [orderSucc_last](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinSuccPred.lean/declarations/ordersucc-last.md) | 39 | `result-track:8ee702c240005dc026a76939c4bb928d6f3714f6d88a535d6775bfe8a0f9e66f` |
-| 5 | `lemma` | [orderSucc_castSucc](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinSuccPred.lean/declarations/ordersucc-castsucc.md) | 44 | `result-track:434541b4c4f2554580074dc5a4c1913419e7bf7487752a050b31826a6753a9b8` |
-| 6 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinSuccPred.lean/declarations/instance.md) | 51 | `declaration-track:4204742a8006d97308d95fb1cbf6eccffd199f5e06fe8e573fcd1a5c8ee32925` |
-| 7 | `lemma` | [orderPred_eq](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinSuccPred.lean/declarations/orderpred-eq.md) | 63 | `result-track:90c0aca482cd6f2ec554a6281fcf222cec5fc97f9cc19848d6b30cbf0309f3b9` |
-| 8 | `lemma` | [orderPred_apply](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinSuccPred.lean/declarations/orderpred-apply.md) | 66 | `result-track:3be197a915b6e13b11b479795eb41e349a637908a3db9a075b76b234a8705dad` |
-| 9 | `lemma` | [orderPred_zero](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinSuccPred.lean/declarations/orderpred-zero.md) | 70 | `result-track:f7734617c8ae96418df0b5806d39ba22cc9d8ecac0833327adc140c73784a38b` |
-| 10 | `lemma` | [orderPred_succ](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinSuccPred.lean/declarations/orderpred-succ.md) | 75 | `result-track:8c319182ec3c6600ed420cd134341aba2eb0a34233695302f76e4c14b8394abd` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinSuccPred.lean/declarations/instance-source-edition-2.md) | 21 | `declaration-track:77bb7dee1057ee43a2dba02c601705c9597df2d2a95993121d778f6c93305b03` |
+| 2 | `lemma` | [orderSucc_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinSuccPred.lean/declarations/ordersucc-eq.md) | 32 | `result-track:ebf95983044a4746f9e2b23bf35fbf0330774f91b481ca548ecc45742cc01a1b` |
+| 3 | `lemma` | [orderSucc_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinSuccPred.lean/declarations/ordersucc-apply.md) | 35 | `result-track:00862f912334d06b15bddf18569e4de7896f29542b374c93fac0308eb518a366` |
+| 4 | `lemma` | [orderSucc_last](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinSuccPred.lean/declarations/ordersucc-last.md) | 39 | `result-track:8ee702c240005dc026a76939c4bb928d6f3714f6d88a535d6775bfe8a0f9e66f` |
+| 5 | `lemma` | [orderSucc_castSucc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinSuccPred.lean/declarations/ordersucc-castsucc.md) | 44 | `result-track:434541b4c4f2554580074dc5a4c1913419e7bf7487752a050b31826a6753a9b8` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinSuccPred.lean/declarations/instance.md) | 51 | `declaration-track:4204742a8006d97308d95fb1cbf6eccffd199f5e06fe8e573fcd1a5c8ee32925` |
+| 7 | `lemma` | [orderPred_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinSuccPred.lean/declarations/orderpred-eq.md) | 63 | `result-track:90c0aca482cd6f2ec554a6281fcf222cec5fc97f9cc19848d6b30cbf0309f3b9` |
+| 8 | `lemma` | [orderPred_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinSuccPred.lean/declarations/orderpred-apply.md) | 66 | `result-track:3be197a915b6e13b11b479795eb41e349a637908a3db9a075b76b234a8705dad` |
+| 9 | `lemma` | [orderPred_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinSuccPred.lean/declarations/orderpred-zero.md) | 70 | `result-track:f7734617c8ae96418df0b5806d39ba22cc9d8ecac0833327adc140c73784a38b` |
+| 10 | `lemma` | [orderPred_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinSuccPred.lean/declarations/orderpred-succ.md) | 75 | `result-track:8c319182ec3c6600ed420cd134341aba2eb0a34233695302f76e4c14b8394abd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

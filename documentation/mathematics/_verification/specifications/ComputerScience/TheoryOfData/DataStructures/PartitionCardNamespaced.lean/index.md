@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/PartitionCardNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/PartitionCardNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/PartitionCardNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/PartitionCardNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Setoid.IsPartition.ncard_eq_finsum](../../../../../../ComputerScience/TheoryOfData/DataStructures/PartitionCardNamespaced.lean/declarations/setoid-ispartition-ncard-eq-finsum.md) | 32 | `result-track:253d102f28689a0b6294f752ef62816da1c485e6a6c1451f448120d13eddd640` |
+| 1 | `theorem` | [Setoid.IsPartition.ncard_eq_finsum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/PartitionCardNamespaced.lean/declarations/setoid-ispartition-ncard-eq-finsum.md) | 32 | `result-track:253d102f28689a0b6294f752ef62816da1c485e6a6c1451f448120d13eddd640` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

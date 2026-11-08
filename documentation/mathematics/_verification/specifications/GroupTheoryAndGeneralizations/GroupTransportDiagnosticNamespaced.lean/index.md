@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/GroupTransportDiagnosticNamespaced.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/GroupTransportDiagnosticNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupTransportDiagnosticNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupTransportDiagnosticNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [transportDiagnostic](../../../../GroupTheoryAndGeneralizations/GroupTransportDiagnosticNamespaced.lean/declarations/transportdiagnostic.md) | 11 | `declaration-track:87a648ed5aa0f8e73b22e99846c9b5a93343a3e24a5c2c7229f81b6c63291b05` |
+| 1 | `def` | [transportDiagnostic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupTransportDiagnosticNamespaced.lean/declarations/transportdiagnostic.md) | 11 | `declaration-track:87a648ed5aa0f8e73b22e99846c9b5a93343a3e24a5c2c7229f81b6c63291b05` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

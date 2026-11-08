@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/CastPiNamespacedPublic.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/CastPiNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CastPiNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CastPiNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [instIntCast](../../../../../NumberTheory/ElementaryNumberTheory/CastPiNamespacedPublic.lean/declarations/instintcast.md) | 37 | `declaration-track:9af4b466360d5f1e4e4e15c8e574d3730b2b8d3857930c16cea17769330c5df1` |
-| 2 | `theorem` | [intCast_apply](../../../../../NumberTheory/ElementaryNumberTheory/CastPiNamespacedPublic.lean/declarations/intcast-apply.md) | 40 | `result-track:10470e81eb332e18d2c927e6165e912b45fd88540ee04c8d584e83b8f6aeafa8` |
-| 3 | `theorem` | [intCast_def](../../../../../NumberTheory/ElementaryNumberTheory/CastPiNamespacedPublic.lean/declarations/intcast-def.md) | 44 | `result-track:f27483d854d2b93c0cf367d29432f19661f47c560f4fd1f9b5a04d42f25f222d` |
-| 4 | `theorem` | [Sum.elim_intCast_intCast](../../../../../NumberTheory/ElementaryNumberTheory/CastPiNamespacedPublic.lean/declarations/sum-elim-intcast-intcast.md) | 50 | `result-track:b3eae4d3f5ac2b2c03b908d517705d6e3214373cd60073930ff39b80e0bb8353` |
+| 1 | `instance` | [instIntCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CastPiNamespacedPublic.lean/declarations/instintcast.md) | 37 | `declaration-track:9af4b466360d5f1e4e4e15c8e574d3730b2b8d3857930c16cea17769330c5df1` |
+| 2 | `theorem` | [intCast_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CastPiNamespacedPublic.lean/declarations/intcast-apply.md) | 40 | `result-track:10470e81eb332e18d2c927e6165e912b45fd88540ee04c8d584e83b8f6aeafa8` |
+| 3 | `theorem` | [intCast_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CastPiNamespacedPublic.lean/declarations/intcast-def.md) | 44 | `result-track:f27483d854d2b93c0cf367d29432f19661f47c560f4fd1f9b5a04d42f25f222d` |
+| 4 | `theorem` | [Sum.elim_intCast_intCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CastPiNamespacedPublic.lean/declarations/sum-elim-intcast-intcast.md) | 50 | `result-track:b3eae4d3f5ac2b2c03b908d517705d6e3214373cd60073930ff39b80e0bb8353` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

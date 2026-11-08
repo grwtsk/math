@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/NoncommCoprod.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/NoncommCoprod.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/NoncommCoprod.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/NoncommCoprod.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,18 +61,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [noncommCoprod](../../../../GroupTheoryAndGeneralizations/NoncommCoprod.lean/declarations/noncommcoprod-source-edition-2.md) | 48 | `declaration-track:fb3be204a449aa90367c7912b7fed44317a9c3d3befc4316387ba003217b54fe` |
-| 2 | `theorem` | [noncommCoprod_apply'](../../../../GroupTheoryAndGeneralizations/NoncommCoprod.lean/declarations/noncommcoprod-apply.md) | 55 | `result-track:2ef256e47fe715e99db5a4b0f9c07e767e81e915a864bbc1bf8ac4d9620eaed4` |
-| 3 | `theorem` | [comp_noncommCoprod](../../../../GroupTheoryAndGeneralizations/NoncommCoprod.lean/declarations/comp-noncommcoprod.md) | 60 | `result-track:0e361d604004b9ddfd8c40183ce64bde6a81e8af7624d2efb5bbdb27bda8bf85` |
-| 4 | `def` | [noncommCoprod](../../../../GroupTheoryAndGeneralizations/NoncommCoprod.lean/declarations/noncommcoprod.md) | 82 | `declaration-track:a6312c674cc74de5661031dedfe132fc75bbaf4edae5403e0d53f2e883ac0a65` |
-| 5 | `theorem` | [noncommCoprod_apply'](../../../../GroupTheoryAndGeneralizations/NoncommCoprod.lean/declarations/noncommcoprod-apply-source-edition-2.md) | 90 | `result-track:36cd83ec341b416045d86e0dadc3af49f0e5a49671475e662054433eaad881dc` |
-| 6 | `theorem` | [noncommCoprod_comp_inl](../../../../GroupTheoryAndGeneralizations/NoncommCoprod.lean/declarations/noncommcoprod-comp-inl.md) | 95 | `result-track:7afbdff98ce5e81389f3eedac3b7ec3d35e593c64694ada2fea8e6a026806af8` |
-| 7 | `theorem` | [noncommCoprod_comp_inr](../../../../GroupTheoryAndGeneralizations/NoncommCoprod.lean/declarations/noncommcoprod-comp-inr.md) | 99 | `result-track:fdb8160b216452b5c7fa60984735c1284517aec3c3c8e382c19f8422a4e71b7f` |
-| 8 | `theorem` | [noncommCoprod_unique](../../../../GroupTheoryAndGeneralizations/NoncommCoprod.lean/declarations/noncommcoprod-unique.md) | 103 | `result-track:3ce073d7320cac11039995c2a5c8c758cde3eeb0eaeccad6970b75ad9f4fd24e` |
-| 9 | `theorem` | [noncommCoprod_inl_inr](../../../../GroupTheoryAndGeneralizations/NoncommCoprod.lean/declarations/noncommcoprod-inl-inr.md) | 109 | `result-track:562d62a6809eecd25e9f10341af9b678b5f7fec2bef56a5da57cf9f5308081f9` |
-| 10 | `theorem` | [comp_noncommCoprod](../../../../GroupTheoryAndGeneralizations/NoncommCoprod.lean/declarations/comp-noncommcoprod-source-edition-2.md) | 114 | `result-track:8e487463af9820c665ae780b812b21150757efdc77c3efb376a9fed0ce98d761` |
-| 11 | `lemma` | [noncommCoprod_injective](../../../../GroupTheoryAndGeneralizations/NoncommCoprod.lean/declarations/noncommcoprod-injective.md) | 123 | `result-track:ec11ed6fd3523d2ec5122ebc19d836c0b2c6d5b60985f0ccf16768330c11bd95` |
-| 12 | `lemma` | [noncommCoprod_range](../../../../GroupTheoryAndGeneralizations/NoncommCoprod.lean/declarations/noncommcoprod-range.md) | 138 | `result-track:9e8aaefb9495e67ba224f910bd9a6de2eaef7f092511a48ec551ec0296ef899c` |
+| 1 | `def` | [noncommCoprod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/NoncommCoprod.lean/declarations/noncommcoprod-source-edition-2.md) | 48 | `declaration-track:fb3be204a449aa90367c7912b7fed44317a9c3d3befc4316387ba003217b54fe` |
+| 2 | `theorem` | [noncommCoprod_apply'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/NoncommCoprod.lean/declarations/noncommcoprod-apply.md) | 55 | `result-track:2ef256e47fe715e99db5a4b0f9c07e767e81e915a864bbc1bf8ac4d9620eaed4` |
+| 3 | `theorem` | [comp_noncommCoprod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/NoncommCoprod.lean/declarations/comp-noncommcoprod.md) | 60 | `result-track:0e361d604004b9ddfd8c40183ce64bde6a81e8af7624d2efb5bbdb27bda8bf85` |
+| 4 | `def` | [noncommCoprod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/NoncommCoprod.lean/declarations/noncommcoprod.md) | 82 | `declaration-track:a6312c674cc74de5661031dedfe132fc75bbaf4edae5403e0d53f2e883ac0a65` |
+| 5 | `theorem` | [noncommCoprod_apply'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/NoncommCoprod.lean/declarations/noncommcoprod-apply-source-edition-2.md) | 90 | `result-track:36cd83ec341b416045d86e0dadc3af49f0e5a49671475e662054433eaad881dc` |
+| 6 | `theorem` | [noncommCoprod_comp_inl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/NoncommCoprod.lean/declarations/noncommcoprod-comp-inl.md) | 95 | `result-track:7afbdff98ce5e81389f3eedac3b7ec3d35e593c64694ada2fea8e6a026806af8` |
+| 7 | `theorem` | [noncommCoprod_comp_inr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/NoncommCoprod.lean/declarations/noncommcoprod-comp-inr.md) | 99 | `result-track:fdb8160b216452b5c7fa60984735c1284517aec3c3c8e382c19f8422a4e71b7f` |
+| 8 | `theorem` | [noncommCoprod_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/NoncommCoprod.lean/declarations/noncommcoprod-unique.md) | 103 | `result-track:3ce073d7320cac11039995c2a5c8c758cde3eeb0eaeccad6970b75ad9f4fd24e` |
+| 9 | `theorem` | [noncommCoprod_inl_inr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/NoncommCoprod.lean/declarations/noncommcoprod-inl-inr.md) | 109 | `result-track:562d62a6809eecd25e9f10341af9b678b5f7fec2bef56a5da57cf9f5308081f9` |
+| 10 | `theorem` | [comp_noncommCoprod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/NoncommCoprod.lean/declarations/comp-noncommcoprod-source-edition-2.md) | 114 | `result-track:8e487463af9820c665ae780b812b21150757efdc77c3efb376a9fed0ce98d761` |
+| 11 | `lemma` | [noncommCoprod_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/NoncommCoprod.lean/declarations/noncommcoprod-injective.md) | 123 | `result-track:ec11ed6fd3523d2ec5122ebc19d836c0b2c6d5b60985f0ccf16768330c11bd95` |
+| 12 | `lemma` | [noncommCoprod_range](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/NoncommCoprod.lean/declarations/noncommcoprod-range.md) | 138 | `result-track:9e8aaefb9495e67ba224f910bd9a6de2eaef7f092511a48ec551ec0296ef899c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

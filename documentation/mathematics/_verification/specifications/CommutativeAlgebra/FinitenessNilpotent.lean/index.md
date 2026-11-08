@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/FinitenessNilpotent.lean/index.md) · [Full source](../../../../CommutativeAlgebra/FinitenessNilpotent.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessNilpotent.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessNilpotent.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Module.End.isNilpotent_iff_of_finite](../../../../CommutativeAlgebra/FinitenessNilpotent.lean/declarations/module-end-isnilpotent-iff-of-finite.md) | 16 | `result-track:f1537c3f411f70b326b1e3f085611560727bc94f6467b8e03005bfd5ddf1df9b` |
+| 1 | `theorem` | [Module.End.isNilpotent_iff_of_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessNilpotent.lean/declarations/module-end-isnilpotent-iff-of-finite.md) | 16 | `result-track:f1537c3f411f70b326b1e3f085611560727bc94f6467b8e03005bfd5ddf1df9b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

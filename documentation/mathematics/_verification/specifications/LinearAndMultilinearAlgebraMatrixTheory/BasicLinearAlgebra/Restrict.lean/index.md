@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Restrict.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Restrict.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Restrict.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Restrict.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [AffineSubspace.nonempty_map](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Restrict.lean/declarations/affinesubspace-nonempty-map.md) | 31 | `result-track:3d3bb9a24e96b89a6533e649cdd4bf8200c4df08665f71161afd36ecb238ebb3` |
-| 2 | `def` | [AffineMap.restrict](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Restrict.lean/declarations/affinemap-restrict.md) | 39 | `declaration-track:33dfd43e1c1371eede9659702330dc095de55db8750ff788fe4ff349ec0b8608` |
-| 3 | `theorem` | [AffineMap.restrict.coe_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Restrict.lean/declarations/affinemap-restrict-coe-apply.md) | 50 | `result-track:73c3a827f6e74656f5798161901225c73aa3c755969c955a2149644e0c4306b4` |
-| 4 | `theorem` | [AffineMap.restrict.linear_aux](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Restrict.lean/declarations/affinemap-restrict-linear-aux.md) | 55 | `result-track:3da2fdb1c2786087b2d1ad74a0b1e7e224666d87f03764dd5a7181495590e183` |
-| 5 | `theorem` | [AffineMap.restrict.linear](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Restrict.lean/declarations/affinemap-restrict-linear.md) | 60 | `result-track:8982af7e0248cfa7a9cd44cf826fc08788422e1b7cd4153a3ec3b4b78db314fc` |
-| 6 | `theorem` | [AffineMap.restrict.injective](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Restrict.lean/declarations/affinemap-restrict-injective.md) | 65 | `result-track:1d4621b89d3144902b74d442dfac67e273d906ea42b9f2431205c268cda65524` |
-| 7 | `theorem` | [AffineMap.restrict.surjective](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Restrict.lean/declarations/affinemap-restrict-surjective.md) | 72 | `result-track:d1f3d3a81c8a4bbea988be051aec306166df4fe8adbe2f5b95829efe1136b9c6` |
-| 8 | `theorem` | [AffineMap.restrict.bijective](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Restrict.lean/declarations/affinemap-restrict-bijective.md) | 80 | `result-track:fb60c572f2a3f233004c2089bea53b511ec5762eb6630193aab36ea4802e7530` |
+| 1 | `theorem` | [AffineSubspace.nonempty_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Restrict.lean/declarations/affinesubspace-nonempty-map.md) | 31 | `result-track:3d3bb9a24e96b89a6533e649cdd4bf8200c4df08665f71161afd36ecb238ebb3` |
+| 2 | `def` | [AffineMap.restrict](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Restrict.lean/declarations/affinemap-restrict.md) | 39 | `declaration-track:33dfd43e1c1371eede9659702330dc095de55db8750ff788fe4ff349ec0b8608` |
+| 3 | `theorem` | [AffineMap.restrict.coe_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Restrict.lean/declarations/affinemap-restrict-coe-apply.md) | 50 | `result-track:73c3a827f6e74656f5798161901225c73aa3c755969c955a2149644e0c4306b4` |
+| 4 | `theorem` | [AffineMap.restrict.linear_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Restrict.lean/declarations/affinemap-restrict-linear-aux.md) | 55 | `result-track:3da2fdb1c2786087b2d1ad74a0b1e7e224666d87f03764dd5a7181495590e183` |
+| 5 | `theorem` | [AffineMap.restrict.linear](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Restrict.lean/declarations/affinemap-restrict-linear.md) | 60 | `result-track:8982af7e0248cfa7a9cd44cf826fc08788422e1b7cd4153a3ec3b4b78db314fc` |
+| 6 | `theorem` | [AffineMap.restrict.injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Restrict.lean/declarations/affinemap-restrict-injective.md) | 65 | `result-track:1d4621b89d3144902b74d442dfac67e273d906ea42b9f2431205c268cda65524` |
+| 7 | `theorem` | [AffineMap.restrict.surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Restrict.lean/declarations/affinemap-restrict-surjective.md) | 72 | `result-track:d1f3d3a81c8a4bbea988be051aec306166df4fe8adbe2f5b95829efe1136b9c6` |
+| 8 | `theorem` | [AffineMap.restrict.bijective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Restrict.lean/declarations/affinemap-restrict-bijective.md) | 80 | `result-track:fb60c572f2a3f233004c2089bea53b511ec5762eb6630193aab36ea4802e7530` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

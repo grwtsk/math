@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/HarmonicPartialSums.lean/index.md) · [Full source](../../../../Combinatorics/HarmonicPartialSums.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HarmonicPartialSums.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HarmonicPartialSums.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [harmonicPartial](../../../../Combinatorics/HarmonicPartialSums.lean/declarations/harmonicpartial.md) | 16 | `declaration-track:c4ba5d80bead62da1c375220e5afb49506d377aa2f1ebf00baca4e815bffd0c6` |
-| 2 | `theorem` | [harmonicPartial_nonneg](../../../../Combinatorics/HarmonicPartialSums.lean/declarations/harmonicpartial-nonneg.md) | 20 | `result-track:fdb55ddb5d641c54d2dbb1983f23c9abe497913d77264be2880dc30ea30abe2f` |
-| 3 | `theorem` | [harmonicPartial_mono](../../../../Combinatorics/HarmonicPartialSums.lean/declarations/harmonicpartial-mono.md) | 28 | `result-track:b3057190815f3f7b3611db9db8b8ae85651e8343989c4b7c9cbc577e626c5116` |
-| 4 | `theorem` | [harmonicPartial_eq_range_sum](../../../../Combinatorics/HarmonicPartialSums.lean/declarations/harmonicpartial-eq-range-sum.md) | 41 | `result-track:4eca15ff945f3188d52141cfb9ddac304e39581589667c8b4ee246fd0f62f0e5` |
-| 5 | `theorem` | [harmonicPartial_unbounded](../../../../Combinatorics/HarmonicPartialSums.lean/declarations/harmonicpartial-unbounded.md) | 70 | `result-track:f6733f30ee98fd93b0696ac2cdc861034dcfe63c671f53832c5d66f287cbea3a` |
+| 1 | `def` | [harmonicPartial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HarmonicPartialSums.lean/declarations/harmonicpartial.md) | 16 | `declaration-track:c4ba5d80bead62da1c375220e5afb49506d377aa2f1ebf00baca4e815bffd0c6` |
+| 2 | `theorem` | [harmonicPartial_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HarmonicPartialSums.lean/declarations/harmonicpartial-nonneg.md) | 20 | `result-track:fdb55ddb5d641c54d2dbb1983f23c9abe497913d77264be2880dc30ea30abe2f` |
+| 3 | `theorem` | [harmonicPartial_mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HarmonicPartialSums.lean/declarations/harmonicpartial-mono.md) | 28 | `result-track:b3057190815f3f7b3611db9db8b8ae85651e8343989c4b7c9cbc577e626c5116` |
+| 4 | `theorem` | [harmonicPartial_eq_range_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HarmonicPartialSums.lean/declarations/harmonicpartial-eq-range-sum.md) | 41 | `result-track:4eca15ff945f3188d52141cfb9ddac304e39581589667c8b4ee246fd0f62f0e5` |
+| 5 | `theorem` | [harmonicPartial_unbounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HarmonicPartialSums.lean/declarations/harmonicpartial-unbounded.md) | 70 | `result-track:f6733f30ee98fd93b0696ac2cdc861034dcfe63c671f53832c5d66f287cbea3a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

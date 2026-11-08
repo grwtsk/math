@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TorsionNamespaced.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TorsionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TorsionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TorsionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [nsmulPoint](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TorsionNamespaced.lean/declarations/nsmulpoint.md) | 27 | `declaration-track:47ba519fd2db99363dd3748b5c741f19751edf3fcb8fb7d8094bf485b56b6774` |
-| 2 | `def` | [IsTorsion](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TorsionNamespaced.lean/declarations/istorsion.md) | 34 | `declaration-track:d9bfa532e27b9c5dc326f299829b692fa8d1d97ab8948b99874aad65df372573` |
-| 3 | `def` | [HasOrder](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TorsionNamespaced.lean/declarations/hasorder.md) | 40 | `declaration-track:dc6dceeb64b76702bef0cc180d552ac89f367b07e80aac0691dfdf8afa1ffe13` |
-| 4 | `theorem` | [torsion_of_hasOrder](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TorsionNamespaced.lean/declarations/torsion-of-hasorder.md) | 48 | `result-track:51c0d01eb86fe2a5630bf4259c1ff384257ab7fa1546d5ec162a00c4b4dba833` |
+| 1 | `def` | [nsmulPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TorsionNamespaced.lean/declarations/nsmulpoint.md) | 27 | `declaration-track:47ba519fd2db99363dd3748b5c741f19751edf3fcb8fb7d8094bf485b56b6774` |
+| 2 | `def` | [IsTorsion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TorsionNamespaced.lean/declarations/istorsion.md) | 34 | `declaration-track:d9bfa532e27b9c5dc326f299829b692fa8d1d97ab8948b99874aad65df372573` |
+| 3 | `def` | [HasOrder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TorsionNamespaced.lean/declarations/hasorder.md) | 40 | `declaration-track:dc6dceeb64b76702bef0cc180d552ac89f367b07e80aac0691dfdf8afa1ffe13` |
+| 4 | `theorem` | [torsion_of_hasOrder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TorsionNamespaced.lean/declarations/torsion-of-hasorder.md) | 48 | `result-track:51c0d01eb86fe2a5630bf4259c1ff384257ab7fa1546d5ec162a00c4b4dba833` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

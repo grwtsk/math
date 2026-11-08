@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/StateDependentCorrections.lean/index.md) · [Full source](../../../../Combinatorics/StateDependentCorrections.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/StateDependentCorrections.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/StateDependentCorrections.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -48,7 +48,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 - `BitMatrix.Dynamics.Avalanche` — import line 19; external provider; requires a separately pinned dependency.
 - `Mathlib.Algebra.Order.BigOperators.Group.Finset` — import line 20; external provider; requires a separately pinned dependency.
-- [Round Composition](../../../../Combinatorics/RoundComposition.lean/index.md) — import line 22; pinned internal source present.
+- [Round Composition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RoundComposition.lean/index.md) — import line 22; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [addCorrection](../../../../Combinatorics/StateDependentCorrections.lean/declarations/addcorrection.md) | 64 | `declaration-track:3744cbb45765ddeb2d565bba7de0e4053f04b7e98b55be50782b2387848caa09` |
-| 2 | `theorem` | [identity_add_identity_correction](../../../../Combinatorics/StateDependentCorrections.lean/declarations/identity-add-identity-correction.md) | 68 | `result-track:fa0ddedbd026374a0b6dabfcef4bcb8525b1005fe2579f0c21f21bcfeb685f73` |
-| 3 | `theorem` | [identity_add_identity_not_injective](../../../../Combinatorics/StateDependentCorrections.lean/declarations/identity-add-identity-not-injective.md) | 77 | `result-track:baf7adbb4d72ead2e38c63e988faa55ca3022f0a312bd98d952ae42d8ac699ea` |
-| 4 | `theorem` | [state_dependent_correction_can_destroy_bijectivity](../../../../Combinatorics/StateDependentCorrections.lean/declarations/state-dependent-correction-can-destroy-bijectivity.md) | 90 | `result-track:b22b30881ffbeacafc405f31da194134ed12fe747f39d0ff69b5399dcdb9be87` |
-| 5 | `theorem` | [constant_translation_preserves_bijectivity](../../../../Combinatorics/StateDependentCorrections.lean/declarations/constant-translation-preserves-bijectivity.md) | 99 | `result-track:d412baa2eb9424f466c861dba050a14e3fc943f7d458236db7a3c8601dfaeac8` |
+| 1 | `def` | [addCorrection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/StateDependentCorrections.lean/declarations/addcorrection.md) | 64 | `declaration-track:3744cbb45765ddeb2d565bba7de0e4053f04b7e98b55be50782b2387848caa09` |
+| 2 | `theorem` | [identity_add_identity_correction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/StateDependentCorrections.lean/declarations/identity-add-identity-correction.md) | 68 | `result-track:fa0ddedbd026374a0b6dabfcef4bcb8525b1005fe2579f0c21f21bcfeb685f73` |
+| 3 | `theorem` | [identity_add_identity_not_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/StateDependentCorrections.lean/declarations/identity-add-identity-not-injective.md) | 77 | `result-track:baf7adbb4d72ead2e38c63e988faa55ca3022f0a312bd98d952ae42d8ac699ea` |
+| 4 | `theorem` | [state_dependent_correction_can_destroy_bijectivity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/StateDependentCorrections.lean/declarations/state-dependent-correction-can-destroy-bijectivity.md) | 90 | `result-track:b22b30881ffbeacafc405f31da194134ed12fe747f39d0ff69b5399dcdb9be87` |
+| 5 | `theorem` | [constant_translation_preserves_bijectivity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/StateDependentCorrections.lean/declarations/constant-translation-preserves-bijectivity.md) | 99 | `result-track:d412baa2eb9424f466c861dba050a14e3fc943f7d458236db7a3c8601dfaeac8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

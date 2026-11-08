@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/InvariantLawNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/InvariantLawNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/InvariantLawNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/InvariantLawNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [InvariantLawCertificate](../../../../Combinatorics/InvariantLawNamespaced.lean/declarations/invariantlawcertificate.md) | 17 | `declaration-track:60be4615f0aa9f348ba6c6d0b1a4b28e932e700214c6e56114a83d2436fb9057` |
-| 2 | `structure` | [FiniteInvariantLawExistenceObligation](../../../../Combinatorics/InvariantLawNamespaced.lean/declarations/finiteinvariantlawexistenceobligation.md) | 24 | `declaration-track:e4e51f10685b3c39b7e40eda830c26a1dfaee71beb8742b98ca56df9b0cf8d29` |
-| 3 | `inductive` | [BoundaryTailClassification](../../../../Combinatorics/InvariantLawNamespaced.lean/declarations/boundarytailclassification.md) | 30 | `declaration-track:f7e2f05354903076d7df974f216d613f45ee7d420d7e9f117f98470bad8cbb24` |
-| 4 | `structure` | [BoundaryTailCertificate](../../../../Combinatorics/InvariantLawNamespaced.lean/declarations/boundarytailcertificate.md) | 37 | `declaration-track:260fd36c4f3f337b25913ebd895a9d02563646d508bae17547ff4700fe18351d` |
-| 5 | `theorem` | [certified_invariant_laws_coincide](../../../../Combinatorics/InvariantLawNamespaced.lean/declarations/certified-invariant-laws-coincide.md) | 43 | `result-track:87c234e5485ef86258960b78422b8943fe2272eb3bff0ba0212060d53fc4f06c` |
+| 1 | `structure` | [InvariantLawCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/InvariantLawNamespaced.lean/declarations/invariantlawcertificate.md) | 17 | `declaration-track:60be4615f0aa9f348ba6c6d0b1a4b28e932e700214c6e56114a83d2436fb9057` |
+| 2 | `structure` | [FiniteInvariantLawExistenceObligation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/InvariantLawNamespaced.lean/declarations/finiteinvariantlawexistenceobligation.md) | 24 | `declaration-track:e4e51f10685b3c39b7e40eda830c26a1dfaee71beb8742b98ca56df9b0cf8d29` |
+| 3 | `inductive` | [BoundaryTailClassification](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/InvariantLawNamespaced.lean/declarations/boundarytailclassification.md) | 30 | `declaration-track:f7e2f05354903076d7df974f216d613f45ee7d420d7e9f117f98470bad8cbb24` |
+| 4 | `structure` | [BoundaryTailCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/InvariantLawNamespaced.lean/declarations/boundarytailcertificate.md) | 37 | `declaration-track:260fd36c4f3f337b25913ebd895a9d02563646d508bae17547ff4700fe18351d` |
+| 5 | `theorem` | [certified_invariant_laws_coincide](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/InvariantLawNamespaced.lean/declarations/certified-invariant-laws-coincide.md) | 43 | `result-track:87c234e5485ef86258960b78422b8943fe2272eb3bff0ba0212060d53fc4f06c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

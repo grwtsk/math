@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteCoverageHistoricalSourceEdition2.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteCoverageHistoricalSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteCoverageHistoricalSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteCoverageHistoricalSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,10 +60,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [forall_on_of_finite_cover](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteCoverageHistoricalSourceEdition2.lean/declarations/forall-on-of-finite-cover.md) | 30 | `result-track:d03b43192a31e6efdfb97e5955f68e567877da0af7dd967dbca55590997f4078` |
-| 2 | `theorem` | [forall_on_of_finite_cover_and_tail](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteCoverageHistoricalSourceEdition2.lean/declarations/forall-on-of-finite-cover-and-tail.md) | 43 | `result-track:984de041fe17fa2c450c59af02fe49c230127d7c3635d7272291e8a86c9f8818` |
-| 3 | `theorem` | [finite_range_does_not_imply_ray](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteCoverageHistoricalSourceEdition2.lean/declarations/finite-range-does-not-imply-ray.md) | 58 | `result-track:55651e804fa93cbed11066dc96417b06ce17cab7c11d93c6278069f4563be45b` |
-| 4 | `theorem` | [endpoints_do_not_cover_interval](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteCoverageHistoricalSourceEdition2.lean/declarations/endpoints-do-not-cover-interval.md) | 72 | `result-track:93e051b9b2acae676a51a236c8d38a769d27a27d70a8d3ec0f77583a7d106cc6` |
+| 1 | `theorem` | [forall_on_of_finite_cover](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteCoverageHistoricalSourceEdition2.lean/declarations/forall-on-of-finite-cover.md) | 30 | `result-track:d03b43192a31e6efdfb97e5955f68e567877da0af7dd967dbca55590997f4078` |
+| 2 | `theorem` | [forall_on_of_finite_cover_and_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteCoverageHistoricalSourceEdition2.lean/declarations/forall-on-of-finite-cover-and-tail.md) | 43 | `result-track:984de041fe17fa2c450c59af02fe49c230127d7c3635d7272291e8a86c9f8818` |
+| 3 | `theorem` | [finite_range_does_not_imply_ray](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteCoverageHistoricalSourceEdition2.lean/declarations/finite-range-does-not-imply-ray.md) | 58 | `result-track:55651e804fa93cbed11066dc96417b06ce17cab7c11d93c6278069f4563be45b` |
+| 4 | `theorem` | [endpoints_do_not_cover_interval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteCoverageHistoricalSourceEdition2.lean/declarations/endpoints-do-not-cover-interval.md) | 72 | `result-track:93e051b9b2acae676a51a236c8d38a769d27a27d70a8d3ec0f77583a7d106cc6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

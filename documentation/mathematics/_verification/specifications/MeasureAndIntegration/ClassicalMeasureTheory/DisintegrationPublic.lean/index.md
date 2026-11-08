@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/DisintegrationPublic.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/DisintegrationPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/DisintegrationPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/DisintegrationPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [LinearMap.exists_map_addHaar_eq_smul_addHaar'](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/DisintegrationPublic.lean/declarations/linearmap-exists-map-addhaar-eq-smul-addhaar.md) | 44 | `result-track:1f346bfb2de91fa803d208e1a4c0807434b22619913013061476404a4b4e3314` |
-| 2 | `theorem` | [LinearMap.exists_map_addHaar_eq_smul_addHaar](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/DisintegrationPublic.lean/declarations/linearmap-exists-map-addhaar-eq-smul-addhaar-source-edition-2.md) | 108 | `result-track:7626c8f5220c9f1006df8ae0dfa0de49aef814bffa46494c9ad8fd912517467d` |
-| 3 | `lemma` | [ae_comp_linearMap_mem_iff](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/DisintegrationPublic.lean/declarations/ae-comp-linearmap-mem-iff.md) | 117 | `result-track:49d4fe2eb0c225dbcfd69495a036b62e52ef092d100cd31bba26f4dd30aeeac1` |
-| 4 | `lemma` | [ae_ae_add_linearMap_mem_iff](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/DisintegrationPublic.lean/declarations/ae-ae-add-linearmap-mem-iff.md) | 129 | `result-track:a1726ce8d789a422d4c937574784eaf8812ba837a8fff3ab4438c3cc3e1eecc3` |
-| 5 | `lemma` | [ae_mem_of_ae_add_linearMap_mem](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/DisintegrationPublic.lean/declarations/ae-mem-of-ae-add-linearmap-mem.md) | 150 | `result-track:e144a96c40f10b1c056e8bb62a3ab6f05a4e1edad002d3f65309e4ebe637f04c` |
+| 1 | `theorem` | [LinearMap.exists_map_addHaar_eq_smul_addHaar'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/DisintegrationPublic.lean/declarations/linearmap-exists-map-addhaar-eq-smul-addhaar.md) | 44 | `result-track:1f346bfb2de91fa803d208e1a4c0807434b22619913013061476404a4b4e3314` |
+| 2 | `theorem` | [LinearMap.exists_map_addHaar_eq_smul_addHaar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/DisintegrationPublic.lean/declarations/linearmap-exists-map-addhaar-eq-smul-addhaar-source-edition-2.md) | 108 | `result-track:7626c8f5220c9f1006df8ae0dfa0de49aef814bffa46494c9ad8fd912517467d` |
+| 3 | `lemma` | [ae_comp_linearMap_mem_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/DisintegrationPublic.lean/declarations/ae-comp-linearmap-mem-iff.md) | 117 | `result-track:49d4fe2eb0c225dbcfd69495a036b62e52ef092d100cd31bba26f4dd30aeeac1` |
+| 4 | `lemma` | [ae_ae_add_linearMap_mem_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/DisintegrationPublic.lean/declarations/ae-ae-add-linearmap-mem-iff.md) | 129 | `result-track:a1726ce8d789a422d4c937574784eaf8812ba837a8fff3ab4438c3cc3e1eecc3` |
+| 5 | `lemma` | [ae_mem_of_ae_add_linearMap_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/DisintegrationPublic.lean/declarations/ae-mem-of-ae-add-linearmap-mem.md) | 150 | `result-track:e144a96c40f10b1c056e8bb62a3ab6f05a4e1edad002d3f65309e4ebe637f04c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

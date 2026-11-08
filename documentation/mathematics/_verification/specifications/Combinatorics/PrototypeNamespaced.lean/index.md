@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/PrototypeNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/PrototypeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrototypeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrototypeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,15 +59,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [prototypeAttentionRoots](../../../../Combinatorics/PrototypeNamespaced.lean/declarations/prototypeattentionroots.md) | 28 | `declaration-track:18c5798de5e0f8bb316c1d0db412aa3ca8a4d41991325ff34101f5ce90bd4fea` |
-| 2 | `def` | [prototypeActiveRegion](../../../../Combinatorics/PrototypeNamespaced.lean/declarations/prototypeactiveregion.md) | 32 | `declaration-track:2fef680c7d8dbad46ef9dfbd8687f98d8cc869c2c25a849adef37e04a5caaef9` |
-| 3 | `theorem` | [prototypeActiveRegion_eq_univ](../../../../Combinatorics/PrototypeNamespaced.lean/declarations/prototypeactiveregion-eq-univ.md) | 40 | `result-track:33b980fa04a31a19fc67959112f256b370f9c37f5f2575954f289152b55e7fec` |
-| 4 | `theorem` | [prototype_model_active](../../../../Combinatorics/PrototypeNamespaced.lean/declarations/prototype-model-active.md) | 45 | `result-track:5fa61744391f0e3279d71b31d918e4c983a45360b9c3df530ac51f2b8cdc6178` |
-| 5 | `theorem` | [prototype_selectedVersion_eq](../../../../Combinatorics/PrototypeNamespaced.lean/declarations/prototype-selectedversion-eq.md) | 51 | `result-track:ad9f33a8fc43207b002d59f0c59bfc2edf43b34acc689f7e3bacb434c51bc9ac` |
-| 6 | `theorem` | [prototype_no_omitted_dependencies](../../../../Combinatorics/PrototypeNamespaced.lean/declarations/prototype-no-omitted-dependencies.md) | 59 | `result-track:18c19876485d6198e773b80b7d54afad23458ce9816c3a1277398e445ec09d73` |
-| 7 | `theorem` | [prototypeActiveRegion_is_least](../../../../Combinatorics/PrototypeNamespaced.lean/declarations/prototypeactiveregion-is-least.md) | 64 | `result-track:84fe227d4a81e3d2c1866c56de2e8e8455ee671816dfae298330cb5a45cae6ab` |
-| 8 | `def` | [PrototypeStructuralCompletion](../../../../Combinatorics/PrototypeNamespaced.lean/declarations/prototypestructuralcompletion.md) | 83 | `declaration-track:51eac971730f4e4e8fcf0efd453916ff1bc92d4031ba94c398ed3425806aa852` |
-| 9 | `theorem` | [prototype_structural_completion](../../../../Combinatorics/PrototypeNamespaced.lean/declarations/prototype-structural-completion.md) | 92 | `result-track:fde707536b6ca3ac53bade45e80d9f8f518161d939bde3a7406523d5774cea83` |
+| 1 | `def` | [prototypeAttentionRoots](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrototypeNamespaced.lean/declarations/prototypeattentionroots.md) | 28 | `declaration-track:18c5798de5e0f8bb316c1d0db412aa3ca8a4d41991325ff34101f5ce90bd4fea` |
+| 2 | `def` | [prototypeActiveRegion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrototypeNamespaced.lean/declarations/prototypeactiveregion.md) | 32 | `declaration-track:2fef680c7d8dbad46ef9dfbd8687f98d8cc869c2c25a849adef37e04a5caaef9` |
+| 3 | `theorem` | [prototypeActiveRegion_eq_univ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrototypeNamespaced.lean/declarations/prototypeactiveregion-eq-univ.md) | 40 | `result-track:33b980fa04a31a19fc67959112f256b370f9c37f5f2575954f289152b55e7fec` |
+| 4 | `theorem` | [prototype_model_active](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrototypeNamespaced.lean/declarations/prototype-model-active.md) | 45 | `result-track:5fa61744391f0e3279d71b31d918e4c983a45360b9c3df530ac51f2b8cdc6178` |
+| 5 | `theorem` | [prototype_selectedVersion_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrototypeNamespaced.lean/declarations/prototype-selectedversion-eq.md) | 51 | `result-track:ad9f33a8fc43207b002d59f0c59bfc2edf43b34acc689f7e3bacb434c51bc9ac` |
+| 6 | `theorem` | [prototype_no_omitted_dependencies](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrototypeNamespaced.lean/declarations/prototype-no-omitted-dependencies.md) | 59 | `result-track:18c19876485d6198e773b80b7d54afad23458ce9816c3a1277398e445ec09d73` |
+| 7 | `theorem` | [prototypeActiveRegion_is_least](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrototypeNamespaced.lean/declarations/prototypeactiveregion-is-least.md) | 64 | `result-track:84fe227d4a81e3d2c1866c56de2e8e8455ee671816dfae298330cb5a45cae6ab` |
+| 8 | `def` | [PrototypeStructuralCompletion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrototypeNamespaced.lean/declarations/prototypestructuralcompletion.md) | 83 | `declaration-track:51eac971730f4e4e8fcf0efd453916ff1bc92d4031ba94c398ed3425806aa852` |
+| 9 | `theorem` | [prototype_structural_completion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrototypeNamespaced.lean/declarations/prototype-structural-completion.md) | 92 | `result-track:fde707536b6ca3ac53bade45e80d9f8f518161d939bde3a7406523d5774cea83` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/BimodulePublic.lean/index.md) · [Full source](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/BimodulePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/BimodulePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/BimodulePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mk](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/BimodulePublic.lean/declarations/mk.md) | 82 | `declaration-track:3129ddd3a76c13ba70c0728cd06a61792cad09ad5e6bef7a8c9028223af4424f` |
-| 2 | `theorem` | [smul_mem](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/BimodulePublic.lean/declarations/smul-mem.md) | 91 | `result-track:b66eb1bf9b71f4d2a7464deceda81e6655e087d1b3826f6759597d818494f613` |
-| 3 | `theorem` | [smul_mem'](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/BimodulePublic.lean/declarations/smul-mem-source-edition-2.md) | 95 | `result-track:ffe59ca988446f803b68b6eab4d9575d258514f3d86e403f11a4f3848dbcf97b` |
-| 4 | `def` | [baseChange](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/BimodulePublic.lean/declarations/basechange.md) | 102 | `declaration-track:0d75ab7f884c92bc717aaaa118a2018055e2ac38eb801001658bd7d1da97b1bd` |
-| 5 | `def` | [toSubmodule](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/BimodulePublic.lean/declarations/tosubmodule-source-edition-2.md) | 109 | `declaration-track:3cd83d150eb3ec6a086c1f43b81ba104676975d153e331bd046f6a9248d6dd19` |
-| 6 | `def` | [toSubmodule'](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/BimodulePublic.lean/declarations/tosubmodule.md) | 116 | `declaration-track:290d793a119776332ef07176dabc98b9a88a57a36dc4a26171bccc6e0436c816` |
-| 7 | `def` | [toSubbimoduleInt](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/BimodulePublic.lean/declarations/tosubbimoduleint.md) | 131 | `declaration-track:0dcccf5c142087391b21c147e725e7ee9516b29aa879d6b6b92435738c605e2b` |
-| 8 | `def` | [toSubbimoduleNat](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/BimodulePublic.lean/declarations/tosubbimodulenat.md) | 137 | `declaration-track:8f591438acf528e2c39e6f00a7e1d133ff4e88f90adc1a9246fbf8a81cab6994` |
+| 1 | `def` | [mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/BimodulePublic.lean/declarations/mk.md) | 82 | `declaration-track:3129ddd3a76c13ba70c0728cd06a61792cad09ad5e6bef7a8c9028223af4424f` |
+| 2 | `theorem` | [smul_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/BimodulePublic.lean/declarations/smul-mem.md) | 91 | `result-track:b66eb1bf9b71f4d2a7464deceda81e6655e087d1b3826f6759597d818494f613` |
+| 3 | `theorem` | [smul_mem'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/BimodulePublic.lean/declarations/smul-mem-source-edition-2.md) | 95 | `result-track:ffe59ca988446f803b68b6eab4d9575d258514f3d86e403f11a4f3848dbcf97b` |
+| 4 | `def` | [baseChange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/BimodulePublic.lean/declarations/basechange.md) | 102 | `declaration-track:0d75ab7f884c92bc717aaaa118a2018055e2ac38eb801001658bd7d1da97b1bd` |
+| 5 | `def` | [toSubmodule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/BimodulePublic.lean/declarations/tosubmodule-source-edition-2.md) | 109 | `declaration-track:3cd83d150eb3ec6a086c1f43b81ba104676975d153e331bd046f6a9248d6dd19` |
+| 6 | `def` | [toSubmodule'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/BimodulePublic.lean/declarations/tosubmodule.md) | 116 | `declaration-track:290d793a119776332ef07176dabc98b9a88a57a36dc4a26171bccc6e0436c816` |
+| 7 | `def` | [toSubbimoduleInt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/BimodulePublic.lean/declarations/tosubbimoduleint.md) | 131 | `declaration-track:0dcccf5c142087391b21c147e725e7ee9516b29aa879d6b6b92435738c605e2b` |
+| 8 | `def` | [toSubbimoduleNat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/BimodulePublic.lean/declarations/tosubbimodulenat.md) | 137 | `declaration-track:8f591438acf528e2c39e6f00a7e1d133ff4e88f90adc1a9246fbf8a81cab6994` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

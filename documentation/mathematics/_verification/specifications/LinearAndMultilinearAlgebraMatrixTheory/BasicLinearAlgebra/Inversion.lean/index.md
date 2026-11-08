@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Inversion.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Inversion.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Inversion.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Inversion.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [invertibleιOfInvertible](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Inversion.lean/declarations/invertible-ofinvertible.md) | 22 | `declaration-track:ea4d99ba1f4b15b5d0461f054097bdcc89279adc4fb806673e99185ef4e95859` |
-| 2 | `theorem` | [invOf_ι](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Inversion.lean/declarations/invof.md) | 30 | `result-track:bb9c5653b2ee6585b17d8c45f7ed64a52d823817ac6aea61c6590d05ee94e31e` |
-| 3 | `theorem` | [isUnit_ι_of_isUnit](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Inversion.lean/declarations/isunit-of-isunit.md) | 35 | `result-track:e61a339392e9243ce4ea878472ca220acbab762f4fedf0632114050d827cf2c1` |
-| 4 | `theorem` | [ι_mul_ι_mul_invOf_ι](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Inversion.lean/declarations/mul-mul-invof.md) | 41 | `result-track:632893c6389d9cf96a4fd18c4c1eaed968d9f11b7643429d3ae5a17f115219e4` |
-| 5 | `theorem` | [invOf_ι_mul_ι_mul_ι](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Inversion.lean/declarations/invof-mul-mul.md) | 47 | `result-track:028909224e556e80810b7d492075023b017c5809e02bf084afca8dcc84932d5d` |
-| 6 | `def` | [invertibleOfInvertibleι](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Inversion.lean/declarations/invertibleofinvertible.md) | 56 | `declaration-track:40f4115e8f68939ae6a625c7f63821ecc7af56b63195605b77cc803118054fb0` |
-| 7 | `theorem` | [isUnit_of_isUnit_ι](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Inversion.lean/declarations/isunit-of-isunit-source-edition-2.md) | 61 | `result-track:f1259687b36152c1906d966600ff8904063967b162fae5a4cf69432535777eb8` |
-| 8 | `theorem` | [isUnit_ι_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Inversion.lean/declarations/isunit-iff.md) | 66 | `result-track:63dc71e53f37b2b115d294de081d59b83395450e26781585645b793bab7591c5` |
+| 1 | `def` | [invertibleιOfInvertible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Inversion.lean/declarations/invertible-ofinvertible.md) | 22 | `declaration-track:ea4d99ba1f4b15b5d0461f054097bdcc89279adc4fb806673e99185ef4e95859` |
+| 2 | `theorem` | [invOf_ι](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Inversion.lean/declarations/invof.md) | 30 | `result-track:bb9c5653b2ee6585b17d8c45f7ed64a52d823817ac6aea61c6590d05ee94e31e` |
+| 3 | `theorem` | [isUnit_ι_of_isUnit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Inversion.lean/declarations/isunit-of-isunit.md) | 35 | `result-track:e61a339392e9243ce4ea878472ca220acbab762f4fedf0632114050d827cf2c1` |
+| 4 | `theorem` | [ι_mul_ι_mul_invOf_ι](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Inversion.lean/declarations/mul-mul-invof.md) | 41 | `result-track:632893c6389d9cf96a4fd18c4c1eaed968d9f11b7643429d3ae5a17f115219e4` |
+| 5 | `theorem` | [invOf_ι_mul_ι_mul_ι](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Inversion.lean/declarations/invof-mul-mul.md) | 47 | `result-track:028909224e556e80810b7d492075023b017c5809e02bf084afca8dcc84932d5d` |
+| 6 | `def` | [invertibleOfInvertibleι](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Inversion.lean/declarations/invertibleofinvertible.md) | 56 | `declaration-track:40f4115e8f68939ae6a625c7f63821ecc7af56b63195605b77cc803118054fb0` |
+| 7 | `theorem` | [isUnit_of_isUnit_ι](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Inversion.lean/declarations/isunit-of-isunit-source-edition-2.md) | 61 | `result-track:f1259687b36152c1906d966600ff8904063967b162fae5a4cf69432535777eb8` |
+| 8 | `theorem` | [isUnit_ι_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Inversion.lean/declarations/isunit-iff.md) | 66 | `result-track:63dc71e53f37b2b115d294de081d59b83395450e26781585645b793bab7591c5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

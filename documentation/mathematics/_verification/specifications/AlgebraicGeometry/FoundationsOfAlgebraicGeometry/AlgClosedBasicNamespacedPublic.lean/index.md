@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgClosedBasicNamespacedPublic.lean/index.md) · [Full source](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgClosedBasicNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgClosedBasicNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgClosedBasicNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [residueFieldIsoBase](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgClosedBasicNamespacedPublic.lean/declarations/residuefieldisobase.md) | 41 | `declaration-track:e757ea9437056d8fcba48ab2a6f88607df4b6943d39f83aed01ce6bdc6893fca` |
-| 2 | `lemma` | [SpecMap_residueFieldIsoBase_inv](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgClosedBasicNamespacedPublic.lean/declarations/specmap-residuefieldisobase-inv.md) | 54 | `result-track:7057143b18ad1d79c1a3fe4d2e8c0da4baaaf0a1ce6e3dd8669fd8ca4041f9cc` |
-| 3 | `def` | [pointOfClosedPoint](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgClosedBasicNamespacedPublic.lean/declarations/pointofclosedpoint.md) | 60 | `declaration-track:cdcacaf4532fbafb8321e071d14e5c30b338d6b7d4f2e1ef74b895fe2b32118c` |
-| 4 | `lemma` | [pointOfClosedPoint_comp](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgClosedBasicNamespacedPublic.lean/declarations/pointofclosedpoint-comp.md) | 64 | `result-track:15d754455bb28111ccc57eff92326b7cdb931992e68cc08367c28f176db73ba0` |
-| 5 | `lemma` | [pointOfClosedPoint_apply](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgClosedBasicNamespacedPublic.lean/declarations/pointofclosedpoint-apply.md) | 68 | `result-track:075cfd11debfceb9816c6ce4162c4613334120400bdd84f019513e0a31d6e1d1` |
-| 6 | `def` | [pointEquivClosedPoint](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgClosedBasicNamespacedPublic.lean/declarations/pointequivclosedpoint.md) | 76 | `declaration-track:ead1ac3ea676a904bdae7a8a0ee51467dfac1233d810c53dd5510aa3e38422b6` |
-| 7 | `lemma` | [ext_of_apply_closedPoint_eq](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgClosedBasicNamespacedPublic.lean/declarations/ext-of-apply-closedpoint-eq.md) | 97 | `result-track:230267a0e81b1912a8451cb7d2b95197a919624e1b0ce69b0f216abfa67ea85f` |
-| 8 | `lemma` | [ext_of_apply_eq](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgClosedBasicNamespacedPublic.lean/declarations/ext-of-apply-eq.md) | 108 | `result-track:0b8e28a60258023fcbe837004be50b9121f1582a2b49ab1e6c75aabc3eba2bb2` |
+| 1 | `def` | [residueFieldIsoBase](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgClosedBasicNamespacedPublic.lean/declarations/residuefieldisobase.md) | 41 | `declaration-track:e757ea9437056d8fcba48ab2a6f88607df4b6943d39f83aed01ce6bdc6893fca` |
+| 2 | `lemma` | [SpecMap_residueFieldIsoBase_inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgClosedBasicNamespacedPublic.lean/declarations/specmap-residuefieldisobase-inv.md) | 54 | `result-track:7057143b18ad1d79c1a3fe4d2e8c0da4baaaf0a1ce6e3dd8669fd8ca4041f9cc` |
+| 3 | `def` | [pointOfClosedPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgClosedBasicNamespacedPublic.lean/declarations/pointofclosedpoint.md) | 60 | `declaration-track:cdcacaf4532fbafb8321e071d14e5c30b338d6b7d4f2e1ef74b895fe2b32118c` |
+| 4 | `lemma` | [pointOfClosedPoint_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgClosedBasicNamespacedPublic.lean/declarations/pointofclosedpoint-comp.md) | 64 | `result-track:15d754455bb28111ccc57eff92326b7cdb931992e68cc08367c28f176db73ba0` |
+| 5 | `lemma` | [pointOfClosedPoint_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgClosedBasicNamespacedPublic.lean/declarations/pointofclosedpoint-apply.md) | 68 | `result-track:075cfd11debfceb9816c6ce4162c4613334120400bdd84f019513e0a31d6e1d1` |
+| 6 | `def` | [pointEquivClosedPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgClosedBasicNamespacedPublic.lean/declarations/pointequivclosedpoint.md) | 76 | `declaration-track:ead1ac3ea676a904bdae7a8a0ee51467dfac1233d810c53dd5510aa3e38422b6` |
+| 7 | `lemma` | [ext_of_apply_closedPoint_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgClosedBasicNamespacedPublic.lean/declarations/ext-of-apply-closedpoint-eq.md) | 97 | `result-track:230267a0e81b1912a8451cb7d2b95197a919624e1b0ce69b0f216abfa67ea85f` |
+| 8 | `lemma` | [ext_of_apply_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgClosedBasicNamespacedPublic.lean/declarations/ext-of-apply-eq.md) | 108 | `result-track:0b8e28a60258023fcbe837004be50b9121f1582a2b49ab1e6c75aabc3eba2bb2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

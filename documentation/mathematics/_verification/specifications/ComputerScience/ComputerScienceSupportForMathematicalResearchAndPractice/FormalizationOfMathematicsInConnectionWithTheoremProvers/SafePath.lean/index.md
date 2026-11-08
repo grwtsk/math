@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SafePath.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SafePath.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SafePath.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SafePath.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SafeRelPath](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SafePath.lean/declarations/saferelpath.md) | 18 | `declaration-track:70e4619aee16b2e4771e6bbcf48d163d5945114f4abd751ab966cc6d5626593d` |
-| 2 | `theorem` | [safeRelPath_no_dotdot](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SafePath.lean/declarations/saferelpath-no-dotdot.md) | 25 | `result-track:6a95020c3afd7cb88b167d939ff8c74a9a28201c8a999980f2135222b7bfc1d5` |
-| 3 | `theorem` | [safeRelPath_not_empty](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SafePath.lean/declarations/saferelpath-not-empty.md) | 30 | `result-track:f169db0bcd30cc1fdd9132bb2623fe0f021ae94dde4a5f02657614a731cf2305` |
+| 1 | `structure` | [SafeRelPath](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SafePath.lean/declarations/saferelpath.md) | 18 | `declaration-track:70e4619aee16b2e4771e6bbcf48d163d5945114f4abd751ab966cc6d5626593d` |
+| 2 | `theorem` | [safeRelPath_no_dotdot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SafePath.lean/declarations/saferelpath-no-dotdot.md) | 25 | `result-track:6a95020c3afd7cb88b167d939ff8c74a9a28201c8a999980f2135222b7bfc1d5` |
+| 3 | `theorem` | [safeRelPath_not_empty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SafePath.lean/declarations/saferelpath-not-empty.md) | 30 | `result-track:f169db0bcd30cc1fdd9132bb2623fe0f021ae94dde4a5f02657614a731cf2305` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

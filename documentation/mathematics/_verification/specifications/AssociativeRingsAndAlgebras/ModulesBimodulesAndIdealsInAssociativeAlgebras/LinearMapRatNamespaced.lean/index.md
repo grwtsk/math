@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/LinearMapRatNamespaced.lean/index.md) · [Full source](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/LinearMapRatNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/LinearMapRatNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/LinearMapRatNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [AddMonoidHom.toRatLinearMap](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/LinearMapRatNamespaced.lean/declarations/addmonoidhom-toratlinearmap.md) | 27 | `declaration-track:275a421856002bc87deedc98fb331a3521b9ea0a1699f450944c7bf4f959a32c` |
-| 2 | `theorem` | [AddMonoidHom.toRatLinearMap_injective](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/LinearMapRatNamespaced.lean/declarations/addmonoidhom-toratlinearmap-injective.md) | 31 | `result-track:315141cec522c1a1c643976cdff48460cbf47f385b376d522b839c1f51f6b73f` |
-| 3 | `theorem` | [AddMonoidHom.coe_toRatLinearMap](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/LinearMapRatNamespaced.lean/declarations/addmonoidhom-coe-toratlinearmap.md) | 38 | `result-track:e00cd7abfd7c1c67e33e2fb0664f6c34d934b8748fb6ed1bed78afb06aa65586` |
+| 1 | `def` | [AddMonoidHom.toRatLinearMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/LinearMapRatNamespaced.lean/declarations/addmonoidhom-toratlinearmap.md) | 27 | `declaration-track:275a421856002bc87deedc98fb331a3521b9ea0a1699f450944c7bf4f959a32c` |
+| 2 | `theorem` | [AddMonoidHom.toRatLinearMap_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/LinearMapRatNamespaced.lean/declarations/addmonoidhom-toratlinearmap-injective.md) | 31 | `result-track:315141cec522c1a1c643976cdff48460cbf47f385b376d522b839c1f51f6b73f` |
+| 3 | `theorem` | [AddMonoidHom.coe_toRatLinearMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/LinearMapRatNamespaced.lean/declarations/addmonoidhom-coe-toratlinearmap.md) | 38 | `result-track:e00cd7abfd7c1c67e33e2fb0664f6c34d934b8748fb6ed1bed78afb06aa65586` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

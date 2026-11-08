@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/Jesse.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/Jesse.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Jesse.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Jesse.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `axiom` | [Ring](../../../../AssociativeRingsAndAlgebras/Jesse.lean/declarations/ring.md) | 11 | `declaration-track:c6560d20c00256323ef5a2d6a60f91af80274aed04e837b731767d2f18dabedc` |
-| 2 | `axiom` | [Morphism](../../../../AssociativeRingsAndAlgebras/Jesse.lean/declarations/morphism.md) | 12 | `declaration-track:85c8913cae881f81b99099e9df1d07fac3dcc75d033fc4517409148af2fbb810` |
-| 3 | `axiom` | [ZZ](../../../../AssociativeRingsAndAlgebras/Jesse.lean/declarations/zz.md) | 15 | `declaration-track:4c2c35c7062a15e3709a2b9d2662fac0234c7bd8e3d22b51edc63d2601a994be` |
-| 4 | `axiom` | [f](../../../../AssociativeRingsAndAlgebras/Jesse.lean/declarations/f.md) | 18 | `declaration-track:4147a4c843e961d3f4ba24c26f4c4c9d0b6a8b0d0d52cae4e8881b651ac044df` |
-| 5 | `example` | [(anonymous)](../../../../AssociativeRingsAndAlgebras/Jesse.lean/declarations/example-source-edition-2.md) | 20 | `declaration-track:d0471ad1bd2700160923df21b3d11516d5b8832a0e090aefb6b7d76217d203a3` |
-| 6 | `axiom` | [domain](../../../../AssociativeRingsAndAlgebras/Jesse.lean/declarations/domain.md) | 23 | `declaration-track:0821f791a9440b527127d55940a24e7198501f23a2c8754dd6a4b2f3fe60c05a` |
-| 7 | `axiom` | [ZZ_domain](../../../../AssociativeRingsAndAlgebras/Jesse.lean/declarations/zz-domain.md) | 26 | `declaration-track:994e43651358609ba7770314047840248205d7956ef478829459812c825d68e0` |
-| 8 | `example` | [(anonymous)](../../../../AssociativeRingsAndAlgebras/Jesse.lean/declarations/example.md) | 28 | `declaration-track:7969e5b1d9e240d75214820f0dca736c0fc84887d0fa4137df570bf5b61711a6` |
+| 1 | `axiom` | [Ring](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Jesse.lean/declarations/ring.md) | 11 | `declaration-track:c6560d20c00256323ef5a2d6a60f91af80274aed04e837b731767d2f18dabedc` |
+| 2 | `axiom` | [Morphism](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Jesse.lean/declarations/morphism.md) | 12 | `declaration-track:85c8913cae881f81b99099e9df1d07fac3dcc75d033fc4517409148af2fbb810` |
+| 3 | `axiom` | [ZZ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Jesse.lean/declarations/zz.md) | 15 | `declaration-track:4c2c35c7062a15e3709a2b9d2662fac0234c7bd8e3d22b51edc63d2601a994be` |
+| 4 | `axiom` | [f](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Jesse.lean/declarations/f.md) | 18 | `declaration-track:4147a4c843e961d3f4ba24c26f4c4c9d0b6a8b0d0d52cae4e8881b651ac044df` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Jesse.lean/declarations/example-source-edition-2.md) | 20 | `declaration-track:d0471ad1bd2700160923df21b3d11516d5b8832a0e090aefb6b7d76217d203a3` |
+| 6 | `axiom` | [domain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Jesse.lean/declarations/domain.md) | 23 | `declaration-track:0821f791a9440b527127d55940a24e7198501f23a2c8754dd6a4b2f3fe60c05a` |
+| 7 | `axiom` | [ZZ_domain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Jesse.lean/declarations/zz-domain.md) | 26 | `declaration-track:994e43651358609ba7770314047840248205d7956ef478829459812c825d68e0` |
+| 8 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Jesse.lean/declarations/example.md) | 28 | `declaration-track:7969e5b1d9e240d75214820f0dca736c0fc84887d0fa4137df570bf5b61711a6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

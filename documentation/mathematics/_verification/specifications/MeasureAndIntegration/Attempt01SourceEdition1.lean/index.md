@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/Attempt01SourceEdition1.lean/index.md) · [Full source](../../../../MeasureAndIntegration/Attempt01SourceEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01SourceEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01SourceEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,15 +60,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [compactLaplace](../../../../MeasureAndIntegration/Attempt01SourceEdition1.lean/declarations/compactlaplace.md) | 21 | `declaration-track:12a161060f4dd98f563e801b296ffc67aa6446febc951bababf952d7b9d004e6` |
-| 2 | `def` | [primitiveTransform](../../../../MeasureAndIntegration/Attempt01SourceEdition1.lean/declarations/primitivetransform.md) | 24 | `declaration-track:0541b884b9667e3dda050b3b83e997e7e9b9bb7bb2d00234e79862ca773a14f3` |
-| 3 | `def` | [normalizedPrimitiveTransform](../../../../MeasureAndIntegration/Attempt01SourceEdition1.lean/declarations/normalizedprimitivetransform.md) | 26 | `declaration-track:ce74c82f18d5c1b3cf9a4a27c3d0b9e7ad68926fb3e777b5cf46d3007214d4de` |
-| 4 | `theorem` | [compactLaplace_integrable](../../../../MeasureAndIntegration/Attempt01SourceEdition1.lean/declarations/compactlaplace-integrable.md) | 29 | `result-track:24d10eea24467c85878edb95f5812e98e68fc754e2f769fa2fa461dedc1aad1e` |
-| 5 | `theorem` | [complex_weighted_derivative](../../../../MeasureAndIntegration/Attempt01SourceEdition1.lean/declarations/complex-weighted-derivative.md) | 36 | `result-track:2195b9f1586671faa0cc96a093e8bed811f727e29ee050e29b212742dac8ee0a` |
-| 6 | `theorem` | [actual_complex_pole_filter](../../../../MeasureAndIntegration/Attempt01SourceEdition1.lean/declarations/actual-complex-pole-filter.md) | 65 | `result-track:8b7d3ac47febc6b814c97eb249b3ad609f734a97a6de41ca388090b74c681082` |
-| 7 | `theorem` | [primitive_transform_normalization](../../../../MeasureAndIntegration/Attempt01SourceEdition1.lean/declarations/primitive-transform-normalization.md) | 92 | `result-track:f5b849ff70f3ba831149b16d82374364508c2011a483f9a179da4e55850539b8` |
-| 8 | `theorem` | [boundary_transform_factored](../../../../MeasureAndIntegration/Attempt01SourceEdition1.lean/declarations/boundary-transform-factored.md) | 102 | `result-track:96b55f1f01dc348dd3c4fd91795b081bc9d1874d979b29a4a758ae7be6a7fdd6` |
-| 9 | `theorem` | [boundary_transform_factored_unnormalized](../../../../MeasureAndIntegration/Attempt01SourceEdition1.lean/declarations/boundary-transform-factored-unnormalized.md) | 109 | `result-track:f64290c100f36002bf26b0ab4255f374815d53ce4037dbf551e49a296e9dbc08` |
+| 1 | `def` | [compactLaplace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01SourceEdition1.lean/declarations/compactlaplace.md) | 21 | `declaration-track:12a161060f4dd98f563e801b296ffc67aa6446febc951bababf952d7b9d004e6` |
+| 2 | `def` | [primitiveTransform](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01SourceEdition1.lean/declarations/primitivetransform.md) | 24 | `declaration-track:0541b884b9667e3dda050b3b83e997e7e9b9bb7bb2d00234e79862ca773a14f3` |
+| 3 | `def` | [normalizedPrimitiveTransform](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01SourceEdition1.lean/declarations/normalizedprimitivetransform.md) | 26 | `declaration-track:ce74c82f18d5c1b3cf9a4a27c3d0b9e7ad68926fb3e777b5cf46d3007214d4de` |
+| 4 | `theorem` | [compactLaplace_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01SourceEdition1.lean/declarations/compactlaplace-integrable.md) | 29 | `result-track:24d10eea24467c85878edb95f5812e98e68fc754e2f769fa2fa461dedc1aad1e` |
+| 5 | `theorem` | [complex_weighted_derivative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01SourceEdition1.lean/declarations/complex-weighted-derivative.md) | 36 | `result-track:2195b9f1586671faa0cc96a093e8bed811f727e29ee050e29b212742dac8ee0a` |
+| 6 | `theorem` | [actual_complex_pole_filter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01SourceEdition1.lean/declarations/actual-complex-pole-filter.md) | 65 | `result-track:8b7d3ac47febc6b814c97eb249b3ad609f734a97a6de41ca388090b74c681082` |
+| 7 | `theorem` | [primitive_transform_normalization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01SourceEdition1.lean/declarations/primitive-transform-normalization.md) | 92 | `result-track:f5b849ff70f3ba831149b16d82374364508c2011a483f9a179da4e55850539b8` |
+| 8 | `theorem` | [boundary_transform_factored](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01SourceEdition1.lean/declarations/boundary-transform-factored.md) | 102 | `result-track:96b55f1f01dc348dd3c4fd91795b081bc9d1874d979b29a4a758ae7be6a7fdd6` |
+| 9 | `theorem` | [boundary_transform_factored_unnormalized](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01SourceEdition1.lean/declarations/boundary-transform-factored-unnormalized.md) | 109 | `result-track:f64290c100f36002bf26b0ab4255f374815d53ce4037dbf551e49a296e9dbc08` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

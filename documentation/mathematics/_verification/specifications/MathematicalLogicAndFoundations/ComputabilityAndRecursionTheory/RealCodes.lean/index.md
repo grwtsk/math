@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/RealCodes.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/RealCodes.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/RealCodes.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/RealCodes.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ComputableAlgebraicMatrixCode](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/RealCodes.lean/declarations/computablealgebraicmatrixcode.md) | 5 | `declaration-track:1d73e792b6fe2bc2bf53923a15554f5774c388c1fc956e55ac4f0c5e75d3894b` |
-| 2 | `structure` | [OracleRealMatrixCode](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/RealCodes.lean/declarations/oraclerealmatrixcode.md) | 10 | `declaration-track:3fe281b420aa65f7d4f86ba67e805272e6a45d58c0819952e34ff9599cdab9b9` |
-| 3 | `theorem` | [computable_algebraic_certificate_projects](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/RealCodes.lean/declarations/computable-algebraic-certificate-projects.md) | 16 | `result-track:9ad64259c4c3cf20b5e535870d5057a20bc10241ea813eaab956470496339dcd` |
-| 4 | `theorem` | [oracle_real_is_oracle_relative](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/RealCodes.lean/declarations/oracle-real-is-oracle-relative.md) | 22 | `result-track:de0c5640cf749b29cbd217f8239354b9e9745dca626fbdf976a1f1df79ffb45b` |
-| 5 | `theorem` | [oracle_real_boundary_visible](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/RealCodes.lean/declarations/oracle-real-boundary-visible.md) | 28 | `result-track:a0baaf9f4ab823a8f734cacb48c3e7e04cefcf7a7d215e75777409b1389eecbd` |
+| 1 | `structure` | [ComputableAlgebraicMatrixCode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/RealCodes.lean/declarations/computablealgebraicmatrixcode.md) | 5 | `declaration-track:1d73e792b6fe2bc2bf53923a15554f5774c388c1fc956e55ac4f0c5e75d3894b` |
+| 2 | `structure` | [OracleRealMatrixCode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/RealCodes.lean/declarations/oraclerealmatrixcode.md) | 10 | `declaration-track:3fe281b420aa65f7d4f86ba67e805272e6a45d58c0819952e34ff9599cdab9b9` |
+| 3 | `theorem` | [computable_algebraic_certificate_projects](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/RealCodes.lean/declarations/computable-algebraic-certificate-projects.md) | 16 | `result-track:9ad64259c4c3cf20b5e535870d5057a20bc10241ea813eaab956470496339dcd` |
+| 4 | `theorem` | [oracle_real_is_oracle_relative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/RealCodes.lean/declarations/oracle-real-is-oracle-relative.md) | 22 | `result-track:de0c5640cf749b29cbd217f8239354b9e9745dca626fbdf976a1f1df79ffb45b` |
+| 5 | `theorem` | [oracle_real_boundary_visible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/RealCodes.lean/declarations/oracle-real-boundary-visible.md) | 28 | `result-track:a0baaf9f4ab823a8f734cacb48c3e7e04cefcf7a7d215e75777409b1389eecbd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

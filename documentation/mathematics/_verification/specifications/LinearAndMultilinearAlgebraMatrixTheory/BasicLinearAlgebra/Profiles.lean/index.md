@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Profiles.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Profiles.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Profiles.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Profiles.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,21 +46,21 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.InformationTheory.ReedSolomon.Certificate0`](../../../../../Combinatorics/Certificate0.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.InformationTheory.ReedSolomon.Certificate1`](../../../../../Combinatorics/Certificate1.lean/index.md) — import line 2; pinned internal source present.
-- [`GRWTSK.InformationTheory.ReedSolomon.Certificate2`](../../../../../Combinatorics/Certificate2.lean/index.md) — import line 3; pinned internal source present.
-- [`GRWTSK.InformationTheory.ReedSolomon.Certificate3`](../../../../../Combinatorics/Certificate3.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.InformationTheory.ReedSolomon.Certificate4`](../../../../../Combinatorics/Certificate4.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.InformationTheory.ReedSolomon.Certificate5`](../../../../../Combinatorics/Certificate5.lean/index.md) — import line 6; pinned internal source present.
-- [`GRWTSK.InformationTheory.ReedSolomon.Certificate6`](../../../../../Combinatorics/Certificate6.lean/index.md) — import line 7; pinned internal source present.
-- [`GRWTSK.InformationTheory.ReedSolomon.Certificate7`](../../../../../Combinatorics/Certificate7.lean/index.md) — import line 8; pinned internal source present.
-- [`GRWTSK.InformationTheory.ReedSolomon.Certificate8`](../../../../../Combinatorics/Certificate8.lean/index.md) — import line 9; pinned internal source present.
-- [`GRWTSK.InformationTheory.ReedSolomon.Certificate9`](../../../../../Combinatorics/Certificate9.lean/index.md) — import line 10; pinned internal source present.
-- [`GRWTSK.InformationTheory.ReedSolomon.Certificate10`](../../../../../Combinatorics/Certificate10.lean/index.md) — import line 11; pinned internal source present.
-- [`GRWTSK.InformationTheory.ReedSolomon.Certificate11`](../../../../../Combinatorics/Certificate11.lean/index.md) — import line 12; pinned internal source present.
-- [`GRWTSK.InformationTheory.ReedSolomon.Certificate12`](../../../../../Combinatorics/Certificate12.lean/index.md) — import line 13; pinned internal source present.
-- [`GRWTSK.InformationTheory.ReedSolomon.Certificate13`](../../../../../Combinatorics/Certificate13.lean/index.md) — import line 14; pinned internal source present.
-- [`GRWTSK.InformationTheory.ReedSolomon.Certificate14`](../../../../../Combinatorics/Certificate14.lean/index.md) — import line 15; pinned internal source present.
+- [`GRWTSK.InformationTheory.ReedSolomon.Certificate0`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Certificate0.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.InformationTheory.ReedSolomon.Certificate1`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Certificate1.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.InformationTheory.ReedSolomon.Certificate2`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Certificate2.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.InformationTheory.ReedSolomon.Certificate3`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Certificate3.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.InformationTheory.ReedSolomon.Certificate4`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Certificate4.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.InformationTheory.ReedSolomon.Certificate5`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Certificate5.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.InformationTheory.ReedSolomon.Certificate6`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Certificate6.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.InformationTheory.ReedSolomon.Certificate7`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Certificate7.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.InformationTheory.ReedSolomon.Certificate8`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Certificate8.lean/index.md) — import line 9; pinned internal source present.
+- [`GRWTSK.InformationTheory.ReedSolomon.Certificate9`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Certificate9.lean/index.md) — import line 10; pinned internal source present.
+- [`GRWTSK.InformationTheory.ReedSolomon.Certificate10`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Certificate10.lean/index.md) — import line 11; pinned internal source present.
+- [`GRWTSK.InformationTheory.ReedSolomon.Certificate11`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Certificate11.lean/index.md) — import line 12; pinned internal source present.
+- [`GRWTSK.InformationTheory.ReedSolomon.Certificate12`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Certificate12.lean/index.md) — import line 13; pinned internal source present.
+- [`GRWTSK.InformationTheory.ReedSolomon.Certificate13`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Certificate13.lean/index.md) — import line 14; pinned internal source present.
+- [`GRWTSK.InformationTheory.ReedSolomon.Certificate14`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Certificate14.lean/index.md) — import line 15; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -71,22 +71,22 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Nodes](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Profiles.lean/declarations/nodes.md) | 19 | `declaration-track:12dd89c839817ab9c041796272f1e9968c4f1bbc67f076e6fe28d6a1b88c4d79` |
-| 2 | `def` | [getNode](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Profiles.lean/declarations/getnode.md) | 26 | `declaration-track:fb2d7c71f964dd447556a380db5345a3f37b97dde9534a55481568e01b30c39e` |
-| 3 | `abbrev` | [Sorted](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Profiles.lean/declarations/sorted.md) | 29 | `declaration-track:b2f712ccebd66248decfd02b988b4f7fb99ce544041eaeb4dc9d243902860a25` |
-| 4 | `def` | [selectedNodes](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Profiles.lean/declarations/selectednodes.md) | 31 | `declaration-track:5510f0dcef08f5ab948e9a9bcb30ab9b5d391b47856dab732afa525995bdf077` |
-| 5 | `def` | [dataNodes](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Profiles.lean/declarations/datanodes.md) | 48 | `declaration-track:2f32ade9aaf8afd2ef3ab22ab4f04b01f208b57a443eb029d406e0d9a956eef9` |
-| 6 | `def` | [encoding](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Profiles.lean/declarations/encoding.md) | 50 | `declaration-track:065895931c8b80ba6406288f19221611f0121f471758ba0abffdd478095d10b2` |
-| 7 | `def` | [recovery](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Profiles.lean/declarations/recovery.md) | 67 | `declaration-track:1ed8f86cef7b06c74b7baca63285f2cf28957b9bf8f0b05efc0e97301acec68a` |
-| 8 | `theorem` | [selectedNodes_sorted](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Profiles.lean/declarations/selectednodes-sorted.md) | 85 | `result-track:a801f9a25ddd0c485185039c256c6a44ac2803ee95a1a2bdb7dde57984c51a60` |
-| 9 | `theorem` | [sorted_profiles_complete](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Profiles.lean/declarations/sorted-profiles-complete.md) | 88 | `result-track:bf48cba5d179c7ac7646a00e496ed40c9a3135f59de57ed2f2d40b5ca17366dd` |
-| 10 | `theorem` | [any_sorted_profile](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Profiles.lean/declarations/any-sorted-profile.md) | 91 | `result-track:a65008ade710d4e0e8f57560e912e4d36ca800c3f2cd9c5bdc4f595f32e835c4` |
-| 11 | `def` | [fullEncodingRow](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Profiles.lean/declarations/fullencodingrow.md) | 98 | `declaration-track:f49ae695f0248a373b1d86eb816505e1b84bbb77f46069e9c7f82c10ac19a7a0` |
-| 12 | `def` | [fullEncode](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Profiles.lean/declarations/fullencode.md) | 103 | `declaration-track:814c0c37326164fb9e86a0f4754065d4232b759b2023a8f85cfda8e5c26fbf72` |
-| 13 | `def` | [selectProfile](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Profiles.lean/declarations/selectprofile.md) | 106 | `declaration-track:3b44670da41974a7615eddf7499a7bda507bb28469c0c016a7c74f036c24f1d5` |
-| 14 | `theorem` | [fullEncodingRow_selected](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Profiles.lean/declarations/fullencodingrow-selected.md) | 112 | `result-track:4babf96842549d12b9526e1fa5214839f31c5b673c8d4a46fbdc8289b7c873ea` |
-| 15 | `theorem` | [selectProfile_fullEncode](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Profiles.lean/declarations/selectprofile-fullencode.md) | 115 | `result-track:34edf5bcf53a4089a86214ba29d7499249e5f57de74fc619f58fe4c2d56d7ca5` |
-| 16 | `theorem` | [erasure_roundtrip](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Profiles.lean/declarations/erasure-roundtrip.md) | 120 | `result-track:3c62ab60ba4c0026c743584145ab651a5d4999bb1db5539786a0c0cf4c0f451d` |
+| 1 | `structure` | [Nodes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Profiles.lean/declarations/nodes.md) | 19 | `declaration-track:12dd89c839817ab9c041796272f1e9968c4f1bbc67f076e6fe28d6a1b88c4d79` |
+| 2 | `def` | [getNode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Profiles.lean/declarations/getnode.md) | 26 | `declaration-track:fb2d7c71f964dd447556a380db5345a3f37b97dde9534a55481568e01b30c39e` |
+| 3 | `abbrev` | [Sorted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Profiles.lean/declarations/sorted.md) | 29 | `declaration-track:b2f712ccebd66248decfd02b988b4f7fb99ce544041eaeb4dc9d243902860a25` |
+| 4 | `def` | [selectedNodes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Profiles.lean/declarations/selectednodes.md) | 31 | `declaration-track:5510f0dcef08f5ab948e9a9bcb30ab9b5d391b47856dab732afa525995bdf077` |
+| 5 | `def` | [dataNodes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Profiles.lean/declarations/datanodes.md) | 48 | `declaration-track:2f32ade9aaf8afd2ef3ab22ab4f04b01f208b57a443eb029d406e0d9a956eef9` |
+| 6 | `def` | [encoding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Profiles.lean/declarations/encoding.md) | 50 | `declaration-track:065895931c8b80ba6406288f19221611f0121f471758ba0abffdd478095d10b2` |
+| 7 | `def` | [recovery](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Profiles.lean/declarations/recovery.md) | 67 | `declaration-track:1ed8f86cef7b06c74b7baca63285f2cf28957b9bf8f0b05efc0e97301acec68a` |
+| 8 | `theorem` | [selectedNodes_sorted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Profiles.lean/declarations/selectednodes-sorted.md) | 85 | `result-track:a801f9a25ddd0c485185039c256c6a44ac2803ee95a1a2bdb7dde57984c51a60` |
+| 9 | `theorem` | [sorted_profiles_complete](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Profiles.lean/declarations/sorted-profiles-complete.md) | 88 | `result-track:bf48cba5d179c7ac7646a00e496ed40c9a3135f59de57ed2f2d40b5ca17366dd` |
+| 10 | `theorem` | [any_sorted_profile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Profiles.lean/declarations/any-sorted-profile.md) | 91 | `result-track:a65008ade710d4e0e8f57560e912e4d36ca800c3f2cd9c5bdc4f595f32e835c4` |
+| 11 | `def` | [fullEncodingRow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Profiles.lean/declarations/fullencodingrow.md) | 98 | `declaration-track:f49ae695f0248a373b1d86eb816505e1b84bbb77f46069e9c7f82c10ac19a7a0` |
+| 12 | `def` | [fullEncode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Profiles.lean/declarations/fullencode.md) | 103 | `declaration-track:814c0c37326164fb9e86a0f4754065d4232b759b2023a8f85cfda8e5c26fbf72` |
+| 13 | `def` | [selectProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Profiles.lean/declarations/selectprofile.md) | 106 | `declaration-track:3b44670da41974a7615eddf7499a7bda507bb28469c0c016a7c74f036c24f1d5` |
+| 14 | `theorem` | [fullEncodingRow_selected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Profiles.lean/declarations/fullencodingrow-selected.md) | 112 | `result-track:4babf96842549d12b9526e1fa5214839f31c5b673c8d4a46fbdc8289b7c873ea` |
+| 15 | `theorem` | [selectProfile_fullEncode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Profiles.lean/declarations/selectprofile-fullencode.md) | 115 | `result-track:34edf5bcf53a4089a86214ba29d7499249e5f57de74fc619f58fe4c2d56d7ca5` |
+| 16 | `theorem` | [erasure_roundtrip](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Profiles.lean/declarations/erasure-roundtrip.md) | 120 | `result-track:3c62ab60ba4c0026c743584145ab651a5d4999bb1db5539786a0c0cf4c0f451d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

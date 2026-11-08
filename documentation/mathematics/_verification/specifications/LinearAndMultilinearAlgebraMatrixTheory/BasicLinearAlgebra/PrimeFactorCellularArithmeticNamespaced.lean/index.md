@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PrimeFactorCellularArithmeticNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PrimeFactorCellularArithmeticNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PrimeFactorCellularArithmeticNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PrimeFactorCellularArithmeticNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,7 +60,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [prime_factor_cellular_decode_encode](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PrimeFactorCellularArithmeticNamespaced.lean/declarations/prime-factor-cellular-decode-encode.md) | 29 | `result-track:1b6bc90dfe8e942ac9eeb31cdbe369b98de22032447fc49f60b0694e5ce892bf` |
+| 1 | `theorem` | [prime_factor_cellular_decode_encode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PrimeFactorCellularArithmeticNamespaced.lean/declarations/prime-factor-cellular-decode-encode.md) | 29 | `result-track:1b6bc90dfe8e942ac9eeb31cdbe369b98de22032447fc49f60b0694e5ce892bf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

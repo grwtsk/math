@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionEmbeddingNamespacedPublic.lean/index.md) · [Full source](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionEmbeddingNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/GroupActionEmbeddingNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/GroupActionEmbeddingNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [smul](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionEmbeddingNamespacedPublic.lean/declarations/smul.md) | 40 | `declaration-track:4575904251cd15788993837b64d5719ffa9f3f94c5cb7c025082b690378da7f0` |
-| 2 | `theorem` | [smul_def](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionEmbeddingNamespacedPublic.lean/declarations/smul-def.md) | 44 | `result-track:35dc9086c1e36e40e92155ff0a991716c5d9f55076ad539ac5e22c0b75e5f192` |
-| 3 | `theorem` | [smul_apply](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionEmbeddingNamespacedPublic.lean/declarations/smul-apply.md) | 49 | `result-track:929cb634e3b4b07fd1cb614b06a84ef9cf60afd2027786f9789790b7d6ff2e46` |
-| 4 | `theorem` | [coe_smul](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionEmbeddingNamespacedPublic.lean/declarations/coe-smul.md) | 53 | `result-track:c8573012b1296611c4a9ec84a7c7f24ac14db24d71c4edc9e56f8c6022e149bc` |
-| 5 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionEmbeddingNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 56 | `declaration-track:29a8f74a49c0a6d4c053e1a4857999c56e671d1d0e21cdd83e11aa99fdf035c0` |
-| 6 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionEmbeddingNamespacedPublic.lean/declarations/instance.md) | 61 | `declaration-track:1aae3067c1bb5b4345c758dd6c431acd9ac46bddc718595a252e288c7eab13cf` |
-| 7 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionEmbeddingNamespacedPublic.lean/declarations/instance-source-edition-4.md) | 65 | `declaration-track:b36bfd4d4574812cfc90f15c77ca4e84fa7f5dc9c9102a53de5b4626ecea24c2` |
-| 8 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionEmbeddingNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 70 | `declaration-track:78f2738739562159a4c6cf06d96940408831f3b17a6f7e820efde8447464b0e6` |
+| 1 | `instance` | [smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/GroupActionEmbeddingNamespacedPublic.lean/declarations/smul.md) | 40 | `declaration-track:4575904251cd15788993837b64d5719ffa9f3f94c5cb7c025082b690378da7f0` |
+| 2 | `theorem` | [smul_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/GroupActionEmbeddingNamespacedPublic.lean/declarations/smul-def.md) | 44 | `result-track:35dc9086c1e36e40e92155ff0a991716c5d9f55076ad539ac5e22c0b75e5f192` |
+| 3 | `theorem` | [smul_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/GroupActionEmbeddingNamespacedPublic.lean/declarations/smul-apply.md) | 49 | `result-track:929cb634e3b4b07fd1cb614b06a84ef9cf60afd2027786f9789790b7d6ff2e46` |
+| 4 | `theorem` | [coe_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/GroupActionEmbeddingNamespacedPublic.lean/declarations/coe-smul.md) | 53 | `result-track:c8573012b1296611c4a9ec84a7c7f24ac14db24d71c4edc9e56f8c6022e149bc` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/GroupActionEmbeddingNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 56 | `declaration-track:29a8f74a49c0a6d4c053e1a4857999c56e671d1d0e21cdd83e11aa99fdf035c0` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/GroupActionEmbeddingNamespacedPublic.lean/declarations/instance.md) | 61 | `declaration-track:1aae3067c1bb5b4345c758dd6c431acd9ac46bddc718595a252e288c7eab13cf` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/GroupActionEmbeddingNamespacedPublic.lean/declarations/instance-source-edition-4.md) | 65 | `declaration-track:b36bfd4d4574812cfc90f15c77ca4e84fa7f5dc9c9102a53de5b4626ecea24c2` |
+| 8 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/GroupActionEmbeddingNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 70 | `declaration-track:78f2738739562159a4c6cf06d96940408831f3b17a6f7e820efde8447464b0e6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

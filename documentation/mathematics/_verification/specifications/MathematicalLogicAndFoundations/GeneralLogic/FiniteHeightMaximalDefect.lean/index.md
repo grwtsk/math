@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteHeightMaximalDefect.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteHeightMaximalDefect.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteHeightMaximalDefect.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteHeightMaximalDefect.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_maximizer_of_finite_values](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteHeightMaximalDefect.lean/declarations/exists-maximizer-of-finite-values.md) | 37 | `result-track:7811d5f39a131c5cad33b82f08d7857b841ce240c9c6c2bd92a94ff1eb0d3752` |
-| 2 | `theorem` | [exists_unique_greatest_maximizer_of_bounded_rank](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteHeightMaximalDefect.lean/declarations/exists-unique-greatest-maximizer-of-bounded-rank.md) | 51 | `result-track:ef14252fc62ac38f74e08129d22a63d79f33ef5c81d67cd2286813f6094f1df6` |
-| 3 | `theorem` | [exists_greatest_maximizer_fixed_of_bounded_rank](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteHeightMaximalDefect.lean/declarations/exists-greatest-maximizer-fixed-of-bounded-rank.md) | 83 | `result-track:a2c943d3645818c51afc552a6f174c2bc9a108976d2bdc86dc284b2a068568ba` |
-| 4 | `theorem` | [exists_greatest_maximizer_fixed_of_finite_values_bounded_rank](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteHeightMaximalDefect.lean/declarations/exists-greatest-maximizer-fixed-of-finite-values-bounded-rank.md) | 96 | `result-track:881cf41091820883e99486a4c47a303692518497da50376a1eb5b7792e5c7794` |
+| 1 | `theorem` | [exists_maximizer_of_finite_values](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteHeightMaximalDefect.lean/declarations/exists-maximizer-of-finite-values.md) | 37 | `result-track:7811d5f39a131c5cad33b82f08d7857b841ce240c9c6c2bd92a94ff1eb0d3752` |
+| 2 | `theorem` | [exists_unique_greatest_maximizer_of_bounded_rank](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteHeightMaximalDefect.lean/declarations/exists-unique-greatest-maximizer-of-bounded-rank.md) | 51 | `result-track:ef14252fc62ac38f74e08129d22a63d79f33ef5c81d67cd2286813f6094f1df6` |
+| 3 | `theorem` | [exists_greatest_maximizer_fixed_of_bounded_rank](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteHeightMaximalDefect.lean/declarations/exists-greatest-maximizer-fixed-of-bounded-rank.md) | 83 | `result-track:a2c943d3645818c51afc552a6f174c2bc9a108976d2bdc86dc284b2a068568ba` |
+| 4 | `theorem` | [exists_greatest_maximizer_fixed_of_finite_values_bounded_rank](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteHeightMaximalDefect.lean/declarations/exists-greatest-maximizer-fixed-of-finite-values-bounded-rank.md) | 96 | `result-track:881cf41091820883e99486a4c47a303692518497da50376a1eb5b7792e5c7794` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

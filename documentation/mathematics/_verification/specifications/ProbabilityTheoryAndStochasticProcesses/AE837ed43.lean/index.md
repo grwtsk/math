@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/AE837ed43.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/AE837ed43.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/AE837ed43.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/AE837ed43.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,7 +60,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [spec](../../../../ProbabilityTheoryAndStochasticProcesses/AE837ed43.lean/declarations/spec.md) | 13 | `declaration-track:5435ef0cc81d7a17c4a3e81289797e927d78e07610bd9e9114e07e7e7684f1ab` |
+| 1 | `def` | [spec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/AE837ed43.lean/declarations/spec.md) | 13 | `declaration-track:5435ef0cc81d7a17c4a3e81289797e927d78e07610bd9e9114e07e7e7684f1ab` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

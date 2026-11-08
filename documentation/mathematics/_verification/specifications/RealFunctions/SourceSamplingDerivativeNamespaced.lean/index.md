@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/SourceSamplingDerivativeNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/SourceSamplingDerivativeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceSamplingDerivativeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceSamplingDerivativeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [source_derivative_zero_right](../../../../RealFunctions/SourceSamplingDerivativeNamespaced.lean/declarations/source-derivative-zero-right.md) | 24 | `result-track:99f072db93651f4006dbd7f334dd8cfe175499db5e55c6928b9113c223f39efd` |
-| 2 | `theorem` | [source_difference_zero_right](../../../../RealFunctions/SourceSamplingDerivativeNamespaced.lean/declarations/source-difference-zero-right.md) | 33 | `result-track:721258b9c1fd096a531f86b67d9205b60be7a2463a164ee281406d0a112a41f4` |
-| 3 | `theorem` | [sampling_term_hasDerivAt](../../../../RealFunctions/SourceSamplingDerivativeNamespaced.lean/declarations/sampling-term-hasderivat.md) | 39 | `result-track:67ad800dadf9980142ebc14aa5d6ce32823f6144d9f1a0ddc971e467e12cee25` |
-| 4 | `theorem` | [samplingIndices_subset_fixed](../../../../RealFunctions/SourceSamplingDerivativeNamespaced.lean/declarations/samplingindices-subset-fixed.md) | 59 | `result-track:f208edec1d06f147bff1c0ebb4854c6d6d50fc2625bc2934b2cad75e73526dce` |
-| 5 | `theorem` | [kernel_eq_fixed_sum](../../../../RealFunctions/SourceSamplingDerivativeNamespaced.lean/declarations/kernel-eq-fixed-sum.md) | 69 | `result-track:938516368c58811b1e97428f0ce8d341fa958a081c9f628a2533be84601de900` |
-| 6 | `theorem` | [difference_sum_eq_fixed_sum](../../../../RealFunctions/SourceSamplingDerivativeNamespaced.lean/declarations/difference-sum-eq-fixed-sum.md) | 85 | `result-track:db816616881701d564fcfa08abdf162aee381b2b362977ec7ce16ad390423123` |
-| 7 | `theorem` | [sourceSamplingKernel_hasDerivAt](../../../../RealFunctions/SourceSamplingDerivativeNamespaced.lean/declarations/sourcesamplingkernel-hasderivat.md) | 101 | `result-track:365d7b7863c9806469f211727db90c0b230fb72c971d12e11f06487081ce280d` |
-| 8 | `theorem` | [sourceSamplingKernel_deriv](../../../../RealFunctions/SourceSamplingDerivativeNamespaced.lean/declarations/sourcesamplingkernel-deriv.md) | 127 | `result-track:e243bcb55d4db6d148459570695c2fd3ca4bf5d6ba17fd78006685cd089ddcfe` |
-| 9 | `theorem` | [sourceSamplingKernel_differentiableOn](../../../../RealFunctions/SourceSamplingDerivativeNamespaced.lean/declarations/sourcesamplingkernel-differentiableon.md) | 134 | `result-track:561cec3f3aa411560b5518d40c548880e14eca893d60d98e1447fca6dade9993` |
+| 1 | `theorem` | [source_derivative_zero_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceSamplingDerivativeNamespaced.lean/declarations/source-derivative-zero-right.md) | 24 | `result-track:99f072db93651f4006dbd7f334dd8cfe175499db5e55c6928b9113c223f39efd` |
+| 2 | `theorem` | [source_difference_zero_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceSamplingDerivativeNamespaced.lean/declarations/source-difference-zero-right.md) | 33 | `result-track:721258b9c1fd096a531f86b67d9205b60be7a2463a164ee281406d0a112a41f4` |
+| 3 | `theorem` | [sampling_term_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceSamplingDerivativeNamespaced.lean/declarations/sampling-term-hasderivat.md) | 39 | `result-track:67ad800dadf9980142ebc14aa5d6ce32823f6144d9f1a0ddc971e467e12cee25` |
+| 4 | `theorem` | [samplingIndices_subset_fixed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceSamplingDerivativeNamespaced.lean/declarations/samplingindices-subset-fixed.md) | 59 | `result-track:f208edec1d06f147bff1c0ebb4854c6d6d50fc2625bc2934b2cad75e73526dce` |
+| 5 | `theorem` | [kernel_eq_fixed_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceSamplingDerivativeNamespaced.lean/declarations/kernel-eq-fixed-sum.md) | 69 | `result-track:938516368c58811b1e97428f0ce8d341fa958a081c9f628a2533be84601de900` |
+| 6 | `theorem` | [difference_sum_eq_fixed_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceSamplingDerivativeNamespaced.lean/declarations/difference-sum-eq-fixed-sum.md) | 85 | `result-track:db816616881701d564fcfa08abdf162aee381b2b362977ec7ce16ad390423123` |
+| 7 | `theorem` | [sourceSamplingKernel_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceSamplingDerivativeNamespaced.lean/declarations/sourcesamplingkernel-hasderivat.md) | 101 | `result-track:365d7b7863c9806469f211727db90c0b230fb72c971d12e11f06487081ce280d` |
+| 8 | `theorem` | [sourceSamplingKernel_deriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceSamplingDerivativeNamespaced.lean/declarations/sourcesamplingkernel-deriv.md) | 127 | `result-track:e243bcb55d4db6d148459570695c2fd3ca4bf5d6ba17fd78006685cd089ddcfe` |
+| 9 | `theorem` | [sourceSamplingKernel_differentiableOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceSamplingDerivativeNamespaced.lean/declarations/sourcesamplingkernel-differentiableon.md) | 134 | `result-track:561cec3f3aa411560b5518d40c548880e14eca893d60d98e1447fca6dade9993` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/TentHorizontalRayMajorant.lean/index.md) · [Full source](../../../../MeasureAndIntegration/TentHorizontalRayMajorant.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentHorizontalRayMajorant.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentHorizontalRayMajorant.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.TentContourMajorants`](../../../../MeasureAndIntegration/TentContourMajorants.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.TentContourMajorants`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentContourMajorants.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.MeasureTheory.Integral.IntegralEqImproper` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,21 +58,21 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [affinePowerPrimitive](../../../../MeasureAndIntegration/TentHorizontalRayMajorant.lean/declarations/affinepowerprimitive.md) | 28 | `declaration-track:759f679f66e5b3dca4c89a4e7ac77ab7186eefbd4c52a8fb336f2ac8f176e0a6` |
-| 2 | `def` | [affineProfilePrimitive](../../../../MeasureAndIntegration/TentHorizontalRayMajorant.lean/declarations/affineprofileprimitive.md) | 32 | `declaration-track:e6bf8b03c3fdb43e17d37d542193ea990e5bfc1f48d99250032069dee80104d1` |
-| 3 | `def` | [affineRayBudget](../../../../MeasureAndIntegration/TentHorizontalRayMajorant.lean/declarations/affineraybudget.md) | 37 | `declaration-track:e9a23f26800a531d7ba0aa328bbcc36a235e6f3b16e6df5dd056dcced4344b78` |
-| 4 | `def` | [shiftMomentBudget](../../../../MeasureAndIntegration/TentHorizontalRayMajorant.lean/declarations/shiftmomentbudget.md) | 40 | `declaration-track:9bb53e5c3eba5f5eebed50ba44c079f4a781939b2b2e3d48b33e93936fb23e05` |
-| 5 | `theorem` | [affineRayBudget_eq](../../../../MeasureAndIntegration/TentHorizontalRayMajorant.lean/declarations/affineraybudget-eq.md) | 45 | `result-track:0be854e80e7da6c3626117b0fe46caef6bc6686175e093a790d1f9512a2b20e4` |
-| 6 | `theorem` | [affinePowerPrimitive_deriv](../../../../MeasureAndIntegration/TentHorizontalRayMajorant.lean/declarations/affinepowerprimitive-deriv.md) | 52 | `result-track:32b4c04fae40116ef267d31071423c74bdfe7173dd52ff9a9a18681a560eb33c` |
-| 7 | `theorem` | [affineProfilePrimitive_deriv](../../../../MeasureAndIntegration/TentHorizontalRayMajorant.lean/declarations/affineprofileprimitive-deriv.md) | 69 | `result-track:0123ed935afeece02be4dc2811e94d51383d0540ab3d9b36f0bc0cda69bfc414` |
-| 8 | `theorem` | [affinePowerPrimitive_nonneg](../../../../MeasureAndIntegration/TentHorizontalRayMajorant.lean/declarations/affinepowerprimitive-nonneg.md) | 77 | `result-track:a1d106e0d8932fdb32555566e305f0fa8ee4fb91582866b7692ca77949458f13` |
-| 9 | `theorem` | [affineProfilePrimitive_nonneg](../../../../MeasureAndIntegration/TentHorizontalRayMajorant.lean/declarations/affineprofileprimitive-nonneg.md) | 84 | `result-track:642aa0d09e906181106c30e954b92690cef1b13be2bb83836a276a406b861338` |
-| 10 | `theorem` | [affineRayBudget_nonneg](../../../../MeasureAndIntegration/TentHorizontalRayMajorant.lean/declarations/affineraybudget-nonneg.md) | 92 | `result-track:d73fbd6690cfde4cb4a1cc25e636ffa34db4ad7f2a765ec29af0cef265e9fd87` |
-| 11 | `theorem` | [shiftMomentBudget_pos](../../../../MeasureAndIntegration/TentHorizontalRayMajorant.lean/declarations/shiftmomentbudget-pos.md) | 96 | `result-track:b5716171395b8fc6cf06e89f3bd4fe2aba4c33f706cc0e3bf982e006c10e0443` |
-| 12 | `theorem` | [integral_affine_envelope_le](../../../../MeasureAndIntegration/TentHorizontalRayMajorant.lean/declarations/integral-affine-envelope-le.md) | 105 | `result-track:7175b4b833b7e445e9ddcecb74bba7282465fb36ed169f873511ed99e6bbb1a1` |
-| 13 | `theorem` | [integral_norm_le_of_affine_envelope](../../../../MeasureAndIntegration/TentHorizontalRayMajorant.lean/declarations/integral-norm-le-of-affine-envelope.md) | 123 | `result-track:30814450c659dad685189601be10f08b967782d4ae8f4a1a3f36c59751c6f94f` |
-| 14 | `theorem` | [integrableOn_Iic_of_affine_envelope](../../../../MeasureAndIntegration/TentHorizontalRayMajorant.lean/declarations/integrableon-iic-of-affine-envelope.md) | 138 | `result-track:73bccbd3994c1a8c9a58daa7fc825eb148d7f64cd90aae8da9efdef874ed4dda` |
-| 15 | `theorem` | [integral_norm_Iic_le_of_affine_envelope](../../../../MeasureAndIntegration/TentHorizontalRayMajorant.lean/declarations/integral-norm-iic-le-of-affine-envelope.md) | 152 | `result-track:4e3546b608dee3ded25b1f0f2bbacba5675a5e3af09b73599151e7f60af51f10` |
+| 1 | `def` | [affinePowerPrimitive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentHorizontalRayMajorant.lean/declarations/affinepowerprimitive.md) | 28 | `declaration-track:759f679f66e5b3dca4c89a4e7ac77ab7186eefbd4c52a8fb336f2ac8f176e0a6` |
+| 2 | `def` | [affineProfilePrimitive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentHorizontalRayMajorant.lean/declarations/affineprofileprimitive.md) | 32 | `declaration-track:e6bf8b03c3fdb43e17d37d542193ea990e5bfc1f48d99250032069dee80104d1` |
+| 3 | `def` | [affineRayBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentHorizontalRayMajorant.lean/declarations/affineraybudget.md) | 37 | `declaration-track:e9a23f26800a531d7ba0aa328bbcc36a235e6f3b16e6df5dd056dcced4344b78` |
+| 4 | `def` | [shiftMomentBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentHorizontalRayMajorant.lean/declarations/shiftmomentbudget.md) | 40 | `declaration-track:9bb53e5c3eba5f5eebed50ba44c079f4a781939b2b2e3d48b33e93936fb23e05` |
+| 5 | `theorem` | [affineRayBudget_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentHorizontalRayMajorant.lean/declarations/affineraybudget-eq.md) | 45 | `result-track:0be854e80e7da6c3626117b0fe46caef6bc6686175e093a790d1f9512a2b20e4` |
+| 6 | `theorem` | [affinePowerPrimitive_deriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentHorizontalRayMajorant.lean/declarations/affinepowerprimitive-deriv.md) | 52 | `result-track:32b4c04fae40116ef267d31071423c74bdfe7173dd52ff9a9a18681a560eb33c` |
+| 7 | `theorem` | [affineProfilePrimitive_deriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentHorizontalRayMajorant.lean/declarations/affineprofileprimitive-deriv.md) | 69 | `result-track:0123ed935afeece02be4dc2811e94d51383d0540ab3d9b36f0bc0cda69bfc414` |
+| 8 | `theorem` | [affinePowerPrimitive_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentHorizontalRayMajorant.lean/declarations/affinepowerprimitive-nonneg.md) | 77 | `result-track:a1d106e0d8932fdb32555566e305f0fa8ee4fb91582866b7692ca77949458f13` |
+| 9 | `theorem` | [affineProfilePrimitive_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentHorizontalRayMajorant.lean/declarations/affineprofileprimitive-nonneg.md) | 84 | `result-track:642aa0d09e906181106c30e954b92690cef1b13be2bb83836a276a406b861338` |
+| 10 | `theorem` | [affineRayBudget_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentHorizontalRayMajorant.lean/declarations/affineraybudget-nonneg.md) | 92 | `result-track:d73fbd6690cfde4cb4a1cc25e636ffa34db4ad7f2a765ec29af0cef265e9fd87` |
+| 11 | `theorem` | [shiftMomentBudget_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentHorizontalRayMajorant.lean/declarations/shiftmomentbudget-pos.md) | 96 | `result-track:b5716171395b8fc6cf06e89f3bd4fe2aba4c33f706cc0e3bf982e006c10e0443` |
+| 12 | `theorem` | [integral_affine_envelope_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentHorizontalRayMajorant.lean/declarations/integral-affine-envelope-le.md) | 105 | `result-track:7175b4b833b7e445e9ddcecb74bba7282465fb36ed169f873511ed99e6bbb1a1` |
+| 13 | `theorem` | [integral_norm_le_of_affine_envelope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentHorizontalRayMajorant.lean/declarations/integral-norm-le-of-affine-envelope.md) | 123 | `result-track:30814450c659dad685189601be10f08b967782d4ae8f4a1a3f36c59751c6f94f` |
+| 14 | `theorem` | [integrableOn_Iic_of_affine_envelope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentHorizontalRayMajorant.lean/declarations/integrableon-iic-of-affine-envelope.md) | 138 | `result-track:73bccbd3994c1a8c9a58daa7fc825eb148d7f64cd90aae8da9efdef874ed4dda` |
+| 15 | `theorem` | [integral_norm_Iic_le_of_affine_envelope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentHorizontalRayMajorant.lean/declarations/integral-norm-iic-le-of-affine-envelope.md) | 152 | `result-track:4e3546b608dee3ded25b1f0f2bbacba5675a5e3af09b73599151e7f60af51f10` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

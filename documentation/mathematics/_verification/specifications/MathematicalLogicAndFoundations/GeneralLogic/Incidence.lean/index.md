@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Incidence.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Incidence.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Incidence.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Incidence.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [IncidenceSignature](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Incidence.lean/declarations/incidencesignature.md) | 16 | `declaration-track:f972da7b584f21cadd52a6d86a9dd12bc43d7ad1abf1ef140af2fabbb20348fa` |
-| 2 | `def` | [Collinear](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Incidence.lean/declarations/collinear.md) | 20 | `declaration-track:e61eb2c1b639e8622ac6e21c1a088df81365a28aba201b5060a66459cb119ea9` |
-| 3 | `def` | [TwoPointLineExistence](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Incidence.lean/declarations/twopointlineexistence.md) | 30 | `declaration-track:e3d1a8ba8dc19b21ab230ffdc912aa15876b6f0928f82f7049fca2f688047b80` |
-| 4 | `def` | [TwoPointLineUniqueness](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Incidence.lean/declarations/twopointlineuniqueness.md) | 40 | `declaration-track:e682bbec1f1d9fb894e3b971530cb80b8ec04a699d1dd798a205a086e541b98c` |
-| 5 | `def` | [ThreeNoncollinearPoints](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Incidence.lean/declarations/threenoncollinearpoints.md) | 52 | `declaration-track:a83845f80c1799f704e026beb56344dab0852b4a58fc56320b2a85a9b6a29235` |
+| 1 | `structure` | [IncidenceSignature](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Incidence.lean/declarations/incidencesignature.md) | 16 | `declaration-track:f972da7b584f21cadd52a6d86a9dd12bc43d7ad1abf1ef140af2fabbb20348fa` |
+| 2 | `def` | [Collinear](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Incidence.lean/declarations/collinear.md) | 20 | `declaration-track:e61eb2c1b639e8622ac6e21c1a088df81365a28aba201b5060a66459cb119ea9` |
+| 3 | `def` | [TwoPointLineExistence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Incidence.lean/declarations/twopointlineexistence.md) | 30 | `declaration-track:e3d1a8ba8dc19b21ab230ffdc912aa15876b6f0928f82f7049fca2f688047b80` |
+| 4 | `def` | [TwoPointLineUniqueness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Incidence.lean/declarations/twopointlineuniqueness.md) | 40 | `declaration-track:e682bbec1f1d9fb894e3b971530cb80b8ec04a699d1dd798a205a086e541b98c` |
+| 5 | `def` | [ThreeNoncollinearPoints](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Incidence.lean/declarations/threenoncollinearpoints.md) | 52 | `declaration-track:a83845f80c1799f704e026beb56344dab0852b4a58fc56320b2a85a9b6a29235` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

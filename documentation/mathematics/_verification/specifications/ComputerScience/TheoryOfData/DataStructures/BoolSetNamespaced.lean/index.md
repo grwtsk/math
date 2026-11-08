@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/BoolSetNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/BoolSetNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/BoolSetNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/BoolSetNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [univ_eq](../../../../../../ComputerScience/TheoryOfData/DataStructures/BoolSetNamespaced.lean/declarations/univ-eq.md) | 28 | `result-track:215695187c836ff0dc4a274fd8058dee3823371a5c427c7a0d664430c09371d8` |
-| 2 | `theorem` | [range_eq](../../../../../../ComputerScience/TheoryOfData/DataStructures/BoolSetNamespaced.lean/declarations/range-eq.md) | 32 | `result-track:f0d24798aeb4ec3c66e1c3580769baaad36a0f4fb7e595f74c7229e407ea54f5` |
-| 3 | `theorem` | [compl_singleton](../../../../../../ComputerScience/TheoryOfData/DataStructures/BoolSetNamespaced.lean/declarations/compl-singleton.md) | 35 | `result-track:d6c4928de1d2d15cb53b80e028d95778c4c760f5baf0b60c73303ad73ff039f3` |
+| 1 | `theorem` | [univ_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/BoolSetNamespaced.lean/declarations/univ-eq.md) | 28 | `result-track:215695187c836ff0dc4a274fd8058dee3823371a5c427c7a0d664430c09371d8` |
+| 2 | `theorem` | [range_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/BoolSetNamespaced.lean/declarations/range-eq.md) | 32 | `result-track:f0d24798aeb4ec3c66e1c3580769baaad36a0f4fb7e595f74c7229e407ea54f5` |
+| 3 | `theorem` | [compl_singleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/BoolSetNamespaced.lean/declarations/compl-singleton.md) | 35 | `result-track:d6c4928de1d2d15cb53b80e028d95778c4c760f5baf0b60c73303ad73ff039f3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

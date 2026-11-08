@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ExpansionIndexDirection.lean/index.md) · [Full source](../../../../Combinatorics/ExpansionIndexDirection.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ExpansionIndexDirection.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ExpansionIndexDirection.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [Direction](../../../../Combinatorics/ExpansionIndexDirection.lean/declarations/direction.md) | 19 | `declaration-track:447a8c898cf3f3a23fc9bfdf2f52a008f228ecc9a2d217344c462685319b02cb` |
-| 2 | `abbrev` | [Address](../../../../Combinatorics/ExpansionIndexDirection.lean/declarations/address.md) | 24 | `declaration-track:b54811e42fb32de30fa3593e262f36752267bb4556fe887837da9aae707687e1` |
-| 3 | `def` | [HasAddress](../../../../Combinatorics/ExpansionIndexDirection.lean/declarations/hasaddress.md) | 28 | `declaration-track:916d1bad35b70324b6cdaa3e59f099e8563921a35bf7475affca893a2dc5d632` |
-| 4 | `def` | [expandAt?](../../../../Combinatorics/ExpansionIndexDirection.lean/declarations/expandat.md) | 35 | `declaration-track:73c08c235738bc275d1de6f03135590b2946c572a048c425156afabd21e79904` |
-| 5 | `theorem` | [expandAt?_internal](../../../../Combinatorics/ExpansionIndexDirection.lean/declarations/expandat-internal.md) | 48 | `result-track:376cd91cd6632f5bb6dba7836aa49f53942eec2c440159819ecd981560703d24` |
-| 6 | `theorem` | [expandAt?_leaves](../../../../Combinatorics/ExpansionIndexDirection.lean/declarations/expandat-leaves.md) | 91 | `result-track:f40e6f765bddb11a622195d352161196e35230f56aeded808571e20a30bfaa3a` |
+| 1 | `inductive` | [Direction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ExpansionIndexDirection.lean/declarations/direction.md) | 19 | `declaration-track:447a8c898cf3f3a23fc9bfdf2f52a008f228ecc9a2d217344c462685319b02cb` |
+| 2 | `abbrev` | [Address](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ExpansionIndexDirection.lean/declarations/address.md) | 24 | `declaration-track:b54811e42fb32de30fa3593e262f36752267bb4556fe887837da9aae707687e1` |
+| 3 | `def` | [HasAddress](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ExpansionIndexDirection.lean/declarations/hasaddress.md) | 28 | `declaration-track:916d1bad35b70324b6cdaa3e59f099e8563921a35bf7475affca893a2dc5d632` |
+| 4 | `def` | [expandAt?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ExpansionIndexDirection.lean/declarations/expandat.md) | 35 | `declaration-track:73c08c235738bc275d1de6f03135590b2946c572a048c425156afabd21e79904` |
+| 5 | `theorem` | [expandAt?_internal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ExpansionIndexDirection.lean/declarations/expandat-internal.md) | 48 | `result-track:376cd91cd6632f5bb6dba7836aa49f53942eec2c440159819ecd981560703d24` |
+| 6 | `theorem` | [expandAt?_leaves](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ExpansionIndexDirection.lean/declarations/expandat-leaves.md) | 91 | `result-track:f40e6f765bddb11a622195d352161196e35230f56aeded808571e20a30bfaa3a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

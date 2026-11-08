@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ContourCountDeficit.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ContourCountDeficit.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ContourCountDeficit.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ContourCountDeficit.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Combinatorics.WeightedInventoryDeficit`](../../../../../../Combinatorics/WeightedInventoryDeficit.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalLocalZeroContour`](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CanonicalLocalZeroContour.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Combinatorics.WeightedInventoryDeficit`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WeightedInventoryDeficit.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalLocalZeroContour`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CanonicalLocalZeroContour.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [off_line_pair_missing](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ContourCountDeficit.lean/declarations/off-line-pair-missing.md) | 43 | `result-track:77ef8263a01f1240a04b8b876214e522cbf07f47917e228598137482a4bbee0c` |
-| 2 | `theorem` | [all_on_line_of_region_credit](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ContourCountDeficit.lean/declarations/all-on-line-of-region-credit.md) | 58 | `result-track:7b74fb0eea9f1c24b0e58c829b35d016c5f30b49f1bc369f351c0c4394ebf0e5` |
-| 3 | `theorem` | [rhThrough_of_height_credit](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ContourCountDeficit.lean/declarations/rhthrough-of-height-credit.md) | 79 | `result-track:2bd3d4ff5f966a4ffc5cb0e1e86fc2f0d0c6b621978d19f0f2ce135d47edb095` |
-| 4 | `theorem` | [rhThrough_of_weighted_inventory](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ContourCountDeficit.lean/declarations/rhthrough-of-weighted-inventory.md) | 99 | `result-track:1a69478ee484488c04b2a494f16341cd7f65c3d160e44b9ecd8e7341d812e1e5` |
-| 5 | `theorem` | [contour_credit_le_multiplicity](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ContourCountDeficit.lean/declarations/contour-credit-le-multiplicity.md) | 112 | `result-track:a6f00530bad3d75b869c574d2719177ae7d6f6d6e88e7e65b20f26f9238fcb24` |
-| 6 | `theorem` | [rhThrough_of_local_contour_credit](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ContourCountDeficit.lean/declarations/rhthrough-of-local-contour-credit.md) | 128 | `result-track:e703c98f443684ea4ead1de1debbce6d5caa3c3aa6545584fc9687e381b125a1` |
-| 7 | `theorem` | [riemannHypothesis_of_all_height_credits](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ContourCountDeficit.lean/declarations/riemannhypothesis-of-all-height-credits.md) | 152 | `result-track:eb7334e83e115c1be3289ce6215367f4f3c35b6a207aa9ef91f3e5f4b9cdf584` |
+| 1 | `theorem` | [off_line_pair_missing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ContourCountDeficit.lean/declarations/off-line-pair-missing.md) | 43 | `result-track:77ef8263a01f1240a04b8b876214e522cbf07f47917e228598137482a4bbee0c` |
+| 2 | `theorem` | [all_on_line_of_region_credit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ContourCountDeficit.lean/declarations/all-on-line-of-region-credit.md) | 58 | `result-track:7b74fb0eea9f1c24b0e58c829b35d016c5f30b49f1bc369f351c0c4394ebf0e5` |
+| 3 | `theorem` | [rhThrough_of_height_credit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ContourCountDeficit.lean/declarations/rhthrough-of-height-credit.md) | 79 | `result-track:2bd3d4ff5f966a4ffc5cb0e1e86fc2f0d0c6b621978d19f0f2ce135d47edb095` |
+| 4 | `theorem` | [rhThrough_of_weighted_inventory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ContourCountDeficit.lean/declarations/rhthrough-of-weighted-inventory.md) | 99 | `result-track:1a69478ee484488c04b2a494f16341cd7f65c3d160e44b9ecd8e7341d812e1e5` |
+| 5 | `theorem` | [contour_credit_le_multiplicity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ContourCountDeficit.lean/declarations/contour-credit-le-multiplicity.md) | 112 | `result-track:a6f00530bad3d75b869c574d2719177ae7d6f6d6e88e7e65b20f26f9238fcb24` |
+| 6 | `theorem` | [rhThrough_of_local_contour_credit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ContourCountDeficit.lean/declarations/rhthrough-of-local-contour-credit.md) | 128 | `result-track:e703c98f443684ea4ead1de1debbce6d5caa3c3aa6545584fc9687e381b125a1` |
+| 7 | `theorem` | [riemannHypothesis_of_all_height_credits](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ContourCountDeficit.lean/declarations/riemannhypothesis-of-all-height-credits.md) | 152 | `result-track:eb7334e83e115c1be3289ce6215367f4f3c35b6a207aa9ef91f3e5f4b9cdf584` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

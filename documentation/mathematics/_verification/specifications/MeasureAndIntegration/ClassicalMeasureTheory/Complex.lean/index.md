@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/Complex.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/Complex.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/Complex.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/Complex.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [measureSpace](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/Complex.lean/declarations/measurespace.md) | 30 | `declaration-track:eaa16fc3d25c419413536d277266d83e4605b541f9f6e83201b231ef7a4868a2` |
-| 2 | `def` | [measurableEquivPi](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/Complex.lean/declarations/measurableequivpi.md) | 35 | `declaration-track:cfa24f3979ac50b12eff1a142ae2f4aab5339fe67ec82fabb9f545dd7137108d` |
-| 3 | `def` | [measurableEquivRealProd](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/Complex.lean/declarations/measurableequivrealprod.md) | 40 | `declaration-track:e46803ade84e6f0bbef085649fe248346591edff668f0211329e36356955725f` |
-| 4 | `theorem` | [volume_preserving_equiv_pi](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/Complex.lean/declarations/volume-preserving-equiv-pi.md) | 44 | `result-track:e3ace3fab73a214d9e99b781c53393cc5f1322aa87deef1c47db437d8eb30987` |
-| 5 | `theorem` | [volume_preserving_equiv_real_prod](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/Complex.lean/declarations/volume-preserving-equiv-real-prod.md) | 48 | `result-track:f90bde8a94fc58d17cc720a6572ee3dc252660cae235fcb99bc83006e0c52308` |
+| 1 | `instance` | [measureSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/Complex.lean/declarations/measurespace.md) | 30 | `declaration-track:eaa16fc3d25c419413536d277266d83e4605b541f9f6e83201b231ef7a4868a2` |
+| 2 | `def` | [measurableEquivPi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/Complex.lean/declarations/measurableequivpi.md) | 35 | `declaration-track:cfa24f3979ac50b12eff1a142ae2f4aab5339fe67ec82fabb9f545dd7137108d` |
+| 3 | `def` | [measurableEquivRealProd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/Complex.lean/declarations/measurableequivrealprod.md) | 40 | `declaration-track:e46803ade84e6f0bbef085649fe248346591edff668f0211329e36356955725f` |
+| 4 | `theorem` | [volume_preserving_equiv_pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/Complex.lean/declarations/volume-preserving-equiv-pi.md) | 44 | `result-track:e3ace3fab73a214d9e99b781c53393cc5f1322aa87deef1c47db437d8eb30987` |
+| 5 | `theorem` | [volume_preserving_equiv_real_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/Complex.lean/declarations/volume-preserving-equiv-real-prod.md) | 48 | `result-track:f90bde8a94fc58d17cc720a6572ee3dc252660cae235fcb99bc83006e0c52308` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

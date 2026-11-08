@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GlitchObstructionNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GlitchObstructionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GlitchObstructionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GlitchObstructionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [GlitchObstruction](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GlitchObstructionNamespaced.lean/declarations/glitchobstruction.md) | 27 | `declaration-track:ca0f77f9b79f5b6a6e9f2ff346c05f907a52313b578eb9f2aa016f0a7dc0e6b1` |
-| 2 | `theorem` | [complexity_glitch_obstruction_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GlitchObstructionNamespaced.lean/declarations/complexity-glitch-obstruction-if-supplied.md) | 37 | `result-track:37bbc9915e726ddafc5171aca7e997cc9476ca41f35c3c8db3e4629d204f3bef` |
-| 3 | `theorem` | [elliptic_torsion_is_analogy_only](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GlitchObstructionNamespaced.lean/declarations/elliptic-torsion-is-analogy-only.md) | 42 | `result-track:3fec2537b064e0f3e0f5efe3027aebb50b3f0e90657804e51ec3dc9d8f6095b5` |
+| 1 | `structure` | [GlitchObstruction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GlitchObstructionNamespaced.lean/declarations/glitchobstruction.md) | 27 | `declaration-track:ca0f77f9b79f5b6a6e9f2ff346c05f907a52313b578eb9f2aa016f0a7dc0e6b1` |
+| 2 | `theorem` | [complexity_glitch_obstruction_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GlitchObstructionNamespaced.lean/declarations/complexity-glitch-obstruction-if-supplied.md) | 37 | `result-track:37bbc9915e726ddafc5171aca7e997cc9476ca41f35c3c8db3e4629d204f3bef` |
+| 3 | `theorem` | [elliptic_torsion_is_analogy_only](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GlitchObstructionNamespaced.lean/declarations/elliptic-torsion-is-analogy-only.md) | 42 | `result-track:3fec2537b064e0f3e0f5efe3027aebb50b3f0e90657804e51ec3dc9d8f6095b5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

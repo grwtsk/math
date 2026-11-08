@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ConvexNamespaced.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ConvexNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ConvexNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ConvexNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Wbtw.dist_add_dist](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ConvexNamespaced.lean/declarations/wbtw-dist-add-dist.md) | 35 | `result-track:71f10bf7905cf0091d0248ec8b1bcd72cc3c7eec5ba067c78014742f97a32e17` |
-| 2 | `theorem` | [dist_add_dist_of_mem_segment](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ConvexNamespaced.lean/declarations/dist-add-dist-of-mem-segment.md) | 40 | `result-track:b2ad29faa0ddc67e3f6ca8cb69abaf5062649681462dd52e6552cebddca5fd64` |
-| 3 | `lemma` | [exists_mem_interior_convexHull_affineBasis](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ConvexNamespaced.lean/declarations/exists-mem-interior-convexhull-affinebasis.md) | 50 | `result-track:af2abea3ebb293e0c3489a504b270d5568924669be6793e6f619aa71ae5e9739` |
+| 1 | `theorem` | [Wbtw.dist_add_dist](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ConvexNamespaced.lean/declarations/wbtw-dist-add-dist.md) | 35 | `result-track:71f10bf7905cf0091d0248ec8b1bcd72cc3c7eec5ba067c78014742f97a32e17` |
+| 2 | `theorem` | [dist_add_dist_of_mem_segment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ConvexNamespaced.lean/declarations/dist-add-dist-of-mem-segment.md) | 40 | `result-track:b2ad29faa0ddc67e3f6ca8cb69abaf5062649681462dd52e6552cebddca5fd64` |
+| 3 | `lemma` | [exists_mem_interior_convexHull_affineBasis](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ConvexNamespaced.lean/declarations/exists-mem-interior-convexhull-affinebasis.md) | 50 | `result-track:af2abea3ebb293e0c3489a504b270d5568924669be6793e6f619aa71ae5e9739` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

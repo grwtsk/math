@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/ExactAnalyticGamma.lean/index.md) · [Full source](../../../../RealFunctions/ExactAnalyticGamma.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExactAnalyticGamma.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExactAnalyticGamma.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -64,10 +64,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [exactGamma](../../../../RealFunctions/ExactAnalyticGamma.lean/declarations/exactgamma.md) | 58 | `declaration-track:d0891012cd6603d2c810daf30cc35c914d1fc03c334b67994c8e0e3a77d4824c` |
-| 2 | `theorem` | [exactGamma_positive](../../../../RealFunctions/ExactAnalyticGamma.lean/declarations/exactgamma-positive.md) | 60 | `result-track:96b1381cdd8dbf73fdfb4bfb1639996585a27c9d7f18d6c786ba52ea26d8f428` |
-| 3 | `theorem` | [exactGamma_recurrence](../../../../RealFunctions/ExactAnalyticGamma.lean/declarations/exactgamma-recurrence.md) | 64 | `result-track:464d8db1b110e183c721a0624892e4bd8e75e44fc96dfa55d1321562c36c4cfa` |
-| 4 | `theorem` | [exactGamma_reflection](../../../../RealFunctions/ExactAnalyticGamma.lean/declarations/exactgamma-reflection.md) | 71 | `result-track:43db9c20d989abfe3a6c6a9e1ddaf4b7d5bff011a63303ef7be2e399b6c664f8` |
+| 1 | `abbrev` | [exactGamma](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExactAnalyticGamma.lean/declarations/exactgamma.md) | 58 | `declaration-track:d0891012cd6603d2c810daf30cc35c914d1fc03c334b67994c8e0e3a77d4824c` |
+| 2 | `theorem` | [exactGamma_positive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExactAnalyticGamma.lean/declarations/exactgamma-positive.md) | 60 | `result-track:96b1381cdd8dbf73fdfb4bfb1639996585a27c9d7f18d6c786ba52ea26d8f428` |
+| 3 | `theorem` | [exactGamma_recurrence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExactAnalyticGamma.lean/declarations/exactgamma-recurrence.md) | 64 | `result-track:464d8db1b110e183c721a0624892e4bd8e75e44fc96dfa55d1321562c36c4cfa` |
+| 4 | `theorem` | [exactGamma_reflection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExactAnalyticGamma.lean/declarations/exactgamma-reflection.md) | 71 | `result-track:43db9c20d989abfe3a6c6a9e1ddaf4b7d5bff011a63303ef7be2e399b6c664f8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

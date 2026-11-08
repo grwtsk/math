@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/FunLikeFintypeNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/FunLikeFintypeNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FunLikeFintypeNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FunLikeFintypeNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [DFunLike.fintype](../../../../../../ComputerScience/TheoryOfData/DataStructures/FunLikeFintypeNamespacedPublic.lean/declarations/dfunlike-fintype.md) | 53 | `declaration-track:5800cb7791c94e51cee2c5971d552b7b57be0a43e9e6f4c56d503b93dfb4965e` |
-| 2 | `def` | [FunLike.fintype](../../../../../../ComputerScience/TheoryOfData/DataStructures/FunLikeFintypeNamespacedPublic.lean/declarations/funlike-fintype.md) | 62 | `declaration-track:840ce0efac2cc12f4741603b0bb61513dd1bc46581946dd1d9a5361d161ad034` |
-| 3 | `theorem` | [DFunLike.finite](../../../../../../ComputerScience/TheoryOfData/DataStructures/FunLikeFintypeNamespacedPublic.lean/declarations/dfunlike-finite.md) | 76 | `result-track:e2a595cc57a4975b0ba730d9a9209c6cf9b4fef3736ed545c58ed908def622c7` |
-| 4 | `theorem` | [FunLike.finite](../../../../../../ComputerScience/TheoryOfData/DataStructures/FunLikeFintypeNamespacedPublic.lean/declarations/funlike-finite.md) | 84 | `result-track:f37c4034b7f7607bf328af61f4bb1c7043860c894633206496b34ff906cd6601` |
-| 5 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/FunLikeFintypeNamespacedPublic.lean/declarations/instance.md) | 90 | `declaration-track:3f1bc1c9dd4bc3f8a2610e3332b818f684d88e48e88e749d398e17643bdb4f38` |
+| 1 | `def` | [DFunLike.fintype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FunLikeFintypeNamespacedPublic.lean/declarations/dfunlike-fintype.md) | 53 | `declaration-track:5800cb7791c94e51cee2c5971d552b7b57be0a43e9e6f4c56d503b93dfb4965e` |
+| 2 | `def` | [FunLike.fintype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FunLikeFintypeNamespacedPublic.lean/declarations/funlike-fintype.md) | 62 | `declaration-track:840ce0efac2cc12f4741603b0bb61513dd1bc46581946dd1d9a5361d161ad034` |
+| 3 | `theorem` | [DFunLike.finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FunLikeFintypeNamespacedPublic.lean/declarations/dfunlike-finite.md) | 76 | `result-track:e2a595cc57a4975b0ba730d9a9209c6cf9b4fef3736ed545c58ed908def622c7` |
+| 4 | `theorem` | [FunLike.finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FunLikeFintypeNamespacedPublic.lean/declarations/funlike-finite.md) | 84 | `result-track:f37c4034b7f7607bf328af61f4bb1c7043860c894633206496b34ff906cd6601` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FunLikeFintypeNamespacedPublic.lean/declarations/instance.md) | 90 | `declaration-track:3f1bc1c9dd4bc3f8a2610e3332b818f684d88e48e88e749d398e17643bdb4f38` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

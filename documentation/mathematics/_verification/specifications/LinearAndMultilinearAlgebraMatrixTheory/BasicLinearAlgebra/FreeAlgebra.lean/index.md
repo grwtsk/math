@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FreeAlgebra.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FreeAlgebra.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FreeAlgebra.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FreeAlgebra.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -63,10 +63,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [basisFreeMonoid](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FreeAlgebra.lean/declarations/basisfreemonoid.md) | 34 | `declaration-track:4f309515f316d6d5e32391f4122a4cad742d93473b43c3c6bf346c95bc434d74` |
-| 2 | `instance` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FreeAlgebra.lean/declarations/instance.md) | 37 | `declaration-track:01d3bedc7272635e46a3b8596b4452f9143e9dcb461b91276e8f32e1378d7731` |
-| 3 | `theorem` | [rank_eq](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FreeAlgebra.lean/declarations/rank-eq.md) | 43 | `result-track:b97345f7eb7c22aa3e4adc4df341da783b29c9e06d656d19b009b022aeabb0e4` |
-| 4 | `theorem` | [Algebra.rank_adjoin_le](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FreeAlgebra.lean/declarations/algebra-rank-adjoin-le.md) | 52 | `result-track:3cf615e32fcc8eb823d06f4b3c2731a415706f7fa5cb97fe5be580720b74e3c8` |
+| 1 | `def` | [basisFreeMonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FreeAlgebra.lean/declarations/basisfreemonoid.md) | 34 | `declaration-track:4f309515f316d6d5e32391f4122a4cad742d93473b43c3c6bf346c95bc434d74` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FreeAlgebra.lean/declarations/instance.md) | 37 | `declaration-track:01d3bedc7272635e46a3b8596b4452f9143e9dcb461b91276e8f32e1378d7731` |
+| 3 | `theorem` | [rank_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FreeAlgebra.lean/declarations/rank-eq.md) | 43 | `result-track:b97345f7eb7c22aa3e4adc4df341da783b29c9e06d656d19b009b022aeabb0e4` |
+| 4 | `theorem` | [Algebra.rank_adjoin_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FreeAlgebra.lean/declarations/algebra-rank-adjoin-le.md) | 52 | `result-track:3cf615e32fcc8eb823d06f4b3c2731a415706f7fa5cb97fe5be580720b74e3c8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

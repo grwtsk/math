@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/AA592cefb35db7beaNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/AA592cefb35db7beaNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AA592cefb35db7beaNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AA592cefb35db7beaNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [finite_prefix_never_claims_irrationality](../../../../../ComputerScience/AlgorithmsInComputerScience/AA592cefb35db7beaNamespaced.lean/declarations/finite-prefix-never-claims-irrationality.md) | 17 | `result-track:190c69682217493782673f506c1d0fddf6c3fbf1d061cf0b500954c83b3c5cca` |
+| 1 | `theorem` | [finite_prefix_never_claims_irrationality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AA592cefb35db7beaNamespaced.lean/declarations/finite-prefix-never-claims-irrationality.md) | 17 | `result-track:190c69682217493782673f506c1d0fddf6c3fbf1d061cf0b500954c83b3c5cca` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

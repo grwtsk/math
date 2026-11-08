@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/LengthPublicLengthEqZeroIff.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/LengthPublicLengthEqZeroIff.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LengthPublicLengthEqZeroIff.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LengthPublicLengthEqZeroIff.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [length_eq_zero_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/LengthPublicLengthEqZeroIff.lean/declarations/length-eq-zero-iff.md) | 19 | `result-track:8a5ae6adb9a775ff39e50a90d038215202930f0100ef9f35f8edf982795c61dc` |
-| 2 | `theorem` | [length_map](../../../../../ComputerScience/AlgorithmsInComputerScience/LengthPublicLengthEqZeroIff.lean/declarations/length-map.md) | 23 | `result-track:3a8ba27ece4daabf2468b148c21dbf2be3c160204f8d8bd7f9d55a4135b458e2` |
-| 3 | `theorem` | [length_join](../../../../../ComputerScience/AlgorithmsInComputerScience/LengthPublicLengthEqZeroIff.lean/declarations/length-join.md) | 27 | `result-track:31e5e715422003b656334768f3d584b102bf0b3e74c98f3e484919a00149a0f6` |
+| 1 | `theorem` | [length_eq_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LengthPublicLengthEqZeroIff.lean/declarations/length-eq-zero-iff.md) | 19 | `result-track:8a5ae6adb9a775ff39e50a90d038215202930f0100ef9f35f8edf982795c61dc` |
+| 2 | `theorem` | [length_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LengthPublicLengthEqZeroIff.lean/declarations/length-map.md) | 23 | `result-track:3a8ba27ece4daabf2468b148c21dbf2be3c160204f8d8bd7f9d55a4135b458e2` |
+| 3 | `theorem` | [length_join](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LengthPublicLengthEqZeroIff.lean/declarations/length-join.md) | 27 | `result-track:31e5e715422003b656334768f3d584b102bf0b3e74c98f3e484919a00149a0f6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

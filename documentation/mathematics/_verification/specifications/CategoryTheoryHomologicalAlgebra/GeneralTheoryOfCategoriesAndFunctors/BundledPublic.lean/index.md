@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BundledPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BundledPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BundledPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BundledPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Bundled](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BundledPublic.lean/declarations/bundled.md) | 37 | `declaration-track:d3d9773ae778d093a78fd2bbf0cb0d3502cb30f219d562a3bb48b682c94cd737` |
-| 2 | `def` | [of](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BundledPublic.lean/declarations/of.md) | 55 | `declaration-track:563a26dec742b13dab4b8eb9ef654df3404775bcd1212912b106861532218c22` |
-| 3 | `instance` | [coeSort](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BundledPublic.lean/declarations/coesort.md) | 58 | `declaration-track:37ffc5ff26daf0a75e3b466985ed158fa756091977e227094c79bbb6ecb82069` |
-| 4 | `theorem` | [coe_mk](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BundledPublic.lean/declarations/coe-mk.md) | 61 | `result-track:bdaa6e1b5388476c993d6d8e0cbf0112325a57c0159e8159f9db7fe29cf89167` |
-| 5 | `abbrev` | [map](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BundledPublic.lean/declarations/map.md) | 65 | `declaration-track:b2dfa89bb2df4e7d1c7a27034e0248e8e137856241ee81188d42857fd128c232` |
+| 1 | `structure` | [Bundled](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BundledPublic.lean/declarations/bundled.md) | 37 | `declaration-track:d3d9773ae778d093a78fd2bbf0cb0d3502cb30f219d562a3bb48b682c94cd737` |
+| 2 | `def` | [of](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BundledPublic.lean/declarations/of.md) | 55 | `declaration-track:563a26dec742b13dab4b8eb9ef654df3404775bcd1212912b106861532218c22` |
+| 3 | `instance` | [coeSort](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BundledPublic.lean/declarations/coesort.md) | 58 | `declaration-track:37ffc5ff26daf0a75e3b466985ed158fa756091977e227094c79bbb6ecb82069` |
+| 4 | `theorem` | [coe_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BundledPublic.lean/declarations/coe-mk.md) | 61 | `result-track:bdaa6e1b5388476c993d6d8e0cbf0112325a57c0159e8159f9db7fe29cf89167` |
+| 5 | `abbrev` | [map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BundledPublic.lean/declarations/map.md) | 65 | `declaration-track:b2dfa89bb2df4e7d1c7a27034e0248e8e137856241ee81188d42857fd128c232` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

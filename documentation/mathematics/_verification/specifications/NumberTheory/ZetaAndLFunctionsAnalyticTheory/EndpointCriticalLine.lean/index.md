@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EndpointCriticalLine.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EndpointCriticalLine.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EndpointCriticalLine.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EndpointCriticalLine.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.LocalZeroSymmetry`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/LocalZeroSymmetry.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.Checks.EndpointBernoulliSource`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/EndpointBernoulliSource.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.LocalZeroSymmetry`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/LocalZeroSymmetry.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.Checks.EndpointBernoulliSource`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/EndpointBernoulliSource.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [center_on_line](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EndpointCriticalLine.lean/declarations/center-on-line.md) | 26 | `result-track:4fe867d82fe40971455e2b6a2f5d8e3c31860d27683b6c5d310dd66084f2587b` |
-| 2 | `theorem` | [ordinate_error](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EndpointCriticalLine.lean/declarations/ordinate-error.md) | 30 | `result-track:1d8a37fda88b25ce1fc6ef4ad718bed6f37a6f82cd43559998a48ef46126bbf6` |
-| 3 | `theorem` | [positive_height](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EndpointCriticalLine.lean/declarations/positive-height.md) | 34 | `result-track:f87afa8d865bfccaf6d33d0c02e91bc1eb23631cd1cfb4d4861724abb5744ae2` |
-| 4 | `theorem` | [distance_eq_ordinate](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EndpointCriticalLine.lean/declarations/distance-eq-ordinate.md) | 41 | `result-track:f31db5ca8723fedbe22878e5591df84dff82db5223d9a2527edbfe29da0e9567` |
-| 5 | `theorem` | [unique_simple_critical_point](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EndpointCriticalLine.lean/declarations/unique-simple-critical-point.md) | 47 | `result-track:be3c7e29e574eadc429755fc317ffc6caad8d26fe4035f93148b6af908b3ebb7` |
-| 6 | `theorem` | [exists_simple_critical_pair](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EndpointCriticalLine.lean/declarations/exists-simple-critical-pair.md) | 57 | `result-track:d07ae34da672496cf20a99be1675ca533219e493a3525695c339873a54652dec` |
-| 7 | `theorem` | [canonical_count_at_fifteen_lower](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EndpointCriticalLine.lean/declarations/canonical-count-at-fifteen-lower.md) | 81 | `result-track:b48e066bf1adde8f75ec1393195fe34c65b9b691b2a33a30ae0b17cfc2304753` |
-| 8 | `theorem` | [canonical_count_lower](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EndpointCriticalLine.lean/declarations/canonical-count-lower.md) | 93 | `result-track:ff041a5cea673cfb96ac3a85d01c0717825bf7c471b5a27a9bacc90a7dd683ba` |
+| 1 | `theorem` | [center_on_line](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EndpointCriticalLine.lean/declarations/center-on-line.md) | 26 | `result-track:4fe867d82fe40971455e2b6a2f5d8e3c31860d27683b6c5d310dd66084f2587b` |
+| 2 | `theorem` | [ordinate_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EndpointCriticalLine.lean/declarations/ordinate-error.md) | 30 | `result-track:1d8a37fda88b25ce1fc6ef4ad718bed6f37a6f82cd43559998a48ef46126bbf6` |
+| 3 | `theorem` | [positive_height](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EndpointCriticalLine.lean/declarations/positive-height.md) | 34 | `result-track:f87afa8d865bfccaf6d33d0c02e91bc1eb23631cd1cfb4d4861724abb5744ae2` |
+| 4 | `theorem` | [distance_eq_ordinate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EndpointCriticalLine.lean/declarations/distance-eq-ordinate.md) | 41 | `result-track:f31db5ca8723fedbe22878e5591df84dff82db5223d9a2527edbfe29da0e9567` |
+| 5 | `theorem` | [unique_simple_critical_point](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EndpointCriticalLine.lean/declarations/unique-simple-critical-point.md) | 47 | `result-track:be3c7e29e574eadc429755fc317ffc6caad8d26fe4035f93148b6af908b3ebb7` |
+| 6 | `theorem` | [exists_simple_critical_pair](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EndpointCriticalLine.lean/declarations/exists-simple-critical-pair.md) | 57 | `result-track:d07ae34da672496cf20a99be1675ca533219e493a3525695c339873a54652dec` |
+| 7 | `theorem` | [canonical_count_at_fifteen_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EndpointCriticalLine.lean/declarations/canonical-count-at-fifteen-lower.md) | 81 | `result-track:b48e066bf1adde8f75ec1393195fe34c65b9b691b2a33a30ae0b17cfc2304753` |
+| 8 | `theorem` | [canonical_count_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EndpointCriticalLine.lean/declarations/canonical-count-lower.md) | 93 | `result-track:ff041a5cea673cfb96ac3a85d01c0717825bf7c471b5a27a9bacc90a7dd683ba` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

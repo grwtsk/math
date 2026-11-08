@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/TwoPrimeInteraction.lean/index.md) · [Full source](../../../../Combinatorics/TwoPrimeInteraction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TwoPrimeInteraction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TwoPrimeInteraction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [MixedPlaceProfile](../../../../Combinatorics/TwoPrimeInteraction.lean/declarations/mixedplaceprofile.md) | 16 | `declaration-track:a6f27bf625d7318743f667634956dcb8e763974bf15b040d79b38890437a2c2e` |
-| 2 | `structure` | [TwoPrimeCompressionCertificate](../../../../Combinatorics/TwoPrimeInteraction.lean/declarations/twoprimecompressioncertificate.md) | 39 | `declaration-track:6d857cd19957f0eafdfbfb51f6f0c4dc1a0e3a283c54b3962fd7284a80c9522f` |
+| 1 | `structure` | [MixedPlaceProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TwoPrimeInteraction.lean/declarations/mixedplaceprofile.md) | 16 | `declaration-track:a6f27bf625d7318743f667634956dcb8e763974bf15b040d79b38890437a2c2e` |
+| 2 | `structure` | [TwoPrimeCompressionCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TwoPrimeInteraction.lean/declarations/twoprimecompressioncertificate.md) | 39 | `declaration-track:6d857cd19957f0eafdfbfb51f6f0c4dc1a0e3a283c54b3962fd7284a80c9522f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

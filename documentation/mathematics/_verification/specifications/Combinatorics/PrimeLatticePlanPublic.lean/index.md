@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/PrimeLatticePlanPublic.lean/index.md) · [Full source](../../../../Combinatorics/PrimeLatticePlanPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeLatticePlanPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeLatticePlanPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,24 +57,24 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PrimeLatticeGraph](../../../../Combinatorics/PrimeLatticePlanPublic.lean/declarations/primelatticegraph.md) | 31 | `declaration-track:e3682bcb2c162bc2780b535d557450675d3f3c42480634a7990ee4ce21e6cd6e` |
-| 2 | `def` | [DependencyClosed](../../../../Combinatorics/PrimeLatticePlanPublic.lean/declarations/dependencyclosed.md) | 46 | `declaration-track:2f6ad9b0a09f078909b00d6c53c761bee056b1fd5b1dedd429699212d79234be` |
-| 3 | `theorem` | [dependency_irreflexive](../../../../Combinatorics/PrimeLatticePlanPublic.lean/declarations/dependency-irreflexive.md) | 52 | `result-track:1ad5bca3602fa96b0f7e1ceee271cce8d64ed0166743c8cc2af6de67cc380ac7` |
-| 4 | `def` | [PrimeLattice](../../../../Combinatorics/PrimeLatticePlanPublic.lean/declarations/primelattice.md) | 61 | `declaration-track:e435fe1fcdfe0eb5fd99fd387524c245524e4e9b603c9ccea34620affdfded1d` |
-| 5 | `def` | [meet](../../../../Combinatorics/PrimeLatticePlanPublic.lean/declarations/meet.md) | 70 | `declaration-track:6ff27a2ee70f22b819544ebf9667c1f9f45ed8e1df21d30858d135596f8d8a0f` |
-| 6 | `def` | [join](../../../../Combinatorics/PrimeLatticePlanPublic.lean/declarations/join.md) | 81 | `declaration-track:991e1a6ed9d73668f0676d9f3ffbac9c625eee604b1b3bed659c8f7b4f263c58` |
-| 7 | `instance` | [(anonymous)](../../../../Combinatorics/PrimeLatticePlanPublic.lean/declarations/instance.md) | 93 | `declaration-track:a0e4693ed492417862ca9592be345b59cb9016e24c1ea16787b0d563f6ada32a` |
-| 8 | `def` | [bottom](../../../../Combinatorics/PrimeLatticePlanPublic.lean/declarations/bottom.md) | 131 | `declaration-track:891e365a2bc958683e24bd72ec0673613168685a47a6f9262b8075a343f06a69` |
-| 9 | `def` | [top](../../../../Combinatorics/PrimeLatticePlanPublic.lean/declarations/top.md) | 136 | `declaration-track:d4003407f285979b6256a5b7b9cf12895acd1a9120b3808f5e6dc78f473ef767` |
-| 10 | `theorem` | [mem_meet_iff](../../../../Combinatorics/PrimeLatticePlanPublic.lean/declarations/mem-meet-iff.md) | 144 | `result-track:950c102dfb5bb934872d9e04916066da5cb7558d2ea053577284eb5f23ac2475` |
-| 11 | `theorem` | [mem_join_iff](../../../../Combinatorics/PrimeLatticePlanPublic.lean/declarations/mem-join-iff.md) | 150 | `result-track:c66077d0f13acf54d72bb23d89a207aa18533e3cadd87b23e8b3ea1a888757d8` |
-| 12 | `theorem` | [meet_comm](../../../../Combinatorics/PrimeLatticePlanPublic.lean/declarations/meet-comm.md) | 156 | `result-track:536034053a28dca674b863080f5c31d8d77a48427531eda75095e8be6380bfb6` |
-| 13 | `theorem` | [join_comm](../../../../Combinatorics/PrimeLatticePlanPublic.lean/declarations/join-comm.md) | 163 | `result-track:a76646a0159805c3e2baa997d9366df20f29f3c3bb2b656b7be73b57828c7cf7` |
-| 14 | `theorem` | [meet_assoc](../../../../Combinatorics/PrimeLatticePlanPublic.lean/declarations/meet-assoc.md) | 170 | `result-track:c3b6c0c7435a5941da64ea8c1f13eb3c5101437c1072906340bb5a3e0506d01e` |
-| 15 | `theorem` | [join_assoc](../../../../Combinatorics/PrimeLatticePlanPublic.lean/declarations/join-assoc.md) | 177 | `result-track:1e661bed757a1b3261e9bfbf196eac79cdc64917356d23018c54c548e153f4b0` |
-| 16 | `theorem` | [meet_join_absorb](../../../../Combinatorics/PrimeLatticePlanPublic.lean/declarations/meet-join-absorb.md) | 184 | `result-track:53db02dff66a83d6e1e75250abbec9dfa012d34f494f91212aa436e0ebddef39` |
-| 17 | `theorem` | [join_meet_absorb](../../../../Combinatorics/PrimeLatticePlanPublic.lean/declarations/join-meet-absorb.md) | 191 | `result-track:f5433b3b38553de4687c253890570f1e2c1a9a92088253f0ed0203a8af3fae5d` |
-| 18 | `theorem` | [proposal_over_cone_not_kernel_authority](../../../../Combinatorics/PrimeLatticePlanPublic.lean/declarations/proposal-over-cone-not-kernel-authority.md) | 200 | `result-track:06c384bb027ae82945208232b4dc68078621d42d2eaf8ae2f58792148da658b5` |
+| 1 | `structure` | [PrimeLatticeGraph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeLatticePlanPublic.lean/declarations/primelatticegraph.md) | 31 | `declaration-track:e3682bcb2c162bc2780b535d557450675d3f3c42480634a7990ee4ce21e6cd6e` |
+| 2 | `def` | [DependencyClosed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeLatticePlanPublic.lean/declarations/dependencyclosed.md) | 46 | `declaration-track:2f6ad9b0a09f078909b00d6c53c761bee056b1fd5b1dedd429699212d79234be` |
+| 3 | `theorem` | [dependency_irreflexive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeLatticePlanPublic.lean/declarations/dependency-irreflexive.md) | 52 | `result-track:1ad5bca3602fa96b0f7e1ceee271cce8d64ed0166743c8cc2af6de67cc380ac7` |
+| 4 | `def` | [PrimeLattice](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeLatticePlanPublic.lean/declarations/primelattice.md) | 61 | `declaration-track:e435fe1fcdfe0eb5fd99fd387524c245524e4e9b603c9ccea34620affdfded1d` |
+| 5 | `def` | [meet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeLatticePlanPublic.lean/declarations/meet.md) | 70 | `declaration-track:6ff27a2ee70f22b819544ebf9667c1f9f45ed8e1df21d30858d135596f8d8a0f` |
+| 6 | `def` | [join](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeLatticePlanPublic.lean/declarations/join.md) | 81 | `declaration-track:991e1a6ed9d73668f0676d9f3ffbac9c625eee604b1b3bed659c8f7b4f263c58` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeLatticePlanPublic.lean/declarations/instance.md) | 93 | `declaration-track:a0e4693ed492417862ca9592be345b59cb9016e24c1ea16787b0d563f6ada32a` |
+| 8 | `def` | [bottom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeLatticePlanPublic.lean/declarations/bottom.md) | 131 | `declaration-track:891e365a2bc958683e24bd72ec0673613168685a47a6f9262b8075a343f06a69` |
+| 9 | `def` | [top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeLatticePlanPublic.lean/declarations/top.md) | 136 | `declaration-track:d4003407f285979b6256a5b7b9cf12895acd1a9120b3808f5e6dc78f473ef767` |
+| 10 | `theorem` | [mem_meet_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeLatticePlanPublic.lean/declarations/mem-meet-iff.md) | 144 | `result-track:950c102dfb5bb934872d9e04916066da5cb7558d2ea053577284eb5f23ac2475` |
+| 11 | `theorem` | [mem_join_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeLatticePlanPublic.lean/declarations/mem-join-iff.md) | 150 | `result-track:c66077d0f13acf54d72bb23d89a207aa18533e3cadd87b23e8b3ea1a888757d8` |
+| 12 | `theorem` | [meet_comm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeLatticePlanPublic.lean/declarations/meet-comm.md) | 156 | `result-track:536034053a28dca674b863080f5c31d8d77a48427531eda75095e8be6380bfb6` |
+| 13 | `theorem` | [join_comm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeLatticePlanPublic.lean/declarations/join-comm.md) | 163 | `result-track:a76646a0159805c3e2baa997d9366df20f29f3c3bb2b656b7be73b57828c7cf7` |
+| 14 | `theorem` | [meet_assoc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeLatticePlanPublic.lean/declarations/meet-assoc.md) | 170 | `result-track:c3b6c0c7435a5941da64ea8c1f13eb3c5101437c1072906340bb5a3e0506d01e` |
+| 15 | `theorem` | [join_assoc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeLatticePlanPublic.lean/declarations/join-assoc.md) | 177 | `result-track:1e661bed757a1b3261e9bfbf196eac79cdc64917356d23018c54c548e153f4b0` |
+| 16 | `theorem` | [meet_join_absorb](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeLatticePlanPublic.lean/declarations/meet-join-absorb.md) | 184 | `result-track:53db02dff66a83d6e1e75250abbec9dfa012d34f494f91212aa436e0ebddef39` |
+| 17 | `theorem` | [join_meet_absorb](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeLatticePlanPublic.lean/declarations/join-meet-absorb.md) | 191 | `result-track:f5433b3b38553de4687c253890570f1e2c1a9a92088253f0ed0203a8af3fae5d` |
+| 18 | `theorem` | [proposal_over_cone_not_kernel_authority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeLatticePlanPublic.lean/declarations/proposal-over-cone-not-kernel-authority.md) | 200 | `result-track:06c384bb027ae82945208232b4dc68078621d42d2eaf8ae2f58792148da658b5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

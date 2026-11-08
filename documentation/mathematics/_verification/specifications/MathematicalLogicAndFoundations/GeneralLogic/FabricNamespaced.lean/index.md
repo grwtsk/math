@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FabricNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FabricNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FabricNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FabricNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [cosimplicialValue](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FabricNamespaced.lean/declarations/cosimplicialvalue.md) | 29 | `declaration-track:e99c50447cea58ef55579cdcc056bf93060ae105cbef213a518da5a341a5ee72` |
-| 2 | `def` | [cosimplicialValueMap](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FabricNamespaced.lean/declarations/cosimplicialvaluemap.md) | 36 | `declaration-track:48a99b954e9e3ef4974f579a8a1fd6865d792b5e883c23c74973c7b875170002` |
-| 3 | `theorem` | [cosimplicialValueMap_id](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FabricNamespaced.lean/declarations/cosimplicialvaluemap-id.md) | 44 | `result-track:b91889564a281e2590a59436087846f15fcf4a01ec96a300275ba567d21eae1b` |
-| 4 | `theorem` | [cosimplicialValueMap_comp](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FabricNamespaced.lean/declarations/cosimplicialvaluemap-comp.md) | 52 | `result-track:2ccf8284bcd0212d7735ee0f279fcf016a8142c27ded58cb573a423aa96c5086` |
+| 1 | `def` | [cosimplicialValue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FabricNamespaced.lean/declarations/cosimplicialvalue.md) | 29 | `declaration-track:e99c50447cea58ef55579cdcc056bf93060ae105cbef213a518da5a341a5ee72` |
+| 2 | `def` | [cosimplicialValueMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FabricNamespaced.lean/declarations/cosimplicialvaluemap.md) | 36 | `declaration-track:48a99b954e9e3ef4974f579a8a1fd6865d792b5e883c23c74973c7b875170002` |
+| 3 | `theorem` | [cosimplicialValueMap_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FabricNamespaced.lean/declarations/cosimplicialvaluemap-id.md) | 44 | `result-track:b91889564a281e2590a59436087846f15fcf4a01ec96a300275ba567d21eae1b` |
+| 4 | `theorem` | [cosimplicialValueMap_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FabricNamespaced.lean/declarations/cosimplicialvaluemap-comp.md) | 52 | `result-track:2ccf8284bcd0212d7735ee0f279fcf016a8142c27ded58cb573a423aa96c5086` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

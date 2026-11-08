@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/PigeonholeNamespaced.lean/index.md) · [Full source](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/PigeonholeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/PigeonholeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/PigeonholeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [infinite_pigeonhole](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/PigeonholeNamespaced.lean/declarations/infinite-pigeonhole.md) | 34 | `result-track:31081e1e5c23e1f2d7dee8b9ca4d2ad016bcafb504dc23417aaa93093a942e4d` |
-| 2 | `theorem` | [infinite_pigeonhole_card](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/PigeonholeNamespaced.lean/declarations/infinite-pigeonhole-card.md) | 49 | `result-track:fab2d3eec0c4777b8034921077d4201cd3f48bd52408bf9b72c7427173b7a027` |
-| 3 | `theorem` | [infinite_pigeonhole_set](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/PigeonholeNamespaced.lean/declarations/infinite-pigeonhole-set.md) | 56 | `result-track:9127167cce197bd587fbad10ce09bf7aeff2cb813c4b3d5f22070037133fcbe0` |
-| 4 | `theorem` | [infinite_pigeonhole_card_lt](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/PigeonholeNamespaced.lean/declarations/infinite-pigeonhole-card-lt.md) | 73 | `result-track:d54f18e9d115e3d15e21ef48936477e3b633380505b2c1c6f4a80ce6ba96b3f6` |
-| 5 | `theorem` | [exists_infinite_fiber](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/PigeonholeNamespaced.lean/declarations/exists-infinite-fiber.md) | 81 | `result-track:e6f8aa68cfcc3acbe84122576f0e33a38f6cac90cdac53db680bfaf46d59e3e6` |
-| 6 | `theorem` | [le_range_of_union_finset_eq_top](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/PigeonholeNamespaced.lean/declarations/le-range-of-union-finset-eq-top.md) | 91 | `result-track:46ba5aef3914b2ab9ea1329fb5810ed371ed8c4b45d3ad22861a7db66085e177` |
+| 1 | `theorem` | [infinite_pigeonhole](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/PigeonholeNamespaced.lean/declarations/infinite-pigeonhole.md) | 34 | `result-track:31081e1e5c23e1f2d7dee8b9ca4d2ad016bcafb504dc23417aaa93093a942e4d` |
+| 2 | `theorem` | [infinite_pigeonhole_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/PigeonholeNamespaced.lean/declarations/infinite-pigeonhole-card.md) | 49 | `result-track:fab2d3eec0c4777b8034921077d4201cd3f48bd52408bf9b72c7427173b7a027` |
+| 3 | `theorem` | [infinite_pigeonhole_set](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/PigeonholeNamespaced.lean/declarations/infinite-pigeonhole-set.md) | 56 | `result-track:9127167cce197bd587fbad10ce09bf7aeff2cb813c4b3d5f22070037133fcbe0` |
+| 4 | `theorem` | [infinite_pigeonhole_card_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/PigeonholeNamespaced.lean/declarations/infinite-pigeonhole-card-lt.md) | 73 | `result-track:d54f18e9d115e3d15e21ef48936477e3b633380505b2c1c6f4a80ce6ba96b3f6` |
+| 5 | `theorem` | [exists_infinite_fiber](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/PigeonholeNamespaced.lean/declarations/exists-infinite-fiber.md) | 81 | `result-track:e6f8aa68cfcc3acbe84122576f0e33a38f6cac90cdac53db680bfaf46d59e3e6` |
+| 6 | `theorem` | [le_range_of_union_finset_eq_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/PigeonholeNamespaced.lean/declarations/le-range-of-union-finset-eq-top.md) | 91 | `result-track:46ba5aef3914b2ab9ea1329fb5810ed371ed8c4b45d3ad22861a7db66085e177` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/MoebiusPrimeFilterLaplace.lean/index.md) · [Full source](../../../../MeasureAndIntegration/MoebiusPrimeFilterLaplace.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MoebiusPrimeFilterLaplace.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MoebiusPrimeFilterLaplace.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Moebius.PrimeFilterEnergy`](../../../../MeasureAndIntegration/PrimeFilterEnergy.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.PrimeFilterEnergy`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PrimeFilterEnergy.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Tactic.NormNum.Prime` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,18 +58,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [noteWindowLaplace](../../../../MeasureAndIntegration/MoebiusPrimeFilterLaplace.lean/declarations/notewindowlaplace.md) | 15 | `declaration-track:b0aed2252d6a1908a742c1dd5b0c94a8c332d589c09c134bb069bc61c45cd110` |
-| 2 | `def` | [noteLaplaceTail](../../../../MeasureAndIntegration/MoebiusPrimeFilterLaplace.lean/declarations/notelaplacetail.md) | 18 | `declaration-track:fd1976d7aa9e37dfd39f05958dded284ef3c579837cc3eabba65b34d5dba6dad` |
-| 3 | `def` | [primeLaplaceWeight](../../../../MeasureAndIntegration/MoebiusPrimeFilterLaplace.lean/declarations/primelaplaceweight.md) | 21 | `declaration-track:74f1addc5f1de6c97ac2b8b7138ddee27acfb5f553855118dfe012a2eb3ca386` |
-| 4 | `theorem` | [primeLaplaceWeight_eq_exp](../../../../MeasureAndIntegration/MoebiusPrimeFilterLaplace.lean/declarations/primelaplaceweight-eq-exp.md) | 24 | `result-track:ddeb4293fc10fdf00eb6b57e5356f9cf94184170f3f1ff7a04a9c8c9151d2570` |
-| 5 | `theorem` | [window_integrand_continuous](../../../../MeasureAndIntegration/MoebiusPrimeFilterLaplace.lean/declarations/window-integrand-continuous.md) | 33 | `result-track:b30aa05c434b3ce42f85a29caafc58ca7912d66c797205d03f7b3b9a2c98acbb` |
-| 6 | `theorem` | [noteWindowLaplace_primeFilter_before_delay](../../../../MeasureAndIntegration/MoebiusPrimeFilterLaplace.lean/declarations/notewindowlaplace-primefilter-before-delay.md) | 40 | `result-track:cc4d46ef4805a129a5644b9349aa70b724c772c853afa158c1206a9ac0c7783c` |
-| 7 | `theorem` | [noteWindowLaplace_causalShift](../../../../MeasureAndIntegration/MoebiusPrimeFilterLaplace.lean/declarations/notewindowlaplace-causalshift.md) | 57 | `result-track:9b900213e6d277aab5b32f0a3257e66e79a89168ed206be5ea0e7404051a6f67` |
-| 8 | `theorem` | [noteWindowLaplace_shorter_add_tail](../../../../MeasureAndIntegration/MoebiusPrimeFilterLaplace.lean/declarations/notewindowlaplace-shorter-add-tail.md) | 98 | `result-track:0180c86a9d3eb4c4987fd8154781f9d20d1760946bf754043def2cda7cbf6493` |
-| 9 | `theorem` | [noteWindowLaplace_primeFilter](../../../../MeasureAndIntegration/MoebiusPrimeFilterLaplace.lean/declarations/notewindowlaplace-primefilter.md) | 109 | `result-track:7b2ed1fe7ee152bc99d1c08137d64ac276c12df64d1b167a24ddf49ff4dce232` |
-| 10 | `theorem` | [noteWindowLaplace_cascade_insert](../../../../MeasureAndIntegration/MoebiusPrimeFilterLaplace.lean/declarations/notewindowlaplace-cascade-insert.md) | 136 | `result-track:d5f81ed03165bbdc6c53560d9745565f487a9517a80369187d0f4be4e2a30770` |
-| 11 | `theorem` | [noteWindowLaplace_actual_cascade](../../../../MeasureAndIntegration/MoebiusPrimeFilterLaplace.lean/declarations/notewindowlaplace-actual-cascade.md) | 145 | `result-track:91422e5f8366342fb43697e1b1f2e41d1442f7d6a30c10f31a1330516442ca55` |
-| 12 | `theorem` | [first_prime_window_not_multiplier](../../../../MeasureAndIntegration/MoebiusPrimeFilterLaplace.lean/declarations/first-prime-window-not-multiplier.md) | 157 | `result-track:d5be39d91dc51edbfcf3c001b2b2764f044ef5270fe96b8ffa6fc7bf3705c99a` |
+| 1 | `def` | [noteWindowLaplace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MoebiusPrimeFilterLaplace.lean/declarations/notewindowlaplace.md) | 15 | `declaration-track:b0aed2252d6a1908a742c1dd5b0c94a8c332d589c09c134bb069bc61c45cd110` |
+| 2 | `def` | [noteLaplaceTail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MoebiusPrimeFilterLaplace.lean/declarations/notelaplacetail.md) | 18 | `declaration-track:fd1976d7aa9e37dfd39f05958dded284ef3c579837cc3eabba65b34d5dba6dad` |
+| 3 | `def` | [primeLaplaceWeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MoebiusPrimeFilterLaplace.lean/declarations/primelaplaceweight.md) | 21 | `declaration-track:74f1addc5f1de6c97ac2b8b7138ddee27acfb5f553855118dfe012a2eb3ca386` |
+| 4 | `theorem` | [primeLaplaceWeight_eq_exp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MoebiusPrimeFilterLaplace.lean/declarations/primelaplaceweight-eq-exp.md) | 24 | `result-track:ddeb4293fc10fdf00eb6b57e5356f9cf94184170f3f1ff7a04a9c8c9151d2570` |
+| 5 | `theorem` | [window_integrand_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MoebiusPrimeFilterLaplace.lean/declarations/window-integrand-continuous.md) | 33 | `result-track:b30aa05c434b3ce42f85a29caafc58ca7912d66c797205d03f7b3b9a2c98acbb` |
+| 6 | `theorem` | [noteWindowLaplace_primeFilter_before_delay](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MoebiusPrimeFilterLaplace.lean/declarations/notewindowlaplace-primefilter-before-delay.md) | 40 | `result-track:cc4d46ef4805a129a5644b9349aa70b724c772c853afa158c1206a9ac0c7783c` |
+| 7 | `theorem` | [noteWindowLaplace_causalShift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MoebiusPrimeFilterLaplace.lean/declarations/notewindowlaplace-causalshift.md) | 57 | `result-track:9b900213e6d277aab5b32f0a3257e66e79a89168ed206be5ea0e7404051a6f67` |
+| 8 | `theorem` | [noteWindowLaplace_shorter_add_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MoebiusPrimeFilterLaplace.lean/declarations/notewindowlaplace-shorter-add-tail.md) | 98 | `result-track:0180c86a9d3eb4c4987fd8154781f9d20d1760946bf754043def2cda7cbf6493` |
+| 9 | `theorem` | [noteWindowLaplace_primeFilter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MoebiusPrimeFilterLaplace.lean/declarations/notewindowlaplace-primefilter.md) | 109 | `result-track:7b2ed1fe7ee152bc99d1c08137d64ac276c12df64d1b167a24ddf49ff4dce232` |
+| 10 | `theorem` | [noteWindowLaplace_cascade_insert](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MoebiusPrimeFilterLaplace.lean/declarations/notewindowlaplace-cascade-insert.md) | 136 | `result-track:d5f81ed03165bbdc6c53560d9745565f487a9517a80369187d0f4be4e2a30770` |
+| 11 | `theorem` | [noteWindowLaplace_actual_cascade](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MoebiusPrimeFilterLaplace.lean/declarations/notewindowlaplace-actual-cascade.md) | 145 | `result-track:91422e5f8366342fb43697e1b1f2e41d1442f7d6a30c10f31a1330516442ca55` |
+| 12 | `theorem` | [first_prime_window_not_multiplier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MoebiusPrimeFilterLaplace.lean/declarations/first-prime-window-not-multiplier.md) | 157 | `result-track:d5be39d91dc51edbfcf3c001b2b2764f044ef5270fe96b8ffa6fc7bf3705c99a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

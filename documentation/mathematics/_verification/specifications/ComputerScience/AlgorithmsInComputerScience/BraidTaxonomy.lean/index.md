@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/BraidTaxonomy.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/BraidTaxonomy.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BraidTaxonomy.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BraidTaxonomy.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [TripleId](../../../../../ComputerScience/AlgorithmsInComputerScience/BraidTaxonomy.lean/declarations/tripleid.md) | 9 | `declaration-track:9ab9fb72f1b4c0545052d4f3c8983902e6ecc29fda5b3bdce99cf1fca263d897` |
-| 2 | `def` | [TripleId.all](../../../../../ComputerScience/AlgorithmsInComputerScience/BraidTaxonomy.lean/declarations/tripleid-all.md) | 13 | `declaration-track:334845f18604a5c2686fe5ef4b8af892dc32305ae900bb6deb2c8cb435281038` |
-| 3 | `def` | [TripleId.code](../../../../../ComputerScience/AlgorithmsInComputerScience/BraidTaxonomy.lean/declarations/tripleid-code.md) | 16 | `declaration-track:7eadcda85b6dac5725f60ad9da1e1a5abc3ef9d99039542ffc2be05188c63d04` |
-| 4 | `def` | [declaredTripleIds](../../../../../ComputerScience/AlgorithmsInComputerScience/BraidTaxonomy.lean/declarations/declaredtripleids.md) | 27 | `declaration-track:0bf973e8eb277c0be627a7f714a4af4307f7383e7392a7a563c2f53ece40660f` |
-| 5 | `theorem` | [declaredTripleIds_has_nine](../../../../../ComputerScience/AlgorithmsInComputerScience/BraidTaxonomy.lean/declarations/declaredtripleids-has-nine.md) | 30 | `result-track:0326870b213272da5cf56de5b9ec29267ddc7037f7abd2f9c706162770d78e6b` |
-| 6 | `structure` | [Triple](../../../../../ComputerScience/AlgorithmsInComputerScience/BraidTaxonomy.lean/declarations/triple.md) | 33 | `declaration-track:57ea94487aa46848d36077d9c0c17b0ff1a4e88afed131209911008931866767` |
-| 7 | `def` | [declaredBraid](../../../../../ComputerScience/AlgorithmsInComputerScience/BraidTaxonomy.lean/declarations/declaredbraid.md) | 39 | `declaration-track:248663538da2f51893258873b713096d6572e1ca221a77937d43d1f1aa783984` |
-| 8 | `theorem` | [declaredBraid_has_nine](../../../../../ComputerScience/AlgorithmsInComputerScience/BraidTaxonomy.lean/declarations/declaredbraid-has-nine.md) | 51 | `result-track:f9c1d87171d28c8c0dd3901e7c859c9ed28ee4b9b864515c6fe157385645e6f7` |
+| 1 | `inductive` | [TripleId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BraidTaxonomy.lean/declarations/tripleid.md) | 9 | `declaration-track:9ab9fb72f1b4c0545052d4f3c8983902e6ecc29fda5b3bdce99cf1fca263d897` |
+| 2 | `def` | [TripleId.all](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BraidTaxonomy.lean/declarations/tripleid-all.md) | 13 | `declaration-track:334845f18604a5c2686fe5ef4b8af892dc32305ae900bb6deb2c8cb435281038` |
+| 3 | `def` | [TripleId.code](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BraidTaxonomy.lean/declarations/tripleid-code.md) | 16 | `declaration-track:7eadcda85b6dac5725f60ad9da1e1a5abc3ef9d99039542ffc2be05188c63d04` |
+| 4 | `def` | [declaredTripleIds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BraidTaxonomy.lean/declarations/declaredtripleids.md) | 27 | `declaration-track:0bf973e8eb277c0be627a7f714a4af4307f7383e7392a7a563c2f53ece40660f` |
+| 5 | `theorem` | [declaredTripleIds_has_nine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BraidTaxonomy.lean/declarations/declaredtripleids-has-nine.md) | 30 | `result-track:0326870b213272da5cf56de5b9ec29267ddc7037f7abd2f9c706162770d78e6b` |
+| 6 | `structure` | [Triple](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BraidTaxonomy.lean/declarations/triple.md) | 33 | `declaration-track:57ea94487aa46848d36077d9c0c17b0ff1a4e88afed131209911008931866767` |
+| 7 | `def` | [declaredBraid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BraidTaxonomy.lean/declarations/declaredbraid.md) | 39 | `declaration-track:248663538da2f51893258873b713096d6572e1ca221a77937d43d1f1aa783984` |
+| 8 | `theorem` | [declaredBraid_has_nine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BraidTaxonomy.lean/declarations/declaredbraid-has-nine.md) | 51 | `result-track:f9c1d87171d28c8c0dd3901e7c859c9ed28ee4b9b864515c6fe157385645e6f7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

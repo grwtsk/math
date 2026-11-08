@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/RectangularPoleReduction.lean/index.md) · [Full source](../../../../GeneralTopology/RectangularPoleReduction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RectangularPoleReduction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RectangularPoleReduction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.FinitePoleSubtraction`](../../../../FunctionsOfAComplexVariable/FinitePoleSubtraction.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.OrientedRectangle`](../../../../MeasureAndIntegration/OrientedRectangle.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.FinitePoleSubtraction`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FinitePoleSubtraction.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.OrientedRectangle`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OrientedRectangle.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [closedRectangle](../../../../GeneralTopology/RectangularPoleReduction.lean/declarations/closedrectangle.md) | 30 | `declaration-track:bb4209e8da5c48baedb3ee9fd7323476416e06af292dcf01e3821886856c0534` |
-| 2 | `def` | [principalSum](../../../../GeneralTopology/RectangularPoleReduction.lean/declarations/principalsum.md) | 34 | `declaration-track:531310c1c6e61a92bdbaa8c0b3714e074f7190a211ef908990087fe784a431a7` |
-| 3 | `theorem` | [analyticAt_principalSum](../../../../GeneralTopology/RectangularPoleReduction.lean/declarations/analyticat-principalsum.md) | 37 | `result-track:91f68b0244c399eb013416610ae6c6f314b9275732649eb373170672641e6966` |
-| 4 | `def` | [EdgeIntegrable](../../../../GeneralTopology/RectangularPoleReduction.lean/declarations/edgeintegrable.md) | 46 | `declaration-track:1fd5b129e22ae06a6adc3bb985fabb60813f14ebf4f0a308818e557f11326a8c` |
-| 5 | `theorem` | [boundaryIntegral_add](../../../../GeneralTopology/RectangularPoleReduction.lean/declarations/boundaryintegral-add.md) | 52 | `result-track:1810772747b313312ed845d42c2873a0eb309a4781b99f5c56780d6107fb606b` |
-| 6 | `theorem` | [boundaryIntegral_congr](../../../../GeneralTopology/RectangularPoleReduction.lean/declarations/boundaryintegral-congr.md) | 64 | `result-track:26e0f3f35f309c4e33843d00c45f1e0c1c22286dfdff8cd9eb25ca40e433ea51` |
-| 7 | `theorem` | [boundaryIntegral_zero_on_rectangle](../../../../GeneralTopology/RectangularPoleReduction.lean/declarations/boundaryintegral-zero-on-rectangle.md) | 81 | `result-track:367f2a1f4171545e0b4211624c3475daae62a9eff5e3e306bfb99d6155b88c76` |
-| 8 | `theorem` | [edgeIntegrable_of_analytic_germs](../../../../GeneralTopology/RectangularPoleReduction.lean/declarations/edgeintegrable-of-analytic-germs.md) | 95 | `result-track:ec2885218ae9d9932e186bc02dade6ce04a9f2acace7f58ad4351e83fe7d39be` |
-| 9 | `theorem` | [boundaryIntegral_eq_principalSum](../../../../GeneralTopology/RectangularPoleReduction.lean/declarations/boundaryintegral-eq-principalsum.md) | 115 | `result-track:847c9db6805ce7e91a66c0476c225a52a2716f31302a35ace929d5e998df9005` |
+| 1 | `def` | [closedRectangle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RectangularPoleReduction.lean/declarations/closedrectangle.md) | 30 | `declaration-track:bb4209e8da5c48baedb3ee9fd7323476416e06af292dcf01e3821886856c0534` |
+| 2 | `def` | [principalSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RectangularPoleReduction.lean/declarations/principalsum.md) | 34 | `declaration-track:531310c1c6e61a92bdbaa8c0b3714e074f7190a211ef908990087fe784a431a7` |
+| 3 | `theorem` | [analyticAt_principalSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RectangularPoleReduction.lean/declarations/analyticat-principalsum.md) | 37 | `result-track:91f68b0244c399eb013416610ae6c6f314b9275732649eb373170672641e6966` |
+| 4 | `def` | [EdgeIntegrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RectangularPoleReduction.lean/declarations/edgeintegrable.md) | 46 | `declaration-track:1fd5b129e22ae06a6adc3bb985fabb60813f14ebf4f0a308818e557f11326a8c` |
+| 5 | `theorem` | [boundaryIntegral_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RectangularPoleReduction.lean/declarations/boundaryintegral-add.md) | 52 | `result-track:1810772747b313312ed845d42c2873a0eb309a4781b99f5c56780d6107fb606b` |
+| 6 | `theorem` | [boundaryIntegral_congr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RectangularPoleReduction.lean/declarations/boundaryintegral-congr.md) | 64 | `result-track:26e0f3f35f309c4e33843d00c45f1e0c1c22286dfdff8cd9eb25ca40e433ea51` |
+| 7 | `theorem` | [boundaryIntegral_zero_on_rectangle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RectangularPoleReduction.lean/declarations/boundaryintegral-zero-on-rectangle.md) | 81 | `result-track:367f2a1f4171545e0b4211624c3475daae62a9eff5e3e306bfb99d6155b88c76` |
+| 8 | `theorem` | [edgeIntegrable_of_analytic_germs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RectangularPoleReduction.lean/declarations/edgeintegrable-of-analytic-germs.md) | 95 | `result-track:ec2885218ae9d9932e186bc02dade6ce04a9f2acace7f58ad4351e83fe7d39be` |
+| 9 | `theorem` | [boundaryIntegral_eq_principalSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RectangularPoleReduction.lean/declarations/boundaryintegral-eq-principalsum.md) | 115 | `result-track:847c9db6805ce7e91a66c0476c225a52a2716f31302a35ace929d5e998df9005` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

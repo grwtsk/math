@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/HeisenbergObservationLoss.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/HeisenbergObservationLoss.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/HeisenbergObservationLoss.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/HeisenbergObservationLoss.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.GroupTheory.Words.IntegralHeisenbergPrimitive`](../../../../GroupTheoryAndGeneralizations/IntegralHeisenbergPrimitive.lean/index.md) — import line 10; pinned internal source present.
-- [`GRWTSK.Logic.InformationLoss.FactorizationFiber`](../../../../MathematicalLogicAndFoundations/GeneralLogic/FactorizationFiber.lean/index.md) — import line 11; pinned internal source present.
+- [`GRWTSK.GroupTheory.Words.IntegralHeisenbergPrimitive`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IntegralHeisenbergPrimitive.lean/index.md) — import line 10; pinned internal source present.
+- [`GRWTSK.Logic.InformationLoss.FactorizationFiber`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FactorizationFiber.lean/index.md) — import line 11; pinned internal source present.
 - `Mathlib.Tactic` — import line 12; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [abelianized](../../../../GroupTheoryAndGeneralizations/HeisenbergObservationLoss.lean/declarations/abelianized.md) | 39 | `declaration-track:04ca55c0fe8eb9cd2b8473bd67d00353fbe39bcb0556ef726d02c98e0e37fc78` |
-| 2 | `theorem` | [abelianized_commutator_eq_identity](../../../../GroupTheoryAndGeneralizations/HeisenbergObservationLoss.lean/declarations/abelianized-commutator-eq-identity.md) | 45 | `result-track:f8592e900ccdb98d34a6aeeb65b5506d714568d8b51aec4ac1b4d43320610a25` |
-| 3 | `def` | [isIdentityFlag](../../../../GroupTheoryAndGeneralizations/HeisenbergObservationLoss.lean/declarations/isidentityflag.md) | 52 | `declaration-track:ab015c275eb77d88388bb1be463ff3efb3f66a8ea1993bfb761f555048b6826c` |
-| 4 | `theorem` | [central_flag_differs](../../../../GroupTheoryAndGeneralizations/HeisenbergObservationLoss.lean/declarations/central-flag-differs.md) | 55 | `result-track:3f70e18270b65bfc6d1e8e5b05f807eafdbfdaf148b82a2ecc8aeb5c80de6f29` |
-| 5 | `theorem` | [identity_flag_not_factorsThrough_abelianization](../../../../GroupTheoryAndGeneralizations/HeisenbergObservationLoss.lean/declarations/identity-flag-not-factorsthrough-abelianization.md) | 62 | `result-track:95bf7b24a806d63bc049d0a3ba65f2e5438d4eaedcc08a3963b32e67ab5f8d2f` |
-| 6 | `theorem` | [commutative_character_kills_central_memory](../../../../GroupTheoryAndGeneralizations/HeisenbergObservationLoss.lean/declarations/commutative-character-kills-central-memory.md) | 71 | `result-track:06f0754c0211629853103b00a375fbe4dbc0e5302ad19fe09931f7f6c7edee82` |
-| 7 | `theorem` | [commutative_character_cannot_separate](../../../../GroupTheoryAndGeneralizations/HeisenbergObservationLoss.lean/declarations/commutative-character-cannot-separate.md) | 80 | `result-track:c19b1594718fbb532e16cf8f0f099244c4b9d774733d41fe5f3ac967f25dc356` |
+| 1 | `def` | [abelianized](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/HeisenbergObservationLoss.lean/declarations/abelianized.md) | 39 | `declaration-track:04ca55c0fe8eb9cd2b8473bd67d00353fbe39bcb0556ef726d02c98e0e37fc78` |
+| 2 | `theorem` | [abelianized_commutator_eq_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/HeisenbergObservationLoss.lean/declarations/abelianized-commutator-eq-identity.md) | 45 | `result-track:f8592e900ccdb98d34a6aeeb65b5506d714568d8b51aec4ac1b4d43320610a25` |
+| 3 | `def` | [isIdentityFlag](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/HeisenbergObservationLoss.lean/declarations/isidentityflag.md) | 52 | `declaration-track:ab015c275eb77d88388bb1be463ff3efb3f66a8ea1993bfb761f555048b6826c` |
+| 4 | `theorem` | [central_flag_differs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/HeisenbergObservationLoss.lean/declarations/central-flag-differs.md) | 55 | `result-track:3f70e18270b65bfc6d1e8e5b05f807eafdbfdaf148b82a2ecc8aeb5c80de6f29` |
+| 5 | `theorem` | [identity_flag_not_factorsThrough_abelianization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/HeisenbergObservationLoss.lean/declarations/identity-flag-not-factorsthrough-abelianization.md) | 62 | `result-track:95bf7b24a806d63bc049d0a3ba65f2e5438d4eaedcc08a3963b32e67ab5f8d2f` |
+| 6 | `theorem` | [commutative_character_kills_central_memory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/HeisenbergObservationLoss.lean/declarations/commutative-character-kills-central-memory.md) | 71 | `result-track:06f0754c0211629853103b00a375fbe4dbc0e5302ad19fe09931f7f6c7edee82` |
+| 7 | `theorem` | [commutative_character_cannot_separate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/HeisenbergObservationLoss.lean/declarations/commutative-character-cannot-separate.md) | 80 | `result-track:c19b1594718fbb532e16cf8f0f099244c4b9d774733d41fe5f3ac967f25dc356` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderRingInjSurjIsOrderedRing.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderRingInjSurjIsOrderedRing.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderRingInjSurjIsOrderedRing.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderRingInjSurjIsOrderedRing.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [isOrderedRing](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderRingInjSurjIsOrderedRing.lean/declarations/isorderedring.md) | 23 | `result-track:721a1b0bb7d018f288356f3517c8eb0c292d06f3c663a98ffa353ca763941e88` |
-| 2 | `lemma` | [isStrictOrderedRing](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderRingInjSurjIsOrderedRing.lean/declarations/isstrictorderedring.md) | 40 | `result-track:361ca455275acd377e34c61a63f6bd4cecc25a0d088d68ce7dae9b6d6cc06f36` |
+| 1 | `lemma` | [isOrderedRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderRingInjSurjIsOrderedRing.lean/declarations/isorderedring.md) | 23 | `result-track:721a1b0bb7d018f288356f3517c8eb0c292d06f3c663a98ffa353ca763941e88` |
+| 2 | `lemma` | [isStrictOrderedRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderRingInjSurjIsOrderedRing.lean/declarations/isstrictorderedring.md) | 40 | `result-track:361ca455275acd377e34c61a63f6bd4cecc25a0d088d68ce7dae9b6d6cc06f36` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

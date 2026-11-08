@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/StorageDescent.lean/index.md) · [Full source](../../../../Combinatorics/StorageDescent.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/StorageDescent.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/StorageDescent.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,20 +60,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [LocalStorage](../../../../Combinatorics/StorageDescent.lean/declarations/localstorage.md) | 32 | `declaration-track:aab2ab6cfd449cc9b3e4d38a19369f4402766e49e919aac3ec0a3d435cf91a21` |
-| 2 | `def` | [chart](../../../../Combinatorics/StorageDescent.lean/declarations/chart.md) | 42 | `declaration-track:b3a6b594b2f4069289fe89e5ac594cca6b17fedaa88667343fbf73d3a75a211f` |
-| 3 | `theorem` | [mem_chart](../../../../Combinatorics/StorageDescent.lean/declarations/mem-chart.md) | 45 | `result-track:bdc12bdee12b6133d015502bfb2f1286051e38b9fcec9179e41a55bacafe9b1a` |
-| 4 | `def` | [global](../../../../Combinatorics/StorageDescent.lean/declarations/global.md) | 49 | `declaration-track:88c4dfe9bb65c1ce0862dc21930ad2e0cea89b8f272e681baa1674c1f2aa5027` |
-| 5 | `theorem` | [global_eq](../../../../Combinatorics/StorageDescent.lean/declarations/global-eq.md) | 53 | `result-track:432c075c30dc2976aaa01130f898323ab311343b39c86f2821e44848860a2382` |
-| 6 | `theorem` | [global_unique](../../../../Combinatorics/StorageDescent.lean/declarations/global-unique.md) | 63 | `result-track:800af5897b51fc4ea2f63493abaf35ccf7726370f1c5d323bbd4ace7e3dec58e` |
-| 7 | `theorem` | [sum_drop](../../../../Combinatorics/StorageDescent.lean/declarations/sum-drop.md) | 73 | `result-track:91b90e8f9cadc36f308cded5f4b1c55c8f58b26f00ac7fca2174c068cc29b7f8` |
-| 8 | `theorem` | [terminal_budget](../../../../Combinatorics/StorageDescent.lean/declarations/terminal-budget.md) | 80 | `result-track:51a253774cc9599404d62c5cc8cff96240f085a2e785d38fa8ae3f6e73b7be66` |
-| 9 | `theorem` | [switched_sum](../../../../Combinatorics/StorageDescent.lean/declarations/switched-sum.md) | 91 | `result-track:01263d41c5ecd229a75690f61fdb0a84f40724cf86dcaefdea45cbfaf6549fda` |
-| 10 | `theorem` | [switched_terminal_budget](../../../../Combinatorics/StorageDescent.lean/declarations/switched-terminal-budget.md) | 101 | `result-track:f02452c36194dea837d9e592be8f2b36868106b631cc8cda94e2717b5e72fc2a` |
-| 11 | `theorem` | [constant_gauge_budget](../../../../Combinatorics/StorageDescent.lean/declarations/constant-gauge-budget.md) | 114 | `result-track:54ee627926b08f3b6e5fb812555959bc06b5730a5abe2f18398a4956b41f38bd` |
-| 12 | `theorem` | [variable_gauge_budget](../../../../Combinatorics/StorageDescent.lean/declarations/variable-gauge-budget.md) | 130 | `result-track:e38e59b68762217e5f40111559f686b30e43aa286109ef9da12e94565d9e5c54` |
-| 13 | `theorem` | [product_jump](../../../../Combinatorics/StorageDescent.lean/declarations/product-jump.md) | 145 | `result-track:74aa58f8f54fc8688d52ad0041acd80ffa4c8d107bfefe7c8824d6937f6ac9b4` |
-| 14 | `theorem` | [cost_le_of_terminal](../../../../Combinatorics/StorageDescent.lean/declarations/cost-le-of-terminal.md) | 149 | `result-track:277b0daac01f8d935a17bf78dd7ecfd1603a936d0cfb22a63327b631010ce220` |
+| 1 | `structure` | [LocalStorage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/StorageDescent.lean/declarations/localstorage.md) | 32 | `declaration-track:aab2ab6cfd449cc9b3e4d38a19369f4402766e49e919aac3ec0a3d435cf91a21` |
+| 2 | `def` | [chart](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/StorageDescent.lean/declarations/chart.md) | 42 | `declaration-track:b3a6b594b2f4069289fe89e5ac594cca6b17fedaa88667343fbf73d3a75a211f` |
+| 3 | `theorem` | [mem_chart](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/StorageDescent.lean/declarations/mem-chart.md) | 45 | `result-track:bdc12bdee12b6133d015502bfb2f1286051e38b9fcec9179e41a55bacafe9b1a` |
+| 4 | `def` | [global](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/StorageDescent.lean/declarations/global.md) | 49 | `declaration-track:88c4dfe9bb65c1ce0862dc21930ad2e0cea89b8f272e681baa1674c1f2aa5027` |
+| 5 | `theorem` | [global_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/StorageDescent.lean/declarations/global-eq.md) | 53 | `result-track:432c075c30dc2976aaa01130f898323ab311343b39c86f2821e44848860a2382` |
+| 6 | `theorem` | [global_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/StorageDescent.lean/declarations/global-unique.md) | 63 | `result-track:800af5897b51fc4ea2f63493abaf35ccf7726370f1c5d323bbd4ace7e3dec58e` |
+| 7 | `theorem` | [sum_drop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/StorageDescent.lean/declarations/sum-drop.md) | 73 | `result-track:91b90e8f9cadc36f308cded5f4b1c55c8f58b26f00ac7fca2174c068cc29b7f8` |
+| 8 | `theorem` | [terminal_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/StorageDescent.lean/declarations/terminal-budget.md) | 80 | `result-track:51a253774cc9599404d62c5cc8cff96240f085a2e785d38fa8ae3f6e73b7be66` |
+| 9 | `theorem` | [switched_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/StorageDescent.lean/declarations/switched-sum.md) | 91 | `result-track:01263d41c5ecd229a75690f61fdb0a84f40724cf86dcaefdea45cbfaf6549fda` |
+| 10 | `theorem` | [switched_terminal_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/StorageDescent.lean/declarations/switched-terminal-budget.md) | 101 | `result-track:f02452c36194dea837d9e592be8f2b36868106b631cc8cda94e2717b5e72fc2a` |
+| 11 | `theorem` | [constant_gauge_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/StorageDescent.lean/declarations/constant-gauge-budget.md) | 114 | `result-track:54ee627926b08f3b6e5fb812555959bc06b5730a5abe2f18398a4956b41f38bd` |
+| 12 | `theorem` | [variable_gauge_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/StorageDescent.lean/declarations/variable-gauge-budget.md) | 130 | `result-track:e38e59b68762217e5f40111559f686b30e43aa286109ef9da12e94565d9e5c54` |
+| 13 | `theorem` | [product_jump](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/StorageDescent.lean/declarations/product-jump.md) | 145 | `result-track:74aa58f8f54fc8688d52ad0041acd80ffa4c8d107bfefe7c8824d6937f6ac9b4` |
+| 14 | `theorem` | [cost_le_of_terminal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/StorageDescent.lean/declarations/cost-le-of-terminal.md) | 149 | `result-track:277b0daac01f8d935a17bf78dd7ecfd1603a936d0cfb22a63327b631010ce220` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

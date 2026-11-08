@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/TacticNamespacedFiles.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/TacticNamespacedFiles.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TacticNamespacedFiles.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TacticNamespacedFiles.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [files](../../../../../ComputerScience/AlgorithmsInComputerScience/TacticNamespacedFiles.lean/declarations/files.md) | 18 | `declaration-track:f4f301c5ed33cf09c03c1abb4d867a64bb17ec94c5a5e06cfc649b85940dffdb` |
-| 2 | `theorem` | [files_count](../../../../../ComputerScience/AlgorithmsInComputerScience/TacticNamespacedFiles.lean/declarations/files-count.md) | 23 | `result-track:6b30bbb74c882bedfc6a346e90f94b26b88e24ce6c1c2ba39c0ef4c410c7f9ae` |
+| 1 | `def` | [files](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TacticNamespacedFiles.lean/declarations/files.md) | 18 | `declaration-track:f4f301c5ed33cf09c03c1abb4d867a64bb17ec94c5a5e06cfc649b85940dffdb` |
+| 2 | `theorem` | [files_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TacticNamespacedFiles.lean/declarations/files-count.md) | 23 | `result-track:6b30bbb74c882bedfc6a346e90f94b26b88e24ce6c1c2ba39c0ef4c410c7f9ae` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

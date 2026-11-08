@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroIntNamespaced.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroIntNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroIntNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroIntNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [ofAdd_zpow](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroIntNamespaced.lean/declarations/ofadd-zpow.md) | 29 | `result-track:05d1e9ab51a714569efc20b1ad2fa153852263db107f144bcf4675e189a4c0ee` |
-| 2 | `theorem` | [ofAdd_neg_one_pow_comm](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroIntNamespaced.lean/declarations/ofadd-neg-one-pow-comm.md) | 32 | `result-track:59ff1bf3ea491a6bc0f1df88b857e85610ccb80a27abc064997f97aa350c2d39` |
+| 1 | `theorem` | [ofAdd_zpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroIntNamespaced.lean/declarations/ofadd-zpow.md) | 29 | `result-track:05d1e9ab51a714569efc20b1ad2fa153852263db107f144bcf4675e189a4c0ee` |
+| 2 | `theorem` | [ofAdd_neg_one_pow_comm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupWithZeroIntNamespaced.lean/declarations/ofadd-neg-one-pow-comm.md) | 32 | `result-track:59ff1bf3ea491a6bc0f1df88b857e85610ccb80a27abc064997f97aa350c2d39` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

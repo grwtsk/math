@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KroneckerEdition1.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KroneckerEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KroneckerEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KroneckerEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [kroneckerKernel](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KroneckerEdition1.lean/declarations/kroneckerkernel.md) | 22 | `declaration-track:221e45084b1752441d6b2506163b88ac5b78b9c55e06bed9b895343869075156` |
-| 2 | `theorem` | [kroneckerKernel_apply](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KroneckerEdition1.lean/declarations/kroneckerkernel-apply.md) | 26 | `result-track:32222a8842a806fcbf76cd68a88f99a2f6e9995ff0c38415ee70c609df1f9a3f` |
-| 3 | `theorem` | [kroneckerKernel_posDef](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KroneckerEdition1.lean/declarations/kroneckerkernel-posdef.md) | 32 | `result-track:9ce3241ec152c249fb69ec1e40d783db0b9f5e3ab35a4430c950fef761c43a01` |
+| 1 | `def` | [kroneckerKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KroneckerEdition1.lean/declarations/kroneckerkernel.md) | 22 | `declaration-track:221e45084b1752441d6b2506163b88ac5b78b9c55e06bed9b895343869075156` |
+| 2 | `theorem` | [kroneckerKernel_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KroneckerEdition1.lean/declarations/kroneckerkernel-apply.md) | 26 | `result-track:32222a8842a806fcbf76cd68a88f99a2f6e9995ff0c38415ee70c609df1f9a3f` |
+| 3 | `theorem` | [kroneckerKernel_posDef](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KroneckerEdition1.lean/declarations/kroneckerkernel-posdef.md) | 32 | `result-track:9ce3241ec152c249fb69ec1e40d783db0b9f5e3ab35a4430c950fef761c43a01` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

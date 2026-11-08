@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatAlgebraSourceEdition2.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatAlgebraSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatAlgebraSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatAlgebraSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [moduleOfAlgebraModule](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatAlgebraSourceEdition2.lean/declarations/moduleofalgebramodule.md) | 43 | `declaration-track:4eebfe56d7cf6f4d7ae693a77f3aa6f7368242e332e647019a9a9a493102e828` |
-| 2 | `theorem` | [isScalarTower_of_algebra_moduleCat](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatAlgebraSourceEdition2.lean/declarations/isscalartower-of-algebra-modulecat.md) | 48 | `result-track:4f704b139b7b70c6b1e0b0b8208ed78a0c4f6d26e9f69a0c10be0d7c66d933ef` |
-| 3 | `example` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatAlgebraSourceEdition2.lean/declarations/example.md) | 54 | `declaration-track:e4e08cc1ebc7090531e39af561bd42064d85c62ccbff908efa1b7179a01af98d` |
-| 4 | `instance` | [linearOverField](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatAlgebraSourceEdition2.lean/declarations/linearoverfield.md) | 56 | `declaration-track:5b41c0ff7683a214eb2cde0a50d937a9dcb4879fd2902cfcd65192f9087dc500` |
+| 1 | `def` | [moduleOfAlgebraModule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatAlgebraSourceEdition2.lean/declarations/moduleofalgebramodule.md) | 43 | `declaration-track:4eebfe56d7cf6f4d7ae693a77f3aa6f7368242e332e647019a9a9a493102e828` |
+| 2 | `theorem` | [isScalarTower_of_algebra_moduleCat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatAlgebraSourceEdition2.lean/declarations/isscalartower-of-algebra-modulecat.md) | 48 | `result-track:4f704b139b7b70c6b1e0b0b8208ed78a0c4f6d26e9f69a0c10be0d7c66d933ef` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatAlgebraSourceEdition2.lean/declarations/example.md) | 54 | `declaration-track:e4e08cc1ebc7090531e39af561bd42064d85c62ccbff908efa1b7179a01af98d` |
+| 4 | `instance` | [linearOverField](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatAlgebraSourceEdition2.lean/declarations/linearoverfield.md) | 56 | `declaration-track:5b41c0ff7683a214eb2cde0a50d937a9dcb4879fd2902cfcd65192f9087dc500` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/IdealNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/IdealNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/IdealNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/IdealNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [tendsto_norm_le_and_mk_eq_div_atTop_aux₁](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/IdealNamespaced.lean/declarations/tendsto-norm-le-and-mk-eq-div-attop-aux.md) | 45 | `result-track:11ed3300b7e68bcc84bfcf486608ead6126d9bcb029581f68d38dec0acd91b31` |
-| 2 | `def` | [tendsto_norm_le_and_mk_eq_div_atTop_aux₂](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/IdealNamespaced.lean/declarations/tendsto-norm-le-and-mk-eq-div-attop-aux-source-edition-2.md) | 60 | `declaration-track:7b74425bb9d3b1c09af635ce0146eb0f3bce0f037e9f24bec010d27a13c19f3b` |
-| 3 | `theorem` | [tendsto_norm_le_and_mk_eq_div_atTop](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/IdealNamespaced.lean/declarations/tendsto-norm-le-and-mk-eq-div-attop.md) | 81 | `result-track:df6adfa4bd5e15b383befdc8234e23b2bb5bf58ee94854dcb3961905926aad38` |
-| 4 | `theorem` | [tendsto_norm_le_div_atTop₀](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/IdealNamespaced.lean/declarations/tendsto-norm-le-div-attop.md) | 129 | `result-track:3f4b3222aa91aebcdae7dc10e2608a8713e3ca747842992a66131d251f084fed` |
-| 5 | `theorem` | [tendsto_norm_le_div_atTop](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/IdealNamespaced.lean/declarations/tendsto-norm-le-div-attop-source-edition-2.md) | 152 | `result-track:5873fd41d1a67a3c4e644db9094be8723386a14aea3bf72ad8f9b945d74f68df` |
+| 1 | `theorem` | [tendsto_norm_le_and_mk_eq_div_atTop_aux₁](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/IdealNamespaced.lean/declarations/tendsto-norm-le-and-mk-eq-div-attop-aux.md) | 45 | `result-track:11ed3300b7e68bcc84bfcf486608ead6126d9bcb029581f68d38dec0acd91b31` |
+| 2 | `def` | [tendsto_norm_le_and_mk_eq_div_atTop_aux₂](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/IdealNamespaced.lean/declarations/tendsto-norm-le-and-mk-eq-div-attop-aux-source-edition-2.md) | 60 | `declaration-track:7b74425bb9d3b1c09af635ce0146eb0f3bce0f037e9f24bec010d27a13c19f3b` |
+| 3 | `theorem` | [tendsto_norm_le_and_mk_eq_div_atTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/IdealNamespaced.lean/declarations/tendsto-norm-le-and-mk-eq-div-attop.md) | 81 | `result-track:df6adfa4bd5e15b383befdc8234e23b2bb5bf58ee94854dcb3961905926aad38` |
+| 4 | `theorem` | [tendsto_norm_le_div_atTop₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/IdealNamespaced.lean/declarations/tendsto-norm-le-div-attop.md) | 129 | `result-track:3f4b3222aa91aebcdae7dc10e2608a8713e3ca747842992a66131d251f084fed` |
+| 5 | `theorem` | [tendsto_norm_le_div_atTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/IdealNamespaced.lean/declarations/tendsto-norm-le-div-attop-source-edition-2.md) | 152 | `result-track:5873fd41d1a67a3c4e644db9094be8723386a14aea3bf72ad8f9b945d74f68df` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

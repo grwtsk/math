@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/PrimeAsymptotics.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/PrimeAsymptotics.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PrimeAsymptotics.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PrimeAsymptotics.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [files](../../../../../ComputerScience/AlgorithmsInComputerScience/PrimeAsymptotics.lean/declarations/files.md) | 10 | `declaration-track:eea25fb4b847c9c377adf3b7bad0d6c1bfd3fa043bc34d1985a7abfaa34a0a32` |
-| 2 | `theorem` | [files_count](../../../../../ComputerScience/AlgorithmsInComputerScience/PrimeAsymptotics.lean/declarations/files-count.md) | 19 | `result-track:90e3f2212cf29056b1fc3bfc0d5f967b14a81e126f29007a811773692a7dcd93` |
+| 1 | `def` | [files](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PrimeAsymptotics.lean/declarations/files.md) | 10 | `declaration-track:eea25fb4b847c9c377adf3b7bad0d6c1bfd3fa043bc34d1985a7abfaa34a0a32` |
+| 2 | `theorem` | [files_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PrimeAsymptotics.lean/declarations/files-count.md) | 19 | `result-track:90e3f2212cf29056b1fc3bfc0d5f967b14a81e126f29007a811773692a7dcd93` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/FiniteRefinementParametersAndPoints.lean/index.md) · [Full source](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/FiniteRefinementParametersAndPoints.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/FiniteRefinementParametersAndPoints.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/FiniteRefinementParametersAndPoints.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -54,7 +54,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 - `Mathlib.MeasureTheory.Measure.Decomposition.RadonNikodym` — import line 24; external provider; requires a separately pinned dependency.
 - `Mathlib.Probability.Distributions.Gamma` — import line 25; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 26; external provider; requires a separately pinned dependency.
-- [Positive Shape Scale Parameter Algebra](../../../../../ProbabilityTheoryAndStochasticProcesses/PositiveShapeScaleParameterAlgebra.lean/index.md) — import line 28; pinned internal source present.
+- [Positive Shape Scale Parameter Algebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/PositiveShapeScaleParameterAlgebra.lean/index.md) — import line 28; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -65,10 +65,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Refinement](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/FiniteRefinementParametersAndPoints.lean/declarations/refinement.md) | 60 | `declaration-track:37293c6eeb3226d153800600dc9734a63c11338fcce382d8904afed83668359c` |
-| 2 | `def` | [mergeParameters](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/FiniteRefinementParametersAndPoints.lean/declarations/mergeparameters.md) | 69 | `declaration-track:cea143e0a169ec14716d68c9f8834078e24668c0f846d92796bb87b52f62395e` |
-| 3 | `def` | [mergePoint](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/FiniteRefinementParametersAndPoints.lean/declarations/mergepoint.md) | 82 | `declaration-track:a11d8ddc3bf93a70abae38a075e3d7227688fbd77bdc0b131501d42437b5d819` |
-| 4 | `theorem` | [mergeParameters_total](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/FiniteRefinementParametersAndPoints.lean/declarations/mergeparameters-total.md) | 86 | `result-track:b3fd494ee89cc0c71ffd57b35926185f02d1269281e0d1cd2dcf48f774d9578b` |
+| 1 | `structure` | [Refinement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/FiniteRefinementParametersAndPoints.lean/declarations/refinement.md) | 60 | `declaration-track:37293c6eeb3226d153800600dc9734a63c11338fcce382d8904afed83668359c` |
+| 2 | `def` | [mergeParameters](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/FiniteRefinementParametersAndPoints.lean/declarations/mergeparameters.md) | 69 | `declaration-track:cea143e0a169ec14716d68c9f8834078e24668c0f846d92796bb87b52f62395e` |
+| 3 | `def` | [mergePoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/FiniteRefinementParametersAndPoints.lean/declarations/mergepoint.md) | 82 | `declaration-track:a11d8ddc3bf93a70abae38a075e3d7227688fbd77bdc0b131501d42437b5d819` |
+| 4 | `theorem` | [mergeParameters_total](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/FiniteRefinementParametersAndPoints.lean/declarations/mergeparameters-total.md) | 86 | `result-track:b3fd494ee89cc0c71ffd57b35926185f02d1269281e0d1cd2dcf48f774d9578b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

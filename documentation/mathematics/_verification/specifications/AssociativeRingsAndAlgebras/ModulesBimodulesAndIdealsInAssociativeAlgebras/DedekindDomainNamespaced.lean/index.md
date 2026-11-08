@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/DedekindDomainNamespaced.lean/index.md) · [Full source](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/DedekindDomainNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/DedekindDomainNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/DedekindDomainNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [isInternal_prime_power_torsion_of_is_torsion_by_ideal](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/DedekindDomainNamespaced.lean/declarations/isinternal-prime-power-torsion-of-is-torsion-by-ideal.md) | 41 | `result-track:059760f7ddfd9b969705fd3fd83d49358a1fd35765672464e1b48e42728033c2` |
-| 2 | `theorem` | [isInternal_prime_power_torsion](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/DedekindDomainNamespaced.lean/declarations/isinternal-prime-power-torsion.md) | 68 | `result-track:036dbfde95e1a6335e10a44fe6d4a47f9e5faac62b4d6abf64013030603b99a4` |
-| 3 | `theorem` | [exists_isInternal_prime_power_torsion](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/DedekindDomainNamespaced.lean/declarations/exists-isinternal-prime-power-torsion.md) | 80 | `result-track:71ca212be7fe82e383c186b3d0331b5546da0353d3d91357586bd421f81e4546` |
+| 1 | `theorem` | [isInternal_prime_power_torsion_of_is_torsion_by_ideal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/DedekindDomainNamespaced.lean/declarations/isinternal-prime-power-torsion-of-is-torsion-by-ideal.md) | 41 | `result-track:059760f7ddfd9b969705fd3fd83d49358a1fd35765672464e1b48e42728033c2` |
+| 2 | `theorem` | [isInternal_prime_power_torsion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/DedekindDomainNamespaced.lean/declarations/isinternal-prime-power-torsion.md) | 68 | `result-track:036dbfde95e1a6335e10a44fe6d4a47f9e5faac62b4d6abf64013030603b99a4` |
+| 3 | `theorem` | [exists_isInternal_prime_power_torsion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/DedekindDomainNamespaced.lean/declarations/exists-isinternal-prime-power-torsion.md) | 80 | `result-track:71ca212be7fe82e383c186b3d0331b5546da0353d3d91357586bd421f81e4546` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

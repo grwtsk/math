@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppAntidiagonalNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppAntidiagonalNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppAntidiagonalNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppAntidiagonalNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [antidiagonal'](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppAntidiagonalNamespaced.lean/declarations/antidiagonal.md) | 36 | `declaration-track:f572acb52f5dc7c97050aac01891398c4b3b2a5051bb7bf3cdd69e8258600e34` |
-| 2 | `instance` | [instHasAntidiagonal](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppAntidiagonalNamespaced.lean/declarations/insthasantidiagonal.md) | 42 | `declaration-track:2165d71b9f5543dfcc14a49bf379e6de48b4b45845af789165de73496b48cf1c` |
-| 3 | `theorem` | [antidiagonal_zero](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppAntidiagonalNamespaced.lean/declarations/antidiagonal-zero.md) | 50 | `result-track:3478702ab8f2efa16d2078a23beff9d7f0910eca8440af2c8debd83d078e1886` |
-| 4 | `theorem` | [prod_antidiagonal_swap](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppAntidiagonalNamespaced.lean/declarations/prod-antidiagonal-swap.md) | 53 | `result-track:1d7ca371d75a37a640e66f87edc55e4706a18de785d12cc7472c5381da7bcbf2` |
-| 5 | `theorem` | [antidiagonal_single](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppAntidiagonalNamespaced.lean/declarations/antidiagonal-single.md) | 59 | `result-track:390e8947917fa122fef38847750024dd884bcb651314d015c58c9e46899e95bd` |
+| 1 | `def` | [antidiagonal'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppAntidiagonalNamespaced.lean/declarations/antidiagonal.md) | 36 | `declaration-track:f572acb52f5dc7c97050aac01891398c4b3b2a5051bb7bf3cdd69e8258600e34` |
+| 2 | `instance` | [instHasAntidiagonal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppAntidiagonalNamespaced.lean/declarations/insthasantidiagonal.md) | 42 | `declaration-track:2165d71b9f5543dfcc14a49bf379e6de48b4b45845af789165de73496b48cf1c` |
+| 3 | `theorem` | [antidiagonal_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppAntidiagonalNamespaced.lean/declarations/antidiagonal-zero.md) | 50 | `result-track:3478702ab8f2efa16d2078a23beff9d7f0910eca8440af2c8debd83d078e1886` |
+| 4 | `theorem` | [prod_antidiagonal_swap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppAntidiagonalNamespaced.lean/declarations/prod-antidiagonal-swap.md) | 53 | `result-track:1d7ca371d75a37a640e66f87edc55e4706a18de785d12cc7472c5381da7bcbf2` |
+| 5 | `theorem` | [antidiagonal_single](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppAntidiagonalNamespaced.lean/declarations/antidiagonal-single.md) | 59 | `result-track:390e8947917fa122fef38847750024dd884bcb651314d015c58c9e46899e95bd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

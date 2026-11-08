@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/FiniteConcatenation.lean/index.md) · [Full source](../../../../GeneralTopology/FiniteConcatenation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FiniteConcatenation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FiniteConcatenation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,17 +58,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [leftTime](../../../../GeneralTopology/FiniteConcatenation.lean/declarations/lefttime.md) | 30 | `declaration-track:cf50ec576701d3255c5869a2e833bb4dcfce256ef3ddd041936b4c99d3864ac4` |
-| 2 | `def` | [rightTime](../../../../GeneralTopology/FiniteConcatenation.lean/declarations/righttime.md) | 33 | `declaration-track:c60aed2d82d8e5f09c2acc9b5e03d7d1e3b9e883ce3f55f499fc607beac5c23b` |
-| 3 | `theorem` | [trans_left](../../../../GeneralTopology/FiniteConcatenation.lean/declarations/trans-left.md) | 36 | `result-track:edaa727dbba140534bdefe7956795cf46b55aa1531285c796535bb7953a3b3d0` |
-| 4 | `theorem` | [trans_right](../../../../GeneralTopology/FiniteConcatenation.lean/declarations/trans-right.md) | 49 | `result-track:613c4d85ed0c3959cd9f2a004f52b1978e83f10374367668709399cc3d0b8e98` |
-| 5 | `def` | [concat](../../../../GeneralTopology/FiniteConcatenation.lean/declarations/concat.md) | 67 | `declaration-track:de8aaafaae0a895f63db489c41199614695bc93047cec764aa39c2ff4eca2596` |
-| 6 | `theorem` | [concat_start](../../../../GeneralTopology/FiniteConcatenation.lean/declarations/concat-start.md) | 74 | `result-track:0ade2c0688fa3ba902d2fa33633c25d616990e246a4f7fa4c4595f769a7ab903` |
-| 7 | `theorem` | [concat_finish](../../../../GeneralTopology/FiniteConcatenation.lean/declarations/concat-finish.md) | 78 | `result-track:9e0f54449de89a8ad9a84ebb12cfbf4fa700595b8265e141718bd25ce8e54c8d` |
-| 8 | `theorem` | [value_cases](../../../../GeneralTopology/FiniteConcatenation.lean/declarations/value-cases.md) | 83 | `result-track:730dc479c12598641fb86518cbfaa07b165fb61e0b6226b75f053462301eb657` |
-| 9 | `theorem` | [hits_cell](../../../../GeneralTopology/FiniteConcatenation.lean/declarations/hits-cell.md) | 99 | `result-track:c0fc7750ef02af1c9fc487fc28d61f0e2ba8bda6c41d4d8783cbb80c3ab3d34f` |
-| 10 | `theorem` | [range_iff](../../../../GeneralTopology/FiniteConcatenation.lean/declarations/range-iff.md) | 117 | `result-track:9acf95e3d8ac70f9c03b60bc3c522a189191ed474e77c6e898de9a35ca035c29` |
-| 11 | `theorem` | [natural](../../../../GeneralTopology/FiniteConcatenation.lean/declarations/natural.md) | 134 | `result-track:53c020430b15fcb40b7328b3648ab0e9d314ef0ce5534be9479822736a68ece0` |
+| 1 | `def` | [leftTime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FiniteConcatenation.lean/declarations/lefttime.md) | 30 | `declaration-track:cf50ec576701d3255c5869a2e833bb4dcfce256ef3ddd041936b4c99d3864ac4` |
+| 2 | `def` | [rightTime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FiniteConcatenation.lean/declarations/righttime.md) | 33 | `declaration-track:c60aed2d82d8e5f09c2acc9b5e03d7d1e3b9e883ce3f55f499fc607beac5c23b` |
+| 3 | `theorem` | [trans_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FiniteConcatenation.lean/declarations/trans-left.md) | 36 | `result-track:edaa727dbba140534bdefe7956795cf46b55aa1531285c796535bb7953a3b3d0` |
+| 4 | `theorem` | [trans_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FiniteConcatenation.lean/declarations/trans-right.md) | 49 | `result-track:613c4d85ed0c3959cd9f2a004f52b1978e83f10374367668709399cc3d0b8e98` |
+| 5 | `def` | [concat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FiniteConcatenation.lean/declarations/concat.md) | 67 | `declaration-track:de8aaafaae0a895f63db489c41199614695bc93047cec764aa39c2ff4eca2596` |
+| 6 | `theorem` | [concat_start](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FiniteConcatenation.lean/declarations/concat-start.md) | 74 | `result-track:0ade2c0688fa3ba902d2fa33633c25d616990e246a4f7fa4c4595f769a7ab903` |
+| 7 | `theorem` | [concat_finish](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FiniteConcatenation.lean/declarations/concat-finish.md) | 78 | `result-track:9e0f54449de89a8ad9a84ebb12cfbf4fa700595b8265e141718bd25ce8e54c8d` |
+| 8 | `theorem` | [value_cases](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FiniteConcatenation.lean/declarations/value-cases.md) | 83 | `result-track:730dc479c12598641fb86518cbfaa07b165fb61e0b6226b75f053462301eb657` |
+| 9 | `theorem` | [hits_cell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FiniteConcatenation.lean/declarations/hits-cell.md) | 99 | `result-track:c0fc7750ef02af1c9fc487fc28d61f0e2ba8bda6c41d4d8783cbb80c3ab3d34f` |
+| 10 | `theorem` | [range_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FiniteConcatenation.lean/declarations/range-iff.md) | 117 | `result-track:9acf95e3d8ac70f9c03b60bc3c522a189191ed474e77c6e898de9a35ca035c29` |
+| 11 | `theorem` | [natural](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FiniteConcatenation.lean/declarations/natural.md) | 134 | `result-track:53c020430b15fcb40b7328b3648ab0e9d314ef0ce5534be9479822736a68ece0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

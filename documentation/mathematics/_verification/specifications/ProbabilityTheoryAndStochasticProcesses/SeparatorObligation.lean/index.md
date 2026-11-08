@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/SeparatorObligation.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/SeparatorObligation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/SeparatorObligation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/SeparatorObligation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [SeparatorKind](../../../../ProbabilityTheoryAndStochasticProcesses/SeparatorObligation.lean/declarations/separatorkind.md) | 15 | `declaration-track:c1e28082c6d3d5940e0f85a70da6696944e6b54ed86da1b9753bf5e97fc2f818` |
-| 2 | `structure` | [SeparatorObligation](../../../../ProbabilityTheoryAndStochasticProcesses/SeparatorObligation.lean/declarations/separatorobligation.md) | 20 | `declaration-track:e17751636fe739d573b316923205242592abfeea621aee9606a02fee361ef615` |
-| 3 | `structure` | [CertifiedSeparator](../../../../ProbabilityTheoryAndStochasticProcesses/SeparatorObligation.lean/declarations/certifiedseparator.md) | 32 | `declaration-track:00b9a7498fea1c1360a9e38df96468e3becb92dbf7833b3796865d82d3ed715a` |
+| 1 | `inductive` | [SeparatorKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/SeparatorObligation.lean/declarations/separatorkind.md) | 15 | `declaration-track:c1e28082c6d3d5940e0f85a70da6696944e6b54ed86da1b9753bf5e97fc2f818` |
+| 2 | `structure` | [SeparatorObligation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/SeparatorObligation.lean/declarations/separatorobligation.md) | 20 | `declaration-track:e17751636fe739d573b316923205242592abfeea621aee9606a02fee361ef615` |
+| 3 | `structure` | [CertifiedSeparator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/SeparatorObligation.lean/declarations/certifiedseparator.md) | 32 | `declaration-track:00b9a7498fea1c1360a9e38df96468e3becb92dbf7833b3796865d82d3ed715a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

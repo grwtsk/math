@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DependentIndexFamilyAssumptions.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DependentIndexFamilyAssumptions.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DependentIndexFamilyAssumptions.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DependentIndexFamilyAssumptions.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -48,7 +48,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 - `Folder.DerivedSheaf.KTheoryIndex` — import line 19; external provider; requires a separately pinned dependency.
 - `Folder.DerivedSheaf.ModuliStackKTheory` — import line 20; external provider; requires a separately pinned dependency.
-- [Parameter Fiber Relevance](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ParameterFiberRelevance.lean/index.md) — import line 22; pinned internal source present.
+- [Parameter Fiber Relevance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ParameterFiberRelevance.lean/index.md) — import line 22; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FamiliesIndexClass](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DependentIndexFamilyAssumptions.lean/declarations/familiesindexclass.md) | 46 | `declaration-track:eac7f6a42be0ad2b1d357f65ab32d7ce912d22817c7bc3ab5ecbf8e28ff08fc6` |
-| 2 | `theorem` | [families_index_nontrivial](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DependentIndexFamilyAssumptions.lean/declarations/families-index-nontrivial.md) | 58 | `result-track:0f232af181aa98e0bef5346a597431c8171c25b878b805053ef5144471cd4527` |
-| 3 | `theorem` | [families_index_specializes](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DependentIndexFamilyAssumptions.lean/declarations/families-index-specializes.md) | 65 | `result-track:61c0315e2d4efd3bb6f9a1993c1225b82e4603d90294cfa6a8af7cdc7901f6e9` |
+| 1 | `structure` | [FamiliesIndexClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DependentIndexFamilyAssumptions.lean/declarations/familiesindexclass.md) | 46 | `declaration-track:eac7f6a42be0ad2b1d357f65ab32d7ce912d22817c7bc3ab5ecbf8e28ff08fc6` |
+| 2 | `theorem` | [families_index_nontrivial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DependentIndexFamilyAssumptions.lean/declarations/families-index-nontrivial.md) | 58 | `result-track:0f232af181aa98e0bef5346a597431c8171c25b878b805053ef5144471cd4527` |
+| 3 | `theorem` | [families_index_specializes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DependentIndexFamilyAssumptions.lean/declarations/families-index-specializes.md) | 65 | `result-track:61c0315e2d4efd3bb6f9a1993c1225b82e4603d90294cfa6a8af7cdc7901f6e9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

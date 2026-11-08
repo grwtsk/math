@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OpClass.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OpClass.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OpClass.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OpClass.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [IsSymmOp](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OpClass.lean/declarations/issymmop.md) | 30 | `declaration-track:8ace212b909065f0832f3f38f19674af17a0c6a69b6bfddd099b96b0b9cf47b7` |
-| 2 | `class` | [LeftCommutative](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OpClass.lean/declarations/leftcommutative.md) | 36 | `declaration-track:7edc2807d74f1b6064ba0d826d390302d5f5d5b82497b43af57a0b1689870409` |
-| 3 | `class` | [RightCommutative](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OpClass.lean/declarations/rightcommutative.md) | 42 | `declaration-track:0701e63646b69d7cc07008734c1b0ba7fc291c66f630493bf535a431c8d80b36` |
-| 4 | `instance` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OpClass.lean/declarations/instance-source-edition-4.md) | 46 | `declaration-track:acdc0c4aff33880e01362aa46ea0eaf5b8b29686829b3821d037cc57e190e698` |
-| 5 | `theorem` | [IsSymmOp.flip_eq](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OpClass.lean/declarations/issymmop-flip-eq.md) | 49 | `result-track:b57f3c352a6d3fe04bd05f6f6926a5f8af90a8426424e6facaca6d65917b3b63` |
-| 6 | `instance` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OpClass.lean/declarations/instance-source-edition-2.md) | 52 | `declaration-track:4e8302f672c54058bdd00e50edfdaaf5dbd8231068a0b43c4036487b3c860189` |
-| 7 | `instance` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OpClass.lean/declarations/instance-source-edition-3.md) | 55 | `declaration-track:5572a0f57327220c5080b3e4d6478396dc0d1c39ee320492eba8775ac102b6f6` |
-| 8 | `instance` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OpClass.lean/declarations/instance.md) | 58 | `declaration-track:0cbdff4dededc091739a55ea9785e8e26e296297a10cd394e5d59e7368255f01` |
-| 9 | `instance` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OpClass.lean/declarations/instance-source-edition-5.md) | 61 | `declaration-track:e89d624d62e88c11e9f5c234d630cfe9e5357a8c38e2f3c8e7da4a6c1017b804` |
+| 1 | `class` | [IsSymmOp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OpClass.lean/declarations/issymmop.md) | 30 | `declaration-track:8ace212b909065f0832f3f38f19674af17a0c6a69b6bfddd099b96b0b9cf47b7` |
+| 2 | `class` | [LeftCommutative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OpClass.lean/declarations/leftcommutative.md) | 36 | `declaration-track:7edc2807d74f1b6064ba0d826d390302d5f5d5b82497b43af57a0b1689870409` |
+| 3 | `class` | [RightCommutative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OpClass.lean/declarations/rightcommutative.md) | 42 | `declaration-track:0701e63646b69d7cc07008734c1b0ba7fc291c66f630493bf535a431c8d80b36` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OpClass.lean/declarations/instance-source-edition-4.md) | 46 | `declaration-track:acdc0c4aff33880e01362aa46ea0eaf5b8b29686829b3821d037cc57e190e698` |
+| 5 | `theorem` | [IsSymmOp.flip_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OpClass.lean/declarations/issymmop-flip-eq.md) | 49 | `result-track:b57f3c352a6d3fe04bd05f6f6926a5f8af90a8426424e6facaca6d65917b3b63` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OpClass.lean/declarations/instance-source-edition-2.md) | 52 | `declaration-track:4e8302f672c54058bdd00e50edfdaaf5dbd8231068a0b43c4036487b3c860189` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OpClass.lean/declarations/instance-source-edition-3.md) | 55 | `declaration-track:5572a0f57327220c5080b3e4d6478396dc0d1c39ee320492eba8775ac102b6f6` |
+| 8 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OpClass.lean/declarations/instance.md) | 58 | `declaration-track:0cbdff4dededc091739a55ea9785e8e26e296297a10cd394e5d59e7368255f01` |
+| 9 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OpClass.lean/declarations/instance-source-edition-5.md) | 61 | `declaration-track:e89d624d62e88c11e9f5c234d630cfe9e5357a8c38e2f3c8e7da4a6c1017b804` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

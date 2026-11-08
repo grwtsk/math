@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EffectiveArithmeticSourceNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EffectiveArithmeticSourceNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EffectiveArithmeticSourceNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EffectiveArithmeticSourceNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [UniformityModel](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EffectiveArithmeticSourceNamespaced.lean/declarations/uniformitymodel.md) | 24 | `declaration-track:7d54fd566d9ecf892220b3b1328e8d158f40f04db5a550bfb296a4f86568c90b` |
-| 2 | `structure` | [EffectiveResourceModel](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EffectiveArithmeticSourceNamespaced.lean/declarations/effectiveresourcemodel.md) | 32 | `declaration-track:6be4389c068783e886bbdffd1de0b4d5b33f6c628f99600916558a7663f889b2` |
-| 3 | `structure` | [EffectiveArithmeticSource](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EffectiveArithmeticSourceNamespaced.lean/declarations/effectivearithmeticsource.md) | 43 | `declaration-track:84d20cbc7a18ba8a3d351e2dd951c6dfc13313f67d5e4e89687aa24bb52c1e57` |
-| 4 | `structure` | [EffectiveArithmeticMorphism](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EffectiveArithmeticSourceNamespaced.lean/declarations/effectivearithmeticmorphism.md) | 59 | `declaration-track:522ceaeadbc42102f03b76a0badb9c670136090a4df3f371591760e7fd9bcd78` |
-| 5 | `def` | [identity](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EffectiveArithmeticSourceNamespaced.lean/declarations/identity.md) | 95 | `declaration-track:0aa62f0389b49769d6f7660b372e1ede11f52947728baee2a039bf0098ee8c97` |
-| 6 | `def` | [comp](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EffectiveArithmeticSourceNamespaced.lean/declarations/comp.md) | 116 | `declaration-track:06ecfbf49501e62f963370fc371658f7d217667ba711b1ae4e91bc0c31b2de97` |
-| 7 | `theorem` | [comp_cost](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EffectiveArithmeticSourceNamespaced.lean/declarations/comp-cost.md) | 158 | `result-track:3ff1570a3f822aa7a80e10255fc2eeac76b6567ccc76e825c4da2fb573245b2d` |
-| 8 | `theorem` | [comp_advantageLoss](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EffectiveArithmeticSourceNamespaced.lean/declarations/comp-advantageloss.md) | 169 | `result-track:6dab69cdadb625205fb12f51df455ee44dfe5a4ad28ed4dc1b54788f53ca7eaa` |
+| 1 | `inductive` | [UniformityModel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EffectiveArithmeticSourceNamespaced.lean/declarations/uniformitymodel.md) | 24 | `declaration-track:7d54fd566d9ecf892220b3b1328e8d158f40f04db5a550bfb296a4f86568c90b` |
+| 2 | `structure` | [EffectiveResourceModel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EffectiveArithmeticSourceNamespaced.lean/declarations/effectiveresourcemodel.md) | 32 | `declaration-track:6be4389c068783e886bbdffd1de0b4d5b33f6c628f99600916558a7663f889b2` |
+| 3 | `structure` | [EffectiveArithmeticSource](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EffectiveArithmeticSourceNamespaced.lean/declarations/effectivearithmeticsource.md) | 43 | `declaration-track:84d20cbc7a18ba8a3d351e2dd951c6dfc13313f67d5e4e89687aa24bb52c1e57` |
+| 4 | `structure` | [EffectiveArithmeticMorphism](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EffectiveArithmeticSourceNamespaced.lean/declarations/effectivearithmeticmorphism.md) | 59 | `declaration-track:522ceaeadbc42102f03b76a0badb9c670136090a4df3f371591760e7fd9bcd78` |
+| 5 | `def` | [identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EffectiveArithmeticSourceNamespaced.lean/declarations/identity.md) | 95 | `declaration-track:0aa62f0389b49769d6f7660b372e1ede11f52947728baee2a039bf0098ee8c97` |
+| 6 | `def` | [comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EffectiveArithmeticSourceNamespaced.lean/declarations/comp.md) | 116 | `declaration-track:06ecfbf49501e62f963370fc371658f7d217667ba711b1ae4e91bc0c31b2de97` |
+| 7 | `theorem` | [comp_cost](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EffectiveArithmeticSourceNamespaced.lean/declarations/comp-cost.md) | 158 | `result-track:3ff1570a3f822aa7a80e10255fc2eeac76b6567ccc76e825c4da2fb573245b2d` |
+| 8 | `theorem` | [comp_advantageLoss](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EffectiveArithmeticSourceNamespaced.lean/declarations/comp-advantageloss.md) | 169 | `result-track:6dab69cdadb625205fb12f51df455ee44dfe5a4ad28ed4dc1b54788f53ca7eaa` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SpheroidalShellPivot.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SpheroidalShellPivot.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SpheroidalShellPivot.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SpheroidalShellPivot.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SpheroidalShellPivot](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SpheroidalShellPivot.lean/declarations/spheroidalshellpivot.md) | 25 | `declaration-track:be3644109c67c70ffaf5860603f38e52bc965713c16b9dd8c28d2056c404eedc` |
-| 2 | `structure` | [NonStickyPivot](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SpheroidalShellPivot.lean/declarations/nonstickypivot.md) | 40 | `declaration-track:7d67ca6088ce1a23a882b21853549cc26faeff26b1252cdfb9f5e937c9ccc5c0` |
-| 3 | `theorem` | [spheroidal_shell_surrounds_glitch_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SpheroidalShellPivot.lean/declarations/spheroidal-shell-surrounds-glitch-if-supplied.md) | 45 | `result-track:d5bb9ccd2b3e1a1c8e779f58d13eed7209297c4f8576646a5de8967215be605d` |
-| 4 | `theorem` | [spheroidal_shell_enough_room_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SpheroidalShellPivot.lean/declarations/spheroidal-shell-enough-room-if-supplied.md) | 50 | `result-track:a477075eb62c3ab6f16434be11acb323316b240f8ea029402806f91d2a8c4525` |
-| 5 | `theorem` | [nonsticky_pivot_no_persistent_boundary_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SpheroidalShellPivot.lean/declarations/nonsticky-pivot-no-persistent-boundary-if-supplied.md) | 55 | `result-track:944714671342be50d6a6cdca861a945d0744c8388851b8b420021df3d5e68d79` |
+| 1 | `structure` | [SpheroidalShellPivot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SpheroidalShellPivot.lean/declarations/spheroidalshellpivot.md) | 25 | `declaration-track:be3644109c67c70ffaf5860603f38e52bc965713c16b9dd8c28d2056c404eedc` |
+| 2 | `structure` | [NonStickyPivot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SpheroidalShellPivot.lean/declarations/nonstickypivot.md) | 40 | `declaration-track:7d67ca6088ce1a23a882b21853549cc26faeff26b1252cdfb9f5e937c9ccc5c0` |
+| 3 | `theorem` | [spheroidal_shell_surrounds_glitch_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SpheroidalShellPivot.lean/declarations/spheroidal-shell-surrounds-glitch-if-supplied.md) | 45 | `result-track:d5bb9ccd2b3e1a1c8e779f58d13eed7209297c4f8576646a5de8967215be605d` |
+| 4 | `theorem` | [spheroidal_shell_enough_room_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SpheroidalShellPivot.lean/declarations/spheroidal-shell-enough-room-if-supplied.md) | 50 | `result-track:a477075eb62c3ab6f16434be11acb323316b240f8ea029402806f91d2a8c4525` |
+| 5 | `theorem` | [nonsticky_pivot_no_persistent_boundary_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SpheroidalShellPivot.lean/declarations/nonsticky-pivot-no-persistent-boundary-if-supplied.md) | 55 | `result-track:944714671342be50d6a6cdca861a945d0744c8388851b8b420021df3d5e68d79` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

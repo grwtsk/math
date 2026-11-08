@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/DecidableEqNamespacedPublic.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/DecidableEqNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DecidableEqNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DecidableEqNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [isEqv_iff_rel](../../../../../ComputerScience/AlgorithmsInComputerScience/DecidableEqNamespacedPublic.lean/declarations/iseqv-iff-rel.md) | 27 | `result-track:4c95729e15164756efc0b047f27deb4d93d0eae1b0a4421d222027d2113aea3e` |
-| 2 | `theorem` | [isEqv_eq_decide](../../../../../ComputerScience/AlgorithmsInComputerScience/DecidableEqNamespacedPublic.lean/declarations/iseqv-eq-decide.md) | 33 | `result-track:ba0d6e4b0057dcf1dbb4b0d469b55e218cdd4475663854a79e51389c4e5b8812` |
-| 3 | `theorem` | [isEqv_toArray](../../../../../ComputerScience/AlgorithmsInComputerScience/DecidableEqNamespacedPublic.lean/declarations/iseqv-toarray.md) | 39 | `result-track:caa244a35f615481d1b2078c717f6bc2dd97263f6ab010d80c0607062dcd08b8` |
-| 4 | `theorem` | [eq_of_isEqv](../../../../../ComputerScience/AlgorithmsInComputerScience/DecidableEqNamespacedPublic.lean/declarations/eq-of-iseqv.md) | 42 | `result-track:52056494a2de29e232bf07343c18db1f5bf7bcd3f15ac1683efe09e2c90175a6` |
-| 5 | `theorem` | [isEqv_self_beq](../../../../../ComputerScience/AlgorithmsInComputerScience/DecidableEqNamespacedPublic.lean/declarations/iseqv-self-beq.md) | 49 | `result-track:1a852ddae171f400034b8620c4f879e4aa1ab7d4ee349d4fa9d083f68d1cadfa` |
-| 6 | `theorem` | [isEqv_self](../../../../../ComputerScience/AlgorithmsInComputerScience/DecidableEqNamespacedPublic.lean/declarations/iseqv-self.md) | 53 | `result-track:df98fb4b36a67e20d0089c5994c31d845a17bbefbd75d843d1283e1813bdd328` |
-| 7 | `theorem` | [beq_eq_decide](../../../../../ComputerScience/AlgorithmsInComputerScience/DecidableEqNamespacedPublic.lean/declarations/beq-eq-decide.md) | 57 | `result-track:f77387c299d75a85ce0c10fc348ebf4fbe3dcbdfeb6ac72c2480afd48c37cc50` |
-| 8 | `instance` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/DecidableEqNamespacedPublic.lean/declarations/instance.md) | 61 | `declaration-track:3e0756d52850ae7dadd67989847610832f669a1a4fabc2866e86c1229ec54daf` |
-| 9 | `instance` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/DecidableEqNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 64 | `declaration-track:81101bcd3aeb22fe45d4e391fe06b55cc90c7641438e80fe292c5a2670de4ffe` |
+| 1 | `theorem` | [isEqv_iff_rel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DecidableEqNamespacedPublic.lean/declarations/iseqv-iff-rel.md) | 27 | `result-track:4c95729e15164756efc0b047f27deb4d93d0eae1b0a4421d222027d2113aea3e` |
+| 2 | `theorem` | [isEqv_eq_decide](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DecidableEqNamespacedPublic.lean/declarations/iseqv-eq-decide.md) | 33 | `result-track:ba0d6e4b0057dcf1dbb4b0d469b55e218cdd4475663854a79e51389c4e5b8812` |
+| 3 | `theorem` | [isEqv_toArray](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DecidableEqNamespacedPublic.lean/declarations/iseqv-toarray.md) | 39 | `result-track:caa244a35f615481d1b2078c717f6bc2dd97263f6ab010d80c0607062dcd08b8` |
+| 4 | `theorem` | [eq_of_isEqv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DecidableEqNamespacedPublic.lean/declarations/eq-of-iseqv.md) | 42 | `result-track:52056494a2de29e232bf07343c18db1f5bf7bcd3f15ac1683efe09e2c90175a6` |
+| 5 | `theorem` | [isEqv_self_beq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DecidableEqNamespacedPublic.lean/declarations/iseqv-self-beq.md) | 49 | `result-track:1a852ddae171f400034b8620c4f879e4aa1ab7d4ee349d4fa9d083f68d1cadfa` |
+| 6 | `theorem` | [isEqv_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DecidableEqNamespacedPublic.lean/declarations/iseqv-self.md) | 53 | `result-track:df98fb4b36a67e20d0089c5994c31d845a17bbefbd75d843d1283e1813bdd328` |
+| 7 | `theorem` | [beq_eq_decide](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DecidableEqNamespacedPublic.lean/declarations/beq-eq-decide.md) | 57 | `result-track:f77387c299d75a85ce0c10fc348ebf4fbe3dcbdfeb6ac72c2480afd48c37cc50` |
+| 8 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DecidableEqNamespacedPublic.lean/declarations/instance.md) | 61 | `declaration-track:3e0756d52850ae7dadd67989847610832f669a1a4fabc2866e86c1229ec54daf` |
+| 9 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DecidableEqNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 64 | `declaration-track:81101bcd3aeb22fe45d4e391fe06b55cc90c7641438e80fe292c5a2670de4ffe` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

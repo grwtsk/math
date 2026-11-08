@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/OrderedStreamNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/OrderedStreamNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/OrderedStreamNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/OrderedStreamNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [BinaryLogicMatrixStream](../../../../../ComputerScience/AlgorithmsInComputerScience/OrderedStreamNamespaced.lean/declarations/binarylogicmatrixstream.md) | 15 | `declaration-track:fe8525fcf747d55ab4ff140a9187e8cc2e70d37bae533e14aa7f2f41a4f3670d` |
-| 2 | `structure` | [OrderedBinaryLogicMatrixStream](../../../../../ComputerScience/AlgorithmsInComputerScience/OrderedStreamNamespaced.lean/declarations/orderedbinarylogicmatrixstream.md) | 28 | `declaration-track:a29fb85a563ec9600a5c7d59b6bc55a78463003526028c0b820a20eb52466789` |
-| 3 | `theorem` | [orderedStream_boundary_visible](../../../../../ComputerScience/AlgorithmsInComputerScience/OrderedStreamNamespaced.lean/declarations/orderedstream-boundary-visible.md) | 44 | `result-track:02c62862e713c6760aedda56a479143b9c49483c80ee34150b56b15f0f63a828` |
+| 1 | `structure` | [BinaryLogicMatrixStream](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/OrderedStreamNamespaced.lean/declarations/binarylogicmatrixstream.md) | 15 | `declaration-track:fe8525fcf747d55ab4ff140a9187e8cc2e70d37bae533e14aa7f2f41a4f3670d` |
+| 2 | `structure` | [OrderedBinaryLogicMatrixStream](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/OrderedStreamNamespaced.lean/declarations/orderedbinarylogicmatrixstream.md) | 28 | `declaration-track:a29fb85a563ec9600a5c7d59b6bc55a78463003526028c0b820a20eb52466789` |
+| 3 | `theorem` | [orderedStream_boundary_visible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/OrderedStreamNamespaced.lean/declarations/orderedstream-boundary-visible.md) | 44 | `result-track:02c62862e713c6760aedda56a479143b9c49483c80ee34150b56b15f0f63a828` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

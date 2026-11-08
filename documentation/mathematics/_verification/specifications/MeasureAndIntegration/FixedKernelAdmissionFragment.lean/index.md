@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/FixedKernelAdmissionFragment.lean/index.md) · [Full source](../../../../MeasureAndIntegration/FixedKernelAdmissionFragment.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixedKernelAdmissionFragment.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixedKernelAdmissionFragment.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sample_prefix_eq](../../../../MeasureAndIntegration/FixedKernelAdmissionFragment.lean/declarations/sample-prefix-eq.md) | 14 | `result-track:35f8dc9793a9d0f638ca67797a2a247278f51a0c42d7a3bb2ec587c592856d0d` |
-| 2 | `theorem` | [fixedKernel_abs_le](../../../../MeasureAndIntegration/FixedKernelAdmissionFragment.lean/declarations/fixedkernel-abs-le.md) | 24 | `result-track:9fbb5cba067979467cfddc7d3b826ccb8f1e1298f82cad6f8cfd4388b20839e4` |
-| 3 | `theorem` | [tail_majorant_integrable](../../../../MeasureAndIntegration/FixedKernelAdmissionFragment.lean/declarations/tail-majorant-integrable.md) | 39 | `result-track:6549f165e3157ca128e2c51ca1966e05f44672e80bbe18ebcda29e06f5c06d3b` |
-| 4 | `theorem` | [fixedKernel_integrableOn_tail](../../../../MeasureAndIntegration/FixedKernelAdmissionFragment.lean/declarations/fixedkernel-integrableon-tail.md) | 51 | `result-track:56d3476c6cbcffe041eddc9650c65ca28aa5815d71e9710de469d8e907aa9bda` |
-| 5 | `theorem` | [fixedKernel_integrableOn_Ioi](../../../../MeasureAndIntegration/FixedKernelAdmissionFragment.lean/declarations/fixedkernel-integrableon-ioi.md) | 58 | `result-track:a01536b5093e366b2281f66ab380b125439aa6cb51bcd75d2a86cac5f4a6e6f0` |
-| 6 | `theorem` | [fixedKernel_integrable](../../../../MeasureAndIntegration/FixedKernelAdmissionFragment.lean/declarations/fixedkernel-integrable.md) | 66 | `result-track:f7326e2f23968a8bd4d2614c4f90fcadc3e6c082b4285cd2adc550d34046ca4f` |
-| 7 | `theorem` | [fixedKernel_square_integrableOn_Icc](../../../../MeasureAndIntegration/FixedKernelAdmissionFragment.lean/declarations/fixedkernel-square-integrableon-icc.md) | 75 | `result-track:b50749e768a6ed7d0380cfd2fc51aa175e29e1f745b89c0c7515f74f5c83aef8` |
-| 8 | `theorem` | [fixedKernel_square_integrableOn_tail](../../../../MeasureAndIntegration/FixedKernelAdmissionFragment.lean/declarations/fixedkernel-square-integrableon-tail.md) | 91 | `result-track:fbcfc3f529ffd8128309a643b7b06359e0f76730cb1b1ce44a67a578d492509a` |
-| 9 | `theorem` | [fixedKernel_square_integrable](../../../../MeasureAndIntegration/FixedKernelAdmissionFragment.lean/declarations/fixedkernel-square-integrable.md) | 116 | `result-track:365ae18f26c448e43433f4ce8653936f3766e3db06b2676c9c3c0ffd033f58f4` |
-| 10 | `theorem` | [fixedKernel_memLp_two](../../../../MeasureAndIntegration/FixedKernelAdmissionFragment.lean/declarations/fixedkernel-memlp-two.md) | 134 | `result-track:beca67d625e1bee84c4200056118da7b15b94415e83f593e3b346095e0fe2f0a` |
+| 1 | `theorem` | [sample_prefix_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixedKernelAdmissionFragment.lean/declarations/sample-prefix-eq.md) | 14 | `result-track:35f8dc9793a9d0f638ca67797a2a247278f51a0c42d7a3bb2ec587c592856d0d` |
+| 2 | `theorem` | [fixedKernel_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixedKernelAdmissionFragment.lean/declarations/fixedkernel-abs-le.md) | 24 | `result-track:9fbb5cba067979467cfddc7d3b826ccb8f1e1298f82cad6f8cfd4388b20839e4` |
+| 3 | `theorem` | [tail_majorant_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixedKernelAdmissionFragment.lean/declarations/tail-majorant-integrable.md) | 39 | `result-track:6549f165e3157ca128e2c51ca1966e05f44672e80bbe18ebcda29e06f5c06d3b` |
+| 4 | `theorem` | [fixedKernel_integrableOn_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixedKernelAdmissionFragment.lean/declarations/fixedkernel-integrableon-tail.md) | 51 | `result-track:56d3476c6cbcffe041eddc9650c65ca28aa5815d71e9710de469d8e907aa9bda` |
+| 5 | `theorem` | [fixedKernel_integrableOn_Ioi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixedKernelAdmissionFragment.lean/declarations/fixedkernel-integrableon-ioi.md) | 58 | `result-track:a01536b5093e366b2281f66ab380b125439aa6cb51bcd75d2a86cac5f4a6e6f0` |
+| 6 | `theorem` | [fixedKernel_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixedKernelAdmissionFragment.lean/declarations/fixedkernel-integrable.md) | 66 | `result-track:f7326e2f23968a8bd4d2614c4f90fcadc3e6c082b4285cd2adc550d34046ca4f` |
+| 7 | `theorem` | [fixedKernel_square_integrableOn_Icc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixedKernelAdmissionFragment.lean/declarations/fixedkernel-square-integrableon-icc.md) | 75 | `result-track:b50749e768a6ed7d0380cfd2fc51aa175e29e1f745b89c0c7515f74f5c83aef8` |
+| 8 | `theorem` | [fixedKernel_square_integrableOn_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixedKernelAdmissionFragment.lean/declarations/fixedkernel-square-integrableon-tail.md) | 91 | `result-track:fbcfc3f529ffd8128309a643b7b06359e0f76730cb1b1ce44a67a578d492509a` |
+| 9 | `theorem` | [fixedKernel_square_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixedKernelAdmissionFragment.lean/declarations/fixedkernel-square-integrable.md) | 116 | `result-track:365ae18f26c448e43433f4ce8653936f3766e3db06b2676c9c3c0ffd033f58f4` |
+| 10 | `theorem` | [fixedKernel_memLp_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixedKernelAdmissionFragment.lean/declarations/fixedkernel-memlp-two.md) | 134 | `result-track:beca67d625e1bee84c4200056118da7b15b94415e83f593e3b346095e0fe2f0a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

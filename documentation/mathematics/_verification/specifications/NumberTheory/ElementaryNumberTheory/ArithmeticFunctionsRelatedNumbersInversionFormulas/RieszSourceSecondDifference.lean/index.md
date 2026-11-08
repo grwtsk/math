@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RieszSourceSecondDifference.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RieszSourceSecondDifference.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RieszSourceSecondDifference.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RieszSourceSecondDifference.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,9 +46,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Chebyshev.GeneralTentExplicitFormula`](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/GeneralTentExplicitFormula.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Chebyshev.TentResidueContributions`](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TentResidueContributions.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.FirstRieszZeroTail`](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FirstRieszZeroTail.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.GeneralTentExplicitFormula`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/GeneralTentExplicitFormula.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.TentResidueContributions`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TentResidueContributions.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.FirstRieszZeroTail`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FirstRieszZeroTail.lean/index.md) — import line 6; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [tentMangoldt_eq_prefix](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RieszSourceSecondDifference.lean/declarations/tentmangoldt-eq-prefix.md) | 27 | `result-track:5d23b9300cbd17ac38290e0024fa7b164270f9d6cd8585a2ce0bf231a4c5329c` |
-| 2 | `theorem` | [fullRieszZeroValue_second_difference](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RieszSourceSecondDifference.lean/declarations/fullrieszzerovalue-second-difference.md) | 47 | `result-track:df200e2470657b7ecb810e4ffffcf4013db311bd63dea11fc7f8c5feaeaaf497` |
-| 3 | `theorem` | [firstRieszPrefix_full_zero_second_difference](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RieszSourceSecondDifference.lean/declarations/firstrieszprefix-full-zero-second-difference.md) | 88 | `result-track:3581d14b819713b572c2f46e8a38f10fd5e17b45576830b5a0383248b197b354` |
-| 4 | `def` | [firstRieszSourceDefect](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RieszSourceSecondDifference.lean/declarations/firstrieszsourcedefect.md) | 110 | `declaration-track:420f3d5b6d402e355b7d3a1981c4a90351973b6dcb5bbb526e67b4f7bd4fa0c3` |
-| 5 | `theorem` | [firstRieszSourceDefect_second_difference](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RieszSourceSecondDifference.lean/declarations/firstrieszsourcedefect-second-difference.md) | 115 | `result-track:bb08e6c0f19745640e387564e3c3c738d909e99ee3c69f52066f8a559e68552b` |
+| 1 | `theorem` | [tentMangoldt_eq_prefix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RieszSourceSecondDifference.lean/declarations/tentmangoldt-eq-prefix.md) | 27 | `result-track:5d23b9300cbd17ac38290e0024fa7b164270f9d6cd8585a2ce0bf231a4c5329c` |
+| 2 | `theorem` | [fullRieszZeroValue_second_difference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RieszSourceSecondDifference.lean/declarations/fullrieszzerovalue-second-difference.md) | 47 | `result-track:df200e2470657b7ecb810e4ffffcf4013db311bd63dea11fc7f8c5feaeaaf497` |
+| 3 | `theorem` | [firstRieszPrefix_full_zero_second_difference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RieszSourceSecondDifference.lean/declarations/firstrieszprefix-full-zero-second-difference.md) | 88 | `result-track:3581d14b819713b572c2f46e8a38f10fd5e17b45576830b5a0383248b197b354` |
+| 4 | `def` | [firstRieszSourceDefect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RieszSourceSecondDifference.lean/declarations/firstrieszsourcedefect.md) | 110 | `declaration-track:420f3d5b6d402e355b7d3a1981c4a90351973b6dcb5bbb526e67b4f7bd4fa0c3` |
+| 5 | `theorem` | [firstRieszSourceDefect_second_difference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RieszSourceSecondDifference.lean/declarations/firstrieszsourcedefect-second-difference.md) | 115 | `result-track:bb08e6c0f19745640e387564e3c3c738d909e99ee3c69f52066f8a559e68552b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

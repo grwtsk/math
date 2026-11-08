@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/Attempt01NamespacedExponentialHasDerivAt.lean/index.md) · [Full source](../../../../MeasureAndIntegration/Attempt01NamespacedExponentialHasDerivAt.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01NamespacedExponentialHasDerivAt.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01NamespacedExponentialHasDerivAt.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exponential_hasDerivAt](../../../../MeasureAndIntegration/Attempt01NamespacedExponentialHasDerivAt.lean/declarations/exponential-hasderivat.md) | 29 | `result-track:a5c2f208f89bbc649a07be59f9807cc87cbc40075acbefbe81ff4cd7029e0d2f` |
-| 2 | `theorem` | [finite_abel](../../../../MeasureAndIntegration/Attempt01NamespacedExponentialHasDerivAt.lean/declarations/finite-abel.md) | 36 | `result-track:58e5c08cff713431052b7e60a50337861bc923dc19b971a0aa0441d6731eef9f` |
+| 1 | `theorem` | [exponential_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01NamespacedExponentialHasDerivAt.lean/declarations/exponential-hasderivat.md) | 29 | `result-track:a5c2f208f89bbc649a07be59f9807cc87cbc40075acbefbe81ff4cd7029e0d2f` |
+| 2 | `theorem` | [finite_abel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01NamespacedExponentialHasDerivAt.lean/declarations/finite-abel.md) | 36 | `result-track:58e5c08cff713431052b7e60a50337861bc923dc19b971a0aa0441d6731eef9f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

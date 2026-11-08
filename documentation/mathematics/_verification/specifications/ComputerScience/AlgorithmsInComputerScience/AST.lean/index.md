@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/AST.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/AST.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AST.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AST.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [AstNodeKind](../../../../../ComputerScience/AlgorithmsInComputerScience/AST.lean/declarations/astnodekind.md) | 5 | `declaration-track:d83926a43c7d0c89f9266112c2f24d3b29883e637cee52694abb0b073af444fb` |
-| 2 | `inductive` | [TrustStatus](../../../../../ComputerScience/AlgorithmsInComputerScience/AST.lean/declarations/truststatus.md) | 31 | `declaration-track:c0daff5085e2cdda072863eb4cffca19909685a448106ee389eac9d2cf181477` |
-| 3 | `inductive` | [DependencyPrecision](../../../../../ComputerScience/AlgorithmsInComputerScience/AST.lean/declarations/dependencyprecision.md) | 39 | `declaration-track:73312be5b17c6b56919037817a43c3a5b7138c20d5f8b57bf80d1cd623afa742` |
-| 4 | `structure` | [SourceRange](../../../../../ComputerScience/AlgorithmsInComputerScience/AST.lean/declarations/sourcerange.md) | 46 | `declaration-track:552a92f9b611f3972c6b68547414b79f3558e05bb577bbd30738f19a7f5edfa1` |
-| 5 | `structure` | [AstNode](../../../../../ComputerScience/AlgorithmsInComputerScience/AST.lean/declarations/astnode.md) | 53 | `declaration-track:2d381868e4505a92f5a1dfe4d1f264b398eaf495010607399dc45a6c2c07530e` |
-| 6 | `structure` | [AstEdge](../../../../../ComputerScience/AlgorithmsInComputerScience/AST.lean/declarations/astedge.md) | 72 | `declaration-track:f2f782702c75660f83d274f8aea515769657ed2065e4d3946fbf2e1ca4ce69f4` |
-| 7 | `structure` | [ProjectAst](../../../../../ComputerScience/AlgorithmsInComputerScience/AST.lean/declarations/projectast.md) | 79 | `declaration-track:e8b710d453c498665de1cb2cfc2dcc45f7ad8e1230483ad97f13f0226a2248f3` |
+| 1 | `inductive` | [AstNodeKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AST.lean/declarations/astnodekind.md) | 5 | `declaration-track:d83926a43c7d0c89f9266112c2f24d3b29883e637cee52694abb0b073af444fb` |
+| 2 | `inductive` | [TrustStatus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AST.lean/declarations/truststatus.md) | 31 | `declaration-track:c0daff5085e2cdda072863eb4cffca19909685a448106ee389eac9d2cf181477` |
+| 3 | `inductive` | [DependencyPrecision](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AST.lean/declarations/dependencyprecision.md) | 39 | `declaration-track:73312be5b17c6b56919037817a43c3a5b7138c20d5f8b57bf80d1cd623afa742` |
+| 4 | `structure` | [SourceRange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AST.lean/declarations/sourcerange.md) | 46 | `declaration-track:552a92f9b611f3972c6b68547414b79f3558e05bb577bbd30738f19a7f5edfa1` |
+| 5 | `structure` | [AstNode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AST.lean/declarations/astnode.md) | 53 | `declaration-track:2d381868e4505a92f5a1dfe4d1f264b398eaf495010607399dc45a6c2c07530e` |
+| 6 | `structure` | [AstEdge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AST.lean/declarations/astedge.md) | 72 | `declaration-track:f2f782702c75660f83d274f8aea515769657ed2065e4d3946fbf2e1ca4ce69f4` |
+| 7 | `structure` | [ProjectAst](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AST.lean/declarations/projectast.md) | 79 | `declaration-track:e8b710d453c498665de1cb2cfc2dcc45f7ad8e1230483ad97f13f0226a2248f3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

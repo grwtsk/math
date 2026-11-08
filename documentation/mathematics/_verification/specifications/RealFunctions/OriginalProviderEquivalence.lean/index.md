@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/OriginalProviderEquivalence.lean/index.md) · [Full source](../../../../RealFunctions/OriginalProviderEquivalence.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/OriginalProviderEquivalence.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/OriginalProviderEquivalence.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [criticalLine_of_centered_zero](../../../../RealFunctions/OriginalProviderEquivalence.lean/declarations/criticalline-of-centered-zero.md) | 36 | `result-track:1ad085a1d670b132b2a151eea505dce652182eb120e30c449119d481ecc50e1c` |
-| 2 | `theorem` | [centered_zero_of_criticalLine](../../../../RealFunctions/OriginalProviderEquivalence.lean/declarations/centered-zero-of-criticalline.md) | 42 | `result-track:f9ad00ace2c00e5561e2a6474c7c3dd491c695a6c680638310c473c4667d78db` |
-| 3 | `theorem` | [criticalLine_iff_centered_zero](../../../../RealFunctions/OriginalProviderEquivalence.lean/declarations/criticalline-iff-centered-zero.md) | 48 | `result-track:533fc73200b48a646735d05d8b16e31c6ae3fbdab65951bd91468adb3776e336` |
+| 1 | `theorem` | [criticalLine_of_centered_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/OriginalProviderEquivalence.lean/declarations/criticalline-of-centered-zero.md) | 36 | `result-track:1ad085a1d670b132b2a151eea505dce652182eb120e30c449119d481ecc50e1c` |
+| 2 | `theorem` | [centered_zero_of_criticalLine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/OriginalProviderEquivalence.lean/declarations/centered-zero-of-criticalline.md) | 42 | `result-track:f9ad00ace2c00e5561e2a6474c7c3dd491c695a6c680638310c473c4667d78db` |
+| 3 | `theorem` | [criticalLine_iff_centered_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/OriginalProviderEquivalence.lean/declarations/criticalline-iff-centered-zero.md) | 48 | `result-track:533fc73200b48a646735d05d8b16e31c6ae3fbdab65951bd91468adb3776e336` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

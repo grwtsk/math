@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteEcosystem.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteEcosystem.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteEcosystem.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteEcosystem.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,11 +61,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [IngestedProject](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteEcosystem.lean/declarations/ingestedproject.md) | 17 | `declaration-track:55c4b08771b4d7d31bbb3dcbab76ada505544abbd58c341f55d92494c1362681` |
-| 2 | `structure` | [FiniteEcosystem](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteEcosystem.lean/declarations/finiteecosystem.md) | 23 | `declaration-track:6fa13be1d616c82b7557a2653b9e074888d6f9621d1bda1ed126881ab3737a97` |
-| 3 | `structure` | [Valid](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteEcosystem.lean/declarations/valid.md) | 41 | `declaration-track:63560469bebae016d7ce5ad2ff367008d0b0a7581e41178cb600f05d440b1faf` |
-| 4 | `structure` | [Sound](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteEcosystem.lean/declarations/sound-source-edition-2.md) | 60 | `declaration-track:c098f36833abedbfeaed8f66c32e29f1797e9ccd072b65f9bc633ef61fae2f29` |
-| 5 | `theorem` | [sound](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteEcosystem.lean/declarations/sound.md) | 109 | `result-track:960f65d077870fe6e190e59f11711a26d0cdaefde5e79241a4bc908f4d80f2b7` |
+| 1 | `structure` | [IngestedProject](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteEcosystem.lean/declarations/ingestedproject.md) | 17 | `declaration-track:55c4b08771b4d7d31bbb3dcbab76ada505544abbd58c341f55d92494c1362681` |
+| 2 | `structure` | [FiniteEcosystem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteEcosystem.lean/declarations/finiteecosystem.md) | 23 | `declaration-track:6fa13be1d616c82b7557a2653b9e074888d6f9621d1bda1ed126881ab3737a97` |
+| 3 | `structure` | [Valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteEcosystem.lean/declarations/valid.md) | 41 | `declaration-track:63560469bebae016d7ce5ad2ff367008d0b0a7581e41178cb600f05d440b1faf` |
+| 4 | `structure` | [Sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteEcosystem.lean/declarations/sound-source-edition-2.md) | 60 | `declaration-track:c098f36833abedbfeaed8f66c32e29f1797e9ccd072b65f9bc633ef61fae2f29` |
+| 5 | `theorem` | [sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteEcosystem.lean/declarations/sound.md) | 109 | `result-track:960f65d077870fe6e190e59f11711a26d0cdaefde5e79241a4bc908f4d80f2b7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

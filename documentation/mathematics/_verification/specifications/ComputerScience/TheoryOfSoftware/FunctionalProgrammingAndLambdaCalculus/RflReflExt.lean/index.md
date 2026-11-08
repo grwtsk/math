@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RflReflExt.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RflReflExt.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RflReflExt.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RflReflExt.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [reflExt.config](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RflReflExt.lean/declarations/reflext-config.md) | 21 | `declaration-track:7c66e26af0c6431a29399b9d4cf3da122e2d39b0eccdb91d9743bb91835c432b` |
-| 2 | `initialize` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RflReflExt.lean/declarations/initialize.md) | 24 | `declaration-track:2b753584fd5705a76aa74314c185bc6f4ee9b08c6859a2dcb47109d9e0e2eea5` |
-| 3 | `initialize` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RflReflExt.lean/declarations/initialize-source-edition-2.md) | 31 | `declaration-track:7f530f3cd3d133f058a0e251cb649ff45120a46bc92a2db40f05d269e910c69f` |
-| 4 | `def` | [_root_.Lean.MVarId.applyRfl](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RflReflExt.lean/declarations/root-lean-mvarid-applyrfl.md) | 52 | `declaration-track:7182ca54325d66030cfe6e0e31e3205346843d4ad748cdea7f0a6da7d14cc19a` |
-| 5 | `elab_rules` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RflReflExt.lean/declarations/elab-rules.md) | 77 | `declaration-track:0f48c4e41fbc937e7ebc859f4e6a430f32d23d2f050efb782d54217736beed44` |
+| 1 | `def` | [reflExt.config](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RflReflExt.lean/declarations/reflext-config.md) | 21 | `declaration-track:7c66e26af0c6431a29399b9d4cf3da122e2d39b0eccdb91d9743bb91835c432b` |
+| 2 | `initialize` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RflReflExt.lean/declarations/initialize.md) | 24 | `declaration-track:2b753584fd5705a76aa74314c185bc6f4ee9b08c6859a2dcb47109d9e0e2eea5` |
+| 3 | `initialize` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RflReflExt.lean/declarations/initialize-source-edition-2.md) | 31 | `declaration-track:7f530f3cd3d133f058a0e251cb649ff45120a46bc92a2db40f05d269e910c69f` |
+| 4 | `def` | [_root_.Lean.MVarId.applyRfl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RflReflExt.lean/declarations/root-lean-mvarid-applyrfl.md) | 52 | `declaration-track:7182ca54325d66030cfe6e0e31e3205346843d4ad748cdea7f0a6da7d14cc19a` |
+| 5 | `elab_rules` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RflReflExt.lean/declarations/elab-rules.md) | 77 | `declaration-track:0f48c4e41fbc937e7ebc859f4e6a430f32d23d2f050efb782d54217736beed44` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicKernelDifference.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicKernelDifference.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicKernelDifference.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicKernelDifference.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeFejerCyclicArithmeticRestriction`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicArithmeticRestriction.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeFejerCyclicArithmeticRestriction`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicArithmeticRestriction.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [signedSampledTriangularKernelAtPeriod_add_period](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicKernelDifference.lean/declarations/signedsampledtriangularkernelatperiod-add-period.md) | 14 | `result-track:2365699d65ed432bff33a7a81a9add0b3cf9515368cd7882b1128e643f1b48d8` |
-| 2 | `theorem` | [signedSampledTriangularKernelAtPeriod_eq_of_modEq](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicKernelDifference.lean/declarations/signedsampledtriangularkernelatperiod-eq-of-modeq.md) | 33 | `result-track:67a3793f99175f18b9fe9e1dd68fd5e127d5ba4b3fbcbceedc36dd43339c9483` |
-| 3 | `theorem` | [arithmeticCyclicKernelDifference](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicKernelDifference.lean/declarations/arithmeticcyclickerneldifference.md) | 56 | `result-track:a8e9adc08aa1003e423a516612264b8f725682758a0c503fa48f1c7ebf0a7896` |
-| 4 | `def` | [ArithmeticCyclicPrefixReindexingOnlyFrontier](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicKernelDifference.lean/declarations/arithmeticcyclicprefixreindexingonlyfrontier.md) | 81 | `declaration-track:8c7f52496d26c1d45e25f58766c3aaf0ce0f807ccec3750a3b78beb76e6690d9` |
+| 1 | `theorem` | [signedSampledTriangularKernelAtPeriod_add_period](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicKernelDifference.lean/declarations/signedsampledtriangularkernelatperiod-add-period.md) | 14 | `result-track:2365699d65ed432bff33a7a81a9add0b3cf9515368cd7882b1128e643f1b48d8` |
+| 2 | `theorem` | [signedSampledTriangularKernelAtPeriod_eq_of_modEq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicKernelDifference.lean/declarations/signedsampledtriangularkernelatperiod-eq-of-modeq.md) | 33 | `result-track:67a3793f99175f18b9fe9e1dd68fd5e127d5ba4b3fbcbceedc36dd43339c9483` |
+| 3 | `theorem` | [arithmeticCyclicKernelDifference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicKernelDifference.lean/declarations/arithmeticcyclickerneldifference.md) | 56 | `result-track:a8e9adc08aa1003e423a516612264b8f725682758a0c503fa48f1c7ebf0a7896` |
+| 4 | `def` | [ArithmeticCyclicPrefixReindexingOnlyFrontier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicKernelDifference.lean/declarations/arithmeticcyclicprefixreindexingonlyfrontier.md) | 81 | `declaration-track:8c7f52496d26c1d45e25f58766c3aaf0ce0f807ccec3750a3b78beb76e6690d9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

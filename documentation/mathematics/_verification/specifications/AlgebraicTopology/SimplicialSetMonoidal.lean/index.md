@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/SimplicialSetMonoidal.lean/index.md) · [Full source](../../../../AlgebraicTopology/SimplicialSetMonoidal.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialSetMonoidal.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialSetMonoidal.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,17 +59,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../AlgebraicTopology/SimplicialSetMonoidal.lean/declarations/instance.md) | 28 | `declaration-track:7b052fdce24b04871b014564981500f35e352b2fbdf783c09fa6691ff130ff3a` |
-| 2 | `lemma` | [leftUnitor_hom_app_apply](../../../../AlgebraicTopology/SimplicialSetMonoidal.lean/declarations/leftunitor-hom-app-apply.md) | 32 | `result-track:8df14f1bd0ce127d4d12cbae27ee3154b9ee53abee09a76c5cfcb16c286addfe` |
-| 3 | `lemma` | [leftUnitor_inv_app_apply](../../../../AlgebraicTopology/SimplicialSetMonoidal.lean/declarations/leftunitor-inv-app-apply.md) | 36 | `result-track:a3348df173779dc4bb94660336df68bd1bf6ef9315b050fea5964d47ddc67b3b` |
-| 4 | `lemma` | [rightUnitor_hom_app_apply](../../../../AlgebraicTopology/SimplicialSetMonoidal.lean/declarations/rightunitor-hom-app-apply.md) | 40 | `result-track:759bd11daee6d4e11f9cd9e44459e7531fe1505558a3ca2f849eb75dc65a7d8a` |
-| 5 | `lemma` | [rightUnitor_inv_app_apply](../../../../AlgebraicTopology/SimplicialSetMonoidal.lean/declarations/rightunitor-inv-app-apply.md) | 44 | `result-track:4f417efc4aa81e66e72ceaa9c03eaec20a05f1565edb841fbebc92b205098fec` |
-| 6 | `lemma` | [tensorHom_app_apply](../../../../AlgebraicTopology/SimplicialSetMonoidal.lean/declarations/tensorhom-app-apply.md) | 48 | `result-track:09204d05e41f5b2879bf8e1040d04d2d65a319a5306c1eeff9fc8186fb278361` |
-| 7 | `lemma` | [whiskerLeft_app_apply](../../../../AlgebraicTopology/SimplicialSetMonoidal.lean/declarations/whiskerleft-app-apply.md) | 53 | `result-track:326ba64bc6c1e78abe1eb35f566ec7c5ad2e96e18b5224af5eda1611a9646d56` |
-| 8 | `lemma` | [whiskerRight_app_apply](../../../../AlgebraicTopology/SimplicialSetMonoidal.lean/declarations/whiskerright-app-apply.md) | 58 | `result-track:a425c362246210fabcb926df4e2d0583b2badafac4b1eb99c088dd4aea7fa920` |
-| 9 | `lemma` | [associator_hom_app_apply](../../../../AlgebraicTopology/SimplicialSetMonoidal.lean/declarations/associator-hom-app-apply.md) | 63 | `result-track:8d592de4a514fc1e8094f8cd018c59d2ecefd5d0936afe763a14f9dd748db4d0` |
-| 10 | `lemma` | [associator_inv_app_apply](../../../../AlgebraicTopology/SimplicialSetMonoidal.lean/declarations/associator-inv-app-apply.md) | 68 | `result-track:d3e35c1f5d32d4d2ae67961d430ef95d966641da94a39cbfeb6fd17488276e96` |
-| 11 | `def` | [unitHomEquiv](../../../../AlgebraicTopology/SimplicialSetMonoidal.lean/declarations/unithomequiv.md) | 73 | `declaration-track:2d5485d736b053c9845f25200fc4c9f65410e8aa3530fee14da8b3c3d5138252` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialSetMonoidal.lean/declarations/instance.md) | 28 | `declaration-track:7b052fdce24b04871b014564981500f35e352b2fbdf783c09fa6691ff130ff3a` |
+| 2 | `lemma` | [leftUnitor_hom_app_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialSetMonoidal.lean/declarations/leftunitor-hom-app-apply.md) | 32 | `result-track:8df14f1bd0ce127d4d12cbae27ee3154b9ee53abee09a76c5cfcb16c286addfe` |
+| 3 | `lemma` | [leftUnitor_inv_app_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialSetMonoidal.lean/declarations/leftunitor-inv-app-apply.md) | 36 | `result-track:a3348df173779dc4bb94660336df68bd1bf6ef9315b050fea5964d47ddc67b3b` |
+| 4 | `lemma` | [rightUnitor_hom_app_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialSetMonoidal.lean/declarations/rightunitor-hom-app-apply.md) | 40 | `result-track:759bd11daee6d4e11f9cd9e44459e7531fe1505558a3ca2f849eb75dc65a7d8a` |
+| 5 | `lemma` | [rightUnitor_inv_app_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialSetMonoidal.lean/declarations/rightunitor-inv-app-apply.md) | 44 | `result-track:4f417efc4aa81e66e72ceaa9c03eaec20a05f1565edb841fbebc92b205098fec` |
+| 6 | `lemma` | [tensorHom_app_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialSetMonoidal.lean/declarations/tensorhom-app-apply.md) | 48 | `result-track:09204d05e41f5b2879bf8e1040d04d2d65a319a5306c1eeff9fc8186fb278361` |
+| 7 | `lemma` | [whiskerLeft_app_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialSetMonoidal.lean/declarations/whiskerleft-app-apply.md) | 53 | `result-track:326ba64bc6c1e78abe1eb35f566ec7c5ad2e96e18b5224af5eda1611a9646d56` |
+| 8 | `lemma` | [whiskerRight_app_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialSetMonoidal.lean/declarations/whiskerright-app-apply.md) | 58 | `result-track:a425c362246210fabcb926df4e2d0583b2badafac4b1eb99c088dd4aea7fa920` |
+| 9 | `lemma` | [associator_hom_app_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialSetMonoidal.lean/declarations/associator-hom-app-apply.md) | 63 | `result-track:8d592de4a514fc1e8094f8cd018c59d2ecefd5d0936afe763a14f9dd748db4d0` |
+| 10 | `lemma` | [associator_inv_app_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialSetMonoidal.lean/declarations/associator-inv-app-apply.md) | 68 | `result-track:d3e35c1f5d32d4d2ae67961d430ef95d966641da94a39cbfeb6fd17488276e96` |
+| 11 | `def` | [unitHomEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialSetMonoidal.lean/declarations/unithomequiv.md) | 73 | `declaration-track:2d5485d736b053c9845f25200fc4c9f65410e8aa3530fee14da8b3c3d5138252` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

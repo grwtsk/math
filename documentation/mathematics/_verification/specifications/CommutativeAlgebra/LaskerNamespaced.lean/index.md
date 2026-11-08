@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/LaskerNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/LaskerNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LaskerNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LaskerNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,13 +60,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [IsLasker](../../../../CommutativeAlgebra/LaskerNamespaced.lean/declarations/islasker.md) | 45 | `declaration-track:cc7d1a4e66f7563a2146ef651d026232a81b3a47ece8b9431e9862fff5782a16` |
-| 2 | `lemma` | [decomposition_erase_inf](../../../../CommutativeAlgebra/LaskerNamespaced.lean/declarations/decomposition-erase-inf.md) | 52 | `result-track:91b071fcee2faef97958f7c2d753351f2887fc7dede0a91acd186d70746bb521` |
-| 3 | `lemma` | [isPrimary_decomposition_pairwise_ne_radical](../../../../CommutativeAlgebra/LaskerNamespaced.lean/declarations/isprimary-decomposition-pairwise-ne-radical.md) | 68 | `result-track:63a4966a803709d175d0ffa032e505f35c9eff63c113aafe7f3644138ede60b2` |
-| 4 | `lemma` | [exists_minimal_isPrimary_decomposition_of_isPrimary_decomposition](../../../../CommutativeAlgebra/LaskerNamespaced.lean/declarations/exists-minimal-isprimary-decomposition-of-isprimary-decomposition.md) | 104 | `result-track:993b69d8aa55ada56b1e4567af9042c2272d44b59dab125bafd41e18b39d1a0c` |
-| 5 | `lemma` | [IsLasker.minimal](../../../../CommutativeAlgebra/LaskerNamespaced.lean/declarations/islasker-minimal.md) | 113 | `result-track:1efc2b6d94ac9354d97b0a5085d1abb8ed57e721f340f4435f939dbe79d2f40d` |
-| 6 | `lemma` | [Lasker Namespaced](../../../../CommutativeAlgebra/LaskerNamespaced.lean/declarations/isprimary.md) | 130 | `result-track:65c6cda924be5359ba9290649251fb15e3cd9e08afc1a2639aed089e38a27a78` |
-| 7 | `lemma` | [isLasker](../../../../CommutativeAlgebra/LaskerNamespaced.lean/declarations/islasker-source-edition-2.md) | 171 | `result-track:ee52b39646ecfc11a0866e09aa526399b36a6f09b426ead9b009df3a52886019` |
+| 1 | `def` | [IsLasker](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LaskerNamespaced.lean/declarations/islasker.md) | 45 | `declaration-track:cc7d1a4e66f7563a2146ef651d026232a81b3a47ece8b9431e9862fff5782a16` |
+| 2 | `lemma` | [decomposition_erase_inf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LaskerNamespaced.lean/declarations/decomposition-erase-inf.md) | 52 | `result-track:91b071fcee2faef97958f7c2d753351f2887fc7dede0a91acd186d70746bb521` |
+| 3 | `lemma` | [isPrimary_decomposition_pairwise_ne_radical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LaskerNamespaced.lean/declarations/isprimary-decomposition-pairwise-ne-radical.md) | 68 | `result-track:63a4966a803709d175d0ffa032e505f35c9eff63c113aafe7f3644138ede60b2` |
+| 4 | `lemma` | [exists_minimal_isPrimary_decomposition_of_isPrimary_decomposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LaskerNamespaced.lean/declarations/exists-minimal-isprimary-decomposition-of-isprimary-decomposition.md) | 104 | `result-track:993b69d8aa55ada56b1e4567af9042c2272d44b59dab125bafd41e18b39d1a0c` |
+| 5 | `lemma` | [IsLasker.minimal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LaskerNamespaced.lean/declarations/islasker-minimal.md) | 113 | `result-track:1efc2b6d94ac9354d97b0a5085d1abb8ed57e721f340f4435f939dbe79d2f40d` |
+| 6 | `lemma` | [Lasker Namespaced](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LaskerNamespaced.lean/declarations/isprimary.md) | 130 | `result-track:65c6cda924be5359ba9290649251fb15e3cd9e08afc1a2639aed089e38a27a78` |
+| 7 | `lemma` | [isLasker](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LaskerNamespaced.lean/declarations/islasker-source-edition-2.md) | 171 | `result-track:ee52b39646ecfc11a0866e09aa526399b36a6f09b426ead9b009df3a52886019` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

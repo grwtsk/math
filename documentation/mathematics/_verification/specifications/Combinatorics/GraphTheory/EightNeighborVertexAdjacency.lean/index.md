@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/EightNeighborVertexAdjacency.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/EightNeighborVertexAdjacency.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/EightNeighborVertexAdjacency.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/EightNeighborVertexAdjacency.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [NeighboringCoordinate](../../../../../Combinatorics/GraphTheory/EightNeighborVertexAdjacency.lean/declarations/neighboringcoordinate.md) | 36 | `declaration-track:bd06c28d72473200f96056ed4125dd067ed60daf1073a10f0f583eac01b49191` |
-| 2 | `instance` | [neighboringCoordinateDecidable](../../../../../Combinatorics/GraphTheory/EightNeighborVertexAdjacency.lean/declarations/neighboringcoordinatedecidable.md) | 39 | `declaration-track:b8c6e4d0a9df59da8b3deb0d6e0b9acdbe1de91603d861e5b2b70634254724a8` |
-| 3 | `theorem` | [neighboringCoordinate_symmetric](../../../../../Combinatorics/GraphTheory/EightNeighborVertexAdjacency.lean/declarations/neighboringcoordinate-symmetric.md) | 44 | `result-track:781e8e3962df899dec4f823dcc29d33d53b1b6fee8fdc5a7910dcc42a6bfe1ce` |
-| 4 | `def` | [VertexAdjacent](../../../../../Combinatorics/GraphTheory/EightNeighborVertexAdjacency.lean/declarations/vertexadjacent.md) | 58 | `declaration-track:595ac854ca88a9d04199663d54f135300676b65421ee5fa7b9e55911cb67df33` |
-| 5 | `instance` | [vertexAdjacentDecidable](../../../../../Combinatorics/GraphTheory/EightNeighborVertexAdjacency.lean/declarations/vertexadjacentdecidable.md) | 64 | `declaration-track:f44c3f167e30f17e80712ff05bc687e53c6348f4e137c3bf90a40fccd478c29d` |
-| 6 | `theorem` | [vertexAdjacent_symmetric](../../../../../Combinatorics/GraphTheory/EightNeighborVertexAdjacency.lean/declarations/vertexadjacent-symmetric.md) | 70 | `result-track:13c4ad8e498e7e0c5160e78284124b244447fe828c5ca77d5a8d2f37bee0200e` |
-| 7 | `theorem` | [not_vertexAdjacent_self](../../../../../Combinatorics/GraphTheory/EightNeighborVertexAdjacency.lean/declarations/not-vertexadjacent-self.md) | 81 | `result-track:f91df3e309bac4f53dcaaf8b5bfc0d376442245ee097172db409edb69cdefe46` |
+| 1 | `def` | [NeighboringCoordinate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/EightNeighborVertexAdjacency.lean/declarations/neighboringcoordinate.md) | 36 | `declaration-track:bd06c28d72473200f96056ed4125dd067ed60daf1073a10f0f583eac01b49191` |
+| 2 | `instance` | [neighboringCoordinateDecidable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/EightNeighborVertexAdjacency.lean/declarations/neighboringcoordinatedecidable.md) | 39 | `declaration-track:b8c6e4d0a9df59da8b3deb0d6e0b9acdbe1de91603d861e5b2b70634254724a8` |
+| 3 | `theorem` | [neighboringCoordinate_symmetric](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/EightNeighborVertexAdjacency.lean/declarations/neighboringcoordinate-symmetric.md) | 44 | `result-track:781e8e3962df899dec4f823dcc29d33d53b1b6fee8fdc5a7910dcc42a6bfe1ce` |
+| 4 | `def` | [VertexAdjacent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/EightNeighborVertexAdjacency.lean/declarations/vertexadjacent.md) | 58 | `declaration-track:595ac854ca88a9d04199663d54f135300676b65421ee5fa7b9e55911cb67df33` |
+| 5 | `instance` | [vertexAdjacentDecidable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/EightNeighborVertexAdjacency.lean/declarations/vertexadjacentdecidable.md) | 64 | `declaration-track:f44c3f167e30f17e80712ff05bc687e53c6348f4e137c3bf90a40fccd478c29d` |
+| 6 | `theorem` | [vertexAdjacent_symmetric](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/EightNeighborVertexAdjacency.lean/declarations/vertexadjacent-symmetric.md) | 70 | `result-track:13c4ad8e498e7e0c5160e78284124b244447fe828c5ca77d5a8d2f37bee0200e` |
+| 7 | `theorem` | [not_vertexAdjacent_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/EightNeighborVertexAdjacency.lean/declarations/not-vertexadjacent-self.md) | 81 | `result-track:f91df3e309bac4f53dcaaf8b5bfc0d376442245ee097172db409edb69cdefe46` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

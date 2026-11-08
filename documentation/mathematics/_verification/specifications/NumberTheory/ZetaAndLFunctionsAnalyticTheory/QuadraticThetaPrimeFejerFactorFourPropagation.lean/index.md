@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFactorFourPropagation.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFactorFourPropagation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFactorFourPropagation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFactorFourPropagation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeFejerOctaveRestriction`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerOctaveRestriction.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeFejerOctaveRestriction`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerOctaveRestriction.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [cyclicFejerDistance](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFactorFourPropagation.lean/declarations/cyclicfejerdistance.md) | 12 | `declaration-track:c137d212c505eb47a75eb3dd9d2f4d10f47055e69fc4e4f22a308d9c52da477c` |
-| 2 | `theorem` | [cyclicFejerSharpStepL1Error_le_distanceWeightedKernel](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFactorFourPropagation.lean/declarations/cyclicfejersharpstepl1error-le-distanceweightedkernel.md) | 17 | `result-track:10bae248b76bc61087007b07b20306e234997dd9e39964a97f693526e298f0b6` |
-| 3 | `def` | [CyclicDistanceWeightedKernelPairingClaim](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFactorFourPropagation.lean/declarations/cyclicdistanceweightedkernelpairingclaim.md) | 48 | `declaration-track:547eac055f64674814efd8fefbbb8940deafc662507121d4280b4f0a32961fe3` |
-| 4 | `theorem` | [cyclicKernelPairing_to_sharpStepL1FirstMomentFour](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFactorFourPropagation.lean/declarations/cyclickernelpairing-to-sharpstepl1firstmomentfour.md) | 57 | `result-track:b81a76c2d53daafec82cee7d4293c2ec90a602d9b5ea90b109c1ecaa4f3b4273` |
-| 5 | `theorem` | [cyclicKernelPairing_to_arithmeticComparisonFactorFour](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFactorFourPropagation.lean/declarations/cyclickernelpairing-to-arithmeticcomparisonfactorfour.md) | 67 | `result-track:eb61d1fc3663b4ac54fd6f233a11ecf84f820a7e62b242eea4356cd0ecb76caa` |
-| 6 | `theorem` | [cyclicKernelPairing_to_arithmeticTailShape](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFactorFourPropagation.lean/declarations/cyclickernelpairing-to-arithmetictailshape.md) | 73 | `result-track:0a7e97205b81a98343506f00b0f2de93344e9a428ff3c463fe24db37901d1c13` |
-| 7 | `def` | [CorrectedFejerFinitePairingOnlyFrontier](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFactorFourPropagation.lean/declarations/correctedfejerfinitepairingonlyfrontier.md) | 91 | `declaration-track:4cd397b3bb25f5dd42cce9666a195aa7f5b961a97f16dfb3c190a86ec3e2737f` |
+| 1 | `def` | [cyclicFejerDistance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFactorFourPropagation.lean/declarations/cyclicfejerdistance.md) | 12 | `declaration-track:c137d212c505eb47a75eb3dd9d2f4d10f47055e69fc4e4f22a308d9c52da477c` |
+| 2 | `theorem` | [cyclicFejerSharpStepL1Error_le_distanceWeightedKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFactorFourPropagation.lean/declarations/cyclicfejersharpstepl1error-le-distanceweightedkernel.md) | 17 | `result-track:10bae248b76bc61087007b07b20306e234997dd9e39964a97f693526e298f0b6` |
+| 3 | `def` | [CyclicDistanceWeightedKernelPairingClaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFactorFourPropagation.lean/declarations/cyclicdistanceweightedkernelpairingclaim.md) | 48 | `declaration-track:547eac055f64674814efd8fefbbb8940deafc662507121d4280b4f0a32961fe3` |
+| 4 | `theorem` | [cyclicKernelPairing_to_sharpStepL1FirstMomentFour](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFactorFourPropagation.lean/declarations/cyclickernelpairing-to-sharpstepl1firstmomentfour.md) | 57 | `result-track:b81a76c2d53daafec82cee7d4293c2ec90a602d9b5ea90b109c1ecaa4f3b4273` |
+| 5 | `theorem` | [cyclicKernelPairing_to_arithmeticComparisonFactorFour](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFactorFourPropagation.lean/declarations/cyclickernelpairing-to-arithmeticcomparisonfactorfour.md) | 67 | `result-track:eb61d1fc3663b4ac54fd6f233a11ecf84f820a7e62b242eea4356cd0ecb76caa` |
+| 6 | `theorem` | [cyclicKernelPairing_to_arithmeticTailShape](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFactorFourPropagation.lean/declarations/cyclickernelpairing-to-arithmetictailshape.md) | 73 | `result-track:0a7e97205b81a98343506f00b0f2de93344e9a428ff3c463fe24db37901d1c13` |
+| 7 | `def` | [CorrectedFejerFinitePairingOnlyFrontier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFactorFourPropagation.lean/declarations/correctedfejerfinitepairingonlyfrontier.md) | 91 | `declaration-track:4cd397b3bb25f5dd42cce9666a195aa7f5b961a97f16dfb3c190a86ec3e2737f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

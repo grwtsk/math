@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ProofNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ProofNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProofNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProofNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [X1](../../../../../ComputerScience/AlgorithmsInComputerScience/ProofNamespaced.lean/declarations/x1.md) | 11 | `declaration-track:0f3dbec71c4760819e4a5b6d376ca445f1070c10ea72a7172ecfccc308403037` |
-| 2 | `def` | [binaryValue](../../../../../ComputerScience/AlgorithmsInComputerScience/ProofNamespaced.lean/declarations/binaryvalue.md) | 15 | `declaration-track:96db0f7a776b63dff8b4f10cba8f37069010a3f29724d07f06180ec32b102c5a` |
-| 3 | `def` | [x1InBinaryOrder](../../../../../ComputerScience/AlgorithmsInComputerScience/ProofNamespaced.lean/declarations/x1inbinaryorder.md) | 18 | `declaration-track:049c4c6355d10bd16eed75bbba9eec368c439ea18198d5f35ec0ec6a5a3875d8` |
-| 4 | `theorem` | [x1_has_sixteen_points](../../../../../ComputerScience/AlgorithmsInComputerScience/ProofNamespaced.lean/declarations/x1-has-sixteen-points.md) | 21 | `result-track:c9799edd63fabfe62bf6b57dfc456c8ae2c2466ffdd8ad630a514712f4f54111` |
-| 5 | `abbrev` | [V1](../../../../../ComputerScience/AlgorithmsInComputerScience/ProofNamespaced.lean/declarations/v1.md) | 25 | `declaration-track:ffc6345990491ef2cdadf56a83f2d73aa7f6829e7a7128b7385a0f491cb0a79d` |
-| 6 | `inductive` | [Channel](../../../../../ComputerScience/AlgorithmsInComputerScience/ProofNamespaced.lean/declarations/channel.md) | 27 | `declaration-track:92c60ad69b0590ad2e7837dd733a796c506a6ed23fb53f703b6a52e57eaa6a6c` |
-| 7 | `def` | [d4Action](../../../../../ComputerScience/AlgorithmsInComputerScience/ProofNamespaced.lean/declarations/d4action.md) | 34 | `declaration-track:f893ecab269abab10f5870dc66bcefd22a8653ed75651e910949d5716cabb5d4` |
-| 8 | `def` | [L](../../../../../ComputerScience/AlgorithmsInComputerScience/ProofNamespaced.lean/declarations/l.md) | 37 | `declaration-track:ba49eb8f96ac0bc9b0b2d90d7f38ec6fbd290a8a72f48351da1821456eefa393` |
-| 9 | `def` | [spectralCoverCondition](../../../../../ComputerScience/AlgorithmsInComputerScience/ProofNamespaced.lean/declarations/spectralcovercondition.md) | 40 | `declaration-track:943259c574a59e980033d60ee4da7d2f5575be5a6c2a47d01d0d8c2851fb9acd` |
-| 10 | `theorem` | [every_channel_has_level_one_spectral_cover](../../../../../ComputerScience/AlgorithmsInComputerScience/ProofNamespaced.lean/declarations/every-channel-has-level-one-spectral-cover.md) | 43 | `result-track:d3c70dc9f97f4e56b9f3cee47b7bb75b8b8d472ad686e37cbfe3273aaf981129` |
+| 1 | `structure` | [X1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProofNamespaced.lean/declarations/x1.md) | 11 | `declaration-track:0f3dbec71c4760819e4a5b6d376ca445f1070c10ea72a7172ecfccc308403037` |
+| 2 | `def` | [binaryValue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProofNamespaced.lean/declarations/binaryvalue.md) | 15 | `declaration-track:96db0f7a776b63dff8b4f10cba8f37069010a3f29724d07f06180ec32b102c5a` |
+| 3 | `def` | [x1InBinaryOrder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProofNamespaced.lean/declarations/x1inbinaryorder.md) | 18 | `declaration-track:049c4c6355d10bd16eed75bbba9eec368c439ea18198d5f35ec0ec6a5a3875d8` |
+| 4 | `theorem` | [x1_has_sixteen_points](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProofNamespaced.lean/declarations/x1-has-sixteen-points.md) | 21 | `result-track:c9799edd63fabfe62bf6b57dfc456c8ae2c2466ffdd8ad630a514712f4f54111` |
+| 5 | `abbrev` | [V1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProofNamespaced.lean/declarations/v1.md) | 25 | `declaration-track:ffc6345990491ef2cdadf56a83f2d73aa7f6829e7a7128b7385a0f491cb0a79d` |
+| 6 | `inductive` | [Channel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProofNamespaced.lean/declarations/channel.md) | 27 | `declaration-track:92c60ad69b0590ad2e7837dd733a796c506a6ed23fb53f703b6a52e57eaa6a6c` |
+| 7 | `def` | [d4Action](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProofNamespaced.lean/declarations/d4action.md) | 34 | `declaration-track:f893ecab269abab10f5870dc66bcefd22a8653ed75651e910949d5716cabb5d4` |
+| 8 | `def` | [L](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProofNamespaced.lean/declarations/l.md) | 37 | `declaration-track:ba49eb8f96ac0bc9b0b2d90d7f38ec6fbd290a8a72f48351da1821456eefa393` |
+| 9 | `def` | [spectralCoverCondition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProofNamespaced.lean/declarations/spectralcovercondition.md) | 40 | `declaration-track:943259c574a59e980033d60ee4da7d2f5575be5a6c2a47d01d0d8c2851fb9acd` |
+| 10 | `theorem` | [every_channel_has_level_one_spectral_cover](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProofNamespaced.lean/declarations/every-channel-has-level-one-spectral-cover.md) | 43 | `result-track:d3c70dc9f97f4e56b9f3cee47b7bb75b8b8d472ad686e37cbfe3273aaf981129` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

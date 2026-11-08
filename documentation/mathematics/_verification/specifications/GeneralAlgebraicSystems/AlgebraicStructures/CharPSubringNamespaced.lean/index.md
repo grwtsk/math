@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPSubringNamespaced.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPSubringNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPSubringNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPSubringNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [subsemiring](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPSubringNamespaced.lean/declarations/subsemiring.md) | 25 | `declaration-track:12c0a97df7bb9bebd6bddc66d396a8549194038852205c15542972d40695100c` |
-| 2 | `instance` | [subring](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPSubringNamespaced.lean/declarations/subring.md) | 33 | `declaration-track:52afbc2c419ee690c9818eb8e71886673c0762e590de7dec27ee0d64d9372d1d` |
-| 3 | `instance` | [subring'](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPSubringNamespaced.lean/declarations/subring-source-edition-2.md) | 40 | `declaration-track:56e9015e1fa3d22b3c3711cd6ec77d0e69f9b022cdd6bad41ff3c61bc7141759` |
-| 4 | `theorem` | [charP_center_iff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPSubringNamespaced.lean/declarations/charp-center-iff.md) | 45 | `result-track:fc38cd7497dbd641df8d632710232d565866eb3d1cc795d24c8661ac61dae8f5` |
-| 5 | `theorem` | [expChar_center_iff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPSubringNamespaced.lean/declarations/expchar-center-iff.md) | 53 | `result-track:5ff233e2cb026e675d5212e47e82b90ea35a598c4635e61e435a57e3cef4ad0d` |
+| 1 | `instance` | [subsemiring](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPSubringNamespaced.lean/declarations/subsemiring.md) | 25 | `declaration-track:12c0a97df7bb9bebd6bddc66d396a8549194038852205c15542972d40695100c` |
+| 2 | `instance` | [subring](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPSubringNamespaced.lean/declarations/subring.md) | 33 | `declaration-track:52afbc2c419ee690c9818eb8e71886673c0762e590de7dec27ee0d64d9372d1d` |
+| 3 | `instance` | [subring'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPSubringNamespaced.lean/declarations/subring-source-edition-2.md) | 40 | `declaration-track:56e9015e1fa3d22b3c3711cd6ec77d0e69f9b022cdd6bad41ff3c61bc7141759` |
+| 4 | `theorem` | [charP_center_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPSubringNamespaced.lean/declarations/charp-center-iff.md) | 45 | `result-track:fc38cd7497dbd641df8d632710232d565866eb3d1cc795d24c8661ac61dae8f5` |
+| 5 | `theorem` | [expChar_center_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPSubringNamespaced.lean/declarations/expchar-center-iff.md) | 53 | `result-track:5ff233e2cb026e675d5212e47e82b90ea35a598c4635e61e435a57e3cef4ad0d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

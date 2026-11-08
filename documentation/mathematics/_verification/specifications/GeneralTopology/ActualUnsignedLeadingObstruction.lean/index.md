@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ActualUnsignedLeadingObstruction.lean/index.md) · [Full source](../../../../GeneralTopology/ActualUnsignedLeadingObstruction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualUnsignedLeadingObstruction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualUnsignedLeadingObstruction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actualMoebiusSqrtMass_lower_at_source_cutoff](../../../../GeneralTopology/ActualUnsignedLeadingObstruction.lean/declarations/actualmoebiussqrtmass-lower-at-source-cutoff.md) | 26 | `result-track:55c407beb228a4e95c0cb7dfed8ec44739781cbb425091e7949ae07827cc1af0` |
-| 2 | `def` | [actualUnsignedLeadingPlusHead](../../../../GeneralTopology/ActualUnsignedLeadingObstruction.lean/declarations/actualunsignedleadingplushead.md) | 35 | `declaration-track:980555b20851a66ee516b6c5a8ad2027a5884b44d2c875580653d1fcaa8e00c0` |
-| 3 | `theorem` | [actualUnsignedLeadingPlusHead_lower](../../../../GeneralTopology/ActualUnsignedLeadingObstruction.lean/declarations/actualunsignedleadingplushead-lower.md) | 41 | `result-track:f798c239277dc3cc8f154f87e8add06037705ab5206956668ccc556b6dfb367b` |
-| 4 | `theorem` | [actualUnsignedLeadingPlusHead_tendsto_atTop](../../../../GeneralTopology/ActualUnsignedLeadingObstruction.lean/declarations/actualunsignedleadingplushead-tendsto-attop.md) | 57 | `result-track:7a645d07f672b83ae38ede164fe4b3e74c7ad276e785a0b15c44125f00ddc254` |
-| 5 | `theorem` | [actualUnsignedLeadingPlusHead_no_uniform_upper](../../../../GeneralTopology/ActualUnsignedLeadingObstruction.lean/declarations/actualunsignedleadingplushead-no-uniform-upper.md) | 69 | `result-track:1e56ed1bd677db250346619564e669096c1829eb2a41ed03c73375394ace3ef1` |
+| 1 | `theorem` | [actualMoebiusSqrtMass_lower_at_source_cutoff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualUnsignedLeadingObstruction.lean/declarations/actualmoebiussqrtmass-lower-at-source-cutoff.md) | 26 | `result-track:55c407beb228a4e95c0cb7dfed8ec44739781cbb425091e7949ae07827cc1af0` |
+| 2 | `def` | [actualUnsignedLeadingPlusHead](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualUnsignedLeadingObstruction.lean/declarations/actualunsignedleadingplushead.md) | 35 | `declaration-track:980555b20851a66ee516b6c5a8ad2027a5884b44d2c875580653d1fcaa8e00c0` |
+| 3 | `theorem` | [actualUnsignedLeadingPlusHead_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualUnsignedLeadingObstruction.lean/declarations/actualunsignedleadingplushead-lower.md) | 41 | `result-track:f798c239277dc3cc8f154f87e8add06037705ab5206956668ccc556b6dfb367b` |
+| 4 | `theorem` | [actualUnsignedLeadingPlusHead_tendsto_atTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualUnsignedLeadingObstruction.lean/declarations/actualunsignedleadingplushead-tendsto-attop.md) | 57 | `result-track:7a645d07f672b83ae38ede164fe4b3e74c7ad276e785a0b15c44125f00ddc254` |
+| 5 | `theorem` | [actualUnsignedLeadingPlusHead_no_uniform_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualUnsignedLeadingObstruction.lean/declarations/actualunsignedleadingplushead-no-uniform-upper.md) | 69 | `result-track:1e56ed1bd677db250346619564e669096c1829eb2a41ed03c73375394ace3ef1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

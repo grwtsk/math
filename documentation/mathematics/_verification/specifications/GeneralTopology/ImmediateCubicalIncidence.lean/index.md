@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ImmediateCubicalIncidence.lean/index.md) · [Full source](../../../../GeneralTopology/ImmediateCubicalIncidence.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ImmediateCubicalIncidence.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ImmediateCubicalIncidence.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [incidenceFaces](../../../../GeneralTopology/ImmediateCubicalIncidence.lean/declarations/incidencefaces.md) | 50 | `declaration-track:55c083719e0bebf7cf90baee3f5541fb747c9f95da15ea3432c450fc1dc8172a` |
-| 2 | `theorem` | [incidenceFaces_square_eq](../../../../GeneralTopology/ImmediateCubicalIncidence.lean/declarations/incidencefaces-square-eq.md) | 67 | `result-track:12da6fe1b59dda553f1cb2c4cec3daec3bce3f6d18785ddfce1c5d4faf8207ee` |
-| 3 | `theorem` | [mem_incidenceFaces_square_iff](../../../../GeneralTopology/ImmediateCubicalIncidence.lean/declarations/mem-incidencefaces-square-iff.md) | 78 | `result-track:520adca0916d709cff9353ddc523aefdd5e2049163cdfa74b7322afee0739f85` |
-| 4 | `theorem` | [edgeAdjacent_iff_shared_incidence_face](../../../../GeneralTopology/ImmediateCubicalIncidence.lean/declarations/edgeadjacent-iff-shared-incidence-face.md) | 91 | `result-track:0ca40342b74ba8a537d6a7979f2e5eb22e8c39f490636df5b6e1fab82a2f6f22` |
-| 5 | `theorem` | [incidenceFaces_lowersDimension](../../../../GeneralTopology/ImmediateCubicalIncidence.lean/declarations/incidencefaces-lowersdimension.md) | 104 | `result-track:b5e6e1a4430f2b243123a27cd2ede0164c734b053615508dbcb968b97a90b080` |
+| 1 | `def` | [incidenceFaces](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ImmediateCubicalIncidence.lean/declarations/incidencefaces.md) | 50 | `declaration-track:55c083719e0bebf7cf90baee3f5541fb747c9f95da15ea3432c450fc1dc8172a` |
+| 2 | `theorem` | [incidenceFaces_square_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ImmediateCubicalIncidence.lean/declarations/incidencefaces-square-eq.md) | 67 | `result-track:12da6fe1b59dda553f1cb2c4cec3daec3bce3f6d18785ddfce1c5d4faf8207ee` |
+| 3 | `theorem` | [mem_incidenceFaces_square_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ImmediateCubicalIncidence.lean/declarations/mem-incidencefaces-square-iff.md) | 78 | `result-track:520adca0916d709cff9353ddc523aefdd5e2049163cdfa74b7322afee0739f85` |
+| 4 | `theorem` | [edgeAdjacent_iff_shared_incidence_face](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ImmediateCubicalIncidence.lean/declarations/edgeadjacent-iff-shared-incidence-face.md) | 91 | `result-track:0ca40342b74ba8a537d6a7979f2e5eb22e8c39f490636df5b6e1fab82a2f6f22` |
+| 5 | `theorem` | [incidenceFaces_lowersDimension](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ImmediateCubicalIncidence.lean/declarations/incidencefaces-lowersdimension.md) | 104 | `result-track:b5e6e1a4430f2b243123a27cd2ede0164c734b053615508dbcb968b97a90b080` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

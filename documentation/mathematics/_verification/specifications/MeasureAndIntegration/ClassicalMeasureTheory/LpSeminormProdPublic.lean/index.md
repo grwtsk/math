@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LpSeminormProdPublic.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LpSeminormProdPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/LpSeminormProdPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/LpSeminormProdPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [MemLp.comp_fst](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LpSeminormProdPublic.lean/declarations/memlp-comp-fst.md) | 25 | `result-track:9d67e7ba55542b88d72c6b59047775e2c72e4fc380db37bbb7d511f843cc9cb0` |
-| 2 | `lemma` | [MemLp.comp_snd](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LpSeminormProdPublic.lean/declarations/memlp-comp-snd.md) | 33 | `result-track:4ba14eed9bbaf003f1a23b6f3575af9803019e669563dbfaf9400cee3371de5c` |
+| 1 | `lemma` | [MemLp.comp_fst](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/LpSeminormProdPublic.lean/declarations/memlp-comp-fst.md) | 25 | `result-track:9d67e7ba55542b88d72c6b59047775e2c72e4fc380db37bbb7d511f843cc9cb0` |
+| 2 | `lemma` | [MemLp.comp_snd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/LpSeminormProdPublic.lean/declarations/memlp-comp-snd.md) | 33 | `result-track:4ba14eed9bbaf003f1a23b6f3575af9803019e669563dbfaf9400cee3371de5c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

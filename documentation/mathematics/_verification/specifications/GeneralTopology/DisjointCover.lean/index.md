@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/DisjointCover.lean/index.md) · [Full source](../../../../GeneralTopology/DisjointCover.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DisjointCover.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DisjointCover.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,14 +62,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [exists_finite_clopen_cover](../../../../GeneralTopology/DisjointCover.lean/declarations/exists-finite-clopen-cover.md) | 36 | `result-track:eab63743e1913f469426a09dd6f658484f19acd4586d1c3366d86016580b608e` |
-| 2 | `lemma` | [exists_finite_nonempty_disjoint_clopen_cover](../../../../GeneralTopology/DisjointCover.lean/declarations/exists-finite-nonempty-disjoint-clopen-cover.md) | 52 | `result-track:b351db91ad1b69e0ce268f0f50d5b1e2982acd2bdd4a436cef5657b8992eaa0c` |
-| 3 | `lemma` | [exists_open_prod_subset_of_mem_nhds_diagonal](../../../../GeneralTopology/DisjointCover.lean/declarations/exists-open-prod-subset-of-mem-nhds-diagonal.md) | 75 | `result-track:d64f415483cb682b3e86c043b094c0dad5ab978c96efd77be6e1ce5b2874f6c0` |
-| 4 | `lemma` | [exists_finite_open_cover_prod_subset_of_mem_nhds_diagonal_of_compact](../../../../GeneralTopology/DisjointCover.lean/declarations/exists-finite-open-cover-prod-subset-of-mem-nhds-diagonal-of-compact.md) | 88 | `result-track:04e1aa75fed175b36634b33696ade2045fccd226fac827a8257dc85b719c33e8` |
-| 5 | `lemma` | [exists_finite_disjoint_nonempty_clopen_cover_of_mem_nhds_diagonal_of_profinite](../../../../GeneralTopology/DisjointCover.lean/declarations/exists-finite-disjoint-nonempty-clopen-cover-of-mem-nhds-diagonal-of-pro.md) | 101 | `result-track:06014fe6b4b2f13208abedc29513dfe08dc08a4e00c6d34f5a5395f3bddf482c` |
-| 6 | `lemma` | [exists_disjoint_nonempty_clopen_cover_of_mem_nhds_diagonal](../../../../GeneralTopology/DisjointCover.lean/declarations/exists-disjoint-nonempty-clopen-cover-of-mem-nhds-diagonal.md) | 123 | `result-track:fbfc6198289e61773080478732e8a2b963a8e2ac2a368729565daf2651cba3fe` |
-| 7 | `lemma` | [exists_finite_approximation_of_mem_nhds_diagonal](../../../../GeneralTopology/DisjointCover.lean/declarations/exists-finite-approximation-of-mem-nhds-diagonal.md) | 136 | `result-track:1514b3778e8c27621c7180bd18dd81ce5d7e7261e0ee98c13cd50ae73248b9d8` |
-| 8 | `lemma` | [exists_finite_sum_const_mulIndicator_approximation_of_mem_nhds_diagonal](../../../../GeneralTopology/DisjointCover.lean/declarations/exists-finite-sum-const-mulindicator-approximation-of-mem-nhds-diagonal.md) | 163 | `result-track:f919da617bf19085e06444993dd4be19e72dc470617bba89b6d282b28f3f0a17` |
+| 1 | `lemma` | [exists_finite_clopen_cover](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DisjointCover.lean/declarations/exists-finite-clopen-cover.md) | 36 | `result-track:eab63743e1913f469426a09dd6f658484f19acd4586d1c3366d86016580b608e` |
+| 2 | `lemma` | [exists_finite_nonempty_disjoint_clopen_cover](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DisjointCover.lean/declarations/exists-finite-nonempty-disjoint-clopen-cover.md) | 52 | `result-track:b351db91ad1b69e0ce268f0f50d5b1e2982acd2bdd4a436cef5657b8992eaa0c` |
+| 3 | `lemma` | [exists_open_prod_subset_of_mem_nhds_diagonal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DisjointCover.lean/declarations/exists-open-prod-subset-of-mem-nhds-diagonal.md) | 75 | `result-track:d64f415483cb682b3e86c043b094c0dad5ab978c96efd77be6e1ce5b2874f6c0` |
+| 4 | `lemma` | [exists_finite_open_cover_prod_subset_of_mem_nhds_diagonal_of_compact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DisjointCover.lean/declarations/exists-finite-open-cover-prod-subset-of-mem-nhds-diagonal-of-compact.md) | 88 | `result-track:04e1aa75fed175b36634b33696ade2045fccd226fac827a8257dc85b719c33e8` |
+| 5 | `lemma` | [exists_finite_disjoint_nonempty_clopen_cover_of_mem_nhds_diagonal_of_profinite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DisjointCover.lean/declarations/exists-finite-disjoint-nonempty-clopen-cover-of-mem-nhds-diagonal-of-pro.md) | 101 | `result-track:06014fe6b4b2f13208abedc29513dfe08dc08a4e00c6d34f5a5395f3bddf482c` |
+| 6 | `lemma` | [exists_disjoint_nonempty_clopen_cover_of_mem_nhds_diagonal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DisjointCover.lean/declarations/exists-disjoint-nonempty-clopen-cover-of-mem-nhds-diagonal.md) | 123 | `result-track:fbfc6198289e61773080478732e8a2b963a8e2ac2a368729565daf2651cba3fe` |
+| 7 | `lemma` | [exists_finite_approximation_of_mem_nhds_diagonal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DisjointCover.lean/declarations/exists-finite-approximation-of-mem-nhds-diagonal.md) | 136 | `result-track:1514b3778e8c27621c7180bd18dd81ce5d7e7261e0ee98c13cd50ae73248b9d8` |
+| 8 | `lemma` | [exists_finite_sum_const_mulIndicator_approximation_of_mem_nhds_diagonal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DisjointCover.lean/declarations/exists-finite-sum-const-mulindicator-approximation-of-mem-nhds-diagonal.md) | 163 | `result-track:f919da617bf19085e06444993dd4be19e72dc470617bba89b6d282b28f3f0a17` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnbundledOrderIsoNamespaced.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnbundledOrderIsoNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnbundledOrderIsoNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnbundledOrderIsoNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mulLeft₀](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnbundledOrderIsoNamespaced.lean/declarations/mulleft.md) | 32 | `declaration-track:3cfea7e4dd264782278fb041f7b13a380172792cb5333469437670e97515e07e` |
-| 2 | `lemma` | [mulLeft₀_symm](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnbundledOrderIsoNamespaced.lean/declarations/mulleft-symm.md) | 36 | `result-track:41b31ade9ab08ec6bd392d082a63acff373804cfd92d6b52a6e4b5494c79469b` |
-| 3 | `def` | [mulRight₀](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnbundledOrderIsoNamespaced.lean/declarations/mulright.md) | 48 | `declaration-track:59e9e46a00144e2183d6672048beb87b88c263c3cd3e5fce68b966dbb5b28846` |
-| 4 | `lemma` | [mulRight₀_symm](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnbundledOrderIsoNamespaced.lean/declarations/mulright-symm.md) | 52 | `result-track:b3e9d40f07b47f13d2032226dd05bf234fbba6cb05e4773578037a0a9e0eef2a` |
-| 5 | `def` | [divRight₀](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnbundledOrderIsoNamespaced.lean/declarations/divright.md) | 57 | `declaration-track:a86fe9b03de58d0fe9acc12a3cd8f63609c7747f3da23f9a56c832cbc73c9d7b` |
+| 1 | `def` | [mulLeft₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnbundledOrderIsoNamespaced.lean/declarations/mulleft.md) | 32 | `declaration-track:3cfea7e4dd264782278fb041f7b13a380172792cb5333469437670e97515e07e` |
+| 2 | `lemma` | [mulLeft₀_symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnbundledOrderIsoNamespaced.lean/declarations/mulleft-symm.md) | 36 | `result-track:41b31ade9ab08ec6bd392d082a63acff373804cfd92d6b52a6e4b5494c79469b` |
+| 3 | `def` | [mulRight₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnbundledOrderIsoNamespaced.lean/declarations/mulright.md) | 48 | `declaration-track:59e9e46a00144e2183d6672048beb87b88c263c3cd3e5fce68b966dbb5b28846` |
+| 4 | `lemma` | [mulRight₀_symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnbundledOrderIsoNamespaced.lean/declarations/mulright-symm.md) | 52 | `result-track:b3e9d40f07b47f13d2032226dd05bf234fbba6cb05e4773578037a0a9e0eef2a` |
+| 5 | `def` | [divRight₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/UnbundledOrderIsoNamespaced.lean/declarations/divright.md) | 57 | `declaration-track:a86fe9b03de58d0fe9acc12a3cd8f63609c7747f3da23f9a56c832cbc73c9d7b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

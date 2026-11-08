@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Semiconj.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Semiconj.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Semiconj.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Semiconj.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [zero_right](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Semiconj.lean/declarations/zero-right.md) | 23 | `result-track:bfaa4ac204ba281fd50e7a243c9f2b34778cbe4bf83315d32acc22a3cbb4f87f` |
-| 2 | `theorem` | [zero_left](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Semiconj.lean/declarations/zero-left.md) | 28 | `result-track:0ebb697abe7bc8ea6250746cd4e5043b0b78e6bfaed41ff7cc18a311e3211f25` |
-| 3 | `theorem` | [inv_symm_left_iff₀](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Semiconj.lean/declarations/inv-symm-left-iff.md) | 35 | `result-track:51c7a3cacb30ea1a5c34e9bbaebf8abda5694506cf1952074871bc61f8b5d55c` |
-| 4 | `theorem` | [inv_symm_left₀](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Semiconj.lean/declarations/inv-symm-left.md) | 40 | `result-track:601f66ef2defd2210a3404cca9137ee411a48b00e37248fa08c1e3a66dea18c8` |
-| 5 | `theorem` | [inv_right₀](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Semiconj.lean/declarations/inv-right.md) | 44 | `result-track:32a9c7cd562c764cf15a0bd4a905373ce8efee84b01277f5cde5bd008c5007f6` |
-| 6 | `theorem` | [inv_right_iff₀](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Semiconj.lean/declarations/inv-right-iff.md) | 57 | `result-track:55718a18a5ddf4850247742c5a6e5aded9d7aa7642565fbbe8c7624e611631a0` |
-| 7 | `theorem` | [div_right](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Semiconj.lean/declarations/div-right.md) | 61 | `result-track:da546408cd8366b0c9f89ac1a0fd68ac7d8534bffaa6805e7b7e880170541335` |
+| 1 | `theorem` | [zero_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Semiconj.lean/declarations/zero-right.md) | 23 | `result-track:bfaa4ac204ba281fd50e7a243c9f2b34778cbe4bf83315d32acc22a3cbb4f87f` |
+| 2 | `theorem` | [zero_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Semiconj.lean/declarations/zero-left.md) | 28 | `result-track:0ebb697abe7bc8ea6250746cd4e5043b0b78e6bfaed41ff7cc18a311e3211f25` |
+| 3 | `theorem` | [inv_symm_left_iff₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Semiconj.lean/declarations/inv-symm-left-iff.md) | 35 | `result-track:51c7a3cacb30ea1a5c34e9bbaebf8abda5694506cf1952074871bc61f8b5d55c` |
+| 4 | `theorem` | [inv_symm_left₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Semiconj.lean/declarations/inv-symm-left.md) | 40 | `result-track:601f66ef2defd2210a3404cca9137ee411a48b00e37248fa08c1e3a66dea18c8` |
+| 5 | `theorem` | [inv_right₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Semiconj.lean/declarations/inv-right.md) | 44 | `result-track:32a9c7cd562c764cf15a0bd4a905373ce8efee84b01277f5cde5bd008c5007f6` |
+| 6 | `theorem` | [inv_right_iff₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Semiconj.lean/declarations/inv-right-iff.md) | 57 | `result-track:55718a18a5ddf4850247742c5a6e5aded9d7aa7642565fbbe8c7624e611631a0` |
+| 7 | `theorem` | [div_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Semiconj.lean/declarations/div-right.md) | 61 | `result-track:da546408cd8366b0c9f89ac1a0fd68ac7d8534bffaa6805e7b7e880170541335` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

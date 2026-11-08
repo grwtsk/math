@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/ConjFinite.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/ConjFinite.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ConjFinite.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ConjFinite.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/ConjFinite.lean/declarations/instance-source-edition-3.md) | 22 | `declaration-track:a779f3818d986d496096e8a4a649b7239e5ad50a9086efb038051ec0445812a5` |
-| 2 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/ConjFinite.lean/declarations/instance.md) | 25 | `declaration-track:0053477f1d00051337497d36a02bf7e360e599f35b00654faa6e6c9adff1ae80` |
-| 3 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/ConjFinite.lean/declarations/instance-source-edition-2.md) | 28 | `declaration-track:13bb73bf35c3173937b3cdc43f52c3376fb28e6594fbeacef6f987f0555ede56` |
-| 4 | `instance` | [conjugatesOf.fintype](../../../../GroupTheoryAndGeneralizations/ConjFinite.lean/declarations/conjugatesof-fintype.md) | 31 | `declaration-track:dd3e2201a8150fa30f06647b622ce2b428ef5acb764c100a9601d68ab569bd53` |
-| 5 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/ConjFinite.lean/declarations/instance-source-edition-4.md) | 39 | `declaration-track:da25568c3156aab9ab28fc01663dd0f03fa32eec8eea35578581fd89fa5871ec` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ConjFinite.lean/declarations/instance-source-edition-3.md) | 22 | `declaration-track:a779f3818d986d496096e8a4a649b7239e5ad50a9086efb038051ec0445812a5` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ConjFinite.lean/declarations/instance.md) | 25 | `declaration-track:0053477f1d00051337497d36a02bf7e360e599f35b00654faa6e6c9adff1ae80` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ConjFinite.lean/declarations/instance-source-edition-2.md) | 28 | `declaration-track:13bb73bf35c3173937b3cdc43f52c3376fb28e6594fbeacef6f987f0555ede56` |
+| 4 | `instance` | [conjugatesOf.fintype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ConjFinite.lean/declarations/conjugatesof-fintype.md) | 31 | `declaration-track:dd3e2201a8150fa30f06647b622ce2b428ef5acb764c100a9601d68ab569bd53` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ConjFinite.lean/declarations/instance-source-edition-4.md) | 39 | `declaration-track:da25568c3156aab9ab28fc01663dd0f03fa32eec8eea35578581fd89fa5871ec` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

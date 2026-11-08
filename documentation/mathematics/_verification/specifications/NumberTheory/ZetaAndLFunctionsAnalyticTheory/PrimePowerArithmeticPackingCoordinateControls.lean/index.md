@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerArithmeticPackingCoordinateControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerArithmeticPackingCoordinateControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerArithmeticPackingCoordinateControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerArithmeticPackingCoordinateControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.PrimePowerArithmeticPackingCoordinate`](../../../../../GeneralTopology/PrimePowerArithmeticPackingCoordinate.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.PrimePowerArithmeticPackingCoordinate`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PrimePowerArithmeticPackingCoordinate.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [primeTwo](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerArithmeticPackingCoordinateControls.lean/declarations/primetwo.md) | 14 | `declaration-track:b590b3b5d4011c72a5489da9ec517b5efa7575f0bbe6062c7bb6f683ad5fffe9` |
-| 2 | `def` | [twoSquaredEvent](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerArithmeticPackingCoordinateControls.lean/declarations/twosquaredevent.md) | 16 | `declaration-track:f739ebbf85d6b96692868695a468eb775f1cad01416f38ee36cac9b932dba1d4` |
-| 3 | `theorem` | [twoSquared_logScale](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerArithmeticPackingCoordinateControls.lean/declarations/twosquared-logscale.md) | 22 | `result-track:56da0aad2a04e432e2931bc25297378ed28eb288d8b5ff56823732c8ea9908d1` |
-| 4 | `theorem` | [twoSquared_mangoldtScale](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerArithmeticPackingCoordinateControls.lean/declarations/twosquared-mangoldtscale.md) | 28 | `result-track:013f8121425cf024dc6e9589c8f4d26382f24f4cda5750112f7bab0dad8fa7dd` |
-| 5 | `theorem` | [twoSquared_natValue](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerArithmeticPackingCoordinateControls.lean/declarations/twosquared-natvalue.md) | 33 | `result-track:e40818ae6fb55b46721dddfa99839d6a6951d99474c972ac5bdf2a021c6c4393` |
-| 6 | `theorem` | [four_is_primePowerEventValue](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerArithmeticPackingCoordinateControls.lean/declarations/four-is-primepowereventvalue.md) | 38 | `result-track:facdf28c0bd8f09aa165fe7a5c97f7d12b220cb17814004cf252d01c8046a9a1` |
+| 1 | `def` | [primeTwo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerArithmeticPackingCoordinateControls.lean/declarations/primetwo.md) | 14 | `declaration-track:b590b3b5d4011c72a5489da9ec517b5efa7575f0bbe6062c7bb6f683ad5fffe9` |
+| 2 | `def` | [twoSquaredEvent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerArithmeticPackingCoordinateControls.lean/declarations/twosquaredevent.md) | 16 | `declaration-track:f739ebbf85d6b96692868695a468eb775f1cad01416f38ee36cac9b932dba1d4` |
+| 3 | `theorem` | [twoSquared_logScale](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerArithmeticPackingCoordinateControls.lean/declarations/twosquared-logscale.md) | 22 | `result-track:56da0aad2a04e432e2931bc25297378ed28eb288d8b5ff56823732c8ea9908d1` |
+| 4 | `theorem` | [twoSquared_mangoldtScale](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerArithmeticPackingCoordinateControls.lean/declarations/twosquared-mangoldtscale.md) | 28 | `result-track:013f8121425cf024dc6e9589c8f4d26382f24f4cda5750112f7bab0dad8fa7dd` |
+| 5 | `theorem` | [twoSquared_natValue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerArithmeticPackingCoordinateControls.lean/declarations/twosquared-natvalue.md) | 33 | `result-track:e40818ae6fb55b46721dddfa99839d6a6951d99474c972ac5bdf2a021c6c4393` |
+| 6 | `theorem` | [four_is_primePowerEventValue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerArithmeticPackingCoordinateControls.lean/declarations/four-is-primepowereventvalue.md) | 38 | `result-track:facdf28c0bd8f09aa165fe7a5c97f7d12b220cb17814004cf252d01c8046a9a1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

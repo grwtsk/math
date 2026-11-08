@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SyntaxNamespacedLatexFragment.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SyntaxNamespacedLatexFragment.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SyntaxNamespacedLatexFragment.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SyntaxNamespacedLatexFragment.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [LatexFragment](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SyntaxNamespacedLatexFragment.lean/declarations/latexfragment.md) | 26 | `declaration-track:14d12f51705aee5fe5b62151f2f58c251e597fc95d6de503745334f9c3c0669e` |
-| 2 | `structure` | [LatexDocument](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SyntaxNamespacedLatexFragment.lean/declarations/latexdocument.md) | 29 | `declaration-track:6b41530bc60bdda1fe9633811ad1986f82c7b2382c6ff7a6209895e153b084b9` |
+| 1 | `structure` | [LatexFragment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SyntaxNamespacedLatexFragment.lean/declarations/latexfragment.md) | 26 | `declaration-track:14d12f51705aee5fe5b62151f2f58c251e597fc95d6de503745334f9c3c0669e` |
+| 2 | `structure` | [LatexDocument](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SyntaxNamespacedLatexFragment.lean/declarations/latexdocument.md) | 29 | `declaration-track:6b41530bc60bdda1fe9633811ad1986f82c7b2382c6ff7a6209895e153b084b9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

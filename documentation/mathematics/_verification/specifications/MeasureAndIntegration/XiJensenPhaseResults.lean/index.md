@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/XiJensenPhaseResults.lean/index.md) · [Full source](../../../../MeasureAndIntegration/XiJensenPhaseResults.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/XiJensenPhaseResults.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/XiJensenPhaseResults.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,16 +59,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [sum_even_odd](../../../../MeasureAndIntegration/XiJensenPhaseResults.lean/declarations/sum-even-odd.md) | 19 | `result-track:1bdfc85290e888689b915656cc484be52ee482b95a1b84847867c3b6222e9371` |
-| 2 | `theorem` | [phase_binomial](../../../../MeasureAndIntegration/XiJensenPhaseResults.lean/declarations/phase-binomial.md) | 31 | `result-track:c7b5a6d9a8a832da67d9b5490f8ecdcc4f13a440aff40bc105cfcd12a91b338a` |
-| 3 | `lemma` | [phase_argument](../../../../MeasureAndIntegration/XiJensenPhaseResults.lean/declarations/phase-argument.md) | 50 | `result-track:ef6a58fc8c62605cb4e0836cae097724f4f94729005eb7f921e6866406696da7` |
-| 4 | `theorem` | [phase_monomial_integrable](../../../../MeasureAndIntegration/XiJensenPhaseResults.lean/declarations/phase-monomial-integrable.md) | 56 | `result-track:5f9481a069be50b596d26eb788e140e68347e643553e1f350f5f569b49ead94b` |
-| 5 | `theorem` | [phase_integrable](../../../../MeasureAndIntegration/XiJensenPhaseResults.lean/declarations/phase-integrable.md) | 69 | `result-track:8c97f7e1a06bafbe75f58b525a23376fc8c4402a8efbdaa221ad95ee601b54f1` |
-| 6 | `theorem` | [integral_phase_monomial](../../../../MeasureAndIntegration/XiJensenPhaseResults.lean/declarations/integral-phase-monomial.md) | 83 | `result-track:d4cb006e30315fc17d29d0cbacb43208c224a4a4000ddcd12b77717474827537` |
-| 7 | `theorem` | [weighted_coefficient_eq_moment](../../../../MeasureAndIntegration/XiJensenPhaseResults.lean/declarations/weighted-coefficient-eq-moment.md) | 98 | `result-track:0c45a5fe437c9a9d4d2c989a406c76b203f14028e80ca4ced8d61494f4188d67` |
-| 8 | `lemma` | [phase_even_power](../../../../MeasureAndIntegration/XiJensenPhaseResults.lean/declarations/phase-even-power.md) | 107 | `result-track:932116b6787b19eca083bae555b51834341b38cee94a8d11529b1b33ae71c0b4` |
-| 9 | `theorem` | [weighted_coefficient_phase](../../../../MeasureAndIntegration/XiJensenPhaseResults.lean/declarations/weighted-coefficient-phase.md) | 114 | `result-track:f3e643e02611a6629c19b24a7e17ce8fa7eb6e0a4a859e612e46e639bfe59c29` |
-| 10 | `theorem` | [jensenSection_eq_phase_integral](../../../../MeasureAndIntegration/XiJensenPhaseResults.lean/declarations/jensensection-eq-phase-integral.md) | 123 | `result-track:53eb01ce103eb04c7919afbddd28b848059058e04dd2d0aca014b234dd228d61` |
+| 1 | `lemma` | [sum_even_odd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/XiJensenPhaseResults.lean/declarations/sum-even-odd.md) | 19 | `result-track:1bdfc85290e888689b915656cc484be52ee482b95a1b84847867c3b6222e9371` |
+| 2 | `theorem` | [phase_binomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/XiJensenPhaseResults.lean/declarations/phase-binomial.md) | 31 | `result-track:c7b5a6d9a8a832da67d9b5490f8ecdcc4f13a440aff40bc105cfcd12a91b338a` |
+| 3 | `lemma` | [phase_argument](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/XiJensenPhaseResults.lean/declarations/phase-argument.md) | 50 | `result-track:ef6a58fc8c62605cb4e0836cae097724f4f94729005eb7f921e6866406696da7` |
+| 4 | `theorem` | [phase_monomial_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/XiJensenPhaseResults.lean/declarations/phase-monomial-integrable.md) | 56 | `result-track:5f9481a069be50b596d26eb788e140e68347e643553e1f350f5f569b49ead94b` |
+| 5 | `theorem` | [phase_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/XiJensenPhaseResults.lean/declarations/phase-integrable.md) | 69 | `result-track:8c97f7e1a06bafbe75f58b525a23376fc8c4402a8efbdaa221ad95ee601b54f1` |
+| 6 | `theorem` | [integral_phase_monomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/XiJensenPhaseResults.lean/declarations/integral-phase-monomial.md) | 83 | `result-track:d4cb006e30315fc17d29d0cbacb43208c224a4a4000ddcd12b77717474827537` |
+| 7 | `theorem` | [weighted_coefficient_eq_moment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/XiJensenPhaseResults.lean/declarations/weighted-coefficient-eq-moment.md) | 98 | `result-track:0c45a5fe437c9a9d4d2c989a406c76b203f14028e80ca4ced8d61494f4188d67` |
+| 8 | `lemma` | [phase_even_power](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/XiJensenPhaseResults.lean/declarations/phase-even-power.md) | 107 | `result-track:932116b6787b19eca083bae555b51834341b38cee94a8d11529b1b33ae71c0b4` |
+| 9 | `theorem` | [weighted_coefficient_phase](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/XiJensenPhaseResults.lean/declarations/weighted-coefficient-phase.md) | 114 | `result-track:f3e643e02611a6629c19b24a7e17ce8fa7eb6e0a4a859e612e46e639bfe59c29` |
+| 10 | `theorem` | [jensenSection_eq_phase_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/XiJensenPhaseResults.lean/declarations/jensensection-eq-phase-integral.md) | 123 | `result-track:53eb01ce103eb04c7919afbddd28b848059058e04dd2d0aca014b234dd228d61` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

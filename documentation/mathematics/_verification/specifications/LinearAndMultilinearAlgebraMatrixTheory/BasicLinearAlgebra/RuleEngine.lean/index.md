@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RuleEngine.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RuleEngine.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RuleEngine.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RuleEngine.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [BuiltinRuleId](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RuleEngine.lean/declarations/builtinruleid.md) | 20 | `declaration-track:63869be83ef315ff03720ba03dcd4512f9c5c912ca9a8c24337abf24956fa4f4` |
-| 2 | `structure` | [RuleEngine](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RuleEngine.lean/declarations/ruleengine.md) | 26 | `declaration-track:0e4c44dcc76edd7bc0bc00a14845796018af736fa2d65f2fcb716d147e78e885` |
-| 3 | `def` | [copyRuleEngine](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RuleEngine.lean/declarations/copyruleengine.md) | 33 | `declaration-track:851d4123c363f77ab2f87bb1643c104e7283d797e2bb8a647ae8a74e24fa59ed` |
-| 4 | `structure` | [LayerRecipe](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RuleEngine.lean/declarations/layerrecipe.md) | 40 | `declaration-track:51279b7b9a18e542336d68f6bc3124d7ae61d4c69db27639ee24acf98c21ffbe` |
-| 5 | `def` | [realizeLayerRecipe?](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RuleEngine.lean/declarations/realizelayerrecipe.md) | 44 | `declaration-track:736a98781f28c1a50a111b68a33437f6cd33dbe73aec319bbb1ce65dead9219b` |
-| 6 | `def` | [realizeLayerRecipeAsStep?](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RuleEngine.lean/declarations/realizelayerrecipeasstep.md) | 54 | `declaration-track:c0707ba0d345355c273341b900ca428375029d7517f356e987df0cbd5aa16b36` |
-| 7 | `theorem` | [realize_copy_recipe](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RuleEngine.lean/declarations/realize-copy-recipe.md) | 71 | `result-track:2a984173eb131b8ac255e4e1747f1be6fa9dc461b47c58360f354f0919fd45ad` |
-| 8 | `theorem` | [copyRuleEngine_realize](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RuleEngine.lean/declarations/copyruleengine-realize.md) | 81 | `result-track:38ca12c4d7fdcd4437039b76b68d0fa5bae4e48c8dadb157971f3250f424eda3` |
+| 1 | `inductive` | [BuiltinRuleId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RuleEngine.lean/declarations/builtinruleid.md) | 20 | `declaration-track:63869be83ef315ff03720ba03dcd4512f9c5c912ca9a8c24337abf24956fa4f4` |
+| 2 | `structure` | [RuleEngine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RuleEngine.lean/declarations/ruleengine.md) | 26 | `declaration-track:0e4c44dcc76edd7bc0bc00a14845796018af736fa2d65f2fcb716d147e78e885` |
+| 3 | `def` | [copyRuleEngine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RuleEngine.lean/declarations/copyruleengine.md) | 33 | `declaration-track:851d4123c363f77ab2f87bb1643c104e7283d797e2bb8a647ae8a74e24fa59ed` |
+| 4 | `structure` | [LayerRecipe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RuleEngine.lean/declarations/layerrecipe.md) | 40 | `declaration-track:51279b7b9a18e542336d68f6bc3124d7ae61d4c69db27639ee24acf98c21ffbe` |
+| 5 | `def` | [realizeLayerRecipe?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RuleEngine.lean/declarations/realizelayerrecipe.md) | 44 | `declaration-track:736a98781f28c1a50a111b68a33437f6cd33dbe73aec319bbb1ce65dead9219b` |
+| 6 | `def` | [realizeLayerRecipeAsStep?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RuleEngine.lean/declarations/realizelayerrecipeasstep.md) | 54 | `declaration-track:c0707ba0d345355c273341b900ca428375029d7517f356e987df0cbd5aa16b36` |
+| 7 | `theorem` | [realize_copy_recipe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RuleEngine.lean/declarations/realize-copy-recipe.md) | 71 | `result-track:2a984173eb131b8ac255e4e1747f1be6fa9dc461b47c58360f354f0919fd45ad` |
+| 8 | `theorem` | [copyRuleEngine_realize](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RuleEngine.lean/declarations/copyruleengine-realize.md) | 81 | `result-track:38ca12c4d7fdcd4437039b76b68d0fa5bae4e48c8dadb157971f3250f424eda3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

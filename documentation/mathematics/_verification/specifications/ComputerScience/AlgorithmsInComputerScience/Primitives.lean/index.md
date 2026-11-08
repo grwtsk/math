@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Primitives.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Primitives.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Primitives.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Primitives.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [allPrimitives](../../../../../ComputerScience/AlgorithmsInComputerScience/Primitives.lean/declarations/allprimitives.md) | 8 | `declaration-track:c0dc876a758ba1fe0710fd17a49605f411ae4ace56ed7e1e43212e49d43acb53` |
-| 2 | `def` | [allPrimitiveResidues](../../../../../ComputerScience/AlgorithmsInComputerScience/Primitives.lean/declarations/allprimitiveresidues.md) | 1531 | `declaration-track:d3f3bf238748c26979fa908ac9534390cb51c86655165ca24a1d1349990ca957` |
-| 3 | `theorem` | [allPrimitives_count](../../../../../ComputerScience/AlgorithmsInComputerScience/Primitives.lean/declarations/allprimitives-count.md) | 1534 | `result-track:1cddd48988216fbb0d6eb38320877f85365507aca044ce3a173ce9d5aa05f6cd` |
-| 4 | `theorem` | [allPrimitiveResidues_count](../../../../../ComputerScience/AlgorithmsInComputerScience/Primitives.lean/declarations/allprimitiveresidues-count.md) | 1537 | `result-track:d96c67d0cd7bda973e30e1711443e40a39bdade3b36aa2398b41438bf0b0ab50` |
+| 1 | `def` | [allPrimitives](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Primitives.lean/declarations/allprimitives.md) | 8 | `declaration-track:c0dc876a758ba1fe0710fd17a49605f411ae4ace56ed7e1e43212e49d43acb53` |
+| 2 | `def` | [allPrimitiveResidues](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Primitives.lean/declarations/allprimitiveresidues.md) | 1531 | `declaration-track:d3f3bf238748c26979fa908ac9534390cb51c86655165ca24a1d1349990ca957` |
+| 3 | `theorem` | [allPrimitives_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Primitives.lean/declarations/allprimitives-count.md) | 1534 | `result-track:1cddd48988216fbb0d6eb38320877f85365507aca044ce3a173ce9d5aa05f6cd` |
+| 4 | `theorem` | [allPrimitiveResidues_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Primitives.lean/declarations/allprimitiveresidues-count.md) | 1537 | `result-track:d96c67d0cd7bda973e30e1711443e40a39bdade3b36aa2398b41438bf0b0ab50` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

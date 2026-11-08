@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Geometry/Primitive.lean/index.md) · [Full source](../../../../Geometry/Primitive.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/Primitive.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/Primitive.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Segment](../../../../Geometry/Primitive.lean/declarations/segment.md) | 15 | `declaration-track:6c5df71eb09a70de38c33e1e281d3b5e16742cee2de1eb469af99f3ac4ef6a5d` |
-| 2 | `def` | [reverse](../../../../Geometry/Primitive.lean/declarations/reverse.md) | 22 | `declaration-track:7c86f482e520e5e4fab51b5ba986d8f6e504d2757e86eacd189b68fe84fea409` |
-| 3 | `theorem` | [reverse_start](../../../../Geometry/Primitive.lean/declarations/reverse-start.md) | 26 | `result-track:b5c7bcd5688b5b0b8dcad6ae1d70c088578079873161163051dd6743c59c2534` |
-| 4 | `theorem` | [reverse_finish](../../../../Geometry/Primitive.lean/declarations/reverse-finish.md) | 29 | `result-track:13b0939a6c2ed325ca1f40a9860dd3d5a706c8befe6f1ba1855e1af2cd48656e` |
-| 5 | `theorem` | [reverse_reverse](../../../../Geometry/Primitive.lean/declarations/reverse-reverse.md) | 32 | `result-track:07faf28d87b463ba916017ac1897e6e99e47dc801c87a181c99a2f063dccc17d` |
-| 6 | `structure` | [Triangle](../../../../Geometry/Primitive.lean/declarations/triangle.md) | 40 | `declaration-track:68929cd16c3c6c62acb7f48e94b690b3cf2ba63c8f19b3ab4b004e8a73842f99` |
-| 7 | `def` | [firstSecond](../../../../Geometry/Primitive.lean/declarations/firstsecond.md) | 47 | `declaration-track:e4e34d113d10c62c359250d10a30c095e4296d32c342fcb3888802160b586112` |
-| 8 | `def` | [firstThird](../../../../Geometry/Primitive.lean/declarations/firstthird.md) | 50 | `declaration-track:479579455a0b3e432d05bfc319160c11f0c7a8b4d84a830f51d8cb73cff07bda` |
-| 9 | `def` | [secondThird](../../../../Geometry/Primitive.lean/declarations/secondthird.md) | 53 | `declaration-track:7a026327355a8a875fe1084ed6d92aa9771df3de6e7e7237906b1347ef08a9e0` |
-| 10 | `structure` | [Angle](../../../../Geometry/Primitive.lean/declarations/angle.md) | 59 | `declaration-track:0a4a0d1a68cbf56555de8da873e77a7edd7984521ab91f301b525a1fc8703d2b` |
+| 1 | `structure` | [Segment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/Primitive.lean/declarations/segment.md) | 15 | `declaration-track:6c5df71eb09a70de38c33e1e281d3b5e16742cee2de1eb469af99f3ac4ef6a5d` |
+| 2 | `def` | [reverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/Primitive.lean/declarations/reverse.md) | 22 | `declaration-track:7c86f482e520e5e4fab51b5ba986d8f6e504d2757e86eacd189b68fe84fea409` |
+| 3 | `theorem` | [reverse_start](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/Primitive.lean/declarations/reverse-start.md) | 26 | `result-track:b5c7bcd5688b5b0b8dcad6ae1d70c088578079873161163051dd6743c59c2534` |
+| 4 | `theorem` | [reverse_finish](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/Primitive.lean/declarations/reverse-finish.md) | 29 | `result-track:13b0939a6c2ed325ca1f40a9860dd3d5a706c8befe6f1ba1855e1af2cd48656e` |
+| 5 | `theorem` | [reverse_reverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/Primitive.lean/declarations/reverse-reverse.md) | 32 | `result-track:07faf28d87b463ba916017ac1897e6e99e47dc801c87a181c99a2f063dccc17d` |
+| 6 | `structure` | [Triangle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/Primitive.lean/declarations/triangle.md) | 40 | `declaration-track:68929cd16c3c6c62acb7f48e94b690b3cf2ba63c8f19b3ab4b004e8a73842f99` |
+| 7 | `def` | [firstSecond](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/Primitive.lean/declarations/firstsecond.md) | 47 | `declaration-track:e4e34d113d10c62c359250d10a30c095e4296d32c342fcb3888802160b586112` |
+| 8 | `def` | [firstThird](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/Primitive.lean/declarations/firstthird.md) | 50 | `declaration-track:479579455a0b3e432d05bfc319160c11f0c7a8b4d84a830f51d8cb73cff07bda` |
+| 9 | `def` | [secondThird](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/Primitive.lean/declarations/secondthird.md) | 53 | `declaration-track:7a026327355a8a875fe1084ed6d92aa9771df3de6e7e7237906b1347ef08a9e0` |
+| 10 | `structure` | [Angle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/Primitive.lean/declarations/angle.md) | 59 | `declaration-track:0a4a0d1a68cbf56555de8da873e77a7edd7984521ab91f301b525a1fc8703d2b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

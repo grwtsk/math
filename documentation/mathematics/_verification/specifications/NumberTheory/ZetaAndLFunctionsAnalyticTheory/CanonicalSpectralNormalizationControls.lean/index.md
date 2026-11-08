@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSpectralNormalizationControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSpectralNormalizationControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSpectralNormalizationControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSpectralNormalizationControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSpectralNormalization`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CanonicalSpectralNormalization.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSpectralNormalization`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CanonicalSpectralNormalization.lean/index.md) — import line 5; pinned internal source present.
 - `Mathlib.Tactic` — import line 6; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [stage_zero_normalized_nonnegative](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSpectralNormalizationControls.lean/declarations/stage-zero-normalized-nonnegative.md) | 18 | `result-track:0e3ee32ea23d0ce218cb252c62ed6e7897003a71feeff83ecf35a83935ba4360` |
-| 2 | `theorem` | [stage_zero_radius_positive](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSpectralNormalizationControls.lean/declarations/stage-zero-radius-positive.md) | 23 | `result-track:20e85a3a9aa6abfe76f6cb616a886c2818543134fb88d5220a4b2615304d7faa` |
-| 3 | `theorem` | [no_normalized_comparison_at_unit_displacement](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSpectralNormalizationControls.lean/declarations/no-normalized-comparison-at-unit-displacement.md) | 29 | `result-track:a8794cc3807e0eebb0a8a4313a57d123abfd2c3292af26ef8f3bdf17f803844c` |
-| 4 | `theorem` | [raw_comparison_forces_finite_limit](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSpectralNormalizationControls.lean/declarations/raw-comparison-forces-finite-limit.md) | 36 | `result-track:b859eee95701fa1d2e0dbc6f02bffaa9bb83e2761494e8373c5b534767403aad` |
-| 5 | `theorem` | [normalized_stage_source_fixed](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSpectralNormalizationControls.lean/declarations/normalized-stage-source-fixed.md) | 45 | `result-track:c884259e7928da0d4231d8817ed30c2c4340605bd0b38034197f5f65422f0dc5` |
-| 6 | `theorem` | [triangle_remains_three](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSpectralNormalizationControls.lean/declarations/triangle-remains-three.md) | 51 | `result-track:b9ba545957485874aa66c67555d827416959ab83b00586da17afc03a5796eb28` |
+| 1 | `theorem` | [stage_zero_normalized_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSpectralNormalizationControls.lean/declarations/stage-zero-normalized-nonnegative.md) | 18 | `result-track:0e3ee32ea23d0ce218cb252c62ed6e7897003a71feeff83ecf35a83935ba4360` |
+| 2 | `theorem` | [stage_zero_radius_positive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSpectralNormalizationControls.lean/declarations/stage-zero-radius-positive.md) | 23 | `result-track:20e85a3a9aa6abfe76f6cb616a886c2818543134fb88d5220a4b2615304d7faa` |
+| 3 | `theorem` | [no_normalized_comparison_at_unit_displacement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSpectralNormalizationControls.lean/declarations/no-normalized-comparison-at-unit-displacement.md) | 29 | `result-track:a8794cc3807e0eebb0a8a4313a57d123abfd2c3292af26ef8f3bdf17f803844c` |
+| 4 | `theorem` | [raw_comparison_forces_finite_limit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSpectralNormalizationControls.lean/declarations/raw-comparison-forces-finite-limit.md) | 36 | `result-track:b859eee95701fa1d2e0dbc6f02bffaa9bb83e2761494e8373c5b534767403aad` |
+| 5 | `theorem` | [normalized_stage_source_fixed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSpectralNormalizationControls.lean/declarations/normalized-stage-source-fixed.md) | 45 | `result-track:c884259e7928da0d4231d8817ed30c2c4340605bd0b38034197f5f65422f0dc5` |
+| 6 | `theorem` | [triangle_remains_three](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSpectralNormalizationControls.lean/declarations/triangle-remains-three.md) | 51 | `result-track:b9ba545957485874aa66c67555d827416959ab83b00586da17afc03a5796eb28` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

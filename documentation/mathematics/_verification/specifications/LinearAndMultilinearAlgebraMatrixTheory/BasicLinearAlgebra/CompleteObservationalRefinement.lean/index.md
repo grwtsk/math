@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CompleteObservationalRefinement.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CompleteObservationalRefinement.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CompleteObservationalRefinement.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CompleteObservationalRefinement.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,8 +47,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `BitMatrix.Geometry.GlobalProjection` — import line 19; external provider; requires a separately pinned dependency.
-- [Complete Surgery And Action Certificates](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CompleteSurgeryAndActionCertificates.lean/index.md) — import line 21; pinned internal source present.
-- [Row Major Reification](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorReification.lean/index.md) — import line 22; pinned internal source present.
+- [Complete Surgery And Action Certificates](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CompleteSurgeryAndActionCertificates.lean/index.md) — import line 21; pinned internal source present.
+- [Row Major Reification](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RowMajorReification.lean/index.md) — import line 22; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [BitMatrix.Surgery.ArrayBackedRefinement](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CompleteObservationalRefinement.lean/declarations/bitmatrix-surgery-arraybackedrefinement.md) | 40 | `declaration-track:ee38ac76707d810b23b7e664ac8f0bf3feab04883d71a870eecbf77b545decb9` |
-| 2 | `def` | [replace](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CompleteObservationalRefinement.lean/declarations/replace.md) | 55 | `declaration-track:fde98eece1c129eaa03ddd19f9b9a34d579f67a7a54eae7bb307c300c45a096f` |
-| 3 | `theorem` | [replace_result_refines](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CompleteObservationalRefinement.lean/declarations/replace-result-refines.md) | 68 | `result-track:1cbf4d8ca88d1148bd7461c229f9bc004172fd975d5c5d89ceeca9bd56a748cf` |
+| 1 | `structure` | [BitMatrix.Surgery.ArrayBackedRefinement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CompleteObservationalRefinement.lean/declarations/bitmatrix-surgery-arraybackedrefinement.md) | 40 | `declaration-track:ee38ac76707d810b23b7e664ac8f0bf3feab04883d71a870eecbf77b545decb9` |
+| 2 | `def` | [replace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CompleteObservationalRefinement.lean/declarations/replace.md) | 55 | `declaration-track:fde98eece1c129eaa03ddd19f9b9a34d579f67a7a54eae7bb307c300c45a096f` |
+| 3 | `theorem` | [replace_result_refines](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CompleteObservationalRefinement.lean/declarations/replace-result-refines.md) | 68 | `result-track:1cbf4d8ca88d1148bd7461c229f9bc004172fd975d5c5d89ceeca9bd56a748cf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

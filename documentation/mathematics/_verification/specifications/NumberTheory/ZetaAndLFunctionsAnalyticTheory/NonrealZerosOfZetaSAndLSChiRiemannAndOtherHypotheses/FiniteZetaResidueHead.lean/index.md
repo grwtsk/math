@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FiniteZetaResidueHead.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FiniteZetaResidueHead.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FiniteZetaResidueHead.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FiniteZetaResidueHead.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.PinnedZetaExplicitFormulaChannels`](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PinnedZetaExplicitFormulaChannels.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.PinnedZetaExplicitFormulaChannels`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PinnedZetaExplicitFormulaChannels.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [nontrivialZeroResidueHead](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FiniteZetaResidueHead.lean/declarations/nontrivialzeroresiduehead.md) | 33 | `declaration-track:d75d941f38fcc695569b02d341656a69e876cbf65154993eade088883f30f335` |
-| 2 | `def` | [zetaPoleResidueTerm](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FiniteZetaResidueHead.lean/declarations/zetapoleresidueterm.md) | 36 | `declaration-track:b9d87135ba6ffbd54b9bcd622c84d5e0d6660be5efae93d8341c504cf68a24ed` |
-| 3 | `def` | [knownFiniteZetaResidueHead](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FiniteZetaResidueHead.lean/declarations/knownfinitezetaresiduehead.md) | 39 | `declaration-track:e7c35f916453c7d1145733eda3851aaca96eb216b020be25fe039138304f5a00` |
-| 4 | `theorem` | [nontrivial_zero_weighted_local_residue](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FiniteZetaResidueHead.lean/declarations/nontrivial-zero-weighted-local-residue.md) | 42 | `result-track:bd6033700b29cca5d2e30999fc39ace3b943ca096a2c067aed2e21d5b798983e` |
-| 5 | `theorem` | [pole_weighted_local_residue](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FiniteZetaResidueHead.lean/declarations/pole-weighted-local-residue.md) | 53 | `result-track:499f69deee92235ab7b9f75a83cfefd63763bbdcd7fb1bc4c201f8702c9655cd` |
-| 6 | `theorem` | [nontrivialZeroResidueHead_add](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FiniteZetaResidueHead.lean/declarations/nontrivialzeroresiduehead-add.md) | 65 | `result-track:4effc96a94eb221983dc8827ab0db38cf0a4964fdfac6d806c30ab93c34026cb` |
+| 1 | `def` | [nontrivialZeroResidueHead](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FiniteZetaResidueHead.lean/declarations/nontrivialzeroresiduehead.md) | 33 | `declaration-track:d75d941f38fcc695569b02d341656a69e876cbf65154993eade088883f30f335` |
+| 2 | `def` | [zetaPoleResidueTerm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FiniteZetaResidueHead.lean/declarations/zetapoleresidueterm.md) | 36 | `declaration-track:b9d87135ba6ffbd54b9bcd622c84d5e0d6660be5efae93d8341c504cf68a24ed` |
+| 3 | `def` | [knownFiniteZetaResidueHead](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FiniteZetaResidueHead.lean/declarations/knownfinitezetaresiduehead.md) | 39 | `declaration-track:e7c35f916453c7d1145733eda3851aaca96eb216b020be25fe039138304f5a00` |
+| 4 | `theorem` | [nontrivial_zero_weighted_local_residue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FiniteZetaResidueHead.lean/declarations/nontrivial-zero-weighted-local-residue.md) | 42 | `result-track:bd6033700b29cca5d2e30999fc39ace3b943ca096a2c067aed2e21d5b798983e` |
+| 5 | `theorem` | [pole_weighted_local_residue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FiniteZetaResidueHead.lean/declarations/pole-weighted-local-residue.md) | 53 | `result-track:499f69deee92235ab7b9f75a83cfefd63763bbdcd7fb1bc4c201f8702c9655cd` |
+| 6 | `theorem` | [nontrivialZeroResidueHead_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FiniteZetaResidueHead.lean/declarations/nontrivialzeroresiduehead-add.md) | 65 | `result-track:4effc96a94eb221983dc8827ab0db38cf0a4964fdfac6d806c30ab93c34026cb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

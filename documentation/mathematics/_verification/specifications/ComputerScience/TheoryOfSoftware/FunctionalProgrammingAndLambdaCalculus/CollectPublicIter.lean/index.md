@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CollectPublicIter.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CollectPublicIter.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CollectPublicIter.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CollectPublicIter.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Iter.Equiv.toListRev_eq](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CollectPublicIter.lean/declarations/iter-equiv-tolistrev-eq.md) | 17 | `result-track:eb668f3735e21c8d51818b20fe9ad7fa3ec4e32bfbf83162f8586940e65bb6a1` |
-| 2 | `theorem` | [Iter.Equiv.toList_eq](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CollectPublicIter.lean/declarations/iter-equiv-tolist-eq.md) | 23 | `result-track:a280107ba9ceb8e5cc91e877ddd2b2b12dc74648f32868f0f569aca913194395` |
-| 3 | `theorem` | [Iter.Equiv.toArray_eq](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CollectPublicIter.lean/declarations/iter-equiv-toarray-eq.md) | 29 | `result-track:224c3d5c373fc1d78cad4552756f3348667b3b8d5f81582d838c3e5b7cd81639` |
+| 1 | `theorem` | [Iter.Equiv.toListRev_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CollectPublicIter.lean/declarations/iter-equiv-tolistrev-eq.md) | 17 | `result-track:eb668f3735e21c8d51818b20fe9ad7fa3ec4e32bfbf83162f8586940e65bb6a1` |
+| 2 | `theorem` | [Iter.Equiv.toList_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CollectPublicIter.lean/declarations/iter-equiv-tolist-eq.md) | 23 | `result-track:a280107ba9ceb8e5cc91e877ddd2b2b12dc74648f32868f0f569aca913194395` |
+| 3 | `theorem` | [Iter.Equiv.toArray_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CollectPublicIter.lean/declarations/iter-equiv-toarray-eq.md) | 29 | `result-track:224c3d5c373fc1d78cad4552756f3348667b3b8d5f81582d838c3e5b7cd81639` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

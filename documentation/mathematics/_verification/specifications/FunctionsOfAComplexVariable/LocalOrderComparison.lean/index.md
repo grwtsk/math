@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/LocalOrderComparison.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/LocalOrderComparison.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/LocalOrderComparison.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/LocalOrderComparison.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.LogarithmicOrderDetection`](../../../../GeneralTopology/LogarithmicOrderDetection.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.LogarithmicOrderDetection`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LogarithmicOrderDetection.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [local_factorization_order_unique](../../../../FunctionsOfAComplexVariable/LocalOrderComparison.lean/declarations/local-factorization-order-unique.md) | 10 | `result-track:da93bb2275ce12fcaf095d7a91639febac962e1231d97884da7901af495c8735` |
-| 2 | `theorem` | [local_order_eq_of_germ_eq](../../../../FunctionsOfAComplexVariable/LocalOrderComparison.lean/declarations/local-order-eq-of-germ-eq.md) | 21 | `result-track:9f63c846e3888f3a1a1e5299df33d3989e23dce7b8e64bd3263987dee665149e` |
+| 1 | `theorem` | [local_factorization_order_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/LocalOrderComparison.lean/declarations/local-factorization-order-unique.md) | 10 | `result-track:da93bb2275ce12fcaf095d7a91639febac962e1231d97884da7901af495c8735` |
+| 2 | `theorem` | [local_order_eq_of_germ_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/LocalOrderComparison.lean/declarations/local-order-eq-of-germ-eq.md) | 21 | `result-track:9f63c846e3888f3a1a1e5299df33d3989e23dce7b8e64bd3263987dee665149e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

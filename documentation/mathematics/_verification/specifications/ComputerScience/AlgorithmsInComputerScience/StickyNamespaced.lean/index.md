@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/StickyNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/StickyNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StickyNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StickyNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [StickyKakeyaTheoremInput](../../../../../ComputerScience/AlgorithmsInComputerScience/StickyNamespaced.lean/declarations/stickykakeyatheoreminput.md) | 26 | `declaration-track:2e1eed4e99e84503cb19ebfd742dd5662ea3ae1a82f8df67f6090ae8a10ab10d` |
-| 2 | `def` | [StickyKakeyaTheoremInput.usableForMajorProof](../../../../../ComputerScience/AlgorithmsInComputerScience/StickyNamespaced.lean/declarations/stickykakeyatheoreminput-usableformajorproof.md) | 33 | `declaration-track:1404816a854d9574eb3bd6f6a5bd712c5f905930ed54eb7dde259a33b3ffa3fc` |
-| 3 | `theorem` | [StickyKakeyaTheoremInput.admissibleInput_of_fields](../../../../../ComputerScience/AlgorithmsInComputerScience/StickyNamespaced.lean/declarations/stickykakeyatheoreminput-admissibleinput-of-fields.md) | 39 | `result-track:c442723d845c602d76d73873816b379746fe9e2c442b0f69e9f35e717cf9de65` |
+| 1 | `structure` | [StickyKakeyaTheoremInput](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StickyNamespaced.lean/declarations/stickykakeyatheoreminput.md) | 26 | `declaration-track:2e1eed4e99e84503cb19ebfd742dd5662ea3ae1a82f8df67f6090ae8a10ab10d` |
+| 2 | `def` | [StickyKakeyaTheoremInput.usableForMajorProof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StickyNamespaced.lean/declarations/stickykakeyatheoreminput-usableformajorproof.md) | 33 | `declaration-track:1404816a854d9574eb3bd6f6a5bd712c5f905930ed54eb7dde259a33b3ffa3fc` |
+| 3 | `theorem` | [StickyKakeyaTheoremInput.admissibleInput_of_fields](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StickyNamespaced.lean/declarations/stickykakeyatheoreminput-admissibleinput-of-fields.md) | 39 | `result-track:c442723d845c602d76d73873816b379746fe9e2c442b0f69e9f35e717cf9de65` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

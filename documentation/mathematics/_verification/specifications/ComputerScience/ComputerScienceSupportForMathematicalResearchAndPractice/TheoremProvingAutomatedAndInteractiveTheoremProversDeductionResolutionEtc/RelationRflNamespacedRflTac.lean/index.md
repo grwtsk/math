@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RelationRflNamespacedRflTac.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RelationRflNamespacedRflTac.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RelationRflNamespacedRflTac.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RelationRflNamespacedRflTac.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [rflTac](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RelationRflNamespacedRflTac.lean/declarations/rfltac.md) | 33 | `declaration-track:25508cd0f1cfcfca1a53673089822dc277a7832487ab5a2528ca73876e67fce5` |
-| 2 | `def` | [Relation Rfl Namespaced Rfl Tac](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RelationRflNamespacedRflTac.lean/declarations/root-grwtsk-foundationslogicandtypetheory-formallibraryengineering-rflta.md) | 39 | `declaration-track:40d3a861eecaf682b754c656cc9eea047b94d1370036dd7757b11fc37cd2ca3e` |
+| 1 | `def` | [rflTac](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RelationRflNamespacedRflTac.lean/declarations/rfltac.md) | 33 | `declaration-track:25508cd0f1cfcfca1a53673089822dc277a7832487ab5a2528ca73876e67fce5` |
+| 2 | `def` | [Relation Rfl Namespaced Rfl Tac](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/RelationRflNamespacedRflTac.lean/declarations/root-grwtsk-foundationslogicandtypetheory-formallibraryengineering-rflta.md) | 39 | `declaration-track:40d3a861eecaf682b754c656cc9eea047b94d1370036dd7757b11fc37cd2ca3e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

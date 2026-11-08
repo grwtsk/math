@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../RealFunctions/InequalitiesInRealAnalysis/TwoHeightEnclosures.lean/index.md) · [Full source](../../../../../RealFunctions/InequalitiesInRealAnalysis/TwoHeightEnclosures.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/TwoHeightEnclosures.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/TwoHeightEnclosures.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `Mathlib` — import line 9; external provider; requires a separately pinned dependency.
-- [`GRWTSK.Analysis.Inequalities.ResidualEnclosure`](../../../../../RealFunctions/InequalitiesInRealAnalysis/ResidualEnclosure.lean/index.md) — import line 10; pinned internal source present.
+- [`GRWTSK.Analysis.Inequalities.ResidualEnclosure`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/ResidualEnclosure.lean/index.md) — import line 10; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [from_interval_endpoints](../../../../../RealFunctions/InequalitiesInRealAnalysis/TwoHeightEnclosures.lean/declarations/from-interval-endpoints.md) | 19 | `result-track:d8c7b891bf158f4b755b92ba2b73d126f7ef6d961fa7581a422bd82c9fb4850e` |
-| 2 | `theorem` | [lower_endpoint_is_not_an_upper_bound](../../../../../RealFunctions/InequalitiesInRealAnalysis/TwoHeightEnclosures.lean/declarations/lower-endpoint-is-not-an-upper-bound.md) | 29 | `result-track:5258b73d8652e06680a55e69983ce51ace06a6250d03b753002bbfcf3ecfcf21` |
-| 3 | `theorem` | [silent_green_endpoint_has_nonzero_augmented_mass](../../../../../RealFunctions/InequalitiesInRealAnalysis/TwoHeightEnclosures.lean/declarations/silent-green-endpoint-has-nonzero-augmented-mass.md) | 33 | `result-track:9f75eecf65e33a6bee39114cab404cdaeffa34239553eb8a478ee7414afc34e5` |
+| 1 | `theorem` | [from_interval_endpoints](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/TwoHeightEnclosures.lean/declarations/from-interval-endpoints.md) | 19 | `result-track:d8c7b891bf158f4b755b92ba2b73d126f7ef6d961fa7581a422bd82c9fb4850e` |
+| 2 | `theorem` | [lower_endpoint_is_not_an_upper_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/TwoHeightEnclosures.lean/declarations/lower-endpoint-is-not-an-upper-bound.md) | 29 | `result-track:5258b73d8652e06680a55e69983ce51ace06a6250d03b753002bbfcf3ecfcf21` |
+| 3 | `theorem` | [silent_green_endpoint_has_nonzero_augmented_mass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/TwoHeightEnclosures.lean/declarations/silent-green-endpoint-has-nonzero-augmented-mass.md) | 33 | `result-track:9f75eecf65e33a6bee39114cab404cdaeffa34239553eb8a478ee7414afc34e5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

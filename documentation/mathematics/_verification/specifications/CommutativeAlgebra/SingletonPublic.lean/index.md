@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/SingletonPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/SingletonPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SingletonPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SingletonPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [RingHom.adjoinAlgebraMap](../../../../CommutativeAlgebra/SingletonPublic.lean/declarations/ringhom-adjoinalgebramap.md) | 31 | `declaration-track:da5b40ebb2c04843ab9f36b3af8203e8319a20c1b35a6f35b3a3d6869f229648` |
-| 2 | `theorem` | [RingHom.adjoinAlgebraMap_apply](../../../../CommutativeAlgebra/SingletonPublic.lean/declarations/ringhom-adjoinalgebramap-apply.md) | 39 | `result-track:5a3af3dc4b410ba41c68d2e9a4afb8840a0e454c39024fe8ee94e7532bd0d958` |
-| 3 | `theorem` | [RingHom.adjoinAlgebraMap_surjective](../../../../CommutativeAlgebra/SingletonPublic.lean/declarations/ringhom-adjoinalgebramap-surjective.md) | 42 | `result-track:44f80297e88ff175f2ce2c213a42be997d0b641cfbc47a0b245654922b093d18` |
-| 4 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/SingletonPublic.lean/declarations/instance-source-edition-2.md) | 48 | `declaration-track:ecc48dbfa8fe256239aaad83a8cb95cec7d57d49f5ab8cab9c7cb0fc1eb472cc` |
-| 5 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/SingletonPublic.lean/declarations/instance.md) | 51 | `declaration-track:5207c564c2dbc5a673fb57b0413a12f57d9bfbf6bc2acfc1cb85256d2ace80ee` |
-| 6 | `def` | [RingHom.adjoinAlgebraMapEquiv](../../../../CommutativeAlgebra/SingletonPublic.lean/declarations/ringhom-adjoinalgebramapequiv.md) | 55 | `declaration-track:2da312698118d924bc7de59fdceaf3ac5f885ab6db0b26ca9b00708606a477e3` |
+| 1 | `def` | [RingHom.adjoinAlgebraMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SingletonPublic.lean/declarations/ringhom-adjoinalgebramap.md) | 31 | `declaration-track:da5b40ebb2c04843ab9f36b3af8203e8319a20c1b35a6f35b3a3d6869f229648` |
+| 2 | `theorem` | [RingHom.adjoinAlgebraMap_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SingletonPublic.lean/declarations/ringhom-adjoinalgebramap-apply.md) | 39 | `result-track:5a3af3dc4b410ba41c68d2e9a4afb8840a0e454c39024fe8ee94e7532bd0d958` |
+| 3 | `theorem` | [RingHom.adjoinAlgebraMap_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SingletonPublic.lean/declarations/ringhom-adjoinalgebramap-surjective.md) | 42 | `result-track:44f80297e88ff175f2ce2c213a42be997d0b641cfbc47a0b245654922b093d18` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SingletonPublic.lean/declarations/instance-source-edition-2.md) | 48 | `declaration-track:ecc48dbfa8fe256239aaad83a8cb95cec7d57d49f5ab8cab9c7cb0fc1eb472cc` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SingletonPublic.lean/declarations/instance.md) | 51 | `declaration-track:5207c564c2dbc5a673fb57b0413a12f57d9bfbf6bc2acfc1cb85256d2ace80ee` |
+| 6 | `def` | [RingHom.adjoinAlgebraMapEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SingletonPublic.lean/declarations/ringhom-adjoinalgebramapequiv.md) | 55 | `declaration-track:2da312698118d924bc7de59fdceaf3ac5f885ab6db0b26ca9b00708606a477e3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

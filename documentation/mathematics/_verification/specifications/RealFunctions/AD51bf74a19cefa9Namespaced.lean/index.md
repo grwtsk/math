@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/AD51bf74a19cefa9Namespaced.lean/index.md) · [Full source](../../../../RealFunctions/AD51bf74a19cefa9Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AD51bf74a19cefa9Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AD51bf74a19cefa9Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [CyclicSignal](../../../../RealFunctions/AD51bf74a19cefa9Namespaced.lean/declarations/cyclicsignal.md) | 21 | `declaration-track:2939955e7b2c3945166661924d826a2d963da2b922ad1bef3a058cee2e0d6de9` |
+| 1 | `abbrev` | [CyclicSignal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AD51bf74a19cefa9Namespaced.lean/declarations/cyclicsignal.md) | 21 | `declaration-track:2939955e7b2c3945166661924d826a2d963da2b922ad1bef3a058cee2e0d6de9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

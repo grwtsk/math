@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/RefactorFixtureNamespacedPublicEdition7.lean/index.md) · [Full source](../../../../Combinatorics/RefactorFixtureNamespacedPublicEdition7.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RefactorFixtureNamespacedPublicEdition7.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RefactorFixtureNamespacedPublicEdition7.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [verbose_identity](../../../../Combinatorics/RefactorFixtureNamespacedPublicEdition7.lean/declarations/verbose-identity.md) | 26 | `result-track:7b32b2dada0c8d152afe550946e1650c99c53624a614b9cfb475ec7496cd2c14` |
-| 2 | `theorem` | [identity_with_local_auxiliary](../../../../Combinatorics/RefactorFixtureNamespacedPublicEdition7.lean/declarations/identity-with-local-auxiliary.md) | 30 | `result-track:8c5d15bc919391e7a9c9f90395a24e8d0b6340187931c77bd9cda71067779fbe` |
-| 3 | `theorem` | [sandbox_guard_identity](../../../../Combinatorics/RefactorFixtureNamespacedPublicEdition7.lean/declarations/sandbox-guard-identity.md) | 37 | `result-track:f125358dab81decbe7c8123ac5f1b4783bc52a170cc82209bb7f70d37d9bec1b` |
-| 4 | `def` | [import_sensitive_cardinality](../../../../Combinatorics/RefactorFixtureNamespacedPublicEdition7.lean/declarations/import-sensitive-cardinality.md) | 42 | `declaration-track:3232f3f43c774442a0ec9a2c1786df33a4289c5a612355e277d1eb0f3e0ede91` |
+| 1 | `theorem` | [verbose_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RefactorFixtureNamespacedPublicEdition7.lean/declarations/verbose-identity.md) | 26 | `result-track:7b32b2dada0c8d152afe550946e1650c99c53624a614b9cfb475ec7496cd2c14` |
+| 2 | `theorem` | [identity_with_local_auxiliary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RefactorFixtureNamespacedPublicEdition7.lean/declarations/identity-with-local-auxiliary.md) | 30 | `result-track:8c5d15bc919391e7a9c9f90395a24e8d0b6340187931c77bd9cda71067779fbe` |
+| 3 | `theorem` | [sandbox_guard_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RefactorFixtureNamespacedPublicEdition7.lean/declarations/sandbox-guard-identity.md) | 37 | `result-track:f125358dab81decbe7c8123ac5f1b4783bc52a170cc82209bb7f70d37d9bec1b` |
+| 4 | `def` | [import_sensitive_cardinality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RefactorFixtureNamespacedPublicEdition7.lean/declarations/import-sensitive-cardinality.md) | 42 | `declaration-track:3232f3f43c774442a0ec9a2c1786df33a4289c5a612355e277d1eb0f3e0ede91` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ImportscorpusFalseCb311e0d.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ImportscorpusFalseCb311e0d.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ImportscorpusFalseCb311e0d.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ImportscorpusFalseCb311e0d.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [controlledRoot](../../../../../ComputerScience/AlgorithmsInComputerScience/ImportscorpusFalseCb311e0d.lean/declarations/controlledroot.md) | 15 | `declaration-track:de978be10aa346e6eb3b8c55591aefff0af372ed4dbf5821548b417678a05b9c` |
-| 2 | `def` | [importsCorpus](../../../../../ComputerScience/AlgorithmsInComputerScience/ImportscorpusFalseCb311e0d.lean/declarations/importscorpus.md) | 17 | `declaration-track:e0b1f62c3bd5e1021a8b2b31ced88d65f1188610aeb0d32c96bbd23f64ebcb03` |
-| 3 | `def` | [bandedRoots](../../../../../ComputerScience/AlgorithmsInComputerScience/ImportscorpusFalseCb311e0d.lean/declarations/bandedroots.md) | 19 | `declaration-track:3c1bc761c346a18c2f53242c68b1f3a3ba261cdaab3db69fb5b7a972ee65f0a6` |
-| 4 | `theorem` | [importsCorpus_false](../../../../../ComputerScience/AlgorithmsInComputerScience/ImportscorpusFalseCb311e0d.lean/declarations/importscorpus-false.md) | 32 | `result-track:22d19054025cc3d96112cbf6ccd0860aa6c4a2fc5c7a0133097c942371354263` |
-| 5 | `theorem` | [bandedRoots_count](../../../../../ComputerScience/AlgorithmsInComputerScience/ImportscorpusFalseCb311e0d.lean/declarations/bandedroots-count.md) | 35 | `result-track:44b26fd1a9c9b563923fc73ef0d30a7da8e739ed82bb5650d6421c0bedfbbc69` |
+| 1 | `def` | [controlledRoot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ImportscorpusFalseCb311e0d.lean/declarations/controlledroot.md) | 15 | `declaration-track:de978be10aa346e6eb3b8c55591aefff0af372ed4dbf5821548b417678a05b9c` |
+| 2 | `def` | [importsCorpus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ImportscorpusFalseCb311e0d.lean/declarations/importscorpus.md) | 17 | `declaration-track:e0b1f62c3bd5e1021a8b2b31ced88d65f1188610aeb0d32c96bbd23f64ebcb03` |
+| 3 | `def` | [bandedRoots](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ImportscorpusFalseCb311e0d.lean/declarations/bandedroots.md) | 19 | `declaration-track:3c1bc761c346a18c2f53242c68b1f3a3ba261cdaab3db69fb5b7a972ee65f0a6` |
+| 4 | `theorem` | [importsCorpus_false](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ImportscorpusFalseCb311e0d.lean/declarations/importscorpus-false.md) | 32 | `result-track:22d19054025cc3d96112cbf6ccd0860aa6c4a2fc5c7a0133097c942371354263` |
+| 5 | `theorem` | [bandedRoots_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ImportscorpusFalseCb311e0d.lean/declarations/bandedroots-count.md) | 35 | `result-track:44b26fd1a9c9b563923fc73ef0d30a7da8e739ed82bb5650d6421c0bedfbbc69` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

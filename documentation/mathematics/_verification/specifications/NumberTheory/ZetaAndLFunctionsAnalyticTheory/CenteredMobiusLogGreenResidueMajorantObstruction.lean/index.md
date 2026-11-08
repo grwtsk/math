@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidueMajorantObstruction.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidueMajorantObstruction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidueMajorantObstruction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidueMajorantObstruction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenResidualBounds`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidualBounds.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenResidualBounds`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidualBounds.lean/index.md) — import line 7; pinned internal source present.
 - `Mathlib.Tactic` — import line 8; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [greenResidueLeadingSquareMajorant](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidueMajorantObstruction.lean/declarations/greenresidueleadingsquaremajorant.md) | 16 | `declaration-track:b6a18df77a5f6feab3e6ccca278f0e853c104c43aec13a1377167cdc28b96228` |
-| 2 | `theorem` | [greenResidueLeadingSquareMajorant_zero_class](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidueMajorantObstruction.lean/declarations/greenresidueleadingsquaremajorant-zero-class.md) | 21 | `result-track:d1e4a41568cdaf451bc529b0a40f27ef54f642b77fea838717e98602435e42dd` |
-| 3 | `theorem` | [greenResidueLeadingSquareMajorant_one_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidueMajorantObstruction.lean/declarations/greenresidueleadingsquaremajorant-one-zero.md) | 31 | `result-track:e374e94d26362cc30373e8048d4766b874502ec7fe1fcf6af52104b8511578be` |
-| 4 | `def` | [greenPrincipalResidueLeadingMajorant](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidueMajorantObstruction.lean/declarations/greenprincipalresidueleadingmajorant.md) | 38 | `declaration-track:878142749cbc0914a15b54c934447392a322ebe136a045cd704e6ad0b71a160c` |
-| 5 | `theorem` | [one_le_greenPrincipalResidueLeadingMajorant](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidueMajorantObstruction.lean/declarations/one-le-greenprincipalresidueleadingmajorant.md) | 46 | `result-track:1df54d74ce28d5b11a86ea1bf364a05812e6d4c9c4fe0674b29bf66fa3316ff9` |
-| 6 | `theorem` | [greenPrincipalResidueLeadingMajorant_not_uniformly_vanishing](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidueMajorantObstruction.lean/declarations/greenprincipalresidueleadingmajorant-not-uniformly-vanishing.md) | 77 | `result-track:6527823707da581741077b7f49cdbcb5f17f8450f018f0cdd1c75b4635da2585` |
+| 1 | `def` | [greenResidueLeadingSquareMajorant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidueMajorantObstruction.lean/declarations/greenresidueleadingsquaremajorant.md) | 16 | `declaration-track:b6a18df77a5f6feab3e6ccca278f0e853c104c43aec13a1377167cdc28b96228` |
+| 2 | `theorem` | [greenResidueLeadingSquareMajorant_zero_class](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidueMajorantObstruction.lean/declarations/greenresidueleadingsquaremajorant-zero-class.md) | 21 | `result-track:d1e4a41568cdaf451bc529b0a40f27ef54f642b77fea838717e98602435e42dd` |
+| 3 | `theorem` | [greenResidueLeadingSquareMajorant_one_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidueMajorantObstruction.lean/declarations/greenresidueleadingsquaremajorant-one-zero.md) | 31 | `result-track:e374e94d26362cc30373e8048d4766b874502ec7fe1fcf6af52104b8511578be` |
+| 4 | `def` | [greenPrincipalResidueLeadingMajorant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidueMajorantObstruction.lean/declarations/greenprincipalresidueleadingmajorant.md) | 38 | `declaration-track:878142749cbc0914a15b54c934447392a322ebe136a045cd704e6ad0b71a160c` |
+| 5 | `theorem` | [one_le_greenPrincipalResidueLeadingMajorant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidueMajorantObstruction.lean/declarations/one-le-greenprincipalresidueleadingmajorant.md) | 46 | `result-track:1df54d74ce28d5b11a86ea1bf364a05812e6d4c9c4fe0674b29bf66fa3316ff9` |
+| 6 | `theorem` | [greenPrincipalResidueLeadingMajorant_not_uniformly_vanishing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidueMajorantObstruction.lean/declarations/greenprincipalresidueleadingmajorant-not-uniformly-vanishing.md) | 77 | `result-track:6527823707da581741077b7f49cdbcb5f17f8450f018f0cdd1c75b4635da2585` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

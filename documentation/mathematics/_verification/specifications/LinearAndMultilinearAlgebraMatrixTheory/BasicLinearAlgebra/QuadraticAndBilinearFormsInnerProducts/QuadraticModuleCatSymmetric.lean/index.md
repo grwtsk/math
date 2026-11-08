@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticAndBilinearFormsInnerProducts/QuadraticModuleCatSymmetric.lean/index.md) · [Full source](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticAndBilinearFormsInnerProducts/QuadraticModuleCatSymmetric.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticAndBilinearFormsInnerProducts/QuadraticModuleCatSymmetric.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticAndBilinearFormsInnerProducts/QuadraticModuleCatSymmetric.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticAndBilinearFormsInnerProducts/QuadraticModuleCatSymmetric.lean/declarations/instance-source-edition-2.md) | 33 | `declaration-track:9f95285aa5d0b5396f5417f5d462b1a735594763834653132f51d965c99d8db6` |
-| 2 | `instance` | [(anonymous)](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticAndBilinearFormsInnerProducts/QuadraticModuleCatSymmetric.lean/declarations/instance.md) | 39 | `declaration-track:547cdb65c2dd2baf7abfb1f76eeb74509a151846df3d596728c2a9ce86aa6f50` |
-| 3 | `instance` | [instSymmetricCategory](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticAndBilinearFormsInnerProducts/QuadraticModuleCatSymmetric.lean/declarations/instsymmetriccategory.md) | 41 | `declaration-track:e449cd80c3bd7e06f5bced24b7ebed5fc905885e65d3cd4533b5b970613b7ff4` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticAndBilinearFormsInnerProducts/QuadraticModuleCatSymmetric.lean/declarations/instance-source-edition-2.md) | 33 | `declaration-track:9f95285aa5d0b5396f5417f5d462b1a735594763834653132f51d965c99d8db6` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticAndBilinearFormsInnerProducts/QuadraticModuleCatSymmetric.lean/declarations/instance.md) | 39 | `declaration-track:547cdb65c2dd2baf7abfb1f76eeb74509a151846df3d596728c2a9ce86aa6f50` |
+| 3 | `instance` | [instSymmetricCategory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticAndBilinearFormsInnerProducts/QuadraticModuleCatSymmetric.lean/declarations/instsymmetriccategory.md) | 41 | `declaration-track:e449cd80c3bd7e06f5bced24b7ebed5fc905885e65d3cd4533b5b970613b7ff4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

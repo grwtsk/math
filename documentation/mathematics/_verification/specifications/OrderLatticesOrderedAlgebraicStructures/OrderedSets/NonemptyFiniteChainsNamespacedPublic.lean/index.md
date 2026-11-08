@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/NonemptyFiniteChainsNamespacedPublic.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/NonemptyFiniteChainsNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/NonemptyFiniteChainsNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/NonemptyFiniteChainsNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [NonemptyFiniteChains](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/NonemptyFiniteChainsNamespacedPublic.lean/declarations/nonemptyfinitechains.md) | 41 | `declaration-track:e27f7f91114515a0949044c90d8ac2aee512e0a933d16d4b2760357263d2bd52` |
-| 2 | `instance` | [(anonymous)](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/NonemptyFiniteChainsNamespacedPublic.lean/declarations/instance.md) | 51 | `declaration-track:dc352e16a422ecb26de4e4c069299f42f7be36a8dc7d66744734b3bbd7cacf82` |
-| 3 | `lemma` | [le_iff](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/NonemptyFiniteChainsNamespacedPublic.lean/declarations/le-iff.md) | 57 | `result-track:9227f8499ed460b2c8b52712221099c44e77aae7f9756e801a2c03f0aaae972c` |
-| 4 | `lemma` | [lt_iff](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/NonemptyFiniteChainsNamespacedPublic.lean/declarations/lt-iff.md) | 60 | `result-track:74b1cdb513a4c9d3340f7c3676efaeca8e92b0229bfb1ec6362ca115a56f3ab1` |
-| 5 | `def` | [map](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/NonemptyFiniteChainsNamespacedPublic.lean/declarations/map.md) | 64 | `declaration-track:fe41d44a09e29de3709e798aff844d9598ed98ee4bcdd73c8e103d1de9045a79` |
-| 6 | `lemma` | [mem_map_iff](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/NonemptyFiniteChainsNamespacedPublic.lean/declarations/mem-map-iff.md) | 77 | `result-track:043134e3fab3d51e3a558ba5dddb711808fcf734950ddfbff69b7df2b6466f45` |
-| 7 | `def` | [orderHomMap](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/NonemptyFiniteChainsNamespacedPublic.lean/declarations/orderhommap.md) | 84 | `declaration-track:1397fb3712a33425cc047cf90a3509221ab1ee2870b94c6c1192f0a6fdc9b612` |
-| 8 | `def` | [PartOrd.nonemptyFiniteChainsFunctor](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/NonemptyFiniteChainsNamespacedPublic.lean/declarations/partord-nonemptyfinitechainsfunctor.md) | 100 | `declaration-track:1a0c9daa7099c28b26963fee75458dfba4a582d978d3ec8dbf76af8ef9a03a71` |
+| 1 | `structure` | [NonemptyFiniteChains](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/NonemptyFiniteChainsNamespacedPublic.lean/declarations/nonemptyfinitechains.md) | 41 | `declaration-track:e27f7f91114515a0949044c90d8ac2aee512e0a933d16d4b2760357263d2bd52` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/NonemptyFiniteChainsNamespacedPublic.lean/declarations/instance.md) | 51 | `declaration-track:dc352e16a422ecb26de4e4c069299f42f7be36a8dc7d66744734b3bbd7cacf82` |
+| 3 | `lemma` | [le_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/NonemptyFiniteChainsNamespacedPublic.lean/declarations/le-iff.md) | 57 | `result-track:9227f8499ed460b2c8b52712221099c44e77aae7f9756e801a2c03f0aaae972c` |
+| 4 | `lemma` | [lt_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/NonemptyFiniteChainsNamespacedPublic.lean/declarations/lt-iff.md) | 60 | `result-track:74b1cdb513a4c9d3340f7c3676efaeca8e92b0229bfb1ec6362ca115a56f3ab1` |
+| 5 | `def` | [map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/NonemptyFiniteChainsNamespacedPublic.lean/declarations/map.md) | 64 | `declaration-track:fe41d44a09e29de3709e798aff844d9598ed98ee4bcdd73c8e103d1de9045a79` |
+| 6 | `lemma` | [mem_map_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/NonemptyFiniteChainsNamespacedPublic.lean/declarations/mem-map-iff.md) | 77 | `result-track:043134e3fab3d51e3a558ba5dddb711808fcf734950ddfbff69b7df2b6466f45` |
+| 7 | `def` | [orderHomMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/NonemptyFiniteChainsNamespacedPublic.lean/declarations/orderhommap.md) | 84 | `declaration-track:1397fb3712a33425cc047cf90a3509221ab1ee2870b94c6c1192f0a6fdc9b612` |
+| 8 | `def` | [PartOrd.nonemptyFiniteChainsFunctor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/NonemptyFiniteChainsNamespacedPublic.lean/declarations/partord-nonemptyfinitechainsfunctor.md) | 100 | `declaration-track:1a0c9daa7099c28b26963fee75458dfba4a582d978d3ec8dbf76af8ef9a03a71` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

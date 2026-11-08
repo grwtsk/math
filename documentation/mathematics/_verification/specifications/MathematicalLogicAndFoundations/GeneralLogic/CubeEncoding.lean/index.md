@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CubeEncoding.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CubeEncoding.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CubeEncoding.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CubeEncoding.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [cubeCapacityTarget](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CubeEncoding.lean/declarations/cubecapacitytarget.md) | 19 | `declaration-track:da671a401a77de8a044d1c18b87f95a9a41689b66e3884355a1904ecbe33b025` |
+| 1 | `def` | [cubeCapacityTarget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CubeEncoding.lean/declarations/cubecapacitytarget.md) | 19 | `declaration-track:da671a401a77de8a044d1c18b87f95a9a41689b66e3884355a1904ecbe33b025` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

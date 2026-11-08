@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCompensatedRadiusConsumerNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCompensatedRadiusConsumerNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCompensatedRadiusConsumerNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCompensatedRadiusConsumerNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [residual_tail_of_compensatedJointWork_tail](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCompensatedRadiusConsumerNamespaced.lean/declarations/residual-tail-of-compensatedjointwork-tail.md) | 23 | `result-track:9eaecdd852fbadcfb8e525c36bb59d5c74bd44bf0c8ced57cdfd9c3a26dfe8e6` |
-| 2 | `theorem` | [estimate_of_compensatedJointWork_tail](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCompensatedRadiusConsumerNamespaced.lean/declarations/estimate-of-compensatedjointwork-tail.md) | 32 | `result-track:8aeb4bf46bc9f10a99b2e58384e54af0cf54257c767da84341aaca5f6a56b70f` |
-| 3 | `theorem` | [residual_tail_of_compensatedBilinearWork_tail](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCompensatedRadiusConsumerNamespaced.lean/declarations/residual-tail-of-compensatedbilinearwork-tail.md) | 40 | `result-track:e3f8650b279115ea542f14168ea43156eb3effb6978e705ea6ac4080a775a4d7` |
-| 4 | `theorem` | [estimate_of_compensatedBilinearWork_tail](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCompensatedRadiusConsumerNamespaced.lean/declarations/estimate-of-compensatedbilinearwork-tail.md) | 49 | `result-track:81b4d9bffcefcb6d97d8d5e77db1c28082da0d265f02d4c26c0793167e4af340` |
+| 1 | `theorem` | [residual_tail_of_compensatedJointWork_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCompensatedRadiusConsumerNamespaced.lean/declarations/residual-tail-of-compensatedjointwork-tail.md) | 23 | `result-track:9eaecdd852fbadcfb8e525c36bb59d5c74bd44bf0c8ced57cdfd9c3a26dfe8e6` |
+| 2 | `theorem` | [estimate_of_compensatedJointWork_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCompensatedRadiusConsumerNamespaced.lean/declarations/estimate-of-compensatedjointwork-tail.md) | 32 | `result-track:8aeb4bf46bc9f10a99b2e58384e54af0cf54257c767da84341aaca5f6a56b70f` |
+| 3 | `theorem` | [residual_tail_of_compensatedBilinearWork_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCompensatedRadiusConsumerNamespaced.lean/declarations/residual-tail-of-compensatedbilinearwork-tail.md) | 40 | `result-track:e3f8650b279115ea542f14168ea43156eb3effb6978e705ea6ac4080a775a4d7` |
+| 4 | `theorem` | [estimate_of_compensatedBilinearWork_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCompensatedRadiusConsumerNamespaced.lean/declarations/estimate-of-compensatedbilinearwork-tail.md) | 49 | `result-track:81b4d9bffcefcb6d97d8d5e77db1c28082da0d265f02d4c26c0793167e4af340` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

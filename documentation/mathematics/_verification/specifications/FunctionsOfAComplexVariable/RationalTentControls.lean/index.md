@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/RationalTentControls.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/RationalTentControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalTentControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalTentControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Chebyshev.CanonicalRationalTentEvaluation`](../../../../NumberTheory/CanonicalRationalTentEvaluation.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.CanonicalRationalTentEvaluation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalRationalTentEvaluation.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,18 +57,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [quotient_conjugates_denominator](../../../../FunctionsOfAComplexVariable/RationalTentControls.lean/declarations/quotient-conjugates-denominator.md) | 15 | `result-track:a26bde4817f6431790eec41fab2f478e569b085fcabc01fe97e81eae77db9442` |
-| 2 | `theorem` | [zero_quotient_not_guarded](../../../../FunctionsOfAComplexVariable/RationalTentControls.lean/declarations/zero-quotient-not-guarded.md) | 19 | `result-track:a58193052855c8b6cfabea4a73dbcff722c10a3b68d27943898cebf0ea9086b9` |
-| 3 | `theorem` | [negative_lower_cannot_pass_square_alone](../../../../FunctionsOfAComplexVariable/RationalTentControls.lean/declarations/negative-lower-cannot-pass-square-alone.md) | 23 | `result-track:251c5a52bdbae2493428d95f17711399c5498e64a52304b4bc3f88640037ef2f` |
-| 4 | `theorem` | [center_zero_rejected](../../../../FunctionsOfAComplexVariable/RationalTentControls.lean/declarations/center-zero-rejected.md) | 26 | `result-track:93c78254fcd22fc1ced88d33983e9e4c74558e5941ebaf2ba48df7b11e7e5785` |
-| 5 | `theorem` | [center_minus_one_rejected](../../../../FunctionsOfAComplexVariable/RationalTentControls.lean/declarations/center-minus-one-rejected.md) | 34 | `result-track:c7669d719bca437eff6c629ac5dd3d845ce77edf5c146db8595d7742c7ace261` |
-| 6 | `theorem` | [negative_coordinate_error_rejected](../../../../FunctionsOfAComplexVariable/RationalTentControls.lean/declarations/negative-coordinate-error-rejected.md) | 42 | `result-track:34d6018291bd447ede3e78424a166427c531770684c048fa91c9c57832d8bdd0` |
-| 7 | `theorem` | [middle_error_has_two_copies](../../../../FunctionsOfAComplexVariable/RationalTentControls.lean/declarations/middle-error-has-two-copies.md) | 47 | `result-track:0df9787eed17a87182abff29ceba5fe4eaaaa0d0c3686a4566dd495ea71fe34a` |
-| 8 | `theorem` | [multiplicity_scales_whole_error](../../../../FunctionsOfAComplexVariable/RationalTentControls.lean/declarations/multiplicity-scales-whole-error.md) | 50 | `result-track:a7427dced87323bd89013bca772342c91488966e7cf090ca6bbee31bc9aa4bb3` |
-| 9 | `theorem` | [final_rounding_is_not_free](../../../../FunctionsOfAComplexVariable/RationalTentControls.lean/declarations/final-rounding-is-not-free.md) | 53 | `result-track:6febb96f369865f27365f277cedf8595931879ef49ab2606bc50e78c732acf32` |
-| 10 | `theorem` | [signed_division_control](../../../../FunctionsOfAComplexVariable/RationalTentControls.lean/declarations/signed-division-control.md) | 56 | `result-track:be1e88250a9cdecfafcf7259fd9879cf1ae178ad9b4087601d0a170fad700524` |
-| 11 | `theorem` | [repeated_key_not_injective](../../../../FunctionsOfAComplexVariable/RationalTentControls.lean/declarations/repeated-key-not-injective.md) | 61 | `result-track:9a319ecebc5d58c9b70bf73b32e49954df1982665ead57ec559454195f72b4a5` |
-| 12 | `theorem` | [tolerance_equality_not_strict_prime_margin](../../../../FunctionsOfAComplexVariable/RationalTentControls.lean/declarations/tolerance-equality-not-strict-prime-margin.md) | 66 | `result-track:d030471461c81a5fa7528cc852a46002815ff29df5a7d0ede1580db15906ea4c` |
+| 1 | `theorem` | [quotient_conjugates_denominator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalTentControls.lean/declarations/quotient-conjugates-denominator.md) | 15 | `result-track:a26bde4817f6431790eec41fab2f478e569b085fcabc01fe97e81eae77db9442` |
+| 2 | `theorem` | [zero_quotient_not_guarded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalTentControls.lean/declarations/zero-quotient-not-guarded.md) | 19 | `result-track:a58193052855c8b6cfabea4a73dbcff722c10a3b68d27943898cebf0ea9086b9` |
+| 3 | `theorem` | [negative_lower_cannot_pass_square_alone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalTentControls.lean/declarations/negative-lower-cannot-pass-square-alone.md) | 23 | `result-track:251c5a52bdbae2493428d95f17711399c5498e64a52304b4bc3f88640037ef2f` |
+| 4 | `theorem` | [center_zero_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalTentControls.lean/declarations/center-zero-rejected.md) | 26 | `result-track:93c78254fcd22fc1ced88d33983e9e4c74558e5941ebaf2ba48df7b11e7e5785` |
+| 5 | `theorem` | [center_minus_one_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalTentControls.lean/declarations/center-minus-one-rejected.md) | 34 | `result-track:c7669d719bca437eff6c629ac5dd3d845ce77edf5c146db8595d7742c7ace261` |
+| 6 | `theorem` | [negative_coordinate_error_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalTentControls.lean/declarations/negative-coordinate-error-rejected.md) | 42 | `result-track:34d6018291bd447ede3e78424a166427c531770684c048fa91c9c57832d8bdd0` |
+| 7 | `theorem` | [middle_error_has_two_copies](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalTentControls.lean/declarations/middle-error-has-two-copies.md) | 47 | `result-track:0df9787eed17a87182abff29ceba5fe4eaaaa0d0c3686a4566dd495ea71fe34a` |
+| 8 | `theorem` | [multiplicity_scales_whole_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalTentControls.lean/declarations/multiplicity-scales-whole-error.md) | 50 | `result-track:a7427dced87323bd89013bca772342c91488966e7cf090ca6bbee31bc9aa4bb3` |
+| 9 | `theorem` | [final_rounding_is_not_free](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalTentControls.lean/declarations/final-rounding-is-not-free.md) | 53 | `result-track:6febb96f369865f27365f277cedf8595931879ef49ab2606bc50e78c732acf32` |
+| 10 | `theorem` | [signed_division_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalTentControls.lean/declarations/signed-division-control.md) | 56 | `result-track:be1e88250a9cdecfafcf7259fd9879cf1ae178ad9b4087601d0a170fad700524` |
+| 11 | `theorem` | [repeated_key_not_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalTentControls.lean/declarations/repeated-key-not-injective.md) | 61 | `result-track:9a319ecebc5d58c9b70bf73b32e49954df1982665ead57ec559454195f72b4a5` |
+| 12 | `theorem` | [tolerance_equality_not_strict_prime_margin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalTentControls.lean/declarations/tolerance-equality-not-strict-prime-margin.md) | 66 | `result-track:d030471461c81a5fa7528cc852a46002815ff29df5a7d0ede1580db15906ea4c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

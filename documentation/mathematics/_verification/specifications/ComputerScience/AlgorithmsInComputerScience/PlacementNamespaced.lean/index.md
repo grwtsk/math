@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/PlacementNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/PlacementNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PlacementNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PlacementNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [phasePole](../../../../../ComputerScience/AlgorithmsInComputerScience/PlacementNamespaced.lean/declarations/phasepole.md) | 18 | `declaration-track:26757e6f7b25fdcc0e9104e3c092d7b386ca596f1be9a5a7f51d5a82ad6d257b` |
-| 2 | `def` | [phaseLocalIndex](../../../../../ComputerScience/AlgorithmsInComputerScience/PlacementNamespaced.lean/declarations/phaselocalindex.md) | 81 | `declaration-track:c62a181dbe9816bfc393a4657f50c666a7b8b083822998b8db5eb28941f81883` |
-| 3 | `structure` | [PhasePlacement](../../../../../ComputerScience/AlgorithmsInComputerScience/PlacementNamespaced.lean/declarations/phaseplacement.md) | 144 | `declaration-track:1428befe07b61143a09a6a1dead1c12089114a361000d23953fa3a1902b0322c` |
-| 4 | `def` | [place](../../../../../ComputerScience/AlgorithmsInComputerScience/PlacementNamespaced.lean/declarations/place.md) | 152 | `declaration-track:f18711a0a3abbdf041b4858ba72dd6998b90e4417be03057cf3af86a5e2aa477` |
-| 5 | `def` | [allPhasePlacements](../../../../../ComputerScience/AlgorithmsInComputerScience/PlacementNamespaced.lean/declarations/allphaseplacements.md) | 159 | `declaration-track:abdb730a82fefba57d737bb05530fd9204590f7e5f38216fce6e7476fdcc5f90` |
-| 6 | `theorem` | [every_phase_has_placement](../../../../../ComputerScience/AlgorithmsInComputerScience/PlacementNamespaced.lean/declarations/every-phase-has-placement.md) | 162 | `result-track:4a07b92fd5b16ceec598107aeb056d9cbcad7e77fc3159822bc6a6d4b556f49f` |
-| 7 | `theorem` | [placement_unique](../../../../../ComputerScience/AlgorithmsInComputerScience/PlacementNamespaced.lean/declarations/placement-unique.md) | 167 | `result-track:924e1332cb052f262bad74477457d5015ceec5f1a2a4608ace458a540c74944a` |
-| 8 | `theorem` | [pole_assignment_complete](../../../../../ComputerScience/AlgorithmsInComputerScience/PlacementNamespaced.lean/declarations/pole-assignment-complete.md) | 185 | `result-track:55721b3e3efe5801f508e11cb5b770c615197250d2cac074df02aa15188e96d9` |
-| 9 | `theorem` | [no_duplicate_phase_placements](../../../../../ComputerScience/AlgorithmsInComputerScience/PlacementNamespaced.lean/declarations/no-duplicate-phase-placements.md) | 189 | `result-track:b87c84a804afb86e4dc28c5e7ab5c83bf75eaca5fe1184acc2b3e8b96d6ac71e` |
-| 10 | `theorem` | [center_spine_controls_all_poles](../../../../../ComputerScience/AlgorithmsInComputerScience/PlacementNamespaced.lean/declarations/center-spine-controls-all-poles.md) | 193 | `result-track:6ceb92329e777ee90da52b988f7592865141a7ca69598d8a18436bed5ea61426` |
+| 1 | `def` | [phasePole](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PlacementNamespaced.lean/declarations/phasepole.md) | 18 | `declaration-track:26757e6f7b25fdcc0e9104e3c092d7b386ca596f1be9a5a7f51d5a82ad6d257b` |
+| 2 | `def` | [phaseLocalIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PlacementNamespaced.lean/declarations/phaselocalindex.md) | 81 | `declaration-track:c62a181dbe9816bfc393a4657f50c666a7b8b083822998b8db5eb28941f81883` |
+| 3 | `structure` | [PhasePlacement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PlacementNamespaced.lean/declarations/phaseplacement.md) | 144 | `declaration-track:1428befe07b61143a09a6a1dead1c12089114a361000d23953fa3a1902b0322c` |
+| 4 | `def` | [place](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PlacementNamespaced.lean/declarations/place.md) | 152 | `declaration-track:f18711a0a3abbdf041b4858ba72dd6998b90e4417be03057cf3af86a5e2aa477` |
+| 5 | `def` | [allPhasePlacements](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PlacementNamespaced.lean/declarations/allphaseplacements.md) | 159 | `declaration-track:abdb730a82fefba57d737bb05530fd9204590f7e5f38216fce6e7476fdcc5f90` |
+| 6 | `theorem` | [every_phase_has_placement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PlacementNamespaced.lean/declarations/every-phase-has-placement.md) | 162 | `result-track:4a07b92fd5b16ceec598107aeb056d9cbcad7e77fc3159822bc6a6d4b556f49f` |
+| 7 | `theorem` | [placement_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PlacementNamespaced.lean/declarations/placement-unique.md) | 167 | `result-track:924e1332cb052f262bad74477457d5015ceec5f1a2a4608ace458a540c74944a` |
+| 8 | `theorem` | [pole_assignment_complete](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PlacementNamespaced.lean/declarations/pole-assignment-complete.md) | 185 | `result-track:55721b3e3efe5801f508e11cb5b770c615197250d2cac074df02aa15188e96d9` |
+| 9 | `theorem` | [no_duplicate_phase_placements](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PlacementNamespaced.lean/declarations/no-duplicate-phase-placements.md) | 189 | `result-track:b87c84a804afb86e4dc28c5e7ab5c83bf75eaca5fe1184acc2b3e8b96d6ac71e` |
+| 10 | `theorem` | [center_spine_controls_all_poles](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PlacementNamespaced.lean/declarations/center-spine-controls-all-poles.md) | 193 | `result-track:6ceb92329e777ee90da52b988f7592865141a7ca69598d8a18436bed5ea61426` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

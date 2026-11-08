@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UnbundledHomNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UnbundledHomNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UnbundledHomNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UnbundledHomNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [UnbundledHom](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UnbundledHomNamespaced.lean/declarations/unbundledhom.md) | 33 | `declaration-track:f4b0ee72d6512ecd16960a6c97e9f6212ba9e5b645cf039fb2938c3b9e75b6de` |
-| 2 | `instance` | [bundledHom](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UnbundledHomNamespaced.lean/declarations/bundledhom.md) | 42 | `declaration-track:3214c29a9669ce1f267851f4e32d81476fd3999829f9ec1a5959643090d8831a` |
-| 3 | `def` | [mkHasForget₂](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UnbundledHomNamespaced.lean/declarations/mkhasforget.md) | 60 | `declaration-track:01dd5550df328fc5fee99c0c76b4b6ad2446ae217b1d696da966e344865f83ba` |
+| 1 | `class` | [UnbundledHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UnbundledHomNamespaced.lean/declarations/unbundledhom.md) | 33 | `declaration-track:f4b0ee72d6512ecd16960a6c97e9f6212ba9e5b645cf039fb2938c3b9e75b6de` |
+| 2 | `instance` | [bundledHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UnbundledHomNamespaced.lean/declarations/bundledhom.md) | 42 | `declaration-track:3214c29a9669ce1f267851f4e32d81476fd3999829f9ec1a5959643090d8831a` |
+| 3 | `def` | [mkHasForget₂](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UnbundledHomNamespaced.lean/declarations/mkhasforget.md) | 60 | `declaration-track:01dd5550df328fc5fee99c0c76b4b6ad2446ae217b1d696da966e344865f83ba` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

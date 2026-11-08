@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AddCharNamespaced.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AddCharNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AddCharNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AddCharNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [directSum](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AddCharNamespaced.lean/declarations/directsum.md) | 33 | `declaration-track:854fceea02852d1de727a7b86dd23d83e0b4694d0105294888370ad3c5691ec1` |
-| 2 | `lemma` | [directSum_injective](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AddCharNamespaced.lean/declarations/directsum-injective.md) | 36 | `result-track:c6e29bf8c54c107c31f9f9eab2791897fb8289d6b01f7c260394ddc4f7a6af1e` |
+| 1 | `def` | [directSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AddCharNamespaced.lean/declarations/directsum.md) | 33 | `declaration-track:854fceea02852d1de727a7b86dd23d83e0b4694d0105294888370ad3c5691ec1` |
+| 2 | `lemma` | [directSum_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AddCharNamespaced.lean/declarations/directsum-injective.md) | 36 | `result-track:c6e29bf8c54c107c31f9f9eab2791897fb8289d6b01f7c260394ddc4f7a6af1e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

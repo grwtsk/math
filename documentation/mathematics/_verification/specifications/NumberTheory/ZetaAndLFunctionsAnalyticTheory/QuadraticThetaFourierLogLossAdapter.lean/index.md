@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaFourierLogLossAdapter.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaFourierLogLossAdapter.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaFourierLogLossAdapter.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaFourierLogLossAdapter.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaFourierSobolevBarrier`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaFourierSobolevBarrier.lean/index.md) — import line 3; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.DyadicThetaVonKochAdapter`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicThetaVonKochAdapter.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaFourierSobolevBarrier`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaFourierSobolevBarrier.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.DyadicThetaVonKochAdapter`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicThetaVonKochAdapter.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Tactic` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [DyadicThetaErrorLogSqOscillationAt](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaFourierLogLossAdapter.lean/declarations/dyadicthetaerrorlogsqoscillationat.md) | 52 | `declaration-track:884cf1ba7e00bf878db6a6b5ba187b76249004849680b558dda4dec64935a779` |
-| 2 | `theorem` | [logSqOscillation_to_oscillation](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaFourierLogLossAdapter.lean/declarations/logsqoscillation-to-oscillation.md) | 67 | `result-track:f19414545d0f528c96f924e5bfffd8f2dcc80cdcab8dac6f01ab9749bb10d02d` |
-| 3 | `def` | [PrimeFourierLogSqMaximalReadoutAt](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaFourierLogLossAdapter.lean/declarations/primefourierlogsqmaximalreadoutat.md) | 131 | `declaration-track:1a4b2e823c6bfee7196a8c0d4770dc4f1c56e32f887b409053b38d0d8193af23` |
-| 4 | `theorem` | [primeFourierLogSqMaximalReadout_to_recurrence](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaFourierLogLossAdapter.lean/declarations/primefourierlogsqmaximalreadout-to-recurrence.md) | 137 | `result-track:b9139d935ad0b52aca9d61baca651a6e9db8badb0a30f881846c70a842ae634a` |
-| 5 | `theorem` | [sevenEighths_logSqOscillation_power](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaFourierLogLossAdapter.lean/declarations/seveneighths-logsqoscillation-power.md) | 148 | `result-track:8ebcd1d443788592c65b871ae8ac311d6689e99440336db030be573f478d6348` |
+| 1 | `def` | [DyadicThetaErrorLogSqOscillationAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaFourierLogLossAdapter.lean/declarations/dyadicthetaerrorlogsqoscillationat.md) | 52 | `declaration-track:884cf1ba7e00bf878db6a6b5ba187b76249004849680b558dda4dec64935a779` |
+| 2 | `theorem` | [logSqOscillation_to_oscillation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaFourierLogLossAdapter.lean/declarations/logsqoscillation-to-oscillation.md) | 67 | `result-track:f19414545d0f528c96f924e5bfffd8f2dcc80cdcab8dac6f01ab9749bb10d02d` |
+| 3 | `def` | [PrimeFourierLogSqMaximalReadoutAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaFourierLogLossAdapter.lean/declarations/primefourierlogsqmaximalreadoutat.md) | 131 | `declaration-track:1a4b2e823c6bfee7196a8c0d4770dc4f1c56e32f887b409053b38d0d8193af23` |
+| 4 | `theorem` | [primeFourierLogSqMaximalReadout_to_recurrence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaFourierLogLossAdapter.lean/declarations/primefourierlogsqmaximalreadout-to-recurrence.md) | 137 | `result-track:b9139d935ad0b52aca9d61baca651a6e9db8badb0a30f881846c70a842ae634a` |
+| 5 | `theorem` | [sevenEighths_logSqOscillation_power](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaFourierLogLossAdapter.lean/declarations/seveneighths-logsqoscillation-power.md) | 148 | `result-track:8ebcd1d443788592c65b871ae8ac311d6689e99440336db030be573f478d6348` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

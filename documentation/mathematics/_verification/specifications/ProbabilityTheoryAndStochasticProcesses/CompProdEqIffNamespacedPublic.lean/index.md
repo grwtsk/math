@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/CompProdEqIffNamespacedPublic.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/CompProdEqIffNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CompProdEqIffNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CompProdEqIffNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [ae_eq_of_compProd_eq](../../../../ProbabilityTheoryAndStochasticProcesses/CompProdEqIffNamespacedPublic.lean/declarations/ae-eq-of-compprod-eq.md) | 47 | `result-track:3662b7146237b42378b931f784e1d196b219a0932c465e43f055b1ae2967ef44` |
-| 2 | `lemma` | [compProd_eq_iff](../../../../ProbabilityTheoryAndStochasticProcesses/CompProdEqIffNamespacedPublic.lean/declarations/compprod-eq-iff.md) | 67 | `result-track:1dae692647deaed834199cfad11ed378ce025b4d07fcab0c61320d7f6bd78721` |
+| 1 | `lemma` | [ae_eq_of_compProd_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CompProdEqIffNamespacedPublic.lean/declarations/ae-eq-of-compprod-eq.md) | 47 | `result-track:3662b7146237b42378b931f784e1d196b219a0932c465e43f055b1ae2967ef44` |
+| 2 | `lemma` | [compProd_eq_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CompProdEqIffNamespacedPublic.lean/declarations/compprod-eq-iff.md) | 67 | `result-track:1dae692647deaed834199cfad11ed378ce025b4d07fcab0c61320d7f6bd78721` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

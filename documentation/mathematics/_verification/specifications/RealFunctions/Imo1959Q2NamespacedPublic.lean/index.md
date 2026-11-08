@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/Imo1959Q2NamespacedPublic.lean/index.md) · [Full source](../../../../RealFunctions/Imo1959Q2NamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo1959Q2NamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo1959Q2NamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,20 +57,20 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [IsGood](../../../../RealFunctions/Imo1959Q2NamespacedPublic.lean/declarations/isgood.md) | 44 | `declaration-track:50df8f385b287b37edc92cad28047a1e3cf8956e888ed10a4d9691f1356a9e3e` |
-| 2 | `theorem` | [isGood_iff](../../../../RealFunctions/Imo1959Q2NamespacedPublic.lean/declarations/isgood-iff.md) | 50 | `result-track:4bdc16569a83f5f7977d60000e88cf95a7b92e525b546af932239e1a741e9587` |
-| 3 | `theorem` | [IsGood.one_half_le](../../../../RealFunctions/Imo1959Q2NamespacedPublic.lean/declarations/isgood-one-half-le.md) | 67 | `result-track:9376312f2839e3c03c543840ed5adfee96012354a4883be9f1798ee8fa803651` |
-| 4 | `theorem` | [sqrt_two_mul_sub_one_le_one](../../../../RealFunctions/Imo1959Q2NamespacedPublic.lean/declarations/sqrt-two-mul-sub-one-le-one.md) | 69 | `result-track:3eb1e862367ecceb5ec3b52c65f28c26089c6f85e82c6a3882dcd441638c40bd` |
-| 5 | `theorem` | [isGood_iff_eq_sqrt_two](../../../../RealFunctions/Imo1959Q2NamespacedPublic.lean/declarations/isgood-iff-eq-sqrt-two.md) | 72 | `result-track:1e3a0db66728dceb47a0d0b660d825e756cd717783b22694227093e892cba765` |
-| 6 | `theorem` | [isGood_iff_eq_sqrt](../../../../RealFunctions/Imo1959Q2NamespacedPublic.lean/declarations/isgood-iff-eq-sqrt.md) | 79 | `result-track:50552afe0f704a37ee05ecf4286210f98a95f120eceb82d807e0cc8761294828` |
-| 7 | `theorem` | [IsGood.sqrt_two_lt_of_one_lt](../../../../RealFunctions/Imo1959Q2NamespacedPublic.lean/declarations/isgood-sqrt-two-lt-of-one-lt.md) | 87 | `result-track:33aa6f187038607fbc4200039b8316609f5a42214b0890ee1368149a33b68e72` |
-| 8 | `theorem` | [IsGood.eq_sqrt_two_iff_le_one](../../../../RealFunctions/Imo1959Q2NamespacedPublic.lean/declarations/isgood-eq-sqrt-two-iff-le-one.md) | 92 | `result-track:7121efea75b338bb0fcc24f77bfcde8ba8e937ad3fbc152d4a0a356207ba4c9b` |
-| 9 | `theorem` | [IsGood.sqrt_two_lt_iff_one_lt](../../../../RealFunctions/Imo1959Q2NamespacedPublic.lean/declarations/isgood-sqrt-two-lt-iff-one-lt.md) | 96 | `result-track:85cb4ec4184b51238f18c608ce1ec977c1810632edbc72b4038a0e964068ad22` |
-| 10 | `theorem` | [IsGood.sqrt_two_le](../../../../RealFunctions/Imo1959Q2NamespacedPublic.lean/declarations/isgood-sqrt-two-le.md) | 99 | `result-track:64a712aa738cd6796ebaaf66610422acaa747b762135ffc866ed85ba9b532857` |
-| 11 | `theorem` | [isGood_iff_of_sqrt_two_lt](../../../../RealFunctions/Imo1959Q2NamespacedPublic.lean/declarations/isgood-iff-of-sqrt-two-lt.md) | 103 | `result-track:707c9aa7df9f3625a285c00413ca3377809a90aee2a895225ab1ddd57e8d816f` |
-| 12 | `theorem` | [isGood_sqrt2_iff](../../../../RealFunctions/Imo1959Q2NamespacedPublic.lean/declarations/isgood-sqrt2-iff.md) | 116 | `result-track:a045d84593fca0b7a4b7a7928ae97bed7de161d5da2155ff4cf302f4d763f619` |
-| 13 | `theorem` | [not_isGood_one](../../../../RealFunctions/Imo1959Q2NamespacedPublic.lean/declarations/not-isgood-one.md) | 120 | `result-track:89f036f0a78f2fa7f2872677de171e5ca32be5e4fe159ed9cfe216cf4f8e215b` |
-| 14 | `theorem` | [isGood_two_iff](../../../../RealFunctions/Imo1959Q2NamespacedPublic.lean/declarations/isgood-two-iff.md) | 123 | `result-track:0289344a310966b0c729e7926ada57c111eb2b10a13ff95df1eaa3bbff1a1cd8` |
+| 1 | `def` | [IsGood](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo1959Q2NamespacedPublic.lean/declarations/isgood.md) | 44 | `declaration-track:50df8f385b287b37edc92cad28047a1e3cf8956e888ed10a4d9691f1356a9e3e` |
+| 2 | `theorem` | [isGood_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo1959Q2NamespacedPublic.lean/declarations/isgood-iff.md) | 50 | `result-track:4bdc16569a83f5f7977d60000e88cf95a7b92e525b546af932239e1a741e9587` |
+| 3 | `theorem` | [IsGood.one_half_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo1959Q2NamespacedPublic.lean/declarations/isgood-one-half-le.md) | 67 | `result-track:9376312f2839e3c03c543840ed5adfee96012354a4883be9f1798ee8fa803651` |
+| 4 | `theorem` | [sqrt_two_mul_sub_one_le_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo1959Q2NamespacedPublic.lean/declarations/sqrt-two-mul-sub-one-le-one.md) | 69 | `result-track:3eb1e862367ecceb5ec3b52c65f28c26089c6f85e82c6a3882dcd441638c40bd` |
+| 5 | `theorem` | [isGood_iff_eq_sqrt_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo1959Q2NamespacedPublic.lean/declarations/isgood-iff-eq-sqrt-two.md) | 72 | `result-track:1e3a0db66728dceb47a0d0b660d825e756cd717783b22694227093e892cba765` |
+| 6 | `theorem` | [isGood_iff_eq_sqrt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo1959Q2NamespacedPublic.lean/declarations/isgood-iff-eq-sqrt.md) | 79 | `result-track:50552afe0f704a37ee05ecf4286210f98a95f120eceb82d807e0cc8761294828` |
+| 7 | `theorem` | [IsGood.sqrt_two_lt_of_one_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo1959Q2NamespacedPublic.lean/declarations/isgood-sqrt-two-lt-of-one-lt.md) | 87 | `result-track:33aa6f187038607fbc4200039b8316609f5a42214b0890ee1368149a33b68e72` |
+| 8 | `theorem` | [IsGood.eq_sqrt_two_iff_le_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo1959Q2NamespacedPublic.lean/declarations/isgood-eq-sqrt-two-iff-le-one.md) | 92 | `result-track:7121efea75b338bb0fcc24f77bfcde8ba8e937ad3fbc152d4a0a356207ba4c9b` |
+| 9 | `theorem` | [IsGood.sqrt_two_lt_iff_one_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo1959Q2NamespacedPublic.lean/declarations/isgood-sqrt-two-lt-iff-one-lt.md) | 96 | `result-track:85cb4ec4184b51238f18c608ce1ec977c1810632edbc72b4038a0e964068ad22` |
+| 10 | `theorem` | [IsGood.sqrt_two_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo1959Q2NamespacedPublic.lean/declarations/isgood-sqrt-two-le.md) | 99 | `result-track:64a712aa738cd6796ebaaf66610422acaa747b762135ffc866ed85ba9b532857` |
+| 11 | `theorem` | [isGood_iff_of_sqrt_two_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo1959Q2NamespacedPublic.lean/declarations/isgood-iff-of-sqrt-two-lt.md) | 103 | `result-track:707c9aa7df9f3625a285c00413ca3377809a90aee2a895225ab1ddd57e8d816f` |
+| 12 | `theorem` | [isGood_sqrt2_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo1959Q2NamespacedPublic.lean/declarations/isgood-sqrt2-iff.md) | 116 | `result-track:a045d84593fca0b7a4b7a7928ae97bed7de161d5da2155ff4cf302f4d763f619` |
+| 13 | `theorem` | [not_isGood_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo1959Q2NamespacedPublic.lean/declarations/not-isgood-one.md) | 120 | `result-track:89f036f0a78f2fa7f2872677de171e5ca32be5e4fe159ed9cfe216cf4f8e215b` |
+| 14 | `theorem` | [isGood_two_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo1959Q2NamespacedPublic.lean/declarations/isgood-two-iff.md) | 123 | `result-track:0289344a310966b0c729e7926ada57c111eb2b10a13ff95df1eaa3bbff1a1cd8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

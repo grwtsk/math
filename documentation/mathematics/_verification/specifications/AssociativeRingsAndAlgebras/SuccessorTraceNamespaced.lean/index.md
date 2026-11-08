@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/SuccessorTraceNamespaced.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/SuccessorTraceNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SuccessorTraceNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SuccessorTraceNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SuccessorTraceConnector](../../../../AssociativeRingsAndAlgebras/SuccessorTraceNamespaced.lean/declarations/successortraceconnector.md) | 26 | `declaration-track:0512db1f47869b287073a4e055ab11ff7b5d6c3c8f52ff5f434d675d1bba1698` |
-| 2 | `def` | [pullback](../../../../AssociativeRingsAndAlgebras/SuccessorTraceNamespaced.lean/declarations/pullback.md) | 50 | `declaration-track:2ce9258ab37e5ba54f8e8a0172ded96abee153ab6672170e776a1f7997839e5f` |
-| 3 | `theorem` | [successor_trace_compatible](../../../../AssociativeRingsAndAlgebras/SuccessorTraceNamespaced.lean/declarations/successor-trace-compatible.md) | 67 | `result-track:31567d3c8c10d964ae0359a8446f9c2228413c5e5522b0f700bb387e6d0d472b` |
-| 4 | `structure` | [ProjectiveTraceSystem](../../../../AssociativeRingsAndAlgebras/SuccessorTraceNamespaced.lean/declarations/projectivetracesystem.md) | 87 | `declaration-track:c92d448fc9ebe22c502fbf1e535b415e44f323458cfc83f731eb8100b8a481c9` |
-| 5 | `def` | [pullback](../../../../AssociativeRingsAndAlgebras/SuccessorTraceNamespaced.lean/declarations/pullback-source-edition-2.md) | 166 | `declaration-track:d684dcdeb0181295b219bbc052a73c12b89ab3eb9f29fd4d93ad2c26b7545b83` |
-| 6 | `theorem` | [pullback_injective](../../../../AssociativeRingsAndAlgebras/SuccessorTraceNamespaced.lean/declarations/pullback-injective.md) | 181 | `result-track:b295f9707db986f70e08763181e7fd904fe1696323377ee47985bd0c100ccf1a` |
-| 7 | `theorem` | [traceCompatible](../../../../AssociativeRingsAndAlgebras/SuccessorTraceNamespaced.lean/declarations/tracecompatible.md) | 195 | `result-track:6077832df69fe86cda556be47da72af68113431bb891b14cfe91e8832432bf9d` |
+| 1 | `structure` | [SuccessorTraceConnector](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SuccessorTraceNamespaced.lean/declarations/successortraceconnector.md) | 26 | `declaration-track:0512db1f47869b287073a4e055ab11ff7b5d6c3c8f52ff5f434d675d1bba1698` |
+| 2 | `def` | [pullback](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SuccessorTraceNamespaced.lean/declarations/pullback.md) | 50 | `declaration-track:2ce9258ab37e5ba54f8e8a0172ded96abee153ab6672170e776a1f7997839e5f` |
+| 3 | `theorem` | [successor_trace_compatible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SuccessorTraceNamespaced.lean/declarations/successor-trace-compatible.md) | 67 | `result-track:31567d3c8c10d964ae0359a8446f9c2228413c5e5522b0f700bb387e6d0d472b` |
+| 4 | `structure` | [ProjectiveTraceSystem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SuccessorTraceNamespaced.lean/declarations/projectivetracesystem.md) | 87 | `declaration-track:c92d448fc9ebe22c502fbf1e535b415e44f323458cfc83f731eb8100b8a481c9` |
+| 5 | `def` | [pullback](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SuccessorTraceNamespaced.lean/declarations/pullback-source-edition-2.md) | 166 | `declaration-track:d684dcdeb0181295b219bbc052a73c12b89ab3eb9f29fd4d93ad2c26b7545b83` |
+| 6 | `theorem` | [pullback_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SuccessorTraceNamespaced.lean/declarations/pullback-injective.md) | 181 | `result-track:b295f9707db986f70e08763181e7fd904fe1696323377ee47985bd0c100ccf1a` |
+| 7 | `theorem` | [traceCompatible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SuccessorTraceNamespaced.lean/declarations/tracecompatible.md) | 195 | `result-track:6077832df69fe86cda556be47da72af68113431bb891b14cfe91e8832432bf9d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

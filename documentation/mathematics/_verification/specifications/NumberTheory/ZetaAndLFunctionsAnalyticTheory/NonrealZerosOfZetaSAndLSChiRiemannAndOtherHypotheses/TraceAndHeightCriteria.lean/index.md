@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TraceAndHeightCriteria.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TraceAndHeightCriteria.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TraceAndHeightCriteria.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TraceAndHeightCriteria.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,9 +46,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticTraceCriterion`](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/QuadraticTraceCriterion.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.BoundedHeightCriterion`](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/BoundedHeightCriterion.lean/index.md) — import line 2; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.ZeroOrbitQuartic`](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZeroOrbitQuartic.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticTraceCriterion`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/QuadraticTraceCriterion.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.BoundedHeightCriterion`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/BoundedHeightCriterion.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.ZeroOrbitQuartic`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZeroOrbitQuartic.lean/index.md) — import line 3; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TraceAndHeightCriteria.lean/declarations/example.md) | 9 | `declaration-track:37260eee28e50c77c04e66eea08ba2a17374f47f898033f6137789806e7fe739` |
-| 2 | `example` | [(anonymous)](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TraceAndHeightCriteria.lean/declarations/example-source-edition-2.md) | 11 | `declaration-track:87d9591679d715a774ef01e8b857415abf4fc7cda1ee6d1204a18324fd7859d6` |
-| 3 | `example` | [(anonymous)](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TraceAndHeightCriteria.lean/declarations/example-source-edition-5.md) | 14 | `declaration-track:c7d8c6cd631c863ef99eeafc8ed2c2e87786499121740ec5b188f62390ba7417` |
-| 4 | `example` | [(anonymous)](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TraceAndHeightCriteria.lean/declarations/example-source-edition-3.md) | 17 | `declaration-track:914da4e4172f111b99829c58f23a47f9f2f361584374cb42e87a0491f8e76a4e` |
-| 5 | `example` | [(anonymous)](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TraceAndHeightCriteria.lean/declarations/example-source-edition-4.md) | 18 | `declaration-track:983ff9d90e010b395fe278dc49c13b9ec8b3d99b363777aa080e7161ae884e7e` |
-| 6 | `example` | [(anonymous)](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TraceAndHeightCriteria.lean/declarations/example-source-edition-6.md) | 21 | `declaration-track:fac1771e985f49776986cc27e1911622cff1bf5c6aea4230a2cc62eb86352a18` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TraceAndHeightCriteria.lean/declarations/example.md) | 9 | `declaration-track:37260eee28e50c77c04e66eea08ba2a17374f47f898033f6137789806e7fe739` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TraceAndHeightCriteria.lean/declarations/example-source-edition-2.md) | 11 | `declaration-track:87d9591679d715a774ef01e8b857415abf4fc7cda1ee6d1204a18324fd7859d6` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TraceAndHeightCriteria.lean/declarations/example-source-edition-5.md) | 14 | `declaration-track:c7d8c6cd631c863ef99eeafc8ed2c2e87786499121740ec5b188f62390ba7417` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TraceAndHeightCriteria.lean/declarations/example-source-edition-3.md) | 17 | `declaration-track:914da4e4172f111b99829c58f23a47f9f2f361584374cb42e87a0491f8e76a4e` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TraceAndHeightCriteria.lean/declarations/example-source-edition-4.md) | 18 | `declaration-track:983ff9d90e010b395fe278dc49c13b9ec8b3d99b363777aa080e7161ae884e7e` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TraceAndHeightCriteria.lean/declarations/example-source-edition-6.md) | 21 | `declaration-track:fac1771e985f49776986cc27e1911622cff1bf5c6aea4230a2cc62eb86352a18` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

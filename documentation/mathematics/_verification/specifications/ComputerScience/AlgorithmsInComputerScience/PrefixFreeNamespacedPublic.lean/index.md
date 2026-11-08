@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/PrefixFreeNamespacedPublic.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/PrefixFreeNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PrefixFreeNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PrefixFreeNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [IsPrefixFree](../../../../../ComputerScience/AlgorithmsInComputerScience/PrefixFreeNamespacedPublic.lean/declarations/isprefixfree.md) | 44 | `declaration-track:83c0a98ab24791773bfb945ff8bfb9a33fa4f06ffb95328f2999acc7023cedb4` |
-| 2 | `lemma` | [IsPrefixFree.eq_singleton_empty_of_empty_mem](../../../../../ComputerScience/AlgorithmsInComputerScience/PrefixFreeNamespacedPublic.lean/declarations/isprefixfree-eq-singleton-empty-of-empty-mem.md) | 48 | `result-track:8e1ef028edaa8cc1db3be0c2c8486d894f3c67987787825d6d5df0bdca12fecb` |
-| 3 | `lemma` | [IsPrefixFree.anti](../../../../../ComputerScience/AlgorithmsInComputerScience/PrefixFreeNamespacedPublic.lean/declarations/isprefixfree-anti.md) | 54 | `result-track:87893c210418f0a4aa52f98c54173d76388eff573c5f78fb6ecc1adbc2a92c6b` |
-| 4 | `theorem` | [IsPrefixFree.isUniquelyDecodable](../../../../../ComputerScience/AlgorithmsInComputerScience/PrefixFreeNamespacedPublic.lean/declarations/isprefixfree-isuniquelydecodable.md) | 58 | `result-track:656ab6f6758ff3386c8d3e79d2c8e198148634aed911a533cd80e7989f554fe7` |
-| 5 | `theorem` | [IsPrefixFree.isUniquelyDecodable_of_nontrivial](../../../../../ComputerScience/AlgorithmsInComputerScience/PrefixFreeNamespacedPublic.lean/declarations/isprefixfree-isuniquelydecodable-of-nontrivial.md) | 88 | `result-track:5f383cfad38464f5df6b529ee3ff2f18f6d4a207068e9e94926d826f4bb598eb` |
+| 1 | `def` | [IsPrefixFree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PrefixFreeNamespacedPublic.lean/declarations/isprefixfree.md) | 44 | `declaration-track:83c0a98ab24791773bfb945ff8bfb9a33fa4f06ffb95328f2999acc7023cedb4` |
+| 2 | `lemma` | [IsPrefixFree.eq_singleton_empty_of_empty_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PrefixFreeNamespacedPublic.lean/declarations/isprefixfree-eq-singleton-empty-of-empty-mem.md) | 48 | `result-track:8e1ef028edaa8cc1db3be0c2c8486d894f3c67987787825d6d5df0bdca12fecb` |
+| 3 | `lemma` | [IsPrefixFree.anti](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PrefixFreeNamespacedPublic.lean/declarations/isprefixfree-anti.md) | 54 | `result-track:87893c210418f0a4aa52f98c54173d76388eff573c5f78fb6ecc1adbc2a92c6b` |
+| 4 | `theorem` | [IsPrefixFree.isUniquelyDecodable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PrefixFreeNamespacedPublic.lean/declarations/isprefixfree-isuniquelydecodable.md) | 58 | `result-track:656ab6f6758ff3386c8d3e79d2c8e198148634aed911a533cd80e7989f554fe7` |
+| 5 | `theorem` | [IsPrefixFree.isUniquelyDecodable_of_nontrivial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PrefixFreeNamespacedPublic.lean/declarations/isprefixfree-isuniquelydecodable-of-nontrivial.md) | 88 | `result-track:5f383cfad38464f5df6b529ee3ff2f18f6d4a207068e9e94926d826f4bb598eb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

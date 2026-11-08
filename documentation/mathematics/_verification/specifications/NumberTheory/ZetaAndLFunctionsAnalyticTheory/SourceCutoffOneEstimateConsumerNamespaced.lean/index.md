@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCutoffOneEstimateConsumerNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCutoffOneEstimateConsumerNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCutoffOneEstimateConsumerNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCutoffOneEstimateConsumerNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [estimate_of_cutoffOne_baseline_tail](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCutoffOneEstimateConsumerNamespaced.lean/declarations/estimate-of-cutoffone-baseline-tail.md) | 23 | `result-track:f66b50df5d4a16060281a67a4ea8bc5378f7157d929e7337676ea7eb16c33c9d` |
+| 1 | `theorem` | [estimate_of_cutoffOne_baseline_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCutoffOneEstimateConsumerNamespaced.lean/declarations/estimate-of-cutoffone-baseline-tail.md) | 23 | `result-track:f66b50df5d4a16060281a67a4ea8bc5378f7157d929e7337676ea7eb16c33c9d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

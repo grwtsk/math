@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/RingEquiv.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/RingEquiv.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/RingEquiv.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/RingEquiv.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [map_list_prod](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/RingEquiv.lean/declarations/map-list-prod.md) | 19 | `result-track:dd18ab0133bd250b2188dcb6477a60b30eb81acb939d8eee5c6ef5eb436b9f58` |
-| 2 | `theorem` | [map_list_sum](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/RingEquiv.lean/declarations/map-list-sum.md) | 22 | `result-track:2b047ab68a75bfc666a3b534fa959426174e4af068c5b9322b879440f45a1766` |
-| 3 | `theorem` | [unop_map_list_prod](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/RingEquiv.lean/declarations/unop-map-list-prod.md) | 26 | `result-track:39d5d931ab268e6bf65a40a2845d8f15b438b3dfd6b977630fb5ebf33327f9b0` |
-| 4 | `theorem` | [map_multiset_prod](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/RingEquiv.lean/declarations/map-multiset-prod.md) | 30 | `result-track:94e2a7d39cdd1f58a638cc9ceff598d942a8ecc2ab101ae43c9975cf5e95a806` |
-| 5 | `theorem` | [map_multiset_sum](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/RingEquiv.lean/declarations/map-multiset-sum.md) | 34 | `result-track:1314362eeeb3f4d903d83a96f65c6202a7c9b40f54eaa5bff16f7a963bae1b44` |
-| 6 | `theorem` | [map_prod](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/RingEquiv.lean/declarations/map-prod.md) | 38 | `result-track:38d3c5519488cd5baf76d7f5cd5d9063b0270a6f572097ab94a0ec7eba1ed7b2` |
-| 7 | `theorem` | [map_sum](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/RingEquiv.lean/declarations/map-sum.md) | 42 | `result-track:61c2c5aa78ec1d223d38aaed5ee91e800690fbddb388c5602ea0c6fd33600974` |
+| 1 | `theorem` | [map_list_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/RingEquiv.lean/declarations/map-list-prod.md) | 19 | `result-track:dd18ab0133bd250b2188dcb6477a60b30eb81acb939d8eee5c6ef5eb436b9f58` |
+| 2 | `theorem` | [map_list_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/RingEquiv.lean/declarations/map-list-sum.md) | 22 | `result-track:2b047ab68a75bfc666a3b534fa959426174e4af068c5b9322b879440f45a1766` |
+| 3 | `theorem` | [unop_map_list_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/RingEquiv.lean/declarations/unop-map-list-prod.md) | 26 | `result-track:39d5d931ab268e6bf65a40a2845d8f15b438b3dfd6b977630fb5ebf33327f9b0` |
+| 4 | `theorem` | [map_multiset_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/RingEquiv.lean/declarations/map-multiset-prod.md) | 30 | `result-track:94e2a7d39cdd1f58a638cc9ceff598d942a8ecc2ab101ae43c9975cf5e95a806` |
+| 5 | `theorem` | [map_multiset_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/RingEquiv.lean/declarations/map-multiset-sum.md) | 34 | `result-track:1314362eeeb3f4d903d83a96f65c6202a7c9b40f54eaa5bff16f7a963bae1b44` |
+| 6 | `theorem` | [map_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/RingEquiv.lean/declarations/map-prod.md) | 38 | `result-track:38d3c5519488cd5baf76d7f5cd5d9063b0270a6f572097ab94a0ec7eba1ed7b2` |
+| 7 | `theorem` | [map_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/RingEquiv.lean/declarations/map-sum.md) | 42 | `result-track:61c2c5aa78ec1d223d38aaed5ee91e800690fbddb388c5602ea0c6fd33600974` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

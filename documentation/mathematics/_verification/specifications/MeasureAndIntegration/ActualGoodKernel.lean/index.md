@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ActualGoodKernel.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ActualGoodKernel.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualGoodKernel.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualGoodKernel.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actualLogSource_contDiff](../../../../MeasureAndIntegration/ActualGoodKernel.lean/declarations/actuallogsource-contdiff.md) | 18 | `result-track:93f703f9d9c1fc0b976d652c79627fc72d97575c6779b43350d361c397c7ba18` |
-| 2 | `theorem` | [actualLogSource_tendsto_zero](../../../../MeasureAndIntegration/ActualGoodKernel.lean/declarations/actuallogsource-tendsto-zero.md) | 36 | `result-track:9e0bbd74abbad90c4d28b6beb17eb84ace89082619fa06d617ee547fc64c1cae` |
-| 3 | `theorem` | [actualLogSource_deriv_hasCompactSupport](../../../../MeasureAndIntegration/ActualGoodKernel.lean/declarations/actuallogsource-deriv-hascompactsupport.md) | 43 | `result-track:50974291eb6e746804a99a9298088cf27e275104199e6d6ee54381783401dfcf` |
-| 4 | `theorem` | [actualLogSource_integrable_global](../../../../MeasureAndIntegration/ActualGoodKernel.lean/declarations/actuallogsource-integrable-global.md) | 47 | `result-track:f916e49c4585283c13829f1fb80abc79e66cd538b8dbc4cbc97e6fefb7b432a6` |
-| 5 | `theorem` | [actualLogSource_weighted_derivative_integrable_global](../../../../MeasureAndIntegration/ActualGoodKernel.lean/declarations/actuallogsource-weighted-derivative-integrable-global.md) | 52 | `result-track:46450326f68b0eb28def53add785e2836d5be78bf701479517c512c71a74ed86` |
-| 6 | `theorem` | [actualLogSource_weighted_derivative_integrable](../../../../MeasureAndIntegration/ActualGoodKernel.lean/declarations/actuallogsource-weighted-derivative-integrable.md) | 59 | `result-track:ab5bae73c86837bf1422970badbadfea2f36f6d16b87fd42521f39894eff8d4b` |
-| 7 | `theorem` | [actual_good_kernel_hypotheses](../../../../MeasureAndIntegration/ActualGoodKernel.lean/declarations/actual-good-kernel-hypotheses.md) | 63 | `result-track:8c4f707d93145f0ee7f1a3eef5f341a3a8ab5711e2a325a7935c005358d36c98` |
+| 1 | `theorem` | [actualLogSource_contDiff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualGoodKernel.lean/declarations/actuallogsource-contdiff.md) | 18 | `result-track:93f703f9d9c1fc0b976d652c79627fc72d97575c6779b43350d361c397c7ba18` |
+| 2 | `theorem` | [actualLogSource_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualGoodKernel.lean/declarations/actuallogsource-tendsto-zero.md) | 36 | `result-track:9e0bbd74abbad90c4d28b6beb17eb84ace89082619fa06d617ee547fc64c1cae` |
+| 3 | `theorem` | [actualLogSource_deriv_hasCompactSupport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualGoodKernel.lean/declarations/actuallogsource-deriv-hascompactsupport.md) | 43 | `result-track:50974291eb6e746804a99a9298088cf27e275104199e6d6ee54381783401dfcf` |
+| 4 | `theorem` | [actualLogSource_integrable_global](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualGoodKernel.lean/declarations/actuallogsource-integrable-global.md) | 47 | `result-track:f916e49c4585283c13829f1fb80abc79e66cd538b8dbc4cbc97e6fefb7b432a6` |
+| 5 | `theorem` | [actualLogSource_weighted_derivative_integrable_global](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualGoodKernel.lean/declarations/actuallogsource-weighted-derivative-integrable-global.md) | 52 | `result-track:46450326f68b0eb28def53add785e2836d5be78bf701479517c512c71a74ed86` |
+| 6 | `theorem` | [actualLogSource_weighted_derivative_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualGoodKernel.lean/declarations/actuallogsource-weighted-derivative-integrable.md) | 59 | `result-track:ab5bae73c86837bf1422970badbadfea2f36f6d16b87fd42521f39894eff8d4b` |
+| 7 | `theorem` | [actual_good_kernel_hypotheses](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualGoodKernel.lean/declarations/actual-good-kernel-hypotheses.md) | 63 | `result-track:8c4f707d93145f0ee7f1a3eef5f341a3a8ab5711e2a325a7935c005358d36c98` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

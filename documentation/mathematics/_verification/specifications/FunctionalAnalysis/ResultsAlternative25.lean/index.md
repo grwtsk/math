@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/ResultsAlternative25.lean/index.md) · [Full source](../../../../FunctionalAnalysis/ResultsAlternative25.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ResultsAlternative25.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ResultsAlternative25.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [GeometryCapability](../../../../FunctionalAnalysis/ResultsAlternative25.lean/declarations/geometrycapability.md) | 7 | `declaration-track:8c7a7b6c96d053e1745ca81ba3825a0452149801a1f29e5d7d734fdc6713ceab` |
+| 1 | `inductive` | [GeometryCapability](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ResultsAlternative25.lean/declarations/geometrycapability.md) | 7 | `declaration-track:8c7a7b6c96d053e1745ca81ba3825a0452149801a1f29e5d7d734fdc6713ceab` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

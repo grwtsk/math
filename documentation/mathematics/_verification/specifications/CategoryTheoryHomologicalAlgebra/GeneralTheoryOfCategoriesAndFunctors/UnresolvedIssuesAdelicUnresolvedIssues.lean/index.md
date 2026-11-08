@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UnresolvedIssuesAdelicUnresolvedIssues.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UnresolvedIssuesAdelicUnresolvedIssues.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UnresolvedIssuesAdelicUnresolvedIssues.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UnresolvedIssuesAdelicUnresolvedIssues.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [AdelicUnresolvedIssues](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UnresolvedIssuesAdelicUnresolvedIssues.lean/declarations/adelicunresolvedissues.md) | 18 | `declaration-track:c198524cb2aa0c3601d28c4d087d5867ab67c2d6c9400df51c438cba62493909` |
-| 2 | `def` | [unresolvedIssues](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UnresolvedIssuesAdelicUnresolvedIssues.lean/declarations/unresolvedissues.md) | 32 | `declaration-track:c2ff00003d28ce59d4b91fbee5b1bf5453f9283fd4befe3babb391b17d76aa85` |
+| 1 | `structure` | [AdelicUnresolvedIssues](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UnresolvedIssuesAdelicUnresolvedIssues.lean/declarations/adelicunresolvedissues.md) | 18 | `declaration-track:c198524cb2aa0c3601d28c4d087d5867ab67c2d6c9400df51c438cba62493909` |
+| 2 | `def` | [unresolvedIssues](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UnresolvedIssuesAdelicUnresolvedIssues.lean/declarations/unresolvedissues.md) | 32 | `declaration-track:c2ff00003d28ce59d4b91fbee5b1bf5453f9283fd4befe3babb391b17d76aa85` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

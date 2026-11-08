@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZeroSideNamespacedEventuallyTailPackageDOfLocalCount.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZeroSideNamespacedEventuallyTailPackageDOfLocalCount.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZeroSideNamespacedEventuallyTailPackageDOfLocalCount.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZeroSideNamespacedEventuallyTailPackageDOfLocalCount.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [eventually_tailPackageD_of_localCount](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZeroSideNamespacedEventuallyTailPackageDOfLocalCount.lean/declarations/eventually-tailpackaged-of-localcount.md) | 44 | `result-track:6e6fe740262d9cdf2c10642972ffcfabd46bcd118e18c735af8f2f9255e81a06` |
-| 2 | `theorem` | [GzGpDChi_of](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZeroSideNamespacedEventuallyTailPackageDOfLocalCount.lean/declarations/gzgpdchi-of.md) | 63 | `result-track:d1fb2ed0ae5986e0a0905ae5b0f87e68aebc12d1b45d28799e90279b638793dc` |
-| 3 | `theorem` | [eventually_GzGpDChi](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZeroSideNamespacedEventuallyTailPackageDOfLocalCount.lean/declarations/eventually-gzgpdchi.md) | 73 | `result-track:d33927085ccac27542b581d01e287da3b0f0dc4062719615176bfcb6d565878c` |
+| 1 | `theorem` | [eventually_tailPackageD_of_localCount](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZeroSideNamespacedEventuallyTailPackageDOfLocalCount.lean/declarations/eventually-tailpackaged-of-localcount.md) | 44 | `result-track:6e6fe740262d9cdf2c10642972ffcfabd46bcd118e18c735af8f2f9255e81a06` |
+| 2 | `theorem` | [GzGpDChi_of](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZeroSideNamespacedEventuallyTailPackageDOfLocalCount.lean/declarations/gzgpdchi-of.md) | 63 | `result-track:d1fb2ed0ae5986e0a0905ae5b0f87e68aebc12d1b45d28799e90279b638793dc` |
+| 3 | `theorem` | [eventually_GzGpDChi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZeroSideNamespacedEventuallyTailPackageDOfLocalCount.lean/declarations/eventually-gzgpdchi.md) | 73 | `result-track:d33927085ccac27542b581d01e287da3b0f0dc4062719615176bfcb6d565878c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

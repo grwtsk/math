@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/JacobianConjectureResultsAlternative.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/JacobianConjectureResultsAlternative.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/JacobianConjectureResultsAlternative.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/JacobianConjectureResultsAlternative.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [polynomialMap](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/JacobianConjectureResultsAlternative.lean/declarations/polynomialmap.md) | 22 | `declaration-track:8dbf0baf1899b1ccfbd569a5da529f5045d3727a9cea7da4669bd650a9041c71` |
-| 2 | `def` | [polynomialJacobian](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/JacobianConjectureResultsAlternative.lean/declarations/polynomialjacobian.md) | 26 | `declaration-track:5c749849d6b1787cb148165b9d30fbdd914e7413d803348ef2b54338909a2807` |
-| 3 | `def` | [correctionPoly](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/JacobianConjectureResultsAlternative.lean/declarations/correctionpoly.md) | 31 | `declaration-track:a722e362a3ecbe5268f7c38d0f2234486a9910257639ec79edce7e9fa1c307dd` |
-| 4 | `theorem` | [correction_poly_eval](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/JacobianConjectureResultsAlternative.lean/declarations/correction-poly-eval.md) | 36 | `result-track:c233acd4a993c31e10db34e791a10e11b4bbedfe6d7340604e50517ccfefcf74` |
-| 5 | `theorem` | [correction_poly_eval_id](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/JacobianConjectureResultsAlternative.lean/declarations/correction-poly-eval-id.md) | 43 | `result-track:f71cff5ebc3b08883383ae579805cbd4fbc60b579cd4d09613e9b4b0ca0cac4f` |
-| 6 | `theorem` | [correction_poly_jacobian](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/JacobianConjectureResultsAlternative.lean/declarations/correction-poly-jacobian.md) | 51 | `result-track:570fca2c9e99cc78b624bfe2a4508889d3e69275afb2b6f1a0f1e98e0fb75cf5` |
-| 7 | `theorem` | [one_sub_correction_poly_jacobian](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/JacobianConjectureResultsAlternative.lean/declarations/one-sub-correction-poly-jacobian.md) | 58 | `result-track:502c46e5b5fb1d5c42de1b6de3825d8ac8d6770ed070c610aae5d9b857e4b9f5` |
+| 1 | `def` | [polynomialMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/JacobianConjectureResultsAlternative.lean/declarations/polynomialmap.md) | 22 | `declaration-track:8dbf0baf1899b1ccfbd569a5da529f5045d3727a9cea7da4669bd650a9041c71` |
+| 2 | `def` | [polynomialJacobian](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/JacobianConjectureResultsAlternative.lean/declarations/polynomialjacobian.md) | 26 | `declaration-track:5c749849d6b1787cb148165b9d30fbdd914e7413d803348ef2b54338909a2807` |
+| 3 | `def` | [correctionPoly](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/JacobianConjectureResultsAlternative.lean/declarations/correctionpoly.md) | 31 | `declaration-track:a722e362a3ecbe5268f7c38d0f2234486a9910257639ec79edce7e9fa1c307dd` |
+| 4 | `theorem` | [correction_poly_eval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/JacobianConjectureResultsAlternative.lean/declarations/correction-poly-eval.md) | 36 | `result-track:c233acd4a993c31e10db34e791a10e11b4bbedfe6d7340604e50517ccfefcf74` |
+| 5 | `theorem` | [correction_poly_eval_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/JacobianConjectureResultsAlternative.lean/declarations/correction-poly-eval-id.md) | 43 | `result-track:f71cff5ebc3b08883383ae579805cbd4fbc60b579cd4d09613e9b4b0ca0cac4f` |
+| 6 | `theorem` | [correction_poly_jacobian](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/JacobianConjectureResultsAlternative.lean/declarations/correction-poly-jacobian.md) | 51 | `result-track:570fca2c9e99cc78b624bfe2a4508889d3e69275afb2b6f1a0f1e98e0fb75cf5` |
+| 7 | `theorem` | [one_sub_correction_poly_jacobian](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/JacobianConjectureResultsAlternative.lean/declarations/one-sub-correction-poly-jacobian.md) | 58 | `result-track:502c46e5b5fb1d5c42de1b6de3825d8ac8d6770ed070c610aae5d9b857e4b9f5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/NegNamespacedPublicBlastNeg.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/NegNamespacedPublicBlastNeg.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/NegNamespacedPublicBlastNeg.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/NegNamespacedPublicBlastNeg.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [blastNeg](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/NegNamespacedPublicBlastNeg.lean/declarations/blastneg.md) | 36 | `declaration-track:a4b7ec0202e4e991f6a310c4b25a05bf0dfa8e55f2e8c4d38dc6f7176fe95949` |
-| 2 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/NegNamespacedPublicBlastNeg.lean/declarations/instance.md) | 45 | `declaration-track:85550b4e0c7e32a1e6143bf03559343704c5e898cae2c41340e579a89588e37e` |
+| 1 | `def` | [blastNeg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/NegNamespacedPublicBlastNeg.lean/declarations/blastneg.md) | 36 | `declaration-track:a4b7ec0202e4e991f6a310c4b25a05bf0dfa8e55f2e8c4d38dc6f7176fe95949` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/NegNamespacedPublicBlastNeg.lean/declarations/instance.md) | 45 | `declaration-track:85550b4e0c7e32a1e6143bf03559343704c5e898cae2c41340e579a89588e37e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

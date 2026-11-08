@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompletionAdapter.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompletionAdapter.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompletionAdapter.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompletionAdapter.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PresentationCompletionAdapter](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompletionAdapter.lean/declarations/presentationcompletionadapter.md) | 13 | `declaration-track:11c477e5b2e78320c3a4531dfec81c3ccd8a773c90ce30a016705af7240ac853` |
-| 2 | `structure` | [CandidatePresentationCompletion](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompletionAdapter.lean/declarations/candidatepresentationcompletion.md) | 27 | `declaration-track:561b2c4e1d6ca1c83dc9abe907d2f193ab2176797fd679340e867a1fa5704d0f` |
-| 3 | `theorem` | [candidate_completion_is_nonauthoritative](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompletionAdapter.lean/declarations/candidate-completion-is-nonauthoritative.md) | 39 | `result-track:612f446e98015d461f13848f97517f9b8185a6c7ad1e3b059a3f6a34f78a4b54` |
+| 1 | `structure` | [PresentationCompletionAdapter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompletionAdapter.lean/declarations/presentationcompletionadapter.md) | 13 | `declaration-track:11c477e5b2e78320c3a4531dfec81c3ccd8a773c90ce30a016705af7240ac853` |
+| 2 | `structure` | [CandidatePresentationCompletion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompletionAdapter.lean/declarations/candidatepresentationcompletion.md) | 27 | `declaration-track:561b2c4e1d6ca1c83dc9abe907d2f193ab2176797fd679340e867a1fa5704d0f` |
+| 3 | `theorem` | [candidate_completion_is_nonauthoritative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompletionAdapter.lean/declarations/candidate-completion-is-nonauthoritative.md) | 39 | `result-track:612f446e98015d461f13848f97517f9b8185a6c7ad1e3b059a3f6a34f78a4b54` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

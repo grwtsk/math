@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/OrderClosedExtr.lean/index.md) · [Full source](../../../../GeneralTopology/OrderClosedExtr.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OrderClosedExtr.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OrderClosedExtr.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [isLocalMax_of_mono_anti](../../../../GeneralTopology/OrderClosedExtr.lean/declarations/islocalmax-of-mono-anti.md) | 33 | `result-track:31e0c82daf7337fab8e947132e5fe07c53309652b5ed08a610b54ba1bfd5f2e0` |
-| 2 | `lemma` | [isLocalMin_of_anti_mono](../../../../GeneralTopology/OrderClosedExtr.lean/declarations/islocalmin-of-anti-mono.md) | 43 | `result-track:ec434dee5ff239c5bb8332caa65719ede41a6c329f41760b36a38ad1c35ed010` |
+| 1 | `lemma` | [isLocalMax_of_mono_anti](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OrderClosedExtr.lean/declarations/islocalmax-of-mono-anti.md) | 33 | `result-track:31e0c82daf7337fab8e947132e5fe07c53309652b5ed08a610b54ba1bfd5f2e0` |
+| 2 | `lemma` | [isLocalMin_of_anti_mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OrderClosedExtr.lean/declarations/islocalmin-of-anti-mono.md) | 43 | `result-track:ec434dee5ff239c5bb8332caa65719ede41a6c329f41760b36a38ad1c35ed010` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

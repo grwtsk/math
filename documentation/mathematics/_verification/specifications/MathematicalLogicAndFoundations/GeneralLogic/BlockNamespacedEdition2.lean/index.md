@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BlockNamespacedEdition2.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BlockNamespacedEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BlockNamespacedEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BlockNamespacedEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [UnitSemanticReceipt](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BlockNamespacedEdition2.lean/declarations/unitsemanticreceipt.md) | 18 | `declaration-track:fb2620283095180eb509c4863b98c18c6b0daf19a29855238186cb36d0769e5c` |
-| 2 | `structure` | [SourceAtom](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BlockNamespacedEdition2.lean/declarations/sourceatom.md) | 29 | `declaration-track:caf77575c99260ee8e98372b9f02221cbf7a991c8e7f74b6e99cde0904e65c67` |
-| 3 | `def` | [SourceAtom.Valid](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BlockNamespacedEdition2.lean/declarations/sourceatom-valid.md) | 42 | `declaration-track:e9ccf9bf80272cf77ba133f52195d354a83d329b0609137cf94da8ed43175c18` |
+| 1 | `structure` | [UnitSemanticReceipt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BlockNamespacedEdition2.lean/declarations/unitsemanticreceipt.md) | 18 | `declaration-track:fb2620283095180eb509c4863b98c18c6b0daf19a29855238186cb36d0769e5c` |
+| 2 | `structure` | [SourceAtom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BlockNamespacedEdition2.lean/declarations/sourceatom.md) | 29 | `declaration-track:caf77575c99260ee8e98372b9f02221cbf7a991c8e7f74b6e99cde0904e65c67` |
+| 3 | `def` | [SourceAtom.Valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BlockNamespacedEdition2.lean/declarations/sourceatom-valid.md) | 42 | `declaration-track:e9ccf9bf80272cf77ba133f52195d354a83d329b0609137cf94da8ed43175c18` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

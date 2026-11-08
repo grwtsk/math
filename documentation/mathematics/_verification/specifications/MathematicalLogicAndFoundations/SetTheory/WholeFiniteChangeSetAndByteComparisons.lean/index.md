@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/SetTheory/WholeFiniteChangeSetAndByteComparisons.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/SetTheory/WholeFiniteChangeSetAndByteComparisons.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/WholeFiniteChangeSetAndByteComparisons.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/WholeFiniteChangeSetAndByteComparisons.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ChangeSet](../../../../../MathematicalLogicAndFoundations/SetTheory/WholeFiniteChangeSetAndByteComparisons.lean/declarations/changeset.md) | 41 | `declaration-track:e3bed739c20077dd8be45575242a6785589fd430072247804ac009d4aa5f4789` |
-| 2 | `def` | [between](../../../../../MathematicalLogicAndFoundations/SetTheory/WholeFiniteChangeSetAndByteComparisons.lean/declarations/between.md) | 49 | `declaration-track:3aa55fdea146a07797f2b758ea09fd7808c30ede27cc4efe78e533d0a587dd9d` |
-| 3 | `theorem` | [mem_between_implementation_iff](../../../../../MathematicalLogicAndFoundations/SetTheory/WholeFiniteChangeSetAndByteComparisons.lean/declarations/mem-between-implementation-iff.md) | 60 | `result-track:2576af2c8d46c1426dcb170314271f3ec9d365ca12b301713599bc9834fadafe` |
-| 4 | `theorem` | [mem_between_public_iff](../../../../../MathematicalLogicAndFoundations/SetTheory/WholeFiniteChangeSetAndByteComparisons.lean/declarations/mem-between-public-iff.md) | 70 | `result-track:14455707e502e88a913b324a661458d4796f3c4d1ff7763c7b06d562ab904afa` |
-| 5 | `theorem` | [mem_between_runtime_iff](../../../../../MathematicalLogicAndFoundations/SetTheory/WholeFiniteChangeSetAndByteComparisons.lean/declarations/mem-between-runtime-iff.md) | 80 | `result-track:74b260b7e3397e5bff13dce995ece151b22ba02eed0c1ddeb12f1190aa43d311` |
+| 1 | `structure` | [ChangeSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/WholeFiniteChangeSetAndByteComparisons.lean/declarations/changeset.md) | 41 | `declaration-track:e3bed739c20077dd8be45575242a6785589fd430072247804ac009d4aa5f4789` |
+| 2 | `def` | [between](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/WholeFiniteChangeSetAndByteComparisons.lean/declarations/between.md) | 49 | `declaration-track:3aa55fdea146a07797f2b758ea09fd7808c30ede27cc4efe78e533d0a587dd9d` |
+| 3 | `theorem` | [mem_between_implementation_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/WholeFiniteChangeSetAndByteComparisons.lean/declarations/mem-between-implementation-iff.md) | 60 | `result-track:2576af2c8d46c1426dcb170314271f3ec9d365ca12b301713599bc9834fadafe` |
+| 4 | `theorem` | [mem_between_public_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/WholeFiniteChangeSetAndByteComparisons.lean/declarations/mem-between-public-iff.md) | 70 | `result-track:14455707e502e88a913b324a661458d4796f3c4d1ff7763c7b06d562ab904afa` |
+| 5 | `theorem` | [mem_between_runtime_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/WholeFiniteChangeSetAndByteComparisons.lean/declarations/mem-between-runtime-iff.md) | 80 | `result-track:74b260b7e3397e5bff13dce995ece151b22ba02eed0c1ddeb12f1190aa43d311` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

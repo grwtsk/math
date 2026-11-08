@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AB45c3cddd8da8aNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AB45c3cddd8da8aNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AB45c3cddd8da8aNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AB45c3cddd8da8aNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [losslessNatEncoding_injective](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AB45c3cddd8da8aNamespaced.lean/declarations/losslessnatencoding-injective.md) | 19 | `result-track:1cb1ee3c3d9a3ecffb3b8308484b109de2767543183dc0eeb414f3de49e8b50e` |
+| 1 | `theorem` | [losslessNatEncoding_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AB45c3cddd8da8aNamespaced.lean/declarations/losslessnatencoding-injective.md) | 19 | `result-track:1cb1ee3c3d9a3ecffb3b8308484b109de2767543183dc0eeb414f3de49e8b50e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

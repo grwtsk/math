@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/LemmaAligned.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/LemmaAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/LemmaAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/LemmaAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `macro_rules` | [(anonymous)](../../../../../Combinatorics/GraphTheory/LemmaAligned.lean/declarations/macro-rules.md) | 71 | `declaration-track:da19b3d63b15ff1a146aac28da3a98f044f6ddb6a38343d5ccf6a239fad30a1b` |
-| 2 | `theorem` | [szemeredi_regularity](../../../../../Combinatorics/GraphTheory/LemmaAligned.lean/declarations/szemeredi-regularity.md) | 77 | `result-track:3ebe86e505ac886812a76028cd4b9d9a9c4eef3676ec1fbc7485c02ae503b4de` |
+| 1 | `macro_rules` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/LemmaAligned.lean/declarations/macro-rules.md) | 71 | `declaration-track:da19b3d63b15ff1a146aac28da3a98f044f6ddb6a38343d5ccf6a239fad30a1b` |
+| 2 | `theorem` | [szemeredi_regularity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/LemmaAligned.lean/declarations/szemeredi-regularity.md) | 77 | `result-track:3ebe86e505ac886812a76028cd4b9d9a9c4eef3676ec1fbc7485c02ae503b4de` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

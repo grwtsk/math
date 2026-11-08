@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/Depth.lean/index.md) · [Full source](../../../../CommutativeAlgebra/Depth.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Depth.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Depth.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -63,8 +63,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [linearMap_subsingleton_of_mem_annihilator](../../../../CommutativeAlgebra/Depth.lean/declarations/linearmap-subsingleton-of-mem-annihilator.md) | 35 | `result-track:9f2f1f6589619c3be96b7d36a8575f72a9a4a04dc5f4f1c1baa3dcf364b8958d` |
-| 2 | `lemma` | [subsingleton_linearMap_iff](../../../../CommutativeAlgebra/Depth.lean/declarations/subsingleton-linearmap-iff.md) | 42 | `result-track:7726acedf1640da35e30e0adf4d1bf80d5f969c9d22e3c09ad957871b3e46957` |
+| 1 | `lemma` | [linearMap_subsingleton_of_mem_annihilator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Depth.lean/declarations/linearmap-subsingleton-of-mem-annihilator.md) | 35 | `result-track:9f2f1f6589619c3be96b7d36a8575f72a9a4a04dc5f4f1c1baa3dcf364b8958d` |
+| 2 | `lemma` | [subsingleton_linearMap_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Depth.lean/declarations/subsingleton-linearmap-iff.md) | 42 | `result-track:7726acedf1640da35e30e0adf4d1bf80d5f969c9d22e3c09ad957871b3e46957` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

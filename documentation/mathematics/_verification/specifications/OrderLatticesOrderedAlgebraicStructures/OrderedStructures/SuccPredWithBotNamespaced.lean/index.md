@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SuccPredWithBotNamespaced.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SuccPredWithBotNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SuccPredWithBotNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SuccPredWithBotNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [succ_natCast](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SuccPredWithBotNamespaced.lean/declarations/succ-natcast.md) | 25 | `result-track:434e4babb6dc6e531712b2751097ec7c2f4c06f05e11469ff5a43127ff0aa763` |
-| 2 | `lemma` | [succ_zero](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SuccPredWithBotNamespaced.lean/declarations/succ-zero.md) | 28 | `result-track:a1f394993d2492fafeb7350a0aa371519e2d5fda1b717fc39274139e84d0995e` |
-| 3 | `lemma` | [succ_one](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SuccPredWithBotNamespaced.lean/declarations/succ-one.md) | 31 | `result-track:e8b6fd99b76111d9f5ad6802a2226097289cbd4afb9ebbffe90deb0c73829a19` |
-| 4 | `lemma` | [succ_ofNat](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SuccPredWithBotNamespaced.lean/declarations/succ-ofnat.md) | 34 | `result-track:5041009e48d5a22e9c115ce595cf9bac66c9f83adc68d97aa485458525692d27` |
-| 5 | `lemma` | [one_le_iff_pos](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SuccPredWithBotNamespaced.lean/declarations/one-le-iff-pos.md) | 37 | `result-track:44e282dde291d36ff5ef9fe7bd00b2db253fbf6fa263407d55813768da1ae6c4` |
+| 1 | `lemma` | [succ_natCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SuccPredWithBotNamespaced.lean/declarations/succ-natcast.md) | 25 | `result-track:434e4babb6dc6e531712b2751097ec7c2f4c06f05e11469ff5a43127ff0aa763` |
+| 2 | `lemma` | [succ_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SuccPredWithBotNamespaced.lean/declarations/succ-zero.md) | 28 | `result-track:a1f394993d2492fafeb7350a0aa371519e2d5fda1b717fc39274139e84d0995e` |
+| 3 | `lemma` | [succ_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SuccPredWithBotNamespaced.lean/declarations/succ-one.md) | 31 | `result-track:e8b6fd99b76111d9f5ad6802a2226097289cbd4afb9ebbffe90deb0c73829a19` |
+| 4 | `lemma` | [succ_ofNat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SuccPredWithBotNamespaced.lean/declarations/succ-ofnat.md) | 34 | `result-track:5041009e48d5a22e9c115ce595cf9bac66c9f83adc68d97aa485458525692d27` |
+| 5 | `lemma` | [one_le_iff_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SuccPredWithBotNamespaced.lean/declarations/one-le-iff-pos.md) | 37 | `result-track:44e282dde291d36ff5ef9fe7bd00b2db253fbf6fa263407d55813768da1ae6c4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

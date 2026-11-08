@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/ExtendToLocalizationNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/ExtendToLocalizationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ExtendToLocalizationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ExtendToLocalizationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Valuation.extendToLocalization](../../../../CommutativeAlgebra/ExtendToLocalizationNamespaced.lean/declarations/valuation-extendtolocalization.md) | 34 | `declaration-track:e131962aeeeefb0149c1e351c6b3cabdaa2977568a8b894b98aa0d7e611bc84c` |
-| 2 | `theorem` | [Valuation.extendToLocalization_mk'](../../../../CommutativeAlgebra/ExtendToLocalizationNamespaced.lean/declarations/valuation-extendtolocalization-mk.md) | 58 | `result-track:910515235814842875b226fa06f6f5987da89f7b29e42dac32dbbc7da5edc65f` |
-| 3 | `theorem` | [Valuation.extendToLocalization_apply_map_apply](../../../../CommutativeAlgebra/ExtendToLocalizationNamespaced.lean/declarations/valuation-extendtolocalization-apply-map-apply.md) | 64 | `result-track:270600c24b3327e9fdbcd140da7bab84e690728ff3c4b76740374ce228e13a38` |
+| 1 | `def` | [Valuation.extendToLocalization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ExtendToLocalizationNamespaced.lean/declarations/valuation-extendtolocalization.md) | 34 | `declaration-track:e131962aeeeefb0149c1e351c6b3cabdaa2977568a8b894b98aa0d7e611bc84c` |
+| 2 | `theorem` | [Valuation.extendToLocalization_mk'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ExtendToLocalizationNamespaced.lean/declarations/valuation-extendtolocalization-mk.md) | 58 | `result-track:910515235814842875b226fa06f6f5987da89f7b29e42dac32dbbc7da5edc65f` |
+| 3 | `theorem` | [Valuation.extendToLocalization_apply_map_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ExtendToLocalizationNamespaced.lean/declarations/valuation-extendtolocalization-apply-map-apply.md) | 64 | `result-track:270600c24b3327e9fdbcd140da7bab84e690728ff3c4b76740374ce228e13a38` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

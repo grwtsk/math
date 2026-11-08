@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IndizationFilteredColimitsNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IndizationFilteredColimitsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IndizationFilteredColimitsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IndizationFilteredColimitsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,11 +62,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [compYonedaColimitIsoColimitCompYoneda](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IndizationFilteredColimitsNamespaced.lean/declarations/compyonedacolimitisocolimitcompyoneda.md) | 66 | `declaration-track:cad9d7b67bd74550643c1e835bf9b834722131ddfcf558f436e9f5cf74476307` |
-| 2 | `theorem` | [exists_nonempty_limit_obj_of_colimit](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IndizationFilteredColimitsNamespaced.lean/declarations/exists-nonempty-limit-obj-of-colimit.md) | 74 | `result-track:2fd62fd552310cd33d219343b6c9bed93887658e03e60f8cde2e1364e8898901` |
-| 3 | `theorem` | [exists_nonempty_limit_obj_of_isColimit](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IndizationFilteredColimitsNamespaced.lean/declarations/exists-nonempty-limit-obj-of-iscolimit.md) | 86 | `result-track:a0aa5ef00e5a2f307690604f29da31e943da3204e0877c9d0a89065ac0f4a79d` |
-| 4 | `theorem` | [isFiltered](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IndizationFilteredColimitsNamespaced.lean/declarations/isfiltered.md) | 96 | `result-track:b4a4383f09ff011a37ab7edae80dbc66eeee5c646ceb2d4e882e68bafeb60f1d` |
-| 5 | `theorem` | [isIndObject_colimit](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IndizationFilteredColimitsNamespaced.lean/declarations/isindobject-colimit.md) | 146 | `result-track:6cf8226669d50011fe6f92406376653818a70da2f4b92c53cc01cd0eb90da5ec` |
+| 1 | `def` | [compYonedaColimitIsoColimitCompYoneda](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IndizationFilteredColimitsNamespaced.lean/declarations/compyonedacolimitisocolimitcompyoneda.md) | 66 | `declaration-track:cad9d7b67bd74550643c1e835bf9b834722131ddfcf558f436e9f5cf74476307` |
+| 2 | `theorem` | [exists_nonempty_limit_obj_of_colimit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IndizationFilteredColimitsNamespaced.lean/declarations/exists-nonempty-limit-obj-of-colimit.md) | 74 | `result-track:2fd62fd552310cd33d219343b6c9bed93887658e03e60f8cde2e1364e8898901` |
+| 3 | `theorem` | [exists_nonempty_limit_obj_of_isColimit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IndizationFilteredColimitsNamespaced.lean/declarations/exists-nonempty-limit-obj-of-iscolimit.md) | 86 | `result-track:a0aa5ef00e5a2f307690604f29da31e943da3204e0877c9d0a89065ac0f4a79d` |
+| 4 | `theorem` | [isFiltered](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IndizationFilteredColimitsNamespaced.lean/declarations/isfiltered.md) | 96 | `result-track:b4a4383f09ff011a37ab7edae80dbc66eeee5c646ceb2d4e882e68bafeb60f1d` |
+| 5 | `theorem` | [isIndObject_colimit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IndizationFilteredColimitsNamespaced.lean/declarations/isindobject-colimit.md) | 146 | `result-track:6cf8226669d50011fe6f92406376653818a70da2f4b92c53cc01cd0eb90da5ec` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

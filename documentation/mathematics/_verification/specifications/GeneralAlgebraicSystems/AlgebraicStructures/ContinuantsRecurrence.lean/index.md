@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ContinuantsRecurrence.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ContinuantsRecurrence.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ContinuantsRecurrence.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ContinuantsRecurrence.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [contsAux_recurrence](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ContinuantsRecurrence.lean/declarations/contsaux-recurrence.md) | 24 | `result-track:021d8a5c4f419ec8e0a9737f7065451451436283433232af1d86a7e61e601f5a` |
-| 2 | `theorem` | [conts_recurrenceAux](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ContinuantsRecurrence.lean/declarations/conts-recurrenceaux.md) | 30 | `result-track:0270414f6775e1582f68d99a36e7a5d9fc23a775ec5b6fcb5610a48df7fc91be` |
-| 3 | `theorem` | [conts_recurrence](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ContinuantsRecurrence.lean/declarations/conts-recurrence.md) | 38 | `result-track:cbd7e72164f57ae309a31ac48b9bb3f7561dda3a176796aa899f1d2697ab7327` |
-| 4 | `theorem` | [nums_recurrence](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ContinuantsRecurrence.lean/declarations/nums-recurrence.md) | 45 | `result-track:30fd6bfaf6adca7a5ccb48054f7925475b42b95acbc76af59c4673691bb62140` |
-| 5 | `theorem` | [dens_recurrence](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ContinuantsRecurrence.lean/declarations/dens-recurrence.md) | 57 | `result-track:04984ac76963eeb9ce8fd6a0c2874106ad3aca0f5ea0b3273324a0c860ec6cc7` |
+| 1 | `theorem` | [contsAux_recurrence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ContinuantsRecurrence.lean/declarations/contsaux-recurrence.md) | 24 | `result-track:021d8a5c4f419ec8e0a9737f7065451451436283433232af1d86a7e61e601f5a` |
+| 2 | `theorem` | [conts_recurrenceAux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ContinuantsRecurrence.lean/declarations/conts-recurrenceaux.md) | 30 | `result-track:0270414f6775e1582f68d99a36e7a5d9fc23a775ec5b6fcb5610a48df7fc91be` |
+| 3 | `theorem` | [conts_recurrence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ContinuantsRecurrence.lean/declarations/conts-recurrence.md) | 38 | `result-track:cbd7e72164f57ae309a31ac48b9bb3f7561dda3a176796aa899f1d2697ab7327` |
+| 4 | `theorem` | [nums_recurrence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ContinuantsRecurrence.lean/declarations/nums-recurrence.md) | 45 | `result-track:30fd6bfaf6adca7a5ccb48054f7925475b42b95acbc76af59c4673691bb62140` |
+| 5 | `theorem` | [dens_recurrence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ContinuantsRecurrence.lean/declarations/dens-recurrence.md) | 57 | `result-track:04984ac76963eeb9ce8fd6a0c2874106ad3aca0f5ea0b3273324a0c860ec6cc7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

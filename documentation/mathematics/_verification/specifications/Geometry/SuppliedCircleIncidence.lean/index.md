@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Geometry/SuppliedCircleIncidence.lean/index.md) · [Full source](../../../../Geometry/SuppliedCircleIncidence.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/SuppliedCircleIncidence.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/SuppliedCircleIncidence.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Point](../../../../Geometry/SuppliedCircleIncidence.lean/declarations/point.md) | 36 | `declaration-track:eb8843f256eb0ad44eb89a6746ae15d47b9f79426552738ce4282dce9c319f50` |
-| 2 | `def` | [squaredDistance](../../../../Geometry/SuppliedCircleIncidence.lean/declarations/squareddistance.md) | 42 | `declaration-track:269610bc2ec941fd867cb5f24253457dc32ef85b9445f976e3f341570eef79ea` |
-| 3 | `structure` | [Circle](../../../../Geometry/SuppliedCircleIncidence.lean/declarations/circle.md) | 47 | `declaration-track:ea560312aac9ee49b8dec340cc483860910452afe80387c74ea686bf384bce08` |
-| 4 | `def` | [Circle.Contains](../../../../Geometry/SuppliedCircleIncidence.lean/declarations/circle-contains.md) | 54 | `declaration-track:177bd23e44f48a5d1648d5c59202b9042268037d874b4b813fb9f923fbb715ec` |
-| 5 | `structure` | [CircumcircleDatum](../../../../Geometry/SuppliedCircleIncidence.lean/declarations/circumcircledatum.md) | 59 | `declaration-track:835b01fb821d36b60a4642e840322dbd987d1251f3aeb394cd8b2f4a0e2f3b2e` |
+| 1 | `structure` | [Point](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/SuppliedCircleIncidence.lean/declarations/point.md) | 36 | `declaration-track:eb8843f256eb0ad44eb89a6746ae15d47b9f79426552738ce4282dce9c319f50` |
+| 2 | `def` | [squaredDistance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/SuppliedCircleIncidence.lean/declarations/squareddistance.md) | 42 | `declaration-track:269610bc2ec941fd867cb5f24253457dc32ef85b9445f976e3f341570eef79ea` |
+| 3 | `structure` | [Circle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/SuppliedCircleIncidence.lean/declarations/circle.md) | 47 | `declaration-track:ea560312aac9ee49b8dec340cc483860910452afe80387c74ea686bf384bce08` |
+| 4 | `def` | [Circle.Contains](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/SuppliedCircleIncidence.lean/declarations/circle-contains.md) | 54 | `declaration-track:177bd23e44f48a5d1648d5c59202b9042268037d874b4b813fb9f923fbb715ec` |
+| 5 | `structure` | [CircumcircleDatum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/SuppliedCircleIncidence.lean/declarations/circumcircledatum.md) | 59 | `declaration-track:835b01fb821d36b60a4642e840322dbd987d1251f3aeb394cd8b2f4a0e2f3b2e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceFractionalQuadraturePositiveSamplesTsumEqSum.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceFractionalQuadraturePositiveSamplesTsumEqSum.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFractionalQuadraturePositiveSamplesTsumEqSum.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFractionalQuadraturePositiveSamplesTsumEqSum.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,14 +60,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [fract_eq_sub_of_unit_cell](../../../../MeasureAndIntegration/SourceFractionalQuadraturePositiveSamplesTsumEqSum.lean/declarations/fract-eq-sub-of-unit-cell.md) | 26 | `result-track:f418a186694174cc076d24285c655df399b2ed5b370f79ea09a1127e9359942b` |
-| 2 | `theorem` | [fract_deriv_intervalIntegrable](../../../../MeasureAndIntegration/SourceFractionalQuadraturePositiveSamplesTsumEqSum.lean/declarations/fract-deriv-intervalintegrable.md) | 33 | `result-track:c684f54a70b635c25194cf82e1030e30a3083cfba8589da66c1327d8f26d1c41` |
-| 3 | `theorem` | [unit_right_sampling_identity](../../../../MeasureAndIntegration/SourceFractionalQuadraturePositiveSamplesTsumEqSum.lean/declarations/unit-right-sampling-identity.md) | 47 | `result-track:c2dcab3f1520f7f9d761e562bf4e8a218e9a33230d5c9031848a74e626187bfa` |
-| 4 | `theorem` | [finite_quadrature](../../../../MeasureAndIntegration/SourceFractionalQuadraturePositiveSamplesTsumEqSum.lean/declarations/finite-quadrature.md) | 69 | `result-track:db49aedb98460ac33f3896c85b8c17c4ac5ba7119a98e699f997226a0a19d180` |
-| 5 | `theorem` | [finite_quadrature_of_endpoint_zero](../../../../MeasureAndIntegration/SourceFractionalQuadraturePositiveSamplesTsumEqSum.lean/declarations/finite-quadrature-of-endpoint-zero.md) | 92 | `result-track:3e9f50bd463b7efbb1e97965093d39066eac643f56244ac422532af314da34fe` |
-| 6 | `theorem` | [positive_axis_quadrature](../../../../MeasureAndIntegration/SourceFractionalQuadraturePositiveSamplesTsumEqSum.lean/declarations/positive-axis-quadrature.md) | 99 | `result-track:3514927d5044a517bed2365b51ac0c7d9380d31a42092dabed3b9edad2efbb06` |
-| 7 | `theorem` | [positive_samples_tsum_eq_sum](../../../../MeasureAndIntegration/SourceFractionalQuadraturePositiveSamplesTsumEqSum.lean/declarations/positive-samples-tsum-eq-sum.md) | 135 | `result-track:8fde228c83863290ec643a4a35db69351d0f6da1df6d5cbe97e963727b126f69` |
-| 8 | `theorem` | [positive_axis_tsum_quadrature](../../../../MeasureAndIntegration/SourceFractionalQuadraturePositiveSamplesTsumEqSum.lean/declarations/positive-axis-tsum-quadrature.md) | 153 | `result-track:a8399ec0111f1f39debc70ab7b39a5da9269fe52cdec498dee0c13a8f98e4349` |
+| 1 | `theorem` | [fract_eq_sub_of_unit_cell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFractionalQuadraturePositiveSamplesTsumEqSum.lean/declarations/fract-eq-sub-of-unit-cell.md) | 26 | `result-track:f418a186694174cc076d24285c655df399b2ed5b370f79ea09a1127e9359942b` |
+| 2 | `theorem` | [fract_deriv_intervalIntegrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFractionalQuadraturePositiveSamplesTsumEqSum.lean/declarations/fract-deriv-intervalintegrable.md) | 33 | `result-track:c684f54a70b635c25194cf82e1030e30a3083cfba8589da66c1327d8f26d1c41` |
+| 3 | `theorem` | [unit_right_sampling_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFractionalQuadraturePositiveSamplesTsumEqSum.lean/declarations/unit-right-sampling-identity.md) | 47 | `result-track:c2dcab3f1520f7f9d761e562bf4e8a218e9a33230d5c9031848a74e626187bfa` |
+| 4 | `theorem` | [finite_quadrature](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFractionalQuadraturePositiveSamplesTsumEqSum.lean/declarations/finite-quadrature.md) | 69 | `result-track:db49aedb98460ac33f3896c85b8c17c4ac5ba7119a98e699f997226a0a19d180` |
+| 5 | `theorem` | [finite_quadrature_of_endpoint_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFractionalQuadraturePositiveSamplesTsumEqSum.lean/declarations/finite-quadrature-of-endpoint-zero.md) | 92 | `result-track:3e9f50bd463b7efbb1e97965093d39066eac643f56244ac422532af314da34fe` |
+| 6 | `theorem` | [positive_axis_quadrature](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFractionalQuadraturePositiveSamplesTsumEqSum.lean/declarations/positive-axis-quadrature.md) | 99 | `result-track:3514927d5044a517bed2365b51ac0c7d9380d31a42092dabed3b9edad2efbb06` |
+| 7 | `theorem` | [positive_samples_tsum_eq_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFractionalQuadraturePositiveSamplesTsumEqSum.lean/declarations/positive-samples-tsum-eq-sum.md) | 135 | `result-track:8fde228c83863290ec643a4a35db69351d0f6da1df6d5cbe97e963727b126f69` |
+| 8 | `theorem` | [positive_axis_tsum_quadrature](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFractionalQuadraturePositiveSamplesTsumEqSum.lean/declarations/positive-axis-tsum-quadrature.md) | 153 | `result-track:a8399ec0111f1f39debc70ab7b39a5da9269fe52cdec498dee0c13a8f98e4349` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

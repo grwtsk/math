@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/PacketNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/PacketNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PacketNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PacketNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [DefectPacket](../../../../Combinatorics/PacketNamespaced.lean/declarations/defectpacket.md) | 24 | `declaration-track:47663097064b5fc5515c556d2548037717a35c9a1ef2e73d3cbba0fa81ab2091` |
+| 1 | `structure` | [DefectPacket](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PacketNamespaced.lean/declarations/defectpacket.md) | 24 | `declaration-track:47663097064b5fc5515c556d2548037717a35c9a1ef2e73d3cbba0fa81ab2091` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

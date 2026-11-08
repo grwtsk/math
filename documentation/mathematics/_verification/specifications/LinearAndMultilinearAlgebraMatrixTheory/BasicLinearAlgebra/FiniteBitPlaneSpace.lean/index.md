@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteBitPlaneSpace.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteBitPlaneSpace.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteBitPlaneSpace.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteBitPlaneSpace.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -51,7 +51,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 - `Batteries.Data.Nat.Lemmas` — import line 21; external provider; requires a separately pinned dependency.
 - `Mathlib.Data.Fintype.BigOperators` — import line 22; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 23; external provider; requires a separately pinned dependency.
-- [Finite One Bit Image Bounds](../../../../../Combinatorics/FiniteOneBitImageBounds.lean/index.md) — import line 25; pinned internal source present.
+- [Finite One Bit Image Bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteOneBitImageBounds.lean/index.md) — import line 25; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -62,10 +62,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [QuantizedMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteBitPlaneSpace.lean/declarations/quantizedmatrix.md) | 63 | `declaration-track:4060385da4bd34a7a4c6d289b3a0043b621863fbe0e3474d36ec23757e6fdd70` |
-| 2 | `instance` | [instFintypeQuantizedMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteBitPlaneSpace.lean/declarations/instfintypequantizedmatrix.md) | 67 | `declaration-track:6b160c0a566f2209c79c7054b8153ff1c2ca0739d0a9bb5d02efed544c7f9e93` |
-| 3 | `instance` | [instDecidableEqQuantizedMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteBitPlaneSpace.lean/declarations/instdecidableeqquantizedmatrix.md) | 73 | `declaration-track:daa14750278a4da3efe9b98a3cc6170b22409562e5b8451c2279a4d5d2242a36` |
-| 4 | `theorem` | [card_quantizedMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteBitPlaneSpace.lean/declarations/card-quantizedmatrix.md) | 80 | `result-track:1abb23b3dbfb570632acbe6a99a7b0af15cf353cbe805a2892a30ddc94a17166` |
+| 1 | `def` | [QuantizedMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteBitPlaneSpace.lean/declarations/quantizedmatrix.md) | 63 | `declaration-track:4060385da4bd34a7a4c6d289b3a0043b621863fbe0e3474d36ec23757e6fdd70` |
+| 2 | `instance` | [instFintypeQuantizedMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteBitPlaneSpace.lean/declarations/instfintypequantizedmatrix.md) | 67 | `declaration-track:6b160c0a566f2209c79c7054b8153ff1c2ca0739d0a9bb5d02efed544c7f9e93` |
+| 3 | `instance` | [instDecidableEqQuantizedMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteBitPlaneSpace.lean/declarations/instdecidableeqquantizedmatrix.md) | 73 | `declaration-track:daa14750278a4da3efe9b98a3cc6170b22409562e5b8451c2279a4d5d2242a36` |
+| 4 | `theorem` | [card_quantizedMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteBitPlaneSpace.lean/declarations/card-quantizedmatrix.md) | 80 | `result-track:1abb23b3dbfb570632acbe6a99a7b0af15cf353cbe805a2892a30ddc94a17166` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

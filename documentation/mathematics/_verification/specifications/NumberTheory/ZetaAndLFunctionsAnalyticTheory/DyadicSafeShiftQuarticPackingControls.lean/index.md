@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicSafeShiftQuarticPackingControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicSafeShiftQuarticPackingControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicSafeShiftQuarticPackingControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicSafeShiftQuarticPackingControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.DyadicSafeShiftQuarticPacking`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicSafeShiftQuarticPacking.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.DyadicSafeShiftQuarticPacking`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicSafeShiftQuarticPacking.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [dyadic_quartic_positive](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicSafeShiftQuarticPackingControls.lean/declarations/dyadic-quartic-positive.md) | 14 | `result-track:46f5bff29ac4e332229efd2215f7c5adaaa39122ffb013e71c7dcb6afab5b774` |
-| 2 | `theorem` | [dyadic_quartic_has_green_envelope](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicSafeShiftQuarticPackingControls.lean/declarations/dyadic-quartic-has-green-envelope.md) | 18 | `result-track:4123ae2eb58f0f35523e4928954c742efa031a5ca07f3dc4b24ed2a419362c58` |
+| 1 | `theorem` | [dyadic_quartic_positive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicSafeShiftQuarticPackingControls.lean/declarations/dyadic-quartic-positive.md) | 14 | `result-track:46f5bff29ac4e332229efd2215f7c5adaaa39122ffb013e71c7dcb6afab5b774` |
+| 2 | `theorem` | [dyadic_quartic_has_green_envelope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicSafeShiftQuarticPackingControls.lean/declarations/dyadic-quartic-has-green-envelope.md) | 18 | `result-track:4123ae2eb58f0f35523e4928954c742efa031a5ca07f3dc4b24ed2a419362c58` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

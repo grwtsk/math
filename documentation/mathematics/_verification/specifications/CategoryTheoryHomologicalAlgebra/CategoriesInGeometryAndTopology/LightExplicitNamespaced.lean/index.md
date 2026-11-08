@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightExplicitNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightExplicitNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightExplicitNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightExplicitNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ofSheafLightProfinite](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightExplicitNamespaced.lean/declarations/ofsheaflightprofinite-source-edition-4.md) | 48 | `declaration-track:8e85da66b5e0906c42c1595e4685b53990499c5f5b0cb6ea5cd3de835bcf056c` |
-| 2 | `def` | [ofSheafForgetLightProfinite](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightExplicitNamespaced.lean/declarations/ofsheafforgetlightprofinite.md) | 60 | `declaration-track:7b4dc9e04b131d72b1cdfe804cb283276bb8964485ceb99100a7f91b8aeb5584` |
-| 3 | `theorem` | [equalizerCondition](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightExplicitNamespaced.lean/declarations/equalizercondition.md) | 71 | `result-track:322a3b9121793b287d6449dd80a04fab1b9381a505e7fa50e6e1385e20e6c9cc` |
-| 4 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightExplicitNamespaced.lean/declarations/instance.md) | 75 | `declaration-track:4d11bed5171e1d9c76c2f7c83fb76849ee800019b62faacf980516ea88364acd` |
-| 5 | `abbrev` | [ofSheafLightProfinite](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightExplicitNamespaced.lean/declarations/ofsheaflightprofinite-source-edition-3.md) | 83 | `declaration-track:8987974e33e6c4de9eda4476efd796d31a29ba8f4662af9f5e349d4dcf8ee024` |
-| 6 | `abbrev` | [ofSheafLightProfinite](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightExplicitNamespaced.lean/declarations/ofsheaflightprofinite.md) | 94 | `declaration-track:62520f447c74dea83ef0c5f8e4e1d023cf31ad46fee6ac19f40a50d41d065ec5` |
-| 7 | `abbrev` | [ofSheafLightProfinite](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightExplicitNamespaced.lean/declarations/ofsheaflightprofinite-source-edition-2.md) | 103 | `declaration-track:69bc4dfd880d4ef2fd74469ea5fd3d597048076288864748ed3df0dc57e5975f` |
+| 1 | `def` | [ofSheafLightProfinite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightExplicitNamespaced.lean/declarations/ofsheaflightprofinite-source-edition-4.md) | 48 | `declaration-track:8e85da66b5e0906c42c1595e4685b53990499c5f5b0cb6ea5cd3de835bcf056c` |
+| 2 | `def` | [ofSheafForgetLightProfinite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightExplicitNamespaced.lean/declarations/ofsheafforgetlightprofinite.md) | 60 | `declaration-track:7b4dc9e04b131d72b1cdfe804cb283276bb8964485ceb99100a7f91b8aeb5584` |
+| 3 | `theorem` | [equalizerCondition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightExplicitNamespaced.lean/declarations/equalizercondition.md) | 71 | `result-track:322a3b9121793b287d6449dd80a04fab1b9381a505e7fa50e6e1385e20e6c9cc` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightExplicitNamespaced.lean/declarations/instance.md) | 75 | `declaration-track:4d11bed5171e1d9c76c2f7c83fb76849ee800019b62faacf980516ea88364acd` |
+| 5 | `abbrev` | [ofSheafLightProfinite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightExplicitNamespaced.lean/declarations/ofsheaflightprofinite-source-edition-3.md) | 83 | `declaration-track:8987974e33e6c4de9eda4476efd796d31a29ba8f4662af9f5e349d4dcf8ee024` |
+| 6 | `abbrev` | [ofSheafLightProfinite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightExplicitNamespaced.lean/declarations/ofsheaflightprofinite.md) | 94 | `declaration-track:62520f447c74dea83ef0c5f8e4e1d023cf31ad46fee6ac19f40a50d41d065ec5` |
+| 7 | `abbrev` | [ofSheafLightProfinite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightExplicitNamespaced.lean/declarations/ofsheaflightprofinite-source-edition-2.md) | 103 | `declaration-track:69bc4dfd880d4ef2fd74469ea5fd3d597048076288864748ed3df0dc57e5975f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

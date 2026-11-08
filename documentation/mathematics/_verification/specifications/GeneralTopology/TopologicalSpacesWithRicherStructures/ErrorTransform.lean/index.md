@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/ErrorTransform.lean/index.md) · [Full source](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/ErrorTransform.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/ErrorTransform.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/ErrorTransform.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [ErrorFactor](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/ErrorTransform.lean/declarations/errorfactor.md) | 14 | `declaration-track:5af312a9968cf614e82765440d01304a608a0fea37ef0f6b73c92538f3103b7e` |
-| 2 | `abbrev` | [ErrorTransform](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/ErrorTransform.lean/declarations/errortransform.md) | 15 | `declaration-track:3bda4b9818f2b2756d3e2a8af3f554b59cb34e5af378886a5bd102ac2560d535` |
-| 3 | `def` | [identity](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/ErrorTransform.lean/declarations/identity.md) | 19 | `declaration-track:ef736e4592ad3fc83e7f87b5e96ce4a05c2594394a7072bd0eaec448a7ff341e` |
-| 4 | `def` | [comp](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/ErrorTransform.lean/declarations/comp.md) | 22 | `declaration-track:79c7e7e5ee4e904cb80cd4322fd9f34ce8c11d70458be25971691eebc4f572dd` |
-| 5 | `theorem` | [comp_assoc](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/ErrorTransform.lean/declarations/comp-assoc.md) | 25 | `result-track:ef1db589ab0342b949da89d06bae9fdc9ea75ae91476dc437aafd15248744308` |
-| 6 | `def` | [toErrorTransform](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/ErrorTransform.lean/declarations/toerrortransform.md) | 34 | `declaration-track:388b268a0750a8c41bf263555d5f19525fdd463f949e4e3bbb5bc35b3e797231` |
-| 7 | `theorem` | [toErrorTransform_comp](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/ErrorTransform.lean/declarations/toerrortransform-comp.md) | 41 | `result-track:918cca976b1af2b9f75eb0560ced4ef25d31e8f6451b0bd2365976baea137e46` |
+| 1 | `abbrev` | [ErrorFactor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/ErrorTransform.lean/declarations/errorfactor.md) | 14 | `declaration-track:5af312a9968cf614e82765440d01304a608a0fea37ef0f6b73c92538f3103b7e` |
+| 2 | `abbrev` | [ErrorTransform](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/ErrorTransform.lean/declarations/errortransform.md) | 15 | `declaration-track:3bda4b9818f2b2756d3e2a8af3f554b59cb34e5af378886a5bd102ac2560d535` |
+| 3 | `def` | [identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/ErrorTransform.lean/declarations/identity.md) | 19 | `declaration-track:ef736e4592ad3fc83e7f87b5e96ce4a05c2594394a7072bd0eaec448a7ff341e` |
+| 4 | `def` | [comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/ErrorTransform.lean/declarations/comp.md) | 22 | `declaration-track:79c7e7e5ee4e904cb80cd4322fd9f34ce8c11d70458be25971691eebc4f572dd` |
+| 5 | `theorem` | [comp_assoc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/ErrorTransform.lean/declarations/comp-assoc.md) | 25 | `result-track:ef1db589ab0342b949da89d06bae9fdc9ea75ae91476dc437aafd15248744308` |
+| 6 | `def` | [toErrorTransform](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/ErrorTransform.lean/declarations/toerrortransform.md) | 34 | `declaration-track:388b268a0750a8c41bf263555d5f19525fdd463f949e4e3bbb5bc35b3e797231` |
+| 7 | `theorem` | [toErrorTransform_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/ErrorTransform.lean/declarations/toerrortransform-comp.md) | 41 | `result-track:918cca976b1af2b9f75eb0560ced4ef25d31e8f6451b0bd2365976baea137e46` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

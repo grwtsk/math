@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/WeightedDirichletPolynomialProduct.lean/index.md) · [Full source](../../../../Combinatorics/WeightedDirichletPolynomialProduct.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WeightedDirichletPolynomialProduct.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WeightedDirichletPolynomialProduct.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,9 +60,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [dirichletPolynomialPairProductComplex](../../../../Combinatorics/WeightedDirichletPolynomialProduct.lean/declarations/dirichletpolynomialpairproductcomplex.md) | 19 | `declaration-track:56bcf3991669f63fc28e68d21309d12c2b36aab51a829968693ad0b998c3ff5d` |
-| 2 | `theorem` | [dirichletPolynomialComplex_mul_pair_expanded](../../../../Combinatorics/WeightedDirichletPolynomialProduct.lean/declarations/dirichletpolynomialcomplex-mul-pair-expanded.md) | 33 | `result-track:d8273231c1a6f13acd166df421e98b787bb6779c9faad58c53a61cb18771ccc1` |
-| 3 | `theorem` | [dirichletPolynomialComplex_mul_pair](../../../../Combinatorics/WeightedDirichletPolynomialProduct.lean/declarations/dirichletpolynomialcomplex-mul-pair.md) | 63 | `result-track:80e01db11cd1b0f8bcecf6c90fa05faf5c2f87ea353ed73b2f1e5a0647092747` |
+| 1 | `def` | [dirichletPolynomialPairProductComplex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WeightedDirichletPolynomialProduct.lean/declarations/dirichletpolynomialpairproductcomplex.md) | 19 | `declaration-track:56bcf3991669f63fc28e68d21309d12c2b36aab51a829968693ad0b998c3ff5d` |
+| 2 | `theorem` | [dirichletPolynomialComplex_mul_pair_expanded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WeightedDirichletPolynomialProduct.lean/declarations/dirichletpolynomialcomplex-mul-pair-expanded.md) | 33 | `result-track:d8273231c1a6f13acd166df421e98b787bb6779c9faad58c53a61cb18771ccc1` |
+| 3 | `theorem` | [dirichletPolynomialComplex_mul_pair](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WeightedDirichletPolynomialProduct.lean/declarations/dirichletpolynomialcomplex-mul-pair.md) | 63 | `result-track:80e01db11cd1b0f8bcecf6c90fa05faf5c2f87ea353ed73b2f1e5a0647092747` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

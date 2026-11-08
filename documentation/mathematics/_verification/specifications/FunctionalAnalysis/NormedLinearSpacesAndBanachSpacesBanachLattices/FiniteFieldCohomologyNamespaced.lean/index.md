@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/FiniteFieldCohomologyNamespaced.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/FiniteFieldCohomologyNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/FiniteFieldCohomologyNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/FiniteFieldCohomologyNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FiniteFieldCohomologicalEligibility](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/FiniteFieldCohomologyNamespaced.lean/declarations/finitefieldcohomologicaleligibility.md) | 24 | `declaration-track:6217f0c1bd61cce016a00b4c9bc1de965be737a25ff9925ab9ce96f7546cb88f` |
-| 2 | `structure` | [FiniteFieldSquareRootCertificate](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/FiniteFieldCohomologyNamespaced.lean/declarations/finitefieldsquarerootcertificate.md) | 38 | `declaration-track:bfd43ba1668bf736e4657f200d2281113a2742773473fccbbafd0dfbbb8131f5` |
-| 3 | `def` | [HasUniformSquareRootLogBound](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/FiniteFieldCohomologyNamespaced.lean/declarations/hasuniformsquarerootlogbound.md) | 53 | `declaration-track:64ce8932007d969f13acc2967bde6c95271bb5f5368091b6b75914ef72ae1629` |
-| 4 | `constant` | [*](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/FiniteFieldCohomologyNamespaced.lean/declarations/anonymous.md) | 61 | `declaration-track:3534c692a9b732f4a6a482e74f6854526f713fbfba7d2c15d2bafb707a316aee` |
-| 5 | `theorem` | [centered_bound](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/FiniteFieldCohomologyNamespaced.lean/declarations/centered-bound.md) | 75 | `result-track:fdad58e6726a5b42415c89d8f969888e4335c530e9e5d02a6342545614960838` |
-| 6 | `theorem` | [hasUniformSquareRootLogBound](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/FiniteFieldCohomologyNamespaced.lean/declarations/hasuniformsquarerootlogbound-source-edition-2.md) | 101 | `result-track:98e511f8397b9107429bf4cd8daa4e37aa4383f41b7a48d93d39cfb387c3b386` |
+| 1 | `structure` | [FiniteFieldCohomologicalEligibility](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/FiniteFieldCohomologyNamespaced.lean/declarations/finitefieldcohomologicaleligibility.md) | 24 | `declaration-track:6217f0c1bd61cce016a00b4c9bc1de965be737a25ff9925ab9ce96f7546cb88f` |
+| 2 | `structure` | [FiniteFieldSquareRootCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/FiniteFieldCohomologyNamespaced.lean/declarations/finitefieldsquarerootcertificate.md) | 38 | `declaration-track:bfd43ba1668bf736e4657f200d2281113a2742773473fccbbafd0dfbbb8131f5` |
+| 3 | `def` | [HasUniformSquareRootLogBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/FiniteFieldCohomologyNamespaced.lean/declarations/hasuniformsquarerootlogbound.md) | 53 | `declaration-track:64ce8932007d969f13acc2967bde6c95271bb5f5368091b6b75914ef72ae1629` |
+| 4 | `constant` | [*](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/FiniteFieldCohomologyNamespaced.lean/declarations/anonymous.md) | 61 | `declaration-track:3534c692a9b732f4a6a482e74f6854526f713fbfba7d2c15d2bafb707a316aee` |
+| 5 | `theorem` | [centered_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/FiniteFieldCohomologyNamespaced.lean/declarations/centered-bound.md) | 75 | `result-track:fdad58e6726a5b42415c89d8f969888e4335c530e9e5d02a6342545614960838` |
+| 6 | `theorem` | [hasUniformSquareRootLogBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/FiniteFieldCohomologyNamespaced.lean/declarations/hasuniformsquarerootlogbound-source-edition-2.md) | 101 | `result-track:98e511f8397b9107429bf4cd8daa4e37aa4383f41b7a48d93d39cfb387c3b386` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Congruence.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Congruence.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Congruence.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Congruence.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CongruenceSignature](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Congruence.lean/declarations/congruencesignature.md) | 16 | `declaration-track:a3fdba01f06690f1bd3e40448e54d8d0b4d9f23209d322182c2c3feeb78c52a8` |
-| 2 | `def` | [SegmentCongruenceReflexive](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Congruence.lean/declarations/segmentcongruencereflexive.md) | 20 | `declaration-track:dc4eab269f6eedaf9ce7816b9f317cb3d8c554fb96a79c2c3bcd755a2cde9892` |
-| 3 | `def` | [SegmentCongruenceSymmetric](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Congruence.lean/declarations/segmentcongruencesymmetric.md) | 25 | `declaration-track:c5354fe756d32f0e8719dbc5eb10260222d5a27d9af198c102704f2ce9fe274f` |
-| 4 | `def` | [SegmentCongruenceTransitive](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Congruence.lean/declarations/segmentcongruencetransitive.md) | 32 | `declaration-track:496f7b3fbe75f171aca6d8251f3301223033e3931f657f80a02bec4019987df2` |
-| 5 | `def` | [AngleCongruenceReflexive](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Congruence.lean/declarations/anglecongruencereflexive.md) | 40 | `declaration-track:0b354eec4c4a152413f49a4998a099c3839cb1f8225b17fe37a018e5f7dc6328` |
-| 6 | `def` | [IsEquilateral](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Congruence.lean/declarations/isequilateral.md) | 46 | `declaration-track:3db7d930d93682ac643e29549db6c8516ba606ccd016a2b5491a517380c821d5` |
+| 1 | `structure` | [CongruenceSignature](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Congruence.lean/declarations/congruencesignature.md) | 16 | `declaration-track:a3fdba01f06690f1bd3e40448e54d8d0b4d9f23209d322182c2c3feeb78c52a8` |
+| 2 | `def` | [SegmentCongruenceReflexive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Congruence.lean/declarations/segmentcongruencereflexive.md) | 20 | `declaration-track:dc4eab269f6eedaf9ce7816b9f317cb3d8c554fb96a79c2c3bcd755a2cde9892` |
+| 3 | `def` | [SegmentCongruenceSymmetric](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Congruence.lean/declarations/segmentcongruencesymmetric.md) | 25 | `declaration-track:c5354fe756d32f0e8719dbc5eb10260222d5a27d9af198c102704f2ce9fe274f` |
+| 4 | `def` | [SegmentCongruenceTransitive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Congruence.lean/declarations/segmentcongruencetransitive.md) | 32 | `declaration-track:496f7b3fbe75f171aca6d8251f3301223033e3931f657f80a02bec4019987df2` |
+| 5 | `def` | [AngleCongruenceReflexive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Congruence.lean/declarations/anglecongruencereflexive.md) | 40 | `declaration-track:0b354eec4c4a152413f49a4998a099c3839cb1f8225b17fe37a018e5f7dc6328` |
+| 6 | `def` | [IsEquilateral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Congruence.lean/declarations/isequilateral.md) | 46 | `declaration-track:3db7d930d93682ac643e29549db6c8516ba606ccd016a2b5491a517380c821d5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

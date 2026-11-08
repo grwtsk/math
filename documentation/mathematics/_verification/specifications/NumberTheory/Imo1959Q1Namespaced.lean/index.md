@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/Imo1959Q1Namespaced.lean/index.md) · [Full source](../../../../NumberTheory/Imo1959Q1Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Imo1959Q1Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Imo1959Q1Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [calculation](../../../../NumberTheory/Imo1959Q1Namespaced.lean/declarations/calculation.md) | 33 | `result-track:bd2d8c2ed9735cc081ed776293d18b4b61513f44b395ce99febae841210e3be0` |
-| 2 | `theorem` | [imo1959_q1](../../../../NumberTheory/Imo1959Q1Namespaced.lean/declarations/imo1959-q1.md) | 44 | `result-track:67725de39ab9f9bab2c0057fec9504ada745a0608738cf2c762aff0a05c9d8de` |
+| 1 | `theorem` | [calculation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Imo1959Q1Namespaced.lean/declarations/calculation.md) | 33 | `result-track:bd2d8c2ed9735cc081ed776293d18b4b61513f44b395ce99febae841210e3be0` |
+| 2 | `theorem` | [imo1959_q1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Imo1959Q1Namespaced.lean/declarations/imo1959-q1.md) | 44 | `result-track:67725de39ab9f9bab2c0057fec9504ada745a0608738cf2c762aff0a05c9d8de` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

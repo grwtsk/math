@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/AsymptoticsAsymptoticsNamespacedIsLittleOConstIdCocompact.lean/index.md) · [Full source](../../../../FunctionalAnalysis/AsymptoticsAsymptoticsNamespacedIsLittleOConstIdCocompact.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AsymptoticsAsymptoticsNamespacedIsLittleOConstIdCocompact.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AsymptoticsAsymptoticsNamespacedIsLittleOConstIdCocompact.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [isLittleO_const_id_cocompact](../../../../FunctionalAnalysis/AsymptoticsAsymptoticsNamespacedIsLittleOConstIdCocompact.lean/declarations/islittleo-const-id-cocompact.md) | 27 | `result-track:8a038a2c8675af509e1dc032a3f14cbe8c29ffa54928923cd1b2b6d41dbdf6cf` |
-| 2 | `theorem` | [isLittleO_const_id_atTop2](../../../../FunctionalAnalysis/AsymptoticsAsymptoticsNamespacedIsLittleOConstIdCocompact.lean/declarations/islittleo-const-id-attop2.md) | 32 | `result-track:cff889de2c32a2ac9a6e986609f155bf43413072798b460d694cfc5612f8df06` |
-| 3 | `theorem` | [isLittleO_const_id_atBot2](../../../../FunctionalAnalysis/AsymptoticsAsymptoticsNamespacedIsLittleOConstIdCocompact.lean/declarations/islittleo-const-id-atbot2.md) | 37 | `result-track:2958f15f7dc4787e6ea477f7b0e75daa479262e47bf35770a4a71418ea1493c4` |
-| 4 | `theorem` | [Asymptotics Asymptotics Namespaced Is Little OConst Id Cocompact](../../../../FunctionalAnalysis/AsymptoticsAsymptoticsNamespacedIsLittleOConstIdCocompact.lean/declarations/root-grwtsk-analysis-asymptoticanalysis-islittleoconstidcocompact-varian.md) | 41 | `result-track:7a07808963086e0a466fa3b488359e51b11491a5571fefa5d6e706e626695fad` |
-| 5 | `theorem` | [IsBigO.natCast](../../../../FunctionalAnalysis/AsymptoticsAsymptoticsNamespacedIsLittleOConstIdCocompact.lean/declarations/isbigo-natcast.md) | 45 | `result-track:eb7bf1bcb077e1e82a683451a9563895e4a74743f1291d12a0dd562cfa464c26` |
+| 1 | `theorem` | [isLittleO_const_id_cocompact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AsymptoticsAsymptoticsNamespacedIsLittleOConstIdCocompact.lean/declarations/islittleo-const-id-cocompact.md) | 27 | `result-track:8a038a2c8675af509e1dc032a3f14cbe8c29ffa54928923cd1b2b6d41dbdf6cf` |
+| 2 | `theorem` | [isLittleO_const_id_atTop2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AsymptoticsAsymptoticsNamespacedIsLittleOConstIdCocompact.lean/declarations/islittleo-const-id-attop2.md) | 32 | `result-track:cff889de2c32a2ac9a6e986609f155bf43413072798b460d694cfc5612f8df06` |
+| 3 | `theorem` | [isLittleO_const_id_atBot2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AsymptoticsAsymptoticsNamespacedIsLittleOConstIdCocompact.lean/declarations/islittleo-const-id-atbot2.md) | 37 | `result-track:2958f15f7dc4787e6ea477f7b0e75daa479262e47bf35770a4a71418ea1493c4` |
+| 4 | `theorem` | [Asymptotics Asymptotics Namespaced Is Little OConst Id Cocompact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AsymptoticsAsymptoticsNamespacedIsLittleOConstIdCocompact.lean/declarations/root-grwtsk-analysis-asymptoticanalysis-islittleoconstidcocompact-varian.md) | 41 | `result-track:7a07808963086e0a466fa3b488359e51b11491a5571fefa5d6e706e626695fad` |
+| 5 | `theorem` | [IsBigO.natCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AsymptoticsAsymptoticsNamespacedIsLittleOConstIdCocompact.lean/declarations/isbigo-natcast.md) | 45 | `result-track:eb7bf1bcb077e1e82a683451a9563895e4a74743f1291d12a0dd562cfa464c26` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

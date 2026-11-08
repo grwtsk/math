@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/CatMapContinuousPhaseObstruction.lean/index.md) · [Full source](../../../../GeneralTopology/CatMapContinuousPhaseObstruction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CatMapContinuousPhaseObstruction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CatMapContinuousPhaseObstruction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Farey.CatMapArithmeticBridge`](../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CatMapArithmeticBridge.lean/index.md) — import line 10; pinned internal source present.
+- [`GRWTSK.NumberTheory.Farey.CatMapArithmeticBridge`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CatMapArithmeticBridge.lean/index.md) — import line 10; pinned internal source present.
 - `Mathlib.Topology.Instances.Complex` — import line 11; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 12; external provider; requires a separately pinned dependency.
 
@@ -59,15 +59,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [HasOddLocalReturns](../../../../GeneralTopology/CatMapContinuousPhaseObstruction.lean/declarations/hasoddlocalreturns.md) | 46 | `declaration-track:456b5c23da7b6f4bac0a23e74fdcf41f3c6d2c0e528272e98044ebee68e6265c` |
-| 2 | `def` | [EventualOpenMixing](../../../../GeneralTopology/CatMapContinuousPhaseObstruction.lean/declarations/eventualopenmixing.md) | 52 | `declaration-track:098b8f7cf234b76f29d35dfef058b1c3af217efb734f75cd33d1dd60eefab602` |
-| 3 | `theorem` | [oddLocalReturns_of_eventualOpenMixing](../../../../GeneralTopology/CatMapContinuousPhaseObstruction.lean/declarations/oddlocalreturns-of-eventualopenmixing.md) | 58 | `result-track:3112457f97bddf7590b2ff257d6c19b198955f29a7a5428b39d9ec928f34232b` |
-| 4 | `theorem` | [signEigen_iterate](../../../../GeneralTopology/CatMapContinuousPhaseObstruction.lean/declarations/signeigen-iterate.md) | 68 | `result-track:6992aac1c12834c3df9fdf334c610a9be2921a35ee918ca713acd30e20de4ba0` |
-| 5 | `theorem` | [signEigen_odd](../../../../GeneralTopology/CatMapContinuousPhaseObstruction.lean/declarations/signeigen-odd.md) | 79 | `result-track:9dd2ad70a6b51d287ed98e6c43f0b3c5236e91ddecbb573539b31564f6e151d1` |
-| 6 | `theorem` | [no_continuous_signEigen_of_oddLocalReturns](../../../../GeneralTopology/CatMapContinuousPhaseObstruction.lean/declarations/no-continuous-signeigen-of-oddlocalreturns.md) | 89 | `result-track:3408a456e9aae28c23dc73e74ab13df33af5f5820d3d305dae467cc8bd83034b` |
-| 7 | `theorem` | [torsion_witness_positive](../../../../GeneralTopology/CatMapContinuousPhaseObstruction.lean/declarations/torsion-witness-positive.md) | 107 | `result-track:e596942a8bc6380eec26b818f35901863d22aa27b30425ee7214238066b7dac5` |
-| 8 | `theorem` | [no_continuous_cat_phase_extension_of_oddLocalReturns](../../../../GeneralTopology/CatMapContinuousPhaseObstruction.lean/declarations/no-continuous-cat-phase-extension-of-oddlocalreturns.md) | 116 | `result-track:5bce2e99106c8a24f416bafce837c1a038e18d15866a5d734142d3e90c7c7226` |
-| 9 | `theorem` | [no_continuous_cat_phase_extension_of_eventualOpenMixing](../../../../GeneralTopology/CatMapContinuousPhaseObstruction.lean/declarations/no-continuous-cat-phase-extension-of-eventualopenmixing.md) | 133 | `result-track:544e04e50f063cb1786c281456f6f6b0f80ac6e49e9bc05569e5c804dfe203ca` |
+| 1 | `def` | [HasOddLocalReturns](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CatMapContinuousPhaseObstruction.lean/declarations/hasoddlocalreturns.md) | 46 | `declaration-track:456b5c23da7b6f4bac0a23e74fdcf41f3c6d2c0e528272e98044ebee68e6265c` |
+| 2 | `def` | [EventualOpenMixing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CatMapContinuousPhaseObstruction.lean/declarations/eventualopenmixing.md) | 52 | `declaration-track:098b8f7cf234b76f29d35dfef058b1c3af217efb734f75cd33d1dd60eefab602` |
+| 3 | `theorem` | [oddLocalReturns_of_eventualOpenMixing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CatMapContinuousPhaseObstruction.lean/declarations/oddlocalreturns-of-eventualopenmixing.md) | 58 | `result-track:3112457f97bddf7590b2ff257d6c19b198955f29a7a5428b39d9ec928f34232b` |
+| 4 | `theorem` | [signEigen_iterate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CatMapContinuousPhaseObstruction.lean/declarations/signeigen-iterate.md) | 68 | `result-track:6992aac1c12834c3df9fdf334c610a9be2921a35ee918ca713acd30e20de4ba0` |
+| 5 | `theorem` | [signEigen_odd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CatMapContinuousPhaseObstruction.lean/declarations/signeigen-odd.md) | 79 | `result-track:9dd2ad70a6b51d287ed98e6c43f0b3c5236e91ddecbb573539b31564f6e151d1` |
+| 6 | `theorem` | [no_continuous_signEigen_of_oddLocalReturns](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CatMapContinuousPhaseObstruction.lean/declarations/no-continuous-signeigen-of-oddlocalreturns.md) | 89 | `result-track:3408a456e9aae28c23dc73e74ab13df33af5f5820d3d305dae467cc8bd83034b` |
+| 7 | `theorem` | [torsion_witness_positive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CatMapContinuousPhaseObstruction.lean/declarations/torsion-witness-positive.md) | 107 | `result-track:e596942a8bc6380eec26b818f35901863d22aa27b30425ee7214238066b7dac5` |
+| 8 | `theorem` | [no_continuous_cat_phase_extension_of_oddLocalReturns](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CatMapContinuousPhaseObstruction.lean/declarations/no-continuous-cat-phase-extension-of-oddlocalreturns.md) | 116 | `result-track:5bce2e99106c8a24f416bafce837c1a038e18d15866a5d734142d3e90c7c7226` |
+| 9 | `theorem` | [no_continuous_cat_phase_extension_of_eventualOpenMixing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CatMapContinuousPhaseObstruction.lean/declarations/no-continuous-cat-phase-extension-of-eventualopenmixing.md) | 133 | `result-track:544e04e50f063cb1786c281456f6f6b0f80ac6e49e9bc05569e5c804dfe203ca` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/QuotientNamespaced.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/QuotientNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/QuotientNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/QuotientNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [HasQuotient](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/QuotientNamespaced.lean/declarations/hasquotient.md) | 52 | `declaration-track:b6c703c85ce78f1b65f5b43f07326a601a174cf1c15d2bd8200a6943c7fb7e0b` |
-| 2 | `abbrev` | [HasQuotient.Quotient](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/QuotientNamespaced.lean/declarations/hasquotient-quotient.md) | 63 | `declaration-track:4e9fec1a36064ff6a1f8f3bdd25231563f4e54cc595e700dcf38cc588f0c3a21` |
+| 1 | `class` | [HasQuotient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/QuotientNamespaced.lean/declarations/hasquotient.md) | 52 | `declaration-track:b6c703c85ce78f1b65f5b43f07326a601a174cf1c15d2bd8200a6943c7fb7e0b` |
+| 2 | `abbrev` | [HasQuotient.Quotient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/QuotientNamespaced.lean/declarations/hasquotient-quotient.md) | 63 | `declaration-track:4e9fec1a36064ff6a1f8f3bdd25231563f4e54cc595e700dcf38cc588f0c3a21` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

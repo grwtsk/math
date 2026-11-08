@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/UnitSquareFacesAndDimensionDrop.lean/index.md) · [Full source](../../../../GeneralTopology/UnitSquareFacesAndDimensionDrop.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UnitSquareFacesAndDimensionDrop.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UnitSquareFacesAndDimensionDrop.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [unitCell](../../../../GeneralTopology/UnitSquareFacesAndDimensionDrop.lean/declarations/unitcell.md) | 40 | `declaration-track:2eaa2f2a4146a0b23af4570eaaeeaa0b040a1c849469f0f480400cd3393099da` |
-| 2 | `example` | [(anonymous)](../../../../GeneralTopology/UnitSquareFacesAndDimensionDrop.lean/declarations/example-source-edition-5.md) | 42 | `declaration-track:c609df5ca73c9fe768d0c518bd203519c80b79f8dcfd876e725b83e52ecf6061` |
-| 3 | `example` | [(anonymous)](../../../../GeneralTopology/UnitSquareFacesAndDimensionDrop.lean/declarations/example.md) | 47 | `declaration-track:65911e9281908fb61a6f5fd27b1ff09c5032673f3f6d460bf139d0675735989a` |
-| 4 | `example` | [(anonymous)](../../../../GeneralTopology/UnitSquareFacesAndDimensionDrop.lean/declarations/example-source-edition-6.md) | 55 | `declaration-track:e882aa669db6d5c480c6501cea89893f750941c2f574feb77c81451551bf957f` |
-| 5 | `example` | [(anonymous)](../../../../GeneralTopology/UnitSquareFacesAndDimensionDrop.lean/declarations/example-source-edition-2.md) | 60 | `declaration-track:73749f9cab6dd0bea04f882cd10e01e87c5fc7a6b8b38297f8116b28e4290105` |
-| 6 | `example` | [(anonymous)](../../../../GeneralTopology/UnitSquareFacesAndDimensionDrop.lean/declarations/example-source-edition-4.md) | 65 | `declaration-track:b78404144d4565c693e6a1dc909ebe931efd2a2cdbdf5c7ae47dd764f8223d72` |
-| 7 | `example` | [(anonymous)](../../../../GeneralTopology/UnitSquareFacesAndDimensionDrop.lean/declarations/example-source-edition-3.md) | 70 | `declaration-track:796420aaa723a4bfc80fe5721e821f7b1b19841b7a8f0883838ce29b468a23f1` |
+| 1 | `def` | [unitCell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UnitSquareFacesAndDimensionDrop.lean/declarations/unitcell.md) | 40 | `declaration-track:2eaa2f2a4146a0b23af4570eaaeeaa0b040a1c849469f0f480400cd3393099da` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UnitSquareFacesAndDimensionDrop.lean/declarations/example-source-edition-5.md) | 42 | `declaration-track:c609df5ca73c9fe768d0c518bd203519c80b79f8dcfd876e725b83e52ecf6061` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UnitSquareFacesAndDimensionDrop.lean/declarations/example.md) | 47 | `declaration-track:65911e9281908fb61a6f5fd27b1ff09c5032673f3f6d460bf139d0675735989a` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UnitSquareFacesAndDimensionDrop.lean/declarations/example-source-edition-6.md) | 55 | `declaration-track:e882aa669db6d5c480c6501cea89893f750941c2f574feb77c81451551bf957f` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UnitSquareFacesAndDimensionDrop.lean/declarations/example-source-edition-2.md) | 60 | `declaration-track:73749f9cab6dd0bea04f882cd10e01e87c5fc7a6b8b38297f8116b28e4290105` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UnitSquareFacesAndDimensionDrop.lean/declarations/example-source-edition-4.md) | 65 | `declaration-track:b78404144d4565c693e6a1dc909ebe931efd2a2cdbdf5c7ae47dd764f8223d72` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UnitSquareFacesAndDimensionDrop.lean/declarations/example-source-edition-3.md) | 70 | `declaration-track:796420aaa723a4bfc80fe5721e821f7b1b19841b7a8f0883838ce29b468a23f1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

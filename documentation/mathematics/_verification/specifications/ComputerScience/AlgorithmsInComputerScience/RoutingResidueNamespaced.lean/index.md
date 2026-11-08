@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/RoutingResidueNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/RoutingResidueNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RoutingResidueNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RoutingResidueNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [ClassificationStrategy](../../../../../ComputerScience/AlgorithmsInComputerScience/RoutingResidueNamespaced.lean/declarations/classificationstrategy.md) | 27 | `declaration-track:d5fac9983f42bfe2713b57220abc010a857e6a9eca8c64759eb0edc1324832a5` |
-| 2 | `inductive` | [RouteAssessment](../../../../../ComputerScience/AlgorithmsInComputerScience/RoutingResidueNamespaced.lean/declarations/routeassessment.md) | 34 | `declaration-track:72b27281d3c67439a3c3280e8e041bd0dc7aaff7dc8cadf92b366c976a79d5c5` |
-| 3 | `def` | [needsClassification](../../../../../ComputerScience/AlgorithmsInComputerScience/RoutingResidueNamespaced.lean/declarations/needsclassification.md) | 48 | `declaration-track:fc5cf6eba11a1566832459594e040b2ac9740eed723ee27d9885bc1cfb073406` |
-| 4 | `theorem` | [named_does_not_activate](../../../../../ComputerScience/AlgorithmsInComputerScience/RoutingResidueNamespaced.lean/declarations/named-does-not-activate.md) | 55 | `result-track:e723af425cce47efc4c62e16b1fd8b3fb7e4851f17ec642f19d6893c0e62dce3` |
-| 5 | `theorem` | [residue_activates](../../../../../ComputerScience/AlgorithmsInComputerScience/RoutingResidueNamespaced.lean/declarations/residue-activates.md) | 61 | `result-track:9526841bc5500168e255ae0cd66d6939592fb09f417c17e65f7b2999515ab6eb` |
-| 6 | `structure` | [ResidueObservation](../../../../../ComputerScience/AlgorithmsInComputerScience/RoutingResidueNamespaced.lean/declarations/residueobservation.md) | 72 | `declaration-track:c303f6e28893e2c9c533ea6b59ff36765b8ce8a43485ed2968e16b384c5fb93a` |
-| 7 | `structure` | [ResidueCoupling](../../../../../ComputerScience/AlgorithmsInComputerScience/RoutingResidueNamespaced.lean/declarations/residuecoupling.md) | 86 | `declaration-track:2ecf5216711af6bddffee0c819d764d27dc3d6788ec1fb91e3f0a01a4d022e3f` |
+| 1 | `inductive` | [ClassificationStrategy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RoutingResidueNamespaced.lean/declarations/classificationstrategy.md) | 27 | `declaration-track:d5fac9983f42bfe2713b57220abc010a857e6a9eca8c64759eb0edc1324832a5` |
+| 2 | `inductive` | [RouteAssessment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RoutingResidueNamespaced.lean/declarations/routeassessment.md) | 34 | `declaration-track:72b27281d3c67439a3c3280e8e041bd0dc7aaff7dc8cadf92b366c976a79d5c5` |
+| 3 | `def` | [needsClassification](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RoutingResidueNamespaced.lean/declarations/needsclassification.md) | 48 | `declaration-track:fc5cf6eba11a1566832459594e040b2ac9740eed723ee27d9885bc1cfb073406` |
+| 4 | `theorem` | [named_does_not_activate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RoutingResidueNamespaced.lean/declarations/named-does-not-activate.md) | 55 | `result-track:e723af425cce47efc4c62e16b1fd8b3fb7e4851f17ec642f19d6893c0e62dce3` |
+| 5 | `theorem` | [residue_activates](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RoutingResidueNamespaced.lean/declarations/residue-activates.md) | 61 | `result-track:9526841bc5500168e255ae0cd66d6939592fb09f417c17e65f7b2999515ab6eb` |
+| 6 | `structure` | [ResidueObservation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RoutingResidueNamespaced.lean/declarations/residueobservation.md) | 72 | `declaration-track:c303f6e28893e2c9c533ea6b59ff36765b8ce8a43485ed2968e16b384c5fb93a` |
+| 7 | `structure` | [ResidueCoupling](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RoutingResidueNamespaced.lean/declarations/residuecoupling.md) | 86 | `declaration-track:2ecf5216711af6bddffee0c819d764d27dc3d6788ec1fb91e3f0a01a4d022e3f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

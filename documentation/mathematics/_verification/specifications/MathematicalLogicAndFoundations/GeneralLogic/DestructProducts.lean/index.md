@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DestructProducts.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DestructProducts.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DestructProducts.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DestructProducts.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,17 +57,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [Ex](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DestructProducts.lean/declarations/ex.md) | 15 | `declaration-track:2ffc13a217843411cf4440ce3c25bc49623c4dc1d94973d0821c024a4b91da5c` |
-| 2 | `structure` | [Sig](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DestructProducts.lean/declarations/sig.md) | 19 | `declaration-track:0c8d72e14fb6e4acc888c1c89041c056f6c630123e27d0ba761557138eda642a` |
-| 3 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DestructProducts.lean/declarations/example-source-edition-3.md) | 23 | `declaration-track:7bd40391a3d1efb75aae9ca88c51dba2606438104bd622135c4ce2716e2daf17` |
-| 4 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DestructProducts.lean/declarations/example-source-edition-6.md) | 26 | `declaration-track:ad4fd0bb93e0cd39671bdf953fca6980d273028e96b114de9d3d7bc8e5b9932b` |
-| 5 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DestructProducts.lean/declarations/example.md) | 29 | `declaration-track:217a24b01fc174e3bf7c3501778a9f4bb055f437bcd6bc3dc760d3c9d4df552f` |
-| 6 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DestructProducts.lean/declarations/example-source-edition-5.md) | 32 | `declaration-track:842d41a9d16b08ac2863f046bccc630639ecc62c9855be00571cf8acdd6da36e` |
-| 7 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DestructProducts.lean/declarations/example-source-edition-4.md) | 35 | `declaration-track:830b149da75d26141c709890fe78bde4d6f92bc900b0ce08b2df620e25c2ce97` |
-| 8 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DestructProducts.lean/declarations/example-source-edition-2.md) | 38 | `declaration-track:4a43eeb6d73c47010992375bf493a984b11236f484db3e07d4c56400358f206e` |
-| 9 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DestructProducts.lean/declarations/example-source-edition-7.md) | 41 | `declaration-track:b00b51a86450728a3b454b471c1b4822b2e6672b4b1f82c9e81f76a457d06913` |
-| 10 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DestructProducts.lean/declarations/example-source-edition-9.md) | 44 | `declaration-track:e78e32d022fa01c9d19ee341381505ec7018e3bfc823f205142e157f5697de77` |
-| 11 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DestructProducts.lean/declarations/example-source-edition-8.md) | 48 | `declaration-track:d72d945a83d7cecb02dc9af3041422dc7eea0bc55f45b80d81a7b25c0c77174e` |
+| 1 | `inductive` | [Ex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DestructProducts.lean/declarations/ex.md) | 15 | `declaration-track:2ffc13a217843411cf4440ce3c25bc49623c4dc1d94973d0821c024a4b91da5c` |
+| 2 | `structure` | [Sig](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DestructProducts.lean/declarations/sig.md) | 19 | `declaration-track:0c8d72e14fb6e4acc888c1c89041c056f6c630123e27d0ba761557138eda642a` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DestructProducts.lean/declarations/example-source-edition-3.md) | 23 | `declaration-track:7bd40391a3d1efb75aae9ca88c51dba2606438104bd622135c4ce2716e2daf17` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DestructProducts.lean/declarations/example-source-edition-6.md) | 26 | `declaration-track:ad4fd0bb93e0cd39671bdf953fca6980d273028e96b114de9d3d7bc8e5b9932b` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DestructProducts.lean/declarations/example.md) | 29 | `declaration-track:217a24b01fc174e3bf7c3501778a9f4bb055f437bcd6bc3dc760d3c9d4df552f` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DestructProducts.lean/declarations/example-source-edition-5.md) | 32 | `declaration-track:842d41a9d16b08ac2863f046bccc630639ecc62c9855be00571cf8acdd6da36e` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DestructProducts.lean/declarations/example-source-edition-4.md) | 35 | `declaration-track:830b149da75d26141c709890fe78bde4d6f92bc900b0ce08b2df620e25c2ce97` |
+| 8 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DestructProducts.lean/declarations/example-source-edition-2.md) | 38 | `declaration-track:4a43eeb6d73c47010992375bf493a984b11236f484db3e07d4c56400358f206e` |
+| 9 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DestructProducts.lean/declarations/example-source-edition-7.md) | 41 | `declaration-track:b00b51a86450728a3b454b471c1b4822b2e6672b4b1f82c9e81f76a457d06913` |
+| 10 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DestructProducts.lean/declarations/example-source-edition-9.md) | 44 | `declaration-track:e78e32d022fa01c9d19ee341381505ec7018e3bfc823f205142e157f5697de77` |
+| 11 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DestructProducts.lean/declarations/example-source-edition-8.md) | 48 | `declaration-track:d72d945a83d7cecb02dc9af3041422dc7eea0bc55f45b80d81a7b25c0c77174e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

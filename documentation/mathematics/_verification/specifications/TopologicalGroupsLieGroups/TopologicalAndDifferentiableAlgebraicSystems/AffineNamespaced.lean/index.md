@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/AffineNamespaced.lean/index.md) · [Full source](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/AffineNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/AffineNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/AffineNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [continuous_iff](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/AffineNamespaced.lean/declarations/continuous-iff.md) | 42 | `result-track:5aafa4f92cbd1dc8f82b53d45984475eac8c90d249222658cbd3b2b2395b574e` |
-| 2 | `theorem` | [lineMap_continuous](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/AffineNamespaced.lean/declarations/linemap-continuous.md) | 53 | `result-track:b7e03ccc345d7e74f4d112bffbf74b82c6404e83917682b908ac9c22e51770e9` |
-| 3 | `theorem` | [homothety_continuous](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/AffineNamespaced.lean/declarations/homothety-continuous.md) | 65 | `result-track:2b11c73cd749ef7e4a0d94ae8fa2d0fa2450f6edaced5294a179340b13545817` |
-| 4 | `theorem` | [homothety_isOpenMap](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/AffineNamespaced.lean/declarations/homothety-isopenmap.md) | 78 | `result-track:b97f2e474b5d7241dc49b73395d87b1278766220793c857810bb90001cdd0b8f` |
+| 1 | `theorem` | [continuous_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/AffineNamespaced.lean/declarations/continuous-iff.md) | 42 | `result-track:5aafa4f92cbd1dc8f82b53d45984475eac8c90d249222658cbd3b2b2395b574e` |
+| 2 | `theorem` | [lineMap_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/AffineNamespaced.lean/declarations/linemap-continuous.md) | 53 | `result-track:b7e03ccc345d7e74f4d112bffbf74b82c6404e83917682b908ac9c22e51770e9` |
+| 3 | `theorem` | [homothety_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/AffineNamespaced.lean/declarations/homothety-continuous.md) | 65 | `result-track:2b11c73cd749ef7e4a0d94ae8fa2d0fa2450f6edaced5294a179340b13545817` |
+| 4 | `theorem` | [homothety_isOpenMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/AffineNamespaced.lean/declarations/homothety-isopenmap.md) | 78 | `result-track:b97f2e474b5d7241dc49b73395d87b1278766220793c857810bb90001cdd0b8f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

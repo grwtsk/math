@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/ExactFiniteHeatRemainderAndItsAbsoluteMassBoundary.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/ExactFiniteHeatRemainderAndItsAbsoluteMassBoundary.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ExactFiniteHeatRemainderAndItsAbsoluteMassBoundary.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ExactFiniteHeatRemainderAndItsAbsoluteMassBoundary.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [signedHeatRemainder_eq_filtered_integral](../../../../ProbabilityTheoryAndStochasticProcesses/ExactFiniteHeatRemainderAndItsAbsoluteMassBoundary.lean/declarations/signedheatremainder-eq-filtered-integral.md) | 26 | `result-track:28063d30cd0cbd60d7f07af78123cf1f34504d4b963f85e86221d6953a4d9ead` |
-| 2 | `theorem` | [signedHeatRemainder_abs_le](../../../../ProbabilityTheoryAndStochasticProcesses/ExactFiniteHeatRemainderAndItsAbsoluteMassBoundary.lean/declarations/signedheatremainder-abs-le.md) | 43 | `result-track:4d63b537c558e510d401e1a17bdfc1f9f3e0f743e663549e9a7fe7b056cecbe4` |
-| 3 | `theorem` | [sourceHeatRemainder_abs_le](../../../../ProbabilityTheoryAndStochasticProcesses/ExactFiniteHeatRemainderAndItsAbsoluteMassBoundary.lean/declarations/sourceheatremainder-abs-le.md) | 57 | `result-track:55fecf4dc22f41382fb29a95aa1181f9447223481a009f369f8a05a891cdbe0f` |
-| 4 | `theorem` | [sourceSymbolBound_eq_coefficientVariation](../../../../ProbabilityTheoryAndStochasticProcesses/ExactFiniteHeatRemainderAndItsAbsoluteMassBoundary.lean/declarations/sourcesymbolbound-eq-coefficientvariation.md) | 64 | `result-track:9f72bc4f10eaf981d0630616980d0f60406d739efa73e6bc55522f79a4cd8ea7` |
-| 5 | `theorem` | [sourceSymbolBound_lower](../../../../ProbabilityTheoryAndStochasticProcesses/ExactFiniteHeatRemainderAndItsAbsoluteMassBoundary.lean/declarations/sourcesymbolbound-lower.md) | 79 | `result-track:1ac19963e7ba3b8777b6c3f1d5f7583aa80903be9b56002d733bdcbe6472c774` |
+| 1 | `theorem` | [signedHeatRemainder_eq_filtered_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ExactFiniteHeatRemainderAndItsAbsoluteMassBoundary.lean/declarations/signedheatremainder-eq-filtered-integral.md) | 26 | `result-track:28063d30cd0cbd60d7f07af78123cf1f34504d4b963f85e86221d6953a4d9ead` |
+| 2 | `theorem` | [signedHeatRemainder_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ExactFiniteHeatRemainderAndItsAbsoluteMassBoundary.lean/declarations/signedheatremainder-abs-le.md) | 43 | `result-track:4d63b537c558e510d401e1a17bdfc1f9f3e0f743e663549e9a7fe7b056cecbe4` |
+| 3 | `theorem` | [sourceHeatRemainder_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ExactFiniteHeatRemainderAndItsAbsoluteMassBoundary.lean/declarations/sourceheatremainder-abs-le.md) | 57 | `result-track:55fecf4dc22f41382fb29a95aa1181f9447223481a009f369f8a05a891cdbe0f` |
+| 4 | `theorem` | [sourceSymbolBound_eq_coefficientVariation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ExactFiniteHeatRemainderAndItsAbsoluteMassBoundary.lean/declarations/sourcesymbolbound-eq-coefficientvariation.md) | 64 | `result-track:9f72bc4f10eaf981d0630616980d0f60406d739efa73e6bc55522f79a4cd8ea7` |
+| 5 | `theorem` | [sourceSymbolBound_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ExactFiniteHeatRemainderAndItsAbsoluteMassBoundary.lean/declarations/sourcesymbolbound-lower.md) | 79 | `result-track:1ac19963e7ba3b8777b6c3f1d5f7583aa80903be9b56002d733bdcbe6472c774` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

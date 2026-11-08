@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StickinessNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StickinessNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StickinessNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StickinessNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [StickinessPrinciple](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StickinessNamespaced.lean/declarations/stickinessprinciple.md) | 27 | `declaration-track:0ede17cb6b2a137a78e91a6367d4e5f2f1f20ef8bfa1376541964012d4603acb` |
-| 2 | `theorem` | [ym_stickiness_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StickinessNamespaced.lean/declarations/ym-stickiness-if-supplied.md) | 34 | `result-track:516dee83830f91be645dfd39e5e9b470f65b961a5fc6c3a65b842984ce95dd0e` |
+| 1 | `structure` | [StickinessPrinciple](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StickinessNamespaced.lean/declarations/stickinessprinciple.md) | 27 | `declaration-track:0ede17cb6b2a137a78e91a6367d4e5f2f1f20ef8bfa1376541964012d4603acb` |
+| 2 | `theorem` | [ym_stickiness_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StickinessNamespaced.lean/declarations/ym-stickiness-if-supplied.md) | 34 | `result-track:516dee83830f91be645dfd39e5e9b470f65b961a5fc6c3a65b842984ce95dd0e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/DirectSumAlgebraNamespaced.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/DirectSumAlgebraNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/DirectSumAlgebraNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/DirectSumAlgebraNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [GAlgebra](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/DirectSumAlgebraNamespaced.lean/declarations/galgebra.md) | 56 | `declaration-track:96d8aa138e8d732e15357326320b720e08dd582f21ce5247a91ce588642b61a4` |
-| 2 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/DirectSumAlgebraNamespaced.lean/declarations/instance.md) | 69 | `declaration-track:e3400ddead31189123714364af8caa7e832dc4a141da5a35b040aed9d733784f` |
-| 3 | `theorem` | [algebraMap_apply](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/DirectSumAlgebraNamespaced.lean/declarations/algebramap-apply.md) | 94 | `result-track:92ab5b59bc9b33054a5ee8ea0c92739ff950244067450b077509d96b60bc27dd` |
-| 4 | `theorem` | [algebraMap_toAddMonoid_hom](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/DirectSumAlgebraNamespaced.lean/declarations/algebramap-toaddmonoid-hom.md) | 99 | `result-track:eae99504bc4b48b62fd553d8d39f6e66a1db1f21cca69a3556922fbe5fc73766` |
-| 5 | `def` | [toAlgebra](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/DirectSumAlgebraNamespaced.lean/declarations/toalgebra.md) | 112 | `declaration-track:455a7dba654d1dc70ce3d633ac634bb1f8ab30c9bfce93922a8e604ad765f966` |
-| 6 | `theorem` | [algHom_ext'](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/DirectSumAlgebraNamespaced.lean/declarations/alghom-ext.md) | 125 | `result-track:0816b38cdf2cf7376dc9e6cf57edc0ac9d78609145cb44dc64bf08dad14cb6f1` |
-| 7 | `theorem` | [algHom_ext](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/DirectSumAlgebraNamespaced.lean/declarations/alghom-ext-source-edition-2.md) | 130 | `result-track:9ef876ba3a92d3e93eff70defa770de053f703ad00b807c1c9f04d5cacd7d11f` |
-| 8 | `instance` | [Algebra.directSumGAlgebra](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/DirectSumAlgebraNamespaced.lean/declarations/algebra-directsumgalgebra.md) | 143 | `declaration-track:01f5c7416212c18930eef6bd686af85536a208eeb398c7d6b5af788bf9620cdd` |
+| 1 | `class` | [GAlgebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/DirectSumAlgebraNamespaced.lean/declarations/galgebra.md) | 56 | `declaration-track:96d8aa138e8d732e15357326320b720e08dd582f21ce5247a91ce588642b61a4` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/DirectSumAlgebraNamespaced.lean/declarations/instance.md) | 69 | `declaration-track:e3400ddead31189123714364af8caa7e832dc4a141da5a35b040aed9d733784f` |
+| 3 | `theorem` | [algebraMap_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/DirectSumAlgebraNamespaced.lean/declarations/algebramap-apply.md) | 94 | `result-track:92ab5b59bc9b33054a5ee8ea0c92739ff950244067450b077509d96b60bc27dd` |
+| 4 | `theorem` | [algebraMap_toAddMonoid_hom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/DirectSumAlgebraNamespaced.lean/declarations/algebramap-toaddmonoid-hom.md) | 99 | `result-track:eae99504bc4b48b62fd553d8d39f6e66a1db1f21cca69a3556922fbe5fc73766` |
+| 5 | `def` | [toAlgebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/DirectSumAlgebraNamespaced.lean/declarations/toalgebra.md) | 112 | `declaration-track:455a7dba654d1dc70ce3d633ac634bb1f8ab30c9bfce93922a8e604ad765f966` |
+| 6 | `theorem` | [algHom_ext'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/DirectSumAlgebraNamespaced.lean/declarations/alghom-ext.md) | 125 | `result-track:0816b38cdf2cf7376dc9e6cf57edc0ac9d78609145cb44dc64bf08dad14cb6f1` |
+| 7 | `theorem` | [algHom_ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/DirectSumAlgebraNamespaced.lean/declarations/alghom-ext-source-edition-2.md) | 130 | `result-track:9ef876ba3a92d3e93eff70defa770de053f703ad00b807c1c9f04d5cacd7d11f` |
+| 8 | `instance` | [Algebra.directSumGAlgebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/DirectSumAlgebraNamespaced.lean/declarations/algebra-directsumgalgebra.md) | 143 | `declaration-track:01f5c7416212c18930eef6bd686af85536a208eeb398c7d6b5af788bf9620cdd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/SimpleModuleRankNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/SimpleModuleRankNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SimpleModuleRankNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SimpleModuleRankNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [isSimpleModule_iff_finrank_eq_one](../../../../CommutativeAlgebra/SimpleModuleRankNamespaced.lean/declarations/issimplemodule-iff-finrank-eq-one.md) | 21 | `result-track:726ec92727e535b1fc78519d6db4007d94fdb9b7ae77c0b1f7f2e7d5668111d3` |
+| 1 | `theorem` | [isSimpleModule_iff_finrank_eq_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SimpleModuleRankNamespaced.lean/declarations/issimplemodule-iff-finrank-eq-one.md) | 21 | `result-track:726ec92727e535b1fc78519d6db4007d94fdb9b7ae77c0b1f7f2e7d5668111d3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

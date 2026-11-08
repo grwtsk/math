@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TorsionBasicNamespacedPublic.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TorsionBasicNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TorsionBasicNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TorsionBasicNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [rank_quotient_eq_of_le_torsion](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TorsionBasicNamespacedPublic.lean/declarations/rank-quotient-eq-of-le-torsion.md) | 35 | `result-track:c6d25e2d38012a0602c53d33acf4c1e12ea362e456bd015d9cc5afd6f15cb432` |
-| 2 | `theorem` | [finrank_quotient_eq_of_le_torsion](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TorsionBasicNamespacedPublic.lean/declarations/finrank-quotient-eq-of-le-torsion.md) | 48 | `result-track:abf5ea57cbe0a230228aca5d254c2091fbd3203f6397eb18cf153da69025db5f` |
-| 3 | `theorem` | [finrank_quotient_torsion_eq](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TorsionBasicNamespacedPublic.lean/declarations/finrank-quotient-torsion-eq.md) | 55 | `result-track:7a54b1342f5fb4733579fa41309cfd587aef10ee25681030f33e3bd2430219a8` |
+| 1 | `theorem` | [rank_quotient_eq_of_le_torsion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TorsionBasicNamespacedPublic.lean/declarations/rank-quotient-eq-of-le-torsion.md) | 35 | `result-track:c6d25e2d38012a0602c53d33acf4c1e12ea362e456bd015d9cc5afd6f15cb432` |
+| 2 | `theorem` | [finrank_quotient_eq_of_le_torsion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TorsionBasicNamespacedPublic.lean/declarations/finrank-quotient-eq-of-le-torsion.md) | 48 | `result-track:abf5ea57cbe0a230228aca5d254c2091fbd3203f6397eb18cf153da69025db5f` |
+| 3 | `theorem` | [finrank_quotient_torsion_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TorsionBasicNamespacedPublic.lean/declarations/finrank-quotient-torsion-eq.md) | 55 | `result-track:7a54b1342f5fb4733579fa41309cfd587aef10ee25681030f33e3bd2430219a8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

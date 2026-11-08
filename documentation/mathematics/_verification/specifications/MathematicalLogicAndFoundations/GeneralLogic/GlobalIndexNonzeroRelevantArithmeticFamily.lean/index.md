@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GlobalIndexNonzeroRelevantArithmeticFamily.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GlobalIndexNonzeroRelevantArithmeticFamily.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GlobalIndexNonzeroRelevantArithmeticFamily.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GlobalIndexNonzeroRelevantArithmeticFamily.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RelevantArithmeticFamily](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GlobalIndexNonzeroRelevantArithmeticFamily.lean/declarations/relevantarithmeticfamily.md) | 22 | `declaration-track:82eef8729ef077a4170cdb9e9f4f5430e6ee90b44227b3c6580bdadc71d4f732` |
-| 2 | `structure` | [GlobalKIndexNonzero](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GlobalIndexNonzeroRelevantArithmeticFamily.lean/declarations/globalkindexnonzero.md) | 34 | `declaration-track:0be6070dff710bcde8862107750b9c4c0c386f41f744b3b77370c4c81511e9ff` |
-| 3 | `theorem` | [global_k_index_nonzero](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GlobalIndexNonzeroRelevantArithmeticFamily.lean/declarations/global-k-index-nonzero.md) | 40 | `result-track:c8482a923ab740badf1c634f8686ee18e95c1bdd619a3c417201ace33382a5e0` |
-| 4 | `structure` | [CertifiedEllipticCurveFamily](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GlobalIndexNonzeroRelevantArithmeticFamily.lean/declarations/certifiedellipticcurvefamily.md) | 54 | `declaration-track:40941999c857de9e2ac737432b77e60b9f82cd8d664e9620a0234490078c3809` |
-| 5 | `theorem` | [elliptic_family_global_index_nonzero](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GlobalIndexNonzeroRelevantArithmeticFamily.lean/declarations/elliptic-family-global-index-nonzero.md) | 64 | `result-track:a539ac162bd44515b19989dabed417164ffb16d605b466772f41a326886f6e0d` |
+| 1 | `structure` | [RelevantArithmeticFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GlobalIndexNonzeroRelevantArithmeticFamily.lean/declarations/relevantarithmeticfamily.md) | 22 | `declaration-track:82eef8729ef077a4170cdb9e9f4f5430e6ee90b44227b3c6580bdadc71d4f732` |
+| 2 | `structure` | [GlobalKIndexNonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GlobalIndexNonzeroRelevantArithmeticFamily.lean/declarations/globalkindexnonzero.md) | 34 | `declaration-track:0be6070dff710bcde8862107750b9c4c0c386f41f744b3b77370c4c81511e9ff` |
+| 3 | `theorem` | [global_k_index_nonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GlobalIndexNonzeroRelevantArithmeticFamily.lean/declarations/global-k-index-nonzero.md) | 40 | `result-track:c8482a923ab740badf1c634f8686ee18e95c1bdd619a3c417201ace33382a5e0` |
+| 4 | `structure` | [CertifiedEllipticCurveFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GlobalIndexNonzeroRelevantArithmeticFamily.lean/declarations/certifiedellipticcurvefamily.md) | 54 | `declaration-track:40941999c857de9e2ac737432b77e60b9f82cd8d664e9620a0234490078c3809` |
+| 5 | `theorem` | [elliptic_family_global_index_nonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GlobalIndexNonzeroRelevantArithmeticFamily.lean/declarations/elliptic-family-global-index-nonzero.md) | 64 | `result-track:a539ac162bd44515b19989dabed417164ffb16d605b466772f41a326886f6e0d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

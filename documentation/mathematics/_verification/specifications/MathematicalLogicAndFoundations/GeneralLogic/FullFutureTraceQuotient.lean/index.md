@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FullFutureTraceQuotient.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FullFutureTraceQuotient.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FullFutureTraceQuotient.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FullFutureTraceQuotient.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,15 +59,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [CausalEquivalent](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FullFutureTraceQuotient.lean/declarations/causalequivalent.md) | 54 | `declaration-track:d9a4a5f8c77889357ac9229d883595b414cc8ba36615beb8bc60b85bf0086f4a` |
-| 2 | `theorem` | [causalEquivalent_refl](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FullFutureTraceQuotient.lean/declarations/causalequivalent-refl.md) | 59 | `result-track:0f37083a1fd801e5046bc25fcf4bf652af9a9da12bfe8b35c30b22a9ef27d9bd` |
-| 3 | `theorem` | [causalEquivalent_symm](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FullFutureTraceQuotient.lean/declarations/causalequivalent-symm.md) | 64 | `result-track:9c069a094dcc215a31ad3851de5cf8ae08e50a4fda41f55b9cd5afd3e20b6f8c` |
-| 4 | `theorem` | [causalEquivalent_trans](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FullFutureTraceQuotient.lean/declarations/causalequivalent-trans.md) | 72 | `result-track:376c7bb3e75ef3c8ecfc44f93e01c52ee1fd68bbfe8f2bbaf1186126f7e586f3` |
-| 5 | `def` | [causalSetoid](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FullFutureTraceQuotient.lean/declarations/causalsetoid.md) | 82 | `declaration-track:6dfc8ecafefc07cd3d83bf9a84f4e601804f2e8eb3635ac590344bfb4b2631b1` |
-| 6 | `def` | [CausalState](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FullFutureTraceQuotient.lean/declarations/causalstate.md) | 91 | `declaration-track:973067368313afaed1f433d7dd7b728a847a05453b28da59839228417043fc72` |
-| 7 | `def` | [toCausal](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FullFutureTraceQuotient.lean/declarations/tocausal.md) | 95 | `declaration-track:52027b0b8b00f700dffd8298b68ad103582e7140c9effb199476e86ad4722feb` |
-| 8 | `theorem` | [toCausal_surjective](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FullFutureTraceQuotient.lean/declarations/tocausal-surjective.md) | 98 | `result-track:0dedc4b675f99e9fa19b2d76786731d3ff2a8ae37195923bf9136e2b81f3e121` |
-| 9 | `theorem` | [toCausal_eq_iff](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FullFutureTraceQuotient.lean/declarations/tocausal-eq-iff.md) | 106 | `result-track:57afef38069d7bbefb6938aef44d2475d14fc6c9c20abac4f971acb6269d542b` |
+| 1 | `def` | [CausalEquivalent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FullFutureTraceQuotient.lean/declarations/causalequivalent.md) | 54 | `declaration-track:d9a4a5f8c77889357ac9229d883595b414cc8ba36615beb8bc60b85bf0086f4a` |
+| 2 | `theorem` | [causalEquivalent_refl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FullFutureTraceQuotient.lean/declarations/causalequivalent-refl.md) | 59 | `result-track:0f37083a1fd801e5046bc25fcf4bf652af9a9da12bfe8b35c30b22a9ef27d9bd` |
+| 3 | `theorem` | [causalEquivalent_symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FullFutureTraceQuotient.lean/declarations/causalequivalent-symm.md) | 64 | `result-track:9c069a094dcc215a31ad3851de5cf8ae08e50a4fda41f55b9cd5afd3e20b6f8c` |
+| 4 | `theorem` | [causalEquivalent_trans](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FullFutureTraceQuotient.lean/declarations/causalequivalent-trans.md) | 72 | `result-track:376c7bb3e75ef3c8ecfc44f93e01c52ee1fd68bbfe8f2bbaf1186126f7e586f3` |
+| 5 | `def` | [causalSetoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FullFutureTraceQuotient.lean/declarations/causalsetoid.md) | 82 | `declaration-track:6dfc8ecafefc07cd3d83bf9a84f4e601804f2e8eb3635ac590344bfb4b2631b1` |
+| 6 | `def` | [CausalState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FullFutureTraceQuotient.lean/declarations/causalstate.md) | 91 | `declaration-track:973067368313afaed1f433d7dd7b728a847a05453b28da59839228417043fc72` |
+| 7 | `def` | [toCausal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FullFutureTraceQuotient.lean/declarations/tocausal.md) | 95 | `declaration-track:52027b0b8b00f700dffd8298b68ad103582e7140c9effb199476e86ad4722feb` |
+| 8 | `theorem` | [toCausal_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FullFutureTraceQuotient.lean/declarations/tocausal-surjective.md) | 98 | `result-track:0dedc4b675f99e9fa19b2d76786731d3ff2a8ae37195923bf9136e2b81f3e121` |
+| 9 | `theorem` | [toCausal_eq_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FullFutureTraceQuotient.lean/declarations/tocausal-eq-iff.md) | 106 | `result-track:57afef38069d7bbefb6938aef44d2475d14fc6c9c20abac4f971acb6269d542b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

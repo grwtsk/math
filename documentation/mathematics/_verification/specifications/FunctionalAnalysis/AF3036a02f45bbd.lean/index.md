@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/AF3036a02f45bbd.lean/index.md) · [Full source](../../../../FunctionalAnalysis/AF3036a02f45bbd.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AF3036a02f45bbd.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AF3036a02f45bbd.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [rawInner_eq_of_sub_mem_left](../../../../FunctionalAnalysis/AF3036a02f45bbd.lean/declarations/rawinner-eq-of-sub-mem-left.md) | 19 | `result-track:8a257ece4e0f6b1e182290e8951e8cc01404729d15f2c4d3f90f024a8fcd2ecd` |
+| 1 | `theorem` | [rawInner_eq_of_sub_mem_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AF3036a02f45bbd.lean/declarations/rawinner-eq-of-sub-mem-left.md) | 19 | `result-track:8a257ece4e0f6b1e182290e8951e8cc01404729d15f2c4d3f90f024a8fcd2ecd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

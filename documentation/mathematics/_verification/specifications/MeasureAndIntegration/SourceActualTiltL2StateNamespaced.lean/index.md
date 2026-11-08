@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceActualTiltL2StateNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceActualTiltL2StateNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualTiltL2StateNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualTiltL2StateNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actualUnitTilt_memLp](../../../../MeasureAndIntegration/SourceActualTiltL2StateNamespaced.lean/declarations/actualunittilt-memlp.md) | 27 | `result-track:1b084d374c93d35da2d96bd7d7d77e42b841501dc78f0faf470f496b44ca834a` |
-| 2 | `def` | [actualUnitTiltState](../../../../MeasureAndIntegration/SourceActualTiltL2StateNamespaced.lean/declarations/actualunittiltstate.md) | 38 | `declaration-track:c1b0cb0922344952b676ae10340e8876d714c4f043312717aedf776f7bf20901` |
-| 3 | `theorem` | [actualUnitTiltState_coe_ae](../../../../MeasureAndIntegration/SourceActualTiltL2StateNamespaced.lean/declarations/actualunittiltstate-coe-ae.md) | 43 | `result-track:efa3e05781fd0032eba45482a7225aa64084fc111782008db9bd0dab768e45e9` |
-| 4 | `theorem` | [actualUnitTiltState_norm_sq](../../../../MeasureAndIntegration/SourceActualTiltL2StateNamespaced.lean/declarations/actualunittiltstate-norm-sq.md) | 49 | `result-track:a359d574db425078938632f2cd77e5c7241df4ba40131e5d7e73379ea86f0d15` |
-| 5 | `theorem` | [actualUnitTiltState_norm_sq_tendsto_atTop](../../../../MeasureAndIntegration/SourceActualTiltL2StateNamespaced.lean/declarations/actualunittiltstate-norm-sq-tendsto-attop.md) | 65 | `result-track:9f8fab6ee6a978df7c9eedba9adfc57e17d6a44c2de413cd8701691415a0d91a` |
+| 1 | `theorem` | [actualUnitTilt_memLp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualTiltL2StateNamespaced.lean/declarations/actualunittilt-memlp.md) | 27 | `result-track:1b084d374c93d35da2d96bd7d7d77e42b841501dc78f0faf470f496b44ca834a` |
+| 2 | `def` | [actualUnitTiltState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualTiltL2StateNamespaced.lean/declarations/actualunittiltstate.md) | 38 | `declaration-track:c1b0cb0922344952b676ae10340e8876d714c4f043312717aedf776f7bf20901` |
+| 3 | `theorem` | [actualUnitTiltState_coe_ae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualTiltL2StateNamespaced.lean/declarations/actualunittiltstate-coe-ae.md) | 43 | `result-track:efa3e05781fd0032eba45482a7225aa64084fc111782008db9bd0dab768e45e9` |
+| 4 | `theorem` | [actualUnitTiltState_norm_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualTiltL2StateNamespaced.lean/declarations/actualunittiltstate-norm-sq.md) | 49 | `result-track:a359d574db425078938632f2cd77e5c7241df4ba40131e5d7e73379ea86f0d15` |
+| 5 | `theorem` | [actualUnitTiltState_norm_sq_tendsto_atTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualTiltL2StateNamespaced.lean/declarations/actualunittiltstate-norm-sq-tendsto-attop.md) | 65 | `result-track:9f8fab6ee6a978df7c9eedba9adfc57e17d6a44c2de413cd8701691415a0d91a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

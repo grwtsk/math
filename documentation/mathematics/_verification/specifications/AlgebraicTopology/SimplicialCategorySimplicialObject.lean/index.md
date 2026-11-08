@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/SimplicialCategorySimplicialObject.lean/index.md) · [Full source](../../../../AlgebraicTopology/SimplicialCategorySimplicialObject.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialCategorySimplicialObject.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialCategorySimplicialObject.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../AlgebraicTopology/SimplicialCategorySimplicialObject.lean/declarations/instance.md) | 30 | `declaration-track:52ae90e14078804bfabffc3fa613885180411867164f63adfcf6f1683664b83c` |
-| 2 | `instance` | [(anonymous)](../../../../AlgebraicTopology/SimplicialCategorySimplicialObject.lean/declarations/instance-source-edition-3.md) | 33 | `declaration-track:7be8226841f2e2d0dad7827cece58565ed1102bb4cab781fb171a67e2bacc8b7` |
-| 3 | `instance` | [(anonymous)](../../../../AlgebraicTopology/SimplicialCategorySimplicialObject.lean/declarations/instance-source-edition-2.md) | 36 | `declaration-track:675907058a0a3298cb8ae0cf1e8b925f63b40892bd6e2580f9378e89e1f73163` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialCategorySimplicialObject.lean/declarations/instance.md) | 30 | `declaration-track:52ae90e14078804bfabffc3fa613885180411867164f63adfcf6f1683664b83c` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialCategorySimplicialObject.lean/declarations/instance-source-edition-3.md) | 33 | `declaration-track:7be8226841f2e2d0dad7827cece58565ed1102bb4cab781fb171a67e2bacc8b7` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialCategorySimplicialObject.lean/declarations/instance-source-edition-2.md) | 36 | `declaration-track:675907058a0a3298cb8ae0cf1e8b925f63b40892bd6e2580f9378e89e1f73163` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

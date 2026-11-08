@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ChecksDeclarationsSourceEdition2.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ChecksDeclarationsSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ChecksDeclarationsSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ChecksDeclarationsSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann`](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZetaRiemann.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZetaRiemann.lean/index.md) — import line 1; pinned internal source present.
 - `Lean` — import line 2; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ChecksDeclarationsSourceEdition2.lean/declarations/example-source-edition-6.md) | 7 | `declaration-track:f7dceb487f830ac821c4717bd26acf7fb38ada285bc5b756ff18c68a725c16e0` |
-| 2 | `example` | [(anonymous)](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ChecksDeclarationsSourceEdition2.lean/declarations/example-source-edition-3.md) | 9 | `declaration-track:b98e215e0f5f6b139e6589cbb32bf6b91938aa7b67f4466b7e96d32c2295e076` |
-| 3 | `example` | [(anonymous)](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ChecksDeclarationsSourceEdition2.lean/declarations/example-source-edition-2.md) | 11 | `declaration-track:8b66e4f9f7a2c623c4d794e5c14f2a3d60bb82efc26b5f1fa76f6014a2745d5a` |
-| 4 | `example` | [(anonymous)](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ChecksDeclarationsSourceEdition2.lean/declarations/example.md) | 12 | `declaration-track:44cdde2043fc8f42bb7f861397bbb21b6e95173cf5b800db14622a906a00e8f3` |
-| 5 | `example` | [(anonymous)](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ChecksDeclarationsSourceEdition2.lean/declarations/example-source-edition-5.md) | 16 | `declaration-track:d8634bf2818456dedd965fafa2c7f08e0081facf3b6b80c781398f6bc53a5adf` |
-| 6 | `example` | [(anonymous)](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ChecksDeclarationsSourceEdition2.lean/declarations/example-source-edition-4.md) | 17 | `declaration-track:d20274b0d770574ef6af1083c5ff14dc7ba401ede252635be4944b711f930ac0` |
-| 7 | `elab` | [(anonymous)](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ChecksDeclarationsSourceEdition2.lean/declarations/elab.md) | 20 | `declaration-track:b68171b68c0e9e1b5eeaad575b7ec087d024c58480ad705d1b1907a7f95e9fe7` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ChecksDeclarationsSourceEdition2.lean/declarations/example-source-edition-6.md) | 7 | `declaration-track:f7dceb487f830ac821c4717bd26acf7fb38ada285bc5b756ff18c68a725c16e0` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ChecksDeclarationsSourceEdition2.lean/declarations/example-source-edition-3.md) | 9 | `declaration-track:b98e215e0f5f6b139e6589cbb32bf6b91938aa7b67f4466b7e96d32c2295e076` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ChecksDeclarationsSourceEdition2.lean/declarations/example-source-edition-2.md) | 11 | `declaration-track:8b66e4f9f7a2c623c4d794e5c14f2a3d60bb82efc26b5f1fa76f6014a2745d5a` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ChecksDeclarationsSourceEdition2.lean/declarations/example.md) | 12 | `declaration-track:44cdde2043fc8f42bb7f861397bbb21b6e95173cf5b800db14622a906a00e8f3` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ChecksDeclarationsSourceEdition2.lean/declarations/example-source-edition-5.md) | 16 | `declaration-track:d8634bf2818456dedd965fafa2c7f08e0081facf3b6b80c781398f6bc53a5adf` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ChecksDeclarationsSourceEdition2.lean/declarations/example-source-edition-4.md) | 17 | `declaration-track:d20274b0d770574ef6af1083c5ff14dc7ba401ede252635be4944b711f930ac0` |
+| 7 | `elab` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ChecksDeclarationsSourceEdition2.lean/declarations/elab.md) | 20 | `declaration-track:b68171b68c0e9e1b5eeaad575b7ec087d024c58480ad705d1b1907a7f95e9fe7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

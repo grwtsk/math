@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/StringPublicQuoteCore.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/StringPublicQuoteCore.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/StringPublicQuoteCore.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/StringPublicQuoteCore.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [quoteCore](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/StringPublicQuoteCore.lean/declarations/quotecore.md) | 35 | `declaration-track:8db3e1e7e9840a90798e4d96e79853da7b017e4c655b956a6e1e062785c6d678` |
-| 2 | `def` | [quoteHttpString](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/StringPublicQuoteCore.lean/declarations/quotehttpstring-source-edition-2.md) | 53 | `declaration-track:6fa62fd9b4ce89e62f96369dcffa2727edfb3e535e00bb24ef0519f9a7f145a5` |
-| 3 | `def` | [quoteHttpString?](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/StringPublicQuoteCore.lean/declarations/quotehttpstring.md) | 70 | `declaration-track:0a5e17264a71001fe863570bfa3f896dc44240df8cd19cb434dd070c0a4f7cec` |
-| 4 | `def` | [quoteHttpString!](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/StringPublicQuoteCore.lean/declarations/quotehttpstring-source-edition-3.md) | 80 | `declaration-track:c75384591bf9e2a0660d4a72d020482d3866f8524c3d1e7d6c1b614ec0391ce7` |
-| 5 | `inductive` | [UnquoteState](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/StringPublicQuoteCore.lean/declarations/unquotestate.md) | 85 | `declaration-track:ed66b61fc96ca4e9560395f0a18b387b3b15b29363c6830720c57805de52e918` |
-| 6 | `def` | [unquoteHttpString?](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/StringPublicQuoteCore.lean/declarations/unquotehttpstring.md) | 94 | `declaration-track:4aca654e2951a789137b66cdbeee2c7d80da743c044d878c60129040ecde711e` |
-| 7 | `def` | [isToken](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/StringPublicQuoteCore.lean/declarations/istoken.md) | 120 | `declaration-track:412b1e0880dc068681553371a319173ac026a6e2a70a47fb36d41a239009f01c` |
+| 1 | `def` | [quoteCore](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/StringPublicQuoteCore.lean/declarations/quotecore.md) | 35 | `declaration-track:8db3e1e7e9840a90798e4d96e79853da7b017e4c655b956a6e1e062785c6d678` |
+| 2 | `def` | [quoteHttpString](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/StringPublicQuoteCore.lean/declarations/quotehttpstring-source-edition-2.md) | 53 | `declaration-track:6fa62fd9b4ce89e62f96369dcffa2727edfb3e535e00bb24ef0519f9a7f145a5` |
+| 3 | `def` | [quoteHttpString?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/StringPublicQuoteCore.lean/declarations/quotehttpstring.md) | 70 | `declaration-track:0a5e17264a71001fe863570bfa3f896dc44240df8cd19cb434dd070c0a4f7cec` |
+| 4 | `def` | [quoteHttpString!](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/StringPublicQuoteCore.lean/declarations/quotehttpstring-source-edition-3.md) | 80 | `declaration-track:c75384591bf9e2a0660d4a72d020482d3866f8524c3d1e7d6c1b614ec0391ce7` |
+| 5 | `inductive` | [UnquoteState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/StringPublicQuoteCore.lean/declarations/unquotestate.md) | 85 | `declaration-track:ed66b61fc96ca4e9560395f0a18b387b3b15b29363c6830720c57805de52e918` |
+| 6 | `def` | [unquoteHttpString?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/StringPublicQuoteCore.lean/declarations/unquotehttpstring.md) | 94 | `declaration-track:4aca654e2951a789137b66cdbeee2c7d80da743c044d878c60129040ecde711e` |
+| 7 | `def` | [isToken](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/StringPublicQuoteCore.lean/declarations/istoken.md) | 120 | `declaration-track:412b1e0880dc068681553371a319173ac026a6e2a70a47fb36d41a239009f01c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

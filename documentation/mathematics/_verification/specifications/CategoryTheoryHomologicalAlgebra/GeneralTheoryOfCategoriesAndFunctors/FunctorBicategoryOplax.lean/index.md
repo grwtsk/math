@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorBicategoryOplax.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorBicategoryOplax.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorBicategoryOplax.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorBicategoryOplax.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [whiskerLeft](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorBicategoryOplax.lean/declarations/whiskerleft.md) | 33 | `declaration-track:c8c0471612d300d548597b3c4f331b3aca710f9525082ad014c43f3a5d61da23` |
-| 2 | `def` | [whiskerRight](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorBicategoryOplax.lean/declarations/whiskerright.md) | 42 | `declaration-track:ddb2c0353ea62889929c3b5ee7f1bff7af3b1ea74e0135580b566a7c5daf6248` |
-| 3 | `def` | [associator](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorBicategoryOplax.lean/declarations/associator.md) | 51 | `declaration-track:5bea0545636bd293c56685b4ad5736a9500f4415a16de68afab7095dbef2ac31` |
-| 4 | `def` | [leftUnitor](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorBicategoryOplax.lean/declarations/leftunitor.md) | 56 | `declaration-track:de8c7f69a50c13ad56477da8e501eb2ab9bc909671c3f0b80f53afaf74ec842d` |
-| 5 | `def` | [rightUnitor](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorBicategoryOplax.lean/declarations/rightunitor.md) | 61 | `declaration-track:37192e7570fd8dc223f33aec5cf1d661e10a191ffd2c7525c6d8bb298be290f4` |
-| 6 | `instance` | [OplaxFunctor.bicategory](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorBicategoryOplax.lean/declarations/oplaxfunctor-bicategory.md) | 68 | `declaration-track:4fb03f39bba1ebaed4a68f486f7533dc52d86d04127e8e5c32de0c5d16581f01` |
+| 1 | `def` | [whiskerLeft](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorBicategoryOplax.lean/declarations/whiskerleft.md) | 33 | `declaration-track:c8c0471612d300d548597b3c4f331b3aca710f9525082ad014c43f3a5d61da23` |
+| 2 | `def` | [whiskerRight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorBicategoryOplax.lean/declarations/whiskerright.md) | 42 | `declaration-track:ddb2c0353ea62889929c3b5ee7f1bff7af3b1ea74e0135580b566a7c5daf6248` |
+| 3 | `def` | [associator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorBicategoryOplax.lean/declarations/associator.md) | 51 | `declaration-track:5bea0545636bd293c56685b4ad5736a9500f4415a16de68afab7095dbef2ac31` |
+| 4 | `def` | [leftUnitor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorBicategoryOplax.lean/declarations/leftunitor.md) | 56 | `declaration-track:de8c7f69a50c13ad56477da8e501eb2ab9bc909671c3f0b80f53afaf74ec842d` |
+| 5 | `def` | [rightUnitor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorBicategoryOplax.lean/declarations/rightunitor.md) | 61 | `declaration-track:37192e7570fd8dc223f33aec5cf1d661e10a191ffd2c7525c6d8bb298be290f4` |
+| 6 | `instance` | [OplaxFunctor.bicategory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorBicategoryOplax.lean/declarations/oplaxfunctor-bicategory.md) | 68 | `declaration-track:4fb03f39bba1ebaed4a68f486f7533dc52d86d04127e8e5c32de0c5d16581f01` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

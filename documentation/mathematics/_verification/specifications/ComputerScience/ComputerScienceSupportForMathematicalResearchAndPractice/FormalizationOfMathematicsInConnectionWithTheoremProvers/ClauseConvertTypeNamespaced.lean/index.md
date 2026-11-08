@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ClauseConvertTypeNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ClauseConvertTypeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ClauseConvertTypeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ClauseConvertTypeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [orLevel](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ClauseConvertTypeNamespaced.lean/declarations/orlevel.md) | 16 | `declaration-track:0119b9ed269da7d24be2175d48510d29e3b62780dad15983c3368c09b75744f0` |
-| 2 | `def` | [or1](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ClauseConvertTypeNamespaced.lean/declarations/or1.md) | 20 | `declaration-track:824c8b5ae55ae71ada2536394013210db4d4197382d6b95ab4f7964ba4ccbcd5` |
-| 3 | `def` | [or2](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ClauseConvertTypeNamespaced.lean/declarations/or2.md) | 25 | `declaration-track:9964c9a521be6f09192f00fad64fbc8de90603c86f650dcda1232b0c7a8fe345` |
-| 4 | `def` | [orChange](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ClauseConvertTypeNamespaced.lean/declarations/orchange.md) | 29 | `declaration-track:26295bb4f626f8459804d17b6a53d7ae89c79fd91250568bf848bddca48f535a` |
+| 1 | `def` | [orLevel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ClauseConvertTypeNamespaced.lean/declarations/orlevel.md) | 16 | `declaration-track:0119b9ed269da7d24be2175d48510d29e3b62780dad15983c3368c09b75744f0` |
+| 2 | `def` | [or1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ClauseConvertTypeNamespaced.lean/declarations/or1.md) | 20 | `declaration-track:824c8b5ae55ae71ada2536394013210db4d4197382d6b95ab4f7964ba4ccbcd5` |
+| 3 | `def` | [or2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ClauseConvertTypeNamespaced.lean/declarations/or2.md) | 25 | `declaration-track:9964c9a521be6f09192f00fad64fbc8de90603c86f650dcda1232b0c7a8fe345` |
+| 4 | `def` | [orChange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ClauseConvertTypeNamespaced.lean/declarations/orchange.md) | 29 | `declaration-track:26295bb4f626f8459804d17b6a53d7ae89c79fd91250568bf848bddca48f535a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

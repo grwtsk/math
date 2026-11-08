@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/NonnegModuleNamespaced.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/NonnegModuleNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/NonnegModuleNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/NonnegModuleNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [instSMul](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/NonnegModuleNamespaced.lean/declarations/instsmul.md) | 39 | `declaration-track:14f0c8208ff4572bbb41d81ab08da09bf6397a6660b63aab08988f4dece90b48` |
-| 2 | `lemma` | [coe_smul](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/NonnegModuleNamespaced.lean/declarations/coe-smul.md) | 43 | `result-track:12b9c00cd70a06bea11bb9b9a2e2be695191dcc545d8b293a6701897f388ab8c` |
-| 3 | `lemma` | [mk_smul](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/NonnegModuleNamespaced.lean/declarations/mk-smul.md) | 47 | `result-track:483b6f6b84618db1191a21c53aa6778bb4f8d1184f88b64e447820553d479844` |
-| 4 | `instance` | [instIsScalarTower](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/NonnegModuleNamespaced.lean/declarations/instisscalartower.md) | 56 | `declaration-track:c9c12ae752b6105c214822e2cda3caa0406ed11e134405f8b693a8b647efc6d0` |
-| 5 | `instance` | [instSMulWithZero](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/NonnegModuleNamespaced.lean/declarations/instsmulwithzero.md) | 65 | `declaration-track:35a3f715c339ab24bbfae96388847b1a577342d3e39d2c4d2e0e80ad4b0f575a` |
-| 6 | `instance` | [instOrderedSMul](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/NonnegModuleNamespaced.lean/declarations/instorderedsmul.md) | 76 | `declaration-track:b7a9c32e0fe613d8dfb6601a9770e0088060e1acc0d3c01d7892f95977d6d7e8` |
-| 7 | `instance` | [instModule](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/NonnegModuleNamespaced.lean/declarations/instmodule.md) | 86 | `declaration-track:783b56f4fedb7c85a15b8bfdacab6e89277ccf22783d5c4d1c026db518c9f63f` |
+| 1 | `instance` | [instSMul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/NonnegModuleNamespaced.lean/declarations/instsmul.md) | 39 | `declaration-track:14f0c8208ff4572bbb41d81ab08da09bf6397a6660b63aab08988f4dece90b48` |
+| 2 | `lemma` | [coe_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/NonnegModuleNamespaced.lean/declarations/coe-smul.md) | 43 | `result-track:12b9c00cd70a06bea11bb9b9a2e2be695191dcc545d8b293a6701897f388ab8c` |
+| 3 | `lemma` | [mk_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/NonnegModuleNamespaced.lean/declarations/mk-smul.md) | 47 | `result-track:483b6f6b84618db1191a21c53aa6778bb4f8d1184f88b64e447820553d479844` |
+| 4 | `instance` | [instIsScalarTower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/NonnegModuleNamespaced.lean/declarations/instisscalartower.md) | 56 | `declaration-track:c9c12ae752b6105c214822e2cda3caa0406ed11e134405f8b693a8b647efc6d0` |
+| 5 | `instance` | [instSMulWithZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/NonnegModuleNamespaced.lean/declarations/instsmulwithzero.md) | 65 | `declaration-track:35a3f715c339ab24bbfae96388847b1a577342d3e39d2c4d2e0e80ad4b0f575a` |
+| 6 | `instance` | [instOrderedSMul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/NonnegModuleNamespaced.lean/declarations/instorderedsmul.md) | 76 | `declaration-track:b7a9c32e0fe613d8dfb6601a9770e0088060e1acc0d3c01d7892f95977d6d7e8` |
+| 7 | `instance` | [instModule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/NonnegModuleNamespaced.lean/declarations/instmodule.md) | 86 | `declaration-track:783b56f4fedb7c85a15b8bfdacab6e89277ccf22783d5c4d1c026db518c9f63f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

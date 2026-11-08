@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/NevanlinnaKernelNamespacedPublic.lean/index.md) · [Full source](../../../../RealFunctions/NevanlinnaKernelNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/NevanlinnaKernelNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/NevanlinnaKernelNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [upperHalfPlane](../../../../RealFunctions/NevanlinnaKernelNamespacedPublic.lean/declarations/upperhalfplane.md) | 37 | `declaration-track:3e8e947181bd52990a8f060316434195165b64e55b64320e75a7c7d50b060f59` |
-| 2 | `def` | [IsHerglotz](../../../../RealFunctions/NevanlinnaKernelNamespacedPublic.lean/declarations/isherglotz.md) | 41 | `declaration-track:3c111a427f3b2e0601fc999ff26d917408d8a55fade5e8c7a5d1932ed1954e54` |
-| 3 | `def` | [nevanlinnaKernel](../../../../RealFunctions/NevanlinnaKernelNamespacedPublic.lean/declarations/nevanlinnakernel.md) | 47 | `declaration-track:c6afc2e40dc281615ef104ec017b2e08edf2064161b68a1238b59fea8f550e77` |
-| 4 | `def` | [kernelQuadraticForm](../../../../RealFunctions/NevanlinnaKernelNamespacedPublic.lean/declarations/kernelquadraticform.md) | 52 | `declaration-track:d1fc19e4cf8c2c5292ba4c09ad82592a4e9f4757282aecc607078c4f272b1be0` |
-| 5 | `def` | [PositiveSemidefiniteKernelOn](../../../../RealFunctions/NevanlinnaKernelNamespacedPublic.lean/declarations/positivesemidefinitekernelon.md) | 60 | `declaration-track:4bce33dcf268f7f63cd46ff0267f5fab6b64430ab416ad1a05cf365cceecb58d` |
-| 6 | `def` | [HasPositiveNevanlinnaKernel](../../../../RealFunctions/NevanlinnaKernelNamespacedPublic.lean/declarations/haspositivenevanlinnakernel.md) | 69 | `declaration-track:1e760307c85642f90933f04399da0417af0291e3847fc2251e6d58cf18612b4e` |
-| 7 | `theorem` | [nevanlinnaKernel_self](../../../../RealFunctions/NevanlinnaKernelNamespacedPublic.lean/declarations/nevanlinnakernel-self.md) | 75 | `result-track:437e391698482b578246513bc093d1f9f2983a8e6783d7a2e6dda33f5cf328cb` |
-| 8 | `theorem` | [isHerglotz_of_positiveKernel](../../../../RealFunctions/NevanlinnaKernelNamespacedPublic.lean/declarations/isherglotz-of-positivekernel.md) | 94 | `result-track:cb4ea5cec344c93d0e2ac65baa94e9bc19000ef688a94561e2460924b0c7a9d2` |
-| 9 | `def` | [HerglotzImpliesPositiveNevanlinnaKernel](../../../../RealFunctions/NevanlinnaKernelNamespacedPublic.lean/declarations/herglotzimpliespositivenevanlinnakernel.md) | 117 | `declaration-track:eade26bc9e4b39f6cc47963edb9398ce974bbfb49d3802442c80111c1489d1af` |
+| 1 | `def` | [upperHalfPlane](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/NevanlinnaKernelNamespacedPublic.lean/declarations/upperhalfplane.md) | 37 | `declaration-track:3e8e947181bd52990a8f060316434195165b64e55b64320e75a7c7d50b060f59` |
+| 2 | `def` | [IsHerglotz](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/NevanlinnaKernelNamespacedPublic.lean/declarations/isherglotz.md) | 41 | `declaration-track:3c111a427f3b2e0601fc999ff26d917408d8a55fade5e8c7a5d1932ed1954e54` |
+| 3 | `def` | [nevanlinnaKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/NevanlinnaKernelNamespacedPublic.lean/declarations/nevanlinnakernel.md) | 47 | `declaration-track:c6afc2e40dc281615ef104ec017b2e08edf2064161b68a1238b59fea8f550e77` |
+| 4 | `def` | [kernelQuadraticForm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/NevanlinnaKernelNamespacedPublic.lean/declarations/kernelquadraticform.md) | 52 | `declaration-track:d1fc19e4cf8c2c5292ba4c09ad82592a4e9f4757282aecc607078c4f272b1be0` |
+| 5 | `def` | [PositiveSemidefiniteKernelOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/NevanlinnaKernelNamespacedPublic.lean/declarations/positivesemidefinitekernelon.md) | 60 | `declaration-track:4bce33dcf268f7f63cd46ff0267f5fab6b64430ab416ad1a05cf365cceecb58d` |
+| 6 | `def` | [HasPositiveNevanlinnaKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/NevanlinnaKernelNamespacedPublic.lean/declarations/haspositivenevanlinnakernel.md) | 69 | `declaration-track:1e760307c85642f90933f04399da0417af0291e3847fc2251e6d58cf18612b4e` |
+| 7 | `theorem` | [nevanlinnaKernel_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/NevanlinnaKernelNamespacedPublic.lean/declarations/nevanlinnakernel-self.md) | 75 | `result-track:437e391698482b578246513bc093d1f9f2983a8e6783d7a2e6dda33f5cf328cb` |
+| 8 | `theorem` | [isHerglotz_of_positiveKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/NevanlinnaKernelNamespacedPublic.lean/declarations/isherglotz-of-positivekernel.md) | 94 | `result-track:cb4ea5cec344c93d0e2ac65baa94e9bc19000ef688a94561e2460924b0c7a9d2` |
+| 9 | `def` | [HerglotzImpliesPositiveNevanlinnaKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/NevanlinnaKernelNamespacedPublic.lean/declarations/herglotzimpliespositivenevanlinnakernel.md) | 117 | `declaration-track:eade26bc9e4b39f6cc47963edb9398ce974bbfb49d3802442c80111c1489d1af` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

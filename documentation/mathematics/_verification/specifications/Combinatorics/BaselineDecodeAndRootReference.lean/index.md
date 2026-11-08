@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/BaselineDecodeAndRootReference.lean/index.md) · [Full source](../../../../Combinatorics/BaselineDecodeAndRootReference.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BaselineDecodeAndRootReference.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BaselineDecodeAndRootReference.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../Combinatorics/BaselineDecodeAndRootReference.lean/declarations/example.md) | 29 | `declaration-track:0f8e78b95fb71ec7b5e5f3666474d2bc0a101059e209af33da0221a3bbd219c6` |
-| 2 | `example` | [(anonymous)](../../../../Combinatorics/BaselineDecodeAndRootReference.lean/declarations/example-source-edition-2.md) | 35 | `declaration-track:69f37574203e1a81f9e4ccd9250242a6807b77ff80a143634423893241cf99de` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BaselineDecodeAndRootReference.lean/declarations/example.md) | 29 | `declaration-track:0f8e78b95fb71ec7b5e5f3666474d2bc0a101059e209af33da0221a3bbd219c6` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BaselineDecodeAndRootReference.lean/declarations/example-source-edition-2.md) | 35 | `declaration-track:69f37574203e1a81f9e4ccd9250242a6807b77ff80a143634423893241cf99de` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

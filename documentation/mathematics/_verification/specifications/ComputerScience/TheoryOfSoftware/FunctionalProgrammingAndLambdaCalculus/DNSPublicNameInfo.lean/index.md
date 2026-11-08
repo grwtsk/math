@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DNSPublicNameInfo.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DNSPublicNameInfo.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DNSPublicNameInfo.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DNSPublicNameInfo.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [NameInfo](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DNSPublicNameInfo.lean/declarations/nameinfo.md) | 27 | `declaration-track:169786d5ce2c79684e98d6cfa927a69b7ec360dd5580744fae0ea48b7188b8f3` |
-| 2 | `def` | [getAddrInfo](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DNSPublicNameInfo.lean/declarations/getaddrinfo.md) | 42 | `declaration-track:0efd5bdc8d6c0ff7153f95b7b36ef1a15c1be72841dc3f521f4248431cf73da6` |
-| 3 | `def` | [getNameInfo](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DNSPublicNameInfo.lean/declarations/getnameinfo.md) | 55 | `declaration-track:a36252d018decc43365c04ce2031aace9e91c162bbe9c9a0820a3fd3d1b08d51` |
+| 1 | `structure` | [NameInfo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DNSPublicNameInfo.lean/declarations/nameinfo.md) | 27 | `declaration-track:169786d5ce2c79684e98d6cfa927a69b7ec360dd5580744fae0ea48b7188b8f3` |
+| 2 | `def` | [getAddrInfo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DNSPublicNameInfo.lean/declarations/getaddrinfo.md) | 42 | `declaration-track:0efd5bdc8d6c0ff7153f95b7b36ef1a15c1be72841dc3f521f4248431cf73da6` |
+| 3 | `def` | [getNameInfo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DNSPublicNameInfo.lean/declarations/getnameinfo.md) | 55 | `declaration-track:a36252d018decc43365c04ce2031aace9e91c162bbe9c9a0820a3fd3d1b08d51` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

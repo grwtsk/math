@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AndFlattenNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AndFlattenNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AndFlattenNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AndFlattenNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [AndHyp](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AndFlattenNamespacedPublic.lean/declarations/andhyp.md) | 29 | `declaration-track:61bfb6ea0d49dd425ae5cdec4705d260277a92b36ed436a60fb3cd683f182bad` |
-| 2 | `structure` | [AndFlattenState](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AndFlattenNamespacedPublic.lean/declarations/andflattenstate.md) | 33 | `declaration-track:0bb2330861f2dae08703196fba83aeacd5e5ecabe6b5de7342f5cfb380e38391` |
-| 3 | `def` | [andFlatteningPass](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AndFlattenNamespacedPublic.lean/declarations/andflatteningpass.md) | 43 | `declaration-track:e745892162839d68ba2e0e79bce150b78c40c6422ff1cea7995ef9ecc3360654` |
+| 1 | `structure` | [AndHyp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AndFlattenNamespacedPublic.lean/declarations/andhyp.md) | 29 | `declaration-track:61bfb6ea0d49dd425ae5cdec4705d260277a92b36ed436a60fb3cd683f182bad` |
+| 2 | `structure` | [AndFlattenState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AndFlattenNamespacedPublic.lean/declarations/andflattenstate.md) | 33 | `declaration-track:0bb2330861f2dae08703196fba83aeacd5e5ecabe6b5de7342f5cfb380e38391` |
+| 3 | `def` | [andFlatteningPass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AndFlattenNamespacedPublic.lean/declarations/andflatteningpass.md) | 43 | `declaration-track:e745892162839d68ba2e0e79bce150b78c40c6422ff1cea7995ef9ecc3360654` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

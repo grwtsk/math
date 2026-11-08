@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/NumberTheoryBasicNamespaced.lean/index.md) · [Full source](../../../../NumberTheory/NumberTheoryBasicNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NumberTheoryBasicNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NumberTheoryBasicNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [dvd_sub_pow_of_dvd_sub](../../../../NumberTheory/NumberTheoryBasicNamespaced.lean/declarations/dvd-sub-pow-of-dvd-sub.md) | 36 | `result-track:e742a7d584e544bd19e676bc54ff73ebe4740c8a95ba2f46257119ab3c7a0deb` |
+| 1 | `theorem` | [dvd_sub_pow_of_dvd_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NumberTheoryBasicNamespaced.lean/declarations/dvd-sub-pow-of-dvd-sub.md) | 36 | `result-track:e742a7d584e544bd19e676bc54ff73ebe4740c8a95ba2f46257119ab3c7a0deb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

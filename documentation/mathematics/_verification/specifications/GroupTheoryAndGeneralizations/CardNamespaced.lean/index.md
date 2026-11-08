@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/CardNamespaced.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/CardNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CardNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CardNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [card_eq_card_quotient_mul_card_subgroup](../../../../GroupTheoryAndGeneralizations/CardNamespaced.lean/declarations/card-eq-card-quotient-mul-card-subgroup.md) | 34 | `result-track:bfcad7a8e116e47fe6784fe8759560d9cf75f1de553ed3c0958fca2f3703ee23` |
-| 2 | `lemma` | [card_mul_eq_card_subgroup_mul_card_quotient](../../../../GroupTheoryAndGeneralizations/CardNamespaced.lean/declarations/card-mul-eq-card-subgroup-mul-card-quotient.md) | 39 | `result-track:b04c9c97263ea78acfdc891ca9624963ea8913ad645dd24638e4cf580ce72a99` |
-| 3 | `theorem` | [card_subgroup_dvd_card](../../../../GroupTheoryAndGeneralizations/CardNamespaced.lean/declarations/card-subgroup-dvd-card.md) | 50 | `result-track:71c7c69f92f1b9b8942dfc8540023cded348c24dc7ed98f79efa0133ded5507d` |
-| 4 | `theorem` | [card_quotient_dvd_card](../../../../GroupTheoryAndGeneralizations/CardNamespaced.lean/declarations/card-quotient-dvd-card.md) | 54 | `result-track:7689da4c8a38dd7607514aa01aa1ad13e876efc52817e3da3050bc84e849c42a` |
-| 5 | `theorem` | [card_dvd_of_injective](../../../../GroupTheoryAndGeneralizations/CardNamespaced.lean/declarations/card-dvd-of-injective.md) | 60 | `result-track:fafa95813ace9ce2904369a776344f280ac6641e52d189806f30910259e15026` |
-| 6 | `theorem` | [card_dvd_of_le](../../../../GroupTheoryAndGeneralizations/CardNamespaced.lean/declarations/card-dvd-of-le.md) | 67 | `result-track:10bae2d87e1f8c5c812d68820b62a7a9298b7820306aa476df29ff618b8e6060` |
-| 7 | `theorem` | [card_comap_dvd_of_injective](../../../../GroupTheoryAndGeneralizations/CardNamespaced.lean/declarations/card-comap-dvd-of-injective.md) | 71 | `result-track:a742c7d8f7fab7324cba74e92d213c0f077d3a5f8764a7c7f1db9f729a60e22c` |
+| 1 | `theorem` | [card_eq_card_quotient_mul_card_subgroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CardNamespaced.lean/declarations/card-eq-card-quotient-mul-card-subgroup.md) | 34 | `result-track:bfcad7a8e116e47fe6784fe8759560d9cf75f1de553ed3c0958fca2f3703ee23` |
+| 2 | `lemma` | [card_mul_eq_card_subgroup_mul_card_quotient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CardNamespaced.lean/declarations/card-mul-eq-card-subgroup-mul-card-quotient.md) | 39 | `result-track:b04c9c97263ea78acfdc891ca9624963ea8913ad645dd24638e4cf580ce72a99` |
+| 3 | `theorem` | [card_subgroup_dvd_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CardNamespaced.lean/declarations/card-subgroup-dvd-card.md) | 50 | `result-track:71c7c69f92f1b9b8942dfc8540023cded348c24dc7ed98f79efa0133ded5507d` |
+| 4 | `theorem` | [card_quotient_dvd_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CardNamespaced.lean/declarations/card-quotient-dvd-card.md) | 54 | `result-track:7689da4c8a38dd7607514aa01aa1ad13e876efc52817e3da3050bc84e849c42a` |
+| 5 | `theorem` | [card_dvd_of_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CardNamespaced.lean/declarations/card-dvd-of-injective.md) | 60 | `result-track:fafa95813ace9ce2904369a776344f280ac6641e52d189806f30910259e15026` |
+| 6 | `theorem` | [card_dvd_of_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CardNamespaced.lean/declarations/card-dvd-of-le.md) | 67 | `result-track:10bae2d87e1f8c5c812d68820b62a7a9298b7820306aa476df29ff618b8e6060` |
+| 7 | `theorem` | [card_comap_dvd_of_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CardNamespaced.lean/declarations/card-comap-dvd-of-injective.md) | 71 | `result-track:a742c7d8f7fab7324cba74e92d213c0f077d3a5f8764a7c7f1db9f729a60e22c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

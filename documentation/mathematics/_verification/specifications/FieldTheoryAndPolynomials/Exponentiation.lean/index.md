@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FieldTheoryAndPolynomials/Exponentiation.lean/index.md) · [Full source](../../../../FieldTheoryAndPolynomials/Exponentiation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/Exponentiation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/Exponentiation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.FiniteField.GF128.Bitwise`](../../../../FieldTheoryAndPolynomials/Bitwise.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Algebra.FiniteField.GF128.Bitwise`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/Bitwise.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [rustPowFuel](../../../../FieldTheoryAndPolynomials/Exponentiation.lean/declarations/rustpowfuel.md) | 6 | `declaration-track:39266a347d13aa409e6233661b7d1f8e224a442b90ab6159933dfe5ac425c469` |
-| 2 | `theorem` | [powFuel_zero_exponent](../../../../FieldTheoryAndPolynomials/Exponentiation.lean/declarations/powfuel-zero-exponent.md) | 16 | `result-track:559fa9c2afce321f85dfa6c849c6a788b07d4563c87a17cf19c92f6c8df79c32` |
-| 3 | `theorem` | [rustPowFuel_eq_powFuel](../../../../FieldTheoryAndPolynomials/Exponentiation.lean/declarations/rustpowfuel-eq-powfuel.md) | 21 | `result-track:c344ff3321b2a2be4b42114e5898333174e5716aaf49971e3e7203b3dc6a1468` |
-| 4 | `def` | [rustInv](../../../../FieldTheoryAndPolynomials/Exponentiation.lean/declarations/rustinv.md) | 34 | `declaration-track:83b67bef91dbfb08a51dd8e77200827294b36a4649c56a988a97c42ce3801416` |
-| 5 | `theorem` | [rustInv_eq_inv](../../../../FieldTheoryAndPolynomials/Exponentiation.lean/declarations/rustinv-eq-inv.md) | 38 | `result-track:52a56b7ac64515ae6735830d2352ea4b663eb6c7361356505e094087a30e5538` |
+| 1 | `def` | [rustPowFuel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/Exponentiation.lean/declarations/rustpowfuel.md) | 6 | `declaration-track:39266a347d13aa409e6233661b7d1f8e224a442b90ab6159933dfe5ac425c469` |
+| 2 | `theorem` | [powFuel_zero_exponent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/Exponentiation.lean/declarations/powfuel-zero-exponent.md) | 16 | `result-track:559fa9c2afce321f85dfa6c849c6a788b07d4563c87a17cf19c92f6c8df79c32` |
+| 3 | `theorem` | [rustPowFuel_eq_powFuel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/Exponentiation.lean/declarations/rustpowfuel-eq-powfuel.md) | 21 | `result-track:c344ff3321b2a2be4b42114e5898333174e5716aaf49971e3e7203b3dc6a1468` |
+| 4 | `def` | [rustInv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/Exponentiation.lean/declarations/rustinv.md) | 34 | `declaration-track:83b67bef91dbfb08a51dd8e77200827294b36a4649c56a988a97c42ce3801416` |
+| 5 | `theorem` | [rustInv_eq_inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/Exponentiation.lean/declarations/rustinv-eq-inv.md) | 38 | `result-track:52a56b7ac64515ae6735830d2352ea4b663eb6c7361356505e094087a30e5538` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

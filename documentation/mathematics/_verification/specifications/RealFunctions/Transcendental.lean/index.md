@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/Transcendental.lean/index.md) · [Full source](../../../../RealFunctions/Transcendental.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Transcendental.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Transcendental.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,29 +58,29 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [sin](../../../../RealFunctions/Transcendental.lean/declarations/sin.md) | 42 | `declaration-track:f4281a89664ebd033b6c19af532b0b5e21b44f28dd31e80ec4ba2c24b71cf6f9` |
-| 2 | `def` | [cos](../../../../RealFunctions/Transcendental.lean/declarations/cos.md) | 47 | `declaration-track:68ec4f2e8b8c0eedb2549ac5ee79929bd78979252b1e874045d6fa9b51e80d61` |
-| 3 | `def` | [exp](../../../../RealFunctions/Transcendental.lean/declarations/exp.md) | 52 | `declaration-track:67c6696f1543fdadb5cec2b4de1dfc5d2eb820363a1eea5e5d640465a23a68f0` |
-| 4 | `def` | [unitInterval](../../../../RealFunctions/Transcendental.lean/declarations/unitinterval.md) | 57 | `declaration-track:cf5382d2552f9efacd0eb121b503901be59a8deca770f010e385eec1e21cea76` |
-| 5 | `theorem` | [arctan_deriv_factor_mem_unitInterval](../../../../RealFunctions/Transcendental.lean/declarations/arctan-deriv-factor-mem-unitinterval.md) | 60 | `result-track:fdaea0b9581106f62d2050449a9dc0d48a025dc1f9ab5af422d0206374f80f53` |
-| 6 | `theorem` | [arsinh_deriv_factor_mem_unitInterval](../../../../RealFunctions/Transcendental.lean/declarations/arsinh-deriv-factor-mem-unitinterval.md) | 70 | `result-track:b6e52e1a27b1780d1c79ebccd090b7329b26d2f7c5f97f2ae95fbea9dc9142b7` |
-| 7 | `def` | [atan](../../../../RealFunctions/Transcendental.lean/declarations/atan.md) | 85 | `declaration-track:8206d9554589a3b00bb4cda9d0b49660bb1cac7509e9521c2e05e3bf828c2595` |
-| 8 | `def` | [arsinh](../../../../RealFunctions/Transcendental.lean/declarations/arsinh.md) | 92 | `declaration-track:5efee1a099ca0f986b9868a0ddca1af1feec60ef2153a786c5723dcc7074e3b1` |
-| 9 | `def` | [sinh](../../../../RealFunctions/Transcendental.lean/declarations/sinh.md) | 99 | `declaration-track:eeb46a2b19bfd67eddd3115af7221899495a96d3ea4d20b0522f474b5bfbbd25` |
-| 10 | `def` | [cosh](../../../../RealFunctions/Transcendental.lean/declarations/cosh.md) | 105 | `declaration-track:663246e8252324fc3685bc791624f7d5f74f4d2680a18cf3ba20e7d43652ef07` |
-| 11 | `def` | [tanh](../../../../RealFunctions/Transcendental.lean/declarations/tanh.md) | 112 | `declaration-track:0b3c25b53f29bcb694c354c75a5c2442c08aa133393fc1088b820e34a1a198f0` |
-| 12 | `def` | [two_div_sqrt_pi](../../../../RealFunctions/Transcendental.lean/declarations/two-div-sqrt-pi.md) | 118 | `declaration-track:d567aee09bbe8a66580990782b8ac943da273969a124d6091338724d250f9c57` |
-| 13 | `def` | [erf](../../../../RealFunctions/Transcendental.lean/declarations/erf.md) | 123 | `declaration-track:0c9c513a8d9dd1eee7cc2f3112658fe22f0157beccda57fe25fc350352bd3bbc` |
-| 14 | `def` | [erfCore](../../../../RealFunctions/Transcendental.lean/declarations/erfcore.md) | 133 | `declaration-track:ba127cbfadc22b7c084300aceb80166d4feaee556de7c9a91acc86c3be9701c2` |
-| 15 | `def` | [sqrt](../../../../RealFunctions/Transcendental.lean/declarations/sqrt.md) | 146 | `declaration-track:146695a3955570d9d37d88d3e38bd862599f650b434aaf909a38c5ca6db6343f` |
-| 16 | `def` | [sincDerivBound](../../../../RealFunctions/Transcendental.lean/declarations/sincderivbound.md) | 153 | `declaration-track:e3a91dda5c266eb24ba2b1b792c05d76a4c46ec672c6be1232f49e90cf51b232` |
-| 17 | `def` | [sinc](../../../../RealFunctions/Transcendental.lean/declarations/sinc.md) | 158 | `declaration-track:0e098afd8d5adb62e6d8330175783699beab8329d8963df8967a9d95ce3706ec` |
-| 18 | `def` | [atanh?](../../../../RealFunctions/Transcendental.lean/declarations/atanh.md) | 167 | `declaration-track:393ef50d5414fd046256bcb5230aad15feb0a139f474cfc3ce2ded509200f26a` |
-| 19 | `def` | [inv?](../../../../RealFunctions/Transcendental.lean/declarations/inv.md) | 188 | `declaration-track:4f4769997b00cbfb4df1a2eb57ae503cf9a7e9e84993fc6f37de7c7af5e3e8c7` |
-| 20 | `def` | [log?](../../../../RealFunctions/Transcendental.lean/declarations/log.md) | 200 | `declaration-track:267258c77058f752e25b01ce4111830ca45e3ac73e6fd6ea1826778ba69c854f` |
-| 21 | `def` | [sqrtDerivCoefBound](../../../../RealFunctions/Transcendental.lean/declarations/sqrtderivcoefbound.md) | 218 | `declaration-track:83cbd9d5bbe1f08c3e49bb7a336f676854c21223fbf7052fe6b7376db4437701` |
-| 22 | `theorem` | [sqrtDerivCoef_bound](../../../../RealFunctions/Transcendental.lean/declarations/sqrtderivcoef-bound.md) | 227 | `result-track:9d18bfc8a3756e7579c5fe531fb22e2bf5daa5eb4f84e1c9ad612f7733e4ff33` |
-| 23 | `def` | [sqrt?](../../../../RealFunctions/Transcendental.lean/declarations/sqrt-source-edition-2.md) | 280 | `declaration-track:ba5c8955961e4a9d8ebf7c5ac783c78f4130162c5d796f0f0e29eead07ee874f` |
+| 1 | `def` | [sin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Transcendental.lean/declarations/sin.md) | 42 | `declaration-track:f4281a89664ebd033b6c19af532b0b5e21b44f28dd31e80ec4ba2c24b71cf6f9` |
+| 2 | `def` | [cos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Transcendental.lean/declarations/cos.md) | 47 | `declaration-track:68ec4f2e8b8c0eedb2549ac5ee79929bd78979252b1e874045d6fa9b51e80d61` |
+| 3 | `def` | [exp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Transcendental.lean/declarations/exp.md) | 52 | `declaration-track:67c6696f1543fdadb5cec2b4de1dfc5d2eb820363a1eea5e5d640465a23a68f0` |
+| 4 | `def` | [unitInterval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Transcendental.lean/declarations/unitinterval.md) | 57 | `declaration-track:cf5382d2552f9efacd0eb121b503901be59a8deca770f010e385eec1e21cea76` |
+| 5 | `theorem` | [arctan_deriv_factor_mem_unitInterval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Transcendental.lean/declarations/arctan-deriv-factor-mem-unitinterval.md) | 60 | `result-track:fdaea0b9581106f62d2050449a9dc0d48a025dc1f9ab5af422d0206374f80f53` |
+| 6 | `theorem` | [arsinh_deriv_factor_mem_unitInterval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Transcendental.lean/declarations/arsinh-deriv-factor-mem-unitinterval.md) | 70 | `result-track:b6e52e1a27b1780d1c79ebccd090b7329b26d2f7c5f97f2ae95fbea9dc9142b7` |
+| 7 | `def` | [atan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Transcendental.lean/declarations/atan.md) | 85 | `declaration-track:8206d9554589a3b00bb4cda9d0b49660bb1cac7509e9521c2e05e3bf828c2595` |
+| 8 | `def` | [arsinh](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Transcendental.lean/declarations/arsinh.md) | 92 | `declaration-track:5efee1a099ca0f986b9868a0ddca1af1feec60ef2153a786c5723dcc7074e3b1` |
+| 9 | `def` | [sinh](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Transcendental.lean/declarations/sinh.md) | 99 | `declaration-track:eeb46a2b19bfd67eddd3115af7221899495a96d3ea4d20b0522f474b5bfbbd25` |
+| 10 | `def` | [cosh](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Transcendental.lean/declarations/cosh.md) | 105 | `declaration-track:663246e8252324fc3685bc791624f7d5f74f4d2680a18cf3ba20e7d43652ef07` |
+| 11 | `def` | [tanh](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Transcendental.lean/declarations/tanh.md) | 112 | `declaration-track:0b3c25b53f29bcb694c354c75a5c2442c08aa133393fc1088b820e34a1a198f0` |
+| 12 | `def` | [two_div_sqrt_pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Transcendental.lean/declarations/two-div-sqrt-pi.md) | 118 | `declaration-track:d567aee09bbe8a66580990782b8ac943da273969a124d6091338724d250f9c57` |
+| 13 | `def` | [erf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Transcendental.lean/declarations/erf.md) | 123 | `declaration-track:0c9c513a8d9dd1eee7cc2f3112658fe22f0157beccda57fe25fc350352bd3bbc` |
+| 14 | `def` | [erfCore](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Transcendental.lean/declarations/erfcore.md) | 133 | `declaration-track:ba127cbfadc22b7c084300aceb80166d4feaee556de7c9a91acc86c3be9701c2` |
+| 15 | `def` | [sqrt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Transcendental.lean/declarations/sqrt.md) | 146 | `declaration-track:146695a3955570d9d37d88d3e38bd862599f650b434aaf909a38c5ca6db6343f` |
+| 16 | `def` | [sincDerivBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Transcendental.lean/declarations/sincderivbound.md) | 153 | `declaration-track:e3a91dda5c266eb24ba2b1b792c05d76a4c46ec672c6be1232f49e90cf51b232` |
+| 17 | `def` | [sinc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Transcendental.lean/declarations/sinc.md) | 158 | `declaration-track:0e098afd8d5adb62e6d8330175783699beab8329d8963df8967a9d95ce3706ec` |
+| 18 | `def` | [atanh?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Transcendental.lean/declarations/atanh.md) | 167 | `declaration-track:393ef50d5414fd046256bcb5230aad15feb0a139f474cfc3ce2ded509200f26a` |
+| 19 | `def` | [inv?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Transcendental.lean/declarations/inv.md) | 188 | `declaration-track:4f4769997b00cbfb4df1a2eb57ae503cf9a7e9e84993fc6f37de7c7af5e3e8c7` |
+| 20 | `def` | [log?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Transcendental.lean/declarations/log.md) | 200 | `declaration-track:267258c77058f752e25b01ce4111830ca45e3ac73e6fd6ea1826778ba69c854f` |
+| 21 | `def` | [sqrtDerivCoefBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Transcendental.lean/declarations/sqrtderivcoefbound.md) | 218 | `declaration-track:83cbd9d5bbe1f08c3e49bb7a336f676854c21223fbf7052fe6b7376db4437701` |
+| 22 | `theorem` | [sqrtDerivCoef_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Transcendental.lean/declarations/sqrtderivcoef-bound.md) | 227 | `result-track:9d18bfc8a3756e7579c5fe531fb22e2bf5daa5eb4f84e1c9ad612f7733e4ff33` |
+| 23 | `def` | [sqrt?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Transcendental.lean/declarations/sqrt-source-edition-2.md) | 280 | `declaration-track:ba5c8955961e4a9d8ebf7c5ac783c78f4130162c5d796f0f0e29eead07ee874f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

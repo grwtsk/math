@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedPermutationIntegral.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedPermutationIntegral.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedPermutationIntegral.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedPermutationIntegral.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,13 +60,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [transport](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedPermutationIntegral.lean/declarations/transport.md) | 24 | `declaration-track:796e7b349c99316884c53801a6b810a2f1ad7af385141bc2ea1f659dd0903f3c` |
-| 2 | `theorem` | [transport_at](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedPermutationIntegral.lean/declarations/transport-at.md) | 32 | `result-track:6fb65e5f4cf7f7b510f917755ce30d5fe5b4ec977ad5d0d8515c0685b8150261` |
-| 3 | `theorem` | [image_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedPermutationIntegral.lean/declarations/image-iff.md) | 36 | `result-track:95df840ec92a427a3c191febf4684477d838833622742b1389466d659d723868` |
-| 4 | `theorem` | [transport_injective](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedPermutationIntegral.lean/declarations/transport-injective.md) | 50 | `result-track:d0944c88f3f28594665b634776008535e6f856c4eb2c2dd27af52c136071c172` |
-| 5 | `theorem` | [uniformClearing_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedPermutationIntegral.lean/declarations/uniformclearing-iff.md) | 59 | `result-track:4612d4b1cbc67d746db09e1f266de96e638d4dddfe72987ccc700913df036bf8` |
-| 6 | `theorem` | [surjective_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedPermutationIntegral.lean/declarations/surjective-iff.md) | 78 | `result-track:d1f03e3b8a055f5646095245b8e0fc31d1017efb3990029e63a8567a45e8c627` |
-| 7 | `theorem` | [target_not_in_image](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedPermutationIntegral.lean/declarations/target-not-in-image.md) | 83 | `result-track:55e217b2698d206ca334173784a95a2f80b39028e3271338d9505796cf20ce52` |
+| 1 | `def` | [transport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedPermutationIntegral.lean/declarations/transport.md) | 24 | `declaration-track:796e7b349c99316884c53801a6b810a2f1ad7af385141bc2ea1f659dd0903f3c` |
+| 2 | `theorem` | [transport_at](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedPermutationIntegral.lean/declarations/transport-at.md) | 32 | `result-track:6fb65e5f4cf7f7b510f917755ce30d5fe5b4ec977ad5d0d8515c0685b8150261` |
+| 3 | `theorem` | [image_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedPermutationIntegral.lean/declarations/image-iff.md) | 36 | `result-track:95df840ec92a427a3c191febf4684477d838833622742b1389466d659d723868` |
+| 4 | `theorem` | [transport_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedPermutationIntegral.lean/declarations/transport-injective.md) | 50 | `result-track:d0944c88f3f28594665b634776008535e6f856c4eb2c2dd27af52c136071c172` |
+| 5 | `theorem` | [uniformClearing_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedPermutationIntegral.lean/declarations/uniformclearing-iff.md) | 59 | `result-track:4612d4b1cbc67d746db09e1f266de96e638d4dddfe72987ccc700913df036bf8` |
+| 6 | `theorem` | [surjective_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedPermutationIntegral.lean/declarations/surjective-iff.md) | 78 | `result-track:d1f03e3b8a055f5646095245b8e0fc31d1017efb3990029e63a8567a45e8c627` |
+| 7 | `theorem` | [target_not_in_image](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedPermutationIntegral.lean/declarations/target-not-in-image.md) | 83 | `result-track:55e217b2698d206ca334173784a95a2f80b39028e3271338d9505796cf20ce52` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

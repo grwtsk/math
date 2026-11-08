@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceActualEarlyFractionalZeta.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceActualEarlyFractionalZeta.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceActualEarlyFractionalZeta.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceActualEarlyFractionalZeta.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [earlyFractionalConstant_eq_neg_samplingAlpha0](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceActualEarlyFractionalZeta.lean/declarations/earlyfractionalconstant-eq-neg-samplingalpha0.md) | 24 | `result-track:6aa968d805ebfc018073549f2cc3a00cff67936f32842f6df7529de51582b44b` |
-| 2 | `theorem` | [earlyFractionalConstant_add_zeta_half_eq_zero](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceActualEarlyFractionalZeta.lean/declarations/earlyfractionalconstant-add-zeta-half-eq-zero.md) | 35 | `result-track:d6dedaf2473ce33edf72db31018a179e7707f8012a5e4ea162fbf8c571ea47af` |
-| 3 | `theorem` | [actualEarly_add_scale_zeta_abs_le](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceActualEarlyFractionalZeta.lean/declarations/actualearly-add-scale-zeta-abs-le.md) | 42 | `result-track:47fe3a5e5398e1983739d542e9c336a51574d5dbf8633eae51a9e83cfd438801` |
-| 4 | `theorem` | [actualEarly_add_scale_tendsto_neg_zeta_half](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceActualEarlyFractionalZeta.lean/declarations/actualearly-add-scale-tendsto-neg-zeta-half.md) | 52 | `result-track:e3a8269f5eaa11735ec4b2de29093a872eaf767bdfe272f0b1fd028a650a71c7` |
+| 1 | `theorem` | [earlyFractionalConstant_eq_neg_samplingAlpha0](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceActualEarlyFractionalZeta.lean/declarations/earlyfractionalconstant-eq-neg-samplingalpha0.md) | 24 | `result-track:6aa968d805ebfc018073549f2cc3a00cff67936f32842f6df7529de51582b44b` |
+| 2 | `theorem` | [earlyFractionalConstant_add_zeta_half_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceActualEarlyFractionalZeta.lean/declarations/earlyfractionalconstant-add-zeta-half-eq-zero.md) | 35 | `result-track:d6dedaf2473ce33edf72db31018a179e7707f8012a5e4ea162fbf8c571ea47af` |
+| 3 | `theorem` | [actualEarly_add_scale_zeta_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceActualEarlyFractionalZeta.lean/declarations/actualearly-add-scale-zeta-abs-le.md) | 42 | `result-track:47fe3a5e5398e1983739d542e9c336a51574d5dbf8633eae51a9e83cfd438801` |
+| 4 | `theorem` | [actualEarly_add_scale_tendsto_neg_zeta_half](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceActualEarlyFractionalZeta.lean/declarations/actualearly-add-scale-tendsto-neg-zeta-half.md) | 52 | `result-track:e3a8269f5eaa11735ec4b2de29093a872eaf767bdfe272f0b1fd028a650a71c7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

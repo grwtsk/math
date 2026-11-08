@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/IncidenceCodeNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/IncidenceCodeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IncidenceCodeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IncidenceCodeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [IncidenceCode](../../../../Combinatorics/IncidenceCodeNamespaced.lean/declarations/incidencecode.md) | 25 | `declaration-track:c7c67b099aca5c92e6dddf6d0d0a182741cdc79d9e0ee08ec8f5047f1f771f2f` |
-| 2 | `structure` | [FiniteIncidenceCode](../../../../Combinatorics/IncidenceCodeNamespaced.lean/declarations/finiteincidencecode.md) | 28 | `declaration-track:9f6beb4e97333da5869593455ab4fca963500a463150a71ea6fc7df34a97e1e7` |
-| 3 | `structure` | [CertifiedIncidence](../../../../Combinatorics/IncidenceCodeNamespaced.lean/declarations/certifiedincidence.md) | 36 | `declaration-track:cea4f8d95e4518cd31113180e91f2489fb5bf526b1081f7594fe9264498702a8` |
-| 4 | `def` | [ofObject](../../../../Combinatorics/IncidenceCodeNamespaced.lean/declarations/ofobject.md) | 49 | `declaration-track:3bad213c60fc33aee0fddd66962f227bcedb908d787ad2a0d955e8c1f952e80b` |
-| 5 | `structure` | [ProbeExtension](../../../../Combinatorics/IncidenceCodeNamespaced.lean/declarations/probeextension.md) | 60 | `declaration-track:8d1627793f6a30926f08c2f66f1ae22e94562937430cdf53caa03f6b5a70b4f8` |
-| 6 | `def` | [restrict](../../../../Combinatorics/IncidenceCodeNamespaced.lean/declarations/restrict.md) | 68 | `declaration-track:d838a5096d1ba3db5c519f0b762ac4bf167941ff6b243f37ecb49958c13a569a` |
-| 7 | `structure` | [ConservativeRefinement](../../../../Combinatorics/IncidenceCodeNamespaced.lean/declarations/conservativerefinement.md) | 80 | `declaration-track:88d6dfca798babac44d881886b59e20bf5ab2cf2270af58fcd2e32574ebda8ef` |
+| 1 | `abbrev` | [IncidenceCode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IncidenceCodeNamespaced.lean/declarations/incidencecode.md) | 25 | `declaration-track:c7c67b099aca5c92e6dddf6d0d0a182741cdc79d9e0ee08ec8f5047f1f771f2f` |
+| 2 | `structure` | [FiniteIncidenceCode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IncidenceCodeNamespaced.lean/declarations/finiteincidencecode.md) | 28 | `declaration-track:9f6beb4e97333da5869593455ab4fca963500a463150a71ea6fc7df34a97e1e7` |
+| 3 | `structure` | [CertifiedIncidence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IncidenceCodeNamespaced.lean/declarations/certifiedincidence.md) | 36 | `declaration-track:cea4f8d95e4518cd31113180e91f2489fb5bf526b1081f7594fe9264498702a8` |
+| 4 | `def` | [ofObject](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IncidenceCodeNamespaced.lean/declarations/ofobject.md) | 49 | `declaration-track:3bad213c60fc33aee0fddd66962f227bcedb908d787ad2a0d955e8c1f952e80b` |
+| 5 | `structure` | [ProbeExtension](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IncidenceCodeNamespaced.lean/declarations/probeextension.md) | 60 | `declaration-track:8d1627793f6a30926f08c2f66f1ae22e94562937430cdf53caa03f6b5a70b4f8` |
+| 6 | `def` | [restrict](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IncidenceCodeNamespaced.lean/declarations/restrict.md) | 68 | `declaration-track:d838a5096d1ba3db5c519f0b762ac4bf167941ff6b243f37ecb49958c13a569a` |
+| 7 | `structure` | [ConservativeRefinement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IncidenceCodeNamespaced.lean/declarations/conservativerefinement.md) | 80 | `declaration-track:88d6dfca798babac44d881886b59e20bf5ab2cf2270af58fcd2e32574ebda8ef` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

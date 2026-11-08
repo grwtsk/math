@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularTailDecomposition.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularTailDecomposition.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularTailDecomposition.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularTailDecomposition.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeTriangularBoundaryLocalization`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularBoundaryLocalization.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeTriangularBoundaryLocalization`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularBoundaryLocalization.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TriangularBoundaryTailData](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularTailDecomposition.lean/declarations/triangularboundarytaildata.md) | 13 | `declaration-track:a08bc208845216bb98b851f480ccddf8a4d1e533fe835754d19cb86f0a409cb2` |
-| 2 | `theorem` | [TriangularBoundaryTailData.total_error_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularTailDecomposition.lean/declarations/triangularboundarytaildata-total-error-le.md) | 35 | `result-track:9d657f8be4b2dc6d3391ec31087d6777d647398504871d18c8ee072b16b258ee` |
-| 3 | `def` | [TriangularBoundaryTailDecompositionClaim](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularTailDecomposition.lean/declarations/triangularboundarytaildecompositionclaim.md) | 61 | `declaration-track:39ab3ea9b94be85fb49aafd527744282f0c36844e5b00134eb007df3ed27fbf8` |
-| 4 | `def` | [SevenEighthsTriangularTailBudget](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularTailDecomposition.lean/declarations/seveneighthstriangulartailbudget.md) | 70 | `declaration-track:ce879fb703ef150e4f6b37d4ae487ee8a45487946f87bb8f26a6b0c1583263af` |
-| 5 | `theorem` | [oneThird_boundary_power_below_threeQuarters](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularTailDecomposition.lean/declarations/onethird-boundary-power-below-threequarters.md) | 85 | `result-track:083f5916d57d7af15ed58df426dd7d7fa3dd347a63af9504fbf328cb9148fe23` |
-| 6 | `structure` | [TriangularSmoothingTailAccepted](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularTailDecomposition.lean/declarations/triangularsmoothingtailaccepted.md) | 93 | `declaration-track:5475612b8230259c97fdf48d6d53bda570054f02a11ce816930f6cd832c178b2` |
+| 1 | `structure` | [TriangularBoundaryTailData](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularTailDecomposition.lean/declarations/triangularboundarytaildata.md) | 13 | `declaration-track:a08bc208845216bb98b851f480ccddf8a4d1e533fe835754d19cb86f0a409cb2` |
+| 2 | `theorem` | [TriangularBoundaryTailData.total_error_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularTailDecomposition.lean/declarations/triangularboundarytaildata-total-error-le.md) | 35 | `result-track:9d657f8be4b2dc6d3391ec31087d6777d647398504871d18c8ee072b16b258ee` |
+| 3 | `def` | [TriangularBoundaryTailDecompositionClaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularTailDecomposition.lean/declarations/triangularboundarytaildecompositionclaim.md) | 61 | `declaration-track:39ab3ea9b94be85fb49aafd527744282f0c36844e5b00134eb007df3ed27fbf8` |
+| 4 | `def` | [SevenEighthsTriangularTailBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularTailDecomposition.lean/declarations/seveneighthstriangulartailbudget.md) | 70 | `declaration-track:ce879fb703ef150e4f6b37d4ae487ee8a45487946f87bb8f26a6b0c1583263af` |
+| 5 | `theorem` | [oneThird_boundary_power_below_threeQuarters](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularTailDecomposition.lean/declarations/onethird-boundary-power-below-threequarters.md) | 85 | `result-track:083f5916d57d7af15ed58df426dd7d7fa3dd347a63af9504fbf328cb9148fe23` |
+| 6 | `structure` | [TriangularSmoothingTailAccepted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularTailDecomposition.lean/declarations/triangularsmoothingtailaccepted.md) | 93 | `declaration-track:5475612b8230259c97fdf48d6d53bda570054f02a11ce816930f6cd832c178b2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

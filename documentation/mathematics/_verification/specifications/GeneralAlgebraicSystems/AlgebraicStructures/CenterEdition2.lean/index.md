@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CenterEdition2.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CenterEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CenterEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CenterEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Set.star_mem_center](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CenterEdition2.lean/declarations/set-star-mem-center.md) | 14 | `result-track:4182e70da82a2e9da3883cefe964f2a64783acaeabb9b017059b45ae7b3054e5` |
-| 2 | `theorem` | [Set.star_centralizer](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CenterEdition2.lean/declarations/set-star-centralizer.md) | 36 | `result-track:8e1da34efdece98d2911ecfbe44ff3181ad26a42e8cd71210a74cc1fee600c4c` |
-| 3 | `theorem` | [Set.union_star_self_comm](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CenterEdition2.lean/declarations/set-union-star-self-comm.md) | 41 | `result-track:1e54954204279fb037a67bab7cad82a7bf76d4c0c7be0c463eb3dc84661bf206` |
-| 4 | `theorem` | [Set.star_mem_centralizer'](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CenterEdition2.lean/declarations/set-star-mem-centralizer.md) | 49 | `result-track:85522bc095e78c7cb4f9a0de3fdde2d19ee09730fe47a459e90bdcef9bf383dc` |
-| 5 | `theorem` | [Set.star_mem_centralizer](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CenterEdition2.lean/declarations/set-star-mem-centralizer-source-edition-2.md) | 54 | `result-track:d5002c747947b394483bd140f822ae60892dc01eb89ffabeefd5b90fa630b861` |
+| 1 | `theorem` | [Set.star_mem_center](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CenterEdition2.lean/declarations/set-star-mem-center.md) | 14 | `result-track:4182e70da82a2e9da3883cefe964f2a64783acaeabb9b017059b45ae7b3054e5` |
+| 2 | `theorem` | [Set.star_centralizer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CenterEdition2.lean/declarations/set-star-centralizer.md) | 36 | `result-track:8e1da34efdece98d2911ecfbe44ff3181ad26a42e8cd71210a74cc1fee600c4c` |
+| 3 | `theorem` | [Set.union_star_self_comm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CenterEdition2.lean/declarations/set-union-star-self-comm.md) | 41 | `result-track:1e54954204279fb037a67bab7cad82a7bf76d4c0c7be0c463eb3dc84661bf206` |
+| 4 | `theorem` | [Set.star_mem_centralizer'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CenterEdition2.lean/declarations/set-star-mem-centralizer.md) | 49 | `result-track:85522bc095e78c7cb4f9a0de3fdde2d19ee09730fe47a459e90bdcef9bf383dc` |
+| 5 | `theorem` | [Set.star_mem_centralizer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CenterEdition2.lean/declarations/set-star-mem-centralizer-source-edition-2.md) | 54 | `result-track:d5002c747947b394483bd140f822ae60892dc01eb89ffabeefd5b90fa630b861` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

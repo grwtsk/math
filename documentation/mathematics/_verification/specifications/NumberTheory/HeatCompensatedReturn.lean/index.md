@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/HeatCompensatedReturn.lean/index.md) · [Full source](../../../../NumberTheory/HeatCompensatedReturn.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/HeatCompensatedReturn.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/HeatCompensatedReturn.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Geometry.Hodge.FiniteHeatRecovery`](../../../../Geometry/FiniteHeatRecovery.lean/index.md) — import line 10; pinned internal source present.
-- [`GRWTSK.NumberTheory.Farey.WeightedReturnBalance`](../../../../NumberTheory/WeightedReturnBalance.lean/index.md) — import line 11; pinned internal source present.
+- [`GRWTSK.Geometry.Hodge.FiniteHeatRecovery`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/FiniteHeatRecovery.lean/index.md) — import line 10; pinned internal source present.
+- [`GRWTSK.NumberTheory.Farey.WeightedReturnBalance`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WeightedReturnBalance.lean/index.md) — import line 11; pinned internal source present.
 - `Mathlib` — import line 12; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -59,16 +59,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [returnHeatTime](../../../../NumberTheory/HeatCompensatedReturn.lean/declarations/returnheattime.md) | 48 | `declaration-track:5d00e532fe1978bd1532a7465033bcdead1fef0f4bc2d6fc04424beaa9d7ae78` |
-| 2 | `theorem` | [returnHeatTime_nonneg](../../../../NumberTheory/HeatCompensatedReturn.lean/declarations/returnheattime-nonneg.md) | 51 | `result-track:d6c8f62c6535bf20ce5d9497994f5cf2d0e60914d9348dc3ca989ac69d585f9f` |
-| 3 | `def` | [heatReturnCompensator](../../../../NumberTheory/HeatCompensatedReturn.lean/declarations/heatreturncompensator.md) | 57 | `declaration-track:e1cd89a4188c0d4a958c5f60619615b8d0890b7728c95e0b702112b27dc4c13e` |
-| 4 | `theorem` | [heatReturnCompensator_is_unit_heat](../../../../NumberTheory/HeatCompensatedReturn.lean/declarations/heatreturncompensator-is-unit-heat.md) | 61 | `result-track:961701fc76dbed26f091b8df8af432ff42d486248dc77bf06620fcea8e8ed9b9` |
-| 5 | `theorem` | [heatReturnCompensator_eq_inv_pow](../../../../NumberTheory/HeatCompensatedReturn.lean/declarations/heatreturncompensator-eq-inv-pow.md) | 69 | `result-track:050d333d8005abdf9e48d5b71d32b7f2a817d4709a5765ef2443ce6b3a2a92c6` |
-| 6 | `def` | [heatNormalizedSpiral](../../../../NumberTheory/HeatCompensatedReturn.lean/declarations/heatnormalizedspiral.md) | 81 | `declaration-track:a70a238162445c1a3eb0904c8b4c5a1e3c5398e27f431e402bcae324dd0f06e0` |
-| 7 | `theorem` | [heatNormalizedSpiral_eq_compensatedSample](../../../../NumberTheory/HeatCompensatedReturn.lean/declarations/heatnormalizedspiral-eq-compensatedsample.md) | 86 | `result-track:7250a046b3154605f05ff1664ac5c729b0a82b5721d95840b27b6627b7f5141d` |
-| 8 | `theorem` | [heatNormalizedSpiral_eq_phase](../../../../NumberTheory/HeatCompensatedReturn.lean/declarations/heatnormalizedspiral-eq-phase.md) | 93 | `result-track:3b7f14b064c95a694ec1ce6f4bb4926a4df15a47d7ff8b23492cd5d1e7305b77` |
-| 9 | `theorem` | [heatNormalized_four_consecutive_zero](../../../../NumberTheory/HeatCompensatedReturn.lean/declarations/heatnormalized-four-consecutive-zero.md) | 99 | `result-track:eada942a6859c81423da30891b8c387fa21ca986e117a76745909fec3211c322` |
-| 10 | `theorem` | [raw_return_four_not_zero](../../../../NumberTheory/HeatCompensatedReturn.lean/declarations/raw-return-four-not-zero.md) | 109 | `result-track:19921d454f57ff34a19111c216d8e51512f7a55dd652941645f5390cc3ed7654` |
+| 1 | `def` | [returnHeatTime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/HeatCompensatedReturn.lean/declarations/returnheattime.md) | 48 | `declaration-track:5d00e532fe1978bd1532a7465033bcdead1fef0f4bc2d6fc04424beaa9d7ae78` |
+| 2 | `theorem` | [returnHeatTime_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/HeatCompensatedReturn.lean/declarations/returnheattime-nonneg.md) | 51 | `result-track:d6c8f62c6535bf20ce5d9497994f5cf2d0e60914d9348dc3ca989ac69d585f9f` |
+| 3 | `def` | [heatReturnCompensator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/HeatCompensatedReturn.lean/declarations/heatreturncompensator.md) | 57 | `declaration-track:e1cd89a4188c0d4a958c5f60619615b8d0890b7728c95e0b702112b27dc4c13e` |
+| 4 | `theorem` | [heatReturnCompensator_is_unit_heat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/HeatCompensatedReturn.lean/declarations/heatreturncompensator-is-unit-heat.md) | 61 | `result-track:961701fc76dbed26f091b8df8af432ff42d486248dc77bf06620fcea8e8ed9b9` |
+| 5 | `theorem` | [heatReturnCompensator_eq_inv_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/HeatCompensatedReturn.lean/declarations/heatreturncompensator-eq-inv-pow.md) | 69 | `result-track:050d333d8005abdf9e48d5b71d32b7f2a817d4709a5765ef2443ce6b3a2a92c6` |
+| 6 | `def` | [heatNormalizedSpiral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/HeatCompensatedReturn.lean/declarations/heatnormalizedspiral.md) | 81 | `declaration-track:a70a238162445c1a3eb0904c8b4c5a1e3c5398e27f431e402bcae324dd0f06e0` |
+| 7 | `theorem` | [heatNormalizedSpiral_eq_compensatedSample](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/HeatCompensatedReturn.lean/declarations/heatnormalizedspiral-eq-compensatedsample.md) | 86 | `result-track:7250a046b3154605f05ff1664ac5c729b0a82b5721d95840b27b6627b7f5141d` |
+| 8 | `theorem` | [heatNormalizedSpiral_eq_phase](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/HeatCompensatedReturn.lean/declarations/heatnormalizedspiral-eq-phase.md) | 93 | `result-track:3b7f14b064c95a694ec1ce6f4bb4926a4df15a47d7ff8b23492cd5d1e7305b77` |
+| 9 | `theorem` | [heatNormalized_four_consecutive_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/HeatCompensatedReturn.lean/declarations/heatnormalized-four-consecutive-zero.md) | 99 | `result-track:eada942a6859c81423da30891b8c387fa21ca986e117a76745909fec3211c322` |
+| 10 | `theorem` | [raw_return_four_not_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/HeatCompensatedReturn.lean/declarations/raw-return-four-not-zero.md) | 109 | `result-track:19921d454f57ff34a19111c216d8e51512f7a55dd652941645f5390cc3ed7654` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

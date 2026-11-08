@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ConditionalExpectationUnique.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ConditionalExpectationUnique.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ConditionalExpectationUnique.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ConditionalExpectationUnique.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [lpMeas.ae_eq_zero_of_forall_setIntegral_eq_zero](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ConditionalExpectationUnique.lean/declarations/lpmeas-ae-eq-zero-of-forall-setintegral-eq-zero.md) | 46 | `result-track:85c1ef1eb5a1f12d638e936626ab02a6686e79fc1f35553586511d75779b3e84` |
-| 2 | `theorem` | [Lp.ae_eq_zero_of_forall_setIntegral_eq_zero'](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ConditionalExpectationUnique.lean/declarations/lp-ae-eq-zero-of-forall-setintegral-eq-zero.md) | 66 | `result-track:a0ef9ba791fcbcf3efc41c56867486af1ece7a0a9bf7293e6273e354b2fcff64` |
-| 3 | `theorem` | [Lp.ae_eq_of_forall_setIntegral_eq'](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ConditionalExpectationUnique.lean/declarations/lp-ae-eq-of-forall-setintegral-eq.md) | 86 | `result-track:172ed26120b7f834858baeb10dbf518a7aba838337827c971f7c57029752be1e` |
-| 4 | `theorem` | [ae_eq_of_forall_setIntegral_eq_of_sigmaFinite'](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ConditionalExpectationUnique.lean/declarations/ae-eq-of-forall-setintegral-eq-of-sigmafinite.md) | 108 | `result-track:b8ccc5ed5b31c068277a2a79f09ff3c8187c7a81a76ac11025679e2cf70040d3` |
-| 5 | `theorem` | [integral_norm_le_of_forall_fin_meas_integral_eq](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ConditionalExpectationUnique.lean/declarations/integral-norm-le-of-forall-fin-meas-integral-eq.md) | 158 | `result-track:d86f6d6c4df04bea3d528d9fe020c7d87833bffedaa17fe46e418c43eab787dd` |
-| 6 | `theorem` | [lintegral_enorm_le_of_forall_fin_meas_integral_eq](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ConditionalExpectationUnique.lean/declarations/lintegral-enorm-le-of-forall-fin-meas-integral-eq.md) | 190 | `result-track:afe8644ca2ad4cc735c0f59f2afcc7eb472403db331b82ef66ef25cacb34fb88` |
+| 1 | `theorem` | [lpMeas.ae_eq_zero_of_forall_setIntegral_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ConditionalExpectationUnique.lean/declarations/lpmeas-ae-eq-zero-of-forall-setintegral-eq-zero.md) | 46 | `result-track:85c1ef1eb5a1f12d638e936626ab02a6686e79fc1f35553586511d75779b3e84` |
+| 2 | `theorem` | [Lp.ae_eq_zero_of_forall_setIntegral_eq_zero'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ConditionalExpectationUnique.lean/declarations/lp-ae-eq-zero-of-forall-setintegral-eq-zero.md) | 66 | `result-track:a0ef9ba791fcbcf3efc41c56867486af1ece7a0a9bf7293e6273e354b2fcff64` |
+| 3 | `theorem` | [Lp.ae_eq_of_forall_setIntegral_eq'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ConditionalExpectationUnique.lean/declarations/lp-ae-eq-of-forall-setintegral-eq.md) | 86 | `result-track:172ed26120b7f834858baeb10dbf518a7aba838337827c971f7c57029752be1e` |
+| 4 | `theorem` | [ae_eq_of_forall_setIntegral_eq_of_sigmaFinite'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ConditionalExpectationUnique.lean/declarations/ae-eq-of-forall-setintegral-eq-of-sigmafinite.md) | 108 | `result-track:b8ccc5ed5b31c068277a2a79f09ff3c8187c7a81a76ac11025679e2cf70040d3` |
+| 5 | `theorem` | [integral_norm_le_of_forall_fin_meas_integral_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ConditionalExpectationUnique.lean/declarations/integral-norm-le-of-forall-fin-meas-integral-eq.md) | 158 | `result-track:d86f6d6c4df04bea3d528d9fe020c7d87833bffedaa17fe46e418c43eab787dd` |
+| 6 | `theorem` | [lintegral_enorm_le_of_forall_fin_meas_integral_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ConditionalExpectationUnique.lean/declarations/lintegral-enorm-le-of-forall-fin-meas-integral-eq.md) | 190 | `result-track:afe8644ca2ad4cc735c0f59f2afcc7eb472403db331b82ef66ef25cacb34fb88` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

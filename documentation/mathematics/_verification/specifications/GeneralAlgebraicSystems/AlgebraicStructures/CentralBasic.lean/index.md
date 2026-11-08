@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CentralBasic.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CentralBasic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CentralBasic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CentralBasic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [center_eq_bot](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CentralBasic.lean/declarations/center-eq-bot.md) | 30 | `result-track:02774346df16dcd0bce6be76fe0ec867a49a69da9d759d7a30a80a3797326710` |
-| 2 | `lemma` | [mem_center_iff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CentralBasic.lean/declarations/mem-center-iff.md) | 33 | `result-track:211376747b27d4179a0abca5ade754b484d9c774147839bdbd3530bbe1848dad` |
-| 3 | `instance` | [self](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CentralBasic.lean/declarations/self.md) | 37 | `declaration-track:05f286121ddc11409de1f985830c97735766a2b15fd9f802e925603b7f1ca673` |
-| 4 | `lemma` | [baseField_essentially_unique](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CentralBasic.lean/declarations/basefield-essentially-unique.md) | 40 | `result-track:40ef2a7f5d7ff261daea1e45be44b8cf17fdf34dfd8e5444e5052ff8b68d6c8b` |
-| 5 | `lemma` | [of_algEquiv](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CentralBasic.lean/declarations/of-algequiv.md) | 57 | `result-track:5fb06bebf0ce915d0fe0f765a81f9875f6ed2c49370566d38b7112953fbd7e8e` |
-| 6 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CentralBasic.lean/declarations/instance.md) | 67 | `declaration-track:87e326266a5664f00b3e2aa22b84de7459de4f2623113f89aa29c5868dd2187a` |
+| 1 | `lemma` | [center_eq_bot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CentralBasic.lean/declarations/center-eq-bot.md) | 30 | `result-track:02774346df16dcd0bce6be76fe0ec867a49a69da9d759d7a30a80a3797326710` |
+| 2 | `lemma` | [mem_center_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CentralBasic.lean/declarations/mem-center-iff.md) | 33 | `result-track:211376747b27d4179a0abca5ade754b484d9c774147839bdbd3530bbe1848dad` |
+| 3 | `instance` | [self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CentralBasic.lean/declarations/self.md) | 37 | `declaration-track:05f286121ddc11409de1f985830c97735766a2b15fd9f802e925603b7f1ca673` |
+| 4 | `lemma` | [baseField_essentially_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CentralBasic.lean/declarations/basefield-essentially-unique.md) | 40 | `result-track:40ef2a7f5d7ff261daea1e45be44b8cf17fdf34dfd8e5444e5052ff8b68d6c8b` |
+| 5 | `lemma` | [of_algEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CentralBasic.lean/declarations/of-algequiv.md) | 57 | `result-track:5fb06bebf0ce915d0fe0f765a81f9875f6ed2c49370566d38b7112953fbd7e8e` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CentralBasic.lean/declarations/instance.md) | 67 | `declaration-track:87e326266a5664f00b3e2aa22b84de7459de4f2623113f89aa29c5868dd2187a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

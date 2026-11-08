@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/InjectivitySurjectivity.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/InjectivitySurjectivity.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/InjectivitySurjectivity.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/InjectivitySurjectivity.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Injective](../../../../../MathematicalLogicAndFoundations/GeneralLogic/InjectivitySurjectivity.lean/declarations/injective.md) | 21 | `declaration-track:1ddcce48bfa88780e26b759daded8f4a54a4f1f693693cdbf7dff9724ecc7889` |
-| 2 | `def` | [Surjective](../../../../../MathematicalLogicAndFoundations/GeneralLogic/InjectivitySurjectivity.lean/declarations/surjective.md) | 24 | `declaration-track:d1a8f4e66bb5f19e2bdb48b6c4185c819dbf44a6a272538aa8061545123dc76b` |
-| 3 | `def` | [Bijective](../../../../../MathematicalLogicAndFoundations/GeneralLogic/InjectivitySurjectivity.lean/declarations/bijective.md) | 27 | `declaration-track:f2cbc5870c772d03ecbd6e63c2cb98f2b8e0b93f9ea0595fe951a8d4fc58971f` |
+| 1 | `def` | [Injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/InjectivitySurjectivity.lean/declarations/injective.md) | 21 | `declaration-track:1ddcce48bfa88780e26b759daded8f4a54a4f1f693693cdbf7dff9724ecc7889` |
+| 2 | `def` | [Surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/InjectivitySurjectivity.lean/declarations/surjective.md) | 24 | `declaration-track:d1a8f4e66bb5f19e2bdb48b6c4185c819dbf44a6a272538aa8061545123dc76b` |
+| 3 | `def` | [Bijective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/InjectivitySurjectivity.lean/declarations/bijective.md) | 27 | `declaration-track:f2cbc5870c772d03ecbd6e63c2cb98f2b8e0b93f9ea0595fe951a8d4fc58971f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

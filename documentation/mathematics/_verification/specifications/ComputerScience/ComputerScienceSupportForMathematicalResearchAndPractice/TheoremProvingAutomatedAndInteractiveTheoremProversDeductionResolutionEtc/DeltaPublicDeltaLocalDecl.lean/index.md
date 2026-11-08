@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DeltaPublicDeltaLocalDecl.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DeltaPublicDeltaLocalDecl.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DeltaPublicDeltaLocalDecl.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DeltaPublicDeltaLocalDecl.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [deltaLocalDecl](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DeltaPublicDeltaLocalDecl.lean/declarations/deltalocaldecl.md) | 17 | `declaration-track:30aabad9890612c291354328f734673cef93898a6e1efdb2c79a74d307e477bf` |
-| 2 | `def` | [deltaTarget](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DeltaPublicDeltaLocalDecl.lean/declarations/deltatarget.md) | 25 | `declaration-track:a37feaf05b401a89fab9622e5ff04a7371c0451f22c394b8b77f8d5f3de56a4d` |
-| 3 | `def` | [evalDelta](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DeltaPublicDeltaLocalDecl.lean/declarations/evaldelta.md) | 34 | `declaration-track:e0817f34e2c1e79b7eaea93c153c726230f761a9424517c5234c447de7431b43` |
+| 1 | `def` | [deltaLocalDecl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DeltaPublicDeltaLocalDecl.lean/declarations/deltalocaldecl.md) | 17 | `declaration-track:30aabad9890612c291354328f734673cef93898a6e1efdb2c79a74d307e477bf` |
+| 2 | `def` | [deltaTarget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DeltaPublicDeltaLocalDecl.lean/declarations/deltatarget.md) | 25 | `declaration-track:a37feaf05b401a89fab9622e5ff04a7371c0451f22c394b8b77f8d5f3de56a4d` |
+| 3 | `def` | [evalDelta](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DeltaPublicDeltaLocalDecl.lean/declarations/evaldelta.md) | 34 | `declaration-track:e0817f34e2c1e79b7eaea93c153c726230f761a9424517c5234c447de7431b43` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ClosedIntegerValueNonzero.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ClosedIntegerValueNonzero.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ClosedIntegerValueNonzero.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ClosedIntegerValueNonzero.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [standard_reference_base_case_euler_nonzero](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ClosedIntegerValueNonzero.lean/declarations/standard-reference-base-case-euler-nonzero.md) | 31 | `result-track:9c6b9798995c7cd619a7edff5bbdabbeed76851ed8fe97629da589644a3e33a1` |
-| 2 | `theorem` | [standard_reference_11a1_base_case_euler_nonzero](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ClosedIntegerValueNonzero.lean/declarations/standard-reference-11a1-base-case-euler-nonzero.md) | 35 | `result-track:bdfee7f94337adf6cf4f372e8cb080cccbe2e5ba81a098311d1e406ef8e71475` |
+| 1 | `theorem` | [standard_reference_base_case_euler_nonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ClosedIntegerValueNonzero.lean/declarations/standard-reference-base-case-euler-nonzero.md) | 31 | `result-track:9c6b9798995c7cd619a7edff5bbdabbeed76851ed8fe97629da589644a3e33a1` |
+| 2 | `theorem` | [standard_reference_11a1_base_case_euler_nonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ClosedIntegerValueNonzero.lean/declarations/standard-reference-11a1-base-case-euler-nonzero.md) | 35 | `result-track:bdfee7f94337adf6cf4f372e8cb080cccbe2e5ba81a098311d1e406ef8e71475` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

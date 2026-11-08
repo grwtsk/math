@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/FinTopCat.lean/index.md) · [Full source](../../../../GeneralTopology/FinTopCat.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FinTopCat.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FinTopCat.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,20 +58,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FinTopCat](../../../../GeneralTopology/FinTopCat.lean/declarations/fintopcat.md) | 23 | `declaration-track:381513ef0d9101146fb396e174149cf3e240cb50cd9a8c956c3ee8d4384e3f08` |
-| 2 | `instance` | [(anonymous)](../../../../GeneralTopology/FinTopCat.lean/declarations/instance-source-edition-3.md) | 30 | `declaration-track:8e5f6a0d7d72ecb36738a2928b96fd2aa123bb36fb4c08b376d74a16db020ea9` |
-| 3 | `instance` | [(anonymous)](../../../../GeneralTopology/FinTopCat.lean/declarations/instance-source-edition-4.md) | 33 | `declaration-track:8feda98f0e360ffe5e3caae991371b91e48cf56344041d6054e5dcfc8b8981b2` |
-| 4 | `instance` | [(anonymous)](../../../../GeneralTopology/FinTopCat.lean/declarations/instance-source-edition-6.md) | 38 | `declaration-track:a771c748ca6720961f9bf5f3efa943ee6004ef4050e704d3b63c1542c57cf7d1` |
-| 5 | `instance` | [(anonymous)](../../../../GeneralTopology/FinTopCat.lean/declarations/instance-source-edition-11.md) | 41 | `declaration-track:fcb9fa26b51fec2d36ba2d9edb5443e29e28d19ef5f4bf1f6a76e2eb371d6917` |
-| 6 | `def` | [of](../../../../GeneralTopology/FinTopCat.lean/declarations/of.md) | 45 | `declaration-track:eecd3cb94e4614bac398e1f85a876b5114e98d0fc71a83e71641d102e6d76f79` |
-| 7 | `theorem` | [coe_of](../../../../GeneralTopology/FinTopCat.lean/declarations/coe-of.md) | 50 | `result-track:f27756fcaab96311286557f88fe061046ab31193c61d8c45ab6eb16cf6786651` |
-| 8 | `instance` | [(anonymous)](../../../../GeneralTopology/FinTopCat.lean/declarations/instance-source-edition-7.md) | 55 | `declaration-track:bbe83b69c1463178f05813cbbc496d9d5e7fcb51853eb835be8f93544d10bbc2` |
-| 9 | `instance` | [(anonymous)](../../../../GeneralTopology/FinTopCat.lean/declarations/instance-source-edition-2.md) | 58 | `declaration-track:19ce9a5fa4d75247f86a93be6c87f70e3f47bab833f7278fe0261cb57865e051` |
-| 10 | `instance` | [(anonymous)](../../../../GeneralTopology/FinTopCat.lean/declarations/instance-source-edition-10.md) | 62 | `declaration-track:fca534d5fa128d69c9327a2786b6e3a449fa8e536d6ff9bec20cddd832d62dfc` |
-| 11 | `instance` | [(anonymous)](../../../../GeneralTopology/FinTopCat.lean/declarations/instance-source-edition-5.md) | 65 | `declaration-track:921dca0cfc5f54b2a11b09f7332e2ba8d915d0aeba2cef09381d958c97c021a3` |
-| 12 | `instance` | [(anonymous)](../../../../GeneralTopology/FinTopCat.lean/declarations/instance-source-edition-8.md) | 74 | `declaration-track:c4fac0097035c2a0c8938068f63d8c85e6a720477a03b3e3acc6ebcff638b2a4` |
-| 13 | `instance` | [(anonymous)](../../../../GeneralTopology/FinTopCat.lean/declarations/instance-source-edition-9.md) | 75 | `declaration-track:ed6ae5031e44916b9bdd5c991c703c6557d8993d08c094f8034460609ffd23d4` |
-| 14 | `instance` | [(anonymous)](../../../../GeneralTopology/FinTopCat.lean/declarations/instance.md) | 79 | `declaration-track:0b53daabd81297802ca8df4fffe9e29d7ae0d369c85b29e29be61d35357c2b97` |
+| 1 | `structure` | [FinTopCat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FinTopCat.lean/declarations/fintopcat.md) | 23 | `declaration-track:381513ef0d9101146fb396e174149cf3e240cb50cd9a8c956c3ee8d4384e3f08` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FinTopCat.lean/declarations/instance-source-edition-3.md) | 30 | `declaration-track:8e5f6a0d7d72ecb36738a2928b96fd2aa123bb36fb4c08b376d74a16db020ea9` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FinTopCat.lean/declarations/instance-source-edition-4.md) | 33 | `declaration-track:8feda98f0e360ffe5e3caae991371b91e48cf56344041d6054e5dcfc8b8981b2` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FinTopCat.lean/declarations/instance-source-edition-6.md) | 38 | `declaration-track:a771c748ca6720961f9bf5f3efa943ee6004ef4050e704d3b63c1542c57cf7d1` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FinTopCat.lean/declarations/instance-source-edition-11.md) | 41 | `declaration-track:fcb9fa26b51fec2d36ba2d9edb5443e29e28d19ef5f4bf1f6a76e2eb371d6917` |
+| 6 | `def` | [of](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FinTopCat.lean/declarations/of.md) | 45 | `declaration-track:eecd3cb94e4614bac398e1f85a876b5114e98d0fc71a83e71641d102e6d76f79` |
+| 7 | `theorem` | [coe_of](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FinTopCat.lean/declarations/coe-of.md) | 50 | `result-track:f27756fcaab96311286557f88fe061046ab31193c61d8c45ab6eb16cf6786651` |
+| 8 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FinTopCat.lean/declarations/instance-source-edition-7.md) | 55 | `declaration-track:bbe83b69c1463178f05813cbbc496d9d5e7fcb51853eb835be8f93544d10bbc2` |
+| 9 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FinTopCat.lean/declarations/instance-source-edition-2.md) | 58 | `declaration-track:19ce9a5fa4d75247f86a93be6c87f70e3f47bab833f7278fe0261cb57865e051` |
+| 10 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FinTopCat.lean/declarations/instance-source-edition-10.md) | 62 | `declaration-track:fca534d5fa128d69c9327a2786b6e3a449fa8e536d6ff9bec20cddd832d62dfc` |
+| 11 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FinTopCat.lean/declarations/instance-source-edition-5.md) | 65 | `declaration-track:921dca0cfc5f54b2a11b09f7332e2ba8d915d0aeba2cef09381d958c97c021a3` |
+| 12 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FinTopCat.lean/declarations/instance-source-edition-8.md) | 74 | `declaration-track:c4fac0097035c2a0c8938068f63d8c85e6a720477a03b3e3acc6ebcff638b2a4` |
+| 13 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FinTopCat.lean/declarations/instance-source-edition-9.md) | 75 | `declaration-track:ed6ae5031e44916b9bdd5c991c703c6557d8993d08c094f8034460609ffd23d4` |
+| 14 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FinTopCat.lean/declarations/instance.md) | 79 | `declaration-track:0b53daabd81297802ca8df4fffe9e29d7ae0d369c85b29e29be61d35357c2b97` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

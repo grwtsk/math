@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CasesInfoPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CasesInfoPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CasesInfoPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CasesInfoPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [CasesAltInfo](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CasesInfoPublic.lean/declarations/casesaltinfo.md) | 35 | `declaration-track:03f975a9d9910d96f9ff329a0415fd803950f31aec3f2ac1133cce8a882b8ce7` |
-| 2 | `structure` | [CasesInfo](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CasesInfoPublic.lean/declarations/casesinfo.md) | 45 | `declaration-track:5b72b0e7d2df7e59d5f4a8906510dbb1182c0bae8d1b0c79c52c0102680a6d46` |
-| 3 | `def` | [CasesInfo.numAlts](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CasesInfoPublic.lean/declarations/casesinfo-numalts.md) | 53 | `declaration-track:a72f20efe03499c526ea208a4ada0cf2db441a6dc07d69f4dc6c2f0bf26ac1e2` |
-| 4 | `def` | [getCasesInfo?](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CasesInfoPublic.lean/declarations/getcasesinfo.md) | 56 | `declaration-track:b5fbe5aaf92c3f8d6c7737cc58b7526d4474574b64feade10d20c7c7e009b63a` |
+| 1 | `inductive` | [CasesAltInfo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CasesInfoPublic.lean/declarations/casesaltinfo.md) | 35 | `declaration-track:03f975a9d9910d96f9ff329a0415fd803950f31aec3f2ac1133cce8a882b8ce7` |
+| 2 | `structure` | [CasesInfo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CasesInfoPublic.lean/declarations/casesinfo.md) | 45 | `declaration-track:5b72b0e7d2df7e59d5f4a8906510dbb1182c0bae8d1b0c79c52c0102680a6d46` |
+| 3 | `def` | [CasesInfo.numAlts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CasesInfoPublic.lean/declarations/casesinfo-numalts.md) | 53 | `declaration-track:a72f20efe03499c526ea208a4ada0cf2db441a6dc07d69f4dc6c2f0bf26ac1e2` |
+| 4 | `def` | [getCasesInfo?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CasesInfoPublic.lean/declarations/getcasesinfo.md) | 56 | `declaration-track:b5fbe5aaf92c3f8d6c7737cc58b7526d4474574b64feade10d20c7c7e009b63a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

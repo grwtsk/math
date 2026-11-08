@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CubicRemainderHolomorphic.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CubicRemainderHolomorphic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CubicRemainderHolomorphic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CubicRemainderHolomorphic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CubicRemainder`](../../../../MeasureAndIntegration/CubicRemainder.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CubicRemainder`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CubicRemainder.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Analysis.Calculus.ParametricIntervalIntegral` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [cellLogMoment](../../../../MeasureAndIntegration/CubicRemainderHolomorphic.lean/declarations/celllogmoment.md) | 33 | `declaration-track:558f54da964972c2c3c6391d06415f2b2d56b23a3d2496f9746b14fa61f4c312` |
-| 2 | `theorem` | [cellLogMoment_integrable](../../../../MeasureAndIntegration/CubicRemainderHolomorphic.lean/declarations/celllogmoment-integrable.md) | 37 | `result-track:d2a567519d79c97fc5662ce1352df18dbd7c7ee45aebd64b8cd54ec04de1e4b5` |
-| 3 | `theorem` | [norm_cell_log_density_le](../../../../MeasureAndIntegration/CubicRemainderHolomorphic.lean/declarations/norm-cell-log-density-le.md) | 51 | `result-track:67472b55f29790581e77f48ad30642259c94e2efe323ee1680d74a0328af64cd` |
-| 4 | `theorem` | [hasDerivAt_cell](../../../../MeasureAndIntegration/CubicRemainderHolomorphic.lean/declarations/hasderivat-cell.md) | 67 | `result-track:3fcde3e6f6cc9b69d6686f34e751c12e7cb57cbf6f98f0f80114f429491439ef` |
-| 5 | `theorem` | [differentiable_cell](../../../../MeasureAndIntegration/CubicRemainderHolomorphic.lean/declarations/differentiable-cell.md) | 104 | `result-track:8e49926f2520d252a2fb5b733d8e3944f904b0191cab38eec03f0177804571a6` |
-| 6 | `theorem` | [differentiableOn_above](../../../../MeasureAndIntegration/CubicRemainderHolomorphic.lean/declarations/differentiableon-above.md) | 109 | `result-track:0ebac97f898ada294b237634ce4d5abd9511ca28ac8f3d89bd67e10146cf264c` |
-| 7 | `theorem` | [differentiableAt_cubicRemainder](../../../../MeasureAndIntegration/CubicRemainderHolomorphic.lean/declarations/differentiableat-cubicremainder.md) | 119 | `result-track:6ed4c0495fe322917e4a59052235ecf1e4f30f84c1b564a5440da6e1dc229dce` |
-| 8 | `theorem` | [analyticOnNhd_cubicRemainder](../../../../MeasureAndIntegration/CubicRemainderHolomorphic.lean/declarations/analyticonnhd-cubicremainder.md) | 127 | `result-track:c85224fdc2a34e37ae36b8ce01dc81f209a492dc1fb430d36385f63f88633578` |
-| 9 | `theorem` | [hasSum_cellLogMoment](../../../../MeasureAndIntegration/CubicRemainderHolomorphic.lean/declarations/hassum-celllogmoment.md) | 134 | `result-track:bcb8ed8538f9e8bae535b9c267e17048326ee31b95645b674c430926cad49682` |
+| 1 | `def` | [cellLogMoment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CubicRemainderHolomorphic.lean/declarations/celllogmoment.md) | 33 | `declaration-track:558f54da964972c2c3c6391d06415f2b2d56b23a3d2496f9746b14fa61f4c312` |
+| 2 | `theorem` | [cellLogMoment_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CubicRemainderHolomorphic.lean/declarations/celllogmoment-integrable.md) | 37 | `result-track:d2a567519d79c97fc5662ce1352df18dbd7c7ee45aebd64b8cd54ec04de1e4b5` |
+| 3 | `theorem` | [norm_cell_log_density_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CubicRemainderHolomorphic.lean/declarations/norm-cell-log-density-le.md) | 51 | `result-track:67472b55f29790581e77f48ad30642259c94e2efe323ee1680d74a0328af64cd` |
+| 4 | `theorem` | [hasDerivAt_cell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CubicRemainderHolomorphic.lean/declarations/hasderivat-cell.md) | 67 | `result-track:3fcde3e6f6cc9b69d6686f34e751c12e7cb57cbf6f98f0f80114f429491439ef` |
+| 5 | `theorem` | [differentiable_cell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CubicRemainderHolomorphic.lean/declarations/differentiable-cell.md) | 104 | `result-track:8e49926f2520d252a2fb5b733d8e3944f904b0191cab38eec03f0177804571a6` |
+| 6 | `theorem` | [differentiableOn_above](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CubicRemainderHolomorphic.lean/declarations/differentiableon-above.md) | 109 | `result-track:0ebac97f898ada294b237634ce4d5abd9511ca28ac8f3d89bd67e10146cf264c` |
+| 7 | `theorem` | [differentiableAt_cubicRemainder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CubicRemainderHolomorphic.lean/declarations/differentiableat-cubicremainder.md) | 119 | `result-track:6ed4c0495fe322917e4a59052235ecf1e4f30f84c1b564a5440da6e1dc229dce` |
+| 8 | `theorem` | [analyticOnNhd_cubicRemainder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CubicRemainderHolomorphic.lean/declarations/analyticonnhd-cubicremainder.md) | 127 | `result-track:c85224fdc2a34e37ae36b8ce01dc81f209a492dc1fb430d36385f63f88633578` |
+| 9 | `theorem` | [hasSum_cellLogMoment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CubicRemainderHolomorphic.lean/declarations/hassum-celllogmoment.md) | 134 | `result-track:bcb8ed8538f9e8bae535b9c267e17048326ee31b95645b674c430926cad49682` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

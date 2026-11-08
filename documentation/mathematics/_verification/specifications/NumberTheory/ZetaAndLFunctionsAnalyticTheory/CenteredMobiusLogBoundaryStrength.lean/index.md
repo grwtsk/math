@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogBoundaryStrength.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogBoundaryStrength.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogBoundaryStrength.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogBoundaryStrength.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogBoundaryReduction`](../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredMobiusLogBoundaryReduction.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogBoundaryReduction`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredMobiusLogBoundaryReduction.lean/index.md) — import line 6; pinned internal source present.
 - `Mathlib.Tactic` — import line 7; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [centeredGreenDyadicMangoldtRawError](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogBoundaryStrength.lean/declarations/centeredgreendyadicmangoldtrawerror.md) | 15 | `declaration-track:12d23cc287ca535cc1e49e303d8065efcac24e89e38a45331e9e1d85cfa5e47d` |
-| 2 | `theorem` | [normalizedMangoldtDiscrepancy_eq_raw_div](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogBoundaryStrength.lean/declarations/normalizedmangoldtdiscrepancy-eq-raw-div.md) | 18 | `result-track:97d8171a6de42c3fde0802180d549cc5921417bb3da9f4e5d5e46bced1791a99` |
-| 3 | `theorem` | [normalized_square_bound_iff_raw_square_bound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogBoundaryStrength.lean/declarations/normalized-square-bound-iff-raw-square-bound.md) | 30 | `result-track:4f238a16a4d929e12b7e1d030375d64ed04f95adee8565f77394b542342d40ac` |
-| 4 | `def` | [AllDyadicRawMangoldtSquareRootPlusEpsilonBound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogBoundaryStrength.lean/declarations/alldyadicrawmangoldtsquarerootplusepsilonbound.md) | 56 | `declaration-track:de6fa043670e490ba77174486d148b0fa615e19ba8d9ce78cfc6630b2301fa97` |
-| 5 | `theorem` | [allDyadicNormalizedMangoldt_iff_rawSquareRoot](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogBoundaryStrength.lean/declarations/alldyadicnormalizedmangoldt-iff-rawsquareroot.md) | 63 | `result-track:0ae1ef8287b19709b6068953895ed65a16f23a2ccc5e126258e9ac963c8471cb` |
+| 1 | `def` | [centeredGreenDyadicMangoldtRawError](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogBoundaryStrength.lean/declarations/centeredgreendyadicmangoldtrawerror.md) | 15 | `declaration-track:12d23cc287ca535cc1e49e303d8065efcac24e89e38a45331e9e1d85cfa5e47d` |
+| 2 | `theorem` | [normalizedMangoldtDiscrepancy_eq_raw_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogBoundaryStrength.lean/declarations/normalizedmangoldtdiscrepancy-eq-raw-div.md) | 18 | `result-track:97d8171a6de42c3fde0802180d549cc5921417bb3da9f4e5d5e46bced1791a99` |
+| 3 | `theorem` | [normalized_square_bound_iff_raw_square_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogBoundaryStrength.lean/declarations/normalized-square-bound-iff-raw-square-bound.md) | 30 | `result-track:4f238a16a4d929e12b7e1d030375d64ed04f95adee8565f77394b542342d40ac` |
+| 4 | `def` | [AllDyadicRawMangoldtSquareRootPlusEpsilonBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogBoundaryStrength.lean/declarations/alldyadicrawmangoldtsquarerootplusepsilonbound.md) | 56 | `declaration-track:de6fa043670e490ba77174486d148b0fa615e19ba8d9ce78cfc6630b2301fa97` |
+| 5 | `theorem` | [allDyadicNormalizedMangoldt_iff_rawSquareRoot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogBoundaryStrength.lean/declarations/alldyadicnormalizedmangoldt-iff-rawsquareroot.md) | 63 | `result-track:0ae1ef8287b19709b6068953895ed65a16f23a2ccc5e126258e9ac963c8471cb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

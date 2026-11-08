@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/BoundaryAcceptanceControls.lean/index.md) · [Full source](../../../../NumberTheory/BoundaryAcceptanceControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/BoundaryAcceptanceControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/BoundaryAcceptanceControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.ConcreteNewtonBoundaryAcceptance`](../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ConcreteNewtonBoundaryAcceptance.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.ConcreteNewtonBoundaryAcceptance`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ConcreteNewtonBoundaryAcceptance.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [remaining_check_count](../../../../NumberTheory/BoundaryAcceptanceControls.lean/declarations/remaining-check-count.md) | 17 | `result-track:78f7cf7108b1ef5068f1dfa5ed2e1306c585d1c34278bc1ee6e6371f63d56a20` |
-| 2 | `theorem` | [first_remaining_label](../../../../NumberTheory/BoundaryAcceptanceControls.lean/declarations/first-remaining-label.md) | 19 | `result-track:40bd69de3b91a6acda9f93686f47c4e374ce060436d0c3ff78d3b43c34d85998` |
-| 3 | `theorem` | [last_remaining_label](../../../../NumberTheory/BoundaryAcceptanceControls.lean/declarations/last-remaining-label.md) | 21 | `result-track:5fd98ed982ff802f14717a7c5ca2b475fd8c4d55aac552e3ae552cc9c5cb5eef` |
-| 4 | `theorem` | [block_one_still_required](../../../../NumberTheory/BoundaryAcceptanceControls.lean/declarations/block-one-still-required.md) | 24 | `result-track:ec40f06ebd7c03d26d52b894492548de7dfe9ec84f47fe7653b4c4f5c26e288b` |
-| 5 | `theorem` | [last_block_still_required](../../../../NumberTheory/BoundaryAcceptanceControls.lean/declarations/last-block-still-required.md) | 29 | `result-track:83e2359d964a593905601f59674ebc71e43ec02379d542dbea82841f29011314` |
-| 6 | `theorem` | [final_check_still_required](../../../../NumberTheory/BoundaryAcceptanceControls.lean/declarations/final-check-still-required.md) | 35 | `result-track:540780e6b84a68274a9948208156e988a957d48dc91699aaa927964945aeb956` |
-| 7 | `theorem` | [first_uncovered_record](../../../../NumberTheory/BoundaryAcceptanceControls.lean/declarations/first-uncovered-record.md) | 41 | `result-track:f23c83283e082b6857c5338e83102ca3689c17182020e5a6abc0fd67660c1ab0` |
-| 8 | `theorem` | [last_prefix_retained](../../../../NumberTheory/BoundaryAcceptanceControls.lean/declarations/last-prefix-retained.md) | 47 | `result-track:3b8436355c8ba2d1f73f41a4cc5b47c5bc0f47b84820938b237da77ecc328ffc` |
-| 9 | `theorem` | [changed_remaining_record_rejected](../../../../NumberTheory/BoundaryAcceptanceControls.lean/declarations/changed-remaining-record-rejected.md) | 53 | `result-track:91a85618309d3de6ff95405c68837018bd25d5b1bd4bdb28bfbdeed7628ac292` |
+| 1 | `theorem` | [remaining_check_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/BoundaryAcceptanceControls.lean/declarations/remaining-check-count.md) | 17 | `result-track:78f7cf7108b1ef5068f1dfa5ed2e1306c585d1c34278bc1ee6e6371f63d56a20` |
+| 2 | `theorem` | [first_remaining_label](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/BoundaryAcceptanceControls.lean/declarations/first-remaining-label.md) | 19 | `result-track:40bd69de3b91a6acda9f93686f47c4e374ce060436d0c3ff78d3b43c34d85998` |
+| 3 | `theorem` | [last_remaining_label](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/BoundaryAcceptanceControls.lean/declarations/last-remaining-label.md) | 21 | `result-track:5fd98ed982ff802f14717a7c5ca2b475fd8c4d55aac552e3ae552cc9c5cb5eef` |
+| 4 | `theorem` | [block_one_still_required](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/BoundaryAcceptanceControls.lean/declarations/block-one-still-required.md) | 24 | `result-track:ec40f06ebd7c03d26d52b894492548de7dfe9ec84f47fe7653b4c4f5c26e288b` |
+| 5 | `theorem` | [last_block_still_required](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/BoundaryAcceptanceControls.lean/declarations/last-block-still-required.md) | 29 | `result-track:83e2359d964a593905601f59674ebc71e43ec02379d542dbea82841f29011314` |
+| 6 | `theorem` | [final_check_still_required](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/BoundaryAcceptanceControls.lean/declarations/final-check-still-required.md) | 35 | `result-track:540780e6b84a68274a9948208156e988a957d48dc91699aaa927964945aeb956` |
+| 7 | `theorem` | [first_uncovered_record](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/BoundaryAcceptanceControls.lean/declarations/first-uncovered-record.md) | 41 | `result-track:f23c83283e082b6857c5338e83102ca3689c17182020e5a6abc0fd67660c1ab0` |
+| 8 | `theorem` | [last_prefix_retained](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/BoundaryAcceptanceControls.lean/declarations/last-prefix-retained.md) | 47 | `result-track:3b8436355c8ba2d1f73f41a4cc5b47c5bc0f47b84820938b237da77ecc328ffc` |
+| 9 | `theorem` | [changed_remaining_record_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/BoundaryAcceptanceControls.lean/declarations/changed-remaining-record-rejected.md) | 53 | `result-track:91a85618309d3de6ff95405c68837018bd25d5b1bd4bdb28bfbdeed7628ac292` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

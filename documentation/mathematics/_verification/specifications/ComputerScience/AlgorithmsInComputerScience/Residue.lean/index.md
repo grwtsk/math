@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Residue.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Residue.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Residue.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Residue.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [ResidueKind](../../../../../ComputerScience/AlgorithmsInComputerScience/Residue.lean/declarations/residuekind.md) | 12 | `declaration-track:7ba0a0bb34a52d2e42ca494b0348110a4f483d694b09babf5d5e32bf812c5b8a` |
-| 2 | `structure` | [Residue](../../../../../ComputerScience/AlgorithmsInComputerScience/Residue.lean/declarations/residue.md) | 37 | `declaration-track:c86f44299affcac83c507486cf73d40a1a46c616ac81bb6e3fb6deca58d00ee4` |
-| 3 | `structure` | [AtomLedger](../../../../../ComputerScience/AlgorithmsInComputerScience/Residue.lean/declarations/atomledger.md) | 45 | `declaration-track:c32a718dcc31e4df68f29552480af9be9d0e3e3532e58749ee2ff0049d6b4d41` |
-| 4 | `structure` | [ResidueFor](../../../../../ComputerScience/AlgorithmsInComputerScience/Residue.lean/declarations/residuefor.md) | 50 | `declaration-track:4eef8ba808308f67359109e38719dd689eece1a87db7bef889636f522c39152c` |
-| 5 | `def` | [residues](../../../../../ComputerScience/AlgorithmsInComputerScience/Residue.lean/declarations/residues.md) | 57 | `declaration-track:036b5a02ee6ad8659a7b19fb497b3abb2327e2a1224d0cbf9fb140ad1d44d7d7` |
+| 1 | `inductive` | [ResidueKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Residue.lean/declarations/residuekind.md) | 12 | `declaration-track:7ba0a0bb34a52d2e42ca494b0348110a4f483d694b09babf5d5e32bf812c5b8a` |
+| 2 | `structure` | [Residue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Residue.lean/declarations/residue.md) | 37 | `declaration-track:c86f44299affcac83c507486cf73d40a1a46c616ac81bb6e3fb6deca58d00ee4` |
+| 3 | `structure` | [AtomLedger](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Residue.lean/declarations/atomledger.md) | 45 | `declaration-track:c32a718dcc31e4df68f29552480af9be9d0e3e3532e58749ee2ff0049d6b4d41` |
+| 4 | `structure` | [ResidueFor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Residue.lean/declarations/residuefor.md) | 50 | `declaration-track:4eef8ba808308f67359109e38719dd689eece1a87db7bef889636f522c39152c` |
+| 5 | `def` | [residues](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Residue.lean/declarations/residues.md) | 57 | `declaration-track:036b5a02ee6ad8659a7b19fb497b3abb2327e2a1224d0cbf9fb140ad1d44d7d7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

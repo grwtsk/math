@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/IdempotentNamespaced.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/IdempotentNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/IdempotentNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/IdempotentNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,18 +60,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [one_sub](../../../../AssociativeRingsAndAlgebras/IdempotentNamespaced.lean/declarations/one-sub.md) | 33 | `result-track:f327b8a7b477abf557caba95675cc137732e3a4633ef2bf4e722eaf18f4298a9` |
-| 2 | `lemma` | [one_sub_iff](../../../../AssociativeRingsAndAlgebras/IdempotentNamespaced.lean/declarations/one-sub-iff.md) | 37 | `result-track:d0de1b6ba4f051df0dbff9ba19624a9669f7ba197f0292d63da844b558044db3` |
-| 3 | `lemma` | [mul_one_sub_self](../../../../AssociativeRingsAndAlgebras/IdempotentNamespaced.lean/declarations/mul-one-sub-self.md) | 41 | `result-track:194d2494e54e21300e3ec9fb396642ad38b9b8f04d2e0d7817dc02e044a82d90` |
-| 4 | `lemma` | [one_sub_mul_self](../../../../AssociativeRingsAndAlgebras/IdempotentNamespaced.lean/declarations/one-sub-mul-self.md) | 45 | `result-track:926f8df5977a2562225b1743508e09d61cf12182cf46e60e0a5688265a065285` |
-| 5 | `instance` | [(anonymous)](../../../../AssociativeRingsAndAlgebras/IdempotentNamespaced.lean/declarations/instance.md) | 48 | `declaration-track:d46f1ca44a63eee8809490bbfc7ad01099b24c7d731b82aa95794836be19ae24` |
-| 6 | `lemma` | [coe_compl](../../../../AssociativeRingsAndAlgebras/IdempotentNamespaced.lean/declarations/coe-compl.md) | 50 | `result-track:9aec2fdd3d9d482616b8dca834129b0f37cab777f7768039dfe3548dce53de1c` |
-| 7 | `lemma` | [compl_compl](../../../../AssociativeRingsAndAlgebras/IdempotentNamespaced.lean/declarations/compl-compl.md) | 52 | `result-track:dcaa061e2f0d6455f0f6565b3451694eb2196b16b730212fa69e009f541ae84e` |
-| 8 | `lemma` | [zero_compl](../../../../AssociativeRingsAndAlgebras/IdempotentNamespaced.lean/declarations/zero-compl.md) | 53 | `result-track:6042796a53cb2b220897ae9155a39c1d628d318381316443908cebef68503531` |
-| 9 | `lemma` | [one_compl](../../../../AssociativeRingsAndAlgebras/IdempotentNamespaced.lean/declarations/one-compl.md) | 54 | `result-track:a3e424ed26e38db742f36ecae42b663b94f0ae292d3f20984987e1f3b295c5cc` |
-| 10 | `lemma` | [of_mul_add](../../../../AssociativeRingsAndAlgebras/IdempotentNamespaced.lean/declarations/of-mul-add.md) | 61 | `result-track:d077ed74e55ecbc9f2af934f6f2cf117bfc0392ba13976b5e0b9be7d6e7d6b57` |
-| 11 | `lemma` | [add_sub_mul_of_commute](../../../../AssociativeRingsAndAlgebras/IdempotentNamespaced.lean/declarations/add-sub-mul-of-commute.md) | 71 | `result-track:afaf23f4dd84b508fc11ddcf31927333e3d559bdae8aa4e9e8c3141bc6fd4330` |
-| 12 | `lemma` | [add_sub_mul](../../../../AssociativeRingsAndAlgebras/IdempotentNamespaced.lean/declarations/add-sub-mul.md) | 82 | `result-track:7b0194eca548bcd1f5ee6303f4446cb1776286f9e8b5442f656c6ca5e963c1d4` |
+| 1 | `lemma` | [one_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/IdempotentNamespaced.lean/declarations/one-sub.md) | 33 | `result-track:f327b8a7b477abf557caba95675cc137732e3a4633ef2bf4e722eaf18f4298a9` |
+| 2 | `lemma` | [one_sub_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/IdempotentNamespaced.lean/declarations/one-sub-iff.md) | 37 | `result-track:d0de1b6ba4f051df0dbff9ba19624a9669f7ba197f0292d63da844b558044db3` |
+| 3 | `lemma` | [mul_one_sub_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/IdempotentNamespaced.lean/declarations/mul-one-sub-self.md) | 41 | `result-track:194d2494e54e21300e3ec9fb396642ad38b9b8f04d2e0d7817dc02e044a82d90` |
+| 4 | `lemma` | [one_sub_mul_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/IdempotentNamespaced.lean/declarations/one-sub-mul-self.md) | 45 | `result-track:926f8df5977a2562225b1743508e09d61cf12182cf46e60e0a5688265a065285` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/IdempotentNamespaced.lean/declarations/instance.md) | 48 | `declaration-track:d46f1ca44a63eee8809490bbfc7ad01099b24c7d731b82aa95794836be19ae24` |
+| 6 | `lemma` | [coe_compl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/IdempotentNamespaced.lean/declarations/coe-compl.md) | 50 | `result-track:9aec2fdd3d9d482616b8dca834129b0f37cab777f7768039dfe3548dce53de1c` |
+| 7 | `lemma` | [compl_compl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/IdempotentNamespaced.lean/declarations/compl-compl.md) | 52 | `result-track:dcaa061e2f0d6455f0f6565b3451694eb2196b16b730212fa69e009f541ae84e` |
+| 8 | `lemma` | [zero_compl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/IdempotentNamespaced.lean/declarations/zero-compl.md) | 53 | `result-track:6042796a53cb2b220897ae9155a39c1d628d318381316443908cebef68503531` |
+| 9 | `lemma` | [one_compl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/IdempotentNamespaced.lean/declarations/one-compl.md) | 54 | `result-track:a3e424ed26e38db742f36ecae42b663b94f0ae292d3f20984987e1f3b295c5cc` |
+| 10 | `lemma` | [of_mul_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/IdempotentNamespaced.lean/declarations/of-mul-add.md) | 61 | `result-track:d077ed74e55ecbc9f2af934f6f2cf117bfc0392ba13976b5e0b9be7d6e7d6b57` |
+| 11 | `lemma` | [add_sub_mul_of_commute](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/IdempotentNamespaced.lean/declarations/add-sub-mul-of-commute.md) | 71 | `result-track:afaf23f4dd84b508fc11ddcf31927333e3d559bdae8aa4e9e8c3141bc6fd4330` |
+| 12 | `lemma` | [add_sub_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/IdempotentNamespaced.lean/declarations/add-sub-mul.md) | 82 | `result-track:7b0194eca548bcd1f5ee6303f4446cb1776286f9e8b5442f656c6ca5e963c1d4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

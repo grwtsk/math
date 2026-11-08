@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupCocompactMapPublic.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupCocompactMapPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupCocompactMapPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupCocompactMapPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [CocompactMapClass.norm_le](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupCocompactMapPublic.lean/declarations/cocompactmapclass-norm-le.md) | 33 | `result-track:a1db036e3d1d7d74919bb6aeb2dfad10418177885622e42979aa77e64f9f6a6b` |
-| 2 | `theorem` | [Filter.tendsto_cocompact_cocompact_of_norm](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupCocompactMapPublic.lean/declarations/filter-tendsto-cocompact-cocompact-of-norm.md) | 45 | `result-track:d1d6fa602e4c48d75d44a7cc5b0f16083a7c2be6ef528662432583d9070c0bce` |
-| 3 | `theorem` | [ContinuousMapClass.toCocompactMapClass_of_norm](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupCocompactMapPublic.lean/declarations/continuousmapclass-tococompactmapclass-of-norm.md) | 59 | `result-track:6837e8a08746590a77c4f9fa9e44e0acea14f092778e92b08bcca37053c4c5b6` |
+| 1 | `theorem` | [CocompactMapClass.norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupCocompactMapPublic.lean/declarations/cocompactmapclass-norm-le.md) | 33 | `result-track:a1db036e3d1d7d74919bb6aeb2dfad10418177885622e42979aa77e64f9f6a6b` |
+| 2 | `theorem` | [Filter.tendsto_cocompact_cocompact_of_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupCocompactMapPublic.lean/declarations/filter-tendsto-cocompact-cocompact-of-norm.md) | 45 | `result-track:d1d6fa602e4c48d75d44a7cc5b0f16083a7c2be6ef528662432583d9070c0bce` |
+| 3 | `theorem` | [ContinuousMapClass.toCocompactMapClass_of_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupCocompactMapPublic.lean/declarations/continuousmapclass-tococompactmapclass-of-norm.md) | 59 | `result-track:6837e8a08746590a77c4f9fa9e44e0acea14f092778e92b08bcca37053c4c5b6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

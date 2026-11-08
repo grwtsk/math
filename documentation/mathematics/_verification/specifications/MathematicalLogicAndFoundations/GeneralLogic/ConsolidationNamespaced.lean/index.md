@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConsolidationNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConsolidationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ConsolidationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ConsolidationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [ConsolidationOperator](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConsolidationNamespaced.lean/declarations/consolidationoperator.md) | 15 | `declaration-track:677d2383793942b4aa64048b06375e2f44407cf4f968b22f0f4346102bacbb46` |
-| 2 | `structure` | [ConsolidationStep](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConsolidationNamespaced.lean/declarations/consolidationstep.md) | 25 | `declaration-track:2f7f1383e00895d246720a6f7772d601163167e4620b9279948b6535284f7a27` |
-| 3 | `def` | [ConsolidationStep.crossesOutward](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConsolidationNamespaced.lean/declarations/consolidationstep-crossesoutward.md) | 32 | `declaration-track:563a8a93417a82c1ab6e504ede45da60bdcc81c9122f8470f15cf68de1218a51` |
-| 4 | `theorem` | [consolidation_not_directly_inner_target](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConsolidationNamespaced.lean/declarations/consolidation-not-directly-inner-target.md) | 35 | `result-track:5ffcd19c05ee7b6fe889d426623f95b8a7c4add1872307f35254e417a115830f` |
+| 1 | `inductive` | [ConsolidationOperator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ConsolidationNamespaced.lean/declarations/consolidationoperator.md) | 15 | `declaration-track:677d2383793942b4aa64048b06375e2f44407cf4f968b22f0f4346102bacbb46` |
+| 2 | `structure` | [ConsolidationStep](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ConsolidationNamespaced.lean/declarations/consolidationstep.md) | 25 | `declaration-track:2f7f1383e00895d246720a6f7772d601163167e4620b9279948b6535284f7a27` |
+| 3 | `def` | [ConsolidationStep.crossesOutward](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ConsolidationNamespaced.lean/declarations/consolidationstep-crossesoutward.md) | 32 | `declaration-track:563a8a93417a82c1ab6e504ede45da60bdcc81c9122f8470f15cf68de1218a51` |
+| 4 | `theorem` | [consolidation_not_directly_inner_target](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ConsolidationNamespaced.lean/declarations/consolidation-not-directly-inner-target.md) | 35 | `result-track:5ffcd19c05ee7b6fe889d426623f95b8a7c4add1872307f35254e417a115830f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

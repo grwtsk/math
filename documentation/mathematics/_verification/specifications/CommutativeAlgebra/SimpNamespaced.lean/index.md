@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/SimpNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/SimpNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SimpNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SimpNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../CommutativeAlgebra/SimpNamespaced.lean/declarations/example-source-edition-2.md) | 19 | `declaration-track:9e3f836a5a3450769cbdc96401164af23cd8fd70f9e3e3ed1c63885a87e3f13b` |
-| 2 | `example` | [(anonymous)](../../../../CommutativeAlgebra/SimpNamespaced.lean/declarations/example.md) | 24 | `declaration-track:69a1897f93fda02bbff87d957f266fe9a2a15120213261319756b27194148071` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SimpNamespaced.lean/declarations/example-source-edition-2.md) | 19 | `declaration-track:9e3f836a5a3450769cbdc96401164af23cd8fd70f9e3e3ed1c63885a87e3f13b` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SimpNamespaced.lean/declarations/example.md) | 24 | `declaration-track:69a1897f93fda02bbff87d957f266fe9a2a15120213261319756b27194148071` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

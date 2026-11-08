@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MonadAttachNamespacedPublicMonadAttach.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MonadAttachNamespacedPublicMonadAttach.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MonadAttachNamespacedPublicMonadAttach.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MonadAttachNamespacedPublicMonadAttach.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [MonadAttach](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MonadAttachNamespacedPublicMonadAttach.lean/declarations/monadattach.md) | 38 | `declaration-track:7e004f4f8b725bb2a002494105c33ece3dd0650e4a06458e1a471e33833c1fbf` |
-| 2 | `class` | [WeaklyLawfulMonadAttach](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MonadAttachNamespacedPublicMonadAttach.lean/declarations/weaklylawfulmonadattach.md) | 52 | `declaration-track:f241ce4677fa1e66db8e578154037a68e249f3dc2229696f4b87a55bb1262fcf` |
-| 3 | `class` | [LawfulMonadAttach](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MonadAttachNamespacedPublicMonadAttach.lean/declarations/lawfulmonadattach.md) | 59 | `declaration-track:90c56bd5e059f8c05c8ace22dcd7b350762a7851be2a9270e8442b2fbe6115fc` |
-| 4 | `def` | [MonadAttach.pbind](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MonadAttachNamespacedPublicMonadAttach.lean/declarations/monadattach-pbind.md) | 70 | `declaration-track:b29bbb02d74a6fa7cb0ff556702eedc5ea1d487bbf68094ea08f00c10b066a75` |
-| 5 | `def` | [MonadAttach.trivial](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MonadAttachNamespacedPublicMonadAttach.lean/declarations/monadattach-trivial.md) | 82 | `declaration-track:0bc715ae7d5f74c76d4eff2fb5b71ee5ad9e15dd66c1fa79a1bc2e8c96621b65` |
+| 1 | `class` | [MonadAttach](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MonadAttachNamespacedPublicMonadAttach.lean/declarations/monadattach.md) | 38 | `declaration-track:7e004f4f8b725bb2a002494105c33ece3dd0650e4a06458e1a471e33833c1fbf` |
+| 2 | `class` | [WeaklyLawfulMonadAttach](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MonadAttachNamespacedPublicMonadAttach.lean/declarations/weaklylawfulmonadattach.md) | 52 | `declaration-track:f241ce4677fa1e66db8e578154037a68e249f3dc2229696f4b87a55bb1262fcf` |
+| 3 | `class` | [LawfulMonadAttach](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MonadAttachNamespacedPublicMonadAttach.lean/declarations/lawfulmonadattach.md) | 59 | `declaration-track:90c56bd5e059f8c05c8ace22dcd7b350762a7851be2a9270e8442b2fbe6115fc` |
+| 4 | `def` | [MonadAttach.pbind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MonadAttachNamespacedPublicMonadAttach.lean/declarations/monadattach-pbind.md) | 70 | `declaration-track:b29bbb02d74a6fa7cb0ff556702eedc5ea1d487bbf68094ea08f00c10b066a75` |
+| 5 | `def` | [MonadAttach.trivial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MonadAttachNamespacedPublicMonadAttach.lean/declarations/monadattach-trivial.md) | 82 | `declaration-track:0bc715ae7d5f74c76d4eff2fb5b71ee5ad9e15dd66c1fa79a1bc2e8c96621b65` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

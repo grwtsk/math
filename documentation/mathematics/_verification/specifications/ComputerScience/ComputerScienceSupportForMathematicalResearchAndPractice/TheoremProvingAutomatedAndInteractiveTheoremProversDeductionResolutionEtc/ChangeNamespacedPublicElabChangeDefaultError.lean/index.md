@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ChangeNamespacedPublicElabChangeDefaultError.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ChangeNamespacedPublicElabChangeDefaultError.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ChangeNamespacedPublicElabChangeDefaultError.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ChangeNamespacedPublicElabChangeDefaultError.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [elabChangeDefaultError](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ChangeNamespacedPublicElabChangeDefaultError.lean/declarations/elabchangedefaulterror.md) | 28 | `declaration-track:721a46349793995943f6f64019b133072c5bf5f9cfc938fd74fc8e3f5a08c0ee` |
-| 2 | `def` | [elabChange](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ChangeNamespacedPublicElabChangeDefaultError.lean/declarations/elabchange.md) | 38 | `declaration-track:0379733f27b1d2d7046d067b964a0ab12cd7190437d78f7f0a9a75d8703e2530` |
-| 3 | `def` | [evalChange](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ChangeNamespacedPublicElabChangeDefaultError.lean/declarations/evalchange.md) | 79 | `declaration-track:0fd5da065b357046027ddb16b23583d0817876dcb6d3790727d39b5b1881a762` |
+| 1 | `def` | [elabChangeDefaultError](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ChangeNamespacedPublicElabChangeDefaultError.lean/declarations/elabchangedefaulterror.md) | 28 | `declaration-track:721a46349793995943f6f64019b133072c5bf5f9cfc938fd74fc8e3f5a08c0ee` |
+| 2 | `def` | [elabChange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ChangeNamespacedPublicElabChangeDefaultError.lean/declarations/elabchange.md) | 38 | `declaration-track:0379733f27b1d2d7046d067b964a0ab12cd7190437d78f7f0a9a75d8703e2530` |
+| 3 | `def` | [evalChange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ChangeNamespacedPublicElabChangeDefaultError.lean/declarations/evalchange.md) | 79 | `declaration-track:0fd5da065b357046027ddb16b23583d0817876dcb6d3790727d39b5b1881a762` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

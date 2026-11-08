@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/SimplicialObjectHomotopyNamespacedPublic.lean/index.md) · [Full source](../../../../AlgebraicTopology/SimplicialObjectHomotopyNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialObjectHomotopyNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialObjectHomotopyNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Homotopy](../../../../AlgebraicTopology/SimplicialObjectHomotopyNamespacedPublic.lean/declarations/homotopy.md) | 60 | `declaration-track:5347479424104b90d8b348a9b2f614829d38f0ec756fa9ce5578d9fb713153cf` |
-| 2 | `def` | [refl](../../../../AlgebraicTopology/SimplicialObjectHomotopyNamespacedPublic.lean/declarations/refl.md) | 89 | `declaration-track:614cd7c87dc8c2352a0f750adf58fc772fdb2b5fa083730d43764ece96a4cbf9` |
-| 3 | `def` | [whiskerRight](../../../../AlgebraicTopology/SimplicialObjectHomotopyNamespacedPublic.lean/declarations/whiskerright.md) | 111 | `declaration-track:206bd8eb27b4f589aeb03a8e9a4570e2f245d0e688155fc343c0de45899af53b` |
-| 4 | `def` | [postcomp](../../../../AlgebraicTopology/SimplicialObjectHomotopyNamespacedPublic.lean/declarations/postcomp.md) | 140 | `declaration-track:46fed40cc5a41b75a3d7be4829be994a92713d6387d2f60104ea2d01a53b2840` |
-| 5 | `def` | [precomp](../../../../AlgebraicTopology/SimplicialObjectHomotopyNamespacedPublic.lean/declarations/precomp.md) | 160 | `declaration-track:d9f7c1482a675c8876e2c065f155adba74d24c9ef5db2dcfdb5e986ba1b07cd2` |
+| 1 | `structure` | [Homotopy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialObjectHomotopyNamespacedPublic.lean/declarations/homotopy.md) | 60 | `declaration-track:5347479424104b90d8b348a9b2f614829d38f0ec756fa9ce5578d9fb713153cf` |
+| 2 | `def` | [refl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialObjectHomotopyNamespacedPublic.lean/declarations/refl.md) | 89 | `declaration-track:614cd7c87dc8c2352a0f750adf58fc772fdb2b5fa083730d43764ece96a4cbf9` |
+| 3 | `def` | [whiskerRight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialObjectHomotopyNamespacedPublic.lean/declarations/whiskerright.md) | 111 | `declaration-track:206bd8eb27b4f589aeb03a8e9a4570e2f245d0e688155fc343c0de45899af53b` |
+| 4 | `def` | [postcomp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialObjectHomotopyNamespacedPublic.lean/declarations/postcomp.md) | 140 | `declaration-track:46fed40cc5a41b75a3d7be4829be994a92713d6387d2f60104ea2d01a53b2840` |
+| 5 | `def` | [precomp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialObjectHomotopyNamespacedPublic.lean/declarations/precomp.md) | 160 | `declaration-track:d9f7c1482a675c8876e2c065f155adba74d24c9ef5db2dcfdb5e986ba1b07cd2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

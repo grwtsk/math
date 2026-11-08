@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/KQHArithmeticNativeCoordinates.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/KQHArithmeticNativeCoordinates.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/KQHArithmeticNativeCoordinates.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/KQHArithmeticNativeCoordinates.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [gramForm](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/KQHArithmeticNativeCoordinates.lean/declarations/gramform.md) | 27 | `declaration-track:2a751972008a43c3de68728a8923fe09aa1541b53b5cc4f6e82eb6bbb56eb08e` |
-| 2 | `theorem` | [gramForm_exact_square](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/KQHArithmeticNativeCoordinates.lean/declarations/gramform-exact-square.md) | 31 | `result-track:7edba49a08e9d51065a91bb673d1bf0d92722a8dd4d8f28ca71a93079bacb472` |
-| 3 | `theorem` | [gramForm_nonneg](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/KQHArithmeticNativeCoordinates.lean/declarations/gramform-nonneg.md) | 37 | `result-track:a8dd82b0f3137163c591c04135ccddeec375cbcd5fba80c3c0c80e9d229ef0bc` |
-| 4 | `theorem` | [gramForm_kernel](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/KQHArithmeticNativeCoordinates.lean/declarations/gramform-kernel.md) | 41 | `result-track:8814607c5546b1f4421a62fb36fa1df18133a6f00776c460654149d6edcac1ad` |
-| 5 | `theorem` | [actual_source_normalization](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/KQHArithmeticNativeCoordinates.lean/declarations/actual-source-normalization.md) | 52 | `result-track:7ac1240fb9ccc7e73630f0e65af02daab03dbdb242d64ccb39c4b769a6b5189d` |
-| 6 | `theorem` | [source_direction_annihilated](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/KQHArithmeticNativeCoordinates.lean/declarations/source-direction-annihilated.md) | 58 | `result-track:d25075663d0c33bb5f7f22af729b5984daa45059c6f87b3619373ef1b2d0d100` |
-| 7 | `theorem` | [compression_bound_of_rank_certificate](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/KQHArithmeticNativeCoordinates.lean/declarations/compression-bound-of-rank-certificate.md) | 63 | `result-track:623a870897f149137bd28d12bb674a25cfebdb00ef5a7d6c43696a462a83c067` |
-| 8 | `theorem` | [native_residual_le_of_rank_certificate](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/KQHArithmeticNativeCoordinates.lean/declarations/native-residual-le-of-rank-certificate.md) | 80 | `result-track:a74981b43908fea9497248f62e9fcc1e4dcfcd17a6fad6e355d4c6fa99e25c70` |
+| 1 | `def` | [gramForm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/KQHArithmeticNativeCoordinates.lean/declarations/gramform.md) | 27 | `declaration-track:2a751972008a43c3de68728a8923fe09aa1541b53b5cc4f6e82eb6bbb56eb08e` |
+| 2 | `theorem` | [gramForm_exact_square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/KQHArithmeticNativeCoordinates.lean/declarations/gramform-exact-square.md) | 31 | `result-track:7edba49a08e9d51065a91bb673d1bf0d92722a8dd4d8f28ca71a93079bacb472` |
+| 3 | `theorem` | [gramForm_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/KQHArithmeticNativeCoordinates.lean/declarations/gramform-nonneg.md) | 37 | `result-track:a8dd82b0f3137163c591c04135ccddeec375cbcd5fba80c3c0c80e9d229ef0bc` |
+| 4 | `theorem` | [gramForm_kernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/KQHArithmeticNativeCoordinates.lean/declarations/gramform-kernel.md) | 41 | `result-track:8814607c5546b1f4421a62fb36fa1df18133a6f00776c460654149d6edcac1ad` |
+| 5 | `theorem` | [actual_source_normalization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/KQHArithmeticNativeCoordinates.lean/declarations/actual-source-normalization.md) | 52 | `result-track:7ac1240fb9ccc7e73630f0e65af02daab03dbdb242d64ccb39c4b769a6b5189d` |
+| 6 | `theorem` | [source_direction_annihilated](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/KQHArithmeticNativeCoordinates.lean/declarations/source-direction-annihilated.md) | 58 | `result-track:d25075663d0c33bb5f7f22af729b5984daa45059c6f87b3619373ef1b2d0d100` |
+| 7 | `theorem` | [compression_bound_of_rank_certificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/KQHArithmeticNativeCoordinates.lean/declarations/compression-bound-of-rank-certificate.md) | 63 | `result-track:623a870897f149137bd28d12bb674a25cfebdb00ef5a7d6c43696a462a83c067` |
+| 8 | `theorem` | [native_residual_le_of_rank_certificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/KQHArithmeticNativeCoordinates.lean/declarations/native-residual-le-of-rank-certificate.md) | 80 | `result-track:a74981b43908fea9497248f62e9fcc1e4dcfcd17a6fad6e355d4c6fa99e25c70` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/TentKernelSensitivity.lean/index.md) · [Full source](../../../../MeasureAndIntegration/TentKernelSensitivity.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentKernelSensitivity.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentKernelSensitivity.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.TentMellinQuadrature`](../../../../MeasureAndIntegration/TentMellinQuadrature.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.TentMellinQuadrature`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentMellinQuadrature.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [density_parameter_error](../../../../MeasureAndIntegration/TentKernelSensitivity.lean/declarations/density-parameter-error.md) | 26 | `result-track:3775ea51a7e3d672653271f898ddb1de8aa8f95d9f8b844bc96283357e41b5e5` |
-| 2 | `theorem` | [affine_parameter_error](../../../../MeasureAndIntegration/TentKernelSensitivity.lean/declarations/affine-parameter-error.md) | 36 | `result-track:45c105b275f2b15284ab8fa50dc2733c29f3ff74c5cbac61b68dd8a0d4a20eab` |
-| 3 | `theorem` | [tentKernel_eq_affine](../../../../MeasureAndIntegration/TentKernelSensitivity.lean/declarations/tentkernel-eq-affine.md) | 66 | `result-track:1f3328e3331918d8c5ad5b0b99570809150c6e65985a208e54d31f326bf2b996` |
-| 4 | `theorem` | [norm_tent_sub_le](../../../../MeasureAndIntegration/TentKernelSensitivity.lean/declarations/norm-tent-sub-le.md) | 90 | `result-track:7dcc875d9fdda0edefee498c2b91245f5876d2ea90026f6790153fb734b1fdd6` |
-| 5 | `theorem` | [finite_enclosure_error](../../../../MeasureAndIntegration/TentKernelSensitivity.lean/declarations/finite-enclosure-error.md) | 132 | `result-track:dbe2a252a7d435d429c08bcc88264d0957e3313d8cf573d35f98c1e0a57099e9` |
+| 1 | `theorem` | [density_parameter_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentKernelSensitivity.lean/declarations/density-parameter-error.md) | 26 | `result-track:3775ea51a7e3d672653271f898ddb1de8aa8f95d9f8b844bc96283357e41b5e5` |
+| 2 | `theorem` | [affine_parameter_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentKernelSensitivity.lean/declarations/affine-parameter-error.md) | 36 | `result-track:45c105b275f2b15284ab8fa50dc2733c29f3ff74c5cbac61b68dd8a0d4a20eab` |
+| 3 | `theorem` | [tentKernel_eq_affine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentKernelSensitivity.lean/declarations/tentkernel-eq-affine.md) | 66 | `result-track:1f3328e3331918d8c5ad5b0b99570809150c6e65985a208e54d31f326bf2b996` |
+| 4 | `theorem` | [norm_tent_sub_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentKernelSensitivity.lean/declarations/norm-tent-sub-le.md) | 90 | `result-track:7dcc875d9fdda0edefee498c2b91245f5876d2ea90026f6790153fb734b1fdd6` |
+| 5 | `theorem` | [finite_enclosure_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentKernelSensitivity.lean/declarations/finite-enclosure-error.md) | 132 | `result-track:dbe2a252a7d435d429c08bcc88264d0957e3313d8cf573d35f98c1e0a57099e9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

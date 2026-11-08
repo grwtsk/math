@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/CocycleProductHistoricalSourceEdition2.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/CocycleProductHistoricalSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CocycleProductHistoricalSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CocycleProductHistoricalSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.LinearAlgebra.OrderedProductDeterminant`](../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrderedProductDeterminant.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.LinearAlgebra.OrderedProductDeterminant`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrderedProductDeterminant.lean/index.md) — import line 5; pinned internal source present.
 - `Mathlib.Logic.Function.Iterate` — import line 6; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [cocycleProduct](../../../../GroupTheoryAndGeneralizations/CocycleProductHistoricalSourceEdition2.lean/declarations/cocycleproduct.md) | 50 | `declaration-track:d8e3e06049b87d8bb5622bb0b3b3c31473ee6a3810bfe22db9dbedb93a486b8b` |
-| 2 | `theorem` | [cocycleProduct_zero](../../../../GroupTheoryAndGeneralizations/CocycleProductHistoricalSourceEdition2.lean/declarations/cocycleproduct-zero.md) | 58 | `result-track:3fda0138baf45b9400de4fdc2d1bba974a458079d9044a480745b89230b9171d` |
-| 3 | `theorem` | [cocycleProduct_succ](../../../../GroupTheoryAndGeneralizations/CocycleProductHistoricalSourceEdition2.lean/declarations/cocycleproduct-succ.md) | 64 | `result-track:499435651238e8e1b0a9bc393775157b536f57c64ad1b2aa9859cccbb2ac9e55` |
-| 4 | `theorem` | [cocycleProduct_eq_orderedProduct](../../../../GroupTheoryAndGeneralizations/CocycleProductHistoricalSourceEdition2.lean/declarations/cocycleproduct-eq-orderedproduct.md) | 71 | `result-track:3c4b16c91d3295e46d559a224d8594948841a490d1b97a20c81b249400fbed35` |
-| 5 | `theorem` | [cocycleProduct_add](../../../../GroupTheoryAndGeneralizations/CocycleProductHistoricalSourceEdition2.lean/declarations/cocycleproduct-add.md) | 81 | `result-track:1957fb21c2f91130fe0ffa0a12db86462f187172a9b91e3206b48881c08b4e87` |
-| 6 | `def` | [cocycleGaugeTransfer](../../../../GroupTheoryAndGeneralizations/CocycleProductHistoricalSourceEdition2.lean/declarations/cocyclegaugetransfer.md) | 94 | `declaration-track:4f0a013de158a6e68e90d34df104816605f854ad37f2337fbb64946217361ab0` |
-| 7 | `theorem` | [cocycleProduct_gauge](../../../../GroupTheoryAndGeneralizations/CocycleProductHistoricalSourceEdition2.lean/declarations/cocycleproduct-gauge.md) | 100 | `result-track:6d84cfcce05a682f1eb7e8dd22fe404821ce20973548612166befeb2a6ad840c` |
+| 1 | `def` | [cocycleProduct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CocycleProductHistoricalSourceEdition2.lean/declarations/cocycleproduct.md) | 50 | `declaration-track:d8e3e06049b87d8bb5622bb0b3b3c31473ee6a3810bfe22db9dbedb93a486b8b` |
+| 2 | `theorem` | [cocycleProduct_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CocycleProductHistoricalSourceEdition2.lean/declarations/cocycleproduct-zero.md) | 58 | `result-track:3fda0138baf45b9400de4fdc2d1bba974a458079d9044a480745b89230b9171d` |
+| 3 | `theorem` | [cocycleProduct_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CocycleProductHistoricalSourceEdition2.lean/declarations/cocycleproduct-succ.md) | 64 | `result-track:499435651238e8e1b0a9bc393775157b536f57c64ad1b2aa9859cccbb2ac9e55` |
+| 4 | `theorem` | [cocycleProduct_eq_orderedProduct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CocycleProductHistoricalSourceEdition2.lean/declarations/cocycleproduct-eq-orderedproduct.md) | 71 | `result-track:3c4b16c91d3295e46d559a224d8594948841a490d1b97a20c81b249400fbed35` |
+| 5 | `theorem` | [cocycleProduct_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CocycleProductHistoricalSourceEdition2.lean/declarations/cocycleproduct-add.md) | 81 | `result-track:1957fb21c2f91130fe0ffa0a12db86462f187172a9b91e3206b48881c08b4e87` |
+| 6 | `def` | [cocycleGaugeTransfer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CocycleProductHistoricalSourceEdition2.lean/declarations/cocyclegaugetransfer.md) | 94 | `declaration-track:4f0a013de158a6e68e90d34df104816605f854ad37f2337fbb64946217361ab0` |
+| 7 | `theorem` | [cocycleProduct_gauge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CocycleProductHistoricalSourceEdition2.lean/declarations/cocycleproduct-gauge.md) | 100 | `result-track:6d84cfcce05a682f1eb7e8dd22fe404821ce20973548612166befeb2a6ad840c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

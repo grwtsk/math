@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/ObstructionActionNamespacedSourceEdition1.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/ObstructionActionNamespacedSourceEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ObstructionActionNamespacedSourceEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ObstructionActionNamespacedSourceEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RawObstruction](../../../../GroupTheoryAndGeneralizations/ObstructionActionNamespacedSourceEdition1.lean/declarations/rawobstruction.md) | 26 | `declaration-track:ca4ad25afafc408d59087669eaae86cf2a2efc1b3272afe1d6ce199f116cf885` |
-| 2 | `def` | [smulRawObstruction](../../../../GroupTheoryAndGeneralizations/ObstructionActionNamespacedSourceEdition1.lean/declarations/smulrawobstruction.md) | 37 | `declaration-track:3a1b6752910ec7bef93f745354cb0ee34e04d08117ddd7f217038d9d22fcf310` |
-| 3 | `instance` | [rawObstructionSMul](../../../../GroupTheoryAndGeneralizations/ObstructionActionNamespacedSourceEdition1.lean/declarations/rawobstructionsmul.md) | 54 | `declaration-track:630fa34a3d634adad497b31cf4b55eee99ace61a52f161376d4392ed35dd74a2` |
-| 4 | `instance` | [rawObstructionMulAction](../../../../GroupTheoryAndGeneralizations/ObstructionActionNamespacedSourceEdition1.lean/declarations/rawobstructionmulaction.md) | 66 | `declaration-track:971c897a42a2d513e46bbb07d859a6bac1f0413d6e9635e7ff0490859ba88887` |
-| 5 | `def` | [transportPrimitiveCore](../../../../GroupTheoryAndGeneralizations/ObstructionActionNamespacedSourceEdition1.lean/declarations/transportprimitivecore.md) | 88 | `declaration-track:a9217455a3d5213af094b67fe941f7a02a9cb1fc87c28fb7e1b3c6ee0fd2d6ae` |
-| 6 | `theorem` | [primitive_core_transports_under_automorphism](../../../../GroupTheoryAndGeneralizations/ObstructionActionNamespacedSourceEdition1.lean/declarations/primitive-core-transports-under-automorphism.md) | 144 | `result-track:4a46f58fdfce67a05040090428491cf8076d526fa7ef8fa5ee8bd62c3c6c7279` |
+| 1 | `structure` | [RawObstruction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ObstructionActionNamespacedSourceEdition1.lean/declarations/rawobstruction.md) | 26 | `declaration-track:ca4ad25afafc408d59087669eaae86cf2a2efc1b3272afe1d6ce199f116cf885` |
+| 2 | `def` | [smulRawObstruction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ObstructionActionNamespacedSourceEdition1.lean/declarations/smulrawobstruction.md) | 37 | `declaration-track:3a1b6752910ec7bef93f745354cb0ee34e04d08117ddd7f217038d9d22fcf310` |
+| 3 | `instance` | [rawObstructionSMul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ObstructionActionNamespacedSourceEdition1.lean/declarations/rawobstructionsmul.md) | 54 | `declaration-track:630fa34a3d634adad497b31cf4b55eee99ace61a52f161376d4392ed35dd74a2` |
+| 4 | `instance` | [rawObstructionMulAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ObstructionActionNamespacedSourceEdition1.lean/declarations/rawobstructionmulaction.md) | 66 | `declaration-track:971c897a42a2d513e46bbb07d859a6bac1f0413d6e9635e7ff0490859ba88887` |
+| 5 | `def` | [transportPrimitiveCore](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ObstructionActionNamespacedSourceEdition1.lean/declarations/transportprimitivecore.md) | 88 | `declaration-track:a9217455a3d5213af094b67fe941f7a02a9cb1fc87c28fb7e1b3c6ee0fd2d6ae` |
+| 6 | `theorem` | [primitive_core_transports_under_automorphism](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ObstructionActionNamespacedSourceEdition1.lean/declarations/primitive-core-transports-under-automorphism.md) | 144 | `result-track:4a46f58fdfce67a05040090428491cf8076d526fa7ef8fa5ee8bd62c3c6c7279` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

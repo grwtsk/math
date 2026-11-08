@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FieldTheoryAndPolynomials/AbsoluteGaloisGroupNamespaced.lean/index.md) · [Full source](../../../../FieldTheoryAndPolynomials/AbsoluteGaloisGroupNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/AbsoluteGaloisGroupNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/AbsoluteGaloisGroupNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [absoluteGaloisGroup](../../../../FieldTheoryAndPolynomials/AbsoluteGaloisGroupNamespaced.lean/declarations/absolutegaloisgroup.md) | 47 | `declaration-track:ccd64ba4765e25eb5e3720b9734e0af38398aedab279c3ce9418162eb70603a3` |
-| 2 | `instance` | [(anonymous)](../../../../FieldTheoryAndPolynomials/AbsoluteGaloisGroupNamespaced.lean/declarations/instance.md) | 51 | `declaration-track:5f8ab7ca5c009c5cffe7ff39aac5a652c55f7973b7988b9e77325b3fbca830e7` |
-| 3 | `instance` | [(anonymous)](../../../../FieldTheoryAndPolynomials/AbsoluteGaloisGroupNamespaced.lean/declarations/instance-source-edition-2.md) | 54 | `declaration-track:e64b4abbc4af70c5730ea918a69d5481d2a02ef1e208eb2bea9c1dfa6384b042` |
-| 4 | `instance` | [absoluteGaloisGroup.commutator_closure_isNormal](../../../../FieldTheoryAndPolynomials/AbsoluteGaloisGroupNamespaced.lean/declarations/absolutegaloisgroup-commutator-closure-isnormal.md) | 58 | `declaration-track:00da4a0c8d4ef2a8367c34380944c66ffbf8bde43429cc3d4db3bb1ac51c1bf0` |
-| 5 | `abbrev` | [absoluteGaloisGroupAbelianization](../../../../FieldTheoryAndPolynomials/AbsoluteGaloisGroupNamespaced.lean/declarations/absolutegaloisgroupabelianization.md) | 64 | `declaration-track:5f200a4a5091b5ce09fd1e0fb4b2b02a94686dcea4629e31dd40a8bad44e0c2e` |
+| 1 | `def` | [absoluteGaloisGroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/AbsoluteGaloisGroupNamespaced.lean/declarations/absolutegaloisgroup.md) | 47 | `declaration-track:ccd64ba4765e25eb5e3720b9734e0af38398aedab279c3ce9418162eb70603a3` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/AbsoluteGaloisGroupNamespaced.lean/declarations/instance.md) | 51 | `declaration-track:5f8ab7ca5c009c5cffe7ff39aac5a652c55f7973b7988b9e77325b3fbca830e7` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/AbsoluteGaloisGroupNamespaced.lean/declarations/instance-source-edition-2.md) | 54 | `declaration-track:e64b4abbc4af70c5730ea918a69d5481d2a02ef1e208eb2bea9c1dfa6384b042` |
+| 4 | `instance` | [absoluteGaloisGroup.commutator_closure_isNormal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/AbsoluteGaloisGroupNamespaced.lean/declarations/absolutegaloisgroup-commutator-closure-isnormal.md) | 58 | `declaration-track:00da4a0c8d4ef2a8367c34380944c66ffbf8bde43429cc3d4db3bb1ac51c1bf0` |
+| 5 | `abbrev` | [absoluteGaloisGroupAbelianization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/AbsoluteGaloisGroupNamespaced.lean/declarations/absolutegaloisgroupabelianization.md) | 64 | `declaration-track:5f200a4a5091b5ce09fd1e0fb4b2b02a94686dcea4629e31dd40a8bad44e0c2e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ContinuousMapIntervalNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/ContinuousMapIntervalNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousMapIntervalNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousMapIntervalNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,20 +58,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [IccInclusionLeft](../../../../GeneralTopology/ContinuousMapIntervalNamespaced.lean/declarations/iccinclusionleft.md) | 32 | `declaration-track:8609a9e8636d20f27e959801ed8538f1ecce4a54a23fe6fd2e42bbf0fe5012a8` |
-| 2 | `def` | [IccInclusionRight](../../../../GeneralTopology/ContinuousMapIntervalNamespaced.lean/declarations/iccinclusionright.md) | 36 | `declaration-track:365f08c4e13e297f530874ba379655e24fda0b3ddaa55a3eb0b68076ddd9b6fb` |
-| 3 | `def` | [projIccCM](../../../../GeneralTopology/ContinuousMapIntervalNamespaced.lean/declarations/projicccm.md) | 40 | `declaration-track:30c839263164268c0a11be3839a1c246f80ecb212f8c3800caba94155c723e1b` |
-| 4 | `def` | [IccExtendCM](../../../../GeneralTopology/ContinuousMapIntervalNamespaced.lean/declarations/iccextendcm.md) | 45 | `declaration-track:bfc3cccf0883e9d0bbc4659498cd00662ba36ee8f7e1aed7d31aa3f38dc018d4` |
-| 5 | `theorem` | [IccExtendCM_of_mem](../../../../GeneralTopology/ContinuousMapIntervalNamespaced.lean/declarations/iccextendcm-of-mem.md) | 50 | `result-track:16693d7d89a4a3bb3d5220138d85e95e3e4f37f9f62b4301aca5fc2bed02804f` |
-| 6 | `def` | [concat](../../../../GeneralTopology/ContinuousMapIntervalNamespaced.lean/declarations/concat.md) | 57 | `declaration-track:2be74f08a0e9803023eed48528597af83ffcaaafd327dd805701dd669d9a9430` |
-| 7 | `theorem` | [concat_comp_IccInclusionLeft](../../../../GeneralTopology/ContinuousMapIntervalNamespaced.lean/declarations/concat-comp-iccinclusionleft.md) | 69 | `result-track:fdaea5007b4561be9083da50bb9cf5137837ba457d7db1374e6a4120836333fd` |
-| 8 | `theorem` | [concat_comp_IccInclusionRight](../../../../GeneralTopology/ContinuousMapIntervalNamespaced.lean/declarations/concat-comp-iccinclusionright.md) | 74 | `result-track:33e519883ecc38b4abf72a1c8372ea19683c0b383eb6f9a23491d990e40a3ccc` |
-| 9 | `theorem` | [concat_left](../../../../GeneralTopology/ContinuousMapIntervalNamespaced.lean/declarations/concat-left.md) | 83 | `result-track:ee9ca3a40dbad4e20c8f0bbfb94550364829b4cb95d9c8a36114cb7fade8d29e` |
-| 10 | `theorem` | [concat_right](../../../../GeneralTopology/ContinuousMapIntervalNamespaced.lean/declarations/concat-right.md) | 89 | `result-track:24de1089b26d0fb80eb845d19a970ad1b1b8d1cce711992a59ab3ed927b910f0` |
-| 11 | `theorem` | [tendsto_concat](../../../../GeneralTopology/ContinuousMapIntervalNamespaced.lean/declarations/tendsto-concat.md) | 94 | `result-track:7d4bdd5cf9badc77f3bb331d0982f89a5cea896986f0165be1d74fb4067209a6` |
-| 12 | `def` | [concatCM](../../../../GeneralTopology/ContinuousMapIntervalNamespaced.lean/declarations/concatcm.md) | 129 | `declaration-track:5db10ce68089ac5b676db70f385e1d564aedcb70507eefe966e74bb95e9efc39` |
-| 13 | `theorem` | [concatCM_left](../../../../GeneralTopology/ContinuousMapIntervalNamespaced.lean/declarations/concatcm-left.md) | 142 | `result-track:c4ef6421ff9a41bd5f8137987880f1188f99ca675bd0834a37929de062cd5d5e` |
-| 14 | `theorem` | [concatCM_right](../../../../GeneralTopology/ContinuousMapIntervalNamespaced.lean/declarations/concatcm-right.md) | 148 | `result-track:d17bef28ecd4323edcced416457b581d0ee35d850dc057c03569345fda51ddc0` |
+| 1 | `def` | [IccInclusionLeft](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousMapIntervalNamespaced.lean/declarations/iccinclusionleft.md) | 32 | `declaration-track:8609a9e8636d20f27e959801ed8538f1ecce4a54a23fe6fd2e42bbf0fe5012a8` |
+| 2 | `def` | [IccInclusionRight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousMapIntervalNamespaced.lean/declarations/iccinclusionright.md) | 36 | `declaration-track:365f08c4e13e297f530874ba379655e24fda0b3ddaa55a3eb0b68076ddd9b6fb` |
+| 3 | `def` | [projIccCM](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousMapIntervalNamespaced.lean/declarations/projicccm.md) | 40 | `declaration-track:30c839263164268c0a11be3839a1c246f80ecb212f8c3800caba94155c723e1b` |
+| 4 | `def` | [IccExtendCM](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousMapIntervalNamespaced.lean/declarations/iccextendcm.md) | 45 | `declaration-track:bfc3cccf0883e9d0bbc4659498cd00662ba36ee8f7e1aed7d31aa3f38dc018d4` |
+| 5 | `theorem` | [IccExtendCM_of_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousMapIntervalNamespaced.lean/declarations/iccextendcm-of-mem.md) | 50 | `result-track:16693d7d89a4a3bb3d5220138d85e95e3e4f37f9f62b4301aca5fc2bed02804f` |
+| 6 | `def` | [concat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousMapIntervalNamespaced.lean/declarations/concat.md) | 57 | `declaration-track:2be74f08a0e9803023eed48528597af83ffcaaafd327dd805701dd669d9a9430` |
+| 7 | `theorem` | [concat_comp_IccInclusionLeft](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousMapIntervalNamespaced.lean/declarations/concat-comp-iccinclusionleft.md) | 69 | `result-track:fdaea5007b4561be9083da50bb9cf5137837ba457d7db1374e6a4120836333fd` |
+| 8 | `theorem` | [concat_comp_IccInclusionRight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousMapIntervalNamespaced.lean/declarations/concat-comp-iccinclusionright.md) | 74 | `result-track:33e519883ecc38b4abf72a1c8372ea19683c0b383eb6f9a23491d990e40a3ccc` |
+| 9 | `theorem` | [concat_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousMapIntervalNamespaced.lean/declarations/concat-left.md) | 83 | `result-track:ee9ca3a40dbad4e20c8f0bbfb94550364829b4cb95d9c8a36114cb7fade8d29e` |
+| 10 | `theorem` | [concat_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousMapIntervalNamespaced.lean/declarations/concat-right.md) | 89 | `result-track:24de1089b26d0fb80eb845d19a970ad1b1b8d1cce711992a59ab3ed927b910f0` |
+| 11 | `theorem` | [tendsto_concat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousMapIntervalNamespaced.lean/declarations/tendsto-concat.md) | 94 | `result-track:7d4bdd5cf9badc77f3bb331d0982f89a5cea896986f0165be1d74fb4067209a6` |
+| 12 | `def` | [concatCM](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousMapIntervalNamespaced.lean/declarations/concatcm.md) | 129 | `declaration-track:5db10ce68089ac5b676db70f385e1d564aedcb70507eefe966e74bb95e9efc39` |
+| 13 | `theorem` | [concatCM_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousMapIntervalNamespaced.lean/declarations/concatcm-left.md) | 142 | `result-track:c4ef6421ff9a41bd5f8137987880f1188f99ca675bd0834a37929de062cd5d5e` |
+| 14 | `theorem` | [concatCM_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousMapIntervalNamespaced.lean/declarations/concatcm-right.md) | 148 | `result-track:d17bef28ecd4323edcced416457b581d0ee35d850dc057c03569345fda51ddc0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

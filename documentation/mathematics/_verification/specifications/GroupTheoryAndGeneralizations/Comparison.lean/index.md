@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/Comparison.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/Comparison.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Comparison.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Comparison.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,19 +61,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [comparison](../../../../GroupTheoryAndGeneralizations/Comparison.lean/declarations/comparison-source-edition-2.md) | 31 | `declaration-track:56541d33ca3578db4a5bd75ed2b530e0f4ff273b5741e8061fd4064dd5032d34` |
-| 2 | `theorem` | [comparison_apply](../../../../GroupTheoryAndGeneralizations/Comparison.lean/declarations/comparison-apply.md) | 39 | `result-track:057b1af976983283d00bac9e9ef12ca17346dc7b9252b6a724296b1666fbc3ef` |
-| 3 | `def` | [certified](../../../../GroupTheoryAndGeneralizations/Comparison.lean/declarations/certified.md) | 51 | `declaration-track:03db900ac263d181be1a3048643ca3f817219b722047a86e4afe8201c03ba697` |
-| 4 | `structure` | [RepresentationFamily](../../../../GroupTheoryAndGeneralizations/Comparison.lean/declarations/representationfamily.md) | 75 | `declaration-track:19bc30b10e2e9aa4352f6e8bf8761f3166a6f931f97bab1a05c453dded3057a7` |
-| 5 | `def` | [comparison](../../../../GroupTheoryAndGeneralizations/Comparison.lean/declarations/comparison.md) | 100 | `declaration-track:3532e338f9501ae2928980228bb42c802db5b5225199b3271ff0e4f17434cb14` |
-| 6 | `theorem` | [comparison_apply](../../../../GroupTheoryAndGeneralizations/Comparison.lean/declarations/comparison-apply-source-edition-2.md) | 111 | `result-track:09fb2aa99674a812a8f9a4406744309ae295b94b6a0a8bc00906da57942b9bb5` |
-| 7 | `def` | [comparisonAt](../../../../GroupTheoryAndGeneralizations/Comparison.lean/declarations/comparisonat.md) | 122 | `declaration-track:e3ecf1ac0057804639a2b7d7d4c61fc3633a26e326048f5998746c1ca1f7cec7` |
-| 8 | `def` | [spec](../../../../GroupTheoryAndGeneralizations/Comparison.lean/declarations/spec.md) | 135 | `declaration-track:def0df4e8e027f0553da6dcdb01f8769f51c84e7b82e749f79e9403e869b6ac8` |
-| 9 | `theorem` | [spec_apply](../../../../GroupTheoryAndGeneralizations/Comparison.lean/declarations/spec-apply.md) | 143 | `result-track:0cd99d43afd6a8f94c93d2abec519eb6dd1733c9de232c06593ff67ea7ea477f` |
-| 10 | `def` | [bijectivityClaim](../../../../GroupTheoryAndGeneralizations/Comparison.lean/declarations/bijectivityclaim.md) | 152 | `declaration-track:b447af4617b256356525c70cc4080b15aead55ef5a6a3bb948191e8f86a31208` |
-| 11 | `def` | [conditionalCertificate](../../../../GroupTheoryAndGeneralizations/Comparison.lean/declarations/conditionalcertificate.md) | 163 | `declaration-track:59141a88e94d81387745ed98c990cca2c00de8b5ce388cb5bf54a56257d5c459` |
-| 12 | `def` | [certified](../../../../GroupTheoryAndGeneralizations/Comparison.lean/declarations/certified-source-edition-2.md) | 176 | `declaration-track:68a3ade9a86543b8d6af33e2412ba824554cd97890b06339084737d1fbee87fe` |
-| 13 | `theorem` | [certified_property](../../../../GroupTheoryAndGeneralizations/Comparison.lean/declarations/certified-property.md) | 190 | `result-track:11e1de8a324e3342b6e5fac44c0903d5fb4312868f101176323e9f750d5ac5da` |
+| 1 | `def` | [comparison](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Comparison.lean/declarations/comparison-source-edition-2.md) | 31 | `declaration-track:56541d33ca3578db4a5bd75ed2b530e0f4ff273b5741e8061fd4064dd5032d34` |
+| 2 | `theorem` | [comparison_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Comparison.lean/declarations/comparison-apply.md) | 39 | `result-track:057b1af976983283d00bac9e9ef12ca17346dc7b9252b6a724296b1666fbc3ef` |
+| 3 | `def` | [certified](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Comparison.lean/declarations/certified.md) | 51 | `declaration-track:03db900ac263d181be1a3048643ca3f817219b722047a86e4afe8201c03ba697` |
+| 4 | `structure` | [RepresentationFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Comparison.lean/declarations/representationfamily.md) | 75 | `declaration-track:19bc30b10e2e9aa4352f6e8bf8761f3166a6f931f97bab1a05c453dded3057a7` |
+| 5 | `def` | [comparison](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Comparison.lean/declarations/comparison.md) | 100 | `declaration-track:3532e338f9501ae2928980228bb42c802db5b5225199b3271ff0e4f17434cb14` |
+| 6 | `theorem` | [comparison_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Comparison.lean/declarations/comparison-apply-source-edition-2.md) | 111 | `result-track:09fb2aa99674a812a8f9a4406744309ae295b94b6a0a8bc00906da57942b9bb5` |
+| 7 | `def` | [comparisonAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Comparison.lean/declarations/comparisonat.md) | 122 | `declaration-track:e3ecf1ac0057804639a2b7d7d4c61fc3633a26e326048f5998746c1ca1f7cec7` |
+| 8 | `def` | [spec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Comparison.lean/declarations/spec.md) | 135 | `declaration-track:def0df4e8e027f0553da6dcdb01f8769f51c84e7b82e749f79e9403e869b6ac8` |
+| 9 | `theorem` | [spec_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Comparison.lean/declarations/spec-apply.md) | 143 | `result-track:0cd99d43afd6a8f94c93d2abec519eb6dd1733c9de232c06593ff67ea7ea477f` |
+| 10 | `def` | [bijectivityClaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Comparison.lean/declarations/bijectivityclaim.md) | 152 | `declaration-track:b447af4617b256356525c70cc4080b15aead55ef5a6a3bb948191e8f86a31208` |
+| 11 | `def` | [conditionalCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Comparison.lean/declarations/conditionalcertificate.md) | 163 | `declaration-track:59141a88e94d81387745ed98c990cca2c00de8b5ce388cb5bf54a56257d5c459` |
+| 12 | `def` | [certified](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Comparison.lean/declarations/certified-source-edition-2.md) | 176 | `declaration-track:68a3ade9a86543b8d6af33e2412ba824554cd97890b06339084737d1fbee87fe` |
+| 13 | `theorem` | [certified_property](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Comparison.lean/declarations/certified-property.md) | 190 | `result-track:11e1de8a324e3342b6e5fac44c0903d5fb4312868f101176323e9f750d5ac5da` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

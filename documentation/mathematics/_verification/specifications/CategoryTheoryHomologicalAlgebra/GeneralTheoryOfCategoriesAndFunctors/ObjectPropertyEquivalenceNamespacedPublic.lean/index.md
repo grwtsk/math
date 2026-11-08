@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ObjectPropertyEquivalenceNamespacedPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ObjectPropertyEquivalenceNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ObjectPropertyEquivalenceNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ObjectPropertyEquivalenceNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [essSurj_ιOfLE_iff](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ObjectPropertyEquivalenceNamespacedPublic.lean/declarations/esssurj-ofle-iff.md) | 37 | `result-track:b45099ccb45fcc90449c289f90b934e1fc49f64eadcbabb7bad0c18b3c4d559a` |
-| 2 | `lemma` | [isEquivalence_ιOfLE_iff](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ObjectPropertyEquivalenceNamespacedPublic.lean/declarations/isequivalence-ofle-iff.md) | 44 | `result-track:01305406732feece86e7c4c72f97cb83a127d97bb14ed4cff4cce604c7fae3d1` |
-| 3 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ObjectPropertyEquivalenceNamespacedPublic.lean/declarations/instance.md) | 48 | `declaration-track:5cb06b30cafa2a95e2ede89df4b36b0dd1dc1b819ae35be3682b084f9fb86301` |
-| 4 | `def` | [topEquivalence](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ObjectPropertyEquivalenceNamespacedPublic.lean/declarations/topequivalence.md) | 54 | `declaration-track:a437bc817b3e4112f23959f37ff9ffc71d373ba450539cc9964a42fce0af9bf6` |
-| 5 | `lemma` | [isEquivalence_ι](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ObjectPropertyEquivalenceNamespacedPublic.lean/declarations/isequivalence.md) | 61 | `result-track:da784b20fbb0bc27847f341463c43b48905fbc15728c9b3bc17222e50e8bac8b` |
-| 6 | `def` | [congrFullSubcategory](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ObjectPropertyEquivalenceNamespacedPublic.lean/declarations/congrfullsubcategory.md) | 76 | `declaration-track:9baf272d24631bb86226d5e4219caceb40ab249a085ead30cdbfef095d269a91` |
+| 1 | `lemma` | [essSurj_ιOfLE_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ObjectPropertyEquivalenceNamespacedPublic.lean/declarations/esssurj-ofle-iff.md) | 37 | `result-track:b45099ccb45fcc90449c289f90b934e1fc49f64eadcbabb7bad0c18b3c4d559a` |
+| 2 | `lemma` | [isEquivalence_ιOfLE_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ObjectPropertyEquivalenceNamespacedPublic.lean/declarations/isequivalence-ofle-iff.md) | 44 | `result-track:01305406732feece86e7c4c72f97cb83a127d97bb14ed4cff4cce604c7fae3d1` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ObjectPropertyEquivalenceNamespacedPublic.lean/declarations/instance.md) | 48 | `declaration-track:5cb06b30cafa2a95e2ede89df4b36b0dd1dc1b819ae35be3682b084f9fb86301` |
+| 4 | `def` | [topEquivalence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ObjectPropertyEquivalenceNamespacedPublic.lean/declarations/topequivalence.md) | 54 | `declaration-track:a437bc817b3e4112f23959f37ff9ffc71d373ba450539cc9964a42fce0af9bf6` |
+| 5 | `lemma` | [isEquivalence_ι](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ObjectPropertyEquivalenceNamespacedPublic.lean/declarations/isequivalence.md) | 61 | `result-track:da784b20fbb0bc27847f341463c43b48905fbc15728c9b3bc17222e50e8bac8b` |
+| 6 | `def` | [congrFullSubcategory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ObjectPropertyEquivalenceNamespacedPublic.lean/declarations/congrfullsubcategory.md) | 76 | `declaration-track:9baf272d24631bb86226d5e4219caceb40ab249a085ead30cdbfef095d269a91` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

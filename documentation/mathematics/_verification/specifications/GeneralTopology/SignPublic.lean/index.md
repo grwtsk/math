@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SignPublic.lean/index.md) · [Full source](../../../../GeneralTopology/SignPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SignPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SignPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../GeneralTopology/SignPublic.lean/declarations/instance-source-edition-2.md) | 20 | `declaration-track:d108348ea4884b5182a935feb068f8c6f87fc817bad8f4450d2e10ea87fca72d` |
-| 2 | `instance` | [(anonymous)](../../../../GeneralTopology/SignPublic.lean/declarations/instance.md) | 23 | `declaration-track:ab77379bf6b9db0f40d2d1e82a67aa92a11cc9e72952d0f95f12420a6c2cb43c` |
-| 3 | `theorem` | [continuousAt_sign_of_pos](../../../../GeneralTopology/SignPublic.lean/declarations/continuousat-sign-of-pos.md) | 32 | `result-track:ad548d2cc39825da78548d40afdafaec5d30f14cdfd5024f9fdf5e329a511fd3` |
-| 4 | `theorem` | [continuousAt_sign_of_neg](../../../../GeneralTopology/SignPublic.lean/declarations/continuousat-sign-of-neg.md) | 37 | `result-track:cafa72b8107350b0d3d8d560fae352384d14c039bbcd7b10ef1b1fac8e258c98` |
-| 5 | `theorem` | [continuousAt_sign_of_ne_zero](../../../../GeneralTopology/SignPublic.lean/declarations/continuousat-sign-of-ne-zero.md) | 48 | `result-track:8bf29731fb26863d3d0433cf8155d169495b6adfdb18525aa1015456b8d7d053` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SignPublic.lean/declarations/instance-source-edition-2.md) | 20 | `declaration-track:d108348ea4884b5182a935feb068f8c6f87fc817bad8f4450d2e10ea87fca72d` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SignPublic.lean/declarations/instance.md) | 23 | `declaration-track:ab77379bf6b9db0f40d2d1e82a67aa92a11cc9e72952d0f95f12420a6c2cb43c` |
+| 3 | `theorem` | [continuousAt_sign_of_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SignPublic.lean/declarations/continuousat-sign-of-pos.md) | 32 | `result-track:ad548d2cc39825da78548d40afdafaec5d30f14cdfd5024f9fdf5e329a511fd3` |
+| 4 | `theorem` | [continuousAt_sign_of_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SignPublic.lean/declarations/continuousat-sign-of-neg.md) | 37 | `result-track:cafa72b8107350b0d3d8d560fae352384d14c039bbcd7b10ef1b1fac8e258c98` |
+| 5 | `theorem` | [continuousAt_sign_of_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SignPublic.lean/declarations/continuousat-sign-of-ne-zero.md) | 48 | `result-track:8bf29731fb26863d3d0433cf8155d169495b6adfdb18525aa1015456b8d7d053` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

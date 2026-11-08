@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/PlainEdition1.lean/index.md) · [Full source](../../../../Combinatorics/PlainEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PlainEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PlainEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,27 +58,27 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Node](../../../../Combinatorics/PlainEdition1.lean/declarations/node.md) | 31 | `declaration-track:cd96007e01ddc2664a421707a104985e867aeff05f683c9501f999c0009926b7` |
-| 2 | `structure` | [Key](../../../../Combinatorics/PlainEdition1.lean/declarations/key.md) | 40 | `declaration-track:dc6fd52a78a33ebf4d752cd4e7cf48cb16559db1fff938c44e85bd37b02ce09a` |
-| 3 | `theorem` | [sorted](../../../../Combinatorics/PlainEdition1.lean/declarations/sorted.md) | 59 | `result-track:a1328dfd673d142e0169704a979fa75291619adb44ada062e761e3b6e265eff9` |
-| 4 | `theorem` | [target_reach](../../../../Combinatorics/PlainEdition1.lean/declarations/target-reach.md) | 65 | `result-track:28a392eb8b96ddf5a825eb69810e48ca2bcbb271a55da4fcbde99e274cd53d34` |
-| 5 | `theorem` | [open_active](../../../../Combinatorics/PlainEdition1.lean/declarations/open-active.md) | 75 | `result-track:1f5b71ac70bdb87f411fa8f3cce266c39e0aefac90a44e1469cfc9b0e815d296` |
-| 6 | `theorem` | [domain_edge](../../../../Combinatorics/PlainEdition1.lean/declarations/domain-edge.md) | 85 | `result-track:d84638be41f268853f050d0244137763718beeb74690f3da1687494152d028da` |
-| 7 | `def` | [target](../../../../Combinatorics/PlainEdition1.lean/declarations/target.md) | 92 | `declaration-track:9147a6901bd48f1a97907263c67436e33f8f849c3800d9aefaf5366ee6987d9d` |
-| 8 | `def` | [domainNode](../../../../Combinatorics/PlainEdition1.lean/declarations/domainnode.md) | 108 | `declaration-track:5642efa280303573cfa3f6c980c25dde59579f885940888dab93d0cd86369ea4` |
-| 9 | `theorem` | [target_profile](../../../../Combinatorics/PlainEdition1.lean/declarations/target-profile.md) | 120 | `result-track:11619d4eca9cfa7aa72fb3a1ee980dd0b4967133fe1818fd75a31035e91ea9b0` |
-| 10 | `theorem` | [domainNode_type](../../../../Combinatorics/PlainEdition1.lean/declarations/domainnode-type.md) | 124 | `result-track:c457d5c0e0ec34b8c333fb07440038115207aec2ac4f26d9c78e5e000e76eaad` |
-| 11 | `def` | [schema](../../../../Combinatorics/PlainEdition1.lean/declarations/schema.md) | 130 | `declaration-track:5c01d9b203e276392345abd1ff00650877be2fcdd232cdffe78d9eb695c391f1` |
-| 12 | `theorem` | [target_reach](../../../../Combinatorics/PlainEdition1.lean/declarations/target-reach-source-edition-2.md) | 141 | `result-track:a7693b05deffdfc6f2bf6c7c286b1e2224bba76c874437604c9deb73f633152d` |
-| 13 | `theorem` | [domain_eq](../../../../Combinatorics/PlainEdition1.lean/declarations/domain-eq.md) | 146 | `result-track:2b155b5d0f18462b41d89fb1b54037dab8fab6d592307f5116945229d3d1ea99` |
-| 14 | `theorem` | [dependency_path](../../../../Combinatorics/PlainEdition1.lean/declarations/dependency-path.md) | 157 | `result-track:2579d8e50ad5f27b09047613767365292933df9552d971345583c475bc7b50e0` |
-| 15 | `theorem` | [dependency_reach](../../../../Combinatorics/PlainEdition1.lean/declarations/dependency-reach.md) | 169 | `result-track:33ae42fa302a9223ba9ab1e5d7a07e3c69f6042bdb53e56e7334769a5b6a1b74` |
-| 16 | `theorem` | [dependency_negative](../../../../Combinatorics/PlainEdition1.lean/declarations/dependency-negative.md) | 175 | `result-track:9d54fb64fed88069431e2222d50e29777bf240b0a2e31b33368d31445756c2ff` |
-| 17 | `theorem` | [dependency_drop](../../../../Combinatorics/PlainEdition1.lean/declarations/dependency-drop.md) | 186 | `result-track:ff81be87fd35c335012d2c61375ef89a49935e90f18e632386699857707913fa` |
-| 18 | `def` | [measure](../../../../Combinatorics/PlainEdition1.lean/declarations/measure.md) | 217 | `declaration-track:e50c9881e2c43e01655c30b59138525e8ed9d308e2877fa8afe359b2bee335a4` |
-| 19 | `theorem` | [dependency_wellFounded](../../../../Combinatorics/PlainEdition1.lean/declarations/dependency-wellfounded.md) | 225 | `result-track:645058e169e2dc79eb9c6d90280d88e4a2fe3926f02778e43aad55763f6fcf8d` |
-| 20 | `def` | [Space](../../../../Combinatorics/PlainEdition1.lean/declarations/space.md) | 252 | `declaration-track:b8881e999a0831b06c23da4b667d2d658d48dc36ed510fd6a0b56572fe7f2f2e` |
-| 21 | `def` | [prefixEquiv](../../../../Combinatorics/PlainEdition1.lean/declarations/prefixequiv.md) | 258 | `declaration-track:9d6dd428d174fd84d18fe0697e5a2f5f7d9d51b562554a72b89077b3200effe2` |
+| 1 | `structure` | [Node](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PlainEdition1.lean/declarations/node.md) | 31 | `declaration-track:cd96007e01ddc2664a421707a104985e867aeff05f683c9501f999c0009926b7` |
+| 2 | `structure` | [Key](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PlainEdition1.lean/declarations/key.md) | 40 | `declaration-track:dc6fd52a78a33ebf4d752cd4e7cf48cb16559db1fff938c44e85bd37b02ce09a` |
+| 3 | `theorem` | [sorted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PlainEdition1.lean/declarations/sorted.md) | 59 | `result-track:a1328dfd673d142e0169704a979fa75291619adb44ada062e761e3b6e265eff9` |
+| 4 | `theorem` | [target_reach](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PlainEdition1.lean/declarations/target-reach.md) | 65 | `result-track:28a392eb8b96ddf5a825eb69810e48ca2bcbb271a55da4fcbde99e274cd53d34` |
+| 5 | `theorem` | [open_active](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PlainEdition1.lean/declarations/open-active.md) | 75 | `result-track:1f5b71ac70bdb87f411fa8f3cce266c39e0aefac90a44e1469cfc9b0e815d296` |
+| 6 | `theorem` | [domain_edge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PlainEdition1.lean/declarations/domain-edge.md) | 85 | `result-track:d84638be41f268853f050d0244137763718beeb74690f3da1687494152d028da` |
+| 7 | `def` | [target](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PlainEdition1.lean/declarations/target.md) | 92 | `declaration-track:9147a6901bd48f1a97907263c67436e33f8f849c3800d9aefaf5366ee6987d9d` |
+| 8 | `def` | [domainNode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PlainEdition1.lean/declarations/domainnode.md) | 108 | `declaration-track:5642efa280303573cfa3f6c980c25dde59579f885940888dab93d0cd86369ea4` |
+| 9 | `theorem` | [target_profile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PlainEdition1.lean/declarations/target-profile.md) | 120 | `result-track:11619d4eca9cfa7aa72fb3a1ee980dd0b4967133fe1818fd75a31035e91ea9b0` |
+| 10 | `theorem` | [domainNode_type](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PlainEdition1.lean/declarations/domainnode-type.md) | 124 | `result-track:c457d5c0e0ec34b8c333fb07440038115207aec2ac4f26d9c78e5e000e76eaad` |
+| 11 | `def` | [schema](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PlainEdition1.lean/declarations/schema.md) | 130 | `declaration-track:5c01d9b203e276392345abd1ff00650877be2fcdd232cdffe78d9eb695c391f1` |
+| 12 | `theorem` | [target_reach](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PlainEdition1.lean/declarations/target-reach-source-edition-2.md) | 141 | `result-track:a7693b05deffdfc6f2bf6c7c286b1e2224bba76c874437604c9deb73f633152d` |
+| 13 | `theorem` | [domain_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PlainEdition1.lean/declarations/domain-eq.md) | 146 | `result-track:2b155b5d0f18462b41d89fb1b54037dab8fab6d592307f5116945229d3d1ea99` |
+| 14 | `theorem` | [dependency_path](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PlainEdition1.lean/declarations/dependency-path.md) | 157 | `result-track:2579d8e50ad5f27b09047613767365292933df9552d971345583c475bc7b50e0` |
+| 15 | `theorem` | [dependency_reach](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PlainEdition1.lean/declarations/dependency-reach.md) | 169 | `result-track:33ae42fa302a9223ba9ab1e5d7a07e3c69f6042bdb53e56e7334769a5b6a1b74` |
+| 16 | `theorem` | [dependency_negative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PlainEdition1.lean/declarations/dependency-negative.md) | 175 | `result-track:9d54fb64fed88069431e2222d50e29777bf240b0a2e31b33368d31445756c2ff` |
+| 17 | `theorem` | [dependency_drop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PlainEdition1.lean/declarations/dependency-drop.md) | 186 | `result-track:ff81be87fd35c335012d2c61375ef89a49935e90f18e632386699857707913fa` |
+| 18 | `def` | [measure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PlainEdition1.lean/declarations/measure.md) | 217 | `declaration-track:e50c9881e2c43e01655c30b59138525e8ed9d308e2877fa8afe359b2bee335a4` |
+| 19 | `theorem` | [dependency_wellFounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PlainEdition1.lean/declarations/dependency-wellfounded.md) | 225 | `result-track:645058e169e2dc79eb9c6d90280d88e4a2fe3926f02778e43aad55763f6fcf8d` |
+| 20 | `def` | [Space](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PlainEdition1.lean/declarations/space.md) | 252 | `declaration-track:b8881e999a0831b06c23da4b667d2d658d48dc36ed510fd6a0b56572fe7f2f2e` |
+| 21 | `def` | [prefixEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PlainEdition1.lean/declarations/prefixequiv.md) | 258 | `declaration-track:9d6dd428d174fd84d18fe0697e5a2f5f7d9d51b562554a72b89077b3200effe2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

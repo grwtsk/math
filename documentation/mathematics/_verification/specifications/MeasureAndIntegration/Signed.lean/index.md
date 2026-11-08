@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/Signed.lean/index.md) · [Full source](../../../../MeasureAndIntegration/Signed.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Signed.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Signed.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [ceiling_signed](../../../../MeasureAndIntegration/Signed.lean/declarations/ceiling-signed.md) | 27 | `result-track:c19b49aad4a09791ef7f5364002d33e4d05d2c937c4ae9a7f2d23cc9f04b481e` |
-| 2 | `theorem` | [ceiling_nearCUE_signed](../../../../MeasureAndIntegration/Signed.lean/declarations/ceiling-nearcue-signed.md) | 54 | `result-track:f2e3d6c85573fd586ee9240ec0bb16e72ba1c1e4d663d65cecfed7cfc7d3d921` |
-| 3 | `def` | [edgeNonneg](../../../../MeasureAndIntegration/Signed.lean/declarations/edgenonneg.md) | 72 | `declaration-track:6a7bbc5cc0bcc4eb7206ff3838caaedd13bed92855bbe0133daf589886866f3a` |
-| 4 | `theorem` | [D1_nonneg_of_edgeNonneg](../../../../MeasureAndIntegration/Signed.lean/declarations/d1-nonneg-of-edgenonneg.md) | 75 | `result-track:af295f29db0422691d21af7cf6178b2b73ec77ff28161f23045a56ffb7aba95d` |
-| 5 | `theorem` | [LawN256_edge](../../../../MeasureAndIntegration/Signed.lean/declarations/lawn256-edge.md) | 90 | `result-track:993f50f1df40e221ca8fe4fc834f1ef97cf2f034d1b232e56d50b6ca51951428` |
-| 6 | `theorem` | [ceiling_law256_signed](../../../../MeasureAndIntegration/Signed.lean/declarations/ceiling-law256-signed.md) | 94 | `result-track:93a2d29ee1e5936bac2f4a6b69b09f5d8bfe0c5529a33c4c9b19364d7b7fb820` |
+| 1 | `theorem` | [ceiling_signed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Signed.lean/declarations/ceiling-signed.md) | 27 | `result-track:c19b49aad4a09791ef7f5364002d33e4d05d2c937c4ae9a7f2d23cc9f04b481e` |
+| 2 | `theorem` | [ceiling_nearCUE_signed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Signed.lean/declarations/ceiling-nearcue-signed.md) | 54 | `result-track:f2e3d6c85573fd586ee9240ec0bb16e72ba1c1e4d663d65cecfed7cfc7d3d921` |
+| 3 | `def` | [edgeNonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Signed.lean/declarations/edgenonneg.md) | 72 | `declaration-track:6a7bbc5cc0bcc4eb7206ff3838caaedd13bed92855bbe0133daf589886866f3a` |
+| 4 | `theorem` | [D1_nonneg_of_edgeNonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Signed.lean/declarations/d1-nonneg-of-edgenonneg.md) | 75 | `result-track:af295f29db0422691d21af7cf6178b2b73ec77ff28161f23045a56ffb7aba95d` |
+| 5 | `theorem` | [LawN256_edge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Signed.lean/declarations/lawn256-edge.md) | 90 | `result-track:993f50f1df40e221ca8fe4fc834f1ef97cf2f034d1b232e56d50b6ca51951428` |
+| 6 | `theorem` | [ceiling_law256_signed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Signed.lean/declarations/ceiling-law256-signed.md) | 94 | `result-track:93a2d29ee1e5936bac2f4a6b69b09f5d8bfe0c5529a33c4c9b19364d7b7fb820` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

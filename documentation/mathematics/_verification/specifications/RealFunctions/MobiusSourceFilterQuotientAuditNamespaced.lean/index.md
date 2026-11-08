@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/MobiusSourceFilterQuotientAuditNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/MobiusSourceFilterQuotientAuditNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/MobiusSourceFilterQuotientAuditNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/MobiusSourceFilterQuotientAuditNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [W](../../../../RealFunctions/MobiusSourceFilterQuotientAuditNamespaced.lean/declarations/w.md) | 29 | `declaration-track:15b3c5251414462940de384ebf8e79b857734adab2ef15ee435ecc88bf3e1e3b` |
-| 2 | `theorem` | [W_half_zero](../../../../RealFunctions/MobiusSourceFilterQuotientAuditNamespaced.lean/declarations/w-half-zero.md) | 32 | `result-track:adbdc099f6a7aeccbfe6f07adf7594b6666c17988b37eecda28f8a132f705a5b` |
-| 3 | `theorem` | [W_hasDerivAt_half](../../../../RealFunctions/MobiusSourceFilterQuotientAuditNamespaced.lean/declarations/w-hasderivat-half.md) | 36 | `result-track:b898c0ce35c405adb3db97778fa924ab4c56973ca265f9ebbcb3404b963b29d6` |
-| 4 | `theorem` | [W_deriv_half](../../../../RealFunctions/MobiusSourceFilterQuotientAuditNamespaced.lean/declarations/w-deriv-half.md) | 43 | `result-track:1c2aad9a0ff07b0b548149a13fbf4cc37f9143640b0e2e088f528d7dab0206d7` |
-| 5 | `theorem` | [W_deriv_half_ne_zero](../../../../RealFunctions/MobiusSourceFilterQuotientAuditNamespaced.lean/declarations/w-deriv-half-ne-zero.md) | 50 | `result-track:47eb6194b8cbe9f246d6f78ecb74c22baa546ad9ad042d796814258f1aa788fb` |
-| 6 | `theorem` | [W_removed_half_limit](../../../../RealFunctions/MobiusSourceFilterQuotientAuditNamespaced.lean/declarations/w-removed-half-limit.md) | 54 | `result-track:7e2da09c6080adfb67a2b0ca615033ffe9e94a43ab364354c97eb2eade149e47` |
-| 7 | `theorem` | [correctedNumerator_div_W_limit](../../../../RealFunctions/MobiusSourceFilterQuotientAuditNamespaced.lean/declarations/correctednumerator-div-w-limit.md) | 66 | `result-track:8e98ffc355d0165ec20e0a800d88966c7ade802e53625255357fa6e739c21d1e` |
+| 1 | `def` | [W](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/MobiusSourceFilterQuotientAuditNamespaced.lean/declarations/w.md) | 29 | `declaration-track:15b3c5251414462940de384ebf8e79b857734adab2ef15ee435ecc88bf3e1e3b` |
+| 2 | `theorem` | [W_half_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/MobiusSourceFilterQuotientAuditNamespaced.lean/declarations/w-half-zero.md) | 32 | `result-track:adbdc099f6a7aeccbfe6f07adf7594b6666c17988b37eecda28f8a132f705a5b` |
+| 3 | `theorem` | [W_hasDerivAt_half](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/MobiusSourceFilterQuotientAuditNamespaced.lean/declarations/w-hasderivat-half.md) | 36 | `result-track:b898c0ce35c405adb3db97778fa924ab4c56973ca265f9ebbcb3404b963b29d6` |
+| 4 | `theorem` | [W_deriv_half](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/MobiusSourceFilterQuotientAuditNamespaced.lean/declarations/w-deriv-half.md) | 43 | `result-track:1c2aad9a0ff07b0b548149a13fbf4cc37f9143640b0e2e088f528d7dab0206d7` |
+| 5 | `theorem` | [W_deriv_half_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/MobiusSourceFilterQuotientAuditNamespaced.lean/declarations/w-deriv-half-ne-zero.md) | 50 | `result-track:47eb6194b8cbe9f246d6f78ecb74c22baa546ad9ad042d796814258f1aa788fb` |
+| 6 | `theorem` | [W_removed_half_limit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/MobiusSourceFilterQuotientAuditNamespaced.lean/declarations/w-removed-half-limit.md) | 54 | `result-track:7e2da09c6080adfb67a2b0ca615033ffe9e94a43ab364354c97eb2eade149e47` |
+| 7 | `theorem` | [correctedNumerator_div_W_limit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/MobiusSourceFilterQuotientAuditNamespaced.lean/declarations/correctednumerator-div-w-limit.md) | 66 | `result-track:8e98ffc355d0165ec20e0a800d88966c7ade802e53625255357fa6e739c21d1e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

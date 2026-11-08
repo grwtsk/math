@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityReciprocalPrefix.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityReciprocalPrefix.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityReciprocalPrefix.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityReciprocalPrefix.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.ArithmeticFunctions.DensityCorrectionReciprocalMass`](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityCorrectionReciprocalMass.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.ArithmeticFunctions.MoebiusReciprocalPrefix`](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MoebiusReciprocalPrefix.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.ArithmeticFunctions.DensityCorrectionReciprocalMass`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityCorrectionReciprocalMass.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.ArithmeticFunctions.MoebiusReciprocalPrefix`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MoebiusReciprocalPrefix.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [densityReciprocalPrefix](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityReciprocalPrefix.lean/declarations/densityreciprocalprefix.md) | 20 | `declaration-track:b54a870fe2dde9760050aa41aa4c703f7de9a8484f259ed9590020019b3e3cfe` |
-| 2 | `theorem` | [density_coefficient_correction_divisors](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityReciprocalPrefix.lean/declarations/density-coefficient-correction-divisors.md) | 23 | `result-track:8b5d2a050882fbc268a4780c75687f5008dffd52428b2c7631f8eb8d248058cb` |
-| 3 | `theorem` | [density_reciprocal_correction_divisors](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityReciprocalPrefix.lean/declarations/density-reciprocal-correction-divisors.md) | 35 | `result-track:c454072971e3ec58d11a6064311991b2fa42222db38b007d3238ccaac79eea83` |
-| 4 | `theorem` | [mobius_reciprocal_prefix_all_real](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityReciprocalPrefix.lean/declarations/mobius-reciprocal-prefix-all-real.md) | 46 | `result-track:53e9819b8e040947e502e544879af64faf0a211089c155de46c9964f54611326` |
-| 5 | `theorem` | [density_reciprocal_prefix_zero](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityReciprocalPrefix.lean/declarations/density-reciprocal-prefix-zero.md) | 53 | `result-track:47f6058e3d8f69114b2e04d9f50b1633ac630aed0ce68feac0c1043edcf638d5` |
-| 6 | `theorem` | [density_reciprocal_prefix_return](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityReciprocalPrefix.lean/declarations/density-reciprocal-prefix-return.md) | 57 | `result-track:84114787ba2afef69036ce1441ff468ad8ecf6282aef7c41fb512726dc7eca7e` |
-| 7 | `theorem` | [density_reciprocal_prefix_abs_le_mass](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityReciprocalPrefix.lean/declarations/density-reciprocal-prefix-abs-le-mass.md) | 83 | `result-track:a57b5b29cf2dcae7a26ad571002d4be75ca5582bc3f2937eb2879a19f31249f1` |
+| 1 | `def` | [densityReciprocalPrefix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityReciprocalPrefix.lean/declarations/densityreciprocalprefix.md) | 20 | `declaration-track:b54a870fe2dde9760050aa41aa4c703f7de9a8484f259ed9590020019b3e3cfe` |
+| 2 | `theorem` | [density_coefficient_correction_divisors](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityReciprocalPrefix.lean/declarations/density-coefficient-correction-divisors.md) | 23 | `result-track:8b5d2a050882fbc268a4780c75687f5008dffd52428b2c7631f8eb8d248058cb` |
+| 3 | `theorem` | [density_reciprocal_correction_divisors](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityReciprocalPrefix.lean/declarations/density-reciprocal-correction-divisors.md) | 35 | `result-track:c454072971e3ec58d11a6064311991b2fa42222db38b007d3238ccaac79eea83` |
+| 4 | `theorem` | [mobius_reciprocal_prefix_all_real](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityReciprocalPrefix.lean/declarations/mobius-reciprocal-prefix-all-real.md) | 46 | `result-track:53e9819b8e040947e502e544879af64faf0a211089c155de46c9964f54611326` |
+| 5 | `theorem` | [density_reciprocal_prefix_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityReciprocalPrefix.lean/declarations/density-reciprocal-prefix-zero.md) | 53 | `result-track:47f6058e3d8f69114b2e04d9f50b1633ac630aed0ce68feac0c1043edcf638d5` |
+| 6 | `theorem` | [density_reciprocal_prefix_return](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityReciprocalPrefix.lean/declarations/density-reciprocal-prefix-return.md) | 57 | `result-track:84114787ba2afef69036ce1441ff468ad8ecf6282aef7c41fb512726dc7eca7e` |
+| 7 | `theorem` | [density_reciprocal_prefix_abs_le_mass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityReciprocalPrefix.lean/declarations/density-reciprocal-prefix-abs-le-mass.md) | 83 | `result-track:a57b5b29cf2dcae7a26ad571002d4be75ca5582bc3f2937eb2879a19f31249f1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

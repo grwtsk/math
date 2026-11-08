@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DivisorMainLiteralSnippet.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DivisorMainLiteralSnippet.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DivisorMainLiteralSnippet.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DivisorMainLiteralSnippet.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DivisorMainLiteralSnippet.lean/declarations/example-source-edition-3.md) | 8 | `declaration-track:5c05c949965cb59bc1a0e8ac2e7626f0c10449e221b6b0778a6211afa0be9f17` |
-| 2 | `example` | [(anonymous)](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DivisorMainLiteralSnippet.lean/declarations/example-source-edition-6.md) | 16 | `declaration-track:c0596e6e20da07453efeae1d15a1281f9b39eb29cc2577cd4624696b75c95fcd` |
-| 3 | `example` | [(anonymous)](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DivisorMainLiteralSnippet.lean/declarations/example-source-edition-4.md) | 22 | `declaration-track:671c7770988f77a0f17600bd480527723150cf25c61e8987359f9d79f74f33ef` |
-| 4 | `example` | [(anonymous)](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DivisorMainLiteralSnippet.lean/declarations/example-source-edition-2.md) | 26 | `declaration-track:500ffe1a435d990a5ccd9f2f794b3a40b2d48900717d58edd0b5ababf02df010` |
-| 5 | `example` | [(anonymous)](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DivisorMainLiteralSnippet.lean/declarations/example.md) | 29 | `declaration-track:13bb606a902205358e7d95604a5fee4e6139e04516c150939db81a6ce04a0245` |
-| 6 | `example` | [(anonymous)](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DivisorMainLiteralSnippet.lean/declarations/example-source-edition-5.md) | 33 | `declaration-track:a7e3a0a5191083d823db796ecbb43c3e3a46344c5e13d51216af48989f1115c5` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DivisorMainLiteralSnippet.lean/declarations/example-source-edition-3.md) | 8 | `declaration-track:5c05c949965cb59bc1a0e8ac2e7626f0c10449e221b6b0778a6211afa0be9f17` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DivisorMainLiteralSnippet.lean/declarations/example-source-edition-6.md) | 16 | `declaration-track:c0596e6e20da07453efeae1d15a1281f9b39eb29cc2577cd4624696b75c95fcd` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DivisorMainLiteralSnippet.lean/declarations/example-source-edition-4.md) | 22 | `declaration-track:671c7770988f77a0f17600bd480527723150cf25c61e8987359f9d79f74f33ef` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DivisorMainLiteralSnippet.lean/declarations/example-source-edition-2.md) | 26 | `declaration-track:500ffe1a435d990a5ccd9f2f794b3a40b2d48900717d58edd0b5ababf02df010` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DivisorMainLiteralSnippet.lean/declarations/example.md) | 29 | `declaration-track:13bb606a902205358e7d95604a5fee4e6139e04516c150939db81a6ce04a0245` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DivisorMainLiteralSnippet.lean/declarations/example-source-edition-5.md) | 33 | `declaration-track:a7e3a0a5191083d823db796ecbb43c3e3a46344c5e13d51216af48989f1115c5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

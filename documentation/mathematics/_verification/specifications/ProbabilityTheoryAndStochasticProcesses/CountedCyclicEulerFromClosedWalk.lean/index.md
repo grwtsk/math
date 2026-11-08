@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/CountedCyclicEulerFromClosedWalk.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/CountedCyclicEulerFromClosedWalk.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CountedCyclicEulerFromClosedWalk.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CountedCyclicEulerFromClosedWalk.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Combinatorics.DirectedEulerWalkCyclicIndex`](../../../../Combinatorics/DirectedEulerWalkCyclicIndex.lean/index.md) — import line 3; pinned internal source present.
-- [`GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.CountedCyclicEdgeSplicing`](../../../../ProbabilityTheoryAndStochasticProcesses/CountedCyclicEdgeSplicing.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Combinatorics.DirectedEulerWalkCyclicIndex`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DirectedEulerWalkCyclicIndex.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.CountedCyclicEdgeSplicing`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CountedCyclicEdgeSplicing.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Data.List.NodupEquivFin` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [countedBinaryEdgeWalk_length_eq_total](../../../../ProbabilityTheoryAndStochasticProcesses/CountedCyclicEulerFromClosedWalk.lean/declarations/countedbinaryedgewalk-length-eq-total.md) | 29 | `result-track:f9c8973cc44c9e98d062177237bc2c6bb7efea06ef827bba84f9bb466d0695a6` |
-| 2 | `def` | [countedCyclicEdgeOrderOfClosedWalk](../../../../ProbabilityTheoryAndStochasticProcesses/CountedCyclicEulerFromClosedWalk.lean/declarations/countedcyclicedgeorderofclosedwalk.md) | 48 | `declaration-track:837eb35f6472f985b57200675f65d21c3bd2703a85a2ccdf8696a13b238bba08` |
-| 3 | `theorem` | [countedCyclicEdgeOrderOfClosedWalk_apply](../../../../ProbabilityTheoryAndStochasticProcesses/CountedCyclicEulerFromClosedWalk.lean/declarations/countedcyclicedgeorderofclosedwalk-apply.md) | 58 | `result-track:6564cafe098008e14598e0c1598db24dfb5c7fc184af7acb0397b18452478cec` |
-| 4 | `def` | [countedCyclicEulerCertificateOfClosedWalk](../../../../ProbabilityTheoryAndStochasticProcesses/CountedCyclicEulerFromClosedWalk.lean/declarations/countedcycliceulercertificateofclosedwalk.md) | 70 | `declaration-track:914bcf362746b16c14d574fdb4205b26c41458debced5d15bc7251d6b76e39c7` |
-| 5 | `theorem` | [exists_cyclicBinaryWord_of_closed_exhaustive_walk](../../../../ProbabilityTheoryAndStochasticProcesses/CountedCyclicEulerFromClosedWalk.lean/declarations/exists-cyclicbinaryword-of-closed-exhaustive-walk.md) | 94 | `result-track:6f491d4027bba598aaff49c7cf7d2208bb62f2a5ebbde005fe8b4e5a8594dc36` |
-| 6 | `theorem` | [cyclicCountRealizable_of_closed_exhaustive_walk](../../../../ProbabilityTheoryAndStochasticProcesses/CountedCyclicEulerFromClosedWalk.lean/declarations/cycliccountrealizable-of-closed-exhaustive-walk.md) | 106 | `result-track:b035bc4092d3881026becbec5ee30b7ccbf16e3dc43fc501a745fca2f23e8d85` |
+| 1 | `theorem` | [countedBinaryEdgeWalk_length_eq_total](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CountedCyclicEulerFromClosedWalk.lean/declarations/countedbinaryedgewalk-length-eq-total.md) | 29 | `result-track:f9c8973cc44c9e98d062177237bc2c6bb7efea06ef827bba84f9bb466d0695a6` |
+| 2 | `def` | [countedCyclicEdgeOrderOfClosedWalk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CountedCyclicEulerFromClosedWalk.lean/declarations/countedcyclicedgeorderofclosedwalk.md) | 48 | `declaration-track:837eb35f6472f985b57200675f65d21c3bd2703a85a2ccdf8696a13b238bba08` |
+| 3 | `theorem` | [countedCyclicEdgeOrderOfClosedWalk_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CountedCyclicEulerFromClosedWalk.lean/declarations/countedcyclicedgeorderofclosedwalk-apply.md) | 58 | `result-track:6564cafe098008e14598e0c1598db24dfb5c7fc184af7acb0397b18452478cec` |
+| 4 | `def` | [countedCyclicEulerCertificateOfClosedWalk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CountedCyclicEulerFromClosedWalk.lean/declarations/countedcycliceulercertificateofclosedwalk.md) | 70 | `declaration-track:914bcf362746b16c14d574fdb4205b26c41458debced5d15bc7251d6b76e39c7` |
+| 5 | `theorem` | [exists_cyclicBinaryWord_of_closed_exhaustive_walk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CountedCyclicEulerFromClosedWalk.lean/declarations/exists-cyclicbinaryword-of-closed-exhaustive-walk.md) | 94 | `result-track:6f491d4027bba598aaff49c7cf7d2208bb62f2a5ebbde005fe8b4e5a8594dc36` |
+| 6 | `theorem` | [cyclicCountRealizable_of_closed_exhaustive_walk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CountedCyclicEulerFromClosedWalk.lean/declarations/cycliccountrealizable-of-closed-exhaustive-walk.md) | 106 | `result-track:b035bc4092d3881026becbec5ee30b7ccbf16e3dc43fc501a745fca2f23e8d85` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

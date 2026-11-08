@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/FinitePowerSum.lean/index.md) · [Full source](../../../../MeasureAndIntegration/FinitePowerSum.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FinitePowerSum.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FinitePowerSum.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sum_Icc_rpow_sub_one_le](../../../../MeasureAndIntegration/FinitePowerSum.lean/declarations/sum-icc-rpow-sub-one-le.md) | 24 | `result-track:69d8c1cb359fb14f6568e59dffeda194a2c4775eb3dd3c74c008d42e7f19bb8a` |
+| 1 | `theorem` | [sum_Icc_rpow_sub_one_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FinitePowerSum.lean/declarations/sum-icc-rpow-sub-one-le.md) | 24 | `result-track:69d8c1cb359fb14f6568e59dffeda194a2c4775eb3dd3c74c008d42e7f19bb8a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

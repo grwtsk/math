@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalFamily.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalFamily.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalFamily.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalFamily.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [OrdinalFamilySquareRootCertificate](../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalFamily.lean/declarations/ordinalfamilysquarerootcertificate.md) | 12 | `declaration-track:fd996033f67166096b634475c16276af801a121655bd80368a2876cdb90ac1d5` |
-| 2 | `theorem` | [ordinal_family_square_root_bound](../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalFamily.lean/declarations/ordinal-family-square-root-bound.md) | 21 | `result-track:ff310f38b289402d841e598aefe21ed7397d9b6ff9adee25693a849e737e9dd3` |
+| 1 | `structure` | [OrdinalFamilySquareRootCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalFamily.lean/declarations/ordinalfamilysquarerootcertificate.md) | 12 | `declaration-track:fd996033f67166096b634475c16276af801a121655bd80368a2876cdb90ac1d5` |
+| 2 | `theorem` | [ordinal_family_square_root_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalFamily.lean/declarations/ordinal-family-square-root-bound.md) | 21 | `result-track:ff310f38b289402d841e598aefe21ed7397d9b6ff9adee25693a849e737e9dd3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

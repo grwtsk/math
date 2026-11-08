@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegationConjunctionDisjunction.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegationConjunctionDisjunction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NegationConjunctionDisjunction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NegationConjunctionDisjunction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [Syntax And Evaluation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SyntaxAndEvaluation.lean/index.md) — import line 17; pinned internal source present.
+- [Syntax And Evaluation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SyntaxAndEvaluation.lean/index.md) — import line 17; pinned internal source present.
 - `Folder.Boolean.Semantics` — import line 19; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [nandNot](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegationConjunctionDisjunction.lean/declarations/nandnot.md) | 40 | `declaration-track:4cc462a9c333190d9dd69e921b7fb29275c8560de8430caa6aafdf5481dac126` |
-| 2 | `def` | [nandAnd](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegationConjunctionDisjunction.lean/declarations/nandand.md) | 43 | `declaration-track:735226d7a88633e1b04b20193bb6b3523bebbdc0c2e3162220ca0720a9497057` |
-| 3 | `def` | [nandOr](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegationConjunctionDisjunction.lean/declarations/nandor.md) | 46 | `declaration-track:515f6bd1030d85ee45092053bcbb32d375c1550423b2e3083f078175c0b60371` |
-| 4 | `theorem` | [eval_nandNot](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegationConjunctionDisjunction.lean/declarations/eval-nandnot.md) | 50 | `result-track:74316cba8e85851637dff5997f6324bfd1dfa4a843d70b88f6f8b2b3c1b9f8d3` |
-| 5 | `theorem` | [eval_nandAnd](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegationConjunctionDisjunction.lean/declarations/eval-nandand.md) | 55 | `result-track:7c0521572788c6f7bad0c650a9a55a7f9fe75ae7f08c387b37a4f9bf6fa163a8` |
-| 6 | `theorem` | [eval_nandOr](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegationConjunctionDisjunction.lean/declarations/eval-nandor.md) | 61 | `result-track:0f4ea0381337b2eeec155558e799c504431b2e46e411a6fa1f8ea3418c369be4` |
+| 1 | `def` | [nandNot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NegationConjunctionDisjunction.lean/declarations/nandnot.md) | 40 | `declaration-track:4cc462a9c333190d9dd69e921b7fb29275c8560de8430caa6aafdf5481dac126` |
+| 2 | `def` | [nandAnd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NegationConjunctionDisjunction.lean/declarations/nandand.md) | 43 | `declaration-track:735226d7a88633e1b04b20193bb6b3523bebbdc0c2e3162220ca0720a9497057` |
+| 3 | `def` | [nandOr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NegationConjunctionDisjunction.lean/declarations/nandor.md) | 46 | `declaration-track:515f6bd1030d85ee45092053bcbb32d375c1550423b2e3083f078175c0b60371` |
+| 4 | `theorem` | [eval_nandNot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NegationConjunctionDisjunction.lean/declarations/eval-nandnot.md) | 50 | `result-track:74316cba8e85851637dff5997f6324bfd1dfa4a843d70b88f6f8b2b3c1b9f8d3` |
+| 5 | `theorem` | [eval_nandAnd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NegationConjunctionDisjunction.lean/declarations/eval-nandand.md) | 55 | `result-track:7c0521572788c6f7bad0c650a9a55a7f9fe75ae7f08c387b37a4f9bf6fa163a8` |
+| 6 | `theorem` | [eval_nandOr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NegationConjunctionDisjunction.lean/declarations/eval-nandor.md) | 61 | `result-track:0f4ea0381337b2eeec155558e799c504431b2e46e411a6fa1f8ea3418c369be4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

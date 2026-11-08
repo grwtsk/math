@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/HolomorphicLinePort.lean/index.md) · [Full source](../../../../GeneralTopology/HolomorphicLinePort.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLinePort.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLinePort.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.HolomorphicLineSections`](../../../../GeneralTopology/HolomorphicLineSections.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.HolomorphicLineSections`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineSections.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,21 +57,21 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CompatibleOperators](../../../../GeneralTopology/HolomorphicLinePort.lean/declarations/compatibleoperators.md) | 26 | `declaration-track:20344e982a0b5c5cd9459f56788f326f3c22e994fcae72b968d3487b5610ced0` |
-| 2 | `def` | [descend](../../../../GeneralTopology/HolomorphicLinePort.lean/declarations/descend.md) | 38 | `declaration-track:f8617bc6bee1da7752e181d19629ade3992ec3a192cb8aab5fa31b3a05a84682` |
-| 3 | `theorem` | [coordinate_descend](../../../../GeneralTopology/HolomorphicLinePort.lean/declarations/coordinate-descend.md) | 43 | `result-track:81270503b5d29b5159f7c5707d9a7ea8f13f72a81219da67a992d7f2e6aa1ec5` |
-| 4 | `theorem` | [descend_unique](../../../../GeneralTopology/HolomorphicLinePort.lean/declarations/descend-unique.md) | 51 | `result-track:fa51ae1f6ebf3cbd68903c51528a35736d0b9781127ff8ec169bc8464e7418dc` |
-| 5 | `def` | [identity](../../../../GeneralTopology/HolomorphicLinePort.lean/declarations/identity.md) | 67 | `declaration-track:b1b031857dc4e5ca9a61d7e08c2db38fb6dca255a80508409b773b02d14d8f79` |
-| 6 | `def` | [comp](../../../../GeneralTopology/HolomorphicLinePort.lean/declarations/comp.md) | 72 | `declaration-track:5a32c59eab32caeb161476fe7f186e91794debaa44fe5dca450b1f51a6363e09` |
-| 7 | `theorem` | [descend_identity](../../../../GeneralTopology/HolomorphicLinePort.lean/declarations/descend-identity.md) | 82 | `result-track:89d3ad97c65a8f109867f20b4c2bdad12fb3292debcfc5e751812620b996f397` |
-| 8 | `theorem` | [descend_comp](../../../../GeneralTopology/HolomorphicLinePort.lean/declarations/descend-comp.md) | 86 | `result-track:369030f64bef44a283e2daafea53ef499c3a0fa24e6fdc250bfcf4e5546ddffb` |
-| 9 | `def` | [PreservesHolomorphy](../../../../GeneralTopology/HolomorphicLinePort.lean/declarations/preservesholomorphy.md) | 91 | `declaration-track:51b7a678edfac84a1a1a03a7fb54d160a5b94ab1dd17a6d159694b67f340652b` |
-| 10 | `def` | [mapSection](../../../../GeneralTopology/HolomorphicLinePort.lean/declarations/mapsection.md) | 96 | `declaration-track:cab89308e86f4de7b0110b967b2cbb826816a3be89712f03f83228a9097b713c` |
-| 11 | `theorem` | [mapSection_continuous](../../../../GeneralTopology/HolomorphicLinePort.lean/declarations/mapsection-continuous.md) | 110 | `result-track:7e73c44828706b82c8c6757ed468174ccc2d7538d6ec52d5dce5398c230447c4` |
-| 12 | `def` | [multiplication](../../../../GeneralTopology/HolomorphicLinePort.lean/declarations/multiplication.md) | 117 | `declaration-track:0229dee4a943d1d1634ed66b3fe4aef654bf4defd10c9fea531dc8da622ca5ab` |
-| 13 | `theorem` | [multiplication_preservesHolomorphy](../../../../GeneralTopology/HolomorphicLinePort.lean/declarations/multiplication-preservesholomorphy.md) | 126 | `result-track:bd4b5519da9baa25efffc216aa59f38fb930e837aafa2fcd8b4bb4b35588ea5b` |
-| 14 | `def` | [badLocalOp](../../../../GeneralTopology/HolomorphicLinePort.lean/declarations/badlocalop.md) | 139 | `declaration-track:45e660741f06b89c7bafded9b2efb135d25b8a81caa9f5b12d8cc0fd5ebc533a` |
-| 15 | `theorem` | [badLocalOp_no_descent](../../../../GeneralTopology/HolomorphicLinePort.lean/declarations/badlocalop-no-descent.md) | 143 | `result-track:07d7290f65d126f8d52e6542188bdefa4aaf0021b3f6c515433abb56180699ef` |
+| 1 | `structure` | [CompatibleOperators](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLinePort.lean/declarations/compatibleoperators.md) | 26 | `declaration-track:20344e982a0b5c5cd9459f56788f326f3c22e994fcae72b968d3487b5610ced0` |
+| 2 | `def` | [descend](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLinePort.lean/declarations/descend.md) | 38 | `declaration-track:f8617bc6bee1da7752e181d19629ade3992ec3a192cb8aab5fa31b3a05a84682` |
+| 3 | `theorem` | [coordinate_descend](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLinePort.lean/declarations/coordinate-descend.md) | 43 | `result-track:81270503b5d29b5159f7c5707d9a7ea8f13f72a81219da67a992d7f2e6aa1ec5` |
+| 4 | `theorem` | [descend_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLinePort.lean/declarations/descend-unique.md) | 51 | `result-track:fa51ae1f6ebf3cbd68903c51528a35736d0b9781127ff8ec169bc8464e7418dc` |
+| 5 | `def` | [identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLinePort.lean/declarations/identity.md) | 67 | `declaration-track:b1b031857dc4e5ca9a61d7e08c2db38fb6dca255a80508409b773b02d14d8f79` |
+| 6 | `def` | [comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLinePort.lean/declarations/comp.md) | 72 | `declaration-track:5a32c59eab32caeb161476fe7f186e91794debaa44fe5dca450b1f51a6363e09` |
+| 7 | `theorem` | [descend_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLinePort.lean/declarations/descend-identity.md) | 82 | `result-track:89d3ad97c65a8f109867f20b4c2bdad12fb3292debcfc5e751812620b996f397` |
+| 8 | `theorem` | [descend_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLinePort.lean/declarations/descend-comp.md) | 86 | `result-track:369030f64bef44a283e2daafea53ef499c3a0fa24e6fdc250bfcf4e5546ddffb` |
+| 9 | `def` | [PreservesHolomorphy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLinePort.lean/declarations/preservesholomorphy.md) | 91 | `declaration-track:51b7a678edfac84a1a1a03a7fb54d160a5b94ab1dd17a6d159694b67f340652b` |
+| 10 | `def` | [mapSection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLinePort.lean/declarations/mapsection.md) | 96 | `declaration-track:cab89308e86f4de7b0110b967b2cbb826816a3be89712f03f83228a9097b713c` |
+| 11 | `theorem` | [mapSection_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLinePort.lean/declarations/mapsection-continuous.md) | 110 | `result-track:7e73c44828706b82c8c6757ed468174ccc2d7538d6ec52d5dce5398c230447c4` |
+| 12 | `def` | [multiplication](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLinePort.lean/declarations/multiplication.md) | 117 | `declaration-track:0229dee4a943d1d1634ed66b3fe4aef654bf4defd10c9fea531dc8da622ca5ab` |
+| 13 | `theorem` | [multiplication_preservesHolomorphy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLinePort.lean/declarations/multiplication-preservesholomorphy.md) | 126 | `result-track:bd4b5519da9baa25efffc216aa59f38fb930e837aafa2fcd8b4bb4b35588ea5b` |
+| 14 | `def` | [badLocalOp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLinePort.lean/declarations/badlocalop.md) | 139 | `declaration-track:45e660741f06b89c7bafded9b2efb135d25b8a81caa9f5b12d8cc0fd5ebc533a` |
+| 15 | `theorem` | [badLocalOp_no_descent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLinePort.lean/declarations/badlocalop-no-descent.md) | 143 | `result-track:07d7290f65d126f8d52e6542188bdefa4aaf0021b3f6c515433abb56180699ef` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

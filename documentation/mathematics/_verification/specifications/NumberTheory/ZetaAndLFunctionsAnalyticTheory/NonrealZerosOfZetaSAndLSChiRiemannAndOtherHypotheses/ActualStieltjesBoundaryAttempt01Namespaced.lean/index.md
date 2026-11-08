@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ActualStieltjesBoundaryAttempt01Namespaced.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ActualStieltjesBoundaryAttempt01Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ActualStieltjesBoundaryAttempt01Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ActualStieltjesBoundaryAttempt01Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_termTSum_one](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ActualStieltjesBoundaryAttempt01Namespaced.lean/declarations/actual-termtsum-one.md) | 24 | `result-track:cfa8b27f528b278f4ce91e52e146e584f50f0ae313849bb6ca57d7216444155d` |
-| 2 | `theorem` | [actual_regular_zeta_real_right](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ActualStieltjesBoundaryAttempt01Namespaced.lean/declarations/actual-regular-zeta-real-right.md) | 28 | `result-track:53311796544530d2799d5b044e54d99619992880749b74ecdf46027e5e8d0156` |
-| 3 | `theorem` | [actual_real_regular_derivative_of_termTSum](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ActualStieltjesBoundaryAttempt01Namespaced.lean/declarations/actual-real-regular-derivative-of-termtsum.md) | 47 | `result-track:57477d2f679878070bf0cf049ddd15a14b9e80b816e2c30688c0160b081b47ee` |
-| 4 | `theorem` | [actual_regular_zeta_derivative_of_termTSum](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ActualStieltjesBoundaryAttempt01Namespaced.lean/declarations/actual-regular-zeta-derivative-of-termtsum.md) | 57 | `result-track:92dbfbd586fcfab305c0cdd3952f868c79e99c62c4ea83d09db811b86524c2ba` |
+| 1 | `theorem` | [actual_termTSum_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ActualStieltjesBoundaryAttempt01Namespaced.lean/declarations/actual-termtsum-one.md) | 24 | `result-track:cfa8b27f528b278f4ce91e52e146e584f50f0ae313849bb6ca57d7216444155d` |
+| 2 | `theorem` | [actual_regular_zeta_real_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ActualStieltjesBoundaryAttempt01Namespaced.lean/declarations/actual-regular-zeta-real-right.md) | 28 | `result-track:53311796544530d2799d5b044e54d99619992880749b74ecdf46027e5e8d0156` |
+| 3 | `theorem` | [actual_real_regular_derivative_of_termTSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ActualStieltjesBoundaryAttempt01Namespaced.lean/declarations/actual-real-regular-derivative-of-termtsum.md) | 47 | `result-track:57477d2f679878070bf0cf049ddd15a14b9e80b816e2c30688c0160b081b47ee` |
+| 4 | `theorem` | [actual_regular_zeta_derivative_of_termTSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ActualStieltjesBoundaryAttempt01Namespaced.lean/declarations/actual-regular-zeta-derivative-of-termtsum.md) | 57 | `result-track:92dbfbd586fcfab305c0cdd3952f868c79e99c62c4ea83d09db811b86524c2ba` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

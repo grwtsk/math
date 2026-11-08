@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/ChordNamespacedPublic.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/ChordNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ChordNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ChordNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [IsChord](../../../../../Combinatorics/GraphTheory/ChordNamespacedPublic.lean/declarations/ischord.md) | 43 | `declaration-track:0de0c392d287a469614f6221e8f7feba94ddc319a88fd3d41d3aa4fbff8140b6` |
-| 2 | `theorem` | [isChord_sym2Mk](../../../../../Combinatorics/GraphTheory/ChordNamespacedPublic.lean/declarations/ischord-sym2mk.md) | 47 | `result-track:9b8622739bb3faad963249487e94a75d2b7bdb629674ca1072bee36bca784997` |
-| 3 | `def` | [IsChordless](../../../../../Combinatorics/GraphTheory/ChordNamespacedPublic.lean/declarations/ischordless.md) | 53 | `declaration-track:55a09d2e1950ec69e3eaf06bc3ffc1045e7ceea65619954f96379eaf75d982cd` |
-| 4 | `theorem` | [isChordless_iff_forall_mem_edges](../../../../../Combinatorics/GraphTheory/ChordNamespacedPublic.lean/declarations/ischordless-iff-forall-mem-edges.md) | 56 | `result-track:d6fac975ff6db61adacd53be2374eb95e682ba5f1cd2edbf38e39009e56d7fe2` |
-| 5 | `theorem` | [IsChordless.mem_edges](../../../../../Combinatorics/GraphTheory/ChordNamespacedPublic.lean/declarations/ischordless-mem-edges.md) | 61 | `result-track:c238bc03bf9a9d6a91d3d433014fe320fcaa19c0cdab8c61b2a3b5e5099a096a` |
-| 6 | `theorem` | [Chord Namespaced Public](../../../../../Combinatorics/GraphTheory/ChordNamespacedPublic.lean/declarations/root-grwtsk-combinatoricsanddiscretemathematics-graphtheory-ischord-vari.md) | 65 | `result-track:ec9c18ae253d873881905d645ea55dee1e4431ed6bad930b3be7b0562407ec2c` |
+| 1 | `def` | [IsChord](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ChordNamespacedPublic.lean/declarations/ischord.md) | 43 | `declaration-track:0de0c392d287a469614f6221e8f7feba94ddc319a88fd3d41d3aa4fbff8140b6` |
+| 2 | `theorem` | [isChord_sym2Mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ChordNamespacedPublic.lean/declarations/ischord-sym2mk.md) | 47 | `result-track:9b8622739bb3faad963249487e94a75d2b7bdb629674ca1072bee36bca784997` |
+| 3 | `def` | [IsChordless](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ChordNamespacedPublic.lean/declarations/ischordless.md) | 53 | `declaration-track:55a09d2e1950ec69e3eaf06bc3ffc1045e7ceea65619954f96379eaf75d982cd` |
+| 4 | `theorem` | [isChordless_iff_forall_mem_edges](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ChordNamespacedPublic.lean/declarations/ischordless-iff-forall-mem-edges.md) | 56 | `result-track:d6fac975ff6db61adacd53be2374eb95e682ba5f1cd2edbf38e39009e56d7fe2` |
+| 5 | `theorem` | [IsChordless.mem_edges](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ChordNamespacedPublic.lean/declarations/ischordless-mem-edges.md) | 61 | `result-track:c238bc03bf9a9d6a91d3d433014fe320fcaa19c0cdab8c61b2a3b5e5099a096a` |
+| 6 | `theorem` | [Chord Namespaced Public](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ChordNamespacedPublic.lean/declarations/root-grwtsk-combinatoricsanddiscretemathematics-graphtheory-ischord-vari.md) | 65 | `result-track:ec9c18ae253d873881905d645ea55dee1e4431ed6bad930b3be7b0562407ec2c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ComplexSymmetryAndPositivity.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ComplexSymmetryAndPositivity.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ComplexSymmetryAndPositivity.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ComplexSymmetryAndPositivity.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,10 +46,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.ZeroSymmetry`](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/RiemannZeroSymmetry.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.ZeroExclusions`](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZeroExclusions.lean/index.md) — import line 2; pinned internal source present.
-- [`GRWTSK.Analysis.ComplexAnalysis.ReflectionCounterexamples`](../../../../../../FunctionsOfAComplexVariable/ReflectionCounterexamples.lean/index.md) — import line 3; pinned internal source present.
-- [`GRWTSK.Algebra.LinearAlgebra.MatrixTheory.HermitianCounterexamples`](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HermitianCounterexamples.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.ZeroSymmetry`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/RiemannZeroSymmetry.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.ZeroExclusions`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZeroExclusions.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.Analysis.ComplexAnalysis.ReflectionCounterexamples`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ReflectionCounterexamples.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.Algebra.LinearAlgebra.MatrixTheory.HermitianCounterexamples`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HermitianCounterexamples.lean/index.md) — import line 4; pinned internal source present.
 - `Lean` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -61,11 +61,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [use_trivial_zero_is_excluded](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ComplexSymmetryAndPositivity.lean/declarations/use-trivial-zero-is-excluded.md) | 8 | `result-track:2e837c201ed931fe4a9ee0004c02b7806c31a533194e26ee1bf4ab7464d5fd73` |
-| 2 | `theorem` | [use_pole_is_excluded](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ComplexSymmetryAndPositivity.lean/declarations/use-pole-is-excluded.md) | 9 | `result-track:1ad9aa6311c84cc440743e51aa4225d82d11f4c3504c40c5bcfb21b54328e1f0` |
-| 3 | `theorem` | [use_critical_reflection_is_not_gaussian_rotation](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ComplexSymmetryAndPositivity.lean/declarations/use-critical-reflection-is-not-gaussian-rotation.md) | 10 | `result-track:ccfea4c55a63e87a00183ead88d68ec01f143924044190a8069b7ac9153a8983` |
-| 4 | `theorem` | [use_hermitian_does_not_imply_positive_semidefinite](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ComplexSymmetryAndPositivity.lean/declarations/use-hermitian-does-not-imply-positive-semidefinite.md) | 11 | `result-track:2eb4b1fb654c72c694828f75fd56b0f8addabb5157213b9b6904aa20cef25110` |
-| 5 | `elab` | [(anonymous)](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ComplexSymmetryAndPositivity.lean/declarations/elab.md) | 13 | `declaration-track:529f6a721a8b93493e50cb8e4353084deb9355816d76be223f106d2dec22349c` |
+| 1 | `theorem` | [use_trivial_zero_is_excluded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ComplexSymmetryAndPositivity.lean/declarations/use-trivial-zero-is-excluded.md) | 8 | `result-track:2e837c201ed931fe4a9ee0004c02b7806c31a533194e26ee1bf4ab7464d5fd73` |
+| 2 | `theorem` | [use_pole_is_excluded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ComplexSymmetryAndPositivity.lean/declarations/use-pole-is-excluded.md) | 9 | `result-track:1ad9aa6311c84cc440743e51aa4225d82d11f4c3504c40c5bcfb21b54328e1f0` |
+| 3 | `theorem` | [use_critical_reflection_is_not_gaussian_rotation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ComplexSymmetryAndPositivity.lean/declarations/use-critical-reflection-is-not-gaussian-rotation.md) | 10 | `result-track:ccfea4c55a63e87a00183ead88d68ec01f143924044190a8069b7ac9153a8983` |
+| 4 | `theorem` | [use_hermitian_does_not_imply_positive_semidefinite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ComplexSymmetryAndPositivity.lean/declarations/use-hermitian-does-not-imply-positive-semidefinite.md) | 11 | `result-track:2eb4b1fb654c72c694828f75fd56b0f8addabb5157213b9b6904aa20cef25110` |
+| 5 | `elab` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ComplexSymmetryAndPositivity.lean/declarations/elab.md) | 13 | `declaration-track:529f6a721a8b93493e50cb8e4353084deb9355816d76be223f106d2dec22349c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/RootActualAnchoredStripRefinementEdition3.lean/index.md) · [Full source](../../../../MeasureAndIntegration/RootActualAnchoredStripRefinementEdition3.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RootActualAnchoredStripRefinementEdition3.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RootActualAnchoredStripRefinementEdition3.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [strip_orders](../../../../MeasureAndIntegration/RootActualAnchoredStripRefinementEdition3.lean/declarations/strip-orders.md) | 20 | `result-track:30ce9031152808d8bb88b3f077f5ca436b878cbda1e00dbbd38ad24c5e401912` |
-| 2 | `theorem` | [exp_half_integral](../../../../MeasureAndIntegration/RootActualAnchoredStripRefinementEdition3.lean/declarations/exp-half-integral.md) | 40 | `result-track:95a027f67fda31643b65e3de020292c9a801539b0dde1a0d3d95e2c3544ac962` |
-| 3 | `theorem` | [exp_neg_half_integral](../../../../MeasureAndIntegration/RootActualAnchoredStripRefinementEdition3.lean/declarations/exp-neg-half-integral.md) | 54 | `result-track:d729800164d6f8090bc7fd9ce730c9b29c526564d7132aaffacb17f75d5432ef` |
-| 4 | `theorem` | [actualAdjointTimePrimitive_anchored_abs_le](../../../../MeasureAndIntegration/RootActualAnchoredStripRefinementEdition3.lean/declarations/actualadjointtimeprimitive-anchored-abs-le.md) | 69 | `result-track:009bb56474592358aeb30dfd478396a91fd8e365e5727c4707bab6a8fb30a788` |
-| 5 | `theorem` | [actualAdjointTimePrimitive_strip_abs_le](../../../../MeasureAndIntegration/RootActualAnchoredStripRefinementEdition3.lean/declarations/actualadjointtimeprimitive-strip-abs-le.md) | 116 | `result-track:babd825cf73b1e56b2c9de82037f17572637823e4b6d94a35d79c9b0bc35b38f` |
-| 6 | `theorem` | [strip_density_abs_le](../../../../MeasureAndIntegration/RootActualAnchoredStripRefinementEdition3.lean/declarations/strip-density-abs-le.md) | 126 | `result-track:ccff48e3aa4f86dcb6db4c09d487f64601f610729b6bd0545abb6e8cdfc064c4` |
-| 7 | `theorem` | [actualLowerStripInterior_anchored_abs_le](../../../../MeasureAndIntegration/RootActualAnchoredStripRefinementEdition3.lean/declarations/actuallowerstripinterior-anchored-abs-le.md) | 157 | `result-track:bdc44f74ae7b27e7d5792a8b3cdf459ff5770fcb980651e33480cc706df2ed40` |
+| 1 | `theorem` | [strip_orders](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RootActualAnchoredStripRefinementEdition3.lean/declarations/strip-orders.md) | 20 | `result-track:30ce9031152808d8bb88b3f077f5ca436b878cbda1e00dbbd38ad24c5e401912` |
+| 2 | `theorem` | [exp_half_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RootActualAnchoredStripRefinementEdition3.lean/declarations/exp-half-integral.md) | 40 | `result-track:95a027f67fda31643b65e3de020292c9a801539b0dde1a0d3d95e2c3544ac962` |
+| 3 | `theorem` | [exp_neg_half_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RootActualAnchoredStripRefinementEdition3.lean/declarations/exp-neg-half-integral.md) | 54 | `result-track:d729800164d6f8090bc7fd9ce730c9b29c526564d7132aaffacb17f75d5432ef` |
+| 4 | `theorem` | [actualAdjointTimePrimitive_anchored_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RootActualAnchoredStripRefinementEdition3.lean/declarations/actualadjointtimeprimitive-anchored-abs-le.md) | 69 | `result-track:009bb56474592358aeb30dfd478396a91fd8e365e5727c4707bab6a8fb30a788` |
+| 5 | `theorem` | [actualAdjointTimePrimitive_strip_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RootActualAnchoredStripRefinementEdition3.lean/declarations/actualadjointtimeprimitive-strip-abs-le.md) | 116 | `result-track:babd825cf73b1e56b2c9de82037f17572637823e4b6d94a35d79c9b0bc35b38f` |
+| 6 | `theorem` | [strip_density_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RootActualAnchoredStripRefinementEdition3.lean/declarations/strip-density-abs-le.md) | 126 | `result-track:ccff48e3aa4f86dcb6db4c09d487f64601f610729b6bd0545abb6e8cdfc064c4` |
+| 7 | `theorem` | [actualLowerStripInterior_anchored_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RootActualAnchoredStripRefinementEdition3.lean/declarations/actuallowerstripinterior-anchored-abs-le.md) | 157 | `result-track:bdc44f74ae7b27e7d5792a8b3cdf459ff5770fcb980651e33480cc706df2ed40` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

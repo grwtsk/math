@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ScopedJudgmentNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ScopedJudgmentNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ScopedJudgmentNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ScopedJudgmentNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [Claim](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ScopedJudgmentNamespaced.lean/declarations/claim.md) | 88 | `declaration-track:14a9c7dbf5608b7c28f3d2863e31573e01857443afdd403c62fce7cf0d429c27` |
-| 2 | `structure` | [ScopedJudgment](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ScopedJudgmentNamespaced.lean/declarations/scopedjudgment.md) | 124 | `declaration-track:29cf867b18de150254c2d72049079ed8f0d8d06127062aa43a126e99e052440f` |
-| 3 | `def` | [At](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ScopedJudgmentNamespaced.lean/declarations/at.md) | 164 | `declaration-track:e9f93284d7a4375afa6a7de45d9edaf6e78aaa190bda6e98e1ed081aaee9a6b7` |
-| 4 | `theorem` | [localContext_at](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ScopedJudgmentNamespaced.lean/declarations/localcontext-at.md) | 199 | `result-track:edd2563ff79a42f3efb590dc20f8ec4fbafb7cfab36ab4f70a306161d5d034d7` |
+| 1 | `inductive` | [Claim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ScopedJudgmentNamespaced.lean/declarations/claim.md) | 88 | `declaration-track:14a9c7dbf5608b7c28f3d2863e31573e01857443afdd403c62fce7cf0d429c27` |
+| 2 | `structure` | [ScopedJudgment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ScopedJudgmentNamespaced.lean/declarations/scopedjudgment.md) | 124 | `declaration-track:29cf867b18de150254c2d72049079ed8f0d8d06127062aa43a126e99e052440f` |
+| 3 | `def` | [At](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ScopedJudgmentNamespaced.lean/declarations/at.md) | 164 | `declaration-track:e9f93284d7a4375afa6a7de45d9edaf6e78aaa190bda6e98e1ed081aaee9a6b7` |
+| 4 | `theorem` | [localContext_at](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ScopedJudgmentNamespaced.lean/declarations/localcontext-at.md) | 199 | `result-track:edd2563ff79a42f3efb590dc20f8ec4fbafb7cfab36ab4f70a306161d5d034d7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

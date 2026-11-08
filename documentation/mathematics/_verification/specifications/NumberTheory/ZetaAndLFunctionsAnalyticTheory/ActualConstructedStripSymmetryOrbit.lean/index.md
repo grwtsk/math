@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualConstructedStripSymmetryOrbit.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualConstructedStripSymmetryOrbit.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualConstructedStripSymmetryOrbit.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualConstructedStripSymmetryOrbit.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actualBilateral_reflected_eq](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualConstructedStripSymmetryOrbit.lean/declarations/actualbilateral-reflected-eq.md) | 19 | `result-track:8f058561b718085c9aa5b6311f8ab0daeab1a389466f50effdb3e4cb4f476bc7` |
-| 2 | `theorem` | [actualBilateral_conjugated_eq](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualConstructedStripSymmetryOrbit.lean/declarations/actualbilateral-conjugated-eq.md) | 26 | `result-track:7db1c9a0941b3cc0bb788a22850d1547e3166905fa01cf702e4204e4da09f86c` |
-| 3 | `def` | [actualConstructedStripOrbitWeight](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualConstructedStripSymmetryOrbit.lean/declarations/actualconstructedstriporbitweight.md) | 38 | `declaration-track:03fec5652e8e74aa8f608df04485b91cf13981a5bc9d11b61a83bab62873ec43` |
-| 4 | `theorem` | [actualConstructedStripOrbitWeight_real](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualConstructedStripSymmetryOrbit.lean/declarations/actualconstructedstriporbitweight-real.md) | 45 | `result-track:6b3a3aab94eb7d45a7c73406010ba83aa1580eceb9a0edfabc6624e1d6f1fc22` |
-| 5 | `theorem` | [actualConstructedStripOrbitWeight_below_beyond](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualConstructedStripSymmetryOrbit.lean/declarations/actualconstructedstriporbitweight-below-beyond.md) | 55 | `result-track:e6ea31f2b8beaad4212ba41d6a4746d0936d628a565f7465bf63b734dd07b3a4` |
+| 1 | `theorem` | [actualBilateral_reflected_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualConstructedStripSymmetryOrbit.lean/declarations/actualbilateral-reflected-eq.md) | 19 | `result-track:8f058561b718085c9aa5b6311f8ab0daeab1a389466f50effdb3e4cb4f476bc7` |
+| 2 | `theorem` | [actualBilateral_conjugated_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualConstructedStripSymmetryOrbit.lean/declarations/actualbilateral-conjugated-eq.md) | 26 | `result-track:7db1c9a0941b3cc0bb788a22850d1547e3166905fa01cf702e4204e4da09f86c` |
+| 3 | `def` | [actualConstructedStripOrbitWeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualConstructedStripSymmetryOrbit.lean/declarations/actualconstructedstriporbitweight.md) | 38 | `declaration-track:03fec5652e8e74aa8f608df04485b91cf13981a5bc9d11b61a83bab62873ec43` |
+| 4 | `theorem` | [actualConstructedStripOrbitWeight_real](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualConstructedStripSymmetryOrbit.lean/declarations/actualconstructedstriporbitweight-real.md) | 45 | `result-track:6b3a3aab94eb7d45a7c73406010ba83aa1580eceb9a0edfabc6624e1d6f1fc22` |
+| 5 | `theorem` | [actualConstructedStripOrbitWeight_below_beyond](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualConstructedStripSymmetryOrbit.lean/declarations/actualconstructedstriporbitweight-below-beyond.md) | 55 | `result-track:e6ea31f2b8beaad4212ba41d6a4746d0936d628a565f7465bf63b734dd07b3a4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

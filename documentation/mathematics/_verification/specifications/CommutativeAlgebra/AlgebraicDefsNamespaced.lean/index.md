@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/AlgebraicDefsNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/AlgebraicDefsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraicDefsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraicDefsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,17 +57,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [IsAlgebraic](../../../../CommutativeAlgebra/AlgebraicDefsNamespaced.lean/declarations/isalgebraic.md) | 49 | `declaration-track:7521cffa7ad024d7a8d475539419c467fca56313f997bbf87a79d001763d392d` |
-| 2 | `def` | [Transcendental](../../../../CommutativeAlgebra/AlgebraicDefsNamespaced.lean/declarations/transcendental.md) | 53 | `declaration-track:7897874ce9ba1d130114bc2f0c3336fdb8bb5e026cf1af7bf712b04157a90922` |
-| 3 | `theorem` | [transcendental_iff](../../../../CommutativeAlgebra/AlgebraicDefsNamespaced.lean/declarations/transcendental-iff.md) | 60 | `result-track:a638d087be2c7340b000478b7a61c81976622bc96243518dcd5c14ac08be7d30` |
-| 4 | `def` | [Subalgebra.IsAlgebraic](../../../../CommutativeAlgebra/AlgebraicDefsNamespaced.lean/declarations/subalgebra-isalgebraic.md) | 66 | `declaration-track:f938398f4b12e598cad636e8069351f1704c51aaf969d3b21d102cb16167334f` |
-| 5 | `class` | [Algebra.IsAlgebraic](../../../../CommutativeAlgebra/AlgebraicDefsNamespaced.lean/declarations/algebra-isalgebraic.md) | 73 | `declaration-track:36d422927c166136f7f42dce06901515da57b462d868d0fab226f7ebe6312e76` |
-| 6 | `class` | [Algebra.Transcendental](../../../../CommutativeAlgebra/AlgebraicDefsNamespaced.lean/declarations/algebra-transcendental.md) | 77 | `declaration-track:a7861f9bfb49dbe048d3a2187874e2efb97c50ddfb046b00909391a3b41b7f66` |
-| 7 | `lemma` | [Algebra.isAlgebraic_def](../../../../CommutativeAlgebra/AlgebraicDefsNamespaced.lean/declarations/algebra-isalgebraic-def.md) | 82 | `result-track:ebf07cdd0917e1707b42d549e99a4fa8db7db66c620708a14477c236ae0e7ec8` |
-| 8 | `lemma` | [Algebra.transcendental_def](../../../../CommutativeAlgebra/AlgebraicDefsNamespaced.lean/declarations/algebra-transcendental-def.md) | 85 | `result-track:5d0c2652990925a25d3352497f8bfb9be4efe9a767cf43eb5fd34d07c199ae20` |
-| 9 | `theorem` | [Algebra.transcendental_iff_not_isAlgebraic](../../../../CommutativeAlgebra/AlgebraicDefsNamespaced.lean/declarations/algebra-transcendental-iff-not-isalgebraic.md) | 88 | `result-track:579185869104ee8923a60fba0ed30a277bb63722f4e76d24284808d07f4e90b5` |
-| 10 | `theorem` | [Subalgebra.isAlgebraic_iff](../../../../CommutativeAlgebra/AlgebraicDefsNamespaced.lean/declarations/subalgebra-isalgebraic-iff.md) | 93 | `result-track:0da6ee7f3e08abe17ebf3382dcaf107b38d9184153b8b352e35baa1e3c9bfa9c` |
-| 11 | `theorem` | [Algebra.isAlgebraic_iff](../../../../CommutativeAlgebra/AlgebraicDefsNamespaced.lean/declarations/algebra-isalgebraic-iff.md) | 103 | `result-track:f16f02a3e866ddd41e0a99f93597dcccdeb4573d7a139f645da84eb5bc4911c9` |
+| 1 | `def` | [IsAlgebraic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraicDefsNamespaced.lean/declarations/isalgebraic.md) | 49 | `declaration-track:7521cffa7ad024d7a8d475539419c467fca56313f997bbf87a79d001763d392d` |
+| 2 | `def` | [Transcendental](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraicDefsNamespaced.lean/declarations/transcendental.md) | 53 | `declaration-track:7897874ce9ba1d130114bc2f0c3336fdb8bb5e026cf1af7bf712b04157a90922` |
+| 3 | `theorem` | [transcendental_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraicDefsNamespaced.lean/declarations/transcendental-iff.md) | 60 | `result-track:a638d087be2c7340b000478b7a61c81976622bc96243518dcd5c14ac08be7d30` |
+| 4 | `def` | [Subalgebra.IsAlgebraic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraicDefsNamespaced.lean/declarations/subalgebra-isalgebraic.md) | 66 | `declaration-track:f938398f4b12e598cad636e8069351f1704c51aaf969d3b21d102cb16167334f` |
+| 5 | `class` | [Algebra.IsAlgebraic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraicDefsNamespaced.lean/declarations/algebra-isalgebraic.md) | 73 | `declaration-track:36d422927c166136f7f42dce06901515da57b462d868d0fab226f7ebe6312e76` |
+| 6 | `class` | [Algebra.Transcendental](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraicDefsNamespaced.lean/declarations/algebra-transcendental.md) | 77 | `declaration-track:a7861f9bfb49dbe048d3a2187874e2efb97c50ddfb046b00909391a3b41b7f66` |
+| 7 | `lemma` | [Algebra.isAlgebraic_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraicDefsNamespaced.lean/declarations/algebra-isalgebraic-def.md) | 82 | `result-track:ebf07cdd0917e1707b42d549e99a4fa8db7db66c620708a14477c236ae0e7ec8` |
+| 8 | `lemma` | [Algebra.transcendental_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraicDefsNamespaced.lean/declarations/algebra-transcendental-def.md) | 85 | `result-track:5d0c2652990925a25d3352497f8bfb9be4efe9a767cf43eb5fd34d07c199ae20` |
+| 9 | `theorem` | [Algebra.transcendental_iff_not_isAlgebraic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraicDefsNamespaced.lean/declarations/algebra-transcendental-iff-not-isalgebraic.md) | 88 | `result-track:579185869104ee8923a60fba0ed30a277bb63722f4e76d24284808d07f4e90b5` |
+| 10 | `theorem` | [Subalgebra.isAlgebraic_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraicDefsNamespaced.lean/declarations/subalgebra-isalgebraic-iff.md) | 93 | `result-track:0da6ee7f3e08abe17ebf3382dcaf107b38d9184153b8b352e35baa1e3c9bfa9c` |
+| 11 | `theorem` | [Algebra.isAlgebraic_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AlgebraicDefsNamespaced.lean/declarations/algebra-isalgebraic-iff.md) | 103 | `result-track:f16f02a3e866ddd41e0a99f93597dcccdeb4573d7a139f645da84eb5bc4911c9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

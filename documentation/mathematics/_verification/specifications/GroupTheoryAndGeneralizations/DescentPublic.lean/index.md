@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/DescentPublic.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/DescentPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/DescentPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/DescentPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,12 +60,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Group.fg_of_descent](../../../../GroupTheoryAndGeneralizations/DescentPublic.lean/declarations/group-fg-of-descent.md) | 69 | `result-track:7caa2dd371a00b224db1f3981b05abe40c5355e5f0cc7b6feaead9905e465a19` |
-| 2 | `theorem` | [CommGroup.fg_of_descent](../../../../GroupTheoryAndGeneralizations/DescentPublic.lean/declarations/commgroup-fg-of-descent-source-edition-2.md) | 112 | `result-track:85ddf01fe7f2b2ada559885593d8e8109097efa6a787fd80d5af1618ceb81a19` |
-| 3 | `theorem` | [CommGroup.fg_of_descent'](../../../../GroupTheoryAndGeneralizations/DescentPublic.lean/declarations/commgroup-fg-of-descent.md) | 149 | `result-track:379d2fd8b62a0bfb26d318964665e51f681f4cec22925c36b8a3ba3341e3f102` |
-| 4 | `theorem` | [Monoid.finite_set_isOfFiniteOrder_of_descent](../../../../GroupTheoryAndGeneralizations/DescentPublic.lean/declarations/monoid-finite-set-isoffiniteorder-of-descent.md) | 170 | `result-track:a908aa7852f829ff5d88527aae7ae543699de00db9d5dc0a63258de1abc52d65` |
-| 5 | `theorem` | [CommGroup.finite_torsion_of_descent](../../../../GroupTheoryAndGeneralizations/DescentPublic.lean/declarations/commgroup-finite-torsion-of-descent-source-edition-2.md) | 195 | `result-track:454af1399d1bdabe0453b367a3798bb0bfa3881c57baccdbc7de57f46e8cbe65` |
-| 6 | `theorem` | [CommGroup.finite_torsion_of_descent'](../../../../GroupTheoryAndGeneralizations/DescentPublic.lean/declarations/commgroup-finite-torsion-of-descent.md) | 212 | `result-track:291a7bf63261b771cad03d856d5f641f0e101eba52c2b51c9790cb50dfdf1bf4` |
+| 1 | `theorem` | [Group.fg_of_descent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/DescentPublic.lean/declarations/group-fg-of-descent.md) | 69 | `result-track:7caa2dd371a00b224db1f3981b05abe40c5355e5f0cc7b6feaead9905e465a19` |
+| 2 | `theorem` | [CommGroup.fg_of_descent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/DescentPublic.lean/declarations/commgroup-fg-of-descent-source-edition-2.md) | 112 | `result-track:85ddf01fe7f2b2ada559885593d8e8109097efa6a787fd80d5af1618ceb81a19` |
+| 3 | `theorem` | [CommGroup.fg_of_descent'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/DescentPublic.lean/declarations/commgroup-fg-of-descent.md) | 149 | `result-track:379d2fd8b62a0bfb26d318964665e51f681f4cec22925c36b8a3ba3341e3f102` |
+| 4 | `theorem` | [Monoid.finite_set_isOfFiniteOrder_of_descent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/DescentPublic.lean/declarations/monoid-finite-set-isoffiniteorder-of-descent.md) | 170 | `result-track:a908aa7852f829ff5d88527aae7ae543699de00db9d5dc0a63258de1abc52d65` |
+| 5 | `theorem` | [CommGroup.finite_torsion_of_descent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/DescentPublic.lean/declarations/commgroup-finite-torsion-of-descent-source-edition-2.md) | 195 | `result-track:454af1399d1bdabe0453b367a3798bb0bfa3881c57baccdbc7de57f46e8cbe65` |
+| 6 | `theorem` | [CommGroup.finite_torsion_of_descent'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/DescentPublic.lean/declarations/commgroup-finite-torsion-of-descent.md) | 212 | `result-track:291a7bf63261b771cad03d856d5f641f0e101eba52c2b51c9790cb50dfdf1bf4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

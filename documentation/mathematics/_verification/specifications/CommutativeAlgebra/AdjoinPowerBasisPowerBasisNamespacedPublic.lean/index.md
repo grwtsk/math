@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/AdjoinPowerBasisPowerBasisNamespacedPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/AdjoinPowerBasisPowerBasisNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdjoinPowerBasisPowerBasisNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdjoinPowerBasisPowerBasisNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [adjoin.powerBasisAux](../../../../CommutativeAlgebra/AdjoinPowerBasisPowerBasisNamespacedPublic.lean/declarations/adjoin-powerbasisaux.md) | 37 | `declaration-track:1c1114e99c219aee8b1a9f5291e908b24209a0ea09f1ca5e49608a392cd0747e` |
-| 2 | `def` | [adjoin.powerBasis](../../../../CommutativeAlgebra/AdjoinPowerBasisPowerBasisNamespacedPublic.lean/declarations/adjoin-powerbasis.md) | 61 | `declaration-track:93cca44a4c20ec606df4652d5fbcc58418b6ccddf8176c5979dcc5103f673ac7` |
-| 3 | `def` | [Adjoin Power Basis Power Basis Namespaced Public](../../../../CommutativeAlgebra/AdjoinPowerBasisPowerBasisNamespacedPublic.lean/declarations/ofadjoineqtop.md) | 72 | `declaration-track:2ca9941549ab3612a7fdc6f96ac1f1fb4f61a93835e3f321fa7cba62b7d92f9c` |
-| 4 | `theorem` | [Adjoin Power Basis Power Basis Namespaced Public](../../../../CommutativeAlgebra/AdjoinPowerBasisPowerBasisNamespacedPublic.lean/declarations/ofadjoineqtop-gen.md) | 77 | `result-track:fa6d5e80aa04b711e5b860e68933727c57267bce4777f450ef4c7c6cc09f7dd2` |
-| 5 | `theorem` | [Adjoin Power Basis Power Basis Namespaced Public](../../../../CommutativeAlgebra/AdjoinPowerBasisPowerBasisNamespacedPublic.lean/declarations/ofadjoineqtop-dim.md) | 81 | `result-track:ea0d7018ef57693ec38497e04f02c31fb551def220306507a4bd241745c6a569` |
-| 6 | `theorem` | [repr_gen_pow_isIntegral](../../../../CommutativeAlgebra/AdjoinPowerBasisPowerBasisNamespacedPublic.lean/declarations/repr-gen-pow-isintegral.md) | 103 | `result-track:ba30f791e7cd8f52aa112d9c11b4f5634c380f3b6a2ec3bbc02df5f8b7d94a38` |
-| 7 | `theorem` | [repr_mul_isIntegral](../../../../CommutativeAlgebra/AdjoinPowerBasisPowerBasisNamespacedPublic.lean/declarations/repr-mul-isintegral.md) | 136 | `result-track:a6a79a7f266582de3ccf0aab365e99293d8410e9ef9ff91353171935b8aa06f9` |
-| 8 | `theorem` | [repr_pow_isIntegral](../../../../CommutativeAlgebra/AdjoinPowerBasisPowerBasisNamespacedPublic.lean/declarations/repr-pow-isintegral.md) | 154 | `result-track:b9b121e289b3a6c03b4130ec4cbe2edfdc025452826585866c6e1694a99e18e4` |
-| 9 | `theorem` | [toMatrix_isIntegral](../../../../CommutativeAlgebra/AdjoinPowerBasisPowerBasisNamespacedPublic.lean/declarations/tomatrix-isintegral.md) | 178 | `result-track:bf7522108af070b11a077e20ba2e5314666d3e14f71481c395c9e823cb616587` |
+| 1 | `def` | [adjoin.powerBasisAux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdjoinPowerBasisPowerBasisNamespacedPublic.lean/declarations/adjoin-powerbasisaux.md) | 37 | `declaration-track:1c1114e99c219aee8b1a9f5291e908b24209a0ea09f1ca5e49608a392cd0747e` |
+| 2 | `def` | [adjoin.powerBasis](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdjoinPowerBasisPowerBasisNamespacedPublic.lean/declarations/adjoin-powerbasis.md) | 61 | `declaration-track:93cca44a4c20ec606df4652d5fbcc58418b6ccddf8176c5979dcc5103f673ac7` |
+| 3 | `def` | [Adjoin Power Basis Power Basis Namespaced Public](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdjoinPowerBasisPowerBasisNamespacedPublic.lean/declarations/ofadjoineqtop.md) | 72 | `declaration-track:2ca9941549ab3612a7fdc6f96ac1f1fb4f61a93835e3f321fa7cba62b7d92f9c` |
+| 4 | `theorem` | [Adjoin Power Basis Power Basis Namespaced Public](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdjoinPowerBasisPowerBasisNamespacedPublic.lean/declarations/ofadjoineqtop-gen.md) | 77 | `result-track:fa6d5e80aa04b711e5b860e68933727c57267bce4777f450ef4c7c6cc09f7dd2` |
+| 5 | `theorem` | [Adjoin Power Basis Power Basis Namespaced Public](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdjoinPowerBasisPowerBasisNamespacedPublic.lean/declarations/ofadjoineqtop-dim.md) | 81 | `result-track:ea0d7018ef57693ec38497e04f02c31fb551def220306507a4bd241745c6a569` |
+| 6 | `theorem` | [repr_gen_pow_isIntegral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdjoinPowerBasisPowerBasisNamespacedPublic.lean/declarations/repr-gen-pow-isintegral.md) | 103 | `result-track:ba30f791e7cd8f52aa112d9c11b4f5634c380f3b6a2ec3bbc02df5f8b7d94a38` |
+| 7 | `theorem` | [repr_mul_isIntegral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdjoinPowerBasisPowerBasisNamespacedPublic.lean/declarations/repr-mul-isintegral.md) | 136 | `result-track:a6a79a7f266582de3ccf0aab365e99293d8410e9ef9ff91353171935b8aa06f9` |
+| 8 | `theorem` | [repr_pow_isIntegral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdjoinPowerBasisPowerBasisNamespacedPublic.lean/declarations/repr-pow-isintegral.md) | 154 | `result-track:b9b121e289b3a6c03b4130ec4cbe2edfdc025452826585866c6e1694a99e18e4` |
+| 9 | `theorem` | [toMatrix_isIntegral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AdjoinPowerBasisPowerBasisNamespacedPublic.lean/declarations/tomatrix-isintegral.md) | 178 | `result-track:bf7522108af070b11a077e20ba2e5314666d3e14f71481c395c9e823cb616587` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

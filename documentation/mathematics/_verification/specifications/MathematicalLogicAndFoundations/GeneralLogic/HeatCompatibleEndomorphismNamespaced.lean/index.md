@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/HeatCompatibleEndomorphismNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/HeatCompatibleEndomorphismNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/HeatCompatibleEndomorphismNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/HeatCompatibleEndomorphismNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CrystalEndomorphism](../../../../../MathematicalLogicAndFoundations/GeneralLogic/HeatCompatibleEndomorphismNamespaced.lean/declarations/crystalendomorphism.md) | 26 | `declaration-track:1ef1f865390f9f886d9c2989a48bbf03c2058949721b055a36a3cdb9a93b58bb` |
-| 2 | `structure` | [HeatCompatibleEndomorphism](../../../../../MathematicalLogicAndFoundations/GeneralLogic/HeatCompatibleEndomorphismNamespaced.lean/declarations/heatcompatibleendomorphism.md) | 32 | `declaration-track:ae656fc69756021fa5641213e5600d5550dc5d98f74103bb1859bf7e3527f556` |
-| 3 | `theorem` | [heat_compatible_commutes](../../../../../MathematicalLogicAndFoundations/GeneralLogic/HeatCompatibleEndomorphismNamespaced.lean/declarations/heat-compatible-commutes.md) | 46 | `result-track:66fd4f463adc5ee24fd2705e1631942d08f86183009d431358877644fe893932` |
-| 4 | `theorem` | [heat_compatible_preserves_horizontal](../../../../../MathematicalLogicAndFoundations/GeneralLogic/HeatCompatibleEndomorphismNamespaced.lean/declarations/heat-compatible-preserves-horizontal.md) | 55 | `result-track:151db93154881e085d27611fb63612d1077ccde4ff2bcabb83e5f4345d13331c` |
+| 1 | `structure` | [CrystalEndomorphism](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/HeatCompatibleEndomorphismNamespaced.lean/declarations/crystalendomorphism.md) | 26 | `declaration-track:1ef1f865390f9f886d9c2989a48bbf03c2058949721b055a36a3cdb9a93b58bb` |
+| 2 | `structure` | [HeatCompatibleEndomorphism](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/HeatCompatibleEndomorphismNamespaced.lean/declarations/heatcompatibleendomorphism.md) | 32 | `declaration-track:ae656fc69756021fa5641213e5600d5550dc5d98f74103bb1859bf7e3527f556` |
+| 3 | `theorem` | [heat_compatible_commutes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/HeatCompatibleEndomorphismNamespaced.lean/declarations/heat-compatible-commutes.md) | 46 | `result-track:66fd4f463adc5ee24fd2705e1631942d08f86183009d431358877644fe893932` |
+| 4 | `theorem` | [heat_compatible_preserves_horizontal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/HeatCompatibleEndomorphismNamespaced.lean/declarations/heat-compatible-preserves-horizontal.md) | 55 | `result-track:151db93154881e085d27611fb63612d1077ccde4ff2bcabb83e5f4345d13331c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

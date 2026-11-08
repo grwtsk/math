@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DefinitionsNamespaced.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DefinitionsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DefinitionsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DefinitionsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [NontrivialZetaZero](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DefinitionsNamespaced.lean/declarations/nontrivialzetazero.md) | 22 | `declaration-track:dec8d60b56756ddb764df433fb3d681a95f912fc608ad52b5ac3f4d8d2b352b5` |
-| 2 | `def` | [zeroConjugate](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DefinitionsNamespaced.lean/declarations/zeroconjugate.md) | 26 | `declaration-track:8f567166dfdf6f8d3ea47d26997942d533a0bfdfe79b67161e0d6dbd4c8cabac` |
-| 3 | `def` | [zeroReflect](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DefinitionsNamespaced.lean/declarations/zeroreflect.md) | 29 | `declaration-track:924463524171194bfdc82a76bb6ee44ca39bc3b34e38b58703bc16a74006d76e` |
-| 4 | `def` | [criticalReflection](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DefinitionsNamespaced.lean/declarations/criticalreflection.md) | 32 | `declaration-track:b4b7f73fcbe84a5b431fe0ba6a2dbc600eb78a3f87126957d9acd0e5585c0a1c` |
-| 5 | `def` | [rhDefect](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DefinitionsNamespaced.lean/declarations/rhdefect.md) | 35 | `declaration-track:23845e71f8658f4717f62f01fc180a53a2cdf8829cb8d56581067b5d5b7715a8` |
+| 1 | `def` | [NontrivialZetaZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DefinitionsNamespaced.lean/declarations/nontrivialzetazero.md) | 22 | `declaration-track:dec8d60b56756ddb764df433fb3d681a95f912fc608ad52b5ac3f4d8d2b352b5` |
+| 2 | `def` | [zeroConjugate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DefinitionsNamespaced.lean/declarations/zeroconjugate.md) | 26 | `declaration-track:8f567166dfdf6f8d3ea47d26997942d533a0bfdfe79b67161e0d6dbd4c8cabac` |
+| 3 | `def` | [zeroReflect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DefinitionsNamespaced.lean/declarations/zeroreflect.md) | 29 | `declaration-track:924463524171194bfdc82a76bb6ee44ca39bc3b34e38b58703bc16a74006d76e` |
+| 4 | `def` | [criticalReflection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DefinitionsNamespaced.lean/declarations/criticalreflection.md) | 32 | `declaration-track:b4b7f73fcbe84a5b431fe0ba6a2dbc600eb78a3f87126957d9acd0e5585c0a1c` |
+| 5 | `def` | [rhDefect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DefinitionsNamespaced.lean/declarations/rhdefect.md) | 35 | `declaration-track:23845e71f8658f4717f62f01fc180a53a2cdf8829cb8d56581067b5d5b7715a8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

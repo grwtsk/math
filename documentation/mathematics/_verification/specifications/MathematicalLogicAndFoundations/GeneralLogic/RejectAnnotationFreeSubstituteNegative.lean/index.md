@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RejectAnnotationFreeSubstituteNegative.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RejectAnnotationFreeSubstituteNegative.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RejectAnnotationFreeSubstituteNegative.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RejectAnnotationFreeSubstituteNegative.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Interfaces.GraphHodgePortCore`](../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GraphHodgePortCore.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Interfaces.GraphHodgePortCore`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GraphHodgePortCore.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [AnnotationFreeBeta](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RejectAnnotationFreeSubstituteNegative.lean/declarations/annotationfreebeta.md) | 5 | `declaration-track:5291f306e6922bd7bbc04d65032e834c280df2b2042ebe929793eccf64c055b7` |
-| 2 | `def` | [annotationRedex](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RejectAnnotationFreeSubstituteNegative.lean/declarations/annotationredex.md) | 11 | `declaration-track:3c9ed53e77d08bfbcbde568414e729be4f132293aa2b1025b7c033d89c51abe1` |
-| 3 | `def` | [lambdaWithRedex](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RejectAnnotationFreeSubstituteNegative.lean/declarations/lambdawithredex.md) | 12 | `declaration-track:0e5f248a273750960ed75c594ba6031cc947b092284ce089ddcf659b41f45255` |
-| 4 | `def` | [lambdaReduced](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RejectAnnotationFreeSubstituteNegative.lean/declarations/lambdareduced.md) | 13 | `declaration-track:4d67239e96aba6b0794253d309ed60779ffc1c349435c0619026de4eb84388a3` |
-| 5 | `def` | [productWithRedex](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RejectAnnotationFreeSubstituteNegative.lean/declarations/productwithredex.md) | 14 | `declaration-track:67a00f4cb90d6853bf01821a6e4df9dd68f9708f353368005839299bb6ae6ece` |
-| 6 | `def` | [productReduced](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RejectAnnotationFreeSubstituteNegative.lean/declarations/productreduced.md) | 15 | `declaration-track:8c1ab34cc771ecd97b8996be1f01545783b04182aae5a294f4cfec0fa071c8a5` |
-| 7 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RejectAnnotationFreeSubstituteNegative.lean/declarations/example.md) | 17 | `declaration-track:c8059b362971f484eec3a74048d59825ba08e58383b30f0accb3da7d59190aff` |
+| 1 | `inductive` | [AnnotationFreeBeta](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RejectAnnotationFreeSubstituteNegative.lean/declarations/annotationfreebeta.md) | 5 | `declaration-track:5291f306e6922bd7bbc04d65032e834c280df2b2042ebe929793eccf64c055b7` |
+| 2 | `def` | [annotationRedex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RejectAnnotationFreeSubstituteNegative.lean/declarations/annotationredex.md) | 11 | `declaration-track:3c9ed53e77d08bfbcbde568414e729be4f132293aa2b1025b7c033d89c51abe1` |
+| 3 | `def` | [lambdaWithRedex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RejectAnnotationFreeSubstituteNegative.lean/declarations/lambdawithredex.md) | 12 | `declaration-track:0e5f248a273750960ed75c594ba6031cc947b092284ce089ddcf659b41f45255` |
+| 4 | `def` | [lambdaReduced](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RejectAnnotationFreeSubstituteNegative.lean/declarations/lambdareduced.md) | 13 | `declaration-track:4d67239e96aba6b0794253d309ed60779ffc1c349435c0619026de4eb84388a3` |
+| 5 | `def` | [productWithRedex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RejectAnnotationFreeSubstituteNegative.lean/declarations/productwithredex.md) | 14 | `declaration-track:67a00f4cb90d6853bf01821a6e4df9dd68f9708f353368005839299bb6ae6ece` |
+| 6 | `def` | [productReduced](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RejectAnnotationFreeSubstituteNegative.lean/declarations/productreduced.md) | 15 | `declaration-track:8c1ab34cc771ecd97b8996be1f01545783b04182aae5a294f4cfec0fa071c8a5` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RejectAnnotationFreeSubstituteNegative.lean/declarations/example.md) | 17 | `declaration-track:c8059b362971f484eec3a74048d59825ba08e58383b30f0accb3da7d59190aff` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

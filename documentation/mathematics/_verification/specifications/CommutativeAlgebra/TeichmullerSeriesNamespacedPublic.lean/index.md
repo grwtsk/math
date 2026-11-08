@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/TeichmullerSeriesNamespacedPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/TeichmullerSeriesNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TeichmullerSeriesNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TeichmullerSeriesNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sum_coeff_eq_coeff_sum](../../../../CommutativeAlgebra/TeichmullerSeriesNamespacedPublic.lean/declarations/sum-coeff-eq-coeff-sum.md) | 51 | `result-track:0750b7e95e298b43d053b9d7b0c40c6e74d6fab84f823213f3df26957e3ca94d` |
-| 2 | `theorem` | [teichmuller_mul_pow_coeff](../../../../CommutativeAlgebra/TeichmullerSeriesNamespacedPublic.lean/declarations/teichmuller-mul-pow-coeff.md) | 81 | `result-track:d03e4a357d38c1890dab454ead7cf3c4c8a74fc7c474bbde557e26d7e42953e8` |
-| 3 | `theorem` | [teichmuller_mul_pow_coeff_of_ne](../../../../CommutativeAlgebra/TeichmullerSeriesNamespacedPublic.lean/declarations/teichmuller-mul-pow-coeff-of-ne.md) | 85 | `result-track:25f5b2b104319ea67d1a7ff341de7409fa68c8665f1677cbd11ce5d774694511` |
-| 4 | `theorem` | [dvd_sub_sum_teichmuller_iterateFrobeniusEquiv_coeff](../../../../CommutativeAlgebra/TeichmullerSeriesNamespacedPublic.lean/declarations/dvd-sub-sum-teichmuller-iteratefrobeniusequiv-coeff.md) | 101 | `result-track:7ec59fbc43481868b41cf9bbb993d24048f0cd5a4568f7d74b689af2d5d8b783` |
-| 5 | `theorem` | [eq_of_apply_teichmuller_eq](../../../../CommutativeAlgebra/TeichmullerSeriesNamespacedPublic.lean/declarations/eq-of-apply-teichmuller-eq.md) | 126 | `result-track:186f3186e56a4e9d27b20bd175ab3fab040d4fbeb88bec234adb510aa3e79a5b` |
+| 1 | `theorem` | [sum_coeff_eq_coeff_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TeichmullerSeriesNamespacedPublic.lean/declarations/sum-coeff-eq-coeff-sum.md) | 51 | `result-track:0750b7e95e298b43d053b9d7b0c40c6e74d6fab84f823213f3df26957e3ca94d` |
+| 2 | `theorem` | [teichmuller_mul_pow_coeff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TeichmullerSeriesNamespacedPublic.lean/declarations/teichmuller-mul-pow-coeff.md) | 81 | `result-track:d03e4a357d38c1890dab454ead7cf3c4c8a74fc7c474bbde557e26d7e42953e8` |
+| 3 | `theorem` | [teichmuller_mul_pow_coeff_of_ne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TeichmullerSeriesNamespacedPublic.lean/declarations/teichmuller-mul-pow-coeff-of-ne.md) | 85 | `result-track:25f5b2b104319ea67d1a7ff341de7409fa68c8665f1677cbd11ce5d774694511` |
+| 4 | `theorem` | [dvd_sub_sum_teichmuller_iterateFrobeniusEquiv_coeff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TeichmullerSeriesNamespacedPublic.lean/declarations/dvd-sub-sum-teichmuller-iteratefrobeniusequiv-coeff.md) | 101 | `result-track:7ec59fbc43481868b41cf9bbb993d24048f0cd5a4568f7d74b689af2d5d8b783` |
+| 5 | `theorem` | [eq_of_apply_teichmuller_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TeichmullerSeriesNamespacedPublic.lean/declarations/eq-of-apply-teichmuller-eq.md) | 126 | `result-track:186f3186e56a4e9d27b20bd175ab3fab040d4fbeb88bec234adb510aa3e79a5b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

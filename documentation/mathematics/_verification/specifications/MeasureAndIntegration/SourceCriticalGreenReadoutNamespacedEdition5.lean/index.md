@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceCriticalGreenReadoutNamespacedEdition5.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceCriticalGreenReadoutNamespacedEdition5.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCriticalGreenReadoutNamespacedEdition5.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCriticalGreenReadoutNamespacedEdition5.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [dirichletTent_integral_second_deriv_eq_endpoint_interpolation](../../../../MeasureAndIntegration/SourceCriticalGreenReadoutNamespacedEdition5.lean/declarations/dirichlettent-integral-second-deriv-eq-endpoint-interpolation.md) | 40 | `result-track:e0933256fc2b6149d8f7193c1b02923554e207033c3ca30c77535715958ccac7` |
-| 2 | `theorem` | [pairedTailTest_integrated_green_readout](../../../../MeasureAndIntegration/SourceCriticalGreenReadoutNamespacedEdition5.lean/declarations/pairedtailtest-integrated-green-readout.md) | 114 | `result-track:56cd9b7151c81508bfc461de25a735baa0c0d5c35963ef1d079ae9efac763a57` |
-| 3 | `theorem` | [pairedTailTest_deriv_at_zero](../../../../MeasureAndIntegration/SourceCriticalGreenReadoutNamespacedEdition5.lean/declarations/pairedtailtest-deriv-at-zero.md) | 126 | `result-track:894fda8bcb3ff6e4b4afa930b1a66143975126c5b504c508886eb318314f356e` |
-| 4 | `theorem` | [pairedTailTest_deriv_at_upper](../../../../MeasureAndIntegration/SourceCriticalGreenReadoutNamespacedEdition5.lean/declarations/pairedtailtest-deriv-at-upper.md) | 148 | `result-track:96c7deb2c7adcdbc1fdb441a49ba7dbbe1e04e8c8c0bf0b781b55fecffd4eaa1` |
-| 5 | `theorem` | [pairedTailTest_second_deriv_moments](../../../../MeasureAndIntegration/SourceCriticalGreenReadoutNamespacedEdition5.lean/declarations/pairedtailtest-second-deriv-moments.md) | 159 | `result-track:93897a9f75c71dc8de7acfdf38956bdeb05dcb0c0289fccf1b9314007aeb6dc8` |
-| 6 | `theorem` | [pairedTailTest_second_deriv_not_ae_nonneg](../../../../MeasureAndIntegration/SourceCriticalGreenReadoutNamespacedEdition5.lean/declarations/pairedtailtest-second-deriv-not-ae-nonneg.md) | 176 | `result-track:713fa0b3f275af3b7b19dc7f5a5b72ade78b1399d4723e6d5b7f08e020413d19` |
+| 1 | `theorem` | [dirichletTent_integral_second_deriv_eq_endpoint_interpolation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCriticalGreenReadoutNamespacedEdition5.lean/declarations/dirichlettent-integral-second-deriv-eq-endpoint-interpolation.md) | 40 | `result-track:e0933256fc2b6149d8f7193c1b02923554e207033c3ca30c77535715958ccac7` |
+| 2 | `theorem` | [pairedTailTest_integrated_green_readout](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCriticalGreenReadoutNamespacedEdition5.lean/declarations/pairedtailtest-integrated-green-readout.md) | 114 | `result-track:56cd9b7151c81508bfc461de25a735baa0c0d5c35963ef1d079ae9efac763a57` |
+| 3 | `theorem` | [pairedTailTest_deriv_at_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCriticalGreenReadoutNamespacedEdition5.lean/declarations/pairedtailtest-deriv-at-zero.md) | 126 | `result-track:894fda8bcb3ff6e4b4afa930b1a66143975126c5b504c508886eb318314f356e` |
+| 4 | `theorem` | [pairedTailTest_deriv_at_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCriticalGreenReadoutNamespacedEdition5.lean/declarations/pairedtailtest-deriv-at-upper.md) | 148 | `result-track:96c7deb2c7adcdbc1fdb441a49ba7dbbe1e04e8c8c0bf0b781b55fecffd4eaa1` |
+| 5 | `theorem` | [pairedTailTest_second_deriv_moments](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCriticalGreenReadoutNamespacedEdition5.lean/declarations/pairedtailtest-second-deriv-moments.md) | 159 | `result-track:93897a9f75c71dc8de7acfdf38956bdeb05dcb0c0289fccf1b9314007aeb6dc8` |
+| 6 | `theorem` | [pairedTailTest_second_deriv_not_ae_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCriticalGreenReadoutNamespacedEdition5.lean/declarations/pairedtailtest-second-deriv-not-ae-nonneg.md) | 176 | `result-track:713fa0b3f275af3b7b19dc7f5a5b72ade78b1399d4723e6d5b7f08e020413d19` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

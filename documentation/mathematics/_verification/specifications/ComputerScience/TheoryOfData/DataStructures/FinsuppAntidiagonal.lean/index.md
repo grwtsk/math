@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppAntidiagonal.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppAntidiagonal.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppAntidiagonal.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppAntidiagonal.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [antidiagonal'](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppAntidiagonal.lean/declarations/antidiagonal.md) | 28 | `declaration-track:d0b586d3002137297b7c4809d882433cbabe490c36a63f9d9c489b8bdb9d9984` |
-| 2 | `instance` | [instHasAntidiagonal](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppAntidiagonal.lean/declarations/insthasantidiagonal.md) | 34 | `declaration-track:ac0dd8d9e774bae2b78830fe625af323a7d17e5a4e264709999953e1832830d6` |
-| 3 | `theorem` | [antidiagonal_zero](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppAntidiagonal.lean/declarations/antidiagonal-zero.md) | 42 | `result-track:f33e5cb9883945fbe1563025f96b7ffe048b5b46201a556f43d3be2f4d0690d8` |
-| 4 | `theorem` | [prod_antidiagonal_swap](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppAntidiagonal.lean/declarations/prod-antidiagonal-swap.md) | 45 | `result-track:db4d8c0a50f8232d34f6b78282b7cbc95306e2c34058616e45fbb11ae1486710` |
-| 5 | `theorem` | [antidiagonal_single](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppAntidiagonal.lean/declarations/antidiagonal-single.md) | 51 | `result-track:8f71d85297a3afda93f4b5b24048a1cd59fc0b786d83c9d2baaa3c1e0354d12b` |
+| 1 | `def` | [antidiagonal'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppAntidiagonal.lean/declarations/antidiagonal.md) | 28 | `declaration-track:d0b586d3002137297b7c4809d882433cbabe490c36a63f9d9c489b8bdb9d9984` |
+| 2 | `instance` | [instHasAntidiagonal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppAntidiagonal.lean/declarations/insthasantidiagonal.md) | 34 | `declaration-track:ac0dd8d9e774bae2b78830fe625af323a7d17e5a4e264709999953e1832830d6` |
+| 3 | `theorem` | [antidiagonal_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppAntidiagonal.lean/declarations/antidiagonal-zero.md) | 42 | `result-track:f33e5cb9883945fbe1563025f96b7ffe048b5b46201a556f43d3be2f4d0690d8` |
+| 4 | `theorem` | [prod_antidiagonal_swap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppAntidiagonal.lean/declarations/prod-antidiagonal-swap.md) | 45 | `result-track:db4d8c0a50f8232d34f6b78282b7cbc95306e2c34058616e45fbb11ae1486710` |
+| 5 | `theorem` | [antidiagonal_single](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppAntidiagonal.lean/declarations/antidiagonal-single.md) | 51 | `result-track:8f71d85297a3afda93f4b5b24048a1cd59fc0b786d83c9d2baaa3c1e0354d12b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

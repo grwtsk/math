@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/CatalanMonodromyNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/CatalanMonodromyNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CatalanMonodromyNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CatalanMonodromyNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [catalan_torsion_transportPath_commutes](../../../../Combinatorics/CatalanMonodromyNamespaced.lean/declarations/catalan-torsion-transportpath-commutes.md) | 27 | `result-track:6ef3babdf5ce245cb0949be76dbe86f84866b4dad599bdd796d7d50e4570c45a` |
-| 2 | `theorem` | [catalan_torsion_monodromy_roundtrip](../../../../Combinatorics/CatalanMonodromyNamespaced.lean/declarations/catalan-torsion-monodromy-roundtrip.md) | 44 | `result-track:0e8668b5c16c77c6e4ac13a55f141355bcd6b2ce7faccdb1333b03526cd465b3` |
+| 1 | `theorem` | [catalan_torsion_transportPath_commutes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CatalanMonodromyNamespaced.lean/declarations/catalan-torsion-transportpath-commutes.md) | 27 | `result-track:6ef3babdf5ce245cb0949be76dbe86f84866b4dad599bdd796d7d50e4570c45a` |
+| 2 | `theorem` | [catalan_torsion_monodromy_roundtrip](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CatalanMonodromyNamespaced.lean/declarations/catalan-torsion-monodromy-roundtrip.md) | 44 | `result-track:0e8668b5c16c77c6e4ac13a55f141355bcd6b2ce7faccdb1333b03526cd465b3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LintDocBlameThmEdition2.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LintDocBlameThmEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LintDocBlameThmEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LintDocBlameThmEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [AtLeastThirtySeven](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LintDocBlameThmEdition2.lean/declarations/atleastthirtyseven.md) | 6 | `declaration-track:600bd3b9976b5ef3d5d33a8eec72b34ba8b85819f56f0de941f523077f6b3072` |
-| 2 | `theorem` | [AtLeastThirtySeven.lt](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LintDocBlameThmEdition2.lean/declarations/atleastthirtyseven-lt.md) | 13 | `result-track:5b00865665efe8f57534c8fed6dafddf2416ca480bc872ac5812b7237295fb26` |
+| 1 | `structure` | [AtLeastThirtySeven](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LintDocBlameThmEdition2.lean/declarations/atleastthirtyseven.md) | 6 | `declaration-track:600bd3b9976b5ef3d5d33a8eec72b34ba8b85819f56f0de941f523077f6b3072` |
+| 2 | `theorem` | [AtLeastThirtySeven.lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LintDocBlameThmEdition2.lean/declarations/atleastthirtyseven-lt.md) | 13 | `result-track:5b00865665efe8f57534c8fed6dafddf2416ca480bc872ac5812b7237295fb26` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

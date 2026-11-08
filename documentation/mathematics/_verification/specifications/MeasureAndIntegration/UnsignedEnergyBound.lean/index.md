@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/UnsignedEnergyBound.lean/index.md) · [Full source](../../../../MeasureAndIntegration/UnsignedEnergyBound.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/UnsignedEnergyBound.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/UnsignedEnergyBound.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.PolynomialEnergyCriterion`](../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PolynomialEnergyCriterion.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.PolynomialEnergyCriterion`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PolynomialEnergyCriterion.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Algebra.Order.Chebyshev` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [pickupEnergy_le_count_mul_diagonal](../../../../MeasureAndIntegration/UnsignedEnergyBound.lean/declarations/pickupenergy-le-count-mul-diagonal.md) | 21 | `result-track:1c1b8ea297f26c872fba209c3bebef19817ac57ce0d02f9cd18558a1e3a62f75` |
-| 2 | `theorem` | [pickupEnergy_exponential_allowance](../../../../MeasureAndIntegration/UnsignedEnergyBound.lean/declarations/pickupenergy-exponential-allowance.md) | 44 | `result-track:65ed8ecca1e3167296cb4ba6b1022ccb864288140e3d3c19ac5011123c42e07d` |
+| 1 | `theorem` | [pickupEnergy_le_count_mul_diagonal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/UnsignedEnergyBound.lean/declarations/pickupenergy-le-count-mul-diagonal.md) | 21 | `result-track:1c1b8ea297f26c872fba209c3bebef19817ac57ce0d02f9cd18558a1e3a62f75` |
+| 2 | `theorem` | [pickupEnergy_exponential_allowance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/UnsignedEnergyBound.lean/declarations/pickupenergy-exponential-allowance.md) | 44 | `result-track:65ed8ecca1e3167296cb4ba6b1022ccb864288140e3d3c19ac5011123c42e07d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

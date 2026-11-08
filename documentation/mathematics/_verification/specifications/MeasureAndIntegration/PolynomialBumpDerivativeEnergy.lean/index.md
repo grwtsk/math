@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/PolynomialBumpDerivativeEnergy.lean/index.md) · [Full source](../../../../MeasureAndIntegration/PolynomialBumpDerivativeEnergy.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PolynomialBumpDerivativeEnergy.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PolynomialBumpDerivativeEnergy.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,9 +46,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Calculus.PolynomialBumpNormalization`](../../../../MeasureAndIntegration/DifferentialCalculusPolynomialBumpNormalization.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.Calculus.CompactProfileDerivativeEnergy`](../../../../MeasureAndIntegration/CompactProfileDerivativeEnergy.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.Analysis.Inequalities.PolynomialEnergyRatio`](../../../../RealFunctions/InequalitiesInRealAnalysis/PolynomialEnergyRatio.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.Analysis.Calculus.PolynomialBumpNormalization`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DifferentialCalculusPolynomialBumpNormalization.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Calculus.CompactProfileDerivativeEnergy`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactProfileDerivativeEnergy.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Inequalities.PolynomialEnergyRatio`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/PolynomialEnergyRatio.lean/index.md) — import line 6; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,21 +59,21 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [thirdDerivative](../../../../MeasureAndIntegration/PolynomialBumpDerivativeEnergy.lean/declarations/thirdderivative.md) | 31 | `declaration-track:3ac11d4bc861c9f3267f18c4aa8594c97f12c79cb12575d28231016960d21a15` |
-| 2 | `theorem` | [secondInterior_frontier](../../../../MeasureAndIntegration/PolynomialBumpDerivativeEnergy.lean/declarations/secondinterior-frontier.md) | 35 | `result-track:eaa9672525543cd53d6ff9402b8635808476899e915f708117167ca98e9d7550` |
-| 3 | `theorem` | [explicitSecondDerivative_hasDerivAt](../../../../MeasureAndIntegration/PolynomialBumpDerivativeEnergy.lean/declarations/explicitsecondderivative-hasderivat.md) | 44 | `result-track:b36a5eceb4efc1342bc0c160446832ff6c3f2e18056ad45685587d639c5699f7` |
-| 4 | `theorem` | [third_scaledBump](../../../../MeasureAndIntegration/PolynomialBumpDerivativeEnergy.lean/declarations/third-scaledbump.md) | 49 | `result-track:b0704282a9ef303e0f89406b1ecdcfbef1cba6382fdaa38ef243ebcd4fa1df26` |
-| 5 | `theorem` | [thirdInterior_continuous](../../../../MeasureAndIntegration/PolynomialBumpDerivativeEnergy.lean/declarations/thirdinterior-continuous.md) | 55 | `result-track:6c0d90542721e94ffa15474e3086e9fb896e8882dd8f29b1e943add69c603fed` |
-| 6 | `theorem` | [scaledBump_contDiff_three](../../../../MeasureAndIntegration/PolynomialBumpDerivativeEnergy.lean/declarations/scaledbump-contdiff-three.md) | 60 | `result-track:3a89e78618dc3295ac1d11be0f567b48c44a3072aff4790c3bfe6d338e6a3e6f` |
-| 7 | `theorem` | [sourceBump_contDiff_three](../../../../MeasureAndIntegration/PolynomialBumpDerivativeEnergy.lean/declarations/sourcebump-contdiff-three.md) | 78 | `result-track:e433f3834d49fd0baaf47ab7dfd022ef15159c06690e044715728840b0babf17` |
-| 8 | `def` | [unitThird](../../../../MeasureAndIntegration/PolynomialBumpDerivativeEnergy.lean/declarations/unitthird.md) | 83 | `declaration-track:fb03731ef9c4225f9f94bf21e58144266474e505e585fb0dcbf1c12c7e6d4732` |
-| 9 | `theorem` | [sourceBump_third_eq_indicator](../../../../MeasureAndIntegration/PolynomialBumpDerivativeEnergy.lean/declarations/sourcebump-third-eq-indicator.md) | 86 | `result-track:a702fc23969a178c51d4c24866278ccfe4ead473110c86cf716e2a8b60b57e25` |
-| 10 | `theorem` | [unitThird_square_integral](../../../../MeasureAndIntegration/PolynomialBumpDerivativeEnergy.lean/declarations/unitthird-square-integral.md) | 93 | `result-track:6125f46ca6c0b1c6092ceabb20b2a3a7ca87c050f1bee164ece34e971f48ee7b` |
-| 11 | `theorem` | [sourceBump_third_square_integral](../../../../MeasureAndIntegration/PolynomialBumpDerivativeEnergy.lean/declarations/sourcebump-third-square-integral.md) | 108 | `result-track:32e973e8380c43acaca8193895850ebac40a3c40645be8d99111bb90e0dff91b` |
-| 12 | `theorem` | [actual_derivative_square_integrable](../../../../MeasureAndIntegration/PolynomialBumpDerivativeEnergy.lean/declarations/actual-derivative-square-integrable.md) | 120 | `result-track:5127f72aca4f5fce0566c563ff4af7bb558fabd9882ebb92c95bb143d3e90f9d` |
-| 13 | `theorem` | [actual_derivative_energy_eq](../../../../MeasureAndIntegration/PolynomialBumpDerivativeEnergy.lean/declarations/actual-derivative-energy-eq.md) | 128 | `result-track:50914b603775dab9de89f55cbf65d6c64ff7fa12edacbf77b79fe99db421c426` |
-| 14 | `theorem` | [actual_derivative_energy_upper](../../../../MeasureAndIntegration/PolynomialBumpDerivativeEnergy.lean/declarations/actual-derivative-energy-upper.md) | 152 | `result-track:98b621886c6db714baaf0aab9d7fede6919d34aa83e5ddd0381bc53c64d373a4` |
-| 15 | `theorem` | [actual_derivative_energy_lt_twenty_five](../../../../MeasureAndIntegration/PolynomialBumpDerivativeEnergy.lean/declarations/actual-derivative-energy-lt-twenty-five.md) | 162 | `result-track:42c67d32985e0fdf5f2d10def2283fca298bbc4eca69c74ec86ed37602dbc199` |
+| 1 | `def` | [thirdDerivative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PolynomialBumpDerivativeEnergy.lean/declarations/thirdderivative.md) | 31 | `declaration-track:3ac11d4bc861c9f3267f18c4aa8594c97f12c79cb12575d28231016960d21a15` |
+| 2 | `theorem` | [secondInterior_frontier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PolynomialBumpDerivativeEnergy.lean/declarations/secondinterior-frontier.md) | 35 | `result-track:eaa9672525543cd53d6ff9402b8635808476899e915f708117167ca98e9d7550` |
+| 3 | `theorem` | [explicitSecondDerivative_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PolynomialBumpDerivativeEnergy.lean/declarations/explicitsecondderivative-hasderivat.md) | 44 | `result-track:b36a5eceb4efc1342bc0c160446832ff6c3f2e18056ad45685587d639c5699f7` |
+| 4 | `theorem` | [third_scaledBump](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PolynomialBumpDerivativeEnergy.lean/declarations/third-scaledbump.md) | 49 | `result-track:b0704282a9ef303e0f89406b1ecdcfbef1cba6382fdaa38ef243ebcd4fa1df26` |
+| 5 | `theorem` | [thirdInterior_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PolynomialBumpDerivativeEnergy.lean/declarations/thirdinterior-continuous.md) | 55 | `result-track:6c0d90542721e94ffa15474e3086e9fb896e8882dd8f29b1e943add69c603fed` |
+| 6 | `theorem` | [scaledBump_contDiff_three](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PolynomialBumpDerivativeEnergy.lean/declarations/scaledbump-contdiff-three.md) | 60 | `result-track:3a89e78618dc3295ac1d11be0f567b48c44a3072aff4790c3bfe6d338e6a3e6f` |
+| 7 | `theorem` | [sourceBump_contDiff_three](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PolynomialBumpDerivativeEnergy.lean/declarations/sourcebump-contdiff-three.md) | 78 | `result-track:e433f3834d49fd0baaf47ab7dfd022ef15159c06690e044715728840b0babf17` |
+| 8 | `def` | [unitThird](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PolynomialBumpDerivativeEnergy.lean/declarations/unitthird.md) | 83 | `declaration-track:fb03731ef9c4225f9f94bf21e58144266474e505e585fb0dcbf1c12c7e6d4732` |
+| 9 | `theorem` | [sourceBump_third_eq_indicator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PolynomialBumpDerivativeEnergy.lean/declarations/sourcebump-third-eq-indicator.md) | 86 | `result-track:a702fc23969a178c51d4c24866278ccfe4ead473110c86cf716e2a8b60b57e25` |
+| 10 | `theorem` | [unitThird_square_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PolynomialBumpDerivativeEnergy.lean/declarations/unitthird-square-integral.md) | 93 | `result-track:6125f46ca6c0b1c6092ceabb20b2a3a7ca87c050f1bee164ece34e971f48ee7b` |
+| 11 | `theorem` | [sourceBump_third_square_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PolynomialBumpDerivativeEnergy.lean/declarations/sourcebump-third-square-integral.md) | 108 | `result-track:32e973e8380c43acaca8193895850ebac40a3c40645be8d99111bb90e0dff91b` |
+| 12 | `theorem` | [actual_derivative_square_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PolynomialBumpDerivativeEnergy.lean/declarations/actual-derivative-square-integrable.md) | 120 | `result-track:5127f72aca4f5fce0566c563ff4af7bb558fabd9882ebb92c95bb143d3e90f9d` |
+| 13 | `theorem` | [actual_derivative_energy_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PolynomialBumpDerivativeEnergy.lean/declarations/actual-derivative-energy-eq.md) | 128 | `result-track:50914b603775dab9de89f55cbf65d6c64ff7fa12edacbf77b79fe99db421c426` |
+| 14 | `theorem` | [actual_derivative_energy_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PolynomialBumpDerivativeEnergy.lean/declarations/actual-derivative-energy-upper.md) | 152 | `result-track:98b621886c6db714baaf0aab9d7fede6919d34aa83e5ddd0381bc53c64d373a4` |
+| 15 | `theorem` | [actual_derivative_energy_lt_twenty_five](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PolynomialBumpDerivativeEnergy.lean/declarations/actual-derivative-energy-lt-twenty-five.md) | 162 | `result-track:42c67d32985e0fdf5f2d10def2283fca298bbc4eca69c74ec86ed37602dbc199` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

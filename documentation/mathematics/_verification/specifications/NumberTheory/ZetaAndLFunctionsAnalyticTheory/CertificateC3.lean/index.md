@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CertificateC3.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CertificateC3.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CertificateC3.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CertificateC3.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [count_lower_moment_c3_five](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CertificateC3.lean/declarations/count-lower-moment-c3-five.md) | 23 | `result-track:e0ecf26a5c521d86364df6c618e9edbf0d25a65df6189bdc29ca402382179ba5` |
-| 2 | `theorem` | [count_certificate_c3](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CertificateC3.lean/declarations/count-certificate-c3.md) | 33 | `result-track:151d1d70749f82fbbccf3b91a85b5576b2d3333698881612331df15043769125` |
+| 1 | `theorem` | [count_lower_moment_c3_five](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CertificateC3.lean/declarations/count-lower-moment-c3-five.md) | 23 | `result-track:e0ecf26a5c521d86364df6c618e9edbf0d25a65df6189bdc29ca402382179ba5` |
+| 2 | `theorem` | [count_certificate_c3](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CertificateC3.lean/declarations/count-certificate-c3.md) | 33 | `result-track:151d1d70749f82fbbccf3b91a85b5576b2d3333698881612331df15043769125` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

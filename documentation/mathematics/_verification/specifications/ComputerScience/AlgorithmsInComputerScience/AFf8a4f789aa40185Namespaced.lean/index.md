@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/AFf8a4f789aa40185Namespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/AFf8a4f789aa40185Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AFf8a4f789aa40185Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AFf8a4f789aa40185Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,7 +61,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [NormalizedPolyhierarchy](../../../../../ComputerScience/AlgorithmsInComputerScience/AFf8a4f789aa40185Namespaced.lean/declarations/normalizedpolyhierarchy.md) | 24 | `declaration-track:f8bcb49c1fee2e95339fadf2c382b8ea1ca46a643a8e7a6a00f9424452352d8b` |
+| 1 | `structure` | [NormalizedPolyhierarchy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AFf8a4f789aa40185Namespaced.lean/declarations/normalizedpolyhierarchy.md) | 24 | `declaration-track:f8bcb49c1fee2e95339fadf2c382b8ea1ca46a643a8e7a6a00f9424452352d8b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

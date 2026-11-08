@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TensorPowerPairing.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TensorPowerPairing.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TensorPowerPairing.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TensorPowerPairing.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [multilinearMapToDual](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TensorPowerPairing.lean/declarations/multilinearmaptodual.md) | 29 | `declaration-track:3cadf96d2aeaadf2994a325772999bcd1bf50fdd874bccc275f3f53d84728eb7` |
-| 2 | `theorem` | [multilinearMapToDual_apply_tprod](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TensorPowerPairing.lean/declarations/multilinearmaptodual-apply-tprod.md) | 56 | `result-track:768a3684f99fb58a089f6736356f4c3cce27b2ed9db9799c62d965af10bbc235` |
-| 3 | `def` | [pairingDual](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TensorPowerPairing.lean/declarations/pairingdual.md) | 61 | `declaration-track:797fae554ba8bb5f6879d9fe7370cba40d9dae2c542009c56d5d61ac3b7be79b` |
-| 4 | `lemma` | [pairingDual_tprod_tprod](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TensorPowerPairing.lean/declarations/pairingdual-tprod-tprod.md) | 67 | `result-track:47ca2ecaaafca695646c1cbb797e5050e8801ff15de4a5b033ae80e8db224cd0` |
+| 1 | `def` | [multilinearMapToDual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TensorPowerPairing.lean/declarations/multilinearmaptodual.md) | 29 | `declaration-track:3cadf96d2aeaadf2994a325772999bcd1bf50fdd874bccc275f3f53d84728eb7` |
+| 2 | `theorem` | [multilinearMapToDual_apply_tprod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TensorPowerPairing.lean/declarations/multilinearmaptodual-apply-tprod.md) | 56 | `result-track:768a3684f99fb58a089f6736356f4c3cce27b2ed9db9799c62d965af10bbc235` |
+| 3 | `def` | [pairingDual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TensorPowerPairing.lean/declarations/pairingdual.md) | 61 | `declaration-track:797fae554ba8bb5f6879d9fe7370cba40d9dae2c542009c56d5d61ac3b7be79b` |
+| 4 | `lemma` | [pairingDual_tprod_tprod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TensorPowerPairing.lean/declarations/pairingdual-tprod-tprod.md) | 67 | `result-track:47ca2ecaaafca695646c1cbb797e5050e8801ff15de4a5b033ae80e8db224cd0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

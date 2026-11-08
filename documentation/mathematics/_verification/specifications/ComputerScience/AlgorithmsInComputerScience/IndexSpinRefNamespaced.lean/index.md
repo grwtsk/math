@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/IndexSpinRefNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/IndexSpinRefNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IndexSpinRefNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IndexSpinRefNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [MatrixAtomDictionary](../../../../../ComputerScience/AlgorithmsInComputerScience/IndexSpinRefNamespaced.lean/declarations/matrixatomdictionary.md) | 26 | `declaration-track:ce96eb2b5039ae481d082545a43733e26283e6c0967267113fe738dab8dfb4bb` |
-| 2 | `def` | [get?](../../../../../ComputerScience/AlgorithmsInComputerScience/IndexSpinRefNamespaced.lean/declarations/get.md) | 32 | `declaration-track:d1bac62d76145671a01283c670b1d5e03731b7b4fb412be606d94bfdd4e36e1f` |
-| 3 | `structure` | [IndexSpinRef](../../../../../ComputerScience/AlgorithmsInComputerScience/IndexSpinRefNamespaced.lean/declarations/indexspinref.md) | 38 | `declaration-track:cd37401ac43c5942a88c31c70d68f9a4ecbb0b646c1b2216aef9b75c009203c4` |
-| 4 | `def` | [realizeIndexSpin?](../../../../../ComputerScience/AlgorithmsInComputerScience/IndexSpinRefNamespaced.lean/declarations/realizeindexspin.md) | 42 | `declaration-track:17590379d1ee942edaa2dab3e9106617ce67b1bbc811b14eaf49e33d55d84aea` |
-| 5 | `theorem` | [realizeIndexSpin?_some](../../../../../ComputerScience/AlgorithmsInComputerScience/IndexSpinRefNamespaced.lean/declarations/realizeindexspin-some.md) | 51 | `result-track:8792d608e3afd806944b57e5bb876d43c0ac77fa9c325207c5c4c1beaf740a87` |
-| 6 | `theorem` | [realize_copy_id](../../../../../ComputerScience/AlgorithmsInComputerScience/IndexSpinRefNamespaced.lean/declarations/realize-copy-id.md) | 60 | `result-track:f8f5890b4a573c6baf25a23e72cfa59488410cdbb3a623fd3ac36ca547da1eb8` |
+| 1 | `structure` | [MatrixAtomDictionary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IndexSpinRefNamespaced.lean/declarations/matrixatomdictionary.md) | 26 | `declaration-track:ce96eb2b5039ae481d082545a43733e26283e6c0967267113fe738dab8dfb4bb` |
+| 2 | `def` | [get?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IndexSpinRefNamespaced.lean/declarations/get.md) | 32 | `declaration-track:d1bac62d76145671a01283c670b1d5e03731b7b4fb412be606d94bfdd4e36e1f` |
+| 3 | `structure` | [IndexSpinRef](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IndexSpinRefNamespaced.lean/declarations/indexspinref.md) | 38 | `declaration-track:cd37401ac43c5942a88c31c70d68f9a4ecbb0b646c1b2216aef9b75c009203c4` |
+| 4 | `def` | [realizeIndexSpin?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IndexSpinRefNamespaced.lean/declarations/realizeindexspin.md) | 42 | `declaration-track:17590379d1ee942edaa2dab3e9106617ce67b1bbc811b14eaf49e33d55d84aea` |
+| 5 | `theorem` | [realizeIndexSpin?_some](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IndexSpinRefNamespaced.lean/declarations/realizeindexspin-some.md) | 51 | `result-track:8792d608e3afd806944b57e5bb876d43c0ac77fa9c325207c5c4c1beaf740a87` |
+| 6 | `theorem` | [realize_copy_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IndexSpinRefNamespaced.lean/declarations/realize-copy-id.md) | 60 | `result-track:f8f5890b4a573c6baf25a23e72cfa59488410cdbb3a623fd3ac36ca547da1eb8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

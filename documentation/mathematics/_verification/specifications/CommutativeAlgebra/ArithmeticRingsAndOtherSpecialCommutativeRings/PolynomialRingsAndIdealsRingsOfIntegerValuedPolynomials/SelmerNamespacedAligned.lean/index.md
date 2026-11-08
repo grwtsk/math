@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../CommutativeAlgebra/ArithmeticRingsAndOtherSpecialCommutativeRings/PolynomialRingsAndIdealsRingsOfIntegerValuedPolynomials/SelmerNamespacedAligned.lean/index.md) · [Full source](../../../../../../CommutativeAlgebra/ArithmeticRingsAndOtherSpecialCommutativeRings/PolynomialRingsAndIdealsRingsOfIntegerValuedPolynomials/SelmerNamespacedAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ArithmeticRingsAndOtherSpecialCommutativeRings/PolynomialRingsAndIdealsRingsOfIntegerValuedPolynomials/SelmerNamespacedAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ArithmeticRingsAndOtherSpecialCommutativeRings/PolynomialRingsAndIdealsRingsOfIntegerValuedPolynomials/SelmerNamespacedAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `macro_rules` | [(anonymous)](../../../../../../CommutativeAlgebra/ArithmeticRingsAndOtherSpecialCommutativeRings/PolynomialRingsAndIdealsRingsOfIntegerValuedPolynomials/SelmerNamespacedAligned.lean/declarations/macro-rules.md) | 37 | `declaration-track:dd7994855ad581f89a48f317c52d00ed2ed6546457fec5e5824c43f8483a42c2` |
-| 2 | `theorem` | [X_pow_sub_X_sub_one_irreducible_aux](../../../../../../CommutativeAlgebra/ArithmeticRingsAndOtherSpecialCommutativeRings/PolynomialRingsAndIdealsRingsOfIntegerValuedPolynomials/SelmerNamespacedAligned.lean/declarations/x-pow-sub-x-sub-one-irreducible-aux.md) | 41 | `result-track:ac47dd3c8e31e2054e701c8425ccf9e0fe6d8593f34b48affe5287f2c27e711a` |
-| 3 | `theorem` | [X_pow_sub_X_sub_one_irreducible](../../../../../../CommutativeAlgebra/ArithmeticRingsAndOtherSpecialCommutativeRings/PolynomialRingsAndIdealsRingsOfIntegerValuedPolynomials/SelmerNamespacedAligned.lean/declarations/x-pow-sub-x-sub-one-irreducible.md) | 59 | `result-track:e7b924c8a1f743342838a6bb4106e4c617f3a93671fa3cb08b79cc4901f8c895` |
-| 4 | `theorem` | [X_pow_sub_X_sub_one_irreducible_rat](../../../../../../CommutativeAlgebra/ArithmeticRingsAndOtherSpecialCommutativeRings/PolynomialRingsAndIdealsRingsOfIntegerValuedPolynomials/SelmerNamespacedAligned.lean/declarations/x-pow-sub-x-sub-one-irreducible-rat.md) | 81 | `result-track:7423cc3be9fac1d8271f38000b1057faba3ef720d0b164611f150c9ec8e3cce2` |
+| 1 | `macro_rules` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ArithmeticRingsAndOtherSpecialCommutativeRings/PolynomialRingsAndIdealsRingsOfIntegerValuedPolynomials/SelmerNamespacedAligned.lean/declarations/macro-rules.md) | 37 | `declaration-track:dd7994855ad581f89a48f317c52d00ed2ed6546457fec5e5824c43f8483a42c2` |
+| 2 | `theorem` | [X_pow_sub_X_sub_one_irreducible_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ArithmeticRingsAndOtherSpecialCommutativeRings/PolynomialRingsAndIdealsRingsOfIntegerValuedPolynomials/SelmerNamespacedAligned.lean/declarations/x-pow-sub-x-sub-one-irreducible-aux.md) | 41 | `result-track:ac47dd3c8e31e2054e701c8425ccf9e0fe6d8593f34b48affe5287f2c27e711a` |
+| 3 | `theorem` | [X_pow_sub_X_sub_one_irreducible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ArithmeticRingsAndOtherSpecialCommutativeRings/PolynomialRingsAndIdealsRingsOfIntegerValuedPolynomials/SelmerNamespacedAligned.lean/declarations/x-pow-sub-x-sub-one-irreducible.md) | 59 | `result-track:e7b924c8a1f743342838a6bb4106e4c617f3a93671fa3cb08b79cc4901f8c895` |
+| 4 | `theorem` | [X_pow_sub_X_sub_one_irreducible_rat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ArithmeticRingsAndOtherSpecialCommutativeRings/PolynomialRingsAndIdealsRingsOfIntegerValuedPolynomials/SelmerNamespacedAligned.lean/declarations/x-pow-sub-x-sub-one-irreducible-rat.md) | 81 | `result-track:7423cc3be9fac1d8271f38000b1057faba3ef720d0b164611f150c9ec8e3cce2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/RatSqrt.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/RatSqrt.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/RatSqrt.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/RatSqrt.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [sqrt](../../../../../NumberTheory/ElementaryNumberTheory/RatSqrt.lean/declarations/sqrt.md) | 26 | `declaration-track:1ab71fdad82debb4a69704be490788910c8e4f47ec57c5197b3995fbe958652f` |
-| 2 | `theorem` | [sqrt_eq](../../../../../NumberTheory/ElementaryNumberTheory/RatSqrt.lean/declarations/sqrt-eq.md) | 29 | `result-track:7d2470c58995dec28921674d0d6cb06a17b6207279deba290ff2574f2dc4dbca` |
-| 3 | `theorem` | [exists_mul_self](../../../../../NumberTheory/ElementaryNumberTheory/RatSqrt.lean/declarations/exists-mul-self.md) | 33 | `result-track:e0ba67d779e740922f22f3dbe4ebcff257e79a36b4c22f53e5a94b56ec362998` |
-| 4 | `theorem` | [sqrt_nonneg](../../../../../NumberTheory/ElementaryNumberTheory/RatSqrt.lean/declarations/sqrt-nonneg.md) | 37 | `result-track:c8453c3152dccf4d18ae992921b6ee377fa99b4d1e61dc658f9eb2bfc8e79824` |
+| 1 | `def` | [sqrt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/RatSqrt.lean/declarations/sqrt.md) | 26 | `declaration-track:1ab71fdad82debb4a69704be490788910c8e4f47ec57c5197b3995fbe958652f` |
+| 2 | `theorem` | [sqrt_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/RatSqrt.lean/declarations/sqrt-eq.md) | 29 | `result-track:7d2470c58995dec28921674d0d6cb06a17b6207279deba290ff2574f2dc4dbca` |
+| 3 | `theorem` | [exists_mul_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/RatSqrt.lean/declarations/exists-mul-self.md) | 33 | `result-track:e0ba67d779e740922f22f3dbe4ebcff257e79a36b4c22f53e5a94b56ec362998` |
+| 4 | `theorem` | [sqrt_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/RatSqrt.lean/declarations/sqrt-nonneg.md) | 37 | `result-track:c8453c3152dccf4d18ae992921b6ee377fa99b4d1e61dc658f9eb2bfc8e79824` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

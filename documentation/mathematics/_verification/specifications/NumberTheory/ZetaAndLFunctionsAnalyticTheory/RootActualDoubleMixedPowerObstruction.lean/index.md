@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualDoubleMixedPowerObstruction.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualDoubleMixedPowerObstruction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualDoubleMixedPowerObstruction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualDoubleMixedPowerObstruction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualFirstLogMixedValue](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualDoubleMixedPowerObstruction.lean/declarations/actualfirstlogmixedvalue.md) | 19 | `declaration-track:0b8197c5aa7c25579df318dfe2dcc0998b138e89729198ffff392cb245f71945` |
-| 2 | `theorem` | [actualFirstLogMixedValue_lower](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualDoubleMixedPowerObstruction.lean/declarations/actualfirstlogmixedvalue-lower.md) | 25 | `result-track:e2c22a66c385b37fe7933f226ac2eb5d427c4cea4d132e799eef6fbd552e9e49` |
-| 3 | `theorem` | [actualFirstLogMixedValue_fourth_power_failure](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualDoubleMixedPowerObstruction.lean/declarations/actualfirstlogmixedvalue-fourth-power-failure.md) | 37 | `result-track:9ddce08a2980252b0af226f0b7a0b49612547c1f3a260da29d020466e7ba3a4b` |
-| 4 | `theorem` | [actualFirstLogMixedValue_not_uniform_fourth_power](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualDoubleMixedPowerObstruction.lean/declarations/actualfirstlogmixedvalue-not-uniform-fourth-power.md) | 56 | `result-track:ba32ef5474e639c54a7ad6a82d91af356b13b87bfc935d55ebad8c3b25c0a4af` |
+| 1 | `def` | [actualFirstLogMixedValue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualDoubleMixedPowerObstruction.lean/declarations/actualfirstlogmixedvalue.md) | 19 | `declaration-track:0b8197c5aa7c25579df318dfe2dcc0998b138e89729198ffff392cb245f71945` |
+| 2 | `theorem` | [actualFirstLogMixedValue_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualDoubleMixedPowerObstruction.lean/declarations/actualfirstlogmixedvalue-lower.md) | 25 | `result-track:e2c22a66c385b37fe7933f226ac2eb5d427c4cea4d132e799eef6fbd552e9e49` |
+| 3 | `theorem` | [actualFirstLogMixedValue_fourth_power_failure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualDoubleMixedPowerObstruction.lean/declarations/actualfirstlogmixedvalue-fourth-power-failure.md) | 37 | `result-track:9ddce08a2980252b0af226f0b7a0b49612547c1f3a260da29d020466e7ba3a4b` |
+| 4 | `theorem` | [actualFirstLogMixedValue_not_uniform_fourth_power](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualDoubleMixedPowerObstruction.lean/declarations/actualfirstlogmixedvalue-not-uniform-fourth-power.md) | 56 | `result-track:ba32ef5474e639c54a7ad6a82d91af356b13b87bfc935d55ebad8c3b25c0a4af` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

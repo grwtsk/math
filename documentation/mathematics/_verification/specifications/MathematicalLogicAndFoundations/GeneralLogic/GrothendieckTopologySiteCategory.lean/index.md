@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GrothendieckTopologySiteCategory.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GrothendieckTopologySiteCategory.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GrothendieckTopologySiteCategory.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GrothendieckTopologySiteCategory.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SiteCategory](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GrothendieckTopologySiteCategory.lean/declarations/sitecategory.md) | 18 | `declaration-track:8c272559ad5b01b29cb84311ecf99ff5029ddf53dfe803c50443e69fbe99a522` |
-| 2 | `structure` | [Cover](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GrothendieckTopologySiteCategory.lean/declarations/cover.md) | 24 | `declaration-track:032cce891c882571cf5fe6418a079c8632b072fc6622db31e56f1fec132c36e4` |
-| 3 | `structure` | [GrothendieckTopology](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GrothendieckTopologySiteCategory.lean/declarations/grothendiecktopology.md) | 31 | `declaration-track:a168efb33d3788fd5ba0cc9b9951c2b47d45018177c484f7a7e177d0249ea7f8` |
-| 4 | `structure` | [StableSphereSite](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GrothendieckTopologySiteCategory.lean/declarations/stablespheresite.md) | 39 | `declaration-track:efb26e8e619f3d22f5d18eab35d73165768a8fc752ddaa11f0d90bad61f95f52` |
-| 5 | `theorem` | [grothendieck_identity_cover](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GrothendieckTopologySiteCategory.lean/declarations/grothendieck-identity-cover.md) | 44 | `result-track:168c458a540a09361e1ef0d94ce2507fbd0d146ec24bb8495dc3f63109c7d796` |
+| 1 | `structure` | [SiteCategory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GrothendieckTopologySiteCategory.lean/declarations/sitecategory.md) | 18 | `declaration-track:8c272559ad5b01b29cb84311ecf99ff5029ddf53dfe803c50443e69fbe99a522` |
+| 2 | `structure` | [Cover](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GrothendieckTopologySiteCategory.lean/declarations/cover.md) | 24 | `declaration-track:032cce891c882571cf5fe6418a079c8632b072fc6622db31e56f1fec132c36e4` |
+| 3 | `structure` | [GrothendieckTopology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GrothendieckTopologySiteCategory.lean/declarations/grothendiecktopology.md) | 31 | `declaration-track:a168efb33d3788fd5ba0cc9b9951c2b47d45018177c484f7a7e177d0249ea7f8` |
+| 4 | `structure` | [StableSphereSite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GrothendieckTopologySiteCategory.lean/declarations/stablespheresite.md) | 39 | `declaration-track:efb26e8e619f3d22f5d18eab35d73165768a8fc752ddaa11f0d90bad61f95f52` |
+| 5 | `theorem` | [grothendieck_identity_cover](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GrothendieckTopologySiteCategory.lean/declarations/grothendieck-identity-cover.md) | 44 | `result-track:168c458a540a09361e1ef0d94ce2507fbd0d146ec24bb8495dc3f63109c7d796` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

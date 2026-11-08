@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CategoricalTrace.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CategoricalTrace.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CategoricalTrace.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CategoricalTrace.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Endomorphism](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CategoricalTrace.lean/declarations/endomorphism.md) | 18 | `declaration-track:50160eaebcd5e58a5dd59e52601be91caba695731699c5697e8f09dec2a58a0c` |
-| 2 | `def` | [FixedBy](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CategoricalTrace.lean/declarations/fixedby.md) | 23 | `declaration-track:266fd3fe9120b23cbbf76756eb4536f9239b6554fc7bc8851d4a247a3f3314c7` |
-| 3 | `structure` | [CategoricalTrace](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CategoricalTrace.lean/declarations/categoricaltrace.md) | 29 | `declaration-track:1a43b252de368a6f489ae68673a86a19b11510949e01af1b33171c659bedb57f` |
-| 4 | `theorem` | [categorical_trace_cyclic](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CategoricalTrace.lean/declarations/categorical-trace-cyclic.md) | 38 | `result-track:51467837436c49845829f5ed6fc6362ccd83181b4a9601646c05a1d8eff9cea5` |
+| 1 | `structure` | [Endomorphism](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CategoricalTrace.lean/declarations/endomorphism.md) | 18 | `declaration-track:50160eaebcd5e58a5dd59e52601be91caba695731699c5697e8f09dec2a58a0c` |
+| 2 | `def` | [FixedBy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CategoricalTrace.lean/declarations/fixedby.md) | 23 | `declaration-track:266fd3fe9120b23cbbf76756eb4536f9239b6554fc7bc8851d4a247a3f3314c7` |
+| 3 | `structure` | [CategoricalTrace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CategoricalTrace.lean/declarations/categoricaltrace.md) | 29 | `declaration-track:1a43b252de368a6f489ae68673a86a19b11510949e01af1b33171c659bedb57f` |
+| 4 | `theorem` | [categorical_trace_cyclic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CategoricalTrace.lean/declarations/categorical-trace-cyclic.md) | 38 | `result-track:51467837436c49845829f5ed6fc6362ccd83181b4a9601646c05a1d8eff9cea5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

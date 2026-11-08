@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/GraphPublic.lean/index.md) · [Full source](../../../../GeneralTopology/GraphPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GraphPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GraphPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [CWComplex.OneSkeletonGraph](../../../../GeneralTopology/GraphPublic.lean/declarations/cwcomplex-oneskeletongraph.md) | 31 | `declaration-track:197355768d4d2cde92171efaa86c1350d4efe7c9e4a65df42b044a0b07163a0e` |
-| 2 | `lemma` | [isLink_iff_pair](../../../../GeneralTopology/GraphPublic.lean/declarations/islink-iff-pair.md) | 50 | `result-track:ed78cb0befd975a929aaa6edcf3bae0c5865607ff26d68885a81dab4850b606c` |
-| 3 | `lemma` | [exists_isLoopAt_iff](../../../../GeneralTopology/GraphPublic.lean/declarations/exists-isloopat-iff.md) | 55 | `result-track:dc44afd29ad7579cb97e3772f0a2f38666f4ea00098f346c49ccf4ff8ca8a80b` |
-| 4 | `lemma` | [exists_isLoopAt_iff_subsingleton](../../../../GeneralTopology/GraphPublic.lean/declarations/exists-isloopat-iff-subsingleton.md) | 61 | `result-track:6b350c47da6680f3436c19461f035e20c7b3fe6a4159c6da738838a14c6618c0` |
-| 5 | `lemma` | [not_exists_isLoopAt_iff_nontrivial](../../../../GeneralTopology/GraphPublic.lean/declarations/not-exists-isloopat-iff-nontrivial.md) | 70 | `result-track:2ebd351d2c4def7d10a74f2141c7ffefe59f60c9267715662b812e0d63d2eb9c` |
-| 6 | `lemma` | [adj_iff](../../../../GeneralTopology/GraphPublic.lean/declarations/adj-iff.md) | 75 | `result-track:5aa56046ff52cf24458c9203b9cd3d1fc554fd8a83dda0afeef3207c6cd82695` |
+| 1 | `def` | [CWComplex.OneSkeletonGraph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GraphPublic.lean/declarations/cwcomplex-oneskeletongraph.md) | 31 | `declaration-track:197355768d4d2cde92171efaa86c1350d4efe7c9e4a65df42b044a0b07163a0e` |
+| 2 | `lemma` | [isLink_iff_pair](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GraphPublic.lean/declarations/islink-iff-pair.md) | 50 | `result-track:ed78cb0befd975a929aaa6edcf3bae0c5865607ff26d68885a81dab4850b606c` |
+| 3 | `lemma` | [exists_isLoopAt_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GraphPublic.lean/declarations/exists-isloopat-iff.md) | 55 | `result-track:dc44afd29ad7579cb97e3772f0a2f38666f4ea00098f346c49ccf4ff8ca8a80b` |
+| 4 | `lemma` | [exists_isLoopAt_iff_subsingleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GraphPublic.lean/declarations/exists-isloopat-iff-subsingleton.md) | 61 | `result-track:6b350c47da6680f3436c19461f035e20c7b3fe6a4159c6da738838a14c6618c0` |
+| 5 | `lemma` | [not_exists_isLoopAt_iff_nontrivial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GraphPublic.lean/declarations/not-exists-isloopat-iff-nontrivial.md) | 70 | `result-track:2ebd351d2c4def7d10a74f2141c7ffefe59f60c9267715662b812e0d63d2eb9c` |
+| 6 | `lemma` | [adj_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GraphPublic.lean/declarations/adj-iff.md) | 75 | `result-track:5aa56046ff52cf24458c9203b9cd3d1fc554fd8a83dda0afeef3207c6cd82695` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

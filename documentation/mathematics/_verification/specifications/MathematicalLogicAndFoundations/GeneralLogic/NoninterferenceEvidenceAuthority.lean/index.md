@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NoninterferenceEvidenceAuthority.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NoninterferenceEvidenceAuthority.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NoninterferenceEvidenceAuthority.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NoninterferenceEvidenceAuthority.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [EvidenceAuthority](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NoninterferenceEvidenceAuthority.lean/declarations/evidenceauthority.md) | 12 | `declaration-track:85e5dff9e36556eb240da9e48bff76d5f0ff9024166b4e7d4caf2caa34cd38f6` |
-| 2 | `inductive` | [MayClose](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NoninterferenceEvidenceAuthority.lean/declarations/mayclose.md) | 21 | `declaration-track:3b5fc886f40806f1facba544352e5f18b0e1dd22e064f0a6878084b847c85ce8` |
-| 3 | `theorem` | [accessSchedule_cannot_close](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NoninterferenceEvidenceAuthority.lean/declarations/accessschedule-cannot-close.md) | 43 | `result-track:f9d721125e871fd7646ec4d21397fcc05b6bb50da95f4b901db7862cd73bd15e` |
-| 4 | `theorem` | [finiteObservation_cannot_close](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NoninterferenceEvidenceAuthority.lean/declarations/finiteobservation-cannot-close.md) | 49 | `result-track:5e4a51ad09740b97ff31af62d71ee195ec37492fc05a3999d683c62a5c4e4c37` |
-| 5 | `theorem` | [reconstructionProposal_cannot_close](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NoninterferenceEvidenceAuthority.lean/declarations/reconstructionproposal-cannot-close.md) | 55 | `result-track:c303ba64d3fddb10e95bbad6ff5cfd4521eced31d8638b66f4c254ab41daeb64` |
-| 6 | `theorem` | [realization_cannot_close_arithmetic](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NoninterferenceEvidenceAuthority.lean/declarations/realization-cannot-close-arithmetic.md) | 61 | `result-track:aa5ccc3b9cd7495194ca827fa03c19dc9dd7822bdf55f08f70f931fcf84b96ad` |
-| 7 | `theorem` | [realization_cannot_close_squareRoot](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NoninterferenceEvidenceAuthority.lean/declarations/realization-cannot-close-squareroot.md) | 67 | `result-track:c36cafe0f20d9f1a7200c29b42d67770d9794b927d88199c4093ca5bb3e82075` |
+| 1 | `inductive` | [EvidenceAuthority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NoninterferenceEvidenceAuthority.lean/declarations/evidenceauthority.md) | 12 | `declaration-track:85e5dff9e36556eb240da9e48bff76d5f0ff9024166b4e7d4caf2caa34cd38f6` |
+| 2 | `inductive` | [MayClose](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NoninterferenceEvidenceAuthority.lean/declarations/mayclose.md) | 21 | `declaration-track:3b5fc886f40806f1facba544352e5f18b0e1dd22e064f0a6878084b847c85ce8` |
+| 3 | `theorem` | [accessSchedule_cannot_close](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NoninterferenceEvidenceAuthority.lean/declarations/accessschedule-cannot-close.md) | 43 | `result-track:f9d721125e871fd7646ec4d21397fcc05b6bb50da95f4b901db7862cd73bd15e` |
+| 4 | `theorem` | [finiteObservation_cannot_close](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NoninterferenceEvidenceAuthority.lean/declarations/finiteobservation-cannot-close.md) | 49 | `result-track:5e4a51ad09740b97ff31af62d71ee195ec37492fc05a3999d683c62a5c4e4c37` |
+| 5 | `theorem` | [reconstructionProposal_cannot_close](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NoninterferenceEvidenceAuthority.lean/declarations/reconstructionproposal-cannot-close.md) | 55 | `result-track:c303ba64d3fddb10e95bbad6ff5cfd4521eced31d8638b66f4c254ab41daeb64` |
+| 6 | `theorem` | [realization_cannot_close_arithmetic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NoninterferenceEvidenceAuthority.lean/declarations/realization-cannot-close-arithmetic.md) | 61 | `result-track:aa5ccc3b9cd7495194ca827fa03c19dc9dd7822bdf55f08f70f931fcf84b96ad` |
+| 7 | `theorem` | [realization_cannot_close_squareRoot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NoninterferenceEvidenceAuthority.lean/declarations/realization-cannot-close-squareroot.md) | 67 | `result-track:c36cafe0f20d9f1a7200c29b42d67770d9794b927d88199c4093ca5bb3e82075` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

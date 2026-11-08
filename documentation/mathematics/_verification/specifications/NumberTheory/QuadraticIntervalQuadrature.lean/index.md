@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/QuadraticIntervalQuadrature.lean/index.md) · [Full source](../../../../NumberTheory/QuadraticIntervalQuadrature.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/QuadraticIntervalQuadrature.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/QuadraticIntervalQuadrature.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.IntervalMellinQuadrature`](../../../../MeasureAndIntegration/IntervalMellinQuadrature.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Chebyshev.QuadraticIntervalKernel`](../../../../NumberTheory/QuadraticIntervalKernel.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.IntervalMellinQuadrature`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntervalMellinQuadrature.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.QuadraticIntervalKernel`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/QuadraticIntervalKernel.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [square_uniform_left_error](../../../../NumberTheory/QuadraticIntervalQuadrature.lean/declarations/square-uniform-left-error.md) | 30 | `result-track:0a88bd84ba4292ef1724db1b092182429b7fa43672eaef74997a6a6288bf52c3` |
-| 2 | `theorem` | [square_finite_quadrature_error](../../../../NumberTheory/QuadraticIntervalQuadrature.lean/declarations/square-finite-quadrature-error.md) | 42 | `result-track:0aedd6526a547f3734039dcf868db4585f1e778ce69ff47313f450bc15a35ea0` |
-| 3 | `theorem` | [square_enclosed_quadrature_error](../../../../NumberTheory/QuadraticIntervalQuadrature.lean/declarations/square-enclosed-quadrature-error.md) | 63 | `result-track:0e14ef1f3e1a3d4a9888aab3a8aae6dc114aa8a1204bf31c2be27cce0b3272e9` |
+| 1 | `theorem` | [square_uniform_left_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/QuadraticIntervalQuadrature.lean/declarations/square-uniform-left-error.md) | 30 | `result-track:0a88bd84ba4292ef1724db1b092182429b7fa43672eaef74997a6a6288bf52c3` |
+| 2 | `theorem` | [square_finite_quadrature_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/QuadraticIntervalQuadrature.lean/declarations/square-finite-quadrature-error.md) | 42 | `result-track:0aedd6526a547f3734039dcf868db4585f1e778ce69ff47313f450bc15a35ea0` |
+| 3 | `theorem` | [square_enclosed_quadrature_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/QuadraticIntervalQuadrature.lean/declarations/square-enclosed-quadrature-error.md) | 63 | `result-track:0e14ef1f3e1a3d4a9888aab3a8aae6dc114aa8a1204bf31c2be27cce0b3272e9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

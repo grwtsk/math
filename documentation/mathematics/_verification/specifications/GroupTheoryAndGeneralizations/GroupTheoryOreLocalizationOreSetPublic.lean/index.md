@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/GroupTheoryOreLocalizationOreSetPublic.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/GroupTheoryOreLocalizationOreSetPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupTheoryOreLocalizationOreSetPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupTheoryOreLocalizationOreSetPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,17 +57,17 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [AddOreSet](../../../../GroupTheoryAndGeneralizations/GroupTheoryOreLocalizationOreSetPublic.lean/declarations/addoreset.md) | 31 | `declaration-track:489d0be847c41bdb25dafe6e9461b4ba03b6e2d4a2d6326d6c86f232e73bb965` |
-| 2 | `class` | [OreSet](../../../../GroupTheoryAndGeneralizations/GroupTheoryOreLocalizationOreSetPublic.lean/declarations/oreset.md) | 52 | `declaration-track:a952bcf1fa481088c21c6cbfb8865f7a3b57facc13d6ff332f1295775d0c205f` |
-| 3 | `theorem` | [ore_right_cancel](../../../../GroupTheoryAndGeneralizations/GroupTheoryOreLocalizationOreSetPublic.lean/declarations/ore-right-cancel.md) | 73 | `result-track:2f4035e185fb0d8b91880542b3e51f70557613ef18c6bede942705865e7a39a0` |
-| 4 | `def` | [oreNum](../../../../GroupTheoryAndGeneralizations/GroupTheoryOreLocalizationOreSetPublic.lean/declarations/orenum.md) | 78 | `declaration-track:2d66083a1e31f217d8db71cc1e1e0ec550a72537de181218860bd59a6279df61` |
-| 5 | `def` | [oreDenom](../../../../GroupTheoryAndGeneralizations/GroupTheoryOreLocalizationOreSetPublic.lean/declarations/oredenom.md) | 83 | `declaration-track:f04a3d0e666a4b1e212cb515c634eaf07e28cbad6bf77ed44c4f215e7b29702a` |
-| 6 | `theorem` | [ore_eq](../../../../GroupTheoryAndGeneralizations/GroupTheoryOreLocalizationOreSetPublic.lean/declarations/ore-eq.md) | 89 | `result-track:9b71a0ffd5017665f48a93c44c2cc079482909f0f15d1c476de4620e425d5537` |
-| 7 | `def` | [oreCondition](../../../../GroupTheoryAndGeneralizations/GroupTheoryOreLocalizationOreSetPublic.lean/declarations/orecondition.md) | 97 | `declaration-track:ab95f23d33608b52a4a80989bce660c693dc701855a8c86c89b0024b67a2f041` |
-| 8 | `instance` | [oreSetBot](../../../../GroupTheoryAndGeneralizations/GroupTheoryOreLocalizationOreSetPublic.lean/declarations/oresetbot.md) | 102 | `declaration-track:cf2753461f2f7ef3db3a32e828aab6d25c6f821c56eed73beefdb6cd014e2bdf` |
-| 9 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/GroupTheoryOreLocalizationOreSetPublic.lean/declarations/instance.md) | 121 | `declaration-track:ee816c776bedf348a5eee730e518a1164ae1c8c14d2a2dfd38af7dff5cf5c969` |
-| 10 | `lemma` | [oreSetComm_oreNum](../../../../GroupTheoryAndGeneralizations/GroupTheoryOreLocalizationOreSetPublic.lean/declarations/oresetcomm-orenum.md) | 128 | `result-track:1ca697e6fe6e6437da4b891f2a7102718a8991f986c4b0998adc355daaec5872` |
-| 11 | `lemma` | [oreSetComm_oreDenom](../../../../GroupTheoryAndGeneralizations/GroupTheoryOreLocalizationOreSetPublic.lean/declarations/oresetcomm-oredenom.md) | 132 | `result-track:84bedd94b75982cc68839ec69a35cd8c448d123b5c1839e32c50f1e7b8d93726` |
+| 1 | `class` | [AddOreSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupTheoryOreLocalizationOreSetPublic.lean/declarations/addoreset.md) | 31 | `declaration-track:489d0be847c41bdb25dafe6e9461b4ba03b6e2d4a2d6326d6c86f232e73bb965` |
+| 2 | `class` | [OreSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupTheoryOreLocalizationOreSetPublic.lean/declarations/oreset.md) | 52 | `declaration-track:a952bcf1fa481088c21c6cbfb8865f7a3b57facc13d6ff332f1295775d0c205f` |
+| 3 | `theorem` | [ore_right_cancel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupTheoryOreLocalizationOreSetPublic.lean/declarations/ore-right-cancel.md) | 73 | `result-track:2f4035e185fb0d8b91880542b3e51f70557613ef18c6bede942705865e7a39a0` |
+| 4 | `def` | [oreNum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupTheoryOreLocalizationOreSetPublic.lean/declarations/orenum.md) | 78 | `declaration-track:2d66083a1e31f217d8db71cc1e1e0ec550a72537de181218860bd59a6279df61` |
+| 5 | `def` | [oreDenom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupTheoryOreLocalizationOreSetPublic.lean/declarations/oredenom.md) | 83 | `declaration-track:f04a3d0e666a4b1e212cb515c634eaf07e28cbad6bf77ed44c4f215e7b29702a` |
+| 6 | `theorem` | [ore_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupTheoryOreLocalizationOreSetPublic.lean/declarations/ore-eq.md) | 89 | `result-track:9b71a0ffd5017665f48a93c44c2cc079482909f0f15d1c476de4620e425d5537` |
+| 7 | `def` | [oreCondition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupTheoryOreLocalizationOreSetPublic.lean/declarations/orecondition.md) | 97 | `declaration-track:ab95f23d33608b52a4a80989bce660c693dc701855a8c86c89b0024b67a2f041` |
+| 8 | `instance` | [oreSetBot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupTheoryOreLocalizationOreSetPublic.lean/declarations/oresetbot.md) | 102 | `declaration-track:cf2753461f2f7ef3db3a32e828aab6d25c6f821c56eed73beefdb6cd014e2bdf` |
+| 9 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupTheoryOreLocalizationOreSetPublic.lean/declarations/instance.md) | 121 | `declaration-track:ee816c776bedf348a5eee730e518a1164ae1c8c14d2a2dfd38af7dff5cf5c969` |
+| 10 | `lemma` | [oreSetComm_oreNum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupTheoryOreLocalizationOreSetPublic.lean/declarations/oresetcomm-orenum.md) | 128 | `result-track:1ca697e6fe6e6437da4b891f2a7102718a8991f986c4b0998adc355daaec5872` |
+| 11 | `lemma` | [oreSetComm_oreDenom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupTheoryOreLocalizationOreSetPublic.lean/declarations/oresetcomm-oredenom.md) | 132 | `result-track:84bedd94b75982cc68839ec69a35cd8c448d123b5c1839e32c50f1e7b8d93726` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

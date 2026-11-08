@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/LocalSystemNamespaced.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/LocalSystemNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/LocalSystemNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/LocalSystemNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [IntegralFiber](../../../../GroupTheoryAndGeneralizations/LocalSystemNamespaced.lean/declarations/integralfiber.md) | 21 | `declaration-track:c5eb05eb1b13e6b7cb830345a40a941e5d01e0b934c85ca66537a8c8332e9276` |
-| 2 | `abbrev` | [RealFiber](../../../../GroupTheoryAndGeneralizations/LocalSystemNamespaced.lean/declarations/realfiber.md) | 22 | `declaration-track:2228abca951a8c332a6f978d0db1d6aadf99100311055a4e4429b78e73ed1c0a` |
-| 3 | `def` | [integralFiberToReal](../../../../GroupTheoryAndGeneralizations/LocalSystemNamespaced.lean/declarations/integralfibertoreal.md) | 25 | `declaration-track:42c0f45fc46c34d45f23c307a121d10bb3276fc8eee0b4bafd07db70bf8bded3` |
-| 4 | `structure` | [IntegralLocalSystem](../../../../GroupTheoryAndGeneralizations/LocalSystemNamespaced.lean/declarations/integrallocalsystem.md) | 31 | `declaration-track:1417eab7fc690de1abcab5f93ba74521243c3009ca5563151c6ad568f1f24240` |
+| 1 | `abbrev` | [IntegralFiber](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/LocalSystemNamespaced.lean/declarations/integralfiber.md) | 21 | `declaration-track:c5eb05eb1b13e6b7cb830345a40a941e5d01e0b934c85ca66537a8c8332e9276` |
+| 2 | `abbrev` | [RealFiber](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/LocalSystemNamespaced.lean/declarations/realfiber.md) | 22 | `declaration-track:2228abca951a8c332a6f978d0db1d6aadf99100311055a4e4429b78e73ed1c0a` |
+| 3 | `def` | [integralFiberToReal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/LocalSystemNamespaced.lean/declarations/integralfibertoreal.md) | 25 | `declaration-track:42c0f45fc46c34d45f23c307a121d10bb3276fc8eee0b4bafd07db70bf8bded3` |
+| 4 | `structure` | [IntegralLocalSystem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/LocalSystemNamespaced.lean/declarations/integrallocalsystem.md) | 31 | `declaration-track:1417eab7fc690de1abcab5f93ba74521243c3009ca5563151c6ad568f1f24240` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

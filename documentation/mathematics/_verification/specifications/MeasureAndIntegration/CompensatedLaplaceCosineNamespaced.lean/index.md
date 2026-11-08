@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CompensatedLaplaceCosineNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CompensatedLaplaceCosineNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompensatedLaplaceCosineNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompensatedLaplaceCosineNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,15 +59,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [damped_cosine_eq_real](../../../../MeasureAndIntegration/CompensatedLaplaceCosineNamespaced.lean/declarations/damped-cosine-eq-real.md) | 26 | `result-track:e8db3599318a8a3b014bdd2620af5222944ca4420301ed4e1f23dcf46e095b94` |
-| 2 | `theorem` | [damped_cosine_integrable](../../../../MeasureAndIntegration/CompensatedLaplaceCosineNamespaced.lean/declarations/damped-cosine-integrable.md) | 32 | `result-track:80f0388dbe92f9dba1ae61b26a216dc21616cce2bbdeb8bfd77bcf367ddd89f2` |
-| 3 | `theorem` | [damped_cosine_integral](../../../../MeasureAndIntegration/CompensatedLaplaceCosineNamespaced.lean/declarations/damped-cosine-integral.md) | 38 | `result-track:3e494a5c0b161e0333ee47b16e7439e3871e4f0f0f222873ad8aaa35ff0e76ee` |
-| 4 | `theorem` | [compensated_integrable](../../../../MeasureAndIntegration/CompensatedLaplaceCosineNamespaced.lean/declarations/compensated-integrable.md) | 47 | `result-track:6d5a880bf8a84ac657fa4bd37339d2b5a64f72682c552bf795028698444eb7e7` |
-| 5 | `theorem` | [compensated_nonneg](../../../../MeasureAndIntegration/CompensatedLaplaceCosineNamespaced.lean/declarations/compensated-nonneg.md) | 56 | `result-track:b13948a63168538e584bc524dcd7639296f70ce8b7dbed570fef74c2270e786d` |
-| 6 | `theorem` | [compensated_integral](../../../../MeasureAndIntegration/CompensatedLaplaceCosineNamespaced.lean/declarations/compensated-integral.md) | 60 | `result-track:533b579668be0c6b836342015ad51d2da617c2a7b6b3b13a550b971db5d4e130` |
-| 7 | `theorem` | [quarter_kernel_integral](../../../../MeasureAndIntegration/CompensatedLaplaceCosineNamespaced.lean/declarations/quarter-kernel-integral.md) | 75 | `result-track:7894d21d8801cb757fdfca344a4515dc4be633610c726761b513d95bd654856b` |
-| 8 | `theorem` | [quarter_compensated_integrable](../../../../MeasureAndIntegration/CompensatedLaplaceCosineNamespaced.lean/declarations/quarter-compensated-integrable.md) | 86 | `result-track:acfcc0c70e602e0952b087e96024b322d494c1d025f112cf69d759220f416407` |
-| 9 | `theorem` | [actual_multiplier_hasSum_integrals](../../../../MeasureAndIntegration/CompensatedLaplaceCosineNamespaced.lean/declarations/actual-multiplier-hassum-integrals.md) | 93 | `result-track:620d3b36e2ec22f01289296f5571ddbf6baadc2c1db4a1f2dd0aef41265bc921` |
+| 1 | `theorem` | [damped_cosine_eq_real](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompensatedLaplaceCosineNamespaced.lean/declarations/damped-cosine-eq-real.md) | 26 | `result-track:e8db3599318a8a3b014bdd2620af5222944ca4420301ed4e1f23dcf46e095b94` |
+| 2 | `theorem` | [damped_cosine_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompensatedLaplaceCosineNamespaced.lean/declarations/damped-cosine-integrable.md) | 32 | `result-track:80f0388dbe92f9dba1ae61b26a216dc21616cce2bbdeb8bfd77bcf367ddd89f2` |
+| 3 | `theorem` | [damped_cosine_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompensatedLaplaceCosineNamespaced.lean/declarations/damped-cosine-integral.md) | 38 | `result-track:3e494a5c0b161e0333ee47b16e7439e3871e4f0f0f222873ad8aaa35ff0e76ee` |
+| 4 | `theorem` | [compensated_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompensatedLaplaceCosineNamespaced.lean/declarations/compensated-integrable.md) | 47 | `result-track:6d5a880bf8a84ac657fa4bd37339d2b5a64f72682c552bf795028698444eb7e7` |
+| 5 | `theorem` | [compensated_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompensatedLaplaceCosineNamespaced.lean/declarations/compensated-nonneg.md) | 56 | `result-track:b13948a63168538e584bc524dcd7639296f70ce8b7dbed570fef74c2270e786d` |
+| 6 | `theorem` | [compensated_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompensatedLaplaceCosineNamespaced.lean/declarations/compensated-integral.md) | 60 | `result-track:533b579668be0c6b836342015ad51d2da617c2a7b6b3b13a550b971db5d4e130` |
+| 7 | `theorem` | [quarter_kernel_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompensatedLaplaceCosineNamespaced.lean/declarations/quarter-kernel-integral.md) | 75 | `result-track:7894d21d8801cb757fdfca344a4515dc4be633610c726761b513d95bd654856b` |
+| 8 | `theorem` | [quarter_compensated_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompensatedLaplaceCosineNamespaced.lean/declarations/quarter-compensated-integrable.md) | 86 | `result-track:acfcc0c70e602e0952b087e96024b322d494c1d025f112cf69d759220f416407` |
+| 9 | `theorem` | [actual_multiplier_hasSum_integrals](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompensatedLaplaceCosineNamespaced.lean/declarations/actual-multiplier-hassum-integrals.md) | 93 | `result-track:620d3b36e2ec22f01289296f5571ddbf6baadc2c1db4a1f2dd0aef41265bc921` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

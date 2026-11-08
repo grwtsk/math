@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrderedTransport.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrderedTransport.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrderedTransport.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrderedTransport.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Majorizes](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrderedTransport.lean/declarations/majorizes.md) | 16 | `declaration-track:726cb506de117903449166b40271863dbbd33a923c22d024c5183e98812bd97f` |
-| 2 | `theorem` | [Majorizes.comp](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrderedTransport.lean/declarations/majorizes-comp.md) | 19 | `result-track:0ad2828b11012d73168a326baed5e5e4bde56e87d1ac1f622c734348c5d8aadd` |
-| 3 | `theorem` | [Majorizes.spectator](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrderedTransport.lean/declarations/majorizes-spectator.md) | 31 | `result-track:6b72c646fb57f71d4dca6f29192c20c973a63a20fc931a5959d3948f88dbe66a` |
-| 4 | `inductive` | [Chain](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrderedTransport.lean/declarations/chain.md) | 44 | `declaration-track:ccdd507a41a4db254ce8cb5cca9e007d41b5b9326ec6e232026c2530b875883e` |
-| 5 | `theorem` | [Chain.sound](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrderedTransport.lean/declarations/chain-sound.md) | 51 | `result-track:ffb0e14a659cb75ab3000c3d317deb979e83d80d99c4f39433809e8acf4cefb5` |
-| 6 | `theorem` | [endpoint_norm_bound](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrderedTransport.lean/declarations/endpoint-norm-bound.md) | 58 | `result-track:ef2aa807bf4fc3fd6b95758a382290daa9455a5855238c4f9baca1864c728744` |
-| 7 | `theorem` | [squared_to_norm](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrderedTransport.lean/declarations/squared-to-norm.md) | 71 | `result-track:e5dee02270b8425d53da73fbb6adc77f1bfd655d68d381d31f892a64539cb9e1` |
+| 1 | `def` | [Majorizes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrderedTransport.lean/declarations/majorizes.md) | 16 | `declaration-track:726cb506de117903449166b40271863dbbd33a923c22d024c5183e98812bd97f` |
+| 2 | `theorem` | [Majorizes.comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrderedTransport.lean/declarations/majorizes-comp.md) | 19 | `result-track:0ad2828b11012d73168a326baed5e5e4bde56e87d1ac1f622c734348c5d8aadd` |
+| 3 | `theorem` | [Majorizes.spectator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrderedTransport.lean/declarations/majorizes-spectator.md) | 31 | `result-track:6b72c646fb57f71d4dca6f29192c20c973a63a20fc931a5959d3948f88dbe66a` |
+| 4 | `inductive` | [Chain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrderedTransport.lean/declarations/chain.md) | 44 | `declaration-track:ccdd507a41a4db254ce8cb5cca9e007d41b5b9326ec6e232026c2530b875883e` |
+| 5 | `theorem` | [Chain.sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrderedTransport.lean/declarations/chain-sound.md) | 51 | `result-track:ffb0e14a659cb75ab3000c3d317deb979e83d80d99c4f39433809e8acf4cefb5` |
+| 6 | `theorem` | [endpoint_norm_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrderedTransport.lean/declarations/endpoint-norm-bound.md) | 58 | `result-track:ef2aa807bf4fc3fd6b95758a382290daa9455a5855238c4f9baca1864c728744` |
+| 7 | `theorem` | [squared_to_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrderedTransport.lean/declarations/squared-to-norm.md) | 71 | `result-track:e5dee02270b8425d53da73fbb6adc77f1bfd655d68d381d31f892a64539cb9e1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

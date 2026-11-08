@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/OscillationNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/OscillationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/OscillationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/OscillationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,16 +59,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [oscillation](../../../../FunctionalAnalysis/OscillationNamespaced.lean/declarations/oscillation.md) | 42 | `declaration-track:c07b802d1f1fc1329c09d3e7a8fcaf46d800552e2555af017b664516daaa0a23` |
-| 2 | `def` | [oscillationWithin](../../../../FunctionalAnalysis/OscillationNamespaced.lean/declarations/oscillationwithin.md) | 46 | `declaration-track:aacf6c33e712f354396e48041dfa4c1eb579eee9a848dd9ec3d4103f97e352b5` |
-| 3 | `theorem` | [oscillationWithin_nhds_eq_oscillation](../../../../FunctionalAnalysis/OscillationNamespaced.lean/declarations/oscillationwithin-nhds-eq-oscillation.md) | 50 | `result-track:75796ea5a3abb3a833068fae0a6a5e8e53a960681c6b425186d22e794a8fff85` |
-| 4 | `theorem` | [oscillationWithin_univ_eq_oscillation](../../../../FunctionalAnalysis/OscillationNamespaced.lean/declarations/oscillationwithin-univ-eq-oscillation.md) | 58 | `result-track:d8e89f0d032fe65faa5f7590c725ef475af2fc032384c03d86c676873623b883` |
-| 5 | `theorem` | [oscillationWithin_eq_zero](../../../../FunctionalAnalysis/OscillationNamespaced.lean/declarations/oscillationwithin-eq-zero.md) | 64 | `result-track:4d2e672a9f1a013672084a6c86e48e04376667313b64745262ab8c415c7bbcff` |
-| 6 | `theorem` | [oscillation_eq_zero](../../../../FunctionalAnalysis/OscillationNamespaced.lean/declarations/oscillation-eq-zero.md) | 76 | `result-track:162f86abb4e4c259f514b271c99be3ff39825430f8c79db05501231944efe133` |
-| 7 | `theorem` | [eq_zero_iff_continuousWithinAt](../../../../FunctionalAnalysis/OscillationNamespaced.lean/declarations/eq-zero-iff-continuouswithinat.md) | 86 | `result-track:560492a0016baadce3d7e5ae019fd2b5375e0798bdb50aa120d46bde4a7bb544` |
-| 8 | `theorem` | [eq_zero_iff_continuousAt](../../../../FunctionalAnalysis/OscillationNamespaced.lean/declarations/eq-zero-iff-continuousat.md) | 99 | `result-track:78e74ef39dad227134a0c627d699c3174162b00190d7ca3cf6d5c7a0dd5a3352` |
-| 9 | `theorem` | [uniform_oscillationWithin](../../../../FunctionalAnalysis/OscillationNamespaced.lean/declarations/uniform-oscillationwithin.md) | 113 | `result-track:57087ee44370d3a58e4dea4e13edfea8aaab398acb6ebf76b8270ee60dc42374` |
-| 10 | `theorem` | [uniform_oscillation](../../../../FunctionalAnalysis/OscillationNamespaced.lean/declarations/uniform-oscillation.md) | 159 | `result-track:b332b0ce2691e7447faa866a6a24dfb4fe7d24a236eaa402fbd0b1d12275c1b0` |
+| 1 | `def` | [oscillation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/OscillationNamespaced.lean/declarations/oscillation.md) | 42 | `declaration-track:c07b802d1f1fc1329c09d3e7a8fcaf46d800552e2555af017b664516daaa0a23` |
+| 2 | `def` | [oscillationWithin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/OscillationNamespaced.lean/declarations/oscillationwithin.md) | 46 | `declaration-track:aacf6c33e712f354396e48041dfa4c1eb579eee9a848dd9ec3d4103f97e352b5` |
+| 3 | `theorem` | [oscillationWithin_nhds_eq_oscillation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/OscillationNamespaced.lean/declarations/oscillationwithin-nhds-eq-oscillation.md) | 50 | `result-track:75796ea5a3abb3a833068fae0a6a5e8e53a960681c6b425186d22e794a8fff85` |
+| 4 | `theorem` | [oscillationWithin_univ_eq_oscillation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/OscillationNamespaced.lean/declarations/oscillationwithin-univ-eq-oscillation.md) | 58 | `result-track:d8e89f0d032fe65faa5f7590c725ef475af2fc032384c03d86c676873623b883` |
+| 5 | `theorem` | [oscillationWithin_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/OscillationNamespaced.lean/declarations/oscillationwithin-eq-zero.md) | 64 | `result-track:4d2e672a9f1a013672084a6c86e48e04376667313b64745262ab8c415c7bbcff` |
+| 6 | `theorem` | [oscillation_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/OscillationNamespaced.lean/declarations/oscillation-eq-zero.md) | 76 | `result-track:162f86abb4e4c259f514b271c99be3ff39825430f8c79db05501231944efe133` |
+| 7 | `theorem` | [eq_zero_iff_continuousWithinAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/OscillationNamespaced.lean/declarations/eq-zero-iff-continuouswithinat.md) | 86 | `result-track:560492a0016baadce3d7e5ae019fd2b5375e0798bdb50aa120d46bde4a7bb544` |
+| 8 | `theorem` | [eq_zero_iff_continuousAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/OscillationNamespaced.lean/declarations/eq-zero-iff-continuousat.md) | 99 | `result-track:78e74ef39dad227134a0c627d699c3174162b00190d7ca3cf6d5c7a0dd5a3352` |
+| 9 | `theorem` | [uniform_oscillationWithin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/OscillationNamespaced.lean/declarations/uniform-oscillationwithin.md) | 113 | `result-track:57087ee44370d3a58e4dea4e13edfea8aaab398acb6ebf76b8270ee60dc42374` |
+| 10 | `theorem` | [uniform_oscillation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/OscillationNamespaced.lean/declarations/uniform-oscillation.md) | 159 | `result-track:b332b0ce2691e7447faa866a6a24dfb4fe7d24a236eaa402fbd0b1d12275c1b0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

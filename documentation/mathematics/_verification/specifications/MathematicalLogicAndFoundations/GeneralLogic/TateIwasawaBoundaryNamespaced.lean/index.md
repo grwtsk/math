@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TateIwasawaBoundaryNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TateIwasawaBoundaryNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TateIwasawaBoundaryNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TateIwasawaBoundaryNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [LocalLFactor](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TateIwasawaBoundaryNamespaced.lean/declarations/locallfactor.md) | 26 | `declaration-track:a6fd4aaad178054166712fcc1013867932be51a4adb934ead441d20da59d2c69` |
-| 2 | `structure` | [GlobalLFunctionAssembly](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TateIwasawaBoundaryNamespaced.lean/declarations/globallfunctionassembly.md) | 33 | `declaration-track:4f9ce56177934c667d83e4e678d57e417d530ff282e45531516289d5397c7653` |
-| 3 | `structure` | [TateIwasawaCompatibility](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TateIwasawaBoundaryNamespaced.lean/declarations/tateiwasawacompatibility.md) | 41 | `declaration-track:732e68a590fb0c55032f863cf9fb4220256f0be6f66c8c17cb18b77054a00eeb` |
-| 4 | `theorem` | [tate_iwasawa_product_formula](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TateIwasawaBoundaryNamespaced.lean/declarations/tate-iwasawa-product-formula.md) | 48 | `result-track:409333dd99c1624fa90f817d2da38147315ccff04ef7b8517f560a40dc760f1b` |
-| 5 | `theorem` | [tate_iwasawa_functional_equation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TateIwasawaBoundaryNamespaced.lean/declarations/tate-iwasawa-functional-equation.md) | 53 | `result-track:34d94c43f7056b6df0699a15407f6cef365c791ba1f7bcde02a724a930dd2907` |
+| 1 | `structure` | [LocalLFactor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TateIwasawaBoundaryNamespaced.lean/declarations/locallfactor.md) | 26 | `declaration-track:a6fd4aaad178054166712fcc1013867932be51a4adb934ead441d20da59d2c69` |
+| 2 | `structure` | [GlobalLFunctionAssembly](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TateIwasawaBoundaryNamespaced.lean/declarations/globallfunctionassembly.md) | 33 | `declaration-track:4f9ce56177934c667d83e4e678d57e417d530ff282e45531516289d5397c7653` |
+| 3 | `structure` | [TateIwasawaCompatibility](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TateIwasawaBoundaryNamespaced.lean/declarations/tateiwasawacompatibility.md) | 41 | `declaration-track:732e68a590fb0c55032f863cf9fb4220256f0be6f66c8c17cb18b77054a00eeb` |
+| 4 | `theorem` | [tate_iwasawa_product_formula](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TateIwasawaBoundaryNamespaced.lean/declarations/tate-iwasawa-product-formula.md) | 48 | `result-track:409333dd99c1624fa90f817d2da38147315ccff04ef7b8517f560a40dc760f1b` |
+| 5 | `theorem` | [tate_iwasawa_functional_equation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TateIwasawaBoundaryNamespaced.lean/declarations/tate-iwasawa-functional-equation.md) | 53 | `result-track:34d94c43f7056b6df0699a15407f6cef365c791ba1f7bcde02a724a930dd2907` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

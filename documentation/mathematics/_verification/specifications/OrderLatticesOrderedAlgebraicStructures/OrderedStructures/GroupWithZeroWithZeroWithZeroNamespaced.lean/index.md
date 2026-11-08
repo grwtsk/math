@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupWithZeroWithZeroWithZeroNamespaced.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupWithZeroWithZeroWithZeroNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupWithZeroWithZeroWithZeroNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupWithZeroWithZeroWithZeroNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupWithZeroWithZeroWithZeroNamespaced.lean/declarations/instance.md) | 39 | `declaration-track:0047b41cff59b19384266c4dffbd7301e63bfc425cfec100a128c607088a8185` |
-| 2 | `instance` | [(anonymous)](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupWithZeroWithZeroWithZeroNamespaced.lean/declarations/instance-source-edition-2.md) | 50 | `declaration-track:60c439e0be2e7ad1e9312aec3fc8a8437a285503fc4597a3e61017c48600a2d3` |
-| 3 | `instance` | [(anonymous)](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupWithZeroWithZeroWithZeroNamespaced.lean/declarations/instance-source-edition-4.md) | 60 | `declaration-track:f2d3b33a0588dac7db13966e6df782a8d91e7426c9e5d0a75efef5ed8406065b` |
-| 4 | `instance` | [(anonymous)](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupWithZeroWithZeroWithZeroNamespaced.lean/declarations/instance-source-edition-3.md) | 76 | `declaration-track:7b8200eb90f24533455ca133f673e5e5f98351d99971683e8d6fa42172d9bf93` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupWithZeroWithZeroWithZeroNamespaced.lean/declarations/instance.md) | 39 | `declaration-track:0047b41cff59b19384266c4dffbd7301e63bfc425cfec100a128c607088a8185` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupWithZeroWithZeroWithZeroNamespaced.lean/declarations/instance-source-edition-2.md) | 50 | `declaration-track:60c439e0be2e7ad1e9312aec3fc8a8437a285503fc4597a3e61017c48600a2d3` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupWithZeroWithZeroWithZeroNamespaced.lean/declarations/instance-source-edition-4.md) | 60 | `declaration-track:f2d3b33a0588dac7db13966e6df782a8d91e7426c9e5d0a75efef5ed8406065b` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupWithZeroWithZeroWithZeroNamespaced.lean/declarations/instance-source-edition-3.md) | 76 | `declaration-track:7b8200eb90f24533455ca133f673e5e5f98351d99971683e8d6fa42172d9bf93` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

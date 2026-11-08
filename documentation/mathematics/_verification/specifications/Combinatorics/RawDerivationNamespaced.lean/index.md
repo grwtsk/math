@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/RawDerivationNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/RawDerivationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RawDerivationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RawDerivationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,18 +58,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [RawDer](../../../../Combinatorics/RawDerivationNamespaced.lean/declarations/rawder.md) | 87 | `declaration-track:5c589637d3643bc6f1b5b6c23036789f045fa3d4597095e6e21361ebb8890336` |
-| 2 | `def` | [root](../../../../Combinatorics/RawDerivationNamespaced.lean/declarations/root.md) | 108 | `declaration-track:ea6a9380955bd37c04049831cf740d7781be45c0d3e3637c3c092f984ac422cf` |
-| 3 | `def` | [size](../../../../Combinatorics/RawDerivationNamespaced.lean/declarations/size.md) | 124 | `declaration-track:061e5797d17b99979eb676a7bdcb04b735abb59c61bea7d94a2b2d495b16ad4d` |
-| 4 | `def` | [sizeAll](../../../../Combinatorics/RawDerivationNamespaced.lean/declarations/sizeall.md) | 140 | `declaration-track:f3fa1dec9cd7554922370d6723aec9b43e8441e6bbf8542e8ccc93fb1c018751` |
-| 5 | `def` | [height](../../../../Combinatorics/RawDerivationNamespaced.lean/declarations/height.md) | 159 | `declaration-track:c2d3c7d1af368c12da6242b6fff7252f470d3c77ae6d867d416bafc9cb34f5d3` |
-| 6 | `def` | [heightAll](../../../../Combinatorics/RawDerivationNamespaced.lean/declarations/heightall.md) | 175 | `declaration-track:ebf3f90f735a6dfdf5e4c25800a051d1e4d70117de674b7a2c44274e16733918` |
-| 7 | `def` | [constantReferences](../../../../Combinatorics/RawDerivationNamespaced.lean/declarations/constantreferences.md) | 194 | `declaration-track:aadd281c4dbfabc87e5c6d7fa9b45985ade895698a312f1657745c586189f43a` |
-| 8 | `def` | [constantReferencesAll](../../../../Combinatorics/RawDerivationNamespaced.lean/declarations/constantreferencesall.md) | 212 | `declaration-track:4bf47f4e9855a7becaeed42a5d5e9dc5cb3dbfe92e72bfca5917ecb64b1ff0dc` |
-| 9 | `def` | [rootVariables](../../../../Combinatorics/RawDerivationNamespaced.lean/declarations/rootvariables.md) | 234 | `declaration-track:848d71fc289ff3042799eaa9319b58e9c6cd977a2794fd24246fc6a46cfa726c` |
-| 10 | `def` | [rootVariablesAll](../../../../Combinatorics/RawDerivationNamespaced.lean/declarations/rootvariablesall.md) | 252 | `declaration-track:34b85780fbeb0ecfbd87ca668df4d113f0ba9f6c50f6c384f1f18cbcafe7afa0` |
-| 11 | `def` | [leafOrigins](../../../../Combinatorics/RawDerivationNamespaced.lean/declarations/leaforigins.md) | 274 | `declaration-track:802305b773b49f15ef40d071ff18eea48705f66fb294507685fa609e141daad7` |
-| 12 | `def` | [leafOriginsAll](../../../../Combinatorics/RawDerivationNamespaced.lean/declarations/leaforiginsall.md) | 292 | `declaration-track:f0e1103fb5a250caa43f99bb4f539c61cedc6e4989ddf82f4123e92d611af7d0` |
+| 1 | `inductive` | [RawDer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RawDerivationNamespaced.lean/declarations/rawder.md) | 87 | `declaration-track:5c589637d3643bc6f1b5b6c23036789f045fa3d4597095e6e21361ebb8890336` |
+| 2 | `def` | [root](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RawDerivationNamespaced.lean/declarations/root.md) | 108 | `declaration-track:ea6a9380955bd37c04049831cf740d7781be45c0d3e3637c3c092f984ac422cf` |
+| 3 | `def` | [size](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RawDerivationNamespaced.lean/declarations/size.md) | 124 | `declaration-track:061e5797d17b99979eb676a7bdcb04b735abb59c61bea7d94a2b2d495b16ad4d` |
+| 4 | `def` | [sizeAll](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RawDerivationNamespaced.lean/declarations/sizeall.md) | 140 | `declaration-track:f3fa1dec9cd7554922370d6723aec9b43e8441e6bbf8542e8ccc93fb1c018751` |
+| 5 | `def` | [height](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RawDerivationNamespaced.lean/declarations/height.md) | 159 | `declaration-track:c2d3c7d1af368c12da6242b6fff7252f470d3c77ae6d867d416bafc9cb34f5d3` |
+| 6 | `def` | [heightAll](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RawDerivationNamespaced.lean/declarations/heightall.md) | 175 | `declaration-track:ebf3f90f735a6dfdf5e4c25800a051d1e4d70117de674b7a2c44274e16733918` |
+| 7 | `def` | [constantReferences](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RawDerivationNamespaced.lean/declarations/constantreferences.md) | 194 | `declaration-track:aadd281c4dbfabc87e5c6d7fa9b45985ade895698a312f1657745c586189f43a` |
+| 8 | `def` | [constantReferencesAll](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RawDerivationNamespaced.lean/declarations/constantreferencesall.md) | 212 | `declaration-track:4bf47f4e9855a7becaeed42a5d5e9dc5cb3dbfe92e72bfca5917ecb64b1ff0dc` |
+| 9 | `def` | [rootVariables](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RawDerivationNamespaced.lean/declarations/rootvariables.md) | 234 | `declaration-track:848d71fc289ff3042799eaa9319b58e9c6cd977a2794fd24246fc6a46cfa726c` |
+| 10 | `def` | [rootVariablesAll](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RawDerivationNamespaced.lean/declarations/rootvariablesall.md) | 252 | `declaration-track:34b85780fbeb0ecfbd87ca668df4d113f0ba9f6c50f6c384f1f18cbcafe7afa0` |
+| 11 | `def` | [leafOrigins](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RawDerivationNamespaced.lean/declarations/leaforigins.md) | 274 | `declaration-track:802305b773b49f15ef40d071ff18eea48705f66fb294507685fa609e141daad7` |
+| 12 | `def` | [leafOriginsAll](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RawDerivationNamespaced.lean/declarations/leaforiginsall.md) | 292 | `declaration-track:f0e1103fb5a250caa43f99bb4f539c61cedc6e4989ddf82f4123e92d611af7d0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

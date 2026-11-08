@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GershgorinNamespacedEdition1.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GershgorinNamespacedEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GershgorinNamespacedEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GershgorinNamespacedEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [eigenvalue_mem_ball](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GershgorinNamespacedEdition1.lean/declarations/eigenvalue-mem-ball.md) | 34 | `result-track:a41750d7cd3f31aab47d8dcf2066202b857b03b386dbc7ec3eaae2d34f11c394` |
-| 2 | `theorem` | [det_ne_zero_of_sum_row_lt_diag](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GershgorinNamespacedEdition1.lean/declarations/det-ne-zero-of-sum-row-lt-diag.md) | 67 | `result-track:62c42f13f39c226aac220f41ed4ec057a64e0c8d58517c7c56194589bb4ad2f1` |
-| 3 | `theorem` | [det_ne_zero_of_sum_col_lt_diag](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GershgorinNamespacedEdition1.lean/declarations/det-ne-zero-of-sum-col-lt-diag.md) | 77 | `result-track:62bd5d7a2f12d774b76c8eb67e4717f664e37b79312c2a84499da3ee75fc830d` |
+| 1 | `theorem` | [eigenvalue_mem_ball](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GershgorinNamespacedEdition1.lean/declarations/eigenvalue-mem-ball.md) | 34 | `result-track:a41750d7cd3f31aab47d8dcf2066202b857b03b386dbc7ec3eaae2d34f11c394` |
+| 2 | `theorem` | [det_ne_zero_of_sum_row_lt_diag](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GershgorinNamespacedEdition1.lean/declarations/det-ne-zero-of-sum-row-lt-diag.md) | 67 | `result-track:62c42f13f39c226aac220f41ed4ec057a64e0c8d58517c7c56194589bb4ad2f1` |
+| 3 | `theorem` | [det_ne_zero_of_sum_col_lt_diag](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GershgorinNamespacedEdition1.lean/declarations/det-ne-zero-of-sum-col-lt-diag.md) | 77 | `result-track:62bd5d7a2f12d774b76c8eb67e4717f664e37b79312c2a84499da3ee75fc830d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

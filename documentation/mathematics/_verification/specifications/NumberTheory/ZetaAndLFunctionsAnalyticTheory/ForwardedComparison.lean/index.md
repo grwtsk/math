@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ForwardedComparison.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ForwardedComparison.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ForwardedComparison.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ForwardedComparison.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,13 +60,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [occurrence_sum_eq_weighted_points](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ForwardedComparison.lean/declarations/occurrence-sum-eq-weighted-points.md) | 30 | `result-track:63280bf2a066ba2c7e10a72fcd761d0ab2549480711a09a8a3aae315885d91a8` |
-| 2 | `theorem` | [weighted_zero_identity](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ForwardedComparison.lean/declarations/weighted-zero-identity.md) | 44 | `result-track:53c72e96deee72dec405c0cacae2f4885f31ad58ded353adb2d7c4956b311e4e` |
-| 3 | `theorem` | [arithmetic_zero_equality](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ForwardedComparison.lean/declarations/arithmetic-zero-equality.md) | 55 | `result-track:d37eb7a964d00086888fe42d886ebb4bbacbaf8d894639ff9e7fa944c483c1d2` |
-| 4 | `theorem` | [arithmetic_zero_hasSum](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ForwardedComparison.lean/declarations/arithmetic-zero-hassum.md) | 61 | `result-track:0f2f9f285b54e4a0e3114b051764fe47a15d7594fd1a715eac08b1a7cb94948a` |
-| 5 | `theorem` | [zero_side_identity](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ForwardedComparison.lean/declarations/zero-side-identity.md) | 65 | `result-track:1538ec7bde271efbaa5e796ea8a346e9cce82eda32cbc35db5ce4c4094274fc9` |
-| 6 | `theorem` | [source_hasSum](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ForwardedComparison.lean/declarations/source-hassum.md) | 69 | `result-track:adc50263ce342bcbbe0a31da38e82a3aebb94a37490bdae3423ecd78888ebc56` |
-| 7 | `theorem` | [source_identity](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ForwardedComparison.lean/declarations/source-identity.md) | 77 | `result-track:161aa7887f7b5c28eba8b01c6db0cea3ab10c6027a3dd825f61a9346d579df43` |
+| 1 | `theorem` | [occurrence_sum_eq_weighted_points](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ForwardedComparison.lean/declarations/occurrence-sum-eq-weighted-points.md) | 30 | `result-track:63280bf2a066ba2c7e10a72fcd761d0ab2549480711a09a8a3aae315885d91a8` |
+| 2 | `theorem` | [weighted_zero_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ForwardedComparison.lean/declarations/weighted-zero-identity.md) | 44 | `result-track:53c72e96deee72dec405c0cacae2f4885f31ad58ded353adb2d7c4956b311e4e` |
+| 3 | `theorem` | [arithmetic_zero_equality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ForwardedComparison.lean/declarations/arithmetic-zero-equality.md) | 55 | `result-track:d37eb7a964d00086888fe42d886ebb4bbacbaf8d894639ff9e7fa944c483c1d2` |
+| 4 | `theorem` | [arithmetic_zero_hasSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ForwardedComparison.lean/declarations/arithmetic-zero-hassum.md) | 61 | `result-track:0f2f9f285b54e4a0e3114b051764fe47a15d7594fd1a715eac08b1a7cb94948a` |
+| 5 | `theorem` | [zero_side_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ForwardedComparison.lean/declarations/zero-side-identity.md) | 65 | `result-track:1538ec7bde271efbaa5e796ea8a346e9cce82eda32cbc35db5ce4c4094274fc9` |
+| 6 | `theorem` | [source_hasSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ForwardedComparison.lean/declarations/source-hassum.md) | 69 | `result-track:adc50263ce342bcbbe0a31da38e82a3aebb94a37490bdae3423ecd78888ebc56` |
+| 7 | `theorem` | [source_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ForwardedComparison.lean/declarations/source-identity.md) | 77 | `result-track:161aa7887f7b5c28eba8b01c6db0cea3ab10c6027a3dd825f61a9346d579df43` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

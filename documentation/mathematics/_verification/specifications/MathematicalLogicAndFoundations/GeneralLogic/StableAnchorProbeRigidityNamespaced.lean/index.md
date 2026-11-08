@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StableAnchorProbeRigidityNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StableAnchorProbeRigidityNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StableAnchorProbeRigidityNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StableAnchorProbeRigidityNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [compactificationAnchor](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StableAnchorProbeRigidityNamespaced.lean/declarations/compactificationanchor.md) | 37 | `declaration-track:89c8da7c94b7919c2e0a12621b299812f7a86b2e617f4e69b59efdce570aa6d5` |
-| 2 | `def` | [StableAnchorProbeRigidityStatement](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StableAnchorProbeRigidityNamespaced.lean/declarations/stableanchorproberigiditystatement.md) | 49 | `declaration-track:8cb3c85e0624af5bc1fff539727f80bba471516fa374c93b65c628d0db9830b9` |
-| 3 | `def` | [stableAnchorProbeRigidityOpenElement](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StableAnchorProbeRigidityNamespaced.lean/declarations/stableanchorproberigidityopenelement.md) | 56 | `declaration-track:5f8b5367a09fe2b60b74bcf4ba945724ff241dfac0998c74d5e60b683950ca1d` |
-| 4 | `theorem` | [stableAnchorProbeRigidity](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StableAnchorProbeRigidityNamespaced.lean/declarations/stableanchorproberigidity.md) | 74 | `result-track:b70ab8b27721c18c7c911c494d85087551f93d3ef86559dbfddb1e26f3e01cb4` |
-| 5 | `def` | [stableAnchorProbeRigidityTheoremElement](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StableAnchorProbeRigidityNamespaced.lean/declarations/stableanchorproberigiditytheoremelement.md) | 95 | `declaration-track:a5fc1c3dc537d9e4ca3c919fcda07b06e9d40abfbed95d6410bee1d3a65fd4b8` |
+| 1 | `def` | [compactificationAnchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StableAnchorProbeRigidityNamespaced.lean/declarations/compactificationanchor.md) | 37 | `declaration-track:89c8da7c94b7919c2e0a12621b299812f7a86b2e617f4e69b59efdce570aa6d5` |
+| 2 | `def` | [StableAnchorProbeRigidityStatement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StableAnchorProbeRigidityNamespaced.lean/declarations/stableanchorproberigiditystatement.md) | 49 | `declaration-track:8cb3c85e0624af5bc1fff539727f80bba471516fa374c93b65c628d0db9830b9` |
+| 3 | `def` | [stableAnchorProbeRigidityOpenElement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StableAnchorProbeRigidityNamespaced.lean/declarations/stableanchorproberigidityopenelement.md) | 56 | `declaration-track:5f8b5367a09fe2b60b74bcf4ba945724ff241dfac0998c74d5e60b683950ca1d` |
+| 4 | `theorem` | [stableAnchorProbeRigidity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StableAnchorProbeRigidityNamespaced.lean/declarations/stableanchorproberigidity.md) | 74 | `result-track:b70ab8b27721c18c7c911c494d85087551f93d3ef86559dbfddb1e26f3e01cb4` |
+| 5 | `def` | [stableAnchorProbeRigidityTheoremElement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StableAnchorProbeRigidityNamespaced.lean/declarations/stableanchorproberigiditytheoremelement.md) | 95 | `declaration-track:a5fc1c3dc537d9e4ca3c919fcda07b06e9d40abfbed95d6410bee1d3a65fd4b8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

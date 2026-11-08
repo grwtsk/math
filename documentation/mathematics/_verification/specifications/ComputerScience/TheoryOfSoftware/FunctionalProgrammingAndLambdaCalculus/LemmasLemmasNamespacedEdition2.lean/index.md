@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNamespacedEdition2.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNamespacedEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNamespacedEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNamespacedEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [run_failure](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNamespacedEdition2.lean/declarations/run-failure-source-edition-2.md) | 20 | `result-track:79dd785cc6352a92b035fb982c11ca73847336aee9892d12fa94be74c7161bd1` |
-| 2 | `theorem` | [run_orElse](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNamespacedEdition2.lean/declarations/run-orelse.md) | 23 | `result-track:0dfca3040138173c8ea714c3cd74073115614bf6f09afa8c5ca3b8eeef6937b9` |
-| 3 | `theorem` | [run_failure](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNamespacedEdition2.lean/declarations/run-failure.md) | 32 | `result-track:7659200a910c3ab5fb7178a80e25576decead7a67671f43b71f6e72cbcfb34d4` |
-| 4 | `theorem` | [run_orElse](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNamespacedEdition2.lean/declarations/run-orelse-source-edition-2.md) | 35 | `result-track:8e26e7427bc468dc0aaeb3f18998fdf74f113f64bac6a8a1ea4cc833fe0208e4` |
+| 1 | `theorem` | [run_failure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNamespacedEdition2.lean/declarations/run-failure-source-edition-2.md) | 20 | `result-track:79dd785cc6352a92b035fb982c11ca73847336aee9892d12fa94be74c7161bd1` |
+| 2 | `theorem` | [run_orElse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNamespacedEdition2.lean/declarations/run-orelse.md) | 23 | `result-track:0dfca3040138173c8ea714c3cd74073115614bf6f09afa8c5ca3b8eeef6937b9` |
+| 3 | `theorem` | [run_failure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNamespacedEdition2.lean/declarations/run-failure.md) | 32 | `result-track:7659200a910c3ab5fb7178a80e25576decead7a67671f43b71f6e72cbcfb34d4` |
+| 4 | `theorem` | [run_orElse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNamespacedEdition2.lean/declarations/run-orelse-source-edition-2.md) | 35 | `result-track:8e26e7427bc468dc0aaeb3f18998fdf74f113f64bac6a8a1ea4cc833fe0208e4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

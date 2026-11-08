@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/NormedSpaceIntNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/NormedSpaceIntNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceIntNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceIntNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [nnnorm_coe_units](../../../../FunctionalAnalysis/NormedSpaceIntNamespaced.lean/declarations/nnnorm-coe-units.md) | 30 | `result-track:7fa75dd49981cdb376f8532b76df66a31dc82b10b92e15c135f74ffa4e7b8342` |
-| 2 | `theorem` | [norm_coe_units](../../../../FunctionalAnalysis/NormedSpaceIntNamespaced.lean/declarations/norm-coe-units.md) | 34 | `result-track:d2e4903a9880907bf7f4abbe24876839ae20d80f4a4744726d06d23b831f31df` |
-| 3 | `theorem` | [nnnorm_natCast](../../../../FunctionalAnalysis/NormedSpaceIntNamespaced.lean/declarations/nnnorm-natcast.md) | 38 | `result-track:f39c8485fb7f13504155bfb8a3798e86e27feaa676db0b75d19c501fcb418cc3` |
-| 4 | `lemma` | [enorm_natCast](../../../../FunctionalAnalysis/NormedSpaceIntNamespaced.lean/declarations/enorm-natcast.md) | 41 | `result-track:b3ff278e01038a0adab395eb6ba19b1a43de018d634cc7a7b50eb1a8a09a7d2d` |
-| 5 | `theorem` | [toNat_add_toNat_neg_eq_nnnorm](../../../../FunctionalAnalysis/NormedSpaceIntNamespaced.lean/declarations/tonat-add-tonat-neg-eq-nnnorm.md) | 44 | `result-track:e7a45083a25683615bcb2a09ba71c47dcf4391e9a277da276c8569be77c83b3f` |
-| 6 | `theorem` | [toNat_add_toNat_neg_eq_norm](../../../../FunctionalAnalysis/NormedSpaceIntNamespaced.lean/declarations/tonat-add-tonat-neg-eq-norm.md) | 48 | `result-track:f3e55305f77c1671ae8b61f3c66f60a46159f2cc6cdadce9dc9247c519123c56` |
+| 1 | `theorem` | [nnnorm_coe_units](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceIntNamespaced.lean/declarations/nnnorm-coe-units.md) | 30 | `result-track:7fa75dd49981cdb376f8532b76df66a31dc82b10b92e15c135f74ffa4e7b8342` |
+| 2 | `theorem` | [norm_coe_units](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceIntNamespaced.lean/declarations/norm-coe-units.md) | 34 | `result-track:d2e4903a9880907bf7f4abbe24876839ae20d80f4a4744726d06d23b831f31df` |
+| 3 | `theorem` | [nnnorm_natCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceIntNamespaced.lean/declarations/nnnorm-natcast.md) | 38 | `result-track:f39c8485fb7f13504155bfb8a3798e86e27feaa676db0b75d19c501fcb418cc3` |
+| 4 | `lemma` | [enorm_natCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceIntNamespaced.lean/declarations/enorm-natcast.md) | 41 | `result-track:b3ff278e01038a0adab395eb6ba19b1a43de018d634cc7a7b50eb1a8a09a7d2d` |
+| 5 | `theorem` | [toNat_add_toNat_neg_eq_nnnorm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceIntNamespaced.lean/declarations/tonat-add-tonat-neg-eq-nnnorm.md) | 44 | `result-track:e7a45083a25683615bcb2a09ba71c47dcf4391e9a277da276c8569be77c83b3f` |
+| 6 | `theorem` | [toNat_add_toNat_neg_eq_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceIntNamespaced.lean/declarations/tonat-add-tonat-neg-eq-norm.md) | 48 | `result-track:f3e55305f77c1671ae8b61f3c66f60a46159f2cc6cdadce9dc9247c519123c56` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

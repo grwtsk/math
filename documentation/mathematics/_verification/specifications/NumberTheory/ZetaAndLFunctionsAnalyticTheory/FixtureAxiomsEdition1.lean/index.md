@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FixtureAxiomsEdition1.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FixtureAxiomsEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FixtureAxiomsEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FixtureAxiomsEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sign_positive_one](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FixtureAxiomsEdition1.lean/declarations/sign-positive-one.md) | 10 | `result-track:67ad9666aa64e5c19cd617d0e02a23e47fe6a7b42a64c15c1eb0d4dc3e582e74` |
-| 2 | `theorem` | [sign_positive_half](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FixtureAxiomsEdition1.lean/declarations/sign-positive-half.md) | 13 | `result-track:07e8ad9971c89ccaaad12e4d7b860cb4b5a86c7ab53b37857dbd8d6d5a51a6ed` |
-| 3 | `theorem` | [sign_positive_seven](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FixtureAxiomsEdition1.lean/declarations/sign-positive-seven.md) | 16 | `result-track:27d2eafc63b5c727739058ceb90ec486908627ccee72bd50b06797e9f6876923` |
-| 4 | `theorem` | [sign_zero_excluded](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FixtureAxiomsEdition1.lean/declarations/sign-zero-excluded.md) | 20 | `result-track:b06b2e89c3aa18c999d9ff0dcfc1df12461451d40d5e97f319e72a326d3ffc9f` |
-| 5 | `theorem` | [sign_endpoint_excluded](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FixtureAxiomsEdition1.lean/declarations/sign-endpoint-excluded.md) | 24 | `result-track:94d3f11c19952b6cb4caab4caab0f1c560141b8bc7c733b97dae2a5a2c2de115` |
-| 6 | `theorem` | [sign_even_partner](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FixtureAxiomsEdition1.lean/declarations/sign-even-partner.md) | 29 | `result-track:771fbe9abb5df545098f76601829538cfd016e833375ed027397091ff78abddc` |
+| 1 | `theorem` | [sign_positive_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FixtureAxiomsEdition1.lean/declarations/sign-positive-one.md) | 10 | `result-track:67ad9666aa64e5c19cd617d0e02a23e47fe6a7b42a64c15c1eb0d4dc3e582e74` |
+| 2 | `theorem` | [sign_positive_half](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FixtureAxiomsEdition1.lean/declarations/sign-positive-half.md) | 13 | `result-track:07e8ad9971c89ccaaad12e4d7b860cb4b5a86c7ab53b37857dbd8d6d5a51a6ed` |
+| 3 | `theorem` | [sign_positive_seven](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FixtureAxiomsEdition1.lean/declarations/sign-positive-seven.md) | 16 | `result-track:27d2eafc63b5c727739058ceb90ec486908627ccee72bd50b06797e9f6876923` |
+| 4 | `theorem` | [sign_zero_excluded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FixtureAxiomsEdition1.lean/declarations/sign-zero-excluded.md) | 20 | `result-track:b06b2e89c3aa18c999d9ff0dcfc1df12461451d40d5e97f319e72a326d3ffc9f` |
+| 5 | `theorem` | [sign_endpoint_excluded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FixtureAxiomsEdition1.lean/declarations/sign-endpoint-excluded.md) | 24 | `result-track:94d3f11c19952b6cb4caab4caab0f1c560141b8bc7c733b97dae2a5a2c2de115` |
+| 6 | `theorem` | [sign_even_partner](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FixtureAxiomsEdition1.lean/declarations/sign-even-partner.md) | 29 | `result-track:771fbe9abb5df545098f76601829538cfd016e833375ed027397091ff78abddc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

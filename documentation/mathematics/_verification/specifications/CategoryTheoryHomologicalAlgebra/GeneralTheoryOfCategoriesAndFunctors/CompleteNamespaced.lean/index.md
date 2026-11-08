@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CompleteNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CompleteNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CompleteNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CompleteNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,13 +61,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [incl](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CompleteNamespaced.lean/declarations/incl.md) | 38 | `declaration-track:c2acf5c543b28ccf0b994dd63c5706f65b81e90baad08cb4952f9d894efd2dc0` |
-| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CompleteNamespaced.lean/declarations/instance-source-edition-2.md) | 45 | `declaration-track:6ba1536aeb8441050d6bf7a98ca8dda1460c002022344216c8daeb8a52f6d6a1` |
-| 3 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CompleteNamespaced.lean/declarations/instance-source-edition-3.md) | 53 | `declaration-track:ef316d3651d7f3ea3fa3a533f84c380be6df5ac6977927b29fec6e4ab9536e27` |
-| 4 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CompleteNamespaced.lean/declarations/instance.md) | 56 | `declaration-track:15aceeb7453df400519bb483bd8deee0457f2d71915ea3e56bde0798a03ce4c5` |
-| 5 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CompleteNamespaced.lean/declarations/instance-source-edition-4.md) | 60 | `declaration-track:f5b2d733d13b885f6117a93d90803461d5b4b0d189f41a5ed87edef2e595d91c` |
-| 6 | `def` | [functorCategoryClosed](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CompleteNamespaced.lean/declarations/functorcategoryclosed.md) | 64 | `declaration-track:a6b09be2f90ed27033be4b82869e9531cd3414d204cec16c9eb7a84ca9b96aa9` |
-| 7 | `def` | [functorCategoryMonoidalClosed](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CompleteNamespaced.lean/declarations/functorcategorymonoidalclosed.md) | 78 | `declaration-track:d3b4f86c1ea54c1bf3eabfe1faa25963b4f0a3dc8554257348e8ca6e09f039ab` |
+| 1 | `abbrev` | [incl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CompleteNamespaced.lean/declarations/incl.md) | 38 | `declaration-track:c2acf5c543b28ccf0b994dd63c5706f65b81e90baad08cb4952f9d894efd2dc0` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CompleteNamespaced.lean/declarations/instance-source-edition-2.md) | 45 | `declaration-track:6ba1536aeb8441050d6bf7a98ca8dda1460c002022344216c8daeb8a52f6d6a1` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CompleteNamespaced.lean/declarations/instance-source-edition-3.md) | 53 | `declaration-track:ef316d3651d7f3ea3fa3a533f84c380be6df5ac6977927b29fec6e4ab9536e27` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CompleteNamespaced.lean/declarations/instance.md) | 56 | `declaration-track:15aceeb7453df400519bb483bd8deee0457f2d71915ea3e56bde0798a03ce4c5` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CompleteNamespaced.lean/declarations/instance-source-edition-4.md) | 60 | `declaration-track:f5b2d733d13b885f6117a93d90803461d5b4b0d189f41a5ed87edef2e595d91c` |
+| 6 | `def` | [functorCategoryClosed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CompleteNamespaced.lean/declarations/functorcategoryclosed.md) | 64 | `declaration-track:a6b09be2f90ed27033be4b82869e9531cd3414d204cec16c9eb7a84ca9b96aa9` |
+| 7 | `def` | [functorCategoryMonoidalClosed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CompleteNamespaced.lean/declarations/functorcategorymonoidalclosed.md) | 78 | `declaration-track:d3b4f86c1ea54c1bf3eabfe1faa25963b4f0a3dc8554257348e8ca6e09f039ab` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

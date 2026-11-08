@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/Sheaf.lean/index.md) · [Full source](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/Sheaf.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/Sheaf.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/Sheaf.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [Modules](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/Sheaf.lean/declarations/modules.md) | 27 | `declaration-track:65a8c4832221c3c957d63da05545175af29a1dad62acfc0f98f28fed4979af45` |
-| 2 | `instance` | [(anonymous)](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/Sheaf.lean/declarations/instance.md) | 30 | `declaration-track:b28052f5acb44135f8e1118fb4a431d22568c5cb40fdc8f9c26e742d6bab10de` |
+| 1 | `abbrev` | [Modules](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/Sheaf.lean/declarations/modules.md) | 27 | `declaration-track:65a8c4832221c3c957d63da05545175af29a1dad62acfc0f98f28fed4979af45` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/Sheaf.lean/declarations/instance.md) | 30 | `declaration-track:b28052f5acb44135f8e1118fb4a431d22568c5cb40fdc8f9c26e742d6bab10de` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

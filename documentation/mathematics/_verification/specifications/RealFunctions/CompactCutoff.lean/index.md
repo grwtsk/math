@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/CompactCutoff.lean/index.md) · [Full source](../../../../RealFunctions/CompactCutoff.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CompactCutoff.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CompactCutoff.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,18 +58,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [compactCutoff](../../../../RealFunctions/CompactCutoff.lean/declarations/compactcutoff.md) | 26 | `declaration-track:115987212dcdd0bf8387ee8cf71a85479bf4c8a9a46e8b2fec337e8df0b6bc1d` |
-| 2 | `lemma` | [compactCutoff_smooth](../../../../RealFunctions/CompactCutoff.lean/declarations/compactcutoff-smooth.md) | 29 | `result-track:81ec75b871039cfe49c8b85f5a9cb54616e2d902b03714a7cb364f61de05a0d9` |
-| 3 | `lemma` | [compactCutoff_zero_left](../../../../RealFunctions/CompactCutoff.lean/declarations/compactcutoff-zero-left.md) | 34 | `result-track:920c8c7274d75a24621ebd0cfca9b4f5e125b44d15dab50a1284ac38637d1e80` |
-| 4 | `lemma` | [compactCutoff_zero_right](../../../../RealFunctions/CompactCutoff.lean/declarations/compactcutoff-zero-right.md) | 38 | `result-track:6007864d983b6351a7c4bf5933409bbc747c9623293340f666e542feb51e7a14` |
-| 5 | `lemma` | [compactCutoff_tsupport_subset](../../../../RealFunctions/CompactCutoff.lean/declarations/compactcutoff-tsupport-subset.md) | 42 | `result-track:cba9b8a2070082901774c0db6100af48cf65421e6a61ddba787e310ac7248597` |
-| 6 | `lemma` | [compactCutoff_compact](../../../../RealFunctions/CompactCutoff.lean/declarations/compactcutoff-compact.md) | 53 | `result-track:d1fdda50774ec5a02521f47415fabb45c7e223601a0a05e023381739980c14b9` |
-| 7 | `lemma` | [compactCutoff_one](../../../../RealFunctions/CompactCutoff.lean/declarations/compactcutoff-one.md) | 56 | `result-track:f4577d9523b96d0688581994a45d28241da1f410cf60a1905d7d1162367f9cc9` |
-| 8 | `def` | [schwartzCutoff](../../../../RealFunctions/CompactCutoff.lean/declarations/schwartzcutoff.md) | 63 | `declaration-track:62a22d1349845aecb368957eab9253f34dc9c2a762029a1bb678fd6e1296352d` |
-| 9 | `lemma` | [schwartzCutoff_apply](../../../../RealFunctions/CompactCutoff.lean/declarations/schwartzcutoff-apply.md) | 66 | `result-track:2007174174c27b1c6c4fb905f4e216e9eba264a022e91181266af042ff016c8d` |
-| 10 | `lemma` | [schwartzCutoff_compact](../../../../RealFunctions/CompactCutoff.lean/declarations/schwartzcutoff-compact.md) | 68 | `result-track:08fe2558107e3cfec37f8f0e9229e9fd2e52966979e1ca5324e0ff1f8a4223ba` |
-| 11 | `lemma` | [schwartzCutoff_one](../../../../RealFunctions/CompactCutoff.lean/declarations/schwartzcutoff-one.md) | 71 | `result-track:2fbc47c11a9049dc68f471faa9f62aba1ad768762c3665dde62584735d5e4700` |
-| 12 | `theorem` | [coupled_cutoff_active](../../../../RealFunctions/CompactCutoff.lean/declarations/coupled-cutoff-active.md) | 75 | `result-track:3f4f6d4416d82d6d4c604eded22776ab45a2af7b24fefe3fe72513f16c12b5cf` |
+| 1 | `def` | [compactCutoff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CompactCutoff.lean/declarations/compactcutoff.md) | 26 | `declaration-track:115987212dcdd0bf8387ee8cf71a85479bf4c8a9a46e8b2fec337e8df0b6bc1d` |
+| 2 | `lemma` | [compactCutoff_smooth](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CompactCutoff.lean/declarations/compactcutoff-smooth.md) | 29 | `result-track:81ec75b871039cfe49c8b85f5a9cb54616e2d902b03714a7cb364f61de05a0d9` |
+| 3 | `lemma` | [compactCutoff_zero_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CompactCutoff.lean/declarations/compactcutoff-zero-left.md) | 34 | `result-track:920c8c7274d75a24621ebd0cfca9b4f5e125b44d15dab50a1284ac38637d1e80` |
+| 4 | `lemma` | [compactCutoff_zero_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CompactCutoff.lean/declarations/compactcutoff-zero-right.md) | 38 | `result-track:6007864d983b6351a7c4bf5933409bbc747c9623293340f666e542feb51e7a14` |
+| 5 | `lemma` | [compactCutoff_tsupport_subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CompactCutoff.lean/declarations/compactcutoff-tsupport-subset.md) | 42 | `result-track:cba9b8a2070082901774c0db6100af48cf65421e6a61ddba787e310ac7248597` |
+| 6 | `lemma` | [compactCutoff_compact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CompactCutoff.lean/declarations/compactcutoff-compact.md) | 53 | `result-track:d1fdda50774ec5a02521f47415fabb45c7e223601a0a05e023381739980c14b9` |
+| 7 | `lemma` | [compactCutoff_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CompactCutoff.lean/declarations/compactcutoff-one.md) | 56 | `result-track:f4577d9523b96d0688581994a45d28241da1f410cf60a1905d7d1162367f9cc9` |
+| 8 | `def` | [schwartzCutoff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CompactCutoff.lean/declarations/schwartzcutoff.md) | 63 | `declaration-track:62a22d1349845aecb368957eab9253f34dc9c2a762029a1bb678fd6e1296352d` |
+| 9 | `lemma` | [schwartzCutoff_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CompactCutoff.lean/declarations/schwartzcutoff-apply.md) | 66 | `result-track:2007174174c27b1c6c4fb905f4e216e9eba264a022e91181266af042ff016c8d` |
+| 10 | `lemma` | [schwartzCutoff_compact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CompactCutoff.lean/declarations/schwartzcutoff-compact.md) | 68 | `result-track:08fe2558107e3cfec37f8f0e9229e9fd2e52966979e1ca5324e0ff1f8a4223ba` |
+| 11 | `lemma` | [schwartzCutoff_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CompactCutoff.lean/declarations/schwartzcutoff-one.md) | 71 | `result-track:2fbc47c11a9049dc68f471faa9f62aba1ad768762c3665dde62584735d5e4700` |
+| 12 | `theorem` | [coupled_cutoff_active](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CompactCutoff.lean/declarations/coupled-cutoff-active.md) | 75 | `result-track:3f4f6d4416d82d6d4c604eded22776ab45a2af7b24fefe3fe72513f16c12b5cf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

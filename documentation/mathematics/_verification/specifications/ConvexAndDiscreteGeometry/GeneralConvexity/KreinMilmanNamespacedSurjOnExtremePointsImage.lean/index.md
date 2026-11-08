@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/KreinMilmanNamespacedSurjOnExtremePointsImage.lean/index.md) · [Full source](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/KreinMilmanNamespacedSurjOnExtremePointsImage.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/KreinMilmanNamespacedSurjOnExtremePointsImage.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/KreinMilmanNamespacedSurjOnExtremePointsImage.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [IsCompact.extremePoints_nonempty](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/KreinMilmanNamespacedSurjOnExtremePointsImage.lean/declarations/iscompact-extremepoints-nonempty.md) | 68 | `result-track:c0ecc8d7efb861b43e55fd21c56a79905348ed5b446ccd1acdbffa88c72da8bd` |
-| 2 | `theorem` | [closure_convexHull_extremePoints](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/KreinMilmanNamespacedSurjOnExtremePointsImage.lean/declarations/closure-convexhull-extremepoints.md) | 100 | `result-track:461a3f076dc4531dcc3c1ad9a5ca94b3b62e36ffbd63f660e32aa5ddd567b0ab` |
-| 3 | `lemma` | [surjOn_extremePoints_image](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/KreinMilmanNamespacedSurjOnExtremePointsImage.lean/declarations/surjon-extremepoints-image.md) | 115 | `result-track:b372c136b0738f85c97b25bac0f3f546d249b6fc55b195abfc7cef0666067f29` |
+| 1 | `theorem` | [IsCompact.extremePoints_nonempty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/KreinMilmanNamespacedSurjOnExtremePointsImage.lean/declarations/iscompact-extremepoints-nonempty.md) | 68 | `result-track:c0ecc8d7efb861b43e55fd21c56a79905348ed5b446ccd1acdbffa88c72da8bd` |
+| 2 | `theorem` | [closure_convexHull_extremePoints](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/KreinMilmanNamespacedSurjOnExtremePointsImage.lean/declarations/closure-convexhull-extremepoints.md) | 100 | `result-track:461a3f076dc4531dcc3c1ad9a5ca94b3b62e36ffbd63f660e32aa5ddd567b0ab` |
+| 3 | `lemma` | [surjOn_extremePoints_image](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/KreinMilmanNamespacedSurjOnExtremePointsImage.lean/declarations/surjon-extremepoints-image.md) | 115 | `result-track:b372c136b0738f85c97b25bac0f3f546d249b6fc55b195abfc7cef0666067f29` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

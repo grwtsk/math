@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RingEpiPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RingEpiPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RingEpiPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RingEpiPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [CommRingCat.epi_iff_epi](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RingEpiPublic.lean/declarations/commringcat-epi-iff-epi.md) | 26 | `result-track:a642d35f2f7254cbebb4073e427d7e7cbf90eee19ba74b79edba1868c78f6cbd` |
-| 2 | `lemma` | [RingHom.surjective_of_epi_of_finite](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RingEpiPublic.lean/declarations/ringhom-surjective-of-epi-of-finite.md) | 43 | `result-track:686b96ccc1c1e20612f69e7402b07db622896add81e074eca63237ebdad57660` |
-| 3 | `lemma` | [RingHom.surjective_iff_epi_and_finite](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RingEpiPublic.lean/declarations/ringhom-surjective-iff-epi-and-finite.md) | 49 | `result-track:90178b7141b863661de60404c7e87b7d1e93627b81e01a618e5d685034608175` |
+| 1 | `lemma` | [CommRingCat.epi_iff_epi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RingEpiPublic.lean/declarations/commringcat-epi-iff-epi.md) | 26 | `result-track:a642d35f2f7254cbebb4073e427d7e7cbf90eee19ba74b79edba1868c78f6cbd` |
+| 2 | `lemma` | [RingHom.surjective_of_epi_of_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RingEpiPublic.lean/declarations/ringhom-surjective-of-epi-of-finite.md) | 43 | `result-track:686b96ccc1c1e20612f69e7402b07db622896add81e074eca63237ebdad57660` |
+| 3 | `lemma` | [RingHom.surjective_iff_epi_and_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RingEpiPublic.lean/declarations/ringhom-surjective-iff-epi-and-finite.md) | 49 | `result-track:90178b7141b863661de60404c7e87b7d1e93627b81e01a618e5d685034608175` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualHalfCalibrationNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualHalfCalibrationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualHalfCalibrationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualHalfCalibrationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [half_error_exact](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualHalfCalibrationNamespaced.lean/declarations/half-error-exact.md) | 26 | `result-track:a69397da994353621072c9b5879859ae74c55b6e141005a41ab4ab755cc54c8f` |
-| 2 | `theorem` | [half_error_pos](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualHalfCalibrationNamespaced.lean/declarations/half-error-pos.md) | 34 | `result-track:984264cbce63e023f29b44a8a696ba8c7e5aa6563cabaf5ca3dfe765f660b867` |
-| 3 | `theorem` | [half_scaled_error_lt](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualHalfCalibrationNamespaced.lean/declarations/half-scaled-error-lt.md) | 39 | `result-track:b167dec23c15c3241f102087038071155f00f1a2d85963ecb1b5cf1ee46d012a` |
-| 4 | `theorem` | [half_error_lt](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualHalfCalibrationNamespaced.lean/declarations/half-error-lt.md) | 47 | `result-track:3588949169b76626e10b3a66a7aabdfc0c83cd5e4c74ff2494309d67833e88cf` |
-| 5 | `theorem` | [half_error_abs_lt](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualHalfCalibrationNamespaced.lean/declarations/half-error-abs-lt.md) | 53 | `result-track:b5fa8ec51ff6fa197d7285099bfeb7c6009affca4886df6ba62939b5c5dc8016` |
+| 1 | `theorem` | [half_error_exact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualHalfCalibrationNamespaced.lean/declarations/half-error-exact.md) | 26 | `result-track:a69397da994353621072c9b5879859ae74c55b6e141005a41ab4ab755cc54c8f` |
+| 2 | `theorem` | [half_error_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualHalfCalibrationNamespaced.lean/declarations/half-error-pos.md) | 34 | `result-track:984264cbce63e023f29b44a8a696ba8c7e5aa6563cabaf5ca3dfe765f660b867` |
+| 3 | `theorem` | [half_scaled_error_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualHalfCalibrationNamespaced.lean/declarations/half-scaled-error-lt.md) | 39 | `result-track:b167dec23c15c3241f102087038071155f00f1a2d85963ecb1b5cf1ee46d012a` |
+| 4 | `theorem` | [half_error_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualHalfCalibrationNamespaced.lean/declarations/half-error-lt.md) | 47 | `result-track:3588949169b76626e10b3a66a7aabdfc0c83cd5e4c74ff2494309d67833e88cf` |
+| 5 | `theorem` | [half_error_abs_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualHalfCalibrationNamespaced.lean/declarations/half-error-abs-lt.md) | 53 | `result-track:b5fa8ec51ff6fa197d7285099bfeb7c6009affca4886df6ba62939b5c5dc8016` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

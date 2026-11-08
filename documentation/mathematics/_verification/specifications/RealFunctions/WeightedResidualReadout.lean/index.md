@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/WeightedResidualReadout.lean/index.md) · [Full source](../../../../RealFunctions/WeightedResidualReadout.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/WeightedResidualReadout.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/WeightedResidualReadout.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.ErrorBounds.SourceResidualConvergence`](../../../../RealFunctions/SourceResidualConvergence.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Analysis.ErrorBounds.SourceResidualConvergence`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceResidualConvergence.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [coordinate_le_channelMass](../../../../RealFunctions/WeightedResidualReadout.lean/declarations/coordinate-le-channelmass.md) | 9 | `result-track:73008bc0d6d2396e25ae48cfbe23a835bbe2e874e6cd26f59edc67c391a82fdb` |
-| 2 | `theorem` | [coordinate_vanishes_of_mass](../../../../RealFunctions/WeightedResidualReadout.lean/declarations/coordinate-vanishes-of-mass.md) | 17 | `result-track:2977711f42e8f9dc649fe008798bfaff5ee83bfb26eee6baaceef1d09aaa0643` |
-| 3 | `theorem` | [readout_vanishes_of_mass](../../../../RealFunctions/WeightedResidualReadout.lean/declarations/readout-vanishes-of-mass.md) | 32 | `result-track:84129ca91fc841ce92f227c4334571a4118df9ac318ff975905672b3d7ede322` |
+| 1 | `theorem` | [coordinate_le_channelMass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/WeightedResidualReadout.lean/declarations/coordinate-le-channelmass.md) | 9 | `result-track:73008bc0d6d2396e25ae48cfbe23a835bbe2e874e6cd26f59edc67c391a82fdb` |
+| 2 | `theorem` | [coordinate_vanishes_of_mass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/WeightedResidualReadout.lean/declarations/coordinate-vanishes-of-mass.md) | 17 | `result-track:2977711f42e8f9dc649fe008798bfaff5ee83bfb26eee6baaceef1d09aaa0643` |
+| 3 | `theorem` | [readout_vanishes_of_mass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/WeightedResidualReadout.lean/declarations/readout-vanishes-of-mass.md) | 32 | `result-track:84129ca91fc841ce92f227c4334571a4118df9ac318ff975905672b3d7ede322` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

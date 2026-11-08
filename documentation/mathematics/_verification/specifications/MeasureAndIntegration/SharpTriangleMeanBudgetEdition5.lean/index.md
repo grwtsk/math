@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SharpTriangleMeanBudgetEdition5.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SharpTriangleMeanBudgetEdition5.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SharpTriangleMeanBudgetEdition5.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SharpTriangleMeanBudgetEdition5.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [cumulative](../../../../MeasureAndIntegration/SharpTriangleMeanBudgetEdition5.lean/declarations/cumulative.md) | 16 | `declaration-track:f198f3487570d9e6768d656d13bb22247fba036bc5e13c4b822c803e6eab8750` |
-| 2 | `theorem` | [cumulative_hasDerivAt](../../../../MeasureAndIntegration/SharpTriangleMeanBudgetEdition5.lean/declarations/cumulative-hasderivat.md) | 18 | `result-track:ee2c8f24f17b0c8a4960111fea87b1ecd895db438841ded8ab937e0c0f5154f2` |
-| 3 | `theorem` | [cumulative_continuous](../../../../MeasureAndIntegration/SharpTriangleMeanBudgetEdition5.lean/declarations/cumulative-continuous.md) | 23 | `result-track:25633dcc2960c5d04c483c30891ae8a95876337bf9e0cc7721ff722872426e8d` |
-| 4 | `theorem` | [triangle_integral_eq](../../../../MeasureAndIntegration/SharpTriangleMeanBudgetEdition5.lean/declarations/triangle-integral-eq.md) | 27 | `result-track:9a527d8df30b4dc37371eac1cb419a5728beae58e66b30253e112a327e89ecbc` |
-| 5 | `theorem` | [triangle_integral_le](../../../../MeasureAndIntegration/SharpTriangleMeanBudgetEdition5.lean/declarations/triangle-integral-le.md) | 81 | `result-track:40de75643d3cb17c2c7ec970d4198b17cda6c1af3d5b9927f3ac3ae51f6f15cc` |
+| 1 | `def` | [cumulative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SharpTriangleMeanBudgetEdition5.lean/declarations/cumulative.md) | 16 | `declaration-track:f198f3487570d9e6768d656d13bb22247fba036bc5e13c4b822c803e6eab8750` |
+| 2 | `theorem` | [cumulative_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SharpTriangleMeanBudgetEdition5.lean/declarations/cumulative-hasderivat.md) | 18 | `result-track:ee2c8f24f17b0c8a4960111fea87b1ecd895db438841ded8ab937e0c0f5154f2` |
+| 3 | `theorem` | [cumulative_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SharpTriangleMeanBudgetEdition5.lean/declarations/cumulative-continuous.md) | 23 | `result-track:25633dcc2960c5d04c483c30891ae8a95876337bf9e0cc7721ff722872426e8d` |
+| 4 | `theorem` | [triangle_integral_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SharpTriangleMeanBudgetEdition5.lean/declarations/triangle-integral-eq.md) | 27 | `result-track:9a527d8df30b4dc37371eac1cb419a5728beae58e66b30253e112a327e89ecbc` |
+| 5 | `theorem` | [triangle_integral_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SharpTriangleMeanBudgetEdition5.lean/declarations/triangle-integral-le.md) | 81 | `result-track:40de75643d3cb17c2c7ec970d4198b17cda6c1af3d5b9927f3ac3ae51f6f15cc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

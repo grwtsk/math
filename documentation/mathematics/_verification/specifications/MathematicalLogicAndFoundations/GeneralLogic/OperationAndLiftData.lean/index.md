@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OperationAndLiftData.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OperationAndLiftData.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OperationAndLiftData.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OperationAndLiftData.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [HeisenbergExtension](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OperationAndLiftData.lean/declarations/heisenbergextension.md) | 41 | `declaration-track:25ad23cbeed1565d7d09c364564c64cf7a5990a78b0ba72acce20decd1b98b26` |
+| 1 | `structure` | [HeisenbergExtension](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OperationAndLiftData.lean/declarations/heisenbergextension.md) | 41 | `declaration-track:25ad23cbeed1565d7d09c364564c64cf7a5990a78b0ba72acce20decd1b98b26` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

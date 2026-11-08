@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ActualMovingEndpointAttempt02.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ActualMovingEndpointAttempt02.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualMovingEndpointAttempt02.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualMovingEndpointAttempt02.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualAffineError](../../../../MeasureAndIntegration/ActualMovingEndpointAttempt02.lean/declarations/actualaffineerror.md) | 18 | `declaration-track:3937fc54a5fe4fa70da771f6259755c65ee1bc9d31a40199f6d14871a49ab8c8` |
-| 2 | `theorem` | [actual_primitive_error_dictionary](../../../../MeasureAndIntegration/ActualMovingEndpointAttempt02.lean/declarations/actual-primitive-error-dictionary.md) | 21 | `result-track:8aa5829f9a98892b6811c3a7972a45c31742d87a8d98c8d52322306c4fcf0512` |
-| 3 | `theorem` | [actual_moving_endpoint_dictionary](../../../../MeasureAndIntegration/ActualMovingEndpointAttempt02.lean/declarations/actual-moving-endpoint-dictionary.md) | 28 | `result-track:4c63bfaa54c341c4be5747da7e9e0df46fbeedad63066d8028cf226b22af3504` |
-| 4 | `theorem` | [inverse_square_eq_rpow](../../../../MeasureAndIntegration/ActualMovingEndpointAttempt02.lean/declarations/inverse-square-eq-rpow.md) | 40 | `result-track:7631de7d3b6b45fb1c57a1c8b7e5d7b2b8a22572a4e96685602e9e94069be8ee` |
-| 5 | `theorem` | [inverse_square_integrable](../../../../MeasureAndIntegration/ActualMovingEndpointAttempt02.lean/declarations/inverse-square-integrable.md) | 44 | `result-track:27ccacdb962c84928bb51b74897766ad4ed7a65866293a680177763db1ea0d40` |
-| 6 | `theorem` | [inverse_square_integral](../../../../MeasureAndIntegration/ActualMovingEndpointAttempt02.lean/declarations/inverse-square-integral.md) | 49 | `result-track:be0abbba2881f8d920108cdb8da35b5fca863c67d864338effd825e0c4fce9a8` |
-| 7 | `theorem` | [actual_prime_tail_abs_le](../../../../MeasureAndIntegration/ActualMovingEndpointAttempt02.lean/declarations/actual-prime-tail-abs-le.md) | 56 | `result-track:d5e55a735d0cfcf9a716134a27b60c1b77ffeeb1cdef666c7255208dd10236cb` |
-| 8 | `theorem` | [actual_affine_error_abs_le](../../../../MeasureAndIntegration/ActualMovingEndpointAttempt02.lean/declarations/actual-affine-error-abs-le.md) | 68 | `result-track:8f0aa910e310c6f1151e6ea2cdabf084a9936917e3c9de9b04d95cdeaa4e9a22` |
-| 9 | `theorem` | [decay_interval_integral](../../../../MeasureAndIntegration/ActualMovingEndpointAttempt02.lean/declarations/decay-interval-integral.md) | 79 | `result-track:335bb80fc52397521da455028a894c8f0129af1382bc148fcaea3ece0e1047c8` |
-| 10 | `theorem` | [actual_affine_error_increment](../../../../MeasureAndIntegration/ActualMovingEndpointAttempt02.lean/declarations/actual-affine-error-increment.md) | 90 | `result-track:278ec34380007a7d1f6dbd587af85e86eac83efbc6273713f48a04558565e8b8` |
+| 1 | `def` | [actualAffineError](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualMovingEndpointAttempt02.lean/declarations/actualaffineerror.md) | 18 | `declaration-track:3937fc54a5fe4fa70da771f6259755c65ee1bc9d31a40199f6d14871a49ab8c8` |
+| 2 | `theorem` | [actual_primitive_error_dictionary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualMovingEndpointAttempt02.lean/declarations/actual-primitive-error-dictionary.md) | 21 | `result-track:8aa5829f9a98892b6811c3a7972a45c31742d87a8d98c8d52322306c4fcf0512` |
+| 3 | `theorem` | [actual_moving_endpoint_dictionary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualMovingEndpointAttempt02.lean/declarations/actual-moving-endpoint-dictionary.md) | 28 | `result-track:4c63bfaa54c341c4be5747da7e9e0df46fbeedad63066d8028cf226b22af3504` |
+| 4 | `theorem` | [inverse_square_eq_rpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualMovingEndpointAttempt02.lean/declarations/inverse-square-eq-rpow.md) | 40 | `result-track:7631de7d3b6b45fb1c57a1c8b7e5d7b2b8a22572a4e96685602e9e94069be8ee` |
+| 5 | `theorem` | [inverse_square_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualMovingEndpointAttempt02.lean/declarations/inverse-square-integrable.md) | 44 | `result-track:27ccacdb962c84928bb51b74897766ad4ed7a65866293a680177763db1ea0d40` |
+| 6 | `theorem` | [inverse_square_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualMovingEndpointAttempt02.lean/declarations/inverse-square-integral.md) | 49 | `result-track:be0abbba2881f8d920108cdb8da35b5fca863c67d864338effd825e0c4fce9a8` |
+| 7 | `theorem` | [actual_prime_tail_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualMovingEndpointAttempt02.lean/declarations/actual-prime-tail-abs-le.md) | 56 | `result-track:d5e55a735d0cfcf9a716134a27b60c1b77ffeeb1cdef666c7255208dd10236cb` |
+| 8 | `theorem` | [actual_affine_error_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualMovingEndpointAttempt02.lean/declarations/actual-affine-error-abs-le.md) | 68 | `result-track:8f0aa910e310c6f1151e6ea2cdabf084a9936917e3c9de9b04d95cdeaa4e9a22` |
+| 9 | `theorem` | [decay_interval_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualMovingEndpointAttempt02.lean/declarations/decay-interval-integral.md) | 79 | `result-track:335bb80fc52397521da455028a894c8f0129af1382bc148fcaea3ece0e1047c8` |
+| 10 | `theorem` | [actual_affine_error_increment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualMovingEndpointAttempt02.lean/declarations/actual-affine-error-increment.md) | 90 | `result-track:278ec34380007a7d1f6dbd587af85e86eac83efbc6273713f48a04558565e8b8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

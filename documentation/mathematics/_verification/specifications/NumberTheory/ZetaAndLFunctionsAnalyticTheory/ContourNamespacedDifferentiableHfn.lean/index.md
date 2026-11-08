@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ContourNamespacedDifferentiableHfn.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ContourNamespacedDifferentiableHfn.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ContourNamespacedDifferentiableHfn.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ContourNamespacedDifferentiableHfn.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [differentiable_Hfn](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ContourNamespacedDifferentiableHfn.lean/declarations/differentiable-hfn.md) | 34 | `result-track:eebfc595373ce07b9069ec29beef942535178d9510171dd3e98f1191bc3e42e8` |
-| 2 | `theorem` | [mem_rectangle_iff](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ContourNamespacedDifferentiableHfn.lean/declarations/mem-rectangle-iff.md) | 41 | `result-track:f929720f7589fc76c90a0b36ddb0750730b9d905026514e1ae662a723119a1e4` |
-| 3 | `theorem` | [rectangle_identity_of](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ContourNamespacedDifferentiableHfn.lean/declarations/rectangle-identity-of.md) | 51 | `result-track:f7de8f89c266bc6625daa80751379183a645bb21fd8d590228d16570096b301e` |
-| 4 | `theorem` | [rectangle_identity](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ContourNamespacedDifferentiableHfn.lean/declarations/rectangle-identity.md) | 122 | `result-track:232f088e453ab3906c9f160c00e017552e9d885760e750e1f6fb159a11c8ac90` |
+| 1 | `theorem` | [differentiable_Hfn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ContourNamespacedDifferentiableHfn.lean/declarations/differentiable-hfn.md) | 34 | `result-track:eebfc595373ce07b9069ec29beef942535178d9510171dd3e98f1191bc3e42e8` |
+| 2 | `theorem` | [mem_rectangle_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ContourNamespacedDifferentiableHfn.lean/declarations/mem-rectangle-iff.md) | 41 | `result-track:f929720f7589fc76c90a0b36ddb0750730b9d905026514e1ae662a723119a1e4` |
+| 3 | `theorem` | [rectangle_identity_of](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ContourNamespacedDifferentiableHfn.lean/declarations/rectangle-identity-of.md) | 51 | `result-track:f7de8f89c266bc6625daa80751379183a645bb21fd8d590228d16570096b301e` |
+| 4 | `theorem` | [rectangle_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ContourNamespacedDifferentiableHfn.lean/declarations/rectangle-identity.md) | 122 | `result-track:232f088e453ab3906c9f160c00e017552e9d885760e750e1f6fb159a11c8ac90` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

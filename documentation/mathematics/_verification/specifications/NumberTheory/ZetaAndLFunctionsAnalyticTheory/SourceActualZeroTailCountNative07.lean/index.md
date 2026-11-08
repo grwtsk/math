@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualZeroTailCountNative07.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualZeroTailCountNative07.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualZeroTailCountNative07.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualZeroTailCountNative07.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualZeroSixTail](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualZeroTailCountNative07.lean/declarations/actualzerosixtail.md) | 17 | `declaration-track:ab0d268ebe5b5e55720787e1626a06f165c473dbe1da9c74f10f5b9eaae11814` |
-| 2 | `theorem` | [positive_key_bounds](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualZeroTailCountNative07.lean/declarations/positive-key-bounds.md) | 21 | `result-track:fcf2d8751fbb279ca92c57e85ee47228cfa42028a5ac8342304ad5c226c1ff1a` |
-| 3 | `theorem` | [side_budget_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualZeroTailCountNative07.lean/declarations/side-budget-le.md) | 32 | `result-track:55b5ddb47ed0b30b5f405b9dfc35eb4a30cab1e6e633aee8106ad27bc8ca4788` |
-| 4 | `theorem` | [positive_six_sum_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualZeroTailCountNative07.lean/declarations/positive-six-sum-le.md) | 48 | `result-track:5fc861b73dfa6c9a83b0b4612e391cf77f8ca04c9d8bf70d4e2568e71a520eb0` |
-| 5 | `theorem` | [negative_six_sum_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualZeroTailCountNative07.lean/declarations/negative-six-sum-le.md) | 97 | `result-track:057a97f4979943372475c1a11ae762812d49a77256f8d98ebfdf60fb59c4f7dc` |
-| 6 | `theorem` | [actualZeroSixTail_count_bound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualZeroTailCountNative07.lean/declarations/actualzerosixtail-count-bound.md) | 155 | `result-track:115bf76044f50eb910d84f912f808d3e77a975f7e75ebfb74566ae09ed5ed692` |
+| 1 | `def` | [actualZeroSixTail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualZeroTailCountNative07.lean/declarations/actualzerosixtail.md) | 17 | `declaration-track:ab0d268ebe5b5e55720787e1626a06f165c473dbe1da9c74f10f5b9eaae11814` |
+| 2 | `theorem` | [positive_key_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualZeroTailCountNative07.lean/declarations/positive-key-bounds.md) | 21 | `result-track:fcf2d8751fbb279ca92c57e85ee47228cfa42028a5ac8342304ad5c226c1ff1a` |
+| 3 | `theorem` | [side_budget_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualZeroTailCountNative07.lean/declarations/side-budget-le.md) | 32 | `result-track:55b5ddb47ed0b30b5f405b9dfc35eb4a30cab1e6e633aee8106ad27bc8ca4788` |
+| 4 | `theorem` | [positive_six_sum_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualZeroTailCountNative07.lean/declarations/positive-six-sum-le.md) | 48 | `result-track:5fc861b73dfa6c9a83b0b4612e391cf77f8ca04c9d8bf70d4e2568e71a520eb0` |
+| 5 | `theorem` | [negative_six_sum_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualZeroTailCountNative07.lean/declarations/negative-six-sum-le.md) | 97 | `result-track:057a97f4979943372475c1a11ae762812d49a77256f8d98ebfdf60fb59c4f7dc` |
+| 6 | `theorem` | [actualZeroSixTail_count_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualZeroTailCountNative07.lean/declarations/actualzerosixtail-count-bound.md) | 155 | `result-track:115bf76044f50eb910d84f912f808d3e77a975f7e75ebfb74566ae09ed5ed692` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

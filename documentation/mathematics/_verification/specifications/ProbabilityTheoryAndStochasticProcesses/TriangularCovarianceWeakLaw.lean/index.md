@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/TriangularCovarianceWeakLaw.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/TriangularCovarianceWeakLaw.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/TriangularCovarianceWeakLaw.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/TriangularCovarianceWeakLaw.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Probability.Moments.VarianceBudgetConvergence`](../../../../ProbabilityTheoryAndStochasticProcesses/VarianceBudgetConvergence.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Probability.Moments.VarianceBudgetConvergence`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/VarianceBudgetConvergence.lean/index.md) — import line 1; pinned internal source present.
 - `Mathlib.Analysis.SpecificLimits.Basic` — import line 2; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [triangular_average_centered_tail_tendsto_zero](../../../../ProbabilityTheoryAndStochasticProcesses/TriangularCovarianceWeakLaw.lean/declarations/triangular-average-centered-tail-tendsto-zero.md) | 14 | `result-track:ce90395af2dab37e76fabefbed6e4e396f7dd08ac5468a7a3b3fadd50a1002f3` |
+| 1 | `theorem` | [triangular_average_centered_tail_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/TriangularCovarianceWeakLaw.lean/declarations/triangular-average-centered-tail-tendsto-zero.md) | 14 | `result-track:ce90395af2dab37e76fabefbed6e4e396f7dd08ac5468a7a3b3fadd50a1002f3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

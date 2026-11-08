@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicPrimeOnlyLiteralFormulasControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicPrimeOnlyLiteralFormulasControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicPrimeOnlyLiteralFormulasControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicPrimeOnlyLiteralFormulasControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.DyadicPrimeOnlyLiteralFormulas`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicPrimeOnlyLiteralFormulas.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.DyadicPrimeOnlyLiteralFormulas`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicPrimeOnlyLiteralFormulas.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [endpoint_sum_is_theta_octave_discrepancy](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicPrimeOnlyLiteralFormulasControls.lean/declarations/endpoint-sum-is-theta-octave-discrepancy.md) | 14 | `result-track:f9a7475d1c3733b4a263575e8a95efde5eda04fbaa5fa9547734cba125530914` |
+| 1 | `theorem` | [endpoint_sum_is_theta_octave_discrepancy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicPrimeOnlyLiteralFormulasControls.lean/declarations/endpoint-sum-is-theta-octave-discrepancy.md) | 14 | `result-track:f9a7475d1c3733b4a263575e8a95efde5eda04fbaa5fa9547734cba125530914` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

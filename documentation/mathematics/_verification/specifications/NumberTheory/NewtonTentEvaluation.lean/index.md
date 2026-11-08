@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/NewtonTentEvaluation.lean/index.md) · [Full source](../../../../NumberTheory/NewtonTentEvaluation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NewtonTentEvaluation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NewtonTentEvaluation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.LocalNewtonWitness`](../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/LocalNewtonWitness.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Chebyshev.CanonicalTentEvaluation`](../../../../NumberTheory/CanonicalTentEvaluation.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.LocalNewtonWitness`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/LocalNewtonWitness.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.CanonicalTentEvaluation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentEvaluation.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [checkWithin](../../../../NumberTheory/NewtonTentEvaluation.lean/declarations/checkwithin.md) | 32 | `declaration-track:3304e0b9c6c36b2edaa85bbae5f82c773374f56ae91f015fe7539642d409b81f` |
-| 2 | `theorem` | [checkWithin_sound](../../../../NumberTheory/NewtonTentEvaluation.lean/declarations/checkwithin-sound.md) | 37 | `result-track:72c66adedc8eb15947e6ca322fa9f7e4ebf7dc5c43425e8a2d397dc233383497` |
+| 1 | `def` | [checkWithin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NewtonTentEvaluation.lean/declarations/checkwithin.md) | 32 | `declaration-track:3304e0b9c6c36b2edaa85bbae5f82c773374f56ae91f015fe7539642d409b81f` |
+| 2 | `theorem` | [checkWithin_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NewtonTentEvaluation.lean/declarations/checkwithin-sound.md) | 37 | `result-track:72c66adedc8eb15947e6ca322fa9f7e4ebf7dc5c43425e8a2d397dc233383497` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

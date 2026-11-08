@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/AOneSidedFunctionBoundDoesNotBoundTheNativeSecondAbelPairingEdition2.lean/index.md) · [Full source](../../../../MeasureAndIntegration/AOneSidedFunctionBoundDoesNotBoundTheNativeSecondAbelPairingEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AOneSidedFunctionBoundDoesNotBoundTheNativeSecondAbelPairingEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AOneSidedFunctionBoundDoesNotBoundTheNativeSecondAbelPairingEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualKernel](../../../../MeasureAndIntegration/AOneSidedFunctionBoundDoesNotBoundTheNativeSecondAbelPairingEdition2.lean/declarations/actualkernel.md) | 30 | `declaration-track:7a74f4b27c8eebb74198843149a7512e6ebc5d0220ccb6541150bc424bac5023` |
-| 2 | `theorem` | [actual_kernel_continuous](../../../../MeasureAndIntegration/AOneSidedFunctionBoundDoesNotBoundTheNativeSecondAbelPairingEdition2.lean/declarations/actual-kernel-continuous.md) | 34 | `result-track:760f0edb7d893899b8e0bd389549fba885d7e0304a55c98c181be7e70cd32b0e` |
-| 3 | `theorem` | [actual_kernel_negative_at_zero](../../../../MeasureAndIntegration/AOneSidedFunctionBoundDoesNotBoundTheNativeSecondAbelPairingEdition2.lean/declarations/actual-kernel-negative-at-zero.md) | 38 | `result-track:abaf47d11130713f462126b79bc47c96b57bf3f79631ba9f131e9c308817887b` |
-| 4 | `theorem` | [smooth_nonpositive_pairing_unbounded](../../../../MeasureAndIntegration/AOneSidedFunctionBoundDoesNotBoundTheNativeSecondAbelPairingEdition2.lean/declarations/smooth-nonpositive-pairing-unbounded.md) | 42 | `result-track:ab7315919548dff5849b011ca9d6a4fad1e0462f5b5d8c3650b63589111503d9` |
-| 5 | `theorem` | [actual_native_pairing_unbounded](../../../../MeasureAndIntegration/AOneSidedFunctionBoundDoesNotBoundTheNativeSecondAbelPairingEdition2.lean/declarations/actual-native-pairing-unbounded.md) | 93 | `result-track:d5e2422887627910e3e29a1dfff7a3e8dd490c1048d1584c997f75e222c05ffb` |
+| 1 | `def` | [actualKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AOneSidedFunctionBoundDoesNotBoundTheNativeSecondAbelPairingEdition2.lean/declarations/actualkernel.md) | 30 | `declaration-track:7a74f4b27c8eebb74198843149a7512e6ebc5d0220ccb6541150bc424bac5023` |
+| 2 | `theorem` | [actual_kernel_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AOneSidedFunctionBoundDoesNotBoundTheNativeSecondAbelPairingEdition2.lean/declarations/actual-kernel-continuous.md) | 34 | `result-track:760f0edb7d893899b8e0bd389549fba885d7e0304a55c98c181be7e70cd32b0e` |
+| 3 | `theorem` | [actual_kernel_negative_at_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AOneSidedFunctionBoundDoesNotBoundTheNativeSecondAbelPairingEdition2.lean/declarations/actual-kernel-negative-at-zero.md) | 38 | `result-track:abaf47d11130713f462126b79bc47c96b57bf3f79631ba9f131e9c308817887b` |
+| 4 | `theorem` | [smooth_nonpositive_pairing_unbounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AOneSidedFunctionBoundDoesNotBoundTheNativeSecondAbelPairingEdition2.lean/declarations/smooth-nonpositive-pairing-unbounded.md) | 42 | `result-track:ab7315919548dff5849b011ca9d6a4fad1e0462f5b5d8c3650b63589111503d9` |
+| 5 | `theorem` | [actual_native_pairing_unbounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AOneSidedFunctionBoundDoesNotBoundTheNativeSecondAbelPairingEdition2.lean/declarations/actual-native-pairing-unbounded.md) | 93 | `result-track:d5e2422887627910e3e29a1dfff7a3e8dd490c1048d1584c997f75e222c05ffb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

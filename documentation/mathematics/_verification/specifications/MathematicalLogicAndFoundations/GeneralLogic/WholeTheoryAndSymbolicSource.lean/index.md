@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeTheoryAndSymbolicSource.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeTheoryAndSymbolicSource.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeTheoryAndSymbolicSource.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeTheoryAndSymbolicSource.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [InvariantTheory](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeTheoryAndSymbolicSource.lean/declarations/invarianttheory.md) | 37 | `declaration-track:a1c427ccfb8b30fdbcbce718f451ef6260347960a80274df78a6f088d71b84da` |
-| 2 | `structure` | [SourceSpecialization](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeTheoryAndSymbolicSource.lean/declarations/sourcespecialization.md) | 44 | `declaration-track:8cf473dea87258f66653b1a604584c50ba18314a75c659f2747e41ca5ae1fa08` |
-| 3 | `def` | [canonicalSourceTheory](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeTheoryAndSymbolicSource.lean/declarations/canonicalsourcetheory.md) | 55 | `declaration-track:bccf8dd629d73f2deed4a09a1b3bbc46cec059e8b65fb2674ec812fbf47d1664` |
-| 4 | `def` | [canonicalSourceSpecialization](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeTheoryAndSymbolicSource.lean/declarations/canonicalsourcespecialization.md) | 64 | `declaration-track:8e1d8a57609163bdfe82aaa42c578ac3ebcee6b12d9804857ed4cd520ad5727f` |
-| 5 | `def` | [emptyCanonicalSource](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeTheoryAndSymbolicSource.lean/declarations/emptycanonicalsource.md) | 73 | `declaration-track:b7253fb94518691bc43527a1ce9b88943a3593677c0e510da5a1f0fd05aba835` |
-| 6 | `def` | [emptySourceSpecialization](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeTheoryAndSymbolicSource.lean/declarations/emptysourcespecialization.md) | 78 | `declaration-track:a3530df7084d23c8c66400fe70864808ea1289f98f2e911c66fbc27bb027998e` |
+| 1 | `structure` | [InvariantTheory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeTheoryAndSymbolicSource.lean/declarations/invarianttheory.md) | 37 | `declaration-track:a1c427ccfb8b30fdbcbce718f451ef6260347960a80274df78a6f088d71b84da` |
+| 2 | `structure` | [SourceSpecialization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeTheoryAndSymbolicSource.lean/declarations/sourcespecialization.md) | 44 | `declaration-track:8cf473dea87258f66653b1a604584c50ba18314a75c659f2747e41ca5ae1fa08` |
+| 3 | `def` | [canonicalSourceTheory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeTheoryAndSymbolicSource.lean/declarations/canonicalsourcetheory.md) | 55 | `declaration-track:bccf8dd629d73f2deed4a09a1b3bbc46cec059e8b65fb2674ec812fbf47d1664` |
+| 4 | `def` | [canonicalSourceSpecialization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeTheoryAndSymbolicSource.lean/declarations/canonicalsourcespecialization.md) | 64 | `declaration-track:8e1d8a57609163bdfe82aaa42c578ac3ebcee6b12d9804857ed4cd520ad5727f` |
+| 5 | `def` | [emptyCanonicalSource](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeTheoryAndSymbolicSource.lean/declarations/emptycanonicalsource.md) | 73 | `declaration-track:b7253fb94518691bc43527a1ce9b88943a3593677c0e510da5a1f0fd05aba835` |
+| 6 | `def` | [emptySourceSpecialization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeTheoryAndSymbolicSource.lean/declarations/emptysourcespecialization.md) | 78 | `declaration-track:a3530df7084d23c8c66400fe70864808ea1289f98f2e911c66fbc27bb027998e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

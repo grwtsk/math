@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualPsiFloorDensitySigns.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualPsiFloorDensitySigns.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualPsiFloorDensitySigns.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualPsiFloorDensitySigns.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_plain_profile_derivative_neg_on_twenty](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualPsiFloorDensitySigns.lean/declarations/actual-plain-profile-derivative-neg-on-twenty.md) | 23 | `result-track:c97299e31335024010f24d3fc8548e8f9b069d35f6a9e299a4d2504c88b32cac` |
-| 2 | `theorem` | [actual_signed_psi_floor_negative_block](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualPsiFloorDensitySigns.lean/declarations/actual-signed-psi-floor-negative-block.md) | 66 | `result-track:b249e3190daf459e9f0324f68d716eceb9449864cd91792d9164cf05e41e0062` |
-| 3 | `theorem` | [actual_signed_psi_floor_positive_block](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualPsiFloorDensitySigns.lean/declarations/actual-signed-psi-floor-positive-block.md) | 78 | `result-track:0567debebb3a4331a9b9de6b64f27b6c3b1a24214d541ce457f19c3b01a493a6` |
-| 4 | `theorem` | [actual_signed_psi_floor_pairing_density_both_signs](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualPsiFloorDensitySigns.lean/declarations/actual-signed-psi-floor-pairing-density-both-signs.md) | 90 | `result-track:6aa5cbb9d4f81653bf20f7117b5ac984cd397ce2e18a43b2b86dd182a8c46910` |
+| 1 | `theorem` | [actual_plain_profile_derivative_neg_on_twenty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualPsiFloorDensitySigns.lean/declarations/actual-plain-profile-derivative-neg-on-twenty.md) | 23 | `result-track:c97299e31335024010f24d3fc8548e8f9b069d35f6a9e299a4d2504c88b32cac` |
+| 2 | `theorem` | [actual_signed_psi_floor_negative_block](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualPsiFloorDensitySigns.lean/declarations/actual-signed-psi-floor-negative-block.md) | 66 | `result-track:b249e3190daf459e9f0324f68d716eceb9449864cd91792d9164cf05e41e0062` |
+| 3 | `theorem` | [actual_signed_psi_floor_positive_block](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualPsiFloorDensitySigns.lean/declarations/actual-signed-psi-floor-positive-block.md) | 78 | `result-track:0567debebb3a4331a9b9de6b64f27b6c3b1a24214d541ce457f19c3b01a493a6` |
+| 4 | `theorem` | [actual_signed_psi_floor_pairing_density_both_signs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualPsiFloorDensitySigns.lean/declarations/actual-signed-psi-floor-pairing-density-both-signs.md) | 90 | `result-track:6aa5cbb9d4f81653bf20f7117b5ac984cd397ce2e18a43b2b86dd182a8c46910` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalZetaCenterCore.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalZetaCenterCore.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalZetaCenterCore.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalZetaCenterCore.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,12 +46,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Interfaces.FiniteZetaCenterCore`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FiniteZetaCenterCore.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Interfaces.RationalPowerEvaluationCore`](../../../../../FunctionsOfAComplexVariable/RationalPowerEvaluationCore.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.RationalZetaCenterEvaluation`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalZetaCenterEvaluation.lean/index.md) — import line 6; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.RationalZetaCenterRefinement`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/RationalZetaCenterRefinement.lean/index.md) — import line 7; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.VerifiedRationalNewtonCenter`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/VerifiedRationalNewtonCenter.lean/index.md) — import line 8; pinned internal source present.
-- [`GRWTSK.NumberTheory.Chebyshev.Checks.RationalZetaCenterControls`](../../../../../NumberTheory/RationalZetaCenterControls.lean/index.md) — import line 9; pinned internal source present.
+- [`GRWTSK.Interfaces.FiniteZetaCenterCore`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FiniteZetaCenterCore.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Interfaces.RationalPowerEvaluationCore`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalPowerEvaluationCore.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.RationalZetaCenterEvaluation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RationalZetaCenterEvaluation.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.RationalZetaCenterRefinement`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/RationalZetaCenterRefinement.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.VerifiedRationalNewtonCenter`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/VerifiedRationalNewtonCenter.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.Checks.RationalZetaCenterControls`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RationalZetaCenterControls.lean/index.md) — import line 9; pinned internal source present.
 
 ## Top results and three-degree verification metric
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SubWithTopSubNeTopIff.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SubWithTopSubNeTopIff.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SubWithTopSubNeTopIff.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SubWithTopSubNeTopIff.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [sub](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SubWithTopSubNeTopIff.lean/declarations/sub.md) | 33 | `declaration-track:af8e3dedee321e664730df8172c4e9ddc175cbeed619413ee3bf50434ca070e4` |
-| 2 | `instance` | [(anonymous)](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SubWithTopSubNeTopIff.lean/declarations/instance.md) | 38 | `declaration-track:5c954c53d8175d0c8aa1796943b191c790309176c27aff607dee00248ea60b27` |
-| 3 | `theorem` | [coe_sub](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SubWithTopSubNeTopIff.lean/declarations/coe-sub.md) | 42 | `result-track:d48ded31fe231f55e3df02b057b2324d6d77013fd7753bf164982fc84790086d` |
-| 4 | `theorem` | [top_sub_coe](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SubWithTopSubNeTopIff.lean/declarations/top-sub-coe.md) | 46 | `result-track:484755dde49b12827f6e2306ea7e8e26e766181f4e048ae451f5570692da7872` |
-| 5 | `theorem` | [sub_top](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SubWithTopSubNeTopIff.lean/declarations/sub-top.md) | 50 | `result-track:5736b85d921ded6a4f5eefc122b1fd562419433a3637b48c8dc13629a8ca5e55` |
-| 6 | `theorem` | [sub_eq_top_iff](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SubWithTopSubNeTopIff.lean/declarations/sub-eq-top-iff.md) | 52 | `result-track:f5d6756999cd4891e9ed1b6692d4d0bed03627583cfb305e528500ab556b4aff` |
-| 7 | `lemma` | [sub_ne_top_iff](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SubWithTopSubNeTopIff.lean/declarations/sub-ne-top-iff.md) | 57 | `result-track:9a15d196748a2ae857562623cf221e2755cc53039045f74dcaafce7904d6e569` |
-| 8 | `theorem` | [map_sub](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SubWithTopSubNeTopIff.lean/declarations/map-sub.md) | 60 | `result-track:5aba82f63b24bc6179a2a58b388f5e971941269a77f6e79c0acc5d8739371482` |
-| 9 | `instance` | [(anonymous)](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SubWithTopSubNeTopIff.lean/declarations/instance-source-edition-2.md) | 70 | `declaration-track:93f56a4d959931c5a2672fd45580cb02aae5bc6978521601c5be6fe62a7d427e` |
+| 1 | `def` | [sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SubWithTopSubNeTopIff.lean/declarations/sub.md) | 33 | `declaration-track:af8e3dedee321e664730df8172c4e9ddc175cbeed619413ee3bf50434ca070e4` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SubWithTopSubNeTopIff.lean/declarations/instance.md) | 38 | `declaration-track:5c954c53d8175d0c8aa1796943b191c790309176c27aff607dee00248ea60b27` |
+| 3 | `theorem` | [coe_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SubWithTopSubNeTopIff.lean/declarations/coe-sub.md) | 42 | `result-track:d48ded31fe231f55e3df02b057b2324d6d77013fd7753bf164982fc84790086d` |
+| 4 | `theorem` | [top_sub_coe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SubWithTopSubNeTopIff.lean/declarations/top-sub-coe.md) | 46 | `result-track:484755dde49b12827f6e2306ea7e8e26e766181f4e048ae451f5570692da7872` |
+| 5 | `theorem` | [sub_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SubWithTopSubNeTopIff.lean/declarations/sub-top.md) | 50 | `result-track:5736b85d921ded6a4f5eefc122b1fd562419433a3637b48c8dc13629a8ca5e55` |
+| 6 | `theorem` | [sub_eq_top_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SubWithTopSubNeTopIff.lean/declarations/sub-eq-top-iff.md) | 52 | `result-track:f5d6756999cd4891e9ed1b6692d4d0bed03627583cfb305e528500ab556b4aff` |
+| 7 | `lemma` | [sub_ne_top_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SubWithTopSubNeTopIff.lean/declarations/sub-ne-top-iff.md) | 57 | `result-track:9a15d196748a2ae857562623cf221e2755cc53039045f74dcaafce7904d6e569` |
+| 8 | `theorem` | [map_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SubWithTopSubNeTopIff.lean/declarations/map-sub.md) | 60 | `result-track:5aba82f63b24bc6179a2a58b388f5e971941269a77f6e79c0acc5d8739371482` |
+| 9 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SubWithTopSubNeTopIff.lean/declarations/instance-source-edition-2.md) | 70 | `declaration-track:93f56a4d959931c5a2672fd45580cb02aae5bc6978521601c5be6fe62a7d427e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

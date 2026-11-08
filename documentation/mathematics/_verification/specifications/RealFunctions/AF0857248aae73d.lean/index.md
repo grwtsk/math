@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/AF0857248aae73d.lean/index.md) · [Full source](../../../../RealFunctions/AF0857248aae73d.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AF0857248aae73d.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AF0857248aae73d.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [quadratic_nonnegative](../../../../RealFunctions/AF0857248aae73d.lean/declarations/quadratic-nonnegative.md) | 21 | `result-track:c463d346bedba28be25d10bd3736f5138c7188377a2154afeff28f63ae9c46c0` |
+| 1 | `theorem` | [quadratic_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AF0857248aae73d.lean/declarations/quadratic-nonnegative.md) | 21 | `result-track:c463d346bedba28be25d10bd3736f5138c7188377a2154afeff28f63ae9c46c0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Plane.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Plane.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Plane.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Plane.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FormalPlane](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Plane.lean/declarations/formalplane.md) | 8 | `declaration-track:904f88f084d24de99fa3ee56ce2b9ea80aa74df2b451c3a4d5476538d06ea671` |
-| 2 | `structure` | [OperationalPlane](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Plane.lean/declarations/operationalplane.md) | 19 | `declaration-track:2664b2afb3f33ba455311caeccb6084abffdf9ae27690e7f6b72b68a250e3d20` |
-| 3 | `def` | [FormalPlane.ofBits](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Plane.lean/declarations/formalplane-ofbits.md) | 29 | `declaration-track:71de56bf65934fc6eaafab24da727ec1ef3ebf4ccd756369da198ff36d35d862` |
+| 1 | `structure` | [FormalPlane](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Plane.lean/declarations/formalplane.md) | 8 | `declaration-track:904f88f084d24de99fa3ee56ce2b9ea80aa74df2b451c3a4d5476538d06ea671` |
+| 2 | `structure` | [OperationalPlane](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Plane.lean/declarations/operationalplane.md) | 19 | `declaration-track:2664b2afb3f33ba455311caeccb6084abffdf9ae27690e7f6b72b68a250e3d20` |
+| 3 | `def` | [FormalPlane.ofBits](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Plane.lean/declarations/formalplane-ofbits.md) | 29 | `declaration-track:71de56bf65934fc6eaafab24da727ec1ef3ebf4ccd756369da198ff36d35d862` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ManifestRetainsInventoried.lean/index.md) · [Full source](../../../../Combinatorics/ManifestRetainsInventoried.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ManifestRetainsInventoried.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ManifestRetainsInventoried.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ProjectManifest](../../../../Combinatorics/ManifestRetainsInventoried.lean/declarations/projectmanifest.md) | 13 | `declaration-track:3309ad543c241ff4e06ac96b752a8dfb0448bd673df7487e7843b7ff9870014e` |
-| 2 | `theorem` | [retains_inventoried](../../../../Combinatorics/ManifestRetainsInventoried.lean/declarations/retains-inventoried.md) | 27 | `result-track:32340f484793818aeb9deff1b7f74a84e2948d6d7c549e23b81bedcfdf949f6f` |
-| 3 | `theorem` | [no_fabricated_artifact](../../../../Combinatorics/ManifestRetainsInventoried.lean/declarations/no-fabricated-artifact.md) | 36 | `result-track:dc3e413ce778166d61099a72cbc5fe0c3680b1121f73d049149e917abfe7deaf` |
-| 4 | `theorem` | [artifact_occurs_exactly_once](../../../../Combinatorics/ManifestRetainsInventoried.lean/declarations/artifact-occurs-exactly-once.md) | 45 | `result-track:037e62a973bf0bcdc995551b7a5bbf35187aa11e6e82b8888da648be868245e2` |
-| 5 | `theorem` | [omission_rejected](../../../../Combinatorics/ManifestRetainsInventoried.lean/declarations/omission-rejected.md) | 56 | `result-track:933920a42a25a22a82b95279937de9788592fa672f1642fdfeb7b3acb77d302f` |
+| 1 | `structure` | [ProjectManifest](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ManifestRetainsInventoried.lean/declarations/projectmanifest.md) | 13 | `declaration-track:3309ad543c241ff4e06ac96b752a8dfb0448bd673df7487e7843b7ff9870014e` |
+| 2 | `theorem` | [retains_inventoried](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ManifestRetainsInventoried.lean/declarations/retains-inventoried.md) | 27 | `result-track:32340f484793818aeb9deff1b7f74a84e2948d6d7c549e23b81bedcfdf949f6f` |
+| 3 | `theorem` | [no_fabricated_artifact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ManifestRetainsInventoried.lean/declarations/no-fabricated-artifact.md) | 36 | `result-track:dc3e413ce778166d61099a72cbc5fe0c3680b1121f73d049149e917abfe7deaf` |
+| 4 | `theorem` | [artifact_occurs_exactly_once](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ManifestRetainsInventoried.lean/declarations/artifact-occurs-exactly-once.md) | 45 | `result-track:037e62a973bf0bcdc995551b7a5bbf35187aa11e6e82b8888da648be868245e2` |
+| 5 | `theorem` | [omission_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ManifestRetainsInventoried.lean/declarations/omission-rejected.md) | 56 | `result-track:933920a42a25a22a82b95279937de9788592fa672f1642fdfeb7b3acb77d302f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

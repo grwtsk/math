@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/SubalgebraRank.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/SubalgebraRank.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubalgebraRank.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubalgebraRank.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [rank_sup_eq_rank_left_mul_rank_of_free](../../../../AssociativeRingsAndAlgebras/SubalgebraRank.lean/declarations/rank-sup-eq-rank-left-mul-rank-of-free.md) | 31 | `result-track:3e0c0ccd53520199e1284f800b7fee35eec9ce17988900aadf4f4736674a3e6c` |
-| 2 | `theorem` | [finrank_sup_eq_finrank_left_mul_finrank_of_free](../../../../AssociativeRingsAndAlgebras/SubalgebraRank.lean/declarations/finrank-sup-eq-finrank-left-mul-finrank-of-free.md) | 44 | `result-track:9f381240b9a48c074a380737ffe19b2ad870f0341b9a0797bf3ef714984d648d` |
-| 3 | `theorem` | [finrank_left_dvd_finrank_sup_of_free](../../../../AssociativeRingsAndAlgebras/SubalgebraRank.lean/declarations/finrank-left-dvd-finrank-sup-of-free.md) | 48 | `result-track:5f4e867679d029b2541fca88869772036d6c4fe8202ad9af3051a07ea08bebd9` |
-| 4 | `theorem` | [rank_sup_eq_rank_right_mul_rank_of_free](../../../../AssociativeRingsAndAlgebras/SubalgebraRank.lean/declarations/rank-sup-eq-rank-right-mul-rank-of-free.md) | 56 | `result-track:414428de7c4a213385903f140b3153dcf59f4db18d8784f76ce18cb53eca1830` |
-| 5 | `theorem` | [finrank_sup_eq_finrank_right_mul_finrank_of_free](../../../../AssociativeRingsAndAlgebras/SubalgebraRank.lean/declarations/finrank-sup-eq-finrank-right-mul-finrank-of-free.md) | 60 | `result-track:d25e00dc2a9a5f388db45070b7e6dbd0a887d6387c143de9d29fb53c9e4ebd45` |
-| 6 | `theorem` | [finrank_right_dvd_finrank_sup_of_free](../../../../AssociativeRingsAndAlgebras/SubalgebraRank.lean/declarations/finrank-right-dvd-finrank-sup-of-free.md) | 64 | `result-track:963f06330f9f9a8186ea19c0a12901a6b596d63f2682830d7ce4bea69be1f0b4` |
+| 1 | `theorem` | [rank_sup_eq_rank_left_mul_rank_of_free](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubalgebraRank.lean/declarations/rank-sup-eq-rank-left-mul-rank-of-free.md) | 31 | `result-track:3e0c0ccd53520199e1284f800b7fee35eec9ce17988900aadf4f4736674a3e6c` |
+| 2 | `theorem` | [finrank_sup_eq_finrank_left_mul_finrank_of_free](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubalgebraRank.lean/declarations/finrank-sup-eq-finrank-left-mul-finrank-of-free.md) | 44 | `result-track:9f381240b9a48c074a380737ffe19b2ad870f0341b9a0797bf3ef714984d648d` |
+| 3 | `theorem` | [finrank_left_dvd_finrank_sup_of_free](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubalgebraRank.lean/declarations/finrank-left-dvd-finrank-sup-of-free.md) | 48 | `result-track:5f4e867679d029b2541fca88869772036d6c4fe8202ad9af3051a07ea08bebd9` |
+| 4 | `theorem` | [rank_sup_eq_rank_right_mul_rank_of_free](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubalgebraRank.lean/declarations/rank-sup-eq-rank-right-mul-rank-of-free.md) | 56 | `result-track:414428de7c4a213385903f140b3153dcf59f4db18d8784f76ce18cb53eca1830` |
+| 5 | `theorem` | [finrank_sup_eq_finrank_right_mul_finrank_of_free](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubalgebraRank.lean/declarations/finrank-sup-eq-finrank-right-mul-finrank-of-free.md) | 60 | `result-track:d25e00dc2a9a5f388db45070b7e6dbd0a887d6387c143de9d29fb53c9e4ebd45` |
+| 6 | `theorem` | [finrank_right_dvd_finrank_sup_of_free](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubalgebraRank.lean/declarations/finrank-right-dvd-finrank-sup-of-free.md) | 64 | `result-track:963f06330f9f9a8186ea19c0a12901a6b596d63f2682830d7ce4bea69be1f0b4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

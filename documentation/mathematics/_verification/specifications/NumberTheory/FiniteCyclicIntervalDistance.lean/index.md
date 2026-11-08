@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/FiniteCyclicIntervalDistance.lean/index.md) · [Full source](../../../../NumberTheory/FiniteCyclicIntervalDistance.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteCyclicIntervalDistance.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteCyclicIntervalDistance.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.CharacterSums.FiniteCyclicInterval`](../../../../NumberTheory/FiniteCyclicInterval.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.CharacterSums.FiniteCyclicInterval`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteCyclicInterval.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Analysis.SpecialFunctions.Trigonometric.Bounds` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,17 +58,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [finiteCyclicCircularDistance](../../../../NumberTheory/FiniteCyclicIntervalDistance.lean/declarations/finitecycliccirculardistance.md) | 31 | `declaration-track:3d3e74e5066d88c5bff2452c679b5a2bf9d642f0d49873d53cc26e80297b3ec0` |
-| 2 | `theorem` | [finiteCyclicCircularDistance_eq_zero_iff](../../../../NumberTheory/FiniteCyclicIntervalDistance.lean/declarations/finitecycliccirculardistance-eq-zero-iff.md) | 36 | `result-track:2003ea586a607334e37f882ee9f84f9864f9ab4646077e7905a35555319d686f` |
-| 3 | `theorem` | [finiteCyclicCircularDistance_two_mul_le](../../../../NumberTheory/FiniteCyclicIntervalDistance.lean/declarations/finitecycliccirculardistance-two-mul-le.md) | 53 | `result-track:dca6e7f06dbeae1ef87b4a7952d7bea9a6410a10f8ad9265e2b14e48c6b4199c` |
-| 4 | `theorem` | [finiteCyclic_stdAddChar_sub_one_norm_neg](../../../../NumberTheory/FiniteCyclicIntervalDistance.lean/declarations/finitecyclic-stdaddchar-sub-one-norm-neg.md) | 70 | `result-track:3c970c08a38930b7bafe2acfaac948d4d16e720b2b5e0d8edd741e010deabfc6` |
-| 5 | `theorem` | [finiteCyclic_stdAddChar_sub_one_norm_eq_valSine](../../../../NumberTheory/FiniteCyclicIntervalDistance.lean/declarations/finitecyclic-stdaddchar-sub-one-norm-eq-valsine.md) | 86 | `result-track:fd545d6350cc0c357b54c5b1268379b4016bf7c42118874f92fcaa9fb4a1ae7a` |
-| 6 | `theorem` | [norm_stdAddChar_sub_one_eq_sineCircularDistance](../../../../NumberTheory/FiniteCyclicIntervalDistance.lean/declarations/norm-stdaddchar-sub-one-eq-sinecirculardistance.md) | 103 | `result-track:655bdec21ae19bb110f048ca45f5a0cb57e6e2e56be7dee8ff9b55a3b4080911` |
-| 7 | `def` | [finiteCyclicJordanLowerScale](../../../../NumberTheory/FiniteCyclicIntervalDistance.lean/declarations/finitecyclicjordanlowerscale.md) | 117 | `declaration-track:fa20bc09e35189b66710dc7c5ff5031356953d99595f46eb5c3968932d3f1fce` |
-| 8 | `theorem` | [finiteCyclicJordanLowerScale_le_norm_stdAddChar_sub_one](../../../../NumberTheory/FiniteCyclicIntervalDistance.lean/declarations/finitecyclicjordanlowerscale-le-norm-stdaddchar-sub-one.md) | 122 | `result-track:acf494488ba47ccd5e040bcf02ffd5bd222c7856cc7f160323956a6252431847` |
-| 9 | `theorem` | [norm_inv_stdAddChar_sub_one_le_circularDistance](../../../../NumberTheory/FiniteCyclicIntervalDistance.lean/declarations/norm-inv-stdaddchar-sub-one-le-circulardistance.md) | 169 | `result-track:0c21a02c8c735061f492529bf37b3fe90a4f3f5c71f504cd5c5bec57521266f4` |
-| 10 | `theorem` | [norm_sum_stdAddChar_neg_Ico_le_circularDistance](../../../../NumberTheory/FiniteCyclicIntervalDistance.lean/declarations/norm-sum-stdaddchar-neg-ico-le-circulardistance.md) | 198 | `result-track:8afbe34d06874eb025ec44375946cd2c6db990d72a64dffa2cb2a76a1e9bf6c1` |
-| 11 | `theorem` | [norm_sum_stdAddChar_neg_Ico_le_regularCutoff](../../../../NumberTheory/FiniteCyclicIntervalDistance.lean/declarations/norm-sum-stdaddchar-neg-ico-le-regularcutoff.md) | 224 | `result-track:d981f1a2e0130b85a7aef13a8ee9e9f1a7a973b5c7b7113e93e6867d928e2846` |
+| 1 | `def` | [finiteCyclicCircularDistance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteCyclicIntervalDistance.lean/declarations/finitecycliccirculardistance.md) | 31 | `declaration-track:3d3e74e5066d88c5bff2452c679b5a2bf9d642f0d49873d53cc26e80297b3ec0` |
+| 2 | `theorem` | [finiteCyclicCircularDistance_eq_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteCyclicIntervalDistance.lean/declarations/finitecycliccirculardistance-eq-zero-iff.md) | 36 | `result-track:2003ea586a607334e37f882ee9f84f9864f9ab4646077e7905a35555319d686f` |
+| 3 | `theorem` | [finiteCyclicCircularDistance_two_mul_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteCyclicIntervalDistance.lean/declarations/finitecycliccirculardistance-two-mul-le.md) | 53 | `result-track:dca6e7f06dbeae1ef87b4a7952d7bea9a6410a10f8ad9265e2b14e48c6b4199c` |
+| 4 | `theorem` | [finiteCyclic_stdAddChar_sub_one_norm_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteCyclicIntervalDistance.lean/declarations/finitecyclic-stdaddchar-sub-one-norm-neg.md) | 70 | `result-track:3c970c08a38930b7bafe2acfaac948d4d16e720b2b5e0d8edd741e010deabfc6` |
+| 5 | `theorem` | [finiteCyclic_stdAddChar_sub_one_norm_eq_valSine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteCyclicIntervalDistance.lean/declarations/finitecyclic-stdaddchar-sub-one-norm-eq-valsine.md) | 86 | `result-track:fd545d6350cc0c357b54c5b1268379b4016bf7c42118874f92fcaa9fb4a1ae7a` |
+| 6 | `theorem` | [norm_stdAddChar_sub_one_eq_sineCircularDistance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteCyclicIntervalDistance.lean/declarations/norm-stdaddchar-sub-one-eq-sinecirculardistance.md) | 103 | `result-track:655bdec21ae19bb110f048ca45f5a0cb57e6e2e56be7dee8ff9b55a3b4080911` |
+| 7 | `def` | [finiteCyclicJordanLowerScale](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteCyclicIntervalDistance.lean/declarations/finitecyclicjordanlowerscale.md) | 117 | `declaration-track:fa20bc09e35189b66710dc7c5ff5031356953d99595f46eb5c3968932d3f1fce` |
+| 8 | `theorem` | [finiteCyclicJordanLowerScale_le_norm_stdAddChar_sub_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteCyclicIntervalDistance.lean/declarations/finitecyclicjordanlowerscale-le-norm-stdaddchar-sub-one.md) | 122 | `result-track:acf494488ba47ccd5e040bcf02ffd5bd222c7856cc7f160323956a6252431847` |
+| 9 | `theorem` | [norm_inv_stdAddChar_sub_one_le_circularDistance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteCyclicIntervalDistance.lean/declarations/norm-inv-stdaddchar-sub-one-le-circulardistance.md) | 169 | `result-track:0c21a02c8c735061f492529bf37b3fe90a4f3f5c71f504cd5c5bec57521266f4` |
+| 10 | `theorem` | [norm_sum_stdAddChar_neg_Ico_le_circularDistance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteCyclicIntervalDistance.lean/declarations/norm-sum-stdaddchar-neg-ico-le-circulardistance.md) | 198 | `result-track:8afbe34d06874eb025ec44375946cd2c6db990d72a64dffa2cb2a76a1e9bf6c1` |
+| 11 | `theorem` | [norm_sum_stdAddChar_neg_Ico_le_regularCutoff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteCyclicIntervalDistance.lean/declarations/norm-sum-stdaddchar-neg-ico-le-regularcutoff.md) | 224 | `result-track:d981f1a2e0130b85a7aef13a8ee9e9f1a7a973b5c7b7113e93e6867d928e2846` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

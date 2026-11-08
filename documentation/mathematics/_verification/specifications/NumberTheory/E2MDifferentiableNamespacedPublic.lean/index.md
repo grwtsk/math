@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/E2MDifferentiableNamespacedPublic.lean/index.md) · [Full source](../../../../NumberTheory/E2MDifferentiableNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/E2MDifferentiableNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/E2MDifferentiableNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [E2_mdifferentiable](../../../../NumberTheory/E2MDifferentiableNamespacedPublic.lean/declarations/e2-mdifferentiable.md) | 37 | `result-track:dc41eb695517b14b57ecd30f603a4a74a4bb0fbdcdc66e774041f0a6880a800a` |
+| 1 | `lemma` | [E2_mdifferentiable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/E2MDifferentiableNamespacedPublic.lean/declarations/e2-mdifferentiable.md) | 37 | `result-track:dc41eb695517b14b57ecd30f603a4a74a4bb0fbdcdc66e774041f0a6880a800a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/BoolInvolutionIntegralAndBinaryLifts.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/BoolInvolutionIntegralAndBinaryLifts.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/BoolInvolutionIntegralAndBinaryLifts.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/BoolInvolutionIntegralAndBinaryLifts.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [boolFinTwo](../../../../AssociativeRingsAndAlgebras/BoolInvolutionIntegralAndBinaryLifts.lean/declarations/boolfintwo.md) | 39 | `declaration-track:f486c6d7469ea280e0d8a815dfe87266ce0e8e3f5a83479de67393d5274d9e64` |
-| 2 | `def` | [boolNotInvolution](../../../../AssociativeRingsAndAlgebras/BoolInvolutionIntegralAndBinaryLifts.lean/declarations/boolnotinvolution.md) | 47 | `declaration-track:022a9a2a26006a142cc473053988181b8ec407196cb0c120d998610435e62b87` |
-| 3 | `def` | [boolProjection](../../../../AssociativeRingsAndAlgebras/BoolInvolutionIntegralAndBinaryLifts.lean/declarations/boolprojection.md) | 54 | `declaration-track:6f98e9d82e55c7478d1fd2330b135247123d45a12d5e60ad7e3a2c7929ce9f41` |
-| 4 | `example` | [(anonymous)](../../../../AssociativeRingsAndAlgebras/BoolInvolutionIntegralAndBinaryLifts.lean/declarations/example-source-edition-3.md) | 57 | `declaration-track:59cffa7dcc8ede58e9d6dd0cd2d81971fe1e2d1eb4280c36a821839e6a51766c` |
-| 5 | `example` | [(anonymous)](../../../../AssociativeRingsAndAlgebras/BoolInvolutionIntegralAndBinaryLifts.lean/declarations/example-source-edition-2.md) | 59 | `declaration-track:47c37f1c67bdf53a6ac7cf73237437c0ba8e43219478eff7014b6f55b47d179b` |
-| 6 | `example` | [(anonymous)](../../../../AssociativeRingsAndAlgebras/BoolInvolutionIntegralAndBinaryLifts.lean/declarations/example.md) | 62 | `declaration-track:090ad1ca6371d4f57a23ace98483eeced362595b7fffa6dc94f8e988e1c973e4` |
+| 1 | `def` | [boolFinTwo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/BoolInvolutionIntegralAndBinaryLifts.lean/declarations/boolfintwo.md) | 39 | `declaration-track:f486c6d7469ea280e0d8a815dfe87266ce0e8e3f5a83479de67393d5274d9e64` |
+| 2 | `def` | [boolNotInvolution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/BoolInvolutionIntegralAndBinaryLifts.lean/declarations/boolnotinvolution.md) | 47 | `declaration-track:022a9a2a26006a142cc473053988181b8ec407196cb0c120d998610435e62b87` |
+| 3 | `def` | [boolProjection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/BoolInvolutionIntegralAndBinaryLifts.lean/declarations/boolprojection.md) | 54 | `declaration-track:6f98e9d82e55c7478d1fd2330b135247123d45a12d5e60ad7e3a2c7929ce9f41` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/BoolInvolutionIntegralAndBinaryLifts.lean/declarations/example-source-edition-3.md) | 57 | `declaration-track:59cffa7dcc8ede58e9d6dd0cd2d81971fe1e2d1eb4280c36a821839e6a51766c` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/BoolInvolutionIntegralAndBinaryLifts.lean/declarations/example-source-edition-2.md) | 59 | `declaration-track:47c37f1c67bdf53a6ac7cf73237437c0ba8e43219478eff7014b6f55b47d179b` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/BoolInvolutionIntegralAndBinaryLifts.lean/declarations/example.md) | 62 | `declaration-track:090ad1ca6371d4f57a23ace98483eeced362595b7fffa6dc94f8e988e1c973e4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

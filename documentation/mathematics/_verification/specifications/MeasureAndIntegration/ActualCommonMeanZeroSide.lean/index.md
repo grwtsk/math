@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ActualCommonMeanZeroSide.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ActualCommonMeanZeroSide.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCommonMeanZeroSide.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCommonMeanZeroSide.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,17 +58,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [normalizedBilateral](../../../../MeasureAndIntegration/ActualCommonMeanZeroSide.lean/declarations/normalizedbilateral.md) | 19 | `declaration-track:f10540d9215aa620394a85c0de75dc568ec63b2c0b84480d85cbe47b66737464` |
-| 2 | `theorem` | [normalizedBilateral_eq_div](../../../../MeasureAndIntegration/ActualCommonMeanZeroSide.lean/declarations/normalizedbilateral-eq-div.md) | 23 | `result-track:d2891b3db1dc61641544efe77418f03adf9851b391dae83756caa0e3ae06e049` |
-| 3 | `theorem` | [normalizedBilateral_integrable](../../../../MeasureAndIntegration/ActualCommonMeanZeroSide.lean/declarations/normalizedbilateral-integrable.md) | 33 | `result-track:643e88747407af482c483147e3db54de7b5951e0c97621d62c9bc6ee2c39b707` |
-| 4 | `theorem` | [normalizedSquares_summable](../../../../MeasureAndIntegration/ActualCommonMeanZeroSide.lean/declarations/normalizedsquares-summable.md) | 48 | `result-track:27abd291c6c9c307d33ba7ea2a73213a3732aff8f8508b9bb5642a075f60e112` |
-| 5 | `def` | [normalizedZeroSquare](../../../../MeasureAndIntegration/ActualCommonMeanZeroSide.lean/declarations/normalizedzerosquare.md) | 60 | `declaration-track:dc329536b6c1fd0346a7c4eb6755bcdac6fe98fb4693e7488dd9aca7a63cd60a` |
-| 6 | `def` | [sourceGammaValue](../../../../MeasureAndIntegration/ActualCommonMeanZeroSide.lean/declarations/sourcegammavalue.md) | 64 | `declaration-track:48440619d492c62c6f9ca24e66b8be8129471ac2846ca7a361cd19283649971a` |
-| 7 | `def` | [sourceMeanOffset](../../../../MeasureAndIntegration/ActualCommonMeanZeroSide.lean/declarations/sourcemeanoffset.md) | 67 | `declaration-track:bd93db9f90f695b2e454ea16cedb27cdaa0836bfa66034745bea40cd65aeb5b5` |
-| 8 | `theorem` | [normalizedZeroSquare_eq_source](../../../../MeasureAndIntegration/ActualCommonMeanZeroSide.lean/declarations/normalizedzerosquare-eq-source.md) | 70 | `result-track:7ae8cd2c46be80ce88b0af0655b346beea6ff2e475fdb1f75300cc53447b4ec8` |
-| 9 | `theorem` | [sourceGamma_residual_zero_identity](../../../../MeasureAndIntegration/ActualCommonMeanZeroSide.lean/declarations/sourcegamma-residual-zero-identity.md) | 86 | `result-track:4358536752cf647f9b71fc413f30d3b8912e39d65fb574d5d0604dec6471de79` |
-| 10 | `theorem` | [sourceZeroSquare_real](../../../../MeasureAndIntegration/ActualCommonMeanZeroSide.lean/declarations/sourcezerosquare-real.md) | 95 | `result-track:7ab8ec97ba1af3de1b725e51f0be68e643ddd7b7a6b4527d09aba87868e8ff96` |
-| 11 | `theorem` | [sourceMean_eq_offset_zero](../../../../MeasureAndIntegration/ActualCommonMeanZeroSide.lean/declarations/sourcemean-eq-offset-zero.md) | 100 | `result-track:d83af3b8d10397d72f27fa724a18c31deea7873f8017f26c9f5a90debd232b5a` |
+| 1 | `def` | [normalizedBilateral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCommonMeanZeroSide.lean/declarations/normalizedbilateral.md) | 19 | `declaration-track:f10540d9215aa620394a85c0de75dc568ec63b2c0b84480d85cbe47b66737464` |
+| 2 | `theorem` | [normalizedBilateral_eq_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCommonMeanZeroSide.lean/declarations/normalizedbilateral-eq-div.md) | 23 | `result-track:d2891b3db1dc61641544efe77418f03adf9851b391dae83756caa0e3ae06e049` |
+| 3 | `theorem` | [normalizedBilateral_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCommonMeanZeroSide.lean/declarations/normalizedbilateral-integrable.md) | 33 | `result-track:643e88747407af482c483147e3db54de7b5951e0c97621d62c9bc6ee2c39b707` |
+| 4 | `theorem` | [normalizedSquares_summable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCommonMeanZeroSide.lean/declarations/normalizedsquares-summable.md) | 48 | `result-track:27abd291c6c9c307d33ba7ea2a73213a3732aff8f8508b9bb5642a075f60e112` |
+| 5 | `def` | [normalizedZeroSquare](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCommonMeanZeroSide.lean/declarations/normalizedzerosquare.md) | 60 | `declaration-track:dc329536b6c1fd0346a7c4eb6755bcdac6fe98fb4693e7488dd9aca7a63cd60a` |
+| 6 | `def` | [sourceGammaValue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCommonMeanZeroSide.lean/declarations/sourcegammavalue.md) | 64 | `declaration-track:48440619d492c62c6f9ca24e66b8be8129471ac2846ca7a361cd19283649971a` |
+| 7 | `def` | [sourceMeanOffset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCommonMeanZeroSide.lean/declarations/sourcemeanoffset.md) | 67 | `declaration-track:bd93db9f90f695b2e454ea16cedb27cdaa0836bfa66034745bea40cd65aeb5b5` |
+| 8 | `theorem` | [normalizedZeroSquare_eq_source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCommonMeanZeroSide.lean/declarations/normalizedzerosquare-eq-source.md) | 70 | `result-track:7ae8cd2c46be80ce88b0af0655b346beea6ff2e475fdb1f75300cc53447b4ec8` |
+| 9 | `theorem` | [sourceGamma_residual_zero_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCommonMeanZeroSide.lean/declarations/sourcegamma-residual-zero-identity.md) | 86 | `result-track:4358536752cf647f9b71fc413f30d3b8912e39d65fb574d5d0604dec6471de79` |
+| 10 | `theorem` | [sourceZeroSquare_real](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCommonMeanZeroSide.lean/declarations/sourcezerosquare-real.md) | 95 | `result-track:7ab8ec97ba1af3de1b725e51f0be68e643ddd7b7a6b4527d09aba87868e8ff96` |
+| 11 | `theorem` | [sourceMean_eq_offset_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCommonMeanZeroSide.lean/declarations/sourcemean-eq-offset-zero.md) | 100 | `result-track:d83af3b8d10397d72f27fa724a18c31deea7873f8017f26c9f5a90debd232b5a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

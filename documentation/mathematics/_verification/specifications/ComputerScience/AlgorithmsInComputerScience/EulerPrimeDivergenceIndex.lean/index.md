@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/EulerPrimeDivergenceIndex.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/EulerPrimeDivergenceIndex.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EulerPrimeDivergenceIndex.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EulerPrimeDivergenceIndex.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [harmonicSeriesDivergenceAnchor](../../../../../ComputerScience/AlgorithmsInComputerScience/EulerPrimeDivergenceIndex.lean/declarations/harmonicseriesdivergenceanchor.md) | 14 | `declaration-track:0f109a06c0f869beacbf976295d2d46ea98c94dcd02d439d55130c19c17cd217` |
-| 2 | `def` | [finiteEulerProductAtOneAnchor](../../../../../ComputerScience/AlgorithmsInComputerScience/EulerPrimeDivergenceIndex.lean/declarations/finiteeulerproductatoneanchor.md) | 24 | `declaration-track:6ba05dc689d4d3f1ccd77067bd6746ee7887f611446754e8b54b783054fd741b` |
-| 3 | `def` | [eulerPrimeReciprocalDivergenceAnchor](../../../../../ComputerScience/AlgorithmsInComputerScience/EulerPrimeDivergenceIndex.lean/declarations/eulerprimereciprocaldivergenceanchor.md) | 34 | `declaration-track:db6c3a3f0c98dae7dd7de7add7e20379d3acb1d6ffef0b04db43e730b33231db` |
-| 4 | `def` | [pntStrongerAsymptoticStillTargetAnchor](../../../../../ComputerScience/AlgorithmsInComputerScience/EulerPrimeDivergenceIndex.lean/declarations/pntstrongerasymptoticstilltargetanchor.md) | 44 | `declaration-track:96148ef79b2913814f237acc48c0ef4cfc23c838019b854c9f2181f8a1385881` |
-| 5 | `def` | [zeroFreeLineStillTargetAnchor](../../../../../ComputerScience/AlgorithmsInComputerScience/EulerPrimeDivergenceIndex.lean/declarations/zerofreelinestilltargetanchor.md) | 54 | `declaration-track:ee51a94d497fcefb603c432b26c54ce1a1e596fd5c3d64848215ab74389c2434` |
-| 6 | `def` | [eulerPrimeDivergenceAnchors](../../../../../ComputerScience/AlgorithmsInComputerScience/EulerPrimeDivergenceIndex.lean/declarations/eulerprimedivergenceanchors.md) | 64 | `declaration-track:8ab1b495bce103b32b89e76bed84e308696763802600911bc01e1efa0d82fadb` |
+| 1 | `def` | [harmonicSeriesDivergenceAnchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EulerPrimeDivergenceIndex.lean/declarations/harmonicseriesdivergenceanchor.md) | 14 | `declaration-track:0f109a06c0f869beacbf976295d2d46ea98c94dcd02d439d55130c19c17cd217` |
+| 2 | `def` | [finiteEulerProductAtOneAnchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EulerPrimeDivergenceIndex.lean/declarations/finiteeulerproductatoneanchor.md) | 24 | `declaration-track:6ba05dc689d4d3f1ccd77067bd6746ee7887f611446754e8b54b783054fd741b` |
+| 3 | `def` | [eulerPrimeReciprocalDivergenceAnchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EulerPrimeDivergenceIndex.lean/declarations/eulerprimereciprocaldivergenceanchor.md) | 34 | `declaration-track:db6c3a3f0c98dae7dd7de7add7e20379d3acb1d6ffef0b04db43e730b33231db` |
+| 4 | `def` | [pntStrongerAsymptoticStillTargetAnchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EulerPrimeDivergenceIndex.lean/declarations/pntstrongerasymptoticstilltargetanchor.md) | 44 | `declaration-track:96148ef79b2913814f237acc48c0ef4cfc23c838019b854c9f2181f8a1385881` |
+| 5 | `def` | [zeroFreeLineStillTargetAnchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EulerPrimeDivergenceIndex.lean/declarations/zerofreelinestilltargetanchor.md) | 54 | `declaration-track:ee51a94d497fcefb603c432b26c54ce1a1e596fd5c3d64848215ab74389c2434` |
+| 6 | `def` | [eulerPrimeDivergenceAnchors](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EulerPrimeDivergenceIndex.lean/declarations/eulerprimedivergenceanchors.md) | 64 | `declaration-track:8ab1b495bce103b32b89e76bed84e308696763802600911bc01e1efa0d82fadb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

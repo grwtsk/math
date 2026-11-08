@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResultsAlternative42.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResultsAlternative42.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResultsAlternative42.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResultsAlternative42.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Digest](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResultsAlternative42.lean/declarations/digest.md) | 6 | `declaration-track:00c8e724b2406e07f7629ae4c0356c7154c047deb884aa6a8c851ec33f7142f0` |
-| 2 | `def` | [Digest.Valid](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResultsAlternative42.lean/declarations/digest-valid.md) | 12 | `declaration-track:4b4be0c5c2c1938ec5937dbdbb504c3265fe17919226deac0d55bda020e230e1` |
-| 3 | `def` | [Digest.SameBytes](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResultsAlternative42.lean/declarations/digest-samebytes.md) | 19 | `declaration-track:04130fb1ab6ceb54c509588541a586496fec759c0cc18fd753e8b97a218f3c56` |
-| 4 | `instance` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResultsAlternative42.lean/declarations/instance.md) | 21 | `declaration-track:3e018998c5fd9a885c46fd2dd1535feda09638607d5934730343fded656b7bce` |
+| 1 | `structure` | [Digest](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResultsAlternative42.lean/declarations/digest.md) | 6 | `declaration-track:00c8e724b2406e07f7629ae4c0356c7154c047deb884aa6a8c851ec33f7142f0` |
+| 2 | `def` | [Digest.Valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResultsAlternative42.lean/declarations/digest-valid.md) | 12 | `declaration-track:4b4be0c5c2c1938ec5937dbdbb504c3265fe17919226deac0d55bda020e230e1` |
+| 3 | `def` | [Digest.SameBytes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResultsAlternative42.lean/declarations/digest-samebytes.md) | 19 | `declaration-track:04130fb1ab6ceb54c509588541a586496fec759c0cc18fd753e8b97a218f3c56` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResultsAlternative42.lean/declarations/instance.md) | 21 | `declaration-track:3e018998c5fd9a885c46fd2dd1535feda09638607d5934730343fded656b7bce` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

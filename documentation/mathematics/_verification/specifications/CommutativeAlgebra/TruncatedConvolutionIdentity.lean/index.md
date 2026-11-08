@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/TruncatedConvolutionIdentity.lean/index.md) · [Full source](../../../../CommutativeAlgebra/TruncatedConvolutionIdentity.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TruncatedConvolutionIdentity.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TruncatedConvolutionIdentity.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exact_split](../../../../CommutativeAlgebra/TruncatedConvolutionIdentity.lean/declarations/exact-split.md) | 15 | `result-track:b7eeb9fde04d4d43d1b6ecc147f5d704d6a0a1dd91bc436ffabcdefc6c2d30a4` |
-| 2 | `theorem` | [large_factor](../../../../CommutativeAlgebra/TruncatedConvolutionIdentity.lean/declarations/large-factor.md) | 27 | `result-track:74ce32122a511ca25b6bfc9568e8c994264f0119e17d6016501ea318ebc76097` |
-| 3 | `theorem` | [split_on_large_window](../../../../CommutativeAlgebra/TruncatedConvolutionIdentity.lean/declarations/split-on-large-window.md) | 36 | `result-track:81e8da5449dad2c3699485e079d99c8913928ae8af85132b6c2c03f91e53df5e` |
-| 4 | `theorem` | [continuous_centering](../../../../CommutativeAlgebra/TruncatedConvolutionIdentity.lean/declarations/continuous-centering.md) | 43 | `result-track:c3f8f2b88fbb37b8b3c02a2842ad8de062a993d2c2809b928662c77862114a12` |
-| 5 | `theorem` | [main_profile_rewrite](../../../../CommutativeAlgebra/TruncatedConvolutionIdentity.lean/declarations/main-profile-rewrite.md) | 47 | `result-track:e08925fb95305d93e32614caf6c5016928f1c5847720963e84f294ad1247dd7d` |
+| 1 | `theorem` | [exact_split](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TruncatedConvolutionIdentity.lean/declarations/exact-split.md) | 15 | `result-track:b7eeb9fde04d4d43d1b6ecc147f5d704d6a0a1dd91bc436ffabcdefc6c2d30a4` |
+| 2 | `theorem` | [large_factor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TruncatedConvolutionIdentity.lean/declarations/large-factor.md) | 27 | `result-track:74ce32122a511ca25b6bfc9568e8c994264f0119e17d6016501ea318ebc76097` |
+| 3 | `theorem` | [split_on_large_window](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TruncatedConvolutionIdentity.lean/declarations/split-on-large-window.md) | 36 | `result-track:81e8da5449dad2c3699485e079d99c8913928ae8af85132b6c2c03f91e53df5e` |
+| 4 | `theorem` | [continuous_centering](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TruncatedConvolutionIdentity.lean/declarations/continuous-centering.md) | 43 | `result-track:c3f8f2b88fbb37b8b3c02a2842ad8de062a993d2c2809b928662c77862114a12` |
+| 5 | `theorem` | [main_profile_rewrite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TruncatedConvolutionIdentity.lean/declarations/main-profile-rewrite.md) | 47 | `result-track:e08925fb95305d93e32614caf6c5016928f1c5847720963e84f294ad1247dd7d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/KruskalKatona.lean/index.md) · [Full source](../../../../Combinatorics/KruskalKatona.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/KruskalKatona.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/KruskalKatona.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,20 +60,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [shadow_initSeg](../../../../Combinatorics/KruskalKatona.lean/declarations/shadow-initseg.md) | 59 | `result-track:1a72f00281c87fede3397745f3621ff169216524e0fa5db9146820b62989cae6` |
-| 2 | `lemma` | [IsInitSeg.shadow](../../../../Combinatorics/KruskalKatona.lean/declarations/isinitseg-shadow.md) | 108 | `result-track:3cfbbe7aa41fbbb968f7626dd2ecdc6fa7817843c81fb812663c2e587c5ddfbb` |
-| 3 | `lemma` | [toColex_compress_lt_toColex](../../../../Combinatorics/KruskalKatona.lean/declarations/tocolex-compress-lt-tocolex.md) | 132 | `result-track:761e5f80b19df42d75899da06210e22ff7e3674f5db453032d4514170512adbf` |
-| 4 | `def` | [UsefulCompression](../../../../Combinatorics/KruskalKatona.lean/declarations/usefulcompression.md) | 143 | `declaration-track:d982cf1415836d842f658d38ef9770581710b2e67af2467ecb3b66af4d85169a` |
-| 5 | `instance` | [UsefulCompression.instDecidableRel](../../../../Combinatorics/KruskalKatona.lean/declarations/usefulcompression-instdecidablerel.md) | 146 | `declaration-track:ab685a283639d1a0b63a4938a6fab19dd61b2506c5fea6235ceacbcf5772e8bd` |
-| 6 | `lemma` | [compression_improved](../../../../Combinatorics/KruskalKatona.lean/declarations/compression-improved.md) | 153 | `result-track:858243987b5140648b39d83298722f1ba02f6674347a0df8761ec5963bde6b24` |
-| 7 | `lemma` | [isInitSeg_of_compressed](../../../../Combinatorics/KruskalKatona.lean/declarations/isinitseg-of-compressed.md) | 174 | `result-track:21ac2f90280a16b2466e00aca6610d05051f4b0edbbfd42838e692730f9238b0` |
-| 8 | `def` | [familyMeasure](../../../../Combinatorics/KruskalKatona.lean/declarations/familymeasure.md) | 201 | `declaration-track:ebf13e6e0dcefb13744cc1f198ea4ce8ebb24fb6f4d7d3970a998f62e4baec3e` |
-| 9 | `lemma` | [familyMeasure_compression_lt_familyMeasure](../../../../Combinatorics/KruskalKatona.lean/declarations/familymeasure-compression-lt-familymeasure.md) | 205 | `result-track:e804910d6bf4ad4057e0bb456913a9716f68b8a5aa4653b77a182164c660ccd5` |
-| 10 | `lemma` | [kruskal_katona_helper](../../../../Combinatorics/KruskalKatona.lean/declarations/kruskal-katona-helper.md) | 233 | `result-track:31292b2b4447e0a46c050c12c54c25cf2cf9d6c230adaf4f4ce03a3d735f2a90` |
-| 11 | `theorem` | [kruskal_katona](../../../../Combinatorics/KruskalKatona.lean/declarations/kruskal-katona.md) | 272 | `result-track:dff3f06ce6823a005b9bce490ef2a9dcec5be3f9c622bc5291d893dc59550bb8` |
-| 12 | `theorem` | [iterated_kk](../../../../Combinatorics/KruskalKatona.lean/declarations/iterated-kk.md) | 289 | `result-track:e7e05efbf11dc9e3b3b054dab05b652aae3cd0d04a93e45edaf623cbaff98176` |
-| 13 | `theorem` | [kruskal_katona_lovasz_form](../../../../Combinatorics/KruskalKatona.lean/declarations/kruskal-katona-lovasz-form.md) | 303 | `result-track:0ffb75ca79fc2ff9050d3901afe3d6abbee83c2fff69ef264af66add5697ab8e` |
-| 14 | `theorem` | [erdos_ko_rado](../../../../Combinatorics/KruskalKatona.lean/declarations/erdos-ko-rado.md) | 349 | `result-track:1676b6d08d04db0584788869ea3ebb1e24c767f39ae879ba6cd3c5e0a5f95d62` |
+| 1 | `lemma` | [shadow_initSeg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/KruskalKatona.lean/declarations/shadow-initseg.md) | 59 | `result-track:1a72f00281c87fede3397745f3621ff169216524e0fa5db9146820b62989cae6` |
+| 2 | `lemma` | [IsInitSeg.shadow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/KruskalKatona.lean/declarations/isinitseg-shadow.md) | 108 | `result-track:3cfbbe7aa41fbbb968f7626dd2ecdc6fa7817843c81fb812663c2e587c5ddfbb` |
+| 3 | `lemma` | [toColex_compress_lt_toColex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/KruskalKatona.lean/declarations/tocolex-compress-lt-tocolex.md) | 132 | `result-track:761e5f80b19df42d75899da06210e22ff7e3674f5db453032d4514170512adbf` |
+| 4 | `def` | [UsefulCompression](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/KruskalKatona.lean/declarations/usefulcompression.md) | 143 | `declaration-track:d982cf1415836d842f658d38ef9770581710b2e67af2467ecb3b66af4d85169a` |
+| 5 | `instance` | [UsefulCompression.instDecidableRel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/KruskalKatona.lean/declarations/usefulcompression-instdecidablerel.md) | 146 | `declaration-track:ab685a283639d1a0b63a4938a6fab19dd61b2506c5fea6235ceacbcf5772e8bd` |
+| 6 | `lemma` | [compression_improved](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/KruskalKatona.lean/declarations/compression-improved.md) | 153 | `result-track:858243987b5140648b39d83298722f1ba02f6674347a0df8761ec5963bde6b24` |
+| 7 | `lemma` | [isInitSeg_of_compressed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/KruskalKatona.lean/declarations/isinitseg-of-compressed.md) | 174 | `result-track:21ac2f90280a16b2466e00aca6610d05051f4b0edbbfd42838e692730f9238b0` |
+| 8 | `def` | [familyMeasure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/KruskalKatona.lean/declarations/familymeasure.md) | 201 | `declaration-track:ebf13e6e0dcefb13744cc1f198ea4ce8ebb24fb6f4d7d3970a998f62e4baec3e` |
+| 9 | `lemma` | [familyMeasure_compression_lt_familyMeasure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/KruskalKatona.lean/declarations/familymeasure-compression-lt-familymeasure.md) | 205 | `result-track:e804910d6bf4ad4057e0bb456913a9716f68b8a5aa4653b77a182164c660ccd5` |
+| 10 | `lemma` | [kruskal_katona_helper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/KruskalKatona.lean/declarations/kruskal-katona-helper.md) | 233 | `result-track:31292b2b4447e0a46c050c12c54c25cf2cf9d6c230adaf4f4ce03a3d735f2a90` |
+| 11 | `theorem` | [kruskal_katona](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/KruskalKatona.lean/declarations/kruskal-katona.md) | 272 | `result-track:dff3f06ce6823a005b9bce490ef2a9dcec5be3f9c622bc5291d893dc59550bb8` |
+| 12 | `theorem` | [iterated_kk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/KruskalKatona.lean/declarations/iterated-kk.md) | 289 | `result-track:e7e05efbf11dc9e3b3b054dab05b652aae3cd0d04a93e45edaf623cbaff98176` |
+| 13 | `theorem` | [kruskal_katona_lovasz_form](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/KruskalKatona.lean/declarations/kruskal-katona-lovasz-form.md) | 303 | `result-track:0ffb75ca79fc2ff9050d3901afe3d6abbee83c2fff69ef264af66add5697ab8e` |
+| 14 | `theorem` | [erdos_ko_rado](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/KruskalKatona.lean/declarations/erdos-ko-rado.md) | 349 | `result-track:1676b6d08d04db0584788869ea3ebb1e24c767f39ae879ba6cd3c5e0a5f95d62` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Edition2.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Edition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Edition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Edition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `axiom` | [R](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Edition2.lean/declarations/r.md) | 11 | `declaration-track:764474c3ba9968bec5ae756ad703a8c4817d20284ad12e1fae6131dcc5b74df8` |
-| 2 | `axiom` | [sym](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Edition2.lean/declarations/sym.md) | 13 | `declaration-track:1979dcb485347e39493094158ce1b35687551555e650f07e45ee5b34746e6c3f` |
-| 3 | `axiom` | [tran](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Edition2.lean/declarations/tran.md) | 14 | `declaration-track:c7bc93576d23864211a06bad0b216f0913e51fbf9aa03f4705d1eca2bac525ea` |
-| 4 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Edition2.lean/declarations/example.md) | 30 | `declaration-track:9e7073a20e08382b0578a6172930d8c6f5c59f37a550bbd992175d2a28e9bf31` |
+| 1 | `axiom` | [R](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Edition2.lean/declarations/r.md) | 11 | `declaration-track:764474c3ba9968bec5ae756ad703a8c4817d20284ad12e1fae6131dcc5b74df8` |
+| 2 | `axiom` | [sym](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Edition2.lean/declarations/sym.md) | 13 | `declaration-track:1979dcb485347e39493094158ce1b35687551555e650f07e45ee5b34746e6c3f` |
+| 3 | `axiom` | [tran](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Edition2.lean/declarations/tran.md) | 14 | `declaration-track:c7bc93576d23864211a06bad0b216f0913e51fbf9aa03f4705d1eca2bac525ea` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Edition2.lean/declarations/example.md) | 30 | `declaration-track:9e7073a20e08382b0578a6172930d8c6f5c59f37a550bbd992175d2a28e9bf31` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

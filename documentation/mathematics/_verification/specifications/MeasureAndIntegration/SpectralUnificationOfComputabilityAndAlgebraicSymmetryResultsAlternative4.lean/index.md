@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative4.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative4.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative4.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative4.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [derivative_energy_gap](../../../../MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative4.lean/declarations/derivative-energy-gap.md) | 23 | `result-track:994347b41c142efc26dc60cb70efd5cd5fb15129f4b29004a6e181afc99695d5` |
-| 2 | `theorem` | [normalized_derivative_energy_lt](../../../../MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative4.lean/declarations/normalized-derivative-energy-lt.md) | 32 | `result-track:4cc171d8e774ad9f9011ad587b094a5acd3e59f39eccd71b228873f67c49342b` |
-| 3 | `theorem` | [normalized_derivative_energy_le](../../../../MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative4.lean/declarations/normalized-derivative-energy-le.md) | 50 | `result-track:01f2d32a1d877639b50c41d36506fe02a1f1027346f427f059b51006763f1440` |
+| 1 | `theorem` | [derivative_energy_gap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative4.lean/declarations/derivative-energy-gap.md) | 23 | `result-track:994347b41c142efc26dc60cb70efd5cd5fb15129f4b29004a6e181afc99695d5` |
+| 2 | `theorem` | [normalized_derivative_energy_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative4.lean/declarations/normalized-derivative-energy-lt.md) | 32 | `result-track:4cc171d8e774ad9f9011ad587b094a5acd3e59f39eccd71b228873f67c49342b` |
+| 3 | `theorem` | [normalized_derivative_energy_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative4.lean/declarations/normalized-derivative-energy-le.md) | 50 | `result-track:01f2d32a1d877639b50c41d36506fe02a1f1027346f427f059b51006763f1440` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

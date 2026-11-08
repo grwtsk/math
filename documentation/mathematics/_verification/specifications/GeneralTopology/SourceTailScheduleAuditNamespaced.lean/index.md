@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SourceTailScheduleAuditNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/SourceTailScheduleAuditNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceTailScheduleAuditNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceTailScheduleAuditNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [logScale](../../../../GeneralTopology/SourceTailScheduleAuditNamespaced.lean/declarations/logscale.md) | 22 | `declaration-track:21db1490c46dbfb328cc80b48cfda5b6e6e8e1b697279e17cc967e6b75e8c531` |
-| 2 | `def` | [epsilonSchedule](../../../../GeneralTopology/SourceTailScheduleAuditNamespaced.lean/declarations/epsilonschedule.md) | 25 | `declaration-track:a0c389651217100099fc5a1680df58599b617a17ce736945f989053fd9aca43a` |
-| 3 | `def` | [cutoffSchedule](../../../../GeneralTopology/SourceTailScheduleAuditNamespaced.lean/declarations/cutoffschedule.md) | 28 | `declaration-track:be7ced33413d297cc4380443011d7cdb7cb2914b84c71f62fb93372c0e295c8a` |
-| 4 | `theorem` | [schedule_admissible](../../../../GeneralTopology/SourceTailScheduleAuditNamespaced.lean/declarations/schedule-admissible.md) | 31 | `result-track:2207a01cfff3602db081f39ef65d3edfd37ba102872d092609aba1172fd86e2a` |
-| 5 | `theorem` | [scheduled_endpoint_bounds](../../../../GeneralTopology/SourceTailScheduleAuditNamespaced.lean/declarations/scheduled-endpoint-bounds.md) | 47 | `result-track:c23d6ba2adb0f4997a465dbc637bd6ab25a805f82f605f31f78ddf9973344502` |
-| 6 | `theorem` | [explicit_tail_bounds_tendsto](../../../../GeneralTopology/SourceTailScheduleAuditNamespaced.lean/declarations/explicit-tail-bounds-tendsto.md) | 81 | `result-track:b6888fd5bdca46f896604ae0dcd4a06a6ee7fac8a8b176e566ec1048b253ceaf` |
-| 7 | `theorem` | [scheduled_actual_tails_tendsto](../../../../GeneralTopology/SourceTailScheduleAuditNamespaced.lean/declarations/scheduled-actual-tails-tendsto.md) | 92 | `result-track:9023bc9acc9d1b3ce53ee68c36b78e188882303964fe3ae212d2a69617e056a2` |
-| 8 | `theorem` | [epsilonSchedule_tendsto_zero](../../../../GeneralTopology/SourceTailScheduleAuditNamespaced.lean/declarations/epsilonschedule-tendsto-zero.md) | 107 | `result-track:685a613b3f362364e2ed1c56f41742197f72b6b6e816b738e03a790d0ba59039` |
-| 9 | `theorem` | [cutoffSchedule_tendsto_atTop](../../../../GeneralTopology/SourceTailScheduleAuditNamespaced.lean/declarations/cutoffschedule-tendsto-attop.md) | 115 | `result-track:0f0bcab2ba2585924fd534b6c4d2fbbbe40786756afa0746877909d39ce8ba6b` |
+| 1 | `def` | [logScale](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceTailScheduleAuditNamespaced.lean/declarations/logscale.md) | 22 | `declaration-track:21db1490c46dbfb328cc80b48cfda5b6e6e8e1b697279e17cc967e6b75e8c531` |
+| 2 | `def` | [epsilonSchedule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceTailScheduleAuditNamespaced.lean/declarations/epsilonschedule.md) | 25 | `declaration-track:a0c389651217100099fc5a1680df58599b617a17ce736945f989053fd9aca43a` |
+| 3 | `def` | [cutoffSchedule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceTailScheduleAuditNamespaced.lean/declarations/cutoffschedule.md) | 28 | `declaration-track:be7ced33413d297cc4380443011d7cdb7cb2914b84c71f62fb93372c0e295c8a` |
+| 4 | `theorem` | [schedule_admissible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceTailScheduleAuditNamespaced.lean/declarations/schedule-admissible.md) | 31 | `result-track:2207a01cfff3602db081f39ef65d3edfd37ba102872d092609aba1172fd86e2a` |
+| 5 | `theorem` | [scheduled_endpoint_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceTailScheduleAuditNamespaced.lean/declarations/scheduled-endpoint-bounds.md) | 47 | `result-track:c23d6ba2adb0f4997a465dbc637bd6ab25a805f82f605f31f78ddf9973344502` |
+| 6 | `theorem` | [explicit_tail_bounds_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceTailScheduleAuditNamespaced.lean/declarations/explicit-tail-bounds-tendsto.md) | 81 | `result-track:b6888fd5bdca46f896604ae0dcd4a06a6ee7fac8a8b176e566ec1048b253ceaf` |
+| 7 | `theorem` | [scheduled_actual_tails_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceTailScheduleAuditNamespaced.lean/declarations/scheduled-actual-tails-tendsto.md) | 92 | `result-track:9023bc9acc9d1b3ce53ee68c36b78e188882303964fe3ae212d2a69617e056a2` |
+| 8 | `theorem` | [epsilonSchedule_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceTailScheduleAuditNamespaced.lean/declarations/epsilonschedule-tendsto-zero.md) | 107 | `result-track:685a613b3f362364e2ed1c56f41742197f72b6b6e816b738e03a790d0ba59039` |
+| 9 | `theorem` | [cutoffSchedule_tendsto_atTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceTailScheduleAuditNamespaced.lean/declarations/cutoffschedule-tendsto-attop.md) | 115 | `result-track:0f0bcab2ba2585924fd534b6c4d2fbbbe40786756afa0746877909d39ce8ba6b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

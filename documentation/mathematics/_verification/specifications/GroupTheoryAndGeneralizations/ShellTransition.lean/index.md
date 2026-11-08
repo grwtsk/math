@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/ShellTransition.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/ShellTransition.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ShellTransition.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ShellTransition.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [GramTransport](../../../../GroupTheoryAndGeneralizations/ShellTransition.lean/declarations/gramtransport.md) | 19 | `declaration-track:16bf476d93e750aec48851c7fcab66139fb2aae3db4899b71e73b66e98ae3fce` |
-| 2 | `structure` | [CohomologicalShellTransition](../../../../GroupTheoryAndGeneralizations/ShellTransition.lean/declarations/cohomologicalshelltransition.md) | 43 | `declaration-track:a4d26b4f4c8656279d2ebaa108faf56081e13485f282bf048eda33d7864eb5ed` |
+| 1 | `inductive` | [GramTransport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ShellTransition.lean/declarations/gramtransport.md) | 19 | `declaration-track:16bf476d93e750aec48851c7fcab66139fb2aae3db4899b71e73b66e98ae3fce` |
+| 2 | `structure` | [CohomologicalShellTransition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ShellTransition.lean/declarations/cohomologicalshelltransition.md) | 43 | `declaration-track:a4d26b4f4c8656279d2ebaa108faf56081e13485f282bf048eda33d7864eb5ed` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

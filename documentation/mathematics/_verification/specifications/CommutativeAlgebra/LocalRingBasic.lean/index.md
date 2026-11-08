@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/LocalRingBasic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/LocalRingBasic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalRingBasic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalRingBasic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,18 +58,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [of_isUnit_or_isUnit_of_isUnit_add](../../../../CommutativeAlgebra/LocalRingBasic.lean/declarations/of-isunit-or-isunit-of-isunit-add.md) | 25 | `result-track:049b5e87036aa8fdaf44e9f8863854db7b65fd950da9ef413af4a7d965ea81e9` |
-| 2 | `theorem` | [of_nonunits_add](../../../../CommutativeAlgebra/LocalRingBasic.lean/declarations/of-nonunits-add.md) | 30 | `result-track:2b68755ff95f80fa1b25eb01385a2603b4fa3d64b2d4f3e0ac5d0636764ade44` |
-| 3 | `theorem` | [of_unique_max_ideal](../../../../CommutativeAlgebra/LocalRingBasic.lean/declarations/of-unique-max-ideal.md) | 42 | `result-track:58ef1f089c9d8e53f21506492fa644b88db35e1465c73fade5ce2ff7cf1031aa` |
-| 4 | `theorem` | [of_unique_nonzero_prime](../../../../CommutativeAlgebra/LocalRingBasic.lean/declarations/of-unique-nonzero-prime.md) | 55 | `result-track:36069568a7daea55a0ed4846e59a1e0034053f8f5506800ae54cc8b998dab45b` |
-| 5 | `theorem` | [isUnit_or_isUnit_of_isUnit_add](../../../../CommutativeAlgebra/LocalRingBasic.lean/declarations/isunit-or-isunit-of-isunit-add.md) | 67 | `result-track:6b272fce8d1813a97595955b24a64a8346a3aa475313bdd1ad39999bc079517e` |
-| 6 | `theorem` | [nonunits_add](../../../../CommutativeAlgebra/LocalRingBasic.lean/declarations/nonunits-add.md) | 72 | `result-track:6fcbe7a227fe32094c6fc3a8973aa55cc6bd3bf934c74b212366b529d203185b` |
-| 7 | `theorem` | [of_isUnit_or_isUnit_one_sub_self](../../../../CommutativeAlgebra/LocalRingBasic.lean/declarations/of-isunit-or-isunit-one-sub-self.md) | 99 | `result-track:b13bba04909c5382a4dd296065085bb2c5b4e5ffa19c7c1384ee5f1850767251` |
-| 8 | `theorem` | [isUnit_or_isUnit_one_sub_self](../../../../CommutativeAlgebra/LocalRingBasic.lean/declarations/isunit-or-isunit-one-sub-self.md) | 109 | `result-track:b40418fe344a2355339d3af537a97e4121341deafaeb4b7cbeb5e9184a9d8556` |
-| 9 | `theorem` | [isUnit_of_mem_nonunits_one_sub_self](../../../../CommutativeAlgebra/LocalRingBasic.lean/declarations/isunit-of-mem-nonunits-one-sub-self.md) | 112 | `result-track:31b8c73be35110351734044a8e00fe94067d0711b15c79ee65915bd775c1cf32` |
-| 10 | `theorem` | [isUnit_one_sub_self_of_mem_nonunits](../../../../CommutativeAlgebra/LocalRingBasic.lean/declarations/isunit-one-sub-self-of-mem-nonunits.md) | 115 | `result-track:e44a2063daeb74dc666b810c33d0610c1e9de2a05b68a0641c3665e48315b8a2` |
-| 11 | `theorem` | [of_surjective'](../../../../CommutativeAlgebra/LocalRingBasic.lean/declarations/of-surjective.md) | 118 | `result-track:1bf6c3365573cb95478e6602a029c6e3bbf0fd986c6e03d7b3ea671724798d1b` |
-| 12 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/LocalRingBasic.lean/declarations/instance.md) | 153 | `declaration-track:8383a41ec9004ebd5adda63a33df726ef759f91bb79865d42f37b64d134685e8` |
+| 1 | `theorem` | [of_isUnit_or_isUnit_of_isUnit_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalRingBasic.lean/declarations/of-isunit-or-isunit-of-isunit-add.md) | 25 | `result-track:049b5e87036aa8fdaf44e9f8863854db7b65fd950da9ef413af4a7d965ea81e9` |
+| 2 | `theorem` | [of_nonunits_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalRingBasic.lean/declarations/of-nonunits-add.md) | 30 | `result-track:2b68755ff95f80fa1b25eb01385a2603b4fa3d64b2d4f3e0ac5d0636764ade44` |
+| 3 | `theorem` | [of_unique_max_ideal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalRingBasic.lean/declarations/of-unique-max-ideal.md) | 42 | `result-track:58ef1f089c9d8e53f21506492fa644b88db35e1465c73fade5ce2ff7cf1031aa` |
+| 4 | `theorem` | [of_unique_nonzero_prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalRingBasic.lean/declarations/of-unique-nonzero-prime.md) | 55 | `result-track:36069568a7daea55a0ed4846e59a1e0034053f8f5506800ae54cc8b998dab45b` |
+| 5 | `theorem` | [isUnit_or_isUnit_of_isUnit_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalRingBasic.lean/declarations/isunit-or-isunit-of-isunit-add.md) | 67 | `result-track:6b272fce8d1813a97595955b24a64a8346a3aa475313bdd1ad39999bc079517e` |
+| 6 | `theorem` | [nonunits_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalRingBasic.lean/declarations/nonunits-add.md) | 72 | `result-track:6fcbe7a227fe32094c6fc3a8973aa55cc6bd3bf934c74b212366b529d203185b` |
+| 7 | `theorem` | [of_isUnit_or_isUnit_one_sub_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalRingBasic.lean/declarations/of-isunit-or-isunit-one-sub-self.md) | 99 | `result-track:b13bba04909c5382a4dd296065085bb2c5b4e5ffa19c7c1384ee5f1850767251` |
+| 8 | `theorem` | [isUnit_or_isUnit_one_sub_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalRingBasic.lean/declarations/isunit-or-isunit-one-sub-self.md) | 109 | `result-track:b40418fe344a2355339d3af537a97e4121341deafaeb4b7cbeb5e9184a9d8556` |
+| 9 | `theorem` | [isUnit_of_mem_nonunits_one_sub_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalRingBasic.lean/declarations/isunit-of-mem-nonunits-one-sub-self.md) | 112 | `result-track:31b8c73be35110351734044a8e00fe94067d0711b15c79ee65915bd775c1cf32` |
+| 10 | `theorem` | [isUnit_one_sub_self_of_mem_nonunits](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalRingBasic.lean/declarations/isunit-one-sub-self-of-mem-nonunits.md) | 115 | `result-track:e44a2063daeb74dc666b810c33d0610c1e9de2a05b68a0641c3665e48315b8a2` |
+| 11 | `theorem` | [of_surjective'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalRingBasic.lean/declarations/of-surjective.md) | 118 | `result-track:1bf6c3365573cb95478e6602a029c6e3bbf0fd986c6e03d7b3ea671724798d1b` |
+| 12 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LocalRingBasic.lean/declarations/instance.md) | 153 | `declaration-track:8383a41ec9004ebd5adda63a33df726ef759f91bb79865d42f37b64d134685e8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

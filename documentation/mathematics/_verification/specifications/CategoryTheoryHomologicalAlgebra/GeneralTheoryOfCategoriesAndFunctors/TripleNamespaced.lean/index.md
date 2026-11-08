@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TripleNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TripleNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TripleNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TripleNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [isIso_unit_iff_isIso_counit](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TripleNamespaced.lean/declarations/isiso-unit-iff-isiso-counit.md) | 31 | `result-track:ceb99c8e65921bec26fac85a1a514d8597979b200bb75aa8572c219708e5cba1` |
-| 2 | `def` | [fullyFaithfulEquiv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TripleNamespaced.lean/declarations/fullyfaithfulequiv.md) | 45 | `declaration-track:7eaccfcd9e170807436cbecf76fdccb516490ddd07428ea10303205614c7e59e` |
+| 1 | `lemma` | [isIso_unit_iff_isIso_counit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TripleNamespaced.lean/declarations/isiso-unit-iff-isiso-counit.md) | 31 | `result-track:ceb99c8e65921bec26fac85a1a514d8597979b200bb75aa8572c219708e5cba1` |
+| 2 | `def` | [fullyFaithfulEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TripleNamespaced.lean/declarations/fullyfaithfulequiv.md) | 45 | `declaration-track:7eaccfcd9e170807436cbecf76fdccb516490ddd07428ea10303205614c7e59e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

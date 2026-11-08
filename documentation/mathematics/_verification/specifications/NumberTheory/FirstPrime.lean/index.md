@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/FirstPrime.lean/index.md) · [Full source](../../../../NumberTheory/FirstPrime.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FirstPrime.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FirstPrime.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [two_is_first_prime](../../../../NumberTheory/FirstPrime.lean/declarations/two-is-first-prime.md) | 6 | `result-track:d8c8817a2b45d242f7b37672743bcca89313c51d7be2b9441326d0b8260c08bf` |
+| 1 | `theorem` | [two_is_first_prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FirstPrime.lean/declarations/two-is-first-prime.md) | 6 | `result-track:d8c8817a2b45d242f7b37672743bcca89313c51d7be2b9441326d0b8260c08bf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

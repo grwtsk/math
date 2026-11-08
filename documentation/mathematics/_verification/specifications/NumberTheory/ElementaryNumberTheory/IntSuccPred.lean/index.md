@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/IntSuccPred.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/IntSuccPred.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/IntSuccPred.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/IntSuccPred.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [instSuccOrder](../../../../../NumberTheory/ElementaryNumberTheory/IntSuccPred.lean/declarations/instsuccorder.md) | 21 | `declaration-track:c8a251b358e1da7615f80d2aab75fcf069bbfbe2ac0bfac46c00c9efb67e7440` |
-| 2 | `instance` | [instSuccAddOrder](../../../../../NumberTheory/ElementaryNumberTheory/IntSuccPred.lean/declarations/instsuccaddorder.md) | 24 | `declaration-track:8e9647ed2511e275775bbf556faba34e6ca7d2fb65f6008f98d84c862278bea2` |
-| 3 | `abbrev` | [instPredOrder](../../../../../NumberTheory/ElementaryNumberTheory/IntSuccPred.lean/declarations/instpredorder.md) | 27 | `declaration-track:aa0f32adbacfb260ff9eb52c7d57335773a67281e0a8f954bff39f674124ea46` |
-| 4 | `instance` | [instPredSubOrder](../../../../../NumberTheory/ElementaryNumberTheory/IntSuccPred.lean/declarations/instpredsuborder.md) | 33 | `declaration-track:c6042667db4876606bfb1014865c60391926726717f91582b59a542ccc563ca8` |
-| 5 | `theorem` | [succ_eq_succ](../../../../../NumberTheory/ElementaryNumberTheory/IntSuccPred.lean/declarations/succ-eq-succ.md) | 36 | `result-track:2d2e839d8a2881677df5c207d577571de2abf71bca8ff7a0666d16028f5a8af2` |
-| 6 | `theorem` | [pred_eq_pred](../../../../../NumberTheory/ElementaryNumberTheory/IntSuccPred.lean/declarations/pred-eq-pred.md) | 40 | `result-track:1697a553acf05f637d4d01592d4653827c5e7e14817b9cc712bf24cb251850e5` |
-| 7 | `instance` | [(anonymous)](../../../../../NumberTheory/ElementaryNumberTheory/IntSuccPred.lean/declarations/instance.md) | 43 | `declaration-track:4a11cd768026ec6842f0b558a7c78581d21003984e256adb593d445e0afdf694` |
-| 8 | `instance` | [(anonymous)](../../../../../NumberTheory/ElementaryNumberTheory/IntSuccPred.lean/declarations/instance-source-edition-2.md) | 47 | `declaration-track:8b7af9c54769a7a54dd4b7737d7d10d645cda506d7c8a267c69bcfb1640587d7` |
-| 9 | `theorem` | [natCast_covBy](../../../../../NumberTheory/ElementaryNumberTheory/IntSuccPred.lean/declarations/natcast-covby.md) | 55 | `result-track:59f11c6f82c36a29062fd5591a92b63317e1c5620d489ac14b9e63b447cb2878` |
+| 1 | `abbrev` | [instSuccOrder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/IntSuccPred.lean/declarations/instsuccorder.md) | 21 | `declaration-track:c8a251b358e1da7615f80d2aab75fcf069bbfbe2ac0bfac46c00c9efb67e7440` |
+| 2 | `instance` | [instSuccAddOrder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/IntSuccPred.lean/declarations/instsuccaddorder.md) | 24 | `declaration-track:8e9647ed2511e275775bbf556faba34e6ca7d2fb65f6008f98d84c862278bea2` |
+| 3 | `abbrev` | [instPredOrder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/IntSuccPred.lean/declarations/instpredorder.md) | 27 | `declaration-track:aa0f32adbacfb260ff9eb52c7d57335773a67281e0a8f954bff39f674124ea46` |
+| 4 | `instance` | [instPredSubOrder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/IntSuccPred.lean/declarations/instpredsuborder.md) | 33 | `declaration-track:c6042667db4876606bfb1014865c60391926726717f91582b59a542ccc563ca8` |
+| 5 | `theorem` | [succ_eq_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/IntSuccPred.lean/declarations/succ-eq-succ.md) | 36 | `result-track:2d2e839d8a2881677df5c207d577571de2abf71bca8ff7a0666d16028f5a8af2` |
+| 6 | `theorem` | [pred_eq_pred](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/IntSuccPred.lean/declarations/pred-eq-pred.md) | 40 | `result-track:1697a553acf05f637d4d01592d4653827c5e7e14817b9cc712bf24cb251850e5` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/IntSuccPred.lean/declarations/instance.md) | 43 | `declaration-track:4a11cd768026ec6842f0b558a7c78581d21003984e256adb593d445e0afdf694` |
+| 8 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/IntSuccPred.lean/declarations/instance-source-edition-2.md) | 47 | `declaration-track:8b7af9c54769a7a54dd4b7737d7d10d645cda506d7c8a267c69bcfb1640587d7` |
+| 9 | `theorem` | [natCast_covBy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/IntSuccPred.lean/declarations/natcast-covby.md) | 55 | `result-track:59f11c6f82c36a29062fd5591a92b63317e1c5620d489ac14b9e63b447cb2878` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

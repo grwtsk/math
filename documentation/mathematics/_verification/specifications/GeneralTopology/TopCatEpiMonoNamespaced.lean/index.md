@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/TopCatEpiMonoNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/TopCatEpiMonoNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopCatEpiMonoNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopCatEpiMonoNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [epi_iff_surjective](../../../../GeneralTopology/TopCatEpiMonoNamespaced.lean/declarations/epi-iff-surjective.md) | 34 | `result-track:7188dc9f37a83ce77e35e2b38ab483cc31dd8391b632295bb237605137d7dc2d` |
-| 2 | `theorem` | [mono_iff_injective](../../../../GeneralTopology/TopCatEpiMonoNamespaced.lean/declarations/mono-iff-injective.md) | 43 | `result-track:f5273a63246c90219c5eae67b36e09d7cccc62b2ab21aef1c4ac021cbadc811a` |
+| 1 | `theorem` | [epi_iff_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopCatEpiMonoNamespaced.lean/declarations/epi-iff-surjective.md) | 34 | `result-track:7188dc9f37a83ce77e35e2b38ab483cc31dd8391b632295bb237605137d7dc2d` |
+| 2 | `theorem` | [mono_iff_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopCatEpiMonoNamespaced.lean/declarations/mono-iff-injective.md) | 43 | `result-track:f5273a63246c90219c5eae67b36e09d7cccc62b2ab21aef1c4ac021cbadc811a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

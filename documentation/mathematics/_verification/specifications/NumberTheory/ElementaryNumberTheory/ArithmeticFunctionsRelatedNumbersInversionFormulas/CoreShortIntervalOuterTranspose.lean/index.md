@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreShortIntervalOuterTranspose.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreShortIntervalOuterTranspose.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreShortIntervalOuterTranspose.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreShortIntervalOuterTranspose.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Moebius.CoreShortIntervalOneDepthTranspose`](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreShortIntervalOneDepthTranspose.lean/index.md) — import line 11; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.CoreShortIntervalOneDepthTranspose`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreShortIntervalOneDepthTranspose.lean/index.md) — import line 11; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sum_incompatibleBlockLengthL1_eq_incompatibleDyadicStartBlockL1](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreShortIntervalOuterTranspose.lean/declarations/sum-incompatibleblocklengthl1-eq-incompatibledyadicstartblockl1.md) | 21 | `result-track:b70f7e767a0c81b30b72081ce8a0a21926dba824c137ab7e44aea105036d911d` |
-| 2 | `theorem` | [transposedIncompatibleDyadicL1Packet_eq_lengthMass](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreShortIntervalOuterTranspose.lean/declarations/transposedincompatibledyadicl1packet-eq-lengthmass.md) | 42 | `result-track:ffecbe919c6775272c0837eb21f1001dd074a79855cadc688178a0eaa0c8f622` |
-| 3 | `theorem` | [coreLongIncompatibleDyadicL1Packet_eq_transposed](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreShortIntervalOuterTranspose.lean/declarations/corelongincompatibledyadicl1packet-eq-transposed.md) | 57 | `result-track:11038e222fbf690f34266a28253f72f6f348141233a7fca90782adfdb000bd20` |
-| 4 | `def` | [incompatibleDepthTransposeAdapter](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreShortIntervalOuterTranspose.lean/declarations/incompatibledepthtransposeadapter.md) | 89 | `declaration-track:1090734bc3efc706b198dfe275bc2e65b6a2ac0b53916d674dfd1d29958ba51d` |
-| 5 | `theorem` | [subpolynomialIncompatibleDyadicPacket_of_transposed_exact](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreShortIntervalOuterTranspose.lean/declarations/subpolynomialincompatibledyadicpacket-of-transposed-exact.md) | 97 | `result-track:13096a09a48c01f1106e45ed7df4c59a50bfd3564bb94a57a887fe249fc96052` |
+| 1 | `theorem` | [sum_incompatibleBlockLengthL1_eq_incompatibleDyadicStartBlockL1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreShortIntervalOuterTranspose.lean/declarations/sum-incompatibleblocklengthl1-eq-incompatibledyadicstartblockl1.md) | 21 | `result-track:b70f7e767a0c81b30b72081ce8a0a21926dba824c137ab7e44aea105036d911d` |
+| 2 | `theorem` | [transposedIncompatibleDyadicL1Packet_eq_lengthMass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreShortIntervalOuterTranspose.lean/declarations/transposedincompatibledyadicl1packet-eq-lengthmass.md) | 42 | `result-track:ffecbe919c6775272c0837eb21f1001dd074a79855cadc688178a0eaa0c8f622` |
+| 3 | `theorem` | [coreLongIncompatibleDyadicL1Packet_eq_transposed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreShortIntervalOuterTranspose.lean/declarations/corelongincompatibledyadicl1packet-eq-transposed.md) | 57 | `result-track:11038e222fbf690f34266a28253f72f6f348141233a7fca90782adfdb000bd20` |
+| 4 | `def` | [incompatibleDepthTransposeAdapter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreShortIntervalOuterTranspose.lean/declarations/incompatibledepthtransposeadapter.md) | 89 | `declaration-track:1090734bc3efc706b198dfe275bc2e65b6a2ac0b53916d674dfd1d29958ba51d` |
+| 5 | `theorem` | [subpolynomialIncompatibleDyadicPacket_of_transposed_exact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CoreShortIntervalOuterTranspose.lean/declarations/subpolynomialincompatibledyadicpacket-of-transposed-exact.md) | 97 | `result-track:13096a09a48c01f1106e45ed7df4c59a50bfd3564bb94a57a887fe249fc96052` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/NormalizationNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/NormalizationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NormalizationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NormalizationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,12 +62,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [RelationalExclusion](../../../../Combinatorics/NormalizationNamespaced.lean/declarations/relationalexclusion.md) | 42 | `declaration-track:ec919336d179d9295ee403370895a7f2d33611927fa5d33c89d70f1abccc38e5` |
-| 2 | `theorem` | [interfaces_of_exclusion](../../../../Combinatorics/NormalizationNamespaced.lean/declarations/interfaces-of-exclusion.md) | 51 | `result-track:0d097981387991802350fc8fcf04747bf397423bb9530b2f9e8265ec291b73e8` |
-| 3 | `theorem` | [finite_normalization_of_exclusion](../../../../Combinatorics/NormalizationNamespaced.lean/declarations/finite-normalization-of-exclusion.md) | 65 | `result-track:ce67784bd9b196f487f28023e376ff6100ce2d871941fcc22ea072dae06523fb` |
-| 4 | `theorem` | [normalization_of_finite_exclusion](../../../../Combinatorics/NormalizationNamespaced.lean/declarations/normalization-of-finite-exclusion.md) | 80 | `result-track:f7fa7d3def760304a414ac465ad2de3d9acaa938ce0c12f593ccf54833a2f4b6` |
-| 5 | `theorem` | [relational_exclusion](../../../../Combinatorics/NormalizationNamespaced.lean/declarations/relational-exclusion.md) | 98 | `result-track:0a095240565fa59f2ec0062b11c6cba224817661dbfd3aa79a253bc521c1df39` |
-| 6 | `theorem` | [weak_implies_strong](../../../../Combinatorics/NormalizationNamespaced.lean/declarations/weak-implies-strong.md) | 113 | `result-track:9abdc5c35ce7ae17c58229b872c8178c7ddfd6dee53bca0e10c204a407cb5c2e` |
+| 1 | `def` | [RelationalExclusion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NormalizationNamespaced.lean/declarations/relationalexclusion.md) | 42 | `declaration-track:ec919336d179d9295ee403370895a7f2d33611927fa5d33c89d70f1abccc38e5` |
+| 2 | `theorem` | [interfaces_of_exclusion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NormalizationNamespaced.lean/declarations/interfaces-of-exclusion.md) | 51 | `result-track:0d097981387991802350fc8fcf04747bf397423bb9530b2f9e8265ec291b73e8` |
+| 3 | `theorem` | [finite_normalization_of_exclusion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NormalizationNamespaced.lean/declarations/finite-normalization-of-exclusion.md) | 65 | `result-track:ce67784bd9b196f487f28023e376ff6100ce2d871941fcc22ea072dae06523fb` |
+| 4 | `theorem` | [normalization_of_finite_exclusion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NormalizationNamespaced.lean/declarations/normalization-of-finite-exclusion.md) | 80 | `result-track:f7fa7d3def760304a414ac465ad2de3d9acaa938ce0c12f593ccf54833a2f4b6` |
+| 5 | `theorem` | [relational_exclusion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NormalizationNamespaced.lean/declarations/relational-exclusion.md) | 98 | `result-track:0a095240565fa59f2ec0062b11c6cba224817661dbfd3aa79a253bc521c1df39` |
+| 6 | `theorem` | [weak_implies_strong](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NormalizationNamespaced.lean/declarations/weak-implies-strong.md) | 113 | `result-track:9abdc5c35ce7ae17c58229b872c8178c7ddfd6dee53bca0e10c204a407cb5c2e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

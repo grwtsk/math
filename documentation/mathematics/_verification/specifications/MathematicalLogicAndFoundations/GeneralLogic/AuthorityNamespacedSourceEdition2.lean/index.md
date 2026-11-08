@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AuthorityNamespacedSourceEdition2.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AuthorityNamespacedSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AuthorityNamespacedSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AuthorityNamespacedSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [SourceAuthority](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AuthorityNamespacedSourceEdition2.lean/declarations/sourceauthority.md) | 22 | `declaration-track:42aab36f4f8519f8d8a0e135a0fdc574187bbf56ae83846ab583e83a19c39e6e` |
-| 2 | `inductive` | [ResponseAuthority](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AuthorityNamespacedSourceEdition2.lean/declarations/responseauthority.md) | 25 | `declaration-track:ad42b07baa59c6a7ca9e954def4d238ce5e00be4711a98b504d3b50098da1fd7` |
-| 3 | `def` | [ResponseAuthority.rank](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AuthorityNamespacedSourceEdition2.lean/declarations/responseauthority-rank.md) | 35 | `declaration-track:012ec5da4389275fc68856a43be68b4ba08e15d6624677af7f01934e22be3e4f` |
-| 4 | `def` | [ResponseAuthority.Supports](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AuthorityNamespacedSourceEdition2.lean/declarations/responseauthority-supports.md) | 44 | `declaration-track:bc38df37f6b792308cc97dad6ac27a556e7083987285f8d5ebe9f8bce74e5858` |
-| 5 | `instance` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AuthorityNamespacedSourceEdition2.lean/declarations/instance.md) | 48 | `declaration-track:a672ff12e2da1171f30ca577c991bf5e01ef742b4586c79e8b4f9a6acf65a3ab` |
-| 6 | `theorem` | [ResponseAuthority.supports_refl](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AuthorityNamespacedSourceEdition2.lean/declarations/responseauthority-supports-refl.md) | 52 | `result-track:e0d4a0fb2cb8b923185c2e851adf7d85a6d99be635aab00a01e9d68ac5bb9235` |
-| 7 | `theorem` | [ResponseAuthority.supports_trans](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AuthorityNamespacedSourceEdition2.lean/declarations/responseauthority-supports-trans.md) | 56 | `result-track:49e3f136580cfd5fe5e4c17c5931ada15271d3c934754e3296c4c748fa6f30de` |
-| 8 | `inductive` | [EstablishmentStatus](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AuthorityNamespacedSourceEdition2.lean/declarations/establishmentstatus.md) | 64 | `declaration-track:2de40096c108e1c3c5652b235243b2458352daf2f8c0d4ae0e8f433daa84e8a0` |
+| 1 | `abbrev` | [SourceAuthority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AuthorityNamespacedSourceEdition2.lean/declarations/sourceauthority.md) | 22 | `declaration-track:42aab36f4f8519f8d8a0e135a0fdc574187bbf56ae83846ab583e83a19c39e6e` |
+| 2 | `inductive` | [ResponseAuthority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AuthorityNamespacedSourceEdition2.lean/declarations/responseauthority.md) | 25 | `declaration-track:ad42b07baa59c6a7ca9e954def4d238ce5e00be4711a98b504d3b50098da1fd7` |
+| 3 | `def` | [ResponseAuthority.rank](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AuthorityNamespacedSourceEdition2.lean/declarations/responseauthority-rank.md) | 35 | `declaration-track:012ec5da4389275fc68856a43be68b4ba08e15d6624677af7f01934e22be3e4f` |
+| 4 | `def` | [ResponseAuthority.Supports](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AuthorityNamespacedSourceEdition2.lean/declarations/responseauthority-supports.md) | 44 | `declaration-track:bc38df37f6b792308cc97dad6ac27a556e7083987285f8d5ebe9f8bce74e5858` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AuthorityNamespacedSourceEdition2.lean/declarations/instance.md) | 48 | `declaration-track:a672ff12e2da1171f30ca577c991bf5e01ef742b4586c79e8b4f9a6acf65a3ab` |
+| 6 | `theorem` | [ResponseAuthority.supports_refl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AuthorityNamespacedSourceEdition2.lean/declarations/responseauthority-supports-refl.md) | 52 | `result-track:e0d4a0fb2cb8b923185c2e851adf7d85a6d99be635aab00a01e9d68ac5bb9235` |
+| 7 | `theorem` | [ResponseAuthority.supports_trans](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AuthorityNamespacedSourceEdition2.lean/declarations/responseauthority-supports-trans.md) | 56 | `result-track:49e3f136580cfd5fe5e4c17c5931ada15271d3c934754e3296c4c748fa6f30de` |
+| 8 | `inductive` | [EstablishmentStatus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AuthorityNamespacedSourceEdition2.lean/declarations/establishmentstatus.md) | 64 | `declaration-track:2de40096c108e1c3c5652b235243b2458352daf2f8c0d4ae0e8f433daa84e8a0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

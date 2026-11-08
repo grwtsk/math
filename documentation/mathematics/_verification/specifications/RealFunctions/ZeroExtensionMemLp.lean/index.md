@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/ZeroExtensionMemLp.lean/index.md) · [Full source](../../../../RealFunctions/ZeroExtensionMemLp.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ZeroExtensionMemLp.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ZeroExtensionMemLp.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,7 +60,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [halfLine_zeroExtension_memLp](../../../../RealFunctions/ZeroExtensionMemLp.lean/declarations/halfline-zeroextension-memlp.md) | 42 | `result-track:d4beb77caee8ddd4e928c32b8215ade05241f9fb9958ceaba22e83c2fa9d4289` |
+| 1 | `theorem` | [halfLine_zeroExtension_memLp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ZeroExtensionMemLp.lean/declarations/halfline-zeroextension-memlp.md) | 42 | `result-track:d4beb77caee8ddd4e928c32b8215ade05241f9fb9958ceaba22e83c2fa9d4289` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

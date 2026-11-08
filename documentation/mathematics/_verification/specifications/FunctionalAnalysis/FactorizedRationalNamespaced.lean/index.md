@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/FactorizedRationalNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/FactorizedRationalNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FactorizedRationalNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FactorizedRationalNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,18 +59,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [mulSupport](../../../../FunctionalAnalysis/FactorizedRationalNamespaced.lean/declarations/mulsupport.md) | 54 | `result-track:f913962fb669afab089094da940ba67128216450cbb13ab3caf78291d44507fc` |
-| 2 | `lemma` | [finprod_eq_fun](../../../../FunctionalAnalysis/FactorizedRationalNamespaced.lean/declarations/finprod-eq-fun.md) | 69 | `result-track:b65b94ba2a0e9a15cb686a1b4acffe9188ed26565d18f13f247cacc5cf169534` |
-| 3 | `theorem` | [analyticAt](../../../../FunctionalAnalysis/FactorizedRationalNamespaced.lean/declarations/analyticat.md) | 83 | `result-track:5059fde5cb6597f798559022ddfcde317210daa9c0bcf1816869b8d06935e013` |
-| 4 | `theorem` | [ne_zero](../../../../FunctionalAnalysis/FactorizedRationalNamespaced.lean/declarations/ne-zero.md) | 96 | `result-track:27c9bbdb602f14a1868dbc4ee45a390b3826ac3951d2f8f4e8b9cf9733815bb3` |
-| 5 | `lemma` | [extractFactor](../../../../FunctionalAnalysis/FactorizedRationalNamespaced.lean/declarations/extractfactor.md) | 109 | `result-track:731a71351a801372ac61dbbe5e75278d97a3bd98cff114d115a01b049e784d56` |
-| 6 | `theorem` | [meromorphicNFOn_univ](../../../../FunctionalAnalysis/FactorizedRationalNamespaced.lean/declarations/meromorphicnfon-univ.md) | 128 | `result-track:454c9fb128edfc142480eaef2466fe1538e79c5365db017f7af1ef27808085da` |
-| 7 | `theorem` | [meromorphicNFOn](../../../../FunctionalAnalysis/FactorizedRationalNamespaced.lean/declarations/meromorphicnfon.md) | 144 | `result-track:9da59b86a56cfa25f52acbb510fe1fbc75d4918389c31367c02fbb1b8a30ce66` |
-| 8 | `theorem` | [meromorphicOrderAt_eq](../../../../FunctionalAnalysis/FactorizedRationalNamespaced.lean/declarations/meromorphicorderat-eq.md) | 154 | `result-track:5497397dffe944f71cb7ea7106fac1fcc5026a6bb932bf7b074d53c1a37a8b9d` |
-| 9 | `theorem` | [meromorphicOrderAt_ne_top](../../../../FunctionalAnalysis/FactorizedRationalNamespaced.lean/declarations/meromorphicorderat-ne-top.md) | 169 | `result-track:bf69ee2edd982c250a3cf459a374f6a9fd9453c4375dee4b26690010989948fb` |
-| 10 | `theorem` | [divisor](../../../../FunctionalAnalysis/FactorizedRationalNamespaced.lean/declarations/divisor.md) | 183 | `result-track:81f31f5c5d1a461b76bb6f6725148cd8acf179b5e1958f11da323f8d61fae409` |
-| 11 | `theorem` | [MeromorphicOn.extract_zeros_poles](../../../../FunctionalAnalysis/FactorizedRationalNamespaced.lean/declarations/meromorphicon-extract-zeros-poles.md) | 211 | `result-track:2a82baf8c6d5376c0218d105ec7d9bc53a178dae4253ab2a37bfc7c7eea22887` |
-| 12 | `theorem` | [MeromorphicOn.extract_zeros_poles_log](../../../../FunctionalAnalysis/FactorizedRationalNamespaced.lean/declarations/meromorphicon-extract-zeros-poles-log.md) | 253 | `result-track:d6c3eac243a8346e42a1bd0943a89ffebeed6e87c9a0b148a7fd42b4b0070eb9` |
+| 1 | `lemma` | [mulSupport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FactorizedRationalNamespaced.lean/declarations/mulsupport.md) | 54 | `result-track:f913962fb669afab089094da940ba67128216450cbb13ab3caf78291d44507fc` |
+| 2 | `lemma` | [finprod_eq_fun](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FactorizedRationalNamespaced.lean/declarations/finprod-eq-fun.md) | 69 | `result-track:b65b94ba2a0e9a15cb686a1b4acffe9188ed26565d18f13f247cacc5cf169534` |
+| 3 | `theorem` | [analyticAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FactorizedRationalNamespaced.lean/declarations/analyticat.md) | 83 | `result-track:5059fde5cb6597f798559022ddfcde317210daa9c0bcf1816869b8d06935e013` |
+| 4 | `theorem` | [ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FactorizedRationalNamespaced.lean/declarations/ne-zero.md) | 96 | `result-track:27c9bbdb602f14a1868dbc4ee45a390b3826ac3951d2f8f4e8b9cf9733815bb3` |
+| 5 | `lemma` | [extractFactor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FactorizedRationalNamespaced.lean/declarations/extractfactor.md) | 109 | `result-track:731a71351a801372ac61dbbe5e75278d97a3bd98cff114d115a01b049e784d56` |
+| 6 | `theorem` | [meromorphicNFOn_univ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FactorizedRationalNamespaced.lean/declarations/meromorphicnfon-univ.md) | 128 | `result-track:454c9fb128edfc142480eaef2466fe1538e79c5365db017f7af1ef27808085da` |
+| 7 | `theorem` | [meromorphicNFOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FactorizedRationalNamespaced.lean/declarations/meromorphicnfon.md) | 144 | `result-track:9da59b86a56cfa25f52acbb510fe1fbc75d4918389c31367c02fbb1b8a30ce66` |
+| 8 | `theorem` | [meromorphicOrderAt_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FactorizedRationalNamespaced.lean/declarations/meromorphicorderat-eq.md) | 154 | `result-track:5497397dffe944f71cb7ea7106fac1fcc5026a6bb932bf7b074d53c1a37a8b9d` |
+| 9 | `theorem` | [meromorphicOrderAt_ne_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FactorizedRationalNamespaced.lean/declarations/meromorphicorderat-ne-top.md) | 169 | `result-track:bf69ee2edd982c250a3cf459a374f6a9fd9453c4375dee4b26690010989948fb` |
+| 10 | `theorem` | [divisor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FactorizedRationalNamespaced.lean/declarations/divisor.md) | 183 | `result-track:81f31f5c5d1a461b76bb6f6725148cd8acf179b5e1958f11da323f8d61fae409` |
+| 11 | `theorem` | [MeromorphicOn.extract_zeros_poles](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FactorizedRationalNamespaced.lean/declarations/meromorphicon-extract-zeros-poles.md) | 211 | `result-track:2a82baf8c6d5376c0218d105ec7d9bc53a178dae4253ab2a37bfc7c7eea22887` |
+| 12 | `theorem` | [MeromorphicOn.extract_zeros_poles_log](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FactorizedRationalNamespaced.lean/declarations/meromorphicon-extract-zeros-poles-log.md) | 253 | `result-track:d6c3eac243a8346e42a1bd0943a89ffebeed6e87c9a0b148a7fd42b4b0070eb9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

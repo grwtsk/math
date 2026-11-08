@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/RieszLemmaAligned.lean/index.md) · [Full source](../../../../FunctionalAnalysis/RieszLemmaAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/RieszLemmaAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/RieszLemmaAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [riesz_lemma](../../../../FunctionalAnalysis/RieszLemmaAligned.lean/declarations/riesz-lemma.md) | 43 | `result-track:9b82422f6d7be35cc6dfff043507324d39cc192a9d7184d4eefe17ef5f4637ae` |
-| 2 | `theorem` | [riesz_lemma_of_norm_lt](../../../../FunctionalAnalysis/RieszLemmaAligned.lean/declarations/riesz-lemma-of-norm-lt.md) | 85 | `result-track:51e1784f0365cb111b3cfccc7188b1d16089a2a0c5c7e46ddfa51e39655fa552` |
-| 3 | `theorem` | [Metric.closedBall_infDist_compl_subset_closure](../../../../FunctionalAnalysis/RieszLemmaAligned.lean/declarations/metric-closedball-infdist-compl-subset-closure.md) | 110 | `result-track:4f0ce2579f6a48abb3b8ebd391e050fe30a115281fc4ed889e16c710db9847fe` |
+| 1 | `theorem` | [riesz_lemma](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/RieszLemmaAligned.lean/declarations/riesz-lemma.md) | 43 | `result-track:9b82422f6d7be35cc6dfff043507324d39cc192a9d7184d4eefe17ef5f4637ae` |
+| 2 | `theorem` | [riesz_lemma_of_norm_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/RieszLemmaAligned.lean/declarations/riesz-lemma-of-norm-lt.md) | 85 | `result-track:51e1784f0365cb111b3cfccc7188b1d16089a2a0c5c7e46ddfa51e39655fa552` |
+| 3 | `theorem` | [Metric.closedBall_infDist_compl_subset_closure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/RieszLemmaAligned.lean/declarations/metric-closedball-infdist-compl-subset-closure.md) | 110 | `result-track:4f0ce2579f6a48abb3b8ebd391e050fe30a115281fc4ed889e16c710db9847fe` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

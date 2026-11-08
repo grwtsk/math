@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ConsistencyNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ConsistencyNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ConsistencyNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ConsistencyNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [ConsistencyDimension](../../../../../ComputerScience/AlgorithmsInComputerScience/ConsistencyNamespaced.lean/declarations/consistencydimension.md) | 20 | `declaration-track:0a3686b161623835f4635b25b2aaf0f65aae2f79df506286f3882f1c4caabccc` |
-| 2 | `inductive` | [ConsistencyStatus](../../../../../ComputerScience/AlgorithmsInComputerScience/ConsistencyNamespaced.lean/declarations/consistencystatus.md) | 33 | `declaration-track:5b832a6c1e13839e82e6d66b70176b57d571b5ba5c64291d55e4886b5e551a46` |
-| 3 | `structure` | [ConsistencyFinding](../../../../../ComputerScience/AlgorithmsInComputerScience/ConsistencyNamespaced.lean/declarations/consistencyfinding.md) | 39 | `declaration-track:3afda94a1fa23c75ff7b22671ed0f7a7d34bad092c1cb1267390a7d71988d5c1` |
-| 4 | `structure` | [ConsistencyLedger](../../../../../ComputerScience/AlgorithmsInComputerScience/ConsistencyNamespaced.lean/declarations/consistencyledger.md) | 48 | `declaration-track:8c9666340c06b7b0d3a6ba4944c2f5d171054c069798ba07e6360f57e181e121` |
-| 5 | `def` | [ConsistencyLedger.SelfConsistent](../../../../../ComputerScience/AlgorithmsInComputerScience/ConsistencyNamespaced.lean/declarations/consistencyledger-selfconsistent.md) | 65 | `declaration-track:d8743abbf7d7c186c6cb746a0e20b7c0898ce9a6a92342f38193087a4a176bf5` |
-| 6 | `theorem` | [ConsistencyLedger.not_selfConsistent_of_unresolved](../../../../../ComputerScience/AlgorithmsInComputerScience/ConsistencyNamespaced.lean/declarations/consistencyledger-not-selfconsistent-of-unresolved.md) | 72 | `result-track:9ebcad6c46490ea6e28ec16bca5b33e3dec746007f2d6bd926b6bee18605a6a1` |
+| 1 | `inductive` | [ConsistencyDimension](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ConsistencyNamespaced.lean/declarations/consistencydimension.md) | 20 | `declaration-track:0a3686b161623835f4635b25b2aaf0f65aae2f79df506286f3882f1c4caabccc` |
+| 2 | `inductive` | [ConsistencyStatus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ConsistencyNamespaced.lean/declarations/consistencystatus.md) | 33 | `declaration-track:5b832a6c1e13839e82e6d66b70176b57d571b5ba5c64291d55e4886b5e551a46` |
+| 3 | `structure` | [ConsistencyFinding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ConsistencyNamespaced.lean/declarations/consistencyfinding.md) | 39 | `declaration-track:3afda94a1fa23c75ff7b22671ed0f7a7d34bad092c1cb1267390a7d71988d5c1` |
+| 4 | `structure` | [ConsistencyLedger](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ConsistencyNamespaced.lean/declarations/consistencyledger.md) | 48 | `declaration-track:8c9666340c06b7b0d3a6ba4944c2f5d171054c069798ba07e6360f57e181e121` |
+| 5 | `def` | [ConsistencyLedger.SelfConsistent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ConsistencyNamespaced.lean/declarations/consistencyledger-selfconsistent.md) | 65 | `declaration-track:d8743abbf7d7c186c6cb746a0e20b7c0898ce9a6a92342f38193087a4a176bf5` |
+| 6 | `theorem` | [ConsistencyLedger.not_selfConsistent_of_unresolved](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ConsistencyNamespaced.lean/declarations/consistencyledger-not-selfconsistent-of-unresolved.md) | 72 | `result-track:9ebcad6c46490ea6e28ec16bca5b33e3dec746007f2d6bd926b6bee18605a6a1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

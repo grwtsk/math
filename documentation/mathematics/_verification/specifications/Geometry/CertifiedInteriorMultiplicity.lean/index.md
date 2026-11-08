@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Geometry/CertifiedInteriorMultiplicity.lean/index.md) · [Full source](../../../../Geometry/CertifiedInteriorMultiplicity.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CertifiedInteriorMultiplicity.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CertifiedInteriorMultiplicity.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -48,7 +48,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 - `BitMatrix.Geometry.GridCell` — import line 19; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 20; external provider; requires a separately pinned dependency.
-- [Closed Support And Origins](../../../../Geometry/ClosedSupportAndOrigins.lean/index.md) — import line 22; pinned internal source present.
+- [Closed Support And Origins](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/ClosedSupportAndOrigins.lean/index.md) — import line 22; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [InteriorAxisStratum](../../../../Geometry/CertifiedInteriorMultiplicity.lean/declarations/interioraxisstratum.md) | 41 | `declaration-track:6fa94cf20aee493a09225db20da63fae512ca1eff4fd7dc4028f160d283f7682` |
-| 2 | `def` | [InteriorAxisStratum.codimension](../../../../Geometry/CertifiedInteriorMultiplicity.lean/declarations/interioraxisstratum-codimension.md) | 51 | `declaration-track:5a978ba9568ab185798a2a26b6513f5885611762b0f1ccdac7affa4933f0b48a` |
-| 3 | `theorem` | [fin_eq_of_val_eq](../../../../Geometry/CertifiedInteriorMultiplicity.lean/declarations/fin-eq-of-val-eq.md) | 58 | `result-track:e200d797ce499f75a7bc62fe0a5122fdd8f973366ef7f731b6d7c374b2b395c4` |
-| 4 | `theorem` | [axisCarriers_eq_singleton_of_cell](../../../../Geometry/CertifiedInteriorMultiplicity.lean/declarations/axiscarriers-eq-singleton-of-cell.md) | 64 | `result-track:c865d10d715968030f40dd8eb68d545aeb08b567b6d1ef864d084d000f2cfb36` |
-| 5 | `theorem` | [axisCarriers_eq_pair_of_internalBoundary](../../../../Geometry/CertifiedInteriorMultiplicity.lean/declarations/axiscarriers-eq-pair-of-internalboundary.md) | 92 | `result-track:43c46cf8e1c3e13aac220c3ac5bbae8136390bfbac728aa5c521a7ce1bee3436` |
-| 6 | `structure` | [InteriorGridStratum](../../../../Geometry/CertifiedInteriorMultiplicity.lean/declarations/interiorgridstratum.md) | 128 | `declaration-track:be367ab602f42579dc7e95bd953217d1cc445231e8a0286190ec24e0439ac246` |
-| 7 | `def` | [InteriorGridStratum.codimension](../../../../Geometry/CertifiedInteriorMultiplicity.lean/declarations/interiorgridstratum-codimension.md) | 134 | `declaration-track:132d6b602fe3b01fabd521305022beb64fca09143d2a54c9dd3a9a51c9d3fdc8` |
-| 8 | `theorem` | [carrierMultiplicity_eq_two_pow_codimension](../../../../Geometry/CertifiedInteriorMultiplicity.lean/declarations/carriermultiplicity-eq-two-pow-codimension.md) | 142 | `result-track:d45209d464774f121f26c8f3a736a3ce73be2e1d4f4cb351a2697c1702576ad0` |
+| 1 | `inductive` | [InteriorAxisStratum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CertifiedInteriorMultiplicity.lean/declarations/interioraxisstratum.md) | 41 | `declaration-track:6fa94cf20aee493a09225db20da63fae512ca1eff4fd7dc4028f160d283f7682` |
+| 2 | `def` | [InteriorAxisStratum.codimension](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CertifiedInteriorMultiplicity.lean/declarations/interioraxisstratum-codimension.md) | 51 | `declaration-track:5a978ba9568ab185798a2a26b6513f5885611762b0f1ccdac7affa4933f0b48a` |
+| 3 | `theorem` | [fin_eq_of_val_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CertifiedInteriorMultiplicity.lean/declarations/fin-eq-of-val-eq.md) | 58 | `result-track:e200d797ce499f75a7bc62fe0a5122fdd8f973366ef7f731b6d7c374b2b395c4` |
+| 4 | `theorem` | [axisCarriers_eq_singleton_of_cell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CertifiedInteriorMultiplicity.lean/declarations/axiscarriers-eq-singleton-of-cell.md) | 64 | `result-track:c865d10d715968030f40dd8eb68d545aeb08b567b6d1ef864d084d000f2cfb36` |
+| 5 | `theorem` | [axisCarriers_eq_pair_of_internalBoundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CertifiedInteriorMultiplicity.lean/declarations/axiscarriers-eq-pair-of-internalboundary.md) | 92 | `result-track:43c46cf8e1c3e13aac220c3ac5bbae8136390bfbac728aa5c521a7ce1bee3436` |
+| 6 | `structure` | [InteriorGridStratum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CertifiedInteriorMultiplicity.lean/declarations/interiorgridstratum.md) | 128 | `declaration-track:be367ab602f42579dc7e95bd953217d1cc445231e8a0286190ec24e0439ac246` |
+| 7 | `def` | [InteriorGridStratum.codimension](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CertifiedInteriorMultiplicity.lean/declarations/interiorgridstratum-codimension.md) | 134 | `declaration-track:132d6b602fe3b01fabd521305022beb64fca09143d2a54c9dd3a9a51c9d3fdc8` |
+| 8 | `theorem` | [carrierMultiplicity_eq_two_pow_codimension](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CertifiedInteriorMultiplicity.lean/declarations/carriermultiplicity-eq-two-pow-codimension.md) | 142 | `result-track:d45209d464774f121f26c8f3a736a3ce73be2e1d4f4cb351a2697c1702576ad0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

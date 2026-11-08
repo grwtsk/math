@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FiniteGainFixtures.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FiniteGainFixtures.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FiniteGainFixtures.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FiniteGainFixtures.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [next](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FiniteGainFixtures.lean/declarations/next.md) | 23 | `declaration-track:d6ac67982db7777b56d0d7dcbc41c1026e79555e3a4cf804fa23fc8eb1ed7134` |
-| 2 | `def` | [gain](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FiniteGainFixtures.lean/declarations/gain.md) | 26 | `declaration-track:9b95777e23e1d63457cc5da40f003796c1bee1d0eb2873463362f17f4e62ce71` |
-| 3 | `def` | [storage](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FiniteGainFixtures.lean/declarations/storage.md) | 29 | `declaration-track:8aaab635875f44b50ccd5ecc811499c1b29873068d3b6711d3ff22856518ff25` |
-| 4 | `theorem` | [eight_state_edge_equality](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FiniteGainFixtures.lean/declarations/eight-state-edge-equality.md) | 31 | `result-track:452339374cbe15ce36e5e824c6d8809eb64b69446afe270f4190bca46deb5f39` |
-| 5 | `theorem` | [eight_state_orbit](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FiniteGainFixtures.lean/declarations/eight-state-orbit.md) | 35 | `result-track:08fff25af4426b1cbb677ca6de22590b7779f5905c6d98c7b3be808c319f0274` |
-| 6 | `theorem` | [adverse_edge_rejected](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FiniteGainFixtures.lean/declarations/adverse-edge-rejected.md) | 39 | `result-track:7cd295dc4fe29c638b0008dd34e5706134484d6f5562bd221f6bca80435025c8` |
+| 1 | `def` | [next](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FiniteGainFixtures.lean/declarations/next.md) | 23 | `declaration-track:d6ac67982db7777b56d0d7dcbc41c1026e79555e3a4cf804fa23fc8eb1ed7134` |
+| 2 | `def` | [gain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FiniteGainFixtures.lean/declarations/gain.md) | 26 | `declaration-track:9b95777e23e1d63457cc5da40f003796c1bee1d0eb2873463362f17f4e62ce71` |
+| 3 | `def` | [storage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FiniteGainFixtures.lean/declarations/storage.md) | 29 | `declaration-track:8aaab635875f44b50ccd5ecc811499c1b29873068d3b6711d3ff22856518ff25` |
+| 4 | `theorem` | [eight_state_edge_equality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FiniteGainFixtures.lean/declarations/eight-state-edge-equality.md) | 31 | `result-track:452339374cbe15ce36e5e824c6d8809eb64b69446afe270f4190bca46deb5f39` |
+| 5 | `theorem` | [eight_state_orbit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FiniteGainFixtures.lean/declarations/eight-state-orbit.md) | 35 | `result-track:08fff25af4426b1cbb677ca6de22590b7779f5905c6d98c7b3be808c319f0274` |
+| 6 | `theorem` | [adverse_edge_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FiniteGainFixtures.lean/declarations/adverse-edge-rejected.md) | 39 | `result-track:7cd295dc4fe29c638b0008dd34e5706134484d6f5562bd221f6bca80435025c8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

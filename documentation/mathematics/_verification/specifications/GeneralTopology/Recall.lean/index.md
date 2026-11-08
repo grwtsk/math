@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/Recall.lean/index.md) · [Full source](../../../../GeneralTopology/Recall.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Recall.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Recall.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,8 +60,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [foo](../../../../GeneralTopology/Recall.lean/declarations/foo.md) | 62 | `declaration-track:27a543b6377f0dcafe190495761b8076647098da0f6baa4400848152467429b7` |
-| 2 | `axiom` | [bar](../../../../GeneralTopology/Recall.lean/declarations/bar.md) | 90 | `declaration-track:32eca8e0df79c1abc7ceed17d88259eb695bd756c22a23391db0b8f5d970d522` |
+| 1 | `def` | [foo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Recall.lean/declarations/foo.md) | 62 | `declaration-track:27a543b6377f0dcafe190495761b8076647098da0f6baa4400848152467429b7` |
+| 2 | `axiom` | [bar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Recall.lean/declarations/bar.md) | 90 | `declaration-track:32eca8e0df79c1abc7ceed17d88259eb695bd756c22a23391db0b8f5d970d522` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

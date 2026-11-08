@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalFamilyNamespacedMass.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalFamilyNamespacedMass.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalFamilyNamespacedMass.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalFamilyNamespacedMass.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [OrdinalFamilySquareRootCertificate](../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalFamilyNamespacedMass.lean/declarations/ordinalfamilysquarerootcertificate.md) | 28 | `declaration-track:941f7cc6b9ded2828261a639342d1988c967acc4bf112168ded5cf1280d9ce4f` |
-| 2 | `def` | [mass](../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalFamilyNamespacedMass.lean/declarations/mass.md) | 54 | `declaration-track:50992ed75940826f1665e2c4ff651f899c58e189220ccd09de074e888b4d8944` |
-| 3 | `def` | [discrepancyNorm](../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalFamilyNamespacedMass.lean/declarations/discrepancynorm.md) | 68 | `declaration-track:bb38775c0dc95319a657e67e78331eebae014612a8969c9dd977f401646fc109` |
-| 4 | `theorem` | [ordinal_family_square_root_bound](../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalFamilyNamespacedMass.lean/declarations/ordinal-family-square-root-bound.md) | 82 | `result-track:66f2d437276445e2c82d252949376e680410663d456e9ddaa5864bad3bc82ff9` |
-| 5 | `def` | [toSquareRootNormCertificate](../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalFamilyNamespacedMass.lean/declarations/tosquarerootnormcertificate.md) | 123 | `declaration-track:635c7c2a548cf506b55b8840beb2e9923f0948ed9ae6f15b1ef94a0b8f75b290` |
-| 6 | `constant` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalFamilyNamespacedMass.lean/declarations/constant.md) | 139 | `declaration-track:a992b775189e0359a036f61ae0833f274e27fc0ce978736f2cae3e1ad5b48a3b` |
-| 7 | `theorem` | [ordinal_family_square_root_finite](../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalFamilyNamespacedMass.lean/declarations/ordinal-family-square-root-finite.md) | 149 | `result-track:d157ab5fe52b2bbc33eaffd619416959635cbbbf938a30aace90831ceb84ec34` |
+| 1 | `structure` | [OrdinalFamilySquareRootCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalFamilyNamespacedMass.lean/declarations/ordinalfamilysquarerootcertificate.md) | 28 | `declaration-track:941f7cc6b9ded2828261a639342d1988c967acc4bf112168ded5cf1280d9ce4f` |
+| 2 | `def` | [mass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalFamilyNamespacedMass.lean/declarations/mass.md) | 54 | `declaration-track:50992ed75940826f1665e2c4ff651f899c58e189220ccd09de074e888b4d8944` |
+| 3 | `def` | [discrepancyNorm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalFamilyNamespacedMass.lean/declarations/discrepancynorm.md) | 68 | `declaration-track:bb38775c0dc95319a657e67e78331eebae014612a8969c9dd977f401646fc109` |
+| 4 | `theorem` | [ordinal_family_square_root_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalFamilyNamespacedMass.lean/declarations/ordinal-family-square-root-bound.md) | 82 | `result-track:66f2d437276445e2c82d252949376e680410663d456e9ddaa5864bad3bc82ff9` |
+| 5 | `def` | [toSquareRootNormCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalFamilyNamespacedMass.lean/declarations/tosquarerootnormcertificate.md) | 123 | `declaration-track:635c7c2a548cf506b55b8840beb2e9923f0948ed9ae6f15b1ef94a0b8f75b290` |
+| 6 | `constant` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalFamilyNamespacedMass.lean/declarations/constant.md) | 139 | `declaration-track:a992b775189e0359a036f61ae0833f274e27fc0ce978736f2cae3e1ad5b48a3b` |
+| 7 | `theorem` | [ordinal_family_square_root_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalFamilyNamespacedMass.lean/declarations/ordinal-family-square-root-finite.md) | 149 | `result-track:d157ab5fe52b2bbc33eaffd619416959635cbbbf938a30aace90831ceb84ec34` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

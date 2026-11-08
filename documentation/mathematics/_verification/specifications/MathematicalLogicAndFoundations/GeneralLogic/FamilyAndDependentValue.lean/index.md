@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FamilyAndDependentValue.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FamilyAndDependentValue.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FamilyAndDependentValue.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FamilyAndDependentValue.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CohomologyTheory](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FamilyAndDependentValue.lean/declarations/cohomologytheory.md) | 44 | `declaration-track:a82ac43d3484efbc020526f1437f307b7d9971ebf34d4518677c5b9067659501` |
-| 2 | `structure` | [CohomologyClass](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FamilyAndDependentValue.lean/declarations/cohomologyclass.md) | 51 | `declaration-track:49b56fe3f9e8c5a44cb9be1587d7698d5ae9d0b1bc3aa0de1d87ec86a77479d9` |
+| 1 | `structure` | [CohomologyTheory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FamilyAndDependentValue.lean/declarations/cohomologytheory.md) | 44 | `declaration-track:a82ac43d3484efbc020526f1437f307b7d9971ebf34d4518677c5b9067659501` |
+| 2 | `structure` | [CohomologyClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FamilyAndDependentValue.lean/declarations/cohomologyclass.md) | 51 | `declaration-track:49b56fe3f9e8c5a44cb9be1587d7698d5ae9d0b1bc3aa0de1d87ec86a77479d9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

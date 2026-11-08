@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/RationalTaylorSeedNormalization.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/RationalTaylorSeedNormalization.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalTaylorSeedNormalization.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalTaylorSeedNormalization.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.IntegerTaylorPolynomial`](../../../../FunctionsOfAComplexVariable/IntegerTaylorPolynomial.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.RationalPowerEvaluation`](../../../../FunctionsOfAComplexVariable/RationalPowerEvaluation.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.IntegerTaylorPolynomial`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IntegerTaylorPolynomial.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.RationalPowerEvaluation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalPowerEvaluation.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,26 +58,26 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [argDen](../../../../FunctionsOfAComplexVariable/RationalTaylorSeedNormalization.lean/declarations/argden.md) | 24 | `declaration-track:6474ef7cb27a59fd8bf0b248fac1abfb2e58152f3f363cd9132589cdec193565` |
-| 2 | `def` | [argNum](../../../../FunctionsOfAComplexVariable/RationalTaylorSeedNormalization.lean/declarations/argnum.md) | 25 | `declaration-track:d1565a02c96b3f824dd6b0e19432013a794803436e89021ad9ff2bf58671243d` |
-| 3 | `def` | [seedNum](../../../../FunctionsOfAComplexVariable/RationalTaylorSeedNormalization.lean/declarations/seednum.md) | 27 | `declaration-track:381562becc981627b8631c88a13b015ee67cdd2ee2ce416aa2c94eb16a164b74` |
-| 4 | `def` | [seedDen](../../../../FunctionsOfAComplexVariable/RationalTaylorSeedNormalization.lean/declarations/seedden.md) | 28 | `declaration-track:a49bee2299bd0547975bf65740cd98fdf70ef654c028f3a4c39d0f60f476232f` |
-| 5 | `def` | [tailNum](../../../../FunctionsOfAComplexVariable/RationalTaylorSeedNormalization.lean/declarations/tailnum.md) | 30 | `declaration-track:e0491026863d5aba27ade19a15fdad91fd474819bd273ef57ab13d386894ddb5` |
-| 6 | `def` | [tailDen](../../../../FunctionsOfAComplexVariable/RationalTaylorSeedNormalization.lean/declarations/tailden.md) | 31 | `declaration-track:966fe1309ea61d38fa73d54a335bd40a46f79f90718adb81f9d31e5338495053` |
-| 7 | `def` | [errorNum](../../../../FunctionsOfAComplexVariable/RationalTaylorSeedNormalization.lean/declarations/errornum.md) | 33 | `declaration-track:cb8034f018399f953a56d0a0fc8a8b2c9facef6931066c92ba062ad7fa4d32e6` |
-| 8 | `def` | [errorDen](../../../../FunctionsOfAComplexVariable/RationalTaylorSeedNormalization.lean/declarations/errorden.md) | 38 | `declaration-track:8b6a94dc4daf874bc779a80374360ce6e0cd7930500ad5755ba1125eb18fcbac` |
-| 9 | `def` | [fullError](../../../../FunctionsOfAComplexVariable/RationalTaylorSeedNormalization.lean/declarations/fullerror.md) | 42 | `declaration-track:9a00643c7c62ee9a8de0602a669ef874c99e620243219916452adced668dddee` |
-| 10 | `theorem` | [argDen_pos](../../../../FunctionsOfAComplexVariable/RationalTaylorSeedNormalization.lean/declarations/argden-pos.md) | 46 | `result-track:f563f12cef4b20f5868ba4ea4d923fb17399071298371ec171b4d36b57c1eb73` |
-| 11 | `theorem` | [argument_identity](../../../../FunctionsOfAComplexVariable/RationalTaylorSeedNormalization.lean/declarations/argument-identity.md) | 50 | `result-track:55483274db4ca96d4860bab7bdab1f7df4a3844738c9a75f2f951ed07f6ba05f` |
-| 12 | `theorem` | [seedDen_pos](../../../../FunctionsOfAComplexVariable/RationalTaylorSeedNormalization.lean/declarations/seedden-pos.md) | 61 | `result-track:2f884473c137d042bd86ca32a12528549ad92091aa0a6a3735814008725b8578` |
-| 13 | `theorem` | [tailDen_pos](../../../../FunctionsOfAComplexVariable/RationalTaylorSeedNormalization.lean/declarations/tailden-pos.md) | 64 | `result-track:69431aa0bce0306218e7b6fe6a5678b190bf904ddb4cd00f2f070e654e61bd85` |
-| 14 | `theorem` | [errorDen_pos](../../../../FunctionsOfAComplexVariable/RationalTaylorSeedNormalization.lean/declarations/errorden-pos.md) | 68 | `result-track:870c6a26f73bf9c10401be4c36173b9792387295c1228804aca9707e8d137fcb` |
-| 15 | `theorem` | [polynomial_identity](../../../../FunctionsOfAComplexVariable/RationalTaylorSeedNormalization.lean/declarations/polynomial-identity.md) | 72 | `result-track:0cea27b2ea269d2f6f56fe279ad51c1141b18e6fd6eefa8dc113d9eebf32d1d7` |
-| 16 | `theorem` | [full_error_identity](../../../../FunctionsOfAComplexVariable/RationalTaylorSeedNormalization.lean/declarations/full-error-identity.md) | 78 | `result-track:cf2d9cde96c9bd911fedf40aebf1106403ebc800b7224a68e0f9ec0a6e51475b` |
-| 17 | `theorem` | [fullError_nonneg](../../../../FunctionsOfAComplexVariable/RationalTaylorSeedNormalization.lean/declarations/fullerror-nonneg.md) | 92 | `result-track:2acfb3b50d087ac60ad67031938608a025ac5def32596d808674eb4cfaee2ae6` |
-| 18 | `def` | [Windows](../../../../FunctionsOfAComplexVariable/RationalTaylorSeedNormalization.lean/declarations/windows.md) | 98 | `declaration-track:5c24ed9ceefd36b40aeed630f9e8a815387ef500d6333b4d796299b380a535ed` |
-| 19 | `theorem` | [seed_valid_of_windows](../../../../FunctionsOfAComplexVariable/RationalTaylorSeedNormalization.lean/declarations/seed-valid-of-windows.md) | 105 | `result-track:717074467d85bc4b0b0777f0a3873bf6d040fa45ef77197caed425dcc36c2f24` |
-| 20 | `theorem` | [original_seed_valid](../../../../FunctionsOfAComplexVariable/RationalTaylorSeedNormalization.lean/declarations/original-seed-valid.md) | 124 | `result-track:d4e8c82d7a2019e451ae1c673628ef58a6199824ee9a63ac32001fa7112012f7` |
+| 1 | `def` | [argDen](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalTaylorSeedNormalization.lean/declarations/argden.md) | 24 | `declaration-track:6474ef7cb27a59fd8bf0b248fac1abfb2e58152f3f363cd9132589cdec193565` |
+| 2 | `def` | [argNum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalTaylorSeedNormalization.lean/declarations/argnum.md) | 25 | `declaration-track:d1565a02c96b3f824dd6b0e19432013a794803436e89021ad9ff2bf58671243d` |
+| 3 | `def` | [seedNum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalTaylorSeedNormalization.lean/declarations/seednum.md) | 27 | `declaration-track:381562becc981627b8631c88a13b015ee67cdd2ee2ce416aa2c94eb16a164b74` |
+| 4 | `def` | [seedDen](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalTaylorSeedNormalization.lean/declarations/seedden.md) | 28 | `declaration-track:a49bee2299bd0547975bf65740cd98fdf70ef654c028f3a4c39d0f60f476232f` |
+| 5 | `def` | [tailNum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalTaylorSeedNormalization.lean/declarations/tailnum.md) | 30 | `declaration-track:e0491026863d5aba27ade19a15fdad91fd474819bd273ef57ab13d386894ddb5` |
+| 6 | `def` | [tailDen](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalTaylorSeedNormalization.lean/declarations/tailden.md) | 31 | `declaration-track:966fe1309ea61d38fa73d54a335bd40a46f79f90718adb81f9d31e5338495053` |
+| 7 | `def` | [errorNum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalTaylorSeedNormalization.lean/declarations/errornum.md) | 33 | `declaration-track:cb8034f018399f953a56d0a0fc8a8b2c9facef6931066c92ba062ad7fa4d32e6` |
+| 8 | `def` | [errorDen](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalTaylorSeedNormalization.lean/declarations/errorden.md) | 38 | `declaration-track:8b6a94dc4daf874bc779a80374360ce6e0cd7930500ad5755ba1125eb18fcbac` |
+| 9 | `def` | [fullError](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalTaylorSeedNormalization.lean/declarations/fullerror.md) | 42 | `declaration-track:9a00643c7c62ee9a8de0602a669ef874c99e620243219916452adced668dddee` |
+| 10 | `theorem` | [argDen_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalTaylorSeedNormalization.lean/declarations/argden-pos.md) | 46 | `result-track:f563f12cef4b20f5868ba4ea4d923fb17399071298371ec171b4d36b57c1eb73` |
+| 11 | `theorem` | [argument_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalTaylorSeedNormalization.lean/declarations/argument-identity.md) | 50 | `result-track:55483274db4ca96d4860bab7bdab1f7df4a3844738c9a75f2f951ed07f6ba05f` |
+| 12 | `theorem` | [seedDen_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalTaylorSeedNormalization.lean/declarations/seedden-pos.md) | 61 | `result-track:2f884473c137d042bd86ca32a12528549ad92091aa0a6a3735814008725b8578` |
+| 13 | `theorem` | [tailDen_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalTaylorSeedNormalization.lean/declarations/tailden-pos.md) | 64 | `result-track:69431aa0bce0306218e7b6fe6a5678b190bf904ddb4cd00f2f070e654e61bd85` |
+| 14 | `theorem` | [errorDen_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalTaylorSeedNormalization.lean/declarations/errorden-pos.md) | 68 | `result-track:870c6a26f73bf9c10401be4c36173b9792387295c1228804aca9707e8d137fcb` |
+| 15 | `theorem` | [polynomial_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalTaylorSeedNormalization.lean/declarations/polynomial-identity.md) | 72 | `result-track:0cea27b2ea269d2f6f56fe279ad51c1141b18e6fd6eefa8dc113d9eebf32d1d7` |
+| 16 | `theorem` | [full_error_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalTaylorSeedNormalization.lean/declarations/full-error-identity.md) | 78 | `result-track:cf2d9cde96c9bd911fedf40aebf1106403ebc800b7224a68e0f9ec0a6e51475b` |
+| 17 | `theorem` | [fullError_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalTaylorSeedNormalization.lean/declarations/fullerror-nonneg.md) | 92 | `result-track:2acfb3b50d087ac60ad67031938608a025ac5def32596d808674eb4cfaee2ae6` |
+| 18 | `def` | [Windows](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalTaylorSeedNormalization.lean/declarations/windows.md) | 98 | `declaration-track:5c24ed9ceefd36b40aeed630f9e8a815387ef500d6333b4d796299b380a535ed` |
+| 19 | `theorem` | [seed_valid_of_windows](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalTaylorSeedNormalization.lean/declarations/seed-valid-of-windows.md) | 105 | `result-track:717074467d85bc4b0b0777f0a3873bf6d040fa45ef77197caed425dcc36c2f24` |
+| 20 | `theorem` | [original_seed_valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalTaylorSeedNormalization.lean/declarations/original-seed-valid.md) | 124 | `result-track:d4e8c82d7a2019e451ae1c673628ef58a6199824ee9a63ac32001fa7112012f7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

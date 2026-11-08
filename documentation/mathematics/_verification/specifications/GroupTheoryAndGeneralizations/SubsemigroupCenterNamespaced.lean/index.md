@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/SubsemigroupCenterNamespaced.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/SubsemigroupCenterNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SubsemigroupCenterNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SubsemigroupCenterNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [center](../../../../GroupTheoryAndGeneralizations/SubsemigroupCenterNamespaced.lean/declarations/center.md) | 47 | `declaration-track:d7b826f762ea385d0592af201d84ca551b5362555a71b2a2eb0bee7a4dcec9ca` |
-| 2 | `instance` | [center.commSemigroup](../../../../GroupTheoryAndGeneralizations/SubsemigroupCenterNamespaced.lean/declarations/center-commsemigroup.md) | 57 | `declaration-track:e51f87bdae42a13ced7e5d2e3e51d9098ad692e42c51c2e7d5625a0c0c34b43a` |
-| 3 | `theorem` | [mem_center_iff](../../../../GroupTheoryAndGeneralizations/SubsemigroupCenterNamespaced.lean/declarations/mem-center-iff.md) | 67 | `result-track:998c227fbfd1ed4e916ec91e450a87426cf8023f9bace22318b310cf0efff19b` |
-| 4 | `instance` | [decidableMemCenter](../../../../GroupTheoryAndGeneralizations/SubsemigroupCenterNamespaced.lean/declarations/decidablememcenter.md) | 72 | `declaration-track:b914f0ea6853f96c1cd7a427c546f6de4116d2ad24ab60510b9ee073f19b3368` |
-| 5 | `theorem` | [center_eq_top](../../../../GroupTheoryAndGeneralizations/SubsemigroupCenterNamespaced.lean/declarations/center-eq-top.md) | 82 | `result-track:869e75dfedbde90be3f0a94619e19233221c6dc0c590f2039c8c598a1cbfc9b7` |
+| 1 | `def` | [center](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SubsemigroupCenterNamespaced.lean/declarations/center.md) | 47 | `declaration-track:d7b826f762ea385d0592af201d84ca551b5362555a71b2a2eb0bee7a4dcec9ca` |
+| 2 | `instance` | [center.commSemigroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SubsemigroupCenterNamespaced.lean/declarations/center-commsemigroup.md) | 57 | `declaration-track:e51f87bdae42a13ced7e5d2e3e51d9098ad692e42c51c2e7d5625a0c0c34b43a` |
+| 3 | `theorem` | [mem_center_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SubsemigroupCenterNamespaced.lean/declarations/mem-center-iff.md) | 67 | `result-track:998c227fbfd1ed4e916ec91e450a87426cf8023f9bace22318b310cf0efff19b` |
+| 4 | `instance` | [decidableMemCenter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SubsemigroupCenterNamespaced.lean/declarations/decidablememcenter.md) | 72 | `declaration-track:b914f0ea6853f96c1cd7a427c546f6de4116d2ad24ab60510b9ee073f19b3368` |
+| 5 | `theorem` | [center_eq_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SubsemigroupCenterNamespaced.lean/declarations/center-eq-top.md) | 82 | `result-track:869e75dfedbde90be3f0a94619e19233221c6dc0c590f2039c8c598a1cbfc9b7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

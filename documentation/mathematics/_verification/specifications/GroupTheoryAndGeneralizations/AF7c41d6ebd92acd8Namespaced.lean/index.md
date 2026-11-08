@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/AF7c41d6ebd92acd8Namespaced.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/AF7c41d6ebd92acd8Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/AF7c41d6ebd92acd8Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/AF7c41d6ebd92acd8Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,7 +60,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [twistedD1_comp_twistedD0_eq_zero](../../../../GroupTheoryAndGeneralizations/AF7c41d6ebd92acd8Namespaced.lean/declarations/twistedd1-comp-twistedd0-eq-zero.md) | 23 | `result-track:8db659ea335dd823f1be052de60c6b7fe6fdd8cfb930cf612d72e027a6da040f` |
+| 1 | `theorem` | [twistedD1_comp_twistedD0_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/AF7c41d6ebd92acd8Namespaced.lean/declarations/twistedd1-comp-twistedd0-eq-zero.md) | 23 | `result-track:8db659ea335dd823f1be052de60c6b7fe6fdd8cfb930cf612d72e027a6da040f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

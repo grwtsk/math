@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../IntegralTransformsOperationalCalculus/CompactProfileLogarithmicRegularity.lean/index.md) · [Full source](../../../../IntegralTransformsOperationalCalculus/CompactProfileLogarithmicRegularity.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/CompactProfileLogarithmicRegularity.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/CompactProfileLogarithmicRegularity.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Convolution.CompactProfileHigherDerivatives`](../../../../MeasureAndIntegration/CompactProfileHigherDerivatives.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.IntegralTransforms.LogarithmicProfileRegularity`](../../../../IntegralTransformsOperationalCalculus/LogarithmicProfileRegularity.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Convolution.CompactProfileHigherDerivatives`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactProfileHigherDerivatives.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.IntegralTransforms.LogarithmicProfileRegularity`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/LogarithmicProfileRegularity.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [correlation_derivatives_zero_left](../../../../IntegralTransformsOperationalCalculus/CompactProfileLogarithmicRegularity.lean/declarations/correlation-derivatives-zero-left.md) | 28 | `result-track:eb5e1105a6bd8f9da470f586b26d0c0947e0fcdbf17c092e563b8322ccf105c4` |
-| 2 | `theorem` | [actual_logarithmic_profile_zero_left](../../../../IntegralTransformsOperationalCalculus/CompactProfileLogarithmicRegularity.lean/declarations/actual-logarithmic-profile-zero-left.md) | 43 | `result-track:d15575bb6da607d49787b2208be4fbbfc596ad3349e47bf684eb14225566a64c` |
-| 3 | `theorem` | [actual_logarithmic_profile_contDiff_two](../../../../IntegralTransformsOperationalCalculus/CompactProfileLogarithmicRegularity.lean/declarations/actual-logarithmic-profile-contdiff-two.md) | 56 | `result-track:fb545036478a0dd592f057e3bf45b7cee08a354445609a49656a782c43d1e7c8` |
+| 1 | `theorem` | [correlation_derivatives_zero_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/CompactProfileLogarithmicRegularity.lean/declarations/correlation-derivatives-zero-left.md) | 28 | `result-track:eb5e1105a6bd8f9da470f586b26d0c0947e0fcdbf17c092e563b8322ccf105c4` |
+| 2 | `theorem` | [actual_logarithmic_profile_zero_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/CompactProfileLogarithmicRegularity.lean/declarations/actual-logarithmic-profile-zero-left.md) | 43 | `result-track:d15575bb6da607d49787b2208be4fbbfc596ad3349e47bf684eb14225566a64c` |
+| 3 | `theorem` | [actual_logarithmic_profile_contDiff_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/CompactProfileLogarithmicRegularity.lean/declarations/actual-logarithmic-profile-contdiff-two.md) | 56 | `result-track:fb545036478a0dd592f057e3bf45b7cee08a354445609a49656a782c43d1e7c8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

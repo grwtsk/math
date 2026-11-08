@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/NamespacedAlternative5.lean/index.md) · [Full source](../../../../RealFunctions/NamespacedAlternative5.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/NamespacedAlternative5.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/NamespacedAlternative5.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [weightedPoleCorrelation](../../../../RealFunctions/NamespacedAlternative5.lean/declarations/weightedpolecorrelation.md) | 32 | `declaration-track:86e38e753b8ae1ae317f245d47f2a04506289b299366429d681abacd8fd4e88b` |
-| 2 | `def` | [poleReducedPrimitive](../../../../RealFunctions/NamespacedAlternative5.lean/declarations/polereducedprimitive.md) | 36 | `declaration-track:98d484f8d0310ffd7db11c4162c85c48de20221fe26348eb7b46738a816dd125` |
-| 3 | `theorem` | [weightedPoleCorrelation_contDiff](../../../../RealFunctions/NamespacedAlternative5.lean/declarations/weightedpolecorrelation-contdiff.md) | 40 | `result-track:170ebd04467eee1c2f988a5368c66ed783ac7350c688db61fb74564799ec9115` |
-| 4 | `theorem` | [weightedPoleCorrelation_hasDerivAt](../../../../RealFunctions/NamespacedAlternative5.lean/declarations/weightedpolecorrelation-hasderivat.md) | 45 | `result-track:ffd39b90cb8257d620b4f2511f3c24b7692e5425b9b5368ced31aaf6f44749f7` |
-| 5 | `theorem` | [weightedPoleCorrelation_deriv](../../../../RealFunctions/NamespacedAlternative5.lean/declarations/weightedpolecorrelation-deriv.md) | 56 | `result-track:a08d9e33717b6c41b00612903f39e18700c64b2a011cb2c44ee219a9a4666822` |
-| 6 | `theorem` | [poleReducedPrimitive_add_deriv](../../../../RealFunctions/NamespacedAlternative5.lean/declarations/polereducedprimitive-add-deriv.md) | 62 | `result-track:fe45e26fcbe6204edd3b8bb850c0b249456d44e6050be4da48727463096eb66a` |
-| 7 | `theorem` | [poleReducedPrimitive_contDiff](../../../../RealFunctions/NamespacedAlternative5.lean/declarations/polereducedprimitive-contdiff.md) | 79 | `result-track:650d8260708bb75505549d7b58636fc9a7b8a70c5ad01656498685f2cefc594a` |
-| 8 | `theorem` | [weightedPoleCorrelation_deriv_hasDerivAt](../../../../RealFunctions/NamespacedAlternative5.lean/declarations/weightedpolecorrelation-deriv-hasderivat.md) | 91 | `result-track:1a67980a5ce5fa82a7b37a0427fdd087c1a915df8712f62bc6e74bde7e334960` |
-| 9 | `theorem` | [sourceWeight_eq_poleReducedPrimitive](../../../../RealFunctions/NamespacedAlternative5.lean/declarations/sourceweight-eq-polereducedprimitive.md) | 96 | `result-track:c4105ca721d73b020bef87161fae2f3575d6e1157b34016a813ff660091ffe48` |
-| 10 | `theorem` | [poleReduced_upper_endpoints](../../../../RealFunctions/NamespacedAlternative5.lean/declarations/polereduced-upper-endpoints.md) | 113 | `result-track:09e13b018fa8444066c2dc8ae48df78ee060bbcb415aeca4926bc5de906abd51` |
+| 1 | `def` | [weightedPoleCorrelation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/NamespacedAlternative5.lean/declarations/weightedpolecorrelation.md) | 32 | `declaration-track:86e38e753b8ae1ae317f245d47f2a04506289b299366429d681abacd8fd4e88b` |
+| 2 | `def` | [poleReducedPrimitive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/NamespacedAlternative5.lean/declarations/polereducedprimitive.md) | 36 | `declaration-track:98d484f8d0310ffd7db11c4162c85c48de20221fe26348eb7b46738a816dd125` |
+| 3 | `theorem` | [weightedPoleCorrelation_contDiff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/NamespacedAlternative5.lean/declarations/weightedpolecorrelation-contdiff.md) | 40 | `result-track:170ebd04467eee1c2f988a5368c66ed783ac7350c688db61fb74564799ec9115` |
+| 4 | `theorem` | [weightedPoleCorrelation_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/NamespacedAlternative5.lean/declarations/weightedpolecorrelation-hasderivat.md) | 45 | `result-track:ffd39b90cb8257d620b4f2511f3c24b7692e5425b9b5368ced31aaf6f44749f7` |
+| 5 | `theorem` | [weightedPoleCorrelation_deriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/NamespacedAlternative5.lean/declarations/weightedpolecorrelation-deriv.md) | 56 | `result-track:a08d9e33717b6c41b00612903f39e18700c64b2a011cb2c44ee219a9a4666822` |
+| 6 | `theorem` | [poleReducedPrimitive_add_deriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/NamespacedAlternative5.lean/declarations/polereducedprimitive-add-deriv.md) | 62 | `result-track:fe45e26fcbe6204edd3b8bb850c0b249456d44e6050be4da48727463096eb66a` |
+| 7 | `theorem` | [poleReducedPrimitive_contDiff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/NamespacedAlternative5.lean/declarations/polereducedprimitive-contdiff.md) | 79 | `result-track:650d8260708bb75505549d7b58636fc9a7b8a70c5ad01656498685f2cefc594a` |
+| 8 | `theorem` | [weightedPoleCorrelation_deriv_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/NamespacedAlternative5.lean/declarations/weightedpolecorrelation-deriv-hasderivat.md) | 91 | `result-track:1a67980a5ce5fa82a7b37a0427fdd087c1a915df8712f62bc6e74bde7e334960` |
+| 9 | `theorem` | [sourceWeight_eq_poleReducedPrimitive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/NamespacedAlternative5.lean/declarations/sourceweight-eq-polereducedprimitive.md) | 96 | `result-track:c4105ca721d73b020bef87161fae2f3575d6e1157b34016a813ff660091ffe48` |
+| 10 | `theorem` | [poleReduced_upper_endpoints](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/NamespacedAlternative5.lean/declarations/polereduced-upper-endpoints.md) | 113 | `result-track:09e13b018fa8444066c2dc8ae48df78ee060bbcb415aeca4926bc5de906abd51` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

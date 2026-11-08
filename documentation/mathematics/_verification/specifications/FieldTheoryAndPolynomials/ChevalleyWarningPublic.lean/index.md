@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FieldTheoryAndPolynomials/ChevalleyWarningPublic.lean/index.md) · [Full source](../../../../FieldTheoryAndPolynomials/ChevalleyWarningPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/ChevalleyWarningPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/ChevalleyWarningPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [MvPolynomial.sum_eval_eq_zero](../../../../FieldTheoryAndPolynomials/ChevalleyWarningPublic.lean/declarations/mvpolynomial-sum-eval-eq-zero.md) | 56 | `result-track:d54a45e879518591ddfc026e24a371d2eeb77811c6855b885368adb51bd8680d` |
-| 2 | `theorem` | [char_dvd_card_solutions_of_sum_lt](../../../../FieldTheoryAndPolynomials/ChevalleyWarningPublic.lean/declarations/char-dvd-card-solutions-of-sum-lt.md) | 109 | `result-track:df29ee34ecdd22c78d60c8afc97a25c509704aa05829f2e2792f100543063ebf` |
-| 3 | `theorem` | [char_dvd_card_solutions_of_fintype_sum_lt](../../../../FieldTheoryAndPolynomials/ChevalleyWarningPublic.lean/declarations/char-dvd-card-solutions-of-fintype-sum-lt.md) | 167 | `result-track:61f453204a7c22f0921a7911b87a3dbaf8990ca0caa733b2b6944b6e58af2ce8` |
-| 4 | `theorem` | [char_dvd_card_solutions](../../../../FieldTheoryAndPolynomials/ChevalleyWarningPublic.lean/declarations/char-dvd-card-solutions.md) | 178 | `result-track:3e06e1f3c384798276178af84579ead66c695753302e34d97ceb684ae3bc5e1f` |
-| 5 | `theorem` | [char_dvd_card_solutions_of_add_lt](../../../../FieldTheoryAndPolynomials/ChevalleyWarningPublic.lean/declarations/char-dvd-card-solutions-of-add-lt.md) | 190 | `result-track:de6d43c235f768e7ada014c199425dbab46f79f95f980ccdd7597c4df3b8e55c` |
+| 1 | `theorem` | [MvPolynomial.sum_eval_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/ChevalleyWarningPublic.lean/declarations/mvpolynomial-sum-eval-eq-zero.md) | 56 | `result-track:d54a45e879518591ddfc026e24a371d2eeb77811c6855b885368adb51bd8680d` |
+| 2 | `theorem` | [char_dvd_card_solutions_of_sum_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/ChevalleyWarningPublic.lean/declarations/char-dvd-card-solutions-of-sum-lt.md) | 109 | `result-track:df29ee34ecdd22c78d60c8afc97a25c509704aa05829f2e2792f100543063ebf` |
+| 3 | `theorem` | [char_dvd_card_solutions_of_fintype_sum_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/ChevalleyWarningPublic.lean/declarations/char-dvd-card-solutions-of-fintype-sum-lt.md) | 167 | `result-track:61f453204a7c22f0921a7911b87a3dbaf8990ca0caa733b2b6944b6e58af2ce8` |
+| 4 | `theorem` | [char_dvd_card_solutions](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/ChevalleyWarningPublic.lean/declarations/char-dvd-card-solutions.md) | 178 | `result-track:3e06e1f3c384798276178af84579ead66c695753302e34d97ceb684ae3bc5e1f` |
+| 5 | `theorem` | [char_dvd_card_solutions_of_add_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/ChevalleyWarningPublic.lean/declarations/char-dvd-card-solutions-of-add-lt.md) | 190 | `result-track:de6d43c235f768e7ada014c199425dbab46f79f95f980ccdd7597c4df3b8e55c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

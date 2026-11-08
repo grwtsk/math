@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceDiagonalMainTermReviewNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceDiagonalMainTermReviewNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceDiagonalMainTermReviewNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceDiagonalMainTermReviewNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_diagonal_main_term_error](../../../../MeasureAndIntegration/SourceDiagonalMainTermReviewNamespaced.lean/declarations/actual-diagonal-main-term-error.md) | 39 | `result-track:ddf648e6d3e03d6663f64c26e041e4a5d2b1d540a07ab86c19fe616f68a1cdad` |
+| 1 | `theorem` | [actual_diagonal_main_term_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceDiagonalMainTermReviewNamespaced.lean/declarations/actual-diagonal-main-term-error.md) | 39 | `result-track:ddf648e6d3e03d6663f64c26e041e4a5d2b1d540a07ab86c19fe616f68a1cdad` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

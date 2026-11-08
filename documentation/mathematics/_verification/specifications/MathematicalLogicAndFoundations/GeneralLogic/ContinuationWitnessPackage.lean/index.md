@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ContinuationWitnessPackage.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ContinuationWitnessPackage.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ContinuationWitnessPackage.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ContinuationWitnessPackage.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ContinuationQuasiIsomorphism](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ContinuationWitnessPackage.lean/declarations/continuationquasiisomorphism.md) | 37 | `declaration-track:72b019bc74d4bb4d58f7654b16bf04e0f011240b65af98dfdf7558883ad23423` |
-| 2 | `theorem` | [continuation_quasi_iso_induces_cohomology_iso](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ContinuationWitnessPackage.lean/declarations/continuation-quasi-iso-induces-cohomology-iso.md) | 45 | `result-track:951db2e529b4f686c1df1975a7ee8b8d894ecf17ea0c4fc5d2d49b3a6ed41d17` |
+| 1 | `structure` | [ContinuationQuasiIsomorphism](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ContinuationWitnessPackage.lean/declarations/continuationquasiisomorphism.md) | 37 | `declaration-track:72b019bc74d4bb4d58f7654b16bf04e0f011240b65af98dfdf7558883ad23423` |
+| 2 | `theorem` | [continuation_quasi_iso_induces_cohomology_iso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ContinuationWitnessPackage.lean/declarations/continuation-quasi-iso-induces-cohomology-iso.md) | 45 | `result-track:951db2e529b4f686c1df1975a7ee8b8d894ecf17ea0c4fc5d2d49b3a6ed41d17` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

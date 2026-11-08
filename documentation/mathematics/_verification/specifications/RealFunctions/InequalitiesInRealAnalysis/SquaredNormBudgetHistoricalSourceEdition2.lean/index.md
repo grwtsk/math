@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../RealFunctions/InequalitiesInRealAnalysis/SquaredNormBudgetHistoricalSourceEdition2.lean/index.md) · [Full source](../../../../../RealFunctions/InequalitiesInRealAnalysis/SquaredNormBudgetHistoricalSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/SquaredNormBudgetHistoricalSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/SquaredNormBudgetHistoricalSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [constant_slack](../../../../../RealFunctions/InequalitiesInRealAnalysis/SquaredNormBudgetHistoricalSourceEdition2.lean/declarations/constant-slack.md) | 11 | `result-track:154c8ba6dff47980f2f2a4ac1119d2cc54977ec45c73f129d3b39cf92d9366f9` |
-| 2 | `theorem` | [forward_energy](../../../../../RealFunctions/InequalitiesInRealAnalysis/SquaredNormBudgetHistoricalSourceEdition2.lean/declarations/forward-energy.md) | 14 | `result-track:9dc827d1da1c23cc2cb424d38e76813ef53c03fc8acc88d8ee113f57b9fd1d31` |
-| 3 | `theorem` | [reverse_energy](../../../../../RealFunctions/InequalitiesInRealAnalysis/SquaredNormBudgetHistoricalSourceEdition2.lean/declarations/reverse-energy.md) | 21 | `result-track:191f8a4c984bdad9d64bde1f9312ae55458f23977028d1b8fdf82d502ff1775d` |
-| 4 | `theorem` | [mixed_energy_identity](../../../../../RealFunctions/InequalitiesInRealAnalysis/SquaredNormBudgetHistoricalSourceEdition2.lean/declarations/mixed-energy-identity.md) | 27 | `result-track:0afb4881358ed77efd12ba61769bd8fe68a2a6605842ec5b31ae4e5876261eb8` |
-| 5 | `theorem` | [canonical_upper](../../../../../RealFunctions/InequalitiesInRealAnalysis/SquaredNormBudgetHistoricalSourceEdition2.lean/declarations/canonical-upper.md) | 31 | `result-track:4448c567eb950bc4fbb901a9010579ae742c81e7bfee2bda8daf5d478be9a54a` |
-| 6 | `theorem` | [canonical_reverse](../../../../../RealFunctions/InequalitiesInRealAnalysis/SquaredNormBudgetHistoricalSourceEdition2.lean/declarations/canonical-reverse.md) | 38 | `result-track:bbf61fb7aecfe7ee43543e464072fc468fc3a40d42ad8b76510a0917cfa4d9da` |
+| 1 | `theorem` | [constant_slack](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/SquaredNormBudgetHistoricalSourceEdition2.lean/declarations/constant-slack.md) | 11 | `result-track:154c8ba6dff47980f2f2a4ac1119d2cc54977ec45c73f129d3b39cf92d9366f9` |
+| 2 | `theorem` | [forward_energy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/SquaredNormBudgetHistoricalSourceEdition2.lean/declarations/forward-energy.md) | 14 | `result-track:9dc827d1da1c23cc2cb424d38e76813ef53c03fc8acc88d8ee113f57b9fd1d31` |
+| 3 | `theorem` | [reverse_energy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/SquaredNormBudgetHistoricalSourceEdition2.lean/declarations/reverse-energy.md) | 21 | `result-track:191f8a4c984bdad9d64bde1f9312ae55458f23977028d1b8fdf82d502ff1775d` |
+| 4 | `theorem` | [mixed_energy_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/SquaredNormBudgetHistoricalSourceEdition2.lean/declarations/mixed-energy-identity.md) | 27 | `result-track:0afb4881358ed77efd12ba61769bd8fe68a2a6605842ec5b31ae4e5876261eb8` |
+| 5 | `theorem` | [canonical_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/SquaredNormBudgetHistoricalSourceEdition2.lean/declarations/canonical-upper.md) | 31 | `result-track:4448c567eb950bc4fbb901a9010579ae742c81e7bfee2bda8daf5d478be9a54a` |
+| 6 | `theorem` | [canonical_reverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/SquaredNormBudgetHistoricalSourceEdition2.lean/declarations/canonical-reverse.md) | 38 | `result-track:bbf61fb7aecfe7ee43543e464072fc468fc3a40d42ad8b76510a0917cfa4d9da` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

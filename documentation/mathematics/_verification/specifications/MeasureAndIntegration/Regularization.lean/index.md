@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/Regularization.lean/index.md) · [Full source](../../../../MeasureAndIntegration/Regularization.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Regularization.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Regularization.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,15 +61,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [expScalar](../../../../MeasureAndIntegration/Regularization.lean/declarations/expscalar.md) | 29 | `declaration-track:76e286a31c6219e2408d2466137e5e11add6b59ea18656890f036de564c0cf1f` |
-| 2 | `def` | [heat](../../../../MeasureAndIntegration/Regularization.lean/declarations/heat.md) | 39 | `declaration-track:af2bb6d290e8084212076d5d4edc22a123e92e23f20bd6521363d4fbc0ed16f8` |
-| 3 | `lemma` | [heat_semigroup](../../../../MeasureAndIntegration/Regularization.lean/declarations/heat-semigroup.md) | 43 | `result-track:617e7b12e82670a7b078cb5b326080d26870466ca0da501b6c98ceb6465f59a9` |
-| 4 | `lemma` | [heat_traceClass](../../../../MeasureAndIntegration/Regularization.lean/declarations/heat-traceclass.md) | 54 | `result-track:ffa008a887f56fb238d41cca264892d22911f223a18fdd8686b6fc0ea3f17af7` |
-| 5 | `def` | [heatTrace](../../../../MeasureAndIntegration/Regularization.lean/declarations/heattrace.md) | 59 | `declaration-track:955a58fe4b767f0640f49693e58ecd073cb06c94950be6e9088f90f051669b40` |
-| 6 | `def` | [zeta](../../../../MeasureAndIntegration/Regularization.lean/declarations/zeta.md) | 65 | `declaration-track:7251fcf849a95a047afdc980c4e2cfc2cb74a2a07c4508fd29ccd4a40ec07ec9` |
-| 7 | `lemma` | [zeta_meromorphic](../../../../MeasureAndIntegration/Regularization.lean/declarations/zeta-meromorphic.md) | 74 | `result-track:6152aaea9b01be89f2403cb10ace9334738423bd45a47b18a75fa499c8dc890f` |
-| 8 | `lemma` | [zeta_at0_reg](../../../../MeasureAndIntegration/Regularization.lean/declarations/zeta-at0-reg.md) | 81 | `result-track:7358678e97a1283f17991bfd6ef1ed8b1e0806878294d0e1f6d7641a67d59a4a` |
-| 9 | `def` | [detζ](../../../../MeasureAndIntegration/Regularization.lean/declarations/det.md) | 90 | `declaration-track:95ae4450ccaa13bd9d6d913236ac6ac54885db2d3942d4820c42b88121db67e8` |
+| 1 | `def` | [expScalar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Regularization.lean/declarations/expscalar.md) | 29 | `declaration-track:76e286a31c6219e2408d2466137e5e11add6b59ea18656890f036de564c0cf1f` |
+| 2 | `def` | [heat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Regularization.lean/declarations/heat.md) | 39 | `declaration-track:af2bb6d290e8084212076d5d4edc22a123e92e23f20bd6521363d4fbc0ed16f8` |
+| 3 | `lemma` | [heat_semigroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Regularization.lean/declarations/heat-semigroup.md) | 43 | `result-track:617e7b12e82670a7b078cb5b326080d26870466ca0da501b6c98ceb6465f59a9` |
+| 4 | `lemma` | [heat_traceClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Regularization.lean/declarations/heat-traceclass.md) | 54 | `result-track:ffa008a887f56fb238d41cca264892d22911f223a18fdd8686b6fc0ea3f17af7` |
+| 5 | `def` | [heatTrace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Regularization.lean/declarations/heattrace.md) | 59 | `declaration-track:955a58fe4b767f0640f49693e58ecd073cb06c94950be6e9088f90f051669b40` |
+| 6 | `def` | [zeta](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Regularization.lean/declarations/zeta.md) | 65 | `declaration-track:7251fcf849a95a047afdc980c4e2cfc2cb74a2a07c4508fd29ccd4a40ec07ec9` |
+| 7 | `lemma` | [zeta_meromorphic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Regularization.lean/declarations/zeta-meromorphic.md) | 74 | `result-track:6152aaea9b01be89f2403cb10ace9334738423bd45a47b18a75fa499c8dc890f` |
+| 8 | `lemma` | [zeta_at0_reg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Regularization.lean/declarations/zeta-at0-reg.md) | 81 | `result-track:7358678e97a1283f17991bfd6ef1ed8b1e0806878294d0e1f6d7641a67d59a4a` |
+| 9 | `def` | [detζ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Regularization.lean/declarations/det.md) | 90 | `declaration-track:95ae4450ccaa13bd9d6d913236ac6ac54885db2d3942d4820c42b88121db67e8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

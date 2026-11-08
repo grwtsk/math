@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SourceActualComplexEndpointCoefficientNamespacedEdition5.lean/index.md) · [Full source](../../../../GeneralTopology/SourceActualComplexEndpointCoefficientNamespacedEdition5.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceActualComplexEndpointCoefficientNamespacedEdition5.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceActualComplexEndpointCoefficientNamespacedEdition5.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualLeadingComplexAntiderivative](../../../../GeneralTopology/SourceActualComplexEndpointCoefficientNamespacedEdition5.lean/declarations/actualleadingcomplexantiderivative.md) | 29 | `declaration-track:a3eebad9370b5b84b37e498cab3f73363abc13c329e93251d3ca58ac14b33089` |
-| 2 | `theorem` | [complexMonomial_exponential_tendsto_zero](../../../../GeneralTopology/SourceActualComplexEndpointCoefficientNamespacedEdition5.lean/declarations/complexmonomial-exponential-tendsto-zero.md) | 36 | `result-track:5e1a4313f76393abcf9ef38fbbd7ae0e96dddac1cda6a326b6f5a672ddc6b504` |
-| 3 | `theorem` | [actualLeadingComplexAntiderivative_hasDerivAt](../../../../GeneralTopology/SourceActualComplexEndpointCoefficientNamespacedEdition5.lean/declarations/actualleadingcomplexantiderivative-hasderivat.md) | 51 | `result-track:7c46ea902ccf38cd8c54d33411e55988ea9fecefe016544a63e1a2c42772e2c6` |
-| 4 | `theorem` | [actualLeadingComplexAntiderivative_tendsto_zero](../../../../GeneralTopology/SourceActualComplexEndpointCoefficientNamespacedEdition5.lean/declarations/actualleadingcomplexantiderivative-tendsto-zero.md) | 71 | `result-track:3188defc932f63918ad8a1dd8ade78f67aba3754f86413b745bd41e2829592ef` |
-| 5 | `theorem` | [actualLeadingComplexCoefficient_eq](../../../../GeneralTopology/SourceActualComplexEndpointCoefficientNamespacedEdition5.lean/declarations/actualleadingcomplexcoefficient-eq.md) | 90 | `result-track:60d0db2c851f9b0f47539d2ec881cbe38eda440f349f09c0ad3da4aa2ed24db3` |
+| 1 | `def` | [actualLeadingComplexAntiderivative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceActualComplexEndpointCoefficientNamespacedEdition5.lean/declarations/actualleadingcomplexantiderivative.md) | 29 | `declaration-track:a3eebad9370b5b84b37e498cab3f73363abc13c329e93251d3ca58ac14b33089` |
+| 2 | `theorem` | [complexMonomial_exponential_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceActualComplexEndpointCoefficientNamespacedEdition5.lean/declarations/complexmonomial-exponential-tendsto-zero.md) | 36 | `result-track:5e1a4313f76393abcf9ef38fbbd7ae0e96dddac1cda6a326b6f5a672ddc6b504` |
+| 3 | `theorem` | [actualLeadingComplexAntiderivative_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceActualComplexEndpointCoefficientNamespacedEdition5.lean/declarations/actualleadingcomplexantiderivative-hasderivat.md) | 51 | `result-track:7c46ea902ccf38cd8c54d33411e55988ea9fecefe016544a63e1a2c42772e2c6` |
+| 4 | `theorem` | [actualLeadingComplexAntiderivative_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceActualComplexEndpointCoefficientNamespacedEdition5.lean/declarations/actualleadingcomplexantiderivative-tendsto-zero.md) | 71 | `result-track:3188defc932f63918ad8a1dd8ade78f67aba3754f86413b745bd41e2829592ef` |
+| 5 | `theorem` | [actualLeadingComplexCoefficient_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceActualComplexEndpointCoefficientNamespacedEdition5.lean/declarations/actualleadingcomplexcoefficient-eq.md) | 90 | `result-track:60d0db2c851f9b0f47539d2ec881cbe38eda440f349f09c0ad3da4aa2ed24db3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IncidenceAnchorNetwork.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IncidenceAnchorNetwork.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IncidenceAnchorNetwork.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IncidenceAnchorNetwork.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CertifiedIncidenceSingleton](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IncidenceAnchorNetwork.lean/declarations/certifiedincidencesingleton.md) | 26 | `declaration-track:0dc6d60ee1aa2c738849b03f5f4216c44f0f1c607d5532514f1be885026cda20` |
-| 2 | `def` | [code](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IncidenceAnchorNetwork.lean/declarations/code.md) | 45 | `declaration-track:62dfd53e2e86cb99463c201d03971af9b4eebdeba3dc1716e9460b30b3618f9c` |
-| 3 | `theorem` | [code_fixed](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IncidenceAnchorNetwork.lean/declarations/code-fixed.md) | 49 | `result-track:7fef0ed8dcbf1ee97b337f2e1af5da9e25eadec12bdf8187335af64432d4391a` |
-| 4 | `def` | [BooleanAdjacent](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IncidenceAnchorNetwork.lean/declarations/booleanadjacent.md) | 57 | `declaration-track:861be5b770dceae652d6e257304686d8dabca75e49e5026a5f886d4c0c66405a` |
-| 5 | `inductive` | [CertifiedIncidenceWalk](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IncidenceAnchorNetwork.lean/declarations/certifiedincidencewalk.md) | 66 | `declaration-track:8d11f1709714b9d360b5f902f22a55f8ba153b057acaf0b282f10d373a052dcd` |
-| 6 | `structure` | [IncidenceAnchorNetwork](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IncidenceAnchorNetwork.lean/declarations/incidenceanchornetwork.md) | 88 | `declaration-track:6d3986ea4c0ce64fa72e3fbc47904ae7300e60e7950a08108f46ec32736f76f8` |
-| 7 | `structure` | [CertifiedIncidenceMidpointElement](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IncidenceAnchorNetwork.lean/declarations/certifiedincidencemidpointelement.md) | 108 | `declaration-track:4fcc086535f8c174578ebfaff5121b869d1140f0f106d76312873cf85230029c` |
-| 8 | `structure` | [CertifiedMidpointRealizationTower](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IncidenceAnchorNetwork.lean/declarations/certifiedmidpointrealizationtower.md) | 126 | `declaration-track:95680c1ded80ace754ac86c51a79c19c742783a7b6c68f1c0ef9dec0bb059bbd` |
+| 1 | `structure` | [CertifiedIncidenceSingleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IncidenceAnchorNetwork.lean/declarations/certifiedincidencesingleton.md) | 26 | `declaration-track:0dc6d60ee1aa2c738849b03f5f4216c44f0f1c607d5532514f1be885026cda20` |
+| 2 | `def` | [code](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IncidenceAnchorNetwork.lean/declarations/code.md) | 45 | `declaration-track:62dfd53e2e86cb99463c201d03971af9b4eebdeba3dc1716e9460b30b3618f9c` |
+| 3 | `theorem` | [code_fixed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IncidenceAnchorNetwork.lean/declarations/code-fixed.md) | 49 | `result-track:7fef0ed8dcbf1ee97b337f2e1af5da9e25eadec12bdf8187335af64432d4391a` |
+| 4 | `def` | [BooleanAdjacent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IncidenceAnchorNetwork.lean/declarations/booleanadjacent.md) | 57 | `declaration-track:861be5b770dceae652d6e257304686d8dabca75e49e5026a5f886d4c0c66405a` |
+| 5 | `inductive` | [CertifiedIncidenceWalk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IncidenceAnchorNetwork.lean/declarations/certifiedincidencewalk.md) | 66 | `declaration-track:8d11f1709714b9d360b5f902f22a55f8ba153b057acaf0b282f10d373a052dcd` |
+| 6 | `structure` | [IncidenceAnchorNetwork](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IncidenceAnchorNetwork.lean/declarations/incidenceanchornetwork.md) | 88 | `declaration-track:6d3986ea4c0ce64fa72e3fbc47904ae7300e60e7950a08108f46ec32736f76f8` |
+| 7 | `structure` | [CertifiedIncidenceMidpointElement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IncidenceAnchorNetwork.lean/declarations/certifiedincidencemidpointelement.md) | 108 | `declaration-track:4fcc086535f8c174578ebfaff5121b869d1140f0f106d76312873cf85230029c` |
+| 8 | `structure` | [CertifiedMidpointRealizationTower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IncidenceAnchorNetwork.lean/declarations/certifiedmidpointrealizationtower.md) | 126 | `declaration-track:95680c1ded80ace754ac86c51a79c19c742783a7b6c68f1c0ef9dec0bb059bbd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

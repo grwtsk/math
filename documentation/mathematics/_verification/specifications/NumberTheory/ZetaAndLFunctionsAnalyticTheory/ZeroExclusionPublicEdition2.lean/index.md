@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZeroExclusionPublicEdition2.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZeroExclusionPublicEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZeroExclusionPublicEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZeroExclusionPublicEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [grh_of_rightHalfPlane_zeroFree](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZeroExclusionPublicEdition2.lean/declarations/grh-of-righthalfplane-zerofree.md) | 26 | `result-track:0df91fdbe4cf1db080fe071365ab0073bcdd31483fa8129c9a0a9bb6bbed87a8` |
-| 2 | `theorem` | [centeredTwistedPsiHalfPlusEpsilon_implies_grh](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZeroExclusionPublicEdition2.lean/declarations/centeredtwistedpsihalfplusepsilon-implies-grh.md) | 57 | `result-track:ddbbfe1c5dfc994889f5df4421f7c9aef27b8f897550eeb2c0dd56ef809c7342` |
+| 1 | `theorem` | [grh_of_rightHalfPlane_zeroFree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZeroExclusionPublicEdition2.lean/declarations/grh-of-righthalfplane-zerofree.md) | 26 | `result-track:0df91fdbe4cf1db080fe071365ab0073bcdd31483fa8129c9a0a9bb6bbed87a8` |
+| 2 | `theorem` | [centeredTwistedPsiHalfPlusEpsilon_implies_grh](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZeroExclusionPublicEdition2.lean/declarations/centeredtwistedpsihalfplusepsilon-implies-grh.md) | 57 | `result-track:ddbbfe1c5dfc994889f5df4421f7c9aef27b8f897550eeb2c0dd56ef809c7342` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

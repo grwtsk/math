@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TraceStability.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TraceStability.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TraceStability.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TraceStability.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [LawTraceStabilityObligation](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TraceStability.lean/declarations/lawtracestabilityobligation.md) | 15 | `declaration-track:60937b42000c644b580c7f4b21b14ebc7070fa024a31c3c9d5a22dca345c0c47` |
-| 2 | `structure` | [OperatorTraceStabilityCertificate](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TraceStability.lean/declarations/operatortracestabilitycertificate.md) | 24 | `declaration-track:5baf4b5f93373b903443c0c22b0d37bb89951055b458c969f45d3e707c341cbf` |
-| 3 | `theorem` | [stableTrace_law_perturbation_from_certified_duality](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TraceStability.lean/declarations/stabletrace-law-perturbation-from-certified-duality.md) | 34 | `result-track:e1018e5182adee563fdc3d1f9a8b8b46c7f6c579fc93564e3c26c7cf360f5cb1` |
-| 4 | `theorem` | [law_and_operator_trace_defects_compose](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TraceStability.lean/declarations/law-and-operator-trace-defects-compose.md) | 49 | `result-track:115a5493610cb63f0cedb3c40316edcc54ca02e7e272f22a05360b0616bb1e99` |
-| 5 | `theorem` | [global_trace_defects_remain_separate](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TraceStability.lean/declarations/global-trace-defects-remain-separate.md) | 66 | `result-track:cbb63c59f4598e311e1c5bedcbfee8dacff2dc605c06170a60662114966b4be2` |
-| 6 | `theorem` | [global_trace_defects_with_remainder_remain_separate](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TraceStability.lean/declarations/global-trace-defects-with-remainder-remain-separate.md) | 94 | `result-track:8b8fc13d23d9d67c16ce9a365be42a01a07f43ac29adeb9e5283e20f1a48a92c` |
-| 7 | `theorem` | [global_trace_defects_with_two_remainders_remain_separate](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TraceStability.lean/declarations/global-trace-defects-with-two-remainders-remain-separate.md) | 124 | `result-track:aeecf49a6114af294f42e536da79f27338dd9f314fa07917aa08af08360d4514` |
+| 1 | `structure` | [LawTraceStabilityObligation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TraceStability.lean/declarations/lawtracestabilityobligation.md) | 15 | `declaration-track:60937b42000c644b580c7f4b21b14ebc7070fa024a31c3c9d5a22dca345c0c47` |
+| 2 | `structure` | [OperatorTraceStabilityCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TraceStability.lean/declarations/operatortracestabilitycertificate.md) | 24 | `declaration-track:5baf4b5f93373b903443c0c22b0d37bb89951055b458c969f45d3e707c341cbf` |
+| 3 | `theorem` | [stableTrace_law_perturbation_from_certified_duality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TraceStability.lean/declarations/stabletrace-law-perturbation-from-certified-duality.md) | 34 | `result-track:e1018e5182adee563fdc3d1f9a8b8b46c7f6c579fc93564e3c26c7cf360f5cb1` |
+| 4 | `theorem` | [law_and_operator_trace_defects_compose](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TraceStability.lean/declarations/law-and-operator-trace-defects-compose.md) | 49 | `result-track:115a5493610cb63f0cedb3c40316edcc54ca02e7e272f22a05360b0616bb1e99` |
+| 5 | `theorem` | [global_trace_defects_remain_separate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TraceStability.lean/declarations/global-trace-defects-remain-separate.md) | 66 | `result-track:cbb63c59f4598e311e1c5bedcbfee8dacff2dc605c06170a60662114966b4be2` |
+| 6 | `theorem` | [global_trace_defects_with_remainder_remain_separate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TraceStability.lean/declarations/global-trace-defects-with-remainder-remain-separate.md) | 94 | `result-track:8b8fc13d23d9d67c16ce9a365be42a01a07f43ac29adeb9e5283e20f1a48a92c` |
+| 7 | `theorem` | [global_trace_defects_with_two_remainders_remain_separate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TraceStability.lean/declarations/global-trace-defects-with-two-remainders-remain-separate.md) | 124 | `result-track:aeecf49a6114af294f42e536da79f27338dd9f314fa07917aa08af08360d4514` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

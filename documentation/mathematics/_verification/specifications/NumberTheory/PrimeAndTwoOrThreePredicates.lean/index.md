@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/PrimeAndTwoOrThreePredicates.lean/index.md) · [Full source](../../../../NumberTheory/PrimeAndTwoOrThreePredicates.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimeAndTwoOrThreePredicates.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimeAndTwoOrThreePredicates.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [Distinguished Natural Tags](../../../../MathematicalLogicAndFoundations/GeneralLogic/DistinguishedNaturalTags.lean/index.md) — import line 17; pinned internal source present.
+- [Distinguished Natural Tags](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DistinguishedNaturalTags.lean/index.md) — import line 17; pinned internal source present.
 - `Folder.Basic` — import line 19; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [IsFinitePrimePlace](../../../../NumberTheory/PrimeAndTwoOrThreePredicates.lean/declarations/isfiniteprimeplace.md) | 37 | `declaration-track:6577a5e9db84ac17a1e0c1db41268f2100081fe8a37bd64f0abb877eb798e03a` |
-| 2 | `def` | [IsBadTMFPrime](../../../../NumberTheory/PrimeAndTwoOrThreePredicates.lean/declarations/isbadtmfprime.md) | 40 | `declaration-track:28eac6a708e4bb8697285e0ceb5104318f2c300df09480cef302af7e71fb9161` |
-| 3 | `theorem` | [bad_tmf_prime_is_finite](../../../../NumberTheory/PrimeAndTwoOrThreePredicates.lean/declarations/bad-tmf-prime-is-finite.md) | 43 | `result-track:0ea24d914e4e647b8ad430986ae78df39471b5eab48b6cdd4e5269fad3c12a70` |
+| 1 | `def` | [IsFinitePrimePlace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimeAndTwoOrThreePredicates.lean/declarations/isfiniteprimeplace.md) | 37 | `declaration-track:6577a5e9db84ac17a1e0c1db41268f2100081fe8a37bd64f0abb877eb798e03a` |
+| 2 | `def` | [IsBadTMFPrime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimeAndTwoOrThreePredicates.lean/declarations/isbadtmfprime.md) | 40 | `declaration-track:28eac6a708e4bb8697285e0ceb5104318f2c300df09480cef302af7e71fb9161` |
+| 3 | `theorem` | [bad_tmf_prime_is_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimeAndTwoOrThreePredicates.lean/declarations/bad-tmf-prime-is-finite.md) | 43 | `result-track:0ea24d914e4e647b8ad430986ae78df39471b5eab48b6cdd4e5269fad3c12a70` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

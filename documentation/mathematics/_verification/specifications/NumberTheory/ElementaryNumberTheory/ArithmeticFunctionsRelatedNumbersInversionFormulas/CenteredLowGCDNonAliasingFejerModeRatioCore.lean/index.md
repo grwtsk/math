@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDNonAliasingFejerModeRatioCore.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDNonAliasingFejerModeRatioCore.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDNonAliasingFejerModeRatioCore.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDNonAliasingFejerModeRatioCore.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Moebius.CenteredLowGCDNonAliasingFejerNonnegative`](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDNonAliasingFejerNonnegative.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.CenteredLowGCDNonAliasingFejerNonnegative`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDNonAliasingFejerNonnegative.lean/index.md) — import line 2; pinned internal source present.
 - `Mathlib.Algebra.Field.GeomSum` — import line 3; external provider; requires a separately pinned dependency.
 - `Mathlib.Analysis.Fourier.ZMod` — import line 4; external provider; requires a separately pinned dependency.
 - `Mathlib.Analysis.SpecialFunctions.Complex.Log` — import line 5; external provider; requires a separately pinned dependency.
@@ -61,9 +61,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [periodFourXModeRatio](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDNonAliasingFejerModeRatioCore.lean/declarations/periodfourxmoderatio.md) | 14 | `declaration-track:3be6a4b87291c3f7ef9d996f92dbca9c10eb93cc2220711b4d67ba55a273610d` |
-| 2 | `theorem` | [periodFourXModeRatio_pow_period](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDNonAliasingFejerModeRatioCore.lean/declarations/periodfourxmoderatio-pow-period.md) | 20 | `result-track:3824ea7aac2a5dbd207c12191072a61510bcd9c38e2fcf89feac28b0cf4586ba` |
-| 3 | `theorem` | [periodFourXModeRatio_ne_one](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDNonAliasingFejerModeRatioCore.lean/declarations/periodfourxmoderatio-ne-one.md) | 37 | `result-track:2448e229569c5103c3d338edda27390c60cc1e9aceb13e4d7ac1468193857a46` |
+| 1 | `def` | [periodFourXModeRatio](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDNonAliasingFejerModeRatioCore.lean/declarations/periodfourxmoderatio.md) | 14 | `declaration-track:3be6a4b87291c3f7ef9d996f92dbca9c10eb93cc2220711b4d67ba55a273610d` |
+| 2 | `theorem` | [periodFourXModeRatio_pow_period](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDNonAliasingFejerModeRatioCore.lean/declarations/periodfourxmoderatio-pow-period.md) | 20 | `result-track:3824ea7aac2a5dbd207c12191072a61510bcd9c38e2fcf89feac28b0cf4586ba` |
+| 3 | `theorem` | [periodFourXModeRatio_ne_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDNonAliasingFejerModeRatioCore.lean/declarations/periodfourxmoderatio-ne-one.md) | 37 | `result-track:2448e229569c5103c3d338edda27390c60cc1e9aceb13e4d7ac1468193857a46` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

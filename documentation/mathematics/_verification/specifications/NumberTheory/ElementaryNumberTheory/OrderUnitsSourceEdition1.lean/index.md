@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/OrderUnitsSourceEdition1.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/OrderUnitsSourceEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/OrderUnitsSourceEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/OrderUnitsSourceEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,17 +57,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [isUnit_iff_abs_eq](../../../../../NumberTheory/ElementaryNumberTheory/OrderUnitsSourceEdition1.lean/declarations/isunit-iff-abs-eq.md) | 15 | `result-track:42ae174f0103d155ad48b59b8b417844bb2458e4a8f7c4ebad9acc39b87c24fe` |
-| 2 | `theorem` | [isUnit_sq](../../../../../NumberTheory/ElementaryNumberTheory/OrderUnitsSourceEdition1.lean/declarations/isunit-sq.md) | 18 | `result-track:de2b0cbf84a939ee381bf16b26e75c57573f8395cee1fb6a2397060173f032b7` |
-| 3 | `theorem` | [units_sq](../../../../../NumberTheory/ElementaryNumberTheory/OrderUnitsSourceEdition1.lean/declarations/units-sq.md) | 21 | `result-track:c1c8235a8577b0f0e22e72ed6ec2d477004f7f226aaa96fe0fdd745b4288ab6f` |
-| 4 | `theorem` | [units_mul_self](../../../../../NumberTheory/ElementaryNumberTheory/OrderUnitsSourceEdition1.lean/declarations/units-mul-self.md) | 27 | `result-track:db41a909efbd2e9dcddc53c1bda0c61907447e68e3d905fcd5476a4ea778bf4b` |
-| 5 | `theorem` | [units_inv_eq_self](../../../../../NumberTheory/ElementaryNumberTheory/OrderUnitsSourceEdition1.lean/declarations/units-inv-eq-self.md) | 30 | `result-track:16f2d91f8391e5964a7c67a4d7f1d4b27d5b152d38b93dc87b4a3bf2f12edf71` |
-| 6 | `theorem` | [units_div_eq_mul](../../../../../NumberTheory/ElementaryNumberTheory/OrderUnitsSourceEdition1.lean/declarations/units-div-eq-mul.md) | 32 | `result-track:f33de62b52017c52240b84f3487d05e677b68252e9c22d0b8fbdde026ac0e227` |
-| 7 | `theorem` | [units_coe_mul_self](../../../../../NumberTheory/ElementaryNumberTheory/OrderUnitsSourceEdition1.lean/declarations/units-coe-mul-self.md) | 37 | `result-track:b1f2bc18e452df94ce4e2d53866f5bdaf5247601bee680bfda49bde3ba55c914` |
-| 8 | `theorem` | [neg_one_pow_ne_zero](../../../../../NumberTheory/ElementaryNumberTheory/OrderUnitsSourceEdition1.lean/declarations/neg-one-pow-ne-zero.md) | 40 | `result-track:f6420395d5658d5a308f514ed7ce4439733c6173912dd1d050eea48197024ebf` |
-| 9 | `theorem` | [sq_eq_one_of_sq_lt_four](../../../../../NumberTheory/ElementaryNumberTheory/OrderUnitsSourceEdition1.lean/declarations/sq-eq-one-of-sq-lt-four.md) | 42 | `result-track:15b510b1a36b17793be4d25862964219ff89551c0e6b6819aa24b2c8831ee107` |
-| 10 | `theorem` | [sq_eq_one_of_sq_le_three](../../../../../NumberTheory/ElementaryNumberTheory/OrderUnitsSourceEdition1.lean/declarations/sq-eq-one-of-sq-le-three.md) | 48 | `result-track:39e8bdf504a46094002b9fd2b3cc48ea537efaca99328d49d3e45bd8d26a4c9f` |
-| 11 | `theorem` | [units_pow_eq_pow_mod_two](../../../../../NumberTheory/ElementaryNumberTheory/OrderUnitsSourceEdition1.lean/declarations/units-pow-eq-pow-mod-two.md) | 51 | `result-track:ab075e0ad7ab8896c28d44a8ff116ef267723a154fc237a99cf67426fd3517ca` |
+| 1 | `theorem` | [isUnit_iff_abs_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/OrderUnitsSourceEdition1.lean/declarations/isunit-iff-abs-eq.md) | 15 | `result-track:42ae174f0103d155ad48b59b8b417844bb2458e4a8f7c4ebad9acc39b87c24fe` |
+| 2 | `theorem` | [isUnit_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/OrderUnitsSourceEdition1.lean/declarations/isunit-sq.md) | 18 | `result-track:de2b0cbf84a939ee381bf16b26e75c57573f8395cee1fb6a2397060173f032b7` |
+| 3 | `theorem` | [units_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/OrderUnitsSourceEdition1.lean/declarations/units-sq.md) | 21 | `result-track:c1c8235a8577b0f0e22e72ed6ec2d477004f7f226aaa96fe0fdd745b4288ab6f` |
+| 4 | `theorem` | [units_mul_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/OrderUnitsSourceEdition1.lean/declarations/units-mul-self.md) | 27 | `result-track:db41a909efbd2e9dcddc53c1bda0c61907447e68e3d905fcd5476a4ea778bf4b` |
+| 5 | `theorem` | [units_inv_eq_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/OrderUnitsSourceEdition1.lean/declarations/units-inv-eq-self.md) | 30 | `result-track:16f2d91f8391e5964a7c67a4d7f1d4b27d5b152d38b93dc87b4a3bf2f12edf71` |
+| 6 | `theorem` | [units_div_eq_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/OrderUnitsSourceEdition1.lean/declarations/units-div-eq-mul.md) | 32 | `result-track:f33de62b52017c52240b84f3487d05e677b68252e9c22d0b8fbdde026ac0e227` |
+| 7 | `theorem` | [units_coe_mul_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/OrderUnitsSourceEdition1.lean/declarations/units-coe-mul-self.md) | 37 | `result-track:b1f2bc18e452df94ce4e2d53866f5bdaf5247601bee680bfda49bde3ba55c914` |
+| 8 | `theorem` | [neg_one_pow_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/OrderUnitsSourceEdition1.lean/declarations/neg-one-pow-ne-zero.md) | 40 | `result-track:f6420395d5658d5a308f514ed7ce4439733c6173912dd1d050eea48197024ebf` |
+| 9 | `theorem` | [sq_eq_one_of_sq_lt_four](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/OrderUnitsSourceEdition1.lean/declarations/sq-eq-one-of-sq-lt-four.md) | 42 | `result-track:15b510b1a36b17793be4d25862964219ff89551c0e6b6819aa24b2c8831ee107` |
+| 10 | `theorem` | [sq_eq_one_of_sq_le_three](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/OrderUnitsSourceEdition1.lean/declarations/sq-eq-one-of-sq-le-three.md) | 48 | `result-track:39e8bdf504a46094002b9fd2b3cc48ea537efaca99328d49d3e45bd8d26a4c9f` |
+| 11 | `theorem` | [units_pow_eq_pow_mod_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/OrderUnitsSourceEdition1.lean/declarations/units-pow-eq-pow-mod-two.md) | 51 | `result-track:ab075e0ad7ab8896c28d44a8ff116ef267723a154fc237a99cf67426fd3517ca` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PrintDependentsNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PrintDependentsNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PrintDependentsNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PrintDependentsNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [State](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PrintDependentsNamespacedPublic.lean/declarations/state.md) | 35 | `declaration-track:9339b3f8fb272db1349e4dd467d7aad9e1eafa8536834d0b8a762ee8906f8ea2` |
-| 2 | `abbrev` | [M](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PrintDependentsNamespacedPublic.lean/declarations/m.md) | 42 | `declaration-track:82cf0e8725563f3b283e393421144243e343004b4a3ed973eb80cfae781c6e2e` |
-| 3 | `def` | [mkState](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PrintDependentsNamespacedPublic.lean/declarations/mkstate.md) | 50 | `declaration-track:11f370db9490afee5549c8fee3400a798aa2c106bb3b2996e48eab6ca1122101` |
-| 4 | `def` | [collect](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PrintDependentsNamespacedPublic.lean/declarations/collect.md) | 54 | `declaration-track:fc10e59338d94d9fde1c5a4b06e50b85e1e6dfb564744f75c3912b10d129aeb2` |
-| 5 | `elab` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PrintDependentsNamespacedPublic.lean/declarations/elab.md) | 100 | `declaration-track:8c7bb9af6a59ab0894820ec906d05cc5743416f739ccf75d64ae59343ddf3847` |
+| 1 | `structure` | [State](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PrintDependentsNamespacedPublic.lean/declarations/state.md) | 35 | `declaration-track:9339b3f8fb272db1349e4dd467d7aad9e1eafa8536834d0b8a762ee8906f8ea2` |
+| 2 | `abbrev` | [M](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PrintDependentsNamespacedPublic.lean/declarations/m.md) | 42 | `declaration-track:82cf0e8725563f3b283e393421144243e343004b4a3ed973eb80cfae781c6e2e` |
+| 3 | `def` | [mkState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PrintDependentsNamespacedPublic.lean/declarations/mkstate.md) | 50 | `declaration-track:11f370db9490afee5549c8fee3400a798aa2c106bb3b2996e48eab6ca1122101` |
+| 4 | `def` | [collect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PrintDependentsNamespacedPublic.lean/declarations/collect.md) | 54 | `declaration-track:fc10e59338d94d9fde1c5a4b06e50b85e1e6dfb564744f75c3912b10d129aeb2` |
+| 5 | `elab` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PrintDependentsNamespacedPublic.lean/declarations/elab.md) | 100 | `declaration-track:8c7bb9af6a59ab0894820ec906d05cc5743416f739ccf75d64ae59343ddf3847` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

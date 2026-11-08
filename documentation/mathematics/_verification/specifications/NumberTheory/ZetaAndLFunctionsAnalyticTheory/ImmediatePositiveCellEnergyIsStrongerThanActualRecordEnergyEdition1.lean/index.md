@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ImmediatePositiveCellEnergyIsStrongerThanActualRecordEnergyEdition1.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ImmediatePositiveCellEnergyIsStrongerThanActualRecordEnergyEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ImmediatePositiveCellEnergyIsStrongerThanActualRecordEnergyEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ImmediatePositiveCellEnergyIsStrongerThanActualRecordEnergyEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [positiveCellPEnergy](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ImmediatePositiveCellEnergyIsStrongerThanActualRecordEnergyEdition1.lean/declarations/positivecellpenergy.md) | 31 | `declaration-track:accdb02c049e93735934512ac77a068efa13f94be36861776533f58821e8c624` |
-| 2 | `theorem` | [density_power_payment](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ImmediatePositiveCellEnergyIsStrongerThanActualRecordEnergyEdition1.lean/declarations/density-power-payment.md) | 36 | `result-track:553c9cfb797ebf532dcd555ec3a1a74a9c35b2f3cc5ba33f80f478a7f5605af7` |
-| 3 | `theorem` | [actual_record_energy_le_positive_cell_energy](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ImmediatePositiveCellEnergyIsStrongerThanActualRecordEnergyEdition1.lean/declarations/actual-record-energy-le-positive-cell-energy.md) | 42 | `result-track:8c21742ecf1929ea47bf30ddd76ea183e542b78df1e9a13512adb32d412e8818` |
-| 4 | `theorem` | [positive_cell_p_reserve_implies_eventual_sign](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ImmediatePositiveCellEnergyIsStrongerThanActualRecordEnergyEdition1.lean/declarations/positive-cell-p-reserve-implies-eventual-sign.md) | 52 | `result-track:877503982eb37da160d3c7326dc2586f02b7746a0078a585bb71b260dd0afca6` |
-| 5 | `theorem` | [pure_power_envelope_summable_iff](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ImmediatePositiveCellEnergyIsStrongerThanActualRecordEnergyEdition1.lean/declarations/pure-power-envelope-summable-iff.md) | 62 | `result-track:448fe9f346b8f51e0ad4c4408f7cbf14fc6982717358683defaa2c4492d33816` |
+| 1 | `def` | [positiveCellPEnergy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ImmediatePositiveCellEnergyIsStrongerThanActualRecordEnergyEdition1.lean/declarations/positivecellpenergy.md) | 31 | `declaration-track:accdb02c049e93735934512ac77a068efa13f94be36861776533f58821e8c624` |
+| 2 | `theorem` | [density_power_payment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ImmediatePositiveCellEnergyIsStrongerThanActualRecordEnergyEdition1.lean/declarations/density-power-payment.md) | 36 | `result-track:553c9cfb797ebf532dcd555ec3a1a74a9c35b2f3cc5ba33f80f478a7f5605af7` |
+| 3 | `theorem` | [actual_record_energy_le_positive_cell_energy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ImmediatePositiveCellEnergyIsStrongerThanActualRecordEnergyEdition1.lean/declarations/actual-record-energy-le-positive-cell-energy.md) | 42 | `result-track:8c21742ecf1929ea47bf30ddd76ea183e542b78df1e9a13512adb32d412e8818` |
+| 4 | `theorem` | [positive_cell_p_reserve_implies_eventual_sign](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ImmediatePositiveCellEnergyIsStrongerThanActualRecordEnergyEdition1.lean/declarations/positive-cell-p-reserve-implies-eventual-sign.md) | 52 | `result-track:877503982eb37da160d3c7326dc2586f02b7746a0078a585bb71b260dd0afca6` |
+| 5 | `theorem` | [pure_power_envelope_summable_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ImmediatePositiveCellEnergyIsStrongerThanActualRecordEnergyEdition1.lean/declarations/pure-power-envelope-summable-iff.md) | 62 | `result-track:448fe9f346b8f51e0ad4c4408f7cbf14fc6982717358683defaa2c4492d33816` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

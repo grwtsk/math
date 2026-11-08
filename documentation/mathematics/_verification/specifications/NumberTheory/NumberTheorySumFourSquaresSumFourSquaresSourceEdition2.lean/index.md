@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/NumberTheorySumFourSquaresSumFourSquaresSourceEdition2.lean/index.md) · [Full source](../../../../NumberTheory/NumberTheorySumFourSquaresSumFourSquaresSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NumberTheorySumFourSquaresSumFourSquaresSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NumberTheorySumFourSquaresSumFourSquaresSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [euler_four_squares](../../../../NumberTheory/NumberTheorySumFourSquaresSumFourSquaresSourceEdition2.lean/declarations/euler-four-squares.md) | 23 | `result-track:9bc420caf939692a62aa848e7ee8e297e265851f17803e85789d250fe3669fad` |
-| 2 | `theorem` | [Nat.euler_four_squares](../../../../NumberTheory/NumberTheorySumFourSquaresSumFourSquaresSourceEdition2.lean/declarations/nat-euler-four-squares.md) | 29 | `result-track:c6a41585ecec255878c55f43117865ff68cc30940ea5fa2e96c162500d723971` |
-| 3 | `theorem` | [sq_add_sq_of_two_mul_sq_add_sq](../../../../NumberTheory/NumberTheorySumFourSquaresSumFourSquaresSourceEdition2.lean/declarations/sq-add-sq-of-two-mul-sq-add-sq.md) | 41 | `result-track:4b500af24703caf4c36a98acca7be315c4cbc5ef9e2e250bf4af6971b3fec83b` |
-| 4 | `theorem` | [lt_of_sum_four_squares_eq_mul](../../../../NumberTheory/NumberTheorySumFourSquaresSumFourSquaresSourceEdition2.lean/declarations/lt-of-sum-four-squares-eq-mul.md) | 52 | `result-track:39116b6e2a86b222d137d835897ca90f1e448e23810390eada00f4c9dc3a5702` |
-| 5 | `theorem` | [exists_sq_add_sq_add_one_eq_mul](../../../../NumberTheory/NumberTheorySumFourSquaresSumFourSquaresSourceEdition2.lean/declarations/exists-sq-add-sq-add-one-eq-mul.md) | 57 | `result-track:29eec9c940f0f5c011c6e2e6f50fd934d2128c58c83cfb9f8f4906047cff6430` |
-| 6 | `theorem` | [sum_four_squares_of_two_mul_sum_four_squares](../../../../NumberTheory/NumberTheorySumFourSquaresSumFourSquaresSourceEdition2.lean/declarations/sum-four-squares-of-two-mul-sum-four-squares.md) | 83 | `result-track:16859c3c5dc1e4ee6a1ce8bc9ef7f1aa045cdc6685853bc92f47ef9686a10218` |
-| 7 | `theorem` | [Prime.sum_four_squares](../../../../NumberTheory/NumberTheorySumFourSquaresSumFourSquaresSourceEdition2.lean/declarations/prime-sum-four-squares.md) | 109 | `result-track:5995d27fe2a5121bc263081424e8927586ac67ed03e0e8fed12e3a49e68c4454` |
-| 8 | `theorem` | [sum_four_squares](../../../../NumberTheory/NumberTheorySumFourSquaresSumFourSquaresSourceEdition2.lean/declarations/sum-four-squares.md) | 195 | `result-track:25b75f72e9a7a070321daad9a328e58d1f61af02ac6e0979b90687e270a871f7` |
+| 1 | `theorem` | [euler_four_squares](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NumberTheorySumFourSquaresSumFourSquaresSourceEdition2.lean/declarations/euler-four-squares.md) | 23 | `result-track:9bc420caf939692a62aa848e7ee8e297e265851f17803e85789d250fe3669fad` |
+| 2 | `theorem` | [Nat.euler_four_squares](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NumberTheorySumFourSquaresSumFourSquaresSourceEdition2.lean/declarations/nat-euler-four-squares.md) | 29 | `result-track:c6a41585ecec255878c55f43117865ff68cc30940ea5fa2e96c162500d723971` |
+| 3 | `theorem` | [sq_add_sq_of_two_mul_sq_add_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NumberTheorySumFourSquaresSumFourSquaresSourceEdition2.lean/declarations/sq-add-sq-of-two-mul-sq-add-sq.md) | 41 | `result-track:4b500af24703caf4c36a98acca7be315c4cbc5ef9e2e250bf4af6971b3fec83b` |
+| 4 | `theorem` | [lt_of_sum_four_squares_eq_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NumberTheorySumFourSquaresSumFourSquaresSourceEdition2.lean/declarations/lt-of-sum-four-squares-eq-mul.md) | 52 | `result-track:39116b6e2a86b222d137d835897ca90f1e448e23810390eada00f4c9dc3a5702` |
+| 5 | `theorem` | [exists_sq_add_sq_add_one_eq_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NumberTheorySumFourSquaresSumFourSquaresSourceEdition2.lean/declarations/exists-sq-add-sq-add-one-eq-mul.md) | 57 | `result-track:29eec9c940f0f5c011c6e2e6f50fd934d2128c58c83cfb9f8f4906047cff6430` |
+| 6 | `theorem` | [sum_four_squares_of_two_mul_sum_four_squares](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NumberTheorySumFourSquaresSumFourSquaresSourceEdition2.lean/declarations/sum-four-squares-of-two-mul-sum-four-squares.md) | 83 | `result-track:16859c3c5dc1e4ee6a1ce8bc9ef7f1aa045cdc6685853bc92f47ef9686a10218` |
+| 7 | `theorem` | [Prime.sum_four_squares](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NumberTheorySumFourSquaresSumFourSquaresSourceEdition2.lean/declarations/prime-sum-four-squares.md) | 109 | `result-track:5995d27fe2a5121bc263081424e8927586ac67ed03e0e8fed12e3a49e68c4454` |
+| 8 | `theorem` | [sum_four_squares](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NumberTheorySumFourSquaresSumFourSquaresSourceEdition2.lean/declarations/sum-four-squares.md) | 195 | `result-track:25b75f72e9a7a070321daad9a328e58d1f61af02ac6e0979b90687e270a871f7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

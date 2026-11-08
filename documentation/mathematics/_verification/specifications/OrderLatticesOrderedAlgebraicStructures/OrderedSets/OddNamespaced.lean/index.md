@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/OddNamespaced.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/OddNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/OddNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/OddNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [strictMono_of_odd_strictMonoOn_nonneg](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/OddNamespaced.lean/declarations/strictmono-of-odd-strictmonoon-nonneg.md) | 34 | `result-track:c0d1524380feb1aa7b7c50c4a94febfbafdeecf0a3ea3fc08a78dbffb1a07201` |
-| 2 | `theorem` | [strictAnti_of_odd_strictAntiOn_nonneg](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/OddNamespaced.lean/declarations/strictanti-of-odd-strictantion-nonneg.md) | 42 | `result-track:ab2ebd146d01c76627f32223ab9c2d3054c71491badedd694efa01a6cee63074` |
-| 3 | `theorem` | [monotone_of_odd_of_monotoneOn_nonneg](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/OddNamespaced.lean/declarations/monotone-of-odd-of-monotoneon-nonneg.md) | 48 | `result-track:6b0b08df5f9caa586b39d16f8943fdb5cbc3471762a203794ad9a5954075ad4d` |
-| 4 | `theorem` | [antitone_of_odd_of_monotoneOn_nonneg](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/OddNamespaced.lean/declarations/antitone-of-odd-of-monotoneon-nonneg.md) | 56 | `result-track:1df376a476a3c8d28cf5c3dec88646658590ab83853bbe79ca1a9505991e5979` |
+| 1 | `theorem` | [strictMono_of_odd_strictMonoOn_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/OddNamespaced.lean/declarations/strictmono-of-odd-strictmonoon-nonneg.md) | 34 | `result-track:c0d1524380feb1aa7b7c50c4a94febfbafdeecf0a3ea3fc08a78dbffb1a07201` |
+| 2 | `theorem` | [strictAnti_of_odd_strictAntiOn_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/OddNamespaced.lean/declarations/strictanti-of-odd-strictantion-nonneg.md) | 42 | `result-track:ab2ebd146d01c76627f32223ab9c2d3054c71491badedd694efa01a6cee63074` |
+| 3 | `theorem` | [monotone_of_odd_of_monotoneOn_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/OddNamespaced.lean/declarations/monotone-of-odd-of-monotoneon-nonneg.md) | 48 | `result-track:6b0b08df5f9caa586b39d16f8943fdb5cbc3471762a203794ad9a5954075ad4d` |
+| 4 | `theorem` | [antitone_of_odd_of_monotoneOn_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/OddNamespaced.lean/declarations/antitone-of-odd-of-monotoneon-nonneg.md) | 56 | `result-track:1df376a476a3c8d28cf5c3dec88646658590ab83853bbe79ca1a9505991e5979` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

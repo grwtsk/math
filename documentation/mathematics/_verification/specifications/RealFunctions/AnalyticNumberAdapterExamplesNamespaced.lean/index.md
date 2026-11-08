@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/AnalyticNumberAdapterExamplesNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/AnalyticNumberAdapterExamplesNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AnalyticNumberAdapterExamplesNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AnalyticNumberAdapterExamplesNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [example_rh_spine_through_boundary_calculus](../../../../RealFunctions/AnalyticNumberAdapterExamplesNamespaced.lean/declarations/example-rh-spine-through-boundary-calculus.md) | 34 | `result-track:7c6725aa953b3b6484eeee5f2dda63cd8860a385569fa4889766751ff71789fd` |
-| 2 | `theorem` | [example_trace_formula_spine_through_boundary_calculus](../../../../RealFunctions/AnalyticNumberAdapterExamplesNamespaced.lean/declarations/example-trace-formula-spine-through-boundary-calculus.md) | 39 | `result-track:6a14076023642a3f688aad4a15db22391a2174b2f32fb439a353547207d48ad7` |
-| 3 | `theorem` | [example_langlands_spine_through_boundary_calculus](../../../../RealFunctions/AnalyticNumberAdapterExamplesNamespaced.lean/declarations/example-langlands-spine-through-boundary-calculus.md) | 44 | `result-track:dc35b1fe434a971a7b383710f431ffdc0a20db580d33c8e62be24be426337717` |
-| 4 | `theorem` | [example_prismatic_spine_through_boundary_calculus](../../../../RealFunctions/AnalyticNumberAdapterExamplesNamespaced.lean/declarations/example-prismatic-spine-through-boundary-calculus.md) | 49 | `result-track:ea9a5de97de2c5add7c4772b6403f7e54e5da07b278145846a0893882615ab27` |
-| 5 | `theorem` | [example_raw_presentations_still_not_authority](../../../../RealFunctions/AnalyticNumberAdapterExamplesNamespaced.lean/declarations/example-raw-presentations-still-not-authority.md) | 56 | `result-track:c8df7eadb06df055a5238df3bd3c4100be4c17e8ea7b5556ecc96df3e6e8fd6b` |
+| 1 | `theorem` | [example_rh_spine_through_boundary_calculus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AnalyticNumberAdapterExamplesNamespaced.lean/declarations/example-rh-spine-through-boundary-calculus.md) | 34 | `result-track:7c6725aa953b3b6484eeee5f2dda63cd8860a385569fa4889766751ff71789fd` |
+| 2 | `theorem` | [example_trace_formula_spine_through_boundary_calculus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AnalyticNumberAdapterExamplesNamespaced.lean/declarations/example-trace-formula-spine-through-boundary-calculus.md) | 39 | `result-track:6a14076023642a3f688aad4a15db22391a2174b2f32fb439a353547207d48ad7` |
+| 3 | `theorem` | [example_langlands_spine_through_boundary_calculus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AnalyticNumberAdapterExamplesNamespaced.lean/declarations/example-langlands-spine-through-boundary-calculus.md) | 44 | `result-track:dc35b1fe434a971a7b383710f431ffdc0a20db580d33c8e62be24be426337717` |
+| 4 | `theorem` | [example_prismatic_spine_through_boundary_calculus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AnalyticNumberAdapterExamplesNamespaced.lean/declarations/example-prismatic-spine-through-boundary-calculus.md) | 49 | `result-track:ea9a5de97de2c5add7c4772b6403f7e54e5da07b278145846a0893882615ab27` |
+| 5 | `theorem` | [example_raw_presentations_still_not_authority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AnalyticNumberAdapterExamplesNamespaced.lean/declarations/example-raw-presentations-still-not-authority.md) | 56 | `result-track:c8df7eadb06df055a5238df3bd3c4100be4c17e8ea7b5556ecc96df3e6e8fd6b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

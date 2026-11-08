@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/EncodingQuantizerImage.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/EncodingQuantizerImage.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/EncodingQuantizerImage.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/EncodingQuantizerImage.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -50,7 +50,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 - `Mathlib.LinearAlgebra.Matrix.ToLinearEquiv` — import line 20; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic.IntervalCases` — import line 21; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic.Linarith` — import line 22; external provider; requires a separately pinned dependency.
-- [Supplied Linear Field Encoding](../../../../AssociativeRingsAndAlgebras/SuppliedLinearFieldEncoding.lean/index.md) — import line 24; pinned internal source present.
+- [Supplied Linear Field Encoding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SuppliedLinearFieldEncoding.lean/index.md) — import line 24; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -61,11 +61,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [fieldQuantizer](../../../../AssociativeRingsAndAlgebras/EncodingQuantizerImage.lean/declarations/fieldquantizer.md) | 62 | `declaration-track:2a15e1671296505205f9a6550a3f58887c753f670a0583752e6b46ace38f8fba` |
-| 2 | `theorem` | [fieldQuantizer_indistinguishable_iff](../../../../AssociativeRingsAndAlgebras/EncodingQuantizerImage.lean/declarations/fieldquantizer-indistinguishable-iff.md) | 66 | `result-track:3df05302d93a1ca9d14ae1b1f1d02c8cce9688f492b90c6ba617d54f96bdb54f` |
-| 3 | `theorem` | [fieldQuantizer_effectiveStates_eq_univ](../../../../AssociativeRingsAndAlgebras/EncodingQuantizerImage.lean/declarations/fieldquantizer-effectivestates-eq-univ.md) | 73 | `result-track:e44b5344986cad690f02c72a069e7313ca27a64d9488857244dda8c6cd959c23` |
-| 4 | `theorem` | [fieldQuantizer_effectiveStates_card](../../../../AssociativeRingsAndAlgebras/EncodingQuantizerImage.lean/declarations/fieldquantizer-effectivestates-card.md) | 81 | `result-track:d9deddfedda779487da4e32cb28dad365d2c76d6e46395ab2bd68dafff14aec5` |
-| 5 | `def` | [fieldQuantizer_quotientEquiv](../../../../AssociativeRingsAndAlgebras/EncodingQuantizerImage.lean/declarations/fieldquantizer-quotientequiv.md) | 89 | `declaration-track:e7c099694ee6e74b54a30b989b61e77168577f5368ddb32adeb0e168d511213e` |
+| 1 | `def` | [fieldQuantizer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/EncodingQuantizerImage.lean/declarations/fieldquantizer.md) | 62 | `declaration-track:2a15e1671296505205f9a6550a3f58887c753f670a0583752e6b46ace38f8fba` |
+| 2 | `theorem` | [fieldQuantizer_indistinguishable_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/EncodingQuantizerImage.lean/declarations/fieldquantizer-indistinguishable-iff.md) | 66 | `result-track:3df05302d93a1ca9d14ae1b1f1d02c8cce9688f492b90c6ba617d54f96bdb54f` |
+| 3 | `theorem` | [fieldQuantizer_effectiveStates_eq_univ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/EncodingQuantizerImage.lean/declarations/fieldquantizer-effectivestates-eq-univ.md) | 73 | `result-track:e44b5344986cad690f02c72a069e7313ca27a64d9488857244dda8c6cd959c23` |
+| 4 | `theorem` | [fieldQuantizer_effectiveStates_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/EncodingQuantizerImage.lean/declarations/fieldquantizer-effectivestates-card.md) | 81 | `result-track:d9deddfedda779487da4e32cb28dad365d2c76d6e46395ab2bd68dafff14aec5` |
+| 5 | `def` | [fieldQuantizer_quotientEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/EncodingQuantizerImage.lean/declarations/fieldquantizer-quotientequiv.md) | 89 | `declaration-track:e7c099694ee6e74b54a30b989b61e77168577f5368ddb32adeb0e168d511213e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

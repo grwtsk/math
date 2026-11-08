@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../SpecialFunctions/TrigonometricSeriesNamespaced.lean/index.md) · [Full source](../../../../SpecialFunctions/TrigonometricSeriesNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/TrigonometricSeriesNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/TrigonometricSeriesNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,18 +57,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Complex.hasSum_cos'](../../../../SpecialFunctions/TrigonometricSeriesNamespaced.lean/declarations/complex-hassum-cos.md) | 39 | `result-track:6bfdabeafdb4744de869f3d0ac88ca5ab67395fcfb21906c49c08d3decaa2c78` |
-| 2 | `theorem` | [Complex.hasSum_sin'](../../../../SpecialFunctions/TrigonometricSeriesNamespaced.lean/declarations/complex-hassum-sin.md) | 56 | `result-track:afe82fac5ab1abd544142d4e35f8f618dd7bb6516e35d0e8f0edc59be7c0f12a` |
-| 3 | `theorem` | [Complex.hasSum_cos](../../../../SpecialFunctions/TrigonometricSeriesNamespaced.lean/declarations/complex-hassum-cos-source-edition-2.md) | 75 | `result-track:ddf5b0ad48facd955d12177398bbb007afbec21befbb439aea9dc1aa2eb57f24` |
-| 4 | `theorem` | [Complex.hasSum_sin](../../../../SpecialFunctions/TrigonometricSeriesNamespaced.lean/declarations/complex-hassum-sin-source-edition-2.md) | 82 | `result-track:c04d1961b9e361dedb18526394823dc65f2d52db78dc5cd0014389e9d52f9667` |
-| 5 | `theorem` | [Complex.cos_eq_tsum'](../../../../SpecialFunctions/TrigonometricSeriesNamespaced.lean/declarations/complex-cos-eq-tsum-source-edition-2.md) | 89 | `result-track:22dcedb69b5aba2dea7b593414c2a997d9ae93afc56e9010a797cbf254377e29` |
-| 6 | `theorem` | [Complex.sin_eq_tsum'](../../../../SpecialFunctions/TrigonometricSeriesNamespaced.lean/declarations/complex-sin-eq-tsum.md) | 94 | `result-track:004159285c8a1fed6b6c8d5a5abfd5bcf6e42adf5182e386be4fb6bd991f5200` |
-| 7 | `theorem` | [Complex.cos_eq_tsum](../../../../SpecialFunctions/TrigonometricSeriesNamespaced.lean/declarations/complex-cos-eq-tsum.md) | 99 | `result-track:0cc4814c4378834ac7f4f93c9bf0501b006bcd20b695d7d40544ecb93f0fbba4` |
-| 8 | `theorem` | [Complex.sin_eq_tsum](../../../../SpecialFunctions/TrigonometricSeriesNamespaced.lean/declarations/complex-sin-eq-tsum-source-edition-2.md) | 104 | `result-track:4c99a50c5484879775ec64edf1ccac2538a21d32b4c109c98dda3076f275d46a` |
-| 9 | `theorem` | [Real.hasSum_cos](../../../../SpecialFunctions/TrigonometricSeriesNamespaced.lean/declarations/real-hassum-cos.md) | 110 | `result-track:53bf15d46dd8868260d016786191cdfc3a24e5b7b693cb2baee7a71830506926` |
-| 10 | `theorem` | [Real.hasSum_sin](../../../../SpecialFunctions/TrigonometricSeriesNamespaced.lean/declarations/real-hassum-sin.md) | 116 | `result-track:9edb29509109b0b32058208acd75839becf0400dd6c30a1a240f8f8abf4846ce` |
-| 11 | `theorem` | [Real.cos_eq_tsum](../../../../SpecialFunctions/TrigonometricSeriesNamespaced.lean/declarations/real-cos-eq-tsum.md) | 121 | `result-track:5cd7324fe7fd5805be3faceca717e96957a56ab9fb813c801350ad405654ea04` |
-| 12 | `theorem` | [Real.sin_eq_tsum](../../../../SpecialFunctions/TrigonometricSeriesNamespaced.lean/declarations/real-sin-eq-tsum.md) | 125 | `result-track:79fe5923b6af13ade63f41071141454be8a259ad71067ee1e67d3b7246ce553e` |
+| 1 | `theorem` | [Complex.hasSum_cos'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/TrigonometricSeriesNamespaced.lean/declarations/complex-hassum-cos.md) | 39 | `result-track:6bfdabeafdb4744de869f3d0ac88ca5ab67395fcfb21906c49c08d3decaa2c78` |
+| 2 | `theorem` | [Complex.hasSum_sin'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/TrigonometricSeriesNamespaced.lean/declarations/complex-hassum-sin.md) | 56 | `result-track:afe82fac5ab1abd544142d4e35f8f618dd7bb6516e35d0e8f0edc59be7c0f12a` |
+| 3 | `theorem` | [Complex.hasSum_cos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/TrigonometricSeriesNamespaced.lean/declarations/complex-hassum-cos-source-edition-2.md) | 75 | `result-track:ddf5b0ad48facd955d12177398bbb007afbec21befbb439aea9dc1aa2eb57f24` |
+| 4 | `theorem` | [Complex.hasSum_sin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/TrigonometricSeriesNamespaced.lean/declarations/complex-hassum-sin-source-edition-2.md) | 82 | `result-track:c04d1961b9e361dedb18526394823dc65f2d52db78dc5cd0014389e9d52f9667` |
+| 5 | `theorem` | [Complex.cos_eq_tsum'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/TrigonometricSeriesNamespaced.lean/declarations/complex-cos-eq-tsum-source-edition-2.md) | 89 | `result-track:22dcedb69b5aba2dea7b593414c2a997d9ae93afc56e9010a797cbf254377e29` |
+| 6 | `theorem` | [Complex.sin_eq_tsum'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/TrigonometricSeriesNamespaced.lean/declarations/complex-sin-eq-tsum.md) | 94 | `result-track:004159285c8a1fed6b6c8d5a5abfd5bcf6e42adf5182e386be4fb6bd991f5200` |
+| 7 | `theorem` | [Complex.cos_eq_tsum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/TrigonometricSeriesNamespaced.lean/declarations/complex-cos-eq-tsum.md) | 99 | `result-track:0cc4814c4378834ac7f4f93c9bf0501b006bcd20b695d7d40544ecb93f0fbba4` |
+| 8 | `theorem` | [Complex.sin_eq_tsum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/TrigonometricSeriesNamespaced.lean/declarations/complex-sin-eq-tsum-source-edition-2.md) | 104 | `result-track:4c99a50c5484879775ec64edf1ccac2538a21d32b4c109c98dda3076f275d46a` |
+| 9 | `theorem` | [Real.hasSum_cos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/TrigonometricSeriesNamespaced.lean/declarations/real-hassum-cos.md) | 110 | `result-track:53bf15d46dd8868260d016786191cdfc3a24e5b7b693cb2baee7a71830506926` |
+| 10 | `theorem` | [Real.hasSum_sin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/TrigonometricSeriesNamespaced.lean/declarations/real-hassum-sin.md) | 116 | `result-track:9edb29509109b0b32058208acd75839becf0400dd6c30a1a240f8f8abf4846ce` |
+| 11 | `theorem` | [Real.cos_eq_tsum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/TrigonometricSeriesNamespaced.lean/declarations/real-cos-eq-tsum.md) | 121 | `result-track:5cd7324fe7fd5805be3faceca717e96957a56ab9fb813c801350ad405654ea04` |
+| 12 | `theorem` | [Real.sin_eq_tsum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/TrigonometricSeriesNamespaced.lean/declarations/real-sin-eq-tsum.md) | 125 | `result-track:79fe5923b6af13ade63f41071141454be8a259ad71067ee1e67d3b7246ce553e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

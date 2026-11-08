@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/IsPrimaryPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/IsPrimaryPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsPrimaryPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsPrimaryPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [IsPrimary](../../../../CommutativeAlgebra/IsPrimaryPublic.lean/declarations/isprimary.md) | 52 | `declaration-track:ac7af48745dc7620ac70377865efd60d9a12358a658fb3bfd5e9c3d3aa4340a8` |
-| 2 | `lemma` | [IsPrimary.ne_top](../../../../CommutativeAlgebra/IsPrimaryPublic.lean/declarations/isprimary-ne-top.md) | 57 | `result-track:126690a178328a689bebf9460a75dc76daf042d00d9a820e94cd9bd5d05fdc13` |
-| 3 | `lemma` | [IsPrimary.mem_or_mem](../../../../CommutativeAlgebra/IsPrimaryPublic.lean/declarations/isprimary-mem-or-mem.md) | 59 | `result-track:2ab4dda20e381717c0fbb968ea70896c159c192c69999cebaa44aeb64f860904` |
-| 4 | `lemma` | [IsPrimary.inf](../../../../CommutativeAlgebra/IsPrimaryPublic.lean/declarations/isprimary-inf.md) | 63 | `result-track:8db61a576a23124be197347aeeb3a7ab52c33d480c00f251d178f3831c4957af` |
-| 5 | `lemma` | [isPrimary_finsetInf](../../../../CommutativeAlgebra/IsPrimaryPublic.lean/declarations/isprimary-finsetinf.md) | 74 | `result-track:96e23c9098becfa56518c7a9abea088274283458b4252f95b2728bdeb4b0310d` |
-| 6 | `theorem` | [IsPrimary.isPrime_radical_colon](../../../../CommutativeAlgebra/IsPrimaryPublic.lean/declarations/isprimary-isprime-radical-colon.md) | 92 | `result-track:e5b0b59946bc6f5afa3c838e9261c5ff7bb16cb9a7a1ab8be1461221cd6919c2` |
-| 7 | `theorem` | [IsPrimary.radical_colon_singleton_of_notMem](../../../../CommutativeAlgebra/IsPrimaryPublic.lean/declarations/isprimary-radical-colon-singleton-of-notmem.md) | 99 | `result-track:8a156e11788c4de4389527d4f992d0220da20d25259b08673f3e1a4aa40dd7ef` |
-| 8 | `theorem` | [IsPrimary.radical_colon_singleton_eq_ite](../../../../CommutativeAlgebra/IsPrimaryPublic.lean/declarations/isprimary-radical-colon-singleton-eq-ite.md) | 105 | `result-track:49a3e39ab07440431c59a11dc63217440d5e3c3d94db9060705c72f82b21c3d8` |
-| 9 | `lemma` | [isPrimary_iff_zero_divisor_quotient_imp_nilpotent_smul](../../../../CommutativeAlgebra/IsPrimaryPublic.lean/declarations/isprimary-iff-zero-divisor-quotient-imp-nilpotent-smul.md) | 117 | `result-track:d7a464bd7a1a41d4a758b05fc430988a135607bdeacddd6da862381c4c23541d` |
+| 1 | `def` | [IsPrimary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsPrimaryPublic.lean/declarations/isprimary.md) | 52 | `declaration-track:ac7af48745dc7620ac70377865efd60d9a12358a658fb3bfd5e9c3d3aa4340a8` |
+| 2 | `lemma` | [IsPrimary.ne_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsPrimaryPublic.lean/declarations/isprimary-ne-top.md) | 57 | `result-track:126690a178328a689bebf9460a75dc76daf042d00d9a820e94cd9bd5d05fdc13` |
+| 3 | `lemma` | [IsPrimary.mem_or_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsPrimaryPublic.lean/declarations/isprimary-mem-or-mem.md) | 59 | `result-track:2ab4dda20e381717c0fbb968ea70896c159c192c69999cebaa44aeb64f860904` |
+| 4 | `lemma` | [IsPrimary.inf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsPrimaryPublic.lean/declarations/isprimary-inf.md) | 63 | `result-track:8db61a576a23124be197347aeeb3a7ab52c33d480c00f251d178f3831c4957af` |
+| 5 | `lemma` | [isPrimary_finsetInf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsPrimaryPublic.lean/declarations/isprimary-finsetinf.md) | 74 | `result-track:96e23c9098becfa56518c7a9abea088274283458b4252f95b2728bdeb4b0310d` |
+| 6 | `theorem` | [IsPrimary.isPrime_radical_colon](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsPrimaryPublic.lean/declarations/isprimary-isprime-radical-colon.md) | 92 | `result-track:e5b0b59946bc6f5afa3c838e9261c5ff7bb16cb9a7a1ab8be1461221cd6919c2` |
+| 7 | `theorem` | [IsPrimary.radical_colon_singleton_of_notMem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsPrimaryPublic.lean/declarations/isprimary-radical-colon-singleton-of-notmem.md) | 99 | `result-track:8a156e11788c4de4389527d4f992d0220da20d25259b08673f3e1a4aa40dd7ef` |
+| 8 | `theorem` | [IsPrimary.radical_colon_singleton_eq_ite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsPrimaryPublic.lean/declarations/isprimary-radical-colon-singleton-eq-ite.md) | 105 | `result-track:49a3e39ab07440431c59a11dc63217440d5e3c3d94db9060705c72f82b21c3d8` |
+| 9 | `lemma` | [isPrimary_iff_zero_divisor_quotient_imp_nilpotent_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsPrimaryPublic.lean/declarations/isprimary-iff-zero-divisor-quotient-imp-nilpotent-smul.md) | 117 | `result-track:d7a464bd7a1a41d4a758b05fc430988a135607bdeacddd6da862381c4c23541d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

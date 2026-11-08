@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShapesFunctorCategory.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShapesFunctorCategory.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShapesFunctorCategory.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShapesFunctorCategory.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [functor_category_hasFiniteLimits](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShapesFunctorCategory.lean/declarations/functor-category-hasfinitelimits.md) | 28 | `declaration-track:f0a963e7140ecb9286aa1d2162fa4d20a1eea61ea5ba6b1dd1e0b1f0dcb652a4` |
-| 2 | `instance` | [functor_category_hasFiniteColimits](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShapesFunctorCategory.lean/declarations/functor-category-hasfinitecolimits.md) | 32 | `declaration-track:a1b88c69cc6f3af039e3363c682a43c6677f4c2fe0a8cc78eb3819027607c5b3` |
+| 1 | `instance` | [functor_category_hasFiniteLimits](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShapesFunctorCategory.lean/declarations/functor-category-hasfinitelimits.md) | 28 | `declaration-track:f0a963e7140ecb9286aa1d2162fa4d20a1eea61ea5ba6b1dd1e0b1f0dcb652a4` |
+| 2 | `instance` | [functor_category_hasFiniteColimits](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShapesFunctorCategory.lean/declarations/functor-category-hasfinitecolimits.md) | 32 | `declaration-track:a1b88c69cc6f3af039e3363c682a43c6677f4c2fe0a8cc78eb3819027607c5b3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

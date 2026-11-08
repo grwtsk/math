@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/AssociatedPrimeLocalization.lean/index.md) · [Full source](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/AssociatedPrimeLocalization.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/AssociatedPrimeLocalization.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/AssociatedPrimeLocalization.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [mem_associatePrimes_of_comap_mem_associatePrimes_isLocalizedModule](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/AssociatedPrimeLocalization.lean/declarations/mem-associateprimes-of-comap-mem-associateprimes-islocalizedmodule.md) | 40 | `result-track:bbacb7078a315ce4667ccd04c8ac2e2b515a52050b7a41c67dd8bba540dcaf54` |
-| 2 | `lemma` | [mem_associatePrimes_localizedModule_atPrime_of_mem_associated_primes](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/AssociatedPrimeLocalization.lean/declarations/mem-associateprimes-localizedmodule-atprime-of-mem-associated-primes.md) | 75 | `result-track:86e1ab00483b18c2dc07bca521fc72d44f3d8dd545fc0272a0a8708107903dd0` |
+| 1 | `lemma` | [mem_associatePrimes_of_comap_mem_associatePrimes_isLocalizedModule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/AssociatedPrimeLocalization.lean/declarations/mem-associateprimes-of-comap-mem-associateprimes-islocalizedmodule.md) | 40 | `result-track:bbacb7078a315ce4667ccd04c8ac2e2b515a52050b7a41c67dd8bba540dcaf54` |
+| 2 | `lemma` | [mem_associatePrimes_localizedModule_atPrime_of_mem_associated_primes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/AssociatedPrimeLocalization.lean/declarations/mem-associateprimes-localizedmodule-atprime-of-mem-associated-primes.md) | 75 | `result-track:86e1ab00483b18c2dc07bca521fc72d44f3d8dd545fc0272a0a8708107903dd0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/FinsetLemmasNamespaced.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/FinsetLemmasNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/FinsetLemmasNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/FinsetLemmasNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,10 +60,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [MonoidHom.coe_finset_prod](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/FinsetLemmasNamespaced.lean/declarations/monoidhom-coe-finset-prod.md) | 29 | `result-track:355d684025c493afae5467cb9dcabdd7f148edd742cd03fc90c997507e5dbd4e` |
-| 2 | `theorem` | [MonoidHom.finset_prod_apply](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/FinsetLemmasNamespaced.lean/declarations/monoidhom-finset-prod-apply.md) | 38 | `result-track:552e07a9390a2d17db1e149e91585f7c375dfcb76423f85d2a8833eca17cb139` |
-| 3 | `lemma` | [mulSupport_prod](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/FinsetLemmasNamespaced.lean/declarations/mulsupport-prod.md) | 48 | `result-track:eebff63900735269b59d64d83d93cab3b1d69f7ebdb4683df2b2d53298782574` |
-| 4 | `lemma` | [isSquare_prod](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/FinsetLemmasNamespaced.lean/declarations/issquare-prod.md) | 54 | `result-track:108634033764a953e6bf3771f221c2f37242bdf84db120b252c19f9abc3908d6` |
+| 1 | `theorem` | [MonoidHom.coe_finset_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/FinsetLemmasNamespaced.lean/declarations/monoidhom-coe-finset-prod.md) | 29 | `result-track:355d684025c493afae5467cb9dcabdd7f148edd742cd03fc90c997507e5dbd4e` |
+| 2 | `theorem` | [MonoidHom.finset_prod_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/FinsetLemmasNamespaced.lean/declarations/monoidhom-finset-prod-apply.md) | 38 | `result-track:552e07a9390a2d17db1e149e91585f7c375dfcb76423f85d2a8833eca17cb139` |
+| 3 | `lemma` | [mulSupport_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/FinsetLemmasNamespaced.lean/declarations/mulsupport-prod.md) | 48 | `result-track:eebff63900735269b59d64d83d93cab3b1d69f7ebdb4683df2b2d53298782574` |
+| 4 | `lemma` | [isSquare_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/FinsetLemmasNamespaced.lean/declarations/issquare-prod.md) | 54 | `result-track:108634033764a953e6bf3771f221c2f37242bdf84db120b252c19f9abc3908d6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

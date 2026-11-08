@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/FiniteGroupInverseSystem.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/FiniteGroupInverseSystem.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteGroupInverseSystem.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteGroupInverseSystem.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FiniteInverseSystem](../../../../GroupTheoryAndGeneralizations/FiniteGroupInverseSystem.lean/declarations/finiteinversesystem.md) | 27 | `declaration-track:19b9f0d23e5e68d0d7563ad79bd2fb39360901fffbb282e87f4e31a2e5a5bace` |
-| 2 | `def` | [constantInverseSystem](../../../../GroupTheoryAndGeneralizations/FiniteGroupInverseSystem.lean/declarations/constantinversesystem.md) | 44 | `declaration-track:7ecd79627dbf52a3b294bc1a5905e32b8dc571f92b4a9d003b1809da629a6ab1` |
+| 1 | `structure` | [FiniteInverseSystem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteGroupInverseSystem.lean/declarations/finiteinversesystem.md) | 27 | `declaration-track:19b9f0d23e5e68d0d7563ad79bd2fb39360901fffbb282e87f4e31a2e5a5bace` |
+| 2 | `def` | [constantInverseSystem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteGroupInverseSystem.lean/declarations/constantinversesystem.md) | 44 | `declaration-track:7ecd79627dbf52a3b294bc1a5905e32b8dc571f92b4a9d003b1809da629a6ab1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

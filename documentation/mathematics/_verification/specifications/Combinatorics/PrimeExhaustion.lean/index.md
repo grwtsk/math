@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/PrimeExhaustion.lean/index.md) · [Full source](../../../../Combinatorics/PrimeExhaustion.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeExhaustion.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeExhaustion.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,15 +59,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [primesUpTo](../../../../Combinatorics/PrimeExhaustion.lean/declarations/primesupto.md) | 18 | `declaration-track:0b71ed9f25ae1fabfc0e11b7a35fa39c5b275a61f7ca21d42dacd528085b9126` |
-| 2 | `theorem` | [mem_primesUpTo_iff](../../../../Combinatorics/PrimeExhaustion.lean/declarations/mem-primesupto-iff.md) | 22 | `result-track:eaa458c5cf63a726a790f9ceb293a09d457de320c4f7823a65dcce08d586d40d` |
-| 3 | `theorem` | [primesUpTo_prime](../../../../Combinatorics/PrimeExhaustion.lean/declarations/primesupto-prime.md) | 33 | `result-track:398e398bac44dcedf72b758af71b5a9b23ac34112ae9afb37c55f8cfba920799` |
-| 4 | `theorem` | [primesUpTo_pos](../../../../Combinatorics/PrimeExhaustion.lean/declarations/primesupto-pos.md) | 39 | `result-track:662d780cb067d3f101d487bc3096d0d949001b0a69bb5f99a64237acc4f10fd8` |
-| 5 | `theorem` | [prime_factor_mem_primesUpTo_of_dvd_le](../../../../Combinatorics/PrimeExhaustion.lean/declarations/prime-factor-mem-primesupto-of-dvd-le.md) | 45 | `result-track:00ddbe191b5b61ff73b1c07f1c461ee0f5be932fb80a7ef2cb18556062604db5` |
-| 6 | `theorem` | [factorization_le_self](../../../../Combinatorics/PrimeExhaustion.lean/declarations/factorization-le-self.md) | 55 | `result-track:2b39929195836b3b2252f119622ab40f8809098d3ba3d51d73b8f029e835a0a0` |
-| 7 | `theorem` | [factorization_support_subset_primesUpTo](../../../../Combinatorics/PrimeExhaustion.lean/declarations/factorization-support-subset-primesupto.md) | 72 | `result-track:42d64f1a402f7e540666b841989cd429d3113b3bbda3c8160d6d578b025fe947` |
-| 8 | `theorem` | [nat_mem_boundedSmoothNumbers_primesUpTo_self](../../../../Combinatorics/PrimeExhaustion.lean/declarations/nat-mem-boundedsmoothnumbers-primesupto-self.md) | 87 | `result-track:36c2f31edc8577f400f6764fe40a62692fe10be9467e0c25cd97ed05a66dfc31` |
-| 9 | `theorem` | [Icc_subset_boundedSmoothNumbers_primesUpTo](../../../../Combinatorics/PrimeExhaustion.lean/declarations/icc-subset-boundedsmoothnumbers-primesupto.md) | 118 | `result-track:8183011a78b5b49d10367dce438d31f5943796f839eb250af0996f029c001258` |
+| 1 | `def` | [primesUpTo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeExhaustion.lean/declarations/primesupto.md) | 18 | `declaration-track:0b71ed9f25ae1fabfc0e11b7a35fa39c5b275a61f7ca21d42dacd528085b9126` |
+| 2 | `theorem` | [mem_primesUpTo_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeExhaustion.lean/declarations/mem-primesupto-iff.md) | 22 | `result-track:eaa458c5cf63a726a790f9ceb293a09d457de320c4f7823a65dcce08d586d40d` |
+| 3 | `theorem` | [primesUpTo_prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeExhaustion.lean/declarations/primesupto-prime.md) | 33 | `result-track:398e398bac44dcedf72b758af71b5a9b23ac34112ae9afb37c55f8cfba920799` |
+| 4 | `theorem` | [primesUpTo_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeExhaustion.lean/declarations/primesupto-pos.md) | 39 | `result-track:662d780cb067d3f101d487bc3096d0d949001b0a69bb5f99a64237acc4f10fd8` |
+| 5 | `theorem` | [prime_factor_mem_primesUpTo_of_dvd_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeExhaustion.lean/declarations/prime-factor-mem-primesupto-of-dvd-le.md) | 45 | `result-track:00ddbe191b5b61ff73b1c07f1c461ee0f5be932fb80a7ef2cb18556062604db5` |
+| 6 | `theorem` | [factorization_le_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeExhaustion.lean/declarations/factorization-le-self.md) | 55 | `result-track:2b39929195836b3b2252f119622ab40f8809098d3ba3d51d73b8f029e835a0a0` |
+| 7 | `theorem` | [factorization_support_subset_primesUpTo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeExhaustion.lean/declarations/factorization-support-subset-primesupto.md) | 72 | `result-track:42d64f1a402f7e540666b841989cd429d3113b3bbda3c8160d6d578b025fe947` |
+| 8 | `theorem` | [nat_mem_boundedSmoothNumbers_primesUpTo_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeExhaustion.lean/declarations/nat-mem-boundedsmoothnumbers-primesupto-self.md) | 87 | `result-track:36c2f31edc8577f400f6764fe40a62692fe10be9467e0c25cd97ed05a66dfc31` |
+| 9 | `theorem` | [Icc_subset_boundedSmoothNumbers_primesUpTo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeExhaustion.lean/declarations/icc-subset-boundedsmoothnumbers-primesupto.md) | 118 | `result-track:8183011a78b5b49d10367dce438d31f5943796f839eb250af0996f029c001258` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/Euclid.lean/index.md) · [Full source](../../../../Combinatorics/Euclid.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Euclid.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Euclid.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [euclid_prime_not_in_finite_set](../../../../Combinatorics/Euclid.lean/declarations/euclid-prime-not-in-finite-set.md) | 16 | `result-track:986d07f4317a588d7ccbc23b123561d6716d5712fbdc3dbe7e8eed051a956af5` |
-| 2 | `theorem` | [infinitely_many_primes_checked](../../../../Combinatorics/Euclid.lean/declarations/infinitely-many-primes-checked.md) | 39 | `result-track:ffa09584d7fecc304f163c2b099f77f6c60a37f35d9eff775a02e3c2fbf40401` |
+| 1 | `theorem` | [euclid_prime_not_in_finite_set](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Euclid.lean/declarations/euclid-prime-not-in-finite-set.md) | 16 | `result-track:986d07f4317a588d7ccbc23b123561d6716d5712fbdc3dbe7e8eed051a956af5` |
+| 2 | `theorem` | [infinitely_many_primes_checked](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Euclid.lean/declarations/infinitely-many-primes-checked.md) | 39 | `result-track:ffa09584d7fecc304f163c2b099f77f6c60a37f35d9eff775a02e3c2fbf40401` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

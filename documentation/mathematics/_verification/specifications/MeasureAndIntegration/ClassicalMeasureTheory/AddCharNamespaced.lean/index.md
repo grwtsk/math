@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/AddCharNamespaced.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/AddCharNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/AddCharNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/AddCharNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [instMeasurableSpace](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/AddCharNamespaced.lean/declarations/instmeasurablespace.md) | 32 | `declaration-track:92b74d681334df10754c7adcb33a68627c878418b26e9cc01842b726c39af3f1` |
-| 2 | `instance` | [instDiscreteMeasurableSpace](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/AddCharNamespaced.lean/declarations/instdiscretemeasurablespace.md) | 36 | `declaration-track:f39b5bf631fc3c7d0cda4e53ca8d06aa43a0c45a0fa489c63336859976833b39` |
+| 1 | `instance` | [instMeasurableSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/AddCharNamespaced.lean/declarations/instmeasurablespace.md) | 32 | `declaration-track:92b74d681334df10754c7adcb33a68627c878418b26e9cc01842b726c39af3f1` |
+| 2 | `instance` | [instDiscreteMeasurableSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/AddCharNamespaced.lean/declarations/instdiscretemeasurablespace.md) | 36 | `declaration-track:f39b5bf631fc3c7d0cda4e53ca8d06aa43a0c45a0fa489c63336859976833b39` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

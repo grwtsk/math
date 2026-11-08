@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceDiagonalMainTermNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceDiagonalMainTermNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceDiagonalMainTermNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceDiagonalMainTermNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,16 +59,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [unitBump_integral](../../../../MeasureAndIntegration/SourceDiagonalMainTermNamespaced.lean/declarations/unitbump-integral.md) | 37 | `result-track:24a1e09271ff3a2b5eb682b4a2500e43a27d0c39bb454d5aca2e893d8007570b` |
-| 2 | `theorem` | [sourceBump_integral](../../../../MeasureAndIntegration/SourceDiagonalMainTermNamespaced.lean/declarations/sourcebump-integral.md) | 50 | `result-track:eb86c8473f05cadae5da9c904d7cecca13583301b116558fc7ed037050a96c3a` |
-| 3 | `theorem` | [explicitSecondDerivative_integral](../../../../MeasureAndIntegration/SourceDiagonalMainTermNamespaced.lean/declarations/explicitsecondderivative-integral.md) | 55 | `result-track:dcecb08b430f7d2858556662f2664129ae5748bd1cf5a97701541b7c6d70b63f` |
-| 4 | `theorem` | [scaledBump_integral](../../../../MeasureAndIntegration/SourceDiagonalMainTermNamespaced.lean/declarations/scaledbump-integral.md) | 65 | `result-track:7bce16e8e0609e7a9144dd8551ca6175d194c08aa83a9806f5611a56423bfcef` |
-| 5 | `theorem` | [normalizedTest_integral](../../../../MeasureAndIntegration/SourceDiagonalMainTermNamespaced.lean/declarations/normalizedtest-integral.md) | 75 | `result-track:1f857b009b0c0cd094a99f9ef1f95956c0ffea289294e32d505e10b84e2ec2ba` |
-| 6 | `theorem` | [sourceCorrelation_integral_eq_square](../../../../MeasureAndIntegration/SourceDiagonalMainTermNamespaced.lean/declarations/sourcecorrelation-integral-eq-square.md) | 86 | `result-track:6bd01d23efe3a408b6c942bf8441874ef225d90343b7541d1676aa4759cfbaa7` |
-| 7 | `theorem` | [sourceCorrelation_integral](../../../../MeasureAndIntegration/SourceDiagonalMainTermNamespaced.lean/declarations/sourcecorrelation-integral.md) | 104 | `result-track:27a879ed7fd7b60cfd89d0154e58299b85a327fd791d0eb7317f44e84cd5bc50` |
-| 8 | `theorem` | [diagonalCorrelation_integral_eq_quarter](../../../../MeasureAndIntegration/SourceDiagonalMainTermNamespaced.lean/declarations/diagonalcorrelation-integral-eq-quarter.md) | 114 | `result-track:442f323dc2c53e9de986e5c0ce667805791f46d9a52e26f777836b7e04c1afec` |
-| 9 | `def` | [diagonalMainCoefficient](../../../../MeasureAndIntegration/SourceDiagonalMainTermNamespaced.lean/declarations/diagonalmaincoefficient.md) | 143 | `declaration-track:7538720fa3ab124e6a759c718eb67cb179ed5cb89aa32c6f2ad78faf425cc5c0` |
-| 10 | `theorem` | [diagonalCorrelation_integral](../../../../MeasureAndIntegration/SourceDiagonalMainTermNamespaced.lean/declarations/diagonalcorrelation-integral.md) | 146 | `result-track:6feb612b4b0c9617a9730638b74a4349af7055381a545bf34c4e898487763e2f` |
+| 1 | `theorem` | [unitBump_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceDiagonalMainTermNamespaced.lean/declarations/unitbump-integral.md) | 37 | `result-track:24a1e09271ff3a2b5eb682b4a2500e43a27d0c39bb454d5aca2e893d8007570b` |
+| 2 | `theorem` | [sourceBump_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceDiagonalMainTermNamespaced.lean/declarations/sourcebump-integral.md) | 50 | `result-track:eb86c8473f05cadae5da9c904d7cecca13583301b116558fc7ed037050a96c3a` |
+| 3 | `theorem` | [explicitSecondDerivative_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceDiagonalMainTermNamespaced.lean/declarations/explicitsecondderivative-integral.md) | 55 | `result-track:dcecb08b430f7d2858556662f2664129ae5748bd1cf5a97701541b7c6d70b63f` |
+| 4 | `theorem` | [scaledBump_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceDiagonalMainTermNamespaced.lean/declarations/scaledbump-integral.md) | 65 | `result-track:7bce16e8e0609e7a9144dd8551ca6175d194c08aa83a9806f5611a56423bfcef` |
+| 5 | `theorem` | [normalizedTest_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceDiagonalMainTermNamespaced.lean/declarations/normalizedtest-integral.md) | 75 | `result-track:1f857b009b0c0cd094a99f9ef1f95956c0ffea289294e32d505e10b84e2ec2ba` |
+| 6 | `theorem` | [sourceCorrelation_integral_eq_square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceDiagonalMainTermNamespaced.lean/declarations/sourcecorrelation-integral-eq-square.md) | 86 | `result-track:6bd01d23efe3a408b6c942bf8441874ef225d90343b7541d1676aa4759cfbaa7` |
+| 7 | `theorem` | [sourceCorrelation_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceDiagonalMainTermNamespaced.lean/declarations/sourcecorrelation-integral.md) | 104 | `result-track:27a879ed7fd7b60cfd89d0154e58299b85a327fd791d0eb7317f44e84cd5bc50` |
+| 8 | `theorem` | [diagonalCorrelation_integral_eq_quarter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceDiagonalMainTermNamespaced.lean/declarations/diagonalcorrelation-integral-eq-quarter.md) | 114 | `result-track:442f323dc2c53e9de986e5c0ce667805791f46d9a52e26f777836b7e04c1afec` |
+| 9 | `def` | [diagonalMainCoefficient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceDiagonalMainTermNamespaced.lean/declarations/diagonalmaincoefficient.md) | 143 | `declaration-track:7538720fa3ab124e6a759c718eb67cb179ed5cb89aa32c6f2ad78faf425cc5c0` |
+| 10 | `theorem` | [diagonalCorrelation_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceDiagonalMainTermNamespaced.lean/declarations/diagonalcorrelation-integral.md) | 146 | `result-track:6feb612b4b0c9617a9730638b74a4349af7055381a545bf34c4e898487763e2f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

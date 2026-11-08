@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AnalyticMultiplicityNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AnalyticMultiplicityNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AnalyticMultiplicityNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AnalyticMultiplicityNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AnalyticMultiplicityNamespaced.lean/declarations/example-source-edition-4.md) | 14 | `declaration-track:e3abf1639b832c1d55daf6c88d38825cd6a4274fddeac3811847e0f7d6501fa2` |
-| 2 | `example` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AnalyticMultiplicityNamespaced.lean/declarations/example.md) | 20 | `declaration-track:bdda73f6497fea491021912cb4a0ac0f7cff3a228281bf411971a970aacdc14b` |
-| 3 | `example` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AnalyticMultiplicityNamespaced.lean/declarations/example-source-edition-2.md) | 30 | `declaration-track:dd4c4b6e795fe5533a9242efd1190432ccb2efa8f0f808b98f7bf6716e170036` |
-| 4 | `example` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AnalyticMultiplicityNamespaced.lean/declarations/example-source-edition-3.md) | 40 | `declaration-track:e2d9203d24e68083693fe94c30d0f4acb6d83417cd28fe8adef83cb77ccc2d08` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AnalyticMultiplicityNamespaced.lean/declarations/example-source-edition-4.md) | 14 | `declaration-track:e3abf1639b832c1d55daf6c88d38825cd6a4274fddeac3811847e0f7d6501fa2` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AnalyticMultiplicityNamespaced.lean/declarations/example.md) | 20 | `declaration-track:bdda73f6497fea491021912cb4a0ac0f7cff3a228281bf411971a970aacdc14b` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AnalyticMultiplicityNamespaced.lean/declarations/example-source-edition-2.md) | 30 | `declaration-track:dd4c4b6e795fe5533a9242efd1190432ccb2efa8f0f808b98f7bf6716e170036` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AnalyticMultiplicityNamespaced.lean/declarations/example-source-edition-3.md) | 40 | `declaration-track:e2d9203d24e68083693fe94c30d0f4acb6d83417cd28fe8adef83cb77ccc2d08` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

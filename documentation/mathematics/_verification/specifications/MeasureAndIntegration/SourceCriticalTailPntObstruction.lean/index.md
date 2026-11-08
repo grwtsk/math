@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceCriticalTailPntObstruction.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceCriticalTailPntObstruction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCriticalTailPntObstruction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCriticalTailPntObstruction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualCutoffPntAbsoluteBudget](../../../../MeasureAndIntegration/SourceCriticalTailPntObstruction.lean/declarations/actualcutoffpntabsolutebudget.md) | 25 | `declaration-track:4044cbf8ec604c5a700cb3e9908057883b3a5be2b8063f3579eb31c18f08b6ce` |
-| 2 | `theorem` | [actual_upper_strip_after_cutoff](../../../../MeasureAndIntegration/SourceCriticalTailPntObstruction.lean/declarations/actual-upper-strip-after-cutoff.md) | 29 | `result-track:2fc8ccc476cc17aa1ff41ab8b8793233255c6d9d11ea09532946013db958101b` |
-| 3 | `theorem` | [actual_cutoff_pnt_integrable](../../../../MeasureAndIntegration/SourceCriticalTailPntObstruction.lean/declarations/actual-cutoff-pnt-integrable.md) | 36 | `result-track:d0ed9e14e868e70f10c406600269aa6d46b73ff78ad427ee4f50d899b7a53661` |
-| 4 | `theorem` | [actual_cutoff_pnt_absolute_budget_lower](../../../../MeasureAndIntegration/SourceCriticalTailPntObstruction.lean/declarations/actual-cutoff-pnt-absolute-budget-lower.md) | 45 | `result-track:62801233698a3f340d098e96a0c89c51bc58e32c2330b25d8f14d24c1eafaf01` |
-| 5 | `theorem` | [actual_cutoff_absolute_budget_lower](../../../../MeasureAndIntegration/SourceCriticalTailPntObstruction.lean/declarations/actual-cutoff-absolute-budget-lower.md) | 88 | `result-track:65b43257604a719c594c3a77277abba0fac25e0236b30fb68d6c3fa8a4e3ac10` |
-| 6 | `theorem` | [actual_cutoff_pnt_absolute_budget_tendsto_atTop](../../../../MeasureAndIntegration/SourceCriticalTailPntObstruction.lean/declarations/actual-cutoff-pnt-absolute-budget-tendsto-attop.md) | 94 | `result-track:a9331a6374ca9e1aed6cdf5372dc25b978e09fa688dd057bda95c752c246dd83` |
+| 1 | `def` | [actualCutoffPntAbsoluteBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCriticalTailPntObstruction.lean/declarations/actualcutoffpntabsolutebudget.md) | 25 | `declaration-track:4044cbf8ec604c5a700cb3e9908057883b3a5be2b8063f3579eb31c18f08b6ce` |
+| 2 | `theorem` | [actual_upper_strip_after_cutoff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCriticalTailPntObstruction.lean/declarations/actual-upper-strip-after-cutoff.md) | 29 | `result-track:2fc8ccc476cc17aa1ff41ab8b8793233255c6d9d11ea09532946013db958101b` |
+| 3 | `theorem` | [actual_cutoff_pnt_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCriticalTailPntObstruction.lean/declarations/actual-cutoff-pnt-integrable.md) | 36 | `result-track:d0ed9e14e868e70f10c406600269aa6d46b73ff78ad427ee4f50d899b7a53661` |
+| 4 | `theorem` | [actual_cutoff_pnt_absolute_budget_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCriticalTailPntObstruction.lean/declarations/actual-cutoff-pnt-absolute-budget-lower.md) | 45 | `result-track:62801233698a3f340d098e96a0c89c51bc58e32c2330b25d8f14d24c1eafaf01` |
+| 5 | `theorem` | [actual_cutoff_absolute_budget_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCriticalTailPntObstruction.lean/declarations/actual-cutoff-absolute-budget-lower.md) | 88 | `result-track:65b43257604a719c594c3a77277abba0fac25e0236b30fb68d6c3fa8a4e3ac10` |
+| 6 | `theorem` | [actual_cutoff_pnt_absolute_budget_tendsto_atTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCriticalTailPntObstruction.lean/declarations/actual-cutoff-pnt-absolute-budget-tendsto-attop.md) | 94 | `result-track:a9331a6374ca9e1aed6cdf5372dc25b978e09fa688dd057bda95c752c246dd83` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

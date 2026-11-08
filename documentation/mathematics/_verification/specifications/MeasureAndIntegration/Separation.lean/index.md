@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/Separation.lean/index.md) · [Full source](../../../../MeasureAndIntegration/Separation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Separation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Separation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_nonzero_of_not_contDiffOn_two](../../../../MeasureAndIntegration/Separation.lean/declarations/exists-nonzero-of-not-contdiffon-two.md) | 26 | `result-track:739621a50d305dad90f87bc0a05a4b641ede5894685bea4fa26698179fe3dd14` |
-| 2 | `theorem` | [exists_smooth_test_positive_pairing](../../../../MeasureAndIntegration/Separation.lean/declarations/exists-smooth-test-positive-pairing.md) | 35 | `result-track:9e607d8592c8834fcc94746aeb706bccc552f07f3080b33451a45bb865ce6812` |
-| 3 | `theorem` | [eq_zero_on_of_smooth_test_pairings_zero](../../../../MeasureAndIntegration/Separation.lean/declarations/eq-zero-on-of-smooth-test-pairings-zero.md) | 68 | `result-track:9734f45cd9d79c5afad390d2f026e06d9f2a1cc0c4975b68a41b8bcb08d166cf` |
-| 4 | `theorem` | [exists_smooth_test_of_not_contDiffOn_two](../../../../MeasureAndIntegration/Separation.lean/declarations/exists-smooth-test-of-not-contdiffon-two.md) | 80 | `result-track:3657dec5557127e1f0a88ca66b43a9a2e83414cde24a47be0b5b54c363bdb358` |
-| 5 | `def` | [pointSpike](../../../../MeasureAndIntegration/Separation.lean/declarations/pointspike.md) | 88 | `declaration-track:f4a3daef40128c74dfa792b1fb302f6c9e5ea55e13674d0113bab1bbd492ebfc` |
-| 6 | `theorem` | [point_spike_pairings_zero](../../../../MeasureAndIntegration/Separation.lean/declarations/point-spike-pairings-zero.md) | 91 | `result-track:81572f6aab65c28a7c68638921851d083f0ee48056ba5b71b096c2bfc9dbba75` |
+| 1 | `theorem` | [exists_nonzero_of_not_contDiffOn_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Separation.lean/declarations/exists-nonzero-of-not-contdiffon-two.md) | 26 | `result-track:739621a50d305dad90f87bc0a05a4b641ede5894685bea4fa26698179fe3dd14` |
+| 2 | `theorem` | [exists_smooth_test_positive_pairing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Separation.lean/declarations/exists-smooth-test-positive-pairing.md) | 35 | `result-track:9e607d8592c8834fcc94746aeb706bccc552f07f3080b33451a45bb865ce6812` |
+| 3 | `theorem` | [eq_zero_on_of_smooth_test_pairings_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Separation.lean/declarations/eq-zero-on-of-smooth-test-pairings-zero.md) | 68 | `result-track:9734f45cd9d79c5afad390d2f026e06d9f2a1cc0c4975b68a41b8bcb08d166cf` |
+| 4 | `theorem` | [exists_smooth_test_of_not_contDiffOn_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Separation.lean/declarations/exists-smooth-test-of-not-contdiffon-two.md) | 80 | `result-track:3657dec5557127e1f0a88ca66b43a9a2e83414cde24a47be0b5b54c363bdb358` |
+| 5 | `def` | [pointSpike](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Separation.lean/declarations/pointspike.md) | 88 | `declaration-track:f4a3daef40128c74dfa792b1fb302f6c9e5ea55e13674d0113bab1bbd492ebfc` |
+| 6 | `theorem` | [point_spike_pairings_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Separation.lean/declarations/point-spike-pairings-zero.md) | 91 | `result-track:81572f6aab65c28a7c68638921851d083f0ee48056ba5b71b096c2bfc9dbba75` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

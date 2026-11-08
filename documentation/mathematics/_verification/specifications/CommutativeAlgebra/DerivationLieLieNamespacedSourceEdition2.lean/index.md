@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/DerivationLieLieNamespacedSourceEdition2.lean/index.md) · [Full source](../../../../CommutativeAlgebra/DerivationLieLieNamespacedSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DerivationLieLieNamespacedSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DerivationLieLieNamespacedSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/DerivationLieLieNamespacedSourceEdition2.lean/declarations/instance.md) | 41 | `declaration-track:4f3a0eb332196b2a7870c33759d9c087c24541164c72ad17c508c0176821b6ce` |
-| 2 | `theorem` | [commutator_coe_linear_map](../../../../CommutativeAlgebra/DerivationLieLieNamespacedSourceEdition2.lean/declarations/commutator-coe-linear-map.md) | 49 | `result-track:627fa83372ad9d22ec200c3b0576447508446679256c3e47c04ed0f09ec6a96f` |
-| 3 | `theorem` | [commutator_apply](../../../../CommutativeAlgebra/DerivationLieLieNamespacedSourceEdition2.lean/declarations/commutator-apply.md) | 53 | `result-track:fc89432b54b39e7f7ff46aff52ccf83abcc5e6a45b51c342ce9edb3162fc281d` |
-| 4 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/DerivationLieLieNamespacedSourceEdition2.lean/declarations/instance-source-edition-2.md) | 57 | `declaration-track:c4423ef38f99d8569d5c57892b5c4501b97c83277bc8a64e97adf6132c301358` |
-| 5 | `instance` | [instLieAlgebra](../../../../CommutativeAlgebra/DerivationLieLieNamespacedSourceEdition2.lean/declarations/instliealgebra.md) | 63 | `declaration-track:e22cea9766b2ab634bb83680e6c262969fbd95c1e73cd4b353245da33240804f` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DerivationLieLieNamespacedSourceEdition2.lean/declarations/instance.md) | 41 | `declaration-track:4f3a0eb332196b2a7870c33759d9c087c24541164c72ad17c508c0176821b6ce` |
+| 2 | `theorem` | [commutator_coe_linear_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DerivationLieLieNamespacedSourceEdition2.lean/declarations/commutator-coe-linear-map.md) | 49 | `result-track:627fa83372ad9d22ec200c3b0576447508446679256c3e47c04ed0f09ec6a96f` |
+| 3 | `theorem` | [commutator_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DerivationLieLieNamespacedSourceEdition2.lean/declarations/commutator-apply.md) | 53 | `result-track:fc89432b54b39e7f7ff46aff52ccf83abcc5e6a45b51c342ce9edb3162fc281d` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DerivationLieLieNamespacedSourceEdition2.lean/declarations/instance-source-edition-2.md) | 57 | `declaration-track:c4423ef38f99d8569d5c57892b5c4501b97c83277bc8a64e97adf6132c301358` |
+| 5 | `instance` | [instLieAlgebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DerivationLieLieNamespacedSourceEdition2.lean/declarations/instliealgebra.md) | 63 | `declaration-track:e22cea9766b2ab634bb83680e6c262969fbd95c1e73cd4b353245da33240804f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

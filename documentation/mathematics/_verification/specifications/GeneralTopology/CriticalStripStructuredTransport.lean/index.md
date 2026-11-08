@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/CriticalStripStructuredTransport.lean/index.md) · [Full source](../../../../GeneralTopology/CriticalStripStructuredTransport.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CriticalStripStructuredTransport.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CriticalStripStructuredTransport.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripVerticalPath`](../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CriticalStripVerticalPath.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripVerticalPath`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CriticalStripVerticalPath.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [NonvacuousHolomorphicChartMap](../../../../GeneralTopology/CriticalStripStructuredTransport.lean/declarations/nonvacuousholomorphicchartmap.md) | 32 | `declaration-track:7c70d07b2c70f5de270fb0ca490a090eda10f04351697f28c065bb474ec18d26` |
-| 2 | `structure` | [PreservedHomotopyInvariant](../../../../GeneralTopology/CriticalStripStructuredTransport.lean/declarations/preservedhomotopyinvariant.md) | 43 | `declaration-track:a2500566ab1617420075285ddd6f68976d2f8a8b682247149d6194194053a573` |
-| 3 | `theorem` | [at_topological_endpoint](../../../../GeneralTopology/CriticalStripStructuredTransport.lean/declarations/at-topological-endpoint.md) | 54 | `result-track:11ccf44ff9b19bd45aa9afa5b44269be38dd7273e91b01ffea538eacca5b5591` |
-| 4 | `theorem` | [at_comparison_endpoint](../../../../GeneralTopology/CriticalStripStructuredTransport.lean/declarations/at-comparison-endpoint.md) | 62 | `result-track:6ec0aa7809789bccbb5f12e5624a7a91c007d2dc160c5df781c5cc5a6c9ba99a` |
-| 5 | `structure` | [NoncoerciveAtlasTransport](../../../../GeneralTopology/CriticalStripStructuredTransport.lean/declarations/noncoerciveatlastransport.md) | 76 | `declaration-track:62eada13235dde6463207c9f8b2763b6a5646c3fd0ec361581f2a9bb3e0c04c2` |
-| 6 | `theorem` | [endpoint_analytic_coordinates_eq](../../../../GeneralTopology/CriticalStripStructuredTransport.lean/declarations/endpoint-analytic-coordinates-eq.md) | 157 | `result-track:198bc7a87247753dd19cf8955717465a33edafa9330dbcf8d16a798824cfbab5` |
-| 7 | `theorem` | [endpoint_root_heights_eq](../../../../GeneralTopology/CriticalStripStructuredTransport.lean/declarations/endpoint-root-heights-eq.md) | 172 | `result-track:9c6f01b72dca32a4afa57fee111a31c871b336475c5d9747f6e6b0ad1ee7b4af` |
-| 8 | `def` | [toSourceBoundVerticalStep](../../../../GeneralTopology/CriticalStripStructuredTransport.lean/declarations/tosourceboundverticalstep.md) | 190 | `declaration-track:a77af412fe9bff6e4597e24067506de5d89dc1a77d33d31be05d06f42bf86cca` |
+| 1 | `structure` | [NonvacuousHolomorphicChartMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CriticalStripStructuredTransport.lean/declarations/nonvacuousholomorphicchartmap.md) | 32 | `declaration-track:7c70d07b2c70f5de270fb0ca490a090eda10f04351697f28c065bb474ec18d26` |
+| 2 | `structure` | [PreservedHomotopyInvariant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CriticalStripStructuredTransport.lean/declarations/preservedhomotopyinvariant.md) | 43 | `declaration-track:a2500566ab1617420075285ddd6f68976d2f8a8b682247149d6194194053a573` |
+| 3 | `theorem` | [at_topological_endpoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CriticalStripStructuredTransport.lean/declarations/at-topological-endpoint.md) | 54 | `result-track:11ccf44ff9b19bd45aa9afa5b44269be38dd7273e91b01ffea538eacca5b5591` |
+| 4 | `theorem` | [at_comparison_endpoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CriticalStripStructuredTransport.lean/declarations/at-comparison-endpoint.md) | 62 | `result-track:6ec0aa7809789bccbb5f12e5624a7a91c007d2dc160c5df781c5cc5a6c9ba99a` |
+| 5 | `structure` | [NoncoerciveAtlasTransport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CriticalStripStructuredTransport.lean/declarations/noncoerciveatlastransport.md) | 76 | `declaration-track:62eada13235dde6463207c9f8b2763b6a5646c3fd0ec361581f2a9bb3e0c04c2` |
+| 6 | `theorem` | [endpoint_analytic_coordinates_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CriticalStripStructuredTransport.lean/declarations/endpoint-analytic-coordinates-eq.md) | 157 | `result-track:198bc7a87247753dd19cf8955717465a33edafa9330dbcf8d16a798824cfbab5` |
+| 7 | `theorem` | [endpoint_root_heights_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CriticalStripStructuredTransport.lean/declarations/endpoint-root-heights-eq.md) | 172 | `result-track:9c6f01b72dca32a4afa57fee111a31c871b336475c5d9747f6e6b0ad1ee7b4af` |
+| 8 | `def` | [toSourceBoundVerticalStep](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CriticalStripStructuredTransport.lean/declarations/tosourceboundverticalstep.md) | 190 | `declaration-track:a77af412fe9bff6e4597e24067506de5d89dc1a77d33d31be05d06f42bf86cca` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

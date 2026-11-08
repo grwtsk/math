@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/FinSumExpand.lean/index.md) · [Full source](../../../../Combinatorics/FinSumExpand.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FinSumExpand.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FinSumExpand.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -64,8 +64,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `macro` | [(anonymous)](../../../../Combinatorics/FinSumExpand.lean/declarations/macro-source-edition-2.md) | 35 | `declaration-track:76cb1b22fc42fb02ae84a7a8537cadf5ede5a1ca3580d65057b872d0036c7630` |
-| 2 | `macro` | [(anonymous)](../../../../Combinatorics/FinSumExpand.lean/declarations/macro.md) | 53 | `declaration-track:643f223a46bd43f82d5d4d14300185ca982fbc35c687fa3f1afe604053dbd09e` |
+| 1 | `macro` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FinSumExpand.lean/declarations/macro-source-edition-2.md) | 35 | `declaration-track:76cb1b22fc42fb02ae84a7a8537cadf5ede5a1ca3580d65057b872d0036c7630` |
+| 2 | `macro` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FinSumExpand.lean/declarations/macro.md) | 53 | `declaration-track:643f223a46bd43f82d5d4d14300185ca982fbc35c687fa3f1afe604053dbd09e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

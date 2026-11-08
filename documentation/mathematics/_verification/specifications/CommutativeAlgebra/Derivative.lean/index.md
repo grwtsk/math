@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/Derivative.lean/index.md) · [Full source](../../../../CommutativeAlgebra/Derivative.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Derivative.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Derivative.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [derivative_cubic](../../../../CommutativeAlgebra/Derivative.lean/declarations/derivative-cubic.md) | 14 | `result-track:811c5c16a86370b7ee68e061b4f14aa995bdc950e6080cac27c9186390eabc8e` |
+| 1 | `theorem` | [derivative_cubic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Derivative.lean/declarations/derivative-cubic.md) | 14 | `result-track:811c5c16a86370b7ee68e061b4f14aa995bdc950e6080cac27c9186390eabc8e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TensorFixedPointContractNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TensorFixedPointContractNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TensorFixedPointContractNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TensorFixedPointContractNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [tensor_fixed_point_exists](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TensorFixedPointContractNamespaced.lean/declarations/tensor-fixed-point-exists.md) | 28 | `result-track:e30777e5ba27ce0e60c4b36de002aa2d0d5cf3a63b7435f7522f21d6312e7f75` |
-| 2 | `theorem` | [tensor_fixed_point_horizontal](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TensorFixedPointContractNamespaced.lean/declarations/tensor-fixed-point-horizontal.md) | 38 | `result-track:225e5e67bd1d306dc55cecc6319ce6bdf6509f3377c0c3b60b45d844c8cc9a42` |
-| 3 | `theorem` | [tensor_fixed_point_fixed](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TensorFixedPointContractNamespaced.lean/declarations/tensor-fixed-point-fixed.md) | 49 | `result-track:3787a6954c683731dd62fc56d7417aa2d9b0ffdbb86cd5b82fae513d72f22f33` |
+| 1 | `theorem` | [tensor_fixed_point_exists](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TensorFixedPointContractNamespaced.lean/declarations/tensor-fixed-point-exists.md) | 28 | `result-track:e30777e5ba27ce0e60c4b36de002aa2d0d5cf3a63b7435f7522f21d6312e7f75` |
+| 2 | `theorem` | [tensor_fixed_point_horizontal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TensorFixedPointContractNamespaced.lean/declarations/tensor-fixed-point-horizontal.md) | 38 | `result-track:225e5e67bd1d306dc55cecc6319ce6bdf6509f3377c0c3b60b45d844c8cc9a42` |
+| 3 | `theorem` | [tensor_fixed_point_fixed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TensorFixedPointContractNamespaced.lean/declarations/tensor-fixed-point-fixed.md) | 49 | `result-track:3787a6954c683731dd62fc56d7417aa2d9b0ffdbb86cd5b82fae513d72f22f33` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

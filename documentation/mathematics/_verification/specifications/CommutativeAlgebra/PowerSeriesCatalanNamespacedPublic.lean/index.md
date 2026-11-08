@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/PowerSeriesCatalanNamespacedPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/PowerSeriesCatalanNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PowerSeriesCatalanNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PowerSeriesCatalanNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [catalanSeries](../../../../CommutativeAlgebra/PowerSeriesCatalanNamespacedPublic.lean/declarations/catalanseries.md) | 44 | `declaration-track:e90558d38db798b29a75003926a792dc08d7d42e9fa73b867c6d696804469e80` |
-| 2 | `lemma` | [catalanSeries_coeff](../../../../CommutativeAlgebra/PowerSeriesCatalanNamespacedPublic.lean/declarations/catalanseries-coeff.md) | 47 | `result-track:ad431bf31db698407ee80e66f07dbad86325f649378076187399a186d4bec054` |
-| 3 | `lemma` | [catalanSeries_constantCoeff](../../../../CommutativeAlgebra/PowerSeriesCatalanNamespacedPublic.lean/declarations/catalanseries-constantcoeff.md) | 51 | `result-track:d838ea3ecbce1a02b8be1d9224065464c1f4e3f06ad48950499a81a252514920` |
-| 4 | `theorem` | [catalanSeries_sq_mul_X_add_one](../../../../CommutativeAlgebra/PowerSeriesCatalanNamespacedPublic.lean/declarations/catalanseries-sq-mul-x-add-one.md) | 55 | `result-track:a8bf1889c26b4b4b58dc85b14236ca440eb926fa1890bd5d689d04ad60458c4e` |
+| 1 | `def` | [catalanSeries](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PowerSeriesCatalanNamespacedPublic.lean/declarations/catalanseries.md) | 44 | `declaration-track:e90558d38db798b29a75003926a792dc08d7d42e9fa73b867c6d696804469e80` |
+| 2 | `lemma` | [catalanSeries_coeff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PowerSeriesCatalanNamespacedPublic.lean/declarations/catalanseries-coeff.md) | 47 | `result-track:ad431bf31db698407ee80e66f07dbad86325f649378076187399a186d4bec054` |
+| 3 | `lemma` | [catalanSeries_constantCoeff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PowerSeriesCatalanNamespacedPublic.lean/declarations/catalanseries-constantcoeff.md) | 51 | `result-track:d838ea3ecbce1a02b8be1d9224065464c1f4e3f06ad48950499a81a252514920` |
+| 4 | `theorem` | [catalanSeries_sq_mul_X_add_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PowerSeriesCatalanNamespacedPublic.lean/declarations/catalanseries-sq-mul-x-add-one.md) | 55 | `result-track:a8bf1889c26b4b4b58dc85b14236ca440eb926fa1890bd5d689d04ad60458c4e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

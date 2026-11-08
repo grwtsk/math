@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/ParseCommandPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/ParseCommandPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/ParseCommandPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/ParseCommandPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [captureException](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/ParseCommandPublic.lean/declarations/captureexception.md) | 28 | `declaration-track:609d38c0f3a1b94a864f91365e4ad76132c9d5d64c5c42d53fb0ea44cf1a6868` |
-| 2 | `def` | [parseAsTacticSeq](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/ParseCommandPublic.lean/declarations/parseastacticseq.md) | 41 | `declaration-track:f19bece27624c6dd795cd08f69677684c83a5cc7a8e0a8d641d5cd0614f0cfa5` |
-| 3 | `syntax` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/ParseCommandPublic.lean/declarations/syntax.md) | 68 | `declaration-track:b65449292bd13ceac16c1d683601f56bc0c4283c2c1b9cc029016b6e35c96f45` |
-| 4 | `elab_rules` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/ParseCommandPublic.lean/declarations/elab-rules.md) | 71 | `declaration-track:e80fe6fd6af70396364dc3012a73b9dc5a628a4e680ac4c0948f8e520d9c1866` |
+| 1 | `def` | [captureException](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/ParseCommandPublic.lean/declarations/captureexception.md) | 28 | `declaration-track:609d38c0f3a1b94a864f91365e4ad76132c9d5d64c5c42d53fb0ea44cf1a6868` |
+| 2 | `def` | [parseAsTacticSeq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/ParseCommandPublic.lean/declarations/parseastacticseq.md) | 41 | `declaration-track:f19bece27624c6dd795cd08f69677684c83a5cc7a8e0a8d641d5cd0614f0cfa5` |
+| 3 | `syntax` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/ParseCommandPublic.lean/declarations/syntax.md) | 68 | `declaration-track:b65449292bd13ceac16c1d683601f56bc0c4283c2c1b9cc029016b6e35c96f45` |
+| 4 | `elab_rules` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/ParseCommandPublic.lean/declarations/elab-rules.md) | 71 | `declaration-track:e80fe6fd6af70396364dc3012a73b9dc5a628a4e680ac4c0948f8e520d9c1866` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

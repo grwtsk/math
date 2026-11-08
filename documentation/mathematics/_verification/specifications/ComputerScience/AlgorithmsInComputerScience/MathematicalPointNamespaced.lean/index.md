@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/MathematicalPointNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/MathematicalPointNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MathematicalPointNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MathematicalPointNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,14 +62,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FormalTypeReference](../../../../../ComputerScience/AlgorithmsInComputerScience/MathematicalPointNamespaced.lean/declarations/formaltypereference.md) | 27 | `declaration-track:29c460dd4df196b24ebf16af0242bc527e1e7d81aa9187ece8da25cf866406f2` |
-| 2 | `structure` | [RhetoricalRoleReference](../../../../../ComputerScience/AlgorithmsInComputerScience/MathematicalPointNamespaced.lean/declarations/rhetoricalrolereference.md) | 32 | `declaration-track:62bd41cc3ad5658bdf40e55bcc7f565b440d2379104a5324d1c408660c071daa` |
-| 3 | `structure` | [ProjectRelativeName](../../../../../ComputerScience/AlgorithmsInComputerScience/MathematicalPointNamespaced.lean/declarations/projectrelativename.md) | 37 | `declaration-track:52cb4f8f53dac19cd2d9f57694eeb6f5cf80c8d1be12a9661263bfdd9281acb7` |
-| 4 | `structure` | [StabilityRecord](../../../../../ComputerScience/AlgorithmsInComputerScience/MathematicalPointNamespaced.lean/declarations/stabilityrecord.md) | 43 | `declaration-track:ecf1d94280a6bf56944eb644f73e9b546a2c4f2c32987166decacd4850f66a13` |
-| 5 | `structure` | [MathematicalPoint](../../../../../ComputerScience/AlgorithmsInComputerScience/MathematicalPointNamespaced.lean/declarations/mathematicalpoint.md) | 51 | `declaration-track:3569e4dbec23464e4003ef388aae95978ff8d1d929a0eb69e281d40b8fcc9a1c` |
-| 6 | `def` | [SameIdentity](../../../../../ComputerScience/AlgorithmsInComputerScience/MathematicalPointNamespaced.lean/declarations/sameidentity.md) | 80 | `declaration-track:e8c2e2539c3ba161f411da6a9d2dd397c0dd14474e2dc33273f701108390f978` |
-| 7 | `theorem` | [sameIdentity_of_pointId_eq](../../../../../ComputerScience/AlgorithmsInComputerScience/MathematicalPointNamespaced.lean/declarations/sameidentity-of-pointid-eq.md) | 84 | `result-track:a1eb9e53da86959212b612c311aaa5fe30abedc4cec09d3ed868380c2db4654b` |
-| 8 | `theorem` | [has_source](../../../../../ComputerScience/AlgorithmsInComputerScience/MathematicalPointNamespaced.lean/declarations/has-source.md) | 91 | `result-track:d5b4b6379f8fea0c14a58fdab2979151cfbb0aecc7cd5d350e12681dd7de9186` |
+| 1 | `structure` | [FormalTypeReference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MathematicalPointNamespaced.lean/declarations/formaltypereference.md) | 27 | `declaration-track:29c460dd4df196b24ebf16af0242bc527e1e7d81aa9187ece8da25cf866406f2` |
+| 2 | `structure` | [RhetoricalRoleReference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MathematicalPointNamespaced.lean/declarations/rhetoricalrolereference.md) | 32 | `declaration-track:62bd41cc3ad5658bdf40e55bcc7f565b440d2379104a5324d1c408660c071daa` |
+| 3 | `structure` | [ProjectRelativeName](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MathematicalPointNamespaced.lean/declarations/projectrelativename.md) | 37 | `declaration-track:52cb4f8f53dac19cd2d9f57694eeb6f5cf80c8d1be12a9661263bfdd9281acb7` |
+| 4 | `structure` | [StabilityRecord](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MathematicalPointNamespaced.lean/declarations/stabilityrecord.md) | 43 | `declaration-track:ecf1d94280a6bf56944eb644f73e9b546a2c4f2c32987166decacd4850f66a13` |
+| 5 | `structure` | [MathematicalPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MathematicalPointNamespaced.lean/declarations/mathematicalpoint.md) | 51 | `declaration-track:3569e4dbec23464e4003ef388aae95978ff8d1d929a0eb69e281d40b8fcc9a1c` |
+| 6 | `def` | [SameIdentity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MathematicalPointNamespaced.lean/declarations/sameidentity.md) | 80 | `declaration-track:e8c2e2539c3ba161f411da6a9d2dd397c0dd14474e2dc33273f701108390f978` |
+| 7 | `theorem` | [sameIdentity_of_pointId_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MathematicalPointNamespaced.lean/declarations/sameidentity-of-pointid-eq.md) | 84 | `result-track:a1eb9e53da86959212b612c311aaa5fe30abedc4cec09d3ed868380c2db4654b` |
+| 8 | `theorem` | [has_source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MathematicalPointNamespaced.lean/declarations/has-source.md) | 91 | `result-track:d5b4b6379f8fea0c14a58fdab2979151cfbb0aecc7cd5d350e12681dd7de9186` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

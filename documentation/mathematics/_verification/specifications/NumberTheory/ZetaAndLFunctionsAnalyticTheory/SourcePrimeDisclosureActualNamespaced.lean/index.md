@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourcePrimeDisclosureActualNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourcePrimeDisclosureActualNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourcePrimeDisclosureActualNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourcePrimeDisclosureActualNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [centeredDisclosure_eq_actual_centeredBeta](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourcePrimeDisclosureActualNamespaced.lean/declarations/centereddisclosure-eq-actual-centeredbeta.md) | 35 | `result-track:69be4d74af5f618cd07860544b42764a312c649ee226a62fff2985b4ba190c9c` |
-| 2 | `theorem` | [disclosureSource_eq_actual_centeredForwardAt](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourcePrimeDisclosureActualNamespaced.lean/declarations/disclosuresource-eq-actual-centeredforwardat.md) | 42 | `result-track:aac698510afabf59b5b691d8a126beceea84491f93dcab0a84439520434af79b` |
-| 3 | `theorem` | [actual_centeredForwardAt_fresh_prime](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourcePrimeDisclosureActualNamespaced.lean/declarations/actual-centeredforwardat-fresh-prime.md) | 58 | `result-track:827e230fefbe5df8fd01e110a099991fa5ca45364f27f15325c5e1799b545b1f` |
-| 4 | `theorem` | [physicalDiagonal_eq_actual_centeredDiagonalAt](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourcePrimeDisclosureActualNamespaced.lean/declarations/physicaldiagonal-eq-actual-centereddiagonalat.md) | 75 | `result-track:31be565bf83594b55c8085f8c5133eda931e0a5557598545ac2334733ddeb845` |
-| 5 | `theorem` | [compensatedReadout_eq_actual_readoutAt](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourcePrimeDisclosureActualNamespaced.lean/declarations/compensatedreadout-eq-actual-readoutat.md) | 83 | `result-track:75b61ab5e4134fb204cd5c3b3f1baa72fea964480b1db694807efab729dd3050` |
+| 1 | `theorem` | [centeredDisclosure_eq_actual_centeredBeta](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourcePrimeDisclosureActualNamespaced.lean/declarations/centereddisclosure-eq-actual-centeredbeta.md) | 35 | `result-track:69be4d74af5f618cd07860544b42764a312c649ee226a62fff2985b4ba190c9c` |
+| 2 | `theorem` | [disclosureSource_eq_actual_centeredForwardAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourcePrimeDisclosureActualNamespaced.lean/declarations/disclosuresource-eq-actual-centeredforwardat.md) | 42 | `result-track:aac698510afabf59b5b691d8a126beceea84491f93dcab0a84439520434af79b` |
+| 3 | `theorem` | [actual_centeredForwardAt_fresh_prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourcePrimeDisclosureActualNamespaced.lean/declarations/actual-centeredforwardat-fresh-prime.md) | 58 | `result-track:827e230fefbe5df8fd01e110a099991fa5ca45364f27f15325c5e1799b545b1f` |
+| 4 | `theorem` | [physicalDiagonal_eq_actual_centeredDiagonalAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourcePrimeDisclosureActualNamespaced.lean/declarations/physicaldiagonal-eq-actual-centereddiagonalat.md) | 75 | `result-track:31be565bf83594b55c8085f8c5133eda931e0a5557598545ac2334733ddeb845` |
+| 5 | `theorem` | [compensatedReadout_eq_actual_readoutAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourcePrimeDisclosureActualNamespaced.lean/declarations/compensatedreadout-eq-actual-readoutat.md) | 83 | `result-track:75b61ab5e4134fb204cd5c3b3f1baa72fea964480b1db694807efab729dd3050` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../IntegralTransformsOperationalCalculus/PositiveScaledGaussianDerivatives.lean/index.md) · [Full source](../../../../IntegralTransformsOperationalCalculus/PositiveScaledGaussianDerivatives.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/PositiveScaledGaussianDerivatives.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/PositiveScaledGaussianDerivatives.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.MellinTransform.ScaledGaussianDerivatives`](../../../../IntegralTransformsOperationalCalculus/MellinTransformScaledGaussianDerivatives.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.Analysis.MellinTransform.ScaledGaussianDerivatives`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/MellinTransformScaledGaussianDerivatives.lean/index.md) — import line 3; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [scaledGaussian_generic](../../../../IntegralTransformsOperationalCalculus/PositiveScaledGaussianDerivatives.lean/declarations/scaledgaussian-generic.md) | 10 | `result-track:a060b70f94aff5068fd7d2aa67261803a7ac2c7ef52c9169209917e66f065117` |
-| 2 | `theorem` | [scaledGaussian_first_derivative](../../../../IntegralTransformsOperationalCalculus/PositiveScaledGaussianDerivatives.lean/declarations/scaledgaussian-first-derivative.md) | 15 | `result-track:bad204292a3572f5276f0ff0e38efae54f1466bce0623e9cf3fb2273b34f36b8` |
-| 3 | `theorem` | [gaussianMellinProfile_zero_eq_coefficient](../../../../IntegralTransformsOperationalCalculus/PositiveScaledGaussianDerivatives.lean/declarations/gaussianmellinprofile-zero-eq-coefficient.md) | 23 | `result-track:435c3f3c3f971228eb9f0b9303cbf9ea22bfe1ef40857ba301b30f9c768a23d7` |
-| 4 | `theorem` | [gaussianMellinProfile_zero_ne_zero](../../../../IntegralTransformsOperationalCalculus/PositiveScaledGaussianDerivatives.lean/declarations/gaussianmellinprofile-zero-ne-zero.md) | 27 | `result-track:37781bcb516e157222a8e11e88322f81dbd4acfd97e5a22995e469cfe80c5e5d` |
-| 5 | `theorem` | [scaledGaussian_zero_no_uniform_bound](../../../../IntegralTransformsOperationalCalculus/PositiveScaledGaussianDerivatives.lean/declarations/scaledgaussian-zero-no-uniform-bound.md) | 36 | `result-track:9a58be7580623fa7e10490c85a68bc3cb47267cde614a8e99216ffa5fded4e55` |
+| 1 | `theorem` | [scaledGaussian_generic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/PositiveScaledGaussianDerivatives.lean/declarations/scaledgaussian-generic.md) | 10 | `result-track:a060b70f94aff5068fd7d2aa67261803a7ac2c7ef52c9169209917e66f065117` |
+| 2 | `theorem` | [scaledGaussian_first_derivative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/PositiveScaledGaussianDerivatives.lean/declarations/scaledgaussian-first-derivative.md) | 15 | `result-track:bad204292a3572f5276f0ff0e38efae54f1466bce0623e9cf3fb2273b34f36b8` |
+| 3 | `theorem` | [gaussianMellinProfile_zero_eq_coefficient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/PositiveScaledGaussianDerivatives.lean/declarations/gaussianmellinprofile-zero-eq-coefficient.md) | 23 | `result-track:435c3f3c3f971228eb9f0b9303cbf9ea22bfe1ef40857ba301b30f9c768a23d7` |
+| 4 | `theorem` | [gaussianMellinProfile_zero_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/PositiveScaledGaussianDerivatives.lean/declarations/gaussianmellinprofile-zero-ne-zero.md) | 27 | `result-track:37781bcb516e157222a8e11e88322f81dbd4acfd97e5a22995e469cfe80c5e5d` |
+| 5 | `theorem` | [scaledGaussian_zero_no_uniform_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/PositiveScaledGaussianDerivatives.lean/declarations/scaledgaussian-zero-no-uniform-bound.md) | 36 | `result-track:9a58be7580623fa7e10490c85a68bc3cb47267cde614a8e99216ffa5fded4e55` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

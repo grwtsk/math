@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedCoordinateAdjointsAndQuantitativeCertificateTargets.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedCoordinateAdjointsAndQuantitativeCertificateTargets.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedCoordinateAdjointsAndQuantitativeCertificateTargets.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedCoordinateAdjointsAndQuantitativeCertificateTargets.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [weightedAdjoint](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedCoordinateAdjointsAndQuantitativeCertificateTargets.lean/declarations/weightedadjoint.md) | 24 | `declaration-track:801fdf0918788dcbcfb0055168b0aa4418b666188f5b2ea5817be1184494e33d` |
-| 2 | `theorem` | [metric_pullback_identity](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedCoordinateAdjointsAndQuantitativeCertificateTargets.lean/declarations/metric-pullback-identity.md) | 28 | `result-track:745b405842d75223ff44511ac061e54e01e64c274ceea1ab7c3cc88d29c2b28a` |
-| 3 | `theorem` | [quadratic_congruence](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedCoordinateAdjointsAndQuantitativeCertificateTargets.lean/declarations/quadratic-congruence.md) | 36 | `result-track:b062f85b52b8e8602efbcb271063c5fb25310d75ecdf49cd47c7f2a87c271b1d` |
-| 4 | `theorem` | [weighted_coercivity](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedCoordinateAdjointsAndQuantitativeCertificateTargets.lean/declarations/weighted-coercivity.md) | 44 | `result-track:b3ad7b6cd419cc3d68fcb04ef12a43a394b80ee0739a9ed8dd9cf2b8d1e0d425` |
-| 5 | `theorem` | [certificate_gap](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedCoordinateAdjointsAndQuantitativeCertificateTargets.lean/declarations/certificate-gap.md) | 68 | `result-track:7a7527747ce8cead98c628d9ff6f17a24ea4497e5d530a8ab2656fde3354e7bb` |
+| 1 | `def` | [weightedAdjoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedCoordinateAdjointsAndQuantitativeCertificateTargets.lean/declarations/weightedadjoint.md) | 24 | `declaration-track:801fdf0918788dcbcfb0055168b0aa4418b666188f5b2ea5817be1184494e33d` |
+| 2 | `theorem` | [metric_pullback_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedCoordinateAdjointsAndQuantitativeCertificateTargets.lean/declarations/metric-pullback-identity.md) | 28 | `result-track:745b405842d75223ff44511ac061e54e01e64c274ceea1ab7c3cc88d29c2b28a` |
+| 3 | `theorem` | [quadratic_congruence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedCoordinateAdjointsAndQuantitativeCertificateTargets.lean/declarations/quadratic-congruence.md) | 36 | `result-track:b062f85b52b8e8602efbcb271063c5fb25310d75ecdf49cd47c7f2a87c271b1d` |
+| 4 | `theorem` | [weighted_coercivity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedCoordinateAdjointsAndQuantitativeCertificateTargets.lean/declarations/weighted-coercivity.md) | 44 | `result-track:b3ad7b6cd419cc3d68fcb04ef12a43a394b80ee0739a9ed8dd9cf2b8d1e0d425` |
+| 5 | `theorem` | [certificate_gap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedCoordinateAdjointsAndQuantitativeCertificateTargets.lean/declarations/certificate-gap.md) | 68 | `result-track:7a7527747ce8cead98c628d9ff6f17a24ea4497e5d530a8ab2656fde3354e7bb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

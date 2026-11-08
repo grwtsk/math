@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/Certificate.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/Certificate.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/Certificate.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/Certificate.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [BoundaryKind](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/Certificate.lean/declarations/boundarykind.md) | 28 | `declaration-track:8c9ba50f2e2eb4bafa6fb8525c2cc51646a1e2d2028d01b8bb0385d63ae8f05f` |
-| 2 | `structure` | [Certificate](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/Certificate.lean/declarations/certificate.md) | 87 | `declaration-track:d0d1a1d5476b4aeee41b2fbf3487d53be45a553ba3ea86014b776c4646ca82fb` |
-| 3 | `theorem` | [certificate_sound](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/Certificate.lean/declarations/certificate-sound.md) | 95 | `result-track:f47ac8ad1c152a8f83ea1a6b40c844b78d647fc584430c176453773801bbca4b` |
-| 4 | `def` | [CertificateIsUnderlyingObject](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/Certificate.lean/declarations/certificateisunderlyingobject.md) | 104 | `declaration-track:e125447a9bdeee3327bcc9af2b990d89f3042c568375a208e484ca7788526b1a` |
-| 5 | `theorem` | [certificate_not_underlying_object](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/Certificate.lean/declarations/certificate-not-underlying-object.md) | 109 | `result-track:32978f2b0f45331634135d4c86bc6ea477c86f77cd811460bfbd5c3c510a8d04` |
+| 1 | `inductive` | [BoundaryKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/Certificate.lean/declarations/boundarykind.md) | 28 | `declaration-track:8c9ba50f2e2eb4bafa6fb8525c2cc51646a1e2d2028d01b8bb0385d63ae8f05f` |
+| 2 | `structure` | [Certificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/Certificate.lean/declarations/certificate.md) | 87 | `declaration-track:d0d1a1d5476b4aeee41b2fbf3487d53be45a553ba3ea86014b776c4646ca82fb` |
+| 3 | `theorem` | [certificate_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/Certificate.lean/declarations/certificate-sound.md) | 95 | `result-track:f47ac8ad1c152a8f83ea1a6b40c844b78d647fc584430c176453773801bbca4b` |
+| 4 | `def` | [CertificateIsUnderlyingObject](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/Certificate.lean/declarations/certificateisunderlyingobject.md) | 104 | `declaration-track:e125447a9bdeee3327bcc9af2b990d89f3042c568375a208e484ca7788526b1a` |
+| 5 | `theorem` | [certificate_not_underlying_object](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/Certificate.lean/declarations/certificate-not-underlying-object.md) | 109 | `result-track:32978f2b0f45331634135d4c86bc6ea477c86f77cd811460bfbd5c3c510a8d04` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

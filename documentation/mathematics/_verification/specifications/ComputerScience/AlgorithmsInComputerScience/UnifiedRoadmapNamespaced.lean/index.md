@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/UnifiedRoadmapNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/UnifiedRoadmapNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/UnifiedRoadmapNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/UnifiedRoadmapNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,9 +62,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RoadmapEntry](../../../../../ComputerScience/AlgorithmsInComputerScience/UnifiedRoadmapNamespaced.lean/declarations/roadmapentry.md) | 41 | `declaration-track:3ebe3654380d16c45da64fab50df2fe21d3bb164ea657121424f43839ec55f10` |
-| 2 | `def` | [unifiedRoadmap](../../../../../ComputerScience/AlgorithmsInComputerScience/UnifiedRoadmapNamespaced.lean/declarations/unifiedroadmap.md) | 47 | `declaration-track:ddc87c499887adc0430c6575d85201a4503f251c956f02df5ca26bf6adb1540f` |
-| 3 | `theorem` | [unified_roadmap_nonempty](../../../../../ComputerScience/AlgorithmsInComputerScience/UnifiedRoadmapNamespaced.lean/declarations/unified-roadmap-nonempty.md) | 74 | `result-track:2987b661f7dc10bb55baaaff28a0e3b6b89bcb324354e8aa8ab85a1381b69e9b` |
+| 1 | `structure` | [RoadmapEntry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/UnifiedRoadmapNamespaced.lean/declarations/roadmapentry.md) | 41 | `declaration-track:3ebe3654380d16c45da64fab50df2fe21d3bb164ea657121424f43839ec55f10` |
+| 2 | `def` | [unifiedRoadmap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/UnifiedRoadmapNamespaced.lean/declarations/unifiedroadmap.md) | 47 | `declaration-track:ddc87c499887adc0430c6575d85201a4503f251c956f02df5ca26bf6adb1540f` |
+| 3 | `theorem` | [unified_roadmap_nonempty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/UnifiedRoadmapNamespaced.lean/declarations/unified-roadmap-nonempty.md) | 74 | `result-track:2987b661f7dc10bb55baaaff28a0e3b6b89bcb324354e8aa8ab85a1381b69e9b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

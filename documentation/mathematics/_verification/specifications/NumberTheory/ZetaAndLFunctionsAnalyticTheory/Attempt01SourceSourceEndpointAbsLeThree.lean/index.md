@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt01SourceSourceEndpointAbsLeThree.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt01SourceSourceEndpointAbsLeThree.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt01SourceSourceEndpointAbsLeThree.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt01SourceSourceEndpointAbsLeThree.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sourceEndpoint_abs_le_three](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt01SourceSourceEndpointAbsLeThree.lean/declarations/sourceendpoint-abs-le-three.md) | 20 | `result-track:b43f9d4671ba16d72df769fc9895d52c79fbb4a1b644f8fc719071db61f55edf` |
-| 2 | `theorem` | [residual_upper_of_actualTriangular_upper](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt01SourceSourceEndpointAbsLeThree.lean/declarations/residual-upper-of-actualtriangular-upper.md) | 25 | `result-track:59ecfacdf3857a78afdc4992fb7afff9df363356108293a83db490a6d32836af` |
-| 3 | `theorem` | [residual_tail_of_actualTriangular_tail](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt01SourceSourceEndpointAbsLeThree.lean/declarations/residual-tail-of-actualtriangular-tail.md) | 38 | `result-track:e3cf405de8c15f49e473c3c1cc4bf9604539972e5d606e747e7b8fe1124c26fc` |
-| 4 | `theorem` | [estimate_of_actualTriangular_tail](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt01SourceSourceEndpointAbsLeThree.lean/declarations/estimate-of-actualtriangular-tail.md) | 49 | `result-track:53261c1ec79836e956089d17cd6d76fc7ee3b9878aad82d72d069125fc961f18` |
+| 1 | `theorem` | [sourceEndpoint_abs_le_three](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt01SourceSourceEndpointAbsLeThree.lean/declarations/sourceendpoint-abs-le-three.md) | 20 | `result-track:b43f9d4671ba16d72df769fc9895d52c79fbb4a1b644f8fc719071db61f55edf` |
+| 2 | `theorem` | [residual_upper_of_actualTriangular_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt01SourceSourceEndpointAbsLeThree.lean/declarations/residual-upper-of-actualtriangular-upper.md) | 25 | `result-track:59ecfacdf3857a78afdc4992fb7afff9df363356108293a83db490a6d32836af` |
+| 3 | `theorem` | [residual_tail_of_actualTriangular_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt01SourceSourceEndpointAbsLeThree.lean/declarations/residual-tail-of-actualtriangular-tail.md) | 38 | `result-track:e3cf405de8c15f49e473c3c1cc4bf9604539972e5d606e747e7b8fe1124c26fc` |
+| 4 | `theorem` | [estimate_of_actualTriangular_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt01SourceSourceEndpointAbsLeThree.lean/declarations/estimate-of-actualtriangular-tail.md) | 49 | `result-track:53261c1ec79836e956089d17cd6d76fc7ee3b9878aad82d72d069125fc961f18` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

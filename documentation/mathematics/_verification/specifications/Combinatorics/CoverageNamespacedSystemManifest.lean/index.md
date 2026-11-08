@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/CoverageNamespacedSystemManifest.lean/index.md) · [Full source](../../../../Combinatorics/CoverageNamespacedSystemManifest.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoverageNamespacedSystemManifest.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoverageNamespacedSystemManifest.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SystemManifest](../../../../Combinatorics/CoverageNamespacedSystemManifest.lean/declarations/systemmanifest.md) | 20 | `declaration-track:9bc6db1de734e7c458e77d383c7f8e9dc4bb76ece603af80a238c84b8f6bf59a` |
-| 2 | `inductive` | [CoverageDisposition](../../../../Combinatorics/CoverageNamespacedSystemManifest.lean/declarations/coveragedisposition.md) | 26 | `declaration-track:fd7317ecf76960af58b28269da1001b86c1457d43fcc68f76c9d6e6d58067952` |
-| 3 | `structure` | [CoverageCertificate](../../../../Combinatorics/CoverageNamespacedSystemManifest.lean/declarations/coveragecertificate.md) | 31 | `declaration-track:9024f932d7778122a850ae3d1b9564b0b34894f09a28459cb950324a1f278121` |
-| 4 | `def` | [wholeSystemCovered](../../../../Combinatorics/CoverageNamespacedSystemManifest.lean/declarations/wholesystemcovered.md) | 41 | `declaration-track:d60e64bc5f93c9889fb5b3e610548b567fbb743570fa5a5dc033df0e019d4244` |
-| 5 | `structure` | [WholeSystemClaim](../../../../Combinatorics/CoverageNamespacedSystemManifest.lean/declarations/wholesystemclaim.md) | 45 | `declaration-track:61409a83ee3b99268649e953d341787dc6dee18e81864920022e2438a41069b9` |
-| 6 | `theorem` | [whole_system_claim_requires_coverage](../../../../Combinatorics/CoverageNamespacedSystemManifest.lean/declarations/whole-system-claim-requires-coverage.md) | 49 | `result-track:aad2c452c235c3c2a6d3bd97db552f60ad6a34ff8a039f0e5895d2d3b03a6c7c` |
+| 1 | `structure` | [SystemManifest](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoverageNamespacedSystemManifest.lean/declarations/systemmanifest.md) | 20 | `declaration-track:9bc6db1de734e7c458e77d383c7f8e9dc4bb76ece603af80a238c84b8f6bf59a` |
+| 2 | `inductive` | [CoverageDisposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoverageNamespacedSystemManifest.lean/declarations/coveragedisposition.md) | 26 | `declaration-track:fd7317ecf76960af58b28269da1001b86c1457d43fcc68f76c9d6e6d58067952` |
+| 3 | `structure` | [CoverageCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoverageNamespacedSystemManifest.lean/declarations/coveragecertificate.md) | 31 | `declaration-track:9024f932d7778122a850ae3d1b9564b0b34894f09a28459cb950324a1f278121` |
+| 4 | `def` | [wholeSystemCovered](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoverageNamespacedSystemManifest.lean/declarations/wholesystemcovered.md) | 41 | `declaration-track:d60e64bc5f93c9889fb5b3e610548b567fbb743570fa5a5dc033df0e019d4244` |
+| 5 | `structure` | [WholeSystemClaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoverageNamespacedSystemManifest.lean/declarations/wholesystemclaim.md) | 45 | `declaration-track:61409a83ee3b99268649e953d341787dc6dee18e81864920022e2438a41069b9` |
+| 6 | `theorem` | [whole_system_claim_requires_coverage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoverageNamespacedSystemManifest.lean/declarations/whole-system-claim-requires-coverage.md) | 49 | `result-track:aad2c452c235c3c2a6d3bd97db552f60ad6a34ff8a039f0e5895d2d3b03a6c7c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

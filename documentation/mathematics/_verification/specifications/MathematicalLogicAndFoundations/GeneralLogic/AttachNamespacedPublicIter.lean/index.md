@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AttachNamespacedPublicIter.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AttachNamespacedPublicIter.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AttachNamespacedPublicIter.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AttachNamespacedPublicIter.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Iter.attachWith](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AttachNamespacedPublicIter.lean/declarations/iter-attachwith.md) | 25 | `declaration-track:96f122a5704fb653f1a2e94fa49ff9d3e3fda1d49fb31d0e4750b96323f09b8a` |
+| 1 | `def` | [Iter.attachWith](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AttachNamespacedPublicIter.lean/declarations/iter-attachwith.md) | 25 | `declaration-track:96f122a5704fb653f1a2e94fa49ff9d3e3fda1d49fb31d0e4750b96323f09b8a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

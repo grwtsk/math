@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProvenanceRangeEdition2.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProvenanceRangeEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProvenanceRangeEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProvenanceRangeEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [symmetric_mulVec_mem_range_of_kernel_orthogonal](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProvenanceRangeEdition2.lean/declarations/symmetric-mulvec-mem-range-of-kernel-orthogonal.md) | 31 | `result-track:9e47f04bda7b80789d9575b750de13fcbff8c74d073db5e5c27b81e7f77ca897` |
-| 2 | `theorem` | [compatible_provenanceMatrix_isSymm](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProvenanceRangeEdition2.lean/declarations/compatible-provenancematrix-issymm.md) | 65 | `result-track:8ace639c011c7e9fc133fa20320545fa5581c2082dfa0bfa7e0ef83f36f16d7e` |
-| 3 | `theorem` | [cross_mem_provenance_range](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProvenanceRangeEdition2.lean/declarations/cross-mem-provenance-range.md) | 86 | `result-track:63d96720ec46dcd546f2a81a52ff03ccf109340f0bb244ae53b4de4ed032bcdb` |
-| 4 | `theorem` | [exists_provenance_solution](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProvenanceRangeEdition2.lean/declarations/exists-provenance-solution.md) | 104 | `result-track:d354da5261544facdaa603923263852377d0d33f9440c5c5c78d952d872974e6` |
+| 1 | `theorem` | [symmetric_mulVec_mem_range_of_kernel_orthogonal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProvenanceRangeEdition2.lean/declarations/symmetric-mulvec-mem-range-of-kernel-orthogonal.md) | 31 | `result-track:9e47f04bda7b80789d9575b750de13fcbff8c74d073db5e5c27b81e7f77ca897` |
+| 2 | `theorem` | [compatible_provenanceMatrix_isSymm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProvenanceRangeEdition2.lean/declarations/compatible-provenancematrix-issymm.md) | 65 | `result-track:8ace639c011c7e9fc133fa20320545fa5581c2082dfa0bfa7e0ef83f36f16d7e` |
+| 3 | `theorem` | [cross_mem_provenance_range](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProvenanceRangeEdition2.lean/declarations/cross-mem-provenance-range.md) | 86 | `result-track:63d96720ec46dcd546f2a81a52ff03ccf109340f0bb244ae53b4de4ed032bcdb` |
+| 4 | `theorem` | [exists_provenance_solution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProvenanceRangeEdition2.lean/declarations/exists-provenance-solution.md) | 104 | `result-track:d354da5261544facdaa603923263852377d0d33f9440c5c5c78d952d872974e6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

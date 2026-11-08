@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConstructionsOverBasicPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConstructionsOverBasicPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConstructionsOverBasicPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConstructionsOverBasicPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConstructionsOverBasicPublic.lean/declarations/instance-source-edition-2.md) | 34 | `declaration-track:1ea5abdcd7feb36c9b87b337ba7e0d9f42f0202204af20740b9e0bc272df6c92` |
-| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConstructionsOverBasicPublic.lean/declarations/instance.md) | 37 | `declaration-track:191465998db59745fbe05dc6ddffb5e87f5ca4c3216e80bc143a21043fd817b5` |
-| 3 | `instance` | [hasFiniteLimits](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConstructionsOverBasicPublic.lean/declarations/hasfinitelimits.md) | 39 | `declaration-track:25bc931ddb117245481120cfa395a754b9430c9c073d5ae8966ceecc1c0089ff` |
-| 4 | `instance` | [hasLimits](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConstructionsOverBasicPublic.lean/declarations/haslimits.md) | 44 | `declaration-track:1056044fa1d27322f1ec634cecc10224ea98d9dec89596908bb34b60be773e34` |
-| 5 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConstructionsOverBasicPublic.lean/declarations/instance-source-edition-3.md) | 54 | `declaration-track:3b29e455d5a725b4a930943aff4eabc21bff84fd4eacdd2f2c54ff19cc99b7c4` |
-| 6 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConstructionsOverBasicPublic.lean/declarations/instance-source-edition-4.md) | 58 | `declaration-track:42fba9dc837d3603f7fd40d4c619eb8efb438681050d1cd03c692179c818dc15` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConstructionsOverBasicPublic.lean/declarations/instance-source-edition-2.md) | 34 | `declaration-track:1ea5abdcd7feb36c9b87b337ba7e0d9f42f0202204af20740b9e0bc272df6c92` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConstructionsOverBasicPublic.lean/declarations/instance.md) | 37 | `declaration-track:191465998db59745fbe05dc6ddffb5e87f5ca4c3216e80bc143a21043fd817b5` |
+| 3 | `instance` | [hasFiniteLimits](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConstructionsOverBasicPublic.lean/declarations/hasfinitelimits.md) | 39 | `declaration-track:25bc931ddb117245481120cfa395a754b9430c9c073d5ae8966ceecc1c0089ff` |
+| 4 | `instance` | [hasLimits](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConstructionsOverBasicPublic.lean/declarations/haslimits.md) | 44 | `declaration-track:1056044fa1d27322f1ec634cecc10224ea98d9dec89596908bb34b60be773e34` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConstructionsOverBasicPublic.lean/declarations/instance-source-edition-3.md) | 54 | `declaration-track:3b29e455d5a725b4a930943aff4eabc21bff84fd4eacdd2f2c54ff19cc99b7c4` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConstructionsOverBasicPublic.lean/declarations/instance-source-edition-4.md) | 58 | `declaration-track:42fba9dc837d3603f7fd40d4c619eb8efb438681050d1cd03c692179c818dc15` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

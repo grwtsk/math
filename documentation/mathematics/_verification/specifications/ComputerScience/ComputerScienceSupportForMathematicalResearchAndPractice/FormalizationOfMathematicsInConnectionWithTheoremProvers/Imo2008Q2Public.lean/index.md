@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Imo2008Q2Public.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Imo2008Q2Public.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Imo2008Q2Public.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Imo2008Q2Public.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [subst_abc](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Imo2008Q2Public.lean/declarations/subst-abc.md) | 40 | `result-track:355063f6c621eb18c04aa7b97be82c6e34613327c7f2001d76a32d6a29c93c62` |
-| 2 | `theorem` | [imo2008_q2a](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Imo2008Q2Public.lean/declarations/imo2008-q2a.md) | 49 | `result-track:80bc3a275b277cacd21f455c21b05ebed85fe371b7e9f2dfac9aecb7fd6ca446` |
-| 3 | `def` | [rationalSolutions](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Imo2008Q2Public.lean/declarations/rationalsolutions.md) | 61 | `declaration-track:eb3172cd9668815718ffe776ab14053e086aa33d94fdcb2cb4e734bbb41e5f0c` |
-| 4 | `theorem` | [imo2008_q2b](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Imo2008Q2Public.lean/declarations/imo2008-q2b.md) | 65 | `result-track:f7a59dce2994cf8d443bcf6a689702c05abbc0b16c7898b51f9d14c272c1d364` |
+| 1 | `theorem` | [subst_abc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Imo2008Q2Public.lean/declarations/subst-abc.md) | 40 | `result-track:355063f6c621eb18c04aa7b97be82c6e34613327c7f2001d76a32d6a29c93c62` |
+| 2 | `theorem` | [imo2008_q2a](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Imo2008Q2Public.lean/declarations/imo2008-q2a.md) | 49 | `result-track:80bc3a275b277cacd21f455c21b05ebed85fe371b7e9f2dfac9aecb7fd6ca446` |
+| 3 | `def` | [rationalSolutions](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Imo2008Q2Public.lean/declarations/rationalsolutions.md) | 61 | `declaration-track:eb3172cd9668815718ffe776ab14053e086aa33d94fdcb2cb4e734bbb41e5f0c` |
+| 4 | `theorem` | [imo2008_q2b](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Imo2008Q2Public.lean/declarations/imo2008-q2b.md) | 65 | `result-track:f7a59dce2994cf8d443bcf6a689702c05abbc0b16c7898b51f9d14c272c1d364` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/PrincipalPartPublicEdition2.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/PrincipalPartPublicEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PrincipalPartPublicEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PrincipalPartPublicEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [normalizedResidueCircleIntegral](../../../../FunctionsOfAComplexVariable/PrincipalPartPublicEdition2.lean/declarations/normalizedresiduecircleintegral.md) | 32 | `declaration-track:1423433528386c02e484fa23f0865be8db64a4c784e11fdf9ccafd87c64ad3fe` |
-| 2 | `theorem` | [exists_smallCircle_normalizedIntegral_logDeriv_eq_order](../../../../FunctionsOfAComplexVariable/PrincipalPartPublicEdition2.lean/declarations/exists-smallcircle-normalizedintegral-logderiv-eq-order.md) | 41 | `result-track:f6cc4e5f107491c27c17f691e5047cb1674e0cf14259b63cdb336224ae2ed2c3` |
+| 1 | `def` | [normalizedResidueCircleIntegral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PrincipalPartPublicEdition2.lean/declarations/normalizedresiduecircleintegral.md) | 32 | `declaration-track:1423433528386c02e484fa23f0865be8db64a4c784e11fdf9ccafd87c64ad3fe` |
+| 2 | `theorem` | [exists_smallCircle_normalizedIntegral_logDeriv_eq_order](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PrincipalPartPublicEdition2.lean/declarations/exists-smallcircle-normalizedintegral-logderiv-eq-order.md) | 41 | `result-track:f6cc4e5f107491c27c17f691e5047cb1674e0cf14259b63cdb336224ae2ed2c3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FieldTheoryAndPolynomials/RatFuncDegreeNamespaced.lean/index.md) · [Full source](../../../../FieldTheoryAndPolynomials/RatFuncDegreeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/RatFuncDegreeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/RatFuncDegreeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,17 +60,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [intDegree](../../../../FieldTheoryAndPolynomials/RatFuncDegreeNamespaced.lean/declarations/intdegree.md) | 47 | `declaration-track:5f5e29fe210fd8ef56bdd4fd74fe6f9d748e512e31331d0e6f43d1cf8054963c` |
-| 2 | `theorem` | [intDegree_zero](../../../../FieldTheoryAndPolynomials/RatFuncDegreeNamespaced.lean/declarations/intdegree-zero.md) | 51 | `result-track:d230abb4fab6cea729975dd99a06b973aef69805a00d1e378c8486c39dcef909` |
-| 3 | `theorem` | [intDegree_one](../../../../FieldTheoryAndPolynomials/RatFuncDegreeNamespaced.lean/declarations/intdegree-one.md) | 55 | `result-track:b8750e71afbac8540c9a45d33d499d922c864471cd4983e7830029ebe26e36cc` |
-| 4 | `theorem` | [intDegree_C](../../../../FieldTheoryAndPolynomials/RatFuncDegreeNamespaced.lean/declarations/intdegree-c.md) | 59 | `result-track:2c541747e533a4c3427aad6caad87689d06d3810983d2955e0bbd589f731c28e` |
-| 5 | `theorem` | [intDegree_X](../../../../FieldTheoryAndPolynomials/RatFuncDegreeNamespaced.lean/declarations/intdegree-x.md) | 63 | `result-track:b13a91e761840e255982007cb91df79653dcd79f41288ca179ee478a64fdb18d` |
-| 6 | `theorem` | [intDegree_polynomial](../../../../FieldTheoryAndPolynomials/RatFuncDegreeNamespaced.lean/declarations/intdegree-polynomial.md) | 68 | `result-track:40a47f5e45e4afd7356c3169e0b4e303cf2b320c04aff8963d5479948a901a79` |
-| 7 | `theorem` | [intDegree_mul](../../../../FieldTheoryAndPolynomials/RatFuncDegreeNamespaced.lean/declarations/intdegree-mul.md) | 73 | `result-track:1d1e4226fdcf455f567208bd97a01595e1c7b67c29b9c28b331a4d7daf104505` |
-| 8 | `theorem` | [intDegree_neg](../../../../FieldTheoryAndPolynomials/RatFuncDegreeNamespaced.lean/declarations/intdegree-neg.md) | 86 | `result-track:f0f60caac7cfc9d12bc74f77789c771fe4dd879a6eb240e98175e5c48d8b1b40` |
-| 9 | `theorem` | [intDegree_add](../../../../FieldTheoryAndPolynomials/RatFuncDegreeNamespaced.lean/declarations/intdegree-add.md) | 94 | `result-track:ed48c93c80b8996b784a604c91d5837fe1a86c2cb4cedbf78945edac8732fbfa` |
-| 10 | `theorem` | [natDegree_num_mul_right_sub_natDegree_denom_mul_left_eq_intDegree](../../../../FieldTheoryAndPolynomials/RatFuncDegreeNamespaced.lean/declarations/natdegree-num-mul-right-sub-natdegree-denom-mul-left-eq-intdegree.md) | 101 | `result-track:06de2a21eeb47f6dfec111f77f8bd5924ad4b9611b1a3459809be01d9bfc9f8c` |
-| 11 | `theorem` | [intDegree_add_le](../../../../FieldTheoryAndPolynomials/RatFuncDegreeNamespaced.lean/declarations/intdegree-add-le.md) | 108 | `result-track:abd3365081dc23bbe83c9885a193c1779d03108909eff81e3e533d41ce025473` |
+| 1 | `def` | [intDegree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/RatFuncDegreeNamespaced.lean/declarations/intdegree.md) | 47 | `declaration-track:5f5e29fe210fd8ef56bdd4fd74fe6f9d748e512e31331d0e6f43d1cf8054963c` |
+| 2 | `theorem` | [intDegree_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/RatFuncDegreeNamespaced.lean/declarations/intdegree-zero.md) | 51 | `result-track:d230abb4fab6cea729975dd99a06b973aef69805a00d1e378c8486c39dcef909` |
+| 3 | `theorem` | [intDegree_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/RatFuncDegreeNamespaced.lean/declarations/intdegree-one.md) | 55 | `result-track:b8750e71afbac8540c9a45d33d499d922c864471cd4983e7830029ebe26e36cc` |
+| 4 | `theorem` | [intDegree_C](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/RatFuncDegreeNamespaced.lean/declarations/intdegree-c.md) | 59 | `result-track:2c541747e533a4c3427aad6caad87689d06d3810983d2955e0bbd589f731c28e` |
+| 5 | `theorem` | [intDegree_X](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/RatFuncDegreeNamespaced.lean/declarations/intdegree-x.md) | 63 | `result-track:b13a91e761840e255982007cb91df79653dcd79f41288ca179ee478a64fdb18d` |
+| 6 | `theorem` | [intDegree_polynomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/RatFuncDegreeNamespaced.lean/declarations/intdegree-polynomial.md) | 68 | `result-track:40a47f5e45e4afd7356c3169e0b4e303cf2b320c04aff8963d5479948a901a79` |
+| 7 | `theorem` | [intDegree_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/RatFuncDegreeNamespaced.lean/declarations/intdegree-mul.md) | 73 | `result-track:1d1e4226fdcf455f567208bd97a01595e1c7b67c29b9c28b331a4d7daf104505` |
+| 8 | `theorem` | [intDegree_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/RatFuncDegreeNamespaced.lean/declarations/intdegree-neg.md) | 86 | `result-track:f0f60caac7cfc9d12bc74f77789c771fe4dd879a6eb240e98175e5c48d8b1b40` |
+| 9 | `theorem` | [intDegree_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/RatFuncDegreeNamespaced.lean/declarations/intdegree-add.md) | 94 | `result-track:ed48c93c80b8996b784a604c91d5837fe1a86c2cb4cedbf78945edac8732fbfa` |
+| 10 | `theorem` | [natDegree_num_mul_right_sub_natDegree_denom_mul_left_eq_intDegree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/RatFuncDegreeNamespaced.lean/declarations/natdegree-num-mul-right-sub-natdegree-denom-mul-left-eq-intdegree.md) | 101 | `result-track:06de2a21eeb47f6dfec111f77f8bd5924ad4b9611b1a3459809be01d9bfc9f8c` |
+| 11 | `theorem` | [intDegree_add_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/RatFuncDegreeNamespaced.lean/declarations/intdegree-add-le.md) | 108 | `result-track:abd3365081dc23bbe83c9885a193c1779d03108909eff81e3e533d41ce025473` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

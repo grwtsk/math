@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ExtensiveColimits.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ExtensiveColimits.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ExtensiveColimits.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ExtensiveColimits.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [isSheaf_pointwiseColimit](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ExtensiveColimits.lean/declarations/issheaf-pointwisecolimit.md) | 31 | `result-track:f79b336e4d16db721e25e911e8ab839e7c3074ba237e85bc528c117cb5c355ca` |
-| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ExtensiveColimits.lean/declarations/instance.md) | 43 | `declaration-track:68a81effdcbfd522531b04d664ff420452620137ad9a418e20a023ec2db95528` |
-| 3 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ExtensiveColimits.lean/declarations/instance-source-edition-3.md) | 49 | `declaration-track:ac1f203572fcd79e335bd3092305def604a5dca7cb66d7915963865ed99af1b9` |
-| 4 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ExtensiveColimits.lean/declarations/instance-source-edition-2.md) | 59 | `declaration-track:7625341b144d0c7dad622a4980b3b6fe002c8f9cedd66e8e8297ef1195973547` |
+| 1 | `lemma` | [isSheaf_pointwiseColimit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ExtensiveColimits.lean/declarations/issheaf-pointwisecolimit.md) | 31 | `result-track:f79b336e4d16db721e25e911e8ab839e7c3074ba237e85bc528c117cb5c355ca` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ExtensiveColimits.lean/declarations/instance.md) | 43 | `declaration-track:68a81effdcbfd522531b04d664ff420452620137ad9a418e20a023ec2db95528` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ExtensiveColimits.lean/declarations/instance-source-edition-3.md) | 49 | `declaration-track:ac1f203572fcd79e335bd3092305def604a5dca7cb66d7915963865ed99af1b9` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ExtensiveColimits.lean/declarations/instance-source-edition-2.md) | 59 | `declaration-track:7625341b144d0c7dad622a4980b3b6fe002c8f9cedd66e8e8297ef1195973547` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

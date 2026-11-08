@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/QuarticGaloisKernel.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/QuarticGaloisKernel.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticGaloisKernel.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticGaloisKernel.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.QuarticResolventActionKernel`](../../../../AssociativeRingsAndAlgebras/QuarticResolventActionKernel.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.Algebra.QuarticGaloisMatching`](../../../../AssociativeRingsAndAlgebras/QuarticGaloisMatching.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.Algebra.QuarticResolventActionKernel`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticResolventActionKernel.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Algebra.QuarticGaloisMatching`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticGaloisMatching.lean/index.md) — import line 2; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [automorphism_matching_kernel_iff](../../../../AssociativeRingsAndAlgebras/QuarticGaloisKernel.lean/declarations/automorphism-matching-kernel-iff.md) | 28 | `result-track:b690e26224484343f6a62f442f8d459dbc89f88b60f7ff76484197616aebc330` |
-| 2 | `theorem` | [automorphism_fixes_all_adjacencies_iff_kernel](../../../../AssociativeRingsAndAlgebras/QuarticGaloisKernel.lean/declarations/automorphism-fixes-all-adjacencies-iff-kernel.md) | 42 | `result-track:51f22e886bb7231892b1a37c013fdbc1a69142061c47523b71bd48eec17a257d` |
-| 3 | `theorem` | [automorphism_fixes_all_adjacencies_iff_double_transposition](../../../../AssociativeRingsAndAlgebras/QuarticGaloisKernel.lean/declarations/automorphism-fixes-all-adjacencies-iff-double-transposition.md) | 64 | `result-track:0a91c0c39029e33fdce6a24a826aae5f3f8f80ab57966e9ad1fe7a4d58443fda` |
+| 1 | `theorem` | [automorphism_matching_kernel_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticGaloisKernel.lean/declarations/automorphism-matching-kernel-iff.md) | 28 | `result-track:b690e26224484343f6a62f442f8d459dbc89f88b60f7ff76484197616aebc330` |
+| 2 | `theorem` | [automorphism_fixes_all_adjacencies_iff_kernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticGaloisKernel.lean/declarations/automorphism-fixes-all-adjacencies-iff-kernel.md) | 42 | `result-track:51f22e886bb7231892b1a37c013fdbc1a69142061c47523b71bd48eec17a257d` |
+| 3 | `theorem` | [automorphism_fixes_all_adjacencies_iff_double_transposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticGaloisKernel.lean/declarations/automorphism-fixes-all-adjacencies-iff-double-transposition.md) | 64 | `result-track:0a91c0c39029e33fdce6a24a826aae5f3f8f80ab57966e9ad1fe7a4d58443fda` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

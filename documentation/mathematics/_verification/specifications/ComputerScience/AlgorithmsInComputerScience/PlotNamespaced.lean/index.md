@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/PlotNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/PlotNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PlotNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PlotNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [fn](../../../../../ComputerScience/AlgorithmsInComputerScience/PlotNamespaced.lean/declarations/fn.md) | 14 | `declaration-track:2e09e5d033127204cb6a24b59b2df12613314ec4ef759cfa59fe374970bd7e55` |
-| 2 | `def` | [Plot](../../../../../ComputerScience/AlgorithmsInComputerScience/PlotNamespaced.lean/declarations/plot.md) | 19 | `declaration-track:cdc2d7a72739b88865576a193ac9ee255bff0972e02499147160b4cdcd3b8566` |
-| 3 | `def` | [mkFrames](../../../../../ComputerScience/AlgorithmsInComputerScience/PlotNamespaced.lean/declarations/mkframes.md) | 39 | `declaration-track:35853b6b76e8631dfa78be8ed459d2020617c5e32fa792ceb6b5efda7103533c` |
-| 4 | `structure` | [AnimatedHtmlProps](../../../../../ComputerScience/AlgorithmsInComputerScience/PlotNamespaced.lean/declarations/animatedhtmlprops.md) | 42 | `declaration-track:7cb36364c5361ba9db5075c7dc4de7ba129582e1eac8ed655908d13f078c8766` |
-| 5 | `def` | [AnimatedHtml](../../../../../ComputerScience/AlgorithmsInComputerScience/PlotNamespaced.lean/declarations/animatedhtml.md) | 49 | `declaration-track:f3474bdcab0fe3fe3f026e11e8c5b135b8967cf68df447fdbecdbf44fbce4f57` |
+| 1 | `def` | [fn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PlotNamespaced.lean/declarations/fn.md) | 14 | `declaration-track:2e09e5d033127204cb6a24b59b2df12613314ec4ef759cfa59fe374970bd7e55` |
+| 2 | `def` | [Plot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PlotNamespaced.lean/declarations/plot.md) | 19 | `declaration-track:cdc2d7a72739b88865576a193ac9ee255bff0972e02499147160b4cdcd3b8566` |
+| 3 | `def` | [mkFrames](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PlotNamespaced.lean/declarations/mkframes.md) | 39 | `declaration-track:35853b6b76e8631dfa78be8ed459d2020617c5e32fa792ceb6b5efda7103533c` |
+| 4 | `structure` | [AnimatedHtmlProps](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PlotNamespaced.lean/declarations/animatedhtmlprops.md) | 42 | `declaration-track:7cb36364c5361ba9db5075c7dc4de7ba129582e1eac8ed655908d13f078c8766` |
+| 5 | `def` | [AnimatedHtml](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PlotNamespaced.lean/declarations/animatedhtml.md) | 49 | `declaration-track:f3474bdcab0fe3fe3f026e11e8c5b135b8967cf68df447fdbecdbf44fbce4f57` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

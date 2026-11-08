@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AE938295d460c31bNamespaced.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AE938295d460c31bNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AE938295d460c31bNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AE938295d460c31bNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,7 +61,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [compiled_energy_channel_decomposition](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AE938295d460c31bNamespaced.lean/declarations/compiled-energy-channel-decomposition.md) | 22 | `result-track:8f7b329e85c9ebc9056b6fd7927404bfee816d926509c4689d8aba414ea04690` |
+| 1 | `theorem` | [compiled_energy_channel_decomposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AE938295d460c31bNamespaced.lean/declarations/compiled-energy-channel-decomposition.md) | 22 | `result-track:8f7b329e85c9ebc9056b6fd7927404bfee816d926509c4689d8aba414ea04690` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

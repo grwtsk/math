@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/WeakSpace.lean/index.md) · [Full source](../../../../FunctionalAnalysis/WeakSpace.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/WeakSpace.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/WeakSpace.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Convex.toWeakSpace_closure](../../../../FunctionalAnalysis/WeakSpace.lean/declarations/convex-toweakspace-closure.md) | 36 | `result-track:a472fe1c6de08d6c3c297161337cfcc5e8201e4e90a95e401f37741158d2f727` |
-| 2 | `theorem` | [LinearMap.image_closure_of_convex](../../../../FunctionalAnalysis/WeakSpace.lean/declarations/linearmap-image-closure-of-convex.md) | 58 | `result-track:d0d9159cc2a5482b1eb10eb8744cdff57908d9f10ac4ef84e5c5d040ad60409f` |
-| 3 | `theorem` | [LinearEquiv.image_closure_of_convex](../../../../FunctionalAnalysis/WeakSpace.lean/declarations/linearequiv-image-closure-of-convex.md) | 74 | `result-track:0e3d457adfc94be7d7fec46319072b5396bfd26bd53459e70bb2b55b848ef44a` |
-| 4 | `theorem` | [LinearEquiv.image_closure_of_convex'](../../../../FunctionalAnalysis/WeakSpace.lean/declarations/linearequiv-image-closure-of-convex-source-edition-2.md) | 88 | `result-track:27ccfc4bd44761f5672809ca67e13dc9d48fe77bb30a6ace4febbbbea960bebd` |
+| 1 | `theorem` | [Convex.toWeakSpace_closure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/WeakSpace.lean/declarations/convex-toweakspace-closure.md) | 36 | `result-track:a472fe1c6de08d6c3c297161337cfcc5e8201e4e90a95e401f37741158d2f727` |
+| 2 | `theorem` | [LinearMap.image_closure_of_convex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/WeakSpace.lean/declarations/linearmap-image-closure-of-convex.md) | 58 | `result-track:d0d9159cc2a5482b1eb10eb8744cdff57908d9f10ac4ef84e5c5d040ad60409f` |
+| 3 | `theorem` | [LinearEquiv.image_closure_of_convex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/WeakSpace.lean/declarations/linearequiv-image-closure-of-convex.md) | 74 | `result-track:0e3d457adfc94be7d7fec46319072b5396bfd26bd53459e70bb2b55b848ef44a` |
+| 4 | `theorem` | [LinearEquiv.image_closure_of_convex'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/WeakSpace.lean/declarations/linearequiv-image-closure-of-convex-source-edition-2.md) | 88 | `result-track:27ccfc4bd44761f5672809ca67e13dc9d48fe77bb30a6ace4febbbbea960bebd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

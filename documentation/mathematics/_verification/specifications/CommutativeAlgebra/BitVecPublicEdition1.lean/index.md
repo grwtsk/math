@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/BitVecPublicEdition1.lean/index.md) · [Full source](../../../../CommutativeAlgebra/BitVecPublicEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BitVecPublicEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BitVecPublicEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/BitVecPublicEdition1.lean/declarations/instance.md) | 21 | `declaration-track:31a84e3a77e0d70f36e8b1efaa247deb2c6e82762e77c2e1869efea76cae9817` |
-| 2 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/BitVecPublicEdition1.lean/declarations/instance-source-edition-3.md) | 48 | `declaration-track:de8fee4aaa2c354a40803d086d8a00099a5dbb870a37ed675a06ae650ed86325` |
-| 3 | `example` | [(anonymous)](../../../../CommutativeAlgebra/BitVecPublicEdition1.lean/declarations/example-source-edition-3.md) | 52 | `declaration-track:9888018388b382ab04e01ba4cef6c39c214c0faa7f2f3334ce38f9f8c3ef0f5c` |
-| 4 | `example` | [(anonymous)](../../../../CommutativeAlgebra/BitVecPublicEdition1.lean/declarations/example-source-edition-2.md) | 53 | `declaration-track:558ee3c2a81ef873d7f1981ee87640535b9722274373456be7eacb5ad2a23e1d` |
-| 5 | `example` | [(anonymous)](../../../../CommutativeAlgebra/BitVecPublicEdition1.lean/declarations/example.md) | 54 | `declaration-track:2ede752263220f9f309fce7fdc4bd4dbe728107141769338c5693bd717a40d0b` |
-| 6 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/BitVecPublicEdition1.lean/declarations/instance-source-edition-2.md) | 56 | `declaration-track:91c12bff3c5f42b3887628162c2bd1462d06947b24ad92ba2d2b8cbf629b48ee` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BitVecPublicEdition1.lean/declarations/instance.md) | 21 | `declaration-track:31a84e3a77e0d70f36e8b1efaa247deb2c6e82762e77c2e1869efea76cae9817` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BitVecPublicEdition1.lean/declarations/instance-source-edition-3.md) | 48 | `declaration-track:de8fee4aaa2c354a40803d086d8a00099a5dbb870a37ed675a06ae650ed86325` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BitVecPublicEdition1.lean/declarations/example-source-edition-3.md) | 52 | `declaration-track:9888018388b382ab04e01ba4cef6c39c214c0faa7f2f3334ce38f9f8c3ef0f5c` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BitVecPublicEdition1.lean/declarations/example-source-edition-2.md) | 53 | `declaration-track:558ee3c2a81ef873d7f1981ee87640535b9722274373456be7eacb5ad2a23e1d` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BitVecPublicEdition1.lean/declarations/example.md) | 54 | `declaration-track:2ede752263220f9f309fce7fdc4bd4dbe728107141769338c5693bd717a40d0b` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BitVecPublicEdition1.lean/declarations/instance-source-edition-2.md) | 56 | `declaration-track:91c12bff3c5f42b3887628162c2bd1462d06947b24ad92ba2d2b8cbf629b48ee` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/ComplexComplex.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/ComplexComplex.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ComplexComplex.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ComplexComplex.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Complex](../../../../GroupTheoryAndGeneralizations/ComplexComplex.lean/declarations/complex.md) | 11 | `declaration-track:a0db0e145fd39a303803dd4f1634351506ec4f88bd5f38f28871fbbf2efb3a60` |
-| 2 | `theorem` | [boundary_squared_zero](../../../../GroupTheoryAndGeneralizations/ComplexComplex.lean/declarations/boundary-squared-zero.md) | 16 | `result-track:d1319e47eb331fd58298e85543ad7e0803184139ae60372e40ca53466f4b3184` |
+| 1 | `structure` | [Complex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ComplexComplex.lean/declarations/complex.md) | 11 | `declaration-track:a0db0e145fd39a303803dd4f1634351506ec4f88bd5f38f28871fbbf2efb3a60` |
+| 2 | `theorem` | [boundary_squared_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ComplexComplex.lean/declarations/boundary-squared-zero.md) | 16 | `result-track:d1319e47eb331fd58298e85543ad7e0803184139ae60372e40ca53466f4b3184` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/Properties.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/Properties.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/Properties.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/Properties.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../Combinatorics/GraphTheory/Properties.lean/declarations/instance.md) | 21 | `declaration-track:005ea792315a20758d9e1b69b39738ade46c17bea6ada26f1e53354296378384` |
-| 2 | `lemma` | [end_componentCompl_infinite](../../../../../Combinatorics/GraphTheory/Properties.lean/declarations/end-componentcompl-infinite.md) | 30 | `result-track:1e42a869f675b3cd4c02cefd8643029d451b0a2dfe9c5a0e38285b9d34efeac1` |
-| 3 | `instance` | [compononentComplFunctor_nonempty_of_infinite](../../../../../Combinatorics/GraphTheory/Properties.lean/declarations/compononentcomplfunctor-nonempty-of-infinite.md) | 36 | `declaration-track:23e153aec3d3f21fe2d1830f6604ae76b48fdfe07883ec88231d92a95cbe6c00` |
-| 4 | `instance` | [componentComplFunctor_finite](../../../../../Combinatorics/GraphTheory/Properties.lean/declarations/componentcomplfunctor-finite.md) | 39 | `declaration-track:1af65a09d56f5bbee9817d274857dc69e2d11a535bbe5c01d96bbf27f8ad61f9` |
-| 5 | `lemma` | [nonempty_ends_of_infinite](../../../../../Combinatorics/GraphTheory/Properties.lean/declarations/nonempty-ends-of-infinite.md) | 43 | `result-track:76cd2ef2404691bacebf79cf587bfc422bc9416715ff7b23a113a7155479095f` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/Properties.lean/declarations/instance.md) | 21 | `declaration-track:005ea792315a20758d9e1b69b39738ade46c17bea6ada26f1e53354296378384` |
+| 2 | `lemma` | [end_componentCompl_infinite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/Properties.lean/declarations/end-componentcompl-infinite.md) | 30 | `result-track:1e42a869f675b3cd4c02cefd8643029d451b0a2dfe9c5a0e38285b9d34efeac1` |
+| 3 | `instance` | [compononentComplFunctor_nonempty_of_infinite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/Properties.lean/declarations/compononentcomplfunctor-nonempty-of-infinite.md) | 36 | `declaration-track:23e153aec3d3f21fe2d1830f6604ae76b48fdfe07883ec88231d92a95cbe6c00` |
+| 4 | `instance` | [componentComplFunctor_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/Properties.lean/declarations/componentcomplfunctor-finite.md) | 39 | `declaration-track:1af65a09d56f5bbee9817d274857dc69e2d11a535bbe5c01d96bbf27f8ad61f9` |
+| 5 | `lemma` | [nonempty_ends_of_infinite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/Properties.lean/declarations/nonempty-ends-of-infinite.md) | 43 | `result-track:76cd2ef2404691bacebf79cf587bfc422bc9416715ff7b23a113a7155479095f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

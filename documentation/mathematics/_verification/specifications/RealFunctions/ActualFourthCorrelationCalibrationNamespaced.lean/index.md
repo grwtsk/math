@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/ActualFourthCorrelationCalibrationNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/ActualFourthCorrelationCalibrationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualFourthCorrelationCalibrationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualFourthCorrelationCalibrationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_correlation_contDiff_four](../../../../RealFunctions/ActualFourthCorrelationCalibrationNamespaced.lean/declarations/actual-correlation-contdiff-four.md) | 32 | `result-track:b753780cb52f4673f0e5b8e0be8e16c5abb4738fc55ae405f3c918a0cafb2310` |
-| 2 | `theorem` | [actual_correlation_iterated_fourth_eq](../../../../RealFunctions/ActualFourthCorrelationCalibrationNamespaced.lean/declarations/actual-correlation-iterated-fourth-eq.md) | 54 | `result-track:73597de65089784ea37c19895e6cf1e3191d5694488df50520a5f2883ca60a3a` |
-| 3 | `theorem` | [actual_correlation_fourth_abs_le_sixty_seven](../../../../RealFunctions/ActualFourthCorrelationCalibrationNamespaced.lean/declarations/actual-correlation-fourth-abs-le-sixty-seven.md) | 61 | `result-track:447e65bf0569f12ef85ef77a4cded5f6165f21ec020ceb9215ba8247f1211d75` |
-| 4 | `theorem` | [actual_correlation_iterated_fourth_abs_le_sixty_seven](../../../../RealFunctions/ActualFourthCorrelationCalibrationNamespaced.lean/declarations/actual-correlation-iterated-fourth-abs-le-sixty-seven.md) | 68 | `result-track:309e57bc3cf0b2674a3d3b4e7093bf1a82ab024eac53ceafaec8dd60f5b5d7aa` |
+| 1 | `theorem` | [actual_correlation_contDiff_four](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualFourthCorrelationCalibrationNamespaced.lean/declarations/actual-correlation-contdiff-four.md) | 32 | `result-track:b753780cb52f4673f0e5b8e0be8e16c5abb4738fc55ae405f3c918a0cafb2310` |
+| 2 | `theorem` | [actual_correlation_iterated_fourth_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualFourthCorrelationCalibrationNamespaced.lean/declarations/actual-correlation-iterated-fourth-eq.md) | 54 | `result-track:73597de65089784ea37c19895e6cf1e3191d5694488df50520a5f2883ca60a3a` |
+| 3 | `theorem` | [actual_correlation_fourth_abs_le_sixty_seven](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualFourthCorrelationCalibrationNamespaced.lean/declarations/actual-correlation-fourth-abs-le-sixty-seven.md) | 61 | `result-track:447e65bf0569f12ef85ef77a4cded5f6165f21ec020ceb9215ba8247f1211d75` |
+| 4 | `theorem` | [actual_correlation_iterated_fourth_abs_le_sixty_seven](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualFourthCorrelationCalibrationNamespaced.lean/declarations/actual-correlation-iterated-fourth-abs-le-sixty-seven.md) | 68 | `result-track:309e57bc3cf0b2674a3d3b4e7093bf1a82ab024eac53ceafaec8dd60f5b5d7aa` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

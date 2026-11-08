@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/EllipticLevel.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/EllipticLevel.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/EllipticLevel.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/EllipticLevel.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [EllipticLevelMarkingKind](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/EllipticLevel.lean/declarations/ellipticlevelmarkingkind.md) | 18 | `declaration-track:8e12e878d4b1a1feb45b37a2addaeb94eabcefb0f207054bd42dfe723e9b6043` |
-| 2 | `structure` | [EllipticLevelEnrichment](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/EllipticLevel.lean/declarations/ellipticlevelenrichment.md) | 25 | `declaration-track:89ea460eb18d69aa9753eec342ac4fefbfc654e61835de67e14b59542ceb8a76` |
-| 3 | `structure` | [EllipticModularFormDatum](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/EllipticLevel.lean/declarations/ellipticmodularformdatum.md) | 57 | `declaration-track:1aecaafb6c30281a44c3e6e5ada01c45f1925c0682b9653085e11de08dba8e72` |
+| 1 | `inductive` | [EllipticLevelMarkingKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/EllipticLevel.lean/declarations/ellipticlevelmarkingkind.md) | 18 | `declaration-track:8e12e878d4b1a1feb45b37a2addaeb94eabcefb0f207054bd42dfe723e9b6043` |
+| 2 | `structure` | [EllipticLevelEnrichment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/EllipticLevel.lean/declarations/ellipticlevelenrichment.md) | 25 | `declaration-track:89ea460eb18d69aa9753eec342ac4fefbfc654e61835de67e14b59542ceb8a76` |
+| 3 | `structure` | [EllipticModularFormDatum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/EllipticLevel.lean/declarations/ellipticmodularformdatum.md) | 57 | `declaration-track:1aecaafb6c30281a44c3e6e5ada01c45f1925c0682b9653085e11de08dba8e72` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

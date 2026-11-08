@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ResidueIndex.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ResidueIndex.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ResidueIndex.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ResidueIndex.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ResidueEntry](../../../../../ComputerScience/AlgorithmsInComputerScience/ResidueIndex.lean/declarations/residueentry.md) | 7 | `declaration-track:5c5be5d0afc71590fd57d80218e11f7f914076c00b2e073d969009c5acdf7c34` |
-| 2 | `def` | [entries](../../../../../ComputerScience/AlgorithmsInComputerScience/ResidueIndex.lean/declarations/entries.md) | 16 | `declaration-track:f023c0f62234756a7eacd1ee2a79f22268ee9bd87d6c00f177342f5530c35c57` |
-| 3 | `def` | [residueFileCount](../../../../../ComputerScience/AlgorithmsInComputerScience/ResidueIndex.lean/declarations/residuefilecount.md) | 76 | `declaration-track:1f4698f845f856354b1a09da55f63d1aab43a38d1e7e38dfde9b242e2275637b` |
+| 1 | `structure` | [ResidueEntry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ResidueIndex.lean/declarations/residueentry.md) | 7 | `declaration-track:5c5be5d0afc71590fd57d80218e11f7f914076c00b2e073d969009c5acdf7c34` |
+| 2 | `def` | [entries](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ResidueIndex.lean/declarations/entries.md) | 16 | `declaration-track:f023c0f62234756a7eacd1ee2a79f22268ee9bd87d6c00f177342f5530c35c57` |
+| 3 | `def` | [residueFileCount](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ResidueIndex.lean/declarations/residuefilecount.md) | 76 | `declaration-track:1f4698f845f856354b1a09da55f63d1aab43a38d1e7e38dfde9b242e2275637b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

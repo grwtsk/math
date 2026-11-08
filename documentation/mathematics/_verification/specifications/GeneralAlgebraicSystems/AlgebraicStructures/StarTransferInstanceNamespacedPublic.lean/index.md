@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/StarTransferInstanceNamespacedPublic.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/StarTransferInstanceNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/StarTransferInstanceNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/StarTransferInstanceNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [star](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/StarTransferInstanceNamespacedPublic.lean/declarations/star.md) | 36 | `declaration-track:da973d6955d855cabb752a6ae1846f69badc7fc2335251a4e3ba10790e6bce58` |
-| 2 | `abbrev` | [involutiveStar](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/StarTransferInstanceNamespacedPublic.lean/declarations/involutivestar.md) | 40 | `declaration-track:7997921f792ff477b284397868e0fcc3b00cc5d29d3a3507430a33de726d2e3a` |
-| 3 | `abbrev` | [starMul](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/StarTransferInstanceNamespacedPublic.lean/declarations/starmul.md) | 45 | `declaration-track:b3196f43c8cc170fb857c9cb1b166db7a4b8cea6f5ae77d9c5063e4d2e50c04f` |
-| 4 | `abbrev` | [starAddMonoid](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/StarTransferInstanceNamespacedPublic.lean/declarations/staraddmonoid.md) | 53 | `declaration-track:6c6e064bc354d52937ea9231fa7472a34a125eaa6541ca60b2771d74d341001d` |
-| 5 | `abbrev` | [starRing](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/StarTransferInstanceNamespacedPublic.lean/declarations/starring.md) | 61 | `declaration-track:91c54957e7697bfc63c3437eb803af52bc8ee9fa30b9342f24c4c649c00207a8` |
-| 6 | `lemma` | [starModule](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/StarTransferInstanceNamespacedPublic.lean/declarations/starmodule.md) | 69 | `result-track:7b00df4c976801fdfc37346336d4b59930c0e8afc186bc8f3e20e6306e714cf4` |
+| 1 | `abbrev` | [star](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/StarTransferInstanceNamespacedPublic.lean/declarations/star.md) | 36 | `declaration-track:da973d6955d855cabb752a6ae1846f69badc7fc2335251a4e3ba10790e6bce58` |
+| 2 | `abbrev` | [involutiveStar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/StarTransferInstanceNamespacedPublic.lean/declarations/involutivestar.md) | 40 | `declaration-track:7997921f792ff477b284397868e0fcc3b00cc5d29d3a3507430a33de726d2e3a` |
+| 3 | `abbrev` | [starMul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/StarTransferInstanceNamespacedPublic.lean/declarations/starmul.md) | 45 | `declaration-track:b3196f43c8cc170fb857c9cb1b166db7a4b8cea6f5ae77d9c5063e4d2e50c04f` |
+| 4 | `abbrev` | [starAddMonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/StarTransferInstanceNamespacedPublic.lean/declarations/staraddmonoid.md) | 53 | `declaration-track:6c6e064bc354d52937ea9231fa7472a34a125eaa6541ca60b2771d74d341001d` |
+| 5 | `abbrev` | [starRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/StarTransferInstanceNamespacedPublic.lean/declarations/starring.md) | 61 | `declaration-track:91c54957e7697bfc63c3437eb803af52bc8ee9fa30b9342f24c4c649c00207a8` |
+| 6 | `lemma` | [starModule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/StarTransferInstanceNamespacedPublic.lean/declarations/starmodule.md) | 69 | `result-track:7b00df4c976801fdfc37346336d4b59930c0e8afc186bc8f3e20e6306e714cf4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrderSet.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrderSet.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrderSet.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrderSet.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [WithBot.range_eq](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrderSet.lean/declarations/withbot-range-eq.md) | 16 | `result-track:02b178d3803675d768f93437749f828c9ef4e488f4218b74be6cc3e62483e8fb` |
-| 2 | `theorem` | [WithTop.range_eq](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrderSet.lean/declarations/withtop-range-eq.md) | 20 | `result-track:bf39c4ade5385b61e92526116b40fdb20da3bb1de354085322e0e8eecff1e2e0` |
+| 1 | `theorem` | [WithBot.range_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrderSet.lean/declarations/withbot-range-eq.md) | 16 | `result-track:02b178d3803675d768f93437749f828c9ef4e488f4218b74be6cc3e62483e8fb` |
+| 2 | `theorem` | [WithTop.range_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/OrderSet.lean/declarations/withtop-range-eq.md) | 20 | `result-track:bf39c4ade5385b61e92526116b40fdb20da3bb1de354085322e0e8eecff1e2e0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

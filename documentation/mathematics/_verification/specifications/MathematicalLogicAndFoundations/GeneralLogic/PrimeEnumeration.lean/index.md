@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PrimeEnumeration.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PrimeEnumeration.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PrimeEnumeration.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PrimeEnumeration.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [factorizationLabel](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PrimeEnumeration.lean/declarations/factorizationlabel.md) | 18 | `declaration-track:71b93580baadd159ba94b377ffd573e6e68cf646d241181d239ffcc04e9449e9` |
-| 2 | `def` | [IsNaturalCountingLabel](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PrimeEnumeration.lean/declarations/isnaturalcountinglabel.md) | 21 | `declaration-track:7eb2c5a87d0c495c2e5c5da5e17dab57bbf5048563ac6ea8a658f263e52c031c` |
-| 3 | `theorem` | [naturalCountingLabel_correct](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PrimeEnumeration.lean/declarations/naturalcountinglabel-correct.md) | 24 | `result-track:7f758875e95d70ea44ad50ddd54e4ea8e5736d382c30d431c3eec0c453a712a3` |
+| 1 | `def` | [factorizationLabel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PrimeEnumeration.lean/declarations/factorizationlabel.md) | 18 | `declaration-track:71b93580baadd159ba94b377ffd573e6e68cf646d241181d239ffcc04e9449e9` |
+| 2 | `def` | [IsNaturalCountingLabel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PrimeEnumeration.lean/declarations/isnaturalcountinglabel.md) | 21 | `declaration-track:7eb2c5a87d0c495c2e5c5da5e17dab57bbf5048563ac6ea8a658f263e52c031c` |
+| 3 | `theorem` | [naturalCountingLabel_correct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PrimeEnumeration.lean/declarations/naturalcountinglabel-correct.md) | 24 | `result-track:7f758875e95d70ea44ad50ddd54e4ea8e5736d382c30d431c3eec0c453a712a3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

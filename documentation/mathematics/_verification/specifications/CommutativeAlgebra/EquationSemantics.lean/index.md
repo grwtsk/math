@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/EquationSemantics.lean/index.md) · [Full source](../../../../CommutativeAlgebra/EquationSemantics.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EquationSemantics.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EquationSemantics.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [PolynomialSystem](../../../../CommutativeAlgebra/EquationSemantics.lean/declarations/polynomialsystem.md) | 15 | `declaration-track:b087dacd1cbe5aa7623eab0e57b2791e871108f0479a1c1d6fbb3192117af31b` |
-| 2 | `abbrev` | [NullstellensatzCertificate](../../../../CommutativeAlgebra/EquationSemantics.lean/declarations/nullstellensatzcertificate.md) | 19 | `declaration-track:8b9838ff364075c97206479714951e816440e4740521cf85be1e12d79b01803a` |
-| 3 | `theorem` | [nullstellensatz_geometric_consequence](../../../../CommutativeAlgebra/EquationSemantics.lean/declarations/nullstellensatz-geometric-consequence.md) | 25 | `result-track:f90170015be68a88b48ecc0eb2ff6ca7ad3c8f48e0860f829bd267ad82652ef9` |
-| 4 | `structure` | [SchemeSemanticCertificate](../../../../CommutativeAlgebra/EquationSemantics.lean/declarations/schemesemanticcertificate.md) | 38 | `declaration-track:fcf88156001e72bf7989dc0dab73e97d574ad9dc3c5bb1d275dd0b66314822fd` |
+| 1 | `abbrev` | [PolynomialSystem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EquationSemantics.lean/declarations/polynomialsystem.md) | 15 | `declaration-track:b087dacd1cbe5aa7623eab0e57b2791e871108f0479a1c1d6fbb3192117af31b` |
+| 2 | `abbrev` | [NullstellensatzCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EquationSemantics.lean/declarations/nullstellensatzcertificate.md) | 19 | `declaration-track:8b9838ff364075c97206479714951e816440e4740521cf85be1e12d79b01803a` |
+| 3 | `theorem` | [nullstellensatz_geometric_consequence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EquationSemantics.lean/declarations/nullstellensatz-geometric-consequence.md) | 25 | `result-track:f90170015be68a88b48ecc0eb2ff6ca7ad3c8f48e0860f829bd267ad82652ef9` |
+| 4 | `structure` | [SchemeSemanticCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EquationSemantics.lean/declarations/schemesemanticcertificate.md) | 38 | `declaration-track:fcf88156001e72bf7989dc0dab73e97d574ad9dc3c5bb1d275dd0b66314822fd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

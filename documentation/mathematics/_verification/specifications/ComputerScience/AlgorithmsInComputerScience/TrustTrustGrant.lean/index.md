@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/TrustTrustGrant.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/TrustTrustGrant.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TrustTrustGrant.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TrustTrustGrant.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TrustGrant](../../../../../ComputerScience/AlgorithmsInComputerScience/TrustTrustGrant.lean/declarations/trustgrant.md) | 14 | `declaration-track:f1ef783c93e4907e04b3825e90c2625e71983aedbc085272f7fcf096461445b6` |
-| 2 | `def` | [TrustGrant.ActiveAt](../../../../../ComputerScience/AlgorithmsInComputerScience/TrustTrustGrant.lean/declarations/trustgrant-activeat.md) | 19 | `declaration-track:f0b7de96f6a9452ad6c6d521b1e5a19ab4eb418e270e0972c6639059c2435182` |
+| 1 | `structure` | [TrustGrant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TrustTrustGrant.lean/declarations/trustgrant.md) | 14 | `declaration-track:f1ef783c93e4907e04b3825e90c2625e71983aedbc085272f7fcf096461445b6` |
+| 2 | `def` | [TrustGrant.ActiveAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TrustTrustGrant.lean/declarations/trustgrant-activeat.md) | 19 | `declaration-track:f0b7de96f6a9452ad6c6d521b1e5a19ab4eb418e270e0972c6639059c2435182` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/ExistingProviderModeledPredicate.lean/index.md) · [Full source](../../../../RealFunctions/ExistingProviderModeledPredicate.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExistingProviderModeledPredicate.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExistingProviderModeledPredicate.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [conditional_grh_via_spectral_heat_contract](../../../../RealFunctions/ExistingProviderModeledPredicate.lean/declarations/conditional-grh-via-spectral-heat-contract.md) | 35 | `result-track:fbe26aaf28a5b54b8122b6c0e08fc5cfcf6400b9ff734203b2dbeab006463040` |
+| 1 | `theorem` | [conditional_grh_via_spectral_heat_contract](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExistingProviderModeledPredicate.lean/declarations/conditional-grh-via-spectral-heat-contract.md) | 35 | `result-track:fbe26aaf28a5b54b8122b6c0e08fc5cfcf6400b9ff734203b2dbeab006463040` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

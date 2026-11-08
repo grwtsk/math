@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/IdealPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/IdealPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IdealPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IdealPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [iSup_iInf_eq_top_iff_pairwise](../../../../CommutativeAlgebra/IdealPublic.lean/declarations/isup-iinf-eq-top-iff-pairwise.md) | 34 | `result-track:1fd7169d067d5387a43c1b42d6af74c067a22da34a85795ed054801190c350e3` |
+| 1 | `theorem` | [iSup_iInf_eq_top_iff_pairwise](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IdealPublic.lean/declarations/isup-iinf-eq-top-iff-pairwise.md) | 34 | `result-track:1fd7169d067d5387a43c1b42d6af74c067a22da34a85795ed054801190c350e3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

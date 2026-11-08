@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/MellinBlockHolomorphy.lean/index.md) · [Full source](../../../../MeasureAndIntegration/MellinBlockHolomorphy.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MellinBlockHolomorphy.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MellinBlockHolomorphy.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `Mathlib` — import line 7; external provider; requires a separately pinned dependency.
-- [`GRWTSK.NumberTheory.VonMangoldt.MellinReadout`](../../../../MeasureAndIntegration/MellinReadout.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.NumberTheory.VonMangoldt.MellinReadout`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MellinReadout.lean/index.md) — import line 8; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [power_continuousOn](../../../../MeasureAndIntegration/MellinBlockHolomorphy.lean/declarations/power-continuouson.md) | 25 | `result-track:155346687430122273ef5626a40e330e8ca26e33cce6a587639b449e8443bf11` |
-| 2 | `theorem` | [parameter_derivative](../../../../MeasureAndIntegration/MellinBlockHolomorphy.lean/declarations/parameter-derivative.md) | 36 | `result-track:092c85a9c4b2e188e0917a38510c6212fedd25ff46ebc45177e50e626ccc38cc` |
-| 3 | `theorem` | [background_hasDerivAt](../../../../MeasureAndIntegration/MellinBlockHolomorphy.lean/declarations/background-hasderivat.md) | 44 | `result-track:cf2c77532f682b894a72a0f6b30153aed7bcfbf01c455e88f78d343e7e083332` |
-| 4 | `theorem` | [dirichletBlock_differentiable](../../../../MeasureAndIntegration/MellinBlockHolomorphy.lean/declarations/dirichletblock-differentiable.md) | 103 | `result-track:c89712fda2169ef35f791293dbe21011050986779726b52d8f19f36932bbb919` |
+| 1 | `theorem` | [power_continuousOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MellinBlockHolomorphy.lean/declarations/power-continuouson.md) | 25 | `result-track:155346687430122273ef5626a40e330e8ca26e33cce6a587639b449e8443bf11` |
+| 2 | `theorem` | [parameter_derivative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MellinBlockHolomorphy.lean/declarations/parameter-derivative.md) | 36 | `result-track:092c85a9c4b2e188e0917a38510c6212fedd25ff46ebc45177e50e626ccc38cc` |
+| 3 | `theorem` | [background_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MellinBlockHolomorphy.lean/declarations/background-hasderivat.md) | 44 | `result-track:cf2c77532f682b894a72a0f6b30153aed7bcfbf01c455e88f78d343e7e083332` |
+| 4 | `theorem` | [dirichletBlock_differentiable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MellinBlockHolomorphy.lean/declarations/dirichletblock-differentiable.md) | 103 | `result-track:c89712fda2169ef35f791293dbe21011050986779726b52d8f19f36932bbb919` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

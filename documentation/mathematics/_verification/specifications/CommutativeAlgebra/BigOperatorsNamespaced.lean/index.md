@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/BigOperatorsNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/BigOperatorsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BigOperatorsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BigOperatorsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [listSum_mem](../../../../CommutativeAlgebra/BigOperatorsNamespaced.lean/declarations/listsum-mem.md) | 29 | `result-track:ed72cf4fda5039e6810f112b19cacf531b956cd25ab39fe221fb98cb6e2e8c72` |
-| 2 | `lemma` | [multisetSum_mem](../../../../CommutativeAlgebra/BigOperatorsNamespaced.lean/declarations/multisetsum-mem.md) | 34 | `result-track:b6b90b81356783f1dbf0dec7d9b66158565c9bc413df5f891cc233b9a0953d24` |
-| 3 | `lemma` | [finsetSum_mem](../../../../CommutativeAlgebra/BigOperatorsNamespaced.lean/declarations/finsetsum-mem.md) | 39 | `result-track:b9255bfd3ea59abd3fbb03eb7420f2037df6427daab99b52df635a8585fe5a06` |
-| 4 | `lemma` | [listProd_mem](../../../../CommutativeAlgebra/BigOperatorsNamespaced.lean/declarations/listprod-mem.md) | 52 | `result-track:524c06db5fc33f7446f237fcb3300257e322f1ba87dac0226c411121474802c1` |
-| 5 | `lemma` | [multiSetProd_mem](../../../../CommutativeAlgebra/BigOperatorsNamespaced.lean/declarations/multisetprod-mem.md) | 68 | `result-track:24b9c7df0df023970e622d78a2df1d7fbc1bd3d840362f6a4a6e2b7937834a86` |
-| 6 | `lemma` | [finsetProd_mem](../../../../CommutativeAlgebra/BigOperatorsNamespaced.lean/declarations/finsetprod-mem.md) | 73 | `result-track:7367d8923a644360881cfe8313c2fe935ae9e0268e47aefb4c04d5046d058891` |
+| 1 | `lemma` | [listSum_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BigOperatorsNamespaced.lean/declarations/listsum-mem.md) | 29 | `result-track:ed72cf4fda5039e6810f112b19cacf531b956cd25ab39fe221fb98cb6e2e8c72` |
+| 2 | `lemma` | [multisetSum_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BigOperatorsNamespaced.lean/declarations/multisetsum-mem.md) | 34 | `result-track:b6b90b81356783f1dbf0dec7d9b66158565c9bc413df5f891cc233b9a0953d24` |
+| 3 | `lemma` | [finsetSum_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BigOperatorsNamespaced.lean/declarations/finsetsum-mem.md) | 39 | `result-track:b9255bfd3ea59abd3fbb03eb7420f2037df6427daab99b52df635a8585fe5a06` |
+| 4 | `lemma` | [listProd_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BigOperatorsNamespaced.lean/declarations/listprod-mem.md) | 52 | `result-track:524c06db5fc33f7446f237fcb3300257e322f1ba87dac0226c411121474802c1` |
+| 5 | `lemma` | [multiSetProd_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BigOperatorsNamespaced.lean/declarations/multisetprod-mem.md) | 68 | `result-track:24b9c7df0df023970e622d78a2df1d7fbc1bd3d840362f6a4a6e2b7937834a86` |
+| 6 | `lemma` | [finsetProd_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BigOperatorsNamespaced.lean/declarations/finsetprod-mem.md) | 73 | `result-track:7367d8923a644360881cfe8313c2fe935ae9e0268e47aefb4c04d5046d058891` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/CompProdEqIffPublic.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/CompProdEqIffPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CompProdEqIffPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CompProdEqIffPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [ae_eq_of_compProd_eq](../../../../ProbabilityTheoryAndStochasticProcesses/CompProdEqIffPublic.lean/declarations/ae-eq-of-compprod-eq.md) | 39 | `result-track:d9260d2cf2ad624ce62e44299f3e5930df5f73c72558f8a470a83a61c6b8bd28` |
-| 2 | `lemma` | [compProd_eq_iff](../../../../ProbabilityTheoryAndStochasticProcesses/CompProdEqIffPublic.lean/declarations/compprod-eq-iff.md) | 59 | `result-track:9bfd15f7b0f54a9ba17ac9e81290be625eacb3ebb27fc0050877e56ef22186e8` |
+| 1 | `lemma` | [ae_eq_of_compProd_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CompProdEqIffPublic.lean/declarations/ae-eq-of-compprod-eq.md) | 39 | `result-track:d9260d2cf2ad624ce62e44299f3e5930df5f73c72558f8a470a83a61c6b8bd28` |
+| 2 | `lemma` | [compProd_eq_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CompProdEqIffPublic.lean/declarations/compprod-eq-iff.md) | 59 | `result-track:9bfd15f7b0f54a9ba17ac9e81290be625eacb3ebb27fc0050877e56ef22186e8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

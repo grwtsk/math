@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CorrelationPrimitiveMomentsNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CorrelationPrimitiveMomentsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CorrelationPrimitiveMomentsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CorrelationPrimitiveMomentsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [weighted_primitive_integrable](../../../../MeasureAndIntegration/CorrelationPrimitiveMomentsNamespaced.lean/declarations/weighted-primitive-integrable.md) | 30 | `result-track:e12e5375b350f966f5a90b3453fa4b157c390f515cd8f9ad2cbb8d1d41deff29` |
-| 2 | `theorem` | [weighted_primitive_hasDerivAt](../../../../MeasureAndIntegration/CorrelationPrimitiveMomentsNamespaced.lean/declarations/weighted-primitive-hasderivat.md) | 35 | `result-track:06eeda162f46794eaebd127245c387144b1c97cb1141df65750d6db7fbc01e6b` |
-| 3 | `theorem` | [weighted_primitive_zeroMoment](../../../../MeasureAndIntegration/CorrelationPrimitiveMomentsNamespaced.lean/declarations/weighted-primitive-zeromoment.md) | 43 | `result-track:e20d12c90d16c6e82b0986c45d5699d418b97a999644fede67bbaef8f29fcfd8` |
-| 4 | `theorem` | [weighted_primitive_firstMoment](../../../../MeasureAndIntegration/CorrelationPrimitiveMomentsNamespaced.lean/declarations/weighted-primitive-firstmoment.md) | 68 | `result-track:634aa44b2cb683d3df8f1303cde0b307c7ab4dbff871083b205bdb2fa3c23a7e` |
-| 5 | `theorem` | [negative_primitive_moments_integrable](../../../../MeasureAndIntegration/CorrelationPrimitiveMomentsNamespaced.lean/declarations/negative-primitive-moments-integrable.md) | 96 | `result-track:e2be4c16f3b8d6bf2af412f9db1c0540f2ff77c1d526f4ccbc8cc88bb42dc19a` |
-| 6 | `theorem` | [negative_primitive_moments](../../../../MeasureAndIntegration/CorrelationPrimitiveMomentsNamespaced.lean/declarations/negative-primitive-moments.md) | 107 | `result-track:831e42eac462e169f41e9ed20aaf6dcd4ad085f33c8f271ee7015c7d162ba475` |
+| 1 | `theorem` | [weighted_primitive_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CorrelationPrimitiveMomentsNamespaced.lean/declarations/weighted-primitive-integrable.md) | 30 | `result-track:e12e5375b350f966f5a90b3453fa4b157c390f515cd8f9ad2cbb8d1d41deff29` |
+| 2 | `theorem` | [weighted_primitive_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CorrelationPrimitiveMomentsNamespaced.lean/declarations/weighted-primitive-hasderivat.md) | 35 | `result-track:06eeda162f46794eaebd127245c387144b1c97cb1141df65750d6db7fbc01e6b` |
+| 3 | `theorem` | [weighted_primitive_zeroMoment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CorrelationPrimitiveMomentsNamespaced.lean/declarations/weighted-primitive-zeromoment.md) | 43 | `result-track:e20d12c90d16c6e82b0986c45d5699d418b97a999644fede67bbaef8f29fcfd8` |
+| 4 | `theorem` | [weighted_primitive_firstMoment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CorrelationPrimitiveMomentsNamespaced.lean/declarations/weighted-primitive-firstmoment.md) | 68 | `result-track:634aa44b2cb683d3df8f1303cde0b307c7ab4dbff871083b205bdb2fa3c23a7e` |
+| 5 | `theorem` | [negative_primitive_moments_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CorrelationPrimitiveMomentsNamespaced.lean/declarations/negative-primitive-moments-integrable.md) | 96 | `result-track:e2be4c16f3b8d6bf2af412f9db1c0540f2ff77c1d526f4ccbc8cc88bb42dc19a` |
+| 6 | `theorem` | [negative_primitive_moments](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CorrelationPrimitiveMomentsNamespaced.lean/declarations/negative-primitive-moments.md) | 107 | `result-track:831e42eac462e169f41e9ed20aaf6dcd4ad085f33c8f271ee7015c7d162ba475` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/BifunctorFlipNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/BifunctorFlipNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/BifunctorFlipNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/BifunctorFlipNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [hasMapBifunctor_flip_iff](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/BifunctorFlipNamespaced.lean/declarations/hasmapbifunctor-flip-iff.md) | 41 | `result-track:45db6e968b55fc2cb1c685e06fadc830c9b061eb46fd7df7097072f4e70a66b9` |
-| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/BifunctorFlipNamespaced.lean/declarations/instance.md) | 47 | `declaration-track:a1d2dc4cff3d0cbdc494412f1d608b8617eee0d6c56361a805869f4f3ad8e0b0` |
-| 3 | `def` | [mapBifunctorFlipIso](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/BifunctorFlipNamespaced.lean/declarations/mapbifunctorflipiso.md) | 52 | `declaration-track:bcce633eddd552e3acc55690a616a37c30284b54bbd3257b2e7c7a665a7798aa` |
-| 4 | `lemma` | [mapBifunctorFlipIso_flip](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/BifunctorFlipNamespaced.lean/declarations/mapbifunctorflipiso-flip.md) | 56 | `result-track:1cbcb7081c6d75e8b44037ad9b33ee065986622142c3e99ea5e468ccc772e23a` |
+| 1 | `lemma` | [hasMapBifunctor_flip_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/BifunctorFlipNamespaced.lean/declarations/hasmapbifunctor-flip-iff.md) | 41 | `result-track:45db6e968b55fc2cb1c685e06fadc830c9b061eb46fd7df7097072f4e70a66b9` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/BifunctorFlipNamespaced.lean/declarations/instance.md) | 47 | `declaration-track:a1d2dc4cff3d0cbdc494412f1d608b8617eee0d6c56361a805869f4f3ad8e0b0` |
+| 3 | `def` | [mapBifunctorFlipIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/BifunctorFlipNamespaced.lean/declarations/mapbifunctorflipiso.md) | 52 | `declaration-track:bcce633eddd552e3acc55690a616a37c30284b54bbd3257b2e7c7a665a7798aa` |
+| 4 | `lemma` | [mapBifunctorFlipIso_flip](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/BifunctorFlipNamespaced.lean/declarations/mapbifunctorflipiso-flip.md) | 56 | `result-track:1cbcb7081c6d75e8b44037ad9b33ee065986622142c3e99ea5e468ccc772e23a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

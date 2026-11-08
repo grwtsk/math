@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/CurvatureBalanceNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/CurvatureBalanceNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CurvatureBalanceNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CurvatureBalanceNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CurvatureBalance](../../../../../ComputerScience/AlgorithmsInComputerScience/CurvatureBalanceNamespaced.lean/declarations/curvaturebalance.md) | 15 | `declaration-track:8b6146f468048898772151d7c7a2dc0954e90d58aae9f105921c1670a0f847c1` |
-| 2 | `structure` | [TheoremCreationObligation](../../../../../ComputerScience/AlgorithmsInComputerScience/CurvatureBalanceNamespaced.lean/declarations/theoremcreationobligation.md) | 27 | `declaration-track:52c34176eb5f627fc4481ea31f21250f461ccf10f1c74faa779965f12bbca311` |
-| 3 | `theorem` | [unbalanced_curvature_creates_theorem_obligation](../../../../../ComputerScience/AlgorithmsInComputerScience/CurvatureBalanceNamespaced.lean/declarations/unbalanced-curvature-creates-theorem-obligation.md) | 37 | `result-track:a93ff8de857427849cbdf1c5558147015bacd449770e9b3ca0d974b1effeca03` |
+| 1 | `structure` | [CurvatureBalance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CurvatureBalanceNamespaced.lean/declarations/curvaturebalance.md) | 15 | `declaration-track:8b6146f468048898772151d7c7a2dc0954e90d58aae9f105921c1670a0f847c1` |
+| 2 | `structure` | [TheoremCreationObligation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CurvatureBalanceNamespaced.lean/declarations/theoremcreationobligation.md) | 27 | `declaration-track:52c34176eb5f627fc4481ea31f21250f461ccf10f1c74faa779965f12bbca311` |
+| 3 | `theorem` | [unbalanced_curvature_creates_theorem_obligation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CurvatureBalanceNamespaced.lean/declarations/unbalanced-curvature-creates-theorem-obligation.md) | 37 | `result-track:a93ff8de857427849cbdf1c5558147015bacd449770e9b3ca0d974b1effeca03` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

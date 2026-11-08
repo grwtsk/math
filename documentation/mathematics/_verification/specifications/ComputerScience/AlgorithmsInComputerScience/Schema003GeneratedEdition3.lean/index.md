@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Schema003GeneratedEdition3.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Schema003GeneratedEdition3.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Schema003GeneratedEdition3.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Schema003GeneratedEdition3.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [policy](../../../../../ComputerScience/AlgorithmsInComputerScience/Schema003GeneratedEdition3.lean/declarations/policy.md) | 7 | `declaration-track:f8981971e37223dfbd8dd200318232ddf67923f1217a6664947084e03807a217` |
-| 2 | `def` | [sourceSha256](../../../../../ComputerScience/AlgorithmsInComputerScience/Schema003GeneratedEdition3.lean/declarations/sourcesha256.md) | 16 | `declaration-track:f4bee2f76921b94f95f488ef11efe6abe5e50135f384591a2dde97e646913449` |
-| 3 | `def` | [generatedEntries](../../../../../ComputerScience/AlgorithmsInComputerScience/Schema003GeneratedEdition3.lean/declarations/generatedentries.md) | 18 | `declaration-track:3ce8c366ca528aeeeceaa9ef67e8c3b8ab77431ef70d8eb27b99e63299cf8782` |
-| 4 | `def` | [generatedEntryCount](../../../../../ComputerScience/AlgorithmsInComputerScience/Schema003GeneratedEdition3.lean/declarations/generatedentrycount.md) | 20665 | `declaration-track:e13ba1660dd28dcfd92e2c8e1bdd69e7fd4dfa8b5992912923840708ba5afb86` |
+| 1 | `def` | [policy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Schema003GeneratedEdition3.lean/declarations/policy.md) | 7 | `declaration-track:f8981971e37223dfbd8dd200318232ddf67923f1217a6664947084e03807a217` |
+| 2 | `def` | [sourceSha256](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Schema003GeneratedEdition3.lean/declarations/sourcesha256.md) | 16 | `declaration-track:f4bee2f76921b94f95f488ef11efe6abe5e50135f384591a2dde97e646913449` |
+| 3 | `def` | [generatedEntries](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Schema003GeneratedEdition3.lean/declarations/generatedentries.md) | 18 | `declaration-track:3ce8c366ca528aeeeceaa9ef67e8c3b8ab77431ef70d8eb27b99e63299cf8782` |
+| 4 | `def` | [generatedEntryCount](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Schema003GeneratedEdition3.lean/declarations/generatedentrycount.md) | 20665 | `declaration-track:e13ba1660dd28dcfd92e2c8e1bdd69e7fd4dfa8b5992912923840708ba5afb86` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

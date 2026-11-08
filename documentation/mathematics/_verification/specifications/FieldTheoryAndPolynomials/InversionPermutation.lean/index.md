@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FieldTheoryAndPolynomials/InversionPermutation.lean/index.md) · [Full source](../../../../FieldTheoryAndPolynomials/InversionPermutation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/InversionPermutation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/InversionPermutation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,10 +62,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [inversionPermutation](../../../../FieldTheoryAndPolynomials/InversionPermutation.lean/declarations/inversionpermutation.md) | 65 | `declaration-track:b00e0ba918966faefb5b7162389cbf5fff62f46867b6332016a27cd4b330928c` |
-| 2 | `theorem` | [inversionPermutation_apply](../../../../FieldTheoryAndPolynomials/InversionPermutation.lean/declarations/inversionpermutation-apply.md) | 72 | `result-track:85bdaa4c0907c874a266901e09481092beaeaa3d2f4ed5b2966b3ea9e8b3ec8d` |
-| 3 | `theorem` | [inversionPermutation_zero](../../../../FieldTheoryAndPolynomials/InversionPermutation.lean/declarations/inversionpermutation-zero.md) | 77 | `result-track:347b2d7561354a98518d3c20785c6ea41316cff1d0bc62dfe56727b4e41cf970` |
-| 4 | `theorem` | [inversionPermutation_involutive](../../../../FieldTheoryAndPolynomials/InversionPermutation.lean/declarations/inversionpermutation-involutive.md) | 82 | `result-track:a05b86c16418a835698d21e80f0cc76d1ec8c7d13c0d47e49992e5d32046ce70` |
+| 1 | `def` | [inversionPermutation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/InversionPermutation.lean/declarations/inversionpermutation.md) | 65 | `declaration-track:b00e0ba918966faefb5b7162389cbf5fff62f46867b6332016a27cd4b330928c` |
+| 2 | `theorem` | [inversionPermutation_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/InversionPermutation.lean/declarations/inversionpermutation-apply.md) | 72 | `result-track:85bdaa4c0907c874a266901e09481092beaeaa3d2f4ed5b2966b3ea9e8b3ec8d` |
+| 3 | `theorem` | [inversionPermutation_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/InversionPermutation.lean/declarations/inversionpermutation-zero.md) | 77 | `result-track:347b2d7561354a98518d3c20785c6ea41316cff1d0bc62dfe56727b4e41cf970` |
+| 4 | `theorem` | [inversionPermutation_involutive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/InversionPermutation.lean/declarations/inversionpermutation-involutive.md) | 82 | `result-track:a05b86c16418a835698d21e80f0cc76d1ec8c7d13c0d47e49992e5d32046ce70` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

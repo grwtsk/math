@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/Attempt02ShiftedInventory.lean/index.md) · [Full source](../../../../GeneralTopology/Attempt02ShiftedInventory.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Attempt02ShiftedInventory.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Attempt02ShiftedInventory.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [shiftedInventory](../../../../GeneralTopology/Attempt02ShiftedInventory.lean/declarations/shiftedinventory.md) | 17 | `declaration-track:d9888642984e273564576ffef30faf6807d77d9138de5b0f3475f7edbdb125a6` |
-| 2 | `theorem` | [mem_shiftedInventory_iff](../../../../GeneralTopology/Attempt02ShiftedInventory.lean/declarations/mem-shiftedinventory-iff.md) | 21 | `result-track:2464e735f1acfaa2f58fdcf4ecb3a8364ec8fc0e6d5a189dbfbb0dbb9cdb3530` |
-| 3 | `theorem` | [shiftedInventory_onset_iff](../../../../GeneralTopology/Attempt02ShiftedInventory.lean/declarations/shiftedinventory-onset-iff.md) | 39 | `result-track:35fcbd37bb2659e1a739a9c025079ad8000f4e3750608e9ef4497e235c12d143` |
-| 4 | `theorem` | [closedOnsetAtom_zero_outside](../../../../GeneralTopology/Attempt02ShiftedInventory.lean/declarations/closedonsetatom-zero-outside.md) | 44 | `result-track:99a9d5331f4a7244e410b5051031423d468b0cdf501c6364b614b7e4fc00f618` |
-| 5 | `theorem` | [closedOnsetPrefix_eq_finite_shifted](../../../../GeneralTopology/Attempt02ShiftedInventory.lean/declarations/closedonsetprefix-eq-finite-shifted.md) | 50 | `result-track:37e9c25c261487e50a488e4d273cb9da925f15788159ca0486619c1ee773a2e1` |
+| 1 | `def` | [shiftedInventory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Attempt02ShiftedInventory.lean/declarations/shiftedinventory.md) | 17 | `declaration-track:d9888642984e273564576ffef30faf6807d77d9138de5b0f3475f7edbdb125a6` |
+| 2 | `theorem` | [mem_shiftedInventory_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Attempt02ShiftedInventory.lean/declarations/mem-shiftedinventory-iff.md) | 21 | `result-track:2464e735f1acfaa2f58fdcf4ecb3a8364ec8fc0e6d5a189dbfbb0dbb9cdb3530` |
+| 3 | `theorem` | [shiftedInventory_onset_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Attempt02ShiftedInventory.lean/declarations/shiftedinventory-onset-iff.md) | 39 | `result-track:35fcbd37bb2659e1a739a9c025079ad8000f4e3750608e9ef4497e235c12d143` |
+| 4 | `theorem` | [closedOnsetAtom_zero_outside](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Attempt02ShiftedInventory.lean/declarations/closedonsetatom-zero-outside.md) | 44 | `result-track:99a9d5331f4a7244e410b5051031423d468b0cdf501c6364b614b7e4fc00f618` |
+| 5 | `theorem` | [closedOnsetPrefix_eq_finite_shifted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Attempt02ShiftedInventory.lean/declarations/closedonsetprefix-eq-finite-shifted.md) | 50 | `result-track:37e9c25c261487e50a488e4d273cb9da925f15788159ca0486619c1ee773a2e1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

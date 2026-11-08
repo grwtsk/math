@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/HahnBanachExtensionExtensionSourceEdition1.lean/index.md) · [Full source](../../../../FunctionalAnalysis/HahnBanachExtensionExtensionSourceEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HahnBanachExtensionExtensionSourceEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HahnBanachExtensionExtensionSourceEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,14 +60,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_extension_norm_eq](../../../../FunctionalAnalysis/HahnBanachExtensionExtensionSourceEdition1.lean/declarations/exists-extension-norm-eq.md) | 41 | `result-track:95c0827cec55bb74dedebb96cfc60049c06a3e77eb07768ffc098d588e6534bf` |
-| 2 | `theorem` | [exists_extension_norm_eq](../../../../FunctionalAnalysis/HahnBanachExtensionExtensionSourceEdition1.lean/declarations/exists-extension-norm-eq-source-edition-2.md) | 70 | `result-track:b22cbeb547b5a4b18f08e4842213fadfc4692ddf61f7f5a01b749cc34df2ffc8` |
-| 3 | `lemma` | [ContinuousLinearMap.exist_extension_of_finiteDimensional_range](../../../../FunctionalAnalysis/HahnBanachExtensionExtensionSourceEdition1.lean/declarations/continuouslinearmap-exist-extension-of-finitedimensional-range.md) | 122 | `result-track:9f96f146ac951be78ab186fb4bb82bfc891a6100af1eb2a0fd2ca9e70abdf4b2` |
-| 4 | `lemma` | [Submodule.ClosedComplemented.of_finiteDimensional](../../../../FunctionalAnalysis/HahnBanachExtensionExtensionSourceEdition1.lean/declarations/submodule-closedcomplemented-of-finitedimensional.md) | 136 | `result-track:b122ce68b81de0ddca4dc3d5f969078bcb325b7887eb678769178830d93fa0b9` |
-| 5 | `theorem` | [coord_norm'](../../../../FunctionalAnalysis/HahnBanachExtensionExtensionSourceEdition1.lean/declarations/coord-norm.md) | 150 | `result-track:14a69e1c1eb35a4130cb63ca6b6fec6d48f33c0a5ea81445a6eb49cf38b68bea` |
-| 6 | `theorem` | [exists_dual_vector](../../../../FunctionalAnalysis/HahnBanachExtensionExtensionSourceEdition1.lean/declarations/exists-dual-vector.md) | 156 | `result-track:0a53e2cc1527e8e469fdab0fe67dd39ac1045e4f0974f8d21536b4633b0920ba` |
-| 7 | `theorem` | [exists_dual_vector'](../../../../FunctionalAnalysis/HahnBanachExtensionExtensionSourceEdition1.lean/declarations/exists-dual-vector-source-edition-3.md) | 169 | `result-track:9a82bf92b529682a429421a0d92495dba1a220211ec20bacfe031dc4a03d6e34` |
-| 8 | `theorem` | [exists_dual_vector''](../../../../FunctionalAnalysis/HahnBanachExtensionExtensionSourceEdition1.lean/declarations/exists-dual-vector-source-edition-2.md) | 180 | `result-track:715d7187269480d9107f8f4e40b1031c6f79090fdc4edc63ffd7371ce154e94f` |
+| 1 | `theorem` | [exists_extension_norm_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HahnBanachExtensionExtensionSourceEdition1.lean/declarations/exists-extension-norm-eq.md) | 41 | `result-track:95c0827cec55bb74dedebb96cfc60049c06a3e77eb07768ffc098d588e6534bf` |
+| 2 | `theorem` | [exists_extension_norm_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HahnBanachExtensionExtensionSourceEdition1.lean/declarations/exists-extension-norm-eq-source-edition-2.md) | 70 | `result-track:b22cbeb547b5a4b18f08e4842213fadfc4692ddf61f7f5a01b749cc34df2ffc8` |
+| 3 | `lemma` | [ContinuousLinearMap.exist_extension_of_finiteDimensional_range](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HahnBanachExtensionExtensionSourceEdition1.lean/declarations/continuouslinearmap-exist-extension-of-finitedimensional-range.md) | 122 | `result-track:9f96f146ac951be78ab186fb4bb82bfc891a6100af1eb2a0fd2ca9e70abdf4b2` |
+| 4 | `lemma` | [Submodule.ClosedComplemented.of_finiteDimensional](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HahnBanachExtensionExtensionSourceEdition1.lean/declarations/submodule-closedcomplemented-of-finitedimensional.md) | 136 | `result-track:b122ce68b81de0ddca4dc3d5f969078bcb325b7887eb678769178830d93fa0b9` |
+| 5 | `theorem` | [coord_norm'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HahnBanachExtensionExtensionSourceEdition1.lean/declarations/coord-norm.md) | 150 | `result-track:14a69e1c1eb35a4130cb63ca6b6fec6d48f33c0a5ea81445a6eb49cf38b68bea` |
+| 6 | `theorem` | [exists_dual_vector](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HahnBanachExtensionExtensionSourceEdition1.lean/declarations/exists-dual-vector.md) | 156 | `result-track:0a53e2cc1527e8e469fdab0fe67dd39ac1045e4f0974f8d21536b4633b0920ba` |
+| 7 | `theorem` | [exists_dual_vector'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HahnBanachExtensionExtensionSourceEdition1.lean/declarations/exists-dual-vector-source-edition-3.md) | 169 | `result-track:9a82bf92b529682a429421a0d92495dba1a220211ec20bacfe031dc4a03d6e34` |
+| 8 | `theorem` | [exists_dual_vector''](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HahnBanachExtensionExtensionSourceEdition1.lean/declarations/exists-dual-vector-source-edition-2.md) | 180 | `result-track:715d7187269480d9107f8f4e40b1031c6f79090fdc4edc63ffd7371ce154e94f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

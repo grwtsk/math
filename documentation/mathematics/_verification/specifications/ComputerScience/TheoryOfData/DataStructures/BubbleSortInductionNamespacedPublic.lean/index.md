@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/BubbleSortInductionNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/BubbleSortInductionNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/BubbleSortInductionNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/BubbleSortInductionNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [bubble_sort_induction'](../../../../../../ComputerScience/TheoryOfData/DataStructures/BubbleSortInductionNamespacedPublic.lean/declarations/bubble-sort-induction-source-edition-2.md) | 46 | `result-track:97d663b50716dd46e180eb80e65a48372e9373b3f25c4910dd6f62d3210bd47b` |
-| 2 | `theorem` | [bubble_sort_induction](../../../../../../ComputerScience/TheoryOfData/DataStructures/BubbleSortInductionNamespacedPublic.lean/declarations/bubble-sort-induction.md) | 60 | `result-track:078c9f3d815882ab8682a95fee21d12b756831dacd76ac629cd6088a89ebd664` |
+| 1 | `theorem` | [bubble_sort_induction'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/BubbleSortInductionNamespacedPublic.lean/declarations/bubble-sort-induction-source-edition-2.md) | 46 | `result-track:97d663b50716dd46e180eb80e65a48372e9373b3f25c4910dd6f62d3210bd47b` |
+| 2 | `theorem` | [bubble_sort_induction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/BubbleSortInductionNamespacedPublic.lean/declarations/bubble-sort-induction.md) | 60 | `result-track:078c9f3d815882ab8682a95fee21d12b756831dacd76ac629cd6088a89ebd664` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

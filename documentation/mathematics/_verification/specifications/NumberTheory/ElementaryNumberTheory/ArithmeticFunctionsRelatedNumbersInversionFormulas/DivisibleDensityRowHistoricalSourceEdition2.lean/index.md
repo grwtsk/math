@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DivisibleDensityRowHistoricalSourceEdition2.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DivisibleDensityRowHistoricalSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DivisibleDensityRowHistoricalSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DivisibleDensityRowHistoricalSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.FunctionFieldArithmetic.DensityMoebius`](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityMoebiusHistoricalSourceEdition2.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.FunctionFieldArithmetic.DensityMoebius`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityMoebiusHistoricalSourceEdition2.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Data.Nat.Prime.Infinite` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [divisible_density_row_at_cutoff](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DivisibleDensityRowHistoricalSourceEdition2.lean/declarations/divisible-density-row-at-cutoff.md) | 19 | `result-track:0d3f74efb97459bdc3eead3ffd0c88f8a2d0c14e98ae3d5543c1348f9939fa36` |
-| 2 | `theorem` | [prime_divisible_density_row_at_cutoff](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DivisibleDensityRowHistoricalSourceEdition2.lean/declarations/prime-divisible-density-row-at-cutoff.md) | 35 | `result-track:7da2e63c071444a25fa61617cd6f6d91aecec08ff576ed180218b022424cb9ae` |
-| 3 | `theorem` | [prime_divisible_row_exceeds_inverse_square](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DivisibleDensityRowHistoricalSourceEdition2.lean/declarations/prime-divisible-row-exceeds-inverse-square.md) | 44 | `result-track:b4d405b99a356842ee985dfb5db4642f3436ff3b00e0bc71dedf88ee15115f72` |
+| 1 | `theorem` | [divisible_density_row_at_cutoff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DivisibleDensityRowHistoricalSourceEdition2.lean/declarations/divisible-density-row-at-cutoff.md) | 19 | `result-track:0d3f74efb97459bdc3eead3ffd0c88f8a2d0c14e98ae3d5543c1348f9939fa36` |
+| 2 | `theorem` | [prime_divisible_density_row_at_cutoff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DivisibleDensityRowHistoricalSourceEdition2.lean/declarations/prime-divisible-density-row-at-cutoff.md) | 35 | `result-track:7da2e63c071444a25fa61617cd6f6d91aecec08ff576ed180218b022424cb9ae` |
+| 3 | `theorem` | [prime_divisible_row_exceeds_inverse_square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DivisibleDensityRowHistoricalSourceEdition2.lean/declarations/prime-divisible-row-exceeds-inverse-square.md) | 44 | `result-track:b4d405b99a356842ee985dfb5db4642f3436ff3b00e0bc71dedf88ee15115f72` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

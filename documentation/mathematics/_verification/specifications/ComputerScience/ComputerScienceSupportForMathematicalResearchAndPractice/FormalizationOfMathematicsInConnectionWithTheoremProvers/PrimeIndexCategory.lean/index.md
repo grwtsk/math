@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PrimeIndexCategory.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PrimeIndexCategory.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PrimeIndexCategory.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PrimeIndexCategory.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PrimeStateInclusion](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PrimeIndexCategory.lean/declarations/primestateinclusion.md) | 14 | `declaration-track:ca7e5093ab7be704723318457b4eb476056067a4cca5664422c50889dd69431f` |
-| 2 | `def` | [PrimeStateInclusion.identity](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PrimeIndexCategory.lean/declarations/primestateinclusion-identity.md) | 27 | `declaration-track:b96f81334a1f00a90c2061647ce52c92f4dc9518dd3317349592d105ee673d0e` |
-| 3 | `def` | [PrimeStateInclusion.compose](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PrimeIndexCategory.lean/declarations/primestateinclusion-compose.md) | 41 | `declaration-track:601723c8cb664946cb44b6b1eb1bd4db6150cc491fe7e841a1b8971ec0bb9cb9` |
-| 4 | `abbrev` | [PrimeStateRestriction](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PrimeIndexCategory.lean/declarations/primestaterestriction.md) | 71 | `declaration-track:b51c3a828f02f14ab525ce3919091413930d45fc69fd6932d843cc2129f090db` |
+| 1 | `structure` | [PrimeStateInclusion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PrimeIndexCategory.lean/declarations/primestateinclusion.md) | 14 | `declaration-track:ca7e5093ab7be704723318457b4eb476056067a4cca5664422c50889dd69431f` |
+| 2 | `def` | [PrimeStateInclusion.identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PrimeIndexCategory.lean/declarations/primestateinclusion-identity.md) | 27 | `declaration-track:b96f81334a1f00a90c2061647ce52c92f4dc9518dd3317349592d105ee673d0e` |
+| 3 | `def` | [PrimeStateInclusion.compose](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PrimeIndexCategory.lean/declarations/primestateinclusion-compose.md) | 41 | `declaration-track:601723c8cb664946cb44b6b1eb1bd4db6150cc491fe7e841a1b8971ec0bb9cb9` |
+| 4 | `abbrev` | [PrimeStateRestriction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PrimeIndexCategory.lean/declarations/primestaterestriction.md) | 71 | `declaration-track:b51c3a828f02f14ab525ce3919091413930d45fc69fd6932d843cc2129f090db` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

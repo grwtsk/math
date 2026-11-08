@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListCountNamespacedCountPJoin.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListCountNamespacedCountPJoin.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListCountNamespacedCountPJoin.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListCountNamespacedCountPJoin.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [countP_join](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListCountNamespacedCountPJoin.lean/declarations/countp-join.md) | 55 | `result-track:b6e8e213a034f31c4e50f32341758c50adac3e822d2880e6e09f82754f3f9baf` |
-| 2 | `theorem` | [length_filter_lt_length_iff_exists](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListCountNamespacedCountPJoin.lean/declarations/length-filter-lt-length-iff-exists.md) | 66 | `result-track:ba2cf3e818ec7349caa6ab0fb5f875b57de8faef9567ec07cc648e388c08060f` |
-| 3 | `theorem` | [count_cons'](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListCountNamespacedCountPJoin.lean/declarations/count-cons.md) | 96 | `result-track:41894aea108ec16f4cff0dd576ad6918891544aa03212fcf992f615d2d5ce2a1` |
-| 4 | `theorem` | [count_join](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListCountNamespacedCountPJoin.lean/declarations/count-join.md) | 123 | `result-track:6b9b96e9d9f32eaf2b12223a44eb57bef21f3af3027a8629d0bdf03f3b9b41fe` |
-| 5 | `theorem` | [count_bind](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListCountNamespacedCountPJoin.lean/declarations/count-bind.md) | 155 | `result-track:7ef245cad0a82f9f18e2942576df21fda7ac7b190b195cbad8076b6fb39f3dcf` |
-| 6 | `theorem` | [count_map_of_injective](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListCountNamespacedCountPJoin.lean/declarations/count-map-of-injective.md) | 160 | `result-track:195c1544f996c4509e107f843e72d113ae48f352c7b5d7331334be9e48b665ba` |
-| 7 | `theorem` | [prod_map_eq_pow_single](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListCountNamespacedCountPJoin.lean/declarations/prod-map-eq-pow-single.md) | 174 | `result-track:50bb2eb1eb28707a22386f4849d035e7556a5e448b44d8bca864ee1cce3287a1` |
-| 8 | `theorem` | [prod_eq_pow_single](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListCountNamespacedCountPJoin.lean/declarations/prod-eq-pow-single.md) | 187 | `result-track:a218f9861afbeaa1854cf7053224ce2bc90b74609c05b2d8f32137035a670d5f` |
+| 1 | `theorem` | [countP_join](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListCountNamespacedCountPJoin.lean/declarations/countp-join.md) | 55 | `result-track:b6e8e213a034f31c4e50f32341758c50adac3e822d2880e6e09f82754f3f9baf` |
+| 2 | `theorem` | [length_filter_lt_length_iff_exists](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListCountNamespacedCountPJoin.lean/declarations/length-filter-lt-length-iff-exists.md) | 66 | `result-track:ba2cf3e818ec7349caa6ab0fb5f875b57de8faef9567ec07cc648e388c08060f` |
+| 3 | `theorem` | [count_cons'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListCountNamespacedCountPJoin.lean/declarations/count-cons.md) | 96 | `result-track:41894aea108ec16f4cff0dd576ad6918891544aa03212fcf992f615d2d5ce2a1` |
+| 4 | `theorem` | [count_join](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListCountNamespacedCountPJoin.lean/declarations/count-join.md) | 123 | `result-track:6b9b96e9d9f32eaf2b12223a44eb57bef21f3af3027a8629d0bdf03f3b9b41fe` |
+| 5 | `theorem` | [count_bind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListCountNamespacedCountPJoin.lean/declarations/count-bind.md) | 155 | `result-track:7ef245cad0a82f9f18e2942576df21fda7ac7b190b195cbad8076b6fb39f3dcf` |
+| 6 | `theorem` | [count_map_of_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListCountNamespacedCountPJoin.lean/declarations/count-map-of-injective.md) | 160 | `result-track:195c1544f996c4509e107f843e72d113ae48f352c7b5d7331334be9e48b665ba` |
+| 7 | `theorem` | [prod_map_eq_pow_single](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListCountNamespacedCountPJoin.lean/declarations/prod-map-eq-pow-single.md) | 174 | `result-track:50bb2eb1eb28707a22386f4849d035e7556a5e448b44d8bca864ee1cce3287a1` |
+| 8 | `theorem` | [prod_eq_pow_single](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListCountNamespacedCountPJoin.lean/declarations/prod-eq-pow-single.md) | 187 | `result-track:a218f9861afbeaa1854cf7053224ce2bc90b74609c05b2d8f32137035a670d5f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

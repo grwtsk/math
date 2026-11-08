@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatEquiv.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatEquiv.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/PNatEquiv.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/PNatEquiv.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [_root_.Equiv.pnatEquivNat](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatEquiv.lean/declarations/root-equiv-pnatequivnat.md) | 15 | `declaration-track:0e9575cfe6832581d288512e830ee770c6118148926e33aa9828626132a9712b` |
+| 1 | `def` | [_root_.Equiv.pnatEquivNat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/PNatEquiv.lean/declarations/root-equiv-pnatequivnat.md) | 15 | `declaration-track:0e9575cfe6832581d288512e830ee770c6118148926e33aa9828626132a9712b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

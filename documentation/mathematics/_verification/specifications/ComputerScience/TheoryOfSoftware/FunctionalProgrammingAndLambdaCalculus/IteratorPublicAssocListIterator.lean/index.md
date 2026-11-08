@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IteratorPublicAssocListIterator.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IteratorPublicAssocListIterator.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IteratorPublicAssocListIterator.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IteratorPublicAssocListIterator.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [AssocListIterator](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IteratorPublicAssocListIterator.lean/declarations/assoclistiterator.md) | 25 | `declaration-track:f8ba57ed65279b051a8a32500801276f1ee6a14a9792113e9577b287d389a01b` |
-| 2 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IteratorPublicAssocListIterator.lean/declarations/instance-source-edition-3.md) | 28 | `declaration-track:df2d7705535067d11ba2434d2b2deff4137811cd7618168dd8ddc207d864e071` |
-| 3 | `def` | [AssocListIterator.finitenessRelation](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IteratorPublicAssocListIterator.lean/declarations/assoclistiterator-finitenessrelation.md) | 37 | `declaration-track:cdcc22c4e24cf1b70494b53f018cf9a6cdabcc0fbdf0671c50b0fcd4fafc3b44` |
-| 4 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IteratorPublicAssocListIterator.lean/declarations/instance-source-edition-2.md) | 46 | `declaration-track:bcd2fe1c5957abb14409c9f8a406d2953057b136f493f85000cdcf2e8a191a0c` |
-| 5 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IteratorPublicAssocListIterator.lean/declarations/instance.md) | 49 | `declaration-track:5ff8e7e6dc1be7e3b22dd4ecad8223b4df22e7eccf476ed9fa19521084ccbd8c` |
-| 6 | `def` | [iter](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IteratorPublicAssocListIterator.lean/declarations/iter.md) | 57 | `declaration-track:89cdadd45ef26cdb1f57b1725f189423b73acc95e0bfef1291f42b5ac8322185` |
+| 1 | `structure` | [AssocListIterator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IteratorPublicAssocListIterator.lean/declarations/assoclistiterator.md) | 25 | `declaration-track:f8ba57ed65279b051a8a32500801276f1ee6a14a9792113e9577b287d389a01b` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IteratorPublicAssocListIterator.lean/declarations/instance-source-edition-3.md) | 28 | `declaration-track:df2d7705535067d11ba2434d2b2deff4137811cd7618168dd8ddc207d864e071` |
+| 3 | `def` | [AssocListIterator.finitenessRelation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IteratorPublicAssocListIterator.lean/declarations/assoclistiterator-finitenessrelation.md) | 37 | `declaration-track:cdcc22c4e24cf1b70494b53f018cf9a6cdabcc0fbdf0671c50b0fcd4fafc3b44` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IteratorPublicAssocListIterator.lean/declarations/instance-source-edition-2.md) | 46 | `declaration-track:bcd2fe1c5957abb14409c9f8a406d2953057b136f493f85000cdcf2e8a191a0c` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IteratorPublicAssocListIterator.lean/declarations/instance.md) | 49 | `declaration-track:5ff8e7e6dc1be7e3b22dd4ecad8223b4df22e7eccf476ed9fa19521084ccbd8c` |
+| 6 | `def` | [iter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IteratorPublicAssocListIterator.lean/declarations/iter.md) | 57 | `declaration-track:89cdadd45ef26cdb1f57b1725f189423b73acc95e0bfef1291f42b5ac8322185` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

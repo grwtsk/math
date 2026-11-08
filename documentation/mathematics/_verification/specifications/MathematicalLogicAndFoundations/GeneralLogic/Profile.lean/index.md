@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Profile.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Profile.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Profile.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Profile.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [OrdinalNotationProfile](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Profile.lean/declarations/ordinalnotationprofile.md) | 12 | `declaration-track:443452e08979d2b643024bf4ef1997df70a3bf8c3cdb448ee2520a1a1ca3fd15` |
-| 2 | `theorem` | [ordinalTally_normalization_sound](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Profile.lean/declarations/ordinaltally-normalization-sound.md) | 30 | `result-track:59e29f2b040d68afcd99c4f7c3da6e28ccaf5a6d9baa87f4dabc505e5f79d3eb` |
-| 3 | `theorem` | [ordinalTally_normalization_idempotent](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Profile.lean/declarations/ordinaltally-normalization-idempotent.md) | 39 | `result-track:a56efd33b8ab4423d4dba8ca00bba313cfa56bd47e773fdc863f75be36d7f82f` |
+| 1 | `structure` | [OrdinalNotationProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Profile.lean/declarations/ordinalnotationprofile.md) | 12 | `declaration-track:443452e08979d2b643024bf4ef1997df70a3bf8c3cdb448ee2520a1a1ca3fd15` |
+| 2 | `theorem` | [ordinalTally_normalization_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Profile.lean/declarations/ordinaltally-normalization-sound.md) | 30 | `result-track:59e29f2b040d68afcd99c4f7c3da6e28ccaf5a6d9baa87f4dabc505e5f79d3eb` |
+| 3 | `theorem` | [ordinalTally_normalization_idempotent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Profile.lean/declarations/ordinaltally-normalization-idempotent.md) | 39 | `result-track:a56efd33b8ab4423d4dba8ca00bba313cfa56bd47e773fdc863f75be36d7f82f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/TheoremTensor.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/TheoremTensor.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TheoremTensor.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TheoremTensor.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [halfTurn](../../../../../ComputerScience/AlgorithmsInComputerScience/TheoremTensor.lean/declarations/halfturn.md) | 6 | `declaration-track:fe777fa1f74dff4c2bdb4f42cb475e01311caff79b45261b293d55ece3bb3221` |
-| 2 | `theorem` | [halfTurn_involution](../../../../../ComputerScience/AlgorithmsInComputerScience/TheoremTensor.lean/declarations/halfturn-involution.md) | 8 | `result-track:c383971448c52fb0e9f219f7159318a8b68149bff52ca01161d58f32d5c3208f` |
-| 3 | `theorem` | [halfTurn_preserves_length](../../../../../ComputerScience/AlgorithmsInComputerScience/TheoremTensor.lean/declarations/halfturn-preserves-length.md) | 12 | `result-track:5ada111ec427609872ee5f017fc0346e434cb21ba3d1c2a56c05a2395d5968b0` |
+| 1 | `def` | [halfTurn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TheoremTensor.lean/declarations/halfturn.md) | 6 | `declaration-track:fe777fa1f74dff4c2bdb4f42cb475e01311caff79b45261b293d55ece3bb3221` |
+| 2 | `theorem` | [halfTurn_involution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TheoremTensor.lean/declarations/halfturn-involution.md) | 8 | `result-track:c383971448c52fb0e9f219f7159318a8b68149bff52ca01161d58f32d5c3208f` |
+| 3 | `theorem` | [halfTurn_preserves_length](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TheoremTensor.lean/declarations/halfturn-preserves-length.md) | 12 | `result-track:5ada111ec427609872ee5f017fc0346e434cb21ba3d1c2a56c05a2395d5968b0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

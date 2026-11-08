@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StoredClassExists.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StoredClassExists.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StoredClassExists.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StoredClassExists.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [ktheory_index_has_class](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StoredClassExists.lean/declarations/ktheory-index-has-class.md) | 33 | `result-track:db9e63bff6e3ed68607c2be058c7fb16da03528de8bf658021b2b95b4181e94f` |
+| 1 | `theorem` | [ktheory_index_has_class](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StoredClassExists.lean/declarations/ktheory-index-has-class.md) | 33 | `result-track:db9e63bff6e3ed68607c2be058c7fb16da03528de8bf658021b2b95b4181e94f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

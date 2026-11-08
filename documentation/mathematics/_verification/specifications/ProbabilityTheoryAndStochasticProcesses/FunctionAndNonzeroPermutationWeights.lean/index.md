@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/FunctionAndNonzeroPermutationWeights.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/FunctionAndNonzeroPermutationWeights.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FunctionAndNonzeroPermutationWeights.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FunctionAndNonzeroPermutationWeights.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../ProbabilityTheoryAndStochasticProcesses/FunctionAndNonzeroPermutationWeights.lean/declarations/example-source-edition-3.md) | 39 | `declaration-track:7c89ac9d1dcfc63b82c8491bfdb8c0ecba422ebc1d470e8438c2900064c21010` |
-| 2 | `example` | [(anonymous)](../../../../ProbabilityTheoryAndStochasticProcesses/FunctionAndNonzeroPermutationWeights.lean/declarations/example-source-edition-7.md) | 40 | `declaration-track:f0685522e0e6285e2d569fde5f531713ec40a6b7f1efb0cc0bd0a5ba10d32aa5` |
-| 3 | `example` | [(anonymous)](../../../../ProbabilityTheoryAndStochasticProcesses/FunctionAndNonzeroPermutationWeights.lean/declarations/example-source-edition-6.md) | 41 | `declaration-track:a1154053ffbb4dbdcbfe171e68496ba14fe4d0648d489f13b57567e11db6e359` |
-| 4 | `example` | [(anonymous)](../../../../ProbabilityTheoryAndStochasticProcesses/FunctionAndNonzeroPermutationWeights.lean/declarations/example.md) | 42 | `declaration-track:05ef9ef1a6dc16fe5f11bd34dca4a8736d40efdb17ef193e954b98d745ae3c33` |
-| 5 | `example` | [(anonymous)](../../../../ProbabilityTheoryAndStochasticProcesses/FunctionAndNonzeroPermutationWeights.lean/declarations/example-source-edition-5.md) | 46 | `declaration-track:88e32c70c6c48af25e841032fb84feccb233cd1d7411989d15b6a8b2a5fe1d59` |
-| 6 | `example` | [(anonymous)](../../../../ProbabilityTheoryAndStochasticProcesses/FunctionAndNonzeroPermutationWeights.lean/declarations/example-source-edition-8.md) | 47 | `declaration-track:f63a333104c9a46de86ca76d75c19d9bf35e3b36e6af497f8d35405e2a7433a5` |
-| 7 | `example` | [(anonymous)](../../../../ProbabilityTheoryAndStochasticProcesses/FunctionAndNonzeroPermutationWeights.lean/declarations/example-source-edition-4.md) | 48 | `declaration-track:86c874e16e26f6c02800ddc9defa6450ffce7f058abfed1eaff12572349e181c` |
-| 8 | `example` | [(anonymous)](../../../../ProbabilityTheoryAndStochasticProcesses/FunctionAndNonzeroPermutationWeights.lean/declarations/example-source-edition-2.md) | 49 | `declaration-track:5b15a5aa0877d468d668df9453fd68afe26ea7134b3d02c71df2a78fe9cc19e7` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FunctionAndNonzeroPermutationWeights.lean/declarations/example-source-edition-3.md) | 39 | `declaration-track:7c89ac9d1dcfc63b82c8491bfdb8c0ecba422ebc1d470e8438c2900064c21010` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FunctionAndNonzeroPermutationWeights.lean/declarations/example-source-edition-7.md) | 40 | `declaration-track:f0685522e0e6285e2d569fde5f531713ec40a6b7f1efb0cc0bd0a5ba10d32aa5` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FunctionAndNonzeroPermutationWeights.lean/declarations/example-source-edition-6.md) | 41 | `declaration-track:a1154053ffbb4dbdcbfe171e68496ba14fe4d0648d489f13b57567e11db6e359` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FunctionAndNonzeroPermutationWeights.lean/declarations/example.md) | 42 | `declaration-track:05ef9ef1a6dc16fe5f11bd34dca4a8736d40efdb17ef193e954b98d745ae3c33` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FunctionAndNonzeroPermutationWeights.lean/declarations/example-source-edition-5.md) | 46 | `declaration-track:88e32c70c6c48af25e841032fb84feccb233cd1d7411989d15b6a8b2a5fe1d59` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FunctionAndNonzeroPermutationWeights.lean/declarations/example-source-edition-8.md) | 47 | `declaration-track:f63a333104c9a46de86ca76d75c19d9bf35e3b36e6af497f8d35405e2a7433a5` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FunctionAndNonzeroPermutationWeights.lean/declarations/example-source-edition-4.md) | 48 | `declaration-track:86c874e16e26f6c02800ddc9defa6450ffce7f058abfed1eaff12572349e181c` |
+| 8 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FunctionAndNonzeroPermutationWeights.lean/declarations/example-source-edition-2.md) | 49 | `declaration-track:5b15a5aa0877d468d668df9453fd68afe26ea7134b3d02c71df2a78fe9cc19e7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

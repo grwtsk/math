@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CycleRealizationObstruction.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CycleRealizationObstruction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CycleRealizationObstruction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CycleRealizationObstruction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [HodgeClassObject](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CycleRealizationObstruction.lean/declarations/hodgeclassobject.md) | 17 | `declaration-track:d43a2fdfc7ed9a6ec7558c7674a2267522b1235880c9fbb5008efe96ce255731` |
-| 2 | `structure` | [AlgebraicCycleObject](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CycleRealizationObstruction.lean/declarations/algebraiccycleobject.md) | 20 | `declaration-track:6fdbde9beb4022688e835340c601c7560645ce27a290a53b0dc4c550d639ed2e` |
-| 3 | `structure` | [CycleRealizationObstruction](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CycleRealizationObstruction.lean/declarations/cyclerealizationobstruction.md) | 23 | `declaration-track:61541c06cc806c5e998cfecdb4dfb82a1b8ef0dcc5896fdf1df1c7f801371aaa` |
-| 4 | `theorem` | [hodge_cycle_obstruction_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CycleRealizationObstruction.lean/declarations/hodge-cycle-obstruction-if-supplied.md) | 30 | `result-track:7b337b4f9c36d73f432fdb0b570818d0f65bf4a7d206e7d9828569f59f7d8249` |
+| 1 | `structure` | [HodgeClassObject](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CycleRealizationObstruction.lean/declarations/hodgeclassobject.md) | 17 | `declaration-track:d43a2fdfc7ed9a6ec7558c7674a2267522b1235880c9fbb5008efe96ce255731` |
+| 2 | `structure` | [AlgebraicCycleObject](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CycleRealizationObstruction.lean/declarations/algebraiccycleobject.md) | 20 | `declaration-track:6fdbde9beb4022688e835340c601c7560645ce27a290a53b0dc4c550d639ed2e` |
+| 3 | `structure` | [CycleRealizationObstruction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CycleRealizationObstruction.lean/declarations/cyclerealizationobstruction.md) | 23 | `declaration-track:61541c06cc806c5e998cfecdb4dfb82a1b8ef0dcc5896fdf1df1c7f801371aaa` |
+| 4 | `theorem` | [hodge_cycle_obstruction_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CycleRealizationObstruction.lean/declarations/hodge-cycle-obstruction-if-supplied.md) | 30 | `result-track:7b337b4f9c36d73f432fdb0b570818d0f65bf4a7d206e7d9828569f59f7d8249` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

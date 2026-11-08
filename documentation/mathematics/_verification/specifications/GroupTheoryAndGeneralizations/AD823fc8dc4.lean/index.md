@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/AD823fc8dc4.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/AD823fc8dc4.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/AD823fc8dc4.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/AD823fc8dc4.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [TwistedOneCocycle](../../../../GroupTheoryAndGeneralizations/AD823fc8dc4.lean/declarations/twistedonecocycle.md) | 13 | `declaration-track:e61cf1dcd054c2b7acc242364c310f63de7e9bb62b1074d287e2ce36f834bd50` |
+| 1 | `def` | [TwistedOneCocycle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/AD823fc8dc4.lean/declarations/twistedonecocycle.md) | 13 | `declaration-track:e61cf1dcd054c2b7acc242364c310f63de7e9bb62b1074d287e2ce36f834bd50` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

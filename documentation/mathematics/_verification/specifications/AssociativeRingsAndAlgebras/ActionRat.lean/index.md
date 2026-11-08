@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/ActionRat.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/ActionRat.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ActionRat.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ActionRat.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../AssociativeRingsAndAlgebras/ActionRat.lean/declarations/instance-source-edition-2.md) | 22 | `declaration-track:f9a7e65690657abf2401087e8ab656004432b6a5f89d59e26c058d7179b515a0` |
-| 2 | `instance` | [instIsScalarTowerRight](../../../../AssociativeRingsAndAlgebras/ActionRat.lean/declarations/instisscalartowerright.md) | 26 | `declaration-track:bc4ceae43747795bdece1b0d0b48b7e486d1d876d122c3345f78e273242b17f1` |
-| 3 | `instance` | [(anonymous)](../../../../AssociativeRingsAndAlgebras/ActionRat.lean/declarations/instance.md) | 34 | `declaration-track:184f0f67727f6e0ef299548c6a6887b9bfec5463ee1310d6d4050e5b915a6268` |
-| 4 | `instance` | [instIsScalarTowerRight](../../../../AssociativeRingsAndAlgebras/ActionRat.lean/declarations/instisscalartowerright-source-edition-2.md) | 38 | `declaration-track:c236bfc42e2ad251cc76f047c61e19668cf0a2329b61bd987363c41b2a1a3b58` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ActionRat.lean/declarations/instance-source-edition-2.md) | 22 | `declaration-track:f9a7e65690657abf2401087e8ab656004432b6a5f89d59e26c058d7179b515a0` |
+| 2 | `instance` | [instIsScalarTowerRight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ActionRat.lean/declarations/instisscalartowerright.md) | 26 | `declaration-track:bc4ceae43747795bdece1b0d0b48b7e486d1d876d122c3345f78e273242b17f1` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ActionRat.lean/declarations/instance.md) | 34 | `declaration-track:184f0f67727f6e0ef299548c6a6887b9bfec5463ee1310d6d4050e5b915a6268` |
+| 4 | `instance` | [instIsScalarTowerRight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ActionRat.lean/declarations/instisscalartowerright-source-edition-2.md) | 38 | `declaration-track:c236bfc42e2ad251cc76f047c61e19668cf0a2329b61bd987363c41b2a1a3b58` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

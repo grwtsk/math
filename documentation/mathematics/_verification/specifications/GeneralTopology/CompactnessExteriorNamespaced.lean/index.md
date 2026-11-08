@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/CompactnessExteriorNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/CompactnessExteriorNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompactnessExteriorNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompactnessExteriorNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [IsCompact.exterior_iff](../../../../GeneralTopology/CompactnessExteriorNamespaced.lean/declarations/iscompact-exterior-iff.md) | 28 | `result-track:b6e34c94a70acd356b118b6db92bef2d26455257be1dfdaeb83ad923f4ca7f61` |
+| 1 | `theorem` | [IsCompact.exterior_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompactnessExteriorNamespaced.lean/declarations/iscompact-exterior-iff.md) | 28 | `result-track:b6e34c94a70acd356b118b6db92bef2d26455257be1dfdaeb83ad923f4ca7f61` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

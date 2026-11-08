@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TorsionWitnessNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TorsionWitnessNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TorsionWitnessNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TorsionWitnessNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TorsionRadoWitness](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TorsionWitnessNamespaced.lean/declarations/torsionradowitness.md) | 16 | `declaration-track:28595db3711fa07d3ce2b064239d16e34200c47a8337ecbea0ad9104726ae02a` |
-| 2 | `def` | [TorsionRadoWitness.admitted](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TorsionWitnessNamespaced.lean/declarations/torsionradowitness-admitted.md) | 24 | `declaration-track:2af8faf593b3c1e136cf51a4dfd8f251cc7e5b74ab450a1d261ebf5b276b63f6` |
-| 3 | `theorem` | [torsion_witness_is_bridge](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TorsionWitnessNamespaced.lean/declarations/torsion-witness-is-bridge.md) | 27 | `result-track:56e437e094d4a5ad49808b6f138d4c944f1c3306dad9d37e1534fa30fc782bd1` |
+| 1 | `structure` | [TorsionRadoWitness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TorsionWitnessNamespaced.lean/declarations/torsionradowitness.md) | 16 | `declaration-track:28595db3711fa07d3ce2b064239d16e34200c47a8337ecbea0ad9104726ae02a` |
+| 2 | `def` | [TorsionRadoWitness.admitted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TorsionWitnessNamespaced.lean/declarations/torsionradowitness-admitted.md) | 24 | `declaration-track:2af8faf593b3c1e136cf51a4dfd8f251cc7e5b74ab450a1d261ebf5b276b63f6` |
+| 3 | `theorem` | [torsion_witness_is_bridge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TorsionWitnessNamespaced.lean/declarations/torsion-witness-is-bridge.md) | 27 | `result-track:56e437e094d4a5ad49808b6f138d4c944f1c3306dad9d37e1534fa30fc782bd1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/FiniteResidualTelescope.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/FiniteResidualTelescope.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteResidualTelescope.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteResidualTelescope.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,17 +57,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [residualTotal](../../../../GroupTheoryAndGeneralizations/FiniteResidualTelescope.lean/declarations/residualtotal.md) | 28 | `declaration-track:43ad755a55beb7865c1173ff7579522f07a1cfe31362ef8e32005c16b5569834` |
-| 2 | `theorem` | [residualTotal_zero](../../../../GroupTheoryAndGeneralizations/FiniteResidualTelescope.lean/declarations/residualtotal-zero.md) | 32 | `result-track:cb8b8ded1da415f1c94495e1df4c51a30f1eb32d322f87aa71f7e4410d4fd11d` |
-| 3 | `theorem` | [residualTotal_succ](../../../../GroupTheoryAndGeneralizations/FiniteResidualTelescope.lean/declarations/residualtotal-succ.md) | 34 | `result-track:661105a8402ac58c037e7dc8663bd4226990945f252dc2f2770a9ec08ad623c2` |
-| 4 | `theorem` | [residualTotal_eq_endpointDifference](../../../../GroupTheoryAndGeneralizations/FiniteResidualTelescope.lean/declarations/residualtotal-eq-endpointdifference.md) | 38 | `result-track:d0ce89dae669025e4b299f2d92229a8e5cb8562de1a0362851bfd285ae5de99c` |
-| 5 | `theorem` | [exact_residual_telescope](../../../../GroupTheoryAndGeneralizations/FiniteResidualTelescope.lean/declarations/exact-residual-telescope.md) | 46 | `result-track:c1b664f0c9b54a53f69f710892e75600404af642fb92ac2affd69ecd5ee6202f` |
-| 6 | `def` | [VanishesAtInfinity](../../../../GroupTheoryAndGeneralizations/FiniteResidualTelescope.lean/declarations/vanishesatinfinity.md) | 54 | `declaration-track:12a1c6c7b503ba318a426689548fea1cc3a686d8cb255338de04ce0f34ca3297` |
-| 7 | `theorem` | [zero](../../../../GroupTheoryAndGeneralizations/FiniteResidualTelescope.lean/declarations/zero.md) | 60 | `result-track:18d4490b9874614c276b3ea8bb74d3eb09807b3500d0e01d80d23a2dfd9949f1` |
-| 8 | `theorem` | [neg](../../../../GroupTheoryAndGeneralizations/FiniteResidualTelescope.lean/declarations/neg.md) | 65 | `result-track:82731f81a8cabf1548d39bf01bc7c80617b5f3749eeeb1ba888160cb4d5b6e6b` |
-| 9 | `theorem` | [add](../../../../GroupTheoryAndGeneralizations/FiniteResidualTelescope.lean/declarations/add.md) | 74 | `result-track:fb08603f7d83eea5e6e6a76adad6106d9e7c7d1b8bdf1b6cf13b5a7c85c22d18` |
-| 10 | `theorem` | [sub](../../../../GroupTheoryAndGeneralizations/FiniteResidualTelescope.lean/declarations/sub.md) | 91 | `result-track:fc02287c5a5ccad9c246e600d8f2fd5b4c965f164d8d6cf8a88abef41df8db75` |
-| 11 | `theorem` | [of_nonnegative_bound](../../../../GroupTheoryAndGeneralizations/FiniteResidualTelescope.lean/declarations/of-nonnegative-bound.md) | 97 | `result-track:edde10f64817797842b864ad6fbbd5666ca01fb94f3026d3b4d58695c961361d` |
+| 1 | `def` | [residualTotal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteResidualTelescope.lean/declarations/residualtotal.md) | 28 | `declaration-track:43ad755a55beb7865c1173ff7579522f07a1cfe31362ef8e32005c16b5569834` |
+| 2 | `theorem` | [residualTotal_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteResidualTelescope.lean/declarations/residualtotal-zero.md) | 32 | `result-track:cb8b8ded1da415f1c94495e1df4c51a30f1eb32d322f87aa71f7e4410d4fd11d` |
+| 3 | `theorem` | [residualTotal_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteResidualTelescope.lean/declarations/residualtotal-succ.md) | 34 | `result-track:661105a8402ac58c037e7dc8663bd4226990945f252dc2f2770a9ec08ad623c2` |
+| 4 | `theorem` | [residualTotal_eq_endpointDifference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteResidualTelescope.lean/declarations/residualtotal-eq-endpointdifference.md) | 38 | `result-track:d0ce89dae669025e4b299f2d92229a8e5cb8562de1a0362851bfd285ae5de99c` |
+| 5 | `theorem` | [exact_residual_telescope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteResidualTelescope.lean/declarations/exact-residual-telescope.md) | 46 | `result-track:c1b664f0c9b54a53f69f710892e75600404af642fb92ac2affd69ecd5ee6202f` |
+| 6 | `def` | [VanishesAtInfinity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteResidualTelescope.lean/declarations/vanishesatinfinity.md) | 54 | `declaration-track:12a1c6c7b503ba318a426689548fea1cc3a686d8cb255338de04ce0f34ca3297` |
+| 7 | `theorem` | [zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteResidualTelescope.lean/declarations/zero.md) | 60 | `result-track:18d4490b9874614c276b3ea8bb74d3eb09807b3500d0e01d80d23a2dfd9949f1` |
+| 8 | `theorem` | [neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteResidualTelescope.lean/declarations/neg.md) | 65 | `result-track:82731f81a8cabf1548d39bf01bc7c80617b5f3749eeeb1ba888160cb4d5b6e6b` |
+| 9 | `theorem` | [add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteResidualTelescope.lean/declarations/add.md) | 74 | `result-track:fb08603f7d83eea5e6e6a76adad6106d9e7c7d1b8bdf1b6cf13b5a7c85c22d18` |
+| 10 | `theorem` | [sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteResidualTelescope.lean/declarations/sub.md) | 91 | `result-track:fc02287c5a5ccad9c246e600d8f2fd5b4c965f164d8d6cf8a88abef41df8db75` |
+| 11 | `theorem` | [of_nonnegative_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteResidualTelescope.lean/declarations/of-nonnegative-bound.md) | 97 | `result-track:edde10f64817797842b864ad6fbbd5666ca01fb94f3026d3b4d58695c961361d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

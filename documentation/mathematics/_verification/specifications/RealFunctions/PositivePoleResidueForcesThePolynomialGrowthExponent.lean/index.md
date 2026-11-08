@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/PositivePoleResidueForcesThePolynomialGrowthExponent.lean/index.md) · [Full source](../../../../RealFunctions/PositivePoleResidueForcesThePolynomialGrowthExponent.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PositivePoleResidueForcesThePolynomialGrowthExponent.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PositivePoleResidueForcesThePolynomialGrowthExponent.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [positive_residue_forces_exponent_le](../../../../RealFunctions/PositivePoleResidueForcesThePolynomialGrowthExponent.lean/declarations/positive-residue-forces-exponent-le.md) | 21 | `result-track:3a5b1aebf4639ed6694b0bba32a0dcbd53a06f90efedd6f7623e9bfd5550f38b` |
-| 2 | `theorem` | [positive_integer_residue_budget](../../../../RealFunctions/PositivePoleResidueForcesThePolynomialGrowthExponent.lean/declarations/positive-integer-residue-budget.md) | 35 | `result-track:c352e9acf046bdad1b64f054a99a03b7b870155bdcb68deefb731418038b39b5` |
-| 3 | `theorem` | [sublinear_growth_forces_simple](../../../../RealFunctions/PositivePoleResidueForcesThePolynomialGrowthExponent.lean/declarations/sublinear-growth-forces-simple.md) | 40 | `result-track:9379f9a1b63859d8ff6e2f45e34883c28a1d43352ed3f72bc97f2674b0a85a42` |
-| 4 | `theorem` | [borderline_residue_lower_bound](../../../../RealFunctions/PositivePoleResidueForcesThePolynomialGrowthExponent.lean/declarations/borderline-residue-lower-bound.md) | 45 | `result-track:f35384a4aff9c05cf7d1ca1f6f2233026c235f3fea6670e0b1b7cb0b15ea78c7` |
+| 1 | `theorem` | [positive_residue_forces_exponent_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PositivePoleResidueForcesThePolynomialGrowthExponent.lean/declarations/positive-residue-forces-exponent-le.md) | 21 | `result-track:3a5b1aebf4639ed6694b0bba32a0dcbd53a06f90efedd6f7623e9bfd5550f38b` |
+| 2 | `theorem` | [positive_integer_residue_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PositivePoleResidueForcesThePolynomialGrowthExponent.lean/declarations/positive-integer-residue-budget.md) | 35 | `result-track:c352e9acf046bdad1b64f054a99a03b7b870155bdcb68deefb731418038b39b5` |
+| 3 | `theorem` | [sublinear_growth_forces_simple](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PositivePoleResidueForcesThePolynomialGrowthExponent.lean/declarations/sublinear-growth-forces-simple.md) | 40 | `result-track:9379f9a1b63859d8ff6e2f45e34883c28a1d43352ed3f72bc97f2674b0a85a42` |
+| 4 | `theorem` | [borderline_residue_lower_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PositivePoleResidueForcesThePolynomialGrowthExponent.lean/declarations/borderline-residue-lower-bound.md) | 45 | `result-track:f35384a4aff9c05cf7d1ca1f6f2233026c235f3fea6670e0b1b7cb0b15ea78c7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

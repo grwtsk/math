@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/DirichletCharacterBoundsBoundsNamespaced.lean/index.md) · [Full source](../../../../NumberTheory/DirichletCharacterBoundsBoundsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DirichletCharacterBoundsBoundsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DirichletCharacterBoundsBoundsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [unit_norm_eq_one](../../../../NumberTheory/DirichletCharacterBoundsBoundsNamespaced.lean/declarations/unit-norm-eq-one.md) | 31 | `result-track:35c47ae7d247e2cb91a5e40103d1f46ec647cc0f2768a9a617b1ae28b1e69df1` |
-| 2 | `lemma` | [norm_le_one](../../../../NumberTheory/DirichletCharacterBoundsBoundsNamespaced.lean/declarations/norm-le-one.md) | 37 | `result-track:224fe8b0926c90fa5a1171b9146aa9a5b95805ee3fb0542664bfb32391d2b45d` |
+| 1 | `lemma` | [unit_norm_eq_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DirichletCharacterBoundsBoundsNamespaced.lean/declarations/unit-norm-eq-one.md) | 31 | `result-track:35c47ae7d247e2cb91a5e40103d1f46ec647cc0f2768a9a617b1ae28b1e69df1` |
+| 2 | `lemma` | [norm_le_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DirichletCharacterBoundsBoundsNamespaced.lean/declarations/norm-le-one.md) | 37 | `result-track:224fe8b0926c90fa5a1171b9146aa9a5b95805ee3fb0542664bfb32391d2b45d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

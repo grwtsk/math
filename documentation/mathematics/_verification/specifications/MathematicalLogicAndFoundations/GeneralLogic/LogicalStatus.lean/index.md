@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LogicalStatus.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LogicalStatus.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LogicalStatus.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LogicalStatus.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [LogicalStatus](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LogicalStatus.lean/declarations/logicalstatus.md) | 21 | `declaration-track:05b0e1c61ddf01be1f5eb8fad5954e84b8bfb0c1dc9d68e679bcb70c5fba1a64` |
-| 2 | `structure` | [Claim](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LogicalStatus.lean/declarations/claim.md) | 28 | `declaration-track:49b7b6a75f6479bb9d89a95f261b39f317b7c8e3547f6042654e3746ff5ac891` |
-| 3 | `structure` | [Certificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LogicalStatus.lean/declarations/certificate.md) | 32 | `declaration-track:a9b5fbfa5d51ae27a87bc0523598359a0cfcd14984e2e5463fff46b65ac9f71b` |
-| 4 | `structure` | [ConditionalCertificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LogicalStatus.lean/declarations/conditionalcertificate.md) | 36 | `declaration-track:4ce9b44c02db63a8e74f854e3853edf74b455ad34df9717e11c97415038ea820` |
-| 5 | `def` | [logicalStatus](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LogicalStatus.lean/declarations/logicalstatus-source-edition-2.md) | 42 | `declaration-track:6c764712d3e3abe93a43d38e1500e5d5976da3dbeae2a3ed8ed5da6eae76dd1d` |
-| 6 | `def` | [toConditional](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LogicalStatus.lean/declarations/toconditional.md) | 46 | `declaration-track:ccb0d3eb8f5d6f739cd0b781d78fbc1f9e62981f6b7cf5082f2d1b368679f4ba` |
-| 7 | `def` | [logicalStatus](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LogicalStatus.lean/declarations/logicalstatus-source-edition-4.md) | 54 | `declaration-track:9feb17250c125cc64350f90eeb84832a6997ffc6b1beb66dc1e915ee14cbdc79` |
-| 8 | `def` | [mapHypothesis](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LogicalStatus.lean/declarations/maphypothesis.md) | 58 | `declaration-track:2ed574c3197c50607b8c3c1f870f312fba3c982dbb82ba2c2a8cf015f6d103d2` |
-| 9 | `structure` | [ConjecturalTarget](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LogicalStatus.lean/declarations/conjecturaltarget.md) | 69 | `declaration-track:a7c02a1988177f24ad78a7fe3cc7ab87f953024823ab8159435e4873077db4c4` |
-| 10 | `def` | [logicalStatus](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LogicalStatus.lean/declarations/logicalstatus-source-edition-3.md) | 75 | `declaration-track:9ecf4cd4bdd419a5a450b6d597944d91efb23e311e2d1b91981c307eaa6d1d91` |
+| 1 | `inductive` | [LogicalStatus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LogicalStatus.lean/declarations/logicalstatus.md) | 21 | `declaration-track:05b0e1c61ddf01be1f5eb8fad5954e84b8bfb0c1dc9d68e679bcb70c5fba1a64` |
+| 2 | `structure` | [Claim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LogicalStatus.lean/declarations/claim.md) | 28 | `declaration-track:49b7b6a75f6479bb9d89a95f261b39f317b7c8e3547f6042654e3746ff5ac891` |
+| 3 | `structure` | [Certificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LogicalStatus.lean/declarations/certificate.md) | 32 | `declaration-track:a9b5fbfa5d51ae27a87bc0523598359a0cfcd14984e2e5463fff46b65ac9f71b` |
+| 4 | `structure` | [ConditionalCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LogicalStatus.lean/declarations/conditionalcertificate.md) | 36 | `declaration-track:4ce9b44c02db63a8e74f854e3853edf74b455ad34df9717e11c97415038ea820` |
+| 5 | `def` | [logicalStatus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LogicalStatus.lean/declarations/logicalstatus-source-edition-2.md) | 42 | `declaration-track:6c764712d3e3abe93a43d38e1500e5d5976da3dbeae2a3ed8ed5da6eae76dd1d` |
+| 6 | `def` | [toConditional](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LogicalStatus.lean/declarations/toconditional.md) | 46 | `declaration-track:ccb0d3eb8f5d6f739cd0b781d78fbc1f9e62981f6b7cf5082f2d1b368679f4ba` |
+| 7 | `def` | [logicalStatus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LogicalStatus.lean/declarations/logicalstatus-source-edition-4.md) | 54 | `declaration-track:9feb17250c125cc64350f90eeb84832a6997ffc6b1beb66dc1e915ee14cbdc79` |
+| 8 | `def` | [mapHypothesis](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LogicalStatus.lean/declarations/maphypothesis.md) | 58 | `declaration-track:2ed574c3197c50607b8c3c1f870f312fba3c982dbb82ba2c2a8cf015f6d103d2` |
+| 9 | `structure` | [ConjecturalTarget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LogicalStatus.lean/declarations/conjecturaltarget.md) | 69 | `declaration-track:a7c02a1988177f24ad78a7fe3cc7ab87f953024823ab8159435e4873077db4c4` |
+| 10 | `def` | [logicalStatus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LogicalStatus.lean/declarations/logicalstatus-source-edition-3.md) | 75 | `declaration-track:9ecf4cd4bdd419a5a450b6d597944d91efb23e311e2d1b91981c307eaa6d1d91` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

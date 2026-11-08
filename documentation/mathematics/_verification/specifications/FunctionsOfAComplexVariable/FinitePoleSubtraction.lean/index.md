@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/FinitePoleSubtraction.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/FinitePoleSubtraction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FinitePoleSubtraction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FinitePoleSubtraction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.LogarithmicPrincipalPart`](../../../../GeneralTopology/LogarithmicPrincipalPart.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.LogarithmicPrincipalPart`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LogarithmicPrincipalPart.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Analysis.Analytic.IsolatedZeros` — import line 5; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic.LinearCombination` — import line 6; external provider; requires a separately pinned dependency.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [analyticAt_dividedDifference](../../../../FunctionsOfAComplexVariable/FinitePoleSubtraction.lean/declarations/analyticat-divideddifference.md) | 29 | `result-track:50fc66775305aab8aca960ef19b2f8d15adf38cae81fa579bcf3987f40083160` |
-| 2 | `theorem` | [principal_part_mul](../../../../FunctionsOfAComplexVariable/FinitePoleSubtraction.lean/declarations/principal-part-mul.md) | 35 | `result-track:3a0b0b7a24f638c7061ad39a659bddf545dc2d284a0138319f427aedddbe3d6c` |
-| 3 | `theorem` | [simple_zero_factorization](../../../../FunctionsOfAComplexVariable/FinitePoleSubtraction.lean/declarations/simple-zero-factorization.md) | 52 | `result-track:cdd07a7a88dad49c88563836b972c89ac3dd05ba1886265aaf47b1d4ca4dc07b` |
-| 4 | `theorem` | [simple_zero_order_nat](../../../../FunctionsOfAComplexVariable/FinitePoleSubtraction.lean/declarations/simple-zero-order-nat.md) | 61 | `result-track:a61196c91a851652eba22a10c931058e780d6a41cb80c38751757071528f08bb` |
-| 5 | `theorem` | [simple_zero_log_principal_part](../../../../FunctionsOfAComplexVariable/FinitePoleSubtraction.lean/declarations/simple-zero-log-principal-part.md) | 71 | `result-track:86280084efb032bfea80ad7b13f258bea3f598b88f97951ea78968594cc8132f` |
-| 6 | `theorem` | [one_pole_subtraction](../../../../FunctionsOfAComplexVariable/FinitePoleSubtraction.lean/declarations/one-pole-subtraction.md) | 81 | `result-track:211d7068ee3f5d8490205c19cc6730aad848fc7a83a720ca371763490da2c17d` |
-| 7 | `theorem` | [finite_pole_subtraction](../../../../FunctionsOfAComplexVariable/FinitePoleSubtraction.lean/declarations/finite-pole-subtraction.md) | 102 | `result-track:7fd46d67cb924824ff30267b8c8324dcaa153a5e37a3ec62e401e996ffdcf569` |
+| 1 | `theorem` | [analyticAt_dividedDifference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FinitePoleSubtraction.lean/declarations/analyticat-divideddifference.md) | 29 | `result-track:50fc66775305aab8aca960ef19b2f8d15adf38cae81fa579bcf3987f40083160` |
+| 2 | `theorem` | [principal_part_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FinitePoleSubtraction.lean/declarations/principal-part-mul.md) | 35 | `result-track:3a0b0b7a24f638c7061ad39a659bddf545dc2d284a0138319f427aedddbe3d6c` |
+| 3 | `theorem` | [simple_zero_factorization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FinitePoleSubtraction.lean/declarations/simple-zero-factorization.md) | 52 | `result-track:cdd07a7a88dad49c88563836b972c89ac3dd05ba1886265aaf47b1d4ca4dc07b` |
+| 4 | `theorem` | [simple_zero_order_nat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FinitePoleSubtraction.lean/declarations/simple-zero-order-nat.md) | 61 | `result-track:a61196c91a851652eba22a10c931058e780d6a41cb80c38751757071528f08bb` |
+| 5 | `theorem` | [simple_zero_log_principal_part](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FinitePoleSubtraction.lean/declarations/simple-zero-log-principal-part.md) | 71 | `result-track:86280084efb032bfea80ad7b13f258bea3f598b88f97951ea78968594cc8132f` |
+| 6 | `theorem` | [one_pole_subtraction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FinitePoleSubtraction.lean/declarations/one-pole-subtraction.md) | 81 | `result-track:211d7068ee3f5d8490205c19cc6730aad848fc7a83a720ca371763490da2c17d` |
+| 7 | `theorem` | [finite_pole_subtraction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FinitePoleSubtraction.lean/declarations/finite-pole-subtraction.md) | 102 | `result-track:7fd46d67cb924824ff30267b8c8324dcaa153a5e37a3ec62e401e996ffdcf569` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

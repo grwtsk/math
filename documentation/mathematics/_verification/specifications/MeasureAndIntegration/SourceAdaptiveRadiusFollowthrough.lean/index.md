@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceAdaptiveRadiusFollowthrough.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceAdaptiveRadiusFollowthrough.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceAdaptiveRadiusFollowthrough.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceAdaptiveRadiusFollowthrough.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [strict_upper_of_triangular_tail](../../../../MeasureAndIntegration/SourceAdaptiveRadiusFollowthrough.lean/declarations/strict-upper-of-triangular-tail.md) | 15 | `result-track:dc8a4a2408d9e735429b8f0431fd1f91abb4160f8ed57c3f91ce6ad4e48e65c0` |
-| 2 | `theorem` | [residual_tail_of_finite_triangular_tail](../../../../MeasureAndIntegration/SourceAdaptiveRadiusFollowthrough.lean/declarations/residual-tail-of-finite-triangular-tail.md) | 21 | `result-track:c820ffb13221bb63cec69fc058d8eafd748d959f8865bae6a20ce4f1774a0aa7` |
-| 3 | `theorem` | [estimate_of_finite_triangular_tail](../../../../MeasureAndIntegration/SourceAdaptiveRadiusFollowthrough.lean/declarations/estimate-of-finite-triangular-tail.md) | 28 | `result-track:334d84b1c2e666cd9f72a041a309aaec2c149878616e2328f02a40d88c730b3e` |
-| 4 | `theorem` | [strict_upper_of_truncated_smoothing_tail](../../../../MeasureAndIntegration/SourceAdaptiveRadiusFollowthrough.lean/declarations/strict-upper-of-truncated-smoothing-tail.md) | 35 | `result-track:297d7939b0fda34275c8307c5249a414a22a946b14de22d981099eed9e6ba9cd` |
-| 5 | `theorem` | [residual_tail_of_truncated_smoothing_tail](../../../../MeasureAndIntegration/SourceAdaptiveRadiusFollowthrough.lean/declarations/residual-tail-of-truncated-smoothing-tail.md) | 54 | `result-track:cbb5cc7aabefd01ed5922cd13ecbaae70da6c47a244a2792200eaf64346e11b1` |
-| 6 | `theorem` | [estimate_of_truncated_smoothing_tail](../../../../MeasureAndIntegration/SourceAdaptiveRadiusFollowthrough.lean/declarations/estimate-of-truncated-smoothing-tail.md) | 68 | `result-track:d6748c7aecf2ee295c61f6f8b3f2f83a27eb3c583b2a7142b4afb8f23b0ccbfb` |
+| 1 | `theorem` | [strict_upper_of_triangular_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceAdaptiveRadiusFollowthrough.lean/declarations/strict-upper-of-triangular-tail.md) | 15 | `result-track:dc8a4a2408d9e735429b8f0431fd1f91abb4160f8ed57c3f91ce6ad4e48e65c0` |
+| 2 | `theorem` | [residual_tail_of_finite_triangular_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceAdaptiveRadiusFollowthrough.lean/declarations/residual-tail-of-finite-triangular-tail.md) | 21 | `result-track:c820ffb13221bb63cec69fc058d8eafd748d959f8865bae6a20ce4f1774a0aa7` |
+| 3 | `theorem` | [estimate_of_finite_triangular_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceAdaptiveRadiusFollowthrough.lean/declarations/estimate-of-finite-triangular-tail.md) | 28 | `result-track:334d84b1c2e666cd9f72a041a309aaec2c149878616e2328f02a40d88c730b3e` |
+| 4 | `theorem` | [strict_upper_of_truncated_smoothing_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceAdaptiveRadiusFollowthrough.lean/declarations/strict-upper-of-truncated-smoothing-tail.md) | 35 | `result-track:297d7939b0fda34275c8307c5249a414a22a946b14de22d981099eed9e6ba9cd` |
+| 5 | `theorem` | [residual_tail_of_truncated_smoothing_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceAdaptiveRadiusFollowthrough.lean/declarations/residual-tail-of-truncated-smoothing-tail.md) | 54 | `result-track:cbb5cc7aabefd01ed5922cd13ecbaae70da6c47a244a2792200eaf64346e11b1` |
+| 6 | `theorem` | [estimate_of_truncated_smoothing_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceAdaptiveRadiusFollowthrough.lean/declarations/estimate-of-truncated-smoothing-tail.md) | 68 | `result-track:d6748c7aecf2ee295c61f6f8b3f2f83a27eb3c583b2a7142b4afb8f23b0ccbfb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/EulerIdentityNamespacedPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/EulerIdentityNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EulerIdentityNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EulerIdentityNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [IsWeightedHomogeneous.pderiv](../../../../CommutativeAlgebra/EulerIdentityNamespacedPublic.lean/declarations/isweightedhomogeneous-pderiv.md) | 39 | `result-track:8a349953a60fc5c56b961c3d9803ff1413531c00884572356478850f8fce8a70` |
-| 2 | `lemma` | [IsHomogeneous.pderiv](../../../../CommutativeAlgebra/EulerIdentityNamespacedPublic.lean/declarations/ishomogeneous-pderiv.md) | 55 | `result-track:8a06faa943c5750147ef472fba3c6f4648a3bc8e467365afe9fd41379a4178c0` |
-| 3 | `theorem` | [IsWeightedHomogeneous.sum_weight_X_mul_pderiv](../../../../CommutativeAlgebra/EulerIdentityNamespacedPublic.lean/declarations/isweightedhomogeneous-sum-weight-x-mul-pderiv.md) | 66 | `result-track:949f5d5b700b8008f671857140b80384d210c9595876215c8eba975d9b149b57` |
-| 4 | `theorem` | [IsHomogeneous.sum_X_mul_pderiv](../../../../CommutativeAlgebra/EulerIdentityNamespacedPublic.lean/declarations/ishomogeneous-sum-x-mul-pderiv.md) | 81 | `result-track:43499c8a2afddde4db8cacd95314cfd6e63b23a2d172bde4dd9e03b3f3134063` |
+| 1 | `lemma` | [IsWeightedHomogeneous.pderiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EulerIdentityNamespacedPublic.lean/declarations/isweightedhomogeneous-pderiv.md) | 39 | `result-track:8a349953a60fc5c56b961c3d9803ff1413531c00884572356478850f8fce8a70` |
+| 2 | `lemma` | [IsHomogeneous.pderiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EulerIdentityNamespacedPublic.lean/declarations/ishomogeneous-pderiv.md) | 55 | `result-track:8a06faa943c5750147ef472fba3c6f4648a3bc8e467365afe9fd41379a4178c0` |
+| 3 | `theorem` | [IsWeightedHomogeneous.sum_weight_X_mul_pderiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EulerIdentityNamespacedPublic.lean/declarations/isweightedhomogeneous-sum-weight-x-mul-pderiv.md) | 66 | `result-track:949f5d5b700b8008f671857140b80384d210c9595876215c8eba975d9b149b57` |
+| 4 | `theorem` | [IsHomogeneous.sum_X_mul_pderiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EulerIdentityNamespacedPublic.lean/declarations/ishomogeneous-sum-x-mul-pderiv.md) | 81 | `result-track:43499c8a2afddde4db8cacd95314cfd6e63b23a2d172bde4dd9e03b3f3134063` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

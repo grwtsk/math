@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoequalizerNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoequalizerNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoequalizerNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoequalizerNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [Coequalizer.Rel](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoequalizerNamespaced.lean/declarations/coequalizer-rel.md) | 31 | `declaration-track:bb294f2e006792b431776e2a17e91cecbf95fe0812f1d6f1b08770232af92da9` |
-| 2 | `def` | [Coequalizer](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoequalizerNamespaced.lean/declarations/coequalizer.md) | 37 | `declaration-track:2d2f1705d527da3b33bf3edefc254466111e84d9a4b19bdf12ece7c69f6ded17` |
-| 3 | `def` | [mk](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoequalizerNamespaced.lean/declarations/mk.md) | 45 | `declaration-track:8f855785570686d9f5dd4bf2cd785a1b4960f91bf64aff0f191f765f839312a4` |
-| 4 | `lemma` | [condition](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoequalizerNamespaced.lean/declarations/condition.md) | 48 | `result-track:0513ac6128474bb64d65f717d0059c253f148172e30dfe9a51758419d6da9ccf` |
-| 5 | `lemma` | [mk_surjective](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoequalizerNamespaced.lean/declarations/mk-surjective.md) | 51 | `result-track:ccb4bcaf1198d65a7f0c44cb4fc3c68f6e337c002a5f12f14b4f6591180fcbab` |
-| 6 | `def` | [desc](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoequalizerNamespaced.lean/declarations/desc.md) | 55 | `declaration-track:86182816e9c45b16de6de1628bb82cb94f12490e7cbb637f7f0874287bc9a075` |
-| 7 | `lemma` | [desc_mk](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoequalizerNamespaced.lean/declarations/desc-mk.md) | 58 | `result-track:1638fa4197f44b7a67775ce800084518f8470c8cbb919355755f123c4b366000` |
+| 1 | `inductive` | [Coequalizer.Rel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoequalizerNamespaced.lean/declarations/coequalizer-rel.md) | 31 | `declaration-track:bb294f2e006792b431776e2a17e91cecbf95fe0812f1d6f1b08770232af92da9` |
+| 2 | `def` | [Coequalizer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoequalizerNamespaced.lean/declarations/coequalizer.md) | 37 | `declaration-track:2d2f1705d527da3b33bf3edefc254466111e84d9a4b19bdf12ece7c69f6ded17` |
+| 3 | `def` | [mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoequalizerNamespaced.lean/declarations/mk.md) | 45 | `declaration-track:8f855785570686d9f5dd4bf2cd785a1b4960f91bf64aff0f191f765f839312a4` |
+| 4 | `lemma` | [condition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoequalizerNamespaced.lean/declarations/condition.md) | 48 | `result-track:0513ac6128474bb64d65f717d0059c253f148172e30dfe9a51758419d6da9ccf` |
+| 5 | `lemma` | [mk_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoequalizerNamespaced.lean/declarations/mk-surjective.md) | 51 | `result-track:ccb4bcaf1198d65a7f0c44cb4fc3c68f6e337c002a5f12f14b4f6591180fcbab` |
+| 6 | `def` | [desc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoequalizerNamespaced.lean/declarations/desc.md) | 55 | `declaration-track:86182816e9c45b16de6de1628bb82cb94f12490e7cbb637f7f0874287bc9a075` |
+| 7 | `lemma` | [desc_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoequalizerNamespaced.lean/declarations/desc-mk.md) | 58 | `result-track:1638fa4197f44b7a67775ce800084518f8470c8cbb919355755f123c4b366000` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

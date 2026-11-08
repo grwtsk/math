@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/DivisibilityNamespaced.lean/index.md) · [Full source](../../../../NumberTheory/DivisibilityNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DivisibilityNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DivisibilityNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [dvd_iff_factorization_le](../../../../NumberTheory/DivisibilityNamespaced.lean/declarations/dvd-iff-factorization-le.md) | 27 | `result-track:865e47cb22f0166a722aacb5523aa240d968414a31b46e573d3ce40a9f27a290` |
-| 2 | `theorem` | [coprime_iff_disjoint_prime_support](../../../../NumberTheory/DivisibilityNamespaced.lean/declarations/coprime-iff-disjoint-prime-support.md) | 44 | `result-track:7e378c224efd002de83a2d3d56cceed496cb0d09268972f4621ded0755a0b348` |
+| 1 | `theorem` | [dvd_iff_factorization_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DivisibilityNamespaced.lean/declarations/dvd-iff-factorization-le.md) | 27 | `result-track:865e47cb22f0166a722aacb5523aa240d968414a31b46e573d3ce40a9f27a290` |
+| 2 | `theorem` | [coprime_iff_disjoint_prime_support](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DivisibilityNamespaced.lean/declarations/coprime-iff-disjoint-prime-support.md) | 44 | `result-track:7e378c224efd002de83a2d3d56cceed496cb0d09268972f4621ded0755a0b348` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

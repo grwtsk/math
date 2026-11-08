@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../DynamicalSystemsAndErgodicTheory/Minimal.lean/index.md) · [Full source](../../../../DynamicalSystemsAndErgodicTheory/Minimal.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/Minimal.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/Minimal.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,18 +57,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [AddAction.IsMinimal](../../../../DynamicalSystemsAndErgodicTheory/Minimal.lean/declarations/addaction-isminimal.md) | 29 | `declaration-track:8add60f9ef8b576982e1242dad1052b9d8a080671e7e6769110214877793f988` |
-| 2 | `class` | [MulAction.IsMinimal](../../../../DynamicalSystemsAndErgodicTheory/Minimal.lean/declarations/mulaction-isminimal.md) | 36 | `declaration-track:dfce6c3da29c581f93383be274a86751c9c03f3de4d05b043f1bb218cc0cd50a` |
-| 3 | `theorem` | [MulAction.dense_orbit](../../../../DynamicalSystemsAndErgodicTheory/Minimal.lean/declarations/mulaction-dense-orbit.md) | 46 | `result-track:b15f2be80846bffccd37db86fd32ec9e3b34e6d84e9ede62dbea439f62d81fe5` |
-| 4 | `theorem` | [denseRange_smul](../../../../DynamicalSystemsAndErgodicTheory/Minimal.lean/declarations/denserange-smul.md) | 50 | `result-track:0083096cc6a507eeacbb20d9723816959476839767655fa217c014353f654cec` |
-| 5 | `instance` | [(anonymous)](../../../../DynamicalSystemsAndErgodicTheory/Minimal.lean/declarations/instance.md) | 54 | `declaration-track:3417c8b499c2c07cce35edfbe5791e074a5cef10778597250c647ad2a6537398` |
-| 6 | `theorem` | [IsOpen.exists_smul_mem](../../../../DynamicalSystemsAndErgodicTheory/Minimal.lean/declarations/isopen-exists-smul-mem.md) | 59 | `result-track:a3e4c670cf5b121d173781118e8d3fde84e6abf027c531f060e4a39cee83695c` |
-| 7 | `theorem` | [IsOpen.iUnion_preimage_smul](../../../../DynamicalSystemsAndErgodicTheory/Minimal.lean/declarations/isopen-iunion-preimage-smul.md) | 64 | `result-track:8139c3fc088389fb15fe9d72c0a258670f86ae8ee740cd4bad43ca12899f57d1` |
-| 8 | `theorem` | [IsOpen.iUnion_smul](../../../../DynamicalSystemsAndErgodicTheory/Minimal.lean/declarations/isopen-iunion-smul.md) | 69 | `result-track:5e45ba18b46560c1f55aaea2af3e8af4a25c1521107782683ed40f0498adf131` |
-| 9 | `theorem` | [IsCompact.exists_finite_cover_smul](../../../../DynamicalSystemsAndErgodicTheory/Minimal.lean/declarations/iscompact-exists-finite-cover-smul.md) | 76 | `result-track:4c63a676aede76b3cc5916d41cd0b5ea6ce4c769490e10bbc7f22e2b472415dc` |
-| 10 | `theorem` | [dense_of_nonempty_smul_invariant](../../../../DynamicalSystemsAndErgodicTheory/Minimal.lean/declarations/dense-of-nonempty-smul-invariant.md) | 84 | `result-track:22ecd342d41740e1b308ab8aa9394c5532930a692e8c8d04355905b84dcf9627` |
-| 11 | `theorem` | [eq_empty_or_univ_of_smul_invariant_closed](../../../../DynamicalSystemsAndErgodicTheory/Minimal.lean/declarations/eq-empty-or-univ-of-smul-invariant-closed.md) | 90 | `result-track:bace23b07ea98514ff081486cc9ba01a7556bdbe1cb95b4c8e0cd36d055b7bb3` |
-| 12 | `theorem` | [isMinimal_iff_isClosed_smul_invariant](../../../../DynamicalSystemsAndErgodicTheory/Minimal.lean/declarations/isminimal-iff-isclosed-smul-invariant.md) | 96 | `result-track:074c924b5c7a24d65dd5f24bd04a809cebbd1d078bd0ae94ad1ed6a7871a2ff9` |
+| 1 | `class` | [AddAction.IsMinimal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/Minimal.lean/declarations/addaction-isminimal.md) | 29 | `declaration-track:8add60f9ef8b576982e1242dad1052b9d8a080671e7e6769110214877793f988` |
+| 2 | `class` | [MulAction.IsMinimal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/Minimal.lean/declarations/mulaction-isminimal.md) | 36 | `declaration-track:dfce6c3da29c581f93383be274a86751c9c03f3de4d05b043f1bb218cc0cd50a` |
+| 3 | `theorem` | [MulAction.dense_orbit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/Minimal.lean/declarations/mulaction-dense-orbit.md) | 46 | `result-track:b15f2be80846bffccd37db86fd32ec9e3b34e6d84e9ede62dbea439f62d81fe5` |
+| 4 | `theorem` | [denseRange_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/Minimal.lean/declarations/denserange-smul.md) | 50 | `result-track:0083096cc6a507eeacbb20d9723816959476839767655fa217c014353f654cec` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/Minimal.lean/declarations/instance.md) | 54 | `declaration-track:3417c8b499c2c07cce35edfbe5791e074a5cef10778597250c647ad2a6537398` |
+| 6 | `theorem` | [IsOpen.exists_smul_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/Minimal.lean/declarations/isopen-exists-smul-mem.md) | 59 | `result-track:a3e4c670cf5b121d173781118e8d3fde84e6abf027c531f060e4a39cee83695c` |
+| 7 | `theorem` | [IsOpen.iUnion_preimage_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/Minimal.lean/declarations/isopen-iunion-preimage-smul.md) | 64 | `result-track:8139c3fc088389fb15fe9d72c0a258670f86ae8ee740cd4bad43ca12899f57d1` |
+| 8 | `theorem` | [IsOpen.iUnion_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/Minimal.lean/declarations/isopen-iunion-smul.md) | 69 | `result-track:5e45ba18b46560c1f55aaea2af3e8af4a25c1521107782683ed40f0498adf131` |
+| 9 | `theorem` | [IsCompact.exists_finite_cover_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/Minimal.lean/declarations/iscompact-exists-finite-cover-smul.md) | 76 | `result-track:4c63a676aede76b3cc5916d41cd0b5ea6ce4c769490e10bbc7f22e2b472415dc` |
+| 10 | `theorem` | [dense_of_nonempty_smul_invariant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/Minimal.lean/declarations/dense-of-nonempty-smul-invariant.md) | 84 | `result-track:22ecd342d41740e1b308ab8aa9394c5532930a692e8c8d04355905b84dcf9627` |
+| 11 | `theorem` | [eq_empty_or_univ_of_smul_invariant_closed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/Minimal.lean/declarations/eq-empty-or-univ-of-smul-invariant-closed.md) | 90 | `result-track:bace23b07ea98514ff081486cc9ba01a7556bdbe1cb95b4c8e0cd36d055b7bb3` |
+| 12 | `theorem` | [isMinimal_iff_isClosed_smul_invariant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/Minimal.lean/declarations/isminimal-iff-isclosed-smul-invariant.md) | 96 | `result-track:074c924b5c7a24d65dd5f24bd04a809cebbd1d078bd0ae94ad1ed6a7871a2ff9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RHIffSpecReal.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RHIffSpecReal.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RHIffSpecReal.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RHIffSpecReal.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [GRH](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RHIffSpecReal.lean/declarations/grh.md) | 17 | `declaration-track:70a8b5fea4bb3f3b7b8a9dedb426e307a06573c56b1e5ca398bde21cac308895` |
-| 2 | `def` | [SpectrumReal](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RHIffSpecReal.lean/declarations/spectrumreal.md) | 24 | `declaration-track:75a3157e3858aa2d39a580e74ddb849bbc0ef94fe4d67615792bfdf733d29891` |
-| 3 | `theorem` | [GRH_iff_spec_real](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RHIffSpecReal.lean/declarations/grh-iff-spec-real.md) | 33 | `result-track:3402061a24d92eb95feef5cc198ec1b6b69f671910d6ea0f8eb6ae71e47a2c1b` |
+| 1 | `def` | [GRH](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RHIffSpecReal.lean/declarations/grh.md) | 17 | `declaration-track:70a8b5fea4bb3f3b7b8a9dedb426e307a06573c56b1e5ca398bde21cac308895` |
+| 2 | `def` | [SpectrumReal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RHIffSpecReal.lean/declarations/spectrumreal.md) | 24 | `declaration-track:75a3157e3858aa2d39a580e74ddb849bbc0ef94fe4d67615792bfdf733d29891` |
+| 3 | `theorem` | [GRH_iff_spec_real](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RHIffSpecReal.lean/declarations/grh-iff-spec-real.md) | 33 | `result-track:3402061a24d92eb95feef5cc198ec1b6b69f671910d6ea0f8eb6ae71e47a2c1b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

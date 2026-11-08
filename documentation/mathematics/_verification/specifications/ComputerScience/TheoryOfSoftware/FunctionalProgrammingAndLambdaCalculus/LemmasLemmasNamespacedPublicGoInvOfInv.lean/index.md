@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNamespacedPublicGoInvOfInv.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNamespacedPublicGoInvOfInv.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNamespacedPublicGoInvOfInv.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNamespacedPublicGoInvOfInv.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [go_Inv_of_Inv](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNamespacedPublicGoInvOfInv.lean/declarations/go-inv-of-inv.md) | 39 | `result-track:b960c5f0e28e10bfdb5097b09aee88e1f0ae9fbb27e8c05d839fe9a1902aadbb` |
-| 2 | `theorem` | [go_eval_eq_eval](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNamespacedPublicGoInvOfInv.lean/declarations/go-eval-eq-eval.md) | 76 | `result-track:5b374a09f317075d2b0d9025fa4a88cbaaf5c0983a3c73cd259def03d3589f4c` |
-| 3 | `theorem` | [denote_bitblast](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNamespacedPublicGoInvOfInv.lean/declarations/denote-bitblast.md) | 125 | `result-track:f43470d4c115d745c8e81e7cf6049d85e347a4e57c9d70c214a66778a4ab94dd` |
-| 4 | `theorem` | [unsat_of_bitblast](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNamespacedPublicGoInvOfInv.lean/declarations/unsat-of-bitblast.md) | 131 | `result-track:61951a6a0064677d5f41e317f19706390c1d9e7b7caea8bceec93df0eb44ac72` |
+| 1 | `theorem` | [go_Inv_of_Inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNamespacedPublicGoInvOfInv.lean/declarations/go-inv-of-inv.md) | 39 | `result-track:b960c5f0e28e10bfdb5097b09aee88e1f0ae9fbb27e8c05d839fe9a1902aadbb` |
+| 2 | `theorem` | [go_eval_eq_eval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNamespacedPublicGoInvOfInv.lean/declarations/go-eval-eq-eval.md) | 76 | `result-track:5b374a09f317075d2b0d9025fa4a88cbaaf5c0983a3c73cd259def03d3589f4c` |
+| 3 | `theorem` | [denote_bitblast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNamespacedPublicGoInvOfInv.lean/declarations/denote-bitblast.md) | 125 | `result-track:f43470d4c115d745c8e81e7cf6049d85e347a4e57c9d70c214a66778a4ab94dd` |
+| 4 | `theorem` | [unsat_of_bitblast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNamespacedPublicGoInvOfInv.lean/declarations/unsat-of-bitblast.md) | 131 | `result-track:61951a6a0064677d5f41e317f19706390c1d9e7b7caea8bceec93df0eb44ac72` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

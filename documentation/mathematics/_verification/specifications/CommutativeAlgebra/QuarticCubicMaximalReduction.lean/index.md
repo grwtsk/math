@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/QuarticCubicMaximalReduction.lean/index.md) · [Full source](../../../../CommutativeAlgebra/QuarticCubicMaximalReduction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticCubicMaximalReduction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticCubicMaximalReduction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.QuarticCubicCanonicalResidue`](../../../../CommutativeAlgebra/QuarticCubicCanonicalResidue.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Algebra.QuarticCubicCanonicalResidue`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticCubicCanonicalResidue.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [residue_adjacencyCubic_separable](../../../../CommutativeAlgebra/QuarticCubicMaximalReduction.lean/declarations/residue-adjacencycubic-separable.md) | 27 | `result-track:5e26699e38b5c8d6890fb62e53a717e4d37bab89330db695a4bb1a82e052ce9e` |
+| 1 | `theorem` | [residue_adjacencyCubic_separable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticCubicMaximalReduction.lean/declarations/residue-adjacencycubic-separable.md) | 27 | `result-track:5e26699e38b5c8d6890fb62e53a717e4d37bab89330db695a4bb1a82e052ce9e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

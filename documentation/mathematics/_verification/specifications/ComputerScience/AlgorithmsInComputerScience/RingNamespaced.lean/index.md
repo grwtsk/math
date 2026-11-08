@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/RingNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/RingNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RingNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RingNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [InverseEvent](../../../../../ComputerScience/AlgorithmsInComputerScience/RingNamespaced.lean/declarations/inverseevent.md) | 15 | `declaration-track:87f9480bf68f96cba7206f5e982ac94dfcdaf0409c263198f159709c62da8137` |
-| 2 | `def` | [InvAllowed](../../../../../ComputerScience/AlgorithmsInComputerScience/RingNamespaced.lean/declarations/invallowed.md) | 22 | `declaration-track:1112750c68798a4a7c505fd7581bcb8e8dab77aeb2a8d0bed68a7852a4ae7a33` |
-| 3 | `structure` | [RestrictedInverseRule](../../../../../ComputerScience/AlgorithmsInComputerScience/RingNamespaced.lean/declarations/restrictedinverserule.md) | 25 | `declaration-track:43cc3ea9c427b3d34d9d786d49ff1b3d047c8d5c01d01d24e3233e64114c8d3c` |
-| 4 | `def` | [ringUnavailableResidues](../../../../../ComputerScience/AlgorithmsInComputerScience/RingNamespaced.lean/declarations/ringunavailableresidues.md) | 31 | `declaration-track:509f9fa4c81654dd85f85b93404b86205cfde6c579020de9faadb7e962edbece` |
-| 5 | `def` | [MemoryRingAvailable](../../../../../ComputerScience/AlgorithmsInComputerScience/RingNamespaced.lean/declarations/memoryringavailable.md) | 36 | `declaration-track:bb1b44a2168f17c4aba9052ab55ef80408a5616d705f9f5710265506807c4e5b` |
-| 6 | `theorem` | [no_rules_no_ring](../../../../../ComputerScience/AlgorithmsInComputerScience/RingNamespaced.lean/declarations/no-rules-no-ring.md) | 39 | `result-track:fbd79cd42978c6e1c9bca5a250dbd73157fa64f150769ba4d9be14291c1df077` |
-| 7 | `theorem` | [ringUnavailableResidues_contains_missing](../../../../../ComputerScience/AlgorithmsInComputerScience/RingNamespaced.lean/declarations/ringunavailableresidues-contains-missing.md) | 45 | `result-track:ba9e71eba6b6ba52c0e23cc0e92060ad9193d362e47c7a5cba9dba2ead130f16` |
+| 1 | `inductive` | [InverseEvent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RingNamespaced.lean/declarations/inverseevent.md) | 15 | `declaration-track:87f9480bf68f96cba7206f5e982ac94dfcdaf0409c263198f159709c62da8137` |
+| 2 | `def` | [InvAllowed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RingNamespaced.lean/declarations/invallowed.md) | 22 | `declaration-track:1112750c68798a4a7c505fd7581bcb8e8dab77aeb2a8d0bed68a7852a4ae7a33` |
+| 3 | `structure` | [RestrictedInverseRule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RingNamespaced.lean/declarations/restrictedinverserule.md) | 25 | `declaration-track:43cc3ea9c427b3d34d9d786d49ff1b3d047c8d5c01d01d24e3233e64114c8d3c` |
+| 4 | `def` | [ringUnavailableResidues](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RingNamespaced.lean/declarations/ringunavailableresidues.md) | 31 | `declaration-track:509f9fa4c81654dd85f85b93404b86205cfde6c579020de9faadb7e962edbece` |
+| 5 | `def` | [MemoryRingAvailable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RingNamespaced.lean/declarations/memoryringavailable.md) | 36 | `declaration-track:bb1b44a2168f17c4aba9052ab55ef80408a5616d705f9f5710265506807c4e5b` |
+| 6 | `theorem` | [no_rules_no_ring](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RingNamespaced.lean/declarations/no-rules-no-ring.md) | 39 | `result-track:fbd79cd42978c6e1c9bca5a250dbd73157fa64f150769ba4d9be14291c1df077` |
+| 7 | `theorem` | [ringUnavailableResidues_contains_missing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RingNamespaced.lean/declarations/ringunavailableresidues-contains-missing.md) | 45 | `result-track:ba9e71eba6b6ba52c0e23cc0e92060ad9193d362e47c7a5cba9dba2ead130f16` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

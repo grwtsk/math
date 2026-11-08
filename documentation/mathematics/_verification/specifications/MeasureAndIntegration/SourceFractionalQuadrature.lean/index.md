@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceFractionalQuadrature.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceFractionalQuadrature.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFractionalQuadrature.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFractionalQuadrature.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [fract_eq_sub_of_unit_cell](../../../../MeasureAndIntegration/SourceFractionalQuadrature.lean/declarations/fract-eq-sub-of-unit-cell.md) | 25 | `result-track:3c71784a1059a2060cfb92d8571d4a06f4d449d5d17be277aa12f76845799a67` |
-| 2 | `theorem` | [fract_deriv_intervalIntegrable](../../../../MeasureAndIntegration/SourceFractionalQuadrature.lean/declarations/fract-deriv-intervalintegrable.md) | 32 | `result-track:911c120d673fe3159ce4932516add401afdaa1c4effae5b8fac90bc9b147fb27` |
-| 3 | `theorem` | [unit_right_sampling_identity](../../../../MeasureAndIntegration/SourceFractionalQuadrature.lean/declarations/unit-right-sampling-identity.md) | 46 | `result-track:a2399c38f8376f17056bd3ab43d9f7fbf843ddab259c23f04c986d78d9f04a15` |
-| 4 | `theorem` | [finite_quadrature](../../../../MeasureAndIntegration/SourceFractionalQuadrature.lean/declarations/finite-quadrature.md) | 68 | `result-track:1638128faa6213ab5ad789812c1c044f6495b5a2894782c5e7cb0a3c90940a43` |
-| 5 | `theorem` | [finite_quadrature_of_endpoint_zero](../../../../MeasureAndIntegration/SourceFractionalQuadrature.lean/declarations/finite-quadrature-of-endpoint-zero.md) | 91 | `result-track:7fc99310cf4891997b817d008cd06a457538b5a4ecb912d188ed442995f6e27a` |
-| 6 | `theorem` | [positive_axis_quadrature](../../../../MeasureAndIntegration/SourceFractionalQuadrature.lean/declarations/positive-axis-quadrature.md) | 98 | `result-track:d58dee89a5105f87c25ee9890c230bed7bf4ba633ee885c12f917ee14d9e4199` |
+| 1 | `theorem` | [fract_eq_sub_of_unit_cell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFractionalQuadrature.lean/declarations/fract-eq-sub-of-unit-cell.md) | 25 | `result-track:3c71784a1059a2060cfb92d8571d4a06f4d449d5d17be277aa12f76845799a67` |
+| 2 | `theorem` | [fract_deriv_intervalIntegrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFractionalQuadrature.lean/declarations/fract-deriv-intervalintegrable.md) | 32 | `result-track:911c120d673fe3159ce4932516add401afdaa1c4effae5b8fac90bc9b147fb27` |
+| 3 | `theorem` | [unit_right_sampling_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFractionalQuadrature.lean/declarations/unit-right-sampling-identity.md) | 46 | `result-track:a2399c38f8376f17056bd3ab43d9f7fbf843ddab259c23f04c986d78d9f04a15` |
+| 4 | `theorem` | [finite_quadrature](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFractionalQuadrature.lean/declarations/finite-quadrature.md) | 68 | `result-track:1638128faa6213ab5ad789812c1c044f6495b5a2894782c5e7cb0a3c90940a43` |
+| 5 | `theorem` | [finite_quadrature_of_endpoint_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFractionalQuadrature.lean/declarations/finite-quadrature-of-endpoint-zero.md) | 91 | `result-track:7fc99310cf4891997b817d008cd06a457538b5a4ecb912d188ed442995f6e27a` |
+| 6 | `theorem` | [positive_axis_quadrature](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFractionalQuadrature.lean/declarations/positive-axis-quadrature.md) | 98 | `result-track:d58dee89a5105f87c25ee9890c230bed7bf4ba633ee885c12f917ee14d9e4199` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

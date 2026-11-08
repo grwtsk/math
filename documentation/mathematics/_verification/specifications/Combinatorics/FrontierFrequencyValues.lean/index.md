@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/FrontierFrequencyValues.lean/index.md) · [Full source](../../../../Combinatorics/FrontierFrequencyValues.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FrontierFrequencyValues.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FrontierFrequencyValues.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [frequencyValues](../../../../Combinatorics/FrontierFrequencyValues.lean/declarations/frequencyvalues.md) | 14 | `declaration-track:878cd42086e587bf794335a3ce6fca679c46d8ecbb39fc83666ec82c0805103e` |
-| 2 | `def` | [frequencyLayer](../../../../Combinatorics/FrontierFrequencyValues.lean/declarations/frequencylayer.md) | 23 | `declaration-track:0ed370db7957d1b1da4dfad5e1c3279387271e80d2bafe2a2645cb6a545b35a2` |
-| 3 | `def` | [maximumFrequency](../../../../Combinatorics/FrontierFrequencyValues.lean/declarations/maximumfrequency.md) | 34 | `declaration-track:955f17c4c172b3577cb3e85efd559bfedb41cd8d75bfec01fc80d78d58f25606` |
-| 4 | `def` | [firstFrequencyLayer](../../../../Combinatorics/FrontierFrequencyValues.lean/declarations/firstfrequencylayer.md) | 45 | `declaration-track:926511fa77ebb51220d65b2f36d9d878c6a82d0f2927168404d6ec7b1194aeb0` |
-| 5 | `theorem` | [first_layer_has_maximum_frequency](../../../../Combinatorics/FrontierFrequencyValues.lean/declarations/first-layer-has-maximum-frequency.md) | 56 | `result-track:82407777ef41ae73fc983e774e193625daad86613203148442798f0858e77a99` |
-| 6 | `theorem` | [frequency_bounded_by_maximum](../../../../Combinatorics/FrontierFrequencyValues.lean/declarations/frequency-bounded-by-maximum.md) | 71 | `result-track:a67470dc437c997ca475e29de8e95fc9b885cf9690c0a6119ec2a623f7148f33` |
-| 7 | `theorem` | [finite_grade_bound](../../../../Combinatorics/FrontierFrequencyValues.lean/declarations/finite-grade-bound.md) | 85 | `result-track:abc30016e418f8da2784ff9949b6f23d95bfa7a601798b84811170006cb6c1d0` |
-| 8 | `structure` | [GradedFrontierCertificate](../../../../Combinatorics/FrontierFrequencyValues.lean/declarations/gradedfrontiercertificate.md) | 99 | `declaration-track:4f74e9ce9c94ae256256d534c138db61cce00057cd27235335d1602f2a6f9899` |
+| 1 | `def` | [frequencyValues](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FrontierFrequencyValues.lean/declarations/frequencyvalues.md) | 14 | `declaration-track:878cd42086e587bf794335a3ce6fca679c46d8ecbb39fc83666ec82c0805103e` |
+| 2 | `def` | [frequencyLayer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FrontierFrequencyValues.lean/declarations/frequencylayer.md) | 23 | `declaration-track:0ed370db7957d1b1da4dfad5e1c3279387271e80d2bafe2a2645cb6a545b35a2` |
+| 3 | `def` | [maximumFrequency](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FrontierFrequencyValues.lean/declarations/maximumfrequency.md) | 34 | `declaration-track:955f17c4c172b3577cb3e85efd559bfedb41cd8d75bfec01fc80d78d58f25606` |
+| 4 | `def` | [firstFrequencyLayer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FrontierFrequencyValues.lean/declarations/firstfrequencylayer.md) | 45 | `declaration-track:926511fa77ebb51220d65b2f36d9d878c6a82d0f2927168404d6ec7b1194aeb0` |
+| 5 | `theorem` | [first_layer_has_maximum_frequency](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FrontierFrequencyValues.lean/declarations/first-layer-has-maximum-frequency.md) | 56 | `result-track:82407777ef41ae73fc983e774e193625daad86613203148442798f0858e77a99` |
+| 6 | `theorem` | [frequency_bounded_by_maximum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FrontierFrequencyValues.lean/declarations/frequency-bounded-by-maximum.md) | 71 | `result-track:a67470dc437c997ca475e29de8e95fc9b885cf9690c0a6119ec2a623f7148f33` |
+| 7 | `theorem` | [finite_grade_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FrontierFrequencyValues.lean/declarations/finite-grade-bound.md) | 85 | `result-track:abc30016e418f8da2784ff9949b6f23d95bfa7a601798b84811170006cb6c1d0` |
+| 8 | `structure` | [GradedFrontierCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FrontierFrequencyValues.lean/declarations/gradedfrontiercertificate.md) | 99 | `declaration-track:4f74e9ce9c94ae256256d534c138db61cce00057cd27235335d1602f2a6f9899` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

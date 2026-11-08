@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CentralTensorProductNamespacedPublic.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CentralTensorProductNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CentralTensorProductNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CentralTensorProductNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [Algebra.TensorProduct.includeLeft_map_center_le](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CentralTensorProductNamespacedPublic.lean/declarations/algebra-tensorproduct-includeleft-map-center-le.md) | 48 | `result-track:7a4b0d1c900b0f2d13c2ecba287ad3f6c276a3e854fe3352300ba59db8b8c92e` |
-| 2 | `lemma` | [Algebra.TensorProduct.includeRight_map_center_le](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CentralTensorProductNamespacedPublic.lean/declarations/algebra-tensorproduct-includeright-map-center-le.md) | 58 | `result-track:997973675a238af88e16946f9101c621ed858308744363911b2473221c781457` |
-| 3 | `lemma` | [left_of_tensor](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CentralTensorProductNamespacedPublic.lean/declarations/left-of-tensor.md) | 70 | `result-track:43b075ef91ad320ff79b344ee72bdc203aa9af38dccf08ba95c6e4067e1fa9d4` |
-| 4 | `lemma` | [right_of_tensor](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CentralTensorProductNamespacedPublic.lean/declarations/right-of-tensor.md) | 75 | `result-track:ad5042a32ce7f8141b20600f73477ef7912849fc4eb5d9f83a15b3df69b7d531` |
-| 5 | `lemma` | [left_of_tensor_of_field](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CentralTensorProductNamespacedPublic.lean/declarations/left-of-tensor-of-field.md) | 82 | `result-track:d6f2c1abc62c845ed44335182480ebd7518c0d0da1055a698e2d1629825baa19` |
-| 6 | `lemma` | [right_of_tensor_of_field](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CentralTensorProductNamespacedPublic.lean/declarations/right-of-tensor-of-field.md) | 88 | `result-track:24e15d7b1cd12d1298a2534386797248bf7bc2d8c02c0bb90803773bedde2c35` |
+| 1 | `lemma` | [Algebra.TensorProduct.includeLeft_map_center_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CentralTensorProductNamespacedPublic.lean/declarations/algebra-tensorproduct-includeleft-map-center-le.md) | 48 | `result-track:7a4b0d1c900b0f2d13c2ecba287ad3f6c276a3e854fe3352300ba59db8b8c92e` |
+| 2 | `lemma` | [Algebra.TensorProduct.includeRight_map_center_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CentralTensorProductNamespacedPublic.lean/declarations/algebra-tensorproduct-includeright-map-center-le.md) | 58 | `result-track:997973675a238af88e16946f9101c621ed858308744363911b2473221c781457` |
+| 3 | `lemma` | [left_of_tensor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CentralTensorProductNamespacedPublic.lean/declarations/left-of-tensor.md) | 70 | `result-track:43b075ef91ad320ff79b344ee72bdc203aa9af38dccf08ba95c6e4067e1fa9d4` |
+| 4 | `lemma` | [right_of_tensor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CentralTensorProductNamespacedPublic.lean/declarations/right-of-tensor.md) | 75 | `result-track:ad5042a32ce7f8141b20600f73477ef7912849fc4eb5d9f83a15b3df69b7d531` |
+| 5 | `lemma` | [left_of_tensor_of_field](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CentralTensorProductNamespacedPublic.lean/declarations/left-of-tensor-of-field.md) | 82 | `result-track:d6f2c1abc62c845ed44335182480ebd7518c0d0da1055a698e2d1629825baa19` |
+| 6 | `lemma` | [right_of_tensor_of_field](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CentralTensorProductNamespacedPublic.lean/declarations/right-of-tensor-of-field.md) | 88 | `result-track:24e15d7b1cd12d1298a2534386797248bf7bc2d8c02c0bb90803773bedde2c35` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

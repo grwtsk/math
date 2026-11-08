@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/GaloisObservationNamespacedEdition1.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/GaloisObservationNamespacedEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/GaloisObservationNamespacedEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/GaloisObservationNamespacedEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,15 +61,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [reduction](../../../../AssociativeRingsAndAlgebras/GaloisObservationNamespacedEdition1.lean/declarations/reduction.md) | 31 | `declaration-track:df28b17cb9c4fc74e115a8f8889409151dc2420ba02cd2909137bb26cb33cc59` |
-| 2 | `structure` | [GoodPrimeFactorization](../../../../AssociativeRingsAndAlgebras/GaloisObservationNamespacedEdition1.lean/declarations/goodprimefactorization.md) | 36 | `declaration-track:b45eda23fead4a2a4891f193a1b6b86e740ee10c118804733570873efed7d668` |
-| 3 | `def` | [factorDegrees](../../../../AssociativeRingsAndAlgebras/GaloisObservationNamespacedEdition1.lean/declarations/factordegrees.md) | 54 | `declaration-track:c96e34c76f6046eb3166c0f1d757aafdfcde21501eb8654c874f0d5b8b7bdc07` |
-| 4 | `def` | [fullCycleType](../../../../AssociativeRingsAndAlgebras/GaloisObservationNamespacedEdition1.lean/declarations/fullcycletype.md) | 59 | `declaration-track:4c238fd9f670c27813f0d49d10df309773d44f6fee68e7176bf8d7e64206bcea` |
-| 5 | `theorem` | [full_cycle_type_identity](../../../../AssociativeRingsAndAlgebras/GaloisObservationNamespacedEdition1.lean/declarations/full-cycle-type-identity.md) | 64 | `result-track:2036af3cc1dd188ba540fbfafed2d27dd1d1ecd6830d8ee1b69e83ab8d18df02` |
-| 6 | `theorem` | [full_cycle_type_sum](../../../../AssociativeRingsAndAlgebras/GaloisObservationNamespacedEdition1.lean/declarations/full-cycle-type-sum.md) | 69 | `result-track:1c9307e0c43ddad7efbca0a067a38181a20025ab895fe3e037c3680672d1536c` |
-| 7 | `structure` | [FactorCycleWitness](../../../../AssociativeRingsAndAlgebras/GaloisObservationNamespacedEdition1.lean/declarations/factorcyclewitness.md) | 77 | `declaration-track:8ee998d695ff4063f28cfbe6b7f0dd0e039d42dfdad3af6ffaee50227845b0f1` |
-| 8 | `theorem` | [factor_degrees_identify_cycles](../../../../AssociativeRingsAndAlgebras/GaloisObservationNamespacedEdition1.lean/declarations/factor-degrees-identify-cycles.md) | 99 | `result-track:049f7f76e7303c6d171dda2980650ca17e8cc9b5040ce4182e2fc4fe8ec80766` |
-| 9 | `theorem` | [cycle_observation_does_not_determine_group](../../../../AssociativeRingsAndAlgebras/GaloisObservationNamespacedEdition1.lean/declarations/cycle-observation-does-not-determine-group.md) | 107 | `result-track:dc689c702878429b8303c5d1e5f291b728abb4933d2d7767f4dd0b5bd2a86951` |
+| 1 | `def` | [reduction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/GaloisObservationNamespacedEdition1.lean/declarations/reduction.md) | 31 | `declaration-track:df28b17cb9c4fc74e115a8f8889409151dc2420ba02cd2909137bb26cb33cc59` |
+| 2 | `structure` | [GoodPrimeFactorization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/GaloisObservationNamespacedEdition1.lean/declarations/goodprimefactorization.md) | 36 | `declaration-track:b45eda23fead4a2a4891f193a1b6b86e740ee10c118804733570873efed7d668` |
+| 3 | `def` | [factorDegrees](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/GaloisObservationNamespacedEdition1.lean/declarations/factordegrees.md) | 54 | `declaration-track:c96e34c76f6046eb3166c0f1d757aafdfcde21501eb8654c874f0d5b8b7bdc07` |
+| 4 | `def` | [fullCycleType](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/GaloisObservationNamespacedEdition1.lean/declarations/fullcycletype.md) | 59 | `declaration-track:4c238fd9f670c27813f0d49d10df309773d44f6fee68e7176bf8d7e64206bcea` |
+| 5 | `theorem` | [full_cycle_type_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/GaloisObservationNamespacedEdition1.lean/declarations/full-cycle-type-identity.md) | 64 | `result-track:2036af3cc1dd188ba540fbfafed2d27dd1d1ecd6830d8ee1b69e83ab8d18df02` |
+| 6 | `theorem` | [full_cycle_type_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/GaloisObservationNamespacedEdition1.lean/declarations/full-cycle-type-sum.md) | 69 | `result-track:1c9307e0c43ddad7efbca0a067a38181a20025ab895fe3e037c3680672d1536c` |
+| 7 | `structure` | [FactorCycleWitness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/GaloisObservationNamespacedEdition1.lean/declarations/factorcyclewitness.md) | 77 | `declaration-track:8ee998d695ff4063f28cfbe6b7f0dd0e039d42dfdad3af6ffaee50227845b0f1` |
+| 8 | `theorem` | [factor_degrees_identify_cycles](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/GaloisObservationNamespacedEdition1.lean/declarations/factor-degrees-identify-cycles.md) | 99 | `result-track:049f7f76e7303c6d171dda2980650ca17e8cc9b5040ce4182e2fc4fe8ec80766` |
+| 9 | `theorem` | [cycle_observation_does_not_determine_group](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/GaloisObservationNamespacedEdition1.lean/declarations/cycle-observation-does-not-determine-group.md) | 107 | `result-track:dc689c702878429b8303c5d1e5f291b728abb4933d2d7767f4dd0b5bd2a86951` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

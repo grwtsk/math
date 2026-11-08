@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HermitianCounterexamples.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HermitianCounterexamples.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HermitianCounterexamples.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HermitianCounterexamples.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [hermitian_does_not_imply_positive_semidefinite](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HermitianCounterexamples.lean/declarations/hermitian-does-not-imply-positive-semidefinite.md) | 26 | `result-track:94484463796a1565dbfcb2b6fd5a59f35d2a466e9f320fce019521c0a414c8e4` |
+| 1 | `theorem` | [hermitian_does_not_imply_positive_semidefinite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/HermitianCounterexamples.lean/declarations/hermitian-does-not-imply-positive-semidefinite.md) | 26 | `result-track:94484463796a1565dbfcb2b6fd5a59f35d2a466e9f320fce019521c0a414c8e4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

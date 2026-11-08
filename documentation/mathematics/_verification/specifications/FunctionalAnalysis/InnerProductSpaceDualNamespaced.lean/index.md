@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/InnerProductSpaceDualNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/InnerProductSpaceDualNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpaceDualNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpaceDualNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,17 +59,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [toDualMap](../../../../FunctionalAnalysis/InnerProductSpaceDualNamespaced.lean/declarations/todualmap.md) | 72 | `declaration-track:5f8fa999f3c78456e5812d99d3aa8c4dddcdf1af60ae083ac70280b02c3abb36` |
-| 2 | `theorem` | [toDualMap_apply](../../../../FunctionalAnalysis/InnerProductSpaceDualNamespaced.lean/declarations/todualmap-apply.md) | 79 | `result-track:6b95d027c63c725de1d2e1038b56a4c2a03ffb8a7c025c908c0a33f92f06222e` |
-| 3 | `theorem` | [innerSL_norm](../../../../FunctionalAnalysis/InnerProductSpaceDualNamespaced.lean/declarations/innersl-norm.md) | 83 | `result-track:7f103d73f8a5068aad2a8f158d14174ca1a3c42706ad28e4fbf0d244ad3551ee` |
-| 4 | `theorem` | [ext_inner_left_basis](../../../../FunctionalAnalysis/InnerProductSpaceDualNamespaced.lean/declarations/ext-inner-left-basis.md) | 90 | `result-track:da727b882d6fd7b2af5136f7506999d04a2d7276051e680449f33eb91051402b` |
-| 5 | `theorem` | [ext_inner_right_basis](../../../../FunctionalAnalysis/InnerProductSpaceDualNamespaced.lean/declarations/ext-inner-right-basis.md) | 102 | `result-track:5342c4dc42b0456ede893a2ff27206751ebf845f281f5e5154e211492be7cb60` |
-| 6 | `def` | [toDual](../../../../FunctionalAnalysis/InnerProductSpaceDualNamespaced.lean/declarations/todual.md) | 117 | `declaration-track:845f158eb0f0844421a25cdcf6d7b50fc80172f7c0b22e6230fc34630a2f6d4a` |
-| 7 | `theorem` | [toDual_apply](../../../../FunctionalAnalysis/InnerProductSpaceDualNamespaced.lean/declarations/todual-apply.md) | 161 | `result-track:0f8682ddcfd1e747c90078f13720e00a6c8b1ad42247b6f54297b9b827cc966c` |
-| 8 | `theorem` | [toDual_symm_apply](../../../../FunctionalAnalysis/InnerProductSpaceDualNamespaced.lean/declarations/todual-symm-apply.md) | 166 | `result-track:1ed4e01cd8512effd25681b2493dd37dfdc6e6ca65b20a62adde77266cc70963` |
-| 9 | `def` | [continuousLinearMapOfBilin](../../../../FunctionalAnalysis/InnerProductSpaceDualNamespaced.lean/declarations/continuouslinearmapofbilin.md) | 175 | `declaration-track:c613ac6ef8318b3d4b0f54b64cf94c4a066245382b20c137db71c4b98f8eae86` |
-| 10 | `theorem` | [continuousLinearMapOfBilin_apply](../../../../FunctionalAnalysis/InnerProductSpaceDualNamespaced.lean/declarations/continuouslinearmapofbilin-apply.md) | 184 | `result-track:9aa0610e90035f68f7c9eb566f5b3f5d52d51298118adabb57f48febe1010d85` |
-| 11 | `theorem` | [unique_continuousLinearMapOfBilin](../../../../FunctionalAnalysis/InnerProductSpaceDualNamespaced.lean/declarations/unique-continuouslinearmapofbilin.md) | 188 | `result-track:c40e34548affd4c0f00cd421857cb1176218c6007925b409c35011f564ee6cfb` |
+| 1 | `def` | [toDualMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpaceDualNamespaced.lean/declarations/todualmap.md) | 72 | `declaration-track:5f8fa999f3c78456e5812d99d3aa8c4dddcdf1af60ae083ac70280b02c3abb36` |
+| 2 | `theorem` | [toDualMap_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpaceDualNamespaced.lean/declarations/todualmap-apply.md) | 79 | `result-track:6b95d027c63c725de1d2e1038b56a4c2a03ffb8a7c025c908c0a33f92f06222e` |
+| 3 | `theorem` | [innerSL_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpaceDualNamespaced.lean/declarations/innersl-norm.md) | 83 | `result-track:7f103d73f8a5068aad2a8f158d14174ca1a3c42706ad28e4fbf0d244ad3551ee` |
+| 4 | `theorem` | [ext_inner_left_basis](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpaceDualNamespaced.lean/declarations/ext-inner-left-basis.md) | 90 | `result-track:da727b882d6fd7b2af5136f7506999d04a2d7276051e680449f33eb91051402b` |
+| 5 | `theorem` | [ext_inner_right_basis](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpaceDualNamespaced.lean/declarations/ext-inner-right-basis.md) | 102 | `result-track:5342c4dc42b0456ede893a2ff27206751ebf845f281f5e5154e211492be7cb60` |
+| 6 | `def` | [toDual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpaceDualNamespaced.lean/declarations/todual.md) | 117 | `declaration-track:845f158eb0f0844421a25cdcf6d7b50fc80172f7c0b22e6230fc34630a2f6d4a` |
+| 7 | `theorem` | [toDual_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpaceDualNamespaced.lean/declarations/todual-apply.md) | 161 | `result-track:0f8682ddcfd1e747c90078f13720e00a6c8b1ad42247b6f54297b9b827cc966c` |
+| 8 | `theorem` | [toDual_symm_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpaceDualNamespaced.lean/declarations/todual-symm-apply.md) | 166 | `result-track:1ed4e01cd8512effd25681b2493dd37dfdc6e6ca65b20a62adde77266cc70963` |
+| 9 | `def` | [continuousLinearMapOfBilin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpaceDualNamespaced.lean/declarations/continuouslinearmapofbilin.md) | 175 | `declaration-track:c613ac6ef8318b3d4b0f54b64cf94c4a066245382b20c137db71c4b98f8eae86` |
+| 10 | `theorem` | [continuousLinearMapOfBilin_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpaceDualNamespaced.lean/declarations/continuouslinearmapofbilin-apply.md) | 184 | `result-track:9aa0610e90035f68f7c9eb566f5b3f5d52d51298118adabb57f48febe1010d85` |
+| 11 | `theorem` | [unique_continuousLinearMapOfBilin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpaceDualNamespaced.lean/declarations/unique-continuouslinearmapofbilin.md) | 188 | `result-track:c40e34548affd4c0f00cd421857cb1176218c6007925b409c35011f564ee6cfb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

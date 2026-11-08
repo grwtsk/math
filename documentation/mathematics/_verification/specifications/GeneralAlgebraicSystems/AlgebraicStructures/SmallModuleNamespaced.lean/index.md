@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SmallModuleNamespaced.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SmallModuleNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SmallModuleNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SmallModuleNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SmallModuleNamespaced.lean/declarations/instance.md) | 25 | `declaration-track:9801dd5e6a6759a15d4580b4fd4e5b2a285658e28ed8487288e07507116b5865` |
-| 2 | `def` | [linearEquivShrink](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SmallModuleNamespaced.lean/declarations/linearequivshrink.md) | 29 | `declaration-track:645f7ada29751355923ef81008af3cf1d9387aeb82ae983bfa8faec40e89c2fa` |
-| 3 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SmallModuleNamespaced.lean/declarations/instance-source-edition-2.md) | 33 | `declaration-track:b0b2116b31f762e70b2c3c71687652e4e9955bfe0a6c820662c94c7c69ea2f5f` |
-| 4 | `def` | [algEquivShrink](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SmallModuleNamespaced.lean/declarations/algequivshrink.md) | 37 | `declaration-track:d5b54287288b566b2acc9ee3269d1464319f640d9a7ee2cfb4a2efb184400670` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SmallModuleNamespaced.lean/declarations/instance.md) | 25 | `declaration-track:9801dd5e6a6759a15d4580b4fd4e5b2a285658e28ed8487288e07507116b5865` |
+| 2 | `def` | [linearEquivShrink](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SmallModuleNamespaced.lean/declarations/linearequivshrink.md) | 29 | `declaration-track:645f7ada29751355923ef81008af3cf1d9387aeb82ae983bfa8faec40e89c2fa` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SmallModuleNamespaced.lean/declarations/instance-source-edition-2.md) | 33 | `declaration-track:b0b2116b31f762e70b2c3c71687652e4e9955bfe0a6c820662c94c7c69ea2f5f` |
+| 4 | `def` | [algEquivShrink](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SmallModuleNamespaced.lean/declarations/algequivshrink.md) | 37 | `declaration-track:d5b54287288b566b2acc9ee3269d1464319f640d9a7ee2cfb4a2efb184400670` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

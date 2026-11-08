@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/ExpLog.lean/index.md) · [Full source](../../../../CommutativeAlgebra/ExpLog.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ExpLog.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ExpLog.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,23 +59,23 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [expTaylorPoly](../../../../CommutativeAlgebra/ExpLog.lean/declarations/exptaylorpoly.md) | 35 | `declaration-track:966363519f275c79809d82ba9c6e0d4bcaffcd19a642d85401974a267ab07fb9` |
-| 2 | `def` | [expRemainderBound](../../../../CommutativeAlgebra/ExpLog.lean/declarations/expremainderbound.md) | 42 | `declaration-track:97fac8479a9c250536d02ddb9cd328eb3650e5f0d33e4cfe3495fc0f3c75a5f3` |
-| 3 | `theorem` | [expRemainderBound_nonneg](../../../../CommutativeAlgebra/ExpLog.lean/declarations/expremainderbound-nonneg.md) | 50 | `result-track:d89357f6016f805609a70f691fa1f6cebb21ecf3a26f3328f6e04749d53d045e` |
-| 4 | `def` | [tmExp](../../../../CommutativeAlgebra/ExpLog.lean/declarations/tmexp.md) | 63 | `declaration-track:44a6f8c455cd3be654c7fd8e22cce4e54ef915c325c23427283fdc894cfa8be2` |
-| 5 | `def` | [logTaylorCoeffs](../../../../CommutativeAlgebra/ExpLog.lean/declarations/logtaylorcoeffs.md) | 87 | `declaration-track:6b96e345d0a630a60ba25c5b2fab5593ed43db2482221411dbe5f13cdfe28445` |
-| 6 | `def` | [logTaylorPolyAtCenter](../../../../CommutativeAlgebra/ExpLog.lean/declarations/logtaylorpolyatcenter.md) | 95 | `declaration-track:b7f636a27705dc3630ca2a407ca8f97d5582d26bbdd1299bae78682bacd2f506` |
-| 7 | `def` | [logLagrangeRemainder](../../../../CommutativeAlgebra/ExpLog.lean/declarations/loglagrangeremainder.md) | 102 | `declaration-track:458868b4a5d815bfd75b826eed50e403c842bfd63d15b44de46d1d6c5f1fcf18` |
-| 8 | `def` | [logRemainderBound](../../../../CommutativeAlgebra/ExpLog.lean/declarations/logremainderbound.md) | 114 | `declaration-track:0a22e7f611b3b9cc89fce830a3077790bd5cb30fc98ca4b5061080b990f9dd38` |
-| 9 | `theorem` | [logRemainderBound_nonneg](../../../../CommutativeAlgebra/ExpLog.lean/declarations/logremainderbound-nonneg.md) | 119 | `result-track:7f6d6af46618c4fb11546c006b81f4d329bd3fe27283de81386035b83e45608e` |
-| 10 | `def` | [tmLog](../../../../CommutativeAlgebra/ExpLog.lean/declarations/tmlog.md) | 142 | `declaration-track:098ffb3ffd72304950712b395fa0907ec05080129be784bcdfcc31b9e49ab64c` |
-| 11 | `theorem` | [abs_le_interval_radius](../../../../CommutativeAlgebra/ExpLog.lean/declarations/abs-le-interval-radius.md) | 184 | `result-track:d12527840bf1af6bd15c5277794d68052cf5bbc43f21e59ce4c8ad641643a9a4` |
-| 12 | `theorem` | [mem_Icc_of_mem_interval](../../../../CommutativeAlgebra/ExpLog.lean/declarations/mem-icc-of-mem-interval.md) | 198 | `result-track:973c6b9fe130bdba081bc31acf95610aed93953f60d5df5e68be92d4543b7dc6` |
-| 13 | `theorem` | [expTaylorPoly_aeval_eq](../../../../CommutativeAlgebra/ExpLog.lean/declarations/exptaylorpoly-aeval-eq.md) | 207 | `result-track:6f3bcd2adc73d82a82d05480d8f98eb5fc965b11ee089c01eae26b211db6229d` |
-| 14 | `theorem` | [tmExp_correct](../../../../CommutativeAlgebra/ExpLog.lean/declarations/tmexp-correct.md) | 225 | `result-track:b8d22618ba38271063a63675ab765d2a73d68131ebb884ba9b185ca9038a0586` |
-| 15 | `theorem` | [log_approx_error_bound](../../../../CommutativeAlgebra/ExpLog.lean/declarations/log-approx-error-bound.md) | 318 | `result-track:1a64820437168a9001d38b48f995dcaa21edc43903f4293d2367c06bc382eb0b` |
-| 16 | `theorem` | [log_taylor_remainder_bound'](../../../../CommutativeAlgebra/ExpLog.lean/declarations/log-taylor-remainder-bound.md) | 343 | `result-track:6b9e8af1f1f58d15c10f7dc74f205485500cc3d4090311605a22d847f7f64129` |
-| 17 | `theorem` | [tmLog_correct](../../../../CommutativeAlgebra/ExpLog.lean/declarations/tmlog-correct.md) | 488 | `result-track:db62e76c42494756f6267e9dc8144207dfdb32949a57b136b7c348c6e06386ca` |
+| 1 | `def` | [expTaylorPoly](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ExpLog.lean/declarations/exptaylorpoly.md) | 35 | `declaration-track:966363519f275c79809d82ba9c6e0d4bcaffcd19a642d85401974a267ab07fb9` |
+| 2 | `def` | [expRemainderBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ExpLog.lean/declarations/expremainderbound.md) | 42 | `declaration-track:97fac8479a9c250536d02ddb9cd328eb3650e5f0d33e4cfe3495fc0f3c75a5f3` |
+| 3 | `theorem` | [expRemainderBound_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ExpLog.lean/declarations/expremainderbound-nonneg.md) | 50 | `result-track:d89357f6016f805609a70f691fa1f6cebb21ecf3a26f3328f6e04749d53d045e` |
+| 4 | `def` | [tmExp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ExpLog.lean/declarations/tmexp.md) | 63 | `declaration-track:44a6f8c455cd3be654c7fd8e22cce4e54ef915c325c23427283fdc894cfa8be2` |
+| 5 | `def` | [logTaylorCoeffs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ExpLog.lean/declarations/logtaylorcoeffs.md) | 87 | `declaration-track:6b96e345d0a630a60ba25c5b2fab5593ed43db2482221411dbe5f13cdfe28445` |
+| 6 | `def` | [logTaylorPolyAtCenter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ExpLog.lean/declarations/logtaylorpolyatcenter.md) | 95 | `declaration-track:b7f636a27705dc3630ca2a407ca8f97d5582d26bbdd1299bae78682bacd2f506` |
+| 7 | `def` | [logLagrangeRemainder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ExpLog.lean/declarations/loglagrangeremainder.md) | 102 | `declaration-track:458868b4a5d815bfd75b826eed50e403c842bfd63d15b44de46d1d6c5f1fcf18` |
+| 8 | `def` | [logRemainderBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ExpLog.lean/declarations/logremainderbound.md) | 114 | `declaration-track:0a22e7f611b3b9cc89fce830a3077790bd5cb30fc98ca4b5061080b990f9dd38` |
+| 9 | `theorem` | [logRemainderBound_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ExpLog.lean/declarations/logremainderbound-nonneg.md) | 119 | `result-track:7f6d6af46618c4fb11546c006b81f4d329bd3fe27283de81386035b83e45608e` |
+| 10 | `def` | [tmLog](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ExpLog.lean/declarations/tmlog.md) | 142 | `declaration-track:098ffb3ffd72304950712b395fa0907ec05080129be784bcdfcc31b9e49ab64c` |
+| 11 | `theorem` | [abs_le_interval_radius](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ExpLog.lean/declarations/abs-le-interval-radius.md) | 184 | `result-track:d12527840bf1af6bd15c5277794d68052cf5bbc43f21e59ce4c8ad641643a9a4` |
+| 12 | `theorem` | [mem_Icc_of_mem_interval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ExpLog.lean/declarations/mem-icc-of-mem-interval.md) | 198 | `result-track:973c6b9fe130bdba081bc31acf95610aed93953f60d5df5e68be92d4543b7dc6` |
+| 13 | `theorem` | [expTaylorPoly_aeval_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ExpLog.lean/declarations/exptaylorpoly-aeval-eq.md) | 207 | `result-track:6f3bcd2adc73d82a82d05480d8f98eb5fc965b11ee089c01eae26b211db6229d` |
+| 14 | `theorem` | [tmExp_correct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ExpLog.lean/declarations/tmexp-correct.md) | 225 | `result-track:b8d22618ba38271063a63675ab765d2a73d68131ebb884ba9b185ca9038a0586` |
+| 15 | `theorem` | [log_approx_error_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ExpLog.lean/declarations/log-approx-error-bound.md) | 318 | `result-track:1a64820437168a9001d38b48f995dcaa21edc43903f4293d2367c06bc382eb0b` |
+| 16 | `theorem` | [log_taylor_remainder_bound'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ExpLog.lean/declarations/log-taylor-remainder-bound.md) | 343 | `result-track:6b9e8af1f1f58d15c10f7dc74f205485500cc3d4090311605a22d847f7f64129` |
+| 17 | `theorem` | [tmLog_correct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ExpLog.lean/declarations/tmlog-correct.md) | 488 | `result-track:db62e76c42494756f6267e9dc8144207dfdb32949a57b136b7c348c6e06386ca` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

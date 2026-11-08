@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/PrimeComposite.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/PrimeComposite.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PrimeComposite.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PrimeComposite.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PrimeEvidence](../../../../../ComputerScience/AlgorithmsInComputerScience/PrimeComposite.lean/declarations/primeevidence.md) | 5 | `declaration-track:bb0bd6d1208f8bb080449b5d073385606ddbc000694eeb02258283fe3eb7cdb0` |
-| 2 | `structure` | [CompositeEvidence](../../../../../ComputerScience/AlgorithmsInComputerScience/PrimeComposite.lean/declarations/compositeevidence.md) | 9 | `declaration-track:4d776c3a81ab19a7c80525b620442efe9ed4e8a86155995e9bb7655d412c35fe` |
-| 3 | `structure` | [FactorizationCertificate](../../../../../ComputerScience/AlgorithmsInComputerScience/PrimeComposite.lean/declarations/factorizationcertificate.md) | 14 | `declaration-track:c8caca20a26c57b5e70e1a82c75fb9af145e11f3e19d2fef19704cb5c8f29586` |
-| 4 | `theorem` | [factorization_certificate_has_value](../../../../../ComputerScience/AlgorithmsInComputerScience/PrimeComposite.lean/declarations/factorization-certificate-has-value.md) | 21 | `result-track:e3650d8522e7df723ab24c44a6a5883dd6ba52bcb44842b2b8a005ca942a0530` |
-| 5 | `theorem` | [factorization_certificate_product](../../../../../ComputerScience/AlgorithmsInComputerScience/PrimeComposite.lean/declarations/factorization-certificate-product.md) | 25 | `result-track:d9ff98e7367ac4b061749497758dd528fa4d9b2287ab76d01502b9011d6c842c` |
-| 6 | `theorem` | [factorization_uniqueness_requires_boundary](../../../../../ComputerScience/AlgorithmsInComputerScience/PrimeComposite.lean/declarations/factorization-uniqueness-requires-boundary.md) | 31 | `result-track:da1bf1b6c9cbc85b2ee56eafa23097c75767f328fbd07760605da2ffa6f20e90` |
+| 1 | `structure` | [PrimeEvidence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PrimeComposite.lean/declarations/primeevidence.md) | 5 | `declaration-track:bb0bd6d1208f8bb080449b5d073385606ddbc000694eeb02258283fe3eb7cdb0` |
+| 2 | `structure` | [CompositeEvidence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PrimeComposite.lean/declarations/compositeevidence.md) | 9 | `declaration-track:4d776c3a81ab19a7c80525b620442efe9ed4e8a86155995e9bb7655d412c35fe` |
+| 3 | `structure` | [FactorizationCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PrimeComposite.lean/declarations/factorizationcertificate.md) | 14 | `declaration-track:c8caca20a26c57b5e70e1a82c75fb9af145e11f3e19d2fef19704cb5c8f29586` |
+| 4 | `theorem` | [factorization_certificate_has_value](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PrimeComposite.lean/declarations/factorization-certificate-has-value.md) | 21 | `result-track:e3650d8522e7df723ab24c44a6a5883dd6ba52bcb44842b2b8a005ca942a0530` |
+| 5 | `theorem` | [factorization_certificate_product](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PrimeComposite.lean/declarations/factorization-certificate-product.md) | 25 | `result-track:d9ff98e7367ac4b061749497758dd528fa4d9b2287ab76d01502b9011d6c842c` |
+| 6 | `theorem` | [factorization_uniqueness_requires_boundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PrimeComposite.lean/declarations/factorization-uniqueness-requires-boundary.md) | 31 | `result-track:da1bf1b6c9cbc85b2ee56eafa23097c75767f328fbd07760605da2ffa6f20e90` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

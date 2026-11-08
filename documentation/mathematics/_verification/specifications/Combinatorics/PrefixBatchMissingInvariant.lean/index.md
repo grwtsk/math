@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/PrefixBatchMissingInvariant.lean/index.md) · [Full source](../../../../Combinatorics/PrefixBatchMissingInvariant.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrefixBatchMissingInvariant.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrefixBatchMissingInvariant.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableBatch`](../../../../Combinatorics/PrefixTableBatch.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableBatch`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrefixTableBatch.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../Combinatorics/PrefixBatchMissingInvariant.lean/declarations/anonymous-example.md) | 13 | `declaration-track:e9e3e6dfae7166d1ea198e666f158c9bd9bdc9f544d29883fcc70c7d47954cd7` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrefixBatchMissingInvariant.lean/declarations/anonymous-example.md) | 13 | `declaration-track:e9e3e6dfae7166d1ea198e666f158c9bd9bdc9f544d29883fcc70c7d47954cd7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

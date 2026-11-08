@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/GromovProductPublic.lean/index.md) · [Full source](../../../../GeneralTopology/GromovProductPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GromovProductPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GromovProductPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,17 +57,17 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [gromovProduct](../../../../GeneralTopology/GromovProductPublic.lean/declarations/gromovproduct.md) | 39 | `declaration-track:a32884b290c8af0470f52e5d5b5f1dc6c3bc71bb76e4bfd93348e04bcf0c683a` |
-| 2 | `lemma` | [gromovProduct_eq](../../../../GeneralTopology/GromovProductPublic.lean/declarations/gromovproduct-eq.md) | 41 | `result-track:c8c454383f48df116911a03ffe5519c7be546ce3c55b44834c63fb0ee20e65c8` |
-| 3 | `lemma` | [gromovProduct_comm](../../../../GeneralTopology/GromovProductPublic.lean/declarations/gromovproduct-comm.md) | 43 | `result-track:6d7ce927587489ec396c770794e203422b9ac87a880992739430c464a832a78b` |
-| 4 | `lemma` | [gromovProduct_nonneg](../../../../GeneralTopology/GromovProductPublic.lean/declarations/gromovproduct-nonneg.md) | 49 | `result-track:a5e88274dd936d969b0900fe062868df46e45220b8b18b8a18e6627eccf0427c` |
-| 5 | `lemma` | [gromovProduct_le_dist_left](../../../../GeneralTopology/GromovProductPublic.lean/declarations/gromovproduct-le-dist-left.md) | 52 | `result-track:b937557c101a6766c62766518e57dc4c33e1d428e714e62d7f4e18fe6804f9ed` |
-| 6 | `lemma` | [gromovProduct_le_dist_right](../../../../GeneralTopology/GromovProductPublic.lean/declarations/gromovproduct-le-dist-right.md) | 55 | `result-track:714b33c62a28bf0124c9a8b8ff4e84be250bfef19540d761bdde7c066b958f34` |
-| 7 | `lemma` | [gromovProduct_self_left](../../../../GeneralTopology/GromovProductPublic.lean/declarations/gromovproduct-self-left.md) | 59 | `result-track:a85803f8288851dabc4e6c8847b49e6654483920dc374bd765ff30b2f0e7b75b` |
-| 8 | `lemma` | [gromovProduct_self_right](../../../../GeneralTopology/GromovProductPublic.lean/declarations/gromovproduct-self-right.md) | 63 | `result-track:dc5d61a152d4583c6b8858d767cf9a480a6e58d311ed656b1f47b741b7cbaf63` |
-| 9 | `lemma` | [gromovProduct_self](../../../../GeneralTopology/GromovProductPublic.lean/declarations/gromovproduct-self.md) | 67 | `result-track:277b89b5c00333fb14ff9aa4bd79c925f53ab44a8b0ad39dc224682c89ac94a6` |
-| 10 | `lemma` | [gromovProduct_add_gromovProduct₁₃](../../../../GeneralTopology/GromovProductPublic.lean/declarations/gromovproduct-add-gromovproduct-source-edition-2.md) | 70 | `result-track:b0b36e6d46f5ea726caf3cf4b67f80a06e9be41cbdb78c7c99211e122879d56d` |
-| 11 | `lemma` | [gromovProduct_add_gromovProduct₁₂](../../../../GeneralTopology/GromovProductPublic.lean/declarations/gromovproduct-add-gromovproduct.md) | 73 | `result-track:80fb86106d07e47f188335a6afe0e50f2eb36fee2437963eca4e47cdaea9f92a` |
+| 1 | `def` | [gromovProduct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GromovProductPublic.lean/declarations/gromovproduct.md) | 39 | `declaration-track:a32884b290c8af0470f52e5d5b5f1dc6c3bc71bb76e4bfd93348e04bcf0c683a` |
+| 2 | `lemma` | [gromovProduct_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GromovProductPublic.lean/declarations/gromovproduct-eq.md) | 41 | `result-track:c8c454383f48df116911a03ffe5519c7be546ce3c55b44834c63fb0ee20e65c8` |
+| 3 | `lemma` | [gromovProduct_comm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GromovProductPublic.lean/declarations/gromovproduct-comm.md) | 43 | `result-track:6d7ce927587489ec396c770794e203422b9ac87a880992739430c464a832a78b` |
+| 4 | `lemma` | [gromovProduct_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GromovProductPublic.lean/declarations/gromovproduct-nonneg.md) | 49 | `result-track:a5e88274dd936d969b0900fe062868df46e45220b8b18b8a18e6627eccf0427c` |
+| 5 | `lemma` | [gromovProduct_le_dist_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GromovProductPublic.lean/declarations/gromovproduct-le-dist-left.md) | 52 | `result-track:b937557c101a6766c62766518e57dc4c33e1d428e714e62d7f4e18fe6804f9ed` |
+| 6 | `lemma` | [gromovProduct_le_dist_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GromovProductPublic.lean/declarations/gromovproduct-le-dist-right.md) | 55 | `result-track:714b33c62a28bf0124c9a8b8ff4e84be250bfef19540d761bdde7c066b958f34` |
+| 7 | `lemma` | [gromovProduct_self_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GromovProductPublic.lean/declarations/gromovproduct-self-left.md) | 59 | `result-track:a85803f8288851dabc4e6c8847b49e6654483920dc374bd765ff30b2f0e7b75b` |
+| 8 | `lemma` | [gromovProduct_self_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GromovProductPublic.lean/declarations/gromovproduct-self-right.md) | 63 | `result-track:dc5d61a152d4583c6b8858d767cf9a480a6e58d311ed656b1f47b741b7cbaf63` |
+| 9 | `lemma` | [gromovProduct_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GromovProductPublic.lean/declarations/gromovproduct-self.md) | 67 | `result-track:277b89b5c00333fb14ff9aa4bd79c925f53ab44a8b0ad39dc224682c89ac94a6` |
+| 10 | `lemma` | [gromovProduct_add_gromovProduct₁₃](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GromovProductPublic.lean/declarations/gromovproduct-add-gromovproduct-source-edition-2.md) | 70 | `result-track:b0b36e6d46f5ea726caf3cf4b67f80a06e9be41cbdb78c7c99211e122879d56d` |
+| 11 | `lemma` | [gromovProduct_add_gromovProduct₁₂](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GromovProductPublic.lean/declarations/gromovproduct-add-gromovproduct.md) | 73 | `result-track:80fb86106d07e47f188335a6afe0e50f2eb36fee2437963eca4e47cdaea9f92a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

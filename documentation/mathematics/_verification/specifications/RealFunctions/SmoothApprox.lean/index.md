@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/SmoothApprox.lean/index.md) · [Full source](../../../../RealFunctions/SmoothApprox.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SmoothApprox.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SmoothApprox.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [MeasureTheory.LocallyIntegrable.exists_contDiff_dist_le_of_forall_mem_ball_dist_le](../../../../RealFunctions/SmoothApprox.lean/declarations/measuretheory-locallyintegrable-exists-contdiff-dist-le-of-forall-mem-ba.md) | 28 | `result-track:2de39514030ddda7c507a68d527d725a60dbb0edcb40354b10cc4bcd32f12549` |
-| 2 | `theorem` | [Continuous.exists_contDiff_dist_le_of_forall_mem_ball_dist_le](../../../../RealFunctions/SmoothApprox.lean/declarations/continuous-exists-contdiff-dist-le-of-forall-mem-ball-dist-le.md) | 37 | `result-track:5e8cdbc3e2169f66bb1cbb308ebfe6233f73279bcd51c4cadca3f2abe9ff70dc` |
-| 3 | `theorem` | [UniformContinuous.exists_contDiff_dist_le](../../../../RealFunctions/SmoothApprox.lean/declarations/uniformcontinuous-exists-contdiff-dist-le.md) | 44 | `result-track:4080a30ed85ce55255edf457f0380202df0093f9b15b1a0b57503bb9da439c97` |
-| 4 | `theorem` | [ContinuousMap.dense_setOf_contDiff](../../../../RealFunctions/SmoothApprox.lean/declarations/continuousmap-dense-setof-contdiff.md) | 51 | `result-track:08a0adc7cae1e89147d9befce6c8d39516a2c2713fcaebbfb7ae0021dc32b22d` |
+| 1 | `theorem` | [MeasureTheory.LocallyIntegrable.exists_contDiff_dist_le_of_forall_mem_ball_dist_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SmoothApprox.lean/declarations/measuretheory-locallyintegrable-exists-contdiff-dist-le-of-forall-mem-ba.md) | 28 | `result-track:2de39514030ddda7c507a68d527d725a60dbb0edcb40354b10cc4bcd32f12549` |
+| 2 | `theorem` | [Continuous.exists_contDiff_dist_le_of_forall_mem_ball_dist_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SmoothApprox.lean/declarations/continuous-exists-contdiff-dist-le-of-forall-mem-ball-dist-le.md) | 37 | `result-track:5e8cdbc3e2169f66bb1cbb308ebfe6233f73279bcd51c4cadca3f2abe9ff70dc` |
+| 3 | `theorem` | [UniformContinuous.exists_contDiff_dist_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SmoothApprox.lean/declarations/uniformcontinuous-exists-contdiff-dist-le.md) | 44 | `result-track:4080a30ed85ce55255edf457f0380202df0093f9b15b1a0b57503bb9da439c97` |
+| 4 | `theorem` | [ContinuousMap.dense_setOf_contDiff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SmoothApprox.lean/declarations/continuousmap-dense-setof-contdiff.md) | 51 | `result-track:08a0adc7cae1e89147d9befce6c8d39516a2c2713fcaebbfb7ae0021dc32b22d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

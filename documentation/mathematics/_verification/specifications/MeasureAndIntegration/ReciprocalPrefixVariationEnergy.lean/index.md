@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ReciprocalPrefixVariationEnergy.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ReciprocalPrefixVariationEnergy.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReciprocalPrefixVariationEnergy.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReciprocalPrefixVariationEnergy.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Moebius.ReciprocalPrefixKernel`](../../../../MeasureAndIntegration/ReciprocalPrefixKernel.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.ReciprocalPrefixKernel`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReciprocalPrefixKernel.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [reciprocalPrefixVariationSquare](../../../../MeasureAndIntegration/ReciprocalPrefixVariationEnergy.lean/declarations/reciprocalprefixvariationsquare.md) | 28 | `declaration-track:284d39f6165fc43a31a76e768bfa4a1136bde014c52830eeb3427c2e4e1b2926` |
-| 2 | `def` | [reciprocalFluxWeightSquareMass](../../../../MeasureAndIntegration/ReciprocalPrefixVariationEnergy.lean/declarations/reciprocalfluxweightsquaremass.md) | 33 | `declaration-track:420ee0fbd5c43d13d06c93b4cca392103d7e514fca3912645138ac1d42e0e59f` |
-| 3 | `def` | [reciprocalCauchyBlock](../../../../MeasureAndIntegration/ReciprocalPrefixVariationEnergy.lean/declarations/reciprocalcauchyblock.md) | 37 | `declaration-track:ccd130a46e003ca7d91e564aeac2f8db6c85932473c351b584459c7c18df421c` |
-| 4 | `theorem` | [reciprocalVariationBlock_le_cauchyBlock](../../../../MeasureAndIntegration/ReciprocalPrefixVariationEnergy.lean/declarations/reciprocalvariationblock-le-cauchyblock.md) | 45 | `result-track:2c519e1b44cca1130551411fc8cde8de2c00591de2ff1f6d1c745bc8183cda62` |
-| 5 | `def` | [ReciprocalCauchyBlockUniform](../../../../MeasureAndIntegration/ReciprocalPrefixVariationEnergy.lean/declarations/reciprocalcauchyblockuniform.md) | 93 | `declaration-track:a972578218dc7af1ac20903ddf5206a047edab82562883b10f6c19905b176762` |
-| 6 | `theorem` | [reciprocalVariationBlockUniform_of_cauchyBlockUniform](../../../../MeasureAndIntegration/ReciprocalPrefixVariationEnergy.lean/declarations/reciprocalvariationblockuniform-of-cauchyblockuniform.md) | 97 | `result-track:fd408d1c95f78c0931c05caab4a46957f67100848c4e62fc3cdd72ced1e2015a` |
-| 7 | `theorem` | [criticalBoundary_of_reciprocalCauchyBlockUniform](../../../../MeasureAndIntegration/ReciprocalPrefixVariationEnergy.lean/declarations/criticalboundary-of-reciprocalcauchyblockuniform.md) | 112 | `result-track:3d2fecb3d866c9f694e90b270e40bdb434a20c765916c3195f23a3421c4d3b7c` |
+| 1 | `def` | [reciprocalPrefixVariationSquare](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReciprocalPrefixVariationEnergy.lean/declarations/reciprocalprefixvariationsquare.md) | 28 | `declaration-track:284d39f6165fc43a31a76e768bfa4a1136bde014c52830eeb3427c2e4e1b2926` |
+| 2 | `def` | [reciprocalFluxWeightSquareMass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReciprocalPrefixVariationEnergy.lean/declarations/reciprocalfluxweightsquaremass.md) | 33 | `declaration-track:420ee0fbd5c43d13d06c93b4cca392103d7e514fca3912645138ac1d42e0e59f` |
+| 3 | `def` | [reciprocalCauchyBlock](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReciprocalPrefixVariationEnergy.lean/declarations/reciprocalcauchyblock.md) | 37 | `declaration-track:ccd130a46e003ca7d91e564aeac2f8db6c85932473c351b584459c7c18df421c` |
+| 4 | `theorem` | [reciprocalVariationBlock_le_cauchyBlock](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReciprocalPrefixVariationEnergy.lean/declarations/reciprocalvariationblock-le-cauchyblock.md) | 45 | `result-track:2c519e1b44cca1130551411fc8cde8de2c00591de2ff1f6d1c745bc8183cda62` |
+| 5 | `def` | [ReciprocalCauchyBlockUniform](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReciprocalPrefixVariationEnergy.lean/declarations/reciprocalcauchyblockuniform.md) | 93 | `declaration-track:a972578218dc7af1ac20903ddf5206a047edab82562883b10f6c19905b176762` |
+| 6 | `theorem` | [reciprocalVariationBlockUniform_of_cauchyBlockUniform](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReciprocalPrefixVariationEnergy.lean/declarations/reciprocalvariationblockuniform-of-cauchyblockuniform.md) | 97 | `result-track:fd408d1c95f78c0931c05caab4a46957f67100848c4e62fc3cdd72ced1e2015a` |
+| 7 | `theorem` | [criticalBoundary_of_reciprocalCauchyBlockUniform](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReciprocalPrefixVariationEnergy.lean/declarations/criticalboundary-of-reciprocalcauchyblockuniform.md) | 112 | `result-track:3d2fecb3d866c9f694e90b270e40bdb434a20c765916c3195f23a3421c4d3b7c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

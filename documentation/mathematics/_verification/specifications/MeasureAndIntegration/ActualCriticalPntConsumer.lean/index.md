@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ActualCriticalPntConsumer.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ActualCriticalPntConsumer.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCriticalPntConsumer.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCriticalPntConsumer.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_criticalRelative_abs_le_pnt_budget](../../../../MeasureAndIntegration/ActualCriticalPntConsumer.lean/declarations/actual-criticalrelative-abs-le-pnt-budget.md) | 21 | `result-track:5916faa7a93319adb4d94fb4a54f33c0798155a355242f38a0e3e9d274d63558` |
+| 1 | `theorem` | [actual_criticalRelative_abs_le_pnt_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCriticalPntConsumer.lean/declarations/actual-criticalrelative-abs-le-pnt-budget.md) | 21 | `result-track:5916faa7a93319adb4d94fb4a54f33c0798155a355242f38a0e3e9d274d63558` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

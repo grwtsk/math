@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SchwartzZippel.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SchwartzZippel.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SchwartzZippel.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SchwartzZippel.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -65,9 +65,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [schwartz_zippel_sup_sum](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SchwartzZippel.lean/declarations/schwartz-zippel-sup-sum.md) | 68 | `result-track:7fe08cd601ff9499400fcde7f50d79283091232d8e759e4d7f63d64c0df7de8b` |
-| 2 | `lemma` | [schwartz_zippel_sum_degreeOf](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SchwartzZippel.lean/declarations/schwartz-zippel-sum-degreeof.md) | 175 | `result-track:8d0120d2bb0f262a85bbeda681e0c5e17552534fd3421f05b8e2324d910e253c` |
-| 3 | `lemma` | [schwartz_zippel_totalDegree](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SchwartzZippel.lean/declarations/schwartz-zippel-totaldegree.md) | 188 | `result-track:b96a958bd9f913fe8ded4b986d186678ee4c74098e978aae4ef79f398862fea5` |
+| 1 | `lemma` | [schwartz_zippel_sup_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SchwartzZippel.lean/declarations/schwartz-zippel-sup-sum.md) | 68 | `result-track:7fe08cd601ff9499400fcde7f50d79283091232d8e759e4d7f63d64c0df7de8b` |
+| 2 | `lemma` | [schwartz_zippel_sum_degreeOf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SchwartzZippel.lean/declarations/schwartz-zippel-sum-degreeof.md) | 175 | `result-track:8d0120d2bb0f262a85bbeda681e0c5e17552534fd3421f05b8e2324d910e253c` |
+| 3 | `lemma` | [schwartz_zippel_totalDegree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SchwartzZippel.lean/declarations/schwartz-zippel-totaldegree.md) | 188 | `result-track:b96a958bd9f913fe8ded4b986d186678ee4c74098e978aae4ef79f398862fea5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

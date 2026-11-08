@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/PositiveDampedRecordingParseval.lean/index.md) · [Full source](../../../../MeasureAndIntegration/PositiveDampedRecordingParseval.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveDampedRecordingParseval.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveDampedRecordingParseval.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Moebius.DampedRecordingParseval`](../../../../MeasureAndIntegration/MoebiusDampedRecordingParseval.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.DampedRecordingParseval`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MoebiusDampedRecordingParseval.lean/index.md) — import line 1; pinned internal source present.
 - `Lean` — import line 2; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../MeasureAndIntegration/PositiveDampedRecordingParseval.lean/declarations/example-source-edition-2.md) | 10 | `declaration-track:68d083d95bac164a7604b542eaa17f2389dc2b508a58ecddde6e7a7ff02962e1` |
-| 2 | `example` | [(anonymous)](../../../../MeasureAndIntegration/PositiveDampedRecordingParseval.lean/declarations/example.md) | 17 | `declaration-track:5785cac6de90d7a2c82f39449c23bfdb9ff430446c4d0d9b8636ea6d0302b57f` |
-| 3 | `elab` | [(anonymous)](../../../../MeasureAndIntegration/PositiveDampedRecordingParseval.lean/declarations/elab.md) | 30 | `declaration-track:b8c3dc0993f505dacc444b9b0b4d23fa4494293eccde2e548cf99da1f8c709d6` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveDampedRecordingParseval.lean/declarations/example-source-edition-2.md) | 10 | `declaration-track:68d083d95bac164a7604b542eaa17f2389dc2b508a58ecddde6e7a7ff02962e1` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveDampedRecordingParseval.lean/declarations/example.md) | 17 | `declaration-track:5785cac6de90d7a2c82f39449c23bfdb9ff430446c4d0d9b8636ea6d0302b57f` |
+| 3 | `elab` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveDampedRecordingParseval.lean/declarations/elab.md) | 30 | `declaration-track:b8c3dc0993f505dacc444b9b0b4d23fa4494293eccde2e548cf99da1f8c709d6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/FactorGenerated.lean/index.md) · [Full source](../../../../Combinatorics/FactorGenerated.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FactorGenerated.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FactorGenerated.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,20 +57,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [state_0](../../../../Combinatorics/FactorGenerated.lean/declarations/state-0.md) | 6 | `declaration-track:2cc98872cebdc99a38a7a01ed65f4b90139d3afa977c84239776a371fb30588b` |
-| 2 | `theorem` | [event_0](../../../../Combinatorics/FactorGenerated.lean/declarations/event-0.md) | 7 | `result-track:2eeb88d19ca6867785b6c89dcac7e0c73aa8bc213435861b1aad664caecec746` |
-| 3 | `def` | [state_1](../../../../Combinatorics/FactorGenerated.lean/declarations/state-1.md) | 8 | `declaration-track:d8564472dc2a70ed1ec97c0d627e2bbeb7c2fe0e530858d9b3c7a0541daafe74` |
-| 4 | `theorem` | [event_1](../../../../Combinatorics/FactorGenerated.lean/declarations/event-1.md) | 9 | `result-track:99fea87422218a7560d5985681249456e800c1f783ee62e5271c244aaae785e5` |
-| 5 | `def` | [state_2](../../../../Combinatorics/FactorGenerated.lean/declarations/state-2.md) | 10 | `declaration-track:c338b35ce6b27a9496cf57e5a8b4347c84be44e47852174f6474f4d00b25df56` |
-| 6 | `theorem` | [event_2](../../../../Combinatorics/FactorGenerated.lean/declarations/event-2.md) | 11 | `result-track:e60961c98cd73911387f4d9ed2b868731c8343fc838c0eca63243f946c7cf625` |
-| 7 | `def` | [state_3](../../../../Combinatorics/FactorGenerated.lean/declarations/state-3.md) | 12 | `declaration-track:8d90aa328560e9312b515351239c78632cadaaff36d73ee4844bd90d80a42f91` |
-| 8 | `def` | [split_0](../../../../Combinatorics/FactorGenerated.lean/declarations/split-0.md) | 13 | `declaration-track:615dfefa19ee3722f470f3100c578d0ce80fc9d508e6e2d0e2539cb5f9a1331e` |
-| 9 | `theorem` | [split_0_data](../../../../Combinatorics/FactorGenerated.lean/declarations/split-0-data.md) | 14 | `result-track:db2652ca5a3dd3d3964e45fd33659c9f816498fd6af91f3681362f3fafa8470e` |
-| 10 | `theorem` | [final_state](../../../../Combinatorics/FactorGenerated.lean/declarations/final-state.md) | 15 | `result-track:615bc39bd49ac541be30d6f2a35b6eeb60d76027ebc4b036e67d80018d742df7` |
-| 11 | `theorem` | [terminal](../../../../Combinatorics/FactorGenerated.lean/declarations/terminal.md) | 20 | `result-track:6bacf2b01eeb98cca930308762888c7d0266a73041c72d91c34f22e258fdd0b7` |
-| 12 | `def` | [closed](../../../../Combinatorics/FactorGenerated.lean/declarations/closed.md) | 26 | `declaration-track:212a783547b544bf316ffd2151acb9fd927650899fe1a9d9ddc47f6ffd6c03ea` |
-| 13 | `theorem` | [final_map](../../../../Combinatorics/FactorGenerated.lean/declarations/final-map.md) | 27 | `result-track:e707c4f08be6a9cfb267c6cff26000291e10370a2f4cabd29f36d36b5478f339` |
-| 14 | `theorem` | [complete](../../../../Combinatorics/FactorGenerated.lean/declarations/complete.md) | 28 | `result-track:4288495190766b4d6a2e8400d586b80b64ba17312b32ffbb15b528e603fa151a` |
+| 1 | `def` | [state_0](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FactorGenerated.lean/declarations/state-0.md) | 6 | `declaration-track:2cc98872cebdc99a38a7a01ed65f4b90139d3afa977c84239776a371fb30588b` |
+| 2 | `theorem` | [event_0](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FactorGenerated.lean/declarations/event-0.md) | 7 | `result-track:2eeb88d19ca6867785b6c89dcac7e0c73aa8bc213435861b1aad664caecec746` |
+| 3 | `def` | [state_1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FactorGenerated.lean/declarations/state-1.md) | 8 | `declaration-track:d8564472dc2a70ed1ec97c0d627e2bbeb7c2fe0e530858d9b3c7a0541daafe74` |
+| 4 | `theorem` | [event_1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FactorGenerated.lean/declarations/event-1.md) | 9 | `result-track:99fea87422218a7560d5985681249456e800c1f783ee62e5271c244aaae785e5` |
+| 5 | `def` | [state_2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FactorGenerated.lean/declarations/state-2.md) | 10 | `declaration-track:c338b35ce6b27a9496cf57e5a8b4347c84be44e47852174f6474f4d00b25df56` |
+| 6 | `theorem` | [event_2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FactorGenerated.lean/declarations/event-2.md) | 11 | `result-track:e60961c98cd73911387f4d9ed2b868731c8343fc838c0eca63243f946c7cf625` |
+| 7 | `def` | [state_3](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FactorGenerated.lean/declarations/state-3.md) | 12 | `declaration-track:8d90aa328560e9312b515351239c78632cadaaff36d73ee4844bd90d80a42f91` |
+| 8 | `def` | [split_0](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FactorGenerated.lean/declarations/split-0.md) | 13 | `declaration-track:615dfefa19ee3722f470f3100c578d0ce80fc9d508e6e2d0e2539cb5f9a1331e` |
+| 9 | `theorem` | [split_0_data](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FactorGenerated.lean/declarations/split-0-data.md) | 14 | `result-track:db2652ca5a3dd3d3964e45fd33659c9f816498fd6af91f3681362f3fafa8470e` |
+| 10 | `theorem` | [final_state](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FactorGenerated.lean/declarations/final-state.md) | 15 | `result-track:615bc39bd49ac541be30d6f2a35b6eeb60d76027ebc4b036e67d80018d742df7` |
+| 11 | `theorem` | [terminal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FactorGenerated.lean/declarations/terminal.md) | 20 | `result-track:6bacf2b01eeb98cca930308762888c7d0266a73041c72d91c34f22e258fdd0b7` |
+| 12 | `def` | [closed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FactorGenerated.lean/declarations/closed.md) | 26 | `declaration-track:212a783547b544bf316ffd2151acb9fd927650899fe1a9d9ddc47f6ffd6c03ea` |
+| 13 | `theorem` | [final_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FactorGenerated.lean/declarations/final-map.md) | 27 | `result-track:e707c4f08be6a9cfb267c6cff26000291e10370a2f4cabd29f36d36b5478f339` |
+| 14 | `theorem` | [complete](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FactorGenerated.lean/declarations/complete.md) | 28 | `result-track:4288495190766b4d6a2e8400d586b80b64ba17312b32ffbb15b528e603fa151a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

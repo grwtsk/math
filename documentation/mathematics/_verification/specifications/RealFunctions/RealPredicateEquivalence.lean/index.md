@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/RealPredicateEquivalence.lean/index.md) · [Full source](../../../../RealFunctions/RealPredicateEquivalence.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RealPredicateEquivalence.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RealPredicateEquivalence.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [IsCriticalLineRealPart](../../../../RealFunctions/RealPredicateEquivalence.lean/declarations/iscriticallinerealpart.md) | 37 | `declaration-track:de06d34f4a75e9c04d2efad3f0f2c4341802cefb2816a0f28ee9460733bd88ce` |
-| 2 | `def` | [CenteredWithZeroVariance](../../../../RealFunctions/RealPredicateEquivalence.lean/declarations/centeredwithzerovariance.md) | 40 | `declaration-track:b50c719d666583e9924fd6d496e106c1c47203c34f0ef4bc272cf2eb3d777c21` |
-| 3 | `theorem` | [criticalLine_of_centered_zero](../../../../RealFunctions/RealPredicateEquivalence.lean/declarations/criticalline-of-centered-zero.md) | 43 | `result-track:5482e820c9c28159354d607def13ee312752c5727d59d49eb683c13fc7196424` |
-| 4 | `theorem` | [centered_zero_of_criticalLine](../../../../RealFunctions/RealPredicateEquivalence.lean/declarations/centered-zero-of-criticalline.md) | 56 | `result-track:e6f8e11bef57592e057517cd82457646b3c0424855e73d85c204b17e5e5a2860` |
-| 5 | `theorem` | [criticalLine_iff_centered_zero](../../../../RealFunctions/RealPredicateEquivalence.lean/declarations/criticalline-iff-centered-zero.md) | 66 | `result-track:20a482e393ad014882e5d52b2d4ccdc5e2501b34f2fa2ae5be8ed265c378f294` |
+| 1 | `def` | [IsCriticalLineRealPart](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RealPredicateEquivalence.lean/declarations/iscriticallinerealpart.md) | 37 | `declaration-track:de06d34f4a75e9c04d2efad3f0f2c4341802cefb2816a0f28ee9460733bd88ce` |
+| 2 | `def` | [CenteredWithZeroVariance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RealPredicateEquivalence.lean/declarations/centeredwithzerovariance.md) | 40 | `declaration-track:b50c719d666583e9924fd6d496e106c1c47203c34f0ef4bc272cf2eb3d777c21` |
+| 3 | `theorem` | [criticalLine_of_centered_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RealPredicateEquivalence.lean/declarations/criticalline-of-centered-zero.md) | 43 | `result-track:5482e820c9c28159354d607def13ee312752c5727d59d49eb683c13fc7196424` |
+| 4 | `theorem` | [centered_zero_of_criticalLine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RealPredicateEquivalence.lean/declarations/centered-zero-of-criticalline.md) | 56 | `result-track:e6f8e11bef57592e057517cd82457646b3c0424855e73d85c204b17e5e5a2860` |
+| 5 | `theorem` | [criticalLine_iff_centered_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RealPredicateEquivalence.lean/declarations/criticalline-iff-centered-zero.md) | 66 | `result-track:20a482e393ad014882e5d52b2d4ccdc5e2501b34f2fa2ae5be8ed265c378f294` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

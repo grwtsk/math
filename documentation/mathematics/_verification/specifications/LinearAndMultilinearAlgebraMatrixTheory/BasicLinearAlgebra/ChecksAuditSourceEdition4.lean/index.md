@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChecksAuditSourceEdition4.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChecksAuditSourceEdition4.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChecksAuditSourceEdition4.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChecksAuditSourceEdition4.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,11 +46,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.LinearAlgebra.Schrodinger.Sampling`](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Sampling.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.Analysis.NormedSpace.QuadraticError`](../../../../../FunctionalAnalysis/QuadraticError.lean/index.md) — import line 2; pinned internal source present.
-- [`GRWTSK.Analysis.Fourier.WindowCertificates`](../../../../../MeasureAndIntegration/WindowCertificates.lean/index.md) — import line 3; pinned internal source present.
-- [`GRWTSK.Analysis.AsymptoticAnalysis.PolynomialClosure`](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/PolynomialClosureHistoricalSourceEdition2.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Combinatorics.Sequences.QuotaDiscrepancy`](../../../../../Combinatorics/QuotaDiscrepancy.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.LinearAlgebra.Schrodinger.Sampling`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Sampling.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Analysis.NormedSpace.QuadraticError`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/QuadraticError.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.Analysis.Fourier.WindowCertificates`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/WindowCertificates.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.Analysis.AsymptoticAnalysis.PolynomialClosure`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/PolynomialClosureHistoricalSourceEdition2.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Combinatorics.Sequences.QuotaDiscrepancy`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/QuotaDiscrepancy.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -61,11 +61,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChecksAuditSourceEdition4.lean/declarations/example-source-edition-3.md) | 7 | `declaration-track:6c357fbfc054a96b29251ae416e7572e1f81b614ec288a575e5daa83125c97b8` |
-| 2 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChecksAuditSourceEdition4.lean/declarations/example.md) | 8 | `declaration-track:098b3b124b5d3e5d4bb76929b1491cad31e78bb627cdb379da92234271c8975a` |
-| 3 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChecksAuditSourceEdition4.lean/declarations/example-source-edition-4.md) | 10 | `declaration-track:e36dad9c5f7502a60fcbfde6acaf0c7f038c4fe0ee9cc41a52e6db6fa8c6494c` |
-| 4 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChecksAuditSourceEdition4.lean/declarations/example-source-edition-2.md) | 12 | `declaration-track:193157b7a9181dad83844463a43d448d6c0be91256ef1520cfa9c7e1d07d585c` |
-| 5 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChecksAuditSourceEdition4.lean/declarations/example-source-edition-5.md) | 14 | `declaration-track:f48794dde66b76c1dcde6e617be063f6adaa9a6df135f4444dba9b5f30858b88` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChecksAuditSourceEdition4.lean/declarations/example-source-edition-3.md) | 7 | `declaration-track:6c357fbfc054a96b29251ae416e7572e1f81b614ec288a575e5daa83125c97b8` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChecksAuditSourceEdition4.lean/declarations/example.md) | 8 | `declaration-track:098b3b124b5d3e5d4bb76929b1491cad31e78bb627cdb379da92234271c8975a` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChecksAuditSourceEdition4.lean/declarations/example-source-edition-4.md) | 10 | `declaration-track:e36dad9c5f7502a60fcbfde6acaf0c7f038c4fe0ee9cc41a52e6db6fa8c6494c` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChecksAuditSourceEdition4.lean/declarations/example-source-edition-2.md) | 12 | `declaration-track:193157b7a9181dad83844463a43d448d6c0be91256ef1520cfa9c7e1d07d585c` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChecksAuditSourceEdition4.lean/declarations/example-source-edition-5.md) | 14 | `declaration-track:f48794dde66b76c1dcde6e617be063f6adaa9a6df135f4444dba9b5f30858b88` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

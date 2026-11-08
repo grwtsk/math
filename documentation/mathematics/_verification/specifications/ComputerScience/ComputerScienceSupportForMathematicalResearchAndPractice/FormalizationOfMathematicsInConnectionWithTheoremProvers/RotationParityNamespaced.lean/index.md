@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RotationParityNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RotationParityNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RotationParityNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RotationParityNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [orientationStep](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RotationParityNamespaced.lean/declarations/orientationstep.md) | 11 | `declaration-track:14974887222cbb2c5908008a5041ec33666aa14e81e956c40d9aad8384637561` |
-| 2 | `theorem` | [orientation_step](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RotationParityNamespaced.lean/declarations/orientation-step.md) | 13 | `result-track:c4854c444fbed6468c0cc73ec8a426577c383dd0efb00b25d7e60cb0aaef50b8` |
-| 3 | `theorem` | [even_ceiling_preserves](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RotationParityNamespaced.lean/declarations/even-ceiling-preserves.md) | 16 | `result-track:e1fffb50f2743b27f82ab8e482cafe72e0fac9baa092c833b1ebde0329b541af` |
-| 4 | `theorem` | [odd_ceiling_toggles](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RotationParityNamespaced.lean/declarations/odd-ceiling-toggles.md) | 20 | `result-track:e52073005fd306c5a0d62b23a1ac82db2628d0dc4dc51b7ed24f8e92f5c3b374` |
+| 1 | `def` | [orientationStep](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RotationParityNamespaced.lean/declarations/orientationstep.md) | 11 | `declaration-track:14974887222cbb2c5908008a5041ec33666aa14e81e956c40d9aad8384637561` |
+| 2 | `theorem` | [orientation_step](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RotationParityNamespaced.lean/declarations/orientation-step.md) | 13 | `result-track:c4854c444fbed6468c0cc73ec8a426577c383dd0efb00b25d7e60cb0aaef50b8` |
+| 3 | `theorem` | [even_ceiling_preserves](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RotationParityNamespaced.lean/declarations/even-ceiling-preserves.md) | 16 | `result-track:e1fffb50f2743b27f82ab8e482cafe72e0fac9baa092c833b1ebde0329b541af` |
+| 4 | `theorem` | [odd_ceiling_toggles](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RotationParityNamespaced.lean/declarations/odd-ceiling-toggles.md) | 20 | `result-track:e52073005fd306c5a0d62b23a1ac82db2628d0dc4dc51b7ed24f8e92f5c3b374` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

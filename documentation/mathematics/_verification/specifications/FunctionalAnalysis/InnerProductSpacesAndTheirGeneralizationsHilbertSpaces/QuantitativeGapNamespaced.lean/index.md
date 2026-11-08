@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/QuantitativeGapNamespaced.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/QuantitativeGapNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/QuantitativeGapNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/QuantitativeGapNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ProtectedProjector](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/QuantitativeGapNamespaced.lean/declarations/protectedprojector.md) | 35 | `declaration-track:269f232673d6433885d94d9a28ab01c36af1518eb999e97f32ced018103c76f1` |
-| 2 | `def` | [ProtectedProjector.complement](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/QuantitativeGapNamespaced.lean/declarations/protectedprojector-complement.md) | 42 | `declaration-track:d4a77d6ff307540d368b0b527098ad1d67db50ad748ca9d8d446291156fe0b64` |
-| 3 | `def` | [CoerciveOn](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/QuantitativeGapNamespaced.lean/declarations/coerciveon.md) | 46 | `declaration-track:54cfbed6f3e1ad832bbeed042fe2ac42ccbc365295434427de28a81342ff1b6a` |
-| 4 | `theorem` | [coerciveOn_mono](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/QuantitativeGapNamespaced.lean/declarations/coerciveon-mono.md) | 51 | `result-track:5298c8f308ff3fe52a8892631de1834547b3afe43c27c8325bdefd4f9fee6bc7` |
-| 5 | `theorem` | [pullback_coerciveOn](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/QuantitativeGapNamespaced.lean/declarations/pullback-coerciveon.md) | 59 | `result-track:e619df487543184d294166b75e09521224a14b920cc886f14674ae3bf626998d` |
-| 6 | `theorem` | [kernel_eq_protected_range](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/QuantitativeGapNamespaced.lean/declarations/kernel-eq-protected-range.md) | 86 | `result-track:1c35f0a6a1a7fdcdadf14623b3b778b66b61568cfabe0493b5cdfa22bfb720c5` |
+| 1 | `structure` | [ProtectedProjector](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/QuantitativeGapNamespaced.lean/declarations/protectedprojector.md) | 35 | `declaration-track:269f232673d6433885d94d9a28ab01c36af1518eb999e97f32ced018103c76f1` |
+| 2 | `def` | [ProtectedProjector.complement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/QuantitativeGapNamespaced.lean/declarations/protectedprojector-complement.md) | 42 | `declaration-track:d4a77d6ff307540d368b0b527098ad1d67db50ad748ca9d8d446291156fe0b64` |
+| 3 | `def` | [CoerciveOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/QuantitativeGapNamespaced.lean/declarations/coerciveon.md) | 46 | `declaration-track:54cfbed6f3e1ad832bbeed042fe2ac42ccbc365295434427de28a81342ff1b6a` |
+| 4 | `theorem` | [coerciveOn_mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/QuantitativeGapNamespaced.lean/declarations/coerciveon-mono.md) | 51 | `result-track:5298c8f308ff3fe52a8892631de1834547b3afe43c27c8325bdefd4f9fee6bc7` |
+| 5 | `theorem` | [pullback_coerciveOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/QuantitativeGapNamespaced.lean/declarations/pullback-coerciveon.md) | 59 | `result-track:e619df487543184d294166b75e09521224a14b920cc886f14674ae3bf626998d` |
+| 6 | `theorem` | [kernel_eq_protected_range](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/QuantitativeGapNamespaced.lean/declarations/kernel-eq-protected-range.md) | 86 | `result-track:1c35f0a6a1a7fdcdadf14623b3b778b66b61568cfabe0493b5cdfa22bfb720c5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

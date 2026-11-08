@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/CornerDefsNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/CornerDefsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CornerDefsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CornerDefsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,19 +57,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [IsCorner](../../../../Combinatorics/CornerDefsNamespaced.lean/declarations/iscorner.md) | 44 | `declaration-track:50b8dee79ad287166b307f520bf0d7f14d5e8a25849a01851aa2c2e6d016635c` |
-| 2 | `def` | [IsCornerFree](../../../../Combinatorics/CornerDefsNamespaced.lean/declarations/iscornerfree.md) | 51 | `declaration-track:d7c6ce727fee9584f510ab344afe31dd68c6a21875892a469c84b6e392b7af89` |
-| 3 | `lemma` | [isCornerFree_iff](../../../../Combinatorics/CornerDefsNamespaced.lean/declarations/iscornerfree-iff.md) | 54 | `result-track:f72b890ba5dd75975f2fd9a27234a578517cf1430b9b19ad590dfaba9656caa0` |
-| 4 | `lemma` | [IsCorner.mono](../../../../Combinatorics/CornerDefsNamespaced.lean/declarations/iscorner-mono.md) | 61 | `result-track:40da464c08e556b1ca120a69cf3beea175495ba8a017ab90a176b4b20b2cac36` |
-| 5 | `lemma` | [IsCornerFree.mono](../../../../Combinatorics/CornerDefsNamespaced.lean/declarations/iscornerfree-mono.md) | 67 | `result-track:fb5ce3ff5f959eadbab43ec95e86b147118dd985372a6ac45bdc11897b285494` |
-| 6 | `lemma` | [not_isCorner_empty](../../../../Combinatorics/CornerDefsNamespaced.lean/declarations/not-iscorner-empty.md) | 70 | `result-track:e3000ab81fd496236536104eae5f8ad69aa6c60e69e1c6e9cf22e2ae4e4b6e41` |
-| 7 | `lemma` | [Set.Subsingleton.isCornerFree](../../../../Combinatorics/CornerDefsNamespaced.lean/declarations/set-subsingleton-iscornerfree.md) | 72 | `result-track:4723d55ef95f87a5260abdc0e007234eeda03863dc5a1e33ad93e2a1c1bcadc6` |
-| 8 | `lemma` | [isCornerFree_empty](../../../../Combinatorics/CornerDefsNamespaced.lean/declarations/iscornerfree-empty.md) | 75 | `result-track:5b9c141d2198cab3c11e2c736294823ef274bafcb7d1f45d41f0b08c028a4479` |
-| 9 | `lemma` | [isCornerFree_singleton](../../../../Combinatorics/CornerDefsNamespaced.lean/declarations/iscornerfree-singleton.md) | 76 | `result-track:446fe85e9723445c81202e6147c349ef78f9479d8421ac6004f7842887eeebe7` |
-| 10 | `lemma` | [IsCorner.image](../../../../Combinatorics/CornerDefsNamespaced.lean/declarations/iscorner-image.md) | 79 | `result-track:58c5fda845ff2278ee7298fb9f8e1d798ead0e11856f502907fcb518041fd8ed` |
-| 11 | `lemma` | [IsCornerFree.of_image](../../../../Combinatorics/CornerDefsNamespaced.lean/declarations/iscornerfree-of-image.md) | 86 | `result-track:9c268f0f71b5042e8365228d22392213afb71837181721087f784e72f2d64298` |
-| 12 | `lemma` | [isCorner_image](../../../../Combinatorics/CornerDefsNamespaced.lean/declarations/iscorner-image-source-edition-2.md) | 91 | `result-track:84cf92b0079ceca9f037c92de986470b50728583a605470588fecd675b68b67f` |
-| 13 | `lemma` | [isCornerFree_image](../../../../Combinatorics/CornerDefsNamespaced.lean/declarations/iscornerfree-image.md) | 102 | `result-track:5d5558b59a51ee121799216d6fa4c9e2b64696047b7ebc2b9a207c5cf58f2998` |
+| 1 | `structure` | [IsCorner](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CornerDefsNamespaced.lean/declarations/iscorner.md) | 44 | `declaration-track:50b8dee79ad287166b307f520bf0d7f14d5e8a25849a01851aa2c2e6d016635c` |
+| 2 | `def` | [IsCornerFree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CornerDefsNamespaced.lean/declarations/iscornerfree.md) | 51 | `declaration-track:d7c6ce727fee9584f510ab344afe31dd68c6a21875892a469c84b6e392b7af89` |
+| 3 | `lemma` | [isCornerFree_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CornerDefsNamespaced.lean/declarations/iscornerfree-iff.md) | 54 | `result-track:f72b890ba5dd75975f2fd9a27234a578517cf1430b9b19ad590dfaba9656caa0` |
+| 4 | `lemma` | [IsCorner.mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CornerDefsNamespaced.lean/declarations/iscorner-mono.md) | 61 | `result-track:40da464c08e556b1ca120a69cf3beea175495ba8a017ab90a176b4b20b2cac36` |
+| 5 | `lemma` | [IsCornerFree.mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CornerDefsNamespaced.lean/declarations/iscornerfree-mono.md) | 67 | `result-track:fb5ce3ff5f959eadbab43ec95e86b147118dd985372a6ac45bdc11897b285494` |
+| 6 | `lemma` | [not_isCorner_empty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CornerDefsNamespaced.lean/declarations/not-iscorner-empty.md) | 70 | `result-track:e3000ab81fd496236536104eae5f8ad69aa6c60e69e1c6e9cf22e2ae4e4b6e41` |
+| 7 | `lemma` | [Set.Subsingleton.isCornerFree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CornerDefsNamespaced.lean/declarations/set-subsingleton-iscornerfree.md) | 72 | `result-track:4723d55ef95f87a5260abdc0e007234eeda03863dc5a1e33ad93e2a1c1bcadc6` |
+| 8 | `lemma` | [isCornerFree_empty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CornerDefsNamespaced.lean/declarations/iscornerfree-empty.md) | 75 | `result-track:5b9c141d2198cab3c11e2c736294823ef274bafcb7d1f45d41f0b08c028a4479` |
+| 9 | `lemma` | [isCornerFree_singleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CornerDefsNamespaced.lean/declarations/iscornerfree-singleton.md) | 76 | `result-track:446fe85e9723445c81202e6147c349ef78f9479d8421ac6004f7842887eeebe7` |
+| 10 | `lemma` | [IsCorner.image](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CornerDefsNamespaced.lean/declarations/iscorner-image.md) | 79 | `result-track:58c5fda845ff2278ee7298fb9f8e1d798ead0e11856f502907fcb518041fd8ed` |
+| 11 | `lemma` | [IsCornerFree.of_image](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CornerDefsNamespaced.lean/declarations/iscornerfree-of-image.md) | 86 | `result-track:9c268f0f71b5042e8365228d22392213afb71837181721087f784e72f2d64298` |
+| 12 | `lemma` | [isCorner_image](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CornerDefsNamespaced.lean/declarations/iscorner-image-source-edition-2.md) | 91 | `result-track:84cf92b0079ceca9f037c92de986470b50728583a605470588fecd675b68b67f` |
+| 13 | `lemma` | [isCornerFree_image](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CornerDefsNamespaced.lean/declarations/iscornerfree-image.md) | 102 | `result-track:5d5558b59a51ee121799216d6fa4c9e2b64696047b7ebc2b9a207c5cf58f2998` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SequentialThreePointVolumePackingControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SequentialThreePointVolumePackingControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SequentialThreePointVolumePackingControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SequentialThreePointVolumePackingControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.SequentialThreePointVolumePacking`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SequentialThreePointVolumePacking.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.SequentialThreePointVolumePacking`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SequentialThreePointVolumePacking.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [adjacent_windows_share_first_overlap](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SequentialThreePointVolumePackingControls.lean/declarations/adjacent-windows-share-first-overlap.md) | 15 | `result-track:1355ea35ab4d491216b35603c9cf4911bb2f5657e0183c2f4f86eeb3a627f1b3` |
-| 2 | `theorem` | [adjacent_windows_share_second_overlap](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SequentialThreePointVolumePackingControls.lean/declarations/adjacent-windows-share-second-overlap.md) | 21 | `result-track:08e4e091d31a1704e29b2e47803b62add678eb3c0b78db5f9abc0d58eed4a088` |
-| 3 | `theorem` | [every_window_nonnegative](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SequentialThreePointVolumePackingControls.lean/declarations/every-window-nonnegative.md) | 27 | `result-track:ae72e7799c7898647e6351380b5d9ac4ccb7fbb38d612ff0dcad7f5d4709dc2b` |
-| 4 | `theorem` | [every_window_source_valid](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SequentialThreePointVolumePackingControls.lean/declarations/every-window-source-valid.md) | 34 | `result-track:988047c86abde713982a7f075d5cff28e82a011f8ccb6c21fda31c76cf9db7b2` |
+| 1 | `theorem` | [adjacent_windows_share_first_overlap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SequentialThreePointVolumePackingControls.lean/declarations/adjacent-windows-share-first-overlap.md) | 15 | `result-track:1355ea35ab4d491216b35603c9cf4911bb2f5657e0183c2f4f86eeb3a627f1b3` |
+| 2 | `theorem` | [adjacent_windows_share_second_overlap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SequentialThreePointVolumePackingControls.lean/declarations/adjacent-windows-share-second-overlap.md) | 21 | `result-track:08e4e091d31a1704e29b2e47803b62add678eb3c0b78db5f9abc0d58eed4a088` |
+| 3 | `theorem` | [every_window_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SequentialThreePointVolumePackingControls.lean/declarations/every-window-nonnegative.md) | 27 | `result-track:ae72e7799c7898647e6351380b5d9ac4ccb7fbb38d612ff0dcad7f5d4709dc2b` |
+| 4 | `theorem` | [every_window_source_valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SequentialThreePointVolumePackingControls.lean/declarations/every-window-source-valid.md) | 34 | `result-track:988047c86abde713982a7f075d5cff28e82a011f8ccb6c21fda31c76cf9db7b2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

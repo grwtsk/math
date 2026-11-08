@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/AD328c99f8e79.lean/index.md) · [Full source](../../../../Combinatorics/AD328c99f8e79.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AD328c99f8e79.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AD328c99f8e79.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [representation_does_not_change_concept_identity](../../../../Combinatorics/AD328c99f8e79.lean/declarations/representation-does-not-change-concept-identity.md) | 16 | `result-track:4cd05a97d5cceb5e7403979129a0a70d82a0b6c3cdb5ece276d15495a28dd0b6` |
+| 1 | `theorem` | [representation_does_not_change_concept_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AD328c99f8e79.lean/declarations/representation-does-not-change-concept-identity.md) | 16 | `result-track:4cd05a97d5cceb5e7403979129a0a70d82a0b6c3cdb5ece276d15495a28dd0b6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

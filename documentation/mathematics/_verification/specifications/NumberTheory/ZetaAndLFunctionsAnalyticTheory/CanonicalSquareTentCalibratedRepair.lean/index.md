@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentCalibratedRepair.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentCalibratedRepair.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentCalibratedRepair.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentCalibratedRepair.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentRepairSufficiency`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentRepairSufficiency.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentRepairSufficiency`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentRepairSufficiency.lean/index.md) — import line 6; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [calibratedThirdCoordinate](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentCalibratedRepair.lean/declarations/calibratedthirdcoordinate.md) | 28 | `declaration-track:c6f5a4c9e845e36816bfc8129b0106592652d3482091bc7290f68acc40b0713d` |
-| 2 | `theorem` | [calibratedThirdCoordinate_eq_iff](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentCalibratedRepair.lean/declarations/calibratedthirdcoordinate-eq-iff.md) | 33 | `result-track:5b9093b23e6aca124048a8eae3dc023d53a4d3c7dbb86e84c9c5d1148a3b0639` |
-| 3 | `theorem` | [calibrated_augmented_injective](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentCalibratedRepair.lean/declarations/calibrated-augmented-injective.md) | 46 | `result-track:504f0d05e838e1f2448b1dbb8f4b8fe273a15e405a31c38e7bc672ee8a137ee9` |
+| 1 | `def` | [calibratedThirdCoordinate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentCalibratedRepair.lean/declarations/calibratedthirdcoordinate.md) | 28 | `declaration-track:c6f5a4c9e845e36816bfc8129b0106592652d3482091bc7290f68acc40b0713d` |
+| 2 | `theorem` | [calibratedThirdCoordinate_eq_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentCalibratedRepair.lean/declarations/calibratedthirdcoordinate-eq-iff.md) | 33 | `result-track:5b9093b23e6aca124048a8eae3dc023d53a4d3c7dbb86e84c9c5d1148a3b0639` |
+| 3 | `theorem` | [calibrated_augmented_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentCalibratedRepair.lean/declarations/calibrated-augmented-injective.md) | 46 | `result-track:504f0d05e838e1f2448b1dbb8f4b8fe273a15e405a31c38e7bc672ee8a137ee9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

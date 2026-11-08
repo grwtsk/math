@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/FourierAnalysisSchwartzMoments.lean/index.md) · [Full source](../../../../MeasureAndIntegration/FourierAnalysisSchwartzMoments.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FourierAnalysisSchwartzMoments.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FourierAnalysisSchwartzMoments.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,14 +61,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [fourier_coefficient_moment](../../../../MeasureAndIntegration/FourierAnalysisSchwartzMoments.lean/declarations/fourier-coefficient-moment.md) | 31 | `result-track:704833eb0839194816fe647e3c614356cac31ac114519aa2b51d942ca3086b88` |
-| 2 | `theorem` | [fourier_seminorm_from_derivative_integrals](../../../../MeasureAndIntegration/FourierAnalysisSchwartzMoments.lean/declarations/fourier-seminorm-from-derivative-integrals.md) | 39 | `result-track:c741f21a7b6faee050c6e35261e35fa1927b0c3aca9e673cfefe84f838b0eac5` |
-| 3 | `theorem` | [uniform_fourier_seminorm_transfer](../../../../MeasureAndIntegration/FourierAnalysisSchwartzMoments.lean/declarations/uniform-fourier-seminorm-transfer.md) | 60 | `result-track:71e8d7010186912c5c336ee6c6936d2f34f4e69e95c9015b656d854fe6158cca` |
-| 4 | `theorem` | [uniform_fourier_coefficient_moment](../../../../MeasureAndIntegration/FourierAnalysisSchwartzMoments.lean/declarations/uniform-fourier-coefficient-moment.md) | 119 | `result-track:b09cc3075ee9d6124821010ba88c89847c7d2b2d002f3b9f517b948b435c0a45` |
-| 5 | `theorem` | [fourier_one_plus_moment_integrable](../../../../MeasureAndIntegration/FourierAnalysisSchwartzMoments.lean/declarations/fourier-one-plus-moment-integrable.md) | 159 | `result-track:bd114f1dfd87a3fea0b88278e1f46bff8b5d895a7ebca01a357786da80465997` |
-| 6 | `def` | [coefficientMomentBound](../../../../MeasureAndIntegration/FourierAnalysisSchwartzMoments.lean/declarations/coefficientmomentbound.md) | 179 | `declaration-track:5593e584d139d725b89ade340b6c2f55254104fa118b6d4bb56d168d5961be1e` |
-| 7 | `theorem` | [coefficientMomentBound_nonneg](../../../../MeasureAndIntegration/FourierAnalysisSchwartzMoments.lean/declarations/coefficientmomentbound-nonneg.md) | 184 | `result-track:d06285e0cb836dfa04df1142879ca2b9d837d0a4f0b56fce14eaa41bb0d4e3a4` |
-| 8 | `theorem` | [uniform_fourier_one_plus_moment](../../../../MeasureAndIntegration/FourierAnalysisSchwartzMoments.lean/declarations/uniform-fourier-one-plus-moment.md) | 189 | `result-track:46dfc0ae54ea70b88bbd5f6d46fa32ba728efbf1ab3debbf49298cfb78c2472d` |
+| 1 | `theorem` | [fourier_coefficient_moment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FourierAnalysisSchwartzMoments.lean/declarations/fourier-coefficient-moment.md) | 31 | `result-track:704833eb0839194816fe647e3c614356cac31ac114519aa2b51d942ca3086b88` |
+| 2 | `theorem` | [fourier_seminorm_from_derivative_integrals](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FourierAnalysisSchwartzMoments.lean/declarations/fourier-seminorm-from-derivative-integrals.md) | 39 | `result-track:c741f21a7b6faee050c6e35261e35fa1927b0c3aca9e673cfefe84f838b0eac5` |
+| 3 | `theorem` | [uniform_fourier_seminorm_transfer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FourierAnalysisSchwartzMoments.lean/declarations/uniform-fourier-seminorm-transfer.md) | 60 | `result-track:71e8d7010186912c5c336ee6c6936d2f34f4e69e95c9015b656d854fe6158cca` |
+| 4 | `theorem` | [uniform_fourier_coefficient_moment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FourierAnalysisSchwartzMoments.lean/declarations/uniform-fourier-coefficient-moment.md) | 119 | `result-track:b09cc3075ee9d6124821010ba88c89847c7d2b2d002f3b9f517b948b435c0a45` |
+| 5 | `theorem` | [fourier_one_plus_moment_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FourierAnalysisSchwartzMoments.lean/declarations/fourier-one-plus-moment-integrable.md) | 159 | `result-track:bd114f1dfd87a3fea0b88278e1f46bff8b5d895a7ebca01a357786da80465997` |
+| 6 | `def` | [coefficientMomentBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FourierAnalysisSchwartzMoments.lean/declarations/coefficientmomentbound.md) | 179 | `declaration-track:5593e584d139d725b89ade340b6c2f55254104fa118b6d4bb56d168d5961be1e` |
+| 7 | `theorem` | [coefficientMomentBound_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FourierAnalysisSchwartzMoments.lean/declarations/coefficientmomentbound-nonneg.md) | 184 | `result-track:d06285e0cb836dfa04df1142879ca2b9d837d0a4f0b56fce14eaa41bb0d4e3a4` |
+| 8 | `theorem` | [uniform_fourier_one_plus_moment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FourierAnalysisSchwartzMoments.lean/declarations/uniform-fourier-one-plus-moment.md) | 189 | `result-track:46dfc0ae54ea70b88bbd5f6d46fa32ba728efbf1ab3debbf49298cfb78c2472d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

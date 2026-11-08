@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/PrimitiveParserReconstruction.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/PrimitiveParserReconstruction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/PrimitiveParserReconstruction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/PrimitiveParserReconstruction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.FoundationsLogicAndTypeTheory.Computability.RecursiveFunctions.SupportedValueInverse`](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/SupportedValueInverse.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.FoundationsLogicAndTypeTheory.Computability.RecursiveFunctions.SupportedValueInverse`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/SupportedValueInverse.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [unsigned_reconstruct](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/PrimitiveParserReconstruction.lean/declarations/unsigned-reconstruct.md) | 5 | `result-track:74e614bdc16f40aa366b6e90df41af518d09e3d03c10cfbf0b27fe62af1c649b` |
-| 2 | `theorem` | [integer_reconstruct](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/PrimitiveParserReconstruction.lean/declarations/integer-reconstruct.md) | 17 | `result-track:a198d990d2ec2acc978bec034725a45763b4e5eb1416e54711797060ae0e097c` |
-| 3 | `theorem` | [readUntil_reconstruct](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/PrimitiveParserReconstruction.lean/declarations/readuntil-reconstruct.md) | 43 | `result-track:a79e581ca8d0f7b9acba6f3409803da259180eb02933768aa8cf23eb89e0a4f8` |
-| 4 | `theorem` | [readNat_reconstruct](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/PrimitiveParserReconstruction.lean/declarations/readnat-reconstruct.md) | 61 | `result-track:376ecfe2fee8b86a2b8a4d3ff364d94ceed68b722bfa44e07b48890930b69a37` |
-| 5 | `theorem` | [splitAt_length](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/PrimitiveParserReconstruction.lean/declarations/splitat-length.md) | 74 | `result-track:e2e4d9bcca6b8abdf4c7e114ace836bb2aa2143399b2342f1d40d50df87d5a66` |
+| 1 | `theorem` | [unsigned_reconstruct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/PrimitiveParserReconstruction.lean/declarations/unsigned-reconstruct.md) | 5 | `result-track:74e614bdc16f40aa366b6e90df41af518d09e3d03c10cfbf0b27fe62af1c649b` |
+| 2 | `theorem` | [integer_reconstruct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/PrimitiveParserReconstruction.lean/declarations/integer-reconstruct.md) | 17 | `result-track:a198d990d2ec2acc978bec034725a45763b4e5eb1416e54711797060ae0e097c` |
+| 3 | `theorem` | [readUntil_reconstruct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/PrimitiveParserReconstruction.lean/declarations/readuntil-reconstruct.md) | 43 | `result-track:a79e581ca8d0f7b9acba6f3409803da259180eb02933768aa8cf23eb89e0a4f8` |
+| 4 | `theorem` | [readNat_reconstruct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/PrimitiveParserReconstruction.lean/declarations/readnat-reconstruct.md) | 61 | `result-track:376ecfe2fee8b86a2b8a4d3ff364d94ceed68b722bfa44e07b48890930b69a37` |
+| 5 | `theorem` | [splitAt_length](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/PrimitiveParserReconstruction.lean/declarations/splitat-length.md) | 74 | `result-track:e2e4d9bcca6b8abdf4c7e114ace836bb2aa2143399b2342f1d40d50df87d5a66` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

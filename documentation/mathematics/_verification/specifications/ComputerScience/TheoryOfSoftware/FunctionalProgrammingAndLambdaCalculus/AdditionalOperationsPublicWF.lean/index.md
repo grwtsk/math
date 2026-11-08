@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/AdditionalOperationsPublicWF.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/AdditionalOperationsPublicWF.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/AdditionalOperationsPublicWF.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/AdditionalOperationsPublicWF.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [WF.filterMap](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/AdditionalOperationsPublicWF.lean/declarations/wf-filtermap.md) | 36 | `result-track:895dc2eea7e68675c015e26a08c48440f99ec9f91904d2da522a1cc03b462ab8` |
-| 2 | `theorem` | [WF.map](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/AdditionalOperationsPublicWF.lean/declarations/wf-map.md) | 40 | `result-track:fb4f76074884a31199cd73823039e857b945ad27761f92602b024f5546624af9` |
-| 3 | `def` | [filterMap](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/AdditionalOperationsPublicWF.lean/declarations/filtermap.md) | 46 | `declaration-track:e743a7e09694d7f3888dc4a36e3adcd715109504a05addb2b22bb78356c8b32c` |
-| 4 | `def` | [map](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/AdditionalOperationsPublicWF.lean/declarations/map.md) | 50 | `declaration-track:03757c3843a784e8165f1155034690997c1ed41e46b637263f03d0a0fc163b7d` |
+| 1 | `theorem` | [WF.filterMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/AdditionalOperationsPublicWF.lean/declarations/wf-filtermap.md) | 36 | `result-track:895dc2eea7e68675c015e26a08c48440f99ec9f91904d2da522a1cc03b462ab8` |
+| 2 | `theorem` | [WF.map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/AdditionalOperationsPublicWF.lean/declarations/wf-map.md) | 40 | `result-track:fb4f76074884a31199cd73823039e857b945ad27761f92602b024f5546624af9` |
+| 3 | `def` | [filterMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/AdditionalOperationsPublicWF.lean/declarations/filtermap.md) | 46 | `declaration-track:e743a7e09694d7f3888dc4a36e3adcd715109504a05addb2b22bb78356c8b32c` |
+| 4 | `def` | [map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/AdditionalOperationsPublicWF.lean/declarations/map.md) | 50 | `declaration-track:03757c3843a784e8165f1155034690997c1ed41e46b637263f03d0a0fc163b7d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

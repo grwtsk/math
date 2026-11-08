@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ControlLawfulNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ControlLawfulNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ControlLawfulNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ControlLawfulNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mk](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ControlLawfulNamespaced.lean/declarations/mk-source-edition-2.md) | 45 | `declaration-track:879d5769737f6e50b05531a90d6ed9e42ea8c9394f38111c49a4d8d699671442` |
-| 2 | `theorem` | [run_mk](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ControlLawfulNamespaced.lean/declarations/run-mk.md) | 48 | `result-track:42114aa4ad18a8400f5028340ebb4d31e0911125ec568ddff9c796dc47527ec8` |
-| 3 | `theorem` | [run_monadLift](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ControlLawfulNamespaced.lean/declarations/run-monadlift.md) | 64 | `result-track:c24469cfeb3829b50f80f116e92bdef6cd13574ff6a02025f8ac0b414d68aaa8` |
-| 4 | `theorem` | [run_monadMap](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ControlLawfulNamespaced.lean/declarations/run-monadmap.md) | 69 | `result-track:65a0c3e4d543c72a448f50f7c54b168927b4c7d5cdeda5283db3c847197b7ee8` |
-| 5 | `def` | [mk](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ControlLawfulNamespaced.lean/declarations/mk.md) | 96 | `declaration-track:8650f001ac50414fa4bc65fe58050d49610413f84902c0a9fbc3ac95a7babbbd` |
-| 6 | `theorem` | [run_mk](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ControlLawfulNamespaced.lean/declarations/run-mk-source-edition-2.md) | 99 | `result-track:58f54bfee0bc723eddbdf5d95b3ad5a90696bc6891236d03bcad792dbeb0aaa3` |
+| 1 | `def` | [mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ControlLawfulNamespaced.lean/declarations/mk-source-edition-2.md) | 45 | `declaration-track:879d5769737f6e50b05531a90d6ed9e42ea8c9394f38111c49a4d8d699671442` |
+| 2 | `theorem` | [run_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ControlLawfulNamespaced.lean/declarations/run-mk.md) | 48 | `result-track:42114aa4ad18a8400f5028340ebb4d31e0911125ec568ddff9c796dc47527ec8` |
+| 3 | `theorem` | [run_monadLift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ControlLawfulNamespaced.lean/declarations/run-monadlift.md) | 64 | `result-track:c24469cfeb3829b50f80f116e92bdef6cd13574ff6a02025f8ac0b414d68aaa8` |
+| 4 | `theorem` | [run_monadMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ControlLawfulNamespaced.lean/declarations/run-monadmap.md) | 69 | `result-track:65a0c3e4d543c72a448f50f7c54b168927b4c7d5cdeda5283db3c847197b7ee8` |
+| 5 | `def` | [mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ControlLawfulNamespaced.lean/declarations/mk.md) | 96 | `declaration-track:8650f001ac50414fa4bc65fe58050d49610413f84902c0a9fbc3ac95a7babbbd` |
+| 6 | `theorem` | [run_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ControlLawfulNamespaced.lean/declarations/run-mk-source-edition-2.md) | 99 | `result-track:58f54bfee0bc723eddbdf5d95b3ad5a90696bc6891236d03bcad792dbeb0aaa3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

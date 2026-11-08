@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AdmittedGraph.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AdmittedGraph.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AdmittedGraph.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AdmittedGraph.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [AdmittedEdgeType](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AdmittedGraph.lean/declarations/admittededgetype.md) | 17 | `declaration-track:912b9b7fe5ecd3edb5e7e1b1b78dbeaa726e9413c9c53dc1b219f671d0f7622a` |
-| 2 | `theorem` | [admittedEdgeType_isAdmissible](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AdmittedGraph.lean/declarations/admittededgetype-isadmissible.md) | 26 | `result-track:9efd32b5250bd47b521cfe1ecf404d77cf6a82922b1f9f9f1af08033c2e54d47` |
-| 3 | `theorem` | [admittedEdgeType_val_injective](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AdmittedGraph.lean/declarations/admittededgetype-val-injective.md) | 39 | `result-track:45f8c498309ef50d3540588bd743bba8e7a715c8257149df91507fe20bcbd705` |
-| 4 | `def` | [AdmittedGraph](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AdmittedGraph.lean/declarations/admittedgraph.md) | 54 | `declaration-track:3c300d9458e2320666faf31d324e9bf0b3e059ab44c24a10e1430c0df9e600dc` |
-| 5 | `theorem` | [admittedGraph_source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AdmittedGraph.lean/declarations/admittedgraph-source.md) | 64 | `result-track:b68936bf18c10109b37da2df8f8106955205b971e03b752c49db3a096f69999c` |
-| 6 | `theorem` | [admittedGraph_target](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AdmittedGraph.lean/declarations/admittedgraph-target.md) | 74 | `result-track:de2f320ff8c0fe559dfea7df31ada4702521daec6df2c644596873185fe2b60f` |
+| 1 | `def` | [AdmittedEdgeType](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AdmittedGraph.lean/declarations/admittededgetype.md) | 17 | `declaration-track:912b9b7fe5ecd3edb5e7e1b1b78dbeaa726e9413c9c53dc1b219f671d0f7622a` |
+| 2 | `theorem` | [admittedEdgeType_isAdmissible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AdmittedGraph.lean/declarations/admittededgetype-isadmissible.md) | 26 | `result-track:9efd32b5250bd47b521cfe1ecf404d77cf6a82922b1f9f9f1af08033c2e54d47` |
+| 3 | `theorem` | [admittedEdgeType_val_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AdmittedGraph.lean/declarations/admittededgetype-val-injective.md) | 39 | `result-track:45f8c498309ef50d3540588bd743bba8e7a715c8257149df91507fe20bcbd705` |
+| 4 | `def` | [AdmittedGraph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AdmittedGraph.lean/declarations/admittedgraph.md) | 54 | `declaration-track:3c300d9458e2320666faf31d324e9bf0b3e059ab44c24a10e1430c0df9e600dc` |
+| 5 | `theorem` | [admittedGraph_source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AdmittedGraph.lean/declarations/admittedgraph-source.md) | 64 | `result-track:b68936bf18c10109b37da2df8f8106955205b971e03b752c49db3a096f69999c` |
+| 6 | `theorem` | [admittedGraph_target](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AdmittedGraph.lean/declarations/admittedgraph-target.md) | 74 | `result-track:de2f320ff8c0fe559dfea7df31ada4702521daec6df2c644596873185fe2b60f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

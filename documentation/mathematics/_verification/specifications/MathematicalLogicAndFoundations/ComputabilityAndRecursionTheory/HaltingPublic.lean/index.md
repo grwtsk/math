@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/HaltingPublic.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/HaltingPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/HaltingPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/HaltingPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [rice](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/HaltingPublic.lean/declarations/rice-source-edition-2.md) | 33 | `result-track:d13aa067a761f8a82c86ff71a7307170d0f033d30c5da38e2950ad8ad2d26db8` |
-| 2 | `theorem` | [rice₂](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/HaltingPublic.lean/declarations/rice.md) | 43 | `result-track:3d577ca1ba3b74ce6c03c43e05425ac4c26f13523995d652fecbe9d6a7ca7228` |
-| 3 | `theorem` | [halting_problem_re](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/HaltingPublic.lean/declarations/halting-problem-re.md) | 61 | `result-track:52733ab0e69d78da7be4c332ac8850a2087be75f623f46b9c5c20a2bf8fe4695` |
-| 4 | `theorem` | [halting_problem](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/HaltingPublic.lean/declarations/halting-problem.md) | 65 | `result-track:c902355b758a238dc3371fb178d685a70464df66953f0bd6a60402bae76daecf` |
-| 5 | `theorem` | [halting_problem_not_re](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/HaltingPublic.lean/declarations/halting-problem-not-re.md) | 68 | `result-track:1144e8cc421740646badaddbba917acc741673bd6e76e15b98d310339f9b6d65` |
+| 1 | `theorem` | [rice](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/HaltingPublic.lean/declarations/rice-source-edition-2.md) | 33 | `result-track:d13aa067a761f8a82c86ff71a7307170d0f033d30c5da38e2950ad8ad2d26db8` |
+| 2 | `theorem` | [rice₂](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/HaltingPublic.lean/declarations/rice.md) | 43 | `result-track:3d577ca1ba3b74ce6c03c43e05425ac4c26f13523995d652fecbe9d6a7ca7228` |
+| 3 | `theorem` | [halting_problem_re](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/HaltingPublic.lean/declarations/halting-problem-re.md) | 61 | `result-track:52733ab0e69d78da7be4c332ac8850a2087be75f623f46b9c5c20a2bf8fe4695` |
+| 4 | `theorem` | [halting_problem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/HaltingPublic.lean/declarations/halting-problem.md) | 65 | `result-track:c902355b758a238dc3371fb178d685a70464df66953f0bd6a60402bae76daecf` |
+| 5 | `theorem` | [halting_problem_not_re](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/HaltingPublic.lean/declarations/halting-problem-not-re.md) | 68 | `result-track:1144e8cc421740646badaddbba917acc741673bd6e76e15b98d310339f9b6d65` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

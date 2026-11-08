@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/CountableCoverNamespaced.lean/index.md) · [Full source](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/CountableCoverNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/CountableCoverNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/CountableCoverNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [mk_subtype_le_of_countable_eventually_mem_aux](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/CountableCoverNamespaced.lean/declarations/mk-subtype-le-of-countable-eventually-mem-aux.md) | 39 | `result-track:f53cd3109d8d6c648625e24f22daaac61f93f80a57d2c0434d6cc841eb7bc4cd` |
-| 2 | `lemma` | [mk_subtype_le_of_countable_eventually_mem](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/CountableCoverNamespaced.lean/declarations/mk-subtype-le-of-countable-eventually-mem.md) | 74 | `result-track:b8d9fc7709a885333a3efca1b4ffe2a7778342dd1f2f2ac481bf9f5cdae50e3d` |
-| 3 | `lemma` | [mk_le_of_countable_eventually_mem](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/CountableCoverNamespaced.lean/declarations/mk-le-of-countable-eventually-mem.md) | 90 | `result-track:cccacabc8668e7a62101dfb19889194f987680104ad42f5d8d716fb17d2b0e4c` |
-| 4 | `lemma` | [mk_of_countable_eventually_mem](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/CountableCoverNamespaced.lean/declarations/mk-of-countable-eventually-mem.md) | 98 | `result-track:c4279921082ee16f05c20369cc92bf2de71042e42f24494fe844cf7b5d776e1d` |
+| 1 | `lemma` | [mk_subtype_le_of_countable_eventually_mem_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/CountableCoverNamespaced.lean/declarations/mk-subtype-le-of-countable-eventually-mem-aux.md) | 39 | `result-track:f53cd3109d8d6c648625e24f22daaac61f93f80a57d2c0434d6cc841eb7bc4cd` |
+| 2 | `lemma` | [mk_subtype_le_of_countable_eventually_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/CountableCoverNamespaced.lean/declarations/mk-subtype-le-of-countable-eventually-mem.md) | 74 | `result-track:b8d9fc7709a885333a3efca1b4ffe2a7778342dd1f2f2ac481bf9f5cdae50e3d` |
+| 3 | `lemma` | [mk_le_of_countable_eventually_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/CountableCoverNamespaced.lean/declarations/mk-le-of-countable-eventually-mem.md) | 90 | `result-track:cccacabc8668e7a62101dfb19889194f987680104ad42f5d8d716fb17d2b0e4c` |
+| 4 | `lemma` | [mk_of_countable_eventually_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/CountableCoverNamespaced.lean/declarations/mk-of-countable-eventually-mem.md) | 98 | `result-track:c4279921082ee16f05c20369cc92bf2de71042e42f24494fe844cf7b5d776e1d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

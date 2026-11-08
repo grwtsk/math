@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SecondMomentNamespacedPublic.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SecondMomentNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SecondMomentNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SecondMomentNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [sum_pair_fz_mul_conj_eq_bigF_mul_conj_alpha](../../../../MeasureAndIntegration/SecondMomentNamespacedPublic.lean/declarations/sum-pair-fz-mul-conj-eq-bigf-mul-conj-alpha.md) | 48 | `result-track:b94f25da53f9065498795468ec7b48e391b2f41cb2ffb135a5b1958e35aed601` |
-| 2 | `theorem` | [sum_testKernel_sq_eq_integral_norm_bigF_sq](../../../../MeasureAndIntegration/SecondMomentNamespacedPublic.lean/declarations/sum-testkernel-sq-eq-integral-norm-bigf-sq.md) | 64 | `result-track:f3bd0c3b8bbc8e904eab27e82606a2e29b528d5cae47db01abb5d009905b3dc2` |
-| 3 | `theorem` | [sum_testKernel_sq_re_eq_integral_norm_bigF_sq](../../../../MeasureAndIntegration/SecondMomentNamespacedPublic.lean/declarations/sum-testkernel-sq-re-eq-integral-norm-bigf-sq.md) | 118 | `result-track:3510e05356729a91661006bdcb5f617a56b123bead5202e256ab02a48da42375` |
-| 4 | `theorem` | [alphaOf_re_eq_sum_norm](../../../../MeasureAndIntegration/SecondMomentNamespacedPublic.lean/declarations/alphaof-re-eq-sum-norm.md) | 130 | `result-track:d4a233473dee4164fb2536af1fa47548eb7f893aeab9e7087a39cb4855564ab5` |
-| 5 | `theorem` | [sum_alphaOf_re_first_lower](../../../../MeasureAndIntegration/SecondMomentNamespacedPublic.lean/declarations/sum-alphaof-re-first-lower.md) | 164 | `result-track:f81a903317afb7c4dd07034f57f7a32602b23785c92b2133c9e5a3b65d87b757` |
-| 6 | `theorem` | [three_range_simple](../../../../MeasureAndIntegration/SecondMomentNamespacedPublic.lean/declarations/three-range-simple.md) | 249 | `result-track:b845991a15d5234ec43f15df10307bb894582e08cee3acedae733e6ca7259ee6` |
-| 7 | `theorem` | [card_simpleRealPart_lower](../../../../MeasureAndIntegration/SecondMomentNamespacedPublic.lean/declarations/card-simplerealpart-lower.md) | 337 | `result-track:685ca18fcda7332d7c88a2a17cf58cf266208089a5b923753eeaeef8a0e5b83e` |
-| 8 | `theorem` | [three_range_distinct](../../../../MeasureAndIntegration/SecondMomentNamespacedPublic.lean/declarations/three-range-distinct.md) | 371 | `result-track:dec33daec7a839c6540132be7cf8cf4d5bef48737b303019a22d2b6233e9e65f` |
-| 9 | `theorem` | [card_lower](../../../../MeasureAndIntegration/SecondMomentNamespacedPublic.lean/declarations/card-lower.md) | 466 | `result-track:b233f083b6112fe52f10256c582878e044a3ed104deea44e4f7301b97c4a616d` |
+| 1 | `lemma` | [sum_pair_fz_mul_conj_eq_bigF_mul_conj_alpha](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SecondMomentNamespacedPublic.lean/declarations/sum-pair-fz-mul-conj-eq-bigf-mul-conj-alpha.md) | 48 | `result-track:b94f25da53f9065498795468ec7b48e391b2f41cb2ffb135a5b1958e35aed601` |
+| 2 | `theorem` | [sum_testKernel_sq_eq_integral_norm_bigF_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SecondMomentNamespacedPublic.lean/declarations/sum-testkernel-sq-eq-integral-norm-bigf-sq.md) | 64 | `result-track:f3bd0c3b8bbc8e904eab27e82606a2e29b528d5cae47db01abb5d009905b3dc2` |
+| 3 | `theorem` | [sum_testKernel_sq_re_eq_integral_norm_bigF_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SecondMomentNamespacedPublic.lean/declarations/sum-testkernel-sq-re-eq-integral-norm-bigf-sq.md) | 118 | `result-track:3510e05356729a91661006bdcb5f617a56b123bead5202e256ab02a48da42375` |
+| 4 | `theorem` | [alphaOf_re_eq_sum_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SecondMomentNamespacedPublic.lean/declarations/alphaof-re-eq-sum-norm.md) | 130 | `result-track:d4a233473dee4164fb2536af1fa47548eb7f893aeab9e7087a39cb4855564ab5` |
+| 5 | `theorem` | [sum_alphaOf_re_first_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SecondMomentNamespacedPublic.lean/declarations/sum-alphaof-re-first-lower.md) | 164 | `result-track:f81a903317afb7c4dd07034f57f7a32602b23785c92b2133c9e5a3b65d87b757` |
+| 6 | `theorem` | [three_range_simple](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SecondMomentNamespacedPublic.lean/declarations/three-range-simple.md) | 249 | `result-track:b845991a15d5234ec43f15df10307bb894582e08cee3acedae733e6ca7259ee6` |
+| 7 | `theorem` | [card_simpleRealPart_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SecondMomentNamespacedPublic.lean/declarations/card-simplerealpart-lower.md) | 337 | `result-track:685ca18fcda7332d7c88a2a17cf58cf266208089a5b923753eeaeef8a0e5b83e` |
+| 8 | `theorem` | [three_range_distinct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SecondMomentNamespacedPublic.lean/declarations/three-range-distinct.md) | 371 | `result-track:dec33daec7a839c6540132be7cf8cf4d5bef48737b303019a22d2b6233e9e65f` |
+| 9 | `theorem` | [card_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SecondMomentNamespacedPublic.lean/declarations/card-lower.md) | 466 | `result-track:b233f083b6112fe52f10256c582878e044a3ed104deea44e4f7301b97c4a616d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

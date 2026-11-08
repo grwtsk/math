@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/LocatedResponseNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/LocatedResponseNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LocatedResponseNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LocatedResponseNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ResponseLocation](../../../../../ComputerScience/AlgorithmsInComputerScience/LocatedResponseNamespaced.lean/declarations/responselocation.md) | 23 | `declaration-track:002827226c37b54fefd4846966966e6f71fe8dde2812f6425a47ea24471d3cf6` |
-| 2 | `structure` | [LocatedResponse](../../../../../ComputerScience/AlgorithmsInComputerScience/LocatedResponseNamespaced.lean/declarations/locatedresponse.md) | 39 | `declaration-track:41e292bd1d9b710a6ffa4f5fe2426412c9d1ef40b1d68359c385be902eba4ac8` |
-| 3 | `def` | [LocatedResponse.ResolvesIn](../../../../../ComputerScience/AlgorithmsInComputerScience/LocatedResponseNamespaced.lean/declarations/locatedresponse-resolvesin.md) | 55 | `declaration-track:58d26e2e97ca788d14e740e91c611e111b5f1b0210534bca16e072e8f021ba30` |
-| 4 | `def` | [LocatedResponse.Accountable](../../../../../ComputerScience/AlgorithmsInComputerScience/LocatedResponseNamespaced.lean/declarations/locatedresponse-accountable.md) | 75 | `declaration-track:5748c24a06292bf848c13530c0adb319fb1daf26743322bd569541e09be76f85` |
-| 5 | `theorem` | [LocatedResponse.authority_is_navigation_or_candidate](../../../../../ComputerScience/AlgorithmsInComputerScience/LocatedResponseNamespaced.lean/declarations/locatedresponse-authority-is-navigation-or-candidate.md) | 81 | `result-track:0a140d0900e41fade0fcbf46683b07fb2c54f7c5670e34c7e2775242d5bca145` |
+| 1 | `structure` | [ResponseLocation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LocatedResponseNamespaced.lean/declarations/responselocation.md) | 23 | `declaration-track:002827226c37b54fefd4846966966e6f71fe8dde2812f6425a47ea24471d3cf6` |
+| 2 | `structure` | [LocatedResponse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LocatedResponseNamespaced.lean/declarations/locatedresponse.md) | 39 | `declaration-track:41e292bd1d9b710a6ffa4f5fe2426412c9d1ef40b1d68359c385be902eba4ac8` |
+| 3 | `def` | [LocatedResponse.ResolvesIn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LocatedResponseNamespaced.lean/declarations/locatedresponse-resolvesin.md) | 55 | `declaration-track:58d26e2e97ca788d14e740e91c611e111b5f1b0210534bca16e072e8f021ba30` |
+| 4 | `def` | [LocatedResponse.Accountable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LocatedResponseNamespaced.lean/declarations/locatedresponse-accountable.md) | 75 | `declaration-track:5748c24a06292bf848c13530c0adb319fb1daf26743322bd569541e09be76f85` |
+| 5 | `theorem` | [LocatedResponse.authority_is_navigation_or_candidate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LocatedResponseNamespaced.lean/declarations/locatedresponse-authority-is-navigation-or-candidate.md) | 81 | `result-track:0a140d0900e41fade0fcbf46683b07fb2c54f7c5670e34c7e2775242d5bca145` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

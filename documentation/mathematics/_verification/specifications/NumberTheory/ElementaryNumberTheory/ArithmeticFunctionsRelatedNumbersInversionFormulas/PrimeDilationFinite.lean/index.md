@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimeDilationFinite.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimeDilationFinite.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimeDilationFinite.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimeDilationFinite.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [dilationSum](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimeDilationFinite.lean/declarations/dilationsum.md) | 11 | `declaration-track:f22d1ba32bdf130de671bdda4023472b689db4dca4169aad6b0ba1aa9be13854` |
-| 2 | `theorem` | [dilationSum_swap](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimeDilationFinite.lean/declarations/dilationsum-swap.md) | 15 | `result-track:ba8ee0cf2d6c60b4573bf9c6b992c7e33971580ffa3111c0a192f48b728339cf` |
-| 3 | `theorem` | [centered_sum_identity](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimeDilationFinite.lean/declarations/centered-sum-identity.md) | 23 | `result-track:bef5bcbdacd0278251c544aba14319a3efd8926b473784313547580f4bcd6c2e` |
+| 1 | `def` | [dilationSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimeDilationFinite.lean/declarations/dilationsum.md) | 11 | `declaration-track:f22d1ba32bdf130de671bdda4023472b689db4dca4169aad6b0ba1aa9be13854` |
+| 2 | `theorem` | [dilationSum_swap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimeDilationFinite.lean/declarations/dilationsum-swap.md) | 15 | `result-track:ba8ee0cf2d6c60b4573bf9c6b992c7e33971580ffa3111c0a192f48b728339cf` |
+| 3 | `theorem` | [centered_sum_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimeDilationFinite.lean/declarations/centered-sum-identity.md) | 23 | `result-track:bef5bcbdacd0278251c544aba14319a3efd8926b473784313547580f4bcd6c2e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

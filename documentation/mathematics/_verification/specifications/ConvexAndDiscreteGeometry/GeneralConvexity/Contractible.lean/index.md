@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/Contractible.lean/index.md) · [Full source](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/Contractible.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/Contractible.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/Contractible.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [StarConvex.contractibleSpace](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/Contractible.lean/declarations/starconvex-contractiblespace.md) | 21 | `result-track:7307160710b6e5f39e9da35e1a6aca6cf39b65c4bd589ea3caa5475baeb7021f` |
-| 2 | `theorem` | [Convex.contractibleSpace](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/Contractible.lean/declarations/convex-contractiblespace.md) | 39 | `result-track:ecdf2574551f70ff9e127b57649b7ff6c46424c0e00c0b97fe4a1f9ea3d88095` |
-| 3 | `instance` | [(anonymous)](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/Contractible.lean/declarations/instance.md) | 44 | `declaration-track:d9ee43acd18b4e628bc8739f1d793f27adaac0c65f6b3af037e6b259e51ca340` |
+| 1 | `theorem` | [StarConvex.contractibleSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/Contractible.lean/declarations/starconvex-contractiblespace.md) | 21 | `result-track:7307160710b6e5f39e9da35e1a6aca6cf39b65c4bd589ea3caa5475baeb7021f` |
+| 2 | `theorem` | [Convex.contractibleSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/Contractible.lean/declarations/convex-contractiblespace.md) | 39 | `result-track:ecdf2574551f70ff9e127b57649b7ff6c46424c0e00c0b97fe4a1f9ea3d88095` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/Contractible.lean/declarations/instance.md) | 44 | `declaration-track:d9ee43acd18b4e628bc8739f1d793f27adaac0c65f6b3af037e6b259e51ca340` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

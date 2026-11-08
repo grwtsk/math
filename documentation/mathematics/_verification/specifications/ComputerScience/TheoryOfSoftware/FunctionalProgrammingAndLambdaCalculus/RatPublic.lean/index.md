@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RatPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RatPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RatPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RatPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [toFloat](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RatPublic.lean/declarations/tofloat.md) | 17 | `declaration-track:8ef33de72cfedfd7bbc7331fc98347fa516f6b1064c0b1382d1eb71d3380944e` |
-| 2 | `def` | [_root_.Float.toRat?](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RatPublic.lean/declarations/root-float-torat.md) | 20 | `declaration-track:aed9634edf59f00181c8342746a9c250ed0ca58e3e2f104c10fb127d5d2d2a51` |
-| 3 | `def` | [_root_.Float.toRat0](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RatPublic.lean/declarations/root-float-torat0.md) | 28 | `declaration-track:ea5e013d5ddfb52a6aaefdab27455484db9a47e71cd29593c990d68482232fad` |
-| 4 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RatPublic.lean/declarations/instance.md) | 30 | `declaration-track:53121762813488c8e7f3f9ca184203770cf9c2a609392daa2edc3554315d5875` |
+| 1 | `def` | [toFloat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RatPublic.lean/declarations/tofloat.md) | 17 | `declaration-track:8ef33de72cfedfd7bbc7331fc98347fa516f6b1064c0b1382d1eb71d3380944e` |
+| 2 | `def` | [_root_.Float.toRat?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RatPublic.lean/declarations/root-float-torat.md) | 20 | `declaration-track:aed9634edf59f00181c8342746a9c250ed0ca58e3e2f104c10fb127d5d2d2a51` |
+| 3 | `def` | [_root_.Float.toRat0](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RatPublic.lean/declarations/root-float-torat0.md) | 28 | `declaration-track:ea5e013d5ddfb52a6aaefdab27455484db9a47e71cd29593c990d68482232fad` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RatPublic.lean/declarations/instance.md) | 30 | `declaration-track:53121762813488c8e7f3f9ca184203770cf9c2a609392daa2edc3554315d5875` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

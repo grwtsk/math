@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/BlaschkeFactorNotation.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/BlaschkeFactorNotation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/BlaschkeFactorNotation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/BlaschkeFactorNotation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [blaschkeFactor](../../../../FunctionsOfAComplexVariable/BlaschkeFactorNotation.lean/declarations/blaschkefactor.md) | 36 | `declaration-track:1617415b8e2034e398a90737aaa7fcc4572d36b15806216a6929dc9eb181cf73` |
-| 2 | `lemma` | [blaschkeFactor_def](../../../../FunctionsOfAComplexVariable/BlaschkeFactorNotation.lean/declarations/blaschkefactor-def.md) | 38 | `result-track:aacffef6119f3fe85bd125b7e1d3beffd70d20296cf9ecf835a510a3b9885c62` |
+| 1 | `abbrev` | [blaschkeFactor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/BlaschkeFactorNotation.lean/declarations/blaschkefactor.md) | 36 | `declaration-track:1617415b8e2034e398a90737aaa7fcc4572d36b15806216a6929dc9eb181cf73` |
+| 2 | `lemma` | [blaschkeFactor_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/BlaschkeFactorNotation.lean/declarations/blaschkefactor-def.md) | 38 | `result-track:aacffef6119f3fe85bd125b7e1d3beffd70d20296cf9ecf835a510a3b9885c62` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

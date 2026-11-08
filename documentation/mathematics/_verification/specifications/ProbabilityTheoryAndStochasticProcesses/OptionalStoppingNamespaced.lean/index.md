@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/OptionalStoppingNamespaced.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/OptionalStoppingNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/OptionalStoppingNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/OptionalStoppingNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Submartingale.expected_stoppedValue_mono](../../../../ProbabilityTheoryAndStochasticProcesses/OptionalStoppingNamespaced.lean/declarations/submartingale-expected-stoppedvalue-mono.md) | 48 | `result-track:c1ae3953bd2c1002ab94010e3e59ffdb7012c4c390d9179c1fd4680f1ba724e7` |
-| 2 | `theorem` | [submartingale_of_expected_stoppedValue_mono](../../../../ProbabilityTheoryAndStochasticProcesses/OptionalStoppingNamespaced.lean/declarations/submartingale-of-expected-stoppedvalue-mono.md) | 74 | `result-track:c9bbe3d04dab6346ff13a0496e56a4bb68a31f97086ff7804a28827bd2c16156` |
-| 3 | `theorem` | [submartingale_iff_expected_stoppedValue_mono](../../../../ProbabilityTheoryAndStochasticProcesses/OptionalStoppingNamespaced.lean/declarations/submartingale-iff-expected-stoppedvalue-mono.md) | 90 | `result-track:384d057e4d90f01b348f3d93b2c06cd36f6ee680823ed1a778dd28a77f4c9384` |
-| 4 | `theorem` | [Submartingale.stoppedProcess](../../../../ProbabilityTheoryAndStochasticProcesses/OptionalStoppingNamespaced.lean/declarations/submartingale-stoppedprocess.md) | 98 | `result-track:98795b13892ba1eec375fb2e5d654eeaca318ca23b579f7aa548568434d9d7f5` |
-| 5 | `theorem` | [smul_le_stoppedValue_hitting](../../../../ProbabilityTheoryAndStochasticProcesses/OptionalStoppingNamespaced.lean/declarations/smul-le-stoppedvalue-hitting.md) | 114 | `result-track:d05c1131bc9f4a518ce76e4d0a2c34e14cafdbf2e39d8bf09adf13d65cd83785` |
-| 6 | `theorem` | [maximal_ineq](../../../../ProbabilityTheoryAndStochasticProcesses/OptionalStoppingNamespaced.lean/declarations/maximal-ineq.md) | 142 | `result-track:9144f02a893235dc44070cb952ce7af8cb0f6cceafc24e394096267687ca3884` |
+| 1 | `theorem` | [Submartingale.expected_stoppedValue_mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/OptionalStoppingNamespaced.lean/declarations/submartingale-expected-stoppedvalue-mono.md) | 48 | `result-track:c1ae3953bd2c1002ab94010e3e59ffdb7012c4c390d9179c1fd4680f1ba724e7` |
+| 2 | `theorem` | [submartingale_of_expected_stoppedValue_mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/OptionalStoppingNamespaced.lean/declarations/submartingale-of-expected-stoppedvalue-mono.md) | 74 | `result-track:c9bbe3d04dab6346ff13a0496e56a4bb68a31f97086ff7804a28827bd2c16156` |
+| 3 | `theorem` | [submartingale_iff_expected_stoppedValue_mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/OptionalStoppingNamespaced.lean/declarations/submartingale-iff-expected-stoppedvalue-mono.md) | 90 | `result-track:384d057e4d90f01b348f3d93b2c06cd36f6ee680823ed1a778dd28a77f4c9384` |
+| 4 | `theorem` | [Submartingale.stoppedProcess](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/OptionalStoppingNamespaced.lean/declarations/submartingale-stoppedprocess.md) | 98 | `result-track:98795b13892ba1eec375fb2e5d654eeaca318ca23b579f7aa548568434d9d7f5` |
+| 5 | `theorem` | [smul_le_stoppedValue_hitting](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/OptionalStoppingNamespaced.lean/declarations/smul-le-stoppedvalue-hitting.md) | 114 | `result-track:d05c1131bc9f4a518ce76e4d0a2c34e14cafdbf2e39d8bf09adf13d65cd83785` |
+| 6 | `theorem` | [maximal_ineq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/OptionalStoppingNamespaced.lean/declarations/maximal-ineq.md) | 142 | `result-track:9144f02a893235dc44070cb952ce7af8cb0f6cceafc24e394096267687ca3884` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

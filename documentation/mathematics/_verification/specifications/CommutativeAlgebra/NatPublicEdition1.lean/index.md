@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/NatPublicEdition1.lean/index.md) · [Full source](../../../../CommutativeAlgebra/NatPublicEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NatPublicEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NatPublicEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/NatPublicEdition1.lean/declarations/instance-source-edition-2.md) | 19 | `declaration-track:3d6821ffdf512319d20b76473d76b47331ecf4a404e618383b08d3f7fc57fd22` |
-| 2 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/NatPublicEdition1.lean/declarations/instance-source-edition-4.md) | 35 | `declaration-track:966f25ff744c23dd22c2dcf1ea37c4ed50b129e0af71eff4ca265ed6f942c862` |
-| 3 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/NatPublicEdition1.lean/declarations/instance-source-edition-6.md) | 39 | `declaration-track:f89502bed8493a9878b6d2184b5d247a957f1c2c1a75d54b1f5adae92899653a` |
-| 4 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/NatPublicEdition1.lean/declarations/instance-source-edition-5.md) | 42 | `declaration-track:bebd1218f2663758ebacd090f5e22288787c4e7b3e166b80708a8e2fb2ce7018` |
-| 5 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/NatPublicEdition1.lean/declarations/instance-source-edition-3.md) | 48 | `declaration-track:4a7622a9f77b2463abbb92841e448b14cc7b78453bddbfb130c2eb3a54dc846c` |
-| 6 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/NatPublicEdition1.lean/declarations/instance.md) | 51 | `declaration-track:11d65b5f4c3f8472a11cf89075aac7dd95249bbec89b1d354acea1bf94eff217` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NatPublicEdition1.lean/declarations/instance-source-edition-2.md) | 19 | `declaration-track:3d6821ffdf512319d20b76473d76b47331ecf4a404e618383b08d3f7fc57fd22` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NatPublicEdition1.lean/declarations/instance-source-edition-4.md) | 35 | `declaration-track:966f25ff744c23dd22c2dcf1ea37c4ed50b129e0af71eff4ca265ed6f942c862` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NatPublicEdition1.lean/declarations/instance-source-edition-6.md) | 39 | `declaration-track:f89502bed8493a9878b6d2184b5d247a957f1c2c1a75d54b1f5adae92899653a` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NatPublicEdition1.lean/declarations/instance-source-edition-5.md) | 42 | `declaration-track:bebd1218f2663758ebacd090f5e22288787c4e7b3e166b80708a8e2fb2ce7018` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NatPublicEdition1.lean/declarations/instance-source-edition-3.md) | 48 | `declaration-track:4a7622a9f77b2463abbb92841e448b14cc7b78453bddbfb130c2eb3a54dc846c` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/NatPublicEdition1.lean/declarations/instance.md) | 51 | `declaration-track:11d65b5f4c3f8472a11cf89075aac7dd95249bbec89b1d354acea1bf94eff217` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

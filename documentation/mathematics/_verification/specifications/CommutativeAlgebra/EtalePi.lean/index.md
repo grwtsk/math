@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/EtalePi.lean/index.md) · [Full source](../../../../CommutativeAlgebra/EtalePi.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtalePi.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtalePi.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [pi_iff](../../../../CommutativeAlgebra/EtalePi.lean/declarations/pi-iff.md) | 28 | `result-track:bf3624ed80374d9df3012b7e9f3ff67cad63e18b5388d4da7cbd6d0b865bdaa7` |
-| 2 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/EtalePi.lean/declarations/instance.md) | 33 | `declaration-track:dfddeb91f5d56ce6f096179ce0f4ff1da37ab9dfd2dc4d74ccd291e9b0bc39a5` |
+| 1 | `theorem` | [pi_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtalePi.lean/declarations/pi-iff.md) | 28 | `result-track:bf3624ed80374d9df3012b7e9f3ff67cad63e18b5388d4da7cbd6d0b865bdaa7` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtalePi.lean/declarations/instance.md) | 33 | `declaration-track:dfddeb91f5d56ce6f096179ce0f4ff1da37ab9dfd2dc4d74ccd291e9b0bc39a5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

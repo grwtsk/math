@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SuppliedLayerEquivalenceSystem.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SuppliedLayerEquivalenceSystem.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SuppliedLayerEquivalenceSystem.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SuppliedLayerEquivalenceSystem.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ThinkSystem](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SuppliedLayerEquivalenceSystem.lean/declarations/thinksystem.md) | 36 | `declaration-track:6f6a4c875a162c5330d0eb1b268c806bd4a063318937029eabf66a6a9d0d8182` |
-| 2 | `def` | [ThinkSystem.logicToWisdom](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SuppliedLayerEquivalenceSystem.lean/declarations/thinksystem-logictowisdom.md) | 60 | `declaration-track:e343303ecc19c662ab3b701ae704d2c33ddf56e3ff29ae6b04c531750c1fdfbb` |
-| 3 | `theorem` | [ThinkSystem.logicToWisdom_isEquivalence](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SuppliedLayerEquivalenceSystem.lean/declarations/thinksystem-logictowisdom-isequivalence.md) | 75 | `result-track:6cb004c71c83b895da8f924d6e6857c6eafc6439a5d734c4cc99a7712d0e4d24` |
-| 4 | `theorem` | [ThinkSystem.inverseImage_preservesFiniteLimits](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SuppliedLayerEquivalenceSystem.lean/declarations/thinksystem-inverseimage-preservesfinitelimits.md) | 94 | `result-track:d86352f32c44e9275e6cf578e798a080b1a8990174bc7f5b60f6f169a2352dd5` |
+| 1 | `structure` | [ThinkSystem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SuppliedLayerEquivalenceSystem.lean/declarations/thinksystem.md) | 36 | `declaration-track:6f6a4c875a162c5330d0eb1b268c806bd4a063318937029eabf66a6a9d0d8182` |
+| 2 | `def` | [ThinkSystem.logicToWisdom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SuppliedLayerEquivalenceSystem.lean/declarations/thinksystem-logictowisdom.md) | 60 | `declaration-track:e343303ecc19c662ab3b701ae704d2c33ddf56e3ff29ae6b04c531750c1fdfbb` |
+| 3 | `theorem` | [ThinkSystem.logicToWisdom_isEquivalence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SuppliedLayerEquivalenceSystem.lean/declarations/thinksystem-logictowisdom-isequivalence.md) | 75 | `result-track:6cb004c71c83b895da8f924d6e6857c6eafc6439a5d734c4cc99a7712d0e4d24` |
+| 4 | `theorem` | [ThinkSystem.inverseImage_preservesFiniteLimits](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SuppliedLayerEquivalenceSystem.lean/declarations/thinksystem-inverseimage-preservesfinitelimits.md) | 94 | `result-track:d86352f32c44e9275e6cf578e798a080b1a8990174bc7f5b60f6f169a2352dd5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

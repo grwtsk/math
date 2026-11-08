@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MvPolynomialCardinalNamespacedPublic.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MvPolynomialCardinalNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MvPolynomialCardinalNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MvPolynomialCardinalNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [cardinalMk_eq_max_lift](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MvPolynomialCardinalNamespacedPublic.lean/declarations/cardinalmk-eq-max-lift.md) | 46 | `result-track:00d88e0020c2fc8622d8c187443afe5e59de3897f514af65b751694f47027c9b` |
-| 2 | `theorem` | [cardinalMk_eq_lift](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MvPolynomialCardinalNamespacedPublic.lean/declarations/cardinalmk-eq-lift.md) | 51 | `result-track:bf848ca39f557e0313564d18bc6d8bc2650b8f299dbc6c206b514aa2ed423efb` |
-| 3 | `theorem` | [cardinalMk_eq_one](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MvPolynomialCardinalNamespacedPublic.lean/declarations/cardinalmk-eq-one.md) | 54 | `result-track:01ad95604bbc5561239ab767006d2d85c9b7b9905e222041b060558304297df1` |
-| 4 | `theorem` | [cardinalMk_le_max_lift](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MvPolynomialCardinalNamespacedPublic.lean/declarations/cardinalmk-le-max-lift.md) | 61 | `result-track:4ed30d213786a49c78c66c8528efee552dcf27e9253e0e69208d12600eb58287` |
-| 5 | `theorem` | [cardinalMk_eq_max](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MvPolynomialCardinalNamespacedPublic.lean/declarations/cardinalmk-eq-max.md) | 69 | `result-track:e49d71bbd6ae53f8043ec00ac0af4f3a435a99ec6cdec01b1c7f46f16bf97198` |
-| 6 | `theorem` | [cardinalMk_eq](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MvPolynomialCardinalNamespacedPublic.lean/declarations/cardinalmk-eq.md) | 72 | `result-track:75f3a3889678c6b063626e9d08275f5e1612d4822366ce680a8b5ffcad2a6a67` |
-| 7 | `theorem` | [cardinalMk_le_max](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MvPolynomialCardinalNamespacedPublic.lean/declarations/cardinalmk-le-max.md) | 78 | `result-track:a243c815569c500d7423ab069fee294b31f1d8c818d5080bc6a120e46654b37c` |
+| 1 | `theorem` | [cardinalMk_eq_max_lift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MvPolynomialCardinalNamespacedPublic.lean/declarations/cardinalmk-eq-max-lift.md) | 46 | `result-track:00d88e0020c2fc8622d8c187443afe5e59de3897f514af65b751694f47027c9b` |
+| 2 | `theorem` | [cardinalMk_eq_lift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MvPolynomialCardinalNamespacedPublic.lean/declarations/cardinalmk-eq-lift.md) | 51 | `result-track:bf848ca39f557e0313564d18bc6d8bc2650b8f299dbc6c206b514aa2ed423efb` |
+| 3 | `theorem` | [cardinalMk_eq_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MvPolynomialCardinalNamespacedPublic.lean/declarations/cardinalmk-eq-one.md) | 54 | `result-track:01ad95604bbc5561239ab767006d2d85c9b7b9905e222041b060558304297df1` |
+| 4 | `theorem` | [cardinalMk_le_max_lift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MvPolynomialCardinalNamespacedPublic.lean/declarations/cardinalmk-le-max-lift.md) | 61 | `result-track:4ed30d213786a49c78c66c8528efee552dcf27e9253e0e69208d12600eb58287` |
+| 5 | `theorem` | [cardinalMk_eq_max](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MvPolynomialCardinalNamespacedPublic.lean/declarations/cardinalmk-eq-max.md) | 69 | `result-track:e49d71bbd6ae53f8043ec00ac0af4f3a435a99ec6cdec01b1c7f46f16bf97198` |
+| 6 | `theorem` | [cardinalMk_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MvPolynomialCardinalNamespacedPublic.lean/declarations/cardinalmk-eq.md) | 72 | `result-track:75f3a3889678c6b063626e9d08275f5e1612d4822366ce680a8b5ffcad2a6a67` |
+| 7 | `theorem` | [cardinalMk_le_max](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MvPolynomialCardinalNamespacedPublic.lean/declarations/cardinalmk-le-max.md) | 78 | `result-track:a243c815569c500d7423ab069fee294b31f1d8c818d5080bc6a120e46654b37c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/ActionTypeTags.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/ActionTypeTags.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ActionTypeTags.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ActionTypeTags.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [Additive.vadd](../../../../GroupTheoryAndGeneralizations/ActionTypeTags.lean/declarations/additive-vadd.md) | 27 | `declaration-track:7e9ce6a4525f62df1666d332f5f577dfec99d6c540a143e6ddcbe1b5091051b3` |
-| 2 | `instance` | [Multiplicative.smul](../../../../GroupTheoryAndGeneralizations/ActionTypeTags.lean/declarations/multiplicative-smul.md) | 29 | `declaration-track:5d3230825ef0f92110fece9cef58141c190df0871aca3fc075fdbde40e232eba` |
-| 3 | `lemma` | [toMul_smul](../../../../GroupTheoryAndGeneralizations/ActionTypeTags.lean/declarations/tomul-smul.md) | 31 | `result-track:1f1785c40b3cde4a03cc3b97277e2686be5e4ae9b0a5ae80477702ea7dba6481` |
-| 4 | `lemma` | [ofMul_vadd](../../../../GroupTheoryAndGeneralizations/ActionTypeTags.lean/declarations/ofmul-vadd.md) | 33 | `result-track:4d5eb962fc98a1502ddd5e257826381bab6eabebfdda4ec23ff60d7ce9393595` |
-| 5 | `lemma` | [toAdd_vadd](../../../../GroupTheoryAndGeneralizations/ActionTypeTags.lean/declarations/toadd-vadd.md) | 35 | `result-track:c8e527750eee8bae77ee349c3a35c48d5c659f3b60c4286ea8a373740e088985` |
-| 6 | `lemma` | [ofAdd_smul](../../../../GroupTheoryAndGeneralizations/ActionTypeTags.lean/declarations/ofadd-smul.md) | 37 | `result-track:7a4bdaeea12ac82ec69a17b681763ccf35b80f46aeaafacce05e67bd906845ea` |
-| 7 | `instance` | [Additive.addAction](../../../../GroupTheoryAndGeneralizations/ActionTypeTags.lean/declarations/additive-addaction.md) | 40 | `declaration-track:b6cb000dfd13016742e18ccef9c25f63e0916dbc0f8180ec395812a08b55e3fc` |
-| 8 | `instance` | [Multiplicative.mulAction](../../../../GroupTheoryAndGeneralizations/ActionTypeTags.lean/declarations/multiplicative-mulaction.md) | 44 | `declaration-track:9771d5206b1aa20f880157aaffd8dd4d080ada73de2c9b38c88b49355b77dda1` |
-| 9 | `instance` | [Additive.vaddCommClass](../../../../GroupTheoryAndGeneralizations/ActionTypeTags.lean/declarations/additive-vaddcommclass.md) | 49 | `declaration-track:fdda16f8820908ad0aed7ab92890f2d7f1c3b6d47573e2476c7efd329533ad16` |
-| 10 | `instance` | [Multiplicative.smulCommClass](../../../../GroupTheoryAndGeneralizations/ActionTypeTags.lean/declarations/multiplicative-smulcommclass.md) | 53 | `declaration-track:b8dc44f67173e6e8ca4b76187e586ef29736bb18efab33d99f567993dbba40be` |
+| 1 | `instance` | [Additive.vadd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ActionTypeTags.lean/declarations/additive-vadd.md) | 27 | `declaration-track:7e9ce6a4525f62df1666d332f5f577dfec99d6c540a143e6ddcbe1b5091051b3` |
+| 2 | `instance` | [Multiplicative.smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ActionTypeTags.lean/declarations/multiplicative-smul.md) | 29 | `declaration-track:5d3230825ef0f92110fece9cef58141c190df0871aca3fc075fdbde40e232eba` |
+| 3 | `lemma` | [toMul_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ActionTypeTags.lean/declarations/tomul-smul.md) | 31 | `result-track:1f1785c40b3cde4a03cc3b97277e2686be5e4ae9b0a5ae80477702ea7dba6481` |
+| 4 | `lemma` | [ofMul_vadd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ActionTypeTags.lean/declarations/ofmul-vadd.md) | 33 | `result-track:4d5eb962fc98a1502ddd5e257826381bab6eabebfdda4ec23ff60d7ce9393595` |
+| 5 | `lemma` | [toAdd_vadd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ActionTypeTags.lean/declarations/toadd-vadd.md) | 35 | `result-track:c8e527750eee8bae77ee349c3a35c48d5c659f3b60c4286ea8a373740e088985` |
+| 6 | `lemma` | [ofAdd_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ActionTypeTags.lean/declarations/ofadd-smul.md) | 37 | `result-track:7a4bdaeea12ac82ec69a17b681763ccf35b80f46aeaafacce05e67bd906845ea` |
+| 7 | `instance` | [Additive.addAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ActionTypeTags.lean/declarations/additive-addaction.md) | 40 | `declaration-track:b6cb000dfd13016742e18ccef9c25f63e0916dbc0f8180ec395812a08b55e3fc` |
+| 8 | `instance` | [Multiplicative.mulAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ActionTypeTags.lean/declarations/multiplicative-mulaction.md) | 44 | `declaration-track:9771d5206b1aa20f880157aaffd8dd4d080ada73de2c9b38c88b49355b77dda1` |
+| 9 | `instance` | [Additive.vaddCommClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ActionTypeTags.lean/declarations/additive-vaddcommclass.md) | 49 | `declaration-track:fdda16f8820908ad0aed7ab92890f2d7f1c3b6d47573e2476c7efd329533ad16` |
+| 10 | `instance` | [Multiplicative.smulCommClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ActionTypeTags.lean/declarations/multiplicative-smulcommclass.md) | 53 | `declaration-track:b8dc44f67173e6e8ca4b76187e586ef29736bb18efab33d99f567993dbba40be` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

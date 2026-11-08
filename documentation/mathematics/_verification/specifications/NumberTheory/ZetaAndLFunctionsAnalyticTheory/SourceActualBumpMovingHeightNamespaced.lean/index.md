@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualBumpMovingHeightNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualBumpMovingHeightNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualBumpMovingHeightNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualBumpMovingHeightNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualBumpMovingHeight](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualBumpMovingHeightNamespaced.lean/declarations/actualbumpmovingheight.md) | 25 | `declaration-track:5fb4348347417b70a348f56bb17ad08f45541d95d9b39ae2295f43fe6425c1b2` |
-| 2 | `theorem` | [actualBumpNormalization_lower](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualBumpMovingHeightNamespaced.lean/declarations/actualbumpnormalization-lower.md) | 28 | `result-track:2a39fbed79265f8fdad4069d92f9d1653cf4991918e67c61f479de451eef90b1` |
-| 3 | `def` | [actualBumpMovingTailConstant](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualBumpMovingHeightNamespaced.lean/declarations/actualbumpmovingtailconstant.md) | 38 | `declaration-track:8f644e78d487778d1422acd68584508e552ce2c102de7b239c1ee83743a53959` |
-| 4 | `theorem` | [actualBumpMovingHeight_ge_one](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualBumpMovingHeightNamespaced.lean/declarations/actualbumpmovingheight-ge-one.md) | 43 | `result-track:7d61343fc0f8c22032a476cc7e9a1206b7def30ea3934a14b59de2134ac017c9` |
-| 5 | `theorem` | [actualBumpTwoTail_movingHeight_norm_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualBumpMovingHeightNamespaced.lean/declarations/actualbumptwotail-movingheight-norm-le.md) | 52 | `result-track:4b1c5f605f225f5bbe70603bc4c2a404f12fccb9fdaadade045b6b7fedbc0647` |
+| 1 | `def` | [actualBumpMovingHeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualBumpMovingHeightNamespaced.lean/declarations/actualbumpmovingheight.md) | 25 | `declaration-track:5fb4348347417b70a348f56bb17ad08f45541d95d9b39ae2295f43fe6425c1b2` |
+| 2 | `theorem` | [actualBumpNormalization_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualBumpMovingHeightNamespaced.lean/declarations/actualbumpnormalization-lower.md) | 28 | `result-track:2a39fbed79265f8fdad4069d92f9d1653cf4991918e67c61f479de451eef90b1` |
+| 3 | `def` | [actualBumpMovingTailConstant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualBumpMovingHeightNamespaced.lean/declarations/actualbumpmovingtailconstant.md) | 38 | `declaration-track:8f644e78d487778d1422acd68584508e552ce2c102de7b239c1ee83743a53959` |
+| 4 | `theorem` | [actualBumpMovingHeight_ge_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualBumpMovingHeightNamespaced.lean/declarations/actualbumpmovingheight-ge-one.md) | 43 | `result-track:7d61343fc0f8c22032a476cc7e9a1206b7def30ea3934a14b59de2134ac017c9` |
+| 5 | `theorem` | [actualBumpTwoTail_movingHeight_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualBumpMovingHeightNamespaced.lean/declarations/actualbumptwotail-movingheight-norm-le.md) | 52 | `result-track:4b1c5f605f225f5bbe70603bc4c2a404f12fccb9fdaadade045b6b7fedbc0647` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

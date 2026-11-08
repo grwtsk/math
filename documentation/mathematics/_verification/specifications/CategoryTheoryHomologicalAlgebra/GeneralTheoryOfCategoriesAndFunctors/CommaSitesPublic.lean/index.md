@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaSitesPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaSitesPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaSitesPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaSitesPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [exists_map_eq_of_presieve](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaSitesPublic.lean/declarations/exists-map-eq-of-presieve.md) | 45 | `result-track:672a2d63f20bd6893d6a0a115a0aeee9e25e3ed71619a1751d9a44355dc2525d` |
-| 2 | `lemma` | [locallyCoverDense_forget_of_le](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaSitesPublic.lean/declarations/locallycoverdense-forget-of-le.md) | 62 | `result-track:e8389c1b33b12b0450a4f7f4115ed6fade349bae060af526424953ed599e2aec` |
-| 3 | `lemma` | [toGrothendieck_comap_forget_eq_restrictedTopology](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaSitesPublic.lean/declarations/togrothendieck-comap-forget-eq-restrictedtopology.md) | 70 | `result-track:311b9fb3baac5065aeef31a6ef73df9d064978e040ca3a18be8624c163bd3791` |
-| 4 | `lemma` | [coverPreserving_comap_forget](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaSitesPublic.lean/declarations/coverpreserving-comap-forget.md) | 85 | `result-track:0d74e83d266e44a1ad3ae938180d11d966780b382a96c8b3073b5bae568951a5` |
-| 5 | `lemma` | [isContinuous_comap_forget](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaSitesPublic.lean/declarations/iscontinuous-comap-forget.md) | 99 | `result-track:d89d7eef9ff751939e3520d279b4fb61bf18fd86d3303eb6b38019278919b34b` |
-| 6 | `lemma` | [toGrothendieck_comap_forget_eq_inducedTopology](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaSitesPublic.lean/declarations/togrothendieck-comap-forget-eq-inducedtopology.md) | 108 | `result-track:32e1013b5a12c39470f51fc3d4efe34a3db60488d8d72167e7ac041397f868dc` |
+| 1 | `lemma` | [exists_map_eq_of_presieve](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaSitesPublic.lean/declarations/exists-map-eq-of-presieve.md) | 45 | `result-track:672a2d63f20bd6893d6a0a115a0aeee9e25e3ed71619a1751d9a44355dc2525d` |
+| 2 | `lemma` | [locallyCoverDense_forget_of_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaSitesPublic.lean/declarations/locallycoverdense-forget-of-le.md) | 62 | `result-track:e8389c1b33b12b0450a4f7f4115ed6fade349bae060af526424953ed599e2aec` |
+| 3 | `lemma` | [toGrothendieck_comap_forget_eq_restrictedTopology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaSitesPublic.lean/declarations/togrothendieck-comap-forget-eq-restrictedtopology.md) | 70 | `result-track:311b9fb3baac5065aeef31a6ef73df9d064978e040ca3a18be8624c163bd3791` |
+| 4 | `lemma` | [coverPreserving_comap_forget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaSitesPublic.lean/declarations/coverpreserving-comap-forget.md) | 85 | `result-track:0d74e83d266e44a1ad3ae938180d11d966780b382a96c8b3073b5bae568951a5` |
+| 5 | `lemma` | [isContinuous_comap_forget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaSitesPublic.lean/declarations/iscontinuous-comap-forget.md) | 99 | `result-track:d89d7eef9ff751939e3520d279b4fb61bf18fd86d3303eb6b38019278919b34b` |
+| 6 | `lemma` | [toGrothendieck_comap_forget_eq_inducedTopology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaSitesPublic.lean/declarations/togrothendieck-comap-forget-eq-inducedtopology.md) | 108 | `result-track:32e1013b5a12c39470f51fc3d4efe34a3db60488d8d72167e7ac041397f868dc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

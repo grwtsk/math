@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ElementalStep.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ElementalStep.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ElementalStep.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ElementalStep.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ElementalStep](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ElementalStep.lean/declarations/elementalstep.md) | 14 | `declaration-track:cf17e4f5c8fba5f87a1c11a393814c06f878c486952fce44d22bce6bcd75a937` |
-| 2 | `theorem` | [ElementalStep.cannot_erase_negative](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ElementalStep.lean/declarations/elementalstep-cannot-erase-negative.md) | 37 | `result-track:a2e3d67b3ae00eaa298cc3dd0dd98190d4cb48be881ae36c5b409eeedbbea1ce` |
-| 3 | `theorem` | [ElementalStep.cannot_reidentify_local_points](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ElementalStep.lean/declarations/elementalstep-cannot-reidentify-local-points.md) | 45 | `result-track:e82eda3232e7fe9e9156ba4a2d30b683951ad3360ea4af043428cb976b96f68e` |
+| 1 | `structure` | [ElementalStep](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ElementalStep.lean/declarations/elementalstep.md) | 14 | `declaration-track:cf17e4f5c8fba5f87a1c11a393814c06f878c486952fce44d22bce6bcd75a937` |
+| 2 | `theorem` | [ElementalStep.cannot_erase_negative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ElementalStep.lean/declarations/elementalstep-cannot-erase-negative.md) | 37 | `result-track:a2e3d67b3ae00eaa298cc3dd0dd98190d4cb48be881ae36c5b409eeedbbea1ce` |
+| 3 | `theorem` | [ElementalStep.cannot_reidentify_local_points](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ElementalStep.lean/declarations/elementalstep-cannot-reidentify-local-points.md) | 45 | `result-track:e82eda3232e7fe9e9156ba4a2d30b683951ad3360ea4af043428cb976b96f68e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

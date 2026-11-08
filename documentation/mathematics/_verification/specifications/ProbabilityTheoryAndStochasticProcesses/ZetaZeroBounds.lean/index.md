@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/ZetaZeroBounds.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/ZetaZeroBounds.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ZetaZeroBounds.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ZetaZeroBounds.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [quarter_plus_gamma_sq_ge_gamma_sq](../../../../ProbabilityTheoryAndStochasticProcesses/ZetaZeroBounds.lean/declarations/quarter-plus-gamma-sq-ge-gamma-sq.md) | 33 | `result-track:1b1ca13a0aec3885bde6516c8f81a44c1731d34a851b14047519a4f5e6e0d926` |
-| 2 | `theorem` | [amplitude_decay_numerator](../../../../ProbabilityTheoryAndStochasticProcesses/ZetaZeroBounds.lean/declarations/amplitude-decay-numerator.md) | 54 | `result-track:248c18b7e85c217404ca2667c73773e0cfa6d83dbb58747d45e4740e253671e9` |
-| 3 | `theorem` | [first_zero_amplitude_bound](../../../../ProbabilityTheoryAndStochasticProcesses/ZetaZeroBounds.lean/declarations/first-zero-amplitude-bound.md) | 69 | `result-track:786f9ee8e2296ad255a5dee04028256f5af35a6d3c8358ea62fc49d89e4efea6` |
-| 4 | `theorem` | [later_zero_amplitude_bound](../../../../ProbabilityTheoryAndStochasticProcesses/ZetaZeroBounds.lean/declarations/later-zero-amplitude-bound.md) | 74 | `result-track:c9a3cbe55e658ac997880669af5ceb4e96c8d504a6400306870a80c3b8f518a5` |
-| 5 | `theorem` | [log_ratio_bound](../../../../ProbabilityTheoryAndStochasticProcesses/ZetaZeroBounds.lean/declarations/log-ratio-bound.md) | 91 | `result-track:c67057262d45865ff4bd8cedd1729673187772d8a08720274e58409c9364a7b7` |
-| 6 | `theorem` | [tail_bound_conservative](../../../../ProbabilityTheoryAndStochasticProcesses/ZetaZeroBounds.lean/declarations/tail-bound-conservative.md) | 112 | `result-track:864c0436d89d776bb014458ce4449a5ab178001d421127e81877729ea1f6dd4a` |
-| 7 | `theorem` | [prime_detection_tail_bound](../../../../ProbabilityTheoryAndStochasticProcesses/ZetaZeroBounds.lean/declarations/prime-detection-tail-bound.md) | 129 | `result-track:3c7fe1d9634290b16bae02a3b5578bbfa44b602fb6174d58448c0c45790eb991` |
+| 1 | `theorem` | [quarter_plus_gamma_sq_ge_gamma_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ZetaZeroBounds.lean/declarations/quarter-plus-gamma-sq-ge-gamma-sq.md) | 33 | `result-track:1b1ca13a0aec3885bde6516c8f81a44c1731d34a851b14047519a4f5e6e0d926` |
+| 2 | `theorem` | [amplitude_decay_numerator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ZetaZeroBounds.lean/declarations/amplitude-decay-numerator.md) | 54 | `result-track:248c18b7e85c217404ca2667c73773e0cfa6d83dbb58747d45e4740e253671e9` |
+| 3 | `theorem` | [first_zero_amplitude_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ZetaZeroBounds.lean/declarations/first-zero-amplitude-bound.md) | 69 | `result-track:786f9ee8e2296ad255a5dee04028256f5af35a6d3c8358ea62fc49d89e4efea6` |
+| 4 | `theorem` | [later_zero_amplitude_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ZetaZeroBounds.lean/declarations/later-zero-amplitude-bound.md) | 74 | `result-track:c9a3cbe55e658ac997880669af5ceb4e96c8d504a6400306870a80c3b8f518a5` |
+| 5 | `theorem` | [log_ratio_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ZetaZeroBounds.lean/declarations/log-ratio-bound.md) | 91 | `result-track:c67057262d45865ff4bd8cedd1729673187772d8a08720274e58409c9364a7b7` |
+| 6 | `theorem` | [tail_bound_conservative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ZetaZeroBounds.lean/declarations/tail-bound-conservative.md) | 112 | `result-track:864c0436d89d776bb014458ce4449a5ab178001d421127e81877729ea1f6dd4a` |
+| 7 | `theorem` | [prime_detection_tail_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ZetaZeroBounds.lean/declarations/prime-detection-tail-bound.md) | 129 | `result-track:3c7fe1d9634290b16bae02a3b5578bbfa44b602fb6174d58448c0c45790eb991` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

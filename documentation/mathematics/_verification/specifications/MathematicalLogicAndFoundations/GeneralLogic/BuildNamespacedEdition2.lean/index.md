@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BuildNamespacedEdition2.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BuildNamespacedEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BuildNamespacedEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BuildNamespacedEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [BuildArtifactKind](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BuildNamespacedEdition2.lean/declarations/buildartifactkind.md) | 22 | `declaration-track:439ac1cb5b427c27f22fc48df2f40c1d7b42365aef8e3c3c50b8fc20c136cbdc` |
-| 2 | `structure` | [BuildArtifactRecord](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BuildNamespacedEdition2.lean/declarations/buildartifactrecord.md) | 33 | `declaration-track:44530900c555c3c212624d7757403a3a6c0f95fe96e0bc0f4394ac7ff2196978` |
-| 3 | `structure` | [ModuleBuildReceipt](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BuildNamespacedEdition2.lean/declarations/modulebuildreceipt.md) | 42 | `declaration-track:0a8f4c0fb30f61fd2b1ebd4191cfbc9887296de937a84f92e44f55ee47a86b77` |
-| 4 | `structure` | [BuildReceipt](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BuildNamespacedEdition2.lean/declarations/buildreceipt.md) | 50 | `declaration-track:9b7af05493563fde5c889d9b25bbbf6f41a2c33a027b40f06282c9feff0bce16` |
-| 5 | `def` | [Complete](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BuildNamespacedEdition2.lean/declarations/complete-source-edition-2.md) | 65 | `declaration-track:728b42e0fb39272e349dfecfe3fec58bcfba4fc06fb235ef4e94d7488a7a8c25` |
-| 6 | `def` | [Complete](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BuildNamespacedEdition2.lean/declarations/complete-source-edition-3.md) | 73 | `declaration-track:dc72b174dbae315434d800989b1d293e6167d03d2dea7d02ada814142918d842` |
-| 7 | `def` | [Complete](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BuildNamespacedEdition2.lean/declarations/complete.md) | 86 | `declaration-track:36bc510d49f560dafe6e40dd17ab4f332c0bd5996adba5a93c8e36aa23246881` |
+| 1 | `inductive` | [BuildArtifactKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BuildNamespacedEdition2.lean/declarations/buildartifactkind.md) | 22 | `declaration-track:439ac1cb5b427c27f22fc48df2f40c1d7b42365aef8e3c3c50b8fc20c136cbdc` |
+| 2 | `structure` | [BuildArtifactRecord](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BuildNamespacedEdition2.lean/declarations/buildartifactrecord.md) | 33 | `declaration-track:44530900c555c3c212624d7757403a3a6c0f95fe96e0bc0f4394ac7ff2196978` |
+| 3 | `structure` | [ModuleBuildReceipt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BuildNamespacedEdition2.lean/declarations/modulebuildreceipt.md) | 42 | `declaration-track:0a8f4c0fb30f61fd2b1ebd4191cfbc9887296de937a84f92e44f55ee47a86b77` |
+| 4 | `structure` | [BuildReceipt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BuildNamespacedEdition2.lean/declarations/buildreceipt.md) | 50 | `declaration-track:9b7af05493563fde5c889d9b25bbbf6f41a2c33a027b40f06282c9feff0bce16` |
+| 5 | `def` | [Complete](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BuildNamespacedEdition2.lean/declarations/complete-source-edition-2.md) | 65 | `declaration-track:728b42e0fb39272e349dfecfe3fec58bcfba4fc06fb235ef4e94d7488a7a8c25` |
+| 6 | `def` | [Complete](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BuildNamespacedEdition2.lean/declarations/complete-source-edition-3.md) | 73 | `declaration-track:dc72b174dbae315434d800989b1d293e6167d03d2dea7d02ada814142918d842` |
+| 7 | `def` | [Complete](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BuildNamespacedEdition2.lean/declarations/complete.md) | 86 | `declaration-track:36bc510d49f560dafe6e40dd17ab4f332c0bd5996adba5a93c8e36aa23246881` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

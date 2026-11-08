@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CommutativeAlgebra/ChainConditionsFinitenessConditionsInCommutativeRingTheory/InstancesNamespaced.lean/index.md) · [Full source](../../../../../CommutativeAlgebra/ChainConditionsFinitenessConditionsInCommutativeRingTheory/InstancesNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ChainConditionsFinitenessConditionsInCommutativeRingTheory/InstancesNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ChainConditionsFinitenessConditionsInCommutativeRingTheory/InstancesNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../CommutativeAlgebra/ChainConditionsFinitenessConditionsInCommutativeRingTheory/InstancesNamespaced.lean/declarations/instance-source-edition-2.md) | 31 | `declaration-track:e682102adf92e39a8cf4fdbb6a278efa71dbe77e5b76a3c4efc0e448bfaab5f8` |
-| 2 | `instance` | [(anonymous)](../../../../../CommutativeAlgebra/ChainConditionsFinitenessConditionsInCommutativeRingTheory/InstancesNamespaced.lean/declarations/instance.md) | 33 | `declaration-track:3f495902710e4ed3d68170f09d601b8336b98a8e371b8cbb565f113c87406846` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ChainConditionsFinitenessConditionsInCommutativeRingTheory/InstancesNamespaced.lean/declarations/instance-source-edition-2.md) | 31 | `declaration-track:e682102adf92e39a8cf4fdbb6a278efa71dbe77e5b76a3c4efc0e448bfaab5f8` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ChainConditionsFinitenessConditionsInCommutativeRingTheory/InstancesNamespaced.lean/declarations/instance.md) | 33 | `declaration-track:3f495902710e4ed3d68170f09d601b8336b98a8e371b8cbb565f113c87406846` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/LinearMaps.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/LinearMaps.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/LinearMaps.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/LinearMaps.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [charP_end](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/LinearMaps.lean/declarations/charp-end.md) | 40 | `result-track:3aaa89268ae792c1680b2173ad23a697d13f33145779d9bd0728b0215bfddb5e` |
-| 2 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/LinearMaps.lean/declarations/instance.md) | 53 | `declaration-track:35d1bc0b2f72d4e9de427ae836ac77b3a1bc1b28020e24e1d66db7a58724c670` |
-| 3 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/LinearMaps.lean/declarations/instance-source-edition-2.md) | 57 | `declaration-track:6ff9396eff5e0b0a616a84b321f801d8262f1a51bab89feb73a94b571700a383` |
+| 1 | `theorem` | [charP_end](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/LinearMaps.lean/declarations/charp-end.md) | 40 | `result-track:3aaa89268ae792c1680b2173ad23a697d13f33145779d9bd0728b0215bfddb5e` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/LinearMaps.lean/declarations/instance.md) | 53 | `declaration-track:35d1bc0b2f72d4e9de427ae836ac77b3a1bc1b28020e24e1d66db7a58724c670` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/LinearMaps.lean/declarations/instance-source-edition-2.md) | 57 | `declaration-track:6ff9396eff5e0b0a616a84b321f801d8262f1a51bab89feb73a94b571700a383` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

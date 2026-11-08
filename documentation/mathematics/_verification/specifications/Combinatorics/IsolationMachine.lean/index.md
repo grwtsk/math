@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/IsolationMachine.lean/index.md) · [Full source](../../../../Combinatorics/IsolationMachine.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IsolationMachine.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IsolationMachine.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RHIsolationState](../../../../Combinatorics/IsolationMachine.lean/declarations/rhisolationstate.md) | 18 | `declaration-track:d58ce6ff4cd4ac006213c002fefc0d570628b53b84e41aa4bde49c6e9a72ffff` |
-| 2 | `structure` | [RHIsolationInvariant](../../../../Combinatorics/IsolationMachine.lean/declarations/rhisolationinvariant.md) | 33 | `declaration-track:0f2f9d5d0f91c7966705830b96c4286f1052f6ec0791095513cb9922a4a54602` |
-| 3 | `def` | [reorderBySpectralPriority](../../../../Combinatorics/IsolationMachine.lean/declarations/reorderbyspectralpriority.md) | 74 | `declaration-track:3163744a1aa931225c9b3fd9db84fff06f340a1a88f5eabf7a78396f2be0a562` |
-| 4 | `theorem` | [spectralPriority_preserves_analytic_frontier](../../../../Combinatorics/IsolationMachine.lean/declarations/spectralpriority-preserves-analytic-frontier.md) | 89 | `result-track:a8fca6f49cd7f758cf7af975a69e53b1b465d4e45ed257bc4e204f7b40ab2f57` |
-| 5 | `inductive` | [RHIsolationEvent](../../../../Combinatorics/IsolationMachine.lean/declarations/rhisolationevent.md) | 116 | `declaration-track:ac8f2b13466008e6ae87bc4a049300310b4fdcc21fabe16a2b4a2164f9a777f0` |
-| 6 | `def` | [RHIsolationEvent.hasCommittedAnalyticEffect](../../../../Combinatorics/IsolationMachine.lean/declarations/rhisolationevent-hascommittedanalyticeffect.md) | 133 | `declaration-track:ef6e6a1a013a49fda99e49e0ba37cf7505e68515588d2b9da928a7792b1e32ac` |
+| 1 | `structure` | [RHIsolationState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IsolationMachine.lean/declarations/rhisolationstate.md) | 18 | `declaration-track:d58ce6ff4cd4ac006213c002fefc0d570628b53b84e41aa4bde49c6e9a72ffff` |
+| 2 | `structure` | [RHIsolationInvariant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IsolationMachine.lean/declarations/rhisolationinvariant.md) | 33 | `declaration-track:0f2f9d5d0f91c7966705830b96c4286f1052f6ec0791095513cb9922a4a54602` |
+| 3 | `def` | [reorderBySpectralPriority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IsolationMachine.lean/declarations/reorderbyspectralpriority.md) | 74 | `declaration-track:3163744a1aa931225c9b3fd9db84fff06f340a1a88f5eabf7a78396f2be0a562` |
+| 4 | `theorem` | [spectralPriority_preserves_analytic_frontier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IsolationMachine.lean/declarations/spectralpriority-preserves-analytic-frontier.md) | 89 | `result-track:a8fca6f49cd7f758cf7af975a69e53b1b465d4e45ed257bc4e204f7b40ab2f57` |
+| 5 | `inductive` | [RHIsolationEvent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IsolationMachine.lean/declarations/rhisolationevent.md) | 116 | `declaration-track:ac8f2b13466008e6ae87bc4a049300310b4fdcc21fabe16a2b4a2164f9a777f0` |
+| 6 | `def` | [RHIsolationEvent.hasCommittedAnalyticEffect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IsolationMachine.lean/declarations/rhisolationevent-hascommittedanalyticeffect.md) | 133 | `declaration-track:ef6e6a1a013a49fda99e49e0ba37cf7505e68515588d2b9da928a7792b1e32ac` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

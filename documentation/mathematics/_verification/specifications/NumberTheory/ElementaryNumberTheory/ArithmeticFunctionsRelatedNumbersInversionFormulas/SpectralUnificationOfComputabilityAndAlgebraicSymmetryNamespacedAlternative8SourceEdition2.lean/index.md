@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SpectralUnificationOfComputabilityAndAlgebraicSymmetryNamespacedAlternative8SourceEdition2.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SpectralUnificationOfComputabilityAndAlgebraicSymmetryNamespacedAlternative8SourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SpectralUnificationOfComputabilityAndAlgebraicSymmetryNamespacedAlternative8SourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SpectralUnificationOfComputabilityAndAlgebraicSymmetryNamespacedAlternative8SourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [range_succ_sum](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SpectralUnificationOfComputabilityAndAlgebraicSymmetryNamespacedAlternative8SourceEdition2.lean/declarations/range-succ-sum.md) | 30 | `result-track:064e71597f94f804ce3e58a3ced4ec4a9d239ed503c4bfee1107c8bfa467aae0` |
-| 2 | `theorem` | [sum_vonMangoldt_div_sqrt_le](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SpectralUnificationOfComputabilityAndAlgebraicSymmetryNamespacedAlternative8SourceEdition2.lean/declarations/sum-vonmangoldt-div-sqrt-le.md) | 37 | `result-track:49333c3607256b6bee867d7dce2641c71b3295cd45d6767c5b20d2349dbfe538` |
-| 3 | `theorem` | [sum_vonMangoldt_div_sqrt_le_real](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SpectralUnificationOfComputabilityAndAlgebraicSymmetryNamespacedAlternative8SourceEdition2.lean/declarations/sum-vonmangoldt-div-sqrt-le-real.md) | 82 | `result-track:5bb79f46cdf781fe14cf2fc684c271f2d751ba04f06a55a17520176cbfe3565d` |
+| 1 | `theorem` | [range_succ_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SpectralUnificationOfComputabilityAndAlgebraicSymmetryNamespacedAlternative8SourceEdition2.lean/declarations/range-succ-sum.md) | 30 | `result-track:064e71597f94f804ce3e58a3ced4ec4a9d239ed503c4bfee1107c8bfa467aae0` |
+| 2 | `theorem` | [sum_vonMangoldt_div_sqrt_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SpectralUnificationOfComputabilityAndAlgebraicSymmetryNamespacedAlternative8SourceEdition2.lean/declarations/sum-vonmangoldt-div-sqrt-le.md) | 37 | `result-track:49333c3607256b6bee867d7dce2641c71b3295cd45d6767c5b20d2349dbfe538` |
+| 3 | `theorem` | [sum_vonMangoldt_div_sqrt_le_real](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SpectralUnificationOfComputabilityAndAlgebraicSymmetryNamespacedAlternative8SourceEdition2.lean/declarations/sum-vonmangoldt-div-sqrt-le-real.md) | 82 | `result-track:5bb79f46cdf781fe14cf2fc684c271f2d751ba04f06a55a17520176cbfe3565d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

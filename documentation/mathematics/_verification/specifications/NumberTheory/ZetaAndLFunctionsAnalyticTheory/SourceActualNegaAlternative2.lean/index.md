@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualNegaAlternative2.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualNegaAlternative2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualNegaAlternative2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualNegaAlternative2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualNegativeEdgeSquareBaseline](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualNegaAlternative2.lean/declarations/actualnegativeedgesquarebaseline.md) | 20 | `declaration-track:bacd33f28803b40be849a789d41ea0dcbf0cf19e96458d5939542763589bb5a9` |
-| 2 | `def` | [actualNegativeEdgeSquareStorage](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualNegaAlternative2.lean/declarations/actualnegativeedgesquarestorage.md) | 24 | `declaration-track:81162d1c841ce1fd6a4c595d34df50c532ef567c52655724e3338487938103cc` |
-| 3 | `theorem` | [actualNegativeEdgeSquare_reconstruction](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualNegaAlternative2.lean/declarations/actualnegativeedgesquare-reconstruction.md) | 28 | `result-track:cd068d7a5c777a41bc5265d0ecfcbe4ac9b92a99b600387c7d13478285cededf` |
-| 4 | `theorem` | [actualNegativeEdgeSquareSurplus_eventually_positive](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualNegaAlternative2.lean/declarations/actualnegativeedgesquaresurplus-eventually-positive.md) | 44 | `result-track:e3395709b8f651699c99f40d299aebaa971c5beb7d8355258cf3385e7fa9ce83` |
+| 1 | `def` | [actualNegativeEdgeSquareBaseline](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualNegaAlternative2.lean/declarations/actualnegativeedgesquarebaseline.md) | 20 | `declaration-track:bacd33f28803b40be849a789d41ea0dcbf0cf19e96458d5939542763589bb5a9` |
+| 2 | `def` | [actualNegativeEdgeSquareStorage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualNegaAlternative2.lean/declarations/actualnegativeedgesquarestorage.md) | 24 | `declaration-track:81162d1c841ce1fd6a4c595d34df50c532ef567c52655724e3338487938103cc` |
+| 3 | `theorem` | [actualNegativeEdgeSquare_reconstruction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualNegaAlternative2.lean/declarations/actualnegativeedgesquare-reconstruction.md) | 28 | `result-track:cd068d7a5c777a41bc5265d0ecfcbe4ac9b92a99b600387c7d13478285cededf` |
+| 4 | `theorem` | [actualNegativeEdgeSquareSurplus_eventually_positive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualNegaAlternative2.lean/declarations/actualnegativeedgesquaresurplus-eventually-positive.md) | 44 | `result-track:e3395709b8f651699c99f40d299aebaa971c5beb7d8355258cf3385e7fa9ce83` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

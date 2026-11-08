@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/ConformalInnerProductInnerProduct.lean/index.md) · [Full source](../../../../RealFunctions/ConformalInnerProductInnerProduct.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ConformalInnerProductInnerProduct.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ConformalInnerProductInnerProduct.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [conformalAt_iff'](../../../../RealFunctions/ConformalInnerProductInnerProduct.lean/declarations/conformalat-iff.md) | 27 | `result-track:78d4d0a898f2a9d1e9538f1a9f23c8b535fd823b201eb1a2c74100666cfc6bba` |
-| 2 | `theorem` | [conformalAt_iff](../../../../RealFunctions/ConformalInnerProductInnerProduct.lean/declarations/conformalat-iff-source-edition-2.md) | 33 | `result-track:c4a1ce435ec940345a5f97ee066d1ea0ce0f72da17ccb27f68e7118571bd7a82` |
-| 3 | `def` | [conformalFactorAt](../../../../RealFunctions/ConformalInnerProductInnerProduct.lean/declarations/conformalfactorat.md) | 39 | `declaration-track:c7818238bea060ae0603f1e5ba8b0b7e5426c695a1e7e8ffa06880082f98835a` |
-| 4 | `theorem` | [conformalFactorAt_pos](../../../../RealFunctions/ConformalInnerProductInnerProduct.lean/declarations/conformalfactorat-pos.md) | 42 | `result-track:6e179609ce31f65a14fe4a7caa5483c47e28ff392d5105979cb53c64a5bafeb7` |
-| 5 | `theorem` | [conformalFactorAt_inner_eq_mul_inner'](../../../../RealFunctions/ConformalInnerProductInnerProduct.lean/declarations/conformalfactorat-inner-eq-mul-inner.md) | 45 | `result-track:71d328c53dbcad82ec50437a199d306526fc2f063a5b2d0a015247a66517aa8c` |
-| 6 | `theorem` | [conformalFactorAt_inner_eq_mul_inner](../../../../RealFunctions/ConformalInnerProductInnerProduct.lean/declarations/conformalfactorat-inner-eq-mul-inner-source-edition-2.md) | 49 | `result-track:c2974a0b04ef0570ad6082f037bb07ec57ea4cc65cf9f0c0c34fc30492f56912` |
+| 1 | `theorem` | [conformalAt_iff'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ConformalInnerProductInnerProduct.lean/declarations/conformalat-iff.md) | 27 | `result-track:78d4d0a898f2a9d1e9538f1a9f23c8b535fd823b201eb1a2c74100666cfc6bba` |
+| 2 | `theorem` | [conformalAt_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ConformalInnerProductInnerProduct.lean/declarations/conformalat-iff-source-edition-2.md) | 33 | `result-track:c4a1ce435ec940345a5f97ee066d1ea0ce0f72da17ccb27f68e7118571bd7a82` |
+| 3 | `def` | [conformalFactorAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ConformalInnerProductInnerProduct.lean/declarations/conformalfactorat.md) | 39 | `declaration-track:c7818238bea060ae0603f1e5ba8b0b7e5426c695a1e7e8ffa06880082f98835a` |
+| 4 | `theorem` | [conformalFactorAt_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ConformalInnerProductInnerProduct.lean/declarations/conformalfactorat-pos.md) | 42 | `result-track:6e179609ce31f65a14fe4a7caa5483c47e28ff392d5105979cb53c64a5bafeb7` |
+| 5 | `theorem` | [conformalFactorAt_inner_eq_mul_inner'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ConformalInnerProductInnerProduct.lean/declarations/conformalfactorat-inner-eq-mul-inner.md) | 45 | `result-track:71d328c53dbcad82ec50437a199d306526fc2f063a5b2d0a015247a66517aa8c` |
+| 6 | `theorem` | [conformalFactorAt_inner_eq_mul_inner](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ConformalInnerProductInnerProduct.lean/declarations/conformalfactorat-inner-eq-mul-inner-source-edition-2.md) | 49 | `result-track:c2974a0b04ef0570ad6082f037bb07ec57ea4cc65cf9f0c0c34fc30492f56912` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

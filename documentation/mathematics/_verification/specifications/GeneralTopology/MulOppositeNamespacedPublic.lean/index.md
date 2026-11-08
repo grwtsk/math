@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/MulOppositeNamespacedPublic.lean/index.md) · [Full source](../../../../GeneralTopology/MulOppositeNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MulOppositeNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MulOppositeNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../GeneralTopology/MulOppositeNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 38 | `declaration-track:f4e719e136c506142e9b4b90121239d96517372b0827628171a8eb3cc1d9d810` |
-| 2 | `instance` | [(anonymous)](../../../../GeneralTopology/MulOppositeNamespacedPublic.lean/declarations/instance.md) | 45 | `declaration-track:b399ddb7634912823864b852ac4c7058021bc2992e599ba7cfa6b70b75c83374` |
-| 3 | `theorem` | [edist_unop](../../../../GeneralTopology/MulOppositeNamespacedPublic.lean/declarations/edist-unop.md) | 49 | `result-track:166d9ec14008b384078f14324b1f4b838206be96b849871e189d488c2de97b3f` |
-| 4 | `theorem` | [edist_op](../../../../GeneralTopology/MulOppositeNamespacedPublic.lean/declarations/edist-op.md) | 52 | `result-track:d835101a3a612ec63ac5f23b1d14538d76183b793bb48702ef3159c841dc05ff` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MulOppositeNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 38 | `declaration-track:f4e719e136c506142e9b4b90121239d96517372b0827628171a8eb3cc1d9d810` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MulOppositeNamespacedPublic.lean/declarations/instance.md) | 45 | `declaration-track:b399ddb7634912823864b852ac4c7058021bc2992e599ba7cfa6b70b75c83374` |
+| 3 | `theorem` | [edist_unop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MulOppositeNamespacedPublic.lean/declarations/edist-unop.md) | 49 | `result-track:166d9ec14008b384078f14324b1f4b838206be96b849871e189d488c2de97b3f` |
+| 4 | `theorem` | [edist_op](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MulOppositeNamespacedPublic.lean/declarations/edist-op.md) | 52 | `result-track:d835101a3a612ec63ac5f23b1d14538d76183b793bb48702ef3159c841dc05ff` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

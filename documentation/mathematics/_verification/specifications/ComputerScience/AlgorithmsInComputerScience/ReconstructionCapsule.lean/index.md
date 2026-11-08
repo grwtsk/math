@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ReconstructionCapsule.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ReconstructionCapsule.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReconstructionCapsule.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReconstructionCapsule.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,8 +61,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [PointLanguage](../../../../../ComputerScience/AlgorithmsInComputerScience/ReconstructionCapsule.lean/declarations/pointlanguage.md) | 14 | `declaration-track:40ab716c83b0c4737ce2d7be5fc8732e3b20ea3f4ec2fb05f228544b4a85b90b` |
-| 2 | `structure` | [ReconstructionCapsule](../../../../../ComputerScience/AlgorithmsInComputerScience/ReconstructionCapsule.lean/declarations/reconstructioncapsule.md) | 21 | `declaration-track:ad7ef8d2e53c39dab1f348de98f3d271f5de673ed75b2f5b25a98f59624e729a` |
+| 1 | `inductive` | [PointLanguage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReconstructionCapsule.lean/declarations/pointlanguage.md) | 14 | `declaration-track:40ab716c83b0c4737ce2d7be5fc8732e3b20ea3f4ec2fb05f228544b4a85b90b` |
+| 2 | `structure` | [ReconstructionCapsule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReconstructionCapsule.lean/declarations/reconstructioncapsule.md) | 21 | `declaration-track:ad7ef8d2e53c39dab1f348de98f3d271f5de673ed75b2f5b25a98f59624e729a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

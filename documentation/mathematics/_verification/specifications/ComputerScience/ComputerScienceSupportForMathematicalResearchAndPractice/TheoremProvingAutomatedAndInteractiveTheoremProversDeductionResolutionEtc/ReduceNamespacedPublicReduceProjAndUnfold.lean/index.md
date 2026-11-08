@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ReduceNamespacedPublicReduceProjAndUnfold.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ReduceNamespacedPublicReduceProjAndUnfold.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ReduceNamespacedPublicReduceProjAndUnfold.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ReduceNamespacedPublicReduceProjAndUnfold.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [reduceProjAndUnfold?](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ReduceNamespacedPublicReduceProjAndUnfold.lean/declarations/reduceprojandunfold.md) | 35 | `declaration-track:61f7ced6fd97a41aa8322f34917e143e44b56c8296ed79951d659ffb8311796a` |
-| 2 | `def` | [reduceHead?](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ReduceNamespacedPublicReduceProjAndUnfold.lean/declarations/reducehead.md) | 55 | `declaration-track:18743f0425e591641299da07cea75c71722e3b46a6ffd656a6e70ac1362b82aa` |
-| 3 | `def` | [reduceHead](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ReduceNamespacedPublicReduceProjAndUnfold.lean/declarations/reducehead-source-edition-2.md) | 88 | `declaration-track:3d3efa220006977b586968c8016a005be6de10b9eb6f7053791972d64d37a788` |
+| 1 | `def` | [reduceProjAndUnfold?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ReduceNamespacedPublicReduceProjAndUnfold.lean/declarations/reduceprojandunfold.md) | 35 | `declaration-track:61f7ced6fd97a41aa8322f34917e143e44b56c8296ed79951d659ffb8311796a` |
+| 2 | `def` | [reduceHead?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ReduceNamespacedPublicReduceProjAndUnfold.lean/declarations/reducehead.md) | 55 | `declaration-track:18743f0425e591641299da07cea75c71722e3b46a6ffd656a6e70ac1362b82aa` |
+| 3 | `def` | [reduceHead](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ReduceNamespacedPublicReduceProjAndUnfold.lean/declarations/reducehead-source-edition-2.md) | 88 | `declaration-track:3d3efa220006977b586968c8016a005be6de10b9eb6f7053791972d64d37a788` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

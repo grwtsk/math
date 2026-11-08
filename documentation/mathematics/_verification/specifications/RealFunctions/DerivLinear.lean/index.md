@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/DerivLinear.lean/index.md) · [Full source](../../../../RealFunctions/DerivLinear.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DerivLinear.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DerivLinear.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,18 +58,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [ContinuousLinearMap.hasDerivAtFilter](../../../../RealFunctions/DerivLinear.lean/declarations/continuouslinearmap-hasderivatfilter.md) | 42 | `result-track:ec35d950fb389063ce1e404ba5d4f37593191b9b79defd02b1a26f7b99307b90` |
-| 2 | `theorem` | [ContinuousLinearMap.hasStrictDerivAt](../../../../RealFunctions/DerivLinear.lean/declarations/continuouslinearmap-hasstrictderivat.md) | 45 | `result-track:a51bc804577d41f8296fb7c1fae1066216a350e741516d4406fc460a1029074e` |
-| 3 | `theorem` | [ContinuousLinearMap.hasDerivAt](../../../../RealFunctions/DerivLinear.lean/declarations/continuouslinearmap-hasderivat.md) | 48 | `result-track:4a958e0e8c8207e8e9df8e2a435316701f1e6405367d35292defe418a1d18a40` |
-| 4 | `theorem` | [ContinuousLinearMap.hasDerivWithinAt](../../../../RealFunctions/DerivLinear.lean/declarations/continuouslinearmap-hasderivwithinat.md) | 51 | `result-track:a3201098818f249407c2a5607fc8d158106f422ec2a52148dc495cd634b55a68` |
-| 5 | `theorem` | [ContinuousLinearMap.deriv](../../../../RealFunctions/DerivLinear.lean/declarations/continuouslinearmap-deriv.md) | 55 | `result-track:ea8bfabaa42ec72f1a88e68b4b2e7a6834e8044187502e5b4598e23ede8abe2d` |
-| 6 | `theorem` | [ContinuousLinearMap.derivWithin](../../../../RealFunctions/DerivLinear.lean/declarations/continuouslinearmap-derivwithin.md) | 58 | `result-track:2ae2c8222c442fa8b515a3e1a2865ae1a6c9afba18814e69ace788c4ec02aba1` |
-| 7 | `theorem` | [LinearMap.hasDerivAtFilter](../../../../RealFunctions/DerivLinear.lean/declarations/linearmap-hasderivatfilter.md) | 70 | `result-track:ca0cf07d001a19653fb10b541c7e73ce23d73e4ce6a7df93610089f368b50669` |
-| 8 | `theorem` | [LinearMap.hasStrictDerivAt](../../../../RealFunctions/DerivLinear.lean/declarations/linearmap-hasstrictderivat.md) | 73 | `result-track:12bf165fd864cf6ee6addd82d27b9f5cc76bb1dfe312e9ba7427799c80dd2857` |
-| 9 | `theorem` | [LinearMap.hasDerivAt](../../../../RealFunctions/DerivLinear.lean/declarations/linearmap-hasderivat.md) | 76 | `result-track:18d46a5472127cf4d2a086b7e1eb7ca6c6855963db9ef59b74b84007b48768de` |
-| 10 | `theorem` | [LinearMap.hasDerivWithinAt](../../../../RealFunctions/DerivLinear.lean/declarations/linearmap-hasderivwithinat.md) | 79 | `result-track:4871152d84cfd7c4bbd80465e137d34ec315d2a89382e81f96ad9c67b1105c56` |
-| 11 | `theorem` | [LinearMap.deriv](../../../../RealFunctions/DerivLinear.lean/declarations/linearmap-deriv.md) | 83 | `result-track:3caa44b4aa06352c37b6f8762c2e4b9b98db69f8d2f351bad1783cfd354be057` |
-| 12 | `theorem` | [LinearMap.derivWithin](../../../../RealFunctions/DerivLinear.lean/declarations/linearmap-derivwithin.md) | 86 | `result-track:e1ac3585a6a4f63fc0aa87859ff8ede4308b6e8edeab0acb221c05c6638cced0` |
+| 1 | `theorem` | [ContinuousLinearMap.hasDerivAtFilter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DerivLinear.lean/declarations/continuouslinearmap-hasderivatfilter.md) | 42 | `result-track:ec35d950fb389063ce1e404ba5d4f37593191b9b79defd02b1a26f7b99307b90` |
+| 2 | `theorem` | [ContinuousLinearMap.hasStrictDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DerivLinear.lean/declarations/continuouslinearmap-hasstrictderivat.md) | 45 | `result-track:a51bc804577d41f8296fb7c1fae1066216a350e741516d4406fc460a1029074e` |
+| 3 | `theorem` | [ContinuousLinearMap.hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DerivLinear.lean/declarations/continuouslinearmap-hasderivat.md) | 48 | `result-track:4a958e0e8c8207e8e9df8e2a435316701f1e6405367d35292defe418a1d18a40` |
+| 4 | `theorem` | [ContinuousLinearMap.hasDerivWithinAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DerivLinear.lean/declarations/continuouslinearmap-hasderivwithinat.md) | 51 | `result-track:a3201098818f249407c2a5607fc8d158106f422ec2a52148dc495cd634b55a68` |
+| 5 | `theorem` | [ContinuousLinearMap.deriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DerivLinear.lean/declarations/continuouslinearmap-deriv.md) | 55 | `result-track:ea8bfabaa42ec72f1a88e68b4b2e7a6834e8044187502e5b4598e23ede8abe2d` |
+| 6 | `theorem` | [ContinuousLinearMap.derivWithin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DerivLinear.lean/declarations/continuouslinearmap-derivwithin.md) | 58 | `result-track:2ae2c8222c442fa8b515a3e1a2865ae1a6c9afba18814e69ace788c4ec02aba1` |
+| 7 | `theorem` | [LinearMap.hasDerivAtFilter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DerivLinear.lean/declarations/linearmap-hasderivatfilter.md) | 70 | `result-track:ca0cf07d001a19653fb10b541c7e73ce23d73e4ce6a7df93610089f368b50669` |
+| 8 | `theorem` | [LinearMap.hasStrictDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DerivLinear.lean/declarations/linearmap-hasstrictderivat.md) | 73 | `result-track:12bf165fd864cf6ee6addd82d27b9f5cc76bb1dfe312e9ba7427799c80dd2857` |
+| 9 | `theorem` | [LinearMap.hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DerivLinear.lean/declarations/linearmap-hasderivat.md) | 76 | `result-track:18d46a5472127cf4d2a086b7e1eb7ca6c6855963db9ef59b74b84007b48768de` |
+| 10 | `theorem` | [LinearMap.hasDerivWithinAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DerivLinear.lean/declarations/linearmap-hasderivwithinat.md) | 79 | `result-track:4871152d84cfd7c4bbd80465e137d34ec315d2a89382e81f96ad9c67b1105c56` |
+| 11 | `theorem` | [LinearMap.deriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DerivLinear.lean/declarations/linearmap-deriv.md) | 83 | `result-track:3caa44b4aa06352c37b6f8762c2e4b9b98db69f8d2f351bad1783cfd354be057` |
+| 12 | `theorem` | [LinearMap.derivWithin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DerivLinear.lean/declarations/linearmap-derivwithin.md) | 86 | `result-track:e1ac3585a6a4f63fc0aa87859ff8ede4308b6e8edeab0acb221c05c6638cced0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

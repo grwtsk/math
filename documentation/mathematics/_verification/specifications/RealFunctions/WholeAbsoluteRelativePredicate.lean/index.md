@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/WholeAbsoluteRelativePredicate.lean/index.md) · [Full source](../../../../RealFunctions/WholeAbsoluteRelativePredicate.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/WholeAbsoluteRelativePredicate.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/WholeAbsoluteRelativePredicate.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Tolerance](../../../../RealFunctions/WholeAbsoluteRelativePredicate.lean/declarations/tolerance.md) | 29 | `declaration-track:4d2b37dcf79139b3c532f8e846ed9b45f840ed82d536517b6d216b6de73a91f8` |
-| 2 | `def` | [Tolerance.NearlyEqual](../../../../RealFunctions/WholeAbsoluteRelativePredicate.lean/declarations/tolerance-nearlyequal.md) | 36 | `declaration-track:1766f82d61b7c43424ced6c9334b4af48454223533a43c73c220fb8fcdb1daef` |
+| 1 | `structure` | [Tolerance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/WholeAbsoluteRelativePredicate.lean/declarations/tolerance.md) | 29 | `declaration-track:4d2b37dcf79139b3c532f8e846ed9b45f840ed82d536517b6d216b6de73a91f8` |
+| 2 | `def` | [Tolerance.NearlyEqual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/WholeAbsoluteRelativePredicate.lean/declarations/tolerance-nearlyequal.md) | 36 | `declaration-track:1766f82d61b7c43424ced6c9334b4af48454223533a43c73c220fb8fcdb1daef` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

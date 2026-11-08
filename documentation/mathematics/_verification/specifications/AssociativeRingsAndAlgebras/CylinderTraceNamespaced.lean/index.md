@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/CylinderTraceNamespaced.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/CylinderTraceNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CylinderTraceNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CylinderTraceNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CylinderPresentation](../../../../AssociativeRingsAndAlgebras/CylinderTraceNamespaced.lean/declarations/cylinderpresentation.md) | 26 | `declaration-track:14bc53e3a498182383c1b31eced43baea547c6a7e951d0ff29ec29d3cd179182` |
-| 2 | `structure` | [CylinderEquivalenceCertificate](../../../../AssociativeRingsAndAlgebras/CylinderTraceNamespaced.lean/declarations/cylinderequivalencecertificate.md) | 40 | `declaration-track:1f7aa5373ee7c4de511663c946b7e024073d15e799837ec4c7cbc02f4656f8f9` |
-| 3 | `def` | [CylinderEquivalenceCertificate.setoid](../../../../AssociativeRingsAndAlgebras/CylinderTraceNamespaced.lean/declarations/cylinderequivalencecertificate-setoid.md) | 89 | `declaration-track:469d5d94678c9ed99746ead76dad83970e4a8f6974a7f9b422718dbcd25384fb` |
-| 4 | `abbrev` | [CylinderObservable](../../../../AssociativeRingsAndAlgebras/CylinderTraceNamespaced.lean/declarations/cylinderobservable.md) | 108 | `declaration-track:dd665edacbc818462c16c871a38bb6ff70f545c07be4392c38782a1d1f893de5` |
-| 5 | `def` | [limitTrace](../../../../AssociativeRingsAndAlgebras/CylinderTraceNamespaced.lean/declarations/limittrace.md) | 122 | `declaration-track:a1983aa3a578eb8d1c2f8fc52e5e7c28c67b8207c4625b912fbaba7f9fca06e9` |
-| 6 | `theorem` | [limitTrace_mk](../../../../AssociativeRingsAndAlgebras/CylinderTraceNamespaced.lean/declarations/limittrace-mk.md) | 144 | `result-track:361768e55df4a6094adf2ac5d4a4e408dc7b0972a49bbf2eaad4dea1f6e7bed5` |
-| 7 | `structure` | [CylinderTraceLawCertificate](../../../../AssociativeRingsAndAlgebras/CylinderTraceNamespaced.lean/declarations/cylindertracelawcertificate.md) | 166 | `declaration-track:09c915cb2835b7109970bef7451bdc336e9140216b03034f86e6ebbcb56aa0f9` |
-| 8 | `theorem` | [cylinder_trace_well_defined](../../../../AssociativeRingsAndAlgebras/CylinderTraceNamespaced.lean/declarations/cylinder-trace-well-defined.md) | 211 | `result-track:b774262097dd2efcaf2e06879baa17c7131e11c95f036e491292ec468d385d17` |
-| 9 | `theorem` | [limit_trace_tracial](../../../../AssociativeRingsAndAlgebras/CylinderTraceNamespaced.lean/declarations/limit-trace-tracial.md) | 235 | `result-track:0a527235879be644f2e499d30b268e161d8f2d7a4631265338ace9344c8c0e8b` |
-| 10 | `theorem` | [limit_trace_positive](../../../../AssociativeRingsAndAlgebras/CylinderTraceNamespaced.lean/declarations/limit-trace-positive.md) | 257 | `result-track:2e3cddb41f527b5db60eaf742dcfb9c8f548584d57f9c23e93dc52c47f95441f` |
+| 1 | `structure` | [CylinderPresentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CylinderTraceNamespaced.lean/declarations/cylinderpresentation.md) | 26 | `declaration-track:14bc53e3a498182383c1b31eced43baea547c6a7e951d0ff29ec29d3cd179182` |
+| 2 | `structure` | [CylinderEquivalenceCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CylinderTraceNamespaced.lean/declarations/cylinderequivalencecertificate.md) | 40 | `declaration-track:1f7aa5373ee7c4de511663c946b7e024073d15e799837ec4c7cbc02f4656f8f9` |
+| 3 | `def` | [CylinderEquivalenceCertificate.setoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CylinderTraceNamespaced.lean/declarations/cylinderequivalencecertificate-setoid.md) | 89 | `declaration-track:469d5d94678c9ed99746ead76dad83970e4a8f6974a7f9b422718dbcd25384fb` |
+| 4 | `abbrev` | [CylinderObservable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CylinderTraceNamespaced.lean/declarations/cylinderobservable.md) | 108 | `declaration-track:dd665edacbc818462c16c871a38bb6ff70f545c07be4392c38782a1d1f893de5` |
+| 5 | `def` | [limitTrace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CylinderTraceNamespaced.lean/declarations/limittrace.md) | 122 | `declaration-track:a1983aa3a578eb8d1c2f8fc52e5e7c28c67b8207c4625b912fbaba7f9fca06e9` |
+| 6 | `theorem` | [limitTrace_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CylinderTraceNamespaced.lean/declarations/limittrace-mk.md) | 144 | `result-track:361768e55df4a6094adf2ac5d4a4e408dc7b0972a49bbf2eaad4dea1f6e7bed5` |
+| 7 | `structure` | [CylinderTraceLawCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CylinderTraceNamespaced.lean/declarations/cylindertracelawcertificate.md) | 166 | `declaration-track:09c915cb2835b7109970bef7451bdc336e9140216b03034f86e6ebbcb56aa0f9` |
+| 8 | `theorem` | [cylinder_trace_well_defined](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CylinderTraceNamespaced.lean/declarations/cylinder-trace-well-defined.md) | 211 | `result-track:b774262097dd2efcaf2e06879baa17c7131e11c95f036e491292ec468d385d17` |
+| 9 | `theorem` | [limit_trace_tracial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CylinderTraceNamespaced.lean/declarations/limit-trace-tracial.md) | 235 | `result-track:0a527235879be644f2e499d30b268e161d8f2d7a4631265338ace9344c8c0e8b` |
+| 10 | `theorem` | [limit_trace_positive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CylinderTraceNamespaced.lean/declarations/limit-trace-positive.md) | 257 | `result-track:2e3cddb41f527b5db60eaf742dcfb9c8f548584d57f9c23e93dc52c47f95441f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

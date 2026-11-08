@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PointwiseSMulNamespacedPublic.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PointwiseSMulNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PointwiseSMulNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PointwiseSMulNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [mem_smulAntidiagonal_of_group](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PointwiseSMulNamespacedPublic.lean/declarations/mem-smulantidiagonal-of-group.md) | 37 | `result-track:cc8357f06f11c8d491a3f649596012850c476c2e8a070bc014f9a29c2074f06a` |
-| 2 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PointwiseSMulNamespacedPublic.lean/declarations/instance.md) | 49 | `declaration-track:c1dbbdcea11914039f0778ef61e6f90eac3ff715e27145fead0792d35d113821` |
-| 3 | `theorem` | [smul_eq](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PointwiseSMulNamespacedPublic.lean/declarations/smul-eq.md) | 57 | `result-track:df6c89eeec56cc43a820ae5ed3edf0a1870aece56568ea670c2ff0de2cd120d2` |
-| 4 | `theorem` | [smul_apply_mulAction](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PointwiseSMulNamespacedPublic.lean/declarations/smul-apply-mulaction.md) | 65 | `result-track:57f1ce60b1458c416e3a495efc11fee2c665a30280f4751c7e8673012d441e45` |
+| 1 | `theorem` | [mem_smulAntidiagonal_of_group](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PointwiseSMulNamespacedPublic.lean/declarations/mem-smulantidiagonal-of-group.md) | 37 | `result-track:cc8357f06f11c8d491a3f649596012850c476c2e8a070bc014f9a29c2074f06a` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PointwiseSMulNamespacedPublic.lean/declarations/instance.md) | 49 | `declaration-track:c1dbbdcea11914039f0778ef61e6f90eac3ff715e27145fead0792d35d113821` |
+| 3 | `theorem` | [smul_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PointwiseSMulNamespacedPublic.lean/declarations/smul-eq.md) | 57 | `result-track:df6c89eeec56cc43a820ae5ed3edf0a1870aece56568ea670c2ff0de2cd120d2` |
+| 4 | `theorem` | [smul_apply_mulAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PointwiseSMulNamespacedPublic.lean/declarations/smul-apply-mulaction.md) | 65 | `result-track:57f1ce60b1458c416e3a495efc11fee2c665a30280f4751c7e8673012d441e45` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

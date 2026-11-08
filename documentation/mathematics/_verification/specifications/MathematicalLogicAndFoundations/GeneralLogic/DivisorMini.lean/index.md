@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DivisorMini.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DivisorMini.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DivisorMini.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DivisorMini.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [D](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DivisorMini.lean/declarations/d.md) | 3 | `declaration-track:249371d7165c2668dca066e64c45008e6372f9b303a405273126b88c178c237f` |
-| 2 | `instance` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DivisorMini.lean/declarations/instance.md) | 6 | `declaration-track:32312193922c66802703902c2397d882a9837af772608d688f02d66e3aa4703b` |
-| 3 | `instance` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DivisorMini.lean/declarations/instance-source-edition-2.md) | 7 | `declaration-track:473c6291213f10cbff344c2102b26d7f2ab3945ca9f9ea61f0cf27ae21402883` |
+| 1 | `structure` | [D](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DivisorMini.lean/declarations/d.md) | 3 | `declaration-track:249371d7165c2668dca066e64c45008e6372f9b303a405273126b88c178c237f` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DivisorMini.lean/declarations/instance.md) | 6 | `declaration-track:32312193922c66802703902c2397d882a9837af772608d688f02d66e3aa4703b` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DivisorMini.lean/declarations/instance-source-edition-2.md) | 7 | `declaration-track:473c6291213f10cbff344c2102b26d7f2ab3945ca9f9ea61f0cf27ae21402883` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

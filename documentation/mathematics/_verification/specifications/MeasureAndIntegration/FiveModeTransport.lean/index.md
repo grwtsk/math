@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/FiveModeTransport.lean/index.md) · [Full source](../../../../MeasureAndIntegration/FiveModeTransport.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiveModeTransport.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiveModeTransport.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,17 +59,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [mode_continuous](../../../../MeasureAndIntegration/FiveModeTransport.lean/declarations/mode-continuous.md) | 19 | `result-track:52ac32368b063682496553197a7f94f3a3c0f88148121ef7dba711dd8757f50b` |
-| 2 | `theorem` | [mode_product_integrable](../../../../MeasureAndIntegration/FiveModeTransport.lean/declarations/mode-product-integrable.md) | 22 | `result-track:b4ebe715be8c188d8284f684e1a996910424e3712570b6dc5dbde7ca03551e08` |
-| 3 | `def` | [modeCorrelation](../../../../MeasureAndIntegration/FiveModeTransport.lean/declarations/modecorrelation.md) | 53 | `declaration-track:871e2b0cca44e2ac295da3a796ac3c6270e42f6434660a72f07962da3779f55e` |
-| 4 | `theorem` | [actual_correlation_reconstruction](../../../../MeasureAndIntegration/FiveModeTransport.lean/declarations/actual-correlation-reconstruction.md) | 56 | `result-track:5cb538dcc28a6acbd94505889a4c3e861301f5b38800343b5d4d5f239362d0f7` |
-| 5 | `def` | [poleMoment](../../../../MeasureAndIntegration/FiveModeTransport.lean/declarations/polemoment.md) | 83 | `declaration-track:ff542e79f8c1b6198d395fc3d0fb9cd8095ca80887505839afa12a57d4f98747` |
-| 6 | `theorem` | [mode_pole_integrable](../../../../MeasureAndIntegration/FiveModeTransport.lean/declarations/mode-pole-integrable.md) | 86 | `result-track:127415882f8f5d2210ac3be99d5f65337a75943989445ca0979b8afb94cd2447` |
-| 7 | `theorem` | [alpha_dot_pole_zero](../../../../MeasureAndIntegration/FiveModeTransport.lean/declarations/alpha-dot-pole-zero.md) | 103 | `result-track:648729dcb88e12e293b1d47a9fe07cd45f60acea586c65387a4af351e2036c58` |
-| 8 | `theorem` | [pole_matrix_contraction](../../../../MeasureAndIntegration/FiveModeTransport.lean/declarations/pole-matrix-contraction.md) | 115 | `result-track:1c00a5021ae924fb816287f0c3c0d8d3363af373a4a69262d490f3ec874aca2c` |
-| 9 | `theorem` | [contracted_correlation_origin](../../../../MeasureAndIntegration/FiveModeTransport.lean/declarations/contracted-correlation-origin.md) | 131 | `result-track:37a34a6d490418c328f27ed73bb0b0079fd2b16c2241e69e48466d69a66e2abd` |
-| 10 | `theorem` | [contracted_correlation_even](../../../../MeasureAndIntegration/FiveModeTransport.lean/declarations/contracted-correlation-even.md) | 137 | `result-track:46c2b187cdb0890ed9c353859f968d3a7feb3368546515912c031840daeb8496` |
-| 11 | `theorem` | [contracted_correlation_support](../../../../MeasureAndIntegration/FiveModeTransport.lean/declarations/contracted-correlation-support.md) | 145 | `result-track:a7572361e2d5da67e5216415dca4033b010f27ec996d29331e085faf1f360e2b` |
+| 1 | `theorem` | [mode_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiveModeTransport.lean/declarations/mode-continuous.md) | 19 | `result-track:52ac32368b063682496553197a7f94f3a3c0f88148121ef7dba711dd8757f50b` |
+| 2 | `theorem` | [mode_product_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiveModeTransport.lean/declarations/mode-product-integrable.md) | 22 | `result-track:b4ebe715be8c188d8284f684e1a996910424e3712570b6dc5dbde7ca03551e08` |
+| 3 | `def` | [modeCorrelation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiveModeTransport.lean/declarations/modecorrelation.md) | 53 | `declaration-track:871e2b0cca44e2ac295da3a796ac3c6270e42f6434660a72f07962da3779f55e` |
+| 4 | `theorem` | [actual_correlation_reconstruction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiveModeTransport.lean/declarations/actual-correlation-reconstruction.md) | 56 | `result-track:5cb538dcc28a6acbd94505889a4c3e861301f5b38800343b5d4d5f239362d0f7` |
+| 5 | `def` | [poleMoment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiveModeTransport.lean/declarations/polemoment.md) | 83 | `declaration-track:ff542e79f8c1b6198d395fc3d0fb9cd8095ca80887505839afa12a57d4f98747` |
+| 6 | `theorem` | [mode_pole_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiveModeTransport.lean/declarations/mode-pole-integrable.md) | 86 | `result-track:127415882f8f5d2210ac3be99d5f65337a75943989445ca0979b8afb94cd2447` |
+| 7 | `theorem` | [alpha_dot_pole_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiveModeTransport.lean/declarations/alpha-dot-pole-zero.md) | 103 | `result-track:648729dcb88e12e293b1d47a9fe07cd45f60acea586c65387a4af351e2036c58` |
+| 8 | `theorem` | [pole_matrix_contraction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiveModeTransport.lean/declarations/pole-matrix-contraction.md) | 115 | `result-track:1c00a5021ae924fb816287f0c3c0d8d3363af373a4a69262d490f3ec874aca2c` |
+| 9 | `theorem` | [contracted_correlation_origin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiveModeTransport.lean/declarations/contracted-correlation-origin.md) | 131 | `result-track:37a34a6d490418c328f27ed73bb0b0079fd2b16c2241e69e48466d69a66e2abd` |
+| 10 | `theorem` | [contracted_correlation_even](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiveModeTransport.lean/declarations/contracted-correlation-even.md) | 137 | `result-track:46c2b187cdb0890ed9c353859f968d3a7feb3368546515912c031840daeb8496` |
+| 11 | `theorem` | [contracted_correlation_support](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiveModeTransport.lean/declarations/contracted-correlation-support.md) | 145 | `result-track:a7572361e2d5da67e5216415dca4033b010f27ec996d29331e085faf1f360e2b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

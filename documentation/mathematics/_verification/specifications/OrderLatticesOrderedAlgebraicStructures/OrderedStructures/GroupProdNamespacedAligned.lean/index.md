@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupProdNamespacedAligned.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupProdNamespacedAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupProdNamespacedAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupProdNamespacedAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupProdNamespacedAligned.lean/declarations/instance.md) | 31 | `declaration-track:c0f961ba7fe23c723cfe1c0a0078fbca96b10634769b5fb7f58dd6843265e6d8` |
-| 2 | `instance` | [orderedCommGroup](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupProdNamespacedAligned.lean/declarations/orderedcommgroup.md) | 38 | `declaration-track:72815a4bad3a16ec3d58f0deaeb1cec7ab3f90bb3b54e9d3c2c302ac526f12ee` |
-| 3 | `instance` | [linearOrderedCommGroup](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupProdNamespacedAligned.lean/declarations/linearorderedcommgroup.md) | 43 | `declaration-track:47313797a080ec2fe1e48ffbad07e31e2b7eaea32a5f70efff3d92fe0b3b423d` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupProdNamespacedAligned.lean/declarations/instance.md) | 31 | `declaration-track:c0f961ba7fe23c723cfe1c0a0078fbca96b10634769b5fb7f58dd6843265e6d8` |
+| 2 | `instance` | [orderedCommGroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupProdNamespacedAligned.lean/declarations/orderedcommgroup.md) | 38 | `declaration-track:72815a4bad3a16ec3d58f0deaeb1cec7ab3f90bb3b54e9d3c2c302ac526f12ee` |
+| 3 | `instance` | [linearOrderedCommGroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupProdNamespacedAligned.lean/declarations/linearorderedcommgroup.md) | 43 | `declaration-track:47313797a080ec2fe1e48ffbad07e31e2b7eaea32a5f70efff3d92fe0b3b423d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

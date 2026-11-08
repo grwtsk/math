@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FamiliesIndexPropagation.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FamiliesIndexPropagation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FamiliesIndexPropagation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FamiliesIndexPropagation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [families_k_index_nontrivial_if_supplied](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FamiliesIndexPropagation.lean/declarations/families-k-index-nontrivial-if-supplied.md) | 19 | `result-track:e7fb64e73b42a0ebae98e9500225dd3a1ff4030418912007f6b8b714fa85fceb` |
-| 2 | `theorem` | [families_k_index_specializes_if_supplied](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FamiliesIndexPropagation.lean/declarations/families-k-index-specializes-if-supplied.md) | 26 | `result-track:96a9df103111ad08cc80fac8467482a4446cc8e81131d5d9a431e8bcc439421d` |
+| 1 | `theorem` | [families_k_index_nontrivial_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FamiliesIndexPropagation.lean/declarations/families-k-index-nontrivial-if-supplied.md) | 19 | `result-track:e7fb64e73b42a0ebae98e9500225dd3a1ff4030418912007f6b8b714fa85fceb` |
+| 2 | `theorem` | [families_k_index_specializes_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FamiliesIndexPropagation.lean/declarations/families-k-index-specializes-if-supplied.md) | 26 | `result-track:96a9df103111ad08cc80fac8467482a4446cc8e81131d5d9a431e8bcc439421d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

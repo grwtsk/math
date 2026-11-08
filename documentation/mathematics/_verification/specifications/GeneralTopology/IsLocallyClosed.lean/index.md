@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/IsLocallyClosed.lean/index.md) · [Full source](../../../../GeneralTopology/IsLocallyClosed.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/IsLocallyClosed.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/IsLocallyClosed.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [isLocallyClosed_Icc](../../../../GeneralTopology/IsLocallyClosed.lean/declarations/islocallyclosed-icc.md) | 17 | `result-track:05a578f9cf69f4b9bddb8c5ae89062ae913b8e4599d4d56a5add48e91408a538` |
-| 2 | `theorem` | [isLocallyClosed_Ioo](../../../../GeneralTopology/IsLocallyClosed.lean/declarations/islocallyclosed-ioo.md) | 21 | `result-track:1d6ed53fe4bbfa1bc88aa9ca43f9a42dfcaa1d2679712bef1ac1c90e56f3af5e` |
-| 3 | `theorem` | [isLocallyClosed_Ici](../../../../GeneralTopology/IsLocallyClosed.lean/declarations/islocallyclosed-ici.md) | 25 | `result-track:f86d35c0e37bcd55af654b2dab442a050ca92357bd11836a3db2c25e8575972d` |
-| 4 | `theorem` | [isLocallyClosed_Iic](../../../../GeneralTopology/IsLocallyClosed.lean/declarations/islocallyclosed-iic.md) | 29 | `result-track:165efef2b18fc85e8821aef4bcca10c53083aef610d95694a1fe8b9abe108ebf` |
-| 5 | `theorem` | [isLocallyClosed_Ioi](../../../../GeneralTopology/IsLocallyClosed.lean/declarations/islocallyclosed-ioi.md) | 33 | `result-track:112bfa48a381871adbcd12d9e800521463d233da4ad428eb45fecbae8f778931` |
-| 6 | `theorem` | [isLocallyClosed_Iio](../../../../GeneralTopology/IsLocallyClosed.lean/declarations/islocallyclosed-iio.md) | 37 | `result-track:e06f61e2d03348fb54c0d6a579152d54856b4f0b97d3e38f9e54e1f277b0434d` |
-| 7 | `theorem` | [isLocallyClosed_Ioc](../../../../GeneralTopology/IsLocallyClosed.lean/declarations/islocallyclosed-ioc.md) | 41 | `result-track:9f05b6bae08613505e8009f81ab14465f9b0f2a2ba567bdfc6328f13c7a95518` |
-| 8 | `theorem` | [isLocallyClosed_Ico](../../../../GeneralTopology/IsLocallyClosed.lean/declarations/islocallyclosed-ico.md) | 46 | `result-track:af0859b2d3a48ae23506819410f7fc48eb4412e0b925adeb94f53da856b3a15b` |
+| 1 | `theorem` | [isLocallyClosed_Icc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/IsLocallyClosed.lean/declarations/islocallyclosed-icc.md) | 17 | `result-track:05a578f9cf69f4b9bddb8c5ae89062ae913b8e4599d4d56a5add48e91408a538` |
+| 2 | `theorem` | [isLocallyClosed_Ioo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/IsLocallyClosed.lean/declarations/islocallyclosed-ioo.md) | 21 | `result-track:1d6ed53fe4bbfa1bc88aa9ca43f9a42dfcaa1d2679712bef1ac1c90e56f3af5e` |
+| 3 | `theorem` | [isLocallyClosed_Ici](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/IsLocallyClosed.lean/declarations/islocallyclosed-ici.md) | 25 | `result-track:f86d35c0e37bcd55af654b2dab442a050ca92357bd11836a3db2c25e8575972d` |
+| 4 | `theorem` | [isLocallyClosed_Iic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/IsLocallyClosed.lean/declarations/islocallyclosed-iic.md) | 29 | `result-track:165efef2b18fc85e8821aef4bcca10c53083aef610d95694a1fe8b9abe108ebf` |
+| 5 | `theorem` | [isLocallyClosed_Ioi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/IsLocallyClosed.lean/declarations/islocallyclosed-ioi.md) | 33 | `result-track:112bfa48a381871adbcd12d9e800521463d233da4ad428eb45fecbae8f778931` |
+| 6 | `theorem` | [isLocallyClosed_Iio](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/IsLocallyClosed.lean/declarations/islocallyclosed-iio.md) | 37 | `result-track:e06f61e2d03348fb54c0d6a579152d54856b4f0b97d3e38f9e54e1f277b0434d` |
+| 7 | `theorem` | [isLocallyClosed_Ioc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/IsLocallyClosed.lean/declarations/islocallyclosed-ioc.md) | 41 | `result-track:9f05b6bae08613505e8009f81ab14465f9b0f2a2ba567bdfc6328f13c7a95518` |
+| 8 | `theorem` | [isLocallyClosed_Ico](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/IsLocallyClosed.lean/declarations/islocallyclosed-ico.md) | 46 | `result-track:af0859b2d3a48ae23506819410f7fc48eb4412e0b925adeb94f53da856b3a15b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

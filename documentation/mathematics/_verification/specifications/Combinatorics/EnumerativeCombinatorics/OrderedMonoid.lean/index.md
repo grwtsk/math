@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/EnumerativeCombinatorics/OrderedMonoid.lean/index.md) · [Full source](../../../../../Combinatorics/EnumerativeCombinatorics/OrderedMonoid.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/OrderedMonoid.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/OrderedMonoid.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../Combinatorics/EnumerativeCombinatorics/OrderedMonoid.lean/declarations/instance-source-edition-2.md) | 22 | `declaration-track:e3bc5eb9d690d206442f9dc9ff7a379bfa36b22074be5d07305602e1af125d40` |
-| 2 | `instance` | [(anonymous)](../../../../../Combinatorics/EnumerativeCombinatorics/OrderedMonoid.lean/declarations/instance.md) | 26 | `declaration-track:4b7c74e3c148c7e883d5b703492d101212b14566570bc4641a50f697f626e229` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/OrderedMonoid.lean/declarations/instance-source-edition-2.md) | 22 | `declaration-track:e3bc5eb9d690d206442f9dc9ff7a379bfa36b22074be5d07305602e1af125d40` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/OrderedMonoid.lean/declarations/instance.md) | 26 | `declaration-track:4b7c74e3c148c7e883d5b703492d101212b14566570bc4641a50f697f626e229` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

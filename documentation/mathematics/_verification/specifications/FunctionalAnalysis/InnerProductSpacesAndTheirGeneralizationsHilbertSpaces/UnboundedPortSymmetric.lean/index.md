@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/UnboundedPortSymmetric.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/UnboundedPortSymmetric.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/UnboundedPortSymmetric.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/UnboundedPortSymmetric.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `Mathlib.Analysis.InnerProductSpace.Basic` — import line 1; external provider; requires a separately pinned dependency.
-- [`GRWTSK.Analysis.Operator.UnboundedPortEquivalence`](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnboundedPortEquivalence.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.Analysis.Operator.UnboundedPortEquivalence`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnboundedPortEquivalence.lean/index.md) — import line 2; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [IsSymmetric](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/UnboundedPortSymmetric.lean/declarations/issymmetric.md) | 17 | `declaration-track:932172addca83e3ad9bd05e23e3d8c36b8b4dc425d4090f20e1f2a09b89c37db` |
-| 2 | `structure` | [OrthogonalFramedEquivalence](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/UnboundedPortSymmetric.lean/declarations/orthogonalframedequivalence.md) | 24 | `declaration-track:02ca6219432590c037173352664569ff828b9a16caa57c709630ced135290315` |
-| 3 | `def` | [symm](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/UnboundedPortSymmetric.lean/declarations/symm.md) | 36 | `declaration-track:a4361e57a820d5b432519d774ce1b9a497a67c69e2cb073c015a1df832d174b2` |
-| 4 | `theorem` | [symmetric_forward](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/UnboundedPortSymmetric.lean/declarations/symmetric-forward.md) | 46 | `result-track:d5009f1ac01e9171450ad56301a8b1650fa6f4cffa0ac642d834fe5c9dc264fd` |
-| 5 | `theorem` | [symmetric_iff](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/UnboundedPortSymmetric.lean/declarations/symmetric-iff.md) | 79 | `result-track:9478f7ccb38f24df2b9cf5f9ff2817ca13a74c413f804f6e6942fcf7f9142869` |
+| 1 | `def` | [IsSymmetric](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/UnboundedPortSymmetric.lean/declarations/issymmetric.md) | 17 | `declaration-track:932172addca83e3ad9bd05e23e3d8c36b8b4dc425d4090f20e1f2a09b89c37db` |
+| 2 | `structure` | [OrthogonalFramedEquivalence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/UnboundedPortSymmetric.lean/declarations/orthogonalframedequivalence.md) | 24 | `declaration-track:02ca6219432590c037173352664569ff828b9a16caa57c709630ced135290315` |
+| 3 | `def` | [symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/UnboundedPortSymmetric.lean/declarations/symm.md) | 36 | `declaration-track:a4361e57a820d5b432519d774ce1b9a497a67c69e2cb073c015a1df832d174b2` |
+| 4 | `theorem` | [symmetric_forward](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/UnboundedPortSymmetric.lean/declarations/symmetric-forward.md) | 46 | `result-track:d5009f1ac01e9171450ad56301a8b1650fa6f4cffa0ac642d834fe5c9dc264fd` |
+| 5 | `theorem` | [symmetric_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/UnboundedPortSymmetric.lean/declarations/symmetric-iff.md) | 79 | `result-track:9478f7ccb38f24df2b9cf5f9ff2817ca13a74c413f804f6e6942fcf7f9142869` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

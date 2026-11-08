@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ContainmentNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ContainmentNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ContainmentNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ContainmentNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [contains](../../../../../ComputerScience/AlgorithmsInComputerScience/ContainmentNamespaced.lean/declarations/contains.md) | 15 | `declaration-track:36788f5749a4266ee263f2027a868defe6151ed902f8790dafc807c3c380f5cc` |
-| 2 | `theorem` | [contained_target](../../../../../ComputerScience/AlgorithmsInComputerScience/ContainmentNamespaced.lean/declarations/contained-target.md) | 18 | `result-track:7f673a4d9906ce22431ab91ad569c54bb765eb4ed6b32e3d9db52acc83107e22` |
+| 1 | `def` | [contains](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ContainmentNamespaced.lean/declarations/contains.md) | 15 | `declaration-track:36788f5749a4266ee263f2027a868defe6151ed902f8790dafc807c3c380f5cc` |
+| 2 | `theorem` | [contained_target](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ContainmentNamespaced.lean/declarations/contained-target.md) | 18 | `result-track:7f673a4d9906ce22431ab91ad569c54bb765eb4ed6b32e3d9db52acc83107e22` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

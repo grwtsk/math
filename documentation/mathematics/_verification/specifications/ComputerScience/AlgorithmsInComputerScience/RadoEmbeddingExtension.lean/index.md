@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/RadoEmbeddingExtension.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/RadoEmbeddingExtension.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RadoEmbeddingExtension.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RadoEmbeddingExtension.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [EmbedsPrefix](../../../../../ComputerScience/AlgorithmsInComputerScience/RadoEmbeddingExtension.lean/declarations/embedsprefix.md) | 23 | `declaration-track:57fcdce22aa5d247c6eb364abf758d246a362957b4eaa0e07dfcf955ead990d8` |
-| 2 | `def` | [NewVertexConnectList](../../../../../ComputerScience/AlgorithmsInComputerScience/RadoEmbeddingExtension.lean/declarations/newvertexconnectlist.md) | 27 | `declaration-track:9d189c08edf901a813855d98575f72e9f3acfe935cb75be5a363d627e58fc84f` |
-| 3 | `def` | [NewVertexAvoidList](../../../../../ComputerScience/AlgorithmsInComputerScience/RadoEmbeddingExtension.lean/declarations/newvertexavoidlist.md) | 31 | `declaration-track:4627615765bd8a91e97dcf558e9cf0eec23cecf619ab2cb808f3a46edb9b4085` |
-| 4 | `theorem` | [fresh_not_old_images](../../../../../ComputerScience/AlgorithmsInComputerScience/RadoEmbeddingExtension.lean/declarations/fresh-not-old-images.md) | 35 | `result-track:8b1ebc71d20e645ce95eca7d5b74992ad4d2c0871efc13e3d5fc1616c6d30b28` |
-| 5 | `theorem` | [extend_injective](../../../../../ComputerScience/AlgorithmsInComputerScience/RadoEmbeddingExtension.lean/declarations/extend-injective.md) | 53 | `result-track:6090f97eb2fafdd09bdc3e3b9c2fdd21584d51211d58ccb435ef3ba1f0a1cd96` |
-| 6 | `theorem` | [extend_preserves_ordered](../../../../../ComputerScience/AlgorithmsInComputerScience/RadoEmbeddingExtension.lean/declarations/extend-preserves-ordered.md) | 117 | `result-track:654a8d82ebbceca573664589488ae0d3cb529895a386c2e9bd62b56164b5d008` |
-| 7 | `theorem` | [bitRado_extend_finite_induced_embedding](../../../../../ComputerScience/AlgorithmsInComputerScience/RadoEmbeddingExtension.lean/declarations/bitrado-extend-finite-induced-embedding.md) | 161 | `result-track:1868d9baf4be83c6ca6a52a9aa4f3e9a697efcec6ceece2880bf118532697fa2` |
-| 8 | `theorem` | [bitRado_extend_finite_induced_embedding_inline](../../../../../ComputerScience/AlgorithmsInComputerScience/RadoEmbeddingExtension.lean/declarations/bitrado-extend-finite-induced-embedding-inline.md) | 181 | `result-track:6ad08bb1486f7a0cfb812d16cb42b62f6baffa191e8f23033ed7b84b2abe40eb` |
+| 1 | `def` | [EmbedsPrefix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RadoEmbeddingExtension.lean/declarations/embedsprefix.md) | 23 | `declaration-track:57fcdce22aa5d247c6eb364abf758d246a362957b4eaa0e07dfcf955ead990d8` |
+| 2 | `def` | [NewVertexConnectList](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RadoEmbeddingExtension.lean/declarations/newvertexconnectlist.md) | 27 | `declaration-track:9d189c08edf901a813855d98575f72e9f3acfe935cb75be5a363d627e58fc84f` |
+| 3 | `def` | [NewVertexAvoidList](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RadoEmbeddingExtension.lean/declarations/newvertexavoidlist.md) | 31 | `declaration-track:4627615765bd8a91e97dcf558e9cf0eec23cecf619ab2cb808f3a46edb9b4085` |
+| 4 | `theorem` | [fresh_not_old_images](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RadoEmbeddingExtension.lean/declarations/fresh-not-old-images.md) | 35 | `result-track:8b1ebc71d20e645ce95eca7d5b74992ad4d2c0871efc13e3d5fc1616c6d30b28` |
+| 5 | `theorem` | [extend_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RadoEmbeddingExtension.lean/declarations/extend-injective.md) | 53 | `result-track:6090f97eb2fafdd09bdc3e3b9c2fdd21584d51211d58ccb435ef3ba1f0a1cd96` |
+| 6 | `theorem` | [extend_preserves_ordered](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RadoEmbeddingExtension.lean/declarations/extend-preserves-ordered.md) | 117 | `result-track:654a8d82ebbceca573664589488ae0d3cb529895a386c2e9bd62b56164b5d008` |
+| 7 | `theorem` | [bitRado_extend_finite_induced_embedding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RadoEmbeddingExtension.lean/declarations/bitrado-extend-finite-induced-embedding.md) | 161 | `result-track:1868d9baf4be83c6ca6a52a9aa4f3e9a697efcec6ceece2880bf118532697fa2` |
+| 8 | `theorem` | [bitRado_extend_finite_induced_embedding_inline](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RadoEmbeddingExtension.lean/declarations/bitrado-extend-finite-induced-embedding-inline.md) | 181 | `result-track:6ad08bb1486f7a0cfb812d16cb42b62f6baffa191e8f23033ed7b84b2abe40eb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

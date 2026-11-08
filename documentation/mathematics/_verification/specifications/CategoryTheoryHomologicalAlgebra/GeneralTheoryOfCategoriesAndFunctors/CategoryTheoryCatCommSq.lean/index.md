@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryCatCommSq.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryCatCommSq.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryCatCommSq.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryCatCommSq.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [CatCommSq](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryCatCommSq.lean/declarations/catcommsq.md) | 34 | `declaration-track:d476975177bf7dc2a063a03e9836aa30eda1bc5681884e439552afc9e7bb06d8` |
-| 2 | `def` | [iso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryCatCommSq.lean/declarations/iso.md) | 42 | `declaration-track:a4d88c98e14e4cf29fef1fec52395c5c09cec495fdaca0ccbbd52207ac0ac111` |
-| 3 | `def` | [hComp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryCatCommSq.lean/declarations/hcomp.md) | 46 | `declaration-track:704e7f5168cb39b928383f374ee36c3e2bf992290d4267563e68bb50c1bca060` |
-| 4 | `def` | [vComp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryCatCommSq.lean/declarations/vcomp.md) | 55 | `declaration-track:8eb8fe324cb728d617f7a301bb032bdf7c33f97b455e5ca64696f9e7c862eaa6` |
-| 5 | `def` | [hInv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryCatCommSq.lean/declarations/hinv.md) | 68 | `declaration-track:00563fbf156c32a7771f4de8aa4b8fc60e299b7d88d576095934f4bf8b8141c9` |
-| 6 | `lemma` | [hInv_hInv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryCatCommSq.lean/declarations/hinv-hinv.md) | 75 | `result-track:f88bbe40b6189d2a6f851d8151c036f9f0ab3005310dfbabd082b8926f520064` |
-| 7 | `def` | [hInvEquiv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryCatCommSq.lean/declarations/hinvequiv.md) | 90 | `declaration-track:f2c3d8d5ab4f359dec28bcf5e485ac61a40c5847c4b6f0dbd0d77ff30a608565` |
-| 8 | `instance` | [hInv'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryCatCommSq.lean/declarations/hinv-source-edition-2.md) | 98 | `declaration-track:76d88d669f62700d328c9a4cbf11930cff3b15589332c98d0a54edc5a02fccf8` |
+| 1 | `class` | [CatCommSq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryCatCommSq.lean/declarations/catcommsq.md) | 34 | `declaration-track:d476975177bf7dc2a063a03e9836aa30eda1bc5681884e439552afc9e7bb06d8` |
+| 2 | `def` | [iso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryCatCommSq.lean/declarations/iso.md) | 42 | `declaration-track:a4d88c98e14e4cf29fef1fec52395c5c09cec495fdaca0ccbbd52207ac0ac111` |
+| 3 | `def` | [hComp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryCatCommSq.lean/declarations/hcomp.md) | 46 | `declaration-track:704e7f5168cb39b928383f374ee36c3e2bf992290d4267563e68bb50c1bca060` |
+| 4 | `def` | [vComp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryCatCommSq.lean/declarations/vcomp.md) | 55 | `declaration-track:8eb8fe324cb728d617f7a301bb032bdf7c33f97b455e5ca64696f9e7c862eaa6` |
+| 5 | `def` | [hInv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryCatCommSq.lean/declarations/hinv.md) | 68 | `declaration-track:00563fbf156c32a7771f4de8aa4b8fc60e299b7d88d576095934f4bf8b8141c9` |
+| 6 | `lemma` | [hInv_hInv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryCatCommSq.lean/declarations/hinv-hinv.md) | 75 | `result-track:f88bbe40b6189d2a6f851d8151c036f9f0ab3005310dfbabd082b8926f520064` |
+| 7 | `def` | [hInvEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryCatCommSq.lean/declarations/hinvequiv.md) | 90 | `declaration-track:f2c3d8d5ab4f359dec28bcf5e485ac61a40c5847c4b6f0dbd0d77ff30a608565` |
+| 8 | `instance` | [hInv'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryCatCommSq.lean/declarations/hinv-source-edition-2.md) | 98 | `declaration-track:76d88d669f62700d328c9a4cbf11930cff3b15589332c98d0a54edc5a02fccf8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

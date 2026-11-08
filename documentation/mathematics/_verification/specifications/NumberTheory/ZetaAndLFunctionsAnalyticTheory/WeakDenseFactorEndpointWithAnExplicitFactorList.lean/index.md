@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeakDenseFactorEndpointWithAnExplicitFactorList.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeakDenseFactorEndpointWithAnExplicitFactorList.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeakDenseFactorEndpointWithAnExplicitFactorList.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeakDenseFactorEndpointWithAnExplicitFactorList.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [real_prefix_in_weak_band](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeakDenseFactorEndpointWithAnExplicitFactorList.lean/declarations/real-prefix-in-weak-band.md) | 24 | `result-track:64c3cee05b2cb88829a7a4e1089356b97706bf73e62ead2cccb9c8639009663f` |
-| 2 | `theorem` | [natural_prefix_divides](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeakDenseFactorEndpointWithAnExplicitFactorList.lean/declarations/natural-prefix-divides.md) | 61 | `result-track:e933f53c9ac379cf19c0f7c4de80474f257c589e1cbb4d0e5ae4d98095708875` |
-| 3 | `theorem` | [natural_divisor_in_weak_band](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeakDenseFactorEndpointWithAnExplicitFactorList.lean/declarations/natural-divisor-in-weak-band.md) | 67 | `result-track:0ea738cf56a3a98a7a2bd77091de2300fb208531f6aba07de854b4b48f9a5b53` |
+| 1 | `theorem` | [real_prefix_in_weak_band](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeakDenseFactorEndpointWithAnExplicitFactorList.lean/declarations/real-prefix-in-weak-band.md) | 24 | `result-track:64c3cee05b2cb88829a7a4e1089356b97706bf73e62ead2cccb9c8639009663f` |
+| 2 | `theorem` | [natural_prefix_divides](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeakDenseFactorEndpointWithAnExplicitFactorList.lean/declarations/natural-prefix-divides.md) | 61 | `result-track:e933f53c9ac379cf19c0f7c4de80474f257c589e1cbb4d0e5ae4d98095708875` |
+| 3 | `theorem` | [natural_divisor_in_weak_band](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeakDenseFactorEndpointWithAnExplicitFactorList.lean/declarations/natural-divisor-in-weak-band.md) | 67 | `result-track:0ea738cf56a3a98a7a2bd77091de2300fb208531f6aba07de854b4b48f9a5b53` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

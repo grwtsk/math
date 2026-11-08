@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MinimalObservationFactorizations.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MinimalObservationFactorizations.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MinimalObservationFactorizations.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MinimalObservationFactorizations.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `Mathlib` — import line 14; external provider; requires a separately pinned dependency.
-- [`GRWTSK.FoundationsLogicAndTypeTheory.TypeTheory.DependentTypeTheory.RecoverableObservationRepresentations`](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RecoverableObservationRepresentations.lean/index.md) — import line 16; pinned internal source present.
+- [`GRWTSK.FoundationsLogicAndTypeTheory.TypeTheory.DependentTypeTheory.RecoverableObservationRepresentations`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RecoverableObservationRepresentations.lean/index.md) — import line 16; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [FactorsThrough](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MinimalObservationFactorizations.lean/declarations/factorsthrough.md) | 22 | `declaration-track:12136b94898f741f8f2b63f73d5adb15a75cd7bbb72433ea6b7170684ffbeabe` |
-| 2 | `def` | [IsMinimal](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MinimalObservationFactorizations.lean/declarations/isminimal.md) | 26 | `declaration-track:055b744ad0d434663951006b240ca8c9d54ad5ebd7de54a81d8b4d7b2b1e55f0` |
-| 3 | `theorem` | [factor_of_minimal](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MinimalObservationFactorizations.lean/declarations/factor-of-minimal.md) | 29 | `result-track:3e263dca55bf8c649f7e43f0db89122e4718b6aeb838b8beae60431803b68d2d` |
+| 1 | `def` | [FactorsThrough](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MinimalObservationFactorizations.lean/declarations/factorsthrough.md) | 22 | `declaration-track:12136b94898f741f8f2b63f73d5adb15a75cd7bbb72433ea6b7170684ffbeabe` |
+| 2 | `def` | [IsMinimal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MinimalObservationFactorizations.lean/declarations/isminimal.md) | 26 | `declaration-track:055b744ad0d434663951006b240ca8c9d54ad5ebd7de54a81d8b4d7b2b1e55f0` |
+| 3 | `theorem` | [factor_of_minimal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MinimalObservationFactorizations.lean/declarations/factor-of-minimal.md) | 29 | `result-track:3e263dca55bf8c649f7e43f0db89122e4718b6aeb838b8beae60431803b68d2d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

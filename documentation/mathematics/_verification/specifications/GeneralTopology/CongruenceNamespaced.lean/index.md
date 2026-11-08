@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/CongruenceNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/CongruenceNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CongruenceNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CongruenceNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,19 +57,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Congruent](../../../../GeneralTopology/CongruenceNamespaced.lean/declarations/congruent.md) | 45 | `declaration-track:c8423068a64647dff8725706cdf689d536bc885f84b76d911705b91a0e72eee3` |
-| 2 | `lemma` | [congruent_iff_edist_eq](../../../../GeneralTopology/CongruenceNamespaced.lean/declarations/congruent-iff-edist-eq.md) | 52 | `result-track:4d245f453d3032f7a71b8374df641572c7af3fd4761c48f7d80aa6a945a424cd` |
-| 3 | `lemma` | [congruent_iff_pairwise_edist_eq](../../../../GeneralTopology/CongruenceNamespaced.lean/declarations/congruent-iff-pairwise-edist-eq.md) | 58 | `result-track:ad33aa1bef6ba6045fc020202819a537e6478d2e22eee481c3e2a494a091e2ff` |
-| 4 | `lemma` | [refl](../../../../GeneralTopology/CongruenceNamespaced.lean/declarations/refl.md) | 82 | `result-track:70e4a79f1f9b461c187c1fadf97ff4f65d03117773ffc26a16718d86b7bad831` |
-| 5 | `lemma` | [symm](../../../../GeneralTopology/CongruenceNamespaced.lean/declarations/symm.md) | 84 | `result-track:1c080def1a7779c51481d9c357b99d30630dfffa46f4f8dcce325a8fe73121da` |
-| 6 | `lemma` | [Congruence Namespaced](../../../../GeneralTopology/CongruenceNamespaced.lean/declarations/congruent-comm.md) | 86 | `result-track:e56a530037876dd6223069f6599d2c6282e4d1a9b16815ca61d7e963a89328f0` |
-| 7 | `lemma` | [trans](../../../../GeneralTopology/CongruenceNamespaced.lean/declarations/trans.md) | 89 | `result-track:be6c35e668e057553e84d14819d9d354ecc7cd383460addb2673ca412af32f1c` |
-| 8 | `lemma` | [index_map](../../../../GeneralTopology/CongruenceNamespaced.lean/declarations/index-map.md) | 93 | `result-track:8a53acff443b4acb2b3721140a948bec75fc99dd79d099345ae8771b3f3fcfb5` |
-| 9 | `lemma` | [index_equiv](../../../../GeneralTopology/CongruenceNamespaced.lean/declarations/index-equiv.md) | 97 | `result-track:26b89aa4ab69446b6c4823f5aad9dc2c4f670fd19e5db54d5099c76fa5029034` |
-| 10 | `lemma` | [congruent_iff_nndist_eq](../../../../GeneralTopology/CongruenceNamespaced.lean/declarations/congruent-iff-nndist-eq.md) | 112 | `result-track:aa3751c30edb7e275653ec831a05debabe35c58016958b93b2474bab7287ac3e` |
-| 11 | `lemma` | [congruent_iff_pairwise_nndist_eq](../../../../GeneralTopology/CongruenceNamespaced.lean/declarations/congruent-iff-pairwise-nndist-eq.md) | 118 | `result-track:6b1401546abc14dcb8b51db40db7be426d157d283c0de86f787ce3981aa59d5d` |
-| 12 | `lemma` | [congruent_iff_dist_eq](../../../../GeneralTopology/CongruenceNamespaced.lean/declarations/congruent-iff-dist-eq.md) | 124 | `result-track:128174d33e8b64196e70a0ba33fa3dcc7fdecd8a2b32ac21796d7586e62f09f0` |
-| 13 | `lemma` | [congruent_iff_pairwise_dist_eq](../../../../GeneralTopology/CongruenceNamespaced.lean/declarations/congruent-iff-pairwise-dist-eq.md) | 131 | `result-track:e72195a994a599baed19f435c29922f8100f16e6844618f4b4fbb4c424cfacd7` |
+| 1 | `def` | [Congruent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CongruenceNamespaced.lean/declarations/congruent.md) | 45 | `declaration-track:c8423068a64647dff8725706cdf689d536bc885f84b76d911705b91a0e72eee3` |
+| 2 | `lemma` | [congruent_iff_edist_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CongruenceNamespaced.lean/declarations/congruent-iff-edist-eq.md) | 52 | `result-track:4d245f453d3032f7a71b8374df641572c7af3fd4761c48f7d80aa6a945a424cd` |
+| 3 | `lemma` | [congruent_iff_pairwise_edist_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CongruenceNamespaced.lean/declarations/congruent-iff-pairwise-edist-eq.md) | 58 | `result-track:ad33aa1bef6ba6045fc020202819a537e6478d2e22eee481c3e2a494a091e2ff` |
+| 4 | `lemma` | [refl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CongruenceNamespaced.lean/declarations/refl.md) | 82 | `result-track:70e4a79f1f9b461c187c1fadf97ff4f65d03117773ffc26a16718d86b7bad831` |
+| 5 | `lemma` | [symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CongruenceNamespaced.lean/declarations/symm.md) | 84 | `result-track:1c080def1a7779c51481d9c357b99d30630dfffa46f4f8dcce325a8fe73121da` |
+| 6 | `lemma` | [Congruence Namespaced](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CongruenceNamespaced.lean/declarations/congruent-comm.md) | 86 | `result-track:e56a530037876dd6223069f6599d2c6282e4d1a9b16815ca61d7e963a89328f0` |
+| 7 | `lemma` | [trans](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CongruenceNamespaced.lean/declarations/trans.md) | 89 | `result-track:be6c35e668e057553e84d14819d9d354ecc7cd383460addb2673ca412af32f1c` |
+| 8 | `lemma` | [index_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CongruenceNamespaced.lean/declarations/index-map.md) | 93 | `result-track:8a53acff443b4acb2b3721140a948bec75fc99dd79d099345ae8771b3f3fcfb5` |
+| 9 | `lemma` | [index_equiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CongruenceNamespaced.lean/declarations/index-equiv.md) | 97 | `result-track:26b89aa4ab69446b6c4823f5aad9dc2c4f670fd19e5db54d5099c76fa5029034` |
+| 10 | `lemma` | [congruent_iff_nndist_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CongruenceNamespaced.lean/declarations/congruent-iff-nndist-eq.md) | 112 | `result-track:aa3751c30edb7e275653ec831a05debabe35c58016958b93b2474bab7287ac3e` |
+| 11 | `lemma` | [congruent_iff_pairwise_nndist_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CongruenceNamespaced.lean/declarations/congruent-iff-pairwise-nndist-eq.md) | 118 | `result-track:6b1401546abc14dcb8b51db40db7be426d157d283c0de86f787ce3981aa59d5d` |
+| 12 | `lemma` | [congruent_iff_dist_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CongruenceNamespaced.lean/declarations/congruent-iff-dist-eq.md) | 124 | `result-track:128174d33e8b64196e70a0ba33fa3dcc7fdecd8a2b32ac21796d7586e62f09f0` |
+| 13 | `lemma` | [congruent_iff_pairwise_dist_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CongruenceNamespaced.lean/declarations/congruent-iff-pairwise-dist-eq.md) | 131 | `result-track:e72195a994a599baed19f435c29922f8100f16e6844618f4b4fbb4c424cfacd7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

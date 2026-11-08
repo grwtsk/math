@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceTriangularSignObstructionNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceTriangularSignObstructionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceTriangularSignObstructionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceTriangularSignObstructionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [attenuatedCorrelation](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceTriangularSignObstructionNamespaced.lean/declarations/attenuatedcorrelation.md) | 27 | `declaration-track:51699ce8122e17c1a1d6cb69e102f810218a37cb8b589bff6dfa8c3d2a21c631` |
-| 2 | `theorem` | [attenuation_preserves_negative](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceTriangularSignObstructionNamespaced.lean/declarations/attenuation-preserves-negative.md) | 30 | `result-track:0b3fc112702edb566b904cfe82c66e2feae6de6768da8cbea1bcea62b591eb02` |
-| 3 | `theorem` | [no_real_squared_kernel](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceTriangularSignObstructionNamespaced.lean/declarations/no-real-squared-kernel.md) | 44 | `result-track:7cdad29438ed9486d971afd96a24e21ec325d65e07d43558ec70d0e1357bc894` |
+| 1 | `def` | [attenuatedCorrelation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceTriangularSignObstructionNamespaced.lean/declarations/attenuatedcorrelation.md) | 27 | `declaration-track:51699ce8122e17c1a1d6cb69e102f810218a37cb8b589bff6dfa8c3d2a21c631` |
+| 2 | `theorem` | [attenuation_preserves_negative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceTriangularSignObstructionNamespaced.lean/declarations/attenuation-preserves-negative.md) | 30 | `result-track:0b3fc112702edb566b904cfe82c66e2feae6de6768da8cbea1bcea62b591eb02` |
+| 3 | `theorem` | [no_real_squared_kernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceTriangularSignObstructionNamespaced.lean/declarations/no-real-squared-kernel.md) | 44 | `result-track:7cdad29438ed9486d971afd96a24e21ec325d65e07d43558ec70d0e1357bc894` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompactSurfaceNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompactSurfaceNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompactSurfaceNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompactSurfaceNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [SourceTreeSurface](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompactSurfaceNamespaced.lean/declarations/sourcetreesurface.md) | 16 | `declaration-track:5756947e7cdc0e1b65e901b7d95316a7e95c76c5f7d68994c05bf3362ce9fd89` |
-| 2 | `def` | [SourceTreeSurface.compactModule](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompactSurfaceNamespaced.lean/declarations/sourcetreesurface-compactmodule.md) | 26 | `declaration-track:7fb94fb2bd36aa7fe1af45d2b6aa42a45ff769cb510cc607a864ab798cdc4a4f` |
-| 3 | `theorem` | [sourceTreeSurfaces_contract](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompactSurfaceNamespaced.lean/declarations/sourcetreesurfaces-contract.md) | 36 | `result-track:5dd4197dd5014b08da5209d62c6764b7cbddf81d430a6c0c1c845d4a76c625fb` |
+| 1 | `inductive` | [SourceTreeSurface](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompactSurfaceNamespaced.lean/declarations/sourcetreesurface.md) | 16 | `declaration-track:5756947e7cdc0e1b65e901b7d95316a7e95c76c5f7d68994c05bf3362ce9fd89` |
+| 2 | `def` | [SourceTreeSurface.compactModule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompactSurfaceNamespaced.lean/declarations/sourcetreesurface-compactmodule.md) | 26 | `declaration-track:7fb94fb2bd36aa7fe1af45d2b6aa42a45ff769cb510cc607a864ab798cdc4a4f` |
+| 3 | `theorem` | [sourceTreeSurfaces_contract](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompactSurfaceNamespaced.lean/declarations/sourcetreesurfaces-contract.md) | 36 | `result-track:5dd4197dd5014b08da5209d62c6764b7cbddf81d430a6c0c1c845d4a76c625fb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

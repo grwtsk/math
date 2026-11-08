@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MobiusUnitBudgetNamespaced.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MobiusUnitBudgetNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MobiusUnitBudgetNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MobiusUnitBudgetNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [reciprocal_floor_identity](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MobiusUnitBudgetNamespaced.lean/declarations/reciprocal-floor-identity.md) | 20 | `result-track:bbbb05e0334ef652f689a8b9833dae3e49a0efc71cb39f6e4c89b0af080fb4bf` |
-| 2 | `theorem` | [mobiusReciprocalSum_abs_le_one](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MobiusUnitBudgetNamespaced.lean/declarations/mobiusreciprocalsum-abs-le-one.md) | 40 | `result-track:74b860affc48bad2395efa16633926f2edb5b3a79c94c058eb877a0143d72e3f` |
+| 1 | `theorem` | [reciprocal_floor_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MobiusUnitBudgetNamespaced.lean/declarations/reciprocal-floor-identity.md) | 20 | `result-track:bbbb05e0334ef652f689a8b9833dae3e49a0efc71cb39f6e4c89b0af080fb4bf` |
+| 2 | `theorem` | [mobiusReciprocalSum_abs_le_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MobiusUnitBudgetNamespaced.lean/declarations/mobiusreciprocalsum-abs-le-one.md) | 40 | `result-track:74b860affc48bad2395efa16633926f2edb5b3a79c94c058eb877a0143d72e3f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

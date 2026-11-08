@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MellinNormalizedDyadicPackingControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MellinNormalizedDyadicPackingControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MellinNormalizedDyadicPackingControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MellinNormalizedDyadicPackingControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.MellinNormalizedDyadicPacking`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MellinNormalizedDyadicPacking.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.MellinNormalizedDyadicPacking`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MellinNormalizedDyadicPacking.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [normalized_action_is_uniformly_bounded](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MellinNormalizedDyadicPackingControls.lean/declarations/normalized-action-is-uniformly-bounded.md) | 14 | `result-track:7c82893cf0f815c626235d848b298a8864aa3536aea0220d76817ebd5656e3fb` |
-| 2 | `theorem` | [normalized_quartic_is_positive](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MellinNormalizedDyadicPackingControls.lean/declarations/normalized-quartic-is-positive.md) | 19 | `result-track:5a50d7fb2bf43b8f47de234978b465e85b3c968b0a2c5d052c36a6a33a3db0fc` |
+| 1 | `theorem` | [normalized_action_is_uniformly_bounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MellinNormalizedDyadicPackingControls.lean/declarations/normalized-action-is-uniformly-bounded.md) | 14 | `result-track:7c82893cf0f815c626235d848b298a8864aa3536aea0220d76817ebd5656e3fb` |
+| 2 | `theorem` | [normalized_quartic_is_positive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MellinNormalizedDyadicPackingControls.lean/declarations/normalized-quartic-is-positive.md) | 19 | `result-track:5a50d7fb2bf43b8f47de234978b465e85b3c968b0a2c5d052c36a6a33a3db0fc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/RingSemiconj.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/RingSemiconj.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingSemiconj.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingSemiconj.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [add_right](../../../../AssociativeRingsAndAlgebras/RingSemiconj.lean/declarations/add-right.md) | 31 | `result-track:8c0ed5fd600bb183a565db4f19d008062bd1aa1dc0bcdb493f44f6314b77c763` |
-| 2 | `theorem` | [add_left](../../../../AssociativeRingsAndAlgebras/RingSemiconj.lean/declarations/add-left.md) | 36 | `result-track:159303e40ffdb4c6764befdf049d0e5460941e90bc987487030329eb2e170cc6` |
-| 3 | `theorem` | [neg_right](../../../../AssociativeRingsAndAlgebras/RingSemiconj.lean/declarations/neg-right.md) | 44 | `result-track:f5ec35696ea9621520493b4385c33a85b154aaffa1599cc31f8713e37b4d1648` |
-| 4 | `theorem` | [neg_right_iff](../../../../AssociativeRingsAndAlgebras/RingSemiconj.lean/declarations/neg-right-iff.md) | 48 | `result-track:eb300b05c5ab6f91093aa767b811c270fbfab75f053968928bbd779c2dfbecab` |
-| 5 | `theorem` | [neg_left](../../../../AssociativeRingsAndAlgebras/RingSemiconj.lean/declarations/neg-left.md) | 51 | `result-track:901d357715794c715453e0eef649a026ea12f716a5a2385582a3079eb2b240dc` |
-| 6 | `theorem` | [neg_left_iff](../../../../AssociativeRingsAndAlgebras/RingSemiconj.lean/declarations/neg-left-iff.md) | 55 | `result-track:75edc8dd36b6c22b36694e0958fc97975ef590f68932ae81c975fe2577e1a618` |
-| 7 | `theorem` | [neg_one_right](../../../../AssociativeRingsAndAlgebras/RingSemiconj.lean/declarations/neg-one-right.md) | 64 | `result-track:6385224bfbf9f39b78e566c1b2d4a0ac3dc92f1f38562910fb61f94d40993aa4` |
-| 8 | `theorem` | [neg_one_left](../../../../AssociativeRingsAndAlgebras/RingSemiconj.lean/declarations/neg-one-left.md) | 66 | `result-track:2436de0637738e5eee6186f0daddf188abcc1a4cb3b14822877505682a973b60` |
-| 9 | `theorem` | [sub_right](../../../../AssociativeRingsAndAlgebras/RingSemiconj.lean/declarations/sub-right.md) | 75 | `result-track:4d15f87d376e3ac45e09110c09195b24294c31c9c5668fcb00b978db9da55694` |
-| 10 | `theorem` | [sub_left](../../../../AssociativeRingsAndAlgebras/RingSemiconj.lean/declarations/sub-left.md) | 80 | `result-track:916e59cd6ff025b9b024ae0efc1a3d6192ccf3c669897586e0829d8467ea010e` |
+| 1 | `theorem` | [add_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingSemiconj.lean/declarations/add-right.md) | 31 | `result-track:8c0ed5fd600bb183a565db4f19d008062bd1aa1dc0bcdb493f44f6314b77c763` |
+| 2 | `theorem` | [add_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingSemiconj.lean/declarations/add-left.md) | 36 | `result-track:159303e40ffdb4c6764befdf049d0e5460941e90bc987487030329eb2e170cc6` |
+| 3 | `theorem` | [neg_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingSemiconj.lean/declarations/neg-right.md) | 44 | `result-track:f5ec35696ea9621520493b4385c33a85b154aaffa1599cc31f8713e37b4d1648` |
+| 4 | `theorem` | [neg_right_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingSemiconj.lean/declarations/neg-right-iff.md) | 48 | `result-track:eb300b05c5ab6f91093aa767b811c270fbfab75f053968928bbd779c2dfbecab` |
+| 5 | `theorem` | [neg_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingSemiconj.lean/declarations/neg-left.md) | 51 | `result-track:901d357715794c715453e0eef649a026ea12f716a5a2385582a3079eb2b240dc` |
+| 6 | `theorem` | [neg_left_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingSemiconj.lean/declarations/neg-left-iff.md) | 55 | `result-track:75edc8dd36b6c22b36694e0958fc97975ef590f68932ae81c975fe2577e1a618` |
+| 7 | `theorem` | [neg_one_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingSemiconj.lean/declarations/neg-one-right.md) | 64 | `result-track:6385224bfbf9f39b78e566c1b2d4a0ac3dc92f1f38562910fb61f94d40993aa4` |
+| 8 | `theorem` | [neg_one_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingSemiconj.lean/declarations/neg-one-left.md) | 66 | `result-track:2436de0637738e5eee6186f0daddf188abcc1a4cb3b14822877505682a973b60` |
+| 9 | `theorem` | [sub_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingSemiconj.lean/declarations/sub-right.md) | 75 | `result-track:4d15f87d376e3ac45e09110c09195b24294c31c9c5668fcb00b978db9da55694` |
+| 10 | `theorem` | [sub_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingSemiconj.lean/declarations/sub-left.md) | 80 | `result-track:916e59cd6ff025b9b024ae0efc1a3d6192ccf3c669897586e0829d8467ea010e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

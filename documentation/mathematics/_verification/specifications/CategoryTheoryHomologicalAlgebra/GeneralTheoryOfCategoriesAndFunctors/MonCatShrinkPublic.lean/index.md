@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MonCatShrinkPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MonCatShrinkPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MonCatShrinkPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MonCatShrinkPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MonCatShrinkPublic.lean/declarations/instance.md) | 26 | `declaration-track:7006cd673112ad89a71551e40c4a9348b6211ab1b2608e917a8e762c1fd21728` |
-| 2 | `def` | [MonCat.shrinkFunctor](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MonCatShrinkPublic.lean/declarations/moncat-shrinkfunctor.md) | 33 | `declaration-track:29fd12ad751461bc2685b15e33e74d2296ffdb9e624c2134b2fb5344ea9f43a5` |
-| 3 | `def` | [MonCat.shrinkFunctorMap](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MonCatShrinkPublic.lean/declarations/moncat-shrinkfunctormap.md) | 42 | `declaration-track:baa56a8644bcc105dcc75e2069a4ef5e00fdd142ef3061157676919fe21d9611` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MonCatShrinkPublic.lean/declarations/instance.md) | 26 | `declaration-track:7006cd673112ad89a71551e40c4a9348b6211ab1b2608e917a8e762c1fd21728` |
+| 2 | `def` | [MonCat.shrinkFunctor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MonCatShrinkPublic.lean/declarations/moncat-shrinkfunctor.md) | 33 | `declaration-track:29fd12ad751461bc2685b15e33e74d2296ffdb9e624c2134b2fb5344ea9f43a5` |
+| 3 | `def` | [MonCat.shrinkFunctorMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MonCatShrinkPublic.lean/declarations/moncat-shrinkfunctormap.md) | 42 | `declaration-track:baa56a8644bcc105dcc75e2069a4ef5e00fdd142ef3061157676919fe21d9611` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

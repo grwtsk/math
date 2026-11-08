@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FinitePresentationNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FinitePresentationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FinitePresentationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FinitePresentationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,11 +62,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [RingHom.EssFiniteType.exists_comp_map_eq_of_isColimit](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FinitePresentationNamespaced.lean/declarations/ringhom-essfinitetype-exists-comp-map-eq-of-iscolimit.md) | 47 | `result-track:3f45bc822cb0fcef25cba9e26599289b5ac233064ffbf2b21dbf49327a5fabd7` |
-| 2 | `lemma` | [RingHom.EssFiniteType.exists_eq_comp_ι_app_of_isColimit](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FinitePresentationNamespaced.lean/declarations/ringhom-essfinitetype-exists-eq-comp-app-of-iscolimit.md) | 81 | `result-track:c2521aaebdfdc0789444f40558d9491b7d85731babee2aca4b26249a7f5cf721` |
-| 3 | `lemma` | [preservesColimit_coyoneda_of_finitePresentation](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FinitePresentationNamespaced.lean/declarations/preservescolimit-coyoneda-of-finitepresentation.md) | 142 | `result-track:fc770d8730b2d61c3f60ca40d0ab7494d7f070a12e9ce8f2bc3b42b699436523` |
-| 4 | `lemma` | [preservesFilteredColimits_coyoneda](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FinitePresentationNamespaced.lean/declarations/preservesfilteredcolimits-coyoneda.md) | 164 | `result-track:6978b8a9be162900d92ab1bb1f6b4c063715b5f734a31fc3796435a286ce400c` |
-| 5 | `lemma` | [isFinitelyPresentable](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FinitePresentationNamespaced.lean/declarations/isfinitelypresentable.md) | 169 | `result-track:ab8e1f89357dc7da2fab5678d06dd5fb826f96f1cc133aaeb5aaa7f054acabd6` |
+| 1 | `lemma` | [RingHom.EssFiniteType.exists_comp_map_eq_of_isColimit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FinitePresentationNamespaced.lean/declarations/ringhom-essfinitetype-exists-comp-map-eq-of-iscolimit.md) | 47 | `result-track:3f45bc822cb0fcef25cba9e26599289b5ac233064ffbf2b21dbf49327a5fabd7` |
+| 2 | `lemma` | [RingHom.EssFiniteType.exists_eq_comp_ι_app_of_isColimit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FinitePresentationNamespaced.lean/declarations/ringhom-essfinitetype-exists-eq-comp-app-of-iscolimit.md) | 81 | `result-track:c2521aaebdfdc0789444f40558d9491b7d85731babee2aca4b26249a7f5cf721` |
+| 3 | `lemma` | [preservesColimit_coyoneda_of_finitePresentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FinitePresentationNamespaced.lean/declarations/preservescolimit-coyoneda-of-finitepresentation.md) | 142 | `result-track:fc770d8730b2d61c3f60ca40d0ab7494d7f070a12e9ce8f2bc3b42b699436523` |
+| 4 | `lemma` | [preservesFilteredColimits_coyoneda](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FinitePresentationNamespaced.lean/declarations/preservesfilteredcolimits-coyoneda.md) | 164 | `result-track:6978b8a9be162900d92ab1bb1f6b4c063715b5f734a31fc3796435a286ce400c` |
+| 5 | `lemma` | [isFinitelyPresentable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FinitePresentationNamespaced.lean/declarations/isfinitelypresentable.md) | 169 | `result-track:ab8e1f89357dc7da2fab5678d06dd5fb826f96f1cc133aaeb5aaa7f054acabd6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

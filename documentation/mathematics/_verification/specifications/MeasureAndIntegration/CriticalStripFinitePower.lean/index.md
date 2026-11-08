@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CriticalStripFinitePower.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CriticalStripFinitePower.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripFinitePower.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripFinitePower.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripMellinBounds`](../../../../MeasureAndIntegration/CriticalStripMellinBounds.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripMellinBounds`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripMellinBounds.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.NumberTheory.AbelSummation` — import line 5; external provider; requires a separately pinned dependency.
 - `Mathlib.Analysis.SpecialFunctions.Integrals.Basic` — import line 6; external provider; requires a separately pinned dependency.
 
@@ -59,21 +59,21 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [positiveUnitCoefficient](../../../../MeasureAndIntegration/CriticalStripFinitePower.lean/declarations/positiveunitcoefficient.md) | 31 | `declaration-track:46528f23b3551e6daf87554693b09fb110b8f358abde22879ab659a225b43fd2` |
-| 2 | `lemma` | [sum_Icc_zero_eq_sum_Icc_one](../../../../MeasureAndIntegration/CriticalStripFinitePower.lean/declarations/sum-icc-zero-eq-sum-icc-one.md) | 33 | `result-track:6ceb59915f1170aa2083299cc8f2a58714954cd054edba6bc707911aa67eb897` |
-| 3 | `lemma` | [positiveUnitCoefficient_sum](../../../../MeasureAndIntegration/CriticalStripFinitePower.lean/declarations/positiveunitcoefficient-sum.md) | 38 | `result-track:4be6483bd79c184edd06a36871d110a20f5cf157a9488287ae68834d85455b23` |
-| 4 | `def` | [finiteDirichletPowerSum](../../../../MeasureAndIntegration/CriticalStripFinitePower.lean/declarations/finitedirichletpowersum.md) | 51 | `declaration-track:a974bd420dd64717bb676b4a46106c0df1b2ae29091e3ca549d7af2f50474bbe` |
-| 5 | `def` | [finitePowerPoleModel](../../../../MeasureAndIntegration/CriticalStripFinitePower.lean/declarations/finitepowerpolemodel.md) | 55 | `declaration-track:a9b8a641eb89919b2831d678ecb93426083d76b55dd96b1c96ab099cf4d8c5e8` |
-| 6 | `theorem` | [finitePowerPoleModel_at_one](../../../../MeasureAndIntegration/CriticalStripFinitePower.lean/declarations/finitepowerpolemodel-at-one.md) | 58 | `result-track:3ad450b4ccbdaef109292f08ae14ad3d89fee5ebdcd4e123d55f6184b2f70462` |
-| 7 | `theorem` | [finitePowerPoleModel_cutoff_one](../../../../MeasureAndIntegration/CriticalStripFinitePower.lean/declarations/finitepowerpolemodel-cutoff-one.md) | 61 | `result-track:07dd09f61304475c505fe5e2c2063c9cee2c74cfcee316be71df1194fb9bcd8c` |
-| 8 | `lemma` | [nat_neg_cpow_mul](../../../../MeasureAndIntegration/CriticalStripFinitePower.lean/declarations/nat-neg-cpow-mul.md) | 65 | `result-track:a352ff15fedcaf052931791eead105e81cd3f6ccef0a1834c8498bf387d68618` |
-| 9 | `theorem` | [finiteDirichletPowerSum_abel](../../../../MeasureAndIntegration/CriticalStripFinitePower.lean/declarations/finitedirichletpowersum-abel.md) | 76 | `result-track:fc6eec9686c80e123aaa073ebaf413359510f9358d2b09e1532be5085103c161` |
-| 10 | `lemma` | [finite_floor_integral_eq](../../../../MeasureAndIntegration/CriticalStripFinitePower.lean/declarations/finite-floor-integral-eq.md) | 128 | `result-track:9d2729761aa97234c771f2480d32a484552af04fa4bf2c34158ad16a12364459` |
-| 11 | `theorem` | [truncatedPoleModel_eq_finitePower](../../../../MeasureAndIntegration/CriticalStripFinitePower.lean/declarations/truncatedpolemodel-eq-finitepower.md) | 167 | `result-track:32106ffa730bca59ae6a7842b6af0ec24f72c777d514678012035c6f61300d4b` |
-| 12 | `theorem` | [finitePower_source_residual](../../../../MeasureAndIntegration/CriticalStripFinitePower.lean/declarations/finitepower-source-residual.md) | 181 | `result-track:04bdfb54abbdc1b3b9e12a58f8421d77c9f571e3aa0293c29a6487ab0e719c52` |
-| 13 | `theorem` | [finitePower_source_error](../../../../MeasureAndIntegration/CriticalStripFinitePower.lean/declarations/finitepower-source-error.md) | 189 | `result-track:f994ea638725c655f42f31536e45626ed701bb3b23c3c92c892c1330233c7a4c` |
-| 14 | `theorem` | [finitePower_source_error_uniform](../../../../MeasureAndIntegration/CriticalStripFinitePower.lean/declarations/finitepower-source-error-uniform.md) | 197 | `result-track:6f5620e4809dfdb62224e15387e5e71031239f0adb99f91c00cf8d46f406fa5e` |
-| 15 | `theorem` | [endpoint_term_cannot_be_dropped](../../../../MeasureAndIntegration/CriticalStripFinitePower.lean/declarations/endpoint-term-cannot-be-dropped.md) | 205 | `result-track:292d353835a0059128b54b0494ffd6f6795d86a49168e55ea942a6eaa21b7af6` |
+| 1 | `def` | [positiveUnitCoefficient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripFinitePower.lean/declarations/positiveunitcoefficient.md) | 31 | `declaration-track:46528f23b3551e6daf87554693b09fb110b8f358abde22879ab659a225b43fd2` |
+| 2 | `lemma` | [sum_Icc_zero_eq_sum_Icc_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripFinitePower.lean/declarations/sum-icc-zero-eq-sum-icc-one.md) | 33 | `result-track:6ceb59915f1170aa2083299cc8f2a58714954cd054edba6bc707911aa67eb897` |
+| 3 | `lemma` | [positiveUnitCoefficient_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripFinitePower.lean/declarations/positiveunitcoefficient-sum.md) | 38 | `result-track:4be6483bd79c184edd06a36871d110a20f5cf157a9488287ae68834d85455b23` |
+| 4 | `def` | [finiteDirichletPowerSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripFinitePower.lean/declarations/finitedirichletpowersum.md) | 51 | `declaration-track:a974bd420dd64717bb676b4a46106c0df1b2ae29091e3ca549d7af2f50474bbe` |
+| 5 | `def` | [finitePowerPoleModel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripFinitePower.lean/declarations/finitepowerpolemodel.md) | 55 | `declaration-track:a9b8a641eb89919b2831d678ecb93426083d76b55dd96b1c96ab099cf4d8c5e8` |
+| 6 | `theorem` | [finitePowerPoleModel_at_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripFinitePower.lean/declarations/finitepowerpolemodel-at-one.md) | 58 | `result-track:3ad450b4ccbdaef109292f08ae14ad3d89fee5ebdcd4e123d55f6184b2f70462` |
+| 7 | `theorem` | [finitePowerPoleModel_cutoff_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripFinitePower.lean/declarations/finitepowerpolemodel-cutoff-one.md) | 61 | `result-track:07dd09f61304475c505fe5e2c2063c9cee2c74cfcee316be71df1194fb9bcd8c` |
+| 8 | `lemma` | [nat_neg_cpow_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripFinitePower.lean/declarations/nat-neg-cpow-mul.md) | 65 | `result-track:a352ff15fedcaf052931791eead105e81cd3f6ccef0a1834c8498bf387d68618` |
+| 9 | `theorem` | [finiteDirichletPowerSum_abel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripFinitePower.lean/declarations/finitedirichletpowersum-abel.md) | 76 | `result-track:fc6eec9686c80e123aaa073ebaf413359510f9358d2b09e1532be5085103c161` |
+| 10 | `lemma` | [finite_floor_integral_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripFinitePower.lean/declarations/finite-floor-integral-eq.md) | 128 | `result-track:9d2729761aa97234c771f2480d32a484552af04fa4bf2c34158ad16a12364459` |
+| 11 | `theorem` | [truncatedPoleModel_eq_finitePower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripFinitePower.lean/declarations/truncatedpolemodel-eq-finitepower.md) | 167 | `result-track:32106ffa730bca59ae6a7842b6af0ec24f72c777d514678012035c6f61300d4b` |
+| 12 | `theorem` | [finitePower_source_residual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripFinitePower.lean/declarations/finitepower-source-residual.md) | 181 | `result-track:04bdfb54abbdc1b3b9e12a58f8421d77c9f571e3aa0293c29a6487ab0e719c52` |
+| 13 | `theorem` | [finitePower_source_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripFinitePower.lean/declarations/finitepower-source-error.md) | 189 | `result-track:f994ea638725c655f42f31536e45626ed701bb3b23c3c92c892c1330233c7a4c` |
+| 14 | `theorem` | [finitePower_source_error_uniform](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripFinitePower.lean/declarations/finitepower-source-error-uniform.md) | 197 | `result-track:6f5620e4809dfdb62224e15387e5e71031239f0adb99f91c00cf8d46f406fa5e` |
+| 15 | `theorem` | [endpoint_term_cannot_be_dropped](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripFinitePower.lean/declarations/endpoint-term-cannot-be-dropped.md) | 205 | `result-track:292d353835a0059128b54b0494ffd6f6795d86a49168e55ea942a6eaa21b7af6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

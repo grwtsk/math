@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/TransportInvarianceNamespacedRodgersTaoKIndexTransport.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/TransportInvarianceNamespacedRodgersTaoKIndexTransport.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/TransportInvarianceNamespacedRodgersTaoKIndexTransport.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/TransportInvarianceNamespacedRodgersTaoKIndexTransport.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RodgersTaoKIndexTransport](../../../../ProbabilityTheoryAndStochasticProcesses/TransportInvarianceNamespacedRodgersTaoKIndexTransport.lean/declarations/rodgerstaokindextransport.md) | 34 | `declaration-track:89d151ce055e0a292a4466ef19a228d38df1ac423022b1918869f1d2d3232183` |
-| 2 | `theorem` | [rodgers_tao_transport_is_quasi_isomorphism](../../../../ProbabilityTheoryAndStochasticProcesses/TransportInvarianceNamespacedRodgersTaoKIndexTransport.lean/declarations/rodgers-tao-transport-is-quasi-isomorphism.md) | 43 | `result-track:5c22d94317429c9033380a5ac3d55455ea4263502162c2c285e6b426f175100e` |
-| 3 | `theorem` | [rodgers_tao_transport_preserves_euler](../../../../ProbabilityTheoryAndStochasticProcesses/TransportInvarianceNamespacedRodgersTaoKIndexTransport.lean/declarations/rodgers-tao-transport-preserves-euler.md) | 49 | `result-track:392624ea7894aa3550a1b2832161cadb29f6f89ffd94da0b18229866ea7436ba` |
-| 4 | `theorem` | [rodgers_tao_transport_preserves_k_index](../../../../ProbabilityTheoryAndStochasticProcesses/TransportInvarianceNamespacedRodgersTaoKIndexTransport.lean/declarations/rodgers-tao-transport-preserves-k-index.md) | 56 | `result-track:3e8a360b19eb9e63615f909f2c36d015ebb835e5e0a33002515b16535087a1c5` |
+| 1 | `structure` | [RodgersTaoKIndexTransport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/TransportInvarianceNamespacedRodgersTaoKIndexTransport.lean/declarations/rodgerstaokindextransport.md) | 34 | `declaration-track:89d151ce055e0a292a4466ef19a228d38df1ac423022b1918869f1d2d3232183` |
+| 2 | `theorem` | [rodgers_tao_transport_is_quasi_isomorphism](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/TransportInvarianceNamespacedRodgersTaoKIndexTransport.lean/declarations/rodgers-tao-transport-is-quasi-isomorphism.md) | 43 | `result-track:5c22d94317429c9033380a5ac3d55455ea4263502162c2c285e6b426f175100e` |
+| 3 | `theorem` | [rodgers_tao_transport_preserves_euler](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/TransportInvarianceNamespacedRodgersTaoKIndexTransport.lean/declarations/rodgers-tao-transport-preserves-euler.md) | 49 | `result-track:392624ea7894aa3550a1b2832161cadb29f6f89ffd94da0b18229866ea7436ba` |
+| 4 | `theorem` | [rodgers_tao_transport_preserves_k_index](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/TransportInvarianceNamespacedRodgersTaoKIndexTransport.lean/declarations/rodgers-tao-transport-preserves-k-index.md) | 56 | `result-track:3e8a360b19eb9e63615f909f2c36d015ebb835e5e0a33002515b16535087a1c5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

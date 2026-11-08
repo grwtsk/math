@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/PositiveExponentialInterval.lean/index.md) · [Full source](../../../../MeasureAndIntegration/PositiveExponentialInterval.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveExponentialInterval.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveExponentialInterval.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Integration.ExponentialInterval`](../../../../MeasureAndIntegration/IntegrationExponentialInterval.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Analysis.Integration.ExponentialInterval`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntegrationExponentialInterval.lean/index.md) — import line 1; pinned internal source present.
 - `Lean` — import line 2; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../MeasureAndIntegration/PositiveExponentialInterval.lean/declarations/example-source-edition-2.md) | 7 | `declaration-track:e06ca92cad1f0de5ee5068543b2a1af2fa3515c1edbdfcdaa62f3783bb311b97` |
-| 2 | `example` | [(anonymous)](../../../../MeasureAndIntegration/PositiveExponentialInterval.lean/declarations/example.md) | 12 | `declaration-track:9b39c87139eafd5908224fd67d7fac01541fc99fa15b8521c7da077f1bf04494` |
-| 3 | `elab` | [(anonymous)](../../../../MeasureAndIntegration/PositiveExponentialInterval.lean/declarations/elab.md) | 17 | `declaration-track:1439db9c250bbc11f969737e54ed7e194af2772c9b00a5963f68a00b0aa3e01a` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveExponentialInterval.lean/declarations/example-source-edition-2.md) | 7 | `declaration-track:e06ca92cad1f0de5ee5068543b2a1af2fa3515c1edbdfcdaa62f3783bb311b97` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveExponentialInterval.lean/declarations/example.md) | 12 | `declaration-track:9b39c87139eafd5908224fd67d7fac01541fc99fa15b8521c7da077f1bf04494` |
+| 3 | `elab` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveExponentialInterval.lean/declarations/elab.md) | 17 | `declaration-track:1439db9c250bbc11f969737e54ed7e194af2772c9b00a5963f68a00b0aa3e01a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

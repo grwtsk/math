@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SourceWeightedMultiplier.lean/index.md) · [Full source](../../../../GeneralTopology/SourceWeightedMultiplier.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceWeightedMultiplier.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceWeightedMultiplier.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,18 +59,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [boundaryMultiplier](../../../../GeneralTopology/SourceWeightedMultiplier.lean/declarations/boundarymultiplier.md) | 14 | `declaration-track:8bb0f0ece42916a29c44c7a9508908178ac35b4dfc75f6d8dd2a0d29995b2e28` |
-| 2 | `theorem` | [boundaryMultiplier_norm_le](../../../../GeneralTopology/SourceWeightedMultiplier.lean/declarations/boundarymultiplier-norm-le.md) | 18 | `result-track:5ae71f90b28551add2b50f979d3bb1b41842385e1d993b64624564b856ce0535` |
-| 3 | `theorem` | [boundaryMultiplier_measurable](../../../../GeneralTopology/SourceWeightedMultiplier.lean/declarations/boundarymultiplier-measurable.md) | 65 | `result-track:c8909bb549033c9bab6228c90fa716ab2ba22b2a318f9e49ffd779f21d6ee7b7` |
-| 4 | `theorem` | [frequencyProduct_memLp](../../../../GeneralTopology/SourceWeightedMultiplier.lean/declarations/frequencyproduct-memlp.md) | 72 | `result-track:493f96064961f4c3b5bc681d375fe82009216acd48250eba92381e73a76bcfd5` |
-| 5 | `def` | [frequencyVector](../../../../GeneralTopology/SourceWeightedMultiplier.lean/declarations/frequencyvector.md) | 85 | `declaration-track:0a2f77f475a7704bb14e4497d88792c7f4c30df5ab58ce3334334c50dd91e4a7` |
-| 6 | `theorem` | [frequencyVector_ae](../../../../GeneralTopology/SourceWeightedMultiplier.lean/declarations/frequencyvector-ae.md) | 90 | `result-track:0b435969027d5485a375567eb939e6b1f97d50f3810a0af7dddb348105fcd183` |
-| 7 | `theorem` | [frequencyVector_norm_le](../../../../GeneralTopology/SourceWeightedMultiplier.lean/declarations/frequencyvector-norm-le.md) | 96 | `result-track:56d9848986ee5d649cd8d11dcaad46a8dd9484fafd7154c29e82eeec69ce8a9f` |
-| 8 | `def` | [frequencyMultiplier](../../../../GeneralTopology/SourceWeightedMultiplier.lean/declarations/frequencymultiplier.md) | 106 | `declaration-track:e39ce6d82f5812e3a6d48bba46f77f96b6b364912fec735971f5a464676a31c9` |
-| 9 | `theorem` | [frequencyMultiplier_ae](../../../../GeneralTopology/SourceWeightedMultiplier.lean/declarations/frequencymultiplier-ae.md) | 135 | `result-track:490dc10cf7ddd6a0ce3916a52ddd94c501f1de022395acb99f85b2e4b209c15d` |
-| 10 | `def` | [sourceMultiplier](../../../../GeneralTopology/SourceWeightedMultiplier.lean/declarations/sourcemultiplier.md) | 142 | `declaration-track:375eee6cd0285df87eaacc7d0f43e3ed9caf9f352032d04c3ab95dc2d8d8db9e` |
-| 11 | `theorem` | [sourceMultiplier_fourier_ae](../../../../GeneralTopology/SourceWeightedMultiplier.lean/declarations/sourcemultiplier-fourier-ae.md) | 147 | `result-track:a9602a038aed9df641877c4415da860b85ffc831e08b4d4e35bacdd20d7ffe07` |
-| 12 | `theorem` | [sourceMultiplier_norm_le](../../../../GeneralTopology/SourceWeightedMultiplier.lean/declarations/sourcemultiplier-norm-le.md) | 156 | `result-track:207c2b2b400c8e42d594051ee728787c59cdb4ac47e4349e0f9bdb17146cf191` |
+| 1 | `def` | [boundaryMultiplier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceWeightedMultiplier.lean/declarations/boundarymultiplier.md) | 14 | `declaration-track:8bb0f0ece42916a29c44c7a9508908178ac35b4dfc75f6d8dd2a0d29995b2e28` |
+| 2 | `theorem` | [boundaryMultiplier_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceWeightedMultiplier.lean/declarations/boundarymultiplier-norm-le.md) | 18 | `result-track:5ae71f90b28551add2b50f979d3bb1b41842385e1d993b64624564b856ce0535` |
+| 3 | `theorem` | [boundaryMultiplier_measurable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceWeightedMultiplier.lean/declarations/boundarymultiplier-measurable.md) | 65 | `result-track:c8909bb549033c9bab6228c90fa716ab2ba22b2a318f9e49ffd779f21d6ee7b7` |
+| 4 | `theorem` | [frequencyProduct_memLp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceWeightedMultiplier.lean/declarations/frequencyproduct-memlp.md) | 72 | `result-track:493f96064961f4c3b5bc681d375fe82009216acd48250eba92381e73a76bcfd5` |
+| 5 | `def` | [frequencyVector](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceWeightedMultiplier.lean/declarations/frequencyvector.md) | 85 | `declaration-track:0a2f77f475a7704bb14e4497d88792c7f4c30df5ab58ce3334334c50dd91e4a7` |
+| 6 | `theorem` | [frequencyVector_ae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceWeightedMultiplier.lean/declarations/frequencyvector-ae.md) | 90 | `result-track:0b435969027d5485a375567eb939e6b1f97d50f3810a0af7dddb348105fcd183` |
+| 7 | `theorem` | [frequencyVector_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceWeightedMultiplier.lean/declarations/frequencyvector-norm-le.md) | 96 | `result-track:56d9848986ee5d649cd8d11dcaad46a8dd9484fafd7154c29e82eeec69ce8a9f` |
+| 8 | `def` | [frequencyMultiplier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceWeightedMultiplier.lean/declarations/frequencymultiplier.md) | 106 | `declaration-track:e39ce6d82f5812e3a6d48bba46f77f96b6b364912fec735971f5a464676a31c9` |
+| 9 | `theorem` | [frequencyMultiplier_ae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceWeightedMultiplier.lean/declarations/frequencymultiplier-ae.md) | 135 | `result-track:490dc10cf7ddd6a0ce3916a52ddd94c501f1de022395acb99f85b2e4b209c15d` |
+| 10 | `def` | [sourceMultiplier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceWeightedMultiplier.lean/declarations/sourcemultiplier.md) | 142 | `declaration-track:375eee6cd0285df87eaacc7d0f43e3ed9caf9f352032d04c3ab95dc2d8d8db9e` |
+| 11 | `theorem` | [sourceMultiplier_fourier_ae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceWeightedMultiplier.lean/declarations/sourcemultiplier-fourier-ae.md) | 147 | `result-track:a9602a038aed9df641877c4415da860b85ffc831e08b4d4e35bacdd20d7ffe07` |
+| 12 | `theorem` | [sourceMultiplier_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceWeightedMultiplier.lean/declarations/sourcemultiplier-norm-le.md) | 156 | `result-track:207c2b2b400c8e42d594051ee728787c59cdb4ac47e4349e0f9bdb17146cf191` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

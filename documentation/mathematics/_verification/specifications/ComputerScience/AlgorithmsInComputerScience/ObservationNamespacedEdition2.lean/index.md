@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ObservationNamespacedEdition2.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ObservationNamespacedEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ObservationNamespacedEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ObservationNamespacedEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [MotifAuthority](../../../../../ComputerScience/AlgorithmsInComputerScience/ObservationNamespacedEdition2.lean/declarations/motifauthority.md) | 18 | `declaration-track:3008876c0fc8e993f0781817d382304469b696bcda852c3914b6273a042fc5d9` |
-| 2 | `structure` | [MotifObservation](../../../../../ComputerScience/AlgorithmsInComputerScience/ObservationNamespacedEdition2.lean/declarations/motifobservation.md) | 24 | `declaration-track:9fc576cee984c08912f497fbbee7b9717615eb8666dd3192de886923076e77f0` |
-| 3 | `def` | [Valid](../../../../../ComputerScience/AlgorithmsInComputerScience/ObservationNamespacedEdition2.lean/declarations/valid.md) | 38 | `declaration-track:6e5b5ee3be75a5a0ed2a4fcfb2fec987d37cad68a303e040ee0dd49c03bfb685` |
+| 1 | `inductive` | [MotifAuthority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ObservationNamespacedEdition2.lean/declarations/motifauthority.md) | 18 | `declaration-track:3008876c0fc8e993f0781817d382304469b696bcda852c3914b6273a042fc5d9` |
+| 2 | `structure` | [MotifObservation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ObservationNamespacedEdition2.lean/declarations/motifobservation.md) | 24 | `declaration-track:9fc576cee984c08912f497fbbee7b9717615eb8666dd3192de886923076e77f0` |
+| 3 | `def` | [Valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ObservationNamespacedEdition2.lean/declarations/valid.md) | 38 | `declaration-track:6e5b5ee3be75a5a0ed2a4fcfb2fec987d37cad68a303e040ee0dd49c03bfb685` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

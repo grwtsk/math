@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachRationalArcModelCore.lean/index.md) · [Full source](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachRationalArcModelCore.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachRationalArcModelCore.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachRationalArcModelCore.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,9 +46,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Interfaces.GoldbachRationalArcSeparationCore`](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachRationalArcSeparationCore.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Primes.GoldbachRationalArcModelBoundary`](../../../../../MeasureAndIntegration/GoldbachRationalArcModelBoundary.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.NumberTheory.Primes.Checks.GoldbachRationalArcModelControls`](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachRationalArcModelControls.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.Interfaces.GoldbachRationalArcSeparationCore`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachRationalArcSeparationCore.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Primes.GoldbachRationalArcModelBoundary`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GoldbachRationalArcModelBoundary.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Primes.Checks.GoldbachRationalArcModelControls`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachRationalArcModelControls.lean/index.md) — import line 6; pinned internal source present.
 
 ## Top results and three-degree verification metric
 

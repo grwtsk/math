@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/Poisson.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/Poisson.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Poisson.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Poisson.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,15 +59,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [poissonPMFReal](../../../../ProbabilityTheoryAndStochasticProcesses/Poisson.lean/declarations/poissonpmfreal.md) | 34 | `declaration-track:5e05075ad4dacb66d7bb879b84ecbce472237666826dbb46d8fcbceba3922b2f` |
-| 2 | `lemma` | [poissonPMFRealSum](../../../../ProbabilityTheoryAndStochasticProcesses/Poisson.lean/declarations/poissonpmfrealsum.md) | 36 | `result-track:3b5679d600dc176f3195535de09ef44ef8f94b46eb9ab7221e11c7fd2a772c80` |
-| 3 | `lemma` | [poissonPMFReal_pos](../../../../ProbabilityTheoryAndStochasticProcesses/Poisson.lean/declarations/poissonpmfreal-pos.md) | 49 | `result-track:95985f4ca1fafcbda08e7a4aa9c03b2f1963fc95a2573f910a095f33ef864f22` |
-| 4 | `lemma` | [poissonPMFReal_nonneg](../../../../ProbabilityTheoryAndStochasticProcesses/Poisson.lean/declarations/poissonpmfreal-nonneg.md) | 53 | `result-track:4cde8a0873f46ebfe9a048b07d3b07a7574719c890d4032932821de2508f5d4c` |
-| 5 | `def` | [poissonPMF](../../../../ProbabilityTheoryAndStochasticProcesses/Poisson.lean/declarations/poissonpmf.md) | 59 | `declaration-track:3550d264bf602813bfae64f988ae8fb80de1c291c5646d06436de9be8870dcbf` |
-| 6 | `lemma` | [measurable_poissonPMFReal](../../../../ProbabilityTheoryAndStochasticProcesses/Poisson.lean/declarations/measurable-poissonpmfreal.md) | 67 | `result-track:a54c4833d1e8710c3d543d7220cecff5982b560a91b70ed9e8cc74e3f5cf2835` |
-| 7 | `lemma` | [stronglyMeasurable_poissonPMFReal](../../../../ProbabilityTheoryAndStochasticProcesses/Poisson.lean/declarations/stronglymeasurable-poissonpmfreal.md) | 70 | `result-track:4603543b983b6e46cc12c0a7d022f500fbf66d8c94deb9679151864ded3d1b29` |
-| 8 | `def` | [poissonMeasure](../../../../ProbabilityTheoryAndStochasticProcesses/Poisson.lean/declarations/poissonmeasure.md) | 77 | `declaration-track:a6e0df45bc1c619041e506031af2a86bfd1a520ff0501ce535d2a88f395b6cc8` |
-| 9 | `instance` | [isProbabilityMeasurePoisson](../../../../ProbabilityTheoryAndStochasticProcesses/Poisson.lean/declarations/isprobabilitymeasurepoisson.md) | 79 | `declaration-track:a3bb23516b586ec0d359e8f4724ba3a7de4a75e705ad37fd849cd5263e277b35` |
+| 1 | `def` | [poissonPMFReal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Poisson.lean/declarations/poissonpmfreal.md) | 34 | `declaration-track:5e05075ad4dacb66d7bb879b84ecbce472237666826dbb46d8fcbceba3922b2f` |
+| 2 | `lemma` | [poissonPMFRealSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Poisson.lean/declarations/poissonpmfrealsum.md) | 36 | `result-track:3b5679d600dc176f3195535de09ef44ef8f94b46eb9ab7221e11c7fd2a772c80` |
+| 3 | `lemma` | [poissonPMFReal_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Poisson.lean/declarations/poissonpmfreal-pos.md) | 49 | `result-track:95985f4ca1fafcbda08e7a4aa9c03b2f1963fc95a2573f910a095f33ef864f22` |
+| 4 | `lemma` | [poissonPMFReal_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Poisson.lean/declarations/poissonpmfreal-nonneg.md) | 53 | `result-track:4cde8a0873f46ebfe9a048b07d3b07a7574719c890d4032932821de2508f5d4c` |
+| 5 | `def` | [poissonPMF](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Poisson.lean/declarations/poissonpmf.md) | 59 | `declaration-track:3550d264bf602813bfae64f988ae8fb80de1c291c5646d06436de9be8870dcbf` |
+| 6 | `lemma` | [measurable_poissonPMFReal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Poisson.lean/declarations/measurable-poissonpmfreal.md) | 67 | `result-track:a54c4833d1e8710c3d543d7220cecff5982b560a91b70ed9e8cc74e3f5cf2835` |
+| 7 | `lemma` | [stronglyMeasurable_poissonPMFReal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Poisson.lean/declarations/stronglymeasurable-poissonpmfreal.md) | 70 | `result-track:4603543b983b6e46cc12c0a7d022f500fbf66d8c94deb9679151864ded3d1b29` |
+| 8 | `def` | [poissonMeasure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Poisson.lean/declarations/poissonmeasure.md) | 77 | `declaration-track:a6e0df45bc1c619041e506031af2a86bfd1a520ff0501ce535d2a88f395b6cc8` |
+| 9 | `instance` | [isProbabilityMeasurePoisson](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Poisson.lean/declarations/isprobabilitymeasurepoisson.md) | 79 | `declaration-track:a3bb23516b586ec0d359e8f4724ba3a7de4a75e705ad37fd849cd5263e277b35` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CrystallineDiracNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CrystallineDiracNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CrystallineDiracNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CrystallineDiracNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [crystalline_dirac_uses_connection](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CrystallineDiracNamespaced.lean/declarations/crystalline-dirac-uses-connection.md) | 28 | `result-track:bc9cb56ebadc870974413ad76a95e98b313ca795ff142f0a59840cf783372b87` |
-| 2 | `theorem` | [crystalline_dirac_fredholm_analogue](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CrystallineDiracNamespaced.lean/declarations/crystalline-dirac-fredholm-analogue.md) | 36 | `result-track:931030f712f97a8f59df293b08e12d007e384e4536e89137fb2aae23e4f2d04a` |
+| 1 | `theorem` | [crystalline_dirac_uses_connection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CrystallineDiracNamespaced.lean/declarations/crystalline-dirac-uses-connection.md) | 28 | `result-track:bc9cb56ebadc870974413ad76a95e98b313ca795ff142f0a59840cf783372b87` |
+| 2 | `theorem` | [crystalline_dirac_fredholm_analogue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CrystallineDiracNamespaced.lean/declarations/crystalline-dirac-fredholm-analogue.md) | 36 | `result-track:931030f712f97a8f59df293b08e12d007e384e4536e89137fb2aae23e4f2d04a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

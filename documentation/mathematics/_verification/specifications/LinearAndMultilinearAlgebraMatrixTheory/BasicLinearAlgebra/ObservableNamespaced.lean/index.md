@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ObservableNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ObservableNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ObservableNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ObservableNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [HermitianObservable](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ObservableNamespaced.lean/declarations/hermitianobservable.md) | 24 | `declaration-track:ed109179c97bc53b367e154058b72caeb5bc17a6398a7f2d401ab47000b4fe0a` |
-| 2 | `def` | [stateWeight](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ObservableNamespaced.lean/declarations/stateweight.md) | 34 | `declaration-track:a4261f45d31fdfeaf429f94652b825e4cd3d3617f11156427be6f65bcb784980` |
-| 3 | `def` | [observableNumerator](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ObservableNamespaced.lean/declarations/observablenumerator.md) | 40 | `declaration-track:462c3ed1352df3cf1911494c2d9fbb5649e9044de8daccae0bfbd40382e94046` |
-| 4 | `def` | [normalizedExpectation](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ObservableNamespaced.lean/declarations/normalizedexpectation.md) | 50 | `declaration-track:5a2bf437c5f968eae1081d609081ef52d70bd0c352821a0e74f6a85f55c284f2` |
-| 5 | `structure` | [NormalizedStateCertificate](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ObservableNamespaced.lean/declarations/normalizedstatecertificate.md) | 56 | `declaration-track:ceeb2c62d71dfd4f4132cfe4f16e214b1fe3c0830d14a6baa1e8e492677023d0` |
-| 6 | `theorem` | [normalizedExpectation_gauge_invariant](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ObservableNamespaced.lean/declarations/normalizedexpectation-gauge-invariant.md) | 61 | `result-track:a93b5f1bdfcab94550f33920233a264c9bbb9c6e5de44a6af01ca58216e73808` |
+| 1 | `structure` | [HermitianObservable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ObservableNamespaced.lean/declarations/hermitianobservable.md) | 24 | `declaration-track:ed109179c97bc53b367e154058b72caeb5bc17a6398a7f2d401ab47000b4fe0a` |
+| 2 | `def` | [stateWeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ObservableNamespaced.lean/declarations/stateweight.md) | 34 | `declaration-track:a4261f45d31fdfeaf429f94652b825e4cd3d3617f11156427be6f65bcb784980` |
+| 3 | `def` | [observableNumerator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ObservableNamespaced.lean/declarations/observablenumerator.md) | 40 | `declaration-track:462c3ed1352df3cf1911494c2d9fbb5649e9044de8daccae0bfbd40382e94046` |
+| 4 | `def` | [normalizedExpectation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ObservableNamespaced.lean/declarations/normalizedexpectation.md) | 50 | `declaration-track:5a2bf437c5f968eae1081d609081ef52d70bd0c352821a0e74f6a85f55c284f2` |
+| 5 | `structure` | [NormalizedStateCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ObservableNamespaced.lean/declarations/normalizedstatecertificate.md) | 56 | `declaration-track:ceeb2c62d71dfd4f4132cfe4f16e214b1fe3c0830d14a6baa1e8e492677023d0` |
+| 6 | `theorem` | [normalizedExpectation_gauge_invariant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ObservableNamespaced.lean/declarations/normalizedexpectation-gauge-invariant.md) | 61 | `result-track:a93b5f1bdfcab94550f33920233a264c9bbb9c6e5de44a6af01ca58216e73808` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

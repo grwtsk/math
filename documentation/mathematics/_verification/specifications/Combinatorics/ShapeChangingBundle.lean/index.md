@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ShapeChangingBundle.lean/index.md) · [Full source](../../../../Combinatorics/ShapeChangingBundle.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShapeChangingBundle.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShapeChangingBundle.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,20 +61,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [levelShape](../../../../Combinatorics/ShapeChangingBundle.lean/declarations/levelshape.md) | 26 | `declaration-track:0e8624729396da76a0e7dba725ee4d1bc5c99bdb11c5f413d1b4e18af0398fc8` |
-| 2 | `theorem` | [levelShape_rows_succ](../../../../Combinatorics/ShapeChangingBundle.lean/declarations/levelshape-rows-succ.md) | 30 | `result-track:8a1f33198b2687ae0a824f05849c064d170b11422f227f5a3b15b89680790001` |
-| 3 | `theorem` | [levelShape_cols_succ](../../../../Combinatorics/ShapeChangingBundle.lean/declarations/levelshape-cols-succ.md) | 37 | `result-track:5b5c5edfdcccc2473ed64dfba99f32f5a7f469370229018a3fb247278aea1882` |
-| 4 | `structure` | [ShapeChangingState](../../../../Combinatorics/ShapeChangingBundle.lean/declarations/shapechangingstate.md) | 44 | `declaration-track:cd3ee89f2e0de71445a8fa4c8a9a96fccee0037a08cf9bfde32973454c671628` |
-| 5 | `structure` | [ShapeStepPayload](../../../../Combinatorics/ShapeChangingBundle.lean/declarations/shapesteppayload.md) | 50 | `declaration-track:b4b3a4a3b0942e29c32c589a21cc49b4318c41cb6a591644ef702f0b7ed3cd9b` |
-| 6 | `def` | [expandWithShell](../../../../Combinatorics/ShapeChangingBundle.lean/declarations/expandwithshell.md) | 56 | `declaration-track:95f4b7185f04f5f4c12a08baca3ebfc39db53f7fef6454ec67974cbe6e95cd0c` |
-| 7 | `def` | [contractOneStep](../../../../Combinatorics/ShapeChangingBundle.lean/declarations/contractonestep.md) | 68 | `declaration-track:ecd94683f2ae25cb98f3b40828f0d30f915ae874f818e88624451bba6f126fea` |
-| 8 | `theorem` | [contract_expandWithShell_center](../../../../Combinatorics/ShapeChangingBundle.lean/declarations/contract-expandwithshell-center.md) | 78 | `result-track:e0bce291b5e30d0a44eb3333068c3089905de8192f4ad47654c74de24350ece8` |
-| 9 | `theorem` | [contract_expandWithShell_shell](../../../../Combinatorics/ShapeChangingBundle.lean/declarations/contract-expandwithshell-shell.md) | 95 | `result-track:3cfed7a62f9e3183d1ce40f8cab4ba0372647978bd77a5fd575c32caa90bac37` |
-| 10 | `theorem` | [expand_contractOneStep](../../../../Combinatorics/ShapeChangingBundle.lean/declarations/expand-contractonestep.md) | 111 | `result-track:3a4316f9a3295da95c5df2d576ca477c745d572bdc51f041d5a0db880b01375c` |
-| 11 | `theorem` | [shape_changes_of_step](../../../../Combinatorics/ShapeChangingBundle.lean/declarations/shape-changes-of-step.md) | 127 | `result-track:7eae050bb20ffe95274c35e74ef5d46bde42d876761e1f72cf1e196bf8c1dfa2` |
-| 12 | `def` | [catalanShape](../../../../Combinatorics/ShapeChangingBundle.lean/declarations/catalanshape.md) | 136 | `declaration-track:7031f2ed0f379148d109d085c52349172e750cee7dc7c5af9219a41e4fd9e3e5` |
-| 13 | `theorem` | [catalanShape_rows_of_internal_succ](../../../../Combinatorics/ShapeChangingBundle.lean/declarations/catalanshape-rows-of-internal-succ.md) | 141 | `result-track:8cee28a5bce2b2a2f324c756935f62c4197b0aee5811e87f59c9896bf67c42bd` |
-| 14 | `theorem` | [catalanShape_cols_of_internal_succ](../../../../Combinatorics/ShapeChangingBundle.lean/declarations/catalanshape-cols-of-internal-succ.md) | 151 | `result-track:2918d9fffe298e5cb007737081d907220775d3b853d70126edf3322f835b4d0c` |
+| 1 | `def` | [levelShape](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShapeChangingBundle.lean/declarations/levelshape.md) | 26 | `declaration-track:0e8624729396da76a0e7dba725ee4d1bc5c99bdb11c5f413d1b4e18af0398fc8` |
+| 2 | `theorem` | [levelShape_rows_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShapeChangingBundle.lean/declarations/levelshape-rows-succ.md) | 30 | `result-track:8a1f33198b2687ae0a824f05849c064d170b11422f227f5a3b15b89680790001` |
+| 3 | `theorem` | [levelShape_cols_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShapeChangingBundle.lean/declarations/levelshape-cols-succ.md) | 37 | `result-track:5b5c5edfdcccc2473ed64dfba99f32f5a7f469370229018a3fb247278aea1882` |
+| 4 | `structure` | [ShapeChangingState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShapeChangingBundle.lean/declarations/shapechangingstate.md) | 44 | `declaration-track:cd3ee89f2e0de71445a8fa4c8a9a96fccee0037a08cf9bfde32973454c671628` |
+| 5 | `structure` | [ShapeStepPayload](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShapeChangingBundle.lean/declarations/shapesteppayload.md) | 50 | `declaration-track:b4b3a4a3b0942e29c32c589a21cc49b4318c41cb6a591644ef702f0b7ed3cd9b` |
+| 6 | `def` | [expandWithShell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShapeChangingBundle.lean/declarations/expandwithshell.md) | 56 | `declaration-track:95f4b7185f04f5f4c12a08baca3ebfc39db53f7fef6454ec67974cbe6e95cd0c` |
+| 7 | `def` | [contractOneStep](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShapeChangingBundle.lean/declarations/contractonestep.md) | 68 | `declaration-track:ecd94683f2ae25cb98f3b40828f0d30f915ae874f818e88624451bba6f126fea` |
+| 8 | `theorem` | [contract_expandWithShell_center](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShapeChangingBundle.lean/declarations/contract-expandwithshell-center.md) | 78 | `result-track:e0bce291b5e30d0a44eb3333068c3089905de8192f4ad47654c74de24350ece8` |
+| 9 | `theorem` | [contract_expandWithShell_shell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShapeChangingBundle.lean/declarations/contract-expandwithshell-shell.md) | 95 | `result-track:3cfed7a62f9e3183d1ce40f8cab4ba0372647978bd77a5fd575c32caa90bac37` |
+| 10 | `theorem` | [expand_contractOneStep](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShapeChangingBundle.lean/declarations/expand-contractonestep.md) | 111 | `result-track:3a4316f9a3295da95c5df2d576ca477c745d572bdc51f041d5a0db880b01375c` |
+| 11 | `theorem` | [shape_changes_of_step](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShapeChangingBundle.lean/declarations/shape-changes-of-step.md) | 127 | `result-track:7eae050bb20ffe95274c35e74ef5d46bde42d876761e1f72cf1e196bf8c1dfa2` |
+| 12 | `def` | [catalanShape](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShapeChangingBundle.lean/declarations/catalanshape.md) | 136 | `declaration-track:7031f2ed0f379148d109d085c52349172e750cee7dc7c5af9219a41e4fd9e3e5` |
+| 13 | `theorem` | [catalanShape_rows_of_internal_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShapeChangingBundle.lean/declarations/catalanshape-rows-of-internal-succ.md) | 141 | `result-track:8cee28a5bce2b2a2f324c756935f62c4197b0aee5811e87f59c9896bf67c42bd` |
+| 14 | `theorem` | [catalanShape_cols_of_internal_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ShapeChangingBundle.lean/declarations/catalanshape-cols-of-internal-succ.md) | 151 | `result-track:2918d9fffe298e5cb007737081d907220775d3b853d70126edf3322f835b4d0c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

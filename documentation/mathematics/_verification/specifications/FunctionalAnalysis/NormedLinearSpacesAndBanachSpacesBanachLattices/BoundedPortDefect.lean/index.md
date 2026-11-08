@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/BoundedPortDefect.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/BoundedPortDefect.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/BoundedPortDefect.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/BoundedPortDefect.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [defect](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/BoundedPortDefect.lean/declarations/defect.md) | 14 | `declaration-track:6aade85f48595540c27641a568c36479e9b0679d01df1f1abf1b43e51bc08b0b` |
-| 2 | `def` | [Intertwines](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/BoundedPortDefect.lean/declarations/intertwines.md) | 20 | `declaration-track:5ed4bdf20b2f5840c86cdd2f0a0d44316e6d84d0dbed76f1fa81f02148bce38b` |
-| 3 | `theorem` | [intertwines_iff_defect_eq_zero](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/BoundedPortDefect.lean/declarations/intertwines-iff-defect-eq-zero.md) | 25 | `result-track:4d5e8879fbf8204858db1f5337393400b37330aba23ce072ba3ed7c0801f9615` |
-| 4 | `theorem` | [defect_comp](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/BoundedPortDefect.lean/declarations/defect-comp.md) | 31 | `result-track:0758b748442fd08001945ce2cdef32b522de92a10cc8edc6c6153485d514ca74` |
-| 5 | `theorem` | [norm_defect_le](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/BoundedPortDefect.lean/declarations/norm-defect-le.md) | 40 | `result-track:60738955620d0633de831426776672d629bd3da9c74fb5abdfb0f37ab27d3da9` |
-| 6 | `theorem` | [norm_defect_comp_le](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/BoundedPortDefect.lean/declarations/norm-defect-comp-le.md) | 51 | `result-track:38851cbe334e46f18fdc3ebc965fe200e40fe15fafe05e6968d53f1810fc9328` |
-| 7 | `theorem` | [Intertwines.comp](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/BoundedPortDefect.lean/declarations/intertwines-comp.md) | 67 | `result-track:227ae46263210633ce64584d768aedd773f0233d0c3397521c1d1a428a4adcb3` |
+| 1 | `def` | [defect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/BoundedPortDefect.lean/declarations/defect.md) | 14 | `declaration-track:6aade85f48595540c27641a568c36479e9b0679d01df1f1abf1b43e51bc08b0b` |
+| 2 | `def` | [Intertwines](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/BoundedPortDefect.lean/declarations/intertwines.md) | 20 | `declaration-track:5ed4bdf20b2f5840c86cdd2f0a0d44316e6d84d0dbed76f1fa81f02148bce38b` |
+| 3 | `theorem` | [intertwines_iff_defect_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/BoundedPortDefect.lean/declarations/intertwines-iff-defect-eq-zero.md) | 25 | `result-track:4d5e8879fbf8204858db1f5337393400b37330aba23ce072ba3ed7c0801f9615` |
+| 4 | `theorem` | [defect_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/BoundedPortDefect.lean/declarations/defect-comp.md) | 31 | `result-track:0758b748442fd08001945ce2cdef32b522de92a10cc8edc6c6153485d514ca74` |
+| 5 | `theorem` | [norm_defect_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/BoundedPortDefect.lean/declarations/norm-defect-le.md) | 40 | `result-track:60738955620d0633de831426776672d629bd3da9c74fb5abdfb0f37ab27d3da9` |
+| 6 | `theorem` | [norm_defect_comp_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/BoundedPortDefect.lean/declarations/norm-defect-comp-le.md) | 51 | `result-track:38851cbe334e46f18fdc3ebc965fe200e40fe15fafe05e6968d53f1810fc9328` |
+| 7 | `theorem` | [Intertwines.comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/BoundedPortDefect.lean/declarations/intertwines-comp.md) | 67 | `result-track:227ae46263210633ce64584d768aedd773f0233d0c3397521c1d1a428a4adcb3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

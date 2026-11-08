@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/OrderBasicSourceEdition1.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/OrderBasicSourceEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/OrderBasicSourceEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/OrderBasicSourceEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [le.elim](../../../../../NumberTheory/ElementaryNumberTheory/OrderBasicSourceEdition1.lean/declarations/le-elim.md) | 21 | `result-track:c3cf63f85b39729fec2dd9fc1996a02000876928834db05f4bf407ec883de0aa` |
-| 2 | `theorem` | [lt.elim](../../../../../NumberTheory/ElementaryNumberTheory/OrderBasicSourceEdition1.lean/declarations/lt-elim.md) | 26 | `result-track:219b340448f776890b6cb1be3d9270b0f75616866b9a5834f96644568eee7a44` |
-| 3 | `instance` | [instLinearOrder](../../../../../NumberTheory/ElementaryNumberTheory/OrderBasicSourceEdition1.lean/declarations/instlinearorder.md) | 31 | `declaration-track:a70a3172fa773fa835a8e73e936e89d955e8cc30ec1b66bea767a32f73bf9bab` |
-| 4 | `theorem` | [eq_zero_or_eq_zero_of_mul_eq_zero](../../../../../NumberTheory/ElementaryNumberTheory/OrderBasicSourceEdition1.lean/declarations/eq-zero-or-eq-zero-of-mul-eq-zero.md) | 43 | `result-track:e0b2ef98de4bf48a56934f0ab12f0c51e7a91f63e4f86e0aa7c71529f9a62d1a` |
-| 5 | `theorem` | [nonneg_or_nonpos_of_mul_nonneg](../../../../../NumberTheory/ElementaryNumberTheory/OrderBasicSourceEdition1.lean/declarations/nonneg-or-nonpos-of-mul-nonneg.md) | 46 | `result-track:4fb827431620614e857ee082479241ea6bd9667ee9653d4ba73c46550826a722` |
-| 6 | `theorem` | [mul_nonneg_of_nonneg_or_nonpos](../../../../../NumberTheory/ElementaryNumberTheory/OrderBasicSourceEdition1.lean/declarations/mul-nonneg-of-nonneg-or-nonpos.md) | 60 | `result-track:38e0d33b696833d82a5215adb487d389fc6609c4fa4bb2e93253639854cd5af9` |
-| 7 | `theorem` | [mul_nonneg_iff](../../../../../NumberTheory/ElementaryNumberTheory/OrderBasicSourceEdition1.lean/declarations/mul-nonneg-iff.md) | 64 | `result-track:b2f953967e70c8da2f2eca78a3792c99fe9c46ad005787b8610da41ebb9c46af` |
+| 1 | `theorem` | [le.elim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/OrderBasicSourceEdition1.lean/declarations/le-elim.md) | 21 | `result-track:c3cf63f85b39729fec2dd9fc1996a02000876928834db05f4bf407ec883de0aa` |
+| 2 | `theorem` | [lt.elim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/OrderBasicSourceEdition1.lean/declarations/lt-elim.md) | 26 | `result-track:219b340448f776890b6cb1be3d9270b0f75616866b9a5834f96644568eee7a44` |
+| 3 | `instance` | [instLinearOrder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/OrderBasicSourceEdition1.lean/declarations/instlinearorder.md) | 31 | `declaration-track:a70a3172fa773fa835a8e73e936e89d955e8cc30ec1b66bea767a32f73bf9bab` |
+| 4 | `theorem` | [eq_zero_or_eq_zero_of_mul_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/OrderBasicSourceEdition1.lean/declarations/eq-zero-or-eq-zero-of-mul-eq-zero.md) | 43 | `result-track:e0b2ef98de4bf48a56934f0ab12f0c51e7a91f63e4f86e0aa7c71529f9a62d1a` |
+| 5 | `theorem` | [nonneg_or_nonpos_of_mul_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/OrderBasicSourceEdition1.lean/declarations/nonneg-or-nonpos-of-mul-nonneg.md) | 46 | `result-track:4fb827431620614e857ee082479241ea6bd9667ee9653d4ba73c46550826a722` |
+| 6 | `theorem` | [mul_nonneg_of_nonneg_or_nonpos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/OrderBasicSourceEdition1.lean/declarations/mul-nonneg-of-nonneg-or-nonpos.md) | 60 | `result-track:38e0d33b696833d82a5215adb487d389fc6609c4fa4bb2e93253639854cd5af9` |
+| 7 | `theorem` | [mul_nonneg_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/OrderBasicSourceEdition1.lean/declarations/mul-nonneg-iff.md) | 64 | `result-track:b2f953967e70c8da2f2eca78a3792c99fe9c46ad005787b8610da41ebb9c46af` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

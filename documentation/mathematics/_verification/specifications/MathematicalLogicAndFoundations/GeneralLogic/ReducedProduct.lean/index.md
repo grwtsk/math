@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ReducedProduct.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ReducedProduct.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ReducedProduct.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ReducedProduct.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ReducedOrdinalLT](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ReducedProduct.lean/declarations/reducedordinallt.md) | 29 | `declaration-track:18e997d60f6751464f2ebdbc8ecf738d420d5c8dbd9ac24cb66de5a8da67a4d6` |
-| 2 | `theorem` | [reducedOrdinalLT_wellFounded](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ReducedProduct.lean/declarations/reducedordinallt-wellfounded.md) | 33 | `result-track:a844ad633c8ad39a0bdb767e79ff62d4cb23d9b9ec19867f5628e67e62969e51` |
-| 3 | `theorem` | [reducedOrdinalLT_congr](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ReducedProduct.lean/declarations/reducedordinallt-congr.md) | 44 | `result-track:ecc5e8592b220ee74e1b32a0dce59f3328710d94edac23694d41bd12124267a7` |
-| 4 | `def` | [reducedOrdinalSetoid](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ReducedProduct.lean/declarations/reducedordinalsetoid.md) | 56 | `declaration-track:0e13e2e8eb886376fb27f89d0d331a4714590f3978712c6746bec1d0ac99c369` |
-| 5 | `abbrev` | [ReducedOrdinalProduct](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ReducedProduct.lean/declarations/reducedordinalproduct.md) | 62 | `declaration-track:fc6345a7c26667c2d4fb4be09722d881c3f2f4491bf3bfb0cc47863126da173d` |
-| 6 | `def` | [ReducedProductLT](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ReducedProduct.lean/declarations/reducedproductlt.md) | 66 | `declaration-track:a7aaac56918b72f2a8d8710a776a27e5911f89889219e1053b2bf95f21629408` |
-| 7 | `theorem` | [reducedProductLT_wellFounded](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ReducedProduct.lean/declarations/reducedproductlt-wellfounded.md) | 73 | `result-track:338cf002870da7bf0d443451b0a59bac2597757baf8fae26078709793dad4fec` |
+| 1 | `def` | [ReducedOrdinalLT](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ReducedProduct.lean/declarations/reducedordinallt.md) | 29 | `declaration-track:18e997d60f6751464f2ebdbc8ecf738d420d5c8dbd9ac24cb66de5a8da67a4d6` |
+| 2 | `theorem` | [reducedOrdinalLT_wellFounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ReducedProduct.lean/declarations/reducedordinallt-wellfounded.md) | 33 | `result-track:a844ad633c8ad39a0bdb767e79ff62d4cb23d9b9ec19867f5628e67e62969e51` |
+| 3 | `theorem` | [reducedOrdinalLT_congr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ReducedProduct.lean/declarations/reducedordinallt-congr.md) | 44 | `result-track:ecc5e8592b220ee74e1b32a0dce59f3328710d94edac23694d41bd12124267a7` |
+| 4 | `def` | [reducedOrdinalSetoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ReducedProduct.lean/declarations/reducedordinalsetoid.md) | 56 | `declaration-track:0e13e2e8eb886376fb27f89d0d331a4714590f3978712c6746bec1d0ac99c369` |
+| 5 | `abbrev` | [ReducedOrdinalProduct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ReducedProduct.lean/declarations/reducedordinalproduct.md) | 62 | `declaration-track:fc6345a7c26667c2d4fb4be09722d881c3f2f4491bf3bfb0cc47863126da173d` |
+| 6 | `def` | [ReducedProductLT](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ReducedProduct.lean/declarations/reducedproductlt.md) | 66 | `declaration-track:a7aaac56918b72f2a8d8710a776a27e5911f89889219e1053b2bf95f21629408` |
+| 7 | `theorem` | [reducedProductLT_wellFounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ReducedProduct.lean/declarations/reducedproductlt-wellfounded.md) | 73 | `result-track:338cf002870da7bf0d443451b0a59bac2597757baf8fae26078709793dad4fec` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

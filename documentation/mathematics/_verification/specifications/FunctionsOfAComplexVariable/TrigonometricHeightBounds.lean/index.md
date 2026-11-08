@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/TrigonometricHeightBounds.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/TrigonometricHeightBounds.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/TrigonometricHeightBounds.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/TrigonometricHeightBounds.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,11 +62,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [norm_sin_le_exp_abs_im](../../../../FunctionsOfAComplexVariable/TrigonometricHeightBounds.lean/declarations/norm-sin-le-exp-abs-im.md) | 24 | `result-track:cfabb4a614d6c093be5ab6365eb6e8fa9d587b869725121476763df4c037d9eb` |
-| 2 | `theorem` | [norm_cot_ratio_le_three](../../../../FunctionsOfAComplexVariable/TrigonometricHeightBounds.lean/declarations/norm-cot-ratio-le-three.md) | 39 | `result-track:3a66459618514fcfb6f5920bd5db03a281a24ef6b0bc564a33184ef89529d4f8` |
-| 3 | `theorem` | [norm_cot_le_three_of_one_le_im](../../../../FunctionsOfAComplexVariable/TrigonometricHeightBounds.lean/declarations/norm-cot-le-three-of-one-le-im.md) | 54 | `result-track:829363a4f66bf8e02b086b62cdf90310c18e20b89d12aa8c5749d9c8b211ed19` |
-| 4 | `theorem` | [norm_cot_le_three](../../../../FunctionsOfAComplexVariable/TrigonometricHeightBounds.lean/declarations/norm-cot-le-three.md) | 66 | `result-track:8529c31c3a65716177768fb0d32ac9b3d1bb4f180b55b65e0647e7907c046fe1` |
-| 5 | `theorem` | [norm_half_pi_cot_le](../../../../FunctionsOfAComplexVariable/TrigonometricHeightBounds.lean/declarations/norm-half-pi-cot-le.md) | 77 | `result-track:834f2f729337d05b1fa9e3411110584ce51d830321a2c30b9dacb5affa8da75a` |
+| 1 | `theorem` | [norm_sin_le_exp_abs_im](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/TrigonometricHeightBounds.lean/declarations/norm-sin-le-exp-abs-im.md) | 24 | `result-track:cfabb4a614d6c093be5ab6365eb6e8fa9d587b869725121476763df4c037d9eb` |
+| 2 | `theorem` | [norm_cot_ratio_le_three](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/TrigonometricHeightBounds.lean/declarations/norm-cot-ratio-le-three.md) | 39 | `result-track:3a66459618514fcfb6f5920bd5db03a281a24ef6b0bc564a33184ef89529d4f8` |
+| 3 | `theorem` | [norm_cot_le_three_of_one_le_im](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/TrigonometricHeightBounds.lean/declarations/norm-cot-le-three-of-one-le-im.md) | 54 | `result-track:829363a4f66bf8e02b086b62cdf90310c18e20b89d12aa8c5749d9c8b211ed19` |
+| 4 | `theorem` | [norm_cot_le_three](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/TrigonometricHeightBounds.lean/declarations/norm-cot-le-three.md) | 66 | `result-track:8529c31c3a65716177768fb0d32ac9b3d1bb4f180b55b65e0647e7907c046fe1` |
+| 5 | `theorem` | [norm_half_pi_cot_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/TrigonometricHeightBounds.lean/declarations/norm-half-pi-cot-le.md) | 77 | `result-track:834f2f729337d05b1fa9e3411110584ce51d830321a2c30b9dacb5affa8da75a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/HeatCompatibleEndomorphismNamespaced.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/HeatCompatibleEndomorphismNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/HeatCompatibleEndomorphismNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/HeatCompatibleEndomorphismNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [heat_flow_identity_at_zero](../../../../GroupTheoryAndGeneralizations/HeatCompatibleEndomorphismNamespaced.lean/declarations/heat-flow-identity-at-zero.md) | 28 | `result-track:d7bede7949f10b54f6ed99ba2a045d101f08ebfee122e258fe24c9615250cae9` |
-| 2 | `theorem` | [heat_flow_semigroup](../../../../GroupTheoryAndGeneralizations/HeatCompatibleEndomorphismNamespaced.lean/declarations/heat-flow-semigroup.md) | 35 | `result-track:eeb5980ff120a410183eb699ad23e5cd92866c0e262999f1005d4b72e4bf6c84` |
-| 3 | `theorem` | [heat_compatible_commutes](../../../../GroupTheoryAndGeneralizations/HeatCompatibleEndomorphismNamespaced.lean/declarations/heat-compatible-commutes.md) | 42 | `result-track:2b27cbd39475332173369588e73d3b0d20bacb4b1f625565ebe8481a724c594e` |
-| 4 | `theorem` | [heat_compatible_preserves_horizontal](../../../../GroupTheoryAndGeneralizations/HeatCompatibleEndomorphismNamespaced.lean/declarations/heat-compatible-preserves-horizontal.md) | 51 | `result-track:59f07738c3aae914597301a57214754570442425c84ac7b6336cb62d89a8a1e0` |
+| 1 | `theorem` | [heat_flow_identity_at_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/HeatCompatibleEndomorphismNamespaced.lean/declarations/heat-flow-identity-at-zero.md) | 28 | `result-track:d7bede7949f10b54f6ed99ba2a045d101f08ebfee122e258fe24c9615250cae9` |
+| 2 | `theorem` | [heat_flow_semigroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/HeatCompatibleEndomorphismNamespaced.lean/declarations/heat-flow-semigroup.md) | 35 | `result-track:eeb5980ff120a410183eb699ad23e5cd92866c0e262999f1005d4b72e4bf6c84` |
+| 3 | `theorem` | [heat_compatible_commutes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/HeatCompatibleEndomorphismNamespaced.lean/declarations/heat-compatible-commutes.md) | 42 | `result-track:2b27cbd39475332173369588e73d3b0d20bacb4b1f625565ebe8481a724c594e` |
+| 4 | `theorem` | [heat_compatible_preserves_horizontal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/HeatCompatibleEndomorphismNamespaced.lean/declarations/heat-compatible-preserves-horizontal.md) | 51 | `result-track:59f07738c3aae914597301a57214754570442425c84ac7b6336cb62d89a8a1e0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

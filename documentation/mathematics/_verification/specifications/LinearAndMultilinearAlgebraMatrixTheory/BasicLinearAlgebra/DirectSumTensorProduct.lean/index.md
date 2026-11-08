@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DirectSumTensorProduct.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DirectSumTensorProduct.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DirectSumTensorProduct.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DirectSumTensorProduct.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [directSum](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DirectSumTensorProduct.lean/declarations/directsum.md) | 53 | `declaration-track:eee0ff45c43b587f9dcf454ed05b12adb0e02bef9a03a0f708a42f03254d23ef` |
-| 2 | `def` | [directSumLeft](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DirectSumTensorProduct.lean/declarations/directsumleft.md) | 123 | `declaration-track:125203e1c083a4a25c6099e9c049da48a718e859bfff38caecd089f0fa72c458` |
-| 3 | `def` | [directSumRight](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DirectSumTensorProduct.lean/declarations/directsumright.md) | 144 | `declaration-track:55726c45d6d676b7f157f75641fef78909173ca14f0d5e222ebeb4b4357e4c40` |
-| 4 | `theorem` | [directSum_lof_tmul_lof](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DirectSumTensorProduct.lean/declarations/directsum-lof-tmul-lof.md) | 152 | `result-track:af050f63f7f253675a2539c05f42cf38df3db38b8e757a53ae2398fed3e18bd6` |
-| 5 | `theorem` | [directSumLeft_tmul_lof](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DirectSumTensorProduct.lean/declarations/directsumleft-tmul-lof.md) | 159 | `result-track:08da797b202e6c814eb5e60cd652998e68fd16151faf61fc365f8fc74f2b1b60` |
-| 6 | `theorem` | [directSumLeft_symm_lof_tmul](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DirectSumTensorProduct.lean/declarations/directsumleft-symm-lof-tmul.md) | 168 | `result-track:defc29e6866bd0805d7761ed8c27e8b4183fba74cc75178ad46e27bcab3f4853` |
-| 7 | `theorem` | [directSumRight_tmul_lof](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DirectSumTensorProduct.lean/declarations/directsumright-tmul-lof.md) | 175 | `result-track:5842393d1b6c8bba373e92a16322b077df936aad9d67a6732003f1b4a3107bd1` |
-| 8 | `theorem` | [directSumRight_symm_lof_tmul](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DirectSumTensorProduct.lean/declarations/directsumright-symm-lof-tmul.md) | 184 | `result-track:e3c64e95a0ae73603a9d7617a363848a3ec124ce3287992e5e4be200073c91d6` |
+| 1 | `def` | [directSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DirectSumTensorProduct.lean/declarations/directsum.md) | 53 | `declaration-track:eee0ff45c43b587f9dcf454ed05b12adb0e02bef9a03a0f708a42f03254d23ef` |
+| 2 | `def` | [directSumLeft](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DirectSumTensorProduct.lean/declarations/directsumleft.md) | 123 | `declaration-track:125203e1c083a4a25c6099e9c049da48a718e859bfff38caecd089f0fa72c458` |
+| 3 | `def` | [directSumRight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DirectSumTensorProduct.lean/declarations/directsumright.md) | 144 | `declaration-track:55726c45d6d676b7f157f75641fef78909173ca14f0d5e222ebeb4b4357e4c40` |
+| 4 | `theorem` | [directSum_lof_tmul_lof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DirectSumTensorProduct.lean/declarations/directsum-lof-tmul-lof.md) | 152 | `result-track:af050f63f7f253675a2539c05f42cf38df3db38b8e757a53ae2398fed3e18bd6` |
+| 5 | `theorem` | [directSumLeft_tmul_lof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DirectSumTensorProduct.lean/declarations/directsumleft-tmul-lof.md) | 159 | `result-track:08da797b202e6c814eb5e60cd652998e68fd16151faf61fc365f8fc74f2b1b60` |
+| 6 | `theorem` | [directSumLeft_symm_lof_tmul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DirectSumTensorProduct.lean/declarations/directsumleft-symm-lof-tmul.md) | 168 | `result-track:defc29e6866bd0805d7761ed8c27e8b4183fba74cc75178ad46e27bcab3f4853` |
+| 7 | `theorem` | [directSumRight_tmul_lof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DirectSumTensorProduct.lean/declarations/directsumright-tmul-lof.md) | 175 | `result-track:5842393d1b6c8bba373e92a16322b077df936aad9d67a6732003f1b4a3107bd1` |
+| 8 | `theorem` | [directSumRight_symm_lof_tmul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DirectSumTensorProduct.lean/declarations/directsumright-symm-lof-tmul.md) | 184 | `result-track:e3c64e95a0ae73603a9d7617a363848a3ec124ce3287992e5e4be200073c91d6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

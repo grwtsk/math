@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/ClosedValidationAndEvaluation.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/ClosedValidationAndEvaluation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/ClosedValidationAndEvaluation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/ClosedValidationAndEvaluation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/ClosedValidationAndEvaluation.lean/declarations/example-source-edition-2.md) | 28 | `declaration-track:707bb9da77df2fc23ad3ef03b6aca1c6e1fe2b33e4acf0eb2319152c1b774fa7` |
-| 2 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/ClosedValidationAndEvaluation.lean/declarations/example-source-edition-4.md) | 31 | `declaration-track:cb092eec37ba22c87d27a4c7f506b92930e46c54ebaf8fd14e3adb7fa700650e` |
-| 3 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/ClosedValidationAndEvaluation.lean/declarations/example.md) | 34 | `declaration-track:6c558cd088276b6a468db28b1e188820f8b480a038355b1fe7ae81609d76d5af` |
-| 4 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/ClosedValidationAndEvaluation.lean/declarations/example-source-edition-3.md) | 39 | `declaration-track:bd2cf96fcc117ab9b8f21be1a6587279841395a43175e4a6f6bf5f1ec4950a7a` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/ClosedValidationAndEvaluation.lean/declarations/example-source-edition-2.md) | 28 | `declaration-track:707bb9da77df2fc23ad3ef03b6aca1c6e1fe2b33e4acf0eb2319152c1b774fa7` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/ClosedValidationAndEvaluation.lean/declarations/example-source-edition-4.md) | 31 | `declaration-track:cb092eec37ba22c87d27a4c7f506b92930e46c54ebaf8fd14e3adb7fa700650e` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/ClosedValidationAndEvaluation.lean/declarations/example.md) | 34 | `declaration-track:6c558cd088276b6a468db28b1e188820f8b480a038355b1fe7ae81609d76d5af` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/ClosedValidationAndEvaluation.lean/declarations/example-source-edition-3.md) | 39 | `declaration-track:bd2cf96fcc117ab9b8f21be1a6587279841395a43175e4a6f6bf5f1ec4950a7a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

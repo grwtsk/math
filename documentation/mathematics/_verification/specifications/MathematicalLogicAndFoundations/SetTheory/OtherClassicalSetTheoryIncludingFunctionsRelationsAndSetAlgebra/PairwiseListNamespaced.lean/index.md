@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/PairwiseListNamespaced.lean/index.md) · [Full source](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/PairwiseListNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/PairwiseListNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/PairwiseListNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Nodup.pairwise_of_set_pairwise](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/PairwiseListNamespaced.lean/declarations/nodup-pairwise-of-set-pairwise.md) | 30 | `result-track:c3c1450f307ba3327457263f8aa4651ef5c88a2e0e7fed534f1c93ff76634122` |
-| 2 | `theorem` | [Nodup.pairwise_coe](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/PairwiseListNamespaced.lean/declarations/nodup-pairwise-coe.md) | 35 | `result-track:24161f87cf473e220aace01c86fc12ef3d50634c417530d14f9f366bd4d494b9` |
+| 1 | `theorem` | [Nodup.pairwise_of_set_pairwise](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/PairwiseListNamespaced.lean/declarations/nodup-pairwise-of-set-pairwise.md) | 30 | `result-track:c3c1450f307ba3327457263f8aa4651ef5c88a2e0e7fed534f1c93ff76634122` |
+| 2 | `theorem` | [Nodup.pairwise_coe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/PairwiseListNamespaced.lean/declarations/nodup-pairwise-coe.md) | 35 | `result-track:24161f87cf473e220aace01c86fc12ef3d50634c417530d14f9f366bd4d494b9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

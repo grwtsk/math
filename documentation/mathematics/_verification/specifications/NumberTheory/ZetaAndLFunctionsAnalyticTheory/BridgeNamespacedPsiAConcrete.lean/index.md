@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BridgeNamespacedPsiAConcrete.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BridgeNamespacedPsiAConcrete.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BridgeNamespacedPsiAConcrete.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BridgeNamespacedPsiAConcrete.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,9 +61,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [psiA_concrete](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BridgeNamespacedPsiAConcrete.lean/declarations/psia-concrete.md) | 51 | `result-track:52f0ea6818601156f70f70a1226dc8f5b29cd882a2e169d120be248c9db44cac` |
-| 2 | `theorem` | [localHyps_concrete](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BridgeNamespacedPsiAConcrete.lean/declarations/localhyps-concrete.md) | 56 | `result-track:808ba2a6cbe4c6a4e1508f46dff83142c33798008a35b3ce4d9a396f93cbd0b1` |
-| 3 | `theorem` | [localHypsEventually](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BridgeNamespacedPsiAConcrete.lean/declarations/localhypseventually.md) | 111 | `result-track:e5f3db505f66d757cca8d2b93251419d583533b0e1dd7c4872294ea4bda9e183` |
+| 1 | `lemma` | [psiA_concrete](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BridgeNamespacedPsiAConcrete.lean/declarations/psia-concrete.md) | 51 | `result-track:52f0ea6818601156f70f70a1226dc8f5b29cd882a2e169d120be248c9db44cac` |
+| 2 | `theorem` | [localHyps_concrete](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BridgeNamespacedPsiAConcrete.lean/declarations/localhyps-concrete.md) | 56 | `result-track:808ba2a6cbe4c6a4e1508f46dff83142c33798008a35b3ce4d9a396f93cbd0b1` |
+| 3 | `theorem` | [localHypsEventually](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BridgeNamespacedPsiAConcrete.lean/declarations/localhypseventually.md) | 111 | `result-track:e5f3db505f66d757cca8d2b93251419d583533b0e1dd7c4872294ea4bda9e183` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EvidenceKindNamespacedEvidenceKind.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EvidenceKindNamespacedEvidenceKind.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EvidenceKindNamespacedEvidenceKind.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EvidenceKindNamespacedEvidenceKind.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,8 +60,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [EvidenceKind](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EvidenceKindNamespacedEvidenceKind.lean/declarations/evidencekind.md) | 24 | `declaration-track:42b0db80f08b7f86be2297ee0b2496b536bd39356979845c99ca108481a6ffca` |
-| 2 | `structure` | [TypedEvidence](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EvidenceKindNamespacedEvidenceKind.lean/declarations/typedevidence.md) | 34 | `declaration-track:1af23329a37c8c86420ca8a91fbaa3deca903015dd7a213fa5e095668e323913` |
+| 1 | `inductive` | [EvidenceKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EvidenceKindNamespacedEvidenceKind.lean/declarations/evidencekind.md) | 24 | `declaration-track:42b0db80f08b7f86be2297ee0b2496b536bd39356979845c99ca108481a6ffca` |
+| 2 | `structure` | [TypedEvidence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EvidenceKindNamespacedEvidenceKind.lean/declarations/typedevidence.md) | 34 | `declaration-track:1af23329a37c8c86420ca8a91fbaa3deca903015dd7a213fa5e095668e323913` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

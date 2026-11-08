@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/RatDenumerableDenumerableSourceEdition2.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/RatDenumerableDenumerableSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/RatDenumerableDenumerableSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/RatDenumerableDenumerableSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../NumberTheory/ElementaryNumberTheory/RatDenumerableDenumerableSourceEdition2.lean/declarations/instance-source-edition-2.md) | 21 | `declaration-track:28fa80d9301633edb8cd5e618507efcba92196d4d948bf4cc3d7486900a68073` |
-| 2 | `def` | [denumerable_aux](../../../../../NumberTheory/ElementaryNumberTheory/RatDenumerableDenumerableSourceEdition2.lean/declarations/denumerable-aux.md) | 24 | `declaration-track:d119f8b2ff1dbd5b765d50af2e3a4c44dfda1de4ee95555ba0885749453f3124` |
-| 3 | `instance` | [(anonymous)](../../../../../NumberTheory/ElementaryNumberTheory/RatDenumerableDenumerableSourceEdition2.lean/declarations/instance.md) | 32 | `declaration-track:06a862452b6d6b88deeb73693440d84f02a007a54b3c1d7dd92b585ba317e5f2` |
-| 4 | `theorem` | [Cardinal.mkRat](../../../../../NumberTheory/ElementaryNumberTheory/RatDenumerableDenumerableSourceEdition2.lean/declarations/cardinal-mkrat.md) | 43 | `result-track:5e973f50d40023d85b40bc84781b3390e8d5d99d41556f58048b1df6efe740bf` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/RatDenumerableDenumerableSourceEdition2.lean/declarations/instance-source-edition-2.md) | 21 | `declaration-track:28fa80d9301633edb8cd5e618507efcba92196d4d948bf4cc3d7486900a68073` |
+| 2 | `def` | [denumerable_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/RatDenumerableDenumerableSourceEdition2.lean/declarations/denumerable-aux.md) | 24 | `declaration-track:d119f8b2ff1dbd5b765d50af2e3a4c44dfda1de4ee95555ba0885749453f3124` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/RatDenumerableDenumerableSourceEdition2.lean/declarations/instance.md) | 32 | `declaration-track:06a862452b6d6b88deeb73693440d84f02a007a54b3c1d7dd92b585ba317e5f2` |
+| 4 | `theorem` | [Cardinal.mkRat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/RatDenumerableDenumerableSourceEdition2.lean/declarations/cardinal-mkrat.md) | 43 | `result-track:5e973f50d40023d85b40bc84781b3390e8d5d99d41556f58048b1df6efe740bf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

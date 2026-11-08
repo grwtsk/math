@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/FinalClosureNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/FinalClosureNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FinalClosureNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FinalClosureNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [GRH_spectral_closure](../../../../FunctionalAnalysis/FinalClosureNamespaced.lean/declarations/grh-spectral-closure.md) | 28 | `result-track:078558c79d2632301c20d04cd63f90dd1488b26fe177a4a2534a085c092344d8` |
+| 1 | `theorem` | [GRH_spectral_closure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FinalClosureNamespaced.lean/declarations/grh-spectral-closure.md) | 28 | `result-track:078558c79d2632301c20d04cd63f90dd1488b26fe177a4a2534a085c092344d8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

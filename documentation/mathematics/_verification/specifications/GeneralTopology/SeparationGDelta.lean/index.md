@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SeparationGDelta.lean/index.md) · [Full source](../../../../GeneralTopology/SeparationGDelta.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeparationGDelta.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeparationGDelta.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,19 +62,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [IsGδ.compl_singleton](../../../../GeneralTopology/SeparationGDelta.lean/declarations/isg-compl-singleton.md) | 35 | `result-track:26417c28a028b1b24840b1588180d695dc6a367d92275426802f0c73530c4559` |
-| 2 | `theorem` | [Set.Countable.isGδ_compl](../../../../GeneralTopology/SeparationGDelta.lean/declarations/set-countable-isg-compl.md) | 39 | `result-track:bcb69dbcd1305b3c5ddb610b630e29b4b474eee096654d37fdb36ca3cd2907ab` |
-| 3 | `theorem` | [Set.Finite.isGδ_compl](../../../../GeneralTopology/SeparationGDelta.lean/declarations/set-finite-isg-compl.md) | 43 | `result-track:f14c1047db5ce9bea203e83679ce1d170d6d63ba564d45f4795b95e5b12aa73c` |
-| 4 | `theorem` | [Set.Subsingleton.isGδ_compl](../../../../GeneralTopology/SeparationGDelta.lean/declarations/set-subsingleton-isg-compl.md) | 46 | `result-track:4906e41302b9f212c7c3e883413954d50c758170990609fd8913c95b4c6d717a` |
-| 5 | `theorem` | [Finset.isGδ_compl](../../../../GeneralTopology/SeparationGDelta.lean/declarations/finset-isg-compl.md) | 49 | `result-track:d264864062bbea28ca6f44c67dca3737d767a1bfe5ff9caecb6f06bca667bd59` |
-| 6 | `theorem` | [IsGδ.singleton](../../../../GeneralTopology/SeparationGDelta.lean/declarations/isg-singleton.md) | 52 | `result-track:1be2e9252f0c743a46a07040695e0820cfc8e77117e527d47753823d7f8cba18` |
-| 7 | `theorem` | [Set.Finite.isGδ](../../../../GeneralTopology/SeparationGDelta.lean/declarations/set-finite-isg.md) | 59 | `result-track:b8f690030bf02e2cbcee6f9ec05f8c96394aaf48bc7af001f8c696dc57f22ce1` |
-| 8 | `class` | [PerfectlyNormalSpace](../../../../GeneralTopology/SeparationGDelta.lean/declarations/perfectlynormalspace.md) | 68 | `declaration-track:5da5ab941427a4923094e9e05a45f12a1459dd1489def2c8122f335d0853d7e9` |
-| 9 | `theorem` | [Disjoint.hasSeparatingCover_closed_gdelta_right](../../../../GeneralTopology/SeparationGDelta.lean/declarations/disjoint-hasseparatingcover-closed-gdelta-right.md) | 72 | `result-track:740be9b5b6ba7c101f662195cf7ec1029a4b4020fbea801fb73e0a716cb97521` |
-| 10 | `instance` | [(anonymous)](../../../../GeneralTopology/SeparationGDelta.lean/declarations/instance.md) | 100 | `declaration-track:09c8910aaa96b610d7ace76c93c8b061d17fca00d9f4b7f943fcf275645bc585` |
-| 11 | `theorem` | [IsClosed.isGδ](../../../../GeneralTopology/SeparationGDelta.lean/declarations/isclosed-isg.md) | 110 | `result-track:0c65594ad93bf19893a28141c06c5d9bc77b8bcccc2e1d1f05d8c4397a4204da` |
-| 12 | `class` | [T6Space](../../../../GeneralTopology/SeparationGDelta.lean/declarations/t6space.md) | 114 | `declaration-track:f5c2714bbf98f665f98256bcc2a51b6511e9050c62ae70bbe732ae57f89d967b` |
-| 13 | `instance` | [(anonymous)](../../../../GeneralTopology/SeparationGDelta.lean/declarations/instance-source-edition-2.md) | 118 | `declaration-track:ff4b19313bdb5468bed8365217ff4a9a1849f2af0c01737a2868d6bc43938595` |
+| 1 | `theorem` | [IsGδ.compl_singleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeparationGDelta.lean/declarations/isg-compl-singleton.md) | 35 | `result-track:26417c28a028b1b24840b1588180d695dc6a367d92275426802f0c73530c4559` |
+| 2 | `theorem` | [Set.Countable.isGδ_compl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeparationGDelta.lean/declarations/set-countable-isg-compl.md) | 39 | `result-track:bcb69dbcd1305b3c5ddb610b630e29b4b474eee096654d37fdb36ca3cd2907ab` |
+| 3 | `theorem` | [Set.Finite.isGδ_compl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeparationGDelta.lean/declarations/set-finite-isg-compl.md) | 43 | `result-track:f14c1047db5ce9bea203e83679ce1d170d6d63ba564d45f4795b95e5b12aa73c` |
+| 4 | `theorem` | [Set.Subsingleton.isGδ_compl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeparationGDelta.lean/declarations/set-subsingleton-isg-compl.md) | 46 | `result-track:4906e41302b9f212c7c3e883413954d50c758170990609fd8913c95b4c6d717a` |
+| 5 | `theorem` | [Finset.isGδ_compl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeparationGDelta.lean/declarations/finset-isg-compl.md) | 49 | `result-track:d264864062bbea28ca6f44c67dca3737d767a1bfe5ff9caecb6f06bca667bd59` |
+| 6 | `theorem` | [IsGδ.singleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeparationGDelta.lean/declarations/isg-singleton.md) | 52 | `result-track:1be2e9252f0c743a46a07040695e0820cfc8e77117e527d47753823d7f8cba18` |
+| 7 | `theorem` | [Set.Finite.isGδ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeparationGDelta.lean/declarations/set-finite-isg.md) | 59 | `result-track:b8f690030bf02e2cbcee6f9ec05f8c96394aaf48bc7af001f8c696dc57f22ce1` |
+| 8 | `class` | [PerfectlyNormalSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeparationGDelta.lean/declarations/perfectlynormalspace.md) | 68 | `declaration-track:5da5ab941427a4923094e9e05a45f12a1459dd1489def2c8122f335d0853d7e9` |
+| 9 | `theorem` | [Disjoint.hasSeparatingCover_closed_gdelta_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeparationGDelta.lean/declarations/disjoint-hasseparatingcover-closed-gdelta-right.md) | 72 | `result-track:740be9b5b6ba7c101f662195cf7ec1029a4b4020fbea801fb73e0a716cb97521` |
+| 10 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeparationGDelta.lean/declarations/instance.md) | 100 | `declaration-track:09c8910aaa96b610d7ace76c93c8b061d17fca00d9f4b7f943fcf275645bc585` |
+| 11 | `theorem` | [IsClosed.isGδ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeparationGDelta.lean/declarations/isclosed-isg.md) | 110 | `result-track:0c65594ad93bf19893a28141c06c5d9bc77b8bcccc2e1d1f05d8c4397a4204da` |
+| 12 | `class` | [T6Space](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeparationGDelta.lean/declarations/t6space.md) | 114 | `declaration-track:f5c2714bbf98f665f98256bcc2a51b6511e9050c62ae70bbe732ae57f89d967b` |
+| 13 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeparationGDelta.lean/declarations/instance-source-edition-2.md) | 118 | `declaration-track:ff4b19313bdb5468bed8365217ff4a9a1849f2af0c01737a2868d6bc43938595` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

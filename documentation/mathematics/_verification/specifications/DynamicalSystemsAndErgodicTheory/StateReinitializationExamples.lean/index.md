@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../DynamicalSystemsAndErgodicTheory/StateReinitializationExamples.lean/index.md) · [Full source](../../../../DynamicalSystemsAndErgodicTheory/StateReinitializationExamples.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/StateReinitializationExamples.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/StateReinitializationExamples.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.DynamicalSystems.TransitionSystems.StateReinitialization`](../../../../DynamicalSystemsAndErgodicTheory/StateReinitialization.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Logic.Certificates.DependencyRevisionExamples`](../../../../MathematicalLogicAndFoundations/GeneralLogic/DependencyRevisionExamplesHistoricalSourceEdition2.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.DynamicalSystems.TransitionSystems.StateReinitialization`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/StateReinitialization.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Logic.Certificates.DependencyRevisionExamples`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DependencyRevisionExamplesHistoricalSourceEdition2.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,18 +58,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [config](../../../../DynamicalSystemsAndErgodicTheory/StateReinitializationExamples.lean/declarations/config.md) | 23 | `declaration-track:d3344339da82667d01f83f905f14c10026f35c9c57e83cf32723cede0b9cfdae` |
-| 2 | `def` | [session](../../../../DynamicalSystemsAndErgodicTheory/StateReinitializationExamples.lean/declarations/session.md) | 27 | `declaration-track:adc0bc322ef8a8f1fbd2d8cf7532385a39592e6df66f7923a8901c8cf587b570` |
-| 3 | `theorem` | [restarted_session_safe](../../../../DynamicalSystemsAndErgodicTheory/StateReinitializationExamples.lean/declarations/restarted-session-safe.md) | 30 | `result-track:defb15e29d34883b987ff9a1bf55edd9bf541d090a7a34f164fbf65f3eed4fba` |
-| 4 | `theorem` | [restart_separates_history_and_active_receipts](../../../../DynamicalSystemsAndErgodicTheory/StateReinitializationExamples.lean/declarations/restart-separates-history-and-active-receipts.md) | 36 | `result-track:fc84e402dd7632117ff4c25503d5574dd9d88809ac83ff27b1d22cbfbb2054f2` |
-| 5 | `theorem` | [restart_retains_current_status_and_lift](../../../../DynamicalSystemsAndErgodicTheory/StateReinitializationExamples.lean/declarations/restart-retains-current-status-and-lift.md) | 41 | `result-track:e927ba883ac0d7c56d3bedfdf659cd28773d5b1f86258e5ac8a2391eac0fd82e` |
-| 6 | `def` | [currentReceipt](../../../../DynamicalSystemsAndErgodicTheory/StateReinitializationExamples.lean/declarations/currentreceipt.md) | 48 | `declaration-track:9f46cb963539a4947ce7c9d443984422f2309562522503756cc23e2d9860c299` |
-| 7 | `def` | [currentProposal](../../../../DynamicalSystemsAndErgodicTheory/StateReinitializationExamples.lean/declarations/currentproposal.md) | 54 | `declaration-track:c68da2005df45805bfaa737809c672babd74e62a53efec15906e0cf84965ffd4` |
-| 8 | `theorem` | [current_proposal_guard](../../../../DynamicalSystemsAndErgodicTheory/StateReinitializationExamples.lean/declarations/current-proposal-guard.md) | 62 | `result-track:8f5343675c8534367688ae50d39ddebaf7cefd6aea472004ca56f9b2c2144bbb` |
-| 9 | `theorem` | [admitted_restart_step_safe](../../../../DynamicalSystemsAndErgodicTheory/StateReinitializationExamples.lean/declarations/admitted-restart-step-safe.md) | 80 | `result-track:a65721270952c274dc6436588ebf89978cbcb61c525df10fdf6aec3ec2bd4a47` |
-| 10 | `theorem` | [admitted_step_preserves_history_and_appends_current_receipt](../../../../DynamicalSystemsAndErgodicTheory/StateReinitializationExamples.lean/declarations/admitted-step-preserves-history-and-appends-current-receipt.md) | 87 | `result-track:a00d947753c7a533b38ed6d84175a77cc002ad1e05d30f75326644b59637cbd7` |
-| 11 | `def` | [staleProposal](../../../../DynamicalSystemsAndErgodicTheory/StateReinitializationExamples.lean/declarations/staleproposal.md) | 97 | `declaration-track:21383a5d83aa0fba0673d01fc615184e31d3f9000ecaf8bc776f1a86c1e94a13` |
-| 12 | `theorem` | [stale_historical_receipt_rejected](../../../../DynamicalSystemsAndErgodicTheory/StateReinitializationExamples.lean/declarations/stale-historical-receipt-rejected.md) | 106 | `result-track:3ce771b4d5b4abb0d1ae0d3fc381b1397cc0ef8aaba170ec13f7c575961f3562` |
+| 1 | `def` | [config](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/StateReinitializationExamples.lean/declarations/config.md) | 23 | `declaration-track:d3344339da82667d01f83f905f14c10026f35c9c57e83cf32723cede0b9cfdae` |
+| 2 | `def` | [session](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/StateReinitializationExamples.lean/declarations/session.md) | 27 | `declaration-track:adc0bc322ef8a8f1fbd2d8cf7532385a39592e6df66f7923a8901c8cf587b570` |
+| 3 | `theorem` | [restarted_session_safe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/StateReinitializationExamples.lean/declarations/restarted-session-safe.md) | 30 | `result-track:defb15e29d34883b987ff9a1bf55edd9bf541d090a7a34f164fbf65f3eed4fba` |
+| 4 | `theorem` | [restart_separates_history_and_active_receipts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/StateReinitializationExamples.lean/declarations/restart-separates-history-and-active-receipts.md) | 36 | `result-track:fc84e402dd7632117ff4c25503d5574dd9d88809ac83ff27b1d22cbfbb2054f2` |
+| 5 | `theorem` | [restart_retains_current_status_and_lift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/StateReinitializationExamples.lean/declarations/restart-retains-current-status-and-lift.md) | 41 | `result-track:e927ba883ac0d7c56d3bedfdf659cd28773d5b1f86258e5ac8a2391eac0fd82e` |
+| 6 | `def` | [currentReceipt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/StateReinitializationExamples.lean/declarations/currentreceipt.md) | 48 | `declaration-track:9f46cb963539a4947ce7c9d443984422f2309562522503756cc23e2d9860c299` |
+| 7 | `def` | [currentProposal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/StateReinitializationExamples.lean/declarations/currentproposal.md) | 54 | `declaration-track:c68da2005df45805bfaa737809c672babd74e62a53efec15906e0cf84965ffd4` |
+| 8 | `theorem` | [current_proposal_guard](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/StateReinitializationExamples.lean/declarations/current-proposal-guard.md) | 62 | `result-track:8f5343675c8534367688ae50d39ddebaf7cefd6aea472004ca56f9b2c2144bbb` |
+| 9 | `theorem` | [admitted_restart_step_safe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/StateReinitializationExamples.lean/declarations/admitted-restart-step-safe.md) | 80 | `result-track:a65721270952c274dc6436588ebf89978cbcb61c525df10fdf6aec3ec2bd4a47` |
+| 10 | `theorem` | [admitted_step_preserves_history_and_appends_current_receipt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/StateReinitializationExamples.lean/declarations/admitted-step-preserves-history-and-appends-current-receipt.md) | 87 | `result-track:a00d947753c7a533b38ed6d84175a77cc002ad1e05d30f75326644b59637cbd7` |
+| 11 | `def` | [staleProposal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/StateReinitializationExamples.lean/declarations/staleproposal.md) | 97 | `declaration-track:21383a5d83aa0fba0673d01fc615184e31d3f9000ecaf8bc776f1a86c1e94a13` |
+| 12 | `theorem` | [stale_historical_receipt_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/StateReinitializationExamples.lean/declarations/stale-historical-receipt-rejected.md) | 106 | `result-track:3ce771b4d5b4abb0d1ae0d3fc381b1397cc0ef8aaba170ec13f7c575961f3562` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

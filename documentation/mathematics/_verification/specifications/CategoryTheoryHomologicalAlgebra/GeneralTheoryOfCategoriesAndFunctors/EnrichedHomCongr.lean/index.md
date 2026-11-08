@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EnrichedHomCongr.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EnrichedHomCongr.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EnrichedHomCongr.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EnrichedHomCongr.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [eHomCongr](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EnrichedHomCongr.lean/declarations/ehomcongr.md) | 40 | `declaration-track:847a2a4b83bf0adc0a871601e285ce45693b69abc85f6e775720e60951ab9c68` |
-| 2 | `lemma` | [eHomCongr_refl](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EnrichedHomCongr.lean/declarations/ehomcongr-refl.md) | 53 | `result-track:653efd10cc0a18855b1965874e45517d9c0ec5e85fb8ff58f746506f4004d74d` |
-| 3 | `lemma` | [eHomCongr_trans](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EnrichedHomCongr.lean/declarations/ehomcongr-trans.md) | 56 | `result-track:e81e51314a9e1de28771e49a75c634671b05698b47787b24b13a32314f9bc424` |
-| 4 | `lemma` | [eHomCongr_symm](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EnrichedHomCongr.lean/declarations/ehomcongr-symm.md) | 62 | `result-track:70cee10eb68874ca9d267b5f3d124b85d919c32d7b7183ce9d098c9e464bb589` |
-| 5 | `lemma` | [eHomCongr_comp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EnrichedHomCongr.lean/declarations/ehomcongr-comp.md) | 72 | `result-track:9e27552a4a5e2c7c57aee1e6d5ee3396d1cf37b3efce6c9cb64b01ab06c1a2e4` |
-| 6 | `lemma` | [eHomCongr_inv_comp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EnrichedHomCongr.lean/declarations/ehomcongr-inv-comp.md) | 87 | `result-track:6b51375afc7f1fccdbadc184252c4dfeb2dec8c9514db4513f9bce61bb777263` |
+| 1 | `def` | [eHomCongr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EnrichedHomCongr.lean/declarations/ehomcongr.md) | 40 | `declaration-track:847a2a4b83bf0adc0a871601e285ce45693b69abc85f6e775720e60951ab9c68` |
+| 2 | `lemma` | [eHomCongr_refl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EnrichedHomCongr.lean/declarations/ehomcongr-refl.md) | 53 | `result-track:653efd10cc0a18855b1965874e45517d9c0ec5e85fb8ff58f746506f4004d74d` |
+| 3 | `lemma` | [eHomCongr_trans](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EnrichedHomCongr.lean/declarations/ehomcongr-trans.md) | 56 | `result-track:e81e51314a9e1de28771e49a75c634671b05698b47787b24b13a32314f9bc424` |
+| 4 | `lemma` | [eHomCongr_symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EnrichedHomCongr.lean/declarations/ehomcongr-symm.md) | 62 | `result-track:70cee10eb68874ca9d267b5f3d124b85d919c32d7b7183ce9d098c9e464bb589` |
+| 5 | `lemma` | [eHomCongr_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EnrichedHomCongr.lean/declarations/ehomcongr-comp.md) | 72 | `result-track:9e27552a4a5e2c7c57aee1e6d5ee3396d1cf37b3efce6c9cb64b01ab06c1a2e4` |
+| 6 | `lemma` | [eHomCongr_inv_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EnrichedHomCongr.lean/declarations/ehomcongr-inv-comp.md) | 87 | `result-track:6b51375afc7f1fccdbadc184252c4dfeb2dec8c9514db4513f9bce61bb777263` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

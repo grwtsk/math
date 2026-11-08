@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/ArithmeticProgressionSpacing.lean/index.md) · [Full source](../../../../RealFunctions/ArithmeticProgressionSpacing.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ArithmeticProgressionSpacing.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ArithmeticProgressionSpacing.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `Folder.ResearchTopos.RodgersTaoHeat` — import line 19; external provider; requires a separately pinned dependency.
-- [Ordered Configuration](../../../../RealFunctions/OrderedConfiguration.lean/index.md) — import line 21; pinned internal source present.
+- [Ordered Configuration](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/OrderedConfiguration.lean/index.md) — import line 21; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ArithmeticProgressionConfiguration](../../../../RealFunctions/ArithmeticProgressionSpacing.lean/declarations/arithmeticprogressionconfiguration.md) | 40 | `declaration-track:6266febc6e70813d9221b8002a702699a557b78b440ae05adc6b281af3cd78f9` |
+| 1 | `structure` | [ArithmeticProgressionConfiguration](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ArithmeticProgressionSpacing.lean/declarations/arithmeticprogressionconfiguration.md) | 40 | `declaration-track:6266febc6e70813d9221b8002a702699a557b78b440ae05adc6b281af3cd78f9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

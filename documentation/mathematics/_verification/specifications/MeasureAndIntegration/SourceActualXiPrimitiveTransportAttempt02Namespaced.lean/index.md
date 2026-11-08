@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceActualXiPrimitiveTransportAttempt02Namespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceActualXiPrimitiveTransportAttempt02Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualXiPrimitiveTransportAttempt02Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualXiPrimitiveTransportAttempt02Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,13 +60,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualXiLogDensity](../../../../MeasureAndIntegration/SourceActualXiPrimitiveTransportAttempt02Namespaced.lean/declarations/actualxilogdensity.md) | 31 | `declaration-track:f30c682430a8f775eef13cbc671b205e7e39ad675ea6988b2fbaf937a64692d5` |
-| 2 | `def` | [actualXiLogPrimitive](../../../../MeasureAndIntegration/SourceActualXiPrimitiveTransportAttempt02Namespaced.lean/declarations/actualxilogprimitive.md) | 34 | `declaration-track:afc1ae4360e9caef8111b22bafd036a9ec772d9e24db6c9c7080ac59e052dbe5` |
-| 3 | `theorem` | [actualXiLogDensity_intervalIntegrable](../../../../MeasureAndIntegration/SourceActualXiPrimitiveTransportAttempt02Namespaced.lean/declarations/actualxilogdensity-intervalintegrable.md) | 37 | `result-track:51d415b917d40f474c69e95667cba56e4ccf79b0f4e057a77d86c6fe78c93d6d` |
-| 4 | `theorem` | [actualXiLogPrimitive_at_anchor](../../../../MeasureAndIntegration/SourceActualXiPrimitiveTransportAttempt02Namespaced.lean/declarations/actualxilogprimitive-at-anchor.md) | 51 | `result-track:248ceb6585034c4a086f2dc41c74aa6ec9931288f217500c1a783367e38a2b03` |
-| 5 | `theorem` | [actualXiLogPrimitive_absolutelyContinuous](../../../../MeasureAndIntegration/SourceActualXiPrimitiveTransportAttempt02Namespaced.lean/declarations/actualxilogprimitive-absolutelycontinuous.md) | 54 | `result-track:6ff8b20e77c4816ebc1dfde6dbd477649e1e330896cacc9b3ba855b87fba504e` |
-| 6 | `theorem` | [actualXiLogPrimitive_ae_hasDerivAt](../../../../MeasureAndIntegration/SourceActualXiPrimitiveTransportAttempt02Namespaced.lean/declarations/actualxilogprimitive-ae-hasderivat.md) | 59 | `result-track:4fd04508f5eb202138e81cdd99cf87172dd52d63035603a45b2900f50977657c` |
-| 7 | `theorem` | [actual_logarithmic_substitution](../../../../MeasureAndIntegration/SourceActualXiPrimitiveTransportAttempt02Namespaced.lean/declarations/actual-logarithmic-substitution.md) | 67 | `result-track:484c8ac15676349cc26eebd8893c5849497d4f1d851e7667fea70a1eccc5794b` |
+| 1 | `def` | [actualXiLogDensity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualXiPrimitiveTransportAttempt02Namespaced.lean/declarations/actualxilogdensity.md) | 31 | `declaration-track:f30c682430a8f775eef13cbc671b205e7e39ad675ea6988b2fbaf937a64692d5` |
+| 2 | `def` | [actualXiLogPrimitive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualXiPrimitiveTransportAttempt02Namespaced.lean/declarations/actualxilogprimitive.md) | 34 | `declaration-track:afc1ae4360e9caef8111b22bafd036a9ec772d9e24db6c9c7080ac59e052dbe5` |
+| 3 | `theorem` | [actualXiLogDensity_intervalIntegrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualXiPrimitiveTransportAttempt02Namespaced.lean/declarations/actualxilogdensity-intervalintegrable.md) | 37 | `result-track:51d415b917d40f474c69e95667cba56e4ccf79b0f4e057a77d86c6fe78c93d6d` |
+| 4 | `theorem` | [actualXiLogPrimitive_at_anchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualXiPrimitiveTransportAttempt02Namespaced.lean/declarations/actualxilogprimitive-at-anchor.md) | 51 | `result-track:248ceb6585034c4a086f2dc41c74aa6ec9931288f217500c1a783367e38a2b03` |
+| 5 | `theorem` | [actualXiLogPrimitive_absolutelyContinuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualXiPrimitiveTransportAttempt02Namespaced.lean/declarations/actualxilogprimitive-absolutelycontinuous.md) | 54 | `result-track:6ff8b20e77c4816ebc1dfde6dbd477649e1e330896cacc9b3ba855b87fba504e` |
+| 6 | `theorem` | [actualXiLogPrimitive_ae_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualXiPrimitiveTransportAttempt02Namespaced.lean/declarations/actualxilogprimitive-ae-hasderivat.md) | 59 | `result-track:4fd04508f5eb202138e81cdd99cf87172dd52d63035603a45b2900f50977657c` |
+| 7 | `theorem` | [actual_logarithmic_substitution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualXiPrimitiveTransportAttempt02Namespaced.lean/declarations/actual-logarithmic-substitution.md) | 67 | `result-track:484c8ac15676349cc26eebd8893c5849497d4f1d851e7667fea70a1eccc5794b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

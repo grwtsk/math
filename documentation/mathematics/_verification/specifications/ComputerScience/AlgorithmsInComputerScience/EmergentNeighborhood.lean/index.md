@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/EmergentNeighborhood.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/EmergentNeighborhood.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EmergentNeighborhood.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EmergentNeighborhood.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [NeighborhoodStabilityEvidence](../../../../../ComputerScience/AlgorithmsInComputerScience/EmergentNeighborhood.lean/declarations/neighborhoodstabilityevidence.md) | 13 | `declaration-track:dd38f27d5986b9520a4df00d48d847fc592d07fa64b9556d051befafd1f6fc6f` |
-| 2 | `structure` | [StableNeighborhood](../../../../../ComputerScience/AlgorithmsInComputerScience/EmergentNeighborhood.lean/declarations/stableneighborhood.md) | 30 | `declaration-track:8f8cea24676b29f329b835ba914b49a785c93e2d802052da95f2944adbfc4324` |
-| 3 | `structure` | [SourceLayoutCandidate](../../../../../ComputerScience/AlgorithmsInComputerScience/EmergentNeighborhood.lean/declarations/sourcelayoutcandidate.md) | 43 | `declaration-track:60d394cb7cc7b634a523858a122c78859c9447547c8f828fb810a36f9b2fac58` |
-| 4 | `theorem` | [SourceLayoutCandidate.has_stable_neighborhood](../../../../../ComputerScience/AlgorithmsInComputerScience/EmergentNeighborhood.lean/declarations/sourcelayoutcandidate-has-stable-neighborhood.md) | 52 | `result-track:e258d8f4ea2c243877e141b8eb76f166a0c3487891ce188351633a0bef7d3d1c` |
+| 1 | `structure` | [NeighborhoodStabilityEvidence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EmergentNeighborhood.lean/declarations/neighborhoodstabilityevidence.md) | 13 | `declaration-track:dd38f27d5986b9520a4df00d48d847fc592d07fa64b9556d051befafd1f6fc6f` |
+| 2 | `structure` | [StableNeighborhood](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EmergentNeighborhood.lean/declarations/stableneighborhood.md) | 30 | `declaration-track:8f8cea24676b29f329b835ba914b49a785c93e2d802052da95f2944adbfc4324` |
+| 3 | `structure` | [SourceLayoutCandidate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EmergentNeighborhood.lean/declarations/sourcelayoutcandidate.md) | 43 | `declaration-track:60d394cb7cc7b634a523858a122c78859c9447547c8f828fb810a36f9b2fac58` |
+| 4 | `theorem` | [SourceLayoutCandidate.has_stable_neighborhood](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EmergentNeighborhood.lean/declarations/sourcelayoutcandidate-has-stable-neighborhood.md) | 52 | `result-track:e258d8f4ea2c243877e141b8eb76f166a0c3487891ce188351633a0bef7d3d1c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

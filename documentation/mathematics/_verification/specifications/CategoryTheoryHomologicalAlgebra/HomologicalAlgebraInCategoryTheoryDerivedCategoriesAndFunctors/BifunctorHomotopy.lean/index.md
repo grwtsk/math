@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/BifunctorHomotopy.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/BifunctorHomotopy.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/BifunctorHomotopy.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/BifunctorHomotopy.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [hom₁](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/BifunctorHomotopy.lean/declarations/hom.md) | 40 | `declaration-track:93b6343d7c9593c69a5aee6d724f008a4323d6de5f431004e9cc039a60f9b661` |
-| 2 | `lemma` | [ιMapBifunctor_hom₁](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/BifunctorHomotopy.lean/declarations/mapbifunctor-hom.md) | 48 | `result-track:d463206a2914d4c4256da740aa670f77bc39775aba70b3dd3daa729bd436045b` |
-| 3 | `lemma` | [zero₁](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/BifunctorHomotopy.lean/declarations/zero.md) | 56 | `result-track:5fae744f20574c99655773e38ae1d57bbb17960c466eb14acd539619084e3893` |
-| 4 | `lemma` | [comm₁_aux](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/BifunctorHomotopy.lean/declarations/comm-aux.md) | 70 | `result-track:361939af36cf7b01d55180b9a7dfbc99ea9e4f0452830175493e0ef91487a1e3` |
-| 5 | `lemma` | [comm₁](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/BifunctorHomotopy.lean/declarations/comm.md) | 90 | `result-track:184963f40e7bac6a19215b6ae1bde58df2245da266884a36a21bc833c69b24f3` |
-| 6 | `def` | [mapBifunctorMapHomotopy₁](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/BifunctorHomotopy.lean/declarations/mapbifunctormaphomotopy.md) | 151 | `declaration-track:c28fb943fff0061b83385995fc4959c5b94a8345614849b5166e9e9fbffdedcb` |
+| 1 | `def` | [hom₁](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/BifunctorHomotopy.lean/declarations/hom.md) | 40 | `declaration-track:93b6343d7c9593c69a5aee6d724f008a4323d6de5f431004e9cc039a60f9b661` |
+| 2 | `lemma` | [ιMapBifunctor_hom₁](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/BifunctorHomotopy.lean/declarations/mapbifunctor-hom.md) | 48 | `result-track:d463206a2914d4c4256da740aa670f77bc39775aba70b3dd3daa729bd436045b` |
+| 3 | `lemma` | [zero₁](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/BifunctorHomotopy.lean/declarations/zero.md) | 56 | `result-track:5fae744f20574c99655773e38ae1d57bbb17960c466eb14acd539619084e3893` |
+| 4 | `lemma` | [comm₁_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/BifunctorHomotopy.lean/declarations/comm-aux.md) | 70 | `result-track:361939af36cf7b01d55180b9a7dfbc99ea9e4f0452830175493e0ef91487a1e3` |
+| 5 | `lemma` | [comm₁](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/BifunctorHomotopy.lean/declarations/comm.md) | 90 | `result-track:184963f40e7bac6a19215b6ae1bde58df2245da266884a36a21bc833c69b24f3` |
+| 6 | `def` | [mapBifunctorMapHomotopy₁](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/BifunctorHomotopy.lean/declarations/mapbifunctormaphomotopy.md) | 151 | `declaration-track:c28fb943fff0061b83385995fc4959c5b94a8345614849b5166e9e9fbffdedcb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

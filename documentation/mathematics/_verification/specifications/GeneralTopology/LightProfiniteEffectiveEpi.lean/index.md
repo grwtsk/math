@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/LightProfiniteEffectiveEpi.lean/index.md) · [Full source](../../../../GeneralTopology/LightProfiniteEffectiveEpi.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LightProfiniteEffectiveEpi.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LightProfiniteEffectiveEpi.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [effectiveEpi_iff_surjective](../../../../GeneralTopology/LightProfiniteEffectiveEpi.lean/declarations/effectiveepi-iff-surjective.md) | 24 | `result-track:b29b2c48cc08ddd6ff8c86310a003670502bcfb3263efccfa0337c84f6c999b9` |
-| 2 | `instance` | [(anonymous)](../../../../GeneralTopology/LightProfiniteEffectiveEpi.lean/declarations/instance.md) | 30 | `declaration-track:7c7e36e32353c407844e76905898b14ee728744041c7ecbae2c5cdcec1e728ce` |
-| 3 | `example` | [(anonymous)](../../../../GeneralTopology/LightProfiniteEffectiveEpi.lean/declarations/example.md) | 35 | `declaration-track:2d2d5740f8d7ebd2dd8806a385d48e7640f6e4454bf427ebf3f206063bb0eb3a` |
+| 1 | `theorem` | [effectiveEpi_iff_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LightProfiniteEffectiveEpi.lean/declarations/effectiveepi-iff-surjective.md) | 24 | `result-track:b29b2c48cc08ddd6ff8c86310a003670502bcfb3263efccfa0337c84f6c999b9` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LightProfiniteEffectiveEpi.lean/declarations/instance.md) | 30 | `declaration-track:7c7e36e32353c407844e76905898b14ee728744041c7ecbae2c5cdcec1e728ce` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LightProfiniteEffectiveEpi.lean/declarations/example.md) | 35 | `declaration-track:2d2d5740f8d7ebd2dd8806a385d48e7640f6e4454bf427ebf3f206063bb0eb3a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

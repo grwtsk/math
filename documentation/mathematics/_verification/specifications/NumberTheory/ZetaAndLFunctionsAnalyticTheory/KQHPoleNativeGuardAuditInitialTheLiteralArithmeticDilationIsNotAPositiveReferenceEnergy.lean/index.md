@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/KQHPoleNativeGuardAuditInitialTheLiteralArithmeticDilationIsNotAPositiveReferenceEnergy.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/KQHPoleNativeGuardAuditInitialTheLiteralArithmeticDilationIsNotAPositiveReferenceEnergy.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/KQHPoleNativeGuardAuditInitialTheLiteralArithmeticDilationIsNotAPositiveReferenceEnergy.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/KQHPoleNativeGuardAuditInitialTheLiteralArithmeticDilationIsNotAPositiveReferenceEnergy.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [localized_dilation_value](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/KQHPoleNativeGuardAuditInitialTheLiteralArithmeticDilationIsNotAPositiveReferenceEnergy.lean/declarations/localized-dilation-value.md) | 24 | `result-track:7f75015d988d8524a62f75c7773ae19303e981c8dcf61dd976763ae4167b8d65` |
-| 2 | `theorem` | [sourceSignedOperator_opposite_signs](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/KQHPoleNativeGuardAuditInitialTheLiteralArithmeticDilationIsNotAPositiveReferenceEnergy.lean/declarations/sourcesignedoperator-opposite-signs.md) | 36 | `result-track:d15e8b111b2ba7ccf154d38f46cefc73a31135ea0bb36fd978b3293d591c130c` |
+| 1 | `theorem` | [localized_dilation_value](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/KQHPoleNativeGuardAuditInitialTheLiteralArithmeticDilationIsNotAPositiveReferenceEnergy.lean/declarations/localized-dilation-value.md) | 24 | `result-track:7f75015d988d8524a62f75c7773ae19303e981c8dcf61dd976763ae4167b8d65` |
+| 2 | `theorem` | [sourceSignedOperator_opposite_signs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/KQHPoleNativeGuardAuditInitialTheLiteralArithmeticDilationIsNotAPositiveReferenceEnergy.lean/declarations/sourcesignedoperator-opposite-signs.md) | 36 | `result-track:d15e8b111b2ba7ccf154d38f46cefc73a31135ea0bb36fd978b3293d591c130c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

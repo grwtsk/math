@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/MembraneNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/MembraneNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MembraneNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MembraneNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [MembraneStage](../../../../../ComputerScience/AlgorithmsInComputerScience/MembraneNamespaced.lean/declarations/membranestage.md) | 17 | `declaration-track:ac8a3bb010b38911b8e2b18e7248c8b92121d1e1adcb6d281559cd613f5c8e55` |
-| 2 | `inductive` | [DeliveryClass](../../../../../ComputerScience/AlgorithmsInComputerScience/MembraneNamespaced.lean/declarations/deliveryclass.md) | 28 | `declaration-track:c01c67c091c8d149e6c8409856d6ee3ea0f504adf9ee9d836109766be0c993ca` |
-| 3 | `structure` | [ArbitratorMembrane](../../../../../ComputerScience/AlgorithmsInComputerScience/MembraneNamespaced.lean/declarations/arbitratormembrane.md) | 34 | `declaration-track:b05f5cea346a85c0b680202636485033e78e1aa41291c9bffff8208106dcf838` |
-| 4 | `def` | [ArbitratorMembrane.evidenceKind](../../../../../ComputerScience/AlgorithmsInComputerScience/MembraneNamespaced.lean/declarations/arbitratormembrane-evidencekind.md) | 43 | `declaration-track:e8c920c2717b5dba6ac6c98c37067e1f7f7eb488d12c1ac55dad778d576e5212` |
-| 5 | `theorem` | [membrane_has_no_theorem_authority](../../../../../ComputerScience/AlgorithmsInComputerScience/MembraneNamespaced.lean/declarations/membrane-has-no-theorem-authority.md) | 49 | `result-track:102954a7405dd4459d0efe2ac235814fa4822343db8cf6c88215c1c57ce15c52` |
+| 1 | `inductive` | [MembraneStage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MembraneNamespaced.lean/declarations/membranestage.md) | 17 | `declaration-track:ac8a3bb010b38911b8e2b18e7248c8b92121d1e1adcb6d281559cd613f5c8e55` |
+| 2 | `inductive` | [DeliveryClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MembraneNamespaced.lean/declarations/deliveryclass.md) | 28 | `declaration-track:c01c67c091c8d149e6c8409856d6ee3ea0f504adf9ee9d836109766be0c993ca` |
+| 3 | `structure` | [ArbitratorMembrane](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MembraneNamespaced.lean/declarations/arbitratormembrane.md) | 34 | `declaration-track:b05f5cea346a85c0b680202636485033e78e1aa41291c9bffff8208106dcf838` |
+| 4 | `def` | [ArbitratorMembrane.evidenceKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MembraneNamespaced.lean/declarations/arbitratormembrane-evidencekind.md) | 43 | `declaration-track:e8c920c2717b5dba6ac6c98c37067e1f7f7eb488d12c1ac55dad778d576e5212` |
+| 5 | `theorem` | [membrane_has_no_theorem_authority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MembraneNamespaced.lean/declarations/membrane-has-no-theorem-authority.md) | 49 | `result-track:102954a7405dd4459d0efe2ac235814fa4822343db8cf6c88215c1c57ce15c52` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

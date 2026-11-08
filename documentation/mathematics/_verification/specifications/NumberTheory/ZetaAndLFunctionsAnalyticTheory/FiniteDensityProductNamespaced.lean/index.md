@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FiniteDensityProductNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FiniteDensityProductNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FiniteDensityProductNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FiniteDensityProductNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [primeDensityFactor](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FiniteDensityProductNamespaced.lean/declarations/primedensityfactor.md) | 21 | `declaration-track:8f470e40ee62154567754247d0dade8fc88be5b7fd646b6055bdb7f218e30821` |
-| 2 | `theorem` | [primeDensityFactor_eq](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FiniteDensityProductNamespaced.lean/declarations/primedensityfactor-eq.md) | 23 | `result-track:f4e6427394c1f45d4fa51084b2ff6dbd240725ca842a9c7b9088526d33b355b6` |
-| 3 | `theorem` | [primeDensityFactor_nonneg](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FiniteDensityProductNamespaced.lean/declarations/primedensityfactor-nonneg.md) | 31 | `result-track:3c8a9d4d8c5f593154cfdb36cc530714bca819c6d54fa10124bfa3ddb5c7a13c` |
-| 4 | `theorem` | [primeDensityFactor_le_exp](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FiniteDensityProductNamespaced.lean/declarations/primedensityfactor-le-exp.md) | 36 | `result-track:793e98506bf972377a504682f1bca63e40b107359b429f3a94001e57fccadf71` |
-| 5 | `theorem` | [finite_prime_density_product_le_exp](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FiniteDensityProductNamespaced.lean/declarations/finite-prime-density-product-le-exp.md) | 50 | `result-track:4c5b99fade3e96d23d77a307c97efae7ce4d74a19862dbd4f97bf09bfd499903` |
-| 6 | `theorem` | [ordered_density_assignment_product](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FiniteDensityProductNamespaced.lean/declarations/ordered-density-assignment-product.md) | 63 | `result-track:4ae61eaa02a53366d2e7fb1b0a64850d6c576513132a4d1baeb60c953a006b7f` |
+| 1 | `def` | [primeDensityFactor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FiniteDensityProductNamespaced.lean/declarations/primedensityfactor.md) | 21 | `declaration-track:8f470e40ee62154567754247d0dade8fc88be5b7fd646b6055bdb7f218e30821` |
+| 2 | `theorem` | [primeDensityFactor_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FiniteDensityProductNamespaced.lean/declarations/primedensityfactor-eq.md) | 23 | `result-track:f4e6427394c1f45d4fa51084b2ff6dbd240725ca842a9c7b9088526d33b355b6` |
+| 3 | `theorem` | [primeDensityFactor_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FiniteDensityProductNamespaced.lean/declarations/primedensityfactor-nonneg.md) | 31 | `result-track:3c8a9d4d8c5f593154cfdb36cc530714bca819c6d54fa10124bfa3ddb5c7a13c` |
+| 4 | `theorem` | [primeDensityFactor_le_exp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FiniteDensityProductNamespaced.lean/declarations/primedensityfactor-le-exp.md) | 36 | `result-track:793e98506bf972377a504682f1bca63e40b107359b429f3a94001e57fccadf71` |
+| 5 | `theorem` | [finite_prime_density_product_le_exp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FiniteDensityProductNamespaced.lean/declarations/finite-prime-density-product-le-exp.md) | 50 | `result-track:4c5b99fade3e96d23d77a307c97efae7ce4d74a19862dbd4f97bf09bfd499903` |
+| 6 | `theorem` | [ordered_density_assignment_product](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FiniteDensityProductNamespaced.lean/declarations/ordered-density-assignment-product.md) | 63 | `result-track:4ae61eaa02a53366d2e7fb1b0a64850d6c576513132a4d1baeb60c953a006b7f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

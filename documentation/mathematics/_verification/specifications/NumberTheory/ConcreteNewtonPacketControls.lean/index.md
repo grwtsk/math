@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/ConcreteNewtonPacketControls.lean/index.md) · [Full source](../../../../NumberTheory/ConcreteNewtonPacketControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ConcreteNewtonPacketControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ConcreteNewtonPacketControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.ConcreteNewtonPacket`](../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ConcreteNewtonPacket.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.ConcreteNewtonPacket`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ConcreteNewtonPacket.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [prefix_and_terminal](../../../../NumberTheory/ConcreteNewtonPacketControls.lean/declarations/prefix-and-terminal.md) | 14 | `result-track:49d3f9df3defc0421a0c26568c515ad82e105ca38e001aeaf8a33b6049515ab8` |
-| 2 | `theorem` | [endpoint_reduction_examples](../../../../NumberTheory/ConcreteNewtonPacketControls.lean/declarations/endpoint-reduction-examples.md) | 17 | `result-track:6dd74463ad603a8ab394330a2625aab25dade2bd336b06e76aa57a5b1ea558cd` |
-| 3 | `theorem` | [cauchy_radius_is_not_newton_radius](../../../../NumberTheory/ConcreteNewtonPacketControls.lean/declarations/cauchy-radius-is-not-newton-radius.md) | 21 | `result-track:a2b3ffd8507ad61fb7e9daee6d6a1ea9b333216ac726974249f87fec49061fc4` |
-| 4 | `theorem` | [claimed_value_is_not_zero](../../../../NumberTheory/ConcreteNewtonPacketControls.lean/declarations/claimed-value-is-not-zero.md) | 24 | `result-track:60ed1e0c542895f7ac02e2c0e11ed5abdbf899c511ec1c4bee0c3711faefd2bb` |
-| 5 | `theorem` | [verified_errors_are_copied](../../../../NumberTheory/ConcreteNewtonPacketControls.lean/declarations/verified-errors-are-copied.md) | 27 | `result-track:7296bd2c2f2ed5e8fd14e88b49129148c94c4f3cb76414d909b77f1f3e9fad78` |
-| 6 | `theorem` | [accepted_output_unique](../../../../NumberTheory/ConcreteNewtonPacketControls.lean/declarations/accepted-output-unique.md) | 31 | `result-track:906b8da65c1fcd14718cee86e4d89a62845a2769a34a3752e1cc83417c102523` |
-| 7 | `theorem` | [zero_inverse_rejected](../../../../NumberTheory/ConcreteNewtonPacketControls.lean/declarations/zero-inverse-rejected.md) | 42 | `result-track:49393d0e1e4fb4073a7c7c816ff37fc8c5040054e0c897a80e2cab20c618d68b` |
+| 1 | `theorem` | [prefix_and_terminal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ConcreteNewtonPacketControls.lean/declarations/prefix-and-terminal.md) | 14 | `result-track:49d3f9df3defc0421a0c26568c515ad82e105ca38e001aeaf8a33b6049515ab8` |
+| 2 | `theorem` | [endpoint_reduction_examples](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ConcreteNewtonPacketControls.lean/declarations/endpoint-reduction-examples.md) | 17 | `result-track:6dd74463ad603a8ab394330a2625aab25dade2bd336b06e76aa57a5b1ea558cd` |
+| 3 | `theorem` | [cauchy_radius_is_not_newton_radius](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ConcreteNewtonPacketControls.lean/declarations/cauchy-radius-is-not-newton-radius.md) | 21 | `result-track:a2b3ffd8507ad61fb7e9daee6d6a1ea9b333216ac726974249f87fec49061fc4` |
+| 4 | `theorem` | [claimed_value_is_not_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ConcreteNewtonPacketControls.lean/declarations/claimed-value-is-not-zero.md) | 24 | `result-track:60ed1e0c542895f7ac02e2c0e11ed5abdbf899c511ec1c4bee0c3711faefd2bb` |
+| 5 | `theorem` | [verified_errors_are_copied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ConcreteNewtonPacketControls.lean/declarations/verified-errors-are-copied.md) | 27 | `result-track:7296bd2c2f2ed5e8fd14e88b49129148c94c4f3cb76414d909b77f1f3e9fad78` |
+| 6 | `theorem` | [accepted_output_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ConcreteNewtonPacketControls.lean/declarations/accepted-output-unique.md) | 31 | `result-track:906b8da65c1fcd14718cee86e4d89a62845a2769a34a3752e1cc83417c102523` |
+| 7 | `theorem` | [zero_inverse_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ConcreteNewtonPacketControls.lean/declarations/zero-inverse-rejected.md) | 42 | `result-track:49393d0e1e4fb4073a7c7c816ff37fc8c5040054e0c897a80e2cab20c618d68b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

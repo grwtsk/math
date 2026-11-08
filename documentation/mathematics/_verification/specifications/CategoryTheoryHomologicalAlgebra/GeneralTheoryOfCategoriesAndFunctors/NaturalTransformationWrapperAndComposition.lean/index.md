@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/NaturalTransformationWrapperAndComposition.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/NaturalTransformationWrapperAndComposition.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/NaturalTransformationWrapperAndComposition.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/NaturalTransformationWrapperAndComposition.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Natural](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/NaturalTransformationWrapperAndComposition.lean/declarations/natural.md) | 38 | `declaration-track:43759ccc4f64f4ccda72f787813da7f1d4821b073496e9c083ee2dab81c8587d` |
-| 2 | `def` | [id](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/NaturalTransformationWrapperAndComposition.lean/declarations/id.md) | 46 | `declaration-track:54a9f06cab33686b883f9c793655d51215081251eb32bd9d47eeefac943556a1` |
-| 3 | `def` | [comp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/NaturalTransformationWrapperAndComposition.lean/declarations/comp.md) | 52 | `declaration-track:861ec9197ee7895cf514bf1fe6d06dd7e8c29ee734bf3205420bc0d1078a71fe` |
-| 4 | `theorem` | [id_hom](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/NaturalTransformationWrapperAndComposition.lean/declarations/id-hom.md) | 60 | `result-track:f12d4eac72ea49074e9205e0eb6e7948b7254dcf4e9c14369c79546c9bed04fa` |
-| 5 | `theorem` | [comp_hom](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/NaturalTransformationWrapperAndComposition.lean/declarations/comp-hom.md) | 67 | `result-track:1c5655c4e2ee665ae8ebe463f4a10b84432b1c8a893a8cb803745662cfe9aea2` |
+| 1 | `structure` | [Natural](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/NaturalTransformationWrapperAndComposition.lean/declarations/natural.md) | 38 | `declaration-track:43759ccc4f64f4ccda72f787813da7f1d4821b073496e9c083ee2dab81c8587d` |
+| 2 | `def` | [id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/NaturalTransformationWrapperAndComposition.lean/declarations/id.md) | 46 | `declaration-track:54a9f06cab33686b883f9c793655d51215081251eb32bd9d47eeefac943556a1` |
+| 3 | `def` | [comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/NaturalTransformationWrapperAndComposition.lean/declarations/comp.md) | 52 | `declaration-track:861ec9197ee7895cf514bf1fe6d06dd7e8c29ee734bf3205420bc0d1078a71fe` |
+| 4 | `theorem` | [id_hom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/NaturalTransformationWrapperAndComposition.lean/declarations/id-hom.md) | 60 | `result-track:f12d4eac72ea49074e9205e0eb6e7948b7254dcf4e9c14369c79546c9bed04fa` |
+| 5 | `theorem` | [comp_hom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/NaturalTransformationWrapperAndComposition.lean/declarations/comp-hom.md) | 67 | `result-track:1c5655c4e2ee665ae8ebe463f4a10b84432b1c8a893a8cb803745662cfe9aea2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OneHotNaturalSourceCodec.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OneHotNaturalSourceCodec.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OneHotNaturalSourceCodec.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OneHotNaturalSourceCodec.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,8 +47,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `BitMatrix.Carrier.BooleanSpace` — import line 19; external provider; requires a separately pinned dependency.
-- [Natural List And Canonical Source Codes](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NaturalListAndCanonicalSourceCodes.lean/index.md) — import line 21; pinned internal source present.
-- [Two Law Source Codec And Image Equivalence](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TwoLawSourceCodecAndImageEquivalence.lean/index.md) — import line 22; pinned internal source present.
+- [Natural List And Canonical Source Codes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NaturalListAndCanonicalSourceCodes.lean/index.md) — import line 21; pinned internal source present.
+- [Two Law Source Codec And Image Equivalence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TwoLawSourceCodecAndImageEquivalence.lean/index.md) — import line 22; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [oneHotSourceState](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OneHotNaturalSourceCodec.lean/declarations/onehotsourcestate.md) | 46 | `declaration-track:ce1ca1cde4659564197edb62dd0d30a3b847c57dd1ce48f5c558db89152b3d1c` |
-| 2 | `theorem` | [oneHotSourceState_injective](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OneHotNaturalSourceCodec.lean/declarations/onehotsourcestate-injective.md) | 51 | `result-track:133c9ea79d7e6b874849c051c60868a8a8b15db19cdb2236234042e44f54a4bc` |
-| 3 | `def` | [decodeOneHotSourceState](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OneHotNaturalSourceCodec.lean/declarations/decodeonehotsourcestate.md) | 64 | `declaration-track:25506a463536e4d9079d8e0bb38d32958c0913868364060a2d20f0451a224e07` |
-| 4 | `def` | [oneHotSourceCodec](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OneHotNaturalSourceCodec.lean/declarations/onehotsourcecodec.md) | 74 | `declaration-track:acdd884c93c5c084c0fb4d34e2b2950d7b14337b6cda00e61a29a6ca2c704cc3` |
-| 5 | `theorem` | [oneHotSourceCodec_decode_encode](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OneHotNaturalSourceCodec.lean/declarations/onehotsourcecodec-decode-encode.md) | 98 | `result-track:883aa96f08214c76c12268ccb7aa63c5128f4d560163bb75c31d08c4260787c5` |
+| 1 | `def` | [oneHotSourceState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OneHotNaturalSourceCodec.lean/declarations/onehotsourcestate.md) | 46 | `declaration-track:ce1ca1cde4659564197edb62dd0d30a3b847c57dd1ce48f5c558db89152b3d1c` |
+| 2 | `theorem` | [oneHotSourceState_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OneHotNaturalSourceCodec.lean/declarations/onehotsourcestate-injective.md) | 51 | `result-track:133c9ea79d7e6b874849c051c60868a8a8b15db19cdb2236234042e44f54a4bc` |
+| 3 | `def` | [decodeOneHotSourceState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OneHotNaturalSourceCodec.lean/declarations/decodeonehotsourcestate.md) | 64 | `declaration-track:25506a463536e4d9079d8e0bb38d32958c0913868364060a2d20f0451a224e07` |
+| 4 | `def` | [oneHotSourceCodec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OneHotNaturalSourceCodec.lean/declarations/onehotsourcecodec.md) | 74 | `declaration-track:acdd884c93c5c084c0fb4d34e2b2950d7b14337b6cda00e61a29a6ca2c704cc3` |
+| 5 | `theorem` | [oneHotSourceCodec_decode_encode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OneHotNaturalSourceCodec.lean/declarations/onehotsourcecodec-decode-encode.md) | 98 | `result-track:883aa96f08214c76c12268ccb7aa63c5128f4d560163bb75c31d08c4260787c5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

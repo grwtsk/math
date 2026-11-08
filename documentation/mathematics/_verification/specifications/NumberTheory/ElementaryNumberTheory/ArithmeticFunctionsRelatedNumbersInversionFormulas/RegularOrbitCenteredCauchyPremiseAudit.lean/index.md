@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RegularOrbitCenteredCauchyPremiseAudit.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RegularOrbitCenteredCauchyPremiseAudit.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RegularOrbitCenteredCauchyPremiseAudit.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RegularOrbitCenteredCauchyPremiseAudit.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredSecondMomentWinding`](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RegularOrbitCenteredSecondMomentWinding.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredSecondMomentWinding`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RegularOrbitCenteredSecondMomentWinding.lean/index.md) — import line 8; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [CenteredCauchyPremiseDisposition](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RegularOrbitCenteredCauchyPremiseAudit.lean/declarations/centeredcauchypremisedisposition.md) | 17 | `declaration-track:e0adbe85b30e92db89d6132b1f725baf1da8bc6336479395697b67db042da41e` |
-| 2 | `def` | [centeredCauchyCurrentDisposition](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RegularOrbitCenteredCauchyPremiseAudit.lean/declarations/centeredcauchycurrentdisposition.md) | 23 | `declaration-track:36507faa99ceb7c418712bfa5826eaaddc74f57b6bb43946c8f78064b52596b9` |
-| 3 | `def` | [CenteredCauchyRemainingAnalyticObligation](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RegularOrbitCenteredCauchyPremiseAudit.lean/declarations/centeredcauchyremaininganalyticobligation.md) | 28 | `declaration-track:a9324fae719ce844555654df6343e264d2005dada9c994491b8ba4a5eb3939b8` |
-| 4 | `def` | [CenteredCauchyExactIdentityLayer](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RegularOrbitCenteredCauchyPremiseAudit.lean/declarations/centeredcauchyexactidentitylayer-source-edition-2.md) | 32 | `declaration-track:d5e72f7aae00dd8113d3b559f4b5e36543346f045caeb2f1ce3e9f5303ad2cdf` |
-| 5 | `theorem` | [centeredCauchyExactIdentityLayer](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RegularOrbitCenteredCauchyPremiseAudit.lean/declarations/centeredcauchyexactidentitylayer.md) | 42 | `result-track:b76fba90bef910fbf02a56d3cf4fbe5d90de6abc12da9dbebed4a6a20f745cc4` |
-| 6 | `structure` | [CenteredCauchyPremiseAuditData](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RegularOrbitCenteredCauchyPremiseAudit.lean/declarations/centeredcauchypremiseauditdata.md) | 53 | `declaration-track:407d2ccad5b76ec5650522879d82e48fa8827a62304b4ac369844fafb0cd8d5f` |
-| 7 | `def` | [CenteredCauchyPremiseAudit](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RegularOrbitCenteredCauchyPremiseAudit.lean/declarations/centeredcauchypremiseaudit.md) | 64 | `declaration-track:fbda841970339fb638d294fba8ae041b33c9eedc54a7f3b3d319a73b4acf4241` |
+| 1 | `inductive` | [CenteredCauchyPremiseDisposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RegularOrbitCenteredCauchyPremiseAudit.lean/declarations/centeredcauchypremisedisposition.md) | 17 | `declaration-track:e0adbe85b30e92db89d6132b1f725baf1da8bc6336479395697b67db042da41e` |
+| 2 | `def` | [centeredCauchyCurrentDisposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RegularOrbitCenteredCauchyPremiseAudit.lean/declarations/centeredcauchycurrentdisposition.md) | 23 | `declaration-track:36507faa99ceb7c418712bfa5826eaaddc74f57b6bb43946c8f78064b52596b9` |
+| 3 | `def` | [CenteredCauchyRemainingAnalyticObligation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RegularOrbitCenteredCauchyPremiseAudit.lean/declarations/centeredcauchyremaininganalyticobligation.md) | 28 | `declaration-track:a9324fae719ce844555654df6343e264d2005dada9c994491b8ba4a5eb3939b8` |
+| 4 | `def` | [CenteredCauchyExactIdentityLayer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RegularOrbitCenteredCauchyPremiseAudit.lean/declarations/centeredcauchyexactidentitylayer-source-edition-2.md) | 32 | `declaration-track:d5e72f7aae00dd8113d3b559f4b5e36543346f045caeb2f1ce3e9f5303ad2cdf` |
+| 5 | `theorem` | [centeredCauchyExactIdentityLayer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RegularOrbitCenteredCauchyPremiseAudit.lean/declarations/centeredcauchyexactidentitylayer.md) | 42 | `result-track:b76fba90bef910fbf02a56d3cf4fbe5d90de6abc12da9dbebed4a6a20f745cc4` |
+| 6 | `structure` | [CenteredCauchyPremiseAuditData](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RegularOrbitCenteredCauchyPremiseAudit.lean/declarations/centeredcauchypremiseauditdata.md) | 53 | `declaration-track:407d2ccad5b76ec5650522879d82e48fa8827a62304b4ac369844fafb0cd8d5f` |
+| 7 | `def` | [CenteredCauchyPremiseAudit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RegularOrbitCenteredCauchyPremiseAudit.lean/declarations/centeredcauchypremiseaudit.md) | 64 | `declaration-track:fbda841970339fb638d294fba8ae041b33c9eedc54a7f3b3d319a73b4acf4241` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

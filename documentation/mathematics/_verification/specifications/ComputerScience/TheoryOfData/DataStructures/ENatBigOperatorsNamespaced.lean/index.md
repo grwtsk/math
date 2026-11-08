@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/ENatBigOperatorsNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/ENatBigOperatorsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ENatBigOperatorsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ENatBigOperatorsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [sum_iSup](../../../../../../ComputerScience/TheoryOfData/DataStructures/ENatBigOperatorsNamespaced.lean/declarations/sum-isup.md) | 25 | `result-track:b8da074546e19c33230ba64df0ad53eb1f7c088527296670d7551317987cab61` |
-| 2 | `lemma` | [sum_iSup_of_monotone](../../../../../../ComputerScience/TheoryOfData/DataStructures/ENatBigOperatorsNamespaced.lean/declarations/sum-isup-of-monotone.md) | 35 | `result-track:503b818ca6ac1aa621157f30e94f58db8e5d4fdabe3f710eb04f61d1facf7966` |
+| 1 | `lemma` | [sum_iSup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ENatBigOperatorsNamespaced.lean/declarations/sum-isup.md) | 25 | `result-track:b8da074546e19c33230ba64df0ad53eb1f7c088527296670d7551317987cab61` |
+| 2 | `lemma` | [sum_iSup_of_monotone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ENatBigOperatorsNamespaced.lean/declarations/sum-isup-of-monotone.md) | 35 | `result-track:503b818ca6ac1aa621157f30e94f58db8e5d4fdabe3f710eb04f61d1facf7966` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

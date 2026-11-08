@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CarrierAndEntrywiseExtensionality.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CarrierAndEntrywiseExtensionality.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CarrierAndEntrywiseExtensionality.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CarrierAndEntrywiseExtensionality.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [Matrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CarrierAndEntrywiseExtensionality.lean/declarations/matrix.md) | 36 | `declaration-track:ebbd960d3ce3bb431ab67324c8b4ddc3da7e521092cb92c6e009ca4c175956dc` |
-| 2 | `theorem` | [ext](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CarrierAndEntrywiseExtensionality.lean/declarations/ext.md) | 42 | `result-track:28e4ca0f3804c45a8a7c269162e319c6bdd70062c7f6add490c406011b9a209c` |
+| 1 | `abbrev` | [Matrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CarrierAndEntrywiseExtensionality.lean/declarations/matrix.md) | 36 | `declaration-track:ebbd960d3ce3bb431ab67324c8b4ddc3da7e521092cb92c6e009ca4c175956dc` |
+| 2 | `theorem` | [ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CarrierAndEntrywiseExtensionality.lean/declarations/ext.md) | 42 | `result-track:28e4ca0f3804c45a8a7c269162e319c6bdd70062c7f6add490c406011b9a209c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

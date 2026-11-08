@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckAxiomsConnectedNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckAxiomsConnectedNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckAxiomsConnectedNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckAxiomsConnectedNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,12 +60,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [IsColimit.pullbackOfHasExactColimitsOfShape](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckAxiomsConnectedNamespaced.lean/declarations/iscolimit-pullbackofhasexactcolimitsofshape.md) | 47 | `declaration-track:f0e0a88b8b13c117d963d1dd99b2de1eaab7f8525c650c481987c3a4c93b2d88` |
-| 2 | `theorem` | [IsColimit.pullback_hom_ext](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckAxiomsConnectedNamespaced.lean/declarations/iscolimit-pullback-hom-ext.md) | 60 | `result-track:8b2c49224a08343da3ec8bfb1dbd7e32946d88f4a351dcb574e3c90089485c36` |
-| 3 | `theorem` | [IsColimit.pullback_zero_ext](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckAxiomsConnectedNamespaced.lean/declarations/iscolimit-pullback-zero-ext.md) | 71 | `result-track:ec8209f072b87571430d425f920e24c7d4e428f201526a4ea4157f2a3acdce25` |
-| 4 | `def` | [IsLimit.pushoutOfHasExactLimitsOfShape](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckAxiomsConnectedNamespaced.lean/declarations/islimit-pushoutofhasexactlimitsofshape.md) | 83 | `declaration-track:be146fc0420c2fff174e4f0c59c5c6154b4e77a0538068f1aefc908eeb5b2e65` |
-| 5 | `theorem` | [IsLimit.pushout_hom_ext](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckAxiomsConnectedNamespaced.lean/declarations/islimit-pushout-hom-ext.md) | 96 | `result-track:1bafd774bd62564e42805b34f17c1cb91f061f6226e2b47aa57490b899c8dbab` |
-| 6 | `theorem` | [IsLimit.pushout_zero_ext](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckAxiomsConnectedNamespaced.lean/declarations/islimit-pushout-zero-ext.md) | 107 | `result-track:fccd799168ded269d0570310fd64da0e075e658c9c6b942ce6956669fdea669a` |
+| 1 | `def` | [IsColimit.pullbackOfHasExactColimitsOfShape](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckAxiomsConnectedNamespaced.lean/declarations/iscolimit-pullbackofhasexactcolimitsofshape.md) | 47 | `declaration-track:f0e0a88b8b13c117d963d1dd99b2de1eaab7f8525c650c481987c3a4c93b2d88` |
+| 2 | `theorem` | [IsColimit.pullback_hom_ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckAxiomsConnectedNamespaced.lean/declarations/iscolimit-pullback-hom-ext.md) | 60 | `result-track:8b2c49224a08343da3ec8bfb1dbd7e32946d88f4a351dcb574e3c90089485c36` |
+| 3 | `theorem` | [IsColimit.pullback_zero_ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckAxiomsConnectedNamespaced.lean/declarations/iscolimit-pullback-zero-ext.md) | 71 | `result-track:ec8209f072b87571430d425f920e24c7d4e428f201526a4ea4157f2a3acdce25` |
+| 4 | `def` | [IsLimit.pushoutOfHasExactLimitsOfShape](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckAxiomsConnectedNamespaced.lean/declarations/islimit-pushoutofhasexactlimitsofshape.md) | 83 | `declaration-track:be146fc0420c2fff174e4f0c59c5c6154b4e77a0538068f1aefc908eeb5b2e65` |
+| 5 | `theorem` | [IsLimit.pushout_hom_ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckAxiomsConnectedNamespaced.lean/declarations/islimit-pushout-hom-ext.md) | 96 | `result-track:1bafd774bd62564e42805b34f17c1cb91f061f6226e2b47aa57490b899c8dbab` |
+| 6 | `theorem` | [IsLimit.pushout_zero_ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckAxiomsConnectedNamespaced.lean/declarations/islimit-pushout-zero-ext.md) | 107 | `result-track:fccd799168ded269d0570310fd64da0e075e658c9c6b942ce6956669fdea669a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

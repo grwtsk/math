@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ScaledHeightCountingTail.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ScaledHeightCountingTail.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ScaledHeightCountingTail.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ScaledHeightCountingTail.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Series.HeightCountingTail`](../../../../../MeasureAndIntegration/HeightCountingTail.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Series.HeightCountingTail`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HeightCountingTail.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [finiteCountingMass_div](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ScaledHeightCountingTail.lean/declarations/finitecountingmass-div.md) | 27 | `result-track:0cbd755506349148d8263cb917157697497c2c5d3744ea80af8b730c9534bd78` |
-| 2 | `theorem` | [finite_inverseSquare_le_scaled](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ScaledHeightCountingTail.lean/declarations/finite-inversesquare-le-scaled.md) | 38 | `result-track:b63e0d12068419d8bb5f1ec431af72c5e5c688d31d4aab53ab3003ea5b9c7113` |
-| 3 | `theorem` | [dominated_family_scaled](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ScaledHeightCountingTail.lean/declarations/dominated-family-scaled.md) | 64 | `result-track:d0ca2d0851ed21aa7165dd338b38079d72376752657b46e696cb7c599013120a` |
+| 1 | `theorem` | [finiteCountingMass_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ScaledHeightCountingTail.lean/declarations/finitecountingmass-div.md) | 27 | `result-track:0cbd755506349148d8263cb917157697497c2c5d3744ea80af8b730c9534bd78` |
+| 2 | `theorem` | [finite_inverseSquare_le_scaled](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ScaledHeightCountingTail.lean/declarations/finite-inversesquare-le-scaled.md) | 38 | `result-track:b63e0d12068419d8bb5f1ec431af72c5e5c688d31d4aab53ab3003ea5b9c7113` |
+| 3 | `theorem` | [dominated_family_scaled](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ScaledHeightCountingTail.lean/declarations/dominated-family-scaled.md) | 64 | `result-track:d0ca2d0851ed21aa7165dd338b38079d72376752657b46e696cb7c599013120a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

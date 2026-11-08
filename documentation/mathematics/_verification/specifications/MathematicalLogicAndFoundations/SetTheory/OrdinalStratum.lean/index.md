@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalStratum.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalStratum.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalStratum.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalStratum.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [OrdinalStratumAccessRef](../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalStratum.lean/declarations/ordinalstratumaccessref.md) | 7 | `declaration-track:e6ccfa19428b5c1e2333c6c90ec23c335b6ca2257292a7f461145d28e30bdaf3` |
+| 1 | `structure` | [OrdinalStratumAccessRef](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalStratum.lean/declarations/ordinalstratumaccessref.md) | 7 | `declaration-track:e6ccfa19428b5c1e2333c6c90ec23c335b6ca2257292a7f461145d28e30bdaf3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

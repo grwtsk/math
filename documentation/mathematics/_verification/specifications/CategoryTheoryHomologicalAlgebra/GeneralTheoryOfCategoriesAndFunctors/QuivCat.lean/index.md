@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/QuivCat.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/QuivCat.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/QuivCat.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/QuivCat.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,16 +59,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [QuivCat](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/QuivCat.lean/declarations/quivcat.md) | 27 | `declaration-track:3eb54811760b88d6597c12f68167b2ad71765486787857402f3831ef5825a97b` |
-| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/QuivCat.lean/declarations/instance-source-edition-2.md) | 34 | `declaration-track:f2f335fda4aae99f95db984e7d35ad1421dd9ea1caf4a6faad9998a2c3dce5c8` |
-| 3 | `instance` | [str'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/QuivCat.lean/declarations/str.md) | 36 | `declaration-track:f9a4d17c99f4f1184be08a47c6e130c92f62e41680fa7e72282eeee44fb6a66d` |
-| 4 | `def` | [of](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/QuivCat.lean/declarations/of.md) | 42 | `declaration-track:89d1eec808a53449869553bb9b76e69fb76cdcdcb1acec9ec1c88a11c1f9333b` |
-| 5 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/QuivCat.lean/declarations/instance.md) | 47 | `declaration-track:09811d0ef8b00eeb66c238f43f5f91757e5b5ca87d0ee3bca5502df7e1a7bbd5` |
-| 6 | `instance` | [category](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/QuivCat.lean/declarations/category.md) | 51 | `declaration-track:7b566efdba70e528b0af18131b97a57955d5d0dd6ef4a7ab4cae6b3cd111a93c` |
-| 7 | `def` | [forget](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/QuivCat.lean/declarations/forget.md) | 61 | `declaration-track:9573f5f0bbc50ed62f63595309bf3cfca35ef3cbcff7397e9d18317bfaa4e3e0` |
-| 8 | `def` | [free](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/QuivCat.lean/declarations/free.md) | 74 | `declaration-track:6ab93392ea6341c379fdccb6dcb74e57c4a8d8b87cb17ff63c88bc59cfa0368f` |
-| 9 | `def` | [lift](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/QuivCat.lean/declarations/lift.md) | 99 | `declaration-track:2511cc6af545fd016af4838e9f519d47131ac83cefde2c8acbc4366aba2a8448` |
-| 10 | `def` | [adj](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/QuivCat.lean/declarations/adj.md) | 112 | `declaration-track:f84183893477074dc0da43265fc7d5522064a7c94b24cfc8621549f4ea96bbb0` |
+| 1 | `def` | [QuivCat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/QuivCat.lean/declarations/quivcat.md) | 27 | `declaration-track:3eb54811760b88d6597c12f68167b2ad71765486787857402f3831ef5825a97b` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/QuivCat.lean/declarations/instance-source-edition-2.md) | 34 | `declaration-track:f2f335fda4aae99f95db984e7d35ad1421dd9ea1caf4a6faad9998a2c3dce5c8` |
+| 3 | `instance` | [str'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/QuivCat.lean/declarations/str.md) | 36 | `declaration-track:f9a4d17c99f4f1184be08a47c6e130c92f62e41680fa7e72282eeee44fb6a66d` |
+| 4 | `def` | [of](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/QuivCat.lean/declarations/of.md) | 42 | `declaration-track:89d1eec808a53449869553bb9b76e69fb76cdcdcb1acec9ec1c88a11c1f9333b` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/QuivCat.lean/declarations/instance.md) | 47 | `declaration-track:09811d0ef8b00eeb66c238f43f5f91757e5b5ca87d0ee3bca5502df7e1a7bbd5` |
+| 6 | `instance` | [category](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/QuivCat.lean/declarations/category.md) | 51 | `declaration-track:7b566efdba70e528b0af18131b97a57955d5d0dd6ef4a7ab4cae6b3cd111a93c` |
+| 7 | `def` | [forget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/QuivCat.lean/declarations/forget.md) | 61 | `declaration-track:9573f5f0bbc50ed62f63595309bf3cfca35ef3cbcff7397e9d18317bfaa4e3e0` |
+| 8 | `def` | [free](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/QuivCat.lean/declarations/free.md) | 74 | `declaration-track:6ab93392ea6341c379fdccb6dcb74e57c4a8d8b87cb17ff63c88bc59cfa0368f` |
+| 9 | `def` | [lift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/QuivCat.lean/declarations/lift.md) | 99 | `declaration-track:2511cc6af545fd016af4838e9f519d47131ac83cefde2c8acbc4366aba2a8448` |
+| 10 | `def` | [adj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/QuivCat.lean/declarations/adj.md) | 112 | `declaration-track:f84183893477074dc0da43265fc7d5522064a7c94b24cfc8621549f4ea96bbb0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

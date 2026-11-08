@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/Plane.lean/index.md) · [Full source](../../../../FunctionalAnalysis/Plane.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Plane.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Plane.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [PlanePoint](../../../../FunctionalAnalysis/Plane.lean/declarations/planepoint.md) | 14 | `declaration-track:ad9f491e4d1ca729cfac78f86d41e56001b5fa39013c1374b28f35052a12e696` |
-| 2 | `def` | [cartesian](../../../../FunctionalAnalysis/Plane.lean/declarations/cartesian.md) | 19 | `declaration-track:49c2a741a070d3c53d59cfbd4475d45b71c102ca298b5c70b00e289dba55422d` |
-| 3 | `theorem` | [cartesian_horizontal](../../../../FunctionalAnalysis/Plane.lean/declarations/cartesian-horizontal.md) | 22 | `result-track:5f93d4043516100689be726f67893911f9a7019b16621d78dece2eb7402b4dd1` |
-| 4 | `theorem` | [cartesian_vertical](../../../../FunctionalAnalysis/Plane.lean/declarations/cartesian-vertical.md) | 26 | `result-track:2adf3c16be7989b6f77c22fd3dfb381b8cebab1537d5d6950ce934afce0cb3f3` |
+| 1 | `abbrev` | [PlanePoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Plane.lean/declarations/planepoint.md) | 14 | `declaration-track:ad9f491e4d1ca729cfac78f86d41e56001b5fa39013c1374b28f35052a12e696` |
+| 2 | `def` | [cartesian](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Plane.lean/declarations/cartesian.md) | 19 | `declaration-track:49c2a741a070d3c53d59cfbd4475d45b71c102ca298b5c70b00e289dba55422d` |
+| 3 | `theorem` | [cartesian_horizontal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Plane.lean/declarations/cartesian-horizontal.md) | 22 | `result-track:5f93d4043516100689be726f67893911f9a7019b16621d78dece2eb7402b4dd1` |
+| 4 | `theorem` | [cartesian_vertical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Plane.lean/declarations/cartesian-vertical.md) | 26 | `result-track:2adf3c16be7989b6f77c22fd3dfb381b8cebab1537d5d6950ce934afce0cb3f3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

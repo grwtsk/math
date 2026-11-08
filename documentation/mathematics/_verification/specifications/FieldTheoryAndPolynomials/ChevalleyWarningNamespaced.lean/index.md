@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FieldTheoryAndPolynomials/ChevalleyWarningNamespaced.lean/index.md) · [Full source](../../../../FieldTheoryAndPolynomials/ChevalleyWarningNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/ChevalleyWarningNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/ChevalleyWarningNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [MvPolynomial.sum_eval_eq_zero](../../../../FieldTheoryAndPolynomials/ChevalleyWarningNamespaced.lean/declarations/mvpolynomial-sum-eval-eq-zero.md) | 59 | `result-track:4ed17e7c7fa07d31d8787fa807d05c54505643b6423d4a8c7f3885338d3c07aa` |
-| 2 | `theorem` | [char_dvd_card_solutions_of_sum_lt](../../../../FieldTheoryAndPolynomials/ChevalleyWarningNamespaced.lean/declarations/char-dvd-card-solutions-of-sum-lt.md) | 112 | `result-track:62dea9df765e1afe313d700bd478b088a942fb7ebe99c4dd142f1ad6de67551c` |
-| 3 | `theorem` | [char_dvd_card_solutions_of_fintype_sum_lt](../../../../FieldTheoryAndPolynomials/ChevalleyWarningNamespaced.lean/declarations/char-dvd-card-solutions-of-fintype-sum-lt.md) | 170 | `result-track:56073b5496278ac1dd31108e4cd076446a6014ebb344b588caf6a329f3072df1` |
-| 4 | `theorem` | [char_dvd_card_solutions](../../../../FieldTheoryAndPolynomials/ChevalleyWarningNamespaced.lean/declarations/char-dvd-card-solutions.md) | 181 | `result-track:f9c8f8ff726b2e4f622a43ec88dceb915d147863ae49f2dbce23645e20c05fc8` |
-| 5 | `theorem` | [char_dvd_card_solutions_of_add_lt](../../../../FieldTheoryAndPolynomials/ChevalleyWarningNamespaced.lean/declarations/char-dvd-card-solutions-of-add-lt.md) | 193 | `result-track:a2116df8e36fd46234004389bae287000e72bcd97b52bc8396b1e147cfca30b4` |
+| 1 | `theorem` | [MvPolynomial.sum_eval_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/ChevalleyWarningNamespaced.lean/declarations/mvpolynomial-sum-eval-eq-zero.md) | 59 | `result-track:4ed17e7c7fa07d31d8787fa807d05c54505643b6423d4a8c7f3885338d3c07aa` |
+| 2 | `theorem` | [char_dvd_card_solutions_of_sum_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/ChevalleyWarningNamespaced.lean/declarations/char-dvd-card-solutions-of-sum-lt.md) | 112 | `result-track:62dea9df765e1afe313d700bd478b088a942fb7ebe99c4dd142f1ad6de67551c` |
+| 3 | `theorem` | [char_dvd_card_solutions_of_fintype_sum_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/ChevalleyWarningNamespaced.lean/declarations/char-dvd-card-solutions-of-fintype-sum-lt.md) | 170 | `result-track:56073b5496278ac1dd31108e4cd076446a6014ebb344b588caf6a329f3072df1` |
+| 4 | `theorem` | [char_dvd_card_solutions](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/ChevalleyWarningNamespaced.lean/declarations/char-dvd-card-solutions.md) | 181 | `result-track:f9c8f8ff726b2e4f622a43ec88dceb915d147863ae49f2dbce23645e20c05fc8` |
+| 5 | `theorem` | [char_dvd_card_solutions_of_add_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/ChevalleyWarningNamespaced.lean/declarations/char-dvd-card-solutions-of-add-lt.md) | 193 | `result-track:a2116df8e36fd46234004389bae287000e72bcd97b52bc8396b1e147cfca30b4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

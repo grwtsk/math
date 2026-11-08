@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/CountNamespacedCatalanCountZero.lean/index.md) · [Full source](../../../../Combinatorics/CountNamespacedCatalanCountZero.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CountNamespacedCatalanCountZero.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CountNamespacedCatalanCountZero.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [catalan_count_zero](../../../../Combinatorics/CountNamespacedCatalanCountZero.lean/declarations/catalan-count-zero.md) | 27 | `result-track:3f2ee1bc0125542e96bfafe5c8bb24f6b62f827c9c680c9248a7656304f8c7be` |
-| 2 | `theorem` | [catalan_count_succ](../../../../Combinatorics/CountNamespacedCatalanCountZero.lean/declarations/catalan-count-succ.md) | 31 | `result-track:3c7710b47635d239dde379dfc6a5d9460c03954ac58b67576072665209a4ffb2` |
+| 1 | `theorem` | [catalan_count_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CountNamespacedCatalanCountZero.lean/declarations/catalan-count-zero.md) | 27 | `result-track:3f2ee1bc0125542e96bfafe5c8bb24f6b62f827c9c680c9248a7656304f8c7be` |
+| 2 | `theorem` | [catalan_count_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CountNamespacedCatalanCountZero.lean/declarations/catalan-count-succ.md) | 31 | `result-track:3c7710b47635d239dde379dfc6a5d9460c03954ac58b67576072665209a4ffb2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

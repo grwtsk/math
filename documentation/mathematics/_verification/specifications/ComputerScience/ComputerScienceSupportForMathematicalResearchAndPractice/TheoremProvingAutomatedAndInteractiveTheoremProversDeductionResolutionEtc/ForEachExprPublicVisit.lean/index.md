@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ForEachExprPublicVisit.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ForEachExprPublicVisit.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ForEachExprPublicVisit.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ForEachExprPublicVisit.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [visit](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ForEachExprPublicVisit.lean/declarations/visit.md) | 23 | `declaration-track:cda3c96e646675b133f9ced10e2cef4c982e8f420bb4499d0fe0fae1df7d2a6a` |
-| 2 | `def` | [Expr.forEach'](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ForEachExprPublicVisit.lean/declarations/expr-foreach-source-edition-2.md) | 38 | `declaration-track:f02b8e23417925214267500fd360a35d3c90bcd5b76b54690b6902b4dc775c83` |
-| 3 | `def` | [Expr.forEach](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ForEachExprPublicVisit.lean/declarations/expr-foreach.md) | 41 | `declaration-track:388fd06ffe79993eddbceb04b180fc7f1f3b6c5af35d5b7a86b3e76dc01be7c4` |
+| 1 | `def` | [visit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ForEachExprPublicVisit.lean/declarations/visit.md) | 23 | `declaration-track:cda3c96e646675b133f9ced10e2cef4c982e8f420bb4499d0fe0fae1df7d2a6a` |
+| 2 | `def` | [Expr.forEach'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ForEachExprPublicVisit.lean/declarations/expr-foreach-source-edition-2.md) | 38 | `declaration-track:f02b8e23417925214267500fd360a35d3c90bcd5b76b54690b6902b4dc775c83` |
+| 3 | `def` | [Expr.forEach](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ForEachExprPublicVisit.lean/declarations/expr-foreach.md) | 41 | `declaration-track:388fd06ffe79993eddbceb04b180fc7f1f3b6c5af35d5b7a86b3e76dc01be7c4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

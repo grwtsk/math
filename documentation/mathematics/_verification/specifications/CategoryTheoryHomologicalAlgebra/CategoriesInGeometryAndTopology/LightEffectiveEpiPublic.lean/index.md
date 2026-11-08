@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightEffectiveEpiPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightEffectiveEpiPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightEffectiveEpiPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightEffectiveEpiPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightEffectiveEpiPublic.lean/declarations/instance.md) | 22 | `declaration-track:124b0d07809a34b35f6886f7549d3fc4a766d9b5848596e1d703a77bc261d972` |
-| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightEffectiveEpiPublic.lean/declarations/instance-source-edition-2.md) | 31 | `declaration-track:7d4aa7b227895e59e606e9382b0845d59a2653bfc8c177258ebc250c377514e2` |
-| 3 | `example` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightEffectiveEpiPublic.lean/declarations/example.md) | 34 | `declaration-track:fb237dff51cefe261cbaa251356b1c558d1c0a083b2e598dae701da4e1a0c237` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightEffectiveEpiPublic.lean/declarations/instance.md) | 22 | `declaration-track:124b0d07809a34b35f6886f7549d3fc4a766d9b5848596e1d703a77bc261d972` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightEffectiveEpiPublic.lean/declarations/instance-source-edition-2.md) | 31 | `declaration-track:7d4aa7b227895e59e606e9382b0845d59a2653bfc8c177258ebc250c377514e2` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightEffectiveEpiPublic.lean/declarations/example.md) | 34 | `declaration-track:fb237dff51cefe261cbaa251356b1c558d1c0a083b2e598dae701da4e1a0c237` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

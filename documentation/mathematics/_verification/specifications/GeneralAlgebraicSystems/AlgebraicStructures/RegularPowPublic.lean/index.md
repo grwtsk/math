@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/RegularPowPublic.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/RegularPowPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/RegularPowPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/RegularPowPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [IsLeftRegular.prod](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/RegularPowPublic.lean/declarations/isleftregular-prod.md) | 28 | `result-track:821e4503583eee21143e1393613768af7af8d9c751ca212c65483e53ad4e6a19` |
-| 2 | `lemma` | [IsRightRegular.prod](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/RegularPowPublic.lean/declarations/isrightregular-prod.md) | 32 | `result-track:0a80c2de1a62928a84a490c3d78a970d389bb76378ae3f1871961fc75096aff9` |
-| 3 | `lemma` | [IsRegular.prod](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/RegularPowPublic.lean/declarations/isregular-prod.md) | 36 | `result-track:3c042b455c13a5c423fa0b8149faea164f9c5f49f08dc568864dc67207f38016` |
+| 1 | `lemma` | [IsLeftRegular.prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/RegularPowPublic.lean/declarations/isleftregular-prod.md) | 28 | `result-track:821e4503583eee21143e1393613768af7af8d9c751ca212c65483e53ad4e6a19` |
+| 2 | `lemma` | [IsRightRegular.prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/RegularPowPublic.lean/declarations/isrightregular-prod.md) | 32 | `result-track:0a80c2de1a62928a84a490c3d78a970d389bb76378ae3f1871961fc75096aff9` |
+| 3 | `lemma` | [IsRegular.prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/RegularPowPublic.lean/declarations/isregular-prod.md) | 36 | `result-track:3c042b455c13a5c423fa0b8149faea164f9c5f49f08dc568864dc67207f38016` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/EnumerativeCombinatorics/ParityNamespaced.lean/index.md) · [Full source](../../../../../Combinatorics/EnumerativeCombinatorics/ParityNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/ParityNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/ParityNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [IsSquare.decidablePred](../../../../../Combinatorics/EnumerativeCombinatorics/ParityNamespaced.lean/declarations/issquare-decidablepred.md) | 26 | `declaration-track:e80d48c66289b2ff16ec05976759288126ae5bdb1ab9d790053838f82365a533` |
-| 2 | `instance` | [card_fin_two](../../../../../Combinatorics/EnumerativeCombinatorics/ParityNamespaced.lean/declarations/card-fin-two.md) | 31 | `declaration-track:b8d8534f948de54a7e7ebb1ba9d2ca769989cec626e91e0a0a198e630414e643` |
+| 1 | `instance` | [IsSquare.decidablePred](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/ParityNamespaced.lean/declarations/issquare-decidablepred.md) | 26 | `declaration-track:e80d48c66289b2ff16ec05976759288126ae5bdb1ab9d790053838f82365a533` |
+| 2 | `instance` | [card_fin_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/ParityNamespaced.lean/declarations/card-fin-two.md) | 31 | `declaration-track:b8d8534f948de54a7e7ebb1ba9d2ca769989cec626e91e0a0a198e630414e643` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WangZahlCorrelationSquarePublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WangZahlCorrelationSquarePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WangZahlCorrelationSquarePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WangZahlCorrelationSquarePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [HyperbolicSurgeryPlan.nodePacketAtoms](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WangZahlCorrelationSquarePublic.lean/declarations/hyperbolicsurgeryplan-nodepacketatoms.md) | 29 | `declaration-track:80ec65dcecc7144d08b5d54f34c421ce8819a629dee680d7a9a1e4f051ba23ca` |
-| 2 | `def` | [WangZahlNodeAdmissible](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WangZahlCorrelationSquarePublic.lean/declarations/wangzahlnodeadmissible.md) | 39 | `declaration-track:9be9e20da2df220acae526a4141f0357689775049f46c49ec80b3a7b3c205eb6` |
-| 3 | `def` | [LocalWangZahlCorrelationSquareEstimate](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WangZahlCorrelationSquarePublic.lean/declarations/localwangzahlcorrelationsquareestimate.md) | 53 | `declaration-track:c169527835cfd5dcf81e978c21d808801779f557c1b5e436184d618a1380fd90` |
+| 1 | `def` | [HyperbolicSurgeryPlan.nodePacketAtoms](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WangZahlCorrelationSquarePublic.lean/declarations/hyperbolicsurgeryplan-nodepacketatoms.md) | 29 | `declaration-track:80ec65dcecc7144d08b5d54f34c421ce8819a629dee680d7a9a1e4f051ba23ca` |
+| 2 | `def` | [WangZahlNodeAdmissible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WangZahlCorrelationSquarePublic.lean/declarations/wangzahlnodeadmissible.md) | 39 | `declaration-track:9be9e20da2df220acae526a4141f0357689775049f46c49ec80b3a7b3c205eb6` |
+| 3 | `def` | [LocalWangZahlCorrelationSquareEstimate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WangZahlCorrelationSquarePublic.lean/declarations/localwangzahlcorrelationsquareestimate.md) | 53 | `declaration-track:c169527835cfd5dcf81e978c21d808801779f557c1b5e436184d618a1380fd90` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

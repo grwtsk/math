@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ExtensionNamespaced.lean/index.md) · [Full source](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ExtensionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/ExtensionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/ExtensionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [step](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ExtensionNamespaced.lean/declarations/step.md) | 69 | `result-track:384850510c1e8d663eb005ae19d20ce5ea9d50bcdb94cbdfbc956577a3ce83fa` |
-| 2 | `theorem` | [exists_top](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ExtensionNamespaced.lean/declarations/exists-top.md) | 116 | `result-track:dcb3c8a45e5fb52a525e58a2307f042f05120da2bafb96197d6b87cbe0f0eaf8` |
-| 3 | `theorem` | [riesz_extension](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ExtensionNamespaced.lean/declarations/riesz-extension.md) | 148 | `result-track:4c022d514aa7fd2b66ddf5bf1619daa09eb76e76bad8e5c4b87a3fab007c446a` |
-| 4 | `theorem` | [exists_extension_of_le_sublinear](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ExtensionNamespaced.lean/declarations/exists-extension-of-le-sublinear.md) | 162 | `result-track:2456723debbd8fcdfd3065037ec8b4befdc513991383bfbaa4c79466a01f9c1c` |
+| 1 | `theorem` | [step](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/ExtensionNamespaced.lean/declarations/step.md) | 69 | `result-track:384850510c1e8d663eb005ae19d20ce5ea9d50bcdb94cbdfbc956577a3ce83fa` |
+| 2 | `theorem` | [exists_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/ExtensionNamespaced.lean/declarations/exists-top.md) | 116 | `result-track:dcb3c8a45e5fb52a525e58a2307f042f05120da2bafb96197d6b87cbe0f0eaf8` |
+| 3 | `theorem` | [riesz_extension](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/ExtensionNamespaced.lean/declarations/riesz-extension.md) | 148 | `result-track:4c022d514aa7fd2b66ddf5bf1619daa09eb76e76bad8e5c4b87a3fab007c446a` |
+| 4 | `theorem` | [exists_extension_of_le_sublinear](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/ExtensionNamespaced.lean/declarations/exists-extension-of-le-sublinear.md) | 162 | `result-track:2456723debbd8fcdfd3065037ec8b4befdc513991383bfbaa4c79466a01f9c1c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

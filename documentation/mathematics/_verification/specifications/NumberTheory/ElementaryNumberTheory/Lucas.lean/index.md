@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/Lucas.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/Lucas.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/Lucas.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/Lucas.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [choose_modEq_choose_mod_mul_choose_div](../../../../../NumberTheory/ElementaryNumberTheory/Lucas.lean/declarations/choose-modeq-choose-mod-mul-choose-div.md) | 34 | `result-track:e51b010250698da05605e0299d62868fd3f922da0f224eac79726dc0556a8462` |
-| 2 | `theorem` | [choose_modEq_choose_mod_mul_choose_div_nat](../../../../../NumberTheory/ElementaryNumberTheory/Lucas.lean/declarations/choose-modeq-choose-mod-mul-choose-div-nat.md) | 64 | `result-track:356ac6cc20855ed213535e82ace2471c21527495159918b7d51db54a020ff0c0` |
-| 3 | `theorem` | [choose_modEq_choose_mul_prod_range_choose](../../../../../NumberTheory/ElementaryNumberTheory/Lucas.lean/declarations/choose-modeq-choose-mul-prod-range-choose.md) | 71 | `result-track:59f9ad2441938db356ad97477336d141f02d8111eff8bbd0d7215b2299aec0a1` |
-| 4 | `theorem` | [choose_modEq_prod_range_choose](../../../../../NumberTheory/ElementaryNumberTheory/Lucas.lean/declarations/choose-modeq-prod-range-choose.md) | 84 | `result-track:a16c5cefc44c48f9a38e0b2c5891a6530c31d82bb9027f49c16d95c18b8b223f` |
-| 5 | `theorem` | [choose_modEq_prod_range_choose_nat](../../../../../NumberTheory/ElementaryNumberTheory/Lucas.lean/declarations/choose-modeq-prod-range-choose-nat.md) | 92 | `result-track:5896bf9c8b15175c7f04241ed5e01daf96ec4b53aa7a4f92196eaf019b36a3de` |
+| 1 | `theorem` | [choose_modEq_choose_mod_mul_choose_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/Lucas.lean/declarations/choose-modeq-choose-mod-mul-choose-div.md) | 34 | `result-track:e51b010250698da05605e0299d62868fd3f922da0f224eac79726dc0556a8462` |
+| 2 | `theorem` | [choose_modEq_choose_mod_mul_choose_div_nat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/Lucas.lean/declarations/choose-modeq-choose-mod-mul-choose-div-nat.md) | 64 | `result-track:356ac6cc20855ed213535e82ace2471c21527495159918b7d51db54a020ff0c0` |
+| 3 | `theorem` | [choose_modEq_choose_mul_prod_range_choose](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/Lucas.lean/declarations/choose-modeq-choose-mul-prod-range-choose.md) | 71 | `result-track:59f9ad2441938db356ad97477336d141f02d8111eff8bbd0d7215b2299aec0a1` |
+| 4 | `theorem` | [choose_modEq_prod_range_choose](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/Lucas.lean/declarations/choose-modeq-prod-range-choose.md) | 84 | `result-track:a16c5cefc44c48f9a38e0b2c5891a6530c31d82bb9027f49c16d95c18b8b223f` |
+| 5 | `theorem` | [choose_modEq_prod_range_choose_nat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/Lucas.lean/declarations/choose-modeq-prod-range-choose-nat.md) | 92 | `result-track:5896bf9c8b15175c7f04241ed5e01daf96ec4b53aa7a4f92196eaf019b36a3de` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

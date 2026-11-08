@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryNamespacedAlternativeSourceEdition2.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryNamespacedAlternativeSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryNamespacedAlternativeSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryNamespacedAlternativeSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [plainKernel_inventory](../../../../MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryNamespacedAlternativeSourceEdition2.lean/declarations/plainkernel-inventory.md) | 30 | `result-track:0f0b260c35d7ea232b7cf2de0af929a6bf3932f1c0ed738d51bd7a0b10adcf6e` |
-| 2 | `theorem` | [omega_sum_kernel_abs_le](../../../../MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryNamespacedAlternativeSourceEdition2.lean/declarations/omega-sum-kernel-abs-le.md) | 46 | `result-track:eeca9716c7a5b72675d77b44d40911b8e38fff9acff1dd8a6118616c4b17db99` |
+| 1 | `theorem` | [plainKernel_inventory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryNamespacedAlternativeSourceEdition2.lean/declarations/plainkernel-inventory.md) | 30 | `result-track:0f0b260c35d7ea232b7cf2de0af929a6bf3932f1c0ed738d51bd7a0b10adcf6e` |
+| 2 | `theorem` | [omega_sum_kernel_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryNamespacedAlternativeSourceEdition2.lean/declarations/omega-sum-kernel-abs-le.md) | 46 | `result-track:eeca9716c7a5b72675d77b44d40911b8e38fff9acff1dd8a6118616c4b17db99` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

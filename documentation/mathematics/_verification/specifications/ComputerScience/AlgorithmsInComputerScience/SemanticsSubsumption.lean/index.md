@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/SemanticsSubsumption.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/SemanticsSubsumption.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SemanticsSubsumption.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SemanticsSubsumption.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [link](../../../../../ComputerScience/AlgorithmsInComputerScience/SemanticsSubsumption.lean/declarations/link.md) | 16 | `declaration-track:e32e2751050d195d874898754d173a9d6231cdc2f8cf9f70d81ee804df856b8a` |
-| 2 | `def` | [satisfies](../../../../../ComputerScience/AlgorithmsInComputerScience/SemanticsSubsumption.lean/declarations/satisfies.md) | 39 | `declaration-track:d142c15ff1e44c26b04a2faa51acda9cb79479e8e0f4155a8f099608a5627d92` |
-| 3 | `def` | [valid](../../../../../ComputerScience/AlgorithmsInComputerScience/SemanticsSubsumption.lean/declarations/valid.md) | 44 | `declaration-track:5fd4abf7fd7944762e1cca23a5e2f677a3150ad50da1c19697decb5b7c3f07a7` |
-| 4 | `def` | [satisfiable](../../../../../ComputerScience/AlgorithmsInComputerScience/SemanticsSubsumption.lean/declarations/satisfiable.md) | 49 | `declaration-track:e144237d7469516e9b5412712fdb7ba4c5794d4f845032e1947bcc055cbfc798` |
-| 5 | `def` | [unsatisfiable](../../../../../ComputerScience/AlgorithmsInComputerScience/SemanticsSubsumption.lean/declarations/unsatisfiable.md) | 54 | `declaration-track:d52108b98182ba168f65cc224c067dde713142bbb7048867f99723c46714a04d` |
-| 6 | `def` | [entails](../../../../../ComputerScience/AlgorithmsInComputerScience/SemanticsSubsumption.lean/declarations/entails.md) | 59 | `declaration-track:ad58a339dbecc3a078bc7074eb37be540ef88d00d4752d95d9ce8293bfd44ad7` |
-| 7 | `def` | [equivalent](../../../../../ComputerScience/AlgorithmsInComputerScience/SemanticsSubsumption.lean/declarations/equivalent.md) | 64 | `declaration-track:90eea50d57a8ce736e47c1c5b2b225c19bb42daa48a699b116b5e2debfa56f29` |
-| 8 | `def` | [links](../../../../../ComputerScience/AlgorithmsInComputerScience/SemanticsSubsumption.lean/declarations/links.md) | 69 | `declaration-track:01d40875e01f7f21fec6cfaa20c99ff30cdccb4ad1d91b11f230d0730563c9bd` |
-| 9 | `theorem` | [links_length](../../../../../ComputerScience/AlgorithmsInComputerScience/SemanticsSubsumption.lean/declarations/links-length.md) | 78 | `result-track:5f1452416b97fbbc1ef93e10a865ba6d29ee13bb540111c65565780e2fce6a5e` |
+| 1 | `def` | [link](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SemanticsSubsumption.lean/declarations/link.md) | 16 | `declaration-track:e32e2751050d195d874898754d173a9d6231cdc2f8cf9f70d81ee804df856b8a` |
+| 2 | `def` | [satisfies](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SemanticsSubsumption.lean/declarations/satisfies.md) | 39 | `declaration-track:d142c15ff1e44c26b04a2faa51acda9cb79479e8e0f4155a8f099608a5627d92` |
+| 3 | `def` | [valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SemanticsSubsumption.lean/declarations/valid.md) | 44 | `declaration-track:5fd4abf7fd7944762e1cca23a5e2f677a3150ad50da1c19697decb5b7c3f07a7` |
+| 4 | `def` | [satisfiable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SemanticsSubsumption.lean/declarations/satisfiable.md) | 49 | `declaration-track:e144237d7469516e9b5412712fdb7ba4c5794d4f845032e1947bcc055cbfc798` |
+| 5 | `def` | [unsatisfiable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SemanticsSubsumption.lean/declarations/unsatisfiable.md) | 54 | `declaration-track:d52108b98182ba168f65cc224c067dde713142bbb7048867f99723c46714a04d` |
+| 6 | `def` | [entails](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SemanticsSubsumption.lean/declarations/entails.md) | 59 | `declaration-track:ad58a339dbecc3a078bc7074eb37be540ef88d00d4752d95d9ce8293bfd44ad7` |
+| 7 | `def` | [equivalent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SemanticsSubsumption.lean/declarations/equivalent.md) | 64 | `declaration-track:90eea50d57a8ce736e47c1c5b2b225c19bb42daa48a699b116b5e2debfa56f29` |
+| 8 | `def` | [links](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SemanticsSubsumption.lean/declarations/links.md) | 69 | `declaration-track:01d40875e01f7f21fec6cfaa20c99ff30cdccb4ad1d91b11f230d0730563c9bd` |
+| 9 | `theorem` | [links_length](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SemanticsSubsumption.lean/declarations/links-length.md) | 78 | `result-track:5f1452416b97fbbc1ef93e10a865ba6d29ee13bb540111c65565780e2fce6a5e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

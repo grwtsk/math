@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ThetaPhiRankFiveResults.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ThetaPhiRankFiveResults.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ThetaPhiRankFiveResults.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ThetaPhiRankFiveResults.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,15 +60,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exp_lower_endpoint](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ThetaPhiRankFiveResults.lean/declarations/exp-lower-endpoint.md) | 10 | `result-track:c8145da41c8dc1fbba93baa07649812689b8960b47262f26688b6d4a9efc26df` |
-| 2 | `theorem` | [exp_upper_endpoint](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ThetaPhiRankFiveResults.lean/declarations/exp-upper-endpoint.md) | 20 | `result-track:fce5e63f2a2680866b672447ff849f09e848e79d3925da6c42c4f4f6105401ab` |
-| 3 | `theorem` | [exp_neg_pi_quarter_bounds](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ThetaPhiRankFiveResults.lean/declarations/exp-neg-pi-quarter-bounds.md) | 30 | `result-track:0f9764ca14ccc8f5077b0d21d8186023d098f0910f02fbddfdfa2ded3033375a` |
-| 4 | `theorem` | [exp_neg_pi_bounds](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ThetaPhiRankFiveResults.lean/declarations/exp-neg-pi-bounds.md) | 39 | `result-track:848f4a341219590e5533b13f9ab41a375b33993f405f7eb7aa0a523c0ea5dacd` |
-| 5 | `theorem` | [exp_neg_three_quarters_upper](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ThetaPhiRankFiveResults.lean/declarations/exp-neg-three-quarters-upper.md) | 56 | `result-track:35f70002bd8223d62f10972de96236f6307028970bd72b2f8f11fa20f4869a10` |
-| 6 | `theorem` | [exp_neg_seventy_five_upper](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ThetaPhiRankFiveResults.lean/declarations/exp-neg-seventy-five-upper.md) | 64 | `result-track:fa5b4fe453369b3c98ded486bccf6a9036ec3fc94f2b55d6b268ae3d0a99701d` |
-| 7 | `theorem` | [tail_geometric_ratio](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ThetaPhiRankFiveResults.lean/declarations/tail-geometric-ratio.md) | 74 | `result-track:e273093457a2c63f7bfe99d3652f83ddc77ee096c62f3e315f753186f95b13a4` |
-| 8 | `theorem` | [exp_neg_pi_nat_sq](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ThetaPhiRankFiveResults.lean/declarations/exp-neg-pi-nat-sq.md) | 87 | `result-track:f769b46e3106f83a6ae08e7333325e6a8cd5982e505e8feda7f3ce7d88643e33` |
-| 9 | `theorem` | [thetaPhiDerivativeModeValue_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ThetaPhiRankFiveResults.lean/declarations/thetaphiderivativemodevalue-zero.md) | 98 | `result-track:e5b232989d482d0b606544d50ec3a812dfb3d1b9110bf31aa1b6ba0fbffffb6f` |
+| 1 | `theorem` | [exp_lower_endpoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ThetaPhiRankFiveResults.lean/declarations/exp-lower-endpoint.md) | 10 | `result-track:c8145da41c8dc1fbba93baa07649812689b8960b47262f26688b6d4a9efc26df` |
+| 2 | `theorem` | [exp_upper_endpoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ThetaPhiRankFiveResults.lean/declarations/exp-upper-endpoint.md) | 20 | `result-track:fce5e63f2a2680866b672447ff849f09e848e79d3925da6c42c4f4f6105401ab` |
+| 3 | `theorem` | [exp_neg_pi_quarter_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ThetaPhiRankFiveResults.lean/declarations/exp-neg-pi-quarter-bounds.md) | 30 | `result-track:0f9764ca14ccc8f5077b0d21d8186023d098f0910f02fbddfdfa2ded3033375a` |
+| 4 | `theorem` | [exp_neg_pi_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ThetaPhiRankFiveResults.lean/declarations/exp-neg-pi-bounds.md) | 39 | `result-track:848f4a341219590e5533b13f9ab41a375b33993f405f7eb7aa0a523c0ea5dacd` |
+| 5 | `theorem` | [exp_neg_three_quarters_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ThetaPhiRankFiveResults.lean/declarations/exp-neg-three-quarters-upper.md) | 56 | `result-track:35f70002bd8223d62f10972de96236f6307028970bd72b2f8f11fa20f4869a10` |
+| 6 | `theorem` | [exp_neg_seventy_five_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ThetaPhiRankFiveResults.lean/declarations/exp-neg-seventy-five-upper.md) | 64 | `result-track:fa5b4fe453369b3c98ded486bccf6a9036ec3fc94f2b55d6b268ae3d0a99701d` |
+| 7 | `theorem` | [tail_geometric_ratio](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ThetaPhiRankFiveResults.lean/declarations/tail-geometric-ratio.md) | 74 | `result-track:e273093457a2c63f7bfe99d3652f83ddc77ee096c62f3e315f753186f95b13a4` |
+| 8 | `theorem` | [exp_neg_pi_nat_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ThetaPhiRankFiveResults.lean/declarations/exp-neg-pi-nat-sq.md) | 87 | `result-track:f769b46e3106f83a6ae08e7333325e6a8cd5982e505e8feda7f3ce7d88643e33` |
+| 9 | `theorem` | [thetaPhiDerivativeModeValue_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ThetaPhiRankFiveResults.lean/declarations/thetaphiderivativemodevalue-zero.md) | 98 | `result-track:e5b232989d482d0b606544d50ec3a812dfb3d1b9110bf31aa1b6ba0fbffffb6f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

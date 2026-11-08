@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../DynamicalSystemsAndErgodicTheory/RetainedStateObserverFactor.lean/index.md) · [Full source](../../../../DynamicalSystemsAndErgodicTheory/RetainedStateObserverFactor.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/RetainedStateObserverFactor.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/RetainedStateObserverFactor.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,8 +60,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [customObservedRingSystem](../../../../DynamicalSystemsAndErgodicTheory/RetainedStateObserverFactor.lean/declarations/customobservedringsystem.md) | 52 | `declaration-track:719c09dd9ee55c38620bfcbcb192da32d55b23207df0ea2904e99ccf0193b9e4` |
-| 2 | `def` | [retainedStateObserverReducer](../../../../DynamicalSystemsAndErgodicTheory/RetainedStateObserverFactor.lean/declarations/retainedstateobserverreducer.md) | 68 | `declaration-track:ee818a0e282d455d08b3a3675e3243e9c9aae55d04cdf1dad1a4c4be91ac9fd8` |
+| 1 | `def` | [customObservedRingSystem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/RetainedStateObserverFactor.lean/declarations/customobservedringsystem.md) | 52 | `declaration-track:719c09dd9ee55c38620bfcbcb192da32d55b23207df0ea2904e99ccf0193b9e4` |
+| 2 | `def` | [retainedStateObserverReducer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/RetainedStateObserverFactor.lean/declarations/retainedstateobserverreducer.md) | 68 | `declaration-track:ee818a0e282d455d08b3a3675e3243e9c9aae55d04cdf1dad1a4c4be91ac9fd8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

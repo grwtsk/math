@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CanonicalStringCarrier.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CanonicalStringCarrier.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CanonicalStringCarrier.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CanonicalStringCarrier.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CanonicalSource](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CanonicalStringCarrier.lean/declarations/canonicalsource.md) | 41 | `declaration-track:954d7394457345b9c13a0e87e7368990c1caef5e0a68ce827563e97803f72a68` |
-| 2 | `theorem` | [ext](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CanonicalStringCarrier.lean/declarations/ext.md) | 50 | `result-track:6a5c98c65ab5ba374acd17eb94bb3938557d1f93b5f85eac9eca11ecdde18934` |
-| 3 | `def` | [text](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CanonicalStringCarrier.lean/declarations/text.md) | 59 | `declaration-track:9608bb8dfc2d719d50ab4975c0dea09e1cf3e715e03c8f987501029346371a5f` |
-| 4 | `def` | [utf8](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CanonicalStringCarrier.lean/declarations/utf8.md) | 64 | `declaration-track:51fe8f3c2702c45a1d3939f30df97c60c3a3a0413f86aa76d39a9961089567e5` |
+| 1 | `structure` | [CanonicalSource](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CanonicalStringCarrier.lean/declarations/canonicalsource.md) | 41 | `declaration-track:954d7394457345b9c13a0e87e7368990c1caef5e0a68ce827563e97803f72a68` |
+| 2 | `theorem` | [ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CanonicalStringCarrier.lean/declarations/ext.md) | 50 | `result-track:6a5c98c65ab5ba374acd17eb94bb3938557d1f93b5f85eac9eca11ecdde18934` |
+| 3 | `def` | [text](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CanonicalStringCarrier.lean/declarations/text.md) | 59 | `declaration-track:9608bb8dfc2d719d50ab4975c0dea09e1cf3e715e03c8f987501029346371a5f` |
+| 4 | `def` | [utf8](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CanonicalStringCarrier.lean/declarations/utf8.md) | 64 | `declaration-track:51fe8f3c2702c45a1d3939f30df97c60c3a3a0413f86aa76d39a9961089567e5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

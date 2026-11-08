@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AdditionCompatibility.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AdditionCompatibility.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AdditionCompatibility.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AdditionCompatibility.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [AdditionCompatibilityStatement](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AdditionCompatibility.lean/declarations/additioncompatibilitystatement.md) | 11 | `declaration-track:2058d090be3265ce7b0799dbb54d32f4270a716daeb3674ff58721d9e7a36204` |
-| 2 | `def` | [additionCompatibilityOpenElement](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AdditionCompatibility.lean/declarations/additioncompatibilityopenelement.md) | 17 | `declaration-track:a1e399ae838b19efcb296d293eb6a36123cd5be2ff352801488bbeab893b52bb` |
-| 3 | `def` | [additionOperationDependency](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AdditionCompatibility.lean/declarations/additionoperationdependency.md) | 32 | `declaration-track:1128bbad2693f03726682d45e1e59f34f96737bf8696d9be374d1ce2ab56bee9` |
-| 4 | `def` | [additionEqualityDependency](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AdditionCompatibility.lean/declarations/additionequalitydependency.md) | 42 | `declaration-track:7a6945b877e32b9dfef2a03db6e4b190b7669852be4df0172d114191cba480f0` |
-| 5 | `def` | [additionCompatibilitySeed](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AdditionCompatibility.lean/declarations/additioncompatibilityseed.md) | 52 | `declaration-track:3fb13389c49326239eaf77b769f06e9d0ccb329b770916cb6ce8818414924e67` |
-| 6 | `theorem` | [additionCompatibility](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AdditionCompatibility.lean/declarations/additioncompatibility.md) | 66 | `result-track:b69c2eae5a15acceef267a8d2f8847b1169228f02633ce12f8e81324dcff7069` |
-| 7 | `def` | [additionCompatibilityTheoremElement](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AdditionCompatibility.lean/declarations/additioncompatibilitytheoremelement.md) | 73 | `declaration-track:0e76bc37c480da5f25755ed453756bae43134d102d55fdcde2553b8ede8cf9df` |
-| 8 | `def` | [additionCompatibilityCorpusItem](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AdditionCompatibility.lean/declarations/additioncompatibilitycorpusitem.md) | 84 | `declaration-track:f572715160cebc0852f0de58a55524ada90257d374d0107505b398b34a4d84f1` |
+| 1 | `def` | [AdditionCompatibilityStatement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AdditionCompatibility.lean/declarations/additioncompatibilitystatement.md) | 11 | `declaration-track:2058d090be3265ce7b0799dbb54d32f4270a716daeb3674ff58721d9e7a36204` |
+| 2 | `def` | [additionCompatibilityOpenElement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AdditionCompatibility.lean/declarations/additioncompatibilityopenelement.md) | 17 | `declaration-track:a1e399ae838b19efcb296d293eb6a36123cd5be2ff352801488bbeab893b52bb` |
+| 3 | `def` | [additionOperationDependency](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AdditionCompatibility.lean/declarations/additionoperationdependency.md) | 32 | `declaration-track:1128bbad2693f03726682d45e1e59f34f96737bf8696d9be374d1ce2ab56bee9` |
+| 4 | `def` | [additionEqualityDependency](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AdditionCompatibility.lean/declarations/additionequalitydependency.md) | 42 | `declaration-track:7a6945b877e32b9dfef2a03db6e4b190b7669852be4df0172d114191cba480f0` |
+| 5 | `def` | [additionCompatibilitySeed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AdditionCompatibility.lean/declarations/additioncompatibilityseed.md) | 52 | `declaration-track:3fb13389c49326239eaf77b769f06e9d0ccb329b770916cb6ce8818414924e67` |
+| 6 | `theorem` | [additionCompatibility](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AdditionCompatibility.lean/declarations/additioncompatibility.md) | 66 | `result-track:b69c2eae5a15acceef267a8d2f8847b1169228f02633ce12f8e81324dcff7069` |
+| 7 | `def` | [additionCompatibilityTheoremElement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AdditionCompatibility.lean/declarations/additioncompatibilitytheoremelement.md) | 73 | `declaration-track:0e76bc37c480da5f25755ed453756bae43134d102d55fdcde2553b8ede8cf9df` |
+| 8 | `def` | [additionCompatibilityCorpusItem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AdditionCompatibility.lean/declarations/additioncompatibilitycorpusitem.md) | 84 | `declaration-track:f572715160cebc0852f0de58a55524ada90257d374d0107505b398b34a4d84f1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

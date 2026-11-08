@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FieldTheoryAndPolynomials/InverseCertificates.lean/index.md) · [Full source](../../../../FieldTheoryAndPolynomials/InverseCertificates.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/InverseCertificates.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/InverseCertificates.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,24 +46,24 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.FiniteField.GF128.Inv9`](../../../../FieldTheoryAndPolynomials/Inv9.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.Algebra.FiniteField.GF128.Inv10`](../../../../FieldTheoryAndPolynomials/Inv10.lean/index.md) — import line 2; pinned internal source present.
-- [`GRWTSK.Algebra.FiniteField.GF128.Inv12`](../../../../FieldTheoryAndPolynomials/Inv12.lean/index.md) — import line 3; pinned internal source present.
-- [`GRWTSK.Algebra.FiniteField.GF128.Inv14`](../../../../FieldTheoryAndPolynomials/Inv14.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Algebra.FiniteField.GF128.Inv18`](../../../../FieldTheoryAndPolynomials/Inv18.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.Algebra.FiniteField.GF128.Inv24`](../../../../FieldTheoryAndPolynomials/Inv24.lean/index.md) — import line 6; pinned internal source present.
-- [`GRWTSK.Algebra.FiniteField.GF128.Inv27`](../../../../FieldTheoryAndPolynomials/Inv27.lean/index.md) — import line 7; pinned internal source present.
-- [`GRWTSK.Algebra.FiniteField.GF128.Inv28`](../../../../FieldTheoryAndPolynomials/Inv28.lean/index.md) — import line 8; pinned internal source present.
-- [`GRWTSK.Algebra.FiniteField.GF128.Inv30`](../../../../FieldTheoryAndPolynomials/Inv30.lean/index.md) — import line 9; pinned internal source present.
-- [`GRWTSK.Algebra.FiniteField.GF128.Inv36`](../../../../FieldTheoryAndPolynomials/Inv36.lean/index.md) — import line 10; pinned internal source present.
-- [`GRWTSK.Algebra.FiniteField.GF128.Inv40`](../../../../FieldTheoryAndPolynomials/Inv40.lean/index.md) — import line 11; pinned internal source present.
-- [`GRWTSK.Algebra.FiniteField.GF128.Inv45`](../../../../FieldTheoryAndPolynomials/Inv45.lean/index.md) — import line 12; pinned internal source present.
-- [`GRWTSK.Algebra.FiniteField.GF128.Inv54`](../../../../FieldTheoryAndPolynomials/Inv54.lean/index.md) — import line 13; pinned internal source present.
-- [`GRWTSK.Algebra.FiniteField.GF128.Inv56`](../../../../FieldTheoryAndPolynomials/Inv56.lean/index.md) — import line 14; pinned internal source present.
-- [`GRWTSK.Algebra.FiniteField.GF128.Inv60`](../../../../FieldTheoryAndPolynomials/Inv60.lean/index.md) — import line 15; pinned internal source present.
-- [`GRWTSK.Algebra.FiniteField.GF128.Inv72`](../../../../FieldTheoryAndPolynomials/Inv72.lean/index.md) — import line 16; pinned internal source present.
-- [`GRWTSK.Algebra.FiniteField.GF128.Inv90`](../../../../FieldTheoryAndPolynomials/Inv90.lean/index.md) — import line 17; pinned internal source present.
-- [`GRWTSK.Algebra.FiniteField.GF128.Inv108`](../../../../FieldTheoryAndPolynomials/Inv108.lean/index.md) — import line 18; pinned internal source present.
+- [`GRWTSK.Algebra.FiniteField.GF128.Inv9`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/Inv9.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Algebra.FiniteField.GF128.Inv10`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/Inv10.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.Algebra.FiniteField.GF128.Inv12`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/Inv12.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.Algebra.FiniteField.GF128.Inv14`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/Inv14.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Algebra.FiniteField.GF128.Inv18`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/Inv18.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Algebra.FiniteField.GF128.Inv24`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/Inv24.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.Algebra.FiniteField.GF128.Inv27`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/Inv27.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.Algebra.FiniteField.GF128.Inv28`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/Inv28.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.Algebra.FiniteField.GF128.Inv30`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/Inv30.lean/index.md) — import line 9; pinned internal source present.
+- [`GRWTSK.Algebra.FiniteField.GF128.Inv36`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/Inv36.lean/index.md) — import line 10; pinned internal source present.
+- [`GRWTSK.Algebra.FiniteField.GF128.Inv40`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/Inv40.lean/index.md) — import line 11; pinned internal source present.
+- [`GRWTSK.Algebra.FiniteField.GF128.Inv45`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/Inv45.lean/index.md) — import line 12; pinned internal source present.
+- [`GRWTSK.Algebra.FiniteField.GF128.Inv54`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/Inv54.lean/index.md) — import line 13; pinned internal source present.
+- [`GRWTSK.Algebra.FiniteField.GF128.Inv56`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/Inv56.lean/index.md) — import line 14; pinned internal source present.
+- [`GRWTSK.Algebra.FiniteField.GF128.Inv60`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/Inv60.lean/index.md) — import line 15; pinned internal source present.
+- [`GRWTSK.Algebra.FiniteField.GF128.Inv72`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/Inv72.lean/index.md) — import line 16; pinned internal source present.
+- [`GRWTSK.Algebra.FiniteField.GF128.Inv90`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/Inv90.lean/index.md) — import line 17; pinned internal source present.
+- [`GRWTSK.Algebra.FiniteField.GF128.Inv108`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/Inv108.lean/index.md) — import line 18; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -74,11 +74,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [runtimeDenominators](../../../../FieldTheoryAndPolynomials/InverseCertificates.lean/declarations/runtimedenominators.md) | 23 | `declaration-track:ced2e4e75cb696d286b49c321e12a73efc477fc82455af4cff7cdf9eefd33868` |
-| 2 | `def` | [lookupInv](../../../../FieldTheoryAndPolynomials/InverseCertificates.lean/declarations/lookupinv.md) | 25 | `declaration-track:48e875a919bffc53b5bacae5e71c632c60c68f2382f21c0454dfef2b550a43bc` |
-| 3 | `theorem` | [inv_eq_lookupInv](../../../../FieldTheoryAndPolynomials/InverseCertificates.lean/declarations/inv-eq-lookupinv.md) | 46 | `result-track:d49da5fe647fc74964eabcc53a1057c1f9b7b1e7d81aa1015be69d529c8b8cf0` |
-| 4 | `theorem` | [runtime_inverse_laws](../../../../FieldTheoryAndPolynomials/InverseCertificates.lean/declarations/runtime-inverse-laws.md) | 71 | `result-track:3dc9b9e1d5784dbcd4faf12ed26caf01f8b2bb5bfc6a26e2aba57263ca10487b` |
-| 5 | `theorem` | [inv_zero_refused](../../../../FieldTheoryAndPolynomials/InverseCertificates.lean/declarations/inv-zero-refused.md) | 96 | `result-track:4368c2ff72b5d8e05b87b458c9ccddc92265ab21e1c4361647869d35a9f4b46b` |
+| 1 | `def` | [runtimeDenominators](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/InverseCertificates.lean/declarations/runtimedenominators.md) | 23 | `declaration-track:ced2e4e75cb696d286b49c321e12a73efc477fc82455af4cff7cdf9eefd33868` |
+| 2 | `def` | [lookupInv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/InverseCertificates.lean/declarations/lookupinv.md) | 25 | `declaration-track:48e875a919bffc53b5bacae5e71c632c60c68f2382f21c0454dfef2b550a43bc` |
+| 3 | `theorem` | [inv_eq_lookupInv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/InverseCertificates.lean/declarations/inv-eq-lookupinv.md) | 46 | `result-track:d49da5fe647fc74964eabcc53a1057c1f9b7b1e7d81aa1015be69d529c8b8cf0` |
+| 4 | `theorem` | [runtime_inverse_laws](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/InverseCertificates.lean/declarations/runtime-inverse-laws.md) | 71 | `result-track:3dc9b9e1d5784dbcd4faf12ed26caf01f8b2bb5bfc6a26e2aba57263ca10487b` |
+| 5 | `theorem` | [inv_zero_refused](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/InverseCertificates.lean/declarations/inv-zero-refused.md) | 96 | `result-track:4368c2ff72b5d8e05b87b458c9ccddc92265ab21e1c4361647869d35a9f4b46b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

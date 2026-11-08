@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LoopClosureNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LoopClosureNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LoopClosureNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LoopClosureNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ArithmeticLoopReplayMetadata](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LoopClosureNamespaced.lean/declarations/arithmeticloopreplaymetadata.md) | 33 | `declaration-track:f98bcd7d089f03614e6ec9195c3a95dcdd99c3344195a5964bc29214f2dcdf52` |
-| 2 | `structure` | [ArithmeticLoopState](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LoopClosureNamespaced.lean/declarations/arithmeticloopstate.md) | 50 | `declaration-track:333327183d0e5072ad50f9d08f9debc4d20ab62b334b38e07977b2c7c346dc3f` |
-| 3 | `def` | [determinant](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LoopClosureNamespaced.lean/declarations/determinant.md) | 69 | `declaration-track:d03861455239683eee46a946a5fdbb611ce84fd388c2ba2b97572487105c5ac4` |
-| 4 | `structure` | [CertifiedLoopClosure](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LoopClosureNamespaced.lean/declarations/certifiedloopclosure.md) | 81 | `declaration-track:4d78fd1a629d075ab0730fdb7a12350513bb412cf76acd0c56e2fde7e926dde2` |
-| 5 | `theorem` | [monodromy_conjugate](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LoopClosureNamespaced.lean/declarations/monodromy-conjugate.md) | 131 | `result-track:0edab6fddb8575b9a50c4dd7096f66e981b88f3315c01cbdd1e53f02c19a2c3b` |
-| 6 | `theorem` | [determinantPreserved](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LoopClosureNamespaced.lean/declarations/determinantpreserved.md) | 149 | `result-track:31a016abf05869ec7a7fd6148bbef9002fa2a9c76e3f8d0ebc26975f5b049930` |
+| 1 | `structure` | [ArithmeticLoopReplayMetadata](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LoopClosureNamespaced.lean/declarations/arithmeticloopreplaymetadata.md) | 33 | `declaration-track:f98bcd7d089f03614e6ec9195c3a95dcdd99c3344195a5964bc29214f2dcdf52` |
+| 2 | `structure` | [ArithmeticLoopState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LoopClosureNamespaced.lean/declarations/arithmeticloopstate.md) | 50 | `declaration-track:333327183d0e5072ad50f9d08f9debc4d20ab62b334b38e07977b2c7c346dc3f` |
+| 3 | `def` | [determinant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LoopClosureNamespaced.lean/declarations/determinant.md) | 69 | `declaration-track:d03861455239683eee46a946a5fdbb611ce84fd388c2ba2b97572487105c5ac4` |
+| 4 | `structure` | [CertifiedLoopClosure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LoopClosureNamespaced.lean/declarations/certifiedloopclosure.md) | 81 | `declaration-track:4d78fd1a629d075ab0730fdb7a12350513bb412cf76acd0c56e2fde7e926dde2` |
+| 5 | `theorem` | [monodromy_conjugate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LoopClosureNamespaced.lean/declarations/monodromy-conjugate.md) | 131 | `result-track:0edab6fddb8575b9a50c4dd7096f66e981b88f3315c01cbdd1e53f02c19a2c3b` |
+| 6 | `theorem` | [determinantPreserved](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LoopClosureNamespaced.lean/declarations/determinantpreserved.md) | 149 | `result-track:31a016abf05869ec7a7fd6148bbef9002fa2a9c76e3f8d0ebc26975f5b049930` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

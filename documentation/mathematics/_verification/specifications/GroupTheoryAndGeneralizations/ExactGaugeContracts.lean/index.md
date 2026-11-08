@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/ExactGaugeContracts.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/ExactGaugeContracts.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ExactGaugeContracts.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ExactGaugeContracts.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.OrderedProductGauge`](../../../../GroupTheoryAndGeneralizations/OrderedProductGauge.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Algebra.OrderedProductGauge`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OrderedProductGauge.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/ExactGaugeContracts.lean/declarations/example-source-edition-2.md) | 5 | `declaration-track:a936ac8e59c35432620b0147ceeb9750258f30cc6fb01cc13360877d6ff91e76` |
-| 2 | `example` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/ExactGaugeContracts.lean/declarations/example.md) | 6 | `declaration-track:512f5ad143b9dbf829a302357ca02a86730582edabe4c3d5224efab8af0da739` |
-| 3 | `example` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/ExactGaugeContracts.lean/declarations/example-source-edition-3.md) | 7 | `declaration-track:bc183e1e9482bba8c1652f16aad9241ebc0c883d65632a79abb239fe54a1ca34` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ExactGaugeContracts.lean/declarations/example-source-edition-2.md) | 5 | `declaration-track:a936ac8e59c35432620b0147ceeb9750258f30cc6fb01cc13360877d6ff91e76` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ExactGaugeContracts.lean/declarations/example.md) | 6 | `declaration-track:512f5ad143b9dbf829a302357ca02a86730582edabe4c3d5224efab8af0da739` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ExactGaugeContracts.lean/declarations/example-source-edition-3.md) | 7 | `declaration-track:bc183e1e9482bba8c1652f16aad9241ebc0c883d65632a79abb239fe54a1ca34` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

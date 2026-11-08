@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SurfacePolygonPolarCompactCover.lean/index.md) · [Full source](../../../../GeneralTopology/SurfacePolygonPolarCompactCover.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonPolarCompactCover.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonPolarCompactCover.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarJointContinuity`](../../../../GeneralTopology/SurfacePolygonPolarJointContinuity.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarJointContinuity`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonPolarJointContinuity.lean/index.md) — import line 8; pinned internal source present.
 - `Mathlib.Topology.Instances.AddCircle.Defs` — import line 9; external provider; requires a separately pinned dependency.
 - `Mathlib.Topology.Compactness.Compact` — import line 10; external provider; requires a separately pinned dependency.
 - `Mathlib.Topology.Maps.Basic` — import line 11; external provider; requires a separately pinned dependency.
@@ -62,15 +62,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [PolarCompactSource](../../../../GeneralTopology/SurfacePolygonPolarCompactCover.lean/declarations/polarcompactsource.md) | 39 | `declaration-track:1e2144e40ec8a9117aea0e4f0fedb940f1d508c93cf0c60fa41d41f80701c4cc` |
-| 2 | `def` | [compactPolarProjection](../../../../GeneralTopology/SurfacePolygonPolarCompactCover.lean/declarations/compactpolarprojection.md) | 43 | `declaration-track:5d2340ffb0a8c86e8a3ee05ee98dc24e415c25eda36651e6294927735bb0c14c` |
-| 3 | `theorem` | [compactPolarProjection_factor](../../../../GeneralTopology/SurfacePolygonPolarCompactCover.lean/declarations/compactpolarprojection-factor.md) | 49 | `result-track:7b1286935c390ffd06dc1c64217e71a56bec6790c3202ee0cc3566f286f2a950` |
-| 4 | `theorem` | [compactPolarProjection_continuous](../../../../GeneralTopology/SurfacePolygonPolarCompactCover.lean/declarations/compactpolarprojection-continuous.md) | 53 | `result-track:58a8ee4211421e17c729bc954dbabd7fd8baf7f52570e0609a0423565869ed39` |
-| 5 | `theorem` | [compactPolarSource_compact](../../../../GeneralTopology/SurfacePolygonPolarCompactCover.lean/declarations/compactpolarsource-compact.md) | 60 | `result-track:ffc90bdf51a55bfa7c35a2115db90847e92f6310a621033ef0b6d9c926bfa2b5` |
-| 6 | `theorem` | [compactPolarProjection_surjective_of_circle_cover](../../../../GeneralTopology/SurfacePolygonPolarCompactCover.lean/declarations/compactpolarprojection-surjective-of-circle-cover.md) | 66 | `result-track:bc063797ab2ef05d8dfcda3b341779eef5f8cdfeebeac4350d03d4640e19336f` |
-| 7 | `theorem` | [compactPolarProjection_isQuotientMap_of_cover](../../../../GeneralTopology/SurfacePolygonPolarCompactCover.lean/declarations/compactpolarprojection-isquotientmap-of-cover.md) | 77 | `result-track:a335f6411f69618879a5bb7b7cfc8e0cb3b782b794c79d37a7cf7c36607525c9` |
-| 8 | `theorem` | [polarProductProjection_isQuotientMap_of_cover](../../../../GeneralTopology/SurfacePolygonPolarCompactCover.lean/declarations/polarproductprojection-isquotientmap-of-cover.md) | 90 | `result-track:14d54648c3cf6931f6bbbcd6f1ff9754522176ca609c17835ca6118e92fce400` |
-| 9 | `theorem` | [unitCircleJointPolar_continuous_of_cover](../../../../GeneralTopology/SurfacePolygonPolarCompactCover.lean/declarations/unitcirclejointpolar-continuous-of-cover.md) | 108 | `result-track:25ed0202659d047a0732ef6208fb6c0d6286900f430f15de97d82678566cf211` |
+| 1 | `abbrev` | [PolarCompactSource](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonPolarCompactCover.lean/declarations/polarcompactsource.md) | 39 | `declaration-track:1e2144e40ec8a9117aea0e4f0fedb940f1d508c93cf0c60fa41d41f80701c4cc` |
+| 2 | `def` | [compactPolarProjection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonPolarCompactCover.lean/declarations/compactpolarprojection.md) | 43 | `declaration-track:5d2340ffb0a8c86e8a3ee05ee98dc24e415c25eda36651e6294927735bb0c14c` |
+| 3 | `theorem` | [compactPolarProjection_factor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonPolarCompactCover.lean/declarations/compactpolarprojection-factor.md) | 49 | `result-track:7b1286935c390ffd06dc1c64217e71a56bec6790c3202ee0cc3566f286f2a950` |
+| 4 | `theorem` | [compactPolarProjection_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonPolarCompactCover.lean/declarations/compactpolarprojection-continuous.md) | 53 | `result-track:58a8ee4211421e17c729bc954dbabd7fd8baf7f52570e0609a0423565869ed39` |
+| 5 | `theorem` | [compactPolarSource_compact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonPolarCompactCover.lean/declarations/compactpolarsource-compact.md) | 60 | `result-track:ffc90bdf51a55bfa7c35a2115db90847e92f6310a621033ef0b6d9c926bfa2b5` |
+| 6 | `theorem` | [compactPolarProjection_surjective_of_circle_cover](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonPolarCompactCover.lean/declarations/compactpolarprojection-surjective-of-circle-cover.md) | 66 | `result-track:bc063797ab2ef05d8dfcda3b341779eef5f8cdfeebeac4350d03d4640e19336f` |
+| 7 | `theorem` | [compactPolarProjection_isQuotientMap_of_cover](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonPolarCompactCover.lean/declarations/compactpolarprojection-isquotientmap-of-cover.md) | 77 | `result-track:a335f6411f69618879a5bb7b7cfc8e0cb3b782b794c79d37a7cf7c36607525c9` |
+| 8 | `theorem` | [polarProductProjection_isQuotientMap_of_cover](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonPolarCompactCover.lean/declarations/polarproductprojection-isquotientmap-of-cover.md) | 90 | `result-track:14d54648c3cf6931f6bbbcd6f1ff9754522176ca609c17835ca6118e92fce400` |
+| 9 | `theorem` | [unitCircleJointPolar_continuous_of_cover](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonPolarCompactCover.lean/declarations/unitcirclejointpolar-continuous-of-cover.md) | 108 | `result-track:25ed0202659d047a0732ef6208fb6c0d6286900f430f15de97d82678566cf211` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

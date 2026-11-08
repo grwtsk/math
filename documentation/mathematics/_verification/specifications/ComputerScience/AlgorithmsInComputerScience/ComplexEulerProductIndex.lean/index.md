@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ComplexEulerProductIndex.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ComplexEulerProductIndex.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ComplexEulerProductIndex.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ComplexEulerProductIndex.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [complexWeightNormAnchor](../../../../../ComputerScience/AlgorithmsInComputerScience/ComplexEulerProductIndex.lean/declarations/complexweightnormanchor.md) | 14 | `declaration-track:25349e63c7c6fc327658182433ddc7e5a886834c198b4a5c1b3a714669385570` |
-| 2 | `def` | [complexZetaHalfPlaneConvergenceAnchor](../../../../../ComputerScience/AlgorithmsInComputerScience/ComplexEulerProductIndex.lean/declarations/complexzetahalfplaneconvergenceanchor.md) | 24 | `declaration-track:5692795000e3ab1820b86f18f04fa67902ecde26cf103c91b546c8efcd7d7a1f` |
-| 3 | `def` | [complexEulerProductConvergenceAnchor](../../../../../ComputerScience/AlgorithmsInComputerScience/ComplexEulerProductIndex.lean/declarations/complexeulerproductconvergenceanchor.md) | 34 | `declaration-track:2ed9496782724adfa166dc5d2e6b98baf4cd4706e29377992d3aa5c854da7388` |
-| 4 | `def` | [complexZetaNonzeroHalfPlaneTargetAnchor](../../../../../ComputerScience/AlgorithmsInComputerScience/ComplexEulerProductIndex.lean/declarations/complexzetanonzerohalfplanetargetanchor.md) | 44 | `declaration-track:644a36f23f284a5dfa767c0bd9511fb6476a99bfbc64b8872f442d0a912c7c91` |
-| 5 | `def` | [zetaAnalyticContinuationStillTargetAnchor](../../../../../ComputerScience/AlgorithmsInComputerScience/ComplexEulerProductIndex.lean/declarations/zetaanalyticcontinuationstilltargetanchor.md) | 54 | `declaration-track:cf6dcd0aa5025481b6db778f684d761bdc9664c978af7c73742bb030bc1a333a` |
-| 6 | `def` | [pntRouteStillTargetAnchor](../../../../../ComputerScience/AlgorithmsInComputerScience/ComplexEulerProductIndex.lean/declarations/pntroutestilltargetanchor.md) | 64 | `declaration-track:b96adc8a0bb6637a75aa156e19408e30cf9869078bde70719a43ce6dec0ab698` |
-| 7 | `def` | [complexEulerProductAnchors](../../../../../ComputerScience/AlgorithmsInComputerScience/ComplexEulerProductIndex.lean/declarations/complexeulerproductanchors.md) | 74 | `declaration-track:b13e3e7630446ff0fd53d760b6b7a682bc7b2dcf5757537af310003b24871bfd` |
+| 1 | `def` | [complexWeightNormAnchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ComplexEulerProductIndex.lean/declarations/complexweightnormanchor.md) | 14 | `declaration-track:25349e63c7c6fc327658182433ddc7e5a886834c198b4a5c1b3a714669385570` |
+| 2 | `def` | [complexZetaHalfPlaneConvergenceAnchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ComplexEulerProductIndex.lean/declarations/complexzetahalfplaneconvergenceanchor.md) | 24 | `declaration-track:5692795000e3ab1820b86f18f04fa67902ecde26cf103c91b546c8efcd7d7a1f` |
+| 3 | `def` | [complexEulerProductConvergenceAnchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ComplexEulerProductIndex.lean/declarations/complexeulerproductconvergenceanchor.md) | 34 | `declaration-track:2ed9496782724adfa166dc5d2e6b98baf4cd4706e29377992d3aa5c854da7388` |
+| 4 | `def` | [complexZetaNonzeroHalfPlaneTargetAnchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ComplexEulerProductIndex.lean/declarations/complexzetanonzerohalfplanetargetanchor.md) | 44 | `declaration-track:644a36f23f284a5dfa767c0bd9511fb6476a99bfbc64b8872f442d0a912c7c91` |
+| 5 | `def` | [zetaAnalyticContinuationStillTargetAnchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ComplexEulerProductIndex.lean/declarations/zetaanalyticcontinuationstilltargetanchor.md) | 54 | `declaration-track:cf6dcd0aa5025481b6db778f684d761bdc9664c978af7c73742bb030bc1a333a` |
+| 6 | `def` | [pntRouteStillTargetAnchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ComplexEulerProductIndex.lean/declarations/pntroutestilltargetanchor.md) | 64 | `declaration-track:b96adc8a0bb6637a75aa156e19408e30cf9869078bde70719a43ce6dec0ab698` |
+| 7 | `def` | [complexEulerProductAnchors](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ComplexEulerProductIndex.lean/declarations/complexeulerproductanchors.md) | 74 | `declaration-track:b13e3e7630446ff0fd53d760b6b7a682bc7b2dcf5757537af310003b24871bfd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

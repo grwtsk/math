@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MulPublicBlastMul.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MulPublicBlastMul.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MulPublicBlastMul.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MulPublicBlastMul.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [blastMul](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MulPublicBlastMul.lean/declarations/blastmul.md) | 36 | `declaration-track:f94eb2933aa1d90c369edfb0ae2bdb8a89592545d6881f5cf7f03229808011ca` |
-| 2 | `theorem` | [go_le_size](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MulPublicBlastMul.lean/declarations/go-le-size.md) | 91 | `result-track:ad7008fc6ebeade4ee283f966871aa92b2dc0c19ca7e9aa86db2486133802a68` |
-| 3 | `theorem` | [go_decl_eq](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MulPublicBlastMul.lean/declarations/go-decl-eq.md) | 105 | `result-track:c573ed79548f4e6a2fe2ddeed53bbca2f19060be57b30c9208a55a468212c382` |
-| 4 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MulPublicBlastMul.lean/declarations/instance.md) | 134 | `declaration-track:93a231e302ff2b54a27e51c41ace40edec722362d2be7aed2b721812ebcdf922` |
-| 5 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MulPublicBlastMul.lean/declarations/instance-source-edition-2.md) | 156 | `declaration-track:b1a76eab1fe945eeb6a6e6e9b878208ece77cee6f506630ddda7964600f4fb5b` |
+| 1 | `def` | [blastMul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MulPublicBlastMul.lean/declarations/blastmul.md) | 36 | `declaration-track:f94eb2933aa1d90c369edfb0ae2bdb8a89592545d6881f5cf7f03229808011ca` |
+| 2 | `theorem` | [go_le_size](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MulPublicBlastMul.lean/declarations/go-le-size.md) | 91 | `result-track:ad7008fc6ebeade4ee283f966871aa92b2dc0c19ca7e9aa86db2486133802a68` |
+| 3 | `theorem` | [go_decl_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MulPublicBlastMul.lean/declarations/go-decl-eq.md) | 105 | `result-track:c573ed79548f4e6a2fe2ddeed53bbca2f19060be57b30c9208a55a468212c382` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MulPublicBlastMul.lean/declarations/instance.md) | 134 | `declaration-track:93a231e302ff2b54a27e51c41ace40edec722362d2be7aed2b721812ebcdf922` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MulPublicBlastMul.lean/declarations/instance-source-edition-2.md) | 156 | `declaration-track:b1a76eab1fe945eeb6a6e6e9b878208ece77cee6f506630ddda7964600f4fb5b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

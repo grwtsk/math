@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Replay.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Replay.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Replay.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Replay.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [deterministic_replay](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Replay.lean/declarations/deterministic-replay.md) | 11 | `result-track:3dae8bf8f04e8b8b9d9bbb15ee315dba88755f475f3829242c4aff088dc331cd` |
-| 2 | `structure` | [ReplayCertificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Replay.lean/declarations/replaycertificate.md) | 33 | `declaration-track:c5c30e8725c1d095f5f142490fb9b586e18a923be67b99c00476b29e7a3ee494` |
+| 1 | `theorem` | [deterministic_replay](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Replay.lean/declarations/deterministic-replay.md) | 11 | `result-track:3dae8bf8f04e8b8b9d9bbb15ee315dba88755f475f3829242c4aff088dc331cd` |
+| 2 | `structure` | [ReplayCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Replay.lean/declarations/replaycertificate.md) | 33 | `declaration-track:c5c30e8725c1d095f5f142490fb9b586e18a923be67b99c00476b29e7a3ee494` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

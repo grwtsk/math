@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeAnalyticCapabilityAssumptionPackage.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeAnalyticCapabilityAssumptionPackage.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeAnalyticCapabilityAssumptionPackage.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeAnalyticCapabilityAssumptionPackage.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -52,7 +52,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 - `Mathlib.Data.Matrix.Reflection` — import line 22; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic.FinCases` — import line 23; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic.Ring` — import line 24; external provider; requires a separately pinned dependency.
-- [Gamma Scalars Rotors And Whole Canonical Package](../../../../../RealFunctions/GammaScalarsRotorsAndWholeCanonicalPackage.lean/index.md) — import line 26; pinned internal source present.
+- [Gamma Scalars Rotors And Whole Canonical Package](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/GammaScalarsRotorsAndWholeCanonicalPackage.lean/index.md) — import line 26; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -63,7 +63,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [AnalyticGammaSpindleCapability](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeAnalyticCapabilityAssumptionPackage.lean/declarations/analyticgammaspindlecapability.md) | 54 | `declaration-track:eea717413db42e3385434fcfadb8b51a5caa32cca8c39131ff3afa7c8792ed89` |
+| 1 | `structure` | [AnalyticGammaSpindleCapability](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeAnalyticCapabilityAssumptionPackage.lean/declarations/analyticgammaspindlecapability.md) | 54 | `declaration-track:eea717413db42e3385434fcfadb8b51a5caa32cca8c39131ff3afa7c8792ed89` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

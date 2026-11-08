@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/FinitePrecisionSelection.lean/index.md) · [Full source](../../../../RealFunctions/FinitePrecisionSelection.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FinitePrecisionSelection.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FinitePrecisionSelection.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [firstWithin](../../../../RealFunctions/FinitePrecisionSelection.lean/declarations/firstwithin.md) | 24 | `declaration-track:e468dbceab255ea315bac5e6c1efa24feeadb5af989632eb10a0b2008f4701e0` |
-| 2 | `theorem` | [firstWithin_some](../../../../RealFunctions/FinitePrecisionSelection.lean/declarations/firstwithin-some.md) | 28 | `result-track:6de1a7cec1f95c68eadeecd5f855425d5a99a044a4065ab7049dcbd52d26336e` |
-| 3 | `theorem` | [firstWithin_none_iff](../../../../RealFunctions/FinitePrecisionSelection.lean/declarations/firstwithin-none-iff.md) | 43 | `result-track:edda3c02a752ad74e3bbd6102cf8e62c8d6182c6d906dfb054844c8ae39af705` |
-| 4 | `theorem` | [firstWithin_exists_of_candidate](../../../../RealFunctions/FinitePrecisionSelection.lean/declarations/firstwithin-exists-of-candidate.md) | 66 | `result-track:ff41191e9a3c2aa07d6071460bd3a66eab4df822d4a0989be1469db08a8b4c96` |
+| 1 | `def` | [firstWithin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FinitePrecisionSelection.lean/declarations/firstwithin.md) | 24 | `declaration-track:e468dbceab255ea315bac5e6c1efa24feeadb5af989632eb10a0b2008f4701e0` |
+| 2 | `theorem` | [firstWithin_some](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FinitePrecisionSelection.lean/declarations/firstwithin-some.md) | 28 | `result-track:6de1a7cec1f95c68eadeecd5f855425d5a99a044a4065ab7049dcbd52d26336e` |
+| 3 | `theorem` | [firstWithin_none_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FinitePrecisionSelection.lean/declarations/firstwithin-none-iff.md) | 43 | `result-track:edda3c02a752ad74e3bbd6102cf8e62c8d6182c6d906dfb054844c8ae39af705` |
+| 4 | `theorem` | [firstWithin_exists_of_candidate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FinitePrecisionSelection.lean/declarations/firstwithin-exists-of-candidate.md) | 66 | `result-track:ff41191e9a3c2aa07d6071460bd3a66eab4df822d4a0989be1469db08a8b4c96` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

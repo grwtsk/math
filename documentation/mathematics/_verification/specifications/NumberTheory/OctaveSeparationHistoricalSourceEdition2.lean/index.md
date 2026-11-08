@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/OctaveSeparationHistoricalSourceEdition2.lean/index.md) · [Full source](../../../../NumberTheory/OctaveSeparationHistoricalSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/OctaveSeparationHistoricalSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/OctaveSeparationHistoricalSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [one_le_power](../../../../NumberTheory/OctaveSeparationHistoricalSourceEdition2.lean/declarations/one-le-power.md) | 17 | `result-track:dcd82e175be82cae1ae30469bd7faa7674b9709a307c1f95cb733b399db86c67` |
-| 2 | `theorem` | [two_le_positive_power](../../../../NumberTheory/OctaveSeparationHistoricalSourceEdition2.lean/declarations/two-le-positive-power.md) | 24 | `result-track:daf633de4500a39b1fa01b87d80bc269f7c5ed5038c3da56fc98bc80e793d89b` |
-| 3 | `theorem` | [later_power_at_least_double](../../../../NumberTheory/OctaveSeparationHistoricalSourceEdition2.lean/declarations/later-power-at-least-double.md) | 32 | `result-track:46619d0337f529b0ebeb01648de8c8cae50323f67073db86cb83e08550d2500d` |
-| 4 | `theorem` | [exponent_unique](../../../../NumberTheory/OctaveSeparationHistoricalSourceEdition2.lean/declarations/exponent-unique.md) | 41 | `result-track:472d1daa2faab4487551681f2d50afae365d0da8070208825968c280ab21ff44` |
-| 5 | `theorem` | [lower_endpoint_excluded](../../../../NumberTheory/OctaveSeparationHistoricalSourceEdition2.lean/declarations/lower-endpoint-excluded.md) | 52 | `result-track:ad1ad3388692953fb8f502fc5db4ff4076cd29559d2d1882efcdc1137e91b22b` |
-| 6 | `theorem` | [upper_endpoint_allowed](../../../../NumberTheory/OctaveSeparationHistoricalSourceEdition2.lean/declarations/upper-endpoint-allowed.md) | 54 | `result-track:8f027aa0ece2a5d82a72856efc79f3d24637a4633fe5c8acbbdab5503a7ef76d` |
+| 1 | `theorem` | [one_le_power](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/OctaveSeparationHistoricalSourceEdition2.lean/declarations/one-le-power.md) | 17 | `result-track:dcd82e175be82cae1ae30469bd7faa7674b9709a307c1f95cb733b399db86c67` |
+| 2 | `theorem` | [two_le_positive_power](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/OctaveSeparationHistoricalSourceEdition2.lean/declarations/two-le-positive-power.md) | 24 | `result-track:daf633de4500a39b1fa01b87d80bc269f7c5ed5038c3da56fc98bc80e793d89b` |
+| 3 | `theorem` | [later_power_at_least_double](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/OctaveSeparationHistoricalSourceEdition2.lean/declarations/later-power-at-least-double.md) | 32 | `result-track:46619d0337f529b0ebeb01648de8c8cae50323f67073db86cb83e08550d2500d` |
+| 4 | `theorem` | [exponent_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/OctaveSeparationHistoricalSourceEdition2.lean/declarations/exponent-unique.md) | 41 | `result-track:472d1daa2faab4487551681f2d50afae365d0da8070208825968c280ab21ff44` |
+| 5 | `theorem` | [lower_endpoint_excluded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/OctaveSeparationHistoricalSourceEdition2.lean/declarations/lower-endpoint-excluded.md) | 52 | `result-track:ad1ad3388692953fb8f502fc5db4ff4076cd29559d2d1882efcdc1137e91b22b` |
+| 6 | `theorem` | [upper_endpoint_allowed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/OctaveSeparationHistoricalSourceEdition2.lean/declarations/upper-endpoint-allowed.md) | 54 | `result-track:8f027aa0ece2a5d82a72856efc79f3d24637a4633fe5c8acbbdab5503a7ef76d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/RegistryNamespacedMathematicalWorldModel.lean/index.md) · [Full source](../../../../Combinatorics/RegistryNamespacedMathematicalWorldModel.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RegistryNamespacedMathematicalWorldModel.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RegistryNamespacedMathematicalWorldModel.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,15 +59,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [MathematicalWorldModel](../../../../Combinatorics/RegistryNamespacedMathematicalWorldModel.lean/declarations/mathematicalworldmodel.md) | 27 | `declaration-track:6d4388a95c5f5c28db4cd2f37c5e03afd10152e79459c08d9b1862d7caee945f` |
-| 2 | `structure` | [WorldModelRegistry](../../../../Combinatorics/RegistryNamespacedMathematicalWorldModel.lean/declarations/worldmodelregistry.md) | 57 | `declaration-track:a7b4dfb7d3b9b99521c5252a86e7247c71a51183519327e862283d05457fe107` |
-| 3 | `abbrev` | [ModelId](../../../../Combinatorics/RegistryNamespacedMathematicalWorldModel.lean/declarations/modelid.md) | 76 | `declaration-track:02d91734892ac38227eda84ab683a9bb3dc12954b416314711da8a7df1e501ee` |
-| 4 | `def` | [Version](../../../../Combinatorics/RegistryNamespacedMathematicalWorldModel.lean/declarations/version.md) | 80 | `declaration-track:ddf4cecb7e742b78ffc0832b6048c440623937c85110ca94fb73364a29bd5831` |
-| 5 | `def` | [HasVersion](../../../../Combinatorics/RegistryNamespacedMathematicalWorldModel.lean/declarations/hasversion.md) | 85 | `declaration-track:c72e4aae47ad2afb76e16c89eb0fb98e12e0966d65fa61c9d11069da75ccd1ae` |
-| 6 | `theorem` | [version_slot_unique](../../../../Combinatorics/RegistryNamespacedMathematicalWorldModel.lean/declarations/version-slot-unique.md) | 91 | `result-track:9812a53fcd62068221834a69a4774ff760bc9fb958c781980808b11b07b45f66` |
-| 7 | `theorem` | [stored_source_digest_valid](../../../../Combinatorics/RegistryNamespacedMathematicalWorldModel.lean/declarations/stored-source-digest-valid.md) | 99 | `result-track:54d92a8dad0c6752d06ba7040c601ee4dc7806bdb68f21e3bdc04979e9efb55f` |
-| 8 | `theorem` | [supersession_wellFounded](../../../../Combinatorics/RegistryNamespacedMathematicalWorldModel.lean/declarations/supersession-wellfounded.md) | 106 | `result-track:db69430660124b26f3e29ae38941433a0ef1874741fb740c093af01ad7c49451` |
-| 9 | `theorem` | [no_supersession_cycle](../../../../Combinatorics/RegistryNamespacedMathematicalWorldModel.lean/declarations/no-supersession-cycle.md) | 115 | `result-track:58abf910f1ea6dbe439f42810797513b6d0729d542fcf56eb3d29e355b6bb960` |
+| 1 | `structure` | [MathematicalWorldModel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RegistryNamespacedMathematicalWorldModel.lean/declarations/mathematicalworldmodel.md) | 27 | `declaration-track:6d4388a95c5f5c28db4cd2f37c5e03afd10152e79459c08d9b1862d7caee945f` |
+| 2 | `structure` | [WorldModelRegistry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RegistryNamespacedMathematicalWorldModel.lean/declarations/worldmodelregistry.md) | 57 | `declaration-track:a7b4dfb7d3b9b99521c5252a86e7247c71a51183519327e862283d05457fe107` |
+| 3 | `abbrev` | [ModelId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RegistryNamespacedMathematicalWorldModel.lean/declarations/modelid.md) | 76 | `declaration-track:02d91734892ac38227eda84ab683a9bb3dc12954b416314711da8a7df1e501ee` |
+| 4 | `def` | [Version](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RegistryNamespacedMathematicalWorldModel.lean/declarations/version.md) | 80 | `declaration-track:ddf4cecb7e742b78ffc0832b6048c440623937c85110ca94fb73364a29bd5831` |
+| 5 | `def` | [HasVersion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RegistryNamespacedMathematicalWorldModel.lean/declarations/hasversion.md) | 85 | `declaration-track:c72e4aae47ad2afb76e16c89eb0fb98e12e0966d65fa61c9d11069da75ccd1ae` |
+| 6 | `theorem` | [version_slot_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RegistryNamespacedMathematicalWorldModel.lean/declarations/version-slot-unique.md) | 91 | `result-track:9812a53fcd62068221834a69a4774ff760bc9fb958c781980808b11b07b45f66` |
+| 7 | `theorem` | [stored_source_digest_valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RegistryNamespacedMathematicalWorldModel.lean/declarations/stored-source-digest-valid.md) | 99 | `result-track:54d92a8dad0c6752d06ba7040c601ee4dc7806bdb68f21e3bdc04979e9efb55f` |
+| 8 | `theorem` | [supersession_wellFounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RegistryNamespacedMathematicalWorldModel.lean/declarations/supersession-wellfounded.md) | 106 | `result-track:db69430660124b26f3e29ae38941433a0ef1874741fb740c093af01ad7c49451` |
+| 9 | `theorem` | [no_supersession_cycle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RegistryNamespacedMathematicalWorldModel.lean/declarations/no-supersession-cycle.md) | 115 | `result-track:58abf910f1ea6dbe439f42810797513b6d0729d542fcf56eb3d29e355b6bb960` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

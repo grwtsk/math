@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/DAFRefinementNamespacedEdition1.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/DAFRefinementNamespacedEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DAFRefinementNamespacedEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DAFRefinementNamespacedEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mapSpecSystem](../../../../../ComputerScience/AlgorithmsInComputerScience/DAFRefinementNamespacedEdition1.lean/declarations/mapspecsystem.md) | 28 | `declaration-track:3c43550335a07f0845d6f60e53ea25d14885b49a039fef5a877c715b7cd2ac0f` |
-| 2 | `def` | [mapImplSystem](../../../../../ComputerScience/AlgorithmsInComputerScience/DAFRefinementNamespacedEdition1.lean/declarations/mapimplsystem.md) | 37 | `declaration-track:76cb9870241bd535679c6f7971976bd963dfb4187c943e9d786ffdcc52ce9d42` |
-| 3 | `def` | [mapRefinement](../../../../../ComputerScience/AlgorithmsInComputerScience/DAFRefinementNamespacedEdition1.lean/declarations/maprefinement.md) | 46 | `declaration-track:afdbea575d4266b9cf4a62ef11f20a1a88548fb048ad66ef17be08e9fa05346a` |
-| 4 | `theorem` | [mapRefinement_abstract](../../../../../ComputerScience/AlgorithmsInComputerScience/DAFRefinementNamespacedEdition1.lean/declarations/maprefinement-abstract.md) | 60 | `result-track:da807312559c7af5324fbae8b569f0d7d6d10648b04ec63f5fe14854ed19479c` |
-| 5 | `theorem` | [mapRefinement_step_sound](../../../../../ComputerScience/AlgorithmsInComputerScience/DAFRefinementNamespacedEdition1.lean/declarations/maprefinement-step-sound.md) | 66 | `result-track:473646a80030b2353ffc46b17b0c816226ce6a657d790d517c0ad56ada4e7b9d` |
-| 6 | `theorem` | [refines_iff_abstract_eq](../../../../../ComputerScience/AlgorithmsInComputerScience/DAFRefinementNamespacedEdition1.lean/declarations/refines-iff-abstract-eq.md) | 76 | `result-track:d905206a308c6291b4d0ac760329c33896449176fbde47f5f903ecbeab793335` |
+| 1 | `def` | [mapSpecSystem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DAFRefinementNamespacedEdition1.lean/declarations/mapspecsystem.md) | 28 | `declaration-track:3c43550335a07f0845d6f60e53ea25d14885b49a039fef5a877c715b7cd2ac0f` |
+| 2 | `def` | [mapImplSystem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DAFRefinementNamespacedEdition1.lean/declarations/mapimplsystem.md) | 37 | `declaration-track:76cb9870241bd535679c6f7971976bd963dfb4187c943e9d786ffdcc52ce9d42` |
+| 3 | `def` | [mapRefinement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DAFRefinementNamespacedEdition1.lean/declarations/maprefinement.md) | 46 | `declaration-track:afdbea575d4266b9cf4a62ef11f20a1a88548fb048ad66ef17be08e9fa05346a` |
+| 4 | `theorem` | [mapRefinement_abstract](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DAFRefinementNamespacedEdition1.lean/declarations/maprefinement-abstract.md) | 60 | `result-track:da807312559c7af5324fbae8b569f0d7d6d10648b04ec63f5fe14854ed19479c` |
+| 5 | `theorem` | [mapRefinement_step_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DAFRefinementNamespacedEdition1.lean/declarations/maprefinement-step-sound.md) | 66 | `result-track:473646a80030b2353ffc46b17b0c816226ce6a657d790d517c0ad56ada4e7b9d` |
+| 6 | `theorem` | [refines_iff_abstract_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DAFRefinementNamespacedEdition1.lean/declarations/refines-iff-abstract-eq.md) | 76 | `result-track:d905206a308c6291b4d0ac760329c33896449176fbde47f5f903ecbeab793335` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

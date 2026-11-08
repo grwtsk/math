@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InvolutiveLinearEquivalence.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InvolutiveLinearEquivalence.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InvolutiveLinearEquivalence.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InvolutiveLinearEquivalence.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -50,7 +50,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 - `BitMatrix.FiniteField.Galois` — import line 20; external provider; requires a separately pinned dependency.
 - `DAF.FiniteDynamics.Involution` — import line 21; external provider; requires a separately pinned dependency.
 - `Mathlib.LinearAlgebra.Matrix.ToLin` — import line 22; external provider; requires a separately pinned dependency.
-- [One Hot Matrix Action](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OneHotMatrixAction.lean/index.md) — import line 24; pinned internal source present.
+- [One Hot Matrix Action](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OneHotMatrixAction.lean/index.md) — import line 24; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -61,12 +61,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [f2LinearMap](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InvolutiveLinearEquivalence.lean/declarations/f2linearmap.md) | 44 | `declaration-track:a94f790aa4b13d09baff23dfe62a90f9f61cf2cff914ff52f21366a05d4c4993` |
-| 2 | `theorem` | [f2LinearMap_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InvolutiveLinearEquivalence.lean/declarations/f2linearmap-apply.md) | 49 | `result-track:92c2be50fde02e842f4782aecea62da36811792d51734af9c33ed15c0169590c` |
-| 3 | `theorem` | [f2LinearMap_involutive](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InvolutiveLinearEquivalence.lean/declarations/f2linearmap-involutive.md) | 54 | `result-track:27678701a8f4269e2505fda0c3f99d447813defadc304baad43befa4ac6ffde9` |
-| 4 | `def` | [f2LinearEquiv](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InvolutiveLinearEquivalence.lean/declarations/f2linearequiv.md) | 61 | `declaration-track:4eb8b5ec64dd05b81c617f156236660076872ee4f6d96989b562d7c844e55328` |
-| 5 | `theorem` | [f2LinearMap_injective](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InvolutiveLinearEquivalence.lean/declarations/f2linearmap-injective.md) | 70 | `result-track:b21e3005c73e83652322933cc89a32baa67e1257a6e41965f4ab0849e54718cb` |
-| 6 | `theorem` | [f2LinearMap_ker](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InvolutiveLinearEquivalence.lean/declarations/f2linearmap-ker.md) | 78 | `result-track:99ba2d172ba64802fa0c7408e2a6f8d0f1c6538b22182d25fa8c3560bfcd91d7` |
+| 1 | `def` | [f2LinearMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InvolutiveLinearEquivalence.lean/declarations/f2linearmap.md) | 44 | `declaration-track:a94f790aa4b13d09baff23dfe62a90f9f61cf2cff914ff52f21366a05d4c4993` |
+| 2 | `theorem` | [f2LinearMap_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InvolutiveLinearEquivalence.lean/declarations/f2linearmap-apply.md) | 49 | `result-track:92c2be50fde02e842f4782aecea62da36811792d51734af9c33ed15c0169590c` |
+| 3 | `theorem` | [f2LinearMap_involutive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InvolutiveLinearEquivalence.lean/declarations/f2linearmap-involutive.md) | 54 | `result-track:27678701a8f4269e2505fda0c3f99d447813defadc304baad43befa4ac6ffde9` |
+| 4 | `def` | [f2LinearEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InvolutiveLinearEquivalence.lean/declarations/f2linearequiv.md) | 61 | `declaration-track:4eb8b5ec64dd05b81c617f156236660076872ee4f6d96989b562d7c844e55328` |
+| 5 | `theorem` | [f2LinearMap_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InvolutiveLinearEquivalence.lean/declarations/f2linearmap-injective.md) | 70 | `result-track:b21e3005c73e83652322933cc89a32baa67e1257a6e41965f4ab0849e54718cb` |
+| 6 | `theorem` | [f2LinearMap_ker](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InvolutiveLinearEquivalence.lean/declarations/f2linearmap-ker.md) | 78 | `result-track:99ba2d172ba64802fa0c7408e2a6f8d0f1c6538b22182d25fa8c3560bfcd91d7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

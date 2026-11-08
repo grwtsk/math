@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ApplyRules.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ApplyRules.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ApplyRules.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ApplyRules.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ApplyRules.lean/declarations/example-source-edition-8.md) | 6 | `declaration-track:fb0b8244eb61ebb65519f1c5a38a3aa092018d5818b85a4dcc420a09cdfc3989` |
-| 2 | `example` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ApplyRules.lean/declarations/example-source-edition-6.md) | 11 | `declaration-track:9fc7c9c5a069bb9143a3b2f8836c88ef1b867359820175a54478f3a812159573` |
-| 3 | `example` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ApplyRules.lean/declarations/example.md) | 17 | `declaration-track:561c5b9b5f39a1a1376d546961d1e2b4cfffc4a893b355e705eec9f92b74a725` |
-| 4 | `example` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ApplyRules.lean/declarations/example-source-edition-5.md) | 24 | `declaration-track:9e1540e1095152405a7ef6aab40f1cae706546cd0c242e28de52735c5344c2e5` |
-| 5 | `example` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ApplyRules.lean/declarations/example-source-edition-7.md) | 29 | `declaration-track:a3a69074a76b86623557617be719337c48899e9bcbf0a63c077170ccecbcaedb` |
-| 6 | `example` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ApplyRules.lean/declarations/example-source-edition-2.md) | 35 | `declaration-track:5eb71759b0b29c1d78ea878fe413308af243dae552dd8fedf728797489215063` |
-| 7 | `example` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ApplyRules.lean/declarations/example-source-edition-3.md) | 39 | `declaration-track:6bef06e7393c99bf343fef29aa5f8e5bd9dba0c001431a2bf1beae35a38e807b` |
-| 8 | `example` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ApplyRules.lean/declarations/example-source-edition-4.md) | 48 | `declaration-track:85ff8bccd0dc6f963a894a1173f939b9e8fd7d2f5e7c7066cc3188e46e3e7756` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ApplyRules.lean/declarations/example-source-edition-8.md) | 6 | `declaration-track:fb0b8244eb61ebb65519f1c5a38a3aa092018d5818b85a4dcc420a09cdfc3989` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ApplyRules.lean/declarations/example-source-edition-6.md) | 11 | `declaration-track:9fc7c9c5a069bb9143a3b2f8836c88ef1b867359820175a54478f3a812159573` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ApplyRules.lean/declarations/example.md) | 17 | `declaration-track:561c5b9b5f39a1a1376d546961d1e2b4cfffc4a893b355e705eec9f92b74a725` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ApplyRules.lean/declarations/example-source-edition-5.md) | 24 | `declaration-track:9e1540e1095152405a7ef6aab40f1cae706546cd0c242e28de52735c5344c2e5` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ApplyRules.lean/declarations/example-source-edition-7.md) | 29 | `declaration-track:a3a69074a76b86623557617be719337c48899e9bcbf0a63c077170ccecbcaedb` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ApplyRules.lean/declarations/example-source-edition-2.md) | 35 | `declaration-track:5eb71759b0b29c1d78ea878fe413308af243dae552dd8fedf728797489215063` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ApplyRules.lean/declarations/example-source-edition-3.md) | 39 | `declaration-track:6bef06e7393c99bf343fef29aa5f8e5bd9dba0c001431a2bf1beae35a38e807b` |
+| 8 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ApplyRules.lean/declarations/example-source-edition-4.md) | 48 | `declaration-track:85ff8bccd0dc6f963a894a1173f939b9e8fd7d2f5e7c7066cc3188e46e3e7756` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceRationalExplicitConsumersNamespacedEdition2.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceRationalExplicitConsumersNamespacedEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceRationalExplicitConsumersNamespacedEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceRationalExplicitConsumersNamespacedEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [all_real_lower_of_rational](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceRationalExplicitConsumersNamespacedEdition2.lean/declarations/all-real-lower-of-rational.md) | 28 | `result-track:8a3c0da007c775df1b5f26ff930751ef7755a179bddac7a5e3c9d84193aafbc2` |
-| 2 | `theorem` | [leading_of_rational](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceRationalExplicitConsumersNamespacedEdition2.lean/declarations/leading-of-rational.md) | 38 | `result-track:4346970d0bbf09bc2242824074d70d72e33d6cc60eb14fd55bb9ab139402bfef` |
+| 1 | `theorem` | [all_real_lower_of_rational](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceRationalExplicitConsumersNamespacedEdition2.lean/declarations/all-real-lower-of-rational.md) | 28 | `result-track:8a3c0da007c775df1b5f26ff930751ef7755a179bddac7a5e3c9d84193aafbc2` |
+| 2 | `theorem` | [leading_of_rational](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceRationalExplicitConsumersNamespacedEdition2.lean/declarations/leading-of-rational.md) | 38 | `result-track:4346970d0bbf09bc2242824074d70d72e33d6cc60eb14fd55bb9ab139402bfef` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

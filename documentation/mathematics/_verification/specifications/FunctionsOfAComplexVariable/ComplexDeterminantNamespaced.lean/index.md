@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/ComplexDeterminantNamespaced.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/ComplexDeterminantNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexDeterminantNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexDeterminantNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [det_conjAe](../../../../FunctionsOfAComplexVariable/ComplexDeterminantNamespaced.lean/declarations/det-conjae.md) | 30 | `result-track:a460bf38a6341fd249c16712cb400d4cbbe5976eed59b1635bb773045ccfa27d` |
-| 2 | `theorem` | [linearEquiv_det_conjAe](../../../../FunctionsOfAComplexVariable/ComplexDeterminantNamespaced.lean/declarations/linearequiv-det-conjae.md) | 36 | `result-track:4ae97215fe157625e78ab06eb0dfd2acc46d5495757bc9683da93822a63a0710` |
+| 1 | `theorem` | [det_conjAe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexDeterminantNamespaced.lean/declarations/det-conjae.md) | 30 | `result-track:a460bf38a6341fd249c16712cb400d4cbbe5976eed59b1635bb773045ccfa27d` |
+| 2 | `theorem` | [linearEquiv_det_conjAe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexDeterminantNamespaced.lean/declarations/linearequiv-det-conjae.md) | 36 | `result-track:4ae97215fe157625e78ab06eb0dfd2acc46d5495757bc9683da93822a63a0710` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

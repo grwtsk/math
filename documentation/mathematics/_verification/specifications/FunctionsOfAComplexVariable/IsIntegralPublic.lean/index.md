@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/IsIntegralPublic.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/IsIntegralPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IsIntegralPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IsIntegralPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [isIntegral_I](../../../../FunctionsOfAComplexVariable/IsIntegralPublic.lean/declarations/isintegral-i.md) | 26 | `result-track:880ce73f2bc2c27a5131475250ea4109646b9ea4bed1d963c06a8d21ee33cea7` |
+| 1 | `theorem` | [isIntegral_I](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IsIntegralPublic.lean/declarations/isintegral-i.md) | 26 | `result-track:880ce73f2bc2c27a5131475250ea4109646b9ea4bed1d963c06a8d21ee33cea7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

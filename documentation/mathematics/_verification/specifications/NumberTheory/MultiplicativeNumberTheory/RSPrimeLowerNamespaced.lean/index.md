@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/MultiplicativeNumberTheory/RSPrimeLowerNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/MultiplicativeNumberTheory/RSPrimeLowerNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/RSPrimeLowerNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/RSPrimeLowerNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [count_prime_le_imp_le_nth](../../../../../NumberTheory/MultiplicativeNumberTheory/RSPrimeLowerNamespaced.lean/declarations/count-prime-le-imp-le-nth.md) | 17 | `result-track:c00adf316fe7528d5bc5130c84d03753b81df139f82c1c9678e6b2a112b2fcd8` |
-| 2 | `lemma` | [nth_prime_gt_bound](../../../../../NumberTheory/MultiplicativeNumberTheory/RSPrimeLowerNamespaced.lean/declarations/nth-prime-gt-bound.md) | 25 | `result-track:00fd42ccc53ffbe2376b3293c3ed30bf2b5a60305645c0a301bbbfb8cd885118` |
-| 3 | `lemma` | [p_n_lower_small](../../../../../NumberTheory/MultiplicativeNumberTheory/RSPrimeLowerNamespaced.lean/declarations/p-n-lower-small.md) | 31 | `result-track:a416264979d34f9c7cbe16fe59a6f54d52ff9d51dd22ca0f99120d8417550eb0` |
-| 4 | `lemma` | [pi_nth_prime'](../../../../../NumberTheory/MultiplicativeNumberTheory/RSPrimeLowerNamespaced.lean/declarations/pi-nth-prime.md) | 65 | `result-track:f314b01561f382e1fec6fb72e90b6d6119b5730ce4e2cb401c7abd7fb0b24c4f` |
-| 5 | `lemma` | [p_n_lower_large](../../../../../NumberTheory/MultiplicativeNumberTheory/RSPrimeLowerNamespaced.lean/declarations/p-n-lower-large.md) | 74 | `result-track:277266632b573af2578634b87af3aedf628b567c781edfaf1c959609cbb69da8` |
+| 1 | `lemma` | [count_prime_le_imp_le_nth](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/RSPrimeLowerNamespaced.lean/declarations/count-prime-le-imp-le-nth.md) | 17 | `result-track:c00adf316fe7528d5bc5130c84d03753b81df139f82c1c9678e6b2a112b2fcd8` |
+| 2 | `lemma` | [nth_prime_gt_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/RSPrimeLowerNamespaced.lean/declarations/nth-prime-gt-bound.md) | 25 | `result-track:00fd42ccc53ffbe2376b3293c3ed30bf2b5a60305645c0a301bbbfb8cd885118` |
+| 3 | `lemma` | [p_n_lower_small](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/RSPrimeLowerNamespaced.lean/declarations/p-n-lower-small.md) | 31 | `result-track:a416264979d34f9c7cbe16fe59a6f54d52ff9d51dd22ca0f99120d8417550eb0` |
+| 4 | `lemma` | [pi_nth_prime'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/RSPrimeLowerNamespaced.lean/declarations/pi-nth-prime.md) | 65 | `result-track:f314b01561f382e1fec6fb72e90b6d6119b5730ce4e2cb401c7abd7fb0b24c4f` |
+| 5 | `lemma` | [p_n_lower_large](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/RSPrimeLowerNamespaced.lean/declarations/p-n-lower-large.md) | 74 | `result-track:277266632b573af2578634b87af3aedf628b567c781edfaf1c959609cbb69da8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

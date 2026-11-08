@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/CyclicGraphWitnessNamespaced.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/CyclicGraphWitnessNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CyclicGraphWitnessNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CyclicGraphWitnessNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,14 +60,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [cyclicGroupAlgebra](../../../../AssociativeRingsAndAlgebras/CyclicGraphWitnessNamespaced.lean/declarations/cyclicgroupalgebra.md) | 31 | `declaration-track:c34936778be0182c2d61ca762b126c2eb5cc86c0f4cdce61f0cfe70f58dd1b64` |
-| 2 | `def` | [groupAlgebraCongruenceOrderIso](../../../../AssociativeRingsAndAlgebras/CyclicGraphWitnessNamespaced.lean/declarations/groupalgebracongruenceorderiso.md) | 39 | `declaration-track:7575a5bca8a0888be5728ca9225db074fcb415ce9f2bd6a0206dc91fbdd75eef` |
-| 3 | `def` | [subgroupNormalOrderIso](../../../../AssociativeRingsAndAlgebras/CyclicGraphWitnessNamespaced.lean/declarations/subgroupnormalorderiso.md) | 63 | `declaration-track:c843c5cf9d9ca6f3431ff67ac6bf4ddeed4690e778f2499fb5c59cc90750646f` |
-| 4 | `def` | [cyclicGroupCongruenceOrderIso](../../../../AssociativeRingsAndAlgebras/CyclicGraphWitnessNamespaced.lean/declarations/cyclicgroupcongruenceorderiso.md) | 72 | `declaration-track:0940ca0df7deb0eafff5d902713c2745df584e1d232af8f236c0a7b34d51a669` |
-| 5 | `theorem` | [cyclicGroupCongruence_apply](../../../../AssociativeRingsAndAlgebras/CyclicGraphWitnessNamespaced.lean/declarations/cyclicgroupcongruence-apply.md) | 79 | `result-track:18d039dacee36db9555dd1db243517bbaf96d542c64db4fbe680dccb4f40e158` |
-| 6 | `theorem` | [cyclicColor_eq_principalColor](../../../../AssociativeRingsAndAlgebras/CyclicGraphWitnessNamespaced.lean/declarations/cycliccolor-eq-principalcolor.md) | 88 | `result-track:2bbd9f311f6b9b953dd88caf9a11f24c4f5f99676111506cd454ea588b51c094` |
-| 7 | `theorem` | [cyclicColor_isGraphWitness](../../../../AssociativeRingsAndAlgebras/CyclicGraphWitnessNamespaced.lean/declarations/cycliccolor-isgraphwitness.md) | 97 | `result-track:7a90854637e3954d72beec97a280016c2e6ac57ebcce24abaa8fcd1b6674f9f2` |
-| 8 | `theorem` | [cyclicColor_saturation](../../../../AssociativeRingsAndAlgebras/CyclicGraphWitnessNamespaced.lean/declarations/cycliccolor-saturation.md) | 104 | `result-track:07016e263bfb78efc37c226af1ef57d00b96ac42f85f7a3486a35b29e02df9e8` |
+| 1 | `def` | [cyclicGroupAlgebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CyclicGraphWitnessNamespaced.lean/declarations/cyclicgroupalgebra.md) | 31 | `declaration-track:c34936778be0182c2d61ca762b126c2eb5cc86c0f4cdce61f0cfe70f58dd1b64` |
+| 2 | `def` | [groupAlgebraCongruenceOrderIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CyclicGraphWitnessNamespaced.lean/declarations/groupalgebracongruenceorderiso.md) | 39 | `declaration-track:7575a5bca8a0888be5728ca9225db074fcb415ce9f2bd6a0206dc91fbdd75eef` |
+| 3 | `def` | [subgroupNormalOrderIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CyclicGraphWitnessNamespaced.lean/declarations/subgroupnormalorderiso.md) | 63 | `declaration-track:c843c5cf9d9ca6f3431ff67ac6bf4ddeed4690e778f2499fb5c59cc90750646f` |
+| 4 | `def` | [cyclicGroupCongruenceOrderIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CyclicGraphWitnessNamespaced.lean/declarations/cyclicgroupcongruenceorderiso.md) | 72 | `declaration-track:0940ca0df7deb0eafff5d902713c2745df584e1d232af8f236c0a7b34d51a669` |
+| 5 | `theorem` | [cyclicGroupCongruence_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CyclicGraphWitnessNamespaced.lean/declarations/cyclicgroupcongruence-apply.md) | 79 | `result-track:18d039dacee36db9555dd1db243517bbaf96d542c64db4fbe680dccb4f40e158` |
+| 6 | `theorem` | [cyclicColor_eq_principalColor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CyclicGraphWitnessNamespaced.lean/declarations/cycliccolor-eq-principalcolor.md) | 88 | `result-track:2bbd9f311f6b9b953dd88caf9a11f24c4f5f99676111506cd454ea588b51c094` |
+| 7 | `theorem` | [cyclicColor_isGraphWitness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CyclicGraphWitnessNamespaced.lean/declarations/cycliccolor-isgraphwitness.md) | 97 | `result-track:7a90854637e3954d72beec97a280016c2e6ac57ebcce24abaa8fcd1b6674f9f2` |
+| 8 | `theorem` | [cyclicColor_saturation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CyclicGraphWitnessNamespaced.lean/declarations/cycliccolor-saturation.md) | 104 | `result-track:07016e263bfb78efc37c226af1ef57d00b96ac42f85f7a3486a35b29e02df9e8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

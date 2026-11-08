@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenFourierFrameControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenFourierFrameControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenFourierFrameControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenFourierFrameControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.DyadicGreenFourierFrame`](../../../../../MeasureAndIntegration/DyadicGreenFourierFrame.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.DyadicGreenFourierFrame`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DyadicGreenFourierFrame.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Fourier_heads_capture_green_energy](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenFourierFrameControls.lean/declarations/fourier-heads-capture-green-energy.md) | 15 | `result-track:a244ec698670cab409346e21a8e3f3c904619071d8db990b12b8eafffa339ba5` |
-| 2 | `theorem` | [full_Fourier_stage_captures_augmented_energy](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenFourierFrameControls.lean/declarations/full-fourier-stage-captures-augmented-energy.md) | 20 | `result-track:05f0545a787c18ff4d88839f6936441de09de9a7353511b248e3b36459b572cc` |
+| 1 | `theorem` | [Fourier_heads_capture_green_energy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenFourierFrameControls.lean/declarations/fourier-heads-capture-green-energy.md) | 15 | `result-track:a244ec698670cab409346e21a8e3f3c904619071d8db990b12b8eafffa339ba5` |
+| 2 | `theorem` | [full_Fourier_stage_captures_augmented_energy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicGreenFourierFrameControls.lean/declarations/full-fourier-stage-captures-augmented-energy.md) | 20 | `result-track:05f0545a787c18ff4d88839f6936441de09de9a7353511b248e3b36459b572cc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

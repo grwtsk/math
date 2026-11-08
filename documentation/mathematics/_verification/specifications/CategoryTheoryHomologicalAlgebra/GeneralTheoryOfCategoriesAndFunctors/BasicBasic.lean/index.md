@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BasicBasic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BasicBasic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BasicBasic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BasicBasic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BasicBasic.lean/declarations/example-source-edition-5.md) | 11 | `declaration-track:f58b0cd141a0c260087de91303d5c9ffd1030a652755f8c57078db98b9c7b2ac` |
-| 2 | `example` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BasicBasic.lean/declarations/example.md) | 15 | `declaration-track:74b4eb54206a7bd2030bd720031139a6f675e6c9d97bd478be8ba3b3adcf891a` |
-| 3 | `example` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BasicBasic.lean/declarations/example-source-edition-3.md) | 18 | `declaration-track:d8b95c0e89f547de8d28fec07c999361bf47e248f3062acf71ba2290cb82fd21` |
-| 4 | `example` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BasicBasic.lean/declarations/example-source-edition-2.md) | 21 | `declaration-track:c71f1893a6773354a682b1fb164435732ddda1fea0b1acf6796bd630a9ba3927` |
-| 5 | `example` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BasicBasic.lean/declarations/example-source-edition-4.md) | 24 | `declaration-track:d98818c9288ebd57dd5c451529464e5b0c427132eb85027bb4868a803c3c5b03` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BasicBasic.lean/declarations/example-source-edition-5.md) | 11 | `declaration-track:f58b0cd141a0c260087de91303d5c9ffd1030a652755f8c57078db98b9c7b2ac` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BasicBasic.lean/declarations/example.md) | 15 | `declaration-track:74b4eb54206a7bd2030bd720031139a6f675e6c9d97bd478be8ba3b3adcf891a` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BasicBasic.lean/declarations/example-source-edition-3.md) | 18 | `declaration-track:d8b95c0e89f547de8d28fec07c999361bf47e248f3062acf71ba2290cb82fd21` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BasicBasic.lean/declarations/example-source-edition-2.md) | 21 | `declaration-track:c71f1893a6773354a682b1fb164435732ddda1fea0b1acf6796bd630a9ba3927` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BasicBasic.lean/declarations/example-source-edition-4.md) | 24 | `declaration-track:d98818c9288ebd57dd5c451529464e5b0c427132eb85027bb4868a803c3c5b03` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

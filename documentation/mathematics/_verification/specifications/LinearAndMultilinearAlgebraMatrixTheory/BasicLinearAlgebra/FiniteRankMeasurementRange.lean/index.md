@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteRankMeasurementRange.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteRankMeasurementRange.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteRankMeasurementRange.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteRankMeasurementRange.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Logic.InformationLoss.FiniteMeasurementCapacity`](../../../../../GroupTheoryAndGeneralizations/FiniteMeasurementCapacity.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.Logic.InformationLoss.FiniteMeasurementCapacity`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteMeasurementCapacity.lean/index.md) — import line 7; pinned internal source present.
 - `Mathlib.LinearAlgebra.Dimension.Finrank` — import line 8; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [extraOnOldKernel](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteRankMeasurementRange.lean/declarations/extraonoldkernel.md) | 31 | `declaration-track:9e8f51807c6d1547104cb24f953f486f7a0228375f84986793586b3b3b1daa16` |
-| 2 | `theorem` | [extraOnOldKernel_injective](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteRankMeasurementRange.lean/declarations/extraonoldkernel-injective.md) | 36 | `result-track:e9be566d1b686da69af24cd63756a7731e6ae889963491e3c33d3d71918156fb` |
-| 3 | `theorem` | [finrank_extra_range_eq_old_kernel](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteRankMeasurementRange.lean/declarations/finrank-extra-range-eq-old-kernel.md) | 51 | `result-track:3e10f4916ce5b476476879ceac9c3e7b5b5e8c8b91d3a1b00ff4559c3327db0a` |
+| 1 | `def` | [extraOnOldKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteRankMeasurementRange.lean/declarations/extraonoldkernel.md) | 31 | `declaration-track:9e8f51807c6d1547104cb24f953f486f7a0228375f84986793586b3b3b1daa16` |
+| 2 | `theorem` | [extraOnOldKernel_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteRankMeasurementRange.lean/declarations/extraonoldkernel-injective.md) | 36 | `result-track:e9be566d1b686da69af24cd63756a7731e6ae889963491e3c33d3d71918156fb` |
+| 3 | `theorem` | [finrank_extra_range_eq_old_kernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteRankMeasurementRange.lean/declarations/finrank-extra-range-eq-old-kernel.md) | 51 | `result-track:3e10f4916ce5b476476879ceac9c3e7b5b5e8c8b91d3a1b00ff4559c3327db0a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

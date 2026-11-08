@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CapacityNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CapacityNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CapacityNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CapacityNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [SoninProjectionProfile.capacity](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CapacityNamespaced.lean/declarations/soninprojectionprofile-capacity.md) | 17 | `declaration-track:910920c3512822ca19a4ec08b48630e73d621f87e1f435097b98af9640c6b1a7` |
-| 2 | `theorem` | [SoninProjectionProfile.capacity_nonnegative](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CapacityNamespaced.lean/declarations/soninprojectionprofile-capacity-nonnegative.md) | 25 | `result-track:7167766e5ceee0d362274ae2ae8ea4762fcb156c7ccb6afb58ac27fd7ef06cf7` |
-| 3 | `theorem` | [SoninProjectionProfile.capacity_mono](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CapacityNamespaced.lean/declarations/soninprojectionprofile-capacity-mono.md) | 34 | `result-track:b8c9de07cc0397e14cbc5dd346870d2cf19af019386e905d94e807391c539207` |
+| 1 | `def` | [SoninProjectionProfile.capacity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CapacityNamespaced.lean/declarations/soninprojectionprofile-capacity.md) | 17 | `declaration-track:910920c3512822ca19a4ec08b48630e73d621f87e1f435097b98af9640c6b1a7` |
+| 2 | `theorem` | [SoninProjectionProfile.capacity_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CapacityNamespaced.lean/declarations/soninprojectionprofile-capacity-nonnegative.md) | 25 | `result-track:7167766e5ceee0d362274ae2ae8ea4762fcb156c7ccb6afb58ac27fd7ef06cf7` |
+| 3 | `theorem` | [SoninProjectionProfile.capacity_mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CapacityNamespaced.lean/declarations/soninprojectionprofile-capacity-mono.md) | 34 | `result-track:b8c9de07cc0397e14cbc5dd346870d2cf19af019386e905d94e807391c539207` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

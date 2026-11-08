@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/RhetoricalKernelManifest.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/RhetoricalKernelManifest.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RhetoricalKernelManifest.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RhetoricalKernelManifest.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [expected](../../../../../ComputerScience/AlgorithmsInComputerScience/RhetoricalKernelManifest.lean/declarations/expected.md) | 12 | `declaration-track:0268d072cf8d9d9c1b0a562c0a173f90dcf6551af4d22c3197dfd32c9752c504` |
-| 2 | `def` | [expectedIndependent](../../../../../ComputerScience/AlgorithmsInComputerScience/RhetoricalKernelManifest.lean/declarations/expectedindependent.md) | 15 | `declaration-track:a4e46e8ffab95fda4bd240bc6a18d735d9687e59eae2e5243b622c3e6d737d81` |
-| 3 | `def` | [usage](../../../../../ComputerScience/AlgorithmsInComputerScience/RhetoricalKernelManifest.lean/declarations/usage.md) | 18 | `declaration-track:f2db3d3c05e9e7b0ffa591ab81310cfdeb3cb4dea45f165b1a8cb9f21cb2d7e8` |
-| 4 | `def` | [checkArtifact](../../../../../ComputerScience/AlgorithmsInComputerScience/RhetoricalKernelManifest.lean/declarations/checkartifact.md) | 21 | `declaration-track:7319ef19d6793d856dcd8fdba281560670bffd2a8cfb2d70b2807b8ecde44462` |
-| 5 | `def` | [writeArtifact](../../../../../ComputerScience/AlgorithmsInComputerScience/RhetoricalKernelManifest.lean/declarations/writeartifact.md) | 30 | `declaration-track:381e5e82dbb5c81dd981ff4cef8e6a8e1f61994bddb4c2a240f86b7ff3eafb33` |
-| 6 | `def` | [main](../../../../../ComputerScience/AlgorithmsInComputerScience/RhetoricalKernelManifest.lean/declarations/main.md) | 36 | `declaration-track:f44de8ce56289cb0cf9437fcaaac9bb5745f8e320b5bcaac0494807ab42608d2` |
+| 1 | `def` | [expected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RhetoricalKernelManifest.lean/declarations/expected.md) | 12 | `declaration-track:0268d072cf8d9d9c1b0a562c0a173f90dcf6551af4d22c3197dfd32c9752c504` |
+| 2 | `def` | [expectedIndependent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RhetoricalKernelManifest.lean/declarations/expectedindependent.md) | 15 | `declaration-track:a4e46e8ffab95fda4bd240bc6a18d735d9687e59eae2e5243b622c3e6d737d81` |
+| 3 | `def` | [usage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RhetoricalKernelManifest.lean/declarations/usage.md) | 18 | `declaration-track:f2db3d3c05e9e7b0ffa591ab81310cfdeb3cb4dea45f165b1a8cb9f21cb2d7e8` |
+| 4 | `def` | [checkArtifact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RhetoricalKernelManifest.lean/declarations/checkartifact.md) | 21 | `declaration-track:7319ef19d6793d856dcd8fdba281560670bffd2a8cfb2d70b2807b8ecde44462` |
+| 5 | `def` | [writeArtifact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RhetoricalKernelManifest.lean/declarations/writeartifact.md) | 30 | `declaration-track:381e5e82dbb5c81dd981ff4cef8e6a8e1f61994bddb4c2a240f86b7ff3eafb33` |
+| 6 | `def` | [main](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RhetoricalKernelManifest.lean/declarations/main.md) | 36 | `declaration-track:f44de8ce56289cb0cf9437fcaaac9bb5745f8e320b5bcaac0494807ab42608d2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

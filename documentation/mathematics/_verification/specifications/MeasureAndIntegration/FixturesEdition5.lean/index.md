@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/FixturesEdition5.lean/index.md) · [Full source](../../../../MeasureAndIntegration/FixturesEdition5.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixturesEdition5.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixturesEdition5.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../MeasureAndIntegration/FixturesEdition5.lean/declarations/example-source-edition-2.md) | 8 | `declaration-track:b565fb691f3addc8942c697c84f0fe2d44d9e07b9982e90c176abd4b2fd58832` |
-| 2 | `example` | [(anonymous)](../../../../MeasureAndIntegration/FixturesEdition5.lean/declarations/example-source-edition-3.md) | 12 | `declaration-track:e41f69076c37b02195105bb451563f487237ada4771c390b54ae886cc7dd2a54` |
-| 3 | `example` | [(anonymous)](../../../../MeasureAndIntegration/FixturesEdition5.lean/declarations/example.md) | 16 | `declaration-track:2dacc3ad1b7dc9a5c6958db76d8982f2807f95bdbb72db4a4214d84d8cab05e2` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixturesEdition5.lean/declarations/example-source-edition-2.md) | 8 | `declaration-track:b565fb691f3addc8942c697c84f0fe2d44d9e07b9982e90c176abd4b2fd58832` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixturesEdition5.lean/declarations/example-source-edition-3.md) | 12 | `declaration-track:e41f69076c37b02195105bb451563f487237ada4771c390b54ae886cc7dd2a54` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FixturesEdition5.lean/declarations/example.md) | 16 | `declaration-track:2dacc3ad1b7dc9a5c6958db76d8982f2807f95bdbb72db4a4214d84d8cab05e2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

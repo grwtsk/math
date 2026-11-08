@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/ValueParserReconstruction.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/ValueParserReconstruction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/ValueParserReconstruction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/ValueParserReconstruction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.FoundationsLogicAndTypeTheory.Computability.RecursiveFunctions.PrimitiveParserReconstruction`](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/PrimitiveParserReconstruction.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.FoundationsLogicAndTypeTheory.Computability.RecursiveFunctions.PrimitiveParserReconstruction`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/PrimitiveParserReconstruction.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [asText_inverse](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/ValueParserReconstruction.lean/declarations/astext-inverse.md) | 5 | `result-track:1b02ceacf9967bc072b7a4cda2bcd3e4c37aef2594a960600ee4e575855dc738` |
-| 2 | `theorem` | [readMany_reconstruct](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/ValueParserReconstruction.lean/declarations/readmany-reconstruct.md) | 9 | `result-track:993dd7fa7fcdc38e96a9ab8618759aedcf41aff5c994f3a393cfd8c89c499534` |
-| 3 | `theorem` | [readPairs_reconstruct](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/ValueParserReconstruction.lean/declarations/readpairs-reconstruct.md) | 37 | `result-track:a5970437193da87e08988fd0ff7163e73001210c0f9e12460a3f3f6c3cb0bf87` |
-| 4 | `theorem` | [parse_value_reconstruct](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/ValueParserReconstruction.lean/declarations/parse-value-reconstruct.md) | 73 | `result-track:ea055336be252dc3b7abbfee9d4d3765e4163ffa1cc5c5364df7f65a1d78ee2a` |
+| 1 | `theorem` | [asText_inverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/ValueParserReconstruction.lean/declarations/astext-inverse.md) | 5 | `result-track:1b02ceacf9967bc072b7a4cda2bcd3e4c37aef2594a960600ee4e575855dc738` |
+| 2 | `theorem` | [readMany_reconstruct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/ValueParserReconstruction.lean/declarations/readmany-reconstruct.md) | 9 | `result-track:993dd7fa7fcdc38e96a9ab8618759aedcf41aff5c994f3a393cfd8c89c499534` |
+| 3 | `theorem` | [readPairs_reconstruct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/ValueParserReconstruction.lean/declarations/readpairs-reconstruct.md) | 37 | `result-track:a5970437193da87e08988fd0ff7163e73001210c0f9e12460a3f3f6c3cb0bf87` |
+| 4 | `theorem` | [parse_value_reconstruct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/ValueParserReconstruction.lean/declarations/parse-value-reconstruct.md) | 73 | `result-track:ea055336be252dc3b7abbfee9d4d3765e4163ffa1cc5c5364df7f65a1d78ee2a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

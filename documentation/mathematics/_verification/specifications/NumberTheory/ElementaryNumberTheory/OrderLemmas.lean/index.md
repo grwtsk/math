@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/OrderLemmas.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/OrderLemmas.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/OrderLemmas.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/OrderLemmas.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [natAbs_eq_iff_mul_self_eq](../../../../../NumberTheory/ElementaryNumberTheory/OrderLemmas.lean/declarations/natabs-eq-iff-mul-self-eq.md) | 22 | `result-track:cdef5f30632711544bf26434a53331d50efee3568a5ce3f314ce0efe9d8176c0` |
-| 2 | `theorem` | [natAbs_lt_iff_mul_self_lt](../../../../../NumberTheory/ElementaryNumberTheory/OrderLemmas.lean/declarations/natabs-lt-iff-mul-self-lt.md) | 26 | `result-track:08e7ec57cef0607a04de60c120a0f278859edbf5c64393ae93b205d71b60b7b9` |
-| 3 | `theorem` | [natAbs_le_iff_mul_self_le](../../../../../NumberTheory/ElementaryNumberTheory/OrderLemmas.lean/declarations/natabs-le-iff-mul-self-le.md) | 30 | `result-track:1a060839aa3fea8a126fa144cee70438cffee60292c8ae3071d70a19f8e2a615` |
+| 1 | `theorem` | [natAbs_eq_iff_mul_self_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/OrderLemmas.lean/declarations/natabs-eq-iff-mul-self-eq.md) | 22 | `result-track:cdef5f30632711544bf26434a53331d50efee3568a5ce3f314ce0efe9d8176c0` |
+| 2 | `theorem` | [natAbs_lt_iff_mul_self_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/OrderLemmas.lean/declarations/natabs-lt-iff-mul-self-lt.md) | 26 | `result-track:08e7ec57cef0607a04de60c120a0f278859edbf5c64393ae93b205d71b60b7b9` |
+| 3 | `theorem` | [natAbs_le_iff_mul_self_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/OrderLemmas.lean/declarations/natabs-le-iff-mul-self-le.md) | 30 | `result-track:1a060839aa3fea8a126fa144cee70438cffee60292c8ae3071d70a19f8e2a615` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

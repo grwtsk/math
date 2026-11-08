@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/InclusionExclusion.lean/index.md) · [Full source](../../../../Combinatorics/InclusionExclusion.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/InclusionExclusion.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/InclusionExclusion.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [prod_indicator_biUnion_sub_indicator](../../../../Combinatorics/InclusionExclusion.lean/declarations/prod-indicator-biunion-sub-indicator.md) | 48 | `result-track:7c60b3199dab95a90a5ac8b8b8c9f7a13e6e17251b4cac878b9e4f5906edba3b` |
-| 2 | `theorem` | [inclusion_exclusion_sum_biUnion](../../../../Combinatorics/InclusionExclusion.lean/declarations/inclusion-exclusion-sum-biunion.md) | 61 | `result-track:37162c7e5766d3a59013ef6cfe8a9903104d102bbd25cf82c8bd50be64b9192d` |
-| 3 | `theorem` | [inclusion_exclusion_card_biUnion](../../../../Combinatorics/InclusionExclusion.lean/declarations/inclusion-exclusion-card-biunion.md) | 99 | `result-track:8ad24b8f4f0679e2deafc6535288a654b86038fe48f2f243cf20f33d4bd55d05` |
-| 4 | `theorem` | [inclusion_exclusion_sum_inf_compl](../../../../Combinatorics/InclusionExclusion.lean/declarations/inclusion-exclusion-sum-inf-compl.md) | 110 | `result-track:e601863fbb37dc3f2acd8f39a703c57300f79a9130e9f1df087ad4a532a45b95` |
-| 5 | `theorem` | [inclusion_exclusion_card_inf_compl](../../../../Combinatorics/InclusionExclusion.lean/declarations/inclusion-exclusion-card-inf-compl.md) | 127 | `result-track:bf5f1b919455f314de362230b2fc13c27b3dc0c3ec5aadff395aa9a92b228198` |
+| 1 | `lemma` | [prod_indicator_biUnion_sub_indicator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/InclusionExclusion.lean/declarations/prod-indicator-biunion-sub-indicator.md) | 48 | `result-track:7c60b3199dab95a90a5ac8b8b8c9f7a13e6e17251b4cac878b9e4f5906edba3b` |
+| 2 | `theorem` | [inclusion_exclusion_sum_biUnion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/InclusionExclusion.lean/declarations/inclusion-exclusion-sum-biunion.md) | 61 | `result-track:37162c7e5766d3a59013ef6cfe8a9903104d102bbd25cf82c8bd50be64b9192d` |
+| 3 | `theorem` | [inclusion_exclusion_card_biUnion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/InclusionExclusion.lean/declarations/inclusion-exclusion-card-biunion.md) | 99 | `result-track:8ad24b8f4f0679e2deafc6535288a654b86038fe48f2f243cf20f33d4bd55d05` |
+| 4 | `theorem` | [inclusion_exclusion_sum_inf_compl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/InclusionExclusion.lean/declarations/inclusion-exclusion-sum-inf-compl.md) | 110 | `result-track:e601863fbb37dc3f2acd8f39a703c57300f79a9130e9f1df087ad4a532a45b95` |
+| 5 | `theorem` | [inclusion_exclusion_card_inf_compl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/InclusionExclusion.lean/declarations/inclusion-exclusion-card-inf-compl.md) | 127 | `result-track:bf5f1b919455f314de362230b2fc13c27b3dc0c3ec5aadff395aa9a92b228198` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

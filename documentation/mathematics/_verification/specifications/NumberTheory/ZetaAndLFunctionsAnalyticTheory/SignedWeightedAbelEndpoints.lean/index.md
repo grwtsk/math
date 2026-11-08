@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedWeightedAbelEndpoints.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedWeightedAbelEndpoints.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedWeightedAbelEndpoints.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedWeightedAbelEndpoints.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedWeightedAbelEndpoints.lean/declarations/example-source-edition-2.md) | 9 | `declaration-track:869ad481408735d8ef6544681f9e469faeacfcefb6c9796aaa406bcb3413eb71` |
-| 2 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedWeightedAbelEndpoints.lean/declarations/example-source-edition-3.md) | 16 | `declaration-track:a767257bb1bbb3362ef63627eab11fd4396c7dda238238b2a8366ae7a52b8020` |
-| 3 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedWeightedAbelEndpoints.lean/declarations/example.md) | 25 | `declaration-track:735225b4a26bf87bae9fdf016cffd19a39d2d344fbfe8016c53a025cdee01071` |
-| 4 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedWeightedAbelEndpoints.lean/declarations/example-source-edition-4.md) | 29 | `declaration-track:a8667176ee83f1799ede6e5f366de6bc6c0a0394f68f72f00792e110950e80a9` |
-| 5 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedWeightedAbelEndpoints.lean/declarations/example-source-edition-5.md) | 34 | `declaration-track:b74a7e81eff8284d852ff6dd65cb38d77f894c16950bbb73355d828d38358d36` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedWeightedAbelEndpoints.lean/declarations/example-source-edition-2.md) | 9 | `declaration-track:869ad481408735d8ef6544681f9e469faeacfcefb6c9796aaa406bcb3413eb71` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedWeightedAbelEndpoints.lean/declarations/example-source-edition-3.md) | 16 | `declaration-track:a767257bb1bbb3362ef63627eab11fd4396c7dda238238b2a8366ae7a52b8020` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedWeightedAbelEndpoints.lean/declarations/example.md) | 25 | `declaration-track:735225b4a26bf87bae9fdf016cffd19a39d2d344fbfe8016c53a025cdee01071` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedWeightedAbelEndpoints.lean/declarations/example-source-edition-4.md) | 29 | `declaration-track:a8667176ee83f1799ede6e5f366de6bc6c0a0394f68f72f00792e110950e80a9` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedWeightedAbelEndpoints.lean/declarations/example-source-edition-5.md) | 34 | `declaration-track:b74a7e81eff8284d852ff6dd65cb38d77f894c16950bbb73355d828d38358d36` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

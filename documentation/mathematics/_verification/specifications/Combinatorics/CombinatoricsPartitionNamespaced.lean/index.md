@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/CombinatoricsPartitionNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/CombinatoricsPartitionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CombinatoricsPartitionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CombinatoricsPartitionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,20 +59,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Partition](../../../../Combinatorics/CombinatoricsPartitionNamespaced.lean/declarations/partition.md) | 64 | `declaration-track:e98bf61303e4d89cf26f84fce9f74d1b95bfc65ef33d561fc4a562dc94b61e66` |
-| 2 | `instance` | [decidableEqParition](../../../../Combinatorics/CombinatoricsPartitionNamespaced.lean/declarations/decidableeqparition.md) | 77 | `declaration-track:8f11775311d3f0f960deec1d6703d56fbde4ad0f083881a059f9facbd77c8a98` |
-| 3 | `def` | [ofComposition](../../../../Combinatorics/CombinatoricsPartitionNamespaced.lean/declarations/ofcomposition.md) | 81 | `declaration-track:1cfafec4b9c6f6333ff4b650b5e9c535398d02e5a2741c3d4819b9969d29de6e` |
-| 4 | `theorem` | [ofComposition_surj](../../../../Combinatorics/CombinatoricsPartitionNamespaced.lean/declarations/ofcomposition-surj.md) | 88 | `result-track:ceaecd78c05690e4868b1606844ae3de4d19f963f061019d75dc836fc7949f0d` |
-| 5 | `def` | [ofSums](../../../../Combinatorics/CombinatoricsPartitionNamespaced.lean/declarations/ofsums.md) | 100 | `declaration-track:8eccd04b05b128eda91079b77ac30ea11c0e9ad67077ef9486ad3bf642ef032d` |
-| 6 | `def` | [ofMultiset](../../../../Combinatorics/CombinatoricsPartitionNamespaced.lean/declarations/ofmultiset.md) | 114 | `declaration-track:1c98ccf3ceeb9051c67165f3252c32d1da9e35db7b1be5856be0afde1ea6fc61` |
-| 7 | `def` | [indiscretePartition](../../../../Combinatorics/CombinatoricsPartitionNamespaced.lean/declarations/indiscretepartition.md) | 119 | `declaration-track:2add4c9c2475bc0128f1cc7c02a14d603f8d91f6172db009ecdad6491457be05` |
-| 8 | `instance` | [(anonymous)](../../../../Combinatorics/CombinatoricsPartitionNamespaced.lean/declarations/instance.md) | 123 | `declaration-track:7d433a477a2153d361ac50c381e014591363d8739256d9e835e44ddabe4b5f09` |
-| 9 | `theorem` | [count_ofSums_of_ne_zero](../../../../Combinatorics/CombinatoricsPartitionNamespaced.lean/declarations/count-ofsums-of-ne-zero.md) | 131 | `result-track:7e3fb8c6ee96ef1ecdf4b3029880694552b4fff24ac879a6a92ca4272ea16cf3` |
-| 10 | `theorem` | [count_ofSums_zero](../../../../Combinatorics/CombinatoricsPartitionNamespaced.lean/declarations/count-ofsums-zero.md) | 136 | `result-track:2623d4b692a2e447a4cadefa250430affd12b9a4f64c48b6bfa84a754406ec6a` |
-| 11 | `instance` | [(anonymous)](../../../../Combinatorics/CombinatoricsPartitionNamespaced.lean/declarations/instance-source-edition-2.md) | 144 | `declaration-track:f4b97577ce6281d3a44c6922d90964ce26641b3917cfc5e15c6800527b875326` |
-| 12 | `def` | [odds](../../../../Combinatorics/CombinatoricsPartitionNamespaced.lean/declarations/odds.md) | 148 | `declaration-track:49f30446291f2c7a9aac54392143511a4d09babce4c6a6f860d80af666db1549` |
-| 13 | `def` | [distincts](../../../../Combinatorics/CombinatoricsPartitionNamespaced.lean/declarations/distincts.md) | 153 | `declaration-track:269794b0e36161b55b38533c9cd67b0069e83cf14fb59ddee5e736cca564cc76` |
-| 14 | `def` | [oddDistincts](../../../../Combinatorics/CombinatoricsPartitionNamespaced.lean/declarations/odddistincts.md) | 158 | `declaration-track:0b1a8990b72bce00d67e0acda4879d8375828d7790a60d2b31c171115493f7e5` |
+| 1 | `structure` | [Partition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CombinatoricsPartitionNamespaced.lean/declarations/partition.md) | 64 | `declaration-track:e98bf61303e4d89cf26f84fce9f74d1b95bfc65ef33d561fc4a562dc94b61e66` |
+| 2 | `instance` | [decidableEqParition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CombinatoricsPartitionNamespaced.lean/declarations/decidableeqparition.md) | 77 | `declaration-track:8f11775311d3f0f960deec1d6703d56fbde4ad0f083881a059f9facbd77c8a98` |
+| 3 | `def` | [ofComposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CombinatoricsPartitionNamespaced.lean/declarations/ofcomposition.md) | 81 | `declaration-track:1cfafec4b9c6f6333ff4b650b5e9c535398d02e5a2741c3d4819b9969d29de6e` |
+| 4 | `theorem` | [ofComposition_surj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CombinatoricsPartitionNamespaced.lean/declarations/ofcomposition-surj.md) | 88 | `result-track:ceaecd78c05690e4868b1606844ae3de4d19f963f061019d75dc836fc7949f0d` |
+| 5 | `def` | [ofSums](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CombinatoricsPartitionNamespaced.lean/declarations/ofsums.md) | 100 | `declaration-track:8eccd04b05b128eda91079b77ac30ea11c0e9ad67077ef9486ad3bf642ef032d` |
+| 6 | `def` | [ofMultiset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CombinatoricsPartitionNamespaced.lean/declarations/ofmultiset.md) | 114 | `declaration-track:1c98ccf3ceeb9051c67165f3252c32d1da9e35db7b1be5856be0afde1ea6fc61` |
+| 7 | `def` | [indiscretePartition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CombinatoricsPartitionNamespaced.lean/declarations/indiscretepartition.md) | 119 | `declaration-track:2add4c9c2475bc0128f1cc7c02a14d603f8d91f6172db009ecdad6491457be05` |
+| 8 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CombinatoricsPartitionNamespaced.lean/declarations/instance.md) | 123 | `declaration-track:7d433a477a2153d361ac50c381e014591363d8739256d9e835e44ddabe4b5f09` |
+| 9 | `theorem` | [count_ofSums_of_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CombinatoricsPartitionNamespaced.lean/declarations/count-ofsums-of-ne-zero.md) | 131 | `result-track:7e3fb8c6ee96ef1ecdf4b3029880694552b4fff24ac879a6a92ca4272ea16cf3` |
+| 10 | `theorem` | [count_ofSums_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CombinatoricsPartitionNamespaced.lean/declarations/count-ofsums-zero.md) | 136 | `result-track:2623d4b692a2e447a4cadefa250430affd12b9a4f64c48b6bfa84a754406ec6a` |
+| 11 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CombinatoricsPartitionNamespaced.lean/declarations/instance-source-edition-2.md) | 144 | `declaration-track:f4b97577ce6281d3a44c6922d90964ce26641b3917cfc5e15c6800527b875326` |
+| 12 | `def` | [odds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CombinatoricsPartitionNamespaced.lean/declarations/odds.md) | 148 | `declaration-track:49f30446291f2c7a9aac54392143511a4d09babce4c6a6f860d80af666db1549` |
+| 13 | `def` | [distincts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CombinatoricsPartitionNamespaced.lean/declarations/distincts.md) | 153 | `declaration-track:269794b0e36161b55b38533c9cd67b0069e83cf14fb59ddee5e736cca564cc76` |
+| 14 | `def` | [oddDistincts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CombinatoricsPartitionNamespaced.lean/declarations/odddistincts.md) | 158 | `declaration-track:0b1a8990b72bce00d67e0acda4879d8375828d7790a60d2b31c171115493f7e5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

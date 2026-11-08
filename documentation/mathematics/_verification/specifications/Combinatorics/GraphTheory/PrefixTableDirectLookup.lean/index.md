@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/PrefixTableDirectLookup.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/PrefixTableDirectLookup.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PrefixTableDirectLookup.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PrefixTableDirectLookup.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Combinatorics.DirectedGraph.PrefixTableReferenceTransport`](../../../../../Combinatorics/GraphTheory/PrefixTableReferenceTransport.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.Combinatorics.DirectedGraph.PrefixTableReferenceTransport`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PrefixTableReferenceTransport.lean/index.md) — import line 8; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [directLookupAt](../../../../../Combinatorics/GraphTheory/PrefixTableDirectLookup.lean/declarations/directlookupat.md) | 31 | `declaration-track:c7d5a197d1bc34dcb310acb8f144f21334fa62e3c5a08004fd0cac79806cec9a` |
-| 2 | `theorem` | [transportSlotAt_eq_directLookup_of_reference](../../../../../Combinatorics/GraphTheory/PrefixTableDirectLookup.lean/declarations/transportslotat-eq-directlookup-of-reference.md) | 42 | `result-track:56517c29e2a4a9c62aab482c0151f47a288fee167bdd6b6824a09e10ee2925a5` |
+| 1 | `def` | [directLookupAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PrefixTableDirectLookup.lean/declarations/directlookupat.md) | 31 | `declaration-track:c7d5a197d1bc34dcb310acb8f144f21334fa62e3c5a08004fd0cac79806cec9a` |
+| 2 | `theorem` | [transportSlotAt_eq_directLookup_of_reference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PrefixTableDirectLookup.lean/declarations/transportslotat-eq-directlookup-of-reference.md) | 42 | `result-track:56517c29e2a4a9c62aab482c0151f47a288fee167bdd6b6824a09e10ee2925a5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

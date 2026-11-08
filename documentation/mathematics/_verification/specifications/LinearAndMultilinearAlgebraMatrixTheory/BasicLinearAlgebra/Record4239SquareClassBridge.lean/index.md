@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Record4239SquareClassBridge.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Record4239SquareClassBridge.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Record4239SquareClassBridge.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Record4239SquareClassBridge.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.Record4239RankCriterion`](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Record4239RankCriterion.lean/index.md) — import line 12; pinned internal source present.
+- [`GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.Record4239RankCriterion`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Record4239RankCriterion.lean/index.md) — import line 12; pinned internal source present.
 - `Mathlib.LinearAlgebra.Matrix.NonsingularInverse` — import line 13; external provider; requires a separately pinned dependency.
 - `Mathlib.LinearAlgebra.Dimension.Finite` — import line 14; external provider; requires a separately pinned dependency.
 
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [characterMatrix_mul_dual](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Record4239SquareClassBridge.lean/declarations/charactermatrix-mul-dual.md) | 50 | `result-track:e8aafbb2eea2ca300434017eb0ecf570f216e28f2515b77bde7c1604554cec9b` |
-| 2 | `theorem` | [dualTranspose_mul_characterTranspose](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Record4239SquareClassBridge.lean/declarations/dualtranspose-mul-charactertranspose.md) | 58 | `result-track:53010ef79f97ff79d4e9a1a6333ca618eb2f33c54b1c3e4b85e21b1b1bbb2671` |
-| 3 | `theorem` | [characterTranspose_mulVec_injective](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Record4239SquareClassBridge.lean/declarations/charactertranspose-mulvec-injective.md) | 68 | `result-track:f710be4de940131573c8e885af9c4c14d734ac97572139dd58325c2510ba5bdb` |
-| 4 | `theorem` | [linearIndependent_of_sourceColumnCharacters](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Record4239SquareClassBridge.lean/declarations/linearindependent-of-sourcecolumncharacters.md) | 78 | `result-track:46d2f767c933380077b6e13ea295a502846a1f4aa50def1fb9d875480e233bde` |
-| 5 | `def` | [composedDescentCharacter](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Record4239SquareClassBridge.lean/declarations/composeddescentcharacter.md) | 110 | `declaration-track:27b471a8eb68ce8ca2046289f55b2cfa435551f289ccc49419adcade26e76e35` |
-| 6 | `theorem` | [composedDescentCharacter_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Record4239SquareClassBridge.lean/declarations/composeddescentcharacter-apply.md) | 119 | `result-track:367fffa4bcbb70d0667a762051933e6d4507c4092687dfcef9fde4c5bc35ea5d` |
-| 7 | `theorem` | [linearIndependent_of_descentFactorization](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Record4239SquareClassBridge.lean/declarations/linearindependent-of-descentfactorization.md) | 128 | `result-track:5c55eb86b2875462825754420042dc0cc5e242b1d2557fe73cb86b02562baa0b` |
-| 8 | `theorem` | [finrank_ge_32_of_descentFactorization](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Record4239SquareClassBridge.lean/declarations/finrank-ge-32-of-descentfactorization.md) | 146 | `result-track:c9caeb02ea76c0e0b23f03e45e080a41043d00f84fffef3ddb8e3ddfa96a6ef4` |
+| 1 | `theorem` | [characterMatrix_mul_dual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Record4239SquareClassBridge.lean/declarations/charactermatrix-mul-dual.md) | 50 | `result-track:e8aafbb2eea2ca300434017eb0ecf570f216e28f2515b77bde7c1604554cec9b` |
+| 2 | `theorem` | [dualTranspose_mul_characterTranspose](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Record4239SquareClassBridge.lean/declarations/dualtranspose-mul-charactertranspose.md) | 58 | `result-track:53010ef79f97ff79d4e9a1a6333ca618eb2f33c54b1c3e4b85e21b1b1bbb2671` |
+| 3 | `theorem` | [characterTranspose_mulVec_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Record4239SquareClassBridge.lean/declarations/charactertranspose-mulvec-injective.md) | 68 | `result-track:f710be4de940131573c8e885af9c4c14d734ac97572139dd58325c2510ba5bdb` |
+| 4 | `theorem` | [linearIndependent_of_sourceColumnCharacters](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Record4239SquareClassBridge.lean/declarations/linearindependent-of-sourcecolumncharacters.md) | 78 | `result-track:46d2f767c933380077b6e13ea295a502846a1f4aa50def1fb9d875480e233bde` |
+| 5 | `def` | [composedDescentCharacter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Record4239SquareClassBridge.lean/declarations/composeddescentcharacter.md) | 110 | `declaration-track:27b471a8eb68ce8ca2046289f55b2cfa435551f289ccc49419adcade26e76e35` |
+| 6 | `theorem` | [composedDescentCharacter_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Record4239SquareClassBridge.lean/declarations/composeddescentcharacter-apply.md) | 119 | `result-track:367fffa4bcbb70d0667a762051933e6d4507c4092687dfcef9fde4c5bc35ea5d` |
+| 7 | `theorem` | [linearIndependent_of_descentFactorization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Record4239SquareClassBridge.lean/declarations/linearindependent-of-descentfactorization.md) | 128 | `result-track:5c55eb86b2875462825754420042dc0cc5e242b1d2557fe73cb86b02562baa0b` |
+| 8 | `theorem` | [finrank_ge_32_of_descentFactorization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Record4239SquareClassBridge.lean/declarations/finrank-ge-32-of-descentfactorization.md) | 146 | `result-track:c9caeb02ea76c0e0b23f03e45e080a41043d00f84fffef3ddb8e3ddfa96a6ef4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

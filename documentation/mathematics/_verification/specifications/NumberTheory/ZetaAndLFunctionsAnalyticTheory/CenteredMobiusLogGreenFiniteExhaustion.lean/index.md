@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFiniteExhaustion.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFiniteExhaustion.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFiniteExhaustion.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFiniteExhaustion.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenFrequencySymmetry`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFrequencySymmetry.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenFrequencySymmetry`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFrequencySymmetry.lean/index.md) — import line 7; pinned internal source present.
 - `Mathlib.Tactic` — import line 8; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [greenSymmetricFrequencyEnergy](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFiniteExhaustion.lean/declarations/greensymmetricfrequencyenergy.md) | 15 | `declaration-track:9abdd9660ed41d5fef0ab8cf27c37d7e76278acc39bcb5db5893d540961cf7d3` |
-| 2 | `def` | [greenFrequencyQuotientCutoff](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFiniteExhaustion.lean/declarations/greenfrequencyquotientcutoff.md) | 20 | `declaration-track:850fbf1a8e985fc8bcd4b7f96c6819fb4726577e1c04c9d56673970b7774fa09` |
-| 3 | `theorem` | [greenSymmetricFrequencyEnergy_le_hybrid](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFiniteExhaustion.lean/declarations/greensymmetricfrequencyenergy-le-hybrid.md) | 26 | `result-track:c622f1303902bf104c4c2fa10dc029ca2da2340f4b0e1e530d0c0a1be4776582` |
+| 1 | `def` | [greenSymmetricFrequencyEnergy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFiniteExhaustion.lean/declarations/greensymmetricfrequencyenergy.md) | 15 | `declaration-track:9abdd9660ed41d5fef0ab8cf27c37d7e76278acc39bcb5db5893d540961cf7d3` |
+| 2 | `def` | [greenFrequencyQuotientCutoff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFiniteExhaustion.lean/declarations/greenfrequencyquotientcutoff.md) | 20 | `declaration-track:850fbf1a8e985fc8bcd4b7f96c6819fb4726577e1c04c9d56673970b7774fa09` |
+| 3 | `theorem` | [greenSymmetricFrequencyEnergy_le_hybrid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFiniteExhaustion.lean/declarations/greensymmetricfrequencyenergy-le-hybrid.md) | 26 | `result-track:c622f1303902bf104c4c2fa10dc029ca2da2340f4b0e1e530d0c0a1be4776582` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

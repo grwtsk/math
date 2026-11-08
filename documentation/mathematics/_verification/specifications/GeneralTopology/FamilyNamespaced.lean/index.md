@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/FamilyNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/FamilyNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FamilyNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FamilyNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [UniformConnesRandomBitfieldFamily](../../../../GeneralTopology/FamilyNamespaced.lean/declarations/uniformconnesrandombitfieldfamily-source-edition-2.md) | 24 | `declaration-track:fa61becd5a8032514004ba2bfd65470833aca6658d7d3ef650d258b8fb3458c3` |
-| 2 | `structure` | [UniformCommittedRealizationFamily](../../../../GeneralTopology/FamilyNamespaced.lean/declarations/uniformcommittedrealizationfamily.md) | 77 | `declaration-track:63d87f9352816689f3132a0c4c2e123435ff5362884e54ca9dd728fb5bcdee69` |
-| 3 | `structure` | [UniformFamilyLimitCertificate](../../../../GeneralTopology/FamilyNamespaced.lean/declarations/uniformfamilylimitcertificate.md) | 109 | `declaration-track:ecdaaba5a7e498cc994f0acb6729752ddc5e10baaf45d5eb5731055b2a869805` |
-| 4 | `def` | [UniformConnesRandomBitfieldFamily](../../../../GeneralTopology/FamilyNamespaced.lean/declarations/uniformconnesrandombitfieldfamily.md) | 132 | `declaration-track:0737dcbe8f0ab0b44945fbd1f7cfd579b0d1a7887fd6d82ce0c63e84fe0255d3` |
-| 5 | `constant` | [(anonymous)](../../../../GeneralTopology/FamilyNamespaced.lean/declarations/constant.md) | 144 | `declaration-track:411c83c300e3eecd727e1d562b155e3402209577fcddd340ac1b444464c70b3e` |
-| 6 | `theorem` | [uniform_connes_random_bitfield_square_root](../../../../GeneralTopology/FamilyNamespaced.lean/declarations/uniform-connes-random-bitfield-square-root.md) | 174 | `result-track:4d1bddd116508b162fee9cd885844bfc5c539bfb8f588cd1e2ccc52de5806fcd` |
+| 1 | `structure` | [UniformConnesRandomBitfieldFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FamilyNamespaced.lean/declarations/uniformconnesrandombitfieldfamily-source-edition-2.md) | 24 | `declaration-track:fa61becd5a8032514004ba2bfd65470833aca6658d7d3ef650d258b8fb3458c3` |
+| 2 | `structure` | [UniformCommittedRealizationFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FamilyNamespaced.lean/declarations/uniformcommittedrealizationfamily.md) | 77 | `declaration-track:63d87f9352816689f3132a0c4c2e123435ff5362884e54ca9dd728fb5bcdee69` |
+| 3 | `structure` | [UniformFamilyLimitCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FamilyNamespaced.lean/declarations/uniformfamilylimitcertificate.md) | 109 | `declaration-track:ecdaaba5a7e498cc994f0acb6729752ddc5e10baaf45d5eb5731055b2a869805` |
+| 4 | `def` | [UniformConnesRandomBitfieldFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FamilyNamespaced.lean/declarations/uniformconnesrandombitfieldfamily.md) | 132 | `declaration-track:0737dcbe8f0ab0b44945fbd1f7cfd579b0d1a7887fd6d82ce0c63e84fe0255d3` |
+| 5 | `constant` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FamilyNamespaced.lean/declarations/constant.md) | 144 | `declaration-track:411c83c300e3eecd727e1d562b155e3402209577fcddd340ac1b444464c70b3e` |
+| 6 | `theorem` | [uniform_connes_random_bitfield_square_root](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FamilyNamespaced.lean/declarations/uniform-connes-random-bitfield-square-root.md) | 174 | `result-track:4d1bddd116508b162fee9cd885844bfc5c539bfb8f588cd1e2ccc52de5806fcd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

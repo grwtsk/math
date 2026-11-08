@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/SimplicialSetHomotopyNamespacedPublic.lean/index.md) · [Full source](../../../../AlgebraicTopology/SimplicialSetHomotopyNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialSetHomotopyNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialSetHomotopyNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [RelativeMorphism.botEquiv](../../../../AlgebraicTopology/SimplicialSetHomotopyNamespacedPublic.lean/declarations/relativemorphism-botequiv.md) | 49 | `declaration-track:604050a36719bbc494735a0e22c9470858a8e29b02956682e5a746cd48c33c39` |
-| 2 | `def` | [Homotopy](../../../../AlgebraicTopology/SimplicialSetHomotopyNamespacedPublic.lean/declarations/homotopy.md) | 58 | `declaration-track:4168386f53f4e95a7d1d5cc25de84787d0d7ff861c6f68b4406ac3bd0f8c0f3b` |
-| 3 | `lemma` | [h₀](../../../../AlgebraicTopology/SimplicialSetHomotopyNamespacedPublic.lean/declarations/h-source-edition-2.md) | 66 | `result-track:e0d11d2eb0c68a1e6f96276f6d2c44b87e0111719767d7cae565980f4919152a` |
-| 4 | `lemma` | [h₁](../../../../AlgebraicTopology/SimplicialSetHomotopyNamespacedPublic.lean/declarations/h.md) | 70 | `result-track:0f03a4e57058c2063725364fa7a3618a1ef6abdaa72dd74c38d83435839ab9fa` |
-| 5 | `def` | [toSimplicialObjectHomotopy](../../../../AlgebraicTopology/SimplicialSetHomotopyNamespacedPublic.lean/declarations/tosimplicialobjecthomotopy.md) | 78 | `declaration-track:bb92eada062c77c95c9fbb5e7939c92006882987402b042455155933d79f3314` |
+| 1 | `def` | [RelativeMorphism.botEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialSetHomotopyNamespacedPublic.lean/declarations/relativemorphism-botequiv.md) | 49 | `declaration-track:604050a36719bbc494735a0e22c9470858a8e29b02956682e5a746cd48c33c39` |
+| 2 | `def` | [Homotopy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialSetHomotopyNamespacedPublic.lean/declarations/homotopy.md) | 58 | `declaration-track:4168386f53f4e95a7d1d5cc25de84787d0d7ff861c6f68b4406ac3bd0f8c0f3b` |
+| 3 | `lemma` | [h₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialSetHomotopyNamespacedPublic.lean/declarations/h-source-edition-2.md) | 66 | `result-track:e0d11d2eb0c68a1e6f96276f6d2c44b87e0111719767d7cae565980f4919152a` |
+| 4 | `lemma` | [h₁](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialSetHomotopyNamespacedPublic.lean/declarations/h.md) | 70 | `result-track:0f03a4e57058c2063725364fa7a3618a1ef6abdaa72dd74c38d83435839ab9fa` |
+| 5 | `def` | [toSimplicialObjectHomotopy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SimplicialSetHomotopyNamespacedPublic.lean/declarations/tosimplicialobjecthomotopy.md) | 78 | `declaration-track:bb92eada062c77c95c9fbb5e7939c92006882987402b042455155933d79f3314` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

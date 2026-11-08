@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ActionTransferInstanceNamespacedPublic.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ActionTransferInstanceNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ActionTransferInstanceNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ActionTransferInstanceNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [smulZeroClass](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ActionTransferInstanceNamespacedPublic.lean/declarations/smulzeroclass.md) | 35 | `declaration-track:0ead19d9bf46479bfd2e7993b20d866dfb69b2cae049e1ebcc128f3b5f19ddaf` |
-| 2 | `abbrev` | [smulWithZero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ActionTransferInstanceNamespacedPublic.lean/declarations/smulwithzero.md) | 42 | `declaration-track:893641fa6eae51cdf99d3287459795b37b5a524e8c5d167dfe7d283111b13d43` |
-| 3 | `abbrev` | [mulActionWithZero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ActionTransferInstanceNamespacedPublic.lean/declarations/mulactionwithzero.md) | 49 | `declaration-track:46d98b955488ec912b42c8335e833064d9dc4da3b7d43e902f0407a1c134b359` |
-| 4 | `abbrev` | [distribSMul](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ActionTransferInstanceNamespacedPublic.lean/declarations/distribsmul.md) | 60 | `declaration-track:a688d8977851f4c0ce71a0ea7bd66c9bba0de71ba8ce383c330878773e442471` |
-| 5 | `abbrev` | [distribMulAction](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ActionTransferInstanceNamespacedPublic.lean/declarations/distribmulaction.md) | 67 | `declaration-track:5a34f7670bb30943dbdadab86fff341602c19d6be5d453e1a6bb275cfefa9550` |
+| 1 | `abbrev` | [smulZeroClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ActionTransferInstanceNamespacedPublic.lean/declarations/smulzeroclass.md) | 35 | `declaration-track:0ead19d9bf46479bfd2e7993b20d866dfb69b2cae049e1ebcc128f3b5f19ddaf` |
+| 2 | `abbrev` | [smulWithZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ActionTransferInstanceNamespacedPublic.lean/declarations/smulwithzero.md) | 42 | `declaration-track:893641fa6eae51cdf99d3287459795b37b5a524e8c5d167dfe7d283111b13d43` |
+| 3 | `abbrev` | [mulActionWithZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ActionTransferInstanceNamespacedPublic.lean/declarations/mulactionwithzero.md) | 49 | `declaration-track:46d98b955488ec912b42c8335e833064d9dc4da3b7d43e902f0407a1c134b359` |
+| 4 | `abbrev` | [distribSMul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ActionTransferInstanceNamespacedPublic.lean/declarations/distribsmul.md) | 60 | `declaration-track:a688d8977851f4c0ce71a0ea7bd66c9bba0de71ba8ce383c330878773e442471` |
+| 5 | `abbrev` | [distribMulAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ActionTransferInstanceNamespacedPublic.lean/declarations/distribmulaction.md) | 67 | `declaration-track:5a34f7670bb30943dbdadab86fff341602c19d6be5d453e1a6bb275cfefa9550` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

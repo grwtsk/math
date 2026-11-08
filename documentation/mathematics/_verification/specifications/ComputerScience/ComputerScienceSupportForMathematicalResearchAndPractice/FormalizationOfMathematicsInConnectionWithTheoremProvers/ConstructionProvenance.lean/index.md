@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstructionProvenance.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstructionProvenance.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstructionProvenance.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstructionProvenance.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ConstructionProvenance](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstructionProvenance.lean/declarations/constructionprovenance.md) | 14 | `declaration-track:a2a2d21f6cd15dbf3a976d72d799c47cad4ce1ca71f0420b0b217427b70e7401` |
-| 2 | `structure` | [ProjectorProvenance](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstructionProvenance.lean/declarations/projectorprovenance.md) | 25 | `declaration-track:1b00ceed627fc23df711e56541096e31b54ef9be26352322cb4ecbc959cbe7a2` |
-| 3 | `structure` | [NonfactorizationWitness](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstructionProvenance.lean/declarations/nonfactorizationwitness.md) | 42 | `declaration-track:a773e082737f4aa491f407c89a16fc5470cb19fb077d3fe7bdcc3e3a5067e865` |
-| 4 | `theorem` | [no_erased_factorization](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstructionProvenance.lean/declarations/no-erased-factorization.md) | 60 | `result-track:42c75299980c39ce41643a71c3b108a7bd2e1813554c6b036257e54a57b720b2` |
+| 1 | `structure` | [ConstructionProvenance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstructionProvenance.lean/declarations/constructionprovenance.md) | 14 | `declaration-track:a2a2d21f6cd15dbf3a976d72d799c47cad4ce1ca71f0420b0b217427b70e7401` |
+| 2 | `structure` | [ProjectorProvenance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstructionProvenance.lean/declarations/projectorprovenance.md) | 25 | `declaration-track:1b00ceed627fc23df711e56541096e31b54ef9be26352322cb4ecbc959cbe7a2` |
+| 3 | `structure` | [NonfactorizationWitness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstructionProvenance.lean/declarations/nonfactorizationwitness.md) | 42 | `declaration-track:a773e082737f4aa491f407c89a16fc5470cb19fb077d3fe7bdcc3e3a5067e865` |
+| 4 | `theorem` | [no_erased_factorization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstructionProvenance.lean/declarations/no-erased-factorization.md) | 60 | `result-track:42c75299980c39ce41643a71c3b108a7bd2e1813554c6b036257e54a57b720b2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

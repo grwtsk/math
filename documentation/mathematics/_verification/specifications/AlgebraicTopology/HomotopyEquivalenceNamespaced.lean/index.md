@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/HomotopyEquivalenceNamespaced.lean/index.md) · [Full source](../../../../AlgebraicTopology/HomotopyEquivalenceNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomotopyEquivalenceNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomotopyEquivalenceNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [homotopyPToId](../../../../AlgebraicTopology/HomotopyEquivalenceNamespaced.lean/declarations/homotopyptoid.md) | 39 | `declaration-track:df8d426a0a372d7dd8245f81eedaf41d4e5efc65986924d6ffac02faafd93be6` |
-| 2 | `def` | [homotopyQToZero](../../../../AlgebraicTopology/HomotopyEquivalenceNamespaced.lean/declarations/homotopyqtozero.md) | 51 | `declaration-track:14b07262e0f63bb29640485e0290ba860934681d361d4f28c765b3db726f99dd` |
-| 3 | `theorem` | [homotopyPToId_eventually_constant](../../../../AlgebraicTopology/HomotopyEquivalenceNamespaced.lean/declarations/homotopyptoid-eventually-constant.md) | 54 | `result-track:1d60a7e07142de8129340b72c2d7a22e3281cd6487908343662ee32492f25c56` |
-| 4 | `def` | [homotopyPInftyToId](../../../../AlgebraicTopology/HomotopyEquivalenceNamespaced.lean/declarations/homotopypinftytoid.md) | 65 | `declaration-track:feacde87b208106a4dc228a30b43b0f78a150ae86ef4b151ee4141aef725151e` |
-| 5 | `def` | [homotopyEquivNormalizedMooreComplexAlternatingFaceMapComplex](../../../../AlgebraicTopology/HomotopyEquivalenceNamespaced.lean/declarations/homotopyequivnormalizedmoorecomplexalternatingfacemapcomplex.md) | 82 | `declaration-track:aa1a71348ca29322888af5ab33b0cc81ab47ad72cced850941a41aeb0e0d56a4` |
+| 1 | `def` | [homotopyPToId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomotopyEquivalenceNamespaced.lean/declarations/homotopyptoid.md) | 39 | `declaration-track:df8d426a0a372d7dd8245f81eedaf41d4e5efc65986924d6ffac02faafd93be6` |
+| 2 | `def` | [homotopyQToZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomotopyEquivalenceNamespaced.lean/declarations/homotopyqtozero.md) | 51 | `declaration-track:14b07262e0f63bb29640485e0290ba860934681d361d4f28c765b3db726f99dd` |
+| 3 | `theorem` | [homotopyPToId_eventually_constant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomotopyEquivalenceNamespaced.lean/declarations/homotopyptoid-eventually-constant.md) | 54 | `result-track:1d60a7e07142de8129340b72c2d7a22e3281cd6487908343662ee32492f25c56` |
+| 4 | `def` | [homotopyPInftyToId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomotopyEquivalenceNamespaced.lean/declarations/homotopypinftytoid.md) | 65 | `declaration-track:feacde87b208106a4dc228a30b43b0f78a150ae86ef4b151ee4141aef725151e` |
+| 5 | `def` | [homotopyEquivNormalizedMooreComplexAlternatingFaceMapComplex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomotopyEquivalenceNamespaced.lean/declarations/homotopyequivnormalizedmoorecomplexalternatingfacemapcomplex.md) | 82 | `declaration-track:aa1a71348ca29322888af5ab33b0cc81ab47ad72cced850941a41aeb0e0d56a4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

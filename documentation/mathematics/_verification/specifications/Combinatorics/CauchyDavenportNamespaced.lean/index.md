@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/CauchyDavenportNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/CauchyDavenportNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CauchyDavenportNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CauchyDavenportNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [DevosMulRel](../../../../Combinatorics/CauchyDavenportNamespaced.lean/declarations/devosmulrel.md) | 81 | `declaration-track:bcd07602cf9605879cae9d762c917bb025d0484319614f951fa9a6f437f016e8` |
-| 2 | `lemma` | [devosMulRel_iff](../../../../Combinatorics/CauchyDavenportNamespaced.lean/declarations/devosmulrel-iff.md) | 85 | `result-track:9b4c58b3922aee0b3c3c5f2778f7e2568e470929af59de1f0b351bc3ad6cbef4` |
-| 3 | `lemma` | [devosMulRel_of_le](../../../../Combinatorics/CauchyDavenportNamespaced.lean/declarations/devosmulrel-of-le.md) | 93 | `result-track:f8ac985cc6b5125a5ca603e026190dcd27198d51b65b84d0fc567e98b3ce9437` |
-| 4 | `lemma` | [devosMulRel_of_le_of_le](../../../../Combinatorics/CauchyDavenportNamespaced.lean/declarations/devosmulrel-of-le-of-le.md) | 98 | `result-track:885ff7ab65ac8be66573cc901944342e571e47904ad9f03970e366fe66e0c4de` |
-| 5 | `lemma` | [wellFoundedOn_devosMulRel](../../../../Combinatorics/CauchyDavenportNamespaced.lean/declarations/wellfoundedon-devosmulrel.md) | 104 | `result-track:58015914efbea919908f51cf98027d86ade75ce90632941a71cacb07dfac3eb0` |
-| 6 | `lemma` | [cauchy_davenport_minOrder_mul](../../../../Combinatorics/CauchyDavenportNamespaced.lean/declarations/cauchy-davenport-minorder-mul.md) | 120 | `result-track:f511075595c3c3694dc247f7783d979c7b8d813610b5ae3b58da42ebcdc9341e` |
-| 7 | `lemma` | [cauchy_davenport_mul_of_isTorsionFree](../../../../Combinatorics/CauchyDavenportNamespaced.lean/declarations/cauchy-davenport-mul-of-istorsionfree.md) | 192 | `result-track:1e77b07e752fc05c1523e762d63bd2e438e8ed11c333aa6bcfb0293fa2e258d5` |
-| 8 | `lemma` | [ZMod.cauchy_davenport](../../../../Combinatorics/CauchyDavenportNamespaced.lean/declarations/zmod-cauchy-davenport.md) | 203 | `result-track:05c994d236d7952186049c86177fc04709bdc22456cbffbb2b90a5ce1a6be8eb` |
-| 9 | `lemma` | [cauchy_davenport_mul_of_linearOrder_isCancelMul](../../../../Combinatorics/CauchyDavenportNamespaced.lean/declarations/cauchy-davenport-mul-of-linearorder-iscancelmul.md) | 215 | `result-track:e7e7869c4cfc4e9d88b5c1001d227bdd493366e08fe652fc4dbbf9c6d9528eec` |
+| 1 | `def` | [DevosMulRel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CauchyDavenportNamespaced.lean/declarations/devosmulrel.md) | 81 | `declaration-track:bcd07602cf9605879cae9d762c917bb025d0484319614f951fa9a6f437f016e8` |
+| 2 | `lemma` | [devosMulRel_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CauchyDavenportNamespaced.lean/declarations/devosmulrel-iff.md) | 85 | `result-track:9b4c58b3922aee0b3c3c5f2778f7e2568e470929af59de1f0b351bc3ad6cbef4` |
+| 3 | `lemma` | [devosMulRel_of_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CauchyDavenportNamespaced.lean/declarations/devosmulrel-of-le.md) | 93 | `result-track:f8ac985cc6b5125a5ca603e026190dcd27198d51b65b84d0fc567e98b3ce9437` |
+| 4 | `lemma` | [devosMulRel_of_le_of_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CauchyDavenportNamespaced.lean/declarations/devosmulrel-of-le-of-le.md) | 98 | `result-track:885ff7ab65ac8be66573cc901944342e571e47904ad9f03970e366fe66e0c4de` |
+| 5 | `lemma` | [wellFoundedOn_devosMulRel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CauchyDavenportNamespaced.lean/declarations/wellfoundedon-devosmulrel.md) | 104 | `result-track:58015914efbea919908f51cf98027d86ade75ce90632941a71cacb07dfac3eb0` |
+| 6 | `lemma` | [cauchy_davenport_minOrder_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CauchyDavenportNamespaced.lean/declarations/cauchy-davenport-minorder-mul.md) | 120 | `result-track:f511075595c3c3694dc247f7783d979c7b8d813610b5ae3b58da42ebcdc9341e` |
+| 7 | `lemma` | [cauchy_davenport_mul_of_isTorsionFree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CauchyDavenportNamespaced.lean/declarations/cauchy-davenport-mul-of-istorsionfree.md) | 192 | `result-track:1e77b07e752fc05c1523e762d63bd2e438e8ed11c333aa6bcfb0293fa2e258d5` |
+| 8 | `lemma` | [ZMod.cauchy_davenport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CauchyDavenportNamespaced.lean/declarations/zmod-cauchy-davenport.md) | 203 | `result-track:05c994d236d7952186049c86177fc04709bdc22456cbffbb2b90a5ce1a6be8eb` |
+| 9 | `lemma` | [cauchy_davenport_mul_of_linearOrder_isCancelMul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CauchyDavenportNamespaced.lean/declarations/cauchy-davenport-mul-of-linearorder-iscancelmul.md) | 215 | `result-track:e7e7869c4cfc4e9d88b5c1001d227bdd493366e08fe652fc4dbbf9c6d9528eec` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

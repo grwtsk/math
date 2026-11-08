@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetRange.lean/index.md) · [Full source](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetRange.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetRange.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetRange.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,20 +57,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [range](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetRange.lean/declarations/range.md) | 19 | `declaration-track:51d6ccb4f61ef29cefdab8ae4a2a1614aa7f725412df79901c91c35b1451876e` |
-| 2 | `theorem` | [coe_range](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetRange.lean/declarations/coe-range.md) | 22 | `result-track:c1fee6b1924265eaa1721b26e2f5cfa781d36abb1b2eba0756cc77540834cf38` |
-| 3 | `theorem` | [range_zero](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetRange.lean/declarations/range-zero.md) | 26 | `result-track:6e389f3a88b74b28a8f3d22a653a2f5e74549ad150fc4c5ce7e4a708ec0edf4d` |
-| 4 | `theorem` | [range_succ](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetRange.lean/declarations/range-succ.md) | 30 | `result-track:2737ca035872703dfe9171c6af8d9396b2a6ad5b03f8295a97d32703b7fb1090` |
-| 5 | `theorem` | [card_range](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetRange.lean/declarations/card-range.md) | 34 | `result-track:aaa6003315db1c4d8851ebeb5f55cb8260062c61b0ffc38313e072c1d13a411a` |
-| 6 | `theorem` | [range_subset](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetRange.lean/declarations/range-subset.md) | 37 | `result-track:4b63783a1ed16c69defe0a56e601cd4956a1d54821582a9f53ba7c920a6db24a` |
-| 7 | `theorem` | [mem_range](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetRange.lean/declarations/mem-range.md) | 41 | `result-track:ce09c7f1f5b511584eb5be99cf6c9e5ade68c4e427d24977b1eee1046e5e5467` |
-| 8 | `theorem` | [notMem_range_self](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetRange.lean/declarations/notmem-range-self.md) | 44 | `result-track:9de4ecd41f66ba9ddc146ed803eb4cee499b39f6167eb3ef66b1e83594506435` |
-| 9 | `theorem` | [self_mem_range_succ](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetRange.lean/declarations/self-mem-range-succ.md) | 49 | `result-track:7776e1dc37f5ca01537d129e8eaf7f1f432336d1ab82aa9e0da78d6c586c4fc0` |
-| 10 | `theorem` | [range_add](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetRange.lean/declarations/range-add.md) | 52 | `result-track:c7e0de438e01c74fce91f906b1b976729c1f29e2b8cd46f98f3d9fb076decd65` |
-| 11 | `theorem` | [range_disjoint_map_add](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetRange.lean/declarations/range-disjoint-map-add.md) | 55 | `result-track:c047de8dbf42fdc52efe919af6bcfe660288b2df8e80f1d818051cc7d6a29182` |
-| 12 | `theorem` | [range_add_eq_union](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetRange.lean/declarations/range-add-eq-union.md) | 63 | `result-track:388b09a27581e618722800082534b609afa9837005ce89983d06b7650507f478` |
-| 13 | `theorem` | [nodup_range](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetRange.lean/declarations/nodup-range.md) | 69 | `result-track:c2a2977d4d7e9f2935dd13e2700c13150ada30894fa12b67e1c417861dbe68b4` |
-| 14 | `theorem` | [range_le](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetRange.lean/declarations/range-le.md) | 72 | `result-track:49e53656e971cafb3603b443f356089e9953d3cee4a21b050fc1de0f7e9a7714` |
+| 1 | `def` | [range](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetRange.lean/declarations/range.md) | 19 | `declaration-track:51d6ccb4f61ef29cefdab8ae4a2a1614aa7f725412df79901c91c35b1451876e` |
+| 2 | `theorem` | [coe_range](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetRange.lean/declarations/coe-range.md) | 22 | `result-track:c1fee6b1924265eaa1721b26e2f5cfa781d36abb1b2eba0756cc77540834cf38` |
+| 3 | `theorem` | [range_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetRange.lean/declarations/range-zero.md) | 26 | `result-track:6e389f3a88b74b28a8f3d22a653a2f5e74549ad150fc4c5ce7e4a708ec0edf4d` |
+| 4 | `theorem` | [range_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetRange.lean/declarations/range-succ.md) | 30 | `result-track:2737ca035872703dfe9171c6af8d9396b2a6ad5b03f8295a97d32703b7fb1090` |
+| 5 | `theorem` | [card_range](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetRange.lean/declarations/card-range.md) | 34 | `result-track:aaa6003315db1c4d8851ebeb5f55cb8260062c61b0ffc38313e072c1d13a411a` |
+| 6 | `theorem` | [range_subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetRange.lean/declarations/range-subset.md) | 37 | `result-track:4b63783a1ed16c69defe0a56e601cd4956a1d54821582a9f53ba7c920a6db24a` |
+| 7 | `theorem` | [mem_range](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetRange.lean/declarations/mem-range.md) | 41 | `result-track:ce09c7f1f5b511584eb5be99cf6c9e5ade68c4e427d24977b1eee1046e5e5467` |
+| 8 | `theorem` | [notMem_range_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetRange.lean/declarations/notmem-range-self.md) | 44 | `result-track:9de4ecd41f66ba9ddc146ed803eb4cee499b39f6167eb3ef66b1e83594506435` |
+| 9 | `theorem` | [self_mem_range_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetRange.lean/declarations/self-mem-range-succ.md) | 49 | `result-track:7776e1dc37f5ca01537d129e8eaf7f1f432336d1ab82aa9e0da78d6c586c4fc0` |
+| 10 | `theorem` | [range_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetRange.lean/declarations/range-add.md) | 52 | `result-track:c7e0de438e01c74fce91f906b1b976729c1f29e2b8cd46f98f3d9fb076decd65` |
+| 11 | `theorem` | [range_disjoint_map_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetRange.lean/declarations/range-disjoint-map-add.md) | 55 | `result-track:c047de8dbf42fdc52efe919af6bcfe660288b2df8e80f1d818051cc7d6a29182` |
+| 12 | `theorem` | [range_add_eq_union](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetRange.lean/declarations/range-add-eq-union.md) | 63 | `result-track:388b09a27581e618722800082534b609afa9837005ce89983d06b7650507f478` |
+| 13 | `theorem` | [nodup_range](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetRange.lean/declarations/nodup-range.md) | 69 | `result-track:c2a2977d4d7e9f2935dd13e2700c13150ada30894fa12b67e1c417861dbe68b4` |
+| 14 | `theorem` | [range_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetRange.lean/declarations/range-le.md) | 72 | `result-track:49e53656e971cafb3603b443f356089e9953d3cee4a21b050fc1de0f7e9a7714` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

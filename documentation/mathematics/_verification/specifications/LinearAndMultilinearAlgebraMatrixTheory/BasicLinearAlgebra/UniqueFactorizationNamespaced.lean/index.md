@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UniqueFactorizationNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UniqueFactorizationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UniqueFactorizationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UniqueFactorizationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [ordered_factorization_by_code](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UniqueFactorizationNamespaced.lean/declarations/ordered-factorization-by-code.md) | 15 | `result-track:3cf6350c52f4367baf692c0d2d66bcc7c31e92f59937ef8c58e5c9e3548fd5f9` |
-| 2 | `theorem` | [ordered_factorization_by_topology_prime](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UniqueFactorizationNamespaced.lean/declarations/ordered-factorization-by-topology-prime.md) | 22 | `result-track:6e66a9837c24a7839081b14a95dc6fb1533fc6f585daaf8a5c343ad31c4d3c56` |
+| 1 | `theorem` | [ordered_factorization_by_code](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UniqueFactorizationNamespaced.lean/declarations/ordered-factorization-by-code.md) | 15 | `result-track:3cf6350c52f4367baf692c0d2d66bcc7c31e92f59937ef8c58e5c9e3548fd5f9` |
+| 2 | `theorem` | [ordered_factorization_by_topology_prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UniqueFactorizationNamespaced.lean/declarations/ordered-factorization-by-topology-prime.md) | 22 | `result-track:6e66a9837c24a7839081b14a95dc6fb1533fc6f585daaf8a5c343ad31c4d3c56` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

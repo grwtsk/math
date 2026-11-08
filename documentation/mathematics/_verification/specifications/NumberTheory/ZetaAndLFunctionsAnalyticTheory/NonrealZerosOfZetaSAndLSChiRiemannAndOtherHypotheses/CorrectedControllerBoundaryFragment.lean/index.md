@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CorrectedControllerBoundaryFragment.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CorrectedControllerBoundaryFragment.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CorrectedControllerBoundaryFragment.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CorrectedControllerBoundaryFragment.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [shifted_W_ne_zero](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CorrectedControllerBoundaryFragment.lean/declarations/shifted-w-ne-zero.md) | 10 | `result-track:42f486be5f7d2156e465f018fb7ac288edbb545d3668afefbc514cfba68199cf` |
-| 2 | `theorem` | [actual_boundary_product](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CorrectedControllerBoundaryFragment.lean/declarations/actual-boundary-product.md) | 20 | `result-track:1aba280b0e0396668784a9b74470bb10e245b823055eeda65ae621d3910c123a` |
-| 3 | `theorem` | [residual_decomposition](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CorrectedControllerBoundaryFragment.lean/declarations/residual-decomposition.md) | 35 | `result-track:a22331e22a4666787e9210a642d8ec37ea07756c59db1b642cf768f7f45a6778` |
-| 4 | `theorem` | [residual_norm_le](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CorrectedControllerBoundaryFragment.lean/declarations/residual-norm-le.md) | 46 | `result-track:e93360533d3c2c3d273cc2b836b2a643166ef87ef4ce20d2616f331c74c9b810` |
+| 1 | `theorem` | [shifted_W_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CorrectedControllerBoundaryFragment.lean/declarations/shifted-w-ne-zero.md) | 10 | `result-track:42f486be5f7d2156e465f018fb7ac288edbb545d3668afefbc514cfba68199cf` |
+| 2 | `theorem` | [actual_boundary_product](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CorrectedControllerBoundaryFragment.lean/declarations/actual-boundary-product.md) | 20 | `result-track:1aba280b0e0396668784a9b74470bb10e245b823055eeda65ae621d3910c123a` |
+| 3 | `theorem` | [residual_decomposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CorrectedControllerBoundaryFragment.lean/declarations/residual-decomposition.md) | 35 | `result-track:a22331e22a4666787e9210a642d8ec37ea07756c59db1b642cf768f7f45a6778` |
+| 4 | `theorem` | [residual_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CorrectedControllerBoundaryFragment.lean/declarations/residual-norm-le.md) | 46 | `result-track:e93360533d3c2c3d273cc2b836b2a643166ef87ef4ce20d2616f331c74c9b810` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

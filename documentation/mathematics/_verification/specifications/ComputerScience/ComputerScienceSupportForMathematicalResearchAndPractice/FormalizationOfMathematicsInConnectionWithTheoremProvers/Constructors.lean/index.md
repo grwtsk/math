@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Constructors.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Constructors.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Constructors.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Constructors.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [Even](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Constructors.lean/declarations/even.md) | 13 | `declaration-track:7d1247b2459bffddf960908b7862b8c6b09d60550a8b142a1fea20b0d0029ba8` |
-| 2 | `example` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Constructors.lean/declarations/example.md) | 17 | `declaration-track:40351efb3949796e0fd4772f99b3ecbeb29f933c48d7c9c0fa3b8b7e0d6f5309` |
-| 3 | `def` | [T](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Constructors.lean/declarations/t.md) | 22 | `declaration-track:48f4b15218dee1c5d453e98fd973a6b9119949c1689512cb7992c92038dd40af` |
-| 4 | `example` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Constructors.lean/declarations/example-source-edition-3.md) | 28 | `declaration-track:dd945308c508bff4dc0660de8efce36d5cc037a14edac83e3c815a14f9236fce` |
-| 5 | `example` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Constructors.lean/declarations/example-source-edition-2.md) | 31 | `declaration-track:a8d7c4c0f71e76609fb814518545a7b7fca256aa43400021b8b3d2d91a0c09f0` |
+| 1 | `inductive` | [Even](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Constructors.lean/declarations/even.md) | 13 | `declaration-track:7d1247b2459bffddf960908b7862b8c6b09d60550a8b142a1fea20b0d0029ba8` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Constructors.lean/declarations/example.md) | 17 | `declaration-track:40351efb3949796e0fd4772f99b3ecbeb29f933c48d7c9c0fa3b8b7e0d6f5309` |
+| 3 | `def` | [T](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Constructors.lean/declarations/t.md) | 22 | `declaration-track:48f4b15218dee1c5d453e98fd973a6b9119949c1689512cb7992c92038dd40af` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Constructors.lean/declarations/example-source-edition-3.md) | 28 | `declaration-track:dd945308c508bff4dc0660de8efce36d5cc037a14edac83e3c815a14f9236fce` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Constructors.lean/declarations/example-source-edition-2.md) | 31 | `declaration-track:a8d7c4c0f71e76609fb814518545a7b7fca256aa43400021b8b3d2d91a0c09f0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

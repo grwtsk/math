@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HighLagPolynomialSignFixturesNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HighLagPolynomialSignFixturesNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HighLagPolynomialSignFixturesNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HighLagPolynomialSignFixturesNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [fixed_edge_is_negative](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HighLagPolynomialSignFixturesNamespaced.lean/declarations/fixed-edge-is-negative.md) | 22 | `result-track:9bd2d3825438586ce37fd5087071cf50d1be00459d5b7e7c84d776710b9255c6` |
-| 2 | `theorem` | [fixed_edge_is_not_nonnegative](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HighLagPolynomialSignFixturesNamespaced.lean/declarations/fixed-edge-is-not-nonnegative.md) | 25 | `result-track:31650eea69aa2fc49fbce1386b270b0d37c9f4991a4aa89256e2079d06f4326f` |
-| 3 | `theorem` | [every_larger_edge_is_negative](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HighLagPolynomialSignFixturesNamespaced.lean/declarations/every-larger-edge-is-negative.md) | 28 | `result-track:9afa6f69800fc76f36429d3a0eca41ef2b64b12c93bc3092fb9bb6eaf89f4714` |
-| 4 | `theorem` | [positive_normalization_does_not_repair_sign](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HighLagPolynomialSignFixturesNamespaced.lean/declarations/positive-normalization-does-not-repair-sign.md) | 31 | `result-track:2c06ba8277a12987ccb34387fce44f00d4686269a0a858b9feb727998acdb5f3` |
-| 5 | `theorem` | [eventual_nonnegative_route_is_refuted](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HighLagPolynomialSignFixturesNamespaced.lean/declarations/eventual-nonnegative-route-is-refuted.md) | 35 | `result-track:609181657a5ec6f064c8c1b1901740933a6aac7bd1445faed92a25eb3434e868` |
+| 1 | `theorem` | [fixed_edge_is_negative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HighLagPolynomialSignFixturesNamespaced.lean/declarations/fixed-edge-is-negative.md) | 22 | `result-track:9bd2d3825438586ce37fd5087071cf50d1be00459d5b7e7c84d776710b9255c6` |
+| 2 | `theorem` | [fixed_edge_is_not_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HighLagPolynomialSignFixturesNamespaced.lean/declarations/fixed-edge-is-not-nonnegative.md) | 25 | `result-track:31650eea69aa2fc49fbce1386b270b0d37c9f4991a4aa89256e2079d06f4326f` |
+| 3 | `theorem` | [every_larger_edge_is_negative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HighLagPolynomialSignFixturesNamespaced.lean/declarations/every-larger-edge-is-negative.md) | 28 | `result-track:9afa6f69800fc76f36429d3a0eca41ef2b64b12c93bc3092fb9bb6eaf89f4714` |
+| 4 | `theorem` | [positive_normalization_does_not_repair_sign](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HighLagPolynomialSignFixturesNamespaced.lean/declarations/positive-normalization-does-not-repair-sign.md) | 31 | `result-track:2c06ba8277a12987ccb34387fce44f00d4686269a0a858b9feb727998acdb5f3` |
+| 5 | `theorem` | [eventual_nonnegative_route_is_refuted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HighLagPolynomialSignFixturesNamespaced.lean/declarations/eventual-nonnegative-route-is-refuted.md) | 35 | `result-track:609181657a5ec6f064c8c1b1901740933a6aac7bd1445faed92a25eb3434e868` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

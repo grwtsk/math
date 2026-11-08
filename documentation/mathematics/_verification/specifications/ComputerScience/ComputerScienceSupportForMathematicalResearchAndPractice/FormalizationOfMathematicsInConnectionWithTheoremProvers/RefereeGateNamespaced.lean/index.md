@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RefereeGateNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RefereeGateNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RefereeGateNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RefereeGateNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [satisfied_ne_unresolved](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RefereeGateNamespaced.lean/declarations/satisfied-ne-unresolved.md) | 27 | `result-track:1dc251fc13561af5ef5cdac3fae12b188649267633d4ff808170c142caf778d2` |
-| 2 | `theorem` | [researchArchitecture_ne_satisfied](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RefereeGateNamespaced.lean/declarations/researcharchitecture-ne-satisfied.md) | 32 | `result-track:ba2696b119331782642b7fed629c3dd29c9d181ebbe4223a3e230ea34829860e` |
-| 3 | `theorem` | [gate_assessment_has_acceptance_standard](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RefereeGateNamespaced.lean/declarations/gate-assessment-has-acceptance-standard.md) | 37 | `result-track:c3acd17f972f89f2aa97e9e0fe6e01ca4acbdc596c160f886ee4b50071c2ea5e` |
+| 1 | `theorem` | [satisfied_ne_unresolved](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RefereeGateNamespaced.lean/declarations/satisfied-ne-unresolved.md) | 27 | `result-track:1dc251fc13561af5ef5cdac3fae12b188649267633d4ff808170c142caf778d2` |
+| 2 | `theorem` | [researchArchitecture_ne_satisfied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RefereeGateNamespaced.lean/declarations/researcharchitecture-ne-satisfied.md) | 32 | `result-track:ba2696b119331782642b7fed629c3dd29c9d181ebbe4223a3e230ea34829860e` |
+| 3 | `theorem` | [gate_assessment_has_acceptance_standard](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RefereeGateNamespaced.lean/declarations/gate-assessment-has-acceptance-standard.md) | 37 | `result-track:c3acd17f972f89f2aa97e9e0fe6e01ca4acbdc596c160f886ee4b50071c2ea5e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/OpenMappingNamespacedAnalyticOn.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/OpenMappingNamespacedAnalyticOn.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/OpenMappingNamespacedAnalyticOn.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/OpenMappingNamespacedAnalyticOn.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [DiffContOnCl.ball_subset_image_closedBall](../../../../FunctionsOfAComplexVariable/OpenMappingNamespacedAnalyticOn.lean/declarations/diffcontoncl-ball-subset-image-closedball.md) | 52 | `result-track:c090f781b490b2902411ffb4de724d2093fc4694aa3d1bb597f17b135bb6eb9d` |
-| 2 | `theorem` | [AnalyticAt.eventually_constant_or_nhds_le_map_nhds_aux](../../../../FunctionsOfAComplexVariable/OpenMappingNamespacedAnalyticOn.lean/declarations/analyticat-eventually-constant-or-nhds-le-map-nhds-aux.md) | 85 | `result-track:d475b0fa29e04da4753948e22061cf6e5c8a3f60f096b25427c4b300b2199ee9` |
-| 3 | `theorem` | [AnalyticAt.eventually_constant_or_nhds_le_map_nhds](../../../../FunctionsOfAComplexVariable/OpenMappingNamespacedAnalyticOn.lean/declarations/analyticat-eventually-constant-or-nhds-le-map-nhds.md) | 121 | `result-track:5ca3fb9fc779b6e6647cf74323732cd04683bc330067bf7534cf26cdfb23f537` |
-| 4 | `theorem` | [AnalyticOn.is_constant_or_isOpen](../../../../FunctionsOfAComplexVariable/OpenMappingNamespacedAnalyticOn.lean/declarations/analyticon-is-constant-or-isopen.md) | 171 | `result-track:8da480218bc952f752477305fb50e89961215c3e3e58a57582bb9c148740e302` |
+| 1 | `theorem` | [DiffContOnCl.ball_subset_image_closedBall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/OpenMappingNamespacedAnalyticOn.lean/declarations/diffcontoncl-ball-subset-image-closedball.md) | 52 | `result-track:c090f781b490b2902411ffb4de724d2093fc4694aa3d1bb597f17b135bb6eb9d` |
+| 2 | `theorem` | [AnalyticAt.eventually_constant_or_nhds_le_map_nhds_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/OpenMappingNamespacedAnalyticOn.lean/declarations/analyticat-eventually-constant-or-nhds-le-map-nhds-aux.md) | 85 | `result-track:d475b0fa29e04da4753948e22061cf6e5c8a3f60f096b25427c4b300b2199ee9` |
+| 3 | `theorem` | [AnalyticAt.eventually_constant_or_nhds_le_map_nhds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/OpenMappingNamespacedAnalyticOn.lean/declarations/analyticat-eventually-constant-or-nhds-le-map-nhds.md) | 121 | `result-track:5ca3fb9fc779b6e6647cf74323732cd04683bc330067bf7534cf26cdfb23f537` |
+| 4 | `theorem` | [AnalyticOn.is_constant_or_isOpen](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/OpenMappingNamespacedAnalyticOn.lean/declarations/analyticon-is-constant-or-isopen.md) | 171 | `result-track:8da480218bc952f752477305fb50e89961215c3e3e58a57582bb9c148740e302` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

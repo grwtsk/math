@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralTopology/GeneralitiesInTopology/FilterRing.lean/index.md) · [Full source](../../../../../GeneralTopology/GeneralitiesInTopology/FilterRing.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/FilterRing.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/FilterRing.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [EventuallyLE.mul_le_mul](../../../../../GeneralTopology/GeneralitiesInTopology/FilterRing.lean/declarations/eventuallyle-mul-le-mul-source-edition-2.md) | 20 | `result-track:baed878d2941caad47d5efc5f86bf1e9aa397d9d74d79917fd6b054bd794ab92` |
-| 2 | `theorem` | [EventuallyLE.mul_le_mul'](../../../../../GeneralTopology/GeneralitiesInTopology/FilterRing.lean/declarations/eventuallyle-mul-le-mul.md) | 26 | `result-track:8b1f927ac9a406a2d33d71dc671a8b6e00b33a07312000766a79e6fdfb16d874` |
-| 3 | `theorem` | [EventuallyLE.mul_nonneg](../../../../../GeneralTopology/GeneralitiesInTopology/FilterRing.lean/declarations/eventuallyle-mul-nonneg.md) | 31 | `result-track:2f22dec87654a7af2b02fa2e76e827ac62ad0480aec80f1da28e8ab457cddffe` |
-| 4 | `theorem` | [eventually_sub_nonneg](../../../../../GeneralTopology/GeneralitiesInTopology/FilterRing.lean/declarations/eventually-sub-nonneg.md) | 35 | `result-track:c5ee39479fc141633bac296827abf86a093f1d658e8bcc5dd0c034dd1a2e5d26` |
-| 5 | `instance` | [instIsOrderedRing](../../../../../GeneralTopology/GeneralitiesInTopology/FilterRing.lean/declarations/instisorderedring.md) | 44 | `declaration-track:1fb4dbdc53360c8dece243b5b96a64b799ac6af6f6b8e8c1cce9bc1c91144cc5` |
+| 1 | `theorem` | [EventuallyLE.mul_le_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/FilterRing.lean/declarations/eventuallyle-mul-le-mul-source-edition-2.md) | 20 | `result-track:baed878d2941caad47d5efc5f86bf1e9aa397d9d74d79917fd6b054bd794ab92` |
+| 2 | `theorem` | [EventuallyLE.mul_le_mul'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/FilterRing.lean/declarations/eventuallyle-mul-le-mul.md) | 26 | `result-track:8b1f927ac9a406a2d33d71dc671a8b6e00b33a07312000766a79e6fdfb16d874` |
+| 3 | `theorem` | [EventuallyLE.mul_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/FilterRing.lean/declarations/eventuallyle-mul-nonneg.md) | 31 | `result-track:2f22dec87654a7af2b02fa2e76e827ac62ad0480aec80f1da28e8ab457cddffe` |
+| 4 | `theorem` | [eventually_sub_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/FilterRing.lean/declarations/eventually-sub-nonneg.md) | 35 | `result-track:c5ee39479fc141633bac296827abf86a093f1d658e8bcc5dd0c034dd1a2e5d26` |
+| 5 | `instance` | [instIsOrderedRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/FilterRing.lean/declarations/instisorderedring.md) | 44 | `declaration-track:1fb4dbdc53360c8dece243b5b96a64b799ac6af6f6b8e8c1cce9bc1c91144cc5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

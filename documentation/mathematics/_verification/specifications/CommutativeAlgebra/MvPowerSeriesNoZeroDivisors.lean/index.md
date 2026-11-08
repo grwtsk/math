@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/MvPowerSeriesNoZeroDivisors.lean/index.md) · [Full source](../../../../CommutativeAlgebra/MvPowerSeriesNoZeroDivisors.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MvPowerSeriesNoZeroDivisors.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MvPowerSeriesNoZeroDivisors.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [mem_nonZeroDivisors_of_constantCoeff](../../../../CommutativeAlgebra/MvPowerSeriesNoZeroDivisors.lean/declarations/mem-nonzerodivisors-of-constantcoeff.md) | 53 | `result-track:1bc3f791de92098ef5b56fb30adb194ed6918cd40c11bea5b70d2c539b3efd75` |
-| 2 | `lemma` | [monomial_mem_nonzeroDivisors](../../../../CommutativeAlgebra/MvPowerSeriesNoZeroDivisors.lean/declarations/monomial-mem-nonzerodivisors.md) | 73 | `result-track:401ad03078355fa1fce03dba49414f61c3d73f065f3b2084ecaec886d5f3354b` |
-| 3 | `lemma` | [X_mem_nonzeroDivisors](../../../../CommutativeAlgebra/MvPowerSeriesNoZeroDivisors.lean/declarations/x-mem-nonzerodivisors.md) | 86 | `result-track:019ead8fbba3422cfbf065af9dd629d59639f0e51f42ee98aad087a5e2ecee88` |
-| 4 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/MvPowerSeriesNoZeroDivisors.lean/declarations/instance.md) | 95 | `declaration-track:3b5cb4d35d1503ce3f726a879905642080f9e32a49d256497881acfe6b7a0229` |
-| 5 | `theorem` | [weightedOrder_mul](../../../../CommutativeAlgebra/MvPowerSeriesNoZeroDivisors.lean/declarations/weightedorder-mul.md) | 103 | `result-track:39fa43585b860c71d5a08a85abc50f63f0fb0203fb8e7b940234c21236d0d488` |
-| 6 | `theorem` | [order_mul](../../../../CommutativeAlgebra/MvPowerSeriesNoZeroDivisors.lean/declarations/order-mul.md) | 133 | `result-track:5a0c63d18a5e57b3841c9c4d21dcc2eba968d9840ae67038f1bc6b82684646c7` |
+| 1 | `theorem` | [mem_nonZeroDivisors_of_constantCoeff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MvPowerSeriesNoZeroDivisors.lean/declarations/mem-nonzerodivisors-of-constantcoeff.md) | 53 | `result-track:1bc3f791de92098ef5b56fb30adb194ed6918cd40c11bea5b70d2c539b3efd75` |
+| 2 | `lemma` | [monomial_mem_nonzeroDivisors](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MvPowerSeriesNoZeroDivisors.lean/declarations/monomial-mem-nonzerodivisors.md) | 73 | `result-track:401ad03078355fa1fce03dba49414f61c3d73f065f3b2084ecaec886d5f3354b` |
+| 3 | `lemma` | [X_mem_nonzeroDivisors](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MvPowerSeriesNoZeroDivisors.lean/declarations/x-mem-nonzerodivisors.md) | 86 | `result-track:019ead8fbba3422cfbf065af9dd629d59639f0e51f42ee98aad087a5e2ecee88` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MvPowerSeriesNoZeroDivisors.lean/declarations/instance.md) | 95 | `declaration-track:3b5cb4d35d1503ce3f726a879905642080f9e32a49d256497881acfe6b7a0229` |
+| 5 | `theorem` | [weightedOrder_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MvPowerSeriesNoZeroDivisors.lean/declarations/weightedorder-mul.md) | 103 | `result-track:39fa43585b860c71d5a08a85abc50f63f0fb0203fb8e7b940234c21236d0d488` |
+| 6 | `theorem` | [order_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MvPowerSeriesNoZeroDivisors.lean/declarations/order-mul.md) | 133 | `result-track:5a0c63d18a5e57b3841c9c4d21dcc2eba968d9840ae67038f1bc6b82684646c7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

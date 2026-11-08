@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TheoremProjectionContractProbe.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TheoremProjectionContractProbe.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TheoremProjectionContractProbe.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TheoremProjectionContractProbe.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [sameTheorem](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TheoremProjectionContractProbe.lean/declarations/sametheorem.md) | 11 | `declaration-track:12f6a306521c6b7c2605c17c5de7d7443635b7d6c6c9387aff24492ec958bd95` |
-| 2 | `def` | [guardTheorem](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TheoremProjectionContractProbe.lean/declarations/guardtheorem.md) | 15 | `declaration-track:b0b93895d39dce6a6cd9ebec09f81be6ce8a0f395da849621eea857c4cb97cec` |
-| 3 | `def` | [comparisonControls](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TheoremProjectionContractProbe.lean/declarations/comparisoncontrols.md) | 21 | `declaration-track:46d76c01f823369ae40b8aa04935e6d5c5a712cae5382376affb51503c759386` |
-| 4 | `def` | [observe](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TheoremProjectionContractProbe.lean/declarations/observe.md) | 51 | `declaration-track:a713945c935698d347ea895dcd0d2229b16814caeeb62e5e53132cd52b9425d5` |
+| 1 | `def` | [sameTheorem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TheoremProjectionContractProbe.lean/declarations/sametheorem.md) | 11 | `declaration-track:12f6a306521c6b7c2605c17c5de7d7443635b7d6c6c9387aff24492ec958bd95` |
+| 2 | `def` | [guardTheorem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TheoremProjectionContractProbe.lean/declarations/guardtheorem.md) | 15 | `declaration-track:b0b93895d39dce6a6cd9ebec09f81be6ce8a0f395da849621eea857c4cb97cec` |
+| 3 | `def` | [comparisonControls](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TheoremProjectionContractProbe.lean/declarations/comparisoncontrols.md) | 21 | `declaration-track:46d76c01f823369ae40b8aa04935e6d5c5a712cae5382376affb51503c759386` |
+| 4 | `def` | [observe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TheoremProjectionContractProbe.lean/declarations/observe.md) | 51 | `declaration-track:a713945c935698d347ea895dcd0d2229b16814caeeb62e5e53132cd52b9425d5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

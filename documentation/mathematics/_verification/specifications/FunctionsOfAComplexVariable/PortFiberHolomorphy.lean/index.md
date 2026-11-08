@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/PortFiberHolomorphy.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/PortFiberHolomorphy.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberHolomorphy.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberHolomorphy.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Topology.PortFiber.Path`](../../../../MathematicalLogicAndFoundations/GeneralLogic/Path.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Topology.PortFiber.Path`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Path.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,25 +57,25 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Domain](../../../../FunctionsOfAComplexVariable/PortFiberHolomorphy.lean/declarations/domain.md) | 8 | `declaration-track:eaacc81d0188c1916aca162d09d284b681af04af5145c12f56a17cf702b90f5c` |
-| 2 | `structure` | [Port](../../../../FunctionsOfAComplexVariable/PortFiberHolomorphy.lean/declarations/port.md) | 12 | `declaration-track:692163916fcc5b15d40d19b5eca57b934e717e850dc6f632e5adad438a98abcf` |
-| 3 | `def` | [identity](../../../../FunctionsOfAComplexVariable/PortFiberHolomorphy.lean/declarations/identity.md) | 19 | `declaration-track:78db0483f63a12bf0b173f29e5311c800eb1e18b237e99b91627b409106e05df` |
-| 4 | `def` | [comp](../../../../FunctionsOfAComplexVariable/PortFiberHolomorphy.lean/declarations/comp.md) | 24 | `declaration-track:a2c75454eee125b53a1dd2f8a6a0678099d08bcc9152acdd704d8e822c1abf9d` |
-| 5 | `def` | [system](../../../../FunctionsOfAComplexVariable/PortFiberHolomorphy.lean/declarations/system.md) | 31 | `declaration-track:5594892bae78db5febdad166e63ec7bf8325a3f95b5a06f7e1092acf8b9a7a14` |
-| 6 | `structure` | [HolomorphicCertificate](../../../../FunctionsOfAComplexVariable/PortFiberHolomorphy.lean/declarations/holomorphiccertificate.md) | 46 | `declaration-track:3f6686d4481027b80eb076613799921797f42e623e6ecd58160e5553105558a3` |
-| 7 | `theorem` | [continuousOn](../../../../FunctionsOfAComplexVariable/PortFiberHolomorphy.lean/declarations/continuouson.md) | 52 | `result-track:117f7ba9bca4ba6947607cc9bd840509c2b81731d9a6f7cbc302b6c8389936b1` |
-| 8 | `def` | [identity](../../../../FunctionsOfAComplexVariable/PortFiberHolomorphy.lean/declarations/identity-source-edition-2.md) | 57 | `declaration-track:7c002486e1a0ea052667f6933d3ddf11e945fd8faba94a1cac79974cf1909eac` |
-| 9 | `def` | [comp](../../../../FunctionsOfAComplexVariable/PortFiberHolomorphy.lean/declarations/comp-source-edition-2.md) | 61 | `declaration-track:e2c733de2dffd2a520cf7a6667b55d193d42aac238053322b4f2d0e415b53f3b` |
-| 10 | `def` | [composableProperty](../../../../FunctionsOfAComplexVariable/PortFiberHolomorphy.lean/declarations/composableproperty.md) | 68 | `declaration-track:546b518a3feca969223d25f3def33bb0356aaac42ff2bd4509951e201ca5ebf4` |
-| 11 | `def` | [whole](../../../../FunctionsOfAComplexVariable/PortFiberHolomorphy.lean/declarations/whole.md) | 79 | `declaration-track:2d45927262d08c2752f7e1f1641a1e0623804707df85a4bb0f3c50d55c39d527` |
-| 12 | `def` | [translation](../../../../FunctionsOfAComplexVariable/PortFiberHolomorphy.lean/declarations/translation.md) | 82 | `declaration-track:b4b2bffff1564e572452727a0cdf7d811503b10c44fecde71cb7beb8073a0690` |
-| 13 | `def` | [translationCertificate](../../../../FunctionsOfAComplexVariable/PortFiberHolomorphy.lean/declarations/translationcertificate.md) | 87 | `declaration-track:fd2f3dd998476ce963e5afd73de609f705bcc0292ec69dfeb109b3ab159de1de` |
-| 14 | `def` | [square](../../../../FunctionsOfAComplexVariable/PortFiberHolomorphy.lean/declarations/square.md) | 91 | `declaration-track:15205c5022e47f2684f08037d0636ea945b80f7cba82065117ab835a6486a586` |
-| 15 | `def` | [squareCertificate](../../../../FunctionsOfAComplexVariable/PortFiberHolomorphy.lean/declarations/squarecertificate.md) | 96 | `declaration-track:d8215ed26cc9bfe00ec2f1a1e890523054737c77841b7f9aa29ca7c82e806afd` |
-| 16 | `def` | [translatedSquare](../../../../FunctionsOfAComplexVariable/PortFiberHolomorphy.lean/declarations/translatedsquare.md) | 100 | `declaration-track:ca0f1b834e2d9de8c996f2290c199e1de021691964b14cc600f59ce25cf8049a` |
-| 17 | `def` | [translatedSquareCertificate](../../../../FunctionsOfAComplexVariable/PortFiberHolomorphy.lean/declarations/translatedsquarecertificate.md) | 104 | `declaration-track:d8bdba72d1b60b778deef56563afd68b04942cb11f3bcc55f5401b5153251b62` |
-| 18 | `def` | [translatedSquarePath](../../../../FunctionsOfAComplexVariable/PortFiberHolomorphy.lean/declarations/translatedsquarepath.md) | 109 | `declaration-track:383ad6631934706cd3cdbd5f319bc0f7c77d457445138135bd5bbe868d2f1bba` |
-| 19 | `theorem` | [translatedSquarePath_certified](../../../../FunctionsOfAComplexVariable/PortFiberHolomorphy.lean/declarations/translatedsquarepath-certified.md) | 116 | `result-track:e9a7bbaa0d49503c5b1b633a5b04576dcc90e3b7d7635257b5dc5f50d79e0b9d` |
+| 1 | `structure` | [Domain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberHolomorphy.lean/declarations/domain.md) | 8 | `declaration-track:eaacc81d0188c1916aca162d09d284b681af04af5145c12f56a17cf702b90f5c` |
+| 2 | `structure` | [Port](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberHolomorphy.lean/declarations/port.md) | 12 | `declaration-track:692163916fcc5b15d40d19b5eca57b934e717e850dc6f632e5adad438a98abcf` |
+| 3 | `def` | [identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberHolomorphy.lean/declarations/identity.md) | 19 | `declaration-track:78db0483f63a12bf0b173f29e5311c800eb1e18b237e99b91627b409106e05df` |
+| 4 | `def` | [comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberHolomorphy.lean/declarations/comp.md) | 24 | `declaration-track:a2c75454eee125b53a1dd2f8a6a0678099d08bcc9152acdd704d8e822c1abf9d` |
+| 5 | `def` | [system](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberHolomorphy.lean/declarations/system.md) | 31 | `declaration-track:5594892bae78db5febdad166e63ec7bf8325a3f95b5a06f7e1092acf8b9a7a14` |
+| 6 | `structure` | [HolomorphicCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberHolomorphy.lean/declarations/holomorphiccertificate.md) | 46 | `declaration-track:3f6686d4481027b80eb076613799921797f42e623e6ecd58160e5553105558a3` |
+| 7 | `theorem` | [continuousOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberHolomorphy.lean/declarations/continuouson.md) | 52 | `result-track:117f7ba9bca4ba6947607cc9bd840509c2b81731d9a6f7cbc302b6c8389936b1` |
+| 8 | `def` | [identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberHolomorphy.lean/declarations/identity-source-edition-2.md) | 57 | `declaration-track:7c002486e1a0ea052667f6933d3ddf11e945fd8faba94a1cac79974cf1909eac` |
+| 9 | `def` | [comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberHolomorphy.lean/declarations/comp-source-edition-2.md) | 61 | `declaration-track:e2c733de2dffd2a520cf7a6667b55d193d42aac238053322b4f2d0e415b53f3b` |
+| 10 | `def` | [composableProperty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberHolomorphy.lean/declarations/composableproperty.md) | 68 | `declaration-track:546b518a3feca969223d25f3def33bb0356aaac42ff2bd4509951e201ca5ebf4` |
+| 11 | `def` | [whole](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberHolomorphy.lean/declarations/whole.md) | 79 | `declaration-track:2d45927262d08c2752f7e1f1641a1e0623804707df85a4bb0f3c50d55c39d527` |
+| 12 | `def` | [translation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberHolomorphy.lean/declarations/translation.md) | 82 | `declaration-track:b4b2bffff1564e572452727a0cdf7d811503b10c44fecde71cb7beb8073a0690` |
+| 13 | `def` | [translationCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberHolomorphy.lean/declarations/translationcertificate.md) | 87 | `declaration-track:fd2f3dd998476ce963e5afd73de609f705bcc0292ec69dfeb109b3ab159de1de` |
+| 14 | `def` | [square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberHolomorphy.lean/declarations/square.md) | 91 | `declaration-track:15205c5022e47f2684f08037d0636ea945b80f7cba82065117ab835a6486a586` |
+| 15 | `def` | [squareCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberHolomorphy.lean/declarations/squarecertificate.md) | 96 | `declaration-track:d8215ed26cc9bfe00ec2f1a1e890523054737c77841b7f9aa29ca7c82e806afd` |
+| 16 | `def` | [translatedSquare](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberHolomorphy.lean/declarations/translatedsquare.md) | 100 | `declaration-track:ca0f1b834e2d9de8c996f2290c199e1de021691964b14cc600f59ce25cf8049a` |
+| 17 | `def` | [translatedSquareCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberHolomorphy.lean/declarations/translatedsquarecertificate.md) | 104 | `declaration-track:d8bdba72d1b60b778deef56563afd68b04942cb11f3bcc55f5401b5153251b62` |
+| 18 | `def` | [translatedSquarePath](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberHolomorphy.lean/declarations/translatedsquarepath.md) | 109 | `declaration-track:383ad6631934706cd3cdbd5f319bc0f7c77d457445138135bd5bbe868d2f1bba` |
+| 19 | `theorem` | [translatedSquarePath_certified](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberHolomorphy.lean/declarations/translatedsquarepath-certified.md) | 116 | `result-track:e9a7bbaa0d49503c5b1b633a5b04576dcc90e3b7d7635257b5dc5f50d79e0b9d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

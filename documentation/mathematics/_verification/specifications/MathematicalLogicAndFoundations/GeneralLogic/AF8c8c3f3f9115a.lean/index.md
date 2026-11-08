@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AF8c8c3f3f9115a.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AF8c8c3f3f9115a.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AF8c8c3f3f9115a.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AF8c8c3f3f9115a.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,7 +60,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [CollapseWitness.Valid](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AF8c8c3f3f9115a.lean/declarations/collapsewitness-valid.md) | 13 | `declaration-track:3313f5fa7993fec4f866771a228c1305340114a831954ad18b8e78d960d1d719` |
+| 1 | `def` | [CollapseWitness.Valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AF8c8c3f3f9115a.lean/declarations/collapsewitness-valid.md) | 13 | `declaration-track:3313f5fa7993fec4f866771a228c1305340114a831954ad18b8e78d960d1d719` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/CorpusNamespacedTubeRoot.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/CorpusNamespacedTubeRoot.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CorpusNamespacedTubeRoot.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CorpusNamespacedTubeRoot.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [tubeRoot](../../../../../ComputerScience/AlgorithmsInComputerScience/CorpusNamespacedTubeRoot.lean/declarations/tuberoot.md) | 24 | `declaration-track:46157249b098ffb802de7ac3e47443bfb3dbea33e35b5c14c54370590d089450` |
-| 2 | `def` | [tubeRootDependencyClosure](../../../../../ComputerScience/AlgorithmsInComputerScience/CorpusNamespacedTubeRoot.lean/declarations/tuberootdependencyclosure.md) | 37 | `declaration-track:496632ba0216354e3d3f886520becdbe8e15fd93c4759292dde3e37b3a74faaa` |
-| 3 | `theorem` | [tubeRootDependencyClosure_length](../../../../../ComputerScience/AlgorithmsInComputerScience/CorpusNamespacedTubeRoot.lean/declarations/tuberootdependencyclosure-length.md) | 39 | `result-track:c7d315a02f8dba2c9c282cf64e2b42041205d6dfaa0db634c69c9fbeb3747d08` |
+| 1 | `def` | [tubeRoot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CorpusNamespacedTubeRoot.lean/declarations/tuberoot.md) | 24 | `declaration-track:46157249b098ffb802de7ac3e47443bfb3dbea33e35b5c14c54370590d089450` |
+| 2 | `def` | [tubeRootDependencyClosure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CorpusNamespacedTubeRoot.lean/declarations/tuberootdependencyclosure.md) | 37 | `declaration-track:496632ba0216354e3d3f886520becdbe8e15fd93c4759292dde3e37b3a74faaa` |
+| 3 | `theorem` | [tubeRootDependencyClosure_length](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CorpusNamespacedTubeRoot.lean/declarations/tuberootdependencyclosure-length.md) | 39 | `result-track:c7d315a02f8dba2c9c282cf64e2b42041205d6dfaa0db634c69c9fbeb3747d08` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

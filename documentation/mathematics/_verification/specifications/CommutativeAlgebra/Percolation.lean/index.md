@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/Percolation.lean/index.md) · [Full source](../../../../CommutativeAlgebra/Percolation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Percolation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Percolation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PercolationProfile](../../../../CommutativeAlgebra/Percolation.lean/declarations/percolationprofile.md) | 15 | `declaration-track:ae69a111f8fdc3e6e49112994274d186d3d9b1931832f4838666e4db62dacb75` |
-| 2 | `def` | [percolate](../../../../CommutativeAlgebra/Percolation.lean/declarations/percolate.md) | 30 | `declaration-track:aae3a187d37232f91b369d0c24e6cd2677d40bcfa43cdfbd711e78223e5a2573` |
-| 3 | `theorem` | [percolate_inflationary](../../../../CommutativeAlgebra/Percolation.lean/declarations/percolate-inflationary.md) | 37 | `result-track:27aff320c4d8cde6a7d938df760255d2ea6d82d6a838439ae5ea449368bd82b3` |
-| 4 | `inductive` | [EffectiveStep](../../../../CommutativeAlgebra/Percolation.lean/declarations/effectivestep.md) | 46 | `declaration-track:a2534f41a2b5540e21879a96a745eb2f570f20cd9a0951487a11d9e7a121b098` |
-| 5 | `structure` | [StabilizationCertificate](../../../../CommutativeAlgebra/Percolation.lean/declarations/stabilizationcertificate.md) | 51 | `declaration-track:5c3e616e43bc3f28cfce19fa3216ae060a75ceeb900806e945a6100c48d2dba1` |
-| 6 | `def` | [terminalIdeal](../../../../CommutativeAlgebra/Percolation.lean/declarations/terminalideal.md) | 67 | `declaration-track:110995b7a4bfb0fb95dceb97cbd2a14583988ae054f9a888a8ffce77478e65a0` |
-| 7 | `theorem` | [terminalIdeal_closed](../../../../CommutativeAlgebra/Percolation.lean/declarations/terminalideal-closed.md) | 74 | `result-track:7235071627f72d4961904e4b57c74fba0bc92d4a1fc81f33936e0fe88874340a` |
-| 8 | `theorem` | [terminalIdeal_least](../../../../CommutativeAlgebra/Percolation.lean/declarations/terminalideal-least.md) | 83 | `result-track:220ee9eb0820fb75f9f48cad8a3e7db49fd801a6ded8c60d44e1a874e254cdad` |
+| 1 | `structure` | [PercolationProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Percolation.lean/declarations/percolationprofile.md) | 15 | `declaration-track:ae69a111f8fdc3e6e49112994274d186d3d9b1931832f4838666e4db62dacb75` |
+| 2 | `def` | [percolate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Percolation.lean/declarations/percolate.md) | 30 | `declaration-track:aae3a187d37232f91b369d0c24e6cd2677d40bcfa43cdfbd711e78223e5a2573` |
+| 3 | `theorem` | [percolate_inflationary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Percolation.lean/declarations/percolate-inflationary.md) | 37 | `result-track:27aff320c4d8cde6a7d938df760255d2ea6d82d6a838439ae5ea449368bd82b3` |
+| 4 | `inductive` | [EffectiveStep](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Percolation.lean/declarations/effectivestep.md) | 46 | `declaration-track:a2534f41a2b5540e21879a96a745eb2f570f20cd9a0951487a11d9e7a121b098` |
+| 5 | `structure` | [StabilizationCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Percolation.lean/declarations/stabilizationcertificate.md) | 51 | `declaration-track:5c3e616e43bc3f28cfce19fa3216ae060a75ceeb900806e945a6100c48d2dba1` |
+| 6 | `def` | [terminalIdeal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Percolation.lean/declarations/terminalideal.md) | 67 | `declaration-track:110995b7a4bfb0fb95dceb97cbd2a14583988ae054f9a888a8ffce77478e65a0` |
+| 7 | `theorem` | [terminalIdeal_closed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Percolation.lean/declarations/terminalideal-closed.md) | 74 | `result-track:7235071627f72d4961904e4b57c74fba0bc92d4a1fc81f33936e0fe88874340a` |
+| 8 | `theorem` | [terminalIdeal_least](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Percolation.lean/declarations/terminalideal-least.md) | 83 | `result-track:220ee9eb0820fb75f9f48cad8a3e7db49fd801a6ded8c60d44e1a874e254cdad` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

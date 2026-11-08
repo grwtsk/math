@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Rclone.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Rclone.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Rclone.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Rclone.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [rcloneAvailable](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Rclone.lean/declarations/rcloneavailable.md) | 24 | `declaration-track:bd193a436fcb65b4181da24db5e3bca670e0baecb680f09eacaa56d78587a0ef` |
-| 2 | `def` | [rcloneCommonFlags](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Rclone.lean/declarations/rclonecommonflags.md) | 33 | `declaration-track:2fb18aaf66a24aafeedcacf59c6ce9c0de075dc7a01f27ee678ba2baca4d1854` |
-| 3 | `def` | [rcloneFilesArgs](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Rclone.lean/declarations/rclonefilesargs.md) | 43 | `declaration-track:416fee63500166f26107390a46826fddedd38d88c8786de7ac584c28d654b8ff` |
-| 4 | `def` | [rcloneMarkerArgs](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Rclone.lean/declarations/rclonemarkerargs.md) | 55 | `declaration-track:06c51f6d3ac53bde81452185f39544db514a8f5a595de4fea83c165a3a645110` |
-| 5 | `def` | [putStagedViaRclone](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Rclone.lean/declarations/putstagedviarclone.md) | 71 | `declaration-track:5c2ecf110b20b6ad1d173362fdcddcab74d60c62604f5ce462b92bca48e4078a` |
+| 1 | `def` | [rcloneAvailable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Rclone.lean/declarations/rcloneavailable.md) | 24 | `declaration-track:bd193a436fcb65b4181da24db5e3bca670e0baecb680f09eacaa56d78587a0ef` |
+| 2 | `def` | [rcloneCommonFlags](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Rclone.lean/declarations/rclonecommonflags.md) | 33 | `declaration-track:2fb18aaf66a24aafeedcacf59c6ce9c0de075dc7a01f27ee678ba2baca4d1854` |
+| 3 | `def` | [rcloneFilesArgs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Rclone.lean/declarations/rclonefilesargs.md) | 43 | `declaration-track:416fee63500166f26107390a46826fddedd38d88c8786de7ac584c28d654b8ff` |
+| 4 | `def` | [rcloneMarkerArgs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Rclone.lean/declarations/rclonemarkerargs.md) | 55 | `declaration-track:06c51f6d3ac53bde81452185f39544db514a8f5a595de4fea83c165a3a645110` |
+| 5 | `def` | [putStagedViaRclone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Rclone.lean/declarations/putstagedviarclone.md) | 71 | `declaration-track:5c2ecf110b20b6ad1d173362fdcddcab74d60c62604f5ce462b92bca48e4078a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

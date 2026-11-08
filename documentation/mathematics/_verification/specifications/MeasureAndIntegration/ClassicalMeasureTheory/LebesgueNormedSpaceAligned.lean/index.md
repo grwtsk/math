@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueNormedSpaceAligned.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueNormedSpaceAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/LebesgueNormedSpaceAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/LebesgueNormedSpaceAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [aemeasurable_withDensity_iff](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueNormedSpaceAligned.lean/declarations/aemeasurable-withdensity-iff.md) | 20 | `result-track:5884ddffcbba5c7a97dd05c2f750e98f2773430a94fc240ae0566b9e5a00a4e8` |
+| 1 | `theorem` | [aemeasurable_withDensity_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/LebesgueNormedSpaceAligned.lean/declarations/aemeasurable-withdensity-iff.md) | 20 | `result-track:5884ddffcbba5c7a97dd05c2f750e98f2773430a94fc240ae0566b9e5a00a4e8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/AutomorphismActionNamespaced.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/AutomorphismActionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/AutomorphismActionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/AutomorphismActionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [AutomorphismAction](../../../../GroupTheoryAndGeneralizations/AutomorphismActionNamespaced.lean/declarations/automorphismaction.md) | 23 | `declaration-track:a65add13d63624a5d97968e4dce654f23964292dd3c8581a0556ba9322477e9f` |
-| 2 | `structure` | [EquivariantMap](../../../../GroupTheoryAndGeneralizations/AutomorphismActionNamespaced.lean/declarations/equivariantmap.md) | 27 | `declaration-track:66c2a61110bd51449455b73e8e408ec7d78e4d46745467063368da58213c840e` |
-| 3 | `structure` | [RefinementAutomorphismCertificate](../../../../GroupTheoryAndGeneralizations/AutomorphismActionNamespaced.lean/declarations/refinementautomorphismcertificate.md) | 38 | `declaration-track:3bfff65bc175383ce6461bdb9a6ff9a5b925e26beb29bb8330d0cee663697a13` |
+| 1 | `abbrev` | [AutomorphismAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/AutomorphismActionNamespaced.lean/declarations/automorphismaction.md) | 23 | `declaration-track:a65add13d63624a5d97968e4dce654f23964292dd3c8581a0556ba9322477e9f` |
+| 2 | `structure` | [EquivariantMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/AutomorphismActionNamespaced.lean/declarations/equivariantmap.md) | 27 | `declaration-track:66c2a61110bd51449455b73e8e408ec7d78e4d46745467063368da58213c840e` |
+| 3 | `structure` | [RefinementAutomorphismCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/AutomorphismActionNamespaced.lean/declarations/refinementautomorphismcertificate.md) | 38 | `declaration-track:3bfff65bc175383ce6461bdb9a6ff9a5b925e26beb29bb8330d0cee663697a13` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

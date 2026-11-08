@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RetractArgument.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RetractArgument.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RetractArgument.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RetractArgument.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [RetractArrow.ofLeftLiftingProperty](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RetractArgument.lean/declarations/retractarrow-ofleftliftingproperty.md) | 31 | `declaration-track:acf9cd13131521ffa73d05b67580ffc087adbfbc5d70d5abd257d5df81a96d25` |
-| 2 | `def` | [RetractArrow.ofRightLiftingProperty](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RetractArgument.lean/declarations/retractarrow-ofrightliftingproperty.md) | 40 | `declaration-track:ebc37449e069def86edaf15042f8e950f60cfb6c2e0299bf9bf91d6cd7faff5f` |
-| 3 | `lemma` | [llp_eq_of_le_llp_of_hasFactorization_of_isStableUnderRetracts](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RetractArgument.lean/declarations/llp-eq-of-le-llp-of-hasfactorization-of-isstableunderretracts.md) | 51 | `result-track:797e280fb459da62f1cccb76e7b5bb8c947440b5ccc6bccf1e22718dcd6f5a75` |
-| 4 | `lemma` | [rlp_eq_of_le_rlp_of_hasFactorization_of_isStableUnderRetracts](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RetractArgument.lean/declarations/rlp-eq-of-le-rlp-of-hasfactorization-of-isstableunderretracts.md) | 59 | `result-track:bd6e3ba5ccf16fe4289f5cbd63352108a2cdcdc2d07775f3df32ed1cac344b04` |
+| 1 | `def` | [RetractArrow.ofLeftLiftingProperty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RetractArgument.lean/declarations/retractarrow-ofleftliftingproperty.md) | 31 | `declaration-track:acf9cd13131521ffa73d05b67580ffc087adbfbc5d70d5abd257d5df81a96d25` |
+| 2 | `def` | [RetractArrow.ofRightLiftingProperty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RetractArgument.lean/declarations/retractarrow-ofrightliftingproperty.md) | 40 | `declaration-track:ebc37449e069def86edaf15042f8e950f60cfb6c2e0299bf9bf91d6cd7faff5f` |
+| 3 | `lemma` | [llp_eq_of_le_llp_of_hasFactorization_of_isStableUnderRetracts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RetractArgument.lean/declarations/llp-eq-of-le-llp-of-hasfactorization-of-isstableunderretracts.md) | 51 | `result-track:797e280fb459da62f1cccb76e7b5bb8c947440b5ccc6bccf1e22718dcd6f5a75` |
+| 4 | `lemma` | [rlp_eq_of_le_rlp_of_hasFactorization_of_isStableUnderRetracts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RetractArgument.lean/declarations/rlp-eq-of-le-rlp-of-hasfactorization-of-isstableunderretracts.md) | 59 | `result-track:bd6e3ba5ccf16fe4289f5cbd63352108a2cdcdc2d07775f3df32ed1cac344b04` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

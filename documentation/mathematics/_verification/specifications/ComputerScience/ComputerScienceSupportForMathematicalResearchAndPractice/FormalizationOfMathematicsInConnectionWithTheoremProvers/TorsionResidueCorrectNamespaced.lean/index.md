@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TorsionResidueCorrectNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TorsionResidueCorrectNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TorsionResidueCorrectNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TorsionResidueCorrectNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [torsion_resolved_means_zero_residue](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TorsionResidueCorrectNamespaced.lean/declarations/torsion-resolved-means-zero-residue.md) | 15 | `result-track:6bfb18a3b7605b57d806b48677cca096aa5c64a8aa6c653444f4a61bd0ec1f39` |
-| 2 | `theorem` | [natural_torsion_restriction_is_admitted](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TorsionResidueCorrectNamespaced.lean/declarations/natural-torsion-restriction-is-admitted.md) | 21 | `result-track:2d78e37bbdb896536573bcfdcb66e9b89663470e7f61a4405b45634d06ad9196` |
-| 3 | `theorem` | [torsion_witness_bridge_side](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TorsionResidueCorrectNamespaced.lean/declarations/torsion-witness-bridge-side.md) | 27 | `result-track:66591228a1b3e138323757bad882351f5f3e98266d1b40e0897180708f22c69b` |
+| 1 | `theorem` | [torsion_resolved_means_zero_residue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TorsionResidueCorrectNamespaced.lean/declarations/torsion-resolved-means-zero-residue.md) | 15 | `result-track:6bfb18a3b7605b57d806b48677cca096aa5c64a8aa6c653444f4a61bd0ec1f39` |
+| 2 | `theorem` | [natural_torsion_restriction_is_admitted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TorsionResidueCorrectNamespaced.lean/declarations/natural-torsion-restriction-is-admitted.md) | 21 | `result-track:2d78e37bbdb896536573bcfdcb66e9b89663470e7f61a4405b45634d06ad9196` |
+| 3 | `theorem` | [torsion_witness_bridge_side](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TorsionResidueCorrectNamespaced.lean/declarations/torsion-witness-bridge-side.md) | 27 | `result-track:66591228a1b3e138323757bad882351f5f3e98266d1b40e0897180708f22c69b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

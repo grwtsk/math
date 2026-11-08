@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../SpecialFunctions/BernsteinS.lean/index.md) · [Full source](../../../../SpecialFunctions/BernsteinS.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/BernsteinS.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/BernsteinS.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,21 +60,21 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [bernstein](../../../../SpecialFunctions/BernsteinS.lean/declarations/bernstein.md) | 56 | `declaration-track:733bf660880428b7a89bd83ebac81f035a8f9d9377a853385316cfb431acc50d` |
-| 2 | `theorem` | [bernstein_apply](../../../../SpecialFunctions/BernsteinS.lean/declarations/bernstein-apply.md) | 61 | `result-track:a2ce8e60ae670427a393562ba3c6e2ae3109d70315767771ffc91e08b48fb6ec` |
-| 3 | `theorem` | [bernstein_nonneg](../../../../SpecialFunctions/BernsteinS.lean/declarations/bernstein-nonneg.md) | 67 | `result-track:1456affc31f89535ac28d9522670dcb56c9fa88d48d572adcaf9146f8b9698c2` |
-| 4 | `def` | [evalBernstein](../../../../SpecialFunctions/BernsteinS.lean/declarations/evalbernstein.md) | 79 | `declaration-track:5e153380483ec21e7059d338a759d3f2437f5e89509b90e1d43160159db23d11` |
-| 5 | `def` | [z](../../../../SpecialFunctions/BernsteinS.lean/declarations/z.md) | 95 | `declaration-track:494409001da35a5c8c04204cdcf68db1b5b9a68009218651b431fce0f6c90067` |
-| 6 | `theorem` | [probability](../../../../SpecialFunctions/BernsteinS.lean/declarations/probability.md) | 108 | `result-track:989675fce7024aa3111d8515213817f0dcc18a9f6ea4ad7a8d37813bc32ee44c` |
-| 7 | `theorem` | [variance](../../../../SpecialFunctions/BernsteinS.lean/declarations/variance.md) | 115 | `result-track:cf96a21a9239724c505fd85dbf8a7a8bfc5c474c518a4c408948245e1e3dd6a9` |
-| 8 | `def` | [bernsteinApproximation](../../../../SpecialFunctions/BernsteinS.lean/declarations/bernsteinapproximation.md) | 144 | `declaration-track:c24bc061d7dcf388820739cf66b3dbe56ec30c862316cef3a254360c307152d3` |
-| 9 | `theorem` | [apply](../../../../SpecialFunctions/BernsteinS.lean/declarations/apply.md) | 166 | `result-track:61424bb88d6f63ba93d21c4d1cb4990c4c186ae81f71e28c199c9e4bd765d7cc` |
-| 10 | `def` | [δ](../../../../SpecialFunctions/BernsteinS.lean/declarations/anonymous.md) | 173 | `declaration-track:15de865ce80ab661895b4a0a4e36a25589e3b0bd0a826312a519cc47e0482d6c` |
-| 11 | `theorem` | [δ_pos](../../../../SpecialFunctions/BernsteinS.lean/declarations/pos.md) | 177 | `result-track:6e6560213b3a7bb9df06f1b9fa498c96031487eb7a679385f2648aff7f7c8538` |
-| 12 | `def` | [S](../../../../SpecialFunctions/BernsteinS.lean/declarations/s.md) | 183 | `declaration-track:982b6430b3ce9adf5088d9fd8d6b985e7a9d0f833b7a557dc5b3fc0ba00ebfb8` |
-| 13 | `theorem` | [lt_of_mem_S](../../../../SpecialFunctions/BernsteinS.lean/declarations/lt-of-mem-s.md) | 189 | `result-track:64cd35376a816e15aa8f7f59cad95ef78411b1a97efdeda53c9d992b57f09e85` |
-| 14 | `theorem` | [le_of_mem_S_compl](../../../../SpecialFunctions/BernsteinS.lean/declarations/le-of-mem-s-compl.md) | 199 | `result-track:304d373712e813882aa8e9ee6bfc6bec1278bbfb8f65b3083ed0f576adeb550d` |
-| 15 | `theorem` | [bernsteinApproximation_uniform](../../../../SpecialFunctions/BernsteinS.lean/declarations/bernsteinapproximation-uniform.md) | 227 | `result-track:328b171c594ee8c310ad5a802d51720d9f3583ebd2173bee08d241e6882cae75` |
+| 1 | `def` | [bernstein](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/BernsteinS.lean/declarations/bernstein.md) | 56 | `declaration-track:733bf660880428b7a89bd83ebac81f035a8f9d9377a853385316cfb431acc50d` |
+| 2 | `theorem` | [bernstein_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/BernsteinS.lean/declarations/bernstein-apply.md) | 61 | `result-track:a2ce8e60ae670427a393562ba3c6e2ae3109d70315767771ffc91e08b48fb6ec` |
+| 3 | `theorem` | [bernstein_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/BernsteinS.lean/declarations/bernstein-nonneg.md) | 67 | `result-track:1456affc31f89535ac28d9522670dcb56c9fa88d48d572adcaf9146f8b9698c2` |
+| 4 | `def` | [evalBernstein](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/BernsteinS.lean/declarations/evalbernstein.md) | 79 | `declaration-track:5e153380483ec21e7059d338a759d3f2437f5e89509b90e1d43160159db23d11` |
+| 5 | `def` | [z](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/BernsteinS.lean/declarations/z.md) | 95 | `declaration-track:494409001da35a5c8c04204cdcf68db1b5b9a68009218651b431fce0f6c90067` |
+| 6 | `theorem` | [probability](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/BernsteinS.lean/declarations/probability.md) | 108 | `result-track:989675fce7024aa3111d8515213817f0dcc18a9f6ea4ad7a8d37813bc32ee44c` |
+| 7 | `theorem` | [variance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/BernsteinS.lean/declarations/variance.md) | 115 | `result-track:cf96a21a9239724c505fd85dbf8a7a8bfc5c474c518a4c408948245e1e3dd6a9` |
+| 8 | `def` | [bernsteinApproximation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/BernsteinS.lean/declarations/bernsteinapproximation.md) | 144 | `declaration-track:c24bc061d7dcf388820739cf66b3dbe56ec30c862316cef3a254360c307152d3` |
+| 9 | `theorem` | [apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/BernsteinS.lean/declarations/apply.md) | 166 | `result-track:61424bb88d6f63ba93d21c4d1cb4990c4c186ae81f71e28c199c9e4bd765d7cc` |
+| 10 | `def` | [δ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/BernsteinS.lean/declarations/anonymous.md) | 173 | `declaration-track:15de865ce80ab661895b4a0a4e36a25589e3b0bd0a826312a519cc47e0482d6c` |
+| 11 | `theorem` | [δ_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/BernsteinS.lean/declarations/pos.md) | 177 | `result-track:6e6560213b3a7bb9df06f1b9fa498c96031487eb7a679385f2648aff7f7c8538` |
+| 12 | `def` | [S](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/BernsteinS.lean/declarations/s.md) | 183 | `declaration-track:982b6430b3ce9adf5088d9fd8d6b985e7a9d0f833b7a557dc5b3fc0ba00ebfb8` |
+| 13 | `theorem` | [lt_of_mem_S](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/BernsteinS.lean/declarations/lt-of-mem-s.md) | 189 | `result-track:64cd35376a816e15aa8f7f59cad95ef78411b1a97efdeda53c9d992b57f09e85` |
+| 14 | `theorem` | [le_of_mem_S_compl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/BernsteinS.lean/declarations/le-of-mem-s-compl.md) | 199 | `result-track:304d373712e813882aa8e9ee6bfc6bec1278bbfb8f65b3083ed0f576adeb550d` |
+| 15 | `theorem` | [bernsteinApproximation_uniform](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/BernsteinS.lean/declarations/bernsteinapproximation-uniform.md) | 227 | `result-track:328b171c594ee8c310ad5a802d51720d9f3583ebd2173bee08d241e6882cae75` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FirstRieszClassicalResidues.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FirstRieszClassicalResidues.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FirstRieszClassicalResidues.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FirstRieszClassicalResidues.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Chebyshev.FirstRieszClassicalCoefficients`](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FirstRieszClassicalCoefficients.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Chebyshev.TentResidueContributions`](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TentResidueContributions.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.FirstRieszClassicalCoefficients`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FirstRieszClassicalCoefficients.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.TentResidueContributions`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TentResidueContributions.lean/index.md) — import line 5; pinned internal source present.
 - `Mathlib.NumberTheory.LSeries.HurwitzZetaValues` — import line 6; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [riemannZeta_neg_one](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FirstRieszClassicalResidues.lean/declarations/riemannzeta-neg-one.md) | 19 | `result-track:f44cf422d3946155b580f06fd4f06fd663234bcf9537604fd3831115d280f97d` |
-| 2 | `theorem` | [continuousAt_neg_logDeriv_neg_one](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FirstRieszClassicalResidues.lean/declarations/continuousat-neg-logderiv-neg-one.md) | 24 | `result-track:0d65e5ac43e8364758e46d63b132ddc7f874979001121800144bd5ff74c6b21d` |
-| 3 | `theorem` | [firstRiesz_residue_zero](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FirstRieszClassicalResidues.lean/declarations/firstriesz-residue-zero.md) | 29 | `result-track:5281391874e4d5b805480f6617cf201b72cb047c55e25f1d9f96f9d957bb3e34` |
-| 4 | `theorem` | [firstRiesz_residue_neg_one](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FirstRieszClassicalResidues.lean/declarations/firstriesz-residue-neg-one.md) | 46 | `result-track:beb88e42a1d35538fbea597233fbc003a6fe271af6c75c5cd35699d24990850f` |
+| 1 | `theorem` | [riemannZeta_neg_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FirstRieszClassicalResidues.lean/declarations/riemannzeta-neg-one.md) | 19 | `result-track:f44cf422d3946155b580f06fd4f06fd663234bcf9537604fd3831115d280f97d` |
+| 2 | `theorem` | [continuousAt_neg_logDeriv_neg_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FirstRieszClassicalResidues.lean/declarations/continuousat-neg-logderiv-neg-one.md) | 24 | `result-track:0d65e5ac43e8364758e46d63b132ddc7f874979001121800144bd5ff74c6b21d` |
+| 3 | `theorem` | [firstRiesz_residue_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FirstRieszClassicalResidues.lean/declarations/firstriesz-residue-zero.md) | 29 | `result-track:5281391874e4d5b805480f6617cf201b72cb047c55e25f1d9f96f9d957bb3e34` |
+| 4 | `theorem` | [firstRiesz_residue_neg_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FirstRieszClassicalResidues.lean/declarations/firstriesz-residue-neg-one.md) | 46 | `result-track:beb88e42a1d35538fbea597233fbc003a6fe271af6c75c5cd35699d24990850f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

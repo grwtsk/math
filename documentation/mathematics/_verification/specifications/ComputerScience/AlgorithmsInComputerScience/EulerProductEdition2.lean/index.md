@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/EulerProductEdition2.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/EulerProductEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EulerProductEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EulerProductEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PrimeWindow](../../../../../ComputerScience/AlgorithmsInComputerScience/EulerProductEdition2.lean/declarations/primewindow.md) | 16 | `declaration-track:95126d8035e2de1c1f1d96a01208f8a52588246b4595f1a7e52ca63373c3e64d` |
-| 2 | `structure` | [LocalEulerFactor](../../../../../ComputerScience/AlgorithmsInComputerScience/EulerProductEdition2.lean/declarations/localeulerfactor.md) | 22 | `declaration-track:b6f80e90e56044b9629416cf8ef1ccc6b3ee1a428c85c6a4432685da155b5d64` |
-| 3 | `structure` | [FiniteEulerProduct](../../../../../ComputerScience/AlgorithmsInComputerScience/EulerProductEdition2.lean/declarations/finiteeulerproduct.md) | 29 | `declaration-track:e0fc4c8fd627c69008e7fa9c7e74872addf9ad9d600706d11e001eb245ba68ae` |
-| 4 | `theorem` | [prime_window_sound](../../../../../ComputerScience/AlgorithmsInComputerScience/EulerProductEdition2.lean/declarations/prime-window-sound.md) | 36 | `result-track:748e3e1ab294f6aaf05859bbadaa05d8d4542eed27b0f58361f54242a095bafe` |
-| 5 | `theorem` | [local_euler_factor_sound](../../../../../ComputerScience/AlgorithmsInComputerScience/EulerProductEdition2.lean/declarations/local-euler-factor-sound.md) | 41 | `result-track:ff18f6d55654115cd014643f8ad948ac1c45291c9f9a668814d58a43da2bea4b` |
-| 6 | `theorem` | [finite_euler_product_expansion_sound](../../../../../ComputerScience/AlgorithmsInComputerScience/EulerProductEdition2.lean/declarations/finite-euler-product-expansion-sound.md) | 46 | `result-track:6aaf5953912b3d6e9ad5cef72967832b8087fbdb63c23056499144008fa6c18c` |
-| 7 | `def` | [FiniteEulerProductProvesInfiniteEulerProduct](../../../../../ComputerScience/AlgorithmsInComputerScience/EulerProductEdition2.lean/declarations/finiteeulerproductprovesinfiniteeulerproduct.md) | 52 | `declaration-track:ac17f60a93fb89f50fa67ebc382d9205c3eb4d3e7459319140ef6ac6a060b6d3` |
-| 8 | `theorem` | [finite_euler_product_not_infinite_identity](../../../../../ComputerScience/AlgorithmsInComputerScience/EulerProductEdition2.lean/declarations/finite-euler-product-not-infinite-identity.md) | 56 | `result-track:30c6ecdecff9f58adf30de1de621c2a4bd7ee70958d8e3ba54aa535cfa9b57c3` |
+| 1 | `structure` | [PrimeWindow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EulerProductEdition2.lean/declarations/primewindow.md) | 16 | `declaration-track:95126d8035e2de1c1f1d96a01208f8a52588246b4595f1a7e52ca63373c3e64d` |
+| 2 | `structure` | [LocalEulerFactor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EulerProductEdition2.lean/declarations/localeulerfactor.md) | 22 | `declaration-track:b6f80e90e56044b9629416cf8ef1ccc6b3ee1a428c85c6a4432685da155b5d64` |
+| 3 | `structure` | [FiniteEulerProduct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EulerProductEdition2.lean/declarations/finiteeulerproduct.md) | 29 | `declaration-track:e0fc4c8fd627c69008e7fa9c7e74872addf9ad9d600706d11e001eb245ba68ae` |
+| 4 | `theorem` | [prime_window_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EulerProductEdition2.lean/declarations/prime-window-sound.md) | 36 | `result-track:748e3e1ab294f6aaf05859bbadaa05d8d4542eed27b0f58361f54242a095bafe` |
+| 5 | `theorem` | [local_euler_factor_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EulerProductEdition2.lean/declarations/local-euler-factor-sound.md) | 41 | `result-track:ff18f6d55654115cd014643f8ad948ac1c45291c9f9a668814d58a43da2bea4b` |
+| 6 | `theorem` | [finite_euler_product_expansion_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EulerProductEdition2.lean/declarations/finite-euler-product-expansion-sound.md) | 46 | `result-track:6aaf5953912b3d6e9ad5cef72967832b8087fbdb63c23056499144008fa6c18c` |
+| 7 | `def` | [FiniteEulerProductProvesInfiniteEulerProduct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EulerProductEdition2.lean/declarations/finiteeulerproductprovesinfiniteeulerproduct.md) | 52 | `declaration-track:ac17f60a93fb89f50fa67ebc382d9205c3eb4d3e7459319140ef6ac6a060b6d3` |
+| 8 | `theorem` | [finite_euler_product_not_infinite_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EulerProductEdition2.lean/declarations/finite-euler-product-not-infinite-identity.md) | 56 | `result-track:30c6ecdecff9f58adf30de1de621c2a4bd7ee70958d8e3ba54aa535cfa9b57c3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

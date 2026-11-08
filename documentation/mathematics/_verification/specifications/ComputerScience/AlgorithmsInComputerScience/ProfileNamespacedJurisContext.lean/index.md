@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ProfileNamespacedJurisContext.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ProfileNamespacedJurisContext.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProfileNamespacedJurisContext.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProfileNamespacedJurisContext.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [JurisContext](../../../../../ComputerScience/AlgorithmsInComputerScience/ProfileNamespacedJurisContext.lean/declarations/juriscontext.md) | 23 | `declaration-track:86877bbd4053ada7c7c5f125e8593ad1932b6f7e39acb3ef4857b5defcb30233` |
-| 2 | `structure` | [JurisProfile](../../../../../ComputerScience/AlgorithmsInComputerScience/ProfileNamespacedJurisContext.lean/declarations/jurisprofile.md) | 32 | `declaration-track:e728a9fd1d2d2c38b3dc9370910a6a34d5f0f2305b1a56267f2aa44384d81a66` |
-| 3 | `def` | [jurisEvaluate](../../../../../ComputerScience/AlgorithmsInComputerScience/ProfileNamespacedJurisContext.lean/declarations/jurisevaluate.md) | 41 | `declaration-track:69523d27db02f24ea79a0daa09ab0be169d5176b7ad1aa81415ea7c3d41649b0` |
-| 4 | `structure` | [JurisAdmission](../../../../../ComputerScience/AlgorithmsInComputerScience/ProfileNamespacedJurisContext.lean/declarations/jurisadmission.md) | 47 | `declaration-track:1fb74f1252d57817aaa2cdf5bd9d7e10af82123c178a3930fe2543981c8a8711` |
-| 5 | `theorem` | [JurisAdmission.mayExecute](../../../../../ComputerScience/AlgorithmsInComputerScience/ProfileNamespacedJurisContext.lean/declarations/jurisadmission-mayexecute.md) | 53 | `result-track:111190ce3619e3ac761bd5a2caab9c931aebeecc6075935c606fdde075a1bc7e` |
+| 1 | `structure` | [JurisContext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProfileNamespacedJurisContext.lean/declarations/juriscontext.md) | 23 | `declaration-track:86877bbd4053ada7c7c5f125e8593ad1932b6f7e39acb3ef4857b5defcb30233` |
+| 2 | `structure` | [JurisProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProfileNamespacedJurisContext.lean/declarations/jurisprofile.md) | 32 | `declaration-track:e728a9fd1d2d2c38b3dc9370910a6a34d5f0f2305b1a56267f2aa44384d81a66` |
+| 3 | `def` | [jurisEvaluate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProfileNamespacedJurisContext.lean/declarations/jurisevaluate.md) | 41 | `declaration-track:69523d27db02f24ea79a0daa09ab0be169d5176b7ad1aa81415ea7c3d41649b0` |
+| 4 | `structure` | [JurisAdmission](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProfileNamespacedJurisContext.lean/declarations/jurisadmission.md) | 47 | `declaration-track:1fb74f1252d57817aaa2cdf5bd9d7e10af82123c178a3930fe2543981c8a8711` |
+| 5 | `theorem` | [JurisAdmission.mayExecute](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProfileNamespacedJurisContext.lean/declarations/jurisadmission-mayexecute.md) | 53 | `result-track:111190ce3619e3ac761bd5a2caab9c931aebeecc6075935c606fdde075a1bc7e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

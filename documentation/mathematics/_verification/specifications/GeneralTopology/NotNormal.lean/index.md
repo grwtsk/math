@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/NotNormal.lean/index.md) · [Full source](../../../../GeneralTopology/NotNormal.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/NotNormal.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/NotNormal.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [IsClosed.mk_lt_continuum](../../../../GeneralTopology/NotNormal.lean/declarations/isclosed-mk-lt-continuum.md) | 25 | `result-track:b38308c3e49be63a87dac3de3ebaa850954c7fde4886f9325d660db81afdac6f` |
-| 2 | `theorem` | [IsClosed.not_normal_of_continuum_le_mk](../../../../GeneralTopology/NotNormal.lean/declarations/isclosed-not-normal-of-continuum-le-mk.md) | 56 | `result-track:218c78605ff1a84c6b5cdb6bf13190bb55637138e847914955e01a35eafafb83` |
+| 1 | `theorem` | [IsClosed.mk_lt_continuum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/NotNormal.lean/declarations/isclosed-mk-lt-continuum.md) | 25 | `result-track:b38308c3e49be63a87dac3de3ebaa850954c7fde4886f9325d660db81afdac6f` |
+| 2 | `theorem` | [IsClosed.not_normal_of_continuum_le_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/NotNormal.lean/declarations/isclosed-not-normal-of-continuum-le-mk.md) | 56 | `result-track:218c78605ff1a84c6b5cdb6bf13190bb55637138e847914955e01a35eafafb83` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/BasicScratchNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/BasicScratchNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BasicScratchNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BasicScratchNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [UnitInterval](../../../../RealFunctions/BasicScratchNamespaced.lean/declarations/unitinterval.md) | 16 | `declaration-track:cc10d63c0b6a2b5c09e589c5cde7065c32a8b36f8747053074916d76350b980a` |
-| 2 | `def` | [bernstein](../../../../RealFunctions/BasicScratchNamespaced.lean/declarations/bernstein.md) | 18 | `declaration-track:9b46cee1b838d1ed88dd74569367f8f43a8f8e22aedd74ec4b63c67f071bd42b` |
-| 3 | `theorem` | [bernstein_coe](../../../../RealFunctions/BasicScratchNamespaced.lean/declarations/bernstein-coe.md) | 21 | `result-track:57694d97a1fc92ed5e884cafcb49f8b085a5234b02ddd7b0560eec1eb6318e7d` |
-| 4 | `theorem` | [bernstein_nonneg](../../../../RealFunctions/BasicScratchNamespaced.lean/declarations/bernstein-nonneg.md) | 26 | `result-track:6fe88d218d4a62a9e54cfc987e3bc3d3cd13950cc74330a142173eade31a9348` |
-| 5 | `theorem` | [sum_bernstein](../../../../RealFunctions/BasicScratchNamespaced.lean/declarations/sum-bernstein.md) | 31 | `result-track:97d01a2229d6a065fa537a821a3d710f8801db8425228f8301abb1484289b75d` |
-| 6 | `theorem` | [bernstein_zero](../../../../RealFunctions/BasicScratchNamespaced.lean/declarations/bernstein-zero.md) | 35 | `result-track:acf564557bf3a1d0d6587af0f88804a5ade22f79ddffaab5ab57ef15839243d4` |
-| 7 | `theorem` | [bernstein_one](../../../../RealFunctions/BasicScratchNamespaced.lean/declarations/bernstein-one.md) | 43 | `result-track:f1fae4694d87cb518901fbbd783c3730c1a47739b9fcd7032c534dd13d097e19` |
-| 8 | `theorem` | [bernstein_rev](../../../../RealFunctions/BasicScratchNamespaced.lean/declarations/bernstein-rev.md) | 53 | `result-track:88f559baf5791d1c952a43d84fd914d67768c88aa8799ae9df5cf1f0b20abcaa` |
+| 1 | `abbrev` | [UnitInterval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BasicScratchNamespaced.lean/declarations/unitinterval.md) | 16 | `declaration-track:cc10d63c0b6a2b5c09e589c5cde7065c32a8b36f8747053074916d76350b980a` |
+| 2 | `def` | [bernstein](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BasicScratchNamespaced.lean/declarations/bernstein.md) | 18 | `declaration-track:9b46cee1b838d1ed88dd74569367f8f43a8f8e22aedd74ec4b63c67f071bd42b` |
+| 3 | `theorem` | [bernstein_coe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BasicScratchNamespaced.lean/declarations/bernstein-coe.md) | 21 | `result-track:57694d97a1fc92ed5e884cafcb49f8b085a5234b02ddd7b0560eec1eb6318e7d` |
+| 4 | `theorem` | [bernstein_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BasicScratchNamespaced.lean/declarations/bernstein-nonneg.md) | 26 | `result-track:6fe88d218d4a62a9e54cfc987e3bc3d3cd13950cc74330a142173eade31a9348` |
+| 5 | `theorem` | [sum_bernstein](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BasicScratchNamespaced.lean/declarations/sum-bernstein.md) | 31 | `result-track:97d01a2229d6a065fa537a821a3d710f8801db8425228f8301abb1484289b75d` |
+| 6 | `theorem` | [bernstein_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BasicScratchNamespaced.lean/declarations/bernstein-zero.md) | 35 | `result-track:acf564557bf3a1d0d6587af0f88804a5ade22f79ddffaab5ab57ef15839243d4` |
+| 7 | `theorem` | [bernstein_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BasicScratchNamespaced.lean/declarations/bernstein-one.md) | 43 | `result-track:f1fae4694d87cb518901fbbd783c3730c1a47739b9fcd7032c534dd13d097e19` |
+| 8 | `theorem` | [bernstein_rev](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BasicScratchNamespaced.lean/declarations/bernstein-rev.md) | 53 | `result-track:88f559baf5791d1c952a43d84fd914d67768c88aa8799ae9df5cf1f0b20abcaa` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

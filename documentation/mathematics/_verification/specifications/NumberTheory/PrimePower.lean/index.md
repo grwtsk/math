@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/PrimePower.lean/index.md) · [Full source](../../../../NumberTheory/PrimePower.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimePower.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimePower.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PrimePower](../../../../NumberTheory/PrimePower.lean/declarations/primepower.md) | 18 | `declaration-track:9069ce9923993670346640a790200c977168dcd5dd5d5e93f6413eb3e6a18430` |
-| 2 | `def` | [value](../../../../NumberTheory/PrimePower.lean/declarations/value.md) | 26 | `declaration-track:30ed08ed104d90efe8df0532faf3ed88da916810d56c89f3e69234472643ac76` |
-| 3 | `theorem` | [value_pos](../../../../NumberTheory/PrimePower.lean/declarations/value-pos.md) | 29 | `result-track:75f5ff5ce8bbb421f8bf1121b2a941e26ff99f725ad1042c993a9a83e306c7ad` |
-| 4 | `theorem` | [value_ne_zero](../../../../NumberTheory/PrimePower.lean/declarations/value-ne-zero.md) | 32 | `result-track:088fc5fb72455c8e284645bc5a001894713d60f6175110b018e62ad5bc516e76` |
-| 5 | `def` | [asPositiveNat](../../../../NumberTheory/PrimePower.lean/declarations/aspositivenat.md) | 35 | `declaration-track:56550e04d6ef3cc519566aa23e996d7e92c6051b7d63824521032a03463c52be` |
-| 6 | `def` | [PrimeLt](../../../../NumberTheory/PrimePower.lean/declarations/primelt.md) | 38 | `declaration-track:1a2afc86db638db84435c6a87f111b83d594016e60bc3bd32c300c6512172d4a` |
-| 7 | `theorem` | [prime_ne_of_primeLt](../../../../NumberTheory/PrimePower.lean/declarations/prime-ne-of-primelt.md) | 41 | `result-track:a81f19be032bdcc4462ebde5873c63fb2071e035b4715bc7488abed4b3663977` |
+| 1 | `structure` | [PrimePower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimePower.lean/declarations/primepower.md) | 18 | `declaration-track:9069ce9923993670346640a790200c977168dcd5dd5d5e93f6413eb3e6a18430` |
+| 2 | `def` | [value](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimePower.lean/declarations/value.md) | 26 | `declaration-track:30ed08ed104d90efe8df0532faf3ed88da916810d56c89f3e69234472643ac76` |
+| 3 | `theorem` | [value_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimePower.lean/declarations/value-pos.md) | 29 | `result-track:75f5ff5ce8bbb421f8bf1121b2a941e26ff99f725ad1042c993a9a83e306c7ad` |
+| 4 | `theorem` | [value_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimePower.lean/declarations/value-ne-zero.md) | 32 | `result-track:088fc5fb72455c8e284645bc5a001894713d60f6175110b018e62ad5bc516e76` |
+| 5 | `def` | [asPositiveNat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimePower.lean/declarations/aspositivenat.md) | 35 | `declaration-track:56550e04d6ef3cc519566aa23e996d7e92c6051b7d63824521032a03463c52be` |
+| 6 | `def` | [PrimeLt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimePower.lean/declarations/primelt.md) | 38 | `declaration-track:1a2afc86db638db84435c6a87f111b83d594016e60bc3bd32c300c6512172d4a` |
+| 7 | `theorem` | [prime_ne_of_primeLt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimePower.lean/declarations/prime-ne-of-primelt.md) | 41 | `result-track:a81f19be032bdcc4462ebde5873c63fb2071e035b4715bc7488abed4b3663977` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

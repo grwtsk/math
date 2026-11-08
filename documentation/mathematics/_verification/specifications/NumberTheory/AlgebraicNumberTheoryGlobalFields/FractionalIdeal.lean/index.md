@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/FractionalIdeal.lean/index.md) · [Full source](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/FractionalIdeal.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/FractionalIdeal.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/FractionalIdeal.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,15 +59,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/FractionalIdeal.lean/declarations/instance-source-edition-2.md) | 38 | `declaration-track:112d287829f427fc8adcb190745ed8567d196fbfade024aa1b9cd15b783d3488` |
-| 2 | `instance` | [(anonymous)](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/FractionalIdeal.lean/declarations/instance.md) | 42 | `declaration-track:0027eaaf3397ea6c863de2a4ebe1c100090011819e7a866bc6147729bd036a72` |
-| 3 | `instance` | [(anonymous)](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/FractionalIdeal.lean/declarations/instance-source-edition-3.md) | 47 | `declaration-track:73ce996dfe9d5db8bdd4d508666384c89fde610fc0ce443bf3ea5676ac9a68e9` |
-| 4 | `def` | [fractionalIdealBasis](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/FractionalIdeal.lean/declarations/fractionalidealbasis.md) | 73 | `declaration-track:e5c673aeb89a9dc50ef76d4aedd6e6b4af16ef2524d34ecaa3535087a49814cc` |
-| 5 | `def` | [basisOfFractionalIdeal](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/FractionalIdeal.lean/declarations/basisoffractionalideal.md) | 77 | `declaration-track:25381aa7ae0667ebcb81c384aa612c0f01e26994ba5f922b0ae48b917ce9037a` |
-| 6 | `theorem` | [basisOfFractionalIdeal_apply](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/FractionalIdeal.lean/declarations/basisoffractionalideal-apply.md) | 82 | `result-track:b0faabc93d407a2a1978eed5ae1591adb9756b9792b2ac84c94eb5da2a5b241e` |
-| 7 | `theorem` | [mem_span_basisOfFractionalIdeal](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/FractionalIdeal.lean/declarations/mem-span-basisoffractionalideal.md) | 87 | `result-track:39305dc3c5d9eafd2bdd11591e5cfdd69c9595ed1242a4e27aa58eeac66b05da` |
-| 8 | `theorem` | [fractionalIdeal_rank](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/FractionalIdeal.lean/declarations/fractionalideal-rank.md) | 93 | `result-track:47c5e61c481f3d57c1a790e28b4e83c12483179bc7a18c8c1d4157f5ce38c901` |
-| 9 | `theorem` | [det_basisOfFractionalIdeal_eq_absNorm](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/FractionalIdeal.lean/declarations/det-basisoffractionalideal-eq-absnorm.md) | 106 | `result-track:8da0ca6183254569183434876c352d586e886145c64435ffb061f3ee6d66411c` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/FractionalIdeal.lean/declarations/instance-source-edition-2.md) | 38 | `declaration-track:112d287829f427fc8adcb190745ed8567d196fbfade024aa1b9cd15b783d3488` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/FractionalIdeal.lean/declarations/instance.md) | 42 | `declaration-track:0027eaaf3397ea6c863de2a4ebe1c100090011819e7a866bc6147729bd036a72` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/FractionalIdeal.lean/declarations/instance-source-edition-3.md) | 47 | `declaration-track:73ce996dfe9d5db8bdd4d508666384c89fde610fc0ce443bf3ea5676ac9a68e9` |
+| 4 | `def` | [fractionalIdealBasis](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/FractionalIdeal.lean/declarations/fractionalidealbasis.md) | 73 | `declaration-track:e5c673aeb89a9dc50ef76d4aedd6e6b4af16ef2524d34ecaa3535087a49814cc` |
+| 5 | `def` | [basisOfFractionalIdeal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/FractionalIdeal.lean/declarations/basisoffractionalideal.md) | 77 | `declaration-track:25381aa7ae0667ebcb81c384aa612c0f01e26994ba5f922b0ae48b917ce9037a` |
+| 6 | `theorem` | [basisOfFractionalIdeal_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/FractionalIdeal.lean/declarations/basisoffractionalideal-apply.md) | 82 | `result-track:b0faabc93d407a2a1978eed5ae1591adb9756b9792b2ac84c94eb5da2a5b241e` |
+| 7 | `theorem` | [mem_span_basisOfFractionalIdeal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/FractionalIdeal.lean/declarations/mem-span-basisoffractionalideal.md) | 87 | `result-track:39305dc3c5d9eafd2bdd11591e5cfdd69c9595ed1242a4e27aa58eeac66b05da` |
+| 8 | `theorem` | [fractionalIdeal_rank](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/FractionalIdeal.lean/declarations/fractionalideal-rank.md) | 93 | `result-track:47c5e61c481f3d57c1a790e28b4e83c12483179bc7a18c8c1d4157f5ce38c901` |
+| 9 | `theorem` | [det_basisOfFractionalIdeal_eq_absNorm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/FractionalIdeal.lean/declarations/det-basisoffractionalideal-eq-absnorm.md) | 106 | `result-track:8da0ca6183254569183434876c352d586e886145c64435ffb061f3ee6d66411c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

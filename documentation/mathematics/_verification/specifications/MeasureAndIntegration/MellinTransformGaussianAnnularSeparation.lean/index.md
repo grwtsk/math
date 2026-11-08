@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/MellinTransformGaussianAnnularSeparation.lean/index.md) · [Full source](../../../../MeasureAndIntegration/MellinTransformGaussianAnnularSeparation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MellinTransformGaussianAnnularSeparation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MellinTransformGaussianAnnularSeparation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.MellinTransform.GaussianCoupledSeparation`](../../../../MeasureAndIntegration/MellinTransformGaussianCoupledSeparation.lean/index.md) — import line 17; pinned internal source present.
-- [`GRWTSK.Analysis.MellinTransform.GaussianWindowSeminorms`](../../../../IntegralTransformsOperationalCalculus/MellinTransformGaussianWindowSeminorms.lean/index.md) — import line 18; pinned internal source present.
+- [`GRWTSK.Analysis.MellinTransform.GaussianCoupledSeparation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MellinTransformGaussianCoupledSeparation.lean/index.md) — import line 17; pinned internal source present.
+- [`GRWTSK.Analysis.MellinTransform.GaussianWindowSeminorms`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/MellinTransformGaussianWindowSeminorms.lean/index.md) — import line 18; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,19 +58,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [gaussianSlotWindow](../../../../MeasureAndIntegration/MellinTransformGaussianAnnularSeparation.lean/declarations/gaussianslotwindow.md) | 31 | `declaration-track:767712aa2799c6ee07d785691a465a0b9c6be74ed8e0f5a7a9e138e802316493` |
-| 2 | `def` | [gaussianSlotSlope](../../../../MeasureAndIntegration/MellinTransformGaussianAnnularSeparation.lean/declarations/gaussianslotslope.md) | 34 | `declaration-track:6f211c0d6dfa13b3606bae17ca97a9fb7fb39a584d133e946692567a50934a94` |
-| 3 | `def` | [gaussianSlotPoint](../../../../MeasureAndIntegration/MellinTransformGaussianAnnularSeparation.lean/declarations/gaussianslotpoint.md) | 37 | `declaration-track:a747d31ea4f9e54aa91cc2ec924b91a43a9393b9fa2380f0f217dc24e4cd8a56` |
-| 4 | `lemma` | [gaussianSlot_argument](../../../../MeasureAndIntegration/MellinTransformGaussianAnnularSeparation.lean/declarations/gaussianslot-argument.md) | 42 | `result-track:7adf8c63f9203f67f7b5358a003b671c979da9a1ffc208b05a83bcb6ee0425a7` |
-| 5 | `lemma` | [logPhase_neg_argument](../../../../MeasureAndIntegration/MellinTransformGaussianAnnularSeparation.lean/declarations/logphase-neg-argument.md) | 51 | `result-track:318ca2a05a56ec34d1b98b5f63190f9a5383c679b97bb8e1710786a2b69f9fa9` |
-| 6 | `lemma` | [gaussianSlot_product](../../../../MeasureAndIntegration/MellinTransformGaussianAnnularSeparation.lean/declarations/gaussianslot-product.md) | 57 | `result-track:a71e570b71ffabb38428c6ca28e8f40343357916d7f294a9b83c1c0bdc29acc9` |
-| 7 | `def` | [logPhaseTwist](../../../../MeasureAndIntegration/MellinTransformGaussianAnnularSeparation.lean/declarations/logphasetwist.md) | 68 | `declaration-track:4e77e967d432b1edc2c55f15de4e08b03fdb99d755ddd99c536d8c93feb2b1a3` |
-| 8 | `lemma` | [logPhaseTwist_compact](../../../../MeasureAndIntegration/MellinTransformGaussianAnnularSeparation.lean/declarations/logphasetwist-compact.md) | 70 | `result-track:34e90c0b2d8b8058e6647e0d72551d524e0b97bd6073f6fd03179f8afecc2bdc` |
-| 9 | `lemma` | [gaussianFixedWindow_rootWeight_twist](../../../../MeasureAndIntegration/MellinTransformGaussianAnnularSeparation.lean/declarations/gaussianfixedwindow-rootweight-twist.md) | 74 | `result-track:46d33100951a2e4dd5cca32c04185875d634c0bc1e83c9e0a7c64e453d879037` |
-| 10 | `lemma` | [gaussianFixedWindow_twist_compact](../../../../MeasureAndIntegration/MellinTransformGaussianAnnularSeparation.lean/declarations/gaussianfixedwindow-twist-compact.md) | 81 | `result-track:5485d88cbc53a33ea6a24e8f169135172e7d694cfd90775033b82745e99277f1` |
-| 11 | `lemma` | [dyadicAnnulus_log_support](../../../../MeasureAndIntegration/MellinTransformGaussianAnnularSeparation.lean/declarations/dyadicannulus-log-support.md) | 86 | `result-track:9e1d411048f1a6c8b3b6688de8a86c053dce7fad352d5efbf06799420bdac750` |
-| 12 | `lemma` | [gaussian_annular_integrable](../../../../MeasureAndIntegration/MellinTransformGaussianAnnularSeparation.lean/declarations/gaussian-annular-integrable.md) | 108 | `result-track:50c5554bd01f41a735e9f73f5c1476e44d19a8bf096828580617c5952d36aaa1` |
-| 13 | `theorem` | [gaussian_selected_slot_family](../../../../MeasureAndIntegration/MellinTransformGaussianAnnularSeparation.lean/declarations/gaussian-selected-slot-family.md) | 119 | `result-track:5de206bd768245eef93ca3028d1269fb4c189dce9808f5f91b4cdb24b875adc3` |
+| 1 | `def` | [gaussianSlotWindow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MellinTransformGaussianAnnularSeparation.lean/declarations/gaussianslotwindow.md) | 31 | `declaration-track:767712aa2799c6ee07d785691a465a0b9c6be74ed8e0f5a7a9e138e802316493` |
+| 2 | `def` | [gaussianSlotSlope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MellinTransformGaussianAnnularSeparation.lean/declarations/gaussianslotslope.md) | 34 | `declaration-track:6f211c0d6dfa13b3606bae17ca97a9fb7fb39a584d133e946692567a50934a94` |
+| 3 | `def` | [gaussianSlotPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MellinTransformGaussianAnnularSeparation.lean/declarations/gaussianslotpoint.md) | 37 | `declaration-track:a747d31ea4f9e54aa91cc2ec924b91a43a9393b9fa2380f0f217dc24e4cd8a56` |
+| 4 | `lemma` | [gaussianSlot_argument](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MellinTransformGaussianAnnularSeparation.lean/declarations/gaussianslot-argument.md) | 42 | `result-track:7adf8c63f9203f67f7b5358a003b671c979da9a1ffc208b05a83bcb6ee0425a7` |
+| 5 | `lemma` | [logPhase_neg_argument](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MellinTransformGaussianAnnularSeparation.lean/declarations/logphase-neg-argument.md) | 51 | `result-track:318ca2a05a56ec34d1b98b5f63190f9a5383c679b97bb8e1710786a2b69f9fa9` |
+| 6 | `lemma` | [gaussianSlot_product](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MellinTransformGaussianAnnularSeparation.lean/declarations/gaussianslot-product.md) | 57 | `result-track:a71e570b71ffabb38428c6ca28e8f40343357916d7f294a9b83c1c0bdc29acc9` |
+| 7 | `def` | [logPhaseTwist](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MellinTransformGaussianAnnularSeparation.lean/declarations/logphasetwist.md) | 68 | `declaration-track:4e77e967d432b1edc2c55f15de4e08b03fdb99d755ddd99c536d8c93feb2b1a3` |
+| 8 | `lemma` | [logPhaseTwist_compact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MellinTransformGaussianAnnularSeparation.lean/declarations/logphasetwist-compact.md) | 70 | `result-track:34e90c0b2d8b8058e6647e0d72551d524e0b97bd6073f6fd03179f8afecc2bdc` |
+| 9 | `lemma` | [gaussianFixedWindow_rootWeight_twist](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MellinTransformGaussianAnnularSeparation.lean/declarations/gaussianfixedwindow-rootweight-twist.md) | 74 | `result-track:46d33100951a2e4dd5cca32c04185875d634c0bc1e83c9e0a7c64e453d879037` |
+| 10 | `lemma` | [gaussianFixedWindow_twist_compact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MellinTransformGaussianAnnularSeparation.lean/declarations/gaussianfixedwindow-twist-compact.md) | 81 | `result-track:5485d88cbc53a33ea6a24e8f169135172e7d694cfd90775033b82745e99277f1` |
+| 11 | `lemma` | [dyadicAnnulus_log_support](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MellinTransformGaussianAnnularSeparation.lean/declarations/dyadicannulus-log-support.md) | 86 | `result-track:9e1d411048f1a6c8b3b6688de8a86c053dce7fad352d5efbf06799420bdac750` |
+| 12 | `lemma` | [gaussian_annular_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MellinTransformGaussianAnnularSeparation.lean/declarations/gaussian-annular-integrable.md) | 108 | `result-track:50c5554bd01f41a735e9f73f5c1476e44d19a8bf096828580617c5952d36aaa1` |
+| 13 | `theorem` | [gaussian_selected_slot_family](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MellinTransformGaussianAnnularSeparation.lean/declarations/gaussian-selected-slot-family.md) | 119 | `result-track:5de206bd768245eef93ca3028d1269fb4c189dce9808f5f91b4cdb24b875adc3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

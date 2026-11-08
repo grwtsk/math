@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/BackfillSpinorNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/BackfillSpinorNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BackfillSpinorNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BackfillSpinorNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [backfill_limit](../../../../../ComputerScience/AlgorithmsInComputerScience/BackfillSpinorNamespaced.lean/declarations/backfill-limit.md) | 22 | `declaration-track:b8bd70f07b3250a01059678b34d3b75f33d1c2382e39f0980f8d17786b4de76c` |
-| 2 | `structure` | [BackfillResult](../../../../../ComputerScience/AlgorithmsInComputerScience/BackfillSpinorNamespaced.lean/declarations/backfillresult.md) | 25 | `declaration-track:8638d4693265c032294fd2062fe28e78774b257a581c049453dbdd463e66a6bd` |
-| 3 | `def` | [homotopyWitness](../../../../../ComputerScience/AlgorithmsInComputerScience/BackfillSpinorNamespaced.lean/declarations/homotopywitness.md) | 32 | `declaration-track:4696195da9b809588c8a2b96723a8f7e227039d906c69afc3f59bf2ad3101f34` |
-| 4 | `def` | [backfill](../../../../../ComputerScience/AlgorithmsInComputerScience/BackfillSpinorNamespaced.lean/declarations/backfill.md) | 38 | `declaration-track:1648649e7c60755707b4acc16f6ddc4450918bfaf7a0f575b457133afe06f312` |
-| 5 | `theorem` | [dense_reduction](../../../../../ComputerScience/AlgorithmsInComputerScience/BackfillSpinorNamespaced.lean/declarations/dense-reduction.md) | 75 | `result-track:c8af16964c00333761476acf9596fc0acddf10a2136517ad52f4ff4f9562814b` |
+| 1 | `def` | [backfill_limit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BackfillSpinorNamespaced.lean/declarations/backfill-limit.md) | 22 | `declaration-track:b8bd70f07b3250a01059678b34d3b75f33d1c2382e39f0980f8d17786b4de76c` |
+| 2 | `structure` | [BackfillResult](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BackfillSpinorNamespaced.lean/declarations/backfillresult.md) | 25 | `declaration-track:8638d4693265c032294fd2062fe28e78774b257a581c049453dbdd463e66a6bd` |
+| 3 | `def` | [homotopyWitness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BackfillSpinorNamespaced.lean/declarations/homotopywitness.md) | 32 | `declaration-track:4696195da9b809588c8a2b96723a8f7e227039d906c69afc3f59bf2ad3101f34` |
+| 4 | `def` | [backfill](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BackfillSpinorNamespaced.lean/declarations/backfill.md) | 38 | `declaration-track:1648649e7c60755707b4acc16f6ddc4450918bfaf7a0f575b457133afe06f312` |
+| 5 | `theorem` | [dense_reduction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BackfillSpinorNamespaced.lean/declarations/dense-reduction.md) | 75 | `result-track:c8af16964c00333761476acf9596fc0acddf10a2136517ad52f4ff4f9562814b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

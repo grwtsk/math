@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaFourierMaximalBarrierControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaFourierMaximalBarrierControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaFourierMaximalBarrierControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaFourierMaximalBarrierControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaFourierMaximalBarrier`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaFourierMaximalBarrier.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaFourierMaximalBarrier`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaFourierMaximalBarrier.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [exactFrontier](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaFourierMaximalBarrierControls.lean/declarations/exactfrontier.md) | 13 | `declaration-track:42eab4f8dcc2e0db99ee339b77a31323b520796999f263ea1f45ccc395fea562` |
-| 2 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaFourierMaximalBarrierControls.lean/declarations/example-source-edition-2.md) | 21 | `declaration-track:c0f35e2368fc1d46726083a3646f78d88ccf34d2a04d0f377892b6f04193cf86` |
-| 3 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaFourierMaximalBarrierControls.lean/declarations/example.md) | 25 | `declaration-track:3fa7cfd572df4e3118dae4e1509e00c67905084e21fa3d56c1b72ed9ee52c29d` |
+| 1 | `def` | [exactFrontier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaFourierMaximalBarrierControls.lean/declarations/exactfrontier.md) | 13 | `declaration-track:42eab4f8dcc2e0db99ee339b77a31323b520796999f263ea1f45ccc395fea562` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaFourierMaximalBarrierControls.lean/declarations/example-source-edition-2.md) | 21 | `declaration-track:c0f35e2368fc1d46726083a3646f78d88ccf34d2a04d0f377892b6f04193cf86` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaFourierMaximalBarrierControls.lean/declarations/example.md) | 25 | `declaration-track:3fa7cfd572df4e3118dae4e1509e00c67905084e21fa3d56c1b72ed9ee52c29d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

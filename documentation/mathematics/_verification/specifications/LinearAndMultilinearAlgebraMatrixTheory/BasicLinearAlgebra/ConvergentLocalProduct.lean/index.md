@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ConvergentLocalProduct.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ConvergentLocalProduct.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ConvergentLocalProduct.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ConvergentLocalProduct.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.LinearAlgebra.Matrix.FiniteLocalProduct`](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteLocalProduct.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.LinearAlgebra.Matrix.FiniteLocalProduct`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteLocalProduct.lean/index.md) — import line 1; pinned internal source present.
 - `Mathlib.Topology.Algebra.InfiniteSum.Field` — import line 2; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [hasProd_inverse_local_factors](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ConvergentLocalProduct.lean/declarations/hasprod-inverse-local-factors.md) | 11 | `result-track:e50d97e44b3d5960564f89e97b92299d920d75f59d728ebcab94df79048ef546` |
-| 2 | `theorem` | [local_product_limits_eq](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ConvergentLocalProduct.lean/declarations/local-product-limits-eq.md) | 26 | `result-track:7412ddd7fc5e7f3512f105ca88bda672525589c2bb8b8b499b2c7970418727ed` |
+| 1 | `theorem` | [hasProd_inverse_local_factors](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ConvergentLocalProduct.lean/declarations/hasprod-inverse-local-factors.md) | 11 | `result-track:e50d97e44b3d5960564f89e97b92299d920d75f59d728ebcab94df79048ef546` |
+| 2 | `theorem` | [local_product_limits_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ConvergentLocalProduct.lean/declarations/local-product-limits-eq.md) | 26 | `result-track:7412ddd7fc5e7f3512f105ca88bda672525589c2bb8b8b499b2c7970418727ed` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

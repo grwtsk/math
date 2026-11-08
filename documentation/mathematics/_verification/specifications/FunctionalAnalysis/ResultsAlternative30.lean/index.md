@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/ResultsAlternative30.lean/index.md) · [Full source](../../../../FunctionalAnalysis/ResultsAlternative30.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ResultsAlternative30.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ResultsAlternative30.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [GeometryCapability.hasInnerProduct](../../../../FunctionalAnalysis/ResultsAlternative30.lean/declarations/geometrycapability-hasinnerproduct.md) | 9 | `declaration-track:fee3037494fb1de986f82a68820cea4e426dc9bd90804e7345fa6b28ba3e3f06` |
+| 1 | `def` | [GeometryCapability.hasInnerProduct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ResultsAlternative30.lean/declarations/geometrycapability-hasinnerproduct.md) | 9 | `declaration-track:fee3037494fb1de986f82a68820cea4e426dc9bd90804e7345fa6b28ba3e3f06` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

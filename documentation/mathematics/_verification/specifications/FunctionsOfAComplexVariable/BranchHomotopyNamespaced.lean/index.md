@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/BranchHomotopyNamespaced.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/BranchHomotopyNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/BranchHomotopyNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/BranchHomotopyNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [coefficientOneForm](../../../../FunctionsOfAComplexVariable/BranchHomotopyNamespaced.lean/declarations/coefficientoneform.md) | 56 | `declaration-track:053438a28520b2dcfaa00e9b3942a6ea9135c1f2fca53258f72a7a2a4155a266` |
-| 2 | `theorem` | [curveIntegral_coefficientOneForm_homotopy](../../../../FunctionsOfAComplexVariable/BranchHomotopyNamespaced.lean/declarations/curveintegral-coefficientoneform-homotopy.md) | 65 | `result-track:cc81332ce34b2ab3d6ac08be78956751bd8cd1effe3d56e502b275c0030187a1` |
-| 3 | `def` | [HasSimplePoleCoefficientAt](../../../../FunctionsOfAComplexVariable/BranchHomotopyNamespaced.lean/declarations/hassimplepolecoefficientat.md) | 96 | `declaration-track:c81d40f99421f89481120263737aefdbc5ccab0fad291d48ab20fff641db5bff` |
-| 4 | `theorem` | [circleIntegral_eq_two_pi_I_mul_of_simplePoleCoefficient](../../../../FunctionsOfAComplexVariable/BranchHomotopyNamespaced.lean/declarations/circleintegral-eq-two-pi-i-mul-of-simplepolecoefficient.md) | 101 | `result-track:ea38533b0546682c1750e1cd68abb2005f2e7bb1c1dc0d4aa8c58d2669e9b33d` |
-| 5 | `theorem` | [circleIntegral_eq_of_singleHole_annulus](../../../../FunctionsOfAComplexVariable/BranchHomotopyNamespaced.lean/declarations/circleintegral-eq-of-singlehole-annulus.md) | 137 | `result-track:97758ee0b96012fc0613c515c6dae13dedc68be28250f3cf94b1eacb885fb70b` |
+| 1 | `def` | [coefficientOneForm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/BranchHomotopyNamespaced.lean/declarations/coefficientoneform.md) | 56 | `declaration-track:053438a28520b2dcfaa00e9b3942a6ea9135c1f2fca53258f72a7a2a4155a266` |
+| 2 | `theorem` | [curveIntegral_coefficientOneForm_homotopy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/BranchHomotopyNamespaced.lean/declarations/curveintegral-coefficientoneform-homotopy.md) | 65 | `result-track:cc81332ce34b2ab3d6ac08be78956751bd8cd1effe3d56e502b275c0030187a1` |
+| 3 | `def` | [HasSimplePoleCoefficientAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/BranchHomotopyNamespaced.lean/declarations/hassimplepolecoefficientat.md) | 96 | `declaration-track:c81d40f99421f89481120263737aefdbc5ccab0fad291d48ab20fff641db5bff` |
+| 4 | `theorem` | [circleIntegral_eq_two_pi_I_mul_of_simplePoleCoefficient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/BranchHomotopyNamespaced.lean/declarations/circleintegral-eq-two-pi-i-mul-of-simplepolecoefficient.md) | 101 | `result-track:ea38533b0546682c1750e1cd68abb2005f2e7bb1c1dc0d4aa8c58d2669e9b33d` |
+| 5 | `theorem` | [circleIntegral_eq_of_singleHole_annulus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/BranchHomotopyNamespaced.lean/declarations/circleintegral-eq-of-singlehole-annulus.md) | 137 | `result-track:97758ee0b96012fc0613c515c6dae13dedc68be28250f3cf94b1eacb885fb70b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

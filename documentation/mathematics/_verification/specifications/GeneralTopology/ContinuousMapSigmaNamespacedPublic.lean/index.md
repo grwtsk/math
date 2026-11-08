@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ContinuousMapSigmaNamespacedPublic.lean/index.md) · [Full source](../../../../GeneralTopology/ContinuousMapSigmaNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousMapSigmaNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousMapSigmaNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [isEmbedding_sigmaMk_comp](../../../../GeneralTopology/ContinuousMapSigmaNamespacedPublic.lean/declarations/isembedding-sigmamk-comp.md) | 55 | `result-track:bb5d753f7e26efd5e2bb0adfa8c848f2e19d72a19b946751cfabe5fb0a301a67` |
-| 2 | `theorem` | [exists_lift_sigma](../../../../GeneralTopology/ContinuousMapSigmaNamespacedPublic.lean/declarations/exists-lift-sigma.md) | 76 | `result-track:5a60e25e6b9c61f32e69bbb5ac36dc7996161acc35f09154d311e9e15cb16bac` |
-| 3 | `def` | [sigmaCodHomeomorph](../../../../GeneralTopology/ContinuousMapSigmaNamespacedPublic.lean/declarations/sigmacodhomeomorph.md) | 91 | `declaration-track:b3403da0527b1358ce9c9ff65d1e3f3d84c14af0357a92007397f1b4731dc43f` |
+| 1 | `theorem` | [isEmbedding_sigmaMk_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousMapSigmaNamespacedPublic.lean/declarations/isembedding-sigmamk-comp.md) | 55 | `result-track:bb5d753f7e26efd5e2bb0adfa8c848f2e19d72a19b946751cfabe5fb0a301a67` |
+| 2 | `theorem` | [exists_lift_sigma](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousMapSigmaNamespacedPublic.lean/declarations/exists-lift-sigma.md) | 76 | `result-track:5a60e25e6b9c61f32e69bbb5ac36dc7996161acc35f09154d311e9e15cb16bac` |
+| 3 | `def` | [sigmaCodHomeomorph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousMapSigmaNamespacedPublic.lean/declarations/sigmacodhomeomorph.md) | 91 | `declaration-track:b3403da0527b1358ce9c9ff65d1e3f3d84c14af0357a92007397f1b4731dc43f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

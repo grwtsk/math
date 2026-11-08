@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/Attempt01ActualF7NormalizedKernel.lean/index.md) · [Full source](../../../../MeasureAndIntegration/Attempt01ActualF7NormalizedKernel.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01ActualF7NormalizedKernel.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01ActualF7NormalizedKernel.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualF7NormalizedKernel](../../../../MeasureAndIntegration/Attempt01ActualF7NormalizedKernel.lean/declarations/actualf7normalizedkernel.md) | 20 | `declaration-track:88733861c75a65ae925e756653a4b3aacc7e5243a22a4b04287ca9da0a276889` |
-| 2 | `theorem` | [actualF7NormalizedKernel_aestronglyMeasurable](../../../../MeasureAndIntegration/Attempt01ActualF7NormalizedKernel.lean/declarations/actualf7normalizedkernel-aestronglymeasurable.md) | 25 | `result-track:6d146d8281b25256fb2d2fd183c264b5e5b2eb3e22af0b3a8c3f482762cb432c` |
-| 3 | `theorem` | [actualF7NormalizedKernel_norm_le](../../../../MeasureAndIntegration/Attempt01ActualF7NormalizedKernel.lean/declarations/actualf7normalizedkernel-norm-le.md) | 33 | `result-track:7b77860792a59271d0a2a3bbf6aadd5348ac3707d8df7eb02ff6949059852739` |
-| 4 | `theorem` | [actualF7NormalizedKernel_integrable](../../../../MeasureAndIntegration/Attempt01ActualF7NormalizedKernel.lean/declarations/actualf7normalizedkernel-integrable.md) | 44 | `result-track:084fb792839a1dfec13553c660ae29865a312ef621ae961616077c29cb651157` |
-| 5 | `theorem` | [density_normalized](../../../../MeasureAndIntegration/Attempt01ActualF7NormalizedKernel.lean/declarations/density-normalized.md) | 50 | `result-track:e72be3cb62eb4ec0d9fcd15104e6f501c15325530bc4d4be1703c99265ab5cfb` |
-| 6 | `theorem` | [actualF7NormalizedKernel_integral_eq_primitive](../../../../MeasureAndIntegration/Attempt01ActualF7NormalizedKernel.lean/declarations/actualf7normalizedkernel-integral-eq-primitive.md) | 59 | `result-track:d6e8f6c0dadd2624ffbd1d6ff96db1f2f875149f5ef432e98d63d2a5066e2663` |
-| 7 | `theorem` | [kernel_tendsto_zero](../../../../MeasureAndIntegration/Attempt01ActualF7NormalizedKernel.lean/declarations/kernel-tendsto-zero.md) | 70 | `result-track:3e4fa758fa3a4d230443ea353b5a14bed73279d0fbc9862739a370736d02f0a8` |
-| 8 | `theorem` | [actualAnchoredXiTailPrimitive_normalized_tendsto_zero](../../../../MeasureAndIntegration/Attempt01ActualF7NormalizedKernel.lean/declarations/actualanchoredxitailprimitive-normalized-tendsto-zero.md) | 89 | `result-track:0a479c9eb8d19475b05d9df5904a28ea80a129ee9622032b28bd301b37ac2c73` |
+| 1 | `def` | [actualF7NormalizedKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01ActualF7NormalizedKernel.lean/declarations/actualf7normalizedkernel.md) | 20 | `declaration-track:88733861c75a65ae925e756653a4b3aacc7e5243a22a4b04287ca9da0a276889` |
+| 2 | `theorem` | [actualF7NormalizedKernel_aestronglyMeasurable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01ActualF7NormalizedKernel.lean/declarations/actualf7normalizedkernel-aestronglymeasurable.md) | 25 | `result-track:6d146d8281b25256fb2d2fd183c264b5e5b2eb3e22af0b3a8c3f482762cb432c` |
+| 3 | `theorem` | [actualF7NormalizedKernel_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01ActualF7NormalizedKernel.lean/declarations/actualf7normalizedkernel-norm-le.md) | 33 | `result-track:7b77860792a59271d0a2a3bbf6aadd5348ac3707d8df7eb02ff6949059852739` |
+| 4 | `theorem` | [actualF7NormalizedKernel_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01ActualF7NormalizedKernel.lean/declarations/actualf7normalizedkernel-integrable.md) | 44 | `result-track:084fb792839a1dfec13553c660ae29865a312ef621ae961616077c29cb651157` |
+| 5 | `theorem` | [density_normalized](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01ActualF7NormalizedKernel.lean/declarations/density-normalized.md) | 50 | `result-track:e72be3cb62eb4ec0d9fcd15104e6f501c15325530bc4d4be1703c99265ab5cfb` |
+| 6 | `theorem` | [actualF7NormalizedKernel_integral_eq_primitive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01ActualF7NormalizedKernel.lean/declarations/actualf7normalizedkernel-integral-eq-primitive.md) | 59 | `result-track:d6e8f6c0dadd2624ffbd1d6ff96db1f2f875149f5ef432e98d63d2a5066e2663` |
+| 7 | `theorem` | [kernel_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01ActualF7NormalizedKernel.lean/declarations/kernel-tendsto-zero.md) | 70 | `result-track:3e4fa758fa3a4d230443ea353b5a14bed73279d0fbc9862739a370736d02f0a8` |
+| 8 | `theorem` | [actualAnchoredXiTailPrimitive_normalized_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01ActualF7NormalizedKernel.lean/declarations/actualanchoredxitailprimitive-normalized-tendsto-zero.md) | 89 | `result-track:0a479c9eb8d19475b05d9df5904a28ea80a129ee9622032b28bd301b37ac2c73` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

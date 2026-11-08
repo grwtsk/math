@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ENatENNRealNamespacedPublic.lean/index.md) · [Full source](../../../../GeneralTopology/ENatENNRealNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ENatENNRealNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ENatENNRealNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [continuous_toENNReal](../../../../GeneralTopology/ENatENNRealNamespacedPublic.lean/declarations/continuous-toennreal.md) | 36 | `result-track:fe789f52dca4aa47bee0b8e0e03a14f891733eb6bdf0b85c83315e54274d3596` |
-| 2 | `theorem` | [isClosedEmbedding_toENNReal](../../../../GeneralTopology/ENatENNRealNamespacedPublic.lean/declarations/isclosedembedding-toennreal.md) | 41 | `result-track:51507f1a50cef1116400b26e07ecf0732268174575e7771236f4f672ce2e41af` |
+| 1 | `theorem` | [continuous_toENNReal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ENatENNRealNamespacedPublic.lean/declarations/continuous-toennreal.md) | 36 | `result-track:fe789f52dca4aa47bee0b8e0e03a14f891733eb6bdf0b85c83315e54274d3596` |
+| 2 | `theorem` | [isClosedEmbedding_toENNReal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ENatENNRealNamespacedPublic.lean/declarations/isclosedembedding-toennreal.md) | 41 | `result-track:51507f1a50cef1116400b26e07ecf0732268174575e7771236f4f672ce2e41af` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

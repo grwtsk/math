@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/AddCommGrpCatNamespacedPublic.lean/index.md) · [Full source](../../../../GeneralTopology/AddCommGrpCatNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AddCommGrpCatNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AddCommGrpCatNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Presheaf.sections_exact_of_exact](../../../../GeneralTopology/AddCommGrpCatNamespacedPublic.lean/declarations/presheaf-sections-exact-of-exact.md) | 37 | `result-track:b46a146e4a27fafa4654c281fd8f407087b2943cbf0af202d16459781010966e` |
-| 2 | `lemma` | [Sheaf.sections_exact_of_left_exact](../../../../GeneralTopology/AddCommGrpCatNamespacedPublic.lean/declarations/sheaf-sections-exact-of-left-exact.md) | 46 | `result-track:7029a46e543c8cde960ebb0f5b96b78ef51ce755641cd770a5147f02c173d738` |
-| 3 | `lemma` | [Presheaf.restrict_sum](../../../../GeneralTopology/AddCommGrpCatNamespacedPublic.lean/declarations/presheaf-restrict-sum.md) | 54 | `result-track:ed4c929c46956f9c224c3c7868cb7805dd0ebe5ea188440cd6d4581c43c45112` |
+| 1 | `theorem` | [Presheaf.sections_exact_of_exact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AddCommGrpCatNamespacedPublic.lean/declarations/presheaf-sections-exact-of-exact.md) | 37 | `result-track:b46a146e4a27fafa4654c281fd8f407087b2943cbf0af202d16459781010966e` |
+| 2 | `lemma` | [Sheaf.sections_exact_of_left_exact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AddCommGrpCatNamespacedPublic.lean/declarations/sheaf-sections-exact-of-left-exact.md) | 46 | `result-track:7029a46e543c8cde960ebb0f5b96b78ef51ce755641cd770a5147f02c173d738` |
+| 3 | `lemma` | [Presheaf.restrict_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AddCommGrpCatNamespacedPublic.lean/declarations/presheaf-restrict-sum.md) | 54 | `result-track:ed4c929c46956f9c224c3c7868cb7805dd0ebe5ea188440cd6d4581c43c45112` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/StarMatrixNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/StarMatrixNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/StarMatrixNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/StarMatrixNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,9 +60,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `macro_rules` | [(anonymous)](../../../../FunctionalAnalysis/StarMatrixNamespaced.lean/declarations/macro-rules.md) | 30 | `declaration-track:5153c3fa4f53b43b8727ae909cccd48ace473711330c8af9667ee79100c26f4f` |
-| 2 | `theorem` | [entry_norm_bound_of_unitary](../../../../FunctionalAnalysis/StarMatrixNamespaced.lean/declarations/entry-norm-bound-of-unitary.md) | 38 | `result-track:2eec5cd67b78bf6a24bddf871e35f2362c3ca4b82d10b6f2a2e4c50c0ed05f0a` |
-| 3 | `theorem` | [entrywise_sup_norm_bound_of_unitary](../../../../FunctionalAnalysis/StarMatrixNamespaced.lean/declarations/entrywise-sup-norm-bound-of-unitary.md) | 72 | `result-track:222a5cba3c4b2176da31063a44e1434ca35aa23335bf5ea9c992131f6e4ab15a` |
+| 1 | `macro_rules` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/StarMatrixNamespaced.lean/declarations/macro-rules.md) | 30 | `declaration-track:5153c3fa4f53b43b8727ae909cccd48ace473711330c8af9667ee79100c26f4f` |
+| 2 | `theorem` | [entry_norm_bound_of_unitary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/StarMatrixNamespaced.lean/declarations/entry-norm-bound-of-unitary.md) | 38 | `result-track:2eec5cd67b78bf6a24bddf871e35f2362c3ca4b82d10b6f2a2e4c50c0ed05f0a` |
+| 3 | `theorem` | [entrywise_sup_norm_bound_of_unitary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/StarMatrixNamespaced.lean/declarations/entrywise-sup-norm-bound-of-unitary.md) | 72 | `result-track:222a5cba3c4b2176da31063a44e1434ca35aa23335bf5ea9c992131f6e4ab15a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceJointWorkSupportAlternative.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceJointWorkSupportAlternative.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceJointWorkSupportAlternative.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceJointWorkSupportAlternative.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualJointSupportUpper](../../../../MeasureAndIntegration/SourceJointWorkSupportAlternative.lean/declarations/actualjointsupportupper.md) | 25 | `declaration-track:bbaa291e6ef66233364dcfda644ca1b5646bf6a8badfbabe8f0364743dcc7cfa` |
-| 2 | `theorem` | [actual_jointTest_zero_of_support_upper_le](../../../../MeasureAndIntegration/SourceJointWorkSupportAlternative.lean/declarations/actual-jointtest-zero-of-support-upper-le.md) | 28 | `result-track:731ae7ce9bd5bd57a2cdf64b371e1ef5f4c3ef2fc719aae09fe08189213057c0` |
-| 3 | `theorem` | [actual_jointTest_deriv_zero_of_support_upper_le](../../../../MeasureAndIntegration/SourceJointWorkSupportAlternative.lean/declarations/actual-jointtest-deriv-zero-of-support-upper-le.md) | 50 | `result-track:63df29d315a16d698a56842ccea4f04d283c3d0af4a3850c17411f8381074f75` |
-| 4 | `theorem` | [actualJointSupportUpper_le_log_sourceCutoff](../../../../MeasureAndIntegration/SourceJointWorkSupportAlternative.lean/declarations/actualjointsupportupper-le-log-sourcecutoff.md) | 62 | `result-track:64f55ecd759b5018e45127861b3bdef7ce366d421ed341c14a2f35bcf5eeb2b8` |
-| 5 | `theorem` | [shiftedWork_intervalIntegrable](../../../../MeasureAndIntegration/SourceJointWorkSupportAlternative.lean/declarations/shiftedwork-intervalintegrable.md) | 81 | `result-track:8c8fbb8c0a32763ce60d4d4202e8d8a7a2e5ea86a85ab950fec1dbbff7e1ff8a` |
-| 6 | `theorem` | [centeredErrorWork_eq_support_integral](../../../../MeasureAndIntegration/SourceJointWorkSupportAlternative.lean/declarations/centerederrorwork-eq-support-integral.md) | 94 | `result-track:4b3590931d29730580c7d3ca1b623ef1ea9113b60f4e54196e6a1f04028c809d` |
-| 7 | `theorem` | [jointMangoldtErrorWork_eq_support_integral](../../../../MeasureAndIntegration/SourceJointWorkSupportAlternative.lean/declarations/jointmangoldterrorwork-eq-support-integral.md) | 117 | `result-track:377b048e233238043b6d7b0802bd0c3e8df40e13e4459efffe438dbf9c80436c` |
-| 8 | `theorem` | [centeredErrorWork_zero_of_support_le_lower](../../../../MeasureAndIntegration/SourceJointWorkSupportAlternative.lean/declarations/centerederrorwork-zero-of-support-le-lower.md) | 125 | `result-track:f23c9283f6807e39b547729f262472702bd8ff4579406ac7542010dee2fe791b` |
+| 1 | `def` | [actualJointSupportUpper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceJointWorkSupportAlternative.lean/declarations/actualjointsupportupper.md) | 25 | `declaration-track:bbaa291e6ef66233364dcfda644ca1b5646bf6a8badfbabe8f0364743dcc7cfa` |
+| 2 | `theorem` | [actual_jointTest_zero_of_support_upper_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceJointWorkSupportAlternative.lean/declarations/actual-jointtest-zero-of-support-upper-le.md) | 28 | `result-track:731ae7ce9bd5bd57a2cdf64b371e1ef5f4c3ef2fc719aae09fe08189213057c0` |
+| 3 | `theorem` | [actual_jointTest_deriv_zero_of_support_upper_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceJointWorkSupportAlternative.lean/declarations/actual-jointtest-deriv-zero-of-support-upper-le.md) | 50 | `result-track:63df29d315a16d698a56842ccea4f04d283c3d0af4a3850c17411f8381074f75` |
+| 4 | `theorem` | [actualJointSupportUpper_le_log_sourceCutoff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceJointWorkSupportAlternative.lean/declarations/actualjointsupportupper-le-log-sourcecutoff.md) | 62 | `result-track:64f55ecd759b5018e45127861b3bdef7ce366d421ed341c14a2f35bcf5eeb2b8` |
+| 5 | `theorem` | [shiftedWork_intervalIntegrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceJointWorkSupportAlternative.lean/declarations/shiftedwork-intervalintegrable.md) | 81 | `result-track:8c8fbb8c0a32763ce60d4d4202e8d8a7a2e5ea86a85ab950fec1dbbff7e1ff8a` |
+| 6 | `theorem` | [centeredErrorWork_eq_support_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceJointWorkSupportAlternative.lean/declarations/centerederrorwork-eq-support-integral.md) | 94 | `result-track:4b3590931d29730580c7d3ca1b623ef1ea9113b60f4e54196e6a1f04028c809d` |
+| 7 | `theorem` | [jointMangoldtErrorWork_eq_support_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceJointWorkSupportAlternative.lean/declarations/jointmangoldterrorwork-eq-support-integral.md) | 117 | `result-track:377b048e233238043b6d7b0802bd0c3e8df40e13e4459efffe438dbf9c80436c` |
+| 8 | `theorem` | [centeredErrorWork_zero_of_support_le_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceJointWorkSupportAlternative.lean/declarations/centerederrorwork-zero-of-support-le-lower.md) | 125 | `result-track:f23c9283f6807e39b547729f262472702bd8ff4579406ac7542010dee2fe791b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/NonzeroFirstMomentSampling.lean/index.md) · [Full source](../../../../MeasureAndIntegration/NonzeroFirstMomentSampling.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NonzeroFirstMomentSampling.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NonzeroFirstMomentSampling.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [half_moment_transport_with_firstMoment](../../../../MeasureAndIntegration/NonzeroFirstMomentSampling.lean/declarations/half-moment-transport-with-firstmoment.md) | 17 | `result-track:2f7ea5427915d3188f53716913b7049325daf29b0fee1a4d76c6018959a29087` |
-| 2 | `theorem` | [sampling_integral_sub_firstMoment](../../../../MeasureAndIntegration/NonzeroFirstMomentSampling.lean/declarations/sampling-integral-sub-firstmoment.md) | 43 | `result-track:bc391040ed4dcbcbcdcb28fe4f7bfcd68ddb553f0e1e4390dd7edd33e9ff5a02` |
-| 3 | `theorem` | [sampling_integral_sub_firstMoment_abs_le](../../../../MeasureAndIntegration/NonzeroFirstMomentSampling.lean/declarations/sampling-integral-sub-firstmoment-abs-le.md) | 66 | `result-track:48f493429247faccb60fae654a4d4d0d632be6b2e525dc946e2c03d61b5ec9a1` |
-| 4 | `theorem` | [sampling_sum_sub_firstMoment_abs_le](../../../../MeasureAndIntegration/NonzeroFirstMomentSampling.lean/declarations/sampling-sum-sub-firstmoment-abs-le.md) | 79 | `result-track:6c226195f80773f685980a05b9b5793857b774277b2a69cc157ff3377022a379` |
+| 1 | `theorem` | [half_moment_transport_with_firstMoment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NonzeroFirstMomentSampling.lean/declarations/half-moment-transport-with-firstmoment.md) | 17 | `result-track:2f7ea5427915d3188f53716913b7049325daf29b0fee1a4d76c6018959a29087` |
+| 2 | `theorem` | [sampling_integral_sub_firstMoment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NonzeroFirstMomentSampling.lean/declarations/sampling-integral-sub-firstmoment.md) | 43 | `result-track:bc391040ed4dcbcbcdcb28fe4f7bfcd68ddb553f0e1e4390dd7edd33e9ff5a02` |
+| 3 | `theorem` | [sampling_integral_sub_firstMoment_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NonzeroFirstMomentSampling.lean/declarations/sampling-integral-sub-firstmoment-abs-le.md) | 66 | `result-track:48f493429247faccb60fae654a4d4d0d632be6b2e525dc946e2c03d61b5ec9a1` |
+| 4 | `theorem` | [sampling_sum_sub_firstMoment_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NonzeroFirstMomentSampling.lean/declarations/sampling-sum-sub-firstmoment-abs-le.md) | 79 | `result-track:6c226195f80773f685980a05b9b5793857b774277b2a69cc157ff3377022a379` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

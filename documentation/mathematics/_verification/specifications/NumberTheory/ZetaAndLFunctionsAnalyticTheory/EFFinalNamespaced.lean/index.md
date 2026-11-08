@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EFFinalNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EFFinalNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EFFinalNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EFFinalNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,10 +61,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [lineFactsW](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EFFinalNamespaced.lean/declarations/linefactsw.md) | 39 | `result-track:6551f64b2351f69fd54f8d6a63168f54d14de4d71bfcb5aea18c00d3131031f8` |
-| 2 | `theorem` | [contourFactsW](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EFFinalNamespaced.lean/declarations/contourfactsw.md) | 46 | `result-track:d8b11aed98904c4fa2e1c8a2d807ed7046b285b965ca3482f177900dccdcc13a` |
-| 3 | `theorem` | [coeffFactsC](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EFFinalNamespaced.lean/declarations/coefffactsc.md) | 55 | `result-track:6c90b8d4759e5ea5280212facfa9407327eb3cdb15ff1bf561eff0162c05a59d` |
-| 4 | `theorem` | [wEF](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EFFinalNamespaced.lean/declarations/wef.md) | 71 | `result-track:0a6ceae5c08edbd0263cf0b6d9a31f7a77b3a598f7edf7489bc1c06e6193b46f` |
+| 1 | `theorem` | [lineFactsW](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EFFinalNamespaced.lean/declarations/linefactsw.md) | 39 | `result-track:6551f64b2351f69fd54f8d6a63168f54d14de4d71bfcb5aea18c00d3131031f8` |
+| 2 | `theorem` | [contourFactsW](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EFFinalNamespaced.lean/declarations/contourfactsw.md) | 46 | `result-track:d8b11aed98904c4fa2e1c8a2d807ed7046b285b965ca3482f177900dccdcc13a` |
+| 3 | `theorem` | [coeffFactsC](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EFFinalNamespaced.lean/declarations/coefffactsc.md) | 55 | `result-track:6c90b8d4759e5ea5280212facfa9407327eb3cdb15ff1bf561eff0162c05a59d` |
+| 4 | `theorem` | [wEF](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EFFinalNamespaced.lean/declarations/wef.md) | 71 | `result-track:0a6ceae5c08edbd0263cf0b6d9a31f7a77b3a598f7edf7489bc1c06e6193b46f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

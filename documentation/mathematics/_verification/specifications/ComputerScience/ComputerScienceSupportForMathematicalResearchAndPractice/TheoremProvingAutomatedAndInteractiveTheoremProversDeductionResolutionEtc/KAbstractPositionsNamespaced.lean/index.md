@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/KAbstractPositionsNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/KAbstractPositionsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/KAbstractPositionsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/KAbstractPositionsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,9 +60,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [kabstractPositions](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/KAbstractPositionsNamespaced.lean/declarations/kabstractpositions.md) | 39 | `declaration-track:71c06af3f38f9a5e451305d23c2f12f8c18840cabf8bd25aa7dd80189c39b1f0` |
-| 2 | `def` | [viewKAbstractSubExpr](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/KAbstractPositionsNamespaced.lean/declarations/viewkabstractsubexpr.md) | 77 | `declaration-track:3e70c5a5c6ba4f5743c649c823d0c7c36dfbb5db2d173ab997aba5ed521e7779` |
-| 3 | `def` | [kabstractIsTypeCorrect](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/KAbstractPositionsNamespaced.lean/declarations/kabstractistypecorrect.md) | 95 | `declaration-track:80da9ec669b4e264c2f5c27c7898e5295ed59e96507c2a343fb47ceaad4e5779` |
+| 1 | `def` | [kabstractPositions](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/KAbstractPositionsNamespaced.lean/declarations/kabstractpositions.md) | 39 | `declaration-track:71c06af3f38f9a5e451305d23c2f12f8c18840cabf8bd25aa7dd80189c39b1f0` |
+| 2 | `def` | [viewKAbstractSubExpr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/KAbstractPositionsNamespaced.lean/declarations/viewkabstractsubexpr.md) | 77 | `declaration-track:3e70c5a5c6ba4f5743c649c823d0c7c36dfbb5db2d173ab997aba5ed521e7779` |
+| 3 | `def` | [kabstractIsTypeCorrect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/KAbstractPositionsNamespaced.lean/declarations/kabstractistypecorrect.md) | 95 | `declaration-track:80da9ec669b4e264c2f5c27c7898e5295ed59e96507c2a343fb47ceaad4e5779` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

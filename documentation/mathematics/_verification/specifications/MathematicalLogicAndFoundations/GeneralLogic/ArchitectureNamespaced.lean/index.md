@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ArchitectureNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ArchitectureNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ArchitectureNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ArchitectureNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [EpistemicReceipt](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ArchitectureNamespaced.lean/declarations/epistemicreceipt.md) | 17 | `declaration-track:edb40acf153b69f2dac88584ed2b7b7b63df3b84a92a9ae1ace68ffb458a2084` |
-| 2 | `def` | [EpistemicReceipt.accepted](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ArchitectureNamespaced.lean/declarations/epistemicreceipt-accepted.md) | 29 | `declaration-track:9194781e6f075d47106dfd97a02eb53df427f412460ef5b9d268b39f76d37836` |
-| 3 | `def` | [EpistemicReceipt.has_adjunction](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ArchitectureNamespaced.lean/declarations/epistemicreceipt-has-adjunction.md) | 34 | `declaration-track:25aa074780d500b7c7e702b5444aa3f60db91898a9615c9da983b5e5390e223b` |
-| 4 | `theorem` | [EpistemicReceipt.not_claim_bearing_if_accepted](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ArchitectureNamespaced.lean/declarations/epistemicreceipt-not-claim-bearing-if-accepted.md) | 41 | `result-track:44c0eba086949689706c1929f04a2f935f331f40eb75473e088fad9b766677a3` |
+| 1 | `structure` | [EpistemicReceipt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ArchitectureNamespaced.lean/declarations/epistemicreceipt.md) | 17 | `declaration-track:edb40acf153b69f2dac88584ed2b7b7b63df3b84a92a9ae1ace68ffb458a2084` |
+| 2 | `def` | [EpistemicReceipt.accepted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ArchitectureNamespaced.lean/declarations/epistemicreceipt-accepted.md) | 29 | `declaration-track:9194781e6f075d47106dfd97a02eb53df427f412460ef5b9d268b39f76d37836` |
+| 3 | `def` | [EpistemicReceipt.has_adjunction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ArchitectureNamespaced.lean/declarations/epistemicreceipt-has-adjunction.md) | 34 | `declaration-track:25aa074780d500b7c7e702b5444aa3f60db91898a9615c9da983b5e5390e223b` |
+| 4 | `theorem` | [EpistemicReceipt.not_claim_bearing_if_accepted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ArchitectureNamespaced.lean/declarations/epistemicreceipt-not-claim-bearing-if-accepted.md) | 41 | `result-track:44c0eba086949689706c1929f04a2f935f331f40eb75473e088fad9b766677a3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

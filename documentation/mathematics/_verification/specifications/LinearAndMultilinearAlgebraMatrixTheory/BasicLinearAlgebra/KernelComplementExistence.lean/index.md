@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KernelComplementExistence.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KernelComplementExistence.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KernelComplementExistence.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KernelComplementExistence.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Logic.InformationLoss.KernelCoordinateCertificate`](../../../../../GroupTheoryAndGeneralizations/KernelCoordinateCertificate.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.Logic.InformationLoss.KernelCoordinateCertificate`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/KernelCoordinateCertificate.lean/index.md) — import line 6; pinned internal source present.
 - `Mathlib.LinearAlgebra.Projection` — import line 7; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_kernel_retraction_of_isCompl](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KernelComplementExistence.lean/declarations/exists-kernel-retraction-of-iscompl.md) | 33 | `result-track:a2d4635efa432147df3ef92c9e3ab8ab2309252b13e6ee6a67971887868de7b7` |
-| 2 | `theorem` | [exists_sharp_measurement_of_isCompl](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KernelComplementExistence.lean/declarations/exists-sharp-measurement-of-iscompl.md) | 46 | `result-track:ccce821743eb5963ccaae0576f44bce09032441001cd6c411807a92084d5b5dd` |
+| 1 | `theorem` | [exists_kernel_retraction_of_isCompl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KernelComplementExistence.lean/declarations/exists-kernel-retraction-of-iscompl.md) | 33 | `result-track:a2d4635efa432147df3ef92c9e3ab8ab2309252b13e6ee6a67971887868de7b7` |
+| 2 | `theorem` | [exists_sharp_measurement_of_isCompl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KernelComplementExistence.lean/declarations/exists-sharp-measurement-of-iscompl.md) | 46 | `result-track:ccce821743eb5963ccaae0576f44bce09032441001cd6c411807a92084d5b5dd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

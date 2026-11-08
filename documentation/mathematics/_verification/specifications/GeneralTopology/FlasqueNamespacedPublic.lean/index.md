@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/FlasqueNamespacedPublic.lean/index.md) · [Full source](../../../../GeneralTopology/FlasqueNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FlasqueNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FlasqueNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [IsFlasque](../../../../GeneralTopology/FlasqueNamespacedPublic.lean/declarations/isflasque.md) | 56 | `declaration-track:af491c0adc8830297321451a617343a2aedc78f03209f1da9a82803f49f56d55` |
-| 2 | `instance` | [pushforward_isFlasque](../../../../GeneralTopology/FlasqueNamespacedPublic.lean/declarations/pushforward-isflasque-source-edition-2.md) | 64 | `declaration-track:421be8898180f4f83fdf0967689b2d11705b6b611af547d049e69dac881fd3b1` |
-| 3 | `abbrev` | [IsFlasque](../../../../GeneralTopology/FlasqueNamespacedPublic.lean/declarations/isflasque-source-edition-2.md) | 77 | `declaration-track:dd6df23d7f8bb6646f4b3cc5c098b9f26d551619b878172f01244a412abf6858` |
-| 4 | `instance` | [pushforward_isFlasque](../../../../GeneralTopology/FlasqueNamespacedPublic.lean/declarations/pushforward-isflasque.md) | 81 | `declaration-track:14b5f83723774c131cb8402c7b7638393f8d2092f319c9bb7b5314836d1a8ee4` |
-| 5 | `abbrev` | [Under](../../../../GeneralTopology/FlasqueNamespacedPublic.lean/declarations/under.md) | 89 | `declaration-track:d828597bc5d2f1e60eb2418c386d4391ce3de1e9bd4024eb7337e2290be152dc` |
-| 6 | `lemma` | [structured_arrows_elements_sheaf_chains_bounded](../../../../GeneralTopology/FlasqueNamespacedPublic.lean/declarations/structured-arrows-elements-sheaf-chains-bounded.md) | 94 | `result-track:44d8837928711ef16a3c2c924defa2a98efb5936f6d9c56df66f7a64cb2d765f` |
-| 7 | `theorem` | [epi_of_shortExact](../../../../GeneralTopology/FlasqueNamespacedPublic.lean/declarations/epi-of-shortexact.md) | 119 | `result-track:476147b655126fac83b0cec7ed9f1a373ab77533b79d9c522c4e083a9c1d1167` |
-| 8 | `theorem` | [of_shortExact_of_isFlasque₁₂](../../../../GeneralTopology/FlasqueNamespacedPublic.lean/declarations/of-shortexact-of-isflasque.md) | 187 | `result-track:cedbb8e684cbac4979e0aba23205d87cbdbde7478e917fb68a79e068048498ed` |
-| 9 | `theorem` | [isFlasque_skyscraperSheaf_of_epi_from](../../../../GeneralTopology/FlasqueNamespacedPublic.lean/declarations/isflasque-skyscrapersheaf-of-epi-from.md) | 202 | `result-track:7e9166b8fd95afcb47040a0336a783febe6d3f9ba5251bd903f84aeeabc5424b` |
-| 10 | `theorem` | [isFlasque_skyscraperSheaf_of_hasZeroObject](../../../../GeneralTopology/FlasqueNamespacedPublic.lean/declarations/isflasque-skyscrapersheaf-of-haszeroobject.md) | 222 | `result-track:8fb984a4933b3a88d3b287c1348e3087ed1c3b4e65b3c8eb6da3a56ea94ccf73` |
+| 1 | `class` | [IsFlasque](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FlasqueNamespacedPublic.lean/declarations/isflasque.md) | 56 | `declaration-track:af491c0adc8830297321451a617343a2aedc78f03209f1da9a82803f49f56d55` |
+| 2 | `instance` | [pushforward_isFlasque](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FlasqueNamespacedPublic.lean/declarations/pushforward-isflasque-source-edition-2.md) | 64 | `declaration-track:421be8898180f4f83fdf0967689b2d11705b6b611af547d049e69dac881fd3b1` |
+| 3 | `abbrev` | [IsFlasque](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FlasqueNamespacedPublic.lean/declarations/isflasque-source-edition-2.md) | 77 | `declaration-track:dd6df23d7f8bb6646f4b3cc5c098b9f26d551619b878172f01244a412abf6858` |
+| 4 | `instance` | [pushforward_isFlasque](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FlasqueNamespacedPublic.lean/declarations/pushforward-isflasque.md) | 81 | `declaration-track:14b5f83723774c131cb8402c7b7638393f8d2092f319c9bb7b5314836d1a8ee4` |
+| 5 | `abbrev` | [Under](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FlasqueNamespacedPublic.lean/declarations/under.md) | 89 | `declaration-track:d828597bc5d2f1e60eb2418c386d4391ce3de1e9bd4024eb7337e2290be152dc` |
+| 6 | `lemma` | [structured_arrows_elements_sheaf_chains_bounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FlasqueNamespacedPublic.lean/declarations/structured-arrows-elements-sheaf-chains-bounded.md) | 94 | `result-track:44d8837928711ef16a3c2c924defa2a98efb5936f6d9c56df66f7a64cb2d765f` |
+| 7 | `theorem` | [epi_of_shortExact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FlasqueNamespacedPublic.lean/declarations/epi-of-shortexact.md) | 119 | `result-track:476147b655126fac83b0cec7ed9f1a373ab77533b79d9c522c4e083a9c1d1167` |
+| 8 | `theorem` | [of_shortExact_of_isFlasque₁₂](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FlasqueNamespacedPublic.lean/declarations/of-shortexact-of-isflasque.md) | 187 | `result-track:cedbb8e684cbac4979e0aba23205d87cbdbde7478e917fb68a79e068048498ed` |
+| 9 | `theorem` | [isFlasque_skyscraperSheaf_of_epi_from](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FlasqueNamespacedPublic.lean/declarations/isflasque-skyscrapersheaf-of-epi-from.md) | 202 | `result-track:7e9166b8fd95afcb47040a0336a783febe6d3f9ba5251bd903f84aeeabc5424b` |
+| 10 | `theorem` | [isFlasque_skyscraperSheaf_of_hasZeroObject](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FlasqueNamespacedPublic.lean/declarations/isflasque-skyscrapersheaf-of-haszeroobject.md) | 222 | `result-track:8fb984a4933b3a88d3b287c1348e3087ed1c3b4e65b3c8eb6da3a56ea94ccf73` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

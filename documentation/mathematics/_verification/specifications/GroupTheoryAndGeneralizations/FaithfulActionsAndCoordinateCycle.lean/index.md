@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/FaithfulActionsAndCoordinateCycle.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/FaithfulActionsAndCoordinateCycle.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FaithfulActionsAndCoordinateCycle.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FaithfulActionsAndCoordinateCycle.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/FaithfulActionsAndCoordinateCycle.lean/declarations/example.md) | 39 | `declaration-track:18d4b6a006cec5c8845be4fac824df71f4aa182b635d4840173129409e03a8c0` |
-| 2 | `example` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/FaithfulActionsAndCoordinateCycle.lean/declarations/example-source-edition-3.md) | 43 | `declaration-track:e31cdd6d51ba70c3cf2e30fd863dac18c71a5db919b282cce9b18471d8811125` |
-| 3 | `def` | [symmetryRotate3Indices](../../../../GroupTheoryAndGeneralizations/FaithfulActionsAndCoordinateCycle.lean/declarations/symmetryrotate3indices.md) | 50 | `declaration-track:21fbcab60b1d4ae7fa13409fe4f07e2d826a5b5ac441dee8808c61d930bb66ae` |
-| 4 | `def` | [symmetryRotate3](../../../../GroupTheoryAndGeneralizations/FaithfulActionsAndCoordinateCycle.lean/declarations/symmetryrotate3.md) | 54 | `declaration-track:f3ba63cb84333a09be2c6daca0e4e9554e0516f84b26be0f866a381cc92753d1` |
-| 5 | `example` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/FaithfulActionsAndCoordinateCycle.lean/declarations/example-source-edition-2.md) | 57 | `declaration-track:199f57738038621d0522b4b8a9445ea365831a2de4ad52f5adc6b310c58b5288` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FaithfulActionsAndCoordinateCycle.lean/declarations/example.md) | 39 | `declaration-track:18d4b6a006cec5c8845be4fac824df71f4aa182b635d4840173129409e03a8c0` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FaithfulActionsAndCoordinateCycle.lean/declarations/example-source-edition-3.md) | 43 | `declaration-track:e31cdd6d51ba70c3cf2e30fd863dac18c71a5db919b282cce9b18471d8811125` |
+| 3 | `def` | [symmetryRotate3Indices](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FaithfulActionsAndCoordinateCycle.lean/declarations/symmetryrotate3indices.md) | 50 | `declaration-track:21fbcab60b1d4ae7fa13409fe4f07e2d826a5b5ac441dee8808c61d930bb66ae` |
+| 4 | `def` | [symmetryRotate3](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FaithfulActionsAndCoordinateCycle.lean/declarations/symmetryrotate3.md) | 54 | `declaration-track:f3ba63cb84333a09be2c6daca0e4e9554e0516f84b26be0f866a381cc92753d1` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FaithfulActionsAndCoordinateCycle.lean/declarations/example-source-edition-2.md) | 57 | `declaration-track:199f57738038621d0522b4b8a9445ea365831a2de4ad52f5adc6b310c58b5288` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

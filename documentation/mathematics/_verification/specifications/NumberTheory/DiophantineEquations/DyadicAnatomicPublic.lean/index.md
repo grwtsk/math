@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/DiophantineEquations/DyadicAnatomicPublic.lean/index.md) · [Full source](../../../../../NumberTheory/DiophantineEquations/DyadicAnatomicPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/DyadicAnatomicPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/DyadicAnatomicPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.DyadicAnatomicCover`](../../../../../NumberTheory/DiophantineEquations/DyadicAnatomicCover.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.DyadicAnatomicCover`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/DyadicAnatomicCover.lean/index.md) — import line 2; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [supportProduct_dvd_monomial_public](../../../../../NumberTheory/DiophantineEquations/DyadicAnatomicPublic.lean/declarations/supportproduct-dvd-monomial-public.md) | 17 | `result-track:de267725b27a546e3e54230cd29dd3456dba7a448184d08fb5b67c24e1801708` |
-| 2 | `theorem` | [carrierA_dvd_totalA](../../../../../NumberTheory/DiophantineEquations/DyadicAnatomicPublic.lean/declarations/carriera-dvd-totala.md) | 24 | `result-track:f9b4bfb0e682c80f5801f10b3df336d6f8488150d721b2cece7bdca4abe55f21` |
-| 3 | `theorem` | [carrierB_dvd_totalB](../../../../../NumberTheory/DiophantineEquations/DyadicAnatomicPublic.lean/declarations/carrierb-dvd-totalb.md) | 28 | `result-track:c4f5bb78971931d3aa40b8983e07d935fcc0da3a83869cfbb14a7988a8b85701` |
-| 4 | `theorem` | [carrierC_dvd_totalC](../../../../../NumberTheory/DiophantineEquations/DyadicAnatomicPublic.lean/declarations/carrierc-dvd-totalc.md) | 32 | `result-track:9c48dee27ab9207831fc4f020a16af94fa7fc7404e4c66f2cf828b722e781186` |
-| 5 | `theorem` | [residual_le_cap](../../../../../NumberTheory/DiophantineEquations/DyadicAnatomicPublic.lean/declarations/residual-le-cap.md) | 36 | `result-track:0e8ca5ae7bfb9d937c61b55ccfcb62944eef7ba385685acf716b7976735aa7d1` |
+| 1 | `theorem` | [supportProduct_dvd_monomial_public](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/DyadicAnatomicPublic.lean/declarations/supportproduct-dvd-monomial-public.md) | 17 | `result-track:de267725b27a546e3e54230cd29dd3456dba7a448184d08fb5b67c24e1801708` |
+| 2 | `theorem` | [carrierA_dvd_totalA](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/DyadicAnatomicPublic.lean/declarations/carriera-dvd-totala.md) | 24 | `result-track:f9b4bfb0e682c80f5801f10b3df336d6f8488150d721b2cece7bdca4abe55f21` |
+| 3 | `theorem` | [carrierB_dvd_totalB](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/DyadicAnatomicPublic.lean/declarations/carrierb-dvd-totalb.md) | 28 | `result-track:c4f5bb78971931d3aa40b8983e07d935fcc0da3a83869cfbb14a7988a8b85701` |
+| 4 | `theorem` | [carrierC_dvd_totalC](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/DyadicAnatomicPublic.lean/declarations/carrierc-dvd-totalc.md) | 32 | `result-track:9c48dee27ab9207831fc4f020a16af94fa7fc7404e4c66f2cf828b722e781186` |
+| 5 | `theorem` | [residual_le_cap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/DyadicAnatomicPublic.lean/declarations/residual-le-cap.md) | 36 | `result-track:0e8ca5ae7bfb9d937c61b55ccfcb62944eef7ba385685acf716b7976735aa7d1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

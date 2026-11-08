@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/Address.lean/index.md) · [Full source](../../../../Combinatorics/Address.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Address.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Address.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,23 +57,23 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [Address](../../../../Combinatorics/Address.lean/declarations/address.md) | 22 | `declaration-track:34e071387386c34c4815410e8e4cf78aa4c3aed2d78dfc7f99fc4805a8b1a257` |
-| 2 | `def` | [Prefix](../../../../Combinatorics/Address.lean/declarations/prefix.md) | 25 | `declaration-track:bfaa51acf163bc4ffd43e2e7ed9957dab139ea714b83f4b28b065899be4731fc` |
-| 3 | `def` | [prefixDecidable](../../../../Combinatorics/Address.lean/declarations/prefixdecidable.md) | 30 | `declaration-track:1babd46f002b46b966df2e6c9972865ec890be5a09eecc5c88a6c2fd2bacd363` |
-| 4 | `instance` | [(anonymous)](../../../../Combinatorics/Address.lean/declarations/instance.md) | 39 | `declaration-track:cb6934c5162024a07f5474f39b3ef7d996a77da05c6d05d3e7b81bc210eb4b86` |
-| 5 | `theorem` | [prefix_nil](../../../../Combinatorics/Address.lean/declarations/prefix-nil.md) | 41 | `result-track:07440f1e00358e97e00f6fb4bba7405a492a4f102e24b3608eb04857c331a759` |
-| 6 | `theorem` | [prefix_refl](../../../../Combinatorics/Address.lean/declarations/prefix-refl.md) | 43 | `result-track:f5149b32dd441e71aed40eda916601e9207dd207acdaffc2d899f91d274ba16c` |
-| 7 | `theorem` | [prefix_trans](../../../../Combinatorics/Address.lean/declarations/prefix-trans.md) | 47 | `result-track:ef1b7a31b4431ac1778f25b4ca0053a0e982b7273ae76e3e22ab4ee5017a832f` |
-| 8 | `theorem` | [prefix_antisymm](../../../../Combinatorics/Address.lean/declarations/prefix-antisymm.md) | 59 | `result-track:88b99ae80cb1fbe2484c7a0ed09e73cf30d58c878c11e15b4d082c2b27df202f` |
-| 9 | `theorem` | [ancestors_comparable](../../../../Combinatorics/Address.lean/declarations/ancestors-comparable.md) | 72 | `result-track:ccc92d35638d7e066467f1d4b02880b27084ec1a0b9223de721b6a2a382a7abb` |
-| 10 | `def` | [commonPrefix](../../../../Combinatorics/Address.lean/declarations/commonprefix.md) | 91 | `declaration-track:5e30fc2fa4af75d65603fa1c856b33cce56d2876cb330908faba484b6f5d33ca` |
-| 11 | `theorem` | [commonPrefix_left](../../../../Combinatorics/Address.lean/declarations/commonprefix-left.md) | 97 | `result-track:fba2011affa7c489f055df19f228afec56b6c5b3a0b4141bbd2cc337e57b30e6` |
-| 12 | `theorem` | [commonPrefix_right](../../../../Combinatorics/Address.lean/declarations/commonprefix-right.md) | 108 | `result-track:d30501f957c1300de41691a058bb8f8f11dba26f10fa978da3321b26902158ea` |
-| 13 | `theorem` | [commonPrefix_greatest](../../../../Combinatorics/Address.lean/declarations/commonprefix-greatest.md) | 119 | `result-track:07a578ebc2668e37ca0fbfe1db55040c0d7fffe84b82aa2a2c3be65074e82d39` |
-| 14 | `theorem` | [commonPrefix_self](../../../../Combinatorics/Address.lean/declarations/commonprefix-self.md) | 134 | `result-track:95eda3bc0e96f4e618cbd2c3c98e9432a7d5d24de9b6cdfbbb4b412af031eff3` |
-| 15 | `theorem` | [commonPrefix_comm](../../../../Combinatorics/Address.lean/declarations/commonprefix-comm.md) | 138 | `result-track:5fe8528b639cf3bd3fc45b6d02d3bea37c6a4636d38d0d0ea1a3ac5e3f94802f` |
-| 16 | `def` | [prefixes](../../../../Combinatorics/Address.lean/declarations/prefixes.md) | 144 | `declaration-track:440d7fe981d184285bd4062149bb63c0fb77f5e35fb119a7e500f10b03644187` |
-| 17 | `theorem` | [prefix_iff_mem_prefixes](../../../../Combinatorics/Address.lean/declarations/prefix-iff-mem-prefixes.md) | 148 | `result-track:f281ed6783de4050556fe31e1494b620235c023d367c1178fb46949eea718b61` |
+| 1 | `abbrev` | [Address](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Address.lean/declarations/address.md) | 22 | `declaration-track:34e071387386c34c4815410e8e4cf78aa4c3aed2d78dfc7f99fc4805a8b1a257` |
+| 2 | `def` | [Prefix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Address.lean/declarations/prefix.md) | 25 | `declaration-track:bfaa51acf163bc4ffd43e2e7ed9957dab139ea714b83f4b28b065899be4731fc` |
+| 3 | `def` | [prefixDecidable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Address.lean/declarations/prefixdecidable.md) | 30 | `declaration-track:1babd46f002b46b966df2e6c9972865ec890be5a09eecc5c88a6c2fd2bacd363` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Address.lean/declarations/instance.md) | 39 | `declaration-track:cb6934c5162024a07f5474f39b3ef7d996a77da05c6d05d3e7b81bc210eb4b86` |
+| 5 | `theorem` | [prefix_nil](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Address.lean/declarations/prefix-nil.md) | 41 | `result-track:07440f1e00358e97e00f6fb4bba7405a492a4f102e24b3608eb04857c331a759` |
+| 6 | `theorem` | [prefix_refl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Address.lean/declarations/prefix-refl.md) | 43 | `result-track:f5149b32dd441e71aed40eda916601e9207dd207acdaffc2d899f91d274ba16c` |
+| 7 | `theorem` | [prefix_trans](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Address.lean/declarations/prefix-trans.md) | 47 | `result-track:ef1b7a31b4431ac1778f25b4ca0053a0e982b7273ae76e3e22ab4ee5017a832f` |
+| 8 | `theorem` | [prefix_antisymm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Address.lean/declarations/prefix-antisymm.md) | 59 | `result-track:88b99ae80cb1fbe2484c7a0ed09e73cf30d58c878c11e15b4d082c2b27df202f` |
+| 9 | `theorem` | [ancestors_comparable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Address.lean/declarations/ancestors-comparable.md) | 72 | `result-track:ccc92d35638d7e066467f1d4b02880b27084ec1a0b9223de721b6a2a382a7abb` |
+| 10 | `def` | [commonPrefix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Address.lean/declarations/commonprefix.md) | 91 | `declaration-track:5e30fc2fa4af75d65603fa1c856b33cce56d2876cb330908faba484b6f5d33ca` |
+| 11 | `theorem` | [commonPrefix_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Address.lean/declarations/commonprefix-left.md) | 97 | `result-track:fba2011affa7c489f055df19f228afec56b6c5b3a0b4141bbd2cc337e57b30e6` |
+| 12 | `theorem` | [commonPrefix_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Address.lean/declarations/commonprefix-right.md) | 108 | `result-track:d30501f957c1300de41691a058bb8f8f11dba26f10fa978da3321b26902158ea` |
+| 13 | `theorem` | [commonPrefix_greatest](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Address.lean/declarations/commonprefix-greatest.md) | 119 | `result-track:07a578ebc2668e37ca0fbfe1db55040c0d7fffe84b82aa2a2c3be65074e82d39` |
+| 14 | `theorem` | [commonPrefix_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Address.lean/declarations/commonprefix-self.md) | 134 | `result-track:95eda3bc0e96f4e618cbd2c3c98e9432a7d5d24de9b6cdfbbb4b412af031eff3` |
+| 15 | `theorem` | [commonPrefix_comm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Address.lean/declarations/commonprefix-comm.md) | 138 | `result-track:5fe8528b639cf3bd3fc45b6d02d3bea37c6a4636d38d0d0ea1a3ac5e3f94802f` |
+| 16 | `def` | [prefixes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Address.lean/declarations/prefixes.md) | 144 | `declaration-track:440d7fe981d184285bd4062149bb63c0fb77f5e35fb119a7e500f10b03644187` |
+| 17 | `theorem` | [prefix_iff_mem_prefixes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Address.lean/declarations/prefix-iff-mem-prefixes.md) | 148 | `result-track:f281ed6783de4050556fe31e1494b620235c023d367c1178fb46949eea718b61` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

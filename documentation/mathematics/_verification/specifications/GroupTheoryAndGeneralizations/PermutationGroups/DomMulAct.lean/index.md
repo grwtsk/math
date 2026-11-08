@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/DomMulAct.lean/index.md) · [Full source](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/DomMulAct.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/DomMulAct.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/DomMulAct.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,16 +61,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [mem_stabilizer_iff](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/DomMulAct.lean/declarations/mem-stabilizer-iff.md) | 43 | `result-track:89d598c061b546f7626518b720a25f29286efc45e2401b0c6f73fae787fffbe9` |
-| 2 | `def` | [stabilizerEquiv_invFun](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/DomMulAct.lean/declarations/stabilizerequiv-invfun.md) | 49 | `declaration-track:6f54ccdfb500a486548febb2359d85c4bd71f5c59447c65a0bffc43a8dfdb188` |
-| 3 | `lemma` | [stabilizerEquiv_invFun_eq](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/DomMulAct.lean/declarations/stabilizerequiv-invfun-eq.md) | 51 | `result-track:041821e3a90a6417a4b7630dbb47ab7d8e0f045710391d9e24b183902d40857f` |
-| 4 | `lemma` | [comp_stabilizerEquiv_invFun](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/DomMulAct.lean/declarations/comp-stabilizerequiv-invfun.md) | 54 | `result-track:af8bca73fbad76fea5dbb599f90c68bd12e3bd124232564283fd104c1fadd2a8` |
-| 5 | `def` | [stabilizerEquiv_invFun_aux](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/DomMulAct.lean/declarations/stabilizerequiv-invfun-aux.md) | 60 | `declaration-track:d7766ae488af3371862053458aa27549907e636b81510d95ba2d6f153c94d7c6` |
-| 6 | `def` | [stabilizerMulEquiv](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/DomMulAct.lean/declarations/stabilizermulequiv.md) | 73 | `declaration-track:56f6624a545ec6ac185d65f242008772edc096c7b47365ecbb1a0e174c9a761e` |
-| 7 | `lemma` | [stabilizerMulEquiv_apply](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/DomMulAct.lean/declarations/stabilizermulequiv-apply.md) | 84 | `result-track:6adc497e80ca2b816dc8b6d58cc4a9742067820d17a7d3c1865fb5f40facaa58` |
-| 8 | `theorem` | [stabilizer_card](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/DomMulAct.lean/declarations/stabilizer-card-source-edition-2.md) | 96 | `result-track:b5fd12f490b1ae8d17f17ebfb2dafdf9071bfb4793ca4ae96949c00ba1fe6c94` |
-| 9 | `theorem` | [stabilizer_ncard](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/DomMulAct.lean/declarations/stabilizer-ncard.md) | 108 | `result-track:dd64041517be2e334e4531d52b93ce906c62b90fddf93574d9ef81edd5fb5209` |
-| 10 | `theorem` | [stabilizer_card'](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/DomMulAct.lean/declarations/stabilizer-card.md) | 119 | `result-track:a86d198be95443bf4fff23416bba4194eb9590e89ede0260c4122433420d6e1f` |
+| 1 | `lemma` | [mem_stabilizer_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/DomMulAct.lean/declarations/mem-stabilizer-iff.md) | 43 | `result-track:89d598c061b546f7626518b720a25f29286efc45e2401b0c6f73fae787fffbe9` |
+| 2 | `def` | [stabilizerEquiv_invFun](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/DomMulAct.lean/declarations/stabilizerequiv-invfun.md) | 49 | `declaration-track:6f54ccdfb500a486548febb2359d85c4bd71f5c59447c65a0bffc43a8dfdb188` |
+| 3 | `lemma` | [stabilizerEquiv_invFun_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/DomMulAct.lean/declarations/stabilizerequiv-invfun-eq.md) | 51 | `result-track:041821e3a90a6417a4b7630dbb47ab7d8e0f045710391d9e24b183902d40857f` |
+| 4 | `lemma` | [comp_stabilizerEquiv_invFun](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/DomMulAct.lean/declarations/comp-stabilizerequiv-invfun.md) | 54 | `result-track:af8bca73fbad76fea5dbb599f90c68bd12e3bd124232564283fd104c1fadd2a8` |
+| 5 | `def` | [stabilizerEquiv_invFun_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/DomMulAct.lean/declarations/stabilizerequiv-invfun-aux.md) | 60 | `declaration-track:d7766ae488af3371862053458aa27549907e636b81510d95ba2d6f153c94d7c6` |
+| 6 | `def` | [stabilizerMulEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/DomMulAct.lean/declarations/stabilizermulequiv.md) | 73 | `declaration-track:56f6624a545ec6ac185d65f242008772edc096c7b47365ecbb1a0e174c9a761e` |
+| 7 | `lemma` | [stabilizerMulEquiv_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/DomMulAct.lean/declarations/stabilizermulequiv-apply.md) | 84 | `result-track:6adc497e80ca2b816dc8b6d58cc4a9742067820d17a7d3c1865fb5f40facaa58` |
+| 8 | `theorem` | [stabilizer_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/DomMulAct.lean/declarations/stabilizer-card-source-edition-2.md) | 96 | `result-track:b5fd12f490b1ae8d17f17ebfb2dafdf9071bfb4793ca4ae96949c00ba1fe6c94` |
+| 9 | `theorem` | [stabilizer_ncard](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/DomMulAct.lean/declarations/stabilizer-ncard.md) | 108 | `result-track:dd64041517be2e334e4531d52b93ce906c62b90fddf93574d9ef81edd5fb5209` |
+| 10 | `theorem` | [stabilizer_card'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/DomMulAct.lean/declarations/stabilizer-card.md) | 119 | `result-track:a86d198be95443bf4fff23416bba4194eb9590e89ede0260c4122433420d6e1f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

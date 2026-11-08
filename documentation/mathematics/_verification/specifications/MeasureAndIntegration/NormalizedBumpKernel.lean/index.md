@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/NormalizedBumpKernel.lean/index.md) · [Full source](../../../../MeasureAndIntegration/NormalizedBumpKernel.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NormalizedBumpKernel.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NormalizedBumpKernel.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [smoothingBump](../../../../MeasureAndIntegration/NormalizedBumpKernel.lean/declarations/smoothingbump.md) | 52 | `declaration-track:b8e2a8476428067d19663bf6e11e91fd2371278f762980d056849c8fd310a8f5` |
-| 2 | `def` | [mollifier](../../../../MeasureAndIntegration/NormalizedBumpKernel.lean/declarations/mollifier.md) | 59 | `declaration-track:343187b93c4c936046d665d840186b0a026c3e3abb00d68d8d71fad6f31fe4c9` |
-| 3 | `theorem` | [mollifier_nonneg](../../../../MeasureAndIntegration/NormalizedBumpKernel.lean/declarations/mollifier-nonneg.md) | 63 | `result-track:ec16ab4e1735d88ac93c4015a6dfc14b7679301261ebcd16c2439b46895de706` |
-| 4 | `theorem` | [mollifier_even](../../../../MeasureAndIntegration/NormalizedBumpKernel.lean/declarations/mollifier-even.md) | 68 | `result-track:df435fe49fd2f8f9bcbb7979d006036dcd9a0ac34c6b0999942dad212ecb4c52` |
-| 5 | `theorem` | [mollifier_contDiff](../../../../MeasureAndIntegration/NormalizedBumpKernel.lean/declarations/mollifier-contdiff.md) | 72 | `result-track:d5089fa9369d18c59238fc97cee6c9167e8aaa6e02129958b21578fe6d9e59c9` |
-| 6 | `theorem` | [mollifier_integrable](../../../../MeasureAndIntegration/NormalizedBumpKernel.lean/declarations/mollifier-integrable.md) | 77 | `result-track:40fc10e1ca9ca2d13cdc94b8978a06bc079d8695ec82fab4845aa3a1dea80a1e` |
-| 7 | `theorem` | [mollifier_integral](../../../../MeasureAndIntegration/NormalizedBumpKernel.lean/declarations/mollifier-integral.md) | 82 | `result-track:f8bc3901d253580b00bd1295c1f47a6eb5bb4dd947473107a9a87e2ffecf01e6` |
-| 8 | `theorem` | [mollifier_support](../../../../MeasureAndIntegration/NormalizedBumpKernel.lean/declarations/mollifier-support.md) | 87 | `result-track:681e9fa6b224b11ceb50ec400b83578cfb56cb2d96cb39b0b9faa3a583353a7e` |
-| 9 | `theorem` | [mollifier_tsupport](../../../../MeasureAndIntegration/NormalizedBumpKernel.lean/declarations/mollifier-tsupport.md) | 93 | `result-track:b3d2960c83196a7a70092e8b267ec787840e2e2fa6e14141745c6b69662472b6` |
-| 10 | `theorem` | [mollifier_hasCompactSupport](../../../../MeasureAndIntegration/NormalizedBumpKernel.lean/declarations/mollifier-hascompactsupport.md) | 99 | `result-track:6ae0c593c6704bdba589ddadb8f1ff9808d049713f4956da7a01eafbb739354c` |
+| 1 | `def` | [smoothingBump](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NormalizedBumpKernel.lean/declarations/smoothingbump.md) | 52 | `declaration-track:b8e2a8476428067d19663bf6e11e91fd2371278f762980d056849c8fd310a8f5` |
+| 2 | `def` | [mollifier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NormalizedBumpKernel.lean/declarations/mollifier.md) | 59 | `declaration-track:343187b93c4c936046d665d840186b0a026c3e3abb00d68d8d71fad6f31fe4c9` |
+| 3 | `theorem` | [mollifier_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NormalizedBumpKernel.lean/declarations/mollifier-nonneg.md) | 63 | `result-track:ec16ab4e1735d88ac93c4015a6dfc14b7679301261ebcd16c2439b46895de706` |
+| 4 | `theorem` | [mollifier_even](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NormalizedBumpKernel.lean/declarations/mollifier-even.md) | 68 | `result-track:df435fe49fd2f8f9bcbb7979d006036dcd9a0ac34c6b0999942dad212ecb4c52` |
+| 5 | `theorem` | [mollifier_contDiff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NormalizedBumpKernel.lean/declarations/mollifier-contdiff.md) | 72 | `result-track:d5089fa9369d18c59238fc97cee6c9167e8aaa6e02129958b21578fe6d9e59c9` |
+| 6 | `theorem` | [mollifier_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NormalizedBumpKernel.lean/declarations/mollifier-integrable.md) | 77 | `result-track:40fc10e1ca9ca2d13cdc94b8978a06bc079d8695ec82fab4845aa3a1dea80a1e` |
+| 7 | `theorem` | [mollifier_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NormalizedBumpKernel.lean/declarations/mollifier-integral.md) | 82 | `result-track:f8bc3901d253580b00bd1295c1f47a6eb5bb4dd947473107a9a87e2ffecf01e6` |
+| 8 | `theorem` | [mollifier_support](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NormalizedBumpKernel.lean/declarations/mollifier-support.md) | 87 | `result-track:681e9fa6b224b11ceb50ec400b83578cfb56cb2d96cb39b0b9faa3a583353a7e` |
+| 9 | `theorem` | [mollifier_tsupport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NormalizedBumpKernel.lean/declarations/mollifier-tsupport.md) | 93 | `result-track:b3d2960c83196a7a70092e8b267ec787840e2e2fa6e14141745c6b69662472b6` |
+| 10 | `theorem` | [mollifier_hasCompactSupport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NormalizedBumpKernel.lean/declarations/mollifier-hascompactsupport.md) | 99 | `result-track:6ae0c593c6704bdba589ddadb8f1ff9808d049713f4956da7a01eafbb739354c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

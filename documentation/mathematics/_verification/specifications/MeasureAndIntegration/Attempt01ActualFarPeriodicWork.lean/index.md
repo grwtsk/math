@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/Attempt01ActualFarPeriodicWork.lean/index.md) · [Full source](../../../../MeasureAndIntegration/Attempt01ActualFarPeriodicWork.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01ActualFarPeriodicWork.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01ActualFarPeriodicWork.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualFarPeriodicWork](../../../../MeasureAndIntegration/Attempt01ActualFarPeriodicWork.lean/declarations/actualfarperiodicwork.md) | 27 | `declaration-track:63d099e2095b8106244cba5fe438143e6e3b34e80bedb8a813038763e45bed39` |
-| 2 | `def` | [actualFarPeriodicCutoff](../../../../MeasureAndIntegration/Attempt01ActualFarPeriodicWork.lean/declarations/actualfarperiodiccutoff.md) | 34 | `declaration-track:3e0de53cb4a503cf26792c4041f1ddf83eaa766cade85848b2a9c9b7a9b1f126` |
-| 3 | `theorem` | [physical_profile_measurable](../../../../MeasureAndIntegration/Attempt01ActualFarPeriodicWork.lean/declarations/physical-profile-measurable.md) | 37 | `result-track:80dc4d41fb6e4d235777209150d7ce873985587135ae6f752d90d3a42a964cfd` |
-| 4 | `theorem` | [row_stronglyMeasurable](../../../../MeasureAndIntegration/Attempt01ActualFarPeriodicWork.lean/declarations/row-stronglymeasurable.md) | 51 | `result-track:d1f891a1e282680d9ea1dff1fcde99c5d8e4a77bcb275981fca46cdb32a632f6` |
-| 5 | `theorem` | [actualFarPeriodicWork_intervalIntegrable](../../../../MeasureAndIntegration/Attempt01ActualFarPeriodicWork.lean/declarations/actualfarperiodicwork-intervalintegrable.md) | 69 | `result-track:78115b410cdc5a3008004e3657c14bfcc57be1e3b64b6fca7ad596ce2ef4ee52` |
+| 1 | `def` | [actualFarPeriodicWork](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01ActualFarPeriodicWork.lean/declarations/actualfarperiodicwork.md) | 27 | `declaration-track:63d099e2095b8106244cba5fe438143e6e3b34e80bedb8a813038763e45bed39` |
+| 2 | `def` | [actualFarPeriodicCutoff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01ActualFarPeriodicWork.lean/declarations/actualfarperiodiccutoff.md) | 34 | `declaration-track:3e0de53cb4a503cf26792c4041f1ddf83eaa766cade85848b2a9c9b7a9b1f126` |
+| 3 | `theorem` | [physical_profile_measurable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01ActualFarPeriodicWork.lean/declarations/physical-profile-measurable.md) | 37 | `result-track:80dc4d41fb6e4d235777209150d7ce873985587135ae6f752d90d3a42a964cfd` |
+| 4 | `theorem` | [row_stronglyMeasurable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01ActualFarPeriodicWork.lean/declarations/row-stronglymeasurable.md) | 51 | `result-track:d1f891a1e282680d9ea1dff1fcde99c5d8e4a77bcb275981fca46cdb32a632f6` |
+| 5 | `theorem` | [actualFarPeriodicWork_intervalIntegrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01ActualFarPeriodicWork.lean/declarations/actualfarperiodicwork-intervalintegrable.md) | 69 | `result-track:78115b410cdc5a3008004e3657c14bfcc57be1e3b64b6fca7ad596ce2ef4ee52` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

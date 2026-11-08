@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MappingTorusNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MappingTorusNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MappingTorusNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MappingTorusNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [MappingTorusCertificate](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MappingTorusNamespaced.lean/declarations/mappingtoruscertificate.md) | 22 | `declaration-track:7a4a77920bc1332a54401403b952386935fa00208a1bbe2976216a2fe9921c72` |
-| 2 | `def` | [typedMobiusMappingTorus](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MappingTorusNamespaced.lean/declarations/typedmobiusmappingtorus.md) | 29 | `declaration-track:add9498597f98cf5101ee3870bc3f954879f0324886671d03bee52a9d782a201` |
-| 3 | `structure` | [OrientationReversingLineFiberCertificate](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MappingTorusNamespaced.lean/declarations/orientationreversinglinefibercertificate.md) | 40 | `declaration-track:5c3721a8052fc8f0c2236e05cf287a94066d4f67127c98ca2becd9a15108d3a6` |
+| 1 | `structure` | [MappingTorusCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MappingTorusNamespaced.lean/declarations/mappingtoruscertificate.md) | 22 | `declaration-track:7a4a77920bc1332a54401403b952386935fa00208a1bbe2976216a2fe9921c72` |
+| 2 | `def` | [typedMobiusMappingTorus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MappingTorusNamespaced.lean/declarations/typedmobiusmappingtorus.md) | 29 | `declaration-track:add9498597f98cf5101ee3870bc3f954879f0324886671d03bee52a9d782a201` |
+| 3 | `structure` | [OrientationReversingLineFiberCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MappingTorusNamespaced.lean/declarations/orientationreversinglinefibercertificate.md) | 40 | `declaration-track:5c3721a8052fc8f0c2236e05cf287a94066d4f67127c98ca2becd9a15108d3a6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/CompletenessEdition2.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/CompletenessEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CompletenessEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CompletenessEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ModuleFailure](../../../../../ComputerScience/AlgorithmsInComputerScience/CompletenessEdition2.lean/declarations/modulefailure.md) | 12 | `declaration-track:608da8a3f7e1ff30a463409da9280d4e2e60abf1771a9ab8dfcb902d4ed8f75e` |
-| 2 | `structure` | [CompletenessCertificate](../../../../../ComputerScience/AlgorithmsInComputerScience/CompletenessEdition2.lean/declarations/completenesscertificate.md) | 17 | `declaration-track:a23e9c24c79e7da4a210657cc34bbb9d06344df2537bb3e1a5c2e5efb76d0210` |
-| 3 | `structure` | [Valid](../../../../../ComputerScience/AlgorithmsInComputerScience/CompletenessEdition2.lean/declarations/valid.md) | 38 | `declaration-track:e4017ced1f165ce1d737d62265bce4926e07657a0c4578a871f825071d2882b4` |
+| 1 | `structure` | [ModuleFailure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CompletenessEdition2.lean/declarations/modulefailure.md) | 12 | `declaration-track:608da8a3f7e1ff30a463409da9280d4e2e60abf1771a9ab8dfcb902d4ed8f75e` |
+| 2 | `structure` | [CompletenessCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CompletenessEdition2.lean/declarations/completenesscertificate.md) | 17 | `declaration-track:a23e9c24c79e7da4a210657cc34bbb9d06344df2537bb3e1a5c2e5efb76d0210` |
+| 3 | `structure` | [Valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CompletenessEdition2.lean/declarations/valid.md) | 38 | `declaration-track:e4017ced1f165ce1d737d62265bce4926e07657a0c4578a871f825071d2882b4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

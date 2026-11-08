@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/SupportNamespacedAligned.lean/index.md) · [Full source](../../../../RealFunctions/SupportNamespacedAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SupportNamespacedAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SupportNamespacedAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [support_deriv_subset](../../../../RealFunctions/SupportNamespacedAligned.lean/declarations/support-deriv-subset.md) | 46 | `result-track:4f11c9d93dca6022f854022c79181a696b0927b842ed5126de17f75df2661132` |
-| 2 | `theorem` | [HasCompactSupport.deriv](../../../../RealFunctions/SupportNamespacedAligned.lean/declarations/hascompactsupport-deriv.md) | 54 | `result-track:50c75565dfa0746ab825ce6474e25c677afbe9d83d06f8e9d9dd4f1ce7fb7bb7` |
+| 1 | `theorem` | [support_deriv_subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SupportNamespacedAligned.lean/declarations/support-deriv-subset.md) | 46 | `result-track:4f11c9d93dca6022f854022c79181a696b0927b842ed5126de17f75df2661132` |
+| 2 | `theorem` | [HasCompactSupport.deriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SupportNamespacedAligned.lean/declarations/hascompactsupport-deriv.md) | 54 | `result-track:50c75565dfa0746ab825ce6474e25c677afbe9d83d06f8e9d9dd4f1ce7fb7bb7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

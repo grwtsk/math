@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/FiniteCrossedProduct.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/FiniteCrossedProduct.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/FiniteCrossedProduct.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/FiniteCrossedProduct.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [finiteCrossedProductStableTrace](../../../../AssociativeRingsAndAlgebras/FiniteCrossedProduct.lean/declarations/finitecrossedproductstabletrace.md) | 19 | `declaration-track:282727dda3a4cb156f990eb36923ae0b8cbe3af87cd3ddcb4824e62c5c0568b0` |
-| 2 | `theorem` | [finite_stable_trace_is_canonical](../../../../AssociativeRingsAndAlgebras/FiniteCrossedProduct.lean/declarations/finite-stable-trace-is-canonical.md) | 56 | `result-track:0ed34fd743033126a45ad4ea671f252ebf5ff71eb128f7a8246012a88b173eed` |
+| 1 | `def` | [finiteCrossedProductStableTrace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/FiniteCrossedProduct.lean/declarations/finitecrossedproductstabletrace.md) | 19 | `declaration-track:282727dda3a4cb156f990eb36923ae0b8cbe3af87cd3ddcb4824e62c5c0568b0` |
+| 2 | `theorem` | [finite_stable_trace_is_canonical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/FiniteCrossedProduct.lean/declarations/finite-stable-trace-is-canonical.md) | 56 | `result-track:0ed34fd743033126a45ad4ea671f252ebf5ff71eb128f7a8246012a88b173eed` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

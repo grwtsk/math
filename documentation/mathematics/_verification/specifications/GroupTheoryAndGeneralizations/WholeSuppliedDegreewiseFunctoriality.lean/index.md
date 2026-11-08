@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/WholeSuppliedDegreewiseFunctoriality.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/WholeSuppliedDegreewiseFunctoriality.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/WholeSuppliedDegreewiseFunctoriality.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/WholeSuppliedDegreewiseFunctoriality.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -49,7 +49,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 - `DAF.Assembly.Interface` — import line 19; external provider; requires a separately pinned dependency.
 - `DAF.Comparison.Coefficients` — import line 20; external provider; requires a separately pinned dependency.
 - `Mathlib.Algebra.MonoidAlgebra.Basic` — import line 21; external provider; requires a separately pinned dependency.
-- [Whole Representation With Exact Typeclass Projections](../../../../CommutativeAlgebra/WholeRepresentationWithExactTypeclassProjections.lean/index.md) — import line 23; pinned internal source present.
+- [Whole Representation With Exact Typeclass Projections](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/WholeRepresentationWithExactTypeclassProjections.lean/index.md) — import line 23; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -60,7 +60,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [KTheoryFunctoriality](../../../../GroupTheoryAndGeneralizations/WholeSuppliedDegreewiseFunctoriality.lean/declarations/ktheoryfunctoriality.md) | 55 | `declaration-track:c8aa5a8c4d406c65cda7b9712ea307335fb5ab5d357b3398d978512409549ccc` |
+| 1 | `structure` | [KTheoryFunctoriality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/WholeSuppliedDegreewiseFunctoriality.lean/declarations/ktheoryfunctoriality.md) | 55 | `declaration-track:c8aa5a8c4d406c65cda7b9712ea307335fb5ab5d357b3398d978512409549ccc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ControllerScheduleLiteralSnippet.lean/index.md) · [Full source](../../../../GeneralTopology/ControllerScheduleLiteralSnippet.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ControllerScheduleLiteralSnippet.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ControllerScheduleLiteralSnippet.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,17 +57,17 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../GeneralTopology/ControllerScheduleLiteralSnippet.lean/declarations/example-source-edition-8.md) | 8 | `declaration-track:9dbd46ce9d8ce5adf1ad62af0798afb691790f551b26d47ad908da73542512e0` |
-| 2 | `example` | [(anonymous)](../../../../GeneralTopology/ControllerScheduleLiteralSnippet.lean/declarations/example-source-edition-9.md) | 10 | `declaration-track:ce45d58a664839467689425880a30e9c9ff8dd911fb76cd2b8ee3a30d1a1e228` |
-| 3 | `example` | [(anonymous)](../../../../GeneralTopology/ControllerScheduleLiteralSnippet.lean/declarations/example-source-edition-5.md) | 13 | `declaration-track:7f5bb7146adc3bf1fa8604b826c6860d45d5dbc65f6b43813ac1d7d6eb262ed5` |
-| 4 | `example` | [(anonymous)](../../../../GeneralTopology/ControllerScheduleLiteralSnippet.lean/declarations/example-source-edition-2.md) | 14 | `declaration-track:1e1752645c806906413addee2485dcade2b52502856843fa3ee863ef000ec81d` |
-| 5 | `example` | [(anonymous)](../../../../GeneralTopology/ControllerScheduleLiteralSnippet.lean/declarations/example-source-edition-7.md) | 15 | `declaration-track:8c43df997a7be0ea3ea4f83469007638331a787de8ca3a4bc7bd6a5c31bd13dc` |
-| 6 | `example` | [(anonymous)](../../../../GeneralTopology/ControllerScheduleLiteralSnippet.lean/declarations/example-source-edition-4.md) | 17 | `declaration-track:43b6f55a4e632634a368c4b45a70f23a252e27fdd98a9f57c708b25c2d2eb890` |
-| 7 | `example` | [(anonymous)](../../../../GeneralTopology/ControllerScheduleLiteralSnippet.lean/declarations/example-source-edition-11.md) | 19 | `declaration-track:de1fdb858af079ca9e327aa311fbf42a6502b4bc32821d82587f0948914b7dcb` |
-| 8 | `example` | [(anonymous)](../../../../GeneralTopology/ControllerScheduleLiteralSnippet.lean/declarations/example.md) | 21 | `declaration-track:0bad76964c62171ed6a96b06380c593275315a74ce0658741665b39df84ff9c3` |
-| 9 | `example` | [(anonymous)](../../../../GeneralTopology/ControllerScheduleLiteralSnippet.lean/declarations/example-source-edition-3.md) | 23 | `declaration-track:2a96bbb4c78986483c5c2a912b0ab90681ece2413047b04bf1705e1320a97975` |
-| 10 | `example` | [(anonymous)](../../../../GeneralTopology/ControllerScheduleLiteralSnippet.lean/declarations/example-source-edition-10.md) | 25 | `declaration-track:d63800e087d98538b07417c347adbb5d86269d6304cf08ed9a44caad0fef60e2` |
-| 11 | `example` | [(anonymous)](../../../../GeneralTopology/ControllerScheduleLiteralSnippet.lean/declarations/example-source-edition-6.md) | 29 | `declaration-track:84ae2253b1557561516e1b05f312f7453b728e1302926cc09367bbbaf880cd7d` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ControllerScheduleLiteralSnippet.lean/declarations/example-source-edition-8.md) | 8 | `declaration-track:9dbd46ce9d8ce5adf1ad62af0798afb691790f551b26d47ad908da73542512e0` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ControllerScheduleLiteralSnippet.lean/declarations/example-source-edition-9.md) | 10 | `declaration-track:ce45d58a664839467689425880a30e9c9ff8dd911fb76cd2b8ee3a30d1a1e228` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ControllerScheduleLiteralSnippet.lean/declarations/example-source-edition-5.md) | 13 | `declaration-track:7f5bb7146adc3bf1fa8604b826c6860d45d5dbc65f6b43813ac1d7d6eb262ed5` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ControllerScheduleLiteralSnippet.lean/declarations/example-source-edition-2.md) | 14 | `declaration-track:1e1752645c806906413addee2485dcade2b52502856843fa3ee863ef000ec81d` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ControllerScheduleLiteralSnippet.lean/declarations/example-source-edition-7.md) | 15 | `declaration-track:8c43df997a7be0ea3ea4f83469007638331a787de8ca3a4bc7bd6a5c31bd13dc` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ControllerScheduleLiteralSnippet.lean/declarations/example-source-edition-4.md) | 17 | `declaration-track:43b6f55a4e632634a368c4b45a70f23a252e27fdd98a9f57c708b25c2d2eb890` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ControllerScheduleLiteralSnippet.lean/declarations/example-source-edition-11.md) | 19 | `declaration-track:de1fdb858af079ca9e327aa311fbf42a6502b4bc32821d82587f0948914b7dcb` |
+| 8 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ControllerScheduleLiteralSnippet.lean/declarations/example.md) | 21 | `declaration-track:0bad76964c62171ed6a96b06380c593275315a74ce0658741665b39df84ff9c3` |
+| 9 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ControllerScheduleLiteralSnippet.lean/declarations/example-source-edition-3.md) | 23 | `declaration-track:2a96bbb4c78986483c5c2a912b0ab90681ece2413047b04bf1705e1320a97975` |
+| 10 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ControllerScheduleLiteralSnippet.lean/declarations/example-source-edition-10.md) | 25 | `declaration-track:d63800e087d98538b07417c347adbb5d86269d6304cf08ed9a44caad0fef60e2` |
+| 11 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ControllerScheduleLiteralSnippet.lean/declarations/example-source-edition-6.md) | 29 | `declaration-track:84ae2253b1557561516e1b05f312f7453b728e1302926cc09367bbbaf880cd7d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

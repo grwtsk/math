@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EndpointSubtype.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EndpointSubtype.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EndpointSubtype.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EndpointSubtype.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [Claim And Scope Records](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ClaimAndScopeRecords.lean/index.md) — import line 20; pinned internal source present.
+- [Claim And Scope Records](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ClaimAndScopeRecords.lean/index.md) — import line 20; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [At](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EndpointSubtype.lean/declarations/at.md) | 102 | `declaration-track:d1384efc94f8dbbc817799dc696d1dbe8cb1d48575b56bc57a81597222ccef68` |
-| 2 | `theorem` | [localContext_at](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EndpointSubtype.lean/declarations/localcontext-at.md) | 137 | `result-track:26f208e085df4aeb89b6cccd7284a88cbbffeeaaf10a9af023af2553cc2de0e8` |
+| 1 | `def` | [At](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EndpointSubtype.lean/declarations/at.md) | 102 | `declaration-track:d1384efc94f8dbbc817799dc696d1dbe8cb1d48575b56bc57a81597222ccef68` |
+| 2 | `theorem` | [localContext_at](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EndpointSubtype.lean/declarations/localcontext-at.md) | 137 | `result-track:26f208e085df4aeb89b6cccd7284a88cbbffeeaaf10a9af023af2553cc2de0e8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

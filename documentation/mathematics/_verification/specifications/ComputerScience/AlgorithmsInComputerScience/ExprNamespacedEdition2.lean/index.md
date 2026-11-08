@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ExprNamespacedEdition2.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ExprNamespacedEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExprNamespacedEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExprNamespacedEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,14 +60,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [BinderClass](../../../../../ComputerScience/AlgorithmsInComputerScience/ExprNamespacedEdition2.lean/declarations/binderclass.md) | 29 | `declaration-track:fdb277e29bb8e3a58a4248bf12cd5a5e49a9f8772a0ef29f595c5a46eab3a398` |
-| 2 | `inductive` | [CanonicalLevel](../../../../../ComputerScience/AlgorithmsInComputerScience/ExprNamespacedEdition2.lean/declarations/canonicallevel.md) | 36 | `declaration-track:16380cf286e8f6e7ae2fc6b13e1b7d93fd390c90046b39f3425e6330360bfd04` |
-| 3 | `inductive` | [CanonicalLiteral](../../../../../ComputerScience/AlgorithmsInComputerScience/ExprNamespacedEdition2.lean/declarations/canonicalliteral.md) | 46 | `declaration-track:e8b16119507a950ee752d5b8c17e086307e616c59112f1c9ee39496ee633c588` |
-| 4 | `inductive` | [CanonicalExpr](../../../../../ComputerScience/AlgorithmsInComputerScience/ExprNamespacedEdition2.lean/declarations/canonicalexpr.md) | 53 | `declaration-track:ec0ae7282c6ec78c83f62f8d4a3efb2f49e231af21447820e4ef1398ca8ebc61` |
-| 5 | `def` | [CanonicalExpr.childIds](../../../../../ComputerScience/AlgorithmsInComputerScience/ExprNamespacedEdition2.lean/declarations/canonicalexpr-childids.md) | 71 | `declaration-track:3b16569ec0fe40312d8eb9e47ecde07f5354f555a9c698f5ebf018b731aa3d9a` |
-| 6 | `structure` | [PresentationVariant](../../../../../ComputerScience/AlgorithmsInComputerScience/ExprNamespacedEdition2.lean/declarations/presentationvariant.md) | 80 | `declaration-track:5a183b62131f56012b0c8d806812b573e6e9b843483454c62fa2f7e06f1591b5` |
-| 7 | `structure` | [ExpressionRecord](../../../../../ComputerScience/AlgorithmsInComputerScience/ExprNamespacedEdition2.lean/declarations/expressionrecord.md) | 85 | `declaration-track:5edcfa141f319bede2207284d1095de811c3f59a8539d1c366d029d1cfd757dd` |
-| 8 | `structure` | [ExprPath](../../../../../ComputerScience/AlgorithmsInComputerScience/ExprNamespacedEdition2.lean/declarations/exprpath.md) | 95 | `declaration-track:512b81e54ac65af1ee5dd0dfaebffff396759126a6e54b37edd8d2bba90bdd00` |
+| 1 | `inductive` | [BinderClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExprNamespacedEdition2.lean/declarations/binderclass.md) | 29 | `declaration-track:fdb277e29bb8e3a58a4248bf12cd5a5e49a9f8772a0ef29f595c5a46eab3a398` |
+| 2 | `inductive` | [CanonicalLevel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExprNamespacedEdition2.lean/declarations/canonicallevel.md) | 36 | `declaration-track:16380cf286e8f6e7ae2fc6b13e1b7d93fd390c90046b39f3425e6330360bfd04` |
+| 3 | `inductive` | [CanonicalLiteral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExprNamespacedEdition2.lean/declarations/canonicalliteral.md) | 46 | `declaration-track:e8b16119507a950ee752d5b8c17e086307e616c59112f1c9ee39496ee633c588` |
+| 4 | `inductive` | [CanonicalExpr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExprNamespacedEdition2.lean/declarations/canonicalexpr.md) | 53 | `declaration-track:ec0ae7282c6ec78c83f62f8d4a3efb2f49e231af21447820e4ef1398ca8ebc61` |
+| 5 | `def` | [CanonicalExpr.childIds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExprNamespacedEdition2.lean/declarations/canonicalexpr-childids.md) | 71 | `declaration-track:3b16569ec0fe40312d8eb9e47ecde07f5354f555a9c698f5ebf018b731aa3d9a` |
+| 6 | `structure` | [PresentationVariant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExprNamespacedEdition2.lean/declarations/presentationvariant.md) | 80 | `declaration-track:5a183b62131f56012b0c8d806812b573e6e9b843483454c62fa2f7e06f1591b5` |
+| 7 | `structure` | [ExpressionRecord](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExprNamespacedEdition2.lean/declarations/expressionrecord.md) | 85 | `declaration-track:5edcfa141f319bede2207284d1095de811c3f59a8539d1c366d029d1cfd757dd` |
+| 8 | `structure` | [ExprPath](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExprNamespacedEdition2.lean/declarations/exprpath.md) | 95 | `declaration-track:512b81e54ac65af1ee5dd0dfaebffff396759126a6e54b37edd8d2bba90bdd00` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

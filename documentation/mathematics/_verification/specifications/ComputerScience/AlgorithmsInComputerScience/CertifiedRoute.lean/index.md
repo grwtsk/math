@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/CertifiedRoute.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/CertifiedRoute.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CertifiedRoute.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CertifiedRoute.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CertifiedRoute](../../../../../ComputerScience/AlgorithmsInComputerScience/CertifiedRoute.lean/declarations/certifiedroute.md) | 22 | `declaration-track:130c7fab092905f19eec449b95d53aab4c5330747381530d780745399a303b67` |
-| 2 | `theorem` | [proves](../../../../../ComputerScience/AlgorithmsInComputerScience/CertifiedRoute.lean/declarations/proves.md) | 41 | `result-track:5bb44245c49f0cba15f474b5f98ea7a4011d1d7c54a1473f62a6bb968fa86a6a` |
-| 3 | `structure` | [UsableRouteRegistry](../../../../../ComputerScience/AlgorithmsInComputerScience/CertifiedRoute.lean/declarations/usablerouteregistry.md) | 60 | `declaration-track:3cf234e9babfb1690f971cd54013d764a0f920e0766c2ae00f56a2367a599104` |
+| 1 | `structure` | [CertifiedRoute](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CertifiedRoute.lean/declarations/certifiedroute.md) | 22 | `declaration-track:130c7fab092905f19eec449b95d53aab4c5330747381530d780745399a303b67` |
+| 2 | `theorem` | [proves](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CertifiedRoute.lean/declarations/proves.md) | 41 | `result-track:5bb44245c49f0cba15f474b5f98ea7a4011d1d7c54a1473f62a6bb968fa86a6a` |
+| 3 | `structure` | [UsableRouteRegistry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CertifiedRoute.lean/declarations/usablerouteregistry.md) | 60 | `declaration-track:3cf234e9babfb1690f971cd54013d764a0f920e0766c2ae00f56a2367a599104` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

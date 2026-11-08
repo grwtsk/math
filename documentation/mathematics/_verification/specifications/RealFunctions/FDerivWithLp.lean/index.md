@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/FDerivWithLp.lean/index.md) · [Full source](../../../../RealFunctions/FDerivWithLp.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FDerivWithLp.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FDerivWithLp.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,18 +59,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [differentiableWithinAt_piLp](../../../../RealFunctions/FDerivWithLp.lean/declarations/differentiablewithinat-pilp.md) | 24 | `result-track:ffa12444c6af2cb0d9a19f87cfb12546fcc3e9b27cfe2057e5eb680f074a9d1b` |
-| 2 | `theorem` | [differentiableAt_piLp](../../../../RealFunctions/FDerivWithLp.lean/declarations/differentiableat-pilp.md) | 30 | `result-track:1963e11066b5427ae4ca1c4db3d02852b91682d2612d9bd75fede6bc8d107597` |
-| 3 | `theorem` | [differentiableOn_piLp](../../../../RealFunctions/FDerivWithLp.lean/declarations/differentiableon-pilp.md) | 35 | `result-track:8ffdb5d11e7eadbed02206164b09a4328fb2591afe8727fab1d3ec8d9e8c8743` |
-| 4 | `theorem` | [differentiable_piLp](../../../../RealFunctions/FDerivWithLp.lean/declarations/differentiable-pilp.md) | 40 | `result-track:86c3cc19842226e1ca7296a007bd6053dc830362eca9359fd880895145546769` |
-| 5 | `theorem` | [hasStrictFDerivAt_piLp](../../../../RealFunctions/FDerivWithLp.lean/declarations/hasstrictfderivat-pilp.md) | 44 | `result-track:bb92a14a90b51fe4f57148eb5ce92f7a8abbcfa78bd7f9176b35538e6bb45555` |
-| 6 | `theorem` | [hasFDerivWithinAt_piLp](../../../../RealFunctions/FDerivWithLp.lean/declarations/hasfderivwithinat-pilp.md) | 50 | `result-track:72b9efba8f4f00ae42f8b7ea135e05ab2096cda97346ea169ab2e346bd07e9fb` |
-| 7 | `theorem` | [hasStrictFDerivAt_equiv](../../../../RealFunctions/FDerivWithLp.lean/declarations/hasstrictfderivat-equiv.md) | 58 | `result-track:169a29d5619fc794c28fcb86913f416f005f3a2624c5cd2fa4392d8bb965abbe` |
-| 8 | `theorem` | [hasStrictFDerivAt_equiv_symm](../../../../RealFunctions/FDerivWithLp.lean/declarations/hasstrictfderivat-equiv-symm.md) | 63 | `result-track:020c1e86284ac301ab14b702b5cb43f76b85259c530e41f5fe03b89e3bd59ef6` |
-| 9 | `theorem` | [hasStrictFDerivAt_apply](../../../../RealFunctions/FDerivWithLp.lean/declarations/hasstrictfderivat-apply.md) | 68 | `result-track:497e5bd486192b1573b19383f591fc533699b0e13c52cbcbfa1ad15f0bc4248d` |
-| 10 | `theorem` | [hasFDerivAt_equiv](../../../../RealFunctions/FDerivWithLp.lean/declarations/hasfderivat-equiv.md) | 72 | `result-track:46458a01c2fd72b94b270964e5f796d17c39b299973a6e8de71685153f86cac6` |
-| 11 | `theorem` | [hasFDerivAt_equiv_symm](../../../../RealFunctions/FDerivWithLp.lean/declarations/hasfderivat-equiv-symm.md) | 77 | `result-track:0459cb328110645e0eec555aa2a9548e6534e01f8bc923a0b2e0cedf71b94625` |
-| 12 | `theorem` | [hasFDerivAt_apply](../../../../RealFunctions/FDerivWithLp.lean/declarations/hasfderivat-apply.md) | 82 | `result-track:1f21fb1cade9c5e9ac1994cb2ae52550f93a5dc26275492e924594a338a6f67f` |
+| 1 | `theorem` | [differentiableWithinAt_piLp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FDerivWithLp.lean/declarations/differentiablewithinat-pilp.md) | 24 | `result-track:ffa12444c6af2cb0d9a19f87cfb12546fcc3e9b27cfe2057e5eb680f074a9d1b` |
+| 2 | `theorem` | [differentiableAt_piLp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FDerivWithLp.lean/declarations/differentiableat-pilp.md) | 30 | `result-track:1963e11066b5427ae4ca1c4db3d02852b91682d2612d9bd75fede6bc8d107597` |
+| 3 | `theorem` | [differentiableOn_piLp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FDerivWithLp.lean/declarations/differentiableon-pilp.md) | 35 | `result-track:8ffdb5d11e7eadbed02206164b09a4328fb2591afe8727fab1d3ec8d9e8c8743` |
+| 4 | `theorem` | [differentiable_piLp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FDerivWithLp.lean/declarations/differentiable-pilp.md) | 40 | `result-track:86c3cc19842226e1ca7296a007bd6053dc830362eca9359fd880895145546769` |
+| 5 | `theorem` | [hasStrictFDerivAt_piLp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FDerivWithLp.lean/declarations/hasstrictfderivat-pilp.md) | 44 | `result-track:bb92a14a90b51fe4f57148eb5ce92f7a8abbcfa78bd7f9176b35538e6bb45555` |
+| 6 | `theorem` | [hasFDerivWithinAt_piLp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FDerivWithLp.lean/declarations/hasfderivwithinat-pilp.md) | 50 | `result-track:72b9efba8f4f00ae42f8b7ea135e05ab2096cda97346ea169ab2e346bd07e9fb` |
+| 7 | `theorem` | [hasStrictFDerivAt_equiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FDerivWithLp.lean/declarations/hasstrictfderivat-equiv.md) | 58 | `result-track:169a29d5619fc794c28fcb86913f416f005f3a2624c5cd2fa4392d8bb965abbe` |
+| 8 | `theorem` | [hasStrictFDerivAt_equiv_symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FDerivWithLp.lean/declarations/hasstrictfderivat-equiv-symm.md) | 63 | `result-track:020c1e86284ac301ab14b702b5cb43f76b85259c530e41f5fe03b89e3bd59ef6` |
+| 9 | `theorem` | [hasStrictFDerivAt_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FDerivWithLp.lean/declarations/hasstrictfderivat-apply.md) | 68 | `result-track:497e5bd486192b1573b19383f591fc533699b0e13c52cbcbfa1ad15f0bc4248d` |
+| 10 | `theorem` | [hasFDerivAt_equiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FDerivWithLp.lean/declarations/hasfderivat-equiv.md) | 72 | `result-track:46458a01c2fd72b94b270964e5f796d17c39b299973a6e8de71685153f86cac6` |
+| 11 | `theorem` | [hasFDerivAt_equiv_symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FDerivWithLp.lean/declarations/hasfderivat-equiv-symm.md) | 77 | `result-track:0459cb328110645e0eec555aa2a9548e6534e01f8bc923a0b2e0cedf71b94625` |
+| 12 | `theorem` | [hasFDerivAt_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FDerivWithLp.lean/declarations/hasfderivat-apply.md) | 82 | `result-track:1f21fb1cade9c5e9ac1994cb2ae52550f93a5dc26275492e924594a338a6f67f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

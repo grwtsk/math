@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WangZahlCorrelationSquareNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WangZahlCorrelationSquareNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WangZahlCorrelationSquareNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WangZahlCorrelationSquareNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [HyperbolicSurgeryPlan.nodePacketAtoms](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WangZahlCorrelationSquareNamespacedPublic.lean/declarations/hyperbolicsurgeryplan-nodepacketatoms.md) | 37 | `declaration-track:39756d48548d8b6f77fcd852cc3d583a4c53393e24bb21a20ab795e8a848c375` |
-| 2 | `def` | [WangZahlNodeAdmissible](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WangZahlCorrelationSquareNamespacedPublic.lean/declarations/wangzahlnodeadmissible.md) | 47 | `declaration-track:b1839cf8c02ee93bc543366d3c7757e8031ad7823b63c570cb6d62c41d449921` |
-| 3 | `def` | [LocalWangZahlCorrelationSquareEstimate](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WangZahlCorrelationSquareNamespacedPublic.lean/declarations/localwangzahlcorrelationsquareestimate.md) | 61 | `declaration-track:914dc87537a90bf1bb40cccdcf9dc351fe802463fb842f75cc786434b4804e0d` |
+| 1 | `def` | [HyperbolicSurgeryPlan.nodePacketAtoms](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WangZahlCorrelationSquareNamespacedPublic.lean/declarations/hyperbolicsurgeryplan-nodepacketatoms.md) | 37 | `declaration-track:39756d48548d8b6f77fcd852cc3d583a4c53393e24bb21a20ab795e8a848c375` |
+| 2 | `def` | [WangZahlNodeAdmissible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WangZahlCorrelationSquareNamespacedPublic.lean/declarations/wangzahlnodeadmissible.md) | 47 | `declaration-track:b1839cf8c02ee93bc543366d3c7757e8031ad7823b63c570cb6d62c41d449921` |
+| 3 | `def` | [LocalWangZahlCorrelationSquareEstimate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WangZahlCorrelationSquareNamespacedPublic.lean/declarations/localwangzahlcorrelationsquareestimate.md) | 61 | `declaration-track:914dc87537a90bf1bb40cccdcf9dc351fe802463fb842f75cc786434b4804e0d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

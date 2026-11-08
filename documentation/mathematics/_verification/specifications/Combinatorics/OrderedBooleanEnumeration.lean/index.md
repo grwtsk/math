@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/OrderedBooleanEnumeration.lean/index.md) · [Full source](../../../../Combinatorics/OrderedBooleanEnumeration.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OrderedBooleanEnumeration.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OrderedBooleanEnumeration.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -48,7 +48,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 - `Boolean.Matrix` — import line 19; external provider; requires a separately pinned dependency.
 - `Boolean.Cube.ListTools` — import line 20; external provider; requires a separately pinned dependency.
-- [Finite Boolean Carriers](../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteBooleanCarriers.lean/index.md) — import line 21; pinned internal source present.
+- [Finite Boolean Carriers](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteBooleanCarriers.lean/index.md) — import line 21; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,16 +59,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Hypercube.vertices](../../../../Combinatorics/OrderedBooleanEnumeration.lean/declarations/hypercube-vertices.md) | 30 | `declaration-track:7d02324e27077be1a25924401ce99eb0ac7828565ba8ceb4dbc032bb17bcb31c` |
-| 2 | `theorem` | [Hypercube.vertices_length](../../../../Combinatorics/OrderedBooleanEnumeration.lean/declarations/hypercube-vertices-length.md) | 36 | `result-track:a468e9f3d36817381ddd6386f4d089f2d4edef9a501f75b4e3194e8e393d8d2e` |
-| 3 | `theorem` | [Hypercube.bitAtNat_two_mul_succ](../../../../Combinatorics/OrderedBooleanEnumeration.lean/declarations/hypercube-bitatnat-two-mul-succ.md) | 55 | `result-track:a7a08c08d7452521984e4a5e88a9314af8cde536f87f7e469454a4bbc782dc64` |
-| 4 | `theorem` | [Hypercube.bitAtNat_two_mul_add_one_succ](../../../../Combinatorics/OrderedBooleanEnumeration.lean/declarations/hypercube-bitatnat-two-mul-add-one-succ.md) | 61 | `result-track:f095401a0c219392ff8975d1ee102537a9f49d9837cbb1a7cee520375b3ec8ba` |
-| 5 | `theorem` | [Hypercube.bitAtNat_two_mul_zero](../../../../Combinatorics/OrderedBooleanEnumeration.lean/declarations/hypercube-bitatnat-two-mul-zero.md) | 67 | `result-track:8ee8ca0ea71b328cde162747248f11586dacdf270abb20d451e567f125177dbe` |
-| 6 | `theorem` | [Hypercube.bitAtNat_two_mul_add_one_zero](../../../../Combinatorics/OrderedBooleanEnumeration.lean/declarations/hypercube-bitatnat-two-mul-add-one-zero.md) | 71 | `result-track:9323427a5658d01f6c3763083b7ea4d329c94c76c9d89922945fde24d37f52a8` |
-| 7 | `theorem` | [Hypercube.pointOfIndex_two_mul](../../../../Combinatorics/OrderedBooleanEnumeration.lean/declarations/hypercube-pointofindex-two-mul.md) | 75 | `result-track:38a5d71bf1e882f05f703d8d2e2ded19e6e338cf47df49b8701f3e36098322b2` |
-| 8 | `theorem` | [Hypercube.pointOfIndex_two_mul_add_one](../../../../Combinatorics/OrderedBooleanEnumeration.lean/declarations/hypercube-pointofindex-two-mul-add-one.md) | 90 | `result-track:34dc41e000c1942862032fde2a7ebad5b489e616b7001639bf8ca7ab32246231` |
-| 9 | `theorem` | [Hypercube.range_two_mul](../../../../Combinatorics/OrderedBooleanEnumeration.lean/declarations/hypercube-range-two-mul.md) | 105 | `result-track:2209ac440287e2bc29f7b35eb9ea472ac121d624278523e97d7709a4da4dccf0` |
-| 10 | `theorem` | [Hypercube.vertices_eq_range_map_pointOfIndex](../../../../Combinatorics/OrderedBooleanEnumeration.lean/declarations/hypercube-vertices-eq-range-map-pointofindex.md) | 119 | `result-track:df3da0f5a6076d56f77e751b5c2ba5562bd805badd2e602c5a809df4a6c085a0` |
+| 1 | `def` | [Hypercube.vertices](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OrderedBooleanEnumeration.lean/declarations/hypercube-vertices.md) | 30 | `declaration-track:7d02324e27077be1a25924401ce99eb0ac7828565ba8ceb4dbc032bb17bcb31c` |
+| 2 | `theorem` | [Hypercube.vertices_length](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OrderedBooleanEnumeration.lean/declarations/hypercube-vertices-length.md) | 36 | `result-track:a468e9f3d36817381ddd6386f4d089f2d4edef9a501f75b4e3194e8e393d8d2e` |
+| 3 | `theorem` | [Hypercube.bitAtNat_two_mul_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OrderedBooleanEnumeration.lean/declarations/hypercube-bitatnat-two-mul-succ.md) | 55 | `result-track:a7a08c08d7452521984e4a5e88a9314af8cde536f87f7e469454a4bbc782dc64` |
+| 4 | `theorem` | [Hypercube.bitAtNat_two_mul_add_one_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OrderedBooleanEnumeration.lean/declarations/hypercube-bitatnat-two-mul-add-one-succ.md) | 61 | `result-track:f095401a0c219392ff8975d1ee102537a9f49d9837cbb1a7cee520375b3ec8ba` |
+| 5 | `theorem` | [Hypercube.bitAtNat_two_mul_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OrderedBooleanEnumeration.lean/declarations/hypercube-bitatnat-two-mul-zero.md) | 67 | `result-track:8ee8ca0ea71b328cde162747248f11586dacdf270abb20d451e567f125177dbe` |
+| 6 | `theorem` | [Hypercube.bitAtNat_two_mul_add_one_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OrderedBooleanEnumeration.lean/declarations/hypercube-bitatnat-two-mul-add-one-zero.md) | 71 | `result-track:9323427a5658d01f6c3763083b7ea4d329c94c76c9d89922945fde24d37f52a8` |
+| 7 | `theorem` | [Hypercube.pointOfIndex_two_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OrderedBooleanEnumeration.lean/declarations/hypercube-pointofindex-two-mul.md) | 75 | `result-track:38a5d71bf1e882f05f703d8d2e2ded19e6e338cf47df49b8701f3e36098322b2` |
+| 8 | `theorem` | [Hypercube.pointOfIndex_two_mul_add_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OrderedBooleanEnumeration.lean/declarations/hypercube-pointofindex-two-mul-add-one.md) | 90 | `result-track:34dc41e000c1942862032fde2a7ebad5b489e616b7001639bf8ca7ab32246231` |
+| 9 | `theorem` | [Hypercube.range_two_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OrderedBooleanEnumeration.lean/declarations/hypercube-range-two-mul.md) | 105 | `result-track:2209ac440287e2bc29f7b35eb9ea472ac121d624278523e97d7709a4da4dccf0` |
+| 10 | `theorem` | [Hypercube.vertices_eq_range_map_pointOfIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OrderedBooleanEnumeration.lean/declarations/hypercube-vertices-eq-range-map-pointofindex.md) | 119 | `result-track:df3da0f5a6076d56f77e751b5c2ba5562bd805badd2e602c5a809df4a6c085a0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

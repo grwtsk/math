@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/MultiplicativeNumberTheory/ReciprocalPrimeBlockCostHistoricalSourceEdition2.lean/index.md) · [Full source](../../../../../NumberTheory/MultiplicativeNumberTheory/ReciprocalPrimeBlockCostHistoricalSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/ReciprocalPrimeBlockCostHistoricalSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/ReciprocalPrimeBlockCostHistoricalSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,10 +46,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Moebius.PrimeProductPrefixEnergy`](../../../../../MeasureAndIntegration/PrimeProductPrefixEnergyHistoricalSourceEdition2.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.Analysis.AsymptoticAnalysis.ExponentialRecurrence`](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/ExponentialRecurrenceHistoricalSourceEdition2.lean/index.md) — import line 2; pinned internal source present.
-- [`GRWTSK.NumberTheory.PrimeCounting.ReciprocalPrimeIntervalBounds`](../../../../../NumberTheory/MultiplicativeNumberTheory/ReciprocalPrimeIntervalBounds.lean/index.md) — import line 3; pinned internal source present.
-- [`GRWTSK.NumberTheory.PrimeCounting.ReciprocalPrimeLogBound`](../../../../../MeasureAndIntegration/ReciprocalPrimeLogBound.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.PrimeProductPrefixEnergy`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PrimeProductPrefixEnergyHistoricalSourceEdition2.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Analysis.AsymptoticAnalysis.ExponentialRecurrence`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/ExponentialRecurrenceHistoricalSourceEdition2.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.NumberTheory.PrimeCounting.ReciprocalPrimeIntervalBounds`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/ReciprocalPrimeIntervalBounds.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.PrimeCounting.ReciprocalPrimeLogBound`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReciprocalPrimeLogBound.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -60,9 +60,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [controller_square_root_cost_bound](../../../../../NumberTheory/MultiplicativeNumberTheory/ReciprocalPrimeBlockCostHistoricalSourceEdition2.lean/declarations/controller-square-root-cost-bound.md) | 14 | `result-track:213b9a7babe4f06cb8daaf74f532b6e1bdc78f2561797bad050f2534d495da36` |
-| 2 | `theorem` | [controller_cost_log_budget](../../../../../NumberTheory/MultiplicativeNumberTheory/ReciprocalPrimeBlockCostHistoricalSourceEdition2.lean/declarations/controller-cost-log-budget.md) | 49 | `result-track:3fa959e441bd389ed525ea3b0ed270c6ecf20710cffc20fe31e823b76c8c50b3` |
-| 3 | `theorem` | [controller_costs_have_log_budget](../../../../../NumberTheory/MultiplicativeNumberTheory/ReciprocalPrimeBlockCostHistoricalSourceEdition2.lean/declarations/controller-costs-have-log-budget.md) | 61 | `result-track:e86ff032036218c9a41e14e9f0954b1206c490ccbce657cc55d0631b4e4f13de` |
+| 1 | `theorem` | [controller_square_root_cost_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/ReciprocalPrimeBlockCostHistoricalSourceEdition2.lean/declarations/controller-square-root-cost-bound.md) | 14 | `result-track:213b9a7babe4f06cb8daaf74f532b6e1bdc78f2561797bad050f2534d495da36` |
+| 2 | `theorem` | [controller_cost_log_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/ReciprocalPrimeBlockCostHistoricalSourceEdition2.lean/declarations/controller-cost-log-budget.md) | 49 | `result-track:3fa959e441bd389ed525ea3b0ed270c6ecf20710cffc20fe31e823b76c8c50b3` |
+| 3 | `theorem` | [controller_costs_have_log_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/ReciprocalPrimeBlockCostHistoricalSourceEdition2.lean/declarations/controller-costs-have-log-budget.md) | 61 | `result-track:e86ff032036218c9a41e14e9f0954b1206c490ccbce657cc55d0631b4e4f13de` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

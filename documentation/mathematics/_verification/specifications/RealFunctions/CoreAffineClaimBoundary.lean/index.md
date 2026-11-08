@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/CoreAffineClaimBoundary.lean/index.md) · [Full source](../../../../RealFunctions/CoreAffineClaimBoundary.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CoreAffineClaimBoundary.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CoreAffineClaimBoundary.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [AffineClaimBoundary](../../../../RealFunctions/CoreAffineClaimBoundary.lean/declarations/affineclaimboundary.md) | 8 | `declaration-track:b866ee49121676bd091ca34acb9beb1eff127b567eb74e116421cf2f6897f482` |
-| 2 | `inductive` | [CoverageModality](../../../../RealFunctions/CoreAffineClaimBoundary.lean/declarations/coveragemodality.md) | 11 | `declaration-track:0cea854236b432aa8d7c8acb92eae68cb235575d59ac118c1a8ba0d2c3139a54` |
-| 3 | `structure` | [Context](../../../../RealFunctions/CoreAffineClaimBoundary.lean/declarations/context.md) | 19 | `declaration-track:23d39ca4f4fb7bfbc6afee882c4a1d2202496e0cd3410764e4d7471e28649d27` |
-| 4 | `structure` | [Object](../../../../RealFunctions/CoreAffineClaimBoundary.lean/declarations/object.md) | 25 | `declaration-track:990f781aa9c41034063a914e25c6b62bafe93f3240bb7b8a2db08e5d90f8c4e9` |
-| 5 | `structure` | [Morphism](../../../../RealFunctions/CoreAffineClaimBoundary.lean/declarations/morphism.md) | 32 | `declaration-track:1b53fe0ec4bb65e183f188a0a4ee3268ac7fbaaa30c1dbf6daecd6f03b75775c` |
-| 6 | `structure` | [ComparisonObject](../../../../RealFunctions/CoreAffineClaimBoundary.lean/declarations/comparisonobject.md) | 38 | `declaration-track:6abbb6245c322a80713c2429fd6e50a2bcbc34a880856057132d07518e6f68d8` |
-| 7 | `structure` | [ComparisonTopologyDescriptor](../../../../RealFunctions/CoreAffineClaimBoundary.lean/declarations/comparisontopologydescriptor.md) | 45 | `declaration-track:d6e149b7854a1bb3b44c5db95c47785111a4a364b19032ff833669ec3a00d87d` |
-| 8 | `theorem` | [affineTopos_claimBoundary_visible](../../../../RealFunctions/CoreAffineClaimBoundary.lean/declarations/affinetopos-claimboundary-visible.md) | 50 | `result-track:cbdd1db91ef90658fe0f9b4f8287960fedc1d94513f0e436533efdf02051cf61` |
-| 9 | `theorem` | [affineTopos_comparison_boundary_visible](../../../../RealFunctions/CoreAffineClaimBoundary.lean/declarations/affinetopos-comparison-boundary-visible.md) | 55 | `result-track:ff8c8d1fb9eec29b8385643950b73a9ed11aee3491ce904c5b6e4f5ce79078fc` |
+| 1 | `structure` | [AffineClaimBoundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CoreAffineClaimBoundary.lean/declarations/affineclaimboundary.md) | 8 | `declaration-track:b866ee49121676bd091ca34acb9beb1eff127b567eb74e116421cf2f6897f482` |
+| 2 | `inductive` | [CoverageModality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CoreAffineClaimBoundary.lean/declarations/coveragemodality.md) | 11 | `declaration-track:0cea854236b432aa8d7c8acb92eae68cb235575d59ac118c1a8ba0d2c3139a54` |
+| 3 | `structure` | [Context](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CoreAffineClaimBoundary.lean/declarations/context.md) | 19 | `declaration-track:23d39ca4f4fb7bfbc6afee882c4a1d2202496e0cd3410764e4d7471e28649d27` |
+| 4 | `structure` | [Object](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CoreAffineClaimBoundary.lean/declarations/object.md) | 25 | `declaration-track:990f781aa9c41034063a914e25c6b62bafe93f3240bb7b8a2db08e5d90f8c4e9` |
+| 5 | `structure` | [Morphism](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CoreAffineClaimBoundary.lean/declarations/morphism.md) | 32 | `declaration-track:1b53fe0ec4bb65e183f188a0a4ee3268ac7fbaaa30c1dbf6daecd6f03b75775c` |
+| 6 | `structure` | [ComparisonObject](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CoreAffineClaimBoundary.lean/declarations/comparisonobject.md) | 38 | `declaration-track:6abbb6245c322a80713c2429fd6e50a2bcbc34a880856057132d07518e6f68d8` |
+| 7 | `structure` | [ComparisonTopologyDescriptor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CoreAffineClaimBoundary.lean/declarations/comparisontopologydescriptor.md) | 45 | `declaration-track:d6e149b7854a1bb3b44c5db95c47785111a4a364b19032ff833669ec3a00d87d` |
+| 8 | `theorem` | [affineTopos_claimBoundary_visible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CoreAffineClaimBoundary.lean/declarations/affinetopos-claimboundary-visible.md) | 50 | `result-track:cbdd1db91ef90658fe0f9b4f8287960fedc1d94513f0e436533efdf02051cf61` |
+| 9 | `theorem` | [affineTopos_comparison_boundary_visible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CoreAffineClaimBoundary.lean/declarations/affinetopos-comparison-boundary-visible.md) | 55 | `result-track:ff8c8d1fb9eec29b8385643950b73a9ed11aee3491ce904c5b6e4f5ce79078fc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

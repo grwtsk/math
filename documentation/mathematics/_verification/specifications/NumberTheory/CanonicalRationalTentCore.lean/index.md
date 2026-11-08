@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/CanonicalRationalTentCore.lean/index.md) · [Full source](../../../../NumberTheory/CanonicalRationalTentCore.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalRationalTentCore.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalRationalTentCore.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,9 +46,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Interfaces.RationalPowerEvaluationCore`](../../../../FunctionsOfAComplexVariable/RationalPowerEvaluationCore.lean/index.md) — import line 3; pinned internal source present.
-- [`GRWTSK.NumberTheory.Chebyshev.CanonicalRationalTentEvaluation`](../../../../NumberTheory/CanonicalRationalTentEvaluation.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.Checks.RationalTentControls`](../../../../FunctionsOfAComplexVariable/RationalTentControls.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Interfaces.RationalPowerEvaluationCore`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalPowerEvaluationCore.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.CanonicalRationalTentEvaluation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalRationalTentEvaluation.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.Checks.RationalTentControls`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalTentControls.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 

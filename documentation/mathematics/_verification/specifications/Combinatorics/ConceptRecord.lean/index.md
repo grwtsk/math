@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ConceptRecord.lean/index.md) · [Full source](../../../../Combinatorics/ConceptRecord.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConceptRecord.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConceptRecord.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,12 +61,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Record](../../../../Combinatorics/ConceptRecord.lean/declarations/record.md) | 13 | `declaration-track:0ac79644d5784d42cb093964c5a04c1ba12b94465488b07ee867cea4e0e1bf65` |
-| 2 | `def` | [SameIdentity](../../../../Combinatorics/ConceptRecord.lean/declarations/sameidentity.md) | 34 | `declaration-track:49a61e0e243f838eec8c57939bdbba4e31a8c1c3a7182b5d4dfc43110fb16ecf` |
-| 3 | `instance` | [(anonymous)](../../../../Combinatorics/ConceptRecord.lean/declarations/instance.md) | 36 | `declaration-track:d9f9529574a60d7656d2c7da4aecb65d74304b423f369ea1fb41385ab15c9061` |
-| 4 | `def` | [AcceptsEntity](../../../../Combinatorics/ConceptRecord.lean/declarations/acceptsentity.md) | 40 | `declaration-track:585969a5810aa8c3c2e99b886a9162cb9a00bebaf163a5f668903a95de904881` |
-| 5 | `theorem` | [sameIdentity_of_id_eq](../../../../Combinatorics/ConceptRecord.lean/declarations/sameidentity-of-id-eq.md) | 44 | `result-track:d1e8b5ace83a5f95208e6bb076177178d649700224f31b038f778ad531c84649` |
-| 6 | `def` | [SameName](../../../../Combinatorics/ConceptRecord.lean/declarations/samename.md) | 49 | `declaration-track:afd9c8cf0a08e5d087835a7f20398092efcf7a49ec30e31736ad11c69de35bde` |
+| 1 | `structure` | [Record](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConceptRecord.lean/declarations/record.md) | 13 | `declaration-track:0ac79644d5784d42cb093964c5a04c1ba12b94465488b07ee867cea4e0e1bf65` |
+| 2 | `def` | [SameIdentity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConceptRecord.lean/declarations/sameidentity.md) | 34 | `declaration-track:49a61e0e243f838eec8c57939bdbba4e31a8c1c3a7182b5d4dfc43110fb16ecf` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConceptRecord.lean/declarations/instance.md) | 36 | `declaration-track:d9f9529574a60d7656d2c7da4aecb65d74304b423f369ea1fb41385ab15c9061` |
+| 4 | `def` | [AcceptsEntity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConceptRecord.lean/declarations/acceptsentity.md) | 40 | `declaration-track:585969a5810aa8c3c2e99b886a9162cb9a00bebaf163a5f668903a95de904881` |
+| 5 | `theorem` | [sameIdentity_of_id_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConceptRecord.lean/declarations/sameidentity-of-id-eq.md) | 44 | `result-track:d1e8b5ace83a5f95208e6bb076177178d649700224f31b038f778ad531c84649` |
+| 6 | `def` | [SameName](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConceptRecord.lean/declarations/samename.md) | 49 | `declaration-track:afd9c8cf0a08e5d087835a7f20398092efcf7a49ec30e31736ad11c69de35bde` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogChebyshevConverse.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogChebyshevConverse.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogChebyshevConverse.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogChebyshevConverse.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogChebyshevStrength`](../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredMobiusLogChebyshevStrength.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogChebyshevStrength`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredMobiusLogChebyshevStrength.lean/index.md) — import line 6; pinned internal source present.
 - `Mathlib.Tactic` — import line 7; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [dyadicChebyshevError](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogChebyshevConverse.lean/declarations/dyadicchebysheverror.md) | 15 | `declaration-track:d3489ab465dc0c970b7edaf769f97c609aa6ad290860c4f1b32b00a851a74fce` |
-| 2 | `theorem` | [dyadicChebyshevError_increment](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogChebyshevConverse.lean/declarations/dyadicchebysheverror-increment.md) | 18 | `result-track:5be537ebbf5699bfa59eae14ff35cf4dcc76fec137400518163a2385441bd398` |
-| 3 | `theorem` | [dyadicChebyshevError_eq_base_add_sum](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogChebyshevConverse.lean/declarations/dyadicchebysheverror-eq-base-add-sum.md) | 31 | `result-track:5604cb1b2fe5c4423c7c5654538fbe2fef169034a4266c3a6b45d170a8967a26` |
-| 4 | `theorem` | [abs_dyadicChebyshevError_le_of_prefix](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogChebyshevConverse.lean/declarations/abs-dyadicchebysheverror-le-of-prefix.md) | 46 | `result-track:c6b319e410c1ef0e91d54fac8579c99ea96d5de25c4ace48f6460427e53ffcfc` |
+| 1 | `def` | [dyadicChebyshevError](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogChebyshevConverse.lean/declarations/dyadicchebysheverror.md) | 15 | `declaration-track:d3489ab465dc0c970b7edaf769f97c609aa6ad290860c4f1b32b00a851a74fce` |
+| 2 | `theorem` | [dyadicChebyshevError_increment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogChebyshevConverse.lean/declarations/dyadicchebysheverror-increment.md) | 18 | `result-track:5be537ebbf5699bfa59eae14ff35cf4dcc76fec137400518163a2385441bd398` |
+| 3 | `theorem` | [dyadicChebyshevError_eq_base_add_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogChebyshevConverse.lean/declarations/dyadicchebysheverror-eq-base-add-sum.md) | 31 | `result-track:5604cb1b2fe5c4423c7c5654538fbe2fef169034a4266c3a6b45d170a8967a26` |
+| 4 | `theorem` | [abs_dyadicChebyshevError_le_of_prefix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogChebyshevConverse.lean/declarations/abs-dyadicchebysheverror-le-of-prefix.md) | 46 | `result-track:c6b319e410c1ef0e91d54fac8579c99ea96d5de25c4ace48f6460427e53ffcfc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

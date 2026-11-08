@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FullLineAssembly.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FullLineAssembly.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FullLineAssembly.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FullLineAssembly.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [corner_re_im](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FullLineAssembly.lean/declarations/corner-re-im.md) | 23 | `result-track:45ccbfc75f86b9d0d1dc91720423c2349b17b5e74cb42f32b78c51867708d801` |
-| 2 | `theorem` | [inv_two_pi_I_mul_I](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FullLineAssembly.lean/declarations/inv-two-pi-i-mul-i.md) | 29 | `result-track:4ce6ee3211acd97cc4fce875e9762a6eef16f480257bbb570365e0a85f6ab0e2` |
-| 3 | `theorem` | [full_line_identity](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FullLineAssembly.lean/declarations/full-line-identity.md) | 39 | `result-track:285055bb8e2c8ca784fe83a0a571e2dab18575de99a6ec2db09dc655b8defba4` |
+| 1 | `theorem` | [corner_re_im](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FullLineAssembly.lean/declarations/corner-re-im.md) | 23 | `result-track:45ccbfc75f86b9d0d1dc91720423c2349b17b5e74cb42f32b78c51867708d801` |
+| 2 | `theorem` | [inv_two_pi_I_mul_I](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FullLineAssembly.lean/declarations/inv-two-pi-i-mul-i.md) | 29 | `result-track:4ce6ee3211acd97cc4fce875e9762a6eef16f480257bbb570365e0a85f6ab0e2` |
+| 3 | `theorem` | [full_line_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FullLineAssembly.lean/declarations/full-line-identity.md) | 39 | `result-track:285055bb8e2c8ca784fe83a0a571e2dab18575de99a6ec2db09dc655b8defba4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

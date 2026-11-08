@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/FinsetIndicatorNamespacedPublic.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/FinsetIndicatorNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/FinsetIndicatorNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/FinsetIndicatorNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [prod_mulIndicator_subset_of_eq_one](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/FinsetIndicatorNamespacedPublic.lean/declarations/prod-mulindicator-subset-of-eq-one.md) | 42 | `result-track:0f799178efcdad9e724cfdcc0cb533a26a43afd22cc02c3ee3762010d50aebd6` |
-| 2 | `lemma` | [prod_mulIndicator_subset](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/FinsetIndicatorNamespacedPublic.lean/declarations/prod-mulindicator-subset.md) | 53 | `result-track:f8ba29578088159726d912dfec23e893ddf64b258636fc89a19b6f0ce6ea1a29` |
-| 3 | `lemma` | [prod_mulIndicator_eq_prod_filter](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/FinsetIndicatorNamespacedPublic.lean/declarations/prod-mulindicator-eq-prod-filter.md) | 58 | `result-track:0f040851e98bfee2c8b66411bf7c63957ae54a31817d68548347b99a4f538020` |
-| 4 | `lemma` | [prod_mulIndicator_eq_prod_inter](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/FinsetIndicatorNamespacedPublic.lean/declarations/prod-mulindicator-eq-prod-inter.md) | 67 | `result-track:58e90a15e153dadf8abd3541fd45fdfd1e742b539d732f5759d0327720e71383` |
-| 5 | `lemma` | [mulIndicator_prod](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/FinsetIndicatorNamespacedPublic.lean/declarations/mulindicator-prod.md) | 72 | `result-track:8369a24d9b5fb761096c852dfe47322359fb95ed3f75599ba3c197563016de95` |
-| 6 | `lemma` | [mulIndicator_biUnion](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/FinsetIndicatorNamespacedPublic.lean/declarations/mulindicator-biunion.md) | 77 | `result-track:651a99953ca47106c5285ab4b1a89416d683205bbf1f727f9268a0a4168a37f4` |
-| 7 | `lemma` | [mulIndicator_biUnion_apply](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/FinsetIndicatorNamespacedPublic.lean/declarations/mulindicator-biunion-apply.md) | 90 | `result-track:56d82eaf66a310d4fb7dce11cd25634aff9516353cce11b5b2f2768a55cc8a7f` |
+| 1 | `lemma` | [prod_mulIndicator_subset_of_eq_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/FinsetIndicatorNamespacedPublic.lean/declarations/prod-mulindicator-subset-of-eq-one.md) | 42 | `result-track:0f799178efcdad9e724cfdcc0cb533a26a43afd22cc02c3ee3762010d50aebd6` |
+| 2 | `lemma` | [prod_mulIndicator_subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/FinsetIndicatorNamespacedPublic.lean/declarations/prod-mulindicator-subset.md) | 53 | `result-track:f8ba29578088159726d912dfec23e893ddf64b258636fc89a19b6f0ce6ea1a29` |
+| 3 | `lemma` | [prod_mulIndicator_eq_prod_filter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/FinsetIndicatorNamespacedPublic.lean/declarations/prod-mulindicator-eq-prod-filter.md) | 58 | `result-track:0f040851e98bfee2c8b66411bf7c63957ae54a31817d68548347b99a4f538020` |
+| 4 | `lemma` | [prod_mulIndicator_eq_prod_inter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/FinsetIndicatorNamespacedPublic.lean/declarations/prod-mulindicator-eq-prod-inter.md) | 67 | `result-track:58e90a15e153dadf8abd3541fd45fdfd1e742b539d732f5759d0327720e71383` |
+| 5 | `lemma` | [mulIndicator_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/FinsetIndicatorNamespacedPublic.lean/declarations/mulindicator-prod.md) | 72 | `result-track:8369a24d9b5fb761096c852dfe47322359fb95ed3f75599ba3c197563016de95` |
+| 6 | `lemma` | [mulIndicator_biUnion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/FinsetIndicatorNamespacedPublic.lean/declarations/mulindicator-biunion.md) | 77 | `result-track:651a99953ca47106c5285ab4b1a89416d683205bbf1f727f9268a0a4168a37f4` |
+| 7 | `lemma` | [mulIndicator_biUnion_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/FinsetIndicatorNamespacedPublic.lean/declarations/mulindicator-biunion-apply.md) | 90 | `result-track:56d82eaf66a310d4fb7dce11cd25634aff9516353cce11b5b2f2768a55cc8a7f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

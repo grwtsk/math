@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/TentKernelEnclosure.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/TentKernelEnclosure.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/TentKernelEnclosure.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/TentKernelEnclosure.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.FiniteExponentialEnclosure`](../../../../FunctionsOfAComplexVariable/FiniteExponentialEnclosure.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.TentMellinKernel`](../../../../MeasureAndIntegration/TentMellinKernel.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.FiniteExponentialEnclosure`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FiniteExponentialEnclosure.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.TentMellinKernel`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentMellinKernel.lean/index.md) — import line 5; pinned internal source present.
 - `Mathlib.Tactic.FieldSimp` — import line 6; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -59,16 +59,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [tentSensitivity](../../../../FunctionsOfAComplexVariable/TentKernelEnclosure.lean/declarations/tentsensitivity.md) | 31 | `declaration-track:e3e34f01b51c26a4966f7da0a79e928b7a33047784aff776f0c020658bbe40f5` |
-| 2 | `theorem` | [norm_tentKernel_sub_le](../../../../FunctionsOfAComplexVariable/TentKernelEnclosure.lean/declarations/norm-tentkernel-sub-le.md) | 35 | `result-track:f1523cb75fb5992a7a7a12d046750056aa92cbb486eef0c52b324bcacf7f0f2d` |
-| 3 | `theorem` | [tentSensitivity_one_le](../../../../FunctionsOfAComplexVariable/TentKernelEnclosure.lean/declarations/tentsensitivity-one-le.md) | 77 | `result-track:839e98470aa8bfae74046ebd3e714c4c94975f5a4703abc9fec22d87d4eb7df9` |
-| 4 | `theorem` | [norm_tentKernel_sub_le_one](../../../../FunctionsOfAComplexVariable/TentKernelEnclosure.lean/declarations/norm-tentkernel-sub-le-one.md) | 102 | `result-track:dacb1e15367eed2bff4644202b9e1c948c1194835099a44b7f2bd2b6155d40c9` |
-| 5 | `theorem` | [endpoint_quotient_error](../../../../FunctionsOfAComplexVariable/TentKernelEnclosure.lean/declarations/endpoint-quotient-error.md) | 110 | `result-track:83446cdc5767bb56a8531fb8a2366748466df66333e15b19e8f29984faf8b5aa` |
-| 6 | `structure` | [PointEvaluation](../../../../FunctionsOfAComplexVariable/TentKernelEnclosure.lean/declarations/pointevaluation.md) | 143 | `declaration-track:043e096dcd9db27b54e06aaed96255c55be67131719bff20441a9c58faccc2be` |
-| 7 | `def` | [value](../../../../FunctionsOfAComplexVariable/TentKernelEnclosure.lean/declarations/value.md) | 159 | `declaration-track:7340b236034cb352f7ab023bb442820402dc850b47d80e0419d209855aa94ba4` |
-| 8 | `def` | [error](../../../../FunctionsOfAComplexVariable/TentKernelEnclosure.lean/declarations/error.md) | 163 | `declaration-track:079bb295a921022202cbe71f6993f9beb11d21376c0278e600ca7c020733f458` |
-| 9 | `theorem` | [sound](../../../../FunctionsOfAComplexVariable/TentKernelEnclosure.lean/declarations/sound.md) | 168 | `result-track:f9e7fee19deb67aaea03aa1c01a6fa4e1b899675b42a1838c7125bb528242d4a` |
-| 10 | `theorem` | [error_nonneg](../../../../FunctionsOfAComplexVariable/TentKernelEnclosure.lean/declarations/error-nonneg.md) | 192 | `result-track:b121ee3606112352fcbad92ac62f642bf8366862ba87b764c6aed1ba8e8cb79d` |
+| 1 | `def` | [tentSensitivity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/TentKernelEnclosure.lean/declarations/tentsensitivity.md) | 31 | `declaration-track:e3e34f01b51c26a4966f7da0a79e928b7a33047784aff776f0c020658bbe40f5` |
+| 2 | `theorem` | [norm_tentKernel_sub_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/TentKernelEnclosure.lean/declarations/norm-tentkernel-sub-le.md) | 35 | `result-track:f1523cb75fb5992a7a7a12d046750056aa92cbb486eef0c52b324bcacf7f0f2d` |
+| 3 | `theorem` | [tentSensitivity_one_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/TentKernelEnclosure.lean/declarations/tentsensitivity-one-le.md) | 77 | `result-track:839e98470aa8bfae74046ebd3e714c4c94975f5a4703abc9fec22d87d4eb7df9` |
+| 4 | `theorem` | [norm_tentKernel_sub_le_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/TentKernelEnclosure.lean/declarations/norm-tentkernel-sub-le-one.md) | 102 | `result-track:dacb1e15367eed2bff4644202b9e1c948c1194835099a44b7f2bd2b6155d40c9` |
+| 5 | `theorem` | [endpoint_quotient_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/TentKernelEnclosure.lean/declarations/endpoint-quotient-error.md) | 110 | `result-track:83446cdc5767bb56a8531fb8a2366748466df66333e15b19e8f29984faf8b5aa` |
+| 6 | `structure` | [PointEvaluation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/TentKernelEnclosure.lean/declarations/pointevaluation.md) | 143 | `declaration-track:043e096dcd9db27b54e06aaed96255c55be67131719bff20441a9c58faccc2be` |
+| 7 | `def` | [value](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/TentKernelEnclosure.lean/declarations/value.md) | 159 | `declaration-track:7340b236034cb352f7ab023bb442820402dc850b47d80e0419d209855aa94ba4` |
+| 8 | `def` | [error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/TentKernelEnclosure.lean/declarations/error.md) | 163 | `declaration-track:079bb295a921022202cbe71f6993f9beb11d21376c0278e600ca7c020733f458` |
+| 9 | `theorem` | [sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/TentKernelEnclosure.lean/declarations/sound.md) | 168 | `result-track:f9e7fee19deb67aaea03aa1c01a6fa4e1b899675b42a1838c7125bb528242d4a` |
+| 10 | `theorem` | [error_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/TentKernelEnclosure.lean/declarations/error-nonneg.md) | 192 | `result-track:b121ee3606112352fcbad92ac62f642bf8366862ba87b764c6aed1ba8e8cb79d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CriticalStripMellinLogCancellation.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CriticalStripMellinLogCancellation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripMellinLogCancellation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripMellinLogCancellation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripMellinBounds`](../../../../MeasureAndIntegration/CriticalStripMellinBounds.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripMellinBounds`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripMellinBounds.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Tactic` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [log_le_rpow_sub_one_div](../../../../MeasureAndIntegration/CriticalStripMellinLogCancellation.lean/declarations/log-le-rpow-sub-one-div.md) | 30 | `result-track:b8c3db290560bcbe2cf42a68fe85eb38fe27314165eeeca2881d00519bc082d3` |
-| 2 | `theorem` | [log_majorant_integral](../../../../MeasureAndIntegration/CriticalStripMellinLogCancellation.lean/declarations/log-majorant-integral.md) | 39 | `result-track:0695c798daf3e3e4719e137d0600a890bc6477fb648d83be144a3f7d057440fc` |
-| 3 | `theorem` | [fractionalMellin_deriv_norm_le_subtracted](../../../../MeasureAndIntegration/CriticalStripMellinLogCancellation.lean/declarations/fractionalmellin-deriv-norm-le-subtracted.md) | 59 | `result-track:59d6e48c00fdbe64a4b1b6aab06c12e70210198267d1f9733186869333088fb9` |
-| 4 | `theorem` | [fractionalMellin_deriv_norm_le_thirtyTwoSevenths](../../../../MeasureAndIntegration/CriticalStripMellinLogCancellation.lean/declarations/fractionalmellin-deriv-norm-le-thirtytwosevenths.md) | 105 | `result-track:9209af2803936167022f6a2db32c618dfffe8ef16ba96626de052c13f0acac15` |
-| 5 | `theorem` | [fractionalMellin_vertical_variation_subtracted](../../../../MeasureAndIntegration/CriticalStripMellinLogCancellation.lean/declarations/fractionalmellin-vertical-variation-subtracted.md) | 115 | `result-track:ab8bb94baab2fb8410ffd0de8f59a78b20909941e1504cde878c3c883fce5ef8` |
-| 6 | `theorem` | [poleNormalized_deriv_norm_le_subtracted](../../../../MeasureAndIntegration/CriticalStripMellinLogCancellation.lean/declarations/polenormalized-deriv-norm-le-subtracted.md) | 138 | `result-track:2094a5f869a2e21fc90456e15d30edb789d9b5946f86c04b5e8f46d864b76c0a` |
-| 7 | `theorem` | [poleNormalized_deriv_norm_le_113_sevenths](../../../../MeasureAndIntegration/CriticalStripMellinLogCancellation.lean/declarations/polenormalized-deriv-norm-le-113-sevenths.md) | 175 | `result-track:4ea8292612fb747cbd19466122f8a695f98d81ebbbc4ae0036622f082b1897e3` |
+| 1 | `theorem` | [log_le_rpow_sub_one_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripMellinLogCancellation.lean/declarations/log-le-rpow-sub-one-div.md) | 30 | `result-track:b8c3db290560bcbe2cf42a68fe85eb38fe27314165eeeca2881d00519bc082d3` |
+| 2 | `theorem` | [log_majorant_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripMellinLogCancellation.lean/declarations/log-majorant-integral.md) | 39 | `result-track:0695c798daf3e3e4719e137d0600a890bc6477fb648d83be144a3f7d057440fc` |
+| 3 | `theorem` | [fractionalMellin_deriv_norm_le_subtracted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripMellinLogCancellation.lean/declarations/fractionalmellin-deriv-norm-le-subtracted.md) | 59 | `result-track:59d6e48c00fdbe64a4b1b6aab06c12e70210198267d1f9733186869333088fb9` |
+| 4 | `theorem` | [fractionalMellin_deriv_norm_le_thirtyTwoSevenths](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripMellinLogCancellation.lean/declarations/fractionalmellin-deriv-norm-le-thirtytwosevenths.md) | 105 | `result-track:9209af2803936167022f6a2db32c618dfffe8ef16ba96626de052c13f0acac15` |
+| 5 | `theorem` | [fractionalMellin_vertical_variation_subtracted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripMellinLogCancellation.lean/declarations/fractionalmellin-vertical-variation-subtracted.md) | 115 | `result-track:ab8bb94baab2fb8410ffd0de8f59a78b20909941e1504cde878c3c883fce5ef8` |
+| 6 | `theorem` | [poleNormalized_deriv_norm_le_subtracted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripMellinLogCancellation.lean/declarations/polenormalized-deriv-norm-le-subtracted.md) | 138 | `result-track:2094a5f869a2e21fc90456e15d30edb789d9b5946f86c04b5e8f46d864b76c0a` |
+| 7 | `theorem` | [poleNormalized_deriv_norm_le_113_sevenths](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripMellinLogCancellation.lean/declarations/polenormalized-deriv-norm-le-113-sevenths.md) | 175 | `result-track:4ea8292612fb747cbd19466122f8a695f98d81ebbbc4ae0036622f082b1897e3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

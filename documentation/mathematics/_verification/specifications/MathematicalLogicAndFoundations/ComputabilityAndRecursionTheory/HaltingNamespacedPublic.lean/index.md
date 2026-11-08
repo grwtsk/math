@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/HaltingNamespacedPublic.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/HaltingNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/HaltingNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/HaltingNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [rice](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/HaltingNamespacedPublic.lean/declarations/rice.md) | 41 | `result-track:69d0900c6968979b9b82213fb1fbeadbc5527ce94e684db3724d060f177549ad` |
-| 2 | `theorem` | [rice₂](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/HaltingNamespacedPublic.lean/declarations/rice-source-edition-2.md) | 51 | `result-track:ad1b31a4b7b8895e7c981c30fb853141e54b9df0ab936f9d3aa92a9cde9dc12d` |
-| 3 | `theorem` | [halting_problem_re](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/HaltingNamespacedPublic.lean/declarations/halting-problem-re.md) | 69 | `result-track:8d38d05f11dd103b67c7f1d046339ad68710ff7cb1c4ac29c4e023135612279d` |
-| 4 | `theorem` | [halting_problem](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/HaltingNamespacedPublic.lean/declarations/halting-problem.md) | 73 | `result-track:40d01fc1fd1119ac72716db85229ec4ab15f7671ccc6b6e8f0b7d4ea7bc3e4f2` |
-| 5 | `theorem` | [halting_problem_not_re](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/HaltingNamespacedPublic.lean/declarations/halting-problem-not-re.md) | 76 | `result-track:fda9e8e90dc1c9cf321b4f943c8709f7340c7dc8400e75c81fe5a94d87144186` |
+| 1 | `theorem` | [rice](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/HaltingNamespacedPublic.lean/declarations/rice.md) | 41 | `result-track:69d0900c6968979b9b82213fb1fbeadbc5527ce94e684db3724d060f177549ad` |
+| 2 | `theorem` | [rice₂](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/HaltingNamespacedPublic.lean/declarations/rice-source-edition-2.md) | 51 | `result-track:ad1b31a4b7b8895e7c981c30fb853141e54b9df0ab936f9d3aa92a9cde9dc12d` |
+| 3 | `theorem` | [halting_problem_re](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/HaltingNamespacedPublic.lean/declarations/halting-problem-re.md) | 69 | `result-track:8d38d05f11dd103b67c7f1d046339ad68710ff7cb1c4ac29c4e023135612279d` |
+| 4 | `theorem` | [halting_problem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/HaltingNamespacedPublic.lean/declarations/halting-problem.md) | 73 | `result-track:40d01fc1fd1119ac72716db85229ec4ab15f7671ccc6b6e8f0b7d4ea7bc3e4f2` |
+| 5 | `theorem` | [halting_problem_not_re](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/HaltingNamespacedPublic.lean/declarations/halting-problem-not-re.md) | 76 | `result-track:fda9e8e90dc1c9cf321b4f943c8709f7340c7dc8400e75c81fe5a94d87144186` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

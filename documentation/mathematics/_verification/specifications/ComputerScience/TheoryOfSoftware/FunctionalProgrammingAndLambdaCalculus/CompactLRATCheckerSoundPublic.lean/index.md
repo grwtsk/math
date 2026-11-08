@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CompactLRATCheckerSoundPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CompactLRATCheckerSoundPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CompactLRATCheckerSoundPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CompactLRATCheckerSoundPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [go_sound](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CompactLRATCheckerSoundPublic.lean/declarations/go-sound.md) | 16 | `result-track:3f4189442d1f4f3814ea9fb515cc323ae25ae390c51e84616855dee535379cab` |
-| 2 | `theorem` | [compactLratChecker_sound](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CompactLRATCheckerSoundPublic.lean/declarations/compactlratchecker-sound.md) | 39 | `result-track:8277d856bbde744c455f1a1a47fd012aee7b6e29fc9c9814a68526dc063ab73f` |
+| 1 | `theorem` | [go_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CompactLRATCheckerSoundPublic.lean/declarations/go-sound.md) | 16 | `result-track:3f4189442d1f4f3814ea9fb515cc323ae25ae390c51e84616855dee535379cab` |
+| 2 | `theorem` | [compactLratChecker_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CompactLRATCheckerSoundPublic.lean/declarations/compactlratchecker-sound.md) | 39 | `result-track:8277d856bbde744c455f1a1a47fd012aee7b6e29fc9c9814a68526dc063ab73f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

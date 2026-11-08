@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IndexPublicScrambleHash.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IndexPublicScrambleHash.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IndexPublicScrambleHash.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IndexPublicScrambleHash.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [scrambleHash](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IndexPublicScrambleHash.lean/declarations/scramblehash.md) | 41 | `declaration-track:17a1be46329f7b6019676ce28d54b30b7fa06326cde0f8d0bcd6b1612ece6404` |
-| 2 | `def` | [mkIdx](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IndexPublicScrambleHash.lean/declarations/mkidx.md) | 51 | `declaration-track:eb2788faab92bc81637c1ab3c570a323b9e2504d3b249c56047424e2464b236b` |
+| 1 | `def` | [scrambleHash](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IndexPublicScrambleHash.lean/declarations/scramblehash.md) | 41 | `declaration-track:17a1be46329f7b6019676ce28d54b30b7fa06326cde0f8d0bcd6b1612ece6404` |
+| 2 | `def` | [mkIdx](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IndexPublicScrambleHash.lean/declarations/mkidx.md) | 51 | `declaration-track:eb2788faab92bc81637c1ab3c570a323b9e2504d3b249c56047424e2464b236b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

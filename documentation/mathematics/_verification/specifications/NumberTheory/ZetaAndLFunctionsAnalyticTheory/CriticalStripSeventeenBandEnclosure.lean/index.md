@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSeventeenBandEnclosure.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSeventeenBandEnclosure.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSeventeenBandEnclosure.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSeventeenBandEnclosure.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripSeventeenBandJet`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSeventeenBandJet.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripSeventeenBandJet`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSeventeenBandJet.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [band_geometry](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSeventeenBandEnclosure.lean/declarations/band-geometry.md) | 21 | `result-track:d77363350e7f31f97c42a9d99e3daeb5fadc40ac0f42c9ba6e4c8872c216203e` |
-| 2 | `lemma` | [band_shift_norm](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSeventeenBandEnclosure.lean/declarations/band-shift-norm.md) | 36 | `result-track:1450ecea4becbd3f4638f47558908c56c2e78a0dd9ae3735c343dac1eb1e47fa` |
-| 3 | `lemma` | [band_last_shift_norm](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSeventeenBandEnclosure.lean/declarations/band-last-shift-norm.md) | 49 | `result-track:fefc410bfa8e7d16ffd1dd46f84fc400db4782fc340eb4c3f4798899913da3b2` |
-| 4 | `lemma` | [parameter_products](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSeventeenBandEnclosure.lean/declarations/parameter-products.md) | 62 | `result-track:80d10f92f82495220cce5ee37395c0b22b925793d54ccaea1c9e1959a8a29641` |
-| 5 | `lemma` | [weight_norm_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSeventeenBandEnclosure.lean/declarations/weight-norm-le.md) | 92 | `result-track:c83597b4c95a125fe62f9d0f4c0d6a7535d7aca4210e5012303619fd5b86322b` |
-| 6 | `lemma` | [finiteModel_jet_error](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSeventeenBandEnclosure.lean/declarations/finitemodel-jet-error.md) | 122 | `result-track:912be06d653dd06f7bf69b3ad157b1d43abc6959b1ca8c8cc4345642564e2650` |
-| 7 | `lemma` | [actual_tail_error](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSeventeenBandEnclosure.lean/declarations/actual-tail-error.md) | 146 | `result-track:a6ee2fb7bf3042967c65aeaf82fc38ce4d28e0bb64eb7bc656a4b93be0e35f6a` |
-| 8 | `theorem` | [source_enclosed](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSeventeenBandEnclosure.lean/declarations/source-enclosed.md) | 160 | `result-track:ece89391d2fd91b599996956e35c45e700ae7c80831ab3fd3cb65c93dd4a5285` |
+| 1 | `lemma` | [band_geometry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSeventeenBandEnclosure.lean/declarations/band-geometry.md) | 21 | `result-track:d77363350e7f31f97c42a9d99e3daeb5fadc40ac0f42c9ba6e4c8872c216203e` |
+| 2 | `lemma` | [band_shift_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSeventeenBandEnclosure.lean/declarations/band-shift-norm.md) | 36 | `result-track:1450ecea4becbd3f4638f47558908c56c2e78a0dd9ae3735c343dac1eb1e47fa` |
+| 3 | `lemma` | [band_last_shift_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSeventeenBandEnclosure.lean/declarations/band-last-shift-norm.md) | 49 | `result-track:fefc410bfa8e7d16ffd1dd46f84fc400db4782fc340eb4c3f4798899913da3b2` |
+| 4 | `lemma` | [parameter_products](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSeventeenBandEnclosure.lean/declarations/parameter-products.md) | 62 | `result-track:80d10f92f82495220cce5ee37395c0b22b925793d54ccaea1c9e1959a8a29641` |
+| 5 | `lemma` | [weight_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSeventeenBandEnclosure.lean/declarations/weight-norm-le.md) | 92 | `result-track:c83597b4c95a125fe62f9d0f4c0d6a7535d7aca4210e5012303619fd5b86322b` |
+| 6 | `lemma` | [finiteModel_jet_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSeventeenBandEnclosure.lean/declarations/finitemodel-jet-error.md) | 122 | `result-track:912be06d653dd06f7bf69b3ad157b1d43abc6959b1ca8c8cc4345642564e2650` |
+| 7 | `lemma` | [actual_tail_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSeventeenBandEnclosure.lean/declarations/actual-tail-error.md) | 146 | `result-track:a6ee2fb7bf3042967c65aeaf82fc38ce4d28e0bb64eb7bc656a4b93be0e35f6a` |
+| 8 | `theorem` | [source_enclosed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSeventeenBandEnclosure.lean/declarations/source-enclosed.md) | 160 | `result-track:ece89391d2fd91b599996956e35c45e700ae7c80831ab3fd3cb65c93dd4a5285` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

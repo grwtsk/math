@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/TransferInstancePublic.lean/index.md) · [Full source](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/TransferInstancePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/TransferInstancePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/TransferInstancePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [continuousLinearEquiv](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/TransferInstancePublic.lean/declarations/continuouslinearequiv.md) | 42 | `declaration-track:33896813075767828871e272af844cd595d8174b3595347a05879a1b4dc1d894` |
-| 2 | `lemma` | [toLinearEquiv_continuousLinearEquiv](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/TransferInstancePublic.lean/declarations/tolinearequiv-continuouslinearequiv.md) | 55 | `result-track:67b87c63e075206a9d12d906f9f82ad93a216832fd4e15877998d11a0f129c63` |
-| 3 | `lemma` | [ContinuousMulEquiv.isTopologicalGroup](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/TransferInstancePublic.lean/declarations/continuousmulequiv-istopologicalgroup.md) | 77 | `result-track:1aae334bf9fe045f9a5cd527fd962de36cc403389bb3cf7412442e152a29e529` |
-| 4 | `lemma` | [ContinuousLinearEquiv.continuousSMul](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/TransferInstancePublic.lean/declarations/continuouslinearequiv-continuoussmul.md) | 90 | `result-track:57e745f01c4f7bf8c2a0d275a5c25d1c7779cbc6304170f185633af963cc374a` |
-| 5 | `def` | [Shrink.continuousLinearEquiv](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/TransferInstancePublic.lean/declarations/shrink-continuouslinearequiv.md) | 107 | `declaration-track:f5011f2bd0b36ea449f99b15d40615c604a166d4597270ac5f6ed3bb07c2dada` |
+| 1 | `def` | [continuousLinearEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/TransferInstancePublic.lean/declarations/continuouslinearequiv.md) | 42 | `declaration-track:33896813075767828871e272af844cd595d8174b3595347a05879a1b4dc1d894` |
+| 2 | `lemma` | [toLinearEquiv_continuousLinearEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/TransferInstancePublic.lean/declarations/tolinearequiv-continuouslinearequiv.md) | 55 | `result-track:67b87c63e075206a9d12d906f9f82ad93a216832fd4e15877998d11a0f129c63` |
+| 3 | `lemma` | [ContinuousMulEquiv.isTopologicalGroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/TransferInstancePublic.lean/declarations/continuousmulequiv-istopologicalgroup.md) | 77 | `result-track:1aae334bf9fe045f9a5cd527fd962de36cc403389bb3cf7412442e152a29e529` |
+| 4 | `lemma` | [ContinuousLinearEquiv.continuousSMul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/TransferInstancePublic.lean/declarations/continuouslinearequiv-continuoussmul.md) | 90 | `result-track:57e745f01c4f7bf8c2a0d275a5c25d1c7779cbc6304170f185633af963cc374a` |
+| 5 | `def` | [Shrink.continuousLinearEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/TransferInstancePublic.lean/declarations/shrink-continuouslinearequiv.md) | 107 | `declaration-track:f5011f2bd0b36ea449f99b15d40615c604a166d4597270ac5f6ed3bb07c2dada` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/KillingNamespaced.lean/index.md) · [Full source](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/KillingNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/KillingNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/KillingNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [IsKilling](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/KillingNamespaced.lean/declarations/iskilling.md) | 57 | `declaration-track:605dc08929b1376df43cada7f8e05ef85645336f43d066e9616f8cc315990ff7` |
-| 2 | `lemma` | [ker_killingForm_eq_bot](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/KillingNamespaced.lean/declarations/ker-killingform-eq-bot.md) | 67 | `result-track:adb3986e7f420fb94af45562ffccc748170fdeeb587a198f8ce7e7d2ffea50f2` |
-| 3 | `lemma` | [killingForm_nondegenerate](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/KillingNamespaced.lean/declarations/killingform-nondegenerate.md) | 71 | `result-track:844dc23c7d5efdd2e8b97814bf491715794385f1bafc6d12feeab0ae13bb6a3c` |
-| 4 | `lemma` | [ideal_eq_bot_of_isLieAbelian](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/KillingNamespaced.lean/declarations/ideal-eq-bot-of-islieabelian.md) | 76 | `result-track:f14d74d332c1ec979d515a3ae5884a24d02826f7543037c55268cd1baeae5cc6` |
-| 5 | `instance` | [instSemisimple](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/KillingNamespaced.lean/declarations/instsemisimple.md) | 82 | `declaration-track:25af279936f6ac658971479bfe26efc75e9f9d7cccfa0a9383ce30f416fd3b26` |
-| 6 | `instance` | [instHasTrivialRadical](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/KillingNamespaced.lean/declarations/insthastrivialradical.md) | 95 | `declaration-track:ab8f5429f264327e2e02f66120bbcccf14f4290d9100929189c6f66c4b8ab55f` |
-| 7 | `lemma` | [killingForm_of_equiv_apply](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/KillingNamespaced.lean/declarations/killingform-of-equiv-apply.md) | 109 | `result-track:50717893dc60c8a0cd694fdb434beefa1e316f05fc98279f92aa2edfc8d06ae7` |
-| 8 | `lemma` | [isKilling_of_equiv](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/KillingNamespaced.lean/declarations/iskilling-of-equiv.md) | 115 | `result-track:f30bf52eb8477037d45d3ee31b975315be0aeb0278fb014fb95ea11080556815` |
+| 1 | `class` | [IsKilling](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/KillingNamespaced.lean/declarations/iskilling.md) | 57 | `declaration-track:605dc08929b1376df43cada7f8e05ef85645336f43d066e9616f8cc315990ff7` |
+| 2 | `lemma` | [ker_killingForm_eq_bot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/KillingNamespaced.lean/declarations/ker-killingform-eq-bot.md) | 67 | `result-track:adb3986e7f420fb94af45562ffccc748170fdeeb587a198f8ce7e7d2ffea50f2` |
+| 3 | `lemma` | [killingForm_nondegenerate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/KillingNamespaced.lean/declarations/killingform-nondegenerate.md) | 71 | `result-track:844dc23c7d5efdd2e8b97814bf491715794385f1bafc6d12feeab0ae13bb6a3c` |
+| 4 | `lemma` | [ideal_eq_bot_of_isLieAbelian](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/KillingNamespaced.lean/declarations/ideal-eq-bot-of-islieabelian.md) | 76 | `result-track:f14d74d332c1ec979d515a3ae5884a24d02826f7543037c55268cd1baeae5cc6` |
+| 5 | `instance` | [instSemisimple](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/KillingNamespaced.lean/declarations/instsemisimple.md) | 82 | `declaration-track:25af279936f6ac658971479bfe26efc75e9f9d7cccfa0a9383ce30f416fd3b26` |
+| 6 | `instance` | [instHasTrivialRadical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/KillingNamespaced.lean/declarations/insthastrivialradical.md) | 95 | `declaration-track:ab8f5429f264327e2e02f66120bbcccf14f4290d9100929189c6f66c4b8ab55f` |
+| 7 | `lemma` | [killingForm_of_equiv_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/KillingNamespaced.lean/declarations/killingform-of-equiv-apply.md) | 109 | `result-track:50717893dc60c8a0cd694fdb434beefa1e316f05fc98279f92aa2edfc8d06ae7` |
+| 8 | `lemma` | [isKilling_of_equiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/KillingNamespaced.lean/declarations/iskilling-of-equiv.md) | 115 | `result-track:f30bf52eb8477037d45d3ee31b975315be0aeb0278fb014fb95ea11080556815` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

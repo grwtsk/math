@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SourceBalancedFirstPrimeConsumerNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/SourceBalancedFirstPrimeConsumerNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceBalancedFirstPrimeConsumerNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceBalancedFirstPrimeConsumerNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [firstPrimeZeroHeadCost](../../../../GeneralTopology/SourceBalancedFirstPrimeConsumerNamespaced.lean/declarations/firstprimezeroheadcost.md) | 27 | `declaration-track:8db2ddeb9e6138d3358bd2a8077cd5823efb37089b6c777ece8d2dd1c5421d6b` |
-| 2 | `def` | [balancedFirstPrimeReturnCost](../../../../GeneralTopology/SourceBalancedFirstPrimeConsumerNamespaced.lean/declarations/balancedfirstprimereturncost.md) | 30 | `declaration-track:7ecbef36a4a087eda6cc511111b180d85697774071ac2e772c49fb3027613680` |
-| 3 | `theorem` | [balanced_density_abs_le_nonnegative](../../../../GeneralTopology/SourceBalancedFirstPrimeConsumerNamespaced.lean/declarations/balanced-density-abs-le-nonnegative.md) | 34 | `result-track:6a0a36f664f03b871d971adf8ab57750f72347f9bf678d1950af1800c2d35f48` |
-| 4 | `theorem` | [firstPrimeZeroHead_abs_le_at_radius](../../../../GeneralTopology/SourceBalancedFirstPrimeConsumerNamespaced.lean/declarations/firstprimezerohead-abs-le-at-radius.md) | 56 | `result-track:7f5e89c3c5f68b1e86ef54495fbc838148a12600ca79d76eba45309007dee67f` |
-| 5 | `theorem` | [firstPrime_main_upper_of_balanced_tail](../../../../GeneralTopology/SourceBalancedFirstPrimeConsumerNamespaced.lean/declarations/firstprime-main-upper-of-balanced-tail.md) | 105 | `result-track:d6bdff1c5d00af6e1be1ea929afae63678beef7163440c425f88f772c7c7bf48` |
-| 6 | `theorem` | [firstPrimeTail_of_balanced_tail](../../../../GeneralTopology/SourceBalancedFirstPrimeConsumerNamespaced.lean/declarations/firstprimetail-of-balanced-tail.md) | 117 | `result-track:f7c1cd6bcf496d39f9b67aaef0f15e74595518702fb22af419128968fa8c34f2` |
-| 7 | `theorem` | [estimate_of_balanced_firstPrime_tail](../../../../GeneralTopology/SourceBalancedFirstPrimeConsumerNamespaced.lean/declarations/estimate-of-balanced-firstprime-tail.md) | 134 | `result-track:6882d0cb7eab2ecc18edee2984df3558ffe23d0cb027154e401c82dd3c7243d6` |
-| 8 | `theorem` | [balancedFirstPrimeReturnCost_ninety_one_lt](../../../../GeneralTopology/SourceBalancedFirstPrimeConsumerNamespaced.lean/declarations/balancedfirstprimereturncost-ninety-one-lt.md) | 141 | `result-track:246ff7a7ef87b1d825606d0c12d502c2c058d45e45c183509042343f5adf4998` |
+| 1 | `def` | [firstPrimeZeroHeadCost](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceBalancedFirstPrimeConsumerNamespaced.lean/declarations/firstprimezeroheadcost.md) | 27 | `declaration-track:8db2ddeb9e6138d3358bd2a8077cd5823efb37089b6c777ece8d2dd1c5421d6b` |
+| 2 | `def` | [balancedFirstPrimeReturnCost](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceBalancedFirstPrimeConsumerNamespaced.lean/declarations/balancedfirstprimereturncost.md) | 30 | `declaration-track:7ecbef36a4a087eda6cc511111b180d85697774071ac2e772c49fb3027613680` |
+| 3 | `theorem` | [balanced_density_abs_le_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceBalancedFirstPrimeConsumerNamespaced.lean/declarations/balanced-density-abs-le-nonnegative.md) | 34 | `result-track:6a0a36f664f03b871d971adf8ab57750f72347f9bf678d1950af1800c2d35f48` |
+| 4 | `theorem` | [firstPrimeZeroHead_abs_le_at_radius](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceBalancedFirstPrimeConsumerNamespaced.lean/declarations/firstprimezerohead-abs-le-at-radius.md) | 56 | `result-track:7f5e89c3c5f68b1e86ef54495fbc838148a12600ca79d76eba45309007dee67f` |
+| 5 | `theorem` | [firstPrime_main_upper_of_balanced_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceBalancedFirstPrimeConsumerNamespaced.lean/declarations/firstprime-main-upper-of-balanced-tail.md) | 105 | `result-track:d6bdff1c5d00af6e1be1ea929afae63678beef7163440c425f88f772c7c7bf48` |
+| 6 | `theorem` | [firstPrimeTail_of_balanced_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceBalancedFirstPrimeConsumerNamespaced.lean/declarations/firstprimetail-of-balanced-tail.md) | 117 | `result-track:f7c1cd6bcf496d39f9b67aaef0f15e74595518702fb22af419128968fa8c34f2` |
+| 7 | `theorem` | [estimate_of_balanced_firstPrime_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceBalancedFirstPrimeConsumerNamespaced.lean/declarations/estimate-of-balanced-firstprime-tail.md) | 134 | `result-track:6882d0cb7eab2ecc18edee2984df3558ffe23d0cb027154e401c82dd3c7243d6` |
+| 8 | `theorem` | [balancedFirstPrimeReturnCost_ninety_one_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceBalancedFirstPrimeConsumerNamespaced.lean/declarations/balancedfirstprimereturncost-ninety-one-lt.md) | 141 | `result-track:246ff7a7ef87b1d825606d0c12d502c2c058d45e45c183509042343f5adf4998` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

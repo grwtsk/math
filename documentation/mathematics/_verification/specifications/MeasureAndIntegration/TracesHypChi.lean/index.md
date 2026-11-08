@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/TracesHypChi.lean/index.md) · [Full source](../../../../MeasureAndIntegration/TracesHypChi.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TracesHypChi.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TracesHypChi.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [lam1q](../../../../MeasureAndIntegration/TracesHypChi.lean/declarations/lam1q.md) | 26 | `declaration-track:48fbd73fdb75555d9e0bfb63596331f86e0ac8c2ddd0a0923478f858f9965210` |
-| 2 | `def` | [GentryChi](../../../../MeasureAndIntegration/TracesHypChi.lean/declarations/gentrychi.md) | 30 | `declaration-track:c7a311a4f7f23dd473ca625b5c07e30469adf298ff3e48325d9d1c2031269f63` |
-| 3 | `def` | [trGtildeChi](../../../../MeasureAndIntegration/TracesHypChi.lean/declarations/trgtildechi.md) | 34 | `declaration-track:8920171ac0a8ae6c64bd695d7f10642b367dd4301a6e09a7246b6976cd8c3488` |
-| 4 | `def` | [trGtildeSqChi](../../../../MeasureAndIntegration/TracesHypChi.lean/declarations/trgtildesqchi.md) | 37 | `declaration-track:b49ce62262d4e0d2dfe84dd36fd24d1413f7cfe70b62d814a14a9841599f6091` |
-| 5 | `def` | [mainTr2Chi](../../../../MeasureAndIntegration/TracesHypChi.lean/declarations/maintr2chi.md) | 41 | `declaration-track:2a31b9d89947598fee852a3ad3be45f86ba6229f346201758582b81fbaf4323b` |
-| 6 | `structure` | [TracesBoundsChi](../../../../MeasureAndIntegration/TracesHypChi.lean/declarations/tracesboundschi.md) | 48 | `declaration-track:8aaef1f16122b4ed50f18e81ea28c53383b43dea6275d5cbf5f136f8e501d69b` |
-| 7 | `def` | [ThmTracesHypChi](../../../../MeasureAndIntegration/TracesHypChi.lean/declarations/thmtraceshypchi.md) | 57 | `declaration-track:7b497f0f9f886fbbb0b5caef763684c44e010bfb1f95ac1a8a25fac13cecca43` |
+| 1 | `def` | [lam1q](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TracesHypChi.lean/declarations/lam1q.md) | 26 | `declaration-track:48fbd73fdb75555d9e0bfb63596331f86e0ac8c2ddd0a0923478f858f9965210` |
+| 2 | `def` | [GentryChi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TracesHypChi.lean/declarations/gentrychi.md) | 30 | `declaration-track:c7a311a4f7f23dd473ca625b5c07e30469adf298ff3e48325d9d1c2031269f63` |
+| 3 | `def` | [trGtildeChi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TracesHypChi.lean/declarations/trgtildechi.md) | 34 | `declaration-track:8920171ac0a8ae6c64bd695d7f10642b367dd4301a6e09a7246b6976cd8c3488` |
+| 4 | `def` | [trGtildeSqChi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TracesHypChi.lean/declarations/trgtildesqchi.md) | 37 | `declaration-track:b49ce62262d4e0d2dfe84dd36fd24d1413f7cfe70b62d814a14a9841599f6091` |
+| 5 | `def` | [mainTr2Chi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TracesHypChi.lean/declarations/maintr2chi.md) | 41 | `declaration-track:2a31b9d89947598fee852a3ad3be45f86ba6229f346201758582b81fbaf4323b` |
+| 6 | `structure` | [TracesBoundsChi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TracesHypChi.lean/declarations/tracesboundschi.md) | 48 | `declaration-track:8aaef1f16122b4ed50f18e81ea28c53383b43dea6275d5cbf5f136f8e501d69b` |
+| 7 | `def` | [ThmTracesHypChi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TracesHypChi.lean/declarations/thmtraceshypchi.md) | 57 | `declaration-track:7b497f0f9f886fbbb0b5caef763684c44e010bfb1f95ac1a8a25fac13cecca43` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

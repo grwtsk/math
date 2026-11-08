@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DivisorMobiusAndFiniteEulerCounts.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DivisorMobiusAndFiniteEulerCounts.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DivisorMobiusAndFiniteEulerCounts.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DivisorMobiusAndFiniteEulerCounts.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -48,7 +48,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 - `BitMatrix.Dynamics.DynamicalZeta` — import line 19; external provider; requires a separately pinned dependency.
 - `Mathlib.Logic.Equiv.Fin.Rotate` — import line 20; external provider; requires a separately pinned dependency.
-- [Rotation State And Cycle Counts](../../../../../../GroupTheoryAndGeneralizations/RotationStateAndCycleCounts.lean/index.md) — import line 22; pinned internal source present.
+- [Rotation State And Cycle Counts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/RotationStateAndCycleCounts.lean/index.md) — import line 22; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DivisorMobiusAndFiniteEulerCounts.lean/declarations/example-source-edition-3.md) | 41 | `declaration-track:7206229ee6b502ee5d76c0c77ff7121b97351f75f4ffa2d18e1fdf9e9ff49e5a` |
-| 2 | `example` | [(anonymous)](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DivisorMobiusAndFiniteEulerCounts.lean/declarations/example-source-edition-4.md) | 46 | `declaration-track:a4706be3b0c7081ea34cc4640a342bc29f3dee6bf86d08776d7f2b05eeff1f15` |
-| 3 | `example` | [(anonymous)](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DivisorMobiusAndFiniteEulerCounts.lean/declarations/example-source-edition-2.md) | 53 | `declaration-track:2048cb53734af712e0213261e423d12a822d41ba5fc2eed2119270f2957560df` |
-| 4 | `example` | [(anonymous)](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DivisorMobiusAndFiniteEulerCounts.lean/declarations/example.md) | 56 | `declaration-track:04f01133844fefd42f768e730093f50bc5e4d9c9cf62f60f2dd863035a5e0cda` |
-| 5 | `example` | [(anonymous)](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DivisorMobiusAndFiniteEulerCounts.lean/declarations/example-source-edition-5.md) | 59 | `declaration-track:b286f957cf7a0e83d8f996e7f14de4a4f52ecf668cdbea40a465ecb71d8f7ea8` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DivisorMobiusAndFiniteEulerCounts.lean/declarations/example-source-edition-3.md) | 41 | `declaration-track:7206229ee6b502ee5d76c0c77ff7121b97351f75f4ffa2d18e1fdf9e9ff49e5a` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DivisorMobiusAndFiniteEulerCounts.lean/declarations/example-source-edition-4.md) | 46 | `declaration-track:a4706be3b0c7081ea34cc4640a342bc29f3dee6bf86d08776d7f2b05eeff1f15` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DivisorMobiusAndFiniteEulerCounts.lean/declarations/example-source-edition-2.md) | 53 | `declaration-track:2048cb53734af712e0213261e423d12a822d41ba5fc2eed2119270f2957560df` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DivisorMobiusAndFiniteEulerCounts.lean/declarations/example.md) | 56 | `declaration-track:04f01133844fefd42f768e730093f50bc5e4d9c9cf62f60f2dd863035a5e0cda` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DivisorMobiusAndFiniteEulerCounts.lean/declarations/example-source-edition-5.md) | 59 | `declaration-track:b286f957cf7a0e83d8f996e7f14de4a4f52ecf668cdbea40a465ecb71d8f7ea8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

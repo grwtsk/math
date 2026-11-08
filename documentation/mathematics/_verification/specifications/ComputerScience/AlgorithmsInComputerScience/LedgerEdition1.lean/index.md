@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/LedgerEdition1.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/LedgerEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LedgerEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LedgerEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Ledger](../../../../../ComputerScience/AlgorithmsInComputerScience/LedgerEdition1.lean/declarations/ledger.md) | 19 | `declaration-track:9a299f69f2b463db9afb6334a3edc5ca62677d9e5854cd71e71e55391a5ad9f6` |
-| 2 | `def` | [UniqueConceptIds](../../../../../ComputerScience/AlgorithmsInComputerScience/LedgerEdition1.lean/declarations/uniqueconceptids.md) | 32 | `declaration-track:e77db83a59876f777e75b8371daef077c02c74158c8ec4c586425d216b534c02` |
-| 3 | `def` | [UniqueRelationIds](../../../../../ComputerScience/AlgorithmsInComputerScience/LedgerEdition1.lean/declarations/uniquerelationids.md) | 36 | `declaration-track:c02552b022ed427cb0882d84a9db15f4a09e04edab528720350e75a556d639c9` |
-| 4 | `def` | [UniqueRepresentationIds](../../../../../ComputerScience/AlgorithmsInComputerScience/LedgerEdition1.lean/declarations/uniquerepresentationids.md) | 40 | `declaration-track:452452cfae1798f0f81d369a46a3a005ca92f2ebd543857ca33f6d74903c60a2` |
-| 5 | `def` | [RelationsResolve](../../../../../ComputerScience/AlgorithmsInComputerScience/LedgerEdition1.lean/declarations/relationsresolve.md) | 44 | `declaration-track:7d364afb556ee96e93181f4a4c5cd653997005a32ceabad214883b2d801c3082` |
-| 6 | `def` | [RepresentationsResolve](../../../../../ComputerScience/AlgorithmsInComputerScience/LedgerEdition1.lean/declarations/representationsresolve.md) | 50 | `declaration-track:8918051fd89138d5ee51057bb2ed4925f0c63a14cfb54e6ab74794a42b166900` |
-| 7 | `def` | [RuntimeBindingsResolve](../../../../../ComputerScience/AlgorithmsInComputerScience/LedgerEdition1.lean/declarations/runtimebindingsresolve.md) | 55 | `declaration-track:d9a80b7001ee931d8af934984c7c31f8fabee46335bc5f48206bbdf6d89fb3d7` |
-| 8 | `def` | [findConcept?](../../../../../ComputerScience/AlgorithmsInComputerScience/LedgerEdition1.lean/declarations/findconcept.md) | 60 | `declaration-track:4687b3b8e52962a0f4e588315a2e30d7ad3ecb09b89f5c6e5818968b58347791` |
-| 9 | `def` | [findTaxon?](../../../../../ComputerScience/AlgorithmsInComputerScience/LedgerEdition1.lean/declarations/findtaxon.md) | 64 | `declaration-track:2aaaf2bfde24c7f62c78a16444dc51df631d0cd98ba8137adf1442bdc5affdec` |
+| 1 | `structure` | [Ledger](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LedgerEdition1.lean/declarations/ledger.md) | 19 | `declaration-track:9a299f69f2b463db9afb6334a3edc5ca62677d9e5854cd71e71e55391a5ad9f6` |
+| 2 | `def` | [UniqueConceptIds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LedgerEdition1.lean/declarations/uniqueconceptids.md) | 32 | `declaration-track:e77db83a59876f777e75b8371daef077c02c74158c8ec4c586425d216b534c02` |
+| 3 | `def` | [UniqueRelationIds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LedgerEdition1.lean/declarations/uniquerelationids.md) | 36 | `declaration-track:c02552b022ed427cb0882d84a9db15f4a09e04edab528720350e75a556d639c9` |
+| 4 | `def` | [UniqueRepresentationIds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LedgerEdition1.lean/declarations/uniquerepresentationids.md) | 40 | `declaration-track:452452cfae1798f0f81d369a46a3a005ca92f2ebd543857ca33f6d74903c60a2` |
+| 5 | `def` | [RelationsResolve](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LedgerEdition1.lean/declarations/relationsresolve.md) | 44 | `declaration-track:7d364afb556ee96e93181f4a4c5cd653997005a32ceabad214883b2d801c3082` |
+| 6 | `def` | [RepresentationsResolve](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LedgerEdition1.lean/declarations/representationsresolve.md) | 50 | `declaration-track:8918051fd89138d5ee51057bb2ed4925f0c63a14cfb54e6ab74794a42b166900` |
+| 7 | `def` | [RuntimeBindingsResolve](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LedgerEdition1.lean/declarations/runtimebindingsresolve.md) | 55 | `declaration-track:d9a80b7001ee931d8af934984c7c31f8fabee46335bc5f48206bbdf6d89fb3d7` |
+| 8 | `def` | [findConcept?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LedgerEdition1.lean/declarations/findconcept.md) | 60 | `declaration-track:4687b3b8e52962a0f4e588315a2e30d7ad3ecb09b89f5c6e5818968b58347791` |
+| 9 | `def` | [findTaxon?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LedgerEdition1.lean/declarations/findtaxon.md) | 64 | `declaration-track:2aaaf2bfde24c7f62c78a16444dc51df631d0cd98ba8137adf1442bdc5affdec` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

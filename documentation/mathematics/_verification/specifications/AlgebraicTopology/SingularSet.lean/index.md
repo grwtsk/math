@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/SingularSet.lean/index.md) · [Full source](../../../../AlgebraicTopology/SingularSet.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SingularSet.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SingularSet.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [TopCat.toSSet](../../../../AlgebraicTopology/SingularSet.lean/declarations/topcat-tosset.md) | 47 | `declaration-track:b9cdf6162cfde0ab55b465d1902a307fb46f0c6463cb64d28fa40ae7bab8c53b` |
-| 2 | `def` | [SSet.toTop](../../../../AlgebraicTopology/SingularSet.lean/declarations/sset-totop.md) | 54 | `declaration-track:4b77f75c60b931103ac382a4214f62a7dfa9b3c3e56145eccbaece92a0b1d816` |
-| 3 | `def` | [sSetTopAdj](../../../../AlgebraicTopology/SingularSet.lean/declarations/ssettopadj.md) | 58 | `declaration-track:49040b49f75de293d9f87db2fe4392900bb9fca68babf701f68188569fcd92d0` |
-| 4 | `def` | [SSet.toTopSimplex](../../../../AlgebraicTopology/SingularSet.lean/declarations/sset-totopsimplex.md) | 64 | `declaration-track:5325dd79ffaebad6775af639123fc8724a9aab576459ceb96e1e1c13cfcd0026` |
-| 5 | `def` | [TopCat.toSSetIsoConst](../../../../AlgebraicTopology/SingularSet.lean/declarations/topcat-tossetisoconst.md) | 70 | `declaration-track:dc81ca183f8af776e4a210eb833a366b87b36b9bfc33a091205b5f313171cd74` |
+| 1 | `def` | [TopCat.toSSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SingularSet.lean/declarations/topcat-tosset.md) | 47 | `declaration-track:b9cdf6162cfde0ab55b465d1902a307fb46f0c6463cb64d28fa40ae7bab8c53b` |
+| 2 | `def` | [SSet.toTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SingularSet.lean/declarations/sset-totop.md) | 54 | `declaration-track:4b77f75c60b931103ac382a4214f62a7dfa9b3c3e56145eccbaece92a0b1d816` |
+| 3 | `def` | [sSetTopAdj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SingularSet.lean/declarations/ssettopadj.md) | 58 | `declaration-track:49040b49f75de293d9f87db2fe4392900bb9fca68babf701f68188569fcd92d0` |
+| 4 | `def` | [SSet.toTopSimplex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SingularSet.lean/declarations/sset-totopsimplex.md) | 64 | `declaration-track:5325dd79ffaebad6775af639123fc8724a9aab576459ceb96e1e1c13cfcd0026` |
+| 5 | `def` | [TopCat.toSSetIsoConst](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SingularSet.lean/declarations/topcat-tossetisoconst.md) | 70 | `declaration-track:dc81ca183f8af776e4a210eb833a366b87b36b9bfc33a091205b5f313171cd74` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

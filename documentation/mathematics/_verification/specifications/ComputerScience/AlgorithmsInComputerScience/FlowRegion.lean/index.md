@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/FlowRegion.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/FlowRegion.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FlowRegion.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FlowRegion.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [FlowRegion](../../../../../ComputerScience/AlgorithmsInComputerScience/FlowRegion.lean/declarations/flowregion.md) | 12 | `declaration-track:5f9a55c647627779767a8d5560d6f53d5fa9df3bfc66653fd7efd12ff544e70b` |
-| 2 | `def` | [all](../../../../../ComputerScience/AlgorithmsInComputerScience/FlowRegion.lean/declarations/all.md) | 24 | `declaration-track:d754368482a08cb30ac253ebeb1e49a8fdf65490a44c9b975117e82138eab3eb` |
-| 3 | `def` | [toString](../../../../../ComputerScience/AlgorithmsInComputerScience/FlowRegion.lean/declarations/tostring.md) | 28 | `declaration-track:1803728949f6f4485182e5ca1e70b8cb7a0154f787885c1c5c50fa20ed038313` |
-| 4 | `instance` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/FlowRegion.lean/declarations/instance.md) | 33 | `declaration-track:490879fc2c9ff306eba05e27851fb5beab434af6bf7eaa383a529c6eae5f161a` |
+| 1 | `inductive` | [FlowRegion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FlowRegion.lean/declarations/flowregion.md) | 12 | `declaration-track:5f9a55c647627779767a8d5560d6f53d5fa9df3bfc66653fd7efd12ff544e70b` |
+| 2 | `def` | [all](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FlowRegion.lean/declarations/all.md) | 24 | `declaration-track:d754368482a08cb30ac253ebeb1e49a8fdf65490a44c9b975117e82138eab3eb` |
+| 3 | `def` | [toString](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FlowRegion.lean/declarations/tostring.md) | 28 | `declaration-track:1803728949f6f4485182e5ca1e70b8cb7a0154f787885c1c5c50fa20ed038313` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FlowRegion.lean/declarations/instance.md) | 33 | `declaration-track:490879fc2c9ff306eba05e27851fb5beab434af6bf7eaa383a529c6eae5f161a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

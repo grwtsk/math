@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/CanonicalPacketCodec.lean/index.md) · [Full source](../../../../Combinatorics/CanonicalPacketCodec.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CanonicalPacketCodec.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CanonicalPacketCodec.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [allPacketCodec](../../../../Combinatorics/CanonicalPacketCodec.lean/declarations/allpacketcodec.md) | 23 | `declaration-track:8dceb71aa434d4a78239f8f3d0d5c9ea10cc1eb996f4a82a9f0d5755e062c786` |
-| 2 | `theorem` | [allPacketCodec_valid](../../../../Combinatorics/CanonicalPacketCodec.lean/declarations/allpacketcodec-valid.md) | 30 | `result-track:78b19293c93e37595f1b508bf0a51c6ac3ffd167850f56070fd9dda35bf92dbb` |
+| 1 | `def` | [allPacketCodec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CanonicalPacketCodec.lean/declarations/allpacketcodec.md) | 23 | `declaration-track:8dceb71aa434d4a78239f8f3d0d5c9ea10cc1eb996f4a82a9f0d5755e062c786` |
+| 2 | `theorem` | [allPacketCodec_valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CanonicalPacketCodec.lean/declarations/allpacketcodec-valid.md) | 30 | `result-track:78b19293c93e37595f1b508bf0a51c6ac3ffd167850f56070fd9dda35bf92dbb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

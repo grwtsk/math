@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripDerivativeIsolation.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripDerivativeIsolation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripDerivativeIsolation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripDerivativeIsolation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripAnalyticPatch`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CriticalStripAnalyticPatch.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripAnalyticPatch`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CriticalStripAnalyticPatch.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,19 +57,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [AtMostOneZero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripDerivativeIsolation.lean/declarations/atmostonezero.md) | 22 | `declaration-track:1aac249b2834b58f55d0612e60ff597c9fe02dcca4593103352eb647e97b94a4` |
-| 2 | `structure` | [DerivativeDisk](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripDerivativeIsolation.lean/declarations/derivativedisk.md) | 26 | `declaration-track:ebc9f999583afa99432c04064d8f999143850f0bf6be258614cad77410ce4110` |
-| 3 | `def` | [residual](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripDerivativeIsolation.lean/declarations/residual.md) | 38 | `declaration-track:f042cc44f64787146893a07ab64434e3968468d1e77a10e74d144b64f6020d3e` |
-| 4 | `lemma` | [residual_hasDerivAt](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripDerivativeIsolation.lean/declarations/residual-hasderivat.md) | 40 | `result-track:179c504fad9dca307aadba27ca73c1997d1d3d0970c734676f334853ff67c926` |
-| 5 | `theorem` | [residual_variation](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripDerivativeIsolation.lean/declarations/residual-variation.md) | 46 | `result-track:55c9647e4ab728d7de5c9297474731a8e627fcf1a884ae38bb29792bd314fe35` |
-| 6 | `theorem` | [lower_lipschitz](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripDerivativeIsolation.lean/declarations/lower-lipschitz.md) | 61 | `result-track:6f5ef90d528867a1f6c804df2b88c3f1baf70051cacb96ee6df1ae397ad1981a` |
-| 7 | `theorem` | [injective](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripDerivativeIsolation.lean/declarations/injective.md) | 73 | `result-track:1153791ea142e34299bbbead60e34b8539ad06d9f9babb7d8e94fe6fc6a031a3` |
-| 8 | `theorem` | [atMostOneZero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripDerivativeIsolation.lean/declarations/atmostonezero-source-edition-2.md) | 82 | `result-track:913cee09140b4d6b592709c021d0644d8b43a3df65fc4f4cdf8580ed243da941` |
-| 9 | `theorem` | [deriv_ne_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripDerivativeIsolation.lean/declarations/deriv-ne-zero.md) | 87 | `result-track:775c434937a0bd9901285b48c71e3c5894e8f4da13f6ae142a0aabf82bc8ba42` |
-| 10 | `theorem` | [distance_to_zero_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripDerivativeIsolation.lean/declarations/distance-to-zero-le.md) | 95 | `result-track:c2c1d08830f83915fd180005f9d46c3a7fd2e648cd3daf7b9334bebdd0fd4a06` |
-| 11 | `def` | [restrict](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripDerivativeIsolation.lean/declarations/restrict.md) | 104 | `declaration-track:bed7e66fbc16de437a64a6f60adc9d2ca46d878bd109772532ec9c30b5319c9f` |
-| 12 | `def` | [ofDerivativeModel](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripDerivativeIsolation.lean/declarations/ofderivativemodel.md) | 116 | `declaration-track:30a015e57fdfed30317703c63ffd76a6ccdc049176bcb401e609da83e96ac0db` |
-| 13 | `def` | [affine](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripDerivativeIsolation.lean/declarations/affine.md) | 139 | `declaration-track:caf2bd8cd57ab33e493231761c39b53814d8353fe80a04a4b40dd00979c2eff8` |
+| 1 | `def` | [AtMostOneZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripDerivativeIsolation.lean/declarations/atmostonezero.md) | 22 | `declaration-track:1aac249b2834b58f55d0612e60ff597c9fe02dcca4593103352eb647e97b94a4` |
+| 2 | `structure` | [DerivativeDisk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripDerivativeIsolation.lean/declarations/derivativedisk.md) | 26 | `declaration-track:ebc9f999583afa99432c04064d8f999143850f0bf6be258614cad77410ce4110` |
+| 3 | `def` | [residual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripDerivativeIsolation.lean/declarations/residual.md) | 38 | `declaration-track:f042cc44f64787146893a07ab64434e3968468d1e77a10e74d144b64f6020d3e` |
+| 4 | `lemma` | [residual_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripDerivativeIsolation.lean/declarations/residual-hasderivat.md) | 40 | `result-track:179c504fad9dca307aadba27ca73c1997d1d3d0970c734676f334853ff67c926` |
+| 5 | `theorem` | [residual_variation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripDerivativeIsolation.lean/declarations/residual-variation.md) | 46 | `result-track:55c9647e4ab728d7de5c9297474731a8e627fcf1a884ae38bb29792bd314fe35` |
+| 6 | `theorem` | [lower_lipschitz](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripDerivativeIsolation.lean/declarations/lower-lipschitz.md) | 61 | `result-track:6f5ef90d528867a1f6c804df2b88c3f1baf70051cacb96ee6df1ae397ad1981a` |
+| 7 | `theorem` | [injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripDerivativeIsolation.lean/declarations/injective.md) | 73 | `result-track:1153791ea142e34299bbbead60e34b8539ad06d9f9babb7d8e94fe6fc6a031a3` |
+| 8 | `theorem` | [atMostOneZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripDerivativeIsolation.lean/declarations/atmostonezero-source-edition-2.md) | 82 | `result-track:913cee09140b4d6b592709c021d0644d8b43a3df65fc4f4cdf8580ed243da941` |
+| 9 | `theorem` | [deriv_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripDerivativeIsolation.lean/declarations/deriv-ne-zero.md) | 87 | `result-track:775c434937a0bd9901285b48c71e3c5894e8f4da13f6ae142a0aabf82bc8ba42` |
+| 10 | `theorem` | [distance_to_zero_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripDerivativeIsolation.lean/declarations/distance-to-zero-le.md) | 95 | `result-track:c2c1d08830f83915fd180005f9d46c3a7fd2e648cd3daf7b9334bebdd0fd4a06` |
+| 11 | `def` | [restrict](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripDerivativeIsolation.lean/declarations/restrict.md) | 104 | `declaration-track:bed7e66fbc16de437a64a6f60adc9d2ca46d878bd109772532ec9c30b5319c9f` |
+| 12 | `def` | [ofDerivativeModel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripDerivativeIsolation.lean/declarations/ofderivativemodel.md) | 116 | `declaration-track:30a015e57fdfed30317703c63ffd76a6ccdc049176bcb401e609da83e96ac0db` |
+| 13 | `def` | [affine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripDerivativeIsolation.lean/declarations/affine.md) | 139 | `declaration-track:caf2bd8cd57ab33e493231761c39b53814d8353fe80a04a4b40dd00979c2eff8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

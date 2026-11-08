@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/InferenceGuards.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/InferenceGuards.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/InferenceGuards.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/InferenceGuards.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,10 +62,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [trivial_zero_is_excluded](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/InferenceGuards.lean/declarations/trivial-zero-is-excluded.md) | 18 | `result-track:cac10029030e11dfe65a1549e992ea048050673b13f68ef288f21a93dfc0d26b` |
-| 2 | `theorem` | [pole_is_excluded](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/InferenceGuards.lean/declarations/pole-is-excluded.md) | 26 | `result-track:afaeafb90559ed994b9c9fa5e1e88cc41310560d50f4c96d2331fa1e3a6625b8` |
-| 3 | `theorem` | [critical_reflection_is_not_gaussian_rotation](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/InferenceGuards.lean/declarations/critical-reflection-is-not-gaussian-rotation.md) | 31 | `result-track:da5a2b2792de1722a41659c57962c713f1c4967d54b1cc1b794c4162b6ae841d` |
-| 4 | `theorem` | [hermitian_does_not_imply_positive_semidefinite](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/InferenceGuards.lean/declarations/hermitian-does-not-imply-positive-semidefinite.md) | 39 | `result-track:e020a7b08ee44a5eba652a5ea28d315ee17010b50ace9fc5100d7bf67269deca` |
+| 1 | `theorem` | [trivial_zero_is_excluded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/InferenceGuards.lean/declarations/trivial-zero-is-excluded.md) | 18 | `result-track:cac10029030e11dfe65a1549e992ea048050673b13f68ef288f21a93dfc0d26b` |
+| 2 | `theorem` | [pole_is_excluded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/InferenceGuards.lean/declarations/pole-is-excluded.md) | 26 | `result-track:afaeafb90559ed994b9c9fa5e1e88cc41310560d50f4c96d2331fa1e3a6625b8` |
+| 3 | `theorem` | [critical_reflection_is_not_gaussian_rotation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/InferenceGuards.lean/declarations/critical-reflection-is-not-gaussian-rotation.md) | 31 | `result-track:da5a2b2792de1722a41659c57962c713f1c4967d54b1cc1b794c4162b6ae841d` |
+| 4 | `theorem` | [hermitian_does_not_imply_positive_semidefinite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/InferenceGuards.lean/declarations/hermitian-does-not-imply-positive-semidefinite.md) | 39 | `result-track:e020a7b08ee44a5eba652a5ea28d315ee17010b50ace9fc5100d7bf67269deca` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

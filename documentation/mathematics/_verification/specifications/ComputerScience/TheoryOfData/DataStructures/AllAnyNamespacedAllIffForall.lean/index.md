@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/AllAnyNamespacedAllIffForall.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/AllAnyNamespacedAllIffForall.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/AllAnyNamespacedAllIffForall.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/AllAnyNamespacedAllIffForall.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [all_iff_forall](../../../../../../ComputerScience/TheoryOfData/DataStructures/AllAnyNamespacedAllIffForall.lean/declarations/all-iff-forall.md) | 35 | `result-track:1925dce5e7403a16470d94212bb1f9ccd5b1172581b0aeb1d9f291f4b25d0cfa` |
-| 2 | `theorem` | [all_iff_forall_prop](../../../../../../ComputerScience/TheoryOfData/DataStructures/AllAnyNamespacedAllIffForall.lean/declarations/all-iff-forall-prop.md) | 41 | `result-track:45fe1f1239099bcc58eddfc272643357235552b8e48228e8071059ff3cf5583a` |
-| 3 | `theorem` | [any_iff_exists](../../../../../../ComputerScience/TheoryOfData/DataStructures/AllAnyNamespacedAllIffForall.lean/declarations/any-iff-exists.md) | 50 | `result-track:095262742ad010ef5518f3f6f37fdc6d03d4df4a621cc17e2aafca4683a94dd6` |
-| 4 | `theorem` | [any_iff_exists_prop](../../../../../../ComputerScience/TheoryOfData/DataStructures/AllAnyNamespacedAllIffForall.lean/declarations/any-iff-exists-prop.md) | 56 | `result-track:4026bd7258d2c1d307a78100af08ebdf0555b553de6be6dce2403334c35bc253` |
-| 5 | `theorem` | [any_of_mem](../../../../../../ComputerScience/TheoryOfData/DataStructures/AllAnyNamespacedAllIffForall.lean/declarations/any-of-mem.md) | 59 | `result-track:143b85c06bfa8d3ddb678a5aff7a587840eabc9a11aa6d4352bab20953910997` |
+| 1 | `theorem` | [all_iff_forall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/AllAnyNamespacedAllIffForall.lean/declarations/all-iff-forall.md) | 35 | `result-track:1925dce5e7403a16470d94212bb1f9ccd5b1172581b0aeb1d9f291f4b25d0cfa` |
+| 2 | `theorem` | [all_iff_forall_prop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/AllAnyNamespacedAllIffForall.lean/declarations/all-iff-forall-prop.md) | 41 | `result-track:45fe1f1239099bcc58eddfc272643357235552b8e48228e8071059ff3cf5583a` |
+| 3 | `theorem` | [any_iff_exists](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/AllAnyNamespacedAllIffForall.lean/declarations/any-iff-exists.md) | 50 | `result-track:095262742ad010ef5518f3f6f37fdc6d03d4df4a621cc17e2aafca4683a94dd6` |
+| 4 | `theorem` | [any_iff_exists_prop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/AllAnyNamespacedAllIffForall.lean/declarations/any-iff-exists-prop.md) | 56 | `result-track:4026bd7258d2c1d307a78100af08ebdf0555b553de6be6dce2403334c35bc253` |
+| 5 | `theorem` | [any_of_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/AllAnyNamespacedAllIffForall.lean/declarations/any-of-mem.md) | 59 | `result-track:143b85c06bfa8d3ddb678a5aff7a587840eabc9a11aa6d4352bab20953910997` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

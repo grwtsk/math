@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/UnifiedNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/UnifiedNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/UnifiedNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/UnifiedNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [UnifiedUnknownKind](../../../../../MathematicalLogicAndFoundations/GeneralLogic/UnifiedNamespaced.lean/declarations/unifiedunknownkind.md) | 26 | `declaration-track:631b59313dbc5d671efd47f96b812cf569a0d2df48d6e4b7a124925f36e07b40` |
-| 2 | `structure` | [UnifiedDomainProfile](../../../../../MathematicalLogicAndFoundations/GeneralLogic/UnifiedNamespaced.lean/declarations/unifieddomainprofile.md) | 38 | `declaration-track:d2f1e5402ec852cd552d009b260415ba5344d38062d8ed9e2a9ab70e4a4d88f3` |
-| 3 | `inductive` | [UnifiedResolution](../../../../../MathematicalLogicAndFoundations/GeneralLogic/UnifiedNamespaced.lean/declarations/unifiedresolution.md) | 58 | `declaration-track:b685b645d218892abf892b8184ff8a537a2ce385ac35a3bef2b8038eabb02d00` |
-| 4 | `def` | [unifiedResolve](../../../../../MathematicalLogicAndFoundations/GeneralLogic/UnifiedNamespaced.lean/declarations/unifiedresolve.md) | 92 | `declaration-track:47801099eb6edb475fe1bd978a748876516e14eddc372ab47b1a75ebf9f480c0` |
-| 5 | `def` | [UnifiedResolution.IsPositive](../../../../../MathematicalLogicAndFoundations/GeneralLogic/UnifiedNamespaced.lean/declarations/unifiedresolution-ispositive.md) | 117 | `declaration-track:5db2449fd5cdea654d848f076463f053eef20d55e6a73c60107c5bf154fb0a59` |
-| 6 | `theorem` | [unified_positive_sound](../../../../../MathematicalLogicAndFoundations/GeneralLogic/UnifiedNamespaced.lean/declarations/unified-positive-sound.md) | 137 | `result-track:0a379076b904bf8442d260ee0f7bef15807ef68b67c4fb40600c1d031c90a911` |
-| 7 | `theorem` | [unifiedResolve_total](../../../../../MathematicalLogicAndFoundations/GeneralLogic/UnifiedNamespaced.lean/declarations/unifiedresolve-total.md) | 163 | `result-track:f345530c1649ac77610713b91ae8cb7738083478b7c9a1467de9979231cb2f9f` |
+| 1 | `inductive` | [UnifiedUnknownKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/UnifiedNamespaced.lean/declarations/unifiedunknownkind.md) | 26 | `declaration-track:631b59313dbc5d671efd47f96b812cf569a0d2df48d6e4b7a124925f36e07b40` |
+| 2 | `structure` | [UnifiedDomainProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/UnifiedNamespaced.lean/declarations/unifieddomainprofile.md) | 38 | `declaration-track:d2f1e5402ec852cd552d009b260415ba5344d38062d8ed9e2a9ab70e4a4d88f3` |
+| 3 | `inductive` | [UnifiedResolution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/UnifiedNamespaced.lean/declarations/unifiedresolution.md) | 58 | `declaration-track:b685b645d218892abf892b8184ff8a537a2ce385ac35a3bef2b8038eabb02d00` |
+| 4 | `def` | [unifiedResolve](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/UnifiedNamespaced.lean/declarations/unifiedresolve.md) | 92 | `declaration-track:47801099eb6edb475fe1bd978a748876516e14eddc372ab47b1a75ebf9f480c0` |
+| 5 | `def` | [UnifiedResolution.IsPositive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/UnifiedNamespaced.lean/declarations/unifiedresolution-ispositive.md) | 117 | `declaration-track:5db2449fd5cdea654d848f076463f053eef20d55e6a73c60107c5bf154fb0a59` |
+| 6 | `theorem` | [unified_positive_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/UnifiedNamespaced.lean/declarations/unified-positive-sound.md) | 137 | `result-track:0a379076b904bf8442d260ee0f7bef15807ef68b67c4fb40600c1d031c90a911` |
+| 7 | `theorem` | [unifiedResolve_total](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/UnifiedNamespaced.lean/declarations/unifiedresolve-total.md) | 163 | `result-track:f345530c1649ac77610713b91ae8cb7738083478b7c9a1467de9979231cb2f9f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

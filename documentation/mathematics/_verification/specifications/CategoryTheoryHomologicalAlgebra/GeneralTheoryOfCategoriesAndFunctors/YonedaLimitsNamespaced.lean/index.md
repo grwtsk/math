@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/YonedaLimitsNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/YonedaLimitsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/YonedaLimitsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/YonedaLimitsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [preservesLimits_preadditiveYonedaObj](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/YonedaLimitsNamespaced.lean/declarations/preserveslimits-preadditiveyonedaobj.md) | 41 | `declaration-track:66732d2561c5d5b9eea54482098669f135b18204c2f2c309528b5c96a33803bb` |
-| 2 | `instance` | [preservesLimits_preadditiveCoyonedaObj](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/YonedaLimitsNamespaced.lean/declarations/preserveslimits-preadditivecoyonedaobj.md) | 46 | `declaration-track:8d5d7a8c7683974bf48ce13d15e4ea5534df6d7e0228854f6188cca89ed23ac3` |
-| 3 | `instance` | [preservesLimits_preadditiveYoneda_obj](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/YonedaLimitsNamespaced.lean/declarations/preserveslimits-preadditiveyoneda-obj.md) | 52 | `declaration-track:c2884d7bd2a71d36f0e8e78f385a54cd0eb6960f4d0217f92820d4a65e65ad30` |
-| 4 | `instance` | [preservesLimits_preadditiveCoyoneda_obj](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/YonedaLimitsNamespaced.lean/declarations/preserveslimits-preadditivecoyoneda-obj.md) | 56 | `declaration-track:e84658a02ba44af2fd505a7de81d84c4b3248c86cc0a82ceaea8c22512045417` |
+| 1 | `instance` | [preservesLimits_preadditiveYonedaObj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/YonedaLimitsNamespaced.lean/declarations/preserveslimits-preadditiveyonedaobj.md) | 41 | `declaration-track:66732d2561c5d5b9eea54482098669f135b18204c2f2c309528b5c96a33803bb` |
+| 2 | `instance` | [preservesLimits_preadditiveCoyonedaObj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/YonedaLimitsNamespaced.lean/declarations/preserveslimits-preadditivecoyonedaobj.md) | 46 | `declaration-track:8d5d7a8c7683974bf48ce13d15e4ea5534df6d7e0228854f6188cca89ed23ac3` |
+| 3 | `instance` | [preservesLimits_preadditiveYoneda_obj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/YonedaLimitsNamespaced.lean/declarations/preserveslimits-preadditiveyoneda-obj.md) | 52 | `declaration-track:c2884d7bd2a71d36f0e8e78f385a54cd0eb6960f4d0217f92820d4a65e65ad30` |
+| 4 | `instance` | [preservesLimits_preadditiveCoyoneda_obj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/YonedaLimitsNamespaced.lean/declarations/preserveslimits-preadditivecoyoneda-obj.md) | 56 | `declaration-track:e84658a02ba44af2fd505a7de81d84c4b3248c86cc0a82ceaea8c22512045417` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

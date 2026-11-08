@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ExtraPublicUtf8DecodeChar.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ExtraPublicUtf8DecodeChar.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExtraPublicUtf8DecodeChar.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExtraPublicUtf8DecodeChar.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [utf8DecodeChar?](../../../../../ComputerScience/AlgorithmsInComputerScience/ExtraPublicUtf8DecodeChar.lean/declarations/utf8decodechar.md) | 21 | `declaration-track:e61ba0cf930cddd608705f8d3d2486b52c559b2f5854b3b401d2c2b9a363071b` |
-| 2 | `abbrev` | [validateUTF8](../../../../../ComputerScience/AlgorithmsInComputerScience/ExtraPublicUtf8DecodeChar.lean/declarations/validateutf8.md) | 28 | `declaration-track:6be4ee41279fc13324c6f31ab4dcd4f22029d2caf37f91ca56d44c4bc58342c4` |
-| 3 | `def` | [findLeadingSpacesSize](../../../../../ComputerScience/AlgorithmsInComputerScience/ExtraPublicUtf8DecodeChar.lean/declarations/findleadingspacessize.md) | 31 | `declaration-track:6b38c5b427a5390047c6d427f0b07de1fdf86f24d83ff42ba41e307e75dd2db9` |
-| 4 | `def` | [removeNumLeadingSpaces](../../../../../ComputerScience/AlgorithmsInComputerScience/ExtraPublicUtf8DecodeChar.lean/declarations/removenumleadingspaces.md) | 50 | `declaration-track:8b0c692ee0e561887bf4cb8d9556a6c55fa36eae69a27c6e1c5665b140abca05` |
-| 5 | `def` | [removeLeadingSpaces](../../../../../ComputerScience/AlgorithmsInComputerScience/ExtraPublicUtf8DecodeChar.lean/declarations/removeleadingspaces.md) | 85 | `declaration-track:adcb77970404571e37d7b29044955dc7444f71db2292ed698b4afb2b02c54f11` |
-| 6 | `def` | [crlfToLf](../../../../../ComputerScience/AlgorithmsInComputerScience/ExtraPublicUtf8DecodeChar.lean/declarations/crlftolf.md) | 95 | `declaration-track:acb1595cd7035f1a4b8e2d6edaf6fe28a801e047d256395d43d22f52e1e7ccd4` |
+| 1 | `abbrev` | [utf8DecodeChar?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExtraPublicUtf8DecodeChar.lean/declarations/utf8decodechar.md) | 21 | `declaration-track:e61ba0cf930cddd608705f8d3d2486b52c559b2f5854b3b401d2c2b9a363071b` |
+| 2 | `abbrev` | [validateUTF8](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExtraPublicUtf8DecodeChar.lean/declarations/validateutf8.md) | 28 | `declaration-track:6be4ee41279fc13324c6f31ab4dcd4f22029d2caf37f91ca56d44c4bc58342c4` |
+| 3 | `def` | [findLeadingSpacesSize](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExtraPublicUtf8DecodeChar.lean/declarations/findleadingspacessize.md) | 31 | `declaration-track:6b38c5b427a5390047c6d427f0b07de1fdf86f24d83ff42ba41e307e75dd2db9` |
+| 4 | `def` | [removeNumLeadingSpaces](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExtraPublicUtf8DecodeChar.lean/declarations/removenumleadingspaces.md) | 50 | `declaration-track:8b0c692ee0e561887bf4cb8d9556a6c55fa36eae69a27c6e1c5665b140abca05` |
+| 5 | `def` | [removeLeadingSpaces](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExtraPublicUtf8DecodeChar.lean/declarations/removeleadingspaces.md) | 85 | `declaration-track:adcb77970404571e37d7b29044955dc7444f71db2292ed698b4afb2b02c54f11` |
+| 6 | `def` | [crlfToLf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExtraPublicUtf8DecodeChar.lean/declarations/crlftolf.md) | 95 | `declaration-track:acb1595cd7035f1a4b8e2d6edaf6fe28a801e047d256395d43d22f52e1e7ccd4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

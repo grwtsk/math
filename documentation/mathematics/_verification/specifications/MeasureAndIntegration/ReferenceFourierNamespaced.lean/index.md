@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ReferenceFourierNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ReferenceFourierNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReferenceFourierNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReferenceFourierNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [reference_zeroExtension_ae](../../../../MeasureAndIntegration/ReferenceFourierNamespaced.lean/declarations/reference-zeroextension-ae.md) | 22 | `result-track:9e731fc2182396708a5b71e7ab8139edda9c55289d1a6f970322130b26cb76fc` |
-| 2 | `theorem` | [reference_zeroExtension_integrable](../../../../MeasureAndIntegration/ReferenceFourierNamespaced.lean/declarations/reference-zeroextension-integrable.md) | 35 | `result-track:c420dab379748bcdeea56a12f165e57b4544a47176e436c7f29bb5fdc76cd000` |
-| 3 | `theorem` | [reference_zeroExtension_fourier](../../../../MeasureAndIntegration/ReferenceFourierNamespaced.lean/declarations/reference-zeroextension-fourier.md) | 43 | `result-track:54e207df62f3810055dc70cc5051811030c04d708f0600c6ac2ed34244bff3e1` |
-| 4 | `theorem` | [reference_zeroExtension_fourier_norm_sq](../../../../MeasureAndIntegration/ReferenceFourierNamespaced.lean/declarations/reference-zeroextension-fourier-norm-sq.md) | 68 | `result-track:86e2333a933f24d3861646723fb6ac6343a22f0c3fd51c861b9c3c27f7786e0c` |
-| 5 | `theorem` | [reference_zeroExtension_fourier_square_integral](../../../../MeasureAndIntegration/ReferenceFourierNamespaced.lean/declarations/reference-zeroextension-fourier-square-integral.md) | 75 | `result-track:8face228fed46239cdccfd162e1e9bd9d8587086202949611301d25286ba80da` |
+| 1 | `theorem` | [reference_zeroExtension_ae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReferenceFourierNamespaced.lean/declarations/reference-zeroextension-ae.md) | 22 | `result-track:9e731fc2182396708a5b71e7ab8139edda9c55289d1a6f970322130b26cb76fc` |
+| 2 | `theorem` | [reference_zeroExtension_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReferenceFourierNamespaced.lean/declarations/reference-zeroextension-integrable.md) | 35 | `result-track:c420dab379748bcdeea56a12f165e57b4544a47176e436c7f29bb5fdc76cd000` |
+| 3 | `theorem` | [reference_zeroExtension_fourier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReferenceFourierNamespaced.lean/declarations/reference-zeroextension-fourier.md) | 43 | `result-track:54e207df62f3810055dc70cc5051811030c04d708f0600c6ac2ed34244bff3e1` |
+| 4 | `theorem` | [reference_zeroExtension_fourier_norm_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReferenceFourierNamespaced.lean/declarations/reference-zeroextension-fourier-norm-sq.md) | 68 | `result-track:86e2333a933f24d3861646723fb6ac6343a22f0c3fd51c861b9c3c27f7786e0c` |
+| 5 | `theorem` | [reference_zeroExtension_fourier_square_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReferenceFourierNamespaced.lean/declarations/reference-zeroextension-fourier-square-integral.md) | 75 | `result-track:8face228fed46239cdccfd162e1e9bd9d8587086202949611301d25286ba80da` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

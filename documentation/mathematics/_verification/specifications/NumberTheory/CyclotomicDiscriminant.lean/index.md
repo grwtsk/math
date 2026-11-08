@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/CyclotomicDiscriminant.lean/index.md) · [Full source](../../../../NumberTheory/CyclotomicDiscriminant.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CyclotomicDiscriminant.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CyclotomicDiscriminant.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [discr_zeta_eq_discr_zeta_sub_one](../../../../NumberTheory/CyclotomicDiscriminant.lean/declarations/discr-zeta-eq-discr-zeta-sub-one.md) | 36 | `result-track:9ceee54ce2bbaf3a479f1fe6e1d29d7b1b8e408317fda06b809a192a9d08522a` |
-| 2 | `theorem` | [discr_prime_pow_ne_two](../../../../NumberTheory/CyclotomicDiscriminant.lean/declarations/discr-prime-pow-ne-two.md) | 59 | `result-track:a39ba67b470b1bd662d8dad259d8a72bc4252d7d58afe4427d6abf469b16f8fd` |
-| 3 | `theorem` | [discr_prime_pow_ne_two'](../../../../NumberTheory/CyclotomicDiscriminant.lean/declarations/discr-prime-pow-ne-two-source-edition-2.md) | 119 | `result-track:b4b0478735b6bb819428bf9f63bcf73a1d26331eb4125b00794934c0a2ce8bca` |
-| 4 | `theorem` | [discr_prime_pow](../../../../NumberTheory/CyclotomicDiscriminant.lean/declarations/discr-prime-pow.md) | 130 | `result-track:95070f091ede95a6301bb73e8becb1d793d335353474b03545985c994aa2343f` |
-| 5 | `theorem` | [discr_prime_pow_eq_unit_mul_pow](../../../../NumberTheory/CyclotomicDiscriminant.lean/declarations/discr-prime-pow-eq-unit-mul-pow.md) | 180 | `result-track:59d861eed6763f1c0b03e0ec515cf2a22b9a6bc9de172c7c4bb93a5155295a29` |
-| 6 | `theorem` | [discr_odd_prime](../../../../NumberTheory/CyclotomicDiscriminant.lean/declarations/discr-odd-prime.md) | 193 | `result-track:d08add2d1c7ef75003ac0e94ff93faaf8076e63ae1ee206bdfdf0fea2aa49e03` |
+| 1 | `theorem` | [discr_zeta_eq_discr_zeta_sub_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CyclotomicDiscriminant.lean/declarations/discr-zeta-eq-discr-zeta-sub-one.md) | 36 | `result-track:9ceee54ce2bbaf3a479f1fe6e1d29d7b1b8e408317fda06b809a192a9d08522a` |
+| 2 | `theorem` | [discr_prime_pow_ne_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CyclotomicDiscriminant.lean/declarations/discr-prime-pow-ne-two.md) | 59 | `result-track:a39ba67b470b1bd662d8dad259d8a72bc4252d7d58afe4427d6abf469b16f8fd` |
+| 3 | `theorem` | [discr_prime_pow_ne_two'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CyclotomicDiscriminant.lean/declarations/discr-prime-pow-ne-two-source-edition-2.md) | 119 | `result-track:b4b0478735b6bb819428bf9f63bcf73a1d26331eb4125b00794934c0a2ce8bca` |
+| 4 | `theorem` | [discr_prime_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CyclotomicDiscriminant.lean/declarations/discr-prime-pow.md) | 130 | `result-track:95070f091ede95a6301bb73e8becb1d793d335353474b03545985c994aa2343f` |
+| 5 | `theorem` | [discr_prime_pow_eq_unit_mul_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CyclotomicDiscriminant.lean/declarations/discr-prime-pow-eq-unit-mul-pow.md) | 180 | `result-track:59d861eed6763f1c0b03e0ec515cf2a22b9a6bc9de172c7c4bb93a5155295a29` |
+| 6 | `theorem` | [discr_odd_prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CyclotomicDiscriminant.lean/declarations/discr-odd-prime.md) | 193 | `result-track:d08add2d1c7ef75003ac0e94ff93faaf8076e63ae1ee206bdfdf0fea2aa49e03` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

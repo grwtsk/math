@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListMonadNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListMonadNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListMonadNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListMonadNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [instMonad](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListMonadNamespaced.lean/declarations/instmonad.md) | 26 | `declaration-track:bb16f9d11d76e7d9f6404799adaf5ad210f524e08f068e44df22c2b291ab5273` |
-| 2 | `theorem` | [pure_def](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListMonadNamespaced.lean/declarations/pure-def.md) | 31 | `result-track:5c17dc7cfad2a72b95ba469e0bc92c702fe771a76cf5ea7d295fb6a18b1231ab` |
-| 3 | `instance` | [instLawfulMonad](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListMonadNamespaced.lean/declarations/instlawfulmonad.md) | 33 | `declaration-track:e10e0648da432694b0b288f32dee023f176e56b5e8b79deb480e418cc911d6b6` |
-| 4 | `instance` | [instAlternative](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListMonadNamespaced.lean/declarations/instalternative.md) | 39 | `declaration-track:13cb3e98bf135c1614f1acb539a2ba4efcd691c5e66586c5cb28beb062aa4b3e` |
+| 1 | `instance` | [instMonad](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListMonadNamespaced.lean/declarations/instmonad.md) | 26 | `declaration-track:bb16f9d11d76e7d9f6404799adaf5ad210f524e08f068e44df22c2b291ab5273` |
+| 2 | `theorem` | [pure_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListMonadNamespaced.lean/declarations/pure-def.md) | 31 | `result-track:5c17dc7cfad2a72b95ba469e0bc92c702fe771a76cf5ea7d295fb6a18b1231ab` |
+| 3 | `instance` | [instLawfulMonad](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListMonadNamespaced.lean/declarations/instlawfulmonad.md) | 33 | `declaration-track:e10e0648da432694b0b288f32dee023f176e56b5e8b79deb480e418cc911d6b6` |
+| 4 | `instance` | [instAlternative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListMonadNamespaced.lean/declarations/instalternative.md) | 39 | `declaration-track:13cb3e98bf135c1614f1acb539a2ba4efcd691c5e66586c5cb28beb062aa4b3e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

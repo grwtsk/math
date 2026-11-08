@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SubProd.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SubProd.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SubProd.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SubProd.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [Prod.orderedSub](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SubProd.lean/declarations/prod-orderedsub.md) | 18 | `declaration-track:8c8faacda5d04ac069f794e391b54e1d3eb65e825ae5d5671de6c29f6518fcde` |
-| 2 | `instance` | [Pi.orderedSub](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SubProd.lean/declarations/pi-orderedsub.md) | 25 | `declaration-track:48e991c1e047d5e7ccd6ffac69838462869ce0dece2ddc0ea41c0427b49919ef` |
+| 1 | `instance` | [Prod.orderedSub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SubProd.lean/declarations/prod-orderedsub.md) | 18 | `declaration-track:8c8faacda5d04ac069f794e391b54e1d3eb65e825ae5d5671de6c29f6518fcde` |
+| 2 | `instance` | [Pi.orderedSub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SubProd.lean/declarations/pi-orderedsub.md) | 25 | `declaration-track:48e991c1e047d5e7ccd6ffac69838462869ce0dece2ddc0ea41c0427b49919ef` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

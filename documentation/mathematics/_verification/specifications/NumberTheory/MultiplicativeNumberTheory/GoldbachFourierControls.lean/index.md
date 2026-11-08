@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachFourierControls.lean/index.md) · [Full source](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachFourierControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachFourierControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachFourierControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Primes.GoldbachFiniteFourier`](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachFiniteFourier.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Primes.GoldbachFiniteFourier`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachFiniteFourier.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Tactic.NormNum` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [four_mass_positive](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachFourierControls.lean/declarations/four-mass-positive.md) | 24 | `result-track:670d7a4b7a8c92f824eadd7aa34f37c5cdddf80e73ca4af4ffbf0514eb80b9ba` |
-| 2 | `theorem` | [eleven_mass_zero](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachFourierControls.lean/declarations/eleven-mass-zero.md) | 29 | `result-track:ac67f3c031d13766ed0ce663aad37cdac1a2e17fbe95ce081d0f159f76c4bf7b` |
-| 3 | `theorem` | [composite_weight_zero](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachFourierControls.lean/declarations/composite-weight-zero.md) | 42 | `result-track:79bde2750216ab6dde0210e5e16e4779a9df89de86aca247e1e333b2381de619` |
-| 4 | `theorem` | [four_projector_exact](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachFourierControls.lean/declarations/four-projector-exact.md) | 47 | `result-track:57c47636d8392d433a794d73c65e87933528311bfd582251f34bdc522f035724` |
-| 5 | `theorem` | [modular_wrap_control](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachFourierControls.lean/declarations/modular-wrap-control.md) | 53 | `result-track:6de19f922f6466e0fe4928e2d16d550825b4d448139331e8c6c366d42d46aac9` |
-| 6 | `theorem` | [wrong_additive_target_control](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachFourierControls.lean/declarations/wrong-additive-target-control.md) | 61 | `result-track:a90841c971b2dcfcea1b0c35bf5f1076f6e084ae9bc72bc300c089d6629a0e79` |
+| 1 | `theorem` | [four_mass_positive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachFourierControls.lean/declarations/four-mass-positive.md) | 24 | `result-track:670d7a4b7a8c92f824eadd7aa34f37c5cdddf80e73ca4af4ffbf0514eb80b9ba` |
+| 2 | `theorem` | [eleven_mass_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachFourierControls.lean/declarations/eleven-mass-zero.md) | 29 | `result-track:ac67f3c031d13766ed0ce663aad37cdac1a2e17fbe95ce081d0f159f76c4bf7b` |
+| 3 | `theorem` | [composite_weight_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachFourierControls.lean/declarations/composite-weight-zero.md) | 42 | `result-track:79bde2750216ab6dde0210e5e16e4779a9df89de86aca247e1e333b2381de619` |
+| 4 | `theorem` | [four_projector_exact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachFourierControls.lean/declarations/four-projector-exact.md) | 47 | `result-track:57c47636d8392d433a794d73c65e87933528311bfd582251f34bdc522f035724` |
+| 5 | `theorem` | [modular_wrap_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachFourierControls.lean/declarations/modular-wrap-control.md) | 53 | `result-track:6de19f922f6466e0fe4928e2d16d550825b4d448139331e8c6c366d42d46aac9` |
+| 6 | `theorem` | [wrong_additive_target_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachFourierControls.lean/declarations/wrong-additive-target-control.md) | 61 | `result-track:a90841c971b2dcfcea1b0c35bf5f1076f6e084ae9bc72bc300c089d6629a0e79` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

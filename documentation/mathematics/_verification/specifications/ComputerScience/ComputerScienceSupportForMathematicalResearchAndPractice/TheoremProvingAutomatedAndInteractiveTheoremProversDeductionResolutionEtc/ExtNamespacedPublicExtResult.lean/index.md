@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ExtNamespacedPublicExtResult.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ExtNamespacedPublicExtResult.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ExtNamespacedPublicExtResult.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ExtNamespacedPublicExtResult.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ExtResult](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ExtNamespacedPublicExtResult.lean/declarations/extresult.md) | 26 | `declaration-track:add93c5eb1c6c0a9390067585863a3ecc9bc4657bf386836b2e6df9ba59af25c` |
-| 2 | `def` | [straightLineExt](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ExtNamespacedPublicExtResult.lean/declarations/straightlineext.md) | 31 | `declaration-track:8561e99779a29c2c36bc5749702e2ff5880f23ea62595b7877e9cfd9dd7db894` |
-| 3 | `def` | [straightLineExtProgress](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ExtNamespacedPublicExtResult.lean/declarations/straightlineextprogress.md) | 56 | `declaration-track:df0a446db8c7df253737f9f670bb34b9bf1dca096878ac041ac094b38dea5b05` |
+| 1 | `structure` | [ExtResult](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ExtNamespacedPublicExtResult.lean/declarations/extresult.md) | 26 | `declaration-track:add93c5eb1c6c0a9390067585863a3ecc9bc4657bf386836b2e6df9ba59af25c` |
+| 2 | `def` | [straightLineExt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ExtNamespacedPublicExtResult.lean/declarations/straightlineext.md) | 31 | `declaration-track:8561e99779a29c2c36bc5749702e2ff5880f23ea62595b7877e9cfd9dd7db894` |
+| 3 | `def` | [straightLineExtProgress](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ExtNamespacedPublicExtResult.lean/declarations/straightlineextprogress.md) | 56 | `declaration-track:df0a446db8c7df253737f9f670bb34b9bf1dca096878ac041ac094b38dea5b05` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

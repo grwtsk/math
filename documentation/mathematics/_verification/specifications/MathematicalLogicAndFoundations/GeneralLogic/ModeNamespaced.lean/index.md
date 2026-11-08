@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ModeNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ModeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ModeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ModeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [TraversalMode](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ModeNamespaced.lean/declarations/traversalmode.md) | 20 | `declaration-track:e0c46d025452e73a62364fc8c6583e6a40e004eff9791c443033bd54fd5bbfff` |
-| 2 | `def` | [TraversalMode.productKind](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ModeNamespaced.lean/declarations/traversalmode-productkind.md) | 33 | `declaration-track:77ee8fa204af988acfcf63494396bde44616e36198522e384dcdc8e2a8d1baa6` |
-| 3 | `inductive` | [Supports](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ModeNamespaced.lean/declarations/supports.md) | 46 | `declaration-track:f25718e1b15ea94b1a7d891b9e57fe4da821dabaf42ff56551a958c1c291ea92` |
-| 4 | `theorem` | [Supports.productKind_eq](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ModeNamespaced.lean/declarations/supports-productkind-eq.md) | 71 | `result-track:a39bbd0b3f3539bd604c500c8fc12f9756ad7f404afef3afe2e91716e0dd209d` |
+| 1 | `inductive` | [TraversalMode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ModeNamespaced.lean/declarations/traversalmode.md) | 20 | `declaration-track:e0c46d025452e73a62364fc8c6583e6a40e004eff9791c443033bd54fd5bbfff` |
+| 2 | `def` | [TraversalMode.productKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ModeNamespaced.lean/declarations/traversalmode-productkind.md) | 33 | `declaration-track:77ee8fa204af988acfcf63494396bde44616e36198522e384dcdc8e2a8d1baa6` |
+| 3 | `inductive` | [Supports](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ModeNamespaced.lean/declarations/supports.md) | 46 | `declaration-track:f25718e1b15ea94b1a7d891b9e57fe4da821dabaf42ff56551a958c1c291ea92` |
+| 4 | `theorem` | [Supports.productKind_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ModeNamespaced.lean/declarations/supports-productkind-eq.md) | 71 | `result-track:a39bbd0b3f3539bd604c500c8fc12f9756ad7f404afef3afe2e91716e0dd209d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Geometry/SquaredDistance.lean/index.md) · [Full source](../../../../Geometry/SquaredDistance.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/SquaredDistance.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/SquaredDistance.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [planeSquaredDistance](../../../../Geometry/SquaredDistance.lean/declarations/planesquareddistance.md) | 13 | `declaration-track:6c506f2c8aec75ad3ca568d1192761a2ced4786c431adc2c6b74a5660ea13c97` |
-| 2 | `theorem` | [planeSquaredDistance_coordinates](../../../../Geometry/SquaredDistance.lean/declarations/planesquareddistance-coordinates.md) | 16 | `result-track:1f510da1aab2083ef325fa8682ebd53119e92af38a0e3db9377887a71de83447` |
-| 3 | `theorem` | [planeSquaredDistance_nonnegative](../../../../Geometry/SquaredDistance.lean/declarations/planesquareddistance-nonnegative.md) | 21 | `result-track:bbcdc0f632810c63212d547a0f4d08cbc1891e207097836fbda558e96e817fa6` |
-| 4 | `theorem` | [planeSquaredDistance_self](../../../../Geometry/SquaredDistance.lean/declarations/planesquareddistance-self.md) | 25 | `result-track:b866fb6ba4455d2d119c95d85fc2f98e8f1ea129df2fa3714a40b0ccd10162d5` |
-| 5 | `theorem` | [planeSquaredDistance_symmetric](../../../../Geometry/SquaredDistance.lean/declarations/planesquareddistance-symmetric.md) | 29 | `result-track:d03c099b99bcd0ad26e9b4cc991b382641b6877cb9cb40d30ef3207287d920d2` |
+| 1 | `def` | [planeSquaredDistance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/SquaredDistance.lean/declarations/planesquareddistance.md) | 13 | `declaration-track:6c506f2c8aec75ad3ca568d1192761a2ced4786c431adc2c6b74a5660ea13c97` |
+| 2 | `theorem` | [planeSquaredDistance_coordinates](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/SquaredDistance.lean/declarations/planesquareddistance-coordinates.md) | 16 | `result-track:1f510da1aab2083ef325fa8682ebd53119e92af38a0e3db9377887a71de83447` |
+| 3 | `theorem` | [planeSquaredDistance_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/SquaredDistance.lean/declarations/planesquareddistance-nonnegative.md) | 21 | `result-track:bbcdc0f632810c63212d547a0f4d08cbc1891e207097836fbda558e96e817fa6` |
+| 4 | `theorem` | [planeSquaredDistance_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/SquaredDistance.lean/declarations/planesquareddistance-self.md) | 25 | `result-track:b866fb6ba4455d2d119c95d85fc2f98e8f1ea129df2fa3714a40b0ccd10162d5` |
+| 5 | `theorem` | [planeSquaredDistance_symmetric](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/SquaredDistance.lean/declarations/planesquareddistance-symmetric.md) | 29 | `result-track:d03c099b99bcd0ad26e9b4cc991b382641b6877cb9cb40d30ef3207287d920d2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

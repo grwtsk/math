@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/StreamEncodingNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/StreamEncodingNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StreamEncodingNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StreamEncodingNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [matrixAtoms](../../../../../ComputerScience/AlgorithmsInComputerScience/StreamEncodingNamespaced.lean/declarations/matrixatoms.md) | 15 | `declaration-track:c1a250237ef30f0979e0e54360e69fd31cce0fed7779c8892a420ca891230978` |
-| 2 | `def` | [primeFactorsCore](../../../../../ComputerScience/AlgorithmsInComputerScience/StreamEncodingNamespaced.lean/declarations/primefactorscore.md) | 20 | `declaration-track:19329f7ade577c4dd770166643cf27dc2fa7586b3fe38906ae9dddff47593228` |
-| 3 | `structure` | [BinaryLogicTreeStreamPlan](../../../../../ComputerScience/AlgorithmsInComputerScience/StreamEncodingNamespaced.lean/declarations/binarylogictreestreamplan.md) | 24 | `declaration-track:b2f9a354f940cca937217058434985c7eb13ba6008ab024215850e934ba6849f` |
-| 4 | `def` | [streamPlan](../../../../../ComputerScience/AlgorithmsInComputerScience/StreamEncodingNamespaced.lean/declarations/streamplan.md) | 33 | `declaration-track:4a0a07afefe74c2d05dceea9566cdc639832002baad1356a88dcd7a999f1b009` |
-| 5 | `theorem` | [streamPlan_preserves_matrix_atoms](../../../../../ComputerScience/AlgorithmsInComputerScience/StreamEncodingNamespaced.lean/declarations/streamplan-preserves-matrix-atoms.md) | 49 | `result-track:3c9a0574258229c72bde4ca829cf3a71abd02684c0b440d15a85a6fb199cd9c8` |
-| 6 | `theorem` | [streamPlan_primeFactors_visible](../../../../../ComputerScience/AlgorithmsInComputerScience/StreamEncodingNamespaced.lean/declarations/streamplan-primefactors-visible.md) | 54 | `result-track:60ec0adb0d8bd75e25ecdbf90478b64d54a8568bda0cb3b32ee7c01b7da3e24c` |
-| 7 | `theorem` | [streamPlan_topologyPrime_visible](../../../../../ComputerScience/AlgorithmsInComputerScience/StreamEncodingNamespaced.lean/declarations/streamplan-topologyprime-visible.md) | 60 | `result-track:84d695b77032995cd73d8e8f1658965c47573680798c60cae76c510c6142b775` |
+| 1 | `def` | [matrixAtoms](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StreamEncodingNamespaced.lean/declarations/matrixatoms.md) | 15 | `declaration-track:c1a250237ef30f0979e0e54360e69fd31cce0fed7779c8892a420ca891230978` |
+| 2 | `def` | [primeFactorsCore](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StreamEncodingNamespaced.lean/declarations/primefactorscore.md) | 20 | `declaration-track:19329f7ade577c4dd770166643cf27dc2fa7586b3fe38906ae9dddff47593228` |
+| 3 | `structure` | [BinaryLogicTreeStreamPlan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StreamEncodingNamespaced.lean/declarations/binarylogictreestreamplan.md) | 24 | `declaration-track:b2f9a354f940cca937217058434985c7eb13ba6008ab024215850e934ba6849f` |
+| 4 | `def` | [streamPlan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StreamEncodingNamespaced.lean/declarations/streamplan.md) | 33 | `declaration-track:4a0a07afefe74c2d05dceea9566cdc639832002baad1356a88dcd7a999f1b009` |
+| 5 | `theorem` | [streamPlan_preserves_matrix_atoms](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StreamEncodingNamespaced.lean/declarations/streamplan-preserves-matrix-atoms.md) | 49 | `result-track:3c9a0574258229c72bde4ca829cf3a71abd02684c0b440d15a85a6fb199cd9c8` |
+| 6 | `theorem` | [streamPlan_primeFactors_visible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StreamEncodingNamespaced.lean/declarations/streamplan-primefactors-visible.md) | 54 | `result-track:60ec0adb0d8bd75e25ecdbf90478b64d54a8568bda0cb3b32ee7c01b7da3e24c` |
+| 7 | `theorem` | [streamPlan_topologyPrime_visible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StreamEncodingNamespaced.lean/declarations/streamplan-topologyprime-visible.md) | 60 | `result-track:84d695b77032995cd73d8e8f1658965c47573680798c60cae76c510c6142b775` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

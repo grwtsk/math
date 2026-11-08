@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/LayerNormAffine.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/LayerNormAffine.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LayerNormAffine.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LayerNormAffine.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [forwardAffine](../../../../../ComputerScience/AlgorithmsInComputerScience/LayerNormAffine.lean/declarations/forwardaffine.md) | 61 | `declaration-track:b0b2e096ebe0f2d71d88ec0fafc6566e8b10fb17e9e6653be027bf7f2d16fae4` |
-| 2 | `def` | [forwardIntervalTight](../../../../../ComputerScience/AlgorithmsInComputerScience/LayerNormAffine.lean/declarations/forwardintervaltight.md) | 73 | `declaration-track:52d1d5a2a4a3bff0364555f5bbf48db0d79dc6b7c37b291f01c26d893d1cc22f` |
-| 3 | `def` | [compareBounds](../../../../../ComputerScience/AlgorithmsInComputerScience/LayerNormAffine.lean/declarations/comparebounds.md) | 86 | `declaration-track:d5e76b853f1f18463b2fea2f537d12deaf9be962566d61f3b5051929ca5a256e` |
-| 4 | `def` | [tightnessRatio](../../../../../ComputerScience/AlgorithmsInComputerScience/LayerNormAffine.lean/declarations/tightnessratio.md) | 96 | `declaration-track:69670296f22dd38c2df200be3cd10b76a98605515092f7d7e2443d2e6effc206` |
-| 5 | `theorem` | [mem_forwardAffine](../../../../../ComputerScience/AlgorithmsInComputerScience/LayerNormAffine.lean/declarations/mem-forwardaffine.md) | 124 | `result-track:b50c556b0da6495c983b419696e2f09ca0abb2b1b6d532784ddbc45ede215134` |
-| 6 | `def` | [FFNBlock.forwardIntervalTight](../../../../../ComputerScience/AlgorithmsInComputerScience/LayerNormAffine.lean/declarations/ffnblock-forwardintervaltight.md) | 156 | `declaration-track:bb785a75a3656e6cea8a4ea8d8e157fa8fba3adae68a08eacac6c86df8a7ae5a` |
-| 7 | `def` | [TransformerBlock.forwardIntervalTight](../../../../../ComputerScience/AlgorithmsInComputerScience/LayerNormAffine.lean/declarations/transformerblock-forwardintervaltight.md) | 167 | `declaration-track:d4e14b3e8b1d65e9427d7bcbed33676616ff51219ae435665efdc52c430430ee` |
+| 1 | `def` | [forwardAffine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LayerNormAffine.lean/declarations/forwardaffine.md) | 61 | `declaration-track:b0b2e096ebe0f2d71d88ec0fafc6566e8b10fb17e9e6653be027bf7f2d16fae4` |
+| 2 | `def` | [forwardIntervalTight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LayerNormAffine.lean/declarations/forwardintervaltight.md) | 73 | `declaration-track:52d1d5a2a4a3bff0364555f5bbf48db0d79dc6b7c37b291f01c26d893d1cc22f` |
+| 3 | `def` | [compareBounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LayerNormAffine.lean/declarations/comparebounds.md) | 86 | `declaration-track:d5e76b853f1f18463b2fea2f537d12deaf9be962566d61f3b5051929ca5a256e` |
+| 4 | `def` | [tightnessRatio](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LayerNormAffine.lean/declarations/tightnessratio.md) | 96 | `declaration-track:69670296f22dd38c2df200be3cd10b76a98605515092f7d7e2443d2e6effc206` |
+| 5 | `theorem` | [mem_forwardAffine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LayerNormAffine.lean/declarations/mem-forwardaffine.md) | 124 | `result-track:b50c556b0da6495c983b419696e2f09ca0abb2b1b6d532784ddbc45ede215134` |
+| 6 | `def` | [FFNBlock.forwardIntervalTight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LayerNormAffine.lean/declarations/ffnblock-forwardintervaltight.md) | 156 | `declaration-track:bb785a75a3656e6cea8a4ea8d8e157fa8fba3adae68a08eacac6c86df8a7ae5a` |
+| 7 | `def` | [TransformerBlock.forwardIntervalTight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LayerNormAffine.lean/declarations/transformerblock-forwardintervaltight.md) | 167 | `declaration-track:d4e14b3e8b1d65e9427d7bcbed33676616ff51219ae435665efdc52c430430ee` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

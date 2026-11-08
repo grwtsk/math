@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/IntervalMultisetNamespaced.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/IntervalMultisetNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/IntervalMultisetNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/IntervalMultisetNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [map_add_left_Icc](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/IntervalMultisetNamespaced.lean/declarations/map-add-left-icc.md) | 29 | `result-track:0f455c2aceb26cdb165a8cada6e7ee93e40717b7cb062f1a23b638ad99fb4645` |
-| 2 | `lemma` | [map_add_left_Ico](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/IntervalMultisetNamespaced.lean/declarations/map-add-left-ico.md) | 33 | `result-track:281d72ce9f14f541b222721f15d83ce29ff062f401b97bf611a774b3eed0d46e` |
-| 3 | `lemma` | [map_add_left_Ioc](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/IntervalMultisetNamespaced.lean/declarations/map-add-left-ioc.md) | 37 | `result-track:8531d305bac2ed2a1b18f5022a9301970dba36eed6da83d55bcc3acc3bb1819b` |
-| 4 | `lemma` | [map_add_left_Ioo](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/IntervalMultisetNamespaced.lean/declarations/map-add-left-ioo.md) | 41 | `result-track:6832afdd880ff2a5a1ade91fd7dcc32e7a02c786eaa86beb692b73fa6f4ac088` |
-| 5 | `lemma` | [map_add_right_Icc](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/IntervalMultisetNamespaced.lean/declarations/map-add-right-icc.md) | 45 | `result-track:aa8a84e870e4ac915a2f879b032ed12142d0927beda4845d6c2307227d3673e5` |
-| 6 | `lemma` | [map_add_right_Ico](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/IntervalMultisetNamespaced.lean/declarations/map-add-right-ico.md) | 49 | `result-track:52c4b1b9713fe6d69c148bb1f686c0d3a27bd261d2ce52e8b7980e0bcf614721` |
-| 7 | `lemma` | [map_add_right_Ioc](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/IntervalMultisetNamespaced.lean/declarations/map-add-right-ioc.md) | 53 | `result-track:6b637b81fe8ddb2bcdb8c73d02cdb9bb21d21679b904e75ec09dd685717acc37` |
-| 8 | `lemma` | [map_add_right_Ioo](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/IntervalMultisetNamespaced.lean/declarations/map-add-right-ioo.md) | 57 | `result-track:c65a3980a8e2e82319709d7e9005f7e16e767a55368dc464e29428c8eb70c20c` |
+| 1 | `lemma` | [map_add_left_Icc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/IntervalMultisetNamespaced.lean/declarations/map-add-left-icc.md) | 29 | `result-track:0f455c2aceb26cdb165a8cada6e7ee93e40717b7cb062f1a23b638ad99fb4645` |
+| 2 | `lemma` | [map_add_left_Ico](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/IntervalMultisetNamespaced.lean/declarations/map-add-left-ico.md) | 33 | `result-track:281d72ce9f14f541b222721f15d83ce29ff062f401b97bf611a774b3eed0d46e` |
+| 3 | `lemma` | [map_add_left_Ioc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/IntervalMultisetNamespaced.lean/declarations/map-add-left-ioc.md) | 37 | `result-track:8531d305bac2ed2a1b18f5022a9301970dba36eed6da83d55bcc3acc3bb1819b` |
+| 4 | `lemma` | [map_add_left_Ioo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/IntervalMultisetNamespaced.lean/declarations/map-add-left-ioo.md) | 41 | `result-track:6832afdd880ff2a5a1ade91fd7dcc32e7a02c786eaa86beb692b73fa6f4ac088` |
+| 5 | `lemma` | [map_add_right_Icc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/IntervalMultisetNamespaced.lean/declarations/map-add-right-icc.md) | 45 | `result-track:aa8a84e870e4ac915a2f879b032ed12142d0927beda4845d6c2307227d3673e5` |
+| 6 | `lemma` | [map_add_right_Ico](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/IntervalMultisetNamespaced.lean/declarations/map-add-right-ico.md) | 49 | `result-track:52c4b1b9713fe6d69c148bb1f686c0d3a27bd261d2ce52e8b7980e0bcf614721` |
+| 7 | `lemma` | [map_add_right_Ioc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/IntervalMultisetNamespaced.lean/declarations/map-add-right-ioc.md) | 53 | `result-track:6b637b81fe8ddb2bcdb8c73d02cdb9bb21d21679b904e75ec09dd685717acc37` |
+| 8 | `lemma` | [map_add_right_Ioo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/IntervalMultisetNamespaced.lean/declarations/map-add-right-ioo.md) | 57 | `result-track:c65a3980a8e2e82319709d7e9005f7e16e767a55368dc464e29428c8eb70c20c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

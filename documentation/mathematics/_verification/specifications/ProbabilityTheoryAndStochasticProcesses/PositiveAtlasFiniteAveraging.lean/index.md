@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/PositiveAtlasFiniteAveraging.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/PositiveAtlasFiniteAveraging.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/PositiveAtlasFiniteAveraging.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/PositiveAtlasFiniteAveraging.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [weighted_average](../../../../ProbabilityTheoryAndStochasticProcesses/PositiveAtlasFiniteAveraging.lean/declarations/weighted-average.md) | 22 | `result-track:73eb6e4d407b45e73838e70395cbed29766e924874a830424287799dafc8aa11` |
-| 2 | `def` | [residual](../../../../ProbabilityTheoryAndStochasticProcesses/PositiveAtlasFiniteAveraging.lean/declarations/residual.md) | 33 | `declaration-track:6af96fb86762e3c1b0f287e27d5b951de0c8085a94130bbed01e5739e821dc42` |
-| 3 | `theorem` | [residual_eq](../../../../ProbabilityTheoryAndStochasticProcesses/PositiveAtlasFiniteAveraging.lean/declarations/residual-eq.md) | 35 | `result-track:7ffa8f30c631e2704e9f35d699f222ad65dd630e884b4d9478c42ba514780fa8` |
-| 4 | `theorem` | [nonzero_zero_mean_residual](../../../../ProbabilityTheoryAndStochasticProcesses/PositiveAtlasFiniteAveraging.lean/declarations/nonzero-zero-mean-residual.md) | 41 | `result-track:3d93cf78b49a772d5ce4f6c78f8c72ba4dc07628208c528db5895fb6d433d4df` |
-| 5 | `theorem` | [flattened_residual_energy](../../../../ProbabilityTheoryAndStochasticProcesses/PositiveAtlasFiniteAveraging.lean/declarations/flattened-residual-energy.md) | 56 | `result-track:33ccff7ec3d12f59279b2991b1a9660218b5740a82c5cb1aba36597239218682` |
-| 6 | `def` | [twoSampleFamily](../../../../ProbabilityTheoryAndStochasticProcesses/PositiveAtlasFiniteAveraging.lean/declarations/twosamplefamily.md) | 66 | `declaration-track:05c266df8f5aa9f69ac481fc711023ffe771e11ef1abd5d816a09e796f4c4ee0` |
-| 7 | `theorem` | [hessian_at_zero](../../../../ProbabilityTheoryAndStochasticProcesses/PositiveAtlasFiniteAveraging.lean/declarations/hessian-at-zero.md) | 72 | `result-track:f5a0d595a862090d1a5c54721999c9b601e1a4b9349038fbf4b3ee835466de9e` |
-| 8 | `theorem` | [hessian_null_iff](../../../../ProbabilityTheoryAndStochasticProcesses/PositiveAtlasFiniteAveraging.lean/declarations/hessian-null-iff.md) | 83 | `result-track:7f6b7c80d4299ae4daf6da3785e673b1a9d1c2f24decd38616629fbec249e2c3` |
-| 9 | `theorem` | [hessian_null_parameter_independent](../../../../ProbabilityTheoryAndStochasticProcesses/PositiveAtlasFiniteAveraging.lean/declarations/hessian-null-parameter-independent.md) | 97 | `result-track:4d61112de5634bd84f32dd8e94d0dffd750f84f5427ec51e563074f733d82cb2` |
+| 1 | `theorem` | [weighted_average](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/PositiveAtlasFiniteAveraging.lean/declarations/weighted-average.md) | 22 | `result-track:73eb6e4d407b45e73838e70395cbed29766e924874a830424287799dafc8aa11` |
+| 2 | `def` | [residual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/PositiveAtlasFiniteAveraging.lean/declarations/residual.md) | 33 | `declaration-track:6af96fb86762e3c1b0f287e27d5b951de0c8085a94130bbed01e5739e821dc42` |
+| 3 | `theorem` | [residual_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/PositiveAtlasFiniteAveraging.lean/declarations/residual-eq.md) | 35 | `result-track:7ffa8f30c631e2704e9f35d699f222ad65dd630e884b4d9478c42ba514780fa8` |
+| 4 | `theorem` | [nonzero_zero_mean_residual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/PositiveAtlasFiniteAveraging.lean/declarations/nonzero-zero-mean-residual.md) | 41 | `result-track:3d93cf78b49a772d5ce4f6c78f8c72ba4dc07628208c528db5895fb6d433d4df` |
+| 5 | `theorem` | [flattened_residual_energy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/PositiveAtlasFiniteAveraging.lean/declarations/flattened-residual-energy.md) | 56 | `result-track:33ccff7ec3d12f59279b2991b1a9660218b5740a82c5cb1aba36597239218682` |
+| 6 | `def` | [twoSampleFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/PositiveAtlasFiniteAveraging.lean/declarations/twosamplefamily.md) | 66 | `declaration-track:05c266df8f5aa9f69ac481fc711023ffe771e11ef1abd5d816a09e796f4c4ee0` |
+| 7 | `theorem` | [hessian_at_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/PositiveAtlasFiniteAveraging.lean/declarations/hessian-at-zero.md) | 72 | `result-track:f5a0d595a862090d1a5c54721999c9b601e1a4b9349038fbf4b3ee835466de9e` |
+| 8 | `theorem` | [hessian_null_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/PositiveAtlasFiniteAveraging.lean/declarations/hessian-null-iff.md) | 83 | `result-track:7f6b7c80d4299ae4daf6da3785e673b1a9d1c2f24decd38616629fbec249e2c3` |
+| 9 | `theorem` | [hessian_null_parameter_independent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/PositiveAtlasFiniteAveraging.lean/declarations/hessian-null-parameter-independent.md) | 97 | `result-track:4d61112de5634bd84f32dd8e94d0dffd750f84f5427ec51e563074f733d82cb2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

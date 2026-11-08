@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/ProbabilityBorelCantelliBorelCantelliNamespacedPublic.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/ProbabilityBorelCantelliBorelCantelliNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ProbabilityBorelCantelliBorelCantelliNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ProbabilityBorelCantelliBorelCantelliNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [iIndepFun.indep_comap_natural_of_lt](../../../../ProbabilityTheoryAndStochasticProcesses/ProbabilityBorelCantelliBorelCantelliNamespacedPublic.lean/declarations/iindepfun-indep-comap-natural-of-lt.md) | 51 | `result-track:814cdf95b88485f7f79ec7d5de836579762ed095ad5667cb9df83f5e490c1eea` |
-| 2 | `theorem` | [iIndepFun.condExp_natural_ae_eq_of_lt](../../../../ProbabilityTheoryAndStochasticProcesses/ProbabilityBorelCantelliBorelCantelliNamespacedPublic.lean/declarations/iindepfun-condexp-natural-ae-eq-of-lt.md) | 58 | `result-track:06fff9661a238e85e768fb1147a1c157468a62680f6fd80372711eab35321722` |
-| 3 | `theorem` | [iIndepSet.condExp_indicator_filtrationOfSet_ae_eq](../../../../ProbabilityTheoryAndStochasticProcesses/ProbabilityBorelCantelliBorelCantelliNamespacedPublic.lean/declarations/iindepset-condexp-indicator-filtrationofset-ae-eq.md) | 65 | `result-track:aa8ef6bb729982ef65b63863306bf8102845c11ccb42e37249206b4b89a68caa` |
-| 4 | `theorem` | [measure_limsup_eq_one](../../../../ProbabilityTheoryAndStochasticProcesses/ProbabilityBorelCantelliBorelCantelliNamespacedPublic.lean/declarations/measure-limsup-eq-one.md) | 77 | `result-track:317f12b63d53b63e08a0bdfa59b7eedfed6bd36dc5c501d6fdce867049e8e069` |
+| 1 | `theorem` | [iIndepFun.indep_comap_natural_of_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ProbabilityBorelCantelliBorelCantelliNamespacedPublic.lean/declarations/iindepfun-indep-comap-natural-of-lt.md) | 51 | `result-track:814cdf95b88485f7f79ec7d5de836579762ed095ad5667cb9df83f5e490c1eea` |
+| 2 | `theorem` | [iIndepFun.condExp_natural_ae_eq_of_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ProbabilityBorelCantelliBorelCantelliNamespacedPublic.lean/declarations/iindepfun-condexp-natural-ae-eq-of-lt.md) | 58 | `result-track:06fff9661a238e85e768fb1147a1c157468a62680f6fd80372711eab35321722` |
+| 3 | `theorem` | [iIndepSet.condExp_indicator_filtrationOfSet_ae_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ProbabilityBorelCantelliBorelCantelliNamespacedPublic.lean/declarations/iindepset-condexp-indicator-filtrationofset-ae-eq.md) | 65 | `result-track:aa8ef6bb729982ef65b63863306bf8102845c11ccb42e37249206b4b89a68caa` |
+| 4 | `theorem` | [measure_limsup_eq_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ProbabilityBorelCantelliBorelCantelliNamespacedPublic.lean/declarations/measure-limsup-eq-one.md) | 77 | `result-track:317f12b63d53b63e08a0bdfa59b7eedfed6bd36dc5c501d6fdce867049e8e069` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

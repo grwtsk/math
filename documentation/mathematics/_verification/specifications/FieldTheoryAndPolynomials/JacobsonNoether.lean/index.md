@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FieldTheoryAndPolynomials/JacobsonNoether.lean/index.md) · [Full source](../../../../FieldTheoryAndPolynomials/JacobsonNoether.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/JacobsonNoether.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/JacobsonNoether.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,11 +62,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [exists_pow_mem_center_of_inseparable](../../../../FieldTheoryAndPolynomials/JacobsonNoether.lean/declarations/exists-pow-mem-center-of-inseparable.md) | 60 | `result-track:598e4c32bdf378f055a749cda020a41241ddd668b51110339a753036845efe32` |
-| 2 | `lemma` | [exists_pow_mem_center_of_inseparable'](../../../../FieldTheoryAndPolynomials/JacobsonNoether.lean/declarations/exists-pow-mem-center-of-inseparable-source-edition-2.md) | 73 | `result-track:d7d2dbf86d356693c63624a589fac18a04db1b9b0d26031bddc78d876015320b` |
-| 3 | `lemma` | [exist_pow_eq_zero_of_le](../../../../FieldTheoryAndPolynomials/JacobsonNoether.lean/declarations/exist-pow-eq-zero-of-le.md) | 86 | `result-track:8ac6026f9718962d28fd9ef105d680c22212caa3c1f45a8b25b939fa2772b3e2` |
-| 4 | `theorem` | [exists_separable_and_not_isCentral](../../../../FieldTheoryAndPolynomials/JacobsonNoether.lean/declarations/exists-separable-and-not-iscentral.md) | 105 | `result-track:1267918b23e6e8e76e6d92126c57836e84f1ad9331783e2783c487cc060744f4` |
-| 5 | `theorem` | [exists_separable_and_not_isCentral'](../../../../FieldTheoryAndPolynomials/JacobsonNoether.lean/declarations/exists-separable-and-not-iscentral-source-edition-2.md) | 176 | `result-track:343f2ff3d75419b9179431127238c68ec04f02e732c4124abd3ad8af34919f91` |
+| 1 | `lemma` | [exists_pow_mem_center_of_inseparable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/JacobsonNoether.lean/declarations/exists-pow-mem-center-of-inseparable.md) | 60 | `result-track:598e4c32bdf378f055a749cda020a41241ddd668b51110339a753036845efe32` |
+| 2 | `lemma` | [exists_pow_mem_center_of_inseparable'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/JacobsonNoether.lean/declarations/exists-pow-mem-center-of-inseparable-source-edition-2.md) | 73 | `result-track:d7d2dbf86d356693c63624a589fac18a04db1b9b0d26031bddc78d876015320b` |
+| 3 | `lemma` | [exist_pow_eq_zero_of_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/JacobsonNoether.lean/declarations/exist-pow-eq-zero-of-le.md) | 86 | `result-track:8ac6026f9718962d28fd9ef105d680c22212caa3c1f45a8b25b939fa2772b3e2` |
+| 4 | `theorem` | [exists_separable_and_not_isCentral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/JacobsonNoether.lean/declarations/exists-separable-and-not-iscentral.md) | 105 | `result-track:1267918b23e6e8e76e6d92126c57836e84f1ad9331783e2783c487cc060744f4` |
+| 5 | `theorem` | [exists_separable_and_not_isCentral'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/JacobsonNoether.lean/declarations/exists-separable-and-not-iscentral-source-edition-2.md) | 176 | `result-track:343f2ff3d75419b9179431127238c68ec04f02e732c4124abd3ad8af34919f91` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

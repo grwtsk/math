@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/EndpointExpansion.lean/index.md) · [Full source](../../../../GeneralTopology/EndpointExpansion.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/EndpointExpansion.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/EndpointExpansion.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [endpointFullPolynomial](../../../../GeneralTopology/EndpointExpansion.lean/declarations/endpointfullpolynomial.md) | 17 | `declaration-track:045b3853fa69946babf55f7286a810fbaa92611c2d3f202a185712ecd0a2bf98` |
-| 2 | `theorem` | [endpointPolynomialCorrelation_eq_full](../../../../GeneralTopology/EndpointExpansion.lean/declarations/endpointpolynomialcorrelation-eq-full.md) | 28 | `result-track:a0ccc6f9f5aa99289d93928b0ec03ae5ea697bc4999ebe2b5b15ee0b22bfa91b` |
-| 3 | `theorem` | [actual_endpoint_full_polynomial](../../../../GeneralTopology/EndpointExpansion.lean/declarations/actual-endpoint-full-polynomial.md) | 58 | `result-track:1b68113bd94f968b571ccb3cf995f9189bab42db91650bb496121365396c11ea` |
+| 1 | `def` | [endpointFullPolynomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/EndpointExpansion.lean/declarations/endpointfullpolynomial.md) | 17 | `declaration-track:045b3853fa69946babf55f7286a810fbaa92611c2d3f202a185712ecd0a2bf98` |
+| 2 | `theorem` | [endpointPolynomialCorrelation_eq_full](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/EndpointExpansion.lean/declarations/endpointpolynomialcorrelation-eq-full.md) | 28 | `result-track:a0ccc6f9f5aa99289d93928b0ec03ae5ea697bc4999ebe2b5b15ee0b22bfa91b` |
+| 3 | `theorem` | [actual_endpoint_full_polynomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/EndpointExpansion.lean/declarations/actual-endpoint-full-polynomial.md) | 58 | `result-track:1b68113bd94f968b571ccb3cf995f9189bab42db91650bb496121365396c11ea` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

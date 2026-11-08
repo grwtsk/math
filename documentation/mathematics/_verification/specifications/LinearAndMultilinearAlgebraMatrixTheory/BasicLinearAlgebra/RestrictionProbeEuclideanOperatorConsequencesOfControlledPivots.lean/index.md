@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RestrictionProbeEuclideanOperatorConsequencesOfControlledPivots.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RestrictionProbeEuclideanOperatorConsequencesOfControlledPivots.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RestrictionProbeEuclideanOperatorConsequencesOfControlledPivots.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RestrictionProbeEuclideanOperatorConsequencesOfControlledPivots.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [l2_opNorm_le_one_of_orthonormalRows](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RestrictionProbeEuclideanOperatorConsequencesOfControlledPivots.lean/declarations/l2-opnorm-le-one-of-orthonormalrows.md) | 27 | `result-track:719921a0a79e6694f258d111050de57d0e11a3f25ef8538c2c42c240bbbf2a27` |
-| 2 | `theorem` | [euclidean_norm_restrict_le](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RestrictionProbeEuclideanOperatorConsequencesOfControlledPivots.lean/declarations/euclidean-norm-restrict-le.md) | 41 | `result-track:079e31765a945fd4a0a05d45a04b4df45a7c6634fe44d6e073ceb891c3e9ae9a` |
-| 3 | `theorem` | [l2_opNorm_columnSubmatrix_le](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RestrictionProbeEuclideanOperatorConsequencesOfControlledPivots.lean/declarations/l2-opnorm-columnsubmatrix-le.md) | 57 | `result-track:5b84756b8712176f0861cf41a89039e8b0c0327f74b38681b1785ca03fa0fae0` |
+| 1 | `theorem` | [l2_opNorm_le_one_of_orthonormalRows](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RestrictionProbeEuclideanOperatorConsequencesOfControlledPivots.lean/declarations/l2-opnorm-le-one-of-orthonormalrows.md) | 27 | `result-track:719921a0a79e6694f258d111050de57d0e11a3f25ef8538c2c42c240bbbf2a27` |
+| 2 | `theorem` | [euclidean_norm_restrict_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RestrictionProbeEuclideanOperatorConsequencesOfControlledPivots.lean/declarations/euclidean-norm-restrict-le.md) | 41 | `result-track:079e31765a945fd4a0a05d45a04b4df45a7c6634fe44d6e073ceb891c3e9ae9a` |
+| 3 | `theorem` | [l2_opNorm_columnSubmatrix_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RestrictionProbeEuclideanOperatorConsequencesOfControlledPivots.lean/declarations/l2-opnorm-columnsubmatrix-le.md) | 57 | `result-track:5b84756b8712176f0861cf41a89039e8b0c0327f74b38681b1785ca03fa0fae0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

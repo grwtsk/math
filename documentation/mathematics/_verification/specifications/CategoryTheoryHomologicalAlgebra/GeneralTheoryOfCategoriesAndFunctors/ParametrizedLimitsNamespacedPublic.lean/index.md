@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ParametrizedLimitsNamespacedPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ParametrizedLimitsNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ParametrizedLimitsNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ParametrizedLimitsNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [preservesLimit_flip_obj](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ParametrizedLimitsNamespacedPublic.lean/declarations/preserveslimit-flip-obj.md) | 44 | `result-track:fb3af8154f990fd92a74d08f908239f46dc537a240bcf5d135a8e6b8876233df` |
-| 2 | `lemma` | [preservesLimitsOfShape_flip_obj](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ParametrizedLimitsNamespacedPublic.lean/declarations/preserveslimitsofshape-flip-obj.md) | 70 | `result-track:26b119a3ef262d868b74592c5fb3d61df7b805330bf16121a8ce007ac574bc19` |
+| 1 | `lemma` | [preservesLimit_flip_obj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ParametrizedLimitsNamespacedPublic.lean/declarations/preserveslimit-flip-obj.md) | 44 | `result-track:fb3af8154f990fd92a74d08f908239f46dc537a240bcf5d135a8e6b8876233df` |
+| 2 | `lemma` | [preservesLimitsOfShape_flip_obj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ParametrizedLimitsNamespacedPublic.lean/declarations/preserveslimitsofshape-flip-obj.md) | 70 | `result-track:26b119a3ef262d868b74592c5fb3d61df7b805330bf16121a8ce007ac574bc19` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SetBasicNamespacedPublic.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SetBasicNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SetBasicNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SetBasicNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [mul_zero_subset](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SetBasicNamespacedPublic.lean/declarations/mul-zero-subset.md) | 45 | `result-track:0d50f0057deeb2c03b5cb76becb1f922696bac9b3db4eec724e4d1694a5a1287` |
-| 2 | `lemma` | [zero_mul_subset](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SetBasicNamespacedPublic.lean/declarations/zero-mul-subset.md) | 46 | `result-track:c65fa0cc19fcdae5e6072f47faaa6b2873db7d4671fb6aae0dadb0ed8c0728a7` |
-| 3 | `lemma` | [Nonempty.mul_zero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SetBasicNamespacedPublic.lean/declarations/nonempty-mul-zero.md) | 48 | `result-track:c2b99bb4b562a524429adc58743eb1e44d26df80ff706a09fc70c2eec817c8ed` |
-| 4 | `lemma` | [Nonempty.zero_mul](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SetBasicNamespacedPublic.lean/declarations/nonempty-zero-mul.md) | 51 | `result-track:2c74d16b4c8f10b3ac3de0394fa5d933631d5d6606ed2d6cf748ce78e66e4d75` |
-| 5 | `lemma` | [div_zero_subset](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SetBasicNamespacedPublic.lean/declarations/div-zero-subset.md) | 59 | `result-track:016409e7266f91ae895acc1b355877c5ab07cd33db788e9b2c996982a15f300c` |
-| 6 | `lemma` | [zero_div_subset](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SetBasicNamespacedPublic.lean/declarations/zero-div-subset.md) | 60 | `result-track:470661b0381f98fdf006b60401e73bcc800b85199268f27e1aadb3892062d128` |
-| 7 | `lemma` | [Nonempty.div_zero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SetBasicNamespacedPublic.lean/declarations/nonempty-div-zero.md) | 62 | `result-track:b2b8ed7671992c5e46c7a077f3b6f2ce3e1e2840feff904c67ef5618fa09baea` |
-| 8 | `lemma` | [Nonempty.zero_div](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SetBasicNamespacedPublic.lean/declarations/nonempty-zero-div.md) | 65 | `result-track:b9acfa706887c282389402fd0a02ca2855d988bd13d0e2c40bea23b9eed12f65` |
-| 9 | `lemma` | [inv_zero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SetBasicNamespacedPublic.lean/declarations/inv-zero.md) | 68 | `result-track:20764d1ba7988bdd6ed134f30ebb3330b7888667bd43747150b519d756aaf472` |
+| 1 | `lemma` | [mul_zero_subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SetBasicNamespacedPublic.lean/declarations/mul-zero-subset.md) | 45 | `result-track:0d50f0057deeb2c03b5cb76becb1f922696bac9b3db4eec724e4d1694a5a1287` |
+| 2 | `lemma` | [zero_mul_subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SetBasicNamespacedPublic.lean/declarations/zero-mul-subset.md) | 46 | `result-track:c65fa0cc19fcdae5e6072f47faaa6b2873db7d4671fb6aae0dadb0ed8c0728a7` |
+| 3 | `lemma` | [Nonempty.mul_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SetBasicNamespacedPublic.lean/declarations/nonempty-mul-zero.md) | 48 | `result-track:c2b99bb4b562a524429adc58743eb1e44d26df80ff706a09fc70c2eec817c8ed` |
+| 4 | `lemma` | [Nonempty.zero_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SetBasicNamespacedPublic.lean/declarations/nonempty-zero-mul.md) | 51 | `result-track:2c74d16b4c8f10b3ac3de0394fa5d933631d5d6606ed2d6cf748ce78e66e4d75` |
+| 5 | `lemma` | [div_zero_subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SetBasicNamespacedPublic.lean/declarations/div-zero-subset.md) | 59 | `result-track:016409e7266f91ae895acc1b355877c5ab07cd33db788e9b2c996982a15f300c` |
+| 6 | `lemma` | [zero_div_subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SetBasicNamespacedPublic.lean/declarations/zero-div-subset.md) | 60 | `result-track:470661b0381f98fdf006b60401e73bcc800b85199268f27e1aadb3892062d128` |
+| 7 | `lemma` | [Nonempty.div_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SetBasicNamespacedPublic.lean/declarations/nonempty-div-zero.md) | 62 | `result-track:b2b8ed7671992c5e46c7a077f3b6f2ce3e1e2840feff904c67ef5618fa09baea` |
+| 8 | `lemma` | [Nonempty.zero_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SetBasicNamespacedPublic.lean/declarations/nonempty-zero-div.md) | 65 | `result-track:b9acfa706887c282389402fd0a02ca2855d988bd13d0e2c40bea23b9eed12f65` |
+| 9 | `lemma` | [inv_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SetBasicNamespacedPublic.lean/declarations/inv-zero.md) | 68 | `result-track:20764d1ba7988bdd6ed134f30ebb3330b7888667bd43747150b519d756aaf472` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

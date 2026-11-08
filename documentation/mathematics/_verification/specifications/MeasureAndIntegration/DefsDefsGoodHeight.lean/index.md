@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/DefsDefsGoodHeight.lean/index.md) · [Full source](../../../../MeasureAndIntegration/DefsDefsGoodHeight.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DefsDefsGoodHeight.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DefsDefsGoodHeight.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [GoodHeight](../../../../MeasureAndIntegration/DefsDefsGoodHeight.lean/declarations/goodheight.md) | 31 | `declaration-track:8146feb830f9a97adeb2a826a64bd4606cc5435cf8fe97677a1af03b34fdf03c` |
-| 2 | `def` | [halfContour](../../../../MeasureAndIntegration/DefsDefsGoodHeight.lean/declarations/halfcontour.md) | 35 | `declaration-track:e53775d80b4e3f2d443166845dda3e196fdb10ac1b8058bdce7c59900d825c4a` |
-| 3 | `lemma` | [halfContour_add](../../../../MeasureAndIntegration/DefsDefsGoodHeight.lean/declarations/halfcontour-add.md) | 39 | `result-track:c7b1a2a744f84112e0085c5accea7f4017bb93158dd251d308833b0d64a9e4b8` |
+| 1 | `def` | [GoodHeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DefsDefsGoodHeight.lean/declarations/goodheight.md) | 31 | `declaration-track:8146feb830f9a97adeb2a826a64bd4606cc5435cf8fe97677a1af03b34fdf03c` |
+| 2 | `def` | [halfContour](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DefsDefsGoodHeight.lean/declarations/halfcontour.md) | 35 | `declaration-track:e53775d80b4e3f2d443166845dda3e196fdb10ac1b8058bdce7c59900d825c4a` |
+| 3 | `lemma` | [halfContour_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DefsDefsGoodHeight.lean/declarations/halfcontour-add.md) | 39 | `result-track:c7b1a2a744f84112e0085c5accea7f4017bb93158dd251d308833b0d64a9e4b8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

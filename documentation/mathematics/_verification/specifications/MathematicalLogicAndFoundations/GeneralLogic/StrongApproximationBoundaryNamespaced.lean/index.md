@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StrongApproximationBoundaryNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StrongApproximationBoundaryNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StrongApproximationBoundaryNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StrongApproximationBoundaryNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [StrongApproximationContract](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StrongApproximationBoundaryNamespaced.lean/declarations/strongapproximationcontract.md) | 26 | `declaration-track:55a3106c39db16a47c10542b57b74b828c274067080d17fcf46c5c9a086b85ef` |
-| 2 | `structure` | [StrongApproximationToBoundaryAlignment](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StrongApproximationBoundaryNamespaced.lean/declarations/strongapproximationtoboundaryalignment.md) | 33 | `declaration-track:ed1054843c189ab1717b7868d6926eeea3c8807e2f50522f0f3724d1bca9ce08` |
-| 3 | `theorem` | [strong_approx_supplies_restriction_compatibility](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StrongApproximationBoundaryNamespaced.lean/declarations/strong-approx-supplies-restriction-compatibility.md) | 42 | `result-track:8ea60bfa4a15688259369acc01f6f74fb95ac5d4d8b01f1180e47d338ff8fbb9` |
-| 4 | `theorem` | [strong_approx_does_not_prove_critical_line_alone](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StrongApproximationBoundaryNamespaced.lean/declarations/strong-approx-does-not-prove-critical-line-alone.md) | 47 | `result-track:065a55fb6f9f4b526aed88737599501e66ba08e184a02d9ecbb16f9845eb44ee` |
+| 1 | `structure` | [StrongApproximationContract](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StrongApproximationBoundaryNamespaced.lean/declarations/strongapproximationcontract.md) | 26 | `declaration-track:55a3106c39db16a47c10542b57b74b828c274067080d17fcf46c5c9a086b85ef` |
+| 2 | `structure` | [StrongApproximationToBoundaryAlignment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StrongApproximationBoundaryNamespaced.lean/declarations/strongapproximationtoboundaryalignment.md) | 33 | `declaration-track:ed1054843c189ab1717b7868d6926eeea3c8807e2f50522f0f3724d1bca9ce08` |
+| 3 | `theorem` | [strong_approx_supplies_restriction_compatibility](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StrongApproximationBoundaryNamespaced.lean/declarations/strong-approx-supplies-restriction-compatibility.md) | 42 | `result-track:8ea60bfa4a15688259369acc01f6f74fb95ac5d4d8b01f1180e47d338ff8fbb9` |
+| 4 | `theorem` | [strong_approx_does_not_prove_critical_line_alone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StrongApproximationBoundaryNamespaced.lean/declarations/strong-approx-does-not-prove-critical-line-alone.md) | 47 | `result-track:065a55fb6f9f4b526aed88737599501e66ba08e184a02d9ecbb16f9845eb44ee` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

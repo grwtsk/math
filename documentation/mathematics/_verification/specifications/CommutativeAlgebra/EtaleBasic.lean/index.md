@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/EtaleBasic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/EtaleBasic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtaleBasic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtaleBasic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,25 +59,25 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [FormallyEtale](../../../../CommutativeAlgebra/EtaleBasic.lean/declarations/formallyetale-source-edition-2.md) | 43 | `declaration-track:d331f8a43046c5e48e5a33f9584957ae097243477dbf7e892b4f31cd1195c189` |
-| 2 | `theorem` | [iff_unramified_and_smooth](../../../../CommutativeAlgebra/EtaleBasic.lean/declarations/iff-unramified-and-smooth.md) | 58 | `result-track:6071d8f2e440ace1d47374d1e9ed83b71a2a54fdf8e34f7c9ca618b9e9261020` |
-| 3 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/EtaleBasic.lean/declarations/instance.md) | 63 | `declaration-track:212024b8ad2fa2024e9bda74d4c985314973ca7a2e9175cc987c94cea7b6facc` |
-| 4 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/EtaleBasic.lean/declarations/instance-source-edition-2.md) | 67 | `declaration-track:ebfbadac99be9e659b0080654364b2d0c82ce58fdca161087361c4fc7d2d69f0` |
-| 5 | `theorem` | [of_unramified_and_smooth](../../../../CommutativeAlgebra/EtaleBasic.lean/declarations/of-unramified-and-smooth.md) | 70 | `result-track:46a7c8b42b0b2d466afcd2c34bdd10f300ed589766efa71d138c9fc092693eb1` |
-| 6 | `theorem` | [of_equiv](../../../../CommutativeAlgebra/EtaleBasic.lean/declarations/of-equiv.md) | 81 | `result-track:6f431cb1783b5aee3740e9d2f4306c3d6ba52164ff21f058f86b9c5bf846fbc6` |
-| 7 | `theorem` | [iff_of_equiv](../../../../CommutativeAlgebra/EtaleBasic.lean/declarations/iff-of-equiv.md) | 85 | `result-track:cade7e2e2e1348927ccd350bcec9c7ed6457ad56ba9800f0c60c69f7a90e4ebc` |
-| 8 | `theorem` | [comp](../../../../CommutativeAlgebra/EtaleBasic.lean/declarations/comp-source-edition-2.md) | 96 | `result-track:dfebad9da8e55519bee346a1dea9282093b56909dea0130186afff3629f6dc89` |
-| 9 | `instance` | [base_change](../../../../CommutativeAlgebra/EtaleBasic.lean/declarations/base-change.md) | 110 | `declaration-track:5a6d8e264147998583f5d238729422353196653d19252a1602b90c048cda0aa6` |
-| 10 | `theorem` | [of_isLocalization](../../../../CommutativeAlgebra/EtaleBasic.lean/declarations/of-islocalization.md) | 147 | `result-track:c707939d05d0ddc1f6faacf27308721e9d8542fb6688dfd58c171b74e25f9c00` |
-| 11 | `theorem` | [localization_base](../../../../CommutativeAlgebra/EtaleBasic.lean/declarations/localization-base.md) | 151 | `result-track:f85cbf563db0b562389d0c0c9faec333b5f0a0be292bc85f5cbce84a3045daed` |
-| 12 | `theorem` | [localization_map](../../../../CommutativeAlgebra/EtaleBasic.lean/declarations/localization-map.md) | 156 | `result-track:6f7a1090009e471b160ecd1fc84ce18190950228c5614dbbd8bab272cc3c58cb` |
-| 13 | `class` | [Etale](../../../../CommutativeAlgebra/EtaleBasic.lean/declarations/etale.md) | 173 | `declaration-track:f557ee83f880b8090caad7725c8f15c6a7519b87a67946a92063185c358ace82` |
-| 14 | `theorem` | [of_equiv](../../../../CommutativeAlgebra/EtaleBasic.lean/declarations/of-equiv-source-edition-2.md) | 187 | `result-track:b3d9a987a0403ae470994c18b710b07efe8c389823263d24c9a39e98d559051e` |
-| 15 | `theorem` | [comp](../../../../CommutativeAlgebra/EtaleBasic.lean/declarations/comp.md) | 196 | `result-track:405e82d1178eda7a6d2e0567b510cb90ca85930f78b4110bfe466a2c0460eb59` |
-| 16 | `instance` | [baseChange](../../../../CommutativeAlgebra/EtaleBasic.lean/declarations/basechange.md) | 201 | `declaration-track:48d99f3ac0932b3bc75bab564a93ec23ef95bad6e24592bdc4f63c01eb869d96` |
-| 17 | `theorem` | [of_isLocalization_Away](../../../../CommutativeAlgebra/EtaleBasic.lean/declarations/of-islocalization-away.md) | 206 | `result-track:b7f70f0783ad0fab1bd0aa98c777c63ac22e1b9f935c54f710b283a095f9eea7` |
-| 18 | `def` | [FormallyEtale](../../../../CommutativeAlgebra/EtaleBasic.lean/declarations/formallyetale.md) | 223 | `declaration-track:330c2dcd89147ce65a3863f9526fd74e6efaf321ac2bd329cfb32d4a25cf1835` |
-| 19 | `lemma` | [formallyEtale_algebraMap](../../../../CommutativeAlgebra/EtaleBasic.lean/declarations/formallyetale-algebramap.md) | 227 | `result-track:eaf78c0625b2dacc083006d24e0a327f0f61d12f2c16adbea07bb304010241fb` |
+| 1 | `class` | [FormallyEtale](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtaleBasic.lean/declarations/formallyetale-source-edition-2.md) | 43 | `declaration-track:d331f8a43046c5e48e5a33f9584957ae097243477dbf7e892b4f31cd1195c189` |
+| 2 | `theorem` | [iff_unramified_and_smooth](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtaleBasic.lean/declarations/iff-unramified-and-smooth.md) | 58 | `result-track:6071d8f2e440ace1d47374d1e9ed83b71a2a54fdf8e34f7c9ca618b9e9261020` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtaleBasic.lean/declarations/instance.md) | 63 | `declaration-track:212024b8ad2fa2024e9bda74d4c985314973ca7a2e9175cc987c94cea7b6facc` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtaleBasic.lean/declarations/instance-source-edition-2.md) | 67 | `declaration-track:ebfbadac99be9e659b0080654364b2d0c82ce58fdca161087361c4fc7d2d69f0` |
+| 5 | `theorem` | [of_unramified_and_smooth](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtaleBasic.lean/declarations/of-unramified-and-smooth.md) | 70 | `result-track:46a7c8b42b0b2d466afcd2c34bdd10f300ed589766efa71d138c9fc092693eb1` |
+| 6 | `theorem` | [of_equiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtaleBasic.lean/declarations/of-equiv.md) | 81 | `result-track:6f431cb1783b5aee3740e9d2f4306c3d6ba52164ff21f058f86b9c5bf846fbc6` |
+| 7 | `theorem` | [iff_of_equiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtaleBasic.lean/declarations/iff-of-equiv.md) | 85 | `result-track:cade7e2e2e1348927ccd350bcec9c7ed6457ad56ba9800f0c60c69f7a90e4ebc` |
+| 8 | `theorem` | [comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtaleBasic.lean/declarations/comp-source-edition-2.md) | 96 | `result-track:dfebad9da8e55519bee346a1dea9282093b56909dea0130186afff3629f6dc89` |
+| 9 | `instance` | [base_change](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtaleBasic.lean/declarations/base-change.md) | 110 | `declaration-track:5a6d8e264147998583f5d238729422353196653d19252a1602b90c048cda0aa6` |
+| 10 | `theorem` | [of_isLocalization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtaleBasic.lean/declarations/of-islocalization.md) | 147 | `result-track:c707939d05d0ddc1f6faacf27308721e9d8542fb6688dfd58c171b74e25f9c00` |
+| 11 | `theorem` | [localization_base](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtaleBasic.lean/declarations/localization-base.md) | 151 | `result-track:f85cbf563db0b562389d0c0c9faec333b5f0a0be292bc85f5cbce84a3045daed` |
+| 12 | `theorem` | [localization_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtaleBasic.lean/declarations/localization-map.md) | 156 | `result-track:6f7a1090009e471b160ecd1fc84ce18190950228c5614dbbd8bab272cc3c58cb` |
+| 13 | `class` | [Etale](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtaleBasic.lean/declarations/etale.md) | 173 | `declaration-track:f557ee83f880b8090caad7725c8f15c6a7519b87a67946a92063185c358ace82` |
+| 14 | `theorem` | [of_equiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtaleBasic.lean/declarations/of-equiv-source-edition-2.md) | 187 | `result-track:b3d9a987a0403ae470994c18b710b07efe8c389823263d24c9a39e98d559051e` |
+| 15 | `theorem` | [comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtaleBasic.lean/declarations/comp.md) | 196 | `result-track:405e82d1178eda7a6d2e0567b510cb90ca85930f78b4110bfe466a2c0460eb59` |
+| 16 | `instance` | [baseChange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtaleBasic.lean/declarations/basechange.md) | 201 | `declaration-track:48d99f3ac0932b3bc75bab564a93ec23ef95bad6e24592bdc4f63c01eb869d96` |
+| 17 | `theorem` | [of_isLocalization_Away](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtaleBasic.lean/declarations/of-islocalization-away.md) | 206 | `result-track:b7f70f0783ad0fab1bd0aa98c777c63ac22e1b9f935c54f710b283a095f9eea7` |
+| 18 | `def` | [FormallyEtale](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtaleBasic.lean/declarations/formallyetale.md) | 223 | `declaration-track:330c2dcd89147ce65a3863f9526fd74e6efaf321ac2bd329cfb32d4a25cf1835` |
+| 19 | `lemma` | [formallyEtale_algebraMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtaleBasic.lean/declarations/formallyetale-algebramap.md) | 227 | `result-track:eaf78c0625b2dacc083006d24e0a327f0f61d12f2c16adbea07bb304010241fb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

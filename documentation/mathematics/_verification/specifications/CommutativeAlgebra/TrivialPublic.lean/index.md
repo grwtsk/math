@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/TrivialPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/TrivialPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TrivialPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TrivialPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [trivialRel](../../../../CommutativeAlgebra/TrivialPublic.lean/declarations/trivialrel.md) | 35 | `declaration-track:2ec47dca59dad88b461a34c8eeb8fe2d2e209424bf9d33830125c10b8fab884c` |
-| 2 | `lemma` | [eq_trivialRel_of_compatible_one](../../../../CommutativeAlgebra/TrivialPublic.lean/declarations/eq-trivialrel-of-compatible-one.md) | 45 | `result-track:6c8775eda975a047381301cd716aa5bf7d3c1ca2a411ba8d3965d8c77dcc8b8b` |
-| 3 | `lemma` | [trivialRel_eq_ofValuation_one](../../../../CommutativeAlgebra/TrivialPublic.lean/declarations/trivialrel-eq-ofvaluation-one.md) | 53 | `result-track:d5e5f8d98a4e81e5a68b09049988d047c2221ef1ba54f6943aca8418492f7a97` |
-| 4 | `lemma` | [subsingleton_units_valueGroupWithZero_of_trivialRel](../../../../CommutativeAlgebra/TrivialPublic.lean/declarations/subsingleton-units-valuegroupwithzero-of-trivialrel.md) | 59 | `result-track:00ac9c39d41378b4a49b89af4f5de84d64267bc140670fcf92474faf967ef812` |
-| 5 | `lemma` | [not_isNontrivial_of_trivialRel](../../../../CommutativeAlgebra/TrivialPublic.lean/declarations/not-isnontrivial-of-trivialrel.md) | 70 | `result-track:d223b61f810a14aafd60cf5069eca770c987b77f735c2b1e4fd5942aae1c53c0` |
-| 6 | `lemma` | [isDiscrete_trivialRel](../../../../CommutativeAlgebra/TrivialPublic.lean/declarations/isdiscrete-trivialrel.md) | 78 | `result-track:806e60e5a882348cd86ff537c6049efb04c757c29aff5e1ced9bcf3581c83f73` |
+| 1 | `def` | [trivialRel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TrivialPublic.lean/declarations/trivialrel.md) | 35 | `declaration-track:2ec47dca59dad88b461a34c8eeb8fe2d2e209424bf9d33830125c10b8fab884c` |
+| 2 | `lemma` | [eq_trivialRel_of_compatible_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TrivialPublic.lean/declarations/eq-trivialrel-of-compatible-one.md) | 45 | `result-track:6c8775eda975a047381301cd716aa5bf7d3c1ca2a411ba8d3965d8c77dcc8b8b` |
+| 3 | `lemma` | [trivialRel_eq_ofValuation_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TrivialPublic.lean/declarations/trivialrel-eq-ofvaluation-one.md) | 53 | `result-track:d5e5f8d98a4e81e5a68b09049988d047c2221ef1ba54f6943aca8418492f7a97` |
+| 4 | `lemma` | [subsingleton_units_valueGroupWithZero_of_trivialRel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TrivialPublic.lean/declarations/subsingleton-units-valuegroupwithzero-of-trivialrel.md) | 59 | `result-track:00ac9c39d41378b4a49b89af4f5de84d64267bc140670fcf92474faf967ef812` |
+| 5 | `lemma` | [not_isNontrivial_of_trivialRel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TrivialPublic.lean/declarations/not-isnontrivial-of-trivialrel.md) | 70 | `result-track:d223b61f810a14aafd60cf5069eca770c987b77f735c2b1e4fd5942aae1c53c0` |
+| 6 | `lemma` | [isDiscrete_trivialRel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TrivialPublic.lean/declarations/isdiscrete-trivialrel.md) | 78 | `result-track:806e60e5a882348cd86ff537c6049efb04c757c29aff5e1ced9bcf3581c83f73` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

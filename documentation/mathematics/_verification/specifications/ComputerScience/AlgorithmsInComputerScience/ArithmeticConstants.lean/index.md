@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ArithmeticConstants.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ArithmeticConstants.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArithmeticConstants.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArithmeticConstants.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [files](../../../../../ComputerScience/AlgorithmsInComputerScience/ArithmeticConstants.lean/declarations/files.md) | 10 | `declaration-track:c055a56939543de72e26fe44a7f1a6384fc86cff434039c4d9e8356c249d7dc6` |
-| 2 | `theorem` | [files_count](../../../../../ComputerScience/AlgorithmsInComputerScience/ArithmeticConstants.lean/declarations/files-count.md) | 14 | `result-track:fedc8e1bf9a614ca3a646a9c348a5b4eafd8b0fa3453fd526a87684dac3ff9d0` |
+| 1 | `def` | [files](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArithmeticConstants.lean/declarations/files.md) | 10 | `declaration-track:c055a56939543de72e26fe44a7f1a6384fc86cff434039c4d9e8356c249d7dc6` |
+| 2 | `theorem` | [files_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArithmeticConstants.lean/declarations/files-count.md) | 14 | `result-track:fedc8e1bf9a614ca3a646a9c348a5b4eafd8b0fa3453fd526a87684dac3ff9d0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

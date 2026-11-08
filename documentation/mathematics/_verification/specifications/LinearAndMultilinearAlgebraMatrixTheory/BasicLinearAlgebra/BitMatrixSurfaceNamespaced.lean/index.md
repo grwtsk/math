@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BitMatrixSurfaceNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BitMatrixSurfaceNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BitMatrixSurfaceNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BitMatrixSurfaceNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [asContractSquare](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BitMatrixSurfaceNamespaced.lean/declarations/ascontractsquare.md) | 18 | `declaration-track:241064cf152e165dc16ecf7b7f7e441ba0583456657bc6f5254ddc48214ed87e` |
-| 2 | `abbrev` | [asBitMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BitMatrixSurfaceNamespaced.lean/declarations/asbitmatrix.md) | 22 | `declaration-track:f47a10c2fbe8b49bd2d2f535b22410fbe95943c8735237cf66fa9e25022b58eb` |
-| 3 | `theorem` | [roundTripBitMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BitMatrixSurfaceNamespaced.lean/declarations/roundtripbitmatrix.md) | 26 | `result-track:0fcab0f74a44204963eba239587567e00e6112303dea96ad44858bdaea142831` |
-| 4 | `theorem` | [roundTripContractSquare](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BitMatrixSurfaceNamespaced.lean/declarations/roundtripcontractsquare.md) | 31 | `result-track:f72dd51c1a5098b716421cd3c1bd6f66c5a4c5f684d4b0db2c24a56a609338b8` |
+| 1 | `abbrev` | [asContractSquare](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BitMatrixSurfaceNamespaced.lean/declarations/ascontractsquare.md) | 18 | `declaration-track:241064cf152e165dc16ecf7b7f7e441ba0583456657bc6f5254ddc48214ed87e` |
+| 2 | `abbrev` | [asBitMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BitMatrixSurfaceNamespaced.lean/declarations/asbitmatrix.md) | 22 | `declaration-track:f47a10c2fbe8b49bd2d2f535b22410fbe95943c8735237cf66fa9e25022b58eb` |
+| 3 | `theorem` | [roundTripBitMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BitMatrixSurfaceNamespaced.lean/declarations/roundtripbitmatrix.md) | 26 | `result-track:0fcab0f74a44204963eba239587567e00e6112303dea96ad44858bdaea142831` |
+| 4 | `theorem` | [roundTripContractSquare](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BitMatrixSurfaceNamespaced.lean/declarations/roundtripcontractsquare.md) | 31 | `result-track:f72dd51c1a5098b716421cd3c1bd6f66c5a4c5f684d4b0db2c24a56a609338b8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

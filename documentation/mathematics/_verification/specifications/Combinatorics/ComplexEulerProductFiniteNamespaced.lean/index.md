@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ComplexEulerProductFiniteNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/ComplexEulerProductFiniteNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ComplexEulerProductFiniteNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ComplexEulerProductFiniteNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [finiteZetaEulerFactorComplex](../../../../Combinatorics/ComplexEulerProductFiniteNamespaced.lean/declarations/finitezetaeulerfactorcomplex.md) | 25 | `declaration-track:7220eb044e41a14dd1b23bf0b7718c291f3837759db27a70386a6ce2a028105e` |
-| 2 | `def` | [finiteZetaEulerProductComplex](../../../../Combinatorics/ComplexEulerProductFiniteNamespaced.lean/declarations/finitezetaeulerproductcomplex.md) | 31 | `declaration-track:f450909dc26ee375c34ef5ed5d0547571f39689ce09728f31348e8b418d8ffbd` |
-| 3 | `theorem` | [finiteZetaEulerProductComplex_expands_boundedSmoothNumbers](../../../../Combinatorics/ComplexEulerProductFiniteNamespaced.lean/declarations/finitezetaeulerproductcomplex-expands-boundedsmoothnumbers.md) | 37 | `result-track:62a7e6b5f5882965df86bc1b4e7b3ad77e5fcb1317aaa3ee59049b435ca7566f` |
-| 4 | `def` | [zetaEulerApproxComplex](../../../../Combinatorics/ComplexEulerProductFiniteNamespaced.lean/declarations/zetaeulerapproxcomplex.md) | 53 | `declaration-track:4d95fc31995058ec095e849f15c6fd4e47d761808dda56cfc919ab6d5c223877` |
-| 5 | `theorem` | [zetaEulerApproxComplex_expands_boundedSmoothNumbers](../../../../Combinatorics/ComplexEulerProductFiniteNamespaced.lean/declarations/zetaeulerapproxcomplex-expands-boundedsmoothnumbers.md) | 58 | `result-track:7f7650f80113c3bc2b6466ec7a6cd932501ca3466231c9ac87472793822da9f7` |
+| 1 | `def` | [finiteZetaEulerFactorComplex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ComplexEulerProductFiniteNamespaced.lean/declarations/finitezetaeulerfactorcomplex.md) | 25 | `declaration-track:7220eb044e41a14dd1b23bf0b7718c291f3837759db27a70386a6ce2a028105e` |
+| 2 | `def` | [finiteZetaEulerProductComplex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ComplexEulerProductFiniteNamespaced.lean/declarations/finitezetaeulerproductcomplex.md) | 31 | `declaration-track:f450909dc26ee375c34ef5ed5d0547571f39689ce09728f31348e8b418d8ffbd` |
+| 3 | `theorem` | [finiteZetaEulerProductComplex_expands_boundedSmoothNumbers](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ComplexEulerProductFiniteNamespaced.lean/declarations/finitezetaeulerproductcomplex-expands-boundedsmoothnumbers.md) | 37 | `result-track:62a7e6b5f5882965df86bc1b4e7b3ad77e5fcb1317aaa3ee59049b435ca7566f` |
+| 4 | `def` | [zetaEulerApproxComplex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ComplexEulerProductFiniteNamespaced.lean/declarations/zetaeulerapproxcomplex.md) | 53 | `declaration-track:4d95fc31995058ec095e849f15c6fd4e47d761808dda56cfc919ab6d5c223877` |
+| 5 | `theorem` | [zetaEulerApproxComplex_expands_boundedSmoothNumbers](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ComplexEulerProductFiniteNamespaced.lean/declarations/zetaeulerapproxcomplex-expands-boundedsmoothnumbers.md) | 58 | `result-track:7f7650f80113c3bc2b6466ec7a6cd932501ca3466231c9ac87472793822da9f7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

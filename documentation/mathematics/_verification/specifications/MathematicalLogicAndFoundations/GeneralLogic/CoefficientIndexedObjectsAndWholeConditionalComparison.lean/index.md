@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoefficientIndexedObjectsAndWholeConditionalComparison.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoefficientIndexedObjectsAndWholeConditionalComparison.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoefficientIndexedObjectsAndWholeConditionalComparison.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoefficientIndexedObjectsAndWholeConditionalComparison.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CoefficientObject](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoefficientIndexedObjectsAndWholeConditionalComparison.lean/declarations/coefficientobject.md) | 53 | `declaration-track:ca84257d1ee05b07295f6c018278111b9f7e60fe83584045ccd0c7cfaaae8fa4` |
-| 2 | `structure` | [EtaleComparisonDatum](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoefficientIndexedObjectsAndWholeConditionalComparison.lean/declarations/etalecomparisondatum.md) | 65 | `declaration-track:2e096ba10ca07193525fab56f33fe6c40a1d8e269717f0469142c3175fe4b136` |
+| 1 | `structure` | [CoefficientObject](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoefficientIndexedObjectsAndWholeConditionalComparison.lean/declarations/coefficientobject.md) | 53 | `declaration-track:ca84257d1ee05b07295f6c018278111b9f7e60fe83584045ccd0c7cfaaae8fa4` |
+| 2 | `structure` | [EtaleComparisonDatum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoefficientIndexedObjectsAndWholeConditionalComparison.lean/declarations/etalecomparisondatum.md) | 65 | `declaration-track:2e096ba10ca07193525fab56f33fe6c40a1d8e269717f0469142c3175fe4b136` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

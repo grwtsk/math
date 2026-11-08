@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ManifestNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/ManifestNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ManifestNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ManifestNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,17 +57,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TheoremCellDescriptor](../../../../Combinatorics/ManifestNamespaced.lean/declarations/theoremcelldescriptor.md) | 18 | `declaration-track:2c17795c12d4ed31f52860924c3e39ccdf0d89c145f32c349084fa7f975ff94e` |
-| 2 | `structure` | [FoldDescriptor](../../../../Combinatorics/ManifestNamespaced.lean/declarations/folddescriptor.md) | 27 | `declaration-track:5170300f5b8d2439c3374f1c89e6b5240bc823efeb8c4680aa1c9e6ed337bc58` |
-| 3 | `def` | [ReferencesClosed](../../../../Combinatorics/ManifestNamespaced.lean/declarations/referencesclosed.md) | 38 | `declaration-track:66bd83f87aa4e63a2817fdb84013891127d4472d5bfe03d4222afc50dfcc13c2` |
-| 4 | `def` | [NodeIdentityInjective](../../../../Combinatorics/ManifestNamespaced.lean/declarations/nodeidentityinjective.md) | 59 | `declaration-track:e26729f4a3c3849add3d4fd5ad1fdc82289ddcc50bf778787f2ffe90965f499d` |
-| 5 | `structure` | [UniverseManifest](../../../../Combinatorics/ManifestNamespaced.lean/declarations/universemanifest.md) | 63 | `declaration-track:efdce497c751dc8868d26415c60f381fcb8779117fdeb15f082fa14aef48eba2` |
-| 6 | `def` | [HasNode](../../../../Combinatorics/ManifestNamespaced.lean/declarations/hasnode.md) | 81 | `declaration-track:b325f753ede12f731f63913f22ad79d178755fa5e6365908fd191849a425ac4c` |
-| 7 | `def` | [HasEdge](../../../../Combinatorics/ManifestNamespaced.lean/declarations/hasedge.md) | 84 | `declaration-track:e5a3ebb940974985521f2d9242bf9cd27b5a1c9a3849004f5cd4ebbf564b291c` |
-| 8 | `def` | [HasCell](../../../../Combinatorics/ManifestNamespaced.lean/declarations/hascell.md) | 87 | `declaration-track:a2159567faff27e5028e6e80d0c60c6ec4f13dad2c7ce9e101f983fa3e238353` |
-| 9 | `theorem` | [edge_source_resolves](../../../../Combinatorics/ManifestNamespaced.lean/declarations/edge-source-resolves.md) | 90 | `result-track:04484b7e0262edd720a8eca565adcc1063cf793ab67a8d005a3b00c647a63ac3` |
-| 10 | `theorem` | [edge_target_resolves](../../../../Combinatorics/ManifestNamespaced.lean/declarations/edge-target-resolves.md) | 97 | `result-track:169fe251f6e0208ee896cf40c0c20621f48885141d7d064c27f6f5ab34021d69` |
-| 11 | `theorem` | [node_unique](../../../../Combinatorics/ManifestNamespaced.lean/declarations/node-unique.md) | 104 | `result-track:85a97ee03d16a207353e7446603fd1b3f28e98e9572631206e11067055fd58f1` |
+| 1 | `structure` | [TheoremCellDescriptor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ManifestNamespaced.lean/declarations/theoremcelldescriptor.md) | 18 | `declaration-track:2c17795c12d4ed31f52860924c3e39ccdf0d89c145f32c349084fa7f975ff94e` |
+| 2 | `structure` | [FoldDescriptor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ManifestNamespaced.lean/declarations/folddescriptor.md) | 27 | `declaration-track:5170300f5b8d2439c3374f1c89e6b5240bc823efeb8c4680aa1c9e6ed337bc58` |
+| 3 | `def` | [ReferencesClosed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ManifestNamespaced.lean/declarations/referencesclosed.md) | 38 | `declaration-track:66bd83f87aa4e63a2817fdb84013891127d4472d5bfe03d4222afc50dfcc13c2` |
+| 4 | `def` | [NodeIdentityInjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ManifestNamespaced.lean/declarations/nodeidentityinjective.md) | 59 | `declaration-track:e26729f4a3c3849add3d4fd5ad1fdc82289ddcc50bf778787f2ffe90965f499d` |
+| 5 | `structure` | [UniverseManifest](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ManifestNamespaced.lean/declarations/universemanifest.md) | 63 | `declaration-track:efdce497c751dc8868d26415c60f381fcb8779117fdeb15f082fa14aef48eba2` |
+| 6 | `def` | [HasNode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ManifestNamespaced.lean/declarations/hasnode.md) | 81 | `declaration-track:b325f753ede12f731f63913f22ad79d178755fa5e6365908fd191849a425ac4c` |
+| 7 | `def` | [HasEdge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ManifestNamespaced.lean/declarations/hasedge.md) | 84 | `declaration-track:e5a3ebb940974985521f2d9242bf9cd27b5a1c9a3849004f5cd4ebbf564b291c` |
+| 8 | `def` | [HasCell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ManifestNamespaced.lean/declarations/hascell.md) | 87 | `declaration-track:a2159567faff27e5028e6e80d0c60c6ec4f13dad2c7ce9e101f983fa3e238353` |
+| 9 | `theorem` | [edge_source_resolves](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ManifestNamespaced.lean/declarations/edge-source-resolves.md) | 90 | `result-track:04484b7e0262edd720a8eca565adcc1063cf793ab67a8d005a3b00c647a63ac3` |
+| 10 | `theorem` | [edge_target_resolves](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ManifestNamespaced.lean/declarations/edge-target-resolves.md) | 97 | `result-track:169fe251f6e0208ee896cf40c0c20621f48885141d7d064c27f6f5ab34021d69` |
+| 11 | `theorem` | [node_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ManifestNamespaced.lean/declarations/node-unique.md) | 104 | `result-track:85a97ee03d16a207353e7446603fd1b3f28e98e9572631206e11067055fd58f1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

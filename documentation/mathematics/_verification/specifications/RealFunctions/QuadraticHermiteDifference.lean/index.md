@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/QuadraticHermiteDifference.lean/index.md) · [Full source](../../../../RealFunctions/QuadraticHermiteDifference.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/QuadraticHermiteDifference.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/QuadraticHermiteDifference.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [Coefficients](../../../../RealFunctions/QuadraticHermiteDifference.lean/declarations/coefficients.md) | 25 | `declaration-track:2dbbd63cc39b58bc0bc1dcd3917104da000a6ecf022ebe57259da20ed662d898` |
-| 2 | `def` | [eval](../../../../RealFunctions/QuadraticHermiteDifference.lean/declarations/eval.md) | 28 | `declaration-track:3acd607f07a12be4b6f606ab81ccfef08a5b3c86e62c626da55c183dabedb286` |
-| 3 | `def` | [firstJet](../../../../RealFunctions/QuadraticHermiteDifference.lean/declarations/firstjet.md) | 32 | `declaration-track:2e560d926ba8076c1665550ed33f05fbcc6955932c87ca635a604044ecc0bfd2` |
-| 4 | `theorem` | [symmetric_difference_identity](../../../../RealFunctions/QuadraticHermiteDifference.lean/declarations/symmetric-difference-identity.md) | 36 | `result-track:91b6d8ff0b60056fd31b027ef0c2b7bef43739501a3a1384203fb965f37680a4` |
-| 5 | `theorem` | [normalized_symmetric_difference](../../../../RealFunctions/QuadraticHermiteDifference.lean/declarations/normalized-symmetric-difference.md) | 43 | `result-track:c9cc4d2a79e115cee9fa4ee585f1550592c520caef159d6aec37d244449468a7` |
-| 6 | `theorem` | [reversed_symmetric_difference](../../../../RealFunctions/QuadraticHermiteDifference.lean/declarations/reversed-symmetric-difference.md) | 54 | `result-track:786b8bffdd9002296466f0249e8b6c1bd5735d124b10146df9b93880ae987ddc` |
-| 7 | `theorem` | [normalized_difference_error_bound](../../../../RealFunctions/QuadraticHermiteDifference.lean/declarations/normalized-difference-error-bound.md) | 64 | `result-track:7f9f3d99ccc521ab89fabd5d6361b1061f710313d3bd2da1816a2afe69ce7bc0` |
+| 1 | `abbrev` | [Coefficients](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/QuadraticHermiteDifference.lean/declarations/coefficients.md) | 25 | `declaration-track:2dbbd63cc39b58bc0bc1dcd3917104da000a6ecf022ebe57259da20ed662d898` |
+| 2 | `def` | [eval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/QuadraticHermiteDifference.lean/declarations/eval.md) | 28 | `declaration-track:3acd607f07a12be4b6f606ab81ccfef08a5b3c86e62c626da55c183dabedb286` |
+| 3 | `def` | [firstJet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/QuadraticHermiteDifference.lean/declarations/firstjet.md) | 32 | `declaration-track:2e560d926ba8076c1665550ed33f05fbcc6955932c87ca635a604044ecc0bfd2` |
+| 4 | `theorem` | [symmetric_difference_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/QuadraticHermiteDifference.lean/declarations/symmetric-difference-identity.md) | 36 | `result-track:91b6d8ff0b60056fd31b027ef0c2b7bef43739501a3a1384203fb965f37680a4` |
+| 5 | `theorem` | [normalized_symmetric_difference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/QuadraticHermiteDifference.lean/declarations/normalized-symmetric-difference.md) | 43 | `result-track:c9cc4d2a79e115cee9fa4ee585f1550592c520caef159d6aec37d244449468a7` |
+| 6 | `theorem` | [reversed_symmetric_difference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/QuadraticHermiteDifference.lean/declarations/reversed-symmetric-difference.md) | 54 | `result-track:786b8bffdd9002296466f0249e8b6c1bd5735d124b10146df9b93880ae987ddc` |
+| 7 | `theorem` | [normalized_difference_error_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/QuadraticHermiteDifference.lean/declarations/normalized-difference-error-bound.md) | 64 | `result-track:7f9f3d99ccc521ab89fabd5d6361b1061f710313d3bd2da1816a2afe69ce7bc0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

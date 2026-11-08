@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/VectorGate.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/VectorGate.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/VectorGate.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/VectorGate.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/VectorGate.lean/declarations/example-source-edition-2.md) | 9 | `declaration-track:b8661deb7f8ace80eac625be3b7c0a954ab545830f474a46b149b08878a1de65` |
-| 2 | `inductive` | [Gate](../../../../../ComputerScience/AlgorithmsInComputerScience/VectorGate.lean/declarations/gate.md) | 11 | `declaration-track:bdee5b30b06bb327c60f116730756dd33b2566f8323a193e78530106e10ba0b0` |
-| 3 | `def` | [and](../../../../../ComputerScience/AlgorithmsInComputerScience/VectorGate.lean/declarations/and.md) | 17 | `declaration-track:d80321fd5d22cfe6aa9097d4f01a3e7c0b3815be5bab2bf757335c600497465d` |
-| 4 | `def` | [eval](../../../../../ComputerScience/AlgorithmsInComputerScience/VectorGate.lean/declarations/eval.md) | 19 | `declaration-track:70bd9ed6cd0b47f7a09ffee9b064451180c9e2e339bb259abb641482606aa1c3` |
-| 5 | `example` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/VectorGate.lean/declarations/example.md) | 24 | `declaration-track:5999edc41274660e7c3061ae3ed212f356502cda46c134d4e1ca440c7fa746e0` |
-| 6 | `example` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/VectorGate.lean/declarations/example-source-edition-3.md) | 25 | `declaration-track:e7e30c82d41acc2a9c38e314fd3a2d63d0322c0be977e404d8503079b27339cd` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/VectorGate.lean/declarations/example-source-edition-2.md) | 9 | `declaration-track:b8661deb7f8ace80eac625be3b7c0a954ab545830f474a46b149b08878a1de65` |
+| 2 | `inductive` | [Gate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/VectorGate.lean/declarations/gate.md) | 11 | `declaration-track:bdee5b30b06bb327c60f116730756dd33b2566f8323a193e78530106e10ba0b0` |
+| 3 | `def` | [and](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/VectorGate.lean/declarations/and.md) | 17 | `declaration-track:d80321fd5d22cfe6aa9097d4f01a3e7c0b3815be5bab2bf757335c600497465d` |
+| 4 | `def` | [eval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/VectorGate.lean/declarations/eval.md) | 19 | `declaration-track:70bd9ed6cd0b47f7a09ffee9b064451180c9e2e339bb259abb641482606aa1c3` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/VectorGate.lean/declarations/example.md) | 24 | `declaration-track:5999edc41274660e7c3061ae3ed212f356502cda46c134d4e1ca440c7fa746e0` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/VectorGate.lean/declarations/example-source-edition-3.md) | 25 | `declaration-track:e7e30c82d41acc2a9c38e314fd3a2d63d0322c0be977e404d8503079b27339cd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

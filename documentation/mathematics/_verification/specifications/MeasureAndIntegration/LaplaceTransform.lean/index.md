@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/LaplaceTransform.lean/index.md) · [Full source](../../../../MeasureAndIntegration/LaplaceTransform.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LaplaceTransform.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LaplaceTransform.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Moebius.MertensPrimitive`](../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensPrimitive.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.MertensPrimitive`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensPrimitive.lean/index.md) — import line 5; pinned internal source present.
 - `Mathlib.Analysis.Complex.Exponential` — import line 6; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [signedPickupLaplace](../../../../MeasureAndIntegration/LaplaceTransform.lean/declarations/signedpickuplaplace.md) | 24 | `declaration-track:5d29c530f1702703808c6a6238b0e908c9e56a6cde4bd41255a18b54d685139d` |
-| 2 | `def` | [pickupLaplaceDomain](../../../../MeasureAndIntegration/LaplaceTransform.lean/declarations/pickuplaplacedomain.md) | 28 | `declaration-track:e72a0166f81271db5a6ba4cabf9d8359d4c2edeb78aa8c50405f2c48bee75552` |
+| 1 | `def` | [signedPickupLaplace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LaplaceTransform.lean/declarations/signedpickuplaplace.md) | 24 | `declaration-track:5d29c530f1702703808c6a6238b0e908c9e56a6cde4bd41255a18b54d685139d` |
+| 2 | `def` | [pickupLaplaceDomain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LaplaceTransform.lean/declarations/pickuplaplacedomain.md) | 28 | `declaration-track:e72a0166f81271db5a6ba4cabf9d8359d4c2edeb78aa8c50405f2c48bee75552` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/ToReal.lean/index.md) · [Full source](../../../../NumberTheory/ToReal.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ToReal.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ToReal.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [toReal](../../../../NumberTheory/ToReal.lean/declarations/toreal.md) | 23 | `declaration-track:d590578284b16b8b14ac0506b146097c83172b8a3940ab3f801ca2192253eb4b` |
-| 2 | `theorem` | [toReal_injective](../../../../NumberTheory/ToReal.lean/declarations/toreal-injective.md) | 26 | `result-track:b4d520969139e892eb04fb4010afbb63fa7c8e88f4c04fe87273dc4a2b9a2d04` |
+| 1 | `def` | [toReal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ToReal.lean/declarations/toreal.md) | 23 | `declaration-track:d590578284b16b8b14ac0506b146097c83172b8a3940ab3f801ca2192253eb4b` |
+| 2 | `theorem` | [toReal_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ToReal.lean/declarations/toreal-injective.md) | 26 | `result-track:b4d520969139e892eb04fb4010afbb63fa7c8e88f4c04fe87273dc4a2b9a2d04` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../DynamicalSystemsAndErgodicTheory/ActionBasicNamespaced.lean/index.md) · [Full source](../../../../DynamicalSystemsAndErgodicTheory/ActionBasicNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/ActionBasicNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/ActionBasicNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [ErgodicVAdd](../../../../DynamicalSystemsAndErgodicTheory/ActionBasicNamespaced.lean/declarations/ergodicvadd.md) | 35 | `declaration-track:546ac0c3637f04f2bbfb3095ed24321a4548db0b9c018bd836088e43551ed63e` |
-| 2 | `class` | [ErgodicSMul](../../../../DynamicalSystemsAndErgodicTheory/ActionBasicNamespaced.lean/declarations/ergodicsmul.md) | 47 | `declaration-track:4f9edc6baff16feb5820e7663b885263f95d01bf39c7fb29ca4160b5696fd763` |
-| 3 | `theorem` | [aeconst_of_forall_preimage_smul_ae_eq](../../../../DynamicalSystemsAndErgodicTheory/ActionBasicNamespaced.lean/declarations/aeconst-of-forall-preimage-smul-ae-eq.md) | 59 | `result-track:38ac72b8280b725e0bf5bb171894043491d0f6e133dd669a44f9e361a6c2b291` |
-| 4 | `theorem` | [aeconst_of_forall_smul_ae_eq](../../../../DynamicalSystemsAndErgodicTheory/ActionBasicNamespaced.lean/declarations/aeconst-of-forall-smul-ae-eq.md) | 73 | `result-track:bb4ebef6f428430fc04516216c66b87ad409280b78dd3972cc9a61998a863895` |
-| 5 | `theorem` | [Action Basic Namespaced](../../../../DynamicalSystemsAndErgodicTheory/ActionBasicNamespaced.lean/declarations/aeconst-of-aestabilizer-eq-top.md) | 79 | `result-track:b8dfd42d16daafb0e3ace27ad4670a2da8da82fd3f9896bbc5fead1829cf8874` |
-| 6 | `theorem` | [Action Basic Namespaced](../../../../DynamicalSystemsAndErgodicTheory/ActionBasicNamespaced.lean/declarations/of-aestabilizer.md) | 85 | `result-track:f1de3f72b8bdee3482133b6f8dfc76ad7dd388c899c8688ff41e552291115300` |
-| 7 | `theorem` | [ergodicSMul_iterateMulAct](../../../../DynamicalSystemsAndErgodicTheory/ActionBasicNamespaced.lean/declarations/ergodicsmul-iteratemulact.md) | 91 | `result-track:d5f507a42541c476795077c6195c72ad33b60cb8f3b240c1c50c963d60569dcb` |
+| 1 | `class` | [ErgodicVAdd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/ActionBasicNamespaced.lean/declarations/ergodicvadd.md) | 35 | `declaration-track:546ac0c3637f04f2bbfb3095ed24321a4548db0b9c018bd836088e43551ed63e` |
+| 2 | `class` | [ErgodicSMul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/ActionBasicNamespaced.lean/declarations/ergodicsmul.md) | 47 | `declaration-track:4f9edc6baff16feb5820e7663b885263f95d01bf39c7fb29ca4160b5696fd763` |
+| 3 | `theorem` | [aeconst_of_forall_preimage_smul_ae_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/ActionBasicNamespaced.lean/declarations/aeconst-of-forall-preimage-smul-ae-eq.md) | 59 | `result-track:38ac72b8280b725e0bf5bb171894043491d0f6e133dd669a44f9e361a6c2b291` |
+| 4 | `theorem` | [aeconst_of_forall_smul_ae_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/ActionBasicNamespaced.lean/declarations/aeconst-of-forall-smul-ae-eq.md) | 73 | `result-track:bb4ebef6f428430fc04516216c66b87ad409280b78dd3972cc9a61998a863895` |
+| 5 | `theorem` | [Action Basic Namespaced](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/ActionBasicNamespaced.lean/declarations/aeconst-of-aestabilizer-eq-top.md) | 79 | `result-track:b8dfd42d16daafb0e3ace27ad4670a2da8da82fd3f9896bbc5fead1829cf8874` |
+| 6 | `theorem` | [Action Basic Namespaced](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/ActionBasicNamespaced.lean/declarations/of-aestabilizer.md) | 85 | `result-track:f1de3f72b8bdee3482133b6f8dfc76ad7dd388c899c8688ff41e552291115300` |
+| 7 | `theorem` | [ergodicSMul_iterateMulAct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/ActionBasicNamespaced.lean/declarations/ergodicsmul-iteratemulact.md) | 91 | `result-track:d5f507a42541c476795077c6195c72ad33b60cb8f3b240c1c50c963d60569dcb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

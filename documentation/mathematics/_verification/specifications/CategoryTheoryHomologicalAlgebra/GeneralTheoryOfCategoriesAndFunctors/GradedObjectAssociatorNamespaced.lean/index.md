@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GradedObjectAssociatorNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GradedObjectAssociatorNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GradedObjectAssociatorNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GradedObjectAssociatorNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mapBifunctorAssociator](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GradedObjectAssociatorNamespaced.lean/declarations/mapbifunctorassociator.md) | 59 | `declaration-track:c5ea88bae17f47f6c1a3c48d0444e1c2772e0ea7469f399b0318591a4353a6fb` |
-| 2 | `lemma` | [ι_mapBifunctorAssociator_hom](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GradedObjectAssociatorNamespaced.lean/declarations/mapbifunctorassociator-hom.md) | 69 | `result-track:8d299c837b1498afa08f52e0ce931eb25d039d53327957e778c7a25df0baad0b` |
-| 3 | `lemma` | [ι_mapBifunctorAssociator_inv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GradedObjectAssociatorNamespaced.lean/declarations/mapbifunctorassociator-inv.md) | 82 | `result-track:5714e3aec383ec4c2414ae806e2c7040bb2dc66ca501a21a53883b814c70a475` |
+| 1 | `def` | [mapBifunctorAssociator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GradedObjectAssociatorNamespaced.lean/declarations/mapbifunctorassociator.md) | 59 | `declaration-track:c5ea88bae17f47f6c1a3c48d0444e1c2772e0ea7469f399b0318591a4353a6fb` |
+| 2 | `lemma` | [ι_mapBifunctorAssociator_hom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GradedObjectAssociatorNamespaced.lean/declarations/mapbifunctorassociator-hom.md) | 69 | `result-track:8d299c837b1498afa08f52e0ce931eb25d039d53327957e778c7a25df0baad0b` |
+| 3 | `lemma` | [ι_mapBifunctorAssociator_inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GradedObjectAssociatorNamespaced.lean/declarations/mapbifunctorassociator-inv.md) | 82 | `result-track:5714e3aec383ec4c2414ae806e2c7040bb2dc66ca501a21a53883b814c70a475` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

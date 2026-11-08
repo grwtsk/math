@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/FiniteCyclicReciprocalAbel.lean/index.md) · [Full source](../../../../NumberTheory/FiniteCyclicReciprocalAbel.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteCyclicReciprocalAbel.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteCyclicReciprocalAbel.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.CharacterSums.FiniteCyclicIntervalDistance`](../../../../NumberTheory/FiniteCyclicIntervalDistance.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.CharacterSums.FiniteCyclicIntervalDistance`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteCyclicIntervalDistance.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Algebra.BigOperators.Module` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [finiteCyclicReciprocalWeight](../../../../NumberTheory/FiniteCyclicReciprocalAbel.lean/declarations/finitecyclicreciprocalweight.md) | 35 | `declaration-track:851893bef94fa54cbd655c19bcd22bc5bb7142c0b6fb178c973f3ac60555e7fd` |
-| 2 | `theorem` | [finiteCyclicReciprocalWeight_nonneg](../../../../NumberTheory/FiniteCyclicReciprocalAbel.lean/declarations/finitecyclicreciprocalweight-nonneg.md) | 40 | `result-track:068f420b55dc9223927f1d1e1d657f8550eed9e3a4727c2e0e9d50fa1f0fe2be` |
-| 3 | `theorem` | [finiteCyclicReciprocalWeight_succ_le](../../../../NumberTheory/FiniteCyclicReciprocalAbel.lean/declarations/finitecyclicreciprocalweight-succ-le.md) | 46 | `result-track:05dbf433dc0d4a1f12e100fd7fc1ab9559892e3497eb1f45927af3e3356a0bb3` |
-| 4 | `theorem` | [norm_coe_finiteCyclicReciprocalWeight](../../../../NumberTheory/FiniteCyclicReciprocalAbel.lean/declarations/norm-coe-finitecyclicreciprocalweight.md) | 58 | `result-track:7571177321b26ec68e7f899bbd124f23cfbe290ea4de81f724d483fa986e6c30` |
-| 5 | `theorem` | [norm_coe_finiteCyclicReciprocalWeight_sub_succ](../../../../NumberTheory/FiniteCyclicReciprocalAbel.lean/declarations/norm-coe-finitecyclicreciprocalweight-sub-succ.md) | 65 | `result-track:e3893a8818f3ce674a43ed0b4acc71c17b0b57f91e4ca581f4d7fa20e2e2dc3d` |
-| 6 | `theorem` | [finiteCyclicReciprocalWeight_endpoint_add_steps](../../../../NumberTheory/FiniteCyclicReciprocalAbel.lean/declarations/finitecyclicreciprocalweight-endpoint-add-steps.md) | 76 | `result-track:1e57337059974db0fa2802efd6f71bb8892c906c901925f6aeeb2b6d07bdf810` |
-| 7 | `theorem` | [sum_stdAddChar_neg_mul_reciprocalWeight_Ico_eq_abel](../../../../NumberTheory/FiniteCyclicReciprocalAbel.lean/declarations/sum-stdaddchar-neg-mul-reciprocalweight-ico-eq-abel.md) | 107 | `result-track:6296713cdb97c487fe64c43584730d768916d2b10a720e125a014a6f4cb515f1` |
-| 8 | `theorem` | [norm_sum_stdAddChar_neg_mul_reciprocalWeight_Ico_le](../../../../NumberTheory/FiniteCyclicReciprocalAbel.lean/declarations/norm-sum-stdaddchar-neg-mul-reciprocalweight-ico-le.md) | 163 | `result-track:ad754cd53066e21a416a35f10778902a69654d6d00fa9cc5d9f7ccd0b483d73c` |
-| 9 | `theorem` | [norm_sum_stdAddChar_neg_div_nat_add_Ico_le_circularDistance](../../../../NumberTheory/FiniteCyclicReciprocalAbel.lean/declarations/norm-sum-stdaddchar-neg-div-nat-add-ico-le-circulardistance.md) | 272 | `result-track:1091553fcd3351bf85e1aa68e830446ac6b4922f473ad69858d3b09d2e27953e` |
+| 1 | `def` | [finiteCyclicReciprocalWeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteCyclicReciprocalAbel.lean/declarations/finitecyclicreciprocalweight.md) | 35 | `declaration-track:851893bef94fa54cbd655c19bcd22bc5bb7142c0b6fb178c973f3ac60555e7fd` |
+| 2 | `theorem` | [finiteCyclicReciprocalWeight_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteCyclicReciprocalAbel.lean/declarations/finitecyclicreciprocalweight-nonneg.md) | 40 | `result-track:068f420b55dc9223927f1d1e1d657f8550eed9e3a4727c2e0e9d50fa1f0fe2be` |
+| 3 | `theorem` | [finiteCyclicReciprocalWeight_succ_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteCyclicReciprocalAbel.lean/declarations/finitecyclicreciprocalweight-succ-le.md) | 46 | `result-track:05dbf433dc0d4a1f12e100fd7fc1ab9559892e3497eb1f45927af3e3356a0bb3` |
+| 4 | `theorem` | [norm_coe_finiteCyclicReciprocalWeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteCyclicReciprocalAbel.lean/declarations/norm-coe-finitecyclicreciprocalweight.md) | 58 | `result-track:7571177321b26ec68e7f899bbd124f23cfbe290ea4de81f724d483fa986e6c30` |
+| 5 | `theorem` | [norm_coe_finiteCyclicReciprocalWeight_sub_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteCyclicReciprocalAbel.lean/declarations/norm-coe-finitecyclicreciprocalweight-sub-succ.md) | 65 | `result-track:e3893a8818f3ce674a43ed0b4acc71c17b0b57f91e4ca581f4d7fa20e2e2dc3d` |
+| 6 | `theorem` | [finiteCyclicReciprocalWeight_endpoint_add_steps](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteCyclicReciprocalAbel.lean/declarations/finitecyclicreciprocalweight-endpoint-add-steps.md) | 76 | `result-track:1e57337059974db0fa2802efd6f71bb8892c906c901925f6aeeb2b6d07bdf810` |
+| 7 | `theorem` | [sum_stdAddChar_neg_mul_reciprocalWeight_Ico_eq_abel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteCyclicReciprocalAbel.lean/declarations/sum-stdaddchar-neg-mul-reciprocalweight-ico-eq-abel.md) | 107 | `result-track:6296713cdb97c487fe64c43584730d768916d2b10a720e125a014a6f4cb515f1` |
+| 8 | `theorem` | [norm_sum_stdAddChar_neg_mul_reciprocalWeight_Ico_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteCyclicReciprocalAbel.lean/declarations/norm-sum-stdaddchar-neg-mul-reciprocalweight-ico-le.md) | 163 | `result-track:ad754cd53066e21a416a35f10778902a69654d6d00fa9cc5d9f7ccd0b483d73c` |
+| 9 | `theorem` | [norm_sum_stdAddChar_neg_div_nat_add_Ico_le_circularDistance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteCyclicReciprocalAbel.lean/declarations/norm-sum-stdaddchar-neg-div-nat-add-ico-le-circulardistance.md) | 272 | `result-track:1091553fcd3351bf85e1aa68e830446ac6b4922f473ad69858d3b09d2e27953e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

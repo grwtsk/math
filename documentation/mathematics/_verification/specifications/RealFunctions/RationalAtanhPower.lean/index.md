@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/RationalAtanhPower.lean/index.md) · [Full source](../../../../RealFunctions/RationalAtanhPower.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalAtanhPower.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalAtanhPower.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.ErrorBounds.RationalAtanhLog`](../../../../RealFunctions/RationalAtanhLog.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.IntervalMellinRangeReduction`](../../../../FunctionsOfAComplexVariable/IntervalMellinRangeReduction.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.ErrorBounds.RationalAtanhLog`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalAtanhLog.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.IntervalMellinRangeReduction`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IntervalMellinRangeReduction.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [exponent](../../../../RealFunctions/RationalAtanhPower.lean/declarations/exponent.md) | 25 | `declaration-track:0ad2e256201598d9d7f9dfeeb8ba9a80b84ce66693ef591462a708cacbaa73ba` |
-| 2 | `def` | [output](../../../../RealFunctions/RationalAtanhPower.lean/declarations/output.md) | 28 | `declaration-track:8c3ce88a38468f1ce062481864be950413c0c775f8c54b74623e23a3a75b1cd0` |
-| 3 | `theorem` | [inverse_power_sound](../../../../RealFunctions/RationalAtanhPower.lean/declarations/inverse-power-sound.md) | 37 | `result-track:abf359797169616732dfa979395c9c849abdaf20017b36a8d633f263fd806b76` |
+| 1 | `def` | [exponent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalAtanhPower.lean/declarations/exponent.md) | 25 | `declaration-track:0ad2e256201598d9d7f9dfeeb8ba9a80b84ce66693ef591462a708cacbaa73ba` |
+| 2 | `def` | [output](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalAtanhPower.lean/declarations/output.md) | 28 | `declaration-track:8c3ce88a38468f1ce062481864be950413c0c775f8c54b74623e23a3a75b1cd0` |
+| 3 | `theorem` | [inverse_power_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalAtanhPower.lean/declarations/inverse-power-sound.md) | 37 | `result-track:abf359797169616732dfa979395c9c849abdaf20017b36a8d633f263fd806b76` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

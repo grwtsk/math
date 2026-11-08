@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceDiagonalShortWindowNamespacedEdition2.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceDiagonalShortWindowNamespacedEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceDiagonalShortWindowNamespacedEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceDiagonalShortWindowNamespacedEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [diagonalCorrelation_sub_one_abs_le](../../../../MeasureAndIntegration/SourceDiagonalShortWindowNamespacedEdition2.lean/declarations/diagonalcorrelation-sub-one-abs-le.md) | 21 | `result-track:8b73515421d117ad79e1dd7e4b04eea82bad843cf41c09c29e8e06ab901051f5` |
-| 2 | `theorem` | [diagonalCorrelation_short_integral_error](../../../../MeasureAndIntegration/SourceDiagonalShortWindowNamespacedEdition2.lean/declarations/diagonalcorrelation-short-integral-error.md) | 34 | `result-track:c241ac18ff24d3f844e469add8dcd3efc91fb71b77c8e325f3005ebb92dc7dd7` |
-| 3 | `theorem` | [floor_square_log_square_div_bound](../../../../MeasureAndIntegration/SourceDiagonalShortWindowNamespacedEdition2.lean/declarations/floor-square-log-square-div-bound.md) | 57 | `result-track:3e93ab6e8a61b9b7887909bfba2929b95c78d59d673a2bdaf226d76713df7610` |
-| 4 | `theorem` | [floor_square_short_integral_error](../../../../MeasureAndIntegration/SourceDiagonalShortWindowNamespacedEdition2.lean/declarations/floor-square-short-integral-error.md) | 76 | `result-track:8c67022271c4a9bad6af6dbcd366a2044633468323072986a753920399961eae` |
+| 1 | `theorem` | [diagonalCorrelation_sub_one_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceDiagonalShortWindowNamespacedEdition2.lean/declarations/diagonalcorrelation-sub-one-abs-le.md) | 21 | `result-track:8b73515421d117ad79e1dd7e4b04eea82bad843cf41c09c29e8e06ab901051f5` |
+| 2 | `theorem` | [diagonalCorrelation_short_integral_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceDiagonalShortWindowNamespacedEdition2.lean/declarations/diagonalcorrelation-short-integral-error.md) | 34 | `result-track:c241ac18ff24d3f844e469add8dcd3efc91fb71b77c8e325f3005ebb92dc7dd7` |
+| 3 | `theorem` | [floor_square_log_square_div_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceDiagonalShortWindowNamespacedEdition2.lean/declarations/floor-square-log-square-div-bound.md) | 57 | `result-track:3e93ab6e8a61b9b7887909bfba2929b95c78d59d673a2bdaf226d76713df7610` |
+| 4 | `theorem` | [floor_square_short_integral_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceDiagonalShortWindowNamespacedEdition2.lean/declarations/floor-square-short-integral-error.md) | 76 | `result-track:8c67022271c4a9bad6af6dbcd366a2044633468323072986a753920399961eae` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

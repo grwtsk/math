@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CenteredGaussianAbsoluteMomentBound.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CenteredGaussianAbsoluteMomentBound.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredGaussianAbsoluteMomentBound.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredGaussianAbsoluteMomentBound.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -50,7 +50,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 - `Mathlib.MeasureTheory.Function.L2Space` — import line 15; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic.NormNum` — import line 16; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic.Linarith` — import line 17; external provider; requires a separately pinned dependency.
-- [`GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.Expectation.Moments.CenteredGaussianPolynomialMoments`](../../../../MeasureAndIntegration/CenteredGaussianPolynomialMoments.lean/index.md) — import line 19; pinned internal source present.
+- [`GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.Expectation.Moments.CenteredGaussianPolynomialMoments`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredGaussianPolynomialMoments.lean/index.md) — import line 19; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -61,8 +61,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [integrable_abs](../../../../MeasureAndIntegration/CenteredGaussianAbsoluteMomentBound.lean/declarations/integrable-abs.md) | 26 | `result-track:692a7831946bbc7f70ab59361ef63ecf2731be16c9b7273ba121ae8b1a2491e0` |
-| 2 | `theorem` | [integral_abs_le_sqrt](../../../../MeasureAndIntegration/CenteredGaussianAbsoluteMomentBound.lean/declarations/integral-abs-le-sqrt.md) | 30 | `result-track:b8778ee42e27aa3f95de35d175107947378838f012f9a7586ddaa4a3916e047a` |
+| 1 | `theorem` | [integrable_abs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredGaussianAbsoluteMomentBound.lean/declarations/integrable-abs.md) | 26 | `result-track:692a7831946bbc7f70ab59361ef63ecf2731be16c9b7273ba121ae8b1a2491e0` |
+| 2 | `theorem` | [integral_abs_le_sqrt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredGaussianAbsoluteMomentBound.lean/declarations/integral-abs-le-sqrt.md) | 30 | `result-track:b8778ee42e27aa3f95de35d175107947378838f012f9a7586ddaa4a3916e047a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

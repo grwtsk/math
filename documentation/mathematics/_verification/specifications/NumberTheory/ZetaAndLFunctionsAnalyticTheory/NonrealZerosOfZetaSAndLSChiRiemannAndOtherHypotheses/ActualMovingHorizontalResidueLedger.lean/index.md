@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ActualMovingHorizontalResidueLedger.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ActualMovingHorizontalResidueLedger.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ActualMovingHorizontalResidueLedger.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ActualMovingHorizontalResidueLedger.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_initialMellin_eq_bilateral](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ActualMovingHorizontalResidueLedger.lean/declarations/actual-initialmellin-eq-bilateral.md) | 22 | `result-track:fe87379d5574cc77095a58d6439482504f414ee5abc7383c331b510912ca96f0` |
-| 2 | `theorem` | [actual_source_same_goodheight_full_ledger_and_horizontal_budget](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ActualMovingHorizontalResidueLedger.lean/declarations/actual-source-same-goodheight-full-ledger-and-horizontal-budget.md) | 29 | `result-track:cadaa9632a92ea1b59645e406e22442ae811eb8a3d338c5834d3dff7ab653118` |
+| 1 | `theorem` | [actual_initialMellin_eq_bilateral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ActualMovingHorizontalResidueLedger.lean/declarations/actual-initialmellin-eq-bilateral.md) | 22 | `result-track:fe87379d5574cc77095a58d6439482504f414ee5abc7383c331b510912ca96f0` |
+| 2 | `theorem` | [actual_source_same_goodheight_full_ledger_and_horizontal_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ActualMovingHorizontalResidueLedger.lean/declarations/actual-source-same-goodheight-full-ledger-and-horizontal-budget.md) | 29 | `result-track:cadaa9632a92ea1b59645e406e22442ae811eb8a3d338c5834d3dff7ab653118` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

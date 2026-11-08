@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/NormedSpaceCompletionNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/NormedSpaceCompletionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceCompletionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceCompletionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,15 +59,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../FunctionalAnalysis/NormedSpaceCompletionNamespaced.lean/declarations/instance-source-edition-3.md) | 41 | `declaration-track:ccac9d1f09c0cd8e734c655845e5aabc98d361bbaf0a86fa44dab845041c6b51` |
-| 2 | `instance` | [(anonymous)](../../../../FunctionalAnalysis/NormedSpaceCompletionNamespaced.lean/declarations/instance-source-edition-2.md) | 46 | `declaration-track:c4b6b461badcb67e606eddd16d6605fc53613fd6237db7b510f162a6b5d14290` |
-| 3 | `def` | [toComplₗᵢ](../../../../FunctionalAnalysis/NormedSpaceCompletionNamespaced.lean/declarations/tocompl.md) | 57 | `declaration-track:67b1d940cbb3d9822a3b01bd1f2d7b4b2e54141103eb67202300f0d9cdfc09ee` |
-| 4 | `theorem` | [coe_toComplₗᵢ](../../../../FunctionalAnalysis/NormedSpaceCompletionNamespaced.lean/declarations/coe-tocompl.md) | 65 | `result-track:11f9a0ddb2b3f586431b237cbe0c350ec189915dd89ee9307327ef8535269047` |
-| 5 | `def` | [toComplL](../../../../FunctionalAnalysis/NormedSpaceCompletionNamespaced.lean/declarations/tocompll.md) | 70 | `declaration-track:ed260491598fc7d1cd8e02eaba5070769c9ebf416b356a65125f148a94544c8a` |
-| 6 | `theorem` | [coe_toComplL](../../../../FunctionalAnalysis/NormedSpaceCompletionNamespaced.lean/declarations/coe-tocompll.md) | 76 | `result-track:124fbc5e227457e2f9a29d58e9ef44c5dcd7d2d4569a3794f5ef98ccf4ea5c0e` |
-| 7 | `theorem` | [norm_toComplL](../../../../FunctionalAnalysis/NormedSpaceCompletionNamespaced.lean/declarations/norm-tocompll.md) | 82 | `result-track:68c6825c26078d3a34d59539ca3d9d925a1c4289aec04d4c8b478a2987391290` |
-| 8 | `instance` | [(anonymous)](../../../../FunctionalAnalysis/NormedSpaceCompletionNamespaced.lean/declarations/instance-source-edition-4.md) | 92 | `declaration-track:e957ab86dc16de7eec733e7005f19fd0e61fdef5e9cc5df622fb9e233dc33325` |
-| 9 | `instance` | [(anonymous)](../../../../FunctionalAnalysis/NormedSpaceCompletionNamespaced.lean/declarations/instance.md) | 111 | `declaration-track:99d430bbb0bd844203a43e5622a645f81cc12bcf86e4852971dd0bef9a9594fa` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceCompletionNamespaced.lean/declarations/instance-source-edition-3.md) | 41 | `declaration-track:ccac9d1f09c0cd8e734c655845e5aabc98d361bbaf0a86fa44dab845041c6b51` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceCompletionNamespaced.lean/declarations/instance-source-edition-2.md) | 46 | `declaration-track:c4b6b461badcb67e606eddd16d6605fc53613fd6237db7b510f162a6b5d14290` |
+| 3 | `def` | [toComplₗᵢ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceCompletionNamespaced.lean/declarations/tocompl.md) | 57 | `declaration-track:67b1d940cbb3d9822a3b01bd1f2d7b4b2e54141103eb67202300f0d9cdfc09ee` |
+| 4 | `theorem` | [coe_toComplₗᵢ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceCompletionNamespaced.lean/declarations/coe-tocompl.md) | 65 | `result-track:11f9a0ddb2b3f586431b237cbe0c350ec189915dd89ee9307327ef8535269047` |
+| 5 | `def` | [toComplL](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceCompletionNamespaced.lean/declarations/tocompll.md) | 70 | `declaration-track:ed260491598fc7d1cd8e02eaba5070769c9ebf416b356a65125f148a94544c8a` |
+| 6 | `theorem` | [coe_toComplL](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceCompletionNamespaced.lean/declarations/coe-tocompll.md) | 76 | `result-track:124fbc5e227457e2f9a29d58e9ef44c5dcd7d2d4569a3794f5ef98ccf4ea5c0e` |
+| 7 | `theorem` | [norm_toComplL](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceCompletionNamespaced.lean/declarations/norm-tocompll.md) | 82 | `result-track:68c6825c26078d3a34d59539ca3d9d925a1c4289aec04d4c8b478a2987391290` |
+| 8 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceCompletionNamespaced.lean/declarations/instance-source-edition-4.md) | 92 | `declaration-track:e957ab86dc16de7eec733e7005f19fd0e61fdef5e9cc5df622fb9e233dc33325` |
+| 9 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceCompletionNamespaced.lean/declarations/instance.md) | 111 | `declaration-track:99d430bbb0bd844203a43e5622a645f81cc12bcf86e4852971dd0bef9a9594fa` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

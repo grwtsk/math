@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../DifferentialGeometry/UnitsOfNormedAlgebraNamespaced.lean/index.md) · [Full source](../../../../DifferentialGeometry/UnitsOfNormedAlgebraNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/UnitsOfNormedAlgebraNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/UnitsOfNormedAlgebraNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../DifferentialGeometry/UnitsOfNormedAlgebraNamespaced.lean/declarations/instance-source-edition-3.md) | 43 | `declaration-track:274faff294dce2e0f5baf1221ebe18b5beea7bfcf7c7fb66c3625b23ecc9daf8` |
-| 2 | `theorem` | [chartAt_apply](../../../../DifferentialGeometry/UnitsOfNormedAlgebraNamespaced.lean/declarations/chartat-apply.md) | 46 | `result-track:6018fa0737eff9f3b7fc67820e45e0400ed5e26c3de78d40751ead02c9395679` |
-| 3 | `theorem` | [chartAt_source](../../../../DifferentialGeometry/UnitsOfNormedAlgebraNamespaced.lean/declarations/chartat-source.md) | 49 | `result-track:0768f0f7ece382a6db77f13ca0aaece8c35936a12449d6af2f3bdad852640031` |
-| 4 | `instance` | [(anonymous)](../../../../DifferentialGeometry/UnitsOfNormedAlgebraNamespaced.lean/declarations/instance-source-edition-2.md) | 54 | `declaration-track:0aee91aa3e0cf26fbd23a0d38625a4eb40a8ba13e5018f8597d8784fd095f20f` |
-| 5 | `lemma` | [contMDiff_val](../../../../DifferentialGeometry/UnitsOfNormedAlgebraNamespaced.lean/declarations/contmdiff-val.md) | 59 | `result-track:831dac897a1370fa7c7cff00e68b07cfb6b5c3426279b7d69fad03e28e0a0c7a` |
-| 6 | `instance` | [(anonymous)](../../../../DifferentialGeometry/UnitsOfNormedAlgebraNamespaced.lean/declarations/instance.md) | 63 | `declaration-track:00cf2f72f8db50c31fbbc6c22369cdce6c6ecdf0884cae0f00dee584c897cd0d` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/UnitsOfNormedAlgebraNamespaced.lean/declarations/instance-source-edition-3.md) | 43 | `declaration-track:274faff294dce2e0f5baf1221ebe18b5beea7bfcf7c7fb66c3625b23ecc9daf8` |
+| 2 | `theorem` | [chartAt_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/UnitsOfNormedAlgebraNamespaced.lean/declarations/chartat-apply.md) | 46 | `result-track:6018fa0737eff9f3b7fc67820e45e0400ed5e26c3de78d40751ead02c9395679` |
+| 3 | `theorem` | [chartAt_source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/UnitsOfNormedAlgebraNamespaced.lean/declarations/chartat-source.md) | 49 | `result-track:0768f0f7ece382a6db77f13ca0aaece8c35936a12449d6af2f3bdad852640031` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/UnitsOfNormedAlgebraNamespaced.lean/declarations/instance-source-edition-2.md) | 54 | `declaration-track:0aee91aa3e0cf26fbd23a0d38625a4eb40a8ba13e5018f8597d8784fd095f20f` |
+| 5 | `lemma` | [contMDiff_val](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/UnitsOfNormedAlgebraNamespaced.lean/declarations/contmdiff-val.md) | 59 | `result-track:831dac897a1370fa7c7cff00e68b07cfb6b5c3426279b7d69fad03e28e0a0c7a` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/UnitsOfNormedAlgebraNamespaced.lean/declarations/instance.md) | 63 | `declaration-track:00cf2f72f8db50c31fbbc6c22369cdce6c6ecdf0884cae0f00dee584c897cd0d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

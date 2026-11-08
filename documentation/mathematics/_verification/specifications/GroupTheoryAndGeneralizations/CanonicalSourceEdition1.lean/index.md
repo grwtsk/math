@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/CanonicalSourceEdition1.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/CanonicalSourceEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CanonicalSourceEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CanonicalSourceEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [SameOrbit](../../../../GroupTheoryAndGeneralizations/CanonicalSourceEdition1.lean/declarations/sameorbit.md) | 14 | `declaration-track:c000484b2c298a445ce2e1909d8a463d9fa0ec46475ced58fd60b96280596cf1` |
-| 2 | `structure` | [FiniteDataCanonicalizer](../../../../GroupTheoryAndGeneralizations/CanonicalSourceEdition1.lean/declarations/finitedatacanonicalizer.md) | 22 | `declaration-track:244dfb8e97da6e4c1974c9c0a5c5a59ff65e4f021228060799abeb767df727c1` |
-| 3 | `theorem` | [canon_smul](../../../../GroupTheoryAndGeneralizations/CanonicalSourceEdition1.lean/declarations/canon-smul.md) | 47 | `result-track:735a9dac78f244e94100467c5ddcbcc78b3335b06f823d224335386b98ea99b1` |
-| 4 | `theorem` | [canon_idempotent](../../../../GroupTheoryAndGeneralizations/CanonicalSourceEdition1.lean/declarations/canon-idempotent.md) | 59 | `result-track:831935b7c2c0edd550ed6bc60e0508b341a3086c5b5918ada0735ea4a4e9b50d` |
-| 5 | `theorem` | [canon_eq_iff_same_orbit](../../../../GroupTheoryAndGeneralizations/CanonicalSourceEdition1.lean/declarations/canon-eq-iff-same-orbit.md) | 71 | `result-track:f6eeefe760fc4e980bd1019aeaee902847dfa18afa984aaf251487fb99d4375d` |
+| 1 | `def` | [SameOrbit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CanonicalSourceEdition1.lean/declarations/sameorbit.md) | 14 | `declaration-track:c000484b2c298a445ce2e1909d8a463d9fa0ec46475ced58fd60b96280596cf1` |
+| 2 | `structure` | [FiniteDataCanonicalizer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CanonicalSourceEdition1.lean/declarations/finitedatacanonicalizer.md) | 22 | `declaration-track:244dfb8e97da6e4c1974c9c0a5c5a59ff65e4f021228060799abeb767df727c1` |
+| 3 | `theorem` | [canon_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CanonicalSourceEdition1.lean/declarations/canon-smul.md) | 47 | `result-track:735a9dac78f244e94100467c5ddcbcc78b3335b06f823d224335386b98ea99b1` |
+| 4 | `theorem` | [canon_idempotent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CanonicalSourceEdition1.lean/declarations/canon-idempotent.md) | 59 | `result-track:831935b7c2c0edd550ed6bc60e0508b341a3086c5b5918ada0735ea4a4e9b50d` |
+| 5 | `theorem` | [canon_eq_iff_same_orbit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CanonicalSourceEdition1.lean/declarations/canon-eq-iff-same-orbit.md) | 71 | `result-track:f6eeefe760fc4e980bd1019aeaee902847dfa18afa984aaf251487fb99d4375d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

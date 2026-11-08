@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GaloisModuleNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GaloisModuleNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GaloisModuleNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GaloisModuleNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [galoisModuleBridgeStatement](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GaloisModuleNamespaced.lean/declarations/galoismodulebridgestatement.md) | 13 | `declaration-track:5bd6eee1a6b8028a15cff74ca74ce56af1c787ca25004744e3d86d0036c58a98` |
-| 2 | `def` | [galoisCohomologyBridgeStatement](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GaloisModuleNamespaced.lean/declarations/galoiscohomologybridgestatement.md) | 16 | `declaration-track:9b237b837b27746c3a50d65e4edc167993a370d8a74e8bd458cbcf8534b8c2ea` |
-| 3 | `def` | [hilbert90ReferenceStatement](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GaloisModuleNamespaced.lean/declarations/hilbert90referencestatement.md) | 19 | `declaration-track:756d6376476c986ede7bb5f07bfc0409a13085a9961ba902abc0d23a85b55ce8` |
-| 4 | `theorem` | [hilbert90_gm_spec_field](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GaloisModuleNamespaced.lean/declarations/hilbert90-gm-spec-field.md) | 26 | `result-track:86b0538087db358d2748154002cee8a7474fbe8b1bea809bdcc76ccd14fdb7e0` |
+| 1 | `def` | [galoisModuleBridgeStatement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GaloisModuleNamespaced.lean/declarations/galoismodulebridgestatement.md) | 13 | `declaration-track:5bd6eee1a6b8028a15cff74ca74ce56af1c787ca25004744e3d86d0036c58a98` |
+| 2 | `def` | [galoisCohomologyBridgeStatement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GaloisModuleNamespaced.lean/declarations/galoiscohomologybridgestatement.md) | 16 | `declaration-track:9b237b837b27746c3a50d65e4edc167993a370d8a74e8bd458cbcf8534b8c2ea` |
+| 3 | `def` | [hilbert90ReferenceStatement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GaloisModuleNamespaced.lean/declarations/hilbert90referencestatement.md) | 19 | `declaration-track:756d6376476c986ede7bb5f07bfc0409a13085a9961ba902abc0d23a85b55ce8` |
+| 4 | `theorem` | [hilbert90_gm_spec_field](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GaloisModuleNamespaced.lean/declarations/hilbert90-gm-spec-field.md) | 26 | `result-track:86b0538087db358d2748154002cee8a7474fbe8b1bea809bdcc76ccd14fdb7e0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

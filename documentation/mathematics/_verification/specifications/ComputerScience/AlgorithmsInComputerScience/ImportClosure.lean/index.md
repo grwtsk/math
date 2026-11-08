@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ImportClosure.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ImportClosure.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ImportClosure.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ImportClosure.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [importClosure](../../../../../ComputerScience/AlgorithmsInComputerScience/ImportClosure.lean/declarations/importclosure.md) | 10 | `declaration-track:270e912463d9808a5a822009d1a2bd1275aa47aae52f812eead5fa7072abf694` |
-| 2 | `theorem` | [importClosure_complete](../../../../../ComputerScience/AlgorithmsInComputerScience/ImportClosure.lean/declarations/importclosure-complete.md) | 13 | `result-track:59806cca2a132c71844cf56127c94412cae49101ea6ad7328397bd5c79860b78` |
+| 1 | `def` | [importClosure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ImportClosure.lean/declarations/importclosure.md) | 10 | `declaration-track:270e912463d9808a5a822009d1a2bd1275aa47aae52f812eead5fa7072abf694` |
+| 2 | `theorem` | [importClosure_complete](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ImportClosure.lean/declarations/importclosure-complete.md) | 13 | `result-track:59806cca2a132c71844cf56127c94412cae49101ea6ad7328397bd5c79860b78` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

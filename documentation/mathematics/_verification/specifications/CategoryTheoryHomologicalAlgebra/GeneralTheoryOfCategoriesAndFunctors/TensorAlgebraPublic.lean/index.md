@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TensorAlgebraPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TensorAlgebraPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TensorAlgebraPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TensorAlgebraPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [tensorAlgebra](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TensorAlgebraPublic.lean/declarations/tensoralgebra.md) | 32 | `declaration-track:3ced4fdd47a6d5953cd751731d334e579108704924e6470c0b8d5fc045c0cbde` |
-| 2 | `def` | [tensorAlgebraAdj](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TensorAlgebraPublic.lean/declarations/tensoralgebraadj.md) | 43 | `declaration-track:ab3bfd206a604db3960fec2c84f1221eb64f05816ef61046be21e630c9f66c45` |
-| 3 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TensorAlgebraPublic.lean/declarations/instance.md) | 57 | `declaration-track:a1d9677d34e075f096bbfab3d040963960eca6019f2fca03afbf43b543e1a939` |
-| 4 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TensorAlgebraPublic.lean/declarations/instance-source-edition-2.md) | 68 | `declaration-track:f186e4931d2d00333aed1e3b4fc2426ad84b390f8d52e7f8cbffa69959bf0309` |
+| 1 | `def` | [tensorAlgebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TensorAlgebraPublic.lean/declarations/tensoralgebra.md) | 32 | `declaration-track:3ced4fdd47a6d5953cd751731d334e579108704924e6470c0b8d5fc045c0cbde` |
+| 2 | `def` | [tensorAlgebraAdj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TensorAlgebraPublic.lean/declarations/tensoralgebraadj.md) | 43 | `declaration-track:ab3bfd206a604db3960fec2c84f1221eb64f05816ef61046be21e630c9f66c45` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TensorAlgebraPublic.lean/declarations/instance.md) | 57 | `declaration-track:a1d9677d34e075f096bbfab3d040963960eca6019f2fca03afbf43b543e1a939` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TensorAlgebraPublic.lean/declarations/instance-source-edition-2.md) | 68 | `declaration-track:f186e4931d2d00333aed1e3b4fc2426ad84b390f8d52e7f8cbffa69959bf0309` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

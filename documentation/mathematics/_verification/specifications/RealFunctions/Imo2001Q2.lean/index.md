@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/Imo2001Q2.lean/index.md) · [Full source](../../../../RealFunctions/Imo2001Q2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo2001Q2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo2001Q2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [bound](../../../../RealFunctions/Imo2001Q2.lean/declarations/bound.md) | 35 | `result-track:4843d1656c311feccf8d2719c9dfe7b801037c2f4d70f557274448ea14d89a5c` |
-| 2 | `theorem` | [imo2001_q2'](../../../../RealFunctions/Imo2001Q2.lean/declarations/imo2001-q2.md) | 50 | `result-track:4ee6ca9b90bca7c05cd1afa85cee63d8eaf1cf50f9cb8d762c88e843d8684347` |
-| 3 | `theorem` | [imo2001_q2](../../../../RealFunctions/Imo2001Q2.lean/declarations/imo2001-q2-source-edition-2.md) | 63 | `result-track:f828c6f6a63a062ebf0c49625a3da4caff6c2d52771f3c5b4d4c9aabfbe01e06` |
+| 1 | `theorem` | [bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo2001Q2.lean/declarations/bound.md) | 35 | `result-track:4843d1656c311feccf8d2719c9dfe7b801037c2f4d70f557274448ea14d89a5c` |
+| 2 | `theorem` | [imo2001_q2'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo2001Q2.lean/declarations/imo2001-q2.md) | 50 | `result-track:4ee6ca9b90bca7c05cd1afa85cee63d8eaf1cf50f9cb8d762c88e843d8684347` |
+| 3 | `theorem` | [imo2001_q2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo2001Q2.lean/declarations/imo2001-q2-source-edition-2.md) | 63 | `result-track:f828c6f6a63a062ebf0c49625a3da4caff6c2d52771f3c5b4d4c9aabfbe01e06` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

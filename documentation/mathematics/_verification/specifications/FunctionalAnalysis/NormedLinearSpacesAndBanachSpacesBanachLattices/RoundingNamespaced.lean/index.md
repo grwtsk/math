@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RoundingNamespaced.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RoundingNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RoundingNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RoundingNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [RoundingSet](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RoundingNamespaced.lean/declarations/roundingset.md) | 35 | `declaration-track:bb9959c7d45c87076dbfb50c85a40b3b6591eb77e2afbbb24d4af9c07b42ac1a` |
-| 2 | `def` | [OnVoronoiWall](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RoundingNamespaced.lean/declarations/onvoronoiwall.md) | 47 | `declaration-track:4aba70bcaa82ed5f16dcfbfa5c27516988c8f4b28bfbdfaba7f3f58d3e767b03` |
-| 3 | `structure` | [RoundingExistenceCertificate](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RoundingNamespaced.lean/declarations/roundingexistencecertificate.md) | 58 | `declaration-track:945d3fe3269f522d2c622af667577182551b28cdbe0d6faf90aa50b0cbbe0ae4` |
-| 4 | `structure` | [FiniteRoundingCertificate](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RoundingNamespaced.lean/declarations/finiteroundingcertificate.md) | 67 | `declaration-track:0994bc85043375fade97cdf02449440a8fefc0dafe4fd551bede41a481547e88` |
-| 5 | `structure` | [RoundedBranch](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RoundingNamespaced.lean/declarations/roundedbranch.md) | 81 | `declaration-track:254a3917e3b06012f766b0e8fa47c5ab1a6912067ee3e40bb430b44cc14934d0` |
-| 6 | `def` | [residue](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RoundingNamespaced.lean/declarations/residue.md) | 100 | `declaration-track:3c6021284454aac571b8ffe60ff94db836d4ac6bd8fca853e84c597e5126a31d` |
-| 7 | `theorem` | [integral_add_residue](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RoundingNamespaced.lean/declarations/integral-add-residue.md) | 104 | `result-track:207c82571a44232fa01f122c096ffd2016ec2f90997b5709b7a407ea1cfb3e93` |
-| 8 | `theorem` | [equal_cost](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RoundingNamespaced.lean/declarations/equal-cost.md) | 109 | `result-track:1ef691ed9c92637e141f5c8ab1268c406ba9a411b6053bfc2eb2a7899426189b` |
+| 1 | `def` | [RoundingSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RoundingNamespaced.lean/declarations/roundingset.md) | 35 | `declaration-track:bb9959c7d45c87076dbfb50c85a40b3b6591eb77e2afbbb24d4af9c07b42ac1a` |
+| 2 | `def` | [OnVoronoiWall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RoundingNamespaced.lean/declarations/onvoronoiwall.md) | 47 | `declaration-track:4aba70bcaa82ed5f16dcfbfa5c27516988c8f4b28bfbdfaba7f3f58d3e767b03` |
+| 3 | `structure` | [RoundingExistenceCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RoundingNamespaced.lean/declarations/roundingexistencecertificate.md) | 58 | `declaration-track:945d3fe3269f522d2c622af667577182551b28cdbe0d6faf90aa50b0cbbe0ae4` |
+| 4 | `structure` | [FiniteRoundingCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RoundingNamespaced.lean/declarations/finiteroundingcertificate.md) | 67 | `declaration-track:0994bc85043375fade97cdf02449440a8fefc0dafe4fd551bede41a481547e88` |
+| 5 | `structure` | [RoundedBranch](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RoundingNamespaced.lean/declarations/roundedbranch.md) | 81 | `declaration-track:254a3917e3b06012f766b0e8fa47c5ab1a6912067ee3e40bb430b44cc14934d0` |
+| 6 | `def` | [residue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RoundingNamespaced.lean/declarations/residue.md) | 100 | `declaration-track:3c6021284454aac571b8ffe60ff94db836d4ac6bd8fca853e84c597e5126a31d` |
+| 7 | `theorem` | [integral_add_residue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RoundingNamespaced.lean/declarations/integral-add-residue.md) | 104 | `result-track:207c82571a44232fa01f122c096ffd2016ec2f90997b5709b7a407ea1cfb3e93` |
+| 8 | `theorem` | [equal_cost](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RoundingNamespaced.lean/declarations/equal-cost.md) | 109 | `result-track:1ef691ed9c92637e141f5c8ab1268c406ba9a411b6053bfc2eb2a7899426189b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

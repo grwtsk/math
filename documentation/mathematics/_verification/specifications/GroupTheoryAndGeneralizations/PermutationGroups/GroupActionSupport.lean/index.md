@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionSupport.lean/index.md) · [Full source](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionSupport.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/GroupActionSupport.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/GroupActionSupport.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Supports](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionSupport.lean/declarations/supports.md) | 32 | `declaration-track:5886973e9a513e1b7d27afcb57b8420129c7b7f48398982541a9160d7432f0d6` |
-| 2 | `theorem` | [supports_of_mem](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionSupport.lean/declarations/supports-of-mem.md) | 38 | `result-track:438f64943955ab3da20825a7ab61b87f8c451863fb0cc40d42db03bb50e8e1e9` |
-| 3 | `theorem` | [Supports.mono](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionSupport.lean/declarations/supports-mono.md) | 43 | `result-track:a814131d452787eaed027161d07c8bd589f4aa7d6feee540d26e79378f4cb9e3` |
-| 4 | `theorem` | [Supports.smul](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionSupport.lean/declarations/supports-smul.md) | 53 | `result-track:302d0e1e6d59e72845c5650d583f5945dcfde678b1ff9328aeb391a1e3df65d6` |
+| 1 | `def` | [Supports](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/GroupActionSupport.lean/declarations/supports.md) | 32 | `declaration-track:5886973e9a513e1b7d27afcb57b8420129c7b7f48398982541a9160d7432f0d6` |
+| 2 | `theorem` | [supports_of_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/GroupActionSupport.lean/declarations/supports-of-mem.md) | 38 | `result-track:438f64943955ab3da20825a7ab61b87f8c451863fb0cc40d42db03bb50e8e1e9` |
+| 3 | `theorem` | [Supports.mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/GroupActionSupport.lean/declarations/supports-mono.md) | 43 | `result-track:a814131d452787eaed027161d07c8bd589f4aa7d6feee540d26e79378f4cb9e3` |
+| 4 | `theorem` | [Supports.smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/GroupActionSupport.lean/declarations/supports-smul.md) | 53 | `result-track:302d0e1e6d59e72845c5650d583f5945dcfde678b1ff9328aeb391a1e3df65d6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

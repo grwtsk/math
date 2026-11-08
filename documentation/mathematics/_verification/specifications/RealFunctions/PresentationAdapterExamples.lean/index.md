@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/PresentationAdapterExamples.lean/index.md) · [Full source](../../../../RealFunctions/PresentationAdapterExamples.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PresentationAdapterExamples.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PresentationAdapterExamples.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [example_rh_spine_through_boundary_calculus](../../../../RealFunctions/PresentationAdapterExamples.lean/declarations/example-rh-spine-through-boundary-calculus.md) | 26 | `result-track:f739223cdb85b398e5e89176559d9da7a757caf878165932ac6f0a45024f05dc` |
-| 2 | `theorem` | [example_trace_formula_spine_through_boundary_calculus](../../../../RealFunctions/PresentationAdapterExamples.lean/declarations/example-trace-formula-spine-through-boundary-calculus.md) | 31 | `result-track:54f9bc858e15295a4b29c4159a3f92db70652d32aaa12d9ac49eb942f5bc79f7` |
-| 3 | `theorem` | [example_langlands_spine_through_boundary_calculus](../../../../RealFunctions/PresentationAdapterExamples.lean/declarations/example-langlands-spine-through-boundary-calculus.md) | 36 | `result-track:ee77983a36e0fbbd22911692fc94b002ebf7908058b15fc55da0a3460a9029e3` |
-| 4 | `theorem` | [example_prismatic_spine_through_boundary_calculus](../../../../RealFunctions/PresentationAdapterExamples.lean/declarations/example-prismatic-spine-through-boundary-calculus.md) | 41 | `result-track:fdf5aaf4c79228dad6d616fc5d34d697a00dee754638d844779ec384e01774e5` |
-| 5 | `theorem` | [example_raw_presentations_still_not_authority](../../../../RealFunctions/PresentationAdapterExamples.lean/declarations/example-raw-presentations-still-not-authority.md) | 48 | `result-track:791e82e6da4519ab520b4f28f179856eed2a7cd3c08a73576643a6ad28d3b1ff` |
+| 1 | `theorem` | [example_rh_spine_through_boundary_calculus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PresentationAdapterExamples.lean/declarations/example-rh-spine-through-boundary-calculus.md) | 26 | `result-track:f739223cdb85b398e5e89176559d9da7a757caf878165932ac6f0a45024f05dc` |
+| 2 | `theorem` | [example_trace_formula_spine_through_boundary_calculus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PresentationAdapterExamples.lean/declarations/example-trace-formula-spine-through-boundary-calculus.md) | 31 | `result-track:54f9bc858e15295a4b29c4159a3f92db70652d32aaa12d9ac49eb942f5bc79f7` |
+| 3 | `theorem` | [example_langlands_spine_through_boundary_calculus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PresentationAdapterExamples.lean/declarations/example-langlands-spine-through-boundary-calculus.md) | 36 | `result-track:ee77983a36e0fbbd22911692fc94b002ebf7908058b15fc55da0a3460a9029e3` |
+| 4 | `theorem` | [example_prismatic_spine_through_boundary_calculus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PresentationAdapterExamples.lean/declarations/example-prismatic-spine-through-boundary-calculus.md) | 41 | `result-track:fdf5aaf4c79228dad6d616fc5d34d697a00dee754638d844779ec384e01774e5` |
+| 5 | `theorem` | [example_raw_presentations_still_not_authority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PresentationAdapterExamples.lean/declarations/example-raw-presentations-still-not-authority.md) | 48 | `result-track:791e82e6da4519ab520b4f28f179856eed2a7cd3c08a73576643a6ad28d3b1ff` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ProvenanceNamespacedSourceObjectAddress.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ProvenanceNamespacedSourceObjectAddress.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProvenanceNamespacedSourceObjectAddress.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProvenanceNamespacedSourceObjectAddress.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SourceObjectAddress](../../../../../ComputerScience/AlgorithmsInComputerScience/ProvenanceNamespacedSourceObjectAddress.lean/declarations/sourceobjectaddress.md) | 16 | `declaration-track:7e36b845ca3d19924a35ec88c263f36fcb42c268ae3d83e6ec987cbc00b26f82` |
-| 2 | `structure` | [RevisionProvenance](../../../../../ComputerScience/AlgorithmsInComputerScience/ProvenanceNamespacedSourceObjectAddress.lean/declarations/revisionprovenance.md) | 24 | `declaration-track:0aaaa58a75e3f2a6f346d2ab9a5b02f0a45a72076fa7c492d732f4ce2d570699` |
-| 3 | `structure` | [ProvenanceEdge](../../../../../ComputerScience/AlgorithmsInComputerScience/ProvenanceNamespacedSourceObjectAddress.lean/declarations/provenanceedge.md) | 32 | `declaration-track:fc356c8926080ad51447ac6370458ffadfd7d05918e9ce35bff451db5b375f7c` |
+| 1 | `structure` | [SourceObjectAddress](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProvenanceNamespacedSourceObjectAddress.lean/declarations/sourceobjectaddress.md) | 16 | `declaration-track:7e36b845ca3d19924a35ec88c263f36fcb42c268ae3d83e6ec987cbc00b26f82` |
+| 2 | `structure` | [RevisionProvenance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProvenanceNamespacedSourceObjectAddress.lean/declarations/revisionprovenance.md) | 24 | `declaration-track:0aaaa58a75e3f2a6f346d2ab9a5b02f0a45a72076fa7c492d732f4ce2d570699` |
+| 3 | `structure` | [ProvenanceEdge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProvenanceNamespacedSourceObjectAddress.lean/declarations/provenanceedge.md) | 32 | `declaration-track:fc356c8926080ad51447ac6370458ffadfd7d05918e9ce35bff451db5b375f7c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

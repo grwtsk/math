@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResultsAlternative8SourceEdition3.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResultsAlternative8SourceEdition3.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResultsAlternative8SourceEdition3.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResultsAlternative8SourceEdition3.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [PrimaryDisposition](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResultsAlternative8SourceEdition3.lean/declarations/primarydisposition.md) | 11 | `declaration-track:843e3103b844c7f801919c762460ffb60d4da431b8a7ab8958c1e431047d40cf` |
-| 2 | `inductive` | [ReferenceRole](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResultsAlternative8SourceEdition3.lean/declarations/referencerole.md) | 19 | `declaration-track:3138b4042f03370b6e8c2116f0783e992f64bfcc2cc5a7f9c75171cb510382c8` |
-| 3 | `structure` | [Reference](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResultsAlternative8SourceEdition3.lean/declarations/reference.md) | 40 | `declaration-track:7b36bfe746fe17fb8a80b476d5c864e79b21c205b1ddf16c7432090ec76c0a6c` |
-| 4 | `structure` | [AssignmentEvidence](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResultsAlternative8SourceEdition3.lean/declarations/assignmentevidence.md) | 46 | `declaration-track:7653ad25ee61d80d38862e6daf5e3a6a59ff7f3204e9ebfbdca43b89999501d8` |
-| 5 | `structure` | [Assignment](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResultsAlternative8SourceEdition3.lean/declarations/assignment.md) | 57 | `declaration-track:8a77e002257d1c9bb7940d9c6ff83e9df9d555c2cc624df238da318b9c97ca09` |
-| 6 | `def` | [conceptId?](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResultsAlternative8SourceEdition3.lean/declarations/conceptid.md) | 70 | `declaration-track:4551cadf7cf8891234c48c90a7981d374727eb03a77fecb2a9bfaec583797899` |
-| 7 | `def` | [parentEntityId?](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResultsAlternative8SourceEdition3.lean/declarations/parententityid.md) | 77 | `declaration-track:b18883205c9473a424180ae01cd7407cc5378eaa452dd708383531d962a8fb3b` |
-| 8 | `inductive` | [Resolution](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResultsAlternative8SourceEdition3.lean/declarations/resolution.md) | 84 | `declaration-track:9d29379d0eefc0aa2c8b71f7e7e5b515b66151b77eb54657e510f8da4c096ca1` |
+| 1 | `inductive` | [PrimaryDisposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResultsAlternative8SourceEdition3.lean/declarations/primarydisposition.md) | 11 | `declaration-track:843e3103b844c7f801919c762460ffb60d4da431b8a7ab8958c1e431047d40cf` |
+| 2 | `inductive` | [ReferenceRole](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResultsAlternative8SourceEdition3.lean/declarations/referencerole.md) | 19 | `declaration-track:3138b4042f03370b6e8c2116f0783e992f64bfcc2cc5a7f9c75171cb510382c8` |
+| 3 | `structure` | [Reference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResultsAlternative8SourceEdition3.lean/declarations/reference.md) | 40 | `declaration-track:7b36bfe746fe17fb8a80b476d5c864e79b21c205b1ddf16c7432090ec76c0a6c` |
+| 4 | `structure` | [AssignmentEvidence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResultsAlternative8SourceEdition3.lean/declarations/assignmentevidence.md) | 46 | `declaration-track:7653ad25ee61d80d38862e6daf5e3a6a59ff7f3204e9ebfbdca43b89999501d8` |
+| 5 | `structure` | [Assignment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResultsAlternative8SourceEdition3.lean/declarations/assignment.md) | 57 | `declaration-track:8a77e002257d1c9bb7940d9c6ff83e9df9d555c2cc624df238da318b9c97ca09` |
+| 6 | `def` | [conceptId?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResultsAlternative8SourceEdition3.lean/declarations/conceptid.md) | 70 | `declaration-track:4551cadf7cf8891234c48c90a7981d374727eb03a77fecb2a9bfaec583797899` |
+| 7 | `def` | [parentEntityId?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResultsAlternative8SourceEdition3.lean/declarations/parententityid.md) | 77 | `declaration-track:b18883205c9473a424180ae01cd7407cc5378eaa452dd708383531d962a8fb3b` |
+| 8 | `inductive` | [Resolution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResultsAlternative8SourceEdition3.lean/declarations/resolution.md) | 84 | `declaration-track:9d29379d0eefc0aa2c8b71f7e7e5b515b66151b77eb54657e510f8da4c096ca1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

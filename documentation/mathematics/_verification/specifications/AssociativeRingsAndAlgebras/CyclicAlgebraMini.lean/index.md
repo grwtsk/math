@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/CyclicAlgebraMini.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/CyclicAlgebraMini.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CyclicAlgebraMini.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CyclicAlgebraMini.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [miniAlgebra](../../../../AssociativeRingsAndAlgebras/CyclicAlgebraMini.lean/declarations/minialgebra.md) | 6 | `declaration-track:330d39f38fa23de49302132a9b62b92979f4a2988835856e1575f0411019d206` |
+| 1 | `def` | [miniAlgebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CyclicAlgebraMini.lean/declarations/minialgebra.md) | 6 | `declaration-track:330d39f38fa23de49302132a9b62b92979f4a2988835856e1575f0411019d206` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

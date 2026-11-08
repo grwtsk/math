@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/HolomorphicAreaMean.lean/index.md) · [Full source](../../../../MeasureAndIntegration/HolomorphicAreaMean.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HolomorphicAreaMean.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HolomorphicAreaMean.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Operator.HolomorphicMultiplierCircle`](../../../../ProbabilityTheoryAndStochasticProcesses/HolomorphicMultiplierCircle.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Analysis.Operator.HolomorphicMultiplierCircle`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/HolomorphicMultiplierCircle.lean/index.md) — import line 1; pinned internal source present.
 - `Mathlib.Analysis.SpecialFunctions.PolarCoord` — import line 2; external provider; requires a separately pinned dependency.
 - `Mathlib.Analysis.SpecialFunctions.Integrals.Basic` — import line 3; external provider; requires a separately pinned dependency.
 - `Mathlib.MeasureTheory.Group.Integral` — import line 4; external provider; requires a separately pinned dependency.
@@ -61,22 +61,22 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [polarPoint_eq_circleMap](../../../../MeasureAndIntegration/HolomorphicAreaMean.lean/declarations/polarpoint-eq-circlemap.md) | 30 | `result-track:20d0d4bc0b6efc2e9110e5673ecb53402564b5fc6acfe667d695012f61c19ff3` |
-| 2 | `theorem` | [integral_closedBall_zero_polar](../../../../MeasureAndIntegration/HolomorphicAreaMean.lean/declarations/integral-closedball-zero-polar.md) | 36 | `result-track:642ed4853e86f9ea2d649278a3212ba4f957880f9083f9f7de8378cf35aa7006` |
-| 3 | `theorem` | [angularIntegral_eq_circleAverage](../../../../MeasureAndIntegration/HolomorphicAreaMean.lean/declarations/angularintegral-eq-circleaverage.md) | 74 | `result-track:4103be73fcebd4b6879121967cc2c6c083ef1223695d89f0569964d8def27583` |
-| 4 | `theorem` | [polarIntegrable](../../../../MeasureAndIntegration/HolomorphicAreaMean.lean/declarations/polarintegrable.md) | 91 | `result-track:4745e7df1f3292b91af76bf89a31245622d7ac30893b7ef0d163c6711f5d3feb` |
-| 5 | `theorem` | [integral_closedBall_zero](../../../../MeasureAndIntegration/HolomorphicAreaMean.lean/declarations/integral-closedball-zero.md) | 110 | `result-track:37ea6f47655c692272e89b85a4693dfa2158fb33df2b6ce370a214287510d999` |
-| 6 | `theorem` | [integral_closedBall_translate](../../../../MeasureAndIntegration/HolomorphicAreaMean.lean/declarations/integral-closedball-translate.md) | 138 | `result-track:b7f5316691aa19a398aee343eb32ee88b0cb93d4eb853b5cd6f62e3759325305` |
-| 7 | `theorem` | [integral_closedBall](../../../../MeasureAndIntegration/HolomorphicAreaMean.lean/declarations/integral-closedball.md) | 152 | `result-track:52d4ac189d8f871f4eef93407e9918c4e5301d2a3ce8b32edfd141ab31e7248b` |
-| 8 | `theorem` | [square_integrable](../../../../MeasureAndIntegration/HolomorphicAreaMean.lean/declarations/square-integrable.md) | 162 | `result-track:a0fb41a9c7592e70e92851ad419e04cf96523fe6015270de5c7700806a765eec` |
-| 9 | `theorem` | [norm_sq_le_areaIntegral](../../../../MeasureAndIntegration/HolomorphicAreaMean.lean/declarations/norm-sq-le-areaintegral.md) | 170 | `result-track:2dbdf2bdef61c0b268c3f321f50465e07e50d20c5aed8b10cc2f5a0c75a6e4ec` |
-| 10 | `theorem` | [norm_sq_le_normalized_areaIntegral](../../../../MeasureAndIntegration/HolomorphicAreaMean.lean/declarations/norm-sq-le-normalized-areaintegral.md) | 183 | `result-track:7b96a8dfc9419eafc4b650e3d8c230c8bdb59f4b9a46d39c4dbc4704f2b434dd` |
-| 11 | `theorem` | [window_section_area_bound](../../../../MeasureAndIntegration/HolomorphicAreaMean.lean/declarations/window-section-area-bound.md) | 191 | `result-track:e6d75165c72a398b7f5694ed450c3c6eb3d8d4ab85619fa6a9b87083a881e95f` |
-| 12 | `theorem` | [window_bundleSection_area_bound](../../../../MeasureAndIntegration/HolomorphicAreaMean.lean/declarations/window-bundlesection-area-bound.md) | 200 | `result-track:9346ded4a41c06a4ad759c1bebd6e3f575cc1afa536dc754f7b91b8d45fd5e04` |
-| 13 | `theorem` | [imaginary_constant_mean](../../../../MeasureAndIntegration/HolomorphicAreaMean.lean/declarations/imaginary-constant-mean.md) | 210 | `result-track:e1f5471bb733ff03d0a363066cbae973961e91847c57d18005cec95ee073cb13` |
-| 14 | `theorem` | [coordinate_square_mean_zero](../../../../MeasureAndIntegration/HolomorphicAreaMean.lean/declarations/coordinate-square-mean-zero.md) | 215 | `result-track:cdd431be558c12a9c488d29ee841f89459a1db07db9301fa13b5e9de8bdea150` |
-| 15 | `theorem` | [complex_square_ne_norm_square](../../../../MeasureAndIntegration/HolomorphicAreaMean.lean/declarations/complex-square-ne-norm-square.md) | 221 | `result-track:9b1834081ac593f259ef2562413861aec1888877dc730689844c1b7e81323232` |
-| 16 | `theorem` | [zero_radius_not_normalized](../../../../MeasureAndIntegration/HolomorphicAreaMean.lean/declarations/zero-radius-not-normalized.md) | 225 | `result-track:13814bb22516bb655b32599d656dd314f3114d7ad20b897c83279134dab593de` |
+| 1 | `theorem` | [polarPoint_eq_circleMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HolomorphicAreaMean.lean/declarations/polarpoint-eq-circlemap.md) | 30 | `result-track:20d0d4bc0b6efc2e9110e5673ecb53402564b5fc6acfe667d695012f61c19ff3` |
+| 2 | `theorem` | [integral_closedBall_zero_polar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HolomorphicAreaMean.lean/declarations/integral-closedball-zero-polar.md) | 36 | `result-track:642ed4853e86f9ea2d649278a3212ba4f957880f9083f9f7de8378cf35aa7006` |
+| 3 | `theorem` | [angularIntegral_eq_circleAverage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HolomorphicAreaMean.lean/declarations/angularintegral-eq-circleaverage.md) | 74 | `result-track:4103be73fcebd4b6879121967cc2c6c083ef1223695d89f0569964d8def27583` |
+| 4 | `theorem` | [polarIntegrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HolomorphicAreaMean.lean/declarations/polarintegrable.md) | 91 | `result-track:4745e7df1f3292b91af76bf89a31245622d7ac30893b7ef0d163c6711f5d3feb` |
+| 5 | `theorem` | [integral_closedBall_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HolomorphicAreaMean.lean/declarations/integral-closedball-zero.md) | 110 | `result-track:37ea6f47655c692272e89b85a4693dfa2158fb33df2b6ce370a214287510d999` |
+| 6 | `theorem` | [integral_closedBall_translate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HolomorphicAreaMean.lean/declarations/integral-closedball-translate.md) | 138 | `result-track:b7f5316691aa19a398aee343eb32ee88b0cb93d4eb853b5cd6f62e3759325305` |
+| 7 | `theorem` | [integral_closedBall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HolomorphicAreaMean.lean/declarations/integral-closedball.md) | 152 | `result-track:52d4ac189d8f871f4eef93407e9918c4e5301d2a3ce8b32edfd141ab31e7248b` |
+| 8 | `theorem` | [square_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HolomorphicAreaMean.lean/declarations/square-integrable.md) | 162 | `result-track:a0fb41a9c7592e70e92851ad419e04cf96523fe6015270de5c7700806a765eec` |
+| 9 | `theorem` | [norm_sq_le_areaIntegral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HolomorphicAreaMean.lean/declarations/norm-sq-le-areaintegral.md) | 170 | `result-track:2dbdf2bdef61c0b268c3f321f50465e07e50d20c5aed8b10cc2f5a0c75a6e4ec` |
+| 10 | `theorem` | [norm_sq_le_normalized_areaIntegral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HolomorphicAreaMean.lean/declarations/norm-sq-le-normalized-areaintegral.md) | 183 | `result-track:7b96a8dfc9419eafc4b650e3d8c230c8bdb59f4b9a46d39c4dbc4704f2b434dd` |
+| 11 | `theorem` | [window_section_area_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HolomorphicAreaMean.lean/declarations/window-section-area-bound.md) | 191 | `result-track:e6d75165c72a398b7f5694ed450c3c6eb3d8d4ab85619fa6a9b87083a881e95f` |
+| 12 | `theorem` | [window_bundleSection_area_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HolomorphicAreaMean.lean/declarations/window-bundlesection-area-bound.md) | 200 | `result-track:9346ded4a41c06a4ad759c1bebd6e3f575cc1afa536dc754f7b91b8d45fd5e04` |
+| 13 | `theorem` | [imaginary_constant_mean](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HolomorphicAreaMean.lean/declarations/imaginary-constant-mean.md) | 210 | `result-track:e1f5471bb733ff03d0a363066cbae973961e91847c57d18005cec95ee073cb13` |
+| 14 | `theorem` | [coordinate_square_mean_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HolomorphicAreaMean.lean/declarations/coordinate-square-mean-zero.md) | 215 | `result-track:cdd431be558c12a9c488d29ee841f89459a1db07db9301fa13b5e9de8bdea150` |
+| 15 | `theorem` | [complex_square_ne_norm_square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HolomorphicAreaMean.lean/declarations/complex-square-ne-norm-square.md) | 221 | `result-track:9b1834081ac593f259ef2562413861aec1888877dc730689844c1b7e81323232` |
+| 16 | `theorem` | [zero_radius_not_normalized](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HolomorphicAreaMean.lean/declarations/zero-radius-not-normalized.md) | 225 | `result-track:13814bb22516bb655b32599d656dd314f3114d7ad20b897c83279134dab593de` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/BinaryTreeMirrorAndInvolution.lean/index.md) · [Full source](../../../../Combinatorics/BinaryTreeMirrorAndInvolution.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryTreeMirrorAndInvolution.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryTreeMirrorAndInvolution.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `Folder.Basic` — import line 21; external provider; requires a separately pinned dependency.
-- [Binary Tree And Size Statistics](../../../../Combinatorics/BinaryTreeAndSizeStatistics.lean/index.md) — import line 22; pinned internal source present.
+- [Binary Tree And Size Statistics](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryTreeAndSizeStatistics.lean/index.md) — import line 22; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mirror](../../../../Combinatorics/BinaryTreeMirrorAndInvolution.lean/declarations/mirror.md) | 42 | `declaration-track:1b991f1f6c5d200115cc054a73ae63a700ec4571f4756129d35d241bbe14de3c` |
-| 2 | `theorem` | [mirror_mirror](../../../../Combinatorics/BinaryTreeMirrorAndInvolution.lean/declarations/mirror-mirror.md) | 47 | `result-track:d021dc08b9f9529e2743ae3905f5291d967f8e8f1fcc5f26ddbb60abdf1c30d9` |
-| 3 | `theorem` | [internal_mirror](../../../../Combinatorics/BinaryTreeMirrorAndInvolution.lean/declarations/internal-mirror.md) | 56 | `result-track:c665c1aa63ce80bed71279bb34e87b1ed6cd26e443a3dbf124142ac10bebc305` |
-| 4 | `theorem` | [leaves_mirror](../../../../Combinatorics/BinaryTreeMirrorAndInvolution.lean/declarations/leaves-mirror.md) | 66 | `result-track:b5b7814d61365c1f5070da5b353d6035837667f4ca8d04eb6a95c05d049adb4e` |
+| 1 | `def` | [mirror](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryTreeMirrorAndInvolution.lean/declarations/mirror.md) | 42 | `declaration-track:1b991f1f6c5d200115cc054a73ae63a700ec4571f4756129d35d241bbe14de3c` |
+| 2 | `theorem` | [mirror_mirror](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryTreeMirrorAndInvolution.lean/declarations/mirror-mirror.md) | 47 | `result-track:d021dc08b9f9529e2743ae3905f5291d967f8e8f1fcc5f26ddbb60abdf1c30d9` |
+| 3 | `theorem` | [internal_mirror](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryTreeMirrorAndInvolution.lean/declarations/internal-mirror.md) | 56 | `result-track:c665c1aa63ce80bed71279bb34e87b1ed6cd26e443a3dbf124142ac10bebc305` |
+| 4 | `theorem` | [leaves_mirror](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryTreeMirrorAndInvolution.lean/declarations/leaves-mirror.md) | 66 | `result-track:b5b7814d61365c1f5070da5b353d6035837667f4ca8d04eb6a95c05d049adb4e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/IterateAct.lean/index.md) · [Full source](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/IterateAct.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/IterateAct.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/IterateAct.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [IterateAddAct](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/IterateAct.lean/declarations/iterateaddact.md) | 20 | `declaration-track:8b46d5e2c6d7f6a2a9c73ff33ae1e014c7a2d064d65c530147f6e6b8fae8b02c` |
-| 2 | `structure` | [IterateMulAct](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/IterateAct.lean/declarations/iteratemulact.md) | 26 | `declaration-track:d164df401245dfca6a2b54858122de9a5d4e9d57a17dd2a18b90e624c1365856` |
-| 3 | `instance` | [instCountable](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/IterateAct.lean/declarations/instcountable.md) | 35 | `declaration-track:95fa2e23068e44a5aa45e05d4a6b79f3b999ca039419320cf349069c841ac0f3` |
-| 4 | `instance` | [instCommMonoid](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/IterateAct.lean/declarations/instcommmonoid.md) | 39 | `declaration-track:e86460314c040e3b776d0d2c1a19375162c5a7022f84e4aa6b3e8a7c2af02c2e` |
-| 5 | `instance` | [instMulAction](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/IterateAct.lean/declarations/instmulaction.md) | 51 | `declaration-track:24be5f3b14648d364bbfe01775c5823100559907c21e3c98e1a9ef233ea0ddfa` |
-| 6 | `theorem` | [mk_smul](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/IterateAct.lean/declarations/mk-smul.md) | 57 | `result-track:24f32b94049873f9c0a503014296be3933499dd3ddd897deed54d3c6214095df` |
+| 1 | `structure` | [IterateAddAct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/IterateAct.lean/declarations/iterateaddact.md) | 20 | `declaration-track:8b46d5e2c6d7f6a2a9c73ff33ae1e014c7a2d064d65c530147f6e6b8fae8b02c` |
+| 2 | `structure` | [IterateMulAct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/IterateAct.lean/declarations/iteratemulact.md) | 26 | `declaration-track:d164df401245dfca6a2b54858122de9a5d4e9d57a17dd2a18b90e624c1365856` |
+| 3 | `instance` | [instCountable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/IterateAct.lean/declarations/instcountable.md) | 35 | `declaration-track:95fa2e23068e44a5aa45e05d4a6b79f3b999ca039419320cf349069c841ac0f3` |
+| 4 | `instance` | [instCommMonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/IterateAct.lean/declarations/instcommmonoid.md) | 39 | `declaration-track:e86460314c040e3b776d0d2c1a19375162c5a7022f84e4aa6b3e8a7c2af02c2e` |
+| 5 | `instance` | [instMulAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/IterateAct.lean/declarations/instmulaction.md) | 51 | `declaration-track:24be5f3b14648d364bbfe01775c5823100559907c21e3c98e1a9ef233ea0ddfa` |
+| 6 | `theorem` | [mk_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/IterateAct.lean/declarations/mk-smul.md) | 57 | `result-track:24f32b94049873f9c0a503014296be3933499dd3ddd897deed54d3c6214095df` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

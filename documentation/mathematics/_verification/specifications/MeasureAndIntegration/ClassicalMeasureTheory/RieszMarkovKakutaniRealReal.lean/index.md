@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/RieszMarkovKakutaniRealReal.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/RieszMarkovKakutaniRealReal.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/RieszMarkovKakutaniRealReal.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/RieszMarkovKakutaniRealReal.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [rieszMeasure](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/RieszMarkovKakutaniRealReal.lean/declarations/rieszmeasure.md) | 53 | `declaration-track:fb25334af78e72ca67a47fb3b29b795a3210d531f3b613d3bf6f06c72ab75d04` |
-| 2 | `lemma` | [le_rieszMeasure_tsupport_subset](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/RieszMarkovKakutaniRealReal.lean/declarations/le-rieszmeasure-tsupport-subset.md) | 57 | `result-track:fe8b621ef1a0d08b3f4901b2745dfe3955bc7383894ea104f51c8fbb5b8ca365` |
-| 3 | `lemma` | [rieszMeasure_le_of_eq_one](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/RieszMarkovKakutaniRealReal.lean/declarations/rieszmeasure-le-of-eq-one.md) | 76 | `result-track:6ec508894d17220c50d4ac11d2090e676ee965d171a7a5be0bbad08cc3e7e9ec` |
-| 4 | `lemma` | [range_cut_partition](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/RieszMarkovKakutaniRealReal.lean/declarations/range-cut-partition.md) | 94 | `result-track:7cc052f1b0d6c032e5fa1187378fe7f76ceeb9f604fdb04c214f1e3cb7be7ace` |
-| 5 | `lemma` | [exists_open_approx](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/RieszMarkovKakutaniRealReal.lean/declarations/exists-open-approx.md) | 143 | `result-track:c3ec7bc6196e6c93515121497409f4847970aed8d4513bda40e8e81bb7d0edae` |
-| 6 | `lemma` | [exists_nat_large](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/RieszMarkovKakutaniRealReal.lean/declarations/exists-nat-large.md) | 161 | `result-track:4b8941217869bbd3f74b415f3356f17a56a2ee186d3bde4912feb63dfc7c4da8` |
-| 7 | `lemma` | [integral_riesz_aux](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/RieszMarkovKakutaniRealReal.lean/declarations/integral-riesz-aux.md) | 174 | `result-track:2516c131a07f5ab051adc89ad7ed0ceacd62f99b1f381006edc2c436aac983d6` |
-| 8 | `theorem` | [integral_rieszMeasure](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/RieszMarkovKakutaniRealReal.lean/declarations/integral-rieszmeasure.md) | 328 | `result-track:db77760fe0c2fd466223637a8e3af19ab3cd5d8190f961e6008dae02b610b87a` |
+| 1 | `def` | [rieszMeasure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/RieszMarkovKakutaniRealReal.lean/declarations/rieszmeasure.md) | 53 | `declaration-track:fb25334af78e72ca67a47fb3b29b795a3210d531f3b613d3bf6f06c72ab75d04` |
+| 2 | `lemma` | [le_rieszMeasure_tsupport_subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/RieszMarkovKakutaniRealReal.lean/declarations/le-rieszmeasure-tsupport-subset.md) | 57 | `result-track:fe8b621ef1a0d08b3f4901b2745dfe3955bc7383894ea104f51c8fbb5b8ca365` |
+| 3 | `lemma` | [rieszMeasure_le_of_eq_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/RieszMarkovKakutaniRealReal.lean/declarations/rieszmeasure-le-of-eq-one.md) | 76 | `result-track:6ec508894d17220c50d4ac11d2090e676ee965d171a7a5be0bbad08cc3e7e9ec` |
+| 4 | `lemma` | [range_cut_partition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/RieszMarkovKakutaniRealReal.lean/declarations/range-cut-partition.md) | 94 | `result-track:7cc052f1b0d6c032e5fa1187378fe7f76ceeb9f604fdb04c214f1e3cb7be7ace` |
+| 5 | `lemma` | [exists_open_approx](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/RieszMarkovKakutaniRealReal.lean/declarations/exists-open-approx.md) | 143 | `result-track:c3ec7bc6196e6c93515121497409f4847970aed8d4513bda40e8e81bb7d0edae` |
+| 6 | `lemma` | [exists_nat_large](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/RieszMarkovKakutaniRealReal.lean/declarations/exists-nat-large.md) | 161 | `result-track:4b8941217869bbd3f74b415f3356f17a56a2ee186d3bde4912feb63dfc7c4da8` |
+| 7 | `lemma` | [integral_riesz_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/RieszMarkovKakutaniRealReal.lean/declarations/integral-riesz-aux.md) | 174 | `result-track:2516c131a07f5ab051adc89ad7ed0ceacd62f99b1f381006edc2c436aac983d6` |
+| 8 | `theorem` | [integral_rieszMeasure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/RieszMarkovKakutaniRealReal.lean/declarations/integral-rieszmeasure.md) | 328 | `result-track:db77760fe0c2fd466223637a8e3af19ab3cd5d8190f961e6008dae02b610b87a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

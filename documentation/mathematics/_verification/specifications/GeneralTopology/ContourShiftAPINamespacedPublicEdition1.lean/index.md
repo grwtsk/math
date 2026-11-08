@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ContourShiftAPINamespacedPublicEdition1.lean/index.md) · [Full source](../../../../GeneralTopology/ContourShiftAPINamespacedPublicEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContourShiftAPINamespacedPublicEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContourShiftAPINamespacedPublicEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [poleFree_rectangleBoundaryIntegral_eq_zero](../../../../GeneralTopology/ContourShiftAPINamespacedPublicEdition1.lean/declarations/polefree-rectangleboundaryintegral-eq-zero.md) | 43 | `result-track:4c8093456c568ea073f2d01fae2e6d4c091a8c614f6c9593407c7f1a406f5d47` |
-| 2 | `theorem` | [poleFree_rectangleBoundaryIntegral_eq_zero_of_continuousOn](../../../../GeneralTopology/ContourShiftAPINamespacedPublicEdition1.lean/declarations/polefree-rectangleboundaryintegral-eq-zero-of-continuouson.md) | 52 | `result-track:f255df62e1d4a0a0817e792139eb6986ff2b0665cc49874c4e6c6db4f65d04f8` |
-| 3 | `theorem` | [poleFree_verticalShift_eq_horizontalDifference](../../../../GeneralTopology/ContourShiftAPINamespacedPublicEdition1.lean/declarations/polefree-verticalshift-eq-horizontaldifference.md) | 64 | `result-track:8672b95bf43353bb04f1dfba56de3259fc1b15bb6f7e1101a371ee7e378d1c57` |
-| 4 | `theorem` | [finite_rectangleDivisorSupport](../../../../GeneralTopology/ContourShiftAPINamespacedPublicEdition1.lean/declarations/finite-rectangledivisorsupport.md) | 75 | `result-track:68c7ee22fd3ff8e89aaf9b20f1b13d175f5f99f339229b726e315c8163a1184c` |
-| 5 | `theorem` | [exists_horizontalContour_avoiding_rectangleDivisor](../../../../GeneralTopology/ContourShiftAPINamespacedPublicEdition1.lean/declarations/exists-horizontalcontour-avoiding-rectangledivisor.md) | 83 | `result-track:92a65c4c4d729ba6f685bbe6ffe16b817eca70a53b24b925132083bdc003dcae` |
-| 6 | `theorem` | [exists_verticalContour_avoiding_rectangleDivisor](../../../../GeneralTopology/ContourShiftAPINamespacedPublicEdition1.lean/declarations/exists-verticalcontour-avoiding-rectangledivisor.md) | 93 | `result-track:a65d5a4a4b3630c536122da3c9d5c8ee46396ebc4666bc2c15fe30e029427628` |
+| 1 | `theorem` | [poleFree_rectangleBoundaryIntegral_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContourShiftAPINamespacedPublicEdition1.lean/declarations/polefree-rectangleboundaryintegral-eq-zero.md) | 43 | `result-track:4c8093456c568ea073f2d01fae2e6d4c091a8c614f6c9593407c7f1a406f5d47` |
+| 2 | `theorem` | [poleFree_rectangleBoundaryIntegral_eq_zero_of_continuousOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContourShiftAPINamespacedPublicEdition1.lean/declarations/polefree-rectangleboundaryintegral-eq-zero-of-continuouson.md) | 52 | `result-track:f255df62e1d4a0a0817e792139eb6986ff2b0665cc49874c4e6c6db4f65d04f8` |
+| 3 | `theorem` | [poleFree_verticalShift_eq_horizontalDifference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContourShiftAPINamespacedPublicEdition1.lean/declarations/polefree-verticalshift-eq-horizontaldifference.md) | 64 | `result-track:8672b95bf43353bb04f1dfba56de3259fc1b15bb6f7e1101a371ee7e378d1c57` |
+| 4 | `theorem` | [finite_rectangleDivisorSupport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContourShiftAPINamespacedPublicEdition1.lean/declarations/finite-rectangledivisorsupport.md) | 75 | `result-track:68c7ee22fd3ff8e89aaf9b20f1b13d175f5f99f339229b726e315c8163a1184c` |
+| 5 | `theorem` | [exists_horizontalContour_avoiding_rectangleDivisor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContourShiftAPINamespacedPublicEdition1.lean/declarations/exists-horizontalcontour-avoiding-rectangledivisor.md) | 83 | `result-track:92a65c4c4d729ba6f685bbe6ffe16b817eca70a53b24b925132083bdc003dcae` |
+| 6 | `theorem` | [exists_verticalContour_avoiding_rectangleDivisor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContourShiftAPINamespacedPublicEdition1.lean/declarations/exists-verticalcontour-avoiding-rectangledivisor.md) | 93 | `result-track:a65d5a4a4b3630c536122da3c9d5c8ee46396ebc4666bc2c15fe30e029427628` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

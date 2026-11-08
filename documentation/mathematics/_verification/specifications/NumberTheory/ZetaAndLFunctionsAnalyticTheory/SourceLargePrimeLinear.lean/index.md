@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceLargePrimeLinear.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceLargePrimeLinear.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceLargePrimeLinear.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceLargePrimeLinear.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [betaRow_union_large_primes](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceLargePrimeLinear.lean/declarations/betarow-union-large-primes.md) | 23 | `result-track:23a13dc9bf05687a4bb3b02752a18ac87f5b0f44013cb2d9633079c2da134aab` |
-| 2 | `theorem` | [readout_union_large_primes](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceLargePrimeLinear.lean/declarations/readout-union-large-primes.md) | 50 | `result-track:8bf2ff6786caf526abeaee205ceef6ae3605be003bfc03499272445395555f7f` |
-| 3 | `theorem` | [actual_readout_large_prime_sum](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceLargePrimeLinear.lean/declarations/actual-readout-large-prime-sum.md) | 82 | `result-track:299850764fc339d584f3c28cf38f22e021f6cee4de96487c0dcf6d4cdafffb5e` |
-| 4 | `theorem` | [betaRow_eq_actual_on_long_under_large_coverage](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceLargePrimeLinear.lean/declarations/betarow-eq-actual-on-long-under-large-coverage.md) | 98 | `result-track:7ff59e219d3110dc00761970e49e185e26b8e34e68fddf4051b4417d55c398c7` |
-| 5 | `theorem` | [actual_readout_large_prime_sum_actual_beta](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceLargePrimeLinear.lean/declarations/actual-readout-large-prime-sum-actual-beta.md) | 114 | `result-track:fbe902285115e80e70f9639255add8b043c3e2403b3a28cae7554bae0dcab991` |
-| 6 | `theorem` | [actual_readout_eq_small_base_add_large_prime_blocks](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceLargePrimeLinear.lean/declarations/actual-readout-eq-small-base-add-large-prime-blocks.md) | 143 | `result-track:fef0087be35ae6946c9aa26bf4a0497f98068bcc0ed82469c62eb5b840e23b5f` |
+| 1 | `theorem` | [betaRow_union_large_primes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceLargePrimeLinear.lean/declarations/betarow-union-large-primes.md) | 23 | `result-track:23a13dc9bf05687a4bb3b02752a18ac87f5b0f44013cb2d9633079c2da134aab` |
+| 2 | `theorem` | [readout_union_large_primes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceLargePrimeLinear.lean/declarations/readout-union-large-primes.md) | 50 | `result-track:8bf2ff6786caf526abeaee205ceef6ae3605be003bfc03499272445395555f7f` |
+| 3 | `theorem` | [actual_readout_large_prime_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceLargePrimeLinear.lean/declarations/actual-readout-large-prime-sum.md) | 82 | `result-track:299850764fc339d584f3c28cf38f22e021f6cee4de96487c0dcf6d4cdafffb5e` |
+| 4 | `theorem` | [betaRow_eq_actual_on_long_under_large_coverage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceLargePrimeLinear.lean/declarations/betarow-eq-actual-on-long-under-large-coverage.md) | 98 | `result-track:7ff59e219d3110dc00761970e49e185e26b8e34e68fddf4051b4417d55c398c7` |
+| 5 | `theorem` | [actual_readout_large_prime_sum_actual_beta](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceLargePrimeLinear.lean/declarations/actual-readout-large-prime-sum-actual-beta.md) | 114 | `result-track:fbe902285115e80e70f9639255add8b043c3e2403b3a28cae7554bae0dcab991` |
+| 6 | `theorem` | [actual_readout_eq_small_base_add_large_prime_blocks](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceLargePrimeLinear.lean/declarations/actual-readout-eq-small-base-add-large-prime-blocks.md) | 143 | `result-track:fef0087be35ae6946c9aa26bf4a0497f98068bcc0ed82469c62eb5b840e23b5f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

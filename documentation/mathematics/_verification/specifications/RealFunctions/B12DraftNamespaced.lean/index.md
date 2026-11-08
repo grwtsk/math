@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/B12DraftNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/B12DraftNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/B12DraftNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/B12DraftNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [deriv_thetaPhi_poly_integrableOn](../../../../RealFunctions/B12DraftNamespaced.lean/declarations/deriv-thetaphi-poly-integrableon.md) | 10 | `result-track:ae544923ec7d50ecc1c0eb81db2e5934d27b7e19d3d4b74480bc641c881d8558` |
-| 2 | `theorem` | [thetaPhi_deriv_mul_sub_integrableOn](../../../../RealFunctions/B12DraftNamespaced.lean/declarations/thetaphi-deriv-mul-sub-integrableon.md) | 21 | `result-track:5354857a7f0172c255edd5c7fb62204ca541eed6c23b83d226c1bf516ee574c5` |
+| 1 | `theorem` | [deriv_thetaPhi_poly_integrableOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/B12DraftNamespaced.lean/declarations/deriv-thetaphi-poly-integrableon.md) | 10 | `result-track:ae544923ec7d50ecc1c0eb81db2e5934d27b7e19d3d4b74480bc641c881d8558` |
+| 2 | `theorem` | [thetaPhi_deriv_mul_sub_integrableOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/B12DraftNamespaced.lean/declarations/thetaphi-deriv-mul-sub-integrableon.md) | 21 | `result-track:5354857a7f0172c255edd5c7fb62204ca541eed6c23b83d226c1bf516ee574c5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/NormedSpaceRCLikeRCLikeNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/NormedSpaceRCLikeRCLikeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceRCLikeRCLikeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceRCLikeRCLikeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [RCLike.norm_coe_norm](../../../../FunctionalAnalysis/NormedSpaceRCLikeRCLikeNamespaced.lean/declarations/rclike-norm-coe-norm.md) | 42 | `result-track:d34faffa27ab9a66d03d928f26c7e552ed41cc73bf4a3214e0f696d64e790be5` |
-| 2 | `theorem` | [norm_smul_inv_norm](../../../../FunctionalAnalysis/NormedSpaceRCLikeRCLikeNamespaced.lean/declarations/norm-smul-inv-norm-source-edition-2.md) | 48 | `result-track:f3510976461c0a05125344f74f6fec05a50fa51ae1b42c4b3560953adb612dcb` |
-| 3 | `theorem` | [norm_smul_inv_norm'](../../../../FunctionalAnalysis/NormedSpaceRCLikeRCLikeNamespaced.lean/declarations/norm-smul-inv-norm.md) | 53 | `result-track:615edf853bd1a9553bab38c5d1b5f59e197fed93a4a52876d27d338ff6c6ecf1` |
-| 4 | `theorem` | [LinearMap.bound_of_sphere_bound](../../../../FunctionalAnalysis/NormedSpaceRCLikeRCLikeNamespaced.lean/declarations/linearmap-bound-of-sphere-bound.md) | 58 | `result-track:b07b0b2e43f0ad771ce279290361292a477f218874fc01ac8a469c2f068b06a6` |
-| 5 | `theorem` | [LinearMap.bound_of_ball_bound'](../../../../FunctionalAnalysis/NormedSpaceRCLikeRCLikeNamespaced.lean/declarations/linearmap-bound-of-ball-bound.md) | 82 | `result-track:9a48b130effd273d130faa1994ba79c2e44d83b2deaf6ec6319882158daa727f` |
-| 6 | `theorem` | [ContinuousLinearMap.opNorm_bound_of_ball_bound](../../../../FunctionalAnalysis/NormedSpaceRCLikeRCLikeNamespaced.lean/declarations/continuouslinearmap-opnorm-bound-of-ball-bound.md) | 86 | `result-track:ee997b108907d3043b4d5c1776ab145d943d0fe66fe64af05ec11fb86a40d9f2` |
-| 7 | `theorem` | [NormedSpace.sphere_nonempty_rclike](../../../../FunctionalAnalysis/NormedSpaceRCLikeRCLikeNamespaced.lean/declarations/normedspace-sphere-nonempty-rclike.md) | 98 | `result-track:29434266277224f07268fb732e2b11056e028940e2136fe2fa45bf627df91046` |
+| 1 | `theorem` | [RCLike.norm_coe_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceRCLikeRCLikeNamespaced.lean/declarations/rclike-norm-coe-norm.md) | 42 | `result-track:d34faffa27ab9a66d03d928f26c7e552ed41cc73bf4a3214e0f696d64e790be5` |
+| 2 | `theorem` | [norm_smul_inv_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceRCLikeRCLikeNamespaced.lean/declarations/norm-smul-inv-norm-source-edition-2.md) | 48 | `result-track:f3510976461c0a05125344f74f6fec05a50fa51ae1b42c4b3560953adb612dcb` |
+| 3 | `theorem` | [norm_smul_inv_norm'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceRCLikeRCLikeNamespaced.lean/declarations/norm-smul-inv-norm.md) | 53 | `result-track:615edf853bd1a9553bab38c5d1b5f59e197fed93a4a52876d27d338ff6c6ecf1` |
+| 4 | `theorem` | [LinearMap.bound_of_sphere_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceRCLikeRCLikeNamespaced.lean/declarations/linearmap-bound-of-sphere-bound.md) | 58 | `result-track:b07b0b2e43f0ad771ce279290361292a477f218874fc01ac8a469c2f068b06a6` |
+| 5 | `theorem` | [LinearMap.bound_of_ball_bound'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceRCLikeRCLikeNamespaced.lean/declarations/linearmap-bound-of-ball-bound.md) | 82 | `result-track:9a48b130effd273d130faa1994ba79c2e44d83b2deaf6ec6319882158daa727f` |
+| 6 | `theorem` | [ContinuousLinearMap.opNorm_bound_of_ball_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceRCLikeRCLikeNamespaced.lean/declarations/continuouslinearmap-opnorm-bound-of-ball-bound.md) | 86 | `result-track:ee997b108907d3043b4d5c1776ab145d943d0fe66fe64af05ec11fb86a40d9f2` |
+| 7 | `theorem` | [NormedSpace.sphere_nonempty_rclike](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceRCLikeRCLikeNamespaced.lean/declarations/normedspace-sphere-nonempty-rclike.md) | 98 | `result-track:29434266277224f07268fb732e2b11056e028940e2136fe2fa45bf627df91046` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

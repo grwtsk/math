@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SheafOfSpectraPresheafOfSpectra.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SheafOfSpectraPresheafOfSpectra.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SheafOfSpectraPresheafOfSpectra.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SheafOfSpectraPresheafOfSpectra.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PresheafOfSpectra](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SheafOfSpectraPresheafOfSpectra.lean/declarations/presheafofspectra.md) | 21 | `declaration-track:38f14b8761d0cb25ff9915242b585f3aa835f1da974c09b358a8dbe767501d4f` |
-| 2 | `structure` | [SheafOfSpectra](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SheafOfSpectraPresheafOfSpectra.lean/declarations/sheafofspectra.md) | 28 | `declaration-track:888a1d3f68bf3cd64faf741e6c10fb3da00bc8c19b0a63cac4197151a75a68e9` |
-| 3 | `theorem` | [sheaf_of_spectra_has_descent](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SheafOfSpectraPresheafOfSpectra.lean/declarations/sheaf-of-spectra-has-descent.md) | 38 | `result-track:b9685633d232d19c0156e91d4e83f60906838a442278caa6ff1f52c727f6c1ca` |
-| 4 | `theorem` | [sheaf_of_spectra_has_hyperdescent](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SheafOfSpectraPresheafOfSpectra.lean/declarations/sheaf-of-spectra-has-hyperdescent.md) | 45 | `result-track:adcd72589e1ba7f803976f9f7ffd9c0f2533b5e386cc85ccd367ae06258ca7e9` |
+| 1 | `structure` | [PresheafOfSpectra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SheafOfSpectraPresheafOfSpectra.lean/declarations/presheafofspectra.md) | 21 | `declaration-track:38f14b8761d0cb25ff9915242b585f3aa835f1da974c09b358a8dbe767501d4f` |
+| 2 | `structure` | [SheafOfSpectra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SheafOfSpectraPresheafOfSpectra.lean/declarations/sheafofspectra.md) | 28 | `declaration-track:888a1d3f68bf3cd64faf741e6c10fb3da00bc8c19b0a63cac4197151a75a68e9` |
+| 3 | `theorem` | [sheaf_of_spectra_has_descent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SheafOfSpectraPresheafOfSpectra.lean/declarations/sheaf-of-spectra-has-descent.md) | 38 | `result-track:b9685633d232d19c0156e91d4e83f60906838a442278caa6ff1f52c727f6c1ca` |
+| 4 | `theorem` | [sheaf_of_spectra_has_hyperdescent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SheafOfSpectraPresheafOfSpectra.lean/declarations/sheaf-of-spectra-has-hyperdescent.md) | 45 | `result-track:adcd72589e1ba7f803976f9f7ffd9c0f2533b5e386cc85ccd367ae06258ca7e9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

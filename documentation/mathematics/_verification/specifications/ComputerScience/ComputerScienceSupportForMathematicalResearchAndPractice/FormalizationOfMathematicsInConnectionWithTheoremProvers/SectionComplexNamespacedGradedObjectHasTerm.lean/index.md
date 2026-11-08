@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SectionComplexNamespacedGradedObjectHasTerm.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SectionComplexNamespacedGradedObjectHasTerm.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SectionComplexNamespacedGradedObjectHasTerm.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SectionComplexNamespacedGradedObjectHasTerm.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [graded_object_has_term](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SectionComplexNamespacedGradedObjectHasTerm.lean/declarations/graded-object-has-term.md) | 27 | `result-track:597216db9f5f7de0abc7ebbe8df9fa5063159fc95464fc92f54902bf1252bcbf` |
-| 2 | `theorem` | [section_complex_d_squared_zero](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SectionComplexNamespacedGradedObjectHasTerm.lean/declarations/section-complex-d-squared-zero.md) | 33 | `result-track:f8c562546746862f4b59f122a5af3505e680092e437ea10b0fff6351a6aa998b` |
-| 3 | `theorem` | [section_complex_bounded](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SectionComplexNamespacedGradedObjectHasTerm.lean/declarations/section-complex-bounded.md) | 38 | `result-track:0acc6183cfe970009aaf17115437307c350cc92820c68105628b186970565982` |
+| 1 | `theorem` | [graded_object_has_term](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SectionComplexNamespacedGradedObjectHasTerm.lean/declarations/graded-object-has-term.md) | 27 | `result-track:597216db9f5f7de0abc7ebbe8df9fa5063159fc95464fc92f54902bf1252bcbf` |
+| 2 | `theorem` | [section_complex_d_squared_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SectionComplexNamespacedGradedObjectHasTerm.lean/declarations/section-complex-d-squared-zero.md) | 33 | `result-track:f8c562546746862f4b59f122a5af3505e680092e437ea10b0fff6351a6aa998b` |
+| 3 | `theorem` | [section_complex_bounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SectionComplexNamespacedGradedObjectHasTerm.lean/declarations/section-complex-bounded.md) | 38 | `result-track:0acc6183cfe970009aaf17115437307c350cc92820c68105628b186970565982` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

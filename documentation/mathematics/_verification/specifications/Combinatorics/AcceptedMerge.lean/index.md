@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/AcceptedMerge.lean/index.md) · [Full source](../../../../Combinatorics/AcceptedMerge.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AcceptedMerge.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AcceptedMerge.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [AcceptedArtifact](../../../../Combinatorics/AcceptedMerge.lean/declarations/acceptedartifact.md) | 14 | `declaration-track:3522cbe972584061214fb1ab4733cf43757afd5e1ab548c4d8847e750582834d` |
-| 2 | `def` | [familyFacts](../../../../Combinatorics/AcceptedMerge.lean/declarations/familyfacts.md) | 21 | `declaration-track:2bf9da5ce73a44c521062df813c6e7885535646838ce52397bd478d4625e32ef` |
-| 3 | `structure` | [FamilyCompatibilityCertificate](../../../../Combinatorics/AcceptedMerge.lean/declarations/familycompatibilitycertificate.md) | 29 | `declaration-track:8f48fc02e01b59e24c070a811811387107adf45bcec8b1106075e40a2f4da95a` |
-| 4 | `def` | [canonicalAcceptedMerge](../../../../Combinatorics/AcceptedMerge.lean/declarations/canonicalacceptedmerge.md) | 37 | `declaration-track:6a66759d89954fed7b56cdd1f5fe6af9a2137b47e1be97ebf9963f75deeb393f` |
+| 1 | `structure` | [AcceptedArtifact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AcceptedMerge.lean/declarations/acceptedartifact.md) | 14 | `declaration-track:3522cbe972584061214fb1ab4733cf43757afd5e1ab548c4d8847e750582834d` |
+| 2 | `def` | [familyFacts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AcceptedMerge.lean/declarations/familyfacts.md) | 21 | `declaration-track:2bf9da5ce73a44c521062df813c6e7885535646838ce52397bd478d4625e32ef` |
+| 3 | `structure` | [FamilyCompatibilityCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AcceptedMerge.lean/declarations/familycompatibilitycertificate.md) | 29 | `declaration-track:8f48fc02e01b59e24c070a811811387107adf45bcec8b1106075e40a2f4da95a` |
+| 4 | `def` | [canonicalAcceptedMerge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AcceptedMerge.lean/declarations/canonicalacceptedmerge.md) | 37 | `declaration-track:6a66759d89954fed7b56cdd1f5fe6af9a2137b47e1be97ebf9963f75deeb393f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

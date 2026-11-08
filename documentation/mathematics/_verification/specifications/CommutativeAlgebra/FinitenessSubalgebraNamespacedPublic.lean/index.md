@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/FinitenessSubalgebraNamespacedPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/FinitenessSubalgebraNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessSubalgebraNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessSubalgebraNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [fg_bot_toSubmodule](../../../../CommutativeAlgebra/FinitenessSubalgebraNamespacedPublic.lean/declarations/fg-bot-tosubmodule.md) | 34 | `result-track:59450ff6f8d8d76b5aa12cd87e78d546c9f792c6814387cb5c8f3bd07374f0e7` |
-| 2 | `instance` | [finite_bot](../../../../CommutativeAlgebra/FinitenessSubalgebraNamespacedPublic.lean/declarations/finite-bot.md) | 37 | `declaration-track:48fade9eba5bea40e24864caf1638b4c4d074c94b90e5c9c967b839d464dc08e` |
-| 3 | `theorem` | [fg_unit](../../../../CommutativeAlgebra/FinitenessSubalgebraNamespacedPublic.lean/declarations/fg-unit.md) | 44 | `result-track:06aefe63f20a6399b6983c85ec6f59b7ca879ce01a375a57a8fbe0b2f9e3bb4f` |
-| 4 | `theorem` | [fg_of_isUnit](../../../../CommutativeAlgebra/FinitenessSubalgebraNamespacedPublic.lean/declarations/fg-of-isunit.md) | 52 | `result-track:a01cc13bb11b0ccc75825171dcb8ef866eda7d5e8caf276d27e0d8660c7267db` |
-| 5 | `theorem` | [FG.mul](../../../../CommutativeAlgebra/FinitenessSubalgebraNamespacedPublic.lean/declarations/fg-mul.md) | 61 | `result-track:316cf821c87adbaeb8e0080e435bde9b5158ada29c4c2f064e327b327a883b73` |
-| 6 | `theorem` | [FG.pow](../../../../CommutativeAlgebra/FinitenessSubalgebraNamespacedPublic.lean/declarations/fg-pow.md) | 64 | `result-track:1795a12f96c8422322b0ed325e3deb5db823a6c3cb03af9c5ea4e55e865f3757` |
+| 1 | `theorem` | [fg_bot_toSubmodule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessSubalgebraNamespacedPublic.lean/declarations/fg-bot-tosubmodule.md) | 34 | `result-track:59450ff6f8d8d76b5aa12cd87e78d546c9f792c6814387cb5c8f3bd07374f0e7` |
+| 2 | `instance` | [finite_bot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessSubalgebraNamespacedPublic.lean/declarations/finite-bot.md) | 37 | `declaration-track:48fade9eba5bea40e24864caf1638b4c4d074c94b90e5c9c967b839d464dc08e` |
+| 3 | `theorem` | [fg_unit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessSubalgebraNamespacedPublic.lean/declarations/fg-unit.md) | 44 | `result-track:06aefe63f20a6399b6983c85ec6f59b7ca879ce01a375a57a8fbe0b2f9e3bb4f` |
+| 4 | `theorem` | [fg_of_isUnit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessSubalgebraNamespacedPublic.lean/declarations/fg-of-isunit.md) | 52 | `result-track:a01cc13bb11b0ccc75825171dcb8ef866eda7d5e8caf276d27e0d8660c7267db` |
+| 5 | `theorem` | [FG.mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessSubalgebraNamespacedPublic.lean/declarations/fg-mul.md) | 61 | `result-track:316cf821c87adbaeb8e0080e435bde9b5158ada29c4c2f064e327b327a883b73` |
+| 6 | `theorem` | [FG.pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessSubalgebraNamespacedPublic.lean/declarations/fg-pow.md) | 64 | `result-track:1795a12f96c8422322b0ed325e3deb5db823a6c3cb03af9c5ea4e55e865f3757` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

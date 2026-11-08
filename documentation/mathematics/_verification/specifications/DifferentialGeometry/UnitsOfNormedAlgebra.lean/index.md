@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../DifferentialGeometry/UnitsOfNormedAlgebra.lean/index.md) · [Full source](../../../../DifferentialGeometry/UnitsOfNormedAlgebra.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/UnitsOfNormedAlgebra.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/UnitsOfNormedAlgebra.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../DifferentialGeometry/UnitsOfNormedAlgebra.lean/declarations/instance-source-edition-3.md) | 35 | `declaration-track:d161e1db5c44e5d6c402447fb436d7e8ba2fc41255671c3a362b63c68f53cb37` |
-| 2 | `theorem` | [chartAt_apply](../../../../DifferentialGeometry/UnitsOfNormedAlgebra.lean/declarations/chartat-apply.md) | 38 | `result-track:b988ba7feffac1339da6d416b748f96ca56ce17d4add669f352c5f8fc2c6fe18` |
-| 3 | `theorem` | [chartAt_source](../../../../DifferentialGeometry/UnitsOfNormedAlgebra.lean/declarations/chartat-source.md) | 41 | `result-track:0343827ecfa83da64fd66beb87839dce44e06912b77aa635cc5dc6d90cc267be` |
-| 4 | `instance` | [(anonymous)](../../../../DifferentialGeometry/UnitsOfNormedAlgebra.lean/declarations/instance.md) | 46 | `declaration-track:71846f514e43ded2700ab10ca1ed939e03ffa8307510c796f2458e4686b0b44f` |
-| 5 | `lemma` | [contMDiff_val](../../../../DifferentialGeometry/UnitsOfNormedAlgebra.lean/declarations/contmdiff-val.md) | 51 | `result-track:a06844d46ad4ff2ca8bebf7055f265dd7b08266ac4209fcaf01ee40123780441` |
-| 6 | `instance` | [(anonymous)](../../../../DifferentialGeometry/UnitsOfNormedAlgebra.lean/declarations/instance-source-edition-2.md) | 55 | `declaration-track:ce8503389395363cbe6989eb5629f858c1e208db86d54c9bb1054a4619b39ea5` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/UnitsOfNormedAlgebra.lean/declarations/instance-source-edition-3.md) | 35 | `declaration-track:d161e1db5c44e5d6c402447fb436d7e8ba2fc41255671c3a362b63c68f53cb37` |
+| 2 | `theorem` | [chartAt_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/UnitsOfNormedAlgebra.lean/declarations/chartat-apply.md) | 38 | `result-track:b988ba7feffac1339da6d416b748f96ca56ce17d4add669f352c5f8fc2c6fe18` |
+| 3 | `theorem` | [chartAt_source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/UnitsOfNormedAlgebra.lean/declarations/chartat-source.md) | 41 | `result-track:0343827ecfa83da64fd66beb87839dce44e06912b77aa635cc5dc6d90cc267be` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/UnitsOfNormedAlgebra.lean/declarations/instance.md) | 46 | `declaration-track:71846f514e43ded2700ab10ca1ed939e03ffa8307510c796f2458e4686b0b44f` |
+| 5 | `lemma` | [contMDiff_val](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/UnitsOfNormedAlgebra.lean/declarations/contmdiff-val.md) | 51 | `result-track:a06844d46ad4ff2ca8bebf7055f265dd7b08266ac4209fcaf01ee40123780441` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/UnitsOfNormedAlgebra.lean/declarations/instance-source-edition-2.md) | 55 | `declaration-track:ce8503389395363cbe6989eb5629f858c1e208db86d54c9bb1054a4619b39ea5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

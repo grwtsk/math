@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/SpectralAddressNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/SpectralAddressNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralAddressNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralAddressNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [spectral_address_not_checked_theorem](../../../../FunctionalAnalysis/SpectralAddressNamespaced.lean/declarations/spectral-address-not-checked-theorem.md) | 10 | `result-track:bc2617b9ff07a77371b39ef5898db7c4fcce2ae2e9dff9f3635214fca54185d7` |
+| 1 | `theorem` | [spectral_address_not_checked_theorem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralAddressNamespaced.lean/declarations/spectral-address-not-checked-theorem.md) | 10 | `result-track:bc2617b9ff07a77371b39ef5898db7c4fcce2ae2e9dff9f3635214fca54185d7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

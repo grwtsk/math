@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResultsAlternative88.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResultsAlternative88.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResultsAlternative88.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResultsAlternative88.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RuntimeBindingData](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResultsAlternative88.lean/declarations/runtimebindingdata.md) | 10 | `declaration-track:522e85ff69ce00ade6157d2fb667af01ffed2ef01287f2cef406bb00c5e53d36` |
-| 2 | `def` | [RuntimeRefines](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResultsAlternative88.lean/declarations/runtimerefines.md) | 22 | `declaration-track:5e686bdf96e2dc1e2b37b17e00953a7ea6935dc70fe5a489630b3d0cb6905a14` |
-| 3 | `structure` | [RuntimeBinding](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResultsAlternative88.lean/declarations/runtimebinding.md) | 33 | `declaration-track:8b9d7464f5e7439ee386751430f5c5704fd5583fbef3fcb333f7b48ecc6b6f76` |
+| 1 | `structure` | [RuntimeBindingData](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResultsAlternative88.lean/declarations/runtimebindingdata.md) | 10 | `declaration-track:522e85ff69ce00ade6157d2fb667af01ffed2ef01287f2cef406bb00c5e53d36` |
+| 2 | `def` | [RuntimeRefines](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResultsAlternative88.lean/declarations/runtimerefines.md) | 22 | `declaration-track:5e686bdf96e2dc1e2b37b17e00953a7ea6935dc70fe5a489630b3d0cb6905a14` |
+| 3 | `structure` | [RuntimeBinding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResultsAlternative88.lean/declarations/runtimebinding.md) | 33 | `declaration-track:8b9d7464f5e7439ee386751430f5c5704fd5583fbef3fcb333f7b48ecc6b6f76` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

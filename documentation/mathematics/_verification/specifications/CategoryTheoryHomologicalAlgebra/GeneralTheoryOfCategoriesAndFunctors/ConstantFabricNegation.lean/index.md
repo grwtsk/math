@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConstantFabricNegation.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConstantFabricNegation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConstantFabricNegation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConstantFabricNegation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -48,7 +48,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 - `BitMatrix.Adapters.DAFRefinement` — import line 19; external provider; requires a separately pinned dependency.
 - `DAF.Fabric.Reaction` — import line 20; external provider; requires a separately pinned dependency.
-- [Coordinate Presentations](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoordinatePresentations.lean/index.md) — import line 22; pinned internal source present.
+- [Coordinate Presentations](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CoordinatePresentations.lean/index.md) — import line 22; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [constantMatrixShape](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConstantFabricNegation.lean/declarations/constantmatrixshape.md) | 39 | `declaration-track:667d3a66963b7729dd2db340cc7073c13398fe55034522a54d09adc7cfcf4e80` |
-| 2 | `def` | [matrixFabric](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConstantFabricNegation.lean/declarations/matrixfabric.md) | 43 | `declaration-track:4707e0634861bb06077020e2832dd85fe3267ed46ceb99d7969621ead023b33b` |
-| 3 | `def` | [notReaction](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConstantFabricNegation.lean/declarations/notreaction.md) | 53 | `declaration-track:501b038f37895bc90ec5e89bfc4e8af5729232eb46a2fe231925ffa77618c05a` |
+| 1 | `def` | [constantMatrixShape](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConstantFabricNegation.lean/declarations/constantmatrixshape.md) | 39 | `declaration-track:667d3a66963b7729dd2db340cc7073c13398fe55034522a54d09adc7cfcf4e80` |
+| 2 | `def` | [matrixFabric](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConstantFabricNegation.lean/declarations/matrixfabric.md) | 43 | `declaration-track:4707e0634861bb06077020e2832dd85fe3267ed46ceb99d7969621ead023b33b` |
+| 3 | `def` | [notReaction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConstantFabricNegation.lean/declarations/notreaction.md) | 53 | `declaration-track:501b038f37895bc90ec5e89bfc4e8af5729232eb46a2fe231925ffa77618c05a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

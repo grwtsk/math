@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatProjectiveDimensionPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatProjectiveDimensionPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatProjectiveDimensionPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatProjectiveDimensionPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [hasProjectiveDimensionLE_of_semiLinearEquiv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatProjectiveDimensionPublic.lean/declarations/hasprojectivedimensionle-of-semilinearequiv.md) | 57 | `result-track:697dfabcaeb5046b745a880b5b83ff516414cf2399b70d25642c06703ede4e86` |
-| 2 | `lemma` | [projectiveDimension_eq_of_semiLinearEquiv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatProjectiveDimensionPublic.lean/declarations/projectivedimension-eq-of-semilinearequiv.md) | 90 | `result-track:bc9a6fa607ba0a0d52e7e5e1fb552e603ff894fb2d3cff5ef52f4f1a9da7213b` |
-| 3 | `lemma` | [hasProjectiveDimensionLE_of_linearEquiv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatProjectiveDimensionPublic.lean/declarations/hasprojectivedimensionle-of-linearequiv.md) | 115 | `result-track:715c1624264fda07c1ed85aa46c4346f007d02338a9521b7d45f6b9e11fdb20f` |
-| 4 | `lemma` | [projectiveDimension_eq_of_linearEquiv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatProjectiveDimensionPublic.lean/declarations/projectivedimension-eq-of-linearequiv.md) | 126 | `result-track:33c8ebb4eaa8cb81c33c4e2b4abaf9faa1e5a7c6908848775a6867c966d802d7` |
-| 5 | `lemma` | [projectiveDimension_eq_zero_of_projective](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatProjectiveDimensionPublic.lean/declarations/projectivedimension-eq-zero-of-projective.md) | 139 | `result-track:9cba7783d955d14b527066910a03d06ae9e02a5f168ab6bef72495aac2203bf5` |
+| 1 | `lemma` | [hasProjectiveDimensionLE_of_semiLinearEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatProjectiveDimensionPublic.lean/declarations/hasprojectivedimensionle-of-semilinearequiv.md) | 57 | `result-track:697dfabcaeb5046b745a880b5b83ff516414cf2399b70d25642c06703ede4e86` |
+| 2 | `lemma` | [projectiveDimension_eq_of_semiLinearEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatProjectiveDimensionPublic.lean/declarations/projectivedimension-eq-of-semilinearequiv.md) | 90 | `result-track:bc9a6fa607ba0a0d52e7e5e1fb552e603ff894fb2d3cff5ef52f4f1a9da7213b` |
+| 3 | `lemma` | [hasProjectiveDimensionLE_of_linearEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatProjectiveDimensionPublic.lean/declarations/hasprojectivedimensionle-of-linearequiv.md) | 115 | `result-track:715c1624264fda07c1ed85aa46c4346f007d02338a9521b7d45f6b9e11fdb20f` |
+| 4 | `lemma` | [projectiveDimension_eq_of_linearEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatProjectiveDimensionPublic.lean/declarations/projectivedimension-eq-of-linearequiv.md) | 126 | `result-track:33c8ebb4eaa8cb81c33c4e2b4abaf9faa1e5a7c6908848775a6867c966d802d7` |
+| 5 | `lemma` | [projectiveDimension_eq_zero_of_projective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatProjectiveDimensionPublic.lean/declarations/projectivedimension-eq-zero-of-projective.md) | 139 | `result-track:9cba7783d955d14b527066910a03d06ae9e02a5f168ab6bef72495aac2203bf5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

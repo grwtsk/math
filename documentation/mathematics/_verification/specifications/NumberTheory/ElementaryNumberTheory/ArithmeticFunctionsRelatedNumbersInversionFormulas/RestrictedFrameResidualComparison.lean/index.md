@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RestrictedFrameResidualComparison.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RestrictedFrameResidualComparison.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RestrictedFrameResidualComparison.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RestrictedFrameResidualComparison.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Moebius.RestrictedAdditiveMultiplicativeBridgeAudit`](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RestrictedAdditiveMultiplicativeBridgeAudit.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.RestrictedAdditiveMultiplicativeBridgeAudit`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RestrictedAdditiveMultiplicativeBridgeAudit.lean/index.md) — import line 8; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [finitePacketEnergy_add_le_two](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RestrictedFrameResidualComparison.lean/declarations/finitepacketenergy-add-le-two.md) | 42 | `result-track:9843649176bfe7839b48e53092537714517d1b64418cd4a445c8297cb8fa19ad` |
-| 2 | `theorem` | [finitePacketEnergy_le_reconstruction_add_residual](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RestrictedFrameResidualComparison.lean/declarations/finitepacketenergy-le-reconstruction-add-residual.md) | 73 | `result-track:61a2d29fbf9d9bbb4f21f6d9c1fbe2150d42e58de9cbc530eb58605ec8fc80a0` |
-| 3 | `theorem` | [hasRestrictedLowerFrameBound_of_small_reconstructionResidual](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RestrictedFrameResidualComparison.lean/declarations/hasrestrictedlowerframebound-of-small-reconstructionresidual.md) | 101 | `result-track:68f64ed7360d45df7ea835c482bccf548455e30339104ab37fb9d15bfb0cd97a` |
+| 1 | `theorem` | [finitePacketEnergy_add_le_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RestrictedFrameResidualComparison.lean/declarations/finitepacketenergy-add-le-two.md) | 42 | `result-track:9843649176bfe7839b48e53092537714517d1b64418cd4a445c8297cb8fa19ad` |
+| 2 | `theorem` | [finitePacketEnergy_le_reconstruction_add_residual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RestrictedFrameResidualComparison.lean/declarations/finitepacketenergy-le-reconstruction-add-residual.md) | 73 | `result-track:61a2d29fbf9d9bbb4f21f6d9c1fbe2150d42e58de9cbc530eb58605ec8fc80a0` |
+| 3 | `theorem` | [hasRestrictedLowerFrameBound_of_small_reconstructionResidual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RestrictedFrameResidualComparison.lean/declarations/hasrestrictedlowerframebound-of-small-reconstructionresidual.md) | 101 | `result-track:68f64ed7360d45df7ea835c482bccf548455e30339104ab37fb9d15bfb0cd97a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

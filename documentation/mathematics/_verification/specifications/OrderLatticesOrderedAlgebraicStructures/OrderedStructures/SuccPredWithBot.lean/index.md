@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SuccPredWithBot.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SuccPredWithBot.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SuccPredWithBot.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SuccPredWithBot.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [succ_natCast](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SuccPredWithBot.lean/declarations/succ-natcast.md) | 17 | `result-track:866b1881f764d8aefd73735c76f8e831d1ba53c1903736585f8fc13acd0c7598` |
-| 2 | `lemma` | [succ_zero](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SuccPredWithBot.lean/declarations/succ-zero.md) | 20 | `result-track:aae78417172f0cb6cc188263c6dec1c615d63c5a08bf120d448d49ddc16e49e9` |
-| 3 | `lemma` | [succ_one](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SuccPredWithBot.lean/declarations/succ-one.md) | 23 | `result-track:862added32dc0404e0ff1c56b0b30d5a526eaa98569333c55ad96704ac57d17f` |
-| 4 | `lemma` | [succ_ofNat](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SuccPredWithBot.lean/declarations/succ-ofnat.md) | 26 | `result-track:d4b08065b29a7173d7cc0775c230156edb69c3fd765eb58d2283a5436c08cd87` |
-| 5 | `lemma` | [one_le_iff_pos](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SuccPredWithBot.lean/declarations/one-le-iff-pos.md) | 29 | `result-track:fa33036aa5a6f890391e7c91927dfcc4b04823bae7b7e7653a1550356815292c` |
+| 1 | `lemma` | [succ_natCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SuccPredWithBot.lean/declarations/succ-natcast.md) | 17 | `result-track:866b1881f764d8aefd73735c76f8e831d1ba53c1903736585f8fc13acd0c7598` |
+| 2 | `lemma` | [succ_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SuccPredWithBot.lean/declarations/succ-zero.md) | 20 | `result-track:aae78417172f0cb6cc188263c6dec1c615d63c5a08bf120d448d49ddc16e49e9` |
+| 3 | `lemma` | [succ_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SuccPredWithBot.lean/declarations/succ-one.md) | 23 | `result-track:862added32dc0404e0ff1c56b0b30d5a526eaa98569333c55ad96704ac57d17f` |
+| 4 | `lemma` | [succ_ofNat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SuccPredWithBot.lean/declarations/succ-ofnat.md) | 26 | `result-track:d4b08065b29a7173d7cc0775c230156edb69c3fd765eb58d2283a5436c08cd87` |
+| 5 | `lemma` | [one_le_iff_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SuccPredWithBot.lean/declarations/one-le-iff-pos.md) | 29 | `result-track:fa33036aa5a6f890391e7c91927dfcc4b04823bae7b7e7653a1550356815292c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

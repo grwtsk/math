@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/CauchyNamespacedPublicMetric.lean/index.md) · [Full source](../../../../GeneralTopology/CauchyNamespacedPublicMetric.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CauchyNamespacedPublicMetric.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CauchyNamespacedPublicMetric.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Metric.complete_of_convergent_controlled_sequences](../../../../GeneralTopology/CauchyNamespacedPublicMetric.lean/declarations/metric-complete-of-convergent-controlled-sequences.md) | 49 | `result-track:67075f9d9eabf6a0a6f9c03a4ed5ad69c5ae2813dae71a76202e6a4af54d65d2` |
-| 2 | `theorem` | [Metric.complete_of_cauchySeq_tendsto](../../../../GeneralTopology/CauchyNamespacedPublicMetric.lean/declarations/metric-complete-of-cauchyseq-tendsto.md) | 57 | `result-track:7e84041f53eee383695d4066801a2b07a71426858cb39d61b4f54c6ccc7e6e45` |
-| 3 | `theorem` | [Metric.cauchySeq_iff](../../../../GeneralTopology/CauchyNamespacedPublicMetric.lean/declarations/metric-cauchyseq-iff-source-edition-2.md) | 67 | `result-track:9de515791cbe26b4c68b30c84b575bc99ffe7b4a7df2decd25d65e4caf8fe33f` |
-| 4 | `theorem` | [Metric.cauchySeq_iff'](../../../../GeneralTopology/CauchyNamespacedPublicMetric.lean/declarations/metric-cauchyseq-iff.md) | 72 | `result-track:1b1eb8d7dacaaddcf0943c1c0b08ec4128fae3021a0de86ee628257e70e64286` |
-| 5 | `theorem` | [Metric.uniformCauchySeqOn_iff](../../../../GeneralTopology/CauchyNamespacedPublicMetric.lean/declarations/metric-uniformcauchyseqon-iff.md) | 78 | `result-track:a1a877b5772383aa7d932b9b6a06f1feb5e0d1fdb6057176e548996c4fd6966f` |
-| 6 | `theorem` | [cauchySeq_of_le_tendsto_0'](../../../../GeneralTopology/CauchyNamespacedPublicMetric.lean/declarations/cauchyseq-of-le-tendsto-0-source-edition-2.md) | 101 | `result-track:3e3d56cd16a2e527df4f5f06c5a8cd23ebce463775a186fa143d4c0ac0aaa7af` |
-| 7 | `theorem` | [cauchySeq_of_le_tendsto_0](../../../../GeneralTopology/CauchyNamespacedPublicMetric.lean/declarations/cauchyseq-of-le-tendsto-0.md) | 110 | `result-track:136e8172a6304c362cb190ed1283e85b5ae1a7fdc1f1955b2f993edb01224d86` |
-| 8 | `theorem` | [cauchySeq_bdd](../../../../GeneralTopology/CauchyNamespacedPublicMetric.lean/declarations/cauchyseq-bdd.md) | 116 | `result-track:1075f224f6570801f03802e003d46dc7f63dc0bd1704e418b0d42e1f66a381b4` |
-| 9 | `theorem` | [cauchySeq_iff_le_tendsto_0](../../../../GeneralTopology/CauchyNamespacedPublicMetric.lean/declarations/cauchyseq-iff-le-tendsto-0.md) | 130 | `result-track:bcdc9a717ff7d35ba823c37e6d29bc7d0320d10638188c49e18905aa1ca01cc0` |
-| 10 | `lemma` | [Metric.exists_subseq_bounded_of_cauchySeq](../../../../GeneralTopology/CauchyNamespacedPublicMetric.lean/declarations/metric-exists-subseq-bounded-of-cauchyseq.md) | 160 | `result-track:57c84ea1541fb32bbb92b08f295c4911901f10ccfa5322fb627bb41d15a82c7f` |
+| 1 | `theorem` | [Metric.complete_of_convergent_controlled_sequences](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CauchyNamespacedPublicMetric.lean/declarations/metric-complete-of-convergent-controlled-sequences.md) | 49 | `result-track:67075f9d9eabf6a0a6f9c03a4ed5ad69c5ae2813dae71a76202e6a4af54d65d2` |
+| 2 | `theorem` | [Metric.complete_of_cauchySeq_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CauchyNamespacedPublicMetric.lean/declarations/metric-complete-of-cauchyseq-tendsto.md) | 57 | `result-track:7e84041f53eee383695d4066801a2b07a71426858cb39d61b4f54c6ccc7e6e45` |
+| 3 | `theorem` | [Metric.cauchySeq_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CauchyNamespacedPublicMetric.lean/declarations/metric-cauchyseq-iff-source-edition-2.md) | 67 | `result-track:9de515791cbe26b4c68b30c84b575bc99ffe7b4a7df2decd25d65e4caf8fe33f` |
+| 4 | `theorem` | [Metric.cauchySeq_iff'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CauchyNamespacedPublicMetric.lean/declarations/metric-cauchyseq-iff.md) | 72 | `result-track:1b1eb8d7dacaaddcf0943c1c0b08ec4128fae3021a0de86ee628257e70e64286` |
+| 5 | `theorem` | [Metric.uniformCauchySeqOn_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CauchyNamespacedPublicMetric.lean/declarations/metric-uniformcauchyseqon-iff.md) | 78 | `result-track:a1a877b5772383aa7d932b9b6a06f1feb5e0d1fdb6057176e548996c4fd6966f` |
+| 6 | `theorem` | [cauchySeq_of_le_tendsto_0'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CauchyNamespacedPublicMetric.lean/declarations/cauchyseq-of-le-tendsto-0-source-edition-2.md) | 101 | `result-track:3e3d56cd16a2e527df4f5f06c5a8cd23ebce463775a186fa143d4c0ac0aaa7af` |
+| 7 | `theorem` | [cauchySeq_of_le_tendsto_0](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CauchyNamespacedPublicMetric.lean/declarations/cauchyseq-of-le-tendsto-0.md) | 110 | `result-track:136e8172a6304c362cb190ed1283e85b5ae1a7fdc1f1955b2f993edb01224d86` |
+| 8 | `theorem` | [cauchySeq_bdd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CauchyNamespacedPublicMetric.lean/declarations/cauchyseq-bdd.md) | 116 | `result-track:1075f224f6570801f03802e003d46dc7f63dc0bd1704e418b0d42e1f66a381b4` |
+| 9 | `theorem` | [cauchySeq_iff_le_tendsto_0](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CauchyNamespacedPublicMetric.lean/declarations/cauchyseq-iff-le-tendsto-0.md) | 130 | `result-track:bcdc9a717ff7d35ba823c37e6d29bc7d0320d10638188c49e18905aa1ca01cc0` |
+| 10 | `lemma` | [Metric.exists_subseq_bounded_of_cauchySeq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CauchyNamespacedPublicMetric.lean/declarations/metric-exists-subseq-bounded-of-cauchyseq.md) | 160 | `result-track:57c84ea1541fb32bbb92b08f295c4911901f10ccfa5322fb627bb41d15a82c7f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/NamespacedAlternative28.lean/index.md) · [Full source](../../../../MeasureAndIntegration/NamespacedAlternative28.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NamespacedAlternative28.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NamespacedAlternative28.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [spectralDensity](../../../../MeasureAndIntegration/NamespacedAlternative28.lean/declarations/spectraldensity.md) | 32 | `declaration-track:b2705f4cdb42b66fa49625df1931c46d2f3b089cc62a4cf9797643b072ec162e` |
-| 2 | `theorem` | [spectralDensity_nonneg](../../../../MeasureAndIntegration/NamespacedAlternative28.lean/declarations/spectraldensity-nonneg.md) | 37 | `result-track:35ef47b02a24e3a56809fc0ac3c34149266e38c841a5829952051b26611c611d` |
-| 3 | `theorem` | [spectralDensity_integrable](../../../../MeasureAndIntegration/NamespacedAlternative28.lean/declarations/spectraldensity-integrable.md) | 42 | `result-track:cfdbecbab06d8c7d3dc495ba8fc6dc0edfa68b79ea9f3001974aacfaa31a90cf` |
-| 4 | `theorem` | [spectralDensity_integral](../../../../MeasureAndIntegration/NamespacedAlternative28.lean/declarations/spectraldensity-integral.md) | 47 | `result-track:3116be833f2f412d3787c55fd982c50cbeebc7dbedbead69c2ee3c85c6479ede` |
-| 5 | `theorem` | [fourier_sourceCorrelation_integrable](../../../../MeasureAndIntegration/NamespacedAlternative28.lean/declarations/fourier-sourcecorrelation-integrable.md) | 54 | `result-track:4980d576a44e5562c09951624fa14b2974e668d6f4d3d5d86e9e24aa93c1c24b` |
-| 6 | `theorem` | [sourceCorrelation_eq_inverseFourier](../../../../MeasureAndIntegration/NamespacedAlternative28.lean/declarations/sourcecorrelation-eq-inversefourier.md) | 64 | `result-track:a2dfa1fa0db024f7a9201278b9a9687a78de50da346a96dfeec76c00e16ff436` |
-| 7 | `theorem` | [spectralDensity_cos_integrable](../../../../MeasureAndIntegration/NamespacedAlternative28.lean/declarations/spectraldensity-cos-integrable.md) | 83 | `result-track:0615be275191c615b975fdca94401c9fadf56a0455d15202a3ca481cd2fdfe61` |
-| 8 | `theorem` | [sourceCorrelation_eq_integral_cos_fourier](../../../../MeasureAndIntegration/NamespacedAlternative28.lean/declarations/sourcecorrelation-eq-integral-cos-fourier.md) | 91 | `result-track:7b608d455b84e57495a93493f2e651af19bd9da225931040c56c1e6a52bdbd1d` |
-| 9 | `theorem` | [sourceCorrelation_eq_integral_cos](../../../../MeasureAndIntegration/NamespacedAlternative28.lean/declarations/sourcecorrelation-eq-integral-cos.md) | 120 | `result-track:abc359c955bba094e202b1ec1ad0b58742359c6499c8c31e78bad996a5e7c20b` |
+| 1 | `def` | [spectralDensity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NamespacedAlternative28.lean/declarations/spectraldensity.md) | 32 | `declaration-track:b2705f4cdb42b66fa49625df1931c46d2f3b089cc62a4cf9797643b072ec162e` |
+| 2 | `theorem` | [spectralDensity_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NamespacedAlternative28.lean/declarations/spectraldensity-nonneg.md) | 37 | `result-track:35ef47b02a24e3a56809fc0ac3c34149266e38c841a5829952051b26611c611d` |
+| 3 | `theorem` | [spectralDensity_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NamespacedAlternative28.lean/declarations/spectraldensity-integrable.md) | 42 | `result-track:cfdbecbab06d8c7d3dc495ba8fc6dc0edfa68b79ea9f3001974aacfaa31a90cf` |
+| 4 | `theorem` | [spectralDensity_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NamespacedAlternative28.lean/declarations/spectraldensity-integral.md) | 47 | `result-track:3116be833f2f412d3787c55fd982c50cbeebc7dbedbead69c2ee3c85c6479ede` |
+| 5 | `theorem` | [fourier_sourceCorrelation_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NamespacedAlternative28.lean/declarations/fourier-sourcecorrelation-integrable.md) | 54 | `result-track:4980d576a44e5562c09951624fa14b2974e668d6f4d3d5d86e9e24aa93c1c24b` |
+| 6 | `theorem` | [sourceCorrelation_eq_inverseFourier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NamespacedAlternative28.lean/declarations/sourcecorrelation-eq-inversefourier.md) | 64 | `result-track:a2dfa1fa0db024f7a9201278b9a9687a78de50da346a96dfeec76c00e16ff436` |
+| 7 | `theorem` | [spectralDensity_cos_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NamespacedAlternative28.lean/declarations/spectraldensity-cos-integrable.md) | 83 | `result-track:0615be275191c615b975fdca94401c9fadf56a0455d15202a3ca481cd2fdfe61` |
+| 8 | `theorem` | [sourceCorrelation_eq_integral_cos_fourier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NamespacedAlternative28.lean/declarations/sourcecorrelation-eq-integral-cos-fourier.md) | 91 | `result-track:7b608d455b84e57495a93493f2e651af19bd9da225931040c56c1e6a52bdbd1d` |
+| 9 | `theorem` | [sourceCorrelation_eq_integral_cos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NamespacedAlternative28.lean/declarations/sourcecorrelation-eq-integral-cos.md) | 120 | `result-track:abc359c955bba094e202b1ec1ad0b58742359c6499c8c31e78bad996a5e7c20b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/NaturalityNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/NaturalityNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/NaturalityNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/NaturalityNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Natural](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/NaturalityNamespaced.lean/declarations/natural.md) | 26 | `declaration-track:b021e4463c68f4ab18649162d2df7a51dd7c789280550381c275137fcd07e414` |
-| 2 | `def` | [id](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/NaturalityNamespaced.lean/declarations/id.md) | 34 | `declaration-track:d005f3a0dea3e2971fc6d0e74e44552cd01aa8c3a260da1c8fa7835a6c801021` |
-| 3 | `def` | [comp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/NaturalityNamespaced.lean/declarations/comp.md) | 40 | `declaration-track:fb4c79a9a5a7c7727d5bfd9c0bdb7ec230750ad172cfa8c9ff469b437a1ca6f1` |
-| 4 | `theorem` | [id_hom](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/NaturalityNamespaced.lean/declarations/id-hom.md) | 48 | `result-track:a8a709593c57d71c15645afa4b16b88c4007e6bb0fb767e54e7a5453977ebe95` |
-| 5 | `theorem` | [comp_hom](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/NaturalityNamespaced.lean/declarations/comp-hom.md) | 55 | `result-track:acf50225e0671adbf70bb865ba4c8a62acb9eb10d1943c85ac36c5a14684e668` |
+| 1 | `structure` | [Natural](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/NaturalityNamespaced.lean/declarations/natural.md) | 26 | `declaration-track:b021e4463c68f4ab18649162d2df7a51dd7c789280550381c275137fcd07e414` |
+| 2 | `def` | [id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/NaturalityNamespaced.lean/declarations/id.md) | 34 | `declaration-track:d005f3a0dea3e2971fc6d0e74e44552cd01aa8c3a260da1c8fa7835a6c801021` |
+| 3 | `def` | [comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/NaturalityNamespaced.lean/declarations/comp.md) | 40 | `declaration-track:fb4c79a9a5a7c7727d5bfd9c0bdb7ec230750ad172cfa8c9ff469b437a1ca6f1` |
+| 4 | `theorem` | [id_hom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/NaturalityNamespaced.lean/declarations/id-hom.md) | 48 | `result-track:a8a709593c57d71c15645afa4b16b88c4007e6bb0fb767e54e7a5453977ebe95` |
+| 5 | `theorem` | [comp_hom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/NaturalityNamespaced.lean/declarations/comp-hom.md) | 55 | `result-track:acf50225e0671adbf70bb865ba4c8a62acb9eb10d1943c85ac36c5a14684e668` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

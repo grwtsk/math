@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EffectivePresentation.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EffectivePresentation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EffectivePresentation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EffectivePresentation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [ResourceCost](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EffectivePresentation.lean/declarations/resourcecost.md) | 10 | `declaration-track:648aae0ce6538f707351294ab94be305d2e4f931db8c9b29a2f1e46fd2eeb754` |
-| 2 | `abbrev` | [EffectivePresentation](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EffectivePresentation.lean/declarations/effectivepresentation.md) | 11 | `declaration-track:3dccbe00d93026ce1e61d6788ca310924afddcd69904c8ae64933f6d6c573db4` |
-| 3 | `abbrev` | [EffectiveArithmeticObject](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EffectivePresentation.lean/declarations/effectivearithmeticobject.md) | 13 | `declaration-track:62c42265afaa53c7f33c3eb6821531284370ee513a764bb8aa8fe8028f31c742` |
-| 4 | `abbrev` | [EffectiveArithmeticMorphism](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/EffectivePresentation.lean/declarations/effectivearithmeticmorphism.md) | 15 | `declaration-track:a5178910d0dc6e6724e0036b23be96712d78354c5ffa643403a0f093e13f2bff` |
+| 1 | `abbrev` | [ResourceCost](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EffectivePresentation.lean/declarations/resourcecost.md) | 10 | `declaration-track:648aae0ce6538f707351294ab94be305d2e4f931db8c9b29a2f1e46fd2eeb754` |
+| 2 | `abbrev` | [EffectivePresentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EffectivePresentation.lean/declarations/effectivepresentation.md) | 11 | `declaration-track:3dccbe00d93026ce1e61d6788ca310924afddcd69904c8ae64933f6d6c573db4` |
+| 3 | `abbrev` | [EffectiveArithmeticObject](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EffectivePresentation.lean/declarations/effectivearithmeticobject.md) | 13 | `declaration-track:62c42265afaa53c7f33c3eb6821531284370ee513a764bb8aa8fe8028f31c742` |
+| 4 | `abbrev` | [EffectiveArithmeticMorphism](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/EffectivePresentation.lean/declarations/effectivearithmeticmorphism.md) | 15 | `declaration-track:a5178910d0dc6e6724e0036b23be96712d78354c5ffa643403a0f093e13f2bff` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/LtPiNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/LtPiNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LtPiNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LtPiNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,9 +61,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [Hϕ](../../../../MeasureAndIntegration/LtPiNamespaced.lean/declarations/h.md) | 24 | `declaration-track:5a4f9d899b2e485c0ca0c1c148a245578cb6a00a9b1da59131ea55ba6a802d2e` |
-| 2 | `abbrev` | [μϕ](../../../../MeasureAndIntegration/LtPiNamespaced.lean/declarations/anonymous.md) | 25 | `declaration-track:b222f22e07e6a31fb2b81e35222602625ea3184939743d61d77bb5244ee72941` |
-| 3 | `def` | [Lt_pi](../../../../MeasureAndIntegration/LtPiNamespaced.lean/declarations/lt-pi.md) | 34 | `declaration-track:e7827561e09a127691a173a37e6aefedd270fcb205afe4955396a57e2eee934f` |
+| 1 | `abbrev` | [Hϕ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LtPiNamespaced.lean/declarations/h.md) | 24 | `declaration-track:5a4f9d899b2e485c0ca0c1c148a245578cb6a00a9b1da59131ea55ba6a802d2e` |
+| 2 | `abbrev` | [μϕ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LtPiNamespaced.lean/declarations/anonymous.md) | 25 | `declaration-track:b222f22e07e6a31fb2b81e35222602625ea3184939743d61d77bb5244ee72941` |
+| 3 | `def` | [Lt_pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LtPiNamespaced.lean/declarations/lt-pi.md) | 34 | `declaration-track:e7827561e09a127691a173a37e6aefedd270fcb205afe4955396a57e2eee934f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

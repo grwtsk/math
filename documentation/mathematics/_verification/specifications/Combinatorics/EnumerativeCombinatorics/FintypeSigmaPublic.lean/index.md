@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeSigmaPublic.lean/index.md) · [Full source](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeSigmaPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeSigmaPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeSigmaPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [Set.biUnion_finsetSigma_univ](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeSigmaPublic.lean/declarations/set-biunion-finsetsigma-univ.md) | 23 | `result-track:22f025845ff2631dd9a078a327dc51c50f84c7abaf7c7d422af5be76873f8ab3` |
-| 2 | `lemma` | [Set.biUnion_finsetSigma_univ'](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeSigmaPublic.lean/declarations/set-biunion-finsetsigma-univ-source-edition-2.md) | 26 | `result-track:a1dc827143a5723f82d468ad1e427cf4a296694491fffa3eb27321d43a09ef91` |
-| 3 | `lemma` | [Set.biInter_finsetSigma_univ](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeSigmaPublic.lean/declarations/set-biinter-finsetsigma-univ-source-edition-2.md) | 29 | `result-track:f0bc25c4728e5e9721133c8478d84fd3d1a863c4b9cc4fcf0a10cc948da62928` |
-| 4 | `lemma` | [Set.biInter_finsetSigma_univ'](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeSigmaPublic.lean/declarations/set-biinter-finsetsigma-univ.md) | 33 | `result-track:c1a96df39c7f55ac7c93730e6b545246a7d92aa2761059863c6349037c6dc48f` |
-| 5 | `instance` | [Sigma.instFintype](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeSigmaPublic.lean/declarations/sigma-instfintype.md) | 38 | `declaration-track:270633aeb0d2e94f19eb1ec09766846068be8da755c8a3cca548c7678f5f4289` |
-| 6 | `instance` | [PSigma.instFintype](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeSigmaPublic.lean/declarations/psigma-instfintype.md) | 39 | `declaration-track:3595d2b59fa8a3f88bcaa9a0ae8befb598d6eb076c3bc60fcdcc2c5ff0b1a550` |
-| 7 | `lemma` | [Finset.univ_sigma_univ](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeSigmaPublic.lean/declarations/finset-univ-sigma-univ.md) | 41 | `result-track:0452b01d25bb3ef20f4aa214ea10e2bc36b654deb19b25725530a797956018d2` |
+| 1 | `lemma` | [Set.biUnion_finsetSigma_univ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeSigmaPublic.lean/declarations/set-biunion-finsetsigma-univ.md) | 23 | `result-track:22f025845ff2631dd9a078a327dc51c50f84c7abaf7c7d422af5be76873f8ab3` |
+| 2 | `lemma` | [Set.biUnion_finsetSigma_univ'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeSigmaPublic.lean/declarations/set-biunion-finsetsigma-univ-source-edition-2.md) | 26 | `result-track:a1dc827143a5723f82d468ad1e427cf4a296694491fffa3eb27321d43a09ef91` |
+| 3 | `lemma` | [Set.biInter_finsetSigma_univ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeSigmaPublic.lean/declarations/set-biinter-finsetsigma-univ-source-edition-2.md) | 29 | `result-track:f0bc25c4728e5e9721133c8478d84fd3d1a863c4b9cc4fcf0a10cc948da62928` |
+| 4 | `lemma` | [Set.biInter_finsetSigma_univ'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeSigmaPublic.lean/declarations/set-biinter-finsetsigma-univ.md) | 33 | `result-track:c1a96df39c7f55ac7c93730e6b545246a7d92aa2761059863c6349037c6dc48f` |
+| 5 | `instance` | [Sigma.instFintype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeSigmaPublic.lean/declarations/sigma-instfintype.md) | 38 | `declaration-track:270633aeb0d2e94f19eb1ec09766846068be8da755c8a3cca548c7678f5f4289` |
+| 6 | `instance` | [PSigma.instFintype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeSigmaPublic.lean/declarations/psigma-instfintype.md) | 39 | `declaration-track:3595d2b59fa8a3f88bcaa9a0ae8befb598d6eb076c3bc60fcdcc2c5ff0b1a550` |
+| 7 | `lemma` | [Finset.univ_sigma_univ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeSigmaPublic.lean/declarations/finset-univ-sigma-univ.md) | 41 | `result-track:0452b01d25bb3ef20f4aa214ea10e2bc36b654deb19b25725530a797956018d2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/SourcePhaseJet.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/SourcePhaseJet.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SourcePhaseJet.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SourcePhaseJet.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,17 +57,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [tangentAtOne](../../../../AssociativeRingsAndAlgebras/SourcePhaseJet.lean/declarations/tangentatone.md) | 10 | `declaration-track:3e8e87a60dcc3698319e2f8845dce5c4e1b3d092a0d43986ddc6bae77c05523b` |
-| 2 | `theorem` | [tangent_at_one_root](../../../../AssociativeRingsAndAlgebras/SourcePhaseJet.lean/declarations/tangent-at-one-root.md) | 15 | `result-track:e5ef91fdcfc95afb16b331259db87747d74ded353a753e65c9bf8f8e6331b8b1` |
-| 3 | `theorem` | [tangent_at_one_infinitesimal](../../../../AssociativeRingsAndAlgebras/SourcePhaseJet.lean/declarations/tangent-at-one-infinitesimal.md) | 20 | `result-track:4ad91d8e4fbd8d8470633fb928103f3ce9e8577de06efc427923cbbe72399426` |
-| 4 | `def` | [sourcePhaseJet](../../../../AssociativeRingsAndAlgebras/SourcePhaseJet.lean/declarations/sourcephasejet.md) | 24 | `declaration-track:92028b5a8b626821ca5da9844697c03a04459f7307159e8f9f45cd83c2e3f0b0` |
-| 5 | `theorem` | [source_phase_jet_infinitesimal](../../../../AssociativeRingsAndAlgebras/SourcePhaseJet.lean/declarations/source-phase-jet-infinitesimal.md) | 27 | `result-track:21f29fe1d6f7a73dc9b9c0fb11b4a5080a4dce9a6b3e90a4ead141b098520575` |
-| 6 | `theorem` | [tangent_at_one_observation](../../../../AssociativeRingsAndAlgebras/SourcePhaseJet.lean/declarations/tangent-at-one-observation.md) | 33 | `result-track:405626e7310cfb307234384a3b652a97ea71b55391f965c918767d2a3d5df68e` |
-| 7 | `theorem` | [source_phase_jet_root](../../../../AssociativeRingsAndAlgebras/SourcePhaseJet.lean/declarations/source-phase-jet-root.md) | 42 | `result-track:12d12ed8edf141d6fd680a99c5ae13d9fae9a3c7abbb25e35087ec9fb8ccacb5` |
-| 8 | `def` | [sourceTangent](../../../../AssociativeRingsAndAlgebras/SourcePhaseJet.lean/declarations/sourcetangent.md) | 49 | `declaration-track:46c0b2e2a9c4fd24bb64bc0c7812d0058fc90214f98348db9f1d82c8ab1e3d38` |
-| 9 | `theorem` | [source_tangent_mem_jacobson](../../../../AssociativeRingsAndAlgebras/SourcePhaseJet.lean/declarations/source-tangent-mem-jacobson.md) | 53 | `result-track:2275d33e2aa75697caac920cb91b1da9a5312a6d45f82aee95e6a12cd068da45` |
-| 10 | `theorem` | [source_tangent_observation](../../../../AssociativeRingsAndAlgebras/SourcePhaseJet.lean/declarations/source-tangent-observation.md) | 59 | `result-track:0920bab716e35b2dccf4bf41370c54f96f7400490d65c257643bbfb54d6d8d36` |
-| 11 | `theorem` | [source_tangent_coordinate_jet](../../../../AssociativeRingsAndAlgebras/SourcePhaseJet.lean/declarations/source-tangent-coordinate-jet.md) | 64 | `result-track:fb974ff39641f9ec1aef59823980ac97fa8bf9eedad18791b0731437281d08d2` |
+| 1 | `def` | [tangentAtOne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SourcePhaseJet.lean/declarations/tangentatone.md) | 10 | `declaration-track:3e8e87a60dcc3698319e2f8845dce5c4e1b3d092a0d43986ddc6bae77c05523b` |
+| 2 | `theorem` | [tangent_at_one_root](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SourcePhaseJet.lean/declarations/tangent-at-one-root.md) | 15 | `result-track:e5ef91fdcfc95afb16b331259db87747d74ded353a753e65c9bf8f8e6331b8b1` |
+| 3 | `theorem` | [tangent_at_one_infinitesimal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SourcePhaseJet.lean/declarations/tangent-at-one-infinitesimal.md) | 20 | `result-track:4ad91d8e4fbd8d8470633fb928103f3ce9e8577de06efc427923cbbe72399426` |
+| 4 | `def` | [sourcePhaseJet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SourcePhaseJet.lean/declarations/sourcephasejet.md) | 24 | `declaration-track:92028b5a8b626821ca5da9844697c03a04459f7307159e8f9f45cd83c2e3f0b0` |
+| 5 | `theorem` | [source_phase_jet_infinitesimal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SourcePhaseJet.lean/declarations/source-phase-jet-infinitesimal.md) | 27 | `result-track:21f29fe1d6f7a73dc9b9c0fb11b4a5080a4dce9a6b3e90a4ead141b098520575` |
+| 6 | `theorem` | [tangent_at_one_observation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SourcePhaseJet.lean/declarations/tangent-at-one-observation.md) | 33 | `result-track:405626e7310cfb307234384a3b652a97ea71b55391f965c918767d2a3d5df68e` |
+| 7 | `theorem` | [source_phase_jet_root](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SourcePhaseJet.lean/declarations/source-phase-jet-root.md) | 42 | `result-track:12d12ed8edf141d6fd680a99c5ae13d9fae9a3c7abbb25e35087ec9fb8ccacb5` |
+| 8 | `def` | [sourceTangent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SourcePhaseJet.lean/declarations/sourcetangent.md) | 49 | `declaration-track:46c0b2e2a9c4fd24bb64bc0c7812d0058fc90214f98348db9f1d82c8ab1e3d38` |
+| 9 | `theorem` | [source_tangent_mem_jacobson](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SourcePhaseJet.lean/declarations/source-tangent-mem-jacobson.md) | 53 | `result-track:2275d33e2aa75697caac920cb91b1da9a5312a6d45f82aee95e6a12cd068da45` |
+| 10 | `theorem` | [source_tangent_observation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SourcePhaseJet.lean/declarations/source-tangent-observation.md) | 59 | `result-track:0920bab716e35b2dccf4bf41370c54f96f7400490d65c257643bbfb54d6d8d36` |
+| 11 | `theorem` | [source_tangent_coordinate_jet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SourcePhaseJet.lean/declarations/source-tangent-coordinate-jet.md) | 64 | `result-track:fb974ff39641f9ec1aef59823980ac97fa8bf9eedad18791b0731437281d08d2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

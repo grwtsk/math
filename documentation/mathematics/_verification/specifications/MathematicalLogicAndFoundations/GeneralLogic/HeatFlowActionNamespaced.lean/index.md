@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/HeatFlowActionNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/HeatFlowActionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/HeatFlowActionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/HeatFlowActionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [HeatFlowAction](../../../../../MathematicalLogicAndFoundations/GeneralLogic/HeatFlowActionNamespaced.lean/declarations/heatflowaction.md) | 34 | `declaration-track:4e462a1c303794aa39c0d6d1e812783d8a9e5eece9b9ea161c595972ed9b7e9d` |
-| 2 | `theorem` | [heat_flow_identity_at_zero](../../../../../MathematicalLogicAndFoundations/GeneralLogic/HeatFlowActionNamespaced.lean/declarations/heat-flow-identity-at-zero.md) | 45 | `result-track:a47148b8183292236ad86e1ef27519be28e2953cc401133e2722838293708e52` |
-| 3 | `theorem` | [heat_flow_semigroup](../../../../../MathematicalLogicAndFoundations/GeneralLogic/HeatFlowActionNamespaced.lean/declarations/heat-flow-semigroup.md) | 52 | `result-track:4b7b7c660ed2dbc7844a91597e8b42936a1d5702a4539d3034e3b545cee690dd` |
+| 1 | `structure` | [HeatFlowAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/HeatFlowActionNamespaced.lean/declarations/heatflowaction.md) | 34 | `declaration-track:4e462a1c303794aa39c0d6d1e812783d8a9e5eece9b9ea161c595972ed9b7e9d` |
+| 2 | `theorem` | [heat_flow_identity_at_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/HeatFlowActionNamespaced.lean/declarations/heat-flow-identity-at-zero.md) | 45 | `result-track:a47148b8183292236ad86e1ef27519be28e2953cc401133e2722838293708e52` |
+| 3 | `theorem` | [heat_flow_semigroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/HeatFlowActionNamespaced.lean/declarations/heat-flow-semigroup.md) | 52 | `result-track:4b7b7c660ed2dbc7844a91597e8b42936a1d5702a4539d3034e3b545cee690dd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

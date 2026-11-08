@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/RawPairedAffineCancellation.lean/index.md) · [Full source](../../../../NumberTheory/RawPairedAffineCancellation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RawPairedAffineCancellation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RawPairedAffineCancellation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Chebyshev.RawPairedOscillation`](../../../../MeasureAndIntegration/RawPairedOscillation.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.RawPairedOscillation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RawPairedOscillation.lean/index.md) — import line 3; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [pairedDifference](../../../../NumberTheory/RawPairedAffineCancellation.lean/declarations/paireddifference.md) | 14 | `declaration-track:63ebbccf9e7204608e84b4b65d68355372af4548127d1fece93ad282317b6c58` |
-| 2 | `theorem` | [pairedDifference_affine](../../../../NumberTheory/RawPairedAffineCancellation.lean/declarations/paireddifference-affine.md) | 17 | `result-track:0cb60cbf6d857bd775ecb02c50ad8cafba0b3b34c9feb88d5418a9a37a11406d` |
-| 3 | `theorem` | [raw_pair_eq_zero_head_and_correction](../../../../NumberTheory/RawPairedAffineCancellation.lean/declarations/raw-pair-eq-zero-head-and-correction.md) | 23 | `result-track:d483a1abe4b87b209264e6eba3da47859892c0923122307f7eb6fb0950b33586` |
+| 1 | `def` | [pairedDifference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RawPairedAffineCancellation.lean/declarations/paireddifference.md) | 14 | `declaration-track:63ebbccf9e7204608e84b4b65d68355372af4548127d1fece93ad282317b6c58` |
+| 2 | `theorem` | [pairedDifference_affine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RawPairedAffineCancellation.lean/declarations/paireddifference-affine.md) | 17 | `result-track:0cb60cbf6d857bd775ecb02c50ad8cafba0b3b34c9feb88d5418a9a37a11406d` |
+| 3 | `theorem` | [raw_pair_eq_zero_head_and_correction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RawPairedAffineCancellation.lean/declarations/raw-pair-eq-zero-head-and-correction.md) | 23 | `result-track:d483a1abe4b87b209264e6eba3da47859892c0923122307f7eb6fb0950b33586` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/TaylorIntegralNamespacedPublic.lean/index.md) · [Full source](../../../../RealFunctions/TaylorIntegralNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TaylorIntegralNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TaylorIntegralNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [DifferentiableAt.deriv_comp_add_smul](../../../../RealFunctions/TaylorIntegralNamespacedPublic.lean/declarations/differentiableat-deriv-comp-add-smul.md) | 45 | `result-track:9fc787289487932b38b3e973d1d1713a81e0af5c93165bedc07e11ec597ae23d` |
-| 2 | `theorem` | [ContDiffAt.deriv_fderiv_add_smul](../../../../RealFunctions/TaylorIntegralNamespacedPublic.lean/declarations/contdiffat-deriv-fderiv-add-smul.md) | 52 | `result-track:638c7f95e080553ec7d19e776e1ac08f7a881668e985fbf6d189bc845371c953` |
-| 3 | `theorem` | [map_add_eq_sum_add_integral_iteratedFDeriv](../../../../RealFunctions/TaylorIntegralNamespacedPublic.lean/declarations/map-add-eq-sum-add-integral-iteratedfderiv.md) | 77 | `result-track:4b740fbf97ee27d7d06a3f7473d4db337bee41d06e31467a2d3417b9cbc46e14` |
+| 1 | `theorem` | [DifferentiableAt.deriv_comp_add_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TaylorIntegralNamespacedPublic.lean/declarations/differentiableat-deriv-comp-add-smul.md) | 45 | `result-track:9fc787289487932b38b3e973d1d1713a81e0af5c93165bedc07e11ec597ae23d` |
+| 2 | `theorem` | [ContDiffAt.deriv_fderiv_add_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TaylorIntegralNamespacedPublic.lean/declarations/contdiffat-deriv-fderiv-add-smul.md) | 52 | `result-track:638c7f95e080553ec7d19e776e1ac08f7a881668e985fbf6d189bc845371c953` |
+| 3 | `theorem` | [map_add_eq_sum_add_integral_iteratedFDeriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TaylorIntegralNamespacedPublic.lean/declarations/map-add-eq-sum-add-integral-iteratedfderiv.md) | 77 | `result-track:4b740fbf97ee27d7d06a3f7473d4db337bee41d06e31467a2d3417b9cbc46e14` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

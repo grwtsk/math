@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ResolverNamespacedFrontierUnknownKind.lean/index.md) · [Full source](../../../../Combinatorics/ResolverNamespacedFrontierUnknownKind.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResolverNamespacedFrontierUnknownKind.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResolverNamespacedFrontierUnknownKind.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -63,15 +63,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [FrontierUnknownKind](../../../../Combinatorics/ResolverNamespacedFrontierUnknownKind.lean/declarations/frontierunknownkind.md) | 32 | `declaration-track:08f58f893122edbb06a7ddac36ae900a042c5ee480053492d85b1c9dd6091246` |
-| 2 | `inductive` | [RefinementRejection](../../../../Combinatorics/ResolverNamespacedFrontierUnknownKind.lean/declarations/refinementrejection.md) | 47 | `declaration-track:4def7958f59af11c2eb16d03fa18a1164e652248a7273d6611e47d65b071d2b8` |
-| 3 | `inductive` | [FrontierResolution](../../../../Combinatorics/ResolverNamespacedFrontierUnknownKind.lean/declarations/frontierresolution.md) | 59 | `declaration-track:9fc00a75cfd40678db9003053c59680ef493ff501208023a3e8cf6793ca19c7e` |
-| 4 | `structure` | [CertifiedFrontierLeaf](../../../../Combinatorics/ResolverNamespacedFrontierUnknownKind.lean/declarations/certifiedfrontierleaf.md) | 76 | `declaration-track:673d558c0408ce937bf4beb1d36082fdaf971514827f832a3ab39d0f95093f55` |
-| 5 | `structure` | [FiniteResolverCut](../../../../Combinatorics/ResolverNamespacedFrontierUnknownKind.lean/declarations/finiteresolvercut.md) | 107 | `declaration-track:4d0011c0706e9b797de1d73806f477838cb2f7725f85ff33d039f777afe4d4b5` |
-| 6 | `def` | [resolve](../../../../Combinatorics/ResolverNamespacedFrontierUnknownKind.lean/declarations/resolve.md) | 133 | `declaration-track:28c876fbcd063e0365a37992102a7d1a183a4310054dd9203209f13ffc61c355` |
-| 7 | `theorem` | [finite_certified_resolver_total](../../../../Combinatorics/ResolverNamespacedFrontierUnknownKind.lean/declarations/finite-certified-resolver-total.md) | 159 | `result-track:a2c6cd91f91634f6b78f23f892b5de379bb76f307fe9e848576a46f3382da7c9` |
-| 8 | `theorem` | [resolver_rejected_only_from_structure](../../../../Combinatorics/ResolverNamespacedFrontierUnknownKind.lean/declarations/resolver-rejected-only-from-structure.md) | 173 | `result-track:90aef7399763709f7bace4f7a57dc92e98b622f2967f992272a22ef3f425bcc3` |
-| 9 | `theorem` | [resolver_unknown_has_named_frontier](../../../../Combinatorics/ResolverNamespacedFrontierUnknownKind.lean/declarations/resolver-unknown-has-named-frontier.md) | 210 | `result-track:d8991f260638f97a4dc4ccf5af1738fa39dd2a54546b9ce9027ffe341100038b` |
+| 1 | `inductive` | [FrontierUnknownKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResolverNamespacedFrontierUnknownKind.lean/declarations/frontierunknownkind.md) | 32 | `declaration-track:08f58f893122edbb06a7ddac36ae900a042c5ee480053492d85b1c9dd6091246` |
+| 2 | `inductive` | [RefinementRejection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResolverNamespacedFrontierUnknownKind.lean/declarations/refinementrejection.md) | 47 | `declaration-track:4def7958f59af11c2eb16d03fa18a1164e652248a7273d6611e47d65b071d2b8` |
+| 3 | `inductive` | [FrontierResolution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResolverNamespacedFrontierUnknownKind.lean/declarations/frontierresolution.md) | 59 | `declaration-track:9fc00a75cfd40678db9003053c59680ef493ff501208023a3e8cf6793ca19c7e` |
+| 4 | `structure` | [CertifiedFrontierLeaf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResolverNamespacedFrontierUnknownKind.lean/declarations/certifiedfrontierleaf.md) | 76 | `declaration-track:673d558c0408ce937bf4beb1d36082fdaf971514827f832a3ab39d0f95093f55` |
+| 5 | `structure` | [FiniteResolverCut](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResolverNamespacedFrontierUnknownKind.lean/declarations/finiteresolvercut.md) | 107 | `declaration-track:4d0011c0706e9b797de1d73806f477838cb2f7725f85ff33d039f777afe4d4b5` |
+| 6 | `def` | [resolve](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResolverNamespacedFrontierUnknownKind.lean/declarations/resolve.md) | 133 | `declaration-track:28c876fbcd063e0365a37992102a7d1a183a4310054dd9203209f13ffc61c355` |
+| 7 | `theorem` | [finite_certified_resolver_total](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResolverNamespacedFrontierUnknownKind.lean/declarations/finite-certified-resolver-total.md) | 159 | `result-track:a2c6cd91f91634f6b78f23f892b5de379bb76f307fe9e848576a46f3382da7c9` |
+| 8 | `theorem` | [resolver_rejected_only_from_structure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResolverNamespacedFrontierUnknownKind.lean/declarations/resolver-rejected-only-from-structure.md) | 173 | `result-track:90aef7399763709f7bace4f7a57dc92e98b622f2967f992272a22ef3f425bcc3` |
+| 9 | `theorem` | [resolver_unknown_has_named_frontier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResolverNamespacedFrontierUnknownKind.lean/declarations/resolver-unknown-has-named-frontier.md) | 210 | `result-track:d8991f260638f97a4dc4ccf5af1738fa39dd2a54546b9ce9027ffe341100038b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

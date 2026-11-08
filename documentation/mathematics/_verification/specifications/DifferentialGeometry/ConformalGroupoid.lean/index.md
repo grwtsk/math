@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../DifferentialGeometry/ConformalGroupoid.lean/index.md) · [Full source](../../../../DifferentialGeometry/ConformalGroupoid.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/ConformalGroupoid.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/ConformalGroupoid.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [conformalPregroupoid](../../../../DifferentialGeometry/ConformalGroupoid.lean/declarations/conformalpregroupoid.md) | 27 | `declaration-track:b4c288d1c6c443e40379d9d8b3f0747a8e9b58c368a170a5a94ecd5ba0ea9c64` |
-| 2 | `def` | [conformalGroupoid](../../../../DifferentialGeometry/ConformalGroupoid.lean/declarations/conformalgroupoid.md) | 37 | `declaration-track:371a5294e7b2c7f03313fbcc50ecfd7de38063442bd0b1b3a8b58fc1d1f382ae` |
+| 1 | `def` | [conformalPregroupoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/ConformalGroupoid.lean/declarations/conformalpregroupoid.md) | 27 | `declaration-track:b4c288d1c6c443e40379d9d8b3f0747a8e9b58c368a170a5a94ecd5ba0ea9c64` |
+| 2 | `def` | [conformalGroupoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/ConformalGroupoid.lean/declarations/conformalgroupoid.md) | 37 | `declaration-track:371a5294e7b2c7f03313fbcc50ecfd7de38063442bd0b1b3a8b58fc1d1f382ae` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/IntPublicEdition1.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/IntPublicEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IntPublicEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IntPublicEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sum_replicate_int](../../../../../ComputerScience/AlgorithmsInComputerScience/IntPublicEdition1.lean/declarations/sum-replicate-int.md) | 21 | `result-track:150e612a56fda6d3d7d4379aeded5c6faa9ba5182292787a7538aeb4ccbe6e65` |
-| 2 | `theorem` | [sum_append_int](../../../../../ComputerScience/AlgorithmsInComputerScience/IntPublicEdition1.lean/declarations/sum-append-int.md) | 24 | `result-track:c0c5fc2e25017cc02729f20e5680b8726daede108d97e3cb28009cc43c836457` |
-| 3 | `theorem` | [sum_reverse_int](../../../../../ComputerScience/AlgorithmsInComputerScience/IntPublicEdition1.lean/declarations/sum-reverse-int.md) | 28 | `result-track:90281e37af225fb7719846e299840159fce8ba74e456f9633ade22a774f271eb` |
-| 4 | `theorem` | [sum_eq_foldl_int](../../../../../ComputerScience/AlgorithmsInComputerScience/IntPublicEdition1.lean/declarations/sum-eq-foldl-int.md) | 31 | `result-track:a60a172bff230322746d5b1373431d2a6d4acc86331cf90b9aeff0ae38d84879` |
-| 5 | `theorem` | [prod_replicate_int](../../../../../ComputerScience/AlgorithmsInComputerScience/IntPublicEdition1.lean/declarations/prod-replicate-int.md) | 34 | `result-track:c2dac0555df62f4b73512ed0a44d93393036e84becb328cac6abcc0a6c84979d` |
-| 6 | `theorem` | [prod_append_int](../../../../../ComputerScience/AlgorithmsInComputerScience/IntPublicEdition1.lean/declarations/prod-append-int.md) | 37 | `result-track:8eda2fd0661ec97beb5fbfde092432761f30619d419eb18ff5d5a119d9bc5775` |
-| 7 | `theorem` | [prod_reverse_int](../../../../../ComputerScience/AlgorithmsInComputerScience/IntPublicEdition1.lean/declarations/prod-reverse-int.md) | 41 | `result-track:81535b540f15c59960959afbf761c79c5bdf2a56fe56e2151bc7f1f8c3a3f892` |
-| 8 | `theorem` | [prod_eq_foldl_int](../../../../../ComputerScience/AlgorithmsInComputerScience/IntPublicEdition1.lean/declarations/prod-eq-foldl-int.md) | 44 | `result-track:e87101d40b08edb39e4924de65749b39c8ad869e7da10657cf4cbef24c9f1902` |
+| 1 | `theorem` | [sum_replicate_int](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IntPublicEdition1.lean/declarations/sum-replicate-int.md) | 21 | `result-track:150e612a56fda6d3d7d4379aeded5c6faa9ba5182292787a7538aeb4ccbe6e65` |
+| 2 | `theorem` | [sum_append_int](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IntPublicEdition1.lean/declarations/sum-append-int.md) | 24 | `result-track:c0c5fc2e25017cc02729f20e5680b8726daede108d97e3cb28009cc43c836457` |
+| 3 | `theorem` | [sum_reverse_int](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IntPublicEdition1.lean/declarations/sum-reverse-int.md) | 28 | `result-track:90281e37af225fb7719846e299840159fce8ba74e456f9633ade22a774f271eb` |
+| 4 | `theorem` | [sum_eq_foldl_int](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IntPublicEdition1.lean/declarations/sum-eq-foldl-int.md) | 31 | `result-track:a60a172bff230322746d5b1373431d2a6d4acc86331cf90b9aeff0ae38d84879` |
+| 5 | `theorem` | [prod_replicate_int](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IntPublicEdition1.lean/declarations/prod-replicate-int.md) | 34 | `result-track:c2dac0555df62f4b73512ed0a44d93393036e84becb328cac6abcc0a6c84979d` |
+| 6 | `theorem` | [prod_append_int](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IntPublicEdition1.lean/declarations/prod-append-int.md) | 37 | `result-track:8eda2fd0661ec97beb5fbfde092432761f30619d419eb18ff5d5a119d9bc5775` |
+| 7 | `theorem` | [prod_reverse_int](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IntPublicEdition1.lean/declarations/prod-reverse-int.md) | 41 | `result-track:81535b540f15c59960959afbf761c79c5bdf2a56fe56e2151bc7f1f8c3a3f892` |
+| 8 | `theorem` | [prod_eq_foldl_int](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IntPublicEdition1.lean/declarations/prod-eq-foldl-int.md) | 44 | `result-track:e87101d40b08edb39e4924de65749b39c8ad869e7da10657cf4cbef24c9f1902` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

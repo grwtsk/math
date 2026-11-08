@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/RingSemiconjNamespacedAligned.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/RingSemiconjNamespacedAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingSemiconjNamespacedAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingSemiconjNamespacedAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [add_right](../../../../AssociativeRingsAndAlgebras/RingSemiconjNamespacedAligned.lean/declarations/add-right.md) | 41 | `result-track:77a177cf347dc6ed6536df2e0e8bf86b2963ce39aff45555e2d6e597a703b8e9` |
-| 2 | `theorem` | [add_left](../../../../AssociativeRingsAndAlgebras/RingSemiconjNamespacedAligned.lean/declarations/add-left.md) | 47 | `result-track:4ca82db81dc88156a1f427cb5d40eae6411df06d209641665b8bf9c4cfd50e64` |
-| 3 | `theorem` | [neg_right](../../../../AssociativeRingsAndAlgebras/RingSemiconjNamespacedAligned.lean/declarations/neg-right.md) | 56 | `result-track:aaf7fb6e10dc72c77a4333f60ad052eb52a2dd03f2b3ed4b271adecacc08fa8a` |
-| 4 | `theorem` | [neg_right_iff](../../../../AssociativeRingsAndAlgebras/RingSemiconjNamespacedAligned.lean/declarations/neg-right-iff.md) | 61 | `result-track:e903d16d0c8b28a8eb2c2a73f03241926f2c0f92c8141523c85ae7b6c1be42af` |
-| 5 | `theorem` | [neg_left](../../../../AssociativeRingsAndAlgebras/RingSemiconjNamespacedAligned.lean/declarations/neg-left.md) | 65 | `result-track:46dd0b1662c73ff5d2e217ea46dfae6876d0c755aa39f41a87924c64198b5c95` |
-| 6 | `theorem` | [neg_left_iff](../../../../AssociativeRingsAndAlgebras/RingSemiconjNamespacedAligned.lean/declarations/neg-left-iff.md) | 70 | `result-track:35e7f48e00cc4f86a6fc537a5e02007c2e1179fc2fe4ac050729b2667de66307` |
-| 7 | `theorem` | [neg_one_right](../../../../AssociativeRingsAndAlgebras/RingSemiconjNamespacedAligned.lean/declarations/neg-one-right.md) | 81 | `result-track:2849bf8d3dde5d4e45831e0d3f559e1b956e3433576ccc1e455e94966b05557b` |
-| 8 | `theorem` | [neg_one_left](../../../../AssociativeRingsAndAlgebras/RingSemiconjNamespacedAligned.lean/declarations/neg-one-left.md) | 86 | `result-track:c866b9f525d5e7c896848afa0b63f85dfbdfc5c39853c49c587ba969652414c2` |
-| 9 | `theorem` | [sub_right](../../../../AssociativeRingsAndAlgebras/RingSemiconjNamespacedAligned.lean/declarations/sub-right.md) | 97 | `result-track:7f1d5936babf4842436ddcf35b6a9daaad1362b680fc61b331dd7952394f07cf` |
-| 10 | `theorem` | [sub_left](../../../../AssociativeRingsAndAlgebras/RingSemiconjNamespacedAligned.lean/declarations/sub-left.md) | 103 | `result-track:7833f7639e721c50e1a55543c897025dd74837e6e7eb3474837ccc8d607dce32` |
+| 1 | `theorem` | [add_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingSemiconjNamespacedAligned.lean/declarations/add-right.md) | 41 | `result-track:77a177cf347dc6ed6536df2e0e8bf86b2963ce39aff45555e2d6e597a703b8e9` |
+| 2 | `theorem` | [add_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingSemiconjNamespacedAligned.lean/declarations/add-left.md) | 47 | `result-track:4ca82db81dc88156a1f427cb5d40eae6411df06d209641665b8bf9c4cfd50e64` |
+| 3 | `theorem` | [neg_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingSemiconjNamespacedAligned.lean/declarations/neg-right.md) | 56 | `result-track:aaf7fb6e10dc72c77a4333f60ad052eb52a2dd03f2b3ed4b271adecacc08fa8a` |
+| 4 | `theorem` | [neg_right_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingSemiconjNamespacedAligned.lean/declarations/neg-right-iff.md) | 61 | `result-track:e903d16d0c8b28a8eb2c2a73f03241926f2c0f92c8141523c85ae7b6c1be42af` |
+| 5 | `theorem` | [neg_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingSemiconjNamespacedAligned.lean/declarations/neg-left.md) | 65 | `result-track:46dd0b1662c73ff5d2e217ea46dfae6876d0c755aa39f41a87924c64198b5c95` |
+| 6 | `theorem` | [neg_left_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingSemiconjNamespacedAligned.lean/declarations/neg-left-iff.md) | 70 | `result-track:35e7f48e00cc4f86a6fc537a5e02007c2e1179fc2fe4ac050729b2667de66307` |
+| 7 | `theorem` | [neg_one_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingSemiconjNamespacedAligned.lean/declarations/neg-one-right.md) | 81 | `result-track:2849bf8d3dde5d4e45831e0d3f559e1b956e3433576ccc1e455e94966b05557b` |
+| 8 | `theorem` | [neg_one_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingSemiconjNamespacedAligned.lean/declarations/neg-one-left.md) | 86 | `result-track:c866b9f525d5e7c896848afa0b63f85dfbdfc5c39853c49c587ba969652414c2` |
+| 9 | `theorem` | [sub_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingSemiconjNamespacedAligned.lean/declarations/sub-right.md) | 97 | `result-track:7f1d5936babf4842436ddcf35b6a9daaad1362b680fc61b331dd7952394f07cf` |
+| 10 | `theorem` | [sub_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingSemiconjNamespacedAligned.lean/declarations/sub-left.md) | 103 | `result-track:7833f7639e721c50e1a55543c897025dd74837e6e7eb3474837ccc8d607dce32` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

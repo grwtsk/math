@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/Imo1960Q2Public.lean/index.md) · [Full source](../../../../RealFunctions/Imo1960Q2Public.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo1960Q2Public.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo1960Q2Public.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [IsGood](../../../../RealFunctions/Imo1960Q2Public.lean/declarations/isgood.md) | 35 | `declaration-track:53e21be4ca7c2e6379f6c3681b8cb0ea6f4bd74f3241a12747d052ab6d889f06` |
-| 2 | `theorem` | [isGood_iff](../../../../RealFunctions/Imo1960Q2Public.lean/declarations/isgood-iff.md) | 45 | `result-track:8317000b89d55d4d8fb0028b8ac8679971ba33208fd51a5af2440740f431c03f` |
+| 1 | `structure` | [IsGood](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo1960Q2Public.lean/declarations/isgood.md) | 35 | `declaration-track:53e21be4ca7c2e6379f6c3681b8cb0ea6f4bd74f3241a12747d052ab6d889f06` |
+| 2 | `theorem` | [isGood_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Imo1960Q2Public.lean/declarations/isgood-iff.md) | 45 | `result-track:8317000b89d55d4d8fb0028b8ac8679971ba33208fd51a5af2440740f431c03f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/Shift.lean/index.md) · [Full source](../../../../RealFunctions/Shift.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Shift.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Shift.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,20 +59,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [HasDerivAt.comp_const_add](../../../../RealFunctions/Shift.lean/declarations/hasderivat-comp-const-add.md) | 23 | `result-track:02bcea5d99bc9eb501cd33b12516b149b08ece091b0d2d5f6b02a2daec288aeb` |
-| 2 | `lemma` | [HasDerivAt.comp_add_const](../../../../RealFunctions/Shift.lean/declarations/hasderivat-comp-add-const.md) | 28 | `result-track:ee0f76d08f46da7ee2db979a4c4b1ef9463abb4d46c53cad12f17b890f10fd78` |
-| 3 | `lemma` | [HasDerivAt.comp_const_sub](../../../../RealFunctions/Shift.lean/declarations/hasderivat-comp-const-sub.md) | 33 | `result-track:5b2d71ff543df21237ef00eacd55d3b409eca1b3f029c6a85c029a941a961e37` |
-| 4 | `lemma` | [HasDerivAt.comp_sub_const](../../../../RealFunctions/Shift.lean/declarations/hasderivat-comp-sub-const.md) | 38 | `result-track:b8cacb8177289da5a2ee6b5c4422b12ece1aca78cd3f5e5ba46da9f9765911ee` |
-| 5 | `lemma` | [derivWithin_comp_neg](../../../../RealFunctions/Shift.lean/declarations/derivwithin-comp-neg.md) | 45 | `result-track:be4def1c5b407b5d13cc7bd7e9ed65532c84e47fb45fb8ab481bc5cc0f2a38b6` |
-| 6 | `lemma` | [deriv_comp_neg](../../../../RealFunctions/Shift.lean/declarations/deriv-comp-neg.md) | 49 | `result-track:52ef93b136186797df9937fcd2254417dac3acfdeb1804672a31f15a6ba5908b` |
-| 7 | `lemma` | [derivWithin_comp_const_add](../../../../RealFunctions/Shift.lean/declarations/derivwithin-comp-const-add.md) | 53 | `result-track:3b93916cfdb2f2479be1cdb07a4ed84ed4f76d3ce093144e2b0d282affd89f2e` |
-| 8 | `lemma` | [deriv_comp_const_add](../../../../RealFunctions/Shift.lean/declarations/deriv-comp-const-add.md) | 58 | `result-track:6d65ff778dc36b56b7f49df20ef4756aefa7e080d1d1b25b4904b9d0889e7cdb` |
-| 9 | `lemma` | [derivWithin_comp_add_const](../../../../RealFunctions/Shift.lean/declarations/derivwithin-comp-add-const.md) | 62 | `result-track:d2de838f7dd43921b5c49223aac8f00eb6fe509566eefc9eddb00b2b28fb6558` |
-| 10 | `lemma` | [deriv_comp_add_const](../../../../RealFunctions/Shift.lean/declarations/deriv-comp-add-const.md) | 67 | `result-track:e0def5c1a1ff4a1a46aef5395ab17871443ef25d6e72979cd6cd2dc043cca05e` |
-| 11 | `lemma` | [derivWithin_comp_const_sub](../../../../RealFunctions/Shift.lean/declarations/derivwithin-comp-const-sub.md) | 70 | `result-track:a004147435763cbc6024fff4419c57fab6af6225516f69d45c8e477869868756` |
-| 12 | `lemma` | [deriv_comp_const_sub](../../../../RealFunctions/Shift.lean/declarations/deriv-comp-const-sub.md) | 75 | `result-track:f982fad1ba8e09533cf8fec7313e864edb21825c2629f2d0985f689782f39d79` |
-| 13 | `lemma` | [derivWithin_comp_sub_const](../../../../RealFunctions/Shift.lean/declarations/derivwithin-comp-sub-const.md) | 78 | `result-track:bccbdffd4fabff4620c5bfa1a32f5d231bf1e24bceccda85f85cbaf645ee702a` |
-| 14 | `lemma` | [deriv_comp_sub_const](../../../../RealFunctions/Shift.lean/declarations/deriv-comp-sub-const.md) | 82 | `result-track:435f7e3bb98ce035650ab3b311308b197d1986d9531aa10fe3e4437490a38ec9` |
+| 1 | `lemma` | [HasDerivAt.comp_const_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Shift.lean/declarations/hasderivat-comp-const-add.md) | 23 | `result-track:02bcea5d99bc9eb501cd33b12516b149b08ece091b0d2d5f6b02a2daec288aeb` |
+| 2 | `lemma` | [HasDerivAt.comp_add_const](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Shift.lean/declarations/hasderivat-comp-add-const.md) | 28 | `result-track:ee0f76d08f46da7ee2db979a4c4b1ef9463abb4d46c53cad12f17b890f10fd78` |
+| 3 | `lemma` | [HasDerivAt.comp_const_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Shift.lean/declarations/hasderivat-comp-const-sub.md) | 33 | `result-track:5b2d71ff543df21237ef00eacd55d3b409eca1b3f029c6a85c029a941a961e37` |
+| 4 | `lemma` | [HasDerivAt.comp_sub_const](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Shift.lean/declarations/hasderivat-comp-sub-const.md) | 38 | `result-track:b8cacb8177289da5a2ee6b5c4422b12ece1aca78cd3f5e5ba46da9f9765911ee` |
+| 5 | `lemma` | [derivWithin_comp_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Shift.lean/declarations/derivwithin-comp-neg.md) | 45 | `result-track:be4def1c5b407b5d13cc7bd7e9ed65532c84e47fb45fb8ab481bc5cc0f2a38b6` |
+| 6 | `lemma` | [deriv_comp_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Shift.lean/declarations/deriv-comp-neg.md) | 49 | `result-track:52ef93b136186797df9937fcd2254417dac3acfdeb1804672a31f15a6ba5908b` |
+| 7 | `lemma` | [derivWithin_comp_const_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Shift.lean/declarations/derivwithin-comp-const-add.md) | 53 | `result-track:3b93916cfdb2f2479be1cdb07a4ed84ed4f76d3ce093144e2b0d282affd89f2e` |
+| 8 | `lemma` | [deriv_comp_const_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Shift.lean/declarations/deriv-comp-const-add.md) | 58 | `result-track:6d65ff778dc36b56b7f49df20ef4756aefa7e080d1d1b25b4904b9d0889e7cdb` |
+| 9 | `lemma` | [derivWithin_comp_add_const](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Shift.lean/declarations/derivwithin-comp-add-const.md) | 62 | `result-track:d2de838f7dd43921b5c49223aac8f00eb6fe509566eefc9eddb00b2b28fb6558` |
+| 10 | `lemma` | [deriv_comp_add_const](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Shift.lean/declarations/deriv-comp-add-const.md) | 67 | `result-track:e0def5c1a1ff4a1a46aef5395ab17871443ef25d6e72979cd6cd2dc043cca05e` |
+| 11 | `lemma` | [derivWithin_comp_const_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Shift.lean/declarations/derivwithin-comp-const-sub.md) | 70 | `result-track:a004147435763cbc6024fff4419c57fab6af6225516f69d45c8e477869868756` |
+| 12 | `lemma` | [deriv_comp_const_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Shift.lean/declarations/deriv-comp-const-sub.md) | 75 | `result-track:f982fad1ba8e09533cf8fec7313e864edb21825c2629f2d0985f689782f39d79` |
+| 13 | `lemma` | [derivWithin_comp_sub_const](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Shift.lean/declarations/derivwithin-comp-sub-const.md) | 78 | `result-track:bccbdffd4fabff4620c5bfa1a32f5d231bf1e24bceccda85f85cbaf645ee702a` |
+| 14 | `lemma` | [deriv_comp_sub_const](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Shift.lean/declarations/deriv-comp-sub-const.md) | 82 | `result-track:435f7e3bb98ce035650ab3b311308b197d1986d9531aa10fe3e4437490a38ec9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

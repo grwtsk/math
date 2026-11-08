@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/Simplex.lean/index.md) · [Full source](../../../../Combinatorics/Simplex.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Simplex.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Simplex.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,24 +59,24 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SimplexPoint](../../../../Combinatorics/Simplex.lean/declarations/simplexpoint.md) | 19 | `declaration-track:0536f1b33568031e061a29d45067104de5a3d1ce3a501d28e6f04236554020b4` |
-| 2 | `instance` | [instCoeFunSimplexPoint](../../../../Combinatorics/Simplex.lean/declarations/instcoefunsimplexpoint.md) | 28 | `declaration-track:19bba018653d4ca894fc06724875b024c81f4f9fade1ce5b4a1fa1d7e2f39fe5` |
-| 3 | `theorem` | [ext](../../../../Combinatorics/Simplex.lean/declarations/ext.md) | 32 | `result-track:392894ec0d099297fbbd8f5c54d07240a938e7a5bec3655f60688ebdb78d1f83` |
-| 4 | `def` | [reindex](../../../../Combinatorics/Simplex.lean/declarations/reindex-source-edition-2.md) | 43 | `declaration-track:db2252b36a1c93e3a56198609db5c71436b9189410ddf5457955214a90b3bbc3` |
-| 5 | `theorem` | [reindex_apply](../../../../Combinatorics/Simplex.lean/declarations/reindex-apply-source-edition-2.md) | 51 | `result-track:52a658287a66ac39ee091afe9dbebb50bdc4e95249c89517d872e78d1d550e5e` |
-| 6 | `theorem` | [reindex_refl](../../../../Combinatorics/Simplex.lean/declarations/reindex-refl.md) | 56 | `result-track:68fda7c3ec267f456523cfec44a7447a93bd88d46d7bed275145a29ea8a6582d` |
-| 7 | `theorem` | [reindex_trans](../../../../Combinatorics/Simplex.lean/declarations/reindex-trans.md) | 62 | `result-track:77780327141c4f0224bd2a22af61d309f0e04fb2fdaa430850b05046ab0b75fe` |
-| 8 | `def` | [barycentric](../../../../Combinatorics/Simplex.lean/declarations/barycentric.md) | 69 | `declaration-track:5a976c9ba815d78d43d5510b4b9c990bdd1a9ad298f90f6aa5fa1ebd26b3fee9` |
-| 9 | `theorem` | [barycentric_apply](../../../../Combinatorics/Simplex.lean/declarations/barycentric-apply.md) | 86 | `result-track:1a697e41fa5aba8aff4894002b01f3e962121a1b28b2405472a7cdde87fbbd71` |
-| 10 | `def` | [merge](../../../../Combinatorics/Simplex.lean/declarations/merge.md) | 94 | `declaration-track:75a82d395dd2825e220757afec3f5f1635c0c7e3a94b26e951f29483df392251` |
-| 11 | `theorem` | [merge_apply](../../../../Combinatorics/Simplex.lean/declarations/merge-apply.md) | 110 | `result-track:ae39fc69ce2d35d500437db45070ed158e47d330ca5010bf8ac8ab50fcd6c50b` |
-| 12 | `def` | [hierarchical](../../../../Combinatorics/Simplex.lean/declarations/hierarchical.md) | 116 | `declaration-track:1defe20f21517b44176f9749a0c80498564c9d5290648fe9f5d43a868341f2fc` |
-| 13 | `theorem` | [hierarchical_apply](../../../../Combinatorics/Simplex.lean/declarations/hierarchical-apply.md) | 135 | `result-track:b80e0420d2e5edbb5fa889bf9c1ec06b9605a35171cb6d38751f9b520b3635ce` |
-| 14 | `structure` | [InteriorSimplexPoint](../../../../Combinatorics/Simplex.lean/declarations/interiorsimplexpoint.md) | 145 | `declaration-track:822c054a9572aae8b9fec240a2f1048c6b33bbb7e946bc65f66bdad25af1efd4` |
-| 15 | `instance` | [instCoeFunInteriorSimplexPoint](../../../../Combinatorics/Simplex.lean/declarations/instcoefuninteriorsimplexpoint.md) | 153 | `declaration-track:881e273708163606549bf96759951888345ffe1e90cbaaf2ddb81f3415e5b472` |
-| 16 | `theorem` | [ext](../../../../Combinatorics/Simplex.lean/declarations/ext-source-edition-2.md) | 158 | `result-track:b608a86ab57b7c1e967f1ca3fce9b51318d08d123ca1a04e1128037c9a0b546b` |
-| 17 | `def` | [reindex](../../../../Combinatorics/Simplex.lean/declarations/reindex.md) | 170 | `declaration-track:85fd7087dde4dede09d63aab88f725c995e44e5c3380d5c89102dbb8c277c503` |
-| 18 | `theorem` | [reindex_apply](../../../../Combinatorics/Simplex.lean/declarations/reindex-apply.md) | 176 | `result-track:27ad0de4c070987248b849874f3414cf54d58f32791da2db052a9e0479b36112` |
+| 1 | `structure` | [SimplexPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Simplex.lean/declarations/simplexpoint.md) | 19 | `declaration-track:0536f1b33568031e061a29d45067104de5a3d1ce3a501d28e6f04236554020b4` |
+| 2 | `instance` | [instCoeFunSimplexPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Simplex.lean/declarations/instcoefunsimplexpoint.md) | 28 | `declaration-track:19bba018653d4ca894fc06724875b024c81f4f9fade1ce5b4a1fa1d7e2f39fe5` |
+| 3 | `theorem` | [ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Simplex.lean/declarations/ext.md) | 32 | `result-track:392894ec0d099297fbbd8f5c54d07240a938e7a5bec3655f60688ebdb78d1f83` |
+| 4 | `def` | [reindex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Simplex.lean/declarations/reindex-source-edition-2.md) | 43 | `declaration-track:db2252b36a1c93e3a56198609db5c71436b9189410ddf5457955214a90b3bbc3` |
+| 5 | `theorem` | [reindex_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Simplex.lean/declarations/reindex-apply-source-edition-2.md) | 51 | `result-track:52a658287a66ac39ee091afe9dbebb50bdc4e95249c89517d872e78d1d550e5e` |
+| 6 | `theorem` | [reindex_refl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Simplex.lean/declarations/reindex-refl.md) | 56 | `result-track:68fda7c3ec267f456523cfec44a7447a93bd88d46d7bed275145a29ea8a6582d` |
+| 7 | `theorem` | [reindex_trans](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Simplex.lean/declarations/reindex-trans.md) | 62 | `result-track:77780327141c4f0224bd2a22af61d309f0e04fb2fdaa430850b05046ab0b75fe` |
+| 8 | `def` | [barycentric](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Simplex.lean/declarations/barycentric.md) | 69 | `declaration-track:5a976c9ba815d78d43d5510b4b9c990bdd1a9ad298f90f6aa5fa1ebd26b3fee9` |
+| 9 | `theorem` | [barycentric_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Simplex.lean/declarations/barycentric-apply.md) | 86 | `result-track:1a697e41fa5aba8aff4894002b01f3e962121a1b28b2405472a7cdde87fbbd71` |
+| 10 | `def` | [merge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Simplex.lean/declarations/merge.md) | 94 | `declaration-track:75a82d395dd2825e220757afec3f5f1635c0c7e3a94b26e951f29483df392251` |
+| 11 | `theorem` | [merge_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Simplex.lean/declarations/merge-apply.md) | 110 | `result-track:ae39fc69ce2d35d500437db45070ed158e47d330ca5010bf8ac8ab50fcd6c50b` |
+| 12 | `def` | [hierarchical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Simplex.lean/declarations/hierarchical.md) | 116 | `declaration-track:1defe20f21517b44176f9749a0c80498564c9d5290648fe9f5d43a868341f2fc` |
+| 13 | `theorem` | [hierarchical_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Simplex.lean/declarations/hierarchical-apply.md) | 135 | `result-track:b80e0420d2e5edbb5fa889bf9c1ec06b9605a35171cb6d38751f9b520b3635ce` |
+| 14 | `structure` | [InteriorSimplexPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Simplex.lean/declarations/interiorsimplexpoint.md) | 145 | `declaration-track:822c054a9572aae8b9fec240a2f1048c6b33bbb7e946bc65f66bdad25af1efd4` |
+| 15 | `instance` | [instCoeFunInteriorSimplexPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Simplex.lean/declarations/instcoefuninteriorsimplexpoint.md) | 153 | `declaration-track:881e273708163606549bf96759951888345ffe1e90cbaaf2ddb81f3415e5b472` |
+| 16 | `theorem` | [ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Simplex.lean/declarations/ext-source-edition-2.md) | 158 | `result-track:b608a86ab57b7c1e967f1ca3fce9b51318d08d123ca1a04e1128037c9a0b546b` |
+| 17 | `def` | [reindex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Simplex.lean/declarations/reindex.md) | 170 | `declaration-track:85fd7087dde4dede09d63aab88f725c995e44e5c3380d5c89102dbb8c277c503` |
+| 18 | `theorem` | [reindex_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Simplex.lean/declarations/reindex-apply.md) | 176 | `result-track:27ad0de4c070987248b849874f3414cf54d58f32791da2db052a9e0479b36112` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

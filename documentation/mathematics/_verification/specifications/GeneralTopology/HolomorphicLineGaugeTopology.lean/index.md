@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/HolomorphicLineGaugeTopology.lean/index.md) · [Full source](../../../../GeneralTopology/HolomorphicLineGaugeTopology.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineGaugeTopology.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineGaugeTopology.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.HolomorphicLineGauge`](../../../../GeneralTopology/HolomorphicLineGauge.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.HolomorphicLineGauge`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineGauge.lean/index.md) — import line 1; pinned internal source present.
 - `Mathlib.Tactic.NormNum` — import line 2; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,25 +58,25 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [multiplier](../../../../GeneralTopology/HolomorphicLineGaugeTopology.lean/declarations/multiplier.md) | 24 | `declaration-track:067a03b969e61f1c87b3badd94326e508d59418190fb146d4e3d88c54be16b10` |
-| 2 | `theorem` | [multiplier_apply](../../../../GeneralTopology/HolomorphicLineGaugeTopology.lean/declarations/multiplier-apply.md) | 27 | `result-track:5c09b2a57c0f949c01dca2614b9f48e6f915191fa57e261ae757a0652d3145bc` |
-| 3 | `theorem` | [multiplier_continuousOn](../../../../GeneralTopology/HolomorphicLineGaugeTopology.lean/declarations/multiplier-continuouson.md) | 32 | `result-track:83dff26dda3ca93b5ff34e4334bd0e34c3b10e424b345d94993a98e521be61b9` |
-| 4 | `def` | [fiberMap](../../../../GeneralTopology/HolomorphicLineGaugeTopology.lean/declarations/fibermap.md) | 39 | `declaration-track:9805a7db1da717b57e66805355f3f9108c6b06b53d46eafd5efdb2cfe880295b` |
-| 5 | `theorem` | [fiberMap_symm_apply](../../../../GeneralTopology/HolomorphicLineGaugeTopology.lean/declarations/fibermap-symm-apply.md) | 43 | `result-track:f50f4629ece572dec16b30664bfbb04952747186408ad032d337e1f161d1cb88` |
-| 6 | `theorem` | [fiberMap_apply_symm](../../../../GeneralTopology/HolomorphicLineGaugeTopology.lean/declarations/fibermap-apply-symm.md) | 50 | `result-track:cc13f9c10f3fa253f3401edf9bdd19031408a72d1397cd589f2bf5d75733010d` |
-| 7 | `def` | [fiberEquiv](../../../../GeneralTopology/HolomorphicLineGaugeTopology.lean/declarations/fiberequiv.md) | 58 | `declaration-track:58a7670f5067cf140ea848314d246b2381cd3dc8d9b3dc721f713a417d46a004` |
-| 8 | `def` | [totalMap](../../../../GeneralTopology/HolomorphicLineGaugeTopology.lean/declarations/totalmap.md) | 71 | `declaration-track:f774595f73ad82962490baa0655c0b1d0e3249bced7403dc28b33d8d14889352` |
-| 9 | `theorem` | [totalMap_proj](../../../../GeneralTopology/HolomorphicLineGaugeTopology.lean/declarations/totalmap-proj.md) | 75 | `result-track:29c71d487af2037d587b5357c12ae9e747a3a8f0810a326ff2523a50748ae2b3` |
-| 10 | `theorem` | [totalMap_coordinate](../../../../GeneralTopology/HolomorphicLineGaugeTopology.lean/declarations/totalmap-coordinate.md) | 79 | `result-track:d364ce4e52dd2bd67e50835da315be198dc2b513ad3dfa242c1977f23b59367f` |
-| 11 | `theorem` | [totalMap_continuous](../../../../GeneralTopology/HolomorphicLineGaugeTopology.lean/declarations/totalmap-continuous.md) | 92 | `result-track:703490c6fe7673e47dab3c00adf6733520c60d2003fa04e6f91e3c016073b5cb` |
-| 12 | `def` | [totalHomeomorph](../../../../GeneralTopology/HolomorphicLineGaugeTopology.lean/declarations/totalhomeomorph.md) | 121 | `declaration-track:811a033390c0704aacd2b90b0183c53dfa3a9377671d145ed540e64d6235cbf4` |
-| 13 | `theorem` | [bundleSectionEquiv_value](../../../../GeneralTopology/HolomorphicLineGaugeTopology.lean/declarations/bundlesectionequiv-value.md) | 139 | `result-track:afb5ca50d8c15d66c73881b4d2e4882908c8f10f550296f167af3397d95e6fb0` |
-| 14 | `theorem` | [totalMap_comp](../../../../GeneralTopology/HolomorphicLineGaugeTopology.lean/declarations/totalmap-comp.md) | 148 | `result-track:528bc8a9c94f564033f665f5a5ed424ec59cc47cca49b4a1ef18d17caab0c84f` |
-| 15 | `def` | [constantUnit](../../../../GeneralTopology/HolomorphicLineGaugeTopology.lean/declarations/constantunit.md) | 172 | `declaration-track:2e4c913b4d0887f5d71b48cdefc512bb62a6f457ca303a2f5e7e08b9c840df59` |
-| 16 | `def` | [constantGauge](../../../../GeneralTopology/HolomorphicLineGaugeTopology.lean/declarations/constantgauge.md) | 185 | `declaration-track:93ea9957908cb1edf94727367d59b5c4d0dfe83b76e6918654b3fc18a0ed645a` |
-| 17 | `def` | [twoUnit](../../../../GeneralTopology/HolomorphicLineGaugeTopology.lean/declarations/twounit.md) | 193 | `declaration-track:5b1457a8507b5726aa7a81be0c0777488cd9ea365232eca8d4abaf92e006b748` |
-| 18 | `theorem` | [doubling_not_modelNormPreserving](../../../../GeneralTopology/HolomorphicLineGaugeTopology.lean/declarations/doubling-not-modelnormpreserving.md) | 200 | `result-track:ffd0dfff0a81e589e5a9e6f532bcb7883ef483d5a79468180a16881746006547` |
-| 19 | `theorem` | [unitValue_ne_zero](../../../../GeneralTopology/HolomorphicLineGaugeTopology.lean/declarations/unitvalue-ne-zero.md) | 212 | `result-track:bf61ea662a0db313c597fda5eb698ea077316c95a9b242572b7979424a3dd000` |
+| 1 | `def` | [multiplier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineGaugeTopology.lean/declarations/multiplier.md) | 24 | `declaration-track:067a03b969e61f1c87b3badd94326e508d59418190fb146d4e3d88c54be16b10` |
+| 2 | `theorem` | [multiplier_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineGaugeTopology.lean/declarations/multiplier-apply.md) | 27 | `result-track:5c09b2a57c0f949c01dca2614b9f48e6f915191fa57e261ae757a0652d3145bc` |
+| 3 | `theorem` | [multiplier_continuousOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineGaugeTopology.lean/declarations/multiplier-continuouson.md) | 32 | `result-track:83dff26dda3ca93b5ff34e4334bd0e34c3b10e424b345d94993a98e521be61b9` |
+| 4 | `def` | [fiberMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineGaugeTopology.lean/declarations/fibermap.md) | 39 | `declaration-track:9805a7db1da717b57e66805355f3f9108c6b06b53d46eafd5efdb2cfe880295b` |
+| 5 | `theorem` | [fiberMap_symm_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineGaugeTopology.lean/declarations/fibermap-symm-apply.md) | 43 | `result-track:f50f4629ece572dec16b30664bfbb04952747186408ad032d337e1f161d1cb88` |
+| 6 | `theorem` | [fiberMap_apply_symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineGaugeTopology.lean/declarations/fibermap-apply-symm.md) | 50 | `result-track:cc13f9c10f3fa253f3401edf9bdd19031408a72d1397cd589f2bf5d75733010d` |
+| 7 | `def` | [fiberEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineGaugeTopology.lean/declarations/fiberequiv.md) | 58 | `declaration-track:58a7670f5067cf140ea848314d246b2381cd3dc8d9b3dc721f713a417d46a004` |
+| 8 | `def` | [totalMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineGaugeTopology.lean/declarations/totalmap.md) | 71 | `declaration-track:f774595f73ad82962490baa0655c0b1d0e3249bced7403dc28b33d8d14889352` |
+| 9 | `theorem` | [totalMap_proj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineGaugeTopology.lean/declarations/totalmap-proj.md) | 75 | `result-track:29c71d487af2037d587b5357c12ae9e747a3a8f0810a326ff2523a50748ae2b3` |
+| 10 | `theorem` | [totalMap_coordinate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineGaugeTopology.lean/declarations/totalmap-coordinate.md) | 79 | `result-track:d364ce4e52dd2bd67e50835da315be198dc2b513ad3dfa242c1977f23b59367f` |
+| 11 | `theorem` | [totalMap_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineGaugeTopology.lean/declarations/totalmap-continuous.md) | 92 | `result-track:703490c6fe7673e47dab3c00adf6733520c60d2003fa04e6f91e3c016073b5cb` |
+| 12 | `def` | [totalHomeomorph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineGaugeTopology.lean/declarations/totalhomeomorph.md) | 121 | `declaration-track:811a033390c0704aacd2b90b0183c53dfa3a9377671d145ed540e64d6235cbf4` |
+| 13 | `theorem` | [bundleSectionEquiv_value](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineGaugeTopology.lean/declarations/bundlesectionequiv-value.md) | 139 | `result-track:afb5ca50d8c15d66c73881b4d2e4882908c8f10f550296f167af3397d95e6fb0` |
+| 14 | `theorem` | [totalMap_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineGaugeTopology.lean/declarations/totalmap-comp.md) | 148 | `result-track:528bc8a9c94f564033f665f5a5ed424ec59cc47cca49b4a1ef18d17caab0c84f` |
+| 15 | `def` | [constantUnit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineGaugeTopology.lean/declarations/constantunit.md) | 172 | `declaration-track:2e4c913b4d0887f5d71b48cdefc512bb62a6f457ca303a2f5e7e08b9c840df59` |
+| 16 | `def` | [constantGauge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineGaugeTopology.lean/declarations/constantgauge.md) | 185 | `declaration-track:93ea9957908cb1edf94727367d59b5c4d0dfe83b76e6918654b3fc18a0ed645a` |
+| 17 | `def` | [twoUnit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineGaugeTopology.lean/declarations/twounit.md) | 193 | `declaration-track:5b1457a8507b5726aa7a81be0c0777488cd9ea365232eca8d4abaf92e006b748` |
+| 18 | `theorem` | [doubling_not_modelNormPreserving](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineGaugeTopology.lean/declarations/doubling-not-modelnormpreserving.md) | 200 | `result-track:ffd0dfff0a81e589e5a9e6f532bcb7883ef483d5a79468180a16881746006547` |
+| 19 | `theorem` | [unitValue_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicLineGaugeTopology.lean/declarations/unitvalue-ne-zero.md) | 212 | `result-track:bf61ea662a0db313c597fda5eb698ea077316c95a9b242572b7979424a3dd000` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

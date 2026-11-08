@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/CellularRepresentationNamespaced.lean/index.md) · [Full source](../../../../NumberTheory/CellularRepresentationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CellularRepresentationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CellularRepresentationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,18 +58,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FactorMapRepresentation](../../../../NumberTheory/CellularRepresentationNamespaced.lean/declarations/factormaprepresentation.md) | 27 | `declaration-track:e9fafc6d54a41b1f408e9ee76d54c0de6805f4db285140429f5e613ebec922d7` |
-| 2 | `def` | [FactorMapRepresentation.decode](../../../../NumberTheory/CellularRepresentationNamespaced.lean/declarations/factormaprepresentation-decode.md) | 34 | `declaration-track:f5ad1dacaacfcefa93cd99e73e8653566d61ae547c4af82d0bf5418791de0358` |
-| 3 | `structure` | [CellularArithmeticRepresentation](../../../../NumberTheory/CellularRepresentationNamespaced.lean/declarations/cellulararithmeticrepresentation.md) | 38 | `declaration-track:40cc8b7120689049a72c8186b9d2c11ff4b39c50f676763272d9ccc24388af11` |
-| 4 | `def` | [number](../../../../NumberTheory/CellularRepresentationNamespaced.lean/declarations/number.md) | 43 | `declaration-track:153b60d48d7621be1715cdf95740210265968c0766f1af4ca1f8befaf61c3cef` |
-| 5 | `def` | [decode](../../../../NumberTheory/CellularRepresentationNamespaced.lean/declarations/decode.md) | 47 | `declaration-track:69119b3bf8d14e06cf7e2c749093a652e5ad18a2de65550a96e371e58ba9c0ab` |
-| 6 | `def` | [canonical](../../../../NumberTheory/CellularRepresentationNamespaced.lean/declarations/canonical.md) | 50 | `declaration-track:9b1ef2c64999b54f41711ff6332ae56b9a57165e84149426c36af64ef55a15e8` |
-| 7 | `def` | [encodeFactorMap](../../../../NumberTheory/CellularRepresentationNamespaced.lean/declarations/encodefactormap.md) | 55 | `declaration-track:69a0969578f16309bb931e3bb22c9164d3cdeea6f3885108eafc7442f5545680` |
-| 8 | `def` | [encodePositiveNat](../../../../NumberTheory/CellularRepresentationNamespaced.lean/declarations/encodepositivenat.md) | 67 | `declaration-track:d5c97c5d7a2287e581d1dec77bb669c5171eb5f55b8487043ed2e971575c9650` |
-| 9 | `theorem` | [decode_encode_positiveNat](../../../../NumberTheory/CellularRepresentationNamespaced.lean/declarations/decode-encode-positivenat.md) | 72 | `result-track:cbc6372d8dbcafe53e16b26b0ca617774b833f6ef4db4923ba881e7cfefbbd73` |
-| 10 | `def` | [SameDecoded](../../../../NumberTheory/CellularRepresentationNamespaced.lean/declarations/samedecoded.md) | 77 | `declaration-track:7f45ebad1b2a48947c9f46dfbcd788a74ce04aa69bc43bb46a016a96b8b2aecd` |
-| 11 | `theorem` | [factorMap_unique_of_same_number](../../../../NumberTheory/CellularRepresentationNamespaced.lean/declarations/factormap-unique-of-same-number.md) | 81 | `result-track:e770e16c70fb404cbc9a8adf2cbef17c4b909a7d3670e999fe4970aae60bc775` |
-| 12 | `def` | [canonicalTreeUniquenessTarget](../../../../NumberTheory/CellularRepresentationNamespaced.lean/declarations/canonicaltreeuniquenesstarget.md) | 89 | `declaration-track:13b49a8378a8ce2aee2ba81abefb1f3c7e0ed5e4ff2a7748d39152eeb8c48fac` |
+| 1 | `structure` | [FactorMapRepresentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CellularRepresentationNamespaced.lean/declarations/factormaprepresentation.md) | 27 | `declaration-track:e9fafc6d54a41b1f408e9ee76d54c0de6805f4db285140429f5e613ebec922d7` |
+| 2 | `def` | [FactorMapRepresentation.decode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CellularRepresentationNamespaced.lean/declarations/factormaprepresentation-decode.md) | 34 | `declaration-track:f5ad1dacaacfcefa93cd99e73e8653566d61ae547c4af82d0bf5418791de0358` |
+| 3 | `structure` | [CellularArithmeticRepresentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CellularRepresentationNamespaced.lean/declarations/cellulararithmeticrepresentation.md) | 38 | `declaration-track:40cc8b7120689049a72c8186b9d2c11ff4b39c50f676763272d9ccc24388af11` |
+| 4 | `def` | [number](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CellularRepresentationNamespaced.lean/declarations/number.md) | 43 | `declaration-track:153b60d48d7621be1715cdf95740210265968c0766f1af4ca1f8befaf61c3cef` |
+| 5 | `def` | [decode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CellularRepresentationNamespaced.lean/declarations/decode.md) | 47 | `declaration-track:69119b3bf8d14e06cf7e2c749093a652e5ad18a2de65550a96e371e58ba9c0ab` |
+| 6 | `def` | [canonical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CellularRepresentationNamespaced.lean/declarations/canonical.md) | 50 | `declaration-track:9b1ef2c64999b54f41711ff6332ae56b9a57165e84149426c36af64ef55a15e8` |
+| 7 | `def` | [encodeFactorMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CellularRepresentationNamespaced.lean/declarations/encodefactormap.md) | 55 | `declaration-track:69a0969578f16309bb931e3bb22c9164d3cdeea6f3885108eafc7442f5545680` |
+| 8 | `def` | [encodePositiveNat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CellularRepresentationNamespaced.lean/declarations/encodepositivenat.md) | 67 | `declaration-track:d5c97c5d7a2287e581d1dec77bb669c5171eb5f55b8487043ed2e971575c9650` |
+| 9 | `theorem` | [decode_encode_positiveNat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CellularRepresentationNamespaced.lean/declarations/decode-encode-positivenat.md) | 72 | `result-track:cbc6372d8dbcafe53e16b26b0ca617774b833f6ef4db4923ba881e7cfefbbd73` |
+| 10 | `def` | [SameDecoded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CellularRepresentationNamespaced.lean/declarations/samedecoded.md) | 77 | `declaration-track:7f45ebad1b2a48947c9f46dfbcd788a74ce04aa69bc43bb46a016a96b8b2aecd` |
+| 11 | `theorem` | [factorMap_unique_of_same_number](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CellularRepresentationNamespaced.lean/declarations/factormap-unique-of-same-number.md) | 81 | `result-track:e770e16c70fb404cbc9a8adf2cbef17c4b909a7d3670e999fe4970aae60bc775` |
+| 12 | `def` | [canonicalTreeUniquenessTarget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CellularRepresentationNamespaced.lean/declarations/canonicaltreeuniquenesstarget.md) | 89 | `declaration-track:13b49a8378a8ce2aee2ba81abefb1f3c7e0ed5e4ff2a7748d39152eeb8c48fac` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

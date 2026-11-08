@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/ConsumerProbe.lean/index.md) · [Full source](../../../../RealFunctions/ConsumerProbe.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ConsumerProbe.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ConsumerProbe.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../RealFunctions/ConsumerProbe.lean/declarations/example.md) | 43 | `declaration-track:1a8969c2bb9dcb67ab7bf3001143ffa604dd122657cbc3f5470c6f73422bd3c3` |
-| 2 | `example` | [(anonymous)](../../../../RealFunctions/ConsumerProbe.lean/declarations/example-source-edition-3.md) | 44 | `declaration-track:c6301c4fb1e0de891e4e89c39728620bbf7b883dfb3f14ff6b1f2734dcd66998` |
-| 3 | `example` | [(anonymous)](../../../../RealFunctions/ConsumerProbe.lean/declarations/example-source-edition-2.md) | 46 | `declaration-track:6a4f5e5ddd0db9ceb38812aa56a625f3c73295daf9cf0df53ce2f3946169861c` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ConsumerProbe.lean/declarations/example.md) | 43 | `declaration-track:1a8969c2bb9dcb67ab7bf3001143ffa604dd122657cbc3f5470c6f73422bd3c3` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ConsumerProbe.lean/declarations/example-source-edition-3.md) | 44 | `declaration-track:c6301c4fb1e0de891e4e89c39728620bbf7b883dfb3f14ff6b1f2734dcd66998` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ConsumerProbe.lean/declarations/example-source-edition-2.md) | 46 | `declaration-track:6a4f5e5ddd0db9ceb38812aa56a625f3c73295daf9cf0df53ce2f3946169861c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

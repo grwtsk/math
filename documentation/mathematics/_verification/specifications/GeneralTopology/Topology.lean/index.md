@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/Topology.lean/index.md) · [Full source](../../../../GeneralTopology/Topology.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Topology.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Topology.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,20 +57,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [IntrinsicQuotient](../../../../GeneralTopology/Topology.lean/declarations/intrinsicquotient.md) | 18 | `declaration-track:d041abcfb8e85faec720bff1e14ed71f0bf532be651acd75c98105118d891881` |
-| 2 | `def` | [quotientMap](../../../../GeneralTopology/Topology.lean/declarations/quotientmap.md) | 22 | `declaration-track:6408a80badfdbb78ddbd9b921b9b55e97bf1559d8f24b0254e421ac7b5b990d1` |
-| 3 | `def` | [quotientTopology](../../../../GeneralTopology/Topology.lean/declarations/quotienttopology.md) | 27 | `declaration-track:7fb87cd6ae45892292a60c9bbba2a49c7d6479570eaa3e603747f6331544254a` |
-| 4 | `def` | [IsQuotientOpen](../../../../GeneralTopology/Topology.lean/declarations/isquotientopen.md) | 32 | `declaration-track:2388d4c170a00af83a6fd69737aeb889aaa9735282c3a7e1d7066cd4b6e0ab6a` |
-| 5 | `theorem` | [isQuotientOpen_iff](../../../../GeneralTopology/Topology.lean/declarations/isquotientopen-iff.md) | 38 | `result-track:b3b4280f7f0c51d165b0c736296cb9f65cd84fc7db8d49d803fdf13cf370b1b0` |
-| 6 | `theorem` | [quotientTopology_unique](../../../../GeneralTopology/Topology.lean/declarations/quotienttopology-unique.md) | 46 | `result-track:d6565fb4c53e8271fdf3fbdef9a4d036834e96e9f556f695de2dbcf60feac476` |
-| 7 | `def` | [quotientNeighborhoods](../../../../GeneralTopology/Topology.lean/declarations/quotientneighborhoods.md) | 62 | `declaration-track:e724063432e1eb06843203bed6a22d8f4ee1e63b208381c082fd3b3d57fb5e48` |
-| 8 | `def` | [quotientNeighborhoodFilter](../../../../GeneralTopology/Topology.lean/declarations/quotientneighborhoodfilter.md) | 73 | `declaration-track:0a3b2a826e386411080e19ec4a0f97f2ca6bb5d8457555a727c1dd7b0f8f25d4` |
-| 9 | `theorem` | [mem_quotientNeighborhoodFilter_iff](../../../../GeneralTopology/Topology.lean/declarations/mem-quotientneighborhoodfilter-iff.md) | 80 | `result-track:3a494f95eed0e01f9c6d59618b8eee79aa8065891dc81046e9be4c9655cc07a5` |
-| 10 | `def` | [saturatedNeighborhoods](../../../../GeneralTopology/Topology.lean/declarations/saturatedneighborhoods.md) | 114 | `declaration-track:153c693538824d524f4428dc17bf0cfc02ff8c8ce8ef72f43ad0c000eefa885b` |
-| 11 | `def` | [IsIntrinsicSaturated](../../../../GeneralTopology/Topology.lean/declarations/isintrinsicsaturated.md) | 124 | `declaration-track:f95ce38ed77b1a7b9479dea689db97ad119f3465d7a438fadd92a7bbb458511a` |
-| 12 | `theorem` | [quotient_preimage_isIntrinsicSaturated](../../../../GeneralTopology/Topology.lean/declarations/quotient-preimage-isintrinsicsaturated.md) | 134 | `result-track:140c2c189921311c6f8b95fcc7159c31f1b941bfa8b44f13c08b1799891dbd7e` |
-| 13 | `theorem` | [saturatedNeighborhood_isIntrinsicSaturated](../../../../GeneralTopology/Topology.lean/declarations/saturatedneighborhood-isintrinsicsaturated.md) | 146 | `result-track:334ec5096839a578a667070b8e70be3d9a4bff70bd57c8f71c2121147a3e75f0` |
-| 14 | `theorem` | [mem_quotientNeighborhoods_iff](../../../../GeneralTopology/Topology.lean/declarations/mem-quotientneighborhoods-iff.md) | 156 | `result-track:be41201ef04d465ddbccc249637824bded7f45d98e750f41e1aec3ad226777d5` |
+| 1 | `abbrev` | [IntrinsicQuotient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Topology.lean/declarations/intrinsicquotient.md) | 18 | `declaration-track:d041abcfb8e85faec720bff1e14ed71f0bf532be651acd75c98105118d891881` |
+| 2 | `def` | [quotientMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Topology.lean/declarations/quotientmap.md) | 22 | `declaration-track:6408a80badfdbb78ddbd9b921b9b55e97bf1559d8f24b0254e421ac7b5b990d1` |
+| 3 | `def` | [quotientTopology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Topology.lean/declarations/quotienttopology.md) | 27 | `declaration-track:7fb87cd6ae45892292a60c9bbba2a49c7d6479570eaa3e603747f6331544254a` |
+| 4 | `def` | [IsQuotientOpen](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Topology.lean/declarations/isquotientopen.md) | 32 | `declaration-track:2388d4c170a00af83a6fd69737aeb889aaa9735282c3a7e1d7066cd4b6e0ab6a` |
+| 5 | `theorem` | [isQuotientOpen_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Topology.lean/declarations/isquotientopen-iff.md) | 38 | `result-track:b3b4280f7f0c51d165b0c736296cb9f65cd84fc7db8d49d803fdf13cf370b1b0` |
+| 6 | `theorem` | [quotientTopology_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Topology.lean/declarations/quotienttopology-unique.md) | 46 | `result-track:d6565fb4c53e8271fdf3fbdef9a4d036834e96e9f556f695de2dbcf60feac476` |
+| 7 | `def` | [quotientNeighborhoods](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Topology.lean/declarations/quotientneighborhoods.md) | 62 | `declaration-track:e724063432e1eb06843203bed6a22d8f4ee1e63b208381c082fd3b3d57fb5e48` |
+| 8 | `def` | [quotientNeighborhoodFilter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Topology.lean/declarations/quotientneighborhoodfilter.md) | 73 | `declaration-track:0a3b2a826e386411080e19ec4a0f97f2ca6bb5d8457555a727c1dd7b0f8f25d4` |
+| 9 | `theorem` | [mem_quotientNeighborhoodFilter_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Topology.lean/declarations/mem-quotientneighborhoodfilter-iff.md) | 80 | `result-track:3a494f95eed0e01f9c6d59618b8eee79aa8065891dc81046e9be4c9655cc07a5` |
+| 10 | `def` | [saturatedNeighborhoods](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Topology.lean/declarations/saturatedneighborhoods.md) | 114 | `declaration-track:153c693538824d524f4428dc17bf0cfc02ff8c8ce8ef72f43ad0c000eefa885b` |
+| 11 | `def` | [IsIntrinsicSaturated](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Topology.lean/declarations/isintrinsicsaturated.md) | 124 | `declaration-track:f95ce38ed77b1a7b9479dea689db97ad119f3465d7a438fadd92a7bbb458511a` |
+| 12 | `theorem` | [quotient_preimage_isIntrinsicSaturated](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Topology.lean/declarations/quotient-preimage-isintrinsicsaturated.md) | 134 | `result-track:140c2c189921311c6f8b95fcc7159c31f1b941bfa8b44f13c08b1799891dbd7e` |
+| 13 | `theorem` | [saturatedNeighborhood_isIntrinsicSaturated](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Topology.lean/declarations/saturatedneighborhood-isintrinsicsaturated.md) | 146 | `result-track:334ec5096839a578a667070b8e70be3d9a4bff70bd57c8f71c2121147a3e75f0` |
+| 14 | `theorem` | [mem_quotientNeighborhoods_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Topology.lean/declarations/mem-quotientneighborhoods-iff.md) | 156 | `result-track:be41201ef04d465ddbccc249637824bded7f45d98e750f41e1aec3ad226777d5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

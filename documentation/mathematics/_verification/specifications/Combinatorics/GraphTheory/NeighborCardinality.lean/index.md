@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/NeighborCardinality.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/NeighborCardinality.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/NeighborCardinality.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/NeighborCardinality.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [degree](../../../../../Combinatorics/GraphTheory/NeighborCardinality.lean/declarations/degree.md) | 44 | `declaration-track:a3d84b5d6774c419bd037d6a8a418c9fbc5f931e5ec124f8f07425448a947bd7` |
+| 1 | `def` | [degree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/NeighborCardinality.lean/declarations/degree.md) | 44 | `declaration-track:a3d84b5d6774c419bd037d6a8a418c9fbc5f931e5ec124f8f07425448a947bd7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

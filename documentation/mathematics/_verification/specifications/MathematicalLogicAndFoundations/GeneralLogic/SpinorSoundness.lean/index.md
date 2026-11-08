@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SpinorSoundness.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SpinorSoundness.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SpinorSoundness.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SpinorSoundness.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [sampleUUID](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SpinorSoundness.lean/declarations/sampleuuid.md) | 13 | `declaration-track:5b39c174aa49478513858328af983b2c36fe1b198b351fb84c32fa54c3281e8d` |
-| 2 | `def` | [dummyExpr](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SpinorSoundness.lean/declarations/dummyexpr.md) | 15 | `declaration-track:03b87732288f9eec933987df6d6f13b742d4c1df3e08cabd7ef137985781c4af` |
-| 3 | `def` | [dummyProof](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SpinorSoundness.lean/declarations/dummyproof.md) | 17 | `declaration-track:fd00f9464c8ed20221489b8203a2e0688e5f7f3c7953337b28571a538ee6b456` |
-| 4 | `def` | [exampleSpinorEdge](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SpinorSoundness.lean/declarations/examplespinoredge.md) | 19 | `declaration-track:8be8996f6c138a98127905220d741cfcb58fe18f58ad53cdf122c5acadae8a2b` |
-| 5 | `def` | [minimalDag](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SpinorSoundness.lean/declarations/minimaldag.md) | 30 | `declaration-track:99b54e705fcb1e31c03e5822cb424cfe53adf260de2f59f96c4add6616a13ab1` |
+| 1 | `def` | [sampleUUID](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SpinorSoundness.lean/declarations/sampleuuid.md) | 13 | `declaration-track:5b39c174aa49478513858328af983b2c36fe1b198b351fb84c32fa54c3281e8d` |
+| 2 | `def` | [dummyExpr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SpinorSoundness.lean/declarations/dummyexpr.md) | 15 | `declaration-track:03b87732288f9eec933987df6d6f13b742d4c1df3e08cabd7ef137985781c4af` |
+| 3 | `def` | [dummyProof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SpinorSoundness.lean/declarations/dummyproof.md) | 17 | `declaration-track:fd00f9464c8ed20221489b8203a2e0688e5f7f3c7953337b28571a538ee6b456` |
+| 4 | `def` | [exampleSpinorEdge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SpinorSoundness.lean/declarations/examplespinoredge.md) | 19 | `declaration-track:8be8996f6c138a98127905220d741cfcb58fe18f58ad53cdf122c5acadae8a2b` |
+| 5 | `def` | [minimalDag](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SpinorSoundness.lean/declarations/minimaldag.md) | 30 | `declaration-track:99b54e705fcb1e31c03e5822cb424cfe53adf260de2f59f96c4add6616a13ab1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

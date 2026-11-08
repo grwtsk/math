@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/FiniteAbelian.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/FiniteAbelian.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteAbelian.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteAbelian.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [finite_of_fg_torsion](../../../../GroupTheoryAndGeneralizations/FiniteAbelian.lean/declarations/finite-of-fg-torsion-source-edition-3.md) | 31 | `result-track:b779762a666bc7edbae42b3abde4c9172761c7c1f66ec80ef94e10cc1c5d2fc3` |
-| 2 | `theorem` | [equiv_free_prod_directSum_zmod](../../../../GroupTheoryAndGeneralizations/FiniteAbelian.lean/declarations/equiv-free-prod-directsum-zmod.md) | 54 | `result-track:6f025bf78be1759f2e8cd396dacf21573b0e87c76e32323998360a3e251a16e2` |
-| 3 | `theorem` | [equiv_directSum_zmod_of_fintype](../../../../GroupTheoryAndGeneralizations/FiniteAbelian.lean/declarations/equiv-directsum-zmod-of-fintype.md) | 71 | `result-track:c3e3b0577aa5dfb845b3d0fc76e0b54ec7e08b8e9b5233f225052a93a35b3be5` |
-| 4 | `theorem` | [finite_of_fg_torsion](../../../../GroupTheoryAndGeneralizations/FiniteAbelian.lean/declarations/finite-of-fg-torsion-source-edition-2.md) | 86 | `result-track:3ab5855c537e038247ac6642e4daa9c59edb9c7474fc18e093baf2536dbcef2f` |
-| 5 | `theorem` | [finite_of_fg_torsion](../../../../GroupTheoryAndGeneralizations/FiniteAbelian.lean/declarations/finite-of-fg-torsion.md) | 95 | `result-track:038f892055b6dc9b83e8e7f629e42c66e7063c6bb6925be20057d8bdfda5eae5` |
+| 1 | `theorem` | [finite_of_fg_torsion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteAbelian.lean/declarations/finite-of-fg-torsion-source-edition-3.md) | 31 | `result-track:b779762a666bc7edbae42b3abde4c9172761c7c1f66ec80ef94e10cc1c5d2fc3` |
+| 2 | `theorem` | [equiv_free_prod_directSum_zmod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteAbelian.lean/declarations/equiv-free-prod-directsum-zmod.md) | 54 | `result-track:6f025bf78be1759f2e8cd396dacf21573b0e87c76e32323998360a3e251a16e2` |
+| 3 | `theorem` | [equiv_directSum_zmod_of_fintype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteAbelian.lean/declarations/equiv-directsum-zmod-of-fintype.md) | 71 | `result-track:c3e3b0577aa5dfb845b3d0fc76e0b54ec7e08b8e9b5233f225052a93a35b3be5` |
+| 4 | `theorem` | [finite_of_fg_torsion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteAbelian.lean/declarations/finite-of-fg-torsion-source-edition-2.md) | 86 | `result-track:3ab5855c537e038247ac6642e4daa9c59edb9c7474fc18e093baf2536dbcef2f` |
+| 5 | `theorem` | [finite_of_fg_torsion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteAbelian.lean/declarations/finite-of-fg-torsion.md) | 95 | `result-track:038f892055b6dc9b83e8e7f629e42c66e7063c6bb6925be20057d8bdfda5eae5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

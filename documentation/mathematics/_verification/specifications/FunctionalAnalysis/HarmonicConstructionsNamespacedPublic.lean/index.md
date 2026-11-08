@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/HarmonicConstructionsNamespacedPublic.lean/index.md) · [Full source](../../../../FunctionalAnalysis/HarmonicConstructionsNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HarmonicConstructionsNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HarmonicConstructionsNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [ContDiffAt.harmonicAt](../../../../FunctionalAnalysis/HarmonicConstructionsNamespacedPublic.lean/declarations/contdiffat-harmonicat.md) | 46 | `result-track:ec7a91abeb659b362a4fc45654f8ab9ee2da1491b0b83df9a324abfffdb97f07` |
-| 2 | `theorem` | [AnalyticAt.harmonicAt](../../../../FunctionalAnalysis/HarmonicConstructionsNamespacedPublic.lean/declarations/analyticat-harmonicat.md) | 56 | `result-track:356bdc89e1d39ab24e51fe036e81a2d79adb4a4c62aa0f4ad710ed2c51075c97` |
-| 3 | `theorem` | [AnalyticAt.harmonicAt_re](../../../../FunctionalAnalysis/HarmonicConstructionsNamespacedPublic.lean/declarations/analyticat-harmonicat-re.md) | 62 | `result-track:7658e2cca1be789662031d6a086ea930da610dd93f5167f9e50ab30045c9a872` |
-| 4 | `theorem` | [AnalyticAt.harmonicAt_im](../../../../FunctionalAnalysis/HarmonicConstructionsNamespacedPublic.lean/declarations/analyticat-harmonicat-im.md) | 68 | `result-track:37f31dd0d360b6845f8c50d83d888edd9477f05354e0b696e59ed1ef09e65a55` |
-| 5 | `theorem` | [AnalyticAt.harmonicAt_conj](../../../../FunctionalAnalysis/HarmonicConstructionsNamespacedPublic.lean/declarations/analyticat-harmonicat-conj.md) | 75 | `result-track:112a266e274df9ec44a5fdbf95df51a27a6ab322b4fea69e7e42b54cb50fe508` |
-| 6 | `lemma` | [analyticAt_harmonicAt_log_normSq](../../../../FunctionalAnalysis/HarmonicConstructionsNamespacedPublic.lean/declarations/analyticat-harmonicat-log-normsq.md) | 83 | `result-track:5ac4f8afbf8738e54c0a3230777e6be1c91cd8b3e20c51926365d93f340224ac` |
-| 7 | `theorem` | [AnalyticAt.harmonicAt_log_norm](../../../../FunctionalAnalysis/HarmonicConstructionsNamespacedPublic.lean/declarations/analyticat-harmonicat-log-norm.md) | 117 | `result-track:b1767414bbd014154c04cba71624f09f432f04783e7bfafce3b1be2aaf343c7c` |
+| 1 | `theorem` | [ContDiffAt.harmonicAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HarmonicConstructionsNamespacedPublic.lean/declarations/contdiffat-harmonicat.md) | 46 | `result-track:ec7a91abeb659b362a4fc45654f8ab9ee2da1491b0b83df9a324abfffdb97f07` |
+| 2 | `theorem` | [AnalyticAt.harmonicAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HarmonicConstructionsNamespacedPublic.lean/declarations/analyticat-harmonicat.md) | 56 | `result-track:356bdc89e1d39ab24e51fe036e81a2d79adb4a4c62aa0f4ad710ed2c51075c97` |
+| 3 | `theorem` | [AnalyticAt.harmonicAt_re](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HarmonicConstructionsNamespacedPublic.lean/declarations/analyticat-harmonicat-re.md) | 62 | `result-track:7658e2cca1be789662031d6a086ea930da610dd93f5167f9e50ab30045c9a872` |
+| 4 | `theorem` | [AnalyticAt.harmonicAt_im](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HarmonicConstructionsNamespacedPublic.lean/declarations/analyticat-harmonicat-im.md) | 68 | `result-track:37f31dd0d360b6845f8c50d83d888edd9477f05354e0b696e59ed1ef09e65a55` |
+| 5 | `theorem` | [AnalyticAt.harmonicAt_conj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HarmonicConstructionsNamespacedPublic.lean/declarations/analyticat-harmonicat-conj.md) | 75 | `result-track:112a266e274df9ec44a5fdbf95df51a27a6ab322b4fea69e7e42b54cb50fe508` |
+| 6 | `lemma` | [analyticAt_harmonicAt_log_normSq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HarmonicConstructionsNamespacedPublic.lean/declarations/analyticat-harmonicat-log-normsq.md) | 83 | `result-track:5ac4f8afbf8738e54c0a3230777e6be1c91cd8b3e20c51926365d93f340224ac` |
+| 7 | `theorem` | [AnalyticAt.harmonicAt_log_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HarmonicConstructionsNamespacedPublic.lean/declarations/analyticat-harmonicat-log-norm.md) | 117 | `result-track:b1767414bbd014154c04cba71624f09f432f04783e7bfafce3b1be2aaf343c7c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

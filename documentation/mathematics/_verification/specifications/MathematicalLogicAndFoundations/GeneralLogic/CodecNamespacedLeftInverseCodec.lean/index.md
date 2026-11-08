@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CodecNamespacedLeftInverseCodec.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CodecNamespacedLeftInverseCodec.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CodecNamespacedLeftInverseCodec.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CodecNamespacedLeftInverseCodec.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [LeftInverseCodec](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CodecNamespacedLeftInverseCodec.lean/declarations/leftinversecodec.md) | 29 | `declaration-track:45cdc847f4df3eaf07017330e7cbbcb39e716f0921cf688ff6437f58c622bb10` |
-| 2 | `theorem` | [encode_injective](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CodecNamespacedLeftInverseCodec.lean/declarations/encode-injective.md) | 39 | `result-track:9235968c54f49621778cebb8443f558ad3b8c82accd0c346057c0233252f8dca` |
-| 3 | `def` | [ValidOutput](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CodecNamespacedLeftInverseCodec.lean/declarations/validoutput.md) | 47 | `declaration-track:cce062b8f383f32a5757e70ebb6da80cc762b918007390a0e7c275b6072f7ef0` |
-| 4 | `def` | [ValidOutputType](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CodecNamespacedLeftInverseCodec.lean/declarations/validoutputtype.md) | 54 | `declaration-track:4d64afb064cc1f9130ff6a1d08ec9aca865eb9e204744105d7308f475b8f834a` |
-| 5 | `theorem` | [encode_decode_of_valid](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CodecNamespacedLeftInverseCodec.lean/declarations/encode-decode-of-valid.md) | 59 | `result-track:ccc402bd07de0536fd71add1b7b3da101679eb71b9ffbeff29bc223ef22638d1` |
-| 6 | `def` | [sourceEquivValidOutput](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CodecNamespacedLeftInverseCodec.lean/declarations/sourceequivvalidoutput.md) | 68 | `declaration-track:0e0540715b07f207e224e465175bb11249d019b682088f1646408c94b3bc1df8` |
+| 1 | `structure` | [LeftInverseCodec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CodecNamespacedLeftInverseCodec.lean/declarations/leftinversecodec.md) | 29 | `declaration-track:45cdc847f4df3eaf07017330e7cbbcb39e716f0921cf688ff6437f58c622bb10` |
+| 2 | `theorem` | [encode_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CodecNamespacedLeftInverseCodec.lean/declarations/encode-injective.md) | 39 | `result-track:9235968c54f49621778cebb8443f558ad3b8c82accd0c346057c0233252f8dca` |
+| 3 | `def` | [ValidOutput](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CodecNamespacedLeftInverseCodec.lean/declarations/validoutput.md) | 47 | `declaration-track:cce062b8f383f32a5757e70ebb6da80cc762b918007390a0e7c275b6072f7ef0` |
+| 4 | `def` | [ValidOutputType](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CodecNamespacedLeftInverseCodec.lean/declarations/validoutputtype.md) | 54 | `declaration-track:4d64afb064cc1f9130ff6a1d08ec9aca865eb9e204744105d7308f475b8f834a` |
+| 5 | `theorem` | [encode_decode_of_valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CodecNamespacedLeftInverseCodec.lean/declarations/encode-decode-of-valid.md) | 59 | `result-track:ccc402bd07de0536fd71add1b7b3da101679eb71b9ffbeff29bc223ef22638d1` |
+| 6 | `def` | [sourceEquivValidOutput](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CodecNamespacedLeftInverseCodec.lean/declarations/sourceequivvalidoutput.md) | 68 | `declaration-track:0e0540715b07f207e224e465175bb11249d019b682088f1646408c94b3bc1df8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

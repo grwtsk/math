@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CenteredMobiusLogGreenAliasing.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CenteredMobiusLogGreenAliasing.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenAliasing.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenAliasing.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenResidueAbelBound`](../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidueAbelBound.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenResidueAbelBound`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidueAbelBound.lean/index.md) — import line 7; pinned internal source present.
 - `Mathlib.Tactic` — import line 8; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [greenContinuumPhaseIntegral](../../../../MeasureAndIntegration/CenteredMobiusLogGreenAliasing.lean/declarations/greencontinuumphaseintegral.md) | 17 | `declaration-track:d738f3eac0476fefafe279d432e8c1d80a3fd664ca776254c8b8066d18bfe75b` |
-| 2 | `def` | [greenContinuumConstantIntegral](../../../../MeasureAndIntegration/CenteredMobiusLogGreenAliasing.lean/declarations/greencontinuumconstantintegral.md) | 22 | `declaration-track:24db9a6f66c4b2f0413de133f3fdd6f23522d51503ba53afabe466b368bb026c` |
-| 3 | `theorem` | [fourier_mesh_eq_one_of_aliasing](../../../../MeasureAndIntegration/CenteredMobiusLogGreenAliasing.lean/declarations/fourier-mesh-eq-one-of-aliasing.md) | 26 | `result-track:01bcb6d4b2be10261b2690f5cbc95c7e13cb2913079ef609a686ebe19d3c5b6b` |
-| 4 | `theorem` | [greenDiscretePhaseRiemannSum_eq_constant_of_aliasing](../../../../MeasureAndIntegration/CenteredMobiusLogGreenAliasing.lean/declarations/greendiscretephaseriemannsum-eq-constant-of-aliasing.md) | 43 | `result-track:b34182d0a6f9afe2f9ff4d02e91ecb64dd8d2b1a7452e236a670386b136b313e` |
-| 5 | `theorem` | [phaseResidual_sub_constant_of_aliasing](../../../../MeasureAndIntegration/CenteredMobiusLogGreenAliasing.lean/declarations/phaseresidual-sub-constant-of-aliasing.md) | 58 | `result-track:a2292423c4d2b6de5782272d94fd1ac6e04dbbe74eb28e8689a51b135f5cfd01` |
-| 6 | `theorem` | [greenCenteringResidual_aliasing_exact](../../../../MeasureAndIntegration/CenteredMobiusLogGreenAliasing.lean/declarations/greencenteringresidual-aliasing-exact.md) | 72 | `result-track:59fea84d2d75621cc95878d133d673cb9e4c2c6467fdabe89a9f51911f9f42fd` |
+| 1 | `def` | [greenContinuumPhaseIntegral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenAliasing.lean/declarations/greencontinuumphaseintegral.md) | 17 | `declaration-track:d738f3eac0476fefafe279d432e8c1d80a3fd664ca776254c8b8066d18bfe75b` |
+| 2 | `def` | [greenContinuumConstantIntegral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenAliasing.lean/declarations/greencontinuumconstantintegral.md) | 22 | `declaration-track:24db9a6f66c4b2f0413de133f3fdd6f23522d51503ba53afabe466b368bb026c` |
+| 3 | `theorem` | [fourier_mesh_eq_one_of_aliasing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenAliasing.lean/declarations/fourier-mesh-eq-one-of-aliasing.md) | 26 | `result-track:01bcb6d4b2be10261b2690f5cbc95c7e13cb2913079ef609a686ebe19d3c5b6b` |
+| 4 | `theorem` | [greenDiscretePhaseRiemannSum_eq_constant_of_aliasing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenAliasing.lean/declarations/greendiscretephaseriemannsum-eq-constant-of-aliasing.md) | 43 | `result-track:b34182d0a6f9afe2f9ff4d02e91ecb64dd8d2b1a7452e236a670386b136b313e` |
+| 5 | `theorem` | [phaseResidual_sub_constant_of_aliasing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenAliasing.lean/declarations/phaseresidual-sub-constant-of-aliasing.md) | 58 | `result-track:a2292423c4d2b6de5782272d94fd1ac6e04dbbe74eb28e8689a51b135f5cfd01` |
+| 6 | `theorem` | [greenCenteringResidual_aliasing_exact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenAliasing.lean/declarations/greencenteringresidual-aliasing-exact.md) | 72 | `result-track:59fea84d2d75621cc95878d133d673cb9e4c2c6467fdabe89a9f51911f9f42fd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

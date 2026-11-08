@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/ModuleEndPublic.lean/index.md) · [Full source](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/ModuleEndPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/ModuleEndPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/ModuleEndPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [AddMonoid.End.natCast_def](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/ModuleEndPublic.lean/declarations/addmonoid-end-natcast-def.md) | 30 | `result-track:22ff2b33f5a6d31627ef9020e12561dda581960750c80c9e1b752130a996528f` |
-| 2 | `def` | [Module.toAddMonoidEnd](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/ModuleEndPublic.lean/declarations/module-toaddmonoidend.md) | 41 | `declaration-track:073f30ff9d961253adca5dcbc1d846338dcd02461bcf364b5199092d3d8ce475` |
-| 3 | `def` | [smulAddHom](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/ModuleEndPublic.lean/declarations/smuladdhom.md) | 49 | `declaration-track:f6177281b5c6da26eb0aecf8ab08a36a8a4222612dd22f3ea18ce58bc0bcf84b` |
-| 4 | `theorem` | [smulAddHom_apply](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/ModuleEndPublic.lean/declarations/smuladdhom-apply.md) | 55 | `result-track:fff984e0b4908feebc77fccc094d5c88349dad74ec1a103ec43b0696eb9f52fd` |
-| 5 | `lemma` | [IsAddUnit.smul_left](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/ModuleEndPublic.lean/declarations/isaddunit-smul-left.md) | 60 | `result-track:4f164b5414f33ae07a298ad5aa092fc00930d070736eb29905ed4618a165b97c` |
-| 6 | `lemma` | [IsAddUnit.smul_right](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/ModuleEndPublic.lean/declarations/isaddunit-smul-right.md) | 66 | `result-track:861332b07494619580a6f0ef26705c1d793be2aee7ae3d3d8fded60d29858989` |
-| 7 | `theorem` | [AddMonoid.End.intCast_def](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/ModuleEndPublic.lean/declarations/addmonoid-end-intcast-def.md) | 75 | `result-track:dfc40abcb3950cd6283032506e81bdfa2278ec0f8fb7a76d95b3372e829ce9c9` |
+| 1 | `theorem` | [AddMonoid.End.natCast_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/ModuleEndPublic.lean/declarations/addmonoid-end-natcast-def.md) | 30 | `result-track:22ff2b33f5a6d31627ef9020e12561dda581960750c80c9e1b752130a996528f` |
+| 2 | `def` | [Module.toAddMonoidEnd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/ModuleEndPublic.lean/declarations/module-toaddmonoidend.md) | 41 | `declaration-track:073f30ff9d961253adca5dcbc1d846338dcd02461bcf364b5199092d3d8ce475` |
+| 3 | `def` | [smulAddHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/ModuleEndPublic.lean/declarations/smuladdhom.md) | 49 | `declaration-track:f6177281b5c6da26eb0aecf8ab08a36a8a4222612dd22f3ea18ce58bc0bcf84b` |
+| 4 | `theorem` | [smulAddHom_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/ModuleEndPublic.lean/declarations/smuladdhom-apply.md) | 55 | `result-track:fff984e0b4908feebc77fccc094d5c88349dad74ec1a103ec43b0696eb9f52fd` |
+| 5 | `lemma` | [IsAddUnit.smul_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/ModuleEndPublic.lean/declarations/isaddunit-smul-left.md) | 60 | `result-track:4f164b5414f33ae07a298ad5aa092fc00930d070736eb29905ed4618a165b97c` |
+| 6 | `lemma` | [IsAddUnit.smul_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/ModuleEndPublic.lean/declarations/isaddunit-smul-right.md) | 66 | `result-track:861332b07494619580a6f0ef26705c1d793be2aee7ae3d3d8fded60d29858989` |
+| 7 | `theorem` | [AddMonoid.End.intCast_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/ModuleEndPublic.lean/declarations/addmonoid-end-intcast-def.md) | 75 | `result-track:dfc40abcb3950cd6283032506e81bdfa2278ec0f8fb7a76d95b3372e829ce9c9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

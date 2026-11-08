@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/CMGaloisIndex.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/CMGaloisIndex.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CMGaloisIndex.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CMGaloisIndex.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.AlgebraicGeometry.Hodge.CMFourBalance`](../../../../Geometry/CMFourBalance.lean/index.md) — import line 9; pinned internal source present.
+- [`GRWTSK.AlgebraicGeometry.Hodge.CMFourBalance`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/CMFourBalance.lean/index.md) — import line 9; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,18 +57,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CentralInvolution](../../../../GroupTheoryAndGeneralizations/CMGaloisIndex.lean/declarations/centralinvolution.md) | 21 | `declaration-track:7dc717a303ba0e0ec6f8cff1e05ef925acb83a19fc0586708abc792a38768595` |
-| 2 | `def` | [CentralInvolution.conj](../../../../GroupTheoryAndGeneralizations/CMGaloisIndex.lean/declarations/centralinvolution-conj.md) | 28 | `declaration-track:5c09c9aff6647dbddad4d965ee409cc9c3883d951810a03d6df1321adcbe59af` |
-| 3 | `theorem` | [CentralInvolution.conj_apply](../../../../GroupTheoryAndGeneralizations/CMGaloisIndex.lean/declarations/centralinvolution-conj-apply.md) | 34 | `result-track:b5b4ab86b1f24451924540277e69ffc5aee69953797da8d82bc81b25e827993a` |
-| 4 | `theorem` | [CentralInvolution.conj_involutive](../../../../GroupTheoryAndGeneralizations/CMGaloisIndex.lean/declarations/centralinvolution-conj-involutive.md) | 40 | `result-track:bb51f571028efe127191d247b27b904695438b0a3eeddf82cff06f72507a7305` |
-| 5 | `theorem` | [CentralInvolution.conj_eq_mul_right](../../../../GroupTheoryAndGeneralizations/CMGaloisIndex.lean/declarations/centralinvolution-conj-eq-mul-right.md) | 46 | `result-track:dba0ed8dc86fe45a41d77fb2deacc40c24061ee95e1703030fe3a9f1978f507e` |
-| 6 | `structure` | [CMOddSignRow](../../../../GroupTheoryAndGeneralizations/CMGaloisIndex.lean/declarations/cmoddsignrow.md) | 52 | `declaration-track:59070edfec6c6494d40529f9976df8488778802cd36fe3748abc61927d9954fd` |
-| 7 | `def` | [CMOddSignRow.toOddSignRow](../../../../GroupTheoryAndGeneralizations/CMGaloisIndex.lean/declarations/cmoddsignrow-tooddsignrow.md) | 59 | `declaration-track:5a09013b64b3e4011130f73c82d2d749b7b1f1a8b6ab379881ce5b4843fefc91` |
-| 8 | `structure` | [CMEvenSignRow](../../../../GroupTheoryAndGeneralizations/CMGaloisIndex.lean/declarations/cmevensignrow.md) | 69 | `declaration-track:8b818557260561ffae255c91aebf7e4cda45d366044316ef6b67d41743541779` |
-| 9 | `def` | [rescalingSign](../../../../GroupTheoryAndGeneralizations/CMGaloisIndex.lean/declarations/rescalingsign.md) | 77 | `declaration-track:f5a4b4df516fe1c18460cfd7523511e90675aa46b959915fa837ba9bb9702291` |
-| 10 | `theorem` | [rescalingSign_conj](../../../../GroupTheoryAndGeneralizations/CMGaloisIndex.lean/declarations/rescalingsign-conj.md) | 91 | `result-track:3a2af15433c5099f374832b98644df584d2a005a194acb3454bcd5665c3dfa7a` |
-| 11 | `def` | [CMFourBalance](../../../../GroupTheoryAndGeneralizations/CMGaloisIndex.lean/declarations/cmfourbalance.md) | 98 | `declaration-track:d70518fbb3dc3d02d7e9092ec4bb757e6137ac631217925496d447a23331874b` |
-| 12 | `theorem` | [cmFourBalance_twoTwoSignProfile](../../../../GroupTheoryAndGeneralizations/CMGaloisIndex.lean/declarations/cmfourbalance-twotwosignprofile.md) | 109 | `result-track:ea6f6e11cf6ea7f3a19908b42c075f898db52cd0de979a4186df6e7a5bac20de` |
+| 1 | `structure` | [CentralInvolution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CMGaloisIndex.lean/declarations/centralinvolution.md) | 21 | `declaration-track:7dc717a303ba0e0ec6f8cff1e05ef925acb83a19fc0586708abc792a38768595` |
+| 2 | `def` | [CentralInvolution.conj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CMGaloisIndex.lean/declarations/centralinvolution-conj.md) | 28 | `declaration-track:5c09c9aff6647dbddad4d965ee409cc9c3883d951810a03d6df1321adcbe59af` |
+| 3 | `theorem` | [CentralInvolution.conj_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CMGaloisIndex.lean/declarations/centralinvolution-conj-apply.md) | 34 | `result-track:b5b4ab86b1f24451924540277e69ffc5aee69953797da8d82bc81b25e827993a` |
+| 4 | `theorem` | [CentralInvolution.conj_involutive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CMGaloisIndex.lean/declarations/centralinvolution-conj-involutive.md) | 40 | `result-track:bb51f571028efe127191d247b27b904695438b0a3eeddf82cff06f72507a7305` |
+| 5 | `theorem` | [CentralInvolution.conj_eq_mul_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CMGaloisIndex.lean/declarations/centralinvolution-conj-eq-mul-right.md) | 46 | `result-track:dba0ed8dc86fe45a41d77fb2deacc40c24061ee95e1703030fe3a9f1978f507e` |
+| 6 | `structure` | [CMOddSignRow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CMGaloisIndex.lean/declarations/cmoddsignrow.md) | 52 | `declaration-track:59070edfec6c6494d40529f9976df8488778802cd36fe3748abc61927d9954fd` |
+| 7 | `def` | [CMOddSignRow.toOddSignRow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CMGaloisIndex.lean/declarations/cmoddsignrow-tooddsignrow.md) | 59 | `declaration-track:5a09013b64b3e4011130f73c82d2d749b7b1f1a8b6ab379881ce5b4843fefc91` |
+| 8 | `structure` | [CMEvenSignRow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CMGaloisIndex.lean/declarations/cmevensignrow.md) | 69 | `declaration-track:8b818557260561ffae255c91aebf7e4cda45d366044316ef6b67d41743541779` |
+| 9 | `def` | [rescalingSign](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CMGaloisIndex.lean/declarations/rescalingsign.md) | 77 | `declaration-track:f5a4b4df516fe1c18460cfd7523511e90675aa46b959915fa837ba9bb9702291` |
+| 10 | `theorem` | [rescalingSign_conj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CMGaloisIndex.lean/declarations/rescalingsign-conj.md) | 91 | `result-track:3a2af15433c5099f374832b98644df584d2a005a194acb3454bcd5665c3dfa7a` |
+| 11 | `def` | [CMFourBalance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CMGaloisIndex.lean/declarations/cmfourbalance.md) | 98 | `declaration-track:d70518fbb3dc3d02d7e9092ec4bb757e6137ac631217925496d447a23331874b` |
+| 12 | `theorem` | [cmFourBalance_twoTwoSignProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CMGaloisIndex.lean/declarations/cmfourbalance-twotwosignprofile.md) | 109 | `result-track:ea6f6e11cf6ea7f3a19908b42c075f898db52cd0de979a4186df6e7a5bac20de` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

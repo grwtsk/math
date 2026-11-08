@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/GaloisRoundNamespaced.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/GaloisRoundNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/GaloisRoundNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/GaloisRoundNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [bitCode](../../../../AssociativeRingsAndAlgebras/GaloisRoundNamespaced.lean/declarations/bitcode.md) | 39 | `declaration-track:0f57631d1882a549585e6e36a9097138857d9dba34e63ebef680cfaab312fdc9` |
-| 2 | `theorem` | [bitCode_add](../../../../AssociativeRingsAndAlgebras/GaloisRoundNamespaced.lean/declarations/bitcode-add.md) | 48 | `result-track:db26b471db4cb3b405f79cd892be939b027cb96199e5ea97c87d69537a21f3aa` |
-| 3 | `def` | [transportToMatrix](../../../../AssociativeRingsAndAlgebras/GaloisRoundNamespaced.lean/declarations/transporttomatrix.md) | 70 | `declaration-track:5728e20899fb144a074dda6a2cb794cf63ef4079a850f00e6c281723e57ef585` |
-| 4 | `theorem` | [flatten_transportToMatrix](../../../../AssociativeRingsAndAlgebras/GaloisRoundNamespaced.lean/declarations/flatten-transporttomatrix.md) | 80 | `result-track:954233b878c120d8c9a9f60ae6f7b0f7d298d004fb8b940edd69b3306d6caeea` |
-| 5 | `def` | [encodeFieldRound](../../../../AssociativeRingsAndAlgebras/GaloisRoundNamespaced.lean/declarations/encodefieldround.md) | 91 | `declaration-track:d2b7ca526ffc3e588b2502501092525fc6f34d806bacab9d3f493771709221dc` |
-| 6 | `theorem` | [encodeFieldRound_bijective](../../../../AssociativeRingsAndAlgebras/GaloisRoundNamespaced.lean/declarations/encodefieldround-bijective.md) | 101 | `result-track:c38b160fc66e1575a7eeb4eaaea76f1c157405d723fef6759bc87e752bb31c68` |
+| 1 | `def` | [bitCode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/GaloisRoundNamespaced.lean/declarations/bitcode.md) | 39 | `declaration-track:0f57631d1882a549585e6e36a9097138857d9dba34e63ebef680cfaab312fdc9` |
+| 2 | `theorem` | [bitCode_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/GaloisRoundNamespaced.lean/declarations/bitcode-add.md) | 48 | `result-track:db26b471db4cb3b405f79cd892be939b027cb96199e5ea97c87d69537a21f3aa` |
+| 3 | `def` | [transportToMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/GaloisRoundNamespaced.lean/declarations/transporttomatrix.md) | 70 | `declaration-track:5728e20899fb144a074dda6a2cb794cf63ef4079a850f00e6c281723e57ef585` |
+| 4 | `theorem` | [flatten_transportToMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/GaloisRoundNamespaced.lean/declarations/flatten-transporttomatrix.md) | 80 | `result-track:954233b878c120d8c9a9f60ae6f7b0f7d298d004fb8b940edd69b3306d6caeea` |
+| 5 | `def` | [encodeFieldRound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/GaloisRoundNamespaced.lean/declarations/encodefieldround.md) | 91 | `declaration-track:d2b7ca526ffc3e588b2502501092525fc6f34d806bacab9d3f493771709221dc` |
+| 6 | `theorem` | [encodeFieldRound_bijective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/GaloisRoundNamespaced.lean/declarations/encodefieldround-bijective.md) | 101 | `result-track:c38b160fc66e1575a7eeb4eaaea76f1c157405d723fef6759bc87e752bb31c68` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

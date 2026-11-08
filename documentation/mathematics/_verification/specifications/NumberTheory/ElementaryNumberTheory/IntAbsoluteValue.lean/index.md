@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/IntAbsoluteValue.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/IntAbsoluteValue.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/IntAbsoluteValue.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/IntAbsoluteValue.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,10 +61,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [AbsoluteValue.map_units_int](../../../../../NumberTheory/ElementaryNumberTheory/IntAbsoluteValue.lean/declarations/absolutevalue-map-units-int.md) | 27 | `result-track:b81d89cb7a760b9ffdc97bc27927e07d9802463b56c36f668099163f15a3587d` |
-| 2 | `theorem` | [AbsoluteValue.map_units_intCast](../../../../../NumberTheory/ElementaryNumberTheory/IntAbsoluteValue.lean/declarations/absolutevalue-map-units-intcast.md) | 31 | `result-track:4ebb98e571d98cac771d3600762f86920777835a7b589c290b28d984f54b7b24` |
-| 3 | `theorem` | [AbsoluteValue.map_units_int_smul](../../../../../NumberTheory/ElementaryNumberTheory/IntAbsoluteValue.lean/declarations/absolutevalue-map-units-int-smul.md) | 35 | `result-track:9809cb34813303cca0f2b6e93ed7e3c9c3c2bbd8dc99bd09fb68d624d72b0661` |
-| 4 | `def` | [Int.natAbsHom](../../../../../NumberTheory/ElementaryNumberTheory/IntAbsoluteValue.lean/declarations/int-natabshom.md) | 40 | `declaration-track:3a99947815af3cfa620c0aded5e253b8372abddee9576ea45befd6deb76d2ecd` |
+| 1 | `theorem` | [AbsoluteValue.map_units_int](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/IntAbsoluteValue.lean/declarations/absolutevalue-map-units-int.md) | 27 | `result-track:b81d89cb7a760b9ffdc97bc27927e07d9802463b56c36f668099163f15a3587d` |
+| 2 | `theorem` | [AbsoluteValue.map_units_intCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/IntAbsoluteValue.lean/declarations/absolutevalue-map-units-intcast.md) | 31 | `result-track:4ebb98e571d98cac771d3600762f86920777835a7b589c290b28d984f54b7b24` |
+| 3 | `theorem` | [AbsoluteValue.map_units_int_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/IntAbsoluteValue.lean/declarations/absolutevalue-map-units-int-smul.md) | 35 | `result-track:9809cb34813303cca0f2b6e93ed7e3c9c3c2bbd8dc99bd09fb68d624d72b0661` |
+| 4 | `def` | [Int.natAbsHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/IntAbsoluteValue.lean/declarations/int-natabshom.md) | 40 | `declaration-track:3a99947815af3cfa620c0aded5e253b8372abddee9576ea45befd6deb76d2ecd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SequenceRealizationAudit.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SequenceRealizationAudit.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SequenceRealizationAudit.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SequenceRealizationAudit.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.ContinuedFractions.FrequencyRealization`](../../../../../../NumberTheory/FrequencyRealization.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.NumberTheory.ContinuedFractions.ScheduledDenominators`](../../../../../../NumberTheory/ScheduledDenominators.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.NumberTheory.ContinuedFractions.FrequencyRealization`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FrequencyRealization.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.NumberTheory.ContinuedFractions.ScheduledDenominators`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ScheduledDenominators.lean/index.md) — import line 2; pinned internal source present.
 - `GRWTSK.DifferentialEquationsAndDynamicalSystems.Sequences.ApproximationReturn` — import line 3; internal source missing from the pinned tree.
 - `Lean` — import line 4; external provider; requires a separately pinned dependency.
 
@@ -60,7 +60,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `elab` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SequenceRealizationAudit.lean/declarations/elab.md) | 8 | `declaration-track:39d98c69d6b62083ec3f998948f8a3e66694063292222397b29be1e6a6de7a74` |
+| 1 | `elab` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SequenceRealizationAudit.lean/declarations/elab.md) | 8 | `declaration-track:39d98c69d6b62083ec3f998948f8a3e66694063292222397b29be1e6a6de7a74` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

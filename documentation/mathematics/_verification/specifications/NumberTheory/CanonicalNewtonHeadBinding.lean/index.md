@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/CanonicalNewtonHeadBinding.lean/index.md) · [Full source](../../../../NumberTheory/CanonicalNewtonHeadBinding.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalNewtonHeadBinding.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalNewtonHeadBinding.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.RationalNewtonWitness`](../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/RationalNewtonWitness.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Chebyshev.CanonicalZeroHeadBinding`](../../../../NumberTheory/CanonicalZeroHeadBinding.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.RationalNewtonWitness`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/RationalNewtonWitness.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.CanonicalZeroHeadBinding`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalZeroHeadBinding.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [of_newton_enclosures](../../../../NumberTheory/CanonicalNewtonHeadBinding.lean/declarations/of-newton-enclosures.md) | 30 | `declaration-track:f10084e154d42bdafee367daa5d9d098fa8a78c71eeb7add691ed779a467977f` |
-| 2 | `theorem` | [exact_count](../../../../NumberTheory/CanonicalNewtonHeadBinding.lean/declarations/exact-count.md) | 47 | `result-track:04cd16494941c6047e2b5d0592a398196c06762cb21fc2e12f0705699275479e` |
-| 3 | `theorem` | [prime_of_newton_bound_head](../../../../NumberTheory/CanonicalNewtonHeadBinding.lean/declarations/prime-of-newton-bound-head.md) | 55 | `result-track:5ceec0dd862a03fba525cc40060f2ad261ec116307cc5139baf1eab78cddb8e6` |
+| 1 | `def` | [of_newton_enclosures](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalNewtonHeadBinding.lean/declarations/of-newton-enclosures.md) | 30 | `declaration-track:f10084e154d42bdafee367daa5d9d098fa8a78c71eeb7add691ed779a467977f` |
+| 2 | `theorem` | [exact_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalNewtonHeadBinding.lean/declarations/exact-count.md) | 47 | `result-track:04cd16494941c6047e2b5d0592a398196c06762cb21fc2e12f0705699275479e` |
+| 3 | `theorem` | [prime_of_newton_bound_head](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalNewtonHeadBinding.lean/declarations/prime-of-newton-bound-head.md) | 55 | `result-track:5ceec0dd862a03fba525cc40060f2ad261ec116307cc5139baf1eab78cddb8e6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

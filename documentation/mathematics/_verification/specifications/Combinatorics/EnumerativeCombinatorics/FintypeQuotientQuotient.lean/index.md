@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeQuotientQuotient.lean/index.md) · [Full source](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeQuotientQuotient.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeQuotientQuotient.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeQuotientQuotient.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Quotient.finChoiceAux](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeQuotientQuotient.lean/declarations/quotient-finchoiceaux.md) | 28 | `declaration-track:f842c200bbdcb35d8910bed0a864af5613bf3b104b94128571b5fa4ddf00774b` |
-| 2 | `theorem` | [Quotient.finChoiceAux_eq](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeQuotientQuotient.lean/declarations/quotient-finchoiceaux-eq.md) | 44 | `result-track:8c703e59b4c62d67b9a17803acccfd457dfa6419cf89e9ad4596b0a0db83f4b6` |
-| 3 | `def` | [Quotient.finChoice](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeQuotientQuotient.lean/declarations/quotient-finchoice.md) | 59 | `declaration-track:7e78ac0abb0f011dec309c06a18f5cc92d44909db04ae161ad5682ef5c995467` |
-| 4 | `theorem` | [Quotient.finChoice_eq](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeQuotientQuotient.lean/declarations/quotient-finchoice-eq.md) | 77 | `result-track:465072a42ebb20f118cc9b9d1392bc8ab106e3436654e09f94883a8bf1c8bb2f` |
+| 1 | `def` | [Quotient.finChoiceAux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeQuotientQuotient.lean/declarations/quotient-finchoiceaux.md) | 28 | `declaration-track:f842c200bbdcb35d8910bed0a864af5613bf3b104b94128571b5fa4ddf00774b` |
+| 2 | `theorem` | [Quotient.finChoiceAux_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeQuotientQuotient.lean/declarations/quotient-finchoiceaux-eq.md) | 44 | `result-track:8c703e59b4c62d67b9a17803acccfd457dfa6419cf89e9ad4596b0a0db83f4b6` |
+| 3 | `def` | [Quotient.finChoice](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeQuotientQuotient.lean/declarations/quotient-finchoice.md) | 59 | `declaration-track:7e78ac0abb0f011dec309c06a18f5cc92d44909db04ae161ad5682ef5c995467` |
+| 4 | `theorem` | [Quotient.finChoice_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeQuotientQuotient.lean/declarations/quotient-finchoice-eq.md) | 77 | `result-track:465072a42ebb20f118cc9b9d1392bc8ab106e3436654e09f94883a8bf1c8bb2f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

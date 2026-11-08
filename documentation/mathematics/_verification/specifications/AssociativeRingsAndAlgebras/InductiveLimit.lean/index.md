@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/InductiveLimit.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/InductiveLimit.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/InductiveLimit.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/InductiveLimit.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [AlgebraicInductiveLimitObservable](../../../../AssociativeRingsAndAlgebras/InductiveLimit.lean/declarations/algebraicinductivelimitobservable.md) | 19 | `declaration-track:7ea4275ffc390f3c91025c6add1ac710afb3bc8964d5a2a3ef079e47be6badbf` |
-| 2 | `def` | [includeFiniteObservable](../../../../AssociativeRingsAndAlgebras/InductiveLimit.lean/declarations/includefiniteobservable.md) | 33 | `declaration-track:8dbcdb8b081255177c187fa9025da77aac41ee65e1fa4e6852fd97cb36d36038` |
-| 3 | `structure` | [InductiveLimitAlgebraCertificate](../../../../AssociativeRingsAndAlgebras/InductiveLimit.lean/declarations/inductivelimitalgebracertificate.md) | 52 | `declaration-track:342116b3dfb182f80db4d2d064e742dbbe9d45158801c3ccd426a5d193a14844` |
-| 4 | `structure` | [CompatibleTraceBoundednessCertificate](../../../../AssociativeRingsAndAlgebras/InductiveLimit.lean/declarations/compatibletraceboundednesscertificate.md) | 84 | `declaration-track:eb7f0b6e8ddc57861a72b2de52a08f971a9dd529e9b0df63b93665aba320dc36` |
-| 5 | `structure` | [CStarTraceExtensionCertificate](../../../../AssociativeRingsAndAlgebras/InductiveLimit.lean/declarations/cstartraceextensioncertificate.md) | 111 | `declaration-track:a764f41673f11c045008a06a59ae7c53045cd5546cd64c58a7c45c198276f560` |
+| 1 | `abbrev` | [AlgebraicInductiveLimitObservable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/InductiveLimit.lean/declarations/algebraicinductivelimitobservable.md) | 19 | `declaration-track:7ea4275ffc390f3c91025c6add1ac710afb3bc8964d5a2a3ef079e47be6badbf` |
+| 2 | `def` | [includeFiniteObservable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/InductiveLimit.lean/declarations/includefiniteobservable.md) | 33 | `declaration-track:8dbcdb8b081255177c187fa9025da77aac41ee65e1fa4e6852fd97cb36d36038` |
+| 3 | `structure` | [InductiveLimitAlgebraCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/InductiveLimit.lean/declarations/inductivelimitalgebracertificate.md) | 52 | `declaration-track:342116b3dfb182f80db4d2d064e742dbbe9d45158801c3ccd426a5d193a14844` |
+| 4 | `structure` | [CompatibleTraceBoundednessCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/InductiveLimit.lean/declarations/compatibletraceboundednesscertificate.md) | 84 | `declaration-track:eb7f0b6e8ddc57861a72b2de52a08f971a9dd529e9b0df63b93665aba320dc36` |
+| 5 | `structure` | [CStarTraceExtensionCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/InductiveLimit.lean/declarations/cstartraceextensioncertificate.md) | 111 | `declaration-track:a764f41673f11c045008a06a59ae7c53045cd5546cd64c58a7c45c198276f560` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

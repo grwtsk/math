@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/OrderArchimedeanDenseOfNotIsolatedOne.lean/index.md) · [Full source](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/OrderArchimedeanDenseOfNotIsolatedOne.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/OrderArchimedeanDenseOfNotIsolatedOne.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/OrderArchimedeanDenseOfNotIsolatedOne.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,12 +60,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Rat.denseRange_cast](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/OrderArchimedeanDenseOfNotIsolatedOne.lean/declarations/rat-denserange-cast.md) | 29 | `result-track:94b22edf8e10caa57e7a79bea5a2c35bc0da936388f196788d9ce857c9d9b677` |
-| 2 | `theorem` | [dense_of_not_isolated_one](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/OrderArchimedeanDenseOfNotIsolatedOne.lean/declarations/dense-of-not-isolated-one.md) | 46 | `result-track:49fa4e42e7e175af4eb743784c9cbf5a68e0f8a2a9cc26840c124a3627aef690` |
-| 3 | `theorem` | [dense_of_no_min](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/OrderArchimedeanDenseOfNotIsolatedOne.lean/declarations/dense-of-no-min.md) | 65 | `result-track:8b77e1767395a552a3f703c5d902b70ccac5f05a473ce78572ac722c73c03d0c` |
-| 4 | `theorem` | [dense_or_cyclic](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/OrderArchimedeanDenseOfNotIsolatedOne.lean/declarations/dense-or-cyclic.md) | 76 | `result-track:ef2a910dbdc3b5480a511df58c5d26ed16b211170c95650de42905227350d313` |
-| 5 | `theorem` | [dense_xor'_cyclic](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/OrderArchimedeanDenseOfNotIsolatedOne.lean/declarations/dense-xor-cyclic.md) | 94 | `result-track:8018199512278bcd56032d9d6f0da69bf31be898193a619abe5c9c38ecf0f590` |
-| 6 | `theorem` | [dense_iff_ne_zpowers](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/OrderArchimedeanDenseOfNotIsolatedOne.lean/declarations/dense-iff-ne-zpowers.md) | 105 | `result-track:059c0a20284617a23c005e27365ff309814a3d1238a427fd6cb37418bb49af56` |
+| 1 | `theorem` | [Rat.denseRange_cast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/OrderArchimedeanDenseOfNotIsolatedOne.lean/declarations/rat-denserange-cast.md) | 29 | `result-track:94b22edf8e10caa57e7a79bea5a2c35bc0da936388f196788d9ce857c9d9b677` |
+| 2 | `theorem` | [dense_of_not_isolated_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/OrderArchimedeanDenseOfNotIsolatedOne.lean/declarations/dense-of-not-isolated-one.md) | 46 | `result-track:49fa4e42e7e175af4eb743784c9cbf5a68e0f8a2a9cc26840c124a3627aef690` |
+| 3 | `theorem` | [dense_of_no_min](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/OrderArchimedeanDenseOfNotIsolatedOne.lean/declarations/dense-of-no-min.md) | 65 | `result-track:8b77e1767395a552a3f703c5d902b70ccac5f05a473ce78572ac722c73c03d0c` |
+| 4 | `theorem` | [dense_or_cyclic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/OrderArchimedeanDenseOfNotIsolatedOne.lean/declarations/dense-or-cyclic.md) | 76 | `result-track:ef2a910dbdc3b5480a511df58c5d26ed16b211170c95650de42905227350d313` |
+| 5 | `theorem` | [dense_xor'_cyclic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/OrderArchimedeanDenseOfNotIsolatedOne.lean/declarations/dense-xor-cyclic.md) | 94 | `result-track:8018199512278bcd56032d9d6f0da69bf31be898193a619abe5c9c38ecf0f590` |
+| 6 | `theorem` | [dense_iff_ne_zpowers](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/OrderArchimedeanDenseOfNotIsolatedOne.lean/declarations/dense-iff-ne-zpowers.md) | 105 | `result-track:059c0a20284617a23c005e27365ff309814a3d1238a427fd6cb37418bb49af56` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

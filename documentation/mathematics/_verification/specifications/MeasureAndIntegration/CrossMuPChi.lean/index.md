@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CrossMuPChi.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CrossMuPChi.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CrossMuPChi.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CrossMuPChi.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,8 +60,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [Mform_mu_PXc_eq](../../../../MeasureAndIntegration/CrossMuPChi.lean/declarations/mform-mu-pxc-eq.md) | 36 | `result-track:b5bb020c8013cbbbb303890162cf0bb177a3635e973229c66e3596a9dad075dd` |
-| 2 | `theorem` | [prop_cross_muP_chi_proved](../../../../MeasureAndIntegration/CrossMuPChi.lean/declarations/prop-cross-mup-chi-proved.md) | 76 | `result-track:ffd839fd2332d12ec094314ba828fec3abe75ff6e9d7f5431348970280d7ca11` |
+| 1 | `lemma` | [Mform_mu_PXc_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CrossMuPChi.lean/declarations/mform-mu-pxc-eq.md) | 36 | `result-track:b5bb020c8013cbbbb303890162cf0bb177a3635e973229c66e3596a9dad075dd` |
+| 2 | `theorem` | [prop_cross_muP_chi_proved](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CrossMuPChi.lean/declarations/prop-cross-mup-chi-proved.md) | 76 | `result-track:ffd839fd2332d12ec094314ba828fec3abe75ff6e9d7f5431348970280d7ca11` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

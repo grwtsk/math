@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogHighGCDTypeIIWeight.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogHighGCDTypeIIWeight.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogHighGCDTypeIIWeight.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogHighGCDTypeIIWeight.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeFejerMobiusLogTypeITypeIIBarrier`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogTypeITypeIIBarrier.lean/index.md) — import line 3; pinned internal source present.
-- [`GRWTSK.NumberTheory.FiniteDivisorSummatoryBound`](../../../../../NumberTheory/FiniteDivisorSummatoryBound.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeFejerMobiusLogTypeITypeIIBarrier`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogTypeITypeIIBarrier.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.FiniteDivisorSummatoryBound`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteDivisorSummatoryBound.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Tactic` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [nonAliasingFejerShiftWeight_le_one](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogHighGCDTypeIIWeight.lean/declarations/nonaliasingfejershiftweight-le-one.md) | 30 | `result-track:66e249c532fc570a098f098b64bdddc7d9185d005f87aa009f45da211ef8f9a4` |
-| 2 | `theorem` | [centeredMobiusLogDivisorTerm_some_abs_le_log_four_mul](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogHighGCDTypeIIWeight.lean/declarations/centeredmobiuslogdivisorterm-some-abs-le-log-four-mul.md) | 67 | `result-track:afdbcb80acccc7c4b4090af2979de6152fd0e9a90655b0a0c10f99b99ceb9ad2` |
-| 3 | `abbrev` | [MobiusLogHighGCDTypeIITermIndex](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogHighGCDTypeIIWeight.lean/declarations/mobiusloghighgcdtypeiitermindex.md) | 108 | `declaration-track:99da665438a74e9d91f4426e054726cf3380c1878da85e6a1957b6b9f1cc858e` |
-| 4 | `def` | [mobiusLogAbsoluteHighGCDTypeIITermIndexSet](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogHighGCDTypeIIWeight.lean/declarations/mobiuslogabsolutehighgcdtypeiitermindexset.md) | 112 | `declaration-track:7e2a76a5c5424efbdc37e88e15fbf252ee01bef52466b96aa551ff11d14a19b5` |
-| 5 | `def` | [mobiusLogAbsoluteHighGCDTypeIITermValue](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogHighGCDTypeIIWeight.lean/declarations/mobiuslogabsolutehighgcdtypeiitermvalue.md) | 120 | `declaration-track:4c70f2e1b8d4af2f73e26ac13bf23a001af981fcc035e0867a2beecf73bb4848` |
-| 6 | `theorem` | [nonAliasingFejerMobiusLogAbsoluteHighGCDAggregate_eq_termIndexSum](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogHighGCDTypeIIWeight.lean/declarations/nonaliasingfejermobiuslogabsolutehighgcdaggregate-eq-termindexsum.md) | 128 | `result-track:67104e38dada1461bfbf967c367a563c07aa08f9768d1cb40202db26c16ff4ce` |
-| 7 | `theorem` | [mobiusLogAbsoluteHighGCDTypeIITermValue_le_log_sq](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogHighGCDTypeIIWeight.lean/declarations/mobiuslogabsolutehighgcdtypeiitermvalue-le-log-sq.md) | 143 | `result-track:0c50057eddca2e9b6699efb110e181ccbb5d218f1b32039719be16d43bda03f7` |
+| 1 | `theorem` | [nonAliasingFejerShiftWeight_le_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogHighGCDTypeIIWeight.lean/declarations/nonaliasingfejershiftweight-le-one.md) | 30 | `result-track:66e249c532fc570a098f098b64bdddc7d9185d005f87aa009f45da211ef8f9a4` |
+| 2 | `theorem` | [centeredMobiusLogDivisorTerm_some_abs_le_log_four_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogHighGCDTypeIIWeight.lean/declarations/centeredmobiuslogdivisorterm-some-abs-le-log-four-mul.md) | 67 | `result-track:afdbcb80acccc7c4b4090af2979de6152fd0e9a90655b0a0c10f99b99ceb9ad2` |
+| 3 | `abbrev` | [MobiusLogHighGCDTypeIITermIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogHighGCDTypeIIWeight.lean/declarations/mobiusloghighgcdtypeiitermindex.md) | 108 | `declaration-track:99da665438a74e9d91f4426e054726cf3380c1878da85e6a1957b6b9f1cc858e` |
+| 4 | `def` | [mobiusLogAbsoluteHighGCDTypeIITermIndexSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogHighGCDTypeIIWeight.lean/declarations/mobiuslogabsolutehighgcdtypeiitermindexset.md) | 112 | `declaration-track:7e2a76a5c5424efbdc37e88e15fbf252ee01bef52466b96aa551ff11d14a19b5` |
+| 5 | `def` | [mobiusLogAbsoluteHighGCDTypeIITermValue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogHighGCDTypeIIWeight.lean/declarations/mobiuslogabsolutehighgcdtypeiitermvalue.md) | 120 | `declaration-track:4c70f2e1b8d4af2f73e26ac13bf23a001af981fcc035e0867a2beecf73bb4848` |
+| 6 | `theorem` | [nonAliasingFejerMobiusLogAbsoluteHighGCDAggregate_eq_termIndexSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogHighGCDTypeIIWeight.lean/declarations/nonaliasingfejermobiuslogabsolutehighgcdaggregate-eq-termindexsum.md) | 128 | `result-track:67104e38dada1461bfbf967c367a563c07aa08f9768d1cb40202db26c16ff4ce` |
+| 7 | `theorem` | [mobiusLogAbsoluteHighGCDTypeIITermValue_le_log_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogHighGCDTypeIIWeight.lean/declarations/mobiuslogabsolutehighgcdtypeiitermvalue-le-log-sq.md) | 143 | `result-track:0c50057eddca2e9b6699efb110e181ccbb5d218f1b32039719be16d43bda03f7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

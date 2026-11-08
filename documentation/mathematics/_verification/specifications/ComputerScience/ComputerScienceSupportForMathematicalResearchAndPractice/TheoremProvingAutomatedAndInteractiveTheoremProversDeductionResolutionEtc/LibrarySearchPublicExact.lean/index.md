@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LibrarySearchPublicExact.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LibrarySearchPublicExact.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LibrarySearchPublicExact.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LibrarySearchPublicExact.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [exact?](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LibrarySearchPublicExact.lean/declarations/exact.md) | 32 | `declaration-track:d35f1453cb28159437a64c415348650514774f866aab9ba3f299993791ca4c57` |
-| 2 | `def` | [evalExact](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LibrarySearchPublicExact.lean/declarations/evalexact.md) | 79 | `declaration-track:66b1aa59223d3b6836b6d05590ddde1b594eb6ebd2730c5389ebe1443b52a9e5` |
-| 3 | `def` | [evalApply](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LibrarySearchPublicExact.lean/declarations/evalapply.md) | 87 | `declaration-track:5d135e4a28073c05982e221b542fe47d3a63bf0b90c67ac89a20d22b633750dd` |
-| 4 | `def` | [elabExact?Term](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LibrarySearchPublicExact.lean/declarations/elabexact-term.md) | 94 | `declaration-track:153095c38d6c407c72e00f6d1b351fcdddd9dae7699af5a5338218329b01b8c7` |
+| 1 | `def` | [exact?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LibrarySearchPublicExact.lean/declarations/exact.md) | 32 | `declaration-track:d35f1453cb28159437a64c415348650514774f866aab9ba3f299993791ca4c57` |
+| 2 | `def` | [evalExact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LibrarySearchPublicExact.lean/declarations/evalexact.md) | 79 | `declaration-track:66b1aa59223d3b6836b6d05590ddde1b594eb6ebd2730c5389ebe1443b52a9e5` |
+| 3 | `def` | [evalApply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LibrarySearchPublicExact.lean/declarations/evalapply.md) | 87 | `declaration-track:5d135e4a28073c05982e221b542fe47d3a63bf0b90c67ac89a20d22b633750dd` |
+| 4 | `def` | [elabExact?Term](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LibrarySearchPublicExact.lean/declarations/elabexact-term.md) | 94 | `declaration-track:153095c38d6c407c72e00f6d1b351fcdddd9dae7699af5a5338218329b01b8c7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/LieTheorem.lean/index.md) · [Full source](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/LieTheorem.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/LieTheorem.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/LieTheorem.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [T](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/LieTheorem.lean/declarations/t.md) | 46 | `declaration-track:5dd6c297f1080833418136c8d85f76fc482c5d80ae5d964effdd237b0dee4352` |
-| 2 | `lemma` | [weightSpaceOfIsLieTower_aux](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/LieTheorem.lean/declarations/weightspaceofislietower-aux.md) | 49 | `result-track:307b543731a30aef247f6c2b14da9dba8bd61f60afcb886765fed432322abac9` |
-| 3 | `def` | [weightSpaceOfIsLieTower](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/LieTheorem.lean/declarations/weightspaceofislietower.md) | 146 | `declaration-track:7fcef557e2140d2c4eb42018711de5a43c66d21a78c1c03876746fa2b91023cd` |
-| 4 | `theorem` | [exists_nontrivial_weightSpace_of_lieIdeal](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/LieTheorem.lean/declarations/exists-nontrivial-weightspace-of-lieideal.md) | 161 | `result-track:f8b47bc95a9ca570573660639cbb0f096c20e4d51d5fa35b14aa66d34b640859` |
-| 5 | `lemma` | [exists_forall_lie_eq_smul_of_isSolvable_of_finite](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/LieTheorem.lean/declarations/exists-forall-lie-eq-smul-of-issolvable-of-finite.md) | 205 | `result-track:86b94fafa631aa14752dc7abeff5d7165d32fc20ca4798652792163b7dce998c` |
-| 6 | `theorem` | [exists_nontrivial_weightSpace_of_isSolvable](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/LieTheorem.lean/declarations/exists-nontrivial-weightspace-of-issolvable.md) | 233 | `result-track:0c91462517ba7b04414fff310382c0c39b69f3b56ff23c0d15b110d3576a6931` |
+| 1 | `abbrev` | [T](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/LieTheorem.lean/declarations/t.md) | 46 | `declaration-track:5dd6c297f1080833418136c8d85f76fc482c5d80ae5d964effdd237b0dee4352` |
+| 2 | `lemma` | [weightSpaceOfIsLieTower_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/LieTheorem.lean/declarations/weightspaceofislietower-aux.md) | 49 | `result-track:307b543731a30aef247f6c2b14da9dba8bd61f60afcb886765fed432322abac9` |
+| 3 | `def` | [weightSpaceOfIsLieTower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/LieTheorem.lean/declarations/weightspaceofislietower.md) | 146 | `declaration-track:7fcef557e2140d2c4eb42018711de5a43c66d21a78c1c03876746fa2b91023cd` |
+| 4 | `theorem` | [exists_nontrivial_weightSpace_of_lieIdeal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/LieTheorem.lean/declarations/exists-nontrivial-weightspace-of-lieideal.md) | 161 | `result-track:f8b47bc95a9ca570573660639cbb0f096c20e4d51d5fa35b14aa66d34b640859` |
+| 5 | `lemma` | [exists_forall_lie_eq_smul_of_isSolvable_of_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/LieTheorem.lean/declarations/exists-forall-lie-eq-smul-of-issolvable-of-finite.md) | 205 | `result-track:86b94fafa631aa14752dc7abeff5d7165d32fc20ca4798652792163b7dce998c` |
+| 6 | `theorem` | [exists_nontrivial_weightSpace_of_isSolvable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/LieTheorem.lean/declarations/exists-nontrivial-weightspace-of-issolvable.md) | 233 | `result-track:0c91462517ba7b04414fff310382c0c39b69f3b56ff23c0d15b110d3576a6931` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

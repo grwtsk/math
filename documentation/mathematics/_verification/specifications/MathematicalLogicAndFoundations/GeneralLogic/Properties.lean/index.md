@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Properties.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Properties.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Properties.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Properties.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,17 +58,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [IsInjective](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Properties.lean/declarations/isinjective.md) | 15 | `declaration-track:8374d9a10487971f1980fa8aca208ecb7b866a2ced4d23a673056d6ccb7eb6d8` |
-| 2 | `def` | [IsSurjective](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Properties.lean/declarations/issurjective.md) | 18 | `declaration-track:b278fc8bdce34c6adfb9c80e2e83f534859ccacb1bad9c7707285967f8b644dc` |
-| 3 | `def` | [IsBijective](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Properties.lean/declarations/isbijective.md) | 21 | `declaration-track:28132524efe188a6f86e4f8830563586d63eff01ef62f76560da17ef55c2713a` |
-| 4 | `def` | [IsLeftInverseOf](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Properties.lean/declarations/isleftinverseof.md) | 24 | `declaration-track:db84280e99ddb84ca932c6367946712cfb2715d140cbfcda822f4b5f1a32133b` |
-| 5 | `def` | [IsRightInverseOf](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Properties.lean/declarations/isrightinverseof.md) | 27 | `declaration-track:8f195134923bc9ee2b7513e493a35f919dff0a134c04ea7e4467ca1935c1e1dc` |
-| 6 | `def` | [IsInverseOf](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Properties.lean/declarations/isinverseof.md) | 30 | `declaration-track:decc97fffe952612da42e6c23fdedbd10aec77188c1dfb326d6853f3518daf45` |
-| 7 | `theorem` | [isInjective_comp](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Properties.lean/declarations/isinjective-comp.md) | 33 | `result-track:20d4f22896979fdc79330650d6a724b090e3637c5bf23120e6713dee2cf97830` |
-| 8 | `theorem` | [isSurjective_comp](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Properties.lean/declarations/issurjective-comp.md) | 39 | `result-track:7303ec04fc02745bfbe541e376a657725c927f561caa0161cd91efa8d86e2a29` |
-| 9 | `theorem` | [isBijective_comp](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Properties.lean/declarations/isbijective-comp.md) | 45 | `result-track:8bd2d1d550895357bc6f28cff2c2d4357402803bb9cf1c5975fef521fb12d646` |
-| 10 | `def` | [toEquiv](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Properties.lean/declarations/toequiv.md) | 54 | `declaration-track:678562d44c69b12b42061c149969e8e35e14c4bd3fa3778e3be5c2c06b56699f` |
-| 11 | `theorem` | [toEquiv_apply](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Properties.lean/declarations/toequiv-apply.md) | 58 | `result-track:f97e19529d9f4ea68eae489c0daa8ff75aed184f8a3792bc1dc4b73c0d93a432` |
+| 1 | `def` | [IsInjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Properties.lean/declarations/isinjective.md) | 15 | `declaration-track:8374d9a10487971f1980fa8aca208ecb7b866a2ced4d23a673056d6ccb7eb6d8` |
+| 2 | `def` | [IsSurjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Properties.lean/declarations/issurjective.md) | 18 | `declaration-track:b278fc8bdce34c6adfb9c80e2e83f534859ccacb1bad9c7707285967f8b644dc` |
+| 3 | `def` | [IsBijective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Properties.lean/declarations/isbijective.md) | 21 | `declaration-track:28132524efe188a6f86e4f8830563586d63eff01ef62f76560da17ef55c2713a` |
+| 4 | `def` | [IsLeftInverseOf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Properties.lean/declarations/isleftinverseof.md) | 24 | `declaration-track:db84280e99ddb84ca932c6367946712cfb2715d140cbfcda822f4b5f1a32133b` |
+| 5 | `def` | [IsRightInverseOf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Properties.lean/declarations/isrightinverseof.md) | 27 | `declaration-track:8f195134923bc9ee2b7513e493a35f919dff0a134c04ea7e4467ca1935c1e1dc` |
+| 6 | `def` | [IsInverseOf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Properties.lean/declarations/isinverseof.md) | 30 | `declaration-track:decc97fffe952612da42e6c23fdedbd10aec77188c1dfb326d6853f3518daf45` |
+| 7 | `theorem` | [isInjective_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Properties.lean/declarations/isinjective-comp.md) | 33 | `result-track:20d4f22896979fdc79330650d6a724b090e3637c5bf23120e6713dee2cf97830` |
+| 8 | `theorem` | [isSurjective_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Properties.lean/declarations/issurjective-comp.md) | 39 | `result-track:7303ec04fc02745bfbe541e376a657725c927f561caa0161cd91efa8d86e2a29` |
+| 9 | `theorem` | [isBijective_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Properties.lean/declarations/isbijective-comp.md) | 45 | `result-track:8bd2d1d550895357bc6f28cff2c2d4357402803bb9cf1c5975fef521fb12d646` |
+| 10 | `def` | [toEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Properties.lean/declarations/toequiv.md) | 54 | `declaration-track:678562d44c69b12b42061c149969e8e35e14c4bd3fa3778e3be5c2c06b56699f` |
+| 11 | `theorem` | [toEquiv_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Properties.lean/declarations/toequiv-apply.md) | 58 | `result-track:f97e19529d9f4ea68eae489c0daa8ff75aed184f8a3792bc1dc4b73c0d93a432` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

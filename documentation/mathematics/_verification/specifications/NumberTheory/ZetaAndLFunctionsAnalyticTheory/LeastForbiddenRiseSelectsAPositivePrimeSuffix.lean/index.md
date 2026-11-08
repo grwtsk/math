@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LeastForbiddenRiseSelectsAPositivePrimeSuffix.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LeastForbiddenRiseSelectsAPositivePrimeSuffix.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LeastForbiddenRiseSelectsAPositivePrimeSuffix.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LeastForbiddenRiseSelectsAPositivePrimeSuffix.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [least_forbidden_rise_selects_positive_suffix](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LeastForbiddenRiseSelectsAPositivePrimeSuffix.lean/declarations/least-forbidden-rise-selects-positive-suffix.md) | 22 | `result-track:5e75eb810a7c85e243c6d3d180a07a990d10746ab6cdaddf757852177c1d3fb8` |
+| 1 | `theorem` | [least_forbidden_rise_selects_positive_suffix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LeastForbiddenRiseSelectsAPositivePrimeSuffix.lean/declarations/least-forbidden-rise-selects-positive-suffix.md) | 22 | `result-track:5e75eb810a7c85e243c6d3d180a07a990d10746ab6cdaddf757852177c1d3fb8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

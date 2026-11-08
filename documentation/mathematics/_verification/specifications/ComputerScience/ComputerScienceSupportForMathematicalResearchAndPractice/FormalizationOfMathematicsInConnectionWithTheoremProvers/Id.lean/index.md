@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Id.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Id.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Id.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Id.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [surfaceId](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Id.lean/declarations/surfaceid.md) | 8 | `declaration-track:56c53b951adf93f1406473574488ed36ea256ad606dcbbf79111896a8c74f23b` |
-| 2 | `def` | [ownsDeclaredSurface](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Id.lean/declarations/ownsdeclaredsurface.md) | 9 | `declaration-track:99806b7b6c1901e303cf686c4fb6ae883b04563287093f0e14bd4380d06301be` |
-| 3 | `def` | [crossLeafReasoningRequiresGlue](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Id.lean/declarations/crossleafreasoningrequiresglue.md) | 10 | `declaration-track:89ea563dedf8322d59dd5391c885a12fe94e3ead2402aa97a8ebcfd20ec43353` |
-| 4 | `theorem` | [surface_id_declared](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Id.lean/declarations/surface-id-declared.md) | 12 | `result-track:e995709534a9a2886bbcbb171c98830a2268578297bb2cf6eade01d2c8e33d4d` |
-| 5 | `theorem` | [owns_declared_surface](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Id.lean/declarations/owns-declared-surface.md) | 16 | `result-track:77928afb423b28e0aadaf8b33a8046dc800f0029f1822e9a0773675440be6250` |
+| 1 | `def` | [surfaceId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Id.lean/declarations/surfaceid.md) | 8 | `declaration-track:56c53b951adf93f1406473574488ed36ea256ad606dcbbf79111896a8c74f23b` |
+| 2 | `def` | [ownsDeclaredSurface](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Id.lean/declarations/ownsdeclaredsurface.md) | 9 | `declaration-track:99806b7b6c1901e303cf686c4fb6ae883b04563287093f0e14bd4380d06301be` |
+| 3 | `def` | [crossLeafReasoningRequiresGlue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Id.lean/declarations/crossleafreasoningrequiresglue.md) | 10 | `declaration-track:89ea563dedf8322d59dd5391c885a12fe94e3ead2402aa97a8ebcfd20ec43353` |
+| 4 | `theorem` | [surface_id_declared](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Id.lean/declarations/surface-id-declared.md) | 12 | `result-track:e995709534a9a2886bbcbb171c98830a2268578297bb2cf6eade01d2c8e33d4d` |
+| 5 | `theorem` | [owns_declared_surface](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Id.lean/declarations/owns-declared-surface.md) | 16 | `result-track:77928afb423b28e0aadaf8b33a8046dc800f0029f1822e9a0773675440be6250` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

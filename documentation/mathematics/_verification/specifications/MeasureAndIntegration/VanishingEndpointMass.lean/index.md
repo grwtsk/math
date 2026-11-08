@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/VanishingEndpointMass.lean/index.md) · [Full source](../../../../MeasureAndIntegration/VanishingEndpointMass.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/VanishingEndpointMass.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/VanishingEndpointMass.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [cellInterior](../../../../MeasureAndIntegration/VanishingEndpointMass.lean/declarations/cellinterior.md) | 51 | `declaration-track:975ecda516aef7bce282b261b6e8bd235d4f2894109c677fc7d2bfbd39f5ed86` |
-| 2 | `theorem` | [cellInterior_endpoints](../../../../MeasureAndIntegration/VanishingEndpointMass.lean/declarations/cellinterior-endpoints.md) | 53 | `result-track:27746e08e6a7a0903a1d3116fb05c712162779e7457a64258c5d66975edee068` |
-| 3 | `theorem` | [cellInterior_integral](../../../../MeasureAndIntegration/VanishingEndpointMass.lean/declarations/cellinterior-integral.md) | 56 | `result-track:92f74441b1575f74576739b6bb8dafa6864def0487c3fbd18051bdce754f21fb` |
-| 4 | `theorem` | [zero_endpoints_do_not_erase_continuous_tail](../../../../MeasureAndIntegration/VanishingEndpointMass.lean/declarations/zero-endpoints-do-not-erase-continuous-tail.md) | 74 | `result-track:c1cb09f400e258b46f1c256779c8cf99a49b4c449ceb91240b599e6149aedc42` |
+| 1 | `def` | [cellInterior](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/VanishingEndpointMass.lean/declarations/cellinterior.md) | 51 | `declaration-track:975ecda516aef7bce282b261b6e8bd235d4f2894109c677fc7d2bfbd39f5ed86` |
+| 2 | `theorem` | [cellInterior_endpoints](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/VanishingEndpointMass.lean/declarations/cellinterior-endpoints.md) | 53 | `result-track:27746e08e6a7a0903a1d3116fb05c712162779e7457a64258c5d66975edee068` |
+| 3 | `theorem` | [cellInterior_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/VanishingEndpointMass.lean/declarations/cellinterior-integral.md) | 56 | `result-track:92f74441b1575f74576739b6bb8dafa6864def0487c3fbd18051bdce754f21fb` |
+| 4 | `theorem` | [zero_endpoints_do_not_erase_continuous_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/VanishingEndpointMass.lean/declarations/zero-endpoints-do-not-erase-continuous-tail.md) | 74 | `result-track:c1cb09f400e258b46f1c256779c8cf99a49b4c449ceb91240b599e6149aedc42` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/Bundle.lean/index.md) · [Full source](../../../../Combinatorics/Bundle.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Bundle.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Bundle.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Bundle](../../../../Combinatorics/Bundle.lean/declarations/bundle.md) | 22 | `declaration-track:f75973c59da74fab6e7821dbc584821b56cfabb3e55142b3cb50938417187659` |
-| 2 | `structure` | [BundleMap](../../../../Combinatorics/Bundle.lean/declarations/bundlemap.md) | 25 | `declaration-track:14bfe04dca0966c63f71693b5a50b525bac840f2fce9a713bc4b30cd784ee7fc` |
-| 3 | `structure` | [FiberEquiv](../../../../Combinatorics/Bundle.lean/declarations/fiberequiv.md) | 29 | `declaration-track:7791b3cc5b676267b88dee2004929824125a2f4f64c11ef49841fb9917098b9c` |
-| 4 | `structure` | [CatalanSpectralBundle](../../../../Combinatorics/Bundle.lean/declarations/catalanspectralbundle.md) | 34 | `declaration-track:f75c91c15b9c4cd978831a0f26c54420c3053f35bff86e77b4ddcb1b8247cd4b` |
+| 1 | `structure` | [Bundle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Bundle.lean/declarations/bundle.md) | 22 | `declaration-track:f75973c59da74fab6e7821dbc584821b56cfabb3e55142b3cb50938417187659` |
+| 2 | `structure` | [BundleMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Bundle.lean/declarations/bundlemap.md) | 25 | `declaration-track:14bfe04dca0966c63f71693b5a50b525bac840f2fce9a713bc4b30cd784ee7fc` |
+| 3 | `structure` | [FiberEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Bundle.lean/declarations/fiberequiv.md) | 29 | `declaration-track:7791b3cc5b676267b88dee2004929824125a2f4f64c11ef49841fb9917098b9c` |
+| 4 | `structure` | [CatalanSpectralBundle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Bundle.lean/declarations/catalanspectralbundle.md) | 34 | `declaration-track:f75c91c15b9c4cd978831a0f26c54420c3053f35bff86e77b4ddcb1b8247cd4b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

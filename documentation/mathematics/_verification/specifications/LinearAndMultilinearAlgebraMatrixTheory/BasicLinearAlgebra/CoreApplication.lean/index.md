@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreApplication.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreApplication.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreApplication.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreApplication.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [Application](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreApplication.lean/declarations/application.md) | 14 | `declaration-track:7019e3d49168f89c4fa6d535deca41efbb76720847c10689294a679fe397f083` |
-| 2 | `def` | [identity](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreApplication.lean/declarations/identity.md) | 19 | `declaration-track:b7a652d91d0c5aff08107fd5ec216d3e68470677df2c562047cce73af34f3f95` |
-| 3 | `def` | [comp](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreApplication.lean/declarations/comp.md) | 23 | `declaration-track:872e3b434d9c8beb597585c03958172147b88ba73ef2ac3d0c0b89e7c5e635f4` |
-| 4 | `theorem` | [identity_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreApplication.lean/declarations/identity-apply.md) | 29 | `result-track:1a2c610717bc3b635fcd4718c0c0049293bcdbc777481f9cdc5c5f229b1120ad` |
-| 5 | `theorem` | [comp_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreApplication.lean/declarations/comp-apply.md) | 34 | `result-track:234ffc91ec3bf1586e44269eb5bcf1046a357df5809e5d012465bae8ddc5a565` |
+| 1 | `abbrev` | [Application](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreApplication.lean/declarations/application.md) | 14 | `declaration-track:7019e3d49168f89c4fa6d535deca41efbb76720847c10689294a679fe397f083` |
+| 2 | `def` | [identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreApplication.lean/declarations/identity.md) | 19 | `declaration-track:b7a652d91d0c5aff08107fd5ec216d3e68470677df2c562047cce73af34f3f95` |
+| 3 | `def` | [comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreApplication.lean/declarations/comp.md) | 23 | `declaration-track:872e3b434d9c8beb597585c03958172147b88ba73ef2ac3d0c0b89e7c5e635f4` |
+| 4 | `theorem` | [identity_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreApplication.lean/declarations/identity-apply.md) | 29 | `result-track:1a2c610717bc3b635fcd4718c0c0049293bcdbc777481f9cdc5c5f229b1120ad` |
+| 5 | `theorem` | [comp_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreApplication.lean/declarations/comp-apply.md) | 34 | `result-track:234ffc91ec3bf1586e44269eb5bcf1046a357df5809e5d012465bae8ddc5a565` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

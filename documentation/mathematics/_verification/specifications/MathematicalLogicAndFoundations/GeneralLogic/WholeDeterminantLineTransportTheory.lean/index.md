@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeDeterminantLineTransportTheory.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeDeterminantLineTransportTheory.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeDeterminantLineTransportTheory.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeDeterminantLineTransportTheory.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Theory](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeDeterminantLineTransportTheory.lean/declarations/theory.md) | 50 | `declaration-track:a88735faf0e661b3dd1892d80c66e22f997eba7306c41c2050aa249dced2f041` |
-| 2 | `theorem` | [lineEquiv_refl_apply](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeDeterminantLineTransportTheory.lean/declarations/lineequiv-refl-apply.md) | 87 | `result-track:85c2f17c9101799d171eebf24b1f7b5f162702186a2fb11f0f5bccf5380292bf` |
-| 3 | `theorem` | [quasiIsoEquiv_id_apply](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeDeterminantLineTransportTheory.lean/declarations/quasiisoequiv-id-apply.md) | 95 | `result-track:f8d1ee6c11673051c9c68a6d2f5e2c9001e35685d0e6ba1c7a75a666f0d08f1b` |
+| 1 | `structure` | [Theory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeDeterminantLineTransportTheory.lean/declarations/theory.md) | 50 | `declaration-track:a88735faf0e661b3dd1892d80c66e22f997eba7306c41c2050aa249dced2f041` |
+| 2 | `theorem` | [lineEquiv_refl_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeDeterminantLineTransportTheory.lean/declarations/lineequiv-refl-apply.md) | 87 | `result-track:85c2f17c9101799d171eebf24b1f7b5f162702186a2fb11f0f5bccf5380292bf` |
+| 3 | `theorem` | [quasiIsoEquiv_id_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeDeterminantLineTransportTheory.lean/declarations/quasiisoequiv-id-apply.md) | 95 | `result-track:f8d1ee6c11673051c9c68a6d2f5e2c9001e35685d0e6ba1c7a75a666f0d08f1b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

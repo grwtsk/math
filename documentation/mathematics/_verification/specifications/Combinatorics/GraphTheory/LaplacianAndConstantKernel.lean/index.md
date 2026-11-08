@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/LaplacianAndConstantKernel.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/LaplacianAndConstantKernel.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/LaplacianAndConstantKernel.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/LaplacianAndConstantKernel.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [Neighbor Cardinality](../../../../../Combinatorics/GraphTheory/NeighborCardinality.lean/index.md) — import line 19; pinned internal source present.
+- [Neighbor Cardinality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/NeighborCardinality.lean/index.md) — import line 19; pinned internal source present.
 - `Folder.Spectral.Graph` — import line 21; external provider; requires a separately pinned dependency.
 - `Folder.Spectral.Tensor` — import line 22; external provider; requires a separately pinned dependency.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [laplacian](../../../../../Combinatorics/GraphTheory/LaplacianAndConstantKernel.lean/declarations/laplacian.md) | 46 | `declaration-track:9b6222cc013dab8801be8da8495613099be7d4905c5bdd7314b01a560f5e2bb6` |
-| 2 | `theorem` | [laplacian_constant_zero](../../../../../Combinatorics/GraphTheory/LaplacianAndConstantKernel.lean/declarations/laplacian-constant-zero.md) | 56 | `result-track:7e5072c562fa2ae9239141796019366e4ad7f9b3b74f8ff51d57885072326eaa` |
+| 1 | `def` | [laplacian](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/LaplacianAndConstantKernel.lean/declarations/laplacian.md) | 46 | `declaration-track:9b6222cc013dab8801be8da8495613099be7d4905c5bdd7314b01a560f5e2bb6` |
+| 2 | `theorem` | [laplacian_constant_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/LaplacianAndConstantKernel.lean/declarations/laplacian-constant-zero.md) | 56 | `result-track:7e5072c562fa2ae9239141796019366e4ad7f9b3b74f8ff51d57885072326eaa` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompletedDerivationBridgeCapture.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompletedDerivationBridgeCapture.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompletedDerivationBridgeCapture.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompletedDerivationBridgeCapture.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [circularBridge](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompletedDerivationBridgeCapture.lean/declarations/circularbridge.md) | 46 | `declaration-track:a167b2a3c3146583ff03730254dcde12e0d9e7f5f9077306a6edccf7e83c5721` |
-| 2 | `def` | [circularEvidence](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompletedDerivationBridgeCapture.lean/declarations/circularevidence.md) | 52 | `declaration-track:fb232eef7b8b7a3c3d6bb5fe4f058b08f335cfd41142a73cca85cd223997036c` |
+| 1 | `def` | [circularBridge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompletedDerivationBridgeCapture.lean/declarations/circularbridge.md) | 46 | `declaration-track:a167b2a3c3146583ff03730254dcde12e0d9e7f5f9077306a6edccf7e83c5721` |
+| 2 | `def` | [circularEvidence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompletedDerivationBridgeCapture.lean/declarations/circularevidence.md) | 52 | `declaration-track:fb232eef7b8b7a3c3d6bb5fe4f058b08f335cfd41142a73cca85cd223997036c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

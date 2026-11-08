@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ActualCommonMeanGammaBudgetNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ActualCommonMeanGammaBudgetNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCommonMeanGammaBudgetNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCommonMeanGammaBudgetNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actualCorrelation_measurable](../../../../MeasureAndIntegration/ActualCommonMeanGammaBudgetNamespaced.lean/declarations/actualcorrelation-measurable.md) | 27 | `result-track:98c192c194c950374bcaac2cbe4be5e36cf17e13f446286a12e0b32d88673842` |
-| 2 | `theorem` | [sharpConstant_le_coarse](../../../../MeasureAndIntegration/ActualCommonMeanGammaBudgetNamespaced.lean/declarations/sharpconstant-le-coarse.md) | 31 | `result-track:dcb426319eac0be54a381193b89ef4ccd8656028a872f19633f6d05b036be2f9` |
-| 3 | `theorem` | [actualDeficit_coarse](../../../../MeasureAndIntegration/ActualCommonMeanGammaBudgetNamespaced.lean/declarations/actualdeficit-coarse.md) | 33 | `result-track:42c8aba1a20666b9639dd75040ba7b1a602ecd1b264d9039c4c2aceb523ffaa0` |
-| 4 | `theorem` | [actualWeightedDeficit_integrable](../../../../MeasureAndIntegration/ActualCommonMeanGammaBudgetNamespaced.lean/declarations/actualweighteddeficit-integrable.md) | 44 | `result-track:e8e6546befec099f7ea7e896f63d0da23da33e0e7d257aa26125b35eeb5c2994` |
-| 5 | `theorem` | [actualWeightedDeficit_budget](../../../../MeasureAndIntegration/ActualCommonMeanGammaBudgetNamespaced.lean/declarations/actualweighteddeficit-budget.md) | 49 | `result-track:6712221b35f737ea0c7be8f882ab56a9fc12e99eb95562988ebeee54cd7fcd0f` |
-| 6 | `theorem` | [actualGamma_budget_from_identity](../../../../MeasureAndIntegration/ActualCommonMeanGammaBudgetNamespaced.lean/declarations/actualgamma-budget-from-identity.md) | 61 | `result-track:1eeb624fe68191ce2071a9a5d210804ad78ea497ae571f8ada5a7fd4a1204abe` |
+| 1 | `theorem` | [actualCorrelation_measurable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCommonMeanGammaBudgetNamespaced.lean/declarations/actualcorrelation-measurable.md) | 27 | `result-track:98c192c194c950374bcaac2cbe4be5e36cf17e13f446286a12e0b32d88673842` |
+| 2 | `theorem` | [sharpConstant_le_coarse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCommonMeanGammaBudgetNamespaced.lean/declarations/sharpconstant-le-coarse.md) | 31 | `result-track:dcb426319eac0be54a381193b89ef4ccd8656028a872f19633f6d05b036be2f9` |
+| 3 | `theorem` | [actualDeficit_coarse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCommonMeanGammaBudgetNamespaced.lean/declarations/actualdeficit-coarse.md) | 33 | `result-track:42c8aba1a20666b9639dd75040ba7b1a602ecd1b264d9039c4c2aceb523ffaa0` |
+| 4 | `theorem` | [actualWeightedDeficit_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCommonMeanGammaBudgetNamespaced.lean/declarations/actualweighteddeficit-integrable.md) | 44 | `result-track:e8e6546befec099f7ea7e896f63d0da23da33e0e7d257aa26125b35eeb5c2994` |
+| 5 | `theorem` | [actualWeightedDeficit_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCommonMeanGammaBudgetNamespaced.lean/declarations/actualweighteddeficit-budget.md) | 49 | `result-track:6712221b35f737ea0c7be8f882ab56a9fc12e99eb95562988ebeee54cd7fcd0f` |
+| 6 | `theorem` | [actualGamma_budget_from_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCommonMeanGammaBudgetNamespaced.lean/declarations/actualgamma-budget-from-identity.md) | 61 | `result-track:1eeb624fe68191ce2071a9a5d210804ad78ea497ae571f8ada5a7fd4a1204abe` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/RegularPiNamespacedPublic.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/RegularPiNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/RegularPiNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/RegularPiNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [isLeftRegular_iff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/RegularPiNamespacedPublic.lean/declarations/isleftregular-iff.md) | 33 | `result-track:10b3cc8b46c493f2b50f0737f4b53ce9e6dab438d4cf66f5011f7b56963f49ee` |
-| 2 | `theorem` | [isRightRegular_iff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/RegularPiNamespacedPublic.lean/declarations/isrightregular-iff.md) | 37 | `result-track:7166f4b22be96869bb6ead7c6fd662ed01bb3426604dbbc00163474a31e7170f` |
-| 3 | `theorem` | [isRegular_iff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/RegularPiNamespacedPublic.lean/declarations/isregular-iff.md) | 41 | `result-track:7cf60698a6ede6249671410c3061d57952ef7c35b869bc3ebd8245f65918f434` |
-| 4 | `theorem` | [isSMulRegular_iff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/RegularPiNamespacedPublic.lean/declarations/issmulregular-iff.md) | 47 | `result-track:b71a921815cc2eadb5b57fa4b8dc30659a500fe9334f369329fdbced653f4bfc` |
+| 1 | `theorem` | [isLeftRegular_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/RegularPiNamespacedPublic.lean/declarations/isleftregular-iff.md) | 33 | `result-track:10b3cc8b46c493f2b50f0737f4b53ce9e6dab438d4cf66f5011f7b56963f49ee` |
+| 2 | `theorem` | [isRightRegular_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/RegularPiNamespacedPublic.lean/declarations/isrightregular-iff.md) | 37 | `result-track:7166f4b22be96869bb6ead7c6fd662ed01bb3426604dbbc00163474a31e7170f` |
+| 3 | `theorem` | [isRegular_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/RegularPiNamespacedPublic.lean/declarations/isregular-iff.md) | 41 | `result-track:7cf60698a6ede6249671410c3061d57952ef7c35b869bc3ebd8245f65918f434` |
+| 4 | `theorem` | [isSMulRegular_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/RegularPiNamespacedPublic.lean/declarations/issmulregular-iff.md) | 47 | `result-track:b71a921815cc2eadb5b57fa4b8dc30659a500fe9334f369329fdbced653f4bfc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

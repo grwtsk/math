@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/CoordinationSupplementNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/CoordinationSupplementNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoordinationSupplementNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoordinationSupplementNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [PackingDensity](../../../../Combinatorics/CoordinationSupplementNamespaced.lean/declarations/packingdensity.md) | 34 | `declaration-track:9652b0a7b9d37e48018c58edf6b061edce04cf3d9422c1cb9900fcfd30947cbd` |
-| 2 | `theorem` | [packing_density_checked](../../../../Combinatorics/CoordinationSupplementNamespaced.lean/declarations/packing-density-checked.md) | 41 | `result-track:b71f903ab150902b1c9597111e3cc0e67edebe11fa19ad17dfccba3bfea4ad1c` |
-| 3 | `def` | [PackingDepthRefinement](../../../../Combinatorics/CoordinationSupplementNamespaced.lean/declarations/packingdepthrefinement.md) | 46 | `declaration-track:a3fd995e65e56b1ec380d1155770bc2bf7e59e6ae96df1a7201ed948c48e097b` |
-| 4 | `theorem` | [packing_depth_refinement_checked](../../../../Combinatorics/CoordinationSupplementNamespaced.lean/declarations/packing-depth-refinement-checked.md) | 62 | `result-track:cbce32140261c2be7c3916f9f41d58a0aa0b063085ad41bca84d72f16ff50d0b` |
-| 5 | `def` | [PackingRawProper](../../../../Combinatorics/CoordinationSupplementNamespaced.lean/declarations/packingrawproper.md) | 72 | `declaration-track:4d98a1155736fe35b654a068779e6e440637dd44ddb598508b51821630d1c294` |
-| 6 | `theorem` | [packing_raw_proper_checked](../../../../Combinatorics/CoordinationSupplementNamespaced.lean/declarations/packing-raw-proper-checked.md) | 84 | `result-track:1eb3acef2327a18516ec412367b3f1613e40b0e0b3806dab925fe8a1b0127c59` |
-| 7 | `def` | [PackingFactorTerminal](../../../../Combinatorics/CoordinationSupplementNamespaced.lean/declarations/packingfactorterminal.md) | 92 | `declaration-track:cb0147f6dbf510d33622c89c4a14b983a413baf543df2ed466fdc9a940ea9081` |
-| 8 | `theorem` | [packing_factor_terminal_checked](../../../../Combinatorics/CoordinationSupplementNamespaced.lean/declarations/packing-factor-terminal-checked.md) | 105 | `result-track:4b1b334426da800570f28cc512248bd17f0809bb42e3ff6e7555b3130afd97e3` |
+| 1 | `def` | [PackingDensity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoordinationSupplementNamespaced.lean/declarations/packingdensity.md) | 34 | `declaration-track:9652b0a7b9d37e48018c58edf6b061edce04cf3d9422c1cb9900fcfd30947cbd` |
+| 2 | `theorem` | [packing_density_checked](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoordinationSupplementNamespaced.lean/declarations/packing-density-checked.md) | 41 | `result-track:b71f903ab150902b1c9597111e3cc0e67edebe11fa19ad17dfccba3bfea4ad1c` |
+| 3 | `def` | [PackingDepthRefinement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoordinationSupplementNamespaced.lean/declarations/packingdepthrefinement.md) | 46 | `declaration-track:a3fd995e65e56b1ec380d1155770bc2bf7e59e6ae96df1a7201ed948c48e097b` |
+| 4 | `theorem` | [packing_depth_refinement_checked](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoordinationSupplementNamespaced.lean/declarations/packing-depth-refinement-checked.md) | 62 | `result-track:cbce32140261c2be7c3916f9f41d58a0aa0b063085ad41bca84d72f16ff50d0b` |
+| 5 | `def` | [PackingRawProper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoordinationSupplementNamespaced.lean/declarations/packingrawproper.md) | 72 | `declaration-track:4d98a1155736fe35b654a068779e6e440637dd44ddb598508b51821630d1c294` |
+| 6 | `theorem` | [packing_raw_proper_checked](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoordinationSupplementNamespaced.lean/declarations/packing-raw-proper-checked.md) | 84 | `result-track:1eb3acef2327a18516ec412367b3f1613e40b0e0b3806dab925fe8a1b0127c59` |
+| 7 | `def` | [PackingFactorTerminal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoordinationSupplementNamespaced.lean/declarations/packingfactorterminal.md) | 92 | `declaration-track:cb0147f6dbf510d33622c89c4a14b983a413baf543df2ed466fdc9a940ea9081` |
+| 8 | `theorem` | [packing_factor_terminal_checked](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoordinationSupplementNamespaced.lean/declarations/packing-factor-terminal-checked.md) | 105 | `result-track:4b1b334426da800570f28cc512248bd17f0809bb42e3ff6e7555b3130afd97e3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

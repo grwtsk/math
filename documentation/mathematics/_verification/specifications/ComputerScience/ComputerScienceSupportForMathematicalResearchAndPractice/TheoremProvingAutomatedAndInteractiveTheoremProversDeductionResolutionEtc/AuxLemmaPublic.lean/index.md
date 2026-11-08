@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AuxLemmaPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AuxLemmaPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AuxLemmaPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AuxLemmaPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [AuxLemmaKey](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AuxLemmaPublic.lean/declarations/auxlemmakey.md) | 16 | `declaration-track:8a31d72348daaa920667f08adcae3b9b4e504294acebb40213ce3f457788a8ae` |
-| 2 | `structure` | [AuxLemmas](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AuxLemmaPublic.lean/declarations/auxlemmas.md) | 25 | `declaration-track:0a8ae5fc14997025f4a70edd706067066fad88609ff2442a5a4a3109700a6255` |
-| 3 | `builtin_initialize` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AuxLemmaPublic.lean/declarations/builtin-initialize.md) | 29 | `declaration-track:a4bb7551cbb068f628cf9444949f8b423b26d68edd00530c8205e1132b4aceff` |
-| 4 | `def` | [mkAuxLemma](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AuxLemmaPublic.lean/declarations/mkauxlemma.md) | 43 | `declaration-track:1381aa155701773a24fbdcb05cda0f43a87c3b6b91a97bb468495e78e8022115` |
+| 1 | `structure` | [AuxLemmaKey](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AuxLemmaPublic.lean/declarations/auxlemmakey.md) | 16 | `declaration-track:8a31d72348daaa920667f08adcae3b9b4e504294acebb40213ce3f457788a8ae` |
+| 2 | `structure` | [AuxLemmas](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AuxLemmaPublic.lean/declarations/auxlemmas.md) | 25 | `declaration-track:0a8ae5fc14997025f4a70edd706067066fad88609ff2442a5a4a3109700a6255` |
+| 3 | `builtin_initialize` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AuxLemmaPublic.lean/declarations/builtin-initialize.md) | 29 | `declaration-track:a4bb7551cbb068f628cf9444949f8b423b26d68edd00530c8205e1132b4aceff` |
+| 4 | `def` | [mkAuxLemma](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AuxLemmaPublic.lean/declarations/mkauxlemma.md) | 43 | `declaration-track:1381aa155701773a24fbdcb05cda0f43a87c3b6b91a97bb468495e78e8022115` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

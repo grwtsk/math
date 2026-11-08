@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/Dvd.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/Dvd.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/Dvd.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/Dvd.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [dvd_choose_add](../../../../../NumberTheory/ElementaryNumberTheory/Dvd.lean/declarations/dvd-choose-add.md) | 20 | `result-track:b7345ee5c27dc48bd6cf501088479c12bc8c03b4219993943a9a8c567b6be1b2` |
-| 2 | `lemma` | [dvd_choose](../../../../../NumberTheory/ElementaryNumberTheory/Dvd.lean/declarations/dvd-choose.md) | 27 | `result-track:5e0e9f91e9116aa5e7608a3b37a14998996b5f9e98d09e2123ab18572308dba9` |
-| 3 | `lemma` | [dvd_choose_self](../../../../../NumberTheory/ElementaryNumberTheory/Dvd.lean/declarations/dvd-choose-self.md) | 31 | `result-track:e4d33e5b221ffd5c240e746c46b583558d7457ce45225be87dabaf6c34537787` |
+| 1 | `theorem` | [dvd_choose_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/Dvd.lean/declarations/dvd-choose-add.md) | 20 | `result-track:b7345ee5c27dc48bd6cf501088479c12bc8c03b4219993943a9a8c567b6be1b2` |
+| 2 | `lemma` | [dvd_choose](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/Dvd.lean/declarations/dvd-choose.md) | 27 | `result-track:5e0e9f91e9116aa5e7608a3b37a14998996b5f9e98d09e2123ab18572308dba9` |
+| 3 | `lemma` | [dvd_choose_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/Dvd.lean/declarations/dvd-choose-self.md) | 31 | `result-track:e4d33e5b221ffd5c240e746c46b583558d7457ce45225be87dabaf6c34537787` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

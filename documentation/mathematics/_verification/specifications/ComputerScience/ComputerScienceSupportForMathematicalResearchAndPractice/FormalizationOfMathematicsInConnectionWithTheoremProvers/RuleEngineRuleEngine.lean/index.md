@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RuleEngineRuleEngine.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RuleEngineRuleEngine.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RuleEngineRuleEngine.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RuleEngineRuleEngine.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RuleEngine](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RuleEngineRuleEngine.lean/declarations/ruleengine.md) | 18 | `declaration-track:d2aefa1748cc41aa02798d01b5d5412dcf41c8ef765c5489210b7b1c073318e4` |
-| 2 | `structure` | [RuleApplication](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RuleEngineRuleEngine.lean/declarations/ruleapplication.md) | 27 | `declaration-track:ed6cf09e99109de0e50a6e65807684fd3509aabf09eac00210be5eee353ded14` |
-| 3 | `def` | [RuleApplication.run?](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RuleEngineRuleEngine.lean/declarations/ruleapplication-run.md) | 31 | `declaration-track:0f0c2072bf7e91b307e022466408fb15602367fd52a6b80c052b2e8ed92fe444` |
-| 4 | `theorem` | [run?_resolved](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RuleEngineRuleEngine.lean/declarations/run-resolved.md) | 38 | `result-track:818ab7eb9279dca57ca34c87cb1c385aabc848de723976d83a7851cf032b6994` |
+| 1 | `structure` | [RuleEngine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RuleEngineRuleEngine.lean/declarations/ruleengine.md) | 18 | `declaration-track:d2aefa1748cc41aa02798d01b5d5412dcf41c8ef765c5489210b7b1c073318e4` |
+| 2 | `structure` | [RuleApplication](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RuleEngineRuleEngine.lean/declarations/ruleapplication.md) | 27 | `declaration-track:ed6cf09e99109de0e50a6e65807684fd3509aabf09eac00210be5eee353ded14` |
+| 3 | `def` | [RuleApplication.run?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RuleEngineRuleEngine.lean/declarations/ruleapplication-run.md) | 31 | `declaration-track:0f0c2072bf7e91b307e022466408fb15602367fd52a6b80c052b2e8ed92fe444` |
+| 4 | `theorem` | [run?_resolved](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RuleEngineRuleEngine.lean/declarations/run-resolved.md) | 38 | `result-track:818ab7eb9279dca57ca34c87cb1c385aabc848de723976d83a7851cf032b6994` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

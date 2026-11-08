@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/IntegrableConnection.lean/index.md) · [Full source](../../../../RealFunctions/IntegrableConnection.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/IntegrableConnection.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/IntegrableConnection.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [connection_flat](../../../../RealFunctions/IntegrableConnection.lean/declarations/connection-flat.md) | 20 | `result-track:26f8d70d22dc5deac60be6461212f5ab191d15c92d7cb22fea000cb659ff88d4` |
-| 2 | `theorem` | [connection_integrable](../../../../RealFunctions/IntegrableConnection.lean/declarations/connection-integrable.md) | 27 | `result-track:563119e4260e3cc4532bdd7147851ef3a14cfd18c95969a20b02c194e0b5d80c` |
-| 3 | `theorem` | [horizontal_section_is_horizontal](../../../../RealFunctions/IntegrableConnection.lean/declarations/horizontal-section-is-horizontal.md) | 34 | `result-track:6c76c1be0e7a6dfb5667d4bcaac6c1d8af7c832ca552970e4d1e389bcb8f0717` |
+| 1 | `theorem` | [connection_flat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/IntegrableConnection.lean/declarations/connection-flat.md) | 20 | `result-track:26f8d70d22dc5deac60be6461212f5ab191d15c92d7cb22fea000cb659ff88d4` |
+| 2 | `theorem` | [connection_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/IntegrableConnection.lean/declarations/connection-integrable.md) | 27 | `result-track:563119e4260e3cc4532bdd7147851ef3a14cfd18c95969a20b02c194e0b5d80c` |
+| 3 | `theorem` | [horizontal_section_is_horizontal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/IntegrableConnection.lean/declarations/horizontal-section-is-horizontal.md) | 34 | `result-track:6c76c1be0e7a6dfb5667d4bcaac6c1d8af7c832ca552970e4d1e389bcb8f0717` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

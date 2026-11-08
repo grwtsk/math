@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteGammaActionIntertwining.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteGammaActionIntertwining.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteGammaActionIntertwining.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteGammaActionIntertwining.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -50,7 +50,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 - `DAF.Hilbert.Finite` — import line 20; external provider; requires a separately pinned dependency.
 - `Mathlib.Algebra.BigOperators.Ring.Finset` — import line 21; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic.FinCases` — import line 22; external provider; requires a separately pinned dependency.
-- [Finite Antiunitary And All Exact Hypotheses](../../../../../FunctionalAnalysis/FiniteAntiunitaryAndAllExactHypotheses.lean/index.md) — import line 24; pinned internal source present.
+- [Finite Antiunitary And All Exact Hypotheses](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FiniteAntiunitaryAndAllExactHypotheses.lean/index.md) — import line 24; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -61,8 +61,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [orbitGammaAction](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteGammaActionIntertwining.lean/declarations/orbitgammaaction.md) | 54 | `declaration-track:aaeb7f8a3444b827a61d20c7b36560a9a89031642195eb8ca5eaa95b8f3fece0` |
-| 2 | `theorem` | [functionalEquationRealStructure_intertwines](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteGammaActionIntertwining.lean/declarations/functionalequationrealstructure-intertwines.md) | 65 | `result-track:2ebb931df9e0daa81cfb366c26ac6c93234def6d4f58e59ec2d2e640f8ae3ee9` |
+| 1 | `def` | [orbitGammaAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteGammaActionIntertwining.lean/declarations/orbitgammaaction.md) | 54 | `declaration-track:aaeb7f8a3444b827a61d20c7b36560a9a89031642195eb8ca5eaa95b8f3fece0` |
+| 2 | `theorem` | [functionalEquationRealStructure_intertwines](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteGammaActionIntertwining.lean/declarations/functionalequationrealstructure-intertwines.md) | 65 | `result-track:2ebb931df9e0daa81cfb366c26ac6c93234def6d4f58e59ec2d2e640f8ae3ee9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

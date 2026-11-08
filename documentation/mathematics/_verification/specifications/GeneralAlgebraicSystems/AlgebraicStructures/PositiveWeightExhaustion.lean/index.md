@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PositiveWeightExhaustion.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PositiveWeightExhaustion.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PositiveWeightExhaustion.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PositiveWeightExhaustion.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [missing_weight_le](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PositiveWeightExhaustion.lean/declarations/missing-weight-le.md) | 24 | `result-track:d0ce741449d39d780d40db058796677a7bc335bfcf6368f52d3009c4af52184d` |
-| 2 | `theorem` | [surjective_of_mass_le](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PositiveWeightExhaustion.lean/declarations/surjective-of-mass-le.md) | 46 | `result-track:4acede081d0305467cdefee731b925934a035976ec9d81cb9bbe4d8c24b5b439` |
-| 3 | `theorem` | [weights_eq_of_mass_le](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PositiveWeightExhaustion.lean/declarations/weights-eq-of-mass-le.md) | 59 | `result-track:69710ac9b1f066d5d1263443c4e39be26c36564705febd9710a8eb0bf65036d8` |
-| 4 | `theorem` | [exists_equiv_of_mass_le](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PositiveWeightExhaustion.lean/declarations/exists-equiv-of-mass-le.md) | 77 | `result-track:3fc444c4c43332e16822733cbfc0814c4727e816fde58a508f336138604bfcb6` |
+| 1 | `theorem` | [missing_weight_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PositiveWeightExhaustion.lean/declarations/missing-weight-le.md) | 24 | `result-track:d0ce741449d39d780d40db058796677a7bc335bfcf6368f52d3009c4af52184d` |
+| 2 | `theorem` | [surjective_of_mass_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PositiveWeightExhaustion.lean/declarations/surjective-of-mass-le.md) | 46 | `result-track:4acede081d0305467cdefee731b925934a035976ec9d81cb9bbe4d8c24b5b439` |
+| 3 | `theorem` | [weights_eq_of_mass_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PositiveWeightExhaustion.lean/declarations/weights-eq-of-mass-le.md) | 59 | `result-track:69710ac9b1f066d5d1263443c4e39be26c36564705febd9710a8eb0bf65036d8` |
+| 4 | `theorem` | [exists_equiv_of_mass_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PositiveWeightExhaustion.lean/declarations/exists-equiv-of-mass-le.md) | 77 | `result-track:3fc444c4c43332e16822733cbfc0814c4727e816fde58a508f336138604bfcb6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

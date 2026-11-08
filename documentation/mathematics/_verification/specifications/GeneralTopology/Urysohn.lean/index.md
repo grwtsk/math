@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/Urysohn.lean/index.md) · [Full source](../../../../GeneralTopology/Urysohn.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Urysohn.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Urysohn.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,10 +60,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_isInducing_l_infty](../../../../GeneralTopology/Urysohn.lean/declarations/exists-isinducing-l-infty.md) | 35 | `result-track:c2b53c68ab82ed45df0e2058183e6479c2b3ab917a6a0fd911eed4d3d5b05c45` |
-| 2 | `instance` | [(anonymous)](../../../../GeneralTopology/Urysohn.lean/declarations/instance.md) | 111 | `declaration-track:8cb81ef2ab6f4f417f896c5cccc2ba0751b4fcf7d9a963fc6a2d15bb5066b7d4` |
-| 3 | `theorem` | [exists_embedding_l_infty](../../../../GeneralTopology/Urysohn.lean/declarations/exists-embedding-l-infty.md) | 121 | `result-track:e2e951ca794ec9be7da2bf9f16c5ed53b91592078d76ad6928650fa89bc1ce89` |
-| 4 | `instance` | [(anonymous)](../../../../GeneralTopology/Urysohn.lean/declarations/instance-source-edition-2.md) | 127 | `declaration-track:bfbd871157f4c1d5f6fa00ddd23bd9083ec746060b8ce38b7cc658a915491e88` |
+| 1 | `theorem` | [exists_isInducing_l_infty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Urysohn.lean/declarations/exists-isinducing-l-infty.md) | 35 | `result-track:c2b53c68ab82ed45df0e2058183e6479c2b3ab917a6a0fd911eed4d3d5b05c45` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Urysohn.lean/declarations/instance.md) | 111 | `declaration-track:8cb81ef2ab6f4f417f896c5cccc2ba0751b4fcf7d9a963fc6a2d15bb5066b7d4` |
+| 3 | `theorem` | [exists_embedding_l_infty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Urysohn.lean/declarations/exists-embedding-l-infty.md) | 121 | `result-track:e2e951ca794ec9be7da2bf9f16c5ed53b91592078d76ad6928650fa89bc1ce89` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Urysohn.lean/declarations/instance-source-edition-2.md) | 127 | `declaration-track:bfbd871157f4c1d5f6fa00ddd23bd9083ec746060b8ce38b7cc658a915491e88` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/TheStatedHeightLengthShapeExponentGivesASummableDyadicBudgetEdition2.lean/index.md) · [Full source](../../../../RealFunctions/TheStatedHeightLengthShapeExponentGivesASummableDyadicBudgetEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TheStatedHeightLengthShapeExponentGivesASummableDyadicBudgetEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TheStatedHeightLengthShapeExponentGivesASummableDyadicBudgetEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [hybridExponent](../../../../RealFunctions/TheStatedHeightLengthShapeExponentGivesASummableDyadicBudgetEdition2.lean/declarations/hybridexponent.md) | 30 | `declaration-track:9b9d57dc923b627c930487ad74aa87daf27cabd0e5cf66e95f57dbeeb7eaff17` |
-| 2 | `theorem` | [height_width_shape_product](../../../../RealFunctions/TheStatedHeightLengthShapeExponentGivesASummableDyadicBudgetEdition2.lean/declarations/height-width-shape-product.md) | 32 | `result-track:22a9a5a413f14b48ca930d860bb74eb016d8bfc25a5be8ce15a19da2d883771f` |
-| 3 | `theorem` | [dyadic_polylog_budget_summable](../../../../RealFunctions/TheStatedHeightLengthShapeExponentGivesASummableDyadicBudgetEdition2.lean/declarations/dyadic-polylog-budget-summable.md) | 52 | `result-track:c2bd0234d2d1116c776f2e6836917701950e9f80fc6866ff8cdbbeb1d91fb3d4` |
-| 4 | `theorem` | [positive_block_debts_summable](../../../../RealFunctions/TheStatedHeightLengthShapeExponentGivesASummableDyadicBudgetEdition2.lean/declarations/positive-block-debts-summable.md) | 78 | `result-track:90730976ae160b93f0b05e707e577f94fd207eb7bed0449d0ccd2ab14d83fc90` |
-| 5 | `theorem` | [seven_eighths_threshold](../../../../RealFunctions/TheStatedHeightLengthShapeExponentGivesASummableDyadicBudgetEdition2.lean/declarations/seven-eighths-threshold.md) | 84 | `result-track:b7758767a469ae84c89302053bb79fd4e561e903eb5054ee07b5a9dd1086de7c` |
+| 1 | `def` | [hybridExponent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TheStatedHeightLengthShapeExponentGivesASummableDyadicBudgetEdition2.lean/declarations/hybridexponent.md) | 30 | `declaration-track:9b9d57dc923b627c930487ad74aa87daf27cabd0e5cf66e95f57dbeeb7eaff17` |
+| 2 | `theorem` | [height_width_shape_product](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TheStatedHeightLengthShapeExponentGivesASummableDyadicBudgetEdition2.lean/declarations/height-width-shape-product.md) | 32 | `result-track:22a9a5a413f14b48ca930d860bb74eb016d8bfc25a5be8ce15a19da2d883771f` |
+| 3 | `theorem` | [dyadic_polylog_budget_summable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TheStatedHeightLengthShapeExponentGivesASummableDyadicBudgetEdition2.lean/declarations/dyadic-polylog-budget-summable.md) | 52 | `result-track:c2bd0234d2d1116c776f2e6836917701950e9f80fc6866ff8cdbbeb1d91fb3d4` |
+| 4 | `theorem` | [positive_block_debts_summable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TheStatedHeightLengthShapeExponentGivesASummableDyadicBudgetEdition2.lean/declarations/positive-block-debts-summable.md) | 78 | `result-track:90730976ae160b93f0b05e707e577f94fd207eb7bed0449d0ccd2ab14d83fc90` |
+| 5 | `theorem` | [seven_eighths_threshold](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TheStatedHeightLengthShapeExponentGivesASummableDyadicBudgetEdition2.lean/declarations/seven-eighths-threshold.md) | 84 | `result-track:b7758767a469ae84c89302053bb79fd4e561e903eb5054ee07b5a9dd1086de7c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

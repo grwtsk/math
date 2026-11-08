@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/QuadraticIntervalRationalQuadratureCore.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/QuadraticIntervalRationalQuadratureCore.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/QuadraticIntervalRationalQuadratureCore.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/QuadraticIntervalRationalQuadratureCore.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,10 +46,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Interfaces.QuadraticIntervalRationalNodeCore`](../../../../FunctionsOfAComplexVariable/QuadraticIntervalRationalNodeCore.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.ErrorBounds.RationalFiniteSum`](../../../../RealFunctions/RationalFiniteSum.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.RationalMellinQuadrature`](../../../../FunctionsOfAComplexVariable/RationalMellinQuadrature.lean/index.md) — import line 6; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.Checks.RationalMellinQuadratureControls`](../../../../FunctionsOfAComplexVariable/RationalMellinQuadratureControls.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.Interfaces.QuadraticIntervalRationalNodeCore`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/QuadraticIntervalRationalNodeCore.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.ErrorBounds.RationalFiniteSum`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalFiniteSum.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.RationalMellinQuadrature`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalMellinQuadrature.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.Checks.RationalMellinQuadratureControls`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalMellinQuadratureControls.lean/index.md) — import line 7; pinned internal source present.
 
 ## Top results and three-degree verification metric
 

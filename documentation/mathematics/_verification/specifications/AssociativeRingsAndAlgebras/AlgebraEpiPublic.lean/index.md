@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/AlgebraEpiPublic.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/AlgebraEpiPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraEpiPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraEpiPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [IsEpi](../../../../AssociativeRingsAndAlgebras/AlgebraEpiPublic.lean/declarations/isepi.md) | 29 | `declaration-track:2303f96a878a87b8be8e212db9e570b90a8e2c161504acbfe8a3080898a1d611` |
-| 2 | `lemma` | [isEpi_iff_forall_one_tmul_eq](../../../../AssociativeRingsAndAlgebras/AlgebraEpiPublic.lean/declarations/isepi-iff-forall-one-tmul-eq.md) | 33 | `result-track:4c5d5b9a3217708b49359c5554c337e313f18015b9a9bf182f835acca043029f` |
-| 3 | `lemma` | [isEpi_of_surjective_algebraMap](../../../../AssociativeRingsAndAlgebras/AlgebraEpiPublic.lean/declarations/isepi-of-surjective-algebramap.md) | 52 | `result-track:5ebf6cca56eeb44a341e49d1d45188d3d842124b543ad256332643d250d21b93` |
-| 4 | `instance` | [(anonymous)](../../../../AssociativeRingsAndAlgebras/AlgebraEpiPublic.lean/declarations/instance.md) | 61 | `declaration-track:ff55569950bff77ec46807ab5e5cfeed060103f36958e24f584fdf7567deb497` |
-| 5 | `lemma` | [isEpi_iff_surjective_algebraMap_of_finite](../../../../AssociativeRingsAndAlgebras/AlgebraEpiPublic.lean/declarations/isepi-iff-surjective-algebramap-of-finite.md) | 78 | `result-track:6271cde20077120656f1afeeb000553f01f5606f52c5448a09205db5e81f35c0` |
-| 6 | `lemma` | [tmul_comm](../../../../AssociativeRingsAndAlgebras/AlgebraEpiPublic.lean/declarations/tmul-comm.md) | 107 | `result-track:129305729409bc167bcf4bd8a249331528bfbd6c0d80c524a8a8920d7c31afa6` |
-| 7 | `lemma` | [injective_lift_lsmul](../../../../AssociativeRingsAndAlgebras/AlgebraEpiPublic.lean/declarations/injective-lift-lsmul.md) | 121 | `result-track:97198c974f8d852d37e854e48f867889a9c6534af07ca2cb06a45fc55c181a9b` |
-| 8 | `def` | [_root_.TensorProduct.lid'](../../../../AssociativeRingsAndAlgebras/AlgebraEpiPublic.lean/declarations/root-tensorproduct-lid.md) | 153 | `declaration-track:478164fcb9ecf2baf076059d02203de454dd944528fc19fbbdba389cd15a4db0` |
-| 9 | `lemma` | [_root_.TensorProduct.lid'_apply_tmul](../../../../AssociativeRingsAndAlgebras/AlgebraEpiPublic.lean/declarations/root-tensorproduct-lid-apply-tmul.md) | 158 | `result-track:6e5ed1b55e61c81c8bc3310baf94eb0503d109846b0c80656657cd09d5d4dee8` |
-| 10 | `lemma` | [_root_.TensorProduct.lid'_symm_apply](../../../../AssociativeRingsAndAlgebras/AlgebraEpiPublic.lean/declarations/root-tensorproduct-lid-symm-apply.md) | 162 | `result-track:23149140de4652894dcc3a114b8daa3d805723224fcf32d9ed39d4b8751b5f9d` |
+| 1 | `class` | [IsEpi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraEpiPublic.lean/declarations/isepi.md) | 29 | `declaration-track:2303f96a878a87b8be8e212db9e570b90a8e2c161504acbfe8a3080898a1d611` |
+| 2 | `lemma` | [isEpi_iff_forall_one_tmul_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraEpiPublic.lean/declarations/isepi-iff-forall-one-tmul-eq.md) | 33 | `result-track:4c5d5b9a3217708b49359c5554c337e313f18015b9a9bf182f835acca043029f` |
+| 3 | `lemma` | [isEpi_of_surjective_algebraMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraEpiPublic.lean/declarations/isepi-of-surjective-algebramap.md) | 52 | `result-track:5ebf6cca56eeb44a341e49d1d45188d3d842124b543ad256332643d250d21b93` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraEpiPublic.lean/declarations/instance.md) | 61 | `declaration-track:ff55569950bff77ec46807ab5e5cfeed060103f36958e24f584fdf7567deb497` |
+| 5 | `lemma` | [isEpi_iff_surjective_algebraMap_of_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraEpiPublic.lean/declarations/isepi-iff-surjective-algebramap-of-finite.md) | 78 | `result-track:6271cde20077120656f1afeeb000553f01f5606f52c5448a09205db5e81f35c0` |
+| 6 | `lemma` | [tmul_comm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraEpiPublic.lean/declarations/tmul-comm.md) | 107 | `result-track:129305729409bc167bcf4bd8a249331528bfbd6c0d80c524a8a8920d7c31afa6` |
+| 7 | `lemma` | [injective_lift_lsmul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraEpiPublic.lean/declarations/injective-lift-lsmul.md) | 121 | `result-track:97198c974f8d852d37e854e48f867889a9c6534af07ca2cb06a45fc55c181a9b` |
+| 8 | `def` | [_root_.TensorProduct.lid'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraEpiPublic.lean/declarations/root-tensorproduct-lid.md) | 153 | `declaration-track:478164fcb9ecf2baf076059d02203de454dd944528fc19fbbdba389cd15a4db0` |
+| 9 | `lemma` | [_root_.TensorProduct.lid'_apply_tmul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraEpiPublic.lean/declarations/root-tensorproduct-lid-apply-tmul.md) | 158 | `result-track:6e5ed1b55e61c81c8bc3310baf94eb0503d109846b0c80656657cd09d5d4dee8` |
+| 10 | `lemma` | [_root_.TensorProduct.lid'_symm_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AlgebraEpiPublic.lean/declarations/root-tensorproduct-lid-symm-apply.md) | 162 | `result-track:23149140de4652894dcc3a114b8daa3d805723224fcf32d9ed39d4b8751b5f9d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

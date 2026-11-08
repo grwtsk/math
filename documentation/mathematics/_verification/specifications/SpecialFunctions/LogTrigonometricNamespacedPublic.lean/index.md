@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../SpecialFunctions/LogTrigonometricNamespacedPublic.lean/index.md) · [Full source](../../../../SpecialFunctions/LogTrigonometricNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/LogTrigonometricNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/LogTrigonometricNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [integral_log_sin_zero_pi_eq_two_mul_integral_log_sin_zero_pi_div_two](../../../../SpecialFunctions/LogTrigonometricNamespacedPublic.lean/declarations/integral-log-sin-zero-pi-eq-two-mul-integral-log-sin-zero-pi-div-two.md) | 37 | `result-track:3661d2bb1353269e5fa89afc652dfaf24959b1a812734bc58723357ccd1bc296` |
-| 2 | `theorem` | [integral_log_sin_zero_pi_div_two](../../../../SpecialFunctions/LogTrigonometricNamespacedPublic.lean/declarations/integral-log-sin-zero-pi-div-two.md) | 52 | `result-track:e7033f0caa315aacc09a9942b40207c933ab7beb6bbae8536e4c1a74f43db7e9` |
-| 3 | `theorem` | [integral_log_sin_zero_pi](../../../../SpecialFunctions/LogTrigonometricNamespacedPublic.lean/declarations/integral-log-sin-zero-pi.md) | 91 | `result-track:733fefef59d7dddb73795616ebe9032c97a4940fdb91f931a886713f2a2b32bf` |
+| 1 | `lemma` | [integral_log_sin_zero_pi_eq_two_mul_integral_log_sin_zero_pi_div_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/LogTrigonometricNamespacedPublic.lean/declarations/integral-log-sin-zero-pi-eq-two-mul-integral-log-sin-zero-pi-div-two.md) | 37 | `result-track:3661d2bb1353269e5fa89afc652dfaf24959b1a812734bc58723357ccd1bc296` |
+| 2 | `theorem` | [integral_log_sin_zero_pi_div_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/LogTrigonometricNamespacedPublic.lean/declarations/integral-log-sin-zero-pi-div-two.md) | 52 | `result-track:e7033f0caa315aacc09a9942b40207c933ab7beb6bbae8536e4c1a74f43db7e9` |
+| 3 | `theorem` | [integral_log_sin_zero_pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/LogTrigonometricNamespacedPublic.lean/declarations/integral-log-sin-zero-pi.md) | 91 | `result-track:733fefef59d7dddb73795616ebe9032c97a4940fdb91f931a886713f2a2b32bf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DefinitionNamespacedFiniteSoninHorizon.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DefinitionNamespacedFiniteSoninHorizon.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DefinitionNamespacedFiniteSoninHorizon.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DefinitionNamespacedFiniteSoninHorizon.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [FiniteSoninHorizon.transportedRange](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DefinitionNamespacedFiniteSoninHorizon.lean/declarations/finitesoninhorizon-transportedrange.md) | 17 | `declaration-track:30d6cdaae15bb9ad9944a2135de2f146e911ef4ef25482b197d7e0689bab6487` |
+| 1 | `def` | [FiniteSoninHorizon.transportedRange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DefinitionNamespacedFiniteSoninHorizon.lean/declarations/finitesoninhorizon-transportedrange.md) | 17 | `declaration-track:30d6cdaae15bb9ad9944a2135de2f146e911ef4ef25482b197d7e0689bab6487` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

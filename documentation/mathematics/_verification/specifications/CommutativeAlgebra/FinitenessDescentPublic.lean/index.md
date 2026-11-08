@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/FinitenessDescentPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/FinitenessDescentPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessDescentPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessDescentPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [Module.Finite.of_finite_tensorProduct_of_faithfullyFlat](../../../../CommutativeAlgebra/FinitenessDescentPublic.lean/declarations/module-finite-of-finite-tensorproduct-of-faithfullyflat.md) | 36 | `result-track:ac6f84f530f1fe7181833b2d120364ba21bf4a2d2d48ddc01a9ffd3c438531a8` |
-| 2 | `lemma` | [Ideal.FG.of_FG_map_of_faithfullyFlat](../../../../CommutativeAlgebra/FinitenessDescentPublic.lean/declarations/ideal-fg-of-fg-map-of-faithfullyflat.md) | 50 | `result-track:1c731f038e96c5c6811c2e49e11853572e4aaac00cde51ee1c964a078d44761c` |
-| 3 | `lemma` | [FiniteType.of_finiteType_tensorProduct_of_faithfullyFlat](../../../../CommutativeAlgebra/FinitenessDescentPublic.lean/declarations/finitetype-of-finitetype-tensorproduct-of-faithfullyflat.md) | 80 | `result-track:301d6d72ddef6a3459e86e82dc47dd82579fa1cd4052ac7807ab404d61f458b1` |
-| 4 | `lemma` | [FinitePresentation.of_finitePresentation_tensorProduct_of_faithfullyFlat](../../../../CommutativeAlgebra/FinitenessDescentPublic.lean/declarations/finitepresentation-of-finitepresentation-tensorproduct-of-faithfullyflat.md) | 99 | `result-track:f10ad8288000a3cd9d3501a94d2fe55b18e9d8f3a0dc20381e910c64c317d1ca` |
-| 5 | `lemma` | [FiniteType.codescendsAlong_faithfullyFlat](../../../../CommutativeAlgebra/FinitenessDescentPublic.lean/declarations/finitetype-codescendsalong-faithfullyflat.md) | 120 | `result-track:3f29d447f331b23253b53c425c8d86630be019fcb39536ea0ff2efe32251a59c` |
-| 6 | `lemma` | [FinitePresentation.codescendsAlong_faithfullyFlat](../../../../CommutativeAlgebra/FinitenessDescentPublic.lean/declarations/finitepresentation-codescendsalong-faithfullyflat.md) | 127 | `result-track:3e0561ff45fabf54752bcffe12b508cf6f38a32477602c3b86b4cb51776504ec` |
-| 7 | `lemma` | [Finite.codescendsAlong_faithfullyFlat](../../../../CommutativeAlgebra/FinitenessDescentPublic.lean/declarations/finite-codescendsalong-faithfullyflat.md) | 134 | `result-track:f5aa59e50f4591a94cac8f6672912fcab967665a9f6468e3552b9bb0488c03be` |
+| 1 | `lemma` | [Module.Finite.of_finite_tensorProduct_of_faithfullyFlat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessDescentPublic.lean/declarations/module-finite-of-finite-tensorproduct-of-faithfullyflat.md) | 36 | `result-track:ac6f84f530f1fe7181833b2d120364ba21bf4a2d2d48ddc01a9ffd3c438531a8` |
+| 2 | `lemma` | [Ideal.FG.of_FG_map_of_faithfullyFlat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessDescentPublic.lean/declarations/ideal-fg-of-fg-map-of-faithfullyflat.md) | 50 | `result-track:1c731f038e96c5c6811c2e49e11853572e4aaac00cde51ee1c964a078d44761c` |
+| 3 | `lemma` | [FiniteType.of_finiteType_tensorProduct_of_faithfullyFlat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessDescentPublic.lean/declarations/finitetype-of-finitetype-tensorproduct-of-faithfullyflat.md) | 80 | `result-track:301d6d72ddef6a3459e86e82dc47dd82579fa1cd4052ac7807ab404d61f458b1` |
+| 4 | `lemma` | [FinitePresentation.of_finitePresentation_tensorProduct_of_faithfullyFlat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessDescentPublic.lean/declarations/finitepresentation-of-finitepresentation-tensorproduct-of-faithfullyflat.md) | 99 | `result-track:f10ad8288000a3cd9d3501a94d2fe55b18e9d8f3a0dc20381e910c64c317d1ca` |
+| 5 | `lemma` | [FiniteType.codescendsAlong_faithfullyFlat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessDescentPublic.lean/declarations/finitetype-codescendsalong-faithfullyflat.md) | 120 | `result-track:3f29d447f331b23253b53c425c8d86630be019fcb39536ea0ff2efe32251a59c` |
+| 6 | `lemma` | [FinitePresentation.codescendsAlong_faithfullyFlat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessDescentPublic.lean/declarations/finitepresentation-codescendsalong-faithfullyflat.md) | 127 | `result-track:3e0561ff45fabf54752bcffe12b508cf6f38a32477602c3b86b4cb51776504ec` |
+| 7 | `lemma` | [Finite.codescendsAlong_faithfullyFlat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessDescentPublic.lean/declarations/finite-codescendsalong-faithfullyflat.md) | 134 | `result-track:f5aa59e50f4591a94cac8f6672912fcab967665a9f6468e3552b9bb0488c03be` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

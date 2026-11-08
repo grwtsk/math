@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/EquivReindexPublic.lean/index.md) · [Full source](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/EquivReindexPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/EquivReindexPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/EquivReindexPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [equivReindex](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/EquivReindexPublic.lean/declarations/equivreindex.md) | 33 | `declaration-track:0a0080e21e37b334078db592c6c54d1e2d1dd100ac8700630a3d5135cbd35923` |
-| 2 | `abbrev` | [basisMatrix](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/EquivReindexPublic.lean/declarations/basismatrix.md) | 40 | `declaration-track:a4ed51d89a75ea4ef2634caadd21e25b9aed63864ee27c0aaf20134caa1e9c5b` |
-| 3 | `theorem` | [basisMatrix_eq_embeddingsMatrixReindex](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/EquivReindexPublic.lean/declarations/basismatrix-eq-embeddingsmatrixreindex.md) | 43 | `result-track:ad23576665c7da3d436a19297dfb6061bc036dc29761835ed237ba61ac157a08` |
-| 4 | `theorem` | [conj_basisMatrix](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/EquivReindexPublic.lean/declarations/conj-basismatrix.md) | 49 | `result-track:fef7b869082e623e6001af0c53171cf8e13150cb0a6d6d021cb1983ba1478f0e` |
-| 5 | `theorem` | [det_of_basisMatrix_non_zero](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/EquivReindexPublic.lean/declarations/det-of-basismatrix-non-zero.md) | 54 | `result-track:f3d7346915341d1207224d42a92af831201359e33320c68b772e0bb42397bbc0` |
-| 6 | `instance` | [(anonymous)](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/EquivReindexPublic.lean/declarations/instance.md) | 63 | `declaration-track:f6c976fe8cd3aead90605460a085fd977f9065b9c361f9bd6a3ff42b0d94c319` |
-| 7 | `theorem` | [canonicalEmbedding_eq_basisMatrix_mulVec](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/EquivReindexPublic.lean/declarations/canonicalembedding-eq-basismatrix-mulvec.md) | 68 | `result-track:c76c70a61be6bad81ff8d15a05d24f405c31fe412c055b1c944e45856ba0a933` |
-| 8 | `theorem` | [inverse_basisMatrix_mulVec_eq_repr](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/EquivReindexPublic.lean/declarations/inverse-basismatrix-mulvec-eq-repr.md) | 75 | `result-track:d4a9ef39ed71d06fccf4563bdd5b0f961ded24891761627a7d3871be7a1379b4` |
+| 1 | `abbrev` | [equivReindex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/EquivReindexPublic.lean/declarations/equivreindex.md) | 33 | `declaration-track:0a0080e21e37b334078db592c6c54d1e2d1dd100ac8700630a3d5135cbd35923` |
+| 2 | `abbrev` | [basisMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/EquivReindexPublic.lean/declarations/basismatrix.md) | 40 | `declaration-track:a4ed51d89a75ea4ef2634caadd21e25b9aed63864ee27c0aaf20134caa1e9c5b` |
+| 3 | `theorem` | [basisMatrix_eq_embeddingsMatrixReindex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/EquivReindexPublic.lean/declarations/basismatrix-eq-embeddingsmatrixreindex.md) | 43 | `result-track:ad23576665c7da3d436a19297dfb6061bc036dc29761835ed237ba61ac157a08` |
+| 4 | `theorem` | [conj_basisMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/EquivReindexPublic.lean/declarations/conj-basismatrix.md) | 49 | `result-track:fef7b869082e623e6001af0c53171cf8e13150cb0a6d6d021cb1983ba1478f0e` |
+| 5 | `theorem` | [det_of_basisMatrix_non_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/EquivReindexPublic.lean/declarations/det-of-basismatrix-non-zero.md) | 54 | `result-track:f3d7346915341d1207224d42a92af831201359e33320c68b772e0bb42397bbc0` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/EquivReindexPublic.lean/declarations/instance.md) | 63 | `declaration-track:f6c976fe8cd3aead90605460a085fd977f9065b9c361f9bd6a3ff42b0d94c319` |
+| 7 | `theorem` | [canonicalEmbedding_eq_basisMatrix_mulVec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/EquivReindexPublic.lean/declarations/canonicalembedding-eq-basismatrix-mulvec.md) | 68 | `result-track:c76c70a61be6bad81ff8d15a05d24f405c31fe412c055b1c944e45856ba0a933` |
+| 8 | `theorem` | [inverse_basisMatrix_mulVec_eq_repr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/EquivReindexPublic.lean/declarations/inverse-basismatrix-mulvec-eq-repr.md) | 75 | `result-track:d4a9ef39ed71d06fccf4563bdd5b0f961ded24891761627a7d3871be7a1379b4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

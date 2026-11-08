@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/ConditionalExpectation.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/ConditionalExpectation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ConditionalExpectation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ConditionalExpectation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [condExp_indep_eq](../../../../ProbabilityTheoryAndStochasticProcesses/ConditionalExpectation.lean/declarations/condexp-indep-eq.md) | 38 | `result-track:5014a0384be7035ee1b0f76461c7b10e12a0ed20c919d4eed486c060bdb9242b` |
+| 1 | `theorem` | [condExp_indep_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ConditionalExpectation.lean/declarations/condexp-indep-eq.md) | 38 | `result-track:5014a0384be7035ee1b0f76461c7b10e12a0ed20c919d4eed486c060bdb9242b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/SuppliedAnalyticMomentAndTransportLaws.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/SuppliedAnalyticMomentAndTransportLaws.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/SuppliedAnalyticMomentAndTransportLaws.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/SuppliedAnalyticMomentAndTransportLaws.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -54,7 +54,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 - `Mathlib.MeasureTheory.Measure.Decomposition.RadonNikodym` — import line 24; external provider; requires a separately pinned dependency.
 - `Mathlib.Probability.Distributions.Gamma` — import line 25; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 26; external provider; requires a separately pinned dependency.
-- [Normalized Density And Ratio Kernels](../../../../ProbabilityTheoryAndStochasticProcesses/NormalizedDensityAndRatioKernels.lean/index.md) — import line 28; pinned internal source present.
+- [Normalized Density And Ratio Kernels](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/NormalizedDensityAndRatioKernels.lean/index.md) — import line 28; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -65,12 +65,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [interiorSimplexMeasurableSpace](../../../../ProbabilityTheoryAndStochasticProcesses/SuppliedAnalyticMomentAndTransportLaws.lean/declarations/interiorsimplexmeasurablespace.md) | 59 | `declaration-track:bca8b9247d19536f26187df3385e7a12d0a5b2538c742c4bb38de994c6da6ace` |
-| 2 | `structure` | [AnalyticLaw](../../../../ProbabilityTheoryAndStochasticProcesses/SuppliedAnalyticMomentAndTransportLaws.lean/declarations/analyticlaw.md) | 66 | `declaration-track:84a473d40c7e77b61b9ed7e1a57d2c64b8d2efedfea86e51a6a26436acf36502` |
-| 3 | `structure` | [MeanLaw](../../../../ProbabilityTheoryAndStochasticProcesses/SuppliedAnalyticMomentAndTransportLaws.lean/declarations/meanlaw.md) | 76 | `declaration-track:0b87a5fc77c8160b2b169ddb2b3c8ec2bcf0963f79d3de18c47fb32a29b39ad6` |
-| 4 | `structure` | [EqualScaleMeanLaw](../../../../ProbabilityTheoryAndStochasticProcesses/SuppliedAnalyticMomentAndTransportLaws.lean/declarations/equalscalemeanlaw.md) | 85 | `declaration-track:32f289a7e58588808c137e104d47cf81c83a69212e25d5c5094c22fd581ebefa` |
-| 5 | `structure` | [DirichletMomentLaw](../../../../ProbabilityTheoryAndStochasticProcesses/SuppliedAnalyticMomentAndTransportLaws.lean/declarations/dirichletmomentlaw.md) | 93 | `declaration-track:2488b3bcf472a2358878bd378e352995c0859fad9ebd15bf56d86446ecf251eb` |
-| 6 | `structure` | [ChangeOfMeasure](../../../../ProbabilityTheoryAndStochasticProcesses/SuppliedAnalyticMomentAndTransportLaws.lean/declarations/changeofmeasure.md) | 109 | `declaration-track:1e94729334ea4649c9936499bf3ffadf853a277bf5db47f4c0265150a0ca0e29` |
+| 1 | `instance` | [interiorSimplexMeasurableSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/SuppliedAnalyticMomentAndTransportLaws.lean/declarations/interiorsimplexmeasurablespace.md) | 59 | `declaration-track:bca8b9247d19536f26187df3385e7a12d0a5b2538c742c4bb38de994c6da6ace` |
+| 2 | `structure` | [AnalyticLaw](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/SuppliedAnalyticMomentAndTransportLaws.lean/declarations/analyticlaw.md) | 66 | `declaration-track:84a473d40c7e77b61b9ed7e1a57d2c64b8d2efedfea86e51a6a26436acf36502` |
+| 3 | `structure` | [MeanLaw](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/SuppliedAnalyticMomentAndTransportLaws.lean/declarations/meanlaw.md) | 76 | `declaration-track:0b87a5fc77c8160b2b169ddb2b3c8ec2bcf0963f79d3de18c47fb32a29b39ad6` |
+| 4 | `structure` | [EqualScaleMeanLaw](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/SuppliedAnalyticMomentAndTransportLaws.lean/declarations/equalscalemeanlaw.md) | 85 | `declaration-track:32f289a7e58588808c137e104d47cf81c83a69212e25d5c5094c22fd581ebefa` |
+| 5 | `structure` | [DirichletMomentLaw](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/SuppliedAnalyticMomentAndTransportLaws.lean/declarations/dirichletmomentlaw.md) | 93 | `declaration-track:2488b3bcf472a2358878bd378e352995c0859fad9ebd15bf56d86446ecf251eb` |
+| 6 | `structure` | [ChangeOfMeasure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/SuppliedAnalyticMomentAndTransportLaws.lean/declarations/changeofmeasure.md) | 109 | `declaration-track:1e94729334ea4649c9936499bf3ffadf853a277bf5db47f4c0265150a0ca0e29` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

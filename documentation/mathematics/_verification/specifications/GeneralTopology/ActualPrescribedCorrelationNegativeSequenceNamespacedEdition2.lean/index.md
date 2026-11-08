@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ActualPrescribedCorrelationNegativeSequenceNamespacedEdition2.lean/index.md) · [Full source](../../../../GeneralTopology/ActualPrescribedCorrelationNegativeSequenceNamespacedEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualPrescribedCorrelationNegativeSequenceNamespacedEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualPrescribedCorrelationNegativeSequenceNamespacedEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualPrescribedScaleSequence](../../../../GeneralTopology/ActualPrescribedCorrelationNegativeSequenceNamespacedEdition2.lean/declarations/actualprescribedscalesequence.md) | 28 | `declaration-track:9baea14b110bae9537d3139e0e2c44334f4b5ce69586d26c6c20fab47fa89376` |
-| 2 | `theorem` | [actualPrescribedScaleSequence_tendsto](../../../../GeneralTopology/ActualPrescribedCorrelationNegativeSequenceNamespacedEdition2.lean/declarations/actualprescribedscalesequence-tendsto.md) | 31 | `result-track:cfb22502db7516e8f0d6c5368daf4dd363e0bae0c19929de0ff675117836ff31` |
-| 3 | `theorem` | [actualPrescribedScaleSequence_phase](../../../../GeneralTopology/ActualPrescribedCorrelationNegativeSequenceNamespacedEdition2.lean/declarations/actualprescribedscalesequence-phase.md) | 37 | `result-track:0a3976336a6159ea49c21a3f3c5a608bf7c27691cb338f5413e3374f235649a4` |
-| 4 | `theorem` | [actualPrescribedCorrelation_scaled_real_tendsto](../../../../GeneralTopology/ActualPrescribedCorrelationNegativeSequenceNamespacedEdition2.lean/declarations/actualprescribedcorrelation-scaled-real-tendsto.md) | 52 | `result-track:d668c136624c7b34ed1752a882d008f85e9cde8241e887bc15937edd54c0ec0d` |
-| 5 | `theorem` | [actualPrescribedCorrelation_eventually_negative](../../../../GeneralTopology/ActualPrescribedCorrelationNegativeSequenceNamespacedEdition2.lean/declarations/actualprescribedcorrelation-eventually-negative.md) | 73 | `result-track:d59edfc7fa3c8a95010a288ee922aca269667a2e54ee97aa9d3fae363c12744b` |
-| 6 | `theorem` | [actualPrescribedCorrelation_negative_beyond](../../../../GeneralTopology/ActualPrescribedCorrelationNegativeSequenceNamespacedEdition2.lean/declarations/actualprescribedcorrelation-negative-beyond.md) | 89 | `result-track:4276615158ebc5f289497bcedb0d0b5ab6d6610e30ec38c54274acfe91e2a467` |
+| 1 | `def` | [actualPrescribedScaleSequence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualPrescribedCorrelationNegativeSequenceNamespacedEdition2.lean/declarations/actualprescribedscalesequence.md) | 28 | `declaration-track:9baea14b110bae9537d3139e0e2c44334f4b5ce69586d26c6c20fab47fa89376` |
+| 2 | `theorem` | [actualPrescribedScaleSequence_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualPrescribedCorrelationNegativeSequenceNamespacedEdition2.lean/declarations/actualprescribedscalesequence-tendsto.md) | 31 | `result-track:cfb22502db7516e8f0d6c5368daf4dd363e0bae0c19929de0ff675117836ff31` |
+| 3 | `theorem` | [actualPrescribedScaleSequence_phase](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualPrescribedCorrelationNegativeSequenceNamespacedEdition2.lean/declarations/actualprescribedscalesequence-phase.md) | 37 | `result-track:0a3976336a6159ea49c21a3f3c5a608bf7c27691cb338f5413e3374f235649a4` |
+| 4 | `theorem` | [actualPrescribedCorrelation_scaled_real_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualPrescribedCorrelationNegativeSequenceNamespacedEdition2.lean/declarations/actualprescribedcorrelation-scaled-real-tendsto.md) | 52 | `result-track:d668c136624c7b34ed1752a882d008f85e9cde8241e887bc15937edd54c0ec0d` |
+| 5 | `theorem` | [actualPrescribedCorrelation_eventually_negative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualPrescribedCorrelationNegativeSequenceNamespacedEdition2.lean/declarations/actualprescribedcorrelation-eventually-negative.md) | 73 | `result-track:d59edfc7fa3c8a95010a288ee922aca269667a2e54ee97aa9d3fae363c12744b` |
+| 6 | `theorem` | [actualPrescribedCorrelation_negative_beyond](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualPrescribedCorrelationNegativeSequenceNamespacedEdition2.lean/declarations/actualprescribedcorrelation-negative-beyond.md) | 89 | `result-track:4276615158ebc5f289497bcedb0d0b5ab6d6610e30ec38c54274acfe91e2a467` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

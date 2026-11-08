@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/RealBitValueAndSquareBound.lean/index.md) · [Full source](../../../../RealFunctions/RealBitValueAndSquareBound.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RealBitValueAndSquareBound.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RealBitValueAndSquareBound.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [bitValue](../../../../RealFunctions/RealBitValueAndSquareBound.lean/declarations/bitvalue.md) | 41 | `declaration-track:807ee520273d55b4bfa7230cdcb8e279572fbd7fdc687558c819bc2706639b0b` |
-| 2 | `def` | [bitNormSq](../../../../RealFunctions/RealBitValueAndSquareBound.lean/declarations/bitnormsq.md) | 44 | `declaration-track:178635015337fa640bb39c66d5b2ef5b7ce48fd7701662076ebb528ecde6d789` |
-| 3 | `theorem` | [bitNormSq_le_one](../../../../RealFunctions/RealBitValueAndSquareBound.lean/declarations/bitnormsq-le-one.md) | 47 | `result-track:284f591d87e7828293768098be7d37111786dd7ceec88257c45ce0976fc2fa59` |
+| 1 | `def` | [bitValue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RealBitValueAndSquareBound.lean/declarations/bitvalue.md) | 41 | `declaration-track:807ee520273d55b4bfa7230cdcb8e279572fbd7fdc687558c819bc2706639b0b` |
+| 2 | `def` | [bitNormSq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RealBitValueAndSquareBound.lean/declarations/bitnormsq.md) | 44 | `declaration-track:178635015337fa640bb39c66d5b2ef5b7ce48fd7701662076ebb528ecde6d789` |
+| 3 | `theorem` | [bitNormSq_le_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RealBitValueAndSquareBound.lean/declarations/bitnormsq-le-one.md) | 47 | `result-track:284f591d87e7828293768098be7d37111786dd7ceec88257c45ce0976fc2fa59` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TruncatedDivisorSign.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TruncatedDivisorSign.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TruncatedDivisorSign.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TruncatedDivisorSign.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [truncated_three_six](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TruncatedDivisorSign.lean/declarations/truncated-three-six.md) | 10 | `result-track:8f62b5c69fcd927108526937836c387a364f51df8401d7e63a6b594b22f70980` |
-| 2 | `theorem` | [truncated_three_six_le_neg_quarter](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TruncatedDivisorSign.lean/declarations/truncated-three-six-le-neg-quarter.md) | 22 | `result-track:810b18918d86f5aeaf8b5d0522458528196930e0dbfb5a928c4c0f758bc54967` |
+| 1 | `theorem` | [truncated_three_six](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TruncatedDivisorSign.lean/declarations/truncated-three-six.md) | 10 | `result-track:8f62b5c69fcd927108526937836c387a364f51df8401d7e63a6b594b22f70980` |
+| 2 | `theorem` | [truncated_three_six_le_neg_quarter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TruncatedDivisorSign.lean/declarations/truncated-three-six-le-neg-quarter.md) | 22 | `result-track:810b18918d86f5aeaf8b5d0522458528196930e0dbfb5a928c4c0f758bc54967` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

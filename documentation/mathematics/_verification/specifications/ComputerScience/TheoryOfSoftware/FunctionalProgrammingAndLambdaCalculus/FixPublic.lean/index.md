@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/FixPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/FixPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/FixPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/FixPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [Fix](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/FixPublic.lean/declarations/fix-source-edition-2.md) | 35 | `declaration-track:a5dbcf9e62293715d6d602b1589ffb5a9f41a5340942fad7bbade6b31ce08c7e` |
-| 2 | `def` | [Fix.approx](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/FixPublic.lean/declarations/fix-approx.md) | 49 | `declaration-track:ef4ed8c56a69c2c86578f14e1ecb53d4e94a689268d274c615682b3da82f7eda` |
-| 3 | `def` | [fixAux](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/FixPublic.lean/declarations/fixaux.md) | 54 | `declaration-track:c028cb67221d484db6253527929eb3e4ebf618a92553fbc976d06df9f6f253f3` |
-| 4 | `def` | [fix](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/FixPublic.lean/declarations/fix.md) | 66 | `declaration-track:18638d54ea0f764eefed53e7bf10c0e1441e4d42748a9e23a7768b4feea6f610` |
-| 5 | `theorem` | [fix_def](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/FixPublic.lean/declarations/fix-def.md) | 71 | `result-track:9eeea052953eb6ec4b41cb5a4a59107b3f04aa28397ff623ef3d82ad4b294608` |
-| 6 | `theorem` | [fix_def'](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/FixPublic.lean/declarations/fix-def-source-edition-2.md) | 105 | `result-track:c0383f5fd91fe8e9aac21533511883d43905fe4a4fcdf53b91c9c926f96669be` |
-| 7 | `instance` | [hasFix](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/FixPublic.lean/declarations/hasfix.md) | 115 | `declaration-track:4de12a8d8248bc42df738c7ea307c92e3c6dc877866d98bdfdba168019f93dfa` |
-| 8 | `instance` | [Part.hasFix](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/FixPublic.lean/declarations/part-hasfix.md) | 122 | `declaration-track:aa5531b6ae96955f79c922e5acaf383e7740bba610d3fb41d58f91d7c8b13250` |
+| 1 | `class` | [Fix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/FixPublic.lean/declarations/fix-source-edition-2.md) | 35 | `declaration-track:a5dbcf9e62293715d6d602b1589ffb5a9f41a5340942fad7bbade6b31ce08c7e` |
+| 2 | `def` | [Fix.approx](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/FixPublic.lean/declarations/fix-approx.md) | 49 | `declaration-track:ef4ed8c56a69c2c86578f14e1ecb53d4e94a689268d274c615682b3da82f7eda` |
+| 3 | `def` | [fixAux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/FixPublic.lean/declarations/fixaux.md) | 54 | `declaration-track:c028cb67221d484db6253527929eb3e4ebf618a92553fbc976d06df9f6f253f3` |
+| 4 | `def` | [fix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/FixPublic.lean/declarations/fix.md) | 66 | `declaration-track:18638d54ea0f764eefed53e7bf10c0e1441e4d42748a9e23a7768b4feea6f610` |
+| 5 | `theorem` | [fix_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/FixPublic.lean/declarations/fix-def.md) | 71 | `result-track:9eeea052953eb6ec4b41cb5a4a59107b3f04aa28397ff623ef3d82ad4b294608` |
+| 6 | `theorem` | [fix_def'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/FixPublic.lean/declarations/fix-def-source-edition-2.md) | 105 | `result-track:c0383f5fd91fe8e9aac21533511883d43905fe4a4fcdf53b91c9c926f96669be` |
+| 7 | `instance` | [hasFix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/FixPublic.lean/declarations/hasfix.md) | 115 | `declaration-track:4de12a8d8248bc42df738c7ea307c92e3c6dc877866d98bdfdba168019f93dfa` |
+| 8 | `instance` | [Part.hasFix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/FixPublic.lean/declarations/part-hasfix.md) | 122 | `declaration-track:aa5531b6ae96955f79c922e5acaf383e7740bba610d3fb41d58f91d7c8b13250` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

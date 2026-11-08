@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LpSeminormCountPublic.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LpSeminormCountPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/LpSeminormCountPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/LpSeminormCountPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [eLpNorm_dirac](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LpSeminormCountPublic.lean/declarations/elpnorm-dirac.md) | 25 | `result-track:66d12b47f734388013d508c8548cbf8cb0f7141a910020749b0989098abca902` |
-| 2 | `lemma` | [enorm_le_eLpNorm_count](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LpSeminormCountPublic.lean/declarations/enorm-le-elpnorm-count.md) | 33 | `result-track:d8657320e1ef23c275b941aa43053d6b2ebf95c4b0f8fee9120a3a9526c7bf3b` |
-| 3 | `lemma` | [eLpNorm_count_lt_top_of_lt](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LpSeminormCountPublic.lean/declarations/elpnorm-count-lt-top-of-lt.md) | 39 | `result-track:b1882f474ef592d69cdc2b61f95f0364c1e02722728d0c2dfb79236fe44913f4` |
-| 4 | `lemma` | [eLpNorm_count_lt_top](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LpSeminormCountPublic.lean/declarations/elpnorm-count-lt-top.md) | 47 | `result-track:4eb59906c5830c71ec548b1c48b8b7dd08672706d1ddc5953152117e21f99a56` |
+| 1 | `lemma` | [eLpNorm_dirac](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/LpSeminormCountPublic.lean/declarations/elpnorm-dirac.md) | 25 | `result-track:66d12b47f734388013d508c8548cbf8cb0f7141a910020749b0989098abca902` |
+| 2 | `lemma` | [enorm_le_eLpNorm_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/LpSeminormCountPublic.lean/declarations/enorm-le-elpnorm-count.md) | 33 | `result-track:d8657320e1ef23c275b941aa43053d6b2ebf95c4b0f8fee9120a3a9526c7bf3b` |
+| 3 | `lemma` | [eLpNorm_count_lt_top_of_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/LpSeminormCountPublic.lean/declarations/elpnorm-count-lt-top-of-lt.md) | 39 | `result-track:b1882f474ef592d69cdc2b61f95f0364c1e02722728d0c2dfb79236fe44913f4` |
+| 4 | `lemma` | [eLpNorm_count_lt_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/LpSeminormCountPublic.lean/declarations/elpnorm-count-lt-top.md) | 47 | `result-track:4eb59906c5830c71ec548b1c48b8b7dd08672706d1ddc5953152117e21f99a56` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

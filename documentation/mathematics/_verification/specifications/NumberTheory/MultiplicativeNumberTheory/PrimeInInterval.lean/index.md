@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/MultiplicativeNumberTheory/PrimeInInterval.lean/index.md) · [Full source](../../../../../NumberTheory/MultiplicativeNumberTheory/PrimeInInterval.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/PrimeInInterval.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/PrimeInInterval.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [HasPrimeInInterval.iff_pi_ge](../../../../../NumberTheory/MultiplicativeNumberTheory/PrimeInInterval.lean/declarations/hasprimeininterval-iff-pi-ge.md) | 22 | `result-track:539878da88f272bbdb725c9526852a3d3bd09a97d2b706b467323800abe470a2` |
-| 2 | `theorem` | [theta_pos_implies_prime_in_interval](../../../../../NumberTheory/MultiplicativeNumberTheory/PrimeInInterval.lean/declarations/theta-pos-implies-prime-in-interval.md) | 58 | `result-track:9ca07d1148753ab75536410f85ed271c636f758378573ce23a4673a4e16a7686` |
-| 3 | `lemma` | [HasPrimeInInterval.iff_theta_ge](../../../../../NumberTheory/MultiplicativeNumberTheory/PrimeInInterval.lean/declarations/hasprimeininterval-iff-theta-ge.md) | 81 | `result-track:811be77465c6a40fb0d7a57753eac43e3c428ee4c14912abdf374093a842d33c` |
-| 4 | `lemma` | [Eθ.hasPrimeInInterval](../../../../../NumberTheory/MultiplicativeNumberTheory/PrimeInInterval.lean/declarations/e-hasprimeininterval.md) | 138 | `result-track:3169e7b8e1239a439673e21a71b0ea8db7518e802abe427143d1fec9c405039e` |
-| 5 | `lemma` | [Eθ.numericalBound.hasPrimeInInterval](../../../../../NumberTheory/MultiplicativeNumberTheory/PrimeInInterval.lean/declarations/e-numericalbound-hasprimeininterval.md) | 170 | `result-track:14aa517f5bd689f651ea95c04fe19d8d6e2c1d469c96a1ba57f590c987e213e4` |
-| 6 | `lemma` | [Eθ.classicalBound.hasPrimeInInterval](../../../../../NumberTheory/MultiplicativeNumberTheory/PrimeInInterval.lean/declarations/e-classicalbound-hasprimeininterval.md) | 195 | `result-track:50c54f453699b6f96f67deb0a77abd41ba293aca8e94dc512fe97add9e80d4cf` |
-| 7 | `lemma` | [prime_gap_record.hasPrimeInInterval](../../../../../NumberTheory/MultiplicativeNumberTheory/PrimeInInterval.lean/declarations/prime-gap-record-hasprimeininterval.md) | 215 | `result-track:6c6a978dc5388563a2d7e9d47302b537e32eb22bdfbb9fcab01880e3b157ac59` |
+| 1 | `lemma` | [HasPrimeInInterval.iff_pi_ge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/PrimeInInterval.lean/declarations/hasprimeininterval-iff-pi-ge.md) | 22 | `result-track:539878da88f272bbdb725c9526852a3d3bd09a97d2b706b467323800abe470a2` |
+| 2 | `theorem` | [theta_pos_implies_prime_in_interval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/PrimeInInterval.lean/declarations/theta-pos-implies-prime-in-interval.md) | 58 | `result-track:9ca07d1148753ab75536410f85ed271c636f758378573ce23a4673a4e16a7686` |
+| 3 | `lemma` | [HasPrimeInInterval.iff_theta_ge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/PrimeInInterval.lean/declarations/hasprimeininterval-iff-theta-ge.md) | 81 | `result-track:811be77465c6a40fb0d7a57753eac43e3c428ee4c14912abdf374093a842d33c` |
+| 4 | `lemma` | [Eθ.hasPrimeInInterval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/PrimeInInterval.lean/declarations/e-hasprimeininterval.md) | 138 | `result-track:3169e7b8e1239a439673e21a71b0ea8db7518e802abe427143d1fec9c405039e` |
+| 5 | `lemma` | [Eθ.numericalBound.hasPrimeInInterval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/PrimeInInterval.lean/declarations/e-numericalbound-hasprimeininterval.md) | 170 | `result-track:14aa517f5bd689f651ea95c04fe19d8d6e2c1d469c96a1ba57f590c987e213e4` |
+| 6 | `lemma` | [Eθ.classicalBound.hasPrimeInInterval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/PrimeInInterval.lean/declarations/e-classicalbound-hasprimeininterval.md) | 195 | `result-track:50c54f453699b6f96f67deb0a77abd41ba293aca8e94dc512fe97add9e80d4cf` |
+| 7 | `lemma` | [prime_gap_record.hasPrimeInInterval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/PrimeInInterval.lean/declarations/prime-gap-record-hasprimeininterval.md) | 215 | `result-track:6c6a978dc5388563a2d7e9d47302b537e32eb22bdfbb9fcab01880e3b157ac59` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

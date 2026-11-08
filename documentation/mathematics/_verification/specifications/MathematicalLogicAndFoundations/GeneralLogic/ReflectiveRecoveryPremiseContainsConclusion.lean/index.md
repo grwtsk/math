@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ReflectiveRecoveryPremiseContainsConclusion.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ReflectiveRecoveryPremiseContainsConclusion.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ReflectiveRecoveryPremiseContainsConclusion.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ReflectiveRecoveryPremiseContainsConclusion.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [recoveryWithoutTargetOccurrenceOrReflection](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ReflectiveRecoveryPremiseContainsConclusion.lean/declarations/recoverywithouttargetoccurrenceorreflection.md) | 44 | `result-track:e41e9dca269ab178312f5b8a9824c9498e996b27e6a0ccc7fb1c16a79a5289d6` |
+| 1 | `theorem` | [recoveryWithoutTargetOccurrenceOrReflection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ReflectiveRecoveryPremiseContainsConclusion.lean/declarations/recoverywithouttargetoccurrenceorreflection.md) | 44 | `result-track:e41e9dca269ab178312f5b8a9824c9498e996b27e6a0ccc7fb1c16a79a5289d6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

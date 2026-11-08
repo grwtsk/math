@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CopyLookupRealization.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CopyLookupRealization.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CopyLookupRealization.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CopyLookupRealization.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [materialize_index_spin_copy](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CopyLookupRealization.lean/declarations/materialize-index-spin-copy.md) | 39 | `result-track:2fed2ff5aa3c886aacafe74de05a4cd69ab7e6c7238567189d37b7a05420732f` |
+| 1 | `theorem` | [materialize_index_spin_copy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CopyLookupRealization.lean/declarations/materialize-index-spin-copy.md) | 39 | `result-track:2fed2ff5aa3c886aacafe74de05a4cd69ab7e6c7238567189d37b7a05420732f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FiniteNewtonCenter.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FiniteNewtonCenter.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FiniteNewtonCenter.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FiniteNewtonCenter.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.FiniteZetaPowerEnclosure`](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FiniteZetaPowerEnclosure.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.RationalNewtonWitness`](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/RationalNewtonWitness.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.FiniteZetaPowerEnclosure`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FiniteZetaPowerEnclosure.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.RationalNewtonWitness`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/RationalNewtonWitness.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [diskBudgetQ](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FiniteNewtonCenter.lean/declarations/diskbudgetq.md) | 26 | `declaration-track:4cabd02d2d3fee5e41f215838059caaef431e7f99f970b8b514e01bcaddbe5ad` |
-| 2 | `theorem` | [cast_diskBudgetQ](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FiniteNewtonCenter.lean/declarations/cast-diskbudgetq.md) | 31 | `result-track:8121d63ba62a63d2e198f3b742e8962058c3ad09a00b5dda102c13f60258afbe` |
-| 3 | `theorem` | [centerEnclosures_of_power_packet](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FiniteNewtonCenter.lean/declarations/centerenclosures-of-power-packet.md) | 36 | `result-track:bf6e00501fe62a907b31ae24ee48dc623911e7ceefa67ae5a06c30a935c13cda` |
-| 4 | `theorem` | [exists_zero_of_power_packet](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FiniteNewtonCenter.lean/declarations/exists-zero-of-power-packet.md) | 56 | `result-track:49792f2bc8f40f6a589f40b83b369c1f68bdc2e11958234a3c9169276598c5f2` |
+| 1 | `def` | [diskBudgetQ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FiniteNewtonCenter.lean/declarations/diskbudgetq.md) | 26 | `declaration-track:4cabd02d2d3fee5e41f215838059caaef431e7f99f970b8b514e01bcaddbe5ad` |
+| 2 | `theorem` | [cast_diskBudgetQ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FiniteNewtonCenter.lean/declarations/cast-diskbudgetq.md) | 31 | `result-track:8121d63ba62a63d2e198f3b742e8962058c3ad09a00b5dda102c13f60258afbe` |
+| 3 | `theorem` | [centerEnclosures_of_power_packet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FiniteNewtonCenter.lean/declarations/centerenclosures-of-power-packet.md) | 36 | `result-track:bf6e00501fe62a907b31ae24ee48dc623911e7ceefa67ae5a06c30a935c13cda` |
+| 4 | `theorem` | [exists_zero_of_power_packet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FiniteNewtonCenter.lean/declarations/exists-zero-of-power-packet.md) | 56 | `result-track:49792f2bc8f40f6a589f40b83b369c1f68bdc2e11958234a3c9169276598c5f2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

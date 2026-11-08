@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/AEd5b3c3b0c12dd12Namespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/AEd5b3c3b0c12dd12Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AEd5b3c3b0c12dd12Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AEd5b3c3b0c12dd12Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [elementOrbit](../../../../../ComputerScience/AlgorithmsInComputerScience/AEd5b3c3b0c12dd12Namespaced.lean/declarations/elementorbit.md) | 29 | `declaration-track:966a961cf5c4515d95a5d0c8c9c4c93727ca76c78b9dfbbc0817a933b7b20e12` |
+| 1 | `def` | [elementOrbit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AEd5b3c3b0c12dd12Namespaced.lean/declarations/elementorbit.md) | 29 | `declaration-track:966a961cf5c4515d95a5d0c8c9c4c93727ca76c78b9dfbbc0817a933b7b20e12` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

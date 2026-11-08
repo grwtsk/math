@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MultiequalizerPullbackPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MultiequalizerPullbackPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MultiequalizerPullbackPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MultiequalizerPullbackPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [multicofork](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MultiequalizerPullbackPublic.lean/declarations/multicofork.md) | 36 | `declaration-track:1f3f932290019d0a4a797f44d943aaaa842d193f8335721b97d743103af20f89` |
-| 2 | `lemma` | [multicofork_π_eq_inl](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MultiequalizerPullbackPublic.lean/declarations/multicofork-eq-inl.md) | 53 | `result-track:ddd5a4de62e268503b4ff42e75007439879e1f42ce60eb68dc0cb0e5519c2b1c` |
-| 3 | `lemma` | [multicofork_π_eq_inr](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MultiequalizerPullbackPublic.lean/declarations/multicofork-eq-inr.md) | 58 | `result-track:0795a4e49ea4a2a2fe3742c901a8915e461a18dd19a661f9e12cd38050085b60` |
-| 4 | `lemma` | [isPushout](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MultiequalizerPullbackPublic.lean/declarations/ispushout.md) | 68 | `result-track:2a20277413118ff58ba9d61f3738ff5e76918116a6c11c938317aee1ca469e5c` |
+| 1 | `def` | [multicofork](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MultiequalizerPullbackPublic.lean/declarations/multicofork.md) | 36 | `declaration-track:1f3f932290019d0a4a797f44d943aaaa842d193f8335721b97d743103af20f89` |
+| 2 | `lemma` | [multicofork_π_eq_inl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MultiequalizerPullbackPublic.lean/declarations/multicofork-eq-inl.md) | 53 | `result-track:ddd5a4de62e268503b4ff42e75007439879e1f42ce60eb68dc0cb0e5519c2b1c` |
+| 3 | `lemma` | [multicofork_π_eq_inr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MultiequalizerPullbackPublic.lean/declarations/multicofork-eq-inr.md) | 58 | `result-track:0795a4e49ea4a2a2fe3742c901a8915e461a18dd19a661f9e12cd38050085b60` |
+| 4 | `lemma` | [isPushout](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/MultiequalizerPullbackPublic.lean/declarations/ispushout.md) | 68 | `result-track:2a20277413118ff58ba9d61f3738ff5e76918116a6c11c938317aee1ca469e5c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

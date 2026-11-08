@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/AnalysisNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/AnalysisNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AnalysisNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AnalysisNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [conceptualSubdirectories](../../../../FunctionalAnalysis/AnalysisNamespaced.lean/declarations/conceptualsubdirectories.md) | 18 | `declaration-track:45c06f2eb899bc4b4bc0fd9ef16782877b68221daee02cdd8827077b37e55296` |
-| 2 | `theorem` | [conceptualSubdirectories_count](../../../../FunctionalAnalysis/AnalysisNamespaced.lean/declarations/conceptualsubdirectories-count.md) | 25 | `result-track:b81849d39b030510a515f23875bbe7e4e8eea24d0682fe09567d9f6945f48e80` |
+| 1 | `def` | [conceptualSubdirectories](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AnalysisNamespaced.lean/declarations/conceptualsubdirectories.md) | 18 | `declaration-track:45c06f2eb899bc4b4bc0fd9ef16782877b68221daee02cdd8827077b37e55296` |
+| 2 | `theorem` | [conceptualSubdirectories_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AnalysisNamespaced.lean/declarations/conceptualsubdirectories-count.md) | 25 | `result-track:b81849d39b030510a515f23875bbe7e4e8eea24d0682fe09567d9f6945f48e80` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

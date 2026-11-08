@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GammaScatteringNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GammaScatteringNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GammaScatteringNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GammaScatteringNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [GammaScatteringAudit](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GammaScatteringNamespaced.lean/declarations/gammascatteringaudit.md) | 15 | `declaration-track:eb562988e386aa2699c87f9bfb04c78f34130006e2c660df0b77376fc88093bf` |
-| 2 | `def` | [GammaScatteringAudit.admitted](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GammaScatteringNamespaced.lean/declarations/gammascatteringaudit-admitted.md) | 21 | `declaration-track:c0542b6b19360e8297a28f7879f0d4ec3f48e3e9c119cb41dcde4f5a5f470b1e` |
-| 3 | `theorem` | [admitted_gamma_scattering_has_no_authority_import](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GammaScatteringNamespaced.lean/declarations/admitted-gamma-scattering-has-no-authority-import.md) | 27 | `result-track:d546380596bc0ba38e2a1b9515154342b80f9bf6681c09fdb734d8093e627d2f` |
-| 4 | `theorem` | [admitted_gamma_scattering_has_pnt_residue_zero](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GammaScatteringNamespaced.lean/declarations/admitted-gamma-scattering-has-pnt-residue-zero.md) | 33 | `result-track:785585ddd45cf00661cffc48543072039c5a2dea7376146d5c6b64ee093803b3` |
+| 1 | `structure` | [GammaScatteringAudit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GammaScatteringNamespaced.lean/declarations/gammascatteringaudit.md) | 15 | `declaration-track:eb562988e386aa2699c87f9bfb04c78f34130006e2c660df0b77376fc88093bf` |
+| 2 | `def` | [GammaScatteringAudit.admitted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GammaScatteringNamespaced.lean/declarations/gammascatteringaudit-admitted.md) | 21 | `declaration-track:c0542b6b19360e8297a28f7879f0d4ec3f48e3e9c119cb41dcde4f5a5f470b1e` |
+| 3 | `theorem` | [admitted_gamma_scattering_has_no_authority_import](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GammaScatteringNamespaced.lean/declarations/admitted-gamma-scattering-has-no-authority-import.md) | 27 | `result-track:d546380596bc0ba38e2a1b9515154342b80f9bf6681c09fdb734d8093e627d2f` |
+| 4 | `theorem` | [admitted_gamma_scattering_has_pnt_residue_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GammaScatteringNamespaced.lean/declarations/admitted-gamma-scattering-has-pnt-residue-zero.md) | 33 | `result-track:785585ddd45cf00661cffc48543072039c5a2dea7376146d5c6b64ee093803b3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

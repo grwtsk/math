@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/PotentialNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/PotentialNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PotentialNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PotentialNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [cubicPotential](../../../../RealFunctions/PotentialNamespaced.lean/declarations/cubicpotential.md) | 26 | `declaration-track:3636dc3f998cccd575f8aadf795d839cef3be7e89bbd3a4041142423d0ad007d` |
-| 2 | `theorem` | [eval_cubicPotential](../../../../RealFunctions/PotentialNamespaced.lean/declarations/eval-cubicpotential.md) | 32 | `result-track:bb80b833e82b06388097a0dc786741adbcdc9750e36ba077b25c435588057ddc` |
-| 3 | `theorem` | [derivative_cubicPotential](../../../../RealFunctions/PotentialNamespaced.lean/declarations/derivative-cubicpotential.md) | 41 | `result-track:80abf4270ee4e0a6e712dcbeb24ea90553e4037082b6b286a7d4d972f25d915a` |
-| 4 | `theorem` | [hasDerivAt_cubicPotential](../../../../RealFunctions/PotentialNamespaced.lean/declarations/hasderivat-cubicpotential.md) | 53 | `result-track:746a34337ff692503e449cb0c4a8ec6cffb50cd4ad0904c702be6e36eac9e983` |
+| 1 | `def` | [cubicPotential](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PotentialNamespaced.lean/declarations/cubicpotential.md) | 26 | `declaration-track:3636dc3f998cccd575f8aadf795d839cef3be7e89bbd3a4041142423d0ad007d` |
+| 2 | `theorem` | [eval_cubicPotential](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PotentialNamespaced.lean/declarations/eval-cubicpotential.md) | 32 | `result-track:bb80b833e82b06388097a0dc786741adbcdc9750e36ba077b25c435588057ddc` |
+| 3 | `theorem` | [derivative_cubicPotential](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PotentialNamespaced.lean/declarations/derivative-cubicpotential.md) | 41 | `result-track:80abf4270ee4e0a6e712dcbeb24ea90553e4037082b6b286a7d4d972f25d915a` |
+| 4 | `theorem` | [hasDerivAt_cubicPotential](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PotentialNamespaced.lean/declarations/hasderivat-cubicpotential.md) | 53 | `result-track:746a34337ff692503e449cb0c4a8ec6cffb50cd4ad0904c702be6e36eac9e983` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

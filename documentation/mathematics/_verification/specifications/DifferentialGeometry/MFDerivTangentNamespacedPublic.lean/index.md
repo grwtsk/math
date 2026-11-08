@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../DifferentialGeometry/MFDerivTangentNamespacedPublic.lean/index.md) · [Full source](../../../../DifferentialGeometry/MFDerivTangentNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/MFDerivTangentNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/MFDerivTangentNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [tangentMap_chart](../../../../DifferentialGeometry/MFDerivTangentNamespacedPublic.lean/declarations/tangentmap-chart.md) | 47 | `result-track:2d5397e485cbc603a5c09637a857e5dd88664fcd1dde392611d08f243f2bbcba` |
-| 2 | `theorem` | [tangentMap_chart_symm](../../../../DifferentialGeometry/MFDerivTangentNamespacedPublic.lean/declarations/tangentmap-chart-symm.md) | 60 | `result-track:ce597847659e02a0c36de6edc42e2fea89be310770199fa9aa5dc6c4c7f62b04` |
-| 3 | `lemma` | [mfderiv_chartAt_eq_tangentCoordChange](../../../../DifferentialGeometry/MFDerivTangentNamespacedPublic.lean/declarations/mfderiv-chartat-eq-tangentcoordchange.md) | 72 | `result-track:9f86e294b9475ed274097c35f77bf9b50db12e19e12105d6845ead98bae3a6e4` |
-| 4 | `theorem` | [UniqueMDiffOn.tangentBundle_proj_preimage](../../../../DifferentialGeometry/MFDerivTangentNamespacedPublic.lean/declarations/uniquemdiffon-tangentbundle-proj-preimage.md) | 80 | `result-track:1ec6f1f14afef3f2d4867b85e89d2adec2ab12e4a869de8e74c30b2072add3cd` |
-| 5 | `lemma` | [inTangentCoordinates_eq_mfderiv_comp](../../../../DifferentialGeometry/MFDerivTangentNamespacedPublic.lean/declarations/intangentcoordinates-eq-mfderiv-comp.md) | 89 | `result-track:e3d68fe48071b0659b9f93fc6116e77b80dddb6f23c7c243f6e4cfb9c1aee483` |
-| 6 | `lemma` | [inTangentCoordinates_eq_mfderiv_comp_abuse](../../../../DifferentialGeometry/MFDerivTangentNamespacedPublic.lean/declarations/intangentcoordinates-eq-mfderiv-comp-abuse.md) | 115 | `result-track:6a7e7417d623bfe2dfc553f616e2dd32e8876321663f1441f603ead187fbd6d2` |
-| 7 | `def` | [tangentBundleModelSpaceDiffeomorph](../../../../DifferentialGeometry/MFDerivTangentNamespacedPublic.lean/declarations/tangentbundlemodelspacediffeomorph.md) | 128 | `declaration-track:f6805ec51f13a219716d62f1ee0ff1ba5449eae6dade243a92b15718bed1e4c6` |
+| 1 | `theorem` | [tangentMap_chart](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/MFDerivTangentNamespacedPublic.lean/declarations/tangentmap-chart.md) | 47 | `result-track:2d5397e485cbc603a5c09637a857e5dd88664fcd1dde392611d08f243f2bbcba` |
+| 2 | `theorem` | [tangentMap_chart_symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/MFDerivTangentNamespacedPublic.lean/declarations/tangentmap-chart-symm.md) | 60 | `result-track:ce597847659e02a0c36de6edc42e2fea89be310770199fa9aa5dc6c4c7f62b04` |
+| 3 | `lemma` | [mfderiv_chartAt_eq_tangentCoordChange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/MFDerivTangentNamespacedPublic.lean/declarations/mfderiv-chartat-eq-tangentcoordchange.md) | 72 | `result-track:9f86e294b9475ed274097c35f77bf9b50db12e19e12105d6845ead98bae3a6e4` |
+| 4 | `theorem` | [UniqueMDiffOn.tangentBundle_proj_preimage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/MFDerivTangentNamespacedPublic.lean/declarations/uniquemdiffon-tangentbundle-proj-preimage.md) | 80 | `result-track:1ec6f1f14afef3f2d4867b85e89d2adec2ab12e4a869de8e74c30b2072add3cd` |
+| 5 | `lemma` | [inTangentCoordinates_eq_mfderiv_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/MFDerivTangentNamespacedPublic.lean/declarations/intangentcoordinates-eq-mfderiv-comp.md) | 89 | `result-track:e3d68fe48071b0659b9f93fc6116e77b80dddb6f23c7c243f6e4cfb9c1aee483` |
+| 6 | `lemma` | [inTangentCoordinates_eq_mfderiv_comp_abuse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/MFDerivTangentNamespacedPublic.lean/declarations/intangentcoordinates-eq-mfderiv-comp-abuse.md) | 115 | `result-track:6a7e7417d623bfe2dfc553f616e2dd32e8876321663f1441f603ead187fbd6d2` |
+| 7 | `def` | [tangentBundleModelSpaceDiffeomorph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/MFDerivTangentNamespacedPublic.lean/declarations/tangentbundlemodelspacediffeomorph.md) | 128 | `declaration-track:f6805ec51f13a219716d62f1ee0ff1ba5449eae6dade243a92b15718bed1e4c6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

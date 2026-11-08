@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationLinearPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationLinearPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationLinearPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationLinearPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [linear](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationLinearPublic.lean/declarations/linear.md) | 38 | `declaration-track:2cf9ccad321097a0e9d14a27411bbb615d92a1850d745d4c363b3d2774676542` |
-| 2 | `lemma` | [functor_linear](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationLinearPublic.lean/declarations/functor-linear.md) | 41 | `result-track:501cb67923c361eba0af2a1a7b9e584c07f046315010f4f4ef211aae5dec1627` |
-| 3 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationLinearPublic.lean/declarations/instance-source-edition-4.md) | 54 | `declaration-track:7b8d0cc085fc70670996691b555ae086a8b7d8bfb20312b1312ae09127913bec` |
-| 4 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationLinearPublic.lean/declarations/instance-source-edition-2.md) | 56 | `declaration-track:56dda8886ae1648d5ba591795a3446dc378f17093a38d242d9e73511a5d75c7b` |
-| 5 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationLinearPublic.lean/declarations/instance.md) | 64 | `declaration-track:103b25a2c501c6c2a8d55d5932883d9ad8f73ae28f13a9d6e42dfd4f9def7937` |
-| 6 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationLinearPublic.lean/declarations/instance-source-edition-3.md) | 66 | `declaration-track:74d2e184e5133cc09cd34758838070bd49ebd7c08a756e8fc66ebc44c829143e` |
-| 7 | `lemma` | [functor_linear_iff](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationLinearPublic.lean/declarations/functor-linear-iff.md) | 78 | `result-track:33f7e38749c0de703a322d48495e4d5d78a7aadf8a4067c2d378824a611308b0` |
+| 1 | `def` | [linear](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationLinearPublic.lean/declarations/linear.md) | 38 | `declaration-track:2cf9ccad321097a0e9d14a27411bbb615d92a1850d745d4c363b3d2774676542` |
+| 2 | `lemma` | [functor_linear](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationLinearPublic.lean/declarations/functor-linear.md) | 41 | `result-track:501cb67923c361eba0af2a1a7b9e584c07f046315010f4f4ef211aae5dec1627` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationLinearPublic.lean/declarations/instance-source-edition-4.md) | 54 | `declaration-track:7b8d0cc085fc70670996691b555ae086a8b7d8bfb20312b1312ae09127913bec` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationLinearPublic.lean/declarations/instance-source-edition-2.md) | 56 | `declaration-track:56dda8886ae1648d5ba591795a3446dc378f17093a38d242d9e73511a5d75c7b` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationLinearPublic.lean/declarations/instance.md) | 64 | `declaration-track:103b25a2c501c6c2a8d55d5932883d9ad8f73ae28f13a9d6e42dfd4f9def7937` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationLinearPublic.lean/declarations/instance-source-edition-3.md) | 66 | `declaration-track:74d2e184e5133cc09cd34758838070bd49ebd7c08a756e8fc66ebc44c829143e` |
+| 7 | `lemma` | [functor_linear_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationLinearPublic.lean/declarations/functor-linear-iff.md) | 78 | `result-track:33f7e38749c0de703a322d48495e4d5d78a7aadf8a4067c2d378824a611308b0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

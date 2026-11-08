@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ChecksAuditSourceEdition5.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ChecksAuditSourceEdition5.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ChecksAuditSourceEdition5.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ChecksAuditSourceEdition5.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.LinearAlgebra.JacobiTransfer`](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearAlgebraJacobiTransfer.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.LinearAlgebra.JacobiTransfer`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearAlgebraJacobiTransfer.lean/index.md) — import line 1; pinned internal source present.
 - `Lean` — import line 2; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [use_raw_ratio](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ChecksAuditSourceEdition5.lean/declarations/use-raw-ratio.md) | 5 | `result-track:c4c3f7a53b4ffb0b8b239d57391407a87dffabd732f3690c6ae8623194e5dd19` |
-| 2 | `theorem` | [use_weighted_recurrence](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ChecksAuditSourceEdition5.lean/declarations/use-weighted-recurrence.md) | 6 | `result-track:73f852d435f766104fde1e72b2a1b90fb17cd8cd32a09f73f43a0ebef0699079` |
-| 3 | `theorem` | [use_weighted_determinant](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ChecksAuditSourceEdition5.lean/declarations/use-weighted-determinant.md) | 7 | `result-track:6e54bcb3006fbfcc8b866902d1f56c51ee853460d7052869b5c629d87dedaf2b` |
-| 4 | `elab` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ChecksAuditSourceEdition5.lean/declarations/elab.md) | 9 | `declaration-track:e7b7c6877424e7e9f4890b8059c200f5b448426e574c5a47b2e75236cb21b1a4` |
+| 1 | `theorem` | [use_raw_ratio](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ChecksAuditSourceEdition5.lean/declarations/use-raw-ratio.md) | 5 | `result-track:c4c3f7a53b4ffb0b8b239d57391407a87dffabd732f3690c6ae8623194e5dd19` |
+| 2 | `theorem` | [use_weighted_recurrence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ChecksAuditSourceEdition5.lean/declarations/use-weighted-recurrence.md) | 6 | `result-track:73f852d435f766104fde1e72b2a1b90fb17cd8cd32a09f73f43a0ebef0699079` |
+| 3 | `theorem` | [use_weighted_determinant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ChecksAuditSourceEdition5.lean/declarations/use-weighted-determinant.md) | 7 | `result-track:6e54bcb3006fbfcc8b866902d1f56c51ee853460d7052869b5c629d87dedaf2b` |
+| 4 | `elab` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ChecksAuditSourceEdition5.lean/declarations/elab.md) | 9 | `declaration-track:e7b7c6877424e7e9f4890b8059c200f5b448426e574c5a47b2e75236cb21b1a4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

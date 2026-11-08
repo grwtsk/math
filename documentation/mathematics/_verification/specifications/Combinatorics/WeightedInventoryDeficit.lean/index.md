@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/WeightedInventoryDeficit.lean/index.md) · [Full source](../../../../Combinatorics/WeightedInventoryDeficit.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WeightedInventoryDeficit.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WeightedInventoryDeficit.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Combinatorics.WeightedPairBudget`](../../../../Combinatorics/WeightedPairBudget.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Combinatorics.WeightedPairBudget`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WeightedPairBudget.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Tactic.Omega` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [mass_partition](../../../../Combinatorics/WeightedInventoryDeficit.lean/declarations/mass-partition.md) | 29 | `result-track:2c30aed1a60d06a85af17606b2031aba815a1c7193a420c6092ca785982b54a3` |
-| 2 | `theorem` | [known_add_pair_le_mass](../../../../Combinatorics/WeightedInventoryDeficit.lean/declarations/known-add-pair-le-mass.md) | 51 | `result-track:bc6cd8e1baac171bbd889a02a58a67cd87a216010c6ee7ba8e60b85995851baf` |
-| 3 | `theorem` | [no_room_for_unrecorded_pair](../../../../Combinatorics/WeightedInventoryDeficit.lean/declarations/no-room-for-unrecorded-pair.md) | 64 | `result-track:a3ed53d77aec38b861290aff02478cba77356401764503c408d10f797c883511` |
-| 4 | `theorem` | [one_missing_fixed_point_fixture](../../../../Combinatorics/WeightedInventoryDeficit.lean/declarations/one-missing-fixed-point-fixture.md) | 79 | `result-track:0d1a3597a6dd74342402007d7f602e665e4c69a63f03901c6ccddc9eb9379413` |
-| 5 | `theorem` | [two_unit_deficit_fixture](../../../../Combinatorics/WeightedInventoryDeficit.lean/declarations/two-unit-deficit-fixture.md) | 85 | `result-track:a9b2da3555f7f8de31a0a514370a463e8bbe674455db2896b710f1a44c1da95d` |
-| 6 | `theorem` | [duplicate_credit_fixture](../../../../Combinatorics/WeightedInventoryDeficit.lean/declarations/duplicate-credit-fixture.md) | 91 | `result-track:5e28228388406c4ffab9906b74d2fbae7fb033d5a53d4e06f600e83005c5ba62` |
-| 7 | `theorem` | [zero_weight_pair_fixture](../../../../Combinatorics/WeightedInventoryDeficit.lean/declarations/zero-weight-pair-fixture.md) | 98 | `result-track:3cb2bf2afa5e2e0b30ab076e42b0d66c02686b1ef35f3ef076cc3d884ef82f56` |
-| 8 | `theorem` | [outside_source_credit_fixture](../../../../Combinatorics/WeightedInventoryDeficit.lean/declarations/outside-source-credit-fixture.md) | 105 | `result-track:f2f36877b75b9c19bbf08a89d252ffd7e70a6e330b0e9a7f83437c512a9804eb` |
+| 1 | `theorem` | [mass_partition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WeightedInventoryDeficit.lean/declarations/mass-partition.md) | 29 | `result-track:2c30aed1a60d06a85af17606b2031aba815a1c7193a420c6092ca785982b54a3` |
+| 2 | `theorem` | [known_add_pair_le_mass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WeightedInventoryDeficit.lean/declarations/known-add-pair-le-mass.md) | 51 | `result-track:bc6cd8e1baac171bbd889a02a58a67cd87a216010c6ee7ba8e60b85995851baf` |
+| 3 | `theorem` | [no_room_for_unrecorded_pair](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WeightedInventoryDeficit.lean/declarations/no-room-for-unrecorded-pair.md) | 64 | `result-track:a3ed53d77aec38b861290aff02478cba77356401764503c408d10f797c883511` |
+| 4 | `theorem` | [one_missing_fixed_point_fixture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WeightedInventoryDeficit.lean/declarations/one-missing-fixed-point-fixture.md) | 79 | `result-track:0d1a3597a6dd74342402007d7f602e665e4c69a63f03901c6ccddc9eb9379413` |
+| 5 | `theorem` | [two_unit_deficit_fixture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WeightedInventoryDeficit.lean/declarations/two-unit-deficit-fixture.md) | 85 | `result-track:a9b2da3555f7f8de31a0a514370a463e8bbe674455db2896b710f1a44c1da95d` |
+| 6 | `theorem` | [duplicate_credit_fixture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WeightedInventoryDeficit.lean/declarations/duplicate-credit-fixture.md) | 91 | `result-track:5e28228388406c4ffab9906b74d2fbae7fb033d5a53d4e06f600e83005c5ba62` |
+| 7 | `theorem` | [zero_weight_pair_fixture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WeightedInventoryDeficit.lean/declarations/zero-weight-pair-fixture.md) | 98 | `result-track:3cb2bf2afa5e2e0b30ab076e42b0d66c02686b1ef35f3ef076cc3d884ef82f56` |
+| 8 | `theorem` | [outside_source_credit_fixture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WeightedInventoryDeficit.lean/declarations/outside-source-credit-fixture.md) | 105 | `result-track:f2f36877b75b9c19bbf08a89d252ffd7e70a6e330b0e9a7f83437c512a9804eb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

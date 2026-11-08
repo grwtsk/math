@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/TensorIntegrity.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/TensorIntegrity.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TensorIntegrity.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TensorIntegrity.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FiniteArithmeticDescriptor](../../../../../ComputerScience/AlgorithmsInComputerScience/TensorIntegrity.lean/declarations/finitearithmeticdescriptor.md) | 7 | `declaration-track:02fbba47aa5c156554cd6f10398d39813e900a3234fef2ca8ea93b9759bb3437` |
-| 2 | `structure` | [TensoralIntegrity](../../../../../ComputerScience/AlgorithmsInComputerScience/TensorIntegrity.lean/declarations/tensoralintegrity.md) | 20 | `declaration-track:0c3299c37a75cd9c1eabf975b45bfa497b0992c856dfb65d7508419df537d7fd` |
-| 3 | `theorem` | [tensoralIntegrity_boundary_visible](../../../../../ComputerScience/AlgorithmsInComputerScience/TensorIntegrity.lean/declarations/tensoralintegrity-boundary-visible.md) | 32 | `result-track:5f0fcc64bb6a7a8dbc8c4aad3909e49af28902a97d0f1338f773ad3b1fc5e1f0` |
-| 4 | `inductive` | [IntegrityDefectKind](../../../../../ComputerScience/AlgorithmsInComputerScience/TensorIntegrity.lean/declarations/integritydefectkind.md) | 39 | `declaration-track:b82d1a5daba1e3f7270f66b62f0800e43a07cddf8dca00781daaa5e80cb160c7` |
-| 5 | `structure` | [IntegrityDefect](../../../../../ComputerScience/AlgorithmsInComputerScience/TensorIntegrity.lean/declarations/integritydefect.md) | 54 | `declaration-track:4941570110915b2ef7b68325b55d036fb32bc8dd3b9ae026e29273e474cdf606` |
-| 6 | `theorem` | [integrityDefect_has_matrix_witness](../../../../../ComputerScience/AlgorithmsInComputerScience/TensorIntegrity.lean/declarations/integritydefect-has-matrix-witness.md) | 63 | `result-track:60762f30669c5d52df5949e8733f23459996ff2175ecf37ff62e29631590a760` |
+| 1 | `structure` | [FiniteArithmeticDescriptor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TensorIntegrity.lean/declarations/finitearithmeticdescriptor.md) | 7 | `declaration-track:02fbba47aa5c156554cd6f10398d39813e900a3234fef2ca8ea93b9759bb3437` |
+| 2 | `structure` | [TensoralIntegrity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TensorIntegrity.lean/declarations/tensoralintegrity.md) | 20 | `declaration-track:0c3299c37a75cd9c1eabf975b45bfa497b0992c856dfb65d7508419df537d7fd` |
+| 3 | `theorem` | [tensoralIntegrity_boundary_visible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TensorIntegrity.lean/declarations/tensoralintegrity-boundary-visible.md) | 32 | `result-track:5f0fcc64bb6a7a8dbc8c4aad3909e49af28902a97d0f1338f773ad3b1fc5e1f0` |
+| 4 | `inductive` | [IntegrityDefectKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TensorIntegrity.lean/declarations/integritydefectkind.md) | 39 | `declaration-track:b82d1a5daba1e3f7270f66b62f0800e43a07cddf8dca00781daaa5e80cb160c7` |
+| 5 | `structure` | [IntegrityDefect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TensorIntegrity.lean/declarations/integritydefect.md) | 54 | `declaration-track:4941570110915b2ef7b68325b55d036fb32bc8dd3b9ae026e29273e474cdf606` |
+| 6 | `theorem` | [integrityDefect_has_matrix_witness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TensorIntegrity.lean/declarations/integritydefect-has-matrix-witness.md) | 63 | `result-track:60762f30669c5d52df5949e8733f23459996ff2175ecf37ff62e29631590a760` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ScopeFixturesEdition8.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ScopeFixturesEdition8.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ScopeFixturesEdition8.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ScopeFixturesEdition8.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [missing_endpoint_one_rejected](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ScopeFixturesEdition8.lean/declarations/missing-endpoint-one-rejected.md) | 15 | `result-track:789b93c83a067a557db53e296a755df1fc1e422ceef374683aa65c955bb21789` |
-| 2 | `theorem` | [actual_preprime_discrepancy_negative](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ScopeFixturesEdition8.lean/declarations/actual-preprime-discrepancy-negative.md) | 21 | `result-track:c1b908c8554ea2b71b0083a828dc45fd51ac1be5de89ae801b916a04722359a4` |
-| 3 | `theorem` | [actual_touching_prime_retained_zero_factor](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ScopeFixturesEdition8.lean/declarations/actual-touching-prime-retained-zero-factor.md) | 37 | `result-track:e2ad72975cd2eb95d6511fe7ba5760940c5c3e7e4c07273caad22af519ac8a91` |
-| 4 | `theorem` | [actual_endpoint_correction_required](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ScopeFixturesEdition8.lean/declarations/actual-endpoint-correction-required.md) | 46 | `result-track:e18b728d3c19e5feaeaaeba5c6096e2f240396771dd49f328d3594a8026731eb` |
+| 1 | `theorem` | [missing_endpoint_one_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ScopeFixturesEdition8.lean/declarations/missing-endpoint-one-rejected.md) | 15 | `result-track:789b93c83a067a557db53e296a755df1fc1e422ceef374683aa65c955bb21789` |
+| 2 | `theorem` | [actual_preprime_discrepancy_negative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ScopeFixturesEdition8.lean/declarations/actual-preprime-discrepancy-negative.md) | 21 | `result-track:c1b908c8554ea2b71b0083a828dc45fd51ac1be5de89ae801b916a04722359a4` |
+| 3 | `theorem` | [actual_touching_prime_retained_zero_factor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ScopeFixturesEdition8.lean/declarations/actual-touching-prime-retained-zero-factor.md) | 37 | `result-track:e2ad72975cd2eb95d6511fe7ba5760940c5c3e7e4c07273caad22af519ac8a91` |
+| 4 | `theorem` | [actual_endpoint_correction_required](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ScopeFixturesEdition8.lean/declarations/actual-endpoint-correction-required.md) | 46 | `result-track:e18b728d3c19e5feaeaaeba5c6096e2f240396771dd49f328d3594a8026731eb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

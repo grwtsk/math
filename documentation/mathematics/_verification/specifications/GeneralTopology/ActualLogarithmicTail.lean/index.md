@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ActualLogarithmicTail.lean/index.md) · [Full source](../../../../GeneralTopology/ActualLogarithmicTail.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualLogarithmicTail.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualLogarithmicTail.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,17 +58,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualCountConstant](../../../../GeneralTopology/ActualLogarithmicTail.lean/declarations/actualcountconstant.md) | 21 | `declaration-track:b18445562a8b30afb12a1b0708475a89c4ece0dc401214fcad73ba0e7d9ba56d` |
-| 2 | `theorem` | [actualCountConstant_bound](../../../../GeneralTopology/ActualLogarithmicTail.lean/declarations/actualcountconstant-bound.md) | 23 | `result-track:0b27782e13fcede959347975cbdad1abb0cde5bec8fa74f0efc1b8cf09b4d848` |
-| 3 | `def` | [actualTailConstant](../../../../GeneralTopology/ActualLogarithmicTail.lean/declarations/actualtailconstant.md) | 26 | `declaration-track:830823198a7c3b2f73648ad338b28fb9ff21aea0b7bf9fbb35e45601b028aad7` |
-| 4 | `theorem` | [actualTailConstant_pos](../../../../GeneralTopology/ActualLogarithmicTail.lean/declarations/actualtailconstant-pos.md) | 28 | `result-track:46fb6084e14c4c641f0f5e7e135ef3de86cc72828d41567f35c9f8369d63964e` |
-| 5 | `theorem` | [actual_sixth_moment](../../../../GeneralTopology/ActualLogarithmicTail.lean/declarations/actual-sixth-moment.md) | 32 | `result-track:06a1575c263fbd9ea8577e2f59abc358ce43354c712cec78b5b151ef845e3ade` |
-| 6 | `theorem` | [actual_source_tail_budgets](../../../../GeneralTopology/ActualLogarithmicTail.lean/declarations/actual-source-tail-budgets.md) | 38 | `result-track:6c0776e814f18bd3ea48ad6224db61eaa542dcdf936b67d30eb7d5be5a70f8bf` |
-| 7 | `theorem` | [exists_uniform_source_tail_constant](../../../../GeneralTopology/ActualLogarithmicTail.lean/declarations/exists-uniform-source-tail-constant.md) | 49 | `result-track:1d6294e2c886a0e7ad091229e4c0ac289d309299907577baa284ad77d43ac063` |
-| 8 | `theorem` | [actual_joint_uniform](../../../../GeneralTopology/ActualLogarithmicTail.lean/declarations/actual-joint-uniform.md) | 56 | `result-track:6e06ba936fb715dbb6004ffec92f60dd12872e5f940a8708796ab06e6a41f049` |
-| 9 | `theorem` | [actual_joint_tendsto_zero](../../../../GeneralTopology/ActualLogarithmicTail.lean/declarations/actual-joint-tendsto-zero.md) | 63 | `result-track:a63fc6be17a7bedc5b34be5f3093a9a32b0e9739e06bbdafcac58f3324a8cc37` |
-| 10 | `theorem` | [actual_head_upper_transfers](../../../../GeneralTopology/ActualLogarithmicTail.lean/declarations/actual-head-upper-transfers.md) | 68 | `result-track:11b7caee3acef3a5c9990b2cd61ae0fd6b386919c70eb5c626e8fdeda00adad9` |
-| 11 | `theorem` | [actual_full_upper_transfers](../../../../GeneralTopology/ActualLogarithmicTail.lean/declarations/actual-full-upper-transfers.md) | 73 | `result-track:5d209ec8ffd917545dd87bdecf9820c7addb84c8b350cf11b7263e698d0a8cf8` |
+| 1 | `def` | [actualCountConstant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualLogarithmicTail.lean/declarations/actualcountconstant.md) | 21 | `declaration-track:b18445562a8b30afb12a1b0708475a89c4ece0dc401214fcad73ba0e7d9ba56d` |
+| 2 | `theorem` | [actualCountConstant_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualLogarithmicTail.lean/declarations/actualcountconstant-bound.md) | 23 | `result-track:0b27782e13fcede959347975cbdad1abb0cde5bec8fa74f0efc1b8cf09b4d848` |
+| 3 | `def` | [actualTailConstant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualLogarithmicTail.lean/declarations/actualtailconstant.md) | 26 | `declaration-track:830823198a7c3b2f73648ad338b28fb9ff21aea0b7bf9fbb35e45601b028aad7` |
+| 4 | `theorem` | [actualTailConstant_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualLogarithmicTail.lean/declarations/actualtailconstant-pos.md) | 28 | `result-track:46fb6084e14c4c641f0f5e7e135ef3de86cc72828d41567f35c9f8369d63964e` |
+| 5 | `theorem` | [actual_sixth_moment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualLogarithmicTail.lean/declarations/actual-sixth-moment.md) | 32 | `result-track:06a1575c263fbd9ea8577e2f59abc358ce43354c712cec78b5b151ef845e3ade` |
+| 6 | `theorem` | [actual_source_tail_budgets](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualLogarithmicTail.lean/declarations/actual-source-tail-budgets.md) | 38 | `result-track:6c0776e814f18bd3ea48ad6224db61eaa542dcdf936b67d30eb7d5be5a70f8bf` |
+| 7 | `theorem` | [exists_uniform_source_tail_constant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualLogarithmicTail.lean/declarations/exists-uniform-source-tail-constant.md) | 49 | `result-track:1d6294e2c886a0e7ad091229e4c0ac289d309299907577baa284ad77d43ac063` |
+| 8 | `theorem` | [actual_joint_uniform](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualLogarithmicTail.lean/declarations/actual-joint-uniform.md) | 56 | `result-track:6e06ba936fb715dbb6004ffec92f60dd12872e5f940a8708796ab06e6a41f049` |
+| 9 | `theorem` | [actual_joint_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualLogarithmicTail.lean/declarations/actual-joint-tendsto-zero.md) | 63 | `result-track:a63fc6be17a7bedc5b34be5f3093a9a32b0e9739e06bbdafcac58f3324a8cc37` |
+| 10 | `theorem` | [actual_head_upper_transfers](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualLogarithmicTail.lean/declarations/actual-head-upper-transfers.md) | 68 | `result-track:11b7caee3acef3a5c9990b2cd61ae0fd6b386919c70eb5c626e8fdeda00adad9` |
+| 11 | `theorem` | [actual_full_upper_transfers](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ActualLogarithmicTail.lean/declarations/actual-full-upper-transfers.md) | 73 | `result-track:5d209ec8ffd917545dd87bdecf9820c7addb84c8b350cf11b7263e698d0a8cf8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

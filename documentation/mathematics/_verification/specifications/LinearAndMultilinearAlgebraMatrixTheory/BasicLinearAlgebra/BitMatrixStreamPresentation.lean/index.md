@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BitMatrixStreamPresentation.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BitMatrixStreamPresentation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BitMatrixStreamPresentation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BitMatrixStreamPresentation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [leanLatexPresentation_respectsRanking](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BitMatrixStreamPresentation.lean/declarations/leanlatexpresentation-respectsranking.md) | 19 | `result-track:7f2e6b81b171c9c36bc3f36da3a052c2a90a6f6a9a481d5771b0eee5d4a1d1bc` |
+| 1 | `theorem` | [leanLatexPresentation_respectsRanking](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BitMatrixStreamPresentation.lean/declarations/leanlatexpresentation-respectsranking.md) | 19 | `result-track:7f2e6b81b171c9c36bc3f36da3a052c2a90a6f6a9a481d5771b0eee5d4a1d1bc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

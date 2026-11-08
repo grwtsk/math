@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityHalfPrimeFactorHistoricalSourceEdition2.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityHalfPrimeFactorHistoricalSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityHalfPrimeFactorHistoricalSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityHalfPrimeFactorHistoricalSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.FunctionFieldArithmetic.DensityCorrectionPrimeSeries`](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityCorrectionPrimeSeriesHistoricalSourceEdition2.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.FunctionFieldArithmetic.DensityCorrectionPrimeSeries`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityCorrectionPrimeSeriesHistoricalSourceEdition2.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Analysis.Real.Sqrt` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [density_half_prime_denominator_lower](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityHalfPrimeFactorHistoricalSourceEdition2.lean/declarations/density-half-prime-denominator-lower.md) | 19 | `result-track:141332a02dced3d31bf21f26bd83ba8a8997c8e99aeb78b989c09a1695933b59` |
-| 2 | `theorem` | [density_half_prime_factor_bounds](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityHalfPrimeFactorHistoricalSourceEdition2.lean/declarations/density-half-prime-factor-bounds.md) | 24 | `result-track:f21478429bc4c320a4acb58150051da6ba8124351e8df64690ac0efb86d30255` |
-| 3 | `theorem` | [density_half_prime_square_excess](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityHalfPrimeFactorHistoricalSourceEdition2.lean/declarations/density-half-prime-square-excess.md) | 38 | `result-track:6018822d24c5e6b7d9a8137197a214a3c5c085c7ce3b38fd4cbbf3a75ea7c132` |
-| 4 | `theorem` | [density_prime_half_mass_algebra](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityHalfPrimeFactorHistoricalSourceEdition2.lean/declarations/density-prime-half-mass-algebra.md) | 68 | `result-track:ba153704e58ea1811dd497cabf148ca95d50a14d0ef09bfb48ba50d49a21fa75` |
-| 5 | `theorem` | [density_correction_prime_half_hasSum](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityHalfPrimeFactorHistoricalSourceEdition2.lean/declarations/density-correction-prime-half-hassum.md) | 80 | `result-track:f3d720421f18da8dd5aaf6007d6278a280213c9239b4b6eb76ee9e4e50b5e1d4` |
-| 6 | `theorem` | [density_correction_prime_half_tail](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityHalfPrimeFactorHistoricalSourceEdition2.lean/declarations/density-correction-prime-half-tail.md) | 94 | `result-track:d1fc05b12601049fc311c6a31dc9da475b58e7c724c4d57faadee7b531facb5f` |
+| 1 | `theorem` | [density_half_prime_denominator_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityHalfPrimeFactorHistoricalSourceEdition2.lean/declarations/density-half-prime-denominator-lower.md) | 19 | `result-track:141332a02dced3d31bf21f26bd83ba8a8997c8e99aeb78b989c09a1695933b59` |
+| 2 | `theorem` | [density_half_prime_factor_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityHalfPrimeFactorHistoricalSourceEdition2.lean/declarations/density-half-prime-factor-bounds.md) | 24 | `result-track:f21478429bc4c320a4acb58150051da6ba8124351e8df64690ac0efb86d30255` |
+| 3 | `theorem` | [density_half_prime_square_excess](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityHalfPrimeFactorHistoricalSourceEdition2.lean/declarations/density-half-prime-square-excess.md) | 38 | `result-track:6018822d24c5e6b7d9a8137197a214a3c5c085c7ce3b38fd4cbbf3a75ea7c132` |
+| 4 | `theorem` | [density_prime_half_mass_algebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityHalfPrimeFactorHistoricalSourceEdition2.lean/declarations/density-prime-half-mass-algebra.md) | 68 | `result-track:ba153704e58ea1811dd497cabf148ca95d50a14d0ef09bfb48ba50d49a21fa75` |
+| 5 | `theorem` | [density_correction_prime_half_hasSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityHalfPrimeFactorHistoricalSourceEdition2.lean/declarations/density-correction-prime-half-hassum.md) | 80 | `result-track:f3d720421f18da8dd5aaf6007d6278a280213c9239b4b6eb76ee9e4e50b5e1d4` |
+| 6 | `theorem` | [density_correction_prime_half_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityHalfPrimeFactorHistoricalSourceEdition2.lean/declarations/density-correction-prime-half-tail.md) | 94 | `result-track:d1fc05b12601049fc311c6a31dc9da475b58e7c724c4d57faadee7b531facb5f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

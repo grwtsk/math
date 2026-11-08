@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/ProjectiveDimensionNamespacedPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/ProjectiveDimensionNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ProjectiveDimensionNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ProjectiveDimensionNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [hasProjectiveDimensionLT_of_forall_finite](../../../../CommutativeAlgebra/ProjectiveDimensionNamespacedPublic.lean/declarations/hasprojectivedimensionlt-of-forall-finite.md) | 54 | `result-track:d65c46968d7df3bc1f4cf9259b75868b37e3efaebf9d8e0ee8a8f73a6dfb383b` |
-| 2 | `lemma` | [projectiveDimension_quotSMulTop_eq_succ_of_isSMulRegular](../../../../CommutativeAlgebra/ProjectiveDimensionNamespacedPublic.lean/declarations/projectivedimension-quotsmultop-eq-succ-of-issmulregular.md) | 95 | `result-track:b8d9b800af8e04e5561562d2ed89a2b67681b5bce062687212b6a3a9aa33bb19` |
-| 3 | `lemma` | [projectiveDimension_quotient_eq_add_length_of_isWeaklyRegular](../../../../CommutativeAlgebra/ProjectiveDimensionNamespacedPublic.lean/declarations/projectivedimension-quotient-eq-add-length-of-isweaklyregular.md) | 152 | `result-track:2ec9b9f057f93af76f8e62d2dbbf24dac48199b2c4108ade255245e1e105165d` |
-| 4 | `lemma` | [projectiveDimension_quotient_eq_length](../../../../CommutativeAlgebra/ProjectiveDimensionNamespacedPublic.lean/declarations/projectivedimension-quotient-eq-length.md) | 175 | `result-track:e6d273d651d5b340bf8409061505b4ab76d038561477fd6c7cd6b65aa2fe764b` |
+| 1 | `lemma` | [hasProjectiveDimensionLT_of_forall_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ProjectiveDimensionNamespacedPublic.lean/declarations/hasprojectivedimensionlt-of-forall-finite.md) | 54 | `result-track:d65c46968d7df3bc1f4cf9259b75868b37e3efaebf9d8e0ee8a8f73a6dfb383b` |
+| 2 | `lemma` | [projectiveDimension_quotSMulTop_eq_succ_of_isSMulRegular](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ProjectiveDimensionNamespacedPublic.lean/declarations/projectivedimension-quotsmultop-eq-succ-of-issmulregular.md) | 95 | `result-track:b8d9b800af8e04e5561562d2ed89a2b67681b5bce062687212b6a3a9aa33bb19` |
+| 3 | `lemma` | [projectiveDimension_quotient_eq_add_length_of_isWeaklyRegular](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ProjectiveDimensionNamespacedPublic.lean/declarations/projectivedimension-quotient-eq-add-length-of-isweaklyregular.md) | 152 | `result-track:2ec9b9f057f93af76f8e62d2dbbf24dac48199b2c4108ade255245e1e105165d` |
+| 4 | `lemma` | [projectiveDimension_quotient_eq_length](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ProjectiveDimensionNamespacedPublic.lean/declarations/projectivedimension-quotient-eq-length.md) | 175 | `result-track:e6d273d651d5b340bf8409061505b4ab76d038561477fd6c7cd6b65aa2fe764b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

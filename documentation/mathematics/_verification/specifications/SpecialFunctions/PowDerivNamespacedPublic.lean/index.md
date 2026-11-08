@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../SpecialFunctions/PowDerivNamespacedPublic.lean/index.md) · [Full source](../../../../SpecialFunctions/PowDerivNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/PowDerivNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/PowDerivNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [HasDerivAt.const_mul_ofReal_cpow_neg_sub_one](../../../../SpecialFunctions/PowDerivNamespacedPublic.lean/declarations/hasderivat-const-mul-ofreal-cpow-neg-sub-one.md) | 27 | `result-track:f5482c04a59e839f57d347abd26d9ccd679b4248028b4cc898177ca22e455850` |
+| 1 | `theorem` | [HasDerivAt.const_mul_ofReal_cpow_neg_sub_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/PowDerivNamespacedPublic.lean/declarations/hasderivat-const-mul-ofreal-cpow-neg-sub-one.md) | 27 | `result-track:f5482c04a59e839f57d347abd26d9ccd679b4248028b4cc898177ca22e455850` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResultsAlternative20SourceEdition1.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResultsAlternative20SourceEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResultsAlternative20SourceEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResultsAlternative20SourceEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [EventCohomologyClass](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResultsAlternative20SourceEdition1.lean/declarations/eventcohomologyclass.md) | 9 | `declaration-track:966e2e39c7fa4d41343d383610f8b6af7d13e858e5b79fb002e7a00157628937` |
-| 2 | `structure` | [NamingSuture](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResultsAlternative20SourceEdition1.lean/declarations/namingsuture.md) | 14 | `declaration-track:8f8c99f272a788b9ff8be76af3b43a732dfb7a67f1b3de9ad5062f16c76b9f35` |
-| 3 | `def` | [NamingSuture.acceptedName](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResultsAlternative20SourceEdition1.lean/declarations/namingsuture-acceptedname.md) | 25 | `declaration-track:e67539768091134eddf046c7817a6ca47a22cedb5a7072f8fefdf52808fc4428` |
-| 4 | `theorem` | [model_agreement_does_not_change_atom_identity](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResultsAlternative20SourceEdition1.lean/declarations/model-agreement-does-not-change-atom-identity.md) | 28 | `result-track:344260ca823f48b3890fc9b12d4de3470a24d4939b4331238ec762923a9a41b6` |
-| 5 | `theorem` | [naming_suture_does_not_imply_concept_identity](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResultsAlternative20SourceEdition1.lean/declarations/naming-suture-does-not-imply-concept-identity.md) | 31 | `result-track:5ab80fff36a365de3c4edbea840c812dbfbbadf4968a0c75fb51e5cad6f87a26` |
-| 6 | `theorem` | [naming_suture_does_not_imply_theorem_authority](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResultsAlternative20SourceEdition1.lean/declarations/naming-suture-does-not-imply-theorem-authority.md) | 34 | `result-track:b69e05c2ac5b1444477f23d9430783215b5c15af440a37442e3e4fc5aee9b5ee` |
+| 1 | `inductive` | [EventCohomologyClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResultsAlternative20SourceEdition1.lean/declarations/eventcohomologyclass.md) | 9 | `declaration-track:966e2e39c7fa4d41343d383610f8b6af7d13e858e5b79fb002e7a00157628937` |
+| 2 | `structure` | [NamingSuture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResultsAlternative20SourceEdition1.lean/declarations/namingsuture.md) | 14 | `declaration-track:8f8c99f272a788b9ff8be76af3b43a732dfb7a67f1b3de9ad5062f16c76b9f35` |
+| 3 | `def` | [NamingSuture.acceptedName](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResultsAlternative20SourceEdition1.lean/declarations/namingsuture-acceptedname.md) | 25 | `declaration-track:e67539768091134eddf046c7817a6ca47a22cedb5a7072f8fefdf52808fc4428` |
+| 4 | `theorem` | [model_agreement_does_not_change_atom_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResultsAlternative20SourceEdition1.lean/declarations/model-agreement-does-not-change-atom-identity.md) | 28 | `result-track:344260ca823f48b3890fc9b12d4de3470a24d4939b4331238ec762923a9a41b6` |
+| 5 | `theorem` | [naming_suture_does_not_imply_concept_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResultsAlternative20SourceEdition1.lean/declarations/naming-suture-does-not-imply-concept-identity.md) | 31 | `result-track:5ab80fff36a365de3c4edbea840c812dbfbbadf4968a0c75fb51e5cad6f87a26` |
+| 6 | `theorem` | [naming_suture_does_not_imply_theorem_authority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResultsAlternative20SourceEdition1.lean/declarations/naming-suture-does-not-imply-theorem-authority.md) | 34 | `result-track:b69e05c2ac5b1444477f23d9430783215b5c15af440a37442e3e4fc5aee9b5ee` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

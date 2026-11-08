@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/Faithful.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/Faithful.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Faithful.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Faithful.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [FaithfulVAdd](../../../../GroupTheoryAndGeneralizations/Faithful.lean/declarations/faithfulvadd.md) | 37 | `declaration-track:9785164611c19c19bb8186b791dbc83fb2c51ce71f14a6ea589541f28dbd5953` |
-| 2 | `class` | [FaithfulSMul](../../../../GroupTheoryAndGeneralizations/Faithful.lean/declarations/faithfulsmul.md) | 43 | `declaration-track:82f1b3a8f6989670ad63eeccee189247830d5a743f43ec5da092aaa4afcae1c7` |
-| 3 | `lemma` | [smul_left_injective'](../../../../GroupTheoryAndGeneralizations/Faithful.lean/declarations/smul-left-injective.md) | 51 | `result-track:1bef739bb8bafc4ef58cb5d7e775d96f567ddb15b3c0594edb533e9cae71cba5` |
-| 4 | `instance` | [RightCancelMonoid.faithfulSMul](../../../../GroupTheoryAndGeneralizations/Faithful.lean/declarations/rightcancelmonoid-faithfulsmul.md) | 56 | `declaration-track:49d1d7567fd9e04f52797823425991b3061add9339fe7f130b52db36e465cbba` |
-| 5 | `instance` | [LefttCancelMonoid.to_faithfulSMul_mulOpposite](../../../../GroupTheoryAndGeneralizations/Faithful.lean/declarations/lefttcancelmonoid-to-faithfulsmul-mulopposite.md) | 61 | `declaration-track:3a95dc7fc5467ddbdf817ef7741d3e050d3d9b2372d2ee4ecef4010e17a42a02` |
-| 6 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/Faithful.lean/declarations/instance.md) | 64 | `declaration-track:34f3ff3aeed8af88574b919bb8d68f044130f2e8c11dcb2da51ce4fdd05dea7f` |
-| 7 | `lemma` | [faithfulSMul_iff_injective_smul_one](../../../../GroupTheoryAndGeneralizations/Faithful.lean/declarations/faithfulsmul-iff-injective-smul-one.md) | 66 | `result-track:cd6bce3df700a54e492d0b41a42b42da5982cc55a0a60523970377a579f1a00d` |
+| 1 | `class` | [FaithfulVAdd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Faithful.lean/declarations/faithfulvadd.md) | 37 | `declaration-track:9785164611c19c19bb8186b791dbc83fb2c51ce71f14a6ea589541f28dbd5953` |
+| 2 | `class` | [FaithfulSMul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Faithful.lean/declarations/faithfulsmul.md) | 43 | `declaration-track:82f1b3a8f6989670ad63eeccee189247830d5a743f43ec5da092aaa4afcae1c7` |
+| 3 | `lemma` | [smul_left_injective'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Faithful.lean/declarations/smul-left-injective.md) | 51 | `result-track:1bef739bb8bafc4ef58cb5d7e775d96f567ddb15b3c0594edb533e9cae71cba5` |
+| 4 | `instance` | [RightCancelMonoid.faithfulSMul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Faithful.lean/declarations/rightcancelmonoid-faithfulsmul.md) | 56 | `declaration-track:49d1d7567fd9e04f52797823425991b3061add9339fe7f130b52db36e465cbba` |
+| 5 | `instance` | [LefttCancelMonoid.to_faithfulSMul_mulOpposite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Faithful.lean/declarations/lefttcancelmonoid-to-faithfulsmul-mulopposite.md) | 61 | `declaration-track:3a95dc7fc5467ddbdf817ef7741d3e050d3d9b2372d2ee4ecef4010e17a42a02` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Faithful.lean/declarations/instance.md) | 64 | `declaration-track:34f3ff3aeed8af88574b919bb8d68f044130f2e8c11dcb2da51ce4fdd05dea7f` |
+| 7 | `lemma` | [faithfulSMul_iff_injective_smul_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Faithful.lean/declarations/faithfulsmul-iff-injective-smul-one.md) | 66 | `result-track:cd6bce3df700a54e492d0b41a42b42da5982cc55a0a60523970377a579f1a00d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

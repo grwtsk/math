@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearAlgebraGeneralLinearGroup.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearAlgebraGeneralLinearGroup.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearAlgebraGeneralLinearGroup.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearAlgebraGeneralLinearGroup.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [GeneralLinearGroup](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearAlgebraGeneralLinearGroup.lean/declarations/generallineargroup.md) | 29 | `declaration-track:bf1cfe9213c233e90f1729670f4ecc57b19977ce5bde372400b06d5844607230` |
-| 2 | `def` | [toLinearEquiv](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearAlgebraGeneralLinearGroup.lean/declarations/tolinearequiv.md) | 37 | `declaration-track:b7e06ee74fd7d83bed1e31bba9cbdee97a43f23ccb3bfafe0ecb3fa067907949` |
-| 3 | `def` | [ofLinearEquiv](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearAlgebraGeneralLinearGroup.lean/declarations/oflinearequiv.md) | 44 | `declaration-track:eaba165c9b3bde57a0f08a1a5f18d8dee89cdeaf0696479ed4b9c7321c194b3d` |
-| 4 | `def` | [generalLinearEquiv](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearAlgebraGeneralLinearGroup.lean/declarations/generallinearequiv.md) | 54 | `declaration-track:f357ca06905cc4e65aff1c0ebea510028137583ed2252307a95dccf1298b452d` |
-| 5 | `theorem` | [generalLinearEquiv_to_linearMap](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearAlgebraGeneralLinearGroup.lean/declarations/generallinearequiv-to-linearmap.md) | 62 | `result-track:6e114ed6659de56128bbd65209eec7da5d01225ca8ae1998ecad7e13bfac03dc` |
-| 6 | `theorem` | [coeFn_generalLinearEquiv](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearAlgebraGeneralLinearGroup.lean/declarations/coefn-generallinearequiv.md) | 66 | `result-track:2ab1ac383fd5b1bdff100398e6b4e942452b5121c8c02a4123d2a64e121de0f2` |
+| 1 | `abbrev` | [GeneralLinearGroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearAlgebraGeneralLinearGroup.lean/declarations/generallineargroup.md) | 29 | `declaration-track:bf1cfe9213c233e90f1729670f4ecc57b19977ce5bde372400b06d5844607230` |
+| 2 | `def` | [toLinearEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearAlgebraGeneralLinearGroup.lean/declarations/tolinearequiv.md) | 37 | `declaration-track:b7e06ee74fd7d83bed1e31bba9cbdee97a43f23ccb3bfafe0ecb3fa067907949` |
+| 3 | `def` | [ofLinearEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearAlgebraGeneralLinearGroup.lean/declarations/oflinearequiv.md) | 44 | `declaration-track:eaba165c9b3bde57a0f08a1a5f18d8dee89cdeaf0696479ed4b9c7321c194b3d` |
+| 4 | `def` | [generalLinearEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearAlgebraGeneralLinearGroup.lean/declarations/generallinearequiv.md) | 54 | `declaration-track:f357ca06905cc4e65aff1c0ebea510028137583ed2252307a95dccf1298b452d` |
+| 5 | `theorem` | [generalLinearEquiv_to_linearMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearAlgebraGeneralLinearGroup.lean/declarations/generallinearequiv-to-linearmap.md) | 62 | `result-track:6e114ed6659de56128bbd65209eec7da5d01225ca8ae1998ecad7e13bfac03dc` |
+| 6 | `theorem` | [coeFn_generalLinearEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearAlgebraGeneralLinearGroup.lean/declarations/coefn-generallinearequiv.md) | 66 | `result-track:2ab1ac383fd5b1bdff100398e6b4e942452b5121c8c02a4123d2a64e121de0f2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

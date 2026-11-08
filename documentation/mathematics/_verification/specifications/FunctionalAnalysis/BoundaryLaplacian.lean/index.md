@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/BoundaryLaplacian.lean/index.md) · [Full source](../../../../FunctionalAnalysis/BoundaryLaplacian.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BoundaryLaplacian.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BoundaryLaplacian.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [BoundaryLaplacianEffect](../../../../FunctionalAnalysis/BoundaryLaplacian.lean/declarations/boundarylaplacianeffect.md) | 18 | `declaration-track:0b1afaaeab93e87047472459b8f9cc05d3317a5dc4d11a0a691615b33f9844fe` |
-| 2 | `theorem` | [boundary_laplacian_significant](../../../../FunctionalAnalysis/BoundaryLaplacian.lean/declarations/boundary-laplacian-significant.md) | 25 | `result-track:e94027d0962a2812f18997f9aa21bd5937e88614e07adc463ba31875f8dca402` |
+| 1 | `structure` | [BoundaryLaplacianEffect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BoundaryLaplacian.lean/declarations/boundarylaplacianeffect.md) | 18 | `declaration-track:0b1afaaeab93e87047472459b8f9cc05d3317a5dc4d11a0a691615b33f9844fe` |
+| 2 | `theorem` | [boundary_laplacian_significant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BoundaryLaplacian.lean/declarations/boundary-laplacian-significant.md) | 25 | `result-track:e94027d0962a2812f18997f9aa21bd5937e88614e07adc463ba31875f8dca402` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

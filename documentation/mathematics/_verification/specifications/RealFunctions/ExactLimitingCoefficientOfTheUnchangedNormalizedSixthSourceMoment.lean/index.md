@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/ExactLimitingCoefficientOfTheUnchangedNormalizedSixthSourceMoment.lean/index.md) · [Full source](../../../../RealFunctions/ExactLimitingCoefficientOfTheUnchangedNormalizedSixthSourceMoment.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExactLimitingCoefficientOfTheUnchangedNormalizedSixthSourceMoment.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExactLimitingCoefficientOfTheUnchangedNormalizedSixthSourceMoment.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [inverse_radius_power_tends_to_zero](../../../../RealFunctions/ExactLimitingCoefficientOfTheUnchangedNormalizedSixthSourceMoment.lean/declarations/inverse-radius-power-tends-to-zero.md) | 21 | `result-track:3438e47ab385b7f0f26674969a05190560c449d278febf64e0c83b56312d51ed` |
-| 2 | `theorem` | [actual_source_normalization_limit](../../../../RealFunctions/ExactLimitingCoefficientOfTheUnchangedNormalizedSixthSourceMoment.lean/declarations/actual-source-normalization-limit.md) | 28 | `result-track:46e441a20d66ec7e092d51550170500567d175f2920604753da9409885ddf790` |
-| 3 | `theorem` | [actual_sixth_endpoint_correction_limit](../../../../RealFunctions/ExactLimitingCoefficientOfTheUnchangedNormalizedSixthSourceMoment.lean/declarations/actual-sixth-endpoint-correction-limit.md) | 45 | `result-track:be6e272611055e05bcab3ecab1d6c7e5f2e32e2a0833068ca698543c8399a051` |
-| 4 | `theorem` | [actual_normalized_sixth_moment_limit](../../../../RealFunctions/ExactLimitingCoefficientOfTheUnchangedNormalizedSixthSourceMoment.lean/declarations/actual-normalized-sixth-moment-limit.md) | 79 | `result-track:004a074a9b7a27176f1d12147858a5adbfd73556755b6ab64345fdc8b1956f83` |
+| 1 | `theorem` | [inverse_radius_power_tends_to_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExactLimitingCoefficientOfTheUnchangedNormalizedSixthSourceMoment.lean/declarations/inverse-radius-power-tends-to-zero.md) | 21 | `result-track:3438e47ab385b7f0f26674969a05190560c449d278febf64e0c83b56312d51ed` |
+| 2 | `theorem` | [actual_source_normalization_limit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExactLimitingCoefficientOfTheUnchangedNormalizedSixthSourceMoment.lean/declarations/actual-source-normalization-limit.md) | 28 | `result-track:46e441a20d66ec7e092d51550170500567d175f2920604753da9409885ddf790` |
+| 3 | `theorem` | [actual_sixth_endpoint_correction_limit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExactLimitingCoefficientOfTheUnchangedNormalizedSixthSourceMoment.lean/declarations/actual-sixth-endpoint-correction-limit.md) | 45 | `result-track:be6e272611055e05bcab3ecab1d6c7e5f2e32e2a0833068ca698543c8399a051` |
+| 4 | `theorem` | [actual_normalized_sixth_moment_limit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExactLimitingCoefficientOfTheUnchangedNormalizedSixthSourceMoment.lean/declarations/actual-normalized-sixth-moment-limit.md) | 79 | `result-track:004a074a9b7a27176f1d12147858a5adbfd73556755b6ab64345fdc8b1956f83` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

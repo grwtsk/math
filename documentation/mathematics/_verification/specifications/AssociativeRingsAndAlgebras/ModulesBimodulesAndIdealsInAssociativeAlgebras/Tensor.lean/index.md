@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/Tensor.lean/index.md) · [Full source](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/Tensor.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/Tensor.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/Tensor.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [tensor](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/Tensor.lean/declarations/tensor.md) | 31 | `declaration-track:429d0dabadcb435675318267e26346ccae16fb41b8087bd62e293701a7471629` |
-| 2 | `def` | [tensor](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/Tensor.lean/declarations/tensor-source-edition-3.md) | 49 | `declaration-track:fed86023b928d2a14ec88d5b941eb7e2f27b83f1f8dcc4d7e61c444fc4b13287` |
-| 3 | `def` | [isPresentationCoreTensor](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/Tensor.lean/declarations/ispresentationcoretensor.md) | 64 | `declaration-track:d2db60a72e9d0434a2a59b311f92e8f3e16d580dc3bf846800236f2563f18339` |
-| 4 | `lemma` | [IsPresentation.tensor](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/Tensor.lean/declarations/ispresentation-tensor.md) | 90 | `result-track:38910a5582affb4bb4d07f95bb3b81eae32654bcaf38282174874620be7db674` |
-| 5 | `def` | [tensor](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/Tensor.lean/declarations/tensor-source-edition-2.md) | 104 | `declaration-track:4a413abd2eab2aa9610b0c34a5530453d59a394c84e4dbff48ff7a80521f5725` |
+| 1 | `def` | [tensor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/Tensor.lean/declarations/tensor.md) | 31 | `declaration-track:429d0dabadcb435675318267e26346ccae16fb41b8087bd62e293701a7471629` |
+| 2 | `def` | [tensor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/Tensor.lean/declarations/tensor-source-edition-3.md) | 49 | `declaration-track:fed86023b928d2a14ec88d5b941eb7e2f27b83f1f8dcc4d7e61c444fc4b13287` |
+| 3 | `def` | [isPresentationCoreTensor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/Tensor.lean/declarations/ispresentationcoretensor.md) | 64 | `declaration-track:d2db60a72e9d0434a2a59b311f92e8f3e16d580dc3bf846800236f2563f18339` |
+| 4 | `lemma` | [IsPresentation.tensor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/Tensor.lean/declarations/ispresentation-tensor.md) | 90 | `result-track:38910a5582affb4bb4d07f95bb3b81eae32654bcaf38282174874620be7db674` |
+| 5 | `def` | [tensor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/Tensor.lean/declarations/tensor-source-edition-2.md) | 104 | `declaration-track:4a413abd2eab2aa9610b0c34a5530453d59a394c84e4dbff48ff7a80521f5725` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

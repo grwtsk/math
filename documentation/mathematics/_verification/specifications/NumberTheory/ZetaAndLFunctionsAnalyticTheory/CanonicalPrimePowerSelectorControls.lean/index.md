@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerSelectorControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerSelectorControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerSelectorControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerSelectorControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalPrimePowerSelector`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerSelector.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalPrimePowerSelector`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerSelector.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [first_event_is_prime_power](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerSelectorControls.lean/declarations/first-event-is-prime-power.md) | 14 | `result-track:758e8dfaec7ea833939350aadd345fed48f0bcf0d095086a6ff3c324c47f08db` |
-| 2 | `theorem` | [selector_never_repeats](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerSelectorControls.lean/declarations/selector-never-repeats.md) | 19 | `result-track:6bb3f0328b755734757edfc7f13cc30dd889cbaba987495461c332f868baea4a` |
-| 3 | `theorem` | [selector_has_no_skipped_value](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerSelectorControls.lean/declarations/selector-has-no-skipped-value.md) | 26 | `result-track:18213a1d830f050a2ad919dbe8e2fd615e16ae26a925b2e2a15d978ba5b219e6` |
+| 1 | `theorem` | [first_event_is_prime_power](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerSelectorControls.lean/declarations/first-event-is-prime-power.md) | 14 | `result-track:758e8dfaec7ea833939350aadd345fed48f0bcf0d095086a6ff3c324c47f08db` |
+| 2 | `theorem` | [selector_never_repeats](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerSelectorControls.lean/declarations/selector-never-repeats.md) | 19 | `result-track:6bb3f0328b755734757edfc7f13cc30dd889cbaba987495461c332f868baea4a` |
+| 3 | `theorem` | [selector_has_no_skipped_value](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerSelectorControls.lean/declarations/selector-has-no-skipped-value.md) | 26 | `result-track:18213a1d830f050a2ad919dbe8e2fd615e16ae26a925b2e2a15d978ba5b219e6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

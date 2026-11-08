@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/HorizontalPreservation.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/HorizontalPreservation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/HorizontalPreservation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/HorizontalPreservation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [heat_compatible_preserves_horizontal](../../../../../MathematicalLogicAndFoundations/GeneralLogic/HorizontalPreservation.lean/declarations/heat-compatible-preserves-horizontal.md) | 39 | `result-track:c78e5c36fd956a3051cdb707fb63a799df2af7b79c9dc8f77d8a566a3e8e8584` |
+| 1 | `theorem` | [heat_compatible_preserves_horizontal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/HorizontalPreservation.lean/declarations/heat-compatible-preserves-horizontal.md) | 39 | `result-track:c78e5c36fd956a3051cdb707fb63a799df2af7b79c9dc8f77d8a566a3e8e8584` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

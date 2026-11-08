@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/RingHomFinitePresentationPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/RingHomFinitePresentationPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomFinitePresentationPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomFinitePresentationPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [finitePresentation_stableUnderComposition](../../../../CommutativeAlgebra/RingHomFinitePresentationPublic.lean/declarations/finitepresentation-stableundercomposition.md) | 29 | `result-track:89d4a0ac76a63378273e502810a09d5e428e0a0913ee48da6a82b65666de3837` |
-| 2 | `theorem` | [finitePresentation_respectsIso](../../../../CommutativeAlgebra/RingHomFinitePresentationPublic.lean/declarations/finitepresentation-respectsiso.md) | 34 | `result-track:94eb0341578a656858898f37ec3e64eb6ccd2bb39a94bc745d19ef1ffbec5056` |
-| 3 | `theorem` | [finitePresentation_isStableUnderBaseChange](../../../../CommutativeAlgebra/RingHomFinitePresentationPublic.lean/declarations/finitepresentation-isstableunderbasechange.md) | 39 | `result-track:64e2d2d705a32210d2367d8d9f4e287d1f9ee647f1c5bb3c670e210da895a0c8` |
-| 4 | `theorem` | [finitePresentation_localizationPreserves](../../../../CommutativeAlgebra/RingHomFinitePresentationPublic.lean/declarations/finitepresentation-localizationpreserves.md) | 48 | `result-track:b7a3e3bf59bd761dbc19034d3a66cfc76941ae99b0378327a518ab0df2cae525` |
-| 5 | `theorem` | [finitePresentation_holdsForLocalizationAway](../../../../CommutativeAlgebra/RingHomFinitePresentationPublic.lean/declarations/finitepresentation-holdsforlocalizationaway.md) | 52 | `result-track:c16815fd7b678adbb9bd102f2cf4ce5dda3035ad415205569e71f0559b9e89e5` |
-| 6 | `theorem` | [finitePresentation_ofLocalizationSpanTarget](../../../../CommutativeAlgebra/RingHomFinitePresentationPublic.lean/declarations/finitepresentation-oflocalizationspantarget.md) | 59 | `result-track:d370ff7f05808ab6b3c224d4ae97f522407820ce9fb7e1dfc03ae8d37698a617` |
-| 7 | `theorem` | [finitePresentation_isLocal](../../../../CommutativeAlgebra/RingHomFinitePresentationPublic.lean/declarations/finitepresentation-islocal.md) | 69 | `result-track:23082680702064cc77d528b3e8da4957ba725c40c24c27acc8d9a411ce618683` |
+| 1 | `theorem` | [finitePresentation_stableUnderComposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomFinitePresentationPublic.lean/declarations/finitepresentation-stableundercomposition.md) | 29 | `result-track:89d4a0ac76a63378273e502810a09d5e428e0a0913ee48da6a82b65666de3837` |
+| 2 | `theorem` | [finitePresentation_respectsIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomFinitePresentationPublic.lean/declarations/finitepresentation-respectsiso.md) | 34 | `result-track:94eb0341578a656858898f37ec3e64eb6ccd2bb39a94bc745d19ef1ffbec5056` |
+| 3 | `theorem` | [finitePresentation_isStableUnderBaseChange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomFinitePresentationPublic.lean/declarations/finitepresentation-isstableunderbasechange.md) | 39 | `result-track:64e2d2d705a32210d2367d8d9f4e287d1f9ee647f1c5bb3c670e210da895a0c8` |
+| 4 | `theorem` | [finitePresentation_localizationPreserves](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomFinitePresentationPublic.lean/declarations/finitepresentation-localizationpreserves.md) | 48 | `result-track:b7a3e3bf59bd761dbc19034d3a66cfc76941ae99b0378327a518ab0df2cae525` |
+| 5 | `theorem` | [finitePresentation_holdsForLocalizationAway](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomFinitePresentationPublic.lean/declarations/finitepresentation-holdsforlocalizationaway.md) | 52 | `result-track:c16815fd7b678adbb9bd102f2cf4ce5dda3035ad415205569e71f0559b9e89e5` |
+| 6 | `theorem` | [finitePresentation_ofLocalizationSpanTarget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomFinitePresentationPublic.lean/declarations/finitepresentation-oflocalizationspantarget.md) | 59 | `result-track:d370ff7f05808ab6b3c224d4ae97f522407820ce9fb7e1dfc03ae8d37698a617` |
+| 7 | `theorem` | [finitePresentation_isLocal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomFinitePresentationPublic.lean/declarations/finitepresentation-islocal.md) | 69 | `result-track:23082680702064cc77d528b3e8da4957ba725c40c24c27acc8d9a411ce618683` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

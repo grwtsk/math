@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/IrreducibleNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/IrreducibleNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IrreducibleNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IrreducibleNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Modularity](../../../../../ComputerScience/AlgorithmsInComputerScience/IrreducibleNamespaced.lean/declarations/modularity.md) | 15 | `declaration-track:f7de41ef11d1dc32a5f39cd9637e901f58ca4c1cd82b4b71f46145afabc2d5bd` |
-| 2 | `structure` | [ReducibleBy](../../../../../ComputerScience/AlgorithmsInComputerScience/IrreducibleNamespaced.lean/declarations/reducibleby.md) | 21 | `declaration-track:48e8012031cdaa9f0cdd4b11d1b2e6750322cdd6de56901fff45a58377fdd8e6` |
-| 3 | `def` | [Irreducible](../../../../../ComputerScience/AlgorithmsInComputerScience/IrreducibleNamespaced.lean/declarations/irreducible.md) | 29 | `declaration-track:316265e7d0d187afa3f09584a87b06ccc15a9196cde4350f7814354594afbe9f` |
-| 4 | `structure` | [IrreducibleFactor](../../../../../ComputerScience/AlgorithmsInComputerScience/IrreducibleNamespaced.lean/declarations/irreduciblefactor.md) | 34 | `declaration-track:4feef1f5839701323192679876b4194b424e80f061f3ed37faf68529a273472b` |
-| 5 | `structure` | [IrreducibleFactorRegistry](../../../../../ComputerScience/AlgorithmsInComputerScience/IrreducibleNamespaced.lean/declarations/irreduciblefactorregistry.md) | 40 | `declaration-track:b9c63c2bb4ecc403cc20effc2f8dbc8286803ece5d9c3eb8adae4269f4e9dc27` |
-| 6 | `theorem` | [irreducible_modularity_has_prime_label](../../../../../ComputerScience/AlgorithmsInComputerScience/IrreducibleNamespaced.lean/declarations/irreducible-modularity-has-prime-label.md) | 52 | `result-track:fade9d133655d53d1b399adfb52f3deea46f58007b9f2bb8af876d6b9afee0e2` |
-| 7 | `theorem` | [primeLabels_distinguish_irreducibles](../../../../../ComputerScience/AlgorithmsInComputerScience/IrreducibleNamespaced.lean/declarations/primelabels-distinguish-irreducibles.md) | 57 | `result-track:29201087e6190a295a29635af0356ee53577928612938d97fe02b2c82d6dd44a` |
-| 8 | `theorem` | [primeLabeling_injective_on_irreducibles](../../../../../ComputerScience/AlgorithmsInComputerScience/IrreducibleNamespaced.lean/declarations/primelabeling-injective-on-irreducibles.md) | 66 | `result-track:8f3323997d3f873647919231c4182ac39722bd19daed687a347139158ffc0abb` |
+| 1 | `structure` | [Modularity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IrreducibleNamespaced.lean/declarations/modularity.md) | 15 | `declaration-track:f7de41ef11d1dc32a5f39cd9637e901f58ca4c1cd82b4b71f46145afabc2d5bd` |
+| 2 | `structure` | [ReducibleBy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IrreducibleNamespaced.lean/declarations/reducibleby.md) | 21 | `declaration-track:48e8012031cdaa9f0cdd4b11d1b2e6750322cdd6de56901fff45a58377fdd8e6` |
+| 3 | `def` | [Irreducible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IrreducibleNamespaced.lean/declarations/irreducible.md) | 29 | `declaration-track:316265e7d0d187afa3f09584a87b06ccc15a9196cde4350f7814354594afbe9f` |
+| 4 | `structure` | [IrreducibleFactor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IrreducibleNamespaced.lean/declarations/irreduciblefactor.md) | 34 | `declaration-track:4feef1f5839701323192679876b4194b424e80f061f3ed37faf68529a273472b` |
+| 5 | `structure` | [IrreducibleFactorRegistry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IrreducibleNamespaced.lean/declarations/irreduciblefactorregistry.md) | 40 | `declaration-track:b9c63c2bb4ecc403cc20effc2f8dbc8286803ece5d9c3eb8adae4269f4e9dc27` |
+| 6 | `theorem` | [irreducible_modularity_has_prime_label](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IrreducibleNamespaced.lean/declarations/irreducible-modularity-has-prime-label.md) | 52 | `result-track:fade9d133655d53d1b399adfb52f3deea46f58007b9f2bb8af876d6b9afee0e2` |
+| 7 | `theorem` | [primeLabels_distinguish_irreducibles](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IrreducibleNamespaced.lean/declarations/primelabels-distinguish-irreducibles.md) | 57 | `result-track:29201087e6190a295a29635af0356ee53577928612938d97fe02b2c82d6dd44a` |
+| 8 | `theorem` | [primeLabeling_injective_on_irreducibles](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/IrreducibleNamespaced.lean/declarations/primelabeling-injective-on-irreducibles.md) | 66 | `result-track:8f3323997d3f873647919231c4182ac39722bd19daed687a347139158ffc0abb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

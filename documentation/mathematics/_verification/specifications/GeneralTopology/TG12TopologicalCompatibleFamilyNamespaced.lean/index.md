@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/TG12TopologicalCompatibleFamilyNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/TG12TopologicalCompatibleFamilyNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TG12TopologicalCompatibleFamilyNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TG12TopologicalCompatibleFamilyNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [tg12_topologicalCompatibleFamily](../../../../GeneralTopology/TG12TopologicalCompatibleFamilyNamespaced.lean/declarations/tg12-topologicalcompatiblefamily.md) | 18 | `result-track:77c340515cb5c408d1d56f0b7f9b3167717040f49a44ae9b5a1be4d42ee12732` |
+| 1 | `theorem` | [tg12_topologicalCompatibleFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TG12TopologicalCompatibleFamilyNamespaced.lean/declarations/tg12-topologicalcompatiblefamily.md) | 18 | `result-track:77c340515cb5c408d1d56f0b7f9b3167717040f49a44ae9b5a1be4d42ee12732` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

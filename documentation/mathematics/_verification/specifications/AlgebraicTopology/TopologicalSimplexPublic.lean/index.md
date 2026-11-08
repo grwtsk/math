@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/TopologicalSimplexPublic.lean/index.md) · [Full source](../../../../AlgebraicTopology/TopologicalSimplexPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/TopologicalSimplexPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/TopologicalSimplexPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [toTop₀](../../../../AlgebraicTopology/TopologicalSimplexPublic.lean/declarations/totop.md) | 33 | `declaration-track:46b6ab7dfebddd18e915391af89161a56e366817eca3d14fefbf0dd55ae9915f` |
-| 2 | `def` | [toTop](../../../../AlgebraicTopology/TopologicalSimplexPublic.lean/declarations/totop-source-edition-2.md) | 44 | `declaration-track:626e867b44a4755de6050edfd58ae14b765169f4ae86cd4ce532aebccf108309` |
-| 3 | `instance` | [(anonymous)](../../../../AlgebraicTopology/TopologicalSimplexPublic.lean/declarations/instance-source-edition-6.md) | 48 | `declaration-track:dd984bcc350d32fc63d5702fc617c90eb0f5fdf379c3c4ecceddb427c33ae010` |
-| 4 | `instance` | [(anonymous)](../../../../AlgebraicTopology/TopologicalSimplexPublic.lean/declarations/instance-source-edition-2.md) | 50 | `declaration-track:636c816208d3145859cc2bf6352ebf0321914abc1aecd74ca87bdbe47dbf5d8a` |
-| 5 | `instance` | [(anonymous)](../../../../AlgebraicTopology/TopologicalSimplexPublic.lean/declarations/instance-source-edition-3.md) | 52 | `declaration-track:7fec1416ed49042f3532c75734a9a585c94aef4808a5b494384786b9359da803` |
-| 6 | `instance` | [(anonymous)](../../../../AlgebraicTopology/TopologicalSimplexPublic.lean/declarations/instance-source-edition-5.md) | 54 | `declaration-track:ab5b7257942f9a2f2cf8a687ced25024cfc3b3db7fa8030d77b661a01ad0bd2d` |
-| 7 | `instance` | [(anonymous)](../../../../AlgebraicTopology/TopologicalSimplexPublic.lean/declarations/instance-source-edition-4.md) | 57 | `declaration-track:8c5be29ca9905ff920b7b4bfe75678fb588c46fdd160b358babd6306bd3d2701` |
-| 8 | `instance` | [(anonymous)](../../../../AlgebraicTopology/TopologicalSimplexPublic.lean/declarations/instance.md) | 59 | `declaration-track:2c5d54d3f9cfea3b05220c05d7c3fca6dce9a047122bc9240ba04aa909046bc9` |
+| 1 | `def` | [toTop₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/TopologicalSimplexPublic.lean/declarations/totop.md) | 33 | `declaration-track:46b6ab7dfebddd18e915391af89161a56e366817eca3d14fefbf0dd55ae9915f` |
+| 2 | `def` | [toTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/TopologicalSimplexPublic.lean/declarations/totop-source-edition-2.md) | 44 | `declaration-track:626e867b44a4755de6050edfd58ae14b765169f4ae86cd4ce532aebccf108309` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/TopologicalSimplexPublic.lean/declarations/instance-source-edition-6.md) | 48 | `declaration-track:dd984bcc350d32fc63d5702fc617c90eb0f5fdf379c3c4ecceddb427c33ae010` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/TopologicalSimplexPublic.lean/declarations/instance-source-edition-2.md) | 50 | `declaration-track:636c816208d3145859cc2bf6352ebf0321914abc1aecd74ca87bdbe47dbf5d8a` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/TopologicalSimplexPublic.lean/declarations/instance-source-edition-3.md) | 52 | `declaration-track:7fec1416ed49042f3532c75734a9a585c94aef4808a5b494384786b9359da803` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/TopologicalSimplexPublic.lean/declarations/instance-source-edition-5.md) | 54 | `declaration-track:ab5b7257942f9a2f2cf8a687ced25024cfc3b3db7fa8030d77b661a01ad0bd2d` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/TopologicalSimplexPublic.lean/declarations/instance-source-edition-4.md) | 57 | `declaration-track:8c5be29ca9905ff920b7b4bfe75678fb588c46fdd160b358babd6306bd3d2701` |
+| 8 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/TopologicalSimplexPublic.lean/declarations/instance.md) | 59 | `declaration-track:2c5d54d3f9cfea3b05220c05d7c3fca6dce9a047122bc9240ba04aa909046bc9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

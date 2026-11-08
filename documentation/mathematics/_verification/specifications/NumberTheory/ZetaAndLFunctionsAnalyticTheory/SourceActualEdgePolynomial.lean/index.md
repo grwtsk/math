@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualEdgePolynomial.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualEdgePolynomial.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualEdgePolynomial.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualEdgePolynomial.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualEdgePolynomial](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualEdgePolynomial.lean/declarations/actualedgepolynomial.md) | 22 | `declaration-track:8fd4f29b58cbeb5c4f041f8b90e0751e45ed559de523c232a61278f8f89f241d` |
-| 2 | `theorem` | [actual_dilationTest_edge_eq](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualEdgePolynomial.lean/declarations/actual-dilationtest-edge-eq.md) | 27 | `result-track:fd62d2b7f1099a40f5a890914b4271af54c54d2ff9561afe827fe172c3a00559` |
-| 3 | `theorem` | [actual_dilationTest_edge_scaled_eq](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualEdgePolynomial.lean/declarations/actual-dilationtest-edge-scaled-eq.md) | 39 | `result-track:1fdc4883462212c9cead85e6d71de20921ef411ab63b7f7f08b706ae202122a2` |
-| 4 | `theorem` | [actualEdgePolynomial_abs_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualEdgePolynomial.lean/declarations/actualedgepolynomial-abs-le.md) | 48 | `result-track:25a637bcd118456f5d756a27ef099febf2eb5016b30fbb5bfaefb84e227fa995` |
-| 5 | `theorem` | [actual_dilationTest_edge_abs_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualEdgePolynomial.lean/declarations/actual-dilationtest-edge-abs-le.md) | 79 | `result-track:0bfa1076cbd94de8eee88da81cb7543d0e21107a3647f98f40200ea0247b4b82` |
+| 1 | `def` | [actualEdgePolynomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualEdgePolynomial.lean/declarations/actualedgepolynomial.md) | 22 | `declaration-track:8fd4f29b58cbeb5c4f041f8b90e0751e45ed559de523c232a61278f8f89f241d` |
+| 2 | `theorem` | [actual_dilationTest_edge_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualEdgePolynomial.lean/declarations/actual-dilationtest-edge-eq.md) | 27 | `result-track:fd62d2b7f1099a40f5a890914b4271af54c54d2ff9561afe827fe172c3a00559` |
+| 3 | `theorem` | [actual_dilationTest_edge_scaled_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualEdgePolynomial.lean/declarations/actual-dilationtest-edge-scaled-eq.md) | 39 | `result-track:1fdc4883462212c9cead85e6d71de20921ef411ab63b7f7f08b706ae202122a2` |
+| 4 | `theorem` | [actualEdgePolynomial_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualEdgePolynomial.lean/declarations/actualedgepolynomial-abs-le.md) | 48 | `result-track:25a637bcd118456f5d756a27ef099febf2eb5016b30fbb5bfaefb84e227fa995` |
+| 5 | `theorem` | [actual_dilationTest_edge_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualEdgePolynomial.lean/declarations/actual-dilationtest-edge-abs-le.md) | 79 | `result-track:0bfa1076cbd94de8eee88da81cb7543d0e21107a3647f98f40200ea0247b4b82` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/PiNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/PiNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PiNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PiNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Polynomial.hasSMulPi](../../../../CommutativeAlgebra/PiNamespaced.lean/declarations/polynomial-hassmulpi-source-edition-2.md) | 33 | `declaration-track:c5eb5e009e730ed13d9d05baacd0796536bc4d54c9837c5486e1adccccc2b061` |
-| 2 | `def` | [Polynomial.hasSMulPi'](../../../../CommutativeAlgebra/PiNamespaced.lean/declarations/polynomial-hassmulpi.md) | 39 | `declaration-track:3bbc7d483172ea3d0cdd16e30f6cc9c292ace782296004762ed0a6c74750fc06` |
-| 3 | `theorem` | [polynomial_smul_apply](../../../../CommutativeAlgebra/PiNamespaced.lean/declarations/polynomial-smul-apply-source-edition-2.md) | 46 | `result-track:f9b3d5d9497d7c9422b8271078cd2cdb66cb06f42c9a72abc66ebee1f91b5af2` |
-| 4 | `theorem` | [polynomial_smul_apply'](../../../../CommutativeAlgebra/PiNamespaced.lean/declarations/polynomial-smul-apply.md) | 51 | `result-track:dec7b4dcb70454de1c87d49c3d900deb8aa3c739e15ff781417be6d4472bea04` |
-| 5 | `def` | [Polynomial.algebraPi](../../../../CommutativeAlgebra/PiNamespaced.lean/declarations/polynomial-algebrapi.md) | 60 | `declaration-track:e82a022a7ddd9015ac7bd57f2a2b55241592c4a64b327c49eba0f946fb9c0cfc` |
-| 6 | `theorem` | [Polynomial.algebraMap_pi_eq_aeval](../../../../CommutativeAlgebra/PiNamespaced.lean/declarations/polynomial-algebramap-pi-eq-aeval.md) | 87 | `result-track:a625991a77be83630e3badb9b255c1d9df541115b13fc3e10c8d0ee92217563e` |
-| 7 | `theorem` | [Polynomial.algebraMap_pi_self_eq_eval](../../../../CommutativeAlgebra/PiNamespaced.lean/declarations/polynomial-algebramap-pi-self-eq-eval.md) | 92 | `result-track:c814a1d7e65e8047b2ba216d837c06cfea54f4e8f5f6fc3ee2b97d7bd135d6de` |
+| 1 | `def` | [Polynomial.hasSMulPi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PiNamespaced.lean/declarations/polynomial-hassmulpi-source-edition-2.md) | 33 | `declaration-track:c5eb5e009e730ed13d9d05baacd0796536bc4d54c9837c5486e1adccccc2b061` |
+| 2 | `def` | [Polynomial.hasSMulPi'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PiNamespaced.lean/declarations/polynomial-hassmulpi.md) | 39 | `declaration-track:3bbc7d483172ea3d0cdd16e30f6cc9c292ace782296004762ed0a6c74750fc06` |
+| 3 | `theorem` | [polynomial_smul_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PiNamespaced.lean/declarations/polynomial-smul-apply-source-edition-2.md) | 46 | `result-track:f9b3d5d9497d7c9422b8271078cd2cdb66cb06f42c9a72abc66ebee1f91b5af2` |
+| 4 | `theorem` | [polynomial_smul_apply'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PiNamespaced.lean/declarations/polynomial-smul-apply.md) | 51 | `result-track:dec7b4dcb70454de1c87d49c3d900deb8aa3c739e15ff781417be6d4472bea04` |
+| 5 | `def` | [Polynomial.algebraPi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PiNamespaced.lean/declarations/polynomial-algebrapi.md) | 60 | `declaration-track:e82a022a7ddd9015ac7bd57f2a2b55241592c4a64b327c49eba0f946fb9c0cfc` |
+| 6 | `theorem` | [Polynomial.algebraMap_pi_eq_aeval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PiNamespaced.lean/declarations/polynomial-algebramap-pi-eq-aeval.md) | 87 | `result-track:a625991a77be83630e3badb9b255c1d9df541115b13fc3e10c8d0ee92217563e` |
+| 7 | `theorem` | [Polynomial.algebraMap_pi_self_eq_eval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PiNamespaced.lean/declarations/polynomial-algebramap-pi-self-eq-eval.md) | 92 | `result-track:c814a1d7e65e8047b2ba216d837c06cfea54f4e8f5f6fc3ee2b97d7bd135d6de` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

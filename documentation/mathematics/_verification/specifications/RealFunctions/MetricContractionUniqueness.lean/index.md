@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/MetricContractionUniqueness.lean/index.md) · [Full source](../../../../RealFunctions/MetricContractionUniqueness.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/MetricContractionUniqueness.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/MetricContractionUniqueness.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [banach_unique](../../../../RealFunctions/MetricContractionUniqueness.lean/declarations/banach-unique.md) | 47 | `result-track:234128c4b59fe7b595d95dd7217320575911b0d547e74a014722dc973aad546a` |
+| 1 | `theorem` | [banach_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/MetricContractionUniqueness.lean/declarations/banach-unique.md) | 47 | `result-track:234128c4b59fe7b595d95dd7217320575911b0d547e74a014722dc973aad546a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

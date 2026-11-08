@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/OrderBasic.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/OrderBasic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/OrderBasic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/OrderBasic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [NormedOrderedAddGroup](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/OrderBasic.lean/declarations/normedorderedaddgroup.md) | 28 | `declaration-track:ff001cfa76115d91465d96d94a9beace42b987de2592c78d16acc7e1fc66d32c` |
-| 2 | `structure` | [NormedOrderedGroup](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/OrderBasic.lean/declarations/normedorderedgroup.md) | 41 | `declaration-track:b506d39355f8c10eb3858758cfc909affef427ea43c0edfe740439e0c4c84745` |
-| 3 | `structure` | [NormedLinearOrderedAddGroup](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/OrderBasic.lean/declarations/normedlinearorderedaddgroup.md) | 52 | `declaration-track:320145b57305781492d596ef21a3e32985d5ee9c7f758a0a80204b02ff6a0a81` |
-| 4 | `structure` | [NormedLinearOrderedGroup](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/OrderBasic.lean/declarations/normedlinearorderedgroup.md) | 65 | `declaration-track:bd903fd05725e41cc0b9af2801ab8b3ec0620d549d138bcf85d717a33d514a69` |
-| 5 | `structure` | [NormedLinearOrderedField](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/OrderBasic.lean/declarations/normedlinearorderedfield.md) | 76 | `declaration-track:0acd59c539edf3566e7858c820fa788769bf914223f7bc7d6c04995c7bd94894` |
+| 1 | `structure` | [NormedOrderedAddGroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/OrderBasic.lean/declarations/normedorderedaddgroup.md) | 28 | `declaration-track:ff001cfa76115d91465d96d94a9beace42b987de2592c78d16acc7e1fc66d32c` |
+| 2 | `structure` | [NormedOrderedGroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/OrderBasic.lean/declarations/normedorderedgroup.md) | 41 | `declaration-track:b506d39355f8c10eb3858758cfc909affef427ea43c0edfe740439e0c4c84745` |
+| 3 | `structure` | [NormedLinearOrderedAddGroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/OrderBasic.lean/declarations/normedlinearorderedaddgroup.md) | 52 | `declaration-track:320145b57305781492d596ef21a3e32985d5ee9c7f758a0a80204b02ff6a0a81` |
+| 4 | `structure` | [NormedLinearOrderedGroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/OrderBasic.lean/declarations/normedlinearorderedgroup.md) | 65 | `declaration-track:bd903fd05725e41cc0b9af2801ab8b3ec0620d549d138bcf85d717a33d514a69` |
+| 5 | `structure` | [NormedLinearOrderedField](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/OrderBasic.lean/declarations/normedlinearorderedfield.md) | 76 | `declaration-track:0acd59c539edf3566e7858c820fa788769bf914223f7bc7d6c04995c7bd94894` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

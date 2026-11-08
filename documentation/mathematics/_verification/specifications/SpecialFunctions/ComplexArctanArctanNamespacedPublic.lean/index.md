@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../SpecialFunctions/ComplexArctanArctanNamespacedPublic.lean/index.md) · [Full source](../../../../SpecialFunctions/ComplexArctanArctanNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ComplexArctanArctanNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ComplexArctanArctanNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [arctan](../../../../SpecialFunctions/ComplexArctanArctanNamespacedPublic.lean/declarations/arctan.md) | 37 | `declaration-track:74f068db4faa13e60b522d3651b1257f9be85485ab95396102edf99fec011746` |
-| 2 | `theorem` | [tan_arctan](../../../../SpecialFunctions/ComplexArctanArctanNamespacedPublic.lean/declarations/tan-arctan.md) | 39 | `result-track:9bc6639b4553c2389dc843890e3cbd0d98b3c1b6cfa0955c118f3105782ecb0c` |
-| 3 | `lemma` | [cos_ne_zero_of_arctan_bounds](../../../../SpecialFunctions/ComplexArctanArctanNamespacedPublic.lean/declarations/cos-ne-zero-of-arctan-bounds.md) | 63 | `result-track:2ebbf870631c5734c8fff696073c214b740caf4014abd449e9ee8496cdc443c1` |
-| 4 | `theorem` | [arctan_tan](../../../../SpecialFunctions/ComplexArctanArctanNamespacedPublic.lean/declarations/arctan-tan.md) | 77 | `result-track:4602832812934c548fd545ede22f5449cad9efa4d3361cd3ff9cf9edd41feebd` |
-| 5 | `theorem` | [ofReal_arctan](../../../../SpecialFunctions/ComplexArctanArctanNamespacedPublic.lean/declarations/ofreal-arctan.md) | 93 | `result-track:2b82c9aad8ff9b1b9e11ca42d0d12a1a1c891415469ed740c772ac1ecfd2f5e1` |
-| 6 | `lemma` | [arg_one_add_mem_Ioo](../../../../SpecialFunctions/ComplexArctanArctanNamespacedPublic.lean/declarations/arg-one-add-mem-ioo.md) | 102 | `result-track:9d2d931b268d84d528f247df55f5a70d577ba8c4f62bb9d70aef9427be5f7703` |
-| 7 | `lemma` | [hasSum_arctan_aux](../../../../SpecialFunctions/ComplexArctanArctanNamespacedPublic.lean/declarations/hassum-arctan-aux.md) | 108 | `result-track:57d56ad58d3384ecc7114e5aa9c795cbf8e3598cdff8302a4038be2924f37294` |
-| 8 | `theorem` | [hasSum_arctan](../../../../SpecialFunctions/ComplexArctanArctanNamespacedPublic.lean/declarations/hassum-arctan.md) | 129 | `result-track:c13808ec44932004ee301c29efe52bda7387484d27e5da48449cabb6113f7690` |
-| 9 | `theorem` | [Real.hasSum_arctan](../../../../SpecialFunctions/ComplexArctanArctanNamespacedPublic.lean/declarations/real-hassum-arctan.md) | 151 | `result-track:3764f9d2b733f72d0998cc9f2f955c520a87c872368db818f81f99a8af5bcecc` |
+| 1 | `def` | [arctan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ComplexArctanArctanNamespacedPublic.lean/declarations/arctan.md) | 37 | `declaration-track:74f068db4faa13e60b522d3651b1257f9be85485ab95396102edf99fec011746` |
+| 2 | `theorem` | [tan_arctan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ComplexArctanArctanNamespacedPublic.lean/declarations/tan-arctan.md) | 39 | `result-track:9bc6639b4553c2389dc843890e3cbd0d98b3c1b6cfa0955c118f3105782ecb0c` |
+| 3 | `lemma` | [cos_ne_zero_of_arctan_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ComplexArctanArctanNamespacedPublic.lean/declarations/cos-ne-zero-of-arctan-bounds.md) | 63 | `result-track:2ebbf870631c5734c8fff696073c214b740caf4014abd449e9ee8496cdc443c1` |
+| 4 | `theorem` | [arctan_tan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ComplexArctanArctanNamespacedPublic.lean/declarations/arctan-tan.md) | 77 | `result-track:4602832812934c548fd545ede22f5449cad9efa4d3361cd3ff9cf9edd41feebd` |
+| 5 | `theorem` | [ofReal_arctan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ComplexArctanArctanNamespacedPublic.lean/declarations/ofreal-arctan.md) | 93 | `result-track:2b82c9aad8ff9b1b9e11ca42d0d12a1a1c891415469ed740c772ac1ecfd2f5e1` |
+| 6 | `lemma` | [arg_one_add_mem_Ioo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ComplexArctanArctanNamespacedPublic.lean/declarations/arg-one-add-mem-ioo.md) | 102 | `result-track:9d2d931b268d84d528f247df55f5a70d577ba8c4f62bb9d70aef9427be5f7703` |
+| 7 | `lemma` | [hasSum_arctan_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ComplexArctanArctanNamespacedPublic.lean/declarations/hassum-arctan-aux.md) | 108 | `result-track:57d56ad58d3384ecc7114e5aa9c795cbf8e3598cdff8302a4038be2924f37294` |
+| 8 | `theorem` | [hasSum_arctan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ComplexArctanArctanNamespacedPublic.lean/declarations/hassum-arctan.md) | 129 | `result-track:c13808ec44932004ee301c29efe52bda7387484d27e5da48449cabb6113f7690` |
+| 9 | `theorem` | [Real.hasSum_arctan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ComplexArctanArctanNamespacedPublic.lean/declarations/real-hassum-arctan.md) | 151 | `result-track:3764f9d2b733f72d0998cc9f2f955c520a87c872368db818f81f99a8af5bcecc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

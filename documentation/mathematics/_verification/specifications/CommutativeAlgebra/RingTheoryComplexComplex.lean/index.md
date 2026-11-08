@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/RingTheoryComplexComplex.lean/index.md) · [Full source](../../../../CommutativeAlgebra/RingTheoryComplexComplex.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryComplexComplex.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryComplexComplex.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Algebra.leftMulMatrix_complex](../../../../CommutativeAlgebra/RingTheoryComplexComplex.lean/declarations/algebra-leftmulmatrix-complex.md) | 15 | `result-track:852ada585b438a8596c50bab969f684b87f20ae8c549ee74cdbbc4388f5c4f17` |
-| 2 | `theorem` | [Algebra.trace_complex_apply](../../../../CommutativeAlgebra/RingTheoryComplexComplex.lean/declarations/algebra-trace-complex-apply.md) | 28 | `result-track:705eb1969ffa72ebe67d28e1248cc8b03c04f79807e9a70f484dae04c39fc5f3` |
-| 3 | `theorem` | [Algebra.norm_complex_apply](../../../../CommutativeAlgebra/RingTheoryComplexComplex.lean/declarations/algebra-norm-complex-apply.md) | 33 | `result-track:4562c160a46435a43fa2d0ff00faa2c5cb1ab875cf094b3e0d7056bf219e593c` |
-| 4 | `theorem` | [Algebra.norm_complex_eq](../../../../CommutativeAlgebra/RingTheoryComplexComplex.lean/declarations/algebra-norm-complex-eq.md) | 38 | `result-track:b2042698cfdbebcbdb8db84ebd831bd751f70c1e22662b3056c96daa2976f4db` |
+| 1 | `theorem` | [Algebra.leftMulMatrix_complex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryComplexComplex.lean/declarations/algebra-leftmulmatrix-complex.md) | 15 | `result-track:852ada585b438a8596c50bab969f684b87f20ae8c549ee74cdbbc4388f5c4f17` |
+| 2 | `theorem` | [Algebra.trace_complex_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryComplexComplex.lean/declarations/algebra-trace-complex-apply.md) | 28 | `result-track:705eb1969ffa72ebe67d28e1248cc8b03c04f79807e9a70f484dae04c39fc5f3` |
+| 3 | `theorem` | [Algebra.norm_complex_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryComplexComplex.lean/declarations/algebra-norm-complex-apply.md) | 33 | `result-track:4562c160a46435a43fa2d0ff00faa2c5cb1ab875cf094b3e0d7056bf219e593c` |
+| 4 | `theorem` | [Algebra.norm_complex_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryComplexComplex.lean/declarations/algebra-norm-complex-eq.md) | 38 | `result-track:b2042698cfdbebcbdb8db84ebd831bd751f70c1e22662b3056c96daa2976f4db` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

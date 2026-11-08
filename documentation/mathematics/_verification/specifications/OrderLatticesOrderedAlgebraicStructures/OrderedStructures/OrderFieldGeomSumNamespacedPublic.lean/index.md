@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderFieldGeomSumNamespacedPublic.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderFieldGeomSumNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderFieldGeomSumNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderFieldGeomSumNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [geom₂_sum_of_gt](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderFieldGeomSumNamespacedPublic.lean/declarations/geom-sum-of-gt.md) | 36 | `result-track:39ec24b9668a586d15755984b3a8e99be8d5edb97cc668931a11b2a93aafbc6a` |
-| 2 | `lemma` | [geom₂_sum_of_lt](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderFieldGeomSumNamespacedPublic.lean/declarations/geom-sum-of-lt.md) | 40 | `result-track:75185055e9d51d017e21d881b971bf51fc92bd81b4e22f662979977e335e2714` |
-| 3 | `lemma` | [geom_sum_of_one_lt](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderFieldGeomSumNamespacedPublic.lean/declarations/geom-sum-of-one-lt.md) | 44 | `result-track:02482caccf043427b4516d2c9d606ef7df61b58ab214ad31fd9034768ce651af` |
-| 4 | `lemma` | [geom_sum_of_lt_one](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderFieldGeomSumNamespacedPublic.lean/declarations/geom-sum-of-lt-one.md) | 48 | `result-track:e97ee174ceca9e626d0dee192354e1ff2696a757873b314afd8019c0bbafda2c` |
-| 5 | `lemma` | [geom_sum_lt](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderFieldGeomSumNamespacedPublic.lean/declarations/geom-sum-lt.md) | 52 | `result-track:7bae70af7d1d48eae97589c0f430705b59ee49ba8cfc9342890396c2781e0b6b` |
-| 6 | `lemma` | [geom_sum_Ico_le_of_lt_one](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderFieldGeomSumNamespacedPublic.lean/declarations/geom-sum-ico-le-of-lt-one.md) | 63 | `result-track:d4f5122a8c8296146f4c26de9f2c919edbc9bbc4f4d72f9f8a7256677660acc4` |
+| 1 | `lemma` | [geom₂_sum_of_gt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderFieldGeomSumNamespacedPublic.lean/declarations/geom-sum-of-gt.md) | 36 | `result-track:39ec24b9668a586d15755984b3a8e99be8d5edb97cc668931a11b2a93aafbc6a` |
+| 2 | `lemma` | [geom₂_sum_of_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderFieldGeomSumNamespacedPublic.lean/declarations/geom-sum-of-lt.md) | 40 | `result-track:75185055e9d51d017e21d881b971bf51fc92bd81b4e22f662979977e335e2714` |
+| 3 | `lemma` | [geom_sum_of_one_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderFieldGeomSumNamespacedPublic.lean/declarations/geom-sum-of-one-lt.md) | 44 | `result-track:02482caccf043427b4516d2c9d606ef7df61b58ab214ad31fd9034768ce651af` |
+| 4 | `lemma` | [geom_sum_of_lt_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderFieldGeomSumNamespacedPublic.lean/declarations/geom-sum-of-lt-one.md) | 48 | `result-track:e97ee174ceca9e626d0dee192354e1ff2696a757873b314afd8019c0bbafda2c` |
+| 5 | `lemma` | [geom_sum_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderFieldGeomSumNamespacedPublic.lean/declarations/geom-sum-lt.md) | 52 | `result-track:7bae70af7d1d48eae97589c0f430705b59ee49ba8cfc9342890396c2781e0b6b` |
+| 6 | `lemma` | [geom_sum_Ico_le_of_lt_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderFieldGeomSumNamespacedPublic.lean/declarations/geom-sum-ico-le-of-lt-one.md) | 63 | `result-track:d4f5122a8c8296146f4c26de9f2c919edbc9bbc4f4d72f9f8a7256677660acc4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

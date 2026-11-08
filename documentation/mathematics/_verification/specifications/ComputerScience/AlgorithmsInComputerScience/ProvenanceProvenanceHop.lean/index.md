@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ProvenanceProvenanceHop.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ProvenanceProvenanceHop.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProvenanceProvenanceHop.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProvenanceProvenanceHop.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ProvenanceHop](../../../../../ComputerScience/AlgorithmsInComputerScience/ProvenanceProvenanceHop.lean/declarations/provenancehop.md) | 7 | `declaration-track:d1cae5de2082ac9b59cece9286aabdd6063c7938cef11dd7baef060c20c18b4e` |
-| 2 | `inductive` | [ProvenanceTerminal](../../../../../ComputerScience/AlgorithmsInComputerScience/ProvenanceProvenanceHop.lean/declarations/provenanceterminal.md) | 11 | `declaration-track:57ba30ecbade989ab25baf0bfd4f9c46f8c6fc76afebf5dcecc55f0556ad70e3` |
-| 3 | `structure` | [ProvenancePath](../../../../../ComputerScience/AlgorithmsInComputerScience/ProvenanceProvenanceHop.lean/declarations/provenancepath.md) | 17 | `declaration-track:3917e4e87bfc1609e7a7f4c818bf062994a7a7a079728afbdc6baa499794156e` |
-| 4 | `def` | [ProvenancePath.IsSourceLocal](../../../../../ComputerScience/AlgorithmsInComputerScience/ProvenanceProvenanceHop.lean/declarations/provenancepath-issourcelocal.md) | 23 | `declaration-track:dc487fb7ca805dacf1885a02866510c06e40b9095cf38cd196f2f4b924924719` |
-| 5 | `def` | [ProvenancePath.SupportsEvidence](../../../../../ComputerScience/AlgorithmsInComputerScience/ProvenanceProvenanceHop.lean/declarations/provenancepath-supportsevidence.md) | 37 | `declaration-track:327d9860ef729dacf52c5f98419790f084054eeec05f790f25bfc1facd2be27f` |
-| 6 | `theorem` | [ProvenancePath.source_local](../../../../../ComputerScience/AlgorithmsInComputerScience/ProvenanceProvenanceHop.lean/declarations/provenancepath-source-local.md) | 53 | `result-track:244863f7dfbb5ff1ae782d036d541e76cee7e03b681e4e879e498b09f0b766de` |
-| 7 | `theorem` | [ProvenancePath.supportsEvidence_source_local](../../../../../ComputerScience/AlgorithmsInComputerScience/ProvenanceProvenanceHop.lean/declarations/provenancepath-supportsevidence-source-local.md) | 64 | `result-track:60f133c428f59720f1caeac98e590b83157552638892dfaa01f25f84bcf65ea2` |
+| 1 | `structure` | [ProvenanceHop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProvenanceProvenanceHop.lean/declarations/provenancehop.md) | 7 | `declaration-track:d1cae5de2082ac9b59cece9286aabdd6063c7938cef11dd7baef060c20c18b4e` |
+| 2 | `inductive` | [ProvenanceTerminal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProvenanceProvenanceHop.lean/declarations/provenanceterminal.md) | 11 | `declaration-track:57ba30ecbade989ab25baf0bfd4f9c46f8c6fc76afebf5dcecc55f0556ad70e3` |
+| 3 | `structure` | [ProvenancePath](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProvenanceProvenanceHop.lean/declarations/provenancepath.md) | 17 | `declaration-track:3917e4e87bfc1609e7a7f4c818bf062994a7a7a079728afbdc6baa499794156e` |
+| 4 | `def` | [ProvenancePath.IsSourceLocal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProvenanceProvenanceHop.lean/declarations/provenancepath-issourcelocal.md) | 23 | `declaration-track:dc487fb7ca805dacf1885a02866510c06e40b9095cf38cd196f2f4b924924719` |
+| 5 | `def` | [ProvenancePath.SupportsEvidence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProvenanceProvenanceHop.lean/declarations/provenancepath-supportsevidence.md) | 37 | `declaration-track:327d9860ef729dacf52c5f98419790f084054eeec05f790f25bfc1facd2be27f` |
+| 6 | `theorem` | [ProvenancePath.source_local](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProvenanceProvenanceHop.lean/declarations/provenancepath-source-local.md) | 53 | `result-track:244863f7dfbb5ff1ae782d036d541e76cee7e03b681e4e879e498b09f0b766de` |
+| 7 | `theorem` | [ProvenancePath.supportsEvidence_source_local](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProvenanceProvenanceHop.lean/declarations/provenancepath-supportsevidence-source-local.md) | 64 | `result-track:60f133c428f59720f1caeac98e590b83157552638892dfaa01f25f84bcf65ea2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

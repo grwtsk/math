@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/HallNamespacedPublic.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/HallNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/HallNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/HallNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [hall_subgraph](../../../../../Combinatorics/GraphTheory/HallNamespacedPublic.lean/declarations/hall-subgraph.md) | 49 | `declaration-track:da30829b17a8225d5e09d826ce469191a4257c3fee98c1e9ec7afcd2227b33bf` |
-| 2 | `theorem` | [exists_isMatching_of_forall_ncard_le](../../../../../Combinatorics/GraphTheory/HallNamespacedPublic.lean/declarations/exists-ismatching-of-forall-ncard-le.md) | 68 | `result-track:49a5be924436aba009ee26e114fa5fce824f98dc49ae356c234cd97b44c93b88` |
-| 3 | `lemma` | [union_eq_univ_of_forall_ncard_le](../../../../../Combinatorics/GraphTheory/HallNamespacedPublic.lean/declarations/union-eq-univ-of-forall-ncard-le.md) | 89 | `result-track:0dc4b8d17391a925485031cd55d8d570bcb8f43af5bc22a5eb31335b3ce51926` |
-| 4 | `lemma` | [exists_bijective_of_forall_ncard_le](../../../../../Combinatorics/GraphTheory/HallNamespacedPublic.lean/declarations/exists-bijective-of-forall-ncard-le.md) | 100 | `result-track:3ebb33dff6b502d3e01cd70a05c9e4f1a1c11c30421186ae26aeb83aec84c673` |
-| 5 | `theorem` | [exists_isPerfectMatching_of_forall_ncard_le](../../../../../Combinatorics/GraphTheory/HallNamespacedPublic.lean/declarations/exists-isperfectmatching-of-forall-ncard-le.md) | 124 | `result-track:3b7ca1576289e100306dac27250531cfa6dca96f5cb80c7f0d6ceefe36d2ae1b` |
+| 1 | `abbrev` | [hall_subgraph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/HallNamespacedPublic.lean/declarations/hall-subgraph.md) | 49 | `declaration-track:da30829b17a8225d5e09d826ce469191a4257c3fee98c1e9ec7afcd2227b33bf` |
+| 2 | `theorem` | [exists_isMatching_of_forall_ncard_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/HallNamespacedPublic.lean/declarations/exists-ismatching-of-forall-ncard-le.md) | 68 | `result-track:49a5be924436aba009ee26e114fa5fce824f98dc49ae356c234cd97b44c93b88` |
+| 3 | `lemma` | [union_eq_univ_of_forall_ncard_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/HallNamespacedPublic.lean/declarations/union-eq-univ-of-forall-ncard-le.md) | 89 | `result-track:0dc4b8d17391a925485031cd55d8d570bcb8f43af5bc22a5eb31335b3ce51926` |
+| 4 | `lemma` | [exists_bijective_of_forall_ncard_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/HallNamespacedPublic.lean/declarations/exists-bijective-of-forall-ncard-le.md) | 100 | `result-track:3ebb33dff6b502d3e01cd70a05c9e4f1a1c11c30421186ae26aeb83aec84c673` |
+| 5 | `theorem` | [exists_isPerfectMatching_of_forall_ncard_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/HallNamespacedPublic.lean/declarations/exists-isperfectmatching-of-forall-ncard-le.md) | 124 | `result-track:3b7ca1576289e100306dac27250531cfa6dca96f5cb80c7f0d6ceefe36d2ae1b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

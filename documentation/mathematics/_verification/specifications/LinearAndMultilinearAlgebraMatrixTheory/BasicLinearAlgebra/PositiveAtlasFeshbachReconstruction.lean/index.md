@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveAtlasFeshbachReconstruction.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveAtlasFeshbachReconstruction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveAtlasFeshbachReconstruction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveAtlasFeshbachReconstruction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [two](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveAtlasFeshbachReconstruction.lean/declarations/two.md) | 15 | `declaration-track:ff8107808cb6dcb660629e8af2accbf051404753ba2a3908d744f6c3c9726eed` |
-| 2 | `instance` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveAtlasFeshbachReconstruction.lean/declarations/instance.md) | 17 | `declaration-track:6d76fecd29a8e1ab382775123db68ca7004f9c79df8a28a3a422189ef74cb204` |
-| 3 | `theorem` | [inverse_two](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveAtlasFeshbachReconstruction.lean/declarations/inverse-two.md) | 28 | `result-track:b678198c48a301a290b995a0af61c072c5c568bbd96c30bd2e8f419ea5877af9` |
-| 4 | `theorem` | [nonzero_cross_lift](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveAtlasFeshbachReconstruction.lean/declarations/nonzero-cross-lift.md) | 31 | `result-track:76fc1b839bcfc0b8207dd28e54013c8467ab4171de088b8f721d8abc1deb66af` |
-| 5 | `theorem` | [nonzero_cross_kernel](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveAtlasFeshbachReconstruction.lean/declarations/nonzero-cross-kernel.md) | 35 | `result-track:5e518f72d9c9726d0b943b0df0cf9f282c321a9be7b74fe29375db8544a926fd` |
-| 6 | `theorem` | [nonzero_cross_schur](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveAtlasFeshbachReconstruction.lean/declarations/nonzero-cross-schur.md) | 40 | `result-track:16b81b210f46be78e25160b79755445af2eab6a914d929a221e0e1a2f76d3d1b` |
-| 7 | `theorem` | [nonzero_cross_projection](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveAtlasFeshbachReconstruction.lean/declarations/nonzero-cross-projection.md) | 45 | `result-track:654b4bb0cfbc0033302379ed9f65c238a5dd75223bbad1e2779a522ca870e4d9` |
+| 1 | `def` | [two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveAtlasFeshbachReconstruction.lean/declarations/two.md) | 15 | `declaration-track:ff8107808cb6dcb660629e8af2accbf051404753ba2a3908d744f6c3c9726eed` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveAtlasFeshbachReconstruction.lean/declarations/instance.md) | 17 | `declaration-track:6d76fecd29a8e1ab382775123db68ca7004f9c79df8a28a3a422189ef74cb204` |
+| 3 | `theorem` | [inverse_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveAtlasFeshbachReconstruction.lean/declarations/inverse-two.md) | 28 | `result-track:b678198c48a301a290b995a0af61c072c5c568bbd96c30bd2e8f419ea5877af9` |
+| 4 | `theorem` | [nonzero_cross_lift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveAtlasFeshbachReconstruction.lean/declarations/nonzero-cross-lift.md) | 31 | `result-track:76fc1b839bcfc0b8207dd28e54013c8467ab4171de088b8f721d8abc1deb66af` |
+| 5 | `theorem` | [nonzero_cross_kernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveAtlasFeshbachReconstruction.lean/declarations/nonzero-cross-kernel.md) | 35 | `result-track:5e518f72d9c9726d0b943b0df0cf9f282c321a9be7b74fe29375db8544a926fd` |
+| 6 | `theorem` | [nonzero_cross_schur](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveAtlasFeshbachReconstruction.lean/declarations/nonzero-cross-schur.md) | 40 | `result-track:16b81b210f46be78e25160b79755445af2eab6a914d929a221e0e1a2f76d3d1b` |
+| 7 | `theorem` | [nonzero_cross_projection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveAtlasFeshbachReconstruction.lean/declarations/nonzero-cross-projection.md) | 45 | `result-track:654b4bb0cfbc0033302379ed9f65c238a5dd75223bbad1e2779a522ca870e4d9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEllipticCurveSurface.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEllipticCurveSurface.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicEllipticCurveSurface.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicEllipticCurveSurface.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [EllipticCurveSurface](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEllipticCurveSurface.lean/declarations/ellipticcurvesurface.md) | 16 | `declaration-track:26d7ecbe754949422b38fc5314b859dd53cf4ebbfafb77a3ac3dfffb74bc8a55` |
-| 2 | `structure` | [MordellWeilSurface](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEllipticCurveSurface.lean/declarations/mordellweilsurface.md) | 21 | `declaration-track:8e0c2af8dd3152cd059148e54bfb673a534955e9d6a46ee8cf7f5364f7ab5985` |
-| 3 | `structure` | [HasseWeilLFunctionSurface](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEllipticCurveSurface.lean/declarations/hasseweillfunctionsurface.md) | 28 | `declaration-track:a5180cc04bc07e1c676af4f639bdfe91df55139c3c1f10912b516e67adb5a952` |
-| 4 | `inductive` | [BridgeAuthority](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEllipticCurveSurface.lean/declarations/bridgeauthority.md) | 35 | `declaration-track:8242b91f1e16030bb99f6ae07a2e08290b9de215a2824d0289859c4ed692993a` |
-| 5 | `structure` | [ArithmeticBridgeSurface](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEllipticCurveSurface.lean/declarations/arithmeticbridgesurface.md) | 44 | `declaration-track:3753510facd601840a7a7fe9db7debabfedea1b6121b34358316102c1724cf27` |
-| 6 | `def` | [mordellWeilStatement](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEllipticCurveSurface.lean/declarations/mordellweilstatement.md) | 51 | `declaration-track:1cea1ac6ef1c9781007bde141736352cc771973e9d9527215a1a9bff7582a095` |
-| 7 | `def` | [hasseWeilLFunctionStatement](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEllipticCurveSurface.lean/declarations/hasseweillfunctionstatement.md) | 53 | `declaration-track:b4838ba4e3aecbb6e7f883cb6c2a4b9157f893cc535d95dad7eb3e865ebcbcaf` |
-| 8 | `def` | [finiteWitnessBridgePending](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEllipticCurveSurface.lean/declarations/finitewitnessbridgepending.md) | 55 | `declaration-track:7a3b112b12d079c6533b5608c853dbcec8657491cf955cc221516aabcb8eb4fc` |
+| 1 | `structure` | [EllipticCurveSurface](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicEllipticCurveSurface.lean/declarations/ellipticcurvesurface.md) | 16 | `declaration-track:26d7ecbe754949422b38fc5314b859dd53cf4ebbfafb77a3ac3dfffb74bc8a55` |
+| 2 | `structure` | [MordellWeilSurface](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicEllipticCurveSurface.lean/declarations/mordellweilsurface.md) | 21 | `declaration-track:8e0c2af8dd3152cd059148e54bfb673a534955e9d6a46ee8cf7f5364f7ab5985` |
+| 3 | `structure` | [HasseWeilLFunctionSurface](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicEllipticCurveSurface.lean/declarations/hasseweillfunctionsurface.md) | 28 | `declaration-track:a5180cc04bc07e1c676af4f639bdfe91df55139c3c1f10912b516e67adb5a952` |
+| 4 | `inductive` | [BridgeAuthority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicEllipticCurveSurface.lean/declarations/bridgeauthority.md) | 35 | `declaration-track:8242b91f1e16030bb99f6ae07a2e08290b9de215a2824d0289859c4ed692993a` |
+| 5 | `structure` | [ArithmeticBridgeSurface](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicEllipticCurveSurface.lean/declarations/arithmeticbridgesurface.md) | 44 | `declaration-track:3753510facd601840a7a7fe9db7debabfedea1b6121b34358316102c1724cf27` |
+| 6 | `def` | [mordellWeilStatement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicEllipticCurveSurface.lean/declarations/mordellweilstatement.md) | 51 | `declaration-track:1cea1ac6ef1c9781007bde141736352cc771973e9d9527215a1a9bff7582a095` |
+| 7 | `def` | [hasseWeilLFunctionStatement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicEllipticCurveSurface.lean/declarations/hasseweillfunctionstatement.md) | 53 | `declaration-track:b4838ba4e3aecbb6e7f883cb6c2a4b9157f893cc535d95dad7eb3e865ebcbcaf` |
+| 8 | `def` | [finiteWitnessBridgePending](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicEllipticCurveSurface.lean/declarations/finitewitnessbridgepending.md) | 55 | `declaration-track:7a3b112b12d079c6533b5608c853dbcec8657491cf955cc221516aabcb8eb4fc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

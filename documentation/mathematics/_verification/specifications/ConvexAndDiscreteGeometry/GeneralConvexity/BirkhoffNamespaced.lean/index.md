@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/BirkhoffNamespaced.lean/index.md) · [Full source](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/BirkhoffNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/BirkhoffNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/BirkhoffNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,11 +61,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [exists_perm_eq_zero_implies_eq_zero](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/BirkhoffNamespaced.lean/declarations/exists-perm-eq-zero-implies-eq-zero.md) | 55 | `result-track:bc67201b63d308531f525aaef9e8221828f0235950d5be6b5a901005d702ef84` |
-| 2 | `lemma` | [doublyStochastic_sum_perm_aux](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/BirkhoffNamespaced.lean/declarations/doublystochastic-sum-perm-aux.md) | 93 | `result-track:68ff19ad728161e19d1aacbcef23ce9eb74f113f2c48c3ac096fbaba64b41c17` |
-| 3 | `lemma` | [exists_eq_sum_perm_of_mem_doublyStochastic](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/BirkhoffNamespaced.lean/declarations/exists-eq-sum-perm-of-mem-doublystochastic.md) | 154 | `result-track:d2232a54d99f454016dd17b8ee97c846848e5557b89461af74ab0aaf3889478e` |
-| 4 | `theorem` | [doublyStochastic_eq_convexHull_permMatrix](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/BirkhoffNamespaced.lean/declarations/doublystochastic-eq-convexhull-permmatrix.md) | 172 | `result-track:2ba7f3d5f50b576a3388ebb827a0380de10507231d0cdf1e6f85f9a4af709418` |
-| 5 | `theorem` | [extremePoints_doublyStochastic](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/BirkhoffNamespaced.lean/declarations/extremepoints-doublystochastic.md) | 185 | `result-track:acc759667d2b3fcbe574b0c1cd932de83e98c692d9aa50103139c5db930a391c` |
+| 1 | `lemma` | [exists_perm_eq_zero_implies_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/BirkhoffNamespaced.lean/declarations/exists-perm-eq-zero-implies-eq-zero.md) | 55 | `result-track:bc67201b63d308531f525aaef9e8221828f0235950d5be6b5a901005d702ef84` |
+| 2 | `lemma` | [doublyStochastic_sum_perm_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/BirkhoffNamespaced.lean/declarations/doublystochastic-sum-perm-aux.md) | 93 | `result-track:68ff19ad728161e19d1aacbcef23ce9eb74f113f2c48c3ac096fbaba64b41c17` |
+| 3 | `lemma` | [exists_eq_sum_perm_of_mem_doublyStochastic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/BirkhoffNamespaced.lean/declarations/exists-eq-sum-perm-of-mem-doublystochastic.md) | 154 | `result-track:d2232a54d99f454016dd17b8ee97c846848e5557b89461af74ab0aaf3889478e` |
+| 4 | `theorem` | [doublyStochastic_eq_convexHull_permMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/BirkhoffNamespaced.lean/declarations/doublystochastic-eq-convexhull-permmatrix.md) | 172 | `result-track:2ba7f3d5f50b576a3388ebb827a0380de10507231d0cdf1e6f85f9a4af709418` |
+| 5 | `theorem` | [extremePoints_doublyStochastic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/BirkhoffNamespaced.lean/declarations/extremepoints-doublystochastic.md) | 185 | `result-track:acc759667d2b3fcbe574b0c1cd932de83e98c692d9aa50103139c5db930a391c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/GeometricPathBound.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/GeometricPathBound.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/GeometricPathBound.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/GeometricPathBound.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,12 +60,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [geometricCompensationFactor](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/GeometricPathBound.lean/declarations/geometriccompensationfactor.md) | 20 | `declaration-track:760c5693ffa6a77158858373b112cbf275dd13a77309e3a753dfaba21bf23188` |
-| 2 | `theorem` | [geometricCompensationFactor_nonnegative](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/GeometricPathBound.lean/declarations/geometriccompensationfactor-nonnegative.md) | 28 | `result-track:0220c2012af9966d15c5bde795fbb6c07d642505ea94571160bd339203384e64` |
-| 3 | `theorem` | [geometricCompensationFactor_eq_sum](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/GeometricPathBound.lean/declarations/geometriccompensationfactor-eq-sum.md) | 40 | `result-track:7196d135f9003ba9b4292e3fcc0b484a08626dd59cc045261ab762883152d92b` |
-| 4 | `theorem` | [geometricCompensationFactor_closedForm](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/GeometricPathBound.lean/declarations/geometriccompensationfactor-closedform.md) | 55 | `result-track:38d1a6d884b5eecdaa69c734bd9e29e5a2c3c22aac1d52eb11c85f5629f4ee52` |
-| 5 | `theorem` | [weightedBudget_geometric_bound](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/GeometricPathBound.lean/declarations/weightedbudget-geometric-bound.md) | 67 | `result-track:c2c5d11c5ee29b9739b1b45e5e91600ad87dc461a40305b163305dfbb0f82f0b` |
-| 6 | `theorem` | [pathEnergy_geometric_bound](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/GeometricPathBound.lean/declarations/pathenergy-geometric-bound.md) | 161 | `result-track:3e6ea9fb29dd4e0e767fc1a780a294d8234d8142d6a0e47bbff93d066ddca2cb` |
+| 1 | `def` | [geometricCompensationFactor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/GeometricPathBound.lean/declarations/geometriccompensationfactor.md) | 20 | `declaration-track:760c5693ffa6a77158858373b112cbf275dd13a77309e3a753dfaba21bf23188` |
+| 2 | `theorem` | [geometricCompensationFactor_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/GeometricPathBound.lean/declarations/geometriccompensationfactor-nonnegative.md) | 28 | `result-track:0220c2012af9966d15c5bde795fbb6c07d642505ea94571160bd339203384e64` |
+| 3 | `theorem` | [geometricCompensationFactor_eq_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/GeometricPathBound.lean/declarations/geometriccompensationfactor-eq-sum.md) | 40 | `result-track:7196d135f9003ba9b4292e3fcc0b484a08626dd59cc045261ab762883152d92b` |
+| 4 | `theorem` | [geometricCompensationFactor_closedForm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/GeometricPathBound.lean/declarations/geometriccompensationfactor-closedform.md) | 55 | `result-track:38d1a6d884b5eecdaa69c734bd9e29e5a2c3c22aac1d52eb11c85f5629f4ee52` |
+| 5 | `theorem` | [weightedBudget_geometric_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/GeometricPathBound.lean/declarations/weightedbudget-geometric-bound.md) | 67 | `result-track:c2c5d11c5ee29b9739b1b45e5e91600ad87dc461a40305b163305dfbb0f82f0b` |
+| 6 | `theorem` | [pathEnergy_geometric_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/GeometricPathBound.lean/declarations/pathenergy-geometric-bound.md) | 161 | `result-track:3e6ea9fb29dd4e0e767fc1a780a294d8234d8142d6a0e47bbff93d066ddca2cb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalDiscreteAligned.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalDiscreteAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalDiscreteAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalDiscreteAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [Discrete.monoidal](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalDiscreteAligned.lean/declarations/discrete-monoidal.md) | 29 | `declaration-track:19eac3a3b0e74e588f0b5cfaf87b29a6b206d7868df732fc32a31fb2ca755e33` |
-| 2 | `lemma` | [Discrete.monoidal_tensorUnit_as](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalDiscreteAligned.lean/declarations/discrete-monoidal-tensorunit-as.md) | 43 | `result-track:5d6fb0adbfefc88ba18ab8aaff78af556503cf818db8e96218fa5522674982af` |
-| 3 | `def` | [Discrete.monoidalFunctor](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalDiscreteAligned.lean/declarations/discrete-monoidalfunctor.md) | 52 | `declaration-track:9c6d449e0dab3e2ba3b0b7c5c12d16467c37f7952a7ea415f86f0d043020416d` |
-| 4 | `def` | [Discrete.monoidalFunctorComp](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalDiscreteAligned.lean/declarations/discrete-monoidalfunctorcomp.md) | 71 | `declaration-track:9d25d022133c7f12d838f9b3161921b707f888f99cb1e9fd826ad008cc6222d5` |
+| 1 | `instance` | [Discrete.monoidal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalDiscreteAligned.lean/declarations/discrete-monoidal.md) | 29 | `declaration-track:19eac3a3b0e74e588f0b5cfaf87b29a6b206d7868df732fc32a31fb2ca755e33` |
+| 2 | `lemma` | [Discrete.monoidal_tensorUnit_as](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalDiscreteAligned.lean/declarations/discrete-monoidal-tensorunit-as.md) | 43 | `result-track:5d6fb0adbfefc88ba18ab8aaff78af556503cf818db8e96218fa5522674982af` |
+| 3 | `def` | [Discrete.monoidalFunctor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalDiscreteAligned.lean/declarations/discrete-monoidalfunctor.md) | 52 | `declaration-track:9c6d449e0dab3e2ba3b0b7c5c12d16467c37f7952a7ea415f86f0d043020416d` |
+| 4 | `def` | [Discrete.monoidalFunctorComp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalDiscreteAligned.lean/declarations/discrete-monoidalfunctorcomp.md) | 71 | `declaration-track:9d25d022133c7f12d838f9b3161921b707f888f99cb1e9fd826ad008cc6222d5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

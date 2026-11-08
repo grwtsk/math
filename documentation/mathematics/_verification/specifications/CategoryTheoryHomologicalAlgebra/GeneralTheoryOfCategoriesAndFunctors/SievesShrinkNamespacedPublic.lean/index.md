@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SievesShrinkNamespacedPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SievesShrinkNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SievesShrinkNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SievesShrinkNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [shrinkFunctor](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SievesShrinkNamespacedPublic.lean/declarations/shrinkfunctor.md) | 53 | `declaration-track:3ce53407f3b5c8e2c389c8bd22bc445b478b96ce16b48c2d231102611b02c222` |
-| 2 | `def` | [shrinkFunctorUliftFunctorIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SievesShrinkNamespacedPublic.lean/declarations/shrinkfunctoruliftfunctoriso.md) | 64 | `declaration-track:9126eb497edd40b31fc5b0a3a413903e81b0012085e180e0d1c19662962712b2` |
-| 3 | `lemma` | [shrinkFunctorUliftFunctorIso_inv_ι](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SievesShrinkNamespacedPublic.lean/declarations/shrinkfunctoruliftfunctoriso-inv.md) | 80 | `result-track:3b41df8c74d7ba2d1d10fd42f27b7df5e95ec09199f08b37423ac59eb4ed93c7` |
-| 4 | `def` | [shrinkFunctorIsoFunctor](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SievesShrinkNamespacedPublic.lean/declarations/shrinkfunctorisofunctor.md) | 92 | `declaration-track:c9039bbda77e3024f4fd4186c3d516f1f4735f30d6695d71032529dfae1e0f8d` |
+| 1 | `def` | [shrinkFunctor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SievesShrinkNamespacedPublic.lean/declarations/shrinkfunctor.md) | 53 | `declaration-track:3ce53407f3b5c8e2c389c8bd22bc445b478b96ce16b48c2d231102611b02c222` |
+| 2 | `def` | [shrinkFunctorUliftFunctorIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SievesShrinkNamespacedPublic.lean/declarations/shrinkfunctoruliftfunctoriso.md) | 64 | `declaration-track:9126eb497edd40b31fc5b0a3a413903e81b0012085e180e0d1c19662962712b2` |
+| 3 | `lemma` | [shrinkFunctorUliftFunctorIso_inv_ι](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SievesShrinkNamespacedPublic.lean/declarations/shrinkfunctoruliftfunctoriso-inv.md) | 80 | `result-track:3b41df8c74d7ba2d1d10fd42f27b7df5e95ec09199f08b37423ac59eb4ed93c7` |
+| 4 | `def` | [shrinkFunctorIsoFunctor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SievesShrinkNamespacedPublic.lean/declarations/shrinkfunctorisofunctor.md) | 92 | `declaration-track:c9039bbda77e3024f4fd4186c3d516f1f4735f30d6695d71032529dfae1e0f8d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

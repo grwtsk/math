@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/CyclotomicEmbeddings.lean/index.md) · [Full source](../../../../NumberTheory/CyclotomicEmbeddings.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CyclotomicEmbeddings.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CyclotomicEmbeddings.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [nrRealPlaces_eq_zero](../../../../NumberTheory/CyclotomicEmbeddings.lean/declarations/nrrealplaces-eq-zero.md) | 30 | `result-track:78401afd832e50ee138666867dbf7a05138f5c957bb2c5d80328a0aca13ca80d` |
-| 2 | `theorem` | [nrComplexPlaces_eq_totient_div_two](../../../../NumberTheory/CyclotomicEmbeddings.lean/declarations/nrcomplexplaces-eq-totient-div-two.md) | 41 | `result-track:2584aa91f323cf9b77489767fe981dd7a80987d1ad8394edbb66f37024c3a8b0` |
+| 1 | `theorem` | [nrRealPlaces_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CyclotomicEmbeddings.lean/declarations/nrrealplaces-eq-zero.md) | 30 | `result-track:78401afd832e50ee138666867dbf7a05138f5c957bb2c5d80328a0aca13ca80d` |
+| 2 | `theorem` | [nrComplexPlaces_eq_totient_div_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CyclotomicEmbeddings.lean/declarations/nrcomplexplaces-eq-totient-div-two.md) | 41 | `result-track:2584aa91f323cf9b77489767fe981dd7a80987d1ad8394edbb66f37024c3a8b0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

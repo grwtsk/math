@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PredictiveRepresentationDynamics.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PredictiveRepresentationDynamics.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PredictiveRepresentationDynamics.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PredictiveRepresentationDynamics.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PredictiveRepresentation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PredictiveRepresentationDynamics.lean/declarations/predictiverepresentation.md) | 55 | `declaration-track:e8565020bc973ecb103624da35e0f385420bedb3034f7351da1561b9a766ab9f` |
-| 2 | `def` | [run](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PredictiveRepresentationDynamics.lean/declarations/run.md) | 72 | `declaration-track:78b21d443bd525374005af5f3480cd55deb8cb5d18b5cf5367459f47426a866a` |
-| 3 | `theorem` | [run_nil](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PredictiveRepresentationDynamics.lean/declarations/run-nil.md) | 77 | `result-track:dba7268e1a3a6a575bba794110eb7c0fa0a76fa72f37c7f3c0a727afeba91d55` |
-| 4 | `theorem` | [run_cons](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PredictiveRepresentationDynamics.lean/declarations/run-cons.md) | 81 | `result-track:dd856501469dfe7a0d7dde4e690d6570515d87a6dbfb602c1be70c99513d5e62` |
-| 5 | `theorem` | [encode_run](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PredictiveRepresentationDynamics.lean/declarations/encode-run.md) | 86 | `result-track:041ff97fd5cf846c209ac6c4c10e1b23b24430a4f95486abfe7541582b401171` |
-| 6 | `theorem` | [read_run_encode](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PredictiveRepresentationDynamics.lean/declarations/read-run-encode.md) | 95 | `result-track:962dabb0ec9021b42df98cb3eaf13c168a1c695732eb8d806605fa7be534dabd` |
-| 7 | `theorem` | [encode_eq_implies_causalEquivalent](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PredictiveRepresentationDynamics.lean/declarations/encode-eq-implies-causalequivalent.md) | 107 | `result-track:8f5bca578cae7ae1fa95838debbe40be428cada24f75d958d4887b67449d1404` |
+| 1 | `structure` | [PredictiveRepresentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PredictiveRepresentationDynamics.lean/declarations/predictiverepresentation.md) | 55 | `declaration-track:e8565020bc973ecb103624da35e0f385420bedb3034f7351da1561b9a766ab9f` |
+| 2 | `def` | [run](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PredictiveRepresentationDynamics.lean/declarations/run.md) | 72 | `declaration-track:78b21d443bd525374005af5f3480cd55deb8cb5d18b5cf5367459f47426a866a` |
+| 3 | `theorem` | [run_nil](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PredictiveRepresentationDynamics.lean/declarations/run-nil.md) | 77 | `result-track:dba7268e1a3a6a575bba794110eb7c0fa0a76fa72f37c7f3c0a727afeba91d55` |
+| 4 | `theorem` | [run_cons](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PredictiveRepresentationDynamics.lean/declarations/run-cons.md) | 81 | `result-track:dd856501469dfe7a0d7dde4e690d6570515d87a6dbfb602c1be70c99513d5e62` |
+| 5 | `theorem` | [encode_run](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PredictiveRepresentationDynamics.lean/declarations/encode-run.md) | 86 | `result-track:041ff97fd5cf846c209ac6c4c10e1b23b24430a4f95486abfe7541582b401171` |
+| 6 | `theorem` | [read_run_encode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PredictiveRepresentationDynamics.lean/declarations/read-run-encode.md) | 95 | `result-track:962dabb0ec9021b42df98cb3eaf13c168a1c695732eb8d806605fa7be534dabd` |
+| 7 | `theorem` | [encode_eq_implies_causalEquivalent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PredictiveRepresentationDynamics.lean/declarations/encode-eq-implies-causalequivalent.md) | 107 | `result-track:8f5bca578cae7ae1fa95838debbe40be428cada24f75d958d4887b67449d1404` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

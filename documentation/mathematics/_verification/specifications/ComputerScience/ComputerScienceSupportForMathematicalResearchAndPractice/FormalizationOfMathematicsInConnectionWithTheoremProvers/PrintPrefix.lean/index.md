@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PrintPrefix.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PrintPrefix.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PrintPrefix.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PrintPrefix.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [foo](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PrintPrefix.lean/declarations/foo.md) | 32 | `declaration-track:689583bc464691623fab869d7d97b8763bac48238ccc6ca02fe68912a876e3fd` |
-| 2 | `structure` | [TestStruct](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PrintPrefix.lean/declarations/teststruct.md) | 43 | `declaration-track:3bc02bf19003d012b7e173a3187586cc61b04707244ad970d68d370abbbed5a8` |
-| 3 | `def` | [testMatchProof](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PrintPrefix.lean/declarations/testmatchproof.md) | 115 | `declaration-track:b0323ab3044874c76105b26b22ab0a0aaf0c6a0b9a523a9c5a67a5c61483fb7f` |
-| 4 | `inductive` | [TestInd](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PrintPrefix.lean/declarations/testind.md) | 149 | `declaration-track:4143c53269b42df74ae8f49feb11868725550d55c516288a1489a6c9c59ea06a` |
+| 1 | `def` | [foo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PrintPrefix.lean/declarations/foo.md) | 32 | `declaration-track:689583bc464691623fab869d7d97b8763bac48238ccc6ca02fe68912a876e3fd` |
+| 2 | `structure` | [TestStruct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PrintPrefix.lean/declarations/teststruct.md) | 43 | `declaration-track:3bc02bf19003d012b7e173a3187586cc61b04707244ad970d68d370abbbed5a8` |
+| 3 | `def` | [testMatchProof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PrintPrefix.lean/declarations/testmatchproof.md) | 115 | `declaration-track:b0323ab3044874c76105b26b22ab0a0aaf0c6a0b9a523a9c5a67a5c61483fb7f` |
+| 4 | `inductive` | [TestInd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PrintPrefix.lean/declarations/testind.md) | 149 | `declaration-track:4143c53269b42df74ae8f49feb11868725550d55c516288a1489a6c9c59ea06a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

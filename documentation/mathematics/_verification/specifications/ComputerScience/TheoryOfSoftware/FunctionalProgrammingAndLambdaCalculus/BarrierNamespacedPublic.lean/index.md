@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BarrierNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BarrierNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BarrierNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BarrierNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [BarrierState](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BarrierNamespacedPublic.lean/declarations/barrierstate.md) | 28 | `declaration-track:7aa0cd08fdd5c956b819e0db900a371b1752fd1b5d13c6021ebe60fc173d2c94` |
-| 2 | `structure` | [Barrier](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BarrierNamespacedPublic.lean/declarations/barrier.md) | 36 | `declaration-track:66ccb3b376ce88ca4cdfe741ab6f94a03b54dac5f9069b2c5f5ddf4d29bdc918` |
-| 3 | `def` | [Barrier.new](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BarrierNamespacedPublic.lean/declarations/barrier-new.md) | 44 | `declaration-track:5ca0153e1f380251b5139e8ce376b1b880c8bb76e879630607a4ee192544d60c` |
-| 4 | `def` | [Barrier.wait](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BarrierNamespacedPublic.lean/declarations/barrier-wait.md) | 59 | `declaration-track:684771624e8f4d6efd2b83b9552ab9f2fcff29594a8977f5f90a58457e3d3c7e` |
+| 1 | `structure` | [BarrierState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BarrierNamespacedPublic.lean/declarations/barrierstate.md) | 28 | `declaration-track:7aa0cd08fdd5c956b819e0db900a371b1752fd1b5d13c6021ebe60fc173d2c94` |
+| 2 | `structure` | [Barrier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BarrierNamespacedPublic.lean/declarations/barrier.md) | 36 | `declaration-track:66ccb3b376ce88ca4cdfe741ab6f94a03b54dac5f9069b2c5f5ddf4d29bdc918` |
+| 3 | `def` | [Barrier.new](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BarrierNamespacedPublic.lean/declarations/barrier-new.md) | 44 | `declaration-track:5ca0153e1f380251b5139e8ce376b1b880c8bb76e879630607a4ee192544d60c` |
+| 4 | `def` | [Barrier.wait](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BarrierNamespacedPublic.lean/declarations/barrier-wait.md) | 59 | `declaration-track:684771624e8f4d6efd2b83b9552ab9f2fcff29594a8977f5f90a58457e3d3c7e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

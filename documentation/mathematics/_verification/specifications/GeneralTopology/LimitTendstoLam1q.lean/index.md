@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/LimitTendstoLam1q.lean/index.md) · [Full source](../../../../GeneralTopology/LimitTendstoLam1q.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LimitTendstoLam1q.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LimitTendstoLam1q.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [tendsto_lam1q](../../../../GeneralTopology/LimitTendstoLam1q.lean/declarations/tendsto-lam1q.md) | 21 | `result-track:b1f151e30915ba6ffb82df3d7725f2cfde1ced9bb846f99c301884c98b5b2f67` |
-| 2 | `theorem` | [tendsto_cRatio_concreteChi](../../../../GeneralTopology/LimitTendstoLam1q.lean/declarations/tendsto-cratio-concretechi.md) | 39 | `result-track:6171f5a6baee88cd4a3fbb937b4c1bba34cc86dd5e5a3b1a1e31456bcb717bcb` |
+| 1 | `theorem` | [tendsto_lam1q](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LimitTendstoLam1q.lean/declarations/tendsto-lam1q.md) | 21 | `result-track:b1f151e30915ba6ffb82df3d7725f2cfde1ced9bb846f99c301884c98b5b2f67` |
+| 2 | `theorem` | [tendsto_cRatio_concreteChi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LimitTendstoLam1q.lean/declarations/tendsto-cratio-concretechi.md) | 39 | `result-track:6171f5a6baee88cd4a3fbb937b4c1bba34cc86dd5e5a3b1a1e31456bcb717bcb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

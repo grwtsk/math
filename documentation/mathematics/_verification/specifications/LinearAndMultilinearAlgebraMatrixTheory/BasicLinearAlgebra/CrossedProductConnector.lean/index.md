@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CrossedProductConnector.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CrossedProductConnector.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CrossedProductConnector.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CrossedProductConnector.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [CoefficientAlgebra](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CrossedProductConnector.lean/declarations/coefficientalgebra.md) | 21 | `declaration-track:951f73d4b2e269219300f138dcd33580a8400701eb00fdb5a7df9b003cf8f2e3` |
-| 2 | `abbrev` | [FiberAlgebra](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CrossedProductConnector.lean/declarations/fiberalgebra.md) | 33 | `declaration-track:aa91fc6c33c249c708a1a8beb1036b1ac16b12354917da62d3534458928002df` |
-| 3 | `structure` | [CrossedProductConnector](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CrossedProductConnector.lean/declarations/crossedproductconnector.md) | 45 | `declaration-track:654eb7a7ff169deee0da62c8a34e811ac0f88f7641b02652e257dc120a584530` |
+| 1 | `abbrev` | [CoefficientAlgebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CrossedProductConnector.lean/declarations/coefficientalgebra.md) | 21 | `declaration-track:951f73d4b2e269219300f138dcd33580a8400701eb00fdb5a7df9b003cf8f2e3` |
+| 2 | `abbrev` | [FiberAlgebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CrossedProductConnector.lean/declarations/fiberalgebra.md) | 33 | `declaration-track:aa91fc6c33c249c708a1a8beb1036b1ac16b12354917da62d3534458928002df` |
+| 3 | `structure` | [CrossedProductConnector](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CrossedProductConnector.lean/declarations/crossedproductconnector.md) | 45 | `declaration-track:654eb7a7ff169deee0da62c8a34e811ac0f88f7641b02652e257dc120a584530` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

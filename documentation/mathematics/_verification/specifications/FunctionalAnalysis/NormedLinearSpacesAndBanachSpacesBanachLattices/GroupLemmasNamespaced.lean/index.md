@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupLemmasNamespaced.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupLemmasNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupLemmasNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupLemmasNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [eventually_nnnorm_sub_lt](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupLemmasNamespaced.lean/declarations/eventually-nnnorm-sub-lt.md) | 31 | `result-track:5e86187a9b2080516beb57fd0f9a5e5af9507bc950fc8af17305348245760025` |
-| 2 | `theorem` | [eventually_norm_sub_lt](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupLemmasNamespaced.lean/declarations/eventually-norm-sub-lt.md) | 35 | `result-track:88e69e417af8df1a68577378c78618d5b250ab48231b8aac7005cb2ad9feb986` |
+| 1 | `theorem` | [eventually_nnnorm_sub_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupLemmasNamespaced.lean/declarations/eventually-nnnorm-sub-lt.md) | 31 | `result-track:5e86187a9b2080516beb57fd0f9a5e5af9507bc950fc8af17305348245760025` |
+| 2 | `theorem` | [eventually_norm_sub_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/GroupLemmasNamespaced.lean/declarations/eventually-norm-sub-lt.md) | 35 | `result-track:88e69e417af8df1a68577378c78618d5b250ab48231b8aac7005cb2ad9feb986` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

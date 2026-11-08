@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/TentPerronLineCore.lean/index.md) · [Full source](../../../../NumberTheory/TentPerronLineCore.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentPerronLineCore.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentPerronLineCore.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,11 +46,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Interfaces.TrivialZeroTentSeriesCore`](../../../../NumberTheory/TrivialZeroTentSeriesCore.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.TentMellinInversion`](../../../../MeasureAndIntegration/TentMellinInversion.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.NumberTheory.LSeries.TentPairing`](../../../../MeasureAndIntegration/TentPairing.lean/index.md) — import line 6; pinned internal source present.
-- [`GRWTSK.NumberTheory.Chebyshev.TentPerronLine`](../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TentPerronLine.lean/index.md) — import line 7; pinned internal source present.
-- [`GRWTSK.NumberTheory.Chebyshev.Checks.TentPerronLineControls`](../../../../NumberTheory/TentPerronLineControls.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.Interfaces.TrivialZeroTentSeriesCore`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TrivialZeroTentSeriesCore.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.TentMellinInversion`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentMellinInversion.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.LSeries.TentPairing`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentPairing.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.TentPerronLine`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TentPerronLine.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.Checks.TentPerronLineControls`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentPerronLineControls.lean/index.md) — import line 8; pinned internal source present.
 
 ## Top results and three-degree verification metric
 

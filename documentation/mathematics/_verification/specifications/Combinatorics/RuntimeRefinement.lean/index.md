@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/RuntimeRefinement.lean/index.md) · [Full source](../../../../Combinatorics/RuntimeRefinement.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RuntimeRefinement.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RuntimeRefinement.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.InformationTheory.ReedSolomon.Runtime`](../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Runtime.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.InformationTheory.ReedSolomon.Runtime`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Runtime.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [selectedNodes_injective](../../../../Combinatorics/RuntimeRefinement.lean/declarations/selectednodes-injective.md) | 12 | `result-track:674e1aab77cac64112b21dadd210be0205f6c9457cb5a9e67c2349bd25ba52ad` |
-| 2 | `theorem` | [numerator_at_node](../../../../Combinatorics/RuntimeRefinement.lean/declarations/numerator-at-node.md) | 16 | `result-track:00966416f5788a16e1e7d4d95bd17eb11bc57ea0a00af5fab6168bfcca9f9334` |
-| 3 | `theorem` | [runtime_coefficient_at_node](../../../../Combinatorics/RuntimeRefinement.lean/declarations/runtime-coefficient-at-node.md) | 20 | `result-track:8313a047d17a00fd17b56d64b2f12ac24a31894c1bc491b6589af5a9956d025d` |
-| 4 | `def` | [rustCoefficient](../../../../Combinatorics/RuntimeRefinement.lean/declarations/rustcoefficient.md) | 34 | `declaration-track:f18d678cc35620414a0d45e5e8cc664f77ad7a35db30c27e5b34073a8ff9b277` |
-| 5 | `theorem` | [rustCoefficient_eq](../../../../Combinatorics/RuntimeRefinement.lean/declarations/rustcoefficient-eq.md) | 41 | `result-track:e65717377be2c888866550b4a1fd984906a5a530b77b09627600df5c0e73dbb5` |
-| 6 | `theorem` | [rowEval_delta](../../../../Combinatorics/RuntimeRefinement.lean/declarations/roweval-delta.md) | 62 | `result-track:86541d8a6e046515aa88edb6606ccae9793d72824f871d8a11d5e6dd41caebad` |
-| 7 | `theorem` | [get_slot_delta](../../../../Combinatorics/RuntimeRefinement.lean/declarations/get-slot-delta.md) | 70 | `result-track:757ffb3a478756b56f9ab8d7ab36d24897dfa1cb5ef0c0416f1367d585e30772` |
-| 8 | `theorem` | [runtimeEval_at_node](../../../../Combinatorics/RuntimeRefinement.lean/declarations/runtimeeval-at-node.md) | 74 | `result-track:2cf8aa4e17602ae45271e2b3a9cd43bbce5b9c05321dd11cfa0b07d711dcf32c` |
-| 9 | `theorem` | [ordered_product3](../../../../Combinatorics/RuntimeRefinement.lean/declarations/ordered-product3.md) | 82 | `result-track:38f12005b73f5a06b3968bf34baeee644f13d95b5f8b9a9b652c1c96774f0f5e` |
+| 1 | `theorem` | [selectedNodes_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RuntimeRefinement.lean/declarations/selectednodes-injective.md) | 12 | `result-track:674e1aab77cac64112b21dadd210be0205f6c9457cb5a9e67c2349bd25ba52ad` |
+| 2 | `theorem` | [numerator_at_node](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RuntimeRefinement.lean/declarations/numerator-at-node.md) | 16 | `result-track:00966416f5788a16e1e7d4d95bd17eb11bc57ea0a00af5fab6168bfcca9f9334` |
+| 3 | `theorem` | [runtime_coefficient_at_node](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RuntimeRefinement.lean/declarations/runtime-coefficient-at-node.md) | 20 | `result-track:8313a047d17a00fd17b56d64b2f12ac24a31894c1bc491b6589af5a9956d025d` |
+| 4 | `def` | [rustCoefficient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RuntimeRefinement.lean/declarations/rustcoefficient.md) | 34 | `declaration-track:f18d678cc35620414a0d45e5e8cc664f77ad7a35db30c27e5b34073a8ff9b277` |
+| 5 | `theorem` | [rustCoefficient_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RuntimeRefinement.lean/declarations/rustcoefficient-eq.md) | 41 | `result-track:e65717377be2c888866550b4a1fd984906a5a530b77b09627600df5c0e73dbb5` |
+| 6 | `theorem` | [rowEval_delta](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RuntimeRefinement.lean/declarations/roweval-delta.md) | 62 | `result-track:86541d8a6e046515aa88edb6606ccae9793d72824f871d8a11d5e6dd41caebad` |
+| 7 | `theorem` | [get_slot_delta](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RuntimeRefinement.lean/declarations/get-slot-delta.md) | 70 | `result-track:757ffb3a478756b56f9ab8d7ab36d24897dfa1cb5ef0c0416f1367d585e30772` |
+| 8 | `theorem` | [runtimeEval_at_node](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RuntimeRefinement.lean/declarations/runtimeeval-at-node.md) | 74 | `result-track:2cf8aa4e17602ae45271e2b3a9cd43bbce5b9c05321dd11cfa0b07d711dcf32c` |
+| 9 | `theorem` | [ordered_product3](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RuntimeRefinement.lean/declarations/ordered-product3.md) | 82 | `result-track:38f12005b73f5a06b3968bf34baeee644f13d95b5f8b9a9b652c1c96774f0f5e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

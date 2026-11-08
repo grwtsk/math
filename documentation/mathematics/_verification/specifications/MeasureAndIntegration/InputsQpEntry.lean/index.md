@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/InputsQpEntry.lean/index.md) · [Full source](../../../../MeasureAndIntegration/InputsQpEntry.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/InputsQpEntry.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/InputsQpEntry.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [QpEntry](../../../../MeasureAndIntegration/InputsQpEntry.lean/declarations/qpentry.md) | 25 | `declaration-track:f89f0415fd7f3168fa18db940d9c1582855527f8dbaf7ece24d588a46551ff7b` |
-| 2 | `def` | [QpMat](../../../../MeasureAndIntegration/InputsQpEntry.lean/declarations/qpmat.md) | 29 | `declaration-track:224091c3667ec32089333b982e0e51929b31f741ff3967f8ab655c76f4d87ca4` |
-| 3 | `def` | [deltaKL](../../../../MeasureAndIntegration/InputsQpEntry.lean/declarations/deltakl.md) | 33 | `declaration-track:35b8cfee38d76a01142f29e5833cf1b4fa84c45af627a04d43ee962f78585e61` |
-| 4 | `lemma` | [QpEntry_eq_GentryNu](../../../../MeasureAndIntegration/InputsQpEntry.lean/declarations/qpentry-eq-gentrynu.md) | 35 | `result-track:9e23385d245d4b57c7616865f0e097547e215cc5c1da31f8f8d305240171d3a5` |
-| 5 | `lemma` | [GentryC_eq_GentryW](../../../../MeasureAndIntegration/InputsQpEntry.lean/declarations/gentryc-eq-gentryw.md) | 39 | `result-track:c1081a72f0262cbac996f722dfb779d8f9306743dda5dbeb21f4cdfc7456135e` |
-| 6 | `structure` | [Reexpansion](../../../../MeasureAndIntegration/InputsQpEntry.lean/declarations/reexpansion.md) | 56 | `declaration-track:9987385dbe2105d77194d2d9dc67b3e863aba6cb0640767a9c9b91d2d407e3ba` |
-| 7 | `def` | [PPUpper](../../../../MeasureAndIntegration/InputsQpEntry.lean/declarations/ppupper.md) | 80 | `declaration-track:0730d600273530baa4ed43212054c0558436340b7ed46738fc205a067e9e3874` |
+| 1 | `def` | [QpEntry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/InputsQpEntry.lean/declarations/qpentry.md) | 25 | `declaration-track:f89f0415fd7f3168fa18db940d9c1582855527f8dbaf7ece24d588a46551ff7b` |
+| 2 | `def` | [QpMat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/InputsQpEntry.lean/declarations/qpmat.md) | 29 | `declaration-track:224091c3667ec32089333b982e0e51929b31f741ff3967f8ab655c76f4d87ca4` |
+| 3 | `def` | [deltaKL](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/InputsQpEntry.lean/declarations/deltakl.md) | 33 | `declaration-track:35b8cfee38d76a01142f29e5833cf1b4fa84c45af627a04d43ee962f78585e61` |
+| 4 | `lemma` | [QpEntry_eq_GentryNu](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/InputsQpEntry.lean/declarations/qpentry-eq-gentrynu.md) | 35 | `result-track:9e23385d245d4b57c7616865f0e097547e215cc5c1da31f8f8d305240171d3a5` |
+| 5 | `lemma` | [GentryC_eq_GentryW](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/InputsQpEntry.lean/declarations/gentryc-eq-gentryw.md) | 39 | `result-track:c1081a72f0262cbac996f722dfb779d8f9306743dda5dbeb21f4cdfc7456135e` |
+| 6 | `structure` | [Reexpansion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/InputsQpEntry.lean/declarations/reexpansion.md) | 56 | `declaration-track:9987385dbe2105d77194d2d9dc67b3e863aba6cb0640767a9c9b91d2d407e3ba` |
+| 7 | `def` | [PPUpper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/InputsQpEntry.lean/declarations/ppupper.md) | 80 | `declaration-track:0730d600273530baa4ed43212054c0558436340b7ed46738fc205a067e9e3874` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

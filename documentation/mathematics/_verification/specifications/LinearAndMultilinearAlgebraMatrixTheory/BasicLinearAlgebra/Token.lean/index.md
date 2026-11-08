@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Token.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Token.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Token.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Token.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TokenAlphabet](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Token.lean/declarations/tokenalphabet.md) | 5 | `declaration-track:e79a6bdf7ca4b0af18af79a493ba631e91db0e2caf51fc597ace451f02d74e97` |
-| 2 | `structure` | [TokenSequence](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Token.lean/declarations/tokensequence.md) | 9 | `declaration-track:f2983bc7eeeeb21217f1780a69b94558398808bcf959f8f0b8d8fc45d3ba81d3` |
-| 3 | `structure` | [TokenBinaryMatrixEncoding](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Token.lean/declarations/tokenbinarymatrixencoding.md) | 13 | `declaration-track:b9069db1e6b097bff44046fc28bfe4090c1c1140b3834046de7db8b179d7547e` |
-| 4 | `theorem` | [tokenBinaryMatrixEncoding_boundary](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Token.lean/declarations/tokenbinarymatrixencoding-boundary.md) | 22 | `result-track:fbcac96d585a128cd7d1653c1c700f446a3f95152138341921d5f3a13bb68a9a` |
-| 5 | `theorem` | [tokenSequence_length_nonneg](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Token.lean/declarations/tokensequence-length-nonneg.md) | 30 | `result-track:5e13e410fb79766b414aaab4ea4be8dfba24fc80d621702c690680ecb96f8a88` |
+| 1 | `structure` | [TokenAlphabet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Token.lean/declarations/tokenalphabet.md) | 5 | `declaration-track:e79a6bdf7ca4b0af18af79a493ba631e91db0e2caf51fc597ace451f02d74e97` |
+| 2 | `structure` | [TokenSequence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Token.lean/declarations/tokensequence.md) | 9 | `declaration-track:f2983bc7eeeeb21217f1780a69b94558398808bcf959f8f0b8d8fc45d3ba81d3` |
+| 3 | `structure` | [TokenBinaryMatrixEncoding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Token.lean/declarations/tokenbinarymatrixencoding.md) | 13 | `declaration-track:b9069db1e6b097bff44046fc28bfe4090c1c1140b3834046de7db8b179d7547e` |
+| 4 | `theorem` | [tokenBinaryMatrixEncoding_boundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Token.lean/declarations/tokenbinarymatrixencoding-boundary.md) | 22 | `result-track:fbcac96d585a128cd7d1653c1c700f446a3f95152138341921d5f3a13bb68a9a` |
+| 5 | `theorem` | [tokenSequence_length_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Token.lean/declarations/tokensequence-length-nonneg.md) | 30 | `result-track:5e13e410fb79766b414aaab4ea4be8dfba24fc80d621702c690680ecb96f8a88` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

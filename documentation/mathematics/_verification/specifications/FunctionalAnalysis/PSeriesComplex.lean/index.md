@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/PSeriesComplex.lean/index.md) · [Full source](../../../../FunctionalAnalysis/PSeriesComplex.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PSeriesComplex.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PSeriesComplex.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [Complex.summable_one_div_nat_cpow](../../../../FunctionalAnalysis/PSeriesComplex.lean/declarations/complex-summable-one-div-nat-cpow.md) | 22 | `result-track:a7aeee2cd34e3460e91b9c442e0cf7fc8870c416896f1da308c7bd91a6f07d39` |
+| 1 | `lemma` | [Complex.summable_one_div_nat_cpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PSeriesComplex.lean/declarations/complex-summable-one-div-nat-cpow.md) | 22 | `result-track:a7aeee2cd34e3460e91b9c442e0cf7fc8870c416896f1da308c7bd91a6f07d39` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

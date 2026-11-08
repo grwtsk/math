@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/FiniteCubicalBoundaryPredicates.lean/index.md) · [Full source](../../../../Combinatorics/FiniteCubicalBoundaryPredicates.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteCubicalBoundaryPredicates.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteCubicalBoundaryPredicates.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [IsBoundaryCell](../../../../Combinatorics/FiniteCubicalBoundaryPredicates.lean/declarations/isboundarycell.md) | 39 | `declaration-track:5a125bcf68c96f0a8bfa3976f3c1d4e4bebee98fdaeb1301f67b23b7419bf89d` |
-| 2 | `def` | [IsInteriorCell](../../../../Combinatorics/FiniteCubicalBoundaryPredicates.lean/declarations/isinteriorcell.md) | 45 | `declaration-track:ea79c9ea7f60dc88817c7aa899aba5fb3ea87e19bdca9d117d013defab8c160a` |
-| 3 | `abbrev` | [BoundaryShell](../../../../Combinatorics/FiniteCubicalBoundaryPredicates.lean/declarations/boundaryshell.md) | 51 | `declaration-track:27506cdb48c413acd8f86b07010f7eea9604d116b7ead62f11d10cb98fab9d15` |
-| 4 | `theorem` | [boundary_or_not_boundary](../../../../Combinatorics/FiniteCubicalBoundaryPredicates.lean/declarations/boundary-or-not-boundary.md) | 54 | `result-track:0c7a7f24fe0eb57f887886247cf3a7e0439b7439cdeca5fd6b4d1d46d512a191` |
-| 5 | `theorem` | [not_interior_of_boundary](../../../../Combinatorics/FiniteCubicalBoundaryPredicates.lean/declarations/not-interior-of-boundary.md) | 61 | `result-track:354eda1d410d75d22fff9e2c660e4957e4cd392ef2045af1c3c28180f7b0c563` |
-| 6 | `theorem` | [all_boundary_level_zero](../../../../Combinatorics/FiniteCubicalBoundaryPredicates.lean/declarations/all-boundary-level-zero.md) | 72 | `result-track:88d8cc1defd93878162b0a88e7c5821866d93665000959ccefde072406d521a5` |
+| 1 | `def` | [IsBoundaryCell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteCubicalBoundaryPredicates.lean/declarations/isboundarycell.md) | 39 | `declaration-track:5a125bcf68c96f0a8bfa3976f3c1d4e4bebee98fdaeb1301f67b23b7419bf89d` |
+| 2 | `def` | [IsInteriorCell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteCubicalBoundaryPredicates.lean/declarations/isinteriorcell.md) | 45 | `declaration-track:ea79c9ea7f60dc88817c7aa899aba5fb3ea87e19bdca9d117d013defab8c160a` |
+| 3 | `abbrev` | [BoundaryShell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteCubicalBoundaryPredicates.lean/declarations/boundaryshell.md) | 51 | `declaration-track:27506cdb48c413acd8f86b07010f7eea9604d116b7ead62f11d10cb98fab9d15` |
+| 4 | `theorem` | [boundary_or_not_boundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteCubicalBoundaryPredicates.lean/declarations/boundary-or-not-boundary.md) | 54 | `result-track:0c7a7f24fe0eb57f887886247cf3a7e0439b7439cdeca5fd6b4d1d46d512a191` |
+| 5 | `theorem` | [not_interior_of_boundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteCubicalBoundaryPredicates.lean/declarations/not-interior-of-boundary.md) | 61 | `result-track:354eda1d410d75d22fff9e2c660e4957e4cd392ef2045af1c3c28180f7b0c563` |
+| 6 | `theorem` | [all_boundary_level_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteCubicalBoundaryPredicates.lean/declarations/all-boundary-level-zero.md) | 72 | `result-track:88d8cc1defd93878162b0a88e7c5821866d93665000959ccefde072406d521a5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

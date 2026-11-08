@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensSquareEnergyEquivalence.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensSquareEnergyEquivalence.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensSquareEnergyEquivalence.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensSquareEnergyEquivalence.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Moebius.MertensSquareEnergyPowerBound`](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensSquareEnergyPowerBound.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.MertensSquareEnergyPowerBound`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensSquareEnergyPowerBound.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [MertensPointwisePowerSaving](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensSquareEnergyEquivalence.lean/declarations/mertenspointwisepowersaving.md) | 32 | `declaration-track:ab8de6271f1a9a2bc34f4f7165fceb09b1b40ffc39a23f44f53735fff6ea3cbe` |
-| 2 | `theorem` | [mertensPointwisePowerSaving_of_squareEnergyPowerSaving](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensSquareEnergyEquivalence.lean/declarations/mertenspointwisepowersaving-of-squareenergypowersaving.md) | 40 | `result-track:535256067d16061336beca97b5b30dcb5743f7d5049047083560a8411b5ef3f0` |
-| 3 | `theorem` | [squareEnergyPowerSaving_of_mertensPointwisePowerSaving](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensSquareEnergyEquivalence.lean/declarations/squareenergypowersaving-of-mertenspointwisepowersaving.md) | 102 | `result-track:63d3908199483ee8717d210e4f27f4e3c847cd02bca5f3eaadb47362de88eccf` |
-| 4 | `theorem` | [mertensSquareEnergyPowerSaving_iff_pointwisePowerSaving](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensSquareEnergyEquivalence.lean/declarations/mertenssquareenergypowersaving-iff-pointwisepowersaving.md) | 110 | `result-track:443d52e0ab074ccb287cf214829b6ff2891af375cc78fd0cc1b95b7fc03babfc` |
-| 5 | `theorem` | [criticalBoundary_of_mertensPointwisePowerSaving](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensSquareEnergyEquivalence.lean/declarations/criticalboundary-of-mertenspointwisepowersaving.md) | 117 | `result-track:570f0e80bf3950663d2f79949bd8d25413bef95700ea9ab154516755cb9bd4ef` |
+| 1 | `def` | [MertensPointwisePowerSaving](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensSquareEnergyEquivalence.lean/declarations/mertenspointwisepowersaving.md) | 32 | `declaration-track:ab8de6271f1a9a2bc34f4f7165fceb09b1b40ffc39a23f44f53735fff6ea3cbe` |
+| 2 | `theorem` | [mertensPointwisePowerSaving_of_squareEnergyPowerSaving](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensSquareEnergyEquivalence.lean/declarations/mertenspointwisepowersaving-of-squareenergypowersaving.md) | 40 | `result-track:535256067d16061336beca97b5b30dcb5743f7d5049047083560a8411b5ef3f0` |
+| 3 | `theorem` | [squareEnergyPowerSaving_of_mertensPointwisePowerSaving](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensSquareEnergyEquivalence.lean/declarations/squareenergypowersaving-of-mertenspointwisepowersaving.md) | 102 | `result-track:63d3908199483ee8717d210e4f27f4e3c847cd02bca5f3eaadb47362de88eccf` |
+| 4 | `theorem` | [mertensSquareEnergyPowerSaving_iff_pointwisePowerSaving](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensSquareEnergyEquivalence.lean/declarations/mertenssquareenergypowersaving-iff-pointwisepowersaving.md) | 110 | `result-track:443d52e0ab074ccb287cf214829b6ff2891af375cc78fd0cc1b95b7fc03babfc` |
+| 5 | `theorem` | [criticalBoundary_of_mertensPointwisePowerSaving](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensSquareEnergyEquivalence.lean/declarations/criticalboundary-of-mertenspointwisepowersaving.md) | 117 | `result-track:570f0e80bf3950663d2f79949bd8d25413bef95700ea9ab154516755cb9bd4ef` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

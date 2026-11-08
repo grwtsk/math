@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Discharge.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Discharge.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Discharge.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Discharge.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [DischargeKind](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Discharge.lean/declarations/dischargekind.md) | 7 | `declaration-track:0252f446d599a651efb1e9a1bed6cbe67b35dd43f520492f7b3efafa87daf21b` |
-| 2 | `structure` | [DischargeCandidate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Discharge.lean/declarations/dischargecandidate.md) | 21 | `declaration-track:bf23129c15b142fb3daee43e40716291e2c5b3de42088dcc1dfe0765967708ee` |
-| 3 | `def` | [acceptsDischarge](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Discharge.lean/declarations/acceptsdischarge.md) | 27 | `declaration-track:6c6de14230e4d1303fae26b6bdd93e4a2fa6bc3fdc9b260536099187fe8e74fc` |
-| 4 | `structure` | [AcceptedDischarge](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Discharge.lean/declarations/accepteddischarge.md) | 32 | `declaration-track:5db65cd7c3a0684e6e5e0f94e215426eb9c23461d24ba37efe44078bb742624c` |
-| 5 | `theorem` | [discharge_requires_exact_certificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Discharge.lean/declarations/discharge-requires-exact-certificate.md) | 38 | `result-track:bb7a088d457382be05d73ac1d6ec5319f0441fcea4927cddfd2bd50afe7351d2` |
+| 1 | `inductive` | [DischargeKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Discharge.lean/declarations/dischargekind.md) | 7 | `declaration-track:0252f446d599a651efb1e9a1bed6cbe67b35dd43f520492f7b3efafa87daf21b` |
+| 2 | `structure` | [DischargeCandidate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Discharge.lean/declarations/dischargecandidate.md) | 21 | `declaration-track:bf23129c15b142fb3daee43e40716291e2c5b3de42088dcc1dfe0765967708ee` |
+| 3 | `def` | [acceptsDischarge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Discharge.lean/declarations/acceptsdischarge.md) | 27 | `declaration-track:6c6de14230e4d1303fae26b6bdd93e4a2fa6bc3fdc9b260536099187fe8e74fc` |
+| 4 | `structure` | [AcceptedDischarge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Discharge.lean/declarations/accepteddischarge.md) | 32 | `declaration-track:5db65cd7c3a0684e6e5e0f94e215426eb9c23461d24ba37efe44078bb742624c` |
+| 5 | `theorem` | [discharge_requires_exact_certificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Discharge.lean/declarations/discharge-requires-exact-certificate.md) | 38 | `result-track:bb7a088d457382be05d73ac1d6ec5319f0441fcea4927cddfd2bd50afe7351d2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

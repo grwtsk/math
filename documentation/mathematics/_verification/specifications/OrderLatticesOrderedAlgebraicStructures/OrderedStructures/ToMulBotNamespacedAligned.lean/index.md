@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ToMulBotNamespacedAligned.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ToMulBotNamespacedAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ToMulBotNamespacedAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ToMulBotNamespacedAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [toMulBot](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ToMulBotNamespacedAligned.lean/declarations/tomulbot.md) | 36 | `declaration-track:6e98b8af906ccaf16710534699bc6679ac30792249445fa90b34f99baf63e1e1` |
-| 2 | `theorem` | [toMulBot_zero](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ToMulBotNamespacedAligned.lean/declarations/tomulbot-zero.md) | 41 | `result-track:bfdc24ccbc9804388d8d3e5aa9be726013da2e8c1e442164ec7801c5846d152f` |
-| 3 | `theorem` | [toMulBot_coe](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ToMulBotNamespacedAligned.lean/declarations/tomulbot-coe.md) | 46 | `result-track:3a8691c065c6785af269049d361b59dbdd847fde49e80c5d5c468022bb7f7dd6` |
-| 4 | `theorem` | [toMulBot_symm_bot](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ToMulBotNamespacedAligned.lean/declarations/tomulbot-symm-bot.md) | 52 | `result-track:44bcc409beb4afbe9059a86efe185a506979002d9436b957fcf48e175365525a` |
-| 5 | `theorem` | [toMulBot_coe_ofAdd](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ToMulBotNamespacedAligned.lean/declarations/tomulbot-coe-ofadd.md) | 57 | `result-track:2f4d86bd75421302cdf6269be66f3724a7de486d15dfd1c3d8f1533ee5935876` |
-| 6 | `theorem` | [toMulBot_strictMono](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ToMulBotNamespacedAligned.lean/declarations/tomulbot-strictmono.md) | 64 | `result-track:b1b6613ebcfcb15e14f49589a589d61ac91c8caac323269b3197a5b3db0345b4` |
-| 7 | `theorem` | [toMulBot_le](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ToMulBotNamespacedAligned.lean/declarations/tomulbot-le.md) | 68 | `result-track:b081b354792d8bc5c4caac49d65a78cc31d9ac2b4ab7fd657c6fee8dcdb84bb1` |
-| 8 | `theorem` | [toMulBot_lt](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ToMulBotNamespacedAligned.lean/declarations/tomulbot-lt.md) | 73 | `result-track:0b04b50ed1033f22f5040298666875abf0273e44f48179d455412e588860cc75` |
+| 1 | `def` | [toMulBot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ToMulBotNamespacedAligned.lean/declarations/tomulbot.md) | 36 | `declaration-track:6e98b8af906ccaf16710534699bc6679ac30792249445fa90b34f99baf63e1e1` |
+| 2 | `theorem` | [toMulBot_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ToMulBotNamespacedAligned.lean/declarations/tomulbot-zero.md) | 41 | `result-track:bfdc24ccbc9804388d8d3e5aa9be726013da2e8c1e442164ec7801c5846d152f` |
+| 3 | `theorem` | [toMulBot_coe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ToMulBotNamespacedAligned.lean/declarations/tomulbot-coe.md) | 46 | `result-track:3a8691c065c6785af269049d361b59dbdd847fde49e80c5d5c468022bb7f7dd6` |
+| 4 | `theorem` | [toMulBot_symm_bot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ToMulBotNamespacedAligned.lean/declarations/tomulbot-symm-bot.md) | 52 | `result-track:44bcc409beb4afbe9059a86efe185a506979002d9436b957fcf48e175365525a` |
+| 5 | `theorem` | [toMulBot_coe_ofAdd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ToMulBotNamespacedAligned.lean/declarations/tomulbot-coe-ofadd.md) | 57 | `result-track:2f4d86bd75421302cdf6269be66f3724a7de486d15dfd1c3d8f1533ee5935876` |
+| 6 | `theorem` | [toMulBot_strictMono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ToMulBotNamespacedAligned.lean/declarations/tomulbot-strictmono.md) | 64 | `result-track:b1b6613ebcfcb15e14f49589a589d61ac91c8caac323269b3197a5b3db0345b4` |
+| 7 | `theorem` | [toMulBot_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ToMulBotNamespacedAligned.lean/declarations/tomulbot-le.md) | 68 | `result-track:b081b354792d8bc5c4caac49d65a78cc31d9ac2b4ab7fd657c6fee8dcdb84bb1` |
+| 8 | `theorem` | [toMulBot_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ToMulBotNamespacedAligned.lean/declarations/tomulbot-lt.md) | 73 | `result-track:0b04b50ed1033f22f5040298666875abf0273e44f48179d455412e588860cc75` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

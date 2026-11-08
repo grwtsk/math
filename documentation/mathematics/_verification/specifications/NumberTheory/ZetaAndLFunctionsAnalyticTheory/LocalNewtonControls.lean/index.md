@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LocalNewtonControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LocalNewtonControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LocalNewtonControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LocalNewtonControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.LocalNewtonWitness`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/LocalNewtonWitness.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.LocalNewtonWitness`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/LocalNewtonWitness.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Tactic.NormNum` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,17 +58,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [quadraticData](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LocalNewtonControls.lean/declarations/quadraticdata.md) | 20 | `declaration-track:6f10851f85215d92c2d5cf2e99360e6b2a48b1950bb2569b48b3074aa11e4314` |
-| 2 | `theorem` | [quadratic_margins](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LocalNewtonControls.lean/declarations/quadratic-margins.md) | 22 | `result-track:aeef63067b8b48f862e0c6800ea278b27e467e88a4c77f4fb86a9175910dd97f` |
-| 3 | `theorem` | [multiple_root_defect_rejected](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LocalNewtonControls.lean/declarations/multiple-root-defect-rejected.md) | 27 | `result-track:a86572b912b0a6e2c33aa75a14c24100f1cf38de8cfb22a9b769eb37a498843d` |
-| 4 | `theorem` | [missing_selfmap_rejected](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LocalNewtonControls.lean/declarations/missing-selfmap-rejected.md) | 31 | `result-track:62adfe2b943bf930046245fc383e631cbc8fb07e91ac323a5ed9fd34291a6e01` |
-| 5 | `theorem` | [zero_preconditioner_rejected](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LocalNewtonControls.lean/declarations/zero-preconditioner-rejected.md) | 34 | `result-track:9c9225b29c146a9b06110f46d9020a882c16031f81ee74087bae90cbb2d1f977` |
-| 6 | `theorem` | [imaginary_defect_rejected](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LocalNewtonControls.lean/declarations/imaginary-defect-rejected.md) | 38 | `result-track:2d494bfa19f58ee7c97c9ba5f90dacc9026706e9f8d4f5159b2b09425ed035a5` |
-| 7 | `theorem` | [negative_errors_rejected](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LocalNewtonControls.lean/declarations/negative-errors-rejected.md) | 41 | `result-track:791504f6352b18361b7ca12fca51b283bc6eb5e139cec35a4b0bae2b0ae94749` |
-| 8 | `theorem` | [geometry_controls](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LocalNewtonControls.lean/declarations/geometry-controls.md) | 47 | `result-track:b09171818f1ad2b072a90b1ce64aeaf7e93ca562a3c5c8ccd21eab0a65c58a1c` |
-| 9 | `theorem` | [unproved_curvature_is_not_checked](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LocalNewtonControls.lean/declarations/unproved-curvature-is-not-checked.md) | 54 | `result-track:5f6607620dbddd08614ab9661405bc776d39f55a55e57f7e15b382f8b0d454d4` |
-| 10 | `theorem` | [no_zero_derivative_defect](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LocalNewtonControls.lean/declarations/no-zero-derivative-defect.md) | 59 | `result-track:b7a7fb5b262f6b0e1a40ec96fe51726ef0ac274fdcba8dfcb6bddb248736f7c2` |
-| 11 | `theorem` | [affine_analytic_example](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LocalNewtonControls.lean/declarations/affine-analytic-example.md) | 62 | `result-track:0e1eba716986cfdacab1ca9798b9f1464cef3a2d7ee6a09dbe35ca0cd0cac4f9` |
+| 1 | `def` | [quadraticData](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LocalNewtonControls.lean/declarations/quadraticdata.md) | 20 | `declaration-track:6f10851f85215d92c2d5cf2e99360e6b2a48b1950bb2569b48b3074aa11e4314` |
+| 2 | `theorem` | [quadratic_margins](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LocalNewtonControls.lean/declarations/quadratic-margins.md) | 22 | `result-track:aeef63067b8b48f862e0c6800ea278b27e467e88a4c77f4fb86a9175910dd97f` |
+| 3 | `theorem` | [multiple_root_defect_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LocalNewtonControls.lean/declarations/multiple-root-defect-rejected.md) | 27 | `result-track:a86572b912b0a6e2c33aa75a14c24100f1cf38de8cfb22a9b769eb37a498843d` |
+| 4 | `theorem` | [missing_selfmap_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LocalNewtonControls.lean/declarations/missing-selfmap-rejected.md) | 31 | `result-track:62adfe2b943bf930046245fc383e631cbc8fb07e91ac323a5ed9fd34291a6e01` |
+| 5 | `theorem` | [zero_preconditioner_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LocalNewtonControls.lean/declarations/zero-preconditioner-rejected.md) | 34 | `result-track:9c9225b29c146a9b06110f46d9020a882c16031f81ee74087bae90cbb2d1f977` |
+| 6 | `theorem` | [imaginary_defect_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LocalNewtonControls.lean/declarations/imaginary-defect-rejected.md) | 38 | `result-track:2d494bfa19f58ee7c97c9ba5f90dacc9026706e9f8d4f5159b2b09425ed035a5` |
+| 7 | `theorem` | [negative_errors_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LocalNewtonControls.lean/declarations/negative-errors-rejected.md) | 41 | `result-track:791504f6352b18361b7ca12fca51b283bc6eb5e139cec35a4b0bae2b0ae94749` |
+| 8 | `theorem` | [geometry_controls](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LocalNewtonControls.lean/declarations/geometry-controls.md) | 47 | `result-track:b09171818f1ad2b072a90b1ce64aeaf7e93ca562a3c5c8ccd21eab0a65c58a1c` |
+| 9 | `theorem` | [unproved_curvature_is_not_checked](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LocalNewtonControls.lean/declarations/unproved-curvature-is-not-checked.md) | 54 | `result-track:5f6607620dbddd08614ab9661405bc776d39f55a55e57f7e15b382f8b0d454d4` |
+| 10 | `theorem` | [no_zero_derivative_defect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LocalNewtonControls.lean/declarations/no-zero-derivative-defect.md) | 59 | `result-track:b7a7fb5b262f6b0e1a40ec96fe51726ef0ac274fdcba8dfcb6bddb248736f7c2` |
+| 11 | `theorem` | [affine_analytic_example](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LocalNewtonControls.lean/declarations/affine-analytic-example.md) | 62 | `result-track:0e1eba716986cfdacab1ca9798b9f1464cef3a2d7ee6a09dbe35ca0cd0cac4f9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

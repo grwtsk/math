@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExactDomainAndTailHistoricalSourceEdition2.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExactDomainAndTailHistoricalSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExactDomainAndTailHistoricalSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExactDomainAndTailHistoricalSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteCoverage`](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteCoverage.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteCoverage`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteCoverage.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExactDomainAndTailHistoricalSourceEdition2.lean/declarations/example-source-edition-2.md) | 3 | `declaration-track:5dff614990e55de12216eebd895afdb46f7e8566ee41992d0737ea03436c2511` |
-| 2 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExactDomainAndTailHistoricalSourceEdition2.lean/declarations/example-source-edition-3.md) | 7 | `declaration-track:a748fca55cf5c89706706e2a1a868f036b7caeda36aa5c84371c5faaa6690f3f` |
-| 3 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExactDomainAndTailHistoricalSourceEdition2.lean/declarations/example-source-edition-4.md) | 11 | `declaration-track:ef03d4a3c9e57e9294ed36f386a98f010eed1441d92de57add020629719b0738` |
-| 4 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExactDomainAndTailHistoricalSourceEdition2.lean/declarations/example.md) | 13 | `declaration-track:0ff4be2c97ab4d354af1729806c173d5aeae4eae6f1660f80c1a8f2efec1c166` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExactDomainAndTailHistoricalSourceEdition2.lean/declarations/example-source-edition-2.md) | 3 | `declaration-track:5dff614990e55de12216eebd895afdb46f7e8566ee41992d0737ea03436c2511` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExactDomainAndTailHistoricalSourceEdition2.lean/declarations/example-source-edition-3.md) | 7 | `declaration-track:a748fca55cf5c89706706e2a1a868f036b7caeda36aa5c84371c5faaa6690f3f` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExactDomainAndTailHistoricalSourceEdition2.lean/declarations/example-source-edition-4.md) | 11 | `declaration-track:ef03d4a3c9e57e9294ed36f386a98f010eed1441d92de57add020629719b0738` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExactDomainAndTailHistoricalSourceEdition2.lean/declarations/example.md) | 13 | `declaration-track:0ff4be2c97ab4d354af1729806c173d5aeae4eae6f1660f80c1a8f2efec1c166` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

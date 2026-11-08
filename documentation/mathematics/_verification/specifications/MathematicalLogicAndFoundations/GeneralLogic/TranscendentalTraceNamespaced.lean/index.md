@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TranscendentalTraceNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TranscendentalTraceNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TranscendentalTraceNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TranscendentalTraceNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PeriodLikeTarget](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TranscendentalTraceNamespaced.lean/declarations/periodliketarget.md) | 25 | `declaration-track:65abd84f0c87ad91d888ca2dc101b7d5a9dee2cf782a45537d1ce14ebf545384` |
-| 2 | `structure` | [CrystallineTraceValue](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TranscendentalTraceNamespaced.lean/declarations/crystallinetracevalue.md) | 29 | `declaration-track:0bae59aeb7a1684de968013fecdce54881e13150fbf847c9ca505edd22f6d107` |
-| 3 | `structure` | [TranscendentalTraceContract](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TranscendentalTraceNamespaced.lean/declarations/transcendentaltracecontract.md) | 38 | `declaration-track:b720b8b69fad2f5a92878467504d5e5369b4418e5e182401a4e9102af94fdb13` |
-| 4 | `theorem` | [transcendental_trace_has_period_interpretation_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TranscendentalTraceNamespaced.lean/declarations/transcendental-trace-has-period-interpretation-if-supplied.md) | 46 | `result-track:6ff5d7d9980b3f69bf4cf0f55eee273501d2ea7195f9ebb3f5ff8ffacc96c4e4` |
-| 5 | `theorem` | [transcendental_trace_transport_invariant_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TranscendentalTraceNamespaced.lean/declarations/transcendental-trace-transport-invariant-if-supplied.md) | 51 | `result-track:f54c9c0f04f37a02b1e463c41f2697f729d8a19d43084fe556150974e96f668c` |
+| 1 | `structure` | [PeriodLikeTarget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TranscendentalTraceNamespaced.lean/declarations/periodliketarget.md) | 25 | `declaration-track:65abd84f0c87ad91d888ca2dc101b7d5a9dee2cf782a45537d1ce14ebf545384` |
+| 2 | `structure` | [CrystallineTraceValue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TranscendentalTraceNamespaced.lean/declarations/crystallinetracevalue.md) | 29 | `declaration-track:0bae59aeb7a1684de968013fecdce54881e13150fbf847c9ca505edd22f6d107` |
+| 3 | `structure` | [TranscendentalTraceContract](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TranscendentalTraceNamespaced.lean/declarations/transcendentaltracecontract.md) | 38 | `declaration-track:b720b8b69fad2f5a92878467504d5e5369b4418e5e182401a4e9102af94fdb13` |
+| 4 | `theorem` | [transcendental_trace_has_period_interpretation_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TranscendentalTraceNamespaced.lean/declarations/transcendental-trace-has-period-interpretation-if-supplied.md) | 46 | `result-track:6ff5d7d9980b3f69bf4cf0f55eee273501d2ea7195f9ebb3f5ff8ffacc96c4e4` |
+| 5 | `theorem` | [transcendental_trace_transport_invariant_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TranscendentalTraceNamespaced.lean/declarations/transcendental-trace-transport-invariant-if-supplied.md) | 51 | `result-track:f54c9c0f04f37a02b1e463c41f2697f729d8a19d43084fe556150974e96f668c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

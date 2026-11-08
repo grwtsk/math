@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/Deriv.lean/index.md) · [Full source](../../../../RealFunctions/Deriv.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Deriv.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Deriv.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../RealFunctions/Deriv.lean/declarations/example-source-edition-2.md) | 7 | `declaration-track:5fcce6e95ee0317f03a262e9ea2cd39644c681c33f88843d9f37de44b97010cb` |
-| 2 | `example` | [(anonymous)](../../../../RealFunctions/Deriv.lean/declarations/example.md) | 10 | `declaration-track:332753a92a3ca64eab9bb78ab296e132732bd2cf949fe673e4dc32338b7d5689` |
-| 3 | `example` | [(anonymous)](../../../../RealFunctions/Deriv.lean/declarations/example-source-edition-4.md) | 17 | `declaration-track:f7c848ea09c4409767a6c226d834569bb9a20725fb4bd64ff3921a3cda960e03` |
-| 4 | `example` | [(anonymous)](../../../../RealFunctions/Deriv.lean/declarations/example-source-edition-3.md) | 22 | `declaration-track:c49db557fb922fcabfe84fd944057494c8a6408e3b1ec900db5c7efc2bc7b83b` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Deriv.lean/declarations/example-source-edition-2.md) | 7 | `declaration-track:5fcce6e95ee0317f03a262e9ea2cd39644c681c33f88843d9f37de44b97010cb` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Deriv.lean/declarations/example.md) | 10 | `declaration-track:332753a92a3ca64eab9bb78ab296e132732bd2cf949fe673e4dc32338b7d5689` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Deriv.lean/declarations/example-source-edition-4.md) | 17 | `declaration-track:f7c848ea09c4409767a6c226d834569bb9a20725fb4bd64ff3921a3cda960e03` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Deriv.lean/declarations/example-source-edition-3.md) | 22 | `declaration-track:c49db557fb922fcabfe84fd944057494c8a6408e3b1ec900db5c7efc2bc7b83b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

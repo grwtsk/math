@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/Efficiency.lean/index.md) · [Full source](../../../../Combinatorics/Efficiency.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Efficiency.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Efficiency.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `Mathematics.SemiLocalDefect.PositiveCapacity` — import line 25; external provider; requires a separately pinned dependency.
-- [`GRWTSK.CombinatoricsAndDiscreteMathematics.TwoElementShapley.AveragedIncrements`](../../../../Combinatorics/AveragedIncrements.lean/index.md) — import line 26; pinned internal source present.
+- [`GRWTSK.CombinatoricsAndDiscreteMathematics.TwoElementShapley.AveragedIncrements`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AveragedIncrements.lean/index.md) — import line 26; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [shapley_attribution_efficiency](../../../../Combinatorics/Efficiency.lean/declarations/shapley-attribution-efficiency.md) | 42 | `result-track:fa288d16505deb81be2deae8bea8f834a7c021818632bfbbe1eb4414dbe98f67` |
+| 1 | `theorem` | [shapley_attribution_efficiency](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Efficiency.lean/declarations/shapley-attribution-efficiency.md) | 42 | `result-track:fa288d16505deb81be2deae8bea8f834a7c021818632bfbbe1eb4414dbe98f67` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

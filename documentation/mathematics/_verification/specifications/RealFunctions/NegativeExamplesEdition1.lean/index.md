@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/NegativeExamplesEdition1.lean/index.md) · [Full source](../../../../RealFunctions/NegativeExamplesEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/NegativeExamplesEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/NegativeExamplesEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,17 +60,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [bitsOfNat3](../../../../RealFunctions/NegativeExamplesEdition1.lean/declarations/bitsofnat3.md) | 23 | `declaration-track:bc8820c8d4d4e72b668348edb6898c2b1ad06f6815acdb5c8a38ea5091c2763a` |
-| 2 | `def` | [stateSwap67](../../../../RealFunctions/NegativeExamplesEdition1.lean/declarations/stateswap67.md) | 27 | `declaration-track:f791b6ae1557a94fd46dbc548061148867b7b35a1d69dc613c299f454e5ee633` |
-| 3 | `def` | [stateSwap56](../../../../RealFunctions/NegativeExamplesEdition1.lean/declarations/stateswap56.md) | 31 | `declaration-track:e89a68377a56f838509ac24e701bda60bd8f263e74ea4b920aa2f6da6aa5f106` |
-| 4 | `theorem` | [stateSwaps_same_cycle_data](../../../../RealFunctions/NegativeExamplesEdition1.lean/declarations/stateswaps-same-cycle-data.md) | 35 | `result-track:9a4ceec0f2c28542e72afa84e6309bc99325a94de4c94d8a82767b4a3ba66130` |
-| 5 | `theorem` | [stateSwaps_different_sac](../../../../RealFunctions/NegativeExamplesEdition1.lean/declarations/stateswaps-different-sac.md) | 41 | `result-track:be6425f41a260e1d00a24fb92e83cd03b47f06f180ae3c880147c0c8e9d8b6da` |
-| 6 | `theorem` | [cycle_data_does_not_determine_sac](../../../../RealFunctions/NegativeExamplesEdition1.lean/declarations/cycle-data-does-not-determine-sac.md) | 46 | `result-track:7926086122c15147114ae9aa7c6462dbe39180c795c6a76ca2b401c703f87fa2` |
-| 7 | `def` | [identityFin2](../../../../RealFunctions/NegativeExamplesEdition1.lean/declarations/identityfin2.md) | 55 | `declaration-track:144812e4daa2fac5559d5d7aa1b57bc0bc0adcae66188ea59d405ee8cb53a0cc` |
-| 8 | `def` | [swapFin2](../../../../RealFunctions/NegativeExamplesEdition1.lean/declarations/swapfin2.md) | 59 | `declaration-track:8637b86f992ed5b796f5bb0d749f7361961e95cff8028c07f80e53b7913dfb63` |
-| 9 | `theorem` | [zmod2_determinants_equal](../../../../RealFunctions/NegativeExamplesEdition1.lean/declarations/zmod2-determinants-equal.md) | 63 | `result-track:881611937b31123a8ab85ef9e15afe604ce0e2105068aa4df06e3798d88c1e8a` |
-| 10 | `theorem` | [integral_signs_different](../../../../RealFunctions/NegativeExamplesEdition1.lean/declarations/integral-signs-different.md) | 69 | `result-track:884a18bd469752359400650cc4efd7d5de0d8c53dd295adc9d3eb8df8c179c3f` |
-| 11 | `theorem` | [zmod2_determinant_does_not_determine_integral_parity](../../../../RealFunctions/NegativeExamplesEdition1.lean/declarations/zmod2-determinant-does-not-determine-integral-parity.md) | 74 | `result-track:9cf0bf036ced6011a97eb12afd54179cc7a9704465b2fd0e90f3061ee6b15a04` |
+| 1 | `def` | [bitsOfNat3](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/NegativeExamplesEdition1.lean/declarations/bitsofnat3.md) | 23 | `declaration-track:bc8820c8d4d4e72b668348edb6898c2b1ad06f6815acdb5c8a38ea5091c2763a` |
+| 2 | `def` | [stateSwap67](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/NegativeExamplesEdition1.lean/declarations/stateswap67.md) | 27 | `declaration-track:f791b6ae1557a94fd46dbc548061148867b7b35a1d69dc613c299f454e5ee633` |
+| 3 | `def` | [stateSwap56](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/NegativeExamplesEdition1.lean/declarations/stateswap56.md) | 31 | `declaration-track:e89a68377a56f838509ac24e701bda60bd8f263e74ea4b920aa2f6da6aa5f106` |
+| 4 | `theorem` | [stateSwaps_same_cycle_data](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/NegativeExamplesEdition1.lean/declarations/stateswaps-same-cycle-data.md) | 35 | `result-track:9a4ceec0f2c28542e72afa84e6309bc99325a94de4c94d8a82767b4a3ba66130` |
+| 5 | `theorem` | [stateSwaps_different_sac](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/NegativeExamplesEdition1.lean/declarations/stateswaps-different-sac.md) | 41 | `result-track:be6425f41a260e1d00a24fb92e83cd03b47f06f180ae3c880147c0c8e9d8b6da` |
+| 6 | `theorem` | [cycle_data_does_not_determine_sac](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/NegativeExamplesEdition1.lean/declarations/cycle-data-does-not-determine-sac.md) | 46 | `result-track:7926086122c15147114ae9aa7c6462dbe39180c795c6a76ca2b401c703f87fa2` |
+| 7 | `def` | [identityFin2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/NegativeExamplesEdition1.lean/declarations/identityfin2.md) | 55 | `declaration-track:144812e4daa2fac5559d5d7aa1b57bc0bc0adcae66188ea59d405ee8cb53a0cc` |
+| 8 | `def` | [swapFin2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/NegativeExamplesEdition1.lean/declarations/swapfin2.md) | 59 | `declaration-track:8637b86f992ed5b796f5bb0d749f7361961e95cff8028c07f80e53b7913dfb63` |
+| 9 | `theorem` | [zmod2_determinants_equal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/NegativeExamplesEdition1.lean/declarations/zmod2-determinants-equal.md) | 63 | `result-track:881611937b31123a8ab85ef9e15afe604ce0e2105068aa4df06e3798d88c1e8a` |
+| 10 | `theorem` | [integral_signs_different](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/NegativeExamplesEdition1.lean/declarations/integral-signs-different.md) | 69 | `result-track:884a18bd469752359400650cc4efd7d5de0d8c53dd295adc9d3eb8df8c179c3f` |
+| 11 | `theorem` | [zmod2_determinant_does_not_determine_integral_parity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/NegativeExamplesEdition1.lean/declarations/zmod2-determinant-does-not-determine-integral-parity.md) | 74 | `result-track:9cf0bf036ced6011a97eb12afd54179cc7a9704465b2fd0e90f3061ee6b15a04` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/RowMajorProtocol.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/RowMajorProtocol.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RowMajorProtocol.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RowMajorProtocol.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RowMajorProtocolFrame](../../../../../ComputerScience/AlgorithmsInComputerScience/RowMajorProtocol.lean/declarations/rowmajorprotocolframe.md) | 7 | `declaration-track:8180b347cf15984d2776e17751e9451bbcd07d96a2786489851caee583e81454` |
-| 2 | `theorem` | [rowMajorProtocol_frame_is_matrix_backed](../../../../../ComputerScience/AlgorithmsInComputerScience/RowMajorProtocol.lean/declarations/rowmajorprotocol-frame-is-matrix-backed.md) | 21 | `result-track:d7407158e0d5c2d9e040f133d488994368be178215e9741059bf81b231304f6a` |
+| 1 | `structure` | [RowMajorProtocolFrame](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RowMajorProtocol.lean/declarations/rowmajorprotocolframe.md) | 7 | `declaration-track:8180b347cf15984d2776e17751e9451bbcd07d96a2786489851caee583e81454` |
+| 2 | `theorem` | [rowMajorProtocol_frame_is_matrix_backed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RowMajorProtocol.lean/declarations/rowmajorprotocol-frame-is-matrix-backed.md) | 21 | `result-track:d7407158e0d5c2d9e040f133d488994368be178215e9741059bf81b231304f6a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

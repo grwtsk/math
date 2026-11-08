@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/EstimatePlainKernel.lean/index.md) · [Full source](../../../../Combinatorics/EstimatePlainKernel.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EstimatePlainKernel.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EstimatePlainKernel.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [sourcePlainWeight](../../../../Combinatorics/EstimatePlainKernel.lean/declarations/sourceplainweight.md) | 21 | `declaration-track:68ff88ddf9dad4dc20187b2551bdf124e197a240e6c3bd024a3410bfae8863d1` |
-| 2 | `def` | [sourcePlainKernel](../../../../Combinatorics/EstimatePlainKernel.lean/declarations/sourceplainkernel.md) | 25 | `declaration-track:a8c2bcd964da716468cdf223915f4ffe51a2acf6113bdaca463f87fe60c067d1` |
+| 1 | `def` | [sourcePlainWeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EstimatePlainKernel.lean/declarations/sourceplainweight.md) | 21 | `declaration-track:68ff88ddf9dad4dc20187b2551bdf124e197a240e6c3bd024a3410bfae8863d1` |
+| 2 | `def` | [sourcePlainKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EstimatePlainKernel.lean/declarations/sourceplainkernel.md) | 25 | `declaration-track:a8c2bcd964da716468cdf223915f4ffe51a2acf6113bdaca463f87fe60c067d1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

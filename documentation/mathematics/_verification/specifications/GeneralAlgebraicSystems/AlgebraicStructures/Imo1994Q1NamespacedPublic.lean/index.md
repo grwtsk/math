@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Imo1994Q1NamespacedPublic.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Imo1994Q1NamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Imo1994Q1NamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Imo1994Q1NamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [tedious](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Imo1994Q1NamespacedPublic.lean/declarations/tedious.md) | 45 | `result-track:721f45f06cb8472fc8f3111409c57093be1b49d371cf4a0d5ccb82fba79cdf45` |
-| 2 | `theorem` | [imo1994_q1](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Imo1994Q1NamespacedPublic.lean/declarations/imo1994-q1.md) | 57 | `result-track:98fec08808437d7e4256f3186d2bda28f95fedb43b03a44bcfde87ae25df0f15` |
+| 1 | `theorem` | [tedious](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Imo1994Q1NamespacedPublic.lean/declarations/tedious.md) | 45 | `result-track:721f45f06cb8472fc8f3111409c57093be1b49d371cf4a0d5ccb82fba79cdf45` |
+| 2 | `theorem` | [imo1994_q1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Imo1994Q1NamespacedPublic.lean/declarations/imo1994-q1.md) | 57 | `result-track:98fec08808437d7e4256f3186d2bda28f95fedb43b03a44bcfde87ae25df0f15` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

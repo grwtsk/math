@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ActualCentering.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ActualCentering.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCentering.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCentering.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_remainder_tendsto_integral](../../../../MeasureAndIntegration/ActualCentering.lean/declarations/actual-remainder-tendsto-integral.md) | 21 | `result-track:e144cd99fec4ce580b76c4845cf2e0a7e2a4a5e612c4e37012a9d68d155a5cdd` |
-| 2 | `theorem` | [actual_scaled_laplace_tendsto_zero](../../../../MeasureAndIntegration/ActualCentering.lean/declarations/actual-scaled-laplace-tendsto-zero.md) | 35 | `result-track:fda653f5c47e3a9aca9b75810f1dc1d62375d1752cdcda93da4585eafd41c65a` |
-| 3 | `theorem` | [actual_euler_centering](../../../../MeasureAndIntegration/ActualCentering.lean/declarations/actual-euler-centering.md) | 41 | `result-track:de74130e26ed5c2f52c51d7e65f21695126491b86d07fa3bb7585e1d9536b64d` |
-| 4 | `theorem` | [actual_remainder_tendsto_zero](../../../../MeasureAndIntegration/ActualCentering.lean/declarations/actual-remainder-tendsto-zero.md) | 54 | `result-track:ffedf48f7ee8ba9925614768085967a13d5575ccf9b59a82dbe36215a5e33401` |
-| 5 | `theorem` | [actual_remainder_eq_tail](../../../../MeasureAndIntegration/ActualCentering.lean/declarations/actual-remainder-eq-tail.md) | 58 | `result-track:1e9e7e1d722b5b48b22cf7031886d6f70ed1c213d0b2f25668b2b6799cf89b11` |
+| 1 | `theorem` | [actual_remainder_tendsto_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCentering.lean/declarations/actual-remainder-tendsto-integral.md) | 21 | `result-track:e144cd99fec4ce580b76c4845cf2e0a7e2a4a5e612c4e37012a9d68d155a5cdd` |
+| 2 | `theorem` | [actual_scaled_laplace_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCentering.lean/declarations/actual-scaled-laplace-tendsto-zero.md) | 35 | `result-track:fda653f5c47e3a9aca9b75810f1dc1d62375d1752cdcda93da4585eafd41c65a` |
+| 3 | `theorem` | [actual_euler_centering](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCentering.lean/declarations/actual-euler-centering.md) | 41 | `result-track:de74130e26ed5c2f52c51d7e65f21695126491b86d07fa3bb7585e1d9536b64d` |
+| 4 | `theorem` | [actual_remainder_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCentering.lean/declarations/actual-remainder-tendsto-zero.md) | 54 | `result-track:ffedf48f7ee8ba9925614768085967a13d5575ccf9b59a82dbe36215a5e33401` |
+| 5 | `theorem` | [actual_remainder_eq_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCentering.lean/declarations/actual-remainder-eq-tail.md) | 58 | `result-track:1e9e7e1d722b5b48b22cf7031886d6f70ed1c213d0b2f25668b2b6799cf89b11` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

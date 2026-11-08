@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/ExponentialNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/ExponentialNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ExponentialNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ExponentialNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [selfAdjoint.expUnitary](../../../../FunctionalAnalysis/ExponentialNamespaced.lean/declarations/selfadjoint-expunitary.md) | 42 | `declaration-track:6cbf3174e1fe8fe915e6d6da8aa9a905f2130a3296644d93a8c04ce86eb1c4d8` |
-| 2 | `theorem` | [Commute.expUnitary_add](../../../../FunctionalAnalysis/ExponentialNamespaced.lean/declarations/commute-expunitary-add.md) | 49 | `result-track:46833f905e86a53c097a37db467b5cb06cea2a05bf8d3322aee635b82c3f3918` |
-| 3 | `theorem` | [Commute.expUnitary](../../../../FunctionalAnalysis/ExponentialNamespaced.lean/declarations/commute-expunitary.md) | 58 | `result-track:3b27edcaeea77cbfdf88dedd2a3eff92519510c344d88170eae06187e6949f73` |
+| 1 | `def` | [selfAdjoint.expUnitary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ExponentialNamespaced.lean/declarations/selfadjoint-expunitary.md) | 42 | `declaration-track:6cbf3174e1fe8fe915e6d6da8aa9a905f2130a3296644d93a8c04ce86eb1c4d8` |
+| 2 | `theorem` | [Commute.expUnitary_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ExponentialNamespaced.lean/declarations/commute-expunitary-add.md) | 49 | `result-track:46833f905e86a53c097a37db467b5cb06cea2a05bf8d3322aee635b82c3f3918` |
+| 3 | `theorem` | [Commute.expUnitary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ExponentialNamespaced.lean/declarations/commute-expunitary.md) | 58 | `result-track:3b27edcaeea77cbfdf88dedd2a3eff92519510c344d88170eae06187e6949f73` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

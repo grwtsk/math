@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceDirectCorrectedPairingLeadingNamespacedEdition2.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceDirectCorrectedPairingLeadingNamespacedEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceDirectCorrectedPairingLeadingNamespacedEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceDirectCorrectedPairingLeadingNamespacedEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [leading_upper_of_complete_corrected_pairing](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceDirectCorrectedPairingLeadingNamespacedEdition2.lean/declarations/leading-upper-of-complete-corrected-pairing.md) | 25 | `result-track:4326cff63221922b32c200afb5a84bb5eb8a352218b1bff8716f84149a3bae0d` |
-| 2 | `theorem` | [leading_tail_of_complete_corrected_pairing](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceDirectCorrectedPairingLeadingNamespacedEdition2.lean/declarations/leading-tail-of-complete-corrected-pairing.md) | 32 | `result-track:fb940864f15ecb3461811e698e08bbbbea4febff0cf57f06dc10ca028bda5a3f` |
+| 1 | `theorem` | [leading_upper_of_complete_corrected_pairing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceDirectCorrectedPairingLeadingNamespacedEdition2.lean/declarations/leading-upper-of-complete-corrected-pairing.md) | 25 | `result-track:4326cff63221922b32c200afb5a84bb5eb8a352218b1bff8716f84149a3bae0d` |
+| 2 | `theorem` | [leading_tail_of_complete_corrected_pairing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceDirectCorrectedPairingLeadingNamespacedEdition2.lean/declarations/leading-tail-of-complete-corrected-pairing.md) | 32 | `result-track:fb940864f15ecb3461811e698e08bbbbea4febff0cf57f06dc10ca028bda5a3f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

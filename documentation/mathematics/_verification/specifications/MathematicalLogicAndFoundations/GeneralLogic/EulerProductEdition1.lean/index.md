@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EulerProductEdition1.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EulerProductEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EulerProductEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EulerProductEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [InfiniteEulerProductAuthority](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EulerProductEdition1.lean/declarations/infiniteeulerproductauthority.md) | 14 | `declaration-track:39bd579395fef6840bbad7d07122d942e5ae5ff45f5fc16652cd14ffefcda405` |
-| 2 | `theorem` | [infinite_euler_product_requires_authority](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EulerProductEdition1.lean/declarations/infinite-euler-product-requires-authority.md) | 23 | `result-track:fe0dab79b13b6ce28fd8e34b87713733098cc6aaf129513f5430eea37224858e` |
-| 3 | `def` | [FiniteEulerWindowProvesInfiniteEulerProduct](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EulerProductEdition1.lean/declarations/finiteeulerwindowprovesinfiniteeulerproduct.md) | 33 | `declaration-track:b11345a286e6c161ad1c15dd11bab6729ba5a1742afaf1c4bac677fe618975cc` |
-| 4 | `theorem` | [finite_euler_window_not_infinite_product](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EulerProductEdition1.lean/declarations/finite-euler-window-not-infinite-product.md) | 37 | `result-track:7f2c909072875b9e37212919df3ac3be7c98941301a49cde50de06dc37936ae3` |
+| 1 | `structure` | [InfiniteEulerProductAuthority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EulerProductEdition1.lean/declarations/infiniteeulerproductauthority.md) | 14 | `declaration-track:39bd579395fef6840bbad7d07122d942e5ae5ff45f5fc16652cd14ffefcda405` |
+| 2 | `theorem` | [infinite_euler_product_requires_authority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EulerProductEdition1.lean/declarations/infinite-euler-product-requires-authority.md) | 23 | `result-track:fe0dab79b13b6ce28fd8e34b87713733098cc6aaf129513f5430eea37224858e` |
+| 3 | `def` | [FiniteEulerWindowProvesInfiniteEulerProduct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EulerProductEdition1.lean/declarations/finiteeulerwindowprovesinfiniteeulerproduct.md) | 33 | `declaration-track:b11345a286e6c161ad1c15dd11bab6729ba5a1742afaf1c4bac677fe618975cc` |
+| 4 | `theorem` | [finite_euler_window_not_infinite_product](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EulerProductEdition1.lean/declarations/finite-euler-window-not-infinite-product.md) | 37 | `result-track:7f2c909072875b9e37212919df3ac3be7c98941301a49cde50de06dc37936ae3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../SpecialFunctions/PochhammerNamespaced.lean/index.md) · [Full source](../../../../SpecialFunctions/PochhammerNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/PochhammerNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/PochhammerNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,15 +61,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [differentiable_descPochhammer_eval](../../../../SpecialFunctions/PochhammerNamespaced.lean/declarations/differentiable-descpochhammer-eval.md) | 46 | `result-track:cea911719dd03e0ff5cd5244c8d69f8100382ea5e6ef0fc7c5d3db07d9311f93` |
-| 2 | `theorem` | [continuous_descPochhammer_eval](../../../../SpecialFunctions/PochhammerNamespaced.lean/declarations/continuous-descpochhammer-eval.md) | 50 | `result-track:ab06a6f90be22db4be70b02a02a3eff034c4d0c4aa168aa7352d27e18ef3f615` |
-| 3 | `lemma` | [deriv_descPochhammer_eval_eq_sum_prod_range_erase](../../../../SpecialFunctions/PochhammerNamespaced.lean/declarations/deriv-descpochhammer-eval-eq-sum-prod-range-erase.md) | 53 | `result-track:9f14ee77667eae8bf83c28246b251f1604acf196752870d70487d4be87780c0c` |
-| 4 | `lemma` | [monotoneOn_deriv_descPochhammer_eval](../../../../SpecialFunctions/PochhammerNamespaced.lean/declarations/monotoneon-deriv-descpochhammer-eval.md) | 59 | `result-track:53b21241e3ca15341a5e4e80ce2d737a98d922e9efd7d6983b3be9523ef2c950` |
-| 5 | `theorem` | [convexOn_descPochhammer_eval](../../../../SpecialFunctions/PochhammerNamespaced.lean/declarations/convexon-descpochhammer-eval.md) | 77 | `result-track:079f656321b968d3b2b9c0f59a94a534ff4232b2276d2e2dde9227e22b804f7f` |
-| 6 | `lemma` | [piecewise_Ici_descPochhammer_eval_zero_eq_descFactorial](../../../../SpecialFunctions/PochhammerNamespaced.lean/declarations/piecewise-ici-descpochhammer-eval-zero-eq-descfactorial.md) | 87 | `result-track:25c9e2451f225a8f7640360d7ef7871060ffc21c0bd42c990b3f01363e68b8c7` |
-| 7 | `lemma` | [convexOn_piecewise_Ici_descPochhammer_eval_zero](../../../../SpecialFunctions/PochhammerNamespaced.lean/declarations/convexon-piecewise-ici-descpochhammer-eval-zero.md) | 94 | `result-track:19c8ade599c7b35467f267d1c9444176c49bd84910218bcca0256aa80e42999f` |
-| 8 | `theorem` | [descPochhammer_eval_le_sum_descFactorial](../../../../SpecialFunctions/PochhammerNamespaced.lean/declarations/descpochhammer-eval-le-sum-descfactorial.md) | 103 | `result-track:4e73db690b7bbd89ff6672b0ab4d5c2a310013306b89d86fa9b54aecf561a4ce` |
-| 9 | `theorem` | [descPochhammer_eval_div_factorial_le_sum_choose](../../../../SpecialFunctions/PochhammerNamespaced.lean/declarations/descpochhammer-eval-div-factorial-le-sum-choose.md) | 115 | `result-track:256550ade987476b42ed1003477d9e5e947c58465b0317f30e3a898d5e295aec` |
+| 1 | `theorem` | [differentiable_descPochhammer_eval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/PochhammerNamespaced.lean/declarations/differentiable-descpochhammer-eval.md) | 46 | `result-track:cea911719dd03e0ff5cd5244c8d69f8100382ea5e6ef0fc7c5d3db07d9311f93` |
+| 2 | `theorem` | [continuous_descPochhammer_eval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/PochhammerNamespaced.lean/declarations/continuous-descpochhammer-eval.md) | 50 | `result-track:ab06a6f90be22db4be70b02a02a3eff034c4d0c4aa168aa7352d27e18ef3f615` |
+| 3 | `lemma` | [deriv_descPochhammer_eval_eq_sum_prod_range_erase](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/PochhammerNamespaced.lean/declarations/deriv-descpochhammer-eval-eq-sum-prod-range-erase.md) | 53 | `result-track:9f14ee77667eae8bf83c28246b251f1604acf196752870d70487d4be87780c0c` |
+| 4 | `lemma` | [monotoneOn_deriv_descPochhammer_eval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/PochhammerNamespaced.lean/declarations/monotoneon-deriv-descpochhammer-eval.md) | 59 | `result-track:53b21241e3ca15341a5e4e80ce2d737a98d922e9efd7d6983b3be9523ef2c950` |
+| 5 | `theorem` | [convexOn_descPochhammer_eval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/PochhammerNamespaced.lean/declarations/convexon-descpochhammer-eval.md) | 77 | `result-track:079f656321b968d3b2b9c0f59a94a534ff4232b2276d2e2dde9227e22b804f7f` |
+| 6 | `lemma` | [piecewise_Ici_descPochhammer_eval_zero_eq_descFactorial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/PochhammerNamespaced.lean/declarations/piecewise-ici-descpochhammer-eval-zero-eq-descfactorial.md) | 87 | `result-track:25c9e2451f225a8f7640360d7ef7871060ffc21c0bd42c990b3f01363e68b8c7` |
+| 7 | `lemma` | [convexOn_piecewise_Ici_descPochhammer_eval_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/PochhammerNamespaced.lean/declarations/convexon-piecewise-ici-descpochhammer-eval-zero.md) | 94 | `result-track:19c8ade599c7b35467f267d1c9444176c49bd84910218bcca0256aa80e42999f` |
+| 8 | `theorem` | [descPochhammer_eval_le_sum_descFactorial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/PochhammerNamespaced.lean/declarations/descpochhammer-eval-le-sum-descfactorial.md) | 103 | `result-track:4e73db690b7bbd89ff6672b0ab4d5c2a310013306b89d86fa9b54aecf561a4ce` |
+| 9 | `theorem` | [descPochhammer_eval_div_factorial_le_sum_choose](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/PochhammerNamespaced.lean/declarations/descpochhammer-eval-div-factorial-le-sum-choose.md) | 115 | `result-track:256550ade987476b42ed1003477d9e5e947c58465b0317f30e3a898d5e295aec` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

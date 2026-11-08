@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/SubgroupSimpleNamespaced.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/SubgroupSimpleNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SubgroupSimpleNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SubgroupSimpleNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [IsSimpleGroup](../../../../GroupTheoryAndGeneralizations/SubgroupSimpleNamespaced.lean/declarations/issimplegroup.md) | 41 | `declaration-track:4b129d54b1a1680a5751a02b93543977fab778f672d94a94916e128f5b3d432d` |
-| 2 | `class` | [IsSimpleAddGroup](../../../../GroupTheoryAndGeneralizations/SubgroupSimpleNamespaced.lean/declarations/issimpleaddgroup.md) | 46 | `declaration-track:32bb3bb9497169fae2d3aff4b5908b24be50874295a0852bc58e04af8b072810` |
-| 3 | `theorem` | [Subgroup.Normal.eq_bot_or_eq_top](../../../../GroupTheoryAndGeneralizations/SubgroupSimpleNamespaced.lean/declarations/subgroup-normal-eq-bot-or-eq-top.md) | 55 | `result-track:37bddacec776e817a658eb714c8927728ba941b2fc3fe8a5af085eaae5366396` |
-| 4 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/SubgroupSimpleNamespaced.lean/declarations/instance.md) | 62 | `declaration-track:e707808aa6b22bd705ec1493564719adf8deaa58a08db14767fc958794fd266a` |
-| 5 | `theorem` | [isSimpleGroup_of_surjective](../../../../GroupTheoryAndGeneralizations/SubgroupSimpleNamespaced.lean/declarations/issimplegroup-of-surjective.md) | 68 | `result-track:dce47c1cb8421402b6f634d5bad3989b355ec4d91d42febd90efb1ab48ca4dbb` |
+| 1 | `class` | [IsSimpleGroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SubgroupSimpleNamespaced.lean/declarations/issimplegroup.md) | 41 | `declaration-track:4b129d54b1a1680a5751a02b93543977fab778f672d94a94916e128f5b3d432d` |
+| 2 | `class` | [IsSimpleAddGroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SubgroupSimpleNamespaced.lean/declarations/issimpleaddgroup.md) | 46 | `declaration-track:32bb3bb9497169fae2d3aff4b5908b24be50874295a0852bc58e04af8b072810` |
+| 3 | `theorem` | [Subgroup.Normal.eq_bot_or_eq_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SubgroupSimpleNamespaced.lean/declarations/subgroup-normal-eq-bot-or-eq-top.md) | 55 | `result-track:37bddacec776e817a658eb714c8927728ba941b2fc3fe8a5af085eaae5366396` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SubgroupSimpleNamespaced.lean/declarations/instance.md) | 62 | `declaration-track:e707808aa6b22bd705ec1493564719adf8deaa58a08db14767fc958794fd266a` |
+| 5 | `theorem` | [isSimpleGroup_of_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SubgroupSimpleNamespaced.lean/declarations/issimplegroup-of-surjective.md) | 68 | `result-track:dce47c1cb8421402b6f634d5bad3989b355ec4d91d42febd90efb1ab48ca4dbb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

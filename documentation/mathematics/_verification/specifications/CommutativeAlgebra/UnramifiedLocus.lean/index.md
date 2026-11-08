@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/UnramifiedLocus.lean/index.md) · [Full source](../../../../CommutativeAlgebra/UnramifiedLocus.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UnramifiedLocus.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UnramifiedLocus.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [IsUnramifiedAt](../../../../CommutativeAlgebra/UnramifiedLocus.lean/declarations/isunramifiedat.md) | 36 | `declaration-track:cf9077adba7a2b401ca0797753d5744952bf24a5821ec29efe98048214edf275` |
-| 2 | `def` | [unramifiedLocus](../../../../CommutativeAlgebra/UnramifiedLocus.lean/declarations/unramifiedlocus.md) | 41 | `declaration-track:32ec73a237fdf728afb34171c0b2cf62cb093e32ea3077b136b076c8e92777ab` |
-| 3 | `lemma` | [unramifiedLocus_eq_compl_support](../../../../CommutativeAlgebra/UnramifiedLocus.lean/declarations/unramifiedlocus-eq-compl-support.md) | 46 | `result-track:5a396b1967af11e89257f7b3fd38dce788aa8067e73279c45606871b480f0ce3` |
-| 4 | `lemma` | [basicOpen_subset_unramifiedLocus_iff](../../../../CommutativeAlgebra/UnramifiedLocus.lean/declarations/basicopen-subset-unramifiedlocus-iff.md) | 54 | `result-track:4fe6bc5deb333361abcf5d1da9669f8b37bf93de0b2ace87a666acda1f6f82da` |
-| 5 | `lemma` | [unramifiedLocus_eq_univ_iff](../../../../CommutativeAlgebra/UnramifiedLocus.lean/declarations/unramifiedlocus-eq-univ-iff.md) | 63 | `result-track:ac456f9d36cb97940de6dcc0127a66c614fb397d1b102b29db13d633df42c1b0` |
-| 6 | `lemma` | [isOpen_unramifiedLocus](../../../../CommutativeAlgebra/UnramifiedLocus.lean/declarations/isopen-unramifiedlocus.md) | 68 | `result-track:6e8961f85731f6cdc29b23fd8fbb23231da8fab1dd763d181a703fa2fa7f407a` |
+| 1 | `abbrev` | [IsUnramifiedAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UnramifiedLocus.lean/declarations/isunramifiedat.md) | 36 | `declaration-track:cf9077adba7a2b401ca0797753d5744952bf24a5821ec29efe98048214edf275` |
+| 2 | `def` | [unramifiedLocus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UnramifiedLocus.lean/declarations/unramifiedlocus.md) | 41 | `declaration-track:32ec73a237fdf728afb34171c0b2cf62cb093e32ea3077b136b076c8e92777ab` |
+| 3 | `lemma` | [unramifiedLocus_eq_compl_support](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UnramifiedLocus.lean/declarations/unramifiedlocus-eq-compl-support.md) | 46 | `result-track:5a396b1967af11e89257f7b3fd38dce788aa8067e73279c45606871b480f0ce3` |
+| 4 | `lemma` | [basicOpen_subset_unramifiedLocus_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UnramifiedLocus.lean/declarations/basicopen-subset-unramifiedlocus-iff.md) | 54 | `result-track:4fe6bc5deb333361abcf5d1da9669f8b37bf93de0b2ace87a666acda1f6f82da` |
+| 5 | `lemma` | [unramifiedLocus_eq_univ_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UnramifiedLocus.lean/declarations/unramifiedlocus-eq-univ-iff.md) | 63 | `result-track:ac456f9d36cb97940de6dcc0127a66c614fb397d1b102b29db13d633df42c1b0` |
+| 6 | `lemma` | [isOpen_unramifiedLocus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UnramifiedLocus.lean/declarations/isopen-unramifiedlocus.md) | 68 | `result-track:6e8961f85731f6cdc29b23fd8fbb23231da8fab1dd763d181a703fa2fa7f407a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

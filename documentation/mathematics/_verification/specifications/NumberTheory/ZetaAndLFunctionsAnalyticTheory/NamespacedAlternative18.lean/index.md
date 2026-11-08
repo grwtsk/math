@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NamespacedAlternative18.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NamespacedAlternative18.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NamespacedAlternative18.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NamespacedAlternative18.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [iteratedDeriv_evenBasis](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NamespacedAlternative18.lean/declarations/iteratedderiv-evenbasis.md) | 25 | `result-track:fd003ee90be784f60934e9dfb34e4384d71e04ca5a1a2a85e719ba94cc45d0fc` |
-| 2 | `theorem` | [iteratedDeriv_evenBasis_add](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NamespacedAlternative18.lean/declarations/iteratedderiv-evenbasis-add.md) | 37 | `result-track:ea8b4c8a88d11a4ff4b0f6dc96a0cef2a32dcc58deb0f5a53790f98f96e6f533` |
-| 3 | `theorem` | [iteratedDeriv_evenBasis_add_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NamespacedAlternative18.lean/declarations/iteratedderiv-evenbasis-add-zero.md) | 57 | `result-track:0b156492d9b91d71c59a83d98f2174964adb7d7dbf54eb4a004baf4ea7432084` |
+| 1 | `theorem` | [iteratedDeriv_evenBasis](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NamespacedAlternative18.lean/declarations/iteratedderiv-evenbasis.md) | 25 | `result-track:fd003ee90be784f60934e9dfb34e4384d71e04ca5a1a2a85e719ba94cc45d0fc` |
+| 2 | `theorem` | [iteratedDeriv_evenBasis_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NamespacedAlternative18.lean/declarations/iteratedderiv-evenbasis-add.md) | 37 | `result-track:ea8b4c8a88d11a4ff4b0f6dc96a0cef2a32dcc58deb0f5a53790f98f96e6f533` |
+| 3 | `theorem` | [iteratedDeriv_evenBasis_add_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NamespacedAlternative18.lean/declarations/iteratedderiv-evenbasis-add-zero.md) | 57 | `result-track:0b156492d9b91d71c59a83d98f2174964adb7d7dbf54eb4a004baf4ea7432084` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNumElems.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNumElems.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNumElems.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNumElems.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [numElems](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNumElems.lean/declarations/numelems.md) | 7 | `declaration-track:7c0cc6008cec4f8f1e236cb6d097977e06bcc77ddc68530c7b374fbbc3fa8359` |
-| 2 | `theorem` | [numElems_stop_le_start](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNumElems.lean/declarations/numelems-stop-le-start.md) | 14 | `result-track:0291ee9f9ef36e03dbae8f8782e403b8c9e0bd54c2f0347a955b09ba06556dc5` |
-| 3 | `theorem` | [numElems_step_1](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNumElems.lean/declarations/numelems-step-1.md) | 20 | `result-track:4279981d2e627c1b9e1e350e6d9914fa83080171e69f98ba260e9fd54b9b3c81` |
-| 4 | `theorem` | [numElems_le_iff](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNumElems.lean/declarations/numelems-le-iff.md) | 23 | `result-track:7e59a5b8b3b3c96f385298d77afbefbcc23d7d0a1a3e60cb56479fe1b5929d06` |
-| 5 | `theorem` | [mem_range'_elems](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNumElems.lean/declarations/mem-range-elems.md) | 34 | `result-track:adf694f08c96633d034baddf71ea226cdca26988d81bcca60b04c406e7b80a35` |
-| 6 | `theorem` | [forIn'_eq_forIn_range'](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNumElems.lean/declarations/forin-eq-forin-range.md) | 43 | `result-track:17cdeedc678c49ee08d7c34266f30589e2d12c93b71a2fc1b41d92b4fbf83d77` |
-| 7 | `theorem` | [forIn_eq_forIn_range'](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNumElems.lean/declarations/forin-eq-forin-range-source-edition-2.md) | 88 | `result-track:5ab95fa064baa1e61e01a00c3fdba2d9cdaaa3adc2e6d5ddff44d5f2fb3043f4` |
+| 1 | `def` | [numElems](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNumElems.lean/declarations/numelems.md) | 7 | `declaration-track:7c0cc6008cec4f8f1e236cb6d097977e06bcc77ddc68530c7b374fbbc3fa8359` |
+| 2 | `theorem` | [numElems_stop_le_start](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNumElems.lean/declarations/numelems-stop-le-start.md) | 14 | `result-track:0291ee9f9ef36e03dbae8f8782e403b8c9e0bd54c2f0347a955b09ba06556dc5` |
+| 3 | `theorem` | [numElems_step_1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNumElems.lean/declarations/numelems-step-1.md) | 20 | `result-track:4279981d2e627c1b9e1e350e6d9914fa83080171e69f98ba260e9fd54b9b3c81` |
+| 4 | `theorem` | [numElems_le_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNumElems.lean/declarations/numelems-le-iff.md) | 23 | `result-track:7e59a5b8b3b3c96f385298d77afbefbcc23d7d0a1a3e60cb56479fe1b5929d06` |
+| 5 | `theorem` | [mem_range'_elems](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNumElems.lean/declarations/mem-range-elems.md) | 34 | `result-track:adf694f08c96633d034baddf71ea226cdca26988d81bcca60b04c406e7b80a35` |
+| 6 | `theorem` | [forIn'_eq_forIn_range'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNumElems.lean/declarations/forin-eq-forin-range.md) | 43 | `result-track:17cdeedc678c49ee08d7c34266f30589e2d12c93b71a2fc1b41d92b4fbf83d77` |
+| 7 | `theorem` | [forIn_eq_forIn_range'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasNumElems.lean/declarations/forin-eq-forin-range-source-edition-2.md) | 88 | `result-track:5ab95fa064baa1e61e01a00c3fdba2d9cdaaa3adc2e6d5ddff44d5f2fb3043f4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

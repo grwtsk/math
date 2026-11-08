@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ComputationApproximationCorollariesApproximationCorollariesSourceEdition1.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ComputationApproximationCorollariesApproximationCorollariesSourceEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ComputationApproximationCorollariesApproximationCorollariesSourceEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ComputationApproximationCorollariesApproximationCorollariesSourceEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,10 +61,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [of_convs_eq_convs'](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ComputationApproximationCorollariesApproximationCorollariesSourceEdition1.lean/declarations/of-convs-eq-convs.md) | 47 | `result-track:1bb9cf5743bc36df1a966bab77b3f85fb0b88704fc709e404f76eecd2e92cee6` |
-| 2 | `theorem` | [convs_succ](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ComputationApproximationCorollariesApproximationCorollariesSourceEdition1.lean/declarations/convs-succ.md) | 53 | `result-track:98426265526882864af17619913d0e96633376da170d5e6bc8c273188017f493` |
-| 3 | `theorem` | [of_convergence_epsilon](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ComputationApproximationCorollariesApproximationCorollariesSourceEdition1.lean/declarations/of-convergence-epsilon.md) | 70 | `result-track:86b7890914efdfb4b5295f734dac378065322f111b22f92d76a7bedfd9153abf` |
-| 4 | `theorem` | [of_convergence](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ComputationApproximationCorollariesApproximationCorollariesSourceEdition1.lean/declarations/of-convergence.md) | 115 | `result-track:3c81100e55b14c0df18a1dc3b31df23d0453120aa7692e8a88c522e9e3b8659e` |
+| 1 | `theorem` | [of_convs_eq_convs'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ComputationApproximationCorollariesApproximationCorollariesSourceEdition1.lean/declarations/of-convs-eq-convs.md) | 47 | `result-track:1bb9cf5743bc36df1a966bab77b3f85fb0b88704fc709e404f76eecd2e92cee6` |
+| 2 | `theorem` | [convs_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ComputationApproximationCorollariesApproximationCorollariesSourceEdition1.lean/declarations/convs-succ.md) | 53 | `result-track:98426265526882864af17619913d0e96633376da170d5e6bc8c273188017f493` |
+| 3 | `theorem` | [of_convergence_epsilon](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ComputationApproximationCorollariesApproximationCorollariesSourceEdition1.lean/declarations/of-convergence-epsilon.md) | 70 | `result-track:86b7890914efdfb4b5295f734dac378065322f111b22f92d76a7bedfd9153abf` |
+| 4 | `theorem` | [of_convergence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ComputationApproximationCorollariesApproximationCorollariesSourceEdition1.lean/declarations/of-convergence.md) | 115 | `result-track:3c81100e55b14c0df18a1dc3b31df23d0453120aa7692e8a88c522e9e3b8659e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

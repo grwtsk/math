@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WithAlgebraicStructuresNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WithAlgebraicStructuresNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WithAlgebraicStructuresNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WithAlgebraicStructuresNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [colimit_rep_eq_zero](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WithAlgebraicStructuresNamespaced.lean/declarations/colimit-rep-eq-zero.md) | 52 | `result-track:0fa256df8dedc8466357729774c4a16ae3c2d4d9167935a6213f21e5f57b4b59` |
-| 2 | `lemma` | [colimit_no_zero_smul_divisor](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WithAlgebraicStructuresNamespaced.lean/declarations/colimit-no-zero-smul-divisor.md) | 68 | `result-track:4199a34c2d588897273f82b6c136208881e5470446f37f292673814ddc73867e` |
+| 1 | `theorem` | [colimit_rep_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WithAlgebraicStructuresNamespaced.lean/declarations/colimit-rep-eq-zero.md) | 52 | `result-track:0fa256df8dedc8466357729774c4a16ae3c2d4d9167935a6213f21e5f57b4b59` |
+| 2 | `lemma` | [colimit_no_zero_smul_divisor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WithAlgebraicStructuresNamespaced.lean/declarations/colimit-no-zero-smul-divisor.md) | 68 | `result-track:4199a34c2d588897273f82b6c136208881e5470446f37f292673814ddc73867e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

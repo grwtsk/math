@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ArrayObservationLift.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ArrayObservationLift.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ArrayObservationLift.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ArrayObservationLift.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -51,7 +51,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 - `Batteries.Data.Nat.Lemmas` — import line 21; external provider; requires a separately pinned dependency.
 - `Mathlib.Data.Fintype.BigOperators` — import line 22; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 23; external provider; requires a separately pinned dependency.
-- [One Bit Image Quotient](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OneBitImageQuotient.lean/index.md) — import line 25; pinned internal source present.
+- [One Bit Image Quotient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OneBitImageQuotient.lean/index.md) — import line 25; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -62,9 +62,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ofArrayBacked](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ArrayObservationLift.lean/declarations/ofarraybacked.md) | 60 | `declaration-track:ac06f60d25ace9be6d01fb66805f09179ed4eb5f573a8ef710f8bd2aefa3ac2c` |
-| 2 | `theorem` | [ofArrayBacked_encode](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ArrayObservationLift.lean/declarations/ofarraybacked-encode.md) | 67 | `result-track:dd449e1e8ec3568dd5f824a03aab81a03a3bb27a45ceb8e66b1a9d36655f86ac` |
-| 3 | `theorem` | [ofArrayBacked_indistinguishable_iff](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ArrayObservationLift.lean/declarations/ofarraybacked-indistinguishable-iff.md) | 78 | `result-track:35f65f12ff3cded3ec1b2f4b94194ee8d413d5ca6d19a9cf39014c798cccccd1` |
+| 1 | `def` | [ofArrayBacked](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ArrayObservationLift.lean/declarations/ofarraybacked.md) | 60 | `declaration-track:ac06f60d25ace9be6d01fb66805f09179ed4eb5f573a8ef710f8bd2aefa3ac2c` |
+| 2 | `theorem` | [ofArrayBacked_encode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ArrayObservationLift.lean/declarations/ofarraybacked-encode.md) | 67 | `result-track:dd449e1e8ec3568dd5f824a03aab81a03a3bb27a45ceb8e66b1a9d36655f86ac` |
+| 3 | `theorem` | [ofArrayBacked_indistinguishable_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ArrayObservationLift.lean/declarations/ofarraybacked-indistinguishable-iff.md) | 78 | `result-track:35f65f12ff3cded3ec1b2f4b94194ee8d413d5ca6d19a9cf39014c798cccccd1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RefinementAbstractionAndRepresentationAdapters.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RefinementAbstractionAndRepresentationAdapters.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RefinementAbstractionAndRepresentationAdapters.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RefinementAbstractionAndRepresentationAdapters.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,12 +62,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [toComparisonSpec](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RefinementAbstractionAndRepresentationAdapters.lean/declarations/tocomparisonspec.md) | 86 | `declaration-track:ecc642066fe8961c3e51da20105fcf9af34a187ec8dabde76cc8d8923efa9235` |
-| 2 | `theorem` | [toComparisonSpec_apply](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RefinementAbstractionAndRepresentationAdapters.lean/declarations/tocomparisonspec-apply.md) | 91 | `result-track:0c4f26c2709ef7c0f45c3f7321230f6757cc9d9da64c595a47cc96e50bd7d7d3` |
-| 3 | `def` | [abstractionComparisonSpec](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RefinementAbstractionAndRepresentationAdapters.lean/declarations/abstractioncomparisonspec.md) | 101 | `declaration-track:74ea21df93e18d4c3f2d573bcec06d89ca5cbeb99f212ad32a9e2c5036e6b8cd` |
-| 4 | `def` | [representationComparisonSpec](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RefinementAbstractionAndRepresentationAdapters.lean/declarations/representationcomparisonspec.md) | 105 | `declaration-track:d49c4302b62333e56f08c9a0b84299f5aac0f9980e385eefbaeaa1652c20252b` |
-| 5 | `theorem` | [representationComparison_injective](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RefinementAbstractionAndRepresentationAdapters.lean/declarations/representationcomparison-injective.md) | 109 | `result-track:f70f23fe2b660dbb7a281983a02b0bbdc3ea801b5369e1c73b8a3a59a0e3c23c` |
-| 6 | `theorem` | [abstraction_leftInverse_representation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RefinementAbstractionAndRepresentationAdapters.lean/declarations/abstraction-leftinverse-representation.md) | 114 | `result-track:88035461379c10c67953367e4bf3e1076dc554c5c24a973758d917d585cd89fc` |
+| 1 | `def` | [toComparisonSpec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RefinementAbstractionAndRepresentationAdapters.lean/declarations/tocomparisonspec.md) | 86 | `declaration-track:ecc642066fe8961c3e51da20105fcf9af34a187ec8dabde76cc8d8923efa9235` |
+| 2 | `theorem` | [toComparisonSpec_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RefinementAbstractionAndRepresentationAdapters.lean/declarations/tocomparisonspec-apply.md) | 91 | `result-track:0c4f26c2709ef7c0f45c3f7321230f6757cc9d9da64c595a47cc96e50bd7d7d3` |
+| 3 | `def` | [abstractionComparisonSpec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RefinementAbstractionAndRepresentationAdapters.lean/declarations/abstractioncomparisonspec.md) | 101 | `declaration-track:74ea21df93e18d4c3f2d573bcec06d89ca5cbeb99f212ad32a9e2c5036e6b8cd` |
+| 4 | `def` | [representationComparisonSpec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RefinementAbstractionAndRepresentationAdapters.lean/declarations/representationcomparisonspec.md) | 105 | `declaration-track:d49c4302b62333e56f08c9a0b84299f5aac0f9980e385eefbaeaa1652c20252b` |
+| 5 | `theorem` | [representationComparison_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RefinementAbstractionAndRepresentationAdapters.lean/declarations/representationcomparison-injective.md) | 109 | `result-track:f70f23fe2b660dbb7a281983a02b0bbdc3ea801b5369e1c73b8a3a59a0e3c23c` |
+| 6 | `theorem` | [abstraction_leftInverse_representation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RefinementAbstractionAndRepresentationAdapters.lean/declarations/abstraction-leftinverse-representation.md) | 114 | `result-track:88035461379c10c67953367e4bf3e1076dc554c5c24a973758d917d585cd89fc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/CanonicalTentLogEvaluationCore.lean/index.md) · [Full source](../../../../NumberTheory/CanonicalTentLogEvaluationCore.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentLogEvaluationCore.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentLogEvaluationCore.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,11 +46,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Interfaces.CanonicalTentRecordEvaluationCore`](../../../../NumberTheory/CanonicalTentRecordEvaluationCore.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.Real.RationalLogEnclosure`](../../../../RealFunctions/RealAnalysisRationalLogEnclosure.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.LogDerivedPowerEvaluation`](../../../../FunctionsOfAComplexVariable/LogDerivedPowerEvaluation.lean/index.md) — import line 6; pinned internal source present.
-- [`GRWTSK.NumberTheory.Chebyshev.CanonicalTentLogEvaluation`](../../../../NumberTheory/CanonicalTentLogEvaluation.lean/index.md) — import line 7; pinned internal source present.
-- [`GRWTSK.NumberTheory.Chebyshev.Checks.RationalLogControls`](../../../../NumberTheory/RationalLogControls.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.Interfaces.CanonicalTentRecordEvaluationCore`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentRecordEvaluationCore.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Real.RationalLogEnclosure`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RealAnalysisRationalLogEnclosure.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.LogDerivedPowerEvaluation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/LogDerivedPowerEvaluation.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.CanonicalTentLogEvaluation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentLogEvaluation.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.Checks.RationalLogControls`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RationalLogControls.lean/index.md) — import line 8; pinned internal source present.
 
 ## Top results and three-degree verification metric
 

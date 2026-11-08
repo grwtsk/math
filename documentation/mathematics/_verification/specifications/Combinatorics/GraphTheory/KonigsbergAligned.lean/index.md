@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/KonigsbergAligned.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/KonigsbergAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/KonigsbergAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/KonigsbergAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [Verts](../../../../../Combinatorics/GraphTheory/KonigsbergAligned.lean/declarations/verts.md) | 23 | `declaration-track:33c32f006b1b613811871ab8e64608898644d7ff4bd9472edfd266d4237b57ba` |
-| 2 | `def` | [edges](../../../../../Combinatorics/GraphTheory/KonigsbergAligned.lean/declarations/edges.md) | 35 | `declaration-track:bbc05c54b14f6d36560de078d21316b6a732d9ecc9509bd483f5910942311bca` |
-| 3 | `def` | [adj](../../../../../Combinatorics/GraphTheory/KonigsbergAligned.lean/declarations/adj.md) | 43 | `declaration-track:dc99bbdd9d038f0d4147d5d206748131d9e776a97a60b611f787cf47f721568d` |
-| 4 | `def` | [graph](../../../../../Combinatorics/GraphTheory/KonigsbergAligned.lean/declarations/graph.md) | 54 | `declaration-track:00a49912f9efd967f349430521cc7303cfb88d40743a219380b1d855d50950f0` |
-| 5 | `instance` | [(anonymous)](../../../../../Combinatorics/GraphTheory/KonigsbergAligned.lean/declarations/instance.md) | 64 | `declaration-track:4ec53ffe3a4c401d1764918691ffacc3df85e89076e4a11378092f3c99822baf` |
-| 6 | `def` | [degree](../../../../../Combinatorics/GraphTheory/KonigsbergAligned.lean/declarations/degree.md) | 68 | `declaration-track:9c53ab00655b806b177718e1df96fb0bac6db13bc41f83ffff3814fb5a07232d` |
-| 7 | `lemma` | [degree_eq_degree](../../../../../Combinatorics/GraphTheory/KonigsbergAligned.lean/declarations/degree-eq-degree.md) | 74 | `result-track:dfe70dd08804987dd3d7485621c83f86ef9f9ed05f0d68fd06599c7d28d2ebe0` |
-| 8 | `lemma` | [not_even_degree_iff](../../../../../Combinatorics/GraphTheory/KonigsbergAligned.lean/declarations/not-even-degree-iff.md) | 77 | `result-track:b704dc9bc0f24abdad2cce370ec6840d6b63b331db9c66984108b9b7e9c61910` |
-| 9 | `lemma` | [setOf_odd_degree_eq](../../../../../Combinatorics/GraphTheory/KonigsbergAligned.lean/declarations/setof-odd-degree-eq.md) | 80 | `result-track:fa60fafa937dbd7f2649e3ad0bec9240e98c2925834b9c3977c84cd6e9005d44` |
-| 10 | `theorem` | [not_isEulerian](../../../../../Combinatorics/GraphTheory/KonigsbergAligned.lean/declarations/not-iseulerian.md) | 86 | `result-track:2047e0b3eb2dd83d8b4c54018dcde2c8a45a5588906086ab2e4301b12cc75021` |
+| 1 | `inductive` | [Verts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/KonigsbergAligned.lean/declarations/verts.md) | 23 | `declaration-track:33c32f006b1b613811871ab8e64608898644d7ff4bd9472edfd266d4237b57ba` |
+| 2 | `def` | [edges](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/KonigsbergAligned.lean/declarations/edges.md) | 35 | `declaration-track:bbc05c54b14f6d36560de078d21316b6a732d9ecc9509bd483f5910942311bca` |
+| 3 | `def` | [adj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/KonigsbergAligned.lean/declarations/adj.md) | 43 | `declaration-track:dc99bbdd9d038f0d4147d5d206748131d9e776a97a60b611f787cf47f721568d` |
+| 4 | `def` | [graph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/KonigsbergAligned.lean/declarations/graph.md) | 54 | `declaration-track:00a49912f9efd967f349430521cc7303cfb88d40743a219380b1d855d50950f0` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/KonigsbergAligned.lean/declarations/instance.md) | 64 | `declaration-track:4ec53ffe3a4c401d1764918691ffacc3df85e89076e4a11378092f3c99822baf` |
+| 6 | `def` | [degree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/KonigsbergAligned.lean/declarations/degree.md) | 68 | `declaration-track:9c53ab00655b806b177718e1df96fb0bac6db13bc41f83ffff3814fb5a07232d` |
+| 7 | `lemma` | [degree_eq_degree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/KonigsbergAligned.lean/declarations/degree-eq-degree.md) | 74 | `result-track:dfe70dd08804987dd3d7485621c83f86ef9f9ed05f0d68fd06599c7d28d2ebe0` |
+| 8 | `lemma` | [not_even_degree_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/KonigsbergAligned.lean/declarations/not-even-degree-iff.md) | 77 | `result-track:b704dc9bc0f24abdad2cce370ec6840d6b63b331db9c66984108b9b7e9c61910` |
+| 9 | `lemma` | [setOf_odd_degree_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/KonigsbergAligned.lean/declarations/setof-odd-degree-eq.md) | 80 | `result-track:fa60fafa937dbd7f2649e3ad0bec9240e98c2925834b9c3977c84cd6e9005d44` |
+| 10 | `theorem` | [not_isEulerian](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/KonigsbergAligned.lean/declarations/not-iseulerian.md) | 86 | `result-track:2047e0b3eb2dd83d8b4c54018dcde2c8a45a5588906086ab2e4301b12cc75021` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

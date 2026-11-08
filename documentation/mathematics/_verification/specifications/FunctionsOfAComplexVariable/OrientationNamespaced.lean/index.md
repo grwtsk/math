@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/OrientationNamespaced.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/OrientationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/OrientationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/OrientationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [orientation](../../../../FunctionsOfAComplexVariable/OrientationNamespaced.lean/declarations/orientation.md) | 28 | `declaration-track:0f28a1d1e81fd8b449807dd61cf29b9d5c174c1d606d608e21f115ace3e8883b` |
+| 1 | `def` | [orientation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/OrientationNamespaced.lean/declarations/orientation.md) | 28 | `declaration-track:0f28a1d1e81fd8b449807dd61cf29b9d5c174c1d606d608e21f115ace3e8883b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

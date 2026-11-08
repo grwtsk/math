@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/Results.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/Results.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/Results.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/Results.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [harmonicPart](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/Results.lean/declarations/harmonicpart.md) | 34 | `declaration-track:8bd8e444cdb8238ebda0d4158bdece252ba8bd653ace9062cb03e362587e2291` |
-| 2 | `theorem` | [harmonicPart_adjoint](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/Results.lean/declarations/harmonicpart-adjoint.md) | 37 | `result-track:744400cf283d6bff8f66985a2124939018411c992e49a5ae3582ee5a3ded6049` |
-| 3 | `theorem` | [harmonicPart_closed](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/Results.lean/declarations/harmonicpart-closed.md) | 45 | `result-track:7bbe68f04d99708761a8ec53e46e9efbb5997933f34f5deb8d0dac8a3c3f95f1` |
-| 4 | `theorem` | [harmonicPart_zero_iff](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/Results.lean/declarations/harmonicpart-zero-iff.md) | 58 | `result-track:8b46d6f8cce40d883cc2e16edd207ad43edb60e743b02c56e3f9f9780ddcc139` |
-| 5 | `theorem` | [exists_gauge_decomposition](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/Results.lean/declarations/exists-gauge-decomposition.md) | 66 | `result-track:724728831767d4b0a0668726ab363199ed0a19b6e3db18db84549413d221e3c2` |
-| 6 | `theorem` | [closed_hodge_decomposition](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/Results.lean/declarations/closed-hodge-decomposition.md) | 79 | `result-track:fb1788630747edec29f4ab50d99683cca3e68f4ad4e86e7995508196dfbde786` |
-| 7 | `theorem` | [exact_gauge_bound](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/Results.lean/declarations/exact-gauge-bound.md) | 88 | `result-track:78c9a30b5db5a3be98d0f4d6b3f1878e3d2095a5adae3488eb910837c6e38169` |
+| 1 | `def` | [harmonicPart](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/Results.lean/declarations/harmonicpart.md) | 34 | `declaration-track:8bd8e444cdb8238ebda0d4158bdece252ba8bd653ace9062cb03e362587e2291` |
+| 2 | `theorem` | [harmonicPart_adjoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/Results.lean/declarations/harmonicpart-adjoint.md) | 37 | `result-track:744400cf283d6bff8f66985a2124939018411c992e49a5ae3582ee5a3ded6049` |
+| 3 | `theorem` | [harmonicPart_closed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/Results.lean/declarations/harmonicpart-closed.md) | 45 | `result-track:7bbe68f04d99708761a8ec53e46e9efbb5997933f34f5deb8d0dac8a3c3f95f1` |
+| 4 | `theorem` | [harmonicPart_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/Results.lean/declarations/harmonicpart-zero-iff.md) | 58 | `result-track:8b46d6f8cce40d883cc2e16edd207ad43edb60e743b02c56e3f9f9780ddcc139` |
+| 5 | `theorem` | [exists_gauge_decomposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/Results.lean/declarations/exists-gauge-decomposition.md) | 66 | `result-track:724728831767d4b0a0668726ab363199ed0a19b6e3db18db84549413d221e3c2` |
+| 6 | `theorem` | [closed_hodge_decomposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/Results.lean/declarations/closed-hodge-decomposition.md) | 79 | `result-track:fb1788630747edec29f4ab50d99683cca3e68f4ad4e86e7995508196dfbde786` |
+| 7 | `theorem` | [exact_gauge_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/Results.lean/declarations/exact-gauge-bound.md) | 88 | `result-track:78c9a30b5db5a3be98d0f4d6b3f1878e3d2095a5adae3488eb910837c6e38169` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

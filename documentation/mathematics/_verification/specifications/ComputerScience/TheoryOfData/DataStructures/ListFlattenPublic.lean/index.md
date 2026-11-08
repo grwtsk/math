@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListFlattenPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListFlattenPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListFlattenPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListFlattenPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Sublist.flatten](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListFlattenPublic.lean/declarations/sublist-flatten.md) | 27 | `result-track:988ef746d495fd4612cab3cf995a3f18dc981a7347d9fe78a9e455a2efe16139` |
-| 2 | `theorem` | [Sublist.flatMap](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListFlattenPublic.lean/declarations/sublist-flatmap.md) | 32 | `result-track:8d14622b2e40c31923913a06d09629d5bd69dc25ed9dfc6f6ba365ca5659b6cc` |
-| 3 | `theorem` | [Sublist.flatMap_right](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListFlattenPublic.lean/declarations/sublist-flatmap-right.md) | 36 | `result-track:65c61d4d8ff17ce554b0d198c53617fd94a7e1babe8a69089a32d29ad9c7f7f3` |
-| 4 | `theorem` | [drop_take_succ_eq_cons_getElem](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListFlattenPublic.lean/declarations/drop-take-succ-eq-cons-getelem.md) | 42 | `result-track:49efb1df3cbbc3b6e67bd20c4843f6f2ae616ce748c429ce62b71139f9b7b66d` |
-| 5 | `theorem` | [append_flatten_map_append](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListFlattenPublic.lean/declarations/append-flatten-map-append.md) | 48 | `result-track:6f1dc4e7879b69e18f3a5270caa47b12dc8f3f232fb774ab7d1efc783617b207` |
-| 6 | `theorem` | [head_head_eq_head_flatten](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListFlattenPublic.lean/declarations/head-head-eq-head-flatten.md) | 53 | `result-track:a466eb0ca076db714dfae526e764b80e343d600e557412e44b420b6a66f046a9` |
-| 7 | `theorem` | [head_flatten_eq_head_head](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListFlattenPublic.lean/declarations/head-flatten-eq-head-head.md) | 58 | `result-track:afb08791a84ca32d424ba88523d82634af7c79ac16ec669321cb2cd956374019` |
-| 8 | `theorem` | [getLast_getLast_eq_getLast_flatten](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListFlattenPublic.lean/declarations/getlast-getlast-eq-getlast-flatten.md) | 63 | `result-track:82a879f5c5fa872b9623811902148560b89e6f4daa9531f16b38edf9f3057b85` |
-| 9 | `theorem` | [getLast_flatten_eq_getLast_getLast](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListFlattenPublic.lean/declarations/getlast-flatten-eq-getlast-getlast.md) | 70 | `result-track:1d674f08022da5d286f3e46a0db57d496fdfa270486fcd16d319f62848d38f13` |
+| 1 | `theorem` | [Sublist.flatten](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListFlattenPublic.lean/declarations/sublist-flatten.md) | 27 | `result-track:988ef746d495fd4612cab3cf995a3f18dc981a7347d9fe78a9e455a2efe16139` |
+| 2 | `theorem` | [Sublist.flatMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListFlattenPublic.lean/declarations/sublist-flatmap.md) | 32 | `result-track:8d14622b2e40c31923913a06d09629d5bd69dc25ed9dfc6f6ba365ca5659b6cc` |
+| 3 | `theorem` | [Sublist.flatMap_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListFlattenPublic.lean/declarations/sublist-flatmap-right.md) | 36 | `result-track:65c61d4d8ff17ce554b0d198c53617fd94a7e1babe8a69089a32d29ad9c7f7f3` |
+| 4 | `theorem` | [drop_take_succ_eq_cons_getElem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListFlattenPublic.lean/declarations/drop-take-succ-eq-cons-getelem.md) | 42 | `result-track:49efb1df3cbbc3b6e67bd20c4843f6f2ae616ce748c429ce62b71139f9b7b66d` |
+| 5 | `theorem` | [append_flatten_map_append](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListFlattenPublic.lean/declarations/append-flatten-map-append.md) | 48 | `result-track:6f1dc4e7879b69e18f3a5270caa47b12dc8f3f232fb774ab7d1efc783617b207` |
+| 6 | `theorem` | [head_head_eq_head_flatten](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListFlattenPublic.lean/declarations/head-head-eq-head-flatten.md) | 53 | `result-track:a466eb0ca076db714dfae526e764b80e343d600e557412e44b420b6a66f046a9` |
+| 7 | `theorem` | [head_flatten_eq_head_head](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListFlattenPublic.lean/declarations/head-flatten-eq-head-head.md) | 58 | `result-track:afb08791a84ca32d424ba88523d82634af7c79ac16ec669321cb2cd956374019` |
+| 8 | `theorem` | [getLast_getLast_eq_getLast_flatten](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListFlattenPublic.lean/declarations/getlast-getlast-eq-getlast-flatten.md) | 63 | `result-track:82a879f5c5fa872b9623811902148560b89e6f4daa9531f16b38edf9f3057b85` |
+| 9 | `theorem` | [getLast_flatten_eq_getLast_getLast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListFlattenPublic.lean/declarations/getlast-flatten-eq-getlast-getlast.md) | 70 | `result-track:1d674f08022da5d286f3e46a0db57d496fdfa270486fcd16d319f62848d38f13` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

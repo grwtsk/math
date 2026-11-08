@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/BasisNamespaced.lean/index.md) · [Full source](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/BasisNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/BasisNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/BasisNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [basisSpanSingleton](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/BasisNamespaced.lean/declarations/basisspansingleton.md) | 30 | `declaration-track:8036f79d01990d6cdd28b12a37d2f6df3b87cd69998b122038df2be1e0ab12ab` |
-| 2 | `theorem` | [basisSpanSingleton_apply](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/BasisNamespaced.lean/declarations/basisspansingleton-apply.md) | 41 | `result-track:c5ba883f9fcb25cf294a1cf62269b485987b2441deeaba33bc3b38dc6fd749f6` |
-| 3 | `theorem` | [constr_basisSpanSingleton](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/BasisNamespaced.lean/declarations/constr-basisspansingleton.md) | 48 | `result-track:a96d0b3a5b059cfaf951afe30409d1b2e2e9370c46fe8e7a4231427c6547bbe1` |
-| 4 | `theorem` | [Basis.mem_ideal_iff](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/BasisNamespaced.lean/declarations/basis-mem-ideal-iff-source-edition-2.md) | 58 | `result-track:db6df19dc10c019297cd8082518a0c924b994f0e96c1eeab3f8b2f70c794ea8c` |
-| 5 | `theorem` | [Basis.mem_ideal_iff'](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/BasisNamespaced.lean/declarations/basis-mem-ideal-iff.md) | 65 | `result-track:370f8f70dab816d15bdc3cb89117be3d6b9a82d333f1b4b6ca851112dbdfc796` |
+| 1 | `def` | [basisSpanSingleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/BasisNamespaced.lean/declarations/basisspansingleton.md) | 30 | `declaration-track:8036f79d01990d6cdd28b12a37d2f6df3b87cd69998b122038df2be1e0ab12ab` |
+| 2 | `theorem` | [basisSpanSingleton_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/BasisNamespaced.lean/declarations/basisspansingleton-apply.md) | 41 | `result-track:c5ba883f9fcb25cf294a1cf62269b485987b2441deeaba33bc3b38dc6fd749f6` |
+| 3 | `theorem` | [constr_basisSpanSingleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/BasisNamespaced.lean/declarations/constr-basisspansingleton.md) | 48 | `result-track:a96d0b3a5b059cfaf951afe30409d1b2e2e9370c46fe8e7a4231427c6547bbe1` |
+| 4 | `theorem` | [Basis.mem_ideal_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/BasisNamespaced.lean/declarations/basis-mem-ideal-iff-source-edition-2.md) | 58 | `result-track:db6df19dc10c019297cd8082518a0c924b994f0e96c1eeab3f8b2f70c794ea8c` |
+| 5 | `theorem` | [Basis.mem_ideal_iff'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/BasisNamespaced.lean/declarations/basis-mem-ideal-iff.md) | 65 | `result-track:370f8f70dab816d15bdc3cb89117be3d6b9a82d333f1b4b6ca851112dbdfc796` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

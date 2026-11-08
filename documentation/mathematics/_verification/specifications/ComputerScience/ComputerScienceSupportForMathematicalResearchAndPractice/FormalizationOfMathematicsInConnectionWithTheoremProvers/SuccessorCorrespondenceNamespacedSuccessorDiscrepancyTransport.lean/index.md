@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SuccessorCorrespondenceNamespacedSuccessorDiscrepancyTransport.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SuccessorCorrespondenceNamespacedSuccessorDiscrepancyTransport.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SuccessorCorrespondenceNamespacedSuccessorDiscrepancyTransport.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SuccessorCorrespondenceNamespacedSuccessorDiscrepancyTransport.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SuccessorArithmeticCorrespondence](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SuccessorCorrespondenceNamespacedSuccessorDiscrepancyTransport.lean/declarations/successorarithmeticcorrespondence.md) | 27 | `declaration-track:93ef75ad29b80960f251d84b8db0e7ed3a40ff49e780c0b8b38cb65e5d3bef92` |
-| 2 | `theorem` | [successor_discrepancy_transport](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SuccessorCorrespondenceNamespacedSuccessorDiscrepancyTransport.lean/declarations/successor-discrepancy-transport.md) | 64 | `result-track:7738a76b534a5f01624bd4e367d8c053723ce30f78ec44629704d566ba55134c` |
+| 1 | `structure` | [SuccessorArithmeticCorrespondence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SuccessorCorrespondenceNamespacedSuccessorDiscrepancyTransport.lean/declarations/successorarithmeticcorrespondence.md) | 27 | `declaration-track:93ef75ad29b80960f251d84b8db0e7ed3a40ff49e780c0b8b38cb65e5d3bef92` |
+| 2 | `theorem` | [successor_discrepancy_transport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SuccessorCorrespondenceNamespacedSuccessorDiscrepancyTransport.lean/declarations/successor-discrepancy-transport.md) | 64 | `result-track:7738a76b534a5f01624bd4e367d8c053723ce30f78ec44629704d566ba55134c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

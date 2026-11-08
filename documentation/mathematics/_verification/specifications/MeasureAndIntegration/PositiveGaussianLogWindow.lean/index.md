@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/PositiveGaussianLogWindow.lean/index.md) · [Full source](../../../../MeasureAndIntegration/PositiveGaussianLogWindow.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveGaussianLogWindow.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveGaussianLogWindow.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.MellinTransform.GaussianLogWindow`](../../../../MeasureAndIntegration/MellinTransformGaussianLogWindow.lean/index.md) — import line 3; pinned internal source present.
-- [`GRWTSK.Analysis.MellinTransform.CompactGaussianWindow`](../../../../IntegralTransformsOperationalCalculus/MellinTransformCompactGaussianWindow.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.MellinTransform.GaussianLogWindow`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MellinTransformGaussianLogWindow.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.Analysis.MellinTransform.CompactGaussianWindow`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/MellinTransformCompactGaussianWindow.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,18 +58,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [exampleWindow](../../../../MeasureAndIntegration/PositiveGaussianLogWindow.lean/declarations/examplewindow.md) | 13 | `declaration-track:724e9b24df093d705a0856b771276db926b30e96cf9a63f6f64293f2f4a9b649` |
-| 2 | `lemma` | [exampleWindow_compact](../../../../MeasureAndIntegration/PositiveGaussianLogWindow.lean/declarations/examplewindow-compact.md) | 14 | `result-track:a4cd9dabb0fa7a351110ef7e8ba9322edd4f9fb68cf55db3bc9da80db26ffc81` |
-| 3 | `theorem` | [actual_gaussian_nonzero](../../../../MeasureAndIntegration/PositiveGaussianLogWindow.lean/declarations/actual-gaussian-nonzero.md) | 17 | `result-track:60d3dd2b99608edde19f639e332846c02ab4f2e8696c8fdbb6d571cd54512974` |
-| 4 | `lemma` | [exampleWindow_nonzero](../../../../MeasureAndIntegration/PositiveGaussianLogWindow.lean/declarations/examplewindow-nonzero.md) | 41 | `result-track:789d033f7b15c761a2ee842de1bfe132dad155b3cd5254fbc6c192f1e90b6355` |
-| 5 | `theorem` | [actual_zero_box_false](../../../../MeasureAndIntegration/PositiveGaussianLogWindow.lean/declarations/actual-zero-box-false.md) | 43 | `result-track:14312e5aff4dd1cdf760b08cd19561f8cf5e9a62063ff1e64287c21727b037ad` |
-| 6 | `theorem` | [actual_box_produced](../../../../MeasureAndIntegration/PositiveGaussianLogWindow.lean/declarations/actual-box-produced.md) | 48 | `result-track:ce3ef5f750efc4592f66fbdb5352e545c0d98309b037fba01556576da18c7ee6` |
-| 7 | `theorem` | [actual_zero_scale_window_compact](../../../../MeasureAndIntegration/PositiveGaussianLogWindow.lean/declarations/actual-zero-scale-window-compact.md) | 51 | `result-track:0753c508820d65d5d7f80c2ca8ffa01608b26d115cd136e768c60f6dd853dc17` |
-| 8 | `theorem` | [actual_zero_scale_density_integrable](../../../../MeasureAndIntegration/PositiveGaussianLogWindow.lean/declarations/actual-zero-scale-density-integrable.md) | 55 | `result-track:ec639eb1ca77caf9575704dbed94a3643e4962cdbe055b5a697ffc09f326b414` |
-| 9 | `theorem` | [actual_positive_profile_integrable](../../../../MeasureAndIntegration/PositiveGaussianLogWindow.lean/declarations/actual-positive-profile-integrable.md) | 59 | `result-track:e45407142f757c3d725d401d1917348ce9de674a80f8571151c922ed113bf348` |
-| 10 | `theorem` | [actual_density_integral](../../../../MeasureAndIntegration/PositiveGaussianLogWindow.lean/declarations/actual-density-integral.md) | 63 | `result-track:c775ebecb6c7dec8f3d887993ea22bab4fb6c5964763220686e232cf1df1819a` |
-| 11 | `theorem` | [actual_moment_bound](../../../../MeasureAndIntegration/PositiveGaussianLogWindow.lean/declarations/actual-moment-bound.md) | 68 | `result-track:3efb75d0a8229afa6fedeb6a690bc2c85cde28337266e4860dbe441fd716f81d` |
-| 12 | `theorem` | [all_real_power_moment](../../../../MeasureAndIntegration/PositiveGaussianLogWindow.lean/declarations/all-real-power-moment.md) | 75 | `result-track:0fcfc0e8888ab0b3fdef38d8978b777d76ccacef299298fab04351eeb6885e5c` |
+| 1 | `def` | [exampleWindow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveGaussianLogWindow.lean/declarations/examplewindow.md) | 13 | `declaration-track:724e9b24df093d705a0856b771276db926b30e96cf9a63f6f64293f2f4a9b649` |
+| 2 | `lemma` | [exampleWindow_compact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveGaussianLogWindow.lean/declarations/examplewindow-compact.md) | 14 | `result-track:a4cd9dabb0fa7a351110ef7e8ba9322edd4f9fb68cf55db3bc9da80db26ffc81` |
+| 3 | `theorem` | [actual_gaussian_nonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveGaussianLogWindow.lean/declarations/actual-gaussian-nonzero.md) | 17 | `result-track:60d3dd2b99608edde19f639e332846c02ab4f2e8696c8fdbb6d571cd54512974` |
+| 4 | `lemma` | [exampleWindow_nonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveGaussianLogWindow.lean/declarations/examplewindow-nonzero.md) | 41 | `result-track:789d033f7b15c761a2ee842de1bfe132dad155b3cd5254fbc6c192f1e90b6355` |
+| 5 | `theorem` | [actual_zero_box_false](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveGaussianLogWindow.lean/declarations/actual-zero-box-false.md) | 43 | `result-track:14312e5aff4dd1cdf760b08cd19561f8cf5e9a62063ff1e64287c21727b037ad` |
+| 6 | `theorem` | [actual_box_produced](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveGaussianLogWindow.lean/declarations/actual-box-produced.md) | 48 | `result-track:ce3ef5f750efc4592f66fbdb5352e545c0d98309b037fba01556576da18c7ee6` |
+| 7 | `theorem` | [actual_zero_scale_window_compact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveGaussianLogWindow.lean/declarations/actual-zero-scale-window-compact.md) | 51 | `result-track:0753c508820d65d5d7f80c2ca8ffa01608b26d115cd136e768c60f6dd853dc17` |
+| 8 | `theorem` | [actual_zero_scale_density_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveGaussianLogWindow.lean/declarations/actual-zero-scale-density-integrable.md) | 55 | `result-track:ec639eb1ca77caf9575704dbed94a3643e4962cdbe055b5a697ffc09f326b414` |
+| 9 | `theorem` | [actual_positive_profile_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveGaussianLogWindow.lean/declarations/actual-positive-profile-integrable.md) | 59 | `result-track:e45407142f757c3d725d401d1917348ce9de674a80f8571151c922ed113bf348` |
+| 10 | `theorem` | [actual_density_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveGaussianLogWindow.lean/declarations/actual-density-integral.md) | 63 | `result-track:c775ebecb6c7dec8f3d887993ea22bab4fb6c5964763220686e232cf1df1819a` |
+| 11 | `theorem` | [actual_moment_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveGaussianLogWindow.lean/declarations/actual-moment-bound.md) | 68 | `result-track:3efb75d0a8229afa6fedeb6a690bc2c85cde28337266e4860dbe441fd716f81d` |
+| 12 | `theorem` | [all_real_power_moment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveGaussianLogWindow.lean/declarations/all-real-power-moment.md) | 75 | `result-track:0fcfc0e8888ab0b3fdef38d8978b777d76ccacef299298fab04351eeb6885e5c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

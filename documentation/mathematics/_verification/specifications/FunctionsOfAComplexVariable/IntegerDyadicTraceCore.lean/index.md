@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/IntegerDyadicTraceCore.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/IntegerDyadicTraceCore.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IntegerDyadicTraceCore.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IntegerDyadicTraceCore.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,10 +46,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.IntegerDyadicTrace`](../../../../FunctionsOfAComplexVariable/IntegerDyadicTrace.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.RationalPowerTrace`](../../../../FunctionsOfAComplexVariable/RationalPowerTrace.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.ConcreteNewtonFirstEndpoint`](../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFirstEndpoint.lean/index.md) — import line 6; pinned internal source present.
-- [`GRWTSK.NumberTheory.Chebyshev.Checks.IntegerTraceControls`](../../../../NumberTheory/IntegerTraceControls.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.IntegerDyadicTrace`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IntegerDyadicTrace.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.RationalPowerTrace`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalPowerTrace.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.ConcreteNewtonFirstEndpoint`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFirstEndpoint.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.Checks.IntegerTraceControls`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/IntegerTraceControls.lean/index.md) — import line 7; pinned internal source present.
 
 ## Top results and three-degree verification metric
 

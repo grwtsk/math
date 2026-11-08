@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ForEachExprNamespacedPublicVisit.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ForEachExprNamespacedPublicVisit.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ForEachExprNamespacedPublicVisit.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ForEachExprNamespacedPublicVisit.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [visit](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ForEachExprNamespacedPublicVisit.lean/declarations/visit.md) | 31 | `declaration-track:97ce75256ea72176fe5048a0ab7f40cddd064eecedead5bf11b6eb44f0c20d9b` |
-| 2 | `def` | [Expr.forEach'](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ForEachExprNamespacedPublicVisit.lean/declarations/expr-foreach-source-edition-2.md) | 46 | `declaration-track:f7e0bd36ce9cf8df4c52f889fe6d8e6ee9b366de605f94ca51415fa830f7476e` |
-| 3 | `def` | [Expr.forEach](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ForEachExprNamespacedPublicVisit.lean/declarations/expr-foreach.md) | 49 | `declaration-track:06e08a49e70656cdaaa9b21f6331b5416b6a61efbaded758b8140b615a674d56` |
+| 1 | `def` | [visit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ForEachExprNamespacedPublicVisit.lean/declarations/visit.md) | 31 | `declaration-track:97ce75256ea72176fe5048a0ab7f40cddd064eecedead5bf11b6eb44f0c20d9b` |
+| 2 | `def` | [Expr.forEach'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ForEachExprNamespacedPublicVisit.lean/declarations/expr-foreach-source-edition-2.md) | 46 | `declaration-track:f7e0bd36ce9cf8df4c52f889fe6d8e6ee9b366de605f94ca51415fa830f7476e` |
+| 3 | `def` | [Expr.forEach](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ForEachExprNamespacedPublicVisit.lean/declarations/expr-foreach.md) | 49 | `declaration-track:06e08a49e70656cdaaa9b21f6331b5416b6a61efbaded758b8140b615a674d56` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

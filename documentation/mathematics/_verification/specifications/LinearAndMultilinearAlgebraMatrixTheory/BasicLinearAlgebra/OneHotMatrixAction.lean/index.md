@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OneHotMatrixAction.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OneHotMatrixAction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OneHotMatrixAction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OneHotMatrixAction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -50,7 +50,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 - `BitMatrix.FiniteField.Galois` — import line 20; external provider; requires a separately pinned dependency.
 - `DAF.FiniteDynamics.Involution` — import line 21; external provider; requires a separately pinned dependency.
 - `Mathlib.LinearAlgebra.Matrix.ToLin` — import line 22; external provider; requires a separately pinned dependency.
-- [Certified Permutation Projection](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CertifiedPermutationProjection.lean/index.md) — import line 24; pinned internal source present.
+- [Certified Permutation Projection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CertifiedPermutationProjection.lean/index.md) — import line 24; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -61,10 +61,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [stateVector](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OneHotMatrixAction.lean/declarations/statevector.md) | 44 | `declaration-track:4b2a5c8b0831cd05e3764debee9976c16581a0659c81e7cd85134c5d03e34b83` |
-| 2 | `theorem` | [stateVector_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OneHotMatrixAction.lean/declarations/statevector-apply.md) | 48 | `result-track:e6b16cca09a60112f3cd3722dfd9da48df8b86fa7abeb9316e77f1c61f8928ad` |
-| 3 | `theorem` | [mulVec_stateVector](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OneHotMatrixAction.lean/declarations/mulvec-statevector.md) | 53 | `result-track:3525ea24ed585adf55784f131bdf97e9dc5c0a8f7aacbf52f7a2a06fe49d527e` |
-| 4 | `theorem` | [f2Matrix_mul_self](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OneHotMatrixAction.lean/declarations/f2matrix-mul-self.md) | 68 | `result-track:79f5aaa16b6b4123a556d21543a7524f813f4c42d8a5ae3fd0abd190453e84e2` |
+| 1 | `def` | [stateVector](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OneHotMatrixAction.lean/declarations/statevector.md) | 44 | `declaration-track:4b2a5c8b0831cd05e3764debee9976c16581a0659c81e7cd85134c5d03e34b83` |
+| 2 | `theorem` | [stateVector_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OneHotMatrixAction.lean/declarations/statevector-apply.md) | 48 | `result-track:e6b16cca09a60112f3cd3722dfd9da48df8b86fa7abeb9316e77f1c61f8928ad` |
+| 3 | `theorem` | [mulVec_stateVector](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OneHotMatrixAction.lean/declarations/mulvec-statevector.md) | 53 | `result-track:3525ea24ed585adf55784f131bdf97e9dc5c0a8f7aacbf52f7a2a06fe49d527e` |
+| 4 | `theorem` | [f2Matrix_mul_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OneHotMatrixAction.lean/declarations/f2matrix-mul-self.md) | 68 | `result-track:79f5aaa16b6b4123a556d21543a7524f813f4c42d8a5ae3fd0abd190453e84e2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

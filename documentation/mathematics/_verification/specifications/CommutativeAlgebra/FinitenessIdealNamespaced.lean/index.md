@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/FinitenessIdealNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/FinitenessIdealNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessIdealNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessIdealNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [FG.map](../../../../CommutativeAlgebra/FinitenessIdealNamespaced.lean/declarations/fg-map.md) | 33 | `result-track:4f3ce9a1c45dfa140802620677317907d81bbc167d9b32ae67542fcc87a56bb6` |
-| 2 | `theorem` | [fg_ker_comp](../../../../CommutativeAlgebra/FinitenessIdealNamespaced.lean/declarations/fg-ker-comp.md) | 40 | `result-track:52dc0dd9a3192104cbbd638447c2e65c869ee3f41ca452d2528145cd65f1c421` |
-| 3 | `theorem` | [exists_radical_pow_le_of_fg](../../../../CommutativeAlgebra/FinitenessIdealNamespaced.lean/declarations/exists-radical-pow-le-of-fg.md) | 52 | `result-track:3738b81e41cc5d0d3e146f8f12245cacce8df4eebee05752706874e06bf84b49` |
-| 4 | `theorem` | [exists_pow_le_of_le_radical_of_fg_radical](../../../../CommutativeAlgebra/FinitenessIdealNamespaced.lean/declarations/exists-pow-le-of-le-radical-of-fg-radical.md) | 72 | `result-track:11c0f59a4dab4721272aae43f5f935e6ef891ed1cadaa265f5586834ddcfa2c8` |
-| 5 | `lemma` | [exists_pow_le_of_le_radical_of_fg](../../../../CommutativeAlgebra/FinitenessIdealNamespaced.lean/declarations/exists-pow-le-of-le-radical-of-fg.md) | 84 | `result-track:f4c607449c892c1085635a318be929c6622e7449cc560f517d5f6f0ef29edfac` |
+| 1 | `theorem` | [FG.map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessIdealNamespaced.lean/declarations/fg-map.md) | 33 | `result-track:4f3ce9a1c45dfa140802620677317907d81bbc167d9b32ae67542fcc87a56bb6` |
+| 2 | `theorem` | [fg_ker_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessIdealNamespaced.lean/declarations/fg-ker-comp.md) | 40 | `result-track:52dc0dd9a3192104cbbd638447c2e65c869ee3f41ca452d2528145cd65f1c421` |
+| 3 | `theorem` | [exists_radical_pow_le_of_fg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessIdealNamespaced.lean/declarations/exists-radical-pow-le-of-fg.md) | 52 | `result-track:3738b81e41cc5d0d3e146f8f12245cacce8df4eebee05752706874e06bf84b49` |
+| 4 | `theorem` | [exists_pow_le_of_le_radical_of_fg_radical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessIdealNamespaced.lean/declarations/exists-pow-le-of-le-radical-of-fg-radical.md) | 72 | `result-track:11c0f59a4dab4721272aae43f5f935e6ef891ed1cadaa265f5586834ddcfa2c8` |
+| 5 | `lemma` | [exists_pow_le_of_le_radical_of_fg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessIdealNamespaced.lean/declarations/exists-pow-le-of-le-radical-of-fg.md) | 84 | `result-track:f4c607449c892c1085635a318be929c6622e7449cc560f517d5f6f0ef29edfac` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

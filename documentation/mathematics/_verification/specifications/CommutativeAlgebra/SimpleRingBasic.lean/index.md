@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/SimpleRingBasic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/SimpleRingBasic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SimpleRingBasic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SimpleRingBasic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,16 +59,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/SimpleRingBasic.lean/declarations/instance.md) | 33 | `declaration-track:97085e1bd6be2e9328afec7510474ff3898a3f63845bb6feeab5f47b30ecfe4b` |
-| 2 | `lemma` | [one_mem_of_ne_bot](../../../../CommutativeAlgebra/SimpleRingBasic.lean/declarations/one-mem-of-ne-bot.md) | 37 | `result-track:b05f473c344870c55a7ef9a82c050273f5f5eb511cfaad0666ee30233056cf1d` |
-| 3 | `lemma` | [one_mem_of_ne_zero_mem](../../../../CommutativeAlgebra/SimpleRingBasic.lean/declarations/one-mem-of-ne-zero-mem.md) | 41 | `result-track:30eb368d9f84def1c071ccf23079eb8e6485aecb132977b9fe2419277f29927d` |
-| 4 | `lemma` | [of_eq_bot_or_eq_top](../../../../CommutativeAlgebra/SimpleRingBasic.lean/declarations/of-eq-bot-or-eq-top.md) | 45 | `result-track:c94874eacf49ac094e10e379e07bf5b5aa5927ee26ce0075b6c2d1c8a7aa6d59` |
-| 5 | `instance` | [_root_.DivisionRing.isSimpleRing](../../../../CommutativeAlgebra/SimpleRingBasic.lean/declarations/root-divisionring-issimplering.md) | 49 | `declaration-track:87f75e0ad75207ddbe6488d6b23ffca05537914d6d6619b4d77aed89fbe13183` |
-| 6 | `lemma` | [injective_ringHom_or_subsingleton_codomain](../../../../CommutativeAlgebra/SimpleRingBasic.lean/declarations/injective-ringhom-or-subsingleton-codomain.md) | 56 | `result-track:03af12758b3967d952cb8910ffb91df9316269483c075e0b59c95cac89d1f263` |
-| 7 | `theorem` | [_root_.RingHom.injective](../../../../CommutativeAlgebra/SimpleRingBasic.lean/declarations/root-ringhom-injective.md) | 64 | `result-track:411159595a45560d35f6f48d78629c7d91b3d58a313d27ae316e019615b31a43` |
-| 8 | `lemma` | [iff_injective_ringHom_or_subsingleton_codomain](../../../../CommutativeAlgebra/SimpleRingBasic.lean/declarations/iff-injective-ringhom-or-subsingleton-codomain.md) | 70 | `result-track:83015686ce8c9aa3da54d18ad1c27d9f4ea1a7c5e0cbf70c2db8fa688a0eacd8` |
-| 9 | `lemma` | [iff_injective_ringHom](../../../../CommutativeAlgebra/SimpleRingBasic.lean/declarations/iff-injective-ringhom.md) | 80 | `result-track:55f028323770145a292996354a6b5c17c8c6134a79b90d26956cbd007f187454` |
-| 10 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/SimpleRingBasic.lean/declarations/instance-source-edition-2.md) | 87 | `declaration-track:e3654ee17babb1525b389e42309829bbc3e8516d0cd7f1734c611b166b802fcf` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SimpleRingBasic.lean/declarations/instance.md) | 33 | `declaration-track:97085e1bd6be2e9328afec7510474ff3898a3f63845bb6feeab5f47b30ecfe4b` |
+| 2 | `lemma` | [one_mem_of_ne_bot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SimpleRingBasic.lean/declarations/one-mem-of-ne-bot.md) | 37 | `result-track:b05f473c344870c55a7ef9a82c050273f5f5eb511cfaad0666ee30233056cf1d` |
+| 3 | `lemma` | [one_mem_of_ne_zero_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SimpleRingBasic.lean/declarations/one-mem-of-ne-zero-mem.md) | 41 | `result-track:30eb368d9f84def1c071ccf23079eb8e6485aecb132977b9fe2419277f29927d` |
+| 4 | `lemma` | [of_eq_bot_or_eq_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SimpleRingBasic.lean/declarations/of-eq-bot-or-eq-top.md) | 45 | `result-track:c94874eacf49ac094e10e379e07bf5b5aa5927ee26ce0075b6c2d1c8a7aa6d59` |
+| 5 | `instance` | [_root_.DivisionRing.isSimpleRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SimpleRingBasic.lean/declarations/root-divisionring-issimplering.md) | 49 | `declaration-track:87f75e0ad75207ddbe6488d6b23ffca05537914d6d6619b4d77aed89fbe13183` |
+| 6 | `lemma` | [injective_ringHom_or_subsingleton_codomain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SimpleRingBasic.lean/declarations/injective-ringhom-or-subsingleton-codomain.md) | 56 | `result-track:03af12758b3967d952cb8910ffb91df9316269483c075e0b59c95cac89d1f263` |
+| 7 | `theorem` | [_root_.RingHom.injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SimpleRingBasic.lean/declarations/root-ringhom-injective.md) | 64 | `result-track:411159595a45560d35f6f48d78629c7d91b3d58a313d27ae316e019615b31a43` |
+| 8 | `lemma` | [iff_injective_ringHom_or_subsingleton_codomain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SimpleRingBasic.lean/declarations/iff-injective-ringhom-or-subsingleton-codomain.md) | 70 | `result-track:83015686ce8c9aa3da54d18ad1c27d9f4ea1a7c5e0cbf70c2db8fa688a0eacd8` |
+| 9 | `lemma` | [iff_injective_ringHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SimpleRingBasic.lean/declarations/iff-injective-ringhom.md) | 80 | `result-track:55f028323770145a292996354a6b5c17c8c6134a79b90d26956cbd007f187454` |
+| 10 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SimpleRingBasic.lean/declarations/instance-source-edition-2.md) | 87 | `declaration-track:e3654ee17babb1525b389e42309829bbc3e8516d0cd7f1734c611b166b802fcf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

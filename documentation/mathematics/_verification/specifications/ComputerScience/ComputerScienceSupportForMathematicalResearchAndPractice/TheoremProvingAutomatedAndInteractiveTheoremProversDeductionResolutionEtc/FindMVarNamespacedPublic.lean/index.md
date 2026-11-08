@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/FindMVarNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/FindMVarNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/FindMVarNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/FindMVarNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [Visitor](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/FindMVarNamespacedPublic.lean/declarations/visitor.md) | 25 | `declaration-track:f5cae7641affb2fa0687155202e2327ee013882dd07b2bd7edbcd91cd18daaac` |
-| 2 | `def` | [visit](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/FindMVarNamespacedPublic.lean/declarations/visit.md) | 28 | `declaration-track:4d4cbefd1698520b822b92831e0badb263ee7cc0d254c60cfd53591369cb0a8d` |
-| 3 | `def` | [main](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/FindMVarNamespacedPublic.lean/declarations/main.md) | 31 | `declaration-track:da9bbe22b341b3ac49a0270f3c243903c9143734e6f9fdcc61aff955c1109ba9` |
-| 4 | `def` | [Expr.findMVar?](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/FindMVarNamespacedPublic.lean/declarations/expr-findmvar.md) | 44 | `declaration-track:c530bfd9583e033c56e6f12f1617e961422f61b7b3eb54a71f5624a8deb45654` |
+| 1 | `abbrev` | [Visitor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/FindMVarNamespacedPublic.lean/declarations/visitor.md) | 25 | `declaration-track:f5cae7641affb2fa0687155202e2327ee013882dd07b2bd7edbcd91cd18daaac` |
+| 2 | `def` | [visit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/FindMVarNamespacedPublic.lean/declarations/visit.md) | 28 | `declaration-track:4d4cbefd1698520b822b92831e0badb263ee7cc0d254c60cfd53591369cb0a8d` |
+| 3 | `def` | [main](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/FindMVarNamespacedPublic.lean/declarations/main.md) | 31 | `declaration-track:da9bbe22b341b3ac49a0270f3c243903c9143734e6f9fdcc61aff955c1109ba9` |
+| 4 | `def` | [Expr.findMVar?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/FindMVarNamespacedPublic.lean/declarations/expr-findmvar.md) | 44 | `declaration-track:c530bfd9583e033c56e6f12f1617e961422f61b7b3eb54a71f5624a8deb45654` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

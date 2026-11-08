@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ServerPublicServer.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ServerPublicServer.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ServerPublicServer.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ServerPublicServer.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Server](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ServerPublicServer.lean/declarations/server.md) | 41 | `declaration-track:e95768610390b2d165fb00a7cc132e4d52bc6ef2d2935f9920e09f745ecb5d1b` |
-| 2 | `def` | [new](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ServerPublicServer.lean/declarations/new.md) | 81 | `declaration-track:da948b17fd50d288231f59b6b337d81a9abfc02b96eba9d717e7e7d572cd2ba7` |
-| 3 | `def` | [shutdown](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ServerPublicServer.lean/declarations/shutdown.md) | 99 | `declaration-track:3cd3a1692712d002f25978b595fa4b0469a81cb3eab0009b545abd6b00b9386e` |
-| 4 | `def` | [waitShutdown](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ServerPublicServer.lean/declarations/waitshutdown.md) | 106 | `declaration-track:518c204c3f61a4f54e27fa4348572079fbcd0e8c983c0ead0adac3cda1242049` |
-| 5 | `def` | [waitShutdownSelector](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ServerPublicServer.lean/declarations/waitshutdownselector.md) | 113 | `declaration-track:6740692231a15281c01f5879e573981faf96826f340af76114f624cafc78aa9d` |
-| 6 | `def` | [shutdownAndWait](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ServerPublicServer.lean/declarations/shutdownandwait.md) | 121 | `declaration-track:ab107b538cd73fdf8ec68e36c321282ab7419d9bdce0c339b720df016fba446e` |
-| 7 | `def` | [frameCancellation](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ServerPublicServer.lean/declarations/framecancellation.md) | 126 | `declaration-track:9e213f63640ecae4465591ff178b13b5d765877246e62459f63640c3edd98d19` |
-| 8 | `def` | [serve](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ServerPublicServer.lean/declarations/serve.md) | 146 | `declaration-track:7df69570e2631781875390f3a2571eca2caed45f630c731414cbe24a3e813003` |
+| 1 | `structure` | [Server](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ServerPublicServer.lean/declarations/server.md) | 41 | `declaration-track:e95768610390b2d165fb00a7cc132e4d52bc6ef2d2935f9920e09f745ecb5d1b` |
+| 2 | `def` | [new](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ServerPublicServer.lean/declarations/new.md) | 81 | `declaration-track:da948b17fd50d288231f59b6b337d81a9abfc02b96eba9d717e7e7d572cd2ba7` |
+| 3 | `def` | [shutdown](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ServerPublicServer.lean/declarations/shutdown.md) | 99 | `declaration-track:3cd3a1692712d002f25978b595fa4b0469a81cb3eab0009b545abd6b00b9386e` |
+| 4 | `def` | [waitShutdown](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ServerPublicServer.lean/declarations/waitshutdown.md) | 106 | `declaration-track:518c204c3f61a4f54e27fa4348572079fbcd0e8c983c0ead0adac3cda1242049` |
+| 5 | `def` | [waitShutdownSelector](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ServerPublicServer.lean/declarations/waitshutdownselector.md) | 113 | `declaration-track:6740692231a15281c01f5879e573981faf96826f340af76114f624cafc78aa9d` |
+| 6 | `def` | [shutdownAndWait](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ServerPublicServer.lean/declarations/shutdownandwait.md) | 121 | `declaration-track:ab107b538cd73fdf8ec68e36c321282ab7419d9bdce0c339b720df016fba446e` |
+| 7 | `def` | [frameCancellation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ServerPublicServer.lean/declarations/framecancellation.md) | 126 | `declaration-track:9e213f63640ecae4465591ff178b13b5d765877246e62459f63640c3edd98d19` |
+| 8 | `def` | [serve](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ServerPublicServer.lean/declarations/serve.md) | 146 | `declaration-track:7df69570e2631781875390f3a2571eca2caed45f630c731414cbe24a3e813003` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

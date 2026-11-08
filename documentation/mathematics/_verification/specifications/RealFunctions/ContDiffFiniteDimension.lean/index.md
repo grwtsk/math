@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/ContDiffFiniteDimension.lean/index.md) · [Full source](../../../../RealFunctions/ContDiffFiniteDimension.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContDiffFiniteDimension.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContDiffFiniteDimension.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [contDiffOn_clm_apply](../../../../RealFunctions/ContDiffFiniteDimension.lean/declarations/contdiffon-clm-apply.md) | 37 | `result-track:d3987d6de2b7b37989379b75ed8abee76d4e85e56497629c35137a9ad739a496` |
-| 2 | `theorem` | [contDiff_clm_apply_iff](../../../../RealFunctions/ContDiffFiniteDimension.lean/declarations/contdiff-clm-apply-iff.md) | 47 | `result-track:11e4267fc0e930ec4ac33572739189f881fb3f1ebef3d6972ade9b80f336cb75` |
-| 3 | `theorem` | [contDiff_succ_iff_fderiv_apply](../../../../RealFunctions/ContDiffFiniteDimension.lean/declarations/contdiff-succ-iff-fderiv-apply.md) | 60 | `result-track:9c7685b3bcbc9f234ebb01c30adca8b55e41cca620cdad5cb55911f7f6b6055e` |
-| 4 | `theorem` | [contDiffOn_succ_of_fderiv_apply](../../../../RealFunctions/ContDiffFiniteDimension.lean/declarations/contdiffon-succ-of-fderiv-apply.md) | 65 | `result-track:5aee823e6f86d1cc9f277e3c6461b83b14baeb316ef89857253adbeb84215139` |
-| 5 | `theorem` | [contDiffOn_succ_iff_fderiv_apply](../../../../RealFunctions/ContDiffFiniteDimension.lean/declarations/contdiffon-succ-iff-fderiv-apply.md) | 71 | `result-track:244e3397c7d483acb7eaf35e65acb0a867b30f66eb791918e5637eff8e814db1` |
+| 1 | `theorem` | [contDiffOn_clm_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContDiffFiniteDimension.lean/declarations/contdiffon-clm-apply.md) | 37 | `result-track:d3987d6de2b7b37989379b75ed8abee76d4e85e56497629c35137a9ad739a496` |
+| 2 | `theorem` | [contDiff_clm_apply_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContDiffFiniteDimension.lean/declarations/contdiff-clm-apply-iff.md) | 47 | `result-track:11e4267fc0e930ec4ac33572739189f881fb3f1ebef3d6972ade9b80f336cb75` |
+| 3 | `theorem` | [contDiff_succ_iff_fderiv_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContDiffFiniteDimension.lean/declarations/contdiff-succ-iff-fderiv-apply.md) | 60 | `result-track:9c7685b3bcbc9f234ebb01c30adca8b55e41cca620cdad5cb55911f7f6b6055e` |
+| 4 | `theorem` | [contDiffOn_succ_of_fderiv_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContDiffFiniteDimension.lean/declarations/contdiffon-succ-of-fderiv-apply.md) | 65 | `result-track:5aee823e6f86d1cc9f277e3c6461b83b14baeb316ef89857253adbeb84215139` |
+| 5 | `theorem` | [contDiffOn_succ_iff_fderiv_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContDiffFiniteDimension.lean/declarations/contdiffon-succ-iff-fderiv-apply.md) | 71 | `result-track:244e3397c7d483acb7eaf35e65acb0a867b30f66eb791918e5637eff8e814db1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

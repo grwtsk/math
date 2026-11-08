@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SliceNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SliceNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SliceNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SliceNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SliceNamespaced.lean/declarations/example-source-edition-2.md) | 16 | `declaration-track:a23eb9bad2aba6bf18488bc8410e78cd29bf09176e4969132136245c9c677d43` |
-| 2 | `example` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SliceNamespaced.lean/declarations/example-source-edition-3.md) | 30 | `declaration-track:c008bdae9809f26c5d7c874aebc1be52a5ddeee8aae138c96b8b47f26ea44d8a` |
-| 3 | `example` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SliceNamespaced.lean/declarations/example-source-edition-4.md) | 33 | `declaration-track:d763862f864109da61714d07749c2a2800f14ca9e2df381e31ff4619aafd0655` |
-| 4 | `example` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SliceNamespaced.lean/declarations/example.md) | 36 | `declaration-track:2ce8bbeeea9564804bb286a3a15f6b0b7f3466375bd325250da43c0d171df9ff` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SliceNamespaced.lean/declarations/example-source-edition-2.md) | 16 | `declaration-track:a23eb9bad2aba6bf18488bc8410e78cd29bf09176e4969132136245c9c677d43` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SliceNamespaced.lean/declarations/example-source-edition-3.md) | 30 | `declaration-track:c008bdae9809f26c5d7c874aebc1be52a5ddeee8aae138c96b8b47f26ea44d8a` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SliceNamespaced.lean/declarations/example-source-edition-4.md) | 33 | `declaration-track:d763862f864109da61714d07749c2a2800f14ca9e2df381e31ff4619aafd0655` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SliceNamespaced.lean/declarations/example.md) | 36 | `declaration-track:2ce8bbeeea9564804bb286a3a15f6b0b7f3466375bd325250da43c0d171df9ff` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

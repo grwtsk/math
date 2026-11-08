@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/CliNamespacedPublicEdition5.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/CliNamespacedPublicEdition5.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CliNamespacedPublicEdition5.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CliNamespacedPublicEdition5.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [parseModuleName](../../../../../ComputerScience/AlgorithmsInComputerScience/CliNamespacedPublicEdition5.lean/declarations/parsemodulename.md) | 26 | `declaration-track:680e5412f5c7e4416f35a05f57fabc6709d89f5c6cfc25d1cc5975a626e60efc` |
-| 2 | `def` | [parseArgs](../../../../../ComputerScience/AlgorithmsInComputerScience/CliNamespacedPublicEdition5.lean/declarations/parseargs.md) | 30 | `declaration-track:d7a5e9d92cd710e5494833af69661099998fdf3764be3156188462135264055d` |
-| 3 | `def` | [sourcePath](../../../../../ComputerScience/AlgorithmsInComputerScience/CliNamespacedPublicEdition5.lean/declarations/sourcepath.md) | 46 | `declaration-track:4ec8c674583f7a0c15b1911798fcd44da97f67d791a8a20f1f078382983e3ce1` |
-| 4 | `def` | [selectedModules](../../../../../ComputerScience/AlgorithmsInComputerScience/CliNamespacedPublicEdition5.lean/declarations/selectedmodules.md) | 49 | `declaration-track:069ad52076132e49710828f9cd4db135f40919c9c83cb5c66c85bcdfa657af66` |
-| 5 | `def` | [run](../../../../../ComputerScience/AlgorithmsInComputerScience/CliNamespacedPublicEdition5.lean/declarations/run.md) | 59 | `declaration-track:15e7fab099facc1af57a1d4cd6da897d8c84c71ef22fe2bc5fbcfdddf1ff31d0` |
+| 1 | `def` | [parseModuleName](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CliNamespacedPublicEdition5.lean/declarations/parsemodulename.md) | 26 | `declaration-track:680e5412f5c7e4416f35a05f57fabc6709d89f5c6cfc25d1cc5975a626e60efc` |
+| 2 | `def` | [parseArgs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CliNamespacedPublicEdition5.lean/declarations/parseargs.md) | 30 | `declaration-track:d7a5e9d92cd710e5494833af69661099998fdf3764be3156188462135264055d` |
+| 3 | `def` | [sourcePath](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CliNamespacedPublicEdition5.lean/declarations/sourcepath.md) | 46 | `declaration-track:4ec8c674583f7a0c15b1911798fcd44da97f67d791a8a20f1f078382983e3ce1` |
+| 4 | `def` | [selectedModules](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CliNamespacedPublicEdition5.lean/declarations/selectedmodules.md) | 49 | `declaration-track:069ad52076132e49710828f9cd4db135f40919c9c83cb5c66c85bcdfa657af66` |
+| 5 | `def` | [run](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CliNamespacedPublicEdition5.lean/declarations/run.md) | 59 | `declaration-track:15e7fab099facc1af57a1d4cd6da897d8c84c71ef22fe2bc5fbcfdddf1ff31d0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

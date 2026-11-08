@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SourceFixturesResults.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SourceFixturesResults.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SourceFixturesResults.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SourceFixturesResults.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,10 +60,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CoverProblem](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SourceFixturesResults.lean/declarations/coverproblem.md) | 18 | `declaration-track:5fef50ae3be2a07608a0569c85f1846d2546b9490646d3ab1d8182c04e849f35` |
-| 2 | `def` | [finiteCoverAndTailGrammar](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SourceFixturesResults.lean/declarations/finitecoverandtailgrammar.md) | 31 | `declaration-track:7f75195c126cfc4b807c8a711729c06eb930fba36f183a07ab4632561821da0d` |
-| 3 | `def` | [symbolCountBridge](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SourceFixturesResults.lean/declarations/symbolcountbridge.md) | 41 | `declaration-track:5360935d6b57dab196399872da8451a437f072ee483f346121a20ab8fe1a3617` |
-| 4 | `theorem` | [independent_subjects_supply_formal_carriers](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SourceFixturesResults.lean/declarations/independent-subjects-supply-formal-carriers.md) | 47 | `result-track:cd509cdb0e01166bf8ca128544a723f4c50c790ab448469b2f8bb41f30f5fdb4` |
+| 1 | `structure` | [CoverProblem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SourceFixturesResults.lean/declarations/coverproblem.md) | 18 | `declaration-track:5fef50ae3be2a07608a0569c85f1846d2546b9490646d3ab1d8182c04e849f35` |
+| 2 | `def` | [finiteCoverAndTailGrammar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SourceFixturesResults.lean/declarations/finitecoverandtailgrammar.md) | 31 | `declaration-track:7f75195c126cfc4b807c8a711729c06eb930fba36f183a07ab4632561821da0d` |
+| 3 | `def` | [symbolCountBridge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SourceFixturesResults.lean/declarations/symbolcountbridge.md) | 41 | `declaration-track:5360935d6b57dab196399872da8451a437f072ee483f346121a20ab8fe1a3617` |
+| 4 | `theorem` | [independent_subjects_supply_formal_carriers](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SourceFixturesResults.lean/declarations/independent-subjects-supply-formal-carriers.md) | 47 | `result-track:cd509cdb0e01166bf8ca128544a723f4c50c790ab448469b2f8bb41f30f5fdb4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

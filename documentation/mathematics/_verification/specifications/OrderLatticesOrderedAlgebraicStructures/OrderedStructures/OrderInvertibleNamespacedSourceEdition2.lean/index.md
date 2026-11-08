@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderInvertibleNamespacedSourceEdition2.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderInvertibleNamespacedSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderInvertibleNamespacedSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderInvertibleNamespacedSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [invOf_pos](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderInvertibleNamespacedSourceEdition2.lean/declarations/invof-pos.md) | 29 | `result-track:326bbc59a86b006e115613b7071ed26aba791aa17b7889ae58082d6f110a8af3` |
-| 2 | `theorem` | [invOf_nonpos](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderInvertibleNamespacedSourceEdition2.lean/declarations/invof-nonpos.md) | 35 | `result-track:6abea7b272a101efc091a2e9f1137be3d3f2e3645e1d0b06b21d8f022c5ab50d` |
-| 3 | `theorem` | [invOf_nonneg](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderInvertibleNamespacedSourceEdition2.lean/declarations/invof-nonneg.md) | 39 | `result-track:4f88d8bbbc1a7695b02767ded1337b635a7328c80067e0dc1dbe6b9b5975798a` |
-| 4 | `theorem` | [invOf_lt_zero](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderInvertibleNamespacedSourceEdition2.lean/declarations/invof-lt-zero.md) | 45 | `result-track:048a58256f900a7219501af82b4891c5f633cd8c957ba9dc5894507609cb0b0d` |
-| 5 | `theorem` | [invOf_le_one](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderInvertibleNamespacedSourceEdition2.lean/declarations/invof-le-one.md) | 49 | `result-track:9465a8169a7a1d6ec69895bd8cdc6bdef82a8c7e1b9396724deb66d6576b87a3` |
-| 6 | `theorem` | [pos_invOf_of_invertible_cast](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderInvertibleNamespacedSourceEdition2.lean/declarations/pos-invof-of-invertible-cast.md) | 53 | `result-track:d7b3fe6c4a0412684acb6e723005909f0138e757fa7fa961cbce7bf493fa5f29` |
+| 1 | `theorem` | [invOf_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderInvertibleNamespacedSourceEdition2.lean/declarations/invof-pos.md) | 29 | `result-track:326bbc59a86b006e115613b7071ed26aba791aa17b7889ae58082d6f110a8af3` |
+| 2 | `theorem` | [invOf_nonpos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderInvertibleNamespacedSourceEdition2.lean/declarations/invof-nonpos.md) | 35 | `result-track:6abea7b272a101efc091a2e9f1137be3d3f2e3645e1d0b06b21d8f022c5ab50d` |
+| 3 | `theorem` | [invOf_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderInvertibleNamespacedSourceEdition2.lean/declarations/invof-nonneg.md) | 39 | `result-track:4f88d8bbbc1a7695b02767ded1337b635a7328c80067e0dc1dbe6b9b5975798a` |
+| 4 | `theorem` | [invOf_lt_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderInvertibleNamespacedSourceEdition2.lean/declarations/invof-lt-zero.md) | 45 | `result-track:048a58256f900a7219501af82b4891c5f633cd8c957ba9dc5894507609cb0b0d` |
+| 5 | `theorem` | [invOf_le_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderInvertibleNamespacedSourceEdition2.lean/declarations/invof-le-one.md) | 49 | `result-track:9465a8169a7a1d6ec69895bd8cdc6bdef82a8c7e1b9396724deb66d6576b87a3` |
+| 6 | `theorem` | [pos_invOf_of_invertible_cast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderInvertibleNamespacedSourceEdition2.lean/declarations/pos-invof-of-invertible-cast.md) | 53 | `result-track:d7b3fe6c4a0412684acb6e723005909f0138e757fa7fa961cbce7bf493fa5f29` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

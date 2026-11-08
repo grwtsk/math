@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/HeatEnergyBoundsNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/HeatEnergyBoundsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HeatEnergyBoundsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HeatEnergyBoundsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,10 +60,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [HeatResidualAsymptoticVanishing](../../../../FunctionalAnalysis/HeatEnergyBoundsNamespaced.lean/declarations/heatresidualasymptoticvanishing.md) | 30 | `declaration-track:7fa6b64544c7a60746a5c554ed8bcd6d34cc8ee905ede2219dfb490dd4e24070` |
-| 2 | `structure` | [HeatResidualEnergyBridge](../../../../FunctionalAnalysis/HeatEnergyBoundsNamespaced.lean/declarations/heatresidualenergybridge.md) | 36 | `declaration-track:24445189032eb0bd37354101531a15e55f3ed5df39cee1da235c2bde35125f29` |
-| 3 | `structure` | [HeatEnergyCriticalLineContract](../../../../FunctionalAnalysis/HeatEnergyBoundsNamespaced.lean/declarations/heatenergycriticallinecontract.md) | 43 | `declaration-track:2a12f83320dcf064617af1e8635ff275c0c598b115d4a3f2b24cd5a91ce9adf7` |
-| 4 | `theorem` | [spectral_condition_from_heat_energy](../../../../FunctionalAnalysis/HeatEnergyBoundsNamespaced.lean/declarations/spectral-condition-from-heat-energy.md) | 51 | `result-track:8cd165269fc01c916a971390b3c4b3458cfbc4a6d42505b8e37e016180af6326` |
+| 1 | `structure` | [HeatResidualAsymptoticVanishing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HeatEnergyBoundsNamespaced.lean/declarations/heatresidualasymptoticvanishing.md) | 30 | `declaration-track:7fa6b64544c7a60746a5c554ed8bcd6d34cc8ee905ede2219dfb490dd4e24070` |
+| 2 | `structure` | [HeatResidualEnergyBridge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HeatEnergyBoundsNamespaced.lean/declarations/heatresidualenergybridge.md) | 36 | `declaration-track:24445189032eb0bd37354101531a15e55f3ed5df39cee1da235c2bde35125f29` |
+| 3 | `structure` | [HeatEnergyCriticalLineContract](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HeatEnergyBoundsNamespaced.lean/declarations/heatenergycriticallinecontract.md) | 43 | `declaration-track:2a12f83320dcf064617af1e8635ff275c0c598b115d4a3f2b24cd5a91ce9adf7` |
+| 4 | `theorem` | [spectral_condition_from_heat_energy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HeatEnergyBoundsNamespaced.lean/declarations/spectral-condition-from-heat-energy.md) | 51 | `result-track:8cd165269fc01c916a971390b3c4b3458cfbc4a6d42505b8e37e016180af6326` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

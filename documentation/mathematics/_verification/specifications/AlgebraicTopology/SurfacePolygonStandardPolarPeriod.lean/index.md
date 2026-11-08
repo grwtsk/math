@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/SurfacePolygonStandardPolarPeriod.lean/index.md) · [Full source](../../../../AlgebraicTopology/SurfacePolygonStandardPolarPeriod.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonStandardPolarPeriod.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonStandardPolarPeriod.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonStandardPolarRadiusFibers`](../../../../AlgebraicTopology/SurfacePolygonStandardPolarRadiusFibers.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonStandardPolarRadiusFibers`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonStandardPolarRadiusFibers.lean/index.md) — import line 8; pinned internal source present.
 - `Mathlib.Analysis.SpecialFunctions.Complex.CircleMap` — import line 9; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [realAnglePolar_add_int](../../../../AlgebraicTopology/SurfacePolygonStandardPolarPeriod.lean/declarations/realanglepolar-add-int.md) | 30 | `result-track:5bacb26ff9f11b83bc01e15840a02d98afd0f1f9bdea847756c00353ba317659` |
-| 2 | `theorem` | [realAnglePolarDisk_add_int](../../../../AlgebraicTopology/SurfacePolygonStandardPolarPeriod.lean/declarations/realanglepolardisk-add-int.md) | 47 | `result-track:96b20d087dedf55608bd1b0b66b58976a8d31b527efeabe944179b9e41026e7d` |
-| 3 | `theorem` | [genusTwo_polar_integer_period](../../../../AlgebraicTopology/SurfacePolygonStandardPolarPeriod.lean/declarations/genustwo-polar-integer-period.md) | 55 | `result-track:1495b42b27dd78e3307c0924e564c8b85ccc560e54231e2f302caaf028b5ed38` |
+| 1 | `theorem` | [realAnglePolar_add_int](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonStandardPolarPeriod.lean/declarations/realanglepolar-add-int.md) | 30 | `result-track:5bacb26ff9f11b83bc01e15840a02d98afd0f1f9bdea847756c00353ba317659` |
+| 2 | `theorem` | [realAnglePolarDisk_add_int](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonStandardPolarPeriod.lean/declarations/realanglepolardisk-add-int.md) | 47 | `result-track:96b20d087dedf55608bd1b0b66b58976a8d31b527efeabe944179b9e41026e7d` |
+| 3 | `theorem` | [genusTwo_polar_integer_period](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonStandardPolarPeriod.lean/declarations/genustwo-polar-integer-period.md) | 55 | `result-track:1495b42b27dd78e3307c0924e564c8b85ccc560e54231e2f302caaf028b5ed38` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

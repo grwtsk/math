@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/D27028145b08333SourceActualNegativeDefect.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/D27028145b08333SourceActualNegativeDefect.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/D27028145b08333SourceActualNegativeDefect.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/D27028145b08333SourceActualNegativeDefect.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualSourceNegativeDefect](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/D27028145b08333SourceActualNegativeDefect.lean/declarations/actualsourcenegativedefect.md) | 22 | `declaration-track:3d9d4940f8b164674ec9cc1ea9ca63e867467737c94ddc8dc65524baeb34955f` |
-| 2 | `def` | [actualReducedOffAxisNegativeDefect](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/D27028145b08333SourceActualNegativeDefect.lean/declarations/actualreducedoffaxisnegativedefect.md) | 26 | `declaration-track:dbf17adb2122255f286cbb7248ea2eb468d3e2ee22d53236e631a85dbc47b722` |
-| 3 | `theorem` | [negative_part_abs_sub_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/D27028145b08333SourceActualNegativeDefect.lean/declarations/negative-part-abs-sub-le.md) | 29 | `result-track:b39e8465101b0d62878be0eb57012098544ddfbc31015716be89e99e8d9178fa` |
-| 4 | `theorem` | [actualNegativeDefect_distance_le_source_error](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/D27028145b08333SourceActualNegativeDefect.lean/declarations/actualnegativedefect-distance-le-source-error.md) | 36 | `result-track:78469736da65782849eabe518a98b1367f7fb165b2fac09e0f817e9b486f9160` |
-| 5 | `theorem` | [actualNegativeDefect_reducedOffAxis_bound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/D27028145b08333SourceActualNegativeDefect.lean/declarations/actualnegativedefect-reducedoffaxis-bound.md) | 46 | `result-track:2803654da403db11c77e83411621480d28e0b6a220dc3ba4ec982421c5de7f34` |
-| 6 | `theorem` | [actualNegativeDefect_reducedOffAxis_tendsto_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/D27028145b08333SourceActualNegativeDefect.lean/declarations/actualnegativedefect-reducedoffaxis-tendsto-zero.md) | 56 | `result-track:2d1df3c462244f2523e41ec37d09c4117d67fa4cb76dff01d12acc3b2ffb4aab` |
+| 1 | `def` | [actualSourceNegativeDefect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/D27028145b08333SourceActualNegativeDefect.lean/declarations/actualsourcenegativedefect.md) | 22 | `declaration-track:3d9d4940f8b164674ec9cc1ea9ca63e867467737c94ddc8dc65524baeb34955f` |
+| 2 | `def` | [actualReducedOffAxisNegativeDefect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/D27028145b08333SourceActualNegativeDefect.lean/declarations/actualreducedoffaxisnegativedefect.md) | 26 | `declaration-track:dbf17adb2122255f286cbb7248ea2eb468d3e2ee22d53236e631a85dbc47b722` |
+| 3 | `theorem` | [negative_part_abs_sub_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/D27028145b08333SourceActualNegativeDefect.lean/declarations/negative-part-abs-sub-le.md) | 29 | `result-track:b39e8465101b0d62878be0eb57012098544ddfbc31015716be89e99e8d9178fa` |
+| 4 | `theorem` | [actualNegativeDefect_distance_le_source_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/D27028145b08333SourceActualNegativeDefect.lean/declarations/actualnegativedefect-distance-le-source-error.md) | 36 | `result-track:78469736da65782849eabe518a98b1367f7fb165b2fac09e0f817e9b486f9160` |
+| 5 | `theorem` | [actualNegativeDefect_reducedOffAxis_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/D27028145b08333SourceActualNegativeDefect.lean/declarations/actualnegativedefect-reducedoffaxis-bound.md) | 46 | `result-track:2803654da403db11c77e83411621480d28e0b6a220dc3ba4ec982421c5de7f34` |
+| 6 | `theorem` | [actualNegativeDefect_reducedOffAxis_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/D27028145b08333SourceActualNegativeDefect.lean/declarations/actualnegativedefect-reducedoffaxis-tendsto-zero.md) | 56 | `result-track:2d1df3c462244f2523e41ec37d09c4117d67fa4cb76dff01d12acc3b2ffb4aab` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

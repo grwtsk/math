@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/EuclideanDomainNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/EuclideanDomainNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EuclideanDomainNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EuclideanDomainNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,14 +60,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [left_div_gcd_ne_zero](../../../../CommutativeAlgebra/EuclideanDomainNamespaced.lean/declarations/left-div-gcd-ne-zero.md) | 40 | `result-track:6a3e7ea045f9bc1819c9071c0e512a374774cfb955d3e6780653cb8059ee47f6` |
-| 2 | `theorem` | [right_div_gcd_ne_zero](../../../../CommutativeAlgebra/EuclideanDomainNamespaced.lean/declarations/right-div-gcd-ne-zero.md) | 47 | `result-track:e4614b062924655a50c9c1b5127529e4308f179aeee00f2789d60ae5dbd4903b` |
-| 3 | `theorem` | [isCoprime_div_gcd_div_gcd](../../../../CommutativeAlgebra/EuclideanDomainNamespaced.lean/declarations/iscoprime-div-gcd-div-gcd.md) | 54 | `result-track:75aae51abaa2a817d95c7f6eae0e5544894e3c219007e989ce2acd252887f3b7` |
-| 4 | `def` | [gcdMonoid](../../../../CommutativeAlgebra/EuclideanDomainNamespaced.lean/declarations/gcdmonoid.md) | 68 | `declaration-track:0f641d210ad7283605dbe4d50f1a61742ba7b38f95e3b1eeff0dcff44975201e` |
-| 5 | `theorem` | [span_gcd](../../../../CommutativeAlgebra/EuclideanDomainNamespaced.lean/declarations/span-gcd.md) | 80 | `result-track:9712210092b489b0d1f6df8cf6a26900abd76289990f34def3872a58b303e951` |
-| 6 | `theorem` | [gcd_isUnit_iff](../../../../CommutativeAlgebra/EuclideanDomainNamespaced.lean/declarations/gcd-isunit-iff.md) | 85 | `result-track:3b19291678dccfb7bf2f6167d9d75d2a4cae2dd65fe09eef08e831cf5792255c` |
-| 7 | `theorem` | [isCoprime_of_dvd](../../../../CommutativeAlgebra/EuclideanDomainNamespaced.lean/declarations/iscoprime-of-dvd.md) | 90 | `result-track:749678d3c2eee6a45be03f03342f62b5337ee742943fd5dc52da40d2daeb3845` |
-| 8 | `theorem` | [dvd_or_coprime](../../../../CommutativeAlgebra/EuclideanDomainNamespaced.lean/declarations/dvd-or-coprime.md) | 97 | `result-track:1efd7ded4468b5a0d506cbfeb0beedb130f9f8789217961125389a3f3337d8a5` |
+| 1 | `theorem` | [left_div_gcd_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EuclideanDomainNamespaced.lean/declarations/left-div-gcd-ne-zero.md) | 40 | `result-track:6a3e7ea045f9bc1819c9071c0e512a374774cfb955d3e6780653cb8059ee47f6` |
+| 2 | `theorem` | [right_div_gcd_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EuclideanDomainNamespaced.lean/declarations/right-div-gcd-ne-zero.md) | 47 | `result-track:e4614b062924655a50c9c1b5127529e4308f179aeee00f2789d60ae5dbd4903b` |
+| 3 | `theorem` | [isCoprime_div_gcd_div_gcd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EuclideanDomainNamespaced.lean/declarations/iscoprime-div-gcd-div-gcd.md) | 54 | `result-track:75aae51abaa2a817d95c7f6eae0e5544894e3c219007e989ce2acd252887f3b7` |
+| 4 | `def` | [gcdMonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EuclideanDomainNamespaced.lean/declarations/gcdmonoid.md) | 68 | `declaration-track:0f641d210ad7283605dbe4d50f1a61742ba7b38f95e3b1eeff0dcff44975201e` |
+| 5 | `theorem` | [span_gcd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EuclideanDomainNamespaced.lean/declarations/span-gcd.md) | 80 | `result-track:9712210092b489b0d1f6df8cf6a26900abd76289990f34def3872a58b303e951` |
+| 6 | `theorem` | [gcd_isUnit_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EuclideanDomainNamespaced.lean/declarations/gcd-isunit-iff.md) | 85 | `result-track:3b19291678dccfb7bf2f6167d9d75d2a4cae2dd65fe09eef08e831cf5792255c` |
+| 7 | `theorem` | [isCoprime_of_dvd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EuclideanDomainNamespaced.lean/declarations/iscoprime-of-dvd.md) | 90 | `result-track:749678d3c2eee6a45be03f03342f62b5337ee742943fd5dc52da40d2daeb3845` |
+| 8 | `theorem` | [dvd_or_coprime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EuclideanDomainNamespaced.lean/declarations/dvd-or-coprime.md) | 97 | `result-track:1efd7ded4468b5a0d506cbfeb0beedb130f9f8789217961125389a3f3337d8a5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

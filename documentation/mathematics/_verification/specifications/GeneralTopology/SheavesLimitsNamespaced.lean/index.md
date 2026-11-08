@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SheavesLimitsNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/SheavesLimitsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheavesLimitsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheavesLimitsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,16 +59,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../GeneralTopology/SheavesLimitsNamespaced.lean/declarations/instance-source-edition-8.md) | 35 | `declaration-track:d255d33a76049ced9d18d2c3458a009a008e0cdd818331d76592a7136bcdf372` |
-| 2 | `instance` | [(anonymous)](../../../../GeneralTopology/SheavesLimitsNamespaced.lean/declarations/instance-source-edition-4.md) | 38 | `declaration-track:90c678a2dd81b1bd594f310cf49236d16987c70837dce70d24abe36789fbd8d9` |
-| 3 | `instance` | [(anonymous)](../../../../GeneralTopology/SheavesLimitsNamespaced.lean/declarations/instance-source-edition-3.md) | 40 | `declaration-track:8d5d8dd2af209635d5e695a0bd6e503d83889bdaeadfa946e609e19bbed1cde1` |
-| 4 | `instance` | [(anonymous)](../../../../GeneralTopology/SheavesLimitsNamespaced.lean/declarations/instance-source-edition-6.md) | 43 | `declaration-track:ad34692600f7d986ceeb8e92f107bd6ab54e7bce01b0336d04963d860c3414cd` |
-| 5 | `instance` | [(anonymous)](../../../../GeneralTopology/SheavesLimitsNamespaced.lean/declarations/instance-source-edition-5.md) | 45 | `declaration-track:99ba9a91a664af19da760d591f7a2321239bce90db68af705f1a402ded1bd23f` |
-| 6 | `instance` | [(anonymous)](../../../../GeneralTopology/SheavesLimitsNamespaced.lean/declarations/instance.md) | 48 | `declaration-track:062aa362fae160628a860f61cb35c00855b08c99ac8581321872af8a7b857290` |
-| 7 | `instance` | [(anonymous)](../../../../GeneralTopology/SheavesLimitsNamespaced.lean/declarations/instance-source-edition-7.md) | 51 | `declaration-track:b9b52ae63345350660f89aebad01d2de946331d20842261c428aadf39d5ab18b` |
-| 8 | `instance` | [(anonymous)](../../../../GeneralTopology/SheavesLimitsNamespaced.lean/declarations/instance-source-edition-2.md) | 53 | `declaration-track:639b0d7ac3404506f8ce3126120e0bf285bf9ecb1ef5b43c4a7581d5d18efa94` |
-| 9 | `theorem` | [isSheaf_of_isLimit](../../../../GeneralTopology/SheavesLimitsNamespaced.lean/declarations/issheaf-of-islimit.md) | 55 | `result-track:c9e910adb442f87291593e0d6f79f207e1dfe033bfd959fd6e6915f3f4434397` |
-| 10 | `theorem` | [limit_isSheaf](../../../../GeneralTopology/SheavesLimitsNamespaced.lean/declarations/limit-issheaf.md) | 65 | `result-track:958b56dd930c2a5aa0ceba2fc27d880d911c5c7c40d4861ae0757aefc5ba5e90` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheavesLimitsNamespaced.lean/declarations/instance-source-edition-8.md) | 35 | `declaration-track:d255d33a76049ced9d18d2c3458a009a008e0cdd818331d76592a7136bcdf372` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheavesLimitsNamespaced.lean/declarations/instance-source-edition-4.md) | 38 | `declaration-track:90c678a2dd81b1bd594f310cf49236d16987c70837dce70d24abe36789fbd8d9` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheavesLimitsNamespaced.lean/declarations/instance-source-edition-3.md) | 40 | `declaration-track:8d5d8dd2af209635d5e695a0bd6e503d83889bdaeadfa946e609e19bbed1cde1` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheavesLimitsNamespaced.lean/declarations/instance-source-edition-6.md) | 43 | `declaration-track:ad34692600f7d986ceeb8e92f107bd6ab54e7bce01b0336d04963d860c3414cd` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheavesLimitsNamespaced.lean/declarations/instance-source-edition-5.md) | 45 | `declaration-track:99ba9a91a664af19da760d591f7a2321239bce90db68af705f1a402ded1bd23f` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheavesLimitsNamespaced.lean/declarations/instance.md) | 48 | `declaration-track:062aa362fae160628a860f61cb35c00855b08c99ac8581321872af8a7b857290` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheavesLimitsNamespaced.lean/declarations/instance-source-edition-7.md) | 51 | `declaration-track:b9b52ae63345350660f89aebad01d2de946331d20842261c428aadf39d5ab18b` |
+| 8 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheavesLimitsNamespaced.lean/declarations/instance-source-edition-2.md) | 53 | `declaration-track:639b0d7ac3404506f8ce3126120e0bf285bf9ecb1ef5b43c4a7581d5d18efa94` |
+| 9 | `theorem` | [isSheaf_of_isLimit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheavesLimitsNamespaced.lean/declarations/issheaf-of-islimit.md) | 55 | `result-track:c9e910adb442f87291593e0d6f79f207e1dfe033bfd959fd6e6915f3f4434397` |
+| 10 | `theorem` | [limit_isSheaf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SheavesLimitsNamespaced.lean/declarations/limit-issheaf.md) | 65 | `result-track:958b56dd930c2a5aa0ceba2fc27d880d911c5c7c40d4861ae0757aefc5ba5e90` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

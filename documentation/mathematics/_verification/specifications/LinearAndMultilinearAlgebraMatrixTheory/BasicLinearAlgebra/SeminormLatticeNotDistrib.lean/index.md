@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SeminormLatticeNotDistrib.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SeminormLatticeNotDistrib.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SeminormLatticeNotDistrib.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SeminormLatticeNotDistrib.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [p](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SeminormLatticeNotDistrib.lean/declarations/p.md) | 31 | `declaration-track:4fcacdecc99a0124571fdc68c4d731b2cba236a866183083367158be62b11848` |
-| 2 | `def` | [q1](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SeminormLatticeNotDistrib.lean/declarations/q1.md) | 35 | `declaration-track:9f3a3318c0cb03f5d0e9a933f565abf60bb637e12d05cbb4ec0092e0133b5ec0` |
-| 3 | `def` | [q2](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SeminormLatticeNotDistrib.lean/declarations/q2.md) | 39 | `declaration-track:3d7b85339a9a79ed39744d343f41009f876c5d02a4c130e731f9786fa4f01680` |
-| 4 | `theorem` | [eq_one](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SeminormLatticeNotDistrib.lean/declarations/eq-one.md) | 42 | `result-track:9b816fd1153c3d2b38e3353f70f27120a9ca22c8e9a47dc5172222129c3bb1d4` |
-| 5 | `theorem` | [not_distrib](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SeminormLatticeNotDistrib.lean/declarations/not-distrib.md) | 48 | `result-track:d842969ca4c60f56ea524a04c064e6519201725037b57d7c0b770991bffe94de` |
+| 1 | `def` | [p](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SeminormLatticeNotDistrib.lean/declarations/p.md) | 31 | `declaration-track:4fcacdecc99a0124571fdc68c4d731b2cba236a866183083367158be62b11848` |
+| 2 | `def` | [q1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SeminormLatticeNotDistrib.lean/declarations/q1.md) | 35 | `declaration-track:9f3a3318c0cb03f5d0e9a933f565abf60bb637e12d05cbb4ec0092e0133b5ec0` |
+| 3 | `def` | [q2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SeminormLatticeNotDistrib.lean/declarations/q2.md) | 39 | `declaration-track:3d7b85339a9a79ed39744d343f41009f876c5d02a4c130e731f9786fa4f01680` |
+| 4 | `theorem` | [eq_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SeminormLatticeNotDistrib.lean/declarations/eq-one.md) | 42 | `result-track:9b816fd1153c3d2b38e3353f70f27120a9ca22c8e9a47dc5172222129c3bb1d4` |
+| 5 | `theorem` | [not_distrib](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SeminormLatticeNotDistrib.lean/declarations/not-distrib.md) | 48 | `result-track:d842969ca4c60f56ea524a04c064e6519201725037b57d7c0b770991bffe94de` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

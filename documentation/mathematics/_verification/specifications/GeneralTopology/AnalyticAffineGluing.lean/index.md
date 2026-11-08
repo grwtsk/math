@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/AnalyticAffineGluing.lean/index.md) · [Full source](../../../../GeneralTopology/AnalyticAffineGluing.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AnalyticAffineGluing.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AnalyticAffineGluing.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.AlgebraicGeometry.AnalyticAffineTopology`](../../../../GeneralTopology/AnalyticAffineTopology.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.HolomorphicOpenCoverGluing`](../../../../FunctionsOfAComplexVariable/HolomorphicOpenCoverGluing.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.AlgebraicGeometry.AnalyticAffineTopology`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AnalyticAffineTopology.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.HolomorphicOpenCoverGluing`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/HolomorphicOpenCoverGluing.lean/index.md) — import line 2; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,21 +58,21 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [ext_coordinateRing](../../../../GeneralTopology/AnalyticAffineGluing.lean/declarations/ext-coordinatering.md) | 26 | `result-track:7ef69464c6135a88a4930268c6d52f8505b0833ef9766f188ed3a5e57411394c` |
-| 2 | `def` | [Compatible](../../../../GeneralTopology/AnalyticAffineGluing.lean/declarations/compatible.md) | 38 | `declaration-track:1cb47fc92d390235c91c21861c2970de56cdd5cf0df754d509e4a78ede46f47c` |
-| 3 | `theorem` | [compatible_apply](../../../../GeneralTopology/AnalyticAffineGluing.lean/declarations/compatible-apply.md) | 46 | `result-track:c17643d09ee37aebd68d02238edd29089f570ced44cdf5f83553b1ad2025db4c` |
-| 4 | `def` | [glueRingHom](../../../../GeneralTopology/AnalyticAffineGluing.lean/declarations/glueringhom.md) | 54 | `declaration-track:527687ac6db701e3bdce2b40e50e6ee7d0e874ecc3d73a07d614fe227a955790` |
-| 5 | `def` | [glue](../../../../GeneralTopology/AnalyticAffineGluing.lean/declarations/glue.md) | 79 | `declaration-track:93db8d71ac6c64013f7f1b4ba7fcbe1e380a2b058e8390a6485fe6c33b800a69` |
-| 6 | `theorem` | [glue_left](../../../../GeneralTopology/AnalyticAffineGluing.lean/declarations/glue-left.md) | 85 | `result-track:b9a6233d40fc946207f8ace9a8b897574d38cf1a56a0d90e89e9e22375a83092` |
-| 7 | `theorem` | [glue_right](../../../../GeneralTopology/AnalyticAffineGluing.lean/declarations/glue-right.md) | 95 | `result-track:90bf6fc8430614f3f0ed532cd7147f9343f8d30884243f81f6e0f1aef92b1b34` |
-| 8 | `theorem` | [glue_unique](../../../../GeneralTopology/AnalyticAffineGluing.lean/declarations/glue-unique.md) | 105 | `result-track:900cdb92582b6cb4e9a0e763835853101f7c7b3735262fa9a89de24add62f822` |
-| 9 | `theorem` | [existsUnique_glue](../../../../GeneralTopology/AnalyticAffineGluing.lean/declarations/existsunique-glue.md) | 121 | `result-track:a09472eba2a296550438e2e42ac223a6d1cd29391289140183425dd38436b6cf` |
-| 10 | `theorem` | [glue_pointMap_continuous](../../../../GeneralTopology/AnalyticAffineGluing.lean/declarations/glue-pointmap-continuous.md) | 131 | `result-track:2a40496e0623d40343e7acf47f45cd4aaa5f396f5783ec75f490d0fb53695695` |
-| 11 | `theorem` | [glue_pointMap_left](../../../../GeneralTopology/AnalyticAffineGluing.lean/declarations/glue-pointmap-left.md) | 138 | `result-track:842a57366694ca29e478fecbcbc7841cdeffa237c8ab53f3b879f546c802ef73` |
-| 12 | `theorem` | [glue_pointMap_right](../../../../GeneralTopology/AnalyticAffineGluing.lean/declarations/glue-pointmap-right.md) | 151 | `result-track:2733ea7be4811e50661ac58cb3e149b4cbee0a85b7f45ae548b722aceeb0935e` |
-| 13 | `theorem` | [polynomial_compatible](../../../../GeneralTopology/AnalyticAffineGluing.lean/declarations/polynomial-compatible.md) | 164 | `result-track:a6525743932fdaaa2741d7a4d4d7ad17f4752a34b5f12e46c5f53f30c5b59e3f` |
-| 14 | `theorem` | [glue_polynomial_model](../../../../GeneralTopology/AnalyticAffineGluing.lean/declarations/glue-polynomial-model.md) | 170 | `result-track:31fbfff11df0073a15db67698e325187f9e0fd44897f8fd2eea4fc65203ac972` |
-| 15 | `theorem` | [puncturedPlane_polynomial_descent](../../../../GeneralTopology/AnalyticAffineGluing.lean/declarations/puncturedplane-polynomial-descent.md) | 181 | `result-track:76a390a02f12a8199eeef685e423cf089916ede88e2de0f296770c9aff3a50a2` |
+| 1 | `theorem` | [ext_coordinateRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AnalyticAffineGluing.lean/declarations/ext-coordinatering.md) | 26 | `result-track:7ef69464c6135a88a4930268c6d52f8505b0833ef9766f188ed3a5e57411394c` |
+| 2 | `def` | [Compatible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AnalyticAffineGluing.lean/declarations/compatible.md) | 38 | `declaration-track:1cb47fc92d390235c91c21861c2970de56cdd5cf0df754d509e4a78ede46f47c` |
+| 3 | `theorem` | [compatible_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AnalyticAffineGluing.lean/declarations/compatible-apply.md) | 46 | `result-track:c17643d09ee37aebd68d02238edd29089f570ced44cdf5f83553b1ad2025db4c` |
+| 4 | `def` | [glueRingHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AnalyticAffineGluing.lean/declarations/glueringhom.md) | 54 | `declaration-track:527687ac6db701e3bdce2b40e50e6ee7d0e874ecc3d73a07d614fe227a955790` |
+| 5 | `def` | [glue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AnalyticAffineGluing.lean/declarations/glue.md) | 79 | `declaration-track:93db8d71ac6c64013f7f1b4ba7fcbe1e380a2b058e8390a6485fe6c33b800a69` |
+| 6 | `theorem` | [glue_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AnalyticAffineGluing.lean/declarations/glue-left.md) | 85 | `result-track:b9a6233d40fc946207f8ace9a8b897574d38cf1a56a0d90e89e9e22375a83092` |
+| 7 | `theorem` | [glue_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AnalyticAffineGluing.lean/declarations/glue-right.md) | 95 | `result-track:90bf6fc8430614f3f0ed532cd7147f9343f8d30884243f81f6e0f1aef92b1b34` |
+| 8 | `theorem` | [glue_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AnalyticAffineGluing.lean/declarations/glue-unique.md) | 105 | `result-track:900cdb92582b6cb4e9a0e763835853101f7c7b3735262fa9a89de24add62f822` |
+| 9 | `theorem` | [existsUnique_glue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AnalyticAffineGluing.lean/declarations/existsunique-glue.md) | 121 | `result-track:a09472eba2a296550438e2e42ac223a6d1cd29391289140183425dd38436b6cf` |
+| 10 | `theorem` | [glue_pointMap_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AnalyticAffineGluing.lean/declarations/glue-pointmap-continuous.md) | 131 | `result-track:2a40496e0623d40343e7acf47f45cd4aaa5f396f5783ec75f490d0fb53695695` |
+| 11 | `theorem` | [glue_pointMap_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AnalyticAffineGluing.lean/declarations/glue-pointmap-left.md) | 138 | `result-track:842a57366694ca29e478fecbcbc7841cdeffa237c8ab53f3b879f546c802ef73` |
+| 12 | `theorem` | [glue_pointMap_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AnalyticAffineGluing.lean/declarations/glue-pointmap-right.md) | 151 | `result-track:2733ea7be4811e50661ac58cb3e149b4cbee0a85b7f45ae548b722aceeb0935e` |
+| 13 | `theorem` | [polynomial_compatible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AnalyticAffineGluing.lean/declarations/polynomial-compatible.md) | 164 | `result-track:a6525743932fdaaa2741d7a4d4d7ad17f4752a34b5f12e46c5f53f30c5b59e3f` |
+| 14 | `theorem` | [glue_polynomial_model](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AnalyticAffineGluing.lean/declarations/glue-polynomial-model.md) | 170 | `result-track:31fbfff11df0073a15db67698e325187f9e0fd44897f8fd2eea4fc65203ac972` |
+| 15 | `theorem` | [puncturedPlane_polynomial_descent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AnalyticAffineGluing.lean/declarations/puncturedplane-polynomial-descent.md) | 181 | `result-track:76a390a02f12a8199eeef685e423cf089916ede88e2de0f296770c9aff3a50a2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

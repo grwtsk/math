@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/StatusPublicIsFinite.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/StatusPublicIsFinite.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/StatusPublicIsFinite.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/StatusPublicIsFinite.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [isFinite](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/StatusPublicIsFinite.lean/declarations/isfinite.md) | 20 | `declaration-track:137e46622c3f5adb033b03f1557ed329301b9704cc4a93202c67088366e82b9c` |
-| 2 | `def` | [isInf](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/StatusPublicIsFinite.lean/declarations/isinf.md) | 29 | `declaration-track:bbed7639ee293cb3f3bd8731f96b6994bfebaa640dba4b63e15748465399589e` |
-| 3 | `def` | [isNaN](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/StatusPublicIsFinite.lean/declarations/isnan.md) | 36 | `declaration-track:04a90f9d500d000ef1aff22f79847c81adbd124329a58f1f6a781a20af32bff1` |
+| 1 | `def` | [isFinite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/StatusPublicIsFinite.lean/declarations/isfinite.md) | 20 | `declaration-track:137e46622c3f5adb033b03f1557ed329301b9704cc4a93202c67088366e82b9c` |
+| 2 | `def` | [isInf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/StatusPublicIsFinite.lean/declarations/isinf.md) | 29 | `declaration-track:bbed7639ee293cb3f3bd8731f96b6994bfebaa640dba4b63e15748465399589e` |
+| 3 | `def` | [isNaN](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/StatusPublicIsFinite.lean/declarations/isnan.md) | 36 | `declaration-track:04a90f9d500d000ef1aff22f79847c81adbd124329a58f1f6a781a20af32bff1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

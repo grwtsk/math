@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/VarRenamePublicSeq.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/VarRenamePublicSeq.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/VarRenamePublicSeq.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/VarRenamePublicSeq.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Seq.renameVars](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/VarRenamePublicSeq.lean/declarations/seq-renamevars.md) | 13 | `declaration-track:3d72db4019c1373c631a2101cee104fe27deb1a2743819d8e9ba4bc996cc1805` |
-| 2 | `def` | [Expr.renameVars](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/VarRenamePublicSeq.lean/declarations/expr-renamevars.md) | 18 | `declaration-track:4f8400455622edb370a07990cf38f1d39043aff0923ca50668d1126b2d213ac3` |
-| 3 | `def` | [Seq.collectVars](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/VarRenamePublicSeq.lean/declarations/seq-collectvars.md) | 23 | `declaration-track:e21d51bcbbb32955f6c0b5e5885c704a510a26e23b742eea697155e67ca53e0f` |
-| 4 | `def` | [Expr.collectVars](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/VarRenamePublicSeq.lean/declarations/expr-collectvars.md) | 28 | `declaration-track:4d17dd767106ef9e40a216c2750a19f0ddd6187923bef7ca442194483a605a9b` |
+| 1 | `def` | [Seq.renameVars](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/VarRenamePublicSeq.lean/declarations/seq-renamevars.md) | 13 | `declaration-track:3d72db4019c1373c631a2101cee104fe27deb1a2743819d8e9ba4bc996cc1805` |
+| 2 | `def` | [Expr.renameVars](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/VarRenamePublicSeq.lean/declarations/expr-renamevars.md) | 18 | `declaration-track:4f8400455622edb370a07990cf38f1d39043aff0923ca50668d1126b2d213ac3` |
+| 3 | `def` | [Seq.collectVars](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/VarRenamePublicSeq.lean/declarations/seq-collectvars.md) | 23 | `declaration-track:e21d51bcbbb32955f6c0b5e5885c704a510a26e23b742eea697155e67ca53e0f` |
+| 4 | `def` | [Expr.collectVars](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/VarRenamePublicSeq.lean/declarations/expr-collectvars.md) | 28 | `declaration-track:4d17dd767106ef9e40a216c2750a19f0ddd6187923bef7ca442194483a605a9b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

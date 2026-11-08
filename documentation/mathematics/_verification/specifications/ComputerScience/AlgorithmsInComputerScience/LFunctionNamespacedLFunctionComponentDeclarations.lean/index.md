@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/LFunctionNamespacedLFunctionComponentDeclarations.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/LFunctionNamespacedLFunctionComponentDeclarations.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LFunctionNamespacedLFunctionComponentDeclarations.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LFunctionNamespacedLFunctionComponentDeclarations.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [lFunctionComponentDeclarations](../../../../../ComputerScience/AlgorithmsInComputerScience/LFunctionNamespacedLFunctionComponentDeclarations.lean/declarations/lfunctioncomponentdeclarations.md) | 34 | `declaration-track:506e47cb9cd9d2232611a4e9a981d0db7bac7bc28b5bc46f7c661356db4b1153` |
+| 1 | `def` | [lFunctionComponentDeclarations](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LFunctionNamespacedLFunctionComponentDeclarations.lean/declarations/lfunctioncomponentdeclarations.md) | 34 | `declaration-track:506e47cb9cd9d2232611a4e9a981d0db7bac7bc28b5bc46f7c661356db4b1153` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

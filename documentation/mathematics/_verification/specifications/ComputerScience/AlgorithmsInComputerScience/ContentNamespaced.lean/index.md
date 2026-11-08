@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ContentNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ContentNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ContentNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ContentNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [BlueprintContent](../../../../../ComputerScience/AlgorithmsInComputerScience/ContentNamespaced.lean/declarations/blueprintcontent.md) | 28 | `declaration-track:d9f693ad97a82f17a7c71637cbc58b2e95a66936328e9760782832618d2fb65d` |
-| 2 | `def` | [BlueprintContent.declarationRange](../../../../../ComputerScience/AlgorithmsInComputerScience/ContentNamespaced.lean/declarations/blueprintcontent-declarationrange.md) | 33 | `declaration-track:1843c3d3d9afe2835c5cdff236a8a424f44256d58fc2c857380bc04db60b8c87` |
-| 3 | `def` | [BlueprintContent.order](../../../../../ComputerScience/AlgorithmsInComputerScience/ContentNamespaced.lean/declarations/blueprintcontent-order.md) | 38 | `declaration-track:57f91b8487f20d298f18478655a22f9b1ef63ff134c100618189c15fa324ed27` |
-| 4 | `def` | [getMainModuleBlueprintContents](../../../../../ComputerScience/AlgorithmsInComputerScience/ContentNamespaced.lean/declarations/getmainmoduleblueprintcontents.md) | 45 | `declaration-track:414d65a6bc060bf597443982cc871be1fe16130d9d6054ed1206e1ba8e99a8a0` |
-| 5 | `def` | [getBlueprintContents](../../../../../ComputerScience/AlgorithmsInComputerScience/ContentNamespaced.lean/declarations/getblueprintcontents.md) | 52 | `declaration-track:b47e11f48896bae00ee464c97d6aa1e72f7f84fe8a4421077b24f35a03d7f119` |
+| 1 | `inductive` | [BlueprintContent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ContentNamespaced.lean/declarations/blueprintcontent.md) | 28 | `declaration-track:d9f693ad97a82f17a7c71637cbc58b2e95a66936328e9760782832618d2fb65d` |
+| 2 | `def` | [BlueprintContent.declarationRange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ContentNamespaced.lean/declarations/blueprintcontent-declarationrange.md) | 33 | `declaration-track:1843c3d3d9afe2835c5cdff236a8a424f44256d58fc2c857380bc04db60b8c87` |
+| 3 | `def` | [BlueprintContent.order](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ContentNamespaced.lean/declarations/blueprintcontent-order.md) | 38 | `declaration-track:57f91b8487f20d298f18478655a22f9b1ef63ff134c100618189c15fa324ed27` |
+| 4 | `def` | [getMainModuleBlueprintContents](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ContentNamespaced.lean/declarations/getmainmoduleblueprintcontents.md) | 45 | `declaration-track:414d65a6bc060bf597443982cc871be1fe16130d9d6054ed1206e1ba8e99a8a0` |
+| 5 | `def` | [getBlueprintContents](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ContentNamespaced.lean/declarations/getblueprintcontents.md) | 52 | `declaration-track:b47e11f48896bae00ee464c97d6aa1e72f7f84fe8a4421077b24f35a03d7f119` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

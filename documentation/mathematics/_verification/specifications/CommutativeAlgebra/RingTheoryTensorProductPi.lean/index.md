@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/RingTheoryTensorProductPi.lean/index.md) · [Full source](../../../../CommutativeAlgebra/RingTheoryTensorProductPi.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryTensorProductPi.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryTensorProductPi.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [piRightHom_one](../../../../CommutativeAlgebra/RingTheoryTensorProductPi.lean/declarations/pirighthom-one.md) | 27 | `result-track:b2a8a9cafb2cb743d7e0676e3b3361fb1154d0b7ae47fb6797a06aa561b9acb6` |
-| 2 | `lemma` | [piRightHom_mul](../../../../CommutativeAlgebra/RingTheoryTensorProductPi.lean/declarations/pirighthom-mul.md) | 31 | `result-track:d8c76f863a482f4193aebeae1c921306b2996a92dc607dc46a30e8611240d8cc` |
-| 3 | `def` | [piRightHom](../../../../CommutativeAlgebra/RingTheoryTensorProductPi.lean/declarations/pirighthom.md) | 44 | `declaration-track:def1060d8f02ac8712bddf1704105e85fffab7d6f37c8a7b0d19f9ecebb77b42` |
-| 4 | `def` | [Algebra.TensorProduct.piRight](../../../../CommutativeAlgebra/RingTheoryTensorProductPi.lean/declarations/algebra-tensorproduct-piright.md) | 50 | `declaration-track:be00cde9dcf77eee2afa3b15db7d34bac93151983605d4a3f755c35e6bc65b72` |
-| 5 | `lemma` | [Algebra.TensorProduct.piRight_tmul](../../../../CommutativeAlgebra/RingTheoryTensorProductPi.lean/declarations/algebra-tensorproduct-piright-tmul.md) | 55 | `result-track:4272742ed61b569ac234050fb8bb0ce78b7110094617198e11fe8b985c31b91d` |
+| 1 | `lemma` | [piRightHom_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryTensorProductPi.lean/declarations/pirighthom-one.md) | 27 | `result-track:b2a8a9cafb2cb743d7e0676e3b3361fb1154d0b7ae47fb6797a06aa561b9acb6` |
+| 2 | `lemma` | [piRightHom_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryTensorProductPi.lean/declarations/pirighthom-mul.md) | 31 | `result-track:d8c76f863a482f4193aebeae1c921306b2996a92dc607dc46a30e8611240d8cc` |
+| 3 | `def` | [piRightHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryTensorProductPi.lean/declarations/pirighthom.md) | 44 | `declaration-track:def1060d8f02ac8712bddf1704105e85fffab7d6f37c8a7b0d19f9ecebb77b42` |
+| 4 | `def` | [Algebra.TensorProduct.piRight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryTensorProductPi.lean/declarations/algebra-tensorproduct-piright.md) | 50 | `declaration-track:be00cde9dcf77eee2afa3b15db7d34bac93151983605d4a3f755c35e6bc65b72` |
+| 5 | `lemma` | [Algebra.TensorProduct.piRight_tmul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryTensorProductPi.lean/declarations/algebra-tensorproduct-piright-tmul.md) | 55 | `result-track:4272742ed61b569ac234050fb8bb0ce78b7110094617198e11fe8b985c31b91d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

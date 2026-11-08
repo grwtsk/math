@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceActualComplexEndpointCoefficientEdition4.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceActualComplexEndpointCoefficientEdition4.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualComplexEndpointCoefficientEdition4.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualComplexEndpointCoefficientEdition4.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualLeadingComplexAntiderivative](../../../../MeasureAndIntegration/SourceActualComplexEndpointCoefficientEdition4.lean/declarations/actualleadingcomplexantiderivative.md) | 21 | `declaration-track:a9fa31c4883e16048b29aaa25cc04d162a5fa9d5ac83086c50f864242a6018e0` |
-| 2 | `theorem` | [complexMonomial_exponential_tendsto_zero](../../../../MeasureAndIntegration/SourceActualComplexEndpointCoefficientEdition4.lean/declarations/complexmonomial-exponential-tendsto-zero.md) | 28 | `result-track:27c121c14d1bdbc6c143fd3e38cbaa3c71f48299cc1a77f80123c5fa1b9327a3` |
-| 3 | `theorem` | [actualLeadingComplexAntiderivative_hasDerivAt](../../../../MeasureAndIntegration/SourceActualComplexEndpointCoefficientEdition4.lean/declarations/actualleadingcomplexantiderivative-hasderivat.md) | 43 | `result-track:918644f0f8192413ef5a38846a192625e40c76bceb94a92fc876aed6dca48149` |
-| 4 | `theorem` | [actualLeadingComplexAntiderivative_tendsto_zero](../../../../MeasureAndIntegration/SourceActualComplexEndpointCoefficientEdition4.lean/declarations/actualleadingcomplexantiderivative-tendsto-zero.md) | 59 | `result-track:fab91b4d80fa4957c8eb78fdce53590aece6b05e938ed801b50a5d253a3a2512` |
-| 5 | `theorem` | [actualLeadingComplexCoefficient_eq](../../../../MeasureAndIntegration/SourceActualComplexEndpointCoefficientEdition4.lean/declarations/actualleadingcomplexcoefficient-eq.md) | 79 | `result-track:2043ed4bbf797a8fb3a1fc16ea29603e0313a9aae53ddc0a42b9e4aaed9546fd` |
+| 1 | `def` | [actualLeadingComplexAntiderivative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualComplexEndpointCoefficientEdition4.lean/declarations/actualleadingcomplexantiderivative.md) | 21 | `declaration-track:a9fa31c4883e16048b29aaa25cc04d162a5fa9d5ac83086c50f864242a6018e0` |
+| 2 | `theorem` | [complexMonomial_exponential_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualComplexEndpointCoefficientEdition4.lean/declarations/complexmonomial-exponential-tendsto-zero.md) | 28 | `result-track:27c121c14d1bdbc6c143fd3e38cbaa3c71f48299cc1a77f80123c5fa1b9327a3` |
+| 3 | `theorem` | [actualLeadingComplexAntiderivative_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualComplexEndpointCoefficientEdition4.lean/declarations/actualleadingcomplexantiderivative-hasderivat.md) | 43 | `result-track:918644f0f8192413ef5a38846a192625e40c76bceb94a92fc876aed6dca48149` |
+| 4 | `theorem` | [actualLeadingComplexAntiderivative_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualComplexEndpointCoefficientEdition4.lean/declarations/actualleadingcomplexantiderivative-tendsto-zero.md) | 59 | `result-track:fab91b4d80fa4957c8eb78fdce53590aece6b05e938ed801b50a5d253a3a2512` |
+| 5 | `theorem` | [actualLeadingComplexCoefficient_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualComplexEndpointCoefficientEdition4.lean/declarations/actualleadingcomplexcoefficient-eq.md) | 79 | `result-track:2043ed4bbf797a8fb3a1fc16ea29603e0313a9aae53ddc0a42b9e4aaed9546fd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

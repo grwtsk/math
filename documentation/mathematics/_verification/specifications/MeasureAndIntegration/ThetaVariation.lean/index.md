@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ThetaVariation.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ThetaVariation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ThetaVariation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ThetaVariation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [majorant_primitive_hasDerivAt](../../../../MeasureAndIntegration/ThetaVariation.lean/declarations/majorant-primitive-hasderivat.md) | 13 | `result-track:141b87d6a3c89f74fbe0e5737f421eda9c404708c14ccbf5a4575b7e00bba3db` |
-| 2 | `theorem` | [majorant_integrableOn](../../../../MeasureAndIntegration/ThetaVariation.lean/declarations/majorant-integrableon.md) | 25 | `result-track:23a6351a8329f77b0b4f010f27132f2d1e2bd9c7b5bb3d546f75b099693325de` |
-| 3 | `theorem` | [majorant_integral_le](../../../../MeasureAndIntegration/ThetaVariation.lean/declarations/majorant-integral-le.md) | 37 | `result-track:dfc6e1c826e1dab89b3afbef9bd19bf33805ea0b50063acfcd604b79bf0d652d` |
-| 4 | `theorem` | [scaledSampling_variation_le](../../../../MeasureAndIntegration/ThetaVariation.lean/declarations/scaledsampling-variation-le.md) | 52 | `result-track:67b37d5010afb9fe6e324073b89393a55b197ce82f108e17b1374a79cbc92a6a` |
-| 5 | `theorem` | [thetaKernel_sub_integral_abs_le_explicit](../../../../MeasureAndIntegration/ThetaVariation.lean/declarations/thetakernel-sub-integral-abs-le-explicit.md) | 75 | `result-track:068cf98400e91586c9c06e24b3814983fd87c798307fa24acb099ead1772c058` |
+| 1 | `theorem` | [majorant_primitive_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ThetaVariation.lean/declarations/majorant-primitive-hasderivat.md) | 13 | `result-track:141b87d6a3c89f74fbe0e5737f421eda9c404708c14ccbf5a4575b7e00bba3db` |
+| 2 | `theorem` | [majorant_integrableOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ThetaVariation.lean/declarations/majorant-integrableon.md) | 25 | `result-track:23a6351a8329f77b0b4f010f27132f2d1e2bd9c7b5bb3d546f75b099693325de` |
+| 3 | `theorem` | [majorant_integral_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ThetaVariation.lean/declarations/majorant-integral-le.md) | 37 | `result-track:dfc6e1c826e1dab89b3afbef9bd19bf33805ea0b50063acfcd604b79bf0d652d` |
+| 4 | `theorem` | [scaledSampling_variation_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ThetaVariation.lean/declarations/scaledsampling-variation-le.md) | 52 | `result-track:67b37d5010afb9fe6e324073b89393a55b197ce82f108e17b1374a79cbc92a6a` |
+| 5 | `theorem` | [thetaKernel_sub_integral_abs_le_explicit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ThetaVariation.lean/declarations/thetakernel-sub-integral-abs-le-explicit.md) | 75 | `result-track:068cf98400e91586c9c06e24b3814983fd87c798307fa24acb099ead1772c058` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

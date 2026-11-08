@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FullyFaithfulLimitsNamespacedPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FullyFaithfulLimitsNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FullyFaithfulLimitsNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FullyFaithfulLimitsNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [preservesColimitsOfShape_iff](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FullyFaithfulLimitsNamespacedPublic.lean/declarations/preservescolimitsofshape-iff.md) | 47 | `result-track:1ed20e14f6dff97a9174fa91ce4302df760c39b99369fabd0a1e7fdb9e17b25d` |
-| 2 | `lemma` | [preservesColimitsOfSize_iff](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FullyFaithfulLimitsNamespacedPublic.lean/declarations/preservescolimitsofsize-iff.md) | 63 | `result-track:8b6e5c30bd9b85f8fd94de2f81efa97d8dc46e03b6e33de4d4cfe15c34898166` |
+| 1 | `lemma` | [preservesColimitsOfShape_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FullyFaithfulLimitsNamespacedPublic.lean/declarations/preservescolimitsofshape-iff.md) | 47 | `result-track:1ed20e14f6dff97a9174fa91ce4302df760c39b99369fabd0a1e7fdb9e17b25d` |
+| 2 | `lemma` | [preservesColimitsOfSize_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FullyFaithfulLimitsNamespacedPublic.lean/declarations/preservescolimitsofsize-iff.md) | 63 | `result-track:8b6e5c30bd9b85f8fd94de2f81efa97d8dc46e03b6e33de4d4cfe15c34898166` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

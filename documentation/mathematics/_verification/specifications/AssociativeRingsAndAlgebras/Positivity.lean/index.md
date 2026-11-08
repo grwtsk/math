@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/Positivity.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/Positivity.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Positivity.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Positivity.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ArithmeticPositivityCriterion](../../../../AssociativeRingsAndAlgebras/Positivity.lean/declarations/arithmeticpositivitycriterion.md) | 14 | `declaration-track:5fb25e337dfe0ae6a6dc8d6f4cfccf53a94fd126678c53e6e99981a535aa3b31` |
-| 2 | `structure` | [PositiveTraceAlgebra](../../../../AssociativeRingsAndAlgebras/Positivity.lean/declarations/positivetracealgebra.md) | 25 | `declaration-track:f5a1a90744f59a6275cd661d5d4018aca5796063ebd39971e9e12f66af01a4c3` |
-| 3 | `structure` | [TracePositivityFactorization](../../../../AssociativeRingsAndAlgebras/Positivity.lean/declarations/tracepositivityfactorization.md) | 35 | `declaration-track:168a10a2e6ea7f2fc3fec4af839fa5c42a5c1f5515c95370feeb40b48da5464a` |
-| 4 | `theorem` | [tracePositivityFactorization_implies_RH](../../../../AssociativeRingsAndAlgebras/Positivity.lean/declarations/tracepositivityfactorization-implies-rh.md) | 52 | `result-track:4f56b660766ea7d08bcc9f64aa741c0e507a0bf8681954fe8e0c291ecc822c6d` |
-| 5 | `theorem` | [exact_trace_factorization_implies_RH](../../../../AssociativeRingsAndAlgebras/Positivity.lean/declarations/exact-trace-factorization-implies-rh.md) | 67 | `result-track:126572c2bda81ef31825cc46eb662d878d55d1064ba39002e0ccc73b67467aff` |
+| 1 | `structure` | [ArithmeticPositivityCriterion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Positivity.lean/declarations/arithmeticpositivitycriterion.md) | 14 | `declaration-track:5fb25e337dfe0ae6a6dc8d6f4cfccf53a94fd126678c53e6e99981a535aa3b31` |
+| 2 | `structure` | [PositiveTraceAlgebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Positivity.lean/declarations/positivetracealgebra.md) | 25 | `declaration-track:f5a1a90744f59a6275cd661d5d4018aca5796063ebd39971e9e12f66af01a4c3` |
+| 3 | `structure` | [TracePositivityFactorization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Positivity.lean/declarations/tracepositivityfactorization.md) | 35 | `declaration-track:168a10a2e6ea7f2fc3fec4af839fa5c42a5c1f5515c95370feeb40b48da5464a` |
+| 4 | `theorem` | [tracePositivityFactorization_implies_RH](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Positivity.lean/declarations/tracepositivityfactorization-implies-rh.md) | 52 | `result-track:4f56b660766ea7d08bcc9f64aa741c0e507a0bf8681954fe8e0c291ecc822c6d` |
+| 5 | `theorem` | [exact_trace_factorization_implies_RH](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Positivity.lean/declarations/exact-trace-factorization-implies-rh.md) | 67 | `result-track:126572c2bda81ef31825cc46eb662d878d55d1064ba39002e0ccc73b67467aff` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

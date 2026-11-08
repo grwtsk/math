@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/LowerSamplingAttempt03Namespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/LowerSamplingAttempt03Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LowerSamplingAttempt03Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LowerSamplingAttempt03Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,12 +60,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [correlation_deriv_zero](../../../../MeasureAndIntegration/LowerSamplingAttempt03Namespaced.lean/declarations/correlation-deriv-zero.md) | 28 | `result-track:010feadb4bcde47361a12a0f447f940b5e9775f438e2200d8b3dcf3b4ff07f55` |
-| 2 | `theorem` | [unit_profile_at_one](../../../../MeasureAndIntegration/LowerSamplingAttempt03Namespaced.lean/declarations/unit-profile-at-one.md) | 43 | `result-track:0c7bb3aa0ee74b77088d383a717f13899ccec409ec6bc7b56789052a923f7172` |
-| 3 | `theorem` | [unit_model_derivative](../../../../MeasureAndIntegration/LowerSamplingAttempt03Namespaced.lean/declarations/unit-model-derivative.md) | 49 | `result-track:8d82de6f51814197cc935e9a2185395f96e941c362e708d50ea6724fa5f3d9a4` |
-| 4 | `theorem` | [upper_profile_integral](../../../../MeasureAndIntegration/LowerSamplingAttempt03Namespaced.lean/declarations/upper-profile-integral.md) | 56 | `result-track:b7a04be8757fcf5cb2c8247814801a0055e3fc42934dbeff5d7737a31c35db03` |
-| 5 | `theorem` | [lower_profile_integral](../../../../MeasureAndIntegration/LowerSamplingAttempt03Namespaced.lean/declarations/lower-profile-integral.md) | 79 | `result-track:01ebbfb9537c366b02bf3d9c24b9a10b1bbc15e7f330446414972c7106ed3775` |
-| 6 | `theorem` | [lower_remainder_integral](../../../../MeasureAndIntegration/LowerSamplingAttempt03Namespaced.lean/declarations/lower-remainder-integral.md) | 89 | `result-track:71b242f609b4e12106652b72a2c9f34d0bba72fb3f29396ab42aaa16eff79ff1` |
+| 1 | `theorem` | [correlation_deriv_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LowerSamplingAttempt03Namespaced.lean/declarations/correlation-deriv-zero.md) | 28 | `result-track:010feadb4bcde47361a12a0f447f940b5e9775f438e2200d8b3dcf3b4ff07f55` |
+| 2 | `theorem` | [unit_profile_at_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LowerSamplingAttempt03Namespaced.lean/declarations/unit-profile-at-one.md) | 43 | `result-track:0c7bb3aa0ee74b77088d383a717f13899ccec409ec6bc7b56789052a923f7172` |
+| 3 | `theorem` | [unit_model_derivative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LowerSamplingAttempt03Namespaced.lean/declarations/unit-model-derivative.md) | 49 | `result-track:8d82de6f51814197cc935e9a2185395f96e941c362e708d50ea6724fa5f3d9a4` |
+| 4 | `theorem` | [upper_profile_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LowerSamplingAttempt03Namespaced.lean/declarations/upper-profile-integral.md) | 56 | `result-track:b7a04be8757fcf5cb2c8247814801a0055e3fc42934dbeff5d7737a31c35db03` |
+| 5 | `theorem` | [lower_profile_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LowerSamplingAttempt03Namespaced.lean/declarations/lower-profile-integral.md) | 79 | `result-track:01ebbfb9537c366b02bf3d9c24b9a10b1bbc15e7f330446414972c7106ed3775` |
+| 6 | `theorem` | [lower_remainder_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LowerSamplingAttempt03Namespaced.lean/declarations/lower-remainder-integral.md) | 89 | `result-track:71b242f609b4e12106652b72a2c9f34d0bba72fb3f29396ab42aaa16eff79ff1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

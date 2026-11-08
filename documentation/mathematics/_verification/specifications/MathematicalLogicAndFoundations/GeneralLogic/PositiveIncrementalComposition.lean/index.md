@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PositiveIncrementalComposition.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PositiveIncrementalComposition.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PositiveIncrementalComposition.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PositiveIncrementalComposition.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Logic.FiniteSequences.IncrementalComposition`](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesIncrementalCompositionHistoricalSourceEdition2.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Logic.FiniteSequences.IncrementalComposition`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesIncrementalCompositionHistoricalSourceEdition2.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PositiveIncrementalComposition.lean/declarations/example.md) | 9 | `declaration-track:23affe3faceb115794154a1b652e543a93ee69625be2674db1cb8396729ae5b5` |
-| 2 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PositiveIncrementalComposition.lean/declarations/example-source-edition-6.md) | 16 | `declaration-track:e861cff09bd263055ec6306d703bf0227f195fc4a4266a12320f42a4cb0c99e0` |
-| 3 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PositiveIncrementalComposition.lean/declarations/example-source-edition-3.md) | 23 | `declaration-track:aa880c0543f9e4d6bb39d9a93180611cc1774541c1e34412f718e762fc39672c` |
-| 4 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PositiveIncrementalComposition.lean/declarations/example-source-edition-5.md) | 30 | `declaration-track:d1d35c3ee212b77cbeeeca3115b86e8753282edb70339d0d88a2a99cad11a258` |
-| 5 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PositiveIncrementalComposition.lean/declarations/example-source-edition-4.md) | 36 | `declaration-track:c4aacb393585f420e010fb097e57a80d0e366bb95368e1fd5c76fd9a9fbc9a84` |
-| 6 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PositiveIncrementalComposition.lean/declarations/example-source-edition-2.md) | 40 | `declaration-track:89e53c70cb53edbeafcd14fc945a9d74e07647f67582c10e6560edca0ed9d967` |
-| 7 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PositiveIncrementalComposition.lean/declarations/example-source-edition-7.md) | 44 | `declaration-track:fc968c02a0c658f7e9e23777043c3cc2a62552cbea933fad8326c073290d637c` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PositiveIncrementalComposition.lean/declarations/example.md) | 9 | `declaration-track:23affe3faceb115794154a1b652e543a93ee69625be2674db1cb8396729ae5b5` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PositiveIncrementalComposition.lean/declarations/example-source-edition-6.md) | 16 | `declaration-track:e861cff09bd263055ec6306d703bf0227f195fc4a4266a12320f42a4cb0c99e0` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PositiveIncrementalComposition.lean/declarations/example-source-edition-3.md) | 23 | `declaration-track:aa880c0543f9e4d6bb39d9a93180611cc1774541c1e34412f718e762fc39672c` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PositiveIncrementalComposition.lean/declarations/example-source-edition-5.md) | 30 | `declaration-track:d1d35c3ee212b77cbeeeca3115b86e8753282edb70339d0d88a2a99cad11a258` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PositiveIncrementalComposition.lean/declarations/example-source-edition-4.md) | 36 | `declaration-track:c4aacb393585f420e010fb097e57a80d0e366bb95368e1fd5c76fd9a9fbc9a84` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PositiveIncrementalComposition.lean/declarations/example-source-edition-2.md) | 40 | `declaration-track:89e53c70cb53edbeafcd14fc945a9d74e07647f67582c10e6560edca0ed9d967` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PositiveIncrementalComposition.lean/declarations/example-source-edition-7.md) | 44 | `declaration-track:fc968c02a0c658f7e9e23777043c3cc2a62552cbea933fad8326c073290d637c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../HarmonicAnalysisOnEuclideanSpaces/ZModPartitionEnergy.lean/index.md) · [Full source](../../../../HarmonicAnalysisOnEuclideanSpaces/ZModPartitionEnergy.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/ZModPartitionEnergy.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/ZModPartitionEnergy.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,9 +46,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Fourier.FiniteExponentialLayers`](../../../../HarmonicAnalysisOnEuclideanSpaces/FiniteExponentialLayers.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.Fourier.ZModCharacterEnergy`](../../../../HarmonicAnalysisOnEuclideanSpaces/ZModCharacterEnergy.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.Analysis.Fourier.ZModIndependentSelection`](../../../../HarmonicAnalysisOnEuclideanSpaces/ZModIndependentSelection.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.Analysis.Fourier.FiniteExponentialLayers`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/FiniteExponentialLayers.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Fourier.ZModCharacterEnergy`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/ZModCharacterEnergy.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Fourier.ZModIndependentSelection`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/ZModIndependentSelection.lean/index.md) — import line 6; pinned internal source present.
 - `Mathlib.Analysis.SpecialFunctions.Log.Basic` — import line 7; external provider; requires a separately pinned dependency.
 - `Mathlib.Data.Nat.Log` — import line 8; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 9; external provider; requires a separately pinned dependency.
@@ -62,20 +62,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [balanced_size_square_bound](../../../../HarmonicAnalysisOnEuclideanSpaces/ZModPartitionEnergy.lean/declarations/balanced-size-square-bound.md) | 24 | `result-track:8546c9ec88060ed982dbf4429c4747df5edc1034ad67af060fbe6f4e82cf4c7a` |
-| 2 | `theorem` | [balanced_inverse_square_bound](../../../../HarmonicAnalysisOnEuclideanSpaces/ZModPartitionEnergy.lean/declarations/balanced-inverse-square-bound.md) | 39 | `result-track:3f5e581e1a9dc6a3141abbff0ce15a5a68da57d85dfe4bfce69e911c7df296bb` |
-| 3 | `def` | [partitionEnergy](../../../../HarmonicAnalysisOnEuclideanSpaces/ZModPartitionEnergy.lean/declarations/partitionenergy.md) | 54 | `declaration-track:c1021df70935d70161950b1aa936c476c314870ea5b1769ab175ae4d2194310b` |
-| 4 | `theorem` | [partitionEnergy_nonneg](../../../../HarmonicAnalysisOnEuclideanSpaces/ZModPartitionEnergy.lean/declarations/partitionenergy-nonneg.md) | 58 | `result-track:5d3e8eebec292057ca48b9a1a1e481d5cf57f76fc11d71ff6b1f1ef6fcd05c84` |
-| 5 | `theorem` | [partitionEnergy_zero_frequency](../../../../HarmonicAnalysisOnEuclideanSpaces/ZModPartitionEnergy.lean/declarations/partitionenergy-zero-frequency.md) | 63 | `result-track:ac0e6473ac5d6ecad5ddcba7780c044c93cc84860138de264ca5d2dbc8a8d04b` |
-| 6 | `theorem` | [partitionEnergy_le_card](../../../../HarmonicAnalysisOnEuclideanSpaces/ZModPartitionEnergy.lean/declarations/partitionenergy-le-card.md) | 66 | `result-track:ea592a112322536381243afe491cdbc10b3fe99da229051d7dc6d7c4a06b6dbd` |
-| 7 | `theorem` | [partitionEnergy_lower_bound](../../../../HarmonicAnalysisOnEuclideanSpaces/ZModPartitionEnergy.lean/declarations/partitionenergy-lower-bound.md) | 75 | `result-track:d8a2282f9d8c80954c46939c9e760a3ec32123706c15372c33a25505b11871c9` |
-| 8 | `theorem` | [part_mass_le_exponential](../../../../HarmonicAnalysisOnEuclideanSpaces/ZModPartitionEnergy.lean/declarations/part-mass-le-exponential.md) | 92 | `result-track:5305d38ad190d1ae81af67f327caf7d9896ee8891dea03f66bad2bfa6ccaa98a` |
-| 9 | `theorem` | [part_mass_le_dyadic_layers](../../../../HarmonicAnalysisOnEuclideanSpaces/ZModPartitionEnergy.lean/declarations/part-mass-le-dyadic-layers.md) | 106 | `result-track:935a1d6df14a7407d2fa9e084b3631c51a16399bdd978b1261aa17c586d6ae48` |
-| 10 | `theorem` | [part_mass_le_log_layers](../../../../HarmonicAnalysisOnEuclideanSpaces/ZModPartitionEnergy.lean/declarations/part-mass-le-log-layers.md) | 124 | `result-track:013a073220ee88e6486b30e055d03f0d46f90610afd8e94a3a40b909d924f273` |
-| 11 | `theorem` | [log_nat_ge_half](../../../../HarmonicAnalysisOnEuclideanSpaces/ZModPartitionEnergy.lean/declarations/log-nat-ge-half.md) | 138 | `result-track:9d8599f2ea29db0d511317ec3ad4d089f9941e1cbb17f229c68ab305701a822f` |
-| 12 | `theorem` | [source_upper_range_gives_quarter](../../../../HarmonicAnalysisOnEuclideanSpaces/ZModPartitionEnergy.lean/declarations/source-upper-range-gives-quarter.md) | 147 | `result-track:d2f68715c22a743cfdb894376851be07f9acff989fe6c20db2152952f2063a09` |
-| 13 | `theorem` | [source_range_size_bounds](../../../../HarmonicAnalysisOnEuclideanSpaces/ZModPartitionEnergy.lean/declarations/source-range-size-bounds.md) | 162 | `result-track:b91d4d6703aba5fc1bd898bd7d8751157345ed38b01890be5b84e4f98d0f3f13` |
-| 14 | `theorem` | [source_range_large](../../../../HarmonicAnalysisOnEuclideanSpaces/ZModPartitionEnergy.lean/declarations/source-range-large.md) | 173 | `result-track:08038293d312b7753c8b821787ad97505b65c0e5628d5d068e3c656c022589a4` |
+| 1 | `theorem` | [balanced_size_square_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/ZModPartitionEnergy.lean/declarations/balanced-size-square-bound.md) | 24 | `result-track:8546c9ec88060ed982dbf4429c4747df5edc1034ad67af060fbe6f4e82cf4c7a` |
+| 2 | `theorem` | [balanced_inverse_square_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/ZModPartitionEnergy.lean/declarations/balanced-inverse-square-bound.md) | 39 | `result-track:3f5e581e1a9dc6a3141abbff0ce15a5a68da57d85dfe4bfce69e911c7df296bb` |
+| 3 | `def` | [partitionEnergy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/ZModPartitionEnergy.lean/declarations/partitionenergy.md) | 54 | `declaration-track:c1021df70935d70161950b1aa936c476c314870ea5b1769ab175ae4d2194310b` |
+| 4 | `theorem` | [partitionEnergy_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/ZModPartitionEnergy.lean/declarations/partitionenergy-nonneg.md) | 58 | `result-track:5d3e8eebec292057ca48b9a1a1e481d5cf57f76fc11d71ff6b1f1ef6fcd05c84` |
+| 5 | `theorem` | [partitionEnergy_zero_frequency](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/ZModPartitionEnergy.lean/declarations/partitionenergy-zero-frequency.md) | 63 | `result-track:ac0e6473ac5d6ecad5ddcba7780c044c93cc84860138de264ca5d2dbc8a8d04b` |
+| 6 | `theorem` | [partitionEnergy_le_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/ZModPartitionEnergy.lean/declarations/partitionenergy-le-card.md) | 66 | `result-track:ea592a112322536381243afe491cdbc10b3fe99da229051d7dc6d7c4a06b6dbd` |
+| 7 | `theorem` | [partitionEnergy_lower_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/ZModPartitionEnergy.lean/declarations/partitionenergy-lower-bound.md) | 75 | `result-track:d8a2282f9d8c80954c46939c9e760a3ec32123706c15372c33a25505b11871c9` |
+| 8 | `theorem` | [part_mass_le_exponential](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/ZModPartitionEnergy.lean/declarations/part-mass-le-exponential.md) | 92 | `result-track:5305d38ad190d1ae81af67f327caf7d9896ee8891dea03f66bad2bfa6ccaa98a` |
+| 9 | `theorem` | [part_mass_le_dyadic_layers](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/ZModPartitionEnergy.lean/declarations/part-mass-le-dyadic-layers.md) | 106 | `result-track:935a1d6df14a7407d2fa9e084b3631c51a16399bdd978b1261aa17c586d6ae48` |
+| 10 | `theorem` | [part_mass_le_log_layers](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/ZModPartitionEnergy.lean/declarations/part-mass-le-log-layers.md) | 124 | `result-track:013a073220ee88e6486b30e055d03f0d46f90610afd8e94a3a40b909d924f273` |
+| 11 | `theorem` | [log_nat_ge_half](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/ZModPartitionEnergy.lean/declarations/log-nat-ge-half.md) | 138 | `result-track:9d8599f2ea29db0d511317ec3ad4d089f9941e1cbb17f229c68ab305701a822f` |
+| 12 | `theorem` | [source_upper_range_gives_quarter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/ZModPartitionEnergy.lean/declarations/source-upper-range-gives-quarter.md) | 147 | `result-track:d2f68715c22a743cfdb894376851be07f9acff989fe6c20db2152952f2063a09` |
+| 13 | `theorem` | [source_range_size_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/ZModPartitionEnergy.lean/declarations/source-range-size-bounds.md) | 162 | `result-track:b91d4d6703aba5fc1bd898bd7d8751157345ed38b01890be5b84e4f98d0f3f13` |
+| 14 | `theorem` | [source_range_large](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/ZModPartitionEnergy.lean/declarations/source-range-large.md) | 173 | `result-track:08038293d312b7753c8b821787ad97505b65c0e5628d5d068e3c656c022589a4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

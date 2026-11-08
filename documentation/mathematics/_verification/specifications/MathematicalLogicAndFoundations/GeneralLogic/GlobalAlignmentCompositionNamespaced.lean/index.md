@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GlobalAlignmentCompositionNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GlobalAlignmentCompositionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GlobalAlignmentCompositionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GlobalAlignmentCompositionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CanonicalPathGlobalAlignmentContract](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GlobalAlignmentCompositionNamespaced.lean/declarations/canonicalpathglobalalignmentcontract.md) | 31 | `declaration-track:619e8e68a1b33c9a06f0eefcb25b94a7fb8634d901a36413ea9711add1928efe` |
-| 2 | `theorem` | [canonical_path_global_alignment_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GlobalAlignmentCompositionNamespaced.lean/declarations/canonical-path-global-alignment-if-supplied.md) | 40 | `result-track:401a95ee36bc64281b7f3b4235dee3b6eeab8de64bf2cf509839fa875d00f08b` |
+| 1 | `structure` | [CanonicalPathGlobalAlignmentContract](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GlobalAlignmentCompositionNamespaced.lean/declarations/canonicalpathglobalalignmentcontract.md) | 31 | `declaration-track:619e8e68a1b33c9a06f0eefcb25b94a7fb8634d901a36413ea9711add1928efe` |
+| 2 | `theorem` | [canonical_path_global_alignment_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GlobalAlignmentCompositionNamespaced.lean/declarations/canonical-path-global-alignment-if-supplied.md) | 40 | `result-track:401a95ee36bc64281b7f3b4235dee3b6eeab8de64bf2cf509839fa875d00f08b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

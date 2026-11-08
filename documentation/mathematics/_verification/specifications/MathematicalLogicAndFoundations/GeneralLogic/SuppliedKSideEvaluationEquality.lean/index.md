@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuppliedKSideEvaluationEquality.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuppliedKSideEvaluationEquality.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuppliedKSideEvaluationEquality.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuppliedKSideEvaluationEquality.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [dirac_k_index_trace_formula](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuppliedKSideEvaluationEquality.lean/declarations/dirac-k-index-trace-formula.md) | 31 | `result-track:e6762238c8925afd23cd5498288f8b8e6fe534cead293866f1e0e99f71d050ca` |
-| 2 | `theorem` | [spectral_trace_eq_k_index_trace](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuppliedKSideEvaluationEquality.lean/declarations/spectral-trace-eq-k-index-trace.md) | 40 | `result-track:22bb185090b53c02af63471901963e478425febf755697c249a6c48c4e448e12` |
+| 1 | `theorem` | [dirac_k_index_trace_formula](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuppliedKSideEvaluationEquality.lean/declarations/dirac-k-index-trace-formula.md) | 31 | `result-track:e6762238c8925afd23cd5498288f8b8e6fe534cead293866f1e0e99f71d050ca` |
+| 2 | `theorem` | [spectral_trace_eq_k_index_trace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuppliedKSideEvaluationEquality.lean/declarations/spectral-trace-eq-k-index-trace.md) | 40 | `result-track:22bb185090b53c02af63471901963e478425febf755697c249a6c48c4e448e12` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

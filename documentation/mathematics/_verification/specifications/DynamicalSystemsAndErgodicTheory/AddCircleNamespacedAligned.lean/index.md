@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../DynamicalSystemsAndErgodicTheory/AddCircleNamespacedAligned.lean/index.md) · [Full source](../../../../DynamicalSystemsAndErgodicTheory/AddCircleNamespacedAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/AddCircleNamespacedAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/AddCircleNamespacedAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [ae_empty_or_univ_of_forall_vadd_ae_eq_self](../../../../DynamicalSystemsAndErgodicTheory/AddCircleNamespacedAligned.lean/declarations/ae-empty-or-univ-of-forall-vadd-ae-eq-self.md) | 51 | `result-track:ba9ec820c1a3e619bd04ed44966ee3ad434f7353c48596d4de60b2f1b1f17046` |
-| 2 | `theorem` | [ergodic_zsmul](../../../../DynamicalSystemsAndErgodicTheory/AddCircleNamespacedAligned.lean/declarations/ergodic-zsmul.md) | 110 | `result-track:9e487346ce95f2aea95ecbc34992f6d6e4cb6c0d6529b4e7fbb50f45e18a406f` |
-| 3 | `theorem` | [ergodic_nsmul](../../../../DynamicalSystemsAndErgodicTheory/AddCircleNamespacedAligned.lean/declarations/ergodic-nsmul.md) | 129 | `result-track:56da5f05845e993200d9fa70e6db5da2b5b722a6956c26caf1d0638e68aab51c` |
-| 4 | `theorem` | [ergodic_zsmul_add](../../../../DynamicalSystemsAndErgodicTheory/AddCircleNamespacedAligned.lean/declarations/ergodic-zsmul-add.md) | 133 | `result-track:ed930e07b8bf5e69ec71d9bdc0ac9b5e91dd0d8399ba8170d4e5debde6007dd2` |
-| 5 | `theorem` | [ergodic_nsmul_add](../../../../DynamicalSystemsAndErgodicTheory/AddCircleNamespacedAligned.lean/declarations/ergodic-nsmul-add.md) | 151 | `result-track:09fbb0b3d412fac09fef467ced3a6501f3e71288695aa93e2283f31dc412c8b2` |
+| 1 | `theorem` | [ae_empty_or_univ_of_forall_vadd_ae_eq_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/AddCircleNamespacedAligned.lean/declarations/ae-empty-or-univ-of-forall-vadd-ae-eq-self.md) | 51 | `result-track:ba9ec820c1a3e619bd04ed44966ee3ad434f7353c48596d4de60b2f1b1f17046` |
+| 2 | `theorem` | [ergodic_zsmul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/AddCircleNamespacedAligned.lean/declarations/ergodic-zsmul.md) | 110 | `result-track:9e487346ce95f2aea95ecbc34992f6d6e4cb6c0d6529b4e7fbb50f45e18a406f` |
+| 3 | `theorem` | [ergodic_nsmul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/AddCircleNamespacedAligned.lean/declarations/ergodic-nsmul.md) | 129 | `result-track:56da5f05845e993200d9fa70e6db5da2b5b722a6956c26caf1d0638e68aab51c` |
+| 4 | `theorem` | [ergodic_zsmul_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/AddCircleNamespacedAligned.lean/declarations/ergodic-zsmul-add.md) | 133 | `result-track:ed930e07b8bf5e69ec71d9bdc0ac9b5e91dd0d8399ba8170d4e5debde6007dd2` |
+| 5 | `theorem` | [ergodic_nsmul_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/AddCircleNamespacedAligned.lean/declarations/ergodic-nsmul-add.md) | 151 | `result-track:09fbb0b3d412fac09fef467ced3a6501f3e71288695aa93e2283f31dc412c8b2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

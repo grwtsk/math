@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/ExpPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/ExpPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ExpPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ExpPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,18 +57,18 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [exp](../../../../CommutativeAlgebra/ExpPublic.lean/declarations/exp.md) | 49 | `declaration-track:6c9dac3fb8e2bc1bb635bd619528201fe267176e2027d371b6bde68f0d57543e` |
-| 2 | `theorem` | [coeff_exp](../../../../CommutativeAlgebra/ExpPublic.lean/declarations/coeff-exp.md) | 55 | `result-track:ea2fc0d3022b4b94cc5083782ee89319d0f276b23a719e7db392159ba3d541ff` |
-| 3 | `theorem` | [constantCoeff_exp](../../../../CommutativeAlgebra/ExpPublic.lean/declarations/constantcoeff-exp.md) | 59 | `result-track:b0a722f942cd9f3197e7c993fe8c67c08e6afee51bf0b3bef3c9a90a912bf61f` |
-| 4 | `theorem` | [map_exp](../../../../CommutativeAlgebra/ExpPublic.lean/declarations/map-exp.md) | 64 | `result-track:d348bbccb73d0ce5ace7bc6c0b284bfba77200a843e0ea8d9f2e2702fcb7ac97` |
-| 5 | `theorem` | [derivative_exp](../../../../CommutativeAlgebra/ExpPublic.lean/declarations/derivative-exp.md) | 70 | `result-track:fb80394f17dc660d1d498d0431ddbf9e37beddee7538a86a493180eb940e8a54` |
-| 6 | `theorem` | [exp_unique_of_derivative_eq_self](../../../../CommutativeAlgebra/ExpPublic.lean/declarations/exp-unique-of-derivative-eq-self.md) | 88 | `result-track:ef4c184fd1553b56f41a78cdd4fe48351c491ba60b9d186f6005224aa43b4974` |
-| 7 | `theorem` | [isUnit_exp](../../../../CommutativeAlgebra/ExpPublic.lean/declarations/isunit-exp.md) | 108 | `result-track:d07249357c033ef9e7f00e8580497f410084fce7f3fdac2ce294c70521f0bbd9` |
-| 8 | `theorem` | [order_exp](../../../../CommutativeAlgebra/ExpPublic.lean/declarations/order-exp.md) | 112 | `result-track:e9b5d3f9b953c9585de47f1a09b85dfd0850f529c8bb763a6558ce3205175fd3` |
-| 9 | `theorem` | [exp_mul_exp_eq_exp_add](../../../../CommutativeAlgebra/ExpPublic.lean/declarations/exp-mul-exp-eq-exp-add.md) | 123 | `result-track:86119a767669e900a205cffedd5f07cefbe0da473ed720d958263ff3fdb7557e` |
-| 10 | `theorem` | [exp_mul_exp_neg_eq_one](../../../../CommutativeAlgebra/ExpPublic.lean/declarations/exp-mul-exp-neg-eq-one.md) | 150 | `result-track:b7a0a5fea863349439d289094fb295c6b9205cec00d47d8c3768fa1e64ff115d` |
-| 11 | `theorem` | [exp_pow_eq_rescale_exp](../../../../CommutativeAlgebra/ExpPublic.lean/declarations/exp-pow-eq-rescale-exp.md) | 154 | `result-track:165d23585bbf3a84aeea822a8c12cdae240f3f805e29b75b11df0a553eb9f94a` |
-| 12 | `theorem` | [exp_pow_sum](../../../../CommutativeAlgebra/ExpPublic.lean/declarations/exp-pow-sum.md) | 165 | `result-track:789cca8b0f50ece59e31ba29aeef58b78c20ad4ba6a1751d8d240af80ed68a8e` |
+| 1 | `def` | [exp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ExpPublic.lean/declarations/exp.md) | 49 | `declaration-track:6c9dac3fb8e2bc1bb635bd619528201fe267176e2027d371b6bde68f0d57543e` |
+| 2 | `theorem` | [coeff_exp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ExpPublic.lean/declarations/coeff-exp.md) | 55 | `result-track:ea2fc0d3022b4b94cc5083782ee89319d0f276b23a719e7db392159ba3d541ff` |
+| 3 | `theorem` | [constantCoeff_exp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ExpPublic.lean/declarations/constantcoeff-exp.md) | 59 | `result-track:b0a722f942cd9f3197e7c993fe8c67c08e6afee51bf0b3bef3c9a90a912bf61f` |
+| 4 | `theorem` | [map_exp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ExpPublic.lean/declarations/map-exp.md) | 64 | `result-track:d348bbccb73d0ce5ace7bc6c0b284bfba77200a843e0ea8d9f2e2702fcb7ac97` |
+| 5 | `theorem` | [derivative_exp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ExpPublic.lean/declarations/derivative-exp.md) | 70 | `result-track:fb80394f17dc660d1d498d0431ddbf9e37beddee7538a86a493180eb940e8a54` |
+| 6 | `theorem` | [exp_unique_of_derivative_eq_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ExpPublic.lean/declarations/exp-unique-of-derivative-eq-self.md) | 88 | `result-track:ef4c184fd1553b56f41a78cdd4fe48351c491ba60b9d186f6005224aa43b4974` |
+| 7 | `theorem` | [isUnit_exp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ExpPublic.lean/declarations/isunit-exp.md) | 108 | `result-track:d07249357c033ef9e7f00e8580497f410084fce7f3fdac2ce294c70521f0bbd9` |
+| 8 | `theorem` | [order_exp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ExpPublic.lean/declarations/order-exp.md) | 112 | `result-track:e9b5d3f9b953c9585de47f1a09b85dfd0850f529c8bb763a6558ce3205175fd3` |
+| 9 | `theorem` | [exp_mul_exp_eq_exp_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ExpPublic.lean/declarations/exp-mul-exp-eq-exp-add.md) | 123 | `result-track:86119a767669e900a205cffedd5f07cefbe0da473ed720d958263ff3fdb7557e` |
+| 10 | `theorem` | [exp_mul_exp_neg_eq_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ExpPublic.lean/declarations/exp-mul-exp-neg-eq-one.md) | 150 | `result-track:b7a0a5fea863349439d289094fb295c6b9205cec00d47d8c3768fa1e64ff115d` |
+| 11 | `theorem` | [exp_pow_eq_rescale_exp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ExpPublic.lean/declarations/exp-pow-eq-rescale-exp.md) | 154 | `result-track:165d23585bbf3a84aeea822a8c12cdae240f3f805e29b75b11df0a553eb9f94a` |
+| 12 | `theorem` | [exp_pow_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ExpPublic.lean/declarations/exp-pow-sum.md) | 165 | `result-track:789cca8b0f50ece59e31ba29aeef58b78c20ad4ba6a1751d8d240af80ed68a8e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

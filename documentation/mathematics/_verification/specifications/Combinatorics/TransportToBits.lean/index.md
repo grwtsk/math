@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/TransportToBits.lean/index.md) · [Full source](../../../../Combinatorics/TransportToBits.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TransportToBits.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TransportToBits.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,8 +62,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [transportToBits](../../../../Combinatorics/TransportToBits.lean/declarations/transporttobits.md) | 63 | `declaration-track:c790b32c6f9dc3d7a75f10863e0f8f3b7de540ba2d4c83c30fafa7658f0b8ab1` |
-| 2 | `theorem` | [transportToBits_bijective](../../../../Combinatorics/TransportToBits.lean/declarations/transporttobits-bijective.md) | 71 | `result-track:13ca39fb835854bcab9e7497007fff0b447c60c68a64c1f5e5e31560fe0bb396` |
+| 1 | `def` | [transportToBits](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TransportToBits.lean/declarations/transporttobits.md) | 63 | `declaration-track:c790b32c6f9dc3d7a75f10863e0f8f3b7de540ba2d4c83c30fafa7658f0b8ab1` |
+| 2 | `theorem` | [transportToBits_bijective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TransportToBits.lean/declarations/transporttobits-bijective.md) | 71 | `result-track:13ca39fb835854bcab9e7497007fff0b447c60c68a64c1f5e5e31560fe0bb396` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

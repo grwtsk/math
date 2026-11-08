@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/CounterExample.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/CounterExample.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CounterExample.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CounterExample.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,17 +57,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [CounterExampleStatus](../../../../../ComputerScience/AlgorithmsInComputerScience/CounterExample.lean/declarations/counterexamplestatus.md) | 48 | `declaration-track:eb3e92cba6ea54d8c904e1566f36b295db43b433d0cbd8a2cd58ace63fbc65a6` |
-| 2 | `structure` | [CounterExample](../../../../../ComputerScience/AlgorithmsInComputerScience/CounterExample.lean/declarations/counterexample.md) | 56 | `declaration-track:9206420c058448b4a36f8b7426fe89f39be730c573d299b067ebe7fc9497f0ee` |
-| 3 | `def` | [isVerified](../../../../../ComputerScience/AlgorithmsInComputerScience/CounterExample.lean/declarations/isverified.md) | 73 | `declaration-track:c62aab3bcd92c1be19bd4028d9de213089161d77af5d6538368118b537d56fa0` |
-| 4 | `def` | [boxMidpoint](../../../../../ComputerScience/AlgorithmsInComputerScience/CounterExample.lean/declarations/boxmidpoint.md) | 77 | `declaration-track:30d99f55687f720b0c5e4737175ade2268efddbe624ee89864444f59c5a8cf36` |
-| 5 | `def` | [findViolation](../../../../../ComputerScience/AlgorithmsInComputerScience/CounterExample.lean/declarations/findviolation.md) | 94 | `declaration-track:fdfa565571fbd92d12be8646f2e3def352dd2091a7ea0e4ae80f934b0c9c561b` |
-| 6 | `def` | [findViolationDiv](../../../../../ComputerScience/AlgorithmsInComputerScience/CounterExample.lean/declarations/findviolationdiv.md) | 137 | `declaration-track:b6182f1b0825f1b11beea7681a7d24f2295730a1a0e2f17e6e1bfc43efcbc4d4` |
-| 7 | `def` | [findViolationLower](../../../../../ComputerScience/AlgorithmsInComputerScience/CounterExample.lean/declarations/findviolationlower.md) | 176 | `declaration-track:c7c797743cdd45de820352f65ddd82770103a30c755fd6757224131251df5d7a` |
-| 8 | `def` | [findViolationLowerDiv](../../../../../ComputerScience/AlgorithmsInComputerScience/CounterExample.lean/declarations/findviolationlowerdiv.md) | 215 | `declaration-track:6a1c1adbc6a497c8a9d8fa5c7b1055fba80545a1f3453f56f472fe0951d8aaa0` |
-| 9 | `def` | [findViolationStrict](../../../../../ComputerScience/AlgorithmsInComputerScience/CounterExample.lean/declarations/findviolationstrict.md) | 250 | `declaration-track:912a0c2d6c895931b4d79b8439e9fa67419864d7679f350a309f12e543ca096d` |
-| 10 | `def` | [findViolationStrictLower](../../../../../ComputerScience/AlgorithmsInComputerScience/CounterExample.lean/declarations/findviolationstrictlower.md) | 284 | `declaration-track:91b4dca085f4009b06314678e0ff5b82ef06688f4de25681d8032eab79f5a213` |
-| 11 | `def` | [CounterExample.format](../../../../../ComputerScience/AlgorithmsInComputerScience/CounterExample.lean/declarations/counterexample-format.md) | 316 | `declaration-track:ee776b0e3d1054b202b95ad84c7d7389a6f62876856dd8aeb540cac8ae111cf7` |
+| 1 | `inductive` | [CounterExampleStatus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CounterExample.lean/declarations/counterexamplestatus.md) | 48 | `declaration-track:eb3e92cba6ea54d8c904e1566f36b295db43b433d0cbd8a2cd58ace63fbc65a6` |
+| 2 | `structure` | [CounterExample](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CounterExample.lean/declarations/counterexample.md) | 56 | `declaration-track:9206420c058448b4a36f8b7426fe89f39be730c573d299b067ebe7fc9497f0ee` |
+| 3 | `def` | [isVerified](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CounterExample.lean/declarations/isverified.md) | 73 | `declaration-track:c62aab3bcd92c1be19bd4028d9de213089161d77af5d6538368118b537d56fa0` |
+| 4 | `def` | [boxMidpoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CounterExample.lean/declarations/boxmidpoint.md) | 77 | `declaration-track:30d99f55687f720b0c5e4737175ade2268efddbe624ee89864444f59c5a8cf36` |
+| 5 | `def` | [findViolation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CounterExample.lean/declarations/findviolation.md) | 94 | `declaration-track:fdfa565571fbd92d12be8646f2e3def352dd2091a7ea0e4ae80f934b0c9c561b` |
+| 6 | `def` | [findViolationDiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CounterExample.lean/declarations/findviolationdiv.md) | 137 | `declaration-track:b6182f1b0825f1b11beea7681a7d24f2295730a1a0e2f17e6e1bfc43efcbc4d4` |
+| 7 | `def` | [findViolationLower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CounterExample.lean/declarations/findviolationlower.md) | 176 | `declaration-track:c7c797743cdd45de820352f65ddd82770103a30c755fd6757224131251df5d7a` |
+| 8 | `def` | [findViolationLowerDiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CounterExample.lean/declarations/findviolationlowerdiv.md) | 215 | `declaration-track:6a1c1adbc6a497c8a9d8fa5c7b1055fba80545a1f3453f56f472fe0951d8aaa0` |
+| 9 | `def` | [findViolationStrict](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CounterExample.lean/declarations/findviolationstrict.md) | 250 | `declaration-track:912a0c2d6c895931b4d79b8439e9fa67419864d7679f350a309f12e543ca096d` |
+| 10 | `def` | [findViolationStrictLower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CounterExample.lean/declarations/findviolationstrictlower.md) | 284 | `declaration-track:91b4dca085f4009b06314678e0ff5b82ef06688f4de25681d8032eab79f5a213` |
+| 11 | `def` | [CounterExample.format](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CounterExample.lean/declarations/counterexample-format.md) | 316 | `declaration-track:ee776b0e3d1054b202b95ad84c7d7389a6f62876856dd8aeb540cac8ae111cf7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

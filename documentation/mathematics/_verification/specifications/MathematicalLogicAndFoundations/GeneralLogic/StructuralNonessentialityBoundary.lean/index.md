@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StructuralNonessentialityBoundary.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StructuralNonessentialityBoundary.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StructuralNonessentialityBoundary.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StructuralNonessentialityBoundary.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [decorativeExpression](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StructuralNonessentialityBoundary.lean/declarations/decorativeexpression.md) | 12 | `declaration-track:32cea2fe39cf25f6d9861e50a897378c19649f9d1ebf2de80437091e35a501ac` |
-| 2 | `def` | [decorativeDerivation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StructuralNonessentialityBoundary.lean/declarations/decorativederivation.md) | 24 | `declaration-track:eaa06c1ee1b1c2afe8cff486690a861919744e2974abe819a14d8f4d8427f853` |
-| 3 | `theorem` | [decorative_expression_covers_both](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StructuralNonessentialityBoundary.lean/declarations/decorative-expression-covers-both.md) | 41 | `result-track:ea7ed3408ca77e0f51561b82af635529fcbd97d123ca1d88db7eb8ea78579f88` |
-| 4 | `theorem` | [decorative_expression_keeps_exact_fan_in](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StructuralNonessentialityBoundary.lean/declarations/decorative-expression-keeps-exact-fan-in.md) | 47 | `result-track:f5edc436a22aa4a1a7728a823c0d1e17e99ddcb10b783eeade2e2de352070931` |
+| 1 | `def` | [decorativeExpression](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StructuralNonessentialityBoundary.lean/declarations/decorativeexpression.md) | 12 | `declaration-track:32cea2fe39cf25f6d9861e50a897378c19649f9d1ebf2de80437091e35a501ac` |
+| 2 | `def` | [decorativeDerivation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StructuralNonessentialityBoundary.lean/declarations/decorativederivation.md) | 24 | `declaration-track:eaa06c1ee1b1c2afe8cff486690a861919744e2974abe819a14d8f4d8427f853` |
+| 3 | `theorem` | [decorative_expression_covers_both](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StructuralNonessentialityBoundary.lean/declarations/decorative-expression-covers-both.md) | 41 | `result-track:ea7ed3408ca77e0f51561b82af635529fcbd97d123ca1d88db7eb8ea78579f88` |
+| 4 | `theorem` | [decorative_expression_keeps_exact_fan_in](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StructuralNonessentialityBoundary.lean/declarations/decorative-expression-keeps-exact-fan-in.md) | 47 | `result-track:f5edc436a22aa4a1a7728a823c0d1e17e99ddcb10b783eeade2e2de352070931` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

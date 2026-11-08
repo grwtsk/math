@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PermuteGoalsNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PermuteGoalsNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PermuteGoalsNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PermuteGoalsNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [splitGoalsAndGetNth](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PermuteGoalsNamespacedPublic.lean/declarations/splitgoalsandgetnth.md) | 44 | `declaration-track:553ff10b6d4387f0215a29e95abf80f082327328e9d41541b4746ebcc27297e3` |
-| 2 | `elab` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PermuteGoalsNamespacedPublic.lean/declarations/elab.md) | 61 | `declaration-track:07f161db1db283059caccf83c131865001422f2b0035c37c2511dc6b6d90ff27` |
-| 3 | `macro` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PermuteGoalsNamespacedPublic.lean/declarations/macro.md) | 66 | `declaration-track:29542c8e58f361829438dfe94e553bcf3b2c36e6ed924e961505948bff854dcd` |
-| 4 | `elab` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PermuteGoalsNamespacedPublic.lean/declarations/elab-source-edition-2.md) | 78 | `declaration-track:c414be8abfb179f40db6ab58c72b3378234faf43978a55e41e08701ebd3a21c4` |
+| 1 | `def` | [splitGoalsAndGetNth](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PermuteGoalsNamespacedPublic.lean/declarations/splitgoalsandgetnth.md) | 44 | `declaration-track:553ff10b6d4387f0215a29e95abf80f082327328e9d41541b4746ebcc27297e3` |
+| 2 | `elab` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PermuteGoalsNamespacedPublic.lean/declarations/elab.md) | 61 | `declaration-track:07f161db1db283059caccf83c131865001422f2b0035c37c2511dc6b6d90ff27` |
+| 3 | `macro` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PermuteGoalsNamespacedPublic.lean/declarations/macro.md) | 66 | `declaration-track:29542c8e58f361829438dfe94e553bcf3b2c36e6ed924e961505948bff854dcd` |
+| 4 | `elab` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PermuteGoalsNamespacedPublic.lean/declarations/elab-source-edition-2.md) | 78 | `declaration-track:c414be8abfb179f40db6ab58c72b3378234faf43978a55e41e08701ebd3a21c4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

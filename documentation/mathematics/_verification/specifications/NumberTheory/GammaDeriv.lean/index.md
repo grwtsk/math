@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/GammaDeriv.lean/index.md) · [Full source](../../../../NumberTheory/GammaDeriv.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/GammaDeriv.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/GammaDeriv.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,19 +60,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [deriv_Gamma_nat](../../../../NumberTheory/GammaDeriv.lean/declarations/deriv-gamma-nat.md) | 29 | `result-track:3c1c1f659892bac1645d04307b17696a84919bdce0fae1d162ee7bccd55fb9c9` |
-| 2 | `lemma` | [hasDerivAt_Gamma_nat](../../../../NumberTheory/GammaDeriv.lean/declarations/hasderivat-gamma-nat.md) | 84 | `result-track:0654bd686f351c16bae5376927fad1efc69079886abfb1c23f1001d68ad7ecca` |
-| 3 | `lemma` | [eulerMascheroniConstant_eq_neg_deriv](../../../../NumberTheory/GammaDeriv.lean/declarations/eulermascheroniconstant-eq-neg-deriv.md) | 89 | `result-track:a001328039124eb46132f3adfcf2db2dc06b8d402f58697b4fe4b8ccd2eefbb7` |
-| 4 | `lemma` | [hasDerivAt_Gamma_one](../../../../NumberTheory/GammaDeriv.lean/declarations/hasderivat-gamma-one-source-edition-4.md) | 93 | `result-track:f8648eac3b0eee84662bc0c63aaf1adfd6bedbc3cb26c16e90a018ce93d3bb0b` |
-| 5 | `lemma` | [hasDerivAt_Gamma_one_half](../../../../NumberTheory/GammaDeriv.lean/declarations/hasderivat-gamma-one-half.md) | 97 | `result-track:993e2bcd3d3b3efcb1e907af6428898cd196f754fad848652e316671e09f0f7e` |
-| 6 | `lemma` | [HasDerivAt.complex_of_real](../../../../NumberTheory/GammaDeriv.lean/declarations/hasderivat-complex-of-real.md) | 154 | `result-track:447d9ba9170f42de75195279db6fb85a85258cbfa87c3ae9be4536d1467afc08` |
-| 7 | `lemma` | [differentiable_at_Gamma_nat_add_one](../../../../NumberTheory/GammaDeriv.lean/declarations/differentiable-at-gamma-nat-add-one.md) | 161 | `result-track:f9aa2bc1b2c67a455d8e49fe3f39d2e4377d3710cc0bde80dae11ff5a141c0b0` |
-| 8 | `lemma` | [hasDerivAt_Gamma_nat](../../../../NumberTheory/GammaDeriv.lean/declarations/hasderivat-gamma-nat-source-edition-2.md) | 168 | `result-track:8303c78f0e59ebec00546244f28a49a39edfc3b17bcb8959be67726b2eb99608` |
-| 9 | `lemma` | [deriv_Gamma_nat](../../../../NumberTheory/GammaDeriv.lean/declarations/deriv-gamma-nat-source-edition-2.md) | 176 | `result-track:acd64530da26163db09a1c8a767f03959e337e1891cfc1ac53575ef225817dff` |
-| 10 | `lemma` | [hasDerivAt_Gamma_one](../../../../NumberTheory/GammaDeriv.lean/declarations/hasderivat-gamma-one-source-edition-3.md) | 180 | `result-track:8ca00fec09ae1e9a86fa399a212590cb95ee28bcd8b61f7ca01b27cad09197f9` |
-| 11 | `lemma` | [hasDerivAt_Gamma_one_half](../../../../NumberTheory/GammaDeriv.lean/declarations/hasderivat-gamma-one-half-source-edition-2.md) | 184 | `result-track:9aff0bc412b348221d5879d19ce0a496a2632005e36ba270d4dae28d48c6c76e` |
-| 12 | `lemma` | [hasDerivAt_Gammaℂ_one](../../../../NumberTheory/GammaDeriv.lean/declarations/hasderivat-gamma-one.md) | 193 | `result-track:637d17886e25d045bcf5cc902a8dc1327b5c16656f11982760f6ba45da8b70bc` |
-| 13 | `lemma` | [hasDerivAt_Gammaℝ_one](../../../../NumberTheory/GammaDeriv.lean/declarations/hasderivat-gamma-one-source-edition-2.md) | 206 | `result-track:65136f911190d01ab859f76555386b9fd08107195d456c76c0b2697b797ace92` |
+| 1 | `lemma` | [deriv_Gamma_nat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/GammaDeriv.lean/declarations/deriv-gamma-nat.md) | 29 | `result-track:3c1c1f659892bac1645d04307b17696a84919bdce0fae1d162ee7bccd55fb9c9` |
+| 2 | `lemma` | [hasDerivAt_Gamma_nat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/GammaDeriv.lean/declarations/hasderivat-gamma-nat.md) | 84 | `result-track:0654bd686f351c16bae5376927fad1efc69079886abfb1c23f1001d68ad7ecca` |
+| 3 | `lemma` | [eulerMascheroniConstant_eq_neg_deriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/GammaDeriv.lean/declarations/eulermascheroniconstant-eq-neg-deriv.md) | 89 | `result-track:a001328039124eb46132f3adfcf2db2dc06b8d402f58697b4fe4b8ccd2eefbb7` |
+| 4 | `lemma` | [hasDerivAt_Gamma_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/GammaDeriv.lean/declarations/hasderivat-gamma-one-source-edition-4.md) | 93 | `result-track:f8648eac3b0eee84662bc0c63aaf1adfd6bedbc3cb26c16e90a018ce93d3bb0b` |
+| 5 | `lemma` | [hasDerivAt_Gamma_one_half](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/GammaDeriv.lean/declarations/hasderivat-gamma-one-half.md) | 97 | `result-track:993e2bcd3d3b3efcb1e907af6428898cd196f754fad848652e316671e09f0f7e` |
+| 6 | `lemma` | [HasDerivAt.complex_of_real](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/GammaDeriv.lean/declarations/hasderivat-complex-of-real.md) | 154 | `result-track:447d9ba9170f42de75195279db6fb85a85258cbfa87c3ae9be4536d1467afc08` |
+| 7 | `lemma` | [differentiable_at_Gamma_nat_add_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/GammaDeriv.lean/declarations/differentiable-at-gamma-nat-add-one.md) | 161 | `result-track:f9aa2bc1b2c67a455d8e49fe3f39d2e4377d3710cc0bde80dae11ff5a141c0b0` |
+| 8 | `lemma` | [hasDerivAt_Gamma_nat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/GammaDeriv.lean/declarations/hasderivat-gamma-nat-source-edition-2.md) | 168 | `result-track:8303c78f0e59ebec00546244f28a49a39edfc3b17bcb8959be67726b2eb99608` |
+| 9 | `lemma` | [deriv_Gamma_nat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/GammaDeriv.lean/declarations/deriv-gamma-nat-source-edition-2.md) | 176 | `result-track:acd64530da26163db09a1c8a767f03959e337e1891cfc1ac53575ef225817dff` |
+| 10 | `lemma` | [hasDerivAt_Gamma_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/GammaDeriv.lean/declarations/hasderivat-gamma-one-source-edition-3.md) | 180 | `result-track:8ca00fec09ae1e9a86fa399a212590cb95ee28bcd8b61f7ca01b27cad09197f9` |
+| 11 | `lemma` | [hasDerivAt_Gamma_one_half](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/GammaDeriv.lean/declarations/hasderivat-gamma-one-half-source-edition-2.md) | 184 | `result-track:9aff0bc412b348221d5879d19ce0a496a2632005e36ba270d4dae28d48c6c76e` |
+| 12 | `lemma` | [hasDerivAt_Gammaℂ_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/GammaDeriv.lean/declarations/hasderivat-gamma-one.md) | 193 | `result-track:637d17886e25d045bcf5cc902a8dc1327b5c16656f11982760f6ba45da8b70bc` |
+| 13 | `lemma` | [hasDerivAt_Gammaℝ_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/GammaDeriv.lean/declarations/hasderivat-gamma-one-source-edition-2.md) | 206 | `result-track:65136f911190d01ab859f76555386b9fd08107195d456c76c0b2697b797ace92` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

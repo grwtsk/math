@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/MutuallyRecursiveTypeTestNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/MutuallyRecursiveTypeTestNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MutuallyRecursiveTypeTestNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MutuallyRecursiveTypeTestNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [NatTree](../../../../../ComputerScience/AlgorithmsInComputerScience/MutuallyRecursiveTypeTestNamespaced.lean/declarations/nattree.md) | 50 | `declaration-track:8d899039a094f4ae54b810fc0df0749b82978b049e7fa5d1ad02bee6be0bb9cf` |
-| 2 | `structure` | [Node](../../../../../ComputerScience/AlgorithmsInComputerScience/MutuallyRecursiveTypeTestNamespaced.lean/declarations/node.md) | 56 | `declaration-track:e6541f9df32f7568129f1fcdd712dbb42e929b8dff7f4158c11c764dda6f5dc5` |
-| 3 | `def` | [search](../../../../../ComputerScience/AlgorithmsInComputerScience/MutuallyRecursiveTypeTestNamespaced.lean/declarations/search.md) | 142 | `declaration-track:54f8b7c00cc7f34c36124c555afa40ab0e767efc7a49415e8fad84d30e198e68` |
-| 4 | `def` | [shrinkNatTree](../../../../../ComputerScience/AlgorithmsInComputerScience/MutuallyRecursiveTypeTestNamespaced.lean/declarations/shrinknattree.md) | 150 | `declaration-track:a60e0e489b18d607b1e61388511886a5dd7200d2b140960efb1bac8b9233a74f` |
-| 5 | `instance` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/MutuallyRecursiveTypeTestNamespaced.lean/declarations/instance.md) | 160 | `declaration-track:3cd85bc9f5576c166692d9379e392fffc1ef0cbd0acdfd5795ad429a2b444ca4` |
+| 1 | `inductive` | [NatTree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MutuallyRecursiveTypeTestNamespaced.lean/declarations/nattree.md) | 50 | `declaration-track:8d899039a094f4ae54b810fc0df0749b82978b049e7fa5d1ad02bee6be0bb9cf` |
+| 2 | `structure` | [Node](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MutuallyRecursiveTypeTestNamespaced.lean/declarations/node.md) | 56 | `declaration-track:e6541f9df32f7568129f1fcdd712dbb42e929b8dff7f4158c11c764dda6f5dc5` |
+| 3 | `def` | [search](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MutuallyRecursiveTypeTestNamespaced.lean/declarations/search.md) | 142 | `declaration-track:54f8b7c00cc7f34c36124c555afa40ab0e767efc7a49415e8fad84d30e198e68` |
+| 4 | `def` | [shrinkNatTree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MutuallyRecursiveTypeTestNamespaced.lean/declarations/shrinknattree.md) | 150 | `declaration-track:a60e0e489b18d607b1e61388511886a5dd7200d2b140960efb1bac8b9233a74f` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MutuallyRecursiveTypeTestNamespaced.lean/declarations/instance.md) | 160 | `declaration-track:3cd85bc9f5576c166692d9379e392fffc1ef0cbd0acdfd5795ad429a2b444ca4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

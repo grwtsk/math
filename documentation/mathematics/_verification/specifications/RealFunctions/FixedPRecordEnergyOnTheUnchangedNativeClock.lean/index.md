@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/FixedPRecordEnergyOnTheUnchangedNativeClock.lean/index.md) · [Full source](../../../../RealFunctions/FixedPRecordEnergyOnTheUnchangedNativeClock.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FixedPRecordEnergyOnTheUnchangedNativeClock.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FixedPRecordEnergyOnTheUnchangedNativeClock.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [weighted_power_payment](../../../../RealFunctions/FixedPRecordEnergyOnTheUnchangedNativeClock.lean/declarations/weighted-power-payment.md) | 26 | `result-track:14f752ba8043795db9c9fcb77ac886bc5af76068cd7bff29de5c2ef167c61d02` |
-| 2 | `theorem` | [finite_weighted_holder](../../../../RealFunctions/FixedPRecordEnergyOnTheUnchangedNativeClock.lean/declarations/finite-weighted-holder.md) | 32 | `result-track:86053a6a88a76da4d7b2950cbc7341a1f719e60f2a1d6d8905a6211c1156fb65` |
-| 3 | `theorem` | [native_p_energy_nonneg](../../../../RealFunctions/FixedPRecordEnergyOnTheUnchangedNativeClock.lean/declarations/native-p-energy-nonneg.md) | 49 | `result-track:e657d44507b81a60b623b5e705307c74e37107a8f7f627d13f68110da3f04ba5` |
-| 4 | `theorem` | [actual_record_holder](../../../../RealFunctions/FixedPRecordEnergyOnTheUnchangedNativeClock.lean/declarations/actual-record-holder.md) | 57 | `result-track:5f7f427091c62d586b5d3546d28b8118e3bca4c182847107dafb1bb2470c6069` |
-| 5 | `theorem` | [fixed_p_reserve_implies_eventual_sign](../../../../RealFunctions/FixedPRecordEnergyOnTheUnchangedNativeClock.lean/declarations/fixed-p-reserve-implies-eventual-sign.md) | 84 | `result-track:2b4529a3dd182f9962c426dc9012e50f91d9eb77ad9d6348b5886b237b08c94e` |
+| 1 | `theorem` | [weighted_power_payment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FixedPRecordEnergyOnTheUnchangedNativeClock.lean/declarations/weighted-power-payment.md) | 26 | `result-track:14f752ba8043795db9c9fcb77ac886bc5af76068cd7bff29de5c2ef167c61d02` |
+| 2 | `theorem` | [finite_weighted_holder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FixedPRecordEnergyOnTheUnchangedNativeClock.lean/declarations/finite-weighted-holder.md) | 32 | `result-track:86053a6a88a76da4d7b2950cbc7341a1f719e60f2a1d6d8905a6211c1156fb65` |
+| 3 | `theorem` | [native_p_energy_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FixedPRecordEnergyOnTheUnchangedNativeClock.lean/declarations/native-p-energy-nonneg.md) | 49 | `result-track:e657d44507b81a60b623b5e705307c74e37107a8f7f627d13f68110da3f04ba5` |
+| 4 | `theorem` | [actual_record_holder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FixedPRecordEnergyOnTheUnchangedNativeClock.lean/declarations/actual-record-holder.md) | 57 | `result-track:5f7f427091c62d586b5d3546d28b8118e3bca4c182847107dafb1bb2470c6069` |
+| 5 | `theorem` | [fixed_p_reserve_implies_eventual_sign](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FixedPRecordEnergyOnTheUnchangedNativeClock.lean/declarations/fixed-p-reserve-implies-eventual-sign.md) | 84 | `result-track:2b4529a3dd182f9962c426dc9012e50f91d9eb77ad9d6348b5886b237b08c94e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

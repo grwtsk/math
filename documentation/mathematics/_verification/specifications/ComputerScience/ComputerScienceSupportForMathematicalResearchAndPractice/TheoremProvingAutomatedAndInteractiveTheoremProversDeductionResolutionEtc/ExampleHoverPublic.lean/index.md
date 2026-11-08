@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ExampleHoverPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ExampleHoverPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ExampleHoverPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ExampleHoverPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [addCommentAt](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ExampleHoverPublic.lean/declarations/addcommentat.md) | 31 | `declaration-track:92daab5de2782168c9f334f8036922667f75948a218e37cace487790414d74b1` |
-| 2 | `def` | [lines](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ExampleHoverPublic.lean/declarations/lines.md) | 54 | `declaration-track:9c8d22e5e6bc4c575aabd72817e87036de2587af4f0bd14612213a00b2bbf7ad` |
-| 3 | `inductive` | [RWState](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ExampleHoverPublic.lean/declarations/rwstate.md) | 69 | `declaration-track:9299972ca5f520de4f5769ff52a78fc5dcd2862c0e74871acce224d9e3117fa3` |
-| 4 | `def` | [rewriteExamples](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ExampleHoverPublic.lean/declarations/rewriteexamples.md) | 85 | `declaration-track:5c27cc2cb9c029ecd4da7f6d8f6bb38f1f4c3c86f75c8c003f5a87f9e00f820e` |
+| 1 | `def` | [addCommentAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ExampleHoverPublic.lean/declarations/addcommentat.md) | 31 | `declaration-track:92daab5de2782168c9f334f8036922667f75948a218e37cace487790414d74b1` |
+| 2 | `def` | [lines](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ExampleHoverPublic.lean/declarations/lines.md) | 54 | `declaration-track:9c8d22e5e6bc4c575aabd72817e87036de2587af4f0bd14612213a00b2bbf7ad` |
+| 3 | `inductive` | [RWState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ExampleHoverPublic.lean/declarations/rwstate.md) | 69 | `declaration-track:9299972ca5f520de4f5769ff52a78fc5dcd2862c0e74871acce224d9e3117fa3` |
+| 4 | `def` | [rewriteExamples](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ExampleHoverPublic.lean/declarations/rewriteexamples.md) | 85 | `declaration-track:5c27cc2cb9c029ecd4da7f6d8f6bb38f1f4c3c86f75c8c003f5a87f9e00f820e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

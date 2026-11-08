@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/LogDerivativeZeroExclusion.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/LogDerivativeZeroExclusion.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/LogDerivativeZeroExclusion.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/LogDerivativeZeroExclusion.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.ComplexAnalysis.AnalyticLinearODE`](../../../../../../FunctionsOfAComplexVariable/AnalyticLinearODE.lean/index.md) — import line 7; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.PoleRemovedSource`](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PoleRemovedSource.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.Analysis.ComplexAnalysis.AnalyticLinearODE`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/AnalyticLinearODE.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.PoleRemovedSource`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PoleRemovedSource.lean/index.md) — import line 8; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [ode_on_euler_domain](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/LogDerivativeZeroExclusion.lean/declarations/ode-on-euler-domain.md) | 26 | `result-track:f5efea2135801370bc0f32dcba5c223df75da8378f4943009246c752315140f2` |
-| 2 | `theorem` | [ode_on_halfPlane](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/LogDerivativeZeroExclusion.lean/declarations/ode-on-halfplane.md) | 38 | `result-track:be77942e3d34b9d84d7537ad42507b8f5836856c18516e43d6ea13acaa7c6f14` |
-| 3 | `theorem` | [poleRemoved_ne_zero_of_extension](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/LogDerivativeZeroExclusion.lean/declarations/poleremoved-ne-zero-of-extension.md) | 60 | `result-track:1bcd1f11ecff24cf170b3194efc0ade1c1a9dc55eb2bda3e975ffa61f69855b3` |
-| 4 | `theorem` | [zeta_ne_zero_right_of_extension](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/LogDerivativeZeroExclusion.lean/declarations/zeta-ne-zero-right-of-extension.md) | 73 | `result-track:7b6d34eb83d497ac7ae6290407fab20901049112666556c9d6cbc7c5633a7a8a` |
-| 5 | `theorem` | [riemannHypothesis_of_extension](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/LogDerivativeZeroExclusion.lean/declarations/riemannhypothesis-of-extension.md) | 84 | `result-track:117326d3c13ab0751b55f647c9d512ccc582d8405a2415cc55396e7945662f6d` |
-| 6 | `theorem` | [riemannHypothesis_of_exists_extension](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/LogDerivativeZeroExclusion.lean/declarations/riemannhypothesis-of-exists-extension.md) | 103 | `result-track:19f9f30d15c5b74d88111e24274e549d083de0081b9c45d5fa461c13207234b9` |
+| 1 | `theorem` | [ode_on_euler_domain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/LogDerivativeZeroExclusion.lean/declarations/ode-on-euler-domain.md) | 26 | `result-track:f5efea2135801370bc0f32dcba5c223df75da8378f4943009246c752315140f2` |
+| 2 | `theorem` | [ode_on_halfPlane](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/LogDerivativeZeroExclusion.lean/declarations/ode-on-halfplane.md) | 38 | `result-track:be77942e3d34b9d84d7537ad42507b8f5836856c18516e43d6ea13acaa7c6f14` |
+| 3 | `theorem` | [poleRemoved_ne_zero_of_extension](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/LogDerivativeZeroExclusion.lean/declarations/poleremoved-ne-zero-of-extension.md) | 60 | `result-track:1bcd1f11ecff24cf170b3194efc0ade1c1a9dc55eb2bda3e975ffa61f69855b3` |
+| 4 | `theorem` | [zeta_ne_zero_right_of_extension](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/LogDerivativeZeroExclusion.lean/declarations/zeta-ne-zero-right-of-extension.md) | 73 | `result-track:7b6d34eb83d497ac7ae6290407fab20901049112666556c9d6cbc7c5633a7a8a` |
+| 5 | `theorem` | [riemannHypothesis_of_extension](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/LogDerivativeZeroExclusion.lean/declarations/riemannhypothesis-of-extension.md) | 84 | `result-track:117326d3c13ab0751b55f647c9d512ccc582d8405a2415cc55396e7945662f6d` |
+| 6 | `theorem` | [riemannHypothesis_of_exists_extension](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/LogDerivativeZeroExclusion.lean/declarations/riemannhypothesis-of-exists-extension.md) | 103 | `result-track:19f9f30d15c5b74d88111e24274e549d083de0081b9c45d5fa461c13207234b9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Lift.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Lift.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Lift.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Lift.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [liftOr](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Lift.lean/declarations/liftor.md) | 22 | `declaration-track:29837388e1f6a478ec96ccfef4e6be6b38007b7ab2b61735246017abdec55048` |
-| 2 | `theorem` | [liftOr_encode](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Lift.lean/declarations/liftor-encode.md) | 34 | `result-track:44a520317d66f764c032878ea13c4c166de02deac361cfd333c13918b5cebba2` |
-| 3 | `def` | [lift](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Lift.lean/declarations/lift.md) | 46 | `declaration-track:dd2011732713f118e899698c3940f669411d12d9db340d6a5036d08329fdba32` |
-| 4 | `theorem` | [lift_encode](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Lift.lean/declarations/lift-encode.md) | 54 | `result-track:af3dd1ef3a2d55d0a43f5fdc228d4f91d6899fc558eb47c7d46725fa8caa0c63` |
-| 5 | `def` | [typedLift](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Lift.lean/declarations/typedlift.md) | 65 | `declaration-track:8b119b415f389e63754f1122aacc086abf80cab15c78e03c63fd2c176436657b` |
+| 1 | `def` | [liftOr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Lift.lean/declarations/liftor.md) | 22 | `declaration-track:29837388e1f6a478ec96ccfef4e6be6b38007b7ab2b61735246017abdec55048` |
+| 2 | `theorem` | [liftOr_encode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Lift.lean/declarations/liftor-encode.md) | 34 | `result-track:44a520317d66f764c032878ea13c4c166de02deac361cfd333c13918b5cebba2` |
+| 3 | `def` | [lift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Lift.lean/declarations/lift.md) | 46 | `declaration-track:dd2011732713f118e899698c3940f669411d12d9db340d6a5036d08329fdba32` |
+| 4 | `theorem` | [lift_encode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Lift.lean/declarations/lift-encode.md) | 54 | `result-track:af3dd1ef3a2d55d0a43f5fdc228d4f91d6899fc558eb47c7d46725fa8caa0c63` |
+| 5 | `def` | [typedLift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Lift.lean/declarations/typedlift.md) | 65 | `declaration-track:8b119b415f389e63754f1122aacc086abf80cab15c78e03c63fd2c176436657b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

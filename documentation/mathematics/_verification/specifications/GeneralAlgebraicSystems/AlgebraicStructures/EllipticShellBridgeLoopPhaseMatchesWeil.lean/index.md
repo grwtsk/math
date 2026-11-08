@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EllipticShellBridgeLoopPhaseMatchesWeil.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EllipticShellBridgeLoopPhaseMatchesWeil.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EllipticShellBridgeLoopPhaseMatchesWeil.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EllipticShellBridgeLoopPhaseMatchesWeil.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [LoopPhaseMatchesWeil](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EllipticShellBridgeLoopPhaseMatchesWeil.lean/declarations/loopphasematchesweil.md) | 21 | `declaration-track:b3cc2dde907f8927bcc1fb6e31b6da1267d87861fee1f2487da61afa0a7abffd` |
-| 2 | `structure` | [ShellWeilCompatibility](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EllipticShellBridgeLoopPhaseMatchesWeil.lean/declarations/shellweilcompatibility.md) | 34 | `declaration-track:ea82e67cf1054af6ce09ccbf64b5e2e05058b9571f9e3efa0743debd790950f3` |
-| 3 | `theorem` | [shell_weil_compatible](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EllipticShellBridgeLoopPhaseMatchesWeil.lean/declarations/shell-weil-compatible.md) | 50 | `result-track:6c78e5782cb21ba5580a1cc763c273289b653d69fb9cd3ec7fd048c25f679021` |
-| 4 | `structure` | [ShellHeisenbergRepresentation](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EllipticShellBridgeLoopPhaseMatchesWeil.lean/declarations/shellheisenbergrepresentation.md) | 61 | `declaration-track:58a90e25b54a87c22201bdd7b0511b1fa468bf22dd52ebebd29a470ada24d24c` |
-| 5 | `structure` | [SelectedShellTwistGroup](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EllipticShellBridgeLoopPhaseMatchesWeil.lean/declarations/selectedshelltwistgroup.md) | 76 | `declaration-track:1de22c60dae8a3a613649ade5e902d5a96f3ad092048ab10fad8169267b57d45` |
-| 6 | `def` | [SurjectiveOntoSelectedShellTwists](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EllipticShellBridgeLoopPhaseMatchesWeil.lean/declarations/surjectiveontoselectedshelltwists.md) | 81 | `declaration-track:7144afca067f4e15dceec2b97c15a072f86cf6590ee4eef96eed1663f791a170` |
-| 7 | `theorem` | [selected_shell_twist_has_preimage](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/EllipticShellBridgeLoopPhaseMatchesWeil.lean/declarations/selected-shell-twist-has-preimage.md) | 90 | `result-track:cfbd2d1dd3db9a23075f182b5e0f8000bac87d1c46ecdd924cb55e37c70dc8e2` |
+| 1 | `def` | [LoopPhaseMatchesWeil](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EllipticShellBridgeLoopPhaseMatchesWeil.lean/declarations/loopphasematchesweil.md) | 21 | `declaration-track:b3cc2dde907f8927bcc1fb6e31b6da1267d87861fee1f2487da61afa0a7abffd` |
+| 2 | `structure` | [ShellWeilCompatibility](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EllipticShellBridgeLoopPhaseMatchesWeil.lean/declarations/shellweilcompatibility.md) | 34 | `declaration-track:ea82e67cf1054af6ce09ccbf64b5e2e05058b9571f9e3efa0743debd790950f3` |
+| 3 | `theorem` | [shell_weil_compatible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EllipticShellBridgeLoopPhaseMatchesWeil.lean/declarations/shell-weil-compatible.md) | 50 | `result-track:6c78e5782cb21ba5580a1cc763c273289b653d69fb9cd3ec7fd048c25f679021` |
+| 4 | `structure` | [ShellHeisenbergRepresentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EllipticShellBridgeLoopPhaseMatchesWeil.lean/declarations/shellheisenbergrepresentation.md) | 61 | `declaration-track:58a90e25b54a87c22201bdd7b0511b1fa468bf22dd52ebebd29a470ada24d24c` |
+| 5 | `structure` | [SelectedShellTwistGroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EllipticShellBridgeLoopPhaseMatchesWeil.lean/declarations/selectedshelltwistgroup.md) | 76 | `declaration-track:1de22c60dae8a3a613649ade5e902d5a96f3ad092048ab10fad8169267b57d45` |
+| 6 | `def` | [SurjectiveOntoSelectedShellTwists](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EllipticShellBridgeLoopPhaseMatchesWeil.lean/declarations/surjectiveontoselectedshelltwists.md) | 81 | `declaration-track:7144afca067f4e15dceec2b97c15a072f86cf6590ee4eef96eed1663f791a170` |
+| 7 | `theorem` | [selected_shell_twist_has_preimage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/EllipticShellBridgeLoopPhaseMatchesWeil.lean/declarations/selected-shell-twist-has-preimage.md) | 90 | `result-track:cfbd2d1dd3db9a23075f182b5e0f8000bac87d1c46ecdd924cb55e37c70dc8e2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

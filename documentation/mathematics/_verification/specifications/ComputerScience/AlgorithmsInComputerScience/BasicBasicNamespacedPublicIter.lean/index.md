@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicIter.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicIter.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicIter.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicIter.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [Iter.toStringList](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicIter.lean/declarations/iter-tostringlist.md) | 29 | `declaration-track:90993d6db5c9da0c589b33e0625cead21009c308c66ce574477b55720994bad5` |
-| 2 | `abbrev` | [Iter.toStringArray](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicIter.lean/declarations/iter-tostringarray.md) | 38 | `declaration-track:b3f6ca6652cfe5f57fc18d8f56e851c56399d4f70d378454e0b7e731414c3b9d` |
+| 1 | `abbrev` | [Iter.toStringList](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicIter.lean/declarations/iter-tostringlist.md) | 29 | `declaration-track:90993d6db5c9da0c589b33e0625cead21009c308c66ce574477b55720994bad5` |
+| 2 | `abbrev` | [Iter.toStringArray](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicIter.lean/declarations/iter-tostringarray.md) | 38 | `declaration-track:b3f6ca6652cfe5f57fc18d8f56e851c56399d4f70d378454e0b7e731414c3b9d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

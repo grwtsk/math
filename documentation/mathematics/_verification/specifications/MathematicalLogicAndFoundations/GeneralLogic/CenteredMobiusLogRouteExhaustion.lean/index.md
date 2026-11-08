@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CenteredMobiusLogRouteExhaustion.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CenteredMobiusLogRouteExhaustion.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CenteredMobiusLogRouteExhaustion.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CenteredMobiusLogRouteExhaustion.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogChebyshevEquivalence`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogChebyshevEquivalence.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogChebyshevEquivalence`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogChebyshevEquivalence.lean/index.md) — import line 7; pinned internal source present.
 - `Mathlib.Tactic` — import line 8; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [allDyadicEnergyBound_of_globalChebyshev](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CenteredMobiusLogRouteExhaustion.lean/declarations/alldyadicenergybound-of-globalchebyshev.md) | 18 | `result-track:295a69f7dc4a98ce20fc70e5cd633d8603bf78a6fe0416825e3151bab201c291` |
-| 2 | `theorem` | [globalChebyshev_to_energy_factorization](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CenteredMobiusLogRouteExhaustion.lean/declarations/globalchebyshev-to-energy-factorization.md) | 25 | `result-track:103a3d7f58c5a185a476e2ee1ee9ffde738e95d40a52f71e156e2c248aad3ee2` |
-| 3 | `def` | [GreenMobiusLogRouteFinalArithmeticObligation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CenteredMobiusLogRouteExhaustion.lean/declarations/greenmobiuslogroutefinalarithmeticobligation.md) | 35 | `declaration-track:fbd2e99df38ded4f1d6d0b5b7076447ec07e2c60f594111e82a5c1253f79af8f` |
-| 4 | `theorem` | [greenMobiusLogRouteFinalObligation_suffices](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CenteredMobiusLogRouteExhaustion.lean/declarations/greenmobiuslogroutefinalobligation-suffices.md) | 38 | `result-track:be04cfbc1350ce40b359beb4324af987067e3ac0084d9d87cdfec4932966a3e7` |
+| 1 | `theorem` | [allDyadicEnergyBound_of_globalChebyshev](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CenteredMobiusLogRouteExhaustion.lean/declarations/alldyadicenergybound-of-globalchebyshev.md) | 18 | `result-track:295a69f7dc4a98ce20fc70e5cd633d8603bf78a6fe0416825e3151bab201c291` |
+| 2 | `theorem` | [globalChebyshev_to_energy_factorization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CenteredMobiusLogRouteExhaustion.lean/declarations/globalchebyshev-to-energy-factorization.md) | 25 | `result-track:103a3d7f58c5a185a476e2ee1ee9ffde738e95d40a52f71e156e2c248aad3ee2` |
+| 3 | `def` | [GreenMobiusLogRouteFinalArithmeticObligation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CenteredMobiusLogRouteExhaustion.lean/declarations/greenmobiuslogroutefinalarithmeticobligation.md) | 35 | `declaration-track:fbd2e99df38ded4f1d6d0b5b7076447ec07e2c60f594111e82a5c1253f79af8f` |
+| 4 | `theorem` | [greenMobiusLogRouteFinalObligation_suffices](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CenteredMobiusLogRouteExhaustion.lean/declarations/greenmobiuslogroutefinalobligation-suffices.md) | 38 | `result-track:be04cfbc1350ce40b359beb4324af987067e3ac0084d9d87cdfec4932966a3e7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

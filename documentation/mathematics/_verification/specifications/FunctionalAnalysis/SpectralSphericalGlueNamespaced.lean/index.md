@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/SpectralSphericalGlueNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/SpectralSphericalGlueNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralSphericalGlueNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralSphericalGlueNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [surfaceId](../../../../FunctionalAnalysis/SpectralSphericalGlueNamespaced.lean/declarations/surfaceid.md) | 16 | `declaration-track:31e43a301a41e3557dde46f3d95865fdeb95d761632815890854544f3dfb97a4` |
-| 2 | `def` | [ownsDeclaredSurface](../../../../FunctionalAnalysis/SpectralSphericalGlueNamespaced.lean/declarations/ownsdeclaredsurface.md) | 17 | `declaration-track:ef3bdfcab011d981715ca1e81c137a9e65606a88fcafec2b81ccfa1c8e761283` |
-| 3 | `def` | [crossLeafReasoningRequiresGlue](../../../../FunctionalAnalysis/SpectralSphericalGlueNamespaced.lean/declarations/crossleafreasoningrequiresglue.md) | 18 | `declaration-track:fbd55f865ebd9d4da1c65929388da2a99e7884fa72464f5ef90d48c309d72b3a` |
-| 4 | `theorem` | [surface_id_declared](../../../../FunctionalAnalysis/SpectralSphericalGlueNamespaced.lean/declarations/surface-id-declared.md) | 20 | `result-track:618670fd80c0c370098d5165c388151d91639a0ee9d0d8f1bef6e5d0f942ee51` |
-| 5 | `theorem` | [owns_declared_surface](../../../../FunctionalAnalysis/SpectralSphericalGlueNamespaced.lean/declarations/owns-declared-surface.md) | 24 | `result-track:90dfe06596e1f4bca9728e2ff0866ad7a1f87660d92424abbdd9b464e9635e6c` |
+| 1 | `def` | [surfaceId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralSphericalGlueNamespaced.lean/declarations/surfaceid.md) | 16 | `declaration-track:31e43a301a41e3557dde46f3d95865fdeb95d761632815890854544f3dfb97a4` |
+| 2 | `def` | [ownsDeclaredSurface](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralSphericalGlueNamespaced.lean/declarations/ownsdeclaredsurface.md) | 17 | `declaration-track:ef3bdfcab011d981715ca1e81c137a9e65606a88fcafec2b81ccfa1c8e761283` |
+| 3 | `def` | [crossLeafReasoningRequiresGlue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralSphericalGlueNamespaced.lean/declarations/crossleafreasoningrequiresglue.md) | 18 | `declaration-track:fbd55f865ebd9d4da1c65929388da2a99e7884fa72464f5ef90d48c309d72b3a` |
+| 4 | `theorem` | [surface_id_declared](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralSphericalGlueNamespaced.lean/declarations/surface-id-declared.md) | 20 | `result-track:618670fd80c0c370098d5165c388151d91639a0ee9d0d8f1bef6e5d0f942ee51` |
+| 5 | `theorem` | [owns_declared_surface](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralSphericalGlueNamespaced.lean/declarations/owns-declared-surface.md) | 24 | `result-track:90dfe06596e1f4bca9728e2ff0866ad7a1f87660d92424abbdd9b464e9635e6c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/VerbWordNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/VerbWordNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/VerbWordNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/VerbWordNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [verbShadow](../../../../../ComputerScience/AlgorithmsInComputerScience/VerbWordNamespaced.lean/declarations/verbshadow.md) | 15 | `declaration-track:f6a2d0ef4bc0669870ff179b96ccb447d36c5f3f7bfcc9e8b975b00020338b3c` |
-| 2 | `theorem` | [verb_shadow_append](../../../../../ComputerScience/AlgorithmsInComputerScience/VerbWordNamespaced.lean/declarations/verb-shadow-append.md) | 17 | `result-track:35c46f7235d885f4eeeffda1e9032c2df146573b1ba83aaa2f4c1f19dc577916` |
+| 1 | `def` | [verbShadow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/VerbWordNamespaced.lean/declarations/verbshadow.md) | 15 | `declaration-track:f6a2d0ef4bc0669870ff179b96ccb447d36c5f3f7bfcc9e8b975b00020338b3c` |
+| 2 | `theorem` | [verb_shadow_append](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/VerbWordNamespaced.lean/declarations/verb-shadow-append.md) | 17 | `result-track:35c46f7235d885f4eeeffda1e9032c2df146573b1ba83aaa2f4c1f19dc577916` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

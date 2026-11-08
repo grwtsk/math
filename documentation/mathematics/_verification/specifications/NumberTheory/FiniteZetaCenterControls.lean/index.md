@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/FiniteZetaCenterControls.lean/index.md) · [Full source](../../../../NumberTheory/FiniteZetaCenterControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteZetaCenterControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteZetaCenterControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.FiniteNewtonCenter`](../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FiniteNewtonCenter.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.FiniteNewtonCenter`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FiniteNewtonCenter.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Tactic.NormNum` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,18 +58,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [empty_cutoff](../../../../NumberTheory/FiniteZetaCenterControls.lean/declarations/empty-cutoff.md) | 17 | `result-track:3b69eb1be62acfd76527e6f55e56d3bcddc51fe9750d0002c082c833a0cbb1cb` |
-| 2 | `theorem` | [one_term_cutoff](../../../../NumberTheory/FiniteZetaCenterControls.lean/declarations/one-term-cutoff.md) | 19 | `result-track:59755a3879f5bb58da33b6e93c70bdd0b4b69149571d617d84bbaaea8c67046b` |
-| 3 | `theorem` | [empty_value](../../../../NumberTheory/FiniteZetaCenterControls.lean/declarations/empty-value.md) | 22 | `result-track:a3eb14d46b01a8cdf08e3eadf4db8412957d6ea02a145b99306424e593380ec5` |
-| 4 | `theorem` | [empty_slope](../../../../NumberTheory/FiniteZetaCenterControls.lean/declarations/empty-slope.md) | 26 | `result-track:5b1ccdd92942bedeb04dffd562939fd953c021ad770d95144640b151cb72dea4` |
-| 5 | `theorem` | [pointwise_zero_tail_nonzero_slope](../../../../NumberTheory/FiniteZetaCenterControls.lean/declarations/pointwise-zero-tail-nonzero-slope.md) | 31 | `result-track:32b283d41085982b71f2455cf86c922721473df424f198827a5e83fd5fdd8d11` |
-| 6 | `theorem` | [zero_radius_rejected](../../../../NumberTheory/FiniteZetaCenterControls.lean/declarations/zero-radius-rejected.md) | 35 | `result-track:0628515569dcc903b5539994e60102fa2216217495bb3c4819d31aabae160026` |
-| 7 | `theorem` | [outside_halfplane_rejected](../../../../NumberTheory/FiniteZetaCenterControls.lean/declarations/outside-halfplane-rejected.md) | 37 | `result-track:171ddfd72b6546dc6076dccf399062507fb2574f06ac7488edc59499d1849f23` |
-| 8 | `theorem` | [pole_guard_rejects](../../../../NumberTheory/FiniteZetaCenterControls.lean/declarations/pole-guard-rejects.md) | 40 | `result-track:918d5a7b604eb558518fe26266346c38207ae2ea6c7ce245b477f6dad3133af3` |
-| 9 | `theorem` | [tail_at_two](../../../../NumberTheory/FiniteZetaCenterControls.lean/declarations/tail-at-two.md) | 43 | `result-track:a161822c9c0ba912966a66721ca29cebfd7df64c1d0adce119f49d19fd0d7aaf` |
-| 10 | `theorem` | [tail_at_two_one_term](../../../../NumberTheory/FiniteZetaCenterControls.lean/declarations/tail-at-two-one-term.md) | 47 | `result-track:ce55f43364206a4150ea91498f3d22fb7bf76117946f070de09658210145ceb9` |
-| 11 | `theorem` | [two_error_allowances](../../../../NumberTheory/FiniteZetaCenterControls.lean/declarations/two-error-allowances.md) | 51 | `result-track:60c9a9c3c8be3ba9b3c17aaf94bed1b8533d33b6c8798ad16c6b9c8b5d359705` |
-| 12 | `theorem` | [cubic_value_zero_derivative_nonzero](../../../../NumberTheory/FiniteZetaCenterControls.lean/declarations/cubic-value-zero-derivative-nonzero.md) | 54 | `result-track:270715223d1fc500b70eb7c7751cc2e1b7128c831fab46023b4023943a521841` |
+| 1 | `theorem` | [empty_cutoff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteZetaCenterControls.lean/declarations/empty-cutoff.md) | 17 | `result-track:3b69eb1be62acfd76527e6f55e56d3bcddc51fe9750d0002c082c833a0cbb1cb` |
+| 2 | `theorem` | [one_term_cutoff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteZetaCenterControls.lean/declarations/one-term-cutoff.md) | 19 | `result-track:59755a3879f5bb58da33b6e93c70bdd0b4b69149571d617d84bbaaea8c67046b` |
+| 3 | `theorem` | [empty_value](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteZetaCenterControls.lean/declarations/empty-value.md) | 22 | `result-track:a3eb14d46b01a8cdf08e3eadf4db8412957d6ea02a145b99306424e593380ec5` |
+| 4 | `theorem` | [empty_slope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteZetaCenterControls.lean/declarations/empty-slope.md) | 26 | `result-track:5b1ccdd92942bedeb04dffd562939fd953c021ad770d95144640b151cb72dea4` |
+| 5 | `theorem` | [pointwise_zero_tail_nonzero_slope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteZetaCenterControls.lean/declarations/pointwise-zero-tail-nonzero-slope.md) | 31 | `result-track:32b283d41085982b71f2455cf86c922721473df424f198827a5e83fd5fdd8d11` |
+| 6 | `theorem` | [zero_radius_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteZetaCenterControls.lean/declarations/zero-radius-rejected.md) | 35 | `result-track:0628515569dcc903b5539994e60102fa2216217495bb3c4819d31aabae160026` |
+| 7 | `theorem` | [outside_halfplane_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteZetaCenterControls.lean/declarations/outside-halfplane-rejected.md) | 37 | `result-track:171ddfd72b6546dc6076dccf399062507fb2574f06ac7488edc59499d1849f23` |
+| 8 | `theorem` | [pole_guard_rejects](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteZetaCenterControls.lean/declarations/pole-guard-rejects.md) | 40 | `result-track:918d5a7b604eb558518fe26266346c38207ae2ea6c7ce245b477f6dad3133af3` |
+| 9 | `theorem` | [tail_at_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteZetaCenterControls.lean/declarations/tail-at-two.md) | 43 | `result-track:a161822c9c0ba912966a66721ca29cebfd7df64c1d0adce119f49d19fd0d7aaf` |
+| 10 | `theorem` | [tail_at_two_one_term](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteZetaCenterControls.lean/declarations/tail-at-two-one-term.md) | 47 | `result-track:ce55f43364206a4150ea91498f3d22fb7bf76117946f070de09658210145ceb9` |
+| 11 | `theorem` | [two_error_allowances](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteZetaCenterControls.lean/declarations/two-error-allowances.md) | 51 | `result-track:60c9a9c3c8be3ba9b3c17aaf94bed1b8533d33b6c8798ad16c6b9c8b5d359705` |
+| 12 | `theorem` | [cubic_value_zero_derivative_nonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteZetaCenterControls.lean/declarations/cubic-value-zero-derivative-nonzero.md) | 54 | `result-track:270715223d1fc500b70eb7c7751cc2e1b7128c831fab46023b4023943a521841` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

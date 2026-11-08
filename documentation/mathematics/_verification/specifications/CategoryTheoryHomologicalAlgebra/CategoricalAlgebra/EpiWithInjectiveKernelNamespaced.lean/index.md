@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/EpiWithInjectiveKernelNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/EpiWithInjectiveKernelNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/EpiWithInjectiveKernelNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/EpiWithInjectiveKernelNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [epiWithInjectiveKernel](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/EpiWithInjectiveKernelNamespaced.lean/declarations/epiwithinjectivekernel.md) | 39 | `declaration-track:177f81eb0b60b6c3a57eacefb2879d69df50662ea2baef28a68ff6738e8dbec8` |
-| 2 | `lemma` | [epiWithInjectiveKernel_iff](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/EpiWithInjectiveKernelNamespaced.lean/declarations/epiwithinjectivekernel-iff.md) | 45 | `result-track:82569a3de18f891c1078ec32c8921b68f2e8b8349f2e4b3981583e9020834ec2` |
-| 3 | `lemma` | [epiWithInjectiveKernel_of_iso](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/EpiWithInjectiveKernelNamespaced.lean/declarations/epiwithinjectivekernel-of-iso.md) | 61 | `result-track:e4de045fe3f52ae572ec45f1bc251e2d47bd82ca85a8b048cd8f49f116dc4c29` |
-| 4 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/EpiWithInjectiveKernelNamespaced.lean/declarations/instance.md) | 67 | `declaration-track:2f837a79a42cb78a21f39811ccb311e8775600635c56a0e0c24da556a89edc2e` |
+| 1 | `def` | [epiWithInjectiveKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/EpiWithInjectiveKernelNamespaced.lean/declarations/epiwithinjectivekernel.md) | 39 | `declaration-track:177f81eb0b60b6c3a57eacefb2879d69df50662ea2baef28a68ff6738e8dbec8` |
+| 2 | `lemma` | [epiWithInjectiveKernel_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/EpiWithInjectiveKernelNamespaced.lean/declarations/epiwithinjectivekernel-iff.md) | 45 | `result-track:82569a3de18f891c1078ec32c8921b68f2e8b8349f2e4b3981583e9020834ec2` |
+| 3 | `lemma` | [epiWithInjectiveKernel_of_iso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/EpiWithInjectiveKernelNamespaced.lean/declarations/epiwithinjectivekernel-of-iso.md) | 61 | `result-track:e4de045fe3f52ae572ec45f1bc251e2d47bd82ca85a8b048cd8f49f116dc4c29` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/EpiWithInjectiveKernelNamespaced.lean/declarations/instance.md) | 67 | `declaration-track:2f837a79a42cb78a21f39811ccb311e8775600635c56a0e0c24da556a89edc2e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

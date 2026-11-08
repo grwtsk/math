@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPZeroNeCharZeroNamespaced.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPZeroNeCharZeroNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPZeroNeCharZeroNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPZeroNeCharZeroNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [add_one_eq_one](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPZeroNeCharZeroNamespaced.lean/declarations/add-one-eq-one.md) | 34 | `result-track:54558c8527cea6936b36c1d6a2bf95496f240e1ab3fc2f6c322326e6e8bf95bd` |
-| 2 | `theorem` | [withZero_unit_charP_zero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPZeroNeCharZeroNamespaced.lean/declarations/withzero-unit-charp-zero.md) | 37 | `result-track:9596ab4e9609bd72eafdeb64c66d246abc647b238be76211b281901717266300` |
-| 3 | `theorem` | [withZero_unit_not_charZero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPZeroNeCharZeroNamespaced.lean/declarations/withzero-unit-not-charzero.md) | 40 | `result-track:82e6b70aff1deacdc66fc38914e3564cbb2d95f223e3b5f45ae156d34f13fa2f` |
+| 1 | `theorem` | [add_one_eq_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPZeroNeCharZeroNamespaced.lean/declarations/add-one-eq-one.md) | 34 | `result-track:54558c8527cea6936b36c1d6a2bf95496f240e1ab3fc2f6c322326e6e8bf95bd` |
+| 2 | `theorem` | [withZero_unit_charP_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPZeroNeCharZeroNamespaced.lean/declarations/withzero-unit-charp-zero.md) | 37 | `result-track:9596ab4e9609bd72eafdeb64c66d246abc647b238be76211b281901717266300` |
+| 3 | `theorem` | [withZero_unit_not_charZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPZeroNeCharZeroNamespaced.lean/declarations/withzero-unit-not-charzero.md) | 40 | `result-track:82e6b70aff1deacdc66fc38914e3564cbb2d95f223e3b5f45ae156d34f13fa2f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/QuasicategoryNerveNamespaced.lean/index.md) · [Full source](../../../../AlgebraicTopology/QuasicategoryNerveNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/QuasicategoryNerveNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/QuasicategoryNerveNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [quasicategory](../../../../AlgebraicTopology/QuasicategoryNerveNamespaced.lean/declarations/quasicategory.md) | 36 | `declaration-track:727f520b4a9047e5055a8fd81c045b0c0ce418ce07464ada7c387c590180015e` |
+| 1 | `instance` | [quasicategory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/QuasicategoryNerveNamespaced.lean/declarations/quasicategory.md) | 36 | `declaration-track:727f520b4a9047e5055a8fd81c045b0c0ce418ce07464ada7c387c590180015e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

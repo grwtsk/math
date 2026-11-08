@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/RealGeometricDenominator.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/RealGeometricDenominator.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RealGeometricDenominator.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RealGeometricDenominator.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [pow_div_one_sub_le_two_mul](../../../../FunctionsOfAComplexVariable/RealGeometricDenominator.lean/declarations/pow-div-one-sub-le-two-mul.md) | 47 | `result-track:526f75fbe1b1f71edead6b18355afab726b91945407a40c53065778d73c9ef85` |
+| 1 | `lemma` | [pow_div_one_sub_le_two_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RealGeometricDenominator.lean/declarations/pow-div-one-sub-le-two-mul.md) | 47 | `result-track:526f75fbe1b1f71edead6b18355afab726b91945407a40c53065778d73c9ef85` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

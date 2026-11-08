@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/IntAssociated.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/IntAssociated.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/IntAssociated.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/IntAssociated.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Int.natAbs_eq_iff_associated](../../../../../NumberTheory/ElementaryNumberTheory/IntAssociated.lean/declarations/int-natabs-eq-iff-associated.md) | 19 | `result-track:5adb24c6add66018187c9e3cb47e28fa7e2c2ad26a3968eb6047ef632a02fb6d` |
+| 1 | `theorem` | [Int.natAbs_eq_iff_associated](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/IntAssociated.lean/declarations/int-natabs-eq-iff-associated.md) | 19 | `result-track:5adb24c6add66018187c9e3cb47e28fa7e2c2ad26a3968eb6047ef632a02fb6d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

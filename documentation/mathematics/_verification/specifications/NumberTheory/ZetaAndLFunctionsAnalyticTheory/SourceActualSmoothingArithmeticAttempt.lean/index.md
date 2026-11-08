@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualSmoothingArithmeticAttempt.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualSmoothingArithmeticAttempt.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualSmoothingArithmeticAttempt.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualSmoothingArithmeticAttempt.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualSmoothingCompanion](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualSmoothingArithmeticAttempt.lean/declarations/actualsmoothingcompanion.md) | 21 | `declaration-track:635b74a239c1adaa93ab893d9cd4c84234ebf8b28e8d44ad7904227b48a73918` |
-| 2 | `theorem` | [actual_gamma_boundary_bounds](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualSmoothingArithmeticAttempt.lean/declarations/actual-gamma-boundary-bounds.md) | 26 | `result-track:64673b4c19f89546e788ee10d7f3767afd42397292e7482d04293bd3fad167ac` |
-| 3 | `theorem` | [actual_moment_eq_residual_add_companion](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualSmoothingArithmeticAttempt.lean/declarations/actual-moment-eq-residual-add-companion.md) | 58 | `result-track:60ddf3ae9e6c7180b3e7c24cd2f30ca3f6c2de244100003c668a52d8c84f828b` |
-| 4 | `theorem` | [actual_moment_eq_boundary_sub_Mangoldt_work](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualSmoothingArithmeticAttempt.lean/declarations/actual-moment-eq-boundary-sub-mangoldt-work.md) | 68 | `result-track:1761a8df309119ca96b77347ca617d4c5b5e43d4d7cbdc3a0326dc5784601cb1` |
-| 5 | `theorem` | [actual_smoothing_companion_bounds](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualSmoothingArithmeticAttempt.lean/declarations/actual-smoothing-companion-bounds.md) | 78 | `result-track:c2f2c4fcb4fa72d2a2345be12b3addeb219cac11a22cd999d83fb5e56ab4d62d` |
-| 6 | `theorem` | [actual_moment_residual_comparison](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualSmoothingArithmeticAttempt.lean/declarations/actual-moment-residual-comparison.md) | 91 | `result-track:f9f88e20c56e5158e076653fd63799a10ae12832d33e201ae96bb66daa12e877` |
+| 1 | `def` | [actualSmoothingCompanion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualSmoothingArithmeticAttempt.lean/declarations/actualsmoothingcompanion.md) | 21 | `declaration-track:635b74a239c1adaa93ab893d9cd4c84234ebf8b28e8d44ad7904227b48a73918` |
+| 2 | `theorem` | [actual_gamma_boundary_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualSmoothingArithmeticAttempt.lean/declarations/actual-gamma-boundary-bounds.md) | 26 | `result-track:64673b4c19f89546e788ee10d7f3767afd42397292e7482d04293bd3fad167ac` |
+| 3 | `theorem` | [actual_moment_eq_residual_add_companion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualSmoothingArithmeticAttempt.lean/declarations/actual-moment-eq-residual-add-companion.md) | 58 | `result-track:60ddf3ae9e6c7180b3e7c24cd2f30ca3f6c2de244100003c668a52d8c84f828b` |
+| 4 | `theorem` | [actual_moment_eq_boundary_sub_Mangoldt_work](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualSmoothingArithmeticAttempt.lean/declarations/actual-moment-eq-boundary-sub-mangoldt-work.md) | 68 | `result-track:1761a8df309119ca96b77347ca617d4c5b5e43d4d7cbdc3a0326dc5784601cb1` |
+| 5 | `theorem` | [actual_smoothing_companion_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualSmoothingArithmeticAttempt.lean/declarations/actual-smoothing-companion-bounds.md) | 78 | `result-track:c2f2c4fcb4fa72d2a2345be12b3addeb219cac11a22cd999d83fb5e56ab4d62d` |
+| 6 | `theorem` | [actual_moment_residual_comparison](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualSmoothingArithmeticAttempt.lean/declarations/actual-moment-residual-comparison.md) | 91 | `result-track:f9f88e20c56e5158e076653fd63799a10ae12832d33e201ae96bb66daa12e877` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

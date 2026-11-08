@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TT12BertrandGraphTransport.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TT12BertrandGraphTransport.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TT12BertrandGraphTransport.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TT12BertrandGraphTransport.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [tt12_bertrandGraphTransport](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TT12BertrandGraphTransport.lean/declarations/tt12-bertrandgraphtransport.md) | 16 | `result-track:bd6de423ecc56189c41f4af13d89e83e41d4478b275579e48c5f3f31f003604f` |
+| 1 | `theorem` | [tt12_bertrandGraphTransport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TT12BertrandGraphTransport.lean/declarations/tt12-bertrandgraphtransport.md) | 16 | `result-track:bd6de423ecc56189c41f4af13d89e83e41d4478b275579e48c5f3f31f003604f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/PrimeFrequency.lean/index.md) · [Full source](../../../../Combinatorics/PrimeFrequency.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeFrequency.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeFrequency.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [FrequencyStatus](../../../../Combinatorics/PrimeFrequency.lean/declarations/frequencystatus.md) | 7 | `declaration-track:2309ea19bdfb7d86c4d5445062b98c9ae07660859200315e2c62a43bd8b4ad9a` |
-| 2 | `def` | [incidenceCount](../../../../Combinatorics/PrimeFrequency.lean/declarations/incidencecount.md) | 11 | `declaration-track:c66ccb02e955cae17d6eefcfe8c2bd3231b46f6a9cb277b32d6db8a91393f368` |
-| 3 | `def` | [exactAt](../../../../Combinatorics/PrimeFrequency.lean/declarations/exactat.md) | 14 | `declaration-track:c64b5b281acf07349768491de02298061da684c35cb5d1ccdf8e6814fb175595` |
-| 4 | `theorem` | [failed_target_is_residual](../../../../Combinatorics/PrimeFrequency.lean/declarations/failed-target-is-residual.md) | 17 | `result-track:7aa35d4c11f3ee266993c9d5414e9286bc338479d33c73d52abc12a2ae150308` |
+| 1 | `inductive` | [FrequencyStatus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeFrequency.lean/declarations/frequencystatus.md) | 7 | `declaration-track:2309ea19bdfb7d86c4d5445062b98c9ae07660859200315e2c62a43bd8b4ad9a` |
+| 2 | `def` | [incidenceCount](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeFrequency.lean/declarations/incidencecount.md) | 11 | `declaration-track:c66ccb02e955cae17d6eefcfe8c2bd3231b46f6a9cb277b32d6db8a91393f368` |
+| 3 | `def` | [exactAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeFrequency.lean/declarations/exactat.md) | 14 | `declaration-track:c64b5b281acf07349768491de02298061da684c35cb5d1ccdf8e6814fb175595` |
+| 4 | `theorem` | [failed_target_is_residual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimeFrequency.lean/declarations/failed-target-is-residual.md) | 17 | `result-track:7aa35d4c11f3ee266993c9d5414e9286bc338479d33c73d52abc12a2ae150308` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

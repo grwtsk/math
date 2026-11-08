@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetNatAntidiagonalNamespaced.lean/index.md) · [Full source](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetNatAntidiagonalNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetNatAntidiagonalNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetNatAntidiagonalNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [antidiagonal](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetNatAntidiagonalNamespaced.lean/declarations/antidiagonal.md) | 38 | `declaration-track:292141f7e859132319b398ab27a3d748771115c9b7012a3d1f80e70dc59ca099` |
-| 2 | `theorem` | [mem_antidiagonal](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetNatAntidiagonalNamespaced.lean/declarations/mem-antidiagonal.md) | 43 | `result-track:0e85c3701daad618b785b6f2c01276c1b5de8d8ba8239cffc91df24a12be88c5` |
-| 3 | `theorem` | [card_antidiagonal](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetNatAntidiagonalNamespaced.lean/declarations/card-antidiagonal.md) | 48 | `result-track:07b1030eef1d57b041ad07bea6609adbbbffb5c814f22ea21f5ede9fb75fba0c` |
-| 4 | `theorem` | [antidiagonal_zero](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetNatAntidiagonalNamespaced.lean/declarations/antidiagonal-zero.md) | 53 | `result-track:748674529dbde85eaa88ec95d8a24f92f7903b0ffef0a5da33a27458bea52477` |
-| 5 | `theorem` | [nodup_antidiagonal](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetNatAntidiagonalNamespaced.lean/declarations/nodup-antidiagonal.md) | 58 | `result-track:802f36deaa5b9497205c28a37ca11caf4f0c3058de6d36a8dbc433e9cd217773` |
-| 6 | `theorem` | [antidiagonal_succ](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetNatAntidiagonalNamespaced.lean/declarations/antidiagonal-succ.md) | 62 | `result-track:22fd6b1824d7afac035ee4679855a8624b70466392862c6381d2cf3ac22f5d14` |
-| 7 | `theorem` | [antidiagonal_succ'](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetNatAntidiagonalNamespaced.lean/declarations/antidiagonal-succ-source-edition-2.md) | 66 | `result-track:2ef658cec3fbca2e51503b85f3115e05ab61419f00c4b589cbeeab1f25d6e030` |
-| 8 | `theorem` | [antidiagonal_succ_succ'](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetNatAntidiagonalNamespaced.lean/declarations/antidiagonal-succ-succ.md) | 71 | `result-track:bec210e136670415f075f2b3d61e80d56ea9dc67f5fdd39b2507d8303e13f833` |
-| 9 | `theorem` | [map_swap_antidiagonal](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetNatAntidiagonalNamespaced.lean/declarations/map-swap-antidiagonal.md) | 77 | `result-track:132b79c074c10e585df74d1ef58272990e5db00d4f83f07ddd51be55d29ddacb` |
+| 1 | `def` | [antidiagonal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetNatAntidiagonalNamespaced.lean/declarations/antidiagonal.md) | 38 | `declaration-track:292141f7e859132319b398ab27a3d748771115c9b7012a3d1f80e70dc59ca099` |
+| 2 | `theorem` | [mem_antidiagonal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetNatAntidiagonalNamespaced.lean/declarations/mem-antidiagonal.md) | 43 | `result-track:0e85c3701daad618b785b6f2c01276c1b5de8d8ba8239cffc91df24a12be88c5` |
+| 3 | `theorem` | [card_antidiagonal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetNatAntidiagonalNamespaced.lean/declarations/card-antidiagonal.md) | 48 | `result-track:07b1030eef1d57b041ad07bea6609adbbbffb5c814f22ea21f5ede9fb75fba0c` |
+| 4 | `theorem` | [antidiagonal_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetNatAntidiagonalNamespaced.lean/declarations/antidiagonal-zero.md) | 53 | `result-track:748674529dbde85eaa88ec95d8a24f92f7903b0ffef0a5da33a27458bea52477` |
+| 5 | `theorem` | [nodup_antidiagonal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetNatAntidiagonalNamespaced.lean/declarations/nodup-antidiagonal.md) | 58 | `result-track:802f36deaa5b9497205c28a37ca11caf4f0c3058de6d36a8dbc433e9cd217773` |
+| 6 | `theorem` | [antidiagonal_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetNatAntidiagonalNamespaced.lean/declarations/antidiagonal-succ.md) | 62 | `result-track:22fd6b1824d7afac035ee4679855a8624b70466392862c6381d2cf3ac22f5d14` |
+| 7 | `theorem` | [antidiagonal_succ'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetNatAntidiagonalNamespaced.lean/declarations/antidiagonal-succ-source-edition-2.md) | 66 | `result-track:2ef658cec3fbca2e51503b85f3115e05ab61419f00c4b589cbeeab1f25d6e030` |
+| 8 | `theorem` | [antidiagonal_succ_succ'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetNatAntidiagonalNamespaced.lean/declarations/antidiagonal-succ-succ.md) | 71 | `result-track:bec210e136670415f075f2b3d61e80d56ea9dc67f5fdd39b2507d8303e13f833` |
+| 9 | `theorem` | [map_swap_antidiagonal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetNatAntidiagonalNamespaced.lean/declarations/map-swap-antidiagonal.md) | 77 | `result-track:132b79c074c10e585df74d1ef58272990e5db00d4f83f07ddd51be55d29ddacb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

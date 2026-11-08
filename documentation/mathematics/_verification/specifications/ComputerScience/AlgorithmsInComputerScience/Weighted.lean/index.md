@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Weighted.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Weighted.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Weighted.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Weighted.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [WeightedVertex](../../../../../ComputerScience/AlgorithmsInComputerScience/Weighted.lean/declarations/weightedvertex.md) | 7 | `declaration-track:be4a206c38c7d9d360aca2172e279a25ce41fe71a138da8e615bceb3654e5999` |
-| 2 | `structure` | [RuntimePressure](../../../../../ComputerScience/AlgorithmsInComputerScience/Weighted.lean/declarations/runtimepressure.md) | 12 | `declaration-track:e00705d661ec23a5692049cb09198989fa2bf13b7b5446c9055d905d403bc971` |
-| 3 | `def` | [clipNat](../../../../../ComputerScience/AlgorithmsInComputerScience/Weighted.lean/declarations/clipnat.md) | 18 | `declaration-track:1439127f1ee6ae5dac92a13b2bd94e468ed583278eb7bcfd7bb1bc6374f39928` |
-| 4 | `def` | [updateHeat](../../../../../ComputerScience/AlgorithmsInComputerScience/Weighted.lean/declarations/updateheat.md) | 21 | `declaration-track:bc8af5b9cdc33dece391d347b64640f79d9b847d270243d2aeb65b449452c443` |
-| 5 | `def` | [pressureResidues](../../../../../ComputerScience/AlgorithmsInComputerScience/Weighted.lean/declarations/pressureresidues.md) | 30 | `declaration-track:30e1cf660be852e567b8ed900c62466eb191160aed0b2def19f0aab299e1e0e7` |
-| 6 | `theorem` | [updateHeat_le_upper](../../../../../ComputerScience/AlgorithmsInComputerScience/Weighted.lean/declarations/updateheat-le-upper.md) | 33 | `result-track:02c9707e63131e12c965cf8e6915be813e5f566bd88a8093b9456f2c1e4b421f` |
-| 7 | `theorem` | [pressureResidues_contains_nonAuthority](../../../../../ComputerScience/AlgorithmsInComputerScience/Weighted.lean/declarations/pressureresidues-contains-nonauthority.md) | 44 | `result-track:bd402f98c73411462a4ab1331e3024bc96b3992287917d3381da8e96263e679f` |
+| 1 | `structure` | [WeightedVertex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Weighted.lean/declarations/weightedvertex.md) | 7 | `declaration-track:be4a206c38c7d9d360aca2172e279a25ce41fe71a138da8e615bceb3654e5999` |
+| 2 | `structure` | [RuntimePressure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Weighted.lean/declarations/runtimepressure.md) | 12 | `declaration-track:e00705d661ec23a5692049cb09198989fa2bf13b7b5446c9055d905d403bc971` |
+| 3 | `def` | [clipNat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Weighted.lean/declarations/clipnat.md) | 18 | `declaration-track:1439127f1ee6ae5dac92a13b2bd94e468ed583278eb7bcfd7bb1bc6374f39928` |
+| 4 | `def` | [updateHeat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Weighted.lean/declarations/updateheat.md) | 21 | `declaration-track:bc8af5b9cdc33dece391d347b64640f79d9b847d270243d2aeb65b449452c443` |
+| 5 | `def` | [pressureResidues](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Weighted.lean/declarations/pressureresidues.md) | 30 | `declaration-track:30e1cf660be852e567b8ed900c62466eb191160aed0b2def19f0aab299e1e0e7` |
+| 6 | `theorem` | [updateHeat_le_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Weighted.lean/declarations/updateheat-le-upper.md) | 33 | `result-track:02c9707e63131e12c965cf8e6915be813e5f566bd88a8093b9456f2c1e4b421f` |
+| 7 | `theorem` | [pressureResidues_contains_nonAuthority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Weighted.lean/declarations/pressureresidues-contains-nonauthority.md) | 44 | `result-track:bd402f98c73411462a4ab1331e3024bc96b3992287917d3381da8e96263e679f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

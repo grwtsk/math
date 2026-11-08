@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FixedPointAndCopyData.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FixedPointAndCopyData.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FixedPointAndCopyData.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FixedPointAndCopyData.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FixedPointCertificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FixedPointAndCopyData.lean/declarations/fixedpointcertificate.md) | 37 | `declaration-track:1e58315c6b3064ca43be98eea8594c82fd0e4b45163c5fbc51d2648f52731957` |
-| 2 | `def` | [copyFixedPointCertificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FixedPointAndCopyData.lean/declarations/copyfixedpointcertificate.md) | 43 | `declaration-track:59c1a719d2c14a0751fe978023c8adf96f5fdc4c6587c966cd482958f3f4bee8` |
-| 3 | `theorem` | [copy_fixedPointCertificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FixedPointAndCopyData.lean/declarations/copy-fixedpointcertificate.md) | 49 | `result-track:c3f96fa3fc0cc1b1552a503ee43244c547c58fb802224395454bb7757cdcb6de` |
+| 1 | `structure` | [FixedPointCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FixedPointAndCopyData.lean/declarations/fixedpointcertificate.md) | 37 | `declaration-track:1e58315c6b3064ca43be98eea8594c82fd0e4b45163c5fbc51d2648f52731957` |
+| 2 | `def` | [copyFixedPointCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FixedPointAndCopyData.lean/declarations/copyfixedpointcertificate.md) | 43 | `declaration-track:59c1a719d2c14a0751fe978023c8adf96f5fdc4c6587c966cd482958f3f4bee8` |
+| 3 | `theorem` | [copy_fixedPointCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FixedPointAndCopyData.lean/declarations/copy-fixedpointcertificate.md) | 49 | `result-track:c3f96fa3fc0cc1b1552a503ee43244c547c58fb802224395454bb7757cdcb6de` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

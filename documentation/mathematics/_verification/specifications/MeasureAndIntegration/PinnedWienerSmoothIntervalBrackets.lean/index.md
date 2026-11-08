@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/PinnedWienerSmoothIntervalBrackets.lean/index.md) · [Full source](../../../../MeasureAndIntegration/PinnedWienerSmoothIntervalBrackets.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PinnedWienerSmoothIntervalBrackets.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PinnedWienerSmoothIntervalBrackets.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.PinnedWienerIkeharaRelativeWindowToFull`](../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedWienerIkeharaRelativeWindowToFull.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.PinnedWienerIkeharaRelativeWindowToFull`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedWienerIkeharaRelativeWindowToFull.lean/index.md) — import line 7; pinned internal source present.
 - `Mathlib.Geometry.Manifold.PartitionOfUnity` — import line 8; external provider; requires a separately pinned dependency.
 - `Mathlib.MeasureTheory.Integral.Bochner.Set` — import line 9; external provider; requires a separately pinned dependency.
 - `Mathlib.MeasureTheory.Measure.Lebesgue.Basic` — import line 10; external provider; requires a separately pinned dependency.
@@ -61,12 +61,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [pinnedSmoothUrysohnIoo](../../../../MeasureAndIntegration/PinnedWienerSmoothIntervalBrackets.lean/declarations/pinnedsmoothurysohnioo.md) | 60 | `result-track:bebb944b20b517292a0cfdfa00b1e2850841818b737dcbb380a37d652f5aeda9` |
-| 2 | `theorem` | [pinnedIntervalSupport_closure_away](../../../../MeasureAndIntegration/PinnedWienerSmoothIntervalBrackets.lean/declarations/pinnedintervalsupport-closure-away.md) | 116 | `result-track:afc4ea742421fda909af679fe0be570dcff0b1f8ecc0f19304e9cf5f141fa3a6` |
-| 3 | `def` | [PinnedSmoothIntervalBrackets](../../../../MeasureAndIntegration/PinnedWienerSmoothIntervalBrackets.lean/declarations/pinnedsmoothintervalbrackets.md) | 131 | `declaration-track:b2d8cded2dc36147ca9f861d23a742daa71de859a10419fdad5755c71acee69f` |
-| 4 | `theorem` | [pinnedSmoothIntervalLower](../../../../MeasureAndIntegration/PinnedWienerSmoothIntervalBrackets.lean/declarations/pinnedsmoothintervallower.md) | 149 | `result-track:adf407f2276405fe33b34ce1ee262453bc55ccb6ccd1482c67183a75b7c59db0` |
-| 5 | `theorem` | [pinnedSmoothIntervalUpper](../../../../MeasureAndIntegration/PinnedWienerSmoothIntervalBrackets.lean/declarations/pinnedsmoothintervalupper.md) | 224 | `result-track:9ee97cc6b23430cd94bc56dffa7099042280e8c3097b35be95ada6af6d35b868` |
-| 6 | `theorem` | [pinnedSmoothIntervalBrackets_exists](../../../../MeasureAndIntegration/PinnedWienerSmoothIntervalBrackets.lean/declarations/pinnedsmoothintervalbrackets-exists.md) | 297 | `result-track:d73a0c38675c092838666500dd4f4a33003fcdca97fe9a42b821d009d93ea4cb` |
+| 1 | `theorem` | [pinnedSmoothUrysohnIoo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PinnedWienerSmoothIntervalBrackets.lean/declarations/pinnedsmoothurysohnioo.md) | 60 | `result-track:bebb944b20b517292a0cfdfa00b1e2850841818b737dcbb380a37d652f5aeda9` |
+| 2 | `theorem` | [pinnedIntervalSupport_closure_away](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PinnedWienerSmoothIntervalBrackets.lean/declarations/pinnedintervalsupport-closure-away.md) | 116 | `result-track:afc4ea742421fda909af679fe0be570dcff0b1f8ecc0f19304e9cf5f141fa3a6` |
+| 3 | `def` | [PinnedSmoothIntervalBrackets](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PinnedWienerSmoothIntervalBrackets.lean/declarations/pinnedsmoothintervalbrackets.md) | 131 | `declaration-track:b2d8cded2dc36147ca9f861d23a742daa71de859a10419fdad5755c71acee69f` |
+| 4 | `theorem` | [pinnedSmoothIntervalLower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PinnedWienerSmoothIntervalBrackets.lean/declarations/pinnedsmoothintervallower.md) | 149 | `result-track:adf407f2276405fe33b34ce1ee262453bc55ccb6ccd1482c67183a75b7c59db0` |
+| 5 | `theorem` | [pinnedSmoothIntervalUpper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PinnedWienerSmoothIntervalBrackets.lean/declarations/pinnedsmoothintervalupper.md) | 224 | `result-track:9ee97cc6b23430cd94bc56dffa7099042280e8c3097b35be95ada6af6d35b868` |
+| 6 | `theorem` | [pinnedSmoothIntervalBrackets_exists](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PinnedWienerSmoothIntervalBrackets.lean/declarations/pinnedsmoothintervalbrackets-exists.md) | 297 | `result-track:d73a0c38675c092838666500dd4f4a33003fcdca97fe9a42b821d009d93ea4cb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

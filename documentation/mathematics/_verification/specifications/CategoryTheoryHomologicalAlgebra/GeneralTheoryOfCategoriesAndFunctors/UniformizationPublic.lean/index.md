@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UniformizationPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UniformizationPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UniformizationPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UniformizationPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [Cardinal.SharplyLT.exists_retract_of_isCardinalPresentable](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UniformizationPublic.lean/declarations/cardinal-sharplylt-exists-retract-of-iscardinalpresentable.md) | 32 | `result-track:1d34557bff3247861bf0e4d0f89bd8a69f23981275678cdeab6b00c5cd1e70b7` |
-| 2 | `lemma` | [uniformization_aux](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UniformizationPublic.lean/declarations/uniformization-aux.md) | 61 | `result-track:3e1f6cbcc8f9083d078293b9bfeb001479506968208ecbe195dfd383d9f76160` |
-| 3 | `lemma` | [uniformization_of_small](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UniformizationPublic.lean/declarations/uniformization-of-small.md) | 80 | `result-track:eeaa74179d82f27fc2e509af5a8297c56e9bed77ecad2f125045aae68829ff7a` |
-| 4 | `lemma` | [uniformization](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UniformizationPublic.lean/declarations/uniformization.md) | 127 | `result-track:832d3cd5dbce9f65b433da50933006365356480d30fc66388c949b10c55e00d9` |
-| 5 | `lemma` | [uniformization_pair](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UniformizationPublic.lean/declarations/uniformization-pair.md) | 139 | `result-track:77968ab3e014a30678cf30832575d6ecc42486eb8bcba6a217739523cbef80f8` |
+| 1 | `lemma` | [Cardinal.SharplyLT.exists_retract_of_isCardinalPresentable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UniformizationPublic.lean/declarations/cardinal-sharplylt-exists-retract-of-iscardinalpresentable.md) | 32 | `result-track:1d34557bff3247861bf0e4d0f89bd8a69f23981275678cdeab6b00c5cd1e70b7` |
+| 2 | `lemma` | [uniformization_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UniformizationPublic.lean/declarations/uniformization-aux.md) | 61 | `result-track:3e1f6cbcc8f9083d078293b9bfeb001479506968208ecbe195dfd383d9f76160` |
+| 3 | `lemma` | [uniformization_of_small](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UniformizationPublic.lean/declarations/uniformization-of-small.md) | 80 | `result-track:eeaa74179d82f27fc2e509af5a8297c56e9bed77ecad2f125045aae68829ff7a` |
+| 4 | `lemma` | [uniformization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UniformizationPublic.lean/declarations/uniformization.md) | 127 | `result-track:832d3cd5dbce9f65b433da50933006365356480d30fc66388c949b10c55e00d9` |
+| 5 | `lemma` | [uniformization_pair](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/UniformizationPublic.lean/declarations/uniformization-pair.md) | 139 | `result-track:77968ab3e014a30678cf30832575d6ecc42486eb8bcba6a217739523cbef80f8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

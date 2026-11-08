@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/ChoiceCoverage.lean/index.md) · [Full source](../../../../RealFunctions/ChoiceCoverage.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ChoiceCoverage.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ChoiceCoverage.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [choiceCoverage_requires_foundation](../../../../RealFunctions/ChoiceCoverage.lean/declarations/choicecoverage-requires-foundation.md) | 25 | `result-track:2b6c312c5cb35e311c45bd1195cf7c3bc2b92ed07c822e102fbb9623290758a9` |
+| 1 | `theorem` | [choiceCoverage_requires_foundation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ChoiceCoverage.lean/declarations/choicecoverage-requires-foundation.md) | 25 | `result-track:2b6c312c5cb35e311c45bd1195cf7c3bc2b92ed07c822e102fbb9623290758a9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

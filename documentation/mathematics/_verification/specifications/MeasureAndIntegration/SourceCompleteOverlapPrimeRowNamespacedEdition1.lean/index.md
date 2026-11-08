@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceCompleteOverlapPrimeRowNamespacedEdition1.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceCompleteOverlapPrimeRowNamespacedEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCompleteOverlapPrimeRowNamespacedEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCompleteOverlapPrimeRowNamespacedEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [retainedSpatialStrip](../../../../MeasureAndIntegration/SourceCompleteOverlapPrimeRowNamespacedEdition1.lean/declarations/retainedspatialstrip.md) | 32 | `declaration-track:76791e3a12dd915917d63e8a50a7bdddd0522b2a8edcc90b7dd3f18c6b4f79da` |
-| 2 | `def` | [finiteLedgerCorrection](../../../../MeasureAndIntegration/SourceCompleteOverlapPrimeRowNamespacedEdition1.lean/declarations/finiteledgercorrection.md) | 36 | `declaration-track:203c763f3af91c8f9bb4259ec7a6c88e68baeac109ad5d58019b1086bd3ffb23` |
-| 3 | `theorem` | [complete_overlap_eq_actual_residual_row](../../../../MeasureAndIntegration/SourceCompleteOverlapPrimeRowNamespacedEdition1.lean/declarations/complete-overlap-eq-actual-residual-row.md) | 39 | `result-track:1adc605f23d9e34f20406c4cfbbc3f60f4b0d0d975db36cc9c35438d8fcd9ee0` |
-| 4 | `theorem` | [complete_overlap_eq_closed_prime_row](../../../../MeasureAndIntegration/SourceCompleteOverlapPrimeRowNamespacedEdition1.lean/declarations/complete-overlap-eq-closed-prime-row.md) | 48 | `result-track:78999d3acc0c89580f25e03d109203c0bbedd5c132c4ed2aaab133e4898737f0` |
-| 5 | `theorem` | [complete_overlap_eq_full_mangoldt_row](../../../../MeasureAndIntegration/SourceCompleteOverlapPrimeRowNamespacedEdition1.lean/declarations/complete-overlap-eq-full-mangoldt-row.md) | 55 | `result-track:1e8a85d573788197839ac918c067d80dc4c337c662b4059f6c889d11218f3d80` |
-| 6 | `theorem` | [finiteLedgerCorrection_uniform_abs_bound](../../../../MeasureAndIntegration/SourceCompleteOverlapPrimeRowNamespacedEdition1.lean/declarations/finiteledgercorrection-uniform-abs-bound.md) | 62 | `result-track:7d26aa6f2f153ac91239590e90eee49f831a075b2ef1986421fa729e814c92a2` |
+| 1 | `def` | [retainedSpatialStrip](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCompleteOverlapPrimeRowNamespacedEdition1.lean/declarations/retainedspatialstrip.md) | 32 | `declaration-track:76791e3a12dd915917d63e8a50a7bdddd0522b2a8edcc90b7dd3f18c6b4f79da` |
+| 2 | `def` | [finiteLedgerCorrection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCompleteOverlapPrimeRowNamespacedEdition1.lean/declarations/finiteledgercorrection.md) | 36 | `declaration-track:203c763f3af91c8f9bb4259ec7a6c88e68baeac109ad5d58019b1086bd3ffb23` |
+| 3 | `theorem` | [complete_overlap_eq_actual_residual_row](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCompleteOverlapPrimeRowNamespacedEdition1.lean/declarations/complete-overlap-eq-actual-residual-row.md) | 39 | `result-track:1adc605f23d9e34f20406c4cfbbc3f60f4b0d0d975db36cc9c35438d8fcd9ee0` |
+| 4 | `theorem` | [complete_overlap_eq_closed_prime_row](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCompleteOverlapPrimeRowNamespacedEdition1.lean/declarations/complete-overlap-eq-closed-prime-row.md) | 48 | `result-track:78999d3acc0c89580f25e03d109203c0bbedd5c132c4ed2aaab133e4898737f0` |
+| 5 | `theorem` | [complete_overlap_eq_full_mangoldt_row](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCompleteOverlapPrimeRowNamespacedEdition1.lean/declarations/complete-overlap-eq-full-mangoldt-row.md) | 55 | `result-track:1e8a85d573788197839ac918c067d80dc4c337c662b4059f6c889d11218f3d80` |
+| 6 | `theorem` | [finiteLedgerCorrection_uniform_abs_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCompleteOverlapPrimeRowNamespacedEdition1.lean/declarations/finiteledgercorrection-uniform-abs-bound.md) | 62 | `result-track:7d26aa6f2f153ac91239590e90eee49f831a075b2ef1986421fa729e814c92a2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

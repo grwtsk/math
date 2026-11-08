@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/OfEquivalence.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/OfEquivalence.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/OfEquivalence.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/OfEquivalence.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [exactPairingOfFaithful](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/OfEquivalence.lean/declarations/exactpairingoffaithful.md) | 25 | `declaration-track:1a806b9bf07d35dc61d8b00fabd203558fce78d2d2ecd742e990136ec525bee8` |
-| 2 | `def` | [exactPairingOfFullyFaithful](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/OfEquivalence.lean/declarations/exactpairingoffullyfaithful.md) | 43 | `declaration-track:405408143ac4535e8af53b6f1f401d3d369378461c4c9665ca2e7a12d585d47a` |
-| 3 | `def` | [hasLeftDualOfEquivalence](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/OfEquivalence.lean/declarations/hasleftdualofequivalence.md) | 52 | `declaration-track:c41908715ddf22439e7b73dab3644769f8ce0c321d3388e341c23fdd88af4e4d` |
-| 4 | `def` | [hasRightDualOfEquivalence](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/OfEquivalence.lean/declarations/hasrightdualofequivalence.md) | 61 | `declaration-track:0343ada07f60f6cc728bddeb998f68e099fca4955fd290c615257ebfd2e38e95` |
-| 5 | `def` | [leftRigidCategoryOfEquivalence](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/OfEquivalence.lean/declarations/leftrigidcategoryofequivalence.md) | 70 | `declaration-track:2fb1ecf8a5011fb2438cfbe2ee2b7b181858b2ef5e81d20f086c0ea4231fa357` |
-| 6 | `def` | [rightRigidCategoryOfEquivalence](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/OfEquivalence.lean/declarations/rightrigidcategoryofequivalence.md) | 74 | `declaration-track:3b7b8c38c602efacd669681ef7cabccea25a95fac209254e989e67fa51be6c90` |
-| 7 | `def` | [rigidCategoryOfEquivalence](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/OfEquivalence.lean/declarations/rigidcategoryofequivalence.md) | 78 | `declaration-track:9d87953b5edea19d017340b2b93bb31715b19d1fbfa64549b79989c5a0a6a092` |
+| 1 | `def` | [exactPairingOfFaithful](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/OfEquivalence.lean/declarations/exactpairingoffaithful.md) | 25 | `declaration-track:1a806b9bf07d35dc61d8b00fabd203558fce78d2d2ecd742e990136ec525bee8` |
+| 2 | `def` | [exactPairingOfFullyFaithful](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/OfEquivalence.lean/declarations/exactpairingoffullyfaithful.md) | 43 | `declaration-track:405408143ac4535e8af53b6f1f401d3d369378461c4c9665ca2e7a12d585d47a` |
+| 3 | `def` | [hasLeftDualOfEquivalence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/OfEquivalence.lean/declarations/hasleftdualofequivalence.md) | 52 | `declaration-track:c41908715ddf22439e7b73dab3644769f8ce0c321d3388e341c23fdd88af4e4d` |
+| 4 | `def` | [hasRightDualOfEquivalence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/OfEquivalence.lean/declarations/hasrightdualofequivalence.md) | 61 | `declaration-track:0343ada07f60f6cc728bddeb998f68e099fca4955fd290c615257ebfd2e38e95` |
+| 5 | `def` | [leftRigidCategoryOfEquivalence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/OfEquivalence.lean/declarations/leftrigidcategoryofequivalence.md) | 70 | `declaration-track:2fb1ecf8a5011fb2438cfbe2ee2b7b181858b2ef5e81d20f086c0ea4231fa357` |
+| 6 | `def` | [rightRigidCategoryOfEquivalence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/OfEquivalence.lean/declarations/rightrigidcategoryofequivalence.md) | 74 | `declaration-track:3b7b8c38c602efacd669681ef7cabccea25a95fac209254e989e67fa51be6c90` |
+| 7 | `def` | [rigidCategoryOfEquivalence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/OfEquivalence.lean/declarations/rigidcategoryofequivalence.md) | 78 | `declaration-track:9d87953b5edea19d017340b2b93bb31715b19d1fbfa64549b79989c5a0a6a092` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

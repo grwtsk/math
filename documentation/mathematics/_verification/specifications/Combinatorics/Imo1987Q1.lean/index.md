@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/Imo1987Q1.lean/index.md) · [Full source](../../../../Combinatorics/Imo1987Q1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Imo1987Q1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Imo1987Q1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,16 +59,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [fixedPointsEquiv](../../../../Combinatorics/Imo1987Q1.lean/declarations/fixedpointsequiv-source-edition-2.md) | 38 | `declaration-track:9b8f91c8ccdfb189f62157b891e97237a2ec2766ce75f70b241d6b5912f5c46e` |
-| 2 | `theorem` | [card_fixed_points](../../../../Combinatorics/Imo1987Q1.lean/declarations/card-fixed-points.md) | 46 | `result-track:64a4dc9e083b6f32b72d64351ac674f8247a71f946c49e82704bc127e4e5193a` |
-| 3 | `def` | [fiber](../../../../Combinatorics/Imo1987Q1.lean/declarations/fiber.md) | 55 | `declaration-track:6529e030dec4f0a362be42bbe0c660ab07fe97351faf738f294f599d12ed4b0b` |
-| 4 | `instance` | [(anonymous)](../../../../Combinatorics/Imo1987Q1.lean/declarations/instance.md) | 58 | `declaration-track:236c2030e9ff20fe71cc2fb8344e82dc680819dc8ff8a52e30f0c43c8a3e25c7` |
-| 5 | `theorem` | [mem_fiber](../../../../Combinatorics/Imo1987Q1.lean/declarations/mem-fiber.md) | 61 | `result-track:252c1ca1ae994b6332e36ff0117f8b873e0839c013f2a956d7bf49e76e7b446d` |
-| 6 | `def` | [p](../../../../Combinatorics/Imo1987Q1.lean/declarations/p.md) | 65 | `declaration-track:9c7cc17d62e53c1cdb2c43fb501b90e838564923081b0bc463a481de112384a4` |
-| 7 | `def` | [fixedPointsEquiv'](../../../../Combinatorics/Imo1987Q1.lean/declarations/fixedpointsequiv.md) | 74 | `declaration-track:868a21516776bb25839e1ef9a02bc65cab51f079c86cd3d92af849db33f29044` |
-| 8 | `theorem` | [main_fintype](../../../../Combinatorics/Imo1987Q1.lean/declarations/main-fintype.md) | 87 | `result-track:631cc222c04007bef319558031e4a071973a81df35552aaebc6554899bd403c6` |
-| 9 | `theorem` | [main₀](../../../../Combinatorics/Imo1987Q1.lean/declarations/main-source-edition-2.md) | 93 | `result-track:65794faf84240cddc8fabf50c89a428de25cdaaa3a7ecd6043a0884f467868df` |
-| 10 | `theorem` | [main](../../../../Combinatorics/Imo1987Q1.lean/declarations/main.md) | 97 | `result-track:494d780c18f4a440a42b75887d74493b8c4b95ea303c6a961825465fe185faaf` |
+| 1 | `def` | [fixedPointsEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Imo1987Q1.lean/declarations/fixedpointsequiv-source-edition-2.md) | 38 | `declaration-track:9b8f91c8ccdfb189f62157b891e97237a2ec2766ce75f70b241d6b5912f5c46e` |
+| 2 | `theorem` | [card_fixed_points](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Imo1987Q1.lean/declarations/card-fixed-points.md) | 46 | `result-track:64a4dc9e083b6f32b72d64351ac674f8247a71f946c49e82704bc127e4e5193a` |
+| 3 | `def` | [fiber](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Imo1987Q1.lean/declarations/fiber.md) | 55 | `declaration-track:6529e030dec4f0a362be42bbe0c660ab07fe97351faf738f294f599d12ed4b0b` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Imo1987Q1.lean/declarations/instance.md) | 58 | `declaration-track:236c2030e9ff20fe71cc2fb8344e82dc680819dc8ff8a52e30f0c43c8a3e25c7` |
+| 5 | `theorem` | [mem_fiber](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Imo1987Q1.lean/declarations/mem-fiber.md) | 61 | `result-track:252c1ca1ae994b6332e36ff0117f8b873e0839c013f2a956d7bf49e76e7b446d` |
+| 6 | `def` | [p](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Imo1987Q1.lean/declarations/p.md) | 65 | `declaration-track:9c7cc17d62e53c1cdb2c43fb501b90e838564923081b0bc463a481de112384a4` |
+| 7 | `def` | [fixedPointsEquiv'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Imo1987Q1.lean/declarations/fixedpointsequiv.md) | 74 | `declaration-track:868a21516776bb25839e1ef9a02bc65cab51f079c86cd3d92af849db33f29044` |
+| 8 | `theorem` | [main_fintype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Imo1987Q1.lean/declarations/main-fintype.md) | 87 | `result-track:631cc222c04007bef319558031e4a071973a81df35552aaebc6554899bd403c6` |
+| 9 | `theorem` | [main₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Imo1987Q1.lean/declarations/main-source-edition-2.md) | 93 | `result-track:65794faf84240cddc8fabf50c89a428de25cdaaa3a7ecd6043a0884f467868df` |
+| 10 | `theorem` | [main](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Imo1987Q1.lean/declarations/main.md) | 97 | `result-track:494d780c18f4a440a42b75887d74493b8c4b95ea303c6a961825465fe185faaf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -38,22 +38,22 @@ Source modules retain the observed filesystem snapshot of regular `.lean` files 
 
 | Source namespace | Lean modules | Curated object guides | Curated object groups | Curated intake records | Curated selected families |
 |---|---:|---:|---:|---:|---:|
-| [Algebra](mathematics/GeneralAndOverarchingTopicsCollections/Algebra.md) | 10128 | 18 | 12 | 4 | 0 |
-| [Analysis](mathematics/GeneralAndOverarchingTopicsCollections/Analysis.md) | 9838 | 50 | 22 | 40 | 1 |
-| [CategoriesAndHomologicalAlgebra](mathematics/CategoryTheoryHomologicalAlgebra/CategoriesAndHomologicalAlgebra.md) | 5317 | 0 | 0 | 0 | 0 |
-| [CombinatoricsAndDiscreteMathematics](mathematics/Combinatorics/CombinatoricsAndDiscreteMathematics.md) | 9480 | 27 | 3 | 2 | 0 |
-| [DifferentialEquationsAndDynamicalSystems](mathematics/DynamicalSystemsAndErgodicTheory/DifferentialEquationsAndDynamicalSystems.md) | 96 | 3 | 2 | 0 | 0 |
-| [FoundationsLogicAndTypeTheory](mathematics/MathematicalLogicAndFoundations/FoundationsLogicAndTypeTheory.md) | 18373 | 10 | 3 | 3 | 0 |
-| [Geometry](mathematics/Geometry/Geometry.md) | 964 | 0 | 0 | 0 | 0 |
-| [HistoryOfMathematics](mathematics/HistoryAndBiography/HistoryOfMathematics.md) | 0 | 0 | 0 | 0 | 0 |
-| [InformationTheory](mathematics/InformationAndCommunicationTheoryCircuits/InformationTheory.md) | 17 | 0 | 0 | 0 | 0 |
-| [MathematicsEducation](mathematics/MathematicsEducation/MathematicsEducation.md) | 0 | 0 | 0 | 0 | 0 |
-| [Mechanics](mathematics/MechanicsOfParticlesAndSystems/Mechanics.md) | 0 | 0 | 0 | 0 | 0 |
-| [NumberTheory](mathematics/NumberTheory/NumberTheory.md) | 12479 | 41 | 17 | 19 | 1 |
-| [NumericalAnalysis](mathematics/NumericalAnalysis/NumericalAnalysis.md) | 0 | 0 | 0 | 0 | 0 |
-| [Optimization](mathematics/OperationsResearchMathematicalProgramming/Optimization.md) | 0 | 0 | 0 | 0 | 0 |
-| [ProbabilityAndMathematicalStatistics](mathematics/ProbabilityTheoryAndStochasticProcesses/ProbabilityAndMathematicalStatistics.md) | 554 | 0 | 0 | 0 | 0 |
-| [Topology](mathematics/GeneralTopology/Topology.md) | 5108 | 0 | 0 | 0 | 0 |
+| [Algebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAndOverarchingTopicsCollections/Algebra.md) | 10128 | 18 | 12 | 4 | 0 |
+| [Analysis](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAndOverarchingTopicsCollections/Analysis.md) | 9838 | 50 | 22 | 40 | 1 |
+| [CategoriesAndHomologicalAlgebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesAndHomologicalAlgebra.md) | 5317 | 0 | 0 | 0 | 0 |
+| [CombinatoricsAndDiscreteMathematics](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CombinatoricsAndDiscreteMathematics.md) | 9480 | 27 | 3 | 2 | 0 |
+| [DifferentialEquationsAndDynamicalSystems](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/DifferentialEquationsAndDynamicalSystems.md) | 96 | 3 | 2 | 0 | 0 |
+| [FoundationsLogicAndTypeTheory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/FoundationsLogicAndTypeTheory.md) | 18373 | 10 | 3 | 3 | 0 |
+| [Geometry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/Geometry.md) | 964 | 0 | 0 | 0 | 0 |
+| [HistoryOfMathematics](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HistoryAndBiography/HistoryOfMathematics.md) | 0 | 0 | 0 | 0 | 0 |
+| [InformationTheory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/InformationAndCommunicationTheoryCircuits/InformationTheory.md) | 17 | 0 | 0 | 0 | 0 |
+| [MathematicsEducation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicsEducation/MathematicsEducation.md) | 0 | 0 | 0 | 0 | 0 |
+| [Mechanics](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MechanicsOfParticlesAndSystems/Mechanics.md) | 0 | 0 | 0 | 0 | 0 |
+| [NumberTheory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/NumberTheory.md) | 12479 | 41 | 17 | 19 | 1 |
+| [NumericalAnalysis](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumericalAnalysis/NumericalAnalysis.md) | 0 | 0 | 0 | 0 | 0 |
+| [Optimization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperationsResearchMathematicalProgramming/Optimization.md) | 0 | 0 | 0 | 0 | 0 |
+| [ProbabilityAndMathematicalStatistics](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ProbabilityAndMathematicalStatistics.md) | 554 | 0 | 0 | 0 | 0 |
+| [Topology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Topology.md) | 5108 | 0 | 0 | 0 | 0 |
 | **Total (16 namespaces)** | **72354** | — | — | — | — |
 
 Regular Lean files directly in `GRWTSK/`: 0; included in the maintained total, outside the namespace rows.

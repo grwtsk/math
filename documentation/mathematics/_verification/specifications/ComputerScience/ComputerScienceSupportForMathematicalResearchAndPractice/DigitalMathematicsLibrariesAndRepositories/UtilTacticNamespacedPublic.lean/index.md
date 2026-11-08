@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/UtilTacticNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/UtilTacticNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/UtilTacticNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/UtilTacticNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [modifyMetavarDecl](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/UtilTacticNamespacedPublic.lean/declarations/modifymetavardecl.md) | 45 | `declaration-track:51b9dc7b5afb88d489c00870d3e6364d43fa160903805710e6dc5e5ef1aaaf1f` |
-| 2 | `def` | [modifyTarget](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/UtilTacticNamespacedPublic.lean/declarations/modifytarget.md) | 57 | `declaration-track:d459777ca8ce1e6660f8a24729f654e19095f68bcb3824324f4d0d2843ad11f1` |
-| 3 | `def` | [modifyLocalContext](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/UtilTacticNamespacedPublic.lean/declarations/modifylocalcontext.md) | 69 | `declaration-track:a8f4ee468a71438ffd09397eec453f6b3574aaf9505e16b0e163f483d80f7bfa` |
-| 4 | `def` | [modifyLocalDecl](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/UtilTacticNamespacedPublic.lean/declarations/modifylocaldecl.md) | 84 | `declaration-track:5d4fcade7a94859f4813b521888a3f3af7f48762420089e78aa046243dd2c2a6` |
+| 1 | `def` | [modifyMetavarDecl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/UtilTacticNamespacedPublic.lean/declarations/modifymetavardecl.md) | 45 | `declaration-track:51b9dc7b5afb88d489c00870d3e6364d43fa160903805710e6dc5e5ef1aaaf1f` |
+| 2 | `def` | [modifyTarget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/UtilTacticNamespacedPublic.lean/declarations/modifytarget.md) | 57 | `declaration-track:d459777ca8ce1e6660f8a24729f654e19095f68bcb3824324f4d0d2843ad11f1` |
+| 3 | `def` | [modifyLocalContext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/UtilTacticNamespacedPublic.lean/declarations/modifylocalcontext.md) | 69 | `declaration-track:a8f4ee468a71438ffd09397eec453f6b3574aaf9505e16b0e163f483d80f7bfa` |
+| 4 | `def` | [modifyLocalDecl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/UtilTacticNamespacedPublic.lean/declarations/modifylocaldecl.md) | 84 | `declaration-track:5d4fcade7a94859f4813b521888a3f3af7f48762420089e78aa046243dd2c2a6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

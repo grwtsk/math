@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuccessorCompatibilityNamespacedSuccessorAutomorphismConnector.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuccessorCompatibilityNamespacedSuccessorAutomorphismConnector.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuccessorCompatibilityNamespacedSuccessorAutomorphismConnector.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuccessorCompatibilityNamespacedSuccessorAutomorphismConnector.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SuccessorAutomorphismConnector](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuccessorCompatibilityNamespacedSuccessorAutomorphismConnector.lean/declarations/successorautomorphismconnector.md) | 26 | `declaration-track:223c08c09a381668f79f5b70f430adb4403595a564dc820f3c420c31c3343fb4` |
-| 2 | `theorem` | [successor_boundary_action_projects](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuccessorCompatibilityNamespacedSuccessorAutomorphismConnector.lean/declarations/successor-boundary-action-projects.md) | 65 | `result-track:a12c348dc791a02ae5ed96c91bbe5ceb565427052bb39f2b72ace9a3e19b3831` |
+| 1 | `structure` | [SuccessorAutomorphismConnector](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuccessorCompatibilityNamespacedSuccessorAutomorphismConnector.lean/declarations/successorautomorphismconnector.md) | 26 | `declaration-track:223c08c09a381668f79f5b70f430adb4403595a564dc820f3c420c31c3343fb4` |
+| 2 | `theorem` | [successor_boundary_action_projects](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuccessorCompatibilityNamespacedSuccessorAutomorphismConnector.lean/declarations/successor-boundary-action-projects.md) | 65 | `result-track:a12c348dc791a02ae5ed96c91bbe5ceb565427052bb39f2b72ace9a3e19b3831` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

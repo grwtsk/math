@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeInsertionHomogeneity.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeInsertionHomogeneity.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeInsertionHomogeneity.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeInsertionHomogeneity.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [theta_insertion_eq_remainder](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeInsertionHomogeneity.lean/declarations/theta-insertion-eq-remainder.md) | 10 | `result-track:252eafd3862927678d21ea6e6640ec33fe0cf8e50be5a832e70f262c153969d0` |
-| 2 | `theorem` | [theta_insertion_eq_homogeneity](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeInsertionHomogeneity.lean/declarations/theta-insertion-eq-homogeneity.md) | 21 | `result-track:67f272875e0868478fbcc87c6a6cdfe23eff14c145967bdffb0976f49f021515` |
+| 1 | `theorem` | [theta_insertion_eq_remainder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeInsertionHomogeneity.lean/declarations/theta-insertion-eq-remainder.md) | 10 | `result-track:252eafd3862927678d21ea6e6640ec33fe0cf8e50be5a832e70f262c153969d0` |
+| 2 | `theorem` | [theta_insertion_eq_homogeneity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeInsertionHomogeneity.lean/declarations/theta-insertion-eq-homogeneity.md) | 21 | `result-track:67f272875e0868478fbcc87c6a6cdfe23eff14c145967bdffb0976f49f021515` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResidueObligation.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResidueObligation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResidueObligation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResidueObligation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ResidueObligation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResidueObligation.lean/declarations/residueobligation.md) | 10 | `declaration-track:365bed7ec3874925251d3cc1c3586ee1c5c56d572cd932a5a07e9ae978ef4d38` |
-| 2 | `theorem` | [residueObligation_matches_target](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResidueObligation.lean/declarations/residueobligation-matches-target.md) | 23 | `result-track:8a5104b77547c75c9b9df6add17109243e76c12821ecf885f3d9448914c6ab6f` |
-| 3 | `theorem` | [residueObligation_matches_kind](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResidueObligation.lean/declarations/residueobligation-matches-kind.md) | 28 | `result-track:b73c4f474f6da300fc65dadc6373ed2d986beb469570731c4723a360f27d01d2` |
-| 4 | `theorem` | [residueObligation_matches_blocks](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResidueObligation.lean/declarations/residueobligation-matches-blocks.md) | 33 | `result-track:80d796d7c5cb3638ef8a8a12790699b8dcd2bac08e3c920a6d3dd9c8322b2e19` |
-| 5 | `theorem` | [residueObligation_matches_atom](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResidueObligation.lean/declarations/residueobligation-matches-atom.md) | 38 | `result-track:e3dd9e2f83bffcee3b140f0d6b939980f54ad4a236c0d8ff2dd4016b1fba2286` |
-| 6 | `theorem` | [residueObligation_matches_clearsBy](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResidueObligation.lean/declarations/residueobligation-matches-clearsby.md) | 43 | `result-track:305f45eeb2c6bcf8bed5bdd5c3511dbeffc98dcfe75c1008a9b6784894ba8a04` |
+| 1 | `structure` | [ResidueObligation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResidueObligation.lean/declarations/residueobligation.md) | 10 | `declaration-track:365bed7ec3874925251d3cc1c3586ee1c5c56d572cd932a5a07e9ae978ef4d38` |
+| 2 | `theorem` | [residueObligation_matches_target](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResidueObligation.lean/declarations/residueobligation-matches-target.md) | 23 | `result-track:8a5104b77547c75c9b9df6add17109243e76c12821ecf885f3d9448914c6ab6f` |
+| 3 | `theorem` | [residueObligation_matches_kind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResidueObligation.lean/declarations/residueobligation-matches-kind.md) | 28 | `result-track:b73c4f474f6da300fc65dadc6373ed2d986beb469570731c4723a360f27d01d2` |
+| 4 | `theorem` | [residueObligation_matches_blocks](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResidueObligation.lean/declarations/residueobligation-matches-blocks.md) | 33 | `result-track:80d796d7c5cb3638ef8a8a12790699b8dcd2bac08e3c920a6d3dd9c8322b2e19` |
+| 5 | `theorem` | [residueObligation_matches_atom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResidueObligation.lean/declarations/residueobligation-matches-atom.md) | 38 | `result-track:e3dd9e2f83bffcee3b140f0d6b939980f54ad4a236c0d8ff2dd4016b1fba2286` |
+| 6 | `theorem` | [residueObligation_matches_clearsBy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResidueObligation.lean/declarations/residueobligation-matches-clearsby.md) | 43 | `result-track:305f45eeb2c6bcf8bed5bdd5c3511dbeffc98dcfe75c1008a9b6784894ba8a04` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

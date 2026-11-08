@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceFullXiCesaroConsumerSupersededValid2061.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceFullXiCesaroConsumerSupersededValid2061.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceFullXiCesaroConsumerSupersededValid2061.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceFullXiCesaroConsumerSupersededValid2061.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actualCesaroPrimitive_eq_literalXiKernel](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceFullXiCesaroConsumerSupersededValid2061.lean/declarations/actualcesaroprimitive-eq-literalxikernel.md) | 21 | `result-track:aaf2baa96f2623de8be3484822b25a8ed65f544bb4216d1a626837a46d70683b` |
-| 2 | `theorem` | [actualCesaroPrimitive_eq_full_signed_reconstruction](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceFullXiCesaroConsumerSupersededValid2061.lean/declarations/actualcesaroprimitive-eq-full-signed-reconstruction.md) | 27 | `result-track:51e6f809a76c85cc24cef2068207b5bb5ff2c52b9d3c7624368bb2e49fbcc781` |
-| 3 | `theorem` | [estimate_of_literal_full_Xi_kernel_budget](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceFullXiCesaroConsumerSupersededValid2061.lean/declarations/estimate-of-literal-full-xi-kernel-budget.md) | 34 | `result-track:dd017ead6ede10bc20526c66d421b7a844a595b57830022f444c73e55b81b0e8` |
+| 1 | `theorem` | [actualCesaroPrimitive_eq_literalXiKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceFullXiCesaroConsumerSupersededValid2061.lean/declarations/actualcesaroprimitive-eq-literalxikernel.md) | 21 | `result-track:aaf2baa96f2623de8be3484822b25a8ed65f544bb4216d1a626837a46d70683b` |
+| 2 | `theorem` | [actualCesaroPrimitive_eq_full_signed_reconstruction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceFullXiCesaroConsumerSupersededValid2061.lean/declarations/actualcesaroprimitive-eq-full-signed-reconstruction.md) | 27 | `result-track:51e6f809a76c85cc24cef2068207b5bb5ff2c52b9d3c7624368bb2e49fbcc781` |
+| 3 | `theorem` | [estimate_of_literal_full_Xi_kernel_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceFullXiCesaroConsumerSupersededValid2061.lean/declarations/estimate-of-literal-full-xi-kernel-budget.md) | 34 | `result-track:dd017ead6ede10bc20526c66d421b7a844a595b57830022f444c73e55b81b0e8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

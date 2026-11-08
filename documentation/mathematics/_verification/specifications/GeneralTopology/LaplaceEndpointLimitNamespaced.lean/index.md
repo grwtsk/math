@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/LaplaceEndpointLimitNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/LaplaceEndpointLimitNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LaplaceEndpointLimitNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LaplaceEndpointLimitNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [endpointProfile](../../../../GeneralTopology/LaplaceEndpointLimitNamespaced.lean/declarations/endpointprofile.md) | 17 | `declaration-track:608b263626923d6408c9015c6214021a3e320330948488da36de8b66abfea66f` |
-| 2 | `theorem` | [endpoint_profile_continuous](../../../../GeneralTopology/LaplaceEndpointLimitNamespaced.lean/declarations/endpoint-profile-continuous.md) | 19 | `result-track:b1d960640e0af5a9440a632ff91cadb373b889a1c8ead61d5646e0114b53eb7b` |
-| 3 | `theorem` | [reciprocal_ray_tendsto_zero](../../../../GeneralTopology/LaplaceEndpointLimitNamespaced.lean/declarations/reciprocal-ray-tendsto-zero.md) | 23 | `result-track:40d385e5a7ec4fb62f612578074d73e96d006a81d01be98683796db0a8671d7c` |
-| 4 | `theorem` | [negative_ray_exp_tendsto_zero](../../../../GeneralTopology/LaplaceEndpointLimitNamespaced.lean/declarations/negative-ray-exp-tendsto-zero.md) | 30 | `result-track:6a6fb337a0ff71fd58b96043080b30e6c4e186ab164fc12fd074bca1cae349c3` |
-| 5 | `theorem` | [profile_endpoint_tendsto_one](../../../../GeneralTopology/LaplaceEndpointLimitNamespaced.lean/declarations/profile-endpoint-tendsto-one.md) | 40 | `result-track:279230cc297845e94768bfcb85b3a7565f0a745247116c19fe6f902e86a4de5c` |
+| 1 | `def` | [endpointProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LaplaceEndpointLimitNamespaced.lean/declarations/endpointprofile.md) | 17 | `declaration-track:608b263626923d6408c9015c6214021a3e320330948488da36de8b66abfea66f` |
+| 2 | `theorem` | [endpoint_profile_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LaplaceEndpointLimitNamespaced.lean/declarations/endpoint-profile-continuous.md) | 19 | `result-track:b1d960640e0af5a9440a632ff91cadb373b889a1c8ead61d5646e0114b53eb7b` |
+| 3 | `theorem` | [reciprocal_ray_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LaplaceEndpointLimitNamespaced.lean/declarations/reciprocal-ray-tendsto-zero.md) | 23 | `result-track:40d385e5a7ec4fb62f612578074d73e96d006a81d01be98683796db0a8671d7c` |
+| 4 | `theorem` | [negative_ray_exp_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LaplaceEndpointLimitNamespaced.lean/declarations/negative-ray-exp-tendsto-zero.md) | 30 | `result-track:6a6fb337a0ff71fd58b96043080b30e6c4e186ab164fc12fd074bca1cae349c3` |
+| 5 | `theorem` | [profile_endpoint_tendsto_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LaplaceEndpointLimitNamespaced.lean/declarations/profile-endpoint-tendsto-one.md) | 40 | `result-track:279230cc297845e94768bfcb85b3a7565f0a745247116c19fe6f902e86a4de5c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

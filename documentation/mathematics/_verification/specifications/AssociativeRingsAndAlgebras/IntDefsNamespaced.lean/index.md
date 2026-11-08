@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/IntDefsNamespaced.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/IntDefsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/IntDefsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/IntDefsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,17 +60,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [instCommRing](../../../../AssociativeRingsAndAlgebras/IntDefsNamespaced.lean/declarations/instcommring.md) | 31 | `declaration-track:b47f11f47d4c3bffd0943f1f23950584b19e221161a41f5389238d59b3a9b3ca` |
-| 2 | `instance` | [instCancelCommMonoidWithZero](../../../../AssociativeRingsAndAlgebras/IntDefsNamespaced.lean/declarations/instcancelcommmonoidwithzero.md) | 50 | `declaration-track:5cbcbd24cccee83182d9107272023ac563a78d69f67370de21bc73474723428f` |
-| 3 | `instance` | [instCharZero](../../../../AssociativeRingsAndAlgebras/IntDefsNamespaced.lean/declarations/instcharzero.md) | 53 | `declaration-track:d9cb9b2beb0927c073152bc1f9c204a476cbc2d85e263c58a3836da0f7252ea7` |
-| 4 | `instance` | [instMulDivCancelClass](../../../../AssociativeRingsAndAlgebras/IntDefsNamespaced.lean/declarations/instmuldivcancelclass.md) | 55 | `declaration-track:9afd14e62236d350dc8dbe0e5d7e747d3f51446598c11755e2723c328f76ffc1` |
-| 5 | `lemma` | [cast_mul](../../../../AssociativeRingsAndAlgebras/IntDefsNamespaced.lean/declarations/cast-mul.md) | 58 | `result-track:af3a769a438ac14c7e43911cd5e8aa492d7c148f2434896a4a5ea9b341716a90` |
-| 6 | `lemma` | [cast_mul_eq_zsmul_cast](../../../../AssociativeRingsAndAlgebras/IntDefsNamespaced.lean/declarations/cast-mul-eq-zsmul-cast.md) | 68 | `result-track:a03a6295c977ffb28a0fa82a77b192a9209a943eb1b978b982505d14be76b140` |
-| 7 | `lemma` | [cast_pow](../../../../AssociativeRingsAndAlgebras/IntDefsNamespaced.lean/declarations/cast-pow.md) | 73 | `result-track:b3eba1628f4ef7523b43fdc310326dc86af731c1b8732177ac958dc233b23ae1` |
-| 8 | `instance` | [instCommSemiring](../../../../AssociativeRingsAndAlgebras/IntDefsNamespaced.lean/declarations/instcommsemiring.md) | 84 | `declaration-track:5c5cca3e9b8db88b34ca4fa0a15f349895645d880c0241e8ea6770a277967d82` |
-| 9 | `instance` | [instSemiring](../../../../AssociativeRingsAndAlgebras/IntDefsNamespaced.lean/declarations/instsemiring.md) | 85 | `declaration-track:954bef1c58a02d7a936f48d785639e530bfaf7010b494dfe936510fa047b3571` |
-| 10 | `instance` | [instRing](../../../../AssociativeRingsAndAlgebras/IntDefsNamespaced.lean/declarations/instring.md) | 86 | `declaration-track:a4870148027fcf6282df09a00f1f3f5c4187dbde961b2bbb711a7c1a21daa379` |
-| 11 | `instance` | [instDistrib](../../../../AssociativeRingsAndAlgebras/IntDefsNamespaced.lean/declarations/instdistrib.md) | 87 | `declaration-track:eb5586659de32aee09d91c7c9909e681a577cf916638f3e16b20774ba1b50c0a` |
+| 1 | `instance` | [instCommRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/IntDefsNamespaced.lean/declarations/instcommring.md) | 31 | `declaration-track:b47f11f47d4c3bffd0943f1f23950584b19e221161a41f5389238d59b3a9b3ca` |
+| 2 | `instance` | [instCancelCommMonoidWithZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/IntDefsNamespaced.lean/declarations/instcancelcommmonoidwithzero.md) | 50 | `declaration-track:5cbcbd24cccee83182d9107272023ac563a78d69f67370de21bc73474723428f` |
+| 3 | `instance` | [instCharZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/IntDefsNamespaced.lean/declarations/instcharzero.md) | 53 | `declaration-track:d9cb9b2beb0927c073152bc1f9c204a476cbc2d85e263c58a3836da0f7252ea7` |
+| 4 | `instance` | [instMulDivCancelClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/IntDefsNamespaced.lean/declarations/instmuldivcancelclass.md) | 55 | `declaration-track:9afd14e62236d350dc8dbe0e5d7e747d3f51446598c11755e2723c328f76ffc1` |
+| 5 | `lemma` | [cast_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/IntDefsNamespaced.lean/declarations/cast-mul.md) | 58 | `result-track:af3a769a438ac14c7e43911cd5e8aa492d7c148f2434896a4a5ea9b341716a90` |
+| 6 | `lemma` | [cast_mul_eq_zsmul_cast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/IntDefsNamespaced.lean/declarations/cast-mul-eq-zsmul-cast.md) | 68 | `result-track:a03a6295c977ffb28a0fa82a77b192a9209a943eb1b978b982505d14be76b140` |
+| 7 | `lemma` | [cast_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/IntDefsNamespaced.lean/declarations/cast-pow.md) | 73 | `result-track:b3eba1628f4ef7523b43fdc310326dc86af731c1b8732177ac958dc233b23ae1` |
+| 8 | `instance` | [instCommSemiring](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/IntDefsNamespaced.lean/declarations/instcommsemiring.md) | 84 | `declaration-track:5c5cca3e9b8db88b34ca4fa0a15f349895645d880c0241e8ea6770a277967d82` |
+| 9 | `instance` | [instSemiring](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/IntDefsNamespaced.lean/declarations/instsemiring.md) | 85 | `declaration-track:954bef1c58a02d7a936f48d785639e530bfaf7010b494dfe936510fa047b3571` |
+| 10 | `instance` | [instRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/IntDefsNamespaced.lean/declarations/instring.md) | 86 | `declaration-track:a4870148027fcf6282df09a00f1f3f5c4187dbde961b2bbb711a7c1a21daa379` |
+| 11 | `instance` | [instDistrib](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/IntDefsNamespaced.lean/declarations/instdistrib.md) | 87 | `declaration-track:eb5586659de32aee09d91c7c9909e681a577cf916638f3e16b20774ba1b50c0a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianFunctorCategory.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianFunctorCategory.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianFunctorCategory.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianFunctorCategory.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,12 +60,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [coimageObjIso](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianFunctorCategory.lean/declarations/coimageobjiso.md) | 38 | `declaration-track:770cbb1154a918681024fdd61ea310303b045398118f8249e2983f1fcaa9fb99` |
-| 2 | `def` | [imageObjIso](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianFunctorCategory.lean/declarations/imageobjiso.md) | 48 | `declaration-track:4b5103319b9d517160e0aad29dc5e8e29f35eb38cdea6709328a12e93dd2371e` |
-| 3 | `theorem` | [coimageImageComparison_app](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianFunctorCategory.lean/declarations/coimageimagecomparison-app-source-edition-2.md) | 58 | `result-track:ad7f420fa33d7d8cc309140ef09f12099f84c10f808f51f16dd4726ee025cd9d` |
-| 4 | `theorem` | [coimageImageComparison_app'](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianFunctorCategory.lean/declarations/coimageimagecomparison-app.md) | 72 | `result-track:9332ce5d3427d12e6e2900c580007f9e328ac627ef036d8112a29b7930fb5345` |
-| 5 | `instance` | [functor_category_isIso_coimageImageComparison](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianFunctorCategory.lean/declarations/functor-category-isiso-coimageimagecomparison.md) | 78 | `declaration-track:747feecb8dd8e9e23a7c866b3fde75b027acd20d51ca4541e54ab9b0b19c8dc4` |
-| 6 | `instance` | [functorCategoryAbelian](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianFunctorCategory.lean/declarations/functorcategoryabelian.md) | 88 | `declaration-track:0fca23b10cb31d12173ac63217d11e82e6974ab69e4eda7ba2a3b7a7e2826994` |
+| 1 | `def` | [coimageObjIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianFunctorCategory.lean/declarations/coimageobjiso.md) | 38 | `declaration-track:770cbb1154a918681024fdd61ea310303b045398118f8249e2983f1fcaa9fb99` |
+| 2 | `def` | [imageObjIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianFunctorCategory.lean/declarations/imageobjiso.md) | 48 | `declaration-track:4b5103319b9d517160e0aad29dc5e8e29f35eb38cdea6709328a12e93dd2371e` |
+| 3 | `theorem` | [coimageImageComparison_app](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianFunctorCategory.lean/declarations/coimageimagecomparison-app-source-edition-2.md) | 58 | `result-track:ad7f420fa33d7d8cc309140ef09f12099f84c10f808f51f16dd4726ee025cd9d` |
+| 4 | `theorem` | [coimageImageComparison_app'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianFunctorCategory.lean/declarations/coimageimagecomparison-app.md) | 72 | `result-track:9332ce5d3427d12e6e2900c580007f9e328ac627ef036d8112a29b7930fb5345` |
+| 5 | `instance` | [functor_category_isIso_coimageImageComparison](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianFunctorCategory.lean/declarations/functor-category-isiso-coimageimagecomparison.md) | 78 | `declaration-track:747feecb8dd8e9e23a7c866b3fde75b027acd20d51ca4541e54ab9b0b19c8dc4` |
+| 6 | `instance` | [functorCategoryAbelian](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/AbelianFunctorCategory.lean/declarations/functorcategoryabelian.md) | 88 | `declaration-track:0fca23b10cb31d12173ac63217d11e82e6974ab69e4eda7ba2a3b7a7e2826994` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

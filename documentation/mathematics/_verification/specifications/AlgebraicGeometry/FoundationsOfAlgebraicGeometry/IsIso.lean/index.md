@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/IsIso.lean/index.md) · [Full source](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/IsIso.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/IsIso.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/IsIso.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [isomorphisms_eq_isOpenImmersion_inf_surjective](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/IsIso.lean/declarations/isomorphisms-eq-isopenimmersion-inf-surjective.md) | 18 | `result-track:1b76c4d9f488bd1dab8644d535fc04c4b2e076ef0fbbe8107a53a3edf6be8eef` |
-| 2 | `lemma` | [isomorphisms_eq_stalkwise](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/IsIso.lean/declarations/isomorphisms-eq-stalkwise.md) | 24 | `result-track:091d02079a339bd3c77caebc273003344b716f292577e8957ee04a92ae34f389` |
-| 3 | `instance` | [(anonymous)](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/IsIso.lean/declarations/instance.md) | 35 | `declaration-track:1bacec4f931d16d2996e36c573344e93225256aeac962a37d8e851004ab2f9cd` |
-| 4 | `instance` | [(anonymous)](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/IsIso.lean/declarations/instance-source-edition-2.md) | 38 | `declaration-track:2fcdabfff8dc9dac88599145029c1048948dc934912d43af03f39fc5cf91bb51` |
-| 5 | `instance` | [(anonymous)](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/IsIso.lean/declarations/instance-source-edition-3.md) | 44 | `declaration-track:ce391357c8840f3cd476d2f3d8393aa362bb979525828d08e130ca5362ec3677` |
+| 1 | `lemma` | [isomorphisms_eq_isOpenImmersion_inf_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/IsIso.lean/declarations/isomorphisms-eq-isopenimmersion-inf-surjective.md) | 18 | `result-track:1b76c4d9f488bd1dab8644d535fc04c4b2e076ef0fbbe8107a53a3edf6be8eef` |
+| 2 | `lemma` | [isomorphisms_eq_stalkwise](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/IsIso.lean/declarations/isomorphisms-eq-stalkwise.md) | 24 | `result-track:091d02079a339bd3c77caebc273003344b716f292577e8957ee04a92ae34f389` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/IsIso.lean/declarations/instance.md) | 35 | `declaration-track:1bacec4f931d16d2996e36c573344e93225256aeac962a37d8e851004ab2f9cd` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/IsIso.lean/declarations/instance-source-edition-2.md) | 38 | `declaration-track:2fcdabfff8dc9dac88599145029c1048948dc934912d43af03f39fc5cf91bb51` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/IsIso.lean/declarations/instance-source-edition-3.md) | 44 | `declaration-track:ce391357c8840f3cd476d2f3d8393aa362bb979525828d08e130ca5362ec3677` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ENatENNRealPublic.lean/index.md) · [Full source](../../../../GeneralTopology/ENatENNRealPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ENatENNRealPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ENatENNRealPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [continuous_toENNReal](../../../../GeneralTopology/ENatENNRealPublic.lean/declarations/continuous-toennreal.md) | 28 | `result-track:4335fa312877c6ce8670376dea33138c8cbed35391f8aef6838b9373f6a16fdb` |
-| 2 | `theorem` | [isClosedEmbedding_toENNReal](../../../../GeneralTopology/ENatENNRealPublic.lean/declarations/isclosedembedding-toennreal.md) | 33 | `result-track:7efae8c95df36403db7d4a95ba27888d3e9dd112c0d498b6c39555bda7f09cda` |
+| 1 | `theorem` | [continuous_toENNReal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ENatENNRealPublic.lean/declarations/continuous-toennreal.md) | 28 | `result-track:4335fa312877c6ce8670376dea33138c8cbed35391f8aef6838b9373f6a16fdb` |
+| 2 | `theorem` | [isClosedEmbedding_toENNReal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ENatENNRealPublic.lean/declarations/isclosedembedding-toennreal.md) | 33 | `result-track:7efae8c95df36403db7d4a95ba27888d3e9dd112c0d498b6c39555bda7f09cda` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

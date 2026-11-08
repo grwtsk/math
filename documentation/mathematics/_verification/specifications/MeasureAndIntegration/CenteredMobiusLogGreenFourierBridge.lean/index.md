@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CenteredMobiusLogGreenFourierBridge.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CenteredMobiusLogGreenFourierBridge.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenFourierBridge.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenFourierBridge.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenCoefficientBridge`](../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredMobiusLogGreenCoefficientBridge.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenCoefficientBridge`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredMobiusLogGreenCoefficientBridge.lean/index.md) — import line 8; pinned internal source present.
 - `Mathlib.Analysis.Fourier.AddCircle` — import line 9; external provider; requires a separately pinned dependency.
 - `Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic` — import line 10; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 11; external provider; requires a separately pinned dependency.
@@ -60,15 +60,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [fourierModePrimitive](../../../../MeasureAndIntegration/CenteredMobiusLogGreenFourierBridge.lean/declarations/fouriermodeprimitive.md) | 20 | `declaration-track:741fc9fe635bb287ab1947d3ee9e1330bcf9fea3c9d9175e85515992b8f6443a` |
-| 2 | `def` | [fourierModeValue](../../../../MeasureAndIntegration/CenteredMobiusLogGreenFourierBridge.lean/declarations/fouriermodevalue.md) | 25 | `declaration-track:ea63ffe0d02d5b46de3d5624060b7b7b3011675a9e7f64edc6ad33b4229a0426` |
-| 3 | `def` | [greenFourierBackgroundCoordinate](../../../../MeasureAndIntegration/CenteredMobiusLogGreenFourierBridge.lean/declarations/greenfourierbackgroundcoordinate.md) | 29 | `declaration-track:ee3d249a9008ec6c544ef370bc9ae11e8d29f9cd26f1001b1e444259b69dabd4` |
-| 4 | `def` | [thinGreenArithmeticFourierCoordinate](../../../../MeasureAndIntegration/CenteredMobiusLogGreenFourierBridge.lean/declarations/thingreenarithmeticfouriercoordinate.md) | 34 | `declaration-track:74430f1d26306feb7007015f9a98ffb3ca8911cb3536bc9c5c806826db369abd` |
-| 5 | `def` | [centeredMobiusLogFourierCoordinate](../../../../MeasureAndIntegration/CenteredMobiusLogGreenFourierBridge.lean/declarations/centeredmobiuslogfouriercoordinate.md) | 40 | `declaration-track:79fc4a75c428a77d38678544614ee6011988fc4b2627e912a035ac62b51500ff` |
-| 6 | `def` | [greenDiscreteHarmonicFourierCorrection](../../../../MeasureAndIntegration/CenteredMobiusLogGreenFourierBridge.lean/declarations/greendiscreteharmonicfouriercorrection.md) | 45 | `declaration-track:8afc1d44bba2a536bc67a57329658857defba7840d3fe85090b29ebb92ff66bc` |
-| 7 | `theorem` | [thinGreenArithmeticFourierCoordinate_decomposition](../../../../MeasureAndIntegration/CenteredMobiusLogGreenFourierBridge.lean/declarations/thingreenarithmeticfouriercoordinate-decomposition.md) | 50 | `result-track:db93d80f39337501e85c166c199295cd8517b9281a6f9ecf8721b6db1f7ac556` |
-| 8 | `def` | [greenCenteringResidual](../../../../MeasureAndIntegration/CenteredMobiusLogGreenFourierBridge.lean/declarations/greencenteringresidual.md) | 63 | `declaration-track:510031abc38ec04174fc9626ff1310c11fc62e88b9f9ae6b3e520230ce691632` |
-| 9 | `theorem` | [thinGreenArithmeticFourierCoordinate_eq_residual_sub_centered](../../../../MeasureAndIntegration/CenteredMobiusLogGreenFourierBridge.lean/declarations/thingreenarithmeticfouriercoordinate-eq-residual-sub-centered.md) | 67 | `result-track:4e2a2aa64d21958137679e59a5a510ac8a670517ee1a436a0761bc327d2f055e` |
+| 1 | `def` | [fourierModePrimitive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenFourierBridge.lean/declarations/fouriermodeprimitive.md) | 20 | `declaration-track:741fc9fe635bb287ab1947d3ee9e1330bcf9fea3c9d9175e85515992b8f6443a` |
+| 2 | `def` | [fourierModeValue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenFourierBridge.lean/declarations/fouriermodevalue.md) | 25 | `declaration-track:ea63ffe0d02d5b46de3d5624060b7b7b3011675a9e7f64edc6ad33b4229a0426` |
+| 3 | `def` | [greenFourierBackgroundCoordinate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenFourierBridge.lean/declarations/greenfourierbackgroundcoordinate.md) | 29 | `declaration-track:ee3d249a9008ec6c544ef370bc9ae11e8d29f9cd26f1001b1e444259b69dabd4` |
+| 4 | `def` | [thinGreenArithmeticFourierCoordinate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenFourierBridge.lean/declarations/thingreenarithmeticfouriercoordinate.md) | 34 | `declaration-track:74430f1d26306feb7007015f9a98ffb3ca8911cb3536bc9c5c806826db369abd` |
+| 5 | `def` | [centeredMobiusLogFourierCoordinate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenFourierBridge.lean/declarations/centeredmobiuslogfouriercoordinate.md) | 40 | `declaration-track:79fc4a75c428a77d38678544614ee6011988fc4b2627e912a035ac62b51500ff` |
+| 6 | `def` | [greenDiscreteHarmonicFourierCorrection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenFourierBridge.lean/declarations/greendiscreteharmonicfouriercorrection.md) | 45 | `declaration-track:8afc1d44bba2a536bc67a57329658857defba7840d3fe85090b29ebb92ff66bc` |
+| 7 | `theorem` | [thinGreenArithmeticFourierCoordinate_decomposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenFourierBridge.lean/declarations/thingreenarithmeticfouriercoordinate-decomposition.md) | 50 | `result-track:db93d80f39337501e85c166c199295cd8517b9281a6f9ecf8721b6db1f7ac556` |
+| 8 | `def` | [greenCenteringResidual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenFourierBridge.lean/declarations/greencenteringresidual.md) | 63 | `declaration-track:510031abc38ec04174fc9626ff1310c11fc62e88b9f9ae6b3e520230ce691632` |
+| 9 | `theorem` | [thinGreenArithmeticFourierCoordinate_eq_residual_sub_centered](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenFourierBridge.lean/declarations/thingreenarithmeticfouriercoordinate-eq-residual-sub-centered.md) | 67 | `result-track:4e2a2aa64d21958137679e59a5a510ac8a670517ee1a436a0761bc327d2f055e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

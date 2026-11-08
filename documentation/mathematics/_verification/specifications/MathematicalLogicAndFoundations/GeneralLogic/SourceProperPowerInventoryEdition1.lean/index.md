@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SourceProperPowerInventoryEdition1.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SourceProperPowerInventoryEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SourceProperPowerInventoryEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SourceProperPowerInventoryEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,12 +60,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [tailProperMass](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SourceProperPowerInventoryEdition1.lean/declarations/tailpropermass.md) | 18 | `declaration-track:df8f7109a358c2e332d7c7a5f7ffdce99ebbc640ec4d3810c7dc2e5d07e59d34` |
-| 2 | `def` | [properExponentInventory](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SourceProperPowerInventoryEdition1.lean/declarations/properexponentinventory.md) | 22 | `declaration-track:f8740a39ad62a9d34cf5f3f2964495f784039e3a7cf27912acdffbc9e3c2aba1` |
-| 3 | `theorem` | [tailProperMass_nonneg](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SourceProperPowerInventoryEdition1.lean/declarations/tailpropermass-nonneg.md) | 25 | `result-track:817c329a0a62837f90a84cb25e8c5c4cd3382ab1601b28525f7e7898c644bcfd` |
-| 4 | `theorem` | [tailProperMass_eq_exponent_sum](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SourceProperPowerInventoryEdition1.lean/declarations/tailpropermass-eq-exponent-sum.md) | 32 | `result-track:0571538aa0862d42c0c529e62d64e965140eff54b00aa825618a8098357f5fbe` |
-| 5 | `theorem` | [finite_geometric_proper_le](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SourceProperPowerInventoryEdition1.lean/declarations/finite-geometric-proper-le.md) | 96 | `result-track:5f312f9e13cc50abec67b5ab0053cbbd1e9db5ba01f9cc922f1974b7f9d1d256` |
-| 6 | `theorem` | [tailProperMass_le_budget](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SourceProperPowerInventoryEdition1.lean/declarations/tailpropermass-le-budget.md) | 140 | `result-track:92e874b104b44d5d5bd62c2f2a8fbcc243987090fb0dceb48323e7d064441532` |
+| 1 | `def` | [tailProperMass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SourceProperPowerInventoryEdition1.lean/declarations/tailpropermass.md) | 18 | `declaration-track:df8f7109a358c2e332d7c7a5f7ffdce99ebbc640ec4d3810c7dc2e5d07e59d34` |
+| 2 | `def` | [properExponentInventory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SourceProperPowerInventoryEdition1.lean/declarations/properexponentinventory.md) | 22 | `declaration-track:f8740a39ad62a9d34cf5f3f2964495f784039e3a7cf27912acdffbc9e3c2aba1` |
+| 3 | `theorem` | [tailProperMass_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SourceProperPowerInventoryEdition1.lean/declarations/tailpropermass-nonneg.md) | 25 | `result-track:817c329a0a62837f90a84cb25e8c5c4cd3382ab1601b28525f7e7898c644bcfd` |
+| 4 | `theorem` | [tailProperMass_eq_exponent_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SourceProperPowerInventoryEdition1.lean/declarations/tailpropermass-eq-exponent-sum.md) | 32 | `result-track:0571538aa0862d42c0c529e62d64e965140eff54b00aa825618a8098357f5fbe` |
+| 5 | `theorem` | [finite_geometric_proper_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SourceProperPowerInventoryEdition1.lean/declarations/finite-geometric-proper-le.md) | 96 | `result-track:5f312f9e13cc50abec67b5ab0053cbbd1e9db5ba01f9cc922f1974b7f9d1d256` |
+| 6 | `theorem` | [tailProperMass_le_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SourceProperPowerInventoryEdition1.lean/declarations/tailpropermass-le-budget.md) | 140 | `result-track:92e874b104b44d5d5bd62c2f2a8fbcc243987090fb0dceb48323e7d064441532` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

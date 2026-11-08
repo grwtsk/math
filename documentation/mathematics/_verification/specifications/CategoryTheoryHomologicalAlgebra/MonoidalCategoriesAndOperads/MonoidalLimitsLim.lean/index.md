@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalLimitsLim.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalLimitsLim.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalLimitsLim.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalLimitsLim.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalLimitsLim.lean/declarations/instance.md) | 35 | `declaration-track:ca7b9588668a6a3611bc224d40130f70fb31fdb3f22eb5f1b3b4f64b5128156a` |
-| 2 | `lemma` | [lim_ε_π](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalLimitsLim.lean/declarations/lim-source-edition-2.md) | 90 | `result-track:dd7f37952f30fa3f5d087475c812963d5229d1b3da498de4ebc9ed7a961dc222` |
-| 3 | `lemma` | [lim_μ_π](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalLimitsLim.lean/declarations/lim.md) | 94 | `result-track:7649ec10cddd04f59301d0959857c9c5b55095339c754b813be93d9eb1a5b2af` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalLimitsLim.lean/declarations/instance.md) | 35 | `declaration-track:ca7b9588668a6a3611bc224d40130f70fb31fdb3f22eb5f1b3b4f64b5128156a` |
+| 2 | `lemma` | [lim_ε_π](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalLimitsLim.lean/declarations/lim-source-edition-2.md) | 90 | `result-track:dd7f37952f30fa3f5d087475c812963d5229d1b3da498de4ebc9ed7a961dc222` |
+| 3 | `lemma` | [lim_μ_π](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalLimitsLim.lean/declarations/lim.md) | 94 | `result-track:7649ec10cddd04f59301d0959857c9c5b55095339c754b813be93d9eb1a5b2af` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

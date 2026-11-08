@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/CompleteSeparated.lean/index.md) · [Full source](../../../../GeneralTopology/CompleteSeparated.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompleteSeparated.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompleteSeparated.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [IsComplete.isClosed](../../../../GeneralTopology/CompleteSeparated.lean/declarations/iscomplete-isclosed.md) | 22 | `result-track:ecb528c41a2d8efdbcc4ecddcc2207a07974b52265434e34aac9f773beb7be7e` |
-| 2 | `theorem` | [IsUniformEmbedding.isClosedEmbedding](../../../../GeneralTopology/CompleteSeparated.lean/declarations/isuniformembedding-isclosedembedding.md) | 30 | `result-track:fa2098983aecbbd79e7462e9776b28c1e6889503bba465484eebaaea4de580ff` |
-| 3 | `theorem` | [continuous_extend_of_cauchy](../../../../GeneralTopology/CompleteSeparated.lean/declarations/continuous-extend-of-cauchy.md) | 45 | `result-track:e3f887110ed67562bdcebe7a96be2d8d5e37f022c743d4a134dbffe1def67943` |
+| 1 | `theorem` | [IsComplete.isClosed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompleteSeparated.lean/declarations/iscomplete-isclosed.md) | 22 | `result-track:ecb528c41a2d8efdbcc4ecddcc2207a07974b52265434e34aac9f773beb7be7e` |
+| 2 | `theorem` | [IsUniformEmbedding.isClosedEmbedding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompleteSeparated.lean/declarations/isuniformembedding-isclosedembedding.md) | 30 | `result-track:fa2098983aecbbd79e7462e9776b28c1e6889503bba465484eebaaea4de580ff` |
+| 3 | `theorem` | [continuous_extend_of_cauchy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompleteSeparated.lean/declarations/continuous-extend-of-cauchy.md) | 45 | `result-track:e3f887110ed67562bdcebe7a96be2d8d5e37f022c743d4a134dbffe1def67943` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

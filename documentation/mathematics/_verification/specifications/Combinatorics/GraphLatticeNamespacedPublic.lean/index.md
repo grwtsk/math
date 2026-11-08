@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/GraphLatticeNamespacedPublic.lean/index.md) · [Full source](../../../../Combinatorics/GraphLatticeNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphLatticeNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphLatticeNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../Combinatorics/GraphLatticeNamespacedPublic.lean/declarations/instance.md) | 50 | `declaration-track:5cac81170db30bddfc180f00c9cb49f854021ab7425ba35f34fa3d270d83cd7c` |
-| 2 | `lemma` | [vertexSet_inf](../../../../Combinatorics/GraphLatticeNamespacedPublic.lean/declarations/vertexset-inf.md) | 73 | `result-track:6b78d7f43df2d0d110aaaf7c4863da0304f72654d80eb6e75cac41bbfb2663f5` |
-| 3 | `lemma` | [edgeSet_inf](../../../../Combinatorics/GraphLatticeNamespacedPublic.lean/declarations/edgeset-inf.md) | 75 | `result-track:ec2da814a26539d60a65931da095393675a6d0755fcf553dbb435b40f9289a86` |
-| 4 | `lemma` | [inf_isLink](../../../../Combinatorics/GraphLatticeNamespacedPublic.lean/declarations/inf-islink.md) | 78 | `result-track:54d0a089f6a9fb875db05b7841974fc51327460d3915ee6252d0c6a19c5bd5fe` |
-| 5 | `lemma` | [inf_inc_iff](../../../../Combinatorics/GraphLatticeNamespacedPublic.lean/declarations/inf-inc-iff.md) | 81 | `result-track:fd7a47d1f42425552caddad9556abca9ed09614811ea53f4fc859f13c844061c` |
-| 6 | `lemma` | [inf_isLoopAt_iff](../../../../Combinatorics/GraphLatticeNamespacedPublic.lean/declarations/inf-isloopat-iff.md) | 85 | `result-track:ed4d80a81074bf65a7a832f654b2948f7cf42e2c0b81821eba8b103126c5a0d1` |
-| 7 | `lemma` | [inf_isNonloopAt_iff](../../../../Combinatorics/GraphLatticeNamespacedPublic.lean/declarations/inf-isnonloopat-iff.md) | 89 | `result-track:a8877132729194b41735bda744756d4b85b15af2a1ce70fc5481fd69794c0137` |
-| 8 | `lemma` | [disjoint_iff](../../../../Combinatorics/GraphLatticeNamespacedPublic.lean/declarations/disjoint-iff.md) | 93 | `result-track:532ceb0a3982901c29b5e7a4fe46c0a4448d63dd3966da7739ada6af7df43024` |
-| 9 | `lemma` | [Compatible.edgeSet_inf](../../../../Combinatorics/GraphLatticeNamespacedPublic.lean/declarations/compatible-edgeset-inf.md) | 96 | `result-track:6e4c67ffb9b5b4f2b138c8c38fd61dd171be1fd75c1b150aa2b3b848ae103fc9` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphLatticeNamespacedPublic.lean/declarations/instance.md) | 50 | `declaration-track:5cac81170db30bddfc180f00c9cb49f854021ab7425ba35f34fa3d270d83cd7c` |
+| 2 | `lemma` | [vertexSet_inf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphLatticeNamespacedPublic.lean/declarations/vertexset-inf.md) | 73 | `result-track:6b78d7f43df2d0d110aaaf7c4863da0304f72654d80eb6e75cac41bbfb2663f5` |
+| 3 | `lemma` | [edgeSet_inf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphLatticeNamespacedPublic.lean/declarations/edgeset-inf.md) | 75 | `result-track:ec2da814a26539d60a65931da095393675a6d0755fcf553dbb435b40f9289a86` |
+| 4 | `lemma` | [inf_isLink](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphLatticeNamespacedPublic.lean/declarations/inf-islink.md) | 78 | `result-track:54d0a089f6a9fb875db05b7841974fc51327460d3915ee6252d0c6a19c5bd5fe` |
+| 5 | `lemma` | [inf_inc_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphLatticeNamespacedPublic.lean/declarations/inf-inc-iff.md) | 81 | `result-track:fd7a47d1f42425552caddad9556abca9ed09614811ea53f4fc859f13c844061c` |
+| 6 | `lemma` | [inf_isLoopAt_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphLatticeNamespacedPublic.lean/declarations/inf-isloopat-iff.md) | 85 | `result-track:ed4d80a81074bf65a7a832f654b2948f7cf42e2c0b81821eba8b103126c5a0d1` |
+| 7 | `lemma` | [inf_isNonloopAt_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphLatticeNamespacedPublic.lean/declarations/inf-isnonloopat-iff.md) | 89 | `result-track:a8877132729194b41735bda744756d4b85b15af2a1ce70fc5481fd69794c0137` |
+| 8 | `lemma` | [disjoint_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphLatticeNamespacedPublic.lean/declarations/disjoint-iff.md) | 93 | `result-track:532ceb0a3982901c29b5e7a4fe46c0a4448d63dd3966da7739ada6af7df43024` |
+| 9 | `lemma` | [Compatible.edgeSet_inf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphLatticeNamespacedPublic.lean/declarations/compatible-edgeset-inf.md) | 96 | `result-track:6e4c67ffb9b5b4f2b138c8c38fd61dd171be1fd75c1b150aa2b3b848ae103fc9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

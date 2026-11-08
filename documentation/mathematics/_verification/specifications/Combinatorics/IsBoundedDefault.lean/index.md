@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/IsBoundedDefault.lean/index.md) · [Full source](../../../../Combinatorics/IsBoundedDefault.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IsBoundedDefault.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IsBoundedDefault.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../Combinatorics/IsBoundedDefault.lean/declarations/example-source-edition-3.md) | 8 | `declaration-track:eb17b3893c55235b7b6b692f9ea35c4cedfd647ad32ae1bac8f5130494134025` |
-| 2 | `example` | [(anonymous)](../../../../Combinatorics/IsBoundedDefault.lean/declarations/example.md) | 11 | `declaration-track:1167c90a0cb1a9a42cdc350a6ad8bd7b2c61a74ce3ea09f567326ffda13e43d5` |
-| 3 | `example` | [(anonymous)](../../../../Combinatorics/IsBoundedDefault.lean/declarations/example-source-edition-2.md) | 14 | `declaration-track:c2ffa0bba92fa2fc1ccd005e6e45ff8af0bdf0505ba898e7805c79010e1af4d4` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IsBoundedDefault.lean/declarations/example-source-edition-3.md) | 8 | `declaration-track:eb17b3893c55235b7b6b692f9ea35c4cedfd647ad32ae1bac8f5130494134025` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IsBoundedDefault.lean/declarations/example.md) | 11 | `declaration-track:1167c90a0cb1a9a42cdc350a6ad8bd7b2c61a74ce3ea09f567326ffda13e43d5` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/IsBoundedDefault.lean/declarations/example-source-edition-2.md) | 14 | `declaration-track:c2ffa0bba92fa2fc1ccd005e6e45ff8af0bdf0505ba898e7805c79010e1af4d4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

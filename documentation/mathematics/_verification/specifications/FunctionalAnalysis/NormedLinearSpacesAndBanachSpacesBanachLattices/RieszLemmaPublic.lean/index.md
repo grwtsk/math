@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RieszLemmaPublic.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RieszLemmaPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RieszLemmaPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RieszLemmaPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [riesz_lemma](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RieszLemmaPublic.lean/declarations/riesz-lemma.md) | 47 | `result-track:2ec855969fbe016c7330f96583bf78608eb699015bbc3ead0e35273317ae1835` |
-| 2 | `theorem` | [riesz_lemma_of_norm_lt](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RieszLemmaPublic.lean/declarations/riesz-lemma-of-norm-lt.md) | 89 | `result-track:ef4de3503b792c38512f08819c9c91b248c5433f6e95675240c8ddd7db1d465a` |
-| 3 | `theorem` | [Metric.closedBall_infDist_compl_subset_closure](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RieszLemmaPublic.lean/declarations/metric-closedball-infdist-compl-subset-closure.md) | 113 | `result-track:580f085d48bdefc111885c4b5eb74f5b9f2e139928ef26a982948124b61d097a` |
-| 4 | `theorem` | [riesz_lemma_of_lt_one](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RieszLemmaPublic.lean/declarations/riesz-lemma-of-lt-one.md) | 127 | `result-track:8f3164f1c4d8be425483a1589e1056fb33e04edc4d302b53afe43a914026c1ac` |
+| 1 | `theorem` | [riesz_lemma](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RieszLemmaPublic.lean/declarations/riesz-lemma.md) | 47 | `result-track:2ec855969fbe016c7330f96583bf78608eb699015bbc3ead0e35273317ae1835` |
+| 2 | `theorem` | [riesz_lemma_of_norm_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RieszLemmaPublic.lean/declarations/riesz-lemma-of-norm-lt.md) | 89 | `result-track:ef4de3503b792c38512f08819c9c91b248c5433f6e95675240c8ddd7db1d465a` |
+| 3 | `theorem` | [Metric.closedBall_infDist_compl_subset_closure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RieszLemmaPublic.lean/declarations/metric-closedball-infdist-compl-subset-closure.md) | 113 | `result-track:580f085d48bdefc111885c4b5eb74f5b9f2e139928ef26a982948124b61d097a` |
+| 4 | `theorem` | [riesz_lemma_of_lt_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/RieszLemmaPublic.lean/declarations/riesz-lemma-of-lt-one.md) | 127 | `result-track:8f3164f1c4d8be425483a1589e1056fb33e04edc4d302b53afe43a914026c1ac` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

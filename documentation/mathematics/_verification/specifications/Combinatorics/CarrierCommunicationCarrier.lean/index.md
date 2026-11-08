@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/CarrierCommunicationCarrier.lean/index.md) · [Full source](../../../../Combinatorics/CarrierCommunicationCarrier.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CarrierCommunicationCarrier.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CarrierCommunicationCarrier.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CommunicationCarrier](../../../../Combinatorics/CarrierCommunicationCarrier.lean/declarations/communicationcarrier.md) | 16 | `declaration-track:95c46fcc41916a3e4e5f57484a7de7f0b833a1db1196b8b95415622ce91d2186` |
-| 2 | `structure` | [ModelLocus](../../../../Combinatorics/CarrierCommunicationCarrier.lean/declarations/modellocus.md) | 30 | `declaration-track:752077aab2d852540c447110b17e7017af52341491b583da17221c9e12651fa4` |
-| 3 | `structure` | [ExactLocusAssignment](../../../../Combinatorics/CarrierCommunicationCarrier.lean/declarations/exactlocusassignment.md) | 40 | `declaration-track:731ebc988e388f2ee3667bfabf28b09f92af5003958070de7db8e61c0515c50a` |
-| 4 | `theorem` | [ExactLocusAssignment.active_model_has_finite_exact_locus](../../../../Combinatorics/CarrierCommunicationCarrier.lean/declarations/exactlocusassignment-active-model-has-finite-exact-locus.md) | 49 | `result-track:b373247d6bceed1723e3226c68fd65d32a09811cc940feb03c844b82dd739c1f` |
-| 5 | `theorem` | [locus_overlap_does_not_imply_equivalence](../../../../Combinatorics/CarrierCommunicationCarrier.lean/declarations/locus-overlap-does-not-imply-equivalence.md) | 63 | `result-track:678c908ebd2e877c36900dded161ff0b1676abc00cab2da46d373a0136dc6bbc` |
-| 6 | `def` | [universalBoolCarrier](../../../../Combinatorics/CarrierCommunicationCarrier.lean/declarations/universalboolcarrier.md) | 76 | `declaration-track:21f8d91cd67da777879898eb603b256f0e7b955d470215a86e0b74cb7f45931c` |
-| 7 | `theorem` | [carrier_adjacency_not_semantic_compatibility](../../../../Combinatorics/CarrierCommunicationCarrier.lean/declarations/carrier-adjacency-not-semantic-compatibility.md) | 87 | `result-track:f5ca1a1fe535e5fa1ee2cf4b1c200f07dc7c1111dd31c6d4b019b9de72b9f13c` |
+| 1 | `structure` | [CommunicationCarrier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CarrierCommunicationCarrier.lean/declarations/communicationcarrier.md) | 16 | `declaration-track:95c46fcc41916a3e4e5f57484a7de7f0b833a1db1196b8b95415622ce91d2186` |
+| 2 | `structure` | [ModelLocus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CarrierCommunicationCarrier.lean/declarations/modellocus.md) | 30 | `declaration-track:752077aab2d852540c447110b17e7017af52341491b583da17221c9e12651fa4` |
+| 3 | `structure` | [ExactLocusAssignment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CarrierCommunicationCarrier.lean/declarations/exactlocusassignment.md) | 40 | `declaration-track:731ebc988e388f2ee3667bfabf28b09f92af5003958070de7db8e61c0515c50a` |
+| 4 | `theorem` | [ExactLocusAssignment.active_model_has_finite_exact_locus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CarrierCommunicationCarrier.lean/declarations/exactlocusassignment-active-model-has-finite-exact-locus.md) | 49 | `result-track:b373247d6bceed1723e3226c68fd65d32a09811cc940feb03c844b82dd739c1f` |
+| 5 | `theorem` | [locus_overlap_does_not_imply_equivalence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CarrierCommunicationCarrier.lean/declarations/locus-overlap-does-not-imply-equivalence.md) | 63 | `result-track:678c908ebd2e877c36900dded161ff0b1676abc00cab2da46d373a0136dc6bbc` |
+| 6 | `def` | [universalBoolCarrier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CarrierCommunicationCarrier.lean/declarations/universalboolcarrier.md) | 76 | `declaration-track:21f8d91cd67da777879898eb603b256f0e7b955d470215a86e0b74cb7f45931c` |
+| 7 | `theorem` | [carrier_adjacency_not_semantic_compatibility](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CarrierCommunicationCarrier.lean/declarations/carrier-adjacency-not-semantic-compatibility.md) | 87 | `result-track:f5ca1a1fe535e5fa1ee2cf4b1c200f07dc7c1111dd31c6d4b019b9de72b9f13c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/ModelCategoryBasic.lean/index.md) · [Full source](../../../../AlgebraicTopology/ModelCategoryBasic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ModelCategoryBasic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ModelCategoryBasic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,7 +62,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [ModelCategory](../../../../AlgebraicTopology/ModelCategoryBasic.lean/declarations/modelcategory.md) | 40 | `declaration-track:21b7808ea6fa7c674ccd0deb92abb7e1bf3d844a0ae2e6c7d84dcdf3f29b2317` |
+| 1 | `class` | [ModelCategory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/ModelCategoryBasic.lean/declarations/modelcategory.md) | 40 | `declaration-track:21b7808ea6fa7c674ccd0deb92abb7e1bf3d844a0ae2e6c7d84dcdf3f29b2317` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

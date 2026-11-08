@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/FunctionSeries.lean/index.md) · [Full source](../../../../FunctionalAnalysis/FunctionSeries.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FunctionSeries.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FunctionSeries.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [tendstoUniformlyOn_tsum](../../../../FunctionalAnalysis/FunctionSeries.lean/declarations/tendstouniformlyon-tsum.md) | 26 | `result-track:c9638cdff830216c16eff400b2fc15b45523e3c282321e38cf74538542c3da7f` |
-| 2 | `theorem` | [tendstoUniformlyOn_tsum_nat](../../../../FunctionalAnalysis/FunctionSeries.lean/declarations/tendstouniformlyon-tsum-nat.md) | 41 | `result-track:dd67d5d7c9d51ecfa1cbed9d15053d1930310d1e590ce9613773a9f791ea5d8f` |
-| 3 | `theorem` | [tendstoUniformlyOn_tsum_of_cofinite_eventually](../../../../FunctionalAnalysis/FunctionSeries.lean/declarations/tendstouniformlyon-tsum-of-cofinite-eventually.md) | 49 | `result-track:8b588065b42a2e6a8995e97993e61351bb96bf6154bf914297a16532117c9889` |
-| 4 | `theorem` | [tendstoUniformlyOn_tsum_nat_eventually](../../../../FunctionalAnalysis/FunctionSeries.lean/declarations/tendstouniformlyon-tsum-nat-eventually.md) | 75 | `result-track:2707d5c233673c7bbba27395674522170a13131d7bf16d2f63685279ebe83d43` |
-| 5 | `theorem` | [tendstoUniformly_tsum](../../../../FunctionalAnalysis/FunctionSeries.lean/declarations/tendstouniformly-tsum.md) | 85 | `result-track:2769084ecd85db7cd3ee82dab56b8407c0e92bc03b0c855be36d6ded652847be` |
-| 6 | `theorem` | [tendstoUniformly_tsum_nat](../../../../FunctionalAnalysis/FunctionSeries.lean/declarations/tendstouniformly-tsum-nat.md) | 92 | `result-track:0c92c5b5fab793722b574f17cd96a3e89ed73a5238e58aff3bddf8cc9052db30` |
-| 7 | `theorem` | [tendstoUniformly_tsum_of_cofinite_eventually](../../../../FunctionalAnalysis/FunctionSeries.lean/declarations/tendstouniformly-tsum-of-cofinite-eventually.md) | 100 | `result-track:240c5c5d88e98469716e3ebd504fc5bede757671f3633eb9b8960abc9d0ca4d0` |
-| 8 | `theorem` | [continuousOn_tsum](../../../../FunctionalAnalysis/FunctionSeries.lean/declarations/continuouson-tsum.md) | 109 | `result-track:1afc551c2fe93631291369cd068508a47663249784af81a0ecdf0bfd66df9a67` |
-| 9 | `theorem` | [continuous_tsum](../../../../FunctionalAnalysis/FunctionSeries.lean/declarations/continuous-tsum.md) | 119 | `result-track:9d50c12761ff40f179f400bb6fddb1060a7424c104bb64eada3e9dad48490d73` |
+| 1 | `theorem` | [tendstoUniformlyOn_tsum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FunctionSeries.lean/declarations/tendstouniformlyon-tsum.md) | 26 | `result-track:c9638cdff830216c16eff400b2fc15b45523e3c282321e38cf74538542c3da7f` |
+| 2 | `theorem` | [tendstoUniformlyOn_tsum_nat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FunctionSeries.lean/declarations/tendstouniformlyon-tsum-nat.md) | 41 | `result-track:dd67d5d7c9d51ecfa1cbed9d15053d1930310d1e590ce9613773a9f791ea5d8f` |
+| 3 | `theorem` | [tendstoUniformlyOn_tsum_of_cofinite_eventually](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FunctionSeries.lean/declarations/tendstouniformlyon-tsum-of-cofinite-eventually.md) | 49 | `result-track:8b588065b42a2e6a8995e97993e61351bb96bf6154bf914297a16532117c9889` |
+| 4 | `theorem` | [tendstoUniformlyOn_tsum_nat_eventually](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FunctionSeries.lean/declarations/tendstouniformlyon-tsum-nat-eventually.md) | 75 | `result-track:2707d5c233673c7bbba27395674522170a13131d7bf16d2f63685279ebe83d43` |
+| 5 | `theorem` | [tendstoUniformly_tsum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FunctionSeries.lean/declarations/tendstouniformly-tsum.md) | 85 | `result-track:2769084ecd85db7cd3ee82dab56b8407c0e92bc03b0c855be36d6ded652847be` |
+| 6 | `theorem` | [tendstoUniformly_tsum_nat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FunctionSeries.lean/declarations/tendstouniformly-tsum-nat.md) | 92 | `result-track:0c92c5b5fab793722b574f17cd96a3e89ed73a5238e58aff3bddf8cc9052db30` |
+| 7 | `theorem` | [tendstoUniformly_tsum_of_cofinite_eventually](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FunctionSeries.lean/declarations/tendstouniformly-tsum-of-cofinite-eventually.md) | 100 | `result-track:240c5c5d88e98469716e3ebd504fc5bede757671f3633eb9b8960abc9d0ca4d0` |
+| 8 | `theorem` | [continuousOn_tsum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FunctionSeries.lean/declarations/continuouson-tsum.md) | 109 | `result-track:1afc551c2fe93631291369cd068508a47663249784af81a0ecdf0bfd66df9a67` |
+| 9 | `theorem` | [continuous_tsum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FunctionSeries.lean/declarations/continuous-tsum.md) | 119 | `result-track:9d50c12761ff40f179f400bb6fddb1060a7424c104bb64eada3e9dad48490d73` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

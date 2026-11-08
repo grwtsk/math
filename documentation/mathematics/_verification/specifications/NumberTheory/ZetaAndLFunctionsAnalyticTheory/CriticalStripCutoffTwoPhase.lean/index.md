@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffTwoPhase.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffTwoPhase.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffTwoPhase.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffTwoPhase.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripCutoffTwoSource`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffTwoSource.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripLogEnclosure`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripLogEnclosure.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripCutoffTwoSource`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffTwoSource.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripLogEnclosure`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripLogEnclosure.lean/index.md) — import line 5; pinned internal source present.
 - `Mathlib.Analysis.Real.Pi.Bounds` — import line 6; external provider; requires a separately pinned dependency.
 - `Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic` — import line 7; external provider; requires a separately pinned dependency.
 - `Mathlib.Analysis.Complex.Trigonometric` — import line 8; external provider; requires a separately pinned dependency.
@@ -61,15 +61,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [log_two_interval](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffTwoPhase.lean/declarations/log-two-interval.md) | 26 | `result-track:386359666253204e6e2a0e8179f996b7d36088f07b3ab4fbbb5ff23e5e97fcad` |
-| 2 | `lemma` | [reduced_angle_interval](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffTwoPhase.lean/declarations/reduced-angle-interval.md) | 30 | `result-track:dc936b484c3f9ea9c71b24155b764dd287da96d8f3104b401d2d88b8d558486f` |
-| 3 | `lemma` | [sector_trig](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffTwoPhase.lean/declarations/sector-trig.md) | 41 | `result-track:e6de42e0836acf6f9696a84db94b8df37fe420e7f7d968e749a2cbd4dee8d6e9` |
-| 4 | `lemma` | [positive_height_trig](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffTwoPhase.lean/declarations/positive-height-trig.md) | 64 | `result-track:50dd2ebd0844b284fc5ba3456ad6a5500807eb2890a115da17f928991b30eadf` |
-| 5 | `lemma` | [signed_height_trig](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffTwoPhase.lean/declarations/signed-height-trig.md) | 71 | `result-track:bdc4bfd3da4a39bc2eaf460d131ac6bf83c4f2485e834ef7758f8570ad425884` |
-| 6 | `lemma` | [power_re](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffTwoPhase.lean/declarations/power-re.md) | 85 | `result-track:7f1c47caddff7aaa96179cb0faa0000cf38c7b3a12cb455c1a4845d11857b1ea` |
-| 7 | `lemma` | [power_im](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffTwoPhase.lean/declarations/power-im.md) | 96 | `result-track:45cf381594286c3dce880cc79463a474e241bd1e93ee7ca42faac0654ff232b4` |
-| 8 | `lemma` | [cone_nonneg](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffTwoPhase.lean/declarations/cone-nonneg.md) | 109 | `result-track:fcae0c30e85299d5991f93eca3d25d1c71ac75f9aafd4982cf84920ba3c6516a` |
-| 9 | `lemma` | [projection_lower](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffTwoPhase.lean/declarations/projection-lower.md) | 119 | `result-track:5f1f44f3337a2a81a750353d58e580a8821a0a70377f82e03b684972f3a3580d` |
+| 1 | `lemma` | [log_two_interval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffTwoPhase.lean/declarations/log-two-interval.md) | 26 | `result-track:386359666253204e6e2a0e8179f996b7d36088f07b3ab4fbbb5ff23e5e97fcad` |
+| 2 | `lemma` | [reduced_angle_interval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffTwoPhase.lean/declarations/reduced-angle-interval.md) | 30 | `result-track:dc936b484c3f9ea9c71b24155b764dd287da96d8f3104b401d2d88b8d558486f` |
+| 3 | `lemma` | [sector_trig](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffTwoPhase.lean/declarations/sector-trig.md) | 41 | `result-track:e6de42e0836acf6f9696a84db94b8df37fe420e7f7d968e749a2cbd4dee8d6e9` |
+| 4 | `lemma` | [positive_height_trig](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffTwoPhase.lean/declarations/positive-height-trig.md) | 64 | `result-track:50dd2ebd0844b284fc5ba3456ad6a5500807eb2890a115da17f928991b30eadf` |
+| 5 | `lemma` | [signed_height_trig](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffTwoPhase.lean/declarations/signed-height-trig.md) | 71 | `result-track:bdc4bfd3da4a39bc2eaf460d131ac6bf83c4f2485e834ef7758f8570ad425884` |
+| 6 | `lemma` | [power_re](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffTwoPhase.lean/declarations/power-re.md) | 85 | `result-track:7f1c47caddff7aaa96179cb0faa0000cf38c7b3a12cb455c1a4845d11857b1ea` |
+| 7 | `lemma` | [power_im](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffTwoPhase.lean/declarations/power-im.md) | 96 | `result-track:45cf381594286c3dce880cc79463a474e241bd1e93ee7ca42faac0654ff232b4` |
+| 8 | `lemma` | [cone_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffTwoPhase.lean/declarations/cone-nonneg.md) | 109 | `result-track:fcae0c30e85299d5991f93eca3d25d1c71ac75f9aafd4982cf84920ba3c6516a` |
+| 9 | `lemma` | [projection_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffTwoPhase.lean/declarations/projection-lower.md) | 119 | `result-track:5f1f44f3337a2a81a750353d58e580a8821a0a70377f82e03b684972f3a3580d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

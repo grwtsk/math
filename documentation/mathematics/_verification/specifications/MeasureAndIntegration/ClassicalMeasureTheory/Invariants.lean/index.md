@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/Invariants.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/Invariants.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/Invariants.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/Invariants.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [invariants](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/Invariants.lean/declarations/invariants.md) | 28 | `declaration-track:a46fa9d4e8cb45c7e36fd4facea44db101ca8c4d3504089e73e7bfd003336bdc` |
-| 2 | `theorem` | [measurableSet_invariants](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/Invariants.lean/declarations/measurableset-invariants.md) | 36 | `result-track:6185ee9fde41645144f4894024ba9e9390fae08faca6c95e0d729676140adfd5` |
-| 3 | `theorem` | [invariants_id](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/Invariants.lean/declarations/invariants-id.md) | 41 | `result-track:e07b87afc3fcf4831bf34751c9412a589f311edf03738a367643e6fd31bf219e` |
-| 4 | `theorem` | [invariants_le](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/Invariants.lean/declarations/invariants-le.md) | 44 | `result-track:5d70ab5da07357ae166740dfe75c31d827217351e5059d8c279e5c5ba7a31645` |
-| 5 | `theorem` | [inf_le_invariants_comp](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/Invariants.lean/declarations/inf-le-invariants-comp.md) | 46 | `result-track:22aa695494d1c423052a7c96b87c85ee0760b54087311b6aea9b884f00d4b6b4` |
-| 6 | `theorem` | [le_invariants_iterate](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/Invariants.lean/declarations/le-invariants-iterate.md) | 50 | `result-track:7d57b6f2b7997428afab9148d78b1d98f5060709d82c19ad4b9e1e997925b2a1` |
-| 7 | `theorem` | [measurable_invariants_dom](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/Invariants.lean/declarations/measurable-invariants-dom.md) | 58 | `result-track:adaaa9963cb10fa5c53332d10399c7261aa01ca47eb0bacd17bc4aeb2d69fbac` |
-| 8 | `theorem` | [measurable_invariants_of_semiconj](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/Invariants.lean/declarations/measurable-invariants-of-semiconj.md) | 62 | `result-track:edfd0d6c134b4e34a4a9f44655413cbb786cd189ab13c8a75c3d829b29f0e110` |
+| 1 | `def` | [invariants](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/Invariants.lean/declarations/invariants.md) | 28 | `declaration-track:a46fa9d4e8cb45c7e36fd4facea44db101ca8c4d3504089e73e7bfd003336bdc` |
+| 2 | `theorem` | [measurableSet_invariants](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/Invariants.lean/declarations/measurableset-invariants.md) | 36 | `result-track:6185ee9fde41645144f4894024ba9e9390fae08faca6c95e0d729676140adfd5` |
+| 3 | `theorem` | [invariants_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/Invariants.lean/declarations/invariants-id.md) | 41 | `result-track:e07b87afc3fcf4831bf34751c9412a589f311edf03738a367643e6fd31bf219e` |
+| 4 | `theorem` | [invariants_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/Invariants.lean/declarations/invariants-le.md) | 44 | `result-track:5d70ab5da07357ae166740dfe75c31d827217351e5059d8c279e5c5ba7a31645` |
+| 5 | `theorem` | [inf_le_invariants_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/Invariants.lean/declarations/inf-le-invariants-comp.md) | 46 | `result-track:22aa695494d1c423052a7c96b87c85ee0760b54087311b6aea9b884f00d4b6b4` |
+| 6 | `theorem` | [le_invariants_iterate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/Invariants.lean/declarations/le-invariants-iterate.md) | 50 | `result-track:7d57b6f2b7997428afab9148d78b1d98f5060709d82c19ad4b9e1e997925b2a1` |
+| 7 | `theorem` | [measurable_invariants_dom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/Invariants.lean/declarations/measurable-invariants-dom.md) | 58 | `result-track:adaaa9963cb10fa5c53332d10399c7261aa01ca47eb0bacd17bc4aeb2d69fbac` |
+| 8 | `theorem` | [measurable_invariants_of_semiconj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/Invariants.lean/declarations/measurable-invariants-of-semiconj.md) | 62 | `result-track:edfd0d6c134b4e34a4a9f44655413cbb786cd189ab13c8a75c3d829b29f0e110` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

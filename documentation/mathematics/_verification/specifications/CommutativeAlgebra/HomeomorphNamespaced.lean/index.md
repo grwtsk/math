@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/HomeomorphNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/HomeomorphNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HomeomorphNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HomeomorphNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [PrimeSpectrum.isHomeomorph_comap](../../../../CommutativeAlgebra/HomeomorphNamespaced.lean/declarations/primespectrum-ishomeomorph-comap.md) | 43 | `result-track:0bd634cac1cdc0933c60b03c75ba0ea0675c564009b8ceb03be8f54b5d96fd90` |
-| 2 | `lemma` | [PrimeSpectrum.isHomeomorph_comap_of_isPurelyInseparable](../../../../CommutativeAlgebra/HomeomorphNamespaced.lean/declarations/primespectrum-ishomeomorph-comap-of-ispurelyinseparable.md) | 69 | `result-track:a0f561052215a2f6ee5bc608ee192b8f65f3ef200c2520c6dea83f4cd115ff0c` |
-| 3 | `lemma` | [PrimeSpectrum.isHomeomorph_comap_tensorProductMap_of_isPurelyInseparable](../../../../CommutativeAlgebra/HomeomorphNamespaced.lean/declarations/primespectrum-ishomeomorph-comap-tensorproductmap-of-ispurelyinseparable.md) | 79 | `result-track:1bdd55dd9b2205865ab9f418e4f3f87909d00b9bafcef874d437e276e3de8f36` |
+| 1 | `lemma` | [PrimeSpectrum.isHomeomorph_comap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HomeomorphNamespaced.lean/declarations/primespectrum-ishomeomorph-comap.md) | 43 | `result-track:0bd634cac1cdc0933c60b03c75ba0ea0675c564009b8ceb03be8f54b5d96fd90` |
+| 2 | `lemma` | [PrimeSpectrum.isHomeomorph_comap_of_isPurelyInseparable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HomeomorphNamespaced.lean/declarations/primespectrum-ishomeomorph-comap-of-ispurelyinseparable.md) | 69 | `result-track:a0f561052215a2f6ee5bc608ee192b8f65f3ef200c2520c6dea83f4cd115ff0c` |
+| 3 | `lemma` | [PrimeSpectrum.isHomeomorph_comap_tensorProductMap_of_isPurelyInseparable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HomeomorphNamespaced.lean/declarations/primespectrum-ishomeomorph-comap-tensorproductmap-of-ispurelyinseparable.md) | 79 | `result-track:1bdd55dd9b2205865ab9f418e4f3f87909d00b9bafcef874d437e276e3de8f36` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

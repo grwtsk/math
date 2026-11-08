@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ZeroKnowledgeAuthority.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ZeroKnowledgeAuthority.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ZeroKnowledgeAuthority.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ZeroKnowledgeAuthority.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PhaseSplit](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ZeroKnowledgeAuthority.lean/declarations/phasesplit.md) | 16 | `declaration-track:bab8efbd8bedb6bad29f2b517dae56762174ac0e1ebd757369b393c1e4405787` |
-| 2 | `def` | [witnessRevealingPhaseSplit](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ZeroKnowledgeAuthority.lean/declarations/witnessrevealingphasesplit.md) | 22 | `declaration-track:f6b0b9503125a8824c637534f0963f688d6699106f53f038edd997998f5c1086` |
-| 3 | `theorem` | [witnessRevealingPhaseSplit_phase_injective](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ZeroKnowledgeAuthority.lean/declarations/witnessrevealingphasesplit-phase-injective.md) | 27 | `result-track:98b23da89e8709adf0ef23d029549efc497f9ee428f8d7ef9f6b332550c7afae` |
-| 4 | `structure` | [ZeroKnowledgeSimulation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ZeroKnowledgeAuthority.lean/declarations/zeroknowledgesimulation.md) | 33 | `declaration-track:e5190fd7436052694bbcbce85693febeb57794547460edac36056a8250f0516d` |
-| 5 | `structure` | [KnowledgeExtraction](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ZeroKnowledgeAuthority.lean/declarations/knowledgeextraction.md) | 43 | `declaration-track:b265927d1b4af07aa73d4c2b66275c30dea450dce4b5cdd58c500759f1a384e6` |
-| 6 | `structure` | [SuccinctnessCertificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ZeroKnowledgeAuthority.lean/declarations/succinctnesscertificate.md) | 52 | `declaration-track:57726f2ade619fd30a2a679b2531260808da24dd5067f201b4011f1a669ab3c9` |
-| 7 | `structure` | [ZeroKnowledgeProofOfKnowledge](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ZeroKnowledgeAuthority.lean/declarations/zeroknowledgeproofofknowledge.md) | 68 | `declaration-track:53fa988c84f834fd6688a3616958cf7da91a40c7b340978063b72c1298796561` |
-| 8 | `structure` | [PhaseSplitSimulationBridge](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ZeroKnowledgeAuthority.lean/declarations/phasesplitsimulationbridge.md) | 82 | `declaration-track:b2f7ee935b37acc87457c2bd84c803c499570cc862dd9246c561c5b343341c85` |
+| 1 | `structure` | [PhaseSplit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ZeroKnowledgeAuthority.lean/declarations/phasesplit.md) | 16 | `declaration-track:bab8efbd8bedb6bad29f2b517dae56762174ac0e1ebd757369b393c1e4405787` |
+| 2 | `def` | [witnessRevealingPhaseSplit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ZeroKnowledgeAuthority.lean/declarations/witnessrevealingphasesplit.md) | 22 | `declaration-track:f6b0b9503125a8824c637534f0963f688d6699106f53f038edd997998f5c1086` |
+| 3 | `theorem` | [witnessRevealingPhaseSplit_phase_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ZeroKnowledgeAuthority.lean/declarations/witnessrevealingphasesplit-phase-injective.md) | 27 | `result-track:98b23da89e8709adf0ef23d029549efc497f9ee428f8d7ef9f6b332550c7afae` |
+| 4 | `structure` | [ZeroKnowledgeSimulation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ZeroKnowledgeAuthority.lean/declarations/zeroknowledgesimulation.md) | 33 | `declaration-track:e5190fd7436052694bbcbce85693febeb57794547460edac36056a8250f0516d` |
+| 5 | `structure` | [KnowledgeExtraction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ZeroKnowledgeAuthority.lean/declarations/knowledgeextraction.md) | 43 | `declaration-track:b265927d1b4af07aa73d4c2b66275c30dea450dce4b5cdd58c500759f1a384e6` |
+| 6 | `structure` | [SuccinctnessCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ZeroKnowledgeAuthority.lean/declarations/succinctnesscertificate.md) | 52 | `declaration-track:57726f2ade619fd30a2a679b2531260808da24dd5067f201b4011f1a669ab3c9` |
+| 7 | `structure` | [ZeroKnowledgeProofOfKnowledge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ZeroKnowledgeAuthority.lean/declarations/zeroknowledgeproofofknowledge.md) | 68 | `declaration-track:53fa988c84f834fd6688a3616958cf7da91a40c7b340978063b72c1298796561` |
+| 8 | `structure` | [PhaseSplitSimulationBridge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ZeroKnowledgeAuthority.lean/declarations/phasesplitsimulationbridge.md) | 82 | `declaration-track:b2f7ee935b37acc87457c2bd84c803c499570cc862dd9246c561c5b343341c85` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

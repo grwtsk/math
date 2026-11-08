@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HandlerPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HandlerPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HandlerPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HandlerPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [Handler](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HandlerPublic.lean/declarations/handler.md) | 25 | `declaration-track:0553ae484518300162435017cf25bf20439ee540d35ea9211da07ad3e0a82008` |
-| 2 | `structure` | [StatelessHandler](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HandlerPublic.lean/declarations/statelesshandler.md) | 63 | `declaration-track:35631003f6a9938c52a5ecb8753e07a1596471528b7d22408269d42f2f71dc79` |
-| 3 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HandlerPublic.lean/declarations/instance.md) | 80 | `declaration-track:0255d09efd290c4e1a066ab97042afb1e01da6f6d8dedadade0dfe3c28271e89` |
-| 4 | `def` | [ofFn](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HandlerPublic.lean/declarations/offn.md) | 90 | `declaration-track:9a861f23323ddb6e6f3a01feb8a9976e27acb4a8eeff135665cdedd0b9edfab9` |
-| 5 | `def` | [ofFns](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HandlerPublic.lean/declarations/offns.md) | 98 | `declaration-track:fd4eef74cb784a7aca76ab10bb7ea9d9aab42f91fc48dfcfaeac338807454b9f` |
-| 6 | `def` | [withFailure](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HandlerPublic.lean/declarations/withfailure.md) | 109 | `declaration-track:fc0a598ab9d559c7c3034e47c9645c6797584104d0e47a4993db8f02f267130b` |
-| 7 | `def` | [withContinue](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HandlerPublic.lean/declarations/withcontinue.md) | 118 | `declaration-track:98572a69f4b92cacd911abe043fd2953c9ed15f9bdacb7a62e0e2fa422e846ad` |
+| 1 | `class` | [Handler](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HandlerPublic.lean/declarations/handler.md) | 25 | `declaration-track:0553ae484518300162435017cf25bf20439ee540d35ea9211da07ad3e0a82008` |
+| 2 | `structure` | [StatelessHandler](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HandlerPublic.lean/declarations/statelesshandler.md) | 63 | `declaration-track:35631003f6a9938c52a5ecb8753e07a1596471528b7d22408269d42f2f71dc79` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HandlerPublic.lean/declarations/instance.md) | 80 | `declaration-track:0255d09efd290c4e1a066ab97042afb1e01da6f6d8dedadade0dfe3c28271e89` |
+| 4 | `def` | [ofFn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HandlerPublic.lean/declarations/offn.md) | 90 | `declaration-track:9a861f23323ddb6e6f3a01feb8a9976e27acb4a8eeff135665cdedd0b9edfab9` |
+| 5 | `def` | [ofFns](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HandlerPublic.lean/declarations/offns.md) | 98 | `declaration-track:fd4eef74cb784a7aca76ab10bb7ea9d9aab42f91fc48dfcfaeac338807454b9f` |
+| 6 | `def` | [withFailure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HandlerPublic.lean/declarations/withfailure.md) | 109 | `declaration-track:fc0a598ab9d559c7c3034e47c9645c6797584104d0e47a4993db8f02f267130b` |
+| 7 | `def` | [withContinue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HandlerPublic.lean/declarations/withcontinue.md) | 118 | `declaration-track:98572a69f4b92cacd911abe043fd2953c9ed15f9bdacb7a62e0e2fa422e846ad` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

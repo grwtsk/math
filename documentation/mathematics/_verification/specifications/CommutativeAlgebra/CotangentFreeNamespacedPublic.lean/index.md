@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/CotangentFreeNamespacedPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/CotangentFreeNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CotangentFreeNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CotangentFreeNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [cotangentRestrict_bijective_of_isCompl](../../../../CommutativeAlgebra/CotangentFreeNamespacedPublic.lean/declarations/cotangentrestrict-bijective-of-iscompl.md) | 63 | `result-track:7b61846d820bdcbf7b14d8d89d6ba7631eb6baa2cf1de8d4f12ebf8664859fe3` |
-| 2 | `lemma` | [disjoint_ker_toKaehler_of_linearIndependent](../../../../CommutativeAlgebra/CotangentFreeNamespacedPublic.lean/declarations/disjoint-ker-tokaehler-of-linearindependent.md) | 89 | `result-track:3092b548895aaab10e7229f595f10a9a55e895092d97e753a7ce8f73a404f185` |
-| 3 | `lemma` | [cotangentRestrict_bijective_of_basis_kaehlerDifferential](../../../../CommutativeAlgebra/CotangentFreeNamespacedPublic.lean/declarations/cotangentrestrict-bijective-of-basis-kaehlerdifferential.md) | 102 | `result-track:efc20e4364c0abfb5f4abb21694ae5012004347d5f79ba50860a356c48386b17` |
-| 4 | `lemma` | [isUnit_jacobian_of_cotangentRestrict_bijective](../../../../CommutativeAlgebra/CotangentFreeNamespacedPublic.lean/declarations/isunit-jacobian-of-cotangentrestrict-bijective.md) | 125 | `result-track:4647724726e78cda0bf4ca5f08a153e08a30f3d43662c0eb2d852b7f43f59f50` |
+| 1 | `lemma` | [cotangentRestrict_bijective_of_isCompl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CotangentFreeNamespacedPublic.lean/declarations/cotangentrestrict-bijective-of-iscompl.md) | 63 | `result-track:7b61846d820bdcbf7b14d8d89d6ba7631eb6baa2cf1de8d4f12ebf8664859fe3` |
+| 2 | `lemma` | [disjoint_ker_toKaehler_of_linearIndependent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CotangentFreeNamespacedPublic.lean/declarations/disjoint-ker-tokaehler-of-linearindependent.md) | 89 | `result-track:3092b548895aaab10e7229f595f10a9a55e895092d97e753a7ce8f73a404f185` |
+| 3 | `lemma` | [cotangentRestrict_bijective_of_basis_kaehlerDifferential](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CotangentFreeNamespacedPublic.lean/declarations/cotangentrestrict-bijective-of-basis-kaehlerdifferential.md) | 102 | `result-track:efc20e4364c0abfb5f4abb21694ae5012004347d5f79ba50860a356c48386b17` |
+| 4 | `lemma` | [isUnit_jacobian_of_cotangentRestrict_bijective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CotangentFreeNamespacedPublic.lean/declarations/isunit-jacobian-of-cotangentrestrict-bijective.md) | 125 | `result-track:4647724726e78cda0bf4ca5f08a153e08a30f3d43662c0eb2d852b7f43f59f50` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

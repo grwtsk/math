@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/QuarticCubicDiscriminantReduction.lean/index.md) · [Full source](../../../../CommutativeAlgebra/QuarticCubicDiscriminantReduction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticCubicDiscriminantReduction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticCubicDiscriminantReduction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.QuarticCubicPolynomialComparison`](../../../../CommutativeAlgebra/QuarticCubicPolynomialComparison.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Algebra.QuarticCubicPolynomialComparison`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticCubicPolynomialComparison.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [cubic_discr_map](../../../../CommutativeAlgebra/QuarticCubicDiscriminantReduction.lean/declarations/cubic-discr-map.md) | 28 | `result-track:25e506365018cf9890ed82eb34a6ed3c7b1d299720f0f177fb7aacc1f59c5c32` |
-| 2 | `theorem` | [adjacencyCubic_discr_map](../../../../CommutativeAlgebra/QuarticCubicDiscriminantReduction.lean/declarations/adjacencycubic-discr-map.md) | 37 | `result-track:d2f8b9386f93d82a82858dd706144a3a8f6fc158a032387adb96a6c211b5281b` |
-| 3 | `theorem` | [adjacencyCubic_discr_map_ne_zero_iff](../../../../CommutativeAlgebra/QuarticCubicDiscriminantReduction.lean/declarations/adjacencycubic-discr-map-ne-zero-iff.md) | 48 | `result-track:45f14bef23d4e4ac41ecc9d4f91f36e328092c4a4660ddbbb9d3606e5c3d2b24` |
+| 1 | `theorem` | [cubic_discr_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticCubicDiscriminantReduction.lean/declarations/cubic-discr-map.md) | 28 | `result-track:25e506365018cf9890ed82eb34a6ed3c7b1d299720f0f177fb7aacc1f59c5c32` |
+| 2 | `theorem` | [adjacencyCubic_discr_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticCubicDiscriminantReduction.lean/declarations/adjacencycubic-discr-map.md) | 37 | `result-track:d2f8b9386f93d82a82858dd706144a3a8f6fc158a032387adb96a6c211b5281b` |
+| 3 | `theorem` | [adjacencyCubic_discr_map_ne_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticCubicDiscriminantReduction.lean/declarations/adjacencycubic-discr-map-ne-zero-iff.md) | 48 | `result-track:45f14bef23d4e4ac41ecc9d4f91f36e328092c4a4660ddbbb9d3606e5c3d2b24` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

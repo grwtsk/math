@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TargetCarrierAndOperation.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TargetCarrierAndOperation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TargetCarrierAndOperation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TargetCarrierAndOperation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TraceTarget](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TargetCarrierAndOperation.lean/declarations/tracetarget.md) | 38 | `declaration-track:4854194eaf0e13b06c853f1bf59b14de23c5d31c1387fc9db2fd1f8144ae68a0` |
+| 1 | `structure` | [TraceTarget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TargetCarrierAndOperation.lean/declarations/tracetarget.md) | 38 | `declaration-track:4854194eaf0e13b06c853f1bf59b14de23c5d31c1387fc9db2fd1f8144ae68a0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

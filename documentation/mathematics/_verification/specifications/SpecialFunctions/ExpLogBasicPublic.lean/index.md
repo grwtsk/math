@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../SpecialFunctions/ExpLogBasicPublic.lean/index.md) · [Full source](../../../../SpecialFunctions/ExpLogBasicPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ExpLogBasicPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ExpLogBasicPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,23 +57,23 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [NormedSpace.exp_continuousMap_eq](../../../../SpecialFunctions/ExpLogBasicPublic.lean/declarations/normedspace-exp-continuousmap-eq.md) | 52 | `result-track:baf97020ff63f8930317c4e69191e2e3f93787ceb99a4c7cf819028b87193d47` |
-| 2 | `lemma` | [exp_eq_normedSpace_exp](../../../../SpecialFunctions/ExpLogBasicPublic.lean/declarations/exp-eq-normedspace-exp.md) | 69 | `result-track:a6fab88e32c26b3cf6048d7ac279767c0e18f48694741469aa54741aa0e89559` |
-| 3 | `lemma` | [real_exp_eq_normedSpace_exp](../../../../SpecialFunctions/ExpLogBasicPublic.lean/declarations/real-exp-eq-normedspace-exp.md) | 87 | `result-track:9366553d4593d8b2b19513e14be58e92a389bf0951b51dda056215ffe7b71454` |
-| 4 | `lemma` | [_root_.IsSelfAdjoint.exp_nonneg](../../../../SpecialFunctions/ExpLogBasicPublic.lean/declarations/root-isselfadjoint-exp-nonneg.md) | 92 | `result-track:b30317765b942cc2f9c02f85fbe908d93fa988fb813d4e17370e63c5d513614b` |
-| 5 | `lemma` | [complex_exp_eq_normedSpace_exp](../../../../SpecialFunctions/ExpLogBasicPublic.lean/declarations/complex-exp-eq-normedspace-exp.md) | 105 | `result-track:d2e7f5f4a8b274a936a52cc88362cbfc7aad6f69ce965eea10ce999dcd6f3d77` |
-| 6 | `def` | [log](../../../../SpecialFunctions/ExpLogBasicPublic.lean/declarations/log.md) | 121 | `declaration-track:7ebab228bb3f3a04e57bfdcd2034eb0b8e259dabe9330a4b300b878eddcca747` |
-| 7 | `lemma` | [_root_.IsSelfAdjoint.log](../../../../SpecialFunctions/ExpLogBasicPublic.lean/declarations/root-isselfadjoint-log.md) | 124 | `result-track:4004d79b64f41b20273410abdfea06bd0d7d513ee9697aa434f553999b93d186` |
-| 8 | `lemma` | [log_zero](../../../../SpecialFunctions/ExpLogBasicPublic.lean/declarations/log-zero.md) | 126 | `result-track:8b57cdf18acadf42ba5526afa4fc1798b32189c0b973a3f4277abce530030c93` |
-| 9 | `lemma` | [log_one](../../../../SpecialFunctions/ExpLogBasicPublic.lean/declarations/log-one.md) | 128 | `result-track:e6e97bf7b9420b7de68388929c7ccac26bc3965ba66df68af30d4426a6117ae5` |
-| 10 | `lemma` | [log_algebraMap](../../../../SpecialFunctions/ExpLogBasicPublic.lean/declarations/log-algebramap.md) | 131 | `result-track:1bd4ae5f5e2e8c2746c95cf5cc0e48fd7ca29348469556e52096b40a87143a08` |
-| 11 | `lemma` | [log_smul](../../../../SpecialFunctions/ExpLogBasicPublic.lean/declarations/log-smul.md) | 134 | `result-track:2178aece1a706efa4231d9d618520e064472f5f0f6ea0794b6bb8744810f09a5` |
-| 12 | `lemma` | [log_smul'](../../../../SpecialFunctions/ExpLogBasicPublic.lean/declarations/log-smul-source-edition-2.md) | 144 | `result-track:5d7a5b7bb92e10ccedcbb1ce151181b614693fbbf5cf26080cda87c675cb62ec` |
-| 13 | `lemma` | [log_pow](../../../../SpecialFunctions/ExpLogBasicPublic.lean/declarations/log-pow.md) | 149 | `result-track:4a0896a40c9f62809a10f2c8b43c800d8366d9ae547d974987c1af329a0f0395` |
-| 14 | `lemma` | [log_pow'](../../../../SpecialFunctions/ExpLogBasicPublic.lean/declarations/log-pow-source-edition-2.md) | 157 | `result-track:6353724f59b12e28387b2450b76dd7bc8a54bd0e62a6072ace594b0dd70f419d` |
-| 15 | `lemma` | [log_exp](../../../../SpecialFunctions/ExpLogBasicPublic.lean/declarations/log-exp.md) | 164 | `result-track:7b89e96c2f5951ce22b80dfe388c8fcbfdc4a60251766e42da9299ee658267b6` |
-| 16 | `lemma` | [exp_log](../../../../SpecialFunctions/ExpLogBasicPublic.lean/declarations/exp-log.md) | 171 | `result-track:1a2d8d919ecf853dabee45a3c2725b826706aed73a603680eca64ea94957931e` |
-| 17 | `lemma` | [continuousOn_log](../../../../SpecialFunctions/ExpLogBasicPublic.lean/declarations/continuouson-log.md) | 179 | `result-track:68ece0aaf67d4dc7c326ae367fd644280daac38ed2330fe50851ea6209238fad` |
+| 1 | `lemma` | [NormedSpace.exp_continuousMap_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ExpLogBasicPublic.lean/declarations/normedspace-exp-continuousmap-eq.md) | 52 | `result-track:baf97020ff63f8930317c4e69191e2e3f93787ceb99a4c7cf819028b87193d47` |
+| 2 | `lemma` | [exp_eq_normedSpace_exp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ExpLogBasicPublic.lean/declarations/exp-eq-normedspace-exp.md) | 69 | `result-track:a6fab88e32c26b3cf6048d7ac279767c0e18f48694741469aa54741aa0e89559` |
+| 3 | `lemma` | [real_exp_eq_normedSpace_exp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ExpLogBasicPublic.lean/declarations/real-exp-eq-normedspace-exp.md) | 87 | `result-track:9366553d4593d8b2b19513e14be58e92a389bf0951b51dda056215ffe7b71454` |
+| 4 | `lemma` | [_root_.IsSelfAdjoint.exp_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ExpLogBasicPublic.lean/declarations/root-isselfadjoint-exp-nonneg.md) | 92 | `result-track:b30317765b942cc2f9c02f85fbe908d93fa988fb813d4e17370e63c5d513614b` |
+| 5 | `lemma` | [complex_exp_eq_normedSpace_exp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ExpLogBasicPublic.lean/declarations/complex-exp-eq-normedspace-exp.md) | 105 | `result-track:d2e7f5f4a8b274a936a52cc88362cbfc7aad6f69ce965eea10ce999dcd6f3d77` |
+| 6 | `def` | [log](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ExpLogBasicPublic.lean/declarations/log.md) | 121 | `declaration-track:7ebab228bb3f3a04e57bfdcd2034eb0b8e259dabe9330a4b300b878eddcca747` |
+| 7 | `lemma` | [_root_.IsSelfAdjoint.log](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ExpLogBasicPublic.lean/declarations/root-isselfadjoint-log.md) | 124 | `result-track:4004d79b64f41b20273410abdfea06bd0d7d513ee9697aa434f553999b93d186` |
+| 8 | `lemma` | [log_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ExpLogBasicPublic.lean/declarations/log-zero.md) | 126 | `result-track:8b57cdf18acadf42ba5526afa4fc1798b32189c0b973a3f4277abce530030c93` |
+| 9 | `lemma` | [log_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ExpLogBasicPublic.lean/declarations/log-one.md) | 128 | `result-track:e6e97bf7b9420b7de68388929c7ccac26bc3965ba66df68af30d4426a6117ae5` |
+| 10 | `lemma` | [log_algebraMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ExpLogBasicPublic.lean/declarations/log-algebramap.md) | 131 | `result-track:1bd4ae5f5e2e8c2746c95cf5cc0e48fd7ca29348469556e52096b40a87143a08` |
+| 11 | `lemma` | [log_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ExpLogBasicPublic.lean/declarations/log-smul.md) | 134 | `result-track:2178aece1a706efa4231d9d618520e064472f5f0f6ea0794b6bb8744810f09a5` |
+| 12 | `lemma` | [log_smul'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ExpLogBasicPublic.lean/declarations/log-smul-source-edition-2.md) | 144 | `result-track:5d7a5b7bb92e10ccedcbb1ce151181b614693fbbf5cf26080cda87c675cb62ec` |
+| 13 | `lemma` | [log_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ExpLogBasicPublic.lean/declarations/log-pow.md) | 149 | `result-track:4a0896a40c9f62809a10f2c8b43c800d8366d9ae547d974987c1af329a0f0395` |
+| 14 | `lemma` | [log_pow'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ExpLogBasicPublic.lean/declarations/log-pow-source-edition-2.md) | 157 | `result-track:6353724f59b12e28387b2450b76dd7bc8a54bd0e62a6072ace594b0dd70f419d` |
+| 15 | `lemma` | [log_exp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ExpLogBasicPublic.lean/declarations/log-exp.md) | 164 | `result-track:7b89e96c2f5951ce22b80dfe388c8fcbfdc4a60251766e42da9299ee658267b6` |
+| 16 | `lemma` | [exp_log](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ExpLogBasicPublic.lean/declarations/exp-log.md) | 171 | `result-track:1a2d8d919ecf853dabee45a3c2725b826706aed73a603680eca64ea94957931e` |
+| 17 | `lemma` | [continuousOn_log](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ExpLogBasicPublic.lean/declarations/continuouson-log.md) | 179 | `result-track:68ece0aaf67d4dc7c326ae367fd644280daac38ed2330fe50851ea6209238fad` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

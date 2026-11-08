@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OpClassNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OpClassNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OpClassNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OpClassNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [IsSymmOp](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OpClassNamespaced.lean/declarations/issymmop.md) | 38 | `declaration-track:f655a06c519a4b9ed19c761da20b777a10528a86c3861aeb43167a1208786157` |
-| 2 | `class` | [LeftCommutative](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OpClassNamespaced.lean/declarations/leftcommutative.md) | 44 | `declaration-track:587f736fda7b191b3a14a8c7a0bba8834e0054b8cf8a942be7e0e397f4025a62` |
-| 3 | `class` | [RightCommutative](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OpClassNamespaced.lean/declarations/rightcommutative.md) | 50 | `declaration-track:eb8644c096bd31bfc986273a26b2c090d39c8a804c73036a3c12c72a301b33d8` |
-| 4 | `instance` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OpClassNamespaced.lean/declarations/instance-source-edition-5.md) | 54 | `declaration-track:fb7a2b3fd4bb17157b8f079fbd28c8444787c881fd64ac196456d79a7b5321f0` |
-| 5 | `theorem` | [IsSymmOp.flip_eq](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OpClassNamespaced.lean/declarations/issymmop-flip-eq.md) | 57 | `result-track:e3a1a30572b0a11121476d38253e01472c8e78ccf277547b36103d0f402061c8` |
-| 6 | `instance` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OpClassNamespaced.lean/declarations/instance-source-edition-3.md) | 60 | `declaration-track:448b07fed5b0690567e3109ebb0476597fd8caa838d40c70f0c0e2e4c967f7ff` |
-| 7 | `instance` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OpClassNamespaced.lean/declarations/instance-source-edition-4.md) | 63 | `declaration-track:b3271c9c6a0b99b44bd7959e084bdbbcfb267234bc707109a055d73c9f4f3dd3` |
-| 8 | `instance` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OpClassNamespaced.lean/declarations/instance-source-edition-2.md) | 66 | `declaration-track:3be2eefcd0dfec3be54d9b1f0931f4874f3dd5930f3e7b05ef99b8a629179187` |
-| 9 | `instance` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OpClassNamespaced.lean/declarations/instance.md) | 69 | `declaration-track:103e544c0ca1496be10a203cb89f55b86de78027f0da172632c7d9d8bc9bee4d` |
+| 1 | `class` | [IsSymmOp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OpClassNamespaced.lean/declarations/issymmop.md) | 38 | `declaration-track:f655a06c519a4b9ed19c761da20b777a10528a86c3861aeb43167a1208786157` |
+| 2 | `class` | [LeftCommutative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OpClassNamespaced.lean/declarations/leftcommutative.md) | 44 | `declaration-track:587f736fda7b191b3a14a8c7a0bba8834e0054b8cf8a942be7e0e397f4025a62` |
+| 3 | `class` | [RightCommutative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OpClassNamespaced.lean/declarations/rightcommutative.md) | 50 | `declaration-track:eb8644c096bd31bfc986273a26b2c090d39c8a804c73036a3c12c72a301b33d8` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OpClassNamespaced.lean/declarations/instance-source-edition-5.md) | 54 | `declaration-track:fb7a2b3fd4bb17157b8f079fbd28c8444787c881fd64ac196456d79a7b5321f0` |
+| 5 | `theorem` | [IsSymmOp.flip_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OpClassNamespaced.lean/declarations/issymmop-flip-eq.md) | 57 | `result-track:e3a1a30572b0a11121476d38253e01472c8e78ccf277547b36103d0f402061c8` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OpClassNamespaced.lean/declarations/instance-source-edition-3.md) | 60 | `declaration-track:448b07fed5b0690567e3109ebb0476597fd8caa838d40c70f0c0e2e4c967f7ff` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OpClassNamespaced.lean/declarations/instance-source-edition-4.md) | 63 | `declaration-track:b3271c9c6a0b99b44bd7959e084bdbbcfb267234bc707109a055d73c9f4f3dd3` |
+| 8 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OpClassNamespaced.lean/declarations/instance-source-edition-2.md) | 66 | `declaration-track:3be2eefcd0dfec3be54d9b1f0931f4874f3dd5930f3e7b05ef99b8a629179187` |
+| 9 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OpClassNamespaced.lean/declarations/instance.md) | 69 | `declaration-track:103e544c0ca1496be10a203cb89f55b86de78027f0da172632c7d9d8bc9bee4d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

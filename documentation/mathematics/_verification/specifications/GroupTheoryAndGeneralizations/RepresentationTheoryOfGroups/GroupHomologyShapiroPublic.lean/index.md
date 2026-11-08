@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/GroupHomologyShapiroPublic.lean/index.md) · [Full source](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/GroupHomologyShapiroPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/GroupHomologyShapiroPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/GroupHomologyShapiroPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [coinvariantsTensorResProjectiveResolutionIso](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/GroupHomologyShapiroPublic.lean/declarations/coinvariantstensorresprojectiveresolutioniso.md) | 53 | `declaration-track:6024fbcc45c1d37737b2cc3a13adb0c97aead9fcef764f77d56d38f699cb9896` |
-| 2 | `def` | [indIso](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/GroupHomologyShapiroPublic.lean/declarations/indiso.md) | 66 | `declaration-track:2dcdaf9cdb4ef5b37902e1ac85377ee84cd5f9505d8452e4d6983a6ecb28fa87` |
+| 1 | `abbrev` | [coinvariantsTensorResProjectiveResolutionIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/GroupHomologyShapiroPublic.lean/declarations/coinvariantstensorresprojectiveresolutioniso.md) | 53 | `declaration-track:6024fbcc45c1d37737b2cc3a13adb0c97aead9fcef764f77d56d38f699cb9896` |
+| 2 | `def` | [indIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/GroupHomologyShapiroPublic.lean/declarations/indiso.md) | 66 | `declaration-track:2dcdaf9cdb4ef5b37902e1ac85377ee84cd5f9505d8452e4d6983a6ecb28fa87` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

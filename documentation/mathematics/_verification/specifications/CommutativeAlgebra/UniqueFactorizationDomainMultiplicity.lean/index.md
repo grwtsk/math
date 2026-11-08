@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/UniqueFactorizationDomainMultiplicity.lean/index.md) · [Full source](../../../../CommutativeAlgebra/UniqueFactorizationDomainMultiplicity.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UniqueFactorizationDomainMultiplicity.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UniqueFactorizationDomainMultiplicity.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [WfDvdMonoid.max_power_factor'](../../../../CommutativeAlgebra/UniqueFactorizationDomainMultiplicity.lean/declarations/wfdvdmonoid-max-power-factor-source-edition-2.md) | 25 | `result-track:d31968f7fb906d539eddd2061e7d88ed4389593dcd26bdc013bfb58e71ce7a90` |
-| 2 | `theorem` | [WfDvdMonoid.max_power_factor](../../../../CommutativeAlgebra/UniqueFactorizationDomainMultiplicity.lean/declarations/wfdvdmonoid-max-power-factor.md) | 33 | `result-track:5952b0966d9b9db9bdec8b6d23b9b00250bca4b0bfe37cf9264d799452ee6acf` |
-| 3 | `theorem` | [FiniteMultiplicity.of_not_isUnit](../../../../CommutativeAlgebra/UniqueFactorizationDomainMultiplicity.lean/declarations/finitemultiplicity-of-not-isunit.md) | 37 | `result-track:2bec57ac7c15f86bf62169802840e22bd6a425e43627de7779deaeade2d372c3` |
-| 4 | `theorem` | [FiniteMultiplicity.of_prime_left](../../../../CommutativeAlgebra/UniqueFactorizationDomainMultiplicity.lean/declarations/finitemultiplicity-of-prime-left.md) | 45 | `result-track:b7f624ec5975584f27e723683b4f6be0b4918c8de1ec119db3ce42fb18d7d0ba` |
-| 5 | `theorem` | [le_emultiplicity_iff_replicate_le_normalizedFactors](../../../../CommutativeAlgebra/UniqueFactorizationDomainMultiplicity.lean/declarations/le-emultiplicity-iff-replicate-le-normalizedfactors.md) | 64 | `result-track:b702e0871db85109036028e8252bd22dc2992850b107bdcc5d3ce1ca3ac36065` |
-| 6 | `theorem` | [emultiplicity_eq_count_normalizedFactors](../../../../CommutativeAlgebra/UniqueFactorizationDomainMultiplicity.lean/declarations/emultiplicity-eq-count-normalizedfactors.md) | 88 | `result-track:3062a8b5579baf58a4ca58eaff33f44761cc180486ff28edf6bd125890fafb6f` |
-| 7 | `theorem` | [count_normalizedFactors_eq](../../../../CommutativeAlgebra/UniqueFactorizationDomainMultiplicity.lean/declarations/count-normalizedfactors-eq-source-edition-2.md) | 104 | `result-track:a39a7a545d56e7a7251bc1e482cd2ee2deaa702e5737da4a16384426a37ef338` |
-| 8 | `theorem` | [count_normalizedFactors_eq'](../../../../CommutativeAlgebra/UniqueFactorizationDomainMultiplicity.lean/declarations/count-normalizedfactors-eq.md) | 120 | `result-track:1065b6966edbae27c4a4cb75a93b716c01f3b3ad0c09a79e896f2bf178301057` |
+| 1 | `theorem` | [WfDvdMonoid.max_power_factor'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UniqueFactorizationDomainMultiplicity.lean/declarations/wfdvdmonoid-max-power-factor-source-edition-2.md) | 25 | `result-track:d31968f7fb906d539eddd2061e7d88ed4389593dcd26bdc013bfb58e71ce7a90` |
+| 2 | `theorem` | [WfDvdMonoid.max_power_factor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UniqueFactorizationDomainMultiplicity.lean/declarations/wfdvdmonoid-max-power-factor.md) | 33 | `result-track:5952b0966d9b9db9bdec8b6d23b9b00250bca4b0bfe37cf9264d799452ee6acf` |
+| 3 | `theorem` | [FiniteMultiplicity.of_not_isUnit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UniqueFactorizationDomainMultiplicity.lean/declarations/finitemultiplicity-of-not-isunit.md) | 37 | `result-track:2bec57ac7c15f86bf62169802840e22bd6a425e43627de7779deaeade2d372c3` |
+| 4 | `theorem` | [FiniteMultiplicity.of_prime_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UniqueFactorizationDomainMultiplicity.lean/declarations/finitemultiplicity-of-prime-left.md) | 45 | `result-track:b7f624ec5975584f27e723683b4f6be0b4918c8de1ec119db3ce42fb18d7d0ba` |
+| 5 | `theorem` | [le_emultiplicity_iff_replicate_le_normalizedFactors](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UniqueFactorizationDomainMultiplicity.lean/declarations/le-emultiplicity-iff-replicate-le-normalizedfactors.md) | 64 | `result-track:b702e0871db85109036028e8252bd22dc2992850b107bdcc5d3ce1ca3ac36065` |
+| 6 | `theorem` | [emultiplicity_eq_count_normalizedFactors](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UniqueFactorizationDomainMultiplicity.lean/declarations/emultiplicity-eq-count-normalizedfactors.md) | 88 | `result-track:3062a8b5579baf58a4ca58eaff33f44761cc180486ff28edf6bd125890fafb6f` |
+| 7 | `theorem` | [count_normalizedFactors_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UniqueFactorizationDomainMultiplicity.lean/declarations/count-normalizedfactors-eq-source-edition-2.md) | 104 | `result-track:a39a7a545d56e7a7251bc1e482cd2ee2deaa702e5737da4a16384426a37ef338` |
+| 8 | `theorem` | [count_normalizedFactors_eq'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UniqueFactorizationDomainMultiplicity.lean/declarations/count-normalizedfactors-eq.md) | 120 | `result-track:1065b6966edbae27c4a4cb75a93b716c01f3b3ad0c09a79e896f2bf178301057` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

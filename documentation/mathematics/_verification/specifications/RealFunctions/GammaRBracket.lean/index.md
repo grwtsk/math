@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/GammaRBracket.lean/index.md) · [Full source](../../../../RealFunctions/GammaRBracket.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/GammaRBracket.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/GammaRBracket.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [digamma_conj](../../../../RealFunctions/GammaRBracket.lean/declarations/digamma-conj.md) | 28 | `result-track:3544ee3d7ae4beae01a40983aa6b45862e5391b64e51b1f8256cef9518ab6219` |
-| 2 | `theorem` | [logDeriv_Gammaℝ](../../../../RealFunctions/GammaRBracket.lean/declarations/logderiv-gamma.md) | 53 | `result-track:8ef581a14cf67b838f141582263db5fe75232549320b2f0f7560a7315ed30265` |
-| 3 | `theorem` | [gammaR_bracket](../../../../RealFunctions/GammaRBracket.lean/declarations/gammar-bracket.md) | 98 | `result-track:8f34bf572507e46de646047f29f1f606e18e27ec85a3348c243b2714762c05b5` |
+| 1 | `theorem` | [digamma_conj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/GammaRBracket.lean/declarations/digamma-conj.md) | 28 | `result-track:3544ee3d7ae4beae01a40983aa6b45862e5391b64e51b1f8256cef9518ab6219` |
+| 2 | `theorem` | [logDeriv_Gammaℝ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/GammaRBracket.lean/declarations/logderiv-gamma.md) | 53 | `result-track:8ef581a14cf67b838f141582263db5fe75232549320b2f0f7560a7315ed30265` |
+| 3 | `theorem` | [gammaR_bracket](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/GammaRBracket.lean/declarations/gammar-bracket.md) | 98 | `result-track:8f34bf572507e46de646047f29f1f606e18e27ec85a3348c243b2714762c05b5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/NormNamespacedPublic.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/NormNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/NormNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/NormNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [neg_norm_le_re](../../../../FunctionsOfAComplexVariable/NormNamespacedPublic.lean/declarations/neg-norm-le-re.md) | 28 | `result-track:cf9648dcd03f45eab081205ca53afbe0797e9f3ef9eeb7e1e75466eeb1bbba18` |
-| 2 | `lemma` | [norm_sub_one_le_one_add_norm](../../../../FunctionsOfAComplexVariable/NormNamespacedPublic.lean/declarations/norm-sub-one-le-one-add-norm.md) | 32 | `result-track:1de64104cceacb2a3381c7e2a282e0e80e38331d70cb175605c960110f784352` |
-| 3 | `lemma` | [norm_one_sub_le_one_add_norm](../../../../FunctionsOfAComplexVariable/NormNamespacedPublic.lean/declarations/norm-one-sub-le-one-add-norm.md) | 37 | `result-track:8429fe04f77788ae601bbb29d3bf554c95116a4ced1c03c84b22ac923411d3e5` |
-| 4 | `lemma` | [one_le_norm_one_sub_of_norm_gt_three](../../../../FunctionsOfAComplexVariable/NormNamespacedPublic.lean/declarations/one-le-norm-one-sub-of-norm-gt-three.md) | 43 | `result-track:80086302ce5aa0c5ca4661aa413316f4e06651f77c8223955bed2b8c39546daa` |
-| 5 | `lemma` | [norm_inv_pow_le_one_of_one_le_norm](../../../../FunctionsOfAComplexVariable/NormNamespacedPublic.lean/declarations/norm-inv-pow-le-one-of-one-le-norm.md) | 52 | `result-track:020079d166403d5b101776238073d672ff4a65de40a0c143bac3b953e56fe08b` |
-| 6 | `lemma` | [one_sub_ne_one_of_norm_pos](../../../../FunctionsOfAComplexVariable/NormNamespacedPublic.lean/declarations/one-sub-ne-one-of-norm-pos.md) | 64 | `result-track:d95081bdb36a1be76fb7b106b05c22faf14baa535a16e778548d27ca5e42812d` |
-| 7 | `lemma` | [ne_neg_nat_of_re_pos](../../../../FunctionsOfAComplexVariable/NormNamespacedPublic.lean/declarations/ne-neg-nat-of-re-pos.md) | 69 | `result-track:fa2a3465a08aa9865f58c4a286960eba93738a488818de1c6518b32e86a3085d` |
+| 1 | `theorem` | [neg_norm_le_re](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/NormNamespacedPublic.lean/declarations/neg-norm-le-re.md) | 28 | `result-track:cf9648dcd03f45eab081205ca53afbe0797e9f3ef9eeb7e1e75466eeb1bbba18` |
+| 2 | `lemma` | [norm_sub_one_le_one_add_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/NormNamespacedPublic.lean/declarations/norm-sub-one-le-one-add-norm.md) | 32 | `result-track:1de64104cceacb2a3381c7e2a282e0e80e38331d70cb175605c960110f784352` |
+| 3 | `lemma` | [norm_one_sub_le_one_add_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/NormNamespacedPublic.lean/declarations/norm-one-sub-le-one-add-norm.md) | 37 | `result-track:8429fe04f77788ae601bbb29d3bf554c95116a4ced1c03c84b22ac923411d3e5` |
+| 4 | `lemma` | [one_le_norm_one_sub_of_norm_gt_three](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/NormNamespacedPublic.lean/declarations/one-le-norm-one-sub-of-norm-gt-three.md) | 43 | `result-track:80086302ce5aa0c5ca4661aa413316f4e06651f77c8223955bed2b8c39546daa` |
+| 5 | `lemma` | [norm_inv_pow_le_one_of_one_le_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/NormNamespacedPublic.lean/declarations/norm-inv-pow-le-one-of-one-le-norm.md) | 52 | `result-track:020079d166403d5b101776238073d672ff4a65de40a0c143bac3b953e56fe08b` |
+| 6 | `lemma` | [one_sub_ne_one_of_norm_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/NormNamespacedPublic.lean/declarations/one-sub-ne-one-of-norm-pos.md) | 64 | `result-track:d95081bdb36a1be76fb7b106b05c22faf14baa535a16e778548d27ca5e42812d` |
+| 7 | `lemma` | [ne_neg_nat_of_re_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/NormNamespacedPublic.lean/declarations/ne-neg-nat-of-re-pos.md) | 69 | `result-track:fa2a3465a08aa9865f58c4a286960eba93738a488818de1c6518b32e86a3085d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

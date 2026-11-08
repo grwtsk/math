@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Composition.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Composition.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Composition.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Composition.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [compose](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Composition.lean/declarations/compose.md) | 7 | `declaration-track:5b09de81bdc8abfbb05ee5f38956e9c57805dc1da4f3e663bf75b1f74b56cf53` |
-| 2 | `theorem` | [compose_eq_node](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Composition.lean/declarations/compose-eq-node.md) | 10 | `result-track:00d5cafa0b367627f6559303936d4edad5245574bf7bc7f1d7e7c861e110839d` |
-| 3 | `theorem` | [raw_node_left_right_visible](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Composition.lean/declarations/raw-node-left-right-visible.md) | 13 | `result-track:b7172ee006b73a0bf51f9940b1215aebe1284798e4350829ae54d9a490d68d34` |
+| 1 | `def` | [compose](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Composition.lean/declarations/compose.md) | 7 | `declaration-track:5b09de81bdc8abfbb05ee5f38956e9c57805dc1da4f3e663bf75b1f74b56cf53` |
+| 2 | `theorem` | [compose_eq_node](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Composition.lean/declarations/compose-eq-node.md) | 10 | `result-track:00d5cafa0b367627f6559303936d4edad5245574bf7bc7f1d7e7c861e110839d` |
+| 3 | `theorem` | [raw_node_left_right_visible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Composition.lean/declarations/raw-node-left-right-visible.md) | 13 | `result-track:b7172ee006b73a0bf51f9940b1215aebe1284798e4350829ae54d9a490d68d34` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/FirstBlockControls.lean/index.md) · [Full source](../../../../NumberTheory/FirstBlockControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FirstBlockControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FirstBlockControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.ConcreteNewtonFirstBlock`](../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFirstBlock.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.ConcreteNewtonFirstBlock`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonFirstBlock.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,18 +57,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [first_last_bases](../../../../NumberTheory/FirstBlockControls.lean/declarations/first-last-bases.md) | 18 | `result-track:f0390ee65b57126e914569902cfadb3b83f50b27065fcf243588af160fd426ef` |
-| 2 | `theorem` | [boundary_log_reduction](../../../../NumberTheory/FirstBlockControls.lean/declarations/boundary-log-reduction.md) | 21 | `result-track:c07026104a1dcdba6750d18229e307c2da2109ff4bc79c0847b3b4af63035b44` |
-| 3 | `theorem` | [sixtyfour_in_block](../../../../NumberTheory/FirstBlockControls.lean/declarations/sixtyfour-in-block.md) | 25 | `result-track:797d5eda7679fbf7eb0c39b2426760f2a6d48845417bce48c89799d4b857d26d` |
-| 4 | `theorem` | [sixtyfive_not_in_block](../../../../NumberTheory/FirstBlockControls.lean/declarations/sixtyfive-not-in-block.md) | 29 | `result-track:4b45127bf841e8485d33f066ee7735f5c409812b5db09bb510906c9f3e136c10` |
-| 5 | `theorem` | [negative_floor_not_truncation](../../../../NumberTheory/FirstBlockControls.lean/declarations/negative-floor-not-truncation.md) | 34 | `result-track:ddde0a4bbe33a6a62edbc6c8076e2485a3d38aa57a43caa48309243bfcb35f0e` |
-| 6 | `theorem` | [exact_ceiling_not_next](../../../../NumberTheory/FirstBlockControls.lean/declarations/exact-ceiling-not-next.md) | 37 | `result-track:08aa0baefcc6c4afe3762c2b511cc03fefbd4e962463461befdf57078533a8fd` |
-| 7 | `theorem` | [zero_steps_keep_error](../../../../NumberTheory/FirstBlockControls.lean/declarations/zero-steps-keep-error.md) | 40 | `result-track:46c42e7d08654b1e0e2033dd7d33ff9124c5f1ac54524c20a05bbe348b884bb7` |
-| 8 | `theorem` | [quadratic_residue_rounds_up](../../../../NumberTheory/FirstBlockControls.lean/declarations/quadratic-residue-rounds-up.md) | 42 | `result-track:4bc10808fae4e7020abaf627285c6627d0ff2ada1426b10ea990fc9a919f6084` |
-| 9 | `theorem` | [negative_error_blocked](../../../../NumberTheory/FirstBlockControls.lean/declarations/negative-error-blocked.md) | 46 | `result-track:df54a1ca23476b48418fb6cdd4d39d32f43b9d96e67a0296b715b204e7b3f7e2` |
-| 10 | `theorem` | [unit_seed_keeps_allowance](../../../../NumberTheory/FirstBlockControls.lean/declarations/unit-seed-keeps-allowance.md) | 49 | `result-track:afc0c93a0874a73404ca7a2f94709391de3f80b94f8859964d556e7853b1b557` |
-| 11 | `theorem` | [later_record_unchanged](../../../../NumberTheory/FirstBlockControls.lean/declarations/later-record-unchanged.md) | 51 | `result-track:d7363453bf4766964a16b7196cdf88cdb9e6d23961bcd7a8d29ada9646181586` |
-| 12 | `theorem` | [terminal_unchanged](../../../../NumberTheory/FirstBlockControls.lean/declarations/terminal-unchanged.md) | 56 | `result-track:192c468679bae93c833e5e8e852d503374db0c757f0c648555db92b29df47c4f` |
+| 1 | `theorem` | [first_last_bases](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FirstBlockControls.lean/declarations/first-last-bases.md) | 18 | `result-track:f0390ee65b57126e914569902cfadb3b83f50b27065fcf243588af160fd426ef` |
+| 2 | `theorem` | [boundary_log_reduction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FirstBlockControls.lean/declarations/boundary-log-reduction.md) | 21 | `result-track:c07026104a1dcdba6750d18229e307c2da2109ff4bc79c0847b3b4af63035b44` |
+| 3 | `theorem` | [sixtyfour_in_block](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FirstBlockControls.lean/declarations/sixtyfour-in-block.md) | 25 | `result-track:797d5eda7679fbf7eb0c39b2426760f2a6d48845417bce48c89799d4b857d26d` |
+| 4 | `theorem` | [sixtyfive_not_in_block](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FirstBlockControls.lean/declarations/sixtyfive-not-in-block.md) | 29 | `result-track:4b45127bf841e8485d33f066ee7735f5c409812b5db09bb510906c9f3e136c10` |
+| 5 | `theorem` | [negative_floor_not_truncation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FirstBlockControls.lean/declarations/negative-floor-not-truncation.md) | 34 | `result-track:ddde0a4bbe33a6a62edbc6c8076e2485a3d38aa57a43caa48309243bfcb35f0e` |
+| 6 | `theorem` | [exact_ceiling_not_next](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FirstBlockControls.lean/declarations/exact-ceiling-not-next.md) | 37 | `result-track:08aa0baefcc6c4afe3762c2b511cc03fefbd4e962463461befdf57078533a8fd` |
+| 7 | `theorem` | [zero_steps_keep_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FirstBlockControls.lean/declarations/zero-steps-keep-error.md) | 40 | `result-track:46c42e7d08654b1e0e2033dd7d33ff9124c5f1ac54524c20a05bbe348b884bb7` |
+| 8 | `theorem` | [quadratic_residue_rounds_up](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FirstBlockControls.lean/declarations/quadratic-residue-rounds-up.md) | 42 | `result-track:4bc10808fae4e7020abaf627285c6627d0ff2ada1426b10ea990fc9a919f6084` |
+| 9 | `theorem` | [negative_error_blocked](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FirstBlockControls.lean/declarations/negative-error-blocked.md) | 46 | `result-track:df54a1ca23476b48418fb6cdd4d39d32f43b9d96e67a0296b715b204e7b3f7e2` |
+| 10 | `theorem` | [unit_seed_keeps_allowance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FirstBlockControls.lean/declarations/unit-seed-keeps-allowance.md) | 49 | `result-track:afc0c93a0874a73404ca7a2f94709391de3f80b94f8859964d556e7853b1b557` |
+| 11 | `theorem` | [later_record_unchanged](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FirstBlockControls.lean/declarations/later-record-unchanged.md) | 51 | `result-track:d7363453bf4766964a16b7196cdf88cdb9e6d23961bcd7a8d29ada9646181586` |
+| 12 | `theorem` | [terminal_unchanged](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FirstBlockControls.lean/declarations/terminal-unchanged.md) | 56 | `result-track:192c468679bae93c833e5e8e852d503374db0c757f0c648555db92b29df47c4f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

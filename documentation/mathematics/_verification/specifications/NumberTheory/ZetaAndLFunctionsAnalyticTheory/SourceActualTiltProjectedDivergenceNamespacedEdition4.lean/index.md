@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualTiltProjectedDivergenceNamespacedEdition4.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualTiltProjectedDivergenceNamespacedEdition4.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualTiltProjectedDivergenceNamespacedEdition4.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualTiltProjectedDivergenceNamespacedEdition4.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [right_mass_pos](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualTiltProjectedDivergenceNamespacedEdition4.lean/declarations/right-mass-pos.md) | 25 | `result-track:a1b899be09d481c003a9e30547596ea3a368311129eeeffc072118b9832d31d0` |
-| 2 | `theorem` | [actualTiltBandState_moving_norm_sq_eventually_lower](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualTiltProjectedDivergenceNamespacedEdition4.lean/declarations/actualtiltbandstate-moving-norm-sq-eventually-lower.md) | 36 | `result-track:c722b5dacf663622cbfbc51dffd6ab4fac0358270b5cdd1000c74e838a075be1` |
-| 3 | `theorem` | [actualTiltBandState_moving_norm_sq_tendsto_atTop](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualTiltProjectedDivergenceNamespacedEdition4.lean/declarations/actualtiltbandstate-moving-norm-sq-tendsto-attop.md) | 51 | `result-track:07343222ffaaba904f84750a0abfcbd690475aaac21afb94e4aad1e3e73cc8b0` |
+| 1 | `theorem` | [right_mass_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualTiltProjectedDivergenceNamespacedEdition4.lean/declarations/right-mass-pos.md) | 25 | `result-track:a1b899be09d481c003a9e30547596ea3a368311129eeeffc072118b9832d31d0` |
+| 2 | `theorem` | [actualTiltBandState_moving_norm_sq_eventually_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualTiltProjectedDivergenceNamespacedEdition4.lean/declarations/actualtiltbandstate-moving-norm-sq-eventually-lower.md) | 36 | `result-track:c722b5dacf663622cbfbc51dffd6ab4fac0358270b5cdd1000c74e838a075be1` |
+| 3 | `theorem` | [actualTiltBandState_moving_norm_sq_tendsto_atTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualTiltProjectedDivergenceNamespacedEdition4.lean/declarations/actualtiltbandstate-moving-norm-sq-tendsto-attop.md) | 51 | `result-track:07343222ffaaba904f84750a0abfcbd690475aaac21afb94e4aad1e3e73cc8b0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

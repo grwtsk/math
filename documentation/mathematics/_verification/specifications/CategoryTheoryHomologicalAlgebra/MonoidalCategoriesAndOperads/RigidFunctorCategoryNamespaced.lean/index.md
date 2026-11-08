@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/RigidFunctorCategoryNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/RigidFunctorCategoryNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/RigidFunctorCategoryNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/RigidFunctorCategoryNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [functorHasRightDual](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/RigidFunctorCategoryNamespaced.lean/declarations/functorhasrightdual.md) | 34 | `declaration-track:7a195cd12e35df8ff413f6c4b8898e2c376cbe6cd31d6707762b3107e354fb9f` |
-| 2 | `instance` | [rightRigidFunctorCategory](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/RigidFunctorCategoryNamespaced.lean/declarations/rightrigidfunctorcategory.md) | 57 | `declaration-track:a2d340c8bd8f3257f833422c0bd8326fa23e1e795a02db9946c85ba5f2bbe3f9` |
-| 3 | `instance` | [functorHasLeftDual](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/RigidFunctorCategoryNamespaced.lean/declarations/functorhasleftdual.md) | 59 | `declaration-track:cf6dc035f46f830b0a133f6b2a0867ebeafaea735b6db70fa9627bdc98b1e039` |
-| 4 | `instance` | [leftRigidFunctorCategory](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/RigidFunctorCategoryNamespaced.lean/declarations/leftrigidfunctorcategory.md) | 76 | `declaration-track:8f8d7263657cc3ec24f75710e1d1f44270338ba2588a4578caa4816ed1956175` |
-| 5 | `instance` | [rigidFunctorCategory](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/RigidFunctorCategoryNamespaced.lean/declarations/rigidfunctorcategory.md) | 78 | `declaration-track:f17bfdb46764b0b4fc96884cd9f7399e3bbebec757c9955baa17862527cb4b4f` |
+| 1 | `instance` | [functorHasRightDual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/RigidFunctorCategoryNamespaced.lean/declarations/functorhasrightdual.md) | 34 | `declaration-track:7a195cd12e35df8ff413f6c4b8898e2c376cbe6cd31d6707762b3107e354fb9f` |
+| 2 | `instance` | [rightRigidFunctorCategory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/RigidFunctorCategoryNamespaced.lean/declarations/rightrigidfunctorcategory.md) | 57 | `declaration-track:a2d340c8bd8f3257f833422c0bd8326fa23e1e795a02db9946c85ba5f2bbe3f9` |
+| 3 | `instance` | [functorHasLeftDual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/RigidFunctorCategoryNamespaced.lean/declarations/functorhasleftdual.md) | 59 | `declaration-track:cf6dc035f46f830b0a133f6b2a0867ebeafaea735b6db70fa9627bdc98b1e039` |
+| 4 | `instance` | [leftRigidFunctorCategory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/RigidFunctorCategoryNamespaced.lean/declarations/leftrigidfunctorcategory.md) | 76 | `declaration-track:8f8d7263657cc3ec24f75710e1d1f44270338ba2588a4578caa4816ed1956175` |
+| 5 | `instance` | [rigidFunctorCategory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/RigidFunctorCategoryNamespaced.lean/declarations/rigidfunctorcategory.md) | 78 | `declaration-track:f17bfdb46764b0b4fc96884cd9f7399e3bbebec757c9955baa17862527cb4b4f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

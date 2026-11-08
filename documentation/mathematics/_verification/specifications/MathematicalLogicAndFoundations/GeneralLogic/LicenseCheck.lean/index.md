@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LicenseCheck.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LicenseCheck.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LicenseCheck.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LicenseCheck.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [LicenseCheck](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LicenseCheck.lean/declarations/licensecheck.md) | 8 | `declaration-track:3876120455c50df6019cbf5fbb3d69c900b6da9a7a414eb523b360b1d6e410e8` |
-| 2 | `def` | [LicenseCheck.Passes](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LicenseCheck.lean/declarations/licensecheck-passes.md) | 15 | `declaration-track:8538d309bb8b3698d521f3c5477a44aa2eecba980073a7a1470ee3e5389e80aa` |
+| 1 | `structure` | [LicenseCheck](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LicenseCheck.lean/declarations/licensecheck.md) | 8 | `declaration-track:3876120455c50df6019cbf5fbb3d69c900b6da9a7a414eb523b360b1d6e410e8` |
+| 2 | `def` | [LicenseCheck.Passes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LicenseCheck.lean/declarations/licensecheck-passes.md) | 15 | `declaration-track:8538d309bb8b3698d521f3c5477a44aa2eecba980073a7a1470ee3e5389e80aa` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

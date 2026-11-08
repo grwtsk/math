@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ReadoutObstructionPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ReadoutObstructionPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ReadoutObstructionPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ReadoutObstructionPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [boundedReadout_forces_coefficientEnergy](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ReadoutObstructionPublic.lean/declarations/boundedreadout-forces-coefficientenergy.md) | 32 | `result-track:902f134a483e133d1fadc14bdf29382c80a470885dfe63924f3b44e94de6c127` |
-| 2 | `theorem` | [unitReadout_forces_cardinality](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ReadoutObstructionPublic.lean/declarations/unitreadout-forces-cardinality.md) | 46 | `result-track:b340f5342b32683ed35566ca938842c2712698dd538544164754f61882a779ba` |
-| 3 | `theorem` | [gramNorm_lowerBound_of_unitReadout](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ReadoutObstructionPublic.lean/declarations/gramnorm-lowerbound-of-unitreadout.md) | 59 | `result-track:eaf24f93ea4528816edc8e22f69f7a914d9776a8fdc4100ada0a5c46e76d9f4e` |
+| 1 | `theorem` | [boundedReadout_forces_coefficientEnergy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ReadoutObstructionPublic.lean/declarations/boundedreadout-forces-coefficientenergy.md) | 32 | `result-track:902f134a483e133d1fadc14bdf29382c80a470885dfe63924f3b44e94de6c127` |
+| 2 | `theorem` | [unitReadout_forces_cardinality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ReadoutObstructionPublic.lean/declarations/unitreadout-forces-cardinality.md) | 46 | `result-track:b340f5342b32683ed35566ca938842c2712698dd538544164754f61882a779ba` |
+| 3 | `theorem` | [gramNorm_lowerBound_of_unitReadout](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ReadoutObstructionPublic.lean/declarations/gramnorm-lowerbound-of-unitreadout.md) | 59 | `result-track:eaf24f93ea4528816edc8e22f69f7a914d9776a8fdc4100ada0a5c46e76d9f4e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

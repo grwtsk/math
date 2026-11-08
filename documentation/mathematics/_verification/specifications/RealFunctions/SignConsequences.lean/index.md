@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/SignConsequences.lean/index.md) · [Full source](../../../../RealFunctions/SignConsequences.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SignConsequences.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SignConsequences.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [fixed_edge_is_negative](../../../../RealFunctions/SignConsequences.lean/declarations/fixed-edge-is-negative.md) | 43 | `result-track:30b55470f5b1d3e896775f374ef594d49303c706a6f9f61dda1cb32f58b19e26` |
-| 2 | `theorem` | [fixed_edge_is_not_nonnegative](../../../../RealFunctions/SignConsequences.lean/declarations/fixed-edge-is-not-nonnegative.md) | 46 | `result-track:38093d8cfbe66b0be038898f85014643678e8aa59007cf6b6258e214f9c14f74` |
-| 3 | `theorem` | [every_larger_edge_is_negative](../../../../RealFunctions/SignConsequences.lean/declarations/every-larger-edge-is-negative.md) | 49 | `result-track:25eaa27c808f51e22e8277a7ed9e6f1f8eb9c57c72eabdbb28d364edfa9d98a7` |
-| 4 | `theorem` | [positive_normalization_does_not_repair_sign](../../../../RealFunctions/SignConsequences.lean/declarations/positive-normalization-does-not-repair-sign.md) | 52 | `result-track:a11e1d176d2ee25305ca700364dc829b58d9a2c907f9b91613d56b36a26729a3` |
-| 5 | `theorem` | [eventual_nonnegative_route_is_refuted](../../../../RealFunctions/SignConsequences.lean/declarations/eventual-nonnegative-route-is-refuted.md) | 56 | `result-track:82eacb44665a9c8024310e057b0e84c1f8294546aff4c3acd53771a8b80b83ee` |
+| 1 | `theorem` | [fixed_edge_is_negative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SignConsequences.lean/declarations/fixed-edge-is-negative.md) | 43 | `result-track:30b55470f5b1d3e896775f374ef594d49303c706a6f9f61dda1cb32f58b19e26` |
+| 2 | `theorem` | [fixed_edge_is_not_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SignConsequences.lean/declarations/fixed-edge-is-not-nonnegative.md) | 46 | `result-track:38093d8cfbe66b0be038898f85014643678e8aa59007cf6b6258e214f9c14f74` |
+| 3 | `theorem` | [every_larger_edge_is_negative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SignConsequences.lean/declarations/every-larger-edge-is-negative.md) | 49 | `result-track:25eaa27c808f51e22e8277a7ed9e6f1f8eb9c57c72eabdbb28d364edfa9d98a7` |
+| 4 | `theorem` | [positive_normalization_does_not_repair_sign](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SignConsequences.lean/declarations/positive-normalization-does-not-repair-sign.md) | 52 | `result-track:a11e1d176d2ee25305ca700364dc829b58d9a2c907f9b91613d56b36a26729a3` |
+| 5 | `theorem` | [eventual_nonnegative_route_is_refuted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SignConsequences.lean/declarations/eventual-nonnegative-route-is-refuted.md) | 56 | `result-track:82eacb44665a9c8024310e057b0e84c1f8294546aff4c3acd53771a8b80b83ee` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CriticalStripMellinTailDerivative.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CriticalStripMellinTailDerivative.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripMellinTailDerivative.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripMellinTailDerivative.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripPrimitiveStep`](../../../../MeasureAndIntegration/CriticalStripPrimitiveStep.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripPrimitiveStep`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripPrimitiveStep.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Analysis.MellinTransform` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,20 +58,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [cutoff](../../../../MeasureAndIntegration/CriticalStripMellinTailDerivative.lean/declarations/cutoff.md) | 25 | `declaration-track:04406f6c0ae8beb80bcd4c2751722506dbe7a1a7d7125175a10b30ce9385c335` |
-| 2 | `def` | [logIntegrand](../../../../MeasureAndIntegration/CriticalStripMellinTailDerivative.lean/declarations/logintegrand.md) | 27 | `declaration-track:e284ee0e105c29a31a23efe652c5a40279e0536ff13724769a5a4b3b0dadce49` |
-| 3 | `def` | [logTail](../../../../MeasureAndIntegration/CriticalStripMellinTailDerivative.lean/declarations/logtail.md) | 30 | `declaration-track:1e81a0f0b35b369d3e832004ce029cd2ed5a7ddd4bd7d4a3d15f7766ecff65b7` |
-| 4 | `lemma` | [cutoff_measurable](../../../../MeasureAndIntegration/CriticalStripMellinTailDerivative.lean/declarations/cutoff-measurable.md) | 33 | `result-track:7801c7a90501d9fbe7c37fc079335459c6680f85e5d445b61647aac16e233ac8` |
-| 5 | `lemma` | [cutoff_norm](../../../../MeasureAndIntegration/CriticalStripMellinTailDerivative.lean/declarations/cutoff-norm.md) | 36 | `result-track:273176f7399e0f8fb2a9409095356bc2a33b47939930ee1a391d3480548bebe4` |
-| 6 | `lemma` | [cutoff_locallyIntegrable](../../../../MeasureAndIntegration/CriticalStripMellinTailDerivative.lean/declarations/cutoff-locallyintegrable.md) | 41 | `result-track:08718ddc63e5dbee822a3f7e00f563a0212268570567fffce90cfb6bda24c39c` |
-| 7 | `lemma` | [cutoff_bigO_top](../../../../MeasureAndIntegration/CriticalStripMellinTailDerivative.lean/declarations/cutoff-bigo-top.md) | 48 | `result-track:e4d33fe931f8fd2688f6ea9423f41c5f38f3b57e623fd98a331f8dce8fd2da47` |
-| 8 | `lemma` | [cutoff_bigO_zero](../../../../MeasureAndIntegration/CriticalStripMellinTailDerivative.lean/declarations/cutoff-bigo-zero.md) | 54 | `result-track:38690992a4f30846541b03126afb248e718639f8fb3c02259a43fa9efa94ede9` |
-| 9 | `lemma` | [mellin_cutoff](../../../../MeasureAndIntegration/CriticalStripMellinTailDerivative.lean/declarations/mellin-cutoff.md) | 62 | `result-track:598950a222cadeaade2706e5bbfe7bd3b53d48703b68bb3b6798480c534d25cf` |
-| 10 | `lemma` | [mellin_log_cutoff](../../../../MeasureAndIntegration/CriticalStripMellinTailDerivative.lean/declarations/mellin-log-cutoff.md) | 78 | `result-track:deb1b4c49228bd7430db9479af64d461acf23122aacad9268376a6d0da8e8a78` |
-| 11 | `theorem` | [tail_hasDerivAt](../../../../MeasureAndIntegration/CriticalStripMellinTailDerivative.lean/declarations/tail-hasderivat.md) | 96 | `result-track:b6db97ef2c79c3fcc8b8d1a0cb63b90b6705241b4d966513b80735ec077bbbe1` |
-| 12 | `lemma` | [logIntegrand_bound](../../../../MeasureAndIntegration/CriticalStripMellinTailDerivative.lean/declarations/logintegrand-bound.md) | 112 | `result-track:639b1ca133d14e9f948bb191d08271074f2fb3b42a2ed4540326b17a1a64dd2d` |
-| 13 | `lemma` | [logIntegrand_integrable](../../../../MeasureAndIntegration/CriticalStripMellinTailDerivative.lean/declarations/logintegrand-integrable.md) | 132 | `result-track:e0e153e65ee778ebad91cb25dbd76dce6c8441870c2d6a3e74d5dfcf6b8348e8` |
-| 14 | `theorem` | [logTail_norm_le](../../../../MeasureAndIntegration/CriticalStripMellinTailDerivative.lean/declarations/logtail-norm-le.md) | 149 | `result-track:e7289a47c6300beaf5568499c0cd1233d9bc5fdb6e4fe02ea2b77c7803d44806` |
+| 1 | `def` | [cutoff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripMellinTailDerivative.lean/declarations/cutoff.md) | 25 | `declaration-track:04406f6c0ae8beb80bcd4c2751722506dbe7a1a7d7125175a10b30ce9385c335` |
+| 2 | `def` | [logIntegrand](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripMellinTailDerivative.lean/declarations/logintegrand.md) | 27 | `declaration-track:e284ee0e105c29a31a23efe652c5a40279e0536ff13724769a5a4b3b0dadce49` |
+| 3 | `def` | [logTail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripMellinTailDerivative.lean/declarations/logtail.md) | 30 | `declaration-track:1e81a0f0b35b369d3e832004ce029cd2ed5a7ddd4bd7d4a3d15f7766ecff65b7` |
+| 4 | `lemma` | [cutoff_measurable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripMellinTailDerivative.lean/declarations/cutoff-measurable.md) | 33 | `result-track:7801c7a90501d9fbe7c37fc079335459c6680f85e5d445b61647aac16e233ac8` |
+| 5 | `lemma` | [cutoff_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripMellinTailDerivative.lean/declarations/cutoff-norm.md) | 36 | `result-track:273176f7399e0f8fb2a9409095356bc2a33b47939930ee1a391d3480548bebe4` |
+| 6 | `lemma` | [cutoff_locallyIntegrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripMellinTailDerivative.lean/declarations/cutoff-locallyintegrable.md) | 41 | `result-track:08718ddc63e5dbee822a3f7e00f563a0212268570567fffce90cfb6bda24c39c` |
+| 7 | `lemma` | [cutoff_bigO_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripMellinTailDerivative.lean/declarations/cutoff-bigo-top.md) | 48 | `result-track:e4d33fe931f8fd2688f6ea9423f41c5f38f3b57e623fd98a331f8dce8fd2da47` |
+| 8 | `lemma` | [cutoff_bigO_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripMellinTailDerivative.lean/declarations/cutoff-bigo-zero.md) | 54 | `result-track:38690992a4f30846541b03126afb248e718639f8fb3c02259a43fa9efa94ede9` |
+| 9 | `lemma` | [mellin_cutoff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripMellinTailDerivative.lean/declarations/mellin-cutoff.md) | 62 | `result-track:598950a222cadeaade2706e5bbfe7bd3b53d48703b68bb3b6798480c534d25cf` |
+| 10 | `lemma` | [mellin_log_cutoff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripMellinTailDerivative.lean/declarations/mellin-log-cutoff.md) | 78 | `result-track:deb1b4c49228bd7430db9479af64d461acf23122aacad9268376a6d0da8e8a78` |
+| 11 | `theorem` | [tail_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripMellinTailDerivative.lean/declarations/tail-hasderivat.md) | 96 | `result-track:b6db97ef2c79c3fcc8b8d1a0cb63b90b6705241b4d966513b80735ec077bbbe1` |
+| 12 | `lemma` | [logIntegrand_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripMellinTailDerivative.lean/declarations/logintegrand-bound.md) | 112 | `result-track:639b1ca133d14e9f948bb191d08271074f2fb3b42a2ed4540326b17a1a64dd2d` |
+| 13 | `lemma` | [logIntegrand_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripMellinTailDerivative.lean/declarations/logintegrand-integrable.md) | 132 | `result-track:e0e153e65ee778ebad91cb25dbd76dce6c8441870c2d6a3e74d5dfcf6b8348e8` |
+| 14 | `theorem` | [logTail_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripMellinTailDerivative.lean/declarations/logtail-norm-le.md) | 149 | `result-track:e7289a47c6300beaf5568499c0cd1233d9bc5fdb6e4fe02ea2b77c7803d44806` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

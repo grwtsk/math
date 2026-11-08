@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RoadmapLiteratureRoadmapLabel.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RoadmapLiteratureRoadmapLabel.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RoadmapLiteratureRoadmapLabel.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RoadmapLiteratureRoadmapLabel.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [literatureRoadmapLabel](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RoadmapLiteratureRoadmapLabel.lean/declarations/literatureroadmaplabel.md) | 21 | `declaration-track:8341c03f7cbf6ffd274aadb2bf41f2790abee6ec05eb9fb19b8a62229da48fdd` |
-| 2 | `theorem` | [literature_roadmap_has_phaseI](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RoadmapLiteratureRoadmapLabel.lean/declarations/literature-roadmap-has-phasei.md) | 24 | `result-track:9941c2c10f92a473e7203c1e24cfc47ca544540c527379ad9cb2fe8ba17ab697` |
+| 1 | `def` | [literatureRoadmapLabel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RoadmapLiteratureRoadmapLabel.lean/declarations/literatureroadmaplabel.md) | 21 | `declaration-track:8341c03f7cbf6ffd274aadb2bf41f2790abee6ec05eb9fb19b8a62229da48fdd` |
+| 2 | `theorem` | [literature_roadmap_has_phaseI](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RoadmapLiteratureRoadmapLabel.lean/declarations/literature-roadmap-has-phasei.md) | 24 | `result-track:9941c2c10f92a473e7203c1e24cfc47ca544540c527379ad9cb2fe8ba17ab697` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

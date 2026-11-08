@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/PositiveCapacityNamespacedPrimeCutDefectCapacity.lean/index.md) · [Full source](../../../../Combinatorics/PositiveCapacityNamespacedPrimeCutDefectCapacity.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PositiveCapacityNamespacedPrimeCutDefectCapacity.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PositiveCapacityNamespacedPrimeCutDefectCapacity.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PrimeCutDefectCapacity](../../../../Combinatorics/PositiveCapacityNamespacedPrimeCutDefectCapacity.lean/declarations/primecutdefectcapacity.md) | 22 | `declaration-track:a8816d640eafc94e87b7fcf2dad0d3ac88818ce0414bd0ae3e947ce7cd02edd2` |
-| 2 | `def` | [PrimeCutDefectCapacity.baseline](../../../../Combinatorics/PositiveCapacityNamespacedPrimeCutDefectCapacity.lean/declarations/primecutdefectcapacity-baseline.md) | 44 | `declaration-track:e6f7db965a395684392eda45662fd4f6d4e7fa3cb2cf133fc2515e066c9a314b` |
-| 3 | `def` | [PrimeCutDefectCapacity.reducedDefect](../../../../Combinatorics/PositiveCapacityNamespacedPrimeCutDefectCapacity.lean/declarations/primecutdefectcapacity-reduceddefect.md) | 53 | `declaration-track:8992d36856036463f92252b3d1b186773182b656f61d84026dd37dd0a609b819` |
-| 4 | `def` | [PrimeCutDefectCapacity.increment](../../../../Combinatorics/PositiveCapacityNamespacedPrimeCutDefectCapacity.lean/declarations/primecutdefectcapacity-increment.md) | 63 | `declaration-track:06ba62906293017b31d04070321471cfa5eb8520be71e2b7cb9b3a22122da7a4` |
-| 5 | `theorem` | [reducedDefect_empty](../../../../Combinatorics/PositiveCapacityNamespacedPrimeCutDefectCapacity.lean/declarations/reduceddefect-empty.md) | 75 | `result-track:fc37cfb3951c155b9f435762a741d01f54744154f3537645a05d2561b3ea3da6` |
-| 6 | `theorem` | [reducedDefect_nonnegative](../../../../Combinatorics/PositiveCapacityNamespacedPrimeCutDefectCapacity.lean/declarations/reduceddefect-nonnegative.md) | 85 | `result-track:b78caae7d854bc8b1acc8b70f9e8bda6777ba6953444dde8afe904821be02f27` |
-| 7 | `theorem` | [increment_nonnegative](../../../../Combinatorics/PositiveCapacityNamespacedPrimeCutDefectCapacity.lean/declarations/increment-nonnegative.md) | 96 | `result-track:a66bc9229eabcd832e74d38b2e550561b543b2e4e57694634202be553df198e0` |
-| 8 | `theorem` | [increment_selfAdjoint](../../../../Combinatorics/PositiveCapacityNamespacedPrimeCutDefectCapacity.lean/declarations/increment-selfadjoint.md) | 109 | `result-track:c596d12dd87dfe192adacdcc799804072d5283bbda914bbcd2af96408c80aab9` |
+| 1 | `structure` | [PrimeCutDefectCapacity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PositiveCapacityNamespacedPrimeCutDefectCapacity.lean/declarations/primecutdefectcapacity.md) | 22 | `declaration-track:a8816d640eafc94e87b7fcf2dad0d3ac88818ce0414bd0ae3e947ce7cd02edd2` |
+| 2 | `def` | [PrimeCutDefectCapacity.baseline](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PositiveCapacityNamespacedPrimeCutDefectCapacity.lean/declarations/primecutdefectcapacity-baseline.md) | 44 | `declaration-track:e6f7db965a395684392eda45662fd4f6d4e7fa3cb2cf133fc2515e066c9a314b` |
+| 3 | `def` | [PrimeCutDefectCapacity.reducedDefect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PositiveCapacityNamespacedPrimeCutDefectCapacity.lean/declarations/primecutdefectcapacity-reduceddefect.md) | 53 | `declaration-track:8992d36856036463f92252b3d1b186773182b656f61d84026dd37dd0a609b819` |
+| 4 | `def` | [PrimeCutDefectCapacity.increment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PositiveCapacityNamespacedPrimeCutDefectCapacity.lean/declarations/primecutdefectcapacity-increment.md) | 63 | `declaration-track:06ba62906293017b31d04070321471cfa5eb8520be71e2b7cb9b3a22122da7a4` |
+| 5 | `theorem` | [reducedDefect_empty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PositiveCapacityNamespacedPrimeCutDefectCapacity.lean/declarations/reduceddefect-empty.md) | 75 | `result-track:fc37cfb3951c155b9f435762a741d01f54744154f3537645a05d2561b3ea3da6` |
+| 6 | `theorem` | [reducedDefect_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PositiveCapacityNamespacedPrimeCutDefectCapacity.lean/declarations/reduceddefect-nonnegative.md) | 85 | `result-track:b78caae7d854bc8b1acc8b70f9e8bda6777ba6953444dde8afe904821be02f27` |
+| 7 | `theorem` | [increment_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PositiveCapacityNamespacedPrimeCutDefectCapacity.lean/declarations/increment-nonnegative.md) | 96 | `result-track:a66bc9229eabcd832e74d38b2e550561b543b2e4e57694634202be553df198e0` |
+| 8 | `theorem` | [increment_selfAdjoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PositiveCapacityNamespacedPrimeCutDefectCapacity.lean/declarations/increment-selfadjoint.md) | 109 | `result-track:c596d12dd87dfe192adacdcc799804072d5283bbda914bbcd2af96408c80aab9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

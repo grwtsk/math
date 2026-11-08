@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AlgebraNFNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AlgebraNFNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AlgebraNFNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AlgebraNFNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [cleanupSMul](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AlgebraNFNamespacedPublic.lean/declarations/cleanupsmul.md) | 36 | `declaration-track:26658250a27fa50ab385168002640d1067d6689205c5d0415c283232fc3e63b2` |
-| 2 | `def` | [cleanupConsts](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AlgebraNFNamespacedPublic.lean/declarations/cleanupconsts.md) | 53 | `declaration-track:fc2d302a40cc439487aa6b0eb1fcc027d063edb07adb1c3dd664ca3aadf12170` |
-| 3 | `def` | [evalExpr](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AlgebraNFNamespacedPublic.lean/declarations/evalexpr.md) | 68 | `declaration-track:e57bc9ed4b596d49ebf67df793b86584dd8617f6b388b7b0f0ff0b36789622d8` |
+| 1 | `def` | [cleanupSMul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AlgebraNFNamespacedPublic.lean/declarations/cleanupsmul.md) | 36 | `declaration-track:26658250a27fa50ab385168002640d1067d6689205c5d0415c283232fc3e63b2` |
+| 2 | `def` | [cleanupConsts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AlgebraNFNamespacedPublic.lean/declarations/cleanupconsts.md) | 53 | `declaration-track:fc2d302a40cc439487aa6b0eb1fcc027d063edb07adb1c3dd664ca3aadf12170` |
+| 3 | `def` | [evalExpr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AlgebraNFNamespacedPublic.lean/declarations/evalexpr.md) | 68 | `declaration-track:e57bc9ed4b596d49ebf67df793b86584dd8617f6b388b7b0f0ff0b36789622d8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

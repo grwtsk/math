@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/LinkingPairing.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/LinkingPairing.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/LinkingPairing.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/LinkingPairing.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ClosedOrientedManifoldProfile](../../../../GroupTheoryAndGeneralizations/LinkingPairing.lean/declarations/closedorientedmanifoldprofile.md) | 17 | `declaration-track:95b810329ac2f9e6ec43a07272d2e9941634b4c185a2a1786e025e6858846f53` |
-| 2 | `structure` | [TorsionLinkingPairing](../../../../GroupTheoryAndGeneralizations/LinkingPairing.lean/declarations/torsionlinkingpairing.md) | 24 | `declaration-track:c3d037c917313549706a3c3a1d9705573b564b4edfde9061173f257a2e97bef4` |
+| 1 | `structure` | [ClosedOrientedManifoldProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/LinkingPairing.lean/declarations/closedorientedmanifoldprofile.md) | 17 | `declaration-track:95b810329ac2f9e6ec43a07272d2e9941634b4c185a2a1786e025e6858846f53` |
+| 2 | `structure` | [TorsionLinkingPairing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/LinkingPairing.lean/declarations/torsionlinkingpairing.md) | 24 | `declaration-track:c3d037c917313549706a3c3a1d9705573b564b4edfde9061173f257a2e97bef4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../DynamicalSystemsAndErgodicTheory/AddCircle.lean/index.md) · [Full source](../../../../DynamicalSystemsAndErgodicTheory/AddCircle.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/AddCircle.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/AddCircle.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,11 +62,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [ae_empty_or_univ_of_forall_vadd_ae_eq_self](../../../../DynamicalSystemsAndErgodicTheory/AddCircle.lean/declarations/ae-empty-or-univ-of-forall-vadd-ae-eq-self.md) | 43 | `result-track:6a235c22ce88395d4501771abc0b34755bc8845b6f3f0414b54c1565a3bb4c04` |
-| 2 | `theorem` | [ergodic_zsmul](../../../../DynamicalSystemsAndErgodicTheory/AddCircle.lean/declarations/ergodic-zsmul.md) | 101 | `result-track:f88b9d4e24a4ecd473357af9a85f0fe83724b1a2e352538758ba969693c3100e` |
-| 3 | `theorem` | [ergodic_nsmul](../../../../DynamicalSystemsAndErgodicTheory/AddCircle.lean/declarations/ergodic-nsmul.md) | 120 | `result-track:3a7f529e124b4bf9e8be7017eaa83da757dfee45286cde4d6d27014fc4258e63` |
-| 4 | `theorem` | [ergodic_zsmul_add](../../../../DynamicalSystemsAndErgodicTheory/AddCircle.lean/declarations/ergodic-zsmul-add.md) | 123 | `result-track:383dacad3c523c82eedc2d521d49d9f5a989aecedaf6a81288b3e9bfc1abbd45` |
-| 5 | `theorem` | [ergodic_nsmul_add](../../../../DynamicalSystemsAndErgodicTheory/AddCircle.lean/declarations/ergodic-nsmul-add.md) | 140 | `result-track:65edbcf573d584103578e9bd86fe8b8e02e8609c85049df885447a4315194117` |
+| 1 | `theorem` | [ae_empty_or_univ_of_forall_vadd_ae_eq_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/AddCircle.lean/declarations/ae-empty-or-univ-of-forall-vadd-ae-eq-self.md) | 43 | `result-track:6a235c22ce88395d4501771abc0b34755bc8845b6f3f0414b54c1565a3bb4c04` |
+| 2 | `theorem` | [ergodic_zsmul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/AddCircle.lean/declarations/ergodic-zsmul.md) | 101 | `result-track:f88b9d4e24a4ecd473357af9a85f0fe83724b1a2e352538758ba969693c3100e` |
+| 3 | `theorem` | [ergodic_nsmul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/AddCircle.lean/declarations/ergodic-nsmul.md) | 120 | `result-track:3a7f529e124b4bf9e8be7017eaa83da757dfee45286cde4d6d27014fc4258e63` |
+| 4 | `theorem` | [ergodic_zsmul_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/AddCircle.lean/declarations/ergodic-zsmul-add.md) | 123 | `result-track:383dacad3c523c82eedc2d521d49d9f5a989aecedaf6a81288b3e9bfc1abbd45` |
+| 5 | `theorem` | [ergodic_nsmul_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/AddCircle.lean/declarations/ergodic-nsmul-add.md) | 140 | `result-track:65edbcf573d584103578e9bd86fe8b8e02e8609c85049df885447a4315194117` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

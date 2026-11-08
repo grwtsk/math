@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PEmptyNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PEmptyNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PEmptyNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PEmptyNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [emptyEquivalence](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PEmptyNamespaced.lean/declarations/emptyequivalence.md) | 33 | `declaration-track:7a2b7149a7084f93b777fbbcbcc61f1a7fc29760f151adb839e1059af1c645f5` |
-| 2 | `def` | [empty](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PEmptyNamespaced.lean/declarations/empty.md) | 49 | `declaration-track:797d0de2381ec987b5b64ce04ee5fcd83dc3c364bd1c46c236fb7b3052659caf` |
-| 3 | `def` | [emptyExt](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PEmptyNamespaced.lean/declarations/emptyext.md) | 56 | `declaration-track:72e6ac1b8437c5b9742b8239b035b0f5d3e708638d02313434b8c614bffc7a9b` |
-| 4 | `def` | [uniqueFromEmpty](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PEmptyNamespaced.lean/declarations/uniquefromempty.md) | 63 | `declaration-track:0761a92cdc9316509f67054383e6e973935687fa28137c89bac2375054c5dc86` |
-| 5 | `theorem` | [empty_ext'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PEmptyNamespaced.lean/declarations/empty-ext.md) | 70 | `result-track:11c15dde3d0956376ad3bd0283b7efb1352618514aeaf397e474c5fc73cb3061` |
+| 1 | `def` | [emptyEquivalence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PEmptyNamespaced.lean/declarations/emptyequivalence.md) | 33 | `declaration-track:7a2b7149a7084f93b777fbbcbcc61f1a7fc29760f151adb839e1059af1c645f5` |
+| 2 | `def` | [empty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PEmptyNamespaced.lean/declarations/empty.md) | 49 | `declaration-track:797d0de2381ec987b5b64ce04ee5fcd83dc3c364bd1c46c236fb7b3052659caf` |
+| 3 | `def` | [emptyExt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PEmptyNamespaced.lean/declarations/emptyext.md) | 56 | `declaration-track:72e6ac1b8437c5b9742b8239b035b0f5d3e708638d02313434b8c614bffc7a9b` |
+| 4 | `def` | [uniqueFromEmpty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PEmptyNamespaced.lean/declarations/uniquefromempty.md) | 63 | `declaration-track:0761a92cdc9316509f67054383e6e973935687fa28137c89bac2375054c5dc86` |
+| 5 | `theorem` | [empty_ext'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PEmptyNamespaced.lean/declarations/empty-ext.md) | 70 | `result-track:11c15dde3d0956376ad3bd0283b7efb1352618514aeaf397e474c5fc73cb3061` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

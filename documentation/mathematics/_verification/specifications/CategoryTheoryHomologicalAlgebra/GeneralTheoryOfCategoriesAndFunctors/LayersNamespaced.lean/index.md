@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LayersNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LayersNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LayersNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LayersNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [LogicLayer](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LayersNamespaced.lean/declarations/logiclayer.md) | 13 | `declaration-track:2ac3264ca1dabdeef717fb85e82e75f6fbf37aabae4faa862820c4639a839597` |
-| 2 | `structure` | [InformationLayer](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LayersNamespaced.lean/declarations/informationlayer.md) | 21 | `declaration-track:7a68a50b1ccc761150ef612a27b277bb0f302b64d17bf32b70fc7fe6d4d94090` |
-| 3 | `structure` | [EpistemicArchitecture](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LayersNamespaced.lean/declarations/epistemicarchitecture.md) | 29 | `declaration-track:39e7cae4ee477e69e50f7f4026352a5105de4e8786036361884241c5da52403a` |
-| 4 | `structure` | [WisdomMonad](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LayersNamespaced.lean/declarations/wisdommonad.md) | 39 | `declaration-track:a60dc7e0ca568d50387b0eac95b70679131f5688638b96c96dc70978ece4566a` |
+| 1 | `structure` | [LogicLayer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LayersNamespaced.lean/declarations/logiclayer.md) | 13 | `declaration-track:2ac3264ca1dabdeef717fb85e82e75f6fbf37aabae4faa862820c4639a839597` |
+| 2 | `structure` | [InformationLayer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LayersNamespaced.lean/declarations/informationlayer.md) | 21 | `declaration-track:7a68a50b1ccc761150ef612a27b277bb0f302b64d17bf32b70fc7fe6d4d94090` |
+| 3 | `structure` | [EpistemicArchitecture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LayersNamespaced.lean/declarations/epistemicarchitecture.md) | 29 | `declaration-track:39e7cae4ee477e69e50f7f4026352a5105de4e8786036361884241c5da52403a` |
+| 4 | `structure` | [WisdomMonad](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LayersNamespaced.lean/declarations/wisdommonad.md) | 39 | `declaration-track:a60dc7e0ca568d50387b0eac95b70679131f5688638b96c96dc70978ece4566a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

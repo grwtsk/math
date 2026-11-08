@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LintDupNamespace.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LintDupNamespace.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LintDupNamespace.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LintDupNamespace.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Foo.Foo._bar](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LintDupNamespace.lean/declarations/foo-foo-bar.md) | 4 | `result-track:dbf629b82777cd09349506d9fca263878a38d9415821ae66558f4fa8df48abb8` |
+| 1 | `theorem` | [Foo.Foo._bar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LintDupNamespace.lean/declarations/foo-foo-bar.md) | 4 | `result-track:dbf629b82777cd09349506d9fca263878a38d9415821ae66558f4fa8df48abb8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

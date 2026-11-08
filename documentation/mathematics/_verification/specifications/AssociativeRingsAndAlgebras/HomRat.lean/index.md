@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/HomRat.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/HomRat.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/HomRat.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/HomRat.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [toRatAlgHom](../../../../AssociativeRingsAndAlgebras/HomRat.lean/declarations/toratalghom.md) | 21 | `declaration-track:945a9098428538ffa9b39499b24b9a7a44a24b984a05958a66fcd35fe41625bd` |
-| 2 | `theorem` | [toRatAlgHom_toRingHom](../../../../AssociativeRingsAndAlgebras/HomRat.lean/declarations/toratalghom-toringhom.md) | 25 | `result-track:555800cd1d60ada5eaa88a51407d9aeb31b786fc3e075b399358583005e9dc77` |
-| 3 | `theorem` | [toRatAlgHom_apply](../../../../AssociativeRingsAndAlgebras/HomRat.lean/declarations/toratalghom-apply.md) | 30 | `result-track:f99870562f1bbed4e80119d6f508cacb83f69d8bdf80013982111956fe1e1f94` |
-| 4 | `theorem` | [AlgHom.toRingHom_toRatAlgHom](../../../../AssociativeRingsAndAlgebras/HomRat.lean/declarations/alghom-toringhom-toratalghom.md) | 41 | `result-track:8a8e128ff81540e61d65da163596fccd6b89d29595d67415cf58d104a219a215` |
-| 5 | `def` | [RingHom.equivRatAlgHom](../../../../AssociativeRingsAndAlgebras/HomRat.lean/declarations/ringhom-equivratalghom.md) | 47 | `declaration-track:4f26e528a387b6354e97b8f93331460529f2423530713f9a097f2edb509a3e50` |
+| 1 | `def` | [toRatAlgHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/HomRat.lean/declarations/toratalghom.md) | 21 | `declaration-track:945a9098428538ffa9b39499b24b9a7a44a24b984a05958a66fcd35fe41625bd` |
+| 2 | `theorem` | [toRatAlgHom_toRingHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/HomRat.lean/declarations/toratalghom-toringhom.md) | 25 | `result-track:555800cd1d60ada5eaa88a51407d9aeb31b786fc3e075b399358583005e9dc77` |
+| 3 | `theorem` | [toRatAlgHom_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/HomRat.lean/declarations/toratalghom-apply.md) | 30 | `result-track:f99870562f1bbed4e80119d6f508cacb83f69d8bdf80013982111956fe1e1f94` |
+| 4 | `theorem` | [AlgHom.toRingHom_toRatAlgHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/HomRat.lean/declarations/alghom-toringhom-toratalghom.md) | 41 | `result-track:8a8e128ff81540e61d65da163596fccd6b89d29595d67415cf58d104a219a215` |
+| 5 | `def` | [RingHom.equivRatAlgHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/HomRat.lean/declarations/ringhom-equivratalghom.md) | 47 | `declaration-track:4f26e528a387b6354e97b8f93331460529f2423530713f9a097f2edb509a3e50` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

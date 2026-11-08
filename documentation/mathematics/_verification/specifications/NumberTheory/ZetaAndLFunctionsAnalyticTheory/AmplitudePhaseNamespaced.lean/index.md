@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AmplitudePhaseNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AmplitudePhaseNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AmplitudePhaseNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AmplitudePhaseNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [AmplitudePhaseSystem](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AmplitudePhaseNamespaced.lean/declarations/amplitudephasesystem.md) | 22 | `declaration-track:2f1fe3d56a3d67e0628b656c03d4a27ceb619a78f398c69b4214bac8c30fdee4` |
-| 2 | `inductive` | [DirectAmplitudePhaseCoercion](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AmplitudePhaseNamespaced.lean/declarations/directamplitudephasecoercion.md) | 27 | `declaration-track:5c0992e125f38a78b94c41f87582ff2adb0150d77c36d60e5e92746f531faec8` |
-| 3 | `theorem` | [no_direct_amplitude_phase_coercion](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AmplitudePhaseNamespaced.lean/declarations/no-direct-amplitude-phase-coercion.md) | 30 | `result-track:b2aca9fff32f8ea8cf6434eca86a25fdc9e7bc48cab76636c7d9e193da2b55ab` |
-| 4 | `structure` | [AmplitudePhaseBridge](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AmplitudePhaseNamespaced.lean/declarations/amplitudephasebridge.md) | 37 | `declaration-track:5230d8cb25faec21021d40927151515824199f0c676124b9e7014431964b173e` |
-| 5 | `structure` | [AmplitudePhaseCertificate](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AmplitudePhaseNamespaced.lean/declarations/amplitudephasecertificate.md) | 43 | `declaration-track:3404999e3008c9c575f593e2ef5677a2da96a68fb00d4fa8f8b574df82247ed5` |
+| 1 | `structure` | [AmplitudePhaseSystem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AmplitudePhaseNamespaced.lean/declarations/amplitudephasesystem.md) | 22 | `declaration-track:2f1fe3d56a3d67e0628b656c03d4a27ceb619a78f398c69b4214bac8c30fdee4` |
+| 2 | `inductive` | [DirectAmplitudePhaseCoercion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AmplitudePhaseNamespaced.lean/declarations/directamplitudephasecoercion.md) | 27 | `declaration-track:5c0992e125f38a78b94c41f87582ff2adb0150d77c36d60e5e92746f531faec8` |
+| 3 | `theorem` | [no_direct_amplitude_phase_coercion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AmplitudePhaseNamespaced.lean/declarations/no-direct-amplitude-phase-coercion.md) | 30 | `result-track:b2aca9fff32f8ea8cf6434eca86a25fdc9e7bc48cab76636c7d9e193da2b55ab` |
+| 4 | `structure` | [AmplitudePhaseBridge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AmplitudePhaseNamespaced.lean/declarations/amplitudephasebridge.md) | 37 | `declaration-track:5230d8cb25faec21021d40927151515824199f0c676124b9e7014431964b173e` |
+| 5 | `structure` | [AmplitudePhaseCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AmplitudePhaseNamespaced.lean/declarations/amplitudephasecertificate.md) | 43 | `declaration-track:3404999e3008c9c575f593e2ef5677a2da96a68fb00d4fa8f8b574df82247ed5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

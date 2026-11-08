@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiberPartition.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiberPartition.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiberPartition.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiberPartition.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,19 +57,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Fiber](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiberPartition.lean/declarations/fiber.md) | 25 | `declaration-track:1e06d6dc1a582a15637e498b6b34adebcd8400584bbdac4de77ce6c671e60827` |
-| 2 | `def` | [image](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiberPartition.lean/declarations/image.md) | 33 | `declaration-track:6b0f43c393f038fa86c15996ab1523938cbb82c281c326aad1f348b470a958ad` |
-| 3 | `lemma` | [eq_fiber_image](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiberPartition.lean/declarations/eq-fiber-image.md) | 35 | `result-track:b9df2549a60e344efdae0920dfbd0553d140fc1922b609e36d44910562df2466` |
-| 4 | `def` | [mk](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiberPartition.lean/declarations/mk.md) | 40 | `declaration-track:a7ee95327ba535bac65a24b7a9c25403fc162e21c76c76c13fce19e3308ca2ff` |
-| 5 | `def` | [mkSelf](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiberPartition.lean/declarations/mkself.md) | 43 | `declaration-track:c997307d869db7760d7cc0aa5addd55904d1c62eb738de8209bbca7e14577653` |
-| 6 | `lemma` | [map_eq_image](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiberPartition.lean/declarations/map-eq-image.md) | 45 | `result-track:802bd1db29f524590816a7d60cd4da4635af01be577f800bb6e6aea669bc1c0b` |
-| 7 | `lemma` | [mk_image](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiberPartition.lean/declarations/mk-image.md) | 50 | `result-track:5b0cada91e51adb580f8c16801f03072fddb4941ce3c9f74809d4b2d32d4f8a3` |
-| 8 | `lemma` | [mem_iff_eq_image](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiberPartition.lean/declarations/mem-iff-eq-image.md) | 53 | `result-track:28ca83aa31230fc712582fea3d6d3829fe812b995bcf91c4e5b5320f0e213049` |
-| 9 | `def` | [preimage](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiberPartition.lean/declarations/preimage.md) | 57 | `declaration-track:94de5f1d4369c359c28949b1d79e78ba73c13fb555f421457552ea48b718dd5c` |
-| 10 | `lemma` | [map_preimage_eq_image](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiberPartition.lean/declarations/map-preimage-eq-image.md) | 59 | `result-track:cb86d95e4adb2a4004e457b00c2b31329bd1d7adc5f1f16af4dbacf2a02dbcc5` |
-| 11 | `lemma` | [fiber_nonempty](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiberPartition.lean/declarations/fiber-nonempty.md) | 62 | `result-track:eb7eb6505e588e354426a1c15cd368f5ef3dac1e6d345e36b6006091679fda08` |
-| 12 | `lemma` | [map_preimage_eq_image_map](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiberPartition.lean/declarations/map-preimage-eq-image-map.md) | 66 | `result-track:ed27d92a468d44174d36a68ea397c25b8f23e5b633d77129d12f2e239174497d` |
-| 13 | `lemma` | [image_eq_image_mk](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiberPartition.lean/declarations/image-eq-image-mk.md) | 69 | `result-track:bf0efba6568ae053097ab950c43ff33d82c23d5ad665a2432d71654b87ffb3af` |
+| 1 | `def` | [Fiber](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiberPartition.lean/declarations/fiber.md) | 25 | `declaration-track:1e06d6dc1a582a15637e498b6b34adebcd8400584bbdac4de77ce6c671e60827` |
+| 2 | `def` | [image](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiberPartition.lean/declarations/image.md) | 33 | `declaration-track:6b0f43c393f038fa86c15996ab1523938cbb82c281c326aad1f348b470a958ad` |
+| 3 | `lemma` | [eq_fiber_image](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiberPartition.lean/declarations/eq-fiber-image.md) | 35 | `result-track:b9df2549a60e344efdae0920dfbd0553d140fc1922b609e36d44910562df2466` |
+| 4 | `def` | [mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiberPartition.lean/declarations/mk.md) | 40 | `declaration-track:a7ee95327ba535bac65a24b7a9c25403fc162e21c76c76c13fce19e3308ca2ff` |
+| 5 | `def` | [mkSelf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiberPartition.lean/declarations/mkself.md) | 43 | `declaration-track:c997307d869db7760d7cc0aa5addd55904d1c62eb738de8209bbca7e14577653` |
+| 6 | `lemma` | [map_eq_image](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiberPartition.lean/declarations/map-eq-image.md) | 45 | `result-track:802bd1db29f524590816a7d60cd4da4635af01be577f800bb6e6aea669bc1c0b` |
+| 7 | `lemma` | [mk_image](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiberPartition.lean/declarations/mk-image.md) | 50 | `result-track:5b0cada91e51adb580f8c16801f03072fddb4941ce3c9f74809d4b2d32d4f8a3` |
+| 8 | `lemma` | [mem_iff_eq_image](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiberPartition.lean/declarations/mem-iff-eq-image.md) | 53 | `result-track:28ca83aa31230fc712582fea3d6d3829fe812b995bcf91c4e5b5320f0e213049` |
+| 9 | `def` | [preimage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiberPartition.lean/declarations/preimage.md) | 57 | `declaration-track:94de5f1d4369c359c28949b1d79e78ba73c13fb555f421457552ea48b718dd5c` |
+| 10 | `lemma` | [map_preimage_eq_image](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiberPartition.lean/declarations/map-preimage-eq-image.md) | 59 | `result-track:cb86d95e4adb2a4004e457b00c2b31329bd1d7adc5f1f16af4dbacf2a02dbcc5` |
+| 11 | `lemma` | [fiber_nonempty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiberPartition.lean/declarations/fiber-nonempty.md) | 62 | `result-track:eb7eb6505e588e354426a1c15cd368f5ef3dac1e6d345e36b6006091679fda08` |
+| 12 | `lemma` | [map_preimage_eq_image_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiberPartition.lean/declarations/map-preimage-eq-image-map.md) | 66 | `result-track:ed27d92a468d44174d36a68ea397c25b8f23e5b633d77129d12f2e239174497d` |
+| 13 | `lemma` | [image_eq_image_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiberPartition.lean/declarations/image-eq-image-mk.md) | 69 | `result-track:bf0efba6568ae053097ab950c43ff33d82c23d5ad665a2432d71654b87ffb3af` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/Kernel.lean/index.md) · [Full source](../../../../CommutativeAlgebra/Kernel.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Kernel.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Kernel.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ker](../../../../CommutativeAlgebra/Kernel.lean/declarations/ker.md) | 32 | `declaration-track:7abb8812f6caeef738b6f81bb22c4f27efd6db7bf18d6a422cce531698d3f161` |
-| 2 | `lemma` | [ker_ringCon](../../../../CommutativeAlgebra/Kernel.lean/declarations/ker-ringcon.md) | 40 | `result-track:4d40e40dca0c5afa2354639d9e8bbe9fc2f6cbd802b0280fa9e96e6d55629445` |
-| 3 | `lemma` | [mem_ker](../../../../CommutativeAlgebra/Kernel.lean/declarations/mem-ker.md) | 42 | `result-track:65aaea0730df07f3ceb2165ff166c8684b8a7019438e5cc06cf1f80220767379` |
-| 4 | `lemma` | [ker_eq_bot](../../../../CommutativeAlgebra/Kernel.lean/declarations/ker-eq-bot.md) | 45 | `result-track:4c5c0d18d9d8a5d814eb7e3824fafccddea1fb7a5ff523be568ab99ea2ac11f3` |
-| 5 | `lemma` | [ker_ringCon_mk'](../../../../CommutativeAlgebra/Kernel.lean/declarations/ker-ringcon-mk.md) | 59 | `result-track:b0a7c5e478eecb9b8e46dce7af33582d39386c9418e3d6f936ddea4ebb982167` |
+| 1 | `def` | [ker](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Kernel.lean/declarations/ker.md) | 32 | `declaration-track:7abb8812f6caeef738b6f81bb22c4f27efd6db7bf18d6a422cce531698d3f161` |
+| 2 | `lemma` | [ker_ringCon](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Kernel.lean/declarations/ker-ringcon.md) | 40 | `result-track:4d40e40dca0c5afa2354639d9e8bbe9fc2f6cbd802b0280fa9e96e6d55629445` |
+| 3 | `lemma` | [mem_ker](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Kernel.lean/declarations/mem-ker.md) | 42 | `result-track:65aaea0730df07f3ceb2165ff166c8684b8a7019438e5cc06cf1f80220767379` |
+| 4 | `lemma` | [ker_eq_bot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Kernel.lean/declarations/ker-eq-bot.md) | 45 | `result-track:4c5c0d18d9d8a5d814eb7e3824fafccddea1fb7a5ff523be568ab99ea2ac11f3` |
+| 5 | `lemma` | [ker_ringCon_mk'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Kernel.lean/declarations/ker-ringcon-mk.md) | 59 | `result-track:b0a7c5e478eecb9b8e46dce7af33582d39386c9418e3d6f936ddea4ebb982167` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ResolverGraphAccessResolution.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ResolverGraphAccessResolution.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ResolverGraphAccessResolution.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ResolverGraphAccessResolution.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [GraphAccessResolution](../../../../../ComputerScience/AlgorithmsInComputerScience/ResolverGraphAccessResolution.lean/declarations/graphaccessresolution.md) | 14 | `declaration-track:0bc11591ef753e02fcb37d7ac15694f52ed11b771faca670c912b93c2f6e058b` |
-| 2 | `inductive` | [GraphAccessEvidence](../../../../../ComputerScience/AlgorithmsInComputerScience/ResolverGraphAccessResolution.lean/declarations/graphaccessevidence.md) | 25 | `declaration-track:110dc5edaa74611f3bbe721b771f9cb59b64f13abee04e341dab28269aa6319e` |
-| 3 | `def` | [resolveAccess](../../../../../ComputerScience/AlgorithmsInComputerScience/ResolverGraphAccessResolution.lean/declarations/resolveaccess.md) | 36 | `declaration-track:7ca3f21d4c30d7433b9dfe88cac358ffe55b16307ac16127c7ed66cab19abef5` |
-| 4 | `theorem` | [access_resolver_total](../../../../../ComputerScience/AlgorithmsInComputerScience/ResolverGraphAccessResolution.lean/declarations/access-resolver-total.md) | 51 | `result-track:5bee014937ae2e30f18691ae87d232c84313fa734d1f6216f26cb96e741ce4f9` |
+| 1 | `inductive` | [GraphAccessResolution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ResolverGraphAccessResolution.lean/declarations/graphaccessresolution.md) | 14 | `declaration-track:0bc11591ef753e02fcb37d7ac15694f52ed11b771faca670c912b93c2f6e058b` |
+| 2 | `inductive` | [GraphAccessEvidence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ResolverGraphAccessResolution.lean/declarations/graphaccessevidence.md) | 25 | `declaration-track:110dc5edaa74611f3bbe721b771f9cb59b64f13abee04e341dab28269aa6319e` |
+| 3 | `def` | [resolveAccess](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ResolverGraphAccessResolution.lean/declarations/resolveaccess.md) | 36 | `declaration-track:7ca3f21d4c30d7433b9dfe88cac358ffe55b16307ac16127c7ed66cab19abef5` |
+| 4 | `theorem` | [access_resolver_total](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ResolverGraphAccessResolution.lean/declarations/access-resolver-total.md) | 51 | `result-track:5bee014937ae2e30f18691ae87d232c84313fa734d1f6216f26cb96e741ce4f9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

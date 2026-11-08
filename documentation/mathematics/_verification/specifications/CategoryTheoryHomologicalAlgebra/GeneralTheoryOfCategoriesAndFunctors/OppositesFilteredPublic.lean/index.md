@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OppositesFilteredPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OppositesFilteredPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OppositesFilteredPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OppositesFilteredPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [has_cofiltered_limits_op_of_has_filtered_colimits](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OppositesFilteredPublic.lean/declarations/has-cofiltered-limits-op-of-has-filtered-colimits.md) | 34 | `declaration-track:bc1bb2131c3bd65cefe1ba94a715ba770b7585530786e771c624df3cc59e4620` |
-| 2 | `theorem` | [has_cofiltered_limits_of_has_filtered_colimits_op](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OppositesFilteredPublic.lean/declarations/has-cofiltered-limits-of-has-filtered-colimits-op.md) | 38 | `result-track:b368aa3f78234ecd87860df72ae7f91b2080a762b8a6bb554d585c3424dd0b1f` |
-| 3 | `instance` | [has_filtered_colimits_op_of_has_cofiltered_limits](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OppositesFilteredPublic.lean/declarations/has-filtered-colimits-op-of-has-cofiltered-limits.md) | 42 | `declaration-track:29f56974cb1e87af04d35d1d746696678ce947723a19d74bb8d6fd52c5cffabd` |
-| 4 | `theorem` | [has_filtered_colimits_of_has_cofiltered_limits_op](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OppositesFilteredPublic.lean/declarations/has-filtered-colimits-of-has-cofiltered-limits-op.md) | 45 | `result-track:656fca447ff2444fb5cc5b2711e84e3c23c516c529734d2b8a7889ca07a201b0` |
+| 1 | `instance` | [has_cofiltered_limits_op_of_has_filtered_colimits](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OppositesFilteredPublic.lean/declarations/has-cofiltered-limits-op-of-has-filtered-colimits.md) | 34 | `declaration-track:bc1bb2131c3bd65cefe1ba94a715ba770b7585530786e771c624df3cc59e4620` |
+| 2 | `theorem` | [has_cofiltered_limits_of_has_filtered_colimits_op](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OppositesFilteredPublic.lean/declarations/has-cofiltered-limits-of-has-filtered-colimits-op.md) | 38 | `result-track:b368aa3f78234ecd87860df72ae7f91b2080a762b8a6bb554d585c3424dd0b1f` |
+| 3 | `instance` | [has_filtered_colimits_op_of_has_cofiltered_limits](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OppositesFilteredPublic.lean/declarations/has-filtered-colimits-op-of-has-cofiltered-limits.md) | 42 | `declaration-track:29f56974cb1e87af04d35d1d746696678ce947723a19d74bb8d6fd52c5cffabd` |
+| 4 | `theorem` | [has_filtered_colimits_of_has_cofiltered_limits_op](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OppositesFilteredPublic.lean/declarations/has-filtered-colimits-of-has-cofiltered-limits-op.md) | 45 | `result-track:656fca447ff2444fb5cc5b2711e84e3c23c516c529734d2b8a7889ca07a201b0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

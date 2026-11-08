@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/InstancesComplex.lean/index.md) · [Full source](../../../../GeneralTopology/InstancesComplex.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/InstancesComplex.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/InstancesComplex.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,8 +62,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Complex.subfield_eq_of_closed](../../../../GeneralTopology/InstancesComplex.lean/declarations/complex-subfield-eq-of-closed.md) | 25 | `result-track:d2cf36872905eade2f29248ff23a555a4fecf61d1c66f519f19b4f3b91867679` |
-| 2 | `theorem` | [Complex.uniformContinuous_ringHom_eq_id_or_conj](../../../../GeneralTopology/InstancesComplex.lean/declarations/complex-uniformcontinuous-ringhom-eq-id-or-conj.md) | 49 | `result-track:49ad6913458c34b3f9c4dc703aa022dd4add20f568ec001258eb342ced3a88a5` |
+| 1 | `theorem` | [Complex.subfield_eq_of_closed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/InstancesComplex.lean/declarations/complex-subfield-eq-of-closed.md) | 25 | `result-track:d2cf36872905eade2f29248ff23a555a4fecf61d1c66f519f19b4f3b91867679` |
+| 2 | `theorem` | [Complex.uniformContinuous_ringHom_eq_id_or_conj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/InstancesComplex.lean/declarations/complex-uniformcontinuous-ringhom-eq-id-or-conj.md) | 49 | `result-track:49ad6913458c34b3f9c4dc703aa022dd4add20f568ec001258eb342ced3a88a5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

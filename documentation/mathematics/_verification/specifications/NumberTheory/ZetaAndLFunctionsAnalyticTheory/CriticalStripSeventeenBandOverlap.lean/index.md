@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSeventeenBandOverlap.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSeventeenBandOverlap.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSeventeenBandOverlap.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSeventeenBandOverlap.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripSeventeenBandSeed`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CriticalStripSeventeenBandSeed.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripSeventeenBandSeed`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CriticalStripSeventeenBandSeed.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [seam](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSeventeenBandOverlap.lean/declarations/seam.md) | 23 | `declaration-track:2255fe1282b26ed07141b02232c03eeafa004700138034245344fe67cce450cd` |
-| 2 | `theorem` | [same_cutoff_telescope](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSeventeenBandOverlap.lean/declarations/same-cutoff-telescope.md) | 26 | `result-track:e20f0761f8ac50e14f91b14487566898a86a5bcdf0b5bd0bcc8388cb1f5993f1` |
-| 3 | `lemma` | [powerError_eq](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSeventeenBandOverlap.lean/declarations/powererror-eq.md) | 31 | `result-track:45364b2666022f12c74d93d26c005801f906e7aab24fd190b294efe6313f2f01` |
-| 4 | `lemma` | [finite_seam_budget](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSeventeenBandOverlap.lean/declarations/finite-seam-budget.md) | 34 | `result-track:d0c15b057c7ec8b1021b19ad76ac7f67b31553191616a9519f8704aed4d18bed` |
-| 5 | `theorem` | [model_distance](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSeventeenBandOverlap.lean/declarations/model-distance.md) | 43 | `result-track:45d75aadc1db9ed83cfe6eb657bddef19a4bd536950d31b7e979953c5f436caf` |
-| 6 | `theorem` | [seam_nonempty](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSeventeenBandOverlap.lean/declarations/seam-nonempty.md) | 75 | `result-track:e4256ef61e58d197bc7488c8f3d0a52c0a9c12cd216dbcc00d54deee3f2e9b9b` |
-| 7 | `theorem` | [source_lower_on_seam](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSeventeenBandOverlap.lean/declarations/source-lower-on-seam.md) | 80 | `result-track:9eaa792d545cb0cb15c1a1f32643b913189afc7b31511af878bd927626f12482` |
-| 8 | `theorem` | [same_deformation](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSeventeenBandOverlap.lean/declarations/same-deformation.md) | 86 | `result-track:79f4ced3b4c7c9b0f9794cfccbab582dd76896d13a2143b226add2a324451b08` |
+| 1 | `def` | [seam](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSeventeenBandOverlap.lean/declarations/seam.md) | 23 | `declaration-track:2255fe1282b26ed07141b02232c03eeafa004700138034245344fe67cce450cd` |
+| 2 | `theorem` | [same_cutoff_telescope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSeventeenBandOverlap.lean/declarations/same-cutoff-telescope.md) | 26 | `result-track:e20f0761f8ac50e14f91b14487566898a86a5bcdf0b5bd0bcc8388cb1f5993f1` |
+| 3 | `lemma` | [powerError_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSeventeenBandOverlap.lean/declarations/powererror-eq.md) | 31 | `result-track:45364b2666022f12c74d93d26c005801f906e7aab24fd190b294efe6313f2f01` |
+| 4 | `lemma` | [finite_seam_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSeventeenBandOverlap.lean/declarations/finite-seam-budget.md) | 34 | `result-track:d0c15b057c7ec8b1021b19ad76ac7f67b31553191616a9519f8704aed4d18bed` |
+| 5 | `theorem` | [model_distance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSeventeenBandOverlap.lean/declarations/model-distance.md) | 43 | `result-track:45d75aadc1db9ed83cfe6eb657bddef19a4bd536950d31b7e979953c5f436caf` |
+| 6 | `theorem` | [seam_nonempty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSeventeenBandOverlap.lean/declarations/seam-nonempty.md) | 75 | `result-track:e4256ef61e58d197bc7488c8f3d0a52c0a9c12cd216dbcc00d54deee3f2e9b9b` |
+| 7 | `theorem` | [source_lower_on_seam](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSeventeenBandOverlap.lean/declarations/source-lower-on-seam.md) | 80 | `result-track:9eaa792d545cb0cb15c1a1f32643b913189afc7b31511af878bd927626f12482` |
+| 8 | `theorem` | [same_deformation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSeventeenBandOverlap.lean/declarations/same-deformation.md) | 86 | `result-track:79f4ced3b4c7c9b0f9794cfccbab582dd76896d13a2143b226add2a324451b08` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

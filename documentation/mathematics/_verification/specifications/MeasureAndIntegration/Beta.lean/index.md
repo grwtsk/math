@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/Beta.lean/index.md) · [Full source](../../../../MeasureAndIntegration/Beta.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Beta.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Beta.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [betaIntegral_nat_factorials](../../../../MeasureAndIntegration/Beta.lean/declarations/betaintegral-nat-factorials.md) | 10 | `result-track:dfe5c6bd39651a2dd5c0cf81afa0cf83b622d41eaa54befe67a521690904a0ef` |
-| 2 | `theorem` | [integral_pow_mul_sub_pow_nat](../../../../MeasureAndIntegration/Beta.lean/declarations/integral-pow-mul-sub-pow-nat.md) | 24 | `result-track:5f4bc464d9fd244a1d6b531e2fb3e670b6dfe2498813c65893514d06ca09d99c` |
-| 3 | `theorem` | [beta_evenBasis_tailKernel_mul](../../../../MeasureAndIntegration/Beta.lean/declarations/beta-evenbasis-tailkernel-mul.md) | 47 | `result-track:bd18ed48be6ad80221a7ae5bc095e7e1b017c1ab079a062d2eb41de5e1fe91c6` |
+| 1 | `theorem` | [betaIntegral_nat_factorials](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Beta.lean/declarations/betaintegral-nat-factorials.md) | 10 | `result-track:dfe5c6bd39651a2dd5c0cf81afa0cf83b622d41eaa54befe67a521690904a0ef` |
+| 2 | `theorem` | [integral_pow_mul_sub_pow_nat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Beta.lean/declarations/integral-pow-mul-sub-pow-nat.md) | 24 | `result-track:5f4bc464d9fd244a1d6b531e2fb3e670b6dfe2498813c65893514d06ca09d99c` |
+| 3 | `theorem` | [beta_evenBasis_tailKernel_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Beta.lean/declarations/beta-evenbasis-tailkernel-mul.md) | 47 | `result-track:bd18ed48be6ad80221a7ae5bc095e7e1b017c1ab079a062d2eb41de5e1fe91c6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

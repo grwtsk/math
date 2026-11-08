@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceActualRieszQuadraticHolomorphyEdition1.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceActualRieszQuadraticHolomorphyEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualRieszQuadraticHolomorphyEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualRieszQuadraticHolomorphyEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [profile](../../../../MeasureAndIntegration/SourceActualRieszQuadraticHolomorphyEdition1.lean/declarations/profile.md) | 22 | `declaration-track:0bc4cf2d0b9426c4e9f696ae01260a1407d83c2ed617d7f53f9d102fa6829aab` |
-| 2 | `theorem` | [time_exp_bound](../../../../MeasureAndIntegration/SourceActualRieszQuadraticHolomorphyEdition1.lean/declarations/time-exp-bound.md) | 26 | `result-track:dbedbed2d53365caa4d6d95dfc207c1f2f6a34cf41f3479721a544ad5408a687` |
-| 3 | `theorem` | [derivative_norm_bound](../../../../MeasureAndIntegration/SourceActualRieszQuadraticHolomorphyEdition1.lean/declarations/derivative-norm-bound.md) | 33 | `result-track:758e3fdf39030b2eefbe7c13a9f9b3d21878fc74f81ae9ad87d8ef941913e41b` |
-| 4 | `theorem` | [kernel_hasDerivAt](../../../../MeasureAndIntegration/SourceActualRieszQuadraticHolomorphyEdition1.lean/declarations/kernel-hasderivat.md) | 56 | `result-track:47b3419f9d18b820f153162607063202fa29ea56231c418db4c739a87162328a` |
-| 5 | `theorem` | [actualFixedCenteredRieszLaplace_hasDerivAt_of_quadratic_area](../../../../MeasureAndIntegration/SourceActualRieszQuadraticHolomorphyEdition1.lean/declarations/actualfixedcenteredrieszlaplace-hasderivat-of-quadratic-area.md) | 66 | `result-track:7bad892558cbc4ffd20b0c7c4ebc34820bbca43f9e6fe5d546a6e5f701683df2` |
-| 6 | `theorem` | [actualFixedCenteredRieszLaplace_analyticOnNhd_of_quadratic_area](../../../../MeasureAndIntegration/SourceActualRieszQuadraticHolomorphyEdition1.lean/declarations/actualfixedcenteredrieszlaplace-analyticonnhd-of-quadratic-area.md) | 125 | `result-track:4308e5d0e7853e80165cc47113747414f94994ec1fa76e7eb339c3e8c11eabef` |
+| 1 | `def` | [profile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualRieszQuadraticHolomorphyEdition1.lean/declarations/profile.md) | 22 | `declaration-track:0bc4cf2d0b9426c4e9f696ae01260a1407d83c2ed617d7f53f9d102fa6829aab` |
+| 2 | `theorem` | [time_exp_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualRieszQuadraticHolomorphyEdition1.lean/declarations/time-exp-bound.md) | 26 | `result-track:dbedbed2d53365caa4d6d95dfc207c1f2f6a34cf41f3479721a544ad5408a687` |
+| 3 | `theorem` | [derivative_norm_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualRieszQuadraticHolomorphyEdition1.lean/declarations/derivative-norm-bound.md) | 33 | `result-track:758e3fdf39030b2eefbe7c13a9f9b3d21878fc74f81ae9ad87d8ef941913e41b` |
+| 4 | `theorem` | [kernel_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualRieszQuadraticHolomorphyEdition1.lean/declarations/kernel-hasderivat.md) | 56 | `result-track:47b3419f9d18b820f153162607063202fa29ea56231c418db4c739a87162328a` |
+| 5 | `theorem` | [actualFixedCenteredRieszLaplace_hasDerivAt_of_quadratic_area](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualRieszQuadraticHolomorphyEdition1.lean/declarations/actualfixedcenteredrieszlaplace-hasderivat-of-quadratic-area.md) | 66 | `result-track:7bad892558cbc4ffd20b0c7c4ebc34820bbca43f9e6fe5d546a6e5f701683df2` |
+| 6 | `theorem` | [actualFixedCenteredRieszLaplace_analyticOnNhd_of_quadratic_area](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualRieszQuadraticHolomorphyEdition1.lean/declarations/actualfixedcenteredrieszlaplace-analyticonnhd-of-quadratic-area.md) | 125 | `result-track:4308e5d0e7853e80165cc47113747414f94994ec1fa76e7eb339c3e8c11eabef` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

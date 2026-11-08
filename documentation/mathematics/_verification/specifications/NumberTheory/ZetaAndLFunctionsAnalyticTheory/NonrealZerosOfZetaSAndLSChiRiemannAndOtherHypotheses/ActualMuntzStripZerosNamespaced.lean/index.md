@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ActualMuntzStripZerosNamespaced.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ActualMuntzStripZerosNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ActualMuntzStripZerosNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ActualMuntzStripZerosNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_source_mellin_halfstrip_ne_zero](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ActualMuntzStripZerosNamespaced.lean/declarations/actual-source-mellin-halfstrip-ne-zero.md) | 20 | `result-track:8d4a40147265c9775c3eaf9798c6eba05f9f3e9eb530b636cd7a838a20273925` |
-| 2 | `theorem` | [actual_muntz_mellin_halfstrip_zero_iff](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ActualMuntzStripZerosNamespaced.lean/declarations/actual-muntz-mellin-halfstrip-zero-iff.md) | 24 | `result-track:411710ccf4159989e2b3553ac8522b0dc590b4a9cd0352abd524da91b48c592f` |
-| 3 | `theorem` | [actual_muntz_mellin_halfstrip_ne_zero_iff](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ActualMuntzStripZerosNamespaced.lean/declarations/actual-muntz-mellin-halfstrip-ne-zero-iff.md) | 31 | `result-track:73fc080639400cc6feeb173aaf95241f4a5fc0372ac0716c32904139d9e68ccb` |
+| 1 | `theorem` | [actual_source_mellin_halfstrip_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ActualMuntzStripZerosNamespaced.lean/declarations/actual-source-mellin-halfstrip-ne-zero.md) | 20 | `result-track:8d4a40147265c9775c3eaf9798c6eba05f9f3e9eb530b636cd7a838a20273925` |
+| 2 | `theorem` | [actual_muntz_mellin_halfstrip_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ActualMuntzStripZerosNamespaced.lean/declarations/actual-muntz-mellin-halfstrip-zero-iff.md) | 24 | `result-track:411710ccf4159989e2b3553ac8522b0dc590b4a9cd0352abd524da91b48c592f` |
+| 3 | `theorem` | [actual_muntz_mellin_halfstrip_ne_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ActualMuntzStripZerosNamespaced.lean/declarations/actual-muntz-mellin-halfstrip-ne-zero-iff.md) | 31 | `result-track:73fc080639400cc6feeb173aaf95241f4a5fc0372ac0716c32904139d9e68ccb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

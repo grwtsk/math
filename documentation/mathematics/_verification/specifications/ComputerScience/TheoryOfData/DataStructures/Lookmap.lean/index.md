@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/Lookmap.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/Lookmap.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Lookmap.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Lookmap.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,18 +59,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [lookmap.go_append](../../../../../../ComputerScience/TheoryOfData/DataStructures/Lookmap.lean/declarations/lookmap-go-append.md) | 18 | `result-track:8a442ad5d1adb9441258e7d6b92af7c5d2cf898e57fb32fa6ccf0b33aea98b95` |
-| 2 | `theorem` | [lookmap_nil](../../../../../../ComputerScience/TheoryOfData/DataStructures/Lookmap.lean/declarations/lookmap-nil.md) | 31 | `result-track:462ee0663594c5e6389c0c1fabfad3df0a58132f3de61a248b1638c8e9271246` |
-| 3 | `theorem` | [lookmap_cons_none](../../../../../../ComputerScience/TheoryOfData/DataStructures/Lookmap.lean/declarations/lookmap-cons-none.md) | 35 | `result-track:34ec5df7da996c821801881610357380d29170a76b2d70610cb35c07512a3f1a` |
-| 4 | `theorem` | [lookmap_cons_some](../../../../../../ComputerScience/TheoryOfData/DataStructures/Lookmap.lean/declarations/lookmap-cons-some.md) | 41 | `result-track:c1243b78e680913abdc188c80285ecdd6c52effb16cfc5c93fb77beabe74c763` |
-| 5 | `theorem` | [lookmap_some](../../../../../../ComputerScience/TheoryOfData/DataStructures/Lookmap.lean/declarations/lookmap-some.md) | 46 | `result-track:4e492c21a2ebb203698b84d4861cf04a057ab81bd21e9d4c9f8ba80393d37155` |
-| 6 | `theorem` | [lookmap_none](../../../../../../ComputerScience/TheoryOfData/DataStructures/Lookmap.lean/declarations/lookmap-none.md) | 50 | `result-track:89eeab7e6c7c942e416c336182f17055d08b3765850e52aed19a20d48e04bae5` |
-| 7 | `theorem` | [lookmap_congr](../../../../../../ComputerScience/TheoryOfData/DataStructures/Lookmap.lean/declarations/lookmap-congr.md) | 54 | `result-track:b70d0328d48a9621eb1dce03453307eacd68d3bbfc35e18c4ed2e15e3c50005c` |
-| 8 | `theorem` | [lookmap_of_forall_not](../../../../../../ComputerScience/TheoryOfData/DataStructures/Lookmap.lean/declarations/lookmap-of-forall-not.md) | 63 | `result-track:47875d037d308b1d1c3147ebf4650e3f44fb4214e7a53bc6929ce2fedbfc6c50` |
-| 9 | `theorem` | [lookmap_map_eq](../../../../../../ComputerScience/TheoryOfData/DataStructures/Lookmap.lean/declarations/lookmap-map-eq.md) | 66 | `result-track:2de5219155dd41505ba1720f592fadafd7ec989157774ffb88c0a758b2361d2a` |
-| 10 | `theorem` | [lookmap_id'](../../../../../../ComputerScience/TheoryOfData/DataStructures/Lookmap.lean/declarations/lookmap-id.md) | 74 | `result-track:e5aa05de7c469b50b88c7ebea605a0d66f667bccf923a1761914a1eab6ff5d57` |
-| 11 | `theorem` | [length_lookmap](../../../../../../ComputerScience/TheoryOfData/DataStructures/Lookmap.lean/declarations/length-lookmap.md) | 77 | `result-track:3b92d301ab9c7f3154d3b0ecfa5319a5727e5ee9cd46ab0521d4a4236b9ae023` |
-| 12 | `theorem` | [perm_lookmap](../../../../../../ComputerScience/TheoryOfData/DataStructures/Lookmap.lean/declarations/perm-lookmap.md) | 81 | `result-track:6cf0580ef4e4203252fa24d1c0224f1a381e9ec733db02246410712e15f924c9` |
+| 1 | `theorem` | [lookmap.go_append](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Lookmap.lean/declarations/lookmap-go-append.md) | 18 | `result-track:8a442ad5d1adb9441258e7d6b92af7c5d2cf898e57fb32fa6ccf0b33aea98b95` |
+| 2 | `theorem` | [lookmap_nil](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Lookmap.lean/declarations/lookmap-nil.md) | 31 | `result-track:462ee0663594c5e6389c0c1fabfad3df0a58132f3de61a248b1638c8e9271246` |
+| 3 | `theorem` | [lookmap_cons_none](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Lookmap.lean/declarations/lookmap-cons-none.md) | 35 | `result-track:34ec5df7da996c821801881610357380d29170a76b2d70610cb35c07512a3f1a` |
+| 4 | `theorem` | [lookmap_cons_some](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Lookmap.lean/declarations/lookmap-cons-some.md) | 41 | `result-track:c1243b78e680913abdc188c80285ecdd6c52effb16cfc5c93fb77beabe74c763` |
+| 5 | `theorem` | [lookmap_some](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Lookmap.lean/declarations/lookmap-some.md) | 46 | `result-track:4e492c21a2ebb203698b84d4861cf04a057ab81bd21e9d4c9f8ba80393d37155` |
+| 6 | `theorem` | [lookmap_none](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Lookmap.lean/declarations/lookmap-none.md) | 50 | `result-track:89eeab7e6c7c942e416c336182f17055d08b3765850e52aed19a20d48e04bae5` |
+| 7 | `theorem` | [lookmap_congr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Lookmap.lean/declarations/lookmap-congr.md) | 54 | `result-track:b70d0328d48a9621eb1dce03453307eacd68d3bbfc35e18c4ed2e15e3c50005c` |
+| 8 | `theorem` | [lookmap_of_forall_not](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Lookmap.lean/declarations/lookmap-of-forall-not.md) | 63 | `result-track:47875d037d308b1d1c3147ebf4650e3f44fb4214e7a53bc6929ce2fedbfc6c50` |
+| 9 | `theorem` | [lookmap_map_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Lookmap.lean/declarations/lookmap-map-eq.md) | 66 | `result-track:2de5219155dd41505ba1720f592fadafd7ec989157774ffb88c0a758b2361d2a` |
+| 10 | `theorem` | [lookmap_id'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Lookmap.lean/declarations/lookmap-id.md) | 74 | `result-track:e5aa05de7c469b50b88c7ebea605a0d66f667bccf923a1761914a1eab6ff5d57` |
+| 11 | `theorem` | [length_lookmap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Lookmap.lean/declarations/length-lookmap.md) | 77 | `result-track:3b92d301ab9c7f3154d3b0ecfa5319a5727e5ee9cd46ab0521d4a4236b9ae023` |
+| 12 | `theorem` | [perm_lookmap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Lookmap.lean/declarations/perm-lookmap.md) | 81 | `result-track:6cf0580ef4e4203252fa24d1c0224f1a381e9ec733db02246410712e15f924c9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

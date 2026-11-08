@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteCyclicFiniteCyclic.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteCyclicFiniteCyclic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteCyclicFiniteCyclic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteCyclicFiniteCyclic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FiniteCyclic](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteCyclicFiniteCyclic.lean/declarations/finitecyclic.md) | 8 | `declaration-track:892ebe4c53390693ab95d0c1d97bd785c5823a91bcecbceb5515f61e075f6b3e` |
-| 2 | `def` | [FiniteCyclic.point](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteCyclicFiniteCyclic.lean/declarations/finitecyclic-point.md) | 14 | `declaration-track:a257a3a931763ff070e7100839efee19f83a1434ceca222b13083ccf2b04c5a4` |
+| 1 | `structure` | [FiniteCyclic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteCyclicFiniteCyclic.lean/declarations/finitecyclic.md) | 8 | `declaration-track:892ebe4c53390693ab95d0c1d97bd785c5823a91bcecbceb5515f61e075f6b3e` |
+| 2 | `def` | [FiniteCyclic.point](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteCyclicFiniteCyclic.lean/declarations/finitecyclic-point.md) | 14 | `declaration-track:a257a3a931763ff070e7100839efee19f83a1434ceca222b13083ccf2b04c5a4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

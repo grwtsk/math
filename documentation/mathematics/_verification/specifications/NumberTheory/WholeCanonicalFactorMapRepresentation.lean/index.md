@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/WholeCanonicalFactorMapRepresentation.lean/index.md) · [Full source](../../../../NumberTheory/WholeCanonicalFactorMapRepresentation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WholeCanonicalFactorMapRepresentation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WholeCanonicalFactorMapRepresentation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,17 +58,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FactorMapRepresentation](../../../../NumberTheory/WholeCanonicalFactorMapRepresentation.lean/declarations/factormaprepresentation.md) | 39 | `declaration-track:d347909ac6f699aa127e55966b34018d39022367282d6059feba014d496ef1a3` |
-| 2 | `def` | [FactorMapRepresentation.decode](../../../../NumberTheory/WholeCanonicalFactorMapRepresentation.lean/declarations/factormaprepresentation-decode.md) | 46 | `declaration-track:2417400d6c44fcaad2076db8f371b64c8be2314f297b876e141fff29f690b5b8` |
-| 3 | `structure` | [CellularArithmeticRepresentation](../../../../NumberTheory/WholeCanonicalFactorMapRepresentation.lean/declarations/cellulararithmeticrepresentation.md) | 50 | `declaration-track:f8f27da59be490d65e655293ee18c81359846843cdfbfe224f2026b9a3c1adf1` |
-| 4 | `def` | [number](../../../../NumberTheory/WholeCanonicalFactorMapRepresentation.lean/declarations/number.md) | 55 | `declaration-track:f715508cc0837784fc4ce55b31a8f31ad0f89021be073ecf20b39b916bb3cecf` |
-| 5 | `def` | [decode](../../../../NumberTheory/WholeCanonicalFactorMapRepresentation.lean/declarations/decode.md) | 59 | `declaration-track:e71231a6e0d89a72a637d6f0db091a612fdc65460a5a52e126edee151e27e543` |
-| 6 | `def` | [canonical](../../../../NumberTheory/WholeCanonicalFactorMapRepresentation.lean/declarations/canonical.md) | 62 | `declaration-track:6da1272e9102fabf5ab7a9a25a1c073fadaa0220c714745b4bbf287915f2ce75` |
-| 7 | `def` | [encodeFactorMap](../../../../NumberTheory/WholeCanonicalFactorMapRepresentation.lean/declarations/encodefactormap.md) | 67 | `declaration-track:e68870457f4f42dd5b978fdb1bcaea2af8ea47523e589d44aceca93afb2fdb74` |
-| 8 | `def` | [encodePositiveNat](../../../../NumberTheory/WholeCanonicalFactorMapRepresentation.lean/declarations/encodepositivenat.md) | 79 | `declaration-track:a2b10a075a76804a66395159f79d352a5a406dfc34b1d7a609d955177f70936d` |
-| 9 | `theorem` | [decode_encode_positiveNat](../../../../NumberTheory/WholeCanonicalFactorMapRepresentation.lean/declarations/decode-encode-positivenat.md) | 84 | `result-track:6a740176099246b4507a03d3f83fbdf96b855ba6a2f3b9c86b0e1b28d4e7d1a1` |
-| 10 | `def` | [SameDecoded](../../../../NumberTheory/WholeCanonicalFactorMapRepresentation.lean/declarations/samedecoded.md) | 89 | `declaration-track:ba4295dbd5d50bfeccbfffc17b490de451a313c3e3e29f360ea82cdf9cb69445` |
-| 11 | `theorem` | [factorMap_unique_of_same_number](../../../../NumberTheory/WholeCanonicalFactorMapRepresentation.lean/declarations/factormap-unique-of-same-number.md) | 93 | `result-track:d71e6bc22ddecdf20daa7328ca3349a8b592e5963b766e98e8a7ba751b3b5eb3` |
+| 1 | `structure` | [FactorMapRepresentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WholeCanonicalFactorMapRepresentation.lean/declarations/factormaprepresentation.md) | 39 | `declaration-track:d347909ac6f699aa127e55966b34018d39022367282d6059feba014d496ef1a3` |
+| 2 | `def` | [FactorMapRepresentation.decode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WholeCanonicalFactorMapRepresentation.lean/declarations/factormaprepresentation-decode.md) | 46 | `declaration-track:2417400d6c44fcaad2076db8f371b64c8be2314f297b876e141fff29f690b5b8` |
+| 3 | `structure` | [CellularArithmeticRepresentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WholeCanonicalFactorMapRepresentation.lean/declarations/cellulararithmeticrepresentation.md) | 50 | `declaration-track:f8f27da59be490d65e655293ee18c81359846843cdfbfe224f2026b9a3c1adf1` |
+| 4 | `def` | [number](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WholeCanonicalFactorMapRepresentation.lean/declarations/number.md) | 55 | `declaration-track:f715508cc0837784fc4ce55b31a8f31ad0f89021be073ecf20b39b916bb3cecf` |
+| 5 | `def` | [decode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WholeCanonicalFactorMapRepresentation.lean/declarations/decode.md) | 59 | `declaration-track:e71231a6e0d89a72a637d6f0db091a612fdc65460a5a52e126edee151e27e543` |
+| 6 | `def` | [canonical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WholeCanonicalFactorMapRepresentation.lean/declarations/canonical.md) | 62 | `declaration-track:6da1272e9102fabf5ab7a9a25a1c073fadaa0220c714745b4bbf287915f2ce75` |
+| 7 | `def` | [encodeFactorMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WholeCanonicalFactorMapRepresentation.lean/declarations/encodefactormap.md) | 67 | `declaration-track:e68870457f4f42dd5b978fdb1bcaea2af8ea47523e589d44aceca93afb2fdb74` |
+| 8 | `def` | [encodePositiveNat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WholeCanonicalFactorMapRepresentation.lean/declarations/encodepositivenat.md) | 79 | `declaration-track:a2b10a075a76804a66395159f79d352a5a406dfc34b1d7a609d955177f70936d` |
+| 9 | `theorem` | [decode_encode_positiveNat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WholeCanonicalFactorMapRepresentation.lean/declarations/decode-encode-positivenat.md) | 84 | `result-track:6a740176099246b4507a03d3f83fbdf96b855ba6a2f3b9c86b0e1b28d4e7d1a1` |
+| 10 | `def` | [SameDecoded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WholeCanonicalFactorMapRepresentation.lean/declarations/samedecoded.md) | 89 | `declaration-track:ba4295dbd5d50bfeccbfffc17b490de451a313c3e3e29f360ea82cdf9cb69445` |
+| 11 | `theorem` | [factorMap_unique_of_same_number](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WholeCanonicalFactorMapRepresentation.lean/declarations/factormap-unique-of-same-number.md) | 93 | `result-track:d71e6bc22ddecdf20daa7328ca3349a8b592e5963b766e98e8a7ba751b3b5eb3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

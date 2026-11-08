@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/FunctorNNamespacedPublic.lean/index.md) · [Full source](../../../../AlgebraicTopology/FunctorNNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FunctorNNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FunctorNNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [N₁](../../../../AlgebraicTopology/FunctorNNamespacedPublic.lean/declarations/n.md) | 59 | `declaration-track:24126285bbc32ed52cbdafe2626604d996f882ec9c41a439003ae71e102b071c` |
-| 2 | `def` | [N₂](../../../../AlgebraicTopology/FunctorNNamespacedPublic.lean/declarations/n-source-edition-2.md) | 69 | `declaration-track:4bad3df644da851fc933f9c54324416120267e1bd82d259cdb1431409ec7a23d` |
-| 3 | `def` | [toKaroubiCompN₂IsoN₁](../../../../AlgebraicTopology/FunctorNNamespacedPublic.lean/declarations/tokaroubicompn-ison.md) | 73 | `declaration-track:d136a9636182e4aad27b19d5e035705d8ae16c2388e2e22ea05b57c0532e0565` |
-| 4 | `lemma` | [toKaroubiCompN₂IsoN₁_hom_app](../../../../AlgebraicTopology/FunctorNNamespacedPublic.lean/declarations/tokaroubicompn-ison-hom-app.md) | 77 | `result-track:ba7585978e528533c589083bbc37a8799863803fab369a49e364da72bd530595` |
-| 5 | `lemma` | [toKaroubiCompN₂IsoN₁_inv_app](../../../../AlgebraicTopology/FunctorNNamespacedPublic.lean/declarations/tokaroubicompn-ison-inv-app.md) | 81 | `result-track:d61db76b074e8e135afbff06b2b370e76585f739b4cf816206d821b2381e9c7a` |
+| 1 | `def` | [N₁](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FunctorNNamespacedPublic.lean/declarations/n.md) | 59 | `declaration-track:24126285bbc32ed52cbdafe2626604d996f882ec9c41a439003ae71e102b071c` |
+| 2 | `def` | [N₂](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FunctorNNamespacedPublic.lean/declarations/n-source-edition-2.md) | 69 | `declaration-track:4bad3df644da851fc933f9c54324416120267e1bd82d259cdb1431409ec7a23d` |
+| 3 | `def` | [toKaroubiCompN₂IsoN₁](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FunctorNNamespacedPublic.lean/declarations/tokaroubicompn-ison.md) | 73 | `declaration-track:d136a9636182e4aad27b19d5e035705d8ae16c2388e2e22ea05b57c0532e0565` |
+| 4 | `lemma` | [toKaroubiCompN₂IsoN₁_hom_app](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FunctorNNamespacedPublic.lean/declarations/tokaroubicompn-ison-hom-app.md) | 77 | `result-track:ba7585978e528533c589083bbc37a8799863803fab369a49e364da72bd530595` |
+| 5 | `lemma` | [toKaroubiCompN₂IsoN₁_inv_app](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FunctorNNamespacedPublic.lean/declarations/tokaroubicompn-ison-inv-app.md) | 81 | `result-track:d61db76b074e8e135afbff06b2b370e76585f739b4cf816206d821b2381e9c7a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

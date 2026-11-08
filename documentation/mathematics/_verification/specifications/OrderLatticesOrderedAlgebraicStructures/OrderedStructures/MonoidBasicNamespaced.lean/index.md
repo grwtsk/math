@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidBasicNamespaced.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidBasicNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidBasicNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidBasicNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [Function.Injective.isOrderedMonoid](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidBasicNamespaced.lean/declarations/function-injective-isorderedmonoid.md) | 33 | `result-track:443c11e0dfb2646ce8e6fb727d09afda767eb10ebc7a55aa8a643c75a89e483b` |
-| 2 | `lemma` | [Function.Injective.isOrderedCancelMonoid](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidBasicNamespaced.lean/declarations/function-injective-isorderedcancelmonoid.md) | 47 | `result-track:c1c7c8ee90ae1965dc6c0f9c11e9a3ba64e37d3e2548a40f7fd666a4c0165795` |
-| 3 | `def` | [OrderEmbedding.mulLeft](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidBasicNamespaced.lean/declarations/orderembedding-mulleft.md) | 91 | `declaration-track:ce597331b84c8dd9bd744cb2738d949de53453a3e3854824303522dc942410f7` |
-| 4 | `def` | [OrderEmbedding.mulRight](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidBasicNamespaced.lean/declarations/orderembedding-mulright.md) | 100 | `declaration-track:2f1881de46d0b8acb7169cf2cd1b8e595ff3650429893d9992f3d980bcbb0b38` |
+| 1 | `lemma` | [Function.Injective.isOrderedMonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidBasicNamespaced.lean/declarations/function-injective-isorderedmonoid.md) | 33 | `result-track:443c11e0dfb2646ce8e6fb727d09afda767eb10ebc7a55aa8a643c75a89e483b` |
+| 2 | `lemma` | [Function.Injective.isOrderedCancelMonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidBasicNamespaced.lean/declarations/function-injective-isorderedcancelmonoid.md) | 47 | `result-track:c1c7c8ee90ae1965dc6c0f9c11e9a3ba64e37d3e2548a40f7fd666a4c0165795` |
+| 3 | `def` | [OrderEmbedding.mulLeft](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidBasicNamespaced.lean/declarations/orderembedding-mulleft.md) | 91 | `declaration-track:ce597331b84c8dd9bd744cb2738d949de53453a3e3854824303522dc942410f7` |
+| 4 | `def` | [OrderEmbedding.mulRight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidBasicNamespaced.lean/declarations/orderembedding-mulright.md) | 100 | `declaration-track:2f1881de46d0b8acb7169cf2cd1b8e595ff3650429893d9992f3d980bcbb0b38` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

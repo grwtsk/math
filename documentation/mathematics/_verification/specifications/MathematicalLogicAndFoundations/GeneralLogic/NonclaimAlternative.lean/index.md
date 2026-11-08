@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NonclaimAlternative.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NonclaimAlternative.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NonclaimAlternative.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NonclaimAlternative.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Nonclaim](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NonclaimAlternative.lean/declarations/nonclaim.md) | 11 | `declaration-track:066ac73ff79fd3fb09b49a2be10c809cf6d85d57409734d66b7d593ab7d898e4` |
-| 2 | `def` | [nonclaimAuthorityLabel](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NonclaimAlternative.lean/declarations/nonclaimauthoritylabel.md) | 15 | `declaration-track:307f064dec2413e7d8f948dc33c00290ec3a1707b25ac2c0bd6710f8bcc2fa77` |
-| 3 | `def` | [noPoleAuthorityUpgrade](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NonclaimAlternative.lean/declarations/nopoleauthorityupgrade.md) | 19 | `declaration-track:9f43ed2e4aba26f02a74d3c079cbe9eb8fd9f30c48974c606c41242dffcbea20` |
-| 4 | `theorem` | [noPoleAuthorityUpgrade_certified](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NonclaimAlternative.lean/declarations/nopoleauthorityupgrade-certified.md) | 24 | `result-track:95d6e48627675b5483921accb9cc185370c17c7ec1506f4077ad7a829e77a674` |
+| 1 | `structure` | [Nonclaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NonclaimAlternative.lean/declarations/nonclaim.md) | 11 | `declaration-track:066ac73ff79fd3fb09b49a2be10c809cf6d85d57409734d66b7d593ab7d898e4` |
+| 2 | `def` | [nonclaimAuthorityLabel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NonclaimAlternative.lean/declarations/nonclaimauthoritylabel.md) | 15 | `declaration-track:307f064dec2413e7d8f948dc33c00290ec3a1707b25ac2c0bd6710f8bcc2fa77` |
+| 3 | `def` | [noPoleAuthorityUpgrade](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NonclaimAlternative.lean/declarations/nopoleauthorityupgrade.md) | 19 | `declaration-track:9f43ed2e4aba26f02a74d3c079cbe9eb8fd9f30c48974c606c41242dffcbea20` |
+| 4 | `theorem` | [noPoleAuthorityUpgrade_certified](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NonclaimAlternative.lean/declarations/nopoleauthorityupgrade-certified.md) | 24 | `result-track:95d6e48627675b5483921accb9cc185370c17c7ec1506f4077ad7a829e77a674` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

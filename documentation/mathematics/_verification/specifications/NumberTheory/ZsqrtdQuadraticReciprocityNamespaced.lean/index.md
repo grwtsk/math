@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/ZsqrtdQuadraticReciprocityNamespaced.lean/index.md) · [Full source](../../../../NumberTheory/ZsqrtdQuadraticReciprocityNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZsqrtdQuadraticReciprocityNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZsqrtdQuadraticReciprocityNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [mod_four_eq_three_of_nat_prime_of_prime](../../../../NumberTheory/ZsqrtdQuadraticReciprocityNamespaced.lean/declarations/mod-four-eq-three-of-nat-prime-of-prime.md) | 39 | `result-track:abceb97297e01f4a5525663481213e5a6d32b4fcd61adb9c1644f8960ec4f6ba` |
-| 2 | `theorem` | [prime_of_nat_prime_of_mod_four_eq_three](../../../../NumberTheory/ZsqrtdQuadraticReciprocityNamespaced.lean/declarations/prime-of-nat-prime-of-mod-four-eq-three.md) | 83 | `result-track:0634939fb571d337053eb8ce2b3ad00a893a38549e1faff6ca90c0c7aee60aeb` |
-| 3 | `theorem` | [prime_iff_mod_four_eq_three_of_nat_prime](../../../../NumberTheory/ZsqrtdQuadraticReciprocityNamespaced.lean/declarations/prime-iff-mod-four-eq-three-of-nat-prime.md) | 93 | `result-track:959588c4b83a681d06fb6001eeaccdd121130313fdbbb7acf203dcef25d6dd08` |
+| 1 | `theorem` | [mod_four_eq_three_of_nat_prime_of_prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZsqrtdQuadraticReciprocityNamespaced.lean/declarations/mod-four-eq-three-of-nat-prime-of-prime.md) | 39 | `result-track:abceb97297e01f4a5525663481213e5a6d32b4fcd61adb9c1644f8960ec4f6ba` |
+| 2 | `theorem` | [prime_of_nat_prime_of_mod_four_eq_three](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZsqrtdQuadraticReciprocityNamespaced.lean/declarations/prime-of-nat-prime-of-mod-four-eq-three.md) | 83 | `result-track:0634939fb571d337053eb8ce2b3ad00a893a38549e1faff6ca90c0c7aee60aeb` |
+| 3 | `theorem` | [prime_iff_mod_four_eq_three_of_nat_prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZsqrtdQuadraticReciprocityNamespaced.lean/declarations/prime-iff-mod-four-eq-three-of-nat-prime.md) | 93 | `result-track:959588c4b83a681d06fb6001eeaccdd121130313fdbbb7acf203dcef25d6dd08` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

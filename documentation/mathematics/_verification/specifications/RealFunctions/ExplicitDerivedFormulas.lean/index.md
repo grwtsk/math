@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/ExplicitDerivedFormulas.lean/index.md) · [Full source](../../../../RealFunctions/ExplicitDerivedFormulas.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExplicitDerivedFormulas.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExplicitDerivedFormulas.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,8 +47,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `Folder.Basic` — import line 19; external provider; requires a separately pinned dependency.
-- [Quadratic Data And Evaluation](../../../../RealFunctions/QuadraticDataAndEvaluation.lean/index.md) — import line 21; pinned internal source present.
-- [Cubic Data And Evaluation](../../../../RealFunctions/CubicDataAndEvaluation.lean/index.md) — import line 22; pinned internal source present.
+- [Quadratic Data And Evaluation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/QuadraticDataAndEvaluation.lean/index.md) — import line 21; pinned internal source present.
+- [Cubic Data And Evaluation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CubicDataAndEvaluation.lean/index.md) — import line 22; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [derivative](../../../../RealFunctions/ExplicitDerivedFormulas.lean/declarations/derivative.md) | 42 | `declaration-track:e7b79b5cfb35ab1ff656b6b6455b60eba89887f812a7792ad247a6a6541f8960` |
-| 2 | `def` | [antiderivativeEval](../../../../RealFunctions/ExplicitDerivedFormulas.lean/declarations/antiderivativeeval.md) | 48 | `declaration-track:4bcb7fef5ad27e571cca88ca59a9da1baad295366926003a7ee3d763dda58224` |
+| 1 | `def` | [derivative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExplicitDerivedFormulas.lean/declarations/derivative.md) | 42 | `declaration-track:e7b79b5cfb35ab1ff656b6b6455b60eba89887f812a7792ad247a6a6541f8960` |
+| 2 | `def` | [antiderivativeEval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExplicitDerivedFormulas.lean/declarations/antiderivativeeval.md) | 48 | `declaration-track:4bcb7fef5ad27e571cca88ca59a9da1baad295366926003a7ee3d763dda58224` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

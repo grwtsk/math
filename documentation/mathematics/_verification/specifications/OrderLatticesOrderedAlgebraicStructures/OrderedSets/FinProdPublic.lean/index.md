@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinProdPublic.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinProdPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinProdPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinProdPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [prod_zero_zero_lt_iff](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinProdPublic.lean/declarations/prod-zero-zero-lt-iff.md) | 20 | `result-track:466aa250cc20d4961e3e8ee5d6095e1ff9f7c004bbf15397f3d4a51fa7ae7322` |
-| 2 | `lemma` | [prod_lt_last_last_iff](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinProdPublic.lean/declarations/prod-lt-last-last-iff.md) | 25 | `result-track:08097b395cde0a66a7110e90cde7eff530e5880c71010573ea4b49916da4306e` |
-| 3 | `lemma` | [prod_exists_lt_lt_of_le_of_le](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinProdPublic.lean/declarations/prod-exists-lt-lt-of-le-of-le.md) | 30 | `result-track:5c9e96efe121c7ec391761c5920b2829cfbfdfa184cc2fee654a4125c508d268` |
+| 1 | `lemma` | [prod_zero_zero_lt_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinProdPublic.lean/declarations/prod-zero-zero-lt-iff.md) | 20 | `result-track:466aa250cc20d4961e3e8ee5d6095e1ff9f7c004bbf15397f3d4a51fa7ae7322` |
+| 2 | `lemma` | [prod_lt_last_last_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinProdPublic.lean/declarations/prod-lt-last-last-iff.md) | 25 | `result-track:08097b395cde0a66a7110e90cde7eff530e5880c71010573ea4b49916da4306e` |
+| 3 | `lemma` | [prod_exists_lt_lt_of_le_of_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinProdPublic.lean/declarations/prod-exists-lt-lt-of-le-of-le.md) | 30 | `result-track:5c9e96efe121c7ec391761c5920b2829cfbfdfa184cc2fee654a4125c508d268` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

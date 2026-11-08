@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/HarmonicDefsDefsDefsNamespaced.lean/index.md) · [Full source](../../../../NumberTheory/HarmonicDefsDefsDefsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/HarmonicDefsDefsDefsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/HarmonicDefsDefsDefsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [harmonic](../../../../NumberTheory/HarmonicDefsDefsDefsNamespaced.lean/declarations/harmonic.md) | 27 | `declaration-track:c8d479fb69214f7735cc6665a44ac0fb30d0b1cb2b9bd396c945c171303ff117` |
-| 2 | `lemma` | [harmonic_zero](../../../../NumberTheory/HarmonicDefsDefsDefsNamespaced.lean/declarations/harmonic-zero.md) | 30 | `result-track:7cd463b3dad2a52eda7fca58237a7212f5e75c6d8c06c56183c9815543f92fdd` |
-| 3 | `lemma` | [harmonic_succ](../../../../NumberTheory/HarmonicDefsDefsDefsNamespaced.lean/declarations/harmonic-succ.md) | 34 | `result-track:5da0a5999dd32dd04b5225b2a7cb9e985bae545ff4bd7582248860e7df19cdc7` |
+| 1 | `def` | [harmonic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/HarmonicDefsDefsDefsNamespaced.lean/declarations/harmonic.md) | 27 | `declaration-track:c8d479fb69214f7735cc6665a44ac0fb30d0b1cb2b9bd396c945c171303ff117` |
+| 2 | `lemma` | [harmonic_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/HarmonicDefsDefsDefsNamespaced.lean/declarations/harmonic-zero.md) | 30 | `result-track:7cd463b3dad2a52eda7fca58237a7212f5e75c6d8c06c56183c9815543f92fdd` |
+| 3 | `lemma` | [harmonic_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/HarmonicDefsDefsDefsNamespaced.lean/declarations/harmonic-succ.md) | 34 | `result-track:5da0a5999dd32dd04b5225b2a7cb9e985bae545ff4bd7582248860e7df19cdc7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

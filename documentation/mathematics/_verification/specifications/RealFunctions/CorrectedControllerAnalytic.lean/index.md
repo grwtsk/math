@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/CorrectedControllerAnalytic.lean/index.md) · [Full source](../../../../RealFunctions/CorrectedControllerAnalytic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CorrectedControllerAnalytic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CorrectedControllerAnalytic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,20 +57,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [reducedW](../../../../RealFunctions/CorrectedControllerAnalytic.lean/declarations/reducedw.md) | 13 | `declaration-track:6faee1710b4c9f94c61d687c838c7eea5dcd03a640f4189e82d02e4dc96c430d` |
-| 2 | `theorem` | [W_factor](../../../../RealFunctions/CorrectedControllerAnalytic.lean/declarations/w-factor.md) | 18 | `result-track:3dda6108734d6b3a541a00ffed18eaade3641eebdec76006ab28713a38108949` |
-| 3 | `theorem` | [reducedW_differentiable](../../../../RealFunctions/CorrectedControllerAnalytic.lean/declarations/reducedw-differentiable.md) | 24 | `result-track:40b79f21691be3c0fb85df2452e81fd9dcaf7bfb9efa5f4fd5e1928dc494e96f` |
-| 4 | `theorem` | [reducedW_ne_zero](../../../../RealFunctions/CorrectedControllerAnalytic.lean/declarations/reducedw-ne-zero.md) | 31 | `result-track:9ebd3db6b7247481f1601fcc4a7919ee37c7f5797d7577f6d9150dc75cd67b40` |
-| 5 | `theorem` | [W_zero_iff](../../../../RealFunctions/CorrectedControllerAnalytic.lean/declarations/w-zero-iff.md) | 46 | `result-track:3f36be8f7916d9fdc6b331db7dee95f2f4e18f11c1aeb5649abc63ef2c1cf002` |
-| 6 | `theorem` | [reducedW_half](../../../../RealFunctions/CorrectedControllerAnalytic.lean/declarations/reducedw-half.md) | 51 | `result-track:cbd5ae6d44432ea6c016d8c5d87c4733cf4c93a6bc2d4237963661c30a50d796` |
-| 7 | `def` | [quotient](../../../../RealFunctions/CorrectedControllerAnalytic.lean/declarations/quotient.md) | 63 | `declaration-track:f668a58fa5e00306cdd34fb70706f0dced6d3dcabfc76bfdd847dc8c744ab06d` |
-| 8 | `theorem` | [quotient_of_ne](../../../../RealFunctions/CorrectedControllerAnalytic.lean/declarations/quotient-of-ne.md) | 66 | `result-track:96843f713a7a910789a1975e58b3552fed8039280cbbc3c96523ea95fb1bbaf9` |
-| 9 | `theorem` | [W_mul_quotient](../../../../RealFunctions/CorrectedControllerAnalytic.lean/declarations/w-mul-quotient.md) | 72 | `result-track:1af2f494030f65a52b3d785e34fa28b9e38169f0950369475d84e4125ec2ee30` |
-| 10 | `theorem` | [quotient_half](../../../../RealFunctions/CorrectedControllerAnalytic.lean/declarations/quotient-half.md) | 78 | `result-track:0c9ed0c8a10ac486e511310958f79586b035af54265c6bea062e7d413bb0bf1d` |
-| 11 | `theorem` | [quotient_differentiableAt](../../../../RealFunctions/CorrectedControllerAnalytic.lean/declarations/quotient-differentiableat.md) | 83 | `result-track:1072a2812d9e3f58c15654cdb9ea9857d936957e2e75c6c155c132fde6dd50ad` |
-| 12 | `def` | [candidate](../../../../RealFunctions/CorrectedControllerAnalytic.lean/declarations/candidate.md) | 89 | `declaration-track:0daa335b5e6cb32e86002a64c5daa03415f14adf03861b5b2d97ec416ba4e521` |
-| 13 | `theorem` | [candidate_denominators_ne_zero](../../../../RealFunctions/CorrectedControllerAnalytic.lean/declarations/candidate-denominators-ne-zero.md) | 93 | `result-track:4658f8c18716e9adc9bb17111bacd22ea1de8f7254db468e2e4ef22ff577aac6` |
-| 14 | `theorem` | [candidate_differentiableAt](../../../../RealFunctions/CorrectedControllerAnalytic.lean/declarations/candidate-differentiableat.md) | 108 | `result-track:a05e49cf07395a79f8da37da4cd9ffef038db8f395fb42b8eea80207669ce4e4` |
+| 1 | `def` | [reducedW](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CorrectedControllerAnalytic.lean/declarations/reducedw.md) | 13 | `declaration-track:6faee1710b4c9f94c61d687c838c7eea5dcd03a640f4189e82d02e4dc96c430d` |
+| 2 | `theorem` | [W_factor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CorrectedControllerAnalytic.lean/declarations/w-factor.md) | 18 | `result-track:3dda6108734d6b3a541a00ffed18eaade3641eebdec76006ab28713a38108949` |
+| 3 | `theorem` | [reducedW_differentiable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CorrectedControllerAnalytic.lean/declarations/reducedw-differentiable.md) | 24 | `result-track:40b79f21691be3c0fb85df2452e81fd9dcaf7bfb9efa5f4fd5e1928dc494e96f` |
+| 4 | `theorem` | [reducedW_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CorrectedControllerAnalytic.lean/declarations/reducedw-ne-zero.md) | 31 | `result-track:9ebd3db6b7247481f1601fcc4a7919ee37c7f5797d7577f6d9150dc75cd67b40` |
+| 5 | `theorem` | [W_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CorrectedControllerAnalytic.lean/declarations/w-zero-iff.md) | 46 | `result-track:3f36be8f7916d9fdc6b331db7dee95f2f4e18f11c1aeb5649abc63ef2c1cf002` |
+| 6 | `theorem` | [reducedW_half](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CorrectedControllerAnalytic.lean/declarations/reducedw-half.md) | 51 | `result-track:cbd5ae6d44432ea6c016d8c5d87c4733cf4c93a6bc2d4237963661c30a50d796` |
+| 7 | `def` | [quotient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CorrectedControllerAnalytic.lean/declarations/quotient.md) | 63 | `declaration-track:f668a58fa5e00306cdd34fb70706f0dced6d3dcabfc76bfdd847dc8c744ab06d` |
+| 8 | `theorem` | [quotient_of_ne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CorrectedControllerAnalytic.lean/declarations/quotient-of-ne.md) | 66 | `result-track:96843f713a7a910789a1975e58b3552fed8039280cbbc3c96523ea95fb1bbaf9` |
+| 9 | `theorem` | [W_mul_quotient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CorrectedControllerAnalytic.lean/declarations/w-mul-quotient.md) | 72 | `result-track:1af2f494030f65a52b3d785e34fa28b9e38169f0950369475d84e4125ec2ee30` |
+| 10 | `theorem` | [quotient_half](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CorrectedControllerAnalytic.lean/declarations/quotient-half.md) | 78 | `result-track:0c9ed0c8a10ac486e511310958f79586b035af54265c6bea062e7d413bb0bf1d` |
+| 11 | `theorem` | [quotient_differentiableAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CorrectedControllerAnalytic.lean/declarations/quotient-differentiableat.md) | 83 | `result-track:1072a2812d9e3f58c15654cdb9ea9857d936957e2e75c6c155c132fde6dd50ad` |
+| 12 | `def` | [candidate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CorrectedControllerAnalytic.lean/declarations/candidate.md) | 89 | `declaration-track:0daa335b5e6cb32e86002a64c5daa03415f14adf03861b5b2d97ec416ba4e521` |
+| 13 | `theorem` | [candidate_denominators_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CorrectedControllerAnalytic.lean/declarations/candidate-denominators-ne-zero.md) | 93 | `result-track:4658f8c18716e9adc9bb17111bacd22ea1de8f7254db468e2e4ef22ff577aac6` |
+| 14 | `theorem` | [candidate_differentiableAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CorrectedControllerAnalytic.lean/declarations/candidate-differentiableat.md) | 108 | `result-track:a05e49cf07395a79f8da37da4cd9ffef038db8f395fb42b8eea80207669ce4e4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

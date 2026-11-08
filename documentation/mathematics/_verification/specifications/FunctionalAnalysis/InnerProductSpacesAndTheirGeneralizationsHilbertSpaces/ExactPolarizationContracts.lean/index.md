@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ExactPolarizationContracts.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ExactPolarizationContracts.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ExactPolarizationContracts.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ExactPolarizationContracts.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Polarization`](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/AnalysisPolarization.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Analysis.Polarization`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/AnalysisPolarization.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ExactPolarizationContracts.lean/declarations/example-source-edition-2.md) | 4 | `declaration-track:8f828cd17b840b1230325c2802d18edae531a20eb6041b6a6688d2991d26d001` |
-| 2 | `example` | [(anonymous)](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ExactPolarizationContracts.lean/declarations/example.md) | 5 | `declaration-track:2e0838c2ba2f9074b6b47c60428d38e49a1a97be996f40d42a5cef90bca7d237` |
-| 3 | `example` | [(anonymous)](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ExactPolarizationContracts.lean/declarations/example-source-edition-3.md) | 6 | `declaration-track:cb270e0f2e706b021f569013a65311d39a3f5f5209286443c7d6d89a06d2f5f3` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ExactPolarizationContracts.lean/declarations/example-source-edition-2.md) | 4 | `declaration-track:8f828cd17b840b1230325c2802d18edae531a20eb6041b6a6688d2991d26d001` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ExactPolarizationContracts.lean/declarations/example.md) | 5 | `declaration-track:2e0838c2ba2f9074b6b47c60428d38e49a1a97be996f40d42a5cef90bca7d237` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ExactPolarizationContracts.lean/declarations/example-source-edition-3.md) | 6 | `declaration-track:cb270e0f2e706b021f569013a65311d39a3f5f5209286443c7d6d89a06d2f5f3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

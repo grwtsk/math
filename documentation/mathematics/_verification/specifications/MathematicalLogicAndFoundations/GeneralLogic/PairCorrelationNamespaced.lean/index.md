@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PairCorrelationNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PairCorrelationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PairCorrelationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PairCorrelationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PairCorrelationPolicy](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PairCorrelationNamespaced.lean/declarations/paircorrelationpolicy.md) | 15 | `declaration-track:3a1046f10003da0b6614e857f3f744556fbbdfbf308dd83ad811fa5a8daac7b8` |
-| 2 | `def` | [montgomeryGUEPolicy](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PairCorrelationNamespaced.lean/declarations/montgomeryguepolicy.md) | 22 | `declaration-track:0126593b45a5ded6238fd7e098cdc4fdf647e9382fbe79f6e12bd1e5e926390b` |
-| 3 | `theorem` | [montgomeryGUEPolicy_regularizerOnly](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PairCorrelationNamespaced.lean/declarations/montgomeryguepolicy-regularizeronly.md) | 28 | `result-track:206fa080a3f80940bdcc6d1468bf8deb7edc68222e5c6f5aede36d26ad481670` |
+| 1 | `structure` | [PairCorrelationPolicy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PairCorrelationNamespaced.lean/declarations/paircorrelationpolicy.md) | 15 | `declaration-track:3a1046f10003da0b6614e857f3f744556fbbdfbf308dd83ad811fa5a8daac7b8` |
+| 2 | `def` | [montgomeryGUEPolicy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PairCorrelationNamespaced.lean/declarations/montgomeryguepolicy.md) | 22 | `declaration-track:0126593b45a5ded6238fd7e098cdc4fdf647e9382fbe79f6e12bd1e5e926390b` |
+| 3 | `theorem` | [montgomeryGUEPolicy_regularizerOnly](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PairCorrelationNamespaced.lean/declarations/montgomeryguepolicy-regularizeronly.md) | 28 | `result-track:206fa080a3f80940bdcc6d1468bf8deb7edc68222e5c6f5aede36d26ad481670` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

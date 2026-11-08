@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/GaloisDescentNamespaced.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/GaloisDescentNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GaloisDescentNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GaloisDescentNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [GaloisCocycle](../../../../GroupTheoryAndGeneralizations/GaloisDescentNamespaced.lean/declarations/galoiscocycle.md) | 25 | `declaration-track:f73226fdcf857b4cf34e1f3d7e1a87eb3ffc2f18e3eef6566ef7f6acc7e675c0` |
-| 2 | `structure` | [GaloisDescentDatum](../../../../GroupTheoryAndGeneralizations/GaloisDescentNamespaced.lean/declarations/galoisdescentdatum.md) | 39 | `declaration-track:db7b80b7bcaec1dcf049945a677cac09573fb3b87903af0dd681c2cde9e11115` |
-| 3 | `structure` | [EffectiveDescentCertificate](../../../../GroupTheoryAndGeneralizations/GaloisDescentNamespaced.lean/declarations/effectivedescentcertificate.md) | 51 | `declaration-track:21c9905406df2e8c0f2c7ccc6c98ad032cf7064b575806209baf3f4359f139bb` |
-| 4 | `theorem` | [EffectiveDescentCertificate.exists_descended](../../../../GroupTheoryAndGeneralizations/GaloisDescentNamespaced.lean/declarations/effectivedescentcertificate-exists-descended.md) | 62 | `result-track:cb3f6f10eb3e4159a44ba1c8af9c733cee9f16b6d438d608c7073b4ee65e0170` |
-| 5 | `theorem` | [EffectiveDescentCertificate.compatibility](../../../../GroupTheoryAndGeneralizations/GaloisDescentNamespaced.lean/declarations/effectivedescentcertificate-compatibility.md) | 78 | `result-track:2d6bb776434bc565ca3e32f601ba93b73f7f3607e529d069eba3959ef2046830` |
+| 1 | `structure` | [GaloisCocycle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GaloisDescentNamespaced.lean/declarations/galoiscocycle.md) | 25 | `declaration-track:f73226fdcf857b4cf34e1f3d7e1a87eb3ffc2f18e3eef6566ef7f6acc7e675c0` |
+| 2 | `structure` | [GaloisDescentDatum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GaloisDescentNamespaced.lean/declarations/galoisdescentdatum.md) | 39 | `declaration-track:db7b80b7bcaec1dcf049945a677cac09573fb3b87903af0dd681c2cde9e11115` |
+| 3 | `structure` | [EffectiveDescentCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GaloisDescentNamespaced.lean/declarations/effectivedescentcertificate.md) | 51 | `declaration-track:21c9905406df2e8c0f2c7ccc6c98ad032cf7064b575806209baf3f4359f139bb` |
+| 4 | `theorem` | [EffectiveDescentCertificate.exists_descended](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GaloisDescentNamespaced.lean/declarations/effectivedescentcertificate-exists-descended.md) | 62 | `result-track:cb3f6f10eb3e4159a44ba1c8af9c733cee9f16b6d438d608c7073b4ee65e0170` |
+| 5 | `theorem` | [EffectiveDescentCertificate.compatibility](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GaloisDescentNamespaced.lean/declarations/effectivedescentcertificate-compatibility.md) | 78 | `result-track:2d6bb776434bc565ca3e32f601ba93b73f7f3607e529d069eba3959ef2046830` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

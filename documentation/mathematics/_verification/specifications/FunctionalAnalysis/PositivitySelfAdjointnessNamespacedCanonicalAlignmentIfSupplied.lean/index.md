@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/PositivitySelfAdjointnessNamespacedCanonicalAlignmentIfSupplied.lean/index.md) · [Full source](../../../../FunctionalAnalysis/PositivitySelfAdjointnessNamespacedCanonicalAlignmentIfSupplied.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PositivitySelfAdjointnessNamespacedCanonicalAlignmentIfSupplied.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PositivitySelfAdjointnessNamespacedCanonicalAlignmentIfSupplied.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [positivity_selfadjoint_rules_out_offline](../../../../FunctionalAnalysis/PositivitySelfAdjointnessNamespacedCanonicalAlignmentIfSupplied.lean/declarations/positivity-selfadjoint-rules-out-offline.md) | 27 | `result-track:d0add8b565b39402f06714ce9f455ca9fc3e75f8d90ba95995b9d99420cc6fd8` |
-| 2 | `theorem` | [trace_identity_plus_positivity_forces_alignment](../../../../FunctionalAnalysis/PositivitySelfAdjointnessNamespacedCanonicalAlignmentIfSupplied.lean/declarations/trace-identity-plus-positivity-forces-alignment.md) | 32 | `result-track:8ed189de2047b29f6b1cf49d844ce3f5566d45b8e72693e99df917b3fa9d7228` |
-| 3 | `theorem` | [canonical_alignment_if_supplied](../../../../FunctionalAnalysis/PositivitySelfAdjointnessNamespacedCanonicalAlignmentIfSupplied.lean/declarations/canonical-alignment-if-supplied.md) | 37 | `result-track:7d2dfbbc60868fbcd183720d5811f4e4385cb0195b92cccea8160c9a2bc6068c` |
+| 1 | `theorem` | [positivity_selfadjoint_rules_out_offline](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PositivitySelfAdjointnessNamespacedCanonicalAlignmentIfSupplied.lean/declarations/positivity-selfadjoint-rules-out-offline.md) | 27 | `result-track:d0add8b565b39402f06714ce9f455ca9fc3e75f8d90ba95995b9d99420cc6fd8` |
+| 2 | `theorem` | [trace_identity_plus_positivity_forces_alignment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PositivitySelfAdjointnessNamespacedCanonicalAlignmentIfSupplied.lean/declarations/trace-identity-plus-positivity-forces-alignment.md) | 32 | `result-track:8ed189de2047b29f6b1cf49d844ce3f5566d45b8e72693e99df917b3fa9d7228` |
+| 3 | `theorem` | [canonical_alignment_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PositivitySelfAdjointnessNamespacedCanonicalAlignmentIfSupplied.lean/declarations/canonical-alignment-if-supplied.md) | 37 | `result-track:7d2dfbbc60868fbcd183720d5811f4e4385cb0195b92cccea8160c9a2bc6068c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

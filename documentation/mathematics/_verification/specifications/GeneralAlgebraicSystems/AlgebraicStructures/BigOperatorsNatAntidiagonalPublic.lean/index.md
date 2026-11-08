@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsNatAntidiagonalPublic.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsNatAntidiagonalPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsNatAntidiagonalPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsNatAntidiagonalPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [prod_antidiagonal_succ](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsNatAntidiagonalPublic.lean/declarations/prod-antidiagonal-succ.md) | 28 | `result-track:31349518630ad41ceac5ce6b3ae02a2a02ecb2ba5c28c498682244df62cc7aba` |
-| 2 | `theorem` | [prod_antidiagonal_swap](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsNatAntidiagonalPublic.lean/declarations/prod-antidiagonal-swap.md) | 34 | `result-track:45c4eb3737e643d1a9e231210731a4b4fa19c47a5e8d9798716d65efca4653e5` |
-| 3 | `theorem` | [prod_antidiagonal_succ'](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsNatAntidiagonalPublic.lean/declarations/prod-antidiagonal-succ-source-edition-2.md) | 40 | `result-track:fec3b830065bba92c3a412052cbf340ac20cec702a45b5534b59a7244ee3eb36` |
-| 4 | `theorem` | [prod_antidiagonal_subst](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsNatAntidiagonalPublic.lean/declarations/prod-antidiagonal-subst.md) | 46 | `result-track:d11ae425dc1abf45d6791cb71a296cd3b5081dd86ec2aaa84474ad5e187f7e51` |
-| 5 | `theorem` | [prod_antidiagonal_eq_prod_range_succ_mk](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsNatAntidiagonalPublic.lean/declarations/prod-antidiagonal-eq-prod-range-succ-mk.md) | 51 | `result-track:dbc61dac998d51db862e743f67fabd066de6d9f98b5b7998427828fe340819af` |
-| 6 | `theorem` | [prod_antidiagonal_eq_prod_range_succ](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsNatAntidiagonalPublic.lean/declarations/prod-antidiagonal-eq-prod-range-succ.md) | 59 | `result-track:a3675ca6079587036e2858f169488c120490f093b75587a0cefde5cf8a334504` |
+| 1 | `theorem` | [prod_antidiagonal_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsNatAntidiagonalPublic.lean/declarations/prod-antidiagonal-succ.md) | 28 | `result-track:31349518630ad41ceac5ce6b3ae02a2a02ecb2ba5c28c498682244df62cc7aba` |
+| 2 | `theorem` | [prod_antidiagonal_swap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsNatAntidiagonalPublic.lean/declarations/prod-antidiagonal-swap.md) | 34 | `result-track:45c4eb3737e643d1a9e231210731a4b4fa19c47a5e8d9798716d65efca4653e5` |
+| 3 | `theorem` | [prod_antidiagonal_succ'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsNatAntidiagonalPublic.lean/declarations/prod-antidiagonal-succ-source-edition-2.md) | 40 | `result-track:fec3b830065bba92c3a412052cbf340ac20cec702a45b5534b59a7244ee3eb36` |
+| 4 | `theorem` | [prod_antidiagonal_subst](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsNatAntidiagonalPublic.lean/declarations/prod-antidiagonal-subst.md) | 46 | `result-track:d11ae425dc1abf45d6791cb71a296cd3b5081dd86ec2aaa84474ad5e187f7e51` |
+| 5 | `theorem` | [prod_antidiagonal_eq_prod_range_succ_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsNatAntidiagonalPublic.lean/declarations/prod-antidiagonal-eq-prod-range-succ-mk.md) | 51 | `result-track:dbc61dac998d51db862e743f67fabd066de6d9f98b5b7998427828fe340819af` |
+| 6 | `theorem` | [prod_antidiagonal_eq_prod_range_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsNatAntidiagonalPublic.lean/declarations/prod-antidiagonal-eq-prod-range-succ.md) | 59 | `result-track:a3675ca6079587036e2858f169488c120490f093b75587a0cefde5cf8a334504` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

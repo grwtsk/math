@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative6SourceEdition2.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative6SourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative6SourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative6SourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [range_succ_sum](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative6SourceEdition2.lean/declarations/range-succ-sum.md) | 22 | `result-track:86f5851b75e3456fe214e465f1aa1195105b30d7e51209cf581f81c163f077a5` |
-| 2 | `theorem` | [sum_vonMangoldt_div_sqrt_le](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative6SourceEdition2.lean/declarations/sum-vonmangoldt-div-sqrt-le.md) | 29 | `result-track:7d01c00834e1a7cc67a04e8555de2d28fff5dca6def555543e357cb6edb041f3` |
-| 3 | `theorem` | [sum_vonMangoldt_div_sqrt_le_real](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative6SourceEdition2.lean/declarations/sum-vonmangoldt-div-sqrt-le-real.md) | 74 | `result-track:8a103fe814c8c1cffb017789130dbdb3d4cac823022c80350056c3b3b9eadc20` |
+| 1 | `theorem` | [range_succ_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative6SourceEdition2.lean/declarations/range-succ-sum.md) | 22 | `result-track:86f5851b75e3456fe214e465f1aa1195105b30d7e51209cf581f81c163f077a5` |
+| 2 | `theorem` | [sum_vonMangoldt_div_sqrt_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative6SourceEdition2.lean/declarations/sum-vonmangoldt-div-sqrt-le.md) | 29 | `result-track:7d01c00834e1a7cc67a04e8555de2d28fff5dca6def555543e357cb6edb041f3` |
+| 3 | `theorem` | [sum_vonMangoldt_div_sqrt_le_real](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative6SourceEdition2.lean/declarations/sum-vonmangoldt-div-sqrt-le-real.md) | 74 | `result-track:8a103fe814c8c1cffb017789130dbdb3d4cac823022c80350056c3b3b9eadc20` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/BasicRealStarNamespacedPublic.lean/index.md) · [Full source](../../../../RealFunctions/BasicRealStarNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BasicRealStarNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BasicRealStarNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../RealFunctions/BasicRealStarNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 26 | `declaration-track:ae8e257247889e9389acc16b993459d2eb6685728dd1ba16c805c89549f53b5d` |
-| 2 | `instance` | [(anonymous)](../../../../RealFunctions/BasicRealStarNamespacedPublic.lean/declarations/instance.md) | 29 | `declaration-track:1442631d45c48ffcc714fa7f4d6bd9ceac29e4c89b21c33d1137f93b1e98ebf5` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BasicRealStarNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 26 | `declaration-track:ae8e257247889e9389acc16b993459d2eb6685728dd1ba16c805c89549f53b5d` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BasicRealStarNamespacedPublic.lean/declarations/instance.md) | 29 | `declaration-track:1442631d45c48ffcc714fa7f4d6bd9ceac29e4c89b21c33d1137f93b1e98ebf5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

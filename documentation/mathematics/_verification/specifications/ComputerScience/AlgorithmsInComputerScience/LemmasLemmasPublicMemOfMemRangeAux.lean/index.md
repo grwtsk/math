@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/LemmasLemmasPublicMemOfMemRangeAux.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/LemmasLemmasPublicMemOfMemRangeAux.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LemmasLemmasPublicMemOfMemRangeAux.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LemmasLemmasPublicMemOfMemRangeAux.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,14 +60,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [mem_of_mem_range'_aux](../../../../../ComputerScience/AlgorithmsInComputerScience/LemmasLemmasPublicMemOfMemRangeAux.lean/declarations/mem-of-mem-range-aux.md) | 28 | `result-track:355af1bbdd576f94b82fa30be9068d1db55690ac10456841cc13fd1f37e05bb5` |
-| 2 | `theorem` | [mem_of_mem_range'](../../../../../ComputerScience/AlgorithmsInComputerScience/LemmasLemmasPublicMemOfMemRangeAux.lean/declarations/mem-of-mem-range.md) | 38 | `result-track:8eb28d22dcfcd240d2cc33f6389cbff622ccc174236028c4ec2d696db5dbd8ae` |
-| 3 | `theorem` | [size_eq](../../../../../ComputerScience/AlgorithmsInComputerScience/LemmasLemmasPublicMemOfMemRangeAux.lean/declarations/size-eq.md) | 42 | `result-track:0d726f957cf5a83a266e90e263af595ee249e8c6af1757150b135ac14982e2f0` |
-| 4 | `theorem` | [forIn'_loop_eq_forIn'_range'](../../../../../ComputerScience/AlgorithmsInComputerScience/LemmasLemmasPublicMemOfMemRangeAux.lean/declarations/forin-loop-eq-forin-range.md) | 62 | `result-track:770a11f3a1381791f14e80e45ef1b6c59d972a2543754d043128931f18b35816` |
-| 5 | `theorem` | [forIn'_eq_forIn'_range'](../../../../../ComputerScience/AlgorithmsInComputerScience/LemmasLemmasPublicMemOfMemRangeAux.lean/declarations/forin-eq-forin-range-source-edition-2.md) | 80 | `result-track:f3251d71821b53c0ab5ee24ed0549559824132e0474014575e7d0f06372d2ecb` |
-| 6 | `theorem` | [forIn_eq_forIn_range'](../../../../../ComputerScience/AlgorithmsInComputerScience/LemmasLemmasPublicMemOfMemRangeAux.lean/declarations/forin-eq-forin-range.md) | 88 | `result-track:b331eac84e7e25435a8608d0bde94f474d1c1af31c1de188d285cb063802e276` |
-| 7 | `theorem` | [forM_loop_eq_forM_range'](../../../../../ComputerScience/AlgorithmsInComputerScience/LemmasLemmasPublicMemOfMemRangeAux.lean/declarations/form-loop-eq-form-range.md) | 93 | `result-track:5c626f4b25e23db63b0fe200bae04bcd8375f66dabc8b23f80debe42cfda4338` |
-| 8 | `theorem` | [forM_eq_forM_range'](../../../../../ComputerScience/AlgorithmsInComputerScience/LemmasLemmasPublicMemOfMemRangeAux.lean/declarations/form-eq-form-range.md) | 106 | `result-track:d0668580237365630e8763022e465fca0d96845c6164dd0501d58eb0452baf28` |
+| 1 | `theorem` | [mem_of_mem_range'_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LemmasLemmasPublicMemOfMemRangeAux.lean/declarations/mem-of-mem-range-aux.md) | 28 | `result-track:355af1bbdd576f94b82fa30be9068d1db55690ac10456841cc13fd1f37e05bb5` |
+| 2 | `theorem` | [mem_of_mem_range'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LemmasLemmasPublicMemOfMemRangeAux.lean/declarations/mem-of-mem-range.md) | 38 | `result-track:8eb28d22dcfcd240d2cc33f6389cbff622ccc174236028c4ec2d696db5dbd8ae` |
+| 3 | `theorem` | [size_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LemmasLemmasPublicMemOfMemRangeAux.lean/declarations/size-eq.md) | 42 | `result-track:0d726f957cf5a83a266e90e263af595ee249e8c6af1757150b135ac14982e2f0` |
+| 4 | `theorem` | [forIn'_loop_eq_forIn'_range'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LemmasLemmasPublicMemOfMemRangeAux.lean/declarations/forin-loop-eq-forin-range.md) | 62 | `result-track:770a11f3a1381791f14e80e45ef1b6c59d972a2543754d043128931f18b35816` |
+| 5 | `theorem` | [forIn'_eq_forIn'_range'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LemmasLemmasPublicMemOfMemRangeAux.lean/declarations/forin-eq-forin-range-source-edition-2.md) | 80 | `result-track:f3251d71821b53c0ab5ee24ed0549559824132e0474014575e7d0f06372d2ecb` |
+| 6 | `theorem` | [forIn_eq_forIn_range'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LemmasLemmasPublicMemOfMemRangeAux.lean/declarations/forin-eq-forin-range.md) | 88 | `result-track:b331eac84e7e25435a8608d0bde94f474d1c1af31c1de188d285cb063802e276` |
+| 7 | `theorem` | [forM_loop_eq_forM_range'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LemmasLemmasPublicMemOfMemRangeAux.lean/declarations/form-loop-eq-form-range.md) | 93 | `result-track:5c626f4b25e23db63b0fe200bae04bcd8375f66dabc8b23f80debe42cfda4338` |
+| 8 | `theorem` | [forM_eq_forM_range'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LemmasLemmasPublicMemOfMemRangeAux.lean/declarations/form-eq-form-range.md) | 106 | `result-track:d0668580237365630e8763022e465fca0d96845c6164dd0501d58eb0452baf28` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

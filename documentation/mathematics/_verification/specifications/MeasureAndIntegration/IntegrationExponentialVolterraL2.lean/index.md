@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/IntegrationExponentialVolterraL2.lean/index.md) · [Full source](../../../../MeasureAndIntegration/IntegrationExponentialVolterraL2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntegrationExponentialVolterraL2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntegrationExponentialVolterraL2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [exponentialVolterra](../../../../MeasureAndIntegration/IntegrationExponentialVolterraL2.lean/declarations/exponentialvolterra.md) | 25 | `declaration-track:fa94dd13cd290fbfc60678456b765de8ee06e73fa0d546b24bcb81ec4fc69d10` |
-| 2 | `theorem` | [exponentialVolterra_eq_damped_primitive](../../../../MeasureAndIntegration/IntegrationExponentialVolterraL2.lean/declarations/exponentialvolterra-eq-damped-primitive.md) | 30 | `result-track:f7b8868cbff34ccaaab0058bfaaba1de0fabd82fb3c404ba013d5b3499ea6a3c` |
-| 3 | `theorem` | [sq_integral_le_of_damped_deriv](../../../../MeasureAndIntegration/IntegrationExponentialVolterraL2.lean/declarations/sq-integral-le-of-damped-deriv.md) | 45 | `result-track:d948c5fb638ca421e8a784826e2b058f7f301b14246e43bbf68187cb9f79bb62` |
-| 4 | `theorem` | [exponentialVolterra_sq_integral_le](../../../../MeasureAndIntegration/IntegrationExponentialVolterraL2.lean/declarations/exponentialvolterra-sq-integral-le.md) | 112 | `result-track:eefeba45bf94044fd622fe07851db82e49bf64264e34897348e829f448c17d6a` |
+| 1 | `def` | [exponentialVolterra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntegrationExponentialVolterraL2.lean/declarations/exponentialvolterra.md) | 25 | `declaration-track:fa94dd13cd290fbfc60678456b765de8ee06e73fa0d546b24bcb81ec4fc69d10` |
+| 2 | `theorem` | [exponentialVolterra_eq_damped_primitive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntegrationExponentialVolterraL2.lean/declarations/exponentialvolterra-eq-damped-primitive.md) | 30 | `result-track:f7b8868cbff34ccaaab0058bfaaba1de0fabd82fb3c404ba013d5b3499ea6a3c` |
+| 3 | `theorem` | [sq_integral_le_of_damped_deriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntegrationExponentialVolterraL2.lean/declarations/sq-integral-le-of-damped-deriv.md) | 45 | `result-track:d948c5fb638ca421e8a784826e2b058f7f301b14246e43bbf68187cb9f79bb62` |
+| 4 | `theorem` | [exponentialVolterra_sq_integral_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntegrationExponentialVolterraL2.lean/declarations/exponentialvolterra-sq-integral-le.md) | 112 | `result-track:eefeba45bf94044fd622fe07851db82e49bf64264e34897348e829f448c17d6a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

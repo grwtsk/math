@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/AnalyticAffineTopology.lean/index.md) · [Full source](../../../../GeneralTopology/AnalyticAffineTopology.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AnalyticAffineTopology.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AnalyticAffineTopology.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.AlgebraicGeometry.AnalyticAffineBridge`](../../../../Geometry/AnalyticAffineBridge.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.HolomorphicEvaluationTopology`](../../../../GeneralTopology/HolomorphicEvaluationTopology.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.AlgebraicGeometry.AnalyticAffineBridge`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AnalyticAffineBridge.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.HolomorphicEvaluationTopology`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicEvaluationTopology.lean/index.md) — import line 2; pinned internal source present.
 - `Mathlib.Algebra.Polynomial.Eval.Defs` — import line 3; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -59,21 +59,21 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [pointMap_continuous](../../../../GeneralTopology/AnalyticAffineTopology.lean/declarations/pointmap-continuous.md) | 22 | `result-track:fcb37dfdd5cb29fa536592fafb50852347f280dcb4e1aa5b0d0a08835f759c26` |
-| 2 | `def` | [continuousPointMap](../../../../GeneralTopology/AnalyticAffineTopology.lean/declarations/continuouspointmap.md) | 28 | `declaration-track:da6573192712ee8873b9da49355c1aed202094ba2dda5a13e133c9a0bf867420` |
-| 3 | `theorem` | [continuousPointMap_apply](../../../../GeneralTopology/AnalyticAffineTopology.lean/declarations/continuouspointmap-apply.md) | 35 | `result-track:75bd90ec3ba1bbfb70f454aa8a5218ac8ff53ef7b8eb6d880681d4ad035f027a` |
-| 4 | `def` | [constantRingHom](../../../../GeneralTopology/AnalyticAffineTopology.lean/declarations/constantringhom.md) | 44 | `declaration-track:187a5188ff757c5f2521f8f0a4fc235fabeb070485fe71c3f732f42443c86dde` |
-| 5 | `def` | [coordinateRingMap](../../../../GeneralTopology/AnalyticAffineTopology.lean/declarations/coordinateringmap.md) | 63 | `declaration-track:25ca26cc68c03ec80d3c3ff0662dd0e479118d6756a25dc623818e4c5295c48a` |
-| 6 | `theorem` | [coordinateRingMap_C](../../../../GeneralTopology/AnalyticAffineTopology.lean/declarations/coordinateringmap-c.md) | 68 | `result-track:3072b13b2d599ea724d977714116d03b9dc26fa9071f6f498655f9a556d236ec` |
-| 7 | `theorem` | [coordinateRingMap_X](../../../../GeneralTopology/AnalyticAffineTopology.lean/declarations/coordinateringmap-x.md) | 75 | `result-track:8f882b0baa7978055f56a5c04bb6e658e26fb4f2494b2dd8d7c3bd12cb5e9077` |
-| 8 | `theorem` | [coordinateRingMap_eval](../../../../GeneralTopology/AnalyticAffineTopology.lean/declarations/coordinateringmap-eval.md) | 81 | `result-track:c53b937873f92f164a4ae4dcd23427023027a713011b2c9e6de59f2ed005d148` |
-| 9 | `theorem` | [restriction_coordinateRingMap](../../../../GeneralTopology/AnalyticAffineTopology.lean/declarations/restriction-coordinateringmap.md) | 94 | `result-track:3b5a3ff9824aa7c1bcb7337375edb44a9a01782dced66852971f2473d1f3cd97` |
-| 10 | `def` | [bridge](../../../../GeneralTopology/AnalyticAffineTopology.lean/declarations/bridge.md) | 105 | `declaration-track:d305ba1c33f0aae0de2c9112c77553a2f5392d90b2d694554f42484c3119d784` |
-| 11 | `theorem` | [bridge_pointMap_continuous](../../../../GeneralTopology/AnalyticAffineTopology.lean/declarations/bridge-pointmap-continuous.md) | 109 | `result-track:17b7a8ea61191fd4ce1e88d9a252bb8ca3c7421690b880b83bdbd322567fcb14` |
-| 12 | `theorem` | [bridge_pointMap_asIdeal](../../../../GeneralTopology/AnalyticAffineTopology.lean/declarations/bridge-pointmap-asideal.md) | 113 | `result-track:a95162e4d9f357e8e34f579cd0f73b8ab79688cb9615185a88f12c082656deea` |
-| 13 | `def` | [constantBridge](../../../../GeneralTopology/AnalyticAffineTopology.lean/declarations/constantbridge.md) | 125 | `declaration-track:c7fa7b31563babae4718e3f0af9a66d5b622d47a1fe7cb01f88aab36c08475d3` |
-| 14 | `theorem` | [constantBridge_pointMap_eq](../../../../GeneralTopology/AnalyticAffineTopology.lean/declarations/constantbridge-pointmap-eq.md) | 129 | `result-track:d33ad66bd83f80864c849833958ad9ee672b49b4ac53f3c06dac6807fab52d12` |
-| 15 | `theorem` | [constantBridge_whole_not_injective](../../../../GeneralTopology/AnalyticAffineTopology.lean/declarations/constantbridge-whole-not-injective.md) | 136 | `result-track:71eabd08f5302c1d2e2e9e3754b7503857bfb3819d98de4120cd82f5942706ee` |
+| 1 | `theorem` | [pointMap_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AnalyticAffineTopology.lean/declarations/pointmap-continuous.md) | 22 | `result-track:fcb37dfdd5cb29fa536592fafb50852347f280dcb4e1aa5b0d0a08835f759c26` |
+| 2 | `def` | [continuousPointMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AnalyticAffineTopology.lean/declarations/continuouspointmap.md) | 28 | `declaration-track:da6573192712ee8873b9da49355c1aed202094ba2dda5a13e133c9a0bf867420` |
+| 3 | `theorem` | [continuousPointMap_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AnalyticAffineTopology.lean/declarations/continuouspointmap-apply.md) | 35 | `result-track:75bd90ec3ba1bbfb70f454aa8a5218ac8ff53ef7b8eb6d880681d4ad035f027a` |
+| 4 | `def` | [constantRingHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AnalyticAffineTopology.lean/declarations/constantringhom.md) | 44 | `declaration-track:187a5188ff757c5f2521f8f0a4fc235fabeb070485fe71c3f732f42443c86dde` |
+| 5 | `def` | [coordinateRingMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AnalyticAffineTopology.lean/declarations/coordinateringmap.md) | 63 | `declaration-track:25ca26cc68c03ec80d3c3ff0662dd0e479118d6756a25dc623818e4c5295c48a` |
+| 6 | `theorem` | [coordinateRingMap_C](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AnalyticAffineTopology.lean/declarations/coordinateringmap-c.md) | 68 | `result-track:3072b13b2d599ea724d977714116d03b9dc26fa9071f6f498655f9a556d236ec` |
+| 7 | `theorem` | [coordinateRingMap_X](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AnalyticAffineTopology.lean/declarations/coordinateringmap-x.md) | 75 | `result-track:8f882b0baa7978055f56a5c04bb6e658e26fb4f2494b2dd8d7c3bd12cb5e9077` |
+| 8 | `theorem` | [coordinateRingMap_eval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AnalyticAffineTopology.lean/declarations/coordinateringmap-eval.md) | 81 | `result-track:c53b937873f92f164a4ae4dcd23427023027a713011b2c9e6de59f2ed005d148` |
+| 9 | `theorem` | [restriction_coordinateRingMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AnalyticAffineTopology.lean/declarations/restriction-coordinateringmap.md) | 94 | `result-track:3b5a3ff9824aa7c1bcb7337375edb44a9a01782dced66852971f2473d1f3cd97` |
+| 10 | `def` | [bridge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AnalyticAffineTopology.lean/declarations/bridge.md) | 105 | `declaration-track:d305ba1c33f0aae0de2c9112c77553a2f5392d90b2d694554f42484c3119d784` |
+| 11 | `theorem` | [bridge_pointMap_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AnalyticAffineTopology.lean/declarations/bridge-pointmap-continuous.md) | 109 | `result-track:17b7a8ea61191fd4ce1e88d9a252bb8ca3c7421690b880b83bdbd322567fcb14` |
+| 12 | `theorem` | [bridge_pointMap_asIdeal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AnalyticAffineTopology.lean/declarations/bridge-pointmap-asideal.md) | 113 | `result-track:a95162e4d9f357e8e34f579cd0f73b8ab79688cb9615185a88f12c082656deea` |
+| 13 | `def` | [constantBridge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AnalyticAffineTopology.lean/declarations/constantbridge.md) | 125 | `declaration-track:c7fa7b31563babae4718e3f0af9a66d5b622d47a1fe7cb01f88aab36c08475d3` |
+| 14 | `theorem` | [constantBridge_pointMap_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AnalyticAffineTopology.lean/declarations/constantbridge-pointmap-eq.md) | 129 | `result-track:d33ad66bd83f80864c849833958ad9ee672b49b4ac53f3c06dac6807fab52d12` |
+| 15 | `theorem` | [constantBridge_whole_not_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AnalyticAffineTopology.lean/declarations/constantbridge-whole-not-injective.md) | 136 | `result-track:71eabd08f5302c1d2e2e9e3754b7503857bfb3819d98de4120cd82f5942706ee` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

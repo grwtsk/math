@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/MultiplicativeNumberTheory/SourceAdaptiveVaughanZeroCoupling.lean/index.md) · [Full source](../../../../../NumberTheory/MultiplicativeNumberTheory/SourceAdaptiveVaughanZeroCoupling.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/SourceAdaptiveVaughanZeroCoupling.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/SourceAdaptiveVaughanZeroCoupling.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [adaptiveCenteredJoint](../../../../../NumberTheory/MultiplicativeNumberTheory/SourceAdaptiveVaughanZeroCoupling.lean/declarations/adaptivecenteredjoint.md) | 23 | `declaration-track:a24286b2a9a54dd7c9149685f8d96f338ed7229e11f76fd0a8f202ec1e869d48` |
-| 2 | `theorem` | [adaptiveCenteredJoint_eq_residual](../../../../../NumberTheory/MultiplicativeNumberTheory/SourceAdaptiveVaughanZeroCoupling.lean/declarations/adaptivecenteredjoint-eq-residual.md) | 26 | `result-track:fe82f3646d75d321d05853df03474e0b0167c6afcca1ee0a3e4ee6ae8e214ccf` |
-| 3 | `theorem` | [actual_signed_head_add_twice_joint_eq](../../../../../NumberTheory/MultiplicativeNumberTheory/SourceAdaptiveVaughanZeroCoupling.lean/declarations/actual-signed-head-add-twice-joint-eq.md) | 32 | `result-track:d42e4bcf4c62768cc1cc50d450a1ff0c4f380d7a14a5480b7a6adcd2f1149866` |
-| 4 | `theorem` | [actual_moving_head_joint_two_sided](../../../../../NumberTheory/MultiplicativeNumberTheory/SourceAdaptiveVaughanZeroCoupling.lean/declarations/actual-moving-head-joint-two-sided.md) | 41 | `result-track:634aa98003119dc9a602a11a45f7191d20998fa449237658ad3c8fd38fecac96` |
+| 1 | `def` | [adaptiveCenteredJoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/SourceAdaptiveVaughanZeroCoupling.lean/declarations/adaptivecenteredjoint.md) | 23 | `declaration-track:a24286b2a9a54dd7c9149685f8d96f338ed7229e11f76fd0a8f202ec1e869d48` |
+| 2 | `theorem` | [adaptiveCenteredJoint_eq_residual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/SourceAdaptiveVaughanZeroCoupling.lean/declarations/adaptivecenteredjoint-eq-residual.md) | 26 | `result-track:fe82f3646d75d321d05853df03474e0b0167c6afcca1ee0a3e4ee6ae8e214ccf` |
+| 3 | `theorem` | [actual_signed_head_add_twice_joint_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/SourceAdaptiveVaughanZeroCoupling.lean/declarations/actual-signed-head-add-twice-joint-eq.md) | 32 | `result-track:d42e4bcf4c62768cc1cc50d450a1ff0c4f380d7a14a5480b7a6adcd2f1149866` |
+| 4 | `theorem` | [actual_moving_head_joint_two_sided](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/SourceAdaptiveVaughanZeroCoupling.lean/declarations/actual-moving-head-joint-two-sided.md) | 41 | `result-track:634aa98003119dc9a602a11a45f7191d20998fa449237658ad3c8fd38fecac96` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

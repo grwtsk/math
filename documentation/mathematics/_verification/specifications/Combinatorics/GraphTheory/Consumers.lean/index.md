@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/Consumers.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/Consumers.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/Consumers.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/Consumers.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.UnitDistanceGraph.Moser`](../../../../../Combinatorics/GraphTheory/UnitDistanceGraphMoserHistoricalSourceEdition2.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.UnitDistanceGraph.Moser`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/UnitDistanceGraphMoserHistoricalSourceEdition2.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../Combinatorics/GraphTheory/Consumers.lean/declarations/example-source-edition-3.md) | 4 | `declaration-track:c979766ce72a770a05590b930989dd3650ceaaa8ce441e2dc17deb85cb10b0eb` |
-| 2 | `example` | [(anonymous)](../../../../../Combinatorics/GraphTheory/Consumers.lean/declarations/example-source-edition-2.md) | 5 | `declaration-track:7a27c477251379d51e25f78dc23b42b92736799f1745bf87d6c89881c690bc34` |
-| 3 | `example` | [(anonymous)](../../../../../Combinatorics/GraphTheory/Consumers.lean/declarations/example.md) | 7 | `declaration-track:09e97b4ee3ef0220ebae5e99ff5ec2ebcd375b46555760e66332be417d48c41e` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/Consumers.lean/declarations/example-source-edition-3.md) | 4 | `declaration-track:c979766ce72a770a05590b930989dd3650ceaaa8ce441e2dc17deb85cb10b0eb` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/Consumers.lean/declarations/example-source-edition-2.md) | 5 | `declaration-track:7a27c477251379d51e25f78dc23b42b92736799f1745bf87d6c89881c690bc34` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/Consumers.lean/declarations/example.md) | 7 | `declaration-track:09e97b4ee3ef0220ebae5e99ff5ec2ebcd375b46555760e66332be417d48c41e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

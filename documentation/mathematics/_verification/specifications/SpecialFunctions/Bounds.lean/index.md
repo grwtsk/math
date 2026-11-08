@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../SpecialFunctions/Bounds.lean/index.md) · [Full source](../../../../SpecialFunctions/Bounds.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/Bounds.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/Bounds.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `macro_rules` | [(anonymous)](../../../../SpecialFunctions/Bounds.lean/declarations/macro-rules.md) | 36 | `declaration-track:61e23beef60cbb437eb081d3eed790c0bfd6c4060bde0578b2a3d5d8d8d6da84` |
-| 2 | `theorem` | [sin_lt](../../../../SpecialFunctions/Bounds.lean/declarations/sin-lt.md) | 45 | `result-track:ecb71be644a3da1d3798515397bcc244e8e89a27f1af867e441f037d967f0023` |
-| 3 | `theorem` | [sin_gt_sub_cube](../../../../SpecialFunctions/Bounds.lean/declarations/sin-gt-sub-cube.md) | 63 | `result-track:57768a6469c9e331de5279e5624d35627468976a7187b9903b6fea2bda1291e6` |
-| 4 | `theorem` | [deriv_tan_sub_id](../../../../SpecialFunctions/Bounds.lean/declarations/deriv-tan-sub-id.md) | 76 | `result-track:149c3b958c4f323e8d17c261aea7dc0d3a09537e6043e992049f3e4943e05aac` |
-| 5 | `theorem` | [lt_tan](../../../../SpecialFunctions/Bounds.lean/declarations/lt-tan.md) | 85 | `result-track:a8ba467ab05ce262e7ac4bb65fe7fe7d58cb1a9b9c68cafb4c4d5c7593c186c1` |
-| 6 | `theorem` | [le_tan](../../../../SpecialFunctions/Bounds.lean/declarations/le-tan.md) | 120 | `result-track:ec3a77fb44dc1996e5bd928f27a06be16fa98f70dc7ab6ef8427f98e6ebf662e` |
-| 7 | `theorem` | [cos_lt_one_div_sqrt_sq_add_one](../../../../SpecialFunctions/Bounds.lean/declarations/cos-lt-one-div-sqrt-sq-add-one.md) | 126 | `result-track:60b309ed87c1e2b317cc951323b6514896bfe215c05e0d2e08be898432fc0b33` |
-| 8 | `theorem` | [cos_le_one_div_sqrt_sq_add_one](../../../../SpecialFunctions/Bounds.lean/declarations/cos-le-one-div-sqrt-sq-add-one.md) | 150 | `result-track:562f43cf68b290503b7f83b8ac34728c01e72d7764e0e24e8c01f2eae8a86324` |
+| 1 | `macro_rules` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/Bounds.lean/declarations/macro-rules.md) | 36 | `declaration-track:61e23beef60cbb437eb081d3eed790c0bfd6c4060bde0578b2a3d5d8d8d6da84` |
+| 2 | `theorem` | [sin_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/Bounds.lean/declarations/sin-lt.md) | 45 | `result-track:ecb71be644a3da1d3798515397bcc244e8e89a27f1af867e441f037d967f0023` |
+| 3 | `theorem` | [sin_gt_sub_cube](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/Bounds.lean/declarations/sin-gt-sub-cube.md) | 63 | `result-track:57768a6469c9e331de5279e5624d35627468976a7187b9903b6fea2bda1291e6` |
+| 4 | `theorem` | [deriv_tan_sub_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/Bounds.lean/declarations/deriv-tan-sub-id.md) | 76 | `result-track:149c3b958c4f323e8d17c261aea7dc0d3a09537e6043e992049f3e4943e05aac` |
+| 5 | `theorem` | [lt_tan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/Bounds.lean/declarations/lt-tan.md) | 85 | `result-track:a8ba467ab05ce262e7ac4bb65fe7fe7d58cb1a9b9c68cafb4c4d5c7593c186c1` |
+| 6 | `theorem` | [le_tan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/Bounds.lean/declarations/le-tan.md) | 120 | `result-track:ec3a77fb44dc1996e5bd928f27a06be16fa98f70dc7ab6ef8427f98e6ebf662e` |
+| 7 | `theorem` | [cos_lt_one_div_sqrt_sq_add_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/Bounds.lean/declarations/cos-lt-one-div-sqrt-sq-add-one.md) | 126 | `result-track:60b309ed87c1e2b317cc951323b6514896bfe215c05e0d2e08be898432fc0b33` |
+| 8 | `theorem` | [cos_le_one_div_sqrt_sq_add_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/Bounds.lean/declarations/cos-le-one-div-sqrt-sq-add-one.md) | 150 | `result-track:562f43cf68b290503b7f83b8ac34728c01e72d7764e0e24e8c01f2eae8a86324` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

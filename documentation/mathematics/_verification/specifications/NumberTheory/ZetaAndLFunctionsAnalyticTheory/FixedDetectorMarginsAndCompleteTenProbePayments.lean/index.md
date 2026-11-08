@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FixedDetectorMarginsAndCompleteTenProbePayments.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FixedDetectorMarginsAndCompleteTenProbePayments.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FixedDetectorMarginsAndCompleteTenProbePayments.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FixedDetectorMarginsAndCompleteTenProbePayments.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [quantitative_detector_margin](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FixedDetectorMarginsAndCompleteTenProbePayments.lean/declarations/quantitative-detector-margin.md) | 22 | `result-track:66a9e5b6a94b870688fe0f28d506f90e876c27e8efa04fcd5beb7c0d3de5791c` |
-| 2 | `theorem` | [complete_ninth_absolute_payment](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FixedDetectorMarginsAndCompleteTenProbePayments.lean/declarations/complete-ninth-absolute-payment.md) | 35 | `result-track:fb32526b9b9fee1cae8c8d160b4fcc156f10ef20a0675930ccee8160d81e0b39` |
-| 3 | `theorem` | [ten_probe_absolute_cap_payment](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FixedDetectorMarginsAndCompleteTenProbePayments.lean/declarations/ten-probe-absolute-cap-payment.md) | 48 | `result-track:9942b256ee4015abbc734c1f7fb2a5c01f555ec63d799a9679055adb786b1444` |
-| 4 | `theorem` | [margin_is_positive](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FixedDetectorMarginsAndCompleteTenProbePayments.lean/declarations/margin-is-positive.md) | 61 | `result-track:a80151a27a0fd69863295a4e2ed4f75f14471e4b9ef8d6ff42e3d59d9c0ac4d2` |
+| 1 | `theorem` | [quantitative_detector_margin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FixedDetectorMarginsAndCompleteTenProbePayments.lean/declarations/quantitative-detector-margin.md) | 22 | `result-track:66a9e5b6a94b870688fe0f28d506f90e876c27e8efa04fcd5beb7c0d3de5791c` |
+| 2 | `theorem` | [complete_ninth_absolute_payment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FixedDetectorMarginsAndCompleteTenProbePayments.lean/declarations/complete-ninth-absolute-payment.md) | 35 | `result-track:fb32526b9b9fee1cae8c8d160b4fcc156f10ef20a0675930ccee8160d81e0b39` |
+| 3 | `theorem` | [ten_probe_absolute_cap_payment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FixedDetectorMarginsAndCompleteTenProbePayments.lean/declarations/ten-probe-absolute-cap-payment.md) | 48 | `result-track:9942b256ee4015abbc734c1f7fb2a5c01f555ec63d799a9679055adb786b1444` |
+| 4 | `theorem` | [margin_is_positive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FixedDetectorMarginsAndCompleteTenProbePayments.lean/declarations/margin-is-positive.md) | 61 | `result-track:a80151a27a0fd69863295a4e2ed4f75f14471e4b9ef8d6ff42e3d59d9c0ac4d2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

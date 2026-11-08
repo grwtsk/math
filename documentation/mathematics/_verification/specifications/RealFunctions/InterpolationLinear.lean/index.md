@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/InterpolationLinear.lean/index.md) · [Full source](../../../../RealFunctions/InterpolationLinear.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InterpolationLinear.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InterpolationLinear.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [linear](../../../../RealFunctions/InterpolationLinear.lean/declarations/linear.md) | 11 | `declaration-track:f3333910a2d20c8aedf3311c8c34bf7ff4dc77cbd18c605f4368aeef00085ed6` |
-| 2 | `theorem` | [left_endpoint](../../../../RealFunctions/InterpolationLinear.lean/declarations/left-endpoint.md) | 14 | `result-track:cb83c71b857062770c8d817bf4f1a66e5c241dfc1e5d33bc102097e3a6fdc86d` |
-| 3 | `theorem` | [right_endpoint](../../../../RealFunctions/InterpolationLinear.lean/declarations/right-endpoint.md) | 18 | `result-track:a450358b1eda17cf8bf42c6f48cccd02609bdc2ca3c9532045a803fe1fdcf59b` |
-| 4 | `def` | [exactLinear](../../../../RealFunctions/InterpolationLinear.lean/declarations/exactlinear.md) | 22 | `declaration-track:9e5fe2c1124a5f63bc349293f6283f4f5bf65ad82c1e8cb51ea62622d881d4da` |
-| 5 | `def` | [scalarLinear](../../../../RealFunctions/InterpolationLinear.lean/declarations/scalarlinear.md) | 30 | `declaration-track:6f6708f94bfd16b51e13969f695092e1a164235eae2a78301f4ab1c8adccc2c6` |
-| 6 | `theorem` | [monotone](../../../../RealFunctions/InterpolationLinear.lean/declarations/monotone.md) | 33 | `result-track:06c74d02c18f30275e2213c36978af6f29ad48d7fd983fb7369064b806472da7` |
+| 1 | `def` | [linear](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InterpolationLinear.lean/declarations/linear.md) | 11 | `declaration-track:f3333910a2d20c8aedf3311c8c34bf7ff4dc77cbd18c605f4368aeef00085ed6` |
+| 2 | `theorem` | [left_endpoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InterpolationLinear.lean/declarations/left-endpoint.md) | 14 | `result-track:cb83c71b857062770c8d817bf4f1a66e5c241dfc1e5d33bc102097e3a6fdc86d` |
+| 3 | `theorem` | [right_endpoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InterpolationLinear.lean/declarations/right-endpoint.md) | 18 | `result-track:a450358b1eda17cf8bf42c6f48cccd02609bdc2ca3c9532045a803fe1fdcf59b` |
+| 4 | `def` | [exactLinear](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InterpolationLinear.lean/declarations/exactlinear.md) | 22 | `declaration-track:9e5fe2c1124a5f63bc349293f6283f4f5bf65ad82c1e8cb51ea62622d881d4da` |
+| 5 | `def` | [scalarLinear](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InterpolationLinear.lean/declarations/scalarlinear.md) | 30 | `declaration-track:6f6708f94bfd16b51e13969f695092e1a164235eae2a78301f4ab1c8adccc2c6` |
+| 6 | `theorem` | [monotone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InterpolationLinear.lean/declarations/monotone.md) | 33 | `result-track:06c74d02c18f30275e2213c36978af6f29ad48d7fd983fb7369064b806472da7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

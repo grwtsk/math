@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/FiniteSquareBudget.lean/index.md) · [Full source](../../../../RealFunctions/FiniteSquareBudget.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FiniteSquareBudget.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FiniteSquareBudget.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,13 +61,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sum_sub_sq_le](../../../../RealFunctions/FiniteSquareBudget.lean/declarations/sum-sub-sq-le.md) | 27 | `result-track:166b382912228fb41292132c7022177226149dfe57234c289e7e13af254c21c1` |
-| 2 | `theorem` | [sum_sq_le_twice_sub_sq](../../../../RealFunctions/FiniteSquareBudget.lean/declarations/sum-sq-le-twice-sub-sq.md) | 38 | `result-track:17ecc52729cea8b56aa6e4cd765560e428722d3afe7def7238203a3b7312b01d` |
-| 3 | `theorem` | [card_mul_sq_le](../../../../RealFunctions/FiniteSquareBudget.lean/declarations/card-mul-sq-le.md) | 49 | `result-track:a48944b7d9f591406639318bcc6723eccd4a0d58001b914786053c047fffb2da` |
-| 4 | `theorem` | [card_mul_sq_le_of_zero](../../../../RealFunctions/FiniteSquareBudget.lean/declarations/card-mul-sq-le-of-zero.md) | 67 | `result-track:419ce8dd6bf1940f4a90386ac90ae32b9d44c5c65b8c3d64b247ec08893fe6e6` |
-| 5 | `theorem` | [positive_of_complete_budget](../../../../RealFunctions/FiniteSquareBudget.lean/declarations/positive-of-complete-budget.md) | 84 | `result-track:504aedd51c84e7ad07396ba09e73e8d0c3e09c5e9d570d54a87522d59415b276` |
-| 6 | `theorem` | [correction_omission_control](../../../../RealFunctions/FiniteSquareBudget.lean/declarations/correction-omission-control.md) | 93 | `result-track:125408dcf3734d4dbd7d2ed403b23091102a1034f82c0dbacddcf25853b0a7d5` |
-| 7 | `theorem` | [zero_margin_control](../../../../RealFunctions/FiniteSquareBudget.lean/declarations/zero-margin-control.md) | 97 | `result-track:8c5cc15edaf5ca668bb2e58a2767470da7f12f11a81af943fa68f5b698dfacb8` |
+| 1 | `theorem` | [sum_sub_sq_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FiniteSquareBudget.lean/declarations/sum-sub-sq-le.md) | 27 | `result-track:166b382912228fb41292132c7022177226149dfe57234c289e7e13af254c21c1` |
+| 2 | `theorem` | [sum_sq_le_twice_sub_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FiniteSquareBudget.lean/declarations/sum-sq-le-twice-sub-sq.md) | 38 | `result-track:17ecc52729cea8b56aa6e4cd765560e428722d3afe7def7238203a3b7312b01d` |
+| 3 | `theorem` | [card_mul_sq_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FiniteSquareBudget.lean/declarations/card-mul-sq-le.md) | 49 | `result-track:a48944b7d9f591406639318bcc6723eccd4a0d58001b914786053c047fffb2da` |
+| 4 | `theorem` | [card_mul_sq_le_of_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FiniteSquareBudget.lean/declarations/card-mul-sq-le-of-zero.md) | 67 | `result-track:419ce8dd6bf1940f4a90386ac90ae32b9d44c5c65b8c3d64b247ec08893fe6e6` |
+| 5 | `theorem` | [positive_of_complete_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FiniteSquareBudget.lean/declarations/positive-of-complete-budget.md) | 84 | `result-track:504aedd51c84e7ad07396ba09e73e8d0c3e09c5e9d570d54a87522d59415b276` |
+| 6 | `theorem` | [correction_omission_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FiniteSquareBudget.lean/declarations/correction-omission-control.md) | 93 | `result-track:125408dcf3734d4dbd7d2ed403b23091102a1034f82c0dbacddcf25853b0a7d5` |
+| 7 | `theorem` | [zero_margin_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FiniteSquareBudget.lean/declarations/zero-margin-control.md) | 97 | `result-track:8c5cc15edaf5ca668bb2e58a2767470da7f12f11a81af943fa68f5b698dfacb8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/HarmonicPrimeExactness.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/HarmonicPrimeExactness.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/HarmonicPrimeExactness.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/HarmonicPrimeExactness.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [valid_class_one_zero_mode](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/HarmonicPrimeExactness.lean/declarations/valid-class-one-zero-mode.md) | 7 | `result-track:51041d7e163d3a43147ef730340d84660032659b5c94a698edbc218688b7e2a5` |
-| 2 | `theorem` | [invalid_class_no_zero_mode](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/HarmonicPrimeExactness.lean/declarations/invalid-class-no-zero-mode.md) | 9 | `result-track:9569c3d51432468d90ee13341789716b76f2e1cd358533341bd7b4740e6010bc` |
+| 1 | `theorem` | [valid_class_one_zero_mode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/HarmonicPrimeExactness.lean/declarations/valid-class-one-zero-mode.md) | 7 | `result-track:51041d7e163d3a43147ef730340d84660032659b5c94a698edbc218688b7e2a5` |
+| 2 | `theorem` | [invalid_class_no_zero_mode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/HarmonicPrimeExactness.lean/declarations/invalid-class-no-zero-mode.md) | 9 | `result-track:9569c3d51432468d90ee13341789716b76f2e1cd358533341bd7b4740e6010bc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

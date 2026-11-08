@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/PhaseNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/PhaseNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PhaseNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PhaseNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [Status](../../../../../ComputerScience/AlgorithmsInComputerScience/PhaseNamespaced.lean/declarations/status.md) | 15 | `declaration-track:f105ae402bcd02aa7f9664430b39e9f35d7a8149abd97506fe26273befd65fcb` |
-| 2 | `inductive` | [PhaseEvidence](../../../../../ComputerScience/AlgorithmsInComputerScience/PhaseNamespaced.lean/declarations/phaseevidence.md) | 22 | `declaration-track:16525317be79b854e386e0ad99d7920be00b8c6d9fca7c44de73611e55df332c` |
-| 3 | `def` | [classify](../../../../../ComputerScience/AlgorithmsInComputerScience/PhaseNamespaced.lean/declarations/classify.md) | 28 | `declaration-track:e3e7e9411492241f9e3a71038b9b8ef2507fb602ff4c30bbfac5423bb6ac13aa` |
-| 4 | `theorem` | [finite_prefix_never_claims_irrationality](../../../../../ComputerScience/AlgorithmsInComputerScience/PhaseNamespaced.lean/declarations/finite-prefix-never-claims-irrationality.md) | 34 | `result-track:d6ad2c4b947860401de3c1b6af39e9d91bb233c120938306178bda0f7ba2c734` |
+| 1 | `inductive` | [Status](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PhaseNamespaced.lean/declarations/status.md) | 15 | `declaration-track:f105ae402bcd02aa7f9664430b39e9f35d7a8149abd97506fe26273befd65fcb` |
+| 2 | `inductive` | [PhaseEvidence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PhaseNamespaced.lean/declarations/phaseevidence.md) | 22 | `declaration-track:16525317be79b854e386e0ad99d7920be00b8c6d9fca7c44de73611e55df332c` |
+| 3 | `def` | [classify](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PhaseNamespaced.lean/declarations/classify.md) | 28 | `declaration-track:e3e7e9411492241f9e3a71038b9b8ef2507fb602ff4c30bbfac5423bb6ac13aa` |
+| 4 | `theorem` | [finite_prefix_never_claims_irrationality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/PhaseNamespaced.lean/declarations/finite-prefix-never-claims-irrationality.md) | 34 | `result-track:d6ad2c4b947860401de3c1b6af39e9d91bb233c120938306178bda0f7ba2c734` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

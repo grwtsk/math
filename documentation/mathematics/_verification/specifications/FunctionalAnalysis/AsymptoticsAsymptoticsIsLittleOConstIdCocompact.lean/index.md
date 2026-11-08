@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/AsymptoticsAsymptoticsIsLittleOConstIdCocompact.lean/index.md) · [Full source](../../../../FunctionalAnalysis/AsymptoticsAsymptoticsIsLittleOConstIdCocompact.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AsymptoticsAsymptoticsIsLittleOConstIdCocompact.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AsymptoticsAsymptoticsIsLittleOConstIdCocompact.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [isLittleO_const_id_cocompact](../../../../FunctionalAnalysis/AsymptoticsAsymptoticsIsLittleOConstIdCocompact.lean/declarations/islittleo-const-id-cocompact.md) | 19 | `result-track:58761de39a562108c150bc774898a367063747a88775f33ddbb9031fef7795b8` |
-| 2 | `theorem` | [isLittleO_const_id_atTop2](../../../../FunctionalAnalysis/AsymptoticsAsymptoticsIsLittleOConstIdCocompact.lean/declarations/islittleo-const-id-attop2.md) | 24 | `result-track:439a431ac5de275653ceda245019079b7bace6fd0bcc8a08ce43e3ef4b38f411` |
-| 3 | `theorem` | [isLittleO_const_id_atBot2](../../../../FunctionalAnalysis/AsymptoticsAsymptoticsIsLittleOConstIdCocompact.lean/declarations/islittleo-const-id-atbot2.md) | 29 | `result-track:cd18cc6ae2181ab6616f6ca9ec17a793d83f197b7cccfbc95a65f0fea84751d1` |
-| 4 | `theorem` | [_root_.Filter.Eventually.natCast](../../../../FunctionalAnalysis/AsymptoticsAsymptoticsIsLittleOConstIdCocompact.lean/declarations/root-filter-eventually-natcast.md) | 33 | `result-track:d11ed27bb13611828661fe45752a4131470ed48604af4e2a7e63c922d68855bf` |
-| 5 | `theorem` | [IsBigO.natCast](../../../../FunctionalAnalysis/AsymptoticsAsymptoticsIsLittleOConstIdCocompact.lean/declarations/isbigo-natcast.md) | 37 | `result-track:dab0541085380060b7fc31c84f4a44e7b6e7d3008aa10a06c2d613c985b9e408` |
+| 1 | `theorem` | [isLittleO_const_id_cocompact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AsymptoticsAsymptoticsIsLittleOConstIdCocompact.lean/declarations/islittleo-const-id-cocompact.md) | 19 | `result-track:58761de39a562108c150bc774898a367063747a88775f33ddbb9031fef7795b8` |
+| 2 | `theorem` | [isLittleO_const_id_atTop2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AsymptoticsAsymptoticsIsLittleOConstIdCocompact.lean/declarations/islittleo-const-id-attop2.md) | 24 | `result-track:439a431ac5de275653ceda245019079b7bace6fd0bcc8a08ce43e3ef4b38f411` |
+| 3 | `theorem` | [isLittleO_const_id_atBot2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AsymptoticsAsymptoticsIsLittleOConstIdCocompact.lean/declarations/islittleo-const-id-atbot2.md) | 29 | `result-track:cd18cc6ae2181ab6616f6ca9ec17a793d83f197b7cccfbc95a65f0fea84751d1` |
+| 4 | `theorem` | [_root_.Filter.Eventually.natCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AsymptoticsAsymptoticsIsLittleOConstIdCocompact.lean/declarations/root-filter-eventually-natcast.md) | 33 | `result-track:d11ed27bb13611828661fe45752a4131470ed48604af4e2a7e63c922d68855bf` |
+| 5 | `theorem` | [IsBigO.natCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AsymptoticsAsymptoticsIsLittleOConstIdCocompact.lean/declarations/isbigo-natcast.md) | 37 | `result-track:dab0541085380060b7fc31c84f4a44e7b6e7d3008aa10a06c2d613c985b9e408` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

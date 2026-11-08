@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ComplexTorusNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/ComplexTorusNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ComplexTorusNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ComplexTorusNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ComplexTorusTau](../../../../Combinatorics/ComplexTorusNamespaced.lean/declarations/complextorustau.md) | 21 | `declaration-track:0e25a874cc0767ed5a3e94db8729809977ec0a95f86b7271695a7053c0b60e3a` |
-| 2 | `structure` | [TorusPoint](../../../../Combinatorics/ComplexTorusNamespaced.lean/declarations/toruspoint.md) | 27 | `declaration-track:54d0882c21d73dc5b33da3ce72dca3ad6ca53f4e637c42a7c3fe33afdeb3cd7d` |
-| 3 | `def` | [torusZero](../../../../Combinatorics/ComplexTorusNamespaced.lean/declarations/toruszero.md) | 32 | `declaration-track:334449533bc2369fb66a5ca5a8be38da0769a206834e0208e6fc71936c83c006` |
-| 4 | `def` | [torusAdd](../../../../Combinatorics/ComplexTorusNamespaced.lean/declarations/torusadd.md) | 35 | `declaration-track:45a7bec09a45f59146f55e3e648ac00b22d79ed25e08aa3c5f3d7b22e8c701dd` |
-| 5 | `def` | [torusNeg](../../../../Combinatorics/ComplexTorusNamespaced.lean/declarations/torusneg.md) | 38 | `declaration-track:bf3680d3fb95ec4a424ba3fb22abc7a0f781d1349c5c5ef99ed5e5b403c261fb` |
-| 6 | `def` | [torusScalarMul](../../../../Combinatorics/ComplexTorusNamespaced.lean/declarations/torusscalarmul.md) | 41 | `declaration-track:07dc05a23f940729e65581fe26bb99885b6e1bf3f5329b82e1b371edb0642fff` |
-| 7 | `def` | [torsionRepresentative](../../../../Combinatorics/ComplexTorusNamespaced.lean/declarations/torsionrepresentative.md) | 45 | `declaration-track:06fcaf80add6ea0929ae1ff7ef0d288b5c2f4fbcbe58d8a375b7035277da62c1` |
-| 8 | `theorem` | [torus_identity_add](../../../../Combinatorics/ComplexTorusNamespaced.lean/declarations/torus-identity-add.md) | 48 | `result-track:84c44217716d99a0e3d9dfbbaf8624db6c150d38df23c0f88169916280e6f30d` |
-| 9 | `theorem` | [torus_add_comm](../../../../Combinatorics/ComplexTorusNamespaced.lean/declarations/torus-add-comm.md) | 54 | `result-track:6517d30c1dbd8688fb4a5313afc9592a5e32d6ab51657eb74f6135af2abdceb4` |
-| 10 | `theorem` | [torus_n_torsion_representative](../../../../Combinatorics/ComplexTorusNamespaced.lean/declarations/torus-n-torsion-representative.md) | 61 | `result-track:40627214fa1c1528ad013fcfb948d7c11d61794f115ca92e5398e7acc3051a7f` |
+| 1 | `structure` | [ComplexTorusTau](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ComplexTorusNamespaced.lean/declarations/complextorustau.md) | 21 | `declaration-track:0e25a874cc0767ed5a3e94db8729809977ec0a95f86b7271695a7053c0b60e3a` |
+| 2 | `structure` | [TorusPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ComplexTorusNamespaced.lean/declarations/toruspoint.md) | 27 | `declaration-track:54d0882c21d73dc5b33da3ce72dca3ad6ca53f4e637c42a7c3fe33afdeb3cd7d` |
+| 3 | `def` | [torusZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ComplexTorusNamespaced.lean/declarations/toruszero.md) | 32 | `declaration-track:334449533bc2369fb66a5ca5a8be38da0769a206834e0208e6fc71936c83c006` |
+| 4 | `def` | [torusAdd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ComplexTorusNamespaced.lean/declarations/torusadd.md) | 35 | `declaration-track:45a7bec09a45f59146f55e3e648ac00b22d79ed25e08aa3c5f3d7b22e8c701dd` |
+| 5 | `def` | [torusNeg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ComplexTorusNamespaced.lean/declarations/torusneg.md) | 38 | `declaration-track:bf3680d3fb95ec4a424ba3fb22abc7a0f781d1349c5c5ef99ed5e5b403c261fb` |
+| 6 | `def` | [torusScalarMul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ComplexTorusNamespaced.lean/declarations/torusscalarmul.md) | 41 | `declaration-track:07dc05a23f940729e65581fe26bb99885b6e1bf3f5329b82e1b371edb0642fff` |
+| 7 | `def` | [torsionRepresentative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ComplexTorusNamespaced.lean/declarations/torsionrepresentative.md) | 45 | `declaration-track:06fcaf80add6ea0929ae1ff7ef0d288b5c2f4fbcbe58d8a375b7035277da62c1` |
+| 8 | `theorem` | [torus_identity_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ComplexTorusNamespaced.lean/declarations/torus-identity-add.md) | 48 | `result-track:84c44217716d99a0e3d9dfbbaf8624db6c150d38df23c0f88169916280e6f30d` |
+| 9 | `theorem` | [torus_add_comm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ComplexTorusNamespaced.lean/declarations/torus-add-comm.md) | 54 | `result-track:6517d30c1dbd8688fb4a5313afc9592a5e32d6ab51657eb74f6135af2abdceb4` |
+| 10 | `theorem` | [torus_n_torsion_representative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ComplexTorusNamespaced.lean/declarations/torus-n-torsion-representative.md) | 61 | `result-track:40627214fa1c1528ad013fcfb948d7c11d61794f115ca92e5398e7acc3051a7f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

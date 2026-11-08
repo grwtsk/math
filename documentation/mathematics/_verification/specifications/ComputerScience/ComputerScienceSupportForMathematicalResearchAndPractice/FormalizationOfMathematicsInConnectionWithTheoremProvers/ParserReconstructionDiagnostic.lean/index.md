@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ParserReconstructionDiagnostic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ParserReconstructionDiagnostic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ParserReconstructionDiagnostic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ParserReconstructionDiagnostic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [asText_inverse](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ParserReconstructionDiagnostic.lean/declarations/astext-inverse.md) | 5 | `result-track:a306e3a58743b2ec01a01ca240ab5e9842312a916ecb6f4ca46f25e1c651c3e1` |
-| 2 | `theorem` | [readMany_reconstruct](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ParserReconstructionDiagnostic.lean/declarations/readmany-reconstruct.md) | 9 | `result-track:9f03933c29d157f138548f0253402b296cb373fd418adca1ff9a817a70a14d36` |
-| 3 | `theorem` | [readPairs_reconstruct](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ParserReconstructionDiagnostic.lean/declarations/readpairs-reconstruct.md) | 37 | `result-track:ecf92058b6c6fd246c7f8ae2ad19a4df0962aef7060726f4a51213c6af0c915c` |
-| 4 | `theorem` | [parse_value_reconstruct](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ParserReconstructionDiagnostic.lean/declarations/parse-value-reconstruct.md) | 73 | `result-track:cd15bfc76e3069eb1243651374547fa5ab75276f4e347f059c921ede4c79b43c` |
+| 1 | `theorem` | [asText_inverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ParserReconstructionDiagnostic.lean/declarations/astext-inverse.md) | 5 | `result-track:a306e3a58743b2ec01a01ca240ab5e9842312a916ecb6f4ca46f25e1c651c3e1` |
+| 2 | `theorem` | [readMany_reconstruct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ParserReconstructionDiagnostic.lean/declarations/readmany-reconstruct.md) | 9 | `result-track:9f03933c29d157f138548f0253402b296cb373fd418adca1ff9a817a70a14d36` |
+| 3 | `theorem` | [readPairs_reconstruct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ParserReconstructionDiagnostic.lean/declarations/readpairs-reconstruct.md) | 37 | `result-track:ecf92058b6c6fd246c7f8ae2ad19a4df0962aef7060726f4a51213c6af0c915c` |
+| 4 | `theorem` | [parse_value_reconstruct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ParserReconstructionDiagnostic.lean/declarations/parse-value-reconstruct.md) | 73 | `result-track:cd15bfc76e3069eb1243651374547fa5ab75276f4e347f059c921ede4c79b43c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

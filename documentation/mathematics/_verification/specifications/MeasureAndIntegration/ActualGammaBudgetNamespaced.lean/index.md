@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ActualGammaBudgetNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ActualGammaBudgetNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualGammaBudgetNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualGammaBudgetNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sourceGammaValue_identity](../../../../MeasureAndIntegration/ActualGammaBudgetNamespaced.lean/declarations/sourcegammavalue-identity.md) | 23 | `result-track:d64114b428f5068a7d57cad7a085fa2ef7981319c68e553eec85d81c78673737` |
-| 2 | `theorem` | [sourceGammaValue_budget](../../../../MeasureAndIntegration/ActualGammaBudgetNamespaced.lean/declarations/sourcegammavalue-budget.md) | 30 | `result-track:fdea56339f1d124554089bd2c3d1d3bd0854b2aac1440fcafa763568c5daa483` |
+| 1 | `theorem` | [sourceGammaValue_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualGammaBudgetNamespaced.lean/declarations/sourcegammavalue-identity.md) | 23 | `result-track:d64114b428f5068a7d57cad7a085fa2ef7981319c68e553eec85d81c78673737` |
+| 2 | `theorem` | [sourceGammaValue_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualGammaBudgetNamespaced.lean/declarations/sourcegammavalue-budget.md) | 30 | `result-track:fdea56339f1d124554089bd2c3d1d3bd0854b2aac1440fcafa763568c5daa483` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/HilbertPolyaCriterion.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/HilbertPolyaCriterion.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/HilbertPolyaCriterion.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/HilbertPolyaCriterion.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [h0_real_zeros_from_spectral_correspondence](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/HilbertPolyaCriterion.lean/declarations/h0-real-zeros-from-spectral-correspondence.md) | 21 | `result-track:897a2cd433fc339c348feedcb14bbd23917ba8e33b7cbeacaaa7c0f0901248b8` |
-| 2 | `theorem` | [riemann_hypothesis_from_hilbert_polya_criterion](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/HilbertPolyaCriterion.lean/declarations/riemann-hypothesis-from-hilbert-polya-criterion.md) | 42 | `result-track:d0a912d7d28c261cd76b5fcfe3af58dc0420411fdf86d8a4746639d44a162a23` |
-| 3 | `theorem` | [riemann_hypothesis_from_selfadjoint_spectral_realization](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/HilbertPolyaCriterion.lean/declarations/riemann-hypothesis-from-selfadjoint-spectral-realization.md) | 57 | `result-track:36c2fb6f817d93e6c31a36754d07e37a2b1ff38fe869bede73b975e783276f74` |
+| 1 | `theorem` | [h0_real_zeros_from_spectral_correspondence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/HilbertPolyaCriterion.lean/declarations/h0-real-zeros-from-spectral-correspondence.md) | 21 | `result-track:897a2cd433fc339c348feedcb14bbd23917ba8e33b7cbeacaaa7c0f0901248b8` |
+| 2 | `theorem` | [riemann_hypothesis_from_hilbert_polya_criterion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/HilbertPolyaCriterion.lean/declarations/riemann-hypothesis-from-hilbert-polya-criterion.md) | 42 | `result-track:d0a912d7d28c261cd76b5fcfe3af58dc0420411fdf86d8a4746639d44a162a23` |
+| 3 | `theorem` | [riemann_hypothesis_from_selfadjoint_spectral_realization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/HilbertPolyaCriterion.lean/declarations/riemann-hypothesis-from-selfadjoint-spectral-realization.md) | 57 | `result-track:36c2fb6f817d93e6c31a36754d07e37a2b1ff38fe869bede73b975e783276f74` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

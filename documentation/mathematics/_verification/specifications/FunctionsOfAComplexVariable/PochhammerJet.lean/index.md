@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/PochhammerJet.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/PochhammerJet.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PochhammerJet.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PochhammerJet.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,14 +60,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [value](../../../../FunctionsOfAComplexVariable/PochhammerJet.lean/declarations/value.md) | 24 | `declaration-track:f41610496a33b27c78688608176c7a1547412be7b2528cc663bc831ae37398ae` |
-| 2 | `def` | [slope](../../../../FunctionsOfAComplexVariable/PochhammerJet.lean/declarations/slope.md) | 26 | `declaration-track:b87cb5f403f59737adea9b58d7241995e08c229a1b681ad7e9cb533a8c20ba79` |
-| 3 | `theorem` | [value_zero](../../../../FunctionsOfAComplexVariable/PochhammerJet.lean/declarations/value-zero.md) | 30 | `result-track:fb94a002493570e910b6b4013b213d7cb92f2b1f66aca85c9cda52d9ce66b08b` |
-| 4 | `theorem` | [value_succ](../../../../FunctionsOfAComplexVariable/PochhammerJet.lean/declarations/value-succ.md) | 32 | `result-track:641a130df42d94e57019a00582c2ba3376701f9c2117aefaa474b9a37e5d698b` |
-| 5 | `theorem` | [hasDerivAt_value](../../../../FunctionsOfAComplexVariable/PochhammerJet.lean/declarations/hasderivat-value.md) | 36 | `result-track:434e243b383e9f2cba2ff4f37d8ec07bb771476a96dcb9601a5940fb5f3931a7` |
-| 6 | `theorem` | [deriv_value](../../../../FunctionsOfAComplexVariable/PochhammerJet.lean/declarations/deriv-value.md) | 48 | `result-track:bd7be9de027c0c7e289d8bc84d37f13cfaceaa91bce53dc51f70fe1d5e70aeb9` |
-| 7 | `theorem` | [vanishing_factor_control](../../../../FunctionsOfAComplexVariable/PochhammerJet.lean/declarations/vanishing-factor-control.md) | 52 | `result-track:4c44a56781cb068fa2814396f4f59cabfa6cafb5c2ed123afb5c119ee9ca9c0f` |
-| 8 | `theorem` | [empty_product_control](../../../../FunctionsOfAComplexVariable/PochhammerJet.lean/declarations/empty-product-control.md) | 56 | `result-track:65e6ca94c57d427a85703607dcec4cccc6df11b298cdb9e764c0e535d4cbf050` |
+| 1 | `def` | [value](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PochhammerJet.lean/declarations/value.md) | 24 | `declaration-track:f41610496a33b27c78688608176c7a1547412be7b2528cc663bc831ae37398ae` |
+| 2 | `def` | [slope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PochhammerJet.lean/declarations/slope.md) | 26 | `declaration-track:b87cb5f403f59737adea9b58d7241995e08c229a1b681ad7e9cb533a8c20ba79` |
+| 3 | `theorem` | [value_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PochhammerJet.lean/declarations/value-zero.md) | 30 | `result-track:fb94a002493570e910b6b4013b213d7cb92f2b1f66aca85c9cda52d9ce66b08b` |
+| 4 | `theorem` | [value_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PochhammerJet.lean/declarations/value-succ.md) | 32 | `result-track:641a130df42d94e57019a00582c2ba3376701f9c2117aefaa474b9a37e5d698b` |
+| 5 | `theorem` | [hasDerivAt_value](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PochhammerJet.lean/declarations/hasderivat-value.md) | 36 | `result-track:434e243b383e9f2cba2ff4f37d8ec07bb771476a96dcb9601a5940fb5f3931a7` |
+| 6 | `theorem` | [deriv_value](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PochhammerJet.lean/declarations/deriv-value.md) | 48 | `result-track:bd7be9de027c0c7e289d8bc84d37f13cfaceaa91bce53dc51f70fe1d5e70aeb9` |
+| 7 | `theorem` | [vanishing_factor_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PochhammerJet.lean/declarations/vanishing-factor-control.md) | 52 | `result-track:4c44a56781cb068fa2814396f4f59cabfa6cafb5c2ed123afb5c119ee9ca9c0f` |
+| 8 | `theorem` | [empty_product_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PochhammerJet.lean/declarations/empty-product-control.md) | 56 | `result-track:65e6ca94c57d427a85703607dcec4cccc6df11b298cdb9e764c0e535d4cbf050` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

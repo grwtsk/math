@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../SpecialFunctions/FrullaniIntegralNamespacedPublic.lean/index.md) · [Full source](../../../../SpecialFunctions/FrullaniIntegralNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/FrullaniIntegralNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/FrullaniIntegralNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [intervalIntegrable_inv_smul](../../../../SpecialFunctions/FrullaniIntegralNamespacedPublic.lean/declarations/intervalintegrable-inv-smul.md) | 42 | `result-track:8a3326318e0251484f6b288cece5623793c3ebe2a19fd101f66e6adcc595c42f` |
-| 2 | `lemma` | [intervalIntegrable_inv_smul_comp_mul](../../../../SpecialFunctions/FrullaniIntegralNamespacedPublic.lean/declarations/intervalintegrable-inv-smul-comp-mul.md) | 50 | `result-track:9e9242ee6a9e49d7c412c30d28d4e9d23b19556f6788c422fc3f6a54a215ba11` |
-| 3 | `lemma` | [integral_comp_mul_inv_smul](../../../../SpecialFunctions/FrullaniIntegralNamespacedPublic.lean/declarations/integral-comp-mul-inv-smul.md) | 63 | `result-track:e221d6b530b898cb23754076a87818bd43988cb0dfeb98e3012cfcf6728cbe68` |
-| 4 | `lemma` | [norm_integral_inv_smul_sub_le](../../../../SpecialFunctions/FrullaniIntegralNamespacedPublic.lean/declarations/norm-integral-inv-smul-sub-le.md) | 75 | `result-track:a78257afa68b1d82941b465f42dce80c0181d994032088755ba36362b4c45f16` |
-| 5 | `lemma` | [tendsto_integral_inv_smul_of_tendsto_uniform](../../../../SpecialFunctions/FrullaniIntegralNamespacedPublic.lean/declarations/tendsto-integral-inv-smul-of-tendsto-uniform.md) | 109 | `result-track:1042a9f2f37d61af196bee40de8c8d72f0c34ef00f9cecaa12229d20779f7a71` |
-| 6 | `lemma` | [tendsto_integral_inv_smul_nhdsWithin](../../../../SpecialFunctions/FrullaniIntegralNamespacedPublic.lean/declarations/tendsto-integral-inv-smul-nhdswithin.md) | 130 | `result-track:5d459815500a5812432b9226584b85e4f5cfeae85aff88d2dcb638a38f242b7a` |
-| 7 | `lemma` | [tendsto_integral_inv_smul_atTop](../../../../SpecialFunctions/FrullaniIntegralNamespacedPublic.lean/declarations/tendsto-integral-inv-smul-attop.md) | 158 | `result-track:59072ec137aa968f8061d2e0ca6a45b117155388f58d460a42ef5b92864190fe` |
-| 8 | `theorem` | [tendsto_intervalIntegral](../../../../SpecialFunctions/FrullaniIntegralNamespacedPublic.lean/declarations/tendsto-intervalintegral.md) | 187 | `result-track:389cb1eb46df3dd05bb4199beb389df3b4e4f5e41ce1ff0e8db99186676d518a` |
-| 9 | `theorem` | [integral_Ioi_eq](../../../../SpecialFunctions/FrullaniIntegralNamespacedPublic.lean/declarations/integral-ioi-eq.md) | 222 | `result-track:3309d15a8fe5633191263ebc6371664b4d85fd046e684b2059cbcdae8137a64c` |
+| 1 | `lemma` | [intervalIntegrable_inv_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/FrullaniIntegralNamespacedPublic.lean/declarations/intervalintegrable-inv-smul.md) | 42 | `result-track:8a3326318e0251484f6b288cece5623793c3ebe2a19fd101f66e6adcc595c42f` |
+| 2 | `lemma` | [intervalIntegrable_inv_smul_comp_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/FrullaniIntegralNamespacedPublic.lean/declarations/intervalintegrable-inv-smul-comp-mul.md) | 50 | `result-track:9e9242ee6a9e49d7c412c30d28d4e9d23b19556f6788c422fc3f6a54a215ba11` |
+| 3 | `lemma` | [integral_comp_mul_inv_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/FrullaniIntegralNamespacedPublic.lean/declarations/integral-comp-mul-inv-smul.md) | 63 | `result-track:e221d6b530b898cb23754076a87818bd43988cb0dfeb98e3012cfcf6728cbe68` |
+| 4 | `lemma` | [norm_integral_inv_smul_sub_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/FrullaniIntegralNamespacedPublic.lean/declarations/norm-integral-inv-smul-sub-le.md) | 75 | `result-track:a78257afa68b1d82941b465f42dce80c0181d994032088755ba36362b4c45f16` |
+| 5 | `lemma` | [tendsto_integral_inv_smul_of_tendsto_uniform](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/FrullaniIntegralNamespacedPublic.lean/declarations/tendsto-integral-inv-smul-of-tendsto-uniform.md) | 109 | `result-track:1042a9f2f37d61af196bee40de8c8d72f0c34ef00f9cecaa12229d20779f7a71` |
+| 6 | `lemma` | [tendsto_integral_inv_smul_nhdsWithin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/FrullaniIntegralNamespacedPublic.lean/declarations/tendsto-integral-inv-smul-nhdswithin.md) | 130 | `result-track:5d459815500a5812432b9226584b85e4f5cfeae85aff88d2dcb638a38f242b7a` |
+| 7 | `lemma` | [tendsto_integral_inv_smul_atTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/FrullaniIntegralNamespacedPublic.lean/declarations/tendsto-integral-inv-smul-attop.md) | 158 | `result-track:59072ec137aa968f8061d2e0ca6a45b117155388f58d460a42ef5b92864190fe` |
+| 8 | `theorem` | [tendsto_intervalIntegral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/FrullaniIntegralNamespacedPublic.lean/declarations/tendsto-intervalintegral.md) | 187 | `result-track:389cb1eb46df3dd05bb4199beb389df3b4e4f5e41ce1ff0e8db99186676d518a` |
+| 9 | `theorem` | [integral_Ioi_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/FrullaniIntegralNamespacedPublic.lean/declarations/integral-ioi-eq.md) | 222 | `result-track:3309d15a8fe5633191263ebc6371664b4d85fd046e684b2059cbcdae8137a64c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/DensitySubstitution.lean/index.md) · [Full source](../../../../MeasureAndIntegration/DensitySubstitution.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DensitySubstitution.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DensitySubstitution.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [envelope](../../../../MeasureAndIntegration/DensitySubstitution.lean/declarations/envelope.md) | 12 | `declaration-track:87c85e59f8b34710e077fbdeec7506ee2496006474a0087b3dced95ff7c7a123` |
-| 2 | `def` | [mixedExponent](../../../../MeasureAndIntegration/DensitySubstitution.lean/declarations/mixedexponent.md) | 15 | `declaration-track:bd893f89b4ced6197586d446d8ac6cd4ac90b7ace9360b9a0290268a64f10e8d` |
-| 3 | `theorem` | [envelope_exp](../../../../MeasureAndIntegration/DensitySubstitution.lean/declarations/envelope-exp.md) | 18 | `result-track:ac6cb427f2d15dacc48508ec0d950dba0cad962d796cec0b1ba02485b73eb27f` |
-| 4 | `theorem` | [envelope_continuous](../../../../MeasureAndIntegration/DensitySubstitution.lean/declarations/envelope-continuous.md) | 25 | `result-track:c3bd861c64cdd677288d3ab6a2393b662507a81b083c26491363db24b8dfc8db` |
-| 5 | `theorem` | [weighted_envelope_integrable](../../../../MeasureAndIntegration/DensitySubstitution.lean/declarations/weighted-envelope-integrable.md) | 34 | `result-track:998363c5b2e9429227bff60d5f29c0ab0849f3cd7521988fbaf90ea1985d15f2` |
-| 6 | `theorem` | [product_exponent](../../../../MeasureAndIntegration/DensitySubstitution.lean/declarations/product-exponent.md) | 39 | `result-track:479d39b8f66dc117542ab8de9b52c7939428e4da78b8811781cb10647d1ef77e` |
-| 7 | `theorem` | [actual_density_substitution](../../../../MeasureAndIntegration/DensitySubstitution.lean/declarations/actual-density-substitution.md) | 50 | `result-track:2298e67e3b3530bb94a8243223040ef414ff9eeeeb582d20dfa6c3a934ebb370` |
+| 1 | `def` | [envelope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DensitySubstitution.lean/declarations/envelope.md) | 12 | `declaration-track:87c85e59f8b34710e077fbdeec7506ee2496006474a0087b3dced95ff7c7a123` |
+| 2 | `def` | [mixedExponent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DensitySubstitution.lean/declarations/mixedexponent.md) | 15 | `declaration-track:bd893f89b4ced6197586d446d8ac6cd4ac90b7ace9360b9a0290268a64f10e8d` |
+| 3 | `theorem` | [envelope_exp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DensitySubstitution.lean/declarations/envelope-exp.md) | 18 | `result-track:ac6cb427f2d15dacc48508ec0d950dba0cad962d796cec0b1ba02485b73eb27f` |
+| 4 | `theorem` | [envelope_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DensitySubstitution.lean/declarations/envelope-continuous.md) | 25 | `result-track:c3bd861c64cdd677288d3ab6a2393b662507a81b083c26491363db24b8dfc8db` |
+| 5 | `theorem` | [weighted_envelope_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DensitySubstitution.lean/declarations/weighted-envelope-integrable.md) | 34 | `result-track:998363c5b2e9429227bff60d5f29c0ab0849f3cd7521988fbaf90ea1985d15f2` |
+| 6 | `theorem` | [product_exponent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DensitySubstitution.lean/declarations/product-exponent.md) | 39 | `result-track:479d39b8f66dc117542ab8de9b52c7939428e4da78b8811781cb10647d1ef77e` |
+| 7 | `theorem` | [actual_density_substitution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DensitySubstitution.lean/declarations/actual-density-substitution.md) | 50 | `result-track:2298e67e3b3530bb94a8243223040ef414ff9eeeeb582d20dfa6c3a934ebb370` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

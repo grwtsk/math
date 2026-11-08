@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/NeuralNet.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/NeuralNet.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/NeuralNet.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/NeuralNet.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,17 +57,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [layer1](../../../../../ComputerScience/AlgorithmsInComputerScience/NeuralNet.lean/declarations/layer1.md) | 39 | `declaration-track:dace36a85ac538429e34985c34e596ec738eb2088491ca41f530cf08b2d2b7ab` |
-| 2 | `def` | [layer2](../../../../../ComputerScience/AlgorithmsInComputerScience/NeuralNet.lean/declarations/layer2.md) | 46 | `declaration-track:a9d4087ae1b56f4f02e75e1f2cf23b2c0b6658dd1a33a1f55bae16c92b9b7952` |
-| 3 | `def` | [exampleNet](../../../../../ComputerScience/AlgorithmsInComputerScience/NeuralNet.lean/declarations/examplenet.md) | 51 | `declaration-track:8eae3831320f1b371d0d53b0a73dc940d29dbe7268b7c3b2b3be971b92e7ff84` |
-| 4 | `theorem` | [layer1_wf](../../../../../ComputerScience/AlgorithmsInComputerScience/NeuralNet.lean/declarations/layer1-wf.md) | 57 | `result-track:d1358fc419a58c92a1bd75cecf6144592a9e7f2d15550cb19eac85c6273a76ef` |
-| 5 | `theorem` | [layer2_wf](../../../../../ComputerScience/AlgorithmsInComputerScience/NeuralNet.lean/declarations/layer2-wf.md) | 64 | `result-track:d049db251070caa709e8020ea2309d9fd5b9f9720347a31bd689a1e954140b95` |
-| 6 | `theorem` | [exampleNet_wf](../../../../../ComputerScience/AlgorithmsInComputerScience/NeuralNet.lean/declarations/examplenet-wf.md) | 71 | `result-track:d82abaaf27d5fbfe812d3b33686a917c4523a42791eb661282f0098421f0bc48` |
-| 7 | `def` | [intervalAround](../../../../../ComputerScience/AlgorithmsInComputerScience/NeuralNet.lean/declarations/intervalaround.md) | 82 | `declaration-track:a86301d40ae7f6aeec6562bde2004269566c9e94ed1565fb7fe1681547d7475f` |
-| 8 | `def` | [inputRegion](../../../../../ComputerScience/AlgorithmsInComputerScience/NeuralNet.lean/declarations/inputregion.md) | 87 | `declaration-track:1be7a1eed7697241ee240d417e62cc53b4910d2bde6222e24e84d5d8ead0782b` |
-| 9 | `def` | [outputInterval](../../../../../ComputerScience/AlgorithmsInComputerScience/NeuralNet.lean/declarations/outputinterval.md) | 93 | `declaration-track:68cbe92e8c793f4d1fe14252eda6f07e87dc097ecd4e9bbb52812d9e726de718` |
-| 10 | `theorem` | [mem_intervalAround](../../../../../ComputerScience/AlgorithmsInComputerScience/NeuralNet.lean/declarations/mem-intervalaround.md) | 99 | `result-track:91de72780baa7626a44d266ab31dd0e377d9b2129c4022dc6e085dbb31e38f70` |
-| 11 | `theorem` | [robustness_certificate](../../../../../ComputerScience/AlgorithmsInComputerScience/NeuralNet.lean/declarations/robustness-certificate.md) | 123 | `result-track:4223710b2b6da1398d96bdbf8f7107a0875635fbaba8abb17aae0cc0db55f4a6` |
+| 1 | `def` | [layer1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/NeuralNet.lean/declarations/layer1.md) | 39 | `declaration-track:dace36a85ac538429e34985c34e596ec738eb2088491ca41f530cf08b2d2b7ab` |
+| 2 | `def` | [layer2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/NeuralNet.lean/declarations/layer2.md) | 46 | `declaration-track:a9d4087ae1b56f4f02e75e1f2cf23b2c0b6658dd1a33a1f55bae16c92b9b7952` |
+| 3 | `def` | [exampleNet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/NeuralNet.lean/declarations/examplenet.md) | 51 | `declaration-track:8eae3831320f1b371d0d53b0a73dc940d29dbe7268b7c3b2b3be971b92e7ff84` |
+| 4 | `theorem` | [layer1_wf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/NeuralNet.lean/declarations/layer1-wf.md) | 57 | `result-track:d1358fc419a58c92a1bd75cecf6144592a9e7f2d15550cb19eac85c6273a76ef` |
+| 5 | `theorem` | [layer2_wf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/NeuralNet.lean/declarations/layer2-wf.md) | 64 | `result-track:d049db251070caa709e8020ea2309d9fd5b9f9720347a31bd689a1e954140b95` |
+| 6 | `theorem` | [exampleNet_wf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/NeuralNet.lean/declarations/examplenet-wf.md) | 71 | `result-track:d82abaaf27d5fbfe812d3b33686a917c4523a42791eb661282f0098421f0bc48` |
+| 7 | `def` | [intervalAround](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/NeuralNet.lean/declarations/intervalaround.md) | 82 | `declaration-track:a86301d40ae7f6aeec6562bde2004269566c9e94ed1565fb7fe1681547d7475f` |
+| 8 | `def` | [inputRegion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/NeuralNet.lean/declarations/inputregion.md) | 87 | `declaration-track:1be7a1eed7697241ee240d417e62cc53b4910d2bde6222e24e84d5d8ead0782b` |
+| 9 | `def` | [outputInterval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/NeuralNet.lean/declarations/outputinterval.md) | 93 | `declaration-track:68cbe92e8c793f4d1fe14252eda6f07e87dc097ecd4e9bbb52812d9e726de718` |
+| 10 | `theorem` | [mem_intervalAround](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/NeuralNet.lean/declarations/mem-intervalaround.md) | 99 | `result-track:91de72780baa7626a44d266ab31dd0e377d9b2129c4022dc6e085dbb31e38f70` |
+| 11 | `theorem` | [robustness_certificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/NeuralNet.lean/declarations/robustness-certificate.md) | 123 | `result-track:4223710b2b6da1398d96bdbf8f7107a0875635fbaba8abb17aae0cc0db55f4a6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

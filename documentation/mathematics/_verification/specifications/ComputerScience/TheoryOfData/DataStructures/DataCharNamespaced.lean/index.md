@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/DataCharNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/DataCharNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DataCharNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DataCharNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Char.toUInt8](../../../../../../ComputerScience/TheoryOfData/DataStructures/DataCharNamespaced.lean/declarations/char-touint8.md) | 28 | `declaration-track:55d3575f9e7a2436f11dcf41986fc4c70e978908d15225e017bffbf5b3fb0d88` |
-| 2 | `theorem` | [Char.utf8Size_pos](../../../../../../ComputerScience/TheoryOfData/DataStructures/DataCharNamespaced.lean/declarations/char-utf8size-pos.md) | 30 | `result-track:236cb720421c53a85cd9d100c3c83f3077dee326a12244600574a4f07723c015` |
-| 3 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/DataCharNamespaced.lean/declarations/instance.md) | 38 | `declaration-track:3cb49f4a31d3ed6435f9a67163993bd621088afacfd695e0e778720526ce24af` |
-| 4 | `theorem` | [Char.ofNat_toNat](../../../../../../ComputerScience/TheoryOfData/DataStructures/DataCharNamespaced.lean/declarations/char-ofnat-tonat.md) | 49 | `result-track:db05f42c73e01530dbbb7be1fc3f8c788cfd087328a3bb1af8beda4da162c83d` |
+| 1 | `def` | [Char.toUInt8](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DataCharNamespaced.lean/declarations/char-touint8.md) | 28 | `declaration-track:55d3575f9e7a2436f11dcf41986fc4c70e978908d15225e017bffbf5b3fb0d88` |
+| 2 | `theorem` | [Char.utf8Size_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DataCharNamespaced.lean/declarations/char-utf8size-pos.md) | 30 | `result-track:236cb720421c53a85cd9d100c3c83f3077dee326a12244600574a4f07723c015` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DataCharNamespaced.lean/declarations/instance.md) | 38 | `declaration-track:3cb49f4a31d3ed6435f9a67163993bd621088afacfd695e0e778720526ce24af` |
+| 4 | `theorem` | [Char.ofNat_toNat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DataCharNamespaced.lean/declarations/char-ofnat-tonat.md) | 49 | `result-track:db05f42c73e01530dbbb7be1fc3f8c788cfd087328a3bb1af8beda4da162c83d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

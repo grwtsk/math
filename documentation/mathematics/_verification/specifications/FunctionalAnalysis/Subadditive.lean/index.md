@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/Subadditive.lean/index.md) · [Full source](../../../../FunctionalAnalysis/Subadditive.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Subadditive.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Subadditive.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,12 +60,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Subadditive](../../../../FunctionalAnalysis/Subadditive.lean/declarations/subadditive.md) | 30 | `declaration-track:083ce2efc726a7b809fe128d6e900095ee7eb023bd99f5fe5030a5ed92bae462` |
-| 2 | `def` | [lim](../../../../FunctionalAnalysis/Subadditive.lean/declarations/lim.md) | 40 | `declaration-track:3e4fa0560a87bc55591ae005ab0fdc64aca17a023cf201a33e2539d95724eb2f` |
-| 3 | `theorem` | [lim_le_div](../../../../FunctionalAnalysis/Subadditive.lean/declarations/lim-le-div.md) | 43 | `result-track:e063f50528802c35c74962f9a1357dba4924f3ed2b1d0748168c0fa3d09206dd` |
-| 4 | `theorem` | [apply_mul_add_le](../../../../FunctionalAnalysis/Subadditive.lean/declarations/apply-mul-add-le.md) | 49 | `result-track:ef59e6d1e091fe994a6bcc01a4460e32fb823727884242973a1beff1e682a932` |
-| 5 | `theorem` | [eventually_div_lt_of_div_lt](../../../../FunctionalAnalysis/Subadditive.lean/declarations/eventually-div-lt-of-div-lt.md) | 60 | `result-track:fa7584bf186562f6188c2710fa54a3986382392c80cfe35d380096c499fe03f2` |
-| 6 | `theorem` | [tendsto_lim](../../../../FunctionalAnalysis/Subadditive.lean/declarations/tendsto-lim.md) | 82 | `result-track:e8511eb13267d8dbf2448a4b632422b22e932054bef3fa4cf9a398a2e7b0367e` |
+| 1 | `def` | [Subadditive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Subadditive.lean/declarations/subadditive.md) | 30 | `declaration-track:083ce2efc726a7b809fe128d6e900095ee7eb023bd99f5fe5030a5ed92bae462` |
+| 2 | `def` | [lim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Subadditive.lean/declarations/lim.md) | 40 | `declaration-track:3e4fa0560a87bc55591ae005ab0fdc64aca17a023cf201a33e2539d95724eb2f` |
+| 3 | `theorem` | [lim_le_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Subadditive.lean/declarations/lim-le-div.md) | 43 | `result-track:e063f50528802c35c74962f9a1357dba4924f3ed2b1d0748168c0fa3d09206dd` |
+| 4 | `theorem` | [apply_mul_add_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Subadditive.lean/declarations/apply-mul-add-le.md) | 49 | `result-track:ef59e6d1e091fe994a6bcc01a4460e32fb823727884242973a1beff1e682a932` |
+| 5 | `theorem` | [eventually_div_lt_of_div_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Subadditive.lean/declarations/eventually-div-lt-of-div-lt.md) | 60 | `result-track:fa7584bf186562f6188c2710fa54a3986382392c80cfe35d380096c499fe03f2` |
+| 6 | `theorem` | [tendsto_lim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Subadditive.lean/declarations/tendsto-lim.md) | 82 | `result-track:e8511eb13267d8dbf2448a4b632422b22e932054bef3fa4cf9a398a2e7b0367e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

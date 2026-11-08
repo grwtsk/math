@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/Annals.lean/index.md) · [Full source](../../../../FunctionalAnalysis/Annals.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Annals.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Annals.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [publicTheoremFacingDeclarations](../../../../FunctionalAnalysis/Annals.lean/declarations/publictheoremfacingdeclarations.md) | 51 | `declaration-track:59f04e66bb7a1fa877315429e6c8017da3535d837c67a67c8328ed6325968d73` |
-| 2 | `def` | [certificateOnlyDeclarations](../../../../FunctionalAnalysis/Annals.lean/declarations/certificateonlydeclarations.md) | 58 | `declaration-track:00bee2d073df01d08100afe2d5e7aaac9732ad26d6adc58be0063f0c492ffe81` |
-| 3 | `def` | [hardInputDeclarations](../../../../FunctionalAnalysis/Annals.lean/declarations/hardinputdeclarations.md) | 63 | `declaration-track:65c4baf568eb91196000d4f977164b1a4989234e478f9c5daf9cc8caab49a180` |
-| 4 | `def` | [forbiddenClaims](../../../../FunctionalAnalysis/Annals.lean/declarations/forbiddenclaims.md) | 71 | `declaration-track:4dbbd28fb8f2cf37cc0a170e096d834ca9f2361510ea0c584a84e920db07117c` |
+| 1 | `def` | [publicTheoremFacingDeclarations](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Annals.lean/declarations/publictheoremfacingdeclarations.md) | 51 | `declaration-track:59f04e66bb7a1fa877315429e6c8017da3535d837c67a67c8328ed6325968d73` |
+| 2 | `def` | [certificateOnlyDeclarations](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Annals.lean/declarations/certificateonlydeclarations.md) | 58 | `declaration-track:00bee2d073df01d08100afe2d5e7aaac9732ad26d6adc58be0063f0c492ffe81` |
+| 3 | `def` | [hardInputDeclarations](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Annals.lean/declarations/hardinputdeclarations.md) | 63 | `declaration-track:65c4baf568eb91196000d4f977164b1a4989234e478f9c5daf9cc8caab49a180` |
+| 4 | `def` | [forbiddenClaims](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Annals.lean/declarations/forbiddenclaims.md) | 71 | `declaration-track:4dbbd28fb8f2cf37cc0a170e096d834ca9f2361510ea0c584a84e920db07117c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

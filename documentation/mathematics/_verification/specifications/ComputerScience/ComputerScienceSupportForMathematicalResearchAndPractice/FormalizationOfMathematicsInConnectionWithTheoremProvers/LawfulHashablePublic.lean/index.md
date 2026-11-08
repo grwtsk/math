@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LawfulHashablePublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LawfulHashablePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LawfulHashablePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LawfulHashablePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [LawfulHashable](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LawfulHashablePublic.lean/declarations/lawfulhashable.md) | 19 | `declaration-track:481c7031c8e6a0c81cc4ead15a2c68d4ce830df944b5216a2100a7e62c70ace1` |
-| 2 | `theorem` | [hash_eq](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LawfulHashablePublic.lean/declarations/hash-eq.md) | 26 | `result-track:60f7714024002574c31a1d3bf69fbef55948c2584d33fd193b79cf6374a6c1bc` |
-| 3 | `instance` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LawfulHashablePublic.lean/declarations/instance.md) | 29 | `declaration-track:51c7eadf5c9a8b7f1760a51a9947569a77501a50ca9986df2a6dc9048cdb8d5c` |
+| 1 | `class` | [LawfulHashable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LawfulHashablePublic.lean/declarations/lawfulhashable.md) | 19 | `declaration-track:481c7031c8e6a0c81cc4ead15a2c68d4ce830df944b5216a2100a7e62c70ace1` |
+| 2 | `theorem` | [hash_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LawfulHashablePublic.lean/declarations/hash-eq.md) | 26 | `result-track:60f7714024002574c31a1d3bf69fbef55948c2584d33fd193b79cf6374a6c1bc` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LawfulHashablePublic.lean/declarations/instance.md) | 29 | `declaration-track:51c7eadf5c9a8b7f1760a51a9947569a77501a50ca9986df2a6dc9048cdb8d5c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

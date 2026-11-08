@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceActualPrimeContourResidualNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceActualPrimeContourResidualNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualPrimeContourResidualNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualPrimeContourResidualNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_strictPrime_eq_closedPrimeMoment](../../../../MeasureAndIntegration/SourceActualPrimeContourResidualNamespaced.lean/declarations/actual-strictprime-eq-closedprimemoment.md) | 28 | `result-track:4132336bf99ca77843b8d417dd63d84ef4e46705bfd77bd74d699e453ec1956a` |
-| 2 | `theorem` | [actualInitialPrimeContour_eq_mertensResidual](../../../../MeasureAndIntegration/SourceActualPrimeContourResidualNamespaced.lean/declarations/actualinitialprimecontour-eq-mertensresidual.md) | 54 | `result-track:54c049b25ba7a9a37214a5ed15a80210d935228be988aeca3b1009070e4fa913` |
-| 3 | `theorem` | [actual_mertensResidual_eq_head_add_twoTail](../../../../MeasureAndIntegration/SourceActualPrimeContourResidualNamespaced.lean/declarations/actual-mertensresidual-eq-head-add-twotail.md) | 63 | `result-track:fe8cf2bcd80f224dedc7e4b66ecb8a0cebba81a7585461a198cf954bd16a9634` |
+| 1 | `theorem` | [actual_strictPrime_eq_closedPrimeMoment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualPrimeContourResidualNamespaced.lean/declarations/actual-strictprime-eq-closedprimemoment.md) | 28 | `result-track:4132336bf99ca77843b8d417dd63d84ef4e46705bfd77bd74d699e453ec1956a` |
+| 2 | `theorem` | [actualInitialPrimeContour_eq_mertensResidual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualPrimeContourResidualNamespaced.lean/declarations/actualinitialprimecontour-eq-mertensresidual.md) | 54 | `result-track:54c049b25ba7a9a37214a5ed15a80210d935228be988aeca3b1009070e4fa913` |
+| 3 | `theorem` | [actual_mertensResidual_eq_head_add_twoTail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualPrimeContourResidualNamespaced.lean/declarations/actual-mertensresidual-eq-head-add-twotail.md) | 63 | `result-track:fe8cf2bcd80f224dedc7e4b66ecb8a0cebba81a7585461a198cf954bd16a9634` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

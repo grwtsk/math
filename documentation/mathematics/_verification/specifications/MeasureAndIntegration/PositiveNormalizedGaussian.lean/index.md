@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/PositiveNormalizedGaussian.lean/index.md) · [Full source](../../../../MeasureAndIntegration/PositiveNormalizedGaussian.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveNormalizedGaussian.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveNormalizedGaussian.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.MellinTransform.NormalizedGaussian`](../../../../MeasureAndIntegration/MellinTransformNormalizedGaussian.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.MellinTransform.NormalizedGaussian`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MellinTransformNormalizedGaussian.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Analysis.Real.Pi.Bounds` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../MeasureAndIntegration/PositiveNormalizedGaussian.lean/declarations/example.md) | 10 | `declaration-track:01c541536168676d07e1023d69bb9781ea82e7aad2e876a1871fcf5aaa7861f4` |
-| 2 | `example` | [(anonymous)](../../../../MeasureAndIntegration/PositiveNormalizedGaussian.lean/declarations/example-source-edition-4.md) | 13 | `declaration-track:8f6a0812cd4297f766f217aa07c2c5bf184f6a441ccfe5e382a3f2215c4c09c5` |
-| 3 | `example` | [(anonymous)](../../../../MeasureAndIntegration/PositiveNormalizedGaussian.lean/declarations/example-source-edition-2.md) | 16 | `declaration-track:49912f01f614bbd6057c5b6bb783b6466a367a2bfa9ab6797098c91535954dca` |
-| 4 | `example` | [(anonymous)](../../../../MeasureAndIntegration/PositiveNormalizedGaussian.lean/declarations/example-source-edition-3.md) | 20 | `declaration-track:5eca640409013bb199ff30cbd71494c42fcc258e7629a8e2e11ca9e998da172b` |
-| 5 | `def` | [unnormalizedProfile](../../../../MeasureAndIntegration/PositiveNormalizedGaussian.lean/declarations/unnormalizedprofile.md) | 27 | `declaration-track:ae1eabc971b649e28c6ce03db02a2fdc5826f01dc70e29daebaaefacfcca0452` |
-| 6 | `lemma` | [unnormalizedProfile_eq_quarter](../../../../MeasureAndIntegration/PositiveNormalizedGaussian.lean/declarations/unnormalizedprofile-eq-quarter.md) | 30 | `result-track:4925fee65c82d7c25ea22aa37902987e6637be6b0b26cc2811499eea30aebbf2` |
-| 7 | `lemma` | [unnormalizedProfile_convergent](../../../../MeasureAndIntegration/PositiveNormalizedGaussian.lean/declarations/unnormalizedprofile-convergent.md) | 37 | `result-track:5f2381a04482297ea68c6d534f1e1ab7fece17fa1eaab134b9907d6a4f52f716` |
-| 8 | `lemma` | [unnormalizedProfile_mellin_zero](../../../../MeasureAndIntegration/PositiveNormalizedGaussian.lean/declarations/unnormalizedprofile-mellin-zero.md) | 44 | `result-track:b31d3a5fb6f8d1a953b389c2b0684ef2ca554a0716eaea703c6cf36fe1b78944` |
-| 9 | `lemma` | [unnormalizedProfile_not_unit_transform](../../../../MeasureAndIntegration/PositiveNormalizedGaussian.lean/declarations/unnormalizedprofile-not-unit-transform.md) | 54 | `result-track:f69cf7e7bef9037b420b26d8a20e3a12932f8c03496f25d0fd271f94e498f31e` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveNormalizedGaussian.lean/declarations/example.md) | 10 | `declaration-track:01c541536168676d07e1023d69bb9781ea82e7aad2e876a1871fcf5aaa7861f4` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveNormalizedGaussian.lean/declarations/example-source-edition-4.md) | 13 | `declaration-track:8f6a0812cd4297f766f217aa07c2c5bf184f6a441ccfe5e382a3f2215c4c09c5` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveNormalizedGaussian.lean/declarations/example-source-edition-2.md) | 16 | `declaration-track:49912f01f614bbd6057c5b6bb783b6466a367a2bfa9ab6797098c91535954dca` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveNormalizedGaussian.lean/declarations/example-source-edition-3.md) | 20 | `declaration-track:5eca640409013bb199ff30cbd71494c42fcc258e7629a8e2e11ca9e998da172b` |
+| 5 | `def` | [unnormalizedProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveNormalizedGaussian.lean/declarations/unnormalizedprofile.md) | 27 | `declaration-track:ae1eabc971b649e28c6ce03db02a2fdc5826f01dc70e29daebaaefacfcca0452` |
+| 6 | `lemma` | [unnormalizedProfile_eq_quarter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveNormalizedGaussian.lean/declarations/unnormalizedprofile-eq-quarter.md) | 30 | `result-track:4925fee65c82d7c25ea22aa37902987e6637be6b0b26cc2811499eea30aebbf2` |
+| 7 | `lemma` | [unnormalizedProfile_convergent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveNormalizedGaussian.lean/declarations/unnormalizedprofile-convergent.md) | 37 | `result-track:5f2381a04482297ea68c6d534f1e1ab7fece17fa1eaab134b9907d6a4f52f716` |
+| 8 | `lemma` | [unnormalizedProfile_mellin_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveNormalizedGaussian.lean/declarations/unnormalizedprofile-mellin-zero.md) | 44 | `result-track:b31d3a5fb6f8d1a953b389c2b0684ef2ca554a0716eaea703c6cf36fe1b78944` |
+| 9 | `lemma` | [unnormalizedProfile_not_unit_transform](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveNormalizedGaussian.lean/declarations/unnormalizedprofile-not-unit-transform.md) | 54 | `result-track:f69cf7e7bef9037b420b26d8a20e3a12932f8c03496f25d0fd271f94e498f31e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

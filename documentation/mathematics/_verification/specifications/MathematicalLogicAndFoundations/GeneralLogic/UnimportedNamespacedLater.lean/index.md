@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/UnimportedNamespacedLater.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/UnimportedNamespacedLater.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/UnimportedNamespacedLater.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/UnimportedNamespacedLater.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [excluded](../../../../../MathematicalLogicAndFoundations/GeneralLogic/UnimportedNamespacedLater.lean/declarations/excluded.md) | 10 | `result-track:fa2613aaecd1c6216fa13e576fc837f7b8b9258e3cf857b7d382036d7b3617c1` |
-| 2 | `theorem` | [later](../../../../../MathematicalLogicAndFoundations/GeneralLogic/UnimportedNamespacedLater.lean/declarations/later.md) | 11 | `result-track:64bd1f85b63107fe976d81fbf324b128606f119335cc349d1e846f4bfc5bb0be` |
+| 1 | `theorem` | [excluded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/UnimportedNamespacedLater.lean/declarations/excluded.md) | 10 | `result-track:fa2613aaecd1c6216fa13e576fc837f7b8b9258e3cf857b7d382036d7b3617c1` |
+| 2 | `theorem` | [later](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/UnimportedNamespacedLater.lean/declarations/later.md) | 11 | `result-track:64bd1f85b63107fe976d81fbf324b128606f119335cc349d1e846f4bfc5bb0be` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

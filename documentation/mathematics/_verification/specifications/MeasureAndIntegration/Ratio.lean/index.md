@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/Ratio.lean/index.md) · [Full source](../../../../MeasureAndIntegration/Ratio.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Ratio.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Ratio.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [boundary_sub](../../../../MeasureAndIntegration/Ratio.lean/declarations/boundary-sub.md) | 9 | `result-track:a4dfd5fa5bf92cffa95b3362daa2695b93677dfc9f9d2f4b472406eccb8859c0` |
-| 2 | `theorem` | [cross_nonneg](../../../../MeasureAndIntegration/Ratio.lean/declarations/cross-nonneg.md) | 25 | `result-track:cbd59994f657770040a0121ce0af1c45b5af119bb1f99febafb312249a646202` |
-| 3 | `theorem` | [weighted_deriv_integral](../../../../MeasureAndIntegration/Ratio.lean/declarations/weighted-deriv-integral.md) | 33 | `result-track:09076eb58f1b26f5a10932b9df220a6dc33e6e2c785abc447538f529131ba0db` |
-| 4 | `theorem` | [weighted_identity](../../../../MeasureAndIntegration/Ratio.lean/declarations/weighted-identity.md) | 53 | `result-track:51fb299fc2e4f332607f84aaa32662e6a9f71778386eadfe763f5a04254a9793` |
-| 5 | `theorem` | [weighted_nonneg](../../../../MeasureAndIntegration/Ratio.lean/declarations/weighted-nonneg.md) | 75 | `result-track:83667c3f9df2910239ed6b1cba145265b3dcefb4a7e7c23f502da09ce4d876f3` |
-| 6 | `theorem` | [ratio_deriv](../../../../MeasureAndIntegration/Ratio.lean/declarations/ratio-deriv.md) | 85 | `result-track:715fd386ca8ebe42032d62988eedc2a670ec019615b5b6168f720a708879d0d8` |
-| 7 | `theorem` | [ratio_deriv_nonpos](../../../../MeasureAndIntegration/Ratio.lean/declarations/ratio-deriv-nonpos.md) | 95 | `result-track:5fafeb000bd9a98a04ed8c11612d7e74cfdf23cc30420f060d34241c6036b337` |
-| 8 | `theorem` | [ratio_antitone](../../../../MeasureAndIntegration/Ratio.lean/declarations/ratio-antitone.md) | 105 | `result-track:9ddcaff1641ff9c6d52d2029d3c7cd346fd4bc1d878cf673216c9a1e6666c145` |
-| 9 | `theorem` | [source_two_zero_one](../../../../MeasureAndIntegration/Ratio.lean/declarations/source-two-zero-one.md) | 119 | `result-track:4d0d80e39c68c032bbd1a33cf984ed325e2587b6f51fee742b232547f2c16cd9` |
+| 1 | `theorem` | [boundary_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Ratio.lean/declarations/boundary-sub.md) | 9 | `result-track:a4dfd5fa5bf92cffa95b3362daa2695b93677dfc9f9d2f4b472406eccb8859c0` |
+| 2 | `theorem` | [cross_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Ratio.lean/declarations/cross-nonneg.md) | 25 | `result-track:cbd59994f657770040a0121ce0af1c45b5af119bb1f99febafb312249a646202` |
+| 3 | `theorem` | [weighted_deriv_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Ratio.lean/declarations/weighted-deriv-integral.md) | 33 | `result-track:09076eb58f1b26f5a10932b9df220a6dc33e6e2c785abc447538f529131ba0db` |
+| 4 | `theorem` | [weighted_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Ratio.lean/declarations/weighted-identity.md) | 53 | `result-track:51fb299fc2e4f332607f84aaa32662e6a9f71778386eadfe763f5a04254a9793` |
+| 5 | `theorem` | [weighted_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Ratio.lean/declarations/weighted-nonneg.md) | 75 | `result-track:83667c3f9df2910239ed6b1cba145265b3dcefb4a7e7c23f502da09ce4d876f3` |
+| 6 | `theorem` | [ratio_deriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Ratio.lean/declarations/ratio-deriv.md) | 85 | `result-track:715fd386ca8ebe42032d62988eedc2a670ec019615b5b6168f720a708879d0d8` |
+| 7 | `theorem` | [ratio_deriv_nonpos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Ratio.lean/declarations/ratio-deriv-nonpos.md) | 95 | `result-track:5fafeb000bd9a98a04ed8c11612d7e74cfdf23cc30420f060d34241c6036b337` |
+| 8 | `theorem` | [ratio_antitone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Ratio.lean/declarations/ratio-antitone.md) | 105 | `result-track:9ddcaff1641ff9c6d52d2029d3c7cd346fd4bc1d878cf673216c9a1e6666c145` |
+| 9 | `theorem` | [source_two_zero_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Ratio.lean/declarations/source-two-zero-one.md) | 119 | `result-track:4d0d80e39c68c032bbd1a33cf984ed325e2587b6f51fee742b232547f2c16cd9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TensorAlgebraBasisEdition2.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TensorAlgebraBasisEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TensorAlgebraBasisEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TensorAlgebraBasisEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,12 +61,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [equivFreeAlgebra](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TensorAlgebraBasisEdition2.lean/declarations/equivfreealgebra.md) | 40 | `declaration-track:f4f19024bdce5bac793f3ec93d4296d858d2c3c3f96e0833755c2a107d9d65ff` |
-| 2 | `lemma` | [equivFreeAlgebra_ι_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TensorAlgebraBasisEdition2.lean/declarations/equivfreealgebra-apply.md) | 49 | `result-track:16f3a24ea614e014e8959e015371b143d7551af086a5aca6a4ea9667a932d60c` |
-| 3 | `lemma` | [equivFreeAlgebra_symm_ι](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TensorAlgebraBasisEdition2.lean/declarations/equivfreealgebra-symm.md) | 54 | `result-track:15b5022e334fe305446d777e54dfefb6eee62ed4acf4f9a4e9abdd83caad9c4c` |
-| 4 | `def` | [_root_.Basis.tensorAlgebra](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TensorAlgebraBasisEdition2.lean/declarations/root-basis-tensoralgebra.md) | 60 | `declaration-track:6cbe1b1c26a3e1d11ffa71c70345f5384f13e9451e479b9487f0c40d15d49919` |
-| 5 | `instance` | [instModuleFree](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TensorAlgebraBasisEdition2.lean/declarations/instmodulefree.md) | 65 | `declaration-track:9b18016700510d4c5a5db33c84a1a0328d93af03ce32237c156f33fd737fc108` |
-| 6 | `lemma` | [rank_eq](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TensorAlgebraBasisEdition2.lean/declarations/rank-eq.md) | 79 | `result-track:686c0702fab7817b27a2f70340d51bea31b3e9b8216e66f1070c7f80360e66be` |
+| 1 | `def` | [equivFreeAlgebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TensorAlgebraBasisEdition2.lean/declarations/equivfreealgebra.md) | 40 | `declaration-track:f4f19024bdce5bac793f3ec93d4296d858d2c3c3f96e0833755c2a107d9d65ff` |
+| 2 | `lemma` | [equivFreeAlgebra_ι_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TensorAlgebraBasisEdition2.lean/declarations/equivfreealgebra-apply.md) | 49 | `result-track:16f3a24ea614e014e8959e015371b143d7551af086a5aca6a4ea9667a932d60c` |
+| 3 | `lemma` | [equivFreeAlgebra_symm_ι](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TensorAlgebraBasisEdition2.lean/declarations/equivfreealgebra-symm.md) | 54 | `result-track:15b5022e334fe305446d777e54dfefb6eee62ed4acf4f9a4e9abdd83caad9c4c` |
+| 4 | `def` | [_root_.Basis.tensorAlgebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TensorAlgebraBasisEdition2.lean/declarations/root-basis-tensoralgebra.md) | 60 | `declaration-track:6cbe1b1c26a3e1d11ffa71c70345f5384f13e9451e479b9487f0c40d15d49919` |
+| 5 | `instance` | [instModuleFree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TensorAlgebraBasisEdition2.lean/declarations/instmodulefree.md) | 65 | `declaration-track:9b18016700510d4c5a5db33c84a1a0328d93af03ce32237c156f33fd737fc108` |
+| 6 | `lemma` | [rank_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TensorAlgebraBasisEdition2.lean/declarations/rank-eq.md) | 79 | `result-track:686c0702fab7817b27a2f70340d51bea31b3e9b8216e66f1070c7f80360e66be` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

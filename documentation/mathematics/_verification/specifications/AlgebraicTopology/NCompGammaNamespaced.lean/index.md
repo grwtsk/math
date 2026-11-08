@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/NCompGammaNamespaced.lean/index.md) · [Full source](../../../../AlgebraicTopology/NCompGammaNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NCompGammaNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NCompGammaNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,19 +58,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [PInfty_comp_map_mono_eq_zero](../../../../AlgebraicTopology/NCompGammaNamespaced.lean/declarations/pinfty-comp-map-mono-eq-zero.md) | 44 | `result-track:79c857ee3c2dcec376f0acd4406ff66382d9dafec5f58fabb86e751feb5fb72a` |
-| 2 | `theorem` | [Γ₀_obj_termwise_mapMono_comp_PInfty](../../../../AlgebraicTopology/NCompGammaNamespaced.lean/declarations/obj-termwise-mapmono-comp-pinfty.md) | 87 | `result-track:da0cef374d54d56a171adaf21451068a33abbd966faf001530199ee83069425a` |
-| 3 | `def` | [natTrans](../../../../AlgebraicTopology/NCompGammaNamespaced.lean/declarations/nattrans-source-edition-2.md) | 136 | `declaration-track:abd750ebf41293baa3088d6beda7fa5402ddb93bc8bf4e9bf6b5b4df2d5c7245` |
-| 4 | `def` | [Γ₂N₂ToKaroubiIso](../../../../AlgebraicTopology/NCompGammaNamespaced.lean/declarations/n-tokaroubiiso.md) | 172 | `declaration-track:6279c8a9e742080ff53ff1a287d2cbcbbb155c731f15d09568057327c21b79e2` |
-| 5 | `def` | [natTrans](../../../../AlgebraicTopology/NCompGammaNamespaced.lean/declarations/nattrans.md) | 178 | `declaration-track:a7924212e7f0de2289fa86e117a99c0604914e6ef1a9eb471c0e55531ac1de5c` |
-| 6 | `theorem` | [natTrans_app_f_app](../../../../AlgebraicTopology/NCompGammaNamespaced.lean/declarations/nattrans-app-f-app.md) | 182 | `result-track:d6ee1788104a1de7a68f0377007321fd68acb1f22d2f1d899b190d3087bd474c` |
-| 7 | `theorem` | [compatibility_Γ₂N₁_Γ₂N₂_natTrans](../../../../AlgebraicTopology/NCompGammaNamespaced.lean/declarations/compatibility-n-n-nattrans.md) | 191 | `result-track:6d297889b2571c91f11e0eb293b8bfff10f1bbc1973c847428c9212c6aed2f8a` |
-| 8 | `theorem` | [identity_N₂_objectwise](../../../../AlgebraicTopology/NCompGammaNamespaced.lean/declarations/identity-n-objectwise.md) | 203 | `result-track:51daf60632122b3d5ea54aa5b70aa8d85a4ecf37a7bc9ae2913cc986a876ba04` |
-| 9 | `theorem` | [identity_N₂](../../../../AlgebraicTopology/NCompGammaNamespaced.lean/declarations/identity-n.md) | 222 | `result-track:f8abde4893d469d77a58b3c83ddf51bbfd02d2ef8caa4b0e82fa613dc7fe872e` |
-| 10 | `instance` | [(anonymous)](../../../../AlgebraicTopology/NCompGammaNamespaced.lean/declarations/instance.md) | 230 | `declaration-track:5315b0b886439fee51b772761fd44fc4815b885b8fd87d1c00510087d46ec8b7` |
-| 11 | `instance` | [(anonymous)](../../../../AlgebraicTopology/NCompGammaNamespaced.lean/declarations/instance-source-edition-2.md) | 242 | `declaration-track:f2635cdd0277e90cae6644e930e6feae87c6982996de3fd24b537492c1e08dc7` |
-| 12 | `def` | [Γ₂N₂](../../../../AlgebraicTopology/NCompGammaNamespaced.lean/declarations/n-source-edition-2.md) | 251 | `declaration-track:d98f45fd30311d1d86d941c26e71a25b3725c24a859c1b69b67d1c3a50844902` |
-| 13 | `def` | [Γ₂N₁](../../../../AlgebraicTopology/NCompGammaNamespaced.lean/declarations/n.md) | 256 | `declaration-track:8199e990d2c3fe54bb9d5caf31f4daa1a6bd98aa404952280788679660d0cf5a` |
+| 1 | `theorem` | [PInfty_comp_map_mono_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NCompGammaNamespaced.lean/declarations/pinfty-comp-map-mono-eq-zero.md) | 44 | `result-track:79c857ee3c2dcec376f0acd4406ff66382d9dafec5f58fabb86e751feb5fb72a` |
+| 2 | `theorem` | [Γ₀_obj_termwise_mapMono_comp_PInfty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NCompGammaNamespaced.lean/declarations/obj-termwise-mapmono-comp-pinfty.md) | 87 | `result-track:da0cef374d54d56a171adaf21451068a33abbd966faf001530199ee83069425a` |
+| 3 | `def` | [natTrans](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NCompGammaNamespaced.lean/declarations/nattrans-source-edition-2.md) | 136 | `declaration-track:abd750ebf41293baa3088d6beda7fa5402ddb93bc8bf4e9bf6b5b4df2d5c7245` |
+| 4 | `def` | [Γ₂N₂ToKaroubiIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NCompGammaNamespaced.lean/declarations/n-tokaroubiiso.md) | 172 | `declaration-track:6279c8a9e742080ff53ff1a287d2cbcbbb155c731f15d09568057327c21b79e2` |
+| 5 | `def` | [natTrans](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NCompGammaNamespaced.lean/declarations/nattrans.md) | 178 | `declaration-track:a7924212e7f0de2289fa86e117a99c0604914e6ef1a9eb471c0e55531ac1de5c` |
+| 6 | `theorem` | [natTrans_app_f_app](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NCompGammaNamespaced.lean/declarations/nattrans-app-f-app.md) | 182 | `result-track:d6ee1788104a1de7a68f0377007321fd68acb1f22d2f1d899b190d3087bd474c` |
+| 7 | `theorem` | [compatibility_Γ₂N₁_Γ₂N₂_natTrans](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NCompGammaNamespaced.lean/declarations/compatibility-n-n-nattrans.md) | 191 | `result-track:6d297889b2571c91f11e0eb293b8bfff10f1bbc1973c847428c9212c6aed2f8a` |
+| 8 | `theorem` | [identity_N₂_objectwise](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NCompGammaNamespaced.lean/declarations/identity-n-objectwise.md) | 203 | `result-track:51daf60632122b3d5ea54aa5b70aa8d85a4ecf37a7bc9ae2913cc986a876ba04` |
+| 9 | `theorem` | [identity_N₂](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NCompGammaNamespaced.lean/declarations/identity-n.md) | 222 | `result-track:f8abde4893d469d77a58b3c83ddf51bbfd02d2ef8caa4b0e82fa613dc7fe872e` |
+| 10 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NCompGammaNamespaced.lean/declarations/instance.md) | 230 | `declaration-track:5315b0b886439fee51b772761fd44fc4815b885b8fd87d1c00510087d46ec8b7` |
+| 11 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NCompGammaNamespaced.lean/declarations/instance-source-edition-2.md) | 242 | `declaration-track:f2635cdd0277e90cae6644e930e6feae87c6982996de3fd24b537492c1e08dc7` |
+| 12 | `def` | [Γ₂N₂](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NCompGammaNamespaced.lean/declarations/n-source-edition-2.md) | 251 | `declaration-track:d98f45fd30311d1d86d941c26e71a25b3725c24a859c1b69b67d1c3a50844902` |
+| 13 | `def` | [Γ₂N₁](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NCompGammaNamespaced.lean/declarations/n.md) | 256 | `declaration-track:8199e990d2c3fe54bb9d5caf31f4daa1a6bd98aa404952280788679660d0cf5a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

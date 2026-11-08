@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Geometry/RulePattern.lean/index.md) · [Full source](../../../../Geometry/RulePattern.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RulePattern.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RulePattern.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,24 +57,24 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `macro` | [(anonymous)](../../../../Geometry/RulePattern.lean/declarations/macro-source-edition-2.md) | 11 | `declaration-track:f060ba7f9d6881b9d9f65b57133216c2586d75a12f524b28d2dc687af0c1bcc1` |
-| 2 | `axiom` | [falso](../../../../Geometry/RulePattern.lean/declarations/falso.md) | 14 | `declaration-track:53a95ae80b718617093702a3206070691df95f148a621f0c3c5c12cf518a925d` |
-| 3 | `macro` | [(anonymous)](../../../../Geometry/RulePattern.lean/declarations/macro.md) | 16 | `declaration-track:6a5fd773e760b454b26e05b7630b5e8aeac983a19ca0fe0442cee61985e57178` |
-| 4 | `axiom` | [nat_pos](../../../../Geometry/RulePattern.lean/declarations/nat-pos.md) | 19 | `declaration-track:0112b208252bda4b056a94ebc7ef41d6a5f6389e9cce096d25008a5134957bdf` |
-| 5 | `axiom` | [foo](../../../../Geometry/RulePattern.lean/declarations/foo.md) | 33 | `declaration-track:ce436bbc3e7a0b726fe9e64076604048c22e3359fc6dc72244f75fdaf08f4d3f` |
-| 6 | `example` | [(anonymous)](../../../../Geometry/RulePattern.lean/declarations/example-source-edition-4.md) | 35 | `declaration-track:e4ed6a95b76e00f9292662e62c29d8b0c359f78d53ae07d2c210639b53863374` |
-| 7 | `axiom` | [abs](../../../../Geometry/RulePattern.lean/declarations/abs.md) | 40 | `declaration-track:03d1a04cf9dc0cd8140f9c9203a4cf2c8400c509e6fcdc2dddfcdeefa06d487d` |
-| 8 | `axiom` | [triangle](../../../../Geometry/RulePattern.lean/declarations/triangle.md) | 45 | `declaration-track:a153dae0af67295ea06a2e999e2982d3490bffab05ca389287fffb17858b17b4` |
-| 9 | `axiom` | [falso'](../../../../Geometry/RulePattern.lean/declarations/falso-source-edition-2.md) | 48 | `declaration-track:92b380fe2c524cdc7209485fdd5d0d99aa99d2fa34b29cd196a141140a592e7a` |
-| 10 | `example` | [(anonymous)](../../../../Geometry/RulePattern.lean/declarations/example-source-edition-2.md) | 56 | `declaration-track:c093d7bb424d646c20d9a9e0027c5ad70d3ecf7dc8ffd870dd25fa92667bfcd9` |
-| 11 | `example` | [(anonymous)](../../../../Geometry/RulePattern.lean/declarations/example-source-edition-3.md) | 59 | `declaration-track:d55f338f692e4613572c02333f976f5fb2186d9565f814c7cc31e776c7fba6ee` |
-| 12 | `axiom` | [quuz](../../../../Geometry/RulePattern.lean/declarations/quuz.md) | 67 | `declaration-track:dc4184f541670d6c8c6ff19f91beef4271e2e51e95a1f828f6df36c1049e2719` |
-| 13 | `axiom` | [bar](../../../../Geometry/RulePattern.lean/declarations/bar.md) | 73 | `declaration-track:1714d2357d402268b3607372f822cbdc946ea3e121887d8978aae891edb77179` |
-| 14 | `axiom` | [baz](../../../../Geometry/RulePattern.lean/declarations/baz.md) | 80 | `declaration-track:eed7de925dbebcc2a186c9a286e60c70af6e7e6cbdfeb11fa83c1ff9291899c7` |
-| 15 | `abbrev` | [T](../../../../Geometry/RulePattern.lean/declarations/t.md) | 85 | `declaration-track:559a863c771549abbfeaeb8b5d8225e3cfb00194e58c2e884a0e0d7222557995` |
-| 16 | `axiom` | [falso₁](../../../../Geometry/RulePattern.lean/declarations/falso-source-edition-3.md) | 90 | `declaration-track:a0c2844d15fe2821c4e6426667d662bdc1a04544e8c535e70ab9cf5fad50c48c` |
-| 17 | `theorem` | [get_prop](../../../../Geometry/RulePattern.lean/declarations/get-prop.md) | 98 | `result-track:2f1ac521d51a58b4c5dc016dd2feec74d28d52be6e06952134a848d68f2b164f` |
-| 18 | `example` | [(anonymous)](../../../../Geometry/RulePattern.lean/declarations/example.md) | 101 | `declaration-track:94af7e652f3f9f16c6178d80704e8975f9e154a1996c225849248617c1d9db0b` |
+| 1 | `macro` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RulePattern.lean/declarations/macro-source-edition-2.md) | 11 | `declaration-track:f060ba7f9d6881b9d9f65b57133216c2586d75a12f524b28d2dc687af0c1bcc1` |
+| 2 | `axiom` | [falso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RulePattern.lean/declarations/falso.md) | 14 | `declaration-track:53a95ae80b718617093702a3206070691df95f148a621f0c3c5c12cf518a925d` |
+| 3 | `macro` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RulePattern.lean/declarations/macro.md) | 16 | `declaration-track:6a5fd773e760b454b26e05b7630b5e8aeac983a19ca0fe0442cee61985e57178` |
+| 4 | `axiom` | [nat_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RulePattern.lean/declarations/nat-pos.md) | 19 | `declaration-track:0112b208252bda4b056a94ebc7ef41d6a5f6389e9cce096d25008a5134957bdf` |
+| 5 | `axiom` | [foo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RulePattern.lean/declarations/foo.md) | 33 | `declaration-track:ce436bbc3e7a0b726fe9e64076604048c22e3359fc6dc72244f75fdaf08f4d3f` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RulePattern.lean/declarations/example-source-edition-4.md) | 35 | `declaration-track:e4ed6a95b76e00f9292662e62c29d8b0c359f78d53ae07d2c210639b53863374` |
+| 7 | `axiom` | [abs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RulePattern.lean/declarations/abs.md) | 40 | `declaration-track:03d1a04cf9dc0cd8140f9c9203a4cf2c8400c509e6fcdc2dddfcdeefa06d487d` |
+| 8 | `axiom` | [triangle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RulePattern.lean/declarations/triangle.md) | 45 | `declaration-track:a153dae0af67295ea06a2e999e2982d3490bffab05ca389287fffb17858b17b4` |
+| 9 | `axiom` | [falso'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RulePattern.lean/declarations/falso-source-edition-2.md) | 48 | `declaration-track:92b380fe2c524cdc7209485fdd5d0d99aa99d2fa34b29cd196a141140a592e7a` |
+| 10 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RulePattern.lean/declarations/example-source-edition-2.md) | 56 | `declaration-track:c093d7bb424d646c20d9a9e0027c5ad70d3ecf7dc8ffd870dd25fa92667bfcd9` |
+| 11 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RulePattern.lean/declarations/example-source-edition-3.md) | 59 | `declaration-track:d55f338f692e4613572c02333f976f5fb2186d9565f814c7cc31e776c7fba6ee` |
+| 12 | `axiom` | [quuz](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RulePattern.lean/declarations/quuz.md) | 67 | `declaration-track:dc4184f541670d6c8c6ff19f91beef4271e2e51e95a1f828f6df36c1049e2719` |
+| 13 | `axiom` | [bar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RulePattern.lean/declarations/bar.md) | 73 | `declaration-track:1714d2357d402268b3607372f822cbdc946ea3e121887d8978aae891edb77179` |
+| 14 | `axiom` | [baz](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RulePattern.lean/declarations/baz.md) | 80 | `declaration-track:eed7de925dbebcc2a186c9a286e60c70af6e7e6cbdfeb11fa83c1ff9291899c7` |
+| 15 | `abbrev` | [T](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RulePattern.lean/declarations/t.md) | 85 | `declaration-track:559a863c771549abbfeaeb8b5d8225e3cfb00194e58c2e884a0e0d7222557995` |
+| 16 | `axiom` | [falso₁](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RulePattern.lean/declarations/falso-source-edition-3.md) | 90 | `declaration-track:a0c2844d15fe2821c4e6426667d662bdc1a04544e8c535e70ab9cf5fad50c48c` |
+| 17 | `theorem` | [get_prop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RulePattern.lean/declarations/get-prop.md) | 98 | `result-track:2f1ac521d51a58b4c5dc016dd2feec74d28d52be6e06952134a848d68f2b164f` |
+| 18 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RulePattern.lean/declarations/example.md) | 101 | `declaration-track:94af7e652f3f9f16c6178d80704e8975f9e154a1996c225849248617c1d9db0b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

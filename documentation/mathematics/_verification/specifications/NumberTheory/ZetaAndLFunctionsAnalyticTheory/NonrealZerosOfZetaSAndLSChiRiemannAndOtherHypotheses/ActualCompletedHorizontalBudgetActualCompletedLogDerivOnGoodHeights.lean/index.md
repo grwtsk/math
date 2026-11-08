@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ActualCompletedHorizontalBudgetActualCompletedLogDerivOnGoodHeights.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ActualCompletedHorizontalBudgetActualCompletedLogDerivOnGoodHeights.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ActualCompletedHorizontalBudgetActualCompletedLogDerivOnGoodHeights.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ActualCompletedHorizontalBudgetActualCompletedLogDerivOnGoodHeights.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_completed_logDeriv_on_good_heights](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ActualCompletedHorizontalBudgetActualCompletedLogDerivOnGoodHeights.lean/declarations/actual-completed-logderiv-on-good-heights.md) | 19 | `result-track:08bd304360b43dcd9a9cdbb1be784ee5e610142cfb6b7c1c352de9b41f79bcc5` |
+| 1 | `theorem` | [actual_completed_logDeriv_on_good_heights](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ActualCompletedHorizontalBudgetActualCompletedLogDerivOnGoodHeights.lean/declarations/actual-completed-logderiv-on-good-heights.md) | 19 | `result-track:08bd304360b43dcd9a9cdbb1be784ee5e610142cfb6b7c1c352de9b41f79bcc5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

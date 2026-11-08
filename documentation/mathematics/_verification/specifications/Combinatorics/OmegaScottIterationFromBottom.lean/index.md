@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/OmegaScottIterationFromBottom.lean/index.md) · [Full source](../../../../Combinatorics/OmegaScottIterationFromBottom.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OmegaScottIterationFromBottom.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OmegaScottIterationFromBottom.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [kleene_completeLattice_iteration](../../../../Combinatorics/OmegaScottIterationFromBottom.lean/declarations/kleene-completelattice-iteration.md) | 45 | `result-track:85c4f52008fd1727910299fc31f7d151d2bbea6ae26890455d0cc1a5cd8f7919` |
+| 1 | `theorem` | [kleene_completeLattice_iteration](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OmegaScottIterationFromBottom.lean/declarations/kleene-completelattice-iteration.md) | 45 | `result-track:85c4f52008fd1727910299fc31f7d151d2bbea6ae26890455d0cc1a5cd8f7919` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

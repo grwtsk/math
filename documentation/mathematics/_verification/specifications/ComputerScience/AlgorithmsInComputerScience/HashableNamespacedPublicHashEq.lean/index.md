@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/HashableNamespacedPublicHashEq.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/HashableNamespacedPublicHashEq.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/HashableNamespacedPublicHashEq.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/HashableNamespacedPublicHashEq.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [hash_eq](../../../../../ComputerScience/AlgorithmsInComputerScience/HashableNamespacedPublicHashEq.lean/declarations/hash-eq-source-edition-2.md) | 24 | `result-track:d47eed561d786e7fdea3b81c6ad0d167e82f79452619ee83ac7261eaeeed2893` |
-| 2 | `theorem` | [hash_eq](../../../../../ComputerScience/AlgorithmsInComputerScience/HashableNamespacedPublicHashEq.lean/declarations/hash-eq.md) | 28 | `result-track:a54719d4e988c2823fbd74b75e7299fe2b241efd168ee739858cc12f9c643889` |
-| 3 | `instance` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/HashableNamespacedPublicHashEq.lean/declarations/instance.md) | 30 | `declaration-track:1dd060e46e844167f13657a60ec5a9687b76e92c5761b66807b03639735129ca` |
+| 1 | `theorem` | [hash_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/HashableNamespacedPublicHashEq.lean/declarations/hash-eq-source-edition-2.md) | 24 | `result-track:d47eed561d786e7fdea3b81c6ad0d167e82f79452619ee83ac7261eaeeed2893` |
+| 2 | `theorem` | [hash_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/HashableNamespacedPublicHashEq.lean/declarations/hash-eq.md) | 28 | `result-track:a54719d4e988c2823fbd74b75e7299fe2b241efd168ee739858cc12f9c643889` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/HashableNamespacedPublicHashEq.lean/declarations/instance.md) | 30 | `declaration-track:1dd060e46e844167f13657a60ec5a9687b76e92c5761b66807b03639735129ca` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

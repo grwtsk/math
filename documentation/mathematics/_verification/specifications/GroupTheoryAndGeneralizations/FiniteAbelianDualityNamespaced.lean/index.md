@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/FiniteAbelianDualityNamespaced.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/FiniteAbelianDualityNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteAbelianDualityNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteAbelianDualityNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [dvd_exponent](../../../../GroupTheoryAndGeneralizations/FiniteAbelianDualityNamespaced.lean/declarations/dvd-exponent.md) | 32 | `result-track:3090a78633c5078967e6ca056a7e124952ac09ad83152dcb47a6ecff35dc5f96` |
-| 2 | `lemma` | [exists_apply_ne_one_aux](../../../../GroupTheoryAndGeneralizations/FiniteAbelianDualityNamespaced.lean/declarations/exists-apply-ne-one-aux.md) | 44 | `result-track:2810c7eba0755aed9ec6e3a831f1cfd9bb5c93434443b0c3dd4647e4c46ddd85` |
-| 3 | `theorem` | [exists_apply_ne_one_of_hasEnoughRootsOfUnity](../../../../GroupTheoryAndGeneralizations/FiniteAbelianDualityNamespaced.lean/declarations/exists-apply-ne-one-of-hasenoughrootsofunity.md) | 65 | `result-track:083a71dff4a0d422af986ac8835c293d816a1c0ff9fa8ff7b1dd454455119039` |
-| 4 | `theorem` | [monoidHom_mulEquiv_of_hasEnoughRootsOfUnity](../../../../GroupTheoryAndGeneralizations/FiniteAbelianDualityNamespaced.lean/declarations/monoidhom-mulequiv-of-hasenoughrootsofunity.md) | 75 | `result-track:71b22fa28871e8d9995f381f1b2b7f6af86c6d9066498a5b235d782d621c228f` |
+| 1 | `lemma` | [dvd_exponent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteAbelianDualityNamespaced.lean/declarations/dvd-exponent.md) | 32 | `result-track:3090a78633c5078967e6ca056a7e124952ac09ad83152dcb47a6ecff35dc5f96` |
+| 2 | `lemma` | [exists_apply_ne_one_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteAbelianDualityNamespaced.lean/declarations/exists-apply-ne-one-aux.md) | 44 | `result-track:2810c7eba0755aed9ec6e3a831f1cfd9bb5c93434443b0c3dd4647e4c46ddd85` |
+| 3 | `theorem` | [exists_apply_ne_one_of_hasEnoughRootsOfUnity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteAbelianDualityNamespaced.lean/declarations/exists-apply-ne-one-of-hasenoughrootsofunity.md) | 65 | `result-track:083a71dff4a0d422af986ac8835c293d816a1c0ff9fa8ff7b1dd454455119039` |
+| 4 | `theorem` | [monoidHom_mulEquiv_of_hasEnoughRootsOfUnity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteAbelianDualityNamespaced.lean/declarations/monoidhom-mulequiv-of-hasenoughrootsofunity.md) | 75 | `result-track:71b22fa28871e8d9995f381f1b2b7f6af86c6d9066498a5b235d782d621c228f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

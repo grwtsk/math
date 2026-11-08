@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/SimpleGraphNamespacedPublic.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/SimpleGraphNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/SimpleGraphNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/SimpleGraphNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/SimpleGraphNamespacedPublic.lean/declarations/instance.md) | 33 | `declaration-track:6ebf78b1991652ef096530d7a4d1fadd1713535d861f1336ec72f4b4cd9da0dc` |
-| 2 | `lemma` | [measurable_iff_adj](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/SimpleGraphNamespacedPublic.lean/declarations/measurable-iff-adj.md) | 36 | `result-track:9a77d5cbe11f3a23c363f1439b9019b8728f1c3af33e451b483f13f88ea75178` |
-| 3 | `lemma` | [measurable_adj](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/SimpleGraphNamespacedPublic.lean/declarations/measurable-adj.md) | 41 | `result-track:f425f03eba650025cd5096e0eb464f6ead638a16de4b8b3695b7a5dcdebe18c6` |
-| 4 | `lemma` | [measurable_edgeSet](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/SimpleGraphNamespacedPublic.lean/declarations/measurable-edgeset.md) | 44 | `result-track:f897295efe2101ae2d357205db2bf3561aa5ac942c4ef9a0ec663b2de1486dcd` |
-| 5 | `lemma` | [measurable_fromEdgeSet](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/SimpleGraphNamespacedPublic.lean/declarations/measurable-fromedgeset.md) | 48 | `result-track:b736d23acdcd62e5ffdd9c428abb54472d004144d30f6b2bbef813d81f7db6fa` |
-| 6 | `lemma` | [measurableEmbedding_edgeSet](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/SimpleGraphNamespacedPublic.lean/declarations/measurableembedding-edgeset.md) | 51 | `result-track:02d6ee1f2a35425d8d179454615ec17a53aaf480635691049e38d0387c9e9ba0` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/SimpleGraphNamespacedPublic.lean/declarations/instance.md) | 33 | `declaration-track:6ebf78b1991652ef096530d7a4d1fadd1713535d861f1336ec72f4b4cd9da0dc` |
+| 2 | `lemma` | [measurable_iff_adj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/SimpleGraphNamespacedPublic.lean/declarations/measurable-iff-adj.md) | 36 | `result-track:9a77d5cbe11f3a23c363f1439b9019b8728f1c3af33e451b483f13f88ea75178` |
+| 3 | `lemma` | [measurable_adj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/SimpleGraphNamespacedPublic.lean/declarations/measurable-adj.md) | 41 | `result-track:f425f03eba650025cd5096e0eb464f6ead638a16de4b8b3695b7a5dcdebe18c6` |
+| 4 | `lemma` | [measurable_edgeSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/SimpleGraphNamespacedPublic.lean/declarations/measurable-edgeset.md) | 44 | `result-track:f897295efe2101ae2d357205db2bf3561aa5ac942c4ef9a0ec663b2de1486dcd` |
+| 5 | `lemma` | [measurable_fromEdgeSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/SimpleGraphNamespacedPublic.lean/declarations/measurable-fromedgeset.md) | 48 | `result-track:b736d23acdcd62e5ffdd9c428abb54472d004144d30f6b2bbef813d81f7db6fa` |
+| 6 | `lemma` | [measurableEmbedding_edgeSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/SimpleGraphNamespacedPublic.lean/declarations/measurableembedding-edgeset.md) | 51 | `result-track:02d6ee1f2a35425d8d179454615ec17a53aaf480635691049e38d0387c9e9ba0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

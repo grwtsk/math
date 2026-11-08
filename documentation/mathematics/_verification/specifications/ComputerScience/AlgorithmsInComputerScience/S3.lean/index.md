@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/S3.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/S3.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/S3.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/S3.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,18 +59,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [s3UploadDestFrom](../../../../../ComputerScience/AlgorithmsInComputerScience/S3.lean/declarations/s3uploaddestfrom.md) | 37 | `declaration-track:3036f9a940f86ac6eaceba702a6b2bda232c11817ae3f3a609b5710d7d66e7a8` |
-| 2 | `structure` | [S3Credentials](../../../../../ComputerScience/AlgorithmsInComputerScience/S3.lean/declarations/s3credentials.md) | 52 | `declaration-track:ea769c330695353ea86f14ef336650a4dd84a9e8ece85a86070004749a32caf8` |
-| 3 | `def` | [s3AuthFrom](../../../../../ComputerScience/AlgorithmsInComputerScience/S3.lean/declarations/s3authfrom.md) | 67 | `declaration-track:110b329ea6c4f335f663e17c3c591224d8a4813ec7d24042165d26fa71be3881` |
-| 4 | `def` | [getS3Auth](../../../../../ComputerScience/AlgorithmsInComputerScience/S3.lean/declarations/gets3auth.md) | 81 | `declaration-track:d0e5692cf7d6eb6ddda773f66309ac3ed9be94cb8b8da3487d5051e6ab9e8892` |
-| 5 | `def` | [s3RegionFrom](../../../../../ComputerScience/AlgorithmsInComputerScience/S3.lean/declarations/s3regionfrom.md) | 94 | `declaration-track:9b682786e5fb38ebb9f81ff193830442187107f37ac21b46ff803e583a172bb7` |
-| 6 | `def` | [getS3Region](../../../../../ComputerScience/AlgorithmsInComputerScience/S3.lean/declarations/gets3region.md) | 102 | `declaration-track:89053c11eb90f92e0bb1887c521d4487e8083b21e106cdb857d0537ae42d15ae` |
-| 7 | `def` | [s3CurlArgs](../../../../../ComputerScience/AlgorithmsInComputerScience/S3.lean/declarations/s3curlargs.md) | 114 | `declaration-track:ec947d5241d1da616e133f2781b6d3c19f7f9b5ec9034c591808adaeff0e92eb` |
-| 8 | `def` | [s3EndpointSplit](../../../../../ComputerScience/AlgorithmsInComputerScience/S3.lean/declarations/s3endpointsplit.md) | 127 | `declaration-track:8491533bb8c67b1c28d9b70bf72478a6f923a6aac97a4c1ff4e8c682d857a56f` |
-| 9 | `def` | [rcloneEnv](../../../../../ComputerScience/AlgorithmsInComputerScience/S3.lean/declarations/rcloneenv.md) | 150 | `declaration-track:fd77a1d5670098aa6f8ae17347ff7ccd31b0e083327e55eda2eddab184de436f` |
-| 10 | `inductive` | [S3UploadTool](../../../../../ComputerScience/AlgorithmsInComputerScience/S3.lean/declarations/s3uploadtool.md) | 161 | `declaration-track:160b24282181fe61ac773eeee90eb1fdff5350d3ba249bca88b01cafb37ce4f0` |
-| 11 | `def` | [s3UploadToolFrom](../../../../../ComputerScience/AlgorithmsInComputerScience/S3.lean/declarations/s3uploadtoolfrom.md) | 173 | `declaration-track:5a50ee2e975d611adb5095c6fedf8b73404f4de1fbd818e03876605b821c19b2` |
-| 12 | `def` | [s3PutStaged](../../../../../ComputerScience/AlgorithmsInComputerScience/S3.lean/declarations/s3putstaged.md) | 183 | `declaration-track:2fee78d05b02f62df5c681491ba069931367ac7ef38ac0ce3999bfacc30f3efb` |
+| 1 | `def` | [s3UploadDestFrom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/S3.lean/declarations/s3uploaddestfrom.md) | 37 | `declaration-track:3036f9a940f86ac6eaceba702a6b2bda232c11817ae3f3a609b5710d7d66e7a8` |
+| 2 | `structure` | [S3Credentials](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/S3.lean/declarations/s3credentials.md) | 52 | `declaration-track:ea769c330695353ea86f14ef336650a4dd84a9e8ece85a86070004749a32caf8` |
+| 3 | `def` | [s3AuthFrom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/S3.lean/declarations/s3authfrom.md) | 67 | `declaration-track:110b329ea6c4f335f663e17c3c591224d8a4813ec7d24042165d26fa71be3881` |
+| 4 | `def` | [getS3Auth](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/S3.lean/declarations/gets3auth.md) | 81 | `declaration-track:d0e5692cf7d6eb6ddda773f66309ac3ed9be94cb8b8da3487d5051e6ab9e8892` |
+| 5 | `def` | [s3RegionFrom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/S3.lean/declarations/s3regionfrom.md) | 94 | `declaration-track:9b682786e5fb38ebb9f81ff193830442187107f37ac21b46ff803e583a172bb7` |
+| 6 | `def` | [getS3Region](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/S3.lean/declarations/gets3region.md) | 102 | `declaration-track:89053c11eb90f92e0bb1887c521d4487e8083b21e106cdb857d0537ae42d15ae` |
+| 7 | `def` | [s3CurlArgs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/S3.lean/declarations/s3curlargs.md) | 114 | `declaration-track:ec947d5241d1da616e133f2781b6d3c19f7f9b5ec9034c591808adaeff0e92eb` |
+| 8 | `def` | [s3EndpointSplit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/S3.lean/declarations/s3endpointsplit.md) | 127 | `declaration-track:8491533bb8c67b1c28d9b70bf72478a6f923a6aac97a4c1ff4e8c682d857a56f` |
+| 9 | `def` | [rcloneEnv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/S3.lean/declarations/rcloneenv.md) | 150 | `declaration-track:fd77a1d5670098aa6f8ae17347ff7ccd31b0e083327e55eda2eddab184de436f` |
+| 10 | `inductive` | [S3UploadTool](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/S3.lean/declarations/s3uploadtool.md) | 161 | `declaration-track:160b24282181fe61ac773eeee90eb1fdff5350d3ba249bca88b01cafb37ce4f0` |
+| 11 | `def` | [s3UploadToolFrom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/S3.lean/declarations/s3uploadtoolfrom.md) | 173 | `declaration-track:5a50ee2e975d611adb5095c6fedf8b73404f4de1fbd818e03876605b821c19b2` |
+| 12 | `def` | [s3PutStaged](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/S3.lean/declarations/s3putstaged.md) | 183 | `declaration-track:2fee78d05b02f62df5c681491ba069931367ac7ef38ac0ce3999bfacc30f3efb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

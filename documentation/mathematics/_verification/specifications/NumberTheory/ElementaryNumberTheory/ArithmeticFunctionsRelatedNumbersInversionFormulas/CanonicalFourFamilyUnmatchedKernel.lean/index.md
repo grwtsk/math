@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CanonicalFourFamilyUnmatchedKernel.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CanonicalFourFamilyUnmatchedKernel.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CanonicalFourFamilyUnmatchedKernel.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CanonicalFourFamilyUnmatchedKernel.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Moebius.CanonicalFourFamilyScaleBounds`](../../../../../../AssociativeRingsAndAlgebras/CanonicalFourFamilyScaleBounds.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.CanonicalFourFamilyScaleBounds`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CanonicalFourFamilyScaleBounds.lean/index.md) — import line 3; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [parityOne_scaleCenter_entry_zero](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CanonicalFourFamilyUnmatchedKernel.lean/declarations/parityone-scalecenter-entry-zero.md) | 15 | `result-track:cafd1dc59c16ba6f4bd58dcd9597fe578afdf9119b567c2bd6a42d94b27f0882` |
-| 2 | `theorem` | [parityOne_scaleTen_amplitude](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CanonicalFourFamilyUnmatchedKernel.lean/declarations/parityone-scaleten-amplitude.md) | 32 | `result-track:4c37b848a228ec84cfcc1448eb8b7749206e9587d7872c350ef36114f789614a` |
-| 3 | `def` | [unmatchedTenRestriction](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CanonicalFourFamilyUnmatchedKernel.lean/declarations/unmatchedtenrestriction.md) | 56 | `declaration-track:a7e0932d68dcc75bc885ce037ed6b25d6e15b915d62efc4b32b5b440c11ec2a2` |
-| 4 | `def` | [unmatchedTenPacket](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CanonicalFourFamilyUnmatchedKernel.lean/declarations/unmatchedtenpacket.md) | 59 | `declaration-track:ef52095fe90dab36299e3e5a82d5d81e15b0dc77a9c3016b760b313d36fda796` |
-| 5 | `theorem` | [unmatchedTenPacket_apply](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CanonicalFourFamilyUnmatchedKernel.lean/declarations/unmatchedtenpacket-apply.md) | 62 | `result-track:df6e276c4c7c1251b6ff34413b8bda4639944021cdad64250d52684c8416efdb` |
-| 6 | `theorem` | [unmatchedTen_realizable_kernel](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CanonicalFourFamilyUnmatchedKernel.lean/declarations/unmatchedten-realizable-kernel.md) | 71 | `result-track:f9b86d4f250d4fd73bc30fefb6e97227d5f2ff2b3c9863a3f481393886c70d8f` |
-| 7 | `theorem` | [not_restrictionLowerFrame_ten](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CanonicalFourFamilyUnmatchedKernel.lean/declarations/not-restrictionlowerframe-ten.md) | 88 | `result-track:34260f23409635450b9baab8e88ca5b507b6558f2a879a192968e5f5f7f9111f` |
-| 8 | `theorem` | [no_restriction_lower_frame_from_ten](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CanonicalFourFamilyUnmatchedKernel.lean/declarations/no-restriction-lower-frame-from-ten.md) | 96 | `result-track:6514f48ab28fe68fb3d2bc58b80d5866302a7396808f935bcdd58fd11179bb29` |
+| 1 | `theorem` | [parityOne_scaleCenter_entry_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CanonicalFourFamilyUnmatchedKernel.lean/declarations/parityone-scalecenter-entry-zero.md) | 15 | `result-track:cafd1dc59c16ba6f4bd58dcd9597fe578afdf9119b567c2bd6a42d94b27f0882` |
+| 2 | `theorem` | [parityOne_scaleTen_amplitude](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CanonicalFourFamilyUnmatchedKernel.lean/declarations/parityone-scaleten-amplitude.md) | 32 | `result-track:4c37b848a228ec84cfcc1448eb8b7749206e9587d7872c350ef36114f789614a` |
+| 3 | `def` | [unmatchedTenRestriction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CanonicalFourFamilyUnmatchedKernel.lean/declarations/unmatchedtenrestriction.md) | 56 | `declaration-track:a7e0932d68dcc75bc885ce037ed6b25d6e15b915d62efc4b32b5b440c11ec2a2` |
+| 4 | `def` | [unmatchedTenPacket](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CanonicalFourFamilyUnmatchedKernel.lean/declarations/unmatchedtenpacket.md) | 59 | `declaration-track:ef52095fe90dab36299e3e5a82d5d81e15b0dc77a9c3016b760b313d36fda796` |
+| 5 | `theorem` | [unmatchedTenPacket_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CanonicalFourFamilyUnmatchedKernel.lean/declarations/unmatchedtenpacket-apply.md) | 62 | `result-track:df6e276c4c7c1251b6ff34413b8bda4639944021cdad64250d52684c8416efdb` |
+| 6 | `theorem` | [unmatchedTen_realizable_kernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CanonicalFourFamilyUnmatchedKernel.lean/declarations/unmatchedten-realizable-kernel.md) | 71 | `result-track:f9b86d4f250d4fd73bc30fefb6e97227d5f2ff2b3c9863a3f481393886c70d8f` |
+| 7 | `theorem` | [not_restrictionLowerFrame_ten](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CanonicalFourFamilyUnmatchedKernel.lean/declarations/not-restrictionlowerframe-ten.md) | 88 | `result-track:34260f23409635450b9baab8e88ca5b507b6558f2a879a192968e5f5f7f9111f` |
+| 8 | `theorem` | [no_restriction_lower_frame_from_ten](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CanonicalFourFamilyUnmatchedKernel.lean/declarations/no-restriction-lower-frame-from-ten.md) | 96 | `result-track:6514f48ab28fe68fb3d2bc58b80d5866302a7396808f935bcdd58fd11179bb29` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

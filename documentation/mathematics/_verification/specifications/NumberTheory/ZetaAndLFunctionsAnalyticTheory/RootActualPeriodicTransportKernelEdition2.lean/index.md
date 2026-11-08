@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualPeriodicTransportKernelEdition2.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualPeriodicTransportKernelEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualPeriodicTransportKernelEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualPeriodicTransportKernelEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualPeriodicTransportJet](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualPeriodicTransportKernelEdition2.lean/declarations/actualperiodictransportjet.md) | 20 | `declaration-track:2060b564cddddb60a3e5eb8aba60cb2ecfdf34b47f7381b63b6bf441402eb15f` |
-| 2 | `theorem` | [actualPeriodicTransportKernel_eq](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualPeriodicTransportKernelEdition2.lean/declarations/actualperiodictransportkernel-eq.md) | 27 | `result-track:0c1ac133e2840f513364dbd1415fe0b62602795f8e9fb3aa214177886095c69b` |
-| 3 | `theorem` | [actualPeriodicTransportJet_abs_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualPeriodicTransportKernelEdition2.lean/declarations/actualperiodictransportjet-abs-le.md) | 36 | `result-track:a700ee4d0f36c3fdbd1fdd0e7234c4961a046626a3a2033aab8e1902db3d7d60` |
-| 4 | `theorem` | [actualPeriodicWeightedTransport_abs_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualPeriodicTransportKernelEdition2.lean/declarations/actualperiodicweightedtransport-abs-le.md) | 93 | `result-track:da814add60e0042ba17294f56dbec7a24a44e1a8fe8982a85e43f26b65830819` |
+| 1 | `def` | [actualPeriodicTransportJet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualPeriodicTransportKernelEdition2.lean/declarations/actualperiodictransportjet.md) | 20 | `declaration-track:2060b564cddddb60a3e5eb8aba60cb2ecfdf34b47f7381b63b6bf441402eb15f` |
+| 2 | `theorem` | [actualPeriodicTransportKernel_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualPeriodicTransportKernelEdition2.lean/declarations/actualperiodictransportkernel-eq.md) | 27 | `result-track:0c1ac133e2840f513364dbd1415fe0b62602795f8e9fb3aa214177886095c69b` |
+| 3 | `theorem` | [actualPeriodicTransportJet_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualPeriodicTransportKernelEdition2.lean/declarations/actualperiodictransportjet-abs-le.md) | 36 | `result-track:a700ee4d0f36c3fdbd1fdd0e7234c4961a046626a3a2033aab8e1902db3d7d60` |
+| 4 | `theorem` | [actualPeriodicWeightedTransport_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualPeriodicTransportKernelEdition2.lean/declarations/actualperiodicweightedtransport-abs-le.md) | 93 | `result-track:da814add60e0042ba17294f56dbec7a24a44e1a8fe8982a85e43f26b65830819` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

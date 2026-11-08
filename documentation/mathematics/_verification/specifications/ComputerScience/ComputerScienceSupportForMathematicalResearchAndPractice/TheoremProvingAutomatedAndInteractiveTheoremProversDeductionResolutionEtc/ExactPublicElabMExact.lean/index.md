@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ExactPublicElabMExact.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ExactPublicElabMExact.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ExactPublicElabMExact.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ExactPublicElabMExact.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [_root_.Lean.Elab.Tactic.Do.ProofMode.MGoal.exact](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ExactPublicElabMExact.lean/declarations/root-lean-elab-tactic-do-proofmode-mgoal-exact.md) | 19 | `declaration-track:1676f4cc9848f679e60c42dce96940e0c7b5d1b6710b668f2868956c2942f757` |
-| 2 | `def` | [_root_.Lean.Elab.Tactic.Do.ProofMode.MGoal.exactPure](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ExactPublicElabMExact.lean/declarations/root-lean-elab-tactic-do-proofmode-mgoal-exactpure.md) | 28 | `declaration-track:43732fc8430216ac91d178ad9bafefe2891f93b9a0b71f6ae5f9460810cd1601` |
-| 3 | `def` | [elabMExact](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ExactPublicElabMExact.lean/declarations/elabmexact.md) | 37 | `declaration-track:dac06f27e4e3d18060d1fcb92cf733babdc19681a4f7800ee3027daeb12ef399` |
+| 1 | `def` | [_root_.Lean.Elab.Tactic.Do.ProofMode.MGoal.exact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ExactPublicElabMExact.lean/declarations/root-lean-elab-tactic-do-proofmode-mgoal-exact.md) | 19 | `declaration-track:1676f4cc9848f679e60c42dce96940e0c7b5d1b6710b668f2868956c2942f757` |
+| 2 | `def` | [_root_.Lean.Elab.Tactic.Do.ProofMode.MGoal.exactPure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ExactPublicElabMExact.lean/declarations/root-lean-elab-tactic-do-proofmode-mgoal-exactpure.md) | 28 | `declaration-track:43732fc8430216ac91d178ad9bafefe2891f93b9a0b71f6ae5f9460810cd1601` |
+| 3 | `def` | [elabMExact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ExactPublicElabMExact.lean/declarations/elabmexact.md) | 37 | `declaration-track:dac06f27e4e3d18060d1fcb92cf733babdc19681a4f7800ee3027daeb12ef399` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

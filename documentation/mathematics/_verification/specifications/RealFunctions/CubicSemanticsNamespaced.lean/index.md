@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/CubicSemanticsNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/CubicSemanticsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CubicSemanticsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CubicSemanticsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CubicCellSemantics](../../../../RealFunctions/CubicSemanticsNamespaced.lean/declarations/cubiccellsemantics.md) | 27 | `declaration-track:e9c51ee24fade5800356b2e4dea3f2732904ed7e928cd3620107530623a1f88f` |
-| 2 | `theorem` | [CubicCellSemantics.correct](../../../../RealFunctions/CubicSemanticsNamespaced.lean/declarations/cubiccellsemantics-correct.md) | 34 | `result-track:e074775c1c43925e68a20b5f7ef287982760a242905498ccf44758df17e528d4` |
+| 1 | `structure` | [CubicCellSemantics](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CubicSemanticsNamespaced.lean/declarations/cubiccellsemantics.md) | 27 | `declaration-track:e9c51ee24fade5800356b2e4dea3f2732904ed7e928cd3620107530623a1f88f` |
+| 2 | `theorem` | [CubicCellSemantics.correct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CubicSemanticsNamespaced.lean/declarations/cubiccellsemantics-correct.md) | 34 | `result-track:e074775c1c43925e68a20b5f7ef287982760a242905498ccf44758df17e528d4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

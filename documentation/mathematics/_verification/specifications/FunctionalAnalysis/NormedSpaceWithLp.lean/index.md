@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/NormedSpaceWithLp.lean/index.md) · [Full source](../../../../FunctionalAnalysis/NormedSpaceWithLp.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceWithLp.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceWithLp.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,24 +58,24 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [WithLp](../../../../FunctionalAnalysis/NormedSpaceWithLp.lean/declarations/withlp.md) | 48 | `declaration-track:5fc73c91cef8395bfb6014e7db3967179069d18c9b08ca8cb030d129063e4166` |
-| 2 | `def` | [equiv](../../../../FunctionalAnalysis/NormedSpaceWithLp.lean/declarations/equiv.md) | 56 | `declaration-track:9dcf598edded5777bd07748456da5a3d3d62abb8eb5cc4783bd2613faeff34a8` |
-| 3 | `instance` | [instAddCommGroup](../../../../FunctionalAnalysis/NormedSpaceWithLp.lean/declarations/instaddcommgroup.md) | 62 | `declaration-track:f65e0967429d21625893c45758985a42b915998cc79c38f1617d073e0a4b532f` |
-| 4 | `instance` | [instModule](../../../../FunctionalAnalysis/NormedSpaceWithLp.lean/declarations/instmodule.md) | 63 | `declaration-track:eeae5fca17bed40ad99007eedc7734d3f250ae091bd5b8c33a9776dae1b0231c` |
-| 5 | `instance` | [instIsScalarTower](../../../../FunctionalAnalysis/NormedSpaceWithLp.lean/declarations/instisscalartower.md) | 65 | `declaration-track:8bbbbb27d2bc20beb3b17ca8c4aa670e3b3a2fcbd0c2b4a391dcddbf9e9388cb` |
-| 6 | `instance` | [instSMulCommClass](../../../../FunctionalAnalysis/NormedSpaceWithLp.lean/declarations/instsmulcommclass.md) | 69 | `declaration-track:c3eeae8cb3a90de019569bcc92b679366d30cb7b2695938ee6e7f26536ef97c3` |
-| 7 | `instance` | [instModuleFinite](../../../../FunctionalAnalysis/NormedSpaceWithLp.lean/declarations/instmodulefinite.md) | 73 | `declaration-track:a35427344a4332f54bd4efa020e36facf408249d471e830ae9e649e361bf9bb1` |
-| 8 | `theorem` | [equiv_zero](../../../../FunctionalAnalysis/NormedSpaceWithLp.lean/declarations/equiv-zero.md) | 83 | `result-track:7a4cf1718aa38fd1e126ec4e4b7294bee5709cc9f91534130f2e3988263fac62` |
-| 9 | `theorem` | [equiv_symm_zero](../../../../FunctionalAnalysis/NormedSpaceWithLp.lean/declarations/equiv-symm-zero.md) | 88 | `result-track:cf5a332dee0601bb490a5e3321922aa494ff3b6c1213a29da116f28e2c92f9ec` |
-| 10 | `theorem` | [equiv_add](../../../../FunctionalAnalysis/NormedSpaceWithLp.lean/declarations/equiv-add.md) | 93 | `result-track:6cd9f49962b78a13ccff84770d7830171f7951f52269096b7040cb98af0b092e` |
-| 11 | `theorem` | [equiv_symm_add](../../../../FunctionalAnalysis/NormedSpaceWithLp.lean/declarations/equiv-symm-add.md) | 98 | `result-track:f03d1484a2cad440362b96a5f94ae63c19bc9e6bac866dccbf8883295d61f35b` |
-| 12 | `theorem` | [equiv_sub](../../../../FunctionalAnalysis/NormedSpaceWithLp.lean/declarations/equiv-sub.md) | 104 | `result-track:5f3fb3abe812f8c586c70cce6139dfa3134df5f76ed415bbcfd162088d32b92f` |
-| 13 | `theorem` | [equiv_symm_sub](../../../../FunctionalAnalysis/NormedSpaceWithLp.lean/declarations/equiv-symm-sub.md) | 109 | `result-track:c6acc28253297e6570b7cbddb87b30ba2df91249409bb7c0c6bac7f6caa0aae2` |
-| 14 | `theorem` | [equiv_neg](../../../../FunctionalAnalysis/NormedSpaceWithLp.lean/declarations/equiv-neg.md) | 115 | `result-track:ab1bf9bc8e415675d682fbb10627307862332283e6cbe8e2efea5b799f0c89cb` |
-| 15 | `theorem` | [equiv_symm_neg](../../../../FunctionalAnalysis/NormedSpaceWithLp.lean/declarations/equiv-symm-neg.md) | 120 | `result-track:98122474e8e4220bd6493508dfa1f8d87afa17cabc95b33ba4d69b30958c916b` |
-| 16 | `theorem` | [equiv_smul](../../../../FunctionalAnalysis/NormedSpaceWithLp.lean/declarations/equiv-smul.md) | 125 | `result-track:088887e9f8eb67af5fa377c79e6ea3c49cc4f824c3ca6018693f8d8b97dc1ace` |
-| 17 | `theorem` | [equiv_symm_smul](../../../../FunctionalAnalysis/NormedSpaceWithLp.lean/declarations/equiv-symm-smul.md) | 130 | `result-track:4e1b959531f9622cc3fddbf38a5f96bfef1fc0efee6a904974febbf6446cce57` |
-| 18 | `def` | [linearEquiv](../../../../FunctionalAnalysis/NormedSpaceWithLp.lean/declarations/linearequiv.md) | 138 | `declaration-track:21f9489dadd10f37421a7ac8b169e74af227ac7446fc7757a438a44ed5eb8063` |
+| 1 | `def` | [WithLp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceWithLp.lean/declarations/withlp.md) | 48 | `declaration-track:5fc73c91cef8395bfb6014e7db3967179069d18c9b08ca8cb030d129063e4166` |
+| 2 | `def` | [equiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceWithLp.lean/declarations/equiv.md) | 56 | `declaration-track:9dcf598edded5777bd07748456da5a3d3d62abb8eb5cc4783bd2613faeff34a8` |
+| 3 | `instance` | [instAddCommGroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceWithLp.lean/declarations/instaddcommgroup.md) | 62 | `declaration-track:f65e0967429d21625893c45758985a42b915998cc79c38f1617d073e0a4b532f` |
+| 4 | `instance` | [instModule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceWithLp.lean/declarations/instmodule.md) | 63 | `declaration-track:eeae5fca17bed40ad99007eedc7734d3f250ae091bd5b8c33a9776dae1b0231c` |
+| 5 | `instance` | [instIsScalarTower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceWithLp.lean/declarations/instisscalartower.md) | 65 | `declaration-track:8bbbbb27d2bc20beb3b17ca8c4aa670e3b3a2fcbd0c2b4a391dcddbf9e9388cb` |
+| 6 | `instance` | [instSMulCommClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceWithLp.lean/declarations/instsmulcommclass.md) | 69 | `declaration-track:c3eeae8cb3a90de019569bcc92b679366d30cb7b2695938ee6e7f26536ef97c3` |
+| 7 | `instance` | [instModuleFinite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceWithLp.lean/declarations/instmodulefinite.md) | 73 | `declaration-track:a35427344a4332f54bd4efa020e36facf408249d471e830ae9e649e361bf9bb1` |
+| 8 | `theorem` | [equiv_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceWithLp.lean/declarations/equiv-zero.md) | 83 | `result-track:7a4cf1718aa38fd1e126ec4e4b7294bee5709cc9f91534130f2e3988263fac62` |
+| 9 | `theorem` | [equiv_symm_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceWithLp.lean/declarations/equiv-symm-zero.md) | 88 | `result-track:cf5a332dee0601bb490a5e3321922aa494ff3b6c1213a29da116f28e2c92f9ec` |
+| 10 | `theorem` | [equiv_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceWithLp.lean/declarations/equiv-add.md) | 93 | `result-track:6cd9f49962b78a13ccff84770d7830171f7951f52269096b7040cb98af0b092e` |
+| 11 | `theorem` | [equiv_symm_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceWithLp.lean/declarations/equiv-symm-add.md) | 98 | `result-track:f03d1484a2cad440362b96a5f94ae63c19bc9e6bac866dccbf8883295d61f35b` |
+| 12 | `theorem` | [equiv_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceWithLp.lean/declarations/equiv-sub.md) | 104 | `result-track:5f3fb3abe812f8c586c70cce6139dfa3134df5f76ed415bbcfd162088d32b92f` |
+| 13 | `theorem` | [equiv_symm_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceWithLp.lean/declarations/equiv-symm-sub.md) | 109 | `result-track:c6acc28253297e6570b7cbddb87b30ba2df91249409bb7c0c6bac7f6caa0aae2` |
+| 14 | `theorem` | [equiv_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceWithLp.lean/declarations/equiv-neg.md) | 115 | `result-track:ab1bf9bc8e415675d682fbb10627307862332283e6cbe8e2efea5b799f0c89cb` |
+| 15 | `theorem` | [equiv_symm_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceWithLp.lean/declarations/equiv-symm-neg.md) | 120 | `result-track:98122474e8e4220bd6493508dfa1f8d87afa17cabc95b33ba4d69b30958c916b` |
+| 16 | `theorem` | [equiv_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceWithLp.lean/declarations/equiv-smul.md) | 125 | `result-track:088887e9f8eb67af5fa377c79e6ea3c49cc4f824c3ca6018693f8d8b97dc1ace` |
+| 17 | `theorem` | [equiv_symm_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceWithLp.lean/declarations/equiv-symm-smul.md) | 130 | `result-track:4e1b959531f9622cc3fddbf38a5f96bfef1fc0efee6a904974febbf6446cce57` |
+| 18 | `def` | [linearEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceWithLp.lean/declarations/linearequiv.md) | 138 | `declaration-track:21f9489dadd10f37421a7ac8b169e74af227ac7446fc7757a438a44ed5eb8063` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

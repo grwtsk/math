@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ActionsPublicAction.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ActionsPublicAction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ActionsPublicAction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ActionsPublicAction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [Action](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ActionsPublicAction.lean/declarations/action.md) | 26 | `declaration-track:bef01f6112fc60d22da4c4474475e24540db2d5d0adc095c7a0fb7b2922df8e1` |
-| 2 | `def` | [Action.toString](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ActionsPublicAction.lean/declarations/action-tostring.md) | 33 | `declaration-track:d4fc22abbd4d20cc12d94488a62341fa9bf960cbc2a4122721c9e26e95be91be` |
-| 3 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ActionsPublicAction.lean/declarations/instance.md) | 39 | `declaration-track:4c9667e45adcd8971ac1197044c5a33c4d25786d4b39b21b44175c924c731cf3` |
-| 4 | `abbrev` | [IntAction](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ActionsPublicAction.lean/declarations/intaction.md) | 45 | `declaration-track:e78ce4284360a1d593b2bc0ad25210b60ce5d96effea4b2b45a6d2cbf47eb732` |
+| 1 | `inductive` | [Action](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ActionsPublicAction.lean/declarations/action.md) | 26 | `declaration-track:bef01f6112fc60d22da4c4474475e24540db2d5d0adc095c7a0fb7b2922df8e1` |
+| 2 | `def` | [Action.toString](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ActionsPublicAction.lean/declarations/action-tostring.md) | 33 | `declaration-track:d4fc22abbd4d20cc12d94488a62341fa9bf960cbc2a4122721c9e26e95be91be` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ActionsPublicAction.lean/declarations/instance.md) | 39 | `declaration-track:4c9667e45adcd8971ac1197044c5a33c4d25786d4b39b21b44175c924c731cf3` |
+| 4 | `abbrev` | [IntAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ActionsPublicAction.lean/declarations/intaction.md) | 45 | `declaration-track:e78ce4284360a1d593b2bc0ad25210b60ce5d96effea4b2b45a6d2cbf47eb732` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

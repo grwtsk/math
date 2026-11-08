@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../DifferentialGeometry/MDifferentiable.lean/index.md) · [Full source](../../../../DifferentialGeometry/MDifferentiable.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/MDifferentiable.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/MDifferentiable.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [mdifferentiableWithinAt_totalSpace](../../../../DifferentialGeometry/MDifferentiable.lean/declarations/mdifferentiablewithinat-totalspace.md) | 37 | `result-track:db64274f080288deb1571adf4ea7f85d1fe198bced6bef474e23b7d0b035d888` |
-| 2 | `lemma` | [MDifferentiableWithinAt.clm_apply_of_inCoordinates](../../../../DifferentialGeometry/MDifferentiable.lean/declarations/mdifferentiablewithinat-clm-apply-of-incoordinates.md) | 101 | `result-track:9f2fd49969dd1a96b9e720baba1e248e9d516f9ec348c2ef126aaf873abab989` |
-| 3 | `lemma` | [MDifferentiableAt.clm_apply_of_inCoordinates](../../../../DifferentialGeometry/MDifferentiable.lean/declarations/mdifferentiableat-clm-apply-of-incoordinates.md) | 139 | `result-track:92da67b9de260b75ed8c8d210ee7cfd45a1b6ee1d8f4c4d060241d3507db86c7` |
+| 1 | `theorem` | [mdifferentiableWithinAt_totalSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/MDifferentiable.lean/declarations/mdifferentiablewithinat-totalspace.md) | 37 | `result-track:db64274f080288deb1571adf4ea7f85d1fe198bced6bef474e23b7d0b035d888` |
+| 2 | `lemma` | [MDifferentiableWithinAt.clm_apply_of_inCoordinates](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/MDifferentiable.lean/declarations/mdifferentiablewithinat-clm-apply-of-incoordinates.md) | 101 | `result-track:9f2fd49969dd1a96b9e720baba1e248e9d516f9ec348c2ef126aaf873abab989` |
+| 3 | `lemma` | [MDifferentiableAt.clm_apply_of_inCoordinates](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/MDifferentiable.lean/declarations/mdifferentiableat-clm-apply-of-incoordinates.md) | 139 | `result-track:92da67b9de260b75ed8c8d210ee7cfd45a1b6ee1d8f4c4d060241d3507db86c7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

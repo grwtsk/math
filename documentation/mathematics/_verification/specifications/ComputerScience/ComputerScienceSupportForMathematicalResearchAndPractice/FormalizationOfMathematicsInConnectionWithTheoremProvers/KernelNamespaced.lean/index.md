@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KernelNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KernelNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KernelNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KernelNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [HeatKernelDescriptor](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KernelNamespaced.lean/declarations/heatkerneldescriptor.md) | 31 | `declaration-track:1f1a8ecd9b65d6cd84da79f48b95fd9786cce6a94c08d13cc64073cec00497db` |
-| 2 | `structure` | [HeatFlowDescriptor](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KernelNamespaced.lean/declarations/heatflowdescriptor.md) | 36 | `declaration-track:ace33914680e389bd0912b0ece6ef202291d6b7142f80e53e5f1b6f5f35a4cd4` |
-| 3 | `structure` | [HeatFlowTransportCertificate](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KernelNamespaced.lean/declarations/heatflowtransportcertificate.md) | 41 | `declaration-track:8dbe80c7c418f38d8c7a4bc84f2be5879ccb7c2c7e9265c340dc62263f60a91d` |
-| 4 | `theorem` | [HeatFlowTransportCertificate.kernelSound_id](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KernelNamespaced.lean/declarations/heatflowtransportcertificate-kernelsound-id.md) | 52 | `result-track:5e1e70ca0e2a9f95f20745ae562a55560a4f9222d3cfe506b6848ebf650f6152` |
+| 1 | `structure` | [HeatKernelDescriptor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KernelNamespaced.lean/declarations/heatkerneldescriptor.md) | 31 | `declaration-track:1f1a8ecd9b65d6cd84da79f48b95fd9786cce6a94c08d13cc64073cec00497db` |
+| 2 | `structure` | [HeatFlowDescriptor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KernelNamespaced.lean/declarations/heatflowdescriptor.md) | 36 | `declaration-track:ace33914680e389bd0912b0ece6ef202291d6b7142f80e53e5f1b6f5f35a4cd4` |
+| 3 | `structure` | [HeatFlowTransportCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KernelNamespaced.lean/declarations/heatflowtransportcertificate.md) | 41 | `declaration-track:8dbe80c7c418f38d8c7a4bc84f2be5879ccb7c2c7e9265c340dc62263f60a91d` |
+| 4 | `theorem` | [HeatFlowTransportCertificate.kernelSound_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/KernelNamespaced.lean/declarations/heatflowtransportcertificate-kernelsound-id.md) | 52 | `result-track:5e1e70ca0e2a9f95f20745ae562a55560a4f9222d3cfe506b6848ebf650f6152` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

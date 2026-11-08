@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/NoZeroSMulDivisorsProdNamespaced.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/NoZeroSMulDivisorsProdNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/NoZeroSMulDivisorsProdNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/NoZeroSMulDivisorsProdNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [noZeroSMulDivisors](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/NoZeroSMulDivisorsProdNamespaced.lean/declarations/nozerosmuldivisors.md) | 27 | `declaration-track:7391891a8d437edb61679961a82c3133240543f6efd4576ca8bd370a4e270d28` |
+| 1 | `instance` | [noZeroSMulDivisors](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/NoZeroSMulDivisorsProdNamespaced.lean/declarations/nozerosmuldivisors.md) | 27 | `declaration-track:7391891a8d437edb61679961a82c3133240543f6efd4576ca8bd370a4e270d28` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

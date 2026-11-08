@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/TheoremManifestNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/TheoremManifestNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TheoremManifestNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TheoremManifestNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [TheoremPreservationMode](../../../../../ComputerScience/AlgorithmsInComputerScience/TheoremManifestNamespaced.lean/declarations/theorempreservationmode.md) | 15 | `declaration-track:ed23eca41b3fe344cc66ddd9a4a0f76376d5d9737125686671e19dd67d409dcd` |
-| 2 | `structure` | [TheoremManifestEntry](../../../../../ComputerScience/AlgorithmsInComputerScience/TheoremManifestNamespaced.lean/declarations/theoremmanifestentry.md) | 24 | `declaration-track:f61cc1a7bc4eaee9e8af760b81f99096bfd79a25d55f65c010476ea00c6113c9` |
-| 3 | `structure` | [TheoremPreservationManifest](../../../../../ComputerScience/AlgorithmsInComputerScience/TheoremManifestNamespaced.lean/declarations/theorempreservationmanifest.md) | 37 | `declaration-track:c83c5065639f632537bd217f2291f64e971434a64aa0b45b3986ddc22f30adc4` |
-| 4 | `def` | [attachedTheoremManifestBoundary](../../../../../ComputerScience/AlgorithmsInComputerScience/TheoremManifestNamespaced.lean/declarations/attachedtheoremmanifestboundary.md) | 44 | `declaration-track:d46d871bc0e84ab1981af7ec315f2313412a26b1cfcc02f15ecae6bdd1bb2209` |
-| 5 | `def` | [attachedTheoremManifest](../../../../../ComputerScience/AlgorithmsInComputerScience/TheoremManifestNamespaced.lean/declarations/attachedtheoremmanifest.md) | 47 | `declaration-track:e40d0da660f1e14ce7cefee80b2793e04665060649b8fe6f954e6f9f0e736dc6` |
-| 6 | `theorem` | [affineTopos_preserves_attached_theorem_manifest](../../../../../ComputerScience/AlgorithmsInComputerScience/TheoremManifestNamespaced.lean/declarations/affinetopos-preserves-attached-theorem-manifest.md) | 54 | `result-track:1e0de87d788fbdd2e471ba850c69064a23c11104c1fdf0a8b086f1c538bbca97` |
+| 1 | `inductive` | [TheoremPreservationMode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TheoremManifestNamespaced.lean/declarations/theorempreservationmode.md) | 15 | `declaration-track:ed23eca41b3fe344cc66ddd9a4a0f76376d5d9737125686671e19dd67d409dcd` |
+| 2 | `structure` | [TheoremManifestEntry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TheoremManifestNamespaced.lean/declarations/theoremmanifestentry.md) | 24 | `declaration-track:f61cc1a7bc4eaee9e8af760b81f99096bfd79a25d55f65c010476ea00c6113c9` |
+| 3 | `structure` | [TheoremPreservationManifest](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TheoremManifestNamespaced.lean/declarations/theorempreservationmanifest.md) | 37 | `declaration-track:c83c5065639f632537bd217f2291f64e971434a64aa0b45b3986ddc22f30adc4` |
+| 4 | `def` | [attachedTheoremManifestBoundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TheoremManifestNamespaced.lean/declarations/attachedtheoremmanifestboundary.md) | 44 | `declaration-track:d46d871bc0e84ab1981af7ec315f2313412a26b1cfcc02f15ecae6bdd1bb2209` |
+| 5 | `def` | [attachedTheoremManifest](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TheoremManifestNamespaced.lean/declarations/attachedtheoremmanifest.md) | 47 | `declaration-track:e40d0da660f1e14ce7cefee80b2793e04665060649b8fe6f954e6f9f0e736dc6` |
+| 6 | `theorem` | [affineTopos_preserves_attached_theorem_manifest](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TheoremManifestNamespaced.lean/declarations/affinetopos-preserves-attached-theorem-manifest.md) | 54 | `result-track:1e0de87d788fbdd2e471ba850c69064a23c11104c1fdf0a8b086f1c538bbca97` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

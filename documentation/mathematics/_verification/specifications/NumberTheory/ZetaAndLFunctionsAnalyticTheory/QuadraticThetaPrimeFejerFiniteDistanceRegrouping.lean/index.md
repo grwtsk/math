@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFiniteDistanceRegrouping.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFiniteDistanceRegrouping.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFiniteDistanceRegrouping.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFiniteDistanceRegrouping.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeFejerCyclicDistanceSample`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicDistanceSample.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeFejerCyclicDistanceSample`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicDistanceSample.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [cyclicFejerDistance_mapsTo_Icc](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFiniteDistanceRegrouping.lean/declarations/cyclicfejerdistance-mapsto-icc.md) | 13 | `result-track:4d8107ed4292e72be330745035efb2645fd5dbfe8ecbd8617e7e51ffb916e5f1` |
-| 2 | `theorem` | [cyclicFejerDistanceFiber_weighted_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFiniteDistanceRegrouping.lean/declarations/cyclicfejerdistancefiber-weighted-le.md) | 24 | `result-track:743fd0bf454df74a1e4a8387bbfcbae8c00bf5173397c85250a31345cfe1d144` |
-| 3 | `theorem` | [cyclicDistanceWeightedKernel_le_IccFirstMoment](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFiniteDistanceRegrouping.lean/declarations/cyclicdistanceweightedkernel-le-iccfirstmoment.md) | 104 | `result-track:b07a3d720673efa6306b2443387ac6bb2d8f71e61e26310409b5b8da5fd382c8` |
-| 4 | `theorem` | [cyclicDistance_Icc_sum_eq_cyclicStepBudget](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFiniteDistanceRegrouping.lean/declarations/cyclicdistance-icc-sum-eq-cyclicstepbudget.md) | 126 | `result-track:6c6027d32cb4b8460bf3e7d7c003a67e5da2d8ec73fc1d01824a9644b58d4e5f` |
-| 5 | `theorem` | [cyclicDistanceWeightedKernelPairing](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFiniteDistanceRegrouping.lean/declarations/cyclicdistanceweightedkernelpairing.md) | 146 | `result-track:028badb172b173f088a86d340e52417cae7b861f01def52084a2a763e166c3f3` |
-| 6 | `theorem` | [nonAliasingFejerSharpStepL1FirstMomentFour](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFiniteDistanceRegrouping.lean/declarations/nonaliasingfejersharpstepl1firstmomentfour.md) | 154 | `result-track:48fc3d37773063f8630088665869c8ec8c3955f17bc8b27d3f3893d85a6f5324` |
-| 7 | `theorem` | [nonAliasingPrimePrefixFejerFirstMomentComparisonFactorFour](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFiniteDistanceRegrouping.lean/declarations/nonaliasingprimeprefixfejerfirstmomentcomparisonfactorfour.md) | 160 | `result-track:7f8ab974fed815664c8c3097b4318ead674f496c13f0905209cd68d01bd9564f` |
+| 1 | `theorem` | [cyclicFejerDistance_mapsTo_Icc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFiniteDistanceRegrouping.lean/declarations/cyclicfejerdistance-mapsto-icc.md) | 13 | `result-track:4d8107ed4292e72be330745035efb2645fd5dbfe8ecbd8617e7e51ffb916e5f1` |
+| 2 | `theorem` | [cyclicFejerDistanceFiber_weighted_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFiniteDistanceRegrouping.lean/declarations/cyclicfejerdistancefiber-weighted-le.md) | 24 | `result-track:743fd0bf454df74a1e4a8387bbfcbae8c00bf5173397c85250a31345cfe1d144` |
+| 3 | `theorem` | [cyclicDistanceWeightedKernel_le_IccFirstMoment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFiniteDistanceRegrouping.lean/declarations/cyclicdistanceweightedkernel-le-iccfirstmoment.md) | 104 | `result-track:b07a3d720673efa6306b2443387ac6bb2d8f71e61e26310409b5b8da5fd382c8` |
+| 4 | `theorem` | [cyclicDistance_Icc_sum_eq_cyclicStepBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFiniteDistanceRegrouping.lean/declarations/cyclicdistance-icc-sum-eq-cyclicstepbudget.md) | 126 | `result-track:6c6027d32cb4b8460bf3e7d7c003a67e5da2d8ec73fc1d01824a9644b58d4e5f` |
+| 5 | `theorem` | [cyclicDistanceWeightedKernelPairing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFiniteDistanceRegrouping.lean/declarations/cyclicdistanceweightedkernelpairing.md) | 146 | `result-track:028badb172b173f088a86d340e52417cae7b861f01def52084a2a763e166c3f3` |
+| 6 | `theorem` | [nonAliasingFejerSharpStepL1FirstMomentFour](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFiniteDistanceRegrouping.lean/declarations/nonaliasingfejersharpstepl1firstmomentfour.md) | 154 | `result-track:48fc3d37773063f8630088665869c8ec8c3955f17bc8b27d3f3893d85a6f5324` |
+| 7 | `theorem` | [nonAliasingPrimePrefixFejerFirstMomentComparisonFactorFour](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerFiniteDistanceRegrouping.lean/declarations/nonaliasingprimeprefixfejerfirstmomentcomparisonfactorfour.md) | 160 | `result-track:7f8ab974fed815664c8c3097b4318ead674f496c13f0905209cd68d01bd9564f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

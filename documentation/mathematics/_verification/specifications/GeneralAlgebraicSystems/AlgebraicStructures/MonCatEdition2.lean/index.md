@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonCatEdition2.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonCatEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MonCatEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MonCatEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonCatEdition2.lean/declarations/example-source-edition-2.md) | 4 | `declaration-track:c9b4225d61cf0ace601d0886e5ca20f83fe546474d8cbdd8c18335020a99ea4a` |
-| 2 | `example` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonCatEdition2.lean/declarations/example-source-edition-3.md) | 7 | `declaration-track:cc47bd7d56c632ab080554b3b9fb89514ac7d7e92ab2b1e75bf86ba5444756b8` |
-| 3 | `example` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonCatEdition2.lean/declarations/example.md) | 9 | `declaration-track:4ab48eed2e52a9094d64a4c398268c061cbc6726c265cbadb49253ba8957df20` |
-| 4 | `example` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonCatEdition2.lean/declarations/example-source-edition-5.md) | 11 | `declaration-track:e052576c7885c62b0ad76e4af5caec15fa80e36e88ec7b6abc417e68bb55608c` |
-| 5 | `example` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonCatEdition2.lean/declarations/example-source-edition-4.md) | 15 | `declaration-track:d88bd3cb59116d13604930fc3d9d216629bd6b5c62f3977546800bfea7282fbf` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MonCatEdition2.lean/declarations/example-source-edition-2.md) | 4 | `declaration-track:c9b4225d61cf0ace601d0886e5ca20f83fe546474d8cbdd8c18335020a99ea4a` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MonCatEdition2.lean/declarations/example-source-edition-3.md) | 7 | `declaration-track:cc47bd7d56c632ab080554b3b9fb89514ac7d7e92ab2b1e75bf86ba5444756b8` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MonCatEdition2.lean/declarations/example.md) | 9 | `declaration-track:4ab48eed2e52a9094d64a4c398268c061cbc6726c265cbadb49253ba8957df20` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MonCatEdition2.lean/declarations/example-source-edition-5.md) | 11 | `declaration-track:e052576c7885c62b0ad76e4af5caec15fa80e36e88ec7b6abc417e68bb55608c` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MonCatEdition2.lean/declarations/example-source-edition-4.md) | 15 | `declaration-track:d88bd3cb59116d13604930fc3d9d216629bd6b5c62f3977546800bfea7282fbf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

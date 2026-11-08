@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/Tautological.lean/index.md) · [Full source](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/Tautological.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/Tautological.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/Tautological.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [tautological.R](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/Tautological.lean/declarations/tautological-r.md) | 27 | `declaration-track:51666339b09b68a70e7ed24571e51d851955b60eaba6b69754fcbb77eb457e2c` |
-| 2 | `def` | [tautologicalRelations](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/Tautological.lean/declarations/tautologicalrelations.md) | 33 | `declaration-track:cb229b4f2d69b855f45ed2672b19994b859dbf3fed3c19dd2cde13d76ff3a538` |
-| 3 | `def` | [tautologicalRelationsSolutionEquiv](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/Tautological.lean/declarations/tautologicalrelationssolutionequiv.md) | 42 | `declaration-track:50c39a544e6009e797006236c8998573cd0c5c2a39476f64f84f1dc823a45b0d` |
-| 4 | `def` | [tautologicalSolution](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/Tautological.lean/declarations/tautologicalsolution.md) | 62 | `declaration-track:9da33ec62fee9db0be581b5ed981ad3f9a7d98753bc96ac82cb31f0669889ae7` |
-| 5 | `def` | [tautologicalSolutionIsPresentationCore](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/Tautological.lean/declarations/tautologicalsolutionispresentationcore.md) | 66 | `declaration-track:0073d1042cda78a0c3352c131eac16e8cec64b976146db0c93a43ed24673abe9` |
-| 6 | `lemma` | [tautologicalSolution_isPresentation](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/Tautological.lean/declarations/tautologicalsolution-ispresentation.md) | 74 | `result-track:57ffb4c02c3d9d57aaa8962bd5556e162cd588d8e263e0890b5c2259287ba055` |
-| 7 | `def` | [tautological](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/Tautological.lean/declarations/tautological.md) | 83 | `declaration-track:2c189736cfd3c7d547705387afbae647143e074c5ab59abe833f7061156c9cd6` |
+| 1 | `inductive` | [tautological.R](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/Tautological.lean/declarations/tautological-r.md) | 27 | `declaration-track:51666339b09b68a70e7ed24571e51d851955b60eaba6b69754fcbb77eb457e2c` |
+| 2 | `def` | [tautologicalRelations](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/Tautological.lean/declarations/tautologicalrelations.md) | 33 | `declaration-track:cb229b4f2d69b855f45ed2672b19994b859dbf3fed3c19dd2cde13d76ff3a538` |
+| 3 | `def` | [tautologicalRelationsSolutionEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/Tautological.lean/declarations/tautologicalrelationssolutionequiv.md) | 42 | `declaration-track:50c39a544e6009e797006236c8998573cd0c5c2a39476f64f84f1dc823a45b0d` |
+| 4 | `def` | [tautologicalSolution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/Tautological.lean/declarations/tautologicalsolution.md) | 62 | `declaration-track:9da33ec62fee9db0be581b5ed981ad3f9a7d98753bc96ac82cb31f0669889ae7` |
+| 5 | `def` | [tautologicalSolutionIsPresentationCore](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/Tautological.lean/declarations/tautologicalsolutionispresentationcore.md) | 66 | `declaration-track:0073d1042cda78a0c3352c131eac16e8cec64b976146db0c93a43ed24673abe9` |
+| 6 | `lemma` | [tautologicalSolution_isPresentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/Tautological.lean/declarations/tautologicalsolution-ispresentation.md) | 74 | `result-track:57ffb4c02c3d9d57aaa8962bd5556e162cd588d8e263e0890b5c2259287ba055` |
+| 7 | `def` | [tautological](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/Tautological.lean/declarations/tautological.md) | 83 | `declaration-track:2c189736cfd3c7d547705387afbae647143e074c5ab59abe833f7061156c9cd6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

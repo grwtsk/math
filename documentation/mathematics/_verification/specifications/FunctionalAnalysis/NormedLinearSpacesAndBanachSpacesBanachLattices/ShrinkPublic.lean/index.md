@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ShrinkPublic.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ShrinkPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ShrinkPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ShrinkPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ShrinkPublic.lean/declarations/instance-source-edition-2.md) | 24 | `declaration-track:c24595eeaaf3afc06a6caa2f1289564eb6b7075fab272078976a623f091c420b` |
-| 2 | `instance` | [(anonymous)](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ShrinkPublic.lean/declarations/instance-source-edition-3.md) | 27 | `declaration-track:c265456376bd9234255ddb6a296e9b8e95b3a520303efb7b2e37bdee5a2f2e6e` |
-| 3 | `instance` | [(anonymous)](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ShrinkPublic.lean/declarations/instance.md) | 30 | `declaration-track:0f3fdd686dbad675e8fe3aab4eda30c8f84d7e15aaa6544bfd9f89fbf35177bf` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ShrinkPublic.lean/declarations/instance-source-edition-2.md) | 24 | `declaration-track:c24595eeaaf3afc06a6caa2f1289564eb6b7075fab272078976a623f091c420b` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ShrinkPublic.lean/declarations/instance-source-edition-3.md) | 27 | `declaration-track:c265456376bd9234255ddb6a296e9b8e95b3a520303efb7b2e37bdee5a2f2e6e` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ShrinkPublic.lean/declarations/instance.md) | 30 | `declaration-track:0f3fdd686dbad675e8fe3aab4eda30c8f84d7e15aaa6544bfd9f89fbf35177bf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ExactSquareAnnihilationAndActualSixthNonAnnihilation.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ExactSquareAnnihilationAndActualSixthNonAnnihilation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ExactSquareAnnihilationAndActualSixthNonAnnihilation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ExactSquareAnnihilationAndActualSixthNonAnnihilation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_bump_interior_positive](../../../../MeasureAndIntegration/ExactSquareAnnihilationAndActualSixthNonAnnihilation.lean/declarations/actual-bump-interior-positive.md) | 22 | `result-track:8a79be216d12a07234f1e9cdf4742c55c8220c415ccddd2fb65ddd6761baa255` |
-| 2 | `theorem` | [actual_bump_moment_positive](../../../../MeasureAndIntegration/ExactSquareAnnihilationAndActualSixthNonAnnihilation.lean/declarations/actual-bump-moment-positive.md) | 30 | `result-track:034cf1ac92626286039e8fd6ccbace7180bd7bc7cffc36339cd1a04ae64f347c` |
-| 3 | `theorem` | [actual_square_laplace_annihilated](../../../../MeasureAndIntegration/ExactSquareAnnihilationAndActualSixthNonAnnihilation.lean/declarations/actual-square-laplace-annihilated.md) | 40 | `result-track:3fe43d8a4853e1ff8f4844f5710e654c5f79ab330f97ad8b2c0ced9910319521` |
-| 4 | `theorem` | [actual_sixth_laplace_negative](../../../../MeasureAndIntegration/ExactSquareAnnihilationAndActualSixthNonAnnihilation.lean/declarations/actual-sixth-laplace-negative.md) | 45 | `result-track:702e9440d911fb098136c8ed8a62d5bcf3efde3e7ab433ed8cd561f8e59c1388` |
-| 5 | `theorem` | [actual_square_correlation_moment_zero](../../../../MeasureAndIntegration/ExactSquareAnnihilationAndActualSixthNonAnnihilation.lean/declarations/actual-square-correlation-moment-zero.md) | 52 | `result-track:4c32eaa950fa2e63f0eeaa7fc917bbe7e8eb52e57b1f82edc1e830c3c383ae88` |
-| 6 | `theorem` | [actual_sixth_correlation_moment_positive](../../../../MeasureAndIntegration/ExactSquareAnnihilationAndActualSixthNonAnnihilation.lean/declarations/actual-sixth-correlation-moment-positive.md) | 58 | `result-track:8fa00339f0714776cc92920ab211fc84e5fbb0b09c94227eb955e71f502e4669` |
+| 1 | `theorem` | [actual_bump_interior_positive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ExactSquareAnnihilationAndActualSixthNonAnnihilation.lean/declarations/actual-bump-interior-positive.md) | 22 | `result-track:8a79be216d12a07234f1e9cdf4742c55c8220c415ccddd2fb65ddd6761baa255` |
+| 2 | `theorem` | [actual_bump_moment_positive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ExactSquareAnnihilationAndActualSixthNonAnnihilation.lean/declarations/actual-bump-moment-positive.md) | 30 | `result-track:034cf1ac92626286039e8fd6ccbace7180bd7bc7cffc36339cd1a04ae64f347c` |
+| 3 | `theorem` | [actual_square_laplace_annihilated](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ExactSquareAnnihilationAndActualSixthNonAnnihilation.lean/declarations/actual-square-laplace-annihilated.md) | 40 | `result-track:3fe43d8a4853e1ff8f4844f5710e654c5f79ab330f97ad8b2c0ced9910319521` |
+| 4 | `theorem` | [actual_sixth_laplace_negative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ExactSquareAnnihilationAndActualSixthNonAnnihilation.lean/declarations/actual-sixth-laplace-negative.md) | 45 | `result-track:702e9440d911fb098136c8ed8a62d5bcf3efde3e7ab433ed8cd561f8e59c1388` |
+| 5 | `theorem` | [actual_square_correlation_moment_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ExactSquareAnnihilationAndActualSixthNonAnnihilation.lean/declarations/actual-square-correlation-moment-zero.md) | 52 | `result-track:4c32eaa950fa2e63f0eeaa7fc917bbe7e8eb52e57b1f82edc1e830c3c383ae88` |
+| 6 | `theorem` | [actual_sixth_correlation_moment_positive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ExactSquareAnnihilationAndActualSixthNonAnnihilation.lean/declarations/actual-sixth-correlation-moment-positive.md) | 58 | `result-track:8fa00339f0714776cc92920ab211fc84e5fbb0b09c94227eb955e71f502e4669` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

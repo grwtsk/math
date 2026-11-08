@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicArithmeticRestriction.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicArithmeticRestriction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicArithmeticRestriction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicArithmeticRestriction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeFejerCyclicConvolutionModel`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicConvolutionModel.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeFejerCyclicConvolutionModel`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicConvolutionModel.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [octaveRepresentative_natCast](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicArithmeticRestriction.lean/declarations/octaverepresentative-natcast.md) | 15 | `result-track:49260a5eb3607d1e6e0b232657ccfc5f0152afffc7bf0493d59b7b88b50141a3` |
-| 2 | `theorem` | [cyclicSharpPrefixIndicator_natCast_eq_sharpPrefixWeight](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicArithmeticRestriction.lean/declarations/cyclicsharpprefixindicator-natcast-eq-sharpprefixweight.md) | 34 | `result-track:f293d3e64110661ab400d7279fce23014ffea20b5f586b5afccfa9979d381597` |
-| 3 | `def` | [ArithmeticCyclicPrefixReindexingClaim](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicArithmeticRestriction.lean/declarations/arithmeticcyclicprefixreindexingclaim.md) | 57 | `declaration-track:19ee66504a655c79eff1c0b716941f2734961129630d3dae830e171676e61bcb` |
-| 4 | `def` | [ArithmeticCyclicKernelDifferenceClaim](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicArithmeticRestriction.lean/declarations/arithmeticcyclickerneldifferenceclaim.md) | 72 | `declaration-track:63b246bf945ecc57536499e96efa00dea7d45b07eae867b33da22551d404813f` |
-| 5 | `theorem` | [arithmeticCyclicReindexing_and_kernelDifference_to_prefixWeight](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicArithmeticRestriction.lean/declarations/arithmeticcyclicreindexing-and-kerneldifference-to-prefixweight.md) | 86 | `result-track:c71a7ea62d33dd002d2b7c35d9d470426a66ed33c17341c165f5c30821fe6fcf` |
+| 1 | `theorem` | [octaveRepresentative_natCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicArithmeticRestriction.lean/declarations/octaverepresentative-natcast.md) | 15 | `result-track:49260a5eb3607d1e6e0b232657ccfc5f0152afffc7bf0493d59b7b88b50141a3` |
+| 2 | `theorem` | [cyclicSharpPrefixIndicator_natCast_eq_sharpPrefixWeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicArithmeticRestriction.lean/declarations/cyclicsharpprefixindicator-natcast-eq-sharpprefixweight.md) | 34 | `result-track:f293d3e64110661ab400d7279fce23014ffea20b5f586b5afccfa9979d381597` |
+| 3 | `def` | [ArithmeticCyclicPrefixReindexingClaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicArithmeticRestriction.lean/declarations/arithmeticcyclicprefixreindexingclaim.md) | 57 | `declaration-track:19ee66504a655c79eff1c0b716941f2734961129630d3dae830e171676e61bcb` |
+| 4 | `def` | [ArithmeticCyclicKernelDifferenceClaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicArithmeticRestriction.lean/declarations/arithmeticcyclickerneldifferenceclaim.md) | 72 | `declaration-track:63b246bf945ecc57536499e96efa00dea7d45b07eae867b33da22551d404813f` |
+| 5 | `theorem` | [arithmeticCyclicReindexing_and_kernelDifference_to_prefixWeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicArithmeticRestriction.lean/declarations/arithmeticcyclicreindexing-and-kerneldifference-to-prefixweight.md) | 86 | `result-track:c71a7ea62d33dd002d2b7c35d9d470426a66ed33c17341c165f5c30821fe6fcf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

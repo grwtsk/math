@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/DistLEIntegralPublic.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/DistLEIntegralPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/DistLEIntegralPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/DistLEIntegralPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [norm_sub_le_integral_of_norm_deriv_le_of_le](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/DistLEIntegralPublic.lean/declarations/norm-sub-le-integral-of-norm-deriv-le-of-le.md) | 42 | `result-track:504bb26bc5b6fae7cb9e7c5acecbbf8a96fa51948be9bff593d36ef479220aeb` |
-| 2 | `lemma` | [norm_sub_le_mul_volume_of_norm_deriv_le_of_le](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/DistLEIntegralPublic.lean/declarations/norm-sub-le-mul-volume-of-norm-deriv-le-of-le.md) | 85 | `result-track:260190bd95046cab04f2590336b6fb9eda5b3ba83e137d97f225b8aeff26fc49` |
-| 3 | `lemma` | [norm_sub_le_mul_volume_of_norm_lineDeriv_le](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/DistLEIntegralPublic.lean/declarations/norm-sub-le-mul-volume-of-norm-linederiv-le.md) | 122 | `result-track:77d0a538b73eb77bb8f9cefb374453b9bff253ff41d0821f251f95547b1525f5` |
-| 4 | `lemma` | [norm_sub_le_mul_volume_of_norm_fderiv_le](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/DistLEIntegralPublic.lean/declarations/norm-sub-le-mul-volume-of-norm-fderiv-le.md) | 151 | `result-track:4a6dcaac86a73ad1a5af1bbd02dffeafb459ed68a5d680c82e1470cf38d9cc85` |
-| 5 | `theorem` | [sub_isBigO_norm_rpow_add_one_of_fderiv](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/DistLEIntegralPublic.lean/declarations/sub-isbigo-norm-rpow-add-one-of-fderiv.md) | 176 | `result-track:73e19f19c655fbb57f1aba63ac5bb9682e7c7a482f4504c725f835651fac266e` |
-| 6 | `theorem` | [isBigO_norm_rpow_add_one_of_fderiv_of_apply_eq_zero](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/DistLEIntegralPublic.lean/declarations/isbigo-norm-rpow-add-one-of-fderiv-of-apply-eq-zero.md) | 199 | `result-track:dc4b6171acb2fc4ede7a337fe7c0b3dcd557865d90311b628a76f083ee9e8892` |
+| 1 | `lemma` | [norm_sub_le_integral_of_norm_deriv_le_of_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/DistLEIntegralPublic.lean/declarations/norm-sub-le-integral-of-norm-deriv-le-of-le.md) | 42 | `result-track:504bb26bc5b6fae7cb9e7c5acecbbf8a96fa51948be9bff593d36ef479220aeb` |
+| 2 | `lemma` | [norm_sub_le_mul_volume_of_norm_deriv_le_of_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/DistLEIntegralPublic.lean/declarations/norm-sub-le-mul-volume-of-norm-deriv-le-of-le.md) | 85 | `result-track:260190bd95046cab04f2590336b6fb9eda5b3ba83e137d97f225b8aeff26fc49` |
+| 3 | `lemma` | [norm_sub_le_mul_volume_of_norm_lineDeriv_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/DistLEIntegralPublic.lean/declarations/norm-sub-le-mul-volume-of-norm-linederiv-le.md) | 122 | `result-track:77d0a538b73eb77bb8f9cefb374453b9bff253ff41d0821f251f95547b1525f5` |
+| 4 | `lemma` | [norm_sub_le_mul_volume_of_norm_fderiv_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/DistLEIntegralPublic.lean/declarations/norm-sub-le-mul-volume-of-norm-fderiv-le.md) | 151 | `result-track:4a6dcaac86a73ad1a5af1bbd02dffeafb459ed68a5d680c82e1470cf38d9cc85` |
+| 5 | `theorem` | [sub_isBigO_norm_rpow_add_one_of_fderiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/DistLEIntegralPublic.lean/declarations/sub-isbigo-norm-rpow-add-one-of-fderiv.md) | 176 | `result-track:73e19f19c655fbb57f1aba63ac5bb9682e7c7a482f4504c725f835651fac266e` |
+| 6 | `theorem` | [isBigO_norm_rpow_add_one_of_fderiv_of_apply_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/DistLEIntegralPublic.lean/declarations/isbigo-norm-rpow-add-one-of-fderiv-of-apply-eq-zero.md) | 199 | `result-track:dc4b6171acb2fc4ede7a337fe7c0b3dcd557865d90311b628a76f083ee9e8892` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

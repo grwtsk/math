@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/OpaqueNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/OpaqueNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/OpaqueNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/OpaqueNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [OpacityReason](../../../../../ComputerScience/AlgorithmsInComputerScience/OpaqueNamespaced.lean/declarations/opacityreason.md) | 15 | `declaration-track:6a724df32685f746cd5e32fef5e22b017e00eb20a58e4808a16ff12fe476a1bc` |
-| 2 | `structure` | [OpaqueArtifact](../../../../../ComputerScience/AlgorithmsInComputerScience/OpaqueNamespaced.lean/declarations/opaqueartifact.md) | 24 | `declaration-track:f7ff65ef085e13ee9d996e4424def3c47c69e0373ad3c97cf99fecfbf4798d85` |
+| 1 | `inductive` | [OpacityReason](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/OpaqueNamespaced.lean/declarations/opacityreason.md) | 15 | `declaration-track:6a724df32685f746cd5e32fef5e22b017e00eb20a58e4808a16ff12fe476a1bc` |
+| 2 | `structure` | [OpaqueArtifact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/OpaqueNamespaced.lean/declarations/opaqueartifact.md) | 24 | `declaration-track:f7ff65ef085e13ee9d996e4424def3c47c69e0373ad3c97cf99fecfbf4798d85` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

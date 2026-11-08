@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/SchroderPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/SchroderPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SchroderPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SchroderPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [largeSchroderSeries](../../../../CommutativeAlgebra/SchroderPublic.lean/declarations/largeschroderseries.md) | 37 | `declaration-track:3fb147de1b776a9a7691bf7fc27199e893f8fcb1043abfbaee38761d334f35f3` |
-| 2 | `lemma` | [coeff_largeSchroderSeries](../../../../CommutativeAlgebra/SchroderPublic.lean/declarations/coeff-largeschroderseries.md) | 41 | `result-track:99bdb1ff0179a69390593e101fcdeb3d67447f0b5ea144339bc10bd59f2f0e1b` |
-| 3 | `lemma` | [constantCoeff_largeSchroderSeries](../../../../CommutativeAlgebra/SchroderPublic.lean/declarations/constantcoeff-largeschroderseries.md) | 46 | `result-track:d7005b7de61b2419a3bd8b7bce6709676ae37f1a115d063bd1663d51f9754425` |
-| 4 | `lemma` | [coeff_X_mul_largeSchroderSeries](../../../../CommutativeAlgebra/SchroderPublic.lean/declarations/coeff-x-mul-largeschroderseries.md) | 51 | `result-track:cd9ff08224f3c927f6a3b02cda602666a72eb1a68a74c2388361c8e498a0d563` |
-| 5 | `lemma` | [coeff_X_mul_largeSchroderSeriesSeries_sq](../../../../CommutativeAlgebra/SchroderPublic.lean/declarations/coeff-x-mul-largeschroderseriesseries-sq.md) | 61 | `result-track:779bc967b1514314494fba379b2bd333659f628bd651e164aa815a3c49f35a0a` |
-| 6 | `theorem` | [largeSchroderSeries_eq_one_add_X_mul_largeSchroderSeries_add_X_mul_largeSchroderSeries_sq](../../../../CommutativeAlgebra/SchroderPublic.lean/declarations/largeschroderseries-eq-one-add-x-mul-largeschroderseries-add-x-mul-large.md) | 94 | `result-track:00aefae663ad77648257b5411144a54d790df063a73c298dee39b8836c06eedc` |
+| 1 | `def` | [largeSchroderSeries](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SchroderPublic.lean/declarations/largeschroderseries.md) | 37 | `declaration-track:3fb147de1b776a9a7691bf7fc27199e893f8fcb1043abfbaee38761d334f35f3` |
+| 2 | `lemma` | [coeff_largeSchroderSeries](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SchroderPublic.lean/declarations/coeff-largeschroderseries.md) | 41 | `result-track:99bdb1ff0179a69390593e101fcdeb3d67447f0b5ea144339bc10bd59f2f0e1b` |
+| 3 | `lemma` | [constantCoeff_largeSchroderSeries](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SchroderPublic.lean/declarations/constantcoeff-largeschroderseries.md) | 46 | `result-track:d7005b7de61b2419a3bd8b7bce6709676ae37f1a115d063bd1663d51f9754425` |
+| 4 | `lemma` | [coeff_X_mul_largeSchroderSeries](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SchroderPublic.lean/declarations/coeff-x-mul-largeschroderseries.md) | 51 | `result-track:cd9ff08224f3c927f6a3b02cda602666a72eb1a68a74c2388361c8e498a0d563` |
+| 5 | `lemma` | [coeff_X_mul_largeSchroderSeriesSeries_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SchroderPublic.lean/declarations/coeff-x-mul-largeschroderseriesseries-sq.md) | 61 | `result-track:779bc967b1514314494fba379b2bd333659f628bd651e164aa815a3c49f35a0a` |
+| 6 | `theorem` | [largeSchroderSeries_eq_one_add_X_mul_largeSchroderSeries_add_X_mul_largeSchroderSeries_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SchroderPublic.lean/declarations/largeschroderseries-eq-one-add-x-mul-largeschroderseries-add-x-mul-large.md) | 94 | `result-track:00aefae663ad77648257b5411144a54d790df063a73c298dee39b8836c06eedc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

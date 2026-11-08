@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AlgebraStarProd.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AlgebraStarProd.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AlgebraStarProd.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AlgebraStarProd.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,17 +58,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AlgebraStarProd.lean/declarations/instance-source-edition-5.md) | 22 | `declaration-track:7fefa1c82b367a7b4fbd93cbed8db4c93085ce840afad1f2143311e032e43b7c` |
-| 2 | `theorem` | [fst_star](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AlgebraStarProd.lean/declarations/fst-star.md) | 25 | `result-track:cce67d8f9a229030d7f7b60c49e135d3b9f55d5e6f7b93b4d1e6a0eb41235bd5` |
-| 3 | `theorem` | [snd_star](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AlgebraStarProd.lean/declarations/snd-star.md) | 29 | `result-track:56909e4b8cbddbbcb31da21defb50850bb5703189fda4fecf0b99948c1cbfc43` |
-| 4 | `theorem` | [star_def](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AlgebraStarProd.lean/declarations/star-def.md) | 32 | `result-track:49a65ca5c63f38c15d109a7ae25afaf02097ce204bbef0a6fc8b21b23c4bbf6e` |
-| 5 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AlgebraStarProd.lean/declarations/instance-source-edition-7.md) | 35 | `declaration-track:f40bb9f832909325d17e593a0b6e3737736f080534ecb7d213779cdc8a45fefa` |
-| 6 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AlgebraStarProd.lean/declarations/instance-source-edition-2.md) | 38 | `declaration-track:38638a87a1a4e6be13e37f579cf91e6f41125ea2a4f57d981ef93ad3b787df70` |
-| 7 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AlgebraStarProd.lean/declarations/instance-source-edition-4.md) | 41 | `declaration-track:7f204fe351d1e78a8a429a98d67a54c20d35674b3f2cc2c9f91f20f9179ae810` |
-| 8 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AlgebraStarProd.lean/declarations/instance.md) | 44 | `declaration-track:1bb0902d9dd18c81f4203e07f576835eb981d0816589e343abc819fb4e5fc16f` |
-| 9 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AlgebraStarProd.lean/declarations/instance-source-edition-6.md) | 48 | `declaration-track:acbf92e5728a5386ce0198a3e9548e73a46374c96a762033e4e4a1922fda5097` |
-| 10 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AlgebraStarProd.lean/declarations/instance-source-edition-3.md) | 53 | `declaration-track:496a1c515c7844b94bd7add37fb45ee69222df58ec6beabbd2fc92e75c58ae93` |
-| 11 | `theorem` | [Units.embed_product_star](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AlgebraStarProd.lean/declarations/units-embed-product-star.md) | 59 | `result-track:7adcc899c8bf34f16e2a5de986c2f6be902a61acfcc89bbc11dc8f2b4351d8b2` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AlgebraStarProd.lean/declarations/instance-source-edition-5.md) | 22 | `declaration-track:7fefa1c82b367a7b4fbd93cbed8db4c93085ce840afad1f2143311e032e43b7c` |
+| 2 | `theorem` | [fst_star](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AlgebraStarProd.lean/declarations/fst-star.md) | 25 | `result-track:cce67d8f9a229030d7f7b60c49e135d3b9f55d5e6f7b93b4d1e6a0eb41235bd5` |
+| 3 | `theorem` | [snd_star](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AlgebraStarProd.lean/declarations/snd-star.md) | 29 | `result-track:56909e4b8cbddbbcb31da21defb50850bb5703189fda4fecf0b99948c1cbfc43` |
+| 4 | `theorem` | [star_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AlgebraStarProd.lean/declarations/star-def.md) | 32 | `result-track:49a65ca5c63f38c15d109a7ae25afaf02097ce204bbef0a6fc8b21b23c4bbf6e` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AlgebraStarProd.lean/declarations/instance-source-edition-7.md) | 35 | `declaration-track:f40bb9f832909325d17e593a0b6e3737736f080534ecb7d213779cdc8a45fefa` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AlgebraStarProd.lean/declarations/instance-source-edition-2.md) | 38 | `declaration-track:38638a87a1a4e6be13e37f579cf91e6f41125ea2a4f57d981ef93ad3b787df70` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AlgebraStarProd.lean/declarations/instance-source-edition-4.md) | 41 | `declaration-track:7f204fe351d1e78a8a429a98d67a54c20d35674b3f2cc2c9f91f20f9179ae810` |
+| 8 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AlgebraStarProd.lean/declarations/instance.md) | 44 | `declaration-track:1bb0902d9dd18c81f4203e07f576835eb981d0816589e343abc819fb4e5fc16f` |
+| 9 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AlgebraStarProd.lean/declarations/instance-source-edition-6.md) | 48 | `declaration-track:acbf92e5728a5386ce0198a3e9548e73a46374c96a762033e4e4a1922fda5097` |
+| 10 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AlgebraStarProd.lean/declarations/instance-source-edition-3.md) | 53 | `declaration-track:496a1c515c7844b94bd7add37fb45ee69222df58ec6beabbd2fc92e75c58ae93` |
+| 11 | `theorem` | [Units.embed_product_star](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AlgebraStarProd.lean/declarations/units-embed-product-star.md) | 59 | `result-track:7adcc899c8bf34f16e2a5de986c2f6be902a61acfcc89bbc11dc8f2b4351d8b2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

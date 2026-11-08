@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/YonedaInjectivePublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/YonedaInjectivePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/YonedaInjectivePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/YonedaInjectivePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [injective_iff_preservesEpimorphisms_preadditiveYoneda_obj](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/YonedaInjectivePublic.lean/declarations/injective-iff-preservesepimorphisms-preadditiveyoneda-obj.md) | 36 | `result-track:faea5fc595d2d8790fb5c8aba69d7d53ee9ba6b75933ace00415aae3dcd16cb8` |
-| 2 | `theorem` | [injective_iff_preservesEpimorphisms_preadditive_yoneda_obj'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/YonedaInjectivePublic.lean/declarations/injective-iff-preservesepimorphisms-preadditive-yoneda-obj.md) | 46 | `result-track:156525e8ba93657f5e4873e7cea5225a8ba94c71fec8d2ee812b80a0a3323552` |
+| 1 | `theorem` | [injective_iff_preservesEpimorphisms_preadditiveYoneda_obj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/YonedaInjectivePublic.lean/declarations/injective-iff-preservesepimorphisms-preadditiveyoneda-obj.md) | 36 | `result-track:faea5fc595d2d8790fb5c8aba69d7d53ee9ba6b75933ace00415aae3dcd16cb8` |
+| 2 | `theorem` | [injective_iff_preservesEpimorphisms_preadditive_yoneda_obj'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/YonedaInjectivePublic.lean/declarations/injective-iff-preservesepimorphisms-preadditive-yoneda-obj.md) | 46 | `result-track:156525e8ba93657f5e4873e7cea5225a8ba94c71fec8d2ee812b80a0a3323552` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/ConjActNamespaced.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/ConjActNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ConjActNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ConjActNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [unitsMulSemiringAction](../../../../AssociativeRingsAndAlgebras/ConjActNamespaced.lean/declarations/unitsmulsemiringaction.md) | 26 | `declaration-track:b80373e158968a9ff367edac28a4ebe42d3158ee06459004b71e0513b5289afe` |
+| 1 | `instance` | [unitsMulSemiringAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ConjActNamespaced.lean/declarations/unitsmulsemiringaction.md) | 26 | `declaration-track:b80373e158968a9ff367edac28a4ebe42d3158ee06459004b71e0513b5289afe` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

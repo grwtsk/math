@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/DiscoveryDiscoveryCandidate.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/DiscoveryDiscoveryCandidate.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DiscoveryDiscoveryCandidate.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DiscoveryDiscoveryCandidate.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [DiscoveryCandidate](../../../../../ComputerScience/AlgorithmsInComputerScience/DiscoveryDiscoveryCandidate.lean/declarations/discoverycandidate.md) | 8 | `declaration-track:41b8050ec7871b9205b74c409397e1f66d48da2474fe113aea4bf30d13330a95` |
-| 2 | `inductive` | [DiscoveryDisposition](../../../../../ComputerScience/AlgorithmsInComputerScience/DiscoveryDiscoveryCandidate.lean/declarations/discoverydisposition.md) | 15 | `declaration-track:7d98e9da832817a8502a7fdf8e4aaf7d3d7840875d2ca05601bd4f8e988550dc` |
-| 3 | `structure` | [DiscoveryRecord](../../../../../ComputerScience/AlgorithmsInComputerScience/DiscoveryDiscoveryCandidate.lean/declarations/discoveryrecord.md) | 21 | `declaration-track:f4dcaa966245f2ea6ab3e65cc3f09455d560b3c375a2ae0ee97fff6ed3924cc7` |
-| 4 | `structure` | [DiscoveryLedger](../../../../../ComputerScience/AlgorithmsInComputerScience/DiscoveryDiscoveryCandidate.lean/declarations/discoveryledger.md) | 31 | `declaration-track:3323645c415456f778f4d0f417f1b9e63894fec7bb640b4098a0a5e0be257ef4` |
+| 1 | `structure` | [DiscoveryCandidate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DiscoveryDiscoveryCandidate.lean/declarations/discoverycandidate.md) | 8 | `declaration-track:41b8050ec7871b9205b74c409397e1f66d48da2474fe113aea4bf30d13330a95` |
+| 2 | `inductive` | [DiscoveryDisposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DiscoveryDiscoveryCandidate.lean/declarations/discoverydisposition.md) | 15 | `declaration-track:7d98e9da832817a8502a7fdf8e4aaf7d3d7840875d2ca05601bd4f8e988550dc` |
+| 3 | `structure` | [DiscoveryRecord](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DiscoveryDiscoveryCandidate.lean/declarations/discoveryrecord.md) | 21 | `declaration-track:f4dcaa966245f2ea6ab3e65cc3f09455d560b3c375a2ae0ee97fff6ed3924cc7` |
+| 4 | `structure` | [DiscoveryLedger](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DiscoveryDiscoveryCandidate.lean/declarations/discoveryledger.md) | 31 | `declaration-track:3323645c415456f778f4d0f417f1b9e63894fec7bb640b4098a0a5e0be257ef4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

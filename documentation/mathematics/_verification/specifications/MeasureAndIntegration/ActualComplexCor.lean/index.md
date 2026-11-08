@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ActualComplexCor.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ActualComplexCor.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualComplexCor.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualComplexCor.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,15 +59,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_test_even](../../../../MeasureAndIntegration/ActualComplexCor.lean/declarations/actual-test-even.md) | 21 | `result-track:5f3c981fd47e90def1a78aa7a9c96ae33184e5e26ddc764341faa6c63ad8b0cb` |
-| 2 | `theorem` | [actual_complex_test_integrable](../../../../MeasureAndIntegration/ActualComplexCor.lean/declarations/actual-complex-test-integrable.md) | 38 | `result-track:9aebf965a50df8c18528e793487054ab0ab1e0f8fa3cfec6988007772ab82eab` |
-| 3 | `theorem` | [actual_complex_correlation_eq_convolution](../../../../MeasureAndIntegration/ActualComplexCor.lean/declarations/actual-complex-correlation-eq-convolution.md) | 52 | `result-track:f568bcc491e3e881b4587f078784622469a7b2ff4cb49fd5dc2c8f8b8c9a8ea5` |
-| 4 | `theorem` | [actual_complex_correlation_product_integrable](../../../../MeasureAndIntegration/ActualComplexCor.lean/declarations/actual-complex-correlation-product-integrable.md) | 78 | `result-track:be3960c52291ba9fb729016c2744d6aad8dac2b30a1992c47d46bbaaf4f50ada` |
-| 5 | `theorem` | [actual_complex_correlation_integrable](../../../../MeasureAndIntegration/ActualComplexCor.lean/declarations/actual-complex-correlation-integrable.md) | 87 | `result-track:d9975908badce2c8a06a67531dd8e41cbf4d58834931e7dea0129100664534ca` |
-| 6 | `theorem` | [actualSourceComplexTransform_eq_full](../../../../MeasureAndIntegration/ActualComplexCor.lean/declarations/actualsourcecomplextransform-eq-full.md) | 104 | `result-track:6160f849da366429a6d07ee0911747144a7e2aa0431191fd0f5f785773a6fedc` |
-| 7 | `theorem` | [actualBilateralCorrelationTransform_eq_full](../../../../MeasureAndIntegration/ActualComplexCor.lean/declarations/actualbilateralcorrelationtransform-eq-full.md) | 120 | `result-track:1065d40c22368fcf91a224ab8aedcc7f9e47107987c09d8379dcb57491296047` |
-| 8 | `theorem` | [actual_full_complex_correlation_integral_eq_square](../../../../MeasureAndIntegration/ActualComplexCor.lean/declarations/actual-full-complex-correlation-integral-eq-square.md) | 137 | `result-track:8358ade6c1efacbc47079af25b933294377effea7d3f4fad4d4ab4bbedbabeff` |
-| 9 | `theorem` | [actualBilateralCorrelationTransform_eq_square](../../../../MeasureAndIntegration/ActualComplexCor.lean/declarations/actualbilateralcorrelationtransform-eq-square.md) | 149 | `result-track:34be3e52fd647384c8bc215edc6100836cc727d649eb27488ae673e211eeec45` |
+| 1 | `theorem` | [actual_test_even](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualComplexCor.lean/declarations/actual-test-even.md) | 21 | `result-track:5f3c981fd47e90def1a78aa7a9c96ae33184e5e26ddc764341faa6c63ad8b0cb` |
+| 2 | `theorem` | [actual_complex_test_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualComplexCor.lean/declarations/actual-complex-test-integrable.md) | 38 | `result-track:9aebf965a50df8c18528e793487054ab0ab1e0f8fa3cfec6988007772ab82eab` |
+| 3 | `theorem` | [actual_complex_correlation_eq_convolution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualComplexCor.lean/declarations/actual-complex-correlation-eq-convolution.md) | 52 | `result-track:f568bcc491e3e881b4587f078784622469a7b2ff4cb49fd5dc2c8f8b8c9a8ea5` |
+| 4 | `theorem` | [actual_complex_correlation_product_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualComplexCor.lean/declarations/actual-complex-correlation-product-integrable.md) | 78 | `result-track:be3960c52291ba9fb729016c2744d6aad8dac2b30a1992c47d46bbaaf4f50ada` |
+| 5 | `theorem` | [actual_complex_correlation_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualComplexCor.lean/declarations/actual-complex-correlation-integrable.md) | 87 | `result-track:d9975908badce2c8a06a67531dd8e41cbf4d58834931e7dea0129100664534ca` |
+| 6 | `theorem` | [actualSourceComplexTransform_eq_full](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualComplexCor.lean/declarations/actualsourcecomplextransform-eq-full.md) | 104 | `result-track:6160f849da366429a6d07ee0911747144a7e2aa0431191fd0f5f785773a6fedc` |
+| 7 | `theorem` | [actualBilateralCorrelationTransform_eq_full](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualComplexCor.lean/declarations/actualbilateralcorrelationtransform-eq-full.md) | 120 | `result-track:1065d40c22368fcf91a224ab8aedcc7f9e47107987c09d8379dcb57491296047` |
+| 8 | `theorem` | [actual_full_complex_correlation_integral_eq_square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualComplexCor.lean/declarations/actual-full-complex-correlation-integral-eq-square.md) | 137 | `result-track:8358ade6c1efacbc47079af25b933294377effea7d3f4fad4d4ab4bbedbabeff` |
+| 9 | `theorem` | [actualBilateralCorrelationTransform_eq_square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualComplexCor.lean/declarations/actualbilateralcorrelationtransform-eq-square.md) | 149 | `result-track:34be3e52fd647384c8bc215edc6100836cc727d649eb27488ae673e211eeec45` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

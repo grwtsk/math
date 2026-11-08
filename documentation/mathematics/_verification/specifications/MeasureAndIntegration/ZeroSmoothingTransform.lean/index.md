@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ZeroSmoothingTransform.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ZeroSmoothingTransform.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSmoothingTransform.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSmoothingTransform.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [smoothedBilateralTransform](../../../../MeasureAndIntegration/ZeroSmoothingTransform.lean/declarations/smoothedbilateraltransform.md) | 24 | `declaration-track:835ab8593a5fdd6c98c6b33d355f678fb8182ede5dfbd51f1cad61fffaf58e85` |
-| 2 | `theorem` | [smoothed_transform_integrand_integrable](../../../../MeasureAndIntegration/ZeroSmoothingTransform.lean/declarations/smoothed-transform-integrand-integrable.md) | 28 | `result-track:7515611910e61a04c7522a78a1c143da7fa470dbca15de3bac9e359104f7afa9` |
-| 3 | `theorem` | [smoothed_weighted_eq_convolution](../../../../MeasureAndIntegration/ZeroSmoothingTransform.lean/declarations/smoothed-weighted-eq-convolution.md) | 41 | `result-track:9e13715c825bcd3e5ea05b149af5eae2a4e729fce026ec4f80eddec6424b2fa2` |
-| 4 | `theorem` | [weighted_convolution_integrand_integrable](../../../../MeasureAndIntegration/ZeroSmoothingTransform.lean/declarations/weighted-convolution-integrand-integrable.md) | 63 | `result-track:32927369c798bbe8be71d1523d75d5e208806e0290671b797b37fdb997b95c57` |
-| 5 | `theorem` | [weighted_convolution_integrable_at](../../../../MeasureAndIntegration/ZeroSmoothingTransform.lean/declarations/weighted-convolution-integrable-at.md) | 74 | `result-track:5b404d25ccebd71fa52f70b7a8351ef0a710a88b0af26b8f7e31c8b0d71d49b7` |
-| 6 | `theorem` | [smoothed_bilateral_transform](../../../../MeasureAndIntegration/ZeroSmoothingTransform.lean/declarations/smoothed-bilateral-transform.md) | 84 | `result-track:a2556efe7bdb5d69ea89b795524676749983aea9925f4cd39edccdb3672bc017` |
-| 7 | `theorem` | [smoothed_bilateral_transform_zeroOccurrence](../../../../MeasureAndIntegration/ZeroSmoothingTransform.lean/declarations/smoothed-bilateral-transform-zerooccurrence.md) | 94 | `result-track:8a2668f5a30778bdae118fc195deaa8b41ee8caeeec9fe10ebb045286db72964` |
-| 8 | `theorem` | [source_transform_control](../../../../MeasureAndIntegration/ZeroSmoothingTransform.lean/declarations/source-transform-control.md) | 102 | `result-track:ebe9124c02b9be827729c49d105139efeeab3b679b2289f64ab6500f891addab` |
+| 1 | `def` | [smoothedBilateralTransform](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSmoothingTransform.lean/declarations/smoothedbilateraltransform.md) | 24 | `declaration-track:835ab8593a5fdd6c98c6b33d355f678fb8182ede5dfbd51f1cad61fffaf58e85` |
+| 2 | `theorem` | [smoothed_transform_integrand_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSmoothingTransform.lean/declarations/smoothed-transform-integrand-integrable.md) | 28 | `result-track:7515611910e61a04c7522a78a1c143da7fa470dbca15de3bac9e359104f7afa9` |
+| 3 | `theorem` | [smoothed_weighted_eq_convolution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSmoothingTransform.lean/declarations/smoothed-weighted-eq-convolution.md) | 41 | `result-track:9e13715c825bcd3e5ea05b149af5eae2a4e729fce026ec4f80eddec6424b2fa2` |
+| 4 | `theorem` | [weighted_convolution_integrand_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSmoothingTransform.lean/declarations/weighted-convolution-integrand-integrable.md) | 63 | `result-track:32927369c798bbe8be71d1523d75d5e208806e0290671b797b37fdb997b95c57` |
+| 5 | `theorem` | [weighted_convolution_integrable_at](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSmoothingTransform.lean/declarations/weighted-convolution-integrable-at.md) | 74 | `result-track:5b404d25ccebd71fa52f70b7a8351ef0a710a88b0af26b8f7e31c8b0d71d49b7` |
+| 6 | `theorem` | [smoothed_bilateral_transform](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSmoothingTransform.lean/declarations/smoothed-bilateral-transform.md) | 84 | `result-track:a2556efe7bdb5d69ea89b795524676749983aea9925f4cd39edccdb3672bc017` |
+| 7 | `theorem` | [smoothed_bilateral_transform_zeroOccurrence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSmoothingTransform.lean/declarations/smoothed-bilateral-transform-zerooccurrence.md) | 94 | `result-track:8a2668f5a30778bdae118fc195deaa8b41ee8caeeec9fe10ebb045286db72964` |
+| 8 | `theorem` | [source_transform_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSmoothingTransform.lean/declarations/source-transform-control.md) | 102 | `result-track:ebe9124c02b9be827729c49d105139efeeab3b679b2289f64ab6500f891addab` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

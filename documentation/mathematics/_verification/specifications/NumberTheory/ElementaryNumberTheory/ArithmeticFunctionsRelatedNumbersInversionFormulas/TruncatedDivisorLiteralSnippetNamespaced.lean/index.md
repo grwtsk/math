@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TruncatedDivisorLiteralSnippetNamespaced.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TruncatedDivisorLiteralSnippetNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TruncatedDivisorLiteralSnippetNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TruncatedDivisorLiteralSnippetNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TruncatedDivisorLiteralSnippetNamespaced.lean/declarations/example-source-edition-3.md) | 15 | `declaration-track:b1f740d9f7843acd48e8c2957874e50abc530ed8e83b253a28487255fae01e31` |
-| 2 | `example` | [(anonymous)](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TruncatedDivisorLiteralSnippetNamespaced.lean/declarations/example-source-edition-2.md) | 19 | `declaration-track:90cf465b2f8a2c22ed61683e252a44d915d8909a7e6010f6bedb58b030bd4bfe` |
-| 3 | `example` | [(anonymous)](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TruncatedDivisorLiteralSnippetNamespaced.lean/declarations/example-source-edition-4.md) | 23 | `declaration-track:c90c93ad26f21653c699e1fc1422826d49e8bb8a33679e5087e000f89370b02f` |
-| 4 | `example` | [(anonymous)](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TruncatedDivisorLiteralSnippetNamespaced.lean/declarations/example.md) | 30 | `declaration-track:43a82e8f9f5988fee1efeac4acfb22682a985455703fc0960782e1693b29c335` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TruncatedDivisorLiteralSnippetNamespaced.lean/declarations/example-source-edition-3.md) | 15 | `declaration-track:b1f740d9f7843acd48e8c2957874e50abc530ed8e83b253a28487255fae01e31` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TruncatedDivisorLiteralSnippetNamespaced.lean/declarations/example-source-edition-2.md) | 19 | `declaration-track:90cf465b2f8a2c22ed61683e252a44d915d8909a7e6010f6bedb58b030bd4bfe` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TruncatedDivisorLiteralSnippetNamespaced.lean/declarations/example-source-edition-4.md) | 23 | `declaration-track:c90c93ad26f21653c699e1fc1422826d49e8bb8a33679e5087e000f89370b02f` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TruncatedDivisorLiteralSnippetNamespaced.lean/declarations/example.md) | 30 | `declaration-track:43a82e8f9f5988fee1efeac4acfb22682a985455703fc0960782e1693b29c335` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFilteredNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFilteredNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFilteredNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFilteredNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [PreservesFilteredColimits](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFilteredNamespaced.lean/declarations/preservesfilteredcolimits.md) | 50 | `declaration-track:a0e2293281665e0ea012e377f66865c2ad81ada01d827ea5f962f50af1289f03` |
-| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFilteredNamespaced.lean/declarations/instance-source-edition-2.md) | 57 | `declaration-track:9250b9229ffe1346d54429219940519aeabb26be25920114a77a2581a1b70223` |
-| 3 | `instance` | [compPreservesFilteredColimits](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFilteredNamespaced.lean/declarations/comppreservesfilteredcolimits.md) | 62 | `declaration-track:e97283dfa22d6617cd19f1f947fea1775b202cb2c7e59c0d961ca957f1fc596a` |
-| 4 | `class` | [PreservesCofilteredLimits](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFilteredNamespaced.lean/declarations/preservescofilteredlimits.md) | 70 | `declaration-track:cde861bcaaff29e250280a7cabc50910f311254df829c55a4c970c214278e4ad` |
-| 5 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFilteredNamespaced.lean/declarations/instance.md) | 77 | `declaration-track:289fa1f59e0a83b7875e950f52522075c5d774c5f0e7fb6f5353ea252da129db` |
-| 6 | `instance` | [compPreservesCofilteredLimits](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFilteredNamespaced.lean/declarations/comppreservescofilteredlimits.md) | 82 | `declaration-track:f567d3168735a71b09f4e1aa829aa90bba714b0e552786213ef71dd899a2598b` |
+| 1 | `class` | [PreservesFilteredColimits](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFilteredNamespaced.lean/declarations/preservesfilteredcolimits.md) | 50 | `declaration-track:a0e2293281665e0ea012e377f66865c2ad81ada01d827ea5f962f50af1289f03` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFilteredNamespaced.lean/declarations/instance-source-edition-2.md) | 57 | `declaration-track:9250b9229ffe1346d54429219940519aeabb26be25920114a77a2581a1b70223` |
+| 3 | `instance` | [compPreservesFilteredColimits](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFilteredNamespaced.lean/declarations/comppreservesfilteredcolimits.md) | 62 | `declaration-track:e97283dfa22d6617cd19f1f947fea1775b202cb2c7e59c0d961ca957f1fc596a` |
+| 4 | `class` | [PreservesCofilteredLimits](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFilteredNamespaced.lean/declarations/preservescofilteredlimits.md) | 70 | `declaration-track:cde861bcaaff29e250280a7cabc50910f311254df829c55a4c970c214278e4ad` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFilteredNamespaced.lean/declarations/instance.md) | 77 | `declaration-track:289fa1f59e0a83b7875e950f52522075c5d774c5f0e7fb6f5353ea252da129db` |
+| 6 | `instance` | [compPreservesCofilteredLimits](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFilteredNamespaced.lean/declarations/comppreservescofilteredlimits.md) | 82 | `declaration-track:f567d3168735a71b09f4e1aa829aa90bba714b0e552786213ef71dd899a2598b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ExternalSevenEighthsBand.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ExternalSevenEighthsBand.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ExternalSevenEighthsBand.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ExternalSevenEighthsBand.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.ZeroSymmetry`](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/RiemannZeroSymmetry.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.ZeroSymmetry`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/RiemannZeroSymmetry.lean/index.md) — import line 8; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [SevenEighthsZeroFree](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ExternalSevenEighthsBand.lean/declarations/seveneighthszerofree.md) | 29 | `declaration-track:3d35e3db5a94aff78a2dbb41e66f199b9507b1df03dc561684df1ca98802d02c` |
-| 2 | `theorem` | [NontrivialZetaZero.re_le_seven_eighths](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ExternalSevenEighthsBand.lean/declarations/nontrivialzetazero-re-le-seven-eighths.md) | 34 | `result-track:7d332d206823541748681fad054e71f35cf68bdd86338058835bd34e46116405` |
-| 3 | `theorem` | [NontrivialZetaZero.one_eighth_le_re](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ExternalSevenEighthsBand.lean/declarations/nontrivialzetazero-one-eighth-le-re.md) | 44 | `result-track:9ce71e472238501787a44144981a06b8493a9d593d4a78002d357d668c89422f` |
-| 4 | `theorem` | [NontrivialZetaZero.mem_closed_seven_eighths_band](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ExternalSevenEighthsBand.lean/declarations/nontrivialzetazero-mem-closed-seven-eighths-band.md) | 55 | `result-track:b33740da8b5eca9258388f4b62fc01bcdc7da442cfbab7879ec036a0de6749ff` |
-| 5 | `theorem` | [seven_eighths_band_does_not_discharge_line](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ExternalSevenEighthsBand.lean/declarations/seven-eighths-band-does-not-discharge-line.md) | 63 | `result-track:98755cef70e5e668327db3cd346270d1991a5ff5ed7e25b541e4cbc38d005982` |
+| 1 | `def` | [SevenEighthsZeroFree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ExternalSevenEighthsBand.lean/declarations/seveneighthszerofree.md) | 29 | `declaration-track:3d35e3db5a94aff78a2dbb41e66f199b9507b1df03dc561684df1ca98802d02c` |
+| 2 | `theorem` | [NontrivialZetaZero.re_le_seven_eighths](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ExternalSevenEighthsBand.lean/declarations/nontrivialzetazero-re-le-seven-eighths.md) | 34 | `result-track:7d332d206823541748681fad054e71f35cf68bdd86338058835bd34e46116405` |
+| 3 | `theorem` | [NontrivialZetaZero.one_eighth_le_re](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ExternalSevenEighthsBand.lean/declarations/nontrivialzetazero-one-eighth-le-re.md) | 44 | `result-track:9ce71e472238501787a44144981a06b8493a9d593d4a78002d357d668c89422f` |
+| 4 | `theorem` | [NontrivialZetaZero.mem_closed_seven_eighths_band](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ExternalSevenEighthsBand.lean/declarations/nontrivialzetazero-mem-closed-seven-eighths-band.md) | 55 | `result-track:b33740da8b5eca9258388f4b62fc01bcdc7da442cfbab7879ec036a0de6749ff` |
+| 5 | `theorem` | [seven_eighths_band_does_not_discharge_line](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ExternalSevenEighthsBand.lean/declarations/seven-eighths-band-does-not-discharge-line.md) | 63 | `result-track:98755cef70e5e668327db3cd346270d1991a5ff5ed7e25b541e4cbc38d005982` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

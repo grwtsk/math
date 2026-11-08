@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EffectiveOrbitEffectiveOrbit.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EffectiveOrbitEffectiveOrbit.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EffectiveOrbitEffectiveOrbit.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EffectiveOrbitEffectiveOrbit.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [EffectiveOrbit](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EffectiveOrbitEffectiveOrbit.lean/declarations/effectiveorbit.md) | 8 | `declaration-track:c213a356e4381c63ade5059107c055b644d374544d87ee44faa18f42d7058228` |
-| 2 | `def` | [EffectiveOrbit.finitePrefixSafe](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EffectiveOrbitEffectiveOrbit.lean/declarations/effectiveorbit-finiteprefixsafe.md) | 15 | `declaration-track:89c5b0340a12dd331a539e9e7e09bacbafc6af4643d8d149519ed58aa7c8a397` |
+| 1 | `structure` | [EffectiveOrbit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EffectiveOrbitEffectiveOrbit.lean/declarations/effectiveorbit.md) | 8 | `declaration-track:c213a356e4381c63ade5059107c055b644d374544d87ee44faa18f42d7058228` |
+| 2 | `def` | [EffectiveOrbit.finitePrefixSafe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EffectiveOrbitEffectiveOrbit.lean/declarations/effectiveorbit-finiteprefixsafe.md) | 15 | `declaration-track:89c5b0340a12dd331a539e9e7e09bacbafc6af4643d8d149519ed58aa7c8a397` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

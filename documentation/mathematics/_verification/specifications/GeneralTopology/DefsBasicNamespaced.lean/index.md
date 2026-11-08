@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/DefsBasicNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/DefsBasicNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DefsBasicNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DefsBasicNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,25 +60,25 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [TopologicalSpace](../../../../GeneralTopology/DefsBasicNamespaced.lean/declarations/topologicalspace.md) | 72 | `declaration-track:141458d4d0ffdb15fcb8771abc3ccaf82d04d1c6150294b191bcd76b779885fc` |
-| 2 | `def` | [IsOpen](../../../../GeneralTopology/DefsBasicNamespaced.lean/declarations/isopen.md) | 93 | `declaration-track:8320dcf1583c8fee59b3484e659ebcb473d9a0c1df0fd2eafbcfa69f7a7ddd5f` |
-| 3 | `theorem` | [isOpen_univ](../../../../GeneralTopology/DefsBasicNamespaced.lean/declarations/isopen-univ.md) | 95 | `result-track:5f1f5a9308b0436d20bf95bd84e752ca79ccfdf5ccb250d73e1b38ed74bdcb98` |
-| 4 | `theorem` | [IsOpen.inter](../../../../GeneralTopology/DefsBasicNamespaced.lean/declarations/isopen-inter.md) | 97 | `result-track:6cf483739867857b84a19c03d6fa958d55a511536f9b037eaa60040138367061` |
-| 5 | `theorem` | [isOpen_sUnion](../../../../GeneralTopology/DefsBasicNamespaced.lean/declarations/isopen-sunion.md) | 100 | `result-track:ba81ca2bbf625b9618d25f9c4b2d4b357433d66cde97572ea560243352c78931` |
-| 6 | `class` | [IsClosed](../../../../GeneralTopology/DefsBasicNamespaced.lean/declarations/isclosed.md) | 104 | `declaration-track:a0afb503e7a01dcc1a300d0d8a0b137e010e87850791f4b39fdea19c2e2082cc` |
-| 7 | `def` | [IsClopen](../../../../GeneralTopology/DefsBasicNamespaced.lean/declarations/isclopen.md) | 109 | `declaration-track:d82e81395b435cf19e82fe43b3ed3516e90366e0bb0bd1f1d70edca085abbed6` |
-| 8 | `def` | [IsLocallyClosed](../../../../GeneralTopology/DefsBasicNamespaced.lean/declarations/islocallyclosed.md) | 116 | `declaration-track:d5d9931ceae485917c36509b5fc0fe9ae3139c9f7e42e0ebfbbe1d39918157db` |
-| 9 | `def` | [interior](../../../../GeneralTopology/DefsBasicNamespaced.lean/declarations/interior.md) | 119 | `declaration-track:e94c5d1857c499ee052b39aaed3b46187cf076b73fed8d5c0d1a407730afa9cc` |
-| 10 | `def` | [closure](../../../../GeneralTopology/DefsBasicNamespaced.lean/declarations/closure.md) | 123 | `declaration-track:8252883332bf6e848a79de7b68dbe59932aa0f75f1d32395b594ab720f398b60` |
-| 11 | `def` | [frontier](../../../../GeneralTopology/DefsBasicNamespaced.lean/declarations/frontier.md) | 127 | `declaration-track:4da19e42801fa7484f684f9aee9e2caec9f8fb073ed42870a20aecf99c0aea9f` |
-| 12 | `def` | [coborder](../../../../GeneralTopology/DefsBasicNamespaced.lean/declarations/coborder.md) | 139 | `declaration-track:0da1696e43cce7421029ca1113e923735fad3ba16c47b46cc8ca1d34e4df716d` |
-| 13 | `def` | [Dense](../../../../GeneralTopology/DefsBasicNamespaced.lean/declarations/dense.md) | 143 | `declaration-track:911c1b95b688444fc18c76006e4362cd46b4bdea9d42ff1da77f2448ef176eb9` |
-| 14 | `def` | [DenseRange](../../../../GeneralTopology/DefsBasicNamespaced.lean/declarations/denserange.md) | 147 | `declaration-track:17a889994e83500ff346c5341b27fb81a56a5f7f30b0ea4fde58ba9dc6125ccb` |
-| 15 | `structure` | [Continuous](../../../../GeneralTopology/DefsBasicNamespaced.lean/declarations/continuous.md) | 152 | `declaration-track:9a251b91eb74955a12086fbca343c0b10ae77400b691b6d37b0e8461f4544dfd` |
-| 16 | `def` | [IsOpenMap](../../../../GeneralTopology/DefsBasicNamespaced.lean/declarations/isopenmap.md) | 159 | `declaration-track:9a2272480ea5788aad0e6bf05259e62f43fe0ce332cb134d36ae8845553b995d` |
-| 17 | `def` | [IsClosedMap](../../../../GeneralTopology/DefsBasicNamespaced.lean/declarations/isclosedmap.md) | 163 | `declaration-track:aa5a31f976bbccecdb4cdc847e5f4f9842751c40af4d07e930c5a8c46aebc8a9` |
-| 18 | `structure` | [IsOpenQuotientMap](../../../../GeneralTopology/DefsBasicNamespaced.lean/declarations/isopenquotientmap.md) | 179 | `declaration-track:708ee0e519dd5f8ce66df4e84db65002032f798fc0d21f48fa23779efbc7f945` |
-| 19 | `class` | [BaireSpace](../../../../GeneralTopology/DefsBasicNamespaced.lean/declarations/bairespace.md) | 208 | `declaration-track:9398cba40d4cb5e2472c9a8b243fa9b9aadb3cb2660d44428ac5f512777525b3` |
+| 1 | `class` | [TopologicalSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DefsBasicNamespaced.lean/declarations/topologicalspace.md) | 72 | `declaration-track:141458d4d0ffdb15fcb8771abc3ccaf82d04d1c6150294b191bcd76b779885fc` |
+| 2 | `def` | [IsOpen](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DefsBasicNamespaced.lean/declarations/isopen.md) | 93 | `declaration-track:8320dcf1583c8fee59b3484e659ebcb473d9a0c1df0fd2eafbcfa69f7a7ddd5f` |
+| 3 | `theorem` | [isOpen_univ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DefsBasicNamespaced.lean/declarations/isopen-univ.md) | 95 | `result-track:5f1f5a9308b0436d20bf95bd84e752ca79ccfdf5ccb250d73e1b38ed74bdcb98` |
+| 4 | `theorem` | [IsOpen.inter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DefsBasicNamespaced.lean/declarations/isopen-inter.md) | 97 | `result-track:6cf483739867857b84a19c03d6fa958d55a511536f9b037eaa60040138367061` |
+| 5 | `theorem` | [isOpen_sUnion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DefsBasicNamespaced.lean/declarations/isopen-sunion.md) | 100 | `result-track:ba81ca2bbf625b9618d25f9c4b2d4b357433d66cde97572ea560243352c78931` |
+| 6 | `class` | [IsClosed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DefsBasicNamespaced.lean/declarations/isclosed.md) | 104 | `declaration-track:a0afb503e7a01dcc1a300d0d8a0b137e010e87850791f4b39fdea19c2e2082cc` |
+| 7 | `def` | [IsClopen](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DefsBasicNamespaced.lean/declarations/isclopen.md) | 109 | `declaration-track:d82e81395b435cf19e82fe43b3ed3516e90366e0bb0bd1f1d70edca085abbed6` |
+| 8 | `def` | [IsLocallyClosed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DefsBasicNamespaced.lean/declarations/islocallyclosed.md) | 116 | `declaration-track:d5d9931ceae485917c36509b5fc0fe9ae3139c9f7e42e0ebfbbe1d39918157db` |
+| 9 | `def` | [interior](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DefsBasicNamespaced.lean/declarations/interior.md) | 119 | `declaration-track:e94c5d1857c499ee052b39aaed3b46187cf076b73fed8d5c0d1a407730afa9cc` |
+| 10 | `def` | [closure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DefsBasicNamespaced.lean/declarations/closure.md) | 123 | `declaration-track:8252883332bf6e848a79de7b68dbe59932aa0f75f1d32395b594ab720f398b60` |
+| 11 | `def` | [frontier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DefsBasicNamespaced.lean/declarations/frontier.md) | 127 | `declaration-track:4da19e42801fa7484f684f9aee9e2caec9f8fb073ed42870a20aecf99c0aea9f` |
+| 12 | `def` | [coborder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DefsBasicNamespaced.lean/declarations/coborder.md) | 139 | `declaration-track:0da1696e43cce7421029ca1113e923735fad3ba16c47b46cc8ca1d34e4df716d` |
+| 13 | `def` | [Dense](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DefsBasicNamespaced.lean/declarations/dense.md) | 143 | `declaration-track:911c1b95b688444fc18c76006e4362cd46b4bdea9d42ff1da77f2448ef176eb9` |
+| 14 | `def` | [DenseRange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DefsBasicNamespaced.lean/declarations/denserange.md) | 147 | `declaration-track:17a889994e83500ff346c5341b27fb81a56a5f7f30b0ea4fde58ba9dc6125ccb` |
+| 15 | `structure` | [Continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DefsBasicNamespaced.lean/declarations/continuous.md) | 152 | `declaration-track:9a251b91eb74955a12086fbca343c0b10ae77400b691b6d37b0e8461f4544dfd` |
+| 16 | `def` | [IsOpenMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DefsBasicNamespaced.lean/declarations/isopenmap.md) | 159 | `declaration-track:9a2272480ea5788aad0e6bf05259e62f43fe0ce332cb134d36ae8845553b995d` |
+| 17 | `def` | [IsClosedMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DefsBasicNamespaced.lean/declarations/isclosedmap.md) | 163 | `declaration-track:aa5a31f976bbccecdb4cdc847e5f4f9842751c40af4d07e930c5a8c46aebc8a9` |
+| 18 | `structure` | [IsOpenQuotientMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DefsBasicNamespaced.lean/declarations/isopenquotientmap.md) | 179 | `declaration-track:708ee0e519dd5f8ce66df4e84db65002032f798fc0d21f48fa23779efbc7f945` |
+| 19 | `class` | [BaireSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DefsBasicNamespaced.lean/declarations/bairespace.md) | 208 | `declaration-track:9398cba40d4cb5e2472c9a8b243fa9b9aadb3cb2660d44428ac5f512777525b3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

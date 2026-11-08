@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/TransformProbeNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/TransformProbeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TransformProbeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TransformProbeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,16 +59,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [primitivePolynomial](../../../../MeasureAndIntegration/TransformProbeNamespaced.lean/declarations/primitivepolynomial.md) | 16 | `declaration-track:70989ce43ab84f5b0bc2136f0b741b35580466f818e06bba6e8c9350436e9831` |
-| 2 | `def` | [sourcePolynomial](../../../../MeasureAndIntegration/TransformProbeNamespaced.lean/declarations/sourcepolynomial.md) | 27 | `declaration-track:5edb695db3c92a9f6677983df3235c52d7dce967a387b547da002d6fb12bea6f` |
-| 3 | `theorem` | [primitive_derivative](../../../../MeasureAndIntegration/TransformProbeNamespaced.lean/declarations/primitive-derivative.md) | 29 | `result-track:15a850baa27a526a419e9106120cf6675b85b4b7dcb9f1d80b04df7d1f203651` |
-| 4 | `theorem` | [primitive_endpoint_pos](../../../../MeasureAndIntegration/TransformProbeNamespaced.lean/declarations/primitive-endpoint-pos.md) | 37 | `result-track:1b106c639882ace8dc24053f4b13e8fcc55fe326812701ea071fbf78047c5d61` |
-| 5 | `theorem` | [primitive_endpoint_neg](../../../../MeasureAndIntegration/TransformProbeNamespaced.lean/declarations/primitive-endpoint-neg.md) | 42 | `result-track:10908230bc1d0a62fbbf9227b80d17204af34674a737af7d0f15d8c73be64845` |
-| 6 | `theorem` | [exponential_primitive](../../../../MeasureAndIntegration/TransformProbeNamespaced.lean/declarations/exponential-primitive.md) | 47 | `result-track:f596c3bdc93f2e8bff1adb5d2497bfea120b665c7d3bffe4e23c167208dc6c49` |
-| 7 | `theorem` | [unit_transform_cleared](../../../../MeasureAndIntegration/TransformProbeNamespaced.lean/declarations/unit-transform-cleared.md) | 58 | `result-track:4d83901c98b6a3a3615bdf7a2a096ff4540d33011e8d90f88c86ab5b53133942` |
-| 8 | `theorem` | [unit_transform](../../../../MeasureAndIntegration/TransformProbeNamespaced.lean/declarations/unit-transform.md) | 70 | `result-track:55836c5e46c6398ef2cf49e985ebf664d7abade9152c54e6564f354981a87500` |
-| 9 | `theorem` | [unit_mass](../../../../MeasureAndIntegration/TransformProbeNamespaced.lean/declarations/unit-mass.md) | 77 | `result-track:68afe5844d053e5a10b9899daa7722ac9cadac5b05f284e52273ebf8a2de4b81` |
-| 10 | `theorem` | [unit_transform_zero](../../../../MeasureAndIntegration/TransformProbeNamespaced.lean/declarations/unit-transform-zero.md) | 86 | `result-track:ba5fc3494949b3bb5c591eea478f9a8a770787940a06a4a72368e0f231db42ef` |
+| 1 | `def` | [primitivePolynomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TransformProbeNamespaced.lean/declarations/primitivepolynomial.md) | 16 | `declaration-track:70989ce43ab84f5b0bc2136f0b741b35580466f818e06bba6e8c9350436e9831` |
+| 2 | `def` | [sourcePolynomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TransformProbeNamespaced.lean/declarations/sourcepolynomial.md) | 27 | `declaration-track:5edb695db3c92a9f6677983df3235c52d7dce967a387b547da002d6fb12bea6f` |
+| 3 | `theorem` | [primitive_derivative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TransformProbeNamespaced.lean/declarations/primitive-derivative.md) | 29 | `result-track:15a850baa27a526a419e9106120cf6675b85b4b7dcb9f1d80b04df7d1f203651` |
+| 4 | `theorem` | [primitive_endpoint_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TransformProbeNamespaced.lean/declarations/primitive-endpoint-pos.md) | 37 | `result-track:1b106c639882ace8dc24053f4b13e8fcc55fe326812701ea071fbf78047c5d61` |
+| 5 | `theorem` | [primitive_endpoint_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TransformProbeNamespaced.lean/declarations/primitive-endpoint-neg.md) | 42 | `result-track:10908230bc1d0a62fbbf9227b80d17204af34674a737af7d0f15d8c73be64845` |
+| 6 | `theorem` | [exponential_primitive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TransformProbeNamespaced.lean/declarations/exponential-primitive.md) | 47 | `result-track:f596c3bdc93f2e8bff1adb5d2497bfea120b665c7d3bffe4e23c167208dc6c49` |
+| 7 | `theorem` | [unit_transform_cleared](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TransformProbeNamespaced.lean/declarations/unit-transform-cleared.md) | 58 | `result-track:4d83901c98b6a3a3615bdf7a2a096ff4540d33011e8d90f88c86ab5b53133942` |
+| 8 | `theorem` | [unit_transform](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TransformProbeNamespaced.lean/declarations/unit-transform.md) | 70 | `result-track:55836c5e46c6398ef2cf49e985ebf664d7abade9152c54e6564f354981a87500` |
+| 9 | `theorem` | [unit_mass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TransformProbeNamespaced.lean/declarations/unit-mass.md) | 77 | `result-track:68afe5844d053e5a10b9899daa7722ac9cadac5b05f284e52273ebf8a2de4b81` |
+| 10 | `theorem` | [unit_transform_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TransformProbeNamespaced.lean/declarations/unit-transform-zero.md) | 86 | `result-track:ba5fc3494949b3bb5c591eea478f9a8a770787940a06a4a72368e0f231db42ef` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

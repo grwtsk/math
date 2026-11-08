@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../DynamicalSystemsAndErgodicTheory/FixedPointsTopologyPublic.lean/index.md) · [Full source](../../../../DynamicalSystemsAndErgodicTheory/FixedPointsTopologyPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/FixedPointsTopologyPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/FixedPointsTopologyPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [isFixedPt_of_tendsto_iterate](../../../../DynamicalSystemsAndErgodicTheory/FixedPointsTopologyPublic.lean/declarations/isfixedpt-of-tendsto-iterate.md) | 35 | `result-track:08877d7ccf7debc1177a01a30368ba9888bde501fe3dbdd308738668a7fa1857` |
-| 2 | `theorem` | [isClosed_fixedPoints](../../../../DynamicalSystemsAndErgodicTheory/FixedPointsTopologyPublic.lean/declarations/isclosed-fixedpoints.md) | 42 | `result-track:5c878bbaccc16e082de0546f93ef638daccf7213cbc179c2a4d2574d51f3919d` |
+| 1 | `theorem` | [isFixedPt_of_tendsto_iterate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/FixedPointsTopologyPublic.lean/declarations/isfixedpt-of-tendsto-iterate.md) | 35 | `result-track:08877d7ccf7debc1177a01a30368ba9888bde501fe3dbdd308738668a7fa1857` |
+| 2 | `theorem` | [isClosed_fixedPoints](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/FixedPointsTopologyPublic.lean/declarations/isclosed-fixedpoints.md) | 42 | `result-track:5c878bbaccc16e082de0546f93ef638daccf7213cbc179c2a4d2574d51f3919d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

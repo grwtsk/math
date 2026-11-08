@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/LFunctionNamespacedPublic.lean/index.md) · [Full source](../../../../NumberTheory/LFunctionNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LFunctionNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LFunctionNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,22 +57,22 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../NumberTheory/LFunctionNamespacedPublic.lean/declarations/instance.md) | 37 | `declaration-track:9a3a1092baf1b262ea1be9f44745402c0a9e0d5019eed17a1847b4c3b4fab229` |
-| 2 | `lemma` | [tendsto_ofComplex_I_mul_atTop_atImInfty](../../../../NumberTheory/LFunctionNamespacedPublic.lean/declarations/tendsto-ofcomplex-i-mul-attop-atiminfty.md) | 50 | `result-track:ba8679a694a3c33c6eaf9e1acb70dd2c2cd3a63f5fc2a9513d59f5bd726dbf6b` |
-| 3 | `lemma` | [isBigO_comp_ofComplex_I_mul_sub_valueAtInfty](../../../../NumberTheory/LFunctionNamespacedPublic.lean/declarations/isbigo-comp-ofcomplex-i-mul-sub-valueatinfty.md) | 58 | `result-track:da882928982cc6ac26e9d71c168d4e801f64538e1d93d6b307c87bd060ddfffb` |
-| 4 | `def` | [weakFEPair](../../../../NumberTheory/LFunctionNamespacedPublic.lean/declarations/weakfepair.md) | 69 | `declaration-track:086d3db4861253872573a443bc98fc26952a34cdd7027850f956810835dd0eea` |
-| 5 | `def` | [Λ](../../../../NumberTheory/LFunctionNamespacedPublic.lean/declarations/anonymous.md) | 99 | `declaration-track:5c78440aacf1ee090509c69aafbda3ad6771988e6d36e9c54dbabc97c3630043` |
-| 6 | `lemma` | [hasSum_Λ_of_qExpansion_isBigO](../../../../NumberTheory/LFunctionNamespacedPublic.lean/declarations/hassum-of-qexpansion-isbigo.md) | 102 | `result-track:dacacff508bbae6f74cdc3dd65ef84d8f2f297dec813594ebe97b54477bc36b7` |
-| 7 | `lemma` | [hasSum_Λ](../../../../NumberTheory/LFunctionNamespacedPublic.lean/declarations/hassum-source-edition-2.md) | 133 | `result-track:93c3418e308295f6542d817b4eac05592f3e6115ba2a778f9bb64991279a8bf5` |
-| 8 | `def` | [L](../../../../NumberTheory/LFunctionNamespacedPublic.lean/declarations/l.md) | 142 | `declaration-track:3508242553d7ef9a6b06c71784e8cfa1c8720d39f24a7853913a2763747cfc46` |
-| 9 | `lemma` | [hasSum_L_of_hasSum_Λ](../../../../NumberTheory/LFunctionNamespacedPublic.lean/declarations/hassum-l-of-hassum.md) | 145 | `result-track:4d44c29ef2a6e3de75f1fde2ffbd549bdda2a43f797f82de71392a73a7fcac0b` |
-| 10 | `theorem` | [hasSum_L](../../../../NumberTheory/LFunctionNamespacedPublic.lean/declarations/hassum-l.md) | 165 | `result-track:c10969841d31fb55dfe5508adc88f82b6fedf2d369848e8d7a29944f6ff2d104` |
-| 11 | `lemma` | [isStrongFEPair](../../../../NumberTheory/LFunctionNamespacedPublic.lean/declarations/isstrongfepair.md) | 178 | `result-track:182337ba40af695b2e564654b877f2d6cbe3aa173bb33a2900839be7ee5590bb` |
-| 12 | `lemma` | [differentiable_Λ](../../../../NumberTheory/LFunctionNamespacedPublic.lean/declarations/differentiable.md) | 183 | `result-track:a1c658443b9b51b60ecc0e849a28aedefced27679439b1869805b1a35f217c87` |
-| 13 | `lemma` | [Λ_eq_mellin](../../../../NumberTheory/LFunctionNamespacedPublic.lean/declarations/eq-mellin.md) | 186 | `result-track:63f0f09433dc82f722bee5b865942345c5d2b679ca2a240aac5aa6884a3ca10e` |
-| 14 | `lemma` | [hasSum_Λ](../../../../NumberTheory/LFunctionNamespacedPublic.lean/declarations/hassum.md) | 189 | `result-track:4a9629a719f34fec202da7596a967f367c551d12c784e1c631a99e06397d01c0` |
-| 15 | `lemma` | [differentiable_L](../../../../NumberTheory/LFunctionNamespacedPublic.lean/declarations/differentiable-l.md) | 198 | `result-track:e11b548386250468651f0035f89869789bb3e98fab9762b931bfcf63ceb2c901` |
-| 16 | `theorem` | [hasSum_L](../../../../NumberTheory/LFunctionNamespacedPublic.lean/declarations/hassum-l-source-edition-2.md) | 203 | `result-track:e27738549f51046fba105e28e94c8127a55c45fb3ca44bd6ceda467b900ad020` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LFunctionNamespacedPublic.lean/declarations/instance.md) | 37 | `declaration-track:9a3a1092baf1b262ea1be9f44745402c0a9e0d5019eed17a1847b4c3b4fab229` |
+| 2 | `lemma` | [tendsto_ofComplex_I_mul_atTop_atImInfty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LFunctionNamespacedPublic.lean/declarations/tendsto-ofcomplex-i-mul-attop-atiminfty.md) | 50 | `result-track:ba8679a694a3c33c6eaf9e1acb70dd2c2cd3a63f5fc2a9513d59f5bd726dbf6b` |
+| 3 | `lemma` | [isBigO_comp_ofComplex_I_mul_sub_valueAtInfty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LFunctionNamespacedPublic.lean/declarations/isbigo-comp-ofcomplex-i-mul-sub-valueatinfty.md) | 58 | `result-track:da882928982cc6ac26e9d71c168d4e801f64538e1d93d6b307c87bd060ddfffb` |
+| 4 | `def` | [weakFEPair](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LFunctionNamespacedPublic.lean/declarations/weakfepair.md) | 69 | `declaration-track:086d3db4861253872573a443bc98fc26952a34cdd7027850f956810835dd0eea` |
+| 5 | `def` | [Λ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LFunctionNamespacedPublic.lean/declarations/anonymous.md) | 99 | `declaration-track:5c78440aacf1ee090509c69aafbda3ad6771988e6d36e9c54dbabc97c3630043` |
+| 6 | `lemma` | [hasSum_Λ_of_qExpansion_isBigO](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LFunctionNamespacedPublic.lean/declarations/hassum-of-qexpansion-isbigo.md) | 102 | `result-track:dacacff508bbae6f74cdc3dd65ef84d8f2f297dec813594ebe97b54477bc36b7` |
+| 7 | `lemma` | [hasSum_Λ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LFunctionNamespacedPublic.lean/declarations/hassum-source-edition-2.md) | 133 | `result-track:93c3418e308295f6542d817b4eac05592f3e6115ba2a778f9bb64991279a8bf5` |
+| 8 | `def` | [L](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LFunctionNamespacedPublic.lean/declarations/l.md) | 142 | `declaration-track:3508242553d7ef9a6b06c71784e8cfa1c8720d39f24a7853913a2763747cfc46` |
+| 9 | `lemma` | [hasSum_L_of_hasSum_Λ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LFunctionNamespacedPublic.lean/declarations/hassum-l-of-hassum.md) | 145 | `result-track:4d44c29ef2a6e3de75f1fde2ffbd549bdda2a43f797f82de71392a73a7fcac0b` |
+| 10 | `theorem` | [hasSum_L](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LFunctionNamespacedPublic.lean/declarations/hassum-l.md) | 165 | `result-track:c10969841d31fb55dfe5508adc88f82b6fedf2d369848e8d7a29944f6ff2d104` |
+| 11 | `lemma` | [isStrongFEPair](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LFunctionNamespacedPublic.lean/declarations/isstrongfepair.md) | 178 | `result-track:182337ba40af695b2e564654b877f2d6cbe3aa173bb33a2900839be7ee5590bb` |
+| 12 | `lemma` | [differentiable_Λ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LFunctionNamespacedPublic.lean/declarations/differentiable.md) | 183 | `result-track:a1c658443b9b51b60ecc0e849a28aedefced27679439b1869805b1a35f217c87` |
+| 13 | `lemma` | [Λ_eq_mellin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LFunctionNamespacedPublic.lean/declarations/eq-mellin.md) | 186 | `result-track:63f0f09433dc82f722bee5b865942345c5d2b679ca2a240aac5aa6884a3ca10e` |
+| 14 | `lemma` | [hasSum_Λ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LFunctionNamespacedPublic.lean/declarations/hassum.md) | 189 | `result-track:4a9629a719f34fec202da7596a967f367c551d12c784e1c631a99e06397d01c0` |
+| 15 | `lemma` | [differentiable_L](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LFunctionNamespacedPublic.lean/declarations/differentiable-l.md) | 198 | `result-track:e11b548386250468651f0035f89869789bb3e98fab9762b931bfcf63ceb2c901` |
+| 16 | `theorem` | [hasSum_L](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LFunctionNamespacedPublic.lean/declarations/hassum-l-source-edition-2.md) | 203 | `result-track:e27738549f51046fba105e28e94c8127a55c45fb3ca44bd6ceda467b900ad020` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

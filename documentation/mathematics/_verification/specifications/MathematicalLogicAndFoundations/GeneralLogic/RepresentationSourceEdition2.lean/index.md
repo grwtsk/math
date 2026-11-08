@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RepresentationSourceEdition2.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RepresentationSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RepresentationSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RepresentationSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [MonodromyRepresentation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RepresentationSourceEdition2.lean/declarations/monodromyrepresentation.md) | 19 | `declaration-track:ffc15194be560fb16ac0ad79e556686ea9799a5385895d8b76946ec29ba17ce6` |
-| 2 | `def` | [InKernel](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RepresentationSourceEdition2.lean/declarations/inkernel.md) | 28 | `declaration-track:28759c63a2d8115708f46828324f37f7e55589ef4cfce1cfb35da7e99fc3bb1d` |
-| 3 | `def` | [InImage](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RepresentationSourceEdition2.lean/declarations/inimage.md) | 38 | `declaration-track:b81777666ddad90be08b0d4d6acb5f272c4875224dc3cab36439b5992af5043c` |
-| 4 | `def` | [Faithful](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RepresentationSourceEdition2.lean/declarations/faithful.md) | 48 | `declaration-track:deee92b601b9dffe279ffc9aff4c8070cb40fda98bfcd13d68d4211e28ec2d4a` |
-| 5 | `def` | [SurjectiveOn](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RepresentationSourceEdition2.lean/declarations/surjectiveon.md) | 57 | `declaration-track:2551556f9d6bc987ff91fdcc1ca464e93a2b773cf8ecaf9565b8eeea54c9ff4f` |
-| 6 | `theorem` | [classify_twists_by_image](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RepresentationSourceEdition2.lean/declarations/classify-twists-by-image.md) | 67 | `result-track:8d4db64081231966ea75184bae98f0cc71e91d7ad15c967b8dd1a8698443374a` |
+| 1 | `structure` | [MonodromyRepresentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RepresentationSourceEdition2.lean/declarations/monodromyrepresentation.md) | 19 | `declaration-track:ffc15194be560fb16ac0ad79e556686ea9799a5385895d8b76946ec29ba17ce6` |
+| 2 | `def` | [InKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RepresentationSourceEdition2.lean/declarations/inkernel.md) | 28 | `declaration-track:28759c63a2d8115708f46828324f37f7e55589ef4cfce1cfb35da7e99fc3bb1d` |
+| 3 | `def` | [InImage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RepresentationSourceEdition2.lean/declarations/inimage.md) | 38 | `declaration-track:b81777666ddad90be08b0d4d6acb5f272c4875224dc3cab36439b5992af5043c` |
+| 4 | `def` | [Faithful](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RepresentationSourceEdition2.lean/declarations/faithful.md) | 48 | `declaration-track:deee92b601b9dffe279ffc9aff4c8070cb40fda98bfcd13d68d4211e28ec2d4a` |
+| 5 | `def` | [SurjectiveOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RepresentationSourceEdition2.lean/declarations/surjectiveon.md) | 57 | `declaration-track:2551556f9d6bc987ff91fdcc1ca464e93a2b773cf8ecaf9565b8eeea54c9ff4f` |
+| 6 | `theorem` | [classify_twists_by_image](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RepresentationSourceEdition2.lean/declarations/classify-twists-by-image.md) | 67 | `result-track:8d4db64081231966ea75184bae98f0cc71e91d7ad15c967b8dd1a8698443374a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

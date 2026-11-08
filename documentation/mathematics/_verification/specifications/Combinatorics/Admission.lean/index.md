@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/Admission.lean/index.md) · [Full source](../../../../Combinatorics/Admission.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Admission.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Admission.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RawGraphAccessRequest](../../../../Combinatorics/Admission.lean/declarations/rawgraphaccessrequest.md) | 13 | `declaration-track:22910cab347db8c6f54db0579005b19dc0eb3d2f30acbeb218e3328f27b99a7b` |
-| 2 | `instance` | [(anonymous)](../../../../Combinatorics/Admission.lean/declarations/instance.md) | 18 | `declaration-track:eca346dbd865f4a272f7250eb8a6e46ab28b4683f3cb90e6bf8e235b5566ffe4` |
-| 3 | `inductive` | [RequestAdmissionFailure](../../../../Combinatorics/Admission.lean/declarations/requestadmissionfailure.md) | 24 | `declaration-track:524fdfdd71cb312df4a52cbd90423478a76b54ab9f86cccac01cf487c6ca7924` |
-| 4 | `inductive` | [RequestAdmission](../../../../Combinatorics/Admission.lean/declarations/requestadmission.md) | 39 | `declaration-track:e36e8077773dfa2f16051410082edf28ff3138fc914422327a9078ca2472afb4` |
-| 5 | `structure` | [RequestAdmitter](../../../../Combinatorics/Admission.lean/declarations/requestadmitter.md) | 52 | `declaration-track:6126d0bd2fc5936b960666e94089309e836a4df2d386095ef82e437fced70782` |
+| 1 | `structure` | [RawGraphAccessRequest](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Admission.lean/declarations/rawgraphaccessrequest.md) | 13 | `declaration-track:22910cab347db8c6f54db0579005b19dc0eb3d2f30acbeb218e3328f27b99a7b` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Admission.lean/declarations/instance.md) | 18 | `declaration-track:eca346dbd865f4a272f7250eb8a6e46ab28b4683f3cb90e6bf8e235b5566ffe4` |
+| 3 | `inductive` | [RequestAdmissionFailure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Admission.lean/declarations/requestadmissionfailure.md) | 24 | `declaration-track:524fdfdd71cb312df4a52cbd90423478a76b54ab9f86cccac01cf487c6ca7924` |
+| 4 | `inductive` | [RequestAdmission](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Admission.lean/declarations/requestadmission.md) | 39 | `declaration-track:e36e8077773dfa2f16051410082edf28ff3138fc914422327a9078ca2472afb4` |
+| 5 | `structure` | [RequestAdmitter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Admission.lean/declarations/requestadmitter.md) | 52 | `declaration-track:6126d0bd2fc5936b960666e94089309e836a4df2d386095ef82e437fced70782` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

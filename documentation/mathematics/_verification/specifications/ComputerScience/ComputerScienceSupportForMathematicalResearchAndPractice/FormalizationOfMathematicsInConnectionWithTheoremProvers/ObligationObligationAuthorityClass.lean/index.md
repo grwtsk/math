@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ObligationObligationAuthorityClass.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ObligationObligationAuthorityClass.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ObligationObligationAuthorityClass.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ObligationObligationAuthorityClass.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [ObligationAuthorityClass](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ObligationObligationAuthorityClass.lean/declarations/obligationauthorityclass.md) | 14 | `declaration-track:334323c346ad9ceaa4debc70426ab81eb6d193a1ea18ec3f1773665d09ccdf8e` |
-| 2 | `inductive` | [ExactnessClass](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ObligationObligationAuthorityClass.lean/declarations/exactnessclass.md) | 24 | `declaration-track:b5e861d533063dffbd45ce0d863c8edae3f4575b7715b100f1e0dbb53267f27c` |
-| 3 | `structure` | [IndexedObligation](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ObligationObligationAuthorityClass.lean/declarations/indexedobligation.md) | 29 | `declaration-track:bb7d0d36675d52828653a19c89de392fa93f7576e7ecd686158ee0581d9739f5` |
+| 1 | `inductive` | [ObligationAuthorityClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ObligationObligationAuthorityClass.lean/declarations/obligationauthorityclass.md) | 14 | `declaration-track:334323c346ad9ceaa4debc70426ab81eb6d193a1ea18ec3f1773665d09ccdf8e` |
+| 2 | `inductive` | [ExactnessClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ObligationObligationAuthorityClass.lean/declarations/exactnessclass.md) | 24 | `declaration-track:b5e861d533063dffbd45ce0d863c8edae3f4575b7715b100f1e0dbb53267f27c` |
+| 3 | `structure` | [IndexedObligation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ObligationObligationAuthorityClass.lean/declarations/indexedobligation.md) | 29 | `declaration-track:bb7d0d36675d52828653a19c89de392fa93f7576e7ecd686158ee0581d9739f5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

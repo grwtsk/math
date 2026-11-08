@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/IncorrectInverse.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/IncorrectInverse.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IncorrectInverse.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IncorrectInverse.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.LinearAlgebra.GaugeState`](../../../../GroupTheoryAndGeneralizations/GaugeState.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.LinearAlgebra.GaugeState`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GaugeState.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [B](../../../../GroupTheoryAndGeneralizations/IncorrectInverse.lean/declarations/b.md) | 3 | `declaration-track:43daddc926d2f0b3f86b96b94a3498364b2418b016cd3f6fcf35899476373abf` |
-| 2 | `def` | [X](../../../../GroupTheoryAndGeneralizations/IncorrectInverse.lean/declarations/x.md) | 4 | `declaration-track:fff290ae9cc1700ec139f125e3d00f2458211e720fefbd090db6e8c36e15274c` |
-| 3 | `example` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/IncorrectInverse.lean/declarations/example.md) | 5 | `declaration-track:a42f38b252cef5ae072c7a184e101b2ce85324bc22ec8c4950206cba586f6889` |
+| 1 | `def` | [B](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IncorrectInverse.lean/declarations/b.md) | 3 | `declaration-track:43daddc926d2f0b3f86b96b94a3498364b2418b016cd3f6fcf35899476373abf` |
+| 2 | `def` | [X](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IncorrectInverse.lean/declarations/x.md) | 4 | `declaration-track:fff290ae9cc1700ec139f125e3d00f2458211e720fefbd090db6e8c36e15274c` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IncorrectInverse.lean/declarations/example.md) | 5 | `declaration-track:a42f38b252cef5ae072c7a184e101b2ce85324bc22ec8c4950206cba586f6889` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

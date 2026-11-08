@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CarrierIsomorphismBijection.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CarrierIsomorphismBijection.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CarrierIsomorphismBijection.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CarrierIsomorphismBijection.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CarrierRealization](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CarrierIsomorphismBijection.lean/declarations/carrierrealization.md) | 42 | `declaration-track:7eee64aeee236f8c3631adb25131d07dc873966079dd31cd605685bbeff51751` |
-| 2 | `theorem` | [mapIso_bijective](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CarrierIsomorphismBijection.lean/declarations/mapiso-bijective.md) | 55 | `result-track:7197ea98d219d901e412a87987dfd2a6c0fba3b9e1c0f4fc598a1968f28b353d` |
+| 1 | `structure` | [CarrierRealization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CarrierIsomorphismBijection.lean/declarations/carrierrealization.md) | 42 | `declaration-track:7eee64aeee236f8c3631adb25131d07dc873966079dd31cd605685bbeff51751` |
+| 2 | `theorem` | [mapIso_bijective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CarrierIsomorphismBijection.lean/declarations/mapiso-bijective.md) | 55 | `result-track:7197ea98d219d901e412a87987dfd2a6c0fba3b9e1c0f4fc598a1968f28b353d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

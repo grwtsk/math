@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/LeanProjectionNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/LeanProjectionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LeanProjectionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LeanProjectionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [LeanDeclKind](../../../../../ComputerScience/AlgorithmsInComputerScience/LeanProjectionNamespaced.lean/declarations/leandeclkind.md) | 26 | `declaration-track:b8d3d2be94a201b50c32e944286d0574e4715377176f5ef9f52987bdda60a222` |
-| 2 | `structure` | [LeanDeclarationProjection](../../../../../ComputerScience/AlgorithmsInComputerScience/LeanProjectionNamespaced.lean/declarations/leandeclarationprojection.md) | 37 | `declaration-track:2859cb86769fcf8a95ac0d35d1becb5fc28e826cd061df047b19a928ef02a235` |
-| 3 | `structure` | [LeanModuleProjection](../../../../../ComputerScience/AlgorithmsInComputerScience/LeanProjectionNamespaced.lean/declarations/leanmoduleprojection.md) | 45 | `declaration-track:20c7b3a97213278924026ff70fccb1952549bbc641478d26985b6fd7fd0eefa2` |
-| 4 | `def` | [LeanModuleProjection.hasFailure](../../../../../ComputerScience/AlgorithmsInComputerScience/LeanProjectionNamespaced.lean/declarations/leanmoduleprojection-hasfailure.md) | 52 | `declaration-track:5a5f05583cee5e49b2c23d29aeedf9017e94352cfa9e5a404a4e1710795ef6af` |
-| 5 | `theorem` | [declaration_projection_has_name](../../../../../ComputerScience/AlgorithmsInComputerScience/LeanProjectionNamespaced.lean/declarations/declaration-projection-has-name.md) | 56 | `result-track:7ccef28e9954b2f3e7537a4fbea68615a327eb21e9f426384008a879fc8da938` |
+| 1 | `inductive` | [LeanDeclKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LeanProjectionNamespaced.lean/declarations/leandeclkind.md) | 26 | `declaration-track:b8d3d2be94a201b50c32e944286d0574e4715377176f5ef9f52987bdda60a222` |
+| 2 | `structure` | [LeanDeclarationProjection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LeanProjectionNamespaced.lean/declarations/leandeclarationprojection.md) | 37 | `declaration-track:2859cb86769fcf8a95ac0d35d1becb5fc28e826cd061df047b19a928ef02a235` |
+| 3 | `structure` | [LeanModuleProjection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LeanProjectionNamespaced.lean/declarations/leanmoduleprojection.md) | 45 | `declaration-track:20c7b3a97213278924026ff70fccb1952549bbc641478d26985b6fd7fd0eefa2` |
+| 4 | `def` | [LeanModuleProjection.hasFailure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LeanProjectionNamespaced.lean/declarations/leanmoduleprojection-hasfailure.md) | 52 | `declaration-track:5a5f05583cee5e49b2c23d29aeedf9017e94352cfa9e5a404a4e1710795ef6af` |
+| 5 | `theorem` | [declaration_projection_has_name](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LeanProjectionNamespaced.lean/declarations/declaration-projection-has-name.md) | 56 | `result-track:7ccef28e9954b2f3e7537a4fbea68615a327eb21e9f426384008a879fc8da938` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

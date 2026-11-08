@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/FinGroupCharZeroNamespacedPublic.lean/index.md) · [Full source](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/FinGroupCharZeroNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/FinGroupCharZeroNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/FinGroupCharZeroNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/FinGroupCharZeroNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 57 | `declaration-track:99bfb268cdfdf6b6d99db18dc4e4d1730f6eab49854b0065cd469ad5d489d253` |
-| 2 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/FinGroupCharZeroNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 67 | `declaration-track:64773427b656c29acb4e599a14920d9bcf32634795f0a624518e1cfa9ceb6875` |
-| 3 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/FinGroupCharZeroNamespacedPublic.lean/declarations/instance-source-edition-4.md) | 80 | `declaration-track:e81703fe825ea8c3017da7bfa845d9432efe3ff7e75be5e8cb12080b333cdb40` |
-| 4 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/FinGroupCharZeroNamespacedPublic.lean/declarations/instance.md) | 87 | `declaration-track:266f8f5c3e28de58244f3af8cb468a62ea64492d8cea8d71b532b68ad78cffb2` |
-| 5 | `lemma` | [simple_iff_end_is_rank_one](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/FinGroupCharZeroNamespacedPublic.lean/declarations/simple-iff-end-is-rank-one.md) | 97 | `result-track:4806d341380a37d4fecf49e4e65fac05476ca0839f8a4d767b9d14cb7bf269bc` |
-| 6 | `lemma` | [simple_iff_char_is_norm_one](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/FinGroupCharZeroNamespacedPublic.lean/declarations/simple-iff-char-is-norm-one.md) | 128 | `result-track:c2e344bcdef4f668fea146243a762999f910f3983c89305cd587d32974e29076` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/FinGroupCharZeroNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 57 | `declaration-track:99bfb268cdfdf6b6d99db18dc4e4d1730f6eab49854b0065cd469ad5d489d253` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/FinGroupCharZeroNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 67 | `declaration-track:64773427b656c29acb4e599a14920d9bcf32634795f0a624518e1cfa9ceb6875` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/FinGroupCharZeroNamespacedPublic.lean/declarations/instance-source-edition-4.md) | 80 | `declaration-track:e81703fe825ea8c3017da7bfa845d9432efe3ff7e75be5e8cb12080b333cdb40` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/FinGroupCharZeroNamespacedPublic.lean/declarations/instance.md) | 87 | `declaration-track:266f8f5c3e28de58244f3af8cb468a62ea64492d8cea8d71b532b68ad78cffb2` |
+| 5 | `lemma` | [simple_iff_end_is_rank_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/FinGroupCharZeroNamespacedPublic.lean/declarations/simple-iff-end-is-rank-one.md) | 97 | `result-track:4806d341380a37d4fecf49e4e65fac05476ca0839f8a4d767b9d14cb7bf269bc` |
+| 6 | `lemma` | [simple_iff_char_is_norm_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/FinGroupCharZeroNamespacedPublic.lean/declarations/simple-iff-char-is-norm-one.md) | 128 | `result-track:c2e344bcdef4f668fea146243a762999f910f3983c89305cd587d32974e29076` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

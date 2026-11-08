@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/SpectralClosureNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/SpectralClosureNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralClosureNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralClosureNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FiniteHeightSpectralClosureCertificate](../../../../FunctionalAnalysis/SpectralClosureNamespaced.lean/declarations/finiteheightspectralclosurecertificate.md) | 25 | `declaration-track:883cc0f4df8b31c553c08336da93f4f4aa9c9382e673738be7301540868e71cb` |
-| 2 | `theorem` | [FiniteHeightSpectralClosureCertificate.measureEquality](../../../../FunctionalAnalysis/SpectralClosureNamespaced.lean/declarations/finiteheightspectralclosurecertificate-measureequality.md) | 58 | `result-track:d016ed5d07ec0066dbd4dffc48127a30ac3eb0febc4f2a02804600142fa5b6ed` |
-| 3 | `theorem` | [finiteHeightSpectralClosure_sound](../../../../FunctionalAnalysis/SpectralClosureNamespaced.lean/declarations/finiteheightspectralclosure-sound.md) | 76 | `result-track:acf33bf2f6dae7989fb6228c4d738a09dc497a21168a4d43c706268deee61c18` |
-| 4 | `theorem` | [finiteSpectralClosure_places_actualZerosOnLine](../../../../FunctionalAnalysis/SpectralClosureNamespaced.lean/declarations/finitespectralclosure-places-actualzerosonline.md) | 93 | `result-track:c513568054eb8bbcdb3c70dd5253c3b9e2b6799efcccd6015b5ff27c494d5b66` |
+| 1 | `structure` | [FiniteHeightSpectralClosureCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralClosureNamespaced.lean/declarations/finiteheightspectralclosurecertificate.md) | 25 | `declaration-track:883cc0f4df8b31c553c08336da93f4f4aa9c9382e673738be7301540868e71cb` |
+| 2 | `theorem` | [FiniteHeightSpectralClosureCertificate.measureEquality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralClosureNamespaced.lean/declarations/finiteheightspectralclosurecertificate-measureequality.md) | 58 | `result-track:d016ed5d07ec0066dbd4dffc48127a30ac3eb0febc4f2a02804600142fa5b6ed` |
+| 3 | `theorem` | [finiteHeightSpectralClosure_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralClosureNamespaced.lean/declarations/finiteheightspectralclosure-sound.md) | 76 | `result-track:acf33bf2f6dae7989fb6228c4d738a09dc497a21168a4d43c706268deee61c18` |
+| 4 | `theorem` | [finiteSpectralClosure_places_actualZerosOnLine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralClosureNamespaced.lean/declarations/finitespectralclosure-places-actualzerosonline.md) | 93 | `result-track:c513568054eb8bbcdb3c70dd5253c3b9e2b6799efcccd6015b5ff27c494d5b66` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

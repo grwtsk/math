@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ComplexZeta.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ComplexZeta.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ComplexZeta.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ComplexZeta.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [files](../../../../../ComputerScience/AlgorithmsInComputerScience/ComplexZeta.lean/declarations/files.md) | 11 | `declaration-track:6f388aba1953b7c8bd1409f636f9fee3489eb7c05f001b0dd881119adafb24af` |
-| 2 | `theorem` | [files_count](../../../../../ComputerScience/AlgorithmsInComputerScience/ComplexZeta.lean/declarations/files-count.md) | 19 | `result-track:b97a25ad48cdd696fd433548c05ff055a085ba7dad1dfad0e2550b0d83342183` |
+| 1 | `def` | [files](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ComplexZeta.lean/declarations/files.md) | 11 | `declaration-track:6f388aba1953b7c8bd1409f636f9fee3489eb7c05f001b0dd881119adafb24af` |
+| 2 | `theorem` | [files_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ComplexZeta.lean/declarations/files-count.md) | 19 | `result-track:b97a25ad48cdd696fd433548c05ff055a085ba7dad1dfad0e2550b0d83342183` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

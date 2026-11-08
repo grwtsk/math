@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/RustProtocolBuffer.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/RustProtocolBuffer.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RustProtocolBuffer.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RustProtocolBuffer.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RustProtocolBufferFrame](../../../../../ComputerScience/AlgorithmsInComputerScience/RustProtocolBuffer.lean/declarations/rustprotocolbufferframe.md) | 7 | `declaration-track:d815b03f0cd121fc5975a09837bbf31217afc185dd293e842ecfed4fe848891f` |
-| 2 | `theorem` | [rustProtocolBuffer_boundary_visible](../../../../../ComputerScience/AlgorithmsInComputerScience/RustProtocolBuffer.lean/declarations/rustprotocolbuffer-boundary-visible.md) | 30 | `result-track:3fc38c76478e0869659a3425d8fa4e1e9fc338fd542d43716d4375eee4dd08b7` |
+| 1 | `structure` | [RustProtocolBufferFrame](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RustProtocolBuffer.lean/declarations/rustprotocolbufferframe.md) | 7 | `declaration-track:d815b03f0cd121fc5975a09837bbf31217afc185dd293e842ecfed4fe848891f` |
+| 2 | `theorem` | [rustProtocolBuffer_boundary_visible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RustProtocolBuffer.lean/declarations/rustprotocolbuffer-boundary-visible.md) | 30 | `result-track:3fc38c76478e0869659a3425d8fa4e1e9fc338fd542d43716d4375eee4dd08b7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

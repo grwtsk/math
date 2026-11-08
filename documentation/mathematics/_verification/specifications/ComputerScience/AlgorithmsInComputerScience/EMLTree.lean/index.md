@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/EMLTree.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/EMLTree.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EMLTree.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EMLTree.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [EMLTree](../../../../../ComputerScience/AlgorithmsInComputerScience/EMLTree.lean/declarations/emltree.md) | 5 | `declaration-track:16943a6344ff83b7eb94090c083d2fa3b6cf6b65e2c86ef18b372de5e6de7cc5` |
-| 2 | `def` | [size](../../../../../ComputerScience/AlgorithmsInComputerScience/EMLTree.lean/declarations/size.md) | 13 | `declaration-track:c487474c37c14684ee173d7f6df90ef1fa698d5ae83d6b57f9fd4e1aa2bf403d` |
-| 3 | `def` | [depth](../../../../../ComputerScience/AlgorithmsInComputerScience/EMLTree.lean/declarations/depth.md) | 18 | `declaration-track:fc20e13f1e9555fb0fda2c62739d046f8e3ff8b5acd45d88d251ac6e5d7b16b9` |
-| 4 | `def` | [vars](../../../../../ComputerScience/AlgorithmsInComputerScience/EMLTree.lean/declarations/vars.md) | 21 | `declaration-track:9ddeecd6da848fd7c034351f4f80d7324a69af3adc5c2fd460310f2801b3bc08` |
-| 5 | `theorem` | [size_pos](../../../../../ComputerScience/AlgorithmsInComputerScience/EMLTree.lean/declarations/size-pos.md) | 26 | `result-track:abca79b46b21d87d4ceacff1bf954008fec9d55f7b7502db6dbb703b516aa4fa` |
-| 6 | `theorem` | [depth_le_size](../../../../../ComputerScience/AlgorithmsInComputerScience/EMLTree.lean/declarations/depth-le-size.md) | 35 | `result-track:4d65369d899a301549a748aa611e4a525f5c1dc4ca19d5d4d77a60f276913c77` |
-| 7 | `theorem` | [vars_subset_univ](../../../../../ComputerScience/AlgorithmsInComputerScience/EMLTree.lean/declarations/vars-subset-univ.md) | 38 | `result-track:35c7705e86dbd6df2a7985bab626e3f079beb9d8eb444dcaf18b1adde4357de0` |
-| 8 | `structure` | [EMLAlgebra](../../../../../ComputerScience/AlgorithmsInComputerScience/EMLTree.lean/declarations/emlalgebra.md) | 45 | `declaration-track:5cbb495ae5e4002bd0793a7bacaf12bb87de6e03ce24c419b561d4895fd04454` |
-| 9 | `def` | [EMLTree.eval](../../../../../ComputerScience/AlgorithmsInComputerScience/EMLTree.lean/declarations/emltree-eval.md) | 50 | `declaration-track:f640554ac9ed8c673bc64096cb727180e2148e5e44f37dc843c64d7d119de9f8` |
+| 1 | `inductive` | [EMLTree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EMLTree.lean/declarations/emltree.md) | 5 | `declaration-track:16943a6344ff83b7eb94090c083d2fa3b6cf6b65e2c86ef18b372de5e6de7cc5` |
+| 2 | `def` | [size](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EMLTree.lean/declarations/size.md) | 13 | `declaration-track:c487474c37c14684ee173d7f6df90ef1fa698d5ae83d6b57f9fd4e1aa2bf403d` |
+| 3 | `def` | [depth](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EMLTree.lean/declarations/depth.md) | 18 | `declaration-track:fc20e13f1e9555fb0fda2c62739d046f8e3ff8b5acd45d88d251ac6e5d7b16b9` |
+| 4 | `def` | [vars](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EMLTree.lean/declarations/vars.md) | 21 | `declaration-track:9ddeecd6da848fd7c034351f4f80d7324a69af3adc5c2fd460310f2801b3bc08` |
+| 5 | `theorem` | [size_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EMLTree.lean/declarations/size-pos.md) | 26 | `result-track:abca79b46b21d87d4ceacff1bf954008fec9d55f7b7502db6dbb703b516aa4fa` |
+| 6 | `theorem` | [depth_le_size](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EMLTree.lean/declarations/depth-le-size.md) | 35 | `result-track:4d65369d899a301549a748aa611e4a525f5c1dc4ca19d5d4d77a60f276913c77` |
+| 7 | `theorem` | [vars_subset_univ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EMLTree.lean/declarations/vars-subset-univ.md) | 38 | `result-track:35c7705e86dbd6df2a7985bab626e3f079beb9d8eb444dcaf18b1adde4357de0` |
+| 8 | `structure` | [EMLAlgebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EMLTree.lean/declarations/emlalgebra.md) | 45 | `declaration-track:5cbb495ae5e4002bd0793a7bacaf12bb87de6e03ce24c419b561d4895fd04454` |
+| 9 | `def` | [EMLTree.eval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EMLTree.lean/declarations/emltree-eval.md) | 50 | `declaration-track:f640554ac9ed8c673bc64096cb727180e2148e5e44f37dc843c64d7d119de9f8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

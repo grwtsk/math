@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/StrictModuleNamespacedPublic.lean/index.md) · [Full source](../../../../GeneralTopology/StrictModuleNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StrictModuleNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StrictModuleNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [isStrictMap_iff_isEmbedding_liftQ_ker](../../../../GeneralTopology/StrictModuleNamespacedPublic.lean/declarations/isstrictmap-iff-isembedding-liftq-ker.md) | 42 | `result-track:9f0c0a338cae5072efd26f8dbb45cd35927b15aa199c7fb5d856dd6590dc6723` |
-| 2 | `lemma` | [isStrictMap_iff_isHomeomorph_quotKerEquivRange](../../../../GeneralTopology/StrictModuleNamespacedPublic.lean/declarations/isstrictmap-iff-ishomeomorph-quotkerequivrange.md) | 48 | `result-track:6b66163e5d2bfb970967133d671db9c4eb346c099927cf75ef8fd567d962c3f2` |
-| 3 | `def` | [Strict Module Namespaced Public](../../../../GeneralTopology/StrictModuleNamespacedPublic.lean/declarations/root-grwtsk-algebra-linearalgebra-isstrictmapiffisembeddingliftqker-vari.md) | 60 | `declaration-track:ab9d7c686cc48e10853ef7bc454e04b96b521d1f7fbad0fd38e58d776aafdf1f` |
-| 4 | `lemma` | [isStrictMap_iff_isOpenQuotientMap_rangeRestrict](../../../../GeneralTopology/StrictModuleNamespacedPublic.lean/declarations/isstrictmap-iff-isopenquotientmap-rangerestrict.md) | 67 | `result-track:1de227bdf22aac5cd8dcc694491857f4708438e8851aa68ba0986870e97622f8` |
-| 5 | `lemma` | [isStrictMap_prodMap_iff](../../../../GeneralTopology/StrictModuleNamespacedPublic.lean/declarations/isstrictmap-prodmap-iff.md) | 75 | `result-track:ac9c6458781a43b48d7a41cd125780c75980b331e7685b8bccc7b68d6113cea1` |
-| 6 | `lemma` | [isStrictMap_prodMap](../../../../GeneralTopology/StrictModuleNamespacedPublic.lean/declarations/isstrictmap-prodmap.md) | 80 | `result-track:9745c77f1fb1d4ab137b24298d548cf1b00df5326774f05eaca014c7756eb6d2` |
+| 1 | `lemma` | [isStrictMap_iff_isEmbedding_liftQ_ker](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StrictModuleNamespacedPublic.lean/declarations/isstrictmap-iff-isembedding-liftq-ker.md) | 42 | `result-track:9f0c0a338cae5072efd26f8dbb45cd35927b15aa199c7fb5d856dd6590dc6723` |
+| 2 | `lemma` | [isStrictMap_iff_isHomeomorph_quotKerEquivRange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StrictModuleNamespacedPublic.lean/declarations/isstrictmap-iff-ishomeomorph-quotkerequivrange.md) | 48 | `result-track:6b66163e5d2bfb970967133d671db9c4eb346c099927cf75ef8fd567d962c3f2` |
+| 3 | `def` | [Strict Module Namespaced Public](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StrictModuleNamespacedPublic.lean/declarations/root-grwtsk-algebra-linearalgebra-isstrictmapiffisembeddingliftqker-vari.md) | 60 | `declaration-track:ab9d7c686cc48e10853ef7bc454e04b96b521d1f7fbad0fd38e58d776aafdf1f` |
+| 4 | `lemma` | [isStrictMap_iff_isOpenQuotientMap_rangeRestrict](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StrictModuleNamespacedPublic.lean/declarations/isstrictmap-iff-isopenquotientmap-rangerestrict.md) | 67 | `result-track:1de227bdf22aac5cd8dcc694491857f4708438e8851aa68ba0986870e97622f8` |
+| 5 | `lemma` | [isStrictMap_prodMap_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StrictModuleNamespacedPublic.lean/declarations/isstrictmap-prodmap-iff.md) | 75 | `result-track:ac9c6458781a43b48d7a41cd125780c75980b331e7685b8bccc7b68d6113cea1` |
+| 6 | `lemma` | [isStrictMap_prodMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StrictModuleNamespacedPublic.lean/declarations/isstrictmap-prodmap.md) | 80 | `result-track:9745c77f1fb1d4ab137b24298d548cf1b00df5326774f05eaca014c7756eb6d2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

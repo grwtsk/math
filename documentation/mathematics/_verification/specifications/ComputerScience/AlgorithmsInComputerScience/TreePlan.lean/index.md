@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/TreePlan.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/TreePlan.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TreePlan.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TreePlan.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [TreePlan](../../../../../ComputerScience/AlgorithmsInComputerScience/TreePlan.lean/declarations/treeplan.md) | 75 | `declaration-track:509fbd60e6a085c4fdaec7844d15d511c0a297a9994c1a047d9726b6bd95c5f8` |
-| 2 | `def` | [root](../../../../../ComputerScience/AlgorithmsInComputerScience/TreePlan.lean/declarations/root.md) | 95 | `declaration-track:f5941e12ed6845a491354d0b73d8f5a5862c592c3b5107596cbc6b9de41ca4aa` |
-| 3 | `def` | [size](../../../../../ComputerScience/AlgorithmsInComputerScience/TreePlan.lean/declarations/size.md) | 111 | `declaration-track:372f4a0e2138221e079b55119d57afc60a274c56badba841491d6935fb18fce9` |
-| 4 | `def` | [sizeAll](../../../../../ComputerScience/AlgorithmsInComputerScience/TreePlan.lean/declarations/sizeall.md) | 127 | `declaration-track:c80d1eb0fb384bdc7052d0ba328f8619b8504e6ac8f6f2f560498d919ea6558e` |
-| 5 | `def` | [height](../../../../../ComputerScience/AlgorithmsInComputerScience/TreePlan.lean/declarations/height.md) | 146 | `declaration-track:a05883b2beefdfbc821723d6875ee0380ec296635ff51efe0bb56e4443857503` |
-| 6 | `def` | [heightAll](../../../../../ComputerScience/AlgorithmsInComputerScience/TreePlan.lean/declarations/heightall.md) | 162 | `declaration-track:52639daee2b5ff0cab747d9532b7028a838018244f7e0c713f740a919cacdec4` |
+| 1 | `inductive` | [TreePlan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TreePlan.lean/declarations/treeplan.md) | 75 | `declaration-track:509fbd60e6a085c4fdaec7844d15d511c0a297a9994c1a047d9726b6bd95c5f8` |
+| 2 | `def` | [root](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TreePlan.lean/declarations/root.md) | 95 | `declaration-track:f5941e12ed6845a491354d0b73d8f5a5862c592c3b5107596cbc6b9de41ca4aa` |
+| 3 | `def` | [size](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TreePlan.lean/declarations/size.md) | 111 | `declaration-track:372f4a0e2138221e079b55119d57afc60a274c56badba841491d6935fb18fce9` |
+| 4 | `def` | [sizeAll](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TreePlan.lean/declarations/sizeall.md) | 127 | `declaration-track:c80d1eb0fb384bdc7052d0ba328f8619b8504e6ac8f6f2f560498d919ea6558e` |
+| 5 | `def` | [height](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TreePlan.lean/declarations/height.md) | 146 | `declaration-track:a05883b2beefdfbc821723d6875ee0380ec296635ff51efe0bb56e4443857503` |
+| 6 | `def` | [heightAll](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TreePlan.lean/declarations/heightall.md) | 162 | `declaration-track:52639daee2b5ff0cab747d9532b7028a838018244f7e0c713f740a919cacdec4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

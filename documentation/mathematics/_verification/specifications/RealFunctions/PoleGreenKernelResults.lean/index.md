@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/PoleGreenKernelResults.lean/index.md) · [Full source](../../../../RealFunctions/PoleGreenKernelResults.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PoleGreenKernelResults.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PoleGreenKernelResults.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,20 +57,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [poleMode](../../../../RealFunctions/PoleGreenKernelResults.lean/declarations/polemode.md) | 22 | `declaration-track:a5758ac6e091c86ccb823bdf73e127b6d37f6336d45c8074b710554e10dc25da` |
-| 2 | `theorem` | [pole_mode_deriv](../../../../RealFunctions/PoleGreenKernelResults.lean/declarations/pole-mode-deriv.md) | 25 | `result-track:c0e7899df1c775532c9b2086cff0c3b186e833fcc1de92665a57bfefcee71279` |
-| 3 | `theorem` | [pole_mode_second_deriv](../../../../RealFunctions/PoleGreenKernelResults.lean/declarations/pole-mode-second-deriv.md) | 36 | `result-track:0743efe2875868d0606e9b8557f7777bbb0d0d549b2dedd8074bf8099df2a013` |
-| 4 | `theorem` | [pole_mode_fourth_deriv](../../../../RealFunctions/PoleGreenKernelResults.lean/declarations/pole-mode-fourth-deriv.md) | 43 | `result-track:f537c2292fce0c4e5a5079f53307b6b71f62cfdbdf8914c02cfd252be194b3a0` |
-| 5 | `theorem` | [pole_operator_mode](../../../../RealFunctions/PoleGreenKernelResults.lean/declarations/pole-operator-mode.md) | 50 | `result-track:ff9e6e99c0c5296d0797f54f217b3e48dd628e1bb2f246f8df08fd09467c206b` |
-| 6 | `theorem` | [pole_squared_operator_mode_zero](../../../../RealFunctions/PoleGreenKernelResults.lean/declarations/pole-squared-operator-mode-zero.md) | 59 | `result-track:5558f3329e3e3170fe90b4f0edb67381048e98c4ba4c9e4b1182a1fae22e8132` |
-| 7 | `def` | [positiveGreenBranch](../../../../RealFunctions/PoleGreenKernelResults.lean/declarations/positivegreenbranch.md) | 70 | `declaration-track:0ba7794a8f127e73c7bde61b732c059993a4bd348e3d8a51fbd5066ee085c63e` |
-| 8 | `def` | [negativeGreenBranch](../../../../RealFunctions/PoleGreenKernelResults.lean/declarations/negativegreenbranch.md) | 73 | `declaration-track:457641858e31ff3e8563865df6195bf6d1246c7f237854fbb9ec963a120ec77a` |
-| 9 | `theorem` | [pole_squared_green_positive_branch](../../../../RealFunctions/PoleGreenKernelResults.lean/declarations/pole-squared-green-positive-branch.md) | 76 | `result-track:d7a218081de9b70fd9307a2f857045fbabef7a474a64b0287e373782d5a2260a` |
-| 10 | `theorem` | [pole_squared_green_negative_branch](../../../../RealFunctions/PoleGreenKernelResults.lean/declarations/pole-squared-green-negative-branch.md) | 82 | `result-track:fa565763cfbb6da8923a364f5e4704a8ec4484ca4410d0d8a1b61ee9a4e31c9f` |
-| 11 | `theorem` | [green_branches_homogeneous](../../../../RealFunctions/PoleGreenKernelResults.lean/declarations/green-branches-homogeneous.md) | 88 | `result-track:8b40d28c08a0b682eece2d466e7f21d7b9c6482029d2911f14c235f52d0122eb` |
-| 12 | `theorem` | [green_branch_jets_at_zero](../../../../RealFunctions/PoleGreenKernelResults.lean/declarations/green-branch-jets-at-zero.md) | 94 | `result-track:407d14816864b52dadd5d3a6722274afb03ff8c64fdae456fd88bb2004613c9e` |
-| 13 | `def` | [poleBoundaryFlux](../../../../RealFunctions/PoleGreenKernelResults.lean/declarations/poleboundaryflux.md) | 106 | `declaration-track:88ac30faab8b740386e6ca5897a715b6f4f3dccab2833df044a071106e7935ff` |
-| 14 | `theorem` | [green_boundary_flux_jump](../../../../RealFunctions/PoleGreenKernelResults.lean/declarations/green-boundary-flux-jump.md) | 110 | `result-track:55a465cf507afb7db37fafbcbe744927d1780608869b9f408f7bf25d0432fe20` |
+| 1 | `def` | [poleMode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PoleGreenKernelResults.lean/declarations/polemode.md) | 22 | `declaration-track:a5758ac6e091c86ccb823bdf73e127b6d37f6336d45c8074b710554e10dc25da` |
+| 2 | `theorem` | [pole_mode_deriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PoleGreenKernelResults.lean/declarations/pole-mode-deriv.md) | 25 | `result-track:c0e7899df1c775532c9b2086cff0c3b186e833fcc1de92665a57bfefcee71279` |
+| 3 | `theorem` | [pole_mode_second_deriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PoleGreenKernelResults.lean/declarations/pole-mode-second-deriv.md) | 36 | `result-track:0743efe2875868d0606e9b8557f7777bbb0d0d549b2dedd8074bf8099df2a013` |
+| 4 | `theorem` | [pole_mode_fourth_deriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PoleGreenKernelResults.lean/declarations/pole-mode-fourth-deriv.md) | 43 | `result-track:f537c2292fce0c4e5a5079f53307b6b71f62cfdbdf8914c02cfd252be194b3a0` |
+| 5 | `theorem` | [pole_operator_mode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PoleGreenKernelResults.lean/declarations/pole-operator-mode.md) | 50 | `result-track:ff9e6e99c0c5296d0797f54f217b3e48dd628e1bb2f246f8df08fd09467c206b` |
+| 6 | `theorem` | [pole_squared_operator_mode_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PoleGreenKernelResults.lean/declarations/pole-squared-operator-mode-zero.md) | 59 | `result-track:5558f3329e3e3170fe90b4f0edb67381048e98c4ba4c9e4b1182a1fae22e8132` |
+| 7 | `def` | [positiveGreenBranch](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PoleGreenKernelResults.lean/declarations/positivegreenbranch.md) | 70 | `declaration-track:0ba7794a8f127e73c7bde61b732c059993a4bd348e3d8a51fbd5066ee085c63e` |
+| 8 | `def` | [negativeGreenBranch](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PoleGreenKernelResults.lean/declarations/negativegreenbranch.md) | 73 | `declaration-track:457641858e31ff3e8563865df6195bf6d1246c7f237854fbb9ec963a120ec77a` |
+| 9 | `theorem` | [pole_squared_green_positive_branch](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PoleGreenKernelResults.lean/declarations/pole-squared-green-positive-branch.md) | 76 | `result-track:d7a218081de9b70fd9307a2f857045fbabef7a474a64b0287e373782d5a2260a` |
+| 10 | `theorem` | [pole_squared_green_negative_branch](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PoleGreenKernelResults.lean/declarations/pole-squared-green-negative-branch.md) | 82 | `result-track:fa565763cfbb6da8923a364f5e4704a8ec4484ca4410d0d8a1b61ee9a4e31c9f` |
+| 11 | `theorem` | [green_branches_homogeneous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PoleGreenKernelResults.lean/declarations/green-branches-homogeneous.md) | 88 | `result-track:8b40d28c08a0b682eece2d466e7f21d7b9c6482029d2911f14c235f52d0122eb` |
+| 12 | `theorem` | [green_branch_jets_at_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PoleGreenKernelResults.lean/declarations/green-branch-jets-at-zero.md) | 94 | `result-track:407d14816864b52dadd5d3a6722274afb03ff8c64fdae456fd88bb2004613c9e` |
+| 13 | `def` | [poleBoundaryFlux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PoleGreenKernelResults.lean/declarations/poleboundaryflux.md) | 106 | `declaration-track:88ac30faab8b740386e6ca5897a715b6f4f3dccab2833df044a071106e7935ff` |
+| 14 | `theorem` | [green_boundary_flux_jump](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PoleGreenKernelResults.lean/declarations/green-boundary-flux-jump.md) | 110 | `result-track:55a465cf507afb7db37fafbcbe744927d1780608869b9f408f7bf25d0432fe20` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

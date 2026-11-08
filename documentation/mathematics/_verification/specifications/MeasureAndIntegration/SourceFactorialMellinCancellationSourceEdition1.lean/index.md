@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceFactorialMellinCancellationSourceEdition1.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceFactorialMellinCancellationSourceEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFactorialMellinCancellationSourceEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFactorialMellinCancellationSourceEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [positiveUnitCoefficient](../../../../MeasureAndIntegration/SourceFactorialMellinCancellationSourceEdition1.lean/declarations/positiveunitcoefficient.md) | 24 | `declaration-track:09d1389dd216397f46b353cc4ce5946584d17328c71107b51f66052f39576e81` |
-| 2 | `theorem` | [positiveUnitCoefficient_sum](../../../../MeasureAndIntegration/SourceFactorialMellinCancellationSourceEdition1.lean/declarations/positiveunitcoefficient-sum.md) | 26 | `result-track:98b2389221673aea2822b97b43329b68fe55c52f23b0533dcb3df2f90cd9b536` |
-| 3 | `theorem` | [factorial_log_closed_Abel](../../../../MeasureAndIntegration/SourceFactorialMellinCancellationSourceEdition1.lean/declarations/factorial-log-closed-abel.md) | 39 | `result-track:2bc565b341a74a3877f339a949fcb412304a9513c08b2bb9b928274cfbdaa31a` |
-| 4 | `theorem` | [factorialLogDefect_eq_fractional_primitive](../../../../MeasureAndIntegration/SourceFactorialMellinCancellationSourceEdition1.lean/declarations/factoriallogdefect-eq-fractional-primitive.md) | 75 | `result-track:0c92fdc4191e614e77ead7941402daa630acf04d08d8c0879ce43f53547b82bb` |
-| 5 | `theorem` | [factorialLogDefect_eq_lower](../../../../MeasureAndIntegration/SourceFactorialMellinCancellationSourceEdition1.lean/declarations/factoriallogdefect-eq-lower.md) | 116 | `result-track:765f92d2fc2c77ad67a916a5991b915646d8bafcd13f4b05d67ec58d82372d7b` |
+| 1 | `def` | [positiveUnitCoefficient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFactorialMellinCancellationSourceEdition1.lean/declarations/positiveunitcoefficient.md) | 24 | `declaration-track:09d1389dd216397f46b353cc4ce5946584d17328c71107b51f66052f39576e81` |
+| 2 | `theorem` | [positiveUnitCoefficient_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFactorialMellinCancellationSourceEdition1.lean/declarations/positiveunitcoefficient-sum.md) | 26 | `result-track:98b2389221673aea2822b97b43329b68fe55c52f23b0533dcb3df2f90cd9b536` |
+| 3 | `theorem` | [factorial_log_closed_Abel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFactorialMellinCancellationSourceEdition1.lean/declarations/factorial-log-closed-abel.md) | 39 | `result-track:2bc565b341a74a3877f339a949fcb412304a9513c08b2bb9b928274cfbdaa31a` |
+| 4 | `theorem` | [factorialLogDefect_eq_fractional_primitive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFactorialMellinCancellationSourceEdition1.lean/declarations/factoriallogdefect-eq-fractional-primitive.md) | 75 | `result-track:0c92fdc4191e614e77ead7941402daa630acf04d08d8c0879ce43f53547b82bb` |
+| 5 | `theorem` | [factorialLogDefect_eq_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFactorialMellinCancellationSourceEdition1.lean/declarations/factoriallogdefect-eq-lower.md) | 116 | `result-track:765f92d2fc2c77ad67a916a5991b915646d8bafcd13f4b05d67ec58d82372d7b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

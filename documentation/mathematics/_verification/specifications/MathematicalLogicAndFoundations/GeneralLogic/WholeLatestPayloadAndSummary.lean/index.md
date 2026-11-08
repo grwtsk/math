@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeLatestPayloadAndSummary.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeLatestPayloadAndSummary.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeLatestPayloadAndSummary.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeLatestPayloadAndSummary.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [PacketRingState](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeLatestPayloadAndSummary.lean/declarations/packetringstate.md) | 37 | `declaration-track:b488913a0f31713c5bc28056215a1484ffc5db9bb46203db7bb128466d7aaf17` |
-| 2 | `def` | [latestPayloadAndMatrixObservation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeLatestPayloadAndSummary.lean/declarations/latestpayloadandmatrixobservation.md) | 45 | `declaration-track:fecaf70535c249c16003db4f030aa1cb951759e1c1b36796c54fffc66d822f14` |
+| 1 | `abbrev` | [PacketRingState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeLatestPayloadAndSummary.lean/declarations/packetringstate.md) | 37 | `declaration-track:b488913a0f31713c5bc28056215a1484ffc5db9bb46203db7bb128466d7aaf17` |
+| 2 | `def` | [latestPayloadAndMatrixObservation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeLatestPayloadAndSummary.lean/declarations/latestpayloadandmatrixobservation.md) | 45 | `declaration-track:fecaf70535c249c16003db4f030aa1cb951759e1c1b36796c54fffc66d822f14` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

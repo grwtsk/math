@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/AdditiveDiskBoundary.lean/index.md) · [Full source](../../../../GeneralTopology/AdditiveDiskBoundary.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AdditiveDiskBoundary.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AdditiveDiskBoundary.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Topology.AlgebraicTopology.ComplexDisk`](../../../../GeneralTopology/ComplexDisk.lean/index.md) — import line 7; pinned internal source present.
-- [`GRWTSK.Topology.AlgebraicTopology.CircleBoundaryAdapters`](../../../../AlgebraicTopology/CircleBoundaryAdapters.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.Topology.AlgebraicTopology.ComplexDisk`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ComplexDisk.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.Topology.AlgebraicTopology.CircleBoundaryAdapters`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/CircleBoundaryAdapters.lean/index.md) — import line 8; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [additiveBoundaryHomeomorph](../../../../GeneralTopology/AdditiveDiskBoundary.lean/declarations/additiveboundaryhomeomorph.md) | 34 | `declaration-track:10c21585c230a4690fbe7a28dbc84c82298e555277fb2813dec14452bb8646cd` |
-| 2 | `theorem` | [additiveBoundaryHomeomorph_apply](../../../../GeneralTopology/AdditiveDiskBoundary.lean/declarations/additiveboundaryhomeomorph-apply.md) | 38 | `result-track:513e7e545bbd9951622f9f14d05c2e3e1a2f05c83c22afcc62cc52e059427a0e` |
-| 3 | `def` | [additiveBoundaryDiskPoint](../../../../GeneralTopology/AdditiveDiskBoundary.lean/declarations/additiveboundarydiskpoint.md) | 46 | `declaration-track:08c702dfb228547524bb3579ff2f1aca7b472402f7ce6720589610dba6040fb2` |
-| 4 | `theorem` | [cone_boundary_exact](../../../../GeneralTopology/AdditiveDiskBoundary.lean/declarations/cone-boundary-exact.md) | 52 | `result-track:011196c54cd7677ee6e13581bdb9e8cfc2425ce27ccf06b8e105bd580cfbe3c1` |
-| 5 | `theorem` | [additiveBoundaryHomeomorph_bijective](../../../../GeneralTopology/AdditiveDiskBoundary.lean/declarations/additiveboundaryhomeomorph-bijective.md) | 60 | `result-track:c23f392b63d01b20ef055c450114bda4259e4fece9fd985c22807b3a7b4aafc9` |
-| 6 | `theorem` | [additiveBoundaryHomeomorph_continuous](../../../../GeneralTopology/AdditiveDiskBoundary.lean/declarations/additiveboundaryhomeomorph-continuous.md) | 66 | `result-track:2a16774eeb81e0de821e127626a7811d69d4ca7338ffafb1d986dc4bea82f444` |
-| 7 | `def` | [transportBoundaryMap](../../../../GeneralTopology/AdditiveDiskBoundary.lean/declarations/transportboundarymap.md) | 72 | `declaration-track:11b126cdd2530da1d667d826c6ac4aebd4a89d829577506b7ddab879b804e8b2` |
-| 8 | `theorem` | [transportBoundaryMap_apply](../../../../GeneralTopology/AdditiveDiskBoundary.lean/declarations/transportboundarymap-apply.md) | 79 | `result-track:3bb18baa85c3fb1605d7864bc9d1dd71570eda441b17527e96c6d41c2e5f7d64` |
-| 9 | `theorem` | [transportBoundaryMap_kernel](../../../../GeneralTopology/AdditiveDiskBoundary.lean/declarations/transportboundarymap-kernel.md) | 85 | `result-track:74cfdb9d06753e9300ef8a6d5b0970ef75da2c85698c3bceba66cf4d7c54f832` |
-| 10 | `theorem` | [transportBoundaryMap_surjective](../../../../GeneralTopology/AdditiveDiskBoundary.lean/declarations/transportboundarymap-surjective.md) | 94 | `result-track:f759ce98054a15c11b740b89fe02da02ff352d7aaa1f8943cc4c9f306875f4de` |
+| 1 | `def` | [additiveBoundaryHomeomorph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AdditiveDiskBoundary.lean/declarations/additiveboundaryhomeomorph.md) | 34 | `declaration-track:10c21585c230a4690fbe7a28dbc84c82298e555277fb2813dec14452bb8646cd` |
+| 2 | `theorem` | [additiveBoundaryHomeomorph_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AdditiveDiskBoundary.lean/declarations/additiveboundaryhomeomorph-apply.md) | 38 | `result-track:513e7e545bbd9951622f9f14d05c2e3e1a2f05c83c22afcc62cc52e059427a0e` |
+| 3 | `def` | [additiveBoundaryDiskPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AdditiveDiskBoundary.lean/declarations/additiveboundarydiskpoint.md) | 46 | `declaration-track:08c702dfb228547524bb3579ff2f1aca7b472402f7ce6720589610dba6040fb2` |
+| 4 | `theorem` | [cone_boundary_exact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AdditiveDiskBoundary.lean/declarations/cone-boundary-exact.md) | 52 | `result-track:011196c54cd7677ee6e13581bdb9e8cfc2425ce27ccf06b8e105bd580cfbe3c1` |
+| 5 | `theorem` | [additiveBoundaryHomeomorph_bijective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AdditiveDiskBoundary.lean/declarations/additiveboundaryhomeomorph-bijective.md) | 60 | `result-track:c23f392b63d01b20ef055c450114bda4259e4fece9fd985c22807b3a7b4aafc9` |
+| 6 | `theorem` | [additiveBoundaryHomeomorph_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AdditiveDiskBoundary.lean/declarations/additiveboundaryhomeomorph-continuous.md) | 66 | `result-track:2a16774eeb81e0de821e127626a7811d69d4ca7338ffafb1d986dc4bea82f444` |
+| 7 | `def` | [transportBoundaryMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AdditiveDiskBoundary.lean/declarations/transportboundarymap.md) | 72 | `declaration-track:11b126cdd2530da1d667d826c6ac4aebd4a89d829577506b7ddab879b804e8b2` |
+| 8 | `theorem` | [transportBoundaryMap_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AdditiveDiskBoundary.lean/declarations/transportboundarymap-apply.md) | 79 | `result-track:3bb18baa85c3fb1605d7864bc9d1dd71570eda441b17527e96c6d41c2e5f7d64` |
+| 9 | `theorem` | [transportBoundaryMap_kernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AdditiveDiskBoundary.lean/declarations/transportboundarymap-kernel.md) | 85 | `result-track:74cfdb9d06753e9300ef8a6d5b0970ef75da2c85698c3bceba66cf4d7c54f832` |
+| 10 | `theorem` | [transportBoundaryMap_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AdditiveDiskBoundary.lean/declarations/transportboundarymap-surjective.md) | 94 | `result-track:f759ce98054a15c11b740b89fe02da02ff352d7aaa1f8943cc4c9f306875f4de` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

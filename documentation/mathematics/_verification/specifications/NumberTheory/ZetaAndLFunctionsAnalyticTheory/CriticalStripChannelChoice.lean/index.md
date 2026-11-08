@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripChannelChoice.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripChannelChoice.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripChannelChoice.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripChannelChoice.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.SymmetricPairChannelChoice`](../../../../../FunctionsOfAComplexVariable/SymmetricPairChannelChoice.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripUniformPairRegion`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripUniformPairRegion.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.SymmetricPairChannelChoice`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/SymmetricPairChannelChoice.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripUniformPairRegion`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripUniformPairRegion.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,19 +58,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ChoiceGuard](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripChannelChoice.lean/declarations/choiceguard.md) | 28 | `declaration-track:447d16a41355f7d41f0c78c0fd7d667048329d25e564e9481b74c097e3cca322` |
-| 2 | `def` | [choiceCheck](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripChannelChoice.lean/declarations/choicecheck.md) | 35 | `declaration-track:20f11b5195d8311e58148e0acdb29e2ed8e0d239eafcd139b894ff0998bf40bd` |
-| 3 | `lemma` | [choiceCheck_iff](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripChannelChoice.lean/declarations/choicecheck-iff.md) | 37 | `result-track:79e99dd9647ec03d4b80e129feeab2f6b5e1534e913f673128bdef267971296c` |
-| 4 | `theorem` | [old_check_implies_choiceCheck](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripChannelChoice.lean/declarations/old-check-implies-choicecheck.md) | 41 | `result-track:d2b70c79f80a4236f2af9a781b52150433bfdfd839dfa08d203694ac20606080` |
-| 5 | `theorem` | [choice_rhOn](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripChannelChoice.lean/declarations/choice-rhon.md) | 62 | `result-track:c0fec7fed0045a5e74c3b3f210c8c7891b8e4cd546ab94d556e16965293da4c9` |
-| 6 | `def` | [fifteenOdd](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripChannelChoice.lean/declarations/fifteenodd.md) | 109 | `declaration-track:94d38aaf23b13a06e679195a55db375d450326d831154278323226687d2e7c56` |
-| 7 | `lemma` | [fifteenOdd_check](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripChannelChoice.lean/declarations/fifteenodd-check.md) | 111 | `result-track:e094dfad09265715a1b26fc1ee8597f9c4020e42ed7973d85ccaad6473e9623d` |
-| 8 | `lemma` | [fifteenOdd_center](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripChannelChoice.lean/declarations/fifteenodd-center.md) | 114 | `result-track:3ffde997f595571667bd3e3bd9f6cf814628e41d912da309f1e7afe5fcb20acc` |
-| 9 | `theorem` | [fifteenOdd_valid](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripChannelChoice.lean/declarations/fifteenodd-valid.md) | 118 | `result-track:682219a7887599ce978495e67536c0ebebb5504a44dc6ef33a19bf6039a05083` |
-| 10 | `theorem` | [fifteenOdd_lower](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripChannelChoice.lean/declarations/fifteenodd-lower.md) | 127 | `result-track:31fd788a86dbae632e108ef4cd22ed7c628d4a03328e530fc313bf93913f8320` |
-| 11 | `theorem` | [fifteen_rhOn](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripChannelChoice.lean/declarations/fifteen-rhon.md) | 137 | `result-track:48a422de2a35b2e84bfe22875991dc793ce288ec8552d27d34bc19a852cb46ea` |
-| 12 | `theorem` | [fifteen_fiber_capacity](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripChannelChoice.lean/declarations/fifteen-fiber-capacity.md) | 148 | `result-track:e89854d7c6dda0a57d56b2b7f5139dbb35fe14d09ca8556ec9d57de5b57e913e` |
-| 13 | `theorem` | [window_successor_of_choice_regions](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripChannelChoice.lean/declarations/window-successor-of-choice-regions.md) | 153 | `result-track:3a796e4ecbc30835e6921f4e112118e6170e0aab9ffb99d8a70567800d2d8c55` |
+| 1 | `def` | [ChoiceGuard](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripChannelChoice.lean/declarations/choiceguard.md) | 28 | `declaration-track:447d16a41355f7d41f0c78c0fd7d667048329d25e564e9481b74c097e3cca322` |
+| 2 | `def` | [choiceCheck](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripChannelChoice.lean/declarations/choicecheck.md) | 35 | `declaration-track:20f11b5195d8311e58148e0acdb29e2ed8e0d239eafcd139b894ff0998bf40bd` |
+| 3 | `lemma` | [choiceCheck_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripChannelChoice.lean/declarations/choicecheck-iff.md) | 37 | `result-track:79e99dd9647ec03d4b80e129feeab2f6b5e1534e913f673128bdef267971296c` |
+| 4 | `theorem` | [old_check_implies_choiceCheck](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripChannelChoice.lean/declarations/old-check-implies-choicecheck.md) | 41 | `result-track:d2b70c79f80a4236f2af9a781b52150433bfdfd839dfa08d203694ac20606080` |
+| 5 | `theorem` | [choice_rhOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripChannelChoice.lean/declarations/choice-rhon.md) | 62 | `result-track:c0fec7fed0045a5e74c3b3f210c8c7891b8e4cd546ab94d556e16965293da4c9` |
+| 6 | `def` | [fifteenOdd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripChannelChoice.lean/declarations/fifteenodd.md) | 109 | `declaration-track:94d38aaf23b13a06e679195a55db375d450326d831154278323226687d2e7c56` |
+| 7 | `lemma` | [fifteenOdd_check](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripChannelChoice.lean/declarations/fifteenodd-check.md) | 111 | `result-track:e094dfad09265715a1b26fc1ee8597f9c4020e42ed7973d85ccaad6473e9623d` |
+| 8 | `lemma` | [fifteenOdd_center](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripChannelChoice.lean/declarations/fifteenodd-center.md) | 114 | `result-track:3ffde997f595571667bd3e3bd9f6cf814628e41d912da309f1e7afe5fcb20acc` |
+| 9 | `theorem` | [fifteenOdd_valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripChannelChoice.lean/declarations/fifteenodd-valid.md) | 118 | `result-track:682219a7887599ce978495e67536c0ebebb5504a44dc6ef33a19bf6039a05083` |
+| 10 | `theorem` | [fifteenOdd_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripChannelChoice.lean/declarations/fifteenodd-lower.md) | 127 | `result-track:31fd788a86dbae632e108ef4cd22ed7c628d4a03328e530fc313bf93913f8320` |
+| 11 | `theorem` | [fifteen_rhOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripChannelChoice.lean/declarations/fifteen-rhon.md) | 137 | `result-track:48a422de2a35b2e84bfe22875991dc793ce288ec8552d27d34bc19a852cb46ea` |
+| 12 | `theorem` | [fifteen_fiber_capacity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripChannelChoice.lean/declarations/fifteen-fiber-capacity.md) | 148 | `result-track:e89854d7c6dda0a57d56b2b7f5139dbb35fe14d09ca8556ec9d57de5b57e913e` |
+| 13 | `theorem` | [window_successor_of_choice_regions](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripChannelChoice.lean/declarations/window-successor-of-choice-regions.md) | 153 | `result-track:3a796e4ecbc30835e6921f4e112118e6170e0aab9ffb99d8a70567800d2d8c55` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

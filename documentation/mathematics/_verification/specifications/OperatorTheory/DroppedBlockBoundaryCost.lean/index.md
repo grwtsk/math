@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../OperatorTheory/DroppedBlockBoundaryCost.lean/index.md) · [Full source](../../../../OperatorTheory/DroppedBlockBoundaryCost.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/DroppedBlockBoundaryCost.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/DroppedBlockBoundaryCost.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Spectral.SturmianBlockCounts`](../../../../OperatorTheory/SturmianBlockCountsHistoricalSourceEdition2.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.Spectral.FreeIDS`](../../../../OperatorTheory/FreeIDSHistoricalSourceEdition2.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.Spectral.SturmianBlockCounts`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/SturmianBlockCountsHistoricalSourceEdition2.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Spectral.FreeIDS`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/FreeIDSHistoricalSourceEdition2.lean/index.md) — import line 2; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [free_one](../../../../OperatorTheory/DroppedBlockBoundaryCost.lean/declarations/free-one.md) | 5 | `result-track:03ddd86e1a271843f0d1db8dca948b149b942d20c222532723bac833d65f6065` |
-| 2 | `theorem` | [free_two](../../../../OperatorTheory/DroppedBlockBoundaryCost.lean/declarations/free-two.md) | 12 | `result-track:dfafa64afba3803258b69c6c349e7c18d33676d1ba6dba956a4c9602469e00e5` |
-| 3 | `theorem` | [zero_count](../../../../OperatorTheory/DroppedBlockBoundaryCost.lean/declarations/zero-count.md) | 19 | `result-track:cd7bb7ea55bb5c184bc5512c199d486d1a76cac6c9efdca54da603057f4df51c` |
-| 4 | `example` | [(anonymous)](../../../../OperatorTheory/DroppedBlockBoundaryCost.lean/declarations/example.md) | 23 | `declaration-track:5096c76347fc724cf801e57dc209bf4fd3c43962c42dc7b369bcc25a0b9c8a94` |
+| 1 | `theorem` | [free_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/DroppedBlockBoundaryCost.lean/declarations/free-one.md) | 5 | `result-track:03ddd86e1a271843f0d1db8dca948b149b942d20c222532723bac833d65f6065` |
+| 2 | `theorem` | [free_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/DroppedBlockBoundaryCost.lean/declarations/free-two.md) | 12 | `result-track:dfafa64afba3803258b69c6c349e7c18d33676d1ba6dba956a4c9602469e00e5` |
+| 3 | `theorem` | [zero_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/DroppedBlockBoundaryCost.lean/declarations/zero-count.md) | 19 | `result-track:cd7bb7ea55bb5c184bc5512c199d486d1a76cac6c9efdca54da603057f4df51c` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/DroppedBlockBoundaryCost.lean/declarations/example.md) | 23 | `declaration-track:5096c76347fc724cf801e57dc209bf4fd3c43962c42dc7b369bcc25a0b9c8a94` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

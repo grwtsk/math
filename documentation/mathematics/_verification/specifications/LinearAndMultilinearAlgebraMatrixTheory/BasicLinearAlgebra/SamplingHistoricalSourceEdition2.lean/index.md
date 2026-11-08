@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SamplingHistoricalSourceEdition2.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SamplingHistoricalSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SamplingHistoricalSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SamplingHistoricalSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.LinearAlgebra.Schrodinger.SampledPotential`](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SampledPotentialHistoricalSourceEdition2.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Algebra.LinearAlgebra.Schrodinger.SampledPotential`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SampledPotentialHistoricalSourceEdition2.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [PotentialFamily](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SamplingHistoricalSourceEdition2.lean/declarations/potentialfamily.md) | 10 | `declaration-track:984eeb97ea3c3866549c5bda01668dff1b4efc59e19120ae5214be2735cf8b69` |
-| 2 | `def` | [SameSampledPotential](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SamplingHistoricalSourceEdition2.lean/declarations/samesampledpotential.md) | 14 | `declaration-track:f5640839132057b03663405137c35d51b2257ae66207be5046f4314172a9bb62` |
-| 3 | `def` | [discreteAction](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SamplingHistoricalSourceEdition2.lean/declarations/discreteaction.md) | 17 | `declaration-track:4ed4ea97f0fd096356f0d3f7c78f4177452a6b24dcc055106a362df26f9b7b96` |
-| 4 | `theorem` | [equal_samples_equal_action](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SamplingHistoricalSourceEdition2.lean/declarations/equal-samples-equal-action.md) | 20 | `result-track:dc0fd083222fb337e77d719a66845660a2e6e4a0edb0a351da82994f3a20a2da` |
-| 5 | `theorem` | [sampled_alias](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SamplingHistoricalSourceEdition2.lean/declarations/sampled-alias.md) | 27 | `result-track:1f5d67cc42ec799c4d9df259ebfa14f24133eb85fee5cfe3c14149c5de7646f4` |
-| 6 | `theorem` | [waveform_equality_implies_samples](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SamplingHistoricalSourceEdition2.lean/declarations/waveform-equality-implies-samples.md) | 37 | `result-track:b06b65b51eb13a3566a7d71af9fab897c7dcd6f8d80e0fc409375b4c59a4169e` |
+| 1 | `inductive` | [PotentialFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SamplingHistoricalSourceEdition2.lean/declarations/potentialfamily.md) | 10 | `declaration-track:984eeb97ea3c3866549c5bda01668dff1b4efc59e19120ae5214be2735cf8b69` |
+| 2 | `def` | [SameSampledPotential](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SamplingHistoricalSourceEdition2.lean/declarations/samesampledpotential.md) | 14 | `declaration-track:f5640839132057b03663405137c35d51b2257ae66207be5046f4314172a9bb62` |
+| 3 | `def` | [discreteAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SamplingHistoricalSourceEdition2.lean/declarations/discreteaction.md) | 17 | `declaration-track:4ed4ea97f0fd096356f0d3f7c78f4177452a6b24dcc055106a362df26f9b7b96` |
+| 4 | `theorem` | [equal_samples_equal_action](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SamplingHistoricalSourceEdition2.lean/declarations/equal-samples-equal-action.md) | 20 | `result-track:dc0fd083222fb337e77d719a66845660a2e6e4a0edb0a351da82994f3a20a2da` |
+| 5 | `theorem` | [sampled_alias](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SamplingHistoricalSourceEdition2.lean/declarations/sampled-alias.md) | 27 | `result-track:1f5d67cc42ec799c4d9df259ebfa14f24133eb85fee5cfe3c14149c5de7646f4` |
+| 6 | `theorem` | [waveform_equality_implies_samples](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SamplingHistoricalSourceEdition2.lean/declarations/waveform-equality-implies-samples.md) | 37 | `result-track:b06b65b51eb13a3566a7d71af9fab897c7dcd6f8d80e0fc409375b4c59a4169e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

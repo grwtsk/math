@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CachedGatesNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CachedGatesNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CachedGatesNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CachedGatesNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mkNotCached](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CachedGatesNamespacedPublic.lean/declarations/mknotcached.md) | 37 | `declaration-track:760aa8c29b81efb9bac1fcfd396cd3f901c00bd73dc02c0f8f5b35b3a0a6f1c1` |
-| 2 | `def` | [mkAndCached](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CachedGatesNamespacedPublic.lean/declarations/mkandcached.md) | 45 | `declaration-track:4a0b44c62d00747b4d108ec757e2297b3b12efb25a87ab71d59a6fa2a54969bd` |
-| 3 | `def` | [mkOrCached](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CachedGatesNamespacedPublic.lean/declarations/mkorcached.md) | 51 | `declaration-track:669ccb7a11e0d96946e24f164cce2caccbb189378106bc2593c73f8ae851b14a` |
-| 4 | `def` | [mkXorCached](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CachedGatesNamespacedPublic.lean/declarations/mkxorcached.md) | 62 | `declaration-track:f472132ba1ed402afba79923ced404978446157ee4cb0afe3fa59025d759f2b8` |
-| 5 | `def` | [mkBEqCached](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CachedGatesNamespacedPublic.lean/declarations/mkbeqcached.md) | 78 | `declaration-track:18161e8586588a883e720f9147f8463e1f07551e282dd1f250a89da77de25c67` |
-| 6 | `def` | [mkImpCached](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CachedGatesNamespacedPublic.lean/declarations/mkimpcached.md) | 94 | `declaration-track:0e89db421357b06e5dc9e599f3a253221f26bb686993b4a1cdba1232a63adb93` |
+| 1 | `def` | [mkNotCached](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CachedGatesNamespacedPublic.lean/declarations/mknotcached.md) | 37 | `declaration-track:760aa8c29b81efb9bac1fcfd396cd3f901c00bd73dc02c0f8f5b35b3a0a6f1c1` |
+| 2 | `def` | [mkAndCached](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CachedGatesNamespacedPublic.lean/declarations/mkandcached.md) | 45 | `declaration-track:4a0b44c62d00747b4d108ec757e2297b3b12efb25a87ab71d59a6fa2a54969bd` |
+| 3 | `def` | [mkOrCached](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CachedGatesNamespacedPublic.lean/declarations/mkorcached.md) | 51 | `declaration-track:669ccb7a11e0d96946e24f164cce2caccbb189378106bc2593c73f8ae851b14a` |
+| 4 | `def` | [mkXorCached](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CachedGatesNamespacedPublic.lean/declarations/mkxorcached.md) | 62 | `declaration-track:f472132ba1ed402afba79923ced404978446157ee4cb0afe3fa59025d759f2b8` |
+| 5 | `def` | [mkBEqCached](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CachedGatesNamespacedPublic.lean/declarations/mkbeqcached.md) | 78 | `declaration-track:18161e8586588a883e720f9147f8463e1f07551e282dd1f250a89da77de25c67` |
+| 6 | `def` | [mkImpCached](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CachedGatesNamespacedPublic.lean/declarations/mkimpcached.md) | 94 | `declaration-track:0e89db421357b06e5dc9e599f3a253221f26bb686993b4a1cdba1232a63adb93` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

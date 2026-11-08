@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SquarefreeNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SquarefreeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SquarefreeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SquarefreeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [SquarefreeByFactorization](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SquarefreeNamespaced.lean/declarations/squarefreebyfactorization.md) | 24 | `declaration-track:0123a205dc9521e1ee2f5fcbf6ad9c63f93ec0aa23233bedd25158bd98f43222` |
-| 2 | `theorem` | [squarefree_iff_factorization_le_one](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SquarefreeNamespaced.lean/declarations/squarefree-iff-factorization-le-one.md) | 31 | `result-track:4601fd250ab32959db44fc13ffbc427fbbfd2e233b9c892f3899222aa2297beb` |
+| 1 | `def` | [SquarefreeByFactorization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SquarefreeNamespaced.lean/declarations/squarefreebyfactorization.md) | 24 | `declaration-track:0123a205dc9521e1ee2f5fcbf6ad9c63f93ec0aa23233bedd25158bd98f43222` |
+| 2 | `theorem` | [squarefree_iff_factorization_le_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SquarefreeNamespaced.lean/declarations/squarefree-iff-factorization-le-one.md) | 31 | `result-track:4601fd250ab32959db44fc13ffbc427fbbfd2e233b9c892f3899222aa2297beb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

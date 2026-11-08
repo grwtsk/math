@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Geometry/RealAndComplexGeometry/EuclideanBasicPublic.lean/index.md) · [Full source](../../../../../Geometry/RealAndComplexGeometry/EuclideanBasicPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RealAndComplexGeometry/EuclideanBasicPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RealAndComplexGeometry/EuclideanBasicPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [inner_weightedVSub](../../../../../Geometry/RealAndComplexGeometry/EuclideanBasicPublic.lean/declarations/inner-weightedvsub.md) | 62 | `result-track:b3c270bce847fe6d447d033382bd7ac581eb6fd05bcd1234bb1d7ae90a314340` |
-| 2 | `theorem` | [dist_affineCombination](../../../../../Geometry/RealAndComplexGeometry/EuclideanBasicPublic.lean/declarations/dist-affinecombination.md) | 76 | `result-track:0df9c56a9e5d7688d6e6ac0de0fa93fb824658c065891135b01281b07d7ce643` |
-| 3 | `theorem` | [dist_smul_vadd_sq](../../../../../Geometry/RealAndComplexGeometry/EuclideanBasicPublic.lean/declarations/dist-smul-vadd-sq.md) | 92 | `result-track:375e720127687de2e9bb335b52643f0aca74221d66f8ee20bd2e3f502a32d2e3` |
-| 4 | `theorem` | [dist_smul_vadd_eq_dist](../../../../../Geometry/RealAndComplexGeometry/EuclideanBasicPublic.lean/declarations/dist-smul-vadd-eq-dist.md) | 101 | `result-track:0b3cc8a89af04f41948f508d4c57a1f1ec14e82b2f68e1ec6b56252826c4729c` |
-| 5 | `theorem` | [eq_of_dist_eq_of_dist_eq_of_mem_of_finrank_eq_two](../../../../../Geometry/RealAndComplexGeometry/EuclideanBasicPublic.lean/declarations/eq-of-dist-eq-of-dist-eq-of-mem-of-finrank-eq-two.md) | 121 | `result-track:b6c72264a459c970bd2d404603107cdfbb32254dcf4d8c908bdca4d9be40e56f` |
-| 6 | `theorem` | [eq_of_dist_eq_of_dist_eq_of_finrank_eq_two](../../../../../Geometry/RealAndComplexGeometry/EuclideanBasicPublic.lean/declarations/eq-of-dist-eq-of-dist-eq-of-finrank-eq-two.md) | 176 | `result-track:1248a09d0dd69e330b92ecea2405601e3706f9f78b64206738e31531699095dd` |
+| 1 | `theorem` | [inner_weightedVSub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RealAndComplexGeometry/EuclideanBasicPublic.lean/declarations/inner-weightedvsub.md) | 62 | `result-track:b3c270bce847fe6d447d033382bd7ac581eb6fd05bcd1234bb1d7ae90a314340` |
+| 2 | `theorem` | [dist_affineCombination](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RealAndComplexGeometry/EuclideanBasicPublic.lean/declarations/dist-affinecombination.md) | 76 | `result-track:0df9c56a9e5d7688d6e6ac0de0fa93fb824658c065891135b01281b07d7ce643` |
+| 3 | `theorem` | [dist_smul_vadd_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RealAndComplexGeometry/EuclideanBasicPublic.lean/declarations/dist-smul-vadd-sq.md) | 92 | `result-track:375e720127687de2e9bb335b52643f0aca74221d66f8ee20bd2e3f502a32d2e3` |
+| 4 | `theorem` | [dist_smul_vadd_eq_dist](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RealAndComplexGeometry/EuclideanBasicPublic.lean/declarations/dist-smul-vadd-eq-dist.md) | 101 | `result-track:0b3cc8a89af04f41948f508d4c57a1f1ec14e82b2f68e1ec6b56252826c4729c` |
+| 5 | `theorem` | [eq_of_dist_eq_of_dist_eq_of_mem_of_finrank_eq_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RealAndComplexGeometry/EuclideanBasicPublic.lean/declarations/eq-of-dist-eq-of-dist-eq-of-mem-of-finrank-eq-two.md) | 121 | `result-track:b6c72264a459c970bd2d404603107cdfbb32254dcf4d8c908bdca4d9be40e56f` |
+| 6 | `theorem` | [eq_of_dist_eq_of_dist_eq_of_finrank_eq_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RealAndComplexGeometry/EuclideanBasicPublic.lean/declarations/eq-of-dist-eq-of-dist-eq-of-finrank-eq-two.md) | 176 | `result-track:1248a09d0dd69e330b92ecea2405601e3706f9f78b64206738e31531699095dd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

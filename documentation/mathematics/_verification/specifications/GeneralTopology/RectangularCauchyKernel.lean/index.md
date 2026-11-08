@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/RectangularCauchyKernel.lean/index.md) · [Full source](../../../../GeneralTopology/RectangularCauchyKernel.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RectangularCauchyKernel.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RectangularCauchyKernel.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Real.CauchyEdgePrimitives`](../../../../MeasureAndIntegration/CauchyEdgePrimitives.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.RectangularPoleReduction`](../../../../GeneralTopology/RectangularPoleReduction.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Real.CauchyEdgePrimitives`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CauchyEdgePrimitives.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.RectangularPoleReduction`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RectangularPoleReduction.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,18 +58,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [inverse_cartesian](../../../../GeneralTopology/RectangularCauchyKernel.lean/declarations/inverse-cartesian.md) | 30 | `result-track:d27188ead8c762622b98bb4b9da546b13972db54ef4da859e6579a6f712c4c70` |
-| 2 | `theorem` | [I_mul_inverse_cartesian](../../../../GeneralTopology/RectangularCauchyKernel.lean/declarations/i-mul-inverse-cartesian.md) | 39 | `result-track:cff99048287f03dd4adcafa42e3f987be67bf58d101d41657e43cbf1a55ef689` |
-| 3 | `theorem` | [horizontal_cauchy](../../../../GeneralTopology/RectangularCauchyKernel.lean/declarations/horizontal-cauchy.md) | 49 | `result-track:259f316011f4b3183a1b40c2fd71541a49fd779b311f4865366fe9eec1412041` |
-| 4 | `theorem` | [I_mul_vertical_cauchy](../../../../GeneralTopology/RectangularCauchyKernel.lean/declarations/i-mul-vertical-cauchy.md) | 72 | `result-track:85a1411474cc3ff80ab8f7986ed3b8014ab9e5ed34534837ddaa9e6833faff51` |
-| 5 | `theorem` | [boundaryIntegral_cauchy](../../../../GeneralTopology/RectangularCauchyKernel.lean/declarations/boundaryintegral-cauchy.md) | 96 | `result-track:0f81ceba5c6eed492eada9bc255cf4cc7e7ea4e716fcc5d04c8e82a327b5b1d2` |
-| 6 | `theorem` | [boundaryIntegral_cauchy_exterior](../../../../GeneralTopology/RectangularCauchyKernel.lean/declarations/boundaryintegral-cauchy-exterior.md) | 140 | `result-track:b5479782e026f8ea7a751e0a4443c23a00b791a41fc2a9fe067802f72c685d64` |
-| 7 | `theorem` | [boundaryIntegral_const_mul](../../../../GeneralTopology/RectangularCauchyKernel.lean/declarations/boundaryintegral-const-mul.md) | 149 | `result-track:d0ba2fa48c67238eb8ffd4784499d9b69f9ee3a4d61cbfc43cede8ea672bb812` |
-| 8 | `theorem` | [boundaryIntegral_swap](../../../../GeneralTopology/RectangularCauchyKernel.lean/declarations/boundaryintegral-swap.md) | 155 | `result-track:a9301498ad142fb9266db211a5f19db7bd8daa6facd00fe0345db1357992733e` |
-| 9 | `theorem` | [boundaryIntegral_simple_pole](../../../../GeneralTopology/RectangularCauchyKernel.lean/declarations/boundaryintegral-simple-pole.md) | 162 | `result-track:626bc51b97346777b6eb9f363b88009466d24e947aead79a1c619e1cd48e30b7` |
-| 10 | `theorem` | [boundaryIntegral_finset_sum](../../../../GeneralTopology/RectangularCauchyKernel.lean/declarations/boundaryintegral-finset-sum.md) | 170 | `result-track:9417ba66457d0ffc840298b0f5f31676e77a37371bde3c5ad940416decbee04a` |
-| 11 | `theorem` | [boundaryIntegral_principalSum](../../../../GeneralTopology/RectangularCauchyKernel.lean/declarations/boundaryintegral-principalsum.md) | 183 | `result-track:27b97ca839f0fecab255e5f048a2778bc6c8d231e02091461fdda8252154283b` |
-| 12 | `theorem` | [boundaryIntegral_eq_coefficient_sum](../../../../GeneralTopology/RectangularCauchyKernel.lean/declarations/boundaryintegral-eq-coefficient-sum.md) | 212 | `result-track:9eb6271c3881bfb2de7d6ae4a176cab3e293143beea175031f919d2891ebb219` |
+| 1 | `theorem` | [inverse_cartesian](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RectangularCauchyKernel.lean/declarations/inverse-cartesian.md) | 30 | `result-track:d27188ead8c762622b98bb4b9da546b13972db54ef4da859e6579a6f712c4c70` |
+| 2 | `theorem` | [I_mul_inverse_cartesian](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RectangularCauchyKernel.lean/declarations/i-mul-inverse-cartesian.md) | 39 | `result-track:cff99048287f03dd4adcafa42e3f987be67bf58d101d41657e43cbf1a55ef689` |
+| 3 | `theorem` | [horizontal_cauchy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RectangularCauchyKernel.lean/declarations/horizontal-cauchy.md) | 49 | `result-track:259f316011f4b3183a1b40c2fd71541a49fd779b311f4865366fe9eec1412041` |
+| 4 | `theorem` | [I_mul_vertical_cauchy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RectangularCauchyKernel.lean/declarations/i-mul-vertical-cauchy.md) | 72 | `result-track:85a1411474cc3ff80ab8f7986ed3b8014ab9e5ed34534837ddaa9e6833faff51` |
+| 5 | `theorem` | [boundaryIntegral_cauchy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RectangularCauchyKernel.lean/declarations/boundaryintegral-cauchy.md) | 96 | `result-track:0f81ceba5c6eed492eada9bc255cf4cc7e7ea4e716fcc5d04c8e82a327b5b1d2` |
+| 6 | `theorem` | [boundaryIntegral_cauchy_exterior](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RectangularCauchyKernel.lean/declarations/boundaryintegral-cauchy-exterior.md) | 140 | `result-track:b5479782e026f8ea7a751e0a4443c23a00b791a41fc2a9fe067802f72c685d64` |
+| 7 | `theorem` | [boundaryIntegral_const_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RectangularCauchyKernel.lean/declarations/boundaryintegral-const-mul.md) | 149 | `result-track:d0ba2fa48c67238eb8ffd4784499d9b69f9ee3a4d61cbfc43cede8ea672bb812` |
+| 8 | `theorem` | [boundaryIntegral_swap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RectangularCauchyKernel.lean/declarations/boundaryintegral-swap.md) | 155 | `result-track:a9301498ad142fb9266db211a5f19db7bd8daa6facd00fe0345db1357992733e` |
+| 9 | `theorem` | [boundaryIntegral_simple_pole](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RectangularCauchyKernel.lean/declarations/boundaryintegral-simple-pole.md) | 162 | `result-track:626bc51b97346777b6eb9f363b88009466d24e947aead79a1c619e1cd48e30b7` |
+| 10 | `theorem` | [boundaryIntegral_finset_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RectangularCauchyKernel.lean/declarations/boundaryintegral-finset-sum.md) | 170 | `result-track:9417ba66457d0ffc840298b0f5f31676e77a37371bde3c5ad940416decbee04a` |
+| 11 | `theorem` | [boundaryIntegral_principalSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RectangularCauchyKernel.lean/declarations/boundaryintegral-principalsum.md) | 183 | `result-track:27b97ca839f0fecab255e5f048a2778bc6c8d231e02091461fdda8252154283b` |
+| 12 | `theorem` | [boundaryIntegral_eq_coefficient_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RectangularCauchyKernel.lean/declarations/boundaryintegral-eq-coefficient-sum.md) | 212 | `result-track:9eb6271c3881bfb2de7d6ae4a176cab3e293143beea175031f919d2891ebb219` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

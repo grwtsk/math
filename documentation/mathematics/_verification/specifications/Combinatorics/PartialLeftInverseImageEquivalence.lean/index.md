@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/PartialLeftInverseImageEquivalence.lean/index.md) · [Full source](../../../../Combinatorics/PartialLeftInverseImageEquivalence.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PartialLeftInverseImageEquivalence.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PartialLeftInverseImageEquivalence.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [LeftInverseCodec](../../../../Combinatorics/PartialLeftInverseImageEquivalence.lean/declarations/leftinversecodec.md) | 39 | `declaration-track:e2c322e336e97e92e6e5714db5d5719fc3e5426af206d0a0f8c84c4dae9697da` |
-| 2 | `theorem` | [encode_injective](../../../../Combinatorics/PartialLeftInverseImageEquivalence.lean/declarations/encode-injective.md) | 49 | `result-track:6f1de609eb51ff79aa560c0328a485c122209a53aa4a601dbd1bf1ef809c6f1a` |
-| 3 | `def` | [ValidOutput](../../../../Combinatorics/PartialLeftInverseImageEquivalence.lean/declarations/validoutput.md) | 57 | `declaration-track:fb104a3933e85dfb12cbe97b17568ea17eabe3d499958164f064541217c8e2d7` |
-| 4 | `def` | [ValidOutputType](../../../../Combinatorics/PartialLeftInverseImageEquivalence.lean/declarations/validoutputtype.md) | 64 | `declaration-track:181b2cfdd68b152a89c03f313790dc3e35a1de3d3fceb2d456c232c9c474b9dd` |
-| 5 | `theorem` | [encode_decode_of_valid](../../../../Combinatorics/PartialLeftInverseImageEquivalence.lean/declarations/encode-decode-of-valid.md) | 69 | `result-track:484e950c3a65278b34cff5856a953861130352fa23577b960b2749c8c2ddc2e3` |
-| 6 | `def` | [sourceEquivValidOutput](../../../../Combinatorics/PartialLeftInverseImageEquivalence.lean/declarations/sourceequivvalidoutput.md) | 78 | `declaration-track:eb257744ad87c39088e30e7fe711b961b83b738da477123745c04ee5bcb5f865` |
+| 1 | `structure` | [LeftInverseCodec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PartialLeftInverseImageEquivalence.lean/declarations/leftinversecodec.md) | 39 | `declaration-track:e2c322e336e97e92e6e5714db5d5719fc3e5426af206d0a0f8c84c4dae9697da` |
+| 2 | `theorem` | [encode_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PartialLeftInverseImageEquivalence.lean/declarations/encode-injective.md) | 49 | `result-track:6f1de609eb51ff79aa560c0328a485c122209a53aa4a601dbd1bf1ef809c6f1a` |
+| 3 | `def` | [ValidOutput](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PartialLeftInverseImageEquivalence.lean/declarations/validoutput.md) | 57 | `declaration-track:fb104a3933e85dfb12cbe97b17568ea17eabe3d499958164f064541217c8e2d7` |
+| 4 | `def` | [ValidOutputType](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PartialLeftInverseImageEquivalence.lean/declarations/validoutputtype.md) | 64 | `declaration-track:181b2cfdd68b152a89c03f313790dc3e35a1de3d3fceb2d456c232c9c474b9dd` |
+| 5 | `theorem` | [encode_decode_of_valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PartialLeftInverseImageEquivalence.lean/declarations/encode-decode-of-valid.md) | 69 | `result-track:484e950c3a65278b34cff5856a953861130352fa23577b960b2749c8c2ddc2e3` |
+| 6 | `def` | [sourceEquivValidOutput](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PartialLeftInverseImageEquivalence.lean/declarations/sourceequivvalidoutput.md) | 78 | `declaration-track:eb257744ad87c39088e30e7fe711b961b83b738da477123745c04ee5bcb5f865` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/FinitenessCardinality.lean/index.md) · [Full source](../../../../CommutativeAlgebra/FinitenessCardinality.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessCardinality.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessCardinality.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,12 +60,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [exists_fin'](../../../../CommutativeAlgebra/FinitenessCardinality.lean/declarations/exists-fin.md) | 35 | `result-track:571e568ef9898a70f2708b566afb33a4e1f231462f31fe18c8921c2ed7c1d269` |
-| 2 | `lemma` | [_root_.Module.finite_of_finite](../../../../CommutativeAlgebra/FinitenessCardinality.lean/declarations/root-module-finite-of-finite.md) | 42 | `result-track:76298bdfca2fc625f57298d3ab59d58deea121e4c99027705cc77f58e8ff8a36` |
-| 3 | `lemma` | [_root_.Module.finite_iff_finite](../../../../CommutativeAlgebra/FinitenessCardinality.lean/declarations/root-module-finite-iff-finite.md) | 52 | `result-track:1d2e3aeafc453166a65a9fb1921b05aa8f15dad64c94eb3e25ccbb73aca51540` |
-| 4 | `lemma` | [_root_.Set.Finite.submoduleSpan](../../../../CommutativeAlgebra/FinitenessCardinality.lean/declarations/root-set-finite-submodulespan.md) | 56 | `result-track:22ed06f0a7ba323ddaeb954baf814d4a479316b450b45ce47750d41d5760f14a` |
-| 5 | `lemma` | [finite_basis](../../../../CommutativeAlgebra/FinitenessCardinality.lean/declarations/finite-basis.md) | 64 | `result-track:6b101d54d0c7008f075f92e9a81a5bbf2eeeb36555cfc10471006af2e2c49a8e` |
-| 6 | `lemma` | [not_finite_of_infinite_basis](../../../../CommutativeAlgebra/FinitenessCardinality.lean/declarations/not-finite-of-infinite-basis.md) | 73 | `result-track:c570f7dddb664130ad26d0048535d6594839e902bc2af749e1ba569f9712c2dd` |
+| 1 | `lemma` | [exists_fin'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessCardinality.lean/declarations/exists-fin.md) | 35 | `result-track:571e568ef9898a70f2708b566afb33a4e1f231462f31fe18c8921c2ed7c1d269` |
+| 2 | `lemma` | [_root_.Module.finite_of_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessCardinality.lean/declarations/root-module-finite-of-finite.md) | 42 | `result-track:76298bdfca2fc625f57298d3ab59d58deea121e4c99027705cc77f58e8ff8a36` |
+| 3 | `lemma` | [_root_.Module.finite_iff_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessCardinality.lean/declarations/root-module-finite-iff-finite.md) | 52 | `result-track:1d2e3aeafc453166a65a9fb1921b05aa8f15dad64c94eb3e25ccbb73aca51540` |
+| 4 | `lemma` | [_root_.Set.Finite.submoduleSpan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessCardinality.lean/declarations/root-set-finite-submodulespan.md) | 56 | `result-track:22ed06f0a7ba323ddaeb954baf814d4a479316b450b45ce47750d41d5760f14a` |
+| 5 | `lemma` | [finite_basis](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessCardinality.lean/declarations/finite-basis.md) | 64 | `result-track:6b101d54d0c7008f075f92e9a81a5bbf2eeeb36555cfc10471006af2e2c49a8e` |
+| 6 | `lemma` | [not_finite_of_infinite_basis](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessCardinality.lean/declarations/not-finite-of-infinite-basis.md) | 73 | `result-track:c570f7dddb664130ad26d0048535d6594839e902bc2af749e1ba569f9712c2dd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

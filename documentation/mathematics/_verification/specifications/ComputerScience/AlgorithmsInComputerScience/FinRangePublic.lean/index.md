@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/FinRangePublic.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/FinRangePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FinRangePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FinRangePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,13 +60,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [finRange](../../../../../ComputerScience/AlgorithmsInComputerScience/FinRangePublic.lean/declarations/finrange.md) | 29 | `declaration-track:bf91b47c25f642c266b3b04b1efc225c7fbf914dce0b526f91bae9076f8d3d07` |
-| 2 | `theorem` | [size_finRange](../../../../../ComputerScience/AlgorithmsInComputerScience/FinRangePublic.lean/declarations/size-finrange.md) | 31 | `result-track:f83d8cb73d3fc97974833a912e23d96db1bb802151906f9d46ec700c773e9f61` |
-| 3 | `theorem` | [getElem_finRange](../../../../../ComputerScience/AlgorithmsInComputerScience/FinRangePublic.lean/declarations/getelem-finrange.md) | 34 | `result-track:b1e0d7599a391f210d7a3ae1fdaa575c5ffd2f9a5ef2f90d6e3f90a411567923` |
-| 4 | `theorem` | [finRange_zero](../../../../../ComputerScience/AlgorithmsInComputerScience/FinRangePublic.lean/declarations/finrange-zero.md) | 38 | `result-track:a298303b988b3fed9c662b613f6837e4f8aa95bc758cfb9cbbf2da42e5cbc1ab` |
-| 5 | `theorem` | [finRange_succ](../../../../../ComputerScience/AlgorithmsInComputerScience/FinRangePublic.lean/declarations/finrange-succ.md) | 40 | `result-track:35bae869b83d1926116db00a076fd1e358b5ce86f88ec6adf06e00a2de0e27a0` |
-| 6 | `theorem` | [finRange_succ_last](../../../../../ComputerScience/AlgorithmsInComputerScience/FinRangePublic.lean/declarations/finrange-succ-last.md) | 47 | `result-track:7612940f1239ef5d27800026bcb009817ddd2e4970196711465fc609214ee41f` |
-| 7 | `theorem` | [finRange_reverse](../../../../../ComputerScience/AlgorithmsInComputerScience/FinRangePublic.lean/declarations/finrange-reverse.md) | 58 | `result-track:890ac47d54ac9069162f1de733baef0a182522398b8cacf4418f090d182e688d` |
+| 1 | `def` | [finRange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FinRangePublic.lean/declarations/finrange.md) | 29 | `declaration-track:bf91b47c25f642c266b3b04b1efc225c7fbf914dce0b526f91bae9076f8d3d07` |
+| 2 | `theorem` | [size_finRange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FinRangePublic.lean/declarations/size-finrange.md) | 31 | `result-track:f83d8cb73d3fc97974833a912e23d96db1bb802151906f9d46ec700c773e9f61` |
+| 3 | `theorem` | [getElem_finRange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FinRangePublic.lean/declarations/getelem-finrange.md) | 34 | `result-track:b1e0d7599a391f210d7a3ae1fdaa575c5ffd2f9a5ef2f90d6e3f90a411567923` |
+| 4 | `theorem` | [finRange_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FinRangePublic.lean/declarations/finrange-zero.md) | 38 | `result-track:a298303b988b3fed9c662b613f6837e4f8aa95bc758cfb9cbbf2da42e5cbc1ab` |
+| 5 | `theorem` | [finRange_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FinRangePublic.lean/declarations/finrange-succ.md) | 40 | `result-track:35bae869b83d1926116db00a076fd1e358b5ce86f88ec6adf06e00a2de0e27a0` |
+| 6 | `theorem` | [finRange_succ_last](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FinRangePublic.lean/declarations/finrange-succ-last.md) | 47 | `result-track:7612940f1239ef5d27800026bcb009817ddd2e4970196711465fc609214ee41f` |
+| 7 | `theorem` | [finRange_reverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FinRangePublic.lean/declarations/finrange-reverse.md) | 58 | `result-track:890ac47d54ac9069162f1de733baef0a182522398b8cacf4418f090d182e688d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

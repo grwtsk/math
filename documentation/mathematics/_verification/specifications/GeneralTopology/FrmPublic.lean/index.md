@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/FrmPublic.lean/index.md) · [Full source](../../../../GeneralTopology/FrmPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FrmPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FrmPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [topCatOpToFrm](../../../../GeneralTopology/FrmPublic.lean/declarations/topcatoptofrm.md) | 22 | `declaration-track:06880101a9820d51f04b8ebf94a326965f0dad6c442f504c89b1ab4f79ca07c3` |
-| 2 | `instance` | [CompHausOpToFrame.faithful](../../../../GeneralTopology/FrmPublic.lean/declarations/comphausoptoframe-faithful.md) | 27 | `declaration-track:ae6b46026ac42dc10ea760272bc16c4b9fe9a2df0e0c0ebe22613e6a6ff9cb92` |
+| 1 | `def` | [topCatOpToFrm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FrmPublic.lean/declarations/topcatoptofrm.md) | 22 | `declaration-track:06880101a9820d51f04b8ebf94a326965f0dad6c442f504c89b1ab4f79ca07c3` |
+| 2 | `instance` | [CompHausOpToFrame.faithful](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FrmPublic.lean/declarations/comphausoptoframe-faithful.md) | 27 | `declaration-track:ae6b46026ac42dc10ea760272bc16c4b9fe9a2df0e0c0ebe22613e6a6ff9cb92` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

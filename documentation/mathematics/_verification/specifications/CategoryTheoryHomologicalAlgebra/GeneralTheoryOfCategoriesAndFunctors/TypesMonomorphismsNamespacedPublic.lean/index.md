@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TypesMonomorphismsNamespacedPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TypesMonomorphismsNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TypesMonomorphismsNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TypesMonomorphismsNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TypesMonomorphismsNamespacedPublic.lean/declarations/instance-source-edition-4.md) | 44 | `declaration-track:fb492fc5ff63d6253aa4e05da04b47ada5e378010c7acd8579aaf02ba1e7dc79` |
-| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TypesMonomorphismsNamespacedPublic.lean/declarations/instance.md) | 50 | `declaration-track:44ccd396915e3b022ae4ec223dec3e8ac72fef29db45ca8e7c32a774eadf4369` |
-| 3 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TypesMonomorphismsNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 68 | `declaration-track:7b50ebdd2418d4c932d2d1fcc2877df80d650ed834962c8f5985521a2d17528d` |
-| 4 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TypesMonomorphismsNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 88 | `declaration-track:85fd8f5d01b2695b32da98d69b86f40890a09e7d4b0830723b5a1506373872b0` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TypesMonomorphismsNamespacedPublic.lean/declarations/instance-source-edition-4.md) | 44 | `declaration-track:fb492fc5ff63d6253aa4e05da04b47ada5e378010c7acd8579aaf02ba1e7dc79` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TypesMonomorphismsNamespacedPublic.lean/declarations/instance.md) | 50 | `declaration-track:44ccd396915e3b022ae4ec223dec3e8ac72fef29db45ca8e7c32a774eadf4369` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TypesMonomorphismsNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 68 | `declaration-track:7b50ebdd2418d4c932d2d1fcc2877df80d650ed834962c8f5985521a2d17528d` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TypesMonomorphismsNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 88 | `declaration-track:85fd8f5d01b2695b32da98d69b86f40890a09e7d4b0830723b5a1506373872b0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

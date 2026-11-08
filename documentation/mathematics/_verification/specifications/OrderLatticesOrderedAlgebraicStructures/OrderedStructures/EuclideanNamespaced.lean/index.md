@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/EuclideanNamespaced.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/EuclideanNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/EuclideanNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/EuclideanNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [IsEuclidean](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/EuclideanNamespaced.lean/declarations/iseuclidean.md) | 44 | `declaration-track:223b146456d754e0c6c909f4d289279f142f5941071425e1adeaef0cd75e32b1` |
-| 2 | `theorem` | [map_lt_map_iff](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/EuclideanNamespaced.lean/declarations/map-lt-map-iff.md) | 54 | `result-track:ba15b5e3608f332e12ef42f2fa162a3f401360c375b3d13be4a488d80d6fc75c` |
-| 3 | `theorem` | [sub_mod_lt](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/EuclideanNamespaced.lean/declarations/sub-mod-lt.md) | 59 | `result-track:f126502448e7662a94d6068a9763b25abaf2ddf0ab307ec48059118fa7e8658f` |
-| 4 | `theorem` | [abs_isEuclidean](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/EuclideanNamespaced.lean/declarations/abs-iseuclidean.md) | 72 | `result-track:42da950339a10df75388e7c10d926c79d4c17d62687b9135878b5e477dc8d415` |
+| 1 | `structure` | [IsEuclidean](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/EuclideanNamespaced.lean/declarations/iseuclidean.md) | 44 | `declaration-track:223b146456d754e0c6c909f4d289279f142f5941071425e1adeaef0cd75e32b1` |
+| 2 | `theorem` | [map_lt_map_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/EuclideanNamespaced.lean/declarations/map-lt-map-iff.md) | 54 | `result-track:ba15b5e3608f332e12ef42f2fa162a3f401360c375b3d13be4a488d80d6fc75c` |
+| 3 | `theorem` | [sub_mod_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/EuclideanNamespaced.lean/declarations/sub-mod-lt.md) | 59 | `result-track:f126502448e7662a94d6068a9763b25abaf2ddf0ab307ec48059118fa7e8658f` |
+| 4 | `theorem` | [abs_isEuclidean](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/EuclideanNamespaced.lean/declarations/abs-iseuclidean.md) | 72 | `result-track:42da950339a10df75388e7c10d926c79d4c17d62687b9135878b5e477dc8d415` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

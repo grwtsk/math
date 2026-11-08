@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AddressSignalType.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AddressSignalType.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AddressSignalType.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AddressSignalType.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -48,7 +48,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 - `Folder.Carrier.BinaryMatrix` — import line 19; external provider; requires a separately pinned dependency.
 - `Folder.Cellular.Cube` — import line 20; external provider; requires a separately pinned dependency.
-- [Power Two Shape Witness](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PowerTwoShapeWitness.lean/index.md) — import line 22; pinned internal source present.
+- [Power Two Shape Witness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PowerTwoShapeWitness.lean/index.md) — import line 22; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [BinaryCubeSignal](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AddressSignalType.lean/declarations/binarycubesignal.md) | 41 | `declaration-track:2edb4cd74e67d58837ec5c4bd445a010016015544d6c9ef623c77112c099c21e` |
+| 1 | `abbrev` | [BinaryCubeSignal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AddressSignalType.lean/declarations/binarycubesignal.md) | 41 | `declaration-track:2edb4cd74e67d58837ec5c4bd445a010016015544d6c9ef623c77112c099c21e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

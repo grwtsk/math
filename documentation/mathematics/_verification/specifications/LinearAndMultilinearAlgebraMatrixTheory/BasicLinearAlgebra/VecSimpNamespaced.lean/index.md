@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/VecSimpNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/VecSimpNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/VecSimpNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/VecSimpNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `macro` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/VecSimpNamespaced.lean/declarations/macro.md) | 35 | `declaration-track:213d25efa6b03c458eba66b354d59b80c92b94bdcd45e96e9ab4acdcbef24f7e` |
-| 2 | `macro` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/VecSimpNamespaced.lean/declarations/macro-source-edition-3.md) | 40 | `declaration-track:50e1d5bc0ac34428616d121809319c35c031b0d722684f703cdd977fa14664ec` |
-| 3 | `macro` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/VecSimpNamespaced.lean/declarations/macro-source-edition-2.md) | 44 | `declaration-track:4c9c2de044353d180d4ba11d3945cb56f23a45536afd5c39eeeb64882bc72cfc` |
+| 1 | `macro` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/VecSimpNamespaced.lean/declarations/macro.md) | 35 | `declaration-track:213d25efa6b03c458eba66b354d59b80c92b94bdcd45e96e9ab4acdcbef24f7e` |
+| 2 | `macro` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/VecSimpNamespaced.lean/declarations/macro-source-edition-3.md) | 40 | `declaration-track:50e1d5bc0ac34428616d121809319c35c031b0d722684f703cdd977fa14664ec` |
+| 3 | `macro` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/VecSimpNamespaced.lean/declarations/macro-source-edition-2.md) | 44 | `declaration-track:4c9c2de044353d180d4ba11d3945cb56f23a45536afd5c39eeeb64882bc72cfc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

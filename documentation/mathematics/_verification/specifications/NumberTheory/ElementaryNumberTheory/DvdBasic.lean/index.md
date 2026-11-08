@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/DvdBasic.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/DvdBasic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/DvdBasic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/DvdBasic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [coe_nat_dvd](../../../../../NumberTheory/ElementaryNumberTheory/DvdBasic.lean/declarations/coe-nat-dvd.md) | 21 | `result-track:a2893d94548872dd5a48a9387afd783b2cd4ebe6817b1e8b1df3a15392fec88f` |
-| 2 | `theorem` | [coe_nat_dvd_left](../../../../../NumberTheory/ElementaryNumberTheory/DvdBasic.lean/declarations/coe-nat-dvd-left.md) | 33 | `result-track:ab9e8a0dfe7908522fd98e7736c9caade20ef1dd9ca198d7e23be05d20f9e547` |
-| 3 | `theorem` | [coe_nat_dvd_right](../../../../../NumberTheory/ElementaryNumberTheory/DvdBasic.lean/declarations/coe-nat-dvd-right.md) | 37 | `result-track:1fa3e4e4cb606abfac743940637a58f3bfa5389e908f270ef8ec546e71bb0e6f` |
+| 1 | `theorem` | [coe_nat_dvd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/DvdBasic.lean/declarations/coe-nat-dvd.md) | 21 | `result-track:a2893d94548872dd5a48a9387afd783b2cd4ebe6817b1e8b1df3a15392fec88f` |
+| 2 | `theorem` | [coe_nat_dvd_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/DvdBasic.lean/declarations/coe-nat-dvd-left.md) | 33 | `result-track:ab9e8a0dfe7908522fd98e7736c9caade20ef1dd9ca198d7e23be05d20f9e547` |
+| 3 | `theorem` | [coe_nat_dvd_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/DvdBasic.lean/declarations/coe-nat-dvd-right.md) | 37 | `result-track:1fa3e4e4cb606abfac743940637a58f3bfa5389e908f270ef8ec546e71bb0e6f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

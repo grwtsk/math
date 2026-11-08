@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/DyadicNormBudgetHistoricalSourceEdition2.lean/index.md) · [Full source](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/DyadicNormBudgetHistoricalSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/DyadicNormBudgetHistoricalSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/DyadicNormBudgetHistoricalSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `Mathlib` — import line 1; external provider; requires a separately pinned dependency.
-- [`GRWTSK.Analysis.AsymptoticAnalysis.MassWeightedRecurrence`](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/MassWeightedRecurrenceHistoricalSourceEdition2.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.Analysis.AsymptoticAnalysis.MassWeightedRecurrence`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/MassWeightedRecurrenceHistoricalSourceEdition2.lean/index.md) — import line 2; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [mass_eq_sum](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/DyadicNormBudgetHistoricalSourceEdition2.lean/declarations/mass-eq-sum.md) | 15 | `result-track:a8e0a627b4636942a01f13a0dfffd90daa7e4a3a3344339b321fcabe245af6e3` |
-| 2 | `theorem` | [finite_iteration](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/DyadicNormBudgetHistoricalSourceEdition2.lean/declarations/finite-iteration.md) | 22 | `result-track:207a0effc5a6574c9350ddc075cdc973a5db7d348076c886fc9f3adde23a9d07` |
-| 3 | `theorem` | [normalized_log_le](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/DyadicNormBudgetHistoricalSourceEdition2.lean/declarations/normalized-log-le.md) | 31 | `result-track:bb2ce6c2a32d887ff6c9af76647118674ee77aafc2d70d6a34dff0b51036afa0` |
-| 4 | `theorem` | [dyadic_log_tendsto_zero](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/DyadicNormBudgetHistoricalSourceEdition2.lean/declarations/dyadic-log-tendsto-zero.md) | 41 | `result-track:0707a76a6a0ea8ea28a5595c1802651b022c590fa612dead30a3e67e920b5165` |
+| 1 | `lemma` | [mass_eq_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/DyadicNormBudgetHistoricalSourceEdition2.lean/declarations/mass-eq-sum.md) | 15 | `result-track:a8e0a627b4636942a01f13a0dfffd90daa7e4a3a3344339b321fcabe245af6e3` |
+| 2 | `theorem` | [finite_iteration](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/DyadicNormBudgetHistoricalSourceEdition2.lean/declarations/finite-iteration.md) | 22 | `result-track:207a0effc5a6574c9350ddc075cdc973a5db7d348076c886fc9f3adde23a9d07` |
+| 3 | `theorem` | [normalized_log_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/DyadicNormBudgetHistoricalSourceEdition2.lean/declarations/normalized-log-le.md) | 31 | `result-track:bb2ce6c2a32d887ff6c9af76647118674ee77aafc2d70d6a34dff0b51036afa0` |
+| 4 | `theorem` | [dyadic_log_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/DyadicNormBudgetHistoricalSourceEdition2.lean/declarations/dyadic-log-tendsto-zero.md) | 41 | `result-track:0707a76a6a0ea8ea28a5595c1802651b022c590fa612dead30a3e67e920b5165` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

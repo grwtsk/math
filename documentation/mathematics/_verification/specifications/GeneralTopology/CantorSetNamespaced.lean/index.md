@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/CantorSetNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/CantorSetNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CantorSetNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CantorSetNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,19 +58,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [preCantorSet](../../../../GeneralTopology/CantorSetNamespaced.lean/declarations/precantorset.md) | 36 | `declaration-track:3e6f22d8cb1a8ea775e078b3d50329c533828225bc779d0860796a7ec5f57725` |
-| 2 | `lemma` | [preCantorSet_zero](../../../../GeneralTopology/CantorSetNamespaced.lean/declarations/precantorset-zero.md) | 40 | `result-track:214383361f1e8bdd07c291e01650baa98fcbdc0fa0ff7f9d74559f2af4a165d2` |
-| 3 | `lemma` | [preCantorSet_succ](../../../../GeneralTopology/CantorSetNamespaced.lean/declarations/precantorset-succ.md) | 41 | `result-track:59e451e65cd576c54c5044b8cec6025962b9c9e0a63bc7d3fc7e116d6831fadd` |
-| 4 | `def` | [cantorSet](../../../../GeneralTopology/CantorSetNamespaced.lean/declarations/cantorset.md) | 49 | `declaration-track:39becb8c0642f23472352cc19f325bed5fcc774163668e8530d7e3002d82e34e` |
-| 5 | `lemma` | [quarters_mem_preCantorSet](../../../../GeneralTopology/CantorSetNamespaced.lean/declarations/quarters-mem-precantorset.md) | 56 | `result-track:e97a360d31c7b9dfec868a6d686da4a8a5ad330cacaa12ed818d51b9ea7ee42b` |
-| 6 | `lemma` | [quarter_mem_preCantorSet](../../../../GeneralTopology/CantorSetNamespaced.lean/declarations/quarter-mem-precantorset.md) | 70 | `result-track:27d4f0b6ea275c45efd1b507e9d6af7950f4bb58092c9d9c859577b7cea7cb92` |
-| 7 | `theorem` | [quarter_mem_cantorSet](../../../../GeneralTopology/CantorSetNamespaced.lean/declarations/quarter-mem-cantorset.md) | 72 | `result-track:a82c0e049e1480c666202dcb1217d5b9be86f38f82aad91a9e1c2ae2a1fc4f2a` |
-| 8 | `lemma` | [zero_mem_preCantorSet](../../../../GeneralTopology/CantorSetNamespaced.lean/declarations/zero-mem-precantorset.md) | 75 | `result-track:8b6f0ad441e2052c85da1295293592641ece6e3ebc40179bd4fa65b779aba08b` |
-| 9 | `theorem` | [zero_mem_cantorSet](../../../../GeneralTopology/CantorSetNamespaced.lean/declarations/zero-mem-cantorset.md) | 82 | `result-track:c584465cd24d0b8c3d7f74e8f0fb68e8eb65ea360a4b6871e6d6b98bcba9d985` |
-| 10 | `lemma` | [cantorSet_subset_unitInterval](../../../../GeneralTopology/CantorSetNamespaced.lean/declarations/cantorset-subset-unitinterval.md) | 85 | `result-track:2520e417655a3ee255a8349b6f3ddef769be7e83352fb58209dde8d9a9578087` |
-| 11 | `lemma` | [isClosed_preCantorSet](../../../../GeneralTopology/CantorSetNamespaced.lean/declarations/isclosed-precantorset.md) | 89 | `result-track:53c7b42eeeb8838abc173f0416c9badd87544bfe02fab8807ef4a5c1b7ddc67a` |
-| 12 | `lemma` | [isClosed_cantorSet](../../../../GeneralTopology/CantorSetNamespaced.lean/declarations/isclosed-cantorset.md) | 100 | `result-track:a5115be19c6db542dc11c1cd234829d7f0d26107936b6026519d6c1ec4e61300` |
-| 13 | `lemma` | [isCompact_cantorSet](../../../../GeneralTopology/CantorSetNamespaced.lean/declarations/iscompact-cantorset.md) | 104 | `result-track:245d95ad3269ccdd8707ed6cd3640c45a2c37abf47b7f06cd57afcf249580df4` |
+| 1 | `def` | [preCantorSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CantorSetNamespaced.lean/declarations/precantorset.md) | 36 | `declaration-track:3e6f22d8cb1a8ea775e078b3d50329c533828225bc779d0860796a7ec5f57725` |
+| 2 | `lemma` | [preCantorSet_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CantorSetNamespaced.lean/declarations/precantorset-zero.md) | 40 | `result-track:214383361f1e8bdd07c291e01650baa98fcbdc0fa0ff7f9d74559f2af4a165d2` |
+| 3 | `lemma` | [preCantorSet_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CantorSetNamespaced.lean/declarations/precantorset-succ.md) | 41 | `result-track:59e451e65cd576c54c5044b8cec6025962b9c9e0a63bc7d3fc7e116d6831fadd` |
+| 4 | `def` | [cantorSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CantorSetNamespaced.lean/declarations/cantorset.md) | 49 | `declaration-track:39becb8c0642f23472352cc19f325bed5fcc774163668e8530d7e3002d82e34e` |
+| 5 | `lemma` | [quarters_mem_preCantorSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CantorSetNamespaced.lean/declarations/quarters-mem-precantorset.md) | 56 | `result-track:e97a360d31c7b9dfec868a6d686da4a8a5ad330cacaa12ed818d51b9ea7ee42b` |
+| 6 | `lemma` | [quarter_mem_preCantorSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CantorSetNamespaced.lean/declarations/quarter-mem-precantorset.md) | 70 | `result-track:27d4f0b6ea275c45efd1b507e9d6af7950f4bb58092c9d9c859577b7cea7cb92` |
+| 7 | `theorem` | [quarter_mem_cantorSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CantorSetNamespaced.lean/declarations/quarter-mem-cantorset.md) | 72 | `result-track:a82c0e049e1480c666202dcb1217d5b9be86f38f82aad91a9e1c2ae2a1fc4f2a` |
+| 8 | `lemma` | [zero_mem_preCantorSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CantorSetNamespaced.lean/declarations/zero-mem-precantorset.md) | 75 | `result-track:8b6f0ad441e2052c85da1295293592641ece6e3ebc40179bd4fa65b779aba08b` |
+| 9 | `theorem` | [zero_mem_cantorSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CantorSetNamespaced.lean/declarations/zero-mem-cantorset.md) | 82 | `result-track:c584465cd24d0b8c3d7f74e8f0fb68e8eb65ea360a4b6871e6d6b98bcba9d985` |
+| 10 | `lemma` | [cantorSet_subset_unitInterval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CantorSetNamespaced.lean/declarations/cantorset-subset-unitinterval.md) | 85 | `result-track:2520e417655a3ee255a8349b6f3ddef769be7e83352fb58209dde8d9a9578087` |
+| 11 | `lemma` | [isClosed_preCantorSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CantorSetNamespaced.lean/declarations/isclosed-precantorset.md) | 89 | `result-track:53c7b42eeeb8838abc173f0416c9badd87544bfe02fab8807ef4a5c1b7ddc67a` |
+| 12 | `lemma` | [isClosed_cantorSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CantorSetNamespaced.lean/declarations/isclosed-cantorset.md) | 100 | `result-track:a5115be19c6db542dc11c1cd234829d7f0d26107936b6026519d6c1ec4e61300` |
+| 13 | `lemma` | [isCompact_cantorSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CantorSetNamespaced.lean/declarations/iscompact-cantorset.md) | 104 | `result-track:245d95ad3269ccdd8707ed6cd3640c45a2c37abf47b7f06cd57afcf249580df4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PipelineGlobalSection.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PipelineGlobalSection.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PipelineGlobalSection.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PipelineGlobalSection.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [surfaceId](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PipelineGlobalSection.lean/declarations/surfaceid.md) | 8 | `declaration-track:97fd2e6cc76f2317369094e88d7c477f266fb408d88d584080131790a88643f3` |
-| 2 | `def` | [ownsDeclaredSurface](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PipelineGlobalSection.lean/declarations/ownsdeclaredsurface.md) | 9 | `declaration-track:0e31e631b25291f0f1795230b8d9a64f15378e14fa384ff2a62e3e9bf98c6de7` |
-| 3 | `def` | [crossLeafReasoningRequiresGlue](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PipelineGlobalSection.lean/declarations/crossleafreasoningrequiresglue.md) | 10 | `declaration-track:f2723498860c8941e28228c8ee6497839b78ee8f85b0075c9d0930a5dca738b4` |
-| 4 | `theorem` | [surface_id_declared](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PipelineGlobalSection.lean/declarations/surface-id-declared.md) | 12 | `result-track:aad20b926336d58d964826e6c43e0beabdb9e5d056f0d18347c46bf3f39166f2` |
-| 5 | `theorem` | [owns_declared_surface](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PipelineGlobalSection.lean/declarations/owns-declared-surface.md) | 16 | `result-track:c612015cfeee92e17e462f8bfdc58f5dfe12aa90e85a4a16d688980f92ae3620` |
+| 1 | `def` | [surfaceId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PipelineGlobalSection.lean/declarations/surfaceid.md) | 8 | `declaration-track:97fd2e6cc76f2317369094e88d7c477f266fb408d88d584080131790a88643f3` |
+| 2 | `def` | [ownsDeclaredSurface](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PipelineGlobalSection.lean/declarations/ownsdeclaredsurface.md) | 9 | `declaration-track:0e31e631b25291f0f1795230b8d9a64f15378e14fa384ff2a62e3e9bf98c6de7` |
+| 3 | `def` | [crossLeafReasoningRequiresGlue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PipelineGlobalSection.lean/declarations/crossleafreasoningrequiresglue.md) | 10 | `declaration-track:f2723498860c8941e28228c8ee6497839b78ee8f85b0075c9d0930a5dca738b4` |
+| 4 | `theorem` | [surface_id_declared](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PipelineGlobalSection.lean/declarations/surface-id-declared.md) | 12 | `result-track:aad20b926336d58d964826e6c43e0beabdb9e5d056f0d18347c46bf3f39166f2` |
+| 5 | `theorem` | [owns_declared_surface](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PipelineGlobalSection.lean/declarations/owns-declared-surface.md) | 16 | `result-track:c612015cfeee92e17e462f8bfdc58f5dfe12aa90e85a4a16d688980f92ae3620` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

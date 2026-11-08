@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/FiniteDigitAndProfileEquations.lean/index.md) · [Full source](../../../../Combinatorics/FiniteDigitAndProfileEquations.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteDigitAndProfileEquations.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteDigitAndProfileEquations.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,13 +62,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../Combinatorics/FiniteDigitAndProfileEquations.lean/declarations/example-source-edition-3.md) | 30 | `declaration-track:87b2852e37c3b4e277ce46c2ead9916553a122e00e270cae9c079e69e4fa785a` |
-| 2 | `example` | [(anonymous)](../../../../Combinatorics/FiniteDigitAndProfileEquations.lean/declarations/example-source-edition-7.md) | 34 | `declaration-track:f771ab928d47c756686d515fdad5b76df1f4ef8aabbadc899652339908a72b7c` |
-| 3 | `example` | [(anonymous)](../../../../Combinatorics/FiniteDigitAndProfileEquations.lean/declarations/example-source-edition-5.md) | 38 | `declaration-track:bd5ebee918e182952e53ac98346889cd99fa662f0e30c800684ae572b2bdc9c6` |
-| 4 | `example` | [(anonymous)](../../../../Combinatorics/FiniteDigitAndProfileEquations.lean/declarations/example-source-edition-6.md) | 44 | `declaration-track:cceace1c2136e33b8828effe64eb07554a9ad64288830fc0d14d3c3ef3499f44` |
-| 5 | `example` | [(anonymous)](../../../../Combinatorics/FiniteDigitAndProfileEquations.lean/declarations/example-source-edition-2.md) | 49 | `declaration-track:353ad22448d2d51064d001cd2cc73ea8cc3396edf3a6e82d8dc53895c6ccdfce` |
-| 6 | `example` | [(anonymous)](../../../../Combinatorics/FiniteDigitAndProfileEquations.lean/declarations/example.md) | 55 | `declaration-track:03044a3fbc28324d9db70e98c75a86b90ba9118bcb22cf4f1954e9dd6ab848c5` |
-| 7 | `example` | [(anonymous)](../../../../Combinatorics/FiniteDigitAndProfileEquations.lean/declarations/example-source-edition-4.md) | 59 | `declaration-track:9bc8aecf9b80093413e912d2ac12a81aa2b7b9c68cdd28f65b54dd6a9add3699` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteDigitAndProfileEquations.lean/declarations/example-source-edition-3.md) | 30 | `declaration-track:87b2852e37c3b4e277ce46c2ead9916553a122e00e270cae9c079e69e4fa785a` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteDigitAndProfileEquations.lean/declarations/example-source-edition-7.md) | 34 | `declaration-track:f771ab928d47c756686d515fdad5b76df1f4ef8aabbadc899652339908a72b7c` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteDigitAndProfileEquations.lean/declarations/example-source-edition-5.md) | 38 | `declaration-track:bd5ebee918e182952e53ac98346889cd99fa662f0e30c800684ae572b2bdc9c6` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteDigitAndProfileEquations.lean/declarations/example-source-edition-6.md) | 44 | `declaration-track:cceace1c2136e33b8828effe64eb07554a9ad64288830fc0d14d3c3ef3499f44` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteDigitAndProfileEquations.lean/declarations/example-source-edition-2.md) | 49 | `declaration-track:353ad22448d2d51064d001cd2cc73ea8cc3396edf3a6e82d8dc53895c6ccdfce` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteDigitAndProfileEquations.lean/declarations/example.md) | 55 | `declaration-track:03044a3fbc28324d9db70e98c75a86b90ba9118bcb22cf4f1954e9dd6ab848c5` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteDigitAndProfileEquations.lean/declarations/example-source-edition-4.md) | 59 | `declaration-track:9bc8aecf9b80093413e912d2ac12a81aa2b7b9c68cdd28f65b54dd6a9add3699` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

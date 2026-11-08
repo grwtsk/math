@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/AE278156552be5f09Namespaced.lean/index.md) · [Full source](../../../../RealFunctions/AE278156552be5f09Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AE278156552be5f09Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AE278156552be5f09Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [isHermitian](../../../../RealFunctions/AE278156552be5f09Namespaced.lean/declarations/ishermitian.md) | 29 | `result-track:9f363bc0faadaddd48eae1f4b3dcf3dd34d341a1ad4322c5c9ae57f4c2dad674` |
+| 1 | `theorem` | [isHermitian](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AE278156552be5f09Namespaced.lean/declarations/ishermitian.md) | 29 | `result-track:9f363bc0faadaddd48eae1f4b3dcf3dd34d341a1ad4322c5c9ae57f4c2dad674` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

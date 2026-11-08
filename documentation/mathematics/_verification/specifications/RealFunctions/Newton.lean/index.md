@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/Newton.lean/index.md) · [Full source](../../../../RealFunctions/Newton.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Newton.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Newton.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,23 +61,23 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [newtonStepTM](../../../../RealFunctions/Newton.lean/declarations/newtonsteptm.md) | 54 | `declaration-track:8873589aad086d04537a9236817ce0e92c9227329131677ed8fd6d3888a2ebd5` |
-| 2 | `def` | [newtonStepSimple](../../../../RealFunctions/Newton.lean/declarations/newtonstepsimple.md) | 90 | `declaration-track:888ff79bdac85a76f0182ca8bf3f2d12cb75e3257f663c19e5a5c4b5c5e426be` |
-| 3 | `def` | [newtonStep](../../../../RealFunctions/Newton.lean/declarations/newtonstep.md) | 114 | `declaration-track:6b07fe373cfb9bc33aedcb226612c14e760f459fd5f40a98bf2c7b4448944460` |
-| 4 | `def` | [newtonIntervalGo](../../../../RealFunctions/Newton.lean/declarations/newtonintervalgo.md) | 122 | `declaration-track:1ef04234601a2e78ba1f204ab75544c73d9fbec2410d0e239a34bca86e360504` |
-| 5 | `def` | [newtonIntervalTM](../../../../RealFunctions/Newton.lean/declarations/newtonintervaltm.md) | 170 | `declaration-track:15dd1f41351689f5542f0466e7bee8778cd588995d8ce316714621d008919c2c` |
-| 6 | `def` | [newtonInterval](../../../../RealFunctions/Newton.lean/declarations/newtoninterval.md) | 176 | `declaration-track:4af43ab989eb54b60da714bf523afd9ab05d64ad1f40e6c68bf9cba7426682bd` |
-| 7 | `theorem` | [deriv_in_derivInterval](../../../../RealFunctions/Newton.lean/declarations/deriv-in-derivinterval.md) | 185 | `result-track:f98a4c3eaf057679c7789b9994fe14f8e3cf9f2859959edfd6ddc50df99107d5` |
-| 8 | `theorem` | [mvt_for_eval](../../../../RealFunctions/Newton.lean/declarations/mvt-for-eval.md) | 192 | `result-track:7b72c482b3b4b73d52737b262b0a4844c9dcfda18a857d03f036fb8924d72c3e` |
-| 9 | `theorem` | [between_mem_interval](../../../../RealFunctions/Newton.lean/declarations/between-mem-interval.md) | 238 | `result-track:7836d1593995f744068ea7eccdbc45d692c861129daa2f4581fc87cb53d42da2` |
-| 10 | `theorem` | [newton_operator_preserves_root](../../../../RealFunctions/Newton.lean/declarations/newton-operator-preserves-root.md) | 254 | `result-track:b8cdbd4a4cc70f86c483ac05011d1a11014a9734977a9cebf090138f09731668` |
-| 11 | `theorem` | [newton_preserves_root](../../../../RealFunctions/Newton.lean/declarations/newton-preserves-root.md) | 370 | `result-track:2e0c039ca986a31c3d2912e47a25706874584b89398bc4d00bea872a062c3b3a` |
-| 12 | `theorem` | [newton_step_at_most_one_root](../../../../RealFunctions/Newton.lean/declarations/newton-step-at-most-one-root.md) | 517 | `result-track:479f762cfa7fcb1636b17b1f87b91853dd6260eb625a62cd48ff66bbb0e9dd92` |
-| 13 | `structure` | [NewtonContractionData](../../../../RealFunctions/Newton.lean/declarations/newtoncontractiondata.md) | 604 | `declaration-track:ea2ab579b504fe985d7734c2c28095cf35381ab746eaa923f203fdc6264ab48b` |
-| 14 | `lemma` | [contraction_newton_bounds](../../../../RealFunctions/Newton.lean/declarations/contraction-newton-bounds.md) | 618 | `result-track:34d275841bcdef2c30e521521a993bd80384c89c1471242c9c94dd0699041f35` |
-| 15 | `lemma` | [newtonStepSimple_extract](../../../../RealFunctions/Newton.lean/declarations/newtonstepsimple-extract.md) | 646 | `result-track:54553a5f0e76a9a91602a5ae6c4f66c19187488635b00a609fbff8e53f45b61c` |
-| 16 | `lemma` | [newtonStepTM_structure](../../../../RealFunctions/Newton.lean/declarations/newtonsteptm-structure.md) | 683 | `result-track:6c0775120cea1354678c69b2f7000e50d39fd1dd04336fdeac85d6e461242ab9` |
-| 17 | `lemma` | [newtonStepTM_fc_correct](../../../../RealFunctions/Newton.lean/declarations/newtonsteptm-fc-correct.md) | 733 | `result-track:6b3eba3dcfab74a6840cfa916942484d5ce5da8c4e7102a5805a834b5edbf4fc` |
+| 1 | `def` | [newtonStepTM](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Newton.lean/declarations/newtonsteptm.md) | 54 | `declaration-track:8873589aad086d04537a9236817ce0e92c9227329131677ed8fd6d3888a2ebd5` |
+| 2 | `def` | [newtonStepSimple](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Newton.lean/declarations/newtonstepsimple.md) | 90 | `declaration-track:888ff79bdac85a76f0182ca8bf3f2d12cb75e3257f663c19e5a5c4b5c5e426be` |
+| 3 | `def` | [newtonStep](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Newton.lean/declarations/newtonstep.md) | 114 | `declaration-track:6b07fe373cfb9bc33aedcb226612c14e760f459fd5f40a98bf2c7b4448944460` |
+| 4 | `def` | [newtonIntervalGo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Newton.lean/declarations/newtonintervalgo.md) | 122 | `declaration-track:1ef04234601a2e78ba1f204ab75544c73d9fbec2410d0e239a34bca86e360504` |
+| 5 | `def` | [newtonIntervalTM](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Newton.lean/declarations/newtonintervaltm.md) | 170 | `declaration-track:15dd1f41351689f5542f0466e7bee8778cd588995d8ce316714621d008919c2c` |
+| 6 | `def` | [newtonInterval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Newton.lean/declarations/newtoninterval.md) | 176 | `declaration-track:4af43ab989eb54b60da714bf523afd9ab05d64ad1f40e6c68bf9cba7426682bd` |
+| 7 | `theorem` | [deriv_in_derivInterval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Newton.lean/declarations/deriv-in-derivinterval.md) | 185 | `result-track:f98a4c3eaf057679c7789b9994fe14f8e3cf9f2859959edfd6ddc50df99107d5` |
+| 8 | `theorem` | [mvt_for_eval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Newton.lean/declarations/mvt-for-eval.md) | 192 | `result-track:7b72c482b3b4b73d52737b262b0a4844c9dcfda18a857d03f036fb8924d72c3e` |
+| 9 | `theorem` | [between_mem_interval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Newton.lean/declarations/between-mem-interval.md) | 238 | `result-track:7836d1593995f744068ea7eccdbc45d692c861129daa2f4581fc87cb53d42da2` |
+| 10 | `theorem` | [newton_operator_preserves_root](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Newton.lean/declarations/newton-operator-preserves-root.md) | 254 | `result-track:b8cdbd4a4cc70f86c483ac05011d1a11014a9734977a9cebf090138f09731668` |
+| 11 | `theorem` | [newton_preserves_root](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Newton.lean/declarations/newton-preserves-root.md) | 370 | `result-track:2e0c039ca986a31c3d2912e47a25706874584b89398bc4d00bea872a062c3b3a` |
+| 12 | `theorem` | [newton_step_at_most_one_root](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Newton.lean/declarations/newton-step-at-most-one-root.md) | 517 | `result-track:479f762cfa7fcb1636b17b1f87b91853dd6260eb625a62cd48ff66bbb0e9dd92` |
+| 13 | `structure` | [NewtonContractionData](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Newton.lean/declarations/newtoncontractiondata.md) | 604 | `declaration-track:ea2ab579b504fe985d7734c2c28095cf35381ab746eaa923f203fdc6264ab48b` |
+| 14 | `lemma` | [contraction_newton_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Newton.lean/declarations/contraction-newton-bounds.md) | 618 | `result-track:34d275841bcdef2c30e521521a993bd80384c89c1471242c9c94dd0699041f35` |
+| 15 | `lemma` | [newtonStepSimple_extract](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Newton.lean/declarations/newtonstepsimple-extract.md) | 646 | `result-track:54553a5f0e76a9a91602a5ae6c4f66c19187488635b00a609fbff8e53f45b61c` |
+| 16 | `lemma` | [newtonStepTM_structure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Newton.lean/declarations/newtonsteptm-structure.md) | 683 | `result-track:6c0775120cea1354678c69b2f7000e50d39fd1dd04336fdeac85d6e461242ab9` |
+| 17 | `lemma` | [newtonStepTM_fc_correct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Newton.lean/declarations/newtonsteptm-fc-correct.md) | 733 | `result-track:6b3eba3dcfab74a6840cfa916942484d5ce5da8c4e7102a5805a834b5edbf4fc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

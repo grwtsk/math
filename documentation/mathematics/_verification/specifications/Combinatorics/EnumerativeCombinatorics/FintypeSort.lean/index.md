@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeSort.lean/index.md) · [Full source](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeSort.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeSort.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeSort.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [monoEquivOfFin](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeSort.lean/declarations/monoequivoffin.md) | 25 | `declaration-track:b0343ffd75fd2687a42fd161cbd1abe62b0a1b2f5387996e43849181af4061e8` |
-| 2 | `def` | [finSumEquivOfFinset](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeSort.lean/declarations/finsumequivoffinset.md) | 35 | `declaration-track:1063e959dc7528d9e7ff32205e9eb769f717e3336a326b8b67694599a3a04fb9` |
-| 3 | `theorem` | [finSumEquivOfFinset_inl](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeSort.lean/declarations/finsumequivoffinset-inl.md) | 43 | `result-track:1bd2a7278e1c6fdaddf576fd822bd799c40b198d564e03338c5b09ff68a89f5a` |
-| 4 | `theorem` | [finSumEquivOfFinset_inr](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeSort.lean/declarations/finsumequivoffinset-inr.md) | 48 | `result-track:eb7603459ba0a32bb9305a712e502112c6535562ad2c4ef290af4f985904ca74` |
+| 1 | `def` | [monoEquivOfFin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeSort.lean/declarations/monoequivoffin.md) | 25 | `declaration-track:b0343ffd75fd2687a42fd161cbd1abe62b0a1b2f5387996e43849181af4061e8` |
+| 2 | `def` | [finSumEquivOfFinset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeSort.lean/declarations/finsumequivoffinset.md) | 35 | `declaration-track:1063e959dc7528d9e7ff32205e9eb769f717e3336a326b8b67694599a3a04fb9` |
+| 3 | `theorem` | [finSumEquivOfFinset_inl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeSort.lean/declarations/finsumequivoffinset-inl.md) | 43 | `result-track:1bd2a7278e1c6fdaddf576fd822bd799c40b198d564e03338c5b09ff68a89f5a` |
+| 4 | `theorem` | [finSumEquivOfFinset_inr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeSort.lean/declarations/finsumequivoffinset-inr.md) | 48 | `result-track:eb7603459ba0a32bb9305a712e502112c6535562ad2c4ef290af4f985904ca74` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

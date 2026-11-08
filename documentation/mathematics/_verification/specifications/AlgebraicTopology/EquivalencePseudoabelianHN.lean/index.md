@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/EquivalencePseudoabelianHN.lean/index.md) · [Full source](../../../../AlgebraicTopology/EquivalencePseudoabelianHN.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/EquivalencePseudoabelianHN.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/EquivalencePseudoabelianHN.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,19 +59,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [N](../../../../AlgebraicTopology/EquivalencePseudoabelianHN.lean/declarations/n.md) | 56 | `declaration-track:c7663947c32bfab663efe143f8bea0bcb91c6d6acbed7fe53dbb4dedb78e7faa` |
-| 2 | `def` | [Γ](../../../../AlgebraicTopology/EquivalencePseudoabelianHN.lean/declarations/anonymous.md) | 63 | `declaration-track:4e59e73b2b8d2f397db51160e613428b3c9e940e62be4de3b4d024e6cc8a9bd1` |
-| 3 | `theorem` | [hN₁](../../../../AlgebraicTopology/EquivalencePseudoabelianHN.lean/declarations/hn.md) | 69 | `result-track:831e9e264e454fea0fdc667b692243c945115134849de85beab87e40fbc7a6c1` |
-| 4 | `theorem` | [hΓ₀](../../../../AlgebraicTopology/EquivalencePseudoabelianHN.lean/declarations/h.md) | 76 | `result-track:0f9be0dd61cbfda04c03e29616f8330a3209e1e0690421882897eceaf7ee1694` |
-| 5 | `def` | [equivalence](../../../../AlgebraicTopology/EquivalencePseudoabelianHN.lean/declarations/equivalence.md) | 85 | `declaration-track:5fc675de8a6a8f2eb7f8f6977d518be71c389acd862a48d3e633ba0f81280f17` |
-| 6 | `theorem` | [equivalence_functor](../../../../AlgebraicTopology/EquivalencePseudoabelianHN.lean/declarations/equivalence-functor.md) | 89 | `result-track:5b23148a2994e21e7b67f94e6a1084e93ec7ae75454ad8daf70684f060219704` |
-| 7 | `theorem` | [equivalence_inverse](../../../../AlgebraicTopology/EquivalencePseudoabelianHN.lean/declarations/equivalence-inverse.md) | 93 | `result-track:05cbaf725dbb227749fa54bb9b0193c0983a407688ec53b0c35adcf4b15ee44c` |
-| 8 | `theorem` | [hη](../../../../AlgebraicTopology/EquivalencePseudoabelianHN.lean/declarations/h-source-edition-3.md) | 99 | `result-track:3a723f28ac16980131ff599ce9c478f5d30b16297fa39ee4de357c9538051364` |
-| 9 | `def` | [η](../../../../AlgebraicTopology/EquivalencePseudoabelianHN.lean/declarations/anonymous-source-edition-2.md) | 111 | `declaration-track:9b996d50b1325145862605817abf3d72fdec45a18ace9bfdffd3fff65a1d8c15` |
-| 10 | `theorem` | [equivalence_counitIso](../../../../AlgebraicTopology/EquivalencePseudoabelianHN.lean/declarations/equivalence-counitiso.md) | 116 | `result-track:6179b7fced2b1b98b2b319cb6907502b849a1a3a53b06ed8c94b602725f9929b` |
-| 11 | `theorem` | [hε](../../../../AlgebraicTopology/EquivalencePseudoabelianHN.lean/declarations/h-source-edition-2.md) | 121 | `result-track:1f0f9bc093f7ba035cdb862bfd510711e714c4356bac8675bdf12c8db95a53aa` |
-| 12 | `def` | [ε](../../../../AlgebraicTopology/EquivalencePseudoabelianHN.lean/declarations/anonymous-source-edition-3.md) | 137 | `declaration-track:b3e286e6c67d1df512a5b3e484dd9c1d575e7f4ff2dc8cba6a8317f62e162321` |
-| 13 | `theorem` | [equivalence_unitIso](../../../../AlgebraicTopology/EquivalencePseudoabelianHN.lean/declarations/equivalence-unitiso.md) | 141 | `result-track:159ac36f66161f8aae612f0e55db79bbe6c611a29f856b2452f27bbaa4cdbe94` |
+| 1 | `def` | [N](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/EquivalencePseudoabelianHN.lean/declarations/n.md) | 56 | `declaration-track:c7663947c32bfab663efe143f8bea0bcb91c6d6acbed7fe53dbb4dedb78e7faa` |
+| 2 | `def` | [Γ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/EquivalencePseudoabelianHN.lean/declarations/anonymous.md) | 63 | `declaration-track:4e59e73b2b8d2f397db51160e613428b3c9e940e62be4de3b4d024e6cc8a9bd1` |
+| 3 | `theorem` | [hN₁](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/EquivalencePseudoabelianHN.lean/declarations/hn.md) | 69 | `result-track:831e9e264e454fea0fdc667b692243c945115134849de85beab87e40fbc7a6c1` |
+| 4 | `theorem` | [hΓ₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/EquivalencePseudoabelianHN.lean/declarations/h.md) | 76 | `result-track:0f9be0dd61cbfda04c03e29616f8330a3209e1e0690421882897eceaf7ee1694` |
+| 5 | `def` | [equivalence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/EquivalencePseudoabelianHN.lean/declarations/equivalence.md) | 85 | `declaration-track:5fc675de8a6a8f2eb7f8f6977d518be71c389acd862a48d3e633ba0f81280f17` |
+| 6 | `theorem` | [equivalence_functor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/EquivalencePseudoabelianHN.lean/declarations/equivalence-functor.md) | 89 | `result-track:5b23148a2994e21e7b67f94e6a1084e93ec7ae75454ad8daf70684f060219704` |
+| 7 | `theorem` | [equivalence_inverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/EquivalencePseudoabelianHN.lean/declarations/equivalence-inverse.md) | 93 | `result-track:05cbaf725dbb227749fa54bb9b0193c0983a407688ec53b0c35adcf4b15ee44c` |
+| 8 | `theorem` | [hη](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/EquivalencePseudoabelianHN.lean/declarations/h-source-edition-3.md) | 99 | `result-track:3a723f28ac16980131ff599ce9c478f5d30b16297fa39ee4de357c9538051364` |
+| 9 | `def` | [η](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/EquivalencePseudoabelianHN.lean/declarations/anonymous-source-edition-2.md) | 111 | `declaration-track:9b996d50b1325145862605817abf3d72fdec45a18ace9bfdffd3fff65a1d8c15` |
+| 10 | `theorem` | [equivalence_counitIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/EquivalencePseudoabelianHN.lean/declarations/equivalence-counitiso.md) | 116 | `result-track:6179b7fced2b1b98b2b319cb6907502b849a1a3a53b06ed8c94b602725f9929b` |
+| 11 | `theorem` | [hε](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/EquivalencePseudoabelianHN.lean/declarations/h-source-edition-2.md) | 121 | `result-track:1f0f9bc093f7ba035cdb862bfd510711e714c4356bac8675bdf12c8db95a53aa` |
+| 12 | `def` | [ε](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/EquivalencePseudoabelianHN.lean/declarations/anonymous-source-edition-3.md) | 137 | `declaration-track:b3e286e6c67d1df512a5b3e484dd9c1d575e7f4ff2dc8cba6a8317f62e162321` |
+| 13 | `theorem` | [equivalence_unitIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/EquivalencePseudoabelianHN.lean/declarations/equivalence-unitiso.md) | 141 | `result-track:159ac36f66161f8aae612f0e55db79bbe6c611a29f856b2452f27bbaa4cdbe94` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PEmptyInstances.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PEmptyInstances.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PEmptyInstances.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PEmptyInstances.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [SemigroupPEmpty](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PEmptyInstances.lean/declarations/semigrouppempty.md) | 20 | `declaration-track:2a0bfa5ceb104953697cdfe433aab01607fd1cadf5748a3c0a09174d957604bd` |
+| 1 | `instance` | [SemigroupPEmpty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PEmptyInstances.lean/declarations/semigrouppempty.md) | 20 | `declaration-track:2a0bfa5ceb104953697cdfe433aab01607fd1cadf5748a3c0a09174d957604bd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

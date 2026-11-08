@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteEcosystemNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteEcosystemNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteEcosystemNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteEcosystemNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,11 +61,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [IngestedProject](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteEcosystemNamespaced.lean/declarations/ingestedproject.md) | 25 | `declaration-track:ce076e31005b6030f4b7f26a126cd634ede14022e49c5b6a55778105e26f9e7f` |
-| 2 | `structure` | [FiniteEcosystem](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteEcosystemNamespaced.lean/declarations/finiteecosystem.md) | 31 | `declaration-track:40c17bf8a13a976a943467104376139b8d3d38eaa77c2d629bc04b88f7284f5f` |
-| 3 | `structure` | [Valid](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteEcosystemNamespaced.lean/declarations/valid.md) | 49 | `declaration-track:3f5697d548597fbe19d3fcb95dccbad154bce6c6b2b2b8cbdd2ddc371303cd5d` |
-| 4 | `structure` | [Sound](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteEcosystemNamespaced.lean/declarations/sound-source-edition-2.md) | 68 | `declaration-track:7b38d7b5e6577427f8c1f7663f6159b0defe579b355ed402acea20b0caa13fd7` |
-| 5 | `theorem` | [sound](../../../../../ComputerScience/AlgorithmsInComputerScience/FiniteEcosystemNamespaced.lean/declarations/sound.md) | 117 | `result-track:20d08e3e9a2ec70d37f972d20df93b0dda09d3160259cd4ff247e6dbbdd1a9d0` |
+| 1 | `structure` | [IngestedProject](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteEcosystemNamespaced.lean/declarations/ingestedproject.md) | 25 | `declaration-track:ce076e31005b6030f4b7f26a126cd634ede14022e49c5b6a55778105e26f9e7f` |
+| 2 | `structure` | [FiniteEcosystem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteEcosystemNamespaced.lean/declarations/finiteecosystem.md) | 31 | `declaration-track:40c17bf8a13a976a943467104376139b8d3d38eaa77c2d629bc04b88f7284f5f` |
+| 3 | `structure` | [Valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteEcosystemNamespaced.lean/declarations/valid.md) | 49 | `declaration-track:3f5697d548597fbe19d3fcb95dccbad154bce6c6b2b2b8cbdd2ddc371303cd5d` |
+| 4 | `structure` | [Sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteEcosystemNamespaced.lean/declarations/sound-source-edition-2.md) | 68 | `declaration-track:7b38d7b5e6577427f8c1f7663f6159b0defe579b355ed402acea20b0caa13fd7` |
+| 5 | `theorem` | [sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FiniteEcosystemNamespaced.lean/declarations/sound.md) | 117 | `result-track:20d08e3e9a2ec70d37f972d20df93b0dda09d3160259cd4ff247e6dbbdd1a9d0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

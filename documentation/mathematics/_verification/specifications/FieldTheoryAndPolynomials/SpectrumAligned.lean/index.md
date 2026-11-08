@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FieldTheoryAndPolynomials/SpectrumAligned.lean/index.md) · [Full source](../../../../FieldTheoryAndPolynomials/SpectrumAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/SpectrumAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/SpectrumAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `macro_rules` | [(anonymous)](../../../../FieldTheoryAndPolynomials/SpectrumAligned.lean/declarations/macro-rules.md) | 38 | `declaration-track:f7816a70cda79c747807ced6d9d0aac4ba39aa6aa7fc8d7b740347b612edf737` |
-| 2 | `theorem` | [exists_mem_of_not_isUnit_aeval_prod](../../../../FieldTheoryAndPolynomials/SpectrumAligned.lean/declarations/exists-mem-of-not-isunit-aeval-prod.md) | 58 | `result-track:abed25c0768eb4fbcf4f83d688995477bd614d004563b5cefd0853a3c116a947` |
-| 3 | `theorem` | [subset_polynomial_aeval](../../../../FieldTheoryAndPolynomials/SpectrumAligned.lean/declarations/subset-polynomial-aeval.md) | 85 | `result-track:3dd661b0bbe86024349070672d2b28738213c8737a84738c8239a91f60623323` |
-| 4 | `theorem` | [map_polynomial_aeval_of_degree_pos](../../../../FieldTheoryAndPolynomials/SpectrumAligned.lean/declarations/map-polynomial-aeval-of-degree-pos.md) | 101 | `result-track:df4ce30ab5f3a3e0555aeeeeadf9881246a3f8c4449d2106d0af1751fb86248e` |
-| 5 | `theorem` | [map_polynomial_aeval_of_nonempty](../../../../FieldTheoryAndPolynomials/SpectrumAligned.lean/declarations/map-polynomial-aeval-of-nonempty.md) | 124 | `result-track:adcb96462f5d259fcd9d28e6e51fad4fbb2bd17f4698a4d097b131be6ba4f381` |
-| 6 | `theorem` | [pow_image_subset](../../../../FieldTheoryAndPolynomials/SpectrumAligned.lean/declarations/pow-image-subset.md) | 133 | `result-track:2fbe3472ac75b4893d6a2f0c01c3f26d6b3b469acba226ba172ef5f4809471d5` |
-| 7 | `theorem` | [map_pow_of_pos](../../../../FieldTheoryAndPolynomials/SpectrumAligned.lean/declarations/map-pow-of-pos.md) | 139 | `result-track:e48c187b945115618696db7ebf3bdb6bcf08f4f1ad250e17151621f544922f18` |
-| 8 | `theorem` | [map_pow_of_nonempty](../../../../FieldTheoryAndPolynomials/SpectrumAligned.lean/declarations/map-pow-of-nonempty.md) | 147 | `result-track:0fd95234b0e3c999fa974e51d7e0918a31d1c1ce1002cef3fcc3f992198c2373` |
-| 9 | `theorem` | [nonempty_of_isAlgClosed_of_finiteDimensional](../../../../FieldTheoryAndPolynomials/SpectrumAligned.lean/declarations/nonempty-of-isalgclosed-of-finitedimensional.md) | 157 | `result-track:cbc144916aed77fbbf6b3a56cd3a96fc8dc37b42d6e2790a63a3810303841fa8` |
+| 1 | `macro_rules` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/SpectrumAligned.lean/declarations/macro-rules.md) | 38 | `declaration-track:f7816a70cda79c747807ced6d9d0aac4ba39aa6aa7fc8d7b740347b612edf737` |
+| 2 | `theorem` | [exists_mem_of_not_isUnit_aeval_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/SpectrumAligned.lean/declarations/exists-mem-of-not-isunit-aeval-prod.md) | 58 | `result-track:abed25c0768eb4fbcf4f83d688995477bd614d004563b5cefd0853a3c116a947` |
+| 3 | `theorem` | [subset_polynomial_aeval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/SpectrumAligned.lean/declarations/subset-polynomial-aeval.md) | 85 | `result-track:3dd661b0bbe86024349070672d2b28738213c8737a84738c8239a91f60623323` |
+| 4 | `theorem` | [map_polynomial_aeval_of_degree_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/SpectrumAligned.lean/declarations/map-polynomial-aeval-of-degree-pos.md) | 101 | `result-track:df4ce30ab5f3a3e0555aeeeeadf9881246a3f8c4449d2106d0af1751fb86248e` |
+| 5 | `theorem` | [map_polynomial_aeval_of_nonempty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/SpectrumAligned.lean/declarations/map-polynomial-aeval-of-nonempty.md) | 124 | `result-track:adcb96462f5d259fcd9d28e6e51fad4fbb2bd17f4698a4d097b131be6ba4f381` |
+| 6 | `theorem` | [pow_image_subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/SpectrumAligned.lean/declarations/pow-image-subset.md) | 133 | `result-track:2fbe3472ac75b4893d6a2f0c01c3f26d6b3b469acba226ba172ef5f4809471d5` |
+| 7 | `theorem` | [map_pow_of_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/SpectrumAligned.lean/declarations/map-pow-of-pos.md) | 139 | `result-track:e48c187b945115618696db7ebf3bdb6bcf08f4f1ad250e17151621f544922f18` |
+| 8 | `theorem` | [map_pow_of_nonempty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/SpectrumAligned.lean/declarations/map-pow-of-nonempty.md) | 147 | `result-track:0fd95234b0e3c999fa974e51d7e0918a31d1c1ce1002cef3fcc3f992198c2373` |
+| 9 | `theorem` | [nonempty_of_isAlgClosed_of_finiteDimensional](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/SpectrumAligned.lean/declarations/nonempty-of-isalgclosed-of-finitedimensional.md) | 157 | `result-track:cbc144916aed77fbbf6b3a56cd3a96fc8dc37b42d6e2790a63a3810303841fa8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

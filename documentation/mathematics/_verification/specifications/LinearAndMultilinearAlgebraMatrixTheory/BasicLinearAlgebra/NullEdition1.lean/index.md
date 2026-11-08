@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/NullEdition1.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/NullEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/NullEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/NullEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [rawEnergyZero_orthogonal_all](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/NullEdition1.lean/declarations/rawenergyzero-orthogonal-all.md) | 23 | `result-track:15e05b966fbfc9d1b3d8bd3c61e63d301357dbf4f089273c01081b7d198d1288` |
-| 2 | `def` | [kernelNullSubmodule](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/NullEdition1.lean/declarations/kernelnullsubmodule.md) | 34 | `declaration-track:0a3b08ccb1bfce11a3005949b5df961b3b230fd723d6b1a2630832b1ac3172c4` |
-| 3 | `theorem` | [mem_kernelNullSubmodule_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/NullEdition1.lean/declarations/mem-kernelnullsubmodule-iff.md) | 50 | `result-track:03ccc865c58a1486084e52e723aacb05ba4734b99050ead4361d605550651712` |
-| 4 | `theorem` | [null_orthogonal_all](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/NullEdition1.lean/declarations/null-orthogonal-all.md) | 55 | `result-track:36da4f598a7b0c63f132141d911be3536c7443b09fb75a79eb5b5baa09430dcf` |
-| 5 | `theorem` | [inner_self_eq_zero_iff_mem_kernelNullSubmodule](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/NullEdition1.lean/declarations/inner-self-eq-zero-iff-mem-kernelnullsubmodule.md) | 63 | `result-track:4a9076af7b975115f037ee2bdfe5acfaf46e45f079e9b1d987970314669d0f2d` |
-| 6 | `theorem` | [rawInner_eq_of_sub_mem_left](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/NullEdition1.lean/declarations/rawinner-eq-of-sub-mem-left.md) | 70 | `result-track:e92b4362edffdaac1cf7a6f6293c879c59d8954c32891c123b603d584f51bb5b` |
-| 7 | `theorem` | [rawInner_eq_of_sub_mem_right](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/NullEdition1.lean/declarations/rawinner-eq-of-sub-mem-right.md) | 83 | `result-track:80b8bb118fe07e9195fcec6001d419b5f3fa0c1e69b83d079fed4048acfc648f` |
+| 1 | `theorem` | [rawEnergyZero_orthogonal_all](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/NullEdition1.lean/declarations/rawenergyzero-orthogonal-all.md) | 23 | `result-track:15e05b966fbfc9d1b3d8bd3c61e63d301357dbf4f089273c01081b7d198d1288` |
+| 2 | `def` | [kernelNullSubmodule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/NullEdition1.lean/declarations/kernelnullsubmodule.md) | 34 | `declaration-track:0a3b08ccb1bfce11a3005949b5df961b3b230fd723d6b1a2630832b1ac3172c4` |
+| 3 | `theorem` | [mem_kernelNullSubmodule_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/NullEdition1.lean/declarations/mem-kernelnullsubmodule-iff.md) | 50 | `result-track:03ccc865c58a1486084e52e723aacb05ba4734b99050ead4361d605550651712` |
+| 4 | `theorem` | [null_orthogonal_all](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/NullEdition1.lean/declarations/null-orthogonal-all.md) | 55 | `result-track:36da4f598a7b0c63f132141d911be3536c7443b09fb75a79eb5b5baa09430dcf` |
+| 5 | `theorem` | [inner_self_eq_zero_iff_mem_kernelNullSubmodule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/NullEdition1.lean/declarations/inner-self-eq-zero-iff-mem-kernelnullsubmodule.md) | 63 | `result-track:4a9076af7b975115f037ee2bdfe5acfaf46e45f079e9b1d987970314669d0f2d` |
+| 6 | `theorem` | [rawInner_eq_of_sub_mem_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/NullEdition1.lean/declarations/rawinner-eq-of-sub-mem-left.md) | 70 | `result-track:e92b4362edffdaac1cf7a6f6293c879c59d8954c32891c123b603d584f51bb5b` |
+| 7 | `theorem` | [rawInner_eq_of_sub_mem_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/NullEdition1.lean/declarations/rawinner-eq-of-sub-mem-right.md) | 83 | `result-track:80b8bb118fe07e9195fcec6001d419b5f3fa0c1e69b83d079fed4048acfc648f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

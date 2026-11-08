@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/RingHomBasicIsLocalHomId.lean/index.md) · [Full source](../../../../CommutativeAlgebra/RingHomBasicIsLocalHomId.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomBasicIsLocalHomId.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomBasicIsLocalHomId.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,18 +59,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [isLocalHom_id](../../../../CommutativeAlgebra/RingHomBasicIsLocalHomId.lean/declarations/islocalhom-id.md) | 24 | `result-track:8c06f0f3ed522a88e7262838037ba263e83f22d26242c237524727dda756023f` |
-| 2 | `theorem` | [isLocalHom_toRingHom](../../../../CommutativeAlgebra/RingHomBasicIsLocalHomId.lean/declarations/islocalhom-toringhom.md) | 29 | `result-track:2b0c16af7cbb10e17ac02064dd668bde49e3ef34eb5879fccbf0523c6b73b038` |
-| 3 | `theorem` | [RingHom.isLocalHom_comp](../../../../CommutativeAlgebra/RingHomBasicIsLocalHomId.lean/declarations/ringhom-islocalhom-comp.md) | 34 | `result-track:7473e99fbe22173b7a6454b7e3033e84dead7cf5757a89b5d4846f1182f23879` |
-| 4 | `theorem` | [isLocalHom_of_comp](../../../../CommutativeAlgebra/RingHomBasicIsLocalHomId.lean/declarations/islocalhom-of-comp.md) | 38 | `result-track:ebfac7a737c32c6c25d19dd95b27ee0e8406e54f2c29f714f2048e62df74c586` |
-| 5 | `theorem` | [RingHom.domain_isLocalRing](../../../../CommutativeAlgebra/RingHomBasicIsLocalHomId.lean/declarations/ringhom-domain-islocalring.md) | 43 | `result-track:c3b3b54fb9a9bce3d19bc903edf42a07126d113ec3b33ebc13c2899a9b6808ad` |
-| 6 | `theorem` | [map_nonunit](../../../../CommutativeAlgebra/RingHomBasicIsLocalHomId.lean/declarations/map-nonunit.md) | 64 | `result-track:5c7d3c52344010501ed188b557b396c329e1d80513c0bb5ff0ab1ea5a08b03f6` |
-| 7 | `theorem` | [local_hom_TFAE](../../../../CommutativeAlgebra/RingHomBasicIsLocalHomId.lean/declarations/local-hom-tfae.md) | 78 | `result-track:a0c50456d0e471267df679302768ead0d7adf82bb34a4bd6340010f342ce4fa3` |
-| 8 | `theorem` | [of_surjective](../../../../CommutativeAlgebra/RingHomBasicIsLocalHomId.lean/declarations/of-surjective.md) | 95 | `result-track:e634862b666326893d1b76881a9b0bac388cabc7ce7846a5b4576bb1e3d0eb3a` |
-| 9 | `lemma` | [_root_.IsLocalHom.of_surjective](../../../../CommutativeAlgebra/RingHomBasicIsLocalHomId.lean/declarations/root-islocalhom-of-surjective.md) | 106 | `result-track:5f39fd47aaa72dd5f5db1972291c84ab139c65f0ba312a667f1e5aa53090918b` |
-| 10 | `theorem` | [surjective_units_map_of_local_ringHom](../../../../CommutativeAlgebra/RingHomBasicIsLocalHomId.lean/declarations/surjective-units-map-of-local-ringhom.md) | 117 | `result-track:22e6c851faa416a29b56103ff1d99805fcf47fab451ec71f364d0b62925a79b5` |
-| 11 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/RingHomBasicIsLocalHomId.lean/declarations/instance.md) | 129 | `declaration-track:8859f8b385b6f944020066fa938cccd9804d09c7c4f1b9340ea3eef8d7b86a37` |
-| 12 | `theorem` | [isLocalRing](../../../../CommutativeAlgebra/RingHomBasicIsLocalHomId.lean/declarations/islocalring.md) | 143 | `result-track:25740a1f09efe1c6698296be7ba95dc0bc4c54745608e7052b233036e4c63517` |
+| 1 | `theorem` | [isLocalHom_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomBasicIsLocalHomId.lean/declarations/islocalhom-id.md) | 24 | `result-track:8c06f0f3ed522a88e7262838037ba263e83f22d26242c237524727dda756023f` |
+| 2 | `theorem` | [isLocalHom_toRingHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomBasicIsLocalHomId.lean/declarations/islocalhom-toringhom.md) | 29 | `result-track:2b0c16af7cbb10e17ac02064dd668bde49e3ef34eb5879fccbf0523c6b73b038` |
+| 3 | `theorem` | [RingHom.isLocalHom_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomBasicIsLocalHomId.lean/declarations/ringhom-islocalhom-comp.md) | 34 | `result-track:7473e99fbe22173b7a6454b7e3033e84dead7cf5757a89b5d4846f1182f23879` |
+| 4 | `theorem` | [isLocalHom_of_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomBasicIsLocalHomId.lean/declarations/islocalhom-of-comp.md) | 38 | `result-track:ebfac7a737c32c6c25d19dd95b27ee0e8406e54f2c29f714f2048e62df74c586` |
+| 5 | `theorem` | [RingHom.domain_isLocalRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomBasicIsLocalHomId.lean/declarations/ringhom-domain-islocalring.md) | 43 | `result-track:c3b3b54fb9a9bce3d19bc903edf42a07126d113ec3b33ebc13c2899a9b6808ad` |
+| 6 | `theorem` | [map_nonunit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomBasicIsLocalHomId.lean/declarations/map-nonunit.md) | 64 | `result-track:5c7d3c52344010501ed188b557b396c329e1d80513c0bb5ff0ab1ea5a08b03f6` |
+| 7 | `theorem` | [local_hom_TFAE](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomBasicIsLocalHomId.lean/declarations/local-hom-tfae.md) | 78 | `result-track:a0c50456d0e471267df679302768ead0d7adf82bb34a4bd6340010f342ce4fa3` |
+| 8 | `theorem` | [of_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomBasicIsLocalHomId.lean/declarations/of-surjective.md) | 95 | `result-track:e634862b666326893d1b76881a9b0bac388cabc7ce7846a5b4576bb1e3d0eb3a` |
+| 9 | `lemma` | [_root_.IsLocalHom.of_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomBasicIsLocalHomId.lean/declarations/root-islocalhom-of-surjective.md) | 106 | `result-track:5f39fd47aaa72dd5f5db1972291c84ab139c65f0ba312a667f1e5aa53090918b` |
+| 10 | `theorem` | [surjective_units_map_of_local_ringHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomBasicIsLocalHomId.lean/declarations/surjective-units-map-of-local-ringhom.md) | 117 | `result-track:22e6c851faa416a29b56103ff1d99805fcf47fab451ec71f364d0b62925a79b5` |
+| 11 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomBasicIsLocalHomId.lean/declarations/instance.md) | 129 | `declaration-track:8859f8b385b6f944020066fa938cccd9804d09c7c4f1b9340ea3eef8d7b86a37` |
+| 12 | `theorem` | [isLocalRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomBasicIsLocalHomId.lean/declarations/islocalring.md) | 143 | `result-track:25740a1f09efe1c6698296be7ba95dc0bc4c54745608e7052b233036e4c63517` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

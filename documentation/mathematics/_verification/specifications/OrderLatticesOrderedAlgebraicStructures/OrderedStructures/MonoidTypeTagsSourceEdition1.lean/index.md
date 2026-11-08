@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidTypeTagsSourceEdition1.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidTypeTagsSourceEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidTypeTagsSourceEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidTypeTagsSourceEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [Multiplicative.isOrderedMonoid](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidTypeTagsSourceEdition1.lean/declarations/multiplicative-isorderedmonoid.md) | 13 | `declaration-track:363fd6e7f4e9049d45eade1285754f8ec2b5f240c5162348ffc560f7b0f7c4ce` |
-| 2 | `instance` | [Additive.isOrderedAddMonoid](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidTypeTagsSourceEdition1.lean/declarations/additive-isorderedaddmonoid.md) | 17 | `declaration-track:9bf1da02f430c8819d605d48e95209ad59a9ece89361fccefe72e2b0b3d7e596` |
-| 3 | `instance` | [Multiplicative.isOrderedCancelMonoid](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidTypeTagsSourceEdition1.lean/declarations/multiplicative-isorderedcancelmonoid.md) | 21 | `declaration-track:591f6eee844e871a51a993ee476fbf5a385aa2f218dd3e7b5a67923439820db2` |
-| 4 | `instance` | [Additive.isOrderedCancelAddMonoid](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidTypeTagsSourceEdition1.lean/declarations/additive-isorderedcanceladdmonoid.md) | 26 | `declaration-track:06028a725e900addf67c6bf743f6cb5882c60f5df2ce40625142de5898d9e726` |
-| 5 | `instance` | [Multiplicative.canonicallyOrderedMul](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidTypeTagsSourceEdition1.lean/declarations/multiplicative-canonicallyorderedmul.md) | 31 | `declaration-track:420fdcdffd88954c30f618295b7ccd07ef4e365872925c463e910b70a2450e72` |
-| 6 | `instance` | [Additive.canonicallyOrderedAdd](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidTypeTagsSourceEdition1.lean/declarations/additive-canonicallyorderedadd.md) | 36 | `declaration-track:7f6f8405da5a6b3632b1d4e429def363ea4792c84c0d5505421bcc149ba69c07` |
+| 1 | `instance` | [Multiplicative.isOrderedMonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidTypeTagsSourceEdition1.lean/declarations/multiplicative-isorderedmonoid.md) | 13 | `declaration-track:363fd6e7f4e9049d45eade1285754f8ec2b5f240c5162348ffc560f7b0f7c4ce` |
+| 2 | `instance` | [Additive.isOrderedAddMonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidTypeTagsSourceEdition1.lean/declarations/additive-isorderedaddmonoid.md) | 17 | `declaration-track:9bf1da02f430c8819d605d48e95209ad59a9ece89361fccefe72e2b0b3d7e596` |
+| 3 | `instance` | [Multiplicative.isOrderedCancelMonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidTypeTagsSourceEdition1.lean/declarations/multiplicative-isorderedcancelmonoid.md) | 21 | `declaration-track:591f6eee844e871a51a993ee476fbf5a385aa2f218dd3e7b5a67923439820db2` |
+| 4 | `instance` | [Additive.isOrderedCancelAddMonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidTypeTagsSourceEdition1.lean/declarations/additive-isorderedcanceladdmonoid.md) | 26 | `declaration-track:06028a725e900addf67c6bf743f6cb5882c60f5df2ce40625142de5898d9e726` |
+| 5 | `instance` | [Multiplicative.canonicallyOrderedMul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidTypeTagsSourceEdition1.lean/declarations/multiplicative-canonicallyorderedmul.md) | 31 | `declaration-track:420fdcdffd88954c30f618295b7ccd07ef4e365872925c463e910b70a2450e72` |
+| 6 | `instance` | [Additive.canonicallyOrderedAdd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidTypeTagsSourceEdition1.lean/declarations/additive-canonicallyorderedadd.md) | 36 | `declaration-track:7f6f8405da5a6b3632b1d4e429def363ea4792c84c0d5505421bcc149ba69c07` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

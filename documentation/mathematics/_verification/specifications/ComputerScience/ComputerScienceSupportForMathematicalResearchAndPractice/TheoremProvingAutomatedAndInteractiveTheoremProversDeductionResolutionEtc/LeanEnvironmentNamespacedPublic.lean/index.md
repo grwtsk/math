@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LeanEnvironmentNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LeanEnvironmentNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LeanEnvironmentNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LeanEnvironmentNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [findConstValWithKind?](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LeanEnvironmentNamespacedPublic.lean/declarations/findconstvalwithkind.md) | 37 | `declaration-track:83892ceb656972307dc18b4cea5dce59d6e2e8b07ef9adacfacec988b7fb0102` |
-| 2 | `def` | [findConstValOfKind?](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LeanEnvironmentNamespacedPublic.lean/declarations/findconstvalofkind.md) | 48 | `declaration-track:45dd845fcfde98f93029cd6504570d6027c4f4a8b4efefbe68ab38a1852b1c24` |
-| 3 | `def` | [findTheoremConstVal?](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LeanEnvironmentNamespacedPublic.lean/declarations/findtheoremconstval.md) | 58 | `declaration-track:631848fafc957997b1a744efaf58cc384ae4e67530c1e67ec2b03e06f8de1ebe` |
+| 1 | `def` | [findConstValWithKind?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LeanEnvironmentNamespacedPublic.lean/declarations/findconstvalwithkind.md) | 37 | `declaration-track:83892ceb656972307dc18b4cea5dce59d6e2e8b07ef9adacfacec988b7fb0102` |
+| 2 | `def` | [findConstValOfKind?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LeanEnvironmentNamespacedPublic.lean/declarations/findconstvalofkind.md) | 48 | `declaration-track:45dd845fcfde98f93029cd6504570d6027c4f4a8b4efefbe68ab38a1852b1c24` |
+| 3 | `def` | [findTheoremConstVal?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LeanEnvironmentNamespacedPublic.lean/declarations/findtheoremconstval.md) | 58 | `declaration-track:631848fafc957997b1a744efaf58cc384ae4e67530c1e67ec2b03e06f8de1ebe` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

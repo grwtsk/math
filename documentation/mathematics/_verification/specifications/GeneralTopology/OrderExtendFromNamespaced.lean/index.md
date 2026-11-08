@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/OrderExtendFromNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/OrderExtendFromNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OrderExtendFromNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OrderExtendFromNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [continuousOn_Icc_extendFrom_Ioo](../../../../GeneralTopology/OrderExtendFromNamespaced.lean/declarations/continuouson-icc-extendfrom-ioo.md) | 25 | `result-track:dea772d7613e7b430f9de810f6776ce5cd637cfba74d96aa22107472807d6405` |
-| 2 | `theorem` | [eq_lim_at_left_extendFrom_Ioo](../../../../GeneralTopology/OrderExtendFromNamespaced.lean/declarations/eq-lim-at-left-extendfrom-ioo.md) | 37 | `result-track:081796dcbd30087f6491700e955db41c6e5a1d70ac010a829926ca3e9d5f0934` |
-| 3 | `theorem` | [eq_lim_at_right_extendFrom_Ioo](../../../../GeneralTopology/OrderExtendFromNamespaced.lean/declarations/eq-lim-at-right-extendfrom-ioo.md) | 45 | `result-track:4aaad3b5c6d34d8258e191391276b617d465d60cbaad6f9e8e6ad33962bf8d95` |
-| 4 | `theorem` | [continuousOn_Ico_extendFrom_Ioo](../../../../GeneralTopology/OrderExtendFromNamespaced.lean/declarations/continuouson-ico-extendfrom-ioo.md) | 53 | `result-track:9690786ff4d04b8d4171ba219472186791d702dcbefee6a694dabc0f030e853f` |
-| 5 | `theorem` | [continuousOn_Ioc_extendFrom_Ioo](../../../../GeneralTopology/OrderExtendFromNamespaced.lean/declarations/continuouson-ioc-extendfrom-ioo.md) | 66 | `result-track:50fe3710fe4e229771348ee830f4bad13ceb968022fdb43968a1fcc3eb200fd1` |
+| 1 | `theorem` | [continuousOn_Icc_extendFrom_Ioo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OrderExtendFromNamespaced.lean/declarations/continuouson-icc-extendfrom-ioo.md) | 25 | `result-track:dea772d7613e7b430f9de810f6776ce5cd637cfba74d96aa22107472807d6405` |
+| 2 | `theorem` | [eq_lim_at_left_extendFrom_Ioo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OrderExtendFromNamespaced.lean/declarations/eq-lim-at-left-extendfrom-ioo.md) | 37 | `result-track:081796dcbd30087f6491700e955db41c6e5a1d70ac010a829926ca3e9d5f0934` |
+| 3 | `theorem` | [eq_lim_at_right_extendFrom_Ioo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OrderExtendFromNamespaced.lean/declarations/eq-lim-at-right-extendfrom-ioo.md) | 45 | `result-track:4aaad3b5c6d34d8258e191391276b617d465d60cbaad6f9e8e6ad33962bf8d95` |
+| 4 | `theorem` | [continuousOn_Ico_extendFrom_Ioo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OrderExtendFromNamespaced.lean/declarations/continuouson-ico-extendfrom-ioo.md) | 53 | `result-track:9690786ff4d04b8d4171ba219472186791d702dcbefee6a694dabc0f030e853f` |
+| 5 | `theorem` | [continuousOn_Ioc_extendFrom_Ioo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OrderExtendFromNamespaced.lean/declarations/continuouson-ioc-extendfrom-ioo.md) | 66 | `result-track:50fe3710fe4e229771348ee830f4bad13ceb968022fdb43968a1fcc3eb200fd1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

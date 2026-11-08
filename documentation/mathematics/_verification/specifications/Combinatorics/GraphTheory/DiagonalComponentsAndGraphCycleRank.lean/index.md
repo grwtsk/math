@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/DiagonalComponentsAndGraphCycleRank.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/DiagonalComponentsAndGraphCycleRank.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DiagonalComponentsAndGraphCycleRank.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DiagonalComponentsAndGraphCycleRank.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [diagonalState](../../../../../Combinatorics/GraphTheory/DiagonalComponentsAndGraphCycleRank.lean/declarations/diagonalstate.md) | 40 | `declaration-track:046dd2b2d3b1931a66af772f2600740499ce718948a56c9331f4705a08c256f0` |
-| 2 | `example` | [(anonymous)](../../../../../Combinatorics/GraphTheory/DiagonalComponentsAndGraphCycleRank.lean/declarations/example-source-edition-5.md) | 43 | `declaration-track:fe015b31eaa0a5bcf087c851c07f3d1d1d3b6a75cdec85011656180f19f5f90c` |
-| 3 | `example` | [(anonymous)](../../../../../Combinatorics/GraphTheory/DiagonalComponentsAndGraphCycleRank.lean/declarations/example-source-edition-3.md) | 45 | `declaration-track:c1f8e1a2e48d9708831c06951ed22922215d7de910e67103fd8bedaa4ace1b70` |
-| 4 | `example` | [(anonymous)](../../../../../Combinatorics/GraphTheory/DiagonalComponentsAndGraphCycleRank.lean/declarations/example.md) | 47 | `declaration-track:12873a9159c57516cbda31ef860ce6e1cc0cef02d976105a6a709246acc5b583` |
-| 5 | `example` | [(anonymous)](../../../../../Combinatorics/GraphTheory/DiagonalComponentsAndGraphCycleRank.lean/declarations/example-source-edition-4.md) | 49 | `declaration-track:e32c66190f08029476a55bc138a8c173f724207a3b23366a664b402c7b2ba4dc` |
-| 6 | `example` | [(anonymous)](../../../../../Combinatorics/GraphTheory/DiagonalComponentsAndGraphCycleRank.lean/declarations/example-source-edition-2.md) | 51 | `declaration-track:2ddd6b3b5492c1e02541191deb7a55b8d0ea756fb70e454923c5b4be0e06807e` |
+| 1 | `def` | [diagonalState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DiagonalComponentsAndGraphCycleRank.lean/declarations/diagonalstate.md) | 40 | `declaration-track:046dd2b2d3b1931a66af772f2600740499ce718948a56c9331f4705a08c256f0` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DiagonalComponentsAndGraphCycleRank.lean/declarations/example-source-edition-5.md) | 43 | `declaration-track:fe015b31eaa0a5bcf087c851c07f3d1d1d3b6a75cdec85011656180f19f5f90c` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DiagonalComponentsAndGraphCycleRank.lean/declarations/example-source-edition-3.md) | 45 | `declaration-track:c1f8e1a2e48d9708831c06951ed22922215d7de910e67103fd8bedaa4ace1b70` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DiagonalComponentsAndGraphCycleRank.lean/declarations/example.md) | 47 | `declaration-track:12873a9159c57516cbda31ef860ce6e1cc0cef02d976105a6a709246acc5b583` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DiagonalComponentsAndGraphCycleRank.lean/declarations/example-source-edition-4.md) | 49 | `declaration-track:e32c66190f08029476a55bc138a8c173f724207a3b23366a664b402c7b2ba4dc` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DiagonalComponentsAndGraphCycleRank.lean/declarations/example-source-edition-2.md) | 51 | `declaration-track:2ddd6b3b5492c1e02541191deb7a55b8d0ea756fb70e454923c5b4be0e06807e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

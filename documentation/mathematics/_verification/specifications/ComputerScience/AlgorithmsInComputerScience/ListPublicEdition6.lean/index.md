@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ListPublicEdition6.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ListPublicEdition6.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ListPublicEdition6.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ListPublicEdition6.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [List.step_iter_nil](../../../../../ComputerScience/AlgorithmsInComputerScience/ListPublicEdition6.lean/declarations/list-step-iter-nil.md) | 27 | `result-track:f645854f896eac89611224e669ae2395c38a7a645718d92390601348753b07a4` |
-| 2 | `theorem` | [List.step_iter_cons](../../../../../ComputerScience/AlgorithmsInComputerScience/ListPublicEdition6.lean/declarations/list-step-iter-cons.md) | 32 | `result-track:2ebfa3407e9fc5f5161366fbd193b541b8ea33ff3c163d6e3d28ee3b9aad1512` |
-| 3 | `theorem` | [List.toArray_iter](../../../../../ComputerScience/AlgorithmsInComputerScience/ListPublicEdition6.lean/declarations/list-toarray-iter.md) | 37 | `result-track:5b613ace8953f64ddb9be790b8868a835cbaaea8d074605f61f9558c5e27d76f` |
-| 4 | `theorem` | [List.toList_iter](../../../../../ComputerScience/AlgorithmsInComputerScience/ListPublicEdition6.lean/declarations/list-tolist-iter.md) | 42 | `result-track:2ed6730a132b0a0f37e1612e79a6fd4375a92c716f51107a49e0d7e3c281966b` |
-| 5 | `theorem` | [List.toListRev_iter](../../../../../ComputerScience/AlgorithmsInComputerScience/ListPublicEdition6.lean/declarations/list-tolistrev-iter.md) | 47 | `result-track:06ed901f4607aa9853b80365d4ed9b3f3316adfb52acb0fe4227635b39892c27` |
+| 1 | `theorem` | [List.step_iter_nil](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ListPublicEdition6.lean/declarations/list-step-iter-nil.md) | 27 | `result-track:f645854f896eac89611224e669ae2395c38a7a645718d92390601348753b07a4` |
+| 2 | `theorem` | [List.step_iter_cons](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ListPublicEdition6.lean/declarations/list-step-iter-cons.md) | 32 | `result-track:2ebfa3407e9fc5f5161366fbd193b541b8ea33ff3c163d6e3d28ee3b9aad1512` |
+| 3 | `theorem` | [List.toArray_iter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ListPublicEdition6.lean/declarations/list-toarray-iter.md) | 37 | `result-track:5b613ace8953f64ddb9be790b8868a835cbaaea8d074605f61f9558c5e27d76f` |
+| 4 | `theorem` | [List.toList_iter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ListPublicEdition6.lean/declarations/list-tolist-iter.md) | 42 | `result-track:2ed6730a132b0a0f37e1612e79a6fd4375a92c716f51107a49e0d7e3c281966b` |
+| 5 | `theorem` | [List.toListRev_iter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ListPublicEdition6.lean/declarations/list-tolistrev-iter.md) | 47 | `result-track:06ed901f4607aa9853b80365d4ed9b3f3316adfb52acb0fe4227635b39892c27` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

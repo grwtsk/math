@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachProgressionCoefficientBoundary.lean/index.md) · [Full source](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachProgressionCoefficientBoundary.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachProgressionCoefficientBoundary.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachProgressionCoefficientBoundary.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Primes.GoldbachPrimeCoefficientBridge`](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachPrimeCoefficientBridge.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Primes.GoldbachProgressionArcBoundary`](../../../../../MeasureAndIntegration/GoldbachProgressionArcBoundary.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Primes.GoldbachPrimeCoefficientBridge`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachPrimeCoefficientBridge.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Primes.GoldbachProgressionArcBoundary`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GoldbachProgressionArcBoundary.lean/index.md) — import line 5; pinned internal source present.
 - `Mathlib.Tactic` — import line 6; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [goldbachProgressionDenominatorMajorBlock](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachProgressionCoefficientBoundary.lean/declarations/goldbachprogressiondenominatormajorblock.md) | 50 | `declaration-track:c7f9f720c19e7d8e053d66290731daab7af0b746428aa0cdb2375bdcad527119` |
-| 2 | `theorem` | [goldbachProgressionDenominatorMajorBlock_factor_of_common](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachProgressionCoefficientBoundary.lean/declarations/goldbachprogressiondenominatormajorblock-factor-of-common.md) | 59 | `result-track:87a37a1678af5a5dda85c564f57cbe35d37d2ba574629a3da004fdf357a64a77` |
-| 3 | `def` | [goldbachCoefficientTruncatedMainScale](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachProgressionCoefficientBoundary.lean/declarations/goldbachcoefficienttruncatedmainscale.md) | 83 | `declaration-track:6545c31f8af15d7589a2412134ec4fc7c0948ab290abc745a017112ec0dfde11` |
-| 4 | `theorem` | [goldbachCoefficientTruncatedMainScale_eq](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachProgressionCoefficientBoundary.lean/declarations/goldbachcoefficienttruncatedmainscale-eq.md) | 90 | `result-track:210588430a0dbcde156a2effe25bec43c279049717d0fbb68cee481576cc5fda` |
-| 5 | `theorem` | [goldbachFiniteCoefficientEulerProduct_re_pos](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachProgressionCoefficientBoundary.lean/declarations/goldbachfinitecoefficienteulerproduct-re-pos.md) | 101 | `result-track:97ec2f377892317b9acc2fdb0a95ece35df0e85fc5a877aa8e289f6a2b8326d4` |
-| 6 | `theorem` | [goldbachFiniteCoefficientEulerProduct_eq_zero_of_not_even](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachProgressionCoefficientBoundary.lean/declarations/goldbachfinitecoefficienteulerproduct-eq-zero-of-not-even.md) | 112 | `result-track:6cf7cf0712745bafd0ddc6fd7923607b6176d70e2edecbe4d334437c9efa975e` |
-| 7 | `theorem` | [goldbachCount_pos_of_factored_progression_residue_bounds](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachProgressionCoefficientBoundary.lean/declarations/goldbachcount-pos-of-factored-progression-residue-bounds.md) | 122 | `result-track:7da4c40e27eacc46bbb673bce9cf160fb3411d4aa41af1b6ef9772a654201beb` |
-| 8 | `theorem` | [goldbachCount_pos_of_coefficient_truncated_certificate](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachProgressionCoefficientBoundary.lean/declarations/goldbachcount-pos-of-coefficient-truncated-certificate.md) | 160 | `result-track:63938edd4bc92cfd1af0c898edd4428dafdad47da9a4135c5fd92bdb1ce884ec` |
+| 1 | `def` | [goldbachProgressionDenominatorMajorBlock](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachProgressionCoefficientBoundary.lean/declarations/goldbachprogressiondenominatormajorblock.md) | 50 | `declaration-track:c7f9f720c19e7d8e053d66290731daab7af0b746428aa0cdb2375bdcad527119` |
+| 2 | `theorem` | [goldbachProgressionDenominatorMajorBlock_factor_of_common](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachProgressionCoefficientBoundary.lean/declarations/goldbachprogressiondenominatormajorblock-factor-of-common.md) | 59 | `result-track:87a37a1678af5a5dda85c564f57cbe35d37d2ba574629a3da004fdf357a64a77` |
+| 3 | `def` | [goldbachCoefficientTruncatedMainScale](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachProgressionCoefficientBoundary.lean/declarations/goldbachcoefficienttruncatedmainscale.md) | 83 | `declaration-track:6545c31f8af15d7589a2412134ec4fc7c0948ab290abc745a017112ec0dfde11` |
+| 4 | `theorem` | [goldbachCoefficientTruncatedMainScale_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachProgressionCoefficientBoundary.lean/declarations/goldbachcoefficienttruncatedmainscale-eq.md) | 90 | `result-track:210588430a0dbcde156a2effe25bec43c279049717d0fbb68cee481576cc5fda` |
+| 5 | `theorem` | [goldbachFiniteCoefficientEulerProduct_re_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachProgressionCoefficientBoundary.lean/declarations/goldbachfinitecoefficienteulerproduct-re-pos.md) | 101 | `result-track:97ec2f377892317b9acc2fdb0a95ece35df0e85fc5a877aa8e289f6a2b8326d4` |
+| 6 | `theorem` | [goldbachFiniteCoefficientEulerProduct_eq_zero_of_not_even](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachProgressionCoefficientBoundary.lean/declarations/goldbachfinitecoefficienteulerproduct-eq-zero-of-not-even.md) | 112 | `result-track:6cf7cf0712745bafd0ddc6fd7923607b6176d70e2edecbe4d334437c9efa975e` |
+| 7 | `theorem` | [goldbachCount_pos_of_factored_progression_residue_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachProgressionCoefficientBoundary.lean/declarations/goldbachcount-pos-of-factored-progression-residue-bounds.md) | 122 | `result-track:7da4c40e27eacc46bbb673bce9cf160fb3411d4aa41af1b6ef9772a654201beb` |
+| 8 | `theorem` | [goldbachCount_pos_of_coefficient_truncated_certificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachProgressionCoefficientBoundary.lean/declarations/goldbachcount-pos-of-coefficient-truncated-certificate.md) | 160 | `result-track:63938edd4bc92cfd1af0c898edd4428dafdad47da9a4135c5fd92bdb1ce884ec` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

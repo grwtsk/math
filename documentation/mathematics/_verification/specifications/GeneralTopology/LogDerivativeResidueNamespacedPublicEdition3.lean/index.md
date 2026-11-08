@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/LogDerivativeResidueNamespacedPublicEdition3.lean/index.md) · [Full source](../../../../GeneralTopology/LogDerivativeResidueNamespacedPublicEdition3.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LogDerivativeResidueNamespacedPublicEdition3.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LogDerivativeResidueNamespacedPublicEdition3.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [HasSimplePoleResidueAt](../../../../GeneralTopology/LogDerivativeResidueNamespacedPublicEdition3.lean/declarations/hassimplepoleresidueat.md) | 42 | `declaration-track:7e2d86dae8d155508e7addbdd2f8f56e750423a0d2acf40297955a5ecfa9cf89` |
-| 2 | `theorem` | [hasSimplePoleResidueAt_logDeriv](../../../../GeneralTopology/LogDerivativeResidueNamespacedPublicEdition3.lean/declarations/hassimplepoleresidueat-logderiv.md) | 51 | `result-track:312d861460e86c013668251509854e26d28be32a485bcf711ed21ddfa26a1533` |
+| 1 | `def` | [HasSimplePoleResidueAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LogDerivativeResidueNamespacedPublicEdition3.lean/declarations/hassimplepoleresidueat.md) | 42 | `declaration-track:7e2d86dae8d155508e7addbdd2f8f56e750423a0d2acf40297955a5ecfa9cf89` |
+| 2 | `theorem` | [hasSimplePoleResidueAt_logDeriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LogDerivativeResidueNamespacedPublicEdition3.lean/declarations/hassimplepoleresidueat-logderiv.md) | 51 | `result-track:312d861460e86c013668251509854e26d28be32a485bcf711ed21ddfa26a1533` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

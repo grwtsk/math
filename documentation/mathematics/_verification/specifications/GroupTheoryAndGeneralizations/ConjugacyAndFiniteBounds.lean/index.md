@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/ConjugacyAndFiniteBounds.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/ConjugacyAndFiniteBounds.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ConjugacyAndFiniteBounds.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ConjugacyAndFiniteBounds.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -53,7 +53,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 - `Mathlib.NumberTheory.ArithmeticFunction.Moebius` — import line 24; external provider; requires a separately pinned dependency.
 - `Mathlib.Algebra.BigOperators.Group.Finset.Basic` — import line 25; external provider; requires a separately pinned dependency.
 - `Mathlib.Data.Finsupp.Defs` — import line 26; external provider; requires a separately pinned dependency.
-- [Exact Periods And Complete Cycles](../../../../GroupTheoryAndGeneralizations/ExactPeriodsAndCompleteCycles.lean/index.md) — import line 28; pinned internal source present.
+- [Exact Periods And Complete Cycles](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ExactPeriodsAndCompleteCycles.lean/index.md) — import line 28; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -64,11 +64,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [hasExactPeriod_conjugate_iff](../../../../GroupTheoryAndGeneralizations/ConjugacyAndFiniteBounds.lean/declarations/hasexactperiod-conjugate-iff.md) | 57 | `result-track:e583aa1f387a83a17210b46e1770164f5a6747dfacd02c6712eb7f8ae836ea54` |
-| 2 | `theorem` | [exactPeriodCount_conjugate](../../../../GroupTheoryAndGeneralizations/ConjugacyAndFiniteBounds.lean/declarations/exactperiodcount-conjugate.md) | 84 | `result-track:919bdcdd54dcdc33cb500efe56a2418f84af0c5c162a8551fe99530f1867f4ab` |
-| 3 | `theorem` | [cycleCount_conjugate](../../../../GroupTheoryAndGeneralizations/ConjugacyAndFiniteBounds.lean/declarations/cyclecount-conjugate.md) | 104 | `result-track:c6719c007ff75d86f7821f708497df2c6002002ecd80cd20fac79566d43cecb9` |
-| 4 | `theorem` | [exactPeriodCount_le_stateCard](../../../../GroupTheoryAndGeneralizations/ConjugacyAndFiniteBounds.lean/declarations/exactperiodcount-le-statecard.md) | 110 | `result-track:9171938b390fa060dbfe6620df5d873ed9f5326af9b7bc1b9feb8c62f9cd1ea4` |
-| 5 | `theorem` | [cycleCount_eq_zero_of_card_lt](../../../../GroupTheoryAndGeneralizations/ConjugacyAndFiniteBounds.lean/declarations/cyclecount-eq-zero-of-card-lt.md) | 121 | `result-track:884e08b2810a60ed794d5fd3de776a5456bc9604785e551a720b1d6ee9a01591` |
+| 1 | `theorem` | [hasExactPeriod_conjugate_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ConjugacyAndFiniteBounds.lean/declarations/hasexactperiod-conjugate-iff.md) | 57 | `result-track:e583aa1f387a83a17210b46e1770164f5a6747dfacd02c6712eb7f8ae836ea54` |
+| 2 | `theorem` | [exactPeriodCount_conjugate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ConjugacyAndFiniteBounds.lean/declarations/exactperiodcount-conjugate.md) | 84 | `result-track:919bdcdd54dcdc33cb500efe56a2418f84af0c5c162a8551fe99530f1867f4ab` |
+| 3 | `theorem` | [cycleCount_conjugate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ConjugacyAndFiniteBounds.lean/declarations/cyclecount-conjugate.md) | 104 | `result-track:c6719c007ff75d86f7821f708497df2c6002002ecd80cd20fac79566d43cecb9` |
+| 4 | `theorem` | [exactPeriodCount_le_stateCard](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ConjugacyAndFiniteBounds.lean/declarations/exactperiodcount-le-statecard.md) | 110 | `result-track:9171938b390fa060dbfe6620df5d873ed9f5326af9b7bc1b9feb8c62f9cd1ea4` |
+| 5 | `theorem` | [cycleCount_eq_zero_of_card_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ConjugacyAndFiniteBounds.lean/declarations/cyclecount-eq-zero-of-card-lt.md) | 121 | `result-track:884e08b2810a60ed794d5fd3de776a5456bc9604785e551a720b1d6ee9a01591` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

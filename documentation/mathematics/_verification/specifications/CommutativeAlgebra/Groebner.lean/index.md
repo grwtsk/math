@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/Groebner.lean/index.md) · [Full source](../../../../CommutativeAlgebra/Groebner.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Groebner.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Groebner.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,13 +62,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [subLTerm](../../../../CommutativeAlgebra/Groebner.lean/declarations/sublterm.md) | 58 | `declaration-track:bc17e553c67b50e2a3f06e9e5437a3944d461861aef75caada004c49d9e64637` |
-| 2 | `theorem` | [degree_sub_LTerm_le](../../../../CommutativeAlgebra/Groebner.lean/declarations/degree-sub-lterm-le.md) | 61 | `result-track:f6da1092e9f4f66b05cf79f25bc185ccc6f2cc3dd500e36b8baae200fcac9118` |
-| 3 | `theorem` | [degree_sub_LTerm_lt](../../../../CommutativeAlgebra/Groebner.lean/declarations/degree-sub-lterm-lt.md) | 67 | `result-track:4828d6709572c97d4000bf03358f595443d83c14bf6c745fc570d94a91fb4b40` |
-| 4 | `def` | [reduce](../../../../CommutativeAlgebra/Groebner.lean/declarations/reduce.md) | 85 | `declaration-track:6c8f5433cd15178399356a9bdbe8035b7827f3feffc97501846a465749243dbb` |
-| 5 | `theorem` | [degree_reduce_lt](../../../../CommutativeAlgebra/Groebner.lean/declarations/degree-reduce-lt.md) | 89 | `result-track:bb6c7bab6a55ca5c2ef9ebeca5553c02ff01b3acd24258a20bea7bd4be31f003` |
-| 6 | `theorem` | [div](../../../../CommutativeAlgebra/Groebner.lean/declarations/div.md) | 123 | `result-track:ec22ee0040834ea78001a96a0499a4a08317019cf83aa510a14e05f72c511758` |
-| 7 | `theorem` | [div_set](../../../../CommutativeAlgebra/Groebner.lean/declarations/div-set.md) | 225 | `result-track:b04714e3667e98ea71a95d39935cf3fcae11149c5b0d387bfdee9f65c7925cac` |
+| 1 | `def` | [subLTerm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Groebner.lean/declarations/sublterm.md) | 58 | `declaration-track:bc17e553c67b50e2a3f06e9e5437a3944d461861aef75caada004c49d9e64637` |
+| 2 | `theorem` | [degree_sub_LTerm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Groebner.lean/declarations/degree-sub-lterm-le.md) | 61 | `result-track:f6da1092e9f4f66b05cf79f25bc185ccc6f2cc3dd500e36b8baae200fcac9118` |
+| 3 | `theorem` | [degree_sub_LTerm_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Groebner.lean/declarations/degree-sub-lterm-lt.md) | 67 | `result-track:4828d6709572c97d4000bf03358f595443d83c14bf6c745fc570d94a91fb4b40` |
+| 4 | `def` | [reduce](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Groebner.lean/declarations/reduce.md) | 85 | `declaration-track:6c8f5433cd15178399356a9bdbe8035b7827f3feffc97501846a465749243dbb` |
+| 5 | `theorem` | [degree_reduce_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Groebner.lean/declarations/degree-reduce-lt.md) | 89 | `result-track:bb6c7bab6a55ca5c2ef9ebeca5553c02ff01b3acd24258a20bea7bd4be31f003` |
+| 6 | `theorem` | [div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Groebner.lean/declarations/div.md) | 123 | `result-track:ec22ee0040834ea78001a96a0499a4a08317019cf83aa510a14e05f72c511758` |
+| 7 | `theorem` | [div_set](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Groebner.lean/declarations/div-set.md) | 225 | `result-track:b04714e3667e98ea71a95d39935cf3fcae11149c5b0d387bfdee9f65c7925cac` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

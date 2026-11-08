@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/StressNamespaced.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/StressNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/StressNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/StressNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/StressNamespaced.lean/declarations/example.md) | 16 | `declaration-track:503946d12e5b04707908b45a5e2fe8889219983b425ac8991d20ad8a001da1ba` |
-| 2 | `example` | [(anonymous)](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/StressNamespaced.lean/declarations/example-source-edition-3.md) | 27 | `declaration-track:ef8d8d70695cdb79ce0e10a491ada931c8b5b46daa590810857fd8df49686173` |
-| 3 | `example` | [(anonymous)](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/StressNamespaced.lean/declarations/example-source-edition-2.md) | 34 | `declaration-track:7d19473fa4c2b7927cbb9471db4cfaaaa85f85170d1989c206cfb50877ec6981` |
-| 4 | `example` | [(anonymous)](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/StressNamespaced.lean/declarations/example-source-edition-4.md) | 40 | `declaration-track:ef9aa5c3297b8a05e5d1c7392a5daebd197e58b9eafb4ffd3406bdab72581555` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/StressNamespaced.lean/declarations/example.md) | 16 | `declaration-track:503946d12e5b04707908b45a5e2fe8889219983b425ac8991d20ad8a001da1ba` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/StressNamespaced.lean/declarations/example-source-edition-3.md) | 27 | `declaration-track:ef8d8d70695cdb79ce0e10a491ada931c8b5b46daa590810857fd8df49686173` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/StressNamespaced.lean/declarations/example-source-edition-2.md) | 34 | `declaration-track:7d19473fa4c2b7927cbb9471db4cfaaaa85f85170d1989c206cfb50877ec6981` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/StressNamespaced.lean/declarations/example-source-edition-4.md) | 40 | `declaration-track:ef9aa5c3297b8a05e5d1c7392a5daebd197e58b9eafb4ffd3406bdab72581555` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/LogBudgetIntegrationControls.lean/index.md) · [Full source](../../../../NumberTheory/LogBudgetIntegrationControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LogBudgetIntegrationControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LogBudgetIntegrationControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Chebyshev.LegendreLogBudget`](../../../../NumberTheory/LegendreLogBudget.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.LegendreLogBudget`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LegendreLogBudget.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [complete_mass_identity_control](../../../../NumberTheory/LogBudgetIntegrationControls.lean/declarations/complete-mass-identity-control.md) | 26 | `result-track:5333e7a0b091192f330a5fa5c2c488bfa406e31dc56dc2577a88a683244f70c7` |
-| 2 | `theorem` | [upper_square_retained_control](../../../../NumberTheory/LogBudgetIntegrationControls.lean/declarations/upper-square-retained-control.md) | 31 | `result-track:c1f466bcc05dd431fcb780e353addd8852f6406d8e1eb00d9cd687edf62c99e5` |
-| 3 | `theorem` | [two_exponents_retained_control](../../../../NumberTheory/LogBudgetIntegrationControls.lean/declarations/two-exponents-retained-control.md) | 36 | `result-track:895b4443b72d3f262246ac73f90b80736e90e04b24cff7b3a888c5881849015b` |
-| 4 | `theorem` | [equality_budget_allows_failure_control](../../../../NumberTheory/LogBudgetIntegrationControls.lean/declarations/equality-budget-allows-failure-control.md) | 41 | `result-track:3ae963e728aebddfe7889d1f8cb6da31951c9e0214503571a24e1079fd573c89` |
-| 5 | `theorem` | [non_strict_margin_control](../../../../NumberTheory/LogBudgetIntegrationControls.lean/declarations/non-strict-margin-control.md) | 49 | `result-track:e137bff609941477e9c9242a69c9ed89271d8b0a01e2c2659d4d0bc72fac9b24` |
-| 6 | `theorem` | [empty_finite_scope_control](../../../../NumberTheory/LogBudgetIntegrationControls.lean/declarations/empty-finite-scope-control.md) | 54 | `result-track:d4f20f43197c33a3b7d6dfc7f4711285ebe8cfe83625fd33cd2c602ef2d2563d` |
+| 1 | `theorem` | [complete_mass_identity_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LogBudgetIntegrationControls.lean/declarations/complete-mass-identity-control.md) | 26 | `result-track:5333e7a0b091192f330a5fa5c2c488bfa406e31dc56dc2577a88a683244f70c7` |
+| 2 | `theorem` | [upper_square_retained_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LogBudgetIntegrationControls.lean/declarations/upper-square-retained-control.md) | 31 | `result-track:c1f466bcc05dd431fcb780e353addd8852f6406d8e1eb00d9cd687edf62c99e5` |
+| 3 | `theorem` | [two_exponents_retained_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LogBudgetIntegrationControls.lean/declarations/two-exponents-retained-control.md) | 36 | `result-track:895b4443b72d3f262246ac73f90b80736e90e04b24cff7b3a888c5881849015b` |
+| 4 | `theorem` | [equality_budget_allows_failure_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LogBudgetIntegrationControls.lean/declarations/equality-budget-allows-failure-control.md) | 41 | `result-track:3ae963e728aebddfe7889d1f8cb6da31951c9e0214503571a24e1079fd573c89` |
+| 5 | `theorem` | [non_strict_margin_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LogBudgetIntegrationControls.lean/declarations/non-strict-margin-control.md) | 49 | `result-track:e137bff609941477e9c9242a69c9ed89271d8b0a01e2c2659d4d0bc72fac9b24` |
+| 6 | `theorem` | [empty_finite_scope_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LogBudgetIntegrationControls.lean/declarations/empty-finite-scope-control.md) | 54 | `result-track:d4f20f43197c33a3b7d6dfc7f4711285ebe8cfe83625fd33cd2c602ef2d2563d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/NNRatLemmasNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/NNRatLemmasNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/NNRatLemmasNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/NNRatLemmasNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [coe_indicator](../../../../../../ComputerScience/TheoryOfData/DataStructures/NNRatLemmasNamespacedPublic.lean/declarations/coe-indicator.md) | 37 | `result-track:f07255a5fe7f7bc882f29ad2a4d1eab98896a28c273c780c59e24d99935a9e1c` |
-| 2 | `lemma` | [toNNRat_inv](../../../../../../ComputerScience/TheoryOfData/DataStructures/NNRatLemmasNamespacedPublic.lean/declarations/tonnrat-inv.md) | 49 | `result-track:b4af522578d9da3f7e6ffc11bde6dec06150b54a77ab1a3292a6eaa63901a12e` |
-| 3 | `lemma` | [toNNRat_div](../../../../../../ComputerScience/TheoryOfData/DataStructures/NNRatLemmasNamespacedPublic.lean/declarations/tonnrat-div-source-edition-2.md) | 55 | `result-track:920a91982ae9815db5a7c86811460731e4169a46e23aac29ff07e2a78f795c8d` |
-| 4 | `lemma` | [toNNRat_div'](../../../../../../ComputerScience/TheoryOfData/DataStructures/NNRatLemmasNamespacedPublic.lean/declarations/tonnrat-div.md) | 58 | `result-track:644b13150f8e3ae5f1d18becfe1073269179ec76b27a915deef72fde5f18383a` |
-| 5 | `def` | [rec](../../../../../../ComputerScience/TheoryOfData/DataStructures/NNRatLemmasNamespacedPublic.lean/declarations/rec.md) | 70 | `declaration-track:b100967e7f344d7cef61c404dca8ba5be4766005c29b8b823b138dfe4cdbb1d7` |
-| 6 | `theorem` | [mul_num](../../../../../../ComputerScience/TheoryOfData/DataStructures/NNRatLemmasNamespacedPublic.lean/declarations/mul-num.md) | 73 | `result-track:98c0d8102a38e0f5e32e697384471dfab6fe03bd266a38d3c0d20f41427b95aa` |
-| 7 | `theorem` | [mul_den](../../../../../../ComputerScience/TheoryOfData/DataStructures/NNRatLemmasNamespacedPublic.lean/declarations/mul-den.md) | 78 | `result-track:0e7100cbe56e4ed0a324268e334aded6652dadb196d92332f9088b2cf89a91e7` |
-| 8 | `theorem` | [den_mul_den_eq_den_mul_gcd](../../../../../../ComputerScience/TheoryOfData/DataStructures/NNRatLemmasNamespacedPublic.lean/declarations/den-mul-den-eq-den-mul-gcd.md) | 84 | `result-track:e0c8c87fc64dafc94a334e49a9cf9c08f9e62ae594dfafb333e1de329a73e2af` |
-| 9 | `theorem` | [num_mul_num_eq_num_mul_gcd](../../../../../../ComputerScience/TheoryOfData/DataStructures/NNRatLemmasNamespacedPublic.lean/declarations/num-mul-num-eq-num-mul-gcd.md) | 90 | `result-track:422f54862d6fc7611dcba1a04518d8999791a2dc129fb7f86c0dfe6fe1ca4a31` |
+| 1 | `lemma` | [coe_indicator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/NNRatLemmasNamespacedPublic.lean/declarations/coe-indicator.md) | 37 | `result-track:f07255a5fe7f7bc882f29ad2a4d1eab98896a28c273c780c59e24d99935a9e1c` |
+| 2 | `lemma` | [toNNRat_inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/NNRatLemmasNamespacedPublic.lean/declarations/tonnrat-inv.md) | 49 | `result-track:b4af522578d9da3f7e6ffc11bde6dec06150b54a77ab1a3292a6eaa63901a12e` |
+| 3 | `lemma` | [toNNRat_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/NNRatLemmasNamespacedPublic.lean/declarations/tonnrat-div-source-edition-2.md) | 55 | `result-track:920a91982ae9815db5a7c86811460731e4169a46e23aac29ff07e2a78f795c8d` |
+| 4 | `lemma` | [toNNRat_div'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/NNRatLemmasNamespacedPublic.lean/declarations/tonnrat-div.md) | 58 | `result-track:644b13150f8e3ae5f1d18becfe1073269179ec76b27a915deef72fde5f18383a` |
+| 5 | `def` | [rec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/NNRatLemmasNamespacedPublic.lean/declarations/rec.md) | 70 | `declaration-track:b100967e7f344d7cef61c404dca8ba5be4766005c29b8b823b138dfe4cdbb1d7` |
+| 6 | `theorem` | [mul_num](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/NNRatLemmasNamespacedPublic.lean/declarations/mul-num.md) | 73 | `result-track:98c0d8102a38e0f5e32e697384471dfab6fe03bd266a38d3c0d20f41427b95aa` |
+| 7 | `theorem` | [mul_den](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/NNRatLemmasNamespacedPublic.lean/declarations/mul-den.md) | 78 | `result-track:0e7100cbe56e4ed0a324268e334aded6652dadb196d92332f9088b2cf89a91e7` |
+| 8 | `theorem` | [den_mul_den_eq_den_mul_gcd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/NNRatLemmasNamespacedPublic.lean/declarations/den-mul-den-eq-den-mul-gcd.md) | 84 | `result-track:e0c8c87fc64dafc94a334e49a9cf9c08f9e62ae594dfafb333e1de329a73e2af` |
+| 9 | `theorem` | [num_mul_num_eq_num_mul_gcd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/NNRatLemmasNamespacedPublic.lean/declarations/num-mul-num-eq-num-mul-gcd.md) | 90 | `result-track:422f54862d6fc7611dcba1a04518d8999791a2dc129fb7f86c0dfe6fe1ca4a31` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/CountCatalanCountZero.lean/index.md) · [Full source](../../../../Combinatorics/CountCatalanCountZero.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CountCatalanCountZero.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CountCatalanCountZero.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [catalan_count_zero](../../../../Combinatorics/CountCatalanCountZero.lean/declarations/catalan-count-zero.md) | 19 | `result-track:ef6d1b0bd99cd086ab8b55107b569fb2d7855fede85ced552ab79d4236c1e594` |
-| 2 | `theorem` | [catalan_count_succ](../../../../Combinatorics/CountCatalanCountZero.lean/declarations/catalan-count-succ.md) | 23 | `result-track:c4aedff846880ec0ef9ef60b43f02deac69367cab8fb428be00843f5158cd315` |
+| 1 | `theorem` | [catalan_count_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CountCatalanCountZero.lean/declarations/catalan-count-zero.md) | 19 | `result-track:ef6d1b0bd99cd086ab8b55107b569fb2d7855fede85ced552ab79d4236c1e594` |
+| 2 | `theorem` | [catalan_count_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CountCatalanCountZero.lean/declarations/catalan-count-succ.md) | 23 | `result-track:c4aedff846880ec0ef9ef60b43f02deac69367cab8fb428be00843f5158cd315` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

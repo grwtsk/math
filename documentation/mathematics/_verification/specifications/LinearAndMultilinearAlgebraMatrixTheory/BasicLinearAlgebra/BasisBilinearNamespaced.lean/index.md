@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisBilinearNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisBilinearNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisBilinearNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisBilinearNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [ext_basis](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisBilinearNamespaced.lean/declarations/ext-basis.md) | 42 | `result-track:983eb613b70c7c4fa2e0e1d8e50ddc87176106e8ae62f1762d2ed54c67c8ca84` |
-| 2 | `theorem` | [sum_repr_mul_repr_mulₛₗ](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisBilinearNamespaced.lean/declarations/sum-repr-mul-repr-mul.md) | 49 | `result-track:92cdb2c6cb0b854185285697785fce0f13c783324d8312a659498f7b971d1fe4` |
-| 3 | `theorem` | [sum_repr_mul_repr_mul](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisBilinearNamespaced.lean/declarations/sum-repr-mul-repr-mul-source-edition-2.md) | 59 | `result-track:ce5d61fe83b87c499505a833d29df864602086d01890ea2baecd17a90d3e3623` |
+| 1 | `theorem` | [ext_basis](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisBilinearNamespaced.lean/declarations/ext-basis.md) | 42 | `result-track:983eb613b70c7c4fa2e0e1d8e50ddc87176106e8ae62f1762d2ed54c67c8ca84` |
+| 2 | `theorem` | [sum_repr_mul_repr_mulₛₗ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisBilinearNamespaced.lean/declarations/sum-repr-mul-repr-mul.md) | 49 | `result-track:92cdb2c6cb0b854185285697785fce0f13c783324d8312a659498f7b971d1fe4` |
+| 3 | `theorem` | [sum_repr_mul_repr_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisBilinearNamespaced.lean/declarations/sum-repr-mul-repr-mul-source-edition-2.md) | 59 | `result-track:ce5d61fe83b87c499505a833d29df864602086d01890ea2baecd17a90d3e3623` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

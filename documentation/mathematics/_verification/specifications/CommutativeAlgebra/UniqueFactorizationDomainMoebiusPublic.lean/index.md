@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/UniqueFactorizationDomainMoebiusPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/UniqueFactorizationDomainMoebiusPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UniqueFactorizationDomainMoebiusPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UniqueFactorizationDomainMoebiusPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [moebius](../../../../CommutativeAlgebra/UniqueFactorizationDomainMoebiusPublic.lean/declarations/moebius.md) | 34 | `declaration-track:1b936497b14ed13b386cfdf4a73f2d1d7bcc6d48e5ee96caae4847f5ea2aa96b` |
-| 2 | `theorem` | [_root_.Nat.moebius_eq](../../../../CommutativeAlgebra/UniqueFactorizationDomainMoebiusPublic.lean/declarations/root-nat-moebius-eq.md) | 39 | `result-track:ee39e8b32271e2073174df4ba83914815452dca43bff51ebaf5af3e9a211d85d` |
-| 3 | `theorem` | [_root_.Squarefree.moebius_eq](../../../../CommutativeAlgebra/UniqueFactorizationDomainMoebiusPublic.lean/declarations/root-squarefree-moebius-eq.md) | 45 | `result-track:cd618b555053788c798b0a1b2f3da676e969025f8524594ead8992febe960b25` |
-| 4 | `theorem` | [moebius_of_not_squarefree](../../../../CommutativeAlgebra/UniqueFactorizationDomainMoebiusPublic.lean/declarations/moebius-of-not-squarefree.md) | 49 | `result-track:2ade9f6daed9ebbb8a5edff03a22c52c22e03e65ccdb8046db9afb413ec115d0` |
-| 5 | `theorem` | [moebius_zero](../../../../CommutativeAlgebra/UniqueFactorizationDomainMoebiusPublic.lean/declarations/moebius-zero.md) | 52 | `result-track:c69bd8305f9007eefa2c0f45984394d8fc270a8320ce522588d0aece6be669a8` |
-| 6 | `theorem` | [moebius_one](../../../../CommutativeAlgebra/UniqueFactorizationDomainMoebiusPublic.lean/declarations/moebius-one.md) | 55 | `result-track:ad1120294bb612e892c1d6cfb6083d64d3475458e15cc3badc85815c70f8a8d9` |
-| 7 | `theorem` | [_root_.Associated.moebius_eq](../../../../CommutativeAlgebra/UniqueFactorizationDomainMoebiusPublic.lean/declarations/root-associated-moebius-eq.md) | 58 | `result-track:5cd4c17e00e36f4f0c468d7681f28a3d2a4bd7d01294a45c769cb0fe5b3edfdd` |
-| 8 | `theorem` | [_root_.IsUnit.moebius_eq](../../../../CommutativeAlgebra/UniqueFactorizationDomainMoebiusPublic.lean/declarations/root-isunit-moebius-eq.md) | 61 | `result-track:3a9a1257d3425542aa7978f5d391229d8a5b25758ac9a4f5f7436461b8389037` |
-| 9 | `theorem` | [_root_.Irreducible.moebius_eq](../../../../CommutativeAlgebra/UniqueFactorizationDomainMoebiusPublic.lean/declarations/root-irreducible-moebius-eq.md) | 64 | `result-track:d2f362db2e41f1fa8fb8964281082dae07ca06c2cfe0c4f486bd9c2d471c9800` |
-| 10 | `theorem` | [_root_.IsRelPrime.moebius_mul](../../../../CommutativeAlgebra/UniqueFactorizationDomainMoebiusPublic.lean/declarations/root-isrelprime-moebius-mul.md) | 67 | `result-track:d4b69ebb2d0d93b8f1885955eded71aa1374bbd1d874bed06a7f7a963ec19916` |
+| 1 | `def` | [moebius](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UniqueFactorizationDomainMoebiusPublic.lean/declarations/moebius.md) | 34 | `declaration-track:1b936497b14ed13b386cfdf4a73f2d1d7bcc6d48e5ee96caae4847f5ea2aa96b` |
+| 2 | `theorem` | [_root_.Nat.moebius_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UniqueFactorizationDomainMoebiusPublic.lean/declarations/root-nat-moebius-eq.md) | 39 | `result-track:ee39e8b32271e2073174df4ba83914815452dca43bff51ebaf5af3e9a211d85d` |
+| 3 | `theorem` | [_root_.Squarefree.moebius_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UniqueFactorizationDomainMoebiusPublic.lean/declarations/root-squarefree-moebius-eq.md) | 45 | `result-track:cd618b555053788c798b0a1b2f3da676e969025f8524594ead8992febe960b25` |
+| 4 | `theorem` | [moebius_of_not_squarefree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UniqueFactorizationDomainMoebiusPublic.lean/declarations/moebius-of-not-squarefree.md) | 49 | `result-track:2ade9f6daed9ebbb8a5edff03a22c52c22e03e65ccdb8046db9afb413ec115d0` |
+| 5 | `theorem` | [moebius_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UniqueFactorizationDomainMoebiusPublic.lean/declarations/moebius-zero.md) | 52 | `result-track:c69bd8305f9007eefa2c0f45984394d8fc270a8320ce522588d0aece6be669a8` |
+| 6 | `theorem` | [moebius_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UniqueFactorizationDomainMoebiusPublic.lean/declarations/moebius-one.md) | 55 | `result-track:ad1120294bb612e892c1d6cfb6083d64d3475458e15cc3badc85815c70f8a8d9` |
+| 7 | `theorem` | [_root_.Associated.moebius_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UniqueFactorizationDomainMoebiusPublic.lean/declarations/root-associated-moebius-eq.md) | 58 | `result-track:5cd4c17e00e36f4f0c468d7681f28a3d2a4bd7d01294a45c769cb0fe5b3edfdd` |
+| 8 | `theorem` | [_root_.IsUnit.moebius_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UniqueFactorizationDomainMoebiusPublic.lean/declarations/root-isunit-moebius-eq.md) | 61 | `result-track:3a9a1257d3425542aa7978f5d391229d8a5b25758ac9a4f5f7436461b8389037` |
+| 9 | `theorem` | [_root_.Irreducible.moebius_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UniqueFactorizationDomainMoebiusPublic.lean/declarations/root-irreducible-moebius-eq.md) | 64 | `result-track:d2f362db2e41f1fa8fb8964281082dae07ca06c2cfe0c4f486bd9c2d471c9800` |
+| 10 | `theorem` | [_root_.IsRelPrime.moebius_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UniqueFactorizationDomainMoebiusPublic.lean/declarations/root-isrelprime-moebius-mul.md) | 67 | `result-track:d4b69ebb2d0d93b8f1885955eded71aa1374bbd1d874bed06a7f7a963ec19916` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

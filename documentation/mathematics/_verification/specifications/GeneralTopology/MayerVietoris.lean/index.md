@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/MayerVietoris.lean/index.md) · [Full source](../../../../GeneralTopology/MayerVietoris.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MayerVietoris.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MayerVietoris.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mayerVietorisSquare'](../../../../GeneralTopology/MayerVietoris.lean/declarations/mayervietorissquare.md) | 38 | `declaration-track:3f88c875cb1dcfc1ffb17b6032c60ffde0e9da4824a5e77db013a4365aa8cf37` |
-| 2 | `def` | [mayerVietorisSquare](../../../../GeneralTopology/MayerVietoris.lean/declarations/mayervietorissquare-source-edition-2.md) | 59 | `declaration-track:b5c55494b150eb07d58bed14fd6958e3314e8b13511f525e582f99f7f83e3d73` |
+| 1 | `def` | [mayerVietorisSquare'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MayerVietoris.lean/declarations/mayervietorissquare.md) | 38 | `declaration-track:3f88c875cb1dcfc1ffb17b6032c60ffde0e9da4824a5e77db013a4365aa8cf37` |
+| 2 | `def` | [mayerVietorisSquare](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MayerVietoris.lean/declarations/mayervietorissquare-source-edition-2.md) | 59 | `declaration-track:b5c55494b150eb07d58bed14fd6958e3314e8b13511f525e582f99f7f83e3d73` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

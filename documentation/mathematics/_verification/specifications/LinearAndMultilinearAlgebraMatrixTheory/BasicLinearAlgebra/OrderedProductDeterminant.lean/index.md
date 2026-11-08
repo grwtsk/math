@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrderedProductDeterminant.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrderedProductDeterminant.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrderedProductDeterminant.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrderedProductDeterminant.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,9 +46,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.OrderedProduct`](../../../../../GroupTheoryAndGeneralizations/OrderedProduct.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.LinearAlgebra.JacobiTransfer`](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearAlgebraJacobiTransfer.lean/index.md) — import line 6; pinned internal source present.
-- [`GRWTSK.LinearAlgebra.OrderedTransfer`](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrderedTransfer.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.Algebra.OrderedProduct`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OrderedProduct.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.LinearAlgebra.JacobiTransfer`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearAlgebraJacobiTransfer.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.LinearAlgebra.OrderedTransfer`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrderedTransfer.lean/index.md) — import line 7; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [det_orderedProduct_eq_one](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrderedProductDeterminant.lean/declarations/det-orderedproduct-eq-one.md) | 48 | `result-track:6935ddfe5b97872feda767e0c32408ef41440c21f70bd74b26304a21671ca788` |
-| 2 | `theorem` | [det_weightedJacobi_orderedProduct](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrderedProductDeterminant.lean/declarations/det-weightedjacobi-orderedproduct.md) | 58 | `result-track:8828b25151d3f49a386ffbdde61cdff725bac937de7dd84999793f66be59632e` |
+| 1 | `theorem` | [det_orderedProduct_eq_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrderedProductDeterminant.lean/declarations/det-orderedproduct-eq-one.md) | 48 | `result-track:6935ddfe5b97872feda767e0c32408ef41440c21f70bd74b26304a21671ca788` |
+| 2 | `theorem` | [det_weightedJacobi_orderedProduct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrderedProductDeterminant.lean/declarations/det-weightedjacobi-orderedproduct.md) | 58 | `result-track:8828b25151d3f49a386ffbdde61cdff725bac937de7dd84999793f66be59632e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

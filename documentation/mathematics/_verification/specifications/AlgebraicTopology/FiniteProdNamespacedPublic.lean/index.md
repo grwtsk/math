@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/FiniteProdNamespacedPublic.lean/index.md) · [Full source](../../../../AlgebraicTopology/FiniteProdNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FiniteProdNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FiniteProdNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [iSup_subcomplexOfSimplex_prod_eq_top](../../../../AlgebraicTopology/FiniteProdNamespacedPublic.lean/declarations/isup-subcomplexofsimplex-prod-eq-top.md) | 42 | `result-track:54b3fb9ffd1b481d4947103af53941543ae5400e2b3a0ea18ff72f2a92626f8b` |
-| 2 | `lemma` | [Subcomplex.ofSimplexProd_eq_range](../../../../AlgebraicTopology/FiniteProdNamespacedPublic.lean/declarations/subcomplex-ofsimplexprod-eq-range.md) | 55 | `result-track:bbe3e64297974f5728ff6e15956c7374fee377b904ebf8f5406bc575fd054768` |
-| 3 | `lemma` | [hasDimensionLT_prod](../../../../AlgebraicTopology/FiniteProdNamespacedPublic.lean/declarations/hasdimensionlt-prod.md) | 61 | `result-track:4624b3930a71a2b14e912e00b8f63b737fca63b20cf2016f769ea6995ceb2765` |
-| 4 | `lemma` | [hasDimensionLE_prod](../../../../AlgebraicTopology/FiniteProdNamespacedPublic.lean/declarations/hasdimensionle-prod.md) | 74 | `result-track:993265b5630c33454247d995eb31a660bd9dea59128c621941eb3ecf83426af9` |
-| 5 | `instance` | [(anonymous)](../../../../AlgebraicTopology/FiniteProdNamespacedPublic.lean/declarations/instance.md) | 80 | `declaration-track:061b6b123825d1f04da64d5bcd4020db0d2b372d8a33f1649087426cd0e8d88a` |
-| 6 | `instance` | [(anonymous)](../../../../AlgebraicTopology/FiniteProdNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 84 | `declaration-track:57a292a613584861c15cc5c0cce52c87b58c44e0ad2dd06bc1e8cb451c9c2ba2` |
-| 7 | `instance` | [(anonymous)](../../../../AlgebraicTopology/FiniteProdNamespacedPublic.lean/declarations/instance-source-edition-4.md) | 88 | `declaration-track:b064385616da38a9d7b1e7584f2e5cbbc769269ca8fded1025afaf1e04a6c2a3` |
-| 8 | `lemma` | [finite_of_isPullback](../../../../AlgebraicTopology/FiniteProdNamespacedPublic.lean/declarations/finite-of-ispullback.md) | 94 | `result-track:b5a420b0905a0493b76f4990b612f21addb957996a7ecbbaead33e614250a575` |
-| 9 | `instance` | [(anonymous)](../../../../AlgebraicTopology/FiniteProdNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 100 | `declaration-track:928eb49088cd8e26b1820e43ad636aa4f1475a278f6644b72a7585508e396737` |
+| 1 | `lemma` | [iSup_subcomplexOfSimplex_prod_eq_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FiniteProdNamespacedPublic.lean/declarations/isup-subcomplexofsimplex-prod-eq-top.md) | 42 | `result-track:54b3fb9ffd1b481d4947103af53941543ae5400e2b3a0ea18ff72f2a92626f8b` |
+| 2 | `lemma` | [Subcomplex.ofSimplexProd_eq_range](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FiniteProdNamespacedPublic.lean/declarations/subcomplex-ofsimplexprod-eq-range.md) | 55 | `result-track:bbe3e64297974f5728ff6e15956c7374fee377b904ebf8f5406bc575fd054768` |
+| 3 | `lemma` | [hasDimensionLT_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FiniteProdNamespacedPublic.lean/declarations/hasdimensionlt-prod.md) | 61 | `result-track:4624b3930a71a2b14e912e00b8f63b737fca63b20cf2016f769ea6995ceb2765` |
+| 4 | `lemma` | [hasDimensionLE_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FiniteProdNamespacedPublic.lean/declarations/hasdimensionle-prod.md) | 74 | `result-track:993265b5630c33454247d995eb31a660bd9dea59128c621941eb3ecf83426af9` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FiniteProdNamespacedPublic.lean/declarations/instance.md) | 80 | `declaration-track:061b6b123825d1f04da64d5bcd4020db0d2b372d8a33f1649087426cd0e8d88a` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FiniteProdNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 84 | `declaration-track:57a292a613584861c15cc5c0cce52c87b58c44e0ad2dd06bc1e8cb451c9c2ba2` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FiniteProdNamespacedPublic.lean/declarations/instance-source-edition-4.md) | 88 | `declaration-track:b064385616da38a9d7b1e7584f2e5cbbc769269ca8fded1025afaf1e04a6c2a3` |
+| 8 | `lemma` | [finite_of_isPullback](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FiniteProdNamespacedPublic.lean/declarations/finite-of-ispullback.md) | 94 | `result-track:b5a420b0905a0493b76f4990b612f21addb957996a7ecbbaead33e614250a575` |
+| 9 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FiniteProdNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 100 | `declaration-track:928eb49088cd8e26b1820e43ad636aa4f1475a278f6644b72a7585508e396737` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

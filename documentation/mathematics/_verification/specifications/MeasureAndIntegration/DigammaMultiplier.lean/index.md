@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/DigammaMultiplier.lean/index.md) · [Full source](../../../../MeasureAndIntegration/DigammaMultiplier.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DigammaMultiplier.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DigammaMultiplier.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Fourier.LogarithmicDomain`](../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/LogarithmicDomain.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Fourier.LogarithmicDomain`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/LogarithmicDomain.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [archimedeanMultiplier_measurable](../../../../MeasureAndIntegration/DigammaMultiplier.lean/declarations/archimedeanmultiplier-measurable.md) | 26 | `result-track:37c3ea4baa64c37b8d3ff20f3ffed119b45ec012ef205be7eface88ec5a86a4e` |
-| 2 | `theorem` | [multiplier_abs_le_of_estimate](../../../../MeasureAndIntegration/DigammaMultiplier.lean/declarations/multiplier-abs-le-of-estimate.md) | 33 | `result-track:4f5d06497def02460025e9da9ceec7d113684fe5fe10dd7f41219a4b22b5ea44` |
-| 3 | `theorem` | [actual_archimedean_integrable_of_multiplier_estimate](../../../../MeasureAndIntegration/DigammaMultiplier.lean/declarations/actual-archimedean-integrable-of-multiplier-estimate.md) | 46 | `result-track:8e44f7540a90a2cb1304d26548a73cf854d63700ee59ddbb43f54da7c7fcfd1c` |
-| 4 | `theorem` | [normalization_admissibility_of_multiplier_estimate](../../../../MeasureAndIntegration/DigammaMultiplier.lean/declarations/normalization-admissibility-of-multiplier-estimate.md) | 72 | `result-track:f06e958cce73cb73ec257d1a77e42ef056ddcc28bab1d8257ea6d413e40c4969` |
+| 1 | `theorem` | [archimedeanMultiplier_measurable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DigammaMultiplier.lean/declarations/archimedeanmultiplier-measurable.md) | 26 | `result-track:37c3ea4baa64c37b8d3ff20f3ffed119b45ec012ef205be7eface88ec5a86a4e` |
+| 2 | `theorem` | [multiplier_abs_le_of_estimate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DigammaMultiplier.lean/declarations/multiplier-abs-le-of-estimate.md) | 33 | `result-track:4f5d06497def02460025e9da9ceec7d113684fe5fe10dd7f41219a4b22b5ea44` |
+| 3 | `theorem` | [actual_archimedean_integrable_of_multiplier_estimate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DigammaMultiplier.lean/declarations/actual-archimedean-integrable-of-multiplier-estimate.md) | 46 | `result-track:8e44f7540a90a2cb1304d26548a73cf854d63700ee59ddbb43f54da7c7fcfd1c` |
+| 4 | `theorem` | [normalization_admissibility_of_multiplier_estimate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DigammaMultiplier.lean/declarations/normalization-admissibility-of-multiplier-estimate.md) | 72 | `result-track:f06e958cce73cb73ec257d1a77e42ef056ddcc28bab1d8257ea6d413e40c4969` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

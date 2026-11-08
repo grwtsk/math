@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PredicatePreservingCodecLift.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PredicatePreservingCodecLift.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PredicatePreservingCodecLift.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PredicatePreservingCodecLift.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -49,7 +49,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 - `BooleanMatrix.Codec.Core` — import line 19; external provider; requires a separately pinned dependency.
 - `BooleanMatrix.Matrix.Core` — import line 20; external provider; requires a separately pinned dependency.
 - `BooleanMatrix.TypedApplication` — import line 21; external provider; requires a separately pinned dependency.
-- [Defaulted Codec Transport](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DefaultedCodecTransport.lean/index.md) — import line 23; pinned internal source present.
+- [Defaulted Codec Transport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DefaultedCodecTransport.lean/index.md) — import line 23; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -60,7 +60,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [typedLift](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PredicatePreservingCodecLift.lean/declarations/typedlift.md) | 37 | `declaration-track:8716ad77fea20508774fbcae3a59c5f18ebbe7f3753ea43a28663a51362f1586` |
+| 1 | `def` | [typedLift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PredicatePreservingCodecLift.lean/declarations/typedlift.md) | 37 | `declaration-track:8716ad77fea20508774fbcae3a59c5f18ebbe7f3753ea43a28663a51362f1586` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/SectionNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/SectionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SectionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SectionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Section](../../../../Combinatorics/SectionNamespaced.lean/declarations/section.md) | 29 | `declaration-track:b213b0ac6b27c05ad5c6e250bb7ab8cdda5da222738841a922bd84086ff63458` |
-| 2 | `abbrev` | [CatalanSection](../../../../Combinatorics/SectionNamespaced.lean/declarations/catalansection.md) | 32 | `declaration-track:d064dcf5b9cdf587e3fe3f91ca78c6d83bd4585747de15694a373e1c4b4385f3` |
+| 1 | `structure` | [Section](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SectionNamespaced.lean/declarations/section.md) | 29 | `declaration-track:b213b0ac6b27c05ad5c6e250bb7ab8cdda5da222738841a922bd84086ff63458` |
+| 2 | `abbrev` | [CatalanSection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SectionNamespaced.lean/declarations/catalansection.md) | 32 | `declaration-track:d064dcf5b9cdf587e3fe3f91ca78c6d83bd4585747de15694a373e1c4b4385f3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CMRegularBaseChange.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CMRegularBaseChange.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CMRegularBaseChange.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CMRegularBaseChange.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.AlgebraicGeometry.Hodge.CMEmbeddingEigenspaces`](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CMEmbeddingEigenspaces.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.AlgebraicGeometry.Hodge.CMEmbeddingEigenspaces`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CMEmbeddingEigenspaces.lean/index.md) — import line 5; pinned internal source present.
 - `Mathlib.LinearAlgebra.TensorProduct.Tower` — import line 6; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [regularAction](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CMRegularBaseChange.lean/declarations/regularaction.md) | 36 | `declaration-track:299ea4f732b700d4307b7668a6a84e7d83b183b505c48fe43c0cbafe8fc77339` |
-| 2 | `theorem` | [regularAction_tmul](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CMRegularBaseChange.lean/declarations/regularaction-tmul.md) | 41 | `result-track:3af33fb356f3268387e0cd241bc18269bf3ff789be539706f7834ee3bb8c53d6` |
-| 3 | `def` | [embeddingEigenspace](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CMRegularBaseChange.lean/declarations/embeddingeigenspace.md) | 47 | `declaration-track:01abef81690dadae2c0421d5ffea3599d5a23ac3cd67a0b9e6c11cb7344ce6b3` |
-| 4 | `theorem` | [mem_embeddingEigenspace_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CMRegularBaseChange.lean/declarations/mem-embeddingeigenspace-iff.md) | 51 | `result-track:0b54150f4698502f6d9469dea92f579f8bdc67d66f30304b4238388763ca0984` |
-| 5 | `def` | [eigenlineRealization](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CMRegularBaseChange.lean/declarations/eigenlinerealization.md) | 61 | `declaration-track:3d32424a34a42e291618e9465c2036c7e8ab088c634fa4df29e8801872adb73b` |
+| 1 | `def` | [regularAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CMRegularBaseChange.lean/declarations/regularaction.md) | 36 | `declaration-track:299ea4f732b700d4307b7668a6a84e7d83b183b505c48fe43c0cbafe8fc77339` |
+| 2 | `theorem` | [regularAction_tmul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CMRegularBaseChange.lean/declarations/regularaction-tmul.md) | 41 | `result-track:3af33fb356f3268387e0cd241bc18269bf3ff789be539706f7834ee3bb8c53d6` |
+| 3 | `def` | [embeddingEigenspace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CMRegularBaseChange.lean/declarations/embeddingeigenspace.md) | 47 | `declaration-track:01abef81690dadae2c0421d5ffea3599d5a23ac3cd67a0b9e6c11cb7344ce6b3` |
+| 4 | `theorem` | [mem_embeddingEigenspace_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CMRegularBaseChange.lean/declarations/mem-embeddingeigenspace-iff.md) | 51 | `result-track:0b54150f4698502f6d9469dea92f579f8bdc67d66f30304b4238388763ca0984` |
+| 5 | `def` | [eigenlineRealization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CMRegularBaseChange.lean/declarations/eigenlinerealization.md) | 61 | `declaration-track:3d32424a34a42e291618e9465c2036c7e8ab088c634fa4df29e8801872adb73b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

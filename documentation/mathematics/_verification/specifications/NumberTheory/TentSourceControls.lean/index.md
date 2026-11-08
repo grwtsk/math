@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/TentSourceControls.lean/index.md) · [Full source](../../../../NumberTheory/TentSourceControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentSourceControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentSourceControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Chebyshev.TentSource`](../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TentSource.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.TentMellinKernel`](../../../../MeasureAndIntegration/TentMellinKernel.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.TentSource`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TentSource.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.TentMellinKernel`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentMellinKernel.lean/index.md) — import line 5; pinned internal source present.
 - `Mathlib.Tactic.NormNum` — import line 6; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [endpoints_vanish](../../../../NumberTheory/TentSourceControls.lean/declarations/endpoints-vanish.md) | 18 | `result-track:7a708be6b08376a311a4f6f412f0ddbf1d22df2c8daddec50d149c49141ffc73` |
-| 2 | `theorem` | [center_has_unit_weight](../../../../NumberTheory/TentSourceControls.lean/declarations/center-has-unit-weight.md) | 21 | `result-track:d727a83fc62a2505474a1fe783a8617c64494323b2b1b3685aa60e46cdd69051` |
-| 3 | `theorem` | [outside_has_zero_weight](../../../../NumberTheory/TentSourceControls.lean/declarations/outside-has-zero-weight.md) | 24 | `result-track:d699b69762cad28a5fdc546ef917ce7d178e734e2afaf78130d92f7f81587cbc` |
-| 4 | `theorem` | [power_endpoint_weights](../../../../NumberTheory/TentSourceControls.lean/declarations/power-endpoint-weights.md) | 28 | `result-track:f52f5b78a2be591f9d4750a5b4009fa1250d5c4fd1e0640c456ec8daacf07a02` |
-| 5 | `theorem` | [radius_not_diameter](../../../../NumberTheory/TentSourceControls.lean/declarations/radius-not-diameter.md) | 33 | `result-track:3495801a8ec98c7c0259109fa606603569e9a81c132980ed4ee815c10b92bac4` |
-| 6 | `theorem` | [closed_support_is_not_positive](../../../../NumberTheory/TentSourceControls.lean/declarations/closed-support-is-not-positive.md) | 39 | `result-track:5bfe0bbf793803695533f6578e99cbcdd82e5f3ab705066dfc4b2cc92f8b0e02` |
-| 7 | `theorem` | [removable_parameter_guards](../../../../NumberTheory/TentSourceControls.lean/declarations/removable-parameter-guards.md) | 44 | `result-track:0cb991f0c119128a6be245f6bf3df2d4ba2ac84e3db371a39af5251b42311457` |
-| 8 | `theorem` | [kernel_one_control](../../../../NumberTheory/TentSourceControls.lean/declarations/kernel-one-control.md) | 49 | `result-track:39203c90439d28e0232e051e01d73cc1836f2bed9026eb3eaa30bbb0193f9f12` |
+| 1 | `theorem` | [endpoints_vanish](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentSourceControls.lean/declarations/endpoints-vanish.md) | 18 | `result-track:7a708be6b08376a311a4f6f412f0ddbf1d22df2c8daddec50d149c49141ffc73` |
+| 2 | `theorem` | [center_has_unit_weight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentSourceControls.lean/declarations/center-has-unit-weight.md) | 21 | `result-track:d727a83fc62a2505474a1fe783a8617c64494323b2b1b3685aa60e46cdd69051` |
+| 3 | `theorem` | [outside_has_zero_weight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentSourceControls.lean/declarations/outside-has-zero-weight.md) | 24 | `result-track:d699b69762cad28a5fdc546ef917ce7d178e734e2afaf78130d92f7f81587cbc` |
+| 4 | `theorem` | [power_endpoint_weights](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentSourceControls.lean/declarations/power-endpoint-weights.md) | 28 | `result-track:f52f5b78a2be591f9d4750a5b4009fa1250d5c4fd1e0640c456ec8daacf07a02` |
+| 5 | `theorem` | [radius_not_diameter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentSourceControls.lean/declarations/radius-not-diameter.md) | 33 | `result-track:3495801a8ec98c7c0259109fa606603569e9a81c132980ed4ee815c10b92bac4` |
+| 6 | `theorem` | [closed_support_is_not_positive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentSourceControls.lean/declarations/closed-support-is-not-positive.md) | 39 | `result-track:5bfe0bbf793803695533f6578e99cbcdd82e5f3ab705066dfc4b2cc92f8b0e02` |
+| 7 | `theorem` | [removable_parameter_guards](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentSourceControls.lean/declarations/removable-parameter-guards.md) | 44 | `result-track:0cb991f0c119128a6be245f6bf3df2d4ba2ac84e3db371a39af5251b42311457` |
+| 8 | `theorem` | [kernel_one_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentSourceControls.lean/declarations/kernel-one-control.md) | 49 | `result-track:39203c90439d28e0232e051e01d73cc1836f2bed9026eb3eaa30bbb0193f9f12` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

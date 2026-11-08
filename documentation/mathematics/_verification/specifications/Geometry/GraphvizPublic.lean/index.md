@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Geometry/GraphvizPublic.lean/index.md) · [Full source](../../../../Geometry/GraphvizPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/GraphvizPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/GraphvizPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ClickNodeDemo.Props](../../../../Geometry/GraphvizPublic.lean/declarations/clicknodedemo-props.md) | 33 | `declaration-track:9369ca0db771033738424b2213c781c0fb9bd772210e035889d85eba04556c10` |
-| 2 | `def` | [ClickNodeDemo](../../../../Geometry/GraphvizPublic.lean/declarations/clicknodedemo.md) | 38 | `declaration-track:9be4316d0b3c4ee31a85b7e868ea4208d684292b56fa059f594c24bd8c6ea2f1` |
+| 1 | `structure` | [ClickNodeDemo.Props](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/GraphvizPublic.lean/declarations/clicknodedemo-props.md) | 33 | `declaration-track:9369ca0db771033738424b2213c781c0fb9bd772210e035889d85eba04556c10` |
+| 2 | `def` | [ClickNodeDemo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/GraphvizPublic.lean/declarations/clicknodedemo.md) | 38 | `declaration-track:9be4316d0b3c4ee31a85b7e868ea4208d684292b56fa059f594c24bd8c6ea2f1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

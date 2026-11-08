@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/MatchNamespacedPublicMkAuxiliaryMatchTerm.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/MatchNamespacedPublicMkAuxiliaryMatchTerm.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/MatchNamespacedPublicMkAuxiliaryMatchTerm.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/MatchNamespacedPublicMkAuxiliaryMatchTerm.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mkAuxiliaryMatchTerm](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/MatchNamespacedPublicMkAuxiliaryMatchTerm.lean/declarations/mkauxiliarymatchterm.md) | 27 | `declaration-track:6375a3858ccd638c2001d78753c960627b303c94286946b9575ada4e9e921889` |
-| 2 | `def` | [evalMatch](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/MatchNamespacedPublicMkAuxiliaryMatchTerm.lean/declarations/evalmatch.md) | 63 | `declaration-track:5ad1744187aac4e2ad5cb126a747bd03bc065e106106d7cd287ad9a1472072f1` |
+| 1 | `def` | [mkAuxiliaryMatchTerm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/MatchNamespacedPublicMkAuxiliaryMatchTerm.lean/declarations/mkauxiliarymatchterm.md) | 27 | `declaration-track:6375a3858ccd638c2001d78753c960627b303c94286946b9575ada4e9e921889` |
+| 2 | `def` | [evalMatch](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/MatchNamespacedPublicMkAuxiliaryMatchTerm.lean/declarations/evalmatch.md) | 63 | `declaration-track:5ad1744187aac4e2ad5cb126a747bd03bc065e106106d7cd287ad9a1472072f1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

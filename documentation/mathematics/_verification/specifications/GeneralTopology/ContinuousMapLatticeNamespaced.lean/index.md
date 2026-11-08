@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ContinuousMapLatticeNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/ContinuousMapLatticeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousMapLatticeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousMapLatticeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,10 +60,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [instMulLeftMono](../../../../GeneralTopology/ContinuousMapLatticeNamespaced.lean/declarations/instmulleftmono.md) | 39 | `declaration-track:eba811223da461b550bc528abee9b5f52404c2a55701003536a41e5bf2112a44` |
-| 2 | `instance` | [instMulRightMono](../../../../GeneralTopology/ContinuousMapLatticeNamespaced.lean/declarations/instmulrightmono.md) | 44 | `declaration-track:36b62bea675850c6b55150b5ba67d8bc289f93626ae53c13c8efbff78291fa62` |
-| 3 | `lemma` | [coe_mabs](../../../../GeneralTopology/ContinuousMapLatticeNamespaced.lean/declarations/coe-mabs.md) | 51 | `result-track:88dd2bdd932c59e13e07bda3bf88658fdc73899bacd25796d29b50803380d37e` |
-| 4 | `lemma` | [mabs_apply](../../../../GeneralTopology/ContinuousMapLatticeNamespaced.lean/declarations/mabs-apply.md) | 54 | `result-track:4ef0ca63d88f00289f3f3e40e43344bf690e7a4a1a14c02cab178739169205eb` |
+| 1 | `instance` | [instMulLeftMono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousMapLatticeNamespaced.lean/declarations/instmulleftmono.md) | 39 | `declaration-track:eba811223da461b550bc528abee9b5f52404c2a55701003536a41e5bf2112a44` |
+| 2 | `instance` | [instMulRightMono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousMapLatticeNamespaced.lean/declarations/instmulrightmono.md) | 44 | `declaration-track:36b62bea675850c6b55150b5ba67d8bc289f93626ae53c13c8efbff78291fa62` |
+| 3 | `lemma` | [coe_mabs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousMapLatticeNamespaced.lean/declarations/coe-mabs.md) | 51 | `result-track:88dd2bdd932c59e13e07bda3bf88658fdc73899bacd25796d29b50803380d37e` |
+| 4 | `lemma` | [mabs_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ContinuousMapLatticeNamespaced.lean/declarations/mabs-apply.md) | 54 | `result-track:4ef0ca63d88f00289f3f3e40e43344bf690e7a4a1a14c02cab178739169205eb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

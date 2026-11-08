@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/MetadataAssertionNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/MetadataAssertionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MetadataAssertionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MetadataAssertionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [MetadataAssertion](../../../../../ComputerScience/AlgorithmsInComputerScience/MetadataAssertionNamespaced.lean/declarations/metadataassertion.md) | 15 | `declaration-track:3356b1a44b128482aafb5225b4492ba929728c036011c2195c2ca1248383069b` |
-| 2 | `structure` | [SomeMetadataAssertion](../../../../../ComputerScience/AlgorithmsInComputerScience/MetadataAssertionNamespaced.lean/declarations/somemetadataassertion.md) | 22 | `declaration-track:aa30150a11bf24e4ecf4f95d3f85f7fd2f308a92b816b2c16ebb111541282f4a` |
-| 3 | `structure` | [MetadataProfile](../../../../../ComputerScience/AlgorithmsInComputerScience/MetadataAssertionNamespaced.lean/declarations/metadataprofile.md) | 26 | `declaration-track:7afee1dcc622d376cf13f55f600c11cc3c08cbb0b50c4d2a8571b7a6758554d2` |
+| 1 | `structure` | [MetadataAssertion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MetadataAssertionNamespaced.lean/declarations/metadataassertion.md) | 15 | `declaration-track:3356b1a44b128482aafb5225b4492ba929728c036011c2195c2ca1248383069b` |
+| 2 | `structure` | [SomeMetadataAssertion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MetadataAssertionNamespaced.lean/declarations/somemetadataassertion.md) | 22 | `declaration-track:aa30150a11bf24e4ecf4f95d3f85f7fd2f308a92b816b2c16ebb111541282f4a` |
+| 3 | `structure` | [MetadataProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MetadataAssertionNamespaced.lean/declarations/metadataprofile.md) | 26 | `declaration-track:7afee1dcc622d376cf13f55f600c11cc3c08cbb0b50c4d2a8571b7a6758554d2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogCumulativeCutoff.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogCumulativeCutoff.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogCumulativeCutoff.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogCumulativeCutoff.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogWeightedPrefix`](../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredMobiusLogWeightedPrefix.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.GreenHarmonicQuadrature`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/GreenHarmonicQuadrature.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogWeightedPrefix`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredMobiusLogWeightedPrefix.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.GreenHarmonicQuadrature`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/GreenHarmonicQuadrature.lean/index.md) — import line 6; pinned internal source present.
 - `Mathlib.Tactic` — import line 7; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [centeredGreenCutoff](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogCumulativeCutoff.lean/declarations/centeredgreencutoff.md) | 16 | `declaration-track:8e746acbce5627e7fd0817f63824d0c78570a87367932a24e4a518d154183331` |
-| 2 | `theorem` | [centeredGreenCutoff_bounds](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogCumulativeCutoff.lean/declarations/centeredgreencutoff-bounds.md) | 19 | `result-track:0c3b04b525db32c0faeef9d16639356f16126596eea2af5ad621905ec8842fe9` |
-| 3 | `theorem` | [location_le_iff_le_cutoff](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogCumulativeCutoff.lean/declarations/location-le-iff-le-cutoff.md) | 34 | `result-track:82efa3868daf656e4be54aab5244e7b7002b22965d4643b6632ca309d7c71488` |
-| 4 | `theorem` | [thinHistoricalAtomicCumulative_eq_weightedPrefix](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogCumulativeCutoff.lean/declarations/thinhistoricalatomiccumulative-eq-weightedprefix.md) | 46 | `result-track:eb5b1174b91e68b97634ab3a9fffc70184e9228b0f2df5a429ee853bd7061788` |
-| 5 | `def` | [centeredGreenBaselinePrefixResidual](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogCumulativeCutoff.lean/declarations/centeredgreenbaselineprefixresidual.md) | 71 | `declaration-track:f7e072b717135fd3e73c29ab71abd06aacd6290fe37806dd8e76ef4762b7728c` |
-| 6 | `theorem` | [abs_centeredGreenBaselinePrefixResidual_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogCumulativeCutoff.lean/declarations/abs-centeredgreenbaselineprefixresidual-le.md) | 77 | `result-track:d589ada17ca75dee015ad481014cc62d11abeb3db50253fad967b4ea35ff4262` |
+| 1 | `def` | [centeredGreenCutoff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogCumulativeCutoff.lean/declarations/centeredgreencutoff.md) | 16 | `declaration-track:8e746acbce5627e7fd0817f63824d0c78570a87367932a24e4a518d154183331` |
+| 2 | `theorem` | [centeredGreenCutoff_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogCumulativeCutoff.lean/declarations/centeredgreencutoff-bounds.md) | 19 | `result-track:0c3b04b525db32c0faeef9d16639356f16126596eea2af5ad621905ec8842fe9` |
+| 3 | `theorem` | [location_le_iff_le_cutoff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogCumulativeCutoff.lean/declarations/location-le-iff-le-cutoff.md) | 34 | `result-track:82efa3868daf656e4be54aab5244e7b7002b22965d4643b6632ca309d7c71488` |
+| 4 | `theorem` | [thinHistoricalAtomicCumulative_eq_weightedPrefix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogCumulativeCutoff.lean/declarations/thinhistoricalatomiccumulative-eq-weightedprefix.md) | 46 | `result-track:eb5b1174b91e68b97634ab3a9fffc70184e9228b0f2df5a429ee853bd7061788` |
+| 5 | `def` | [centeredGreenBaselinePrefixResidual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogCumulativeCutoff.lean/declarations/centeredgreenbaselineprefixresidual.md) | 71 | `declaration-track:f7e072b717135fd3e73c29ab71abd06aacd6290fe37806dd8e76ef4762b7728c` |
+| 6 | `theorem` | [abs_centeredGreenBaselinePrefixResidual_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogCumulativeCutoff.lean/declarations/abs-centeredgreenbaselineprefixresidual-le.md) | 77 | `result-track:d589ada17ca75dee015ad481014cc62d11abeb3db50253fad967b4ea35ff4262` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

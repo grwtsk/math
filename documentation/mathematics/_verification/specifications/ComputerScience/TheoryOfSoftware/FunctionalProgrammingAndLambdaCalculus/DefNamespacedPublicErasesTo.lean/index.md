@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DefNamespacedPublicErasesTo.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DefNamespacedPublicErasesTo.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DefNamespacedPublicErasesTo.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DefNamespacedPublicErasesTo.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ErasesTo](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DefNamespacedPublicErasesTo.lean/declarations/erasesto.md) | 40 | `declaration-track:00bc611ab0a3b01dcd08a3518b632b1e167c2ea3a46ea4123a2e4f86cc41deaa` |
-| 2 | `structure` | [Ensures](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DefNamespacedPublicErasesTo.lean/declarations/ensures.md) | 47 | `declaration-track:65dcdeee7f99ae16885f7eea08d2bc650ae16587150866d05fa8853875d5f1d7` |
-| 3 | `structure` | [MayReturn](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DefNamespacedPublicErasesTo.lean/declarations/mayreturn.md) | 54 | `declaration-track:83fece82832afcbba1197edca9bf722036fce58b7edbbd085872f3781e2b35f1` |
-| 4 | `structure` | [IsAttach](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DefNamespacedPublicErasesTo.lean/declarations/isattach.md) | 61 | `declaration-track:498afcec82c108b9f9949179836279268d8493dc0ae21ae563bc3e034e80117e` |
+| 1 | `structure` | [ErasesTo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DefNamespacedPublicErasesTo.lean/declarations/erasesto.md) | 40 | `declaration-track:00bc611ab0a3b01dcd08a3518b632b1e167c2ea3a46ea4123a2e4f86cc41deaa` |
+| 2 | `structure` | [Ensures](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DefNamespacedPublicErasesTo.lean/declarations/ensures.md) | 47 | `declaration-track:65dcdeee7f99ae16885f7eea08d2bc650ae16587150866d05fa8853875d5f1d7` |
+| 3 | `structure` | [MayReturn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DefNamespacedPublicErasesTo.lean/declarations/mayreturn.md) | 54 | `declaration-track:83fece82832afcbba1197edca9bf722036fce58b7edbbd085872f3781e2b35f1` |
+| 4 | `structure` | [IsAttach](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DefNamespacedPublicErasesTo.lean/declarations/isattach.md) | 61 | `declaration-track:498afcec82c108b9f9949179836279268d8493dc0ae21ae563bc3e034e80117e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

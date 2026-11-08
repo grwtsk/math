@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/WrongColorHistoricalSourceEdition2.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/WrongColorHistoricalSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/WrongColorHistoricalSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/WrongColorHistoricalSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Combinatorics.GraphTheory.UnitDistanceGraph.Moser`](../../../../../Combinatorics/GraphTheory/UnitDistanceGraphMoser.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Combinatorics.GraphTheory.UnitDistanceGraph.Moser`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/UnitDistanceGraphMoser.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [badColor](../../../../../Combinatorics/GraphTheory/WrongColorHistoricalSourceEdition2.lean/declarations/badcolor.md) | 3 | `declaration-track:02463b6ea33c45b802db0541a744cbbef6ef65509e306ebc03bfe462cc6d3785` |
-| 2 | `example` | [(anonymous)](../../../../../Combinatorics/GraphTheory/WrongColorHistoricalSourceEdition2.lean/declarations/example.md) | 4 | `declaration-track:f95348d6f59cb241153301de94ce07529d691b14927c5306e0de9d579e69560b` |
+| 1 | `def` | [badColor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/WrongColorHistoricalSourceEdition2.lean/declarations/badcolor.md) | 3 | `declaration-track:02463b6ea33c45b802db0541a744cbbef6ef65509e306ebc03bfe462cc6d3785` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/WrongColorHistoricalSourceEdition2.lean/declarations/example.md) | 4 | `declaration-track:f95348d6f59cb241153301de94ce07529d691b14927c5306e0de9d579e69560b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

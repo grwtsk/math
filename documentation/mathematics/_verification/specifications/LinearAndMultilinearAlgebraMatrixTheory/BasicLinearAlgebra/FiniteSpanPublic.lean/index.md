@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteSpanPublic.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteSpanPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteSpanPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteSpanPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [LinearEquiv.isOfFinOrder_of_finite_of_span_eq_top_of_mapsTo](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteSpanPublic.lean/declarations/linearequiv-isoffinorder-of-finite-of-span-eq-top-of-mapsto.md) | 24 | `result-track:01d9b8b4f3a8b9cc3e38b31713f9f7bcd9ac5358a0c0d12e2dc81c55d1d2e526` |
+| 1 | `lemma` | [LinearEquiv.isOfFinOrder_of_finite_of_span_eq_top_of_mapsTo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteSpanPublic.lean/declarations/linearequiv-isoffinorder-of-finite-of-span-eq-top-of-mapsto.md) | 24 | `result-track:01d9b8b4f3a8b9cc3e38b31713f9f7bcd9ac5358a0c0d12e2dc81c55d1d2e526` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

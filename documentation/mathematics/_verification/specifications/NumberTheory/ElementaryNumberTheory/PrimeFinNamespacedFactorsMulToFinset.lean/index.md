@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/PrimeFinNamespacedFactorsMulToFinset.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/PrimeFinNamespacedFactorsMulToFinset.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/PrimeFinNamespacedFactorsMulToFinset.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/PrimeFinNamespacedFactorsMulToFinset.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [infinite_setOf_prime](../../../../../NumberTheory/ElementaryNumberTheory/PrimeFinNamespacedFactorsMulToFinset.lean/declarations/infinite-setof-prime.md) | 30 | `result-track:0e5601ced3971c640d4befdd15d1034b80001520125c260bc0f3dbefe9cb9610` |
-| 2 | `instance` | [Primes.infinite](../../../../../NumberTheory/ElementaryNumberTheory/PrimeFinNamespacedFactorsMulToFinset.lean/declarations/primes-infinite.md) | 34 | `declaration-track:ee8abe3672b75fc6eec32ff2ac67865145b19ae381d6fdcb62710b92f4f1f9c5` |
-| 3 | `instance` | [Primes.countable](../../../../../NumberTheory/ElementaryNumberTheory/PrimeFinNamespacedFactorsMulToFinset.lean/declarations/primes-countable.md) | 36 | `declaration-track:a02a984a8b43a63453eb2d8d2a01ebe0e88908ca15dc756997369513d7c662f3` |
-| 4 | `theorem` | [factors_mul_toFinset](../../../../../NumberTheory/ElementaryNumberTheory/PrimeFinNamespacedFactorsMulToFinset.lean/declarations/factors-mul-tofinset.md) | 39 | `result-track:fb7d23424222160d8fa937b318388c5312b70261a9c232f08440d0ab88a12257` |
-| 5 | `theorem` | [pow_succ_factors_toFinset](../../../../../NumberTheory/ElementaryNumberTheory/PrimeFinNamespacedFactorsMulToFinset.lean/declarations/pow-succ-factors-tofinset.md) | 45 | `result-track:2b00419a45b96b663ba6aded3a302a52eb938536ff20c630b9e076e04de0f251` |
-| 6 | `theorem` | [pow_factors_toFinset](../../../../../NumberTheory/ElementaryNumberTheory/PrimeFinNamespacedFactorsMulToFinset.lean/declarations/pow-factors-tofinset.md) | 54 | `result-track:2ec6076a3ad6ff7841bc74fa3ed9d6844536cdb52983b064217f9df096f944a7` |
-| 7 | `theorem` | [prime_pow_prime_divisor](../../../../../NumberTheory/ElementaryNumberTheory/PrimeFinNamespacedFactorsMulToFinset.lean/declarations/prime-pow-prime-divisor.md) | 62 | `result-track:7bc0959b32c7b4872130c6c2be13dddb340bf3a372f263ee12c32b00c32bbb5a` |
-| 8 | `theorem` | [factors_mul_toFinset_of_coprime](../../../../../NumberTheory/ElementaryNumberTheory/PrimeFinNamespacedFactorsMulToFinset.lean/declarations/factors-mul-tofinset-of-coprime.md) | 66 | `result-track:c25c519ad0d70bdaf78239ea7043b6c708fee629694093b387699cf565443505` |
+| 1 | `theorem` | [infinite_setOf_prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/PrimeFinNamespacedFactorsMulToFinset.lean/declarations/infinite-setof-prime.md) | 30 | `result-track:0e5601ced3971c640d4befdd15d1034b80001520125c260bc0f3dbefe9cb9610` |
+| 2 | `instance` | [Primes.infinite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/PrimeFinNamespacedFactorsMulToFinset.lean/declarations/primes-infinite.md) | 34 | `declaration-track:ee8abe3672b75fc6eec32ff2ac67865145b19ae381d6fdcb62710b92f4f1f9c5` |
+| 3 | `instance` | [Primes.countable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/PrimeFinNamespacedFactorsMulToFinset.lean/declarations/primes-countable.md) | 36 | `declaration-track:a02a984a8b43a63453eb2d8d2a01ebe0e88908ca15dc756997369513d7c662f3` |
+| 4 | `theorem` | [factors_mul_toFinset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/PrimeFinNamespacedFactorsMulToFinset.lean/declarations/factors-mul-tofinset.md) | 39 | `result-track:fb7d23424222160d8fa937b318388c5312b70261a9c232f08440d0ab88a12257` |
+| 5 | `theorem` | [pow_succ_factors_toFinset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/PrimeFinNamespacedFactorsMulToFinset.lean/declarations/pow-succ-factors-tofinset.md) | 45 | `result-track:2b00419a45b96b663ba6aded3a302a52eb938536ff20c630b9e076e04de0f251` |
+| 6 | `theorem` | [pow_factors_toFinset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/PrimeFinNamespacedFactorsMulToFinset.lean/declarations/pow-factors-tofinset.md) | 54 | `result-track:2ec6076a3ad6ff7841bc74fa3ed9d6844536cdb52983b064217f9df096f944a7` |
+| 7 | `theorem` | [prime_pow_prime_divisor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/PrimeFinNamespacedFactorsMulToFinset.lean/declarations/prime-pow-prime-divisor.md) | 62 | `result-track:7bc0959b32c7b4872130c6c2be13dddb340bf3a372f263ee12c32b00c32bbb5a` |
+| 8 | `theorem` | [factors_mul_toFinset_of_coprime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/PrimeFinNamespacedFactorsMulToFinset.lean/declarations/factors-mul-tofinset-of-coprime.md) | 66 | `result-track:c25c519ad0d70bdaf78239ea7043b6c708fee629694093b387699cf565443505` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

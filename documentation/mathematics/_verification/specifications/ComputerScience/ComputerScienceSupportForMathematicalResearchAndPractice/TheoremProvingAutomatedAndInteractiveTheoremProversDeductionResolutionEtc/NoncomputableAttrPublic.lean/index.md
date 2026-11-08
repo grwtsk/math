@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/NoncomputableAttrPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/NoncomputableAttrPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/NoncomputableAttrPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/NoncomputableAttrPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `builtin_initialize` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/NoncomputableAttrPublic.lean/declarations/builtin-initialize.md) | 16 | `declaration-track:40a13808b378c15fa7f3d59e98e690cab15d0d5041678edd54749b8322d48992` |
-| 2 | `def` | [addNoncomputable](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/NoncomputableAttrPublic.lean/declarations/addnoncomputable.md) | 19 | `declaration-track:fa6e4f9ecbc0f99968f07570f560f1d28818ee0f542fc0bd2a19a236a0f97db3` |
-| 3 | `def` | [isNoncomputable](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/NoncomputableAttrPublic.lean/declarations/isnoncomputable.md) | 25 | `declaration-track:c6fe1f18012d5e9df9bfb753b1420341fb3576cdf474a930c7904b44152ac62f` |
+| 1 | `builtin_initialize` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/NoncomputableAttrPublic.lean/declarations/builtin-initialize.md) | 16 | `declaration-track:40a13808b378c15fa7f3d59e98e690cab15d0d5041678edd54749b8322d48992` |
+| 2 | `def` | [addNoncomputable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/NoncomputableAttrPublic.lean/declarations/addnoncomputable.md) | 19 | `declaration-track:fa6e4f9ecbc0f99968f07570f560f1d28818ee0f542fc0bd2a19a236a0f97db3` |
+| 3 | `def` | [isNoncomputable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/NoncomputableAttrPublic.lean/declarations/isnoncomputable.md) | 25 | `declaration-track:c6fe1f18012d5e9df9bfb753b1420341fb3576cdf474a930c7904b44152ac62f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

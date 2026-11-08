@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/PositiveDyadicKernel.lean/index.md) · [Full source](../../../../RealFunctions/PositiveDyadicKernel.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PositiveDyadicKernel.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PositiveDyadicKernel.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Series.DyadicKernel`](../../../../RealFunctions/SeriesDyadicKernel.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.Analysis.Series.DyadicKernel`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SeriesDyadicKernel.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Topology.Algebra.InfiniteSum.Group` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [kernel_generic](../../../../RealFunctions/PositiveDyadicKernel.lean/declarations/kernel-generic.md) | 8 | `result-track:1130d24edb3bee4e6c90b4644b40b64625e3f0703158b5f61edae333255f031b` |
-| 2 | `theorem` | [kernel_one_one_two](../../../../RealFunctions/PositiveDyadicKernel.lean/declarations/kernel-one-one-two.md) | 13 | `result-track:36371f667ef74838e801775fdbdd12b41bf9909a0f283ada330eb1cd5e34888f` |
-| 3 | `theorem` | [kernel_boundary_lower](../../../../RealFunctions/PositiveDyadicKernel.lean/declarations/kernel-boundary-lower.md) | 16 | `result-track:3bb18755fb911b2d34ba8eb8cec3add07b44f12badefc3564b19b494bbfa1c08` |
-| 4 | `theorem` | [kernel_boundary_not_summable](../../../../RealFunctions/PositiveDyadicKernel.lean/declarations/kernel-boundary-not-summable.md) | 23 | `result-track:13a0d63a4e4a6831410a42c6938d9589f65cb65afc9aeed6ab8dd47af7a7180f` |
-| 5 | `theorem` | [kernel_zero_parameter](../../../../RealFunctions/PositiveDyadicKernel.lean/declarations/kernel-zero-parameter.md) | 30 | `result-track:b3e66a7d64d20fa31eb88726ed199cf5cae21dfa44ef15be616a1a19fbf5745e` |
-| 6 | `theorem` | [kernel_zero_parameter_not_summable](../../../../RealFunctions/PositiveDyadicKernel.lean/declarations/kernel-zero-parameter-not-summable.md) | 33 | `result-track:405d9ac7a78a502b700217fafc5f25724f8b8429be6e26ca8cb105570f7332aa` |
+| 1 | `theorem` | [kernel_generic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PositiveDyadicKernel.lean/declarations/kernel-generic.md) | 8 | `result-track:1130d24edb3bee4e6c90b4644b40b64625e3f0703158b5f61edae333255f031b` |
+| 2 | `theorem` | [kernel_one_one_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PositiveDyadicKernel.lean/declarations/kernel-one-one-two.md) | 13 | `result-track:36371f667ef74838e801775fdbdd12b41bf9909a0f283ada330eb1cd5e34888f` |
+| 3 | `theorem` | [kernel_boundary_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PositiveDyadicKernel.lean/declarations/kernel-boundary-lower.md) | 16 | `result-track:3bb18755fb911b2d34ba8eb8cec3add07b44f12badefc3564b19b494bbfa1c08` |
+| 4 | `theorem` | [kernel_boundary_not_summable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PositiveDyadicKernel.lean/declarations/kernel-boundary-not-summable.md) | 23 | `result-track:13a0d63a4e4a6831410a42c6938d9589f65cb65afc9aeed6ab8dd47af7a7180f` |
+| 5 | `theorem` | [kernel_zero_parameter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PositiveDyadicKernel.lean/declarations/kernel-zero-parameter.md) | 30 | `result-track:b3e66a7d64d20fa31eb88726ed199cf5cae21dfa44ef15be616a1a19fbf5745e` |
+| 6 | `theorem` | [kernel_zero_parameter_not_summable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PositiveDyadicKernel.lean/declarations/kernel-zero-parameter-not-summable.md) | 33 | `result-track:405d9ac7a78a502b700217fafc5f25724f8b8429be6e26ca8cb105570f7332aa` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

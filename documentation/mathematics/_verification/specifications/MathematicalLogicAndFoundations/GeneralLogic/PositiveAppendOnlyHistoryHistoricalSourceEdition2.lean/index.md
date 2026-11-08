@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PositiveAppendOnlyHistoryHistoricalSourceEdition2.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PositiveAppendOnlyHistoryHistoricalSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PositiveAppendOnlyHistoryHistoricalSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PositiveAppendOnlyHistoryHistoricalSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.AppendOnlyHistory`](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesAppendOnlyHistory.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.AppendOnlyHistory`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesAppendOnlyHistory.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PositiveAppendOnlyHistoryHistoricalSourceEdition2.lean/declarations/example-source-edition-2.md) | 8 | `declaration-track:1e52bb6d68428d89c233481773cf22437b6ca75b24bfe9cff08267d65c114450` |
-| 2 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PositiveAppendOnlyHistoryHistoricalSourceEdition2.lean/declarations/example-source-edition-3.md) | 12 | `declaration-track:5f4ce7ffd7e485b158587219904d55ef3c48a85bf79d1fddc5f8eb2d32ea1cdb` |
-| 3 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PositiveAppendOnlyHistoryHistoricalSourceEdition2.lean/declarations/example.md) | 17 | `declaration-track:1bae8fcd11c71e7fec37a2da2d2d55ae879308681945be46cf1e36e3168f84e4` |
-| 4 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PositiveAppendOnlyHistoryHistoricalSourceEdition2.lean/declarations/example-source-edition-4.md) | 22 | `declaration-track:8248942d6293edf16b63bbbe0e2db6c9131cbaaea26d03fd2fc8f3293c34c1ca` |
-| 5 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PositiveAppendOnlyHistoryHistoricalSourceEdition2.lean/declarations/example-source-edition-7.md) | 28 | `declaration-track:de87c809911ad1ff851279c4b71a45a21024332667378e07c18ae8852340d6ab` |
-| 6 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PositiveAppendOnlyHistoryHistoricalSourceEdition2.lean/declarations/example-source-edition-8.md) | 31 | `declaration-track:ef95c09a14d5a1380c4be16b36c6d3e9e5927c9c0ad25234c5e1d4be2fb4a7bc` |
-| 7 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PositiveAppendOnlyHistoryHistoricalSourceEdition2.lean/declarations/example-source-edition-5.md) | 34 | `declaration-track:c7947d52f3e23dfb19677008c4391236e45f7809b86b351c0a8c431c853cff6c` |
-| 8 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PositiveAppendOnlyHistoryHistoricalSourceEdition2.lean/declarations/example-source-edition-6.md) | 37 | `declaration-track:cb81d00beb2316bb0f1140f1e6ce9e7d87b0b0799388ddc781ef745207f58b0a` |
-| 9 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PositiveAppendOnlyHistoryHistoricalSourceEdition2.lean/declarations/example-source-edition-9.md) | 42 | `declaration-track:fff8541b6aae52cac9396171acc1f4a8d7a0baa0e0a18d58cc50c76580a76cf7` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PositiveAppendOnlyHistoryHistoricalSourceEdition2.lean/declarations/example-source-edition-2.md) | 8 | `declaration-track:1e52bb6d68428d89c233481773cf22437b6ca75b24bfe9cff08267d65c114450` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PositiveAppendOnlyHistoryHistoricalSourceEdition2.lean/declarations/example-source-edition-3.md) | 12 | `declaration-track:5f4ce7ffd7e485b158587219904d55ef3c48a85bf79d1fddc5f8eb2d32ea1cdb` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PositiveAppendOnlyHistoryHistoricalSourceEdition2.lean/declarations/example.md) | 17 | `declaration-track:1bae8fcd11c71e7fec37a2da2d2d55ae879308681945be46cf1e36e3168f84e4` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PositiveAppendOnlyHistoryHistoricalSourceEdition2.lean/declarations/example-source-edition-4.md) | 22 | `declaration-track:8248942d6293edf16b63bbbe0e2db6c9131cbaaea26d03fd2fc8f3293c34c1ca` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PositiveAppendOnlyHistoryHistoricalSourceEdition2.lean/declarations/example-source-edition-7.md) | 28 | `declaration-track:de87c809911ad1ff851279c4b71a45a21024332667378e07c18ae8852340d6ab` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PositiveAppendOnlyHistoryHistoricalSourceEdition2.lean/declarations/example-source-edition-8.md) | 31 | `declaration-track:ef95c09a14d5a1380c4be16b36c6d3e9e5927c9c0ad25234c5e1d4be2fb4a7bc` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PositiveAppendOnlyHistoryHistoricalSourceEdition2.lean/declarations/example-source-edition-5.md) | 34 | `declaration-track:c7947d52f3e23dfb19677008c4391236e45f7809b86b351c0a8c431c853cff6c` |
+| 8 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PositiveAppendOnlyHistoryHistoricalSourceEdition2.lean/declarations/example-source-edition-6.md) | 37 | `declaration-track:cb81d00beb2316bb0f1140f1e6ce9e7d87b0b0799388ddc781ef745207f58b0a` |
+| 9 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PositiveAppendOnlyHistoryHistoricalSourceEdition2.lean/declarations/example-source-edition-9.md) | 42 | `declaration-track:fff8541b6aae52cac9396171acc1f4a8d7a0baa0e0a18d58cc50c76580a76cf7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

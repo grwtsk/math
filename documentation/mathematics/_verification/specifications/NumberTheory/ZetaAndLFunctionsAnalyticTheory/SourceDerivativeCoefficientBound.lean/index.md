@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceDerivativeCoefficientBound.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceDerivativeCoefficientBound.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceDerivativeCoefficientBound.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceDerivativeCoefficientBound.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,14 +60,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [normPolynomial](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceDerivativeCoefficientBound.lean/declarations/normpolynomial.md) | 19 | `declaration-track:9ebb2091ed4f9f79538f3f57ef254f0761ced79aed4a09cc11519cfc492851ef` |
-| 2 | `def` | [derivativePolynomial](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceDerivativeCoefficientBound.lean/declarations/derivativepolynomial.md) | 24 | `declaration-track:d48587c46e399794e3249ac4f93eba7cdcdfb168b48bd4c899a61fe10b65abed` |
-| 3 | `def` | [squaredCoefficient](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceDerivativeCoefficientBound.lean/declarations/squaredcoefficient.md) | 29 | `declaration-track:a1f95a33ca84ec8650e283723d15fb7a43ecbca1a12b0bdf0bd9974e176d7a00` |
-| 4 | `theorem` | [normPolynomial_pos](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceDerivativeCoefficientBound.lean/declarations/normpolynomial-pos.md) | 31 | `result-track:91d7e1181ddaa77124b118a5d817c353cab02c1c128b63673840d5dea8887a3a` |
-| 5 | `theorem` | [exact_coefficient_gap](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceDerivativeCoefficientBound.lean/declarations/exact-coefficient-gap.md) | 36 | `result-track:29dd58a310f619d26a90500af2c6dc28e3f19626ae8f605a0cc6cac751db55ea` |
-| 6 | `theorem` | [derivativePolynomial_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceDerivativeCoefficientBound.lean/declarations/derivativepolynomial-le.md) | 42 | `result-track:2b7bdb256cf7862265a10f64ad0a49f2d79f6778f52ea584b3d79b37677fb66f` |
-| 7 | `theorem` | [exact_ratio_upper_bound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceDerivativeCoefficientBound.lean/declarations/exact-ratio-upper-bound.md) | 52 | `result-track:34b650dba621a04d3ff426e5a6691b6048f6e99ff51d823074a00bb7942f79b9` |
-| 8 | `theorem` | [squaredCoefficient_lt_twenty_five](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceDerivativeCoefficientBound.lean/declarations/squaredcoefficient-lt-twenty-five.md) | 57 | `result-track:1a65bf335fcc233f36e9e9d6e5431dfca1179014ffb219070f605ae643cb4ac2` |
+| 1 | `def` | [normPolynomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceDerivativeCoefficientBound.lean/declarations/normpolynomial.md) | 19 | `declaration-track:9ebb2091ed4f9f79538f3f57ef254f0761ced79aed4a09cc11519cfc492851ef` |
+| 2 | `def` | [derivativePolynomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceDerivativeCoefficientBound.lean/declarations/derivativepolynomial.md) | 24 | `declaration-track:d48587c46e399794e3249ac4f93eba7cdcdfb168b48bd4c899a61fe10b65abed` |
+| 3 | `def` | [squaredCoefficient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceDerivativeCoefficientBound.lean/declarations/squaredcoefficient.md) | 29 | `declaration-track:a1f95a33ca84ec8650e283723d15fb7a43ecbca1a12b0bdf0bd9974e176d7a00` |
+| 4 | `theorem` | [normPolynomial_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceDerivativeCoefficientBound.lean/declarations/normpolynomial-pos.md) | 31 | `result-track:91d7e1181ddaa77124b118a5d817c353cab02c1c128b63673840d5dea8887a3a` |
+| 5 | `theorem` | [exact_coefficient_gap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceDerivativeCoefficientBound.lean/declarations/exact-coefficient-gap.md) | 36 | `result-track:29dd58a310f619d26a90500af2c6dc28e3f19626ae8f605a0cc6cac751db55ea` |
+| 6 | `theorem` | [derivativePolynomial_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceDerivativeCoefficientBound.lean/declarations/derivativepolynomial-le.md) | 42 | `result-track:2b7bdb256cf7862265a10f64ad0a49f2d79f6778f52ea584b3d79b37677fb66f` |
+| 7 | `theorem` | [exact_ratio_upper_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceDerivativeCoefficientBound.lean/declarations/exact-ratio-upper-bound.md) | 52 | `result-track:34b650dba621a04d3ff426e5a6691b6048f6e99ff51d823074a00bb7942f79b9` |
+| 8 | `theorem` | [squaredCoefficient_lt_twenty_five](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceDerivativeCoefficientBound.lean/declarations/squaredcoefficient-lt-twenty-five.md) | 57 | `result-track:1a65bf335fcc233f36e9e9d6e5431dfca1179014ffb219070f605ae643cb4ac2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

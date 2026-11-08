@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/DiscreteRankOneRankOnePublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/DiscreteRankOneRankOnePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DiscreteRankOneRankOnePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DiscreteRankOneRankOnePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [valueGroup₀_equiv_withZeroMulInt](../../../../CommutativeAlgebra/DiscreteRankOneRankOnePublic.lean/declarations/valuegroup-equiv-withzeromulint.md) | 43 | `declaration-track:aa275db31ff2bcb9334b1f291698eada33e843e3f60fb346878b004501c73c1a` |
-| 2 | `lemma` | [valueGroup₀_equiv_withZeroMulInt_apply_zero](../../../../CommutativeAlgebra/DiscreteRankOneRankOnePublic.lean/declarations/valuegroup-equiv-withzeromulint-apply-zero.md) | 51 | `result-track:3ae324008d79b5197085ce2f4c416ca650e74d54e7b9b3a92a3b62e26b7447ef` |
-| 3 | `lemma` | [valueGroup₀_equiv_withZeroMulInt_apply_zpow](../../../../CommutativeAlgebra/DiscreteRankOneRankOnePublic.lean/declarations/valuegroup-equiv-withzeromulint-apply-zpow.md) | 54 | `result-track:6d25a67a418650191c6dc2d38874b65c8738415a5551be47313386d57e4baa18` |
-| 4 | `lemma` | [valueGroup₀_equiv_withZeroMulInt_strictMono](../../../../CommutativeAlgebra/DiscreteRankOneRankOnePublic.lean/declarations/valuegroup-equiv-withzeromulint-strictmono.md) | 59 | `result-track:743458f88e4be7c192d7a83f3bb9a75e95bb6fd99d80190b96ac6dbeb4322252` |
-| 5 | `def` | [rankOne](../../../../CommutativeAlgebra/DiscreteRankOneRankOnePublic.lean/declarations/rankone.md) | 68 | `declaration-track:81d5bc5a19f7dc43adc6f8877bc34d94a63893fa1d8f8170a8fe3aad03250778` |
-| 6 | `lemma` | [valueGroup₀_equiv_withZeroMulInt_restrict_apply_of_surjective](../../../../CommutativeAlgebra/DiscreteRankOneRankOnePublic.lean/declarations/valuegroup-equiv-withzeromulint-restrict-apply-of-surjective.md) | 80 | `result-track:daa76e12db0fdeb63c26fa56af828a5b4f459b50082c53cff587e6d3a9e40c6e` |
+| 1 | `def` | [valueGroup₀_equiv_withZeroMulInt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DiscreteRankOneRankOnePublic.lean/declarations/valuegroup-equiv-withzeromulint.md) | 43 | `declaration-track:aa275db31ff2bcb9334b1f291698eada33e843e3f60fb346878b004501c73c1a` |
+| 2 | `lemma` | [valueGroup₀_equiv_withZeroMulInt_apply_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DiscreteRankOneRankOnePublic.lean/declarations/valuegroup-equiv-withzeromulint-apply-zero.md) | 51 | `result-track:3ae324008d79b5197085ce2f4c416ca650e74d54e7b9b3a92a3b62e26b7447ef` |
+| 3 | `lemma` | [valueGroup₀_equiv_withZeroMulInt_apply_zpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DiscreteRankOneRankOnePublic.lean/declarations/valuegroup-equiv-withzeromulint-apply-zpow.md) | 54 | `result-track:6d25a67a418650191c6dc2d38874b65c8738415a5551be47313386d57e4baa18` |
+| 4 | `lemma` | [valueGroup₀_equiv_withZeroMulInt_strictMono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DiscreteRankOneRankOnePublic.lean/declarations/valuegroup-equiv-withzeromulint-strictmono.md) | 59 | `result-track:743458f88e4be7c192d7a83f3bb9a75e95bb6fd99d80190b96ac6dbeb4322252` |
+| 5 | `def` | [rankOne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DiscreteRankOneRankOnePublic.lean/declarations/rankone.md) | 68 | `declaration-track:81d5bc5a19f7dc43adc6f8877bc34d94a63893fa1d8f8170a8fe3aad03250778` |
+| 6 | `lemma` | [valueGroup₀_equiv_withZeroMulInt_restrict_apply_of_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DiscreteRankOneRankOnePublic.lean/declarations/valuegroup-equiv-withzeromulint-restrict-apply-of-surjective.md) | 80 | `result-track:daa76e12db0fdeb63c26fa56af828a5b4f459b50082c53cff587e6d3a9e40c6e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

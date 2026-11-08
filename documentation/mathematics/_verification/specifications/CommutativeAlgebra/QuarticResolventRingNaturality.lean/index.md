@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/QuarticResolventRingNaturality.lean/index.md) · [Full source](../../../../CommutativeAlgebra/QuarticResolventRingNaturality.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticResolventRingNaturality.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticResolventRingNaturality.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.PolygonalQuarticDescent`](../../../../CommutativeAlgebra/PolygonalQuarticDescent.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Algebra.PolygonalQuarticDescent`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PolygonalQuarticDescent.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [resolvent_map](../../../../CommutativeAlgebra/QuarticResolventRingNaturality.lean/declarations/resolvent-map.md) | 24 | `result-track:0af34aeee4cc6b1dcd7c20c431106339e0a76413f44db2d18ed9f0462756c915` |
-| 2 | `theorem` | [resolvent_map_comp](../../../../CommutativeAlgebra/QuarticResolventRingNaturality.lean/declarations/resolvent-map-comp.md) | 32 | `result-track:b6d58716a30cd661dac4c58dce6e8c1aa52427b8b7fda5d62b325b7f07a5642b` |
+| 1 | `theorem` | [resolvent_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticResolventRingNaturality.lean/declarations/resolvent-map.md) | 24 | `result-track:0af34aeee4cc6b1dcd7c20c431106339e0a76413f44db2d18ed9f0462756c915` |
+| 2 | `theorem` | [resolvent_map_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticResolventRingNaturality.lean/declarations/resolvent-map-comp.md) | 32 | `result-track:b6d58716a30cd661dac4c58dce6e8c1aa52427b8b7fda5d62b325b7f07a5642b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/AdmissibleAbsoluteValuePublic.lean/index.md) · [Full source](../../../../NumberTheory/AdmissibleAbsoluteValuePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AdmissibleAbsoluteValuePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AdmissibleAbsoluteValuePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [IsAdmissible](../../../../NumberTheory/AdmissibleAbsoluteValuePublic.lean/declarations/isadmissible.md) | 45 | `declaration-track:b9ebb1c7c28b602f71c9ab5d584f27d6d06e92748011bc2747798ac8c111fdfa` |
-| 2 | `theorem` | [exists_partition](../../../../NumberTheory/AdmissibleAbsoluteValuePublic.lean/declarations/exists-partition.md) | 60 | `result-track:81f334faf0068f67193b5a498748782c5b2a9f410609faa4064c2b853ddc167f` |
-| 3 | `theorem` | [exists_approx_aux](../../../../NumberTheory/AdmissibleAbsoluteValuePublic.lean/declarations/exists-approx-aux.md) | 72 | `result-track:84e470e5334ffbbee49164a8d611f4052e28ad99f2b67e14b5755d2222b20331` |
-| 4 | `theorem` | [exists_approx](../../../../NumberTheory/AdmissibleAbsoluteValuePublic.lean/declarations/exists-approx.md) | 118 | `result-track:e36d2e3d2a023adca10124e47085956cd5449b8722883c12b5e6c1f398941ef1` |
+| 1 | `structure` | [IsAdmissible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AdmissibleAbsoluteValuePublic.lean/declarations/isadmissible.md) | 45 | `declaration-track:b9ebb1c7c28b602f71c9ab5d584f27d6d06e92748011bc2747798ac8c111fdfa` |
+| 2 | `theorem` | [exists_partition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AdmissibleAbsoluteValuePublic.lean/declarations/exists-partition.md) | 60 | `result-track:81f334faf0068f67193b5a498748782c5b2a9f410609faa4064c2b853ddc167f` |
+| 3 | `theorem` | [exists_approx_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AdmissibleAbsoluteValuePublic.lean/declarations/exists-approx-aux.md) | 72 | `result-track:84e470e5334ffbbee49164a8d611f4052e28ad99f2b67e14b5755d2222b20331` |
+| 4 | `theorem` | [exists_approx](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AdmissibleAbsoluteValuePublic.lean/declarations/exists-approx.md) | 118 | `result-track:e36d2e3d2a023adca10124e47085956cd5449b8722883c12b5e6c1f398941ef1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

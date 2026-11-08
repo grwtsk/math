@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/SSetPairNamespacedPublic.lean/index.md) · [Full source](../../../../AlgebraicTopology/SSetPairNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SSetPairNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SSetPairNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [SSetPair](../../../../AlgebraicTopology/SSetPairNamespacedPublic.lean/declarations/ssetpair.md) | 35 | `declaration-track:0c50d7a4588b24ee49ea6ecdfe7767e128e0dd59f150e04f8acfbc9d565a63c7` |
-| 2 | `instance` | [(anonymous)](../../../../AlgebraicTopology/SSetPairNamespacedPublic.lean/declarations/instance.md) | 39 | `declaration-track:e5d80cadd480d255d6106a2e1c5bf21c48d4b56eef209725bdb7b93d84195e88` |
-| 3 | `abbrev` | [of](../../../../AlgebraicTopology/SSetPairNamespacedPublic.lean/declarations/of.md) | 42 | `declaration-track:3ff2333500c5e18a82cbc466decb37ba918b0a4beb60262b0daaa00663e0f495` |
-| 4 | `abbrev` | [forget](../../../../AlgebraicTopology/SSetPairNamespacedPublic.lean/declarations/forget.md) | 46 | `declaration-track:05b7453f8696638ae7471f15f4e02043785a7cd211b4fe7eb5eb5e8f3232684c` |
-| 5 | `abbrev` | [homMk](../../../../AlgebraicTopology/SSetPairNamespacedPublic.lean/declarations/hommk.md) | 50 | `declaration-track:65dee0641956c1763ce23336115fa669051ca6d643cab0e34b376131961c59d3` |
-| 6 | `abbrev` | [SSet.Subcomplex.pair](../../../../AlgebraicTopology/SSetPairNamespacedPublic.lean/declarations/sset-subcomplex-pair.md) | 58 | `declaration-track:b55ef3f42f8cc83792900cb5d0b2018600740bae06781f9d37761ca0f93baf07` |
-| 7 | `def` | [SSet.Subcomplex.toPairFunctor](../../../../AlgebraicTopology/SSetPairNamespacedPublic.lean/declarations/sset-subcomplex-topairfunctor.md) | 63 | `declaration-track:afbe613c6e9c5cb0fa128fbb42779caf4355e70dc3079b20f572eaff6cde8619` |
-| 8 | `abbrev` | [SSet.pair](../../../../AlgebraicTopology/SSetPairNamespacedPublic.lean/declarations/sset-pair.md) | 69 | `declaration-track:5ded9baa08d103a72961b42301aff1f52974625f7b2644dacb9642437fbfee36` |
-| 9 | `def` | [SSet.toPairFunctor](../../../../AlgebraicTopology/SSetPairNamespacedPublic.lean/declarations/sset-topairfunctor.md) | 74 | `declaration-track:35673d211071f0e445493ed5107a9c7eba7da3350fc0c6a7af0806ada7d81579` |
+| 1 | `abbrev` | [SSetPair](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SSetPairNamespacedPublic.lean/declarations/ssetpair.md) | 35 | `declaration-track:0c50d7a4588b24ee49ea6ecdfe7767e128e0dd59f150e04f8acfbc9d565a63c7` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SSetPairNamespacedPublic.lean/declarations/instance.md) | 39 | `declaration-track:e5d80cadd480d255d6106a2e1c5bf21c48d4b56eef209725bdb7b93d84195e88` |
+| 3 | `abbrev` | [of](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SSetPairNamespacedPublic.lean/declarations/of.md) | 42 | `declaration-track:3ff2333500c5e18a82cbc466decb37ba918b0a4beb60262b0daaa00663e0f495` |
+| 4 | `abbrev` | [forget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SSetPairNamespacedPublic.lean/declarations/forget.md) | 46 | `declaration-track:05b7453f8696638ae7471f15f4e02043785a7cd211b4fe7eb5eb5e8f3232684c` |
+| 5 | `abbrev` | [homMk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SSetPairNamespacedPublic.lean/declarations/hommk.md) | 50 | `declaration-track:65dee0641956c1763ce23336115fa669051ca6d643cab0e34b376131961c59d3` |
+| 6 | `abbrev` | [SSet.Subcomplex.pair](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SSetPairNamespacedPublic.lean/declarations/sset-subcomplex-pair.md) | 58 | `declaration-track:b55ef3f42f8cc83792900cb5d0b2018600740bae06781f9d37761ca0f93baf07` |
+| 7 | `def` | [SSet.Subcomplex.toPairFunctor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SSetPairNamespacedPublic.lean/declarations/sset-subcomplex-topairfunctor.md) | 63 | `declaration-track:afbe613c6e9c5cb0fa128fbb42779caf4355e70dc3079b20f572eaff6cde8619` |
+| 8 | `abbrev` | [SSet.pair](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SSetPairNamespacedPublic.lean/declarations/sset-pair.md) | 69 | `declaration-track:5ded9baa08d103a72961b42301aff1f52974625f7b2644dacb9642437fbfee36` |
+| 9 | `def` | [SSet.toPairFunctor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SSetPairNamespacedPublic.lean/declarations/sset-topairfunctor.md) | 74 | `declaration-track:35673d211071f0e445493ed5107a9c7eba7da3350fc0c6a7af0806ada7d81579` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

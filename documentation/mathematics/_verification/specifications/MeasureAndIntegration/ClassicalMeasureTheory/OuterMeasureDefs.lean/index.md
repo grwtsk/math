@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/OuterMeasureDefs.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/OuterMeasureDefs.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/OuterMeasureDefs.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/OuterMeasureDefs.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [OuterMeasure](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/OuterMeasureDefs.lean/declarations/outermeasure.md) | 47 | `declaration-track:ba3bf7f52c087bc6e2dc370b338598045a305ea0a34a29a16cd47c9a19d17fa9` |
-| 2 | `class` | [OuterMeasureClass](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/OuterMeasureDefs.lean/declarations/outermeasureclass.md) | 58 | `declaration-track:cbe2d9ac6d1dc354f1fa7b2b7e544aeda734be2136e275e4fa07a81ebcd2a53b` |
-| 3 | `instance` | [(anonymous)](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/OuterMeasureDefs.lean/declarations/instance.md) | 66 | `declaration-track:0530d66067735d3b490634107bdf9eddc117822247a6f0b166094ae6d2b65878` |
-| 4 | `theorem` | [measureOf_eq_coe](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/OuterMeasureDefs.lean/declarations/measureof-eq-coe.md) | 70 | `result-track:3f14765ba092ef6d641987477d068575a8f4438bf072030b1e6c21df7cd09181` |
-| 5 | `instance` | [(anonymous)](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/OuterMeasureDefs.lean/declarations/instance-source-edition-2.md) | 72 | `declaration-track:36caee51f7656568fe6cb5b0f251bc80ed82e68b1d72f194b80ff378a5627ee4` |
+| 1 | `structure` | [OuterMeasure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/OuterMeasureDefs.lean/declarations/outermeasure.md) | 47 | `declaration-track:ba3bf7f52c087bc6e2dc370b338598045a305ea0a34a29a16cd47c9a19d17fa9` |
+| 2 | `class` | [OuterMeasureClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/OuterMeasureDefs.lean/declarations/outermeasureclass.md) | 58 | `declaration-track:cbe2d9ac6d1dc354f1fa7b2b7e544aeda734be2136e275e4fa07a81ebcd2a53b` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/OuterMeasureDefs.lean/declarations/instance.md) | 66 | `declaration-track:0530d66067735d3b490634107bdf9eddc117822247a6f0b166094ae6d2b65878` |
+| 4 | `theorem` | [measureOf_eq_coe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/OuterMeasureDefs.lean/declarations/measureof-eq-coe.md) | 70 | `result-track:3f14765ba092ef6d641987477d068575a8f4438bf072030b1e6c21df7cd09181` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/OuterMeasureDefs.lean/declarations/instance-source-edition-2.md) | 72 | `declaration-track:36caee51f7656568fe6cb5b0f251bc80ed82e68b1d72f194b80ff378a5627ee4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

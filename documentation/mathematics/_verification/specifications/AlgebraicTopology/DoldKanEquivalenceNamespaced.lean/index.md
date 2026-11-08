@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/DoldKanEquivalenceNamespaced.lean/index.md) · [Full source](../../../../AlgebraicTopology/DoldKanEquivalenceNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/DoldKanEquivalenceNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/DoldKanEquivalenceNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [N](../../../../AlgebraicTopology/DoldKanEquivalenceNamespaced.lean/declarations/n.md) | 146 | `declaration-track:4da44ed006bc8f652d83516b2fc0b900cdc255c0ac4f1cf60129d3bbf75064b2` |
-| 2 | `def` | [Γ](../../../../AlgebraicTopology/DoldKanEquivalenceNamespaced.lean/declarations/anonymous.md) | 150 | `declaration-track:bd69c603a2e388d03ffbe8880c4d5c37f2b3fa8123fe3f71002f39570bc04019` |
-| 3 | `def` | [comparisonN](../../../../AlgebraicTopology/DoldKanEquivalenceNamespaced.lean/declarations/comparisonn.md) | 156 | `declaration-track:775a546470e6cbed21221e803a40bb93b9005555dff7b8b3195feb2ad93b42cf` |
-| 4 | `def` | [equivalence](../../../../AlgebraicTopology/DoldKanEquivalenceNamespaced.lean/declarations/equivalence.md) | 169 | `declaration-track:9b03d9cd2d1016fc576064d2ca81b44d2121a896a23be123aa926557159e1e12` |
-| 5 | `theorem` | [equivalence_inverse](../../../../AlgebraicTopology/DoldKanEquivalenceNamespaced.lean/declarations/equivalence-inverse.md) | 172 | `result-track:73543a449ef94d2c58674b200f90188c2f09f050e5c468ff7206c529f1be7997` |
+| 1 | `def` | [N](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/DoldKanEquivalenceNamespaced.lean/declarations/n.md) | 146 | `declaration-track:4da44ed006bc8f652d83516b2fc0b900cdc255c0ac4f1cf60129d3bbf75064b2` |
+| 2 | `def` | [Γ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/DoldKanEquivalenceNamespaced.lean/declarations/anonymous.md) | 150 | `declaration-track:bd69c603a2e388d03ffbe8880c4d5c37f2b3fa8123fe3f71002f39570bc04019` |
+| 3 | `def` | [comparisonN](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/DoldKanEquivalenceNamespaced.lean/declarations/comparisonn.md) | 156 | `declaration-track:775a546470e6cbed21221e803a40bb93b9005555dff7b8b3195feb2ad93b42cf` |
+| 4 | `def` | [equivalence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/DoldKanEquivalenceNamespaced.lean/declarations/equivalence.md) | 169 | `declaration-track:9b03d9cd2d1016fc576064d2ca81b44d2121a896a23be123aa926557159e1e12` |
+| 5 | `theorem` | [equivalence_inverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/DoldKanEquivalenceNamespaced.lean/declarations/equivalence-inverse.md) | 172 | `result-track:73543a449ef94d2c58674b200f90188c2f09f050e5c468ff7206c529f1be7997` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

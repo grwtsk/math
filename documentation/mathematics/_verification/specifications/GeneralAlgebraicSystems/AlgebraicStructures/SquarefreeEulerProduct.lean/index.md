@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SquarefreeEulerProduct.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SquarefreeEulerProduct.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SquarefreeEulerProduct.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SquarefreeEulerProduct.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Moebius.MoebiusEulerProduct`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/MoebiusEulerProduct.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.MoebiusEulerProduct`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/MoebiusEulerProduct.lean/index.md) — import line 1; pinned internal source present.
 - `Mathlib.Algebra.MvPolynomial.Basic` — import line 2; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 3; external provider; requires a separately pinned dependency.
 
@@ -59,15 +59,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [exponentMask](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SquarefreeEulerProduct.lean/declarations/exponentmask.md) | 16 | `declaration-track:a569aa8040e0b2ef190fb5e3057be8ed0d9570617a5c1c91dc6f339e70ac5eb5` |
-| 2 | `def` | [finiteEulerPolynomial](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SquarefreeEulerProduct.lean/declarations/finiteeulerpolynomial.md) | 17 | `declaration-track:babe6fc84b90e3b427d13146be4ce0532a78e0b2ee31989043a15db7c29866ec` |
-| 3 | `theorem` | [exponentMask_apply](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SquarefreeEulerProduct.lean/declarations/exponentmask-apply.md) | 20 | `result-track:89677cf7bc06a11f54f70b9c72227e60315addb023cf7f13922742ac4a09436f` |
-| 4 | `theorem` | [exponentMask_support](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SquarefreeEulerProduct.lean/declarations/exponentmask-support.md) | 24 | `result-track:25957cf04caf08d106bf200cb613083c599025ccc4c96b7e20ae9f29bc8dd259` |
-| 5 | `theorem` | [exponentMask_eq_iff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SquarefreeEulerProduct.lean/declarations/exponentmask-eq-iff.md) | 28 | `result-track:403da2b8decd04f5a4ff097bb4402ee15b6b8f38aa2530229ddeb2d1d494a43a` |
-| 6 | `theorem` | [finiteEulerPolynomial_expansion](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SquarefreeEulerProduct.lean/declarations/finiteeulerpolynomial-expansion.md) | 49 | `result-track:0c265a9c196701c03da3cef952330c17a3bd8a597115c42f71f5f7bb720e99b6` |
-| 7 | `theorem` | [finiteEulerPolynomial_coeff_sum](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SquarefreeEulerProduct.lean/declarations/finiteeulerpolynomial-coeff-sum.md) | 56 | `result-track:d16b7350a4f8b29ad087bfdef9de47ad4a7f264e41b92bde150bd9606ac10f55` |
-| 8 | `theorem` | [finiteEulerPolynomial_coeff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SquarefreeEulerProduct.lean/declarations/finiteeulerpolynomial-coeff.md) | 70 | `result-track:de5189d6152c348b69dc19403817ecd26cd160880cc1ff09091751d83b50e5cd` |
-| 9 | `theorem` | [polynomial_integer_coefficient](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SquarefreeEulerProduct.lean/declarations/polynomial-integer-coefficient.md) | 97 | `result-track:94b0e72a839a273e77321e6b0c0b20b69fe34b5dab0703bcbbd350115e9f7bc8` |
+| 1 | `def` | [exponentMask](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SquarefreeEulerProduct.lean/declarations/exponentmask.md) | 16 | `declaration-track:a569aa8040e0b2ef190fb5e3057be8ed0d9570617a5c1c91dc6f339e70ac5eb5` |
+| 2 | `def` | [finiteEulerPolynomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SquarefreeEulerProduct.lean/declarations/finiteeulerpolynomial.md) | 17 | `declaration-track:babe6fc84b90e3b427d13146be4ce0532a78e0b2ee31989043a15db7c29866ec` |
+| 3 | `theorem` | [exponentMask_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SquarefreeEulerProduct.lean/declarations/exponentmask-apply.md) | 20 | `result-track:89677cf7bc06a11f54f70b9c72227e60315addb023cf7f13922742ac4a09436f` |
+| 4 | `theorem` | [exponentMask_support](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SquarefreeEulerProduct.lean/declarations/exponentmask-support.md) | 24 | `result-track:25957cf04caf08d106bf200cb613083c599025ccc4c96b7e20ae9f29bc8dd259` |
+| 5 | `theorem` | [exponentMask_eq_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SquarefreeEulerProduct.lean/declarations/exponentmask-eq-iff.md) | 28 | `result-track:403da2b8decd04f5a4ff097bb4402ee15b6b8f38aa2530229ddeb2d1d494a43a` |
+| 6 | `theorem` | [finiteEulerPolynomial_expansion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SquarefreeEulerProduct.lean/declarations/finiteeulerpolynomial-expansion.md) | 49 | `result-track:0c265a9c196701c03da3cef952330c17a3bd8a597115c42f71f5f7bb720e99b6` |
+| 7 | `theorem` | [finiteEulerPolynomial_coeff_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SquarefreeEulerProduct.lean/declarations/finiteeulerpolynomial-coeff-sum.md) | 56 | `result-track:d16b7350a4f8b29ad087bfdef9de47ad4a7f264e41b92bde150bd9606ac10f55` |
+| 8 | `theorem` | [finiteEulerPolynomial_coeff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SquarefreeEulerProduct.lean/declarations/finiteeulerpolynomial-coeff.md) | 70 | `result-track:de5189d6152c348b69dc19403817ecd26cd160880cc1ff09091751d83b50e5cd` |
+| 9 | `theorem` | [polynomial_integer_coefficient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SquarefreeEulerProduct.lean/declarations/polynomial-integer-coefficient.md) | 97 | `result-track:94b0e72a839a273e77321e6b0c0b20b69fe34b5dab0703bcbbd350115e9f7bc8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

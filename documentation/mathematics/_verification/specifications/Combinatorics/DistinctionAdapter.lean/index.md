@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/DistinctionAdapter.lean/index.md) · [Full source](../../../../Combinatorics/DistinctionAdapter.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DistinctionAdapter.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DistinctionAdapter.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [DistinctionCoordinate](../../../../Combinatorics/DistinctionAdapter.lean/declarations/distinctioncoordinate.md) | 13 | `declaration-track:e4ddf62f715c59282a6c8a16afea7c0779f8f78e13156713ae6532914270cf8f` |
-| 2 | `structure` | [DistinctionRegistry](../../../../Combinatorics/DistinctionAdapter.lean/declarations/distinctionregistry.md) | 26 | `declaration-track:7e16635632fe16b97f75b17db661fad8af860b3939f47b59677842ca48fe25ad` |
-| 3 | `structure` | [PresentationRefinementStep](../../../../Combinatorics/DistinctionAdapter.lean/declarations/presentationrefinementstep.md) | 33 | `declaration-track:a3aee61485555fb8c7fcf211e9fa6f4b392fb6585536ddf018ba82450d437d5e` |
-| 4 | `structure` | [PresentationRefinementChain](../../../../Combinatorics/DistinctionAdapter.lean/declarations/presentationrefinementchain.md) | 39 | `declaration-track:c4f471b0e692517264518f0fa8ff67a175aba4751bcab92cfd7057122d43b0b0` |
-| 5 | `def` | [presentation_refinement_step_changes_one_coordinate](../../../../Combinatorics/DistinctionAdapter.lean/declarations/presentation-refinement-step-changes-one-coordinate.md) | 50 | `declaration-track:17d5cb50c5edc8edfdab26a245e11b4d0919b8bb773d214d1a4f678945e8e8ec` |
+| 1 | `structure` | [DistinctionCoordinate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DistinctionAdapter.lean/declarations/distinctioncoordinate.md) | 13 | `declaration-track:e4ddf62f715c59282a6c8a16afea7c0779f8f78e13156713ae6532914270cf8f` |
+| 2 | `structure` | [DistinctionRegistry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DistinctionAdapter.lean/declarations/distinctionregistry.md) | 26 | `declaration-track:7e16635632fe16b97f75b17db661fad8af860b3939f47b59677842ca48fe25ad` |
+| 3 | `structure` | [PresentationRefinementStep](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DistinctionAdapter.lean/declarations/presentationrefinementstep.md) | 33 | `declaration-track:a3aee61485555fb8c7fcf211e9fa6f4b392fb6585536ddf018ba82450d437d5e` |
+| 4 | `structure` | [PresentationRefinementChain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DistinctionAdapter.lean/declarations/presentationrefinementchain.md) | 39 | `declaration-track:c4f471b0e692517264518f0fa8ff67a175aba4751bcab92cfd7057122d43b0b0` |
+| 5 | `def` | [presentation_refinement_step_changes_one_coordinate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DistinctionAdapter.lean/declarations/presentation-refinement-step-changes-one-coordinate.md) | 50 | `declaration-track:17d5cb50c5edc8edfdab26a245e11b4d0919b8bb773d214d1a4f678945e8e8ec` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

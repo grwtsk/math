@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/VerticalLineChi.lean/index.md) · [Full source](../../../../MeasureAndIntegration/VerticalLineChi.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/VerticalLineChi.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/VerticalLineChi.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [neg_logDeriv_LFunction_eq](../../../../MeasureAndIntegration/VerticalLineChi.lean/declarations/neg-logderiv-lfunction-eq.md) | 30 | `result-track:be7dab288b2da7c44f8149214346ce6feab6eb0dc005a69b7af3462e93beb79a` |
-| 2 | `theorem` | [integrand_eq_tsum_chi](../../../../MeasureAndIntegration/VerticalLineChi.lean/declarations/integrand-eq-tsum-chi.md) | 46 | `result-track:d276a94b33094ba8577657e960f47a010fada6e5b5f471e5765fc9ad9fd3425a` |
-| 3 | `theorem` | [per_n_line_integral_chi](../../../../MeasureAndIntegration/VerticalLineChi.lean/declarations/per-n-line-integral-chi.md) | 58 | `result-track:9dcf9ba90de490542989dfcc1d4632368b68ba63f11303416c7dc1f318ffa1b0` |
-| 4 | `theorem` | [line_integral_swap_chi](../../../../MeasureAndIntegration/VerticalLineChi.lean/declarations/line-integral-swap-chi.md) | 124 | `result-track:2e0533bcc01cd4b72a5e2665109f9f9f992c9d9fb388760795735e062eb9ca38` |
-| 5 | `theorem` | [prime_side_line_chi](../../../../MeasureAndIntegration/VerticalLineChi.lean/declarations/prime-side-line-chi.md) | 204 | `result-track:2f721a42548c0f20124b06fad38d281abd716e2ca3437adfa45f400e90f292b5` |
+| 1 | `theorem` | [neg_logDeriv_LFunction_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/VerticalLineChi.lean/declarations/neg-logderiv-lfunction-eq.md) | 30 | `result-track:be7dab288b2da7c44f8149214346ce6feab6eb0dc005a69b7af3462e93beb79a` |
+| 2 | `theorem` | [integrand_eq_tsum_chi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/VerticalLineChi.lean/declarations/integrand-eq-tsum-chi.md) | 46 | `result-track:d276a94b33094ba8577657e960f47a010fada6e5b5f471e5765fc9ad9fd3425a` |
+| 3 | `theorem` | [per_n_line_integral_chi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/VerticalLineChi.lean/declarations/per-n-line-integral-chi.md) | 58 | `result-track:9dcf9ba90de490542989dfcc1d4632368b68ba63f11303416c7dc1f318ffa1b0` |
+| 4 | `theorem` | [line_integral_swap_chi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/VerticalLineChi.lean/declarations/line-integral-swap-chi.md) | 124 | `result-track:2e0533bcc01cd4b72a5e2665109f9f9f992c9d9fb388760795735e062eb9ca38` |
+| 5 | `theorem` | [prime_side_line_chi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/VerticalLineChi.lean/declarations/prime-side-line-chi.md) | 204 | `result-track:2f721a42548c0f20124b06fad38d281abd716e2ca3437adfa45f400e90f292b5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

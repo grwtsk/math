@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/DefsDefsNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/DefsDefsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/DefsDefsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/DefsDefsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -63,13 +63,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [discr](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/DefsDefsNamespaced.lean/declarations/discr.md) | 42 | `declaration-track:d5f4a67b258eda327c98e1db9b67413afd61e3635e36c06a70910d6e719271ae` |
-| 2 | `theorem` | [coe_discr](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/DefsDefsNamespaced.lean/declarations/coe-discr.md) | 44 | `result-track:86c37be7e3a84f3b85302d11bcbfd5a21f2807cb1e06b3babc045d07a16c5f3e` |
-| 3 | `theorem` | [discr_ne_zero](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/DefsDefsNamespaced.lean/declarations/discr-ne-zero.md) | 47 | `result-track:426d55906e38dfec387e9f0b28e3bf02ae32eb69efed0f98161262cf9dac7020` |
-| 4 | `theorem` | [discr_eq_discr](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/DefsDefsNamespaced.lean/declarations/discr-eq-discr.md) | 51 | `result-track:92365b22520d88516abd7161609ab279d403b1c01274cd6db953b0024a882e0e` |
-| 5 | `theorem` | [discr_eq_discr_of_algEquiv](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/DefsDefsNamespaced.lean/declarations/discr-eq-discr-of-algequiv.md) | 56 | `result-track:5fa2370bad389fc3e96b90f6ecadc3c60d812e9af0fc1a95d3ec4f6bd880dec6` |
-| 6 | `theorem` | [numberField_discr](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/DefsDefsNamespaced.lean/declarations/numberfield-discr.md) | 77 | `result-track:14d42c0636616d1923122cd28aa3c836265246aabcebcfba0946749eba0bd94e` |
-| 7 | `theorem` | [Algebra.discr_eq_discr_of_toMatrix_coeff_isIntegral](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/DefsDefsNamespaced.lean/declarations/algebra-discr-eq-discr-of-tomatrix-coeff-isintegral.md) | 100 | `result-track:03838f5b9cefd101e12ad44f68bb22b3c884000b8438d78abfcc63fab83c9b53` |
+| 1 | `abbrev` | [discr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/DefsDefsNamespaced.lean/declarations/discr.md) | 42 | `declaration-track:d5f4a67b258eda327c98e1db9b67413afd61e3635e36c06a70910d6e719271ae` |
+| 2 | `theorem` | [coe_discr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/DefsDefsNamespaced.lean/declarations/coe-discr.md) | 44 | `result-track:86c37be7e3a84f3b85302d11bcbfd5a21f2807cb1e06b3babc045d07a16c5f3e` |
+| 3 | `theorem` | [discr_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/DefsDefsNamespaced.lean/declarations/discr-ne-zero.md) | 47 | `result-track:426d55906e38dfec387e9f0b28e3bf02ae32eb69efed0f98161262cf9dac7020` |
+| 4 | `theorem` | [discr_eq_discr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/DefsDefsNamespaced.lean/declarations/discr-eq-discr.md) | 51 | `result-track:92365b22520d88516abd7161609ab279d403b1c01274cd6db953b0024a882e0e` |
+| 5 | `theorem` | [discr_eq_discr_of_algEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/DefsDefsNamespaced.lean/declarations/discr-eq-discr-of-algequiv.md) | 56 | `result-track:5fa2370bad389fc3e96b90f6ecadc3c60d812e9af0fc1a95d3ec4f6bd880dec6` |
+| 6 | `theorem` | [numberField_discr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/DefsDefsNamespaced.lean/declarations/numberfield-discr.md) | 77 | `result-track:14d42c0636616d1923122cd28aa3c836265246aabcebcfba0946749eba0bd94e` |
+| 7 | `theorem` | [Algebra.discr_eq_discr_of_toMatrix_coeff_isIntegral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/DefsDefsNamespaced.lean/declarations/algebra-discr-eq-discr-of-tomatrix-coeff-isintegral.md) | 100 | `result-track:03838f5b9cefd101e12ad44f68bb22b3c884000b8438d78abfcc63fab83c9b53` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

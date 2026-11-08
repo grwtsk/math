@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearAlgebraTensorCalculus/TensorProductMatrixNamespaced.lean/index.md) · [Full source](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearAlgebraTensorCalculus/TensorProductMatrixNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearAlgebraTensorCalculus/TensorProductMatrixNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearAlgebraTensorCalculus/TensorProductMatrixNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [TensorProduct.toMatrix_map](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearAlgebraTensorCalculus/TensorProductMatrixNamespaced.lean/declarations/tensorproduct-tomatrix-map.md) | 45 | `result-track:0f3701212f34160f4c2f96675c3ad175b98191c491deb4221b34c2aa896696b5` |
-| 2 | `theorem` | [Matrix.toLin_kronecker](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearAlgebraTensorCalculus/TensorProductMatrixNamespaced.lean/declarations/matrix-tolin-kronecker.md) | 55 | `result-track:83936c73733583fb89dddb7024082224dd2d5e288f887a0565375c1e13943ffb` |
-| 3 | `theorem` | [TensorProduct.toMatrix_comm](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearAlgebraTensorCalculus/TensorProductMatrixNamespaced.lean/declarations/tensorproduct-tomatrix-comm.md) | 62 | `result-track:953f0873040e0b65dc450226677635dc5ec1194a9f9fde46bd862cb5c95c9f25` |
-| 4 | `theorem` | [TensorProduct.toMatrix_assoc](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearAlgebraTensorCalculus/TensorProductMatrixNamespaced.lean/declarations/tensorproduct-tomatrix-assoc.md) | 72 | `result-track:0eb238353707c73b7eee9010fa79ec4bc9c354508f56887147a2e5526be521ef` |
+| 1 | `theorem` | [TensorProduct.toMatrix_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearAlgebraTensorCalculus/TensorProductMatrixNamespaced.lean/declarations/tensorproduct-tomatrix-map.md) | 45 | `result-track:0f3701212f34160f4c2f96675c3ad175b98191c491deb4221b34c2aa896696b5` |
+| 2 | `theorem` | [Matrix.toLin_kronecker](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearAlgebraTensorCalculus/TensorProductMatrixNamespaced.lean/declarations/matrix-tolin-kronecker.md) | 55 | `result-track:83936c73733583fb89dddb7024082224dd2d5e288f887a0565375c1e13943ffb` |
+| 3 | `theorem` | [TensorProduct.toMatrix_comm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearAlgebraTensorCalculus/TensorProductMatrixNamespaced.lean/declarations/tensorproduct-tomatrix-comm.md) | 62 | `result-track:953f0873040e0b65dc450226677635dc5ec1194a9f9fde46bd862cb5c95c9f25` |
+| 4 | `theorem` | [TensorProduct.toMatrix_assoc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearAlgebraTensorCalculus/TensorProductMatrixNamespaced.lean/declarations/tensorproduct-tomatrix-assoc.md) | 72 | `result-track:0eb238353707c73b7eee9010fa79ec4bc9c354508f56887147a2e5526be521ef` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

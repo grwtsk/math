@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinRangePublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinRangePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinRangePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinRangePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [count_finRange](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinRangePublic.lean/declarations/count-finrange.md) | 29 | `result-track:f222d315ce59680f9332823eedc83517379ca1b60efd8f32ab19f458dd73e724` |
-| 2 | `theorem` | [idxOf_finRange](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinRangePublic.lean/declarations/idxof-finrange.md) | 32 | `result-track:60c5795217ab0f71ba2d5b1bc629451250cf0767f3d0b1994e343951f5ff1e9f` |
-| 3 | `theorem` | [ofFn_eq_pmap](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinRangePublic.lean/declarations/offn-eq-pmap.md) | 35 | `result-track:b1f036cc95eb379625d0802622f60e33b03fabfd22f57849355caa6a60ca0a34` |
-| 4 | `theorem` | [ofFn_id](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinRangePublic.lean/declarations/offn-id.md) | 40 | `result-track:5ccc47126a1de07cbb4124641a521f2c9cadcf9b4db60bdaf3b13b5210638f04` |
-| 5 | `theorem` | [ofFn_eq_map](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinRangePublic.lean/declarations/offn-eq-map.md) | 43 | `result-track:c69e50955ce67be4ceb775eb06f56f12892096729fecf159313503f71b14842d` |
-| 6 | `theorem` | [nodup_ofFn_ofInjective](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinRangePublic.lean/declarations/nodup-offn-ofinjective.md) | 46 | `result-track:e0333fdde8d2b048313fd484b20f945f61ad41431711a8a4f7e11c08ecafb752` |
-| 7 | `theorem` | [nodup_ofFn](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinRangePublic.lean/declarations/nodup-offn.md) | 51 | `result-track:91638b90baf3d2ed97b7831059c055be329fb537024db53b9140112d4b8871bb` |
-| 8 | `theorem` | [Equiv.Perm.map_finRange_perm](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinRangePublic.lean/declarations/equiv-perm-map-finrange-perm.md) | 65 | `result-track:e9184630787bf8a32e5e2a2d7e363ba51b839be83e7d4cb967ea5ec5998f5ab9` |
-| 9 | `theorem` | [Equiv.Perm.ofFn_comp_perm](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinRangePublic.lean/declarations/equiv-perm-offn-comp-perm.md) | 72 | `result-track:24efebf87827a7e203a2661d441e7a9347e07f2485172199a6e0d737b25aff9e` |
+| 1 | `lemma` | [count_finRange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinRangePublic.lean/declarations/count-finrange.md) | 29 | `result-track:f222d315ce59680f9332823eedc83517379ca1b60efd8f32ab19f458dd73e724` |
+| 2 | `theorem` | [idxOf_finRange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinRangePublic.lean/declarations/idxof-finrange.md) | 32 | `result-track:60c5795217ab0f71ba2d5b1bc629451250cf0767f3d0b1994e343951f5ff1e9f` |
+| 3 | `theorem` | [ofFn_eq_pmap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinRangePublic.lean/declarations/offn-eq-pmap.md) | 35 | `result-track:b1f036cc95eb379625d0802622f60e33b03fabfd22f57849355caa6a60ca0a34` |
+| 4 | `theorem` | [ofFn_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinRangePublic.lean/declarations/offn-id.md) | 40 | `result-track:5ccc47126a1de07cbb4124641a521f2c9cadcf9b4db60bdaf3b13b5210638f04` |
+| 5 | `theorem` | [ofFn_eq_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinRangePublic.lean/declarations/offn-eq-map.md) | 43 | `result-track:c69e50955ce67be4ceb775eb06f56f12892096729fecf159313503f71b14842d` |
+| 6 | `theorem` | [nodup_ofFn_ofInjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinRangePublic.lean/declarations/nodup-offn-ofinjective.md) | 46 | `result-track:e0333fdde8d2b048313fd484b20f945f61ad41431711a8a4f7e11c08ecafb752` |
+| 7 | `theorem` | [nodup_ofFn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinRangePublic.lean/declarations/nodup-offn.md) | 51 | `result-track:91638b90baf3d2ed97b7831059c055be329fb537024db53b9140112d4b8871bb` |
+| 8 | `theorem` | [Equiv.Perm.map_finRange_perm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinRangePublic.lean/declarations/equiv-perm-map-finrange-perm.md) | 65 | `result-track:e9184630787bf8a32e5e2a2d7e363ba51b839be83e7d4cb967ea5ec5998f5ab9` |
+| 9 | `theorem` | [Equiv.Perm.ofFn_comp_perm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinRangePublic.lean/declarations/equiv-perm-offn-comp-perm.md) | 72 | `result-track:24efebf87827a7e203a2661d441e7a9347e07f2485172199a6e0d737b25aff9e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

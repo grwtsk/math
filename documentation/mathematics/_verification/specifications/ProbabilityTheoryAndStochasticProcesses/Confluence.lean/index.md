@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/Confluence.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/Confluence.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Confluence.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Confluence.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CompatibleReduction](../../../../ProbabilityTheoryAndStochasticProcesses/Confluence.lean/declarations/compatiblereduction.md) | 10 | `declaration-track:ba5e6d9e0f386394a44398c4a25d5028188bde876f7c50890daec41f198a7fcf` |
-| 2 | `theorem` | [compatible_reduction_confluent](../../../../ProbabilityTheoryAndStochasticProcesses/Confluence.lean/declarations/compatible-reduction-confluent.md) | 17 | `result-track:16c69c4d398c641627106a385d3f251d654f0c32bef5b6e2fdc6e3c10916134b` |
+| 1 | `structure` | [CompatibleReduction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Confluence.lean/declarations/compatiblereduction.md) | 10 | `declaration-track:ba5e6d9e0f386394a44398c4a25d5028188bde876f7c50890daec41f198a7fcf` |
+| 2 | `theorem` | [compatible_reduction_confluent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Confluence.lean/declarations/compatible-reduction-confluent.md) | 17 | `result-track:16c69c4d398c641627106a385d3f251d654f0c32bef5b6e2fdc6e3c10916134b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

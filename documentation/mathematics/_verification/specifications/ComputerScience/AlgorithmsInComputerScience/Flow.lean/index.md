@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Flow.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Flow.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Flow.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Flow.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,13 +60,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [pointCountModuloFromCurve](../../../../../ComputerScience/AlgorithmsInComputerScience/Flow.lean/declarations/pointcountmodulofromcurve.md) | 22 | `declaration-track:9e078f7fa1295b3802b5ba5c4bebc1c2ec1cff3150da8d24a575c392a3168b05` |
-| 2 | `def` | [localFactorFromPointCount](../../../../../ComputerScience/AlgorithmsInComputerScience/Flow.lean/declarations/localfactorfrompointcount.md) | 32 | `declaration-track:76344047ac787879913171ea933ecae923a64a9e298615e3710adc8b000c4d89` |
-| 3 | `def` | [eulerProductApproxFromCurve](../../../../../ComputerScience/AlgorithmsInComputerScience/Flow.lean/declarations/eulerproductapproxfromcurve.md) | 38 | `declaration-track:da13a23c93b8dd0abd852dd78e2ea90174b6f3d84892289b969204ebc3bf8b6c` |
-| 4 | `def` | [logScalingClaim](../../../../../ComputerScience/AlgorithmsInComputerScience/Flow.lean/declarations/logscalingclaim.md) | 45 | `declaration-track:92b224d22349f03f8ec429342f9c4e372c90fe4055c6d14c8271c0ed9687e568` |
-| 5 | `def` | [analyticRankComparisonNode](../../../../../ComputerScience/AlgorithmsInComputerScience/Flow.lean/declarations/analyticrankcomparisonnode.md) | 52 | `declaration-track:55e038f9c63b1ce1490d2cbe3fba189efd33182a085d32e45a18c6b960977171` |
-| 6 | `def` | [exampleF5PointCountNode](../../../../../ComputerScience/AlgorithmsInComputerScience/Flow.lean/declarations/examplef5pointcountnode.md) | 64 | `declaration-track:25123b7020ebe65bb761ccca9dd2c2022146a724a091da72f8913bdf74bdfbad` |
-| 7 | `theorem` | [exampleF5PointCountNode_uses_checked_count](../../../../../ComputerScience/AlgorithmsInComputerScience/Flow.lean/declarations/examplef5pointcountnode-uses-checked-count.md) | 71 | `result-track:070b54b59b7b0e28b7394e1720c338c001e58ec93dd7858dcbc0d69a29ee05d4` |
+| 1 | `def` | [pointCountModuloFromCurve](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Flow.lean/declarations/pointcountmodulofromcurve.md) | 22 | `declaration-track:9e078f7fa1295b3802b5ba5c4bebc1c2ec1cff3150da8d24a575c392a3168b05` |
+| 2 | `def` | [localFactorFromPointCount](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Flow.lean/declarations/localfactorfrompointcount.md) | 32 | `declaration-track:76344047ac787879913171ea933ecae923a64a9e298615e3710adc8b000c4d89` |
+| 3 | `def` | [eulerProductApproxFromCurve](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Flow.lean/declarations/eulerproductapproxfromcurve.md) | 38 | `declaration-track:da13a23c93b8dd0abd852dd78e2ea90174b6f3d84892289b969204ebc3bf8b6c` |
+| 4 | `def` | [logScalingClaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Flow.lean/declarations/logscalingclaim.md) | 45 | `declaration-track:92b224d22349f03f8ec429342f9c4e372c90fe4055c6d14c8271c0ed9687e568` |
+| 5 | `def` | [analyticRankComparisonNode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Flow.lean/declarations/analyticrankcomparisonnode.md) | 52 | `declaration-track:55e038f9c63b1ce1490d2cbe3fba189efd33182a085d32e45a18c6b960977171` |
+| 6 | `def` | [exampleF5PointCountNode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Flow.lean/declarations/examplef5pointcountnode.md) | 64 | `declaration-track:25123b7020ebe65bb761ccca9dd2c2022146a724a091da72f8913bdf74bdfbad` |
+| 7 | `theorem` | [exampleF5PointCountNode_uses_checked_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Flow.lean/declarations/examplef5pointcountnode-uses-checked-count.md) | 71 | `result-track:070b54b59b7b0e28b7394e1720c338c001e58ec93dd7858dcbc0d69a29ee05d4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

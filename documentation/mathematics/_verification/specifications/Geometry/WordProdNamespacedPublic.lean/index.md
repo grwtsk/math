@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Geometry/WordProdNamespacedPublic.lean/index.md) · [Full source](../../../../Geometry/WordProdNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/WordProdNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/WordProdNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [wordProd](../../../../Geometry/WordProdNamespacedPublic.lean/declarations/wordprod.md) | 51 | `declaration-track:2b0677ccf03ff848aded56519035628bc795961aecca12c6b59f13ab276ff09a` |
-| 2 | `theorem` | [wordProd_surjective](../../../../Geometry/WordProdNamespacedPublic.lean/declarations/wordprod-surjective.md) | 54 | `result-track:52e819a0f814d5028032f91f8ab4bfde808abcae74e3fbadb2ee644511a3d449` |
-| 3 | `lemma` | [wordProd_nil](../../../../Geometry/WordProdNamespacedPublic.lean/declarations/wordprod-nil.md) | 58 | `result-track:cf9978b8937905ba72ca9d2cf87bd93e6a3c36f2745b38f7e6b2db1169783d96` |
-| 4 | `lemma` | [wordProd_singleton](../../../../Geometry/WordProdNamespacedPublic.lean/declarations/wordprod-singleton.md) | 62 | `result-track:f20fa45b397c8e83f3b525209f7e67a40706340e09d21571eac76d731d5337fc` |
-| 5 | `lemma` | [wordProd_cons](../../../../Geometry/WordProdNamespacedPublic.lean/declarations/wordprod-cons.md) | 65 | `result-track:71cdb9b4908d6e903beb2bbd78b87e17381d3cf4fc8b9a9578b2fc4ee8835be3` |
-| 6 | `lemma` | [wordProd_append](../../../../Geometry/WordProdNamespacedPublic.lean/declarations/wordprod-append.md) | 68 | `result-track:4d25b288a285be19e570f6e7251337e1650c052e8a10f9e622412b95535cc870` |
-| 7 | `lemma` | [wordProd_invRev](../../../../Geometry/WordProdNamespacedPublic.lean/declarations/wordprod-invrev.md) | 71 | `result-track:778f56f563da63c38032f36bb0aac8230e30438a2c58ccde3ce2d123d2c68df8` |
+| 1 | `def` | [wordProd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/WordProdNamespacedPublic.lean/declarations/wordprod.md) | 51 | `declaration-track:2b0677ccf03ff848aded56519035628bc795961aecca12c6b59f13ab276ff09a` |
+| 2 | `theorem` | [wordProd_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/WordProdNamespacedPublic.lean/declarations/wordprod-surjective.md) | 54 | `result-track:52e819a0f814d5028032f91f8ab4bfde808abcae74e3fbadb2ee644511a3d449` |
+| 3 | `lemma` | [wordProd_nil](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/WordProdNamespacedPublic.lean/declarations/wordprod-nil.md) | 58 | `result-track:cf9978b8937905ba72ca9d2cf87bd93e6a3c36f2745b38f7e6b2db1169783d96` |
+| 4 | `lemma` | [wordProd_singleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/WordProdNamespacedPublic.lean/declarations/wordprod-singleton.md) | 62 | `result-track:f20fa45b397c8e83f3b525209f7e67a40706340e09d21571eac76d731d5337fc` |
+| 5 | `lemma` | [wordProd_cons](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/WordProdNamespacedPublic.lean/declarations/wordprod-cons.md) | 65 | `result-track:71cdb9b4908d6e903beb2bbd78b87e17381d3cf4fc8b9a9578b2fc4ee8835be3` |
+| 6 | `lemma` | [wordProd_append](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/WordProdNamespacedPublic.lean/declarations/wordprod-append.md) | 68 | `result-track:4d25b288a285be19e570f6e7251337e1650c052e8a10f9e622412b95535cc870` |
+| 7 | `lemma` | [wordProd_invRev](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/WordProdNamespacedPublic.lean/declarations/wordprod-invrev.md) | 71 | `result-track:778f56f563da63c38032f36bb0aac8230e30438a2c58ccde3ce2d123d2c68df8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

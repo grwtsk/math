@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeDependentExportProductsAndRootRestriction.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeDependentExportProductsAndRootRestriction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeDependentExportProductsAndRootRestriction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeDependentExportProductsAndRootRestriction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -49,7 +49,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 - `Mathlib.Data.Finset.Union` — import line 19; external provider; requires a separately pinned dependency.
 - `Mathlib.Logic.Relation` — import line 20; external provider; requires a separately pinned dependency.
 - `Mathlib.Order.WellFounded` — import line 21; external provider; requires a separately pinned dependency.
-- [Finite Acyclic Graph Reachability And Closure](../../../../../Combinatorics/GraphTheory/FiniteAcyclicGraphReachabilityAndClosure.lean/index.md) — import line 23; pinned internal source present.
+- [Finite Acyclic Graph Reachability And Closure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/FiniteAcyclicGraphReachabilityAndClosure.lean/index.md) — import line 23; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [DependencyEnv](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeDependentExportProductsAndRootRestriction.lean/declarations/dependencyenv.md) | 43 | `declaration-track:063d166c5b12e5806d99f49672bb4d8dc7834e0aaa958829541b370e9006b01b` |
-| 2 | `structure` | [Tenant](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeDependentExportProductsAndRootRestriction.lean/declarations/tenant.md) | 50 | `declaration-track:dd387a5ed198187faaeb715c6f45287b82fe869309d1c0e00999c49115349ed6` |
-| 3 | `def` | [Environment](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeDependentExportProductsAndRootRestriction.lean/declarations/environment.md) | 56 | `declaration-track:b2c8ec16314dcb5cf4cd0c410766fb517ec2f08ce1d5a4db5775ab64571d4d6a` |
-| 4 | `def` | [RootExports](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeDependentExportProductsAndRootRestriction.lean/declarations/rootexports.md) | 63 | `declaration-track:12826ae1d1ae6e99bcb43d2f2a05fa6c3397a712a39f47c7674bf01db90c2801` |
-| 5 | `def` | [Environment.toRootExports](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeDependentExportProductsAndRootRestriction.lean/declarations/environment-torootexports.md) | 70 | `declaration-track:84c3d24d6db4adc52f9cd49474b277b59cefac1b174450ec98e3792533e79c48` |
+| 1 | `def` | [DependencyEnv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeDependentExportProductsAndRootRestriction.lean/declarations/dependencyenv.md) | 43 | `declaration-track:063d166c5b12e5806d99f49672bb4d8dc7834e0aaa958829541b370e9006b01b` |
+| 2 | `structure` | [Tenant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeDependentExportProductsAndRootRestriction.lean/declarations/tenant.md) | 50 | `declaration-track:dd387a5ed198187faaeb715c6f45287b82fe869309d1c0e00999c49115349ed6` |
+| 3 | `def` | [Environment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeDependentExportProductsAndRootRestriction.lean/declarations/environment.md) | 56 | `declaration-track:b2c8ec16314dcb5cf4cd0c410766fb517ec2f08ce1d5a4db5775ab64571d4d6a` |
+| 4 | `def` | [RootExports](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeDependentExportProductsAndRootRestriction.lean/declarations/rootexports.md) | 63 | `declaration-track:12826ae1d1ae6e99bcb43d2f2a05fa6c3397a712a39f47c7674bf01db90c2801` |
+| 5 | `def` | [Environment.toRootExports](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeDependentExportProductsAndRootRestriction.lean/declarations/environment-torootexports.md) | 70 | `declaration-track:84c3d24d6db4adc52f9cd49474b277b59cefac1b174450ec98e3792533e79c48` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

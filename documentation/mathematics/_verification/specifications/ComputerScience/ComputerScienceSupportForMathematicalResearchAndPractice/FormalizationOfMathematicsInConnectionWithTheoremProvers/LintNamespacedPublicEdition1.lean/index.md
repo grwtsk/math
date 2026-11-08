@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LintNamespacedPublicEdition1.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LintNamespacedPublicEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LintNamespacedPublicEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LintNamespacedPublicEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `syntax` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LintNamespacedPublicEdition1.lean/declarations/syntax-source-edition-3.md) | 51 | `declaration-track:8a3acc67e6ef7724efbf3a608e199cde651950542e5bcf57ec302e5271abe453` |
-| 2 | `syntax` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LintNamespacedPublicEdition1.lean/declarations/syntax-source-edition-4.md) | 66 | `declaration-track:f63ebb48b496ac47c4ee84cffbdb383bd2d7a4aec5c101f04d01f744a613a66f` |
-| 3 | `syntax` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LintNamespacedPublicEdition1.lean/declarations/syntax.md) | 81 | `declaration-track:1bd0f55f88ea4e396c702a7f701d23fe262d3c38ee4ec861982c627cfae15a32` |
-| 4 | `syntax` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LintNamespacedPublicEdition1.lean/declarations/syntax-source-edition-2.md) | 97 | `declaration-track:62d04f589c679fc02615b3144cf7ce6f03d724906bedb60b1c795c0fa565042a` |
+| 1 | `syntax` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LintNamespacedPublicEdition1.lean/declarations/syntax-source-edition-3.md) | 51 | `declaration-track:8a3acc67e6ef7724efbf3a608e199cde651950542e5bcf57ec302e5271abe453` |
+| 2 | `syntax` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LintNamespacedPublicEdition1.lean/declarations/syntax-source-edition-4.md) | 66 | `declaration-track:f63ebb48b496ac47c4ee84cffbdb383bd2d7a4aec5c101f04d01f744a613a66f` |
+| 3 | `syntax` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LintNamespacedPublicEdition1.lean/declarations/syntax.md) | 81 | `declaration-track:1bd0f55f88ea4e396c702a7f701d23fe262d3c38ee4ec861982c627cfae15a32` |
+| 4 | `syntax` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LintNamespacedPublicEdition1.lean/declarations/syntax-source-edition-2.md) | 97 | `declaration-track:62d04f589c679fc02615b3144cf7ce6f03d724906bedb60b1c795c0fa565042a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

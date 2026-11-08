@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/BigOperatorsCoprimeListProdLeftIff.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/BigOperatorsCoprimeListProdLeftIff.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/BigOperatorsCoprimeListProdLeftIff.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/BigOperatorsCoprimeListProdLeftIff.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [coprime_list_prod_left_iff](../../../../../NumberTheory/ElementaryNumberTheory/BigOperatorsCoprimeListProdLeftIff.lean/declarations/coprime-list-prod-left-iff.md) | 19 | `result-track:76f08f0c48e1a39b2594e05f0123f1b2be99ef56a396159416f6043ac9e63f7a` |
-| 2 | `theorem` | [coprime_list_prod_right_iff](../../../../../NumberTheory/ElementaryNumberTheory/BigOperatorsCoprimeListProdLeftIff.lean/declarations/coprime-list-prod-right-iff.md) | 23 | `result-track:11ae3b89770c57ec9437f284a20486049d5afa1c0b969f5b32ccef502463f1c6` |
-| 3 | `theorem` | [coprime_multiset_prod_left_iff](../../../../../NumberTheory/ElementaryNumberTheory/BigOperatorsCoprimeListProdLeftIff.lean/declarations/coprime-multiset-prod-left-iff.md) | 27 | `result-track:4c7a19d80b4034103d3150a9bc233c6d976a1b4d496c5dfdf9890052a4f192eb` |
-| 4 | `theorem` | [coprime_multiset_prod_right_iff](../../../../../NumberTheory/ElementaryNumberTheory/BigOperatorsCoprimeListProdLeftIff.lean/declarations/coprime-multiset-prod-right-iff.md) | 31 | `result-track:db7542ad718bfb94e8861163cc9cf2037372f9372023a3968bac39697a149573` |
-| 5 | `theorem` | [coprime_prod_left_iff](../../../../../NumberTheory/ElementaryNumberTheory/BigOperatorsCoprimeListProdLeftIff.lean/declarations/coprime-prod-left-iff.md) | 35 | `result-track:dba97d561754cc57dcc3dbc79db3224256d369cf71e31bbbebad43c074b9d8ef` |
-| 6 | `theorem` | [coprime_prod_right_iff](../../../../../NumberTheory/ElementaryNumberTheory/BigOperatorsCoprimeListProdLeftIff.lean/declarations/coprime-prod-right-iff.md) | 39 | `result-track:bb212fd2f49318a5686d4068d0aebb37b5693b00d06c6f4c37fe0626c60741fb` |
-| 7 | `theorem` | [coprime_fintype_prod_left_iff](../../../../../NumberTheory/ElementaryNumberTheory/BigOperatorsCoprimeListProdLeftIff.lean/declarations/coprime-fintype-prod-left-iff.md) | 49 | `result-track:e5855465a4bbe5dfebceb4fff82b946b6c5287240528bcfbe32b50ab93ce7230` |
-| 8 | `theorem` | [coprime_fintype_prod_right_iff](../../../../../NumberTheory/ElementaryNumberTheory/BigOperatorsCoprimeListProdLeftIff.lean/declarations/coprime-fintype-prod-right-iff.md) | 53 | `result-track:d66a424c64a7c151c72dfa4fb66cbd1de3fc91d18f3beb28be47d4bf298bb36f` |
+| 1 | `theorem` | [coprime_list_prod_left_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/BigOperatorsCoprimeListProdLeftIff.lean/declarations/coprime-list-prod-left-iff.md) | 19 | `result-track:76f08f0c48e1a39b2594e05f0123f1b2be99ef56a396159416f6043ac9e63f7a` |
+| 2 | `theorem` | [coprime_list_prod_right_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/BigOperatorsCoprimeListProdLeftIff.lean/declarations/coprime-list-prod-right-iff.md) | 23 | `result-track:11ae3b89770c57ec9437f284a20486049d5afa1c0b969f5b32ccef502463f1c6` |
+| 3 | `theorem` | [coprime_multiset_prod_left_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/BigOperatorsCoprimeListProdLeftIff.lean/declarations/coprime-multiset-prod-left-iff.md) | 27 | `result-track:4c7a19d80b4034103d3150a9bc233c6d976a1b4d496c5dfdf9890052a4f192eb` |
+| 4 | `theorem` | [coprime_multiset_prod_right_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/BigOperatorsCoprimeListProdLeftIff.lean/declarations/coprime-multiset-prod-right-iff.md) | 31 | `result-track:db7542ad718bfb94e8861163cc9cf2037372f9372023a3968bac39697a149573` |
+| 5 | `theorem` | [coprime_prod_left_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/BigOperatorsCoprimeListProdLeftIff.lean/declarations/coprime-prod-left-iff.md) | 35 | `result-track:dba97d561754cc57dcc3dbc79db3224256d369cf71e31bbbebad43c074b9d8ef` |
+| 6 | `theorem` | [coprime_prod_right_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/BigOperatorsCoprimeListProdLeftIff.lean/declarations/coprime-prod-right-iff.md) | 39 | `result-track:bb212fd2f49318a5686d4068d0aebb37b5693b00d06c6f4c37fe0626c60741fb` |
+| 7 | `theorem` | [coprime_fintype_prod_left_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/BigOperatorsCoprimeListProdLeftIff.lean/declarations/coprime-fintype-prod-left-iff.md) | 49 | `result-track:e5855465a4bbe5dfebceb4fff82b946b6c5287240528bcfbe32b50ab93ce7230` |
+| 8 | `theorem` | [coprime_fintype_prod_right_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/BigOperatorsCoprimeListProdLeftIff.lean/declarations/coprime-fintype-prod-right-iff.md) | 53 | `result-track:d66a424c64a7c151c72dfa4fb66cbd1de3fc91d18f3beb28be47d4bf298bb36f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

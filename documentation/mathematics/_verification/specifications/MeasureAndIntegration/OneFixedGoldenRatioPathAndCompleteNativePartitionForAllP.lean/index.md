@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/OneFixedGoldenRatioPathAndCompleteNativePartitionForAllP.lean/index.md) · [Full source](../../../../MeasureAndIntegration/OneFixedGoldenRatioPathAndCompleteNativePartitionForAllP.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OneFixedGoldenRatioPathAndCompleteNativePartitionForAllP.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OneFixedGoldenRatioPathAndCompleteNativePartitionForAllP.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [literal_initial_record_level](../../../../MeasureAndIntegration/OneFixedGoldenRatioPathAndCompleteNativePartitionForAllP.lean/declarations/literal-initial-record-level.md) | 27 | `result-track:9e873e30ee4063299846319de6cdde478eb25eb99867ec490b89a0d27c7f6cbc` |
-| 2 | `theorem` | [literal_golden_complete_native_countermodel](../../../../MeasureAndIntegration/OneFixedGoldenRatioPathAndCompleteNativePartitionForAllP.lean/declarations/literal-golden-complete-native-countermodel.md) | 33 | `result-track:d1100040aa3e215b94e7fc0b25203abf2c1cf75c56f06ef3c6e4998f23206a31` |
+| 1 | `theorem` | [literal_initial_record_level](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OneFixedGoldenRatioPathAndCompleteNativePartitionForAllP.lean/declarations/literal-initial-record-level.md) | 27 | `result-track:9e873e30ee4063299846319de6cdde478eb25eb99867ec490b89a0d27c7f6cbc` |
+| 2 | `theorem` | [literal_golden_complete_native_countermodel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OneFixedGoldenRatioPathAndCompleteNativePartitionForAllP.lean/declarations/literal-golden-complete-native-countermodel.md) | 33 | `result-track:d1100040aa3e215b94e7fc0b25203abf2c1cf75c56f06ef3c6e4998f23206a31` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

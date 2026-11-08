@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicTranspose.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicTranspose.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicTranspose.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicTranspose.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [BitMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicTranspose.lean/declarations/bitmatrix.md) | 8 | `declaration-track:d80fe8f45fe3043bc432acb6c6cf786a4670ec4520842ea5ff58f549804f1c86` |
-| 2 | `theorem` | [ext](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicTranspose.lean/declarations/ext.md) | 12 | `result-track:4a994cf54daed963476637150ba36f01b29eadf4d87dfb2ae825fa6a6dd531bf` |
-| 3 | `def` | [transpose](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicTranspose.lean/declarations/transpose.md) | 19 | `declaration-track:443b0e4bf774074ac4e9181fa384974de432a4e6927bab214802da1e5c8492b6` |
-| 4 | `def` | [diagonal](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicTranspose.lean/declarations/diagonal.md) | 22 | `declaration-track:567ae87fcd3958762dc0401f5a6311856e37758e3eda731549a862d516856f2f` |
-| 5 | `theorem` | [transpose_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicTranspose.lean/declarations/transpose-apply.md) | 25 | `result-track:a97197067b0b0191112e8e73f56476b0de9bdfdace13813d769c4f57b812d66f` |
-| 6 | `theorem` | [transpose_transpose](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicTranspose.lean/declarations/transpose-transpose.md) | 32 | `result-track:30bf8ef00f50f8c7f12ce44ec252acb99d0b9d8284967d927ea40657d8513577` |
-| 7 | `theorem` | [diagonal_on](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicTranspose.lean/declarations/diagonal-on.md) | 38 | `result-track:756c31f07b11d5431348dd394eb811756cc71ee4d2f4748f05bd4e6d86293c3d` |
-| 8 | `theorem` | [diagonal_off](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicTranspose.lean/declarations/diagonal-off.md) | 44 | `result-track:2b74c5fee0f74dd9a5ccd5b95c0d44fa0ac5833fa707f7923de22cec391d2677` |
+| 1 | `abbrev` | [BitMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicTranspose.lean/declarations/bitmatrix.md) | 8 | `declaration-track:d80fe8f45fe3043bc432acb6c6cf786a4670ec4520842ea5ff58f549804f1c86` |
+| 2 | `theorem` | [ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicTranspose.lean/declarations/ext.md) | 12 | `result-track:4a994cf54daed963476637150ba36f01b29eadf4d87dfb2ae825fa6a6dd531bf` |
+| 3 | `def` | [transpose](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicTranspose.lean/declarations/transpose.md) | 19 | `declaration-track:443b0e4bf774074ac4e9181fa384974de432a4e6927bab214802da1e5c8492b6` |
+| 4 | `def` | [diagonal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicTranspose.lean/declarations/diagonal.md) | 22 | `declaration-track:567ae87fcd3958762dc0401f5a6311856e37758e3eda731549a862d516856f2f` |
+| 5 | `theorem` | [transpose_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicTranspose.lean/declarations/transpose-apply.md) | 25 | `result-track:a97197067b0b0191112e8e73f56476b0de9bdfdace13813d769c4f57b812d66f` |
+| 6 | `theorem` | [transpose_transpose](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicTranspose.lean/declarations/transpose-transpose.md) | 32 | `result-track:30bf8ef00f50f8c7f12ce44ec252acb99d0b9d8284967d927ea40657d8513577` |
+| 7 | `theorem` | [diagonal_on](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicTranspose.lean/declarations/diagonal-on.md) | 38 | `result-track:756c31f07b11d5431348dd394eb811756cc71ee4d2f4748f05bd4e6d86293c3d` |
+| 8 | `theorem` | [diagonal_off](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicTranspose.lean/declarations/diagonal-off.md) | 44 | `result-track:2b74c5fee0f74dd9a5ccd5b95c0d44fa0ac5833fa707f7923de22cec391d2677` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

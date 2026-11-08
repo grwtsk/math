@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/CanonicalFourFamilyStrictGap.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/CanonicalFourFamilyStrictGap.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CanonicalFourFamilyStrictGap.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CanonicalFourFamilyStrictGap.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Moebius.CanonicalFourFamilyFullAdjointReconstruction`](../../../../AssociativeRingsAndAlgebras/CanonicalFourFamilyFullAdjointReconstruction.lean/index.md) — import line 3; pinned internal source present.
-- [`GRWTSK.LinearAlgebra.Matrix.FiniteObservationGap`](../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteObservationGap.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.CanonicalFourFamilyFullAdjointReconstruction`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CanonicalFourFamilyFullAdjointReconstruction.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.LinearAlgebra.Matrix.FiniteObservationGap`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteObservationGap.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [restrictionDifferenceSet_finite](../../../../AssociativeRingsAndAlgebras/CanonicalFourFamilyStrictGap.lean/declarations/restrictiondifferenceset-finite.md) | 16 | `result-track:cffd3a44f0657d2bf28eafe306c3c254c46e4f062c46794fc8d0b81c853f2a65` |
-| 2 | `theorem` | [restriction_strict_adjoint_of_kernel_exclusion](../../../../AssociativeRingsAndAlgebras/CanonicalFourFamilyStrictGap.lean/declarations/restriction-strict-adjoint-of-kernel-exclusion.md) | 31 | `result-track:ba4b726f87d1c2760d3cd381ca334f8897eabcdff49a56b569bfb2bdc8b846aa` |
-| 3 | `theorem` | [restriction_kernel_exclusion_false_three](../../../../AssociativeRingsAndAlgebras/CanonicalFourFamilyStrictGap.lean/declarations/restriction-kernel-exclusion-false-three.md) | 58 | `result-track:8b5f6f86b34e292c48243e919d0f5ec0b9c8bc3f170065290a3aa68ea27a04c2` |
+| 1 | `theorem` | [restrictionDifferenceSet_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CanonicalFourFamilyStrictGap.lean/declarations/restrictiondifferenceset-finite.md) | 16 | `result-track:cffd3a44f0657d2bf28eafe306c3c254c46e4f062c46794fc8d0b81c853f2a65` |
+| 2 | `theorem` | [restriction_strict_adjoint_of_kernel_exclusion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CanonicalFourFamilyStrictGap.lean/declarations/restriction-strict-adjoint-of-kernel-exclusion.md) | 31 | `result-track:ba4b726f87d1c2760d3cd381ca334f8897eabcdff49a56b569bfb2bdc8b846aa` |
+| 3 | `theorem` | [restriction_kernel_exclusion_false_three](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CanonicalFourFamilyStrictGap.lean/declarations/restriction-kernel-exclusion-false-three.md) | 58 | `result-track:8b5f6f86b34e292c48243e919d0f5ec0b9c8bc3f170065290a3aa68ea27a04c2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

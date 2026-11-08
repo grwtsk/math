@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ASelectedFiniteGreenCapConsumesThePrimeReserve.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ASelectedFiniteGreenCapConsumesThePrimeReserve.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ASelectedFiniteGreenCapConsumesThePrimeReserve.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ASelectedFiniteGreenCapConsumesThePrimeReserve.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_suffix_square_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ASelectedFiniteGreenCapConsumesThePrimeReserve.lean/declarations/actual-suffix-square-le.md) | 25 | `result-track:8ca9483ce72b0b678fca173b0ba293e986358fa53f5486bd2e420ba60c1def87` |
-| 2 | `theorem` | [positive_profile_height_bound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ASelectedFiniteGreenCapConsumesThePrimeReserve.lean/declarations/positive-profile-height-bound.md) | 63 | `result-track:6af7efeec6809e614a9b9a7123a7e81b0f95e0cf31b772e19452c5ae9ff38a90` |
-| 3 | `theorem` | [selected_green_cap_implies_eventualSign](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ASelectedFiniteGreenCapConsumesThePrimeReserve.lean/declarations/selected-green-cap-implies-eventualsign.md) | 84 | `result-track:83b0fb6681ef83395148187c7dc638dca13da63075673ab813f521ce14086194` |
+| 1 | `theorem` | [actual_suffix_square_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ASelectedFiniteGreenCapConsumesThePrimeReserve.lean/declarations/actual-suffix-square-le.md) | 25 | `result-track:8ca9483ce72b0b678fca173b0ba293e986358fa53f5486bd2e420ba60c1def87` |
+| 2 | `theorem` | [positive_profile_height_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ASelectedFiniteGreenCapConsumesThePrimeReserve.lean/declarations/positive-profile-height-bound.md) | 63 | `result-track:6af7efeec6809e614a9b9a7123a7e81b0f95e0cf31b772e19452c5ae9ff38a90` |
+| 3 | `theorem` | [selected_green_cap_implies_eventualSign](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ASelectedFiniteGreenCapConsumesThePrimeReserve.lean/declarations/selected-green-cap-implies-eventualsign.md) | 84 | `result-track:83b0fb6681ef83395148187c7dc638dca13da63075673ab813f521ce14086194` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/LinearUpperLowerSetTopologyPublic.lean/index.md) · [Full source](../../../../GeneralTopology/LinearUpperLowerSetTopologyPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LinearUpperLowerSetTopologyPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LinearUpperLowerSetTopologyPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../GeneralTopology/LinearUpperLowerSetTopologyPublic.lean/declarations/instance.md) | 19 | `declaration-track:03077f64e8802daf54fc869f8d991ec0181ad014769599d64b2ff7a17963ab08` |
-| 2 | `instance` | [(anonymous)](../../../../GeneralTopology/LinearUpperLowerSetTopologyPublic.lean/declarations/instance-source-edition-2.md) | 32 | `declaration-track:2407e32fa759d4fefef585bd81c4f26ca39a460b20f7fa24ac4bb0fbfaabea32` |
-| 3 | `instance` | [(anonymous)](../../../../GeneralTopology/LinearUpperLowerSetTopologyPublic.lean/declarations/instance-source-edition-3.md) | 37 | `declaration-track:b01adc9479f5d979c5a4e3ef7b38b7c44dc0b15ec04f1ff8dd1f4543ee221916` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LinearUpperLowerSetTopologyPublic.lean/declarations/instance.md) | 19 | `declaration-track:03077f64e8802daf54fc869f8d991ec0181ad014769599d64b2ff7a17963ab08` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LinearUpperLowerSetTopologyPublic.lean/declarations/instance-source-edition-2.md) | 32 | `declaration-track:2407e32fa759d4fefef585bd81c4f26ca39a460b20f7fa24ac4bb0fbfaabea32` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LinearUpperLowerSetTopologyPublic.lean/declarations/instance-source-edition-3.md) | 37 | `declaration-track:b01adc9479f5d979c5a4e3ef7b38b7c44dc0b15ec04f1ff8dd1f4543ee221916` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

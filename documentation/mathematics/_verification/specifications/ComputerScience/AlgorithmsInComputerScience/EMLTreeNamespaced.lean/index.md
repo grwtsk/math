@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/EMLTreeNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/EMLTreeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EMLTreeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EMLTreeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [EMLTree](../../../../../ComputerScience/AlgorithmsInComputerScience/EMLTreeNamespaced.lean/declarations/emltree.md) | 13 | `declaration-track:c1a10ab73eaf016313bdfe97a93f286f945501245a2e59324bdc3c164ecfa4d7` |
-| 2 | `def` | [size](../../../../../ComputerScience/AlgorithmsInComputerScience/EMLTreeNamespaced.lean/declarations/size.md) | 21 | `declaration-track:eb87d27783feb401e6c5770e74cd52bfb5d5a42990c7fdaca756a624a71fe36c` |
-| 3 | `def` | [depth](../../../../../ComputerScience/AlgorithmsInComputerScience/EMLTreeNamespaced.lean/declarations/depth.md) | 26 | `declaration-track:3e1a6db33a09d914a22325f35ac77cfe8b587cb2008bd37c52bc7373a0044661` |
-| 4 | `def` | [vars](../../../../../ComputerScience/AlgorithmsInComputerScience/EMLTreeNamespaced.lean/declarations/vars.md) | 29 | `declaration-track:40a086814cf509fe45c8c6a985834e963625bf40aba5dab97be5c7a734d4292a` |
-| 5 | `theorem` | [size_pos](../../../../../ComputerScience/AlgorithmsInComputerScience/EMLTreeNamespaced.lean/declarations/size-pos.md) | 34 | `result-track:844b49af3c6279358de0f8f348cb1c9853576bf45ac6e4d38c174597a39f2661` |
-| 6 | `theorem` | [depth_le_size](../../../../../ComputerScience/AlgorithmsInComputerScience/EMLTreeNamespaced.lean/declarations/depth-le-size.md) | 43 | `result-track:2f9811c0f7e1d727983523e0bfba2b1242e88cbe6c90f87d1d1c5b00312d9d03` |
-| 7 | `theorem` | [vars_subset_univ](../../../../../ComputerScience/AlgorithmsInComputerScience/EMLTreeNamespaced.lean/declarations/vars-subset-univ.md) | 46 | `result-track:007db3c23c59220babf8d2768febc542d7e53a30dafb32ddbfc7127f7192e4c8` |
-| 8 | `structure` | [EMLAlgebra](../../../../../ComputerScience/AlgorithmsInComputerScience/EMLTreeNamespaced.lean/declarations/emlalgebra.md) | 53 | `declaration-track:0201150b1101c34ecbc1ac194345f9fd666fc5f16f3356e3ce352586fad638e5` |
-| 9 | `def` | [EMLTree.eval](../../../../../ComputerScience/AlgorithmsInComputerScience/EMLTreeNamespaced.lean/declarations/emltree-eval.md) | 58 | `declaration-track:1ab6a0abd1cf79e273fc96e883f58779d2cbe32a4cd781d5922d2c448c2a43a0` |
+| 1 | `inductive` | [EMLTree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EMLTreeNamespaced.lean/declarations/emltree.md) | 13 | `declaration-track:c1a10ab73eaf016313bdfe97a93f286f945501245a2e59324bdc3c164ecfa4d7` |
+| 2 | `def` | [size](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EMLTreeNamespaced.lean/declarations/size.md) | 21 | `declaration-track:eb87d27783feb401e6c5770e74cd52bfb5d5a42990c7fdaca756a624a71fe36c` |
+| 3 | `def` | [depth](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EMLTreeNamespaced.lean/declarations/depth.md) | 26 | `declaration-track:3e1a6db33a09d914a22325f35ac77cfe8b587cb2008bd37c52bc7373a0044661` |
+| 4 | `def` | [vars](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EMLTreeNamespaced.lean/declarations/vars.md) | 29 | `declaration-track:40a086814cf509fe45c8c6a985834e963625bf40aba5dab97be5c7a734d4292a` |
+| 5 | `theorem` | [size_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EMLTreeNamespaced.lean/declarations/size-pos.md) | 34 | `result-track:844b49af3c6279358de0f8f348cb1c9853576bf45ac6e4d38c174597a39f2661` |
+| 6 | `theorem` | [depth_le_size](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EMLTreeNamespaced.lean/declarations/depth-le-size.md) | 43 | `result-track:2f9811c0f7e1d727983523e0bfba2b1242e88cbe6c90f87d1d1c5b00312d9d03` |
+| 7 | `theorem` | [vars_subset_univ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EMLTreeNamespaced.lean/declarations/vars-subset-univ.md) | 46 | `result-track:007db3c23c59220babf8d2768febc542d7e53a30dafb32ddbfc7127f7192e4c8` |
+| 8 | `structure` | [EMLAlgebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EMLTreeNamespaced.lean/declarations/emlalgebra.md) | 53 | `declaration-track:0201150b1101c34ecbc1ac194345f9fd666fc5f16f3356e3ce352586fad638e5` |
+| 9 | `def` | [EMLTree.eval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EMLTreeNamespaced.lean/declarations/emltree-eval.md) | 58 | `declaration-track:1ab6a0abd1cf79e273fc96e883f58779d2cbe32a4cd781d5922d2c448c2a43a0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

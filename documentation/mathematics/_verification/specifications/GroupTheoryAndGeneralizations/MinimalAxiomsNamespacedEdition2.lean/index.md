@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/MinimalAxiomsNamespacedEdition2.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/MinimalAxiomsNamespacedEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/MinimalAxiomsNamespacedEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/MinimalAxiomsNamespacedEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Group.ofLeftAxioms](../../../../GroupTheoryAndGeneralizations/MinimalAxiomsNamespacedEdition2.lean/declarations/group-ofleftaxioms.md) | 43 | `declaration-track:12de8e037935e3811c6fc35ffb593b604081317678b68ce3dc243768619d98cb` |
-| 2 | `def` | [Group.ofRightAxioms](../../../../GroupTheoryAndGeneralizations/MinimalAxiomsNamespacedEdition2.lean/declarations/group-ofrightaxioms.md) | 70 | `declaration-track:06cca83b7393aa524477a3506ae6de521c5643503a31c87841697f2d39766344` |
+| 1 | `def` | [Group.ofLeftAxioms](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/MinimalAxiomsNamespacedEdition2.lean/declarations/group-ofleftaxioms.md) | 43 | `declaration-track:12de8e037935e3811c6fc35ffb593b604081317678b68ce3dc243768619d98cb` |
+| 2 | `def` | [Group.ofRightAxioms](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/MinimalAxiomsNamespacedEdition2.lean/declarations/group-ofrightaxioms.md) | 70 | `declaration-track:06cca83b7393aa524477a3506ae6de521c5643503a31c87841697f2d39766344` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/PoissonNamespaced.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/PoissonNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/PoissonNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/PoissonNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,15 +59,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [poissonPMFReal](../../../../ProbabilityTheoryAndStochasticProcesses/PoissonNamespaced.lean/declarations/poissonpmfreal.md) | 42 | `declaration-track:e975456e2b30ebbd6c38c147239489f18fd1c0483df2b1869e63da042653398c` |
-| 2 | `lemma` | [poissonPMFRealSum](../../../../ProbabilityTheoryAndStochasticProcesses/PoissonNamespaced.lean/declarations/poissonpmfrealsum.md) | 44 | `result-track:984fed497287a0f73a449974f8507b7ee37f3050b11023bcff6c0bde1f7f1d64` |
-| 3 | `lemma` | [poissonPMFReal_pos](../../../../ProbabilityTheoryAndStochasticProcesses/PoissonNamespaced.lean/declarations/poissonpmfreal-pos.md) | 57 | `result-track:388b423c1f7f4cde78f20c777c1a54a4160e26fbec6e85da119981bb8a5457b5` |
-| 4 | `lemma` | [poissonPMFReal_nonneg](../../../../ProbabilityTheoryAndStochasticProcesses/PoissonNamespaced.lean/declarations/poissonpmfreal-nonneg.md) | 61 | `result-track:0a481af93b8d84fb11ee199e3c4cfb66aaa86872d3a414a2f9afd34cbb0ab529` |
-| 5 | `def` | [poissonPMF](../../../../ProbabilityTheoryAndStochasticProcesses/PoissonNamespaced.lean/declarations/poissonpmf.md) | 67 | `declaration-track:3ce6202b53e66cc490929cf4586a4e4bcffbc8653aef5236b7649ea5287fcc2a` |
-| 6 | `lemma` | [measurable_poissonPMFReal](../../../../ProbabilityTheoryAndStochasticProcesses/PoissonNamespaced.lean/declarations/measurable-poissonpmfreal.md) | 75 | `result-track:3b6c07c2415307361dd9aff010760c8287dfaedeeea8f66e02c9b59922e7a21f` |
-| 7 | `lemma` | [stronglyMeasurable_poissonPMFReal](../../../../ProbabilityTheoryAndStochasticProcesses/PoissonNamespaced.lean/declarations/stronglymeasurable-poissonpmfreal.md) | 78 | `result-track:38ff4026fcf93ee4effbcbe15dfbef1b5b36ad951a17ce1238106dd91d105714` |
-| 8 | `def` | [poissonMeasure](../../../../ProbabilityTheoryAndStochasticProcesses/PoissonNamespaced.lean/declarations/poissonmeasure.md) | 85 | `declaration-track:6b17e0c2e69f5daaab6b45a05abf86fcf104e8542917e5f6ecca5d912cd5a0a4` |
-| 9 | `instance` | [isProbabilityMeasurePoisson](../../../../ProbabilityTheoryAndStochasticProcesses/PoissonNamespaced.lean/declarations/isprobabilitymeasurepoisson.md) | 87 | `declaration-track:aea4e7dac61ef2f79f68c50ec6fda0ef5ac683b7e45ad6b9dff8c45e0bbe0d05` |
+| 1 | `def` | [poissonPMFReal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/PoissonNamespaced.lean/declarations/poissonpmfreal.md) | 42 | `declaration-track:e975456e2b30ebbd6c38c147239489f18fd1c0483df2b1869e63da042653398c` |
+| 2 | `lemma` | [poissonPMFRealSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/PoissonNamespaced.lean/declarations/poissonpmfrealsum.md) | 44 | `result-track:984fed497287a0f73a449974f8507b7ee37f3050b11023bcff6c0bde1f7f1d64` |
+| 3 | `lemma` | [poissonPMFReal_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/PoissonNamespaced.lean/declarations/poissonpmfreal-pos.md) | 57 | `result-track:388b423c1f7f4cde78f20c777c1a54a4160e26fbec6e85da119981bb8a5457b5` |
+| 4 | `lemma` | [poissonPMFReal_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/PoissonNamespaced.lean/declarations/poissonpmfreal-nonneg.md) | 61 | `result-track:0a481af93b8d84fb11ee199e3c4cfb66aaa86872d3a414a2f9afd34cbb0ab529` |
+| 5 | `def` | [poissonPMF](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/PoissonNamespaced.lean/declarations/poissonpmf.md) | 67 | `declaration-track:3ce6202b53e66cc490929cf4586a4e4bcffbc8653aef5236b7649ea5287fcc2a` |
+| 6 | `lemma` | [measurable_poissonPMFReal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/PoissonNamespaced.lean/declarations/measurable-poissonpmfreal.md) | 75 | `result-track:3b6c07c2415307361dd9aff010760c8287dfaedeeea8f66e02c9b59922e7a21f` |
+| 7 | `lemma` | [stronglyMeasurable_poissonPMFReal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/PoissonNamespaced.lean/declarations/stronglymeasurable-poissonpmfreal.md) | 78 | `result-track:38ff4026fcf93ee4effbcbe15dfbef1b5b36ad951a17ce1238106dd91d105714` |
+| 8 | `def` | [poissonMeasure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/PoissonNamespaced.lean/declarations/poissonmeasure.md) | 85 | `declaration-track:6b17e0c2e69f5daaab6b45a05abf86fcf104e8542917e5f6ecca5d912cd5a0a4` |
+| 9 | `instance` | [isProbabilityMeasurePoisson](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/PoissonNamespaced.lean/declarations/isprobabilitymeasurepoisson.md) | 87 | `declaration-track:aea4e7dac61ef2f79f68c50ec6fda0ef5ac683b7e45ad6b9dff8c45e0bbe0d05` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

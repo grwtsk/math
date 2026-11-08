@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/FloorPowNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/FloorPowNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FloorPowNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FloorPowNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [tendsto_div_of_monotone_of_exists_subseq_tendsto_div](../../../../FunctionalAnalysis/FloorPowNamespaced.lean/declarations/tendsto-div-of-monotone-of-exists-subseq-tendsto-div.md) | 34 | `result-track:88a918dc618e987e6a4c87da1ca030ed67ebfce1871d67e8c5db7394ea90a46e` |
-| 2 | `theorem` | [tendsto_div_of_monotone_of_tendsto_div_floor_pow](../../../../FunctionalAnalysis/FloorPowNamespaced.lean/declarations/tendsto-div-of-monotone-of-tendsto-div-floor-pow.md) | 193 | `result-track:7787289810db3a1fe4339d76d610da6b0d0d908f08b7f3b84cf0628394655eca` |
-| 3 | `theorem` | [sum_div_pow_sq_le_div_sq](../../../../FunctionalAnalysis/FloorPowNamespaced.lean/declarations/sum-div-pow-sq-le-div-sq.md) | 226 | `result-track:9070c3c37e55866db633cdb54c124445b70a9eed722c7258ef5e5dc05072d673` |
-| 4 | `theorem` | [mul_pow_le_nat_floor_pow](../../../../FunctionalAnalysis/FloorPowNamespaced.lean/declarations/mul-pow-le-nat-floor-pow.md) | 274 | `result-track:08db4833ea7050b5ba5be8754b2c992f9def764924f3afe3476f54fe3f98d8ca` |
-| 5 | `theorem` | [sum_div_nat_floor_pow_sq_le_div_sq](../../../../FunctionalAnalysis/FloorPowNamespaced.lean/declarations/sum-div-nat-floor-pow-sq-le-div-sq.md) | 287 | `result-track:05c000e5c395902ffc6e4e28b051e9785a13dd435e1a3967af7c0bdb8f900d26` |
+| 1 | `theorem` | [tendsto_div_of_monotone_of_exists_subseq_tendsto_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FloorPowNamespaced.lean/declarations/tendsto-div-of-monotone-of-exists-subseq-tendsto-div.md) | 34 | `result-track:88a918dc618e987e6a4c87da1ca030ed67ebfce1871d67e8c5db7394ea90a46e` |
+| 2 | `theorem` | [tendsto_div_of_monotone_of_tendsto_div_floor_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FloorPowNamespaced.lean/declarations/tendsto-div-of-monotone-of-tendsto-div-floor-pow.md) | 193 | `result-track:7787289810db3a1fe4339d76d610da6b0d0d908f08b7f3b84cf0628394655eca` |
+| 3 | `theorem` | [sum_div_pow_sq_le_div_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FloorPowNamespaced.lean/declarations/sum-div-pow-sq-le-div-sq.md) | 226 | `result-track:9070c3c37e55866db633cdb54c124445b70a9eed722c7258ef5e5dc05072d673` |
+| 4 | `theorem` | [mul_pow_le_nat_floor_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FloorPowNamespaced.lean/declarations/mul-pow-le-nat-floor-pow.md) | 274 | `result-track:08db4833ea7050b5ba5be8754b2c992f9def764924f3afe3476f54fe3f98d8ca` |
+| 5 | `theorem` | [sum_div_nat_floor_pow_sq_le_div_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FloorPowNamespaced.lean/declarations/sum-div-nat-floor-pow-sq-le-div-sq.md) | 287 | `result-track:05c000e5c395902ffc6e4e28b051e9785a13dd435e1a3967af7c0bdb8f900d26` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

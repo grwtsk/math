@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SnapshotTheoremCertificateNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SnapshotTheoremCertificateNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SnapshotTheoremCertificateNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SnapshotTheoremCertificateNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SnapshotTheoremCertificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SnapshotTheoremCertificateNamespaced.lean/declarations/snapshottheoremcertificate.md) | 25 | `declaration-track:379a0dc858a8973bd055acf05f43f1ace817f3fadcc7c021f19d527e18a6b02c` |
-| 2 | `theorem` | [proves](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SnapshotTheoremCertificateNamespaced.lean/declarations/proves-source-edition-2.md) | 48 | `result-track:f03aceee38df56b0b0650ccc39e0bfc656d43f57daa9fec0971197b6da04c60d` |
-| 3 | `theorem` | [replay_environment_exact](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SnapshotTheoremCertificateNamespaced.lean/declarations/replay-environment-exact.md) | 57 | `result-track:efa8f4499c99802f80d2aedb7e227de701f8216f1f3a28e4bd5dff0643938a77` |
-| 4 | `theorem` | [usable](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SnapshotTheoremCertificateNamespaced.lean/declarations/usable.md) | 68 | `result-track:ed67c8ac605a87da27a8bbee8a2dc82a9689b2e8a5d2ecfbd6eb2096c3bd8125` |
-| 5 | `structure` | [SnapshotTheoremMigration](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SnapshotTheoremCertificateNamespaced.lean/declarations/snapshottheoremmigration.md) | 87 | `declaration-track:dd5c6fbb7f870653ae921fa314281ad47fe564ea8e437c72ba0d4b578d39cc1f` |
-| 6 | `theorem` | [proves](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SnapshotTheoremCertificateNamespaced.lean/declarations/proves.md) | 103 | `result-track:76adfc2f352894368b9ab31f6fc1e08ea64a136030aa2bbfd72a52d91fb9e360` |
+| 1 | `structure` | [SnapshotTheoremCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SnapshotTheoremCertificateNamespaced.lean/declarations/snapshottheoremcertificate.md) | 25 | `declaration-track:379a0dc858a8973bd055acf05f43f1ace817f3fadcc7c021f19d527e18a6b02c` |
+| 2 | `theorem` | [proves](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SnapshotTheoremCertificateNamespaced.lean/declarations/proves-source-edition-2.md) | 48 | `result-track:f03aceee38df56b0b0650ccc39e0bfc656d43f57daa9fec0971197b6da04c60d` |
+| 3 | `theorem` | [replay_environment_exact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SnapshotTheoremCertificateNamespaced.lean/declarations/replay-environment-exact.md) | 57 | `result-track:efa8f4499c99802f80d2aedb7e227de701f8216f1f3a28e4bd5dff0643938a77` |
+| 4 | `theorem` | [usable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SnapshotTheoremCertificateNamespaced.lean/declarations/usable.md) | 68 | `result-track:ed67c8ac605a87da27a8bbee8a2dc82a9689b2e8a5d2ecfbd6eb2096c3bd8125` |
+| 5 | `structure` | [SnapshotTheoremMigration](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SnapshotTheoremCertificateNamespaced.lean/declarations/snapshottheoremmigration.md) | 87 | `declaration-track:dd5c6fbb7f870653ae921fa314281ad47fe564ea8e437c72ba0d4b578d39cc1f` |
+| 6 | `theorem` | [proves](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SnapshotTheoremCertificateNamespaced.lean/declarations/proves.md) | 103 | `result-track:76adfc2f352894368b9ab31f6fc1e08ea64a136030aa2bbfd72a52d91fb9e360` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

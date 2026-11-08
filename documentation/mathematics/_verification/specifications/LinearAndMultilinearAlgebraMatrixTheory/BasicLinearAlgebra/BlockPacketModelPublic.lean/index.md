@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BlockPacketModelPublic.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BlockPacketModelPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BlockPacketModelPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BlockPacketModelPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TypeIIBlockPacketModel](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BlockPacketModelPublic.lean/declarations/typeiiblockpacketmodel.md) | 41 | `declaration-track:a79638920576f467e8b53a474661fea2f788ad515bfd6b550bab169134c352fa` |
-| 2 | `def` | [TypeIIBlockPacketModel.packetMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BlockPacketModelPublic.lean/declarations/typeiiblockpacketmodel-packetmatrix.md) | 107 | `declaration-track:ec27f6cd30f1e8e56d29b6cd40caeec679c9d6299e9a6ac883b765ccdc535871` |
-| 3 | `theorem` | [TypeIIBlockPacketModel.exactFactorization](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BlockPacketModelPublic.lean/declarations/typeiiblockpacketmodel-exactfactorization.md) | 119 | `result-track:9f3aced2e1eab722b3c5f8b89134bdc5564f0399b1e1ff2370e292bf54c5d92a` |
-| 4 | `theorem` | [TypeIIBlockPacketModel.exactBlockFactorization](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BlockPacketModelPublic.lean/declarations/typeiiblockpacketmodel-exactblockfactorization.md) | 133 | `result-track:ae2e84c7dbc8de7bbbc2a89ddfde9a5f23646b28451f11ebd2d2930cfe930d49` |
+| 1 | `structure` | [TypeIIBlockPacketModel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BlockPacketModelPublic.lean/declarations/typeiiblockpacketmodel.md) | 41 | `declaration-track:a79638920576f467e8b53a474661fea2f788ad515bfd6b550bab169134c352fa` |
+| 2 | `def` | [TypeIIBlockPacketModel.packetMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BlockPacketModelPublic.lean/declarations/typeiiblockpacketmodel-packetmatrix.md) | 107 | `declaration-track:ec27f6cd30f1e8e56d29b6cd40caeec679c9d6299e9a6ac883b765ccdc535871` |
+| 3 | `theorem` | [TypeIIBlockPacketModel.exactFactorization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BlockPacketModelPublic.lean/declarations/typeiiblockpacketmodel-exactfactorization.md) | 119 | `result-track:9f3aced2e1eab722b3c5f8b89134bdc5564f0399b1e1ff2370e292bf54c5d92a` |
+| 4 | `theorem` | [TypeIIBlockPacketModel.exactBlockFactorization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BlockPacketModelPublic.lean/declarations/typeiiblockpacketmodel-exactblockfactorization.md) | 133 | `result-track:ae2e84c7dbc8de7bbbc2a89ddfde9a5f23646b28451f11ebd2d2930cfe930d49` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

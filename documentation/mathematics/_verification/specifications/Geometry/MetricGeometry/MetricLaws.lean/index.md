@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Geometry/MetricGeometry/MetricLaws.lean/index.md) · [Full source](../../../../../Geometry/MetricGeometry/MetricLaws.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/MetricGeometry/MetricLaws.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/MetricGeometry/MetricLaws.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Geometry.MetricGeometry.MetricSpaces.FiniteWeightedHamming.Bitfield`](../../../../../Geometry/MetricGeometry/Bitfield.lean/index.md) — import line 20; pinned internal source present.
+- [`GRWTSK.Geometry.MetricGeometry.MetricSpaces.FiniteWeightedHamming.Bitfield`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/MetricGeometry/Bitfield.lean/index.md) — import line 20; pinned internal source present.
 - `Mathlib.Data.Real.Basic` — import line 21; external provider; requires a separately pinned dependency.
 - `Mathlib.Data.Fintype.Basic` — import line 22; external provider; requires a separately pinned dependency.
 - `Mathlib.Algebra.BigOperators.Group.Finset.Basic` — import line 23; external provider; requires a separately pinned dependency.
@@ -62,13 +62,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PositiveWeights](../../../../../Geometry/MetricGeometry/MetricLaws.lean/declarations/positiveweights.md) | 39 | `declaration-track:b8617b0d573c52040cc00f545c05c331cb702928ffa59b06a3e41e50f1b5621a` |
-| 2 | `def` | [weightedHamming](../../../../../Geometry/MetricGeometry/MetricLaws.lean/declarations/weightedhamming.md) | 43 | `declaration-track:424f906f50925371f43839046d3c8208c0c00b5a91b73f13897bdbb1084c3d94` |
-| 3 | `theorem` | [weightedHamming_nonnegative](../../../../../Geometry/MetricGeometry/MetricLaws.lean/declarations/weightedhamming-nonnegative.md) | 52 | `result-track:7a4ce5e71c37fbab0e92834f4a5843d57019a6372e099bc5d05322d3830bddeb` |
-| 4 | `theorem` | [weightedHamming_self](../../../../../Geometry/MetricGeometry/MetricLaws.lean/declarations/weightedhamming-self.md) | 64 | `result-track:e1a9784a94385254234aaede1f450cb9805029e9e313d2e979fdb48ae35bad49` |
-| 5 | `theorem` | [weightedHamming_symmetric](../../../../../Geometry/MetricGeometry/MetricLaws.lean/declarations/weightedhamming-symmetric.md) | 71 | `result-track:86526c608f778dc70a4531c49a052e6bb28d264ebdb793409568db3e3b22b2b0` |
-| 6 | `theorem` | [weightedHamming_triangle](../../../../../Geometry/MetricGeometry/MetricLaws.lean/declarations/weightedhamming-triangle.md) | 85 | `result-track:60961003a2b6fd2bac2f3426b1a0b629ce5f156e5ea031d6ae8bfddbcbcc9307` |
-| 7 | `theorem` | [weightedHamming_separates](../../../../../Geometry/MetricGeometry/MetricLaws.lean/declarations/weightedhamming-separates.md) | 103 | `result-track:f44865fd6b9f10999b3ff8ae8eee02d077358421d44690bd949c73f85f0e35d3` |
+| 1 | `structure` | [PositiveWeights](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/MetricGeometry/MetricLaws.lean/declarations/positiveweights.md) | 39 | `declaration-track:b8617b0d573c52040cc00f545c05c331cb702928ffa59b06a3e41e50f1b5621a` |
+| 2 | `def` | [weightedHamming](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/MetricGeometry/MetricLaws.lean/declarations/weightedhamming.md) | 43 | `declaration-track:424f906f50925371f43839046d3c8208c0c00b5a91b73f13897bdbb1084c3d94` |
+| 3 | `theorem` | [weightedHamming_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/MetricGeometry/MetricLaws.lean/declarations/weightedhamming-nonnegative.md) | 52 | `result-track:7a4ce5e71c37fbab0e92834f4a5843d57019a6372e099bc5d05322d3830bddeb` |
+| 4 | `theorem` | [weightedHamming_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/MetricGeometry/MetricLaws.lean/declarations/weightedhamming-self.md) | 64 | `result-track:e1a9784a94385254234aaede1f450cb9805029e9e313d2e979fdb48ae35bad49` |
+| 5 | `theorem` | [weightedHamming_symmetric](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/MetricGeometry/MetricLaws.lean/declarations/weightedhamming-symmetric.md) | 71 | `result-track:86526c608f778dc70a4531c49a052e6bb28d264ebdb793409568db3e3b22b2b0` |
+| 6 | `theorem` | [weightedHamming_triangle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/MetricGeometry/MetricLaws.lean/declarations/weightedhamming-triangle.md) | 85 | `result-track:60961003a2b6fd2bac2f3426b1a0b629ce5f156e5ea031d6ae8bfddbcbcc9307` |
+| 7 | `theorem` | [weightedHamming_separates](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/MetricGeometry/MetricLaws.lean/declarations/weightedhamming-separates.md) | 103 | `result-track:f44865fd6b9f10999b3ff8ae8eee02d077358421d44690bd949c73f85f0e35d3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

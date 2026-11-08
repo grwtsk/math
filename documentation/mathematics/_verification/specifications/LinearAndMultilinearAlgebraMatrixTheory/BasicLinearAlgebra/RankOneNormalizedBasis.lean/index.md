@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RankOneNormalizedBasis.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RankOneNormalizedBasis.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RankOneNormalizedBasis.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RankOneNormalizedBasis.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.Hecke.RankOneQuadratic`](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RankOneQuadratic.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Algebra.Hecke.RankOneQuadratic`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RankOneQuadratic.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [rankOneNormalized](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RankOneNormalizedBasis.lean/declarations/rankonenormalized.md) | 9 | `declaration-track:cc57bd1b5349cde48e3da50b4e44e60d2829edd9dcacede41e66afac8ec81ba0` |
-| 2 | `theorem` | [rankOne_normalized_expansion](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RankOneNormalizedBasis.lean/declarations/rankone-normalized-expansion.md) | 13 | `result-track:859bb8801db8c96d7e42bd53314aa2ba41b01922771971a54da271e8f31a712c` |
-| 3 | `theorem` | [rankOne_normalized_coordinates_unique](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RankOneNormalizedBasis.lean/declarations/rankone-normalized-coordinates-unique.md) | 22 | `result-track:ebf3db5e89561f7fea11e657c3961a7c1660fd3b7cb6bec57300208828fb65d9` |
-| 4 | `theorem` | [rankOne_normalized_existsUnique](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RankOneNormalizedBasis.lean/declarations/rankone-normalized-existsunique.md) | 34 | `result-track:215989ca1b2a14fe8e2abc0525e80780d09842abf0655e8b63b3fd57f7481c62` |
+| 1 | `def` | [rankOneNormalized](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RankOneNormalizedBasis.lean/declarations/rankonenormalized.md) | 9 | `declaration-track:cc57bd1b5349cde48e3da50b4e44e60d2829edd9dcacede41e66afac8ec81ba0` |
+| 2 | `theorem` | [rankOne_normalized_expansion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RankOneNormalizedBasis.lean/declarations/rankone-normalized-expansion.md) | 13 | `result-track:859bb8801db8c96d7e42bd53314aa2ba41b01922771971a54da271e8f31a712c` |
+| 3 | `theorem` | [rankOne_normalized_coordinates_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RankOneNormalizedBasis.lean/declarations/rankone-normalized-coordinates-unique.md) | 22 | `result-track:ebf3db5e89561f7fea11e657c3961a7c1660fd3b7cb6bec57300208828fb65d9` |
+| 4 | `theorem` | [rankOne_normalized_existsUnique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RankOneNormalizedBasis.lean/declarations/rankone-normalized-existsunique.md) | 34 | `result-track:215989ca1b2a14fe8e2abc0525e80780d09842abf0655e8b63b3fd57f7481c62` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

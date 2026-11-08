@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CoherentWeightedGramDecoderPricingEdition1.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CoherentWeightedGramDecoderPricingEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CoherentWeightedGramDecoderPricingEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CoherentWeightedGramDecoderPricingEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [weightedGram](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CoherentWeightedGramDecoderPricingEdition1.lean/declarations/weightedgram.md) | 26 | `declaration-track:9fd998a70711cc015bb243967e64313f4dde32f991d872cefd6f3a17336dd4ac` |
-| 2 | `def` | [shellMass](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CoherentWeightedGramDecoderPricingEdition1.lean/declarations/shellmass.md) | 33 | `declaration-track:369815b38b9e7371d319b3f517cf41bc6a3c971f62f69760137dcb4209542184` |
-| 3 | `def` | [shellForm](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CoherentWeightedGramDecoderPricingEdition1.lean/declarations/shellform.md) | 40 | `declaration-track:18d67ee1e6e60a2209d4c8bb07bc3bd6a1e07037735531a84e7c631e2d14d2ac` |
-| 4 | `theorem` | [coherent_shell_rayleigh_lower](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CoherentWeightedGramDecoderPricingEdition1.lean/declarations/coherent-shell-rayleigh-lower.md) | 43 | `result-track:526f400f5112287adbb64b9c86eb999776e7e9521ce3e5e1fc5c52e2f856f5c8` |
-| 5 | `theorem` | [coherent_shell_quadratic_upper_prices_mass](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CoherentWeightedGramDecoderPricingEdition1.lean/declarations/coherent-shell-quadratic-upper-prices-mass.md) | 60 | `result-track:1448a3fda32e1fdef7269a0973a3d268af4321d460983195d9db47b767b69aea` |
-| 6 | `theorem` | [retained_decoder_cauchy](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CoherentWeightedGramDecoderPricingEdition1.lean/declarations/retained-decoder-cauchy.md) | 72 | `result-track:62cdc6a70b8a9f6769827f7fb5966c13a9d08e50432d128b1aff8dd01b83b1ef` |
-| 7 | `theorem` | [positive_diagonal_decoder_payment](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CoherentWeightedGramDecoderPricingEdition1.lean/declarations/positive-diagonal-decoder-payment.md) | 91 | `result-track:b8ec609629a35565f0d182812405b1d0cdd24d0cbb0306354e5e2fb6472bb2f7` |
+| 1 | `def` | [weightedGram](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CoherentWeightedGramDecoderPricingEdition1.lean/declarations/weightedgram.md) | 26 | `declaration-track:9fd998a70711cc015bb243967e64313f4dde32f991d872cefd6f3a17336dd4ac` |
+| 2 | `def` | [shellMass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CoherentWeightedGramDecoderPricingEdition1.lean/declarations/shellmass.md) | 33 | `declaration-track:369815b38b9e7371d319b3f517cf41bc6a3c971f62f69760137dcb4209542184` |
+| 3 | `def` | [shellForm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CoherentWeightedGramDecoderPricingEdition1.lean/declarations/shellform.md) | 40 | `declaration-track:18d67ee1e6e60a2209d4c8bb07bc3bd6a1e07037735531a84e7c631e2d14d2ac` |
+| 4 | `theorem` | [coherent_shell_rayleigh_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CoherentWeightedGramDecoderPricingEdition1.lean/declarations/coherent-shell-rayleigh-lower.md) | 43 | `result-track:526f400f5112287adbb64b9c86eb999776e7e9521ce3e5e1fc5c52e2f856f5c8` |
+| 5 | `theorem` | [coherent_shell_quadratic_upper_prices_mass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CoherentWeightedGramDecoderPricingEdition1.lean/declarations/coherent-shell-quadratic-upper-prices-mass.md) | 60 | `result-track:1448a3fda32e1fdef7269a0973a3d268af4321d460983195d9db47b767b69aea` |
+| 6 | `theorem` | [retained_decoder_cauchy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CoherentWeightedGramDecoderPricingEdition1.lean/declarations/retained-decoder-cauchy.md) | 72 | `result-track:62cdc6a70b8a9f6769827f7fb5966c13a9d08e50432d128b1aff8dd01b83b1ef` |
+| 7 | `theorem` | [positive_diagonal_decoder_payment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CoherentWeightedGramDecoderPricingEdition1.lean/declarations/positive-diagonal-decoder-payment.md) | 91 | `result-track:b8ec609629a35565f0d182812405b1d0cdd24d0cbb0306354e5e2fb6472bb2f7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

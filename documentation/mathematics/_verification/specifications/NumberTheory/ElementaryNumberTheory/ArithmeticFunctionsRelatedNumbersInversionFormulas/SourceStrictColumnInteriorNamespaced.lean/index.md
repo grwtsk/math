@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceStrictColumnInteriorNamespaced.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceStrictColumnInteriorNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceStrictColumnInteriorNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceStrictColumnInteriorNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [strictColumnInterior](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceStrictColumnInteriorNamespaced.lean/declarations/strictcolumninterior.md) | 32 | `declaration-track:94ad20a5a8f24b4edf9e57c194e452aeb266133d9c181b32d5e8f6489863ebb2` |
-| 2 | `theorem` | [covariance_sub_main_eq_strictColumnInterior_add_endpoint](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceStrictColumnInteriorNamespaced.lean/declarations/covariance-sub-main-eq-strictcolumninterior-add-endpoint.md) | 43 | `result-track:2c09808062ed1ecfbec08389e5ccb1c40186ed21a007ff5ebe43f599d86ef1d1` |
-| 3 | `theorem` | [strictColumnInterior_pointwise_upper_transfers](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceStrictColumnInteriorNamespaced.lean/declarations/strictcolumninterior-pointwise-upper-transfers.md) | 63 | `result-track:ca465fa91c1a9fc251daa776dd308b642dca4e869bbc27f1b4c3718aef4df2b3` |
-| 4 | `theorem` | [jointMainTermTail_iff_strictColumnInteriorTail](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceStrictColumnInteriorNamespaced.lean/declarations/jointmaintermtail-iff-strictcolumninteriortail.md) | 80 | `result-track:013ec4367f17bec4a72f8d147b4b8ca5b1bd22b901adcea463b6f662818fe002` |
+| 1 | `def` | [strictColumnInterior](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceStrictColumnInteriorNamespaced.lean/declarations/strictcolumninterior.md) | 32 | `declaration-track:94ad20a5a8f24b4edf9e57c194e452aeb266133d9c181b32d5e8f6489863ebb2` |
+| 2 | `theorem` | [covariance_sub_main_eq_strictColumnInterior_add_endpoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceStrictColumnInteriorNamespaced.lean/declarations/covariance-sub-main-eq-strictcolumninterior-add-endpoint.md) | 43 | `result-track:2c09808062ed1ecfbec08389e5ccb1c40186ed21a007ff5ebe43f599d86ef1d1` |
+| 3 | `theorem` | [strictColumnInterior_pointwise_upper_transfers](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceStrictColumnInteriorNamespaced.lean/declarations/strictcolumninterior-pointwise-upper-transfers.md) | 63 | `result-track:ca465fa91c1a9fc251daa776dd308b642dca4e869bbc27f1b4c3718aef4df2b3` |
+| 4 | `theorem` | [jointMainTermTail_iff_strictColumnInteriorTail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceStrictColumnInteriorNamespaced.lean/declarations/jointmaintermtail-iff-strictcolumninteriortail.md) | 80 | `result-track:013ec4367f17bec4a72f8d147b4b8ca5b1bd22b901adcea463b6f662818fe002` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

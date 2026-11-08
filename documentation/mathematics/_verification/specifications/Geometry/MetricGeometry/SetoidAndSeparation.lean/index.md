@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Geometry/MetricGeometry/SetoidAndSeparation.lean/index.md) · [Full source](../../../../../Geometry/MetricGeometry/SetoidAndSeparation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/MetricGeometry/SetoidAndSeparation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/MetricGeometry/SetoidAndSeparation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,13 +61,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PseudometricData](../../../../../Geometry/MetricGeometry/SetoidAndSeparation.lean/declarations/pseudometricdata.md) | 36 | `declaration-track:02134cbe71f7ad03e6eac4645f0acacdf34d57f1b62bc0e3601a1cb0195f6a79` |
-| 2 | `def` | [ZeroDistance](../../../../../Geometry/MetricGeometry/SetoidAndSeparation.lean/declarations/zerodistance.md) | 46 | `declaration-track:7024fcb5932e65f6e9ef892c1caf3564fc48ed5a00f7484bc098f5f09e7241d6` |
-| 3 | `theorem` | [zeroDistance_equivalence](../../../../../Geometry/MetricGeometry/SetoidAndSeparation.lean/declarations/zerodistance-equivalence.md) | 52 | `result-track:7fe5906d3858636ca017c7c93c0aab57211835f3c7b99ada7333d5bbda3a1f4b` |
-| 4 | `def` | [zeroDistanceSetoid](../../../../../Geometry/MetricGeometry/SetoidAndSeparation.lean/declarations/zerodistancesetoid.md) | 66 | `declaration-track:1b96d1c65f2f7c124025731b5c24d1a9e0977e2544fe6c77767b95828100fecb` |
-| 5 | `abbrev` | [SeparatedQuotient](../../../../../Geometry/MetricGeometry/SetoidAndSeparation.lean/declarations/separatedquotient.md) | 73 | `declaration-track:28174f23eb3cf601a5662ba6cb506027e1498ac85950857b24e99510f8567a0a` |
-| 6 | `theorem` | [quotient_identifies_exactly_zero_distance](../../../../../Geometry/MetricGeometry/SetoidAndSeparation.lean/declarations/quotient-identifies-exactly-zero-distance.md) | 78 | `result-track:b338bec6d28e692160c6e3a303298720e3bc2419387df3dc71641f9baabf9bcb` |
-| 7 | `def` | [Separated](../../../../../Geometry/MetricGeometry/SetoidAndSeparation.lean/declarations/separated.md) | 87 | `declaration-track:6752994c9d8dbed242b09d14d82c2fdacbf3af92289a04428e1d975515f7cf4d` |
+| 1 | `structure` | [PseudometricData](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/MetricGeometry/SetoidAndSeparation.lean/declarations/pseudometricdata.md) | 36 | `declaration-track:02134cbe71f7ad03e6eac4645f0acacdf34d57f1b62bc0e3601a1cb0195f6a79` |
+| 2 | `def` | [ZeroDistance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/MetricGeometry/SetoidAndSeparation.lean/declarations/zerodistance.md) | 46 | `declaration-track:7024fcb5932e65f6e9ef892c1caf3564fc48ed5a00f7484bc098f5f09e7241d6` |
+| 3 | `theorem` | [zeroDistance_equivalence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/MetricGeometry/SetoidAndSeparation.lean/declarations/zerodistance-equivalence.md) | 52 | `result-track:7fe5906d3858636ca017c7c93c0aab57211835f3c7b99ada7333d5bbda3a1f4b` |
+| 4 | `def` | [zeroDistanceSetoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/MetricGeometry/SetoidAndSeparation.lean/declarations/zerodistancesetoid.md) | 66 | `declaration-track:1b96d1c65f2f7c124025731b5c24d1a9e0977e2544fe6c77767b95828100fecb` |
+| 5 | `abbrev` | [SeparatedQuotient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/MetricGeometry/SetoidAndSeparation.lean/declarations/separatedquotient.md) | 73 | `declaration-track:28174f23eb3cf601a5662ba6cb506027e1498ac85950857b24e99510f8567a0a` |
+| 6 | `theorem` | [quotient_identifies_exactly_zero_distance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/MetricGeometry/SetoidAndSeparation.lean/declarations/quotient-identifies-exactly-zero-distance.md) | 78 | `result-track:b338bec6d28e692160c6e3a303298720e3bc2419387df3dc71641f9baabf9bcb` |
+| 7 | `def` | [Separated](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/MetricGeometry/SetoidAndSeparation.lean/declarations/separated.md) | 87 | `declaration-track:6752994c9d8dbed242b09d14d82c2fdacbf3af92289a04428e1d975515f7cf4d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

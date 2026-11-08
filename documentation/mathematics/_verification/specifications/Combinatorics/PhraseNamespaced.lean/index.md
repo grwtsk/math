@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/PhraseNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/PhraseNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PhraseNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PhraseNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [PhraseConnectivity](../../../../Combinatorics/PhraseNamespaced.lean/declarations/phraseconnectivity.md) | 17 | `declaration-track:80cebc536a86b49c85706fefbf8aec41f4e14790a717cd5e7b1bc18828f1c45e` |
-| 2 | `structure` | [PhraseCandidate](../../../../Combinatorics/PhraseNamespaced.lean/declarations/phrasecandidate.md) | 30 | `declaration-track:55023bd584bb13075ede68b1730bc3efe2d1eb04d755feeb3eb59562b0dd9c91` |
-| 3 | `theorem` | [phrase_has_source](../../../../Combinatorics/PhraseNamespaced.lean/declarations/phrase-has-source.md) | 38 | `result-track:a4f04741a83dc3809381a17f5fc656855ed2dc4e16dd0a1a78f27c9def3a7bd0` |
+| 1 | `inductive` | [PhraseConnectivity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PhraseNamespaced.lean/declarations/phraseconnectivity.md) | 17 | `declaration-track:80cebc536a86b49c85706fefbf8aec41f4e14790a717cd5e7b1bc18828f1c45e` |
+| 2 | `structure` | [PhraseCandidate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PhraseNamespaced.lean/declarations/phrasecandidate.md) | 30 | `declaration-track:55023bd584bb13075ede68b1730bc3efe2d1eb04d755feeb3eb59562b0dd9c91` |
+| 3 | `theorem` | [phrase_has_source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PhraseNamespaced.lean/declarations/phrase-has-source.md) | 38 | `result-track:a4f04741a83dc3809381a17f5fc656855ed2dc4e16dd0a1a78f27c9def3a7bd0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

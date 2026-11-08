@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/OddResidueDecay.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/OddResidueDecay.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/OddResidueDecay.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/OddResidueDecay.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [OddResidueDecayEstimate](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/OddResidueDecay.lean/declarations/oddresiduedecayestimate.md) | 23 | `declaration-track:9ef504527b8869d0a44c9374c85cfb489cb331af224d0ee4fe85e3c95c17fea8` |
-| 2 | `structure` | [CertifiedOddSpectralGap](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/OddResidueDecay.lean/declarations/certifiedoddspectralgap.md) | 41 | `declaration-track:1b9ba333f063fbd298a5a05e5c8090a947cd33fa60aa8cfa1f9ed9a705b7b872` |
-| 3 | `theorem` | [oddResidueDecay](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/OddResidueDecay.lean/declarations/oddresiduedecay.md) | 61 | `result-track:1303a4f984b68b080ae2c8621c307cb4f3220cae1a5a298e0d4f75f15e090cfa` |
+| 1 | `def` | [OddResidueDecayEstimate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/OddResidueDecay.lean/declarations/oddresiduedecayestimate.md) | 23 | `declaration-track:9ef504527b8869d0a44c9374c85cfb489cb331af224d0ee4fe85e3c95c17fea8` |
+| 2 | `structure` | [CertifiedOddSpectralGap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/OddResidueDecay.lean/declarations/certifiedoddspectralgap.md) | 41 | `declaration-track:1b9ba333f063fbd298a5a05e5c8090a947cd33fa60aa8cfa1f9ed9a705b7b872` |
+| 3 | `theorem` | [oddResidueDecay](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/OddResidueDecay.lean/declarations/oddresiduedecay.md) | 61 | `result-track:1303a4f984b68b080ae2c8621c307cb4f3220cae1a5a298e0d4f75f15e090cfa` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

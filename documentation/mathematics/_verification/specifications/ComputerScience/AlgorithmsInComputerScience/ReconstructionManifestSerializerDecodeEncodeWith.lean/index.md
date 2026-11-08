@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ReconstructionManifestSerializerDecodeEncodeWith.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ReconstructionManifestSerializerDecodeEncodeWith.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReconstructionManifestSerializerDecodeEncodeWith.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReconstructionManifestSerializerDecodeEncodeWith.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [manifest_serializer_decode_encode_with](../../../../../ComputerScience/AlgorithmsInComputerScience/ReconstructionManifestSerializerDecodeEncodeWith.lean/declarations/manifest-serializer-decode-encode-with.md) | 18 | `result-track:1d7512b61f838fa02f57d04d732c8074b58b9f3b2b14aed454b113d650b788e2` |
-| 2 | `theorem` | [manifest_serializer_decode_encode_copy](../../../../../ComputerScience/AlgorithmsInComputerScience/ReconstructionManifestSerializerDecodeEncodeWith.lean/declarations/manifest-serializer-decode-encode-copy.md) | 25 | `result-track:6e0c05e8be6328ffec0f1e943e3e8ab1481569fe3a94acba9f390dcc182fa5d6` |
-| 3 | `theorem` | [copy_archive_materializes_file_layers_with](../../../../../ComputerScience/AlgorithmsInComputerScience/ReconstructionManifestSerializerDecodeEncodeWith.lean/declarations/copy-archive-materializes-file-layers-with.md) | 32 | `result-track:5ed283da781d0c98b98bee8e6f5159d9091754956407a5fefafa134569c2d929` |
-| 4 | `theorem` | [materialize_index_spin_copy](../../../../../ComputerScience/AlgorithmsInComputerScience/ReconstructionManifestSerializerDecodeEncodeWith.lean/declarations/materialize-index-spin-copy.md) | 40 | `result-track:be37240c38cf39c9e685f1c85615c8d74ec1b8400e538ca7cc32efc9c222e6b4` |
+| 1 | `theorem` | [manifest_serializer_decode_encode_with](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReconstructionManifestSerializerDecodeEncodeWith.lean/declarations/manifest-serializer-decode-encode-with.md) | 18 | `result-track:1d7512b61f838fa02f57d04d732c8074b58b9f3b2b14aed454b113d650b788e2` |
+| 2 | `theorem` | [manifest_serializer_decode_encode_copy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReconstructionManifestSerializerDecodeEncodeWith.lean/declarations/manifest-serializer-decode-encode-copy.md) | 25 | `result-track:6e0c05e8be6328ffec0f1e943e3e8ab1481569fe3a94acba9f390dcc182fa5d6` |
+| 3 | `theorem` | [copy_archive_materializes_file_layers_with](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReconstructionManifestSerializerDecodeEncodeWith.lean/declarations/copy-archive-materializes-file-layers-with.md) | 32 | `result-track:5ed283da781d0c98b98bee8e6f5159d9091754956407a5fefafa134569c2d929` |
+| 4 | `theorem` | [materialize_index_spin_copy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReconstructionManifestSerializerDecodeEncodeWith.lean/declarations/materialize-index-spin-copy.md) | 40 | `result-track:be37240c38cf39c9e685f1c85615c8d74ec1b8400e538ca7cc32efc9c222e6b4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

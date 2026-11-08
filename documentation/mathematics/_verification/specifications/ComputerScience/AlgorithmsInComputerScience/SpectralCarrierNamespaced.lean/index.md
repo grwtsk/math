@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/SpectralCarrierNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/SpectralCarrierNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SpectralCarrierNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SpectralCarrierNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ConnesSpectralCarrier](../../../../../ComputerScience/AlgorithmsInComputerScience/SpectralCarrierNamespaced.lean/declarations/connesspectralcarrier.md) | 17 | `declaration-track:4bc3f5d0f4e2a21918eb885d2916d3aa2a2e19530339e05a481cfa903e22e8d9` |
-| 2 | `theorem` | [distinctFactors_carried_by_connesSpectralCarrier](../../../../../ComputerScience/AlgorithmsInComputerScience/SpectralCarrierNamespaced.lean/declarations/distinctfactors-carried-by-connesspectralcarrier.md) | 26 | `result-track:815ff9a08405defd9950b8e2727a1160465b9a8e70ed30fc97b4f5ed2d5f5936` |
-| 3 | `theorem` | [connesSpectralCarrier_boundary_visible](../../../../../ComputerScience/AlgorithmsInComputerScience/SpectralCarrierNamespaced.lean/declarations/connesspectralcarrier-boundary-visible.md) | 32 | `result-track:53c491d4d876039d8042c5e8f2d6003a1fd0821a0c9c66b90f2b0e55b496cb36` |
+| 1 | `structure` | [ConnesSpectralCarrier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SpectralCarrierNamespaced.lean/declarations/connesspectralcarrier.md) | 17 | `declaration-track:4bc3f5d0f4e2a21918eb885d2916d3aa2a2e19530339e05a481cfa903e22e8d9` |
+| 2 | `theorem` | [distinctFactors_carried_by_connesSpectralCarrier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SpectralCarrierNamespaced.lean/declarations/distinctfactors-carried-by-connesspectralcarrier.md) | 26 | `result-track:815ff9a08405defd9950b8e2727a1160465b9a8e70ed30fc97b4f5ed2d5f5936` |
+| 3 | `theorem` | [connesSpectralCarrier_boundary_visible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SpectralCarrierNamespaced.lean/declarations/connesspectralcarrier-boundary-visible.md) | 32 | `result-track:53c491d4d876039d8042c5e8f2d6003a1fd0821a0c9c66b90f2b0e55b496cb36` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

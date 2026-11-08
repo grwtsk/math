@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/HomotopyCategoryChainComplexPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/HomotopyCategoryChainComplexPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/HomotopyCategoryChainComplexPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/HomotopyCategoryChainComplexPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [homotopyEquivalences_shortComplexF_iff_of_degreewiseSplit](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/HomotopyCategoryChainComplexPublic.lean/declarations/homotopyequivalences-shortcomplexf-iff-of-degreewisesplit.md) | 32 | `result-track:4f9f4ce03b2e1daad9bf04a952fc9559ea6e3c0dc7e967ef390c9e82feb39186` |
-| 2 | `lemma` | [homotopyEquivalences_shortComplexG_iff_of_degreewiseSplit](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/HomotopyCategoryChainComplexPublic.lean/declarations/homotopyequivalences-shortcomplexg-iff-of-degreewisesplit.md) | 46 | `result-track:367f197ff06c8a40b56e1d420b589886d81b83bbb670bb385708ffc867303aa9` |
+| 1 | `lemma` | [homotopyEquivalences_shortComplexF_iff_of_degreewiseSplit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/HomotopyCategoryChainComplexPublic.lean/declarations/homotopyequivalences-shortcomplexf-iff-of-degreewisesplit.md) | 32 | `result-track:4f9f4ce03b2e1daad9bf04a952fc9559ea6e3c0dc7e967ef390c9e82feb39186` |
+| 2 | `lemma` | [homotopyEquivalences_shortComplexG_iff_of_degreewiseSplit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/HomotopyCategoryChainComplexPublic.lean/declarations/homotopyequivalences-shortcomplexg-iff-of-degreewisesplit.md) | 46 | `result-track:367f197ff06c8a40b56e1d420b589886d81b83bbb670bb385708ffc867303aa9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

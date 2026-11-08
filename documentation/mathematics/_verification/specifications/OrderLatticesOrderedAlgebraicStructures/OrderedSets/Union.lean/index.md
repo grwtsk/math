@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/Union.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/Union.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/Union.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/Union.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [StrictMonoOn.union](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/Union.lean/declarations/strictmonoon-union.md) | 25 | `result-track:307440c2c3988f7f64a7a206fb071176afee1dc5b21040773494773de8b4d613` |
-| 2 | `theorem` | [StrictMonoOn.Iic_union_Ici](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/Union.lean/declarations/strictmonoon-iic-union-ici.md) | 54 | `result-track:68ac7fd81e97b086564e463ab4f2f56c03b4867af9df2451fd79adc86a0352f4` |
-| 3 | `theorem` | [StrictAntiOn.union](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/Union.lean/declarations/strictantion-union.md) | 61 | `result-track:00104315c8746fe20674b3ebf291b3ca679002bfcc1c8a90626b138c0629adbc` |
-| 4 | `theorem` | [StrictAntiOn.Iic_union_Ici](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/Union.lean/declarations/strictantion-iic-union-ici.md) | 67 | `result-track:02ad49ec08da6b8e9f02a8090f742d52ee923f2ba0903a509dc864e36daded67` |
-| 5 | `theorem` | [MonotoneOn.union_right](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/Union.lean/declarations/monotoneon-union-right.md) | 73 | `result-track:2284c98e5899b7c258f71c4437f192a4897c54778e437830a457ede60a2f9967` |
-| 6 | `theorem` | [MonotoneOn.Iic_union_Ici](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/Union.lean/declarations/monotoneon-iic-union-ici.md) | 101 | `result-track:0f775fa873890168986a543307073f9eebad63ed41143316b59e4686a7402a81` |
-| 7 | `theorem` | [AntitoneOn.union_right](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/Union.lean/declarations/antitoneon-union-right.md) | 108 | `result-track:c9f01d2f816bd1db3dbae8b17b3c2b134c48b79865a569f348e90795644222dc` |
-| 8 | `theorem` | [AntitoneOn.Iic_union_Ici](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/Union.lean/declarations/antitoneon-iic-union-ici.md) | 113 | `result-track:8a0b78e37b36a4aba137c05b09ddfe6421cc96a50782b3e349ba01f3c0a3a0aa` |
+| 1 | `theorem` | [StrictMonoOn.union](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/Union.lean/declarations/strictmonoon-union.md) | 25 | `result-track:307440c2c3988f7f64a7a206fb071176afee1dc5b21040773494773de8b4d613` |
+| 2 | `theorem` | [StrictMonoOn.Iic_union_Ici](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/Union.lean/declarations/strictmonoon-iic-union-ici.md) | 54 | `result-track:68ac7fd81e97b086564e463ab4f2f56c03b4867af9df2451fd79adc86a0352f4` |
+| 3 | `theorem` | [StrictAntiOn.union](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/Union.lean/declarations/strictantion-union.md) | 61 | `result-track:00104315c8746fe20674b3ebf291b3ca679002bfcc1c8a90626b138c0629adbc` |
+| 4 | `theorem` | [StrictAntiOn.Iic_union_Ici](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/Union.lean/declarations/strictantion-iic-union-ici.md) | 67 | `result-track:02ad49ec08da6b8e9f02a8090f742d52ee923f2ba0903a509dc864e36daded67` |
+| 5 | `theorem` | [MonotoneOn.union_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/Union.lean/declarations/monotoneon-union-right.md) | 73 | `result-track:2284c98e5899b7c258f71c4437f192a4897c54778e437830a457ede60a2f9967` |
+| 6 | `theorem` | [MonotoneOn.Iic_union_Ici](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/Union.lean/declarations/monotoneon-iic-union-ici.md) | 101 | `result-track:0f775fa873890168986a543307073f9eebad63ed41143316b59e4686a7402a81` |
+| 7 | `theorem` | [AntitoneOn.union_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/Union.lean/declarations/antitoneon-union-right.md) | 108 | `result-track:c9f01d2f816bd1db3dbae8b17b3c2b134c48b79865a569f348e90795644222dc` |
+| 8 | `theorem` | [AntitoneOn.Iic_union_Ici](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/Union.lean/declarations/antitoneon-iic-union-ici.md) | 113 | `result-track:8a0b78e37b36a4aba137c05b09ddfe6421cc96a50782b3e349ba01f3c0a3a0aa` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

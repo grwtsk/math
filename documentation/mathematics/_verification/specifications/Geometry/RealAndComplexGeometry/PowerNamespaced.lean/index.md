@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Geometry/RealAndComplexGeometry/PowerNamespaced.lean/index.md) · [Full source](../../../../../Geometry/RealAndComplexGeometry/PowerNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RealAndComplexGeometry/PowerNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RealAndComplexGeometry/PowerNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [mul_norm_eq_abs_sub_sq_norm](../../../../../Geometry/RealAndComplexGeometry/PowerNamespaced.lean/declarations/mul-norm-eq-abs-sub-sq-norm.md) | 46 | `result-track:588721d16827a0dc6606c13919da07ccd2715de19a5ecfa9dd44450be7ad0457` |
-| 2 | `theorem` | [mul_dist_eq_abs_sub_sq_dist](../../../../../Geometry/RealAndComplexGeometry/PowerNamespaced.lean/declarations/mul-dist-eq-abs-sub-sq-dist.md) | 89 | `result-track:2a52193f7823ac6dd525ec21e483d57c4bedadc1ed8a0e5a075318f4488a1ef6` |
-| 3 | `theorem` | [mul_dist_eq_mul_dist_of_cospherical](../../../../../Geometry/RealAndComplexGeometry/PowerNamespaced.lean/declarations/mul-dist-eq-mul-dist-of-cospherical.md) | 105 | `result-track:27c387b7be8687da370c7fb0a6f38f6495751038daefc1c259defae4102966f8` |
-| 4 | `theorem` | [mul_dist_eq_mul_dist_of_cospherical_of_angle_eq_pi](../../../../../Geometry/RealAndComplexGeometry/PowerNamespaced.lean/declarations/mul-dist-eq-mul-dist-of-cospherical-of-angle-eq-pi.md) | 116 | `result-track:de10a2d20a2560a0de938253b72727948a9d9280401635e79d6b8a811e0f5f86` |
-| 5 | `theorem` | [mul_dist_eq_mul_dist_of_cospherical_of_angle_eq_zero](../../../../../Geometry/RealAndComplexGeometry/PowerNamespaced.lean/declarations/mul-dist-eq-mul-dist-of-cospherical-of-angle-eq-zero.md) | 124 | `result-track:c3f261aeb23d6e272b670b5dc9b00d8964245f240d14543a4ad1ef0a6dd2c4e2` |
+| 1 | `theorem` | [mul_norm_eq_abs_sub_sq_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RealAndComplexGeometry/PowerNamespaced.lean/declarations/mul-norm-eq-abs-sub-sq-norm.md) | 46 | `result-track:588721d16827a0dc6606c13919da07ccd2715de19a5ecfa9dd44450be7ad0457` |
+| 2 | `theorem` | [mul_dist_eq_abs_sub_sq_dist](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RealAndComplexGeometry/PowerNamespaced.lean/declarations/mul-dist-eq-abs-sub-sq-dist.md) | 89 | `result-track:2a52193f7823ac6dd525ec21e483d57c4bedadc1ed8a0e5a075318f4488a1ef6` |
+| 3 | `theorem` | [mul_dist_eq_mul_dist_of_cospherical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RealAndComplexGeometry/PowerNamespaced.lean/declarations/mul-dist-eq-mul-dist-of-cospherical.md) | 105 | `result-track:27c387b7be8687da370c7fb0a6f38f6495751038daefc1c259defae4102966f8` |
+| 4 | `theorem` | [mul_dist_eq_mul_dist_of_cospherical_of_angle_eq_pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RealAndComplexGeometry/PowerNamespaced.lean/declarations/mul-dist-eq-mul-dist-of-cospherical-of-angle-eq-pi.md) | 116 | `result-track:de10a2d20a2560a0de938253b72727948a9d9280401635e79d6b8a811e0f5f86` |
+| 5 | `theorem` | [mul_dist_eq_mul_dist_of_cospherical_of_angle_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RealAndComplexGeometry/PowerNamespaced.lean/declarations/mul-dist-eq-mul-dist-of-cospherical-of-angle-eq-zero.md) | 124 | `result-track:c3f261aeb23d6e272b670b5dc9b00d8964245f240d14543a4ad1ef0a6dd2c4e2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

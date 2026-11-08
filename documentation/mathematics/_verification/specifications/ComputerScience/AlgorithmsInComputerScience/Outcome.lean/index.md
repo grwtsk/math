@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Outcome.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Outcome.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Outcome.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Outcome.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [OutcomeKind](../../../../../ComputerScience/AlgorithmsInComputerScience/Outcome.lean/declarations/outcomekind.md) | 13 | `declaration-track:5db84f799683352333a66c9a72d568e8a8aa7f03d167b311120f0e62fb79928f` |
-| 2 | `structure` | [Outcome](../../../../../ComputerScience/AlgorithmsInComputerScience/Outcome.lean/declarations/outcome.md) | 20 | `declaration-track:bf460e5800523890113322dfb5eba37efc0936d67fa3bf22210e1fcaa7026619` |
-| 3 | `def` | [Outcome.IsNegative](../../../../../ComputerScience/AlgorithmsInComputerScience/Outcome.lean/declarations/outcome-isnegative.md) | 32 | `declaration-track:1aff8f694554b1875dc3bdc00f020889a39eff8c78a8b91306ade01d1fe589ef` |
+| 1 | `inductive` | [OutcomeKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Outcome.lean/declarations/outcomekind.md) | 13 | `declaration-track:5db84f799683352333a66c9a72d568e8a8aa7f03d167b311120f0e62fb79928f` |
+| 2 | `structure` | [Outcome](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Outcome.lean/declarations/outcome.md) | 20 | `declaration-track:bf460e5800523890113322dfb5eba37efc0936d67fa3bf22210e1fcaa7026619` |
+| 3 | `def` | [Outcome.IsNegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Outcome.lean/declarations/outcome-isnegative.md) | 32 | `declaration-track:1aff8f694554b1875dc3bdc00f020889a39eff8c78a8b91306ade01d1fe589ef` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/CompMul.lean/index.md) · [Full source](../../../../RealFunctions/CompMul.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CompMul.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CompMul.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [hasDerivWithinAt_comp_mul_left_smul_iff](../../../../RealFunctions/CompMul.lean/declarations/hasderivwithinat-comp-mul-left-smul-iff.md) | 26 | `result-track:55b8eea70ac2bb0e5602709d1608e44ee36d3d82b1b2c9589cbb62816976d1bb` |
-| 2 | `theorem` | [derivWithin_comp_mul_left](../../../../RealFunctions/CompMul.lean/declarations/derivwithin-comp-mul-left.md) | 34 | `result-track:4af8c99e76a4c34e8c94ed198cf3ecc44d255a8638b360b5ce822206465820e6` |
-| 3 | `theorem` | [deriv_comp_mul_left](../../../../RealFunctions/CompMul.lean/declarations/deriv-comp-mul-left.md) | 41 | `result-track:2935d21f77e42a8a15e4cd2736f64507eb69b2268c7dcce957d273de11520fbd` |
+| 1 | `theorem` | [hasDerivWithinAt_comp_mul_left_smul_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CompMul.lean/declarations/hasderivwithinat-comp-mul-left-smul-iff.md) | 26 | `result-track:55b8eea70ac2bb0e5602709d1608e44ee36d3d82b1b2c9589cbb62816976d1bb` |
+| 2 | `theorem` | [derivWithin_comp_mul_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CompMul.lean/declarations/derivwithin-comp-mul-left.md) | 34 | `result-track:4af8c99e76a4c34e8c94ed198cf3ecc44d255a8638b360b5ce822206465820e6` |
+| 3 | `theorem` | [deriv_comp_mul_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CompMul.lean/declarations/deriv-comp-mul-left.md) | 41 | `result-track:2935d21f77e42a8a15e4cd2736f64507eb69b2268c7dcce957d273de11520fbd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Geometry/RealAndComplexGeometry/PtolemyNamespaced.lean/index.md) · [Full source](../../../../../Geometry/RealAndComplexGeometry/PtolemyNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RealAndComplexGeometry/PtolemyNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RealAndComplexGeometry/PtolemyNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [mul_dist_add_mul_dist_eq_mul_dist_of_cospherical](../../../../../Geometry/RealAndComplexGeometry/PtolemyNamespaced.lean/declarations/mul-dist-add-mul-dist-eq-mul-dist-of-cospherical.md) | 59 | `result-track:864563ef2a1a5de416cd13c66028ae67c0f4d31d619f4245dae74224cf8c01c4` |
+| 1 | `theorem` | [mul_dist_add_mul_dist_eq_mul_dist_of_cospherical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RealAndComplexGeometry/PtolemyNamespaced.lean/declarations/mul-dist-add-mul-dist-eq-mul-dist-of-cospherical.md) | 59 | `result-track:864563ef2a1a5de416cd13c66028ae67c0f4d31d619f4245dae74224cf8c01c4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

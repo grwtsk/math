@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/ReciprocalPowerBounds.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/ReciprocalPowerBounds.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ReciprocalPowerBounds.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ReciprocalPowerBounds.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [norm_inv_pow_le_one_of_one_le_norm](../../../../FunctionsOfAComplexVariable/ReciprocalPowerBounds.lean/declarations/norm-inv-pow-le-one-of-one-le-norm.md) | 37 | `result-track:f4d9440605874b75dc9aa246afa3b732d68e8c4718efb12d3fb5df75a43f1f2f` |
+| 1 | `lemma` | [norm_inv_pow_le_one_of_one_le_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ReciprocalPowerBounds.lean/declarations/norm-inv-pow-le-one-of-one-le-norm.md) | 37 | `result-track:f4d9440605874b75dc9aa246afa3b732d68e8c4718efb12d3fb5df75a43f1f2f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

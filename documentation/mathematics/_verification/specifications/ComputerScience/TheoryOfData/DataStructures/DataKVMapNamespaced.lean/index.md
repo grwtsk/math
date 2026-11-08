@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/DataKVMapNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/DataKVMapNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DataKVMapNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DataKVMapNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [eraseCore](../../../../../../ComputerScience/TheoryOfData/DataStructures/DataKVMapNamespaced.lean/declarations/erasecore.md) | 24 | `declaration-track:cbbfdedba58d08e07fbc0cb35044f576635f98edf7489596904cdc69991e81d6` |
-| 2 | `def` | [erase](../../../../../../ComputerScience/TheoryOfData/DataStructures/DataKVMapNamespaced.lean/declarations/erase.md) | 28 | `declaration-track:0cb1e04fd391f3d292a71a7e78baf023441abf08b27f7c777480887f48831a90` |
-| 3 | `def` | [updateBool](../../../../../../ComputerScience/TheoryOfData/DataStructures/DataKVMapNamespaced.lean/declarations/updatebool.md) | 32 | `declaration-track:40177319f707a953cfc470ae8111dff3e57e7d9fe21842bf05b40a77b1330521` |
+| 1 | `def` | [eraseCore](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DataKVMapNamespaced.lean/declarations/erasecore.md) | 24 | `declaration-track:cbbfdedba58d08e07fbc0cb35044f576635f98edf7489596904cdc69991e81d6` |
+| 2 | `def` | [erase](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DataKVMapNamespaced.lean/declarations/erase.md) | 28 | `declaration-track:0cb1e04fd391f3d292a71a7e78baf023441abf08b27f7c777480887f48831a90` |
+| 3 | `def` | [updateBool](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DataKVMapNamespaced.lean/declarations/updatebool.md) | 32 | `declaration-track:40177319f707a953cfc470ae8111dff3e57e7d9fe21842bf05b40a77b1330521` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

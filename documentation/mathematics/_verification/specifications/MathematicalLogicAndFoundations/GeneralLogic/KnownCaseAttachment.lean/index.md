@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/KnownCaseAttachment.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/KnownCaseAttachment.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/KnownCaseAttachment.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/KnownCaseAttachment.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [HodgeKnownCase](../../../../../MathematicalLogicAndFoundations/GeneralLogic/KnownCaseAttachment.lean/declarations/hodgeknowncase.md) | 19 | `declaration-track:fdb422cceb0831f3bf9794e20be1ac8b4eff8e7d1d95d5ce969f292859ef8cc7` |
-| 2 | `structure` | [HodgeAttachmentMap](../../../../../MathematicalLogicAndFoundations/GeneralLogic/KnownCaseAttachment.lean/declarations/hodgeattachmentmap.md) | 23 | `declaration-track:0cf3c20536f25c28a698c5dd7c217e0a2a95e619104736a6f5ee1ca14b1685a0` |
-| 3 | `theorem` | [hodge_attachment_preserves_class_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/KnownCaseAttachment.lean/declarations/hodge-attachment-preserves-class-if-supplied.md) | 32 | `result-track:6a0299752522c18ff78ae859e1f02c51afab70d470484b5219b9155bf8e37777` |
-| 4 | `theorem` | [hodge_attachment_preserves_cycle_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/KnownCaseAttachment.lean/declarations/hodge-attachment-preserves-cycle-if-supplied.md) | 37 | `result-track:58d4499acf6f64ee531ec8ca153405aa9f2089c9ca738fc15a446f64978afaea` |
+| 1 | `structure` | [HodgeKnownCase](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/KnownCaseAttachment.lean/declarations/hodgeknowncase.md) | 19 | `declaration-track:fdb422cceb0831f3bf9794e20be1ac8b4eff8e7d1d95d5ce969f292859ef8cc7` |
+| 2 | `structure` | [HodgeAttachmentMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/KnownCaseAttachment.lean/declarations/hodgeattachmentmap.md) | 23 | `declaration-track:0cf3c20536f25c28a698c5dd7c217e0a2a95e619104736a6f5ee1ca14b1685a0` |
+| 3 | `theorem` | [hodge_attachment_preserves_class_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/KnownCaseAttachment.lean/declarations/hodge-attachment-preserves-class-if-supplied.md) | 32 | `result-track:6a0299752522c18ff78ae859e1f02c51afab70d470484b5219b9155bf8e37777` |
+| 4 | `theorem` | [hodge_attachment_preserves_cycle_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/KnownCaseAttachment.lean/declarations/hodge-attachment-preserves-cycle-if-supplied.md) | 37 | `result-track:58d4499acf6f64ee531ec8ca153405aa9f2089c9ca738fc15a446f64978afaea` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

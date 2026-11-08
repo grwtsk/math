@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/Upto.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/Upto.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/Upto.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/Upto.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [Upto](../../../../../NumberTheory/ElementaryNumberTheory/Upto.lean/declarations/upto.md) | 33 | `declaration-track:d6666032d37bd61ad04176e879c90e483a33dcc5663f9a83422a212462e1c170` |
-| 2 | `def` | [GT](../../../../../NumberTheory/ElementaryNumberTheory/Upto.lean/declarations/gt.md) | 41 | `declaration-track:15d73dccb3713098c1b6e132b5c56c50ff1546291eb880b55b483e1cc0e0f61e` |
-| 3 | `instance` | [(anonymous)](../../../../../NumberTheory/ElementaryNumberTheory/Upto.lean/declarations/instance.md) | 44 | `declaration-track:07222006e4e51d02590fb176de889538e5fffd6cf1959c9231a18df2744656ac` |
-| 4 | `theorem` | [wf](../../../../../NumberTheory/ElementaryNumberTheory/Upto.lean/declarations/wf.md) | 49 | `result-track:11c79036ebaec1930ff4f12a17a1f37ef9a6206f6bc78bfbaaa36f822e7c81d4` |
-| 5 | `def` | [zero](../../../../../NumberTheory/ElementaryNumberTheory/Upto.lean/declarations/zero.md) | 59 | `declaration-track:22879d1db2bff974b27c0748f5aa9562127c2e64b608acffcdb13a411efe03b2` |
-| 6 | `def` | [succ](../../../../../NumberTheory/ElementaryNumberTheory/Upto.lean/declarations/succ.md) | 63 | `declaration-track:38c70f4919ebdd1711d9f9ad9a4a11e8c6bd0f11850f6137b87250b8f0ecfc3f` |
+| 1 | `abbrev` | [Upto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/Upto.lean/declarations/upto.md) | 33 | `declaration-track:d6666032d37bd61ad04176e879c90e483a33dcc5663f9a83422a212462e1c170` |
+| 2 | `def` | [GT](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/Upto.lean/declarations/gt.md) | 41 | `declaration-track:15d73dccb3713098c1b6e132b5c56c50ff1546291eb880b55b483e1cc0e0f61e` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/Upto.lean/declarations/instance.md) | 44 | `declaration-track:07222006e4e51d02590fb176de889538e5fffd6cf1959c9231a18df2744656ac` |
+| 4 | `theorem` | [wf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/Upto.lean/declarations/wf.md) | 49 | `result-track:11c79036ebaec1930ff4f12a17a1f37ef9a6206f6bc78bfbaaa36f822e7c81d4` |
+| 5 | `def` | [zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/Upto.lean/declarations/zero.md) | 59 | `declaration-track:22879d1db2bff974b27c0748f5aa9562127c2e64b608acffcdb13a411efe03b2` |
+| 6 | `def` | [succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/Upto.lean/declarations/succ.md) | 63 | `declaration-track:38c70f4919ebdd1711d9f9ad9a4a11e8c6bd0f11850f6137b87250b8f0ecfc3f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

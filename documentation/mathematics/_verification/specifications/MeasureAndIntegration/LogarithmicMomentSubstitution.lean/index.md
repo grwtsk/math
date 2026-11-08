@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/LogarithmicMomentSubstitution.lean/index.md) · [Full source](../../../../MeasureAndIntegration/LogarithmicMomentSubstitution.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogarithmicMomentSubstitution.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogarithmicMomentSubstitution.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,12 +60,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sqrt_exp_half](../../../../MeasureAndIntegration/LogarithmicMomentSubstitution.lean/declarations/sqrt-exp-half.md) | 25 | `result-track:f8889b4874c5dd7b1aa4f406e64eeac078c3198e1da051f1546e99fe0bb6d4ff` |
-| 2 | `theorem` | [exponential_jacobian_integral](../../../../MeasureAndIntegration/LogarithmicMomentSubstitution.lean/declarations/exponential-jacobian-integral.md) | 32 | `result-track:72066e59c88d4de8cfc0674c130ceed13fa29f49cad36a54761b6392df6753af` |
-| 3 | `theorem` | [exponential_jacobian_integrable_iff](../../../../MeasureAndIntegration/LogarithmicMomentSubstitution.lean/declarations/exponential-jacobian-integrable-iff.md) | 42 | `result-track:cb5e57c8ad2cc241e9efb484e6e6da46d6f15331ae08be0fabe853ddd4353d4a` |
-| 4 | `theorem` | [logarithmic_weight_jacobian](../../../../MeasureAndIntegration/LogarithmicMomentSubstitution.lean/declarations/logarithmic-weight-jacobian.md) | 53 | `result-track:328c4cb2bee9a95e7c6f0898c5e720fb24a8b7502c4b7089700fef96649247a1` |
-| 5 | `theorem` | [logarithmic_moment_identity](../../../../MeasureAndIntegration/LogarithmicMomentSubstitution.lean/declarations/logarithmic-moment-identity.md) | 69 | `result-track:934efd2f5a1be449fdd074b1601ac0c62e3ca0ce35374a321f29736279a31cb6` |
-| 6 | `theorem` | [logarithmic_integral_zero](../../../../MeasureAndIntegration/LogarithmicMomentSubstitution.lean/declarations/logarithmic-integral-zero.md) | 107 | `result-track:4479e8322529a3731f3c480a53b33c1e133780ffd1fd44a62a904ac9999d3feb` |
+| 1 | `theorem` | [sqrt_exp_half](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogarithmicMomentSubstitution.lean/declarations/sqrt-exp-half.md) | 25 | `result-track:f8889b4874c5dd7b1aa4f406e64eeac078c3198e1da051f1546e99fe0bb6d4ff` |
+| 2 | `theorem` | [exponential_jacobian_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogarithmicMomentSubstitution.lean/declarations/exponential-jacobian-integral.md) | 32 | `result-track:72066e59c88d4de8cfc0674c130ceed13fa29f49cad36a54761b6392df6753af` |
+| 3 | `theorem` | [exponential_jacobian_integrable_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogarithmicMomentSubstitution.lean/declarations/exponential-jacobian-integrable-iff.md) | 42 | `result-track:cb5e57c8ad2cc241e9efb484e6e6da46d6f15331ae08be0fabe853ddd4353d4a` |
+| 4 | `theorem` | [logarithmic_weight_jacobian](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogarithmicMomentSubstitution.lean/declarations/logarithmic-weight-jacobian.md) | 53 | `result-track:328c4cb2bee9a95e7c6f0898c5e720fb24a8b7502c4b7089700fef96649247a1` |
+| 5 | `theorem` | [logarithmic_moment_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogarithmicMomentSubstitution.lean/declarations/logarithmic-moment-identity.md) | 69 | `result-track:934efd2f5a1be449fdd074b1601ac0c62e3ca0ce35374a321f29736279a31cb6` |
+| 6 | `theorem` | [logarithmic_integral_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogarithmicMomentSubstitution.lean/declarations/logarithmic-integral-zero.md) | 107 | `result-track:4479e8322529a3731f3c480a53b33c1e133780ffd1fd44a62a904ac9999d3feb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GammaMeasureNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GammaMeasureNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GammaMeasureNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GammaMeasureNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [gammaMeasureProofDependency](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GammaMeasureNamespaced.lean/declarations/gammameasureproofdependency.md) | 22 | `declaration-track:0177b8302eca62ea7161445fc7bff7da47bebda0ab3bb5440c50d01c105763a4` |
-| 2 | `def` | [gammaUnitBallVolumeTarget](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GammaMeasureNamespaced.lean/declarations/gammaunitballvolumetarget.md) | 25 | `declaration-track:1f0c6fbb2c9b4ce12d28690900eb68bf2c3c7461cdc06ff3276254c77ef478c4` |
-| 3 | `def` | [gammaUnitSphereAreaTarget](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GammaMeasureNamespaced.lean/declarations/gammaunitsphereareatarget.md) | 28 | `declaration-track:78ce2ec7c8317c3908b41ac8f4bab3621c1f88c9a6cd4ba7a93f7051388b43b4` |
+| 1 | `def` | [gammaMeasureProofDependency](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GammaMeasureNamespaced.lean/declarations/gammameasureproofdependency.md) | 22 | `declaration-track:0177b8302eca62ea7161445fc7bff7da47bebda0ab3bb5440c50d01c105763a4` |
+| 2 | `def` | [gammaUnitBallVolumeTarget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GammaMeasureNamespaced.lean/declarations/gammaunitballvolumetarget.md) | 25 | `declaration-track:1f0c6fbb2c9b4ce12d28690900eb68bf2c3c7461cdc06ff3276254c77ef478c4` |
+| 3 | `def` | [gammaUnitSphereAreaTarget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GammaMeasureNamespaced.lean/declarations/gammaunitsphereareatarget.md) | 28 | `declaration-track:78ce2ec7c8317c3908b41ac8f4bab3621c1f88c9a6cd4ba7a93f7051388b43b4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

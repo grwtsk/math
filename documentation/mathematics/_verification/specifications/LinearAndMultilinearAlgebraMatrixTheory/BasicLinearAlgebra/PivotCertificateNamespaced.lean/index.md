@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotCertificateNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotCertificateNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotCertificateNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotCertificateNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [pivot_certificate_sound](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotCertificateNamespaced.lean/declarations/pivot-certificate-sound.md) | 29 | `result-track:a245a666e0c0af9d9c397e8c23ee18353aec8d57147eb00774ff0e524f084d1f` |
-| 2 | `theorem` | [determinant_certificate_sound](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotCertificateNamespaced.lean/declarations/determinant-certificate-sound.md) | 38 | `result-track:7e20310e07de8a1e936ef3f722e197ef7cceac3377bc72a296384381bda4d8e2` |
+| 1 | `theorem` | [pivot_certificate_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotCertificateNamespaced.lean/declarations/pivot-certificate-sound.md) | 29 | `result-track:a245a666e0c0af9d9c397e8c23ee18353aec8d57147eb00774ff0e524f084d1f` |
+| 2 | `theorem` | [determinant_certificate_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotCertificateNamespaced.lean/declarations/determinant-certificate-sound.md) | 38 | `result-track:7e20310e07de8a1e936ef3f722e197ef7cceac3377bc72a296384381bda4d8e2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

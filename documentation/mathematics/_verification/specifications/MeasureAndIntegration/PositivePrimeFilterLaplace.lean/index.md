@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/PositivePrimeFilterLaplace.lean/index.md) · [Full source](../../../../MeasureAndIntegration/PositivePrimeFilterLaplace.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositivePrimeFilterLaplace.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositivePrimeFilterLaplace.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Moebius.PrimeFilterLaplace`](../../../../MeasureAndIntegration/MoebiusPrimeFilterLaplace.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.PrimeFilterLaplace`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MoebiusPrimeFilterLaplace.lean/index.md) — import line 1; pinned internal source present.
 - `Lean` — import line 2; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../MeasureAndIntegration/PositivePrimeFilterLaplace.lean/declarations/example.md) | 6 | `declaration-track:293b566efc0728df03b2bdf2a04e33106c346a785ca9bf4f5745f0789ef7d693` |
-| 2 | `example` | [(anonymous)](../../../../MeasureAndIntegration/PositivePrimeFilterLaplace.lean/declarations/example-source-edition-2.md) | 8 | `declaration-track:3540fe74ea29ba72dae032dfd3a8da6e3b86cecdecd072c7b6e0a655d683e9a6` |
-| 3 | `example` | [(anonymous)](../../../../MeasureAndIntegration/PositivePrimeFilterLaplace.lean/declarations/example-source-edition-3.md) | 14 | `declaration-track:6d08e5b3d637cf023a585c85df80129a91b15a3eb5289e98d70e93950ee92fc9` |
-| 4 | `example` | [(anonymous)](../../../../MeasureAndIntegration/PositivePrimeFilterLaplace.lean/declarations/example-source-edition-4.md) | 17 | `declaration-track:c6a17adaa428729ed1d7f59024620d8940ab59760f638ffdf1be158442b13726` |
-| 5 | `elab` | [(anonymous)](../../../../MeasureAndIntegration/PositivePrimeFilterLaplace.lean/declarations/elab.md) | 21 | `declaration-track:a63b34730df43fba832f6020a900fbd7002fc5e80084ab97be1bf3bf80554172` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositivePrimeFilterLaplace.lean/declarations/example.md) | 6 | `declaration-track:293b566efc0728df03b2bdf2a04e33106c346a785ca9bf4f5745f0789ef7d693` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositivePrimeFilterLaplace.lean/declarations/example-source-edition-2.md) | 8 | `declaration-track:3540fe74ea29ba72dae032dfd3a8da6e3b86cecdecd072c7b6e0a655d683e9a6` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositivePrimeFilterLaplace.lean/declarations/example-source-edition-3.md) | 14 | `declaration-track:6d08e5b3d637cf023a585c85df80129a91b15a3eb5289e98d70e93950ee92fc9` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositivePrimeFilterLaplace.lean/declarations/example-source-edition-4.md) | 17 | `declaration-track:c6a17adaa428729ed1d7f59024620d8940ab59760f638ffdf1be158442b13726` |
+| 5 | `elab` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositivePrimeFilterLaplace.lean/declarations/elab.md) | 21 | `declaration-track:a63b34730df43fba832f6020a900fbd7002fc5e80084ab97be1bf3bf80554172` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

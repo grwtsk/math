@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/FiniteCyclicReciprocalPhaseObstruction.lean/index.md) · [Full source](../../../../NumberTheory/FiniteCyclicReciprocalPhaseObstruction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteCyclicReciprocalPhaseObstruction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteCyclicReciprocalPhaseObstruction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.CharacterSums.FiniteCyclicIntervalDistance`](../../../../NumberTheory/FiniteCyclicIntervalDistance.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.CharacterSums.FiniteCyclicIntervalDistance`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteCyclicIntervalDistance.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [finiteCyclicReciprocalMass](../../../../NumberTheory/FiniteCyclicReciprocalPhaseObstruction.lean/declarations/finitecyclicreciprocalmass.md) | 29 | `declaration-track:eee503116b877db7d3a06ef6b06c99a6c7cdce4c8adfc99242fdb99eb27ec330` |
-| 2 | `theorem` | [finiteCyclicReciprocalMass_nonneg](../../../../NumberTheory/FiniteCyclicReciprocalPhaseObstruction.lean/declarations/finitecyclicreciprocalmass-nonneg.md) | 33 | `result-track:0ad1645515b5ddb264f6ec4f0bfcc16bf07e5535ce7d81938b536f329c307c07` |
-| 3 | `theorem` | [coe_finiteCyclicReciprocalMass](../../../../NumberTheory/FiniteCyclicReciprocalPhaseObstruction.lean/declarations/coe-finitecyclicreciprocalmass.md) | 39 | `result-track:60c29445076e0f97f3bca9a35d3089669b0f1831e29d264534ac04e770aa24f9` |
-| 4 | `theorem` | [sum_stdAddChar_neg_div_nat_add_Ico_zero](../../../../NumberTheory/FiniteCyclicReciprocalPhaseObstruction.lean/declarations/sum-stdaddchar-neg-div-nat-add-ico-zero.md) | 46 | `result-track:d1a73a9124320cdf5a7baa7ab48159773f0bd2cc838fd040e3ec787450c7d566` |
-| 5 | `theorem` | [stdAddChar_phaseMatched_reciprocal_Ico](../../../../NumberTheory/FiniteCyclicReciprocalPhaseObstruction.lean/declarations/stdaddchar-phasematched-reciprocal-ico.md) | 59 | `result-track:1dce37a91ab8e846c72e07a12fea6d01b180b3a9808968ad1a231db19d06ec42` |
-| 6 | `theorem` | [norm_stdAddChar_phaseMatched_reciprocal_Ico](../../../../NumberTheory/FiniteCyclicReciprocalPhaseObstruction.lean/declarations/norm-stdaddchar-phasematched-reciprocal-ico.md) | 82 | `result-track:61366181a29941d755840d2899b7aafd623ed9d17361d27958d6ce53a0f6d459` |
+| 1 | `def` | [finiteCyclicReciprocalMass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteCyclicReciprocalPhaseObstruction.lean/declarations/finitecyclicreciprocalmass.md) | 29 | `declaration-track:eee503116b877db7d3a06ef6b06c99a6c7cdce4c8adfc99242fdb99eb27ec330` |
+| 2 | `theorem` | [finiteCyclicReciprocalMass_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteCyclicReciprocalPhaseObstruction.lean/declarations/finitecyclicreciprocalmass-nonneg.md) | 33 | `result-track:0ad1645515b5ddb264f6ec4f0bfcc16bf07e5535ce7d81938b536f329c307c07` |
+| 3 | `theorem` | [coe_finiteCyclicReciprocalMass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteCyclicReciprocalPhaseObstruction.lean/declarations/coe-finitecyclicreciprocalmass.md) | 39 | `result-track:60c29445076e0f97f3bca9a35d3089669b0f1831e29d264534ac04e770aa24f9` |
+| 4 | `theorem` | [sum_stdAddChar_neg_div_nat_add_Ico_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteCyclicReciprocalPhaseObstruction.lean/declarations/sum-stdaddchar-neg-div-nat-add-ico-zero.md) | 46 | `result-track:d1a73a9124320cdf5a7baa7ab48159773f0bd2cc838fd040e3ec787450c7d566` |
+| 5 | `theorem` | [stdAddChar_phaseMatched_reciprocal_Ico](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteCyclicReciprocalPhaseObstruction.lean/declarations/stdaddchar-phasematched-reciprocal-ico.md) | 59 | `result-track:1dce37a91ab8e846c72e07a12fea6d01b180b3a9808968ad1a231db19d06ec42` |
+| 6 | `theorem` | [norm_stdAddChar_phaseMatched_reciprocal_Ico](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteCyclicReciprocalPhaseObstruction.lean/declarations/norm-stdaddchar-phasematched-reciprocal-ico.md) | 82 | `result-track:61366181a29941d755840d2899b7aafd623ed9d17361d27958d6ce53a0f6d459` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/DataRealStar.lean/index.md) · [Full source](../../../../RealFunctions/DataRealStar.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DataRealStar.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DataRealStar.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../RealFunctions/DataRealStar.lean/declarations/instance-source-edition-2.md) | 14 | `declaration-track:de90f9d34131c7554eb7967ac0bd24d6e3bcb46101f36f78de7c3d41bab7a3e3` |
-| 2 | `instance` | [(anonymous)](../../../../RealFunctions/DataRealStar.lean/declarations/instance.md) | 17 | `declaration-track:8abe9b978b07c887587b6216919fc4b31f1e430f09711d836cb60e8b0d4318eb` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DataRealStar.lean/declarations/instance-source-edition-2.md) | 14 | `declaration-track:de90f9d34131c7554eb7967ac0bd24d6e3bcb46101f36f78de7c3d41bab7a3e3` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DataRealStar.lean/declarations/instance.md) | 17 | `declaration-track:8abe9b978b07c887587b6216919fc4b31f1e430f09711d836cb60e8b0d4318eb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

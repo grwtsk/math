@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/NoZeroSMulDivisorsPiNamespaced.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/NoZeroSMulDivisorsPiNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/NoZeroSMulDivisorsPiNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/NoZeroSMulDivisorsPiNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [Pi.noZeroSMulDivisors](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/NoZeroSMulDivisorsPiNamespaced.lean/declarations/pi-nozerosmuldivisors.md) | 31 | `declaration-track:abf403bcf4229b75ddd0d633502a89b5f99218c734b6ab3970a2e54f5481fd29` |
-| 2 | `instance` | [No Zero SMul Divisors Pi Namespaced](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/NoZeroSMulDivisorsPiNamespaced.lean/declarations/nozerosmuldivisors.md) | 40 | `declaration-track:a1c25478e1a56363edb7d16b1d7ebe2453e1279d2e63db201de5c337f7109787` |
+| 1 | `instance` | [Pi.noZeroSMulDivisors](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/NoZeroSMulDivisorsPiNamespaced.lean/declarations/pi-nozerosmuldivisors.md) | 31 | `declaration-track:abf403bcf4229b75ddd0d633502a89b5f99218c734b6ab3970a2e54f5481fd29` |
+| 2 | `instance` | [No Zero SMul Divisors Pi Namespaced](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/NoZeroSMulDivisorsPiNamespaced.lean/declarations/nozerosmuldivisors.md) | 40 | `declaration-track:a1c25478e1a56363edb7d16b1d7ebe2453e1279d2e63db201de5c337f7109787` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

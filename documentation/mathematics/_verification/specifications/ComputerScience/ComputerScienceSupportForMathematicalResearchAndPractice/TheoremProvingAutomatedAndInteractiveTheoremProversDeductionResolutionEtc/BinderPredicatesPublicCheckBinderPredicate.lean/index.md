@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/BinderPredicatesPublicCheckBinderPredicate.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/BinderPredicatesPublicCheckBinderPredicate.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/BinderPredicatesPublicCheckBinderPredicate.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/BinderPredicatesPublicCheckBinderPredicate.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [elabBinderPred](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/BinderPredicatesPublicCheckBinderPredicate.lean/declarations/elabbinderpred.md) | 16 | `declaration-track:99cf531d58b29044be1643278e9ac6b1d7d12dfd62596d82977ac791b9b18f8d` |
-| 2 | `def` | [checkBinderPredicate](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/BinderPredicatesPublicCheckBinderPredicate.lean/declarations/checkbinderpredicate.md) | 36 | `declaration-track:ccef0462154e846c1bab08048a578fd70154a8d4023a56782c2b6430d14dd3da` |
+| 1 | `def` | [elabBinderPred](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/BinderPredicatesPublicCheckBinderPredicate.lean/declarations/elabbinderpred.md) | 16 | `declaration-track:99cf531d58b29044be1643278e9ac6b1d7d12dfd62596d82977ac791b9b18f8d` |
+| 2 | `def` | [checkBinderPredicate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/BinderPredicatesPublicCheckBinderPredicate.lean/declarations/checkbinderpredicate.md) | 36 | `declaration-track:ccef0462154e846c1bab08048a578fd70154a8d4023a56782c2b6430d14dd3da` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

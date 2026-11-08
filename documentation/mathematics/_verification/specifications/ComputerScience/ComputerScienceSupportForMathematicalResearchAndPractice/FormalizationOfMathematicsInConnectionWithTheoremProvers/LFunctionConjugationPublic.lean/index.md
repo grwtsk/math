@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LFunctionConjugationPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LFunctionConjugationPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LFunctionConjugationPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LFunctionConjugationPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [LFunction_inverse_eq_star](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LFunctionConjugationPublic.lean/declarations/lfunction-inverse-eq-star.md) | 31 | `result-track:302fca322349e4d15faa62de57f9183ffba29439204e04fe1d5d6b6321edfe5e` |
-| 2 | `theorem` | [primitive_rootNumber_ne_zero](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LFunctionConjugationPublic.lean/declarations/primitive-rootnumber-ne-zero.md) | 82 | `result-track:0e5ae7fb77fc4ec9b96aaa2544d8a83b83735100ed13b92bae8848f3490d18e9` |
+| 1 | `theorem` | [LFunction_inverse_eq_star](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LFunctionConjugationPublic.lean/declarations/lfunction-inverse-eq-star.md) | 31 | `result-track:302fca322349e4d15faa62de57f9183ffba29439204e04fe1d5d6b6321edfe5e` |
+| 2 | `theorem` | [primitive_rootNumber_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LFunctionConjugationPublic.lean/declarations/primitive-rootnumber-ne-zero.md) | 82 | `result-track:0e5ae7fb77fc4ec9b96aaa2544d8a83b83735100ed13b92bae8848f3490d18e9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

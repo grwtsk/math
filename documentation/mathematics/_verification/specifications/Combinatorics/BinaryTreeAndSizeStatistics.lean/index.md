@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/BinaryTreeAndSizeStatistics.lean/index.md) · [Full source](../../../../Combinatorics/BinaryTreeAndSizeStatistics.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryTreeAndSizeStatistics.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryTreeAndSizeStatistics.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [CTree](../../../../Combinatorics/BinaryTreeAndSizeStatistics.lean/declarations/ctree.md) | 39 | `declaration-track:7c599b60afec6377e331cc6c578ed27e6284f1107aca34cfe37ea0a8c512fde7` |
-| 2 | `def` | [internal](../../../../Combinatorics/BinaryTreeAndSizeStatistics.lean/declarations/internal.md) | 46 | `declaration-track:b64b987316e34f3bc8b8aac3b4732d8de7c9d3e4b29a634a463f2f8bc03fcd8f` |
-| 3 | `def` | [leaves](../../../../Combinatorics/BinaryTreeAndSizeStatistics.lean/declarations/leaves.md) | 50 | `declaration-track:dd21ed84c9ef0f6028ef0320d52708e491cbde08715412069ef533ee511c135c` |
-| 4 | `def` | [depth](../../../../Combinatorics/BinaryTreeAndSizeStatistics.lean/declarations/depth.md) | 54 | `declaration-track:fde5844545b356a28957ad9dfaee7315755e5942c7844dc156a2f1fa4637770a` |
-| 5 | `theorem` | [leaves_eq_internal_add_one](../../../../Combinatorics/BinaryTreeAndSizeStatistics.lean/declarations/leaves-eq-internal-add-one.md) | 59 | `result-track:da72e911d985f79ddd93e145827b51a0663867d3fc677837b5bb7961870f2815` |
+| 1 | `inductive` | [CTree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryTreeAndSizeStatistics.lean/declarations/ctree.md) | 39 | `declaration-track:7c599b60afec6377e331cc6c578ed27e6284f1107aca34cfe37ea0a8c512fde7` |
+| 2 | `def` | [internal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryTreeAndSizeStatistics.lean/declarations/internal.md) | 46 | `declaration-track:b64b987316e34f3bc8b8aac3b4732d8de7c9d3e4b29a634a463f2f8bc03fcd8f` |
+| 3 | `def` | [leaves](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryTreeAndSizeStatistics.lean/declarations/leaves.md) | 50 | `declaration-track:dd21ed84c9ef0f6028ef0320d52708e491cbde08715412069ef533ee511c135c` |
+| 4 | `def` | [depth](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryTreeAndSizeStatistics.lean/declarations/depth.md) | 54 | `declaration-track:fde5844545b356a28957ad9dfaee7315755e5942c7844dc156a2f1fa4637770a` |
+| 5 | `theorem` | [leaves_eq_internal_add_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BinaryTreeAndSizeStatistics.lean/declarations/leaves-eq-internal-add-one.md) | 59 | `result-track:da72e911d985f79ddd93e145827b51a0663867d3fc677837b5bb7961870f2815` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

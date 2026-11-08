@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AlmostMathieu.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AlmostMathieu.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AlmostMathieu.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AlmostMathieu.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.LinearAlgebra.SchrodingerTransfer`](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SchrodingerTransfer.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.LinearAlgebra.SchrodingerTransfer`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SchrodingerTransfer.lean/index.md) — import line 5; pinned internal source present.
 - `Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic` — import line 6; external provider; requires a separately pinned dependency.
 - `Mathlib.LinearAlgebra.Matrix.Trace` — import line 7; external provider; requires a separately pinned dependency.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [potential](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AlmostMathieu.lean/declarations/potential.md) | 16 | `declaration-track:dc644fa2499568ac4a88efc3f90e831b3260f6f09cdd0e72e6755ec932ce3149` |
-| 2 | `def` | [transfer](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AlmostMathieu.lean/declarations/transfer.md) | 20 | `declaration-track:aa8b1aa1c14313ea5c0341d5d71eb03f539807073ec67bc616d19340a899cc71` |
-| 3 | `theorem` | [recurrence_iff_transfer](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AlmostMathieu.lean/declarations/recurrence-iff-transfer.md) | 24 | `result-track:5108ee63bec3facd3727b13c171cbc7b8a0e66ed69bb894804dd771790c87892` |
-| 4 | `theorem` | [det_transfer](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AlmostMathieu.lean/declarations/det-transfer.md) | 30 | `result-track:c25343c33c386af7d6d96b7ef325e7caaf320faa50d29f53a21c3745dd529731` |
-| 5 | `theorem` | [det_one_does_not_bound_trace](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AlmostMathieu.lean/declarations/det-one-does-not-bound-trace.md) | 36 | `result-track:370f88ce895646de6de8d4aa535fdaffc39dc160676b0ddbfb90c58273c23dc8` |
+| 1 | `def` | [potential](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AlmostMathieu.lean/declarations/potential.md) | 16 | `declaration-track:dc644fa2499568ac4a88efc3f90e831b3260f6f09cdd0e72e6755ec932ce3149` |
+| 2 | `def` | [transfer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AlmostMathieu.lean/declarations/transfer.md) | 20 | `declaration-track:aa8b1aa1c14313ea5c0341d5d71eb03f539807073ec67bc616d19340a899cc71` |
+| 3 | `theorem` | [recurrence_iff_transfer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AlmostMathieu.lean/declarations/recurrence-iff-transfer.md) | 24 | `result-track:5108ee63bec3facd3727b13c171cbc7b8a0e66ed69bb894804dd771790c87892` |
+| 4 | `theorem` | [det_transfer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AlmostMathieu.lean/declarations/det-transfer.md) | 30 | `result-track:c25343c33c386af7d6d96b7ef325e7caaf320faa50d29f53a21c3745dd529731` |
+| 5 | `theorem` | [det_one_does_not_bound_trace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AlmostMathieu.lean/declarations/det-one-does-not-bound-trace.md) | 36 | `result-track:370f88ce895646de6de8d4aa535fdaffc39dc160676b0ddbfb90c58273c23dc8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

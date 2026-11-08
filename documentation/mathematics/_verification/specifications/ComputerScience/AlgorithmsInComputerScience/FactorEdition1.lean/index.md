@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/FactorEdition1.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/FactorEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FactorEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FactorEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FactorRow](../../../../../ComputerScience/AlgorithmsInComputerScience/FactorEdition1.lean/declarations/factorrow.md) | 9 | `declaration-track:7a18d93cab3149ca09b4c7204694e0991ee6ac9cb963945ad65f04c62d98831f` |
-| 2 | `def` | [ValidFor](../../../../../ComputerScience/AlgorithmsInComputerScience/FactorEdition1.lean/declarations/validfor.md) | 16 | `declaration-track:50a553b906e0c8fbbcad0c27fcf7e8de9a6960c5c6db1877cdc609d614f102f1` |
-| 3 | `structure` | [Factor](../../../../../ComputerScience/AlgorithmsInComputerScience/FactorEdition1.lean/declarations/factor.md) | 24 | `declaration-track:302ad36fb95e81f45c6af91c19e6474df9e73c904ce76914a19fc8d5aacfda53` |
-| 4 | `def` | [Valid](../../../../../ComputerScience/AlgorithmsInComputerScience/FactorEdition1.lean/declarations/valid.md) | 37 | `declaration-track:0bd141ada50168a3c887bfcf37b97e19d5fc931064d9bf0c8403d4908ef8e6fa` |
+| 1 | `structure` | [FactorRow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FactorEdition1.lean/declarations/factorrow.md) | 9 | `declaration-track:7a18d93cab3149ca09b4c7204694e0991ee6ac9cb963945ad65f04c62d98831f` |
+| 2 | `def` | [ValidFor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FactorEdition1.lean/declarations/validfor.md) | 16 | `declaration-track:50a553b906e0c8fbbcad0c27fcf7e8de9a6960c5c6db1877cdc609d614f102f1` |
+| 3 | `structure` | [Factor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FactorEdition1.lean/declarations/factor.md) | 24 | `declaration-track:302ad36fb95e81f45c6af91c19e6474df9e73c904ce76914a19fc8d5aacfda53` |
+| 4 | `def` | [Valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FactorEdition1.lean/declarations/valid.md) | 37 | `declaration-track:0bd141ada50168a3c887bfcf37b97e19d5fc931064d9bf0c8403d4908ef8e6fa` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

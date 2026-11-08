@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/TranslationSeamLowerBound.lean/index.md) · [Full source](../../../../RealFunctions/TranslationSeamLowerBound.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TranslationSeamLowerBound.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TranslationSeamLowerBound.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Integration.TranslationSeamLowerBound`](../../../../MeasureAndIntegration/TranslationSeamLowerBound.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Analysis.Integration.TranslationSeamLowerBound`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TranslationSeamLowerBound.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 

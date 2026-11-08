@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/WrongAngular.lean/index.md) · [Full source](../../../../MeasureAndIntegration/WrongAngular.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/WrongAngular.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/WrongAngular.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,11 +46,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.LinearAlgebra.Schrodinger.Sampling`](../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Sampling.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.Analysis.NormedSpace.QuadraticError`](../../../../FunctionalAnalysis/QuadraticError.lean/index.md) — import line 2; pinned internal source present.
-- [`GRWTSK.Analysis.Fourier.WindowCertificates`](../../../../MeasureAndIntegration/WindowCertificates.lean/index.md) — import line 3; pinned internal source present.
-- [`GRWTSK.Analysis.AsymptoticAnalysis.PolynomialClosure`](../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/PolynomialClosureHistoricalSourceEdition2.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Combinatorics.Sequences.QuotaDiscrepancy`](../../../../Combinatorics/QuotaDiscrepancy.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.LinearAlgebra.Schrodinger.Sampling`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Sampling.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Analysis.NormedSpace.QuadraticError`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/QuadraticError.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.Analysis.Fourier.WindowCertificates`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/WindowCertificates.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.Analysis.AsymptoticAnalysis.PolynomialClosure`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/PolynomialClosureHistoricalSourceEdition2.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Combinatorics.Sequences.QuotaDiscrepancy`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/QuotaDiscrepancy.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -61,7 +61,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../MeasureAndIntegration/WrongAngular.lean/declarations/example.md) | 7 | `declaration-track:caf5cc8059e9797c9457bb1082dedd7250d5710d65333c8c43802de555f73cea` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/WrongAngular.lean/declarations/example.md) | 7 | `declaration-track:caf5cc8059e9797c9457bb1082dedd7250d5710d65333c8c43802de555f73cea` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/SpecialFunctionsExponentialFloorGap.lean/index.md) · [Full source](../../../../RealFunctions/SpecialFunctionsExponentialFloorGap.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SpecialFunctionsExponentialFloorGap.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SpecialFunctionsExponentialFloorGap.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,17 +60,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [one_le_natFloor_exp](../../../../RealFunctions/SpecialFunctionsExponentialFloorGap.lean/declarations/one-le-natfloor-exp.md) | 29 | `result-track:1b14c2fa1fb5b8f5b1e1b21382ef64b9948ca2a8bdf21da67c8dbec121de7c6d` |
-| 2 | `theorem` | [natFloor_exp_pos](../../../../RealFunctions/SpecialFunctionsExponentialFloorGap.lean/declarations/natfloor-exp-pos.md) | 33 | `result-track:da9e5475fbef34a220549d99139ca20c1dd1eb13da943d30797fe14c1a1b410c` |
-| 3 | `theorem` | [natFloor_exp_cast_pos](../../../../RealFunctions/SpecialFunctionsExponentialFloorGap.lean/declarations/natfloor-exp-cast-pos.md) | 37 | `result-track:3c0efd4ae9f1ed6e539b998ee952624fd169b56e3012ce50095bba4f67087558` |
-| 4 | `theorem` | [natFloor_exp_le](../../../../RealFunctions/SpecialFunctionsExponentialFloorGap.lean/declarations/natfloor-exp-le.md) | 42 | `result-track:532825537131592facb7a0eac86600ed1111b35b93bdcad48a262e062cb3cc41` |
-| 5 | `theorem` | [exp_lt_natFloor_add_one](../../../../RealFunctions/SpecialFunctionsExponentialFloorGap.lean/declarations/exp-lt-natfloor-add-one.md) | 47 | `result-track:1feb0d7037f6a7979e5efe3bad185b57b64c36917792c81f8d6ca856a0116add` |
-| 6 | `theorem` | [gap_nonneg](../../../../RealFunctions/SpecialFunctionsExponentialFloorGap.lean/declarations/gap-nonneg.md) | 52 | `result-track:afadef798c8150677f0ad3f147aba27407a12c042b8de4ebd88a9976a76f1300` |
-| 7 | `theorem` | [gap_lt_inv_natFloor](../../../../RealFunctions/SpecialFunctionsExponentialFloorGap.lean/declarations/gap-lt-inv-natfloor.md) | 59 | `result-track:f7520c6c33d1be5f045e5f012c5d6f7a6b3da7d839df5ba81eb84440cee5ee6b` |
-| 8 | `theorem` | [exp_lt_two_mul_natFloor](../../../../RealFunctions/SpecialFunctionsExponentialFloorGap.lean/declarations/exp-lt-two-mul-natfloor.md) | 81 | `result-track:30ff472823c7d06d45d1b00a6a2361f49a57abd7f7f1f2e3b2eddad342fe9656` |
-| 9 | `theorem` | [exp_two_mul_div_four_lt_natFloor_sq](../../../../RealFunctions/SpecialFunctionsExponentialFloorGap.lean/declarations/exp-two-mul-div-four-lt-natfloor-sq.md) | 89 | `result-track:12c24c7dbff9d4bb72e930e27a1df391b6084bac0ce03e95b05cdecc2e628aeb` |
-| 10 | `theorem` | [cubicAllowance_le_inv_natFloor_pow_four](../../../../RealFunctions/SpecialFunctionsExponentialFloorGap.lean/declarations/cubicallowance-le-inv-natfloor-pow-four.md) | 100 | `result-track:3aa893cc51a30aaac1666c45cd54f18824e68018965defb5bc8507147a57c3ac` |
-| 11 | `theorem` | [natFloor_sq_le_of_cost](../../../../RealFunctions/SpecialFunctionsExponentialFloorGap.lean/declarations/natfloor-sq-le-of-cost.md) | 120 | `result-track:52b4d8bdf927c0a87404e88f7bb6f9b6393438faa1b869df5d40a843eedfefc8` |
+| 1 | `theorem` | [one_le_natFloor_exp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SpecialFunctionsExponentialFloorGap.lean/declarations/one-le-natfloor-exp.md) | 29 | `result-track:1b14c2fa1fb5b8f5b1e1b21382ef64b9948ca2a8bdf21da67c8dbec121de7c6d` |
+| 2 | `theorem` | [natFloor_exp_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SpecialFunctionsExponentialFloorGap.lean/declarations/natfloor-exp-pos.md) | 33 | `result-track:da9e5475fbef34a220549d99139ca20c1dd1eb13da943d30797fe14c1a1b410c` |
+| 3 | `theorem` | [natFloor_exp_cast_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SpecialFunctionsExponentialFloorGap.lean/declarations/natfloor-exp-cast-pos.md) | 37 | `result-track:3c0efd4ae9f1ed6e539b998ee952624fd169b56e3012ce50095bba4f67087558` |
+| 4 | `theorem` | [natFloor_exp_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SpecialFunctionsExponentialFloorGap.lean/declarations/natfloor-exp-le.md) | 42 | `result-track:532825537131592facb7a0eac86600ed1111b35b93bdcad48a262e062cb3cc41` |
+| 5 | `theorem` | [exp_lt_natFloor_add_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SpecialFunctionsExponentialFloorGap.lean/declarations/exp-lt-natfloor-add-one.md) | 47 | `result-track:1feb0d7037f6a7979e5efe3bad185b57b64c36917792c81f8d6ca856a0116add` |
+| 6 | `theorem` | [gap_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SpecialFunctionsExponentialFloorGap.lean/declarations/gap-nonneg.md) | 52 | `result-track:afadef798c8150677f0ad3f147aba27407a12c042b8de4ebd88a9976a76f1300` |
+| 7 | `theorem` | [gap_lt_inv_natFloor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SpecialFunctionsExponentialFloorGap.lean/declarations/gap-lt-inv-natfloor.md) | 59 | `result-track:f7520c6c33d1be5f045e5f012c5d6f7a6b3da7d839df5ba81eb84440cee5ee6b` |
+| 8 | `theorem` | [exp_lt_two_mul_natFloor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SpecialFunctionsExponentialFloorGap.lean/declarations/exp-lt-two-mul-natfloor.md) | 81 | `result-track:30ff472823c7d06d45d1b00a6a2361f49a57abd7f7f1f2e3b2eddad342fe9656` |
+| 9 | `theorem` | [exp_two_mul_div_four_lt_natFloor_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SpecialFunctionsExponentialFloorGap.lean/declarations/exp-two-mul-div-four-lt-natfloor-sq.md) | 89 | `result-track:12c24c7dbff9d4bb72e930e27a1df391b6084bac0ce03e95b05cdecc2e628aeb` |
+| 10 | `theorem` | [cubicAllowance_le_inv_natFloor_pow_four](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SpecialFunctionsExponentialFloorGap.lean/declarations/cubicallowance-le-inv-natfloor-pow-four.md) | 100 | `result-track:3aa893cc51a30aaac1666c45cd54f18824e68018965defb5bc8507147a57c3ac` |
+| 11 | `theorem` | [natFloor_sq_le_of_cost](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SpecialFunctionsExponentialFloorGap.lean/declarations/natfloor-sq-le-of-cost.md) | 120 | `result-track:52b4d8bdf927c0a87404e88f7bb6f9b6393438faa1b869df5d40a843eedfefc8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

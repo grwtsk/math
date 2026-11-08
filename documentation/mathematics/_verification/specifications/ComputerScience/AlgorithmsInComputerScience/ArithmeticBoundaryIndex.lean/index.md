@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ArithmeticBoundaryIndex.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ArithmeticBoundaryIndex.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArithmeticBoundaryIndex.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArithmeticBoundaryIndex.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -71,11 +71,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [BoundaryClass](../../../../../ComputerScience/AlgorithmsInComputerScience/ArithmeticBoundaryIndex.lean/declarations/boundaryclass.md) | 21 | `declaration-track:c4e1f7e150439ee773076ad16cebb06954a7d4e6b94b04d3db4bfd8ab9396752` |
-| 2 | `structure` | [BoundaryAtom](../../../../../ComputerScience/AlgorithmsInComputerScience/ArithmeticBoundaryIndex.lean/declarations/boundaryatom.md) | 30 | `declaration-track:3dd1c0f0abdd805ef633663572252e355f00ac03ca6796dead198a71cf4484a0` |
-| 3 | `def` | [boundaryAtoms](../../../../../ComputerScience/AlgorithmsInComputerScience/ArithmeticBoundaryIndex.lean/declarations/boundaryatoms.md) | 37 | `declaration-track:f6f5effce862d235a24447542cab3f6e48f08a983ab787c76212310cdd190406` |
-| 4 | `theorem` | [boundaryAtoms_no_artificial_residue](../../../../../ComputerScience/AlgorithmsInComputerScience/ArithmeticBoundaryIndex.lean/declarations/boundaryatoms-no-artificial-residue.md) | 440 | `result-track:91dc00880f619c50b3ab9dc4c93fde72341310b91dab70b392e2127070a4050f` |
-| 5 | `theorem` | [boundaryAtoms_count](../../../../../ComputerScience/AlgorithmsInComputerScience/ArithmeticBoundaryIndex.lean/declarations/boundaryatoms-count.md) | 444 | `result-track:5299770c56a23a33802a2b7bbb831be04138d265dda95a27f88915a5266450de` |
+| 1 | `inductive` | [BoundaryClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArithmeticBoundaryIndex.lean/declarations/boundaryclass.md) | 21 | `declaration-track:c4e1f7e150439ee773076ad16cebb06954a7d4e6b94b04d3db4bfd8ab9396752` |
+| 2 | `structure` | [BoundaryAtom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArithmeticBoundaryIndex.lean/declarations/boundaryatom.md) | 30 | `declaration-track:3dd1c0f0abdd805ef633663572252e355f00ac03ca6796dead198a71cf4484a0` |
+| 3 | `def` | [boundaryAtoms](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArithmeticBoundaryIndex.lean/declarations/boundaryatoms.md) | 37 | `declaration-track:f6f5effce862d235a24447542cab3f6e48f08a983ab787c76212310cdd190406` |
+| 4 | `theorem` | [boundaryAtoms_no_artificial_residue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArithmeticBoundaryIndex.lean/declarations/boundaryatoms-no-artificial-residue.md) | 440 | `result-track:91dc00880f619c50b3ab9dc4c93fde72341310b91dab70b392e2127070a4050f` |
+| 5 | `theorem` | [boundaryAtoms_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ArithmeticBoundaryIndex.lean/declarations/boundaryatoms-count.md) | 444 | `result-track:5299770c56a23a33802a2b7bbb831be04138d265dda95a27f88915a5266450de` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

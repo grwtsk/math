@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/CardCommute.lean/index.md) · [Full source](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/CardCommute.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/CardCommute.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/CardCommute.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [instInfiniteProdSubtypeCommute](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/CardCommute.lean/declarations/instinfiniteprodsubtypecommute.md) | 19 | `declaration-track:cfcf6ebbf088493d3d4a955bfd71a3301db436d0f80c4e939711acb3f7a4e5c8` |
-| 2 | `theorem` | [card_comm_eq_card_conjClasses_mul_card](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/CardCommute.lean/declarations/card-comm-eq-card-conjclasses-mul-card.md) | 25 | `result-track:4a6e368703358e14e66fd159b6df01218f725c321dbd861a0e30dbe11004c54b` |
+| 1 | `instance` | [instInfiniteProdSubtypeCommute](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/CardCommute.lean/declarations/instinfiniteprodsubtypecommute.md) | 19 | `declaration-track:cfcf6ebbf088493d3d4a955bfd71a3301db436d0f80c4e939711acb3f7a4e5c8` |
+| 2 | `theorem` | [card_comm_eq_card_conjClasses_mul_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PermutationGroups/CardCommute.lean/declarations/card-comm-eq-card-conjclasses-mul-card.md) | 25 | `result-track:4a6e368703358e14e66fd159b6df01218f725c321dbd861a0e30dbe11004c54b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

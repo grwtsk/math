@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/PublicAlternative.lean/index.md) · [Full source](../../../../GeneralTopology/PublicAlternative.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PublicAlternative.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PublicAlternative.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [erdos_234](../../../../GeneralTopology/PublicAlternative.lean/declarations/erdos-234.md) | 38 | `result-track:32fee8d4328c46dfdbb1b71dbef1933593a1ff00a9dd47740ecc1f8f7a7888b6` |
+| 1 | `theorem` | [erdos_234](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PublicAlternative.lean/declarations/erdos-234.md) | 38 | `result-track:32fee8d4328c46dfdbb1b71dbef1933593a1ff00a9dd47740ecc1f8f7a7888b6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

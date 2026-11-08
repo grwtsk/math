@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TentEdgeBounds.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TentEdgeBounds.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TentEdgeBounds.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TentEdgeBounds.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.TentContourMajorants`](../../../../../../MeasureAndIntegration/TentContourMajorants.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Chebyshev.HeightIndexedTentResidues`](../../../../../../MeasureAndIntegration/HeightIndexedTentResidues.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.TentContourMajorants`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentContourMajorants.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.HeightIndexedTentResidues`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HeightIndexedTentResidues.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [leftEdge_le_neg_two](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TentEdgeBounds.lean/declarations/leftedge-le-neg-two.md) | 39 | `result-track:55b6282d13542798645296d9aecfcdb9e3298c98c900cb142107271329b64fd6` |
-| 2 | `theorem` | [powerProfile_leftEdge](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TentEdgeBounds.lean/declarations/powerprofile-leftedge.md) | 45 | `result-track:fe07b59aac79cab4f698266502b2536e054a545abfa553219bf8b69b8ca4c37a` |
-| 3 | `theorem` | [continuous_zeta_tent_left](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TentEdgeBounds.lean/declarations/continuous-zeta-tent-left.md) | 52 | `result-track:5971bff3e6edf13acd7d7235a8d6a804e00550302e55ab5c58ba075c75274b79` |
-| 4 | `theorem` | [zeta_tent_left_intervalIntegrable](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TentEdgeBounds.lean/declarations/zeta-tent-left-intervalintegrable.md) | 69 | `result-track:a98bf8ca45bf6a3062f4bbfc89e4a2717360fd08d0bae2b5b703bfcafb64299e` |
-| 5 | `theorem` | [norm_selected_horizontal_le](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TentEdgeBounds.lean/declarations/norm-selected-horizontal-le.md) | 77 | `result-track:410357fd9cc8d4c401fc46a4f88483dbee71f735ee143d27ac99cd582df6cf94` |
-| 6 | `theorem` | [norm_left_vertical_le](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TentEdgeBounds.lean/declarations/norm-left-vertical-le.md) | 96 | `result-track:33d8d3e0e55f4a160c87a58c001563ed3135fdc63c03a09c5de0eca4c8266a6c` |
-| 7 | `theorem` | [norm_edgeRemainder_le](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TentEdgeBounds.lean/declarations/norm-edgeremainder-le.md) | 108 | `result-track:5744c331ffac2639bb0d3683959536be6a031889d716262cdd020085f6dce42f` |
-| 8 | `theorem` | [norm_right_residue_defect_le](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TentEdgeBounds.lean/declarations/norm-right-residue-defect-le.md) | 155 | `result-track:ff88b23792f5ed7e9aeaabd57e4e2ddae74e040cf96c8426b74fd13c8faea4ab` |
-| 9 | `theorem` | [edgeRemainder_tendsto_of_rates](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TentEdgeBounds.lean/declarations/edgeremainder-tendsto-of-rates.md) | 172 | `result-track:214f49ddd792e80a35379a2cb929868cc55a694d9066a0386ac244a546ccff72` |
+| 1 | `theorem` | [leftEdge_le_neg_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TentEdgeBounds.lean/declarations/leftedge-le-neg-two.md) | 39 | `result-track:55b6282d13542798645296d9aecfcdb9e3298c98c900cb142107271329b64fd6` |
+| 2 | `theorem` | [powerProfile_leftEdge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TentEdgeBounds.lean/declarations/powerprofile-leftedge.md) | 45 | `result-track:fe07b59aac79cab4f698266502b2536e054a545abfa553219bf8b69b8ca4c37a` |
+| 3 | `theorem` | [continuous_zeta_tent_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TentEdgeBounds.lean/declarations/continuous-zeta-tent-left.md) | 52 | `result-track:5971bff3e6edf13acd7d7235a8d6a804e00550302e55ab5c58ba075c75274b79` |
+| 4 | `theorem` | [zeta_tent_left_intervalIntegrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TentEdgeBounds.lean/declarations/zeta-tent-left-intervalintegrable.md) | 69 | `result-track:a98bf8ca45bf6a3062f4bbfc89e4a2717360fd08d0bae2b5b703bfcafb64299e` |
+| 5 | `theorem` | [norm_selected_horizontal_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TentEdgeBounds.lean/declarations/norm-selected-horizontal-le.md) | 77 | `result-track:410357fd9cc8d4c401fc46a4f88483dbee71f735ee143d27ac99cd582df6cf94` |
+| 6 | `theorem` | [norm_left_vertical_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TentEdgeBounds.lean/declarations/norm-left-vertical-le.md) | 96 | `result-track:33d8d3e0e55f4a160c87a58c001563ed3135fdc63c03a09c5de0eca4c8266a6c` |
+| 7 | `theorem` | [norm_edgeRemainder_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TentEdgeBounds.lean/declarations/norm-edgeremainder-le.md) | 108 | `result-track:5744c331ffac2639bb0d3683959536be6a031889d716262cdd020085f6dce42f` |
+| 8 | `theorem` | [norm_right_residue_defect_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TentEdgeBounds.lean/declarations/norm-right-residue-defect-le.md) | 155 | `result-track:ff88b23792f5ed7e9aeaabd57e4e2ddae74e040cf96c8426b74fd13c8faea4ab` |
+| 9 | `theorem` | [edgeRemainder_tendsto_of_rates](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TentEdgeBounds.lean/declarations/edgeremainder-tendsto-of-rates.md) | 172 | `result-track:214f49ddd792e80a35379a2cb929868cc55a694d9066a0386ac244a546ccff72` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

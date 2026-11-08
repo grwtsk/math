@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedPermutationCokernel.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedPermutationCokernel.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedPermutationCokernel.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedPermutationCokernel.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.LinearAlgebra.WeightedPermutationIntegral`](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedPermutationIntegral.lean/index.md) — import line 10; pinned internal source present.
+- [`GRWTSK.LinearAlgebra.WeightedPermutationIntegral`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedPermutationIntegral.lean/index.md) — import line 10; pinned internal source present.
 - `Mathlib.LinearAlgebra.Isomorphisms` — import line 11; external provider; requires a separately pinned dependency.
 - `Mathlib.Data.ZMod.Basic` — import line 12; external provider; requires a separately pinned dependency.
 - `Mathlib.SetTheory.Cardinal.Finite` — import line 13; external provider; requires a separately pinned dependency.
@@ -60,18 +60,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [Residues](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedPermutationCokernel.lean/declarations/residues.md) | 27 | `declaration-track:b38d48e10c55862277741e77205e09fe73ed0e54bd6e2db91f4a494d74c8e2df` |
-| 2 | `abbrev` | [Cokernel](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedPermutationCokernel.lean/declarations/cokernel.md) | 30 | `declaration-track:1ae9c4b98e9218f5f1503394938daafc6c7859108f6a34be469195719d74e143` |
-| 3 | `def` | [residue](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedPermutationCokernel.lean/declarations/residue.md) | 34 | `declaration-track:3bd0c755e67172b72b992243c22e75e44d7267542d121b6a16342a4ea08de2ef` |
-| 4 | `theorem` | [residue_zero_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedPermutationCokernel.lean/declarations/residue-zero-iff.md) | 40 | `result-track:614265d034774bafdd8c50d5b667c7a781e12a63324ec7e5c74702ec1a8e762d` |
-| 5 | `theorem` | [residue_surjective](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedPermutationCokernel.lean/declarations/residue-surjective.md) | 48 | `result-track:540e953258737af30542f9a083802ec329a00a7ba813078e8045c4dff3ab1c0a` |
-| 6 | `theorem` | [kernel_eq_range](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedPermutationCokernel.lean/declarations/kernel-eq-range.md) | 57 | `result-track:cdf3f1e9f31172b91ec1c018714e27233ac1d801dcb9ebd1d9b515e0f545b232` |
-| 7 | `def` | [cokernelEquiv](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedPermutationCokernel.lean/declarations/cokernelequiv.md) | 64 | `declaration-track:5c29949012ca5c78b67458768d39f5caf138cccca42c9d2f806efacc72e425fd` |
-| 8 | `theorem` | [cokernelEquiv_mk](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedPermutationCokernel.lean/declarations/cokernelequiv-mk.md) | 70 | `result-track:0438cf640306077b2998e630c93852ae69c7774003de998c9da297a9eccf7cf6` |
-| 9 | `theorem` | [cokernel_roundtrips](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedPermutationCokernel.lean/declarations/cokernel-roundtrips.md) | 74 | `result-track:cac7a52f0887475e59e910ea1a4d0a8fa1a6de4880548e0377e8d6c3487d59e8` |
-| 10 | `theorem` | [annihilator_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedPermutationCokernel.lean/declarations/annihilator-iff.md) | 80 | `result-track:fc79bb589cae27716a1f2cb0673be9ba89db60e506f870d1e9db2bdd9e02ffd6` |
-| 11 | `theorem` | [residues_natCard](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedPermutationCokernel.lean/declarations/residues-natcard.md) | 96 | `result-track:1128fdd68bf5a8d4c86bf3da2a03f929840bbe1d269b532ce60994fcf11ea4b9` |
-| 12 | `theorem` | [cokernel_natCard](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedPermutationCokernel.lean/declarations/cokernel-natcard.md) | 104 | `result-track:caaf448df5bcec990b10c793a415b688b4839af4614dfe2c5203b9fa66be77a1` |
+| 1 | `abbrev` | [Residues](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedPermutationCokernel.lean/declarations/residues.md) | 27 | `declaration-track:b38d48e10c55862277741e77205e09fe73ed0e54bd6e2db91f4a494d74c8e2df` |
+| 2 | `abbrev` | [Cokernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedPermutationCokernel.lean/declarations/cokernel.md) | 30 | `declaration-track:1ae9c4b98e9218f5f1503394938daafc6c7859108f6a34be469195719d74e143` |
+| 3 | `def` | [residue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedPermutationCokernel.lean/declarations/residue.md) | 34 | `declaration-track:3bd0c755e67172b72b992243c22e75e44d7267542d121b6a16342a4ea08de2ef` |
+| 4 | `theorem` | [residue_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedPermutationCokernel.lean/declarations/residue-zero-iff.md) | 40 | `result-track:614265d034774bafdd8c50d5b667c7a781e12a63324ec7e5c74702ec1a8e762d` |
+| 5 | `theorem` | [residue_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedPermutationCokernel.lean/declarations/residue-surjective.md) | 48 | `result-track:540e953258737af30542f9a083802ec329a00a7ba813078e8045c4dff3ab1c0a` |
+| 6 | `theorem` | [kernel_eq_range](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedPermutationCokernel.lean/declarations/kernel-eq-range.md) | 57 | `result-track:cdf3f1e9f31172b91ec1c018714e27233ac1d801dcb9ebd1d9b515e0f545b232` |
+| 7 | `def` | [cokernelEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedPermutationCokernel.lean/declarations/cokernelequiv.md) | 64 | `declaration-track:5c29949012ca5c78b67458768d39f5caf138cccca42c9d2f806efacc72e425fd` |
+| 8 | `theorem` | [cokernelEquiv_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedPermutationCokernel.lean/declarations/cokernelequiv-mk.md) | 70 | `result-track:0438cf640306077b2998e630c93852ae69c7774003de998c9da297a9eccf7cf6` |
+| 9 | `theorem` | [cokernel_roundtrips](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedPermutationCokernel.lean/declarations/cokernel-roundtrips.md) | 74 | `result-track:cac7a52f0887475e59e910ea1a4d0a8fa1a6de4880548e0377e8d6c3487d59e8` |
+| 10 | `theorem` | [annihilator_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedPermutationCokernel.lean/declarations/annihilator-iff.md) | 80 | `result-track:fc79bb589cae27716a1f2cb0673be9ba89db60e506f870d1e9db2bdd9e02ffd6` |
+| 11 | `theorem` | [residues_natCard](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedPermutationCokernel.lean/declarations/residues-natcard.md) | 96 | `result-track:1128fdd68bf5a8d4c86bf3da2a03f929840bbe1d269b532ce60994fcf11ea4b9` |
+| 12 | `theorem` | [cokernel_natCard](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeightedPermutationCokernel.lean/declarations/cokernel-natcard.md) | 104 | `result-track:caaf448df5bcec990b10c793a415b688b4839af4614dfe2c5203b9fa66be77a1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

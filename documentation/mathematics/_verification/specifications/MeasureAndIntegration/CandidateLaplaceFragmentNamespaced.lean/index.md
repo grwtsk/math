@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CandidateLaplaceFragmentNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CandidateLaplaceFragmentNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CandidateLaplaceFragmentNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CandidateLaplaceFragmentNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [candidate_boundaryInverse_fourier](../../../../MeasureAndIntegration/CandidateLaplaceFragmentNamespaced.lean/declarations/candidate-boundaryinverse-fourier.md) | 20 | `result-track:d19cb398412ec03e96c29ae81281278cca2e7529ce667bdeacb6fbf1b156e233` |
-| 2 | `theorem` | [candidate_boundaryInverse_tilt](../../../../MeasureAndIntegration/CandidateLaplaceFragmentNamespaced.lean/declarations/candidate-boundaryinverse-tilt.md) | 56 | `result-track:13432a0aeb31d6be3f6253a5279ea1029191ffb73e4998b59a6cc7468b118f77` |
-| 3 | `theorem` | [candidate_boundaryInverse_laplace](../../../../MeasureAndIntegration/CandidateLaplaceFragmentNamespaced.lean/declarations/candidate-boundaryinverse-laplace.md) | 69 | `result-track:d6e9186fc8701a567b09cb8afb6b8d63fe65bcc50975fd997b2bd2b075e3bfb4` |
+| 1 | `theorem` | [candidate_boundaryInverse_fourier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CandidateLaplaceFragmentNamespaced.lean/declarations/candidate-boundaryinverse-fourier.md) | 20 | `result-track:d19cb398412ec03e96c29ae81281278cca2e7529ce667bdeacb6fbf1b156e233` |
+| 2 | `theorem` | [candidate_boundaryInverse_tilt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CandidateLaplaceFragmentNamespaced.lean/declarations/candidate-boundaryinverse-tilt.md) | 56 | `result-track:13432a0aeb31d6be3f6253a5279ea1029191ffb73e4998b59a6cc7468b118f77` |
+| 3 | `theorem` | [candidate_boundaryInverse_laplace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CandidateLaplaceFragmentNamespaced.lean/declarations/candidate-boundaryinverse-laplace.md) | 69 | `result-track:d6e9186fc8701a567b09cb8afb6b8d63fe65bcc50975fd997b2bd2b075e3bfb4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

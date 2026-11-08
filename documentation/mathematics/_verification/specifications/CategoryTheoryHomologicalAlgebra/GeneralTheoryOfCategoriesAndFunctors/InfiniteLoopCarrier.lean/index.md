@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/InfiniteLoopCarrier.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/InfiniteLoopCarrier.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/InfiniteLoopCarrier.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/InfiniteLoopCarrier.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [ProposedDeloopingSource](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/InfiniteLoopCarrier.lean/declarations/proposeddeloopingsource.md) | 18 | `declaration-track:f0f303b748675ef0bcbfbe60c58eb3013959b8aded3c28f8bbc8c7d3af412e5f` |
-| 2 | `structure` | [LoopObjectOperation](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/InfiniteLoopCarrier.lean/declarations/loopobjectoperation.md) | 29 | `declaration-track:d6ded0a3b82bd7592705febca7f20196eca1a02d14c99b9a1020563c08a485b4` |
-| 3 | `structure` | [DeloopingSequenceCandidate](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/InfiniteLoopCarrier.lean/declarations/deloopingsequencecandidate.md) | 38 | `declaration-track:d01e9918b3f6fa3a701b0af73413949c12aed3bd6227bbac9817ad2d5c193ba5` |
-| 4 | `structure` | [RepeatedTransitionCycle](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/InfiniteLoopCarrier.lean/declarations/repeatedtransitioncycle.md) | 52 | `declaration-track:1ba963365ca8a1d24fe742353f6dd9d34be7898328f01c48f6a0e53c400d2cbc` |
+| 1 | `inductive` | [ProposedDeloopingSource](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/InfiniteLoopCarrier.lean/declarations/proposeddeloopingsource.md) | 18 | `declaration-track:f0f303b748675ef0bcbfbe60c58eb3013959b8aded3c28f8bbc8c7d3af412e5f` |
+| 2 | `structure` | [LoopObjectOperation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/InfiniteLoopCarrier.lean/declarations/loopobjectoperation.md) | 29 | `declaration-track:d6ded0a3b82bd7592705febca7f20196eca1a02d14c99b9a1020563c08a485b4` |
+| 3 | `structure` | [DeloopingSequenceCandidate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/InfiniteLoopCarrier.lean/declarations/deloopingsequencecandidate.md) | 38 | `declaration-track:d01e9918b3f6fa3a701b0af73413949c12aed3bd6227bbac9817ad2d5c193ba5` |
+| 4 | `structure` | [RepeatedTransitionCycle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/InfiniteLoopCarrier.lean/declarations/repeatedtransitioncycle.md) | 52 | `declaration-track:1ba963365ca8a1d24fe742353f6dd9d34be7898328f01c48f6a0e53c400d2cbc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

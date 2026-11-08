@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/PointConstraints.lean/index.md) · [Full source](../../../../RealFunctions/PointConstraints.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PointConstraints.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PointConstraints.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CriticalCenterNormalization](../../../../RealFunctions/PointConstraints.lean/declarations/criticalcenternormalization.md) | 46 | `declaration-track:07a426ed2f8fe419c9bd5e19eab5843df0f4f32ae9795db0f3f1aecee6f0f0ba` |
-| 2 | `theorem` | [normalization_sends_raw_to_spectral](../../../../RealFunctions/PointConstraints.lean/declarations/normalization-sends-raw-to-spectral.md) | 55 | `result-track:a4f9d5ed65ebbed21845cbf5ed5bec202a78e30bc4ef5d2a5244f34e9931a028` |
-| 3 | `theorem` | [normalization_matches_declared_center](../../../../RealFunctions/PointConstraints.lean/declarations/normalization-matches-declared-center.md) | 61 | `result-track:eb2995bacbe7946f33fdc032b42255aaff1d071168533271dbf428a522824f55` |
+| 1 | `structure` | [CriticalCenterNormalization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PointConstraints.lean/declarations/criticalcenternormalization.md) | 46 | `declaration-track:07a426ed2f8fe419c9bd5e19eab5843df0f4f32ae9795db0f3f1aecee6f0f0ba` |
+| 2 | `theorem` | [normalization_sends_raw_to_spectral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PointConstraints.lean/declarations/normalization-sends-raw-to-spectral.md) | 55 | `result-track:a4f9d5ed65ebbed21845cbf5ed5bec202a78e30bc4ef5d2a5244f34e9931a028` |
+| 3 | `theorem` | [normalization_matches_declared_center](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PointConstraints.lean/declarations/normalization-matches-declared-center.md) | 61 | `result-track:eb2995bacbe7946f33fdc032b42255aaff1d071168533271dbf428a522824f55` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

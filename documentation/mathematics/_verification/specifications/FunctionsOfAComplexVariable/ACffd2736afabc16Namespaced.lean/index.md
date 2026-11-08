@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/ACffd2736afabc16Namespaced.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/ACffd2736afabc16Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ACffd2736afabc16Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ACffd2736afabc16Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [scalarFeatureKernel_apply](../../../../FunctionsOfAComplexVariable/ACffd2736afabc16Namespaced.lean/declarations/scalarfeaturekernel-apply.md) | 27 | `result-track:e5629742359fab3d720395a004bf3b5928a73548de86f2d1d8aae8f810390817` |
+| 1 | `theorem` | [scalarFeatureKernel_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ACffd2736afabc16Namespaced.lean/declarations/scalarfeaturekernel-apply.md) | 27 | `result-track:e5629742359fab3d720395a004bf3b5928a73548de86f2d1d8aae8f810390817` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

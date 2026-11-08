@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/TransfiniteIterationNamespaced.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/TransfiniteIterationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/TransfiniteIterationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/TransfiniteIterationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [transfiniteIterate](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/TransfiniteIterationNamespaced.lean/declarations/transfiniteiterate.md) | 51 | `declaration-track:58e6c1e3dcaf274ef2ee125819adf06dcf2fc882ae1f3e38405e7ff66356ba38` |
-| 2 | `lemma` | [transfiniteIterate_bot](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/TransfiniteIterationNamespaced.lean/declarations/transfiniteiterate-bot.md) | 56 | `result-track:24e821c775e5df5b268b029f6106cf75f730599862db3eebc7654c5e9fdaa8be` |
-| 3 | `lemma` | [transfiniteIterate_succ](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/TransfiniteIterationNamespaced.lean/declarations/transfiniteiterate-succ.md) | 61 | `result-track:446bfd3e0c03d93ce8f5edc6354e9579600366130a197ac67be445b0c329f45c` |
-| 4 | `lemma` | [transfiniteIterate_limit](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/TransfiniteIterationNamespaced.lean/declarations/transfiniteiterate-limit.md) | 68 | `result-track:84d7568b17767b3d8b21e4fd80ae44fc7acdb6893851830866168fca2ee2002e` |
-| 5 | `lemma` | [monotone_transfiniteIterate](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/TransfiniteIterationNamespaced.lean/declarations/monotone-transfiniteiterate.md) | 82 | `result-track:3f6c63732655baeafa281d1cb66902259fde291a471d8cb305e53c6ab0132b95` |
-| 6 | `lemma` | [top_mem_range_transfiniteIterate](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/TransfiniteIterationNamespaced.lean/declarations/top-mem-range-transfiniteiterate.md) | 104 | `result-track:566b43910dad7baa61ca4460cbf27c15af5a896677b9a75b3955d9756ecb33fb` |
+| 1 | `def` | [transfiniteIterate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/TransfiniteIterationNamespaced.lean/declarations/transfiniteiterate.md) | 51 | `declaration-track:58e6c1e3dcaf274ef2ee125819adf06dcf2fc882ae1f3e38405e7ff66356ba38` |
+| 2 | `lemma` | [transfiniteIterate_bot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/TransfiniteIterationNamespaced.lean/declarations/transfiniteiterate-bot.md) | 56 | `result-track:24e821c775e5df5b268b029f6106cf75f730599862db3eebc7654c5e9fdaa8be` |
+| 3 | `lemma` | [transfiniteIterate_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/TransfiniteIterationNamespaced.lean/declarations/transfiniteiterate-succ.md) | 61 | `result-track:446bfd3e0c03d93ce8f5edc6354e9579600366130a197ac67be445b0c329f45c` |
+| 4 | `lemma` | [transfiniteIterate_limit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/TransfiniteIterationNamespaced.lean/declarations/transfiniteiterate-limit.md) | 68 | `result-track:84d7568b17767b3d8b21e4fd80ae44fc7acdb6893851830866168fca2ee2002e` |
+| 5 | `lemma` | [monotone_transfiniteIterate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/TransfiniteIterationNamespaced.lean/declarations/monotone-transfiniteiterate.md) | 82 | `result-track:3f6c63732655baeafa281d1cb66902259fde291a471d8cb305e53c6ab0132b95` |
+| 6 | `lemma` | [top_mem_range_transfiniteIterate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/TransfiniteIterationNamespaced.lean/declarations/top-mem-range-transfiniteiterate.md) | 104 | `result-track:566b43910dad7baa61ca4460cbf27c15af5a896677b9a75b3955d9756ecb33fb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/WholePropertyBundleAndConsequences.lean/index.md) · [Full source](../../../../GeneralTopology/WholePropertyBundleAndConsequences.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/WholePropertyBundleAndConsequences.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/WholePropertyBundleAndConsequences.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,9 +60,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CantorTopologyCapability](../../../../GeneralTopology/WholePropertyBundleAndConsequences.lean/declarations/cantortopologycapability.md) | 36 | `declaration-track:0382eb954d103b4569b2a60d9c25ea432d0db7d6296c91561fc8a80cf91407dd` |
-| 2 | `theorem` | [compact_univ](../../../../GeneralTopology/WholePropertyBundleAndConsequences.lean/declarations/compact-univ.md) | 48 | `result-track:4ec8284c4d34e4790a06ef6623b44a86ed4a200ef6007f725f5556457f7b0e4e` |
-| 3 | `theorem` | [connected_subsets_are_singletons](../../../../GeneralTopology/WholePropertyBundleAndConsequences.lean/declarations/connected-subsets-are-singletons.md) | 55 | `result-track:ad9d6b95d80f271519c951859957bac0d52282ae8c5fcf68d3be20d4cd2d1c05` |
+| 1 | `structure` | [CantorTopologyCapability](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/WholePropertyBundleAndConsequences.lean/declarations/cantortopologycapability.md) | 36 | `declaration-track:0382eb954d103b4569b2a60d9c25ea432d0db7d6296c91561fc8a80cf91407dd` |
+| 2 | `theorem` | [compact_univ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/WholePropertyBundleAndConsequences.lean/declarations/compact-univ.md) | 48 | `result-track:4ec8284c4d34e4790a06ef6623b44a86ed4a200ef6007f725f5556457f7b0e4e` |
+| 3 | `theorem` | [connected_subsets_are_singletons](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/WholePropertyBundleAndConsequences.lean/declarations/connected-subsets-are-singletons.md) | 55 | `result-track:ad9d6b95d80f271519c951859957bac0d52282ae8c5fcf68d3be20d4cd2d1c05` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

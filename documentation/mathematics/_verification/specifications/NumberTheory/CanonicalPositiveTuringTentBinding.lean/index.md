@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/CanonicalPositiveTuringTentBinding.lean/index.md) · [Full source](../../../../NumberTheory/CanonicalPositiveTuringTentBinding.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPositiveTuringTentBinding.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPositiveTuringTentBinding.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalPositiveTuringEnumeration`](../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPositiveTuringEnumeration.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Chebyshev.CanonicalRationalTentEvaluation`](../../../../NumberTheory/CanonicalRationalTentEvaluation.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalPositiveTuringEnumeration`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPositiveTuringEnumeration.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.CanonicalRationalTentEvaluation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalRationalTentEvaluation.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [signedRecordIndex](../../../../NumberTheory/CanonicalPositiveTuringTentBinding.lean/declarations/signedrecordindex.md) | 54 | `declaration-track:2cfe555d58d117b82d89b7794a94b8ad37d61787c5570ddbd5516fcf5b663e6d` |
-| 2 | `theorem` | [record_multiplicity_eq_signed_source](../../../../NumberTheory/CanonicalPositiveTuringTentBinding.lean/declarations/record-multiplicity-eq-signed-source.md) | 59 | `result-track:34864956f989aa958c597d9c14cb69d05f9ee95363a8ee1e02ea9d153fa17bf0` |
-| 3 | `structure` | [SignedTentRowAlignment](../../../../NumberTheory/CanonicalPositiveTuringTentBinding.lean/declarations/signedtentrowalignment.md) | 82 | `declaration-track:4304cd66f9bced693ad7752817543ce5ab12d5aa98658ba0d9326da5a0deb2fd` |
-| 4 | `theorem` | [row_count_eq_two_mul_index_card](../../../../NumberTheory/CanonicalPositiveTuringTentBinding.lean/declarations/row-count-eq-two-mul-index-card.md) | 98 | `result-track:58a2a4d41cfe31ac5a07d31c9080ec77244bc70ada6824bcf7a0c0aa5ed2e322` |
-| 5 | `def` | [headBindingOfZeroGap](../../../../NumberTheory/CanonicalPositiveTuringTentBinding.lean/declarations/headbindingofzerogap.md) | 109 | `declaration-track:3a0fe9a5b4cdf538471dd1553d97157255c2fbbee7052c9899d3edb08907faf0` |
-| 6 | `theorem` | [verified_head_of_zero_gap_packet](../../../../NumberTheory/CanonicalPositiveTuringTentBinding.lean/declarations/verified-head-of-zero-gap-packet.md) | 131 | `result-track:6dc9cfe8a64473d212d0f92b2af96763b36b927c4c426d7fc52914cdecb91e1d` |
-| 7 | `theorem` | [prime_in_square_of_zero_gap_packet](../../../../NumberTheory/CanonicalPositiveTuringTentBinding.lean/declarations/prime-in-square-of-zero-gap-packet.md) | 147 | `result-track:11a4f26353071cf998513da4cd8c07fddaca0e21f4b8ee575f1582ecd06bd5dd` |
-| 8 | `theorem` | [duplicate_signed_label_not_equiv_fixture](../../../../NumberTheory/CanonicalPositiveTuringTentBinding.lean/declarations/duplicate-signed-label-not-equiv-fixture.md) | 168 | `result-track:8541ddf6cc1a58b642d5d05ab0bc02716552667a58da61e2ef1c084abe636825` |
+| 1 | `def` | [signedRecordIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPositiveTuringTentBinding.lean/declarations/signedrecordindex.md) | 54 | `declaration-track:2cfe555d58d117b82d89b7794a94b8ad37d61787c5570ddbd5516fcf5b663e6d` |
+| 2 | `theorem` | [record_multiplicity_eq_signed_source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPositiveTuringTentBinding.lean/declarations/record-multiplicity-eq-signed-source.md) | 59 | `result-track:34864956f989aa958c597d9c14cb69d05f9ee95363a8ee1e02ea9d153fa17bf0` |
+| 3 | `structure` | [SignedTentRowAlignment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPositiveTuringTentBinding.lean/declarations/signedtentrowalignment.md) | 82 | `declaration-track:4304cd66f9bced693ad7752817543ce5ab12d5aa98658ba0d9326da5a0deb2fd` |
+| 4 | `theorem` | [row_count_eq_two_mul_index_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPositiveTuringTentBinding.lean/declarations/row-count-eq-two-mul-index-card.md) | 98 | `result-track:58a2a4d41cfe31ac5a07d31c9080ec77244bc70ada6824bcf7a0c0aa5ed2e322` |
+| 5 | `def` | [headBindingOfZeroGap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPositiveTuringTentBinding.lean/declarations/headbindingofzerogap.md) | 109 | `declaration-track:3a0fe9a5b4cdf538471dd1553d97157255c2fbbee7052c9899d3edb08907faf0` |
+| 6 | `theorem` | [verified_head_of_zero_gap_packet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPositiveTuringTentBinding.lean/declarations/verified-head-of-zero-gap-packet.md) | 131 | `result-track:6dc9cfe8a64473d212d0f92b2af96763b36b927c4c426d7fc52914cdecb91e1d` |
+| 7 | `theorem` | [prime_in_square_of_zero_gap_packet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPositiveTuringTentBinding.lean/declarations/prime-in-square-of-zero-gap-packet.md) | 147 | `result-track:11a4f26353071cf998513da4cd8c07fddaca0e21f4b8ee575f1582ecd06bd5dd` |
+| 8 | `theorem` | [duplicate_signed_label_not_equiv_fixture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalPositiveTuringTentBinding.lean/declarations/duplicate-signed-label-not-equiv-fixture.md) | 168 | `result-track:8541ddf6cc1a58b642d5d05ab0bc02716552667a58da61e2ef1c084abe636825` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

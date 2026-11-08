@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LocalCountChi.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LocalCountChi.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LocalCountChi.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LocalCountChi.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,11 +61,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [gfunL](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LocalCountChi.lean/declarations/gfunl.md) | 31 | `declaration-track:6f9b3428adb9d013069873b2fbc0bcc77839424384408ee110082addb4d07f39` |
-| 2 | `lemma` | [gfunL_analyticAt](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LocalCountChi.lean/declarations/gfunl-analyticat.md) | 33 | `result-track:c3b0492dbdc5c911ec0744298031d8c7ab9acd42393102060c3728d2ed69cec3` |
-| 3 | `lemma` | [analyticOrderNatAt_gfunL](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LocalCountChi.lean/declarations/analyticordernatat-gfunl.md) | 42 | `result-track:8bdd08d51e06ab57958ee73a69cfdfe2b56fb7664b197853160c3614570af893` |
-| 4 | `theorem` | [localCountChi_uniform_proof](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LocalCountChi.lean/declarations/localcountchi-uniform-proof.md) | 69 | `result-track:c4a307c27a31408eb383ebc54022e4bfa5f9682037b76798cd6e159a63c78215` |
-| 5 | `theorem` | [localCountChi](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LocalCountChi.lean/declarations/localcountchi.md) | 237 | `result-track:c88ad586bec2aa6cb3539e53801f63dcb7b4e72e00c45e74696c06b3fbdac94c` |
+| 1 | `def` | [gfunL](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LocalCountChi.lean/declarations/gfunl.md) | 31 | `declaration-track:6f9b3428adb9d013069873b2fbc0bcc77839424384408ee110082addb4d07f39` |
+| 2 | `lemma` | [gfunL_analyticAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LocalCountChi.lean/declarations/gfunl-analyticat.md) | 33 | `result-track:c3b0492dbdc5c911ec0744298031d8c7ab9acd42393102060c3728d2ed69cec3` |
+| 3 | `lemma` | [analyticOrderNatAt_gfunL](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LocalCountChi.lean/declarations/analyticordernatat-gfunl.md) | 42 | `result-track:8bdd08d51e06ab57958ee73a69cfdfe2b56fb7664b197853160c3614570af893` |
+| 4 | `theorem` | [localCountChi_uniform_proof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LocalCountChi.lean/declarations/localcountchi-uniform-proof.md) | 69 | `result-track:c4a307c27a31408eb383ebc54022e4bfa5f9682037b76798cd6e159a63c78215` |
+| 5 | `theorem` | [localCountChi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LocalCountChi.lean/declarations/localcountchi.md) | 237 | `result-track:c88ad586bec2aa6cb3539e53801f63dcb7b4e72e00c45e74696c06b3fbdac94c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AB6d6e9d1cabc9fNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AB6d6e9d1cabc9fNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AB6d6e9d1cabc9fNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AB6d6e9d1cabc9fNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [NodeKind](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AB6d6e9d1cabc9fNamespaced.lean/declarations/nodekind.md) | 16 | `declaration-track:a93de3d7d503743f2ae728da8aa829d0e5ff7d598f6e4a01200d50911c0e1d2e` |
-| 2 | `theorem` | [reference_ne_semantic](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AB6d6e9d1cabc9fNamespaced.lean/declarations/reference-ne-semantic.md) | 30 | `result-track:c4b869c1333cb1edcd46ae8cfa22251ae29bd1f69d046909ca87667ab7a9b81f` |
-| 3 | `theorem` | [backbone_ne_semantic](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AB6d6e9d1cabc9fNamespaced.lean/declarations/backbone-ne-semantic.md) | 33 | `result-track:300aa9dad7a38cb53ff4277d072b2da92e6c8fa9d5fce850049deb1f07a203e5` |
+| 1 | `inductive` | [NodeKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AB6d6e9d1cabc9fNamespaced.lean/declarations/nodekind.md) | 16 | `declaration-track:a93de3d7d503743f2ae728da8aa829d0e5ff7d598f6e4a01200d50911c0e1d2e` |
+| 2 | `theorem` | [reference_ne_semantic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AB6d6e9d1cabc9fNamespaced.lean/declarations/reference-ne-semantic.md) | 30 | `result-track:c4b869c1333cb1edcd46ae8cfa22251ae29bd1f69d046909ca87667ab7a9b81f` |
+| 3 | `theorem` | [backbone_ne_semantic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/AB6d6e9d1cabc9fNamespaced.lean/declarations/backbone-ne-semantic.md) | 33 | `result-track:300aa9dad7a38cb53ff4277d072b2da92e6c8fa9d5fce850049deb1f07a203e5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

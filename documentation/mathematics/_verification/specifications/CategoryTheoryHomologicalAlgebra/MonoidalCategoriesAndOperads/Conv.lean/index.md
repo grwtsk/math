@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/Conv.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/Conv.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/Conv.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/Conv.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Conv](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/Conv.lean/declarations/conv.md) | 22 | `declaration-track:cdf5dff984b4468e7cc1e15dbffc1e705ffc42627adf269c17900eea4a3352f3` |
-| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/Conv.lean/declarations/instance.md) | 28 | `declaration-track:1f397e2a53c1edfcaa9b3193b4e21cd05dca5e08b90226a36b505873bea6fd50` |
-| 3 | `theorem` | [one_eq](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/Conv.lean/declarations/one-eq.md) | 31 | `result-track:e7b425fd98201a48c82ccfb6d3a7573fb50cb1ba91f69676b84e4269a1814977` |
-| 4 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/Conv.lean/declarations/instance-source-edition-3.md) | 33 | `declaration-track:9e9a8c80d9112605c76d6db84a242df57745b7fdaf50b5822795e229345103ed` |
-| 5 | `theorem` | [mul_eq](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/Conv.lean/declarations/mul-eq.md) | 36 | `result-track:a0e5ec857d31c19370847ef282f47466e3ab50faa7ce385900319dc02d61f43f` |
-| 6 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/Conv.lean/declarations/instance-source-edition-2.md) | 38 | `declaration-track:74da905a1ea99a4147eb476b79e21cf165a8f2310219e5bdfb26a88a2ccb97ac` |
+| 1 | `def` | [Conv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/Conv.lean/declarations/conv.md) | 22 | `declaration-track:cdf5dff984b4468e7cc1e15dbffc1e705ffc42627adf269c17900eea4a3352f3` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/Conv.lean/declarations/instance.md) | 28 | `declaration-track:1f397e2a53c1edfcaa9b3193b4e21cd05dca5e08b90226a36b505873bea6fd50` |
+| 3 | `theorem` | [one_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/Conv.lean/declarations/one-eq.md) | 31 | `result-track:e7b425fd98201a48c82ccfb6d3a7573fb50cb1ba91f69676b84e4269a1814977` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/Conv.lean/declarations/instance-source-edition-3.md) | 33 | `declaration-track:9e9a8c80d9112605c76d6db84a242df57745b7fdaf50b5822795e229345103ed` |
+| 5 | `theorem` | [mul_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/Conv.lean/declarations/mul-eq.md) | 36 | `result-track:a0e5ec857d31c19370847ef282f47466e3ab50faa7ce385900319dc02d61f43f` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/Conv.lean/declarations/instance-source-edition-2.md) | 38 | `declaration-track:74da905a1ea99a4147eb476b79e21cf165a8f2310219e5bdfb26a88a2ccb97ac` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

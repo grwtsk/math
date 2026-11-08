@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/DiophantineEquations/FreyIntegralSourceTorsionCore.lean/index.md) · [Full source](../../../../../NumberTheory/DiophantineEquations/FreyIntegralSourceTorsionCore.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyIntegralSourceTorsionCore.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyIntegralSourceTorsionCore.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.AlgebraicGeometry.EllipticCurve.WeierstrassOrderOneTorsion`](../../../../../CommutativeAlgebra/WeierstrassOrderOneTorsion.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyIntegralSourceTorsion`](../../../../../NumberTheory/DiophantineEquations/FreyIntegralSourceTorsion.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.AlgebraicGeometry.EllipticCurve.WeierstrassOrderOneTorsion`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/WeierstrassOrderOneTorsion.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyIntegralSourceTorsion`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyIntegralSourceTorsion.lean/index.md) — import line 2; pinned internal source present.
 
 ## Top results and three-degree verification metric
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheOnceCountedVarianceDefectConsumesTheActualPrimeSuffix.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheOnceCountedVarianceDefectConsumesTheActualPrimeSuffix.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheOnceCountedVarianceDefectConsumesTheActualPrimeSuffix.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheOnceCountedVarianceDefectConsumesTheActualPrimeSuffix.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_suffix_variance](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheOnceCountedVarianceDefectConsumesTheActualPrimeSuffix.lean/declarations/actual-suffix-variance.md) | 24 | `result-track:ccd31c02c3ef93b1ff78c599cb6dc2936b594ec9657f61a515d3960f771b14a2` |
+| 1 | `theorem` | [actual_suffix_variance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheOnceCountedVarianceDefectConsumesTheActualPrimeSuffix.lean/declarations/actual-suffix-variance.md) | 24 | `result-track:ccd31c02c3ef93b1ff78c599cb6dc2936b594ec9657f61a515d3960f771b14a2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

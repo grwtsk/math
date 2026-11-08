@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/IndexBoundaryAlignmentBridgeNamespacedIndexToBoundaryAlignmentBridge.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/IndexBoundaryAlignmentBridgeNamespacedIndexToBoundaryAlignmentBridge.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/IndexBoundaryAlignmentBridgeNamespacedIndexToBoundaryAlignmentBridge.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/IndexBoundaryAlignmentBridgeNamespacedIndexToBoundaryAlignmentBridge.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [IndexToBoundaryAlignmentBridge](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/IndexBoundaryAlignmentBridgeNamespacedIndexToBoundaryAlignmentBridge.lean/declarations/indextoboundaryalignmentbridge.md) | 34 | `declaration-track:63f1054d09fd10d382df5a9316c2d65054217863c0ab2d848e4fd92dc721bb61` |
-| 2 | `theorem` | [critical_line_from_nonzero_crystalline_index](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/IndexBoundaryAlignmentBridgeNamespacedIndexToBoundaryAlignmentBridge.lean/declarations/critical-line-from-nonzero-crystalline-index.md) | 54 | `result-track:0f778a0b0119fc8d0ea10e9f9bbfae4798c07ff0419a068db28908e46f074a99` |
+| 1 | `structure` | [IndexToBoundaryAlignmentBridge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/IndexBoundaryAlignmentBridgeNamespacedIndexToBoundaryAlignmentBridge.lean/declarations/indextoboundaryalignmentbridge.md) | 34 | `declaration-track:63f1054d09fd10d382df5a9316c2d65054217863c0ab2d848e4fd92dc721bb61` |
+| 2 | `theorem` | [critical_line_from_nonzero_crystalline_index](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/IndexBoundaryAlignmentBridgeNamespacedIndexToBoundaryAlignmentBridge.lean/declarations/critical-line-from-nonzero-crystalline-index.md) | 54 | `result-track:0f778a0b0119fc8d0ea10e9f9bbfae4798c07ff0419a068db28908e46f074a99` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteFredholmBivariant.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteFredholmBivariant.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteFredholmBivariant.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteFredholmBivariant.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.KTheory.FormalKKEquivalences`](../../../../../KTheory/FormalKKEquivalences.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.Algebra.KTheory.FiniteFredholmCycle`](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteFredholmCycle.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.Algebra.KTheory.FormalKKEquivalences`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/KTheory/FormalKKEquivalences.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Algebra.KTheory.FiniteFredholmCycle`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteFredholmCycle.lean/index.md) — import line 2; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [ext](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteFredholmBivariant.lean/declarations/ext.md) | 19 | `result-track:7cd8e347ec84beac51f968b7b0bdd08210bd184f41c1cfa5b5f89893ab0a82d6` |
-| 2 | `def` | [unitaryTheory](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteFredholmBivariant.lean/declarations/unitarytheory.md) | 28 | `declaration-track:384481368b29a8e0eb9875ca3a3fa2efcbf2010ec5372e93adcd8ee738650ff1` |
-| 3 | `def` | [toKKEquivalence](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteFredholmBivariant.lean/declarations/tokkequivalence.md) | 53 | `declaration-track:a9904ba724c2149f036100e77e1bbe4b1d47d62c8be0097ea682afc0d7aedca2` |
-| 4 | `theorem` | [toKKEquivalence_trans](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteFredholmBivariant.lean/declarations/tokkequivalence-trans.md) | 66 | `result-track:c867f2cb31cdaeccba86012ba0a8916e6ac814eaf03c7b5eb2857e61a292b0bc` |
+| 1 | `theorem` | [ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteFredholmBivariant.lean/declarations/ext.md) | 19 | `result-track:7cd8e347ec84beac51f968b7b0bdd08210bd184f41c1cfa5b5f89893ab0a82d6` |
+| 2 | `def` | [unitaryTheory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteFredholmBivariant.lean/declarations/unitarytheory.md) | 28 | `declaration-track:384481368b29a8e0eb9875ca3a3fa2efcbf2010ec5372e93adcd8ee738650ff1` |
+| 3 | `def` | [toKKEquivalence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteFredholmBivariant.lean/declarations/tokkequivalence.md) | 53 | `declaration-track:a9904ba724c2149f036100e77e1bbe4b1d47d62c8be0097ea682afc0d7aedca2` |
+| 4 | `theorem` | [toKKEquivalence_trans](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteFredholmBivariant.lean/declarations/tokkequivalence-trans.md) | 66 | `result-track:c867f2cb31cdaeccba86012ba0a8916e6ac814eaf03c7b5eb2857e61a292b0bc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

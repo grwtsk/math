@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/EndpointRadiusNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/EndpointRadiusNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/EndpointRadiusNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/EndpointRadiusNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,15 +60,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [envelope](../../../../RealFunctions/EndpointRadiusNamespaced.lean/declarations/envelope.md) | 20 | `declaration-track:3e93c08990ab775b486c2c21a4faf402fa623918b34ff3b3bf669aa8af62cc4a` |
-| 2 | `def` | [endpointBudget](../../../../RealFunctions/EndpointRadiusNamespaced.lean/declarations/endpointbudget.md) | 21 | `declaration-track:b0018a540bd754769e11d4067732a490b3ebc57d6b0838578ec628522cb6097b` |
-| 3 | `theorem` | [envelope_hasDerivAt](../../../../RealFunctions/EndpointRadiusNamespaced.lean/declarations/envelope-hasderivat.md) | 23 | `result-track:355bd5649b93313058bab3e7362160560ff7e924aaefce476155aa848a74386b` |
-| 4 | `theorem` | [envelope_antitoneOn](../../../../RealFunctions/EndpointRadiusNamespaced.lean/declarations/envelope-antitoneon.md) | 31 | `result-track:991f6e4ac964ea8b7ca65faed50fe78999123fcd3e7ff8ab66aa5461dcd51bfb` |
-| 5 | `theorem` | [envelope_le_peak](../../../../RealFunctions/EndpointRadiusNamespaced.lean/declarations/envelope-le-peak.md) | 42 | `result-track:7946cd233e0d2a1e06da9df178aefb1920fbbd91922024d26cfce23dfa338035` |
-| 6 | `theorem` | [envelope_le_budget](../../../../RealFunctions/EndpointRadiusNamespaced.lean/declarations/envelope-le-budget.md) | 71 | `result-track:54f28a1d25c3fa672aa1a4f06c565c4533e42f73b17656ffedd6509b2e6b9e80` |
-| 7 | `theorem` | [envelope_peak_lt_three](../../../../RealFunctions/EndpointRadiusNamespaced.lean/declarations/envelope-peak-lt-three.md) | 79 | `result-track:25d91eb5d27023ad64750b167b2e827a7342d123584e8c49c69313e72def34ef` |
-| 8 | `theorem` | [endpointBudget_nonneg](../../../../RealFunctions/EndpointRadiusNamespaced.lean/declarations/endpointbudget-nonneg.md) | 90 | `result-track:4d9939fedd2400f4b60b07b6e87c3defa328390fe31e372ef168e4f59182e4ce` |
-| 9 | `theorem` | [endpointBudget_eq_of_three_le](../../../../RealFunctions/EndpointRadiusNamespaced.lean/declarations/endpointbudget-eq-of-three-le.md) | 95 | `result-track:d33a841f47e07bbf297802bfd8ee7e123149ac17f322eff66dcf565b3c9319bc` |
+| 1 | `def` | [envelope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/EndpointRadiusNamespaced.lean/declarations/envelope.md) | 20 | `declaration-track:3e93c08990ab775b486c2c21a4faf402fa623918b34ff3b3bf669aa8af62cc4a` |
+| 2 | `def` | [endpointBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/EndpointRadiusNamespaced.lean/declarations/endpointbudget.md) | 21 | `declaration-track:b0018a540bd754769e11d4067732a490b3ebc57d6b0838578ec628522cb6097b` |
+| 3 | `theorem` | [envelope_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/EndpointRadiusNamespaced.lean/declarations/envelope-hasderivat.md) | 23 | `result-track:355bd5649b93313058bab3e7362160560ff7e924aaefce476155aa848a74386b` |
+| 4 | `theorem` | [envelope_antitoneOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/EndpointRadiusNamespaced.lean/declarations/envelope-antitoneon.md) | 31 | `result-track:991f6e4ac964ea8b7ca65faed50fe78999123fcd3e7ff8ab66aa5461dcd51bfb` |
+| 5 | `theorem` | [envelope_le_peak](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/EndpointRadiusNamespaced.lean/declarations/envelope-le-peak.md) | 42 | `result-track:7946cd233e0d2a1e06da9df178aefb1920fbbd91922024d26cfce23dfa338035` |
+| 6 | `theorem` | [envelope_le_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/EndpointRadiusNamespaced.lean/declarations/envelope-le-budget.md) | 71 | `result-track:54f28a1d25c3fa672aa1a4f06c565c4533e42f73b17656ffedd6509b2e6b9e80` |
+| 7 | `theorem` | [envelope_peak_lt_three](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/EndpointRadiusNamespaced.lean/declarations/envelope-peak-lt-three.md) | 79 | `result-track:25d91eb5d27023ad64750b167b2e827a7342d123584e8c49c69313e72def34ef` |
+| 8 | `theorem` | [endpointBudget_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/EndpointRadiusNamespaced.lean/declarations/endpointbudget-nonneg.md) | 90 | `result-track:4d9939fedd2400f4b60b07b6e87c3defa328390fe31e372ef168e4f59182e4ce` |
+| 9 | `theorem` | [endpointBudget_eq_of_three_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/EndpointRadiusNamespaced.lean/declarations/endpointbudget-eq-of-three-le.md) | 95 | `result-track:d33a841f47e07bbf297802bfd8ee7e123149ac17f322eff66dcf565b3c9319bc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/CharZeroNamespacedCastDivOfNatCharZero.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/CharZeroNamespacedCastDivOfNatCharZero.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CharZeroNamespacedCastDivOfNatCharZero.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CharZeroNamespacedCastDivOfNatCharZero.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [cast_div_charZero](../../../../../NumberTheory/ElementaryNumberTheory/CharZeroNamespacedCastDivOfNatCharZero.lean/declarations/cast-div-charzero.md) | 31 | `result-track:750887422263d741ff5cbd497997e7a546d1849176fe2fcf922b9accb62bc3bf` |
-| 2 | `theorem` | [cast_div_ofNat_charZero](../../../../../NumberTheory/ElementaryNumberTheory/CharZeroNamespacedCastDivOfNatCharZero.lean/declarations/cast-div-ofnat-charzero.md) | 39 | `result-track:ef7ad032c68ee99d55cea1c80a953f39805b14898b0d6521d911cf4a29520fd2` |
-| 3 | `theorem` | [RingHom.injective_int](../../../../../NumberTheory/ElementaryNumberTheory/CharZeroNamespacedCastDivOfNatCharZero.lean/declarations/ringhom-injective-int.md) | 45 | `result-track:a1b19fa675e60cfb56f8fe040d02ae832649603144a9683dec74fd2ebcfbf2ea` |
-| 4 | `lemma` | [support_intCast](../../../../../NumberTheory/ElementaryNumberTheory/CharZeroNamespacedCastDivOfNatCharZero.lean/declarations/support-intcast.md) | 52 | `result-track:3e95eff4f502ff13aedd990eb721ce274609bf4fdba2fa5a33a0656006fa15f4` |
-| 5 | `lemma` | [mulSupport_intCast](../../../../../NumberTheory/ElementaryNumberTheory/CharZeroNamespacedCastDivOfNatCharZero.lean/declarations/mulsupport-intcast.md) | 55 | `result-track:69a8e0d38a827254aa635e0d2a650166f45e90eba8503536b0d39ceabcefd519` |
+| 1 | `theorem` | [cast_div_charZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CharZeroNamespacedCastDivOfNatCharZero.lean/declarations/cast-div-charzero.md) | 31 | `result-track:750887422263d741ff5cbd497997e7a546d1849176fe2fcf922b9accb62bc3bf` |
+| 2 | `theorem` | [cast_div_ofNat_charZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CharZeroNamespacedCastDivOfNatCharZero.lean/declarations/cast-div-ofnat-charzero.md) | 39 | `result-track:ef7ad032c68ee99d55cea1c80a953f39805b14898b0d6521d911cf4a29520fd2` |
+| 3 | `theorem` | [RingHom.injective_int](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CharZeroNamespacedCastDivOfNatCharZero.lean/declarations/ringhom-injective-int.md) | 45 | `result-track:a1b19fa675e60cfb56f8fe040d02ae832649603144a9683dec74fd2ebcfbf2ea` |
+| 4 | `lemma` | [support_intCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CharZeroNamespacedCastDivOfNatCharZero.lean/declarations/support-intcast.md) | 52 | `result-track:3e95eff4f502ff13aedd990eb721ce274609bf4fdba2fa5a33a0656006fa15f4` |
+| 5 | `lemma` | [mulSupport_intCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CharZeroNamespacedCastDivOfNatCharZero.lean/declarations/mulsupport-intcast.md) | 55 | `result-track:69a8e0d38a827254aa635e0d2a650166f45e90eba8503536b0d39ceabcefd519` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

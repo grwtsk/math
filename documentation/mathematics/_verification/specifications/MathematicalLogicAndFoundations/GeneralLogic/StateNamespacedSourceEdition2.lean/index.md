@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StateNamespacedSourceEdition2.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StateNamespacedSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StateNamespacedSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StateNamespacedSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [TensorState](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StateNamespacedSourceEdition2.lean/declarations/tensorstate.md) | 25 | `declaration-track:8a8354cdf7f990d251e62fc8b044b1073dffcd858eaf941c36867b37434844d0` |
-| 2 | `structure` | [SemanticTensorEncodingCertificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StateNamespacedSourceEdition2.lean/declarations/semantictensorencodingcertificate.md) | 32 | `declaration-track:a19869162e5061928ad5329797d6feb247cea290c3ad1ed6885fcddc63631c63` |
-| 3 | `theorem` | [SemanticTensorEncodingCertificate.recovers](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StateNamespacedSourceEdition2.lean/declarations/semantictensorencodingcertificate-recovers.md) | 54 | `result-track:ef32875f2fd3a94eceba18ca67521f5c51e2555e38ec17d12e2e79c7fe647825` |
-| 4 | `structure` | [InjectiveSemanticTensorEncodingCertificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StateNamespacedSourceEdition2.lean/declarations/injectivesemantictensorencodingcertificate.md) | 67 | `declaration-track:d5f91535932bef07c499d3aa79544c63eedb498c3dd8d9c7434d2d61cec8c19c` |
+| 1 | `abbrev` | [TensorState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StateNamespacedSourceEdition2.lean/declarations/tensorstate.md) | 25 | `declaration-track:8a8354cdf7f990d251e62fc8b044b1073dffcd858eaf941c36867b37434844d0` |
+| 2 | `structure` | [SemanticTensorEncodingCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StateNamespacedSourceEdition2.lean/declarations/semantictensorencodingcertificate.md) | 32 | `declaration-track:a19869162e5061928ad5329797d6feb247cea290c3ad1ed6885fcddc63631c63` |
+| 3 | `theorem` | [SemanticTensorEncodingCertificate.recovers](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StateNamespacedSourceEdition2.lean/declarations/semantictensorencodingcertificate-recovers.md) | 54 | `result-track:ef32875f2fd3a94eceba18ca67521f5c51e2555e38ec17d12e2e79c7fe647825` |
+| 4 | `structure` | [InjectiveSemanticTensorEncodingCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StateNamespacedSourceEdition2.lean/declarations/injectivesemantictensorencodingcertificate.md) | 67 | `declaration-track:d5f91535932bef07c499d3aa79544c63eedb498c3dd8d9c7434d2d61cec8c19c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

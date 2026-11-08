@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/PowerSeriesGaussNormGaussNormNamespacedPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/PowerSeriesGaussNormGaussNormNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PowerSeriesGaussNormGaussNormNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PowerSeriesGaussNormGaussNormNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [gaussNorm](../../../../CommutativeAlgebra/PowerSeriesGaussNormGaussNormNamespacedPublic.lean/declarations/gaussnorm.md) | 61 | `declaration-track:8e05e8689c51e55926f7f3212084d9b4097136b34654f91f6be4a1ad73b30547` |
-| 2 | `lemma` | [gaussNorm_eq](../../../../CommutativeAlgebra/PowerSeriesGaussNormGaussNormNamespacedPublic.lean/declarations/gaussnorm-eq.md) | 63 | `result-track:08ff8262d533b483b3ab1645bdb6e6ce59f9fa19a07362a7fc55090b2582e603` |
-| 3 | `abbrev` | [HasGaussNorm](../../../../CommutativeAlgebra/PowerSeriesGaussNormGaussNormNamespacedPublic.lean/declarations/hasgaussnorm.md) | 71 | `declaration-track:32bea4d5d7220eb693e6e50f1f1445ba437c29596446e8ea532990e617c76569` |
-| 4 | `lemma` | [HasGaussNorm.hasMvGaussNorm](../../../../CommutativeAlgebra/PowerSeriesGaussNormGaussNormNamespacedPublic.lean/declarations/hasgaussnorm-hasmvgaussnorm.md) | 73 | `result-track:0a6e682cae79aa984a1fbc1707d012a808f9b8165e33348210f87b92f9478a21` |
-| 5 | `theorem` | [gaussNorm_zero](../../../../CommutativeAlgebra/PowerSeriesGaussNormGaussNormNamespacedPublic.lean/declarations/gaussnorm-zero.md) | 94 | `result-track:cb3288d3bd522fb6151d2b5bc31989ac455c0442ec16d00e7f59d43ff2bd8b3c` |
-| 6 | `lemma` | [le_gaussNorm](../../../../CommutativeAlgebra/PowerSeriesGaussNormGaussNormNamespacedPublic.lean/declarations/le-gaussnorm.md) | 97 | `result-track:b879d4b789ad834b66a4c56148ecbb3801d1a7a2822fe807dfc26ce19912fde1` |
-| 7 | `lemma` | [gaussNorm_nonneg](../../../../CommutativeAlgebra/PowerSeriesGaussNormGaussNormNamespacedPublic.lean/declarations/gaussnorm-nonneg.md) | 102 | `result-track:81cc9bbfeeb2cc82a1faaab0f3724666fed80fe3e62c34d7b6856ef98e7498e4` |
-| 8 | `lemma` | [gaussNorm_eq_zero_iff](../../../../CommutativeAlgebra/PowerSeriesGaussNormGaussNormNamespacedPublic.lean/declarations/gaussnorm-eq-zero-iff.md) | 105 | `result-track:09755f9f2d616da17baecef61c885be4f3f53d8420c03f58463633b4e581f6f6` |
-| 9 | `lemma` | [gaussNorm_add_le_max](../../../../CommutativeAlgebra/PowerSeriesGaussNormGaussNormNamespacedPublic.lean/declarations/gaussnorm-add-le-max.md) | 111 | `result-track:01f21d108fdbaeb755efe2691d9b882c8c2a99818a33ffe997fcb816b4c524f6` |
+| 1 | `abbrev` | [gaussNorm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PowerSeriesGaussNormGaussNormNamespacedPublic.lean/declarations/gaussnorm.md) | 61 | `declaration-track:8e05e8689c51e55926f7f3212084d9b4097136b34654f91f6be4a1ad73b30547` |
+| 2 | `lemma` | [gaussNorm_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PowerSeriesGaussNormGaussNormNamespacedPublic.lean/declarations/gaussnorm-eq.md) | 63 | `result-track:08ff8262d533b483b3ab1645bdb6e6ce59f9fa19a07362a7fc55090b2582e603` |
+| 3 | `abbrev` | [HasGaussNorm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PowerSeriesGaussNormGaussNormNamespacedPublic.lean/declarations/hasgaussnorm.md) | 71 | `declaration-track:32bea4d5d7220eb693e6e50f1f1445ba437c29596446e8ea532990e617c76569` |
+| 4 | `lemma` | [HasGaussNorm.hasMvGaussNorm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PowerSeriesGaussNormGaussNormNamespacedPublic.lean/declarations/hasgaussnorm-hasmvgaussnorm.md) | 73 | `result-track:0a6e682cae79aa984a1fbc1707d012a808f9b8165e33348210f87b92f9478a21` |
+| 5 | `theorem` | [gaussNorm_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PowerSeriesGaussNormGaussNormNamespacedPublic.lean/declarations/gaussnorm-zero.md) | 94 | `result-track:cb3288d3bd522fb6151d2b5bc31989ac455c0442ec16d00e7f59d43ff2bd8b3c` |
+| 6 | `lemma` | [le_gaussNorm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PowerSeriesGaussNormGaussNormNamespacedPublic.lean/declarations/le-gaussnorm.md) | 97 | `result-track:b879d4b789ad834b66a4c56148ecbb3801d1a7a2822fe807dfc26ce19912fde1` |
+| 7 | `lemma` | [gaussNorm_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PowerSeriesGaussNormGaussNormNamespacedPublic.lean/declarations/gaussnorm-nonneg.md) | 102 | `result-track:81cc9bbfeeb2cc82a1faaab0f3724666fed80fe3e62c34d7b6856ef98e7498e4` |
+| 8 | `lemma` | [gaussNorm_eq_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PowerSeriesGaussNormGaussNormNamespacedPublic.lean/declarations/gaussnorm-eq-zero-iff.md) | 105 | `result-track:09755f9f2d616da17baecef61c885be4f3f53d8420c03f58463633b4e581f6f6` |
+| 9 | `lemma` | [gaussNorm_add_le_max](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PowerSeriesGaussNormGaussNormNamespacedPublic.lean/declarations/gaussnorm-add-le-max.md) | 111 | `result-track:01f21d108fdbaeb755efe2691d9b882c8c2a99818a33ffe997fcb816b4c524f6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

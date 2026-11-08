@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Green.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Green.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Green.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Green.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [band](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Green.lean/declarations/band.md) | 7 | `declaration-track:5bd4804c56182320155eebca73c610191e55b434cd59aa49b7408671f9f647a5` |
-| 2 | `def` | [accepts](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Green.lean/declarations/accepts.md) | 15 | `declaration-track:e80fe608a10826aec7b18204da3a38c26fd4c79389c58ede58d2a65e5acbf3ed` |
-| 3 | `def` | [rejects](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Green.lean/declarations/rejects.md) | 17 | `declaration-track:5ce83271f0f06e36d97c9adfd53659b2f477b8d7068531e276de030996142a71` |
-| 4 | `def` | [admissibility](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Green.lean/declarations/admissibility.md) | 19 | `declaration-track:f4126a785abf9b09bb99b1e4fdfc0a15783bca4da5f9041dc2df155d6f887fb0` |
-| 5 | `theorem` | [namespace_eq](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Green.lean/declarations/namespace-eq.md) | 22 | `result-track:981370cd7864845cd4fba1e56f8182486c21cdd5e1f065eb1502f811da39d6a1` |
+| 1 | `def` | [band](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Green.lean/declarations/band.md) | 7 | `declaration-track:5bd4804c56182320155eebca73c610191e55b434cd59aa49b7408671f9f647a5` |
+| 2 | `def` | [accepts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Green.lean/declarations/accepts.md) | 15 | `declaration-track:e80fe608a10826aec7b18204da3a38c26fd4c79389c58ede58d2a65e5acbf3ed` |
+| 3 | `def` | [rejects](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Green.lean/declarations/rejects.md) | 17 | `declaration-track:5ce83271f0f06e36d97c9adfd53659b2f477b8d7068531e276de030996142a71` |
+| 4 | `def` | [admissibility](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Green.lean/declarations/admissibility.md) | 19 | `declaration-track:f4126a785abf9b09bb99b1e4fdfc0a15783bca4da5f9041dc2df155d6f887fb0` |
+| 5 | `theorem` | [namespace_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Green.lean/declarations/namespace-eq.md) | 22 | `result-track:981370cd7864845cd4fba1e56f8182486c21cdd5e1f065eb1502f811da39d6a1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

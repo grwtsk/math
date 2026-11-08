@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/IndexSpectralBridgeIndexSpectralAlignment.lean/index.md) · [Full source](../../../../FunctionalAnalysis/IndexSpectralBridgeIndexSpectralAlignment.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/IndexSpectralBridgeIndexSpectralAlignment.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/IndexSpectralBridgeIndexSpectralAlignment.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [index_spectral_alignment](../../../../FunctionalAnalysis/IndexSpectralBridgeIndexSpectralAlignment.lean/declarations/index-spectral-alignment.md) | 19 | `result-track:ff8ea26fb1590c1cc3a133d83a05713551a53f43d8240b807390f66e52bda235` |
-| 2 | `theorem` | [critical_line_from_index_spectral_alignment](../../../../FunctionalAnalysis/IndexSpectralBridgeIndexSpectralAlignment.lean/declarations/critical-line-from-index-spectral-alignment.md) | 27 | `result-track:dc06a5075a3071f80244f0a2df0448f5d256722cb221d2f3ae7af047af2e4142` |
+| 1 | `theorem` | [index_spectral_alignment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/IndexSpectralBridgeIndexSpectralAlignment.lean/declarations/index-spectral-alignment.md) | 19 | `result-track:ff8ea26fb1590c1cc3a133d83a05713551a53f43d8240b807390f66e52bda235` |
+| 2 | `theorem` | [critical_line_from_index_spectral_alignment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/IndexSpectralBridgeIndexSpectralAlignment.lean/declarations/critical-line-from-index-spectral-alignment.md) | 27 | `result-track:dc06a5075a3071f80244f0a2df0448f5d256722cb221d2f3ae7af047af2e4142` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

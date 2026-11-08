@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RigidifiedScalar.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RigidifiedScalar.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RigidifiedScalar.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RigidifiedScalar.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [LosslessNatEncoding](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RigidifiedScalar.lean/declarations/losslessnatencoding.md) | 15 | `declaration-track:f9472604b75ac6e0f3a971622b4c184aab76121b92ef99da3328c9670bb1e4d3` |
-| 2 | `theorem` | [losslessNatEncoding_injective](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RigidifiedScalar.lean/declarations/losslessnatencoding-injective.md) | 20 | `result-track:ad920b1e48c0c97e8849898f07e5c16eac77ef62f8483e5e2d0601c495fe2864` |
-| 3 | `structure` | [RigidifiedScalarInput](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RigidifiedScalar.lean/declarations/rigidifiedscalarinput.md) | 33 | `declaration-track:453b737313e948233e1ebc9856bcfb27bb587b84bcef023136f5b70ee1cd06d4` |
-| 4 | `def` | [rigidifiedScalar](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RigidifiedScalar.lean/declarations/rigidifiedscalar.md) | 40 | `declaration-track:288ad81593897bc4da2aeb9e0851ac74ae286eb07cb37c816e933d2f0a55e555` |
-| 5 | `theorem` | [rigidifiedScalar_exact](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RigidifiedScalar.lean/declarations/rigidifiedscalar-exact.md) | 45 | `result-track:63e3d58b7e5f81198df39400172f2609b32c4d2952321eac7698cb49c868c76f` |
-| 6 | `structure` | [ExactProjectionEvaluator](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RigidifiedScalar.lean/declarations/exactprojectionevaluator.md) | 56 | `declaration-track:019e3aebf2de058ec60c2523047added7c4153abb76a40e9003326e2bfaa59e3` |
-| 7 | `def` | [ExactProjectionEvaluator.decode](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RigidifiedScalar.lean/declarations/exactprojectionevaluator-decode.md) | 61 | `declaration-track:73d83bbaed8ca3c0c131ca9fb308baa15a26d51df070c3ba880218500b316284` |
-| 8 | `theorem` | [exact_projection_from_rigidifiedScalar](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RigidifiedScalar.lean/declarations/exact-projection-from-rigidifiedscalar.md) | 73 | `result-track:bda4ffe20b3b9ece3194dad2c58af46f808b3b44dc3352c8174d7bc6231b47c1` |
+| 1 | `structure` | [LosslessNatEncoding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RigidifiedScalar.lean/declarations/losslessnatencoding.md) | 15 | `declaration-track:f9472604b75ac6e0f3a971622b4c184aab76121b92ef99da3328c9670bb1e4d3` |
+| 2 | `theorem` | [losslessNatEncoding_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RigidifiedScalar.lean/declarations/losslessnatencoding-injective.md) | 20 | `result-track:ad920b1e48c0c97e8849898f07e5c16eac77ef62f8483e5e2d0601c495fe2864` |
+| 3 | `structure` | [RigidifiedScalarInput](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RigidifiedScalar.lean/declarations/rigidifiedscalarinput.md) | 33 | `declaration-track:453b737313e948233e1ebc9856bcfb27bb587b84bcef023136f5b70ee1cd06d4` |
+| 4 | `def` | [rigidifiedScalar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RigidifiedScalar.lean/declarations/rigidifiedscalar.md) | 40 | `declaration-track:288ad81593897bc4da2aeb9e0851ac74ae286eb07cb37c816e933d2f0a55e555` |
+| 5 | `theorem` | [rigidifiedScalar_exact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RigidifiedScalar.lean/declarations/rigidifiedscalar-exact.md) | 45 | `result-track:63e3d58b7e5f81198df39400172f2609b32c4d2952321eac7698cb49c868c76f` |
+| 6 | `structure` | [ExactProjectionEvaluator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RigidifiedScalar.lean/declarations/exactprojectionevaluator.md) | 56 | `declaration-track:019e3aebf2de058ec60c2523047added7c4153abb76a40e9003326e2bfaa59e3` |
+| 7 | `def` | [ExactProjectionEvaluator.decode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RigidifiedScalar.lean/declarations/exactprojectionevaluator-decode.md) | 61 | `declaration-track:73d83bbaed8ca3c0c131ca9fb308baa15a26d51df070c3ba880218500b316284` |
+| 8 | `theorem` | [exact_projection_from_rigidifiedScalar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RigidifiedScalar.lean/declarations/exact-projection-from-rigidifiedscalar.md) | 73 | `result-track:bda4ffe20b3b9ece3194dad2c58af46f808b3b44dc3352c8174d7bc6231b47c1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

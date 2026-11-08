@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/ZetaSpectralGRHBridge.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/ZetaSpectralGRHBridge.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ZetaSpectralGRHBridge.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ZetaSpectralGRHBridge.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover`](../../../../NumberTheory/DynamicSoficSpectralCover.lean/index.md) — import line 8; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.ZeroOrdinateSoficLanguageCriterion`](../../../../GroupTheoryAndGeneralizations/ZeroOrdinateSoficLanguageCriterion.lean/index.md) — import line 9; pinned internal source present.
+- [`GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DynamicSoficSpectralCover.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.ZeroOrdinateSoficLanguageCriterion`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ZeroOrdinateSoficLanguageCriterion.lean/index.md) — import line 9; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [zetaZeroProblem](../../../../GroupTheoryAndGeneralizations/ZetaSpectralGRHBridge.lean/declarations/zetazeroproblem.md) | 44 | `declaration-track:f39440d56dcb26c529b38e5692c280d1a68548b290d3ba85a6e35e67ed8dbb81` |
-| 2 | `theorem` | [zetaZeroProblem_hypothesis_iff](../../../../GroupTheoryAndGeneralizations/ZetaSpectralGRHBridge.lean/declarations/zetazeroproblem-hypothesis-iff.md) | 50 | `result-track:ad2929ddddf5e37199d1436c288a6594459ad14386c4c6a0c73f377a2ad47209` |
-| 3 | `theorem` | [zetaCriticalPlacement_implies_generalized_of_spectralCovers](../../../../GroupTheoryAndGeneralizations/ZetaSpectralGRHBridge.lean/declarations/zetacriticalplacement-implies-generalized-of-spectralcovers.md) | 58 | `result-track:c191eb084d6a67fece5ea93f9d6ee62cb96b727fab4d12e68eb941f3e34d2d33` |
-| 4 | `theorem` | [generalized_implies_zetaCriticalPlacement_of_member_specialization](../../../../GroupTheoryAndGeneralizations/ZetaSpectralGRHBridge.lean/declarations/generalized-implies-zetacriticalplacement-of-member-specialization.md) | 70 | `result-track:ab1570298a8bdd9f39c0145a7f84d1b1ce7c9498ad87e2a9b2314b87bb538da0` |
-| 5 | `theorem` | [zetaCriticalPlacement_iff_generalized_of_spectralCovers_and_specialization](../../../../GroupTheoryAndGeneralizations/ZetaSpectralGRHBridge.lean/declarations/zetacriticalplacement-iff-generalized-of-spectralcovers-and-specializati.md) | 86 | `result-track:be8c12122fbac88669c0ec4d6f21a6916046f9956837823dae2b4a8ea6fb6579` |
-| 6 | `theorem` | [zetaCriticalPlacement_transports_and_splits_ordinates](../../../../GroupTheoryAndGeneralizations/ZetaSpectralGRHBridge.lean/declarations/zetacriticalplacement-transports-and-splits-ordinates.md) | 101 | `result-track:7900f63b4706e805e2cebfedafbf47876cfffdf0f519583c224ffe43a4ee322b` |
-| 7 | `theorem` | [zetaCriticalPlacement_transports_with_rightContext_certificate](../../../../GroupTheoryAndGeneralizations/ZetaSpectralGRHBridge.lean/declarations/zetacriticalplacement-transports-with-rightcontext-certificate.md) | 129 | `result-track:b2cbe04b3f8f1d4eb1c2c282ba8ade1ed63c58f6d77b310bfb355eb9a1b61fe8` |
-| 8 | `theorem` | [zetaCriticalPlacement_transports_with_all_capacityCertificates](../../../../GroupTheoryAndGeneralizations/ZetaSpectralGRHBridge.lean/declarations/zetacriticalplacement-transports-with-all-capacitycertificates.md) | 166 | `result-track:6de32a785fbf35d7a273730d8c72f15c16ab77fba4e0f7c0539c5241810e1881` |
+| 1 | `def` | [zetaZeroProblem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ZetaSpectralGRHBridge.lean/declarations/zetazeroproblem.md) | 44 | `declaration-track:f39440d56dcb26c529b38e5692c280d1a68548b290d3ba85a6e35e67ed8dbb81` |
+| 2 | `theorem` | [zetaZeroProblem_hypothesis_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ZetaSpectralGRHBridge.lean/declarations/zetazeroproblem-hypothesis-iff.md) | 50 | `result-track:ad2929ddddf5e37199d1436c288a6594459ad14386c4c6a0c73f377a2ad47209` |
+| 3 | `theorem` | [zetaCriticalPlacement_implies_generalized_of_spectralCovers](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ZetaSpectralGRHBridge.lean/declarations/zetacriticalplacement-implies-generalized-of-spectralcovers.md) | 58 | `result-track:c191eb084d6a67fece5ea93f9d6ee62cb96b727fab4d12e68eb941f3e34d2d33` |
+| 4 | `theorem` | [generalized_implies_zetaCriticalPlacement_of_member_specialization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ZetaSpectralGRHBridge.lean/declarations/generalized-implies-zetacriticalplacement-of-member-specialization.md) | 70 | `result-track:ab1570298a8bdd9f39c0145a7f84d1b1ce7c9498ad87e2a9b2314b87bb538da0` |
+| 5 | `theorem` | [zetaCriticalPlacement_iff_generalized_of_spectralCovers_and_specialization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ZetaSpectralGRHBridge.lean/declarations/zetacriticalplacement-iff-generalized-of-spectralcovers-and-specializati.md) | 86 | `result-track:be8c12122fbac88669c0ec4d6f21a6916046f9956837823dae2b4a8ea6fb6579` |
+| 6 | `theorem` | [zetaCriticalPlacement_transports_and_splits_ordinates](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ZetaSpectralGRHBridge.lean/declarations/zetacriticalplacement-transports-and-splits-ordinates.md) | 101 | `result-track:7900f63b4706e805e2cebfedafbf47876cfffdf0f519583c224ffe43a4ee322b` |
+| 7 | `theorem` | [zetaCriticalPlacement_transports_with_rightContext_certificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ZetaSpectralGRHBridge.lean/declarations/zetacriticalplacement-transports-with-rightcontext-certificate.md) | 129 | `result-track:b2cbe04b3f8f1d4eb1c2c282ba8ade1ed63c58f6d77b310bfb355eb9a1b61fe8` |
+| 8 | `theorem` | [zetaCriticalPlacement_transports_with_all_capacityCertificates](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ZetaSpectralGRHBridge.lean/declarations/zetacriticalplacement-transports-with-all-capacitycertificates.md) | 166 | `result-track:6de32a785fbf35d7a273730d8c72f15c16ab77fba4e0f7c0539c5241810e1881` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

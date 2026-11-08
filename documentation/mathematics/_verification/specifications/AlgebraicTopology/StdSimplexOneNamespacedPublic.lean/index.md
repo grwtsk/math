@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/StdSimplexOneNamespacedPublic.lean/index.md) · [Full source](../../../../AlgebraicTopology/StdSimplexOneNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/StdSimplexOneNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/StdSimplexOneNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,19 +57,19 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [objMk₁](../../../../AlgebraicTopology/StdSimplexOneNamespacedPublic.lean/declarations/objmk.md) | 41 | `declaration-track:c90c761cf01f6d8c78e2e8aca305f45e8f6f918548528a0608ab835a55a432fd` |
-| 2 | `lemma` | [objMk₁_apply](../../../../AlgebraicTopology/StdSimplexOneNamespacedPublic.lean/declarations/objmk-apply.md) | 48 | `result-track:536185d031d82cc51a4ec58ab25c97578d27ba9873b57597beffd60f726775d3` |
-| 3 | `lemma` | [objMk₁_apply_eq_zero_iff](../../../../AlgebraicTopology/StdSimplexOneNamespacedPublic.lean/declarations/objmk-apply-eq-zero-iff.md) | 51 | `result-track:d566eb03d9da235bc06d94f48ed846212479a6e60c68afc1ff8321dc53c599df` |
-| 4 | `lemma` | [objMk₁_of_castSucc_lt](../../../../AlgebraicTopology/StdSimplexOneNamespacedPublic.lean/declarations/objmk-of-castsucc-lt.md) | 55 | `result-track:831bbf6efe8d1f37eeb661fd5a3fe49951936ce31464fb2c9475493432540554` |
-| 5 | `lemma` | [objMk₁_apply_eq_one_iff](../../../../AlgebraicTopology/StdSimplexOneNamespacedPublic.lean/declarations/objmk-apply-eq-one-iff.md) | 59 | `result-track:cb5737eb1e324c626b658680d7943696b03fa201f8a05efc005955572e552f2a` |
-| 6 | `lemma` | [objMk₁_of_le_castSucc](../../../../AlgebraicTopology/StdSimplexOneNamespacedPublic.lean/declarations/objmk-of-le-castsucc.md) | 63 | `result-track:52ca4a792a99556607007cb852daff7534434dd7ee2ac710ec5cd3967940ca1e` |
-| 7 | `lemma` | [δ_objMk₁_of_le](../../../../AlgebraicTopology/StdSimplexOneNamespacedPublic.lean/declarations/objmk-of-le-source-edition-2.md) | 67 | `result-track:377f15eeaa521450c5d3e5aab293d8493bc17540de96277cae878f69a022f328` |
-| 8 | `lemma` | [δ_objMk₁_of_lt](../../../../AlgebraicTopology/StdSimplexOneNamespacedPublic.lean/declarations/objmk-of-lt.md) | 73 | `result-track:0090650680c3e3dabe583372a2f915c9d68d4a8daeb542c1c783cdfd2e8fa26c` |
-| 9 | `lemma` | [σ_objMk₁_of_le](../../../../AlgebraicTopology/StdSimplexOneNamespacedPublic.lean/declarations/objmk-of-le.md) | 78 | `result-track:2851139e66a7b6abe57bcda0dbd1ef94c59cd71edf1785e80ff4ad56e394bf49` |
-| 10 | `lemma` | [σ_objMk₁_of_lt](../../../../AlgebraicTopology/StdSimplexOneNamespacedPublic.lean/declarations/objmk-of-lt-source-edition-2.md) | 83 | `result-track:58eaa03c11304fe0fd5e612ed885f6b514c765d11f234c177c0ad05c9ba09d05` |
-| 11 | `lemma` | [objMk₁_bijective](../../../../AlgebraicTopology/StdSimplexOneNamespacedPublic.lean/declarations/objmk-bijective.md) | 88 | `result-track:4e216f2c20791daac1f6aa066081e66bf21c96bed29698e87f8c5e10662b3533` |
-| 12 | `lemma` | [objMk₁_injective](../../../../AlgebraicTopology/StdSimplexOneNamespacedPublic.lean/declarations/objmk-injective.md) | 91 | `result-track:0946e38e40071e8f31a3c02277a87e3d95c02fe5ed64785dfa1207cfeffd94b2` |
-| 13 | `lemma` | [objMk₁_surjective](../../../../AlgebraicTopology/StdSimplexOneNamespacedPublic.lean/declarations/objmk-surjective.md) | 94 | `result-track:66852d319579adf9d5e0afdf02e2b3c715cdc6987a96bf4f75c017c4da9eede4` |
+| 1 | `def` | [objMk₁](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/StdSimplexOneNamespacedPublic.lean/declarations/objmk.md) | 41 | `declaration-track:c90c761cf01f6d8c78e2e8aca305f45e8f6f918548528a0608ab835a55a432fd` |
+| 2 | `lemma` | [objMk₁_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/StdSimplexOneNamespacedPublic.lean/declarations/objmk-apply.md) | 48 | `result-track:536185d031d82cc51a4ec58ab25c97578d27ba9873b57597beffd60f726775d3` |
+| 3 | `lemma` | [objMk₁_apply_eq_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/StdSimplexOneNamespacedPublic.lean/declarations/objmk-apply-eq-zero-iff.md) | 51 | `result-track:d566eb03d9da235bc06d94f48ed846212479a6e60c68afc1ff8321dc53c599df` |
+| 4 | `lemma` | [objMk₁_of_castSucc_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/StdSimplexOneNamespacedPublic.lean/declarations/objmk-of-castsucc-lt.md) | 55 | `result-track:831bbf6efe8d1f37eeb661fd5a3fe49951936ce31464fb2c9475493432540554` |
+| 5 | `lemma` | [objMk₁_apply_eq_one_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/StdSimplexOneNamespacedPublic.lean/declarations/objmk-apply-eq-one-iff.md) | 59 | `result-track:cb5737eb1e324c626b658680d7943696b03fa201f8a05efc005955572e552f2a` |
+| 6 | `lemma` | [objMk₁_of_le_castSucc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/StdSimplexOneNamespacedPublic.lean/declarations/objmk-of-le-castsucc.md) | 63 | `result-track:52ca4a792a99556607007cb852daff7534434dd7ee2ac710ec5cd3967940ca1e` |
+| 7 | `lemma` | [δ_objMk₁_of_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/StdSimplexOneNamespacedPublic.lean/declarations/objmk-of-le-source-edition-2.md) | 67 | `result-track:377f15eeaa521450c5d3e5aab293d8493bc17540de96277cae878f69a022f328` |
+| 8 | `lemma` | [δ_objMk₁_of_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/StdSimplexOneNamespacedPublic.lean/declarations/objmk-of-lt.md) | 73 | `result-track:0090650680c3e3dabe583372a2f915c9d68d4a8daeb542c1c783cdfd2e8fa26c` |
+| 9 | `lemma` | [σ_objMk₁_of_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/StdSimplexOneNamespacedPublic.lean/declarations/objmk-of-le.md) | 78 | `result-track:2851139e66a7b6abe57bcda0dbd1ef94c59cd71edf1785e80ff4ad56e394bf49` |
+| 10 | `lemma` | [σ_objMk₁_of_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/StdSimplexOneNamespacedPublic.lean/declarations/objmk-of-lt-source-edition-2.md) | 83 | `result-track:58eaa03c11304fe0fd5e612ed885f6b514c765d11f234c177c0ad05c9ba09d05` |
+| 11 | `lemma` | [objMk₁_bijective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/StdSimplexOneNamespacedPublic.lean/declarations/objmk-bijective.md) | 88 | `result-track:4e216f2c20791daac1f6aa066081e66bf21c96bed29698e87f8c5e10662b3533` |
+| 12 | `lemma` | [objMk₁_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/StdSimplexOneNamespacedPublic.lean/declarations/objmk-injective.md) | 91 | `result-track:0946e38e40071e8f31a3c02277a87e3d95c02fe5ed64785dfa1207cfeffd94b2` |
+| 13 | `lemma` | [objMk₁_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/StdSimplexOneNamespacedPublic.lean/declarations/objmk-surjective.md) | 94 | `result-track:66852d319579adf9d5e0afdf02e2b3c715cdc6987a96bf4f75c017c4da9eede4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

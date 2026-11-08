@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/Rolle.lean/index.md) · [Full source](../../../../RealFunctions/Rolle.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Rolle.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Rolle.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_hasDerivAt_eq_zero](../../../../RealFunctions/Rolle.lean/declarations/exists-hasderivat-eq-zero.md) | 48 | `result-track:93a60adce8faf900cd606aabfa5a5f272fa333b72b7c3bf0b3658e699ec7b42a` |
-| 2 | `theorem` | [exists_deriv_eq_zero](../../../../RealFunctions/Rolle.lean/declarations/exists-deriv-eq-zero-source-edition-2.md) | 54 | `result-track:ba0f1412767f40daffa367a112188885f89e19f61d51d61a9f8b562bab8038c1` |
-| 3 | `theorem` | [exists_hasDerivAt_eq_zero'](../../../../RealFunctions/Rolle.lean/declarations/exists-hasderivat-eq-zero-source-edition-2.md) | 62 | `result-track:fd00393cb6d86fe993c51b81fd10b06b3b55145fc22f51d88e64aa8f9c0b8e6c` |
-| 4 | `theorem` | [exists_deriv_eq_zero'](../../../../RealFunctions/Rolle.lean/declarations/exists-deriv-eq-zero.md) | 73 | `result-track:51d68af035f8939f04f7b6bd59add86146f93eb522ecc5a22a6fd3507469792b` |
+| 1 | `theorem` | [exists_hasDerivAt_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Rolle.lean/declarations/exists-hasderivat-eq-zero.md) | 48 | `result-track:93a60adce8faf900cd606aabfa5a5f272fa333b72b7c3bf0b3658e699ec7b42a` |
+| 2 | `theorem` | [exists_deriv_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Rolle.lean/declarations/exists-deriv-eq-zero-source-edition-2.md) | 54 | `result-track:ba0f1412767f40daffa367a112188885f89e19f61d51d61a9f8b562bab8038c1` |
+| 3 | `theorem` | [exists_hasDerivAt_eq_zero'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Rolle.lean/declarations/exists-hasderivat-eq-zero-source-edition-2.md) | 62 | `result-track:fd00393cb6d86fe993c51b81fd10b06b3b55145fc22f51d88e64aa8f9c0b8e6c` |
+| 4 | `theorem` | [exists_deriv_eq_zero'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Rolle.lean/declarations/exists-deriv-eq-zero.md) | 73 | `result-track:51d68af035f8939f04f7b6bd59add86146f93eb522ecc5a22a6fd3507469792b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

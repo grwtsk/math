@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/LogarithmicPrincipalPart.lean/index.md) · [Full source](../../../../GeneralTopology/LogarithmicPrincipalPart.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LogarithmicPrincipalPart.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LogarithmicPrincipalPart.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -63,10 +63,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [logDeriv_principal_part](../../../../GeneralTopology/LogarithmicPrincipalPart.lean/declarations/logderiv-principal-part.md) | 34 | `result-track:1948dacd067377e0affef5e710b27c4f157cc1a8cee562272d023e713e8ea987` |
-| 2 | `theorem` | [tendsto_scaled_neg_logDeriv_of_principal_part](../../../../GeneralTopology/LogarithmicPrincipalPart.lean/declarations/tendsto-scaled-neg-logderiv-of-principal-part.md) | 55 | `result-track:239d25ae50df42dc2513e99c09a3699c285201a52d36a27c436bf57aba173c8c` |
-| 3 | `theorem` | [tendsto_scaled_neg_logDeriv_of_factorization](../../../../GeneralTopology/LogarithmicPrincipalPart.lean/declarations/tendsto-scaled-neg-logderiv-of-factorization.md) | 72 | `result-track:be2e19da4a27e3f25efaa3a8a31decf671182d75c6368f9d234bde1777779100` |
-| 4 | `theorem` | [tendsto_scaled_weighted_neg_logDeriv](../../../../GeneralTopology/LogarithmicPrincipalPart.lean/declarations/tendsto-scaled-weighted-neg-logderiv.md) | 83 | `result-track:21c3f55d05cff053a42e836e8e361766fa81a41c3f0d3666d439bc69fb918d89` |
+| 1 | `theorem` | [logDeriv_principal_part](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LogarithmicPrincipalPart.lean/declarations/logderiv-principal-part.md) | 34 | `result-track:1948dacd067377e0affef5e710b27c4f157cc1a8cee562272d023e713e8ea987` |
+| 2 | `theorem` | [tendsto_scaled_neg_logDeriv_of_principal_part](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LogarithmicPrincipalPart.lean/declarations/tendsto-scaled-neg-logderiv-of-principal-part.md) | 55 | `result-track:239d25ae50df42dc2513e99c09a3699c285201a52d36a27c436bf57aba173c8c` |
+| 3 | `theorem` | [tendsto_scaled_neg_logDeriv_of_factorization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LogarithmicPrincipalPart.lean/declarations/tendsto-scaled-neg-logderiv-of-factorization.md) | 72 | `result-track:be2e19da4a27e3f25efaa3a8a31decf671182d75c6368f9d234bde1777779100` |
+| 4 | `theorem` | [tendsto_scaled_weighted_neg_logDeriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LogarithmicPrincipalPart.lean/declarations/tendsto-scaled-weighted-neg-logderiv.md) | 83 | `result-track:21c3f55d05cff053a42e836e8e361766fa81a41c3f0d3666d439bc69fb918d89` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

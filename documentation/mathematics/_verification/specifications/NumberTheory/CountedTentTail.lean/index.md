@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/CountedTentTail.lean/index.md) · [Full source](../../../../NumberTheory/CountedTentTail.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CountedTentTail.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CountedTentTail.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.TentKernelTail`](../../../../FunctionsOfAComplexVariable/TentKernelTail.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Chebyshev.TentSource`](../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TentSource.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.TentKernelTail`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/TentKernelTail.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.TentSource`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/TentSource.lean/index.md) — import line 5; pinned internal source present.
 - `Mathlib.Tactic.Positivity` — import line 6; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [square_tent_domain](../../../../NumberTheory/CountedTentTail.lean/declarations/square-tent-domain.md) | 34 | `result-track:cb84a09714a84aa7484b4f76475aa7bd4f52607d9d998c275d6048d42c06d943` |
-| 2 | `theorem` | [square_tent_tail_budget](../../../../NumberTheory/CountedTentTail.lean/declarations/square-tent-tail-budget.md) | 42 | `result-track:a4212841e7af4da82a3371694f2d176feed7e06dda5fd1413b379ba653058c76` |
-| 3 | `theorem` | [prime_in_square_of_counted_tent](../../../../NumberTheory/CountedTentTail.lean/declarations/prime-in-square-of-counted-tent.md) | 52 | `result-track:92f8aca27c799faf74867d81ebffaf83538720ef7a7a9dae395dcd3bf812085f` |
+| 1 | `theorem` | [square_tent_domain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CountedTentTail.lean/declarations/square-tent-domain.md) | 34 | `result-track:cb84a09714a84aa7484b4f76475aa7bd4f52607d9d998c275d6048d42c06d943` |
+| 2 | `theorem` | [square_tent_tail_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CountedTentTail.lean/declarations/square-tent-tail-budget.md) | 42 | `result-track:a4212841e7af4da82a3371694f2d176feed7e06dda5fd1413b379ba653058c76` |
+| 3 | `theorem` | [prime_in_square_of_counted_tent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CountedTentTail.lean/declarations/prime-in-square-of-counted-tent.md) | 52 | `result-track:92f8aca27c799faf74867d81ebffaf83538720ef7a7a9dae395dcd3bf812085f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

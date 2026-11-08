@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/ComplexFiniteDimensional.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/ComplexFiniteDimensional.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexFiniteDimensional.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexFiniteDimensional.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,17 +61,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../FunctionsOfAComplexVariable/ComplexFiniteDimensional.lean/declarations/instance.md) | 23 | `declaration-track:0b325c02a2e2c9a2b1edafbdcb9255c78b45080468f74326c96fef762e571d3b` |
-| 2 | `theorem` | [finrank_real_complex](../../../../FunctionsOfAComplexVariable/ComplexFiniteDimensional.lean/declarations/finrank-real-complex.md) | 27 | `result-track:b145f5eaaac49f6573668cc6024f61bbdb2638f0d7bd3203238a61f2dea53dc6` |
-| 3 | `theorem` | [rank_real_complex](../../../../FunctionsOfAComplexVariable/ComplexFiniteDimensional.lean/declarations/rank-real-complex-source-edition-2.md) | 31 | `result-track:a829463597f8ad9fb70f4cb26aa555980c4bfe6617b5058a81cc979e7715a31b` |
-| 4 | `theorem` | [rank_real_complex'.](../../../../FunctionsOfAComplexVariable/ComplexFiniteDimensional.lean/declarations/rank-real-complex.md) | 33 | `result-track:63e8fec5117ef25817208a0581d07e4dfa59cc493498a39574af18bbe69b7b59` |
-| 5 | `theorem` | [finrank_real_complex_fact](../../../../FunctionsOfAComplexVariable/ComplexFiniteDimensional.lean/declarations/finrank-real-complex-fact.md) | 38 | `result-track:8e26bdc72a3b608bef180fa553af6ebf4bf3e7add047b47de121a218579b11c4` |
-| 6 | `instance` | [(anonymous)](../../../../FunctionsOfAComplexVariable/ComplexFiniteDimensional.lean/declarations/instance-source-edition-2.md) | 43 | `declaration-track:bdebcb9fc62c970a640b44e9d903b9785d691dd5f9b129cc6f2579f75c0c907c` |
-| 7 | `theorem` | [rank_real_of_complex](../../../../FunctionsOfAComplexVariable/ComplexFiniteDimensional.lean/declarations/rank-real-of-complex.md) | 47 | `result-track:199304ba29b267790238f7c90a33b762fbcc3a756a04117d63e759200208029c` |
-| 8 | `theorem` | [finrank_real_of_complex](../../../../FunctionsOfAComplexVariable/ComplexFiniteDimensional.lean/declarations/finrank-real-of-complex.md) | 53 | `result-track:c38a60f10da0fcd5d5d264a1cef693bdb7b28bcda7db18dc25861f39437dbcc1` |
-| 9 | `lemma` | [Real.rank_rat_real](../../../../FunctionsOfAComplexVariable/ComplexFiniteDimensional.lean/declarations/real-rank-rat-real.md) | 62 | `result-track:504f8b548403e9bb4627c30d395233643ee8978a309e4525a325c9049bf93fe0` |
-| 10 | `lemma` | [Complex.rank_rat_complex](../../../../FunctionsOfAComplexVariable/ComplexFiniteDimensional.lean/declarations/complex-rank-rat-complex.md) | 68 | `result-track:8f7cd4c171f8da59a2c4cff8372eff7b310698ada0ae9b75ce1c94f8cd1e26db` |
-| 11 | `theorem` | [Complex.nonempty_linearEquiv_real](../../../../FunctionsOfAComplexVariable/ComplexFiniteDimensional.lean/declarations/complex-nonempty-linearequiv-real.md) | 74 | `result-track:fba8a4fc6c05159d3851fd30d3787e45d992f64ad5d34e484dbdc64581219448` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexFiniteDimensional.lean/declarations/instance.md) | 23 | `declaration-track:0b325c02a2e2c9a2b1edafbdcb9255c78b45080468f74326c96fef762e571d3b` |
+| 2 | `theorem` | [finrank_real_complex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexFiniteDimensional.lean/declarations/finrank-real-complex.md) | 27 | `result-track:b145f5eaaac49f6573668cc6024f61bbdb2638f0d7bd3203238a61f2dea53dc6` |
+| 3 | `theorem` | [rank_real_complex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexFiniteDimensional.lean/declarations/rank-real-complex-source-edition-2.md) | 31 | `result-track:a829463597f8ad9fb70f4cb26aa555980c4bfe6617b5058a81cc979e7715a31b` |
+| 4 | `theorem` | [rank_real_complex'.](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexFiniteDimensional.lean/declarations/rank-real-complex.md) | 33 | `result-track:63e8fec5117ef25817208a0581d07e4dfa59cc493498a39574af18bbe69b7b59` |
+| 5 | `theorem` | [finrank_real_complex_fact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexFiniteDimensional.lean/declarations/finrank-real-complex-fact.md) | 38 | `result-track:8e26bdc72a3b608bef180fa553af6ebf4bf3e7add047b47de121a218579b11c4` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexFiniteDimensional.lean/declarations/instance-source-edition-2.md) | 43 | `declaration-track:bdebcb9fc62c970a640b44e9d903b9785d691dd5f9b129cc6f2579f75c0c907c` |
+| 7 | `theorem` | [rank_real_of_complex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexFiniteDimensional.lean/declarations/rank-real-of-complex.md) | 47 | `result-track:199304ba29b267790238f7c90a33b762fbcc3a756a04117d63e759200208029c` |
+| 8 | `theorem` | [finrank_real_of_complex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexFiniteDimensional.lean/declarations/finrank-real-of-complex.md) | 53 | `result-track:c38a60f10da0fcd5d5d264a1cef693bdb7b28bcda7db18dc25861f39437dbcc1` |
+| 9 | `lemma` | [Real.rank_rat_real](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexFiniteDimensional.lean/declarations/real-rank-rat-real.md) | 62 | `result-track:504f8b548403e9bb4627c30d395233643ee8978a309e4525a325c9049bf93fe0` |
+| 10 | `lemma` | [Complex.rank_rat_complex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexFiniteDimensional.lean/declarations/complex-rank-rat-complex.md) | 68 | `result-track:8f7cd4c171f8da59a2c4cff8372eff7b310698ada0ae9b75ce1c94f8cd1e26db` |
+| 11 | `theorem` | [Complex.nonempty_linearEquiv_real](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexFiniteDimensional.lean/declarations/complex-nonempty-linearequiv-real.md) | 74 | `result-track:fba8a4fc6c05159d3851fd30d3787e45d992f64ad5d34e484dbdc64581219448` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

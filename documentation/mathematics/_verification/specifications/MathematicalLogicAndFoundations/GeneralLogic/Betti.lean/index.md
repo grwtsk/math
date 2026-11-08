@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Betti.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Betti.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Betti.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Betti.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [BettiCertificateDescriptor](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Betti.lean/declarations/betticertificatedescriptor.md) | 5 | `declaration-track:3ab28624e929989e1e2a2b14ffb626dbc4e1c709ad2653e004876cd81029cca2` |
-| 2 | `theorem` | [bettiCertificate_not_python_proof](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Betti.lean/declarations/betticertificate-not-python-proof.md) | 11 | `result-track:b9d58a77782eac2e740db249c605dda0b9618dffa17fc680c7788ceb73d48d31` |
+| 1 | `structure` | [BettiCertificateDescriptor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Betti.lean/declarations/betticertificatedescriptor.md) | 5 | `declaration-track:3ab28624e929989e1e2a2b14ffb626dbc4e1c709ad2653e004876cd81029cca2` |
+| 2 | `theorem` | [bettiCertificate_not_python_proof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Betti.lean/declarations/betticertificate-not-python-proof.md) | 11 | `result-track:b9d58a77782eac2e740db249c605dda0b9618dffa17fc680c7788ceb73d48d31` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

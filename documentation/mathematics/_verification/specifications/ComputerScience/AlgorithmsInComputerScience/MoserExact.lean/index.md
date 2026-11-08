@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/MoserExact.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/MoserExact.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MoserExact.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MoserExact.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [FinitePointColorable](../../../../../ComputerScience/AlgorithmsInComputerScience/MoserExact.lean/declarations/finitepointcolorable.md) | 6 | `declaration-track:ed11652a59cf0ea8ff211dfbf80a320ea6858996bfdf4d2dde01d87c1eca3ba2` |
-| 2 | `lemma` | [finitePointColorable_mono](../../../../../ComputerScience/AlgorithmsInComputerScience/MoserExact.lean/declarations/finitepointcolorable-mono.md) | 9 | `result-track:ab347308802fc7ab91aeaaa2fbf3634fabdd0de6c501d5e6e2d1ecae8cf24dd6` |
+| 1 | `def` | [FinitePointColorable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MoserExact.lean/declarations/finitepointcolorable.md) | 6 | `declaration-track:ed11652a59cf0ea8ff211dfbf80a320ea6858996bfdf4d2dde01d87c1eca3ba2` |
+| 2 | `lemma` | [finitePointColorable_mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MoserExact.lean/declarations/finitepointcolorable-mono.md) | 9 | `result-track:ab347308802fc7ab91aeaaa2fbf3634fabdd0de6c501d5e6e2d1ecae8cf24dd6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

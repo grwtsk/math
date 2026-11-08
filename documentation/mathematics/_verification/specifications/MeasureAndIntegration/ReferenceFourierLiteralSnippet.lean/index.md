@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ReferenceFourierLiteralSnippet.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ReferenceFourierLiteralSnippet.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReferenceFourierLiteralSnippet.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReferenceFourierLiteralSnippet.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../MeasureAndIntegration/ReferenceFourierLiteralSnippet.lean/declarations/example.md) | 6 | `declaration-track:55c9bceee3ff14e89453e794cf5d9becd9cb057dfe2bd3d922a0eb06ff199d1e` |
-| 2 | `example` | [(anonymous)](../../../../MeasureAndIntegration/ReferenceFourierLiteralSnippet.lean/declarations/example-source-edition-3.md) | 10 | `declaration-track:79327000babcafaaeb786df59fd62c59f3124e884aef758f8f1f49673dd038ca` |
-| 3 | `example` | [(anonymous)](../../../../MeasureAndIntegration/ReferenceFourierLiteralSnippet.lean/declarations/example-source-edition-4.md) | 13 | `declaration-track:d1b63417438dd23cfc0252ed9c9f0013679e51a51baf512f2e9b8f69676591f7` |
-| 4 | `example` | [(anonymous)](../../../../MeasureAndIntegration/ReferenceFourierLiteralSnippet.lean/declarations/example-source-edition-5.md) | 16 | `declaration-track:d367b95ae2bfc568f6fbedc7f38650e05b6cdc28fbae0cef4ded0063323af99b` |
-| 5 | `example` | [(anonymous)](../../../../MeasureAndIntegration/ReferenceFourierLiteralSnippet.lean/declarations/example-source-edition-2.md) | 19 | `declaration-track:5f557f34c48989ff82907373c1264d0e183b9544b62a102b06a911bd2edfaa0b` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReferenceFourierLiteralSnippet.lean/declarations/example.md) | 6 | `declaration-track:55c9bceee3ff14e89453e794cf5d9becd9cb057dfe2bd3d922a0eb06ff199d1e` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReferenceFourierLiteralSnippet.lean/declarations/example-source-edition-3.md) | 10 | `declaration-track:79327000babcafaaeb786df59fd62c59f3124e884aef758f8f1f49673dd038ca` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReferenceFourierLiteralSnippet.lean/declarations/example-source-edition-4.md) | 13 | `declaration-track:d1b63417438dd23cfc0252ed9c9f0013679e51a51baf512f2e9b8f69676591f7` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReferenceFourierLiteralSnippet.lean/declarations/example-source-edition-5.md) | 16 | `declaration-track:d367b95ae2bfc568f6fbedc7f38650e05b6cdc28fbae0cef4ded0063323af99b` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ReferenceFourierLiteralSnippet.lean/declarations/example-source-edition-2.md) | 19 | `declaration-track:5f557f34c48989ff82907373c1264d0e183b9544b62a102b06a911bd2edfaa0b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DotNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DotNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DotNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DotNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [readFile](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DotNamespaced.lean/declarations/readfile.md) | 17 | `declaration-track:e2b0b4cf769f64fc56d58988099ec70b6251adff50187c9a9d7f71c3320b15d6` |
-| 2 | `def` | [runGraphCommand](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DotNamespaced.lean/declarations/rungraphcommand.md) | 20 | `declaration-track:651082d68dde4c29de1f3c4048e2cdc62214cdbe3d61487aaa05efe78280082e` |
-| 3 | `def` | [compareOutputs](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DotNamespaced.lean/declarations/compareoutputs.md) | 26 | `declaration-track:8fe96e7076b31aa3b4783dcda46b474b0578b99cec15799e2065f47bc4c97def` |
+| 1 | `def` | [readFile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DotNamespaced.lean/declarations/readfile.md) | 17 | `declaration-track:e2b0b4cf769f64fc56d58988099ec70b6251adff50187c9a9d7f71c3320b15d6` |
+| 2 | `def` | [runGraphCommand](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DotNamespaced.lean/declarations/rungraphcommand.md) | 20 | `declaration-track:651082d68dde4c29de1f3c4048e2cdc62214cdbe3d61487aaa05efe78280082e` |
+| 3 | `def` | [compareOutputs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DotNamespaced.lean/declarations/compareoutputs.md) | 26 | `declaration-track:8fe96e7076b31aa3b4783dcda46b474b0578b99cec15799e2065f47bc4c97def` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

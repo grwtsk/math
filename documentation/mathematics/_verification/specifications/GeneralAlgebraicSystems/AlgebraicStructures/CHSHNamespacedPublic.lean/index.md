@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CHSHNamespacedPublic.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CHSHNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CHSHNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CHSHNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [IsCHSHTuple](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CHSHNamespacedPublic.lean/declarations/ischshtuple.md) | 96 | `declaration-track:9dade93e110cc9f0061872b53ad28f9b77e24f30ca90f81f69740795e00a2e9e` |
-| 2 | `theorem` | [CHSH_id](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CHSHNamespacedPublic.lean/declarations/chsh-id.md) | 112 | `result-track:c93d076a0644273aafbdda1d9c37eb0ef050e4f96fd47d48b9e5adaf9349c665` |
-| 3 | `theorem` | [CHSH_inequality_of_comm](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CHSHNamespacedPublic.lean/declarations/chsh-inequality-of-comm.md) | 123 | `result-track:8d60852329e54dd2e1df7965db61e2098cb8c7a95a3236cf6a2c9ff136d0129e` |
-| 4 | `theorem` | [sqrt_two_inv_mul_self](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CHSHNamespacedPublic.lean/declarations/sqrt-two-inv-mul-self.md) | 155 | `result-track:bd5abc678a441ab530055fb0e18cf9026aac780aa7301fda942a9ec5a588a835` |
-| 5 | `theorem` | [tsirelson_inequality](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CHSHNamespacedPublic.lean/declarations/tsirelson-inequality.md) | 172 | `result-track:eec959a9252704f345e6a1adc2310535717a216f89b5cc309dbe4f36bb525e90` |
+| 1 | `structure` | [IsCHSHTuple](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CHSHNamespacedPublic.lean/declarations/ischshtuple.md) | 96 | `declaration-track:9dade93e110cc9f0061872b53ad28f9b77e24f30ca90f81f69740795e00a2e9e` |
+| 2 | `theorem` | [CHSH_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CHSHNamespacedPublic.lean/declarations/chsh-id.md) | 112 | `result-track:c93d076a0644273aafbdda1d9c37eb0ef050e4f96fd47d48b9e5adaf9349c665` |
+| 3 | `theorem` | [CHSH_inequality_of_comm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CHSHNamespacedPublic.lean/declarations/chsh-inequality-of-comm.md) | 123 | `result-track:8d60852329e54dd2e1df7965db61e2098cb8c7a95a3236cf6a2c9ff136d0129e` |
+| 4 | `theorem` | [sqrt_two_inv_mul_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CHSHNamespacedPublic.lean/declarations/sqrt-two-inv-mul-self.md) | 155 | `result-track:bd5abc678a441ab530055fb0e18cf9026aac780aa7301fda942a9ec5a588a835` |
+| 5 | `theorem` | [tsirelson_inequality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CHSHNamespacedPublic.lean/declarations/tsirelson-inequality.md) | 172 | `result-track:eec959a9252704f345e6a1adc2310535717a216f89b5cc309dbe4f36bb525e90` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

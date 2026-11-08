@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ScaledFixedPrimeLimitNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/ScaledFixedPrimeLimitNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ScaledFixedPrimeLimitNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ScaledFixedPrimeLimitNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [fixed_kernel_continuous](../../../../GeneralTopology/ScaledFixedPrimeLimitNamespaced.lean/declarations/fixed-kernel-continuous.md) | 20 | `result-track:da2e8c6f172f9846e49c35119ea504f6926c8d85dcb82eb499a790e4b9f1d8cd` |
-| 2 | `theorem` | [log_div_radius_tendsto_zero](../../../../GeneralTopology/ScaledFixedPrimeLimitNamespaced.lean/declarations/log-div-radius-tendsto-zero.md) | 32 | `result-track:b1c108a17693a484d6f98afc055f6d80769eda5acc0b955b83881cfccc8bbdb5` |
-| 3 | `theorem` | [inverse_square_coefficient_tendsto_zero](../../../../GeneralTopology/ScaledFixedPrimeLimitNamespaced.lean/declarations/inverse-square-coefficient-tendsto-zero.md) | 38 | `result-track:523df756d9bd57ac309b8a3a4cb71399173f0ca78c539db70addc006db37dc73` |
-| 4 | `theorem` | [inverse_fourth_coefficient_tendsto_zero](../../../../GeneralTopology/ScaledFixedPrimeLimitNamespaced.lean/declarations/inverse-fourth-coefficient-tendsto-zero.md) | 44 | `result-track:3793c6337c96be4f3c7decd365f9f036f987ac5ce2ab622aca47bd028e060411` |
-| 5 | `theorem` | [source_normalization_tendsto](../../../../GeneralTopology/ScaledFixedPrimeLimitNamespaced.lean/declarations/source-normalization-tendsto.md) | 49 | `result-track:5d9da6c818e1e6ebc0eb0fe4a31459f43ef5e71b2b57131fd5b4281f3747fbed` |
-| 6 | `theorem` | [scaled_kernel_fixed_index_tendsto](../../../../GeneralTopology/ScaledFixedPrimeLimitNamespaced.lean/declarations/scaled-kernel-fixed-index-tendsto.md) | 62 | `result-track:0c2b795686bc99f53aa3e81de1904991420b638b175aa6853ad16234b752d43f` |
-| 7 | `theorem` | [prime_weight_pos](../../../../GeneralTopology/ScaledFixedPrimeLimitNamespaced.lean/declarations/prime-weight-pos.md) | 84 | `result-track:776777a49c2ed6deabdd62f4fcd0c2c8027c7f2d192dcce9c23f0bfd42f8b1fe` |
-| 8 | `theorem` | [integrated_prime_square_block_eventually_pos](../../../../GeneralTopology/ScaledFixedPrimeLimitNamespaced.lean/declarations/integrated-prime-square-block-eventually-pos.md) | 93 | `result-track:498fb1ed344145291e121dc584f89a6c559a3fe3cd13322d3a2c9e0fb5e9eefd` |
+| 1 | `theorem` | [fixed_kernel_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ScaledFixedPrimeLimitNamespaced.lean/declarations/fixed-kernel-continuous.md) | 20 | `result-track:da2e8c6f172f9846e49c35119ea504f6926c8d85dcb82eb499a790e4b9f1d8cd` |
+| 2 | `theorem` | [log_div_radius_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ScaledFixedPrimeLimitNamespaced.lean/declarations/log-div-radius-tendsto-zero.md) | 32 | `result-track:b1c108a17693a484d6f98afc055f6d80769eda5acc0b955b83881cfccc8bbdb5` |
+| 3 | `theorem` | [inverse_square_coefficient_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ScaledFixedPrimeLimitNamespaced.lean/declarations/inverse-square-coefficient-tendsto-zero.md) | 38 | `result-track:523df756d9bd57ac309b8a3a4cb71399173f0ca78c539db70addc006db37dc73` |
+| 4 | `theorem` | [inverse_fourth_coefficient_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ScaledFixedPrimeLimitNamespaced.lean/declarations/inverse-fourth-coefficient-tendsto-zero.md) | 44 | `result-track:3793c6337c96be4f3c7decd365f9f036f987ac5ce2ab622aca47bd028e060411` |
+| 5 | `theorem` | [source_normalization_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ScaledFixedPrimeLimitNamespaced.lean/declarations/source-normalization-tendsto.md) | 49 | `result-track:5d9da6c818e1e6ebc0eb0fe4a31459f43ef5e71b2b57131fd5b4281f3747fbed` |
+| 6 | `theorem` | [scaled_kernel_fixed_index_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ScaledFixedPrimeLimitNamespaced.lean/declarations/scaled-kernel-fixed-index-tendsto.md) | 62 | `result-track:0c2b795686bc99f53aa3e81de1904991420b638b175aa6853ad16234b752d43f` |
+| 7 | `theorem` | [prime_weight_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ScaledFixedPrimeLimitNamespaced.lean/declarations/prime-weight-pos.md) | 84 | `result-track:776777a49c2ed6deabdd62f4fcd0c2c8027c7f2d192dcce9c23f0bfd42f8b1fe` |
+| 8 | `theorem` | [integrated_prime_square_block_eventually_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ScaledFixedPrimeLimitNamespaced.lean/declarations/integrated-prime-square-block-eventually-pos.md) | 93 | `result-track:498fb1ed344145291e121dc584f89a6c559a3fe3cd13322d3a2c9e0fb5e9eefd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

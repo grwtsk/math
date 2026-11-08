@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetPairwise.lean/index.md) · [Full source](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetPairwise.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetPairwise.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetPairwise.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Pairwise.forall](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetPairwise.lean/declarations/pairwise-forall.md) | 20 | `result-track:0e672addd6382ad5c5d923db11f6831d82147661183820f627896f48afe7cb9e` |
+| 1 | `theorem` | [Pairwise.forall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/MultisetPairwise.lean/declarations/pairwise-forall.md) | 20 | `result-track:0e672addd6382ad5c5d923db11f6831d82147661183820f627896f48afe7cb9e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

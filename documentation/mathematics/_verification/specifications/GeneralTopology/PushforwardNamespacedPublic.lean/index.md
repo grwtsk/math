@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/PushforwardNamespacedPublic.lean/index.md) · [Full source](../../../../GeneralTopology/PushforwardNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PushforwardNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PushforwardNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [map](../../../../GeneralTopology/PushforwardNamespacedPublic.lean/declarations/map.md) | 57 | `declaration-track:e6aa48bbd33fe02018701e4fbd96d44b06b57c90e2742ef2dded2f2c863424dc` |
-| 2 | `lemma` | [map_apply](../../../../GeneralTopology/PushforwardNamespacedPublic.lean/declarations/map-apply.md) | 75 | `result-track:a5da61677fd4b30f7a0d7b13ae097da40f2c1427053031f407f55af0c31c954f` |
-| 3 | `lemma` | [support_map_subset_of_forall_mem](../../../../GeneralTopology/PushforwardNamespacedPublic.lean/declarations/support-map-subset-of-forall-mem.md) | 78 | `result-track:c50995df72e56151441ec974e591d042ebaba939e22036912bd49eab898057de` |
-| 4 | `lemma` | [map_id](../../../../GeneralTopology/PushforwardNamespacedPublic.lean/declarations/map-id.md) | 85 | `result-track:78fd50f35a992bb333b8e43c737a6eba0ad7c0fa499caee08521f57e8ed33db6` |
+| 1 | `def` | [map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PushforwardNamespacedPublic.lean/declarations/map.md) | 57 | `declaration-track:e6aa48bbd33fe02018701e4fbd96d44b06b57c90e2742ef2dded2f2c863424dc` |
+| 2 | `lemma` | [map_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PushforwardNamespacedPublic.lean/declarations/map-apply.md) | 75 | `result-track:a5da61677fd4b30f7a0d7b13ae097da40f2c1427053031f407f55af0c31c954f` |
+| 3 | `lemma` | [support_map_subset_of_forall_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PushforwardNamespacedPublic.lean/declarations/support-map-subset-of-forall-mem.md) | 78 | `result-track:c50995df72e56151441ec974e591d042ebaba939e22036912bd49eab898057de` |
+| 4 | `lemma` | [map_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PushforwardNamespacedPublic.lean/declarations/map-id.md) | 85 | `result-track:78fd50f35a992bb333b8e43c737a6eba0ad7c0fa499caee08521f57e8ed33db6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

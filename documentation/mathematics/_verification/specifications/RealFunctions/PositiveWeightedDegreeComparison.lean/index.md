@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/PositiveWeightedDegreeComparison.lean/index.md) · [Full source](../../../../RealFunctions/PositiveWeightedDegreeComparison.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PositiveWeightedDegreeComparison.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PositiveWeightedDegreeComparison.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.FiniteSums.WeightedDegreeComparison`](../../../../RealFunctions/FiniteSumsWeightedDegreeComparison.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Analysis.FiniteSums.WeightedDegreeComparison`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FiniteSumsWeightedDegreeComparison.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../RealFunctions/PositiveWeightedDegreeComparison.lean/declarations/example.md) | 5 | `declaration-track:44001e5384fd2ab9bf6c59b51dec25fdad1f1ff6293a3a1ad191f55d6aaba64f` |
-| 2 | `example` | [(anonymous)](../../../../RealFunctions/PositiveWeightedDegreeComparison.lean/declarations/example-source-edition-4.md) | 9 | `declaration-track:e30979a61ae67d46cf02607786d8253792a3ada317d00551e68c280cf87c1b7a` |
-| 3 | `example` | [(anonymous)](../../../../RealFunctions/PositiveWeightedDegreeComparison.lean/declarations/example-source-edition-3.md) | 13 | `declaration-track:6398d94a1f1d9db86d9e4b2945ceb9e255dba980dc1329507b31218fb46e4728` |
-| 4 | `example` | [(anonymous)](../../../../RealFunctions/PositiveWeightedDegreeComparison.lean/declarations/example-source-edition-2.md) | 17 | `declaration-track:520e06f5778add7ce05d0a96d7bf6c3730e93ff91513d21697fd7887c28bdc15` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PositiveWeightedDegreeComparison.lean/declarations/example.md) | 5 | `declaration-track:44001e5384fd2ab9bf6c59b51dec25fdad1f1ff6293a3a1ad191f55d6aaba64f` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PositiveWeightedDegreeComparison.lean/declarations/example-source-edition-4.md) | 9 | `declaration-track:e30979a61ae67d46cf02607786d8253792a3ada317d00551e68c280cf87c1b7a` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PositiveWeightedDegreeComparison.lean/declarations/example-source-edition-3.md) | 13 | `declaration-track:6398d94a1f1d9db86d9e4b2945ceb9e255dba980dc1329507b31218fb46e4728` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PositiveWeightedDegreeComparison.lean/declarations/example-source-edition-2.md) | 17 | `declaration-track:520e06f5778add7ce05d0a96d7bf6c3730e93ff91513d21697fd7887c28bdc15` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

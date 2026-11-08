@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/SetFamilyLYMLYMSourceEdition2.lean/index.md) · [Full source](../../../../Combinatorics/SetFamilyLYMLYMSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SetFamilyLYMLYMSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SetFamilyLYMLYMSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,18 +61,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [card_mul_le_card_shadow_mul](../../../../Combinatorics/SetFamilyLYMLYMSourceEdition2.lean/declarations/card-mul-le-card-shadow-mul.md) | 64 | `result-track:fdbc2afd139a282ce9f6802a785bbae1c446a25a620996ff097486e955b762cb` |
-| 2 | `theorem` | [card_div_choose_le_card_shadow_div_choose](../../../../Combinatorics/SetFamilyLYMLYMSourceEdition2.lean/declarations/card-div-choose-le-card-shadow-div-choose.md) | 91 | `result-track:3c77dd71ef98a456ad351d3baad1eeb5fd6b26b2bb197c7e31a07feb9fdcec82` |
-| 3 | `def` | [falling](../../../../Combinatorics/SetFamilyLYMLYMSourceEdition2.lean/declarations/falling.md) | 125 | `declaration-track:600f306496208c9821a1ec465818a528274fee1d1a9edcbb9389a01fdef65e9a` |
-| 4 | `theorem` | [mem_falling](../../../../Combinatorics/SetFamilyLYMLYMSourceEdition2.lean/declarations/mem-falling.md) | 131 | `result-track:04eb785549e712b7a568804c1bc74f73c18af3dc87bd1e0833b3698b9c69c5db` |
-| 5 | `theorem` | [sized_falling](../../../../Combinatorics/SetFamilyLYMLYMSourceEdition2.lean/declarations/sized-falling.md) | 138 | `result-track:65d31082f46fc21628073bea510b02d579cecc6923af2344911680fbf2e53307` |
-| 6 | `theorem` | [slice_subset_falling](../../../../Combinatorics/SetFamilyLYMLYMSourceEdition2.lean/declarations/slice-subset-falling.md) | 141 | `result-track:04ad9ab5c81ca9613433ab89b3bf028d1a0447d5bb674b02670f104ffeef5a31` |
-| 7 | `theorem` | [falling_zero_subset](../../../../Combinatorics/SetFamilyLYMLYMSourceEdition2.lean/declarations/falling-zero-subset.md) | 145 | `result-track:55064bcbc8bd92dd7679482f3c753f9b36c64f138deff5d5cd341152b30b6b0d` |
-| 8 | `theorem` | [slice_union_shadow_falling_succ](../../../../Combinatorics/SetFamilyLYMLYMSourceEdition2.lean/declarations/slice-union-shadow-falling-succ.md) | 149 | `result-track:687b486eb5712774710499e17165c0e9750fb2c06107c250657bfc741e4f30d6` |
-| 9 | `theorem` | [IsAntichain.disjoint_slice_shadow_falling](../../../../Combinatorics/SetFamilyLYMLYMSourceEdition2.lean/declarations/isantichain-disjoint-slice-shadow-falling.md) | 170 | `result-track:2c4cf586285b5d72840aa0a61dc7fca9c618e335e5c1796f5625aa6cc4ba0b5b` |
-| 10 | `theorem` | [le_card_falling_div_choose](../../../../Combinatorics/SetFamilyLYMLYMSourceEdition2.lean/declarations/le-card-falling-div-choose.md) | 181 | `result-track:35edd406e5f137aaa6407831fb72a0b93066c69c8958fb44cb3043083df965d7` |
-| 11 | `theorem` | [sum_card_slice_div_choose_le_one](../../../../Combinatorics/SetFamilyLYMLYMSourceEdition2.lean/declarations/sum-card-slice-div-choose-le-one.md) | 209 | `result-track:1c90e8d9e6700ff8638ea6ee292aeb6ef6b70efb5703b8483df06d41662c6a34` |
-| 12 | `theorem` | [IsAntichain.sperner](../../../../Combinatorics/SetFamilyLYMLYMSourceEdition2.lean/declarations/isantichain-sperner.md) | 229 | `result-track:6ce6762ddb2169bf403594f95fae574d6ecfcbd3494ae19a03cf22db93dc742e` |
+| 1 | `theorem` | [card_mul_le_card_shadow_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SetFamilyLYMLYMSourceEdition2.lean/declarations/card-mul-le-card-shadow-mul.md) | 64 | `result-track:fdbc2afd139a282ce9f6802a785bbae1c446a25a620996ff097486e955b762cb` |
+| 2 | `theorem` | [card_div_choose_le_card_shadow_div_choose](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SetFamilyLYMLYMSourceEdition2.lean/declarations/card-div-choose-le-card-shadow-div-choose.md) | 91 | `result-track:3c77dd71ef98a456ad351d3baad1eeb5fd6b26b2bb197c7e31a07feb9fdcec82` |
+| 3 | `def` | [falling](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SetFamilyLYMLYMSourceEdition2.lean/declarations/falling.md) | 125 | `declaration-track:600f306496208c9821a1ec465818a528274fee1d1a9edcbb9389a01fdef65e9a` |
+| 4 | `theorem` | [mem_falling](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SetFamilyLYMLYMSourceEdition2.lean/declarations/mem-falling.md) | 131 | `result-track:04eb785549e712b7a568804c1bc74f73c18af3dc87bd1e0833b3698b9c69c5db` |
+| 5 | `theorem` | [sized_falling](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SetFamilyLYMLYMSourceEdition2.lean/declarations/sized-falling.md) | 138 | `result-track:65d31082f46fc21628073bea510b02d579cecc6923af2344911680fbf2e53307` |
+| 6 | `theorem` | [slice_subset_falling](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SetFamilyLYMLYMSourceEdition2.lean/declarations/slice-subset-falling.md) | 141 | `result-track:04ad9ab5c81ca9613433ab89b3bf028d1a0447d5bb674b02670f104ffeef5a31` |
+| 7 | `theorem` | [falling_zero_subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SetFamilyLYMLYMSourceEdition2.lean/declarations/falling-zero-subset.md) | 145 | `result-track:55064bcbc8bd92dd7679482f3c753f9b36c64f138deff5d5cd341152b30b6b0d` |
+| 8 | `theorem` | [slice_union_shadow_falling_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SetFamilyLYMLYMSourceEdition2.lean/declarations/slice-union-shadow-falling-succ.md) | 149 | `result-track:687b486eb5712774710499e17165c0e9750fb2c06107c250657bfc741e4f30d6` |
+| 9 | `theorem` | [IsAntichain.disjoint_slice_shadow_falling](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SetFamilyLYMLYMSourceEdition2.lean/declarations/isantichain-disjoint-slice-shadow-falling.md) | 170 | `result-track:2c4cf586285b5d72840aa0a61dc7fca9c618e335e5c1796f5625aa6cc4ba0b5b` |
+| 10 | `theorem` | [le_card_falling_div_choose](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SetFamilyLYMLYMSourceEdition2.lean/declarations/le-card-falling-div-choose.md) | 181 | `result-track:35edd406e5f137aaa6407831fb72a0b93066c69c8958fb44cb3043083df965d7` |
+| 11 | `theorem` | [sum_card_slice_div_choose_le_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SetFamilyLYMLYMSourceEdition2.lean/declarations/sum-card-slice-div-choose-le-one.md) | 209 | `result-track:1c90e8d9e6700ff8638ea6ee292aeb6ef6b70efb5703b8483df06d41662c6a34` |
+| 12 | `theorem` | [IsAntichain.sperner](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SetFamilyLYMLYMSourceEdition2.lean/declarations/isantichain-sperner.md) | 229 | `result-track:6ce6762ddb2169bf403594f95fae574d6ecfcbd3494ae19a03cf22db93dc742e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/BezoutNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/BezoutNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BezoutNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BezoutNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [iff_span_pair_isPrincipal](../../../../CommutativeAlgebra/BezoutNamespaced.lean/declarations/iff-span-pair-isprincipal.md) | 36 | `result-track:4ce68c6fc267d481cf5868f8a428acaaa5e04055d0f758179391256d02425524` |
-| 2 | `theorem` | [Bezout Namespaced](../../../../CommutativeAlgebra/BezoutNamespaced.lean/declarations/isbezout.md) | 47 | `result-track:14c314d03b1396fa29d95d015cc22a204b3fb2cc6923d40abd0e881c2bbb5415` |
-| 3 | `theorem` | [TFAE](../../../../CommutativeAlgebra/BezoutNamespaced.lean/declarations/tfae.md) | 57 | `result-track:593498274299e1cb01ffdb2f86ffd0ddb52f522e6f6e83c59b3240aa072a8a2b` |
+| 1 | `theorem` | [iff_span_pair_isPrincipal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BezoutNamespaced.lean/declarations/iff-span-pair-isprincipal.md) | 36 | `result-track:4ce68c6fc267d481cf5868f8a428acaaa5e04055d0f758179391256d02425524` |
+| 2 | `theorem` | [Bezout Namespaced](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BezoutNamespaced.lean/declarations/isbezout.md) | 47 | `result-track:14c314d03b1396fa29d95d015cc22a204b3fb2cc6923d40abd0e881c2bbb5415` |
+| 3 | `theorem` | [TFAE](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BezoutNamespaced.lean/declarations/tfae.md) | 57 | `result-track:593498274299e1cb01ffdb2f86ffd0ddb52f522e6f6e83c59b3240aa072a8a2b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularGeometricBlock.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularGeometricBlock.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularGeometricBlock.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularGeometricBlock.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeSymmetricTriangularKernelDecay`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeSymmetricTriangularKernelDecay.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeSymmetricTriangularKernelDecay`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeSymmetricTriangularKernelDecay.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Algebra.Field.GeomSum` — import line 4; external provider; requires a separately pinned dependency.
 - `Mathlib.Analysis.Complex.Exponential` — import line 5; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 6; external provider; requires a separately pinned dependency.
@@ -60,13 +60,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [triangularGeometricRatio](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularGeometricBlock.lean/declarations/triangulargeometricratio.md) | 15 | `declaration-track:9c5c9298429f2a6e2a8782a4b580bb80148cc557cad4d0e521242a71c2adb854` |
-| 2 | `def` | [triangularGeometricBlock](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularGeometricBlock.lean/declarations/triangulargeometricblock.md) | 19 | `declaration-track:f695edbfb091583d59c6735f42a712a3126729275b7adf9ba03d9399e1d84667` |
-| 3 | `theorem` | [triangularGeometricBlock_eq_exp_sum](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularGeometricBlock.lean/declarations/triangulargeometricblock-eq-exp-sum.md) | 23 | `result-track:959e88d881ec0f099cd74085fe164ca81c5d8ec835ceb83360457c4425d4a958` |
-| 4 | `theorem` | [triangularGeometricBlock_eq_geom_ratio](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularGeometricBlock.lean/declarations/triangulargeometricblock-eq-geom-ratio.md) | 39 | `result-track:0b7e42c3f04e96066257cb37c69bbfa9b199260bb726197b8c1bef6cfee082d2` |
-| 5 | `def` | [SymmetricTriangularKernelAutocorrelationClaim](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularGeometricBlock.lean/declarations/symmetrictriangularkernelautocorrelationclaim.md) | 50 | `declaration-track:3b04d84195597165e2375fa318094c29d98cb3a6b63334f5c3a2814ebc144e77` |
-| 6 | `def` | [TriangularGeometricBlockSineNormClaim](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularGeometricBlock.lean/declarations/triangulargeometricblocksinenormclaim.md) | 59 | `declaration-track:69f57333b0a15dd02140e1ef077ffdedf22e59dcd514d569710061983b4a176f` |
-| 7 | `theorem` | [autocorrelation_and_sineNorm_to_closedForm](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularGeometricBlock.lean/declarations/autocorrelation-and-sinenorm-to-closedform.md) | 70 | `result-track:0353f63e69ee0d83d52f349a91918dccdfa3a541b59b39f715dc86776a4ebe25` |
+| 1 | `def` | [triangularGeometricRatio](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularGeometricBlock.lean/declarations/triangulargeometricratio.md) | 15 | `declaration-track:9c5c9298429f2a6e2a8782a4b580bb80148cc557cad4d0e521242a71c2adb854` |
+| 2 | `def` | [triangularGeometricBlock](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularGeometricBlock.lean/declarations/triangulargeometricblock.md) | 19 | `declaration-track:f695edbfb091583d59c6735f42a712a3126729275b7adf9ba03d9399e1d84667` |
+| 3 | `theorem` | [triangularGeometricBlock_eq_exp_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularGeometricBlock.lean/declarations/triangulargeometricblock-eq-exp-sum.md) | 23 | `result-track:959e88d881ec0f099cd74085fe164ca81c5d8ec835ceb83360457c4425d4a958` |
+| 4 | `theorem` | [triangularGeometricBlock_eq_geom_ratio](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularGeometricBlock.lean/declarations/triangulargeometricblock-eq-geom-ratio.md) | 39 | `result-track:0b7e42c3f04e96066257cb37c69bbfa9b199260bb726197b8c1bef6cfee082d2` |
+| 5 | `def` | [SymmetricTriangularKernelAutocorrelationClaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularGeometricBlock.lean/declarations/symmetrictriangularkernelautocorrelationclaim.md) | 50 | `declaration-track:3b04d84195597165e2375fa318094c29d98cb3a6b63334f5c3a2814ebc144e77` |
+| 6 | `def` | [TriangularGeometricBlockSineNormClaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularGeometricBlock.lean/declarations/triangulargeometricblocksinenormclaim.md) | 59 | `declaration-track:69f57333b0a15dd02140e1ef077ffdedf22e59dcd514d569710061983b4a176f` |
+| 7 | `theorem` | [autocorrelation_and_sineNorm_to_closedForm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularGeometricBlock.lean/declarations/autocorrelation-and-sinenorm-to-closedform.md) | 70 | `result-track:0353f63e69ee0d83d52f349a91918dccdfa3a541b59b39f715dc86776a4ebe25` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

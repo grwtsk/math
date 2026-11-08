@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/CalculusAffineMapNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/CalculusAffineMapNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CalculusAffineMapNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CalculusAffineMapNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [contDiff](../../../../RealFunctions/CalculusAffineMapNamespaced.lean/declarations/contdiff.md) | 40 | `result-track:abdf424f07b05a55924e6926472ad0cd681e61e5f645b9beca775d101e545657` |
+| 1 | `theorem` | [contDiff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CalculusAffineMapNamespaced.lean/declarations/contdiff.md) | 40 | `result-track:abdf424f07b05a55924e6926472ad0cd681e61e5f645b9beca775d101e545657` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

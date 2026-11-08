@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/Extrema.lean/index.md) · [Full source](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/Extrema.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/Extrema.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/Extrema.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [IsMinOn.of_isLocalMinOn_of_convexOn_Icc](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/Extrema.lean/declarations/isminon-of-islocalminon-of-convexon-icc.md) | 27 | `result-track:ef14b96b66de99241891c818b3b08e25cbf51c6f384c7f020737c90809143e8d` |
-| 2 | `theorem` | [IsMinOn.of_isLocalMinOn_of_convexOn](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/Extrema.lean/declarations/isminon-of-islocalminon-of-convexon.md) | 49 | `result-track:20eb6632dc3cdcb854d5133052a4df9d1dff6abcf62307bdc70b87862fe106d3` |
-| 3 | `theorem` | [IsMaxOn.of_isLocalMaxOn_of_concaveOn](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/Extrema.lean/declarations/ismaxon-of-islocalmaxon-of-concaveon.md) | 67 | `result-track:500279b3f8e4d49193bbf76420630a5b2605b0cb2a5d7529740339cc6b70eae0` |
-| 4 | `theorem` | [IsMinOn.of_isLocalMin_of_convex_univ](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/Extrema.lean/declarations/isminon-of-islocalmin-of-convex-univ.md) | 72 | `result-track:250bda7fa0212defb9c8c5c092bce6747c8529a755e15633d20800daade57666` |
-| 5 | `theorem` | [IsMaxOn.of_isLocalMax_of_convex_univ](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/Extrema.lean/declarations/ismaxon-of-islocalmax-of-convex-univ.md) | 77 | `result-track:a4bc17bfc44eb49e2dcbb7f8c014a3a8dc97de0ffd4098b4e50f5d27fd2170f3` |
+| 1 | `theorem` | [IsMinOn.of_isLocalMinOn_of_convexOn_Icc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/Extrema.lean/declarations/isminon-of-islocalminon-of-convexon-icc.md) | 27 | `result-track:ef14b96b66de99241891c818b3b08e25cbf51c6f384c7f020737c90809143e8d` |
+| 2 | `theorem` | [IsMinOn.of_isLocalMinOn_of_convexOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/Extrema.lean/declarations/isminon-of-islocalminon-of-convexon.md) | 49 | `result-track:20eb6632dc3cdcb854d5133052a4df9d1dff6abcf62307bdc70b87862fe106d3` |
+| 3 | `theorem` | [IsMaxOn.of_isLocalMaxOn_of_concaveOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/Extrema.lean/declarations/ismaxon-of-islocalmaxon-of-concaveon.md) | 67 | `result-track:500279b3f8e4d49193bbf76420630a5b2605b0cb2a5d7529740339cc6b70eae0` |
+| 4 | `theorem` | [IsMinOn.of_isLocalMin_of_convex_univ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/Extrema.lean/declarations/isminon-of-islocalmin-of-convex-univ.md) | 72 | `result-track:250bda7fa0212defb9c8c5c092bce6747c8529a755e15633d20800daade57666` |
+| 5 | `theorem` | [IsMaxOn.of_isLocalMax_of_convex_univ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/Extrema.lean/declarations/ismaxon-of-islocalmax-of-convex-univ.md) | 77 | `result-track:a4bc17bfc44eb49e2dcbb7f8c014a3a8dc97de0ffd4098b4e50f5d27fd2170f3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

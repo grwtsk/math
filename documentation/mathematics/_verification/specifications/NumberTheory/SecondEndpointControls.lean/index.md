@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/SecondEndpointControls.lean/index.md) · [Full source](../../../../NumberTheory/SecondEndpointControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SecondEndpointControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SecondEndpointControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.ConcreteNewtonSecondEndpoint`](../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonSecondEndpoint.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.ConcreteNewtonSecondEndpoint`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ConcreteNewtonSecondEndpoint.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,17 +57,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [nonzero_log_data](../../../../NumberTheory/SecondEndpointControls.lean/declarations/nonzero-log-data.md) | 17 | `result-track:4f1e3ecfaa7344e3e54184a8d000b6eaa5446711b42bfbc71f9aa0f077ca022b` |
-| 2 | `theorem` | [both_argument_components_negative](../../../../NumberTheory/SecondEndpointControls.lean/declarations/both-argument-components-negative.md) | 20 | `result-track:ed13ec0fe19428bcb11812bb5250f832f70d48326131c50991be3b274b1bbb35` |
-| 3 | `theorem` | [initial_error_not_base_one](../../../../NumberTheory/SecondEndpointControls.lean/declarations/initial-error-not-base-one.md) | 24 | `result-track:588ea2c7130c68a79814e10461f905d664d30b7bd7cc1eb3d96c73ce6ce5ca42` |
-| 4 | `theorem` | [initial_error_two_rejected](../../../../NumberTheory/SecondEndpointControls.lean/declarations/initial-error-two-rejected.md) | 28 | `result-track:94b1676811a0cb1a2c22d549ddd3792217f7706ac7bbc8f75d9a0625d5801426` |
-| 5 | `theorem` | [intermediate_real_mutation_rejected](../../../../NumberTheory/SecondEndpointControls.lean/declarations/intermediate-real-mutation-rejected.md) | 37 | `result-track:5e2f76a542a79a5abf46184ed834940249d87e5c4930b68c4504f498c5c0b748` |
-| 6 | `theorem` | [intermediate_imag_mutation_rejected](../../../../NumberTheory/SecondEndpointControls.lean/declarations/intermediate-imag-mutation-rejected.md) | 43 | `result-track:c05c3eb43c9578a0880b32d9961fd500592907c14ee5566de4c43cfdfcaeaa25` |
-| 7 | `theorem` | [intermediate_error_mutation_rejected](../../../../NumberTheory/SecondEndpointControls.lean/declarations/intermediate-error-mutation-rejected.md) | 49 | `result-track:a696a5787512e01b705d28effc648331cceb238dd196270cd33bee6f0c340955` |
-| 8 | `theorem` | [output_error_retained](../../../../NumberTheory/SecondEndpointControls.lean/declarations/output-error-retained.md) | 55 | `result-track:aa296a81b6b7c606a4152a593a7a790b86e7bdfdaae523771f8f4b5834e16ac2` |
-| 9 | `theorem` | [base_one_cannot_replace_base_two](../../../../NumberTheory/SecondEndpointControls.lean/declarations/base-one-cannot-replace-base-two.md) | 59 | `result-track:b4774962f1b6821012ceda7b2714e60cb4f2fe47d6327709e949f9b965a1e711` |
-| 10 | `theorem` | [smaller_output_error_rejected](../../../../NumberTheory/SecondEndpointControls.lean/declarations/smaller-output-error-rejected.md) | 65 | `result-track:b67ed89269550a0103f371f5299ac0110ba7e5139f3d24a82270b98fef79ad6e` |
-| 11 | `theorem` | [third_endpoint_remains](../../../../NumberTheory/SecondEndpointControls.lean/declarations/third-endpoint-remains.md) | 80 | `result-track:176df973b0a0b34ae24b807757d19a8163345ad79628ea48c0a5f3454a316354` |
+| 1 | `theorem` | [nonzero_log_data](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SecondEndpointControls.lean/declarations/nonzero-log-data.md) | 17 | `result-track:4f1e3ecfaa7344e3e54184a8d000b6eaa5446711b42bfbc71f9aa0f077ca022b` |
+| 2 | `theorem` | [both_argument_components_negative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SecondEndpointControls.lean/declarations/both-argument-components-negative.md) | 20 | `result-track:ed13ec0fe19428bcb11812bb5250f832f70d48326131c50991be3b274b1bbb35` |
+| 3 | `theorem` | [initial_error_not_base_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SecondEndpointControls.lean/declarations/initial-error-not-base-one.md) | 24 | `result-track:588ea2c7130c68a79814e10461f905d664d30b7bd7cc1eb3d96c73ce6ce5ca42` |
+| 4 | `theorem` | [initial_error_two_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SecondEndpointControls.lean/declarations/initial-error-two-rejected.md) | 28 | `result-track:94b1676811a0cb1a2c22d549ddd3792217f7706ac7bbc8f75d9a0625d5801426` |
+| 5 | `theorem` | [intermediate_real_mutation_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SecondEndpointControls.lean/declarations/intermediate-real-mutation-rejected.md) | 37 | `result-track:5e2f76a542a79a5abf46184ed834940249d87e5c4930b68c4504f498c5c0b748` |
+| 6 | `theorem` | [intermediate_imag_mutation_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SecondEndpointControls.lean/declarations/intermediate-imag-mutation-rejected.md) | 43 | `result-track:c05c3eb43c9578a0880b32d9961fd500592907c14ee5566de4c43cfdfcaeaa25` |
+| 7 | `theorem` | [intermediate_error_mutation_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SecondEndpointControls.lean/declarations/intermediate-error-mutation-rejected.md) | 49 | `result-track:a696a5787512e01b705d28effc648331cceb238dd196270cd33bee6f0c340955` |
+| 8 | `theorem` | [output_error_retained](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SecondEndpointControls.lean/declarations/output-error-retained.md) | 55 | `result-track:aa296a81b6b7c606a4152a593a7a790b86e7bdfdaae523771f8f4b5834e16ac2` |
+| 9 | `theorem` | [base_one_cannot_replace_base_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SecondEndpointControls.lean/declarations/base-one-cannot-replace-base-two.md) | 59 | `result-track:b4774962f1b6821012ceda7b2714e60cb4f2fe47d6327709e949f9b965a1e711` |
+| 10 | `theorem` | [smaller_output_error_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SecondEndpointControls.lean/declarations/smaller-output-error-rejected.md) | 65 | `result-track:b67ed89269550a0103f371f5299ac0110ba7e5139f3d24a82270b98fef79ad6e` |
+| 11 | `theorem` | [third_endpoint_remains](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SecondEndpointControls.lean/declarations/third-endpoint-remains.md) | 80 | `result-track:176df973b0a0b34ae24b807757d19a8163345ad79628ea48c0a5f3454a316354` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualEdgeComplementCancellationSourceEdition2.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualEdgeComplementCancellationSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualEdgeComplementCancellationSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualEdgeComplementCancellationSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actualNegativeEdgeComplement_scaled_eventually_positive](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualEdgeComplementCancellationSourceEdition2.lean/declarations/actualnegativeedgecomplement-scaled-eventually-positive.md) | 21 | `result-track:bdc9b9b9bfa29f236c4bbdf4c9b54bb26299b99e4ee67ab4782e79e0e6a0df61` |
-| 2 | `theorem` | [actualNegativeEdgeComplement_eventually_positive_growth](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualEdgeComplementCancellationSourceEdition2.lean/declarations/actualnegativeedgecomplement-eventually-positive-growth.md) | 46 | `result-track:5465228fec85d5b84a3147c66399057ae80b64bd5379ab76fae9eb39fd652770` |
-| 3 | `theorem` | [actualNegativeEdgeComplement_tendsto_atTop](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualEdgeComplementCancellationSourceEdition2.lean/declarations/actualnegativeedgecomplement-tendsto-attop.md) | 62 | `result-track:37e8e2c012cee6048368d77a8b2225b65873f58c3275eb4e7503ed1dfeb330a3` |
+| 1 | `theorem` | [actualNegativeEdgeComplement_scaled_eventually_positive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualEdgeComplementCancellationSourceEdition2.lean/declarations/actualnegativeedgecomplement-scaled-eventually-positive.md) | 21 | `result-track:bdc9b9b9bfa29f236c4bbdf4c9b54bb26299b99e4ee67ab4782e79e0e6a0df61` |
+| 2 | `theorem` | [actualNegativeEdgeComplement_eventually_positive_growth](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualEdgeComplementCancellationSourceEdition2.lean/declarations/actualnegativeedgecomplement-eventually-positive-growth.md) | 46 | `result-track:5465228fec85d5b84a3147c66399057ae80b64bd5379ab76fae9eb39fd652770` |
+| 3 | `theorem` | [actualNegativeEdgeComplement_tendsto_atTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualEdgeComplementCancellationSourceEdition2.lean/declarations/actualnegativeedgecomplement-tendsto-attop.md) | 62 | `result-track:37e8e2c012cee6048368d77a8b2225b65873f58c3275eb4e7503ed1dfeb330a3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

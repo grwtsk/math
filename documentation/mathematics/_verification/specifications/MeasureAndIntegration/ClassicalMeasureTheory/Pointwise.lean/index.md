@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/Pointwise.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/Pointwise.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/Pointwise.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/Pointwise.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [MeasurableSet.const_smul](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/Pointwise.lean/declarations/measurableset-const-smul-source-edition-2.md) | 22 | `result-track:dc800c927515b63bc0a00f78be31e7b842200a46539dbd8a4982d2ef60681e97` |
-| 2 | `theorem` | [MeasurableSet.const_smul_of_ne_zero](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/Pointwise.lean/declarations/measurableset-const-smul-of-ne-zero.md) | 28 | `result-track:ffac58013a8098e81f0750f6a169b3c7713b578f44dd6982860bc916a29de968` |
-| 3 | `theorem` | [MeasurableSet.const_smul₀](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/Pointwise.lean/declarations/measurableset-const-smul.md) | 34 | `result-track:2f1628654d1f440347dfcae69988668d416ce85c0f5cf06007a6808d9a518234` |
+| 1 | `theorem` | [MeasurableSet.const_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/Pointwise.lean/declarations/measurableset-const-smul-source-edition-2.md) | 22 | `result-track:dc800c927515b63bc0a00f78be31e7b842200a46539dbd8a4982d2ef60681e97` |
+| 2 | `theorem` | [MeasurableSet.const_smul_of_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/Pointwise.lean/declarations/measurableset-const-smul-of-ne-zero.md) | 28 | `result-track:ffac58013a8098e81f0750f6a169b3c7713b578f44dd6982860bc916a29de968` |
+| 3 | `theorem` | [MeasurableSet.const_smul₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/Pointwise.lean/declarations/measurableset-const-smul.md) | 34 | `result-track:2f1628654d1f440347dfcae69988668d416ce85c0f5cf06007a6808d9a518234` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SelectedPrimeChainBounds.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SelectedPrimeChainBounds.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SelectedPrimeChainBounds.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SelectedPrimeChainBounds.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.AsymptoticAnalysis.DisjointPrimeChainBounds`](../../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/DisjointPrimeChainBoundsHistoricalSourceEdition2.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.NumberTheory.Moebius.PolynomialEnergyHolomorphy`](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PolynomialEnergyHolomorphyHistoricalSourceEdition2.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.Analysis.AsymptoticAnalysis.DisjointPrimeChainBounds`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/DisjointPrimeChainBoundsHistoricalSourceEdition2.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.PolynomialEnergyHolomorphy`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PolynomialEnergyHolomorphyHistoricalSourceEdition2.lean/index.md) — import line 2; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Construction](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SelectedPrimeChainBounds.lean/declarations/construction.md) | 13 | `declaration-track:7f9590e3d51dbcff5f56d2703b411c178b5d6d57c8aaca0c8db1f87231e52876` |
-| 2 | `theorem` | [universal_with_complete_chains_implies_replacement](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SelectedPrimeChainBounds.lean/declarations/universal-with-complete-chains-implies-replacement.md) | 22 | `result-track:4d4264c91a04d321f7776f62bab0d24a86430277c6cc2df59b9df1a5bdeb9bda` |
-| 3 | `def` | [completion](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SelectedPrimeChainBounds.lean/declarations/completion.md) | 35 | `declaration-track:1cdea9a53cbd2ccffa8c3cecbc4b880b710ee347fced2fedee2daa45a3a17a93` |
-| 4 | `theorem` | [construction_implies_literal_P04](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SelectedPrimeChainBounds.lean/declarations/construction-implies-literal-p04.md) | 58 | `result-track:82100e782b9168648ab2d7009fa800044e393e88c8e521a166531546d0e8b6f5` |
-| 5 | `theorem` | [construction_implies_literal_RH](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SelectedPrimeChainBounds.lean/declarations/construction-implies-literal-rh.md) | 78 | `result-track:211460ceaa142622c8831d1509de0768f05f6382e97faafb198d084c6ac51643` |
+| 1 | `def` | [Construction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SelectedPrimeChainBounds.lean/declarations/construction.md) | 13 | `declaration-track:7f9590e3d51dbcff5f56d2703b411c178b5d6d57c8aaca0c8db1f87231e52876` |
+| 2 | `theorem` | [universal_with_complete_chains_implies_replacement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SelectedPrimeChainBounds.lean/declarations/universal-with-complete-chains-implies-replacement.md) | 22 | `result-track:4d4264c91a04d321f7776f62bab0d24a86430277c6cc2df59b9df1a5bdeb9bda` |
+| 3 | `def` | [completion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SelectedPrimeChainBounds.lean/declarations/completion.md) | 35 | `declaration-track:1cdea9a53cbd2ccffa8c3cecbc4b880b710ee347fced2fedee2daa45a3a17a93` |
+| 4 | `theorem` | [construction_implies_literal_P04](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SelectedPrimeChainBounds.lean/declarations/construction-implies-literal-p04.md) | 58 | `result-track:82100e782b9168648ab2d7009fa800044e393e88c8e521a166531546d0e8b6f5` |
+| 5 | `theorem` | [construction_implies_literal_RH](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SelectedPrimeChainBounds.lean/declarations/construction-implies-literal-rh.md) | 78 | `result-track:211460ceaa142622c8831d1509de0768f05f6382e97faafb198d084c6ac51643` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SlotPaddingNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SlotPaddingNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SlotPaddingNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SlotPaddingNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [padBitMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SlotPaddingNamespaced.lean/declarations/padbitmatrix.md) | 18 | `declaration-track:8fa66a02c70a236c393ad157e670586b6d8bcb8a10f70019837c5a9b48a3c95f` |
-| 2 | `theorem` | [padBitMatrix_on_image](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SlotPaddingNamespaced.lean/declarations/padbitmatrix-on-image.md) | 24 | `result-track:91639fc0cb831ed459d7755d9e97e34d2fd265fb73466c72b2714ca6db1c6d02` |
+| 1 | `def` | [padBitMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SlotPaddingNamespaced.lean/declarations/padbitmatrix.md) | 18 | `declaration-track:8fa66a02c70a236c393ad157e670586b6d8bcb8a10f70019837c5a9b48a3c95f` |
+| 2 | `theorem` | [padBitMatrix_on_image](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SlotPaddingNamespaced.lean/declarations/padbitmatrix-on-image.md) | 24 | `result-track:91639fc0cb831ed459d7755d9e97e34d2fd265fb73466c72b2714ca6db1c6d02` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/PartitionOfUnityNamespacedPublic.lean/index.md) · [Full source](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/PartitionOfUnityNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/PartitionOfUnityNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/PartitionOfUnityNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [PartitionOfUnity.finsum_smul_mem_convex](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/PartitionOfUnityNamespacedPublic.lean/declarations/partitionofunity-finsum-smul-mem-convex.md) | 46 | `result-track:90df57d76287598cf8b6ef69f2bc7610ad9a36abc5db06c6a7b52cac9efd2c3f` |
-| 2 | `theorem` | [exists_continuous_forall_mem_convex_of_local](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/PartitionOfUnityNamespacedPublic.lean/declarations/exists-continuous-forall-mem-convex-of-local.md) | 60 | `result-track:7bf2c9e4784686b1b9dfae74d9581038fed7997c40b6dc0942bc015092fe9e81` |
-| 3 | `theorem` | [exists_continuous_forall_mem_convex_of_local_const](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/PartitionOfUnityNamespacedPublic.lean/declarations/exists-continuous-forall-mem-convex-of-local-const.md) | 76 | `result-track:f919a102a7b492821d2e066ee9b0ce71b714a7be6afdfd9d40de8ab86f07ca62` |
+| 1 | `theorem` | [PartitionOfUnity.finsum_smul_mem_convex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/PartitionOfUnityNamespacedPublic.lean/declarations/partitionofunity-finsum-smul-mem-convex.md) | 46 | `result-track:90df57d76287598cf8b6ef69f2bc7610ad9a36abc5db06c6a7b52cac9efd2c3f` |
+| 2 | `theorem` | [exists_continuous_forall_mem_convex_of_local](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/PartitionOfUnityNamespacedPublic.lean/declarations/exists-continuous-forall-mem-convex-of-local.md) | 60 | `result-track:7bf2c9e4784686b1b9dfae74d9581038fed7997c40b6dc0942bc015092fe9e81` |
+| 3 | `theorem` | [exists_continuous_forall_mem_convex_of_local_const](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/PartitionOfUnityNamespacedPublic.lean/declarations/exists-continuous-forall-mem-convex-of-local-const.md) | 76 | `result-track:f919a102a7b492821d2e066ee9b0ce71b714a7be6afdfd9d40de8ab86f07ca62` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

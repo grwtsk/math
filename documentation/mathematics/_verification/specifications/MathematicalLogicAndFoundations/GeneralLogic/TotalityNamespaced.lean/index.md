@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TotalityNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TotalityNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TotalityNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TotalityNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ArtifactTotal](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TotalityNamespaced.lean/declarations/artifacttotal.md) | 22 | `declaration-track:bcd6d08601c84df9040a167a2a1e4968d20b9268397b7d364b8d852c8c556ad6` |
-| 2 | `structure` | [TotalityEnvelope](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TotalityNamespaced.lean/declarations/totalityenvelope.md) | 31 | `declaration-track:68f8d4b448347ee471339734b44ac0d34c9806b7f07624282699e924a2023df9` |
-| 3 | `theorem` | [artifact_total](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TotalityNamespaced.lean/declarations/artifact-total.md) | 46 | `result-track:ff2e9cfa42f8bc82916855b7b04e27067514d0d2478acef61c9332a2c03785e0` |
-| 4 | `theorem` | [artifact_semantics_hold](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TotalityNamespaced.lean/declarations/artifact-semantics-hold.md) | 53 | `result-track:36df1221f5f168c098b15833e1ef1e796bab74191bc12eb8fd5f3f7c5b2f1d63` |
-| 5 | `theorem` | [incomplete_level_visible](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TotalityNamespaced.lean/declarations/incomplete-level-visible.md) | 59 | `result-track:83d720da2fc24584b4520141358b6340524c719cb447f38d8a0ab85e0a8900d7` |
-| 6 | `theorem` | [source_omission_rejected](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TotalityNamespaced.lean/declarations/source-omission-rejected.md) | 69 | `result-track:7274e33483f1c9f1feff2233064612369d96abc4047a782c11145e625e6f1759` |
+| 1 | `def` | [ArtifactTotal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TotalityNamespaced.lean/declarations/artifacttotal.md) | 22 | `declaration-track:bcd6d08601c84df9040a167a2a1e4968d20b9268397b7d364b8d852c8c556ad6` |
+| 2 | `structure` | [TotalityEnvelope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TotalityNamespaced.lean/declarations/totalityenvelope.md) | 31 | `declaration-track:68f8d4b448347ee471339734b44ac0d34c9806b7f07624282699e924a2023df9` |
+| 3 | `theorem` | [artifact_total](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TotalityNamespaced.lean/declarations/artifact-total.md) | 46 | `result-track:ff2e9cfa42f8bc82916855b7b04e27067514d0d2478acef61c9332a2c03785e0` |
+| 4 | `theorem` | [artifact_semantics_hold](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TotalityNamespaced.lean/declarations/artifact-semantics-hold.md) | 53 | `result-track:36df1221f5f168c098b15833e1ef1e796bab74191bc12eb8fd5f3f7c5b2f1d63` |
+| 5 | `theorem` | [incomplete_level_visible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TotalityNamespaced.lean/declarations/incomplete-level-visible.md) | 59 | `result-track:83d720da2fc24584b4520141358b6340524c719cb447f38d8a0ab85e0a8900d7` |
+| 6 | `theorem` | [source_omission_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TotalityNamespaced.lean/declarations/source-omission-rejected.md) | 69 | `result-track:7274e33483f1c9f1feff2233064612369d96abc4047a782c11145e625e6f1759` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

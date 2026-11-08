@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/PositivityNamespaced.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/PositivityNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/PositivityNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/PositivityNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ArithmeticPositivityCriterion](../../../../AssociativeRingsAndAlgebras/PositivityNamespaced.lean/declarations/arithmeticpositivitycriterion.md) | 22 | `declaration-track:e0126aa2d0a2c4405853c9a2f94f9fdb70724f7381c0cfacc869731598a3631d` |
-| 2 | `structure` | [PositiveTraceAlgebra](../../../../AssociativeRingsAndAlgebras/PositivityNamespaced.lean/declarations/positivetracealgebra.md) | 33 | `declaration-track:dea3ed4e9519f3e36c72a72f08ab1d4e0ab8701ef317e1ac273b81c40e6cf9f1` |
-| 3 | `structure` | [TracePositivityFactorization](../../../../AssociativeRingsAndAlgebras/PositivityNamespaced.lean/declarations/tracepositivityfactorization.md) | 43 | `declaration-track:8d1a6f2a06c72c2ae8b3499d112e5d76f46b923cf2e47f4ceaf3904125858a8e` |
-| 4 | `theorem` | [tracePositivityFactorization_implies_RH](../../../../AssociativeRingsAndAlgebras/PositivityNamespaced.lean/declarations/tracepositivityfactorization-implies-rh.md) | 60 | `result-track:648d6003c1fbd26b8f770655a463e6ffe268501d6525fd1560750300d1ba0536` |
-| 5 | `theorem` | [exact_trace_factorization_implies_RH](../../../../AssociativeRingsAndAlgebras/PositivityNamespaced.lean/declarations/exact-trace-factorization-implies-rh.md) | 75 | `result-track:c1fd4422d91288cf253815f972bac7afb5b9f108668d8e309ec824c74e2d7e99` |
+| 1 | `structure` | [ArithmeticPositivityCriterion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/PositivityNamespaced.lean/declarations/arithmeticpositivitycriterion.md) | 22 | `declaration-track:e0126aa2d0a2c4405853c9a2f94f9fdb70724f7381c0cfacc869731598a3631d` |
+| 2 | `structure` | [PositiveTraceAlgebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/PositivityNamespaced.lean/declarations/positivetracealgebra.md) | 33 | `declaration-track:dea3ed4e9519f3e36c72a72f08ab1d4e0ab8701ef317e1ac273b81c40e6cf9f1` |
+| 3 | `structure` | [TracePositivityFactorization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/PositivityNamespaced.lean/declarations/tracepositivityfactorization.md) | 43 | `declaration-track:8d1a6f2a06c72c2ae8b3499d112e5d76f46b923cf2e47f4ceaf3904125858a8e` |
+| 4 | `theorem` | [tracePositivityFactorization_implies_RH](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/PositivityNamespaced.lean/declarations/tracepositivityfactorization-implies-rh.md) | 60 | `result-track:648d6003c1fbd26b8f770655a463e6ffe268501d6525fd1560750300d1ba0536` |
+| 5 | `theorem` | [exact_trace_factorization_implies_RH](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/PositivityNamespaced.lean/declarations/exact-trace-factorization-implies-rh.md) | 75 | `result-track:c1fd4422d91288cf253815f972bac7afb5b9f108668d8e309ec824c74e2d7e99` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

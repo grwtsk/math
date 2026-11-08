@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/AllAnyNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/AllAnyNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/AllAnyNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/AllAnyNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [all_iff_forall_prop](../../../../../../ComputerScience/TheoryOfData/DataStructures/AllAnyNamespaced.lean/declarations/all-iff-forall-prop.md) | 29 | `result-track:3a82a2168ed5b4fe8528229908fe40b5d282a5c3f0ec508b81d1c408e3a96bfb` |
-| 2 | `theorem` | [any_iff_exists_prop](../../../../../../ComputerScience/TheoryOfData/DataStructures/AllAnyNamespaced.lean/declarations/any-iff-exists-prop.md) | 32 | `result-track:f0a2feb76781a1adc10537e7192092477808c1ed41f54155db628b8c9ccfa8c4` |
-| 3 | `theorem` | [any_of_mem](../../../../../../ComputerScience/TheoryOfData/DataStructures/AllAnyNamespaced.lean/declarations/any-of-mem.md) | 34 | `result-track:5ae6868b9d960185e4d0caa9e0d222efcd4ce34fbd820c1f2cd497227dc8e007` |
+| 1 | `theorem` | [all_iff_forall_prop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/AllAnyNamespaced.lean/declarations/all-iff-forall-prop.md) | 29 | `result-track:3a82a2168ed5b4fe8528229908fe40b5d282a5c3f0ec508b81d1c408e3a96bfb` |
+| 2 | `theorem` | [any_iff_exists_prop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/AllAnyNamespaced.lean/declarations/any-iff-exists-prop.md) | 32 | `result-track:f0a2feb76781a1adc10537e7192092477808c1ed41f54155db628b8c9ccfa8c4` |
+| 3 | `theorem` | [any_of_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/AllAnyNamespaced.lean/declarations/any-of-mem.md) | 34 | `result-track:5ae6868b9d960185e4d0caa9e0d222efcd4ce34fbd820c1f2cd497227dc8e007` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

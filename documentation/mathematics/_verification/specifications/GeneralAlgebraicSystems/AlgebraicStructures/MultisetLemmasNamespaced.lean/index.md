@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MultisetLemmasNamespaced.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MultisetLemmasNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MultisetLemmasNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MultisetLemmasNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [dvd_prod](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MultisetLemmasNamespaced.lean/declarations/dvd-prod.md) | 26 | `result-track:3b07bd132990f8c640214d9d541944cc902f4763c8d94060abfffeb673c0fe5a` |
-| 2 | `theorem` | [prod_eq_one_iff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MultisetLemmasNamespaced.lean/declarations/prod-eq-one-iff.md) | 31 | `result-track:fbe276848a869ef79883443c30e85002276052e6cee183b0ec60ce1463458db8` |
-| 3 | `lemma` | [CanonicallyOrderedCommSemiring.multiset_prod_pos](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MultisetLemmasNamespaced.lean/declarations/canonicallyorderedcommsemiring-multiset-prod-pos.md) | 40 | `result-track:1a32ae7879e65bb5f446b07b4df1ac9af17eeeb096ff060efdb3f7a7cde2668a` |
-| 4 | `theorem` | [multiset_sum_right](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MultisetLemmasNamespaced.lean/declarations/multiset-sum-right.md) | 52 | `result-track:8bf9e20ab853027194c61a221e99dd7389899ad454f2a2f2e859fc341c832a1a` |
-| 5 | `theorem` | [multiset_sum_left](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MultisetLemmasNamespaced.lean/declarations/multiset-sum-left.md) | 58 | `result-track:4463235623157b91f917ab27927b9ca3283bb08e941e1bb7896ff7eece8b7f62` |
+| 1 | `theorem` | [dvd_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MultisetLemmasNamespaced.lean/declarations/dvd-prod.md) | 26 | `result-track:3b07bd132990f8c640214d9d541944cc902f4763c8d94060abfffeb673c0fe5a` |
+| 2 | `theorem` | [prod_eq_one_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MultisetLemmasNamespaced.lean/declarations/prod-eq-one-iff.md) | 31 | `result-track:fbe276848a869ef79883443c30e85002276052e6cee183b0ec60ce1463458db8` |
+| 3 | `lemma` | [CanonicallyOrderedCommSemiring.multiset_prod_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MultisetLemmasNamespaced.lean/declarations/canonicallyorderedcommsemiring-multiset-prod-pos.md) | 40 | `result-track:1a32ae7879e65bb5f446b07b4df1ac9af17eeeb096ff060efdb3f7a7cde2668a` |
+| 4 | `theorem` | [multiset_sum_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MultisetLemmasNamespaced.lean/declarations/multiset-sum-right.md) | 52 | `result-track:8bf9e20ab853027194c61a221e99dd7389899ad454f2a2f2e859fc341c832a1a` |
+| 5 | `theorem` | [multiset_sum_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MultisetLemmasNamespaced.lean/declarations/multiset-sum-left.md) | 58 | `result-track:4463235623157b91f917ab27927b9ca3283bb08e941e1bb7896ff7eece8b7f62` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

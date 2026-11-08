@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeylNamespacedEdition1.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeylNamespacedEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeylNamespacedEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeylNamespacedEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [weyl_posIndexAbove_le](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeylNamespacedEdition1.lean/declarations/weyl-posindexabove-le.md) | 58 | `result-track:447b54a8a1766d715af592b1744c052b098ecda1ef58f3881be9706b256d3382` |
-| 2 | `theorem` | [cauchySchwarz_count](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeylNamespacedEdition1.lean/declarations/cauchyschwarz-count.md) | 97 | `result-track:1e49a29bdf96fc18c6d9dde71980a5f11066d2f61b200a9673d7846896365473` |
+| 1 | `theorem` | [weyl_posIndexAbove_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeylNamespacedEdition1.lean/declarations/weyl-posindexabove-le.md) | 58 | `result-track:447b54a8a1766d715af592b1744c052b098ecda1ef58f3881be9706b256d3382` |
+| 2 | `theorem` | [cauchySchwarz_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WeylNamespacedEdition1.lean/declarations/cauchyschwarz-count.md) | 97 | `result-track:1e49a29bdf96fc18c6d9dde71980a5f11066d2f61b200a9673d7846896365473` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

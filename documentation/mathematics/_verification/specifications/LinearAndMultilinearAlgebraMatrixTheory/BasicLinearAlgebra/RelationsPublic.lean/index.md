@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RelationsPublic.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RelationsPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RelationsPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RelationsPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [lie_h_e](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RelationsPublic.lean/declarations/lie-h-e.md) | 45 | `result-track:546fde539fa26bc426dfa37f9c57ffca2bf1f1c61b4c4f22fa6af980aa2da912` |
-| 2 | `lemma` | [lie_h_f](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RelationsPublic.lean/declarations/lie-h-f.md) | 72 | `result-track:fe4808f02f2e7b55ec2db6cc02b262c12c4c7194049e06729f7bdbeac3788f0d` |
-| 3 | `lemma` | [lie_e_f_same_aux](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RelationsPublic.lean/declarations/lie-e-f-same-aux.md) | 92 | `result-track:9c64ef60538f196c01fb4ec896320d914adbfb1c355c0df114ff7843a70b0067` |
-| 4 | `lemma` | [lie_e_f_same](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RelationsPublic.lean/declarations/lie-e-f-same.md) | 140 | `result-track:f2acbd2347d8b575c567fb3d89bbef71de7b47b118df9b6853ceea2064f934b8` |
-| 5 | `lemma` | [isSl2Triple](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RelationsPublic.lean/declarations/issl2triple.md) | 189 | `result-track:b5ef50da9e70b675fd805b49b2cb8608a1b9a4f2e2a9e078d8c5b3765462ff21` |
-| 6 | `lemma` | [lie_e_f_ne_aux₀](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RelationsPublic.lean/declarations/lie-e-f-ne-aux.md) | 205 | `result-track:5d104752d9b374383928757c80aba924cf2fd59face19794729dabde4f78cc4e` |
-| 7 | `lemma` | [lie_e_f_ne_aux₁](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RelationsPublic.lean/declarations/lie-e-f-ne-aux-source-edition-2.md) | 221 | `result-track:a13b795cfc47e6f69cd7f1e18cf7887625c2fbc4ea37830d34cb1086fd5e825c` |
-| 8 | `lemma` | [lie_e_f_ne_aux₂](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RelationsPublic.lean/declarations/lie-e-f-ne-aux-source-edition-3.md) | 252 | `result-track:cb9bb297887eeb24c3cd4105afdd6c92fde508e8b8ead4451e84afbe628b72da` |
-| 9 | `lemma` | [lie_e_f_ne](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RelationsPublic.lean/declarations/lie-e-f-ne.md) | 265 | `result-track:6627cb471dabb1ee6e7fcdde7d5f082435309233d47b3ba6a3cfc08e5321981e` |
+| 1 | `lemma` | [lie_h_e](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RelationsPublic.lean/declarations/lie-h-e.md) | 45 | `result-track:546fde539fa26bc426dfa37f9c57ffca2bf1f1c61b4c4f22fa6af980aa2da912` |
+| 2 | `lemma` | [lie_h_f](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RelationsPublic.lean/declarations/lie-h-f.md) | 72 | `result-track:fe4808f02f2e7b55ec2db6cc02b262c12c4c7194049e06729f7bdbeac3788f0d` |
+| 3 | `lemma` | [lie_e_f_same_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RelationsPublic.lean/declarations/lie-e-f-same-aux.md) | 92 | `result-track:9c64ef60538f196c01fb4ec896320d914adbfb1c355c0df114ff7843a70b0067` |
+| 4 | `lemma` | [lie_e_f_same](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RelationsPublic.lean/declarations/lie-e-f-same.md) | 140 | `result-track:f2acbd2347d8b575c567fb3d89bbef71de7b47b118df9b6853ceea2064f934b8` |
+| 5 | `lemma` | [isSl2Triple](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RelationsPublic.lean/declarations/issl2triple.md) | 189 | `result-track:b5ef50da9e70b675fd805b49b2cb8608a1b9a4f2e2a9e078d8c5b3765462ff21` |
+| 6 | `lemma` | [lie_e_f_ne_aux₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RelationsPublic.lean/declarations/lie-e-f-ne-aux.md) | 205 | `result-track:5d104752d9b374383928757c80aba924cf2fd59face19794729dabde4f78cc4e` |
+| 7 | `lemma` | [lie_e_f_ne_aux₁](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RelationsPublic.lean/declarations/lie-e-f-ne-aux-source-edition-2.md) | 221 | `result-track:a13b795cfc47e6f69cd7f1e18cf7887625c2fbc4ea37830d34cb1086fd5e825c` |
+| 8 | `lemma` | [lie_e_f_ne_aux₂](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RelationsPublic.lean/declarations/lie-e-f-ne-aux-source-edition-3.md) | 252 | `result-track:cb9bb297887eeb24c3cd4105afdd6c92fde508e8b8ead4451e84afbe628b72da` |
+| 9 | `lemma` | [lie_e_f_ne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RelationsPublic.lean/declarations/lie-e-f-ne.md) | 265 | `result-track:6627cb471dabb1ee6e7fcdde7d5f082435309233d47b3ba6a3cfc08e5321981e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/Imo1997Q3Public.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/Imo1997Q3Public.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Imo1997Q3Public.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Imo1997Q3Public.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [S](../../../../GroupTheoryAndGeneralizations/Imo1997Q3Public.lean/declarations/s.md) | 51 | `declaration-track:b6f0c5e8ec00c02fdf008563b72890d8d3d4945c6c100c42e5f980c4a7994b85` |
-| 2 | `lemma` | [sign_eq_of_abs_sub_le](../../../../GroupTheoryAndGeneralizations/Imo1997Q3Public.lean/declarations/sign-eq-of-abs-sub-le.md) | 54 | `result-track:001a841a8fbd6fb24871f127ad1f29ef98f555550905eb899f3e108add353574` |
-| 3 | `lemma` | [lt_abs_add_of_sign_eq](../../../../GroupTheoryAndGeneralizations/Imo1997Q3Public.lean/declarations/lt-abs-add-of-sign-eq.md) | 59 | `result-track:f828e4c076cbc4526e939a7ca91a3e655934401aca331d3f02c870b3cee08871` |
-| 4 | `lemma` | [sign_eq_of_contra](../../../../GroupTheoryAndGeneralizations/Imo1997Q3Public.lean/declarations/sign-eq-of-contra.md) | 66 | `result-track:361ed9541f62ef6ddf24c02557b9053140077afdf7fb47de0247eb769c380178` |
-| 5 | `lemma` | [S_one_add_S_revPerm](../../../../GroupTheoryAndGeneralizations/Imo1997Q3Public.lean/declarations/s-one-add-s-revperm.md) | 95 | `result-track:615e28090f308f148f86d65985509b5d5557041c3c62cc5c6dcb799d1816306a` |
-| 6 | `theorem` | [result](../../../../GroupTheoryAndGeneralizations/Imo1997Q3Public.lean/declarations/result.md) | 103 | `result-track:a2ecfe5b293f3c4133a91228423494ca281c50d1f2a640090adf9d446458cc4e` |
+| 1 | `def` | [S](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Imo1997Q3Public.lean/declarations/s.md) | 51 | `declaration-track:b6f0c5e8ec00c02fdf008563b72890d8d3d4945c6c100c42e5f980c4a7994b85` |
+| 2 | `lemma` | [sign_eq_of_abs_sub_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Imo1997Q3Public.lean/declarations/sign-eq-of-abs-sub-le.md) | 54 | `result-track:001a841a8fbd6fb24871f127ad1f29ef98f555550905eb899f3e108add353574` |
+| 3 | `lemma` | [lt_abs_add_of_sign_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Imo1997Q3Public.lean/declarations/lt-abs-add-of-sign-eq.md) | 59 | `result-track:f828e4c076cbc4526e939a7ca91a3e655934401aca331d3f02c870b3cee08871` |
+| 4 | `lemma` | [sign_eq_of_contra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Imo1997Q3Public.lean/declarations/sign-eq-of-contra.md) | 66 | `result-track:361ed9541f62ef6ddf24c02557b9053140077afdf7fb47de0247eb769c380178` |
+| 5 | `lemma` | [S_one_add_S_revPerm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Imo1997Q3Public.lean/declarations/s-one-add-s-revperm.md) | 95 | `result-track:615e28090f308f148f86d65985509b5d5557041c3c62cc5c6dcb799d1816306a` |
+| 6 | `theorem` | [result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Imo1997Q3Public.lean/declarations/result.md) | 103 | `result-track:a2ecfe5b293f3c4133a91228423494ca281c50d1f2a640090adf9d446458cc4e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

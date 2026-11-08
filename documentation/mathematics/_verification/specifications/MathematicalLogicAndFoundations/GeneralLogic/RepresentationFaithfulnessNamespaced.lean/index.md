@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RepresentationFaithfulnessNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RepresentationFaithfulnessNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RepresentationFaithfulnessNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RepresentationFaithfulnessNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SelectedTwistGroup](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RepresentationFaithfulnessNamespaced.lean/declarations/selectedtwistgroup.md) | 29 | `declaration-track:40d8d7a2511bb29cc9f0319e3db1911f597482022a15366ed833d236b824de55` |
-| 2 | `def` | [Faithful](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RepresentationFaithfulnessNamespaced.lean/declarations/faithful.md) | 37 | `declaration-track:7d5f37e78786af3ed625525ac35003d8590e6642b840a1f041eeb7a1b97b0d7d` |
-| 3 | `def` | [SurjectiveOn](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RepresentationFaithfulnessNamespaced.lean/declarations/surjectiveon.md) | 44 | `declaration-track:f37ac526b686e07b6353f8f1bf88313177d87e94d339eed1de0f162ec67a16a7` |
-| 4 | `structure` | [ClassifiesSelectedTwists](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RepresentationFaithfulnessNamespaced.lean/declarations/classifiesselectedtwists.md) | 52 | `declaration-track:7ea4da992b7d850331abf43872fc3ad45a6245719bd2c05566e33763982ced9c` |
-| 5 | `theorem` | [every_selected_twist_has_preimage](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RepresentationFaithfulnessNamespaced.lean/declarations/every-selected-twist-has-preimage.md) | 61 | `result-track:95322a9aba9087ba963c0c225f2378a2ae77403b5fec3a6ee64c3b14c0c79123` |
-| 6 | `theorem` | [selected_twist_preimage_unique_of_faithful](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RepresentationFaithfulnessNamespaced.lean/declarations/selected-twist-preimage-unique-of-faithful.md) | 73 | `result-track:d3b7906ce97634581cc4c74bb8c2a47ba75cc97f8741535cc99914c4bb7bad52` |
+| 1 | `structure` | [SelectedTwistGroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RepresentationFaithfulnessNamespaced.lean/declarations/selectedtwistgroup.md) | 29 | `declaration-track:40d8d7a2511bb29cc9f0319e3db1911f597482022a15366ed833d236b824de55` |
+| 2 | `def` | [Faithful](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RepresentationFaithfulnessNamespaced.lean/declarations/faithful.md) | 37 | `declaration-track:7d5f37e78786af3ed625525ac35003d8590e6642b840a1f041eeb7a1b97b0d7d` |
+| 3 | `def` | [SurjectiveOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RepresentationFaithfulnessNamespaced.lean/declarations/surjectiveon.md) | 44 | `declaration-track:f37ac526b686e07b6353f8f1bf88313177d87e94d339eed1de0f162ec67a16a7` |
+| 4 | `structure` | [ClassifiesSelectedTwists](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RepresentationFaithfulnessNamespaced.lean/declarations/classifiesselectedtwists.md) | 52 | `declaration-track:7ea4da992b7d850331abf43872fc3ad45a6245719bd2c05566e33763982ced9c` |
+| 5 | `theorem` | [every_selected_twist_has_preimage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RepresentationFaithfulnessNamespaced.lean/declarations/every-selected-twist-has-preimage.md) | 61 | `result-track:95322a9aba9087ba963c0c225f2378a2ae77403b5fec3a6ee64c3b14c0c79123` |
+| 6 | `theorem` | [selected_twist_preimage_unique_of_faithful](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RepresentationFaithfulnessNamespaced.lean/declarations/selected-twist-preimage-unique-of-faithful.md) | 73 | `result-track:d3b7906ce97634581cc4c74bb8c2a47ba75cc97f8741535cc99914c4bb7bad52` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

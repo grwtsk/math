@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/IsHomeomorphicTrivialBundleNamespacedIsQuotientMapProj.lean/index.md) · [Full source](../../../../GeneralTopology/IsHomeomorphicTrivialBundleNamespacedIsQuotientMapProj.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/IsHomeomorphicTrivialBundleNamespacedIsQuotientMapProj.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/IsHomeomorphicTrivialBundleNamespacedIsQuotientMapProj.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [IsHomeomorphicTrivialFiberBundle](../../../../GeneralTopology/IsHomeomorphicTrivialBundleNamespacedIsQuotientMapProj.lean/declarations/ishomeomorphictrivialfiberbundle.md) | 36 | `declaration-track:3d4ffd8421f3fd7e823d0ffd3b92225a7c365f92718684fb845e83577554334f` |
-| 2 | `theorem` | [proj_eq](../../../../GeneralTopology/IsHomeomorphicTrivialBundleNamespacedIsQuotientMapProj.lean/declarations/proj-eq.md) | 43 | `result-track:9a9e48da2cb47bab3df78d355aa7f4edf0fc705222f580571b8afdf36aeb66fe` |
-| 3 | `theorem` | [surjective_proj](../../../../GeneralTopology/IsHomeomorphicTrivialBundleNamespacedIsQuotientMapProj.lean/declarations/surjective-proj.md) | 48 | `result-track:28ac0c229ade90641eb2e87f89102e33c99be5ed5e71d06cec4c7d1eb8853f73` |
-| 4 | `theorem` | [continuous_proj](../../../../GeneralTopology/IsHomeomorphicTrivialBundleNamespacedIsQuotientMapProj.lean/declarations/continuous-proj.md) | 54 | `result-track:d751925cfe267db70da42f4680cc4b72f14e2ac2eea2d984d7f747042f7af6fb` |
-| 5 | `theorem` | [isOpenMap_proj](../../../../GeneralTopology/IsHomeomorphicTrivialBundleNamespacedIsQuotientMapProj.lean/declarations/isopenmap-proj.md) | 59 | `result-track:656f7e29d962b142ad08bc348bb3f7d53eb79e33c0461738fb405fca7dfe3fd8` |
-| 6 | `theorem` | [isQuotientMap_proj](../../../../GeneralTopology/IsHomeomorphicTrivialBundleNamespacedIsQuotientMapProj.lean/declarations/isquotientmap-proj.md) | 64 | `result-track:4a446906cb2c744d8fdfa652322639fae43c8590eceb560a3679557efa7bc8cf` |
-| 7 | `theorem` | [isHomeomorphicTrivialFiberBundle_fst](../../../../GeneralTopology/IsHomeomorphicTrivialBundleNamespacedIsQuotientMapProj.lean/declarations/ishomeomorphictrivialfiberbundle-fst.md) | 74 | `result-track:38510595010bfc713299ff1fe583d72ab30ef2a5d31e073ec7d353e688879b0b` |
-| 8 | `theorem` | [isHomeomorphicTrivialFiberBundle_snd](../../../../GeneralTopology/IsHomeomorphicTrivialBundleNamespacedIsQuotientMapProj.lean/declarations/ishomeomorphictrivialfiberbundle-snd.md) | 79 | `result-track:9616f6e24e935cf98ce18a5e08df59e142e7c0ee7a216e3530b95bce515b058a` |
+| 1 | `def` | [IsHomeomorphicTrivialFiberBundle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/IsHomeomorphicTrivialBundleNamespacedIsQuotientMapProj.lean/declarations/ishomeomorphictrivialfiberbundle.md) | 36 | `declaration-track:3d4ffd8421f3fd7e823d0ffd3b92225a7c365f92718684fb845e83577554334f` |
+| 2 | `theorem` | [proj_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/IsHomeomorphicTrivialBundleNamespacedIsQuotientMapProj.lean/declarations/proj-eq.md) | 43 | `result-track:9a9e48da2cb47bab3df78d355aa7f4edf0fc705222f580571b8afdf36aeb66fe` |
+| 3 | `theorem` | [surjective_proj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/IsHomeomorphicTrivialBundleNamespacedIsQuotientMapProj.lean/declarations/surjective-proj.md) | 48 | `result-track:28ac0c229ade90641eb2e87f89102e33c99be5ed5e71d06cec4c7d1eb8853f73` |
+| 4 | `theorem` | [continuous_proj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/IsHomeomorphicTrivialBundleNamespacedIsQuotientMapProj.lean/declarations/continuous-proj.md) | 54 | `result-track:d751925cfe267db70da42f4680cc4b72f14e2ac2eea2d984d7f747042f7af6fb` |
+| 5 | `theorem` | [isOpenMap_proj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/IsHomeomorphicTrivialBundleNamespacedIsQuotientMapProj.lean/declarations/isopenmap-proj.md) | 59 | `result-track:656f7e29d962b142ad08bc348bb3f7d53eb79e33c0461738fb405fca7dfe3fd8` |
+| 6 | `theorem` | [isQuotientMap_proj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/IsHomeomorphicTrivialBundleNamespacedIsQuotientMapProj.lean/declarations/isquotientmap-proj.md) | 64 | `result-track:4a446906cb2c744d8fdfa652322639fae43c8590eceb560a3679557efa7bc8cf` |
+| 7 | `theorem` | [isHomeomorphicTrivialFiberBundle_fst](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/IsHomeomorphicTrivialBundleNamespacedIsQuotientMapProj.lean/declarations/ishomeomorphictrivialfiberbundle-fst.md) | 74 | `result-track:38510595010bfc713299ff1fe583d72ab30ef2a5d31e073ec7d353e688879b0b` |
+| 8 | `theorem` | [isHomeomorphicTrivialFiberBundle_snd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/IsHomeomorphicTrivialBundleNamespacedIsQuotientMapProj.lean/declarations/ishomeomorphictrivialfiberbundle-snd.md) | 79 | `result-track:9616f6e24e935cf98ce18a5e08df59e142e7c0ee7a216e3530b95bce515b058a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

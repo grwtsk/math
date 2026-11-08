@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ExplicitFormulaNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ExplicitFormulaNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ExplicitFormulaNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ExplicitFormulaNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [xi_eq_weilXi](../../../../MeasureAndIntegration/ExplicitFormulaNamespaced.lean/declarations/xi-eq-weilxi.md) | 62 | `result-track:163fda6c1c14841985ce1713bb1f5a2822ffd82cbaea467b608ec899d5ef260f` |
-| 2 | `def` | [kfun](../../../../MeasureAndIntegration/ExplicitFormulaNamespaced.lean/declarations/kfun.md) | 151 | `declaration-track:71e9b2c162f4f2c4a5516c6acf34bf9cf788c18266f2ad895d7420f5b305d30d` |
-| 3 | `structure` | [FamilyHyps](../../../../MeasureAndIntegration/ExplicitFormulaNamespaced.lean/declarations/familyhyps.md) | 154 | `declaration-track:990232953653da26f6d6b9dab61b34947947d046337a6ee9bc0df939e1823b57` |
+| 1 | `theorem` | [xi_eq_weilXi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ExplicitFormulaNamespaced.lean/declarations/xi-eq-weilxi.md) | 62 | `result-track:163fda6c1c14841985ce1713bb1f5a2822ffd82cbaea467b608ec899d5ef260f` |
+| 2 | `def` | [kfun](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ExplicitFormulaNamespaced.lean/declarations/kfun.md) | 151 | `declaration-track:71e9b2c162f4f2c4a5516c6acf34bf9cf788c18266f2ad895d7420f5b305d30d` |
+| 3 | `structure` | [FamilyHyps](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ExplicitFormulaNamespaced.lean/declarations/familyhyps.md) | 154 | `declaration-track:990232953653da26f6d6b9dab61b34947947d046337a6ee9bc0df939e1823b57` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

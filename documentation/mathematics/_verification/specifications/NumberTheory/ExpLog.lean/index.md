@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/ExpLog.lean/index.md) · [Full source](../../../../NumberTheory/ExpLog.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ExpLog.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ExpLog.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,8 +60,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [Summable.clog_one_sub](../../../../NumberTheory/ExpLog.lean/declarations/summable-clog-one-sub.md) | 23 | `result-track:7a35cd29adec9f5d3ab0f8f9d46d3ef5855930279c7c76df72a47e6c187426fd` |
-| 2 | `theorem` | [exp_tsum_primes_log_eq_tsum](../../../../NumberTheory/ExpLog.lean/declarations/exp-tsum-primes-log-eq-tsum.md) | 35 | `result-track:479de067b35aba5585ced3b86a4d7aca2d273e12c53ff80ea027ee3993598e0c` |
+| 1 | `lemma` | [Summable.clog_one_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ExpLog.lean/declarations/summable-clog-one-sub.md) | 23 | `result-track:7a35cd29adec9f5d3ab0f8f9d46d3ef5855930279c7c76df72a47e6c187426fd` |
+| 2 | `theorem` | [exp_tsum_primes_log_eq_tsum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ExpLog.lean/declarations/exp-tsum-primes-log-eq-tsum.md) | 35 | `result-track:479de067b35aba5585ced3b86a4d7aca2d273e12c53ff80ea027ee3993598e0c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/GeneralMeromorphicNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/GeneralMeromorphicNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/GeneralMeromorphicNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/GeneralMeromorphicNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [MeromorphicOnRectangle](../../../../RealFunctions/GeneralMeromorphicNamespaced.lean/declarations/meromorphiconrectangle.md) | 25 | `declaration-track:d5df4e0e446238fa9676ff86e11664049c0ea06a746b7a72d0513954dc422371` |
+| 1 | `class` | [MeromorphicOnRectangle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/GeneralMeromorphicNamespaced.lean/declarations/meromorphiconrectangle.md) | 25 | `declaration-track:d5df4e0e446238fa9676ff86e11664049c0ea06a746b7a72d0513954dc422371` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

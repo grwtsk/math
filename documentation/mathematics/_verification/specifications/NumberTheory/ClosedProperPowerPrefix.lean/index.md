@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/ClosedProperPowerPrefix.lean/index.md) · [Full source](../../../../NumberTheory/ClosedProperPowerPrefix.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ClosedProperPowerPrefix.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ClosedProperPowerPrefix.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,15 +59,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [properExponentInventory](../../../../NumberTheory/ClosedProperPowerPrefix.lean/declarations/properexponentinventory.md) | 15 | `declaration-track:35e7ffa9cba115ce6fdfb169fe1ed0506e2b6a9876546a43c69a4e7aa6097a17` |
-| 2 | `theorem` | [mem_inventory_iff](../../../../NumberTheory/ClosedProperPowerPrefix.lean/declarations/mem-inventory-iff.md) | 19 | `result-track:c3af4bb06d136dbe556697b7292381fcff7c3b92357fdd539b693a325e438c16` |
-| 3 | `theorem` | [inventory_pow_injective](../../../../NumberTheory/ClosedProperPowerPrefix.lean/declarations/inventory-pow-injective.md) | 36 | `result-track:51d340a5250e03bf6cab348aa3e805d7eb4b065161ef3f04c4b724cb9d60f44f` |
-| 4 | `theorem` | [weighted_difference_eq_proper_exponents](../../../../NumberTheory/ClosedProperPowerPrefix.lean/declarations/weighted-difference-eq-proper-exponents.md) | 50 | `result-track:4f3aed363028bcdbe050ea9ff5d87ecc21fe538a94b90613d0f050e388ba256f` |
-| 5 | `def` | [actualProperPowerClosedPrefix](../../../../NumberTheory/ClosedProperPowerPrefix.lean/declarations/actualproperpowerclosedprefix.md) | 104 | `declaration-track:195381bdd2bb5f11b837fe877fcf9a5c68795b3672006238842931bde87323fb` |
-| 6 | `theorem` | [actual_closed_prefix_dictionary](../../../../NumberTheory/ClosedProperPowerPrefix.lean/declarations/actual-closed-prefix-dictionary.md) | 108 | `result-track:940c13ba1bb435c73c349a76cd332b402d9153bef0f89adcd6a6e8543f9db366` |
-| 7 | `theorem` | [prime_power_closed_onset_iff](../../../../NumberTheory/ClosedProperPowerPrefix.lean/declarations/prime-power-closed-onset-iff.md) | 113 | `result-track:1bec115b8e0a1f7669e9c1a35a7e0777449c7b333739870a2d0884d35bdf60b7` |
-| 8 | `theorem` | [actual_inventory_log_onsets_iff](../../../../NumberTheory/ClosedProperPowerPrefix.lean/declarations/actual-inventory-log-onsets-iff.md) | 119 | `result-track:b65b1e7574b5429fa17e28f3631f1195d82bf1cb1a906e742db8d6289defc8c4` |
-| 9 | `theorem` | [touching_onset_retained](../../../../NumberTheory/ClosedProperPowerPrefix.lean/declarations/touching-onset-retained.md) | 129 | `result-track:9d8c1b0230ce76e97fede4150c94f4e7fe4d1072c674e4a8589411b3ffe311bc` |
+| 1 | `def` | [properExponentInventory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ClosedProperPowerPrefix.lean/declarations/properexponentinventory.md) | 15 | `declaration-track:35e7ffa9cba115ce6fdfb169fe1ed0506e2b6a9876546a43c69a4e7aa6097a17` |
+| 2 | `theorem` | [mem_inventory_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ClosedProperPowerPrefix.lean/declarations/mem-inventory-iff.md) | 19 | `result-track:c3af4bb06d136dbe556697b7292381fcff7c3b92357fdd539b693a325e438c16` |
+| 3 | `theorem` | [inventory_pow_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ClosedProperPowerPrefix.lean/declarations/inventory-pow-injective.md) | 36 | `result-track:51d340a5250e03bf6cab348aa3e805d7eb4b065161ef3f04c4b724cb9d60f44f` |
+| 4 | `theorem` | [weighted_difference_eq_proper_exponents](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ClosedProperPowerPrefix.lean/declarations/weighted-difference-eq-proper-exponents.md) | 50 | `result-track:4f3aed363028bcdbe050ea9ff5d87ecc21fe538a94b90613d0f050e388ba256f` |
+| 5 | `def` | [actualProperPowerClosedPrefix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ClosedProperPowerPrefix.lean/declarations/actualproperpowerclosedprefix.md) | 104 | `declaration-track:195381bdd2bb5f11b837fe877fcf9a5c68795b3672006238842931bde87323fb` |
+| 6 | `theorem` | [actual_closed_prefix_dictionary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ClosedProperPowerPrefix.lean/declarations/actual-closed-prefix-dictionary.md) | 108 | `result-track:940c13ba1bb435c73c349a76cd332b402d9153bef0f89adcd6a6e8543f9db366` |
+| 7 | `theorem` | [prime_power_closed_onset_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ClosedProperPowerPrefix.lean/declarations/prime-power-closed-onset-iff.md) | 113 | `result-track:1bec115b8e0a1f7669e9c1a35a7e0777449c7b333739870a2d0884d35bdf60b7` |
+| 8 | `theorem` | [actual_inventory_log_onsets_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ClosedProperPowerPrefix.lean/declarations/actual-inventory-log-onsets-iff.md) | 119 | `result-track:b65b1e7574b5429fa17e28f3631f1195d82bf1cb1a906e742db8d6289defc8c4` |
+| 9 | `theorem` | [touching_onset_retained](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ClosedProperPowerPrefix.lean/declarations/touching-onset-retained.md) | 129 | `result-track:9d8c1b0230ce76e97fede4150c94f4e7fe4d1072c674e4a8589411b3ffe311bc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

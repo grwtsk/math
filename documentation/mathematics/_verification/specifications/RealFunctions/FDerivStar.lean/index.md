@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/FDerivStar.lean/index.md) · [Full source](../../../../RealFunctions/FDerivStar.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FDerivStar.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FDerivStar.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,20 +60,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [HasStrictFDerivAt.star](../../../../RealFunctions/FDerivStar.lean/declarations/hasstrictfderivat-star.md) | 31 | `result-track:d9a08b168b983e46d1e3301bf7a9f134f5449b76e55aedef49a8d094d8e09aa8` |
-| 2 | `theorem` | [HasFDerivAtFilter.star](../../../../RealFunctions/FDerivStar.lean/declarations/hasfderivatfilter-star.md) | 35 | `result-track:2710ec3230873df70c8ab967688ab1fc65bf616498b921b8520b9024f0d1977b` |
-| 3 | `theorem` | [HasFDerivWithinAt.star](../../../../RealFunctions/FDerivStar.lean/declarations/hasfderivwithinat-star.md) | 40 | `result-track:c0aa2b839a11e0a36ae5782f0f9c7928d63e0fa3ad501b26554fa1ca69c07f4f` |
-| 4 | `theorem` | [HasFDerivAt.star](../../../../RealFunctions/FDerivStar.lean/declarations/hasfderivat-star.md) | 45 | `result-track:546e743d7642eaab79162b12f1516690fb8bdee5543c5e24f68b96c448a10226` |
-| 5 | `theorem` | [DifferentiableWithinAt.star](../../../../RealFunctions/FDerivStar.lean/declarations/differentiablewithinat-star.md) | 50 | `result-track:75efe3b3f912ca8243e78acde2ab9d3d0c9d8777d774e79c15a766cd6c0f0ebb` |
-| 6 | `theorem` | [differentiableWithinAt_star_iff](../../../../RealFunctions/FDerivStar.lean/declarations/differentiablewithinat-star-iff.md) | 55 | `result-track:5844044107a268c5a4bb6a943e528c875057862e27495a7461ab99be9c0677a3` |
-| 7 | `theorem` | [DifferentiableAt.star](../../../../RealFunctions/FDerivStar.lean/declarations/differentiableat-star.md) | 60 | `result-track:4a86e14ab12d53f58013f5a4ef74d694be2e6e8660589788d171d958a29d4c77` |
-| 8 | `theorem` | [differentiableAt_star_iff](../../../../RealFunctions/FDerivStar.lean/declarations/differentiableat-star-iff.md) | 65 | `result-track:96ea684940b67a0abc1d0bde25cae1da4897ddfb8c6b6b29e2393a1cde30d6a0` |
-| 9 | `theorem` | [DifferentiableOn.star](../../../../RealFunctions/FDerivStar.lean/declarations/differentiableon-star.md) | 70 | `result-track:f18df30ef7db07156867c142686f5942e9e78bf4ea5ad6b4310ccc7ccff916fc` |
-| 10 | `theorem` | [differentiableOn_star_iff](../../../../RealFunctions/FDerivStar.lean/declarations/differentiableon-star-iff.md) | 74 | `result-track:63462e0b28b1e27cc143629cf2f104c5f85d53feac9f11afb927a1155a6fa261` |
-| 11 | `theorem` | [Differentiable.star](../../../../RealFunctions/FDerivStar.lean/declarations/differentiable-star.md) | 79 | `result-track:c9ce5257a69619f37e6b2a6351a7e868207b07b92d22d26334c5e2b6af4aa7b5` |
-| 12 | `theorem` | [differentiable_star_iff](../../../../RealFunctions/FDerivStar.lean/declarations/differentiable-star-iff.md) | 83 | `result-track:77d6962f4374cfe710abd6dae941e1803927f74d7c86ed5974d91fafb2f450aa` |
-| 13 | `theorem` | [fderivWithin_star](../../../../RealFunctions/FDerivStar.lean/declarations/fderivwithin-star.md) | 86 | `result-track:6184ef03e36195be213854763a2749f16570cbcbe4aec3fbfcc306559dc7806b` |
-| 14 | `theorem` | [fderiv_star](../../../../RealFunctions/FDerivStar.lean/declarations/fderiv-star.md) | 92 | `result-track:0273a5dc2d6099e54cd115d1bd882118683cc20f993bb7a06b8d16ed5b1df0dc` |
+| 1 | `theorem` | [HasStrictFDerivAt.star](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FDerivStar.lean/declarations/hasstrictfderivat-star.md) | 31 | `result-track:d9a08b168b983e46d1e3301bf7a9f134f5449b76e55aedef49a8d094d8e09aa8` |
+| 2 | `theorem` | [HasFDerivAtFilter.star](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FDerivStar.lean/declarations/hasfderivatfilter-star.md) | 35 | `result-track:2710ec3230873df70c8ab967688ab1fc65bf616498b921b8520b9024f0d1977b` |
+| 3 | `theorem` | [HasFDerivWithinAt.star](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FDerivStar.lean/declarations/hasfderivwithinat-star.md) | 40 | `result-track:c0aa2b839a11e0a36ae5782f0f9c7928d63e0fa3ad501b26554fa1ca69c07f4f` |
+| 4 | `theorem` | [HasFDerivAt.star](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FDerivStar.lean/declarations/hasfderivat-star.md) | 45 | `result-track:546e743d7642eaab79162b12f1516690fb8bdee5543c5e24f68b96c448a10226` |
+| 5 | `theorem` | [DifferentiableWithinAt.star](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FDerivStar.lean/declarations/differentiablewithinat-star.md) | 50 | `result-track:75efe3b3f912ca8243e78acde2ab9d3d0c9d8777d774e79c15a766cd6c0f0ebb` |
+| 6 | `theorem` | [differentiableWithinAt_star_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FDerivStar.lean/declarations/differentiablewithinat-star-iff.md) | 55 | `result-track:5844044107a268c5a4bb6a943e528c875057862e27495a7461ab99be9c0677a3` |
+| 7 | `theorem` | [DifferentiableAt.star](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FDerivStar.lean/declarations/differentiableat-star.md) | 60 | `result-track:4a86e14ab12d53f58013f5a4ef74d694be2e6e8660589788d171d958a29d4c77` |
+| 8 | `theorem` | [differentiableAt_star_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FDerivStar.lean/declarations/differentiableat-star-iff.md) | 65 | `result-track:96ea684940b67a0abc1d0bde25cae1da4897ddfb8c6b6b29e2393a1cde30d6a0` |
+| 9 | `theorem` | [DifferentiableOn.star](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FDerivStar.lean/declarations/differentiableon-star.md) | 70 | `result-track:f18df30ef7db07156867c142686f5942e9e78bf4ea5ad6b4310ccc7ccff916fc` |
+| 10 | `theorem` | [differentiableOn_star_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FDerivStar.lean/declarations/differentiableon-star-iff.md) | 74 | `result-track:63462e0b28b1e27cc143629cf2f104c5f85d53feac9f11afb927a1155a6fa261` |
+| 11 | `theorem` | [Differentiable.star](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FDerivStar.lean/declarations/differentiable-star.md) | 79 | `result-track:c9ce5257a69619f37e6b2a6351a7e868207b07b92d22d26334c5e2b6af4aa7b5` |
+| 12 | `theorem` | [differentiable_star_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FDerivStar.lean/declarations/differentiable-star-iff.md) | 83 | `result-track:77d6962f4374cfe710abd6dae941e1803927f74d7c86ed5974d91fafb2f450aa` |
+| 13 | `theorem` | [fderivWithin_star](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FDerivStar.lean/declarations/fderivwithin-star.md) | 86 | `result-track:6184ef03e36195be213854763a2749f16570cbcbe4aec3fbfcc306559dc7806b` |
+| 14 | `theorem` | [fderiv_star](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FDerivStar.lean/declarations/fderiv-star.md) | 92 | `result-track:0273a5dc2d6099e54cd115d1bd882118683cc20f993bb7a06b8d16ed5b1df0dc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

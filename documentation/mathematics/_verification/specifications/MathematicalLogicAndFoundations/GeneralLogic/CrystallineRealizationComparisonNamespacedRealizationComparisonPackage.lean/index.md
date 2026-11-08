@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CrystallineRealizationComparisonNamespacedRealizationComparisonPackage.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CrystallineRealizationComparisonNamespacedRealizationComparisonPackage.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CrystallineRealizationComparisonNamespacedRealizationComparisonPackage.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CrystallineRealizationComparisonNamespacedRealizationComparisonPackage.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RealizationComparisonPackage](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CrystallineRealizationComparisonNamespacedRealizationComparisonPackage.lean/declarations/realizationcomparisonpackage.md) | 27 | `declaration-track:204ba4c1aca92f6ee6d07344b45f9668df728cd6203129ff95ce0639298e3d81` |
-| 2 | `theorem` | [realization_comparison_maps_exist](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CrystallineRealizationComparisonNamespacedRealizationComparisonPackage.lean/declarations/realization-comparison-maps-exist.md) | 38 | `result-track:518c657a4d55d188cc15cc782c4d1b372615fc89e5d783a945f97ce284cfa9a7` |
-| 3 | `theorem` | [realization_trace_classes_agree](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CrystallineRealizationComparisonNamespacedRealizationComparisonPackage.lean/declarations/realization-trace-classes-agree.md) | 43 | `result-track:aa1f6032548908bba7f547b48255b5c344c812893294c2841ed9bb790a169d7c` |
+| 1 | `structure` | [RealizationComparisonPackage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CrystallineRealizationComparisonNamespacedRealizationComparisonPackage.lean/declarations/realizationcomparisonpackage.md) | 27 | `declaration-track:204ba4c1aca92f6ee6d07344b45f9668df728cd6203129ff95ce0639298e3d81` |
+| 2 | `theorem` | [realization_comparison_maps_exist](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CrystallineRealizationComparisonNamespacedRealizationComparisonPackage.lean/declarations/realization-comparison-maps-exist.md) | 38 | `result-track:518c657a4d55d188cc15cc782c4d1b372615fc89e5d783a945f97ce284cfa9a7` |
+| 3 | `theorem` | [realization_trace_classes_agree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CrystallineRealizationComparisonNamespacedRealizationComparisonPackage.lean/declarations/realization-trace-classes-agree.md) | 43 | `result-track:aa1f6032548908bba7f547b48255b5c344c812893294c2841ed9bb790a169d7c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

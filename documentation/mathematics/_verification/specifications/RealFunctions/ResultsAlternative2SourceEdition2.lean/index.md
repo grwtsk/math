@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/ResultsAlternative2SourceEdition2.lean/index.md) · [Full source](../../../../RealFunctions/ResultsAlternative2SourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ResultsAlternative2SourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ResultsAlternative2SourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [cyclicCharacterProjector](../../../../RealFunctions/ResultsAlternative2SourceEdition2.lean/declarations/cycliccharacterprojector.md) | 19 | `declaration-track:a098ff880a3afe4fdb6e228e0d7880e238e8ac59af93732a257f32e7e09cc9f2` |
+| 1 | `def` | [cyclicCharacterProjector](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ResultsAlternative2SourceEdition2.lean/declarations/cycliccharacterprojector.md) | 19 | `declaration-track:a098ff880a3afe4fdb6e228e0d7880e238e8ac59af93732a257f32e7e09cc9f2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

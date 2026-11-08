@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/ReflectionNamespacedPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/ReflectionNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/ReflectionNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/ReflectionNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [adjRetractionAux](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/ReflectionNamespacedPublic.lean/declarations/adjretractionaux.md) | 53 | `declaration-track:6cdc36052a55c7cc6b7e1fd8c868cb1d3a5dc2d87c1d8effb0088e760352a719` |
-| 2 | `def` | [adjRetraction](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/ReflectionNamespacedPublic.lean/declarations/adjretraction.md) | 61 | `declaration-track:068f2369df75a370f6e0649e376dd45e09662e6ded3ca6c7294b4209458ff156` |
-| 3 | `lemma` | [adjRetraction_is_retraction](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/ReflectionNamespacedPublic.lean/declarations/adjretraction-is-retraction.md) | 66 | `result-track:68ad8c808c252e3b11830f1d30361fa2b4c4872322a268bab152f93ad30eb68c` |
-| 4 | `theorem` | [isIso_tfae](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/ReflectionNamespacedPublic.lean/declarations/isiso-tfae.md) | 98 | `result-track:7ddfee518269e178e2ced70c4c02c32b6baad7b8de94e29ba1b23cb5c8a6bd95` |
-| 5 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/ReflectionNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 213 | `declaration-track:b8436b6c8c01accde41b0f064bf353da80a04f33d1b89aacdcd24b255c96a610` |
-| 6 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/ReflectionNamespacedPublic.lean/declarations/instance.md) | 219 | `declaration-track:61b6566513a8d7c579ce46bfee048c8f87ebada5452dca8a11f2c2fbed8d6602` |
-| 7 | `def` | [closed](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/ReflectionNamespacedPublic.lean/declarations/closed.md) | 228 | `declaration-track:dc8cb6f40e0d732d2b259f1693fdc647ccb88e4489b120ff06a2e52209263d79` |
-| 8 | `def` | [monoidalClosed](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/ReflectionNamespacedPublic.lean/declarations/monoidalclosed.md) | 248 | `declaration-track:599b5099c0b87c948c2b5e77bae1ce4c715eb0e1e9a5a3b65efe28751e493cce` |
+| 1 | `def` | [adjRetractionAux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/ReflectionNamespacedPublic.lean/declarations/adjretractionaux.md) | 53 | `declaration-track:6cdc36052a55c7cc6b7e1fd8c868cb1d3a5dc2d87c1d8effb0088e760352a719` |
+| 2 | `def` | [adjRetraction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/ReflectionNamespacedPublic.lean/declarations/adjretraction.md) | 61 | `declaration-track:068f2369df75a370f6e0649e376dd45e09662e6ded3ca6c7294b4209458ff156` |
+| 3 | `lemma` | [adjRetraction_is_retraction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/ReflectionNamespacedPublic.lean/declarations/adjretraction-is-retraction.md) | 66 | `result-track:68ad8c808c252e3b11830f1d30361fa2b4c4872322a268bab152f93ad30eb68c` |
+| 4 | `theorem` | [isIso_tfae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/ReflectionNamespacedPublic.lean/declarations/isiso-tfae.md) | 98 | `result-track:7ddfee518269e178e2ced70c4c02c32b6baad7b8de94e29ba1b23cb5c8a6bd95` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/ReflectionNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 213 | `declaration-track:b8436b6c8c01accde41b0f064bf353da80a04f33d1b89aacdcd24b255c96a610` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/ReflectionNamespacedPublic.lean/declarations/instance.md) | 219 | `declaration-track:61b6566513a8d7c579ce46bfee048c8f87ebada5452dca8a11f2c2fbed8d6602` |
+| 7 | `def` | [closed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/ReflectionNamespacedPublic.lean/declarations/closed.md) | 228 | `declaration-track:dc8cb6f40e0d732d2b259f1693fdc647ccb88e4489b120ff06a2e52209263d79` |
+| 8 | `def` | [monoidalClosed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/ReflectionNamespacedPublic.lean/declarations/monoidalclosed.md) | 248 | `declaration-track:599b5099c0b87c948c2b5e77bae1ce4c715eb0e1e9a5a3b65efe28751e493cce` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

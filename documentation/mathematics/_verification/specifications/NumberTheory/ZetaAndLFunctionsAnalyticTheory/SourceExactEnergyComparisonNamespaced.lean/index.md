@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceExactEnergyComparisonNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceExactEnergyComparisonNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceExactEnergyComparisonNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceExactEnergyComparisonNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exactMeanTailBudget_le_original](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceExactEnergyComparisonNamespaced.lean/declarations/exactmeantailbudget-le-original.md) | 28 | `result-track:d77363c1906aaeb6d686c675db4eae9cf0db69d992252510c771cc0506729488` |
-| 2 | `theorem` | [exactMeanAtomBudget_le_original](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceExactEnergyComparisonNamespaced.lean/declarations/exactmeanatombudget-le-original.md) | 44 | `result-track:cbb252585eb5eeda01c29672050828a58987d5b4120caca9a81fde69023e92ba` |
-| 3 | `theorem` | [exactMeanResidualBudget_le_original](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceExactEnergyComparisonNamespaced.lean/declarations/exactmeanresidualbudget-le-original.md) | 50 | `result-track:5539dc41772858059424f4467627a2bbd3a58218fb69e45169e1b0b249fc4540` |
-| 4 | `theorem` | [atom_budget_gain_when_active](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceExactEnergyComparisonNamespaced.lean/declarations/atom-budget-gain-when-active.md) | 56 | `result-track:086bb8836f9b8f9d7b2eb94b88f9bfb2e47081db76822c5d0dcd85c18dbb4b64` |
-| 5 | `theorem` | [original_lower_budget_le_exact](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceExactEnergyComparisonNamespaced.lean/declarations/original-lower-budget-le-exact.md) | 68 | `result-track:0bed6aa141510b4723395c053fea8e63384f644a6310402b07ec258ccabd497e` |
-| 6 | `theorem` | [tail_lower_gain_when_active](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceExactEnergyComparisonNamespaced.lean/declarations/tail-lower-gain-when-active.md) | 76 | `result-track:51424c5871704f219f5e6372a36fa37a7817663c904769d1daedf1617de04f6c` |
+| 1 | `theorem` | [exactMeanTailBudget_le_original](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceExactEnergyComparisonNamespaced.lean/declarations/exactmeantailbudget-le-original.md) | 28 | `result-track:d77363c1906aaeb6d686c675db4eae9cf0db69d992252510c771cc0506729488` |
+| 2 | `theorem` | [exactMeanAtomBudget_le_original](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceExactEnergyComparisonNamespaced.lean/declarations/exactmeanatombudget-le-original.md) | 44 | `result-track:cbb252585eb5eeda01c29672050828a58987d5b4120caca9a81fde69023e92ba` |
+| 3 | `theorem` | [exactMeanResidualBudget_le_original](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceExactEnergyComparisonNamespaced.lean/declarations/exactmeanresidualbudget-le-original.md) | 50 | `result-track:5539dc41772858059424f4467627a2bbd3a58218fb69e45169e1b0b249fc4540` |
+| 4 | `theorem` | [atom_budget_gain_when_active](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceExactEnergyComparisonNamespaced.lean/declarations/atom-budget-gain-when-active.md) | 56 | `result-track:086bb8836f9b8f9d7b2eb94b88f9bfb2e47081db76822c5d0dcd85c18dbb4b64` |
+| 5 | `theorem` | [original_lower_budget_le_exact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceExactEnergyComparisonNamespaced.lean/declarations/original-lower-budget-le-exact.md) | 68 | `result-track:0bed6aa141510b4723395c053fea8e63384f644a6310402b07ec258ccabd497e` |
+| 6 | `theorem` | [tail_lower_gain_when_active](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceExactEnergyComparisonNamespaced.lean/declarations/tail-lower-gain-when-active.md) | 76 | `result-track:51424c5871704f219f5e6372a36fa37a7817663c904769d1daedf1617de04f6c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

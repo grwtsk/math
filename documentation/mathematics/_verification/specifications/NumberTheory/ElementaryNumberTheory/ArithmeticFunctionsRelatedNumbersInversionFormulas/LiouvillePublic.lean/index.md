@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/LiouvillePublic.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/LiouvillePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/LiouvillePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/LiouvillePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [liouville](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/LiouvillePublic.lean/declarations/liouville.md) | 27 | `declaration-track:fc041d8d1a47031ed3536c448ce4389219cc6aa6233090d0785c082690a9cbe3` |
-| 2 | `theorem` | [liouville_apply](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/LiouvillePublic.lean/declarations/liouville-apply.md) | 31 | `result-track:541233569e91bf664af65b0b402f5e09f9aa457db863e300bbd7eab14b49c81f` |
-| 3 | `theorem` | [liouville_ne_zero](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/LiouvillePublic.lean/declarations/liouville-ne-zero.md) | 34 | `result-track:7d41a5bb70b89de394364384749eaa79aaf22784feef40b49bc4dbde548cbecc` |
-| 4 | `theorem` | [liouville_apply_one](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/LiouvillePublic.lean/declarations/liouville-apply-one.md) | 37 | `result-track:e210d4aa4643d1d08f9a146b1d1a262dd0e05b25840359e5da52470b0109f51a` |
-| 5 | `theorem` | [liouville_apply_mul](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/LiouvillePublic.lean/declarations/liouville-apply-mul.md) | 40 | `result-track:e83ac853acbdb6ec55b467b254bba678771eeb902a27a092c42ce268f69ec19d` |
-| 6 | `theorem` | [isMultiplicative_liouville](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/LiouvillePublic.lean/declarations/ismultiplicative-liouville.md) | 47 | `result-track:24b582e40ef79de6c253f77611466b84cef8e6294dd4520ec4fb3d43014ec989` |
+| 1 | `def` | [liouville](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/LiouvillePublic.lean/declarations/liouville.md) | 27 | `declaration-track:fc041d8d1a47031ed3536c448ce4389219cc6aa6233090d0785c082690a9cbe3` |
+| 2 | `theorem` | [liouville_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/LiouvillePublic.lean/declarations/liouville-apply.md) | 31 | `result-track:541233569e91bf664af65b0b402f5e09f9aa457db863e300bbd7eab14b49c81f` |
+| 3 | `theorem` | [liouville_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/LiouvillePublic.lean/declarations/liouville-ne-zero.md) | 34 | `result-track:7d41a5bb70b89de394364384749eaa79aaf22784feef40b49bc4dbde548cbecc` |
+| 4 | `theorem` | [liouville_apply_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/LiouvillePublic.lean/declarations/liouville-apply-one.md) | 37 | `result-track:e210d4aa4643d1d08f9a146b1d1a262dd0e05b25840359e5da52470b0109f51a` |
+| 5 | `theorem` | [liouville_apply_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/LiouvillePublic.lean/declarations/liouville-apply-mul.md) | 40 | `result-track:e83ac853acbdb6ec55b467b254bba678771eeb902a27a092c42ce268f69ec19d` |
+| 6 | `theorem` | [isMultiplicative_liouville](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/LiouvillePublic.lean/declarations/ismultiplicative-liouville.md) | 47 | `result-track:24b582e40ef79de6c253f77611466b84cef8e6294dd4520ec4fb3d43014ec989` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

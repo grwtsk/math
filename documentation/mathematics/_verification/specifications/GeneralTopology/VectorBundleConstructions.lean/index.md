@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/VectorBundleConstructions.lean/index.md) · [Full source](../../../../GeneralTopology/VectorBundleConstructions.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/VectorBundleConstructions.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/VectorBundleConstructions.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,18 +59,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [trivialization.isLinear](../../../../GeneralTopology/VectorBundleConstructions.lean/declarations/trivialization-islinear.md) | 40 | `declaration-track:c218239750745462ea9e1c4facb8e182ce8e6328f8c84c2e884112ca20e7e9a4` |
-| 2 | `theorem` | [trivialization.coordChangeL](../../../../GeneralTopology/VectorBundleConstructions.lean/declarations/trivialization-coordchangel.md) | 44 | `result-track:b21df29f019599bccd1bace6d178d77cf1263601c5a833725801e54f25195427` |
-| 3 | `instance` | [vectorBundle](../../../../GeneralTopology/VectorBundleConstructions.lean/declarations/vectorbundle.md) | 51 | `declaration-track:9dbff7db11e20c253bb4e3f8052b49472eafd17da3362ca4ef5c9d0fac93089b` |
-| 4 | `instance` | [prod.isLinear](../../../../GeneralTopology/VectorBundleConstructions.lean/declarations/prod-islinear.md) | 79 | `declaration-track:92db390d5a2517bc8effba4fb86fda55d6dc36a0f1b1f948c8a4f44f2aa2f819` |
-| 5 | `theorem` | [coordChangeL_prod](../../../../GeneralTopology/VectorBundleConstructions.lean/declarations/coordchangel-prod.md) | 84 | `result-track:2bae187d0b132bba3d39bf815e23e78c37c12b02bba67fb2cd797e90d08954c7` |
-| 6 | `theorem` | [prod_apply](../../../../GeneralTopology/VectorBundleConstructions.lean/declarations/prod-apply.md) | 99 | `result-track:344eab5f30d304821dd74284f0c2438aa3dafe60fdcd1b6c59d8373ab593a807` |
-| 7 | `instance` | [VectorBundle.prod](../../../../GeneralTopology/VectorBundleConstructions.lean/declarations/vectorbundle-prod.md) | 114 | `declaration-track:cd3647d526ca9c383175dc4b02aeec017f77f676061d0f59327456ac271bb03a` |
-| 8 | `theorem` | [Trivialization.continuousLinearEquivAt_prod](../../../../GeneralTopology/VectorBundleConstructions.lean/declarations/trivialization-continuouslinearequivat-prod.md) | 137 | `result-track:6a029f5bcb0e367ab5e36ab1393c191a066eba4b0b0a13dd8b673e5c95808a58` |
-| 9 | `instance` | [(anonymous)](../../../../GeneralTopology/VectorBundleConstructions.lean/declarations/instance-source-edition-2.md) | 155 | `declaration-track:a6dadff7052ef2ab4475af726528f9ac02d483c499eada7a829f888b626894ce` |
-| 10 | `instance` | [(anonymous)](../../../../GeneralTopology/VectorBundleConstructions.lean/declarations/instance.md) | 157 | `declaration-track:956e68d4dadadb572535e88e3684f4a22b826e7f9a3129bb42940b214c35ea6b` |
-| 11 | `instance` | [Trivialization.pullback_linear](../../../../GeneralTopology/VectorBundleConstructions.lean/declarations/trivialization-pullback-linear.md) | 164 | `declaration-track:f4a75ea21f8a23c74c806af6a578e781a7c9b3d993c3f1b8d3a98c0b6d129e12` |
-| 12 | `instance` | [VectorBundle.pullback](../../../../GeneralTopology/VectorBundleConstructions.lean/declarations/vectorbundle-pullback.md) | 168 | `declaration-track:f46dc1dfcba96e39f8e15f78aead698fefcb0866cf8b13b245673279efe8e0ee` |
+| 1 | `instance` | [trivialization.isLinear](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/VectorBundleConstructions.lean/declarations/trivialization-islinear.md) | 40 | `declaration-track:c218239750745462ea9e1c4facb8e182ce8e6328f8c84c2e884112ca20e7e9a4` |
+| 2 | `theorem` | [trivialization.coordChangeL](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/VectorBundleConstructions.lean/declarations/trivialization-coordchangel.md) | 44 | `result-track:b21df29f019599bccd1bace6d178d77cf1263601c5a833725801e54f25195427` |
+| 3 | `instance` | [vectorBundle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/VectorBundleConstructions.lean/declarations/vectorbundle.md) | 51 | `declaration-track:9dbff7db11e20c253bb4e3f8052b49472eafd17da3362ca4ef5c9d0fac93089b` |
+| 4 | `instance` | [prod.isLinear](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/VectorBundleConstructions.lean/declarations/prod-islinear.md) | 79 | `declaration-track:92db390d5a2517bc8effba4fb86fda55d6dc36a0f1b1f948c8a4f44f2aa2f819` |
+| 5 | `theorem` | [coordChangeL_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/VectorBundleConstructions.lean/declarations/coordchangel-prod.md) | 84 | `result-track:2bae187d0b132bba3d39bf815e23e78c37c12b02bba67fb2cd797e90d08954c7` |
+| 6 | `theorem` | [prod_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/VectorBundleConstructions.lean/declarations/prod-apply.md) | 99 | `result-track:344eab5f30d304821dd74284f0c2438aa3dafe60fdcd1b6c59d8373ab593a807` |
+| 7 | `instance` | [VectorBundle.prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/VectorBundleConstructions.lean/declarations/vectorbundle-prod.md) | 114 | `declaration-track:cd3647d526ca9c383175dc4b02aeec017f77f676061d0f59327456ac271bb03a` |
+| 8 | `theorem` | [Trivialization.continuousLinearEquivAt_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/VectorBundleConstructions.lean/declarations/trivialization-continuouslinearequivat-prod.md) | 137 | `result-track:6a029f5bcb0e367ab5e36ab1393c191a066eba4b0b0a13dd8b673e5c95808a58` |
+| 9 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/VectorBundleConstructions.lean/declarations/instance-source-edition-2.md) | 155 | `declaration-track:a6dadff7052ef2ab4475af726528f9ac02d483c499eada7a829f888b626894ce` |
+| 10 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/VectorBundleConstructions.lean/declarations/instance.md) | 157 | `declaration-track:956e68d4dadadb572535e88e3684f4a22b826e7f9a3129bb42940b214c35ea6b` |
+| 11 | `instance` | [Trivialization.pullback_linear](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/VectorBundleConstructions.lean/declarations/trivialization-pullback-linear.md) | 164 | `declaration-track:f4a75ea21f8a23c74c806af6a578e781a7c9b3d993c3f1b8d3a98c0b6d129e12` |
+| 12 | `instance` | [VectorBundle.pullback](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/VectorBundleConstructions.lean/declarations/vectorbundle-pullback.md) | 168 | `declaration-track:f46dc1dfcba96e39f8e15f78aead698fefcb0866cf8b13b245673279efe8e0ee` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

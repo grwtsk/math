@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/KonigPublic.lean/index.md) · [Full source](../../../../GeneralTopology/KonigPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/KonigPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/KonigPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [FiniteDiagramArrow](../../../../GeneralTopology/KonigPublic.lean/declarations/finitediagramarrow.md) | 53 | `declaration-track:ae34b783161d728881df077245a54a31f93e3dec4b2b665a40b38f406f4c6767` |
-| 2 | `abbrev` | [FiniteDiagram](../../../../GeneralTopology/KonigPublic.lean/declarations/finitediagram.md) | 57 | `declaration-track:c11a36867bb0966753580e0f1a9fcfcf9f3239e4cd971460298e5f0b5d83d592` |
-| 3 | `def` | [partialSections](../../../../GeneralTopology/KonigPublic.lean/declarations/partialsections.md) | 65 | `declaration-track:ec39c1afd25f8b83cf3c8c704cf85c16243e008a7bd67ae6789983c48b5ed289` |
-| 4 | `theorem` | [partialSections.nonempty](../../../../GeneralTopology/KonigPublic.lean/declarations/partialsections-nonempty.md) | 71 | `result-track:2d92de8cf829299871b790b02242e638d3c15ba18bf356850ae4a52c23c3b5a9` |
-| 5 | `theorem` | [partialSections.directed](../../../../GeneralTopology/KonigPublic.lean/declarations/partialsections-directed.md) | 87 | `result-track:1b9b0d20ec6157de808a0553f9e089eeccf2325b307ea98ebac915e8c0254934` |
-| 6 | `theorem` | [partialSections.closed](../../../../GeneralTopology/KonigPublic.lean/declarations/partialsections-closed.md) | 111 | `result-track:32bb9fbffa9e0d4c57d45c4fbb6585a283779d3ca3f0c68c1b264621f95fa44b` |
-| 7 | `theorem` | [nonempty_limitCone_of_compact_t2_cofiltered_system](../../../../GeneralTopology/KonigPublic.lean/declarations/nonempty-limitcone-of-compact-t2-cofiltered-system.md) | 126 | `result-track:24a360075e66fe9ee80d030465a8ec94931e7a384fb2899be061b8356c5c00d9` |
+| 1 | `abbrev` | [FiniteDiagramArrow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/KonigPublic.lean/declarations/finitediagramarrow.md) | 53 | `declaration-track:ae34b783161d728881df077245a54a31f93e3dec4b2b665a40b38f406f4c6767` |
+| 2 | `abbrev` | [FiniteDiagram](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/KonigPublic.lean/declarations/finitediagram.md) | 57 | `declaration-track:c11a36867bb0966753580e0f1a9fcfcf9f3239e4cd971460298e5f0b5d83d592` |
+| 3 | `def` | [partialSections](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/KonigPublic.lean/declarations/partialsections.md) | 65 | `declaration-track:ec39c1afd25f8b83cf3c8c704cf85c16243e008a7bd67ae6789983c48b5ed289` |
+| 4 | `theorem` | [partialSections.nonempty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/KonigPublic.lean/declarations/partialsections-nonempty.md) | 71 | `result-track:2d92de8cf829299871b790b02242e638d3c15ba18bf356850ae4a52c23c3b5a9` |
+| 5 | `theorem` | [partialSections.directed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/KonigPublic.lean/declarations/partialsections-directed.md) | 87 | `result-track:1b9b0d20ec6157de808a0553f9e089eeccf2325b307ea98ebac915e8c0254934` |
+| 6 | `theorem` | [partialSections.closed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/KonigPublic.lean/declarations/partialsections-closed.md) | 111 | `result-track:32bb9fbffa9e0d4c57d45c4fbb6585a283779d3ca3f0c68c1b264621f95fa44b` |
+| 7 | `theorem` | [nonempty_limitCone_of_compact_t2_cofiltered_system](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/KonigPublic.lean/declarations/nonempty-limitcone-of-compact-t2-cofiltered-system.md) | 126 | `result-track:24a360075e66fe9ee80d030465a8ec94931e7a384fb2899be061b8356c5c00d9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

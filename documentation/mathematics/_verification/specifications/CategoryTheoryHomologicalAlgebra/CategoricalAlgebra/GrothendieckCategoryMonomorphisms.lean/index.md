@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckCategoryMonomorphisms.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckCategoryMonomorphisms.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckCategoryMonomorphisms.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckCategoryMonomorphisms.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [map_bot_le](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckCategoryMonomorphisms.lean/declarations/map-bot-le.md) | 35 | `declaration-track:4ba0af73e08c2ecbceb66293ac984733668eaa92ededff12deff3f41b1df1673` |
-| 2 | `lemma` | [mono](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckCategoryMonomorphisms.lean/declarations/mono.md) | 68 | `result-track:f362327f100e6b0aa29687c7c380bac51a0df5a598372aefaa4b3fee8948ec70` |
-| 3 | `instance` | [mono_map](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckCategoryMonomorphisms.lean/declarations/mono-map.md) | 78 | `declaration-track:c12b10b91473a40e857f827036e6fa0d3e6515c32a8393f4ef8b141b586d7ecc` |
-| 4 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckCategoryMonomorphisms.lean/declarations/instance.md) | 87 | `declaration-track:3b9b066d429ef31fa8bb2197cde76a47660162445cc9f23d7dec859ff2e3b186` |
+| 1 | `instance` | [map_bot_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckCategoryMonomorphisms.lean/declarations/map-bot-le.md) | 35 | `declaration-track:4ba0af73e08c2ecbceb66293ac984733668eaa92ededff12deff3f41b1df1673` |
+| 2 | `lemma` | [mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckCategoryMonomorphisms.lean/declarations/mono.md) | 68 | `result-track:f362327f100e6b0aa29687c7c380bac51a0df5a598372aefaa4b3fee8948ec70` |
+| 3 | `instance` | [mono_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckCategoryMonomorphisms.lean/declarations/mono-map.md) | 78 | `declaration-track:c12b10b91473a40e857f827036e6fa0d3e6515c32a8393f4ef8b141b586d7ecc` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/GrothendieckCategoryMonomorphisms.lean/declarations/instance.md) | 87 | `declaration-track:3b9b066d429ef31fa8bb2197cde76a47660162445cc9f23d7dec859ff2e3b186` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

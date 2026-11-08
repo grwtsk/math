@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/ComplexAngle.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/ComplexAngle.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexAngle.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexAngle.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,19 +58,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [angle_eq_abs_arg](../../../../FunctionsOfAComplexVariable/ComplexAngle.lean/declarations/angle-eq-abs-arg.md) | 37 | `result-track:6a48fa7304c0739f42f02a3a093838789083132331b4c330c7f11b2f8c3b0d0b` |
-| 2 | `lemma` | [angle_one_left](../../../../FunctionsOfAComplexVariable/ComplexAngle.lean/declarations/angle-one-left.md) | 45 | `result-track:3cb4eb63df6b2659fcf52c60a3feb679e9f200d6881edc684d349e8a6a29f615` |
-| 3 | `lemma` | [angle_one_right](../../../../FunctionsOfAComplexVariable/ComplexAngle.lean/declarations/angle-one-right.md) | 46 | `result-track:b4b6df2bc574277418fb4d36bbdd19e5bc5824a00c022e219c8b4ec1f6e81b96` |
-| 4 | `lemma` | [angle_mul_left](../../../../FunctionsOfAComplexVariable/ComplexAngle.lean/declarations/angle-mul-left.md) | 48 | `result-track:f232892f9fb7238497617a8e8d604165afce9987f0795c69059e6095747892a8` |
-| 5 | `lemma` | [angle_mul_right](../../../../FunctionsOfAComplexVariable/ComplexAngle.lean/declarations/angle-mul-right.md) | 52 | `result-track:3425a7648a2db5ce131a9e1893929d769fb4c5060110d343a67ac572af180f41` |
-| 6 | `lemma` | [angle_div_left_eq_angle_mul_right](../../../../FunctionsOfAComplexVariable/ComplexAngle.lean/declarations/angle-div-left-eq-angle-mul-right.md) | 55 | `result-track:a2b53c1931d2577c990c77900ae0eff40f79baad9912b8b77271649343170994` |
-| 7 | `lemma` | [angle_div_right_eq_angle_mul_left](../../../../FunctionsOfAComplexVariable/ComplexAngle.lean/declarations/angle-div-right-eq-angle-mul-left.md) | 60 | `result-track:33a99484e94fccb9be4249980bdd9ac7aa9aacbaf5ef0160d415b292ee15bcaa` |
-| 8 | `lemma` | [angle_exp_exp](../../../../FunctionsOfAComplexVariable/ComplexAngle.lean/declarations/angle-exp-exp.md) | 63 | `result-track:110f2c0ec692b6ccfbcf993f755ed8221b32532880f6e07104115a27770601c7` |
-| 9 | `lemma` | [angle_exp_one](../../../../FunctionsOfAComplexVariable/ComplexAngle.lean/declarations/angle-exp-one.md) | 68 | `result-track:464c256099f53a832a84f1c5af423d302e34c85872e9739b31243ec0a4904c49` |
-| 10 | `lemma` | [norm_sub_mem_Icc_angle](../../../../FunctionsOfAComplexVariable/ComplexAngle.lean/declarations/norm-sub-mem-icc-angle.md) | 79 | `result-track:13d1e55439ad674817a86b0c8e19c602909293819bd5b7d39e1c557e0a50a971` |
-| 11 | `lemma` | [norm_sub_le_angle](../../../../FunctionsOfAComplexVariable/ComplexAngle.lean/declarations/norm-sub-le-angle.md) | 109 | `result-track:00edb154c9bde68c7fb65331d779c9a027e42ab82c86c7d85b42c4969d7c855f` |
-| 12 | `lemma` | [mul_angle_le_norm_sub](../../../../FunctionsOfAComplexVariable/ComplexAngle.lean/declarations/mul-angle-le-norm-sub.md) | 113 | `result-track:263dd56c0d84983dd7c75b0f49882cddf7ff3c8001eefd7923ea7badeb58b0cb` |
-| 13 | `lemma` | [angle_le_mul_norm_sub](../../../../FunctionsOfAComplexVariable/ComplexAngle.lean/declarations/angle-le-mul-norm-sub.md) | 117 | `result-track:a6565c032e88f41349a2c5b39de624e1f178d331dda785fc80a4094148cfd8ab` |
+| 1 | `lemma` | [angle_eq_abs_arg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexAngle.lean/declarations/angle-eq-abs-arg.md) | 37 | `result-track:6a48fa7304c0739f42f02a3a093838789083132331b4c330c7f11b2f8c3b0d0b` |
+| 2 | `lemma` | [angle_one_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexAngle.lean/declarations/angle-one-left.md) | 45 | `result-track:3cb4eb63df6b2659fcf52c60a3feb679e9f200d6881edc684d349e8a6a29f615` |
+| 3 | `lemma` | [angle_one_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexAngle.lean/declarations/angle-one-right.md) | 46 | `result-track:b4b6df2bc574277418fb4d36bbdd19e5bc5824a00c022e219c8b4ec1f6e81b96` |
+| 4 | `lemma` | [angle_mul_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexAngle.lean/declarations/angle-mul-left.md) | 48 | `result-track:f232892f9fb7238497617a8e8d604165afce9987f0795c69059e6095747892a8` |
+| 5 | `lemma` | [angle_mul_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexAngle.lean/declarations/angle-mul-right.md) | 52 | `result-track:3425a7648a2db5ce131a9e1893929d769fb4c5060110d343a67ac572af180f41` |
+| 6 | `lemma` | [angle_div_left_eq_angle_mul_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexAngle.lean/declarations/angle-div-left-eq-angle-mul-right.md) | 55 | `result-track:a2b53c1931d2577c990c77900ae0eff40f79baad9912b8b77271649343170994` |
+| 7 | `lemma` | [angle_div_right_eq_angle_mul_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexAngle.lean/declarations/angle-div-right-eq-angle-mul-left.md) | 60 | `result-track:33a99484e94fccb9be4249980bdd9ac7aa9aacbaf5ef0160d415b292ee15bcaa` |
+| 8 | `lemma` | [angle_exp_exp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexAngle.lean/declarations/angle-exp-exp.md) | 63 | `result-track:110f2c0ec692b6ccfbcf993f755ed8221b32532880f6e07104115a27770601c7` |
+| 9 | `lemma` | [angle_exp_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexAngle.lean/declarations/angle-exp-one.md) | 68 | `result-track:464c256099f53a832a84f1c5af423d302e34c85872e9739b31243ec0a4904c49` |
+| 10 | `lemma` | [norm_sub_mem_Icc_angle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexAngle.lean/declarations/norm-sub-mem-icc-angle.md) | 79 | `result-track:13d1e55439ad674817a86b0c8e19c602909293819bd5b7d39e1c557e0a50a971` |
+| 11 | `lemma` | [norm_sub_le_angle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexAngle.lean/declarations/norm-sub-le-angle.md) | 109 | `result-track:00edb154c9bde68c7fb65331d779c9a027e42ab82c86c7d85b42c4969d7c855f` |
+| 12 | `lemma` | [mul_angle_le_norm_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexAngle.lean/declarations/mul-angle-le-norm-sub.md) | 113 | `result-track:263dd56c0d84983dd7c75b0f49882cddf7ff3c8001eefd7923ea7badeb58b0cb` |
+| 13 | `lemma` | [angle_le_mul_norm_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexAngle.lean/declarations/angle-le-mul-norm-sub.md) | 117 | `result-track:a6565c032e88f41349a2c5b39de624e1f178d331dda785fc80a4094148cfd8ab` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

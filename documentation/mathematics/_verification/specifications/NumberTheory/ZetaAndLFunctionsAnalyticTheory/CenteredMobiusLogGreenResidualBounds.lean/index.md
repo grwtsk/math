@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidualBounds.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidualBounds.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidualBounds.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidualBounds.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenContinuumPhase`](../../../../../MeasureAndIntegration/CenteredMobiusLogGreenContinuumPhase.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenContinuumPhase`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenContinuumPhase.lean/index.md) — import line 7; pinned internal source present.
 - `Mathlib.Tactic` — import line 8; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [norm_greenPhaseHarmonicResidual_le_residue](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidualBounds.lean/declarations/norm-greenphaseharmonicresidual-le-residue.md) | 16 | `result-track:3ed439ed9986f34d838b7d91f969902ef31d5b36e467f576b92f87dee5ef7ee9` |
-| 2 | `theorem` | [norm_greenCenteringResidual_le_residue](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidualBounds.lean/declarations/norm-greencenteringresidual-le-residue.md) | 40 | `result-track:32a750bf14e1abae02dd7d6c9eea8f31b429616442d30d8cbfc6f00289ddf229` |
-| 3 | `theorem` | [norm_greenCenteringResidual_le_aliasing](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidualBounds.lean/declarations/norm-greencenteringresidual-le-aliasing.md) | 72 | `result-track:01af6879f41a77767926b6cac1a987cb3009ea270b4a297bf2fca5ed43bedec6` |
+| 1 | `theorem` | [norm_greenPhaseHarmonicResidual_le_residue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidualBounds.lean/declarations/norm-greenphaseharmonicresidual-le-residue.md) | 16 | `result-track:3ed439ed9986f34d838b7d91f969902ef31d5b36e467f576b92f87dee5ef7ee9` |
+| 2 | `theorem` | [norm_greenCenteringResidual_le_residue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidualBounds.lean/declarations/norm-greencenteringresidual-le-residue.md) | 40 | `result-track:32a750bf14e1abae02dd7d6c9eea8f31b429616442d30d8cbfc6f00289ddf229` |
+| 3 | `theorem` | [norm_greenCenteringResidual_le_aliasing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidualBounds.lean/declarations/norm-greencenteringresidual-le-aliasing.md) | 72 | `result-track:01af6879f41a77767926b6cac1a987cb3009ea270b4a297bf2fca5ed43bedec6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

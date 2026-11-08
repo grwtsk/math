@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/DFinsuppNotation.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/DFinsuppNotation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DFinsuppNotation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DFinsuppNotation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [elabSingle₀](../../../../../../ComputerScience/TheoryOfData/DataStructures/DFinsuppNotation.lean/declarations/elabsingle.md) | 28 | `declaration-track:8abf5995f13f53c5d4f50467f076f25665ba7103b8f7658d1e1553e75fa362f8` |
-| 2 | `def` | [elabUpdate₀](../../../../../../ComputerScience/TheoryOfData/DataStructures/DFinsuppNotation.lean/declarations/elabupdate.md) | 38 | `declaration-track:6733c8166852a3ae8a9862d5387003060605a82eb571c0f373babe0574fd0c23` |
-| 3 | `def` | [singleUnexpander](../../../../../../ComputerScience/TheoryOfData/DataStructures/DFinsuppNotation.lean/declarations/singleunexpander.md) | 48 | `declaration-track:bf7f1c8a04db02fb204500df1c44bd6070363f4df232bff56ce332f486158f64` |
-| 4 | `def` | [updateUnexpander](../../../../../../ComputerScience/TheoryOfData/DataStructures/DFinsuppNotation.lean/declarations/updateunexpander.md) | 54 | `declaration-track:ee945e4333b97c553cc85b6940ba89a8157a96790fa924df7a125ef12af54c4a` |
-| 5 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/DFinsuppNotation.lean/declarations/instance.md) | 61 | `declaration-track:e8af99cc14274c10315a0c4ede155399980b516c26cff9c3be2f18730a610585` |
+| 1 | `def` | [elabSingle₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DFinsuppNotation.lean/declarations/elabsingle.md) | 28 | `declaration-track:8abf5995f13f53c5d4f50467f076f25665ba7103b8f7658d1e1553e75fa362f8` |
+| 2 | `def` | [elabUpdate₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DFinsuppNotation.lean/declarations/elabupdate.md) | 38 | `declaration-track:6733c8166852a3ae8a9862d5387003060605a82eb571c0f373babe0574fd0c23` |
+| 3 | `def` | [singleUnexpander](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DFinsuppNotation.lean/declarations/singleunexpander.md) | 48 | `declaration-track:bf7f1c8a04db02fb204500df1c44bd6070363f4df232bff56ce332f486158f64` |
+| 4 | `def` | [updateUnexpander](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DFinsuppNotation.lean/declarations/updateunexpander.md) | 54 | `declaration-track:ee945e4333b97c553cc85b6940ba89a8157a96790fa924df7a125ef12af54c4a` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DFinsuppNotation.lean/declarations/instance.md) | 61 | `declaration-track:e8af99cc14274c10315a0c4ede155399980b516c26cff9c3be2f18730a610585` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RhEstimateFullMertensAbel.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RhEstimateFullMertensAbel.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RhEstimateFullMertensAbel.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RhEstimateFullMertensAbel.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RhEstimateFullMertensAbel.lean/declarations/example.md) | 12 | `declaration-track:5822f0831305ddd8ede1d137340e07d60bf3e7504acc0c349883897d40afe5d7` |
-| 2 | `example` | [(anonymous)](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RhEstimateFullMertensAbel.lean/declarations/example-source-edition-2.md) | 20 | `declaration-track:81332fad3f37dcebe2d9d641d5ff28d96dbd68a2836dd3f5e4ded712a14f7fc5` |
-| 3 | `example` | [(anonymous)](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RhEstimateFullMertensAbel.lean/declarations/example-source-edition-3.md) | 30 | `declaration-track:ef1a3045d98b2d673953fc03217d83caeb5d1f40134c35dd9c763512de3aa1de` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RhEstimateFullMertensAbel.lean/declarations/example.md) | 12 | `declaration-track:5822f0831305ddd8ede1d137340e07d60bf3e7504acc0c349883897d40afe5d7` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RhEstimateFullMertensAbel.lean/declarations/example-source-edition-2.md) | 20 | `declaration-track:81332fad3f37dcebe2d9d641d5ff28d96dbd68a2836dd3f5e4ded712a14f7fc5` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RhEstimateFullMertensAbel.lean/declarations/example-source-edition-3.md) | 30 | `declaration-track:ef1a3045d98b2d673953fc03217d83caeb5d1f40134c35dd9c763512de3aa1de` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

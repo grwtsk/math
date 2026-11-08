@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FullNamespacedPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FullNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FullNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FullNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [exists_lift_of_mono_of_isConnected](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FullNamespacedPublic.lean/declarations/exists-lift-of-mono-of-isconnected.md) | 59 | `result-track:802d7b7ebc5e1db247fb639f2de3491ea94d4bef87d6828c857b541719fb6600` |
-| 2 | `lemma` | [exists_lift_of_mono](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FullNamespacedPublic.lean/declarations/exists-lift-of-mono.md) | 80 | `result-track:6567b2fc7879987713369eba3c19d0e03c4e77211a32654291c17f43fa8654de` |
-| 3 | `instance` | [functorToAction_full](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FullNamespacedPublic.lean/declarations/functortoaction-full.md) | 101 | `declaration-track:21d70ff1a8a3da3d10b6fe6182bf2b9b6d52a7c1dc18028c37c19644e38dc2cc` |
+| 1 | `lemma` | [exists_lift_of_mono_of_isConnected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FullNamespacedPublic.lean/declarations/exists-lift-of-mono-of-isconnected.md) | 59 | `result-track:802d7b7ebc5e1db247fb639f2de3491ea94d4bef87d6828c857b541719fb6600` |
+| 2 | `lemma` | [exists_lift_of_mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FullNamespacedPublic.lean/declarations/exists-lift-of-mono.md) | 80 | `result-track:6567b2fc7879987713369eba3c19d0e03c4e77211a32654291c17f43fa8654de` |
+| 3 | `instance` | [functorToAction_full](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FullNamespacedPublic.lean/declarations/functortoaction-full.md) | 101 | `declaration-track:21d70ff1a8a3da3d10b6fe6182bf2b9b6d52a7c1dc18028c37c19644e38dc2cc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

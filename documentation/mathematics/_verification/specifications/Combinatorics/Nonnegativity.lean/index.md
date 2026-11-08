@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/Nonnegativity.lean/index.md) · [Full source](../../../../Combinatorics/Nonnegativity.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Nonnegativity.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Nonnegativity.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `Mathematics.SemiLocalDefect.PositiveCapacity` — import line 25; external provider; requires a separately pinned dependency.
-- [`GRWTSK.CombinatoricsAndDiscreteMathematics.TwoElementShapley.AveragedIncrements`](../../../../Combinatorics/AveragedIncrements.lean/index.md) — import line 26; pinned internal source present.
+- [`GRWTSK.CombinatoricsAndDiscreteMathematics.TwoElementShapley.AveragedIncrements`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AveragedIncrements.lean/index.md) — import line 26; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [shapley_attribution_nonnegative](../../../../Combinatorics/Nonnegativity.lean/declarations/shapley-attribution-nonnegative.md) | 42 | `result-track:915c0579d0c424304cb3f9728ef282619f798a5db702722ad9d543a3739d1ef2` |
+| 1 | `theorem` | [shapley_attribution_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Nonnegativity.lean/declarations/shapley-attribution-nonnegative.md) | 42 | `result-track:915c0579d0c424304cb3f9728ef282619f798a5db702722ad9d543a3739d1ef2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PlaceNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PlaceNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PlaceNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PlaceNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [archimedean_ne_finite](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PlaceNamespaced.lean/declarations/archimedean-ne-finite.md) | 28 | `result-track:4e70635639bb89db85090f89b3733d7848555f72f70ddff8bac577c1bfe2e957` |
-| 2 | `theorem` | [bad_tmf_prime_is_finite](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PlaceNamespaced.lean/declarations/bad-tmf-prime-is-finite.md) | 34 | `result-track:48fd270b32566423c1326552e2a8bacb8c104c3cd1f39cea6351bc9905af1008` |
+| 1 | `theorem` | [archimedean_ne_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PlaceNamespaced.lean/declarations/archimedean-ne-finite.md) | 28 | `result-track:4e70635639bb89db85090f89b3733d7848555f72f70ddff8bac577c1bfe2e957` |
+| 2 | `theorem` | [bad_tmf_prime_is_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PlaceNamespaced.lean/declarations/bad-tmf-prime-is-finite.md) | 34 | `result-track:48fd270b32566423c1326552e2a8bacb8c104c3cd1f39cea6351bc9905af1008` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

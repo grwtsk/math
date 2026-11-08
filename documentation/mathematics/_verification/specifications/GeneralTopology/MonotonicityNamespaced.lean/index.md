@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/MonotonicityNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/MonotonicityNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MonotonicityNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MonotonicityNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [checkStrictlyIncreasing](../../../../GeneralTopology/MonotonicityNamespaced.lean/declarations/checkstrictlyincreasing.md) | 61 | `declaration-track:7f3e40dd7994e0861898bffc8f7ee0605f0043d095235ebb91cebfcabb678c5c` |
-| 2 | `def` | [checkStrictlyDecreasing](../../../../GeneralTopology/MonotonicityNamespaced.lean/declarations/checkstrictlydecreasing.md) | 66 | `declaration-track:14f64b570bbc77b2692b6b40706a9a10a644376570ffcbbf5be6c5322d1869f8` |
-| 3 | `theorem` | [verify_strictly_increasing](../../../../GeneralTopology/MonotonicityNamespaced.lean/declarations/verify-strictly-increasing.md) | 78 | `result-track:d3d4207f9b7c8967931d388cd6e92f8d159ad94f451a4df6c46c3109b4b7728f` |
-| 4 | `theorem` | [verify_strictly_decreasing](../../../../GeneralTopology/MonotonicityNamespaced.lean/declarations/verify-strictly-decreasing.md) | 90 | `result-track:faaa6925549e9f75632cdce733e13e15bea112ad401af5762504651e38769384` |
-| 5 | `theorem` | [verify_strictly_increasing_lt](../../../../GeneralTopology/MonotonicityNamespaced.lean/declarations/verify-strictly-increasing-lt.md) | 104 | `result-track:f9a70303a5d5e384a9a2e6cbc90d90938b7247d6ebd04d8a11f0ca4beb682192` |
-| 6 | `theorem` | [verify_strictly_decreasing_lt](../../../../GeneralTopology/MonotonicityNamespaced.lean/declarations/verify-strictly-decreasing-lt.md) | 114 | `result-track:ebcc8a49cbf2dc2db63ebd366c67f937151d702dbd37af9a44e8704e54b173d1` |
-| 7 | `theorem` | [verify_monotone](../../../../GeneralTopology/MonotonicityNamespaced.lean/declarations/verify-monotone.md) | 129 | `result-track:ed86b837b03e5c62e0cf7e82b15f275b09a752fb392f2c8e6567dbc7eeed97e0` |
-| 8 | `theorem` | [verify_antitone](../../../../GeneralTopology/MonotonicityNamespaced.lean/declarations/verify-antitone.md) | 137 | `result-track:87724684666fa0f824e7412eb647f218d5f11efd48f243f4ad18bbb82aa54e92` |
-| 9 | `theorem` | [verify_strictly_increasing_rat](../../../../GeneralTopology/MonotonicityNamespaced.lean/declarations/verify-strictly-increasing-rat.md) | 150 | `result-track:13366a04dc45cb1b521b23a55cdbdcd9a33732392d92aae6ce572e58331ad3ce` |
-| 10 | `theorem` | [verify_strictly_decreasing_rat](../../../../GeneralTopology/MonotonicityNamespaced.lean/declarations/verify-strictly-decreasing-rat.md) | 157 | `result-track:c72a6ba60b7cbb59017b56182c0c23c893c79354d960397d9c4dd2e22515befa` |
+| 1 | `def` | [checkStrictlyIncreasing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MonotonicityNamespaced.lean/declarations/checkstrictlyincreasing.md) | 61 | `declaration-track:7f3e40dd7994e0861898bffc8f7ee0605f0043d095235ebb91cebfcabb678c5c` |
+| 2 | `def` | [checkStrictlyDecreasing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MonotonicityNamespaced.lean/declarations/checkstrictlydecreasing.md) | 66 | `declaration-track:14f64b570bbc77b2692b6b40706a9a10a644376570ffcbbf5be6c5322d1869f8` |
+| 3 | `theorem` | [verify_strictly_increasing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MonotonicityNamespaced.lean/declarations/verify-strictly-increasing.md) | 78 | `result-track:d3d4207f9b7c8967931d388cd6e92f8d159ad94f451a4df6c46c3109b4b7728f` |
+| 4 | `theorem` | [verify_strictly_decreasing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MonotonicityNamespaced.lean/declarations/verify-strictly-decreasing.md) | 90 | `result-track:faaa6925549e9f75632cdce733e13e15bea112ad401af5762504651e38769384` |
+| 5 | `theorem` | [verify_strictly_increasing_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MonotonicityNamespaced.lean/declarations/verify-strictly-increasing-lt.md) | 104 | `result-track:f9a70303a5d5e384a9a2e6cbc90d90938b7247d6ebd04d8a11f0ca4beb682192` |
+| 6 | `theorem` | [verify_strictly_decreasing_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MonotonicityNamespaced.lean/declarations/verify-strictly-decreasing-lt.md) | 114 | `result-track:ebcc8a49cbf2dc2db63ebd366c67f937151d702dbd37af9a44e8704e54b173d1` |
+| 7 | `theorem` | [verify_monotone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MonotonicityNamespaced.lean/declarations/verify-monotone.md) | 129 | `result-track:ed86b837b03e5c62e0cf7e82b15f275b09a752fb392f2c8e6567dbc7eeed97e0` |
+| 8 | `theorem` | [verify_antitone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MonotonicityNamespaced.lean/declarations/verify-antitone.md) | 137 | `result-track:87724684666fa0f824e7412eb647f218d5f11efd48f243f4ad18bbb82aa54e92` |
+| 9 | `theorem` | [verify_strictly_increasing_rat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MonotonicityNamespaced.lean/declarations/verify-strictly-increasing-rat.md) | 150 | `result-track:13366a04dc45cb1b521b23a55cdbdcd9a33732392d92aae6ce572e58331ad3ce` |
+| 10 | `theorem` | [verify_strictly_decreasing_rat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MonotonicityNamespaced.lean/declarations/verify-strictly-decreasing-rat.md) | 157 | `result-track:c72a6ba60b7cbb59017b56182c0c23c893c79354d960397d9c4dd2e22515befa` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

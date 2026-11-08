@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/ArgumentPrincipleNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/ArgumentPrincipleNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ArgumentPrincipleNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ArgumentPrincipleNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [BoundaryZeroFreeCertificate](../../../../RealFunctions/ArgumentPrincipleNamespaced.lean/declarations/boundaryzerofreecertificate.md) | 23 | `declaration-track:25e34fabf492ac1df154000f21c04f1a82d3a8d5e7f58e15468a455636f8aa87` |
-| 2 | `structure` | [ValidatedContourFunction](../../../../RealFunctions/ArgumentPrincipleNamespaced.lean/declarations/validatedcontourfunction.md) | 36 | `declaration-track:17485d0166ee7edf79d41ef483c0920cf59170b4599e354f71d945e96d9897ca` |
-| 3 | `structure` | [FiniteContourPartition](../../../../RealFunctions/ArgumentPrincipleNamespaced.lean/declarations/finitecontourpartition.md) | 46 | `declaration-track:afb392b562c0fd8c52e68a6abca9d7a22769b6a32de7ac11d77d9b700164ec7f` |
-| 4 | `structure` | [ContourIntegrationModel](../../../../RealFunctions/ArgumentPrincipleNamespaced.lean/declarations/contourintegrationmodel.md) | 53 | `declaration-track:0e23c34dfcc895c2ed04d5e3cc5e28f14c910a896e00c8e59513b1ac965fb5a2` |
-| 5 | `structure` | [ValidatedArgumentIntegral](../../../../RealFunctions/ArgumentPrincipleNamespaced.lean/declarations/validatedargumentintegral.md) | 57 | `declaration-track:9b4afcd5f0bec3b11841300c68842873aa8f650393861663000df82aada04b84` |
-| 6 | `structure` | [ArgumentPrincipleAuthority](../../../../RealFunctions/ArgumentPrincipleNamespaced.lean/declarations/argumentprincipleauthority.md) | 87 | `declaration-track:21b65d8f5bea75f37a61afa223308ee5f324a6a2130a0ab4aef49e42e2b0e8de` |
-| 7 | `structure` | [ArgumentPrincipleCertificate](../../../../RealFunctions/ArgumentPrincipleNamespaced.lean/declarations/argumentprinciplecertificate.md) | 102 | `declaration-track:f00fd177f9a99ba2e0cc15bc711c00417b26e016e8b04bfa23f0c988d0c41930` |
-| 8 | `def` | [ArgumentPrincipleCertificate.count](../../../../RealFunctions/ArgumentPrincipleNamespaced.lean/declarations/argumentprinciplecertificate-count.md) | 114 | `declaration-track:eed524d24c6a64a0686e10e3566884c370c3af5c8979a02a9f574befd1b91d7b` |
-| 9 | `theorem` | [ArgumentPrincipleCertificate.countSound](../../../../RealFunctions/ArgumentPrincipleNamespaced.lean/declarations/argumentprinciplecertificate-countsound.md) | 125 | `result-track:2025b0b975e5f44be9625855d420fb9c5ffa704b9727f42736ba16a630b00e41` |
-| 10 | `theorem` | [argumentPrincipleCertificate_sound](../../../../RealFunctions/ArgumentPrincipleNamespaced.lean/declarations/argumentprinciplecertificate-sound.md) | 140 | `result-track:3e72cf99665c0b7a20354989849f26791d16dfdf9c430772686032fb437224a1` |
+| 1 | `structure` | [BoundaryZeroFreeCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ArgumentPrincipleNamespaced.lean/declarations/boundaryzerofreecertificate.md) | 23 | `declaration-track:25e34fabf492ac1df154000f21c04f1a82d3a8d5e7f58e15468a455636f8aa87` |
+| 2 | `structure` | [ValidatedContourFunction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ArgumentPrincipleNamespaced.lean/declarations/validatedcontourfunction.md) | 36 | `declaration-track:17485d0166ee7edf79d41ef483c0920cf59170b4599e354f71d945e96d9897ca` |
+| 3 | `structure` | [FiniteContourPartition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ArgumentPrincipleNamespaced.lean/declarations/finitecontourpartition.md) | 46 | `declaration-track:afb392b562c0fd8c52e68a6abca9d7a22769b6a32de7ac11d77d9b700164ec7f` |
+| 4 | `structure` | [ContourIntegrationModel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ArgumentPrincipleNamespaced.lean/declarations/contourintegrationmodel.md) | 53 | `declaration-track:0e23c34dfcc895c2ed04d5e3cc5e28f14c910a896e00c8e59513b1ac965fb5a2` |
+| 5 | `structure` | [ValidatedArgumentIntegral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ArgumentPrincipleNamespaced.lean/declarations/validatedargumentintegral.md) | 57 | `declaration-track:9b4afcd5f0bec3b11841300c68842873aa8f650393861663000df82aada04b84` |
+| 6 | `structure` | [ArgumentPrincipleAuthority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ArgumentPrincipleNamespaced.lean/declarations/argumentprincipleauthority.md) | 87 | `declaration-track:21b65d8f5bea75f37a61afa223308ee5f324a6a2130a0ab4aef49e42e2b0e8de` |
+| 7 | `structure` | [ArgumentPrincipleCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ArgumentPrincipleNamespaced.lean/declarations/argumentprinciplecertificate.md) | 102 | `declaration-track:f00fd177f9a99ba2e0cc15bc711c00417b26e016e8b04bfa23f0c988d0c41930` |
+| 8 | `def` | [ArgumentPrincipleCertificate.count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ArgumentPrincipleNamespaced.lean/declarations/argumentprinciplecertificate-count.md) | 114 | `declaration-track:eed524d24c6a64a0686e10e3566884c370c3af5c8979a02a9f574befd1b91d7b` |
+| 9 | `theorem` | [ArgumentPrincipleCertificate.countSound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ArgumentPrincipleNamespaced.lean/declarations/argumentprinciplecertificate-countsound.md) | 125 | `result-track:2025b0b975e5f44be9625855d420fb9c5ffa704b9727f42736ba16a630b00e41` |
+| 10 | `theorem` | [argumentPrincipleCertificate_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ArgumentPrincipleNamespaced.lean/declarations/argumentprinciplecertificate-sound.md) | 140 | `result-track:3e72cf99665c0b7a20354989849f26791d16dfdf9c430772686032fb437224a1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

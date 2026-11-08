@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PointwiseFiniteZeroHead.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PointwiseFiniteZeroHead.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PointwiseFiniteZeroHead.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PointwiseFiniteZeroHead.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalZeroDivisor`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CanonicalZeroDivisor.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalZeroDivisor`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CanonicalZeroDivisor.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Analysis.SpecialFunctions.Pow.Complex` — import line 5; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 6; external provider; requires a separately pinned dependency.
 
@@ -59,17 +59,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [canonicalZero_denominator_ne_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PointwiseFiniteZeroHead.lean/declarations/canonicalzero-denominator-ne-zero.md) | 28 | `result-track:8ed3b260eef6eec485b30064c0b7ec1e538e82fccb0d1a27106d5788a76b02ac` |
-| 2 | `def` | [pointwiseZeroTerm](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PointwiseFiniteZeroHead.lean/declarations/pointwisezeroterm.md) | 32 | `declaration-track:ec40031869cd2372b623e33224f8270ddd2aca69cb219c5388fd2cd9e22639d8` |
-| 3 | `theorem` | [pointwiseZeroTerm_eq_cpow](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PointwiseFiniteZeroHead.lean/declarations/pointwisezeroterm-eq-cpow.md) | 35 | `result-track:a090f8a233cec38097c7930a68244fef32bdb4bbbb118dd4a8df5e658c91d3b1` |
-| 4 | `theorem` | [pointwiseZeroTerm_conj](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PointwiseFiniteZeroHead.lean/declarations/pointwisezeroterm-conj.md) | 40 | `result-track:6d407d73e0b5e724a4af90ee68f456588850c3642454727b4045e7a01d1a3bb8` |
-| 5 | `theorem` | [pointwiseZeroTerm_pair](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PointwiseFiniteZeroHead.lean/declarations/pointwisezeroterm-pair.md) | 44 | `result-track:1762d9a2c3ae7a59af060cb752e9495141a253ba1dc1e3158f90c2c001c4490c` |
-| 6 | `theorem` | [norm_pointwiseZeroTerm](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PointwiseFiniteZeroHead.lean/declarations/norm-pointwisezeroterm.md) | 52 | `result-track:31b8596bb0be19f663736ce4fc85a5dfd049610d74940f4005b6068419c24491` |
-| 7 | `def` | [finiteHeightZeroHead](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PointwiseFiniteZeroHead.lean/declarations/finiteheightzerohead.md) | 56 | `declaration-track:1e010a0b64c11cc5ab447292e17d8909f97b038241e943b51d84283630ec3bd8` |
-| 8 | `def` | [evaluatedFiniteHeightZeroHead](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PointwiseFiniteZeroHead.lean/declarations/evaluatedfiniteheightzerohead.md) | 61 | `declaration-track:40c3d3c6d7730429dd2f95d1baaec5ec9ad1fe8c6950900d57dcbeb2ef627324` |
-| 9 | `theorem` | [finiteHeightZeroHead_evaluation_error](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PointwiseFiniteZeroHead.lean/declarations/finiteheightzerohead-evaluation-error.md) | 64 | `result-track:952ce03b70a73a0b1b4ddb1b651ccf936cbdf9a1208a444a82121d449d92e6b4` |
-| 10 | `theorem` | [finiteHeightZeroHead_enclosure_error](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PointwiseFiniteZeroHead.lean/declarations/finiteheightzerohead-enclosure-error.md) | 82 | `result-track:41b97c848b442119f7700cdcd7c21de229e4b04bc7b05d9b29d91c4d6ff5e93a` |
-| 11 | `theorem` | [completeZeroContribution_evaluation_error](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PointwiseFiniteZeroHead.lean/declarations/completezerocontribution-evaluation-error.md) | 94 | `result-track:8007f43fb2b7980f13db25e510c6e428484f9b3dce839add86b4e10069ca59a1` |
+| 1 | `theorem` | [canonicalZero_denominator_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PointwiseFiniteZeroHead.lean/declarations/canonicalzero-denominator-ne-zero.md) | 28 | `result-track:8ed3b260eef6eec485b30064c0b7ec1e538e82fccb0d1a27106d5788a76b02ac` |
+| 2 | `def` | [pointwiseZeroTerm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PointwiseFiniteZeroHead.lean/declarations/pointwisezeroterm.md) | 32 | `declaration-track:ec40031869cd2372b623e33224f8270ddd2aca69cb219c5388fd2cd9e22639d8` |
+| 3 | `theorem` | [pointwiseZeroTerm_eq_cpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PointwiseFiniteZeroHead.lean/declarations/pointwisezeroterm-eq-cpow.md) | 35 | `result-track:a090f8a233cec38097c7930a68244fef32bdb4bbbb118dd4a8df5e658c91d3b1` |
+| 4 | `theorem` | [pointwiseZeroTerm_conj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PointwiseFiniteZeroHead.lean/declarations/pointwisezeroterm-conj.md) | 40 | `result-track:6d407d73e0b5e724a4af90ee68f456588850c3642454727b4045e7a01d1a3bb8` |
+| 5 | `theorem` | [pointwiseZeroTerm_pair](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PointwiseFiniteZeroHead.lean/declarations/pointwisezeroterm-pair.md) | 44 | `result-track:1762d9a2c3ae7a59af060cb752e9495141a253ba1dc1e3158f90c2c001c4490c` |
+| 6 | `theorem` | [norm_pointwiseZeroTerm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PointwiseFiniteZeroHead.lean/declarations/norm-pointwisezeroterm.md) | 52 | `result-track:31b8596bb0be19f663736ce4fc85a5dfd049610d74940f4005b6068419c24491` |
+| 7 | `def` | [finiteHeightZeroHead](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PointwiseFiniteZeroHead.lean/declarations/finiteheightzerohead.md) | 56 | `declaration-track:1e010a0b64c11cc5ab447292e17d8909f97b038241e943b51d84283630ec3bd8` |
+| 8 | `def` | [evaluatedFiniteHeightZeroHead](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PointwiseFiniteZeroHead.lean/declarations/evaluatedfiniteheightzerohead.md) | 61 | `declaration-track:40c3d3c6d7730429dd2f95d1baaec5ec9ad1fe8c6950900d57dcbeb2ef627324` |
+| 9 | `theorem` | [finiteHeightZeroHead_evaluation_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PointwiseFiniteZeroHead.lean/declarations/finiteheightzerohead-evaluation-error.md) | 64 | `result-track:952ce03b70a73a0b1b4ddb1b651ccf936cbdf9a1208a444a82121d449d92e6b4` |
+| 10 | `theorem` | [finiteHeightZeroHead_enclosure_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PointwiseFiniteZeroHead.lean/declarations/finiteheightzerohead-enclosure-error.md) | 82 | `result-track:41b97c848b442119f7700cdcd7c21de229e4b04bc7b05d9b29d91c4d6ff5e93a` |
+| 11 | `theorem` | [completeZeroContribution_evaluation_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PointwiseFiniteZeroHead.lean/declarations/completezerocontribution-evaluation-error.md) | 94 | `result-track:8007f43fb2b7980f13db25e510c6e428484f9b3dce839add86b4e10069ca59a1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

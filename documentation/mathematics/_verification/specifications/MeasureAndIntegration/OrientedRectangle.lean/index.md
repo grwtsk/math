@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/OrientedRectangle.lean/index.md) · [Full source](../../../../MeasureAndIntegration/OrientedRectangle.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OrientedRectangle.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OrientedRectangle.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,14 +60,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [horizontal](../../../../MeasureAndIntegration/OrientedRectangle.lean/declarations/horizontal.md) | 30 | `declaration-track:92a92a986364597499b3b91475b0be49286d7ec30aeab815e0e6847ce2b1a7ce` |
-| 2 | `def` | [vertical](../../../../MeasureAndIntegration/OrientedRectangle.lean/declarations/vertical.md) | 34 | `declaration-track:e7be38fc32580b196a9bb16b8e6b04e89c517828c94f85ef46103daaa2886650` |
-| 3 | `def` | [boundaryIntegral](../../../../MeasureAndIntegration/OrientedRectangle.lean/declarations/boundaryintegral.md) | 38 | `declaration-track:75a5e9bd7ff6715c510e46ccdce5b51cde674866b90306102c802b786d9eb83f` |
-| 4 | `theorem` | [boundaryIntegral_eq_zero_of_differentiable](../../../../MeasureAndIntegration/OrientedRectangle.lean/declarations/boundaryintegral-eq-zero-of-differentiable.md) | 43 | `result-track:8cf5157b434074b77730f0ea946369708f0fd246bc00c69b72bdb4f00feeb5a3` |
-| 5 | `theorem` | [normalized_right_decomposition](../../../../MeasureAndIntegration/OrientedRectangle.lean/declarations/normalized-right-decomposition.md) | 51 | `result-track:8b2ac5a9dba2dbd88ce8714f1988c79026ce2bc6600963c1796ebe6a43f4e984` |
-| 6 | `theorem` | [norm_horizontal_le](../../../../MeasureAndIntegration/OrientedRectangle.lean/declarations/norm-horizontal-le.md) | 60 | `result-track:3f37523e5e1af60a9a407c560c87801f449ab52e272c8c83aabd1ea877567fa8` |
-| 7 | `theorem` | [norm_horizontal_difference_le](../../../../MeasureAndIntegration/OrientedRectangle.lean/declarations/norm-horizontal-difference-le.md) | 71 | `result-track:ef9ba91dcafc2ae3820e10e746f4cea795b5c9519f16bfb403a03931aa066e9e` |
-| 8 | `theorem` | [vertical_tendsto](../../../../MeasureAndIntegration/OrientedRectangle.lean/declarations/vertical-tendsto.md) | 83 | `result-track:5c3abc245e680fc08d796c367caab6766d5213bda98f16499533a034e25d0153` |
+| 1 | `def` | [horizontal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OrientedRectangle.lean/declarations/horizontal.md) | 30 | `declaration-track:92a92a986364597499b3b91475b0be49286d7ec30aeab815e0e6847ce2b1a7ce` |
+| 2 | `def` | [vertical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OrientedRectangle.lean/declarations/vertical.md) | 34 | `declaration-track:e7be38fc32580b196a9bb16b8e6b04e89c517828c94f85ef46103daaa2886650` |
+| 3 | `def` | [boundaryIntegral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OrientedRectangle.lean/declarations/boundaryintegral.md) | 38 | `declaration-track:75a5e9bd7ff6715c510e46ccdce5b51cde674866b90306102c802b786d9eb83f` |
+| 4 | `theorem` | [boundaryIntegral_eq_zero_of_differentiable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OrientedRectangle.lean/declarations/boundaryintegral-eq-zero-of-differentiable.md) | 43 | `result-track:8cf5157b434074b77730f0ea946369708f0fd246bc00c69b72bdb4f00feeb5a3` |
+| 5 | `theorem` | [normalized_right_decomposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OrientedRectangle.lean/declarations/normalized-right-decomposition.md) | 51 | `result-track:8b2ac5a9dba2dbd88ce8714f1988c79026ce2bc6600963c1796ebe6a43f4e984` |
+| 6 | `theorem` | [norm_horizontal_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OrientedRectangle.lean/declarations/norm-horizontal-le.md) | 60 | `result-track:3f37523e5e1af60a9a407c560c87801f449ab52e272c8c83aabd1ea877567fa8` |
+| 7 | `theorem` | [norm_horizontal_difference_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OrientedRectangle.lean/declarations/norm-horizontal-difference-le.md) | 71 | `result-track:ef9ba91dcafc2ae3820e10e746f4cea795b5c9519f16bfb403a03931aa066e9e` |
+| 8 | `theorem` | [vertical_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/OrientedRectangle.lean/declarations/vertical-tendsto.md) | 83 | `result-track:5c3abc245e680fc08d796c367caab6766d5213bda98f16499533a034e25d0153` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

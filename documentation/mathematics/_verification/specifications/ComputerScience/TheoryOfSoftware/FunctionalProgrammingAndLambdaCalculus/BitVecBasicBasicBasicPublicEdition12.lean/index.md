@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BitVecBasicBasicBasicPublicEdition12.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BitVecBasicBasicBasicPublicEdition12.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BitVecBasicBasicBasicPublicEdition12.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BitVecBasicBasicBasicPublicEdition12.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ofFnLEAux](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BitVecBasicBasicBasicPublicEdition12.lean/declarations/offnleaux.md) | 13 | `declaration-track:ee66fcd0d5f3a761d4a34d9a8b011167b81cda1835a0a0b537d7ed443124d9dc` |
-| 2 | `def` | [ofFnLE](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BitVecBasicBasicBasicPublicEdition12.lean/declarations/offnle.md) | 17 | `declaration-track:df4beb68b3fba64b5cadd76168db31ca89777929abc0be67564996ea382dce7d` |
-| 3 | `def` | [ofFnBE](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BitVecBasicBasicBasicPublicEdition12.lean/declarations/offnbe.md) | 20 | `declaration-track:19090c3688bcf79ef726c2076ff3f476108e85f26cad53c9757c95a9168cb600` |
+| 1 | `def` | [ofFnLEAux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BitVecBasicBasicBasicPublicEdition12.lean/declarations/offnleaux.md) | 13 | `declaration-track:ee66fcd0d5f3a761d4a34d9a8b011167b81cda1835a0a0b537d7ed443124d9dc` |
+| 2 | `def` | [ofFnLE](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BitVecBasicBasicBasicPublicEdition12.lean/declarations/offnle.md) | 17 | `declaration-track:df4beb68b3fba64b5cadd76168db31ca89777929abc0be67564996ea382dce7d` |
+| 3 | `def` | [ofFnBE](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BitVecBasicBasicBasicPublicEdition12.lean/declarations/offnbe.md) | 20 | `declaration-track:19090c3688bcf79ef726c2076ff3f476108e85f26cad53c9757c95a9168cb600` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

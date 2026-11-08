@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/IncompleteScriptNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/IncompleteScriptNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/IncompleteScriptNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/IncompleteScriptNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/IncompleteScriptNamespaced.lean/declarations/example-source-edition-2.md) | 38 | `declaration-track:b482580222df2d61e6a4fac00700e3743e9feb1ef9c20dcf3a6f36aeeb898d92` |
-| 2 | `inductive` | [Even](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/IncompleteScriptNamespaced.lean/declarations/even.md) | 41 | `declaration-track:d82e1284e9f8496cd7e537250f5778c447146d3bb6454d67aaf1c885b6f56177` |
-| 3 | `example` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/IncompleteScriptNamespaced.lean/declarations/example.md) | 53 | `declaration-track:61cfd4978a001d8ccd2ea5fa04a973a11fe662b65e6f0bce2a3e12f1878f7db2` |
-| 4 | `example` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/IncompleteScriptNamespaced.lean/declarations/example-source-edition-3.md) | 71 | `declaration-track:d2bf035e74a83fd58845835d1445b5e87b21d90fb7d82f4e56b6eaa2ca7d5599` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/IncompleteScriptNamespaced.lean/declarations/example-source-edition-2.md) | 38 | `declaration-track:b482580222df2d61e6a4fac00700e3743e9feb1ef9c20dcf3a6f36aeeb898d92` |
+| 2 | `inductive` | [Even](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/IncompleteScriptNamespaced.lean/declarations/even.md) | 41 | `declaration-track:d82e1284e9f8496cd7e537250f5778c447146d3bb6454d67aaf1c885b6f56177` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/IncompleteScriptNamespaced.lean/declarations/example.md) | 53 | `declaration-track:61cfd4978a001d8ccd2ea5fa04a973a11fe662b65e6f0bce2a3e12f1878f7db2` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/IncompleteScriptNamespaced.lean/declarations/example-source-edition-3.md) | 71 | `declaration-track:d2bf035e74a83fd58845835d1445b5e87b21d90fb7d82f4e56b6eaa2ca7d5599` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

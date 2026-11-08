@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/CS06SelectedS3Realization.lean/index.md) · [Full source](../../../../GeneralTopology/CS06SelectedS3Realization.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CS06SelectedS3Realization.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CS06SelectedS3Realization.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [cs06_selectedS3Realization](../../../../GeneralTopology/CS06SelectedS3Realization.lean/declarations/cs06-selecteds3realization.md) | 9 | `result-track:854b94329dd23f74f072a161a8e352d6632ae0114011dd9723779d2d7e2f8e43` |
+| 1 | `theorem` | [cs06_selectedS3Realization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CS06SelectedS3Realization.lean/declarations/cs06-selecteds3realization.md) | 9 | `result-track:854b94329dd23f74f072a161a8e352d6632ae0114011dd9723779d2d7e2f8e43` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

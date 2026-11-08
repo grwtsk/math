@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/EvidenceNamespacedEdition3.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/EvidenceNamespacedEdition3.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EvidenceNamespacedEdition3.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EvidenceNamespacedEdition3.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [InterpretationAuthority](../../../../../ComputerScience/AlgorithmsInComputerScience/EvidenceNamespacedEdition3.lean/declarations/interpretationauthority.md) | 17 | `declaration-track:0f6f2a909c6cf0f0cb558096dabdc77c017d92474a546123020e88d0bd8ef88e` |
-| 2 | `structure` | [StrategyEvidence](../../../../../ComputerScience/AlgorithmsInComputerScience/EvidenceNamespacedEdition3.lean/declarations/strategyevidence.md) | 23 | `declaration-track:f5c7a6bd7cf329b5e211327e1bedbf1a3774bf190ec73d5febe6966c8d67d7ca` |
-| 3 | `def` | [Valid](../../../../../ComputerScience/AlgorithmsInComputerScience/EvidenceNamespacedEdition3.lean/declarations/valid.md) | 36 | `declaration-track:33d23c1d1689436074be71b52d4f168df6b63844f13387051cd5045fdf605e58` |
+| 1 | `inductive` | [InterpretationAuthority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EvidenceNamespacedEdition3.lean/declarations/interpretationauthority.md) | 17 | `declaration-track:0f6f2a909c6cf0f0cb558096dabdc77c017d92474a546123020e88d0bd8ef88e` |
+| 2 | `structure` | [StrategyEvidence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EvidenceNamespacedEdition3.lean/declarations/strategyevidence.md) | 23 | `declaration-track:f5c7a6bd7cf329b5e211327e1bedbf1a3774bf190ec73d5febe6966c8d67d7ca` |
+| 3 | `def` | [Valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/EvidenceNamespacedEdition3.lean/declarations/valid.md) | 36 | `declaration-track:33d23c1d1689436074be71b52d4f168df6b63844f13387051cd5045fdf605e58` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

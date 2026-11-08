@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/LadderNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/LadderNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LadderNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LadderNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [differentiable_thetaTail](../../../../MeasureAndIntegration/LadderNamespaced.lean/declarations/differentiable-thetatail.md) | 18 | `result-track:3f4dd78adb7ad2fad3397c49e37ed63d81ba7e1f88feef49b8d6efdf7979e480` |
-| 2 | `theorem` | [deriv_thetaTail_integrableOn](../../../../MeasureAndIntegration/LadderNamespaced.lean/declarations/deriv-thetatail-integrableon.md) | 24 | `result-track:9ce7d29844fd8d0c84c7feb6099a31c4b5b3a39ad0e440f3246061e56a4cf46b` |
-| 3 | `theorem` | [thetaTail_succ_eq_integral](../../../../MeasureAndIntegration/LadderNamespaced.lean/declarations/thetatail-succ-eq-integral.md) | 33 | `result-track:1973bad54205cd0d19a6415d66031f9925f4ac7f34e722866aa38dccc266ddc2` |
-| 4 | `theorem` | [thetaTail_succ_integral_add](../../../../MeasureAndIntegration/LadderNamespaced.lean/declarations/thetatail-succ-integral-add.md) | 44 | `result-track:0ace27489be143dacc238a1748c5c2e98e021add80d1545b398c9e19283ff102` |
-| 5 | `theorem` | [thetaTail_logSlope_antitone](../../../../MeasureAndIntegration/LadderNamespaced.lean/declarations/thetatail-logslope-antitone.md) | 50 | `result-track:8385be8bb5eb7b2bf51e192ba6d89777ba1cd21c95e1aa6deb89559b4c07d84b` |
-| 6 | `theorem` | [thetaTail_succ_div_antitone](../../../../MeasureAndIntegration/LadderNamespaced.lean/declarations/thetatail-succ-div-antitone.md) | 71 | `result-track:5bf45379a8b88d87541e2582473ed4be38b9f15268bb2c48218d270446b50482` |
+| 1 | `theorem` | [differentiable_thetaTail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LadderNamespaced.lean/declarations/differentiable-thetatail.md) | 18 | `result-track:3f4dd78adb7ad2fad3397c49e37ed63d81ba7e1f88feef49b8d6efdf7979e480` |
+| 2 | `theorem` | [deriv_thetaTail_integrableOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LadderNamespaced.lean/declarations/deriv-thetatail-integrableon.md) | 24 | `result-track:9ce7d29844fd8d0c84c7feb6099a31c4b5b3a39ad0e440f3246061e56a4cf46b` |
+| 3 | `theorem` | [thetaTail_succ_eq_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LadderNamespaced.lean/declarations/thetatail-succ-eq-integral.md) | 33 | `result-track:1973bad54205cd0d19a6415d66031f9925f4ac7f34e722866aa38dccc266ddc2` |
+| 4 | `theorem` | [thetaTail_succ_integral_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LadderNamespaced.lean/declarations/thetatail-succ-integral-add.md) | 44 | `result-track:0ace27489be143dacc238a1748c5c2e98e021add80d1545b398c9e19283ff102` |
+| 5 | `theorem` | [thetaTail_logSlope_antitone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LadderNamespaced.lean/declarations/thetatail-logslope-antitone.md) | 50 | `result-track:8385be8bb5eb7b2bf51e192ba6d89777ba1cd21c95e1aa6deb89559b4c07d84b` |
+| 6 | `theorem` | [thetaTail_succ_div_antitone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LadderNamespaced.lean/declarations/thetatail-succ-div-antitone.md) | 71 | `result-track:5bf45379a8b88d87541e2582473ed4be38b9f15268bb2c48218d270446b50482` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

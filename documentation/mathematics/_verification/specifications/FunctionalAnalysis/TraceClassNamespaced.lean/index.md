@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/TraceClassNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/TraceClassNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/TraceClassNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/TraceClassNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Hilbert.TraceClassCertificate](../../../../FunctionalAnalysis/TraceClassNamespaced.lean/declarations/hilbert-traceclasscertificate.md) | 29 | `declaration-track:8eb6fb752b83e5a38b66d978c885bd64b7905ca60cf7a2decc5105ea5437fdc3` |
-| 2 | `theorem` | [Hilbert.traceClass_operator_is_traceClass](../../../../FunctionalAnalysis/TraceClassNamespaced.lean/declarations/hilbert-traceclass-operator-is-traceclass.md) | 37 | `result-track:417a6cc32774f629b6f3726ba60ac734d83ce2437276f2afe8587b44a9da4199` |
+| 1 | `structure` | [Hilbert.TraceClassCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/TraceClassNamespaced.lean/declarations/hilbert-traceclasscertificate.md) | 29 | `declaration-track:8eb6fb752b83e5a38b66d978c885bd64b7905ca60cf7a2decc5105ea5437fdc3` |
+| 2 | `theorem` | [Hilbert.traceClass_operator_is_traceClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/TraceClassNamespaced.lean/declarations/hilbert-traceclass-operator-is-traceclass.md) | 37 | `result-track:417a6cc32774f629b6f3726ba60ac734d83ce2437276f2afe8587b44a9da4199` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

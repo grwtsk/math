@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/SurfacePolygonPolarQuotientCompatibility.lean/index.md) · [Full source](../../../../AlgebraicTopology/SurfacePolygonPolarQuotientCompatibility.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonPolarQuotientCompatibility.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonPolarQuotientCompatibility.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarAddCircleKernel`](../../../../AlgebraicTopology/SurfacePolygonPolarAddCircleKernel.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarAddCircleKernel`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonPolarAddCircleKernel.lean/index.md) — import line 8; pinned internal source present.
 - `Mathlib.Topology.Instances.AddCircle.Real` — import line 9; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [realAnglePolarDisk_respects_unitAddCircle](../../../../AlgebraicTopology/SurfacePolygonPolarQuotientCompatibility.lean/declarations/realanglepolardisk-respects-unitaddcircle.md) | 30 | `result-track:2ca4f4672ec1212c102eeae242a489f5b9d1b4f097160c562a8f8bab7c3a645d` |
-| 2 | `theorem` | [realAnglePolarDisk_zero_all_angles](../../../../AlgebraicTopology/SurfacePolygonPolarQuotientCompatibility.lean/declarations/realanglepolardisk-zero-all-angles.md) | 40 | `result-track:7c8279d2a5e884f1ec1a02369d6e2bd8131e11ea0dce6f0cc37fad1beb0e8b3d` |
-| 3 | `theorem` | [realAnglePolarDisk_two_integer_shifts](../../../../AlgebraicTopology/SurfacePolygonPolarQuotientCompatibility.lean/declarations/realanglepolardisk-two-integer-shifts.md) | 47 | `result-track:261db216ed20799e35e0fe39de13edef40471cb66f45c5565da64413fa8d78c5` |
+| 1 | `theorem` | [realAnglePolarDisk_respects_unitAddCircle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonPolarQuotientCompatibility.lean/declarations/realanglepolardisk-respects-unitaddcircle.md) | 30 | `result-track:2ca4f4672ec1212c102eeae242a489f5b9d1b4f097160c562a8f8bab7c3a645d` |
+| 2 | `theorem` | [realAnglePolarDisk_zero_all_angles](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonPolarQuotientCompatibility.lean/declarations/realanglepolardisk-zero-all-angles.md) | 40 | `result-track:7c8279d2a5e884f1ec1a02369d6e2bd8131e11ea0dce6f0cc37fad1beb0e8b3d` |
+| 3 | `theorem` | [realAnglePolarDisk_two_integer_shifts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonPolarQuotientCompatibility.lean/declarations/realanglepolardisk-two-integer-shifts.md) | 47 | `result-track:261db216ed20799e35e0fe39de13edef40471cb66f45c5565da64413fa8d78c5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

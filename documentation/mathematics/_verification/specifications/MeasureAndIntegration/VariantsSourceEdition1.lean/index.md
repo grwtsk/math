@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/VariantsSourceEdition1.lean/index.md) · [Full source](../../../../MeasureAndIntegration/VariantsSourceEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/VariantsSourceEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/VariantsSourceEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `Mathlib` — import line 9; external provider; requires a separately pinned dependency.
-- [`GRWTSK.Analysis.Inequalities.ResidualEnclosure`](../../../../RealFunctions/InequalitiesInRealAnalysis/ResidualEnclosure.lean/index.md) — import line 10; pinned internal source present.
+- [`GRWTSK.Analysis.Inequalities.ResidualEnclosure`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/ResidualEnclosure.lean/index.md) — import line 10; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [integral_product_bound](../../../../MeasureAndIntegration/VariantsSourceEdition1.lean/declarations/integral-product-bound.md) | 21 | `result-track:e36f5fc5779e3b09fd8bbb77b68b2944092768f44f32765fe7464ccf06bcd0f2` |
-| 2 | `theorem` | [reconstructed_readout_sq_le](../../../../MeasureAndIntegration/VariantsSourceEdition1.lean/declarations/reconstructed-readout-sq-le.md) | 41 | `result-track:89592fcf25c4e5edf69986c08b00181dc092f54c78559728ead6f3da338cdb44` |
+| 1 | `theorem` | [integral_product_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/VariantsSourceEdition1.lean/declarations/integral-product-bound.md) | 21 | `result-track:e36f5fc5779e3b09fd8bbb77b68b2944092768f44f32765fe7464ccf06bcd0f2` |
+| 2 | `theorem` | [reconstructed_readout_sq_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/VariantsSourceEdition1.lean/declarations/reconstructed-readout-sq-le.md) | 41 | `result-track:89592fcf25c4e5edf69986c08b00181dc092f54c78559728ead6f3da338cdb44` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

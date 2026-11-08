@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/PicardFuchs.lean/index.md) · [Full source](../../../../NumberTheory/PicardFuchs.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PicardFuchs.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PicardFuchs.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [configuredPicardFuchsEquation](../../../../NumberTheory/PicardFuchs.lean/declarations/configuredpicardfuchsequation.md) | 5 | `declaration-track:263f9f90eaf49777f0a98a9fdef96db7ca735fbc5edca8272d74b02ad53dc412` |
-| 2 | `def` | [picardFuchsGuardrail](../../../../NumberTheory/PicardFuchs.lean/declarations/picardfuchsguardrail.md) | 8 | `declaration-track:fb390a8a9d00760daedde45d072ad6e4401792761763ee2d6ab7ea1be2101e5a` |
-| 3 | `def` | [gaussManinReferenceTransportLabel](../../../../NumberTheory/PicardFuchs.lean/declarations/gaussmaninreferencetransportlabel.md) | 11 | `declaration-track:f700019fae21c51870a7e25de535111c218f375eec007a976894f45643895d1d` |
+| 1 | `def` | [configuredPicardFuchsEquation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PicardFuchs.lean/declarations/configuredpicardfuchsequation.md) | 5 | `declaration-track:263f9f90eaf49777f0a98a9fdef96db7ca735fbc5edca8272d74b02ad53dc412` |
+| 2 | `def` | [picardFuchsGuardrail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PicardFuchs.lean/declarations/picardfuchsguardrail.md) | 8 | `declaration-track:fb390a8a9d00760daedde45d072ad6e4401792761763ee2d6ab7ea1be2101e5a` |
+| 3 | `def` | [gaussManinReferenceTransportLabel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PicardFuchs.lean/declarations/gaussmaninreferencetransportlabel.md) | 11 | `declaration-track:f700019fae21c51870a7e25de535111c218f375eec007a976894f45643895d1d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

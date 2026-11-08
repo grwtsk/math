@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BoundaryAlignmentBridgeNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BoundaryAlignmentBridgeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BoundaryAlignmentBridgeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BoundaryAlignmentBridgeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FixedTensorToBoundaryAlignmentBridge](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BoundaryAlignmentBridgeNamespaced.lean/declarations/fixedtensortoboundaryalignmentbridge.md) | 28 | `declaration-track:b54c7546f9d46e5a4152f73404b6680089ca3b13c1580a1e60759c65b9b58a16` |
-| 2 | `theorem` | [fixed_tensor_implies_adelic_critical_line](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BoundaryAlignmentBridgeNamespaced.lean/declarations/fixed-tensor-implies-adelic-critical-line.md) | 44 | `result-track:f693dd4f3a6320b958375767263db126605bfd3a38995a3d1d43d23cf4d3a192` |
+| 1 | `structure` | [FixedTensorToBoundaryAlignmentBridge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BoundaryAlignmentBridgeNamespaced.lean/declarations/fixedtensortoboundaryalignmentbridge.md) | 28 | `declaration-track:b54c7546f9d46e5a4152f73404b6680089ca3b13c1580a1e60759c65b9b58a16` |
+| 2 | `theorem` | [fixed_tensor_implies_adelic_critical_line](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BoundaryAlignmentBridgeNamespaced.lean/declarations/fixed-tensor-implies-adelic-critical-line.md) | 44 | `result-track:f693dd4f3a6320b958375767263db126605bfd3a38995a3d1d43d23cf4d3a192` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DupNamespacePublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DupNamespacePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DupNamespacePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DupNamespacePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [getNamesFrom](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DupNamespacePublic.lean/declarations/getnamesfrom.md) | 48 | `declaration-track:8f343b87896ac0eb88a1ba86e5b2573aac76f29cc058fb8dd48678b43a88a621` |
-| 2 | `def` | [getAliasSyntax](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DupNamespacePublic.lean/declarations/getaliassyntax.md) | 65 | `declaration-track:bf9e29dfeb7876b895e047215128c7627605816c6818d281c06979e36f0573bf` |
-| 3 | `def` | [dupNamespace](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DupNamespacePublic.lean/declarations/dupnamespace.md) | 76 | `declaration-track:50e1407f726bfdae6fd994442e9fe9d49e010162ea5da82ddafd7e551915d882` |
-| 4 | `builtin_initialize` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DupNamespacePublic.lean/declarations/builtin-initialize.md) | 106 | `declaration-track:168fbdbfd9dc52ba189baad133afd775b6e7c667beb87879ec8bd17268ea74e0` |
+| 1 | `def` | [getNamesFrom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DupNamespacePublic.lean/declarations/getnamesfrom.md) | 48 | `declaration-track:8f343b87896ac0eb88a1ba86e5b2573aac76f29cc058fb8dd48678b43a88a621` |
+| 2 | `def` | [getAliasSyntax](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DupNamespacePublic.lean/declarations/getaliassyntax.md) | 65 | `declaration-track:bf9e29dfeb7876b895e047215128c7627605816c6818d281c06979e36f0573bf` |
+| 3 | `def` | [dupNamespace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DupNamespacePublic.lean/declarations/dupnamespace.md) | 76 | `declaration-track:50e1407f726bfdae6fd994442e9fe9d49e010162ea5da82ddafd7e551915d882` |
+| 4 | `builtin_initialize` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/DupNamespacePublic.lean/declarations/builtin-initialize.md) | 106 | `declaration-track:168fbdbfd9dc52ba189baad133afd775b6e7c667beb87879ec8bd17268ea74e0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TransportAdapterPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TransportAdapterPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TransportAdapterPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TransportAdapterPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CheckedTransportedTheorem](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TransportAdapterPublic.lean/declarations/checkedtransportedtheorem.md) | 19 | `declaration-track:6e400376195d65e649f0cedab844afdaeccc704e14e614eb5156053415451501` |
-| 2 | `theorem` | [checkedTransportedTheorem_exposes_exact_task](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TransportAdapterPublic.lean/declarations/checkedtransportedtheorem-exposes-exact-task.md) | 28 | `result-track:dc31ef0765024a298d7c22aaef9f5032a9e507530c2b30666d19072e5490f358` |
-| 3 | `theorem` | [checkedTransportedTheorem_preserves_statement_identity](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TransportAdapterPublic.lean/declarations/checkedtransportedtheorem-preserves-statement-identity.md) | 33 | `result-track:886c3c27ed4c61ef89dbce4ac7c57b3343b7ac906d72fdec6155a54b0e659147` |
+| 1 | `structure` | [CheckedTransportedTheorem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TransportAdapterPublic.lean/declarations/checkedtransportedtheorem.md) | 19 | `declaration-track:6e400376195d65e649f0cedab844afdaeccc704e14e614eb5156053415451501` |
+| 2 | `theorem` | [checkedTransportedTheorem_exposes_exact_task](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TransportAdapterPublic.lean/declarations/checkedtransportedtheorem-exposes-exact-task.md) | 28 | `result-track:dc31ef0765024a298d7c22aaef9f5032a9e507530c2b30666d19072e5490f358` |
+| 3 | `theorem` | [checkedTransportedTheorem_preserves_statement_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TransportAdapterPublic.lean/declarations/checkedtransportedtheorem-preserves-statement-identity.md) | 33 | `result-track:886c3c27ed4c61ef89dbce4ac7c57b3343b7ac906d72fdec6155a54b0e659147` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

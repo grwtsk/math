@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/Composition.lean/index.md) · [Full source](../../../../Combinatorics/Composition.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Composition.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Composition.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CandidateMeaning](../../../../Combinatorics/Composition.lean/declarations/candidatemeaning.md) | 9 | `declaration-track:81d75b1ee4d9b8d70073ecdcb4be55d8c969ae0270e2801536de909364ae20fa` |
-| 2 | `structure` | [CompositionRule](../../../../Combinatorics/Composition.lean/declarations/compositionrule.md) | 15 | `declaration-track:72e35d477d946c357f07de42fee2b03fae9f8c8d445f9023cd3e85edf865cb16` |
-| 3 | `def` | [CompositionRuleApplies](../../../../Combinatorics/Composition.lean/declarations/compositionruleapplies.md) | 26 | `declaration-track:ecfbed3a0de18d3f25e102f71c9275608698cfbe8d754b8372597876a25b4a2c` |
-| 4 | `structure` | [CompositionCertificate](../../../../Combinatorics/Composition.lean/declarations/compositioncertificate.md) | 35 | `declaration-track:fd53610a31c281fe4c1f6bc27bbed5e47a904f8d17ac05e6a952212ad7241aba` |
-| 5 | `theorem` | [composition_output_is_candidate](../../../../Combinatorics/Composition.lean/declarations/composition-output-is-candidate.md) | 52 | `result-track:d46368c4491534f98cc728baf7ae97b0d4c68e5efd1caa4ea1b70c5424f07562` |
+| 1 | `structure` | [CandidateMeaning](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Composition.lean/declarations/candidatemeaning.md) | 9 | `declaration-track:81d75b1ee4d9b8d70073ecdcb4be55d8c969ae0270e2801536de909364ae20fa` |
+| 2 | `structure` | [CompositionRule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Composition.lean/declarations/compositionrule.md) | 15 | `declaration-track:72e35d477d946c357f07de42fee2b03fae9f8c8d445f9023cd3e85edf865cb16` |
+| 3 | `def` | [CompositionRuleApplies](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Composition.lean/declarations/compositionruleapplies.md) | 26 | `declaration-track:ecfbed3a0de18d3f25e102f71c9275608698cfbe8d754b8372597876a25b4a2c` |
+| 4 | `structure` | [CompositionCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Composition.lean/declarations/compositioncertificate.md) | 35 | `declaration-track:fd53610a31c281fe4c1f6bc27bbed5e47a904f8d17ac05e6a952212ad7241aba` |
+| 5 | `theorem` | [composition_output_is_candidate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Composition.lean/declarations/composition-output-is-candidate.md) | 52 | `result-track:d46368c4491534f98cc728baf7ae97b0d4c68e5efd1caa4ea1b70c5424f07562` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

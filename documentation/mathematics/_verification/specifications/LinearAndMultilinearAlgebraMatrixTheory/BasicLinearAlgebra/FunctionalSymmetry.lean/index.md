@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FunctionalSymmetry.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FunctionalSymmetry.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FunctionalSymmetry.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FunctionalSymmetry.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FunctionalSymmetry](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FunctionalSymmetry.lean/declarations/functionalsymmetry.md) | 14 | `declaration-track:fa4addf82817b9ae3a448525bb8f6d9a8b8372f522cc212b05bdde2aab8b1e7d` |
-| 2 | `def` | [IsEigenpair](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FunctionalSymmetry.lean/declarations/iseigenpair.md) | 27 | `declaration-track:f4253b15246afe7092163335e86bda5a0642797a860e24c260c1578099af1e9e` |
-| 3 | `theorem` | [functional_symmetry_reflects_eigenpair](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FunctionalSymmetry.lean/declarations/functional-symmetry-reflects-eigenpair.md) | 35 | `result-track:9e33937db4f0f881ea6c4e775d11386b7be3bfa6b5dc00cd5ba074d8f76de564` |
-| 4 | `structure` | [ArithmeticPurityObligation](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FunctionalSymmetry.lean/declarations/arithmeticpurityobligation.md) | 57 | `declaration-track:e8334fd6ef75cce08d0a6da23489a84347f6df240e7ebbb41d2ca93d6ed9f35b` |
+| 1 | `structure` | [FunctionalSymmetry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FunctionalSymmetry.lean/declarations/functionalsymmetry.md) | 14 | `declaration-track:fa4addf82817b9ae3a448525bb8f6d9a8b8372f522cc212b05bdde2aab8b1e7d` |
+| 2 | `def` | [IsEigenpair](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FunctionalSymmetry.lean/declarations/iseigenpair.md) | 27 | `declaration-track:f4253b15246afe7092163335e86bda5a0642797a860e24c260c1578099af1e9e` |
+| 3 | `theorem` | [functional_symmetry_reflects_eigenpair](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FunctionalSymmetry.lean/declarations/functional-symmetry-reflects-eigenpair.md) | 35 | `result-track:9e33937db4f0f881ea6c4e775d11386b7be3bfa6b5dc00cd5ba074d8f76de564` |
+| 4 | `structure` | [ArithmeticPurityObligation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FunctionalSymmetry.lean/declarations/arithmeticpurityobligation.md) | 57 | `declaration-track:e8334fd6ef75cce08d0a6da23489a84347f6df240e7ebbb41d2ca93d6ed9f35b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

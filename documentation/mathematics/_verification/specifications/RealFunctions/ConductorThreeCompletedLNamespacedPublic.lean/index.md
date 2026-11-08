@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/ConductorThreeCompletedLNamespacedPublic.lean/index.md) · [Full source](../../../../RealFunctions/ConductorThreeCompletedLNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ConductorThreeCompletedLNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ConductorThreeCompletedLNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [conductorThreeLambda](../../../../RealFunctions/ConductorThreeCompletedLNamespacedPublic.lean/declarations/conductorthreelambda.md) | 44 | `declaration-track:04f48d7e827610c49bd61e01b1af121236b1cac7c9d7884c112c547d91934354` |
-| 2 | `def` | [conductorThreeXi](../../../../RealFunctions/ConductorThreeCompletedLNamespacedPublic.lean/declarations/conductorthreexi.md) | 50 | `declaration-track:b288f46407ba0dbcfc487e0adf7c165cfcf22221ebcccf8cd4aea3d63bb5b550` |
-| 3 | `theorem` | [differentiable_conductorThreeLambda](../../../../RealFunctions/ConductorThreeCompletedLNamespacedPublic.lean/declarations/differentiable-conductorthreelambda.md) | 57 | `result-track:77511e4fde803ce64b9cb4ce082a7fbc34b1178c13880d5346331a125f753796` |
-| 4 | `theorem` | [differentiable_conductorThreeXi](../../../../RealFunctions/ConductorThreeCompletedLNamespacedPublic.lean/declarations/differentiable-conductorthreexi.md) | 66 | `result-track:56b3ef622c9deaea92a2c668ba8c9c385ef77b2ff6e74539ad4661b1810b62c5` |
-| 5 | `def` | [conductorThreeXiDivisor](../../../../RealFunctions/ConductorThreeCompletedLNamespacedPublic.lean/declarations/conductorthreexidivisor.md) | 73 | `declaration-track:ce0b82f1e7ab41c64649ee0c569e8e5ef96c8b1591d1bc44ea2e1abe1def7c1b` |
-| 6 | `theorem` | [conductorThreeXiDivisor_nonneg](../../../../RealFunctions/ConductorThreeCompletedLNamespacedPublic.lean/declarations/conductorthreexidivisor-nonneg.md) | 78 | `result-track:b7cf00a598a5c8a6153bb3bf32106aec62476393651849408f8ffcc517c50f7b` |
+| 1 | `def` | [conductorThreeLambda](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ConductorThreeCompletedLNamespacedPublic.lean/declarations/conductorthreelambda.md) | 44 | `declaration-track:04f48d7e827610c49bd61e01b1af121236b1cac7c9d7884c112c547d91934354` |
+| 2 | `def` | [conductorThreeXi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ConductorThreeCompletedLNamespacedPublic.lean/declarations/conductorthreexi.md) | 50 | `declaration-track:b288f46407ba0dbcfc487e0adf7c165cfcf22221ebcccf8cd4aea3d63bb5b550` |
+| 3 | `theorem` | [differentiable_conductorThreeLambda](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ConductorThreeCompletedLNamespacedPublic.lean/declarations/differentiable-conductorthreelambda.md) | 57 | `result-track:77511e4fde803ce64b9cb4ce082a7fbc34b1178c13880d5346331a125f753796` |
+| 4 | `theorem` | [differentiable_conductorThreeXi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ConductorThreeCompletedLNamespacedPublic.lean/declarations/differentiable-conductorthreexi.md) | 66 | `result-track:56b3ef622c9deaea92a2c668ba8c9c385ef77b2ff6e74539ad4661b1810b62c5` |
+| 5 | `def` | [conductorThreeXiDivisor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ConductorThreeCompletedLNamespacedPublic.lean/declarations/conductorthreexidivisor.md) | 73 | `declaration-track:ce0b82f1e7ab41c64649ee0c569e8e5ef96c8b1591d1bc44ea2e1abe1def7c1b` |
+| 6 | `theorem` | [conductorThreeXiDivisor_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ConductorThreeCompletedLNamespacedPublic.lean/declarations/conductorthreexidivisor-nonneg.md) | 78 | `result-track:b7cf00a598a5c8a6153bb3bf32106aec62476393651849408f8ffcc517c50f7b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

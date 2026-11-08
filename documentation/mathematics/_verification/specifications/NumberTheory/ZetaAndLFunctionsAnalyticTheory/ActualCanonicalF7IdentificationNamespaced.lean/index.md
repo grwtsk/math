@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualCanonicalF7IdentificationNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualCanonicalF7IdentificationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualCanonicalF7IdentificationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualCanonicalF7IdentificationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actualF7_time_density_eq](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualCanonicalF7IdentificationNamespaced.lean/declarations/actualf7-time-density-eq.md) | 24 | `result-track:d0895d916934c41128763a98705b864cda4ff3f5c640032bc28aa3d3630bde44` |
-| 2 | `theorem` | [actualF7_eq_anchored_primitive](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualCanonicalF7IdentificationNamespaced.lean/declarations/actualf7-eq-anchored-primitive.md) | 29 | `result-track:401b3f96e00b936bb76d1f7d8a298f5b7b2d3febae6e39f9bfc8c936d04ff5e6` |
-| 3 | `theorem` | [actualF7_minus_weight_eq](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualCanonicalF7IdentificationNamespaced.lean/declarations/actualf7-minus-weight-eq.md) | 35 | `result-track:29dc09acf951d0cf2cf6e30c4002713bf25b3ace872828327eef764b9b851ce9` |
+| 1 | `theorem` | [actualF7_time_density_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualCanonicalF7IdentificationNamespaced.lean/declarations/actualf7-time-density-eq.md) | 24 | `result-track:d0895d916934c41128763a98705b864cda4ff3f5c640032bc28aa3d3630bde44` |
+| 2 | `theorem` | [actualF7_eq_anchored_primitive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualCanonicalF7IdentificationNamespaced.lean/declarations/actualf7-eq-anchored-primitive.md) | 29 | `result-track:401b3f96e00b936bb76d1f7d8a298f5b7b2d3febae6e39f9bfc8c936d04ff5e6` |
+| 3 | `theorem` | [actualF7_minus_weight_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualCanonicalF7IdentificationNamespaced.lean/declarations/actualf7-minus-weight-eq.md) | 35 | `result-track:29dc09acf951d0cf2cf6e30c4002713bf25b3ace872828327eef764b9b851ce9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

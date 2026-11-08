@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ModuliStackKTheory.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ModuliStackKTheory.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ModuliStackKTheory.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ModuliStackKTheory.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ModuliStackContract](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ModuliStackKTheory.lean/declarations/modulistackcontract.md) | 18 | `declaration-track:bd762f80ff8d2207a4f52aebf9631665fa67b14fbcf65d58f53a959d61141c86` |
-| 2 | `structure` | [MellKTheory](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ModuliStackKTheory.lean/declarations/mellktheory.md) | 25 | `declaration-track:69482e45c1faf85ed8c300db9d160f22ac6049452c682f5c98c7388021305352` |
-| 3 | `theorem` | [mell_k_theory_targets_mell](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ModuliStackKTheory.lean/declarations/mell-k-theory-targets-mell.md) | 32 | `result-track:ca631e56155a074f18d80d6f596acac336210640972d3662823a23856560b38f` |
-| 4 | `theorem` | [mell_contract_is_mell](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ModuliStackKTheory.lean/declarations/mell-contract-is-mell.md) | 37 | `result-track:bb21426e56e96b14030e1df78aa4fd2933380486c0b72bcc928f89942bd8e948` |
+| 1 | `structure` | [ModuliStackContract](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ModuliStackKTheory.lean/declarations/modulistackcontract.md) | 18 | `declaration-track:bd762f80ff8d2207a4f52aebf9631665fa67b14fbcf65d58f53a959d61141c86` |
+| 2 | `structure` | [MellKTheory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ModuliStackKTheory.lean/declarations/mellktheory.md) | 25 | `declaration-track:69482e45c1faf85ed8c300db9d160f22ac6049452c682f5c98c7388021305352` |
+| 3 | `theorem` | [mell_k_theory_targets_mell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ModuliStackKTheory.lean/declarations/mell-k-theory-targets-mell.md) | 32 | `result-track:ca631e56155a074f18d80d6f596acac336210640972d3662823a23856560b38f` |
+| 4 | `theorem` | [mell_contract_is_mell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ModuliStackKTheory.lean/declarations/mell-contract-is-mell.md) | 37 | `result-track:bb21426e56e96b14030e1df78aa4fd2933380486c0b72bcc928f89942bd8e948` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

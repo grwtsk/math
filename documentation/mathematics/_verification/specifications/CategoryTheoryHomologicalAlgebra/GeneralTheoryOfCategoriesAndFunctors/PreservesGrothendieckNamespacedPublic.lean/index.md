@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesGrothendieckNamespacedPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesGrothendieckNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesGrothendieckNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesGrothendieckNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [fiberwiseColimitLimitIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesGrothendieckNamespacedPublic.lean/declarations/fiberwisecolimitlimitiso.md) | 50 | `declaration-track:bd918dbf5e2ec325a8ddb3afc4a5decc71d6aeba2856f2d844b8475c59bc8dd4` |
-| 2 | `instance` | [preservesLimitsOfShape_colim_grothendieck](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesGrothendieckNamespacedPublic.lean/declarations/preserveslimitsofshape-colim-grothendieck.md) | 80 | `declaration-track:d5ab4f6a8b64d2ef58bbbd9e922356cb9db4fcf4ca092ebc6bb3e5412becaf3c` |
+| 1 | `def` | [fiberwiseColimitLimitIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesGrothendieckNamespacedPublic.lean/declarations/fiberwisecolimitlimitiso.md) | 50 | `declaration-track:bd918dbf5e2ec325a8ddb3afc4a5decc71d6aeba2856f2d844b8475c59bc8dd4` |
+| 2 | `instance` | [preservesLimitsOfShape_colim_grothendieck](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesGrothendieckNamespacedPublic.lean/declarations/preserveslimitsofshape-colim-grothendieck.md) | 80 | `declaration-track:d5ab4f6a8b64d2ef58bbbd9e922356cb9db4fcf4ca092ebc6bb3e5412becaf3c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

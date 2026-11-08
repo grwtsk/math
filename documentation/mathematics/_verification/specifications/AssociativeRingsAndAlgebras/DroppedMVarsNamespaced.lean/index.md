@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/DroppedMVarsNamespaced.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/DroppedMVarsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/DroppedMVarsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/DroppedMVarsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `axiom` | [Ring](../../../../AssociativeRingsAndAlgebras/DroppedMVarsNamespaced.lean/declarations/ring.md) | 24 | `declaration-track:233bf7473790a3ace5be900ac36b317d211b375784855e89377ecb91aa2d713d` |
-| 2 | `axiom` | [RingHom](../../../../AssociativeRingsAndAlgebras/DroppedMVarsNamespaced.lean/declarations/ringhom.md) | 26 | `declaration-track:2851341ec0f1007bba09d8f4e7a0dbc0cfe1da985c0f62cf0bee5aba738e3d22` |
-| 3 | `axiom` | [RingId](../../../../AssociativeRingsAndAlgebras/DroppedMVarsNamespaced.lean/declarations/ringid.md) | 29 | `declaration-track:23b96b06f653c831ef8e67acc665cd87f78439c22ac6355c214a38abde674bc9` |
-| 4 | `axiom` | [ZZ](../../../../AssociativeRingsAndAlgebras/DroppedMVarsNamespaced.lean/declarations/zz.md) | 32 | `declaration-track:98c98387e1d1983b40ce3517903a5410107aefa8d769244e88561cba4411d901` |
-| 5 | `example` | [(anonymous)](../../../../AssociativeRingsAndAlgebras/DroppedMVarsNamespaced.lean/declarations/example.md) | 34 | `declaration-track:1f542aab393dfca764fe5937b584c325c37d73b4c78164385878c2967bb6efc6` |
+| 1 | `axiom` | [Ring](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/DroppedMVarsNamespaced.lean/declarations/ring.md) | 24 | `declaration-track:233bf7473790a3ace5be900ac36b317d211b375784855e89377ecb91aa2d713d` |
+| 2 | `axiom` | [RingHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/DroppedMVarsNamespaced.lean/declarations/ringhom.md) | 26 | `declaration-track:2851341ec0f1007bba09d8f4e7a0dbc0cfe1da985c0f62cf0bee5aba738e3d22` |
+| 3 | `axiom` | [RingId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/DroppedMVarsNamespaced.lean/declarations/ringid.md) | 29 | `declaration-track:23b96b06f653c831ef8e67acc665cd87f78439c22ac6355c214a38abde674bc9` |
+| 4 | `axiom` | [ZZ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/DroppedMVarsNamespaced.lean/declarations/zz.md) | 32 | `declaration-track:98c98387e1d1983b40ce3517903a5410107aefa8d769244e88561cba4411d901` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/DroppedMVarsNamespaced.lean/declarations/example.md) | 34 | `declaration-track:1f542aab393dfca764fe5937b584c325c37d73b4c78164385878c2967bb6efc6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

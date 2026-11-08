@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/BrownLemmaPublic.lean/index.md) · [Full source](../../../../AlgebraicTopology/BrownLemmaPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/BrownLemmaPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/BrownLemmaPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CofibrantBrownFactorization](../../../../AlgebraicTopology/BrownLemmaPublic.lean/declarations/cofibrantbrownfactorization.md) | 48 | `declaration-track:e8ef1d53d9acbe795893cc7d625fe14a43632bb6b786f8964ab4db71c82a9b07` |
-| 2 | `instance` | [(anonymous)](../../../../AlgebraicTopology/BrownLemmaPublic.lean/declarations/instance-source-edition-2.md) | 62 | `declaration-track:7b6adea90c3a1d91c2d933a75e63b832a8a383b1b8624b70ee3e5a153497a1ea` |
-| 3 | `instance` | [(anonymous)](../../../../AlgebraicTopology/BrownLemmaPublic.lean/declarations/instance-source-edition-6.md) | 65 | `declaration-track:eeee80a139c5c999eeb4f61dd465bae38b2c56da1ae1ee7589e15ef7e8545d0f` |
-| 4 | `def` | [mk'](../../../../AlgebraicTopology/BrownLemmaPublic.lean/declarations/mk.md) | 72 | `declaration-track:79ef4d83d4337cceb665290747e7133b3f2aa9803a9d9057094363bfe59e62d1` |
-| 5 | `instance` | [(anonymous)](../../../../AlgebraicTopology/BrownLemmaPublic.lean/declarations/instance-source-edition-3.md) | 84 | `declaration-track:912dd3d3df370dd05b72a31e90cf6101a02db97b8263b52edef21d2cc607fed3` |
-| 6 | `structure` | [FibrantBrownFactorization](../../../../AlgebraicTopology/BrownLemmaPublic.lean/declarations/fibrantbrownfactorization.md) | 96 | `declaration-track:a9b5ae3f14ab5e77e720756b7466cf7e52801c1334aef5effe04c4eb5ff9cb11` |
-| 7 | `instance` | [(anonymous)](../../../../AlgebraicTopology/BrownLemmaPublic.lean/declarations/instance.md) | 110 | `declaration-track:06b37ad2e6121f87d098eb7ff247afbf4696c195757a7330fbff192cc293d07d` |
-| 8 | `instance` | [(anonymous)](../../../../AlgebraicTopology/BrownLemmaPublic.lean/declarations/instance-source-edition-5.md) | 113 | `declaration-track:d75982bcc78c786bafbb1121254c6a155c65145b2d9bdcbc55ae439a82132616` |
-| 9 | `def` | [mk'](../../../../AlgebraicTopology/BrownLemmaPublic.lean/declarations/mk-source-edition-2.md) | 120 | `declaration-track:f75fe8f3292b58dd10b6fa0b0ebcbbe646cacd8074982313346159e51a580dbe` |
-| 10 | `instance` | [(anonymous)](../../../../AlgebraicTopology/BrownLemmaPublic.lean/declarations/instance-source-edition-4.md) | 130 | `declaration-track:beb73cac9054e5da1c9f89ce73d63e28050ac16244364f177ca2901068387d5f` |
+| 1 | `structure` | [CofibrantBrownFactorization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/BrownLemmaPublic.lean/declarations/cofibrantbrownfactorization.md) | 48 | `declaration-track:e8ef1d53d9acbe795893cc7d625fe14a43632bb6b786f8964ab4db71c82a9b07` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/BrownLemmaPublic.lean/declarations/instance-source-edition-2.md) | 62 | `declaration-track:7b6adea90c3a1d91c2d933a75e63b832a8a383b1b8624b70ee3e5a153497a1ea` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/BrownLemmaPublic.lean/declarations/instance-source-edition-6.md) | 65 | `declaration-track:eeee80a139c5c999eeb4f61dd465bae38b2c56da1ae1ee7589e15ef7e8545d0f` |
+| 4 | `def` | [mk'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/BrownLemmaPublic.lean/declarations/mk.md) | 72 | `declaration-track:79ef4d83d4337cceb665290747e7133b3f2aa9803a9d9057094363bfe59e62d1` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/BrownLemmaPublic.lean/declarations/instance-source-edition-3.md) | 84 | `declaration-track:912dd3d3df370dd05b72a31e90cf6101a02db97b8263b52edef21d2cc607fed3` |
+| 6 | `structure` | [FibrantBrownFactorization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/BrownLemmaPublic.lean/declarations/fibrantbrownfactorization.md) | 96 | `declaration-track:a9b5ae3f14ab5e77e720756b7466cf7e52801c1334aef5effe04c4eb5ff9cb11` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/BrownLemmaPublic.lean/declarations/instance.md) | 110 | `declaration-track:06b37ad2e6121f87d098eb7ff247afbf4696c195757a7330fbff192cc293d07d` |
+| 8 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/BrownLemmaPublic.lean/declarations/instance-source-edition-5.md) | 113 | `declaration-track:d75982bcc78c786bafbb1121254c6a155c65145b2d9bdcbc55ae439a82132616` |
+| 9 | `def` | [mk'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/BrownLemmaPublic.lean/declarations/mk-source-edition-2.md) | 120 | `declaration-track:f75fe8f3292b58dd10b6fa0b0ebcbbe646cacd8074982313346159e51a580dbe` |
+| 10 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/BrownLemmaPublic.lean/declarations/instance-source-edition-4.md) | 130 | `declaration-track:beb73cac9054e5da1c9f89ce73d63e28050ac16244364f177ca2901068387d5f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

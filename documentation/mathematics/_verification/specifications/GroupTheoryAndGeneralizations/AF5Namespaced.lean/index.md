@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/AF5Namespaced.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/AF5Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/AF5Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/AF5Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CyclicRotationAction](../../../../GroupTheoryAndGeneralizations/AF5Namespaced.lean/declarations/cyclicrotationaction.md) | 19 | `declaration-track:48caec3fa2a1d7be12b4a6faa4cf99089cab0366a182cec77c7b0777205395e8` |
+| 1 | `structure` | [CyclicRotationAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/AF5Namespaced.lean/declarations/cyclicrotationaction.md) | 19 | `declaration-track:48caec3fa2a1d7be12b4a6faa4cf99089cab0366a182cec77c7b0777205395e8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

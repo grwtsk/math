@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/MinimalPublic.lean/index.md) · [Full source](../../../../FunctionalAnalysis/MinimalPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/MinimalPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/MinimalPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_norm_eq_iInf_of_complete_convex](../../../../FunctionalAnalysis/MinimalPublic.lean/declarations/exists-norm-eq-iinf-of-complete-convex.md) | 36 | `result-track:4c6ceac2b98e42c66ecbae0c9df3766c6eb67ee467d240d5a6b408ab5893dc75` |
-| 2 | `theorem` | [norm_eq_iInf_iff_real_inner_le_zero](../../../../FunctionalAnalysis/MinimalPublic.lean/declarations/norm-eq-iinf-iff-real-inner-le-zero.md) | 141 | `result-track:43754fb907a0ef59e3c68a2688ba0c9feb7e6f6a59cabc3a899b97b28ee8dd02` |
-| 3 | `theorem` | [exists_norm_eq_iInf_of_complete_subspace](../../../../FunctionalAnalysis/MinimalPublic.lean/declarations/exists-norm-eq-iinf-of-complete-subspace.md) | 233 | `result-track:62e1f44ed7898c5436d448fed0fda9c8e98bac326ab70d38fc9f3d93ed3dd7c6` |
-| 4 | `theorem` | [norm_eq_iInf_iff_real_inner_eq_zero](../../../../FunctionalAnalysis/MinimalPublic.lean/declarations/norm-eq-iinf-iff-real-inner-eq-zero.md) | 246 | `result-track:7c5baabfcdbbe4ddba51aa9e4a5c982757385d3a990209a30e98372341ea4d6d` |
-| 5 | `theorem` | [norm_eq_iInf_iff_inner_eq_zero](../../../../FunctionalAnalysis/MinimalPublic.lean/declarations/norm-eq-iinf-iff-inner-eq-zero.md) | 288 | `result-track:f5cbe637dfc59c83bd740e422fb13a7dbb4bbd0ef69994171ba7ea97677f47f3` |
+| 1 | `theorem` | [exists_norm_eq_iInf_of_complete_convex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/MinimalPublic.lean/declarations/exists-norm-eq-iinf-of-complete-convex.md) | 36 | `result-track:4c6ceac2b98e42c66ecbae0c9df3766c6eb67ee467d240d5a6b408ab5893dc75` |
+| 2 | `theorem` | [norm_eq_iInf_iff_real_inner_le_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/MinimalPublic.lean/declarations/norm-eq-iinf-iff-real-inner-le-zero.md) | 141 | `result-track:43754fb907a0ef59e3c68a2688ba0c9feb7e6f6a59cabc3a899b97b28ee8dd02` |
+| 3 | `theorem` | [exists_norm_eq_iInf_of_complete_subspace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/MinimalPublic.lean/declarations/exists-norm-eq-iinf-of-complete-subspace.md) | 233 | `result-track:62e1f44ed7898c5436d448fed0fda9c8e98bac326ab70d38fc9f3d93ed3dd7c6` |
+| 4 | `theorem` | [norm_eq_iInf_iff_real_inner_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/MinimalPublic.lean/declarations/norm-eq-iinf-iff-real-inner-eq-zero.md) | 246 | `result-track:7c5baabfcdbbe4ddba51aa9e4a5c982757385d3a990209a30e98372341ea4d6d` |
+| 5 | `theorem` | [norm_eq_iInf_iff_inner_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/MinimalPublic.lean/declarations/norm-eq-iinf-iff-inner-eq-zero.md) | 288 | `result-track:f5cbe637dfc59c83bd740e422fb13a7dbb4bbd0ef69994171ba7ea97677f47f3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

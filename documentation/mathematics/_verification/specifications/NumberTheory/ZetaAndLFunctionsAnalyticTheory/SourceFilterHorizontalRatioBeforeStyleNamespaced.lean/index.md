@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceFilterHorizontalRatioBeforeStyleNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceFilterHorizontalRatioBeforeStyleNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceFilterHorizontalRatioBeforeStyleNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceFilterHorizontalRatioBeforeStyleNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sourceQuadratic_horizontal_bound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceFilterHorizontalRatioBeforeStyleNamespaced.lean/declarations/sourcequadratic-horizontal-bound.md) | 22 | `result-track:160add9235c89121b75a64b0615f2e912a8fe87f176184874bbeeb494f05f454` |
-| 2 | `theorem` | [W_horizontal_multiplicative_bound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceFilterHorizontalRatioBeforeStyleNamespaced.lean/declarations/w-horizontal-multiplicative-bound.md) | 40 | `result-track:88e5712e61d5e4f3ba1430682cd4986e93c2258e7f03f9dad160613b0ce3f6b7` |
-| 3 | `theorem` | [W_horizontal_ratio_bound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceFilterHorizontalRatioBeforeStyleNamespaced.lean/declarations/w-horizontal-ratio-bound.md) | 74 | `result-track:850e56e0f7429b72467e92a309f29a87a79b53f0986296843455ba3ba8bd5aab` |
-| 4 | `theorem` | [W_horizontal_uniform_bound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceFilterHorizontalRatioBeforeStyleNamespaced.lean/declarations/w-horizontal-uniform-bound.md) | 104 | `result-track:3448ac1c7977523c30569c901855d4ea2057f46b70ad3efa64902e13d0bccf3f` |
+| 1 | `theorem` | [sourceQuadratic_horizontal_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceFilterHorizontalRatioBeforeStyleNamespaced.lean/declarations/sourcequadratic-horizontal-bound.md) | 22 | `result-track:160add9235c89121b75a64b0615f2e912a8fe87f176184874bbeeb494f05f454` |
+| 2 | `theorem` | [W_horizontal_multiplicative_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceFilterHorizontalRatioBeforeStyleNamespaced.lean/declarations/w-horizontal-multiplicative-bound.md) | 40 | `result-track:88e5712e61d5e4f3ba1430682cd4986e93c2258e7f03f9dad160613b0ce3f6b7` |
+| 3 | `theorem` | [W_horizontal_ratio_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceFilterHorizontalRatioBeforeStyleNamespaced.lean/declarations/w-horizontal-ratio-bound.md) | 74 | `result-track:850e56e0f7429b72467e92a309f29a87a79b53f0986296843455ba3ba8bd5aab` |
+| 4 | `theorem` | [W_horizontal_uniform_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceFilterHorizontalRatioBeforeStyleNamespaced.lean/declarations/w-horizontal-uniform-bound.md) | 104 | `result-track:3448ac1c7977523c30569c901855d4ea2057f46b70ad3efa64902e13d0bccf3f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

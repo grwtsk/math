@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Integrated69SemanticGuards.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Integrated69SemanticGuards.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Integrated69SemanticGuards.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Integrated69SemanticGuards.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Integrated69SemanticGuards.lean/declarations/example-source-edition-8.md) | 7 | `declaration-track:b7a770b6f9e8c8e2b9b04293d8b0c86c4d211d1005443408890fc5a67bc7dc6c` |
-| 2 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Integrated69SemanticGuards.lean/declarations/example-source-edition-5.md) | 13 | `declaration-track:57c13b187f31a12689be9cad24e38af53d21079ea7d48fd15bf789213650d48f` |
-| 3 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Integrated69SemanticGuards.lean/declarations/example.md) | 18 | `declaration-track:1246b7d5c065fd75a9fa497bee366f9c68812f7472d8ed4b73e31cb8f3aee938` |
-| 4 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Integrated69SemanticGuards.lean/declarations/example-source-edition-2.md) | 21 | `declaration-track:1a7e07fa8cdd7bed1bf4dc1ab4f93debac4899d852d8fe087dd3f738dfe5ebad` |
-| 5 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Integrated69SemanticGuards.lean/declarations/example-source-edition-6.md) | 26 | `declaration-track:9f7b0c6b347044e06d0b1191d83b6461bbeeb53097af6427faacf3fdd951dc38` |
-| 6 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Integrated69SemanticGuards.lean/declarations/example-source-edition-7.md) | 30 | `declaration-track:a6b8e07eba274890615da49034f2639f62daef454eef934f283e4530df4e0859` |
-| 7 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Integrated69SemanticGuards.lean/declarations/example-source-edition-3.md) | 35 | `declaration-track:28dc00ba1ae1b39473f3a19f206a7d8ec73f5412ff992795a04d3fee3b35d2da` |
-| 8 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Integrated69SemanticGuards.lean/declarations/example-source-edition-4.md) | 40 | `declaration-track:3453aaa8b8204a4405eacef15422c5f226c3b1f39d8532034af15169bc72b6b9` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Integrated69SemanticGuards.lean/declarations/example-source-edition-8.md) | 7 | `declaration-track:b7a770b6f9e8c8e2b9b04293d8b0c86c4d211d1005443408890fc5a67bc7dc6c` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Integrated69SemanticGuards.lean/declarations/example-source-edition-5.md) | 13 | `declaration-track:57c13b187f31a12689be9cad24e38af53d21079ea7d48fd15bf789213650d48f` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Integrated69SemanticGuards.lean/declarations/example.md) | 18 | `declaration-track:1246b7d5c065fd75a9fa497bee366f9c68812f7472d8ed4b73e31cb8f3aee938` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Integrated69SemanticGuards.lean/declarations/example-source-edition-2.md) | 21 | `declaration-track:1a7e07fa8cdd7bed1bf4dc1ab4f93debac4899d852d8fe087dd3f738dfe5ebad` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Integrated69SemanticGuards.lean/declarations/example-source-edition-6.md) | 26 | `declaration-track:9f7b0c6b347044e06d0b1191d83b6461bbeeb53097af6427faacf3fdd951dc38` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Integrated69SemanticGuards.lean/declarations/example-source-edition-7.md) | 30 | `declaration-track:a6b8e07eba274890615da49034f2639f62daef454eef934f283e4530df4e0859` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Integrated69SemanticGuards.lean/declarations/example-source-edition-3.md) | 35 | `declaration-track:28dc00ba1ae1b39473f3a19f206a7d8ec73f5412ff992795a04d3fee3b35d2da` |
+| 8 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Integrated69SemanticGuards.lean/declarations/example-source-edition-4.md) | 40 | `declaration-track:3453aaa8b8204a4405eacef15422c5f226c3b1f39d8532034af15169bc72b6b9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

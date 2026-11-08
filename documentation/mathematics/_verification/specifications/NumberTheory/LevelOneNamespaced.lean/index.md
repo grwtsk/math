@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/LevelOneNamespaced.lean/index.md) · [Full source](../../../../NumberTheory/LevelOneNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LevelOneNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LevelOneNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [exists_one_half_le_im_and_norm_le](../../../../NumberTheory/LevelOneNamespaced.lean/declarations/exists-one-half-le-im-and-norm-le.md) | 37 | `result-track:65e423a52c8c8a475a9690c81aa17e2df22c6669eda213fce0009ab084026871` |
-| 2 | `lemma` | [wt_eq_zero_of_eq_const](../../../../NumberTheory/LevelOneNamespaced.lean/declarations/wt-eq-zero-of-eq-const.md) | 46 | `result-track:560c61d97133e866dea0a6ad6a88a82af3fb60b6cabf6e7b6862b4bc0cd6cec0` |
-| 3 | `theorem` | [cuspFunction_eqOn_const_of_nonpos_wt](../../../../NumberTheory/LevelOneNamespaced.lean/declarations/cuspfunction-eqon-const-of-nonpos-wt.md) | 63 | `result-track:d54b1aa3e7933bba3fa1d80242e439787a5a4aa1118b21b92a247694da3e2bf9` |
-| 4 | `theorem` | [levelOne_nonpos_wt_const](../../../../NumberTheory/LevelOneNamespaced.lean/declarations/levelone-nonpos-wt-const.md) | 77 | `result-track:9dc25b0c8d4a9fcd816895a566702d272acf7f6dba1633dfeb89aa053c3256d6` |
-| 5 | `lemma` | [levelOne_neg_weight_eq_zero](../../../../NumberTheory/LevelOneNamespaced.lean/declarations/levelone-neg-weight-eq-zero.md) | 86 | `result-track:1aa3eb9a60c12c7fb32343315a34b106eb3aecd5351fd5888a942d49306ddb4f` |
-| 6 | `lemma` | [levelOne_weight_zero_const](../../../../NumberTheory/LevelOneNamespaced.lean/declarations/levelone-weight-zero-const.md) | 92 | `result-track:39aa188008085318fa20b562b16d10c7f6da98a24aa71fa31a171926e32829f4` |
-| 7 | `lemma` | [ModularForm.levelOne_weight_zero_rank_one](../../../../NumberTheory/LevelOneNamespaced.lean/declarations/modularform-levelone-weight-zero-rank-one.md) | 98 | `result-track:0cca5ca13813cb315ad65fed4575438af63d2b081841d6fb2dd46f16eab567d6` |
-| 8 | `lemma` | [ModularForm.levelOne_neg_weight_rank_zero](../../../../NumberTheory/LevelOneNamespaced.lean/declarations/modularform-levelone-neg-weight-rank-zero.md) | 103 | `result-track:1e52766ff8d82b09da4b527a85d38cb09e55aa43c93dcb516c129d7693ad7fdb` |
+| 1 | `lemma` | [exists_one_half_le_im_and_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LevelOneNamespaced.lean/declarations/exists-one-half-le-im-and-norm-le.md) | 37 | `result-track:65e423a52c8c8a475a9690c81aa17e2df22c6669eda213fce0009ab084026871` |
+| 2 | `lemma` | [wt_eq_zero_of_eq_const](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LevelOneNamespaced.lean/declarations/wt-eq-zero-of-eq-const.md) | 46 | `result-track:560c61d97133e866dea0a6ad6a88a82af3fb60b6cabf6e7b6862b4bc0cd6cec0` |
+| 3 | `theorem` | [cuspFunction_eqOn_const_of_nonpos_wt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LevelOneNamespaced.lean/declarations/cuspfunction-eqon-const-of-nonpos-wt.md) | 63 | `result-track:d54b1aa3e7933bba3fa1d80242e439787a5a4aa1118b21b92a247694da3e2bf9` |
+| 4 | `theorem` | [levelOne_nonpos_wt_const](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LevelOneNamespaced.lean/declarations/levelone-nonpos-wt-const.md) | 77 | `result-track:9dc25b0c8d4a9fcd816895a566702d272acf7f6dba1633dfeb89aa053c3256d6` |
+| 5 | `lemma` | [levelOne_neg_weight_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LevelOneNamespaced.lean/declarations/levelone-neg-weight-eq-zero.md) | 86 | `result-track:1aa3eb9a60c12c7fb32343315a34b106eb3aecd5351fd5888a942d49306ddb4f` |
+| 6 | `lemma` | [levelOne_weight_zero_const](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LevelOneNamespaced.lean/declarations/levelone-weight-zero-const.md) | 92 | `result-track:39aa188008085318fa20b562b16d10c7f6da98a24aa71fa31a171926e32829f4` |
+| 7 | `lemma` | [ModularForm.levelOne_weight_zero_rank_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LevelOneNamespaced.lean/declarations/modularform-levelone-weight-zero-rank-one.md) | 98 | `result-track:0cca5ca13813cb315ad65fed4575438af63d2b081841d6fb2dd46f16eab567d6` |
+| 8 | `lemma` | [ModularForm.levelOne_neg_weight_rank_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/LevelOneNamespaced.lean/declarations/modularform-levelone-neg-weight-rank-zero.md) | 103 | `result-track:1e52766ff8d82b09da4b527a85d38cb09e55aa43c93dcb516c129d7693ad7fdb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

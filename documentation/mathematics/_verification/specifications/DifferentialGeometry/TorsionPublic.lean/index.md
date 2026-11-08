@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../DifferentialGeometry/TorsionPublic.lean/index.md) · [Full source](../../../../DifferentialGeometry/TorsionPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/TorsionPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/TorsionPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,20 +57,20 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [torsionAux](../../../../DifferentialGeometry/TorsionPublic.lean/declarations/torsionaux.md) | 43 | `declaration-track:dfa4146d4399189a51ddc21d8d9ecb9a9694ea21b47197fb427eb8877fbb55c9` |
-| 2 | `theorem` | [torsionAux_tensorial₁](../../../../DifferentialGeometry/TorsionPublic.lean/declarations/torsionaux-tensorial.md) | 52 | `result-track:42319ea783171de89af5b2536d234eae8c412210f9eb3cca889bd5ef26cbc975` |
-| 3 | `theorem` | [torsionAux_tensorial₂](../../../../DifferentialGeometry/TorsionPublic.lean/declarations/torsionaux-tensorial-source-edition-2.md) | 62 | `result-track:e703ef15c64fca499cb0dfd322f65a9d4c2f9361ea956e5bf6fe0d9061ffdba1` |
-| 4 | `def` | [torsion](../../../../DifferentialGeometry/TorsionPublic.lean/declarations/torsion-source-edition-2.md) | 75 | `declaration-track:dd947f9b5b4b3aae75df28f084355b6233a04cbe5c66098c15a5db6f4fb1dc62` |
-| 5 | `theorem` | [torsion_apply](../../../../DifferentialGeometry/TorsionPublic.lean/declarations/torsion-apply-source-edition-2.md) | 81 | `result-track:de61103203bb49727b6c5c1ceb1f050b931c3c8d70547b58f24712482421c755` |
-| 6 | `theorem` | [torsion_apply_eq_extend](../../../../DifferentialGeometry/TorsionPublic.lean/declarations/torsion-apply-eq-extend.md) | 87 | `result-track:2716a3698264dee29c421286793087e221a04443e74a1a2e11dea4695a4d35b3` |
-| 7 | `lemma` | [torsion_self](../../../../DifferentialGeometry/TorsionPublic.lean/declarations/torsion-self.md) | 96 | `result-track:52e690eb11aa5ca733dc198a9f02d077131d0521b5afe7a5272b22399a77fe16` |
-| 8 | `lemma` | [torsion_antisymm](../../../../DifferentialGeometry/TorsionPublic.lean/declarations/torsion-antisymm-source-edition-2.md) | 101 | `result-track:b2aa5f7d1d1735b0fea5304d746605275dd3d6c35727fe66f89000a3c040409e` |
-| 9 | `def` | [torsion](../../../../DifferentialGeometry/TorsionPublic.lean/declarations/torsion.md) | 120 | `declaration-track:76ce6823dd49098d51d6c75f14bf689e2654822d7785a046b516733bae6d8262` |
-| 10 | `lemma` | [torsion_apply](../../../../DifferentialGeometry/TorsionPublic.lean/declarations/torsion-apply.md) | 123 | `result-track:6c4c98776b49700924c316ef25147a4668f5d60caa2348d88d259f134a59a66a` |
-| 11 | `lemma` | [torsion_apply_eq_extend](../../../../DifferentialGeometry/TorsionPublic.lean/declarations/torsion-apply-eq-extend-source-edition-2.md) | 129 | `result-track:b0aa965e6379f491b39442641eb6338d0fc643a561288c409e6ee6a39ef6a642` |
-| 12 | `lemma` | [torsion_self](../../../../DifferentialGeometry/TorsionPublic.lean/declarations/torsion-self-source-edition-2.md) | 137 | `result-track:bb3a11eda49030aa1c609fe7ad0d23b5151a94c8bbb4c22e1152dc96bfbc17be` |
-| 13 | `lemma` | [torsion_antisymm](../../../../DifferentialGeometry/TorsionPublic.lean/declarations/torsion-antisymm.md) | 140 | `result-track:6c77702cf3025cd472b289171627590d160b6484f5aeedc198340a577688e973` |
-| 14 | `lemma` | [torsion_eq_zero_iff](../../../../DifferentialGeometry/TorsionPublic.lean/declarations/torsion-eq-zero-iff.md) | 143 | `result-track:40559bc6b178cbadbd96e6f418851cf6b58ba7c21f81aecbac0e019cca18068d` |
+| 1 | `def` | [torsionAux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/TorsionPublic.lean/declarations/torsionaux.md) | 43 | `declaration-track:dfa4146d4399189a51ddc21d8d9ecb9a9694ea21b47197fb427eb8877fbb55c9` |
+| 2 | `theorem` | [torsionAux_tensorial₁](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/TorsionPublic.lean/declarations/torsionaux-tensorial.md) | 52 | `result-track:42319ea783171de89af5b2536d234eae8c412210f9eb3cca889bd5ef26cbc975` |
+| 3 | `theorem` | [torsionAux_tensorial₂](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/TorsionPublic.lean/declarations/torsionaux-tensorial-source-edition-2.md) | 62 | `result-track:e703ef15c64fca499cb0dfd322f65a9d4c2f9361ea956e5bf6fe0d9061ffdba1` |
+| 4 | `def` | [torsion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/TorsionPublic.lean/declarations/torsion-source-edition-2.md) | 75 | `declaration-track:dd947f9b5b4b3aae75df28f084355b6233a04cbe5c66098c15a5db6f4fb1dc62` |
+| 5 | `theorem` | [torsion_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/TorsionPublic.lean/declarations/torsion-apply-source-edition-2.md) | 81 | `result-track:de61103203bb49727b6c5c1ceb1f050b931c3c8d70547b58f24712482421c755` |
+| 6 | `theorem` | [torsion_apply_eq_extend](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/TorsionPublic.lean/declarations/torsion-apply-eq-extend.md) | 87 | `result-track:2716a3698264dee29c421286793087e221a04443e74a1a2e11dea4695a4d35b3` |
+| 7 | `lemma` | [torsion_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/TorsionPublic.lean/declarations/torsion-self.md) | 96 | `result-track:52e690eb11aa5ca733dc198a9f02d077131d0521b5afe7a5272b22399a77fe16` |
+| 8 | `lemma` | [torsion_antisymm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/TorsionPublic.lean/declarations/torsion-antisymm-source-edition-2.md) | 101 | `result-track:b2aa5f7d1d1735b0fea5304d746605275dd3d6c35727fe66f89000a3c040409e` |
+| 9 | `def` | [torsion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/TorsionPublic.lean/declarations/torsion.md) | 120 | `declaration-track:76ce6823dd49098d51d6c75f14bf689e2654822d7785a046b516733bae6d8262` |
+| 10 | `lemma` | [torsion_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/TorsionPublic.lean/declarations/torsion-apply.md) | 123 | `result-track:6c4c98776b49700924c316ef25147a4668f5d60caa2348d88d259f134a59a66a` |
+| 11 | `lemma` | [torsion_apply_eq_extend](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/TorsionPublic.lean/declarations/torsion-apply-eq-extend-source-edition-2.md) | 129 | `result-track:b0aa965e6379f491b39442641eb6338d0fc643a561288c409e6ee6a39ef6a642` |
+| 12 | `lemma` | [torsion_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/TorsionPublic.lean/declarations/torsion-self-source-edition-2.md) | 137 | `result-track:bb3a11eda49030aa1c609fe7ad0d23b5151a94c8bbb4c22e1152dc96bfbc17be` |
+| 13 | `lemma` | [torsion_antisymm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/TorsionPublic.lean/declarations/torsion-antisymm.md) | 140 | `result-track:6c77702cf3025cd472b289171627590d160b6484f5aeedc198340a577688e973` |
+| 14 | `lemma` | [torsion_eq_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/TorsionPublic.lean/declarations/torsion-eq-zero-iff.md) | 143 | `result-track:40559bc6b178cbadbd96e6f418851cf6b58ba7c21f81aecbac0e019cca18068d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

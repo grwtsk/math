@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ComparisonNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ComparisonNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ComparisonNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ComparisonNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [arithmetic_zero_equality](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ComparisonNamespaced.lean/declarations/arithmetic-zero-equality.md) | 31 | `result-track:8fb1e50d8a46e46f477cb41028584e83e3f565bfb7c459a8afeacf2ae9bb6759` |
-| 2 | `theorem` | [zero_side_identity](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ComparisonNamespaced.lean/declarations/zero-side-identity.md) | 52 | `result-track:3fdfa2d18618ada2c7f8909fa750e75dde464bbf15e132a318a2ee57b33df2ab` |
-| 3 | `theorem` | [arithmetic_zero_hasSum](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ComparisonNamespaced.lean/declarations/arithmetic-zero-hassum.md) | 56 | `result-track:5f83358cda925c005b4807e1fe3e34ef1b702651cf7fec1e3160757d35bc8d6e` |
-| 4 | `theorem` | [normalized_hasSum](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ComparisonNamespaced.lean/declarations/normalized-hassum.md) | 60 | `result-track:4097ba2963258154fe7041567aa220a764848a4366025b08e1ca4ffac0767ee6` |
-| 5 | `theorem` | [original_source_equality](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ComparisonNamespaced.lean/declarations/original-source-equality.md) | 68 | `result-track:236541908a8b45e46f5ef8e89e17d9692ff795268fafcff68bbc95d324c750f4` |
+| 1 | `theorem` | [arithmetic_zero_equality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ComparisonNamespaced.lean/declarations/arithmetic-zero-equality.md) | 31 | `result-track:8fb1e50d8a46e46f477cb41028584e83e3f565bfb7c459a8afeacf2ae9bb6759` |
+| 2 | `theorem` | [zero_side_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ComparisonNamespaced.lean/declarations/zero-side-identity.md) | 52 | `result-track:3fdfa2d18618ada2c7f8909fa750e75dde464bbf15e132a318a2ee57b33df2ab` |
+| 3 | `theorem` | [arithmetic_zero_hasSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ComparisonNamespaced.lean/declarations/arithmetic-zero-hassum.md) | 56 | `result-track:5f83358cda925c005b4807e1fe3e34ef1b702651cf7fec1e3160757d35bc8d6e` |
+| 4 | `theorem` | [normalized_hasSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ComparisonNamespaced.lean/declarations/normalized-hassum.md) | 60 | `result-track:4097ba2963258154fe7041567aa220a764848a4366025b08e1ca4ffac0767ee6` |
+| 5 | `theorem` | [original_source_equality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ComparisonNamespaced.lean/declarations/original-source-equality.md) | 68 | `result-track:236541908a8b45e46f5ef8e89e17d9692ff795268fafcff68bbc95d324c750f4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

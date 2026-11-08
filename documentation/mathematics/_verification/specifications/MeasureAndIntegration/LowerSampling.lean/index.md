@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/LowerSampling.lean/index.md) · [Full source](../../../../MeasureAndIntegration/LowerSampling.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LowerSampling.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LowerSampling.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,12 +60,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [correlation_deriv_zero](../../../../MeasureAndIntegration/LowerSampling.lean/declarations/correlation-deriv-zero.md) | 20 | `result-track:13815426db58c3ef43392f7ae56933c731d616dca5781a00764d7f8ed36833e8` |
-| 2 | `theorem` | [unit_profile_at_one](../../../../MeasureAndIntegration/LowerSampling.lean/declarations/unit-profile-at-one.md) | 37 | `result-track:da5a3ed2b6b62507d06b1f26e327b72a8254b55469068b4bd609cec0b143181b` |
-| 3 | `theorem` | [unit_model_derivative](../../../../MeasureAndIntegration/LowerSampling.lean/declarations/unit-model-derivative.md) | 43 | `result-track:a9810de8f3a772dd00ecb56e470836e74244ef6850d84026ed0a9cba89691d14` |
-| 4 | `theorem` | [upper_profile_integral](../../../../MeasureAndIntegration/LowerSampling.lean/declarations/upper-profile-integral.md) | 50 | `result-track:dc01ef8be157bbfe1cf8c34e3cb389c5279b3a8678fc2243734e5a4f232c6196` |
-| 5 | `theorem` | [lower_profile_integral](../../../../MeasureAndIntegration/LowerSampling.lean/declarations/lower-profile-integral.md) | 73 | `result-track:662aec8362abfdfa8583f855f9240cb2d5ee09b1ea778e7485747dd9e2579d73` |
-| 6 | `theorem` | [lower_remainder_integral](../../../../MeasureAndIntegration/LowerSampling.lean/declarations/lower-remainder-integral.md) | 83 | `result-track:9dc758b04a27a9d7fea7b84c65f1cb679a4bfc76d2c9b83885be030676862a2b` |
+| 1 | `theorem` | [correlation_deriv_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LowerSampling.lean/declarations/correlation-deriv-zero.md) | 20 | `result-track:13815426db58c3ef43392f7ae56933c731d616dca5781a00764d7f8ed36833e8` |
+| 2 | `theorem` | [unit_profile_at_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LowerSampling.lean/declarations/unit-profile-at-one.md) | 37 | `result-track:da5a3ed2b6b62507d06b1f26e327b72a8254b55469068b4bd609cec0b143181b` |
+| 3 | `theorem` | [unit_model_derivative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LowerSampling.lean/declarations/unit-model-derivative.md) | 43 | `result-track:a9810de8f3a772dd00ecb56e470836e74244ef6850d84026ed0a9cba89691d14` |
+| 4 | `theorem` | [upper_profile_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LowerSampling.lean/declarations/upper-profile-integral.md) | 50 | `result-track:dc01ef8be157bbfe1cf8c34e3cb389c5279b3a8678fc2243734e5a4f232c6196` |
+| 5 | `theorem` | [lower_profile_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LowerSampling.lean/declarations/lower-profile-integral.md) | 73 | `result-track:662aec8362abfdfa8583f855f9240cb2d5ee09b1ea778e7485747dd9e2579d73` |
+| 6 | `theorem` | [lower_remainder_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LowerSampling.lean/declarations/lower-remainder-integral.md) | 83 | `result-track:9dc758b04a27a9d7fea7b84c65f1cb679a4bfc76d2c9b83885be030676862a2b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

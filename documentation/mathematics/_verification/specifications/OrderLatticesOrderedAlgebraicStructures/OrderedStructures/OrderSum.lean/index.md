@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderSum.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderSum.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderSum.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderSum.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [one_le_elim_iff](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderSum.lean/declarations/one-le-elim-iff.md) | 20 | `result-track:6b16dee55bc1119e1ce9aef9166165801d02fc22f3e0f3c3d157c985b6b141d4` |
-| 2 | `lemma` | [elim_le_one_iff](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderSum.lean/declarations/elim-le-one-iff.md) | 24 | `result-track:9ae30a314794985d975d207c02b911cf0f1720fd562732457f425965bb852fd8` |
+| 1 | `lemma` | [one_le_elim_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderSum.lean/declarations/one-le-elim-iff.md) | 20 | `result-track:6b16dee55bc1119e1ce9aef9166165801d02fc22f3e0f3c3d157c985b6b141d4` |
+| 2 | `lemma` | [elim_le_one_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderSum.lean/declarations/elim-le-one-iff.md) | 24 | `result-track:9ae30a314794985d975d207c02b911cf0f1720fd562732457f425965bb852fd8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

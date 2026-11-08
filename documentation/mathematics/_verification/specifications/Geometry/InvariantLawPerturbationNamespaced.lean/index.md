@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Geometry/InvariantLawPerturbationNamespaced.lean/index.md) · [Full source](../../../../Geometry/InvariantLawPerturbationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/InvariantLawPerturbationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/InvariantLawPerturbationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [InvariantLawPerturbation](../../../../Geometry/InvariantLawPerturbationNamespaced.lean/declarations/invariantlawperturbation.md) | 23 | `declaration-track:2b5c1294211fcaebdc4684d46bfde5db1828e0511becc37320e3ce295427ad60` |
-| 2 | `theorem` | [displacement_recurrence](../../../../Geometry/InvariantLawPerturbationNamespaced.lean/declarations/displacement-recurrence.md) | 50 | `result-track:12a40f358320fe95adc30604b3d026da471c4bd8493370a10c01ad702f8f653a` |
-| 3 | `theorem` | [invariant_law_perturbation_bound](../../../../Geometry/InvariantLawPerturbationNamespaced.lean/declarations/invariant-law-perturbation-bound.md) | 127 | `result-track:9ca603cdcf06d669b0fff8eca4a314f29eddd2907ffbb76a1eadca3fbe1ce1bb` |
+| 1 | `structure` | [InvariantLawPerturbation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/InvariantLawPerturbationNamespaced.lean/declarations/invariantlawperturbation.md) | 23 | `declaration-track:2b5c1294211fcaebdc4684d46bfde5db1828e0511becc37320e3ce295427ad60` |
+| 2 | `theorem` | [displacement_recurrence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/InvariantLawPerturbationNamespaced.lean/declarations/displacement-recurrence.md) | 50 | `result-track:12a40f358320fe95adc30604b3d026da471c4bd8493370a10c01ad702f8f653a` |
+| 3 | `theorem` | [invariant_law_perturbation_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/InvariantLawPerturbationNamespaced.lean/declarations/invariant-law-perturbation-bound.md) | 127 | `result-track:9ca603cdcf06d669b0fff8eca4a314f29eddd2907ffbb76a1eadca3fbe1ce1bb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

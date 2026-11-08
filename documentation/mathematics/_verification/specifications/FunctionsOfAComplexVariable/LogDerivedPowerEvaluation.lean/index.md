@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/LogDerivedPowerEvaluation.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/LogDerivedPowerEvaluation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/LogDerivedPowerEvaluation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/LogDerivedPowerEvaluation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Real.RationalLogEnclosure`](../../../../RealFunctions/RealAnalysisRationalLogEnclosure.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.TentKernelEnclosure`](../../../../FunctionsOfAComplexVariable/TentKernelEnclosure.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Real.RationalLogEnclosure`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RealAnalysisRationalLogEnclosure.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.TentKernelEnclosure`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/TentKernelEnclosure.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PowerInput](../../../../FunctionsOfAComplexVariable/LogDerivedPowerEvaluation.lean/declarations/powerinput.md) | 33 | `declaration-track:a25096659d43b7e0650849be86452be73b3344078fa7f6947f0086ff5f104a36` |
-| 2 | `def` | [toPowerEvaluation](../../../../FunctionsOfAComplexVariable/LogDerivedPowerEvaluation.lean/declarations/topowerevaluation.md) | 44 | `declaration-track:9d4bf565ddccb1b2992d74ec2667c05deb989682a5dfa00d7ad143bf0791cbee` |
-| 3 | `theorem` | [value_eq_polynomial](../../../../FunctionsOfAComplexVariable/LogDerivedPowerEvaluation.lean/declarations/value-eq-polynomial.md) | 57 | `result-track:a29455f802d96b15d114c6851f13dcf0425cf1b9c69d0fd2e65c1fe5914d2635` |
-| 4 | `theorem` | [sound](../../../../FunctionsOfAComplexVariable/LogDerivedPowerEvaluation.lean/declarations/sound-source-edition-2.md) | 61 | `result-track:b1aa117d9f07f3a19065e9046ee15b0c2ebc056d20de4676870fa26f6a659434` |
-| 5 | `theorem` | [exists_log_terms](../../../../FunctionsOfAComplexVariable/LogDerivedPowerEvaluation.lean/declarations/exists-log-terms.md) | 69 | `result-track:0e9c96ebae6c85f0d1872beef7b42d4617bf18d8e608c010e9108271adc6673c` |
-| 6 | `theorem` | [exists_exp_degree](../../../../FunctionsOfAComplexVariable/LogDerivedPowerEvaluation.lean/declarations/exists-exp-degree.md) | 78 | `result-track:b93acdbd222f4ca0bde3ea80c7b44f762eee0daa2fe07abe056bfbf4051134af` |
-| 7 | `structure` | [PointInput](../../../../FunctionsOfAComplexVariable/LogDerivedPowerEvaluation.lean/declarations/pointinput.md) | 86 | `declaration-track:6d457504614971560b5d2244712785f6cd984ac5d834d8beaf8bdca3699a2e7e` |
-| 8 | `def` | [toPointEvaluation](../../../../FunctionsOfAComplexVariable/LogDerivedPowerEvaluation.lean/declarations/topointevaluation.md) | 102 | `declaration-track:528a0f9f06c4d5826c8d63d678821e28f83d6df5c0a7bb403718586211586381` |
-| 9 | `theorem` | [sound](../../../../FunctionsOfAComplexVariable/LogDerivedPowerEvaluation.lean/declarations/sound.md) | 114 | `result-track:a405499cf43f6588f0e9c1a246598b20ce00c75d637659a37254a3dda46daef0` |
+| 1 | `structure` | [PowerInput](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/LogDerivedPowerEvaluation.lean/declarations/powerinput.md) | 33 | `declaration-track:a25096659d43b7e0650849be86452be73b3344078fa7f6947f0086ff5f104a36` |
+| 2 | `def` | [toPowerEvaluation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/LogDerivedPowerEvaluation.lean/declarations/topowerevaluation.md) | 44 | `declaration-track:9d4bf565ddccb1b2992d74ec2667c05deb989682a5dfa00d7ad143bf0791cbee` |
+| 3 | `theorem` | [value_eq_polynomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/LogDerivedPowerEvaluation.lean/declarations/value-eq-polynomial.md) | 57 | `result-track:a29455f802d96b15d114c6851f13dcf0425cf1b9c69d0fd2e65c1fe5914d2635` |
+| 4 | `theorem` | [sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/LogDerivedPowerEvaluation.lean/declarations/sound-source-edition-2.md) | 61 | `result-track:b1aa117d9f07f3a19065e9046ee15b0c2ebc056d20de4676870fa26f6a659434` |
+| 5 | `theorem` | [exists_log_terms](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/LogDerivedPowerEvaluation.lean/declarations/exists-log-terms.md) | 69 | `result-track:0e9c96ebae6c85f0d1872beef7b42d4617bf18d8e608c010e9108271adc6673c` |
+| 6 | `theorem` | [exists_exp_degree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/LogDerivedPowerEvaluation.lean/declarations/exists-exp-degree.md) | 78 | `result-track:b93acdbd222f4ca0bde3ea80c7b44f762eee0daa2fe07abe056bfbf4051134af` |
+| 7 | `structure` | [PointInput](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/LogDerivedPowerEvaluation.lean/declarations/pointinput.md) | 86 | `declaration-track:6d457504614971560b5d2244712785f6cd984ac5d834d8beaf8bdca3699a2e7e` |
+| 8 | `def` | [toPointEvaluation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/LogDerivedPowerEvaluation.lean/declarations/topointevaluation.md) | 102 | `declaration-track:528a0f9f06c4d5826c8d63d678821e28f83d6df5c0a7bb403718586211586381` |
+| 9 | `theorem` | [sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/LogDerivedPowerEvaluation.lean/declarations/sound.md) | 114 | `result-track:a405499cf43f6588f0e9c1a246598b20ce00c75d637659a37254a3dda46daef0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/SourceNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/SourceNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SourceNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SourceNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualLargePrimeFirstDiagonal](../../../../Combinatorics/SourceNamespaced.lean/declarations/actuallargeprimefirstdiagonal.md) | 30 | `declaration-track:5ff958eb3953e9658380da94954c0c33820330327623a8486befbad693a20d8f` |
-| 2 | `def` | [actualMeanLinearMain](../../../../Combinatorics/SourceNamespaced.lean/declarations/actualmeanlinearmain.md) | 36 | `declaration-track:00626c5d7ff7cdc415c3b78d3b0101d66adc8ee5c478ebdc162251b349ba210f` |
-| 3 | `theorem` | [actual_first_diagonal_eq_retained](../../../../Combinatorics/SourceNamespaced.lean/declarations/actual-first-diagonal-eq-retained.md) | 40 | `result-track:a24054b627f2fa7d5abca3ef0322b2d7d86dbb99002cc9eacb7abe7673917757` |
-| 4 | `theorem` | [actual_first_diagonal_fixed_main_error](../../../../Combinatorics/SourceNamespaced.lean/declarations/actual-first-diagonal-fixed-main-error.md) | 76 | `result-track:dc4fe65f74f7b6e7ecf30d129d19ddceedbf966829c130a3744f25ffbd08edb0` |
+| 1 | `def` | [actualLargePrimeFirstDiagonal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SourceNamespaced.lean/declarations/actuallargeprimefirstdiagonal.md) | 30 | `declaration-track:5ff958eb3953e9658380da94954c0c33820330327623a8486befbad693a20d8f` |
+| 2 | `def` | [actualMeanLinearMain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SourceNamespaced.lean/declarations/actualmeanlinearmain.md) | 36 | `declaration-track:00626c5d7ff7cdc415c3b78d3b0101d66adc8ee5c478ebdc162251b349ba210f` |
+| 3 | `theorem` | [actual_first_diagonal_eq_retained](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SourceNamespaced.lean/declarations/actual-first-diagonal-eq-retained.md) | 40 | `result-track:a24054b627f2fa7d5abca3ef0322b2d7d86dbb99002cc9eacb7abe7673917757` |
+| 4 | `theorem` | [actual_first_diagonal_fixed_main_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SourceNamespaced.lean/declarations/actual-first-diagonal-fixed-main-error.md) | 76 | `result-track:dc4fe65f74f7b6e7ecf30d129d19ddceedbf966829c130a3744f25ffbd08edb0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

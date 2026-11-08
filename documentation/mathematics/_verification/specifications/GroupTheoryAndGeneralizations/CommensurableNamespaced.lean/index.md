@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/CommensurableNamespaced.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/CommensurableNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CommensurableNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CommensurableNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,20 +57,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Commensurable](../../../../GroupTheoryAndGeneralizations/CommensurableNamespaced.lean/declarations/commensurable.md) | 43 | `declaration-track:a79f881998f44d228b9ca7e1e969cb32f6a69616be9d484fec59227942df437e` |
-| 2 | `theorem` | [refl](../../../../GroupTheoryAndGeneralizations/CommensurableNamespaced.lean/declarations/refl.md) | 51 | `result-track:bbc34b664624a1e37ec970bab82b4fb1d4ff1f31898ec4fca670d8ae93806e4a` |
-| 3 | `theorem` | [comm](../../../../GroupTheoryAndGeneralizations/CommensurableNamespaced.lean/declarations/comm.md) | 53 | `result-track:ca4c3662ff087612b9269d5a086994bffa8df7913c67f70d8abcc4e58cc26148` |
-| 4 | `theorem` | [symm](../../../../GroupTheoryAndGeneralizations/CommensurableNamespaced.lean/declarations/symm.md) | 56 | `result-track:2a2ec2162ee1354396dcddd6f9a9f4844d37c58d53f1d8712954d583bbc8ea17` |
-| 5 | `theorem` | [trans](../../../../GroupTheoryAndGeneralizations/CommensurableNamespaced.lean/declarations/trans.md) | 59 | `result-track:02d2017dd0a021552acd695e5af2aaef9c0b4b4a1dc1bc2575b3618f31f06083` |
-| 6 | `theorem` | [equivalence](../../../../GroupTheoryAndGeneralizations/CommensurableNamespaced.lean/declarations/equivalence.md) | 63 | `result-track:817c568ec7332bbad69c44bfbfcb6b3ef24a9c0bca5549d8b7b0337bb504b596` |
-| 7 | `def` | [quotConjEquiv](../../../../GroupTheoryAndGeneralizations/CommensurableNamespaced.lean/declarations/quotconjequiv.md) | 67 | `declaration-track:16468ed9e4b2bc942fc38b5a408dffe8c95ebbf13cb07a5806f7652c84d4f412` |
-| 8 | `theorem` | [commensurable_conj](../../../../GroupTheoryAndGeneralizations/CommensurableNamespaced.lean/declarations/commensurable-conj.md) | 76 | `result-track:6b51b5a5b6a0a2041d047cf7b1cc0b9f444adeb9e4caa1a83766087195d6d65c` |
-| 9 | `theorem` | [commensurable_inv](../../../../GroupTheoryAndGeneralizations/CommensurableNamespaced.lean/declarations/commensurable-inv.md) | 81 | `result-track:0c244003bb4a5735c07307e6191ba6a2945508b8861add768ed4900052126cff` |
-| 10 | `def` | [commensurator'](../../../../GroupTheoryAndGeneralizations/CommensurableNamespaced.lean/declarations/commensurator.md) | 86 | `declaration-track:bbf6ce9f0bcc92820457c60054b5214f3ced0370afb48b88c0c48814090ef934` |
-| 11 | `def` | [commensurator](../../../../GroupTheoryAndGeneralizations/CommensurableNamespaced.lean/declarations/commensurator-source-edition-2.md) | 96 | `declaration-track:eb205a78752622d150a7eeab10f0d15ff555faff012d1c6a874e24f6597f1717` |
-| 12 | `theorem` | [commensurator'_mem_iff](../../../../GroupTheoryAndGeneralizations/CommensurableNamespaced.lean/declarations/commensurator-mem-iff-source-edition-2.md) | 100 | `result-track:7c1ae7cf5b423e422d5a6dc5bb2da2330bc0b0da83d549beb9392cb9a69aa64d` |
-| 13 | `theorem` | [commensurator_mem_iff](../../../../GroupTheoryAndGeneralizations/CommensurableNamespaced.lean/declarations/commensurator-mem-iff.md) | 104 | `result-track:65b86d4962094060ccc2739637e562c28c7a82608553536aad9b9e0b51b97fba` |
-| 14 | `theorem` | [eq](../../../../GroupTheoryAndGeneralizations/CommensurableNamespaced.lean/declarations/eq.md) | 107 | `result-track:cda2ffbb35e55195b8a41eef1851d7b6985c747a2e059145050a976bcd9d0a1b` |
+| 1 | `def` | [Commensurable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CommensurableNamespaced.lean/declarations/commensurable.md) | 43 | `declaration-track:a79f881998f44d228b9ca7e1e969cb32f6a69616be9d484fec59227942df437e` |
+| 2 | `theorem` | [refl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CommensurableNamespaced.lean/declarations/refl.md) | 51 | `result-track:bbc34b664624a1e37ec970bab82b4fb1d4ff1f31898ec4fca670d8ae93806e4a` |
+| 3 | `theorem` | [comm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CommensurableNamespaced.lean/declarations/comm.md) | 53 | `result-track:ca4c3662ff087612b9269d5a086994bffa8df7913c67f70d8abcc4e58cc26148` |
+| 4 | `theorem` | [symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CommensurableNamespaced.lean/declarations/symm.md) | 56 | `result-track:2a2ec2162ee1354396dcddd6f9a9f4844d37c58d53f1d8712954d583bbc8ea17` |
+| 5 | `theorem` | [trans](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CommensurableNamespaced.lean/declarations/trans.md) | 59 | `result-track:02d2017dd0a021552acd695e5af2aaef9c0b4b4a1dc1bc2575b3618f31f06083` |
+| 6 | `theorem` | [equivalence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CommensurableNamespaced.lean/declarations/equivalence.md) | 63 | `result-track:817c568ec7332bbad69c44bfbfcb6b3ef24a9c0bca5549d8b7b0337bb504b596` |
+| 7 | `def` | [quotConjEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CommensurableNamespaced.lean/declarations/quotconjequiv.md) | 67 | `declaration-track:16468ed9e4b2bc942fc38b5a408dffe8c95ebbf13cb07a5806f7652c84d4f412` |
+| 8 | `theorem` | [commensurable_conj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CommensurableNamespaced.lean/declarations/commensurable-conj.md) | 76 | `result-track:6b51b5a5b6a0a2041d047cf7b1cc0b9f444adeb9e4caa1a83766087195d6d65c` |
+| 9 | `theorem` | [commensurable_inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CommensurableNamespaced.lean/declarations/commensurable-inv.md) | 81 | `result-track:0c244003bb4a5735c07307e6191ba6a2945508b8861add768ed4900052126cff` |
+| 10 | `def` | [commensurator'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CommensurableNamespaced.lean/declarations/commensurator.md) | 86 | `declaration-track:bbf6ce9f0bcc92820457c60054b5214f3ced0370afb48b88c0c48814090ef934` |
+| 11 | `def` | [commensurator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CommensurableNamespaced.lean/declarations/commensurator-source-edition-2.md) | 96 | `declaration-track:eb205a78752622d150a7eeab10f0d15ff555faff012d1c6a874e24f6597f1717` |
+| 12 | `theorem` | [commensurator'_mem_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CommensurableNamespaced.lean/declarations/commensurator-mem-iff-source-edition-2.md) | 100 | `result-track:7c1ae7cf5b423e422d5a6dc5bb2da2330bc0b0da83d549beb9392cb9a69aa64d` |
+| 13 | `theorem` | [commensurator_mem_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CommensurableNamespaced.lean/declarations/commensurator-mem-iff.md) | 104 | `result-track:65b86d4962094060ccc2739637e562c28c7a82608553536aad9b9e0b51b97fba` |
+| 14 | `theorem` | [eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CommensurableNamespaced.lean/declarations/eq.md) | 107 | `result-track:cda2ffbb35e55195b8a41eef1851d7b6985c747a2e059145050a976bcd9d0a1b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

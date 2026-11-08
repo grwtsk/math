@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TheNextConsumerOfArbitrarilySmallZeroStrips.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TheNextConsumerOfArbitrarilySmallZeroStrips.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TheNextConsumerOfArbitrarilySmallZeroStrips.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TheNextConsumerOfArbitrarilySmallZeroStrips.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ZeroStrip](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TheNextConsumerOfArbitrarilySmallZeroStrips.lean/declarations/zerostrip.md) | 24 | `declaration-track:08dbd9207a723a74d1fede8cfe36fc1ec82019ce00d32f985309ad192940cd59` |
-| 2 | `theorem` | [arbitrarily_small_strips_imply_rh](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TheNextConsumerOfArbitrarilySmallZeroStrips.lean/declarations/arbitrarily-small-strips-imply-rh.md) | 28 | `result-track:10b1878f408862ce53b91d9100034ca4c5481f5cb085a4c8b73bf68cdf058104` |
-| 3 | `theorem` | [seed_rate_returns_seed](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TheNextConsumerOfArbitrarilySmallZeroStrips.lean/declarations/seed-rate-returns-seed.md) | 38 | `result-track:8788839e76bc18279d92b26c46c1c42678948aa9c5e0a9b0693b6b70136b23ba` |
+| 1 | `def` | [ZeroStrip](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TheNextConsumerOfArbitrarilySmallZeroStrips.lean/declarations/zerostrip.md) | 24 | `declaration-track:08dbd9207a723a74d1fede8cfe36fc1ec82019ce00d32f985309ad192940cd59` |
+| 2 | `theorem` | [arbitrarily_small_strips_imply_rh](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TheNextConsumerOfArbitrarilySmallZeroStrips.lean/declarations/arbitrarily-small-strips-imply-rh.md) | 28 | `result-track:10b1878f408862ce53b91d9100034ca4c5481f5cb085a4c8b73bf68cdf058104` |
+| 3 | `theorem` | [seed_rate_returns_seed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TheNextConsumerOfArbitrarilySmallZeroStrips.lean/declarations/seed-rate-returns-seed.md) | 38 | `result-track:8788839e76bc18279d92b26c46c1c42678948aa9c5e0a9b0693b6b70136b23ba` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

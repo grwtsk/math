@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ReducerSeedNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ReducerSeedNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReducerSeedNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReducerSeedNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ReducerSeed](../../../../../ComputerScience/AlgorithmsInComputerScience/ReducerSeedNamespaced.lean/declarations/reducerseed.md) | 14 | `declaration-track:d36b78c13de088fc2cacb470afba46394123dae8d07da871661aab19b0cb9987` |
-| 2 | `structure` | [SeedResolutionCertificate](../../../../../ComputerScience/AlgorithmsInComputerScience/ReducerSeedNamespaced.lean/declarations/seedresolutioncertificate.md) | 22 | `declaration-track:ca078ecfe2a6e7e6c389b7c8224f8c1a61949994ef1597044cd8c1cae883e15d` |
-| 3 | `theorem` | [changedFile_resolves_to_reducerSeed](../../../../../ComputerScience/AlgorithmsInComputerScience/ReducerSeedNamespaced.lean/declarations/changedfile-resolves-to-reducerseed.md) | 32 | `result-track:946445433b5147486cc94a5ff393e43ea5942cf64603c648da070461ec6ab6fc` |
+| 1 | `structure` | [ReducerSeed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReducerSeedNamespaced.lean/declarations/reducerseed.md) | 14 | `declaration-track:d36b78c13de088fc2cacb470afba46394123dae8d07da871661aab19b0cb9987` |
+| 2 | `structure` | [SeedResolutionCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReducerSeedNamespaced.lean/declarations/seedresolutioncertificate.md) | 22 | `declaration-track:ca078ecfe2a6e7e6c389b7c8224f8c1a61949994ef1597044cd8c1cae883e15d` |
+| 3 | `theorem` | [changedFile_resolves_to_reducerSeed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReducerSeedNamespaced.lean/declarations/changedfile-resolves-to-reducerseed.md) | 32 | `result-track:946445433b5147486cc94a5ff393e43ea5942cf64603c648da070461ec6ab6fc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

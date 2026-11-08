@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Ext.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Ext.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Ext.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Ext.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [ext](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Ext.lean/declarations/ext.md) | 8 | `result-track:341968ef8793b489464a51f74f97ffe584eacfd4ee8e9f0e55fe71637728c955` |
-| 2 | `def` | [pointwiseEq](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Ext.lean/declarations/pointwiseeq.md) | 17 | `declaration-track:1e4175be77f29b3bfff3abc56c122d42df3289575caf1adafbb93d98c8487c6d` |
+| 1 | `theorem` | [ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Ext.lean/declarations/ext.md) | 8 | `result-track:341968ef8793b489464a51f74f97ffe584eacfd4ee8e9f0e55fe71637728c955` |
+| 2 | `def` | [pointwiseEq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Ext.lean/declarations/pointwiseeq.md) | 17 | `declaration-track:1e4175be77f29b3bfff3abc56c122d42df3289575caf1adafbb93d98c8487c6d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

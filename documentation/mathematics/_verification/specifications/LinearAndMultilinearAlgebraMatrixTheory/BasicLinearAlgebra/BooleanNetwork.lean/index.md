@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BooleanNetwork.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BooleanNetwork.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BooleanNetwork.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BooleanNetwork.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [BooleanNetwork.Network](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BooleanNetwork.lean/declarations/booleannetwork-network.md) | 6 | `declaration-track:f96bc8411677281f7888a1d6169504a19f2a73d705564b8acef9ec484b610cbe` |
-| 2 | `def` | [BooleanNetwork.iterate](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BooleanNetwork.lean/declarations/booleannetwork-iterate.md) | 10 | `declaration-track:98298bc35cd095f6acb6558c2a542adc3d344939fad82d8173424205b38c88c8` |
-| 3 | `def` | [BooleanNetwork.transitionMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BooleanNetwork.lean/declarations/booleannetwork-transitionmatrix.md) | 21 | `declaration-track:cc38f8f6c1679fcd84d579eccd6be33f603f93bc501d88a9852f72224d2e4943` |
-| 4 | `def` | [BooleanNetwork.dependsOn](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BooleanNetwork.lean/declarations/booleannetwork-dependson.md) | 34 | `declaration-track:227b812d286fc665b7c62a0fdd0445edf44ed637b55e70805159c7634304b41b` |
-| 5 | `def` | [BooleanNetwork.dependencyMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BooleanNetwork.lean/declarations/booleannetwork-dependencymatrix.md) | 51 | `declaration-track:1ac6a3654368fb278e0efd9dc4955334cf941c461a25f9c81ac5eb76a08badb1` |
+| 1 | `structure` | [BooleanNetwork.Network](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BooleanNetwork.lean/declarations/booleannetwork-network.md) | 6 | `declaration-track:f96bc8411677281f7888a1d6169504a19f2a73d705564b8acef9ec484b610cbe` |
+| 2 | `def` | [BooleanNetwork.iterate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BooleanNetwork.lean/declarations/booleannetwork-iterate.md) | 10 | `declaration-track:98298bc35cd095f6acb6558c2a542adc3d344939fad82d8173424205b38c88c8` |
+| 3 | `def` | [BooleanNetwork.transitionMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BooleanNetwork.lean/declarations/booleannetwork-transitionmatrix.md) | 21 | `declaration-track:cc38f8f6c1679fcd84d579eccd6be33f603f93bc501d88a9852f72224d2e4943` |
+| 4 | `def` | [BooleanNetwork.dependsOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BooleanNetwork.lean/declarations/booleannetwork-dependson.md) | 34 | `declaration-track:227b812d286fc665b7c62a0fdd0445edf44ed637b55e70805159c7634304b41b` |
+| 5 | `def` | [BooleanNetwork.dependencyMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BooleanNetwork.lean/declarations/booleannetwork-dependencymatrix.md) | 51 | `declaration-track:1ac6a3654368fb278e0efd9dc4955334cf941c461a25f9c81ac5eb76a08badb1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

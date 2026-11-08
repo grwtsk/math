@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SurfaceSurgeryValidateMain.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SurfaceSurgeryValidateMain.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SurfaceSurgeryValidateMain.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SurfaceSurgeryValidateMain.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [rejectionCodes](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SurfaceSurgeryValidateMain.lean/declarations/rejectioncodes.md) | 18 | `declaration-track:c6b8697bf9419baad5fc39c5cb9b261d4486010c6ea810ecfa1fae3f20504b48` |
-| 2 | `def` | [main](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SurfaceSurgeryValidateMain.lean/declarations/main-source-edition-2.md) | 33 | `declaration-track:96edb0f0195fc1281da7337ad6fdb9fb9ccb09a2454f8b4c6c31b93e51dc3f72` |
-| 3 | `def` | [main](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SurfaceSurgeryValidateMain.lean/declarations/main.md) | 58 | `declaration-track:1643ce6798fdeb96b304793f5b2faca26345ce95edc8b0159fec6370e26eae31` |
+| 1 | `def` | [rejectionCodes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SurfaceSurgeryValidateMain.lean/declarations/rejectioncodes.md) | 18 | `declaration-track:c6b8697bf9419baad5fc39c5cb9b261d4486010c6ea810ecfa1fae3f20504b48` |
+| 2 | `def` | [main](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SurfaceSurgeryValidateMain.lean/declarations/main-source-edition-2.md) | 33 | `declaration-track:96edb0f0195fc1281da7337ad6fdb9fb9ccb09a2454f8b4c6c31b93e51dc3f72` |
+| 3 | `def` | [main](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SurfaceSurgeryValidateMain.lean/declarations/main.md) | 58 | `declaration-track:1643ce6798fdeb96b304793f5b2faca26345ce95edc8b0159fec6370e26eae31` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/PointwiseSupportNamespaced.lean/index.md) · [Full source](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/PointwiseSupportNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/PointwiseSupportNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/PointwiseSupportNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [mulSupport_comp_inv_smul](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/PointwiseSupportNamespaced.lean/declarations/mulsupport-comp-inv-smul-source-edition-2.md) | 32 | `result-track:92cb0e5afc8c498b47e534194df72ccb5b5fbaa901e9f4976c0f9f102d96d04d` |
-| 2 | `theorem` | [support_comp_inv_smul](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/PointwiseSupportNamespaced.lean/declarations/support-comp-inv-smul-source-edition-2.md) | 39 | `result-track:a95693205dd476c9cde84ae72593ff59a5193547413db1fdd1cec385cbf0f8fa` |
-| 3 | `theorem` | [mulSupport_comp_inv_smul₀](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/PointwiseSupportNamespaced.lean/declarations/mulsupport-comp-inv-smul.md) | 50 | `result-track:8645bdd7e1be97a6f7944fb1a670d5451873f362b9010e4a5f1c209d98d37d49` |
-| 4 | `theorem` | [support_comp_inv_smul₀](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/PointwiseSupportNamespaced.lean/declarations/support-comp-inv-smul.md) | 57 | `result-track:69990d1d8ff8b9c2b60029ed7a5d4ca4f6c7d0c8d9bb7d21bb5cfb51aadfd91c` |
+| 1 | `theorem` | [mulSupport_comp_inv_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/PointwiseSupportNamespaced.lean/declarations/mulsupport-comp-inv-smul-source-edition-2.md) | 32 | `result-track:92cb0e5afc8c498b47e534194df72ccb5b5fbaa901e9f4976c0f9f102d96d04d` |
+| 2 | `theorem` | [support_comp_inv_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/PointwiseSupportNamespaced.lean/declarations/support-comp-inv-smul-source-edition-2.md) | 39 | `result-track:a95693205dd476c9cde84ae72593ff59a5193547413db1fdd1cec385cbf0f8fa` |
+| 3 | `theorem` | [mulSupport_comp_inv_smul₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/PointwiseSupportNamespaced.lean/declarations/mulsupport-comp-inv-smul.md) | 50 | `result-track:8645bdd7e1be97a6f7944fb1a670d5451873f362b9010e4a5f1c209d98d37d49` |
+| 4 | `theorem` | [support_comp_inv_smul₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/PointwiseSupportNamespaced.lean/declarations/support-comp-inv-smul.md) | 57 | `result-track:69990d1d8ff8b9c2b60029ed7a5d4ca4f6c7d0c8d9bb7d21bb5cfb51aadfd91c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

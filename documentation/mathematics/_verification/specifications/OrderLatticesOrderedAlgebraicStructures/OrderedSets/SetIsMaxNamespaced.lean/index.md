@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SetIsMaxNamespaced.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SetIsMaxNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/SetIsMaxNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/SetIsMaxNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [not_isMax_coe](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SetIsMaxNamespaced.lean/declarations/not-ismax-coe.md) | 31 | `result-track:325c865f5094074f36435b237ea5a49d3e347731c8a28c9807018c584fa5d28c` |
-| 2 | `lemma` | [not_isMin_coe](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SetIsMaxNamespaced.lean/declarations/not-ismin-coe.md) | 35 | `result-track:955dad64eeebad70f26f1d7b45ba1c922d08b3589ff484e743f87abaeca3cc2f` |
+| 1 | `lemma` | [not_isMax_coe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/SetIsMaxNamespaced.lean/declarations/not-ismax-coe.md) | 31 | `result-track:325c865f5094074f36435b237ea5a49d3e347731c8a28c9807018c584fa5d28c` |
+| 2 | `lemma` | [not_isMin_coe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/SetIsMaxNamespaced.lean/declarations/not-ismin-coe.md) | 35 | `result-track:955dad64eeebad70f26f1d7b45ba1c922d08b3589ff484e743f87abaeca3cc2f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

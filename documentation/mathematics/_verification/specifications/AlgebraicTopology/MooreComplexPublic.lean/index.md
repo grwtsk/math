@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/MooreComplexPublic.lean/index.md) · [Full source](../../../../AlgebraicTopology/MooreComplexPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/MooreComplexPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/MooreComplexPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [objX](../../../../AlgebraicTopology/MooreComplexPublic.lean/declarations/objx.md) | 66 | `declaration-track:138d5a2408ec108e791bedf206e47ab3f7045511d877e5a4fdbadc4220eb8626` |
-| 2 | `theorem` | [objX_zero](../../../../AlgebraicTopology/MooreComplexPublic.lean/declarations/objx-zero.md) | 70 | `result-track:a6d1814e364c942da96509b6a9477ff7f229c35e62d5c26595868ab41b909044` |
-| 3 | `theorem` | [objX_add_one](../../../../AlgebraicTopology/MooreComplexPublic.lean/declarations/objx-add-one.md) | 73 | `result-track:047dfd2b7de923b2137fc9af578eb28751126633429602b2abfd4d15bb151172` |
-| 4 | `def` | [objD](../../../../AlgebraicTopology/MooreComplexPublic.lean/declarations/objd.md) | 81 | `declaration-track:eb36fcb84bd2c158736ed14b425a116462ce2e4ca19480db355097a2a8f743e1` |
-| 5 | `theorem` | [d_squared](../../../../AlgebraicTopology/MooreComplexPublic.lean/declarations/d-squared.md) | 101 | `result-track:78c7e40e1382c102997210cefbff602aee11482504cf7e3f47a661c70f215b47` |
-| 6 | `def` | [obj](../../../../AlgebraicTopology/MooreComplexPublic.lean/declarations/obj.md) | 118 | `declaration-track:ca291f137ce700b62f13c902d4b4026541dae0fe88f4c1ea2a9d8829761a9820` |
-| 7 | `def` | [map](../../../../AlgebraicTopology/MooreComplexPublic.lean/declarations/map.md) | 130 | `declaration-track:28e00ab011fcd2a71b85ea0a7eec445862b9d06fa2eb8fd4ba4e3922371cdbed` |
-| 8 | `def` | [normalizedMooreComplex](../../../../AlgebraicTopology/MooreComplexPublic.lean/declarations/normalizedmoorecomplex.md) | 158 | `declaration-track:da194d0a5a1aeee8f1e2d573b436c8c0f24a1d692b0ee45469ef0ba05ac36e66` |
-| 9 | `theorem` | [normalizedMooreComplex_objD](../../../../AlgebraicTopology/MooreComplexPublic.lean/declarations/normalizedmoorecomplex-objd.md) | 165 | `result-track:bfca457f0d0292d2a2fbd7cc060ddfbb8bf7852f90691d2046cb24d0ba3995a6` |
+| 1 | `def` | [objX](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/MooreComplexPublic.lean/declarations/objx.md) | 66 | `declaration-track:138d5a2408ec108e791bedf206e47ab3f7045511d877e5a4fdbadc4220eb8626` |
+| 2 | `theorem` | [objX_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/MooreComplexPublic.lean/declarations/objx-zero.md) | 70 | `result-track:a6d1814e364c942da96509b6a9477ff7f229c35e62d5c26595868ab41b909044` |
+| 3 | `theorem` | [objX_add_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/MooreComplexPublic.lean/declarations/objx-add-one.md) | 73 | `result-track:047dfd2b7de923b2137fc9af578eb28751126633429602b2abfd4d15bb151172` |
+| 4 | `def` | [objD](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/MooreComplexPublic.lean/declarations/objd.md) | 81 | `declaration-track:eb36fcb84bd2c158736ed14b425a116462ce2e4ca19480db355097a2a8f743e1` |
+| 5 | `theorem` | [d_squared](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/MooreComplexPublic.lean/declarations/d-squared.md) | 101 | `result-track:78c7e40e1382c102997210cefbff602aee11482504cf7e3f47a661c70f215b47` |
+| 6 | `def` | [obj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/MooreComplexPublic.lean/declarations/obj.md) | 118 | `declaration-track:ca291f137ce700b62f13c902d4b4026541dae0fe88f4c1ea2a9d8829761a9820` |
+| 7 | `def` | [map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/MooreComplexPublic.lean/declarations/map.md) | 130 | `declaration-track:28e00ab011fcd2a71b85ea0a7eec445862b9d06fa2eb8fd4ba4e3922371cdbed` |
+| 8 | `def` | [normalizedMooreComplex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/MooreComplexPublic.lean/declarations/normalizedmoorecomplex.md) | 158 | `declaration-track:da194d0a5a1aeee8f1e2d573b436c8c0f24a1d692b0ee45469ef0ba05ac36e66` |
+| 9 | `theorem` | [normalizedMooreComplex_objD](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/MooreComplexPublic.lean/declarations/normalizedmoorecomplex-objd.md) | 165 | `result-track:bfca457f0d0292d2a2fbd7cc060ddfbb8bf7852f90691d2046cb24d0ba3995a6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

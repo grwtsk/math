@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/OrientationNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/OrientationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OrientationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OrientationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [toSimpleGraphInclusive](../../../../Combinatorics/OrientationNamespaced.lean/declarations/tosimplegraphinclusive.md) | 55 | `declaration-track:1e8453ba5d49416cb588c129daf56637ad3f718192a8f7e3eba4dec153a9bdee` |
-| 2 | `def` | [toSimpleGraphStrict](../../../../Combinatorics/OrientationNamespaced.lean/declarations/tosimplegraphstrict.md) | 61 | `declaration-track:133fd0a3ec95f6b5aa81dbe214b08e9ee76d3a2b9ab9c2114af4a6ede7ba31da` |
-| 3 | `lemma` | [toSimpleGraphStrict_subgraph_toSimpleGraphInclusive](../../../../Combinatorics/OrientationNamespaced.lean/declarations/tosimplegraphstrict-subgraph-tosimplegraphinclusive.md) | 66 | `result-track:f972cdc56d26a1b531c6682924e0da6171b4071904b3dbac70b024edd15afe21` |
-| 4 | `lemma` | [toSimpleGraphInclusive_mono](../../../../Combinatorics/OrientationNamespaced.lean/declarations/tosimplegraphinclusive-mono.md) | 71 | `result-track:b244228e39849cc66d3c51277a0a889603c3127744250180e1de91c1f6a08f5e` |
-| 5 | `lemma` | [toSimpleGraphStrict_mono](../../../../Combinatorics/OrientationNamespaced.lean/declarations/tosimplegraphstrict-mono.md) | 79 | `result-track:3f49436bc1c94f2afd52d1f20ad5dea3c00469757b0ecf3411204994909d1f4d` |
-| 6 | `lemma` | [toSimpleGraphInclusive_top](../../../../Combinatorics/OrientationNamespaced.lean/declarations/tosimplegraphinclusive-top.md) | 83 | `result-track:f58c2ffe0f9df4d267c77f53a7666ce33357a7d297a7eb7e3ff990d95c5ca14d` |
-| 7 | `lemma` | [toSimpleGraphStrict_top](../../../../Combinatorics/OrientationNamespaced.lean/declarations/tosimplegraphstrict-top.md) | 87 | `result-track:a1d1072e33cfbd89590c8530e956d14e6dc0da91a15c2c3cd414c1baadd4efa9` |
-| 8 | `lemma` | [toSimpleGraphInclusive_bot](../../../../Combinatorics/OrientationNamespaced.lean/declarations/tosimplegraphinclusive-bot.md) | 91 | `result-track:6c516e71ebdd6160a04bc58f72d3bb1db4a73c2dce3277bf2157af6f6762cc23` |
-| 9 | `lemma` | [toSimpleGraphStrict_bot](../../../../Combinatorics/OrientationNamespaced.lean/declarations/tosimplegraphstrict-bot.md) | 95 | `result-track:e9d0c67291aa553f1e00bef94ae6d342d1b5e15ffd83f6874632597d22780766` |
+| 1 | `def` | [toSimpleGraphInclusive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OrientationNamespaced.lean/declarations/tosimplegraphinclusive.md) | 55 | `declaration-track:1e8453ba5d49416cb588c129daf56637ad3f718192a8f7e3eba4dec153a9bdee` |
+| 2 | `def` | [toSimpleGraphStrict](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OrientationNamespaced.lean/declarations/tosimplegraphstrict.md) | 61 | `declaration-track:133fd0a3ec95f6b5aa81dbe214b08e9ee76d3a2b9ab9c2114af4a6ede7ba31da` |
+| 3 | `lemma` | [toSimpleGraphStrict_subgraph_toSimpleGraphInclusive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OrientationNamespaced.lean/declarations/tosimplegraphstrict-subgraph-tosimplegraphinclusive.md) | 66 | `result-track:f972cdc56d26a1b531c6682924e0da6171b4071904b3dbac70b024edd15afe21` |
+| 4 | `lemma` | [toSimpleGraphInclusive_mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OrientationNamespaced.lean/declarations/tosimplegraphinclusive-mono.md) | 71 | `result-track:b244228e39849cc66d3c51277a0a889603c3127744250180e1de91c1f6a08f5e` |
+| 5 | `lemma` | [toSimpleGraphStrict_mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OrientationNamespaced.lean/declarations/tosimplegraphstrict-mono.md) | 79 | `result-track:3f49436bc1c94f2afd52d1f20ad5dea3c00469757b0ecf3411204994909d1f4d` |
+| 6 | `lemma` | [toSimpleGraphInclusive_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OrientationNamespaced.lean/declarations/tosimplegraphinclusive-top.md) | 83 | `result-track:f58c2ffe0f9df4d267c77f53a7666ce33357a7d297a7eb7e3ff990d95c5ca14d` |
+| 7 | `lemma` | [toSimpleGraphStrict_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OrientationNamespaced.lean/declarations/tosimplegraphstrict-top.md) | 87 | `result-track:a1d1072e33cfbd89590c8530e956d14e6dc0da91a15c2c3cd414c1baadd4efa9` |
+| 8 | `lemma` | [toSimpleGraphInclusive_bot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OrientationNamespaced.lean/declarations/tosimplegraphinclusive-bot.md) | 91 | `result-track:6c516e71ebdd6160a04bc58f72d3bb1db4a73c2dce3277bf2157af6f6762cc23` |
+| 9 | `lemma` | [toSimpleGraphStrict_bot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OrientationNamespaced.lean/declarations/tosimplegraphstrict-bot.md) | 95 | `result-track:e9d0c67291aa553f1e00bef94ae6d342d1b5e15ffd83f6874632597d22780766` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompleteInterfaceAndJudgmentViews.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompleteInterfaceAndJudgmentViews.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompleteInterfaceAndJudgmentViews.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompleteInterfaceAndJudgmentViews.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [KernelPresentation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompleteInterfaceAndJudgmentViews.lean/declarations/kernelpresentation.md) | 98 | `declaration-track:9616fcd16601e05b60deef7a94c50c18d53871995497a94c4141fafc011b12eb` |
-| 2 | `abbrev` | [Judgment](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompleteInterfaceAndJudgmentViews.lean/declarations/judgment.md) | 208 | `declaration-track:d48852e55490c44b7b068f305cafe6be2695d9c5ba4aaf8cb0a0488c1f09f536` |
-| 3 | `abbrev` | [JudgmentAt](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompleteInterfaceAndJudgmentViews.lean/declarations/judgmentat.md) | 240 | `declaration-track:3f8e6d463fb06d90670e4d8a8b0c1361c520e3d0767c7b444f9df4b250e142af` |
+| 1 | `structure` | [KernelPresentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompleteInterfaceAndJudgmentViews.lean/declarations/kernelpresentation.md) | 98 | `declaration-track:9616fcd16601e05b60deef7a94c50c18d53871995497a94c4141fafc011b12eb` |
+| 2 | `abbrev` | [Judgment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompleteInterfaceAndJudgmentViews.lean/declarations/judgment.md) | 208 | `declaration-track:d48852e55490c44b7b068f305cafe6be2695d9c5ba4aaf8cb0a0488c1f09f536` |
+| 3 | `abbrev` | [JudgmentAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompleteInterfaceAndJudgmentViews.lean/declarations/judgmentat.md) | 240 | `declaration-track:3f8e6d463fb06d90670e4d8a8b0c1361c520e3d0767c7b444f9df4b250e142af` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

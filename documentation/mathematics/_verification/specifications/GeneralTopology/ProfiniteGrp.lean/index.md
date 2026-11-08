@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ProfiniteGrp.lean/index.md) · [Full source](../../../../GeneralTopology/ProfiniteGrp.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteGrp.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteGrp.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,20 +57,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../GeneralTopology/ProfiniteGrp.lean/declarations/example-source-edition-3.md) | 17 | `declaration-track:376564c1c247bf4977f226df7678420e2f9a59ced8a4b5e841e896e3c1dd0321` |
-| 2 | `example` | [(anonymous)](../../../../GeneralTopology/ProfiniteGrp.lean/declarations/example-source-edition-10.md) | 19 | `declaration-track:9dd994150f3e52864c9043de0165ed5fa543908ac8cd46fcdab48190876969ed` |
-| 3 | `example` | [(anonymous)](../../../../GeneralTopology/ProfiniteGrp.lean/declarations/example-source-edition-13.md) | 21 | `declaration-track:bc5ad17b0a132813e5a091d662bc05c3747ac95daad294b114d5e1af89122493` |
-| 4 | `example` | [(anonymous)](../../../../GeneralTopology/ProfiniteGrp.lean/declarations/example-source-edition-14.md) | 23 | `declaration-track:d2978032126b168a202717af83198093a638740d60817bf5999d99ba0252e99e` |
-| 5 | `example` | [(anonymous)](../../../../GeneralTopology/ProfiniteGrp.lean/declarations/example-source-edition-12.md) | 25 | `declaration-track:a4332838c5b15622f7f5f6da3e983f0b09d8a077ddb4a35874e5a9a9676d1b3b` |
-| 6 | `example` | [(anonymous)](../../../../GeneralTopology/ProfiniteGrp.lean/declarations/example.md) | 28 | `declaration-track:058b03965988193b7acfe3d9a5b759ce62fab215030db1297d5ed31d3b369276` |
-| 7 | `example` | [(anonymous)](../../../../GeneralTopology/ProfiniteGrp.lean/declarations/example-source-edition-11.md) | 31 | `declaration-track:a2422efb8ff29701dd296aa0bdf6e79fc275478eabaa156a44888be19e0037c9` |
-| 8 | `example` | [(anonymous)](../../../../GeneralTopology/ProfiniteGrp.lean/declarations/example-source-edition-5.md) | 34 | `declaration-track:628d0b23e35c49be71596fd56ae28227dfceefee280b20bf518cf2af4bb3424e` |
-| 9 | `example` | [(anonymous)](../../../../GeneralTopology/ProfiniteGrp.lean/declarations/example-source-edition-7.md) | 37 | `declaration-track:6e3e3725d3b5282f1d657142343acfda45a4638469d7c1a0ce47298dc4ef26e9` |
-| 10 | `example` | [(anonymous)](../../../../GeneralTopology/ProfiniteGrp.lean/declarations/example-source-edition-4.md) | 40 | `declaration-track:56aac88a72a7dc8e8d2ba7a720f87cfb038665a88e69ef0519720881f5917fec` |
-| 11 | `example` | [(anonymous)](../../../../GeneralTopology/ProfiniteGrp.lean/declarations/example-source-edition-8.md) | 42 | `declaration-track:8db16ea4d49702fc00cbb7f39a0f57ac01253a4b7b7692910d3701c058c14081` |
-| 12 | `example` | [(anonymous)](../../../../GeneralTopology/ProfiniteGrp.lean/declarations/example-source-edition-9.md) | 44 | `declaration-track:9274bd9d91434bd6fde64e4936858ceca40cd847c902c49c2c5a766f384e4864` |
-| 13 | `example` | [(anonymous)](../../../../GeneralTopology/ProfiniteGrp.lean/declarations/example-source-edition-6.md) | 46 | `declaration-track:62a49a250b8f62fda0e60bc457252402680091e749c90bec3868becce8b6cc7c` |
-| 14 | `example` | [(anonymous)](../../../../GeneralTopology/ProfiniteGrp.lean/declarations/example-source-edition-2.md) | 49 | `declaration-track:16a36012d860e42871987ae60ec5f077ceb9551e674b39998e57e7e4fda015d9` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteGrp.lean/declarations/example-source-edition-3.md) | 17 | `declaration-track:376564c1c247bf4977f226df7678420e2f9a59ced8a4b5e841e896e3c1dd0321` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteGrp.lean/declarations/example-source-edition-10.md) | 19 | `declaration-track:9dd994150f3e52864c9043de0165ed5fa543908ac8cd46fcdab48190876969ed` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteGrp.lean/declarations/example-source-edition-13.md) | 21 | `declaration-track:bc5ad17b0a132813e5a091d662bc05c3747ac95daad294b114d5e1af89122493` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteGrp.lean/declarations/example-source-edition-14.md) | 23 | `declaration-track:d2978032126b168a202717af83198093a638740d60817bf5999d99ba0252e99e` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteGrp.lean/declarations/example-source-edition-12.md) | 25 | `declaration-track:a4332838c5b15622f7f5f6da3e983f0b09d8a077ddb4a35874e5a9a9676d1b3b` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteGrp.lean/declarations/example.md) | 28 | `declaration-track:058b03965988193b7acfe3d9a5b759ce62fab215030db1297d5ed31d3b369276` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteGrp.lean/declarations/example-source-edition-11.md) | 31 | `declaration-track:a2422efb8ff29701dd296aa0bdf6e79fc275478eabaa156a44888be19e0037c9` |
+| 8 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteGrp.lean/declarations/example-source-edition-5.md) | 34 | `declaration-track:628d0b23e35c49be71596fd56ae28227dfceefee280b20bf518cf2af4bb3424e` |
+| 9 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteGrp.lean/declarations/example-source-edition-7.md) | 37 | `declaration-track:6e3e3725d3b5282f1d657142343acfda45a4638469d7c1a0ce47298dc4ef26e9` |
+| 10 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteGrp.lean/declarations/example-source-edition-4.md) | 40 | `declaration-track:56aac88a72a7dc8e8d2ba7a720f87cfb038665a88e69ef0519720881f5917fec` |
+| 11 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteGrp.lean/declarations/example-source-edition-8.md) | 42 | `declaration-track:8db16ea4d49702fc00cbb7f39a0f57ac01253a4b7b7692910d3701c058c14081` |
+| 12 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteGrp.lean/declarations/example-source-edition-9.md) | 44 | `declaration-track:9274bd9d91434bd6fde64e4936858ceca40cd847c902c49c2c5a766f384e4864` |
+| 13 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteGrp.lean/declarations/example-source-edition-6.md) | 46 | `declaration-track:62a49a250b8f62fda0e60bc457252402680091e749c90bec3868becce8b6cc7c` |
+| 14 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ProfiniteGrp.lean/declarations/example-source-edition-2.md) | 49 | `declaration-track:16a36012d860e42871987ae60ec5f077ceb9551e674b39998e57e7e4fda015d9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

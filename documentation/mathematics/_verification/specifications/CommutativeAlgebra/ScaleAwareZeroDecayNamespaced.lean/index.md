@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/ScaleAwareZeroDecayNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/ScaleAwareZeroDecayNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ScaleAwareZeroDecayNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ScaleAwareZeroDecayNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [polynomial_norm_le](../../../../CommutativeAlgebra/ScaleAwareZeroDecayNamespaced.lean/declarations/polynomial-norm-le.md) | 27 | `result-track:ea28afc4c7ede2e9d6d05899fe4644f7555aee998d8ca58e6da55a0be7d8a9bd` |
-| 2 | `def` | [decayConstant](../../../../CommutativeAlgebra/ScaleAwareZeroDecayNamespaced.lean/declarations/decayconstant.md) | 51 | `declaration-track:e8e627f2f3776f5199816f2c7c6ad2513428794cecfdfc7c0d9be6087fe38a9f` |
-| 3 | `theorem` | [decayConstant_eq_neg_nine_half](../../../../CommutativeAlgebra/ScaleAwareZeroDecayNamespaced.lean/declarations/decayconstant-eq-neg-nine-half.md) | 55 | `result-track:c47e165562ab5de17b5cb5b624fb169c574c28c4e783ee347ce9dd47dd22f533` |
-| 4 | `theorem` | [transform_norm_le](../../../../CommutativeAlgebra/ScaleAwareZeroDecayNamespaced.lean/declarations/transform-norm-le.md) | 64 | `result-track:2f539b6bc56938b1c6b365e3b008fb88a0927e543aada39e4c50300fa991a88e` |
-| 5 | `theorem` | [transform_norm_le_neg_nine_half](../../../../CommutativeAlgebra/ScaleAwareZeroDecayNamespaced.lean/declarations/transform-norm-le-neg-nine-half.md) | 117 | `result-track:dec06bb9545dcdf8e5198c6352f75b1aca7b3b2e6203586ce2c08cf23921c339` |
-| 6 | `theorem` | [transform_square_norm_le](../../../../CommutativeAlgebra/ScaleAwareZeroDecayNamespaced.lean/declarations/transform-square-norm-le.md) | 125 | `result-track:8a672e6e903229f0b93bb6cfa44dcb7ef95123f471ac1c6dcc77edb480657878` |
+| 1 | `theorem` | [polynomial_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ScaleAwareZeroDecayNamespaced.lean/declarations/polynomial-norm-le.md) | 27 | `result-track:ea28afc4c7ede2e9d6d05899fe4644f7555aee998d8ca58e6da55a0be7d8a9bd` |
+| 2 | `def` | [decayConstant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ScaleAwareZeroDecayNamespaced.lean/declarations/decayconstant.md) | 51 | `declaration-track:e8e627f2f3776f5199816f2c7c6ad2513428794cecfdfc7c0d9be6087fe38a9f` |
+| 3 | `theorem` | [decayConstant_eq_neg_nine_half](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ScaleAwareZeroDecayNamespaced.lean/declarations/decayconstant-eq-neg-nine-half.md) | 55 | `result-track:c47e165562ab5de17b5cb5b624fb169c574c28c4e783ee347ce9dd47dd22f533` |
+| 4 | `theorem` | [transform_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ScaleAwareZeroDecayNamespaced.lean/declarations/transform-norm-le.md) | 64 | `result-track:2f539b6bc56938b1c6b365e3b008fb88a0927e543aada39e4c50300fa991a88e` |
+| 5 | `theorem` | [transform_norm_le_neg_nine_half](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ScaleAwareZeroDecayNamespaced.lean/declarations/transform-norm-le-neg-nine-half.md) | 117 | `result-track:dec06bb9545dcdf8e5198c6352f75b1aca7b3b2e6203586ce2c08cf23921c339` |
+| 6 | `theorem` | [transform_square_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ScaleAwareZeroDecayNamespaced.lean/declarations/transform-square-norm-le.md) | 125 | `result-track:8a672e6e903229f0b93bb6cfa44dcb7ef95123f471ac1c6dcc77edb480657878` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

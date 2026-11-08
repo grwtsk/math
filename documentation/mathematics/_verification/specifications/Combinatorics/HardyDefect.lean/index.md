@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/HardyDefect.lean/index.md) · [Full source](../../../../Combinatorics/HardyDefect.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HardyDefect.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HardyDefect.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [HardyDefectFamily](../../../../Combinatorics/HardyDefect.lean/declarations/hardydefectfamily.md) | 14 | `declaration-track:7554369952ef69a5d26d2d9e4e0a61e760c82a0ffa7a11b55b9ebffbdc14e224` |
-| 2 | `inductive` | [HardyRealizationLevel](../../../../Combinatorics/HardyDefect.lean/declarations/hardyrealizationlevel.md) | 30 | `declaration-track:66baf74622d9c5c76644da9cde8af70673e0086d1011773af3337da749f45223` |
-| 3 | `structure` | [HardyDefectRealization](../../../../Combinatorics/HardyDefect.lean/declarations/hardydefectrealization.md) | 36 | `declaration-track:1ad50aee5768fe685114f92546e7818f74d3bab017fb4c691c75579a38ada557` |
+| 1 | `structure` | [HardyDefectFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HardyDefect.lean/declarations/hardydefectfamily.md) | 14 | `declaration-track:7554369952ef69a5d26d2d9e4e0a61e760c82a0ffa7a11b55b9ebffbdc14e224` |
+| 2 | `inductive` | [HardyRealizationLevel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HardyDefect.lean/declarations/hardyrealizationlevel.md) | 30 | `declaration-track:66baf74622d9c5c76644da9cde8af70673e0086d1011773af3337da749f45223` |
+| 3 | `structure` | [HardyDefectRealization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/HardyDefect.lean/declarations/hardydefectrealization.md) | 36 | `declaration-track:1ad50aee5768fe685114f92546e7818f74d3bab017fb4c691c75579a38ada557` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

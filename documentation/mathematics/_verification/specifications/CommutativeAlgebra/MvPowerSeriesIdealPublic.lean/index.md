@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/MvPowerSeriesIdealPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/MvPowerSeriesIdealPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MvPowerSeriesIdealPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MvPowerSeriesIdealPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [coeff_mem_of_mem_map_C](../../../../CommutativeAlgebra/MvPowerSeriesIdealPublic.lean/declarations/coeff-mem-of-mem-map-c.md) | 36 | `result-track:e6b7736439d9baf33f042c20fbbb99bc257ebc4fe0adc51bdb978f27c731d591` |
-| 2 | `theorem` | [mem_map_C_of_forall_coeff_mem](../../../../CommutativeAlgebra/MvPowerSeriesIdealPublic.lean/declarations/mem-map-c-of-forall-coeff-mem.md) | 49 | `result-track:2583b73e220071d7725572a12f24d510fbfe91d601a19fd6309046e6368abda7` |
-| 3 | `theorem` | [mem_map_C_iff_of_fg](../../../../CommutativeAlgebra/MvPowerSeriesIdealPublic.lean/declarations/mem-map-c-iff-of-fg.md) | 70 | `result-track:2dfdcd596c9fe77bb7bcfcea8363b11ee3c57fdd8e30b1d69ad04e1b7a4ac5f9` |
-| 4 | `theorem` | [ker_map_of_fg](../../../../CommutativeAlgebra/MvPowerSeriesIdealPublic.lean/declarations/ker-map-of-fg.md) | 74 | `result-track:dbd64e7fbf8ec11dc2a42bb5a925ac73a4e33c9ce460ebf27977f859a6c6d83b` |
-| 5 | `lemma` | [ker_mapAlgHom_of_fg](../../../../CommutativeAlgebra/MvPowerSeriesIdealPublic.lean/declarations/ker-mapalghom-of-fg.md) | 78 | `result-track:44ffd7913c6581960b9a8ee7d203e113436c90790ec03e0e78a8b57719d2b00b` |
+| 1 | `theorem` | [coeff_mem_of_mem_map_C](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MvPowerSeriesIdealPublic.lean/declarations/coeff-mem-of-mem-map-c.md) | 36 | `result-track:e6b7736439d9baf33f042c20fbbb99bc257ebc4fe0adc51bdb978f27c731d591` |
+| 2 | `theorem` | [mem_map_C_of_forall_coeff_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MvPowerSeriesIdealPublic.lean/declarations/mem-map-c-of-forall-coeff-mem.md) | 49 | `result-track:2583b73e220071d7725572a12f24d510fbfe91d601a19fd6309046e6368abda7` |
+| 3 | `theorem` | [mem_map_C_iff_of_fg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MvPowerSeriesIdealPublic.lean/declarations/mem-map-c-iff-of-fg.md) | 70 | `result-track:2dfdcd596c9fe77bb7bcfcea8363b11ee3c57fdd8e30b1d69ad04e1b7a4ac5f9` |
+| 4 | `theorem` | [ker_map_of_fg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MvPowerSeriesIdealPublic.lean/declarations/ker-map-of-fg.md) | 74 | `result-track:dbd64e7fbf8ec11dc2a42bb5a925ac73a4e33c9ce460ebf27977f859a6c6d83b` |
+| 5 | `lemma` | [ker_mapAlgHom_of_fg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MvPowerSeriesIdealPublic.lean/declarations/ker-mapalghom-of-fg.md) | 78 | `result-track:44ffd7913c6581960b9a8ee7d203e113436c90790ec03e0e78a8b57719d2b00b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

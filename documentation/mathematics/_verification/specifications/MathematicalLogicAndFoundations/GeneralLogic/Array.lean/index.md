@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Array.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Array.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Array.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Array.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [arrayEquivList](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Array.lean/declarations/arrayequivlist.md) | 50 | `declaration-track:55784d99ad279bf67517ddb997beb750a96d0f98b2df933b12263210fc303ea9` |
-| 2 | `instance` | [Array.encodable](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Array.lean/declarations/array-encodable.md) | 79 | `declaration-track:efab8ea94af434c0c019178242bca0981f33e9b00ce4999892cc66dab2337b4a` |
-| 3 | `instance` | [Array.countable](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Array.lean/declarations/array-countable.md) | 84 | `declaration-track:9c7a855fde86fdbd879d82d1ff5c3accc7bffe764090265507fe9703facc74e4` |
+| 1 | `def` | [arrayEquivList](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Array.lean/declarations/arrayequivlist.md) | 50 | `declaration-track:55784d99ad279bf67517ddb997beb750a96d0f98b2df933b12263210fc303ea9` |
+| 2 | `instance` | [Array.encodable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Array.lean/declarations/array-encodable.md) | 79 | `declaration-track:efab8ea94af434c0c019178242bca0981f33e9b00ce4999892cc66dab2337b4a` |
+| 3 | `instance` | [Array.countable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Array.lean/declarations/array-countable.md) | 84 | `declaration-track:9c7a855fde86fdbd879d82d1ff5c3accc7bffe764090265507fe9703facc74e4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

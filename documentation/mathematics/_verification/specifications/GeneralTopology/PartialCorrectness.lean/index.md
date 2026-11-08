@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/PartialCorrectness.lean/index.md) · [Full source](../../../../GeneralTopology/PartialCorrectness.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PartialCorrectness.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PartialCorrectness.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,12 +62,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [evalDual?_val_correct](../../../../GeneralTopology/PartialCorrectness.lean/declarations/evaldual-val-correct.md) | 43 | `result-track:878bbf4cbabb246f3151734bee3f5006691d793cbc4929f2d597edda9821269d` |
-| 2 | `theorem` | [evalDual?1_val_correct](../../../../GeneralTopology/PartialCorrectness.lean/declarations/evaldual-1-val-correct.md) | 223 | `result-track:13658768f6c0df4fbe30aff4a69789d4a144eec35fdb6fff2508d88322b837ac` |
-| 3 | `theorem` | [evalFunc1_inv](../../../../GeneralTopology/PartialCorrectness.lean/declarations/evalfunc1-inv.md) | 232 | `result-track:62648952be871e885d02eabc7c10af4577275103f3cd0ea247c307660355d732` |
-| 4 | `theorem` | [evalFunc1_differentiableAt_of_evalDual?](../../../../GeneralTopology/PartialCorrectness.lean/declarations/evalfunc1-differentiableat-of-evaldual.md) | 236 | `result-track:6785a17222b8324223873d6e72c5d23b6fb3ae68b4b59fa6f77f7c173b202e46` |
-| 5 | `theorem` | [evalDual?_der_correct](../../../../GeneralTopology/PartialCorrectness.lean/declarations/evaldual-der-correct.md) | 407 | `result-track:3fbdbd418ff38c9901431968f84e4b1b98165e4b524646b6e56047aa0008e930` |
-| 6 | `theorem` | [evalDual?1_correct](../../../../GeneralTopology/PartialCorrectness.lean/declarations/evaldual-1-correct.md) | 829 | `result-track:ace2ecaa657f93189691c1d3b218610cda2a5f60e1ad6e674f038cad79551880` |
+| 1 | `theorem` | [evalDual?_val_correct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PartialCorrectness.lean/declarations/evaldual-val-correct.md) | 43 | `result-track:878bbf4cbabb246f3151734bee3f5006691d793cbc4929f2d597edda9821269d` |
+| 2 | `theorem` | [evalDual?1_val_correct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PartialCorrectness.lean/declarations/evaldual-1-val-correct.md) | 223 | `result-track:13658768f6c0df4fbe30aff4a69789d4a144eec35fdb6fff2508d88322b837ac` |
+| 3 | `theorem` | [evalFunc1_inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PartialCorrectness.lean/declarations/evalfunc1-inv.md) | 232 | `result-track:62648952be871e885d02eabc7c10af4577275103f3cd0ea247c307660355d732` |
+| 4 | `theorem` | [evalFunc1_differentiableAt_of_evalDual?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PartialCorrectness.lean/declarations/evalfunc1-differentiableat-of-evaldual.md) | 236 | `result-track:6785a17222b8324223873d6e72c5d23b6fb3ae68b4b59fa6f77f7c173b202e46` |
+| 5 | `theorem` | [evalDual?_der_correct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PartialCorrectness.lean/declarations/evaldual-der-correct.md) | 407 | `result-track:3fbdbd418ff38c9901431968f84e4b1b98165e4b524646b6e56047aa0008e930` |
+| 6 | `theorem` | [evalDual?1_correct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PartialCorrectness.lean/declarations/evaldual-1-correct.md) | 829 | `result-track:ace2ecaa657f93189691c1d3b218610cda2a5f60e1ad6e674f038cad79551880` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

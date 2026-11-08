@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WholeRankOneLinearAutomorphismModel.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WholeRankOneLinearAutomorphismModel.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WholeRankOneLinearAutomorphismModel.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WholeRankOneLinearAutomorphismModel.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -49,7 +49,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 - `DAF.Comparison.Coefficients` — import line 19; external provider; requires a separately pinned dependency.
 - `DAF.PerfectComplex.Comparison` — import line 20; external provider; requires a separately pinned dependency.
 - `Mathlib.LinearAlgebra.Determinant` — import line 21; external provider; requires a separately pinned dependency.
-- [Whole Determinant Line Transport Theory](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeDeterminantLineTransportTheory.lean/index.md) — import line 23; pinned internal source present.
+- [Whole Determinant Line Transport Theory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeDeterminantLineTransportTheory.lean/index.md) — import line 23; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -60,10 +60,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [model](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WholeRankOneLinearAutomorphismModel.lean/declarations/model.md) | 58 | `declaration-track:5c5299c6c1e42b386551c126551f62f864fdc9cb7e8096930dbcd0c2d7c74dad` |
-| 2 | `def` | [theory](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WholeRankOneLinearAutomorphismModel.lean/declarations/theory.md) | 103 | `declaration-track:6e6d13ce97eef4afe035b98262be59468b244ff281c37703aae278843a2bd016` |
-| 3 | `def` | [negQuasiIso](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WholeRankOneLinearAutomorphismModel.lean/declarations/negquasiiso.md) | 122 | `declaration-track:34396e02238fb32047d04e8e7bad9113a1ff2e918d60ac9173f9ab690db58e7a` |
-| 4 | `theorem` | [negQuasiIso_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WholeRankOneLinearAutomorphismModel.lean/declarations/negquasiiso-apply.md) | 128 | `result-track:b2e5bbc88aabe2bf3d30cdc3efd988ca54a45491c33b49724cc3d946e16d404b` |
+| 1 | `def` | [model](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WholeRankOneLinearAutomorphismModel.lean/declarations/model.md) | 58 | `declaration-track:5c5299c6c1e42b386551c126551f62f864fdc9cb7e8096930dbcd0c2d7c74dad` |
+| 2 | `def` | [theory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WholeRankOneLinearAutomorphismModel.lean/declarations/theory.md) | 103 | `declaration-track:6e6d13ce97eef4afe035b98262be59468b244ff281c37703aae278843a2bd016` |
+| 3 | `def` | [negQuasiIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WholeRankOneLinearAutomorphismModel.lean/declarations/negquasiiso.md) | 122 | `declaration-track:34396e02238fb32047d04e8e7bad9113a1ff2e918d60ac9173f9ab690db58e7a` |
+| 4 | `theorem` | [negQuasiIso_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WholeRankOneLinearAutomorphismModel.lean/declarations/negquasiiso-apply.md) | 128 | `result-track:b2e5bbc88aabe2bf3d30cdc3efd988ca54a45491c33b49724cc3d946e16d404b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

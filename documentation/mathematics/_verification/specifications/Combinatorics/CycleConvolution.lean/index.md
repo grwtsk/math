@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/CycleConvolution.lean/index.md) · [Full source](../../../../Combinatorics/CycleConvolution.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CycleConvolution.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CycleConvolution.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [CycleKernel](../../../../Combinatorics/CycleConvolution.lean/declarations/cyclekernel.md) | 20 | `declaration-track:fe679cc76d5cdf035afac87b696b6476dbe22feea4808e8dfffbba7ff073662f` |
-| 2 | `def` | [cycleConvolution](../../../../Combinatorics/CycleConvolution.lean/declarations/cycleconvolution.md) | 25 | `declaration-track:7ec7718d860805ef49748a243f25091627a3d38899c1ae3b1d1c6ed3d9409fca` |
-| 3 | `theorem` | [cycleConvolution_apply](../../../../Combinatorics/CycleConvolution.lean/declarations/cycleconvolution-apply.md) | 33 | `result-track:c54860e243752e102f7c0406b2042a5251e33068db4086af6bc2a48a8086c03f` |
-| 4 | `def` | [cycleConvolutionLinear](../../../../Combinatorics/CycleConvolution.lean/declarations/cycleconvolutionlinear.md) | 43 | `declaration-track:488bdd0ed874e06cd8f2244d76f134850755a3a5f3fdf52075d8686953571633` |
-| 5 | `theorem` | [cycleConvolutionLinear_apply](../../../../Combinatorics/CycleConvolution.lean/declarations/cycleconvolutionlinear-apply.md) | 65 | `result-track:b9b80c3d47ab5f00dcf6023caff47d9a6f64f3ef72a19539680ee4600ef8baee` |
-| 6 | `theorem` | [cycleConvolution_add_kernel](../../../../Combinatorics/CycleConvolution.lean/declarations/cycleconvolution-add-kernel.md) | 74 | `result-track:0ddd1f48c868d59b4360ae1ec7248ad8e6e58f947d60bf641f6d010e0c83dec2` |
-| 7 | `theorem` | [cycleConvolution_smul_kernel](../../../../Combinatorics/CycleConvolution.lean/declarations/cycleconvolution-smul-kernel.md) | 85 | `result-track:ceb9d9da323e20390b982d8e68d648c1b29f6da9ad19a5370c55ecce28f42a0c` |
-| 8 | `def` | [identityCycleKernel](../../../../Combinatorics/CycleConvolution.lean/declarations/identitycyclekernel.md) | 103 | `declaration-track:ef86f06ec2b9e60fa70f56390a191e303a5976bc10533d43c3b5836a35fe1a9a` |
-| 9 | `theorem` | [cycleConvolution_identityKernel](../../../../Combinatorics/CycleConvolution.lean/declarations/cycleconvolution-identitykernel.md) | 107 | `result-track:0bcc00339122e576e3874bfbdb6890d7acbe4507735c403866f65a1201e32321` |
+| 1 | `abbrev` | [CycleKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CycleConvolution.lean/declarations/cyclekernel.md) | 20 | `declaration-track:fe679cc76d5cdf035afac87b696b6476dbe22feea4808e8dfffbba7ff073662f` |
+| 2 | `def` | [cycleConvolution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CycleConvolution.lean/declarations/cycleconvolution.md) | 25 | `declaration-track:7ec7718d860805ef49748a243f25091627a3d38899c1ae3b1d1c6ed3d9409fca` |
+| 3 | `theorem` | [cycleConvolution_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CycleConvolution.lean/declarations/cycleconvolution-apply.md) | 33 | `result-track:c54860e243752e102f7c0406b2042a5251e33068db4086af6bc2a48a8086c03f` |
+| 4 | `def` | [cycleConvolutionLinear](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CycleConvolution.lean/declarations/cycleconvolutionlinear.md) | 43 | `declaration-track:488bdd0ed874e06cd8f2244d76f134850755a3a5f3fdf52075d8686953571633` |
+| 5 | `theorem` | [cycleConvolutionLinear_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CycleConvolution.lean/declarations/cycleconvolutionlinear-apply.md) | 65 | `result-track:b9b80c3d47ab5f00dcf6023caff47d9a6f64f3ef72a19539680ee4600ef8baee` |
+| 6 | `theorem` | [cycleConvolution_add_kernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CycleConvolution.lean/declarations/cycleconvolution-add-kernel.md) | 74 | `result-track:0ddd1f48c868d59b4360ae1ec7248ad8e6e58f947d60bf641f6d010e0c83dec2` |
+| 7 | `theorem` | [cycleConvolution_smul_kernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CycleConvolution.lean/declarations/cycleconvolution-smul-kernel.md) | 85 | `result-track:ceb9d9da323e20390b982d8e68d648c1b29f6da9ad19a5370c55ecce28f42a0c` |
+| 8 | `def` | [identityCycleKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CycleConvolution.lean/declarations/identitycyclekernel.md) | 103 | `declaration-track:ef86f06ec2b9e60fa70f56390a191e303a5976bc10533d43c3b5836a35fe1a9a` |
+| 9 | `theorem` | [cycleConvolution_identityKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CycleConvolution.lean/declarations/cycleconvolution-identitykernel.md) | 107 | `result-track:0bcc00339122e576e3874bfbdb6890d7acbe4507735c403866f65a1201e32321` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

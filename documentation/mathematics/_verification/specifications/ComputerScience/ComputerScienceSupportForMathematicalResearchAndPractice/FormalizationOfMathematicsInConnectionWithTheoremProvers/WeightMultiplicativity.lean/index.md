@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WeightMultiplicativity.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WeightMultiplicativity.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WeightMultiplicativity.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WeightMultiplicativity.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [posWeightReal_of_pos](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WeightMultiplicativity.lean/declarations/posweightreal-of-pos.md) | 13 | `result-track:9bb6ee12ffca5ed86644fb49f6fe4dbe04359c26878e564c798878ba26d6069d` |
-| 2 | `theorem` | [posWeightComplex_of_pos](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WeightMultiplicativity.lean/declarations/posweightcomplex-of-pos.md) | 20 | `result-track:f58a3bd9e25dd2909eede74a879935cb73ea277949216345b3e87b23d0ee2952` |
-| 3 | `theorem` | [posWeightReal_mul](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WeightMultiplicativity.lean/declarations/posweightreal-mul.md) | 28 | `result-track:e6a0d38eae436770afef96e9c0290bdfc5584e948d731082b26af4cc9fc9ddb6` |
-| 4 | `theorem` | [posWeightComplex_mul](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WeightMultiplicativity.lean/declarations/posweightcomplex-mul.md) | 39 | `result-track:58dbb55da02b1650e3506fe05868d62ffa5cf1ebdf27cc7a912b5465a1666de9` |
+| 1 | `theorem` | [posWeightReal_of_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WeightMultiplicativity.lean/declarations/posweightreal-of-pos.md) | 13 | `result-track:9bb6ee12ffca5ed86644fb49f6fe4dbe04359c26878e564c798878ba26d6069d` |
+| 2 | `theorem` | [posWeightComplex_of_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WeightMultiplicativity.lean/declarations/posweightcomplex-of-pos.md) | 20 | `result-track:f58a3bd9e25dd2909eede74a879935cb73ea277949216345b3e87b23d0ee2952` |
+| 3 | `theorem` | [posWeightReal_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WeightMultiplicativity.lean/declarations/posweightreal-mul.md) | 28 | `result-track:e6a0d38eae436770afef96e9c0290bdfc5584e948d731082b26af4cc9fc9ddb6` |
+| 4 | `theorem` | [posWeightComplex_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WeightMultiplicativity.lean/declarations/posweightcomplex-mul.md) | 39 | `result-track:58dbb55da02b1650e3506fe05868d62ffa5cf1ebdf27cc7a912b5465a1666de9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

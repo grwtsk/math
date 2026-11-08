@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Capsule.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Capsule.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Capsule.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Capsule.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Capsule](../../../../../ComputerScience/AlgorithmsInComputerScience/Capsule.lean/declarations/capsule.md) | 12 | `declaration-track:63a3edbd1fc9c816d9ebfb170cfbe4e877262310b9e36a426255dff5f8f9a204` |
-| 2 | `structure` | [CapsuleKey](../../../../../ComputerScience/AlgorithmsInComputerScience/Capsule.lean/declarations/capsulekey.md) | 26 | `declaration-track:4ca642f6d4a7d27b00e2813c2839c3cd043c3b6ff8e08acee55df1d085e26c35` |
-| 3 | `def` | [Capsule.key](../../../../../ComputerScience/AlgorithmsInComputerScience/Capsule.lean/declarations/capsule-key.md) | 32 | `declaration-track:928a9fdc18cb02b08a3ba8cd3b417b088204ea1f85adec5f24ec3ab00432f613` |
+| 1 | `structure` | [Capsule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Capsule.lean/declarations/capsule.md) | 12 | `declaration-track:63a3edbd1fc9c816d9ebfb170cfbe4e877262310b9e36a426255dff5f8f9a204` |
+| 2 | `structure` | [CapsuleKey](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Capsule.lean/declarations/capsulekey.md) | 26 | `declaration-track:4ca642f6d4a7d27b00e2813c2839c3cd043c3b6ff8e08acee55df1d085e26c35` |
+| 3 | `def` | [Capsule.key](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Capsule.lean/declarations/capsule-key.md) | 32 | `declaration-track:928a9fdc18cb02b08a3ba8cd3b417b088204ea1f85adec5f24ec3ab00432f613` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

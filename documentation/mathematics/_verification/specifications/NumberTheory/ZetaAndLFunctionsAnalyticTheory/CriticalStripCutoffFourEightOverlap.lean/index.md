@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffFourEightOverlap.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffFourEightOverlap.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffFourEightOverlap.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffFourEightOverlap.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripCutoffEightJetFourteenHeight`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CriticalStripCutoffEightJetFourteenHeight.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripFourteenHeightSeed`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CriticalStripFourteenHeightSeed.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripCutoffEightJetFourteenHeight`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CriticalStripCutoffEightJetFourteenHeight.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripFourteenHeightSeed`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CriticalStripFourteenHeightSeed.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [centers_agree](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffFourEightOverlap.lean/declarations/centers-agree.md) | 27 | `result-track:6f8d5ba223aea4e33666d9a87b54f53d68fbe9769b10205571c60831f6a33609` |
-| 2 | `theorem` | [finite_cutoff_telescope](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffFourEightOverlap.lean/declarations/finite-cutoff-telescope.md) | 30 | `result-track:7228a9e766a14cfa93ce60d0f7b351990efd5f165a600f5665c542190c498e4b` |
-| 3 | `theorem` | [polynomial_cutoff_telescope](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffFourEightOverlap.lean/declarations/polynomial-cutoff-telescope.md) | 39 | `result-track:535daee5ed2c6ce65c657e04f07154b5cd6354081edfedae0a2783bb1d12030a` |
-| 4 | `theorem` | [model_source_telescope](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffFourEightOverlap.lean/declarations/model-source-telescope.md) | 49 | `result-track:c327b61ace9d56ff26bb6ef03871a2ec920f86b0fba279c146383da6a8e793d8` |
-| 5 | `theorem` | [model_distance_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffFourEightOverlap.lean/declarations/model-distance-le.md) | 55 | `result-track:7c8b98e5f24124cd40bafef5159584c46ed09d38b1916a96e7a969d6b569b6db` |
-| 6 | `lemma` | [norm_lower_from_diagonal](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffFourEightOverlap.lean/declarations/norm-lower-from-diagonal.md) | 63 | `result-track:a5026826d0373b17f76fca9b81773d49c57068d1e696890ec9b9a87290502579` |
-| 7 | `theorem` | [source_norm_lower](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffFourEightOverlap.lean/declarations/source-norm-lower.md) | 73 | `result-track:57895291751cc34e63a45297ec342c3bad7443f820f09a168a97828e3e608125` |
-| 8 | `theorem` | [homotopy_source_endpoints](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffFourEightOverlap.lean/declarations/homotopy-source-endpoints.md) | 78 | `result-track:69a1f884a3a51b6d27997e6537829d7950215097a9c5b989760c179bb73eb644` |
+| 1 | `theorem` | [centers_agree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffFourEightOverlap.lean/declarations/centers-agree.md) | 27 | `result-track:6f8d5ba223aea4e33666d9a87b54f53d68fbe9769b10205571c60831f6a33609` |
+| 2 | `theorem` | [finite_cutoff_telescope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffFourEightOverlap.lean/declarations/finite-cutoff-telescope.md) | 30 | `result-track:7228a9e766a14cfa93ce60d0f7b351990efd5f165a600f5665c542190c498e4b` |
+| 3 | `theorem` | [polynomial_cutoff_telescope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffFourEightOverlap.lean/declarations/polynomial-cutoff-telescope.md) | 39 | `result-track:535daee5ed2c6ce65c657e04f07154b5cd6354081edfedae0a2783bb1d12030a` |
+| 4 | `theorem` | [model_source_telescope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffFourEightOverlap.lean/declarations/model-source-telescope.md) | 49 | `result-track:c327b61ace9d56ff26bb6ef03871a2ec920f86b0fba279c146383da6a8e793d8` |
+| 5 | `theorem` | [model_distance_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffFourEightOverlap.lean/declarations/model-distance-le.md) | 55 | `result-track:7c8b98e5f24124cd40bafef5159584c46ed09d38b1916a96e7a969d6b569b6db` |
+| 6 | `lemma` | [norm_lower_from_diagonal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffFourEightOverlap.lean/declarations/norm-lower-from-diagonal.md) | 63 | `result-track:a5026826d0373b17f76fca9b81773d49c57068d1e696890ec9b9a87290502579` |
+| 7 | `theorem` | [source_norm_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffFourEightOverlap.lean/declarations/source-norm-lower.md) | 73 | `result-track:57895291751cc34e63a45297ec342c3bad7443f820f09a168a97828e3e608125` |
+| 8 | `theorem` | [homotopy_source_endpoints](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffFourEightOverlap.lean/declarations/homotopy-source-endpoints.md) | 78 | `result-track:69a1f884a3a51b6d27997e6537829d7950215097a9c5b989760c179bb73eb644` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/GraphCutNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/GraphCutNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphCutNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphCutNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,19 +58,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [GraphCut](../../../../Combinatorics/GraphCutNamespaced.lean/declarations/graphcut.md) | 24 | `declaration-track:9490a236d8c859881dcf2224ca4bfc1af3868a1b1db8db6942ccc7e9e268f1c7` |
-| 2 | `def` | [nodeSet](../../../../Combinatorics/GraphCutNamespaced.lean/declarations/nodeset.md) | 68 | `declaration-track:d5d2ace4351d0999706f17eed5c6deabef82423f2239273211074c5c92f3b5b8` |
-| 3 | `def` | [edgeSet](../../../../Combinatorics/GraphCutNamespaced.lean/declarations/edgeset.md) | 71 | `declaration-track:30596b2cba1d7ceb2cfc559151e888c4b5167f07c5bb0fc0340089995db12b87` |
-| 4 | `def` | [orderedNodes](../../../../Combinatorics/GraphCutNamespaced.lean/declarations/orderednodes.md) | 74 | `declaration-track:268931dfa78b800e9cb06ab6f8b69041cccdec466413c0c8d79c239d6eb79310` |
-| 5 | `def` | [orderedEdges](../../../../Combinatorics/GraphCutNamespaced.lean/declarations/orderededges.md) | 77 | `declaration-track:9d28df41770ee9ddd7a03c8025a1dc30cce9d6a8da72d6c222cde87409bc944b` |
-| 6 | `theorem` | [mem_orderedNodes](../../../../Combinatorics/GraphCutNamespaced.lean/declarations/mem-orderednodes.md) | 81 | `result-track:591d59e198eb2be9b57852e871964135de4892e0a8a65d37c69731eb2c3d0b16` |
-| 7 | `theorem` | [node_mem_orderedNodes](../../../../Combinatorics/GraphCutNamespaced.lean/declarations/node-mem-orderednodes.md) | 87 | `result-track:2840906e29420b532b7e28f4e0049db11fe0a8a3af582c54e2b7abd43522ecaf` |
-| 8 | `theorem` | [mem_orderedEdges](../../../../Combinatorics/GraphCutNamespaced.lean/declarations/mem-orderededges.md) | 94 | `result-track:2e52a6918110384acc7ac18ed66be1005b938237cdbab683aa901ff576b45048` |
-| 9 | `theorem` | [edge_mem_orderedEdges](../../../../Combinatorics/GraphCutNamespaced.lean/declarations/edge-mem-orderededges.md) | 100 | `result-track:eb7c2506e930398c0e0e2e725865772bd76ff7cba53142eb0b0745c37252584a` |
-| 10 | `theorem` | [orderedNodes_nodup](../../../../Combinatorics/GraphCutNamespaced.lean/declarations/orderednodes-nodup.md) | 106 | `result-track:f69708709e7dc40d4f72e0036bc52adf5b9e1935d2c2bff49f5b01bcaea044d7` |
-| 11 | `theorem` | [orderedEdges_nodup](../../../../Combinatorics/GraphCutNamespaced.lean/declarations/orderededges-nodup.md) | 111 | `result-track:330ad1bba63a9fbdf8f72c13daf25334568e73c140185481d8ff040329410659` |
-| 12 | `theorem` | [orderedNodes_sorted](../../../../Combinatorics/GraphCutNamespaced.lean/declarations/orderednodes-sorted.md) | 116 | `result-track:2377b4b7d17367e75e7918f0eef64645758b1e79aff36f507f6170bd8ce66672` |
-| 13 | `theorem` | [orderedEdges_sorted](../../../../Combinatorics/GraphCutNamespaced.lean/declarations/orderededges-sorted.md) | 123 | `result-track:6541e431b7527d272dd195cb9e5e6d5a5a68816ab93e059301808f9a50f5d211` |
+| 1 | `structure` | [GraphCut](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphCutNamespaced.lean/declarations/graphcut.md) | 24 | `declaration-track:9490a236d8c859881dcf2224ca4bfc1af3868a1b1db8db6942ccc7e9e268f1c7` |
+| 2 | `def` | [nodeSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphCutNamespaced.lean/declarations/nodeset.md) | 68 | `declaration-track:d5d2ace4351d0999706f17eed5c6deabef82423f2239273211074c5c92f3b5b8` |
+| 3 | `def` | [edgeSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphCutNamespaced.lean/declarations/edgeset.md) | 71 | `declaration-track:30596b2cba1d7ceb2cfc559151e888c4b5167f07c5bb0fc0340089995db12b87` |
+| 4 | `def` | [orderedNodes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphCutNamespaced.lean/declarations/orderednodes.md) | 74 | `declaration-track:268931dfa78b800e9cb06ab6f8b69041cccdec466413c0c8d79c239d6eb79310` |
+| 5 | `def` | [orderedEdges](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphCutNamespaced.lean/declarations/orderededges.md) | 77 | `declaration-track:9d28df41770ee9ddd7a03c8025a1dc30cce9d6a8da72d6c222cde87409bc944b` |
+| 6 | `theorem` | [mem_orderedNodes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphCutNamespaced.lean/declarations/mem-orderednodes.md) | 81 | `result-track:591d59e198eb2be9b57852e871964135de4892e0a8a65d37c69731eb2c3d0b16` |
+| 7 | `theorem` | [node_mem_orderedNodes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphCutNamespaced.lean/declarations/node-mem-orderednodes.md) | 87 | `result-track:2840906e29420b532b7e28f4e0049db11fe0a8a3af582c54e2b7abd43522ecaf` |
+| 8 | `theorem` | [mem_orderedEdges](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphCutNamespaced.lean/declarations/mem-orderededges.md) | 94 | `result-track:2e52a6918110384acc7ac18ed66be1005b938237cdbab683aa901ff576b45048` |
+| 9 | `theorem` | [edge_mem_orderedEdges](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphCutNamespaced.lean/declarations/edge-mem-orderededges.md) | 100 | `result-track:eb7c2506e930398c0e0e2e725865772bd76ff7cba53142eb0b0745c37252584a` |
+| 10 | `theorem` | [orderedNodes_nodup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphCutNamespaced.lean/declarations/orderednodes-nodup.md) | 106 | `result-track:f69708709e7dc40d4f72e0036bc52adf5b9e1935d2c2bff49f5b01bcaea044d7` |
+| 11 | `theorem` | [orderedEdges_nodup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphCutNamespaced.lean/declarations/orderededges-nodup.md) | 111 | `result-track:330ad1bba63a9fbdf8f72c13daf25334568e73c140185481d8ff040329410659` |
+| 12 | `theorem` | [orderedNodes_sorted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphCutNamespaced.lean/declarations/orderednodes-sorted.md) | 116 | `result-track:2377b4b7d17367e75e7918f0eef64645758b1e79aff36f507f6170bd8ce66672` |
+| 13 | `theorem` | [orderedEdges_sorted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphCutNamespaced.lean/declarations/orderededges-sorted.md) | 123 | `result-track:6541e431b7527d272dd195cb9e5e6d5a5a68816ab93e059301808f9a50f5d211` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

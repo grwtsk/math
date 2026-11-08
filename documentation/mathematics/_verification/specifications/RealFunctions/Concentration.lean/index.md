@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/Concentration.lean/index.md) · [Full source](../../../../RealFunctions/Concentration.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Concentration.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Concentration.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,16 +59,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [ConcentrationMechanism](../../../../RealFunctions/Concentration.lean/declarations/concentrationmechanism.md) | 17 | `declaration-track:eb8be61af7c5e15883f2d8c9d456018d38e20ea60646d25275995abce3783b6f` |
-| 2 | `structure` | [ConcentrationGeometry](../../../../RealFunctions/Concentration.lean/declarations/concentrationgeometry.md) | 25 | `declaration-track:159dd066bfc8e27ac7fd168d348cc954af7e3891082072809530b013d3b68042` |
-| 3 | `def` | [CenteredMgfBound](../../../../RealFunctions/Concentration.lean/declarations/centeredmgfbound.md) | 43 | `declaration-track:0443d52841f6309cb3708ae84f0b09d53da38ce2a87fde149b01b5475854b55e` |
-| 4 | `inductive` | [ConcentrationMechanismEvidence](../../../../RealFunctions/Concentration.lean/declarations/concentrationmechanismevidence.md) | 59 | `declaration-track:f6fbb19aac7eedfbfc27aa78132e68a3457f26e08fa710f09a723035f0969b21` |
-| 5 | `def` | [ConcentrationMechanismEvidence.kind](../../../../RealFunctions/Concentration.lean/declarations/concentrationmechanismevidence-kind.md) | 101 | `declaration-track:267cb2b50307e442406626cba0f45e55c69266a94d0b316d524267d7547c4ad4` |
-| 6 | `def` | [traceExpectation](../../../../RealFunctions/Concentration.lean/declarations/traceexpectation.md) | 117 | `declaration-track:0833b991e484f2799498460c388ebdf3a39f515804b3485cd57e8714c297daad` |
-| 7 | `def` | [traceDeviation](../../../../RealFunctions/Concentration.lean/declarations/tracedeviation.md) | 134 | `declaration-track:bf6f9518ce63838917bed7dd192e99a32719bb4e106760cad2d731f3210407e2` |
-| 8 | `structure` | [ConcentrationMechanismCertificate](../../../../RealFunctions/Concentration.lean/declarations/concentrationmechanismcertificate.md) | 151 | `declaration-track:48abccd9605ff6ec45ccdda28d4876762ca140d0f34618d7abe9576f04cc8e5c` |
-| 9 | `structure` | [BitfieldConcentrationCertificate](../../../../RealFunctions/Concentration.lean/declarations/bitfieldconcentrationcertificate.md) | 185 | `declaration-track:29830d1c30b13f6465e0f31b085a10699e96a150aca5a7964e52d6e128357098` |
-| 10 | `theorem` | [BitfieldConcentrationCertificate.tailBound](../../../../RealFunctions/Concentration.lean/declarations/bitfieldconcentrationcertificate-tailbound.md) | 209 | `result-track:79c0cebf2f1be73855778f8213843ae4954901577be2431ebbfb7a3a3e26a6bd` |
+| 1 | `inductive` | [ConcentrationMechanism](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Concentration.lean/declarations/concentrationmechanism.md) | 17 | `declaration-track:eb8be61af7c5e15883f2d8c9d456018d38e20ea60646d25275995abce3783b6f` |
+| 2 | `structure` | [ConcentrationGeometry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Concentration.lean/declarations/concentrationgeometry.md) | 25 | `declaration-track:159dd066bfc8e27ac7fd168d348cc954af7e3891082072809530b013d3b68042` |
+| 3 | `def` | [CenteredMgfBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Concentration.lean/declarations/centeredmgfbound.md) | 43 | `declaration-track:0443d52841f6309cb3708ae84f0b09d53da38ce2a87fde149b01b5475854b55e` |
+| 4 | `inductive` | [ConcentrationMechanismEvidence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Concentration.lean/declarations/concentrationmechanismevidence.md) | 59 | `declaration-track:f6fbb19aac7eedfbfc27aa78132e68a3457f26e08fa710f09a723035f0969b21` |
+| 5 | `def` | [ConcentrationMechanismEvidence.kind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Concentration.lean/declarations/concentrationmechanismevidence-kind.md) | 101 | `declaration-track:267cb2b50307e442406626cba0f45e55c69266a94d0b316d524267d7547c4ad4` |
+| 6 | `def` | [traceExpectation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Concentration.lean/declarations/traceexpectation.md) | 117 | `declaration-track:0833b991e484f2799498460c388ebdf3a39f515804b3485cd57e8714c297daad` |
+| 7 | `def` | [traceDeviation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Concentration.lean/declarations/tracedeviation.md) | 134 | `declaration-track:bf6f9518ce63838917bed7dd192e99a32719bb4e106760cad2d731f3210407e2` |
+| 8 | `structure` | [ConcentrationMechanismCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Concentration.lean/declarations/concentrationmechanismcertificate.md) | 151 | `declaration-track:48abccd9605ff6ec45ccdda28d4876762ca140d0f34618d7abe9576f04cc8e5c` |
+| 9 | `structure` | [BitfieldConcentrationCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Concentration.lean/declarations/bitfieldconcentrationcertificate.md) | 185 | `declaration-track:29830d1c30b13f6465e0f31b085a10699e96a150aca5a7964e52d6e128357098` |
+| 10 | `theorem` | [BitfieldConcentrationCertificate.tailBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/Concentration.lean/declarations/bitfieldconcentrationcertificate-tailbound.md) | 209 | `result-track:79c0cebf2f1be73855778f8213843ae4954901577be2431ebbfb7a3a3e26a6bd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

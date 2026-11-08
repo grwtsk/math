@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/BlueprintNamespacedBlueprintRecord.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/BlueprintNamespacedBlueprintRecord.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BlueprintNamespacedBlueprintRecord.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BlueprintNamespacedBlueprintRecord.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [BlueprintRecord](../../../../../ComputerScience/AlgorithmsInComputerScience/BlueprintNamespacedBlueprintRecord.lean/declarations/blueprintrecord.md) | 15 | `declaration-track:684382971c793a266ee4affa2d27b995ccbb1c448fbd52519d61bffadc0d205c` |
+| 1 | `structure` | [BlueprintRecord](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BlueprintNamespacedBlueprintRecord.lean/declarations/blueprintrecord.md) | 15 | `declaration-track:684382971c793a266ee4affa2d27b995ccbb1c448fbd52519d61bffadc0d205c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

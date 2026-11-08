@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/ResidueFieldPolynomialPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/ResidueFieldPolynomialPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ResidueFieldPolynomialPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ResidueFieldPolynomialPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [residueFieldMapCAlgEquiv](../../../../CommutativeAlgebra/ResidueFieldPolynomialPublic.lean/declarations/residuefieldmapcalgequiv.md) | 35 | `declaration-track:77687a43e47453c1fa9cf8a3a0010b85e3c0fd25d2298fbf626049f513dedfa8` |
-| 2 | `lemma` | [residueFieldMapCAlgEquiv_algebraMap](../../../../CommutativeAlgebra/ResidueFieldPolynomialPublic.lean/declarations/residuefieldmapcalgequiv-algebramap.md) | 84 | `result-track:fee1def6139ca426f20582ac95f0d2c93c633b13475a6cdfb03a9988ceee4b9a` |
-| 3 | `lemma` | [residueFieldMapCAlgEquiv_symm_C](../../../../CommutativeAlgebra/ResidueFieldPolynomialPublic.lean/declarations/residuefieldmapcalgequiv-symm-c.md) | 90 | `result-track:d73b280729b14523a2443e7fafe25bb6804ab187a09ae221dc1cc409f391ac99` |
-| 4 | `lemma` | [residueFieldMapCAlgEquiv_symm_X](../../../../CommutativeAlgebra/ResidueFieldPolynomialPublic.lean/declarations/residuefieldmapcalgequiv-symm-x.md) | 95 | `result-track:a71bf6a36a8bd29ba32c7b6d2b39eeceed8948a933333bae4d583e57d27c8bb5` |
-| 5 | `def` | [fiberEquivQuotient](../../../../CommutativeAlgebra/ResidueFieldPolynomialPublic.lean/declarations/fiberequivquotient.md) | 102 | `declaration-track:f4da4fe0f8ce36107451bea70b0ff8f53570df52f72a5a4a012d7d75e39e6709` |
-| 6 | `lemma` | [fiberEquivQuotient_tmul](../../../../CommutativeAlgebra/ResidueFieldPolynomialPublic.lean/declarations/fiberequivquotient-tmul.md) | 124 | `result-track:a1a481d84412fb856b0e86ce26f334cefa005672524791bac57f93ce7a74f4b6` |
-| 7 | `theorem` | [_root_.Ideal.exists_mem_span_singleton_map_residueField_eq](../../../../CommutativeAlgebra/ResidueFieldPolynomialPublic.lean/declarations/root-ideal-exists-mem-span-singleton-map-residuefield-eq.md) | 131 | `result-track:b109d450a892f5dbc85f249c49289123c1a2148d0bc053d74de1b679d58347b3` |
+| 1 | `def` | [residueFieldMapCAlgEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ResidueFieldPolynomialPublic.lean/declarations/residuefieldmapcalgequiv.md) | 35 | `declaration-track:77687a43e47453c1fa9cf8a3a0010b85e3c0fd25d2298fbf626049f513dedfa8` |
+| 2 | `lemma` | [residueFieldMapCAlgEquiv_algebraMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ResidueFieldPolynomialPublic.lean/declarations/residuefieldmapcalgequiv-algebramap.md) | 84 | `result-track:fee1def6139ca426f20582ac95f0d2c93c633b13475a6cdfb03a9988ceee4b9a` |
+| 3 | `lemma` | [residueFieldMapCAlgEquiv_symm_C](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ResidueFieldPolynomialPublic.lean/declarations/residuefieldmapcalgequiv-symm-c.md) | 90 | `result-track:d73b280729b14523a2443e7fafe25bb6804ab187a09ae221dc1cc409f391ac99` |
+| 4 | `lemma` | [residueFieldMapCAlgEquiv_symm_X](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ResidueFieldPolynomialPublic.lean/declarations/residuefieldmapcalgequiv-symm-x.md) | 95 | `result-track:a71bf6a36a8bd29ba32c7b6d2b39eeceed8948a933333bae4d583e57d27c8bb5` |
+| 5 | `def` | [fiberEquivQuotient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ResidueFieldPolynomialPublic.lean/declarations/fiberequivquotient.md) | 102 | `declaration-track:f4da4fe0f8ce36107451bea70b0ff8f53570df52f72a5a4a012d7d75e39e6709` |
+| 6 | `lemma` | [fiberEquivQuotient_tmul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ResidueFieldPolynomialPublic.lean/declarations/fiberequivquotient-tmul.md) | 124 | `result-track:a1a481d84412fb856b0e86ce26f334cefa005672524791bac57f93ce7a74f4b6` |
+| 7 | `theorem` | [_root_.Ideal.exists_mem_span_singleton_map_residueField_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ResidueFieldPolynomialPublic.lean/declarations/root-ideal-exists-mem-span-singleton-map-residuefield-eq.md) | 131 | `result-track:b109d450a892f5dbc85f249c49289123c1a2148d0bc053d74de1b679d58347b3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

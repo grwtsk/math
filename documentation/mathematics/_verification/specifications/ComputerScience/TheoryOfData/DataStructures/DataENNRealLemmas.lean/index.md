@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/DataENNRealLemmas.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/DataENNRealLemmas.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DataENNRealLemmas.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DataENNRealLemmas.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [coe_indicator](../../../../../../ComputerScience/TheoryOfData/DataStructures/DataENNRealLemmas.lean/declarations/coe-indicator.md) | 25 | `result-track:16c0e66d31b159d690802f98c08780f3f3535b2ffadeed730ebd48a5da863f11` |
-| 2 | `theorem` | [coe_finset_sup](../../../../../../ComputerScience/TheoryOfData/DataStructures/DataENNRealLemmas.lean/declarations/coe-finset-sup.md) | 32 | `result-track:8fa2232ddb7ed0a7135cf147e4fb78862a6d9829520b12e644ba277009d09327` |
+| 1 | `theorem` | [coe_indicator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DataENNRealLemmas.lean/declarations/coe-indicator.md) | 25 | `result-track:16c0e66d31b159d690802f98c08780f3f3535b2ffadeed730ebd48a5da863f11` |
+| 2 | `theorem` | [coe_finset_sup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DataENNRealLemmas.lean/declarations/coe-finset-sup.md) | 32 | `result-track:8fa2232ddb7ed0a7135cf147e4fb78862a6d9829520b12e644ba277009d09327` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

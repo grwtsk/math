@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../SpecialFunctions/PowIntegral.lean/index.md) · [Full source](../../../../SpecialFunctions/PowIntegral.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/PowIntegral.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/PowIntegral.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [lintegral_rpow_eq_lintegral_meas_le_mul](../../../../SpecialFunctions/PowIntegral.lean/declarations/lintegral-rpow-eq-lintegral-meas-le-mul.md) | 47 | `result-track:1a018f4f10e6a857a1e5173cb0e14ad563e017698cab3a8a4d10ae5c6f097c1e` |
-| 2 | `theorem` | [lintegral_rpow_eq_lintegral_meas_lt_mul](../../../../SpecialFunctions/PowIntegral.lean/declarations/lintegral-rpow-eq-lintegral-meas-lt-mul.md) | 81 | `result-track:dda36573fe86e025585c1614f89042aecf50bd7f99828383113e08f85e66bc58` |
+| 1 | `theorem` | [lintegral_rpow_eq_lintegral_meas_le_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/PowIntegral.lean/declarations/lintegral-rpow-eq-lintegral-meas-le-mul.md) | 47 | `result-track:1a018f4f10e6a857a1e5173cb0e14ad563e017698cab3a8a4d10ae5c6f097c1e` |
+| 2 | `theorem` | [lintegral_rpow_eq_lintegral_meas_lt_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/PowIntegral.lean/declarations/lintegral-rpow-eq-lintegral-meas-lt-mul.md) | 81 | `result-track:dda36573fe86e025585c1614f89042aecf50bd7f99828383113e08f85e66bc58` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

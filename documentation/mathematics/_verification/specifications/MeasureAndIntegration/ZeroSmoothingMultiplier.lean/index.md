@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ZeroSmoothingMultiplier.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ZeroSmoothingMultiplier.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSmoothingMultiplier.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSmoothingMultiplier.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,17 +57,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [multiplier](../../../../MeasureAndIntegration/ZeroSmoothingMultiplier.lean/declarations/multiplier.md) | 25 | `declaration-track:d83e01d19ad0063fbafae704158a5eeb3482b43608d6b2c66f60100e93420978` |
-| 2 | `theorem` | [multiplier_integrand_continuous](../../../../MeasureAndIntegration/ZeroSmoothingMultiplier.lean/declarations/multiplier-integrand-continuous.md) | 29 | `result-track:ca5de7593a95e1a471fb1b5c4a5b76635d27c7712815caa8edfeb847ed99fd86` |
-| 3 | `theorem` | [multiplier_integrand_hasCompactSupport](../../../../MeasureAndIntegration/ZeroSmoothingMultiplier.lean/declarations/multiplier-integrand-hascompactsupport.md) | 35 | `result-track:a1bf34527a5085e4f17d12e9777e5094454028f877b3ee5bbec473fe93868d05` |
-| 4 | `theorem` | [multiplier_integrand_integrable](../../../../MeasureAndIntegration/ZeroSmoothingMultiplier.lean/declarations/multiplier-integrand-integrable.md) | 43 | `result-track:25ad767c478b9be295c65c8b5fb52259eba941c4ee444c9351c86a8bcfe86285` |
-| 5 | `theorem` | [multiplier_integrand_norm_le](../../../../MeasureAndIntegration/ZeroSmoothingMultiplier.lean/declarations/multiplier-integrand-norm-le.md) | 49 | `result-track:6ab2ca99374623ca05ef8a6ca95946c06df49a480023e9f271ecada7beaf415c` |
-| 6 | `theorem` | [multiplier_norm_le](../../../../MeasureAndIntegration/ZeroSmoothingMultiplier.lean/declarations/multiplier-norm-le.md) | 69 | `result-track:1174d995248219a067a0897a2827f7f420e0c55099aa100ff554cd299cc8dc4c` |
-| 7 | `theorem` | [multiplier_norm_le_strip](../../../../MeasureAndIntegration/ZeroSmoothingMultiplier.lean/declarations/multiplier-norm-le-strip.md) | 82 | `result-track:3e6400c0216f428ae07a5ace60da673c5780ff7f750b08eab53054d83327ebdc` |
-| 8 | `theorem` | [multiplier_norm_le_zeroOccurrence](../../../../MeasureAndIntegration/ZeroSmoothingMultiplier.lean/declarations/multiplier-norm-le-zerooccurrence.md) | 90 | `result-track:01778c86787ac9f7cc04bc0a912937c2e9a37ab5fca659440dfad3130cfa09c7` |
-| 9 | `theorem` | [multiplier_zero](../../../../MeasureAndIntegration/ZeroSmoothingMultiplier.lean/declarations/multiplier-zero.md) | 96 | `result-track:d39c141b5556e69edcb719e65e3daf0972de0f1ea1eaaf3fd6a7e81f31d79f08` |
-| 10 | `theorem` | [multiplier_eq_convolution](../../../../MeasureAndIntegration/ZeroSmoothingMultiplier.lean/declarations/multiplier-eq-convolution.md) | 101 | `result-track:261c5e509a6a2b67e3a3f0565401ce1241b57ea944872b814c632c9a4ea75f9a` |
-| 11 | `theorem` | [multiplier_tendsto_one](../../../../MeasureAndIntegration/ZeroSmoothingMultiplier.lean/declarations/multiplier-tendsto-one.md) | 113 | `result-track:e08242f765ffd8e91e79924e028f72ba641535915169dd0a4afda3c9cdc51705` |
+| 1 | `def` | [multiplier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSmoothingMultiplier.lean/declarations/multiplier.md) | 25 | `declaration-track:d83e01d19ad0063fbafae704158a5eeb3482b43608d6b2c66f60100e93420978` |
+| 2 | `theorem` | [multiplier_integrand_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSmoothingMultiplier.lean/declarations/multiplier-integrand-continuous.md) | 29 | `result-track:ca5de7593a95e1a471fb1b5c4a5b76635d27c7712815caa8edfeb847ed99fd86` |
+| 3 | `theorem` | [multiplier_integrand_hasCompactSupport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSmoothingMultiplier.lean/declarations/multiplier-integrand-hascompactsupport.md) | 35 | `result-track:a1bf34527a5085e4f17d12e9777e5094454028f877b3ee5bbec473fe93868d05` |
+| 4 | `theorem` | [multiplier_integrand_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSmoothingMultiplier.lean/declarations/multiplier-integrand-integrable.md) | 43 | `result-track:25ad767c478b9be295c65c8b5fb52259eba941c4ee444c9351c86a8bcfe86285` |
+| 5 | `theorem` | [multiplier_integrand_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSmoothingMultiplier.lean/declarations/multiplier-integrand-norm-le.md) | 49 | `result-track:6ab2ca99374623ca05ef8a6ca95946c06df49a480023e9f271ecada7beaf415c` |
+| 6 | `theorem` | [multiplier_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSmoothingMultiplier.lean/declarations/multiplier-norm-le.md) | 69 | `result-track:1174d995248219a067a0897a2827f7f420e0c55099aa100ff554cd299cc8dc4c` |
+| 7 | `theorem` | [multiplier_norm_le_strip](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSmoothingMultiplier.lean/declarations/multiplier-norm-le-strip.md) | 82 | `result-track:3e6400c0216f428ae07a5ace60da673c5780ff7f750b08eab53054d83327ebdc` |
+| 8 | `theorem` | [multiplier_norm_le_zeroOccurrence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSmoothingMultiplier.lean/declarations/multiplier-norm-le-zerooccurrence.md) | 90 | `result-track:01778c86787ac9f7cc04bc0a912937c2e9a37ab5fca659440dfad3130cfa09c7` |
+| 9 | `theorem` | [multiplier_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSmoothingMultiplier.lean/declarations/multiplier-zero.md) | 96 | `result-track:d39c141b5556e69edcb719e65e3daf0972de0f1ea1eaaf3fd6a7e81f31d79f08` |
+| 10 | `theorem` | [multiplier_eq_convolution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSmoothingMultiplier.lean/declarations/multiplier-eq-convolution.md) | 101 | `result-track:261c5e509a6a2b67e3a3f0565401ce1241b57ea944872b814c632c9a4ea75f9a` |
+| 11 | `theorem` | [multiplier_tendsto_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroSmoothingMultiplier.lean/declarations/multiplier-tendsto-one.md) | 113 | `result-track:e08242f765ffd8e91e79924e028f72ba641535915169dd0a4afda3c9cdc51705` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

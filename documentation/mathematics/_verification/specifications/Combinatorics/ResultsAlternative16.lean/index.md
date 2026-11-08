@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ResultsAlternative16.lean/index.md) · [Full source](../../../../Combinatorics/ResultsAlternative16.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResultsAlternative16.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResultsAlternative16.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,12 +62,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [HomeCriterion](../../../../Combinatorics/ResultsAlternative16.lean/declarations/homecriterion.md) | 15 | `declaration-track:a0ba481f46f65e9a6fc79bea1c399a1c4b18350c6725864bdae43e215693907d` |
-| 2 | `structure` | [RoleEvidence](../../../../Combinatorics/ResultsAlternative16.lean/declarations/roleevidence.md) | 22 | `declaration-track:296764449c39c2377bec8c0c68341af264268cc527cc67ecd609330f2679450c` |
-| 3 | `structure` | [DomainEvidence](../../../../Combinatorics/ResultsAlternative16.lean/declarations/domainevidence.md) | 28 | `declaration-track:d232036c4153f50caa1214dda1768f5e17fa89f86c63ae6feeef37558a14d598` |
-| 4 | `structure` | [FacetEvidence](../../../../Combinatorics/ResultsAlternative16.lean/declarations/facetevidence.md) | 35 | `declaration-track:200ae6ccb13c856a2e56746fa637dbe136deae91b1ac5af66f8d1c7877c12998` |
-| 5 | `structure` | [StatusEvidence](../../../../Combinatorics/ResultsAlternative16.lean/declarations/statusevidence.md) | 41 | `declaration-track:c202552e6d75d002693576f94f7e03dd2121cbf5e30259a3cc6da4b5068142ff` |
-| 6 | `structure` | [TaxonEvidence](../../../../Combinatorics/ResultsAlternative16.lean/declarations/taxonevidence.md) | 47 | `declaration-track:de87c70455a98b2259afa9a46a440b6b2ad31cd83db2ad16704aacc73b92a24b` |
+| 1 | `inductive` | [HomeCriterion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResultsAlternative16.lean/declarations/homecriterion.md) | 15 | `declaration-track:a0ba481f46f65e9a6fc79bea1c399a1c4b18350c6725864bdae43e215693907d` |
+| 2 | `structure` | [RoleEvidence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResultsAlternative16.lean/declarations/roleevidence.md) | 22 | `declaration-track:296764449c39c2377bec8c0c68341af264268cc527cc67ecd609330f2679450c` |
+| 3 | `structure` | [DomainEvidence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResultsAlternative16.lean/declarations/domainevidence.md) | 28 | `declaration-track:d232036c4153f50caa1214dda1768f5e17fa89f86c63ae6feeef37558a14d598` |
+| 4 | `structure` | [FacetEvidence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResultsAlternative16.lean/declarations/facetevidence.md) | 35 | `declaration-track:200ae6ccb13c856a2e56746fa637dbe136deae91b1ac5af66f8d1c7877c12998` |
+| 5 | `structure` | [StatusEvidence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResultsAlternative16.lean/declarations/statusevidence.md) | 41 | `declaration-track:c202552e6d75d002693576f94f7e03dd2121cbf5e30259a3cc6da4b5068142ff` |
+| 6 | `structure` | [TaxonEvidence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ResultsAlternative16.lean/declarations/taxonevidence.md) | 47 | `declaration-track:de87c70455a98b2259afa9a46a440b6b2ad31cd83db2ad16704aacc73b92a24b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

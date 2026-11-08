@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/Certificate12.lean/index.md) · [Full source](../../../../Combinatorics/Certificate12.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Certificate12.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Certificate12.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.InformationTheory.ReedSolomon.Coefficients`](../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Coefficients.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.InformationTheory.ReedSolomon.Coefficients`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Coefficients.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [coefficients12](../../../../Combinatorics/Certificate12.lean/declarations/coefficients12.md) | 12 | `result-track:78c4424c0dd0b1402c81329a2691f880f26a65e4d2aa9852a1bc1efe6376e5d9` |
-| 2 | `theorem` | [roundTrip12_exact](../../../../Combinatorics/Certificate12.lean/declarations/roundtrip12-exact.md) | 15 | `result-track:7a7df1508b8fc277c3a8a21614809b8768d93d62eaa551200ccd68c36bf5140b` |
+| 1 | `theorem` | [coefficients12](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Certificate12.lean/declarations/coefficients12.md) | 12 | `result-track:78c4424c0dd0b1402c81329a2691f880f26a65e4d2aa9852a1bc1efe6376e5d9` |
+| 2 | `theorem` | [roundTrip12_exact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Certificate12.lean/declarations/roundtrip12-exact.md) | 15 | `result-track:7a7df1508b8fc277c3a8a21614809b8768d93d62eaa551200ccd68c36bf5140b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/HasStoredTarget.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/HasStoredTarget.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/HasStoredTarget.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/HasStoredTarget.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [stable_sphere_collapse_has_target](../../../../../MathematicalLogicAndFoundations/GeneralLogic/HasStoredTarget.lean/declarations/stable-sphere-collapse-has-target.md) | 36 | `result-track:50380dc1ce0df1d6a0a77312aaa45aaf66dabe5380038d8cd626a0899791e26e` |
+| 1 | `theorem` | [stable_sphere_collapse_has_target](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/HasStoredTarget.lean/declarations/stable-sphere-collapse-has-target.md) | 36 | `result-track:50380dc1ce0df1d6a0a77312aaa45aaf66dabe5380038d8cd626a0899791e26e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

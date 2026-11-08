@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/UniqueFactorizationDomainFinsupp.lean/index.md) · [Full source](../../../../CommutativeAlgebra/UniqueFactorizationDomainFinsupp.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UniqueFactorizationDomainFinsupp.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UniqueFactorizationDomainFinsupp.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [factorization](../../../../CommutativeAlgebra/UniqueFactorizationDomainFinsupp.lean/declarations/factorization.md) | 28 | `declaration-track:fc1a45180b8850047b77596ad20a92e8a72f2e24519fd5df93f3682f00f2e0db` |
-| 2 | `theorem` | [factorization_eq_count](../../../../CommutativeAlgebra/UniqueFactorizationDomainFinsupp.lean/declarations/factorization-eq-count.md) | 31 | `result-track:960afbc91c911dd559d37415c41a31ae36e5fc897fec7bc468c7d204024e334b` |
-| 3 | `theorem` | [factorization_zero](../../../../CommutativeAlgebra/UniqueFactorizationDomainFinsupp.lean/declarations/factorization-zero.md) | 35 | `result-track:49588f50012a1560f19dc5f2ad71a273b57f7c4ecf15b87c9dc6f57640f47262` |
-| 4 | `theorem` | [factorization_one](../../../../CommutativeAlgebra/UniqueFactorizationDomainFinsupp.lean/declarations/factorization-one.md) | 38 | `result-track:be74fef67a4059e2de1f83ea45760a1cabcb0e8c542e92c5e280f89349b6ad7e` |
-| 5 | `theorem` | [support_factorization](../../../../CommutativeAlgebra/UniqueFactorizationDomainFinsupp.lean/declarations/support-factorization.md) | 42 | `result-track:7f06ba2ce1d6d70e08b1b994c3da12c57f2aaced3b2802fbdd4236e2f99d51fe` |
-| 6 | `theorem` | [factorization_mul](../../../../CommutativeAlgebra/UniqueFactorizationDomainFinsupp.lean/declarations/factorization-mul.md) | 48 | `result-track:8a79b0b651004e97bc636c6812f4de918257b9882266c1601d5a82842c3490ef` |
-| 7 | `theorem` | [factorization_pow](../../../../CommutativeAlgebra/UniqueFactorizationDomainFinsupp.lean/declarations/factorization-pow.md) | 53 | `result-track:2d892fce82be757326718508851de49b2d03687e279f02598a6acc3b96b6ba9f` |
-| 8 | `theorem` | [associated_of_factorization_eq](../../../../CommutativeAlgebra/UniqueFactorizationDomainFinsupp.lean/declarations/associated-of-factorization-eq.md) | 57 | `result-track:7ff268ad1f9fb1ed122ce43484892f9a24617912595398f46f6004f298beab95` |
+| 1 | `def` | [factorization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UniqueFactorizationDomainFinsupp.lean/declarations/factorization.md) | 28 | `declaration-track:fc1a45180b8850047b77596ad20a92e8a72f2e24519fd5df93f3682f00f2e0db` |
+| 2 | `theorem` | [factorization_eq_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UniqueFactorizationDomainFinsupp.lean/declarations/factorization-eq-count.md) | 31 | `result-track:960afbc91c911dd559d37415c41a31ae36e5fc897fec7bc468c7d204024e334b` |
+| 3 | `theorem` | [factorization_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UniqueFactorizationDomainFinsupp.lean/declarations/factorization-zero.md) | 35 | `result-track:49588f50012a1560f19dc5f2ad71a273b57f7c4ecf15b87c9dc6f57640f47262` |
+| 4 | `theorem` | [factorization_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UniqueFactorizationDomainFinsupp.lean/declarations/factorization-one.md) | 38 | `result-track:be74fef67a4059e2de1f83ea45760a1cabcb0e8c542e92c5e280f89349b6ad7e` |
+| 5 | `theorem` | [support_factorization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UniqueFactorizationDomainFinsupp.lean/declarations/support-factorization.md) | 42 | `result-track:7f06ba2ce1d6d70e08b1b994c3da12c57f2aaced3b2802fbdd4236e2f99d51fe` |
+| 6 | `theorem` | [factorization_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UniqueFactorizationDomainFinsupp.lean/declarations/factorization-mul.md) | 48 | `result-track:8a79b0b651004e97bc636c6812f4de918257b9882266c1601d5a82842c3490ef` |
+| 7 | `theorem` | [factorization_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UniqueFactorizationDomainFinsupp.lean/declarations/factorization-pow.md) | 53 | `result-track:2d892fce82be757326718508851de49b2d03687e279f02598a6acc3b96b6ba9f` |
+| 8 | `theorem` | [associated_of_factorization_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UniqueFactorizationDomainFinsupp.lean/declarations/associated-of-factorization-eq.md) | 57 | `result-track:7ff268ad1f9fb1ed122ce43484892f9a24617912595398f46f6004f298beab95` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

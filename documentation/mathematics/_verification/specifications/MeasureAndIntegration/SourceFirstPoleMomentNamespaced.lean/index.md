@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceFirstPoleMomentNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceFirstPoleMomentNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFirstPoleMomentNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFirstPoleMomentNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [first_convolution_moment](../../../../MeasureAndIntegration/SourceFirstPoleMomentNamespaced.lean/declarations/first-convolution-moment.md) | 30 | `result-track:04bf105e206958f1de3af97a3955517a3269702d6b33d5443c437f7a8a509f2e` |
-| 2 | `theorem` | [actual_first_pole_moment_zero](../../../../MeasureAndIntegration/SourceFirstPoleMomentNamespaced.lean/declarations/actual-first-pole-moment-zero.md) | 68 | `result-track:60b44fa550454efb67f6073c5b13a94c13fb34e73730d591ad11d8f248f2cb4c` |
-| 3 | `theorem` | [actual_quadratic_derivative_background_zero](../../../../MeasureAndIntegration/SourceFirstPoleMomentNamespaced.lean/declarations/actual-quadratic-derivative-background-zero.md) | 103 | `result-track:027b294108842e3106cd881adb77c78435aa51de9740bf8ae63b68e53af68dcf` |
-| 4 | `def` | [boundaryWorkKernel](../../../../MeasureAndIntegration/SourceFirstPoleMomentNamespaced.lean/declarations/boundaryworkkernel.md) | 151 | `declaration-track:37af9b358d3aa0d34d8033474b214d0a2f0959ef8e075601d9e9c431a81727f1` |
-| 5 | `def` | [boundaryCorrelation](../../../../MeasureAndIntegration/SourceFirstPoleMomentNamespaced.lean/declarations/boundarycorrelation.md) | 154 | `declaration-track:837f61a48fe11efd17a1013c0857132e163c22644f8520b586a451359f364bae` |
-| 6 | `theorem` | [boundaryCorrelation_deriv](../../../../MeasureAndIntegration/SourceFirstPoleMomentNamespaced.lean/declarations/boundarycorrelation-deriv.md) | 157 | `result-track:f109dec2eeadb8d9908f8a4a304cb71742288b7e27464d4ea58a27f570a88921` |
-| 7 | `theorem` | [boundaryWorkKernel_eq_source](../../../../MeasureAndIntegration/SourceFirstPoleMomentNamespaced.lean/declarations/boundaryworkkernel-eq-source.md) | 168 | `result-track:c56a87d904f630d9e2a4ce4738a46b84799b5ef88a431c59ea90e8772df2664a` |
-| 8 | `theorem` | [boundaryWorkKernel_eq_correlation](../../../../MeasureAndIntegration/SourceFirstPoleMomentNamespaced.lean/declarations/boundaryworkkernel-eq-correlation.md) | 184 | `result-track:0d1d592ce117f462955244ce3bd9a907aa4a2b678b71f33e6ab1c8c3209dd217` |
-| 9 | `theorem` | [boundary_quadratic_background_zero](../../../../MeasureAndIntegration/SourceFirstPoleMomentNamespaced.lean/declarations/boundary-quadratic-background-zero.md) | 192 | `result-track:b4b5f60e92227116161a6872bc2141de6bb2914969fa0269be61843175449743` |
+| 1 | `theorem` | [first_convolution_moment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFirstPoleMomentNamespaced.lean/declarations/first-convolution-moment.md) | 30 | `result-track:04bf105e206958f1de3af97a3955517a3269702d6b33d5443c437f7a8a509f2e` |
+| 2 | `theorem` | [actual_first_pole_moment_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFirstPoleMomentNamespaced.lean/declarations/actual-first-pole-moment-zero.md) | 68 | `result-track:60b44fa550454efb67f6073c5b13a94c13fb34e73730d591ad11d8f248f2cb4c` |
+| 3 | `theorem` | [actual_quadratic_derivative_background_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFirstPoleMomentNamespaced.lean/declarations/actual-quadratic-derivative-background-zero.md) | 103 | `result-track:027b294108842e3106cd881adb77c78435aa51de9740bf8ae63b68e53af68dcf` |
+| 4 | `def` | [boundaryWorkKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFirstPoleMomentNamespaced.lean/declarations/boundaryworkkernel.md) | 151 | `declaration-track:37af9b358d3aa0d34d8033474b214d0a2f0959ef8e075601d9e9c431a81727f1` |
+| 5 | `def` | [boundaryCorrelation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFirstPoleMomentNamespaced.lean/declarations/boundarycorrelation.md) | 154 | `declaration-track:837f61a48fe11efd17a1013c0857132e163c22644f8520b586a451359f364bae` |
+| 6 | `theorem` | [boundaryCorrelation_deriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFirstPoleMomentNamespaced.lean/declarations/boundarycorrelation-deriv.md) | 157 | `result-track:f109dec2eeadb8d9908f8a4a304cb71742288b7e27464d4ea58a27f570a88921` |
+| 7 | `theorem` | [boundaryWorkKernel_eq_source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFirstPoleMomentNamespaced.lean/declarations/boundaryworkkernel-eq-source.md) | 168 | `result-track:c56a87d904f630d9e2a4ce4738a46b84799b5ef88a431c59ea90e8772df2664a` |
+| 8 | `theorem` | [boundaryWorkKernel_eq_correlation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFirstPoleMomentNamespaced.lean/declarations/boundaryworkkernel-eq-correlation.md) | 184 | `result-track:0d1d592ce117f462955244ce3bd9a907aa4a2b678b71f33e6ab1c8c3209dd217` |
+| 9 | `theorem` | [boundary_quadratic_background_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFirstPoleMomentNamespaced.lean/declarations/boundary-quadratic-background-zero.md) | 192 | `result-track:b4b5f60e92227116161a6872bc2141de6bb2914969fa0269be61843175449743` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerTrail.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerTrail.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerTrail.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerTrail.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteCyclicEdgeCertificate`](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteCyclicEdgeCertificate.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteCyclicEdgeCertificate`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteCyclicEdgeCertificate.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [countedEdgeSource](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerTrail.lean/declarations/countededgesource.md) | 24 | `declaration-track:19dd4fdca9e51ad9d7112c63f974728506a816f598672a1d0f7192a116579a6f` |
-| 2 | `def` | [countedEdgeTarget](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerTrail.lean/declarations/countededgetarget.md) | 29 | `declaration-track:8ff54c90fa6347d411fb4dc8cb58a5863af6897887d3672cd1387b41e8a5569c` |
-| 3 | `structure` | [CountedDirectedTrail](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerTrail.lean/declarations/counteddirectedtrail.md) | 36 | `declaration-track:5118d7a93640801cf726d761615e31da641be8fb9b21ed8c54f7ff85d0a74173` |
-| 4 | `def` | [CountedDirectedTrail.unused](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerTrail.lean/declarations/counteddirectedtrail-unused.md) | 52 | `declaration-track:832d8ab32d63dc5546ff113209f6c3efd1ccdfa13a5fed43c2c674b777256bdd` |
-| 5 | `def` | [CountedDirectedTrail.CanAppend](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerTrail.lean/declarations/counteddirectedtrail-canappend.md) | 59 | `declaration-track:730d77e4c5f8785a6da3338468bb3f8c01aec2473a13ea4f29d4384c3d2a2772` |
-| 6 | `theorem` | [countedTrail_unused_card_strict_of_append](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerTrail.lean/declarations/countedtrail-unused-card-strict-of-append.md) | 68 | `result-track:a72e118a46edef98f68da95a9c7b6561c6c631d7fb056258e12be02f13125037` |
+| 1 | `def` | [countedEdgeSource](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerTrail.lean/declarations/countededgesource.md) | 24 | `declaration-track:19dd4fdca9e51ad9d7112c63f974728506a816f598672a1d0f7192a116579a6f` |
+| 2 | `def` | [countedEdgeTarget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerTrail.lean/declarations/countededgetarget.md) | 29 | `declaration-track:8ff54c90fa6347d411fb4dc8cb58a5863af6897887d3672cd1387b41e8a5569c` |
+| 3 | `structure` | [CountedDirectedTrail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerTrail.lean/declarations/counteddirectedtrail.md) | 36 | `declaration-track:5118d7a93640801cf726d761615e31da641be8fb9b21ed8c54f7ff85d0a74173` |
+| 4 | `def` | [CountedDirectedTrail.unused](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerTrail.lean/declarations/counteddirectedtrail-unused.md) | 52 | `declaration-track:832d8ab32d63dc5546ff113209f6c3efd1ccdfa13a5fed43c2c674b777256bdd` |
+| 5 | `def` | [CountedDirectedTrail.CanAppend](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerTrail.lean/declarations/counteddirectedtrail-canappend.md) | 59 | `declaration-track:730d77e4c5f8785a6da3338468bb3f8c01aec2473a13ea4f29d4384c3d2a2772` |
+| 6 | `theorem` | [countedTrail_unused_card_strict_of_append](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerTrail.lean/declarations/countedtrail-unused-card-strict-of-append.md) | 68 | `result-track:a72e118a46edef98f68da95a9c7b6561c6c631d7fb056258e12be02f13125037` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

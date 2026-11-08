@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ModalityNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ModalityNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ModalityNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ModalityNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [AffineModality](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ModalityNamespaced.lean/declarations/affinemodality.md) | 15 | `declaration-track:427d93f1a287cc412f7446068205c5e6e38a1bab6726b3b47c0e829660e632c8` |
-| 2 | `def` | [AffineModality.irreversible](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ModalityNamespaced.lean/declarations/affinemodality-irreversible.md) | 28 | `declaration-track:3f2220969f54899fa470cce3be58562d9c1076e6849f881e668ab50053c81967` |
-| 3 | `structure` | [ModalityBoundary](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ModalityNamespaced.lean/declarations/modalityboundary.md) | 32 | `declaration-track:f077ad253146d79e7b8d912ed8108a047ee0cfcf5bebf8e860e3ca81840892e6` |
-| 4 | `theorem` | [irreversible_modality_visible](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ModalityNamespaced.lean/declarations/irreversible-modality-visible.md) | 37 | `result-track:89ee7d5a3115dc4051e46366e08cddc4fb1033241d302100f99facc1cf561bfa` |
-| 5 | `theorem` | [reversibleFlow_modality_not_irreversible](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ModalityNamespaced.lean/declarations/reversibleflow-modality-not-irreversible.md) | 42 | `result-track:9a814443a126e25700e2a8964e279a6b55cf4f1a0c6b3e79a0168d2f001b5c21` |
+| 1 | `inductive` | [AffineModality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ModalityNamespaced.lean/declarations/affinemodality.md) | 15 | `declaration-track:427d93f1a287cc412f7446068205c5e6e38a1bab6726b3b47c0e829660e632c8` |
+| 2 | `def` | [AffineModality.irreversible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ModalityNamespaced.lean/declarations/affinemodality-irreversible.md) | 28 | `declaration-track:3f2220969f54899fa470cce3be58562d9c1076e6849f881e668ab50053c81967` |
+| 3 | `structure` | [ModalityBoundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ModalityNamespaced.lean/declarations/modalityboundary.md) | 32 | `declaration-track:f077ad253146d79e7b8d912ed8108a047ee0cfcf5bebf8e860e3ca81840892e6` |
+| 4 | `theorem` | [irreversible_modality_visible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ModalityNamespaced.lean/declarations/irreversible-modality-visible.md) | 37 | `result-track:89ee7d5a3115dc4051e46366e08cddc4fb1033241d302100f99facc1cf561bfa` |
+| 5 | `theorem` | [reversibleFlow_modality_not_irreversible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ModalityNamespaced.lean/declarations/reversibleflow-modality-not-irreversible.md) | 42 | `result-track:9a814443a126e25700e2a8964e279a6b55cf4f1a0c6b3e79a0168d2f001b5c21` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

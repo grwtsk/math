@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/MaximalBasicPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/MaximalBasicPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MaximalBasicPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MaximalBasicPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [equivSubtype](../../../../CommutativeAlgebra/MaximalBasicPublic.lean/declarations/equivsubtype.md) | 28 | `declaration-track:0eaae4f434e93043ccb51fc5e43c1b0de5577bebc06cf064836ae0053dad29e8` |
-| 2 | `theorem` | [range_asIdeal](../../../../CommutativeAlgebra/MaximalBasicPublic.lean/declarations/range-asideal.md) | 32 | `result-track:90e52c04835390c6c9bc5e8f44f306b5274c1f1e7f30550fdf6798ac408176c8` |
-| 3 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/MaximalBasicPublic.lean/declarations/instance.md) | 39 | `declaration-track:1d88be9b49c3c4962e9d5014eada222b7ad7a6e837b433b96d311717a2e17f5b` |
-| 4 | `def` | [toPrimeSpectrum](../../../../CommutativeAlgebra/MaximalBasicPublic.lean/declarations/toprimespectrum.md) | 44 | `declaration-track:1209306a8c61781c234a379b630728950b90f9ba81f9efc3a103541cfba84d79` |
-| 5 | `theorem` | [toPrimeSpectrum_injective](../../../../CommutativeAlgebra/MaximalBasicPublic.lean/declarations/toprimespectrum-injective.md) | 47 | `result-track:b2acb08c8b002b24e77604dea25b8c1f4dc11c67c3d1c205c13193f91bb3268f` |
-| 6 | `theorem` | [isCoprime_of_ne](../../../../CommutativeAlgebra/MaximalBasicPublic.lean/declarations/iscoprime-of-ne.md) | 50 | `result-track:59adf45459bbeb5f8f4a5942e472c9179f785940f3061f5a4029a80b29ac8174` |
+| 1 | `def` | [equivSubtype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MaximalBasicPublic.lean/declarations/equivsubtype.md) | 28 | `declaration-track:0eaae4f434e93043ccb51fc5e43c1b0de5577bebc06cf064836ae0053dad29e8` |
+| 2 | `theorem` | [range_asIdeal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MaximalBasicPublic.lean/declarations/range-asideal.md) | 32 | `result-track:90e52c04835390c6c9bc5e8f44f306b5274c1f1e7f30550fdf6798ac408176c8` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MaximalBasicPublic.lean/declarations/instance.md) | 39 | `declaration-track:1d88be9b49c3c4962e9d5014eada222b7ad7a6e837b433b96d311717a2e17f5b` |
+| 4 | `def` | [toPrimeSpectrum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MaximalBasicPublic.lean/declarations/toprimespectrum.md) | 44 | `declaration-track:1209306a8c61781c234a379b630728950b90f9ba81f9efc3a103541cfba84d79` |
+| 5 | `theorem` | [toPrimeSpectrum_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MaximalBasicPublic.lean/declarations/toprimespectrum-injective.md) | 47 | `result-track:b2acb08c8b002b24e77604dea25b8c1f4dc11c67c3d1c205c13193f91bb3268f` |
+| 6 | `theorem` | [isCoprime_of_ne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MaximalBasicPublic.lean/declarations/iscoprime-of-ne.md) | 50 | `result-track:59adf45459bbeb5f8f4a5942e472c9179f785940f3061f5a4029a80b29ac8174` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HashesToPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HashesToPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HashesToPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HashesToPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [hashesTo_nil](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HashesToPublic.lean/declarations/hashesto-nil.md) | 33 | `result-track:5f1333e2014a1214540486c2aac38d94e72dfc46bbc886a272ff71d6cc6608ce` |
-| 2 | `theorem` | [hashesTo_cons](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HashesToPublic.lean/declarations/hashesto-cons.md) | 37 | `result-track:581dc67393f7e4529c77efcc8c2d109d83a6e9b2bf13c9e38433733aeb3d9b7a` |
-| 3 | `theorem` | [HashesTo.containsKey_eq_false](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HashesToPublic.lean/declarations/hashesto-containskey-eq-false.md) | 46 | `result-track:b75357cd118ddd4ff12fd24720ac380279bb30ebc19603e6c955097ea8f6bf0f` |
+| 1 | `theorem` | [hashesTo_nil](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HashesToPublic.lean/declarations/hashesto-nil.md) | 33 | `result-track:5f1333e2014a1214540486c2aac38d94e72dfc46bbc886a272ff71d6cc6608ce` |
+| 2 | `theorem` | [hashesTo_cons](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HashesToPublic.lean/declarations/hashesto-cons.md) | 37 | `result-track:581dc67393f7e4529c77efcc8c2d109d83a6e9b2bf13c9e38433733aeb3d9b7a` |
+| 3 | `theorem` | [HashesTo.containsKey_eq_false](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HashesToPublic.lean/declarations/hashesto-containskey-eq-false.md) | 46 | `result-track:b75357cd118ddd4ff12fd24720ac380279bb30ebc19603e6c955097ea8f6bf0f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

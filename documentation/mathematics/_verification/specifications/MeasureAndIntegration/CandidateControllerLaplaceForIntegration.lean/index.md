@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CandidateControllerLaplaceForIntegration.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CandidateControllerLaplaceForIntegration.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CandidateControllerLaplaceForIntegration.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CandidateControllerLaplaceForIntegration.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [controller_laplace_integrable](../../../../MeasureAndIntegration/CandidateControllerLaplaceForIntegration.lean/declarations/controller-laplace-integrable.md) | 14 | `result-track:f786bfb4eb20abd4096c71463a26c9255684c052679a598cb6e74888325bffe4` |
-| 2 | `theorem` | [controller_laplace](../../../../MeasureAndIntegration/CandidateControllerLaplaceForIntegration.lean/declarations/controller-laplace.md) | 23 | `result-track:e334d42111de46069d1d8e9e52c660e668edefd8fad57594fa2e13f35d1cb4a1` |
-| 3 | `theorem` | [fullBoundaryVector_integrable](../../../../MeasureAndIntegration/CandidateControllerLaplaceForIntegration.lean/declarations/fullboundaryvector-integrable.md) | 33 | `result-track:488403643414ad3b79774333c1854fd97f3e6b2a075c7558a50726b9e45e2706` |
-| 4 | `theorem` | [fullBoundaryVector_fourier](../../../../MeasureAndIntegration/CandidateControllerLaplaceForIntegration.lean/declarations/fullboundaryvector-fourier.md) | 40 | `result-track:98562e7ab5b44c4b27ecb6b8c8f8f89f8fc246ed1ef61479ec9dffa6c0f0962f` |
+| 1 | `theorem` | [controller_laplace_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CandidateControllerLaplaceForIntegration.lean/declarations/controller-laplace-integrable.md) | 14 | `result-track:f786bfb4eb20abd4096c71463a26c9255684c052679a598cb6e74888325bffe4` |
+| 2 | `theorem` | [controller_laplace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CandidateControllerLaplaceForIntegration.lean/declarations/controller-laplace.md) | 23 | `result-track:e334d42111de46069d1d8e9e52c660e668edefd8fad57594fa2e13f35d1cb4a1` |
+| 3 | `theorem` | [fullBoundaryVector_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CandidateControllerLaplaceForIntegration.lean/declarations/fullboundaryvector-integrable.md) | 33 | `result-track:488403643414ad3b79774333c1854fd97f3e6b2a075c7558a50726b9e45e2706` |
+| 4 | `theorem` | [fullBoundaryVector_fourier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CandidateControllerLaplaceForIntegration.lean/declarations/fullboundaryvector-fourier.md) | 40 | `result-track:98562e7ab5b44c4b27ecb6b8c8f8f89f8fc246ed1ef61479ec9dffa6c0f0962f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FixedProgramInterpreterNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FixedProgramInterpreterNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FixedProgramInterpreterNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FixedProgramInterpreterNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FixedProgramInterpreterNamespaced.lean/declarations/example-source-edition-2.md) | 17 | `declaration-track:2fee93937ee36d88341cbd9e9140953bab431a6486c33c897bceaa36386f01a1` |
-| 2 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FixedProgramInterpreterNamespaced.lean/declarations/example-source-edition-4.md) | 20 | `declaration-track:c517b6fdbbf2bca408af6445b758535367afb761da2493f2910da7fb68cac02f` |
-| 3 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FixedProgramInterpreterNamespaced.lean/declarations/example-source-edition-5.md) | 23 | `declaration-track:d85288d0e50eba9284ff428e9897192a26a60f4077db5bdc33e52f57435a6556` |
-| 4 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FixedProgramInterpreterNamespaced.lean/declarations/example.md) | 28 | `declaration-track:202c84ea3c3e2c856545f04836f4416f4823d0e03d0108bf12125cbb05a7cbc8` |
-| 5 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FixedProgramInterpreterNamespaced.lean/declarations/example-source-edition-3.md) | 33 | `declaration-track:add2490dbcc1c4e3aa16e14d10670c8e50728dd38ff5617d0049e1e30e987a92` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FixedProgramInterpreterNamespaced.lean/declarations/example-source-edition-2.md) | 17 | `declaration-track:2fee93937ee36d88341cbd9e9140953bab431a6486c33c897bceaa36386f01a1` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FixedProgramInterpreterNamespaced.lean/declarations/example-source-edition-4.md) | 20 | `declaration-track:c517b6fdbbf2bca408af6445b758535367afb761da2493f2910da7fb68cac02f` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FixedProgramInterpreterNamespaced.lean/declarations/example-source-edition-5.md) | 23 | `declaration-track:d85288d0e50eba9284ff428e9897192a26a60f4077db5bdc33e52f57435a6556` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FixedProgramInterpreterNamespaced.lean/declarations/example.md) | 28 | `declaration-track:202c84ea3c3e2c856545f04836f4416f4823d0e03d0108bf12125cbb05a7cbc8` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FixedProgramInterpreterNamespaced.lean/declarations/example-source-edition-3.md) | 33 | `declaration-track:add2490dbcc1c4e3aa16e14d10670c8e50728dd38ff5617d0049e1e30e987a92` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

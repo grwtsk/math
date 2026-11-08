@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/HeatInvertibility.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/HeatInvertibility.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/HeatInvertibility.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/HeatInvertibility.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [lifted_heat_reconstructs](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/HeatInvertibility.lean/declarations/lifted-heat-reconstructs.md) | 21 | `result-track:b3d11953f85d93f242578f6a22d007c2a259178a454bf7b9acbd067ab502748d` |
-| 2 | `theorem` | [ordinary_heat_left_inverse](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/HeatInvertibility.lean/declarations/ordinary-heat-left-inverse.md) | 29 | `result-track:273edaad2b7d56f7f9c3c66845b6561a88acf68a4cd046d1deb7faab0449fcd9` |
-| 3 | `theorem` | [ordinary_heat_right_inverse](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/HeatInvertibility.lean/declarations/ordinary-heat-right-inverse.md) | 37 | `result-track:e1e0bf759cd0812c47561218be3776d74fffc6dee83af138ff275711535cce90` |
+| 1 | `theorem` | [lifted_heat_reconstructs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/HeatInvertibility.lean/declarations/lifted-heat-reconstructs.md) | 21 | `result-track:b3d11953f85d93f242578f6a22d007c2a259178a454bf7b9acbd067ab502748d` |
+| 2 | `theorem` | [ordinary_heat_left_inverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/HeatInvertibility.lean/declarations/ordinary-heat-left-inverse.md) | 29 | `result-track:273edaad2b7d56f7f9c3c66845b6561a88acf68a4cd046d1deb7faab0449fcd9` |
+| 3 | `theorem` | [ordinary_heat_right_inverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/HeatInvertibility.lean/declarations/ordinary-heat-right-inverse.md) | 37 | `result-track:e1e0bf759cd0812c47561218be3776d74fffc6dee83af138ff275711535cce90` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

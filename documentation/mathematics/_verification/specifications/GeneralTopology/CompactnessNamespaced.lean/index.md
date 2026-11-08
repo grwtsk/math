@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/CompactnessNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/CompactnessNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompactnessNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompactnessNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [real_Icc_isCompact](../../../../GeneralTopology/CompactnessNamespaced.lean/declarations/real-icc-iscompact.md) | 30 | `result-track:645d8edd84ec568910669e17fafa9c74ef13c237ae9bcc6a73c578bb17474c3e` |
-| 2 | `theorem` | [continuousOn_Icc_attains_max](../../../../GeneralTopology/CompactnessNamespaced.lean/declarations/continuouson-icc-attains-max.md) | 37 | `result-track:35fe4c292d1c3c32bcec6f014f9a271e182456348421fe3530b8052caa6d05fb` |
-| 3 | `theorem` | [continuousOn_Icc_attains_min](../../../../GeneralTopology/CompactnessNamespaced.lean/declarations/continuouson-icc-attains-min.md) | 49 | `result-track:c04424dbf7c38376a50d1c89063f55a66aeb8393500c5b24781f86cf03a4e2f0` |
-| 4 | `def` | [compactnessContext](../../../../GeneralTopology/CompactnessNamespaced.lean/declarations/compactnesscontext.md) | 60 | `declaration-track:31e0a9275009d898c1c824af4e13cb10bea99fa6223172e5292f08c3908ded1c` |
-| 5 | `def` | [compactnessClaim](../../../../GeneralTopology/CompactnessNamespaced.lean/declarations/compactnessclaim.md) | 67 | `declaration-track:74f85b8dcc499ef08f9f1cf215a8e8757a4de1f5fc7333a2e96b9d23a03f8333` |
-| 6 | `def` | [compactnessMathlibProofCertificate](../../../../GeneralTopology/CompactnessNamespaced.lean/declarations/compactnessmathlibproofcertificate.md) | 83 | `declaration-track:959496a01825e998437f0666ecc987ce1f60aae02eff2893765268975a064ac4` |
-| 7 | `theorem` | [compactness_through_boundary_calculus](../../../../GeneralTopology/CompactnessNamespaced.lean/declarations/compactness-through-boundary-calculus.md) | 100 | `result-track:7f8a29f9414f5e4773df004e485b530031159a064a4b2f1a4451b31b11639d6f` |
-| 8 | `theorem` | [compactness_no_direct_crossing](../../../../GeneralTopology/CompactnessNamespaced.lean/declarations/compactness-no-direct-crossing.md) | 113 | `result-track:10d09984e90811fe8fd7bdec547a4600552a4aeac5e62fd329e71f1125779e2b` |
+| 1 | `theorem` | [real_Icc_isCompact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompactnessNamespaced.lean/declarations/real-icc-iscompact.md) | 30 | `result-track:645d8edd84ec568910669e17fafa9c74ef13c237ae9bcc6a73c578bb17474c3e` |
+| 2 | `theorem` | [continuousOn_Icc_attains_max](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompactnessNamespaced.lean/declarations/continuouson-icc-attains-max.md) | 37 | `result-track:35fe4c292d1c3c32bcec6f014f9a271e182456348421fe3530b8052caa6d05fb` |
+| 3 | `theorem` | [continuousOn_Icc_attains_min](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompactnessNamespaced.lean/declarations/continuouson-icc-attains-min.md) | 49 | `result-track:c04424dbf7c38376a50d1c89063f55a66aeb8393500c5b24781f86cf03a4e2f0` |
+| 4 | `def` | [compactnessContext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompactnessNamespaced.lean/declarations/compactnesscontext.md) | 60 | `declaration-track:31e0a9275009d898c1c824af4e13cb10bea99fa6223172e5292f08c3908ded1c` |
+| 5 | `def` | [compactnessClaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompactnessNamespaced.lean/declarations/compactnessclaim.md) | 67 | `declaration-track:74f85b8dcc499ef08f9f1cf215a8e8757a4de1f5fc7333a2e96b9d23a03f8333` |
+| 6 | `def` | [compactnessMathlibProofCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompactnessNamespaced.lean/declarations/compactnessmathlibproofcertificate.md) | 83 | `declaration-track:959496a01825e998437f0666ecc987ce1f60aae02eff2893765268975a064ac4` |
+| 7 | `theorem` | [compactness_through_boundary_calculus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompactnessNamespaced.lean/declarations/compactness-through-boundary-calculus.md) | 100 | `result-track:7f8a29f9414f5e4773df004e485b530031159a064a4b2f1a4451b31b11639d6f` |
+| 8 | `theorem` | [compactness_no_direct_crossing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompactnessNamespaced.lean/declarations/compactness-no-direct-crossing.md) | 113 | `result-track:10d09984e90811fe8fd7bdec547a4600552a4aeac5e62fd329e71f1125779e2b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

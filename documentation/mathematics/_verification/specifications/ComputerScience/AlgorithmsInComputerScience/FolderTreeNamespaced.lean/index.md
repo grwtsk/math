@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/FolderTreeNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/FolderTreeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FolderTreeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FolderTreeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FolderTree](../../../../../ComputerScience/AlgorithmsInComputerScience/FolderTreeNamespaced.lean/declarations/foldertree.md) | 26 | `declaration-track:b823865b51b2eb7d9660370459a2ceb4d1d7d5a92cc1a280a3eebf9c8b0f0646` |
-| 2 | `theorem` | [folderTree_unique_paths](../../../../../ComputerScience/AlgorithmsInComputerScience/FolderTreeNamespaced.lean/declarations/foldertree-unique-paths.md) | 33 | `result-track:7932b41b64c8aa00abdf7e3669e359a7dcdbffba2ec71e331dc31f8d2aa7e9b3` |
+| 1 | `structure` | [FolderTree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FolderTreeNamespaced.lean/declarations/foldertree.md) | 26 | `declaration-track:b823865b51b2eb7d9660370459a2ceb4d1d7d5a92cc1a280a3eebf9c8b0f0646` |
+| 2 | `theorem` | [folderTree_unique_paths](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FolderTreeNamespaced.lean/declarations/foldertree-unique-paths.md) | 33 | `result-track:7932b41b64c8aa00abdf7e3669e359a7dcdbffba2ec71e331dc31f8d2aa7e9b3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

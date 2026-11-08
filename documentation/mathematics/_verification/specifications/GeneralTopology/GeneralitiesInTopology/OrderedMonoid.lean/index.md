@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralTopology/GeneralitiesInTopology/OrderedMonoid.lean/index.md) · [Full source](../../../../../GeneralTopology/GeneralitiesInTopology/OrderedMonoid.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/OrderedMonoid.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/OrderedMonoid.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [instIsOrderedMonoid](../../../../../GeneralTopology/GeneralitiesInTopology/OrderedMonoid.lean/declarations/instisorderedmonoid.md) | 28 | `declaration-track:c7c692ab466c9092445ea459d5b02bed7668df86ea9fd45c061940c16a29e4d7` |
-| 2 | `instance` | [instIsOrderedCancelMonoid](../../../../../GeneralTopology/GeneralitiesInTopology/OrderedMonoid.lean/declarations/instisorderedcancelmonoid.md) | 34 | `declaration-track:074d5536afff99e24c06d8673c848379993b71575f9c3d13dc0844b0504c41c9` |
-| 3 | `instance` | [instCanonicallyOrderedMul](../../../../../GeneralTopology/GeneralitiesInTopology/OrderedMonoid.lean/declarations/instcanonicallyorderedmul.md) | 40 | `declaration-track:41615b47068e3f0195edc3a025863523eb61c442980f8ac3968875eddf42cdb4` |
+| 1 | `instance` | [instIsOrderedMonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/OrderedMonoid.lean/declarations/instisorderedmonoid.md) | 28 | `declaration-track:c7c692ab466c9092445ea459d5b02bed7668df86ea9fd45c061940c16a29e4d7` |
+| 2 | `instance` | [instIsOrderedCancelMonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/OrderedMonoid.lean/declarations/instisorderedcancelmonoid.md) | 34 | `declaration-track:074d5536afff99e24c06d8673c848379993b71575f9c3d13dc0844b0504c41c9` |
+| 3 | `instance` | [instCanonicallyOrderedMul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/OrderedMonoid.lean/declarations/instcanonicallyorderedmul.md) | 40 | `declaration-track:41615b47068e3f0195edc3a025863523eb61c442980f8ac3968875eddf42cdb4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

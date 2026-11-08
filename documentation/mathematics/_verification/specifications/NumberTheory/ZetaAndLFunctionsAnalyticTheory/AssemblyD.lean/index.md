@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyD.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyD.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyD.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyD.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [cRatio](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyD.lean/declarations/cratio.md) | 28 | `declaration-track:7bc4385a14dcbf6c2c5c799479e349a0f5a547f2f8136825ec25683fa8b80f36` |
-| 2 | `theorem` | [cRatio_flat](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyD.lean/declarations/cratio-flat.md) | 31 | `result-track:a90602328912ce39d882ff88e760c01f04674e32e8d30244b85e6edfa082a56e` |
-| 3 | `theorem` | [N0star_lower_c](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyD.lean/declarations/n0star-lower-c.md) | 41 | `result-track:6d2418a87bfdbc72ee67d4b7005f55fa4b07add37ee87a6edefda2f7bbf214d3` |
-| 4 | `theorem` | [two_sub_inv_cStar](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyD.lean/declarations/two-sub-inv-cstar.md) | 54 | `result-track:ecca4a0702b3b3309975625a95fb05d55a878b7e0094ef6b4347d04a4fec7870` |
-| 5 | `structure` | [TracesBoundsD](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyD.lean/declarations/tracesboundsd.md) | 61 | `declaration-track:0e418cc7855d79d3603ec518bdf7ba0ee208ce1d16843d8059c53c923f7bba3d` |
+| 1 | `def` | [cRatio](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyD.lean/declarations/cratio.md) | 28 | `declaration-track:7bc4385a14dcbf6c2c5c799479e349a0f5a547f2f8136825ec25683fa8b80f36` |
+| 2 | `theorem` | [cRatio_flat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyD.lean/declarations/cratio-flat.md) | 31 | `result-track:a90602328912ce39d882ff88e760c01f04674e32e8d30244b85e6edfa082a56e` |
+| 3 | `theorem` | [N0star_lower_c](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyD.lean/declarations/n0star-lower-c.md) | 41 | `result-track:6d2418a87bfdbc72ee67d4b7005f55fa4b07add37ee87a6edefda2f7bbf214d3` |
+| 4 | `theorem` | [two_sub_inv_cStar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyD.lean/declarations/two-sub-inv-cstar.md) | 54 | `result-track:ecca4a0702b3b3309975625a95fb05d55a878b7e0094ef6b4347d04a4fec7870` |
+| 5 | `structure` | [TracesBoundsD](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyD.lean/declarations/tracesboundsd.md) | 61 | `declaration-track:0e418cc7855d79d3603ec518bdf7ba0ee208ce1d16843d8059c53c923f7bba3d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

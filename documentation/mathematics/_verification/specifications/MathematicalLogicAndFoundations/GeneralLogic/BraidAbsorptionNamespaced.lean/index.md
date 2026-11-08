@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BraidAbsorptionNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BraidAbsorptionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BraidAbsorptionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BraidAbsorptionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [declaredBraidAbsorbsDeclaredIds](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BraidAbsorptionNamespaced.lean/declarations/declaredbraidabsorbsdeclaredids.md) | 17 | `declaration-track:96ad1bd013f1a6570999e8c9fe8da1c7836f95e00f182ec7680496fba0d4f378` |
-| 2 | `theorem` | [declared_braid_absorbs_declared_ids](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BraidAbsorptionNamespaced.lean/declarations/declared-braid-absorbs-declared-ids.md) | 20 | `result-track:d44b58dc9799f39db6da462915b72a8ceb797af2d1e9da421a2169fb8f865f95` |
+| 1 | `def` | [declaredBraidAbsorbsDeclaredIds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BraidAbsorptionNamespaced.lean/declarations/declaredbraidabsorbsdeclaredids.md) | 17 | `declaration-track:96ad1bd013f1a6570999e8c9fe8da1c7836f95e00f182ec7680496fba0d4f378` |
+| 2 | `theorem` | [declared_braid_absorbs_declared_ids](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BraidAbsorptionNamespaced.lean/declarations/declared-braid-absorbs-declared-ids.md) | 20 | `result-track:d44b58dc9799f39db6da462915b72a8ceb797af2d1e9da421a2169fb8f865f95` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFourierPrimitiveBound.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFourierPrimitiveBound.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFourierPrimitiveBound.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFourierPrimitiveBound.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenQuadratureDerivative`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenQuadratureDerivative.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenQuadratureDerivative`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenQuadratureDerivative.lean/index.md) — import line 7; pinned internal source present.
 - `Mathlib.Tactic` — import line 8; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [fourierModeValue_eq_phase_difference_thin](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFourierPrimitiveBound.lean/declarations/fouriermodevalue-eq-phase-difference-thin.md) | 15 | `result-track:e4d3e6c6b42f64424367c42effd0b6da3cf2efe82e461d6e480dc85d421fe4f3` |
-| 2 | `theorem` | [norm_fourier_phase_sub_one_le_two](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFourierPrimitiveBound.lean/declarations/norm-fourier-phase-sub-one-le-two.md) | 28 | `result-track:272a97d26a5789c5d83ecbf4cd921cff99075ce5f5525fdfa6e1fb51988b9ddc` |
-| 3 | `theorem` | [norm_fourierModeValue_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFourierPrimitiveBound.lean/declarations/norm-fouriermodevalue-le.md) | 39 | `result-track:74cb38b84e1fb5021ee567c5fbc52bab066e13bb2b2b20142cd9d3fcc478aff2` |
-| 4 | `theorem` | [norm_fourierModeValue_le_inv_pi](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFourierPrimitiveBound.lean/declarations/norm-fouriermodevalue-le-inv-pi.md) | 65 | `result-track:4bfbd7411d5cc086f53f430662b6ff9b5744821473fd5f9ce9055e623bc2ad49` |
+| 1 | `theorem` | [fourierModeValue_eq_phase_difference_thin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFourierPrimitiveBound.lean/declarations/fouriermodevalue-eq-phase-difference-thin.md) | 15 | `result-track:e4d3e6c6b42f64424367c42effd0b6da3cf2efe82e461d6e480dc85d421fe4f3` |
+| 2 | `theorem` | [norm_fourier_phase_sub_one_le_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFourierPrimitiveBound.lean/declarations/norm-fourier-phase-sub-one-le-two.md) | 28 | `result-track:272a97d26a5789c5d83ecbf4cd921cff99075ce5f5525fdfa6e1fb51988b9ddc` |
+| 3 | `theorem` | [norm_fourierModeValue_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFourierPrimitiveBound.lean/declarations/norm-fouriermodevalue-le.md) | 39 | `result-track:74cb38b84e1fb5021ee567c5fbc52bab066e13bb2b2b20142cd9d3fcc478aff2` |
+| 4 | `theorem` | [norm_fourierModeValue_le_inv_pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFourierPrimitiveBound.lean/declarations/norm-fouriermodevalue-le-inv-pi.md) | 65 | `result-track:4bfbd7411d5cc086f53f430662b6ff9b5744821473fd5f9ce9055e623bc2ad49` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

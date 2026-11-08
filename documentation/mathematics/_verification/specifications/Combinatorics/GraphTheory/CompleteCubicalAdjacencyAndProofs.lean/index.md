@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/CompleteCubicalAdjacencyAndProofs.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/CompleteCubicalAdjacencyAndProofs.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/CompleteCubicalAdjacencyAndProofs.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/CompleteCubicalAdjacencyAndProofs.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [CoordDiffOne](../../../../../Combinatorics/GraphTheory/CompleteCubicalAdjacencyAndProofs.lean/declarations/coorddiffone.md) | 37 | `declaration-track:dbc47c50ae6d35a363927a82b653dab882e1b21250f242a2a707808e0f8e487d` |
-| 2 | `def` | [SameExcept](../../../../../Combinatorics/GraphTheory/CompleteCubicalAdjacencyAndProofs.lean/declarations/sameexcept.md) | 44 | `declaration-track:99fd02308016974ae67991ab68d3b49566aa4dd2a39eca55dd412e664058050f` |
-| 3 | `def` | [CubeAdjacent](../../../../../Combinatorics/GraphTheory/CompleteCubicalAdjacencyAndProofs.lean/declarations/cubeadjacent.md) | 50 | `declaration-track:7cc445009672396387144460f2ab7c9cff7f3ef54201ebe62405ac86d2db33b6` |
-| 4 | `theorem` | [cubeAdjacent_symm](../../../../../Combinatorics/GraphTheory/CompleteCubicalAdjacencyAndProofs.lean/declarations/cubeadjacent-symm.md) | 55 | `result-track:5478598512fbf7a798641033f10f64484935acf030c70a4444aa040228c7cd4f` |
-| 5 | `theorem` | [cubeAdjacent_irrefl](../../../../../Combinatorics/GraphTheory/CompleteCubicalAdjacencyAndProofs.lean/declarations/cubeadjacent-irrefl.md) | 66 | `result-track:c5261821fa9efec193c92e81c4843b961a34d86a1630058cdfe34a87a007c2d0` |
+| 1 | `def` | [CoordDiffOne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/CompleteCubicalAdjacencyAndProofs.lean/declarations/coorddiffone.md) | 37 | `declaration-track:dbc47c50ae6d35a363927a82b653dab882e1b21250f242a2a707808e0f8e487d` |
+| 2 | `def` | [SameExcept](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/CompleteCubicalAdjacencyAndProofs.lean/declarations/sameexcept.md) | 44 | `declaration-track:99fd02308016974ae67991ab68d3b49566aa4dd2a39eca55dd412e664058050f` |
+| 3 | `def` | [CubeAdjacent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/CompleteCubicalAdjacencyAndProofs.lean/declarations/cubeadjacent.md) | 50 | `declaration-track:7cc445009672396387144460f2ab7c9cff7f3ef54201ebe62405ac86d2db33b6` |
+| 4 | `theorem` | [cubeAdjacent_symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/CompleteCubicalAdjacencyAndProofs.lean/declarations/cubeadjacent-symm.md) | 55 | `result-track:5478598512fbf7a798641033f10f64484935acf030c70a4444aa040228c7cd4f` |
+| 5 | `theorem` | [cubeAdjacent_irrefl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/CompleteCubicalAdjacencyAndProofs.lean/declarations/cubeadjacent-irrefl.md) | 66 | `result-track:c5261821fa9efec193c92e81c4843b961a34d86a1630058cdfe34a87a007c2d0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

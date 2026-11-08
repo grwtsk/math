@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/FiniteGridAdjacency.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/FiniteGridAdjacency.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/FiniteGridAdjacency.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/FiniteGridAdjacency.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [GridShape](../../../../../Combinatorics/GraphTheory/FiniteGridAdjacency.lean/declarations/gridshape.md) | 36 | `declaration-track:42f775f5589ced8d30d8922b0aa642b17a0362312410aec93666f16554ad8072` |
-| 2 | `abbrev` | [Cell](../../../../../Combinatorics/GraphTheory/FiniteGridAdjacency.lean/declarations/cell.md) | 41 | `declaration-track:ac7d4112cfe49a47a0d99865bd18ea9a84fb3556c6faff70765c64990fe2a55f` |
-| 3 | `def` | [EdgeAdjacent](../../../../../Combinatorics/GraphTheory/FiniteGridAdjacency.lean/declarations/edgeadjacent.md) | 43 | `declaration-track:b288147f87b7c527b46a882cc9a135c5968828644931c1f532935afa7fc91ad4` |
-| 4 | `theorem` | [edgeAdjacent_symm](../../../../../Combinatorics/GraphTheory/FiniteGridAdjacency.lean/declarations/edgeadjacent-symm.md) | 49 | `result-track:d3c468d8db36b84b69a9b97f4d8bae2ffcb1dbc9ff814f6adda9b6fa640cda67` |
-| 5 | `theorem` | [edgeAdjacent_irrefl](../../../../../Combinatorics/GraphTheory/FiniteGridAdjacency.lean/declarations/edgeadjacent-irrefl.md) | 60 | `result-track:6122e5b7694f81a3a9f593b0a0329eaf2e4b183bc0fca36b2962aa0e265352fc` |
+| 1 | `structure` | [GridShape](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/FiniteGridAdjacency.lean/declarations/gridshape.md) | 36 | `declaration-track:42f775f5589ced8d30d8922b0aa642b17a0362312410aec93666f16554ad8072` |
+| 2 | `abbrev` | [Cell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/FiniteGridAdjacency.lean/declarations/cell.md) | 41 | `declaration-track:ac7d4112cfe49a47a0d99865bd18ea9a84fb3556c6faff70765c64990fe2a55f` |
+| 3 | `def` | [EdgeAdjacent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/FiniteGridAdjacency.lean/declarations/edgeadjacent.md) | 43 | `declaration-track:b288147f87b7c527b46a882cc9a135c5968828644931c1f532935afa7fc91ad4` |
+| 4 | `theorem` | [edgeAdjacent_symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/FiniteGridAdjacency.lean/declarations/edgeadjacent-symm.md) | 49 | `result-track:d3c468d8db36b84b69a9b97f4d8bae2ffcb1dbc9ff814f6adda9b6fa640cda67` |
+| 5 | `theorem` | [edgeAdjacent_irrefl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/FiniteGridAdjacency.lean/declarations/edgeadjacent-irrefl.md) | 60 | `result-track:6122e5b7694f81a3a9f593b0a0329eaf2e4b183bc0fca36b2962aa0e265352fc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

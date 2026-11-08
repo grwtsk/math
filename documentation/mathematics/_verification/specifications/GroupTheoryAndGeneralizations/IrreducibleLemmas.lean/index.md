@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/IrreducibleLemmas.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/IrreducibleLemmas.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IrreducibleLemmas.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IrreducibleLemmas.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,16 +60,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [not_irreducible_pow](../../../../GroupTheoryAndGeneralizations/IrreducibleLemmas.lean/declarations/not-irreducible-pow.md) | 23 | `result-track:b7ce58919ea202db5231d1ffcf4474b4205209d2d8c183e8ed43e3072f1064b7` |
-| 2 | `lemma` | [irreducible_units_mul](../../../../GroupTheoryAndGeneralizations/IrreducibleLemmas.lean/declarations/irreducible-units-mul.md) | 32 | `result-track:3bda25def0498149f567eac81b6a6439d646caaebf74b49c8635b1220fbfb047` |
-| 3 | `lemma` | [irreducible_isUnit_mul](../../../../GroupTheoryAndGeneralizations/IrreducibleLemmas.lean/declarations/irreducible-isunit-mul.md) | 43 | `result-track:f65e336dc69aaf1ced5113ea7713519d8432c1eff2a12e0cedfc9a9a9a89068f` |
-| 4 | `lemma` | [irreducible_mul_units](../../../../GroupTheoryAndGeneralizations/IrreducibleLemmas.lean/declarations/irreducible-mul-units.md) | 48 | `result-track:7bd6cdc9bc5c089fe6652aa16d3b31d5355821bb34db70cff212c42dd6d05c78` |
-| 5 | `lemma` | [irreducible_mul_isUnit](../../../../GroupTheoryAndGeneralizations/IrreducibleLemmas.lean/declarations/irreducible-mul-isunit.md) | 59 | `result-track:eabd28f8963e2860343792faf03858e861955979bee2a7ea38681d9b31a10502` |
-| 6 | `lemma` | [irreducible_mul_iff](../../../../GroupTheoryAndGeneralizations/IrreducibleLemmas.lean/declarations/irreducible-mul-iff.md) | 64 | `result-track:74f1d43e40f020192bcdef8f615c6fe9654c95eb927b4ab713a201b2b20d2923` |
-| 7 | `lemma` | [MulEquiv.irreducible_iff](../../../../GroupTheoryAndGeneralizations/IrreducibleLemmas.lean/declarations/mulequiv-irreducible-iff.md) | 78 | `result-track:5a494e387916f7021967c33be8b93cf34bbef7ad6b61a77d99f3df3a668d38bf` |
-| 8 | `lemma` | [Irreducible.of_map](../../../../GroupTheoryAndGeneralizations/IrreducibleLemmas.lean/declarations/irreducible-of-map.md) | 92 | `result-track:9353c84c75c19649c9f5ef78cb88ce904df5f2d1b9879c015cabba4b334e39e0` |
-| 9 | `lemma` | [Irreducible.not_isSquare](../../../../GroupTheoryAndGeneralizations/IrreducibleLemmas.lean/declarations/irreducible-not-issquare.md) | 99 | `result-track:d8b167d5a846299ab06cf62d335a71ea7a88df51a7afece1a3f782f46a478316` |
-| 10 | `lemma` | [IsSquare.not_irreducible](../../../../GroupTheoryAndGeneralizations/IrreducibleLemmas.lean/declarations/issquare-not-irreducible.md) | 109 | `result-track:cd4b7cdd07edf2e639b341b2c9d3aacfbdbfc17f84251dad22c1eaa5ca3e660e` |
+| 1 | `lemma` | [not_irreducible_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IrreducibleLemmas.lean/declarations/not-irreducible-pow.md) | 23 | `result-track:b7ce58919ea202db5231d1ffcf4474b4205209d2d8c183e8ed43e3072f1064b7` |
+| 2 | `lemma` | [irreducible_units_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IrreducibleLemmas.lean/declarations/irreducible-units-mul.md) | 32 | `result-track:3bda25def0498149f567eac81b6a6439d646caaebf74b49c8635b1220fbfb047` |
+| 3 | `lemma` | [irreducible_isUnit_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IrreducibleLemmas.lean/declarations/irreducible-isunit-mul.md) | 43 | `result-track:f65e336dc69aaf1ced5113ea7713519d8432c1eff2a12e0cedfc9a9a9a89068f` |
+| 4 | `lemma` | [irreducible_mul_units](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IrreducibleLemmas.lean/declarations/irreducible-mul-units.md) | 48 | `result-track:7bd6cdc9bc5c089fe6652aa16d3b31d5355821bb34db70cff212c42dd6d05c78` |
+| 5 | `lemma` | [irreducible_mul_isUnit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IrreducibleLemmas.lean/declarations/irreducible-mul-isunit.md) | 59 | `result-track:eabd28f8963e2860343792faf03858e861955979bee2a7ea38681d9b31a10502` |
+| 6 | `lemma` | [irreducible_mul_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IrreducibleLemmas.lean/declarations/irreducible-mul-iff.md) | 64 | `result-track:74f1d43e40f020192bcdef8f615c6fe9654c95eb927b4ab713a201b2b20d2923` |
+| 7 | `lemma` | [MulEquiv.irreducible_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IrreducibleLemmas.lean/declarations/mulequiv-irreducible-iff.md) | 78 | `result-track:5a494e387916f7021967c33be8b93cf34bbef7ad6b61a77d99f3df3a668d38bf` |
+| 8 | `lemma` | [Irreducible.of_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IrreducibleLemmas.lean/declarations/irreducible-of-map.md) | 92 | `result-track:9353c84c75c19649c9f5ef78cb88ce904df5f2d1b9879c015cabba4b334e39e0` |
+| 9 | `lemma` | [Irreducible.not_isSquare](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IrreducibleLemmas.lean/declarations/irreducible-not-issquare.md) | 99 | `result-track:d8b167d5a846299ab06cf62d335a71ea7a88df51a7afece1a3f782f46a478316` |
+| 10 | `lemma` | [IsSquare.not_irreducible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IrreducibleLemmas.lean/declarations/issquare-not-irreducible.md) | 109 | `result-track:cd4b7cdd07edf2e639b341b2c9d3aacfbdbfc17f84251dad22c1eaa5ca3e660e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

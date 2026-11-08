@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/MapFloor.lean/index.md) · [Full source](../../../../CommutativeAlgebra/MapFloor.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MapFloor.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MapFloor.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,20 +60,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [IntWithEpsilon](../../../../CommutativeAlgebra/MapFloor.lean/declarations/intwithepsilon.md) | 48 | `declaration-track:01203d54f2ff91cf3c9c5c871e165b28acdfb9304b20ba406daa15ce1ff93f1e` |
-| 2 | `instance` | [nontrivial](../../../../CommutativeAlgebra/MapFloor.lean/declarations/nontrivial.md) | 57 | `declaration-track:298ae06db9d1009e9f9d97658ed1a52116532b04229a1097cfb697fa944075bc` |
-| 3 | `instance` | [commRing](../../../../CommutativeAlgebra/MapFloor.lean/declarations/commring.md) | 61 | `declaration-track:cb25337e6ff4ed28f8fdb4ab0fa3df0d4d4aa7df7023f48f65c66a41f942195f` |
-| 4 | `instance` | [inhabited](../../../../CommutativeAlgebra/MapFloor.lean/declarations/inhabited.md) | 63 | `declaration-track:86a98f0dbc114b61e4d5dcade2555967e99af1dcbc49bf9683a64fc53f46cef1` |
-| 5 | `instance` | [linearOrder](../../../../CommutativeAlgebra/MapFloor.lean/declarations/linearorder.md) | 65 | `declaration-track:f5a679e9745bc1295f182fb64815dbeba3017d779d384c6b2387602d0e7ea1e9` |
-| 6 | `instance` | [isOrderedAddMonoid](../../../../CommutativeAlgebra/MapFloor.lean/declarations/isorderedaddmonoid.md) | 68 | `declaration-track:c92ad170b58b4ecff68690b73c949d03d2edde7a46cc4ada9e9c3106624eb19a` |
-| 7 | `theorem` | [pos_iff](../../../../CommutativeAlgebra/MapFloor.lean/declarations/pos-iff.md) | 74 | `result-track:5557fe732a4b7ed458d21efc69f7ca9459466c5b466f9cf3572d08d52b46608c` |
-| 8 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/MapFloor.lean/declarations/instance-source-edition-3.md) | 84 | `declaration-track:faeb4f7d08026dbf62076d6efafba687a7e65abb6a36af7ef817430749346b74` |
-| 9 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/MapFloor.lean/declarations/instance-source-edition-2.md) | 87 | `declaration-track:cb1835912a7a2ee0f04f8af70399bd4294d6972cc3ee8283c12b2026d3417919` |
-| 10 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/MapFloor.lean/declarations/instance.md) | 90 | `declaration-track:a80c237bee73dae0d60919d9663af5073d350529f8a49a7c758ace51a46f6b7e` |
-| 11 | `def` | [forgetEpsilons](../../../../CommutativeAlgebra/MapFloor.lean/declarations/forgetepsilons.md) | 109 | `declaration-track:0287cb5b468d09a0ed383b5dabb733e7d0c5b9e9ebdd6e4447acb150bcdd2a9a` |
-| 12 | `theorem` | [forgetEpsilons_apply](../../../../CommutativeAlgebra/MapFloor.lean/declarations/forgetepsilons-apply.md) | 122 | `result-track:67aeba52f688db8191eeeaf759c78a6a803a9ee85895a77a9d2d18c3e6428bdb` |
-| 13 | `theorem` | [forgetEpsilons_floor_lt](../../../../CommutativeAlgebra/MapFloor.lean/declarations/forgetepsilons-floor-lt.md) | 127 | `result-track:98ade2efd720bf39469a9f7423bf4e7d3a2532c00bbdfa91d4afdd2c39673dbd` |
-| 14 | `theorem` | [lt_forgetEpsilons_ceil](../../../../CommutativeAlgebra/MapFloor.lean/declarations/lt-forgetepsilons-ceil.md) | 136 | `result-track:819c5c6775135ed3cb71f57ca7ce21564c605927646aec848dd903b87158327b` |
+| 1 | `def` | [IntWithEpsilon](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MapFloor.lean/declarations/intwithepsilon.md) | 48 | `declaration-track:01203d54f2ff91cf3c9c5c871e165b28acdfb9304b20ba406daa15ce1ff93f1e` |
+| 2 | `instance` | [nontrivial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MapFloor.lean/declarations/nontrivial.md) | 57 | `declaration-track:298ae06db9d1009e9f9d97658ed1a52116532b04229a1097cfb697fa944075bc` |
+| 3 | `instance` | [commRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MapFloor.lean/declarations/commring.md) | 61 | `declaration-track:cb25337e6ff4ed28f8fdb4ab0fa3df0d4d4aa7df7023f48f65c66a41f942195f` |
+| 4 | `instance` | [inhabited](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MapFloor.lean/declarations/inhabited.md) | 63 | `declaration-track:86a98f0dbc114b61e4d5dcade2555967e99af1dcbc49bf9683a64fc53f46cef1` |
+| 5 | `instance` | [linearOrder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MapFloor.lean/declarations/linearorder.md) | 65 | `declaration-track:f5a679e9745bc1295f182fb64815dbeba3017d779d384c6b2387602d0e7ea1e9` |
+| 6 | `instance` | [isOrderedAddMonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MapFloor.lean/declarations/isorderedaddmonoid.md) | 68 | `declaration-track:c92ad170b58b4ecff68690b73c949d03d2edde7a46cc4ada9e9c3106624eb19a` |
+| 7 | `theorem` | [pos_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MapFloor.lean/declarations/pos-iff.md) | 74 | `result-track:5557fe732a4b7ed458d21efc69f7ca9459466c5b466f9cf3572d08d52b46608c` |
+| 8 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MapFloor.lean/declarations/instance-source-edition-3.md) | 84 | `declaration-track:faeb4f7d08026dbf62076d6efafba687a7e65abb6a36af7ef817430749346b74` |
+| 9 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MapFloor.lean/declarations/instance-source-edition-2.md) | 87 | `declaration-track:cb1835912a7a2ee0f04f8af70399bd4294d6972cc3ee8283c12b2026d3417919` |
+| 10 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MapFloor.lean/declarations/instance.md) | 90 | `declaration-track:a80c237bee73dae0d60919d9663af5073d350529f8a49a7c758ace51a46f6b7e` |
+| 11 | `def` | [forgetEpsilons](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MapFloor.lean/declarations/forgetepsilons.md) | 109 | `declaration-track:0287cb5b468d09a0ed383b5dabb733e7d0c5b9e9ebdd6e4447acb150bcdd2a9a` |
+| 12 | `theorem` | [forgetEpsilons_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MapFloor.lean/declarations/forgetepsilons-apply.md) | 122 | `result-track:67aeba52f688db8191eeeaf759c78a6a803a9ee85895a77a9d2d18c3e6428bdb` |
+| 13 | `theorem` | [forgetEpsilons_floor_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MapFloor.lean/declarations/forgetepsilons-floor-lt.md) | 127 | `result-track:98ade2efd720bf39469a9f7423bf4e7d3a2532c00bbdfa91d4afdd2c39673dbd` |
+| 14 | `theorem` | [lt_forgetEpsilons_ceil](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MapFloor.lean/declarations/lt-forgetepsilons-ceil.md) | 136 | `result-track:819c5c6775135ed3cb71f57ca7ce21564c605927646aec848dd903b87158327b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/OptionDefsNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/OptionDefsNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/OptionDefsNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/OptionDefsNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [traverse.](../../../../../../ComputerScience/TheoryOfData/DataStructures/OptionDefsNamespacedPublic.lean/declarations/traverse.md) | 31 | `declaration-track:d3f911b34ef9010272d1a04e98e2e0c570a53d4cf50736be4ce7738c3e01bcc3` |
-| 2 | `def` | [elim'](../../../../../../ComputerScience/TheoryOfData/DataStructures/OptionDefsNamespacedPublic.lean/declarations/elim.md) | 38 | `declaration-track:a649e03fe7c621e8684e1dc6bc9aac5d4224f3493d6401c04d265f2b8d1eaa57` |
-| 3 | `theorem` | [elim'_none](../../../../../../ComputerScience/TheoryOfData/DataStructures/OptionDefsNamespacedPublic.lean/declarations/elim-none.md) | 43 | `result-track:3554b7f1d1f8c8c3e582c81bf7560a5f7c00e800970c3ecc20d416350f886bad` |
-| 4 | `theorem` | [elim'_some](../../../../../../ComputerScience/TheoryOfData/DataStructures/OptionDefsNamespacedPublic.lean/declarations/elim-some.md) | 46 | `result-track:b6b47e3c19665cc4bd876f5856ad07d3e3f92b6c55a2b83b40b87308ccbdcd20` |
-| 5 | `theorem` | [elim'_none_some](../../../../../../ComputerScience/TheoryOfData/DataStructures/OptionDefsNamespacedPublic.lean/declarations/elim-none-some.md) | 49 | `result-track:49ca0c848b2b1c19349d58c4a76f53ed5cc73adf63bafd5d8054d770c01db7ea` |
-| 6 | `lemma` | [elim'_eq_elim](../../../../../../ComputerScience/TheoryOfData/DataStructures/OptionDefsNamespacedPublic.lean/declarations/elim-eq-elim.md) | 52 | `result-track:2500e478afb768db30e4bf9cfb58e57335f20c02fc5f230e8e977ca105856872` |
+| 1 | `def` | [traverse.](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/OptionDefsNamespacedPublic.lean/declarations/traverse.md) | 31 | `declaration-track:d3f911b34ef9010272d1a04e98e2e0c570a53d4cf50736be4ce7738c3e01bcc3` |
+| 2 | `def` | [elim'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/OptionDefsNamespacedPublic.lean/declarations/elim.md) | 38 | `declaration-track:a649e03fe7c621e8684e1dc6bc9aac5d4224f3493d6401c04d265f2b8d1eaa57` |
+| 3 | `theorem` | [elim'_none](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/OptionDefsNamespacedPublic.lean/declarations/elim-none.md) | 43 | `result-track:3554b7f1d1f8c8c3e582c81bf7560a5f7c00e800970c3ecc20d416350f886bad` |
+| 4 | `theorem` | [elim'_some](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/OptionDefsNamespacedPublic.lean/declarations/elim-some.md) | 46 | `result-track:b6b47e3c19665cc4bd876f5856ad07d3e3f92b6c55a2b83b40b87308ccbdcd20` |
+| 5 | `theorem` | [elim'_none_some](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/OptionDefsNamespacedPublic.lean/declarations/elim-none-some.md) | 49 | `result-track:49ca0c848b2b1c19349d58c4a76f53ed5cc73adf63bafd5d8054d770c01db7ea` |
+| 6 | `lemma` | [elim'_eq_elim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/OptionDefsNamespacedPublic.lean/declarations/elim-eq-elim.md) | 52 | `result-track:2500e478afb768db30e4bf9cfb58e57335f20c02fc5f230e8e977ca105856872` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

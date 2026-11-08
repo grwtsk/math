@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../OperatorTheory/WrongSamplingStepHistoricalSourceEdition2.lean/index.md) · [Full source](../../../../OperatorTheory/WrongSamplingStepHistoricalSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/WrongSamplingStepHistoricalSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/WrongSamplingStepHistoricalSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Spectral.SturmianBlockCounts`](../../../../OperatorTheory/SturmianBlockCountsHistoricalSourceEdition2.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.Spectral.FreeIDS`](../../../../OperatorTheory/FreeIDSHistoricalSourceEdition2.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.Spectral.SturmianBlockCounts`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/SturmianBlockCountsHistoricalSourceEdition2.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Spectral.FreeIDS`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/FreeIDSHistoricalSourceEdition2.lean/index.md) — import line 2; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../OperatorTheory/WrongSamplingStepHistoricalSourceEdition2.lean/declarations/example.md) | 6 | `declaration-track:1974428170f4132ba7ccc859ed5be34977e0c8718ede2c686dc24aa8f90cd334` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/WrongSamplingStepHistoricalSourceEdition2.lean/declarations/example.md) | 6 | `declaration-track:1974428170f4132ba7ccc859ed5be34977e0c8718ede2c686dc24aa8f90cd334` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

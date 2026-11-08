@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ZeroAvalancheCounterexamples.lean/index.md) · [Full source](../../../../Combinatorics/ZeroAvalancheCounterexamples.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ZeroAvalancheCounterexamples.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ZeroAvalancheCounterexamples.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -53,8 +53,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 - `Mathlib.NumberTheory.ArithmeticFunction.Moebius` — import line 24; external provider; requires a separately pinned dependency.
 - `Mathlib.Algebra.BigOperators.Group.Finset.Basic` — import line 25; external provider; requires a separately pinned dependency.
 - `Mathlib.Data.Finsupp.Defs` — import line 26; external provider; requires a separately pinned dependency.
-- [Exact Periods And Complete Cycles](../../../../GroupTheoryAndGeneralizations/ExactPeriodsAndCompleteCycles.lean/index.md) — import line 28; pinned internal source present.
-- [Finite Euler Exponent Data](../../../../GroupTheoryAndGeneralizations/FiniteEulerExponentData.lean/index.md) — import line 29; pinned internal source present.
+- [Exact Periods And Complete Cycles](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ExactPeriodsAndCompleteCycles.lean/index.md) — import line 28; pinned internal source present.
+- [Finite Euler Exponent Data](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteEulerExponentData.lean/index.md) — import line 29; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -65,12 +65,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [firstSecondSwap](../../../../Combinatorics/ZeroAvalancheCounterexamples.lean/declarations/firstsecondswap.md) | 64 | `declaration-track:d1b17d112c401494b83e3ee966c634e02b5727dea9d43b3a49c92c46d9e24061` |
-| 2 | `theorem` | [firstSecondSwap_ne_one](../../../../Combinatorics/ZeroAvalancheCounterexamples.lean/declarations/firstsecondswap-ne-one.md) | 68 | `result-track:5eeb6682567c2611d5e07d59e401564195129a80a479a37960553d9e62e25900` |
-| 3 | `theorem` | [coordinate_firstSecondSwap_ne_one](../../../../Combinatorics/ZeroAvalancheCounterexamples.lean/declarations/coordinate-firstsecondswap-ne-one.md) | 75 | `result-track:dc811a6f5a71a22750de74943404928918dc717e55b9df3f3a0c08c83ba2af84` |
-| 4 | `theorem` | [exists_nontrivial_bitPerm_with_zero_avalanche](../../../../Combinatorics/ZeroAvalancheCounterexamples.lean/declarations/exists-nontrivial-bitperm-with-zero-avalanche.md) | 88 | `result-track:faed27e8ebb6aff7fc5474e4f7a985dc9aec03ccafc2eb0275c73d0a25c4df27` |
-| 5 | `theorem` | [cycleEulerFactorData_ne_identity_of_ne](../../../../Combinatorics/ZeroAvalancheCounterexamples.lean/declarations/cycleeulerfactordata-ne-identity-of-ne.md) | 101 | `result-track:e180daba1021d6048a6895afe758799ff9d97455ae5ec04aa6d074b57d0b2ebc` |
-| 6 | `theorem` | [exists_nontrivial_cycle_data_with_zero_avalanche](../../../../Combinatorics/ZeroAvalancheCounterexamples.lean/declarations/exists-nontrivial-cycle-data-with-zero-avalanche.md) | 143 | `result-track:c959a115d29c12723a270f2b4f1c488d258adc23c1c8ee2893dab66478f0992e` |
+| 1 | `def` | [firstSecondSwap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ZeroAvalancheCounterexamples.lean/declarations/firstsecondswap.md) | 64 | `declaration-track:d1b17d112c401494b83e3ee966c634e02b5727dea9d43b3a49c92c46d9e24061` |
+| 2 | `theorem` | [firstSecondSwap_ne_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ZeroAvalancheCounterexamples.lean/declarations/firstsecondswap-ne-one.md) | 68 | `result-track:5eeb6682567c2611d5e07d59e401564195129a80a479a37960553d9e62e25900` |
+| 3 | `theorem` | [coordinate_firstSecondSwap_ne_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ZeroAvalancheCounterexamples.lean/declarations/coordinate-firstsecondswap-ne-one.md) | 75 | `result-track:dc811a6f5a71a22750de74943404928918dc717e55b9df3f3a0c08c83ba2af84` |
+| 4 | `theorem` | [exists_nontrivial_bitPerm_with_zero_avalanche](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ZeroAvalancheCounterexamples.lean/declarations/exists-nontrivial-bitperm-with-zero-avalanche.md) | 88 | `result-track:faed27e8ebb6aff7fc5474e4f7a985dc9aec03ccafc2eb0275c73d0a25c4df27` |
+| 5 | `theorem` | [cycleEulerFactorData_ne_identity_of_ne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ZeroAvalancheCounterexamples.lean/declarations/cycleeulerfactordata-ne-identity-of-ne.md) | 101 | `result-track:e180daba1021d6048a6895afe758799ff9d97455ae5ec04aa6d074b57d0b2ebc` |
+| 6 | `theorem` | [exists_nontrivial_cycle_data_with_zero_avalanche](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ZeroAvalancheCounterexamples.lean/declarations/exists-nontrivial-cycle-data-with-zero-avalanche.md) | 143 | `result-track:c959a115d29c12723a270f2b4f1c488d258adc23c1c8ee2893dab66478f0992e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/WeilFormulaImportNamespacedEdition1.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/WeilFormulaImportNamespacedEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/WeilFormulaImportNamespacedEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/WeilFormulaImportNamespacedEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [carrier_eq](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/WeilFormulaImportNamespacedEdition1.lean/declarations/carrier-eq.md) | 39 | `result-track:a2038a5201a4665f28e74c1fb42255a8bfc9733330ddbed93b6e378cbb21c171` |
-| 2 | `theorem` | [multiplicity_eq](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/WeilFormulaImportNamespacedEdition1.lean/declarations/multiplicity-eq.md) | 45 | `result-track:c7f85bdf98206268381f7c5e324736d8661adc7d95b7fb86996e3fda30797441` |
-| 3 | `theorem` | [weil_formula](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/WeilFormulaImportNamespacedEdition1.lean/declarations/weil-formula.md) | 50 | `result-track:547489bbeb8d698b4d28757c1f77c237fa1279e0751576b764f4a223138e4f30` |
-| 4 | `theorem` | [paperFT_smoothKernel](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/WeilFormulaImportNamespacedEdition1.lean/declarations/paperft-smoothkernel.md) | 61 | `result-track:a2fb399f9ccdc62d8b27919238a3c0d8bbecfeb9c06d718a6140c9d3be6bc2cc` |
-| 5 | `theorem` | [smooth_kernel_literature_formula](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/WeilFormulaImportNamespacedEdition1.lean/declarations/smooth-kernel-literature-formula.md) | 67 | `result-track:283d882bb892668387aef514bc2480cb8e942e51528ebc10eee6c8ce4f72072b` |
+| 1 | `theorem` | [carrier_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/WeilFormulaImportNamespacedEdition1.lean/declarations/carrier-eq.md) | 39 | `result-track:a2038a5201a4665f28e74c1fb42255a8bfc9733330ddbed93b6e378cbb21c171` |
+| 2 | `theorem` | [multiplicity_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/WeilFormulaImportNamespacedEdition1.lean/declarations/multiplicity-eq.md) | 45 | `result-track:c7f85bdf98206268381f7c5e324736d8661adc7d95b7fb86996e3fda30797441` |
+| 3 | `theorem` | [weil_formula](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/WeilFormulaImportNamespacedEdition1.lean/declarations/weil-formula.md) | 50 | `result-track:547489bbeb8d698b4d28757c1f77c237fa1279e0751576b764f4a223138e4f30` |
+| 4 | `theorem` | [paperFT_smoothKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/WeilFormulaImportNamespacedEdition1.lean/declarations/paperft-smoothkernel.md) | 61 | `result-track:a2fb399f9ccdc62d8b27919238a3c0d8bbecfeb9c06d718a6140c9d3be6bc2cc` |
+| 5 | `theorem` | [smooth_kernel_literature_formula](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/WeilFormulaImportNamespacedEdition1.lean/declarations/smooth-kernel-literature-formula.md) | 67 | `result-track:283d882bb892668387aef514bc2480cb8e942e51528ebc10eee6c8ce4f72072b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

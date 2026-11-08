@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/ActionHomNamespaced.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/ActionHomNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ActionHomNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ActionHomNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [Function.Surjective.mulActionLeft](../../../../GroupTheoryAndGeneralizations/ActionHomNamespaced.lean/declarations/function-surjective-mulactionleft.md) | 36 | `declaration-track:4452d52d15b06c5278bd817010def8177536bb95c06c2658dab353e786392736` |
-| 2 | `abbrev` | [compHom](../../../../GroupTheoryAndGeneralizations/ActionHomNamespaced.lean/declarations/comphom.md) | 52 | `declaration-track:f3a7003acc3570eedd0171793f6ee5aba0eaaf69a40b8de69030ca96b59874aa` |
-| 3 | `lemma` | [compHom_smul_def](../../../../GroupTheoryAndGeneralizations/ActionHomNamespaced.lean/declarations/comphom-smul-def.md) | 64 | `result-track:0ef343b7b7993faacff8bb79e40c6daa5add62b99217d4305ad7b54d649d0605` |
-| 4 | `lemma` | [isPretransitive_compHom](../../../../GroupTheoryAndGeneralizations/ActionHomNamespaced.lean/declarations/ispretransitive-comphom.md) | 72 | `result-track:508202beb647ee2225a26a329bb8981c63e931ae28b770bd45634d698cbcf372` |
-| 5 | `lemma` | [IsPretransitive.of_compHom](../../../../GroupTheoryAndGeneralizations/ActionHomNamespaced.lean/declarations/ispretransitive-of-comphom.md) | 83 | `result-track:eadccb3f061b22a87916407448842a209fb13ba32324f5b935ce725eeae06166` |
-| 6 | `def` | [MonoidHom.smulOneHom](../../../../GroupTheoryAndGeneralizations/ActionHomNamespaced.lean/declarations/monoidhom-smulonehom.md) | 97 | `declaration-track:3956897c4e2ebb5f14d66383548bd656011c955ba923ee99cd15cf3c2fbc3511` |
-| 7 | `def` | [monoidHomEquivMulActionIsScalarTower](../../../../GroupTheoryAndGeneralizations/ActionHomNamespaced.lean/declarations/monoidhomequivmulactionisscalartower.md) | 108 | `declaration-track:319d3040aad171333aa4947a7c69118f3c97eb81f5f2296bf72052f44704e28b` |
+| 1 | `abbrev` | [Function.Surjective.mulActionLeft](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ActionHomNamespaced.lean/declarations/function-surjective-mulactionleft.md) | 36 | `declaration-track:4452d52d15b06c5278bd817010def8177536bb95c06c2658dab353e786392736` |
+| 2 | `abbrev` | [compHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ActionHomNamespaced.lean/declarations/comphom.md) | 52 | `declaration-track:f3a7003acc3570eedd0171793f6ee5aba0eaaf69a40b8de69030ca96b59874aa` |
+| 3 | `lemma` | [compHom_smul_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ActionHomNamespaced.lean/declarations/comphom-smul-def.md) | 64 | `result-track:0ef343b7b7993faacff8bb79e40c6daa5add62b99217d4305ad7b54d649d0605` |
+| 4 | `lemma` | [isPretransitive_compHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ActionHomNamespaced.lean/declarations/ispretransitive-comphom.md) | 72 | `result-track:508202beb647ee2225a26a329bb8981c63e931ae28b770bd45634d698cbcf372` |
+| 5 | `lemma` | [IsPretransitive.of_compHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ActionHomNamespaced.lean/declarations/ispretransitive-of-comphom.md) | 83 | `result-track:eadccb3f061b22a87916407448842a209fb13ba32324f5b935ce725eeae06166` |
+| 6 | `def` | [MonoidHom.smulOneHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ActionHomNamespaced.lean/declarations/monoidhom-smulonehom.md) | 97 | `declaration-track:3956897c4e2ebb5f14d66383548bd656011c955ba923ee99cd15cf3c2fbc3511` |
+| 7 | `def` | [monoidHomEquivMulActionIsScalarTower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/ActionHomNamespaced.lean/declarations/monoidhomequivmulactionisscalartower.md) | 108 | `declaration-track:319d3040aad171333aa4947a7c69118f3c97eb81f5f2296bf72052f44704e28b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

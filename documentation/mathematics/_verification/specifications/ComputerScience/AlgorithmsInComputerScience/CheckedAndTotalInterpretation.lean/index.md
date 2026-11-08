@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/CheckedAndTotalInterpretation.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/CheckedAndTotalInterpretation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CheckedAndTotalInterpretation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CheckedAndTotalInterpretation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `BitMatrix.Carrier.BooleanSpace` — import line 20; external provider; requires a separately pinned dependency.
-- [Safety Certified Programs](../../../../../ComputerScience/AlgorithmsInComputerScience/SafetyCertifiedPrograms.lean/index.md) — import line 22; pinned internal source present.
+- [Safety Certified Programs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SafetyCertifiedPrograms.lean/index.md) — import line 22; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CheckedDecoder](../../../../../ComputerScience/AlgorithmsInComputerScience/CheckedAndTotalInterpretation.lean/declarations/checkeddecoder.md) | 48 | `declaration-track:72da5ba7f6683f60784e48326b90e71487491c5cf1fb806e09b18445c300d5db` |
-| 2 | `def` | [interpretChecked](../../../../../ComputerScience/AlgorithmsInComputerScience/CheckedAndTotalInterpretation.lean/declarations/interpretchecked.md) | 52 | `declaration-track:428d274513910adb36a28c8099fc36ea8c9cdaba62dbbc90a757309c00bbd937` |
-| 3 | `def` | [interpretTotal](../../../../../ComputerScience/AlgorithmsInComputerScience/CheckedAndTotalInterpretation.lean/declarations/interprettotal.md) | 62 | `declaration-track:52d9e5b3cdacf18e1a2abb89427dd2acc4ff2e1564095bdd09dae723112514ad` |
-| 4 | `theorem` | [interpretTotal_eq_checked_getD](../../../../../ComputerScience/AlgorithmsInComputerScience/CheckedAndTotalInterpretation.lean/declarations/interprettotal-eq-checked-getd.md) | 68 | `result-track:5a64443405a60486a2aa315535faa1505591762cb70ff9ab0c9227893f9c6797` |
-| 5 | `theorem` | [interpretTotal_of_decode_some](../../../../../ComputerScience/AlgorithmsInComputerScience/CheckedAndTotalInterpretation.lean/declarations/interprettotal-of-decode-some.md) | 76 | `result-track:e0ff21f5b3f923a7b31e45c1ed5eed82434adb9aac71ec2efb9e47e41c99bb7e` |
-| 6 | `theorem` | [interpretChecked_of_decode_none](../../../../../ComputerScience/AlgorithmsInComputerScience/CheckedAndTotalInterpretation.lean/declarations/interpretchecked-of-decode-none.md) | 85 | `result-track:810a053b1eb2d5570be3529499a3e1834abcc8950944ab846761d3ab4dfeae48` |
-| 7 | `theorem` | [interpretTotal_of_decode_none](../../../../../ComputerScience/AlgorithmsInComputerScience/CheckedAndTotalInterpretation.lean/declarations/interprettotal-of-decode-none.md) | 93 | `result-track:c04eeac61bb82331003badece685120dca1feb1328a1300942056e9367ad6450` |
-| 8 | `theorem` | [interpretTotal_apply_of_decode_none](../../../../../ComputerScience/AlgorithmsInComputerScience/CheckedAndTotalInterpretation.lean/declarations/interprettotal-apply-of-decode-none.md) | 101 | `result-track:beb109e5e8d2ad5acfa2a22097af17b1e3946f3f22d435037230752459f87726` |
+| 1 | `structure` | [CheckedDecoder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CheckedAndTotalInterpretation.lean/declarations/checkeddecoder.md) | 48 | `declaration-track:72da5ba7f6683f60784e48326b90e71487491c5cf1fb806e09b18445c300d5db` |
+| 2 | `def` | [interpretChecked](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CheckedAndTotalInterpretation.lean/declarations/interpretchecked.md) | 52 | `declaration-track:428d274513910adb36a28c8099fc36ea8c9cdaba62dbbc90a757309c00bbd937` |
+| 3 | `def` | [interpretTotal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CheckedAndTotalInterpretation.lean/declarations/interprettotal.md) | 62 | `declaration-track:52d9e5b3cdacf18e1a2abb89427dd2acc4ff2e1564095bdd09dae723112514ad` |
+| 4 | `theorem` | [interpretTotal_eq_checked_getD](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CheckedAndTotalInterpretation.lean/declarations/interprettotal-eq-checked-getd.md) | 68 | `result-track:5a64443405a60486a2aa315535faa1505591762cb70ff9ab0c9227893f9c6797` |
+| 5 | `theorem` | [interpretTotal_of_decode_some](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CheckedAndTotalInterpretation.lean/declarations/interprettotal-of-decode-some.md) | 76 | `result-track:e0ff21f5b3f923a7b31e45c1ed5eed82434adb9aac71ec2efb9e47e41c99bb7e` |
+| 6 | `theorem` | [interpretChecked_of_decode_none](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CheckedAndTotalInterpretation.lean/declarations/interpretchecked-of-decode-none.md) | 85 | `result-track:810a053b1eb2d5570be3529499a3e1834abcc8950944ab846761d3ab4dfeae48` |
+| 7 | `theorem` | [interpretTotal_of_decode_none](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CheckedAndTotalInterpretation.lean/declarations/interprettotal-of-decode-none.md) | 93 | `result-track:c04eeac61bb82331003badece685120dca1feb1328a1300942056e9367ad6450` |
+| 8 | `theorem` | [interpretTotal_apply_of_decode_none](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CheckedAndTotalInterpretation.lean/declarations/interprettotal-apply-of-decode-none.md) | 101 | `result-track:beb109e5e8d2ad5acfa2a22097af17b1e3946f3f22d435037230752459f87726` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

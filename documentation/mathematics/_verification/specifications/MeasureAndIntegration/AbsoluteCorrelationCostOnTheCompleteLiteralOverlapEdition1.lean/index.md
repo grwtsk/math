@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/AbsoluteCorrelationCostOnTheCompleteLiteralOverlapEdition1.lean/index.md) · [Full source](../../../../MeasureAndIntegration/AbsoluteCorrelationCostOnTheCompleteLiteralOverlapEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AbsoluteCorrelationCostOnTheCompleteLiteralOverlapEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AbsoluteCorrelationCostOnTheCompleteLiteralOverlapEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [overlapCap](../../../../MeasureAndIntegration/AbsoluteCorrelationCostOnTheCompleteLiteralOverlapEdition1.lean/declarations/overlapcap.md) | 26 | `declaration-track:35281e24eadf3b67ee1e4afc7d9a0556fd04ed755225e5c5a0003c409e6d72b3` |
-| 2 | `theorem` | [full_overlap_product_absolute_upper](../../../../MeasureAndIntegration/AbsoluteCorrelationCostOnTheCompleteLiteralOverlapEdition1.lean/declarations/full-overlap-product-absolute-upper.md) | 28 | `result-track:24ef5f24ca8d360db82e4078b1c0114651ef2d6b4353a8331e7049378420807a` |
-| 3 | `theorem` | [complete_product_zero_outside_overlap](../../../../MeasureAndIntegration/AbsoluteCorrelationCostOnTheCompleteLiteralOverlapEdition1.lean/declarations/complete-product-zero-outside-overlap.md) | 73 | `result-track:51b53922482976334c05e9d660643ff494964d640dc3c480c04c90092e51bd35` |
-| 4 | `theorem` | [actual_complete_correlation_absolute_upper](../../../../MeasureAndIntegration/AbsoluteCorrelationCostOnTheCompleteLiteralOverlapEdition1.lean/declarations/actual-complete-correlation-absolute-upper.md) | 85 | `result-track:3b7f1f60bc6a8779a00fe4fd0ef2ecead1b1ee9e3e5c02e29786e1c365c62cfa` |
+| 1 | `def` | [overlapCap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AbsoluteCorrelationCostOnTheCompleteLiteralOverlapEdition1.lean/declarations/overlapcap.md) | 26 | `declaration-track:35281e24eadf3b67ee1e4afc7d9a0556fd04ed755225e5c5a0003c409e6d72b3` |
+| 2 | `theorem` | [full_overlap_product_absolute_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AbsoluteCorrelationCostOnTheCompleteLiteralOverlapEdition1.lean/declarations/full-overlap-product-absolute-upper.md) | 28 | `result-track:24ef5f24ca8d360db82e4078b1c0114651ef2d6b4353a8331e7049378420807a` |
+| 3 | `theorem` | [complete_product_zero_outside_overlap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AbsoluteCorrelationCostOnTheCompleteLiteralOverlapEdition1.lean/declarations/complete-product-zero-outside-overlap.md) | 73 | `result-track:51b53922482976334c05e9d660643ff494964d640dc3c480c04c90092e51bd35` |
+| 4 | `theorem` | [actual_complete_correlation_absolute_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AbsoluteCorrelationCostOnTheCompleteLiteralOverlapEdition1.lean/declarations/actual-complete-correlation-absolute-upper.md) | 85 | `result-track:3b7f1f60bc6a8779a00fe4fd0ef2ecead1b1ee9e3e5c02e29786e1c365c62cfa` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

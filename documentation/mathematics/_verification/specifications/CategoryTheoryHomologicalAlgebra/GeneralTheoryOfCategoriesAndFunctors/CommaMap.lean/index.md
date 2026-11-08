@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaMap.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaMap.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaMap.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaMap.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [commaMapEquivalenceFunctor](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaMap.lean/declarations/commamapequivalencefunctor.md) | 31 | `declaration-track:4e03fea297ee60a3ec48cb79b74ab3cdf029850f31657637e1bf23f2be2b7a49` |
-| 2 | `def` | [commaMapEquivalenceInverse](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaMap.lean/declarations/commamapequivalenceinverse.md) | 51 | `declaration-track:917c0fbd9605aa16315388e1ac2c738aa90582f56e4bd0a716ab7dc0f3944698` |
-| 3 | `def` | [commaMapEquivalenceUnitIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaMap.lean/declarations/commamapequivalenceunitiso.md) | 71 | `declaration-track:15231f2a27036a8ad450f340f7ff2cd89438dc46bbdb859dbbb39ce1a3c98616` |
-| 4 | `def` | [commaMapEquivalenceCounitIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaMap.lean/declarations/commamapequivalencecounitiso.md) | 78 | `declaration-track:51cd95c8b231fefcd8de37b7061496ab557c1216ff9d4dc038fe0f9ed2911cd0` |
-| 5 | `def` | [commaMapEquivalence](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaMap.lean/declarations/commamapequivalence.md) | 85 | `declaration-track:1e5560b0c95af8fdcae2b2cd12a3e68b8a8201423328a00c734bc9ac601bebbe` |
+| 1 | `def` | [commaMapEquivalenceFunctor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaMap.lean/declarations/commamapequivalencefunctor.md) | 31 | `declaration-track:4e03fea297ee60a3ec48cb79b74ab3cdf029850f31657637e1bf23f2be2b7a49` |
+| 2 | `def` | [commaMapEquivalenceInverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaMap.lean/declarations/commamapequivalenceinverse.md) | 51 | `declaration-track:917c0fbd9605aa16315388e1ac2c738aa90582f56e4bd0a716ab7dc0f3944698` |
+| 3 | `def` | [commaMapEquivalenceUnitIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaMap.lean/declarations/commamapequivalenceunitiso.md) | 71 | `declaration-track:15231f2a27036a8ad450f340f7ff2cd89438dc46bbdb859dbbb39ce1a3c98616` |
+| 4 | `def` | [commaMapEquivalenceCounitIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaMap.lean/declarations/commamapequivalencecounitiso.md) | 78 | `declaration-track:51cd95c8b231fefcd8de37b7061496ab557c1216ff9d4dc038fe0f9ed2911cd0` |
+| 5 | `def` | [commaMapEquivalence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaMap.lean/declarations/commamapequivalence.md) | 85 | `declaration-track:1e5560b0c95af8fdcae2b2cd12a3e68b8a8201423328a00c734bc9ac601bebbe` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

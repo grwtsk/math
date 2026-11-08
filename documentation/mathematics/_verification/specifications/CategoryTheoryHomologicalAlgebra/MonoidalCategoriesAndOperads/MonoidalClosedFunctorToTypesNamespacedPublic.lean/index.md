@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalClosedFunctorToTypesNamespacedPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalClosedFunctorToTypesNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalClosedFunctorToTypesNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalClosedFunctorToTypesNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [functorHomEquiv](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalClosedFunctorToTypesNamespacedPublic.lean/declarations/functorhomequiv.md) | 45 | `declaration-track:c1a492d6b96154d5bc5f5d461140b73c0a14e3d5301476a65088970fd393a62a` |
-| 2 | `def` | [rightAdj](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalClosedFunctorToTypesNamespacedPublic.lean/declarations/rightadj.md) | 51 | `declaration-track:a1b3b7e251e2767d3ba16401bb728e906e5a1629ebf60e356a4437bd6a6bfb87` |
-| 3 | `def` | [adj](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalClosedFunctorToTypesNamespacedPublic.lean/declarations/adj.md) | 66 | `declaration-track:a831eae6e686855179bc9e11b9f1c715391c4687ab5cf873fdf41acd7beeb58b` |
-| 4 | `instance` | [closed](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalClosedFunctorToTypesNamespacedPublic.lean/declarations/closed.md) | 78 | `declaration-track:859c149010832200937d0356e93579189f545dea484d5be85d122e04ed91c5ac` |
-| 5 | `instance` | [monoidalClosed](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalClosedFunctorToTypesNamespacedPublic.lean/declarations/monoidalclosed.md) | 82 | `declaration-track:5b09f21e779a3bf4edddb22328631af887f5f377f24ae0355ea7a4fcde0dd90b` |
+| 1 | `def` | [functorHomEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalClosedFunctorToTypesNamespacedPublic.lean/declarations/functorhomequiv.md) | 45 | `declaration-track:c1a492d6b96154d5bc5f5d461140b73c0a14e3d5301476a65088970fd393a62a` |
+| 2 | `def` | [rightAdj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalClosedFunctorToTypesNamespacedPublic.lean/declarations/rightadj.md) | 51 | `declaration-track:a1b3b7e251e2767d3ba16401bb728e906e5a1629ebf60e356a4437bd6a6bfb87` |
+| 3 | `def` | [adj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalClosedFunctorToTypesNamespacedPublic.lean/declarations/adj.md) | 66 | `declaration-track:a831eae6e686855179bc9e11b9f1c715391c4687ab5cf873fdf41acd7beeb58b` |
+| 4 | `instance` | [closed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalClosedFunctorToTypesNamespacedPublic.lean/declarations/closed.md) | 78 | `declaration-track:859c149010832200937d0356e93579189f545dea484d5be85d122e04ed91c5ac` |
+| 5 | `instance` | [monoidalClosed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalClosedFunctorToTypesNamespacedPublic.lean/declarations/monoidalclosed.md) | 82 | `declaration-track:5b09f21e779a3bf4edddb22328631af887f5f377f24ae0355ea7a4fcde0dd90b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

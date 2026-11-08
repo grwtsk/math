@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/CoveringVitaliVitaliNamespacedSourceEdition1.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/CoveringVitaliVitaliNamespacedSourceEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/CoveringVitaliVitaliNamespacedSourceEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/CoveringVitaliVitaliNamespacedSourceEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_disjoint_subfamily_covering_enlargement](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/CoveringVitaliVitaliNamespacedSourceEdition1.lean/declarations/exists-disjoint-subfamily-covering-enlargement.md) | 64 | `result-track:2c1d1ee1a34870b5ef4352f6862bf94923e7f63da0dbda0fd083c5e6e74a5eb7` |
-| 2 | `theorem` | [exists_disjoint_subfamily_covering_enlargement_closedBall](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/CoveringVitaliVitaliNamespacedSourceEdition1.lean/declarations/exists-disjoint-subfamily-covering-enlargement-closedball.md) | 168 | `result-track:a0a8e4f424b2bf666261ab2756849055e2c4122575d61fa77a3435214a63b0e9` |
-| 3 | `theorem` | [exists_disjoint_covering_ae](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/CoveringVitaliVitaliNamespacedSourceEdition1.lean/declarations/exists-disjoint-covering-ae.md) | 220 | `result-track:1d35fc246103acbc786298b6919d37d13b85dc5f5ff3440e2de6aa91bac9be89` |
-| 4 | `def` | [vitaliFamily](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/CoveringVitaliVitaliNamespacedSourceEdition1.lean/declarations/vitalifamily.md) | 412 | `declaration-track:1fbe98146feaae3d8bfa4d64f86d4266d61061cc8fe081178dca81374be10a5d` |
+| 1 | `theorem` | [exists_disjoint_subfamily_covering_enlargement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/CoveringVitaliVitaliNamespacedSourceEdition1.lean/declarations/exists-disjoint-subfamily-covering-enlargement.md) | 64 | `result-track:2c1d1ee1a34870b5ef4352f6862bf94923e7f63da0dbda0fd083c5e6e74a5eb7` |
+| 2 | `theorem` | [exists_disjoint_subfamily_covering_enlargement_closedBall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/CoveringVitaliVitaliNamespacedSourceEdition1.lean/declarations/exists-disjoint-subfamily-covering-enlargement-closedball.md) | 168 | `result-track:a0a8e4f424b2bf666261ab2756849055e2c4122575d61fa77a3435214a63b0e9` |
+| 3 | `theorem` | [exists_disjoint_covering_ae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/CoveringVitaliVitaliNamespacedSourceEdition1.lean/declarations/exists-disjoint-covering-ae.md) | 220 | `result-track:1d35fc246103acbc786298b6919d37d13b85dc5f5ff3440e2de6aa91bac9be89` |
+| 4 | `def` | [vitaliFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/CoveringVitaliVitaliNamespacedSourceEdition1.lean/declarations/vitalifamily.md) | 412 | `declaration-track:1fbe98146feaae3d8bfa4d64f86d4266d61061cc8fe081178dca81374be10a5d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

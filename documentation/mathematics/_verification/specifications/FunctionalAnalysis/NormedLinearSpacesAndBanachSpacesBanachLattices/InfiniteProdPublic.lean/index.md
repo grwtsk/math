@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/InfiniteProdPublic.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/InfiniteProdPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/InfiniteProdPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/InfiniteProdPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [tendsto_tprod_one_add_of_dominated_convergence](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/InfiniteProdPublic.lean/declarations/tendsto-tprod-one-add-of-dominated-convergence.md) | 35 | `result-track:8925e83f4d9c5d0047bcead0dfb4dfa71b65e1a6c2cd68a3b6459d01557025bd` |
+| 1 | `theorem` | [tendsto_tprod_one_add_of_dominated_convergence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/InfiniteProdPublic.lean/declarations/tendsto-tprod-one-add-of-dominated-convergence.md) | 35 | `result-track:8925e83f4d9c5d0047bcead0dfb4dfa71b65e1a6c2cd68a3b6459d01557025bd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

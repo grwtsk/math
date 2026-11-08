@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ParityPatternConstruction.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ParityPatternConstruction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ParityPatternConstruction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ParityPatternConstruction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [checkerboard](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ParityPatternConstruction.lean/declarations/checkerboard.md) | 40 | `declaration-track:e3fa2719d6b457432bbe2e7493165cbd82d8eafa583941fa3195430f4211f7cd` |
-| 2 | `theorem` | [checkerboard_isCheckerboardPattern](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ParityPatternConstruction.lean/declarations/checkerboard-ischeckerboardpattern.md) | 44 | `result-track:8aa1c05933a1077621c8d8eb42063876a1183655482db2bc6730853db7baf3a5` |
+| 1 | `def` | [checkerboard](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ParityPatternConstruction.lean/declarations/checkerboard.md) | 40 | `declaration-track:e3fa2719d6b457432bbe2e7493165cbd82d8eafa583941fa3195430f4211f7cd` |
+| 2 | `theorem` | [checkerboard_isCheckerboardPattern](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ParityPatternConstruction.lean/declarations/checkerboard-ischeckerboardpattern.md) | 44 | `result-track:8aa1c05933a1077621c8d8eb42063876a1183655482db2bc6730853db7baf3a5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

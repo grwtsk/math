@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TraceProof.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TraceProof.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TraceProof.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TraceProof.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TraceProof.lean/declarations/example-source-edition-2.md) | 20 | `declaration-track:d9443430a9d4fe3ca0549b061bff3717902adc83f798464ae4aa9b6c786c8bf5` |
-| 2 | `def` | [F](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TraceProof.lean/declarations/f.md) | 24 | `declaration-track:775fb929ab70a4a47bac439e6a2d597a18036f5e20b7d05ac17b955583cb37d4` |
-| 3 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TraceProof.lean/declarations/example.md) | 36 | `declaration-track:29e86ec6b2193c1d09104469490b4713e5eaec9b61794eab581140f5a2df71fa` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TraceProof.lean/declarations/example-source-edition-2.md) | 20 | `declaration-track:d9443430a9d4fe3ca0549b061bff3717902adc83f798464ae4aa9b6c786c8bf5` |
+| 2 | `def` | [F](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TraceProof.lean/declarations/f.md) | 24 | `declaration-track:775fb929ab70a4a47bac439e6a2d597a18036f5e20b7d05ac17b955583cb37d4` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TraceProof.lean/declarations/example.md) | 36 | `declaration-track:29e86ec6b2193c1d09104469490b4713e5eaec9b61794eab581140f5a2df71fa` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

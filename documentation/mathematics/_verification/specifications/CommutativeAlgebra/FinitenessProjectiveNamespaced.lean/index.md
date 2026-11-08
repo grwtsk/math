@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/FinitenessProjectiveNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/FinitenessProjectiveNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessProjectiveNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessProjectiveNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_comp_eq_id_of_projective](../../../../CommutativeAlgebra/FinitenessProjectiveNamespaced.lean/declarations/exists-comp-eq-id-of-projective.md) | 34 | `result-track:d4015ae08758487845407ffd581bde78400728be827a72d9ab179ff358a7cacd` |
+| 1 | `theorem` | [exists_comp_eq_id_of_projective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessProjectiveNamespaced.lean/declarations/exists-comp-eq-id-of-projective.md) | 34 | `result-track:d4015ae08758487845407ffd581bde78400728be827a72d9ab179ff358a7cacd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

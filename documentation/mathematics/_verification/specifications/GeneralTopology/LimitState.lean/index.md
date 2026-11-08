@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/LimitState.lean/index.md) · [Full source](../../../../GeneralTopology/LimitState.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LimitState.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LimitState.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [LimitBoundaryState](../../../../GeneralTopology/LimitState.lean/declarations/limitboundarystate.md) | 20 | `declaration-track:fdcd80d30995c4670c7f53603b49619f5a4ccbc6fa711cc288dddf8d33f10301` |
-| 2 | `structure` | [AddressedLimitBoundaryState](../../../../GeneralTopology/LimitState.lean/declarations/addressedlimitboundarystate.md) | 38 | `declaration-track:42864275f28192ce402a5433e433ee3821364ed809f457d6fbe30d3d27900bd5` |
-| 3 | `inductive` | [LimitStateExistenceMode](../../../../GeneralTopology/LimitState.lean/declarations/limitstateexistencemode.md) | 56 | `declaration-track:8f5e83847b539f0b314adf110a3dec5d7fd3afeeacead3cf52029bbb5419cda0` |
-| 4 | `structure` | [LimitStateNonemptyCertificate](../../../../GeneralTopology/LimitState.lean/declarations/limitstatenonemptycertificate.md) | 62 | `declaration-track:b7e5222d5d99530ff8920c4aba096788a337375c1864becb5189e7d284e58210` |
-| 5 | `theorem` | [limitBoundaryState_nonempty](../../../../GeneralTopology/LimitState.lean/declarations/limitboundarystate-nonempty.md) | 78 | `result-track:1b6e4e709eb6c7f8b9f08fa50fb4e11461c13fa4e8558b58f1d68eef8018ea94` |
-| 6 | `structure` | [CoherentSectionCertificate](../../../../GeneralTopology/LimitState.lean/declarations/coherentsectioncertificate.md) | 91 | `declaration-track:c183cd4a2c4c9d7f3ba7ad515e9f64f7565133bcfa0bbeb43a0ce55ee6d4cfb5` |
-| 7 | `structure` | [LimitMetricCertificate](../../../../GeneralTopology/LimitState.lean/declarations/limitmetriccertificate.md) | 116 | `declaration-track:460f47c1022d75cdc64729078e7607518c14706cb57a853fc530defff8259fff` |
+| 1 | `structure` | [LimitBoundaryState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LimitState.lean/declarations/limitboundarystate.md) | 20 | `declaration-track:fdcd80d30995c4670c7f53603b49619f5a4ccbc6fa711cc288dddf8d33f10301` |
+| 2 | `structure` | [AddressedLimitBoundaryState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LimitState.lean/declarations/addressedlimitboundarystate.md) | 38 | `declaration-track:42864275f28192ce402a5433e433ee3821364ed809f457d6fbe30d3d27900bd5` |
+| 3 | `inductive` | [LimitStateExistenceMode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LimitState.lean/declarations/limitstateexistencemode.md) | 56 | `declaration-track:8f5e83847b539f0b314adf110a3dec5d7fd3afeeacead3cf52029bbb5419cda0` |
+| 4 | `structure` | [LimitStateNonemptyCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LimitState.lean/declarations/limitstatenonemptycertificate.md) | 62 | `declaration-track:b7e5222d5d99530ff8920c4aba096788a337375c1864becb5189e7d284e58210` |
+| 5 | `theorem` | [limitBoundaryState_nonempty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LimitState.lean/declarations/limitboundarystate-nonempty.md) | 78 | `result-track:1b6e4e709eb6c7f8b9f08fa50fb4e11461c13fa4e8558b58f1d68eef8018ea94` |
+| 6 | `structure` | [CoherentSectionCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LimitState.lean/declarations/coherentsectioncertificate.md) | 91 | `declaration-track:c183cd4a2c4c9d7f3ba7ad515e9f64f7565133bcfa0bbeb43a0ce55ee6d4cfb5` |
+| 7 | `structure` | [LimitMetricCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LimitState.lean/declarations/limitmetriccertificate.md) | 116 | `declaration-track:460f47c1022d75cdc64729078e7607518c14706cb57a853fc530defff8259fff` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/SourcePeanoPositiveWindowEdition6.lean/index.md) · [Full source](../../../../RealFunctions/SourcePeanoPositiveWindowEdition6.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourcePeanoPositiveWindowEdition6.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourcePeanoPositiveWindowEdition6.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [weightedCorrelation_deriv_formula](../../../../RealFunctions/SourcePeanoPositiveWindowEdition6.lean/declarations/weightedcorrelation-deriv-formula.md) | 17 | `result-track:e8e17895af329fdd4cf324a602749230708cd3fdf21c24f575e15bbec6a68c13` |
-| 2 | `theorem` | [weightedCorrelation_second_deriv_formula](../../../../RealFunctions/SourcePeanoPositiveWindowEdition6.lean/declarations/weightedcorrelation-second-deriv-formula.md) | 32 | `result-track:aec0e1b17f5ff5aedc8429a3e18f3ddfef7e3f5bcdb50698cbd076b23ae90dab` |
-| 3 | `theorem` | [weightedCorrelation_second_deriv_window](../../../../RealFunctions/SourcePeanoPositiveWindowEdition6.lean/declarations/weightedcorrelation-second-deriv-window.md) | 50 | `result-track:fed6123b45e80c2ab04c407c5f1754535eed61ac9b4e5e237c9145c20ee9c5a1` |
+| 1 | `theorem` | [weightedCorrelation_deriv_formula](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourcePeanoPositiveWindowEdition6.lean/declarations/weightedcorrelation-deriv-formula.md) | 17 | `result-track:e8e17895af329fdd4cf324a602749230708cd3fdf21c24f575e15bbec6a68c13` |
+| 2 | `theorem` | [weightedCorrelation_second_deriv_formula](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourcePeanoPositiveWindowEdition6.lean/declarations/weightedcorrelation-second-deriv-formula.md) | 32 | `result-track:aec0e1b17f5ff5aedc8429a3e18f3ddfef7e3f5bcdb50698cbd076b23ae90dab` |
+| 3 | `theorem` | [weightedCorrelation_second_deriv_window](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourcePeanoPositiveWindowEdition6.lean/declarations/weightedcorrelation-second-deriv-window.md) | 50 | `result-track:fed6123b45e80c2ab04c407c5f1754535eed61ac9b4e5e237c9145c20ee9c5a1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

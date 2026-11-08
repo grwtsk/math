@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceLogFrameObstruction.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceLogFrameObstruction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceLogFrameObstruction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceLogFrameObstruction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sourceCorrelation_zero](../../../../MeasureAndIntegration/SourceLogFrameObstruction.lean/declarations/sourcecorrelation-zero.md) | 21 | `result-track:333fd75cbcd70f1f83408f479b5567546232de85726dc01ee7e63894daec5267` |
-| 2 | `theorem` | [sourceCorrelation_ge_three_quarters](../../../../MeasureAndIntegration/SourceLogFrameObstruction.lean/declarations/sourcecorrelation-ge-three-quarters.md) | 29 | `result-track:335cbeda55887603ebe9efc39a61a5b660ad34d472fbc278ca8dc64290087d44` |
-| 3 | `theorem` | [valueFrame_band_lower](../../../../MeasureAndIntegration/SourceLogFrameObstruction.lean/declarations/valueframe-band-lower.md) | 49 | `result-track:3d9cca84353144fc79f73f35c2debb93e89041f07fa95c1f8846dc892b30498e` |
-| 4 | `theorem` | [frame_constant_ge_band](../../../../MeasureAndIntegration/SourceLogFrameObstruction.lean/declarations/frame-constant-ge-band.md) | 67 | `result-track:d4e9df79279cbad470d5a04252003c899ff2c976a84a576c8a2a166ea8d070ce` |
+| 1 | `theorem` | [sourceCorrelation_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceLogFrameObstruction.lean/declarations/sourcecorrelation-zero.md) | 21 | `result-track:333fd75cbcd70f1f83408f479b5567546232de85726dc01ee7e63894daec5267` |
+| 2 | `theorem` | [sourceCorrelation_ge_three_quarters](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceLogFrameObstruction.lean/declarations/sourcecorrelation-ge-three-quarters.md) | 29 | `result-track:335cbeda55887603ebe9efc39a61a5b660ad34d472fbc278ca8dc64290087d44` |
+| 3 | `theorem` | [valueFrame_band_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceLogFrameObstruction.lean/declarations/valueframe-band-lower.md) | 49 | `result-track:3d9cca84353144fc79f73f35c2debb93e89041f07fa95c1f8846dc892b30498e` |
+| 4 | `theorem` | [frame_constant_ge_band](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceLogFrameObstruction.lean/declarations/frame-constant-ge-band.md) | 67 | `result-track:d4e9df79279cbad470d5a04252003c899ff2c976a84a576c8a2a166ea8d070ce` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

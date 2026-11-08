@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ChecksAuditSourceEdition8HistoricalSourceEdition2.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ChecksAuditSourceEdition8HistoricalSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ChecksAuditSourceEdition8HistoricalSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ChecksAuditSourceEdition8HistoricalSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Logic.FiniteCoverage`](../../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteCoverageHistoricalSourceEdition2.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Logic.FiniteCoverage`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteCoverageHistoricalSourceEdition2.lean/index.md) — import line 1; pinned internal source present.
 - `Lean` — import line 2; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [coverage_consumer](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ChecksAuditSourceEdition8HistoricalSourceEdition2.lean/declarations/coverage-consumer.md) | 5 | `result-track:b52ddde9d2e921bf4bad4fe13b0e8b94df996b4a762b9f45fa0606ba6388ffa0` |
-| 2 | `theorem` | [tail_consumer](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ChecksAuditSourceEdition8HistoricalSourceEdition2.lean/declarations/tail-consumer.md) | 9 | `result-track:a98e8d5e73ba558b7b300e6ca4f6592112e8655e5638e908617f5d48fab879af` |
-| 3 | `theorem` | [ray_counterexample_consumer](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ChecksAuditSourceEdition8HistoricalSourceEdition2.lean/declarations/ray-counterexample-consumer.md) | 13 | `result-track:7334ba4af62bac9048d9a5c902cbd0fdf64996ee3b97ca54ed756692229fa739` |
-| 4 | `theorem` | [endpoint_counterexample_consumer](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ChecksAuditSourceEdition8HistoricalSourceEdition2.lean/declarations/endpoint-counterexample-consumer.md) | 16 | `result-track:8f031d5541b9130bd291b8d519f0c0311e893c09a85036af29c9dd16cbd378a0` |
-| 5 | `elab` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ChecksAuditSourceEdition8HistoricalSourceEdition2.lean/declarations/elab.md) | 19 | `declaration-track:c4c4dadc762915b30f3858d2dea5eafb9bf68b9a695a18e49d5520b0d8dce936` |
+| 1 | `theorem` | [coverage_consumer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ChecksAuditSourceEdition8HistoricalSourceEdition2.lean/declarations/coverage-consumer.md) | 5 | `result-track:b52ddde9d2e921bf4bad4fe13b0e8b94df996b4a762b9f45fa0606ba6388ffa0` |
+| 2 | `theorem` | [tail_consumer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ChecksAuditSourceEdition8HistoricalSourceEdition2.lean/declarations/tail-consumer.md) | 9 | `result-track:a98e8d5e73ba558b7b300e6ca4f6592112e8655e5638e908617f5d48fab879af` |
+| 3 | `theorem` | [ray_counterexample_consumer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ChecksAuditSourceEdition8HistoricalSourceEdition2.lean/declarations/ray-counterexample-consumer.md) | 13 | `result-track:7334ba4af62bac9048d9a5c902cbd0fdf64996ee3b97ca54ed756692229fa739` |
+| 4 | `theorem` | [endpoint_counterexample_consumer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ChecksAuditSourceEdition8HistoricalSourceEdition2.lean/declarations/endpoint-counterexample-consumer.md) | 16 | `result-track:8f031d5541b9130bd291b8d519f0c0311e893c09a85036af29c9dd16cbd378a0` |
+| 5 | `elab` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ChecksAuditSourceEdition8HistoricalSourceEdition2.lean/declarations/elab.md) | 19 | `declaration-track:c4c4dadc762915b30f3858d2dea5eafb9bf68b9a695a18e49d5520b0d8dce936` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

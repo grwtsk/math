@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/AdjointActionBasicPublic.lean/index.md) · [Full source](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/AdjointActionBasicPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/AdjointActionBasicPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/AdjointActionBasicPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [LieAlgebra.commute_ad_of_commute](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/AdjointActionBasicPublic.lean/declarations/liealgebra-commute-ad-of-commute.md) | 34 | `result-track:d8c76c1337279cd89dc032f40b0986d4b0a409aaf0fd6e8555dbf486e64ec268` |
-| 2 | `theorem` | [LieAlgebra.ad_nilpotent_of_nilpotent](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/AdjointActionBasicPublic.lean/declarations/liealgebra-ad-nilpotent-of-nilpotent.md) | 40 | `result-track:65401d23fe403817a2eb5c786a259a96b1d0960b2233aa6cee36a23ff296d286` |
-| 3 | `theorem` | [LieSubalgebra.isNilpotent_ad_of_isNilpotent_ad](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/AdjointActionBasicPublic.lean/declarations/liesubalgebra-isnilpotent-ad-of-isnilpotent-ad.md) | 47 | `result-track:5ad696b5daa3fd4d0677355aa3229478b678bee8de4e18a5c69c04c6b82fa3d3` |
-| 4 | `theorem` | [LieAlgebra.isNilpotent_ad_of_isNilpotent](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/AdjointActionBasicPublic.lean/declarations/liealgebra-isnilpotent-ad-of-isnilpotent.md) | 54 | `result-track:289f2c64097775e86a1cc818362a92925c479e038f5de2e5bc72723513020b08` |
-| 5 | `theorem` | [LieAlgebra.ad_isSemisimple_of_isSemisimple](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/AdjointActionBasicPublic.lean/declarations/liealgebra-ad-issemisimple-of-issemisimple.md) | 69 | `result-track:6a28a78a193bb59caf034151621a553132ff3b509c32a1a97d619b18c07db6c1` |
+| 1 | `theorem` | [LieAlgebra.commute_ad_of_commute](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/AdjointActionBasicPublic.lean/declarations/liealgebra-commute-ad-of-commute.md) | 34 | `result-track:d8c76c1337279cd89dc032f40b0986d4b0a409aaf0fd6e8555dbf486e64ec268` |
+| 2 | `theorem` | [LieAlgebra.ad_nilpotent_of_nilpotent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/AdjointActionBasicPublic.lean/declarations/liealgebra-ad-nilpotent-of-nilpotent.md) | 40 | `result-track:65401d23fe403817a2eb5c786a259a96b1d0960b2233aa6cee36a23ff296d286` |
+| 3 | `theorem` | [LieSubalgebra.isNilpotent_ad_of_isNilpotent_ad](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/AdjointActionBasicPublic.lean/declarations/liesubalgebra-isnilpotent-ad-of-isnilpotent-ad.md) | 47 | `result-track:5ad696b5daa3fd4d0677355aa3229478b678bee8de4e18a5c69c04c6b82fa3d3` |
+| 4 | `theorem` | [LieAlgebra.isNilpotent_ad_of_isNilpotent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/AdjointActionBasicPublic.lean/declarations/liealgebra-isnilpotent-ad-of-isnilpotent.md) | 54 | `result-track:289f2c64097775e86a1cc818362a92925c479e038f5de2e5bc72723513020b08` |
+| 5 | `theorem` | [LieAlgebra.ad_isSemisimple_of_isSemisimple](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/AdjointActionBasicPublic.lean/declarations/liealgebra-ad-issemisimple-of-issemisimple.md) | 69 | `result-track:6a28a78a193bb59caf034151621a553132ff3b509c32a1a97d619b18c07db6c1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/JensenFiniteMultiplicity.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/JensenFiniteMultiplicity.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/JensenFiniteMultiplicity.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/JensenFiniteMultiplicity.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [finite_sum_le_finsum_nonneg](../../../../FunctionsOfAComplexVariable/JensenFiniteMultiplicity.lean/declarations/finite-sum-le-finsum-nonneg.md) | 29 | `result-track:022b49decd07be0927b6efd8dc052fc902e73f5c48af5d88bdc7082e1e5580e6` |
-| 2 | `theorem` | [finite_divisor_sum_le_jensen](../../../../FunctionsOfAComplexVariable/JensenFiniteMultiplicity.lean/declarations/finite-divisor-sum-le-jensen.md) | 43 | `result-track:83050876c0df0b37e8109e704852f3fbcfb330a6ca134eb64e46924295449387` |
-| 3 | `theorem` | [log_six_fifths_pos](../../../../FunctionsOfAComplexVariable/JensenFiniteMultiplicity.lean/declarations/log-six-fifths-pos.md) | 66 | `result-track:a599266e13fe41a503a28d886983f6454d6103a3c00def0d18b5aad65b3790e1` |
+| 1 | `theorem` | [finite_sum_le_finsum_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/JensenFiniteMultiplicity.lean/declarations/finite-sum-le-finsum-nonneg.md) | 29 | `result-track:022b49decd07be0927b6efd8dc052fc902e73f5c48af5d88bdc7082e1e5580e6` |
+| 2 | `theorem` | [finite_divisor_sum_le_jensen](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/JensenFiniteMultiplicity.lean/declarations/finite-divisor-sum-le-jensen.md) | 43 | `result-track:83050876c0df0b37e8109e704852f3fbcfb330a6ca134eb64e46924295449387` |
+| 3 | `theorem` | [log_six_fifths_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/JensenFiniteMultiplicity.lean/declarations/log-six-fifths-pos.md) | 66 | `result-track:a599266e13fe41a503a28d886983f6454d6103a3c00def0d18b5aad65b3790e1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

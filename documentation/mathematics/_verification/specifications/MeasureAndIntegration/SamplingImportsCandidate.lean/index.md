@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SamplingImportsCandidate.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SamplingImportsCandidate.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SamplingImportsCandidate.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SamplingImportsCandidate.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [leftSampleSum](../../../../MeasureAndIntegration/SamplingImportsCandidate.lean/declarations/leftsamplesum.md) | 29 | `declaration-track:6c48d6a394ff64a5f1fbc8ecb9b8a289742e89e19cbb78bbfbe618b921d08fdb` |
-| 2 | `theorem` | [unit_sampling_error_identity](../../../../MeasureAndIntegration/SamplingImportsCandidate.lean/declarations/unit-sampling-error-identity.md) | 33 | `result-track:d7cca4a3b34adb6c5c5c65f54ea09bb4ef1e241a4675e1f142660c906727b40e` |
-| 3 | `theorem` | [abs_unit_sampling_error_le](../../../../MeasureAndIntegration/SamplingImportsCandidate.lean/declarations/abs-unit-sampling-error-le.md) | 72 | `result-track:29081b69c5dc8148121cfa13071d7c20b7277a10c0caf6c3aa2565f1aefc31e4` |
-| 4 | `theorem` | [integral_eq_sum_unit_intervals](../../../../MeasureAndIntegration/SamplingImportsCandidate.lean/declarations/integral-eq-sum-unit-intervals.md) | 101 | `result-track:911f2214c9e0ea3ecb753e1eac355d0517eb609f03a1e6745a3ed2c76cf6db67` |
-| 5 | `theorem` | [abs_leftSampleSum_sub_integral_le](../../../../MeasureAndIntegration/SamplingImportsCandidate.lean/declarations/abs-leftsamplesum-sub-integral-le.md) | 131 | `result-track:5e84352b86af62402ae26de5ce749207f7266d8d6712dd4718de5cef7540184b` |
-| 6 | `def` | [FiniteSamplingCheckpoint](../../../../MeasureAndIntegration/SamplingImportsCandidate.lean/declarations/finitesamplingcheckpoint.md) | 166 | `declaration-track:b3b975fbd6d508b1a6acd47ba08c1a7d6bddc2bb1e09b960a7e545dff514931f` |
-| 7 | `theorem` | [finite_sampling_checkpoint](../../../../MeasureAndIntegration/SamplingImportsCandidate.lean/declarations/finite-sampling-checkpoint.md) | 174 | `result-track:3eb35f23a531b19246c139afd5ef11266f75a3b1cda705a588e04a206183d5a5` |
+| 1 | `def` | [leftSampleSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SamplingImportsCandidate.lean/declarations/leftsamplesum.md) | 29 | `declaration-track:6c48d6a394ff64a5f1fbc8ecb9b8a289742e89e19cbb78bbfbe618b921d08fdb` |
+| 2 | `theorem` | [unit_sampling_error_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SamplingImportsCandidate.lean/declarations/unit-sampling-error-identity.md) | 33 | `result-track:d7cca4a3b34adb6c5c5c65f54ea09bb4ef1e241a4675e1f142660c906727b40e` |
+| 3 | `theorem` | [abs_unit_sampling_error_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SamplingImportsCandidate.lean/declarations/abs-unit-sampling-error-le.md) | 72 | `result-track:29081b69c5dc8148121cfa13071d7c20b7277a10c0caf6c3aa2565f1aefc31e4` |
+| 4 | `theorem` | [integral_eq_sum_unit_intervals](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SamplingImportsCandidate.lean/declarations/integral-eq-sum-unit-intervals.md) | 101 | `result-track:911f2214c9e0ea3ecb753e1eac355d0517eb609f03a1e6745a3ed2c76cf6db67` |
+| 5 | `theorem` | [abs_leftSampleSum_sub_integral_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SamplingImportsCandidate.lean/declarations/abs-leftsamplesum-sub-integral-le.md) | 131 | `result-track:5e84352b86af62402ae26de5ce749207f7266d8d6712dd4718de5cef7540184b` |
+| 6 | `def` | [FiniteSamplingCheckpoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SamplingImportsCandidate.lean/declarations/finitesamplingcheckpoint.md) | 166 | `declaration-track:b3b975fbd6d508b1a6acd47ba08c1a7d6bddc2bb1e09b960a7e545dff514931f` |
+| 7 | `theorem` | [finite_sampling_checkpoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SamplingImportsCandidate.lean/declarations/finite-sampling-checkpoint.md) | 174 | `result-track:3eb35f23a531b19246c139afd5ef11266f75a3b1cda705a588e04a206183d5a5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

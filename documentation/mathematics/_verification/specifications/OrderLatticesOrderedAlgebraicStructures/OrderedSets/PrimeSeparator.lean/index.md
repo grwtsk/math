@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/PrimeSeparator.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/PrimeSeparator.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/PrimeSeparator.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/PrimeSeparator.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [mem_ideal_sup_principal](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/PrimeSeparator.lean/declarations/mem-ideal-sup-principal.md) | 41 | `result-track:94268b8a00c8724198a1eb87c6e4f9abdbaadfbb84d044052a5e36a0796f43c3` |
-| 2 | `theorem` | [prime_ideal_of_disjoint_filter_ideal](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/PrimeSeparator.lean/declarations/prime-ideal-of-disjoint-filter-ideal.md) | 45 | `result-track:563378744ba1a319a90fd83e9f49be62b3eedc016fd312c883cb2ce45c157807` |
+| 1 | `lemma` | [mem_ideal_sup_principal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/PrimeSeparator.lean/declarations/mem-ideal-sup-principal.md) | 41 | `result-track:94268b8a00c8724198a1eb87c6e4f9abdbaadfbb84d044052a5e36a0796f43c3` |
+| 2 | `theorem` | [prime_ideal_of_disjoint_filter_ideal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/PrimeSeparator.lean/declarations/prime-ideal-of-disjoint-filter-ideal.md) | 45 | `result-track:563378744ba1a319a90fd83e9f49be62b3eedc016fd312c883cb2ce45c157807` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ADa6274ce1a07c6.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ADa6274ce1a07c6.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ADa6274ce1a07c6.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ADa6274ce1a07c6.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [apply_symm_apply](../../../../../ComputerScience/AlgorithmsInComputerScience/ADa6274ce1a07c6.lean/declarations/apply-symm-apply.md) | 19 | `result-track:a7eb2453158ebdc5a57d1af448c9f05a54dcaaedfb31d99cda9d18e1fcc6f5e6` |
+| 1 | `theorem` | [apply_symm_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ADa6274ce1a07c6.lean/declarations/apply-symm-apply.md) | 19 | `result-track:a7eb2453158ebdc5a57d1af448c9f05a54dcaaedfb31d99cda9d18e1fcc6f5e6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Geometry/InverseTriangleSumPublic.lean/index.md) · [Full source](../../../../Geometry/InverseTriangleSumPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/InverseTriangleSumPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/InverseTriangleSumPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Theorems100.inverse_triangle_sum](../../../../Geometry/InverseTriangleSumPublic.lean/declarations/theorems100-inverse-triangle-sum.md) | 30 | `result-track:8043a6ace88b55e7e531f0b466363869ccb92a6beb68817069c7671e7e9684bb` |
+| 1 | `theorem` | [Theorems100.inverse_triangle_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/InverseTriangleSumPublic.lean/declarations/theorems100-inverse-triangle-sum.md) | 30 | `result-track:8043a6ace88b55e7e531f0b466363869ccb92a6beb68817069c7671e7e9684bb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/DistribMulAction.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/DistribMulAction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/DistribMulAction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/DistribMulAction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/DistribMulAction.lean/declarations/instance-source-edition-2.md) | 21 | `declaration-track:65a8af52ed351c08f8e36be5309d8d87469a56080ce20a649e2b230626b1f2b2` |
-| 2 | `instance` | [distribMulAction](../../../../GroupTheoryAndGeneralizations/DistribMulAction.lean/declarations/distribmulaction.md) | 26 | `declaration-track:90e4b4f3c6da41ff76a5c79138ae0481f57984cee8ebf29fcdb58ca665dd26cf` |
-| 3 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/DistribMulAction.lean/declarations/instance.md) | 30 | `declaration-track:498a4af18bc4251c40323ae40a6b631480e4816148f7ad0439ef0e75038d80b8` |
-| 4 | `instance` | [mulDistribMulAction](../../../../GroupTheoryAndGeneralizations/DistribMulAction.lean/declarations/muldistribmulaction.md) | 35 | `declaration-track:e261e4931d96e71436e51cb39dbca5549f24fed3bcbea6c8dcfab998feab1766` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/DistribMulAction.lean/declarations/instance-source-edition-2.md) | 21 | `declaration-track:65a8af52ed351c08f8e36be5309d8d87469a56080ce20a649e2b230626b1f2b2` |
+| 2 | `instance` | [distribMulAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/DistribMulAction.lean/declarations/distribmulaction.md) | 26 | `declaration-track:90e4b4f3c6da41ff76a5c79138ae0481f57984cee8ebf29fcdb58ca665dd26cf` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/DistribMulAction.lean/declarations/instance.md) | 30 | `declaration-track:498a4af18bc4251c40323ae40a6b631480e4816148f7ad0439ef0e75038d80b8` |
+| 4 | `instance` | [mulDistribMulAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/DistribMulAction.lean/declarations/muldistribmulaction.md) | 35 | `declaration-track:e261e4931d96e71436e51cb39dbca5549f24fed3bcbea6c8dcfab998feab1766` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

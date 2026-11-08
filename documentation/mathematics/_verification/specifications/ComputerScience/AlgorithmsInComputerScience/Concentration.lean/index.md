@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Concentration.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Concentration.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Concentration.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Concentration.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [ConcentrationMechanism](../../../../../ComputerScience/AlgorithmsInComputerScience/Concentration.lean/declarations/concentrationmechanism.md) | 12 | `declaration-track:9baace882bd00bf7ac085fa490161e8086393cfd8f80030022765744382549c0` |
-| 2 | `structure` | [ConcentrationMechanismCertificate](../../../../../ComputerScience/AlgorithmsInComputerScience/Concentration.lean/declarations/concentrationmechanismcertificate.md) | 21 | `declaration-track:ba457bc0e6802d3a93e0218bdc6d0f7ab0c59a991ab423ef15d522d545423e59` |
-| 3 | `structure` | [ConcentrationSoundnessObligation](../../../../../ComputerScience/AlgorithmsInComputerScience/Concentration.lean/declarations/concentrationsoundnessobligation.md) | 32 | `declaration-track:9fd7d6a4e8aac4660c0f346f58a7ea7c6eeb1d0d529366e7a0933fba4e993c3d` |
-| 4 | `structure` | [AdmittedConcentrationCertificate](../../../../../ComputerScience/AlgorithmsInComputerScience/Concentration.lean/declarations/admittedconcentrationcertificate.md) | 37 | `declaration-track:ab1a3a5cafb4f1b8d0d57a6f93e3644d97e14cd4d80eabfd1ad1eea561768a3b` |
-| 5 | `theorem` | [influence_does_not_self_admit_concentration](../../../../../ComputerScience/AlgorithmsInComputerScience/Concentration.lean/declarations/influence-does-not-self-admit-concentration.md) | 43 | `result-track:251165c47b741d6ad1d1660f53e040190022b8872499eede68f1faf6594655e7` |
+| 1 | `inductive` | [ConcentrationMechanism](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Concentration.lean/declarations/concentrationmechanism.md) | 12 | `declaration-track:9baace882bd00bf7ac085fa490161e8086393cfd8f80030022765744382549c0` |
+| 2 | `structure` | [ConcentrationMechanismCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Concentration.lean/declarations/concentrationmechanismcertificate.md) | 21 | `declaration-track:ba457bc0e6802d3a93e0218bdc6d0f7ab0c59a991ab423ef15d522d545423e59` |
+| 3 | `structure` | [ConcentrationSoundnessObligation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Concentration.lean/declarations/concentrationsoundnessobligation.md) | 32 | `declaration-track:9fd7d6a4e8aac4660c0f346f58a7ea7c6eeb1d0d529366e7a0933fba4e993c3d` |
+| 4 | `structure` | [AdmittedConcentrationCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Concentration.lean/declarations/admittedconcentrationcertificate.md) | 37 | `declaration-track:ab1a3a5cafb4f1b8d0d57a6f93e3644d97e14cd4d80eabfd1ad1eea561768a3b` |
+| 5 | `theorem` | [influence_does_not_self_admit_concentration](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Concentration.lean/declarations/influence-does-not-self-admit-concentration.md) | 43 | `result-track:251165c47b741d6ad1d1660f53e040190022b8872499eede68f1faf6594655e7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

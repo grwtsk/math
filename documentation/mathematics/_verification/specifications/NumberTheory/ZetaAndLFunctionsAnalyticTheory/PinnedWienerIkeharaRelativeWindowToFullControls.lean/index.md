@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedWienerIkeharaRelativeWindowToFullControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedWienerIkeharaRelativeWindowToFullControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedWienerIkeharaRelativeWindowToFullControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedWienerIkeharaRelativeWindowToFullControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.PinnedWienerIkeharaRelativeWindowToFull`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedWienerIkeharaRelativeWindowToFull.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.PinnedWienerIkeharaRelativeWindowToFull`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedWienerIkeharaRelativeWindowToFull.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Tactic` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [literal_range_partition](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedWienerIkeharaRelativeWindowToFullControls.lean/declarations/literal-range-partition.md) | 15 | `result-track:2bd2ee9244a2b9430ea903daeedd3395b455d63925d18a85ebd895dcbb9e1217` |
-| 2 | `theorem` | [omitted_prefix_bound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedWienerIkeharaRelativeWindowToFullControls.lean/declarations/omitted-prefix-bound.md) | 24 | `result-track:c2fb764f2cfadffed9b8bdc1b7e29576997e6b850384b680e0f2c210e2a21edf` |
-| 3 | `theorem` | [actual_generic_dewindowing](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedWienerIkeharaRelativeWindowToFullControls.lean/declarations/actual-generic-dewindowing.md) | 36 | `result-track:5c0d52508a84dad5ab4d1acbd10d9de42810607c3f7d332b607162b87fbde088` |
-| 4 | `theorem` | [zero_sequence_rejects_unit_windowLimit](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedWienerIkeharaRelativeWindowToFullControls.lean/declarations/zero-sequence-rejects-unit-windowlimit.md) | 51 | `result-track:20c39c44bc3d4b39711177bb49ac11a3ff40e80e56fd0955b624de30265fff1e` |
-| 5 | `theorem` | [actual_lambda_dewindowing](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedWienerIkeharaRelativeWindowToFullControls.lean/declarations/actual-lambda-dewindowing.md) | 69 | `result-track:236d5803c00bda0c5aaba819b9ae0344831f8b3e33da3966e78b78e34fd5ddcd` |
-| 6 | `def` | [remainingIntervalWienerIkeharaObligations](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedWienerIkeharaRelativeWindowToFullControls.lean/declarations/remainingintervalwienerikeharaobligations.md) | 79 | `declaration-track:72d279dfaed7f6fe29f8343b91ac952f6a01983a1bcbaceb5cd738273759e5c7` |
-| 7 | `def` | [prohibitedPromotions](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedWienerIkeharaRelativeWindowToFullControls.lean/declarations/prohibitedpromotions.md) | 90 | `declaration-track:f12348a070886e9723d82e916a8ae124ff21940843e32d2698b770cdff5ba924` |
+| 1 | `theorem` | [literal_range_partition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedWienerIkeharaRelativeWindowToFullControls.lean/declarations/literal-range-partition.md) | 15 | `result-track:2bd2ee9244a2b9430ea903daeedd3395b455d63925d18a85ebd895dcbb9e1217` |
+| 2 | `theorem` | [omitted_prefix_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedWienerIkeharaRelativeWindowToFullControls.lean/declarations/omitted-prefix-bound.md) | 24 | `result-track:c2fb764f2cfadffed9b8bdc1b7e29576997e6b850384b680e0f2c210e2a21edf` |
+| 3 | `theorem` | [actual_generic_dewindowing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedWienerIkeharaRelativeWindowToFullControls.lean/declarations/actual-generic-dewindowing.md) | 36 | `result-track:5c0d52508a84dad5ab4d1acbd10d9de42810607c3f7d332b607162b87fbde088` |
+| 4 | `theorem` | [zero_sequence_rejects_unit_windowLimit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedWienerIkeharaRelativeWindowToFullControls.lean/declarations/zero-sequence-rejects-unit-windowlimit.md) | 51 | `result-track:20c39c44bc3d4b39711177bb49ac11a3ff40e80e56fd0955b624de30265fff1e` |
+| 5 | `theorem` | [actual_lambda_dewindowing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedWienerIkeharaRelativeWindowToFullControls.lean/declarations/actual-lambda-dewindowing.md) | 69 | `result-track:236d5803c00bda0c5aaba819b9ae0344831f8b3e33da3966e78b78e34fd5ddcd` |
+| 6 | `def` | [remainingIntervalWienerIkeharaObligations](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedWienerIkeharaRelativeWindowToFullControls.lean/declarations/remainingintervalwienerikeharaobligations.md) | 79 | `declaration-track:72d279dfaed7f6fe29f8343b91ac952f6a01983a1bcbaceb5cd738273759e5c7` |
+| 7 | `def` | [prohibitedPromotions](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedWienerIkeharaRelativeWindowToFullControls.lean/declarations/prohibitedpromotions.md) | 90 | `declaration-track:f12348a070886e9723d82e916a8ae124ff21940843e32d2698b770cdff5ba924` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

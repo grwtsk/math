@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../SpecialFunctions/PosLog.lean/index.md) · [Full source](../../../../SpecialFunctions/PosLog.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/PosLog.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/PosLog.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,22 +57,22 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [posLog](../../../../SpecialFunctions/PosLog.lean/declarations/poslog.md) | 27 | `declaration-track:7143b02ad8ff084a9186c214db6d829568c89aa8ffe9f2e36da1c9c9d9a39016` |
-| 2 | `theorem` | [posLog_def](../../../../SpecialFunctions/PosLog.lean/declarations/poslog-def.md) | 33 | `result-track:a6cc256f01d9f4a2ba62d8288cdb43916a2e430c1d613137522f18b89f41d3fc` |
-| 3 | `theorem` | [posLog_sub_posLog_inv](../../../../SpecialFunctions/PosLog.lean/declarations/poslog-sub-poslog-inv.md) | 39 | `result-track:ecb50b5e86c2055a97a4c32076eb58c4c55e9daa177bc418bb20ef6d3314c4e3` |
-| 4 | `theorem` | [half_mul_log_add_log_abs](../../../../SpecialFunctions/PosLog.lean/declarations/half-mul-log-add-log-abs.md) | 47 | `result-track:a2577600025d63b6127aed9aa004d31c995bfd26f7c0360fba73fc0b4c13d492` |
-| 5 | `theorem` | [posLog_nonneg](../../../../SpecialFunctions/PosLog.lean/declarations/poslog-nonneg.md) | 54 | `result-track:c4f9f2597449f85a03631c0c52a53fc2747c56e183b89134df7b5f872bc53237` |
-| 6 | `theorem` | [posLog_neg](../../../../SpecialFunctions/PosLog.lean/declarations/poslog-neg.md) | 57 | `result-track:97b9731002a9d0fc08c1e183bcf284733ba30cfffdc539f00c376fb39b2562c8` |
-| 7 | `theorem` | [posLog_abs](../../../../SpecialFunctions/PosLog.lean/declarations/poslog-abs.md) | 60 | `result-track:958cd1205641e5f7419a21e34564f5a71fd00120beef0eb6c10c0bdcdf8d9a20` |
-| 8 | `theorem` | [posLog_eq_zero_iff](../../../../SpecialFunctions/PosLog.lean/declarations/poslog-eq-zero-iff.md) | 63 | `result-track:abab4865073fc6cb31de9518aaf4cd2e54fd928b181550b38f06f0b4f97a0b93` |
-| 9 | `theorem` | [posLog_eq_log](../../../../SpecialFunctions/PosLog.lean/declarations/poslog-eq-log.md) | 68 | `result-track:ae5e4774c9e1050649884a07596c9552eb4af5ed01d855a06808ec2000f38885` |
-| 10 | `theorem` | [log_of_nat_eq_posLog](../../../../SpecialFunctions/PosLog.lean/declarations/log-of-nat-eq-poslog.md) | 74 | `result-track:35defe3a5486224d5cf7596dba1adf7413c32cc6c6da90033d7bd26a84d53bd6` |
-| 11 | `theorem` | [monotoneOn_posLog](../../../../SpecialFunctions/PosLog.lean/declarations/monotoneon-poslog.md) | 80 | `result-track:82c9dfd8aca0db1fa07a44ab9bf234af3e61da9d854413208bad5f9896b5e892` |
-| 12 | `theorem` | [posLog_mul](../../../../SpecialFunctions/PosLog.lean/declarations/poslog-mul.md) | 95 | `result-track:4ad3916ee1f7383da85a1dab0cbb30ca57b4d5ee176a407bb678f73b822cf9e2` |
-| 13 | `theorem` | [posLog_nat_mul](../../../../SpecialFunctions/PosLog.lean/declarations/poslog-nat-mul.md) | 107 | `result-track:6c5ce7dcdc71a79ddae6405b3ba21d40736c9fc7e06a747920c0772795976593` |
-| 14 | `theorem` | [posLog_prod](../../../../SpecialFunctions/PosLog.lean/declarations/poslog-prod.md) | 114 | `result-track:8c93f0c8f4adbc9889009eba1e8e1ff19f767a0e3c1bb80ae37c3fe15de64230` |
-| 15 | `theorem` | [posLog_sum](../../../../SpecialFunctions/PosLog.lean/declarations/poslog-sum.md) | 131 | `result-track:db37a9893a6b59d4fab3b0241836b208125fd228122492a5a99c1c93d95977fb` |
-| 16 | `theorem` | [posLog_add](../../../../SpecialFunctions/PosLog.lean/declarations/poslog-add.md) | 159 | `result-track:3e04fdcbd6ebf4d689a24f8004a17dcb7e07687c8256191674d9f593e829a395` |
+| 1 | `def` | [posLog](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/PosLog.lean/declarations/poslog.md) | 27 | `declaration-track:7143b02ad8ff084a9186c214db6d829568c89aa8ffe9f2e36da1c9c9d9a39016` |
+| 2 | `theorem` | [posLog_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/PosLog.lean/declarations/poslog-def.md) | 33 | `result-track:a6cc256f01d9f4a2ba62d8288cdb43916a2e430c1d613137522f18b89f41d3fc` |
+| 3 | `theorem` | [posLog_sub_posLog_inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/PosLog.lean/declarations/poslog-sub-poslog-inv.md) | 39 | `result-track:ecb50b5e86c2055a97a4c32076eb58c4c55e9daa177bc418bb20ef6d3314c4e3` |
+| 4 | `theorem` | [half_mul_log_add_log_abs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/PosLog.lean/declarations/half-mul-log-add-log-abs.md) | 47 | `result-track:a2577600025d63b6127aed9aa004d31c995bfd26f7c0360fba73fc0b4c13d492` |
+| 5 | `theorem` | [posLog_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/PosLog.lean/declarations/poslog-nonneg.md) | 54 | `result-track:c4f9f2597449f85a03631c0c52a53fc2747c56e183b89134df7b5f872bc53237` |
+| 6 | `theorem` | [posLog_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/PosLog.lean/declarations/poslog-neg.md) | 57 | `result-track:97b9731002a9d0fc08c1e183bcf284733ba30cfffdc539f00c376fb39b2562c8` |
+| 7 | `theorem` | [posLog_abs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/PosLog.lean/declarations/poslog-abs.md) | 60 | `result-track:958cd1205641e5f7419a21e34564f5a71fd00120beef0eb6c10c0bdcdf8d9a20` |
+| 8 | `theorem` | [posLog_eq_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/PosLog.lean/declarations/poslog-eq-zero-iff.md) | 63 | `result-track:abab4865073fc6cb31de9518aaf4cd2e54fd928b181550b38f06f0b4f97a0b93` |
+| 9 | `theorem` | [posLog_eq_log](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/PosLog.lean/declarations/poslog-eq-log.md) | 68 | `result-track:ae5e4774c9e1050649884a07596c9552eb4af5ed01d855a06808ec2000f38885` |
+| 10 | `theorem` | [log_of_nat_eq_posLog](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/PosLog.lean/declarations/log-of-nat-eq-poslog.md) | 74 | `result-track:35defe3a5486224d5cf7596dba1adf7413c32cc6c6da90033d7bd26a84d53bd6` |
+| 11 | `theorem` | [monotoneOn_posLog](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/PosLog.lean/declarations/monotoneon-poslog.md) | 80 | `result-track:82c9dfd8aca0db1fa07a44ab9bf234af3e61da9d854413208bad5f9896b5e892` |
+| 12 | `theorem` | [posLog_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/PosLog.lean/declarations/poslog-mul.md) | 95 | `result-track:4ad3916ee1f7383da85a1dab0cbb30ca57b4d5ee176a407bb678f73b822cf9e2` |
+| 13 | `theorem` | [posLog_nat_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/PosLog.lean/declarations/poslog-nat-mul.md) | 107 | `result-track:6c5ce7dcdc71a79ddae6405b3ba21d40736c9fc7e06a747920c0772795976593` |
+| 14 | `theorem` | [posLog_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/PosLog.lean/declarations/poslog-prod.md) | 114 | `result-track:8c93f0c8f4adbc9889009eba1e8e1ff19f767a0e3c1bb80ae37c3fe15de64230` |
+| 15 | `theorem` | [posLog_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/PosLog.lean/declarations/poslog-sum.md) | 131 | `result-track:db37a9893a6b59d4fab3b0241836b208125fd228122492a5a99c1c93d95977fb` |
+| 16 | `theorem` | [posLog_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/PosLog.lean/declarations/poslog-add.md) | 159 | `result-track:3e04fdcbd6ebf4d689a24f8004a17dcb7e07687c8256191674d9f593e829a395` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharZeroQuotientNamespacedAligned.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharZeroQuotientNamespacedAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharZeroQuotientNamespacedAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharZeroQuotientNamespacedAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [zsmul_mem_zmultiples_iff_exists_sub_div](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharZeroQuotientNamespacedAligned.lean/declarations/zsmul-mem-zmultiples-iff-exists-sub-div.md) | 28 | `result-track:4469d81c265e2fe5432ac916316710ed3e227e59a4accdd14f57aa11c44fd12a` |
-| 2 | `theorem` | [nsmul_mem_zmultiples_iff_exists_sub_div](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharZeroQuotientNamespacedAligned.lean/declarations/nsmul-mem-zmultiples-iff-exists-sub-div.md) | 51 | `result-track:0e40674282561cf47e5099a4a5542ff741cbb485e94903529ad702647f6406ea` |
-| 3 | `theorem` | [zmultiples_zsmul_eq_zsmul_iff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharZeroQuotientNamespacedAligned.lean/declarations/zmultiples-zsmul-eq-zsmul-iff.md) | 63 | `result-track:5696ec8a3f07cd9524926749d3f254639d61e737050de9a5a946a9d78b636f83` |
-| 4 | `theorem` | [zmultiples_nsmul_eq_nsmul_iff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharZeroQuotientNamespacedAligned.lean/declarations/zmultiples-nsmul-eq-nsmul-iff.md) | 76 | `result-track:d2182f3949541692bd70a40c9f94d903df5788e3f276cddcaa633bfd51cc2a98` |
+| 1 | `theorem` | [zsmul_mem_zmultiples_iff_exists_sub_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharZeroQuotientNamespacedAligned.lean/declarations/zsmul-mem-zmultiples-iff-exists-sub-div.md) | 28 | `result-track:4469d81c265e2fe5432ac916316710ed3e227e59a4accdd14f57aa11c44fd12a` |
+| 2 | `theorem` | [nsmul_mem_zmultiples_iff_exists_sub_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharZeroQuotientNamespacedAligned.lean/declarations/nsmul-mem-zmultiples-iff-exists-sub-div.md) | 51 | `result-track:0e40674282561cf47e5099a4a5542ff741cbb485e94903529ad702647f6406ea` |
+| 3 | `theorem` | [zmultiples_zsmul_eq_zsmul_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharZeroQuotientNamespacedAligned.lean/declarations/zmultiples-zsmul-eq-zsmul-iff.md) | 63 | `result-track:5696ec8a3f07cd9524926749d3f254639d61e737050de9a5a946a9d78b636f83` |
+| 4 | `theorem` | [zmultiples_nsmul_eq_nsmul_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharZeroQuotientNamespacedAligned.lean/declarations/zmultiples-nsmul-eq-nsmul-iff.md) | 76 | `result-track:d2182f3949541692bd70a40c9f94d903df5788e3f276cddcaa633bfd51cc2a98` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceActualRieszFixedAreaEstimateEdition2.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceActualRieszFixedAreaEstimateEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualRieszFixedAreaEstimateEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualRieszFixedAreaEstimateEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actualFixedCenteredMangoldtRiesz_area_bound](../../../../MeasureAndIntegration/SourceActualRieszFixedAreaEstimateEdition2.lean/declarations/actualfixedcenteredmangoldtriesz-area-bound.md) | 19 | `result-track:c722bb24a3e092603a5b52d1fb3811e996f1039d147086183528edf816321473` |
-| 2 | `theorem` | [actualResidual_fixed_center_area_paid_bound](../../../../MeasureAndIntegration/SourceActualRieszFixedAreaEstimateEdition2.lean/declarations/actualresidual-fixed-center-area-paid-bound.md) | 38 | `result-track:cc8efe45b5733d83e5ab7eff18ac2774e47595e6b406aaa46013d74eee70eb4e` |
-| 3 | `theorem` | [actualResidual_fixed_center_quadratic_area_bound](../../../../MeasureAndIntegration/SourceActualRieszFixedAreaEstimateEdition2.lean/declarations/actualresidual-fixed-center-quadratic-area-bound.md) | 58 | `result-track:a8554a8c4205f281afcae50a63c26294cc0d9ba38e9c976348f13dcec27b3344` |
+| 1 | `theorem` | [actualFixedCenteredMangoldtRiesz_area_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualRieszFixedAreaEstimateEdition2.lean/declarations/actualfixedcenteredmangoldtriesz-area-bound.md) | 19 | `result-track:c722bb24a3e092603a5b52d1fb3811e996f1039d147086183528edf816321473` |
+| 2 | `theorem` | [actualResidual_fixed_center_area_paid_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualRieszFixedAreaEstimateEdition2.lean/declarations/actualresidual-fixed-center-area-paid-bound.md) | 38 | `result-track:cc8efe45b5733d83e5ab7eff18ac2774e47595e6b406aaa46013d74eee70eb4e` |
+| 3 | `theorem` | [actualResidual_fixed_center_quadratic_area_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualRieszFixedAreaEstimateEdition2.lean/declarations/actualresidual-fixed-center-quadratic-area-bound.md) | 58 | `result-track:a8554a8c4205f281afcae50a63c26294cc0d9ba38e9c976348f13dcec27b3344` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

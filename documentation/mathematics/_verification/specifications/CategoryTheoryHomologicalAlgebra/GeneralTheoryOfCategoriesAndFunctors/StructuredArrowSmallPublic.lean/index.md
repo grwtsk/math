@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StructuredArrowSmallPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StructuredArrowSmallPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StructuredArrowSmallPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StructuredArrowSmallPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StructuredArrowSmallPublic.lean/declarations/instance-source-edition-2.md) | 31 | `declaration-track:cf885659203b005af2950557e4ff72029ffd750584d38f8566e30c79145acdcc` |
-| 2 | `instance` | [small_inverseImage_proj_of_locallySmall](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StructuredArrowSmallPublic.lean/declarations/small-inverseimage-proj-of-locallysmall.md) | 37 | `declaration-track:37247fb892a4425dd8ba043897af94786a2db97821431dbd98acc3e5d7031cfc` |
-| 3 | `instance` | [essentiallySmall](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StructuredArrowSmallPublic.lean/declarations/essentiallysmall.md) | 48 | `declaration-track:61bff3fec6d3286ff09cb0ef7bd5b068074b138bc722d4edd8a5234436a46951` |
-| 4 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StructuredArrowSmallPublic.lean/declarations/instance.md) | 60 | `declaration-track:2086ba88980aa3edb82a43698a0a09c126cc9c3b8044e107905ec5f04f472518` |
-| 5 | `instance` | [small_inverseImage_proj_of_locallySmall](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StructuredArrowSmallPublic.lean/declarations/small-inverseimage-proj-of-locallysmall-source-edition-2.md) | 66 | `declaration-track:b4b06b198ef92066c321e7e1dc8ce5d959f1c2b940bf72e5293d775fe95f8620` |
-| 6 | `instance` | [essentiallySmall](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StructuredArrowSmallPublic.lean/declarations/essentiallysmall-source-edition-2.md) | 77 | `declaration-track:8115ff1eb07374c323dc0fd3a67b1fffc4b906eaa60543b0b6cd0c3be9987343` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StructuredArrowSmallPublic.lean/declarations/instance-source-edition-2.md) | 31 | `declaration-track:cf885659203b005af2950557e4ff72029ffd750584d38f8566e30c79145acdcc` |
+| 2 | `instance` | [small_inverseImage_proj_of_locallySmall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StructuredArrowSmallPublic.lean/declarations/small-inverseimage-proj-of-locallysmall.md) | 37 | `declaration-track:37247fb892a4425dd8ba043897af94786a2db97821431dbd98acc3e5d7031cfc` |
+| 3 | `instance` | [essentiallySmall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StructuredArrowSmallPublic.lean/declarations/essentiallysmall.md) | 48 | `declaration-track:61bff3fec6d3286ff09cb0ef7bd5b068074b138bc722d4edd8a5234436a46951` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StructuredArrowSmallPublic.lean/declarations/instance.md) | 60 | `declaration-track:2086ba88980aa3edb82a43698a0a09c126cc9c3b8044e107905ec5f04f472518` |
+| 5 | `instance` | [small_inverseImage_proj_of_locallySmall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StructuredArrowSmallPublic.lean/declarations/small-inverseimage-proj-of-locallysmall-source-edition-2.md) | 66 | `declaration-track:b4b06b198ef92066c321e7e1dc8ce5d959f1c2b940bf72e5293d775fe95f8620` |
+| 6 | `instance` | [essentiallySmall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StructuredArrowSmallPublic.lean/declarations/essentiallysmall-source-edition-2.md) | 77 | `declaration-track:8115ff1eb07374c323dc0fd3a67b1fffc4b906eaa60543b0b6cd0c3be9987343` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

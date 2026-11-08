@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/GeneralizeVarsPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/GeneralizeVarsPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/GeneralizeVarsPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/GeneralizeVarsPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mkGeneralizationForbiddenSet](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/GeneralizeVarsPublic.lean/declarations/mkgeneralizationforbiddenset.md) | 19 | `declaration-track:d32f0f7df7b362fa6d381f81248937767cec77ee7834f332be549b15dfca5a71` |
-| 2 | `def` | [getFVarSetToGeneralize](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/GeneralizeVarsPublic.lean/declarations/getfvarsettogeneralize.md) | 62 | `declaration-track:dfa2d3f1b9179baad2b774b0cd6be395eafaab93d3638a65f138f322133f4950` |
-| 3 | `def` | [getFVarsToGeneralize](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/GeneralizeVarsPublic.lean/declarations/getfvarstogeneralize.md) | 73 | `declaration-track:1f2d9f56789302918c103a366d4218db7764af4258a82ec3e8c8808495966bb8` |
+| 1 | `def` | [mkGeneralizationForbiddenSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/GeneralizeVarsPublic.lean/declarations/mkgeneralizationforbiddenset.md) | 19 | `declaration-track:d32f0f7df7b362fa6d381f81248937767cec77ee7834f332be549b15dfca5a71` |
+| 2 | `def` | [getFVarSetToGeneralize](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/GeneralizeVarsPublic.lean/declarations/getfvarsettogeneralize.md) | 62 | `declaration-track:dfa2d3f1b9179baad2b774b0cd6be395eafaab93d3638a65f138f322133f4950` |
+| 3 | `def` | [getFVarsToGeneralize](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/GeneralizeVarsPublic.lean/declarations/getfvarstogeneralize.md) | 73 | `declaration-track:1f2d9f56789302918c103a366d4218db7764af4258a82ec3e8c8808495966bb8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

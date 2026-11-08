@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/BornNamespacedPublic.lean/index.md) · [Full source](../../../../GeneralTopology/BornNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BornNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BornNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Born](../../../../GeneralTopology/BornNamespacedPublic.lean/declarations/born.md) | 34 | `declaration-track:38a33f7bf444a2fad77d4b4195650391727c30b249717e4484c90ed245260fbf` |
-| 2 | `instance` | [(anonymous)](../../../../GeneralTopology/BornNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 45 | `declaration-track:9117fa37af7fdfa8a6feb846eade0c2490fe2ad1de26d50f4d03325ec4ff698c` |
-| 3 | `instance` | [(anonymous)](../../../../GeneralTopology/BornNamespacedPublic.lean/declarations/instance-source-edition-4.md) | 48 | `declaration-track:f80cb7955f551bd32a521e5f2d82a85f276bfdd924469e82a1b458b313f36565` |
-| 4 | `instance` | [(anonymous)](../../../../GeneralTopology/BornNamespacedPublic.lean/declarations/instance.md) | 51 | `declaration-track:2a3e2e0ad04fe1000a1c6f926be590002cc0f83b0e1cf08470e66462d5071ecb` |
-| 5 | `instance` | [(anonymous)](../../../../GeneralTopology/BornNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 56 | `declaration-track:4685d0c45ee6ea2adeb1d8b2ed79ef78f25b175c21293a655ea0b7a4e68481b2` |
-| 6 | `def` | [Born.delabOf](../../../../GeneralTopology/BornNamespacedPublic.lean/declarations/born-delabof.md) | 68 | `declaration-track:5e79f574310e5abd7fd1babafcbbb75f12d762c528487583fe175cd1e8175dec` |
+| 1 | `structure` | [Born](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BornNamespacedPublic.lean/declarations/born.md) | 34 | `declaration-track:38a33f7bf444a2fad77d4b4195650391727c30b249717e4484c90ed245260fbf` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BornNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 45 | `declaration-track:9117fa37af7fdfa8a6feb846eade0c2490fe2ad1de26d50f4d03325ec4ff698c` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BornNamespacedPublic.lean/declarations/instance-source-edition-4.md) | 48 | `declaration-track:f80cb7955f551bd32a521e5f2d82a85f276bfdd924469e82a1b458b313f36565` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BornNamespacedPublic.lean/declarations/instance.md) | 51 | `declaration-track:2a3e2e0ad04fe1000a1c6f926be590002cc0f83b0e1cf08470e66462d5071ecb` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BornNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 56 | `declaration-track:4685d0c45ee6ea2adeb1d8b2ed79ef78f25b175c21293a655ea0b7a4e68481b2` |
+| 6 | `def` | [Born.delabOf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/BornNamespacedPublic.lean/declarations/born-delabof.md) | 68 | `declaration-track:5e79f574310e5abd7fd1babafcbbb75f12d762c528487583fe175cd1e8175dec` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

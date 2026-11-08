@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ExecutionNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/ExecutionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ExecutionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ExecutionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,17 +57,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [MachineResolution](../../../../Combinatorics/ExecutionNamespaced.lean/declarations/machineresolution.md) | 21 | `declaration-track:25e9b19e1c76b071c91abf0ebb3acccd48197a799b48b20060c440a6349f47c7` |
-| 2 | `def` | [runMachine](../../../../Combinatorics/ExecutionNamespaced.lean/declarations/runmachine.md) | 41 | `declaration-track:1f3dfa3f4207e24b02de91b981a61aaa7e6c80590bb8766a784fbf4e7022a7aa` |
-| 3 | `def` | [executeMachine](../../../../Combinatorics/ExecutionNamespaced.lean/declarations/executemachine.md) | 88 | `declaration-track:fdb8f954cabdd7eb715b1e6970c39846b5e0c930ae31f0f457a99475efef2d95` |
-| 4 | `theorem` | [accessMachine_total](../../../../Combinatorics/ExecutionNamespaced.lean/declarations/accessmachine-total.md) | 100 | `result-track:963261257513e8c272ebe425c4b567a4bd7f022182e04eb8e5cf507aded3980a` |
-| 5 | `theorem` | [completed_has_mode_certificate](../../../../Combinatorics/ExecutionNamespaced.lean/declarations/completed-has-mode-certificate.md) | 109 | `result-track:a3b5bdb2f235bc5c0b35e7e543457c6ca1db57d6eeb9910b2b772c3914ee1e01` |
-| 6 | `def` | [completed_output_kind_matches_objective](../../../../Combinatorics/ExecutionNamespaced.lean/declarations/completed-output-kind-matches-objective.md) | 125 | `declaration-track:48cc350f24fa591d23dd2ecdcede76084874e764e3c3d348af2bd2b113ca72da` |
-| 7 | `theorem` | [zero_fuel_returns_residual](../../../../Combinatorics/ExecutionNamespaced.lean/declarations/zero-fuel-returns-residual.md) | 141 | `result-track:5f9b590d77048729e8feb300a0685c0d53319aea1460684635163fd8c6db765f` |
-| 8 | `theorem` | [budget_exhaustion_returns_residual](../../../../Combinatorics/ExecutionNamespaced.lean/declarations/budget-exhaustion-returns-residual.md) | 159 | `result-track:99109243fe2d3e2c6341730d46c78c23897817be3f2fe8b1bd3eb659f3094cf1` |
-| 9 | `theorem` | [resource_exhaustion_has_no_unreachability_certificate](../../../../Combinatorics/ExecutionNamespaced.lean/declarations/resource-exhaustion-has-no-unreachability-certificate.md) | 190 | `result-track:6e964263a95dd61ca3a6b5d534ccee9d1ca89ceb51b7ff60d24caa5f81b5ec22` |
-| 10 | `theorem` | [executeMachine_deterministic](../../../../Combinatorics/ExecutionNamespaced.lean/declarations/executemachine-deterministic.md) | 208 | `result-track:93fd22f4dba4582d93a6ba26b860665027609a9ffd03da0f582ec52003e6207c` |
-| 11 | `theorem` | [completed_usage_within_budget](../../../../Combinatorics/ExecutionNamespaced.lean/declarations/completed-usage-within-budget.md) | 220 | `result-track:f2f522a855fa659027ed1f4fa2c3dd72b95cc62eee82d9d15874afb5d4fb08cd` |
+| 1 | `inductive` | [MachineResolution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ExecutionNamespaced.lean/declarations/machineresolution.md) | 21 | `declaration-track:25e9b19e1c76b071c91abf0ebb3acccd48197a799b48b20060c440a6349f47c7` |
+| 2 | `def` | [runMachine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ExecutionNamespaced.lean/declarations/runmachine.md) | 41 | `declaration-track:1f3dfa3f4207e24b02de91b981a61aaa7e6c80590bb8766a784fbf4e7022a7aa` |
+| 3 | `def` | [executeMachine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ExecutionNamespaced.lean/declarations/executemachine.md) | 88 | `declaration-track:fdb8f954cabdd7eb715b1e6970c39846b5e0c930ae31f0f457a99475efef2d95` |
+| 4 | `theorem` | [accessMachine_total](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ExecutionNamespaced.lean/declarations/accessmachine-total.md) | 100 | `result-track:963261257513e8c272ebe425c4b567a4bd7f022182e04eb8e5cf507aded3980a` |
+| 5 | `theorem` | [completed_has_mode_certificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ExecutionNamespaced.lean/declarations/completed-has-mode-certificate.md) | 109 | `result-track:a3b5bdb2f235bc5c0b35e7e543457c6ca1db57d6eeb9910b2b772c3914ee1e01` |
+| 6 | `def` | [completed_output_kind_matches_objective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ExecutionNamespaced.lean/declarations/completed-output-kind-matches-objective.md) | 125 | `declaration-track:48cc350f24fa591d23dd2ecdcede76084874e764e3c3d348af2bd2b113ca72da` |
+| 7 | `theorem` | [zero_fuel_returns_residual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ExecutionNamespaced.lean/declarations/zero-fuel-returns-residual.md) | 141 | `result-track:5f9b590d77048729e8feb300a0685c0d53319aea1460684635163fd8c6db765f` |
+| 8 | `theorem` | [budget_exhaustion_returns_residual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ExecutionNamespaced.lean/declarations/budget-exhaustion-returns-residual.md) | 159 | `result-track:99109243fe2d3e2c6341730d46c78c23897817be3f2fe8b1bd3eb659f3094cf1` |
+| 9 | `theorem` | [resource_exhaustion_has_no_unreachability_certificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ExecutionNamespaced.lean/declarations/resource-exhaustion-has-no-unreachability-certificate.md) | 190 | `result-track:6e964263a95dd61ca3a6b5d534ccee9d1ca89ceb51b7ff60d24caa5f81b5ec22` |
+| 10 | `theorem` | [executeMachine_deterministic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ExecutionNamespaced.lean/declarations/executemachine-deterministic.md) | 208 | `result-track:93fd22f4dba4582d93a6ba26b860665027609a9ffd03da0f582ec52003e6207c` |
+| 11 | `theorem` | [completed_usage_within_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ExecutionNamespaced.lean/declarations/completed-usage-within-budget.md) | 220 | `result-track:f2f522a855fa659027ed1f4fa2c3dd72b95cc62eee82d9d15874afb5d4fb08cd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

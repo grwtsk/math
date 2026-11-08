@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicTranslationTelescoping.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicTranslationTelescoping.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicTranslationTelescoping.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicTranslationTelescoping.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeFejerCyclicDoubleSum`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicDoubleSum.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeFejerCyclicDoubleSum`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicDoubleSum.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [cyclicTranslationL1](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicTranslationTelescoping.lean/declarations/cyclictranslationl1.md) | 13 | `declaration-track:2ec2be5d7f4b4f889b1f4d7fedae4c8eed92617450fa78a79b925f584617d65e` |
-| 2 | `theorem` | [cyclicSharpTranslationL1_eq_generic](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicTranslationTelescoping.lean/declarations/cyclicsharptranslationl1-eq-generic.md) | 20 | `result-track:6f8feece846a12b45d58fcbe686a6eab6852c904ca497969241d7709ca774d52` |
-| 3 | `theorem` | [cyclicTranslationL1_neg](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicTranslationTelescoping.lean/declarations/cyclictranslationl1-neg.md) | 29 | `result-track:910b544a2f584ccde2f5beb201b8f5842be72a7544d274ea94950f35cb4fb402` |
-| 4 | `def` | [CyclicSharpUnitTranslationBoundClaim](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicTranslationTelescoping.lean/declarations/cyclicsharpunittranslationboundclaim.md) | 64 | `declaration-track:34bd1d909ee51bf079261a8111a32ffdef977a3c21a53e37b2cc8f7138f7abb0` |
-| 5 | `def` | [CyclicSharpTranslationTelescopingClaim](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicTranslationTelescoping.lean/declarations/cyclicsharptranslationtelescopingclaim.md) | 73 | `declaration-track:4ddcf707a6bc2908ec90b1985a97aa60538c37c2ad08c33cff971f2986c45079` |
-| 6 | `theorem` | [unitTranslation_and_telescoping_to_translationCardinality](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicTranslationTelescoping.lean/declarations/unittranslation-and-telescoping-to-translationcardinality.md) | 86 | `result-track:485458ac0b6da816b089f4d37b4a90b4c7d8c53eaf51d26963d84f2a0e5a317a` |
-| 7 | `structure` | [CyclicSharpIntervalTranslationPackage](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicTranslationTelescoping.lean/declarations/cyclicsharpintervaltranslationpackage.md) | 117 | `declaration-track:009705f9e9b282ffdc6901a23ea06e669274e18985ad74a91e13d0b523482ff4` |
+| 1 | `def` | [cyclicTranslationL1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicTranslationTelescoping.lean/declarations/cyclictranslationl1.md) | 13 | `declaration-track:2ec2be5d7f4b4f889b1f4d7fedae4c8eed92617450fa78a79b925f584617d65e` |
+| 2 | `theorem` | [cyclicSharpTranslationL1_eq_generic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicTranslationTelescoping.lean/declarations/cyclicsharptranslationl1-eq-generic.md) | 20 | `result-track:6f8feece846a12b45d58fcbe686a6eab6852c904ca497969241d7709ca774d52` |
+| 3 | `theorem` | [cyclicTranslationL1_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicTranslationTelescoping.lean/declarations/cyclictranslationl1-neg.md) | 29 | `result-track:910b544a2f584ccde2f5beb201b8f5842be72a7544d274ea94950f35cb4fb402` |
+| 4 | `def` | [CyclicSharpUnitTranslationBoundClaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicTranslationTelescoping.lean/declarations/cyclicsharpunittranslationboundclaim.md) | 64 | `declaration-track:34bd1d909ee51bf079261a8111a32ffdef977a3c21a53e37b2cc8f7138f7abb0` |
+| 5 | `def` | [CyclicSharpTranslationTelescopingClaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicTranslationTelescoping.lean/declarations/cyclicsharptranslationtelescopingclaim.md) | 73 | `declaration-track:4ddcf707a6bc2908ec90b1985a97aa60538c37c2ad08c33cff971f2986c45079` |
+| 6 | `theorem` | [unitTranslation_and_telescoping_to_translationCardinality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicTranslationTelescoping.lean/declarations/unittranslation-and-telescoping-to-translationcardinality.md) | 86 | `result-track:485458ac0b6da816b089f4d37b4a90b4c7d8c53eaf51d26963d84f2a0e5a317a` |
+| 7 | `structure` | [CyclicSharpIntervalTranslationPackage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicTranslationTelescoping.lean/declarations/cyclicsharpintervaltranslationpackage.md) | 117 | `declaration-track:009705f9e9b282ffdc6901a23ea06e669274e18985ad74a91e13d0b523482ff4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

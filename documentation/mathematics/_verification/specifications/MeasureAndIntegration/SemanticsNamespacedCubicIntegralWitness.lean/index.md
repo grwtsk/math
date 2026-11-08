@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SemanticsNamespacedCubicIntegralWitness.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SemanticsNamespacedCubicIntegralWitness.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SemanticsNamespacedCubicIntegralWitness.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SemanticsNamespacedCubicIntegralWitness.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CubicIntegralWitness](../../../../MeasureAndIntegration/SemanticsNamespacedCubicIntegralWitness.lean/declarations/cubicintegralwitness-source-edition-2.md) | 28 | `declaration-track:bcf5c0708fde592d47500383ac2fd9e74ea5e06028a62ccf9299bd8e9787de26` |
-| 2 | `theorem` | [CubicIntegralWitness.correct](../../../../MeasureAndIntegration/SemanticsNamespacedCubicIntegralWitness.lean/declarations/cubicintegralwitness-correct.md) | 35 | `result-track:ce593caa4e776486180a39e16dda9c489c102e1b5e3131dfa512a2179c4f6968` |
-| 3 | `theorem` | [CubicIntegralWitness.correct_endpointDifference](../../../../MeasureAndIntegration/SemanticsNamespacedCubicIntegralWitness.lean/declarations/cubicintegralwitness-correct-endpointdifference.md) | 45 | `result-track:90930a754e7b40935a63ad8315016810ddbfea413cd1bb77c3693962626b33f2` |
-| 4 | `def` | [cubicIntegralWitness](../../../../MeasureAndIntegration/SemanticsNamespacedCubicIntegralWitness.lean/declarations/cubicintegralwitness.md) | 53 | `declaration-track:07a561691da4deaffcef8dd562aab1546ada96474f15d849fa798444a61d6b07` |
-| 5 | `theorem` | [cubicIntegralWitness_value](../../../../MeasureAndIntegration/SemanticsNamespacedCubicIntegralWitness.lean/declarations/cubicintegralwitness-value.md) | 59 | `result-track:cfd2116572edd050f2da61460aa8b7b0297eee1cd13d486d10304e2e24e54eef` |
+| 1 | `structure` | [CubicIntegralWitness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SemanticsNamespacedCubicIntegralWitness.lean/declarations/cubicintegralwitness-source-edition-2.md) | 28 | `declaration-track:bcf5c0708fde592d47500383ac2fd9e74ea5e06028a62ccf9299bd8e9787de26` |
+| 2 | `theorem` | [CubicIntegralWitness.correct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SemanticsNamespacedCubicIntegralWitness.lean/declarations/cubicintegralwitness-correct.md) | 35 | `result-track:ce593caa4e776486180a39e16dda9c489c102e1b5e3131dfa512a2179c4f6968` |
+| 3 | `theorem` | [CubicIntegralWitness.correct_endpointDifference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SemanticsNamespacedCubicIntegralWitness.lean/declarations/cubicintegralwitness-correct-endpointdifference.md) | 45 | `result-track:90930a754e7b40935a63ad8315016810ddbfea413cd1bb77c3693962626b33f2` |
+| 4 | `def` | [cubicIntegralWitness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SemanticsNamespacedCubicIntegralWitness.lean/declarations/cubicintegralwitness.md) | 53 | `declaration-track:07a561691da4deaffcef8dd562aab1546ada96474f15d849fa798444a61d6b07` |
+| 5 | `theorem` | [cubicIntegralWitness_value](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SemanticsNamespacedCubicIntegralWitness.lean/declarations/cubicintegralwitness-value.md) | 59 | `result-track:cfd2116572edd050f2da61460aa8b7b0297eee1cd13d486d10304e2e24e54eef` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

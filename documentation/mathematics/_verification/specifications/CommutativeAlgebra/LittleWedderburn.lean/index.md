@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/LittleWedderburn.lean/index.md) · [Full source](../../../../CommutativeAlgebra/LittleWedderburn.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LittleWedderburn.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LittleWedderburn.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [InductionHyp](../../../../CommutativeAlgebra/LittleWedderburn.lean/declarations/inductionhyp.md) | 45 | `declaration-track:d47c05447737067f0445e3bf86658d24c452a95b4459114de72064c1d8b20e1a` |
-| 2 | `def` | [field](../../../../CommutativeAlgebra/LittleWedderburn.lean/declarations/field.md) | 54 | `declaration-track:13689850efbbc4aa5298ba1f75152dd81c9c538ce726d79da301a2f8f1d4a5b8` |
-| 3 | `theorem` | [center_eq_top](../../../../CommutativeAlgebra/LittleWedderburn.lean/declarations/center-eq-top-source-edition-2.md) | 61 | `result-track:90a11e91b94189b96e408dca03a7f81a63ffef6f9d094166cdc7482cee658fb1` |
-| 4 | `theorem` | [center_eq_top](../../../../CommutativeAlgebra/LittleWedderburn.lean/declarations/center-eq-top.md) | 138 | `result-track:1d87e7a062143f34697212e6b4e167ead6f16c03612eec6d50cbd30af4c90f80` |
-| 5 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/LittleWedderburn.lean/declarations/instance.md) | 160 | `declaration-track:7bd7a3a033c1f867945eac3bfe72c0ee71981daf40b66d787904849a7ad29e9a` |
-| 6 | `theorem` | [Finite.isDomain_to_isField](../../../../CommutativeAlgebra/LittleWedderburn.lean/declarations/finite-isdomain-to-isfield.md) | 167 | `result-track:4b879f32586ce0860e411284e4e9cb58a03cf777a7703f4252ba538c561c61f1` |
+| 1 | `def` | [InductionHyp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LittleWedderburn.lean/declarations/inductionhyp.md) | 45 | `declaration-track:d47c05447737067f0445e3bf86658d24c452a95b4459114de72064c1d8b20e1a` |
+| 2 | `def` | [field](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LittleWedderburn.lean/declarations/field.md) | 54 | `declaration-track:13689850efbbc4aa5298ba1f75152dd81c9c538ce726d79da301a2f8f1d4a5b8` |
+| 3 | `theorem` | [center_eq_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LittleWedderburn.lean/declarations/center-eq-top-source-edition-2.md) | 61 | `result-track:90a11e91b94189b96e408dca03a7f81a63ffef6f9d094166cdc7482cee658fb1` |
+| 4 | `theorem` | [center_eq_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LittleWedderburn.lean/declarations/center-eq-top.md) | 138 | `result-track:1d87e7a062143f34697212e6b4e167ead6f16c03612eec6d50cbd30af4c90f80` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LittleWedderburn.lean/declarations/instance.md) | 160 | `declaration-track:7bd7a3a033c1f867945eac3bfe72c0ee71981daf40b66d787904849a7ad29e9a` |
+| 6 | `theorem` | [Finite.isDomain_to_isField](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/LittleWedderburn.lean/declarations/finite-isdomain-to-isfield.md) | 167 | `result-track:4b879f32586ce0860e411284e4e9cb58a03cf777a7703f4252ba538c561c61f1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

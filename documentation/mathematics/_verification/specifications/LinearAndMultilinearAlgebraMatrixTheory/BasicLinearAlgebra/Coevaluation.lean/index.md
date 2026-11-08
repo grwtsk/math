@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Coevaluation.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Coevaluation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Coevaluation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Coevaluation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [coevaluation](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Coevaluation.lean/declarations/coevaluation.md) | 39 | `declaration-track:cc67e22c9cf5dc7bcc7f21891744cdb183c8f7045eb96a733cd79751dc90da31` |
-| 2 | `theorem` | [coevaluation_apply_one](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Coevaluation.lean/declarations/coevaluation-apply-one.md) | 44 | `result-track:74b0bebe2d883edd5021a1877a30f5eafe9299a9210af75e1da495fc7d831ee8` |
-| 3 | `theorem` | [contractLeft_assoc_coevaluation](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Coevaluation.lean/declarations/contractleft-assoc-coevaluation-source-edition-2.md) | 57 | `result-track:e5d4e7dd8ef1a799dc8b55d0d9360d9729f3574a662f474666f16126cd081b49` |
-| 4 | `theorem` | [contractLeft_assoc_coevaluation'](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Coevaluation.lean/declarations/contractleft-assoc-coevaluation.md) | 76 | `result-track:0a5edf5c4bc2ec544713924e99ac14d621a82441f74c42f46917651e37dd2ebd` |
+| 1 | `def` | [coevaluation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Coevaluation.lean/declarations/coevaluation.md) | 39 | `declaration-track:cc67e22c9cf5dc7bcc7f21891744cdb183c8f7045eb96a733cd79751dc90da31` |
+| 2 | `theorem` | [coevaluation_apply_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Coevaluation.lean/declarations/coevaluation-apply-one.md) | 44 | `result-track:74b0bebe2d883edd5021a1877a30f5eafe9299a9210af75e1da495fc7d831ee8` |
+| 3 | `theorem` | [contractLeft_assoc_coevaluation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Coevaluation.lean/declarations/contractleft-assoc-coevaluation-source-edition-2.md) | 57 | `result-track:e5d4e7dd8ef1a799dc8b55d0d9360d9729f3574a662f474666f16126cd081b49` |
+| 4 | `theorem` | [contractLeft_assoc_coevaluation'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Coevaluation.lean/declarations/contractleft-assoc-coevaluation.md) | 76 | `result-track:0a5edf5c4bc2ec544713924e99ac14d621a82441f74c42f46917651e37dd2ebd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

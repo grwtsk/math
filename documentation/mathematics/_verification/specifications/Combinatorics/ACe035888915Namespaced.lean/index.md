@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ACe035888915Namespaced.lean/index.md) · [Full source](../../../../Combinatorics/ACe035888915Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ACe035888915Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ACe035888915Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,7 +60,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [liftProjectionOrbit](../../../../Combinatorics/ACe035888915Namespaced.lean/declarations/liftprojectionorbit.md) | 25 | `declaration-track:3fb1323b4a92a14f37ffecfcf2358f12ddcb46d8e6009f934e9e2b6cea5820c8` |
+| 1 | `def` | [liftProjectionOrbit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ACe035888915Namespaced.lean/declarations/liftprojectionorbit.md) | 25 | `declaration-track:3fb1323b4a92a14f37ffecfcf2358f12ddcb46d8e6009f934e9e2b6cea5820c8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

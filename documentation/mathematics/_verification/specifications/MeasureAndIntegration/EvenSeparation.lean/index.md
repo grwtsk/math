@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/EvenSeparation.lean/index.md) · [Full source](../../../../MeasureAndIntegration/EvenSeparation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EvenSeparation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EvenSeparation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.TestFunctions.Separation`](../../../../MeasureAndIntegration/Separation.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.TestFunctions.Separation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Separation.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.MeasureTheory.Group.Integral` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_even_smooth_test_positive_pairing](../../../../MeasureAndIntegration/EvenSeparation.lean/declarations/exists-even-smooth-test-positive-pairing.md) | 25 | `result-track:40c7026527fe41bb31f99c541990acc487279fb2308b450d96f5f6a8cac3ff39` |
-| 2 | `theorem` | [exists_even_smooth_test_of_not_contDiffOn_two](../../../../MeasureAndIntegration/EvenSeparation.lean/declarations/exists-even-smooth-test-of-not-contdiffon-two.md) | 64 | `result-track:e8fee40577cb0031fbcbb5dd15c9a0046ce479c034cf826559626ae962d7d862` |
-| 3 | `theorem` | [eq_zero_on_of_even_smooth_test_pairings_zero](../../../../MeasureAndIntegration/EvenSeparation.lean/declarations/eq-zero-on-of-even-smooth-test-pairings-zero.md) | 73 | `result-track:c3246c04880d32ea7b4a87138333e78d505a898ccaa30938d8d81ff52bba8dd4` |
+| 1 | `theorem` | [exists_even_smooth_test_positive_pairing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EvenSeparation.lean/declarations/exists-even-smooth-test-positive-pairing.md) | 25 | `result-track:40c7026527fe41bb31f99c541990acc487279fb2308b450d96f5f6a8cac3ff39` |
+| 2 | `theorem` | [exists_even_smooth_test_of_not_contDiffOn_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EvenSeparation.lean/declarations/exists-even-smooth-test-of-not-contdiffon-two.md) | 64 | `result-track:e8fee40577cb0031fbcbb5dd15c9a0046ce479c034cf826559626ae962d7d862` |
+| 3 | `theorem` | [eq_zero_on_of_even_smooth_test_pairings_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EvenSeparation.lean/declarations/eq-zero-on-of-even-smooth-test-pairings-zero.md) | 73 | `result-track:c3246c04880d32ea7b4a87138333e78d505a898ccaa30938d8d81ff52bba8dd4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

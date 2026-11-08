@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/PiNotation.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/PiNotation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/PiNotation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/PiNotation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [piNotation](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/PiNotation.lean/declarations/pinotation.md) | 25 | `declaration-track:3f6713ccab77fc5bc59b5f681e34023541f8cd646348c5c72fe725bcaff00413` |
-| 2 | `syntax` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/PiNotation.lean/declarations/syntax.md) | 33 | `declaration-track:d0a40269f9d46d8d5b88bfaeef3946d792353f995217d0b76bffcebc4c697e37` |
-| 3 | `macro_rules` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/PiNotation.lean/declarations/macro-rules.md) | 35 | `declaration-track:b1c8b287a3b94c64f2a0b5e6aede5844ec36913515f6a5956f59be797d2f8cc8` |
-| 4 | `def` | [replacePiNotation](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/PiNotation.lean/declarations/replacepinotation.md) | 41 | `declaration-track:91c103790af319d3159f4d7cc89e32ad66d1b152373fd1c9aff0d17659a2c1e1` |
-| 5 | `def` | [delabPi](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/PiNotation.lean/declarations/delabpi.md) | 49 | `declaration-track:4747c83d20d9136a99d66c0d345687547874729ebbf00425b7a3caf3d205abd6` |
+| 1 | `def` | [piNotation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/PiNotation.lean/declarations/pinotation.md) | 25 | `declaration-track:3f6713ccab77fc5bc59b5f681e34023541f8cd646348c5c72fe725bcaff00413` |
+| 2 | `syntax` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/PiNotation.lean/declarations/syntax.md) | 33 | `declaration-track:d0a40269f9d46d8d5b88bfaeef3946d792353f995217d0b76bffcebc4c697e37` |
+| 3 | `macro_rules` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/PiNotation.lean/declarations/macro-rules.md) | 35 | `declaration-track:b1c8b287a3b94c64f2a0b5e6aede5844ec36913515f6a5956f59be797d2f8cc8` |
+| 4 | `def` | [replacePiNotation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/PiNotation.lean/declarations/replacepinotation.md) | 41 | `declaration-track:91c103790af319d3159f4d7cc89e32ad66d1b152373fd1c9aff0d17659a2c1e1` |
+| 5 | `def` | [delabPi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/PiNotation.lean/declarations/delabpi.md) | 49 | `declaration-track:4747c83d20d9136a99d66c0d345687547874729ebbf00425b7a3caf3d205abd6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

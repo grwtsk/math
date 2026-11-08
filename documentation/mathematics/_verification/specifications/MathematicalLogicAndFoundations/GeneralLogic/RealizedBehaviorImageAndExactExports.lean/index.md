@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RealizedBehaviorImageAndExactExports.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RealizedBehaviorImageAndExactExports.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RealizedBehaviorImageAndExactExports.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RealizedBehaviorImageAndExactExports.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -49,8 +49,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 - `DAF.Causal.ObservableRecursion` — import line 21; external provider; requires a separately pinned dependency.
 - `Mathlib.Data.Quot` — import line 22; external provider; requires a separately pinned dependency.
 - `Mathlib.Logic.Equiv.Defs` — import line 23; external provider; requires a separately pinned dependency.
-- [Parameterized Future Trace Quotient](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ParameterizedFutureTraceQuotient.lean/index.md) — import line 24; pinned internal source present.
-- [Descended Transition Trace And Observation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DescendedTransitionTraceAndObservation.lean/index.md) — import line 25; pinned internal source present.
+- [Parameterized Future Trace Quotient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ParameterizedFutureTraceQuotient.lean/index.md) — import line 24; pinned internal source present.
+- [Descended Transition Trace And Observation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DescendedTransitionTraceAndObservation.lean/index.md) — import line 25; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -61,11 +61,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [Behavior](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RealizedBehaviorImageAndExactExports.lean/declarations/behavior.md) | 56 | `declaration-track:efdabad6e6105386bf4ce7f6e0f27d04fbf45195a59dd423e590e58c1227d09f` |
-| 2 | `def` | [behavior](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RealizedBehaviorImageAndExactExports.lean/declarations/behavior-source-edition-2.md) | 61 | `declaration-track:f6fe78423c630704b2862d18ed0903723209c628c3b4216705b3615635acfdcf` |
-| 3 | `theorem` | [causalEquivalent_iff_behavior_eq](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RealizedBehaviorImageAndExactExports.lean/declarations/causalequivalent-iff-behavior-eq.md) | 67 | `result-track:1dee6c55fcf47c30f0b901795539ff0541a7b883b1a3fb87abfc70deb4ea8045` |
-| 4 | `def` | [BehaviorImage](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RealizedBehaviorImageAndExactExports.lean/declarations/behaviorimage.md) | 79 | `declaration-track:70e06135b91df6928db6269acdd460d8a5e5d7c154e9e51e6f01e532a0908775` |
-| 5 | `def` | [causalStateEquivBehaviorImage](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RealizedBehaviorImageAndExactExports.lean/declarations/causalstateequivbehaviorimage.md) | 84 | `declaration-track:b0ee1eff7e6374b59b3d9cc41a1df5c90d845928daa1599654e4b05b63f84d0f` |
+| 1 | `abbrev` | [Behavior](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RealizedBehaviorImageAndExactExports.lean/declarations/behavior.md) | 56 | `declaration-track:efdabad6e6105386bf4ce7f6e0f27d04fbf45195a59dd423e590e58c1227d09f` |
+| 2 | `def` | [behavior](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RealizedBehaviorImageAndExactExports.lean/declarations/behavior-source-edition-2.md) | 61 | `declaration-track:f6fe78423c630704b2862d18ed0903723209c628c3b4216705b3615635acfdcf` |
+| 3 | `theorem` | [causalEquivalent_iff_behavior_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RealizedBehaviorImageAndExactExports.lean/declarations/causalequivalent-iff-behavior-eq.md) | 67 | `result-track:1dee6c55fcf47c30f0b901795539ff0541a7b883b1a3fb87abfc70deb4ea8045` |
+| 4 | `def` | [BehaviorImage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RealizedBehaviorImageAndExactExports.lean/declarations/behaviorimage.md) | 79 | `declaration-track:70e06135b91df6928db6269acdd460d8a5e5d7c154e9e51e6f01e532a0908775` |
+| 5 | `def` | [causalStateEquivBehaviorImage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RealizedBehaviorImageAndExactExports.lean/declarations/causalstateequivbehaviorimage.md) | 84 | `declaration-track:b0ee1eff7e6374b59b3d9cc41a1df5c90d845928daa1599654e4b05b63f84d0f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

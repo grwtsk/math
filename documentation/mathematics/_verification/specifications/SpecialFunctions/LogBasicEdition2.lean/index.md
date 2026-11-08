@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../SpecialFunctions/LogBasicEdition2.lean/index.md) · [Full source](../../../../SpecialFunctions/LogBasicEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/LogBasicEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/LogBasicEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,7 +61,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Real.tendsto_pow_log_div_pow_atTop](../../../../SpecialFunctions/LogBasicEdition2.lean/declarations/real-tendsto-pow-log-div-pow-attop.md) | 21 | `result-track:a60e126f9f8f7f3bce314ddb56c2c34055d8955c39b0d2b591259b53609acc0a` |
+| 1 | `theorem` | [Real.tendsto_pow_log_div_pow_atTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/LogBasicEdition2.lean/declarations/real-tendsto-pow-log-div-pow-attop.md) | 21 | `result-track:a60e126f9f8f7f3bce314ddb56c2c34055d8955c39b0d2b591259b53609acc0a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

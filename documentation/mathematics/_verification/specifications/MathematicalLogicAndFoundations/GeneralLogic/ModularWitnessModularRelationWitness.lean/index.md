@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ModularWitnessModularRelationWitness.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ModularWitnessModularRelationWitness.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ModularWitnessModularRelationWitness.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ModularWitnessModularRelationWitness.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ModularRelationWitness](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ModularWitnessModularRelationWitness.lean/declarations/modularrelationwitness.md) | 19 | `declaration-track:a1a02aaa51ae95742a168d6a5835a79b4ed44fcddfdcc185fe368de0040cf67b` |
-| 2 | `structure` | [JInvariantWitness](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ModularWitnessModularRelationWitness.lean/declarations/jinvariantwitness.md) | 26 | `declaration-track:6d21c0ebe1c2bb38c3379cc7599806a438455e4d52209483714e69a16916353c` |
-| 3 | `def` | [modularRelationClaim](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ModularWitnessModularRelationWitness.lean/declarations/modularrelationclaim.md) | 31 | `declaration-track:aa9e1feaf504ee35974f290bc5388bf797f2bd57f5c2e849eb64686384e825ae` |
-| 4 | `def` | [jInvariantClaim](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ModularWitnessModularRelationWitness.lean/declarations/jinvariantclaim.md) | 38 | `declaration-track:34fa1d62a32794e7abc570b4abbea3eeb3ec0f46fce0345a30fbe925023cdd7c` |
+| 1 | `structure` | [ModularRelationWitness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ModularWitnessModularRelationWitness.lean/declarations/modularrelationwitness.md) | 19 | `declaration-track:a1a02aaa51ae95742a168d6a5835a79b4ed44fcddfdcc185fe368de0040cf67b` |
+| 2 | `structure` | [JInvariantWitness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ModularWitnessModularRelationWitness.lean/declarations/jinvariantwitness.md) | 26 | `declaration-track:6d21c0ebe1c2bb38c3379cc7599806a438455e4d52209483714e69a16916353c` |
+| 3 | `def` | [modularRelationClaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ModularWitnessModularRelationWitness.lean/declarations/modularrelationclaim.md) | 31 | `declaration-track:aa9e1feaf504ee35974f290bc5388bf797f2bd57f5c2e849eb64686384e825ae` |
+| 4 | `def` | [jInvariantClaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ModularWitnessModularRelationWitness.lean/declarations/jinvariantclaim.md) | 38 | `declaration-track:34fa1d62a32794e7abc570b4abbea3eeb3ec0f46fce0345a30fbe925023cdd7c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

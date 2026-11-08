@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DivPublicAccuracyOfFraction.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DivPublicAccuracyOfFraction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DivPublicAccuracyOfFraction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DivPublicAccuracyOfFraction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [accuracyOfFraction](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DivPublicAccuracyOfFraction.lean/declarations/accuracyoffraction.md) | 22 | `declaration-track:139ae6e6fc1d8aeb98d6140199faa27866fb4746174fbcaf0d13c3c25b9d7605` |
-| 2 | `def` | [divCore](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DivPublicAccuracyOfFraction.lean/declarations/divcore.md) | 33 | `declaration-track:cab27cfb1d53f7f55f98ba6c079cad1bcaea9c43590da039a6f1e734999b7b36` |
-| 3 | `def` | [div](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DivPublicAccuracyOfFraction.lean/declarations/div.md) | 46 | `declaration-track:470b75e3f23b73789f9bd5ee8020130fd8e3660c21696e474a5f01c673930a8f` |
+| 1 | `def` | [accuracyOfFraction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DivPublicAccuracyOfFraction.lean/declarations/accuracyoffraction.md) | 22 | `declaration-track:139ae6e6fc1d8aeb98d6140199faa27866fb4746174fbcaf0d13c3c25b9d7605` |
+| 2 | `def` | [divCore](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DivPublicAccuracyOfFraction.lean/declarations/divcore.md) | 33 | `declaration-track:cab27cfb1d53f7f55f98ba6c079cad1bcaea9c43590da039a6f1e734999b7b36` |
+| 3 | `def` | [div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DivPublicAccuracyOfFraction.lean/declarations/div.md) | 46 | `declaration-track:470b75e3f23b73789f9bd5ee8020130fd8e3660c21696e474a5f01c673930a8f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

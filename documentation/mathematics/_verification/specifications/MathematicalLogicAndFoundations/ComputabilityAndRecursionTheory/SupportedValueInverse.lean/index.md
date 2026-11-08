@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/SupportedValueInverse.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/SupportedValueInverse.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/SupportedValueInverse.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/SupportedValueInverse.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.FoundationsLogicAndTypeTheory.Computability.RecursiveFunctions.ScalarMapParserComposition`](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/ScalarMapParserComposition.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.FoundationsLogicAndTypeTheory.Computability.RecursiveFunctions.ScalarMapParserComposition`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/ScalarMapParserComposition.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [valueOK_depth_le](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/SupportedValueInverse.lean/declarations/valueok-depth-le.md) | 5 | `result-track:e4a136282785a4c53a8c6d14e258d1c2e8a54e6eeff97cef6700962d4ad8044c` |
-| 2 | `theorem` | [parse_value_suffix](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/SupportedValueInverse.lean/declarations/parse-value-suffix.md) | 9 | `result-track:ee9a8ce6f97b6235f2a52890c6337f572d1f8d3eaa22d66bebef005faa7e478c` |
-| 3 | `theorem` | [supported_record_inverse](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/SupportedValueInverse.lean/declarations/supported-record-inverse.md) | 54 | `result-track:8a0bdbb605319fdc28a198bbb647042197e9db742fa9945396e798be291fd65c` |
-| 4 | `theorem` | [supported_bytes_injective](../../../../../MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/SupportedValueInverse.lean/declarations/supported-bytes-injective.md) | 65 | `result-track:489654b9f274a1411bbcefd564bfea199b7fe8226fe8789966099c32530006bd` |
+| 1 | `theorem` | [valueOK_depth_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/SupportedValueInverse.lean/declarations/valueok-depth-le.md) | 5 | `result-track:e4a136282785a4c53a8c6d14e258d1c2e8a54e6eeff97cef6700962d4ad8044c` |
+| 2 | `theorem` | [parse_value_suffix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/SupportedValueInverse.lean/declarations/parse-value-suffix.md) | 9 | `result-track:ee9a8ce6f97b6235f2a52890c6337f572d1f8d3eaa22d66bebef005faa7e478c` |
+| 3 | `theorem` | [supported_record_inverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/SupportedValueInverse.lean/declarations/supported-record-inverse.md) | 54 | `result-track:8a0bdbb605319fdc28a198bbb647042197e9db742fa9945396e798be291fd65c` |
+| 4 | `theorem` | [supported_bytes_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/ComputabilityAndRecursionTheory/SupportedValueInverse.lean/declarations/supported-bytes-injective.md) | 65 | `result-track:489654b9f274a1411bbcefd564bfea199b7fe8226fe8789966099c32530006bd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

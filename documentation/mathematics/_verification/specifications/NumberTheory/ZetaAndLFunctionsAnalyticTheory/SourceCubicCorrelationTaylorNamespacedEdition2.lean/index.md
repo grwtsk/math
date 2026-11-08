@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCubicCorrelationTaylorNamespacedEdition2.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCubicCorrelationTaylorNamespacedEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCubicCorrelationTaylorNamespacedEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCubicCorrelationTaylorNamespacedEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [global_taylor_bound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCubicCorrelationTaylorNamespacedEdition2.lean/declarations/global-taylor-bound.md) | 30 | `result-track:424fc3d0c722eebcae727ea5be59335de1c7e4de1d600460c9bb64795e896b33` |
-| 2 | `def` | [cubicCorrelationJet](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCubicCorrelationTaylorNamespacedEdition2.lean/declarations/cubiccorrelationjet.md) | 54 | `declaration-track:154ee506c24a26a4660da8e8da753163b5b1132e51e8b81c701efa4ed1be458e` |
-| 3 | `def` | [cubicCorrelationRemainder](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCubicCorrelationTaylorNamespacedEdition2.lean/declarations/cubiccorrelationremainder.md) | 61 | `declaration-track:1c877e6eba97da0ff68a4e4596651326808fd58adf9727094828c8fcf8822e15` |
-| 4 | `theorem` | [cubicCorrelationRemainder_abs_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCubicCorrelationTaylorNamespacedEdition2.lean/declarations/cubiccorrelationremainder-abs-le.md) | 65 | `result-track:33a2e46d096cc49d218398605ab37f40b9ab51dbffa539b4dd8bbefb1e766df1` |
+| 1 | `theorem` | [global_taylor_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCubicCorrelationTaylorNamespacedEdition2.lean/declarations/global-taylor-bound.md) | 30 | `result-track:424fc3d0c722eebcae727ea5be59335de1c7e4de1d600460c9bb64795e896b33` |
+| 2 | `def` | [cubicCorrelationJet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCubicCorrelationTaylorNamespacedEdition2.lean/declarations/cubiccorrelationjet.md) | 54 | `declaration-track:154ee506c24a26a4660da8e8da753163b5b1132e51e8b81c701efa4ed1be458e` |
+| 3 | `def` | [cubicCorrelationRemainder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCubicCorrelationTaylorNamespacedEdition2.lean/declarations/cubiccorrelationremainder.md) | 61 | `declaration-track:1c877e6eba97da0ff68a4e4596651326808fd58adf9727094828c8fcf8822e15` |
+| 4 | `theorem` | [cubicCorrelationRemainder_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCubicCorrelationTaylorNamespacedEdition2.lean/declarations/cubiccorrelationremainder-abs-le.md) | 65 | `result-track:33a2e46d096cc49d218398605ab37f40b9ab51dbffa539b4dd8bbefb1e766df1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

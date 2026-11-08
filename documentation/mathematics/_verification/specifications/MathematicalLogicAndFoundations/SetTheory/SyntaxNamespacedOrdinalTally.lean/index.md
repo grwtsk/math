@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/SetTheory/SyntaxNamespacedOrdinalTally.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/SetTheory/SyntaxNamespacedOrdinalTally.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/SyntaxNamespacedOrdinalTally.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/SyntaxNamespacedOrdinalTally.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FundamentalSequenceId](../../../../../MathematicalLogicAndFoundations/SetTheory/SyntaxNamespacedOrdinalTally.lean/declarations/fundamentalsequenceid.md) | 18 | `declaration-track:9e26078d897ca0a32db290b949f3bcf844fc0d9d2bc46cdc328f5269576cfc2f` |
-| 2 | `inductive` | [OrdinalTally](../../../../../MathematicalLogicAndFoundations/SetTheory/SyntaxNamespacedOrdinalTally.lean/declarations/ordinaltally.md) | 22 | `declaration-track:047d1fdf34d570af9a122122fe5e2ae1e80a6f7d3b56bf0d4eaab9b053c7fdbf` |
-| 3 | `def` | [OrdinalTally.isRegisteredLimit](../../../../../MathematicalLogicAndFoundations/SetTheory/SyntaxNamespacedOrdinalTally.lean/declarations/ordinaltally-isregisteredlimit.md) | 32 | `declaration-track:5a4b135ed912e9af403b949ba31df933d0b69bc429d596d518308b2b3a505404` |
+| 1 | `structure` | [FundamentalSequenceId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/SyntaxNamespacedOrdinalTally.lean/declarations/fundamentalsequenceid.md) | 18 | `declaration-track:9e26078d897ca0a32db290b949f3bcf844fc0d9d2bc46cdc328f5269576cfc2f` |
+| 2 | `inductive` | [OrdinalTally](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/SyntaxNamespacedOrdinalTally.lean/declarations/ordinaltally.md) | 22 | `declaration-track:047d1fdf34d570af9a122122fe5e2ae1e80a6f7d3b56bf0d4eaab9b053c7fdbf` |
+| 3 | `def` | [OrdinalTally.isRegisteredLimit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/SyntaxNamespacedOrdinalTally.lean/declarations/ordinaltally-isregisteredlimit.md) | 32 | `declaration-track:5a4b135ed912e9af403b949ba31df933d0b69bc429d596d518308b2b3a505404` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

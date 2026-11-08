@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Atlas.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Atlas.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Atlas.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Atlas.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [InterfaceSupport](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Atlas.lean/declarations/interfacesupport.md) | 14 | `declaration-track:7d16d0aa02ae1112821081bfa9617aa2b2dd5cae9da3ff2b95919f8b90d9b595` |
-| 2 | `structure` | [TotalCapabilityAtlas](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Atlas.lean/declarations/totalcapabilityatlas.md) | 18 | `declaration-track:f7457927af101192ab46b877531e7835263ab121806afc263d40b31f8fa3e144` |
-| 3 | `theorem` | [TotalCapabilityAtlas.every_interface_modeled](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Atlas.lean/declarations/totalcapabilityatlas-every-interface-modeled.md) | 25 | `result-track:295b2a11f80d07af6e33c2147e1259ccb40ed233a12e454d480ad384bc2f44d0` |
+| 1 | `inductive` | [InterfaceSupport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Atlas.lean/declarations/interfacesupport.md) | 14 | `declaration-track:7d16d0aa02ae1112821081bfa9617aa2b2dd5cae9da3ff2b95919f8b90d9b595` |
+| 2 | `structure` | [TotalCapabilityAtlas](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Atlas.lean/declarations/totalcapabilityatlas.md) | 18 | `declaration-track:f7457927af101192ab46b877531e7835263ab121806afc263d40b31f8fa3e144` |
+| 3 | `theorem` | [TotalCapabilityAtlas.every_interface_modeled](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Atlas.lean/declarations/totalcapabilityatlas-every-interface-modeled.md) | 25 | `result-track:295b2a11f80d07af6e33c2147e1259ccb40ed233a12e454d480ad384bc2f44d0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

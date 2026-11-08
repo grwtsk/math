@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExistingProviderShellRoundTrips.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExistingProviderShellRoundTrips.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExistingProviderShellRoundTrips.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExistingProviderShellRoundTrips.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [contract_expandWithShell_center](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExistingProviderShellRoundTrips.lean/declarations/contract-expandwithshell-center.md) | 40 | `result-track:e1bf9908a03edc90c8293a8d8209b6efca0e26078ea604c7389b5b9f862da213` |
-| 2 | `theorem` | [contract_expandWithShell_shell](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExistingProviderShellRoundTrips.lean/declarations/contract-expandwithshell-shell.md) | 51 | `result-track:eeb0ceb9a6735ef84837434dfa80dd4e9df62677435aaf99fbb9054a42bd37a5` |
-| 3 | `theorem` | [expand_contractOneStep](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExistingProviderShellRoundTrips.lean/declarations/expand-contractonestep.md) | 63 | `result-track:fd2e2d16cad6df6d601c7ddbff8a30a37a306b95a050cf0e102152d8cf091f6e` |
+| 1 | `theorem` | [contract_expandWithShell_center](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExistingProviderShellRoundTrips.lean/declarations/contract-expandwithshell-center.md) | 40 | `result-track:e1bf9908a03edc90c8293a8d8209b6efca0e26078ea604c7389b5b9f862da213` |
+| 2 | `theorem` | [contract_expandWithShell_shell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExistingProviderShellRoundTrips.lean/declarations/contract-expandwithshell-shell.md) | 51 | `result-track:eeb0ceb9a6735ef84837434dfa80dd4e9df62677435aaf99fbb9054a42bd37a5` |
+| 3 | `theorem` | [expand_contractOneStep](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExistingProviderShellRoundTrips.lean/declarations/expand-contractonestep.md) | 63 | `result-track:fd2e2d16cad6df6d601c7ddbff8a30a37a306b95a050cf0e102152d8cf091f6e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

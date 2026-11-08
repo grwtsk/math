@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/PowTransition.lean/index.md) · [Full source](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/PowTransition.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/PowTransition.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/PowTransition.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,16 +61,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [Ideal.Quotient.factor_ker](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/PowTransition.lean/declarations/ideal-quotient-factor-ker.md) | 39 | `result-track:82cf9922c64f8aeb5f9d5cfa55d03f358faad707063eab8ab24781480e2b04b6` |
-| 2 | `lemma` | [Ideal.map_mk_comap_factor](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/PowTransition.lean/declarations/ideal-map-mk-comap-factor.md) | 50 | `result-track:b5c6fe33ce980958fb028ed6314b65cf38a7754043ec150656e585e807c47729` |
-| 3 | `theorem` | [mapQ_eq_factor](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/PowTransition.lean/declarations/mapq-eq-factor.md) | 70 | `result-track:479ad30ce4bfeed4da394a8a0d4232591bc3f11bdce700b5c546775b67c0ed68` |
-| 4 | `lemma` | [pow_smul_top_le](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/PowTransition.lean/declarations/pow-smul-top-le.md) | 77 | `result-track:aba523386c929d261f4d1407ad123462f3d38926a3046061c98a5fda9b20d9d5` |
-| 5 | `abbrev` | [factorPow](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/PowTransition.lean/declarations/factorpow-source-edition-2.md) | 88 | `declaration-track:e21428c44d578e5c7bbd0d3ccb98efda1e1c5a329ad4c00133608375bde7ca6c` |
-| 6 | `abbrev` | [factorPowSucc](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/PowTransition.lean/declarations/factorpowsucc.md) | 93 | `declaration-track:47c7cdc2c41ff1ea793610d32e6d0f87f3c42cf46cbcda7b5a4e8fcabea2ea22` |
-| 7 | `abbrev` | [factorPow](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/PowTransition.lean/declarations/factorpow.md) | 114 | `declaration-track:238094c62c44828f9bbfd0c368e6a5f6f5ce6f28cc684743f1ae30baec24be83` |
-| 8 | `abbrev` | [factorPowSucc](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/PowTransition.lean/declarations/factorpowsucc-source-edition-2.md) | 118 | `declaration-track:a420f14d635546beb0543ba5edf95551e33d7dcdf8e7ce9d7386d4bd72478bd3` |
-| 9 | `lemma` | [Ideal.map_mk_comap_factorPow](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/PowTransition.lean/declarations/ideal-map-mk-comap-factorpow.md) | 127 | `result-track:4c580b9c7fb6debeaaeb52e639d056f493f0a42f37f7145aeeaeccdb903ae5cc` |
-| 10 | `lemma` | [factorPowSucc.isUnit_of_isUnit_image](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/PowTransition.lean/declarations/factorpowsucc-isunit-of-isunit-image.md) | 133 | `result-track:76f24a9b7093f7967d9ddc66a9ad747a3123ada41403247d7dbc988063511c38` |
+| 1 | `lemma` | [Ideal.Quotient.factor_ker](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/PowTransition.lean/declarations/ideal-quotient-factor-ker.md) | 39 | `result-track:82cf9922c64f8aeb5f9d5cfa55d03f358faad707063eab8ab24781480e2b04b6` |
+| 2 | `lemma` | [Ideal.map_mk_comap_factor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/PowTransition.lean/declarations/ideal-map-mk-comap-factor.md) | 50 | `result-track:b5c6fe33ce980958fb028ed6314b65cf38a7754043ec150656e585e807c47729` |
+| 3 | `theorem` | [mapQ_eq_factor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/PowTransition.lean/declarations/mapq-eq-factor.md) | 70 | `result-track:479ad30ce4bfeed4da394a8a0d4232591bc3f11bdce700b5c546775b67c0ed68` |
+| 4 | `lemma` | [pow_smul_top_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/PowTransition.lean/declarations/pow-smul-top-le.md) | 77 | `result-track:aba523386c929d261f4d1407ad123462f3d38926a3046061c98a5fda9b20d9d5` |
+| 5 | `abbrev` | [factorPow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/PowTransition.lean/declarations/factorpow-source-edition-2.md) | 88 | `declaration-track:e21428c44d578e5c7bbd0d3ccb98efda1e1c5a329ad4c00133608375bde7ca6c` |
+| 6 | `abbrev` | [factorPowSucc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/PowTransition.lean/declarations/factorpowsucc.md) | 93 | `declaration-track:47c7cdc2c41ff1ea793610d32e6d0f87f3c42cf46cbcda7b5a4e8fcabea2ea22` |
+| 7 | `abbrev` | [factorPow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/PowTransition.lean/declarations/factorpow.md) | 114 | `declaration-track:238094c62c44828f9bbfd0c368e6a5f6f5ce6f28cc684743f1ae30baec24be83` |
+| 8 | `abbrev` | [factorPowSucc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/PowTransition.lean/declarations/factorpowsucc-source-edition-2.md) | 118 | `declaration-track:a420f14d635546beb0543ba5edf95551e33d7dcdf8e7ce9d7386d4bd72478bd3` |
+| 9 | `lemma` | [Ideal.map_mk_comap_factorPow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/PowTransition.lean/declarations/ideal-map-mk-comap-factorpow.md) | 127 | `result-track:4c580b9c7fb6debeaaeb52e639d056f493f0a42f37f7145aeeaeccdb903ae5cc` |
+| 10 | `lemma` | [factorPowSucc.isUnit_of_isUnit_image](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/PowTransition.lean/declarations/factorpowsucc-isunit-of-isunit-image.md) | 133 | `result-track:76f24a9b7093f7967d9ddc66a9ad747a3123ada41403247d7dbc988063511c38` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

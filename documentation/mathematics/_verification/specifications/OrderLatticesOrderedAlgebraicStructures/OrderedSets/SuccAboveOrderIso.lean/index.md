@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SuccAboveOrderIso.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SuccAboveOrderIso.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/SuccAboveOrderIso.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/SuccAboveOrderIso.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Fin.succAboveOrderIso](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SuccAboveOrderIso.lean/declarations/fin-succaboveorderiso.md) | 23 | `declaration-track:2b3152e33429b194ffa6fe92f43cb8297b63ad635398faaa5cfc3298cfc03447` |
+| 1 | `def` | [Fin.succAboveOrderIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/SuccAboveOrderIso.lean/declarations/fin-succaboveorderiso.md) | 23 | `declaration-track:2b3152e33429b194ffa6fe92f43cb8297b63ad635398faaa5cfc3298cfc03447` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

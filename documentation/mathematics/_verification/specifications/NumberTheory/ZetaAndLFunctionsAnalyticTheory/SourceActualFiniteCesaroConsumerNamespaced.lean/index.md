@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualFiniteCesaroConsumerNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualFiniteCesaroConsumerNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualFiniteCesaroConsumerNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualFiniteCesaroConsumerNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actualCesaroPrimitive_eq_finite_readout](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualFiniteCesaroConsumerNamespaced.lean/declarations/actualcesaroprimitive-eq-finite-readout.md) | 29 | `result-track:f7839deef1a06773db149f174f301550b1d3ec4ac4b38953872df3e19842a3bb` |
-| 2 | `theorem` | [remaining_lower_of_actual_finite_row](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualFiniteCesaroConsumerNamespaced.lean/declarations/remaining-lower-of-actual-finite-row.md) | 34 | `result-track:8235b6a31a5c5252c6b19f377297b7e0cbaf21c4714c98a175a0f0c694b9f10d` |
-| 3 | `theorem` | [estimate_of_actual_finite_row](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualFiniteCesaroConsumerNamespaced.lean/declarations/estimate-of-actual-finite-row.md) | 44 | `result-track:f5d189dd1ff908129424fdc46ed495824521d463afec60525895520f334cdcde` |
+| 1 | `theorem` | [actualCesaroPrimitive_eq_finite_readout](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualFiniteCesaroConsumerNamespaced.lean/declarations/actualcesaroprimitive-eq-finite-readout.md) | 29 | `result-track:f7839deef1a06773db149f174f301550b1d3ec4ac4b38953872df3e19842a3bb` |
+| 2 | `theorem` | [remaining_lower_of_actual_finite_row](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualFiniteCesaroConsumerNamespaced.lean/declarations/remaining-lower-of-actual-finite-row.md) | 34 | `result-track:8235b6a31a5c5252c6b19f377297b7e0cbaf21c4714c98a175a0f0c694b9f10d` |
+| 3 | `theorem` | [estimate_of_actual_finite_row](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualFiniteCesaroConsumerNamespaced.lean/declarations/estimate-of-actual-finite-row.md) | 44 | `result-track:f5d189dd1ff908129424fdc46ed495824521d463afec60525895520f334cdcde` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

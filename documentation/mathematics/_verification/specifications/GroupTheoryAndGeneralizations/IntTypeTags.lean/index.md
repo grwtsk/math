@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/IntTypeTags.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/IntTypeTags.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IntTypeTags.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IntTypeTags.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [toAdd_pow](../../../../GroupTheoryAndGeneralizations/IntTypeTags.lean/declarations/toadd-pow.md) | 22 | `result-track:b431613d6bb2908f2e2ea278823c328365f2474af631f238c835974f0c92bc0e` |
-| 2 | `lemma` | [toAdd_zpow](../../../../GroupTheoryAndGeneralizations/IntTypeTags.lean/declarations/toadd-zpow.md) | 24 | `result-track:7982e6086c698ac9b23ed2c8c7cf9043b34938004c1cfb7e22bf502d1d502972` |
-| 3 | `lemma` | [ofAdd_mul](../../../../GroupTheoryAndGeneralizations/IntTypeTags.lean/declarations/ofadd-mul.md) | 26 | `result-track:a1cba6227a5edaa181f7ce3078780eadaad4b2ea3c38d4a275e43112a0309eb3` |
+| 1 | `lemma` | [toAdd_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IntTypeTags.lean/declarations/toadd-pow.md) | 22 | `result-track:b431613d6bb2908f2e2ea278823c328365f2474af631f238c835974f0c92bc0e` |
+| 2 | `lemma` | [toAdd_zpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IntTypeTags.lean/declarations/toadd-zpow.md) | 24 | `result-track:7982e6086c698ac9b23ed2c8c7cf9043b34938004c1cfb7e22bf502d1d502972` |
+| 3 | `lemma` | [ofAdd_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IntTypeTags.lean/declarations/ofadd-mul.md) | 26 | `result-track:a1cba6227a5edaa181f7ce3078780eadaad4b2ea3c38d4a275e43112a0309eb3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

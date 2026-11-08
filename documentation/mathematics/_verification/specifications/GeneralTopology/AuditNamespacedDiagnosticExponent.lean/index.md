@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/AuditNamespacedDiagnosticExponent.lean/index.md) · [Full source](../../../../GeneralTopology/AuditNamespacedDiagnosticExponent.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AuditNamespacedDiagnosticExponent.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AuditNamespacedDiagnosticExponent.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [diagnosticExponent](../../../../GeneralTopology/AuditNamespacedDiagnosticExponent.lean/declarations/diagnosticexponent.md) | 35 | `declaration-track:75c6151788388bce749d2e814ea4240b7d6828aaa6d0c6c893deda116249e496` |
-| 2 | `def` | [testPoint](../../../../GeneralTopology/AuditNamespacedDiagnosticExponent.lean/declarations/testpoint.md) | 39 | `declaration-track:9396807c82f358681a2a23aa6126331251d4df36c30db2109681455ed47824c0` |
-| 3 | `theorem` | [diagnostic_exponent_test_point](../../../../GeneralTopology/AuditNamespacedDiagnosticExponent.lean/declarations/diagnostic-exponent-test-point.md) | 42 | `result-track:c51f07e9df3ba187f3bd245fbb67eacd26a977601112fc3c99b5ce37cc97272e` |
-| 4 | `theorem` | [diagnostic_exponent_test_point_div](../../../../GeneralTopology/AuditNamespacedDiagnosticExponent.lean/declarations/diagnostic-exponent-test-point-div.md) | 62 | `result-track:184b11560e72a23e391a134ffc6ffe1bd23d3a84f1fc6817a978a76077a9e8f9` |
-| 5 | `theorem` | [tendsto_diagnostic_exponent_test_point_div](../../../../GeneralTopology/AuditNamespacedDiagnosticExponent.lean/declarations/tendsto-diagnostic-exponent-test-point-div.md) | 81 | `result-track:93d5dffbeef0eba2121cee75a73218fe45742fbedc2c135035b3e5e7f03e76a8` |
-| 6 | `theorem` | [tendsto_diagnostic_exponent_test_point_atTop](../../../../GeneralTopology/AuditNamespacedDiagnosticExponent.lean/declarations/tendsto-diagnostic-exponent-test-point-attop.md) | 100 | `result-track:2551e0e482dc466b171f7b93d90830c7b4c336a7446b24416d54e7cdec22498d` |
+| 1 | `def` | [diagnosticExponent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AuditNamespacedDiagnosticExponent.lean/declarations/diagnosticexponent.md) | 35 | `declaration-track:75c6151788388bce749d2e814ea4240b7d6828aaa6d0c6c893deda116249e496` |
+| 2 | `def` | [testPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AuditNamespacedDiagnosticExponent.lean/declarations/testpoint.md) | 39 | `declaration-track:9396807c82f358681a2a23aa6126331251d4df36c30db2109681455ed47824c0` |
+| 3 | `theorem` | [diagnostic_exponent_test_point](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AuditNamespacedDiagnosticExponent.lean/declarations/diagnostic-exponent-test-point.md) | 42 | `result-track:c51f07e9df3ba187f3bd245fbb67eacd26a977601112fc3c99b5ce37cc97272e` |
+| 4 | `theorem` | [diagnostic_exponent_test_point_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AuditNamespacedDiagnosticExponent.lean/declarations/diagnostic-exponent-test-point-div.md) | 62 | `result-track:184b11560e72a23e391a134ffc6ffe1bd23d3a84f1fc6817a978a76077a9e8f9` |
+| 5 | `theorem` | [tendsto_diagnostic_exponent_test_point_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AuditNamespacedDiagnosticExponent.lean/declarations/tendsto-diagnostic-exponent-test-point-div.md) | 81 | `result-track:93d5dffbeef0eba2121cee75a73218fe45742fbedc2c135035b3e5e7f03e76a8` |
+| 6 | `theorem` | [tendsto_diagnostic_exponent_test_point_atTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AuditNamespacedDiagnosticExponent.lean/declarations/tendsto-diagnostic-exponent-test-point-attop.md) | 100 | `result-track:2551e0e482dc466b171f7b93d90830c7b4c336a7446b24416d54e7cdec22498d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

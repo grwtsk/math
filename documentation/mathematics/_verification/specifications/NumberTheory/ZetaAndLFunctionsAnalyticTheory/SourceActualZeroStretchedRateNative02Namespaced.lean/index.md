@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualZeroStretchedRateNative02Namespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualZeroStretchedRateNative02Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualZeroStretchedRateNative02Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualZeroStretchedRateNative02Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [bump_abs_re_norm_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualZeroStretchedRateNative02Namespaced.lean/declarations/bump-abs-re-norm-le.md) | 35 | `result-track:27b7911f597dde4af0faf4ebdd6cef5b9a22ae5d875b2a7c81999f8583fe7036` |
-| 2 | `theorem` | [pole_norm_on_strip_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualZeroStretchedRateNative02Namespaced.lean/declarations/pole-norm-on-strip-le.md) | 44 | `result-track:fbdf09498c5fedccbeed57a6941fc8ab634cd41e5793c17a0284a4aec96685cf` |
-| 3 | `theorem` | [actualInitialPrimeMellin_gap_scaled_norm_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualZeroStretchedRateNative02Namespaced.lean/declarations/actualinitialprimemellin-gap-scaled-norm-le.md) | 67 | `result-track:72abca3217cfed9d6926a6187983ca99a4071320ef3c474aecb9c79651e8866a` |
-| 4 | `theorem` | [finite_actual_head_exp_bound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualZeroStretchedRateNative02Namespaced.lean/declarations/finite-actual-head-exp-bound.md) | 124 | `result-track:cde92fbd49306aca0af8b60f392f0568235f7f34cd0b107093303cc5dd18dfb6` |
-| 5 | `theorem` | [actualLowZeroHead_scaled_exponential_bound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualZeroStretchedRateNative02Namespaced.lean/declarations/actuallowzerohead-scaled-exponential-bound.md) | 178 | `result-track:29a1a0e7633a164aea6e2315c12f629b8eabbb55e68184f9bb171a0ac868fb03` |
+| 1 | `theorem` | [bump_abs_re_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualZeroStretchedRateNative02Namespaced.lean/declarations/bump-abs-re-norm-le.md) | 35 | `result-track:27b7911f597dde4af0faf4ebdd6cef5b9a22ae5d875b2a7c81999f8583fe7036` |
+| 2 | `theorem` | [pole_norm_on_strip_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualZeroStretchedRateNative02Namespaced.lean/declarations/pole-norm-on-strip-le.md) | 44 | `result-track:fbdf09498c5fedccbeed57a6941fc8ab634cd41e5793c17a0284a4aec96685cf` |
+| 3 | `theorem` | [actualInitialPrimeMellin_gap_scaled_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualZeroStretchedRateNative02Namespaced.lean/declarations/actualinitialprimemellin-gap-scaled-norm-le.md) | 67 | `result-track:72abca3217cfed9d6926a6187983ca99a4071320ef3c474aecb9c79651e8866a` |
+| 4 | `theorem` | [finite_actual_head_exp_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualZeroStretchedRateNative02Namespaced.lean/declarations/finite-actual-head-exp-bound.md) | 124 | `result-track:cde92fbd49306aca0af8b60f392f0568235f7f34cd0b107093303cc5dd18dfb6` |
+| 5 | `theorem` | [actualLowZeroHead_scaled_exponential_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualZeroStretchedRateNative02Namespaced.lean/declarations/actuallowzerohead-scaled-exponential-bound.md) | 178 | `result-track:29a1a0e7633a164aea6e2315c12f629b8eabbb55e68184f9bb171a0ac868fb03` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

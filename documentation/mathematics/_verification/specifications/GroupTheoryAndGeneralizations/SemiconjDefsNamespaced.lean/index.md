@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/SemiconjDefsNamespaced.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/SemiconjDefsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SemiconjDefsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SemiconjDefsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,18 +58,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [SemiconjBy](../../../../GroupTheoryAndGeneralizations/SemiconjDefsNamespaced.lean/declarations/semiconjby.md) | 44 | `declaration-track:a89fdd6ec2fe4dc25e8f47b9cbc48ed5f589a1851d417bd60712dfb96a0e204c` |
-| 2 | `theorem` | [eq](../../../../GroupTheoryAndGeneralizations/SemiconjDefsNamespaced.lean/declarations/eq.md) | 51 | `result-track:1ad2d25f83ba442c2ff6869e8e2cb3a9d33179683759fd99022d8bada756c1e1` |
-| 3 | `theorem` | [mul_right](../../../../GroupTheoryAndGeneralizations/SemiconjDefsNamespaced.lean/declarations/mul-right.md) | 62 | `result-track:2138e179e227a4a9aef60e352bc4a734bf09f4e47b9ab5d42f17d4da73d70f7a` |
-| 4 | `theorem` | [mul_left](../../../../GroupTheoryAndGeneralizations/SemiconjDefsNamespaced.lean/declarations/mul-left.md) | 72 | `result-track:94f54c9895e5c7700772c730aa4615442d193425e337209fd9dd62b78905e62d` |
-| 5 | `theorem` | [transitive](../../../../GroupTheoryAndGeneralizations/SemiconjDefsNamespaced.lean/declarations/transitive.md) | 80 | `result-track:5f659e40218083ed6f39af4c417392bd3b7b04df9ff71aace5f0011b16ab9a86` |
-| 6 | `theorem` | [one_right](../../../../GroupTheoryAndGeneralizations/SemiconjDefsNamespaced.lean/declarations/one-right.md) | 91 | `result-track:a6a2ec1d25867e1813f3f8b33b64fcbb4e6bc10a1749e0e9b70d75abd5914c87` |
-| 7 | `theorem` | [one_left](../../../../GroupTheoryAndGeneralizations/SemiconjDefsNamespaced.lean/declarations/one-left.md) | 95 | `result-track:fdbfcdc7a9084ee97e298508dc7c88e7aac7d0ed7e3531deb46458e897753383` |
-| 8 | `theorem` | [reflexive](../../../../GroupTheoryAndGeneralizations/SemiconjDefsNamespaced.lean/declarations/reflexive.md) | 102 | `result-track:212d0cc0443d74626041f9c575efd0eddbda6c6909efb7c0d1a3f6917d661c02` |
-| 9 | `theorem` | [pow_right](../../../../GroupTheoryAndGeneralizations/SemiconjDefsNamespaced.lean/declarations/pow-right.md) | 112 | `result-track:fd04e2ebabd82dceb18c0500467259f5d29744ce5bda0018540ce989988a5d05` |
-| 10 | `theorem` | [conj_mk](../../../../GroupTheoryAndGeneralizations/SemiconjDefsNamespaced.lean/declarations/conj-mk.md) | 129 | `result-track:ebb5b3d1f392425304ab3e6fc9f45496a13038e9b0d63230c3a4b747a89a8553` |
-| 11 | `theorem` | [conj_iff](../../../../GroupTheoryAndGeneralizations/SemiconjDefsNamespaced.lean/declarations/conj-iff.md) | 133 | `result-track:f5dbe7874c0d603d36ce3ed599bb53849f6a4434dd330252c6375b085020361a` |
-| 12 | `theorem` | [semiconjBy_iff_eq](../../../../GroupTheoryAndGeneralizations/SemiconjDefsNamespaced.lean/declarations/semiconjby-iff-eq.md) | 145 | `result-track:bce77eea4e8c1e68f8dbba8880bd7101622e892370eabaf9e30e7cbee56d9d23` |
+| 1 | `def` | [SemiconjBy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SemiconjDefsNamespaced.lean/declarations/semiconjby.md) | 44 | `declaration-track:a89fdd6ec2fe4dc25e8f47b9cbc48ed5f589a1851d417bd60712dfb96a0e204c` |
+| 2 | `theorem` | [eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SemiconjDefsNamespaced.lean/declarations/eq.md) | 51 | `result-track:1ad2d25f83ba442c2ff6869e8e2cb3a9d33179683759fd99022d8bada756c1e1` |
+| 3 | `theorem` | [mul_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SemiconjDefsNamespaced.lean/declarations/mul-right.md) | 62 | `result-track:2138e179e227a4a9aef60e352bc4a734bf09f4e47b9ab5d42f17d4da73d70f7a` |
+| 4 | `theorem` | [mul_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SemiconjDefsNamespaced.lean/declarations/mul-left.md) | 72 | `result-track:94f54c9895e5c7700772c730aa4615442d193425e337209fd9dd62b78905e62d` |
+| 5 | `theorem` | [transitive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SemiconjDefsNamespaced.lean/declarations/transitive.md) | 80 | `result-track:5f659e40218083ed6f39af4c417392bd3b7b04df9ff71aace5f0011b16ab9a86` |
+| 6 | `theorem` | [one_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SemiconjDefsNamespaced.lean/declarations/one-right.md) | 91 | `result-track:a6a2ec1d25867e1813f3f8b33b64fcbb4e6bc10a1749e0e9b70d75abd5914c87` |
+| 7 | `theorem` | [one_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SemiconjDefsNamespaced.lean/declarations/one-left.md) | 95 | `result-track:fdbfcdc7a9084ee97e298508dc7c88e7aac7d0ed7e3531deb46458e897753383` |
+| 8 | `theorem` | [reflexive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SemiconjDefsNamespaced.lean/declarations/reflexive.md) | 102 | `result-track:212d0cc0443d74626041f9c575efd0eddbda6c6909efb7c0d1a3f6917d661c02` |
+| 9 | `theorem` | [pow_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SemiconjDefsNamespaced.lean/declarations/pow-right.md) | 112 | `result-track:fd04e2ebabd82dceb18c0500467259f5d29744ce5bda0018540ce989988a5d05` |
+| 10 | `theorem` | [conj_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SemiconjDefsNamespaced.lean/declarations/conj-mk.md) | 129 | `result-track:ebb5b3d1f392425304ab3e6fc9f45496a13038e9b0d63230c3a4b747a89a8553` |
+| 11 | `theorem` | [conj_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SemiconjDefsNamespaced.lean/declarations/conj-iff.md) | 133 | `result-track:f5dbe7874c0d603d36ce3ed599bb53849f6a4434dd330252c6375b085020361a` |
+| 12 | `theorem` | [semiconjBy_iff_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SemiconjDefsNamespaced.lean/declarations/semiconjby-iff-eq.md) | 145 | `result-track:bce77eea4e8c1e68f8dbba8880bd7101622e892370eabaf9e30e7cbee56d9d23` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

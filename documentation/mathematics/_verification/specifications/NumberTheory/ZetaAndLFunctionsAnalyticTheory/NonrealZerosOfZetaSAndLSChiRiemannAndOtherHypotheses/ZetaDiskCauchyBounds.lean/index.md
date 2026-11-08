@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZetaDiskCauchyBounds.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZetaDiskCauchyBounds.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZetaDiskCauchyBounds.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZetaDiskCauchyBounds.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.ClosedDiskCauchy`](../../../../../../FunctionsOfAComplexVariable/ClosedDiskCauchy.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripMellinBounds`](../../../../../../MeasureAndIntegration/CriticalStripMellinBounds.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.ClosedDiskCauchy`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ClosedDiskCauchy.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripMellinBounds`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CriticalStripMellinBounds.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [zeta_eq_fractional](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZetaDiskCauchyBounds.lean/declarations/zeta-eq-fractional.md) | 25 | `result-track:6198a61e53cb05f32594e6715da68b30b89481b970276844de01ea565902e374` |
-| 2 | `theorem` | [norm_zeta_le](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZetaDiskCauchyBounds.lean/declarations/norm-zeta-le.md) | 35 | `result-track:8fb02691abce967ed712256d727af327affb164447d7152a4cd1aa0218bd0344` |
-| 3 | `theorem` | [disk_bounds](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZetaDiskCauchyBounds.lean/declarations/disk-bounds.md) | 59 | `result-track:81972c13bd3c5a311d0cacbeb45af4f20ab9b709f3503f80e114a3b486f95a01` |
-| 4 | `theorem` | [norm_zeta_le_on_disk](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZetaDiskCauchyBounds.lean/declarations/norm-zeta-le-on-disk.md) | 85 | `result-track:1794b22603b2ae4cad4931d674f0a3fb5d2cc4717d0004652da024330589f9cb` |
-| 5 | `theorem` | [norm_secondDeriv_zeta_le_on_inner](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZetaDiskCauchyBounds.lean/declarations/norm-secondderiv-zeta-le-on-inner.md) | 95 | `result-track:b2f7c35b90dee761e8fdb23ac09c1e809ac5622e5259faea81c2c9e4a7000a9b` |
+| 1 | `theorem` | [zeta_eq_fractional](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZetaDiskCauchyBounds.lean/declarations/zeta-eq-fractional.md) | 25 | `result-track:6198a61e53cb05f32594e6715da68b30b89481b970276844de01ea565902e374` |
+| 2 | `theorem` | [norm_zeta_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZetaDiskCauchyBounds.lean/declarations/norm-zeta-le.md) | 35 | `result-track:8fb02691abce967ed712256d727af327affb164447d7152a4cd1aa0218bd0344` |
+| 3 | `theorem` | [disk_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZetaDiskCauchyBounds.lean/declarations/disk-bounds.md) | 59 | `result-track:81972c13bd3c5a311d0cacbeb45af4f20ab9b709f3503f80e114a3b486f95a01` |
+| 4 | `theorem` | [norm_zeta_le_on_disk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZetaDiskCauchyBounds.lean/declarations/norm-zeta-le-on-disk.md) | 85 | `result-track:1794b22603b2ae4cad4931d674f0a3fb5d2cc4717d0004652da024330589f9cb` |
+| 5 | `theorem` | [norm_secondDeriv_zeta_le_on_inner](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZetaDiskCauchyBounds.lean/declarations/norm-secondderiv-zeta-le-on-inner.md) | 95 | `result-track:b2f7c35b90dee761e8fdb23ac09c1e809ac5622e5259faea81c2c9e4a7000a9b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

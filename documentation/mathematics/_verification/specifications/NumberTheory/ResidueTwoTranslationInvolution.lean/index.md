@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/ResidueTwoTranslationInvolution.lean/index.md) · [Full source](../../../../NumberTheory/ResidueTwoTranslationInvolution.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ResidueTwoTranslationInvolution.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ResidueTwoTranslationInvolution.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [Bit](../../../../NumberTheory/ResidueTwoTranslationInvolution.lean/declarations/bit.md) | 36 | `declaration-track:e5429c1718e6b3241e7d195121490a4b630e40cd2d092a5357c690e5bec0b665` |
-| 2 | `def` | [zero](../../../../NumberTheory/ResidueTwoTranslationInvolution.lean/declarations/zero.md) | 39 | `declaration-track:00ab296fdd977c3a3d0e3fe1f07cc24ebf5a7302b25a695bb5eb5d48ec791da9` |
-| 3 | `def` | [one](../../../../NumberTheory/ResidueTwoTranslationInvolution.lean/declarations/one.md) | 40 | `declaration-track:26feec6fa26e220b2a75f3f35e1aead7bd5502c5ca7e123c5428e5d50e85543a` |
-| 4 | `def` | [flip](../../../../NumberTheory/ResidueTwoTranslationInvolution.lean/declarations/flip.md) | 41 | `declaration-track:040e8db079cb39003acbfbe1952de99e68e2c45edb8e1c5ce15873c77394f951` |
-| 5 | `theorem` | [flip_ne_self](../../../../NumberTheory/ResidueTwoTranslationInvolution.lean/declarations/flip-ne-self.md) | 44 | `result-track:ccced756cd44ceece4bcfb2ff340947f8ddf399d0a4894e110609d26ee9295c1` |
-| 6 | `theorem` | [flip_flip](../../../../NumberTheory/ResidueTwoTranslationInvolution.lean/declarations/flip-flip.md) | 52 | `result-track:8827e521178ac19ec5dc9552e429b1de0b1ebea57af5e049f04a94891d595c7f` |
+| 1 | `abbrev` | [Bit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ResidueTwoTranslationInvolution.lean/declarations/bit.md) | 36 | `declaration-track:e5429c1718e6b3241e7d195121490a4b630e40cd2d092a5357c690e5bec0b665` |
+| 2 | `def` | [zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ResidueTwoTranslationInvolution.lean/declarations/zero.md) | 39 | `declaration-track:00ab296fdd977c3a3d0e3fe1f07cc24ebf5a7302b25a695bb5eb5d48ec791da9` |
+| 3 | `def` | [one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ResidueTwoTranslationInvolution.lean/declarations/one.md) | 40 | `declaration-track:26feec6fa26e220b2a75f3f35e1aead7bd5502c5ca7e123c5428e5d50e85543a` |
+| 4 | `def` | [flip](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ResidueTwoTranslationInvolution.lean/declarations/flip.md) | 41 | `declaration-track:040e8db079cb39003acbfbe1952de99e68e2c45edb8e1c5ce15873c77394f951` |
+| 5 | `theorem` | [flip_ne_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ResidueTwoTranslationInvolution.lean/declarations/flip-ne-self.md) | 44 | `result-track:ccced756cd44ceece4bcfb2ff340947f8ddf399d0a4894e110609d26ee9295c1` |
+| 6 | `theorem` | [flip_flip](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ResidueTwoTranslationInvolution.lean/declarations/flip-flip.md) | 52 | `result-track:8827e521178ac19ec5dc9552e429b1de0b1ebea57af5e049f04a94891d595c7f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

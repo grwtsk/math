@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConcreteCategoryNotationNamespacedPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConcreteCategoryNotationNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConcreteCategoryNotationNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConcreteCategoryNotationNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [explicitArgs?](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConcreteCategoryNotationNamespacedPublic.lean/declarations/explicitargs.md) | 57 | `declaration-track:4d49bf8edcabde785761ba79ea3be9c379cb856f1858ee34a07dd723905e9e87` |
-| 2 | `def` | [findOf?](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConcreteCategoryNotationNamespacedPublic.lean/declarations/findof.md) | 74 | `declaration-track:b52e38f6392dbf251a44486350b45c38fec046b9c39ec4b3aa29877a28aa91db` |
-| 3 | `elab_rules` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConcreteCategoryNotationNamespacedPublic.lean/declarations/elab-rules.md) | 100 | `declaration-track:dc8bc5188d94e0e887cb73545d7b7c978e0873a5cfcd570b2682e233ac7b10e8` |
-| 4 | `def` | [delabOf](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConcreteCategoryNotationNamespacedPublic.lean/declarations/delabof.md) | 120 | `declaration-track:bb4321ad15ed26181092a6e540e82c8c9f9756c44e6d5fd86e1cfe4c3411724f` |
+| 1 | `def` | [explicitArgs?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConcreteCategoryNotationNamespacedPublic.lean/declarations/explicitargs.md) | 57 | `declaration-track:4d49bf8edcabde785761ba79ea3be9c379cb856f1858ee34a07dd723905e9e87` |
+| 2 | `def` | [findOf?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConcreteCategoryNotationNamespacedPublic.lean/declarations/findof.md) | 74 | `declaration-track:b52e38f6392dbf251a44486350b45c38fec046b9c39ec4b3aa29877a28aa91db` |
+| 3 | `elab_rules` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConcreteCategoryNotationNamespacedPublic.lean/declarations/elab-rules.md) | 100 | `declaration-track:dc8bc5188d94e0e887cb73545d7b7c978e0873a5cfcd570b2682e233ac7b10e8` |
+| 4 | `def` | [delabOf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConcreteCategoryNotationNamespacedPublic.lean/declarations/delabof.md) | 120 | `declaration-track:bb4321ad15ed26181092a6e540e82c8c9f9756c44e6d5fd86e1cfe4c3411724f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

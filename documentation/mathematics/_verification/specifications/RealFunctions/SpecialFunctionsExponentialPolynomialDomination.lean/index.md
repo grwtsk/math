@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/SpecialFunctionsExponentialPolynomialDomination.lean/index.md) · [Full source](../../../../RealFunctions/SpecialFunctionsExponentialPolynomialDomination.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SpecialFunctionsExponentialPolynomialDomination.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SpecialFunctionsExponentialPolynomialDomination.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [polynomial_lt_exp_two_mul_div_four](../../../../RealFunctions/SpecialFunctionsExponentialPolynomialDomination.lean/declarations/polynomial-lt-exp-two-mul-div-four.md) | 33 | `result-track:38dcb2fe3be2fe4348144e2f79d02ca9e3b323663006f71d837071d3db40f8a7` |
-| 2 | `theorem` | [polynomial_lt_exp_two_mul_div_four_of_ge_threshold](../../../../RealFunctions/SpecialFunctionsExponentialPolynomialDomination.lean/declarations/polynomial-lt-exp-two-mul-div-four-of-ge-threshold.md) | 66 | `result-track:99d3debfda88e43fca30d8a1fc97eb92ef2f38b2e427655149af68b8ab5c0cd2` |
+| 1 | `theorem` | [polynomial_lt_exp_two_mul_div_four](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SpecialFunctionsExponentialPolynomialDomination.lean/declarations/polynomial-lt-exp-two-mul-div-four.md) | 33 | `result-track:38dcb2fe3be2fe4348144e2f79d02ca9e3b323663006f71d837071d3db40f8a7` |
+| 2 | `theorem` | [polynomial_lt_exp_two_mul_div_four_of_ge_threshold](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SpecialFunctionsExponentialPolynomialDomination.lean/declarations/polynomial-lt-exp-two-mul-div-four-of-ge-threshold.md) | 66 | `result-track:99d3debfda88e43fca30d8a1fc97eb92ef2f38b2e427655149af68b8ab5c0cd2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

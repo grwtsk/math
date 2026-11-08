@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/RealCompleteFieldNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/RealCompleteFieldNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RealCompleteFieldNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RealCompleteFieldNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../RealFunctions/RealCompleteFieldNamespaced.lean/declarations/instance.md) | 22 | `declaration-track:9309ee7a9d3b061894d2844d4757613460521b8ba60445c5dad5a551183061b0` |
-| 2 | `instance` | [Real.RingHom.unique](../../../../RealFunctions/RealCompleteFieldNamespaced.lean/declarations/real-ringhom-unique.md) | 25 | `declaration-track:a9385cc5e45f963d16eeed3cd3249358c3cd26d9e6b4c1f6abfc5278fe84dd6e` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RealCompleteFieldNamespaced.lean/declarations/instance.md) | 22 | `declaration-track:9309ee7a9d3b061894d2844d4757613460521b8ba60445c5dad5a551183061b0` |
+| 2 | `instance` | [Real.RingHom.unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RealCompleteFieldNamespaced.lean/declarations/real-ringhom-unique.md) | 25 | `declaration-track:a9385cc5e45f963d16eeed3cd3249358c3cd26d9e6b4c1f6abfc5278fe84dd6e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

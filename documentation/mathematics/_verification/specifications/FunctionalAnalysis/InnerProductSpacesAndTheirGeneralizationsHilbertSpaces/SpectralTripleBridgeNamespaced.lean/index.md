@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SpectralTripleBridgeNamespaced.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SpectralTripleBridgeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SpectralTripleBridgeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SpectralTripleBridgeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SpectralTripleContract](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SpectralTripleBridgeNamespaced.lean/declarations/spectraltriplecontract.md) | 28 | `declaration-track:2c28402ccbc801165bcf7cef90bcf66fd3bb28ae70b69d3976108320e87796a7` |
-| 2 | `structure` | [TimeDependentSpectralTriple](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SpectralTripleBridgeNamespaced.lean/declarations/timedependentspectraltriple.md) | 37 | `declaration-track:544e01059591c372041cb6bf51de855f539c071840a16b9e52068598c2511152` |
-| 3 | `structure` | [ZeroSpectrumBridge](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SpectralTripleBridgeNamespaced.lean/declarations/zerospectrumbridge.md) | 41 | `declaration-track:0964f71346edef35c928878887e99bd698709818210538b560c4ecc718cd373b` |
-| 4 | `theorem` | [spectral_triple_metric](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SpectralTripleBridgeNamespaced.lean/declarations/spectral-triple-metric.md) | 53 | `result-track:dfe2aff16ce69d8252541a89f25e261f2311e57602a190edee10c3f9074862d9` |
-| 5 | `theorem` | [zero_spectrum_bridge_matches](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SpectralTripleBridgeNamespaced.lean/declarations/zero-spectrum-bridge-matches.md) | 58 | `result-track:c28c5e1a370ed8f2e0145bf445fc4ebe026c76e50a0627ca83b26c475a9cb133` |
+| 1 | `structure` | [SpectralTripleContract](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SpectralTripleBridgeNamespaced.lean/declarations/spectraltriplecontract.md) | 28 | `declaration-track:2c28402ccbc801165bcf7cef90bcf66fd3bb28ae70b69d3976108320e87796a7` |
+| 2 | `structure` | [TimeDependentSpectralTriple](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SpectralTripleBridgeNamespaced.lean/declarations/timedependentspectraltriple.md) | 37 | `declaration-track:544e01059591c372041cb6bf51de855f539c071840a16b9e52068598c2511152` |
+| 3 | `structure` | [ZeroSpectrumBridge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SpectralTripleBridgeNamespaced.lean/declarations/zerospectrumbridge.md) | 41 | `declaration-track:0964f71346edef35c928878887e99bd698709818210538b560c4ecc718cd373b` |
+| 4 | `theorem` | [spectral_triple_metric](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SpectralTripleBridgeNamespaced.lean/declarations/spectral-triple-metric.md) | 53 | `result-track:dfe2aff16ce69d8252541a89f25e261f2311e57602a190edee10c3f9074862d9` |
+| 5 | `theorem` | [zero_spectrum_bridge_matches](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SpectralTripleBridgeNamespaced.lean/declarations/zero-spectrum-bridge-matches.md) | 58 | `result-track:c28c5e1a370ed8f2e0145bf445fc4ebe026c76e50a0627ca83b26c475a9cb133` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

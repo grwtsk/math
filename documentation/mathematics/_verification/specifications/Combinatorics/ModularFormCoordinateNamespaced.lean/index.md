@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ModularFormCoordinateNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/ModularFormCoordinateNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ModularFormCoordinateNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ModularFormCoordinateNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [surfaceId](../../../../Combinatorics/ModularFormCoordinateNamespaced.lean/declarations/surfaceid.md) | 16 | `declaration-track:f28508cdf84271552e373cdd6a01f41509af9453c2fbd257c46be8320824a68d` |
-| 2 | `def` | [ownsDeclaredSurface](../../../../Combinatorics/ModularFormCoordinateNamespaced.lean/declarations/ownsdeclaredsurface.md) | 17 | `declaration-track:614a1fc5821b2b74e022ae142f8a706781d734c9287143ac2d1d4561be6edd90` |
-| 3 | `def` | [crossLeafReasoningRequiresGlue](../../../../Combinatorics/ModularFormCoordinateNamespaced.lean/declarations/crossleafreasoningrequiresglue.md) | 18 | `declaration-track:ca4df5581697c613e6f6e79b03e4b39d7fe256457ff4111faaee953c23844a59` |
-| 4 | `theorem` | [surface_id_declared](../../../../Combinatorics/ModularFormCoordinateNamespaced.lean/declarations/surface-id-declared.md) | 20 | `result-track:269b1d804e15cbe5d3737f5f16263e3ae539903e17d1edc6f37c170a7eb78d3b` |
-| 5 | `theorem` | [owns_declared_surface](../../../../Combinatorics/ModularFormCoordinateNamespaced.lean/declarations/owns-declared-surface.md) | 24 | `result-track:decf5e3c17f612209677f1f79150ca786bbe0459ab61d64e222e69192c2af4f4` |
+| 1 | `def` | [surfaceId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ModularFormCoordinateNamespaced.lean/declarations/surfaceid.md) | 16 | `declaration-track:f28508cdf84271552e373cdd6a01f41509af9453c2fbd257c46be8320824a68d` |
+| 2 | `def` | [ownsDeclaredSurface](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ModularFormCoordinateNamespaced.lean/declarations/ownsdeclaredsurface.md) | 17 | `declaration-track:614a1fc5821b2b74e022ae142f8a706781d734c9287143ac2d1d4561be6edd90` |
+| 3 | `def` | [crossLeafReasoningRequiresGlue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ModularFormCoordinateNamespaced.lean/declarations/crossleafreasoningrequiresglue.md) | 18 | `declaration-track:ca4df5581697c613e6f6e79b03e4b39d7fe256457ff4111faaee953c23844a59` |
+| 4 | `theorem` | [surface_id_declared](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ModularFormCoordinateNamespaced.lean/declarations/surface-id-declared.md) | 20 | `result-track:269b1d804e15cbe5d3737f5f16263e3ae539903e17d1edc6f37c170a7eb78d3b` |
+| 5 | `theorem` | [owns_declared_surface](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ModularFormCoordinateNamespaced.lean/declarations/owns-declared-surface.md) | 24 | `result-track:decf5e3c17f612209677f1f79150ca786bbe0459ab61d64e222e69192c2af4f4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

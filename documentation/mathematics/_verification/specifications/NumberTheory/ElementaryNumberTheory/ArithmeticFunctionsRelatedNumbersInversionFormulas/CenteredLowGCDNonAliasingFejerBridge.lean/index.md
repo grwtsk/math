@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDNonAliasingFejerBridge.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDNonAliasingFejerBridge.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDNonAliasingFejerBridge.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDNonAliasingFejerBridge.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Moebius.CenteredLowGCDBilinearReindexing`](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDBilinearReindexing.lean/index.md) — import line 2; pinned internal source present.
-- [`GRWTSK.NumberTheory.Moebius.CenteredLowGCDNonAliasingFejerBounds`](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDNonAliasingFejerBounds.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.CenteredLowGCDBilinearReindexing`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDBilinearReindexing.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.CenteredLowGCDNonAliasingFejerBounds`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDNonAliasingFejerBounds.lean/index.md) — import line 3; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [nonAliasingFejer_two_mul_positiveShift_add_diagonal_eq_bilinear](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDNonAliasingFejerBridge.lean/declarations/nonaliasingfejer-two-mul-positiveshift-add-diagonal-eq-bilinear.md) | 13 | `result-track:8cd57b0910d289be547b5c42cd52522cd67bc46e91d25cd77c51812a40a113d4` |
-| 2 | `theorem` | [nonAliasingFejerPrefixWeight_centeredLowGCDBridge](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDNonAliasingFejerBridge.lean/declarations/nonaliasingfejerprefixweight-centeredlowgcdbridge.md) | 26 | `result-track:00ca82aa1a71cd02f7845c4560173512b7795fbd3a44f32a2742b2deb3b9ebbe` |
+| 1 | `theorem` | [nonAliasingFejer_two_mul_positiveShift_add_diagonal_eq_bilinear](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDNonAliasingFejerBridge.lean/declarations/nonaliasingfejer-two-mul-positiveshift-add-diagonal-eq-bilinear.md) | 13 | `result-track:8cd57b0910d289be547b5c42cd52522cd67bc46e91d25cd77c51812a40a113d4` |
+| 2 | `theorem` | [nonAliasingFejerPrefixWeight_centeredLowGCDBridge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDNonAliasingFejerBridge.lean/declarations/nonaliasingfejerprefixweight-centeredlowgcdbridge.md) | 26 | `result-track:00ca82aa1a71cd02f7845c4560173512b7795fbd3a44f32a2742b2deb3b9ebbe` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

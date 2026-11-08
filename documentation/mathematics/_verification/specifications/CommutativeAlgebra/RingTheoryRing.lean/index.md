@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/RingTheoryRing.lean/index.md) · [Full source](../../../../CommutativeAlgebra/RingTheoryRing.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryRing.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryRing.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,18 +58,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `axiom` | [Real](../../../../CommutativeAlgebra/RingTheoryRing.lean/declarations/real.md) | 14 | `declaration-track:e38a273680a6a114d5b7a7a90221d7b6f4eb6e11dc87daed48be30404c2e279c` |
-| 2 | `axiom` | [Real.field](../../../../CommutativeAlgebra/RingTheoryRing.lean/declarations/real-field.md) | 16 | `declaration-track:815db48c357327855841766960963cc300f915070a49eccd5c2533bd25cfcd03` |
-| 3 | `axiom` | [Real.linearOrder](../../../../CommutativeAlgebra/RingTheoryRing.lean/declarations/real-linearorder.md) | 17 | `declaration-track:12fec137a9724cb544750c053734ab9fa4ba6bd71d60b29fa923980a5785e18a` |
-| 4 | `axiom` | [Real.isStrictOrderedRing](../../../../CommutativeAlgebra/RingTheoryRing.lean/declarations/real-isstrictorderedring.md) | 18 | `declaration-track:77cce7b2c769de36a4a007fddfe85484b93fb991ef7af62458ba270d1ce26b3e` |
-| 5 | `example` | [(anonymous)](../../../../CommutativeAlgebra/RingTheoryRing.lean/declarations/example-source-edition-3.md) | 20 | `declaration-track:684bf793d37d1a75621217dbbd08b0c4b34a22c552cd230391ced4752de98ffd` |
-| 6 | `example` | [(anonymous)](../../../../CommutativeAlgebra/RingTheoryRing.lean/declarations/example-source-edition-6.md) | 21 | `declaration-track:d97610239e1cd49a2d0cd819b4b7ee1c7f6eb67307cfdd466933c330c53cf432` |
-| 7 | `example` | [(anonymous)](../../../../CommutativeAlgebra/RingTheoryRing.lean/declarations/example.md) | 22 | `declaration-track:0ee49bb57f5d286a6bf2186dfc9abdf0a3c588f4fa3df845720fa012b369522b` |
-| 8 | `example` | [(anonymous)](../../../../CommutativeAlgebra/RingTheoryRing.lean/declarations/example-source-edition-8.md) | 23 | `declaration-track:f8894d2fc193c4c0f57bdf283b44ae88679fb2a4a702b2b981582ff189ab5ae8` |
-| 9 | `example` | [(anonymous)](../../../../CommutativeAlgebra/RingTheoryRing.lean/declarations/example-source-edition-4.md) | 25 | `declaration-track:75d8df6845e5b344025d3f5bc85c2385accf3f9385dd1908ec81f66afff92c21` |
-| 10 | `example` | [(anonymous)](../../../../CommutativeAlgebra/RingTheoryRing.lean/declarations/example-source-edition-5.md) | 27 | `declaration-track:984eab48568c8871b62729c9b6d38bf096783691451858bbe460ef710f430472` |
-| 11 | `example` | [(anonymous)](../../../../CommutativeAlgebra/RingTheoryRing.lean/declarations/example-source-edition-7.md) | 30 | `declaration-track:ddae5f19f75132e75f1c657a93119101e453651a5d1d67bd1292891fa536ea87` |
-| 12 | `example` | [(anonymous)](../../../../CommutativeAlgebra/RingTheoryRing.lean/declarations/example-source-edition-2.md) | 31 | `declaration-track:3c6d38e4e083a30b8e3cb9f891661dbd336cf3b619196d9de4da7ead74b06a52` |
+| 1 | `axiom` | [Real](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryRing.lean/declarations/real.md) | 14 | `declaration-track:e38a273680a6a114d5b7a7a90221d7b6f4eb6e11dc87daed48be30404c2e279c` |
+| 2 | `axiom` | [Real.field](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryRing.lean/declarations/real-field.md) | 16 | `declaration-track:815db48c357327855841766960963cc300f915070a49eccd5c2533bd25cfcd03` |
+| 3 | `axiom` | [Real.linearOrder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryRing.lean/declarations/real-linearorder.md) | 17 | `declaration-track:12fec137a9724cb544750c053734ab9fa4ba6bd71d60b29fa923980a5785e18a` |
+| 4 | `axiom` | [Real.isStrictOrderedRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryRing.lean/declarations/real-isstrictorderedring.md) | 18 | `declaration-track:77cce7b2c769de36a4a007fddfe85484b93fb991ef7af62458ba270d1ce26b3e` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryRing.lean/declarations/example-source-edition-3.md) | 20 | `declaration-track:684bf793d37d1a75621217dbbd08b0c4b34a22c552cd230391ced4752de98ffd` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryRing.lean/declarations/example-source-edition-6.md) | 21 | `declaration-track:d97610239e1cd49a2d0cd819b4b7ee1c7f6eb67307cfdd466933c330c53cf432` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryRing.lean/declarations/example.md) | 22 | `declaration-track:0ee49bb57f5d286a6bf2186dfc9abdf0a3c588f4fa3df845720fa012b369522b` |
+| 8 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryRing.lean/declarations/example-source-edition-8.md) | 23 | `declaration-track:f8894d2fc193c4c0f57bdf283b44ae88679fb2a4a702b2b981582ff189ab5ae8` |
+| 9 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryRing.lean/declarations/example-source-edition-4.md) | 25 | `declaration-track:75d8df6845e5b344025d3f5bc85c2385accf3f9385dd1908ec81f66afff92c21` |
+| 10 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryRing.lean/declarations/example-source-edition-5.md) | 27 | `declaration-track:984eab48568c8871b62729c9b6d38bf096783691451858bbe460ef710f430472` |
+| 11 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryRing.lean/declarations/example-source-edition-7.md) | 30 | `declaration-track:ddae5f19f75132e75f1c657a93119101e453651a5d1d67bd1292891fa536ea87` |
+| 12 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryRing.lean/declarations/example-source-edition-2.md) | 31 | `declaration-track:3c6d38e4e083a30b8e3cb9f891661dbd336cf3b619196d9de4da7ead74b06a52` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

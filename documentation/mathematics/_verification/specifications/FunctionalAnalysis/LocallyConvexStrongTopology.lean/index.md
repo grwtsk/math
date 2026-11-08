@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/LocallyConvexStrongTopology.lean/index.md) · [Full source](../../../../FunctionalAnalysis/LocallyConvexStrongTopology.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/LocallyConvexStrongTopology.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/LocallyConvexStrongTopology.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [locallyConvexSpace](../../../../FunctionalAnalysis/LocallyConvexStrongTopology.lean/declarations/locallyconvexspace.md) | 45 | `result-track:60edf5bcca5b3d3715c46d3161dff7cc24b9ea3a14815ae5e7663af35d8ca7fb` |
-| 2 | `instance` | [instLocallyConvexSpace](../../../../FunctionalAnalysis/LocallyConvexStrongTopology.lean/declarations/instlocallyconvexspace.md) | 66 | `declaration-track:a3196563b14046975addd76d19e07d8e003b7d77961837c6be4815afd88d54bc` |
+| 1 | `theorem` | [locallyConvexSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/LocallyConvexStrongTopology.lean/declarations/locallyconvexspace.md) | 45 | `result-track:60edf5bcca5b3d3715c46d3161dff7cc24b9ea3a14815ae5e7663af35d8ca7fb` |
+| 2 | `instance` | [instLocallyConvexSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/LocallyConvexStrongTopology.lean/declarations/instlocallyconvexspace.md) | 66 | `declaration-track:a3196563b14046975addd76d19e07d8e003b7d77961837c6be4815afd88d54bc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

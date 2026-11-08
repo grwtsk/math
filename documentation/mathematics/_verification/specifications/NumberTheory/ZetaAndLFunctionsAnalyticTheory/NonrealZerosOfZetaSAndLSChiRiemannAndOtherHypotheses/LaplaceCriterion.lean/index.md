@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/LaplaceCriterion.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/LaplaceCriterion.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/LaplaceCriterion.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/LaplaceCriterion.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,9 +46,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Moebius.LaplaceTransform`](../../../../../../MeasureAndIntegration/LaplaceTransform.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.ZeroSymmetry`](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/RiemannZeroSymmetry.lean/index.md) — import line 6; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.Regularized`](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/Regularized.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.LaplaceTransform`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LaplaceTransform.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.ZeroSymmetry`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/RiemannZeroSymmetry.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.Regularized`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/Regularized.lean/index.md) — import line 7; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [regularized_laplace_identity](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/LaplaceCriterion.lean/declarations/regularized-laplace-identity.md) | 30 | `result-track:1611de961bf2bee77896ce693a0f945cb3963889520fa8490328cb6314f73e49` |
-| 2 | `theorem` | [regularized_initial_identity_of_inverse](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/LaplaceCriterion.lean/declarations/regularized-initial-identity-of-inverse.md) | 63 | `result-track:5c57a44e82ed198e774ef3257dcb74ec5a7f5b6592b1801ffe1ee69db0501f7b` |
-| 3 | `theorem` | [zeta_ne_zero_of_holomorphic_laplace](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/LaplaceCriterion.lean/declarations/zeta-ne-zero-of-holomorphic-laplace.md) | 90 | `result-track:be0a3e6af4d5eca87f475cd34445b46ca21e00afbe1591d32f331349b8ce0dc3` |
-| 4 | `theorem` | [riemannHypothesis_of_holomorphic_laplace](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/LaplaceCriterion.lean/declarations/riemannhypothesis-of-holomorphic-laplace.md) | 109 | `result-track:d6c4592407d3afd9634ba3f67bc7e79104708821cf9dfcfc2d436fedca5faa04` |
-| 5 | `theorem` | [riemannHypothesis_of_holomorphic_signedPickupLaplace](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/LaplaceCriterion.lean/declarations/riemannhypothesis-of-holomorphic-signedpickuplaplace.md) | 125 | `result-track:4fb4ff7ee7243affe90fc4d060a38377eecfe2e3af716db38b062f77dbc87e8e` |
+| 1 | `theorem` | [regularized_laplace_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/LaplaceCriterion.lean/declarations/regularized-laplace-identity.md) | 30 | `result-track:1611de961bf2bee77896ce693a0f945cb3963889520fa8490328cb6314f73e49` |
+| 2 | `theorem` | [regularized_initial_identity_of_inverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/LaplaceCriterion.lean/declarations/regularized-initial-identity-of-inverse.md) | 63 | `result-track:5c57a44e82ed198e774ef3257dcb74ec5a7f5b6592b1801ffe1ee69db0501f7b` |
+| 3 | `theorem` | [zeta_ne_zero_of_holomorphic_laplace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/LaplaceCriterion.lean/declarations/zeta-ne-zero-of-holomorphic-laplace.md) | 90 | `result-track:be0a3e6af4d5eca87f475cd34445b46ca21e00afbe1591d32f331349b8ce0dc3` |
+| 4 | `theorem` | [riemannHypothesis_of_holomorphic_laplace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/LaplaceCriterion.lean/declarations/riemannhypothesis-of-holomorphic-laplace.md) | 109 | `result-track:d6c4592407d3afd9634ba3f67bc7e79104708821cf9dfcfc2d436fedca5faa04` |
+| 5 | `theorem` | [riemannHypothesis_of_holomorphic_signedPickupLaplace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/LaplaceCriterion.lean/declarations/riemannhypothesis-of-holomorphic-signedpickuplaplace.md) | 125 | `result-track:4fb4ff7ee7243affe90fc4d060a38377eecfe2e3af716db38b062f77dbc87e8e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

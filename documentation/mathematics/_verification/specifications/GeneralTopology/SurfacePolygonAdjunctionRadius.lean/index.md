@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SurfacePolygonAdjunctionRadius.lean/index.md) · [Full source](../../../../GeneralTopology/SurfacePolygonAdjunctionRadius.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonAdjunctionRadius.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonAdjunctionRadius.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialAdjunctionRadius`](../../../../AlgebraicTopology/SurfacePolygonRadialAdjunctionRadius.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialAdjunctionRadius`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonRadialAdjunctionRadius.lean/index.md) — import line 3; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [cornerProductTopology_eq_bot](../../../../GeneralTopology/SurfacePolygonAdjunctionRadius.lean/declarations/cornerproducttopology-eq-bot.md) | 28 | `result-track:8a14ca9b901adec94705bb8c0e031f556f89f1f72cfcf4e2f5e34a77661d8f5c` |
-| 2 | `def` | [attachedRadialCoordinate](../../../../GeneralTopology/SurfacePolygonAdjunctionRadius.lean/declarations/attachedradialcoordinate.md) | 35 | `declaration-track:d11fd2c606d0310bf1c45d25172850e087f959f568ec7296bd2b85c6d163d14c` |
-| 3 | `theorem` | [attachedRadialCoordinate_continuous](../../../../GeneralTopology/SurfacePolygonAdjunctionRadius.lean/declarations/attachedradialcoordinate-continuous.md) | 41 | `result-track:9118bb2d4380ac567058011e12405218a04db3e43d551d8e7fdc845d26a74582` |
-| 4 | `theorem` | [attachedRadialCoordinate_skeleton](../../../../GeneralTopology/SurfacePolygonAdjunctionRadius.lean/declarations/attachedradialcoordinate-skeleton.md) | 53 | `result-track:e580cc549304e1de2d2ecc83de4c6be143f973e7c1a7bf6e08e73bab9b680f5f` |
-| 5 | `theorem` | [attachedRadialCoordinate_disk_source](../../../../GeneralTopology/SurfacePolygonAdjunctionRadius.lean/declarations/attachedradialcoordinate-disk-source.md) | 66 | `result-track:05e12e2428e50e7030dfe8d5829c7f92acb986e00eba13e7bca9ed5947c90ff9` |
+| 1 | `theorem` | [cornerProductTopology_eq_bot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonAdjunctionRadius.lean/declarations/cornerproducttopology-eq-bot.md) | 28 | `result-track:8a14ca9b901adec94705bb8c0e031f556f89f1f72cfcf4e2f5e34a77661d8f5c` |
+| 2 | `def` | [attachedRadialCoordinate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonAdjunctionRadius.lean/declarations/attachedradialcoordinate.md) | 35 | `declaration-track:d11fd2c606d0310bf1c45d25172850e087f959f568ec7296bd2b85c6d163d14c` |
+| 3 | `theorem` | [attachedRadialCoordinate_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonAdjunctionRadius.lean/declarations/attachedradialcoordinate-continuous.md) | 41 | `result-track:9118bb2d4380ac567058011e12405218a04db3e43d551d8e7fdc845d26a74582` |
+| 4 | `theorem` | [attachedRadialCoordinate_skeleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonAdjunctionRadius.lean/declarations/attachedradialcoordinate-skeleton.md) | 53 | `result-track:e580cc549304e1de2d2ecc83de4c6be143f973e7c1a7bf6e08e73bab9b680f5f` |
+| 5 | `theorem` | [attachedRadialCoordinate_disk_source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonAdjunctionRadius.lean/declarations/attachedradialcoordinate-disk-source.md) | 66 | `result-track:05e12e2428e50e7030dfe8d5829c7f92acb986e00eba13e7bca9ed5947c90ff9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

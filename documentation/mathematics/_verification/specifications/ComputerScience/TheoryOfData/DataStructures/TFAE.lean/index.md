@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/TFAE.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/TFAE.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/TFAE.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/TFAE.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [TFAE](../../../../../../ComputerScience/TheoryOfData/DataStructures/TFAE.lean/declarations/tfae.md) | 26 | `declaration-track:cc4ceabdf91be2ea79321612264416acf6e08b642745228ead6c587007ab52f1` |
-| 2 | `theorem` | [tfae_nil](../../../../../../ComputerScience/TheoryOfData/DataStructures/TFAE.lean/declarations/tfae-nil.md) | 30 | `result-track:ac210e5b1de6a5539c039db70e771989929a2d7ef6b83edeefad4324fa04cae9` |
-| 3 | `theorem` | [tfae_singleton](../../../../../../ComputerScience/TheoryOfData/DataStructures/TFAE.lean/declarations/tfae-singleton.md) | 34 | `result-track:b5baf9b02499a6df5daaa74327578ae6612665e1888b94db321743811098a380` |
-| 4 | `theorem` | [tfae_cons_of_mem](../../../../../../ComputerScience/TheoryOfData/DataStructures/TFAE.lean/declarations/tfae-cons-of-mem.md) | 37 | `result-track:7cb35c17a9d95683afbb13f7589455ffe4fbcfb78100d8acd166cea77e888f05` |
-| 5 | `theorem` | [tfae_cons_cons](../../../../../../ComputerScience/TheoryOfData/DataStructures/TFAE.lean/declarations/tfae-cons-cons.md) | 48 | `result-track:be518a7cddb2ea4b588bd88947407c1932b8be33a8003eedd520a4b08907d023` |
-| 6 | `theorem` | [tfae_of_forall](../../../../../../ComputerScience/TheoryOfData/DataStructures/TFAE.lean/declarations/tfae-of-forall.md) | 52 | `result-track:30be71b376aec118f0135445d9793b3b67812707b484e09c409f3315da464c03` |
-| 7 | `theorem` | [tfae_of_cycle](../../../../../../ComputerScience/TheoryOfData/DataStructures/TFAE.lean/declarations/tfae-of-cycle.md) | 56 | `result-track:37bf13c6fe2d34363bfc9b44e00c4d676f1ccbc673c1633ba8d7691d7fa2613f` |
-| 8 | `theorem` | [TFAE.out](../../../../../../ComputerScience/TheoryOfData/DataStructures/TFAE.lean/declarations/tfae-out.md) | 67 | `result-track:b2f82c7b20bf3a5c61af80cffa8945137f656c454caf42000676a525ab69aa7b` |
-| 9 | `theorem` | [forall_tfae](../../../../../../ComputerScience/TheoryOfData/DataStructures/TFAE.lean/declarations/forall-tfae.md) | 84 | `result-track:11ab25f0f9de72d7d79917a9e74fe5f34d2d5e39239dc5ac7f022f824973ab42` |
-| 10 | `theorem` | [exists_tfae](../../../../../../ComputerScience/TheoryOfData/DataStructures/TFAE.lean/declarations/exists-tfae.md) | 103 | `result-track:c78c4582b08396f7a19b286e64b9e297ac831cf4f9611267dd96f50ecdd46d77` |
+| 1 | `def` | [TFAE](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/TFAE.lean/declarations/tfae.md) | 26 | `declaration-track:cc4ceabdf91be2ea79321612264416acf6e08b642745228ead6c587007ab52f1` |
+| 2 | `theorem` | [tfae_nil](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/TFAE.lean/declarations/tfae-nil.md) | 30 | `result-track:ac210e5b1de6a5539c039db70e771989929a2d7ef6b83edeefad4324fa04cae9` |
+| 3 | `theorem` | [tfae_singleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/TFAE.lean/declarations/tfae-singleton.md) | 34 | `result-track:b5baf9b02499a6df5daaa74327578ae6612665e1888b94db321743811098a380` |
+| 4 | `theorem` | [tfae_cons_of_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/TFAE.lean/declarations/tfae-cons-of-mem.md) | 37 | `result-track:7cb35c17a9d95683afbb13f7589455ffe4fbcfb78100d8acd166cea77e888f05` |
+| 5 | `theorem` | [tfae_cons_cons](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/TFAE.lean/declarations/tfae-cons-cons.md) | 48 | `result-track:be518a7cddb2ea4b588bd88947407c1932b8be33a8003eedd520a4b08907d023` |
+| 6 | `theorem` | [tfae_of_forall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/TFAE.lean/declarations/tfae-of-forall.md) | 52 | `result-track:30be71b376aec118f0135445d9793b3b67812707b484e09c409f3315da464c03` |
+| 7 | `theorem` | [tfae_of_cycle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/TFAE.lean/declarations/tfae-of-cycle.md) | 56 | `result-track:37bf13c6fe2d34363bfc9b44e00c4d676f1ccbc673c1633ba8d7691d7fa2613f` |
+| 8 | `theorem` | [TFAE.out](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/TFAE.lean/declarations/tfae-out.md) | 67 | `result-track:b2f82c7b20bf3a5c61af80cffa8945137f656c454caf42000676a525ab69aa7b` |
+| 9 | `theorem` | [forall_tfae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/TFAE.lean/declarations/forall-tfae.md) | 84 | `result-track:11ab25f0f9de72d7d79917a9e74fe5f34d2d5e39239dc5ac7f022f824973ab42` |
+| 10 | `theorem` | [exists_tfae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/TFAE.lean/declarations/exists-tfae.md) | 103 | `result-track:c78c4582b08396f7a19b286e64b9e297ac831cf4f9611267dd96f50ecdd46d77` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

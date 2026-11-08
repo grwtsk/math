@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceActualJointMangoldtCancellationNamespacedEdition4.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceActualJointMangoldtCancellationNamespacedEdition4.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualJointMangoldtCancellationNamespacedEdition4.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualJointMangoldtCancellationNamespacedEdition4.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [jointLogKernel](../../../../MeasureAndIntegration/SourceActualJointMangoldtCancellationNamespacedEdition4.lean/declarations/jointlogkernel.md) | 24 | `declaration-track:83ae40ae23cc4b262ef76ee1a780316a10257a693097a5519c63a984ef29f788` |
-| 2 | `def` | [actualJointMangoldtReadout](../../../../MeasureAndIntegration/SourceActualJointMangoldtCancellationNamespacedEdition4.lean/declarations/actualjointmangoldtreadout.md) | 27 | `declaration-track:1fba2a5788c1bbd84f7830380cbef126bbacb471841ded652b6b71ae413f6f71` |
-| 3 | `theorem` | [expHalf_contDiff](../../../../MeasureAndIntegration/SourceActualJointMangoldtCancellationNamespacedEdition4.lean/declarations/exphalf-contdiff.md) | 31 | `result-track:a8c034948e28c9c340e5bfbcb849a9b905410869452b969a73840f736d14dcc8` |
-| 4 | `theorem` | [expHalf_deriv](../../../../MeasureAndIntegration/SourceActualJointMangoldtCancellationNamespacedEdition4.lean/declarations/exphalf-deriv.md) | 34 | `result-track:0317e45af74739799bbddac9b4ebe33d4809c39aabc71038184b8558a8b92edf` |
-| 5 | `theorem` | [actual_joint_endpoint_cancellation](../../../../MeasureAndIntegration/SourceActualJointMangoldtCancellationNamespacedEdition4.lean/declarations/actual-joint-endpoint-cancellation.md) | 39 | `result-track:7d820a45c53b9aa7d0ddb6642dc0f8642373ca685d89f42e11db356c70c5c387` |
-| 6 | `theorem` | [actual_joint_discrepancy_split](../../../../MeasureAndIntegration/SourceActualJointMangoldtCancellationNamespacedEdition4.lean/declarations/actual-joint-discrepancy-split.md) | 75 | `result-track:8582974a45eacc8f0b7a5745bffc1ed0d21e620d4a5ac2698db7ceefa5be565d` |
+| 1 | `def` | [jointLogKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualJointMangoldtCancellationNamespacedEdition4.lean/declarations/jointlogkernel.md) | 24 | `declaration-track:83ae40ae23cc4b262ef76ee1a780316a10257a693097a5519c63a984ef29f788` |
+| 2 | `def` | [actualJointMangoldtReadout](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualJointMangoldtCancellationNamespacedEdition4.lean/declarations/actualjointmangoldtreadout.md) | 27 | `declaration-track:1fba2a5788c1bbd84f7830380cbef126bbacb471841ded652b6b71ae413f6f71` |
+| 3 | `theorem` | [expHalf_contDiff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualJointMangoldtCancellationNamespacedEdition4.lean/declarations/exphalf-contdiff.md) | 31 | `result-track:a8c034948e28c9c340e5bfbcb849a9b905410869452b969a73840f736d14dcc8` |
+| 4 | `theorem` | [expHalf_deriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualJointMangoldtCancellationNamespacedEdition4.lean/declarations/exphalf-deriv.md) | 34 | `result-track:0317e45af74739799bbddac9b4ebe33d4809c39aabc71038184b8558a8b92edf` |
+| 5 | `theorem` | [actual_joint_endpoint_cancellation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualJointMangoldtCancellationNamespacedEdition4.lean/declarations/actual-joint-endpoint-cancellation.md) | 39 | `result-track:7d820a45c53b9aa7d0ddb6642dc0f8642373ca685d89f42e11db356c70c5c387` |
+| 6 | `theorem` | [actual_joint_discrepancy_split](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualJointMangoldtCancellationNamespacedEdition4.lean/declarations/actual-joint-discrepancy-split.md) | 75 | `result-track:8582974a45eacc8f0b7a5745bffc1ed0d21e620d4a5ac2698db7ceefa5be565d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/K128TransportNamespacedKResidueHeatNonnegative.lean/index.md) · [Full source](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/K128TransportNamespacedKResidueHeatNonnegative.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/K128TransportNamespacedKResidueHeatNonnegative.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/K128TransportNamespacedKResidueHeatNonnegative.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [KResidueHeat128](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/K128TransportNamespacedKResidueHeatNonnegative.lean/declarations/kresidueheat128.md) | 13 | `declaration-track:63c81c4885b9c98cc96c15f40bfcb379267e0fdfbf106d796fc4690932f45a19` |
-| 2 | `theorem` | [k_residue_heat_nonnegative](../../../../../GeneralTopology/TopologicalSpacesWithRicherStructures/K128TransportNamespacedKResidueHeatNonnegative.lean/declarations/k-residue-heat-nonnegative.md) | 16 | `result-track:d7fe894a86f3bb34a9e0fbe76bbd011e5fd4215e3c23aabbc5c11d8a44d9aceb` |
+| 1 | `def` | [KResidueHeat128](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/K128TransportNamespacedKResidueHeatNonnegative.lean/declarations/kresidueheat128.md) | 13 | `declaration-track:63c81c4885b9c98cc96c15f40bfcb379267e0fdfbf106d796fc4690932f45a19` |
+| 2 | `theorem` | [k_residue_heat_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalSpacesWithRicherStructures/K128TransportNamespacedKResidueHeatNonnegative.lean/declarations/k-residue-heat-nonnegative.md) | 16 | `result-track:d7fe894a86f3bb34a9e0fbe76bbd011e5fd4215e3c23aabbc5c11d8a44d9aceb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

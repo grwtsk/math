@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/MeromorphicOrderNamespacedPublicEdition2.lean/index.md) · [Full source](../../../../RealFunctions/MeromorphicOrderNamespacedPublicEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/MeromorphicOrderNamespacedPublicEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/MeromorphicOrderNamespacedPublicEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [rectangleDivisor](../../../../RealFunctions/MeromorphicOrderNamespacedPublicEdition2.lean/declarations/rectangledivisor.md) | 32 | `declaration-track:91dd5bed1a96f1ba305acfcb1060456f831d59229f0b1256002daae1337d70c2` |
-| 2 | `theorem` | [rectangleDivisor_apply](../../../../RealFunctions/MeromorphicOrderNamespacedPublicEdition2.lean/declarations/rectangledivisor-apply.md) | 37 | `result-track:fb0dae1cb766b5a016a7ae0b2fe5e10596f272c5e1eb034a38105b2b7d667668` |
-| 3 | `theorem` | [rectangleDivisor_support_finite](../../../../RealFunctions/MeromorphicOrderNamespacedPublicEdition2.lean/declarations/rectangledivisor-support-finite.md) | 46 | `result-track:f530e3334eba25815f31e13c7992064eb214a76675363f29c1f80f88dec4f4db` |
-| 4 | `def` | [rectangleDivisorSupportFinset](../../../../RealFunctions/MeromorphicOrderNamespacedPublicEdition2.lean/declarations/rectangledivisorsupportfinset.md) | 54 | `declaration-track:0f2778eab84389fa700dc91aa41d031da541d577007b42c8970f205117b779fe` |
-| 5 | `theorem` | [mem_rectangleDivisorSupportFinset](../../../../RealFunctions/MeromorphicOrderNamespacedPublicEdition2.lean/declarations/mem-rectangledivisorsupportfinset.md) | 60 | `result-track:d48e4265105e96d17f08d355bc4995371fe3473fcf9abbff778dc140585ade0b` |
+| 1 | `def` | [rectangleDivisor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/MeromorphicOrderNamespacedPublicEdition2.lean/declarations/rectangledivisor.md) | 32 | `declaration-track:91dd5bed1a96f1ba305acfcb1060456f831d59229f0b1256002daae1337d70c2` |
+| 2 | `theorem` | [rectangleDivisor_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/MeromorphicOrderNamespacedPublicEdition2.lean/declarations/rectangledivisor-apply.md) | 37 | `result-track:fb0dae1cb766b5a016a7ae0b2fe5e10596f272c5e1eb034a38105b2b7d667668` |
+| 3 | `theorem` | [rectangleDivisor_support_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/MeromorphicOrderNamespacedPublicEdition2.lean/declarations/rectangledivisor-support-finite.md) | 46 | `result-track:f530e3334eba25815f31e13c7992064eb214a76675363f29c1f80f88dec4f4db` |
+| 4 | `def` | [rectangleDivisorSupportFinset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/MeromorphicOrderNamespacedPublicEdition2.lean/declarations/rectangledivisorsupportfinset.md) | 54 | `declaration-track:0f2778eab84389fa700dc91aa41d031da541d577007b42c8970f205117b779fe` |
+| 5 | `theorem` | [mem_rectangleDivisorSupportFinset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/MeromorphicOrderNamespacedPublicEdition2.lean/declarations/mem-rectangledivisorsupportfinset.md) | 60 | `result-track:d48e4265105e96d17f08d355bc4995371fe3473fcf9abbff778dc140585ade0b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

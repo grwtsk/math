@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/EndpointSection.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/EndpointSection.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/EndpointSection.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/EndpointSection.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Combinatorics.DirectedGraph.OccurrencePrefix`](../../../../../Combinatorics/GraphTheory/DirectedGraphOccurrencePrefix.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.Order.Embeddings.PrefixObstruction`](../../../../../Combinatorics/OrderEmbeddingsPrefixObstructionHistoricalSourceEdition2.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.Combinatorics.DirectedGraph.OccurrencePrefix`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DirectedGraphOccurrencePrefix.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Order.Embeddings.PrefixObstruction`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OrderEmbeddingsPrefixObstructionHistoricalSourceEdition2.lean/index.md) — import line 6; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [no_preserving_endpoint_section](../../../../../Combinatorics/GraphTheory/EndpointSection.lean/declarations/no-preserving-endpoint-section.md) | 37 | `result-track:72b8c9f381388b564d03ba0a504352b42d44971d9e3875dcd11d066c6b7c54d6` |
-| 2 | `instance` | [diamondQuiver](../../../../../Combinatorics/GraphTheory/EndpointSection.lean/declarations/diamondquiver.md) | 59 | `declaration-track:d885f67e6502f9714cdb87de419fb2a7b9936b0dd8352047e911fc98e6c4c42c` |
-| 3 | `theorem` | [diamond_reachable_iff](../../../../../Combinatorics/GraphTheory/EndpointSection.lean/declarations/diamond-reachable-iff.md) | 62 | `result-track:04c4c1a9ea706cebdf555833029446e860c7db1dfe0352eb9fe1b5c95c9e5323` |
-| 4 | `theorem` | [diamond_bottom_reachable](../../../../../Combinatorics/GraphTheory/EndpointSection.lean/declarations/diamond-bottom-reachable.md) | 71 | `result-track:90606eb994b6e0726dd93ee6cbc74d0167912619d307bf2f54cee1a97cf63ad2` |
-| 5 | `def` | [diamondVertex](../../../../../Combinatorics/GraphTheory/EndpointSection.lean/declarations/diamondvertex.md) | 75 | `declaration-track:fe342327aacef42de177842bdee9bd2127d53b2250d3a56e4d1ce876c842004b` |
+| 1 | `theorem` | [no_preserving_endpoint_section](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/EndpointSection.lean/declarations/no-preserving-endpoint-section.md) | 37 | `result-track:72b8c9f381388b564d03ba0a504352b42d44971d9e3875dcd11d066c6b7c54d6` |
+| 2 | `instance` | [diamondQuiver](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/EndpointSection.lean/declarations/diamondquiver.md) | 59 | `declaration-track:d885f67e6502f9714cdb87de419fb2a7b9936b0dd8352047e911fc98e6c4c42c` |
+| 3 | `theorem` | [diamond_reachable_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/EndpointSection.lean/declarations/diamond-reachable-iff.md) | 62 | `result-track:04c4c1a9ea706cebdf555833029446e860c7db1dfe0352eb9fe1b5c95c9e5323` |
+| 4 | `theorem` | [diamond_bottom_reachable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/EndpointSection.lean/declarations/diamond-bottom-reachable.md) | 71 | `result-track:90606eb994b6e0726dd93ee6cbc74d0167912619d307bf2f54cee1a97cf63ad2` |
+| 5 | `def` | [diamondVertex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/EndpointSection.lean/declarations/diamondvertex.md) | 75 | `declaration-track:fe342327aacef42de177842bdee9bd2127d53b2250d3a56e4d1ce876c842004b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

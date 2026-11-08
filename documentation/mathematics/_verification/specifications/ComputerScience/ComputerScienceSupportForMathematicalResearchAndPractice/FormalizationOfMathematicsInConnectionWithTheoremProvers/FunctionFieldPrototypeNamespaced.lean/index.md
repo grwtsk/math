@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FunctionFieldPrototypeNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FunctionFieldPrototypeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FunctionFieldPrototypeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FunctionFieldPrototypeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [function_field_zeros_realized_by_frobenius](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FunctionFieldPrototypeNamespaced.lean/declarations/function-field-zeros-realized-by-frobenius.md) | 27 | `result-track:04f112f0daf8fcffe202727d97516445f9a8adb25d146f9ef4da11ec891b4d8c` |
-| 2 | `theorem` | [function_field_trace_identity_holds](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FunctionFieldPrototypeNamespaced.lean/declarations/function-field-trace-identity-holds.md) | 33 | `result-track:348c40c26ef2ddfe36212f4b5142675e7148e268013e7ac036cc833862000b79` |
-| 3 | `theorem` | [function_field_alignment_conclusion](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FunctionFieldPrototypeNamespaced.lean/declarations/function-field-alignment-conclusion.md) | 39 | `result-track:5adbd8fbbbfb66d3400bad6a588b390441347e9e0143e081b0c4dafef20a737e` |
+| 1 | `theorem` | [function_field_zeros_realized_by_frobenius](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FunctionFieldPrototypeNamespaced.lean/declarations/function-field-zeros-realized-by-frobenius.md) | 27 | `result-track:04f112f0daf8fcffe202727d97516445f9a8adb25d146f9ef4da11ec891b4d8c` |
+| 2 | `theorem` | [function_field_trace_identity_holds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FunctionFieldPrototypeNamespaced.lean/declarations/function-field-trace-identity-holds.md) | 33 | `result-track:348c40c26ef2ddfe36212f4b5142675e7148e268013e7ac036cc833862000b79` |
+| 3 | `theorem` | [function_field_alignment_conclusion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FunctionFieldPrototypeNamespaced.lean/declarations/function-field-alignment-conclusion.md) | 39 | `result-track:5adbd8fbbbfb66d3400bad6a588b390441347e9e0143e081b0c4dafef20a737e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

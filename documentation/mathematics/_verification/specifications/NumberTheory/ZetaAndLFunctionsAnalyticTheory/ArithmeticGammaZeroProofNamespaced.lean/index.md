@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ArithmeticGammaZeroProofNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ArithmeticGammaZeroProofNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ArithmeticGammaZeroProofNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ArithmeticGammaZeroProofNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [archimedean_zero_add_four_lt_neg_half](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ArithmeticGammaZeroProofNamespaced.lean/declarations/archimedean-zero-add-four-lt-neg-half.md) | 17 | `result-track:a7c50a5a2e1574de8961acdfe13a187208fddbd7b21d0389e368f3db8a29c033` |
+| 1 | `theorem` | [archimedean_zero_add_four_lt_neg_half](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ArithmeticGammaZeroProofNamespaced.lean/declarations/archimedean-zero-add-four-lt-neg-half.md) | 17 | `result-track:a7c50a5a2e1574de8961acdfe13a187208fddbd7b21d0389e368f3db8a29c033` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

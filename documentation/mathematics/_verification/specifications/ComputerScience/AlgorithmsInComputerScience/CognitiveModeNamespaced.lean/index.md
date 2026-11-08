@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/CognitiveModeNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/CognitiveModeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CognitiveModeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CognitiveModeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [CognitiveMode](../../../../../ComputerScience/AlgorithmsInComputerScience/CognitiveModeNamespaced.lean/declarations/cognitivemode.md) | 18 | `declaration-track:2cc736b7cd9b4d97f66a6042114a8fae6eea647cce1cc6198d846c7968c4b736` |
-| 2 | `def` | [all](../../../../../ComputerScience/AlgorithmsInComputerScience/CognitiveModeNamespaced.lean/declarations/all.md) | 34 | `declaration-track:8755ec74fa4735001d27c32ef23265cd6c26b24a0e0c3a71e2491b9bc4059baf` |
-| 3 | `def` | [toString](../../../../../ComputerScience/AlgorithmsInComputerScience/CognitiveModeNamespaced.lean/declarations/tostring.md) | 38 | `declaration-track:b427b490103d35b2c0a49cad7526031a5e35a81460db7b1f7c737d1bf427a501` |
-| 4 | `instance` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/CognitiveModeNamespaced.lean/declarations/instance.md) | 45 | `declaration-track:8f1b8cc73b736a8723e94a9699ce1654a32dc5f5b74ce232f98ee3d2f89fe99f` |
+| 1 | `inductive` | [CognitiveMode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CognitiveModeNamespaced.lean/declarations/cognitivemode.md) | 18 | `declaration-track:2cc736b7cd9b4d97f66a6042114a8fae6eea647cce1cc6198d846c7968c4b736` |
+| 2 | `def` | [all](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CognitiveModeNamespaced.lean/declarations/all.md) | 34 | `declaration-track:8755ec74fa4735001d27c32ef23265cd6c26b24a0e0c3a71e2491b9bc4059baf` |
+| 3 | `def` | [toString](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CognitiveModeNamespaced.lean/declarations/tostring.md) | 38 | `declaration-track:b427b490103d35b2c0a49cad7526031a5e35a81460db7b1f7c737d1bf427a501` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CognitiveModeNamespaced.lean/declarations/instance.md) | 45 | `declaration-track:8f1b8cc73b736a8723e94a9699ce1654a32dc5f5b74ce232f98ee3d2f89fe99f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

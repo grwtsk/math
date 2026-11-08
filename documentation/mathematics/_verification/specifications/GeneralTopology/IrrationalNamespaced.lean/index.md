@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/IrrationalNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/IrrationalNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/IrrationalNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/IrrationalNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,16 +60,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [IsGδ.setOf_irrational](../../../../GeneralTopology/IrrationalNamespaced.lean/declarations/isg-setof-irrational.md) | 45 | `result-track:fb70feeca27a55a7ef61a0e844bb493ec84a9f92e3d61a8e9e3154bf7c9fdd59` |
-| 2 | `theorem` | [dense_irrational](../../../../GeneralTopology/IrrationalNamespaced.lean/declarations/dense-irrational.md) | 49 | `result-track:f4dbd80ac38b539d954ccb327e5ee054958d82adf3b997dc3c9b2aca2a002887` |
-| 3 | `theorem` | [eventually_residual_irrational](../../../../GeneralTopology/IrrationalNamespaced.lean/declarations/eventually-residual-irrational.md) | 56 | `result-track:ed59e3b660f405f2258eb40a45fdc09f04db441f801566dcd55b88de82d7ca07` |
-| 4 | `instance` | [(anonymous)](../../../../GeneralTopology/IrrationalNamespaced.lean/declarations/instance-source-edition-3.md) | 63 | `declaration-track:d1d12bed5e398bb0d474b39db1838c1477235772cd16804402eee875b4b4ec26` |
-| 5 | `instance` | [(anonymous)](../../../../GeneralTopology/IrrationalNamespaced.lean/declarations/instance-source-edition-4.md) | 68 | `declaration-track:fccaa9ca5a42a505e59be4661984c1f9f144cb32f71ec8d2513afd166018e9e9` |
-| 6 | `instance` | [(anonymous)](../../../../GeneralTopology/IrrationalNamespaced.lean/declarations/instance.md) | 71 | `declaration-track:3d3be07c57dddbee57492b8c7fe3918b2c95676ef66e5ebff27972b1ce151f73` |
-| 7 | `instance` | [(anonymous)](../../../../GeneralTopology/IrrationalNamespaced.lean/declarations/instance-source-edition-2.md) | 74 | `declaration-track:6e78f1725fd8c214bdbf5a621b0ac21f62bda0549ae5ea0b917d228ae7677a83` |
-| 8 | `theorem` | [eventually_forall_le_dist_cast_div](../../../../GeneralTopology/IrrationalNamespaced.lean/declarations/eventually-forall-le-dist-cast-div.md) | 79 | `result-track:f185d4f0a7316516d01afc63a2ab40eff666fe0a9ba410bf161989e64bbf26b0` |
-| 9 | `theorem` | [eventually_forall_le_dist_cast_div_of_denom_le](../../../../GeneralTopology/IrrationalNamespaced.lean/declarations/eventually-forall-le-dist-cast-div-of-denom-le.md) | 92 | `result-track:ba0cb1e778382367ac50672ee8794400ad9487bb61082a0ffc8faf4d13d93439` |
-| 10 | `theorem` | [eventually_forall_le_dist_cast_rat_of_den_le](../../../../GeneralTopology/IrrationalNamespaced.lean/declarations/eventually-forall-le-dist-cast-rat-of-den-le.md) | 96 | `result-track:18d7d5ffbf2074c0f3047c70792c00a6160893ae207db87feaddb829fb99a059` |
+| 1 | `theorem` | [IsGδ.setOf_irrational](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/IrrationalNamespaced.lean/declarations/isg-setof-irrational.md) | 45 | `result-track:fb70feeca27a55a7ef61a0e844bb493ec84a9f92e3d61a8e9e3154bf7c9fdd59` |
+| 2 | `theorem` | [dense_irrational](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/IrrationalNamespaced.lean/declarations/dense-irrational.md) | 49 | `result-track:f4dbd80ac38b539d954ccb327e5ee054958d82adf3b997dc3c9b2aca2a002887` |
+| 3 | `theorem` | [eventually_residual_irrational](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/IrrationalNamespaced.lean/declarations/eventually-residual-irrational.md) | 56 | `result-track:ed59e3b660f405f2258eb40a45fdc09f04db441f801566dcd55b88de82d7ca07` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/IrrationalNamespaced.lean/declarations/instance-source-edition-3.md) | 63 | `declaration-track:d1d12bed5e398bb0d474b39db1838c1477235772cd16804402eee875b4b4ec26` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/IrrationalNamespaced.lean/declarations/instance-source-edition-4.md) | 68 | `declaration-track:fccaa9ca5a42a505e59be4661984c1f9f144cb32f71ec8d2513afd166018e9e9` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/IrrationalNamespaced.lean/declarations/instance.md) | 71 | `declaration-track:3d3be07c57dddbee57492b8c7fe3918b2c95676ef66e5ebff27972b1ce151f73` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/IrrationalNamespaced.lean/declarations/instance-source-edition-2.md) | 74 | `declaration-track:6e78f1725fd8c214bdbf5a621b0ac21f62bda0549ae5ea0b917d228ae7677a83` |
+| 8 | `theorem` | [eventually_forall_le_dist_cast_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/IrrationalNamespaced.lean/declarations/eventually-forall-le-dist-cast-div.md) | 79 | `result-track:f185d4f0a7316516d01afc63a2ab40eff666fe0a9ba410bf161989e64bbf26b0` |
+| 9 | `theorem` | [eventually_forall_le_dist_cast_div_of_denom_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/IrrationalNamespaced.lean/declarations/eventually-forall-le-dist-cast-div-of-denom-le.md) | 92 | `result-track:ba0cb1e778382367ac50672ee8794400ad9487bb61082a0ffc8faf4d13d93439` |
+| 10 | `theorem` | [eventually_forall_le_dist_cast_rat_of_den_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/IrrationalNamespaced.lean/declarations/eventually-forall-le-dist-cast-rat-of-den-le.md) | 96 | `result-track:18d7d5ffbf2074c0f3047c70792c00a6160893ae207db87feaddb829fb99a059` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DampingNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DampingNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DampingNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DampingNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [DampingLaw](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DampingNamespaced.lean/declarations/dampinglaw.md) | 20 | `declaration-track:de5ee5ae773f57188c4fbcc63384337962d6431a15e9c10b13feca367a5d124a` |
-| 2 | `def` | [dampedMap](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DampingNamespaced.lean/declarations/dampedmap.md) | 25 | `declaration-track:d538a4e9e7d6ea999d5c92016c1688f8926132f3f2bf5cc1ec1ec2254d359217` |
-| 3 | `theorem` | [damping_preserves_fixed_points](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DampingNamespaced.lean/declarations/damping-preserves-fixed-points.md) | 32 | `result-track:b76dae1c1bda62109cb3a964e1bed3c8d9a048e2d74c677369fe9cc3c27a1390` |
-| 4 | `structure` | [DampingAdmissionCertificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DampingNamespaced.lean/declarations/dampingadmissioncertificate.md) | 48 | `declaration-track:ad6c8f0fca343bf178f2bf6875ac050d882cf44597bbbcc7d2d9822bd83179cf` |
-| 5 | `structure` | [AdmittedDamping](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DampingNamespaced.lean/declarations/admitteddamping.md) | 62 | `declaration-track:b9584a84ce716341a99f7f0c6c00a444174fd964b43508dc08f3e1e797f2795d` |
-| 6 | `theorem` | [admitted_damping_has_separate_contractivity_evidence](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DampingNamespaced.lean/declarations/admitted-damping-has-separate-contractivity-evidence.md) | 79 | `result-track:55ca6538659a9e59b4a110c75f3c29cebecdf54268f36c5ccafe9e6bb82a5079` |
-| 7 | `theorem` | [admitted_damping_requires_owner_reference](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DampingNamespaced.lean/declarations/admitted-damping-requires-owner-reference.md) | 90 | `result-track:5fe408477b3d185019567070a32ba5795c6a99065bb2cf70a432cc0ad46f86e9` |
+| 1 | `structure` | [DampingLaw](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DampingNamespaced.lean/declarations/dampinglaw.md) | 20 | `declaration-track:de5ee5ae773f57188c4fbcc63384337962d6431a15e9c10b13feca367a5d124a` |
+| 2 | `def` | [dampedMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DampingNamespaced.lean/declarations/dampedmap.md) | 25 | `declaration-track:d538a4e9e7d6ea999d5c92016c1688f8926132f3f2bf5cc1ec1ec2254d359217` |
+| 3 | `theorem` | [damping_preserves_fixed_points](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DampingNamespaced.lean/declarations/damping-preserves-fixed-points.md) | 32 | `result-track:b76dae1c1bda62109cb3a964e1bed3c8d9a048e2d74c677369fe9cc3c27a1390` |
+| 4 | `structure` | [DampingAdmissionCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DampingNamespaced.lean/declarations/dampingadmissioncertificate.md) | 48 | `declaration-track:ad6c8f0fca343bf178f2bf6875ac050d882cf44597bbbcc7d2d9822bd83179cf` |
+| 5 | `structure` | [AdmittedDamping](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DampingNamespaced.lean/declarations/admitteddamping.md) | 62 | `declaration-track:b9584a84ce716341a99f7f0c6c00a444174fd964b43508dc08f3e1e797f2795d` |
+| 6 | `theorem` | [admitted_damping_has_separate_contractivity_evidence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DampingNamespaced.lean/declarations/admitted-damping-has-separate-contractivity-evidence.md) | 79 | `result-track:55ca6538659a9e59b4a110c75f3c29cebecdf54268f36c5ccafe9e6bb82a5079` |
+| 7 | `theorem` | [admitted_damping_requires_owner_reference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DampingNamespaced.lean/declarations/admitted-damping-requires-owner-reference.md) | 90 | `result-track:5fe408477b3d185019567070a32ba5795c6a99065bb2cf70a432cc0ad46f86e9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

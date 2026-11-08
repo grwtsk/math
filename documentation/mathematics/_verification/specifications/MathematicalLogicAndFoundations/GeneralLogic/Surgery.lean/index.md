@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Surgery.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Surgery.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Surgery.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Surgery.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [BeaconPreservationCertificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Surgery.lean/declarations/beaconpreservationcertificate.md) | 18 | `declaration-track:60f7ef8a548ece8228dad2d7b91ccae80d9e175dd573f4ae33c667a45858257b` |
-| 2 | `inductive` | [BeaconBoundaryDecision](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Surgery.lean/declarations/beaconboundarydecision.md) | 34 | `declaration-track:728e4f22a9cb11b15f6846b0698a7e20d7b169e6b9c6395117120ddcc08cab75` |
-| 3 | `def` | [fixedBeaconCertificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Surgery.lean/declarations/fixedbeaconcertificate.md) | 47 | `declaration-track:d084add79879111121e17ed95920360a3074adda5943e84fc36a85205140560d` |
-| 4 | `theorem` | [BeaconPreservationCertificate.labels_not_merged](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Surgery.lean/declarations/beaconpreservationcertificate-labels-not-merged.md) | 59 | `result-track:104bac0b455f57de45a51fb8ba2ec3a5388eb4dd8b256f8a4fac53f6b3682e0b` |
-| 5 | `theorem` | [BeaconPreservationCertificate.beacons_not_merged](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Surgery.lean/declarations/beaconpreservationcertificate-beacons-not-merged.md) | 74 | `result-track:3467ac6ddb0ef012e2390fb1e6e7c891fccf10e6d72104f137bd2001690688e2` |
+| 1 | `structure` | [BeaconPreservationCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Surgery.lean/declarations/beaconpreservationcertificate.md) | 18 | `declaration-track:60f7ef8a548ece8228dad2d7b91ccae80d9e175dd573f4ae33c667a45858257b` |
+| 2 | `inductive` | [BeaconBoundaryDecision](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Surgery.lean/declarations/beaconboundarydecision.md) | 34 | `declaration-track:728e4f22a9cb11b15f6846b0698a7e20d7b169e6b9c6395117120ddcc08cab75` |
+| 3 | `def` | [fixedBeaconCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Surgery.lean/declarations/fixedbeaconcertificate.md) | 47 | `declaration-track:d084add79879111121e17ed95920360a3074adda5943e84fc36a85205140560d` |
+| 4 | `theorem` | [BeaconPreservationCertificate.labels_not_merged](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Surgery.lean/declarations/beaconpreservationcertificate-labels-not-merged.md) | 59 | `result-track:104bac0b455f57de45a51fb8ba2ec3a5388eb4dd8b256f8a4fac53f6b3682e0b` |
+| 5 | `theorem` | [BeaconPreservationCertificate.beacons_not_merged](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Surgery.lean/declarations/beaconpreservationcertificate-beacons-not-merged.md) | 74 | `result-track:3467ac6ddb0ef012e2390fb1e6e7c891fccf10e6d72104f137bd2001690688e2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubpresheafSieves.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubpresheafSieves.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubpresheafSieves.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubpresheafSieves.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [sieveOfSection](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubpresheafSieves.lean/declarations/sieveofsection.md) | 29 | `declaration-track:45b0bfe1b95911729bedf90b940f83c7a2557fb1c1a9bdef0da21fbd9c359fd8` |
-| 2 | `def` | [familyOfElementsOfSection](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubpresheafSieves.lean/declarations/familyofelementsofsection.md) | 37 | `declaration-track:c5076fe244a17067f47ff2fc8072c7ec1966ce5490d027a0ed78233f02ac3359` |
-| 3 | `theorem` | [family_of_elements_compatible](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubpresheafSieves.lean/declarations/family-of-elements-compatible.md) | 40 | `result-track:6f7464504034a3668b082fbd27f5908f1a1cdd5a928b131996da3948ae8a99b6` |
+| 1 | `def` | [sieveOfSection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubpresheafSieves.lean/declarations/sieveofsection.md) | 29 | `declaration-track:45b0bfe1b95911729bedf90b940f83c7a2557fb1c1a9bdef0da21fbd9c359fd8` |
+| 2 | `def` | [familyOfElementsOfSection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubpresheafSieves.lean/declarations/familyofelementsofsection.md) | 37 | `declaration-track:c5076fe244a17067f47ff2fc8072c7ec1966ce5490d027a0ed78233f02ac3359` |
+| 3 | `theorem` | [family_of_elements_compatible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubpresheafSieves.lean/declarations/family-of-elements-compatible.md) | 40 | `result-track:6f7464504034a3668b082fbd27f5908f1a1cdd5a928b131996da3948ae8a99b6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

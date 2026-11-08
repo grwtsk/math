@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../DifferentialGeometry/ManifoldMetrizableNamespaced.lean/index.md) · [Full source](../../../../DifferentialGeometry/ManifoldMetrizableNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/ManifoldMetrizableNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/ManifoldMetrizableNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,7 +60,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Manifold.metrizableSpace](../../../../DifferentialGeometry/ManifoldMetrizableNamespaced.lean/declarations/manifold-metrizablespace.md) | 31 | `result-track:ca78a87ae7da20299728d73c200a756b8893b2eef39b0aed4a1ea3395ece333d` |
+| 1 | `theorem` | [Manifold.metrizableSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/ManifoldMetrizableNamespaced.lean/declarations/manifold-metrizablespace.md) | 31 | `result-track:ca78a87ae7da20299728d73c200a756b8893b2eef39b0aed4a1ea3395ece333d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

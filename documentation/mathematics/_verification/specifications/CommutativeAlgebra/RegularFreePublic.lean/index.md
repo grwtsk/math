@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/RegularFreePublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/RegularFreePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RegularFreePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RegularFreePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/RegularFreePublic.lean/declarations/instance.md) | 29 | `declaration-track:3ebedeb4bfcf307fd281de788aba6d8c7801b896d74e70258d3da40d199172e9` |
-| 2 | `lemma` | [Module.free_quotSMulTop_iff_free](../../../../CommutativeAlgebra/RegularFreePublic.lean/declarations/module-free-quotsmultop-iff-free.md) | 34 | `result-track:8992718fdf906cf18142faba26025068ece986e22ffb45bdffe795df3dd6ab59` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RegularFreePublic.lean/declarations/instance.md) | 29 | `declaration-track:3ebedeb4bfcf307fd281de788aba6d8c7801b896d74e70258d3da40d199172e9` |
+| 2 | `lemma` | [Module.free_quotSMulTop_iff_free](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RegularFreePublic.lean/declarations/module-free-quotsmultop-iff-free.md) | 34 | `result-track:8992718fdf906cf18142faba26025068ece986e22ffb45bdffe795df3dd6ab59` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

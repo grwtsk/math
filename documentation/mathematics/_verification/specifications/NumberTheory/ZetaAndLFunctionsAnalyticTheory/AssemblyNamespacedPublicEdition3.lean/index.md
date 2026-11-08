@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyNamespacedPublicEdition3.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyNamespacedPublicEdition3.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyNamespacedPublicEdition3.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyNamespacedPublicEdition3.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [PrimitiveCharacterHalfPlusEpsilonFamily](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyNamespacedPublicEdition3.lean/declarations/primitivecharacterhalfplusepsilonfamily.md) | 34 | `declaration-track:179449a4c3d61703914aeb42510a90570ade7dcab65a93ffc433daa00aac6fbe` |
-| 2 | `def` | [UniformHybridDirichletHalfPlusEpsilon](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyNamespacedPublicEdition3.lean/declarations/uniformhybriddirichlethalfplusepsilon.md) | 44 | `declaration-track:0fff66af2fc77e4db8c936b9e10652dbe102e7db90847e1a62518a15fa314467` |
-| 3 | `theorem` | [primitiveCharacterHalfPlusEpsilonFamily_implies_dirichletGRH](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyNamespacedPublicEdition3.lean/declarations/primitivecharacterhalfplusepsilonfamily-implies-dirichletgrh.md) | 58 | `result-track:0783dc20f3c7f569d0ff664b3afb62e48d93c4886230bd7fefe52c15cfbcf452` |
-| 4 | `theorem` | [dirichletGRH_implies_primitiveCharacterHalfPlusEpsilonFamily](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyNamespacedPublicEdition3.lean/declarations/dirichletgrh-implies-primitivecharacterhalfplusepsilonfamily.md) | 84 | `result-track:6396b0f46801dfe73c938e9faefde4d92f109daafb22e1b6652bba56331adf3f` |
-| 5 | `theorem` | [dirichletGRH_iff_halfPlusEpsilonFamily](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyNamespacedPublicEdition3.lean/declarations/dirichletgrh-iff-halfplusepsilonfamily.md) | 103 | `result-track:a9853911f7cb2d530ef05428c987f771cccb989d4fa1be16a90671821a097a80` |
+| 1 | `def` | [PrimitiveCharacterHalfPlusEpsilonFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyNamespacedPublicEdition3.lean/declarations/primitivecharacterhalfplusepsilonfamily.md) | 34 | `declaration-track:179449a4c3d61703914aeb42510a90570ade7dcab65a93ffc433daa00aac6fbe` |
+| 2 | `def` | [UniformHybridDirichletHalfPlusEpsilon](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyNamespacedPublicEdition3.lean/declarations/uniformhybriddirichlethalfplusepsilon.md) | 44 | `declaration-track:0fff66af2fc77e4db8c936b9e10652dbe102e7db90847e1a62518a15fa314467` |
+| 3 | `theorem` | [primitiveCharacterHalfPlusEpsilonFamily_implies_dirichletGRH](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyNamespacedPublicEdition3.lean/declarations/primitivecharacterhalfplusepsilonfamily-implies-dirichletgrh.md) | 58 | `result-track:0783dc20f3c7f569d0ff664b3afb62e48d93c4886230bd7fefe52c15cfbcf452` |
+| 4 | `theorem` | [dirichletGRH_implies_primitiveCharacterHalfPlusEpsilonFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyNamespacedPublicEdition3.lean/declarations/dirichletgrh-implies-primitivecharacterhalfplusepsilonfamily.md) | 84 | `result-track:6396b0f46801dfe73c938e9faefde4d92f109daafb22e1b6652bba56331adf3f` |
+| 5 | `theorem` | [dirichletGRH_iff_halfPlusEpsilonFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyNamespacedPublicEdition3.lean/declarations/dirichletgrh-iff-halfplusepsilonfamily.md) | 103 | `result-track:a9853911f7cb2d530ef05428c987f771cccb989d4fa1be16a90671821a097a80` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

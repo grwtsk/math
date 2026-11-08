@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ImplicitUniversesNamespacedEdition2.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ImplicitUniversesNamespacedEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ImplicitUniversesNamespacedEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ImplicitUniversesNamespacedEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `axiom` | [test_sorry](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ImplicitUniversesNamespacedEdition2.lean/declarations/test-sorry.md) | 12 | `declaration-track:964aa6baf8275785929b2fd19a5d36a9df9acc1491b04e3496b1d3b74eb9e211` |
-| 2 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ImplicitUniversesNamespacedEdition2.lean/declarations/example-source-edition-3.md) | 13 | `declaration-track:8d30b07b81c884368ead748523e19dacf45c89b0b05adee0c47e7e5b6bf5d346` |
-| 3 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ImplicitUniversesNamespacedEdition2.lean/declarations/example-source-edition-2.md) | 23 | `declaration-track:740f48c8ab70745963c371703549793399de46b315e9f1ada463fadbecabd60b` |
-| 4 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ImplicitUniversesNamespacedEdition2.lean/declarations/example.md) | 33 | `declaration-track:559598440451eb3daa9187994ae8ebdd2a455605115cbbe8a42ef6ade7538c3f` |
-| 5 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ImplicitUniversesNamespacedEdition2.lean/declarations/example-source-edition-4.md) | 43 | `declaration-track:dec4892128f87f318dd0ad8d2ba1ef5438bfeac1248b155d0da56626e53889ad` |
+| 1 | `axiom` | [test_sorry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ImplicitUniversesNamespacedEdition2.lean/declarations/test-sorry.md) | 12 | `declaration-track:964aa6baf8275785929b2fd19a5d36a9df9acc1491b04e3496b1d3b74eb9e211` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ImplicitUniversesNamespacedEdition2.lean/declarations/example-source-edition-3.md) | 13 | `declaration-track:8d30b07b81c884368ead748523e19dacf45c89b0b05adee0c47e7e5b6bf5d346` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ImplicitUniversesNamespacedEdition2.lean/declarations/example-source-edition-2.md) | 23 | `declaration-track:740f48c8ab70745963c371703549793399de46b315e9f1ada463fadbecabd60b` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ImplicitUniversesNamespacedEdition2.lean/declarations/example.md) | 33 | `declaration-track:559598440451eb3daa9187994ae8ebdd2a455605115cbbe8a42ef6ade7538c3f` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ImplicitUniversesNamespacedEdition2.lean/declarations/example-source-edition-4.md) | 43 | `declaration-track:dec4892128f87f318dd0ad8d2ba1ef5438bfeac1248b155d0da56626e53889ad` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualAdaptiveSharpHeight.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualAdaptiveSharpHeight.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualAdaptiveSharpHeight.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualAdaptiveSharpHeight.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualAdaptiveSharpHeight](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualAdaptiveSharpHeight.lean/declarations/actualadaptivesharpheight.md) | 13 | `declaration-track:87d12eada335885cf8817c69a3187e78ef264c2217235ecb206416aeddd617fd` |
-| 2 | `def` | [actualAdaptiveSharpTailCost](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualAdaptiveSharpHeight.lean/declarations/actualadaptivesharptailcost.md) | 16 | `declaration-track:dc523ffc77531c3343901a9852e556ed8f19ce9d9f28cf621c225a25820161a0` |
-| 3 | `theorem` | [six_factor_lower](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualAdaptiveSharpHeight.lean/declarations/six-factor-lower.md) | 19 | `result-track:08eec1d1a1672834fb6ae747d3f4789ba44be87e3ef334db90c67d88f823c36c` |
-| 4 | `theorem` | [actualAdaptiveSharpHeight_ge_four](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualAdaptiveSharpHeight.lean/declarations/actualadaptivesharpheight-ge-four.md) | 34 | `result-track:96e6b76a1092762e280ff182e0d4ce58491ca66973bab21defd0b07074e4bf9d` |
-| 5 | `theorem` | [actualAdaptiveSharpHeight_fifth_power](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualAdaptiveSharpHeight.lean/declarations/actualadaptivesharpheight-fifth-power.md) | 58 | `result-track:c7af0797fd7480ec3d4b75eaa33e0a59022008c231909e97e7a2afde8cdcdd3d` |
-| 6 | `theorem` | [actualAdaptiveSharpHeight_log](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualAdaptiveSharpHeight.lean/declarations/actualadaptivesharpheight-log.md) | 72 | `result-track:d1dda0dc1697d4fc67ec0632865ed301de4cae4109d1606bdfc8bb315d194a98` |
-| 7 | `theorem` | [actualAdaptiveSharpTail_uniform_bound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualAdaptiveSharpHeight.lean/declarations/actualadaptivesharptail-uniform-bound.md) | 81 | `result-track:7fb832a4748517c813172d0ff8d1cb061116f753dd70c4481ff0a16bd689a861` |
+| 1 | `def` | [actualAdaptiveSharpHeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualAdaptiveSharpHeight.lean/declarations/actualadaptivesharpheight.md) | 13 | `declaration-track:87d12eada335885cf8817c69a3187e78ef264c2217235ecb206416aeddd617fd` |
+| 2 | `def` | [actualAdaptiveSharpTailCost](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualAdaptiveSharpHeight.lean/declarations/actualadaptivesharptailcost.md) | 16 | `declaration-track:dc523ffc77531c3343901a9852e556ed8f19ce9d9f28cf621c225a25820161a0` |
+| 3 | `theorem` | [six_factor_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualAdaptiveSharpHeight.lean/declarations/six-factor-lower.md) | 19 | `result-track:08eec1d1a1672834fb6ae747d3f4789ba44be87e3ef334db90c67d88f823c36c` |
+| 4 | `theorem` | [actualAdaptiveSharpHeight_ge_four](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualAdaptiveSharpHeight.lean/declarations/actualadaptivesharpheight-ge-four.md) | 34 | `result-track:96e6b76a1092762e280ff182e0d4ce58491ca66973bab21defd0b07074e4bf9d` |
+| 5 | `theorem` | [actualAdaptiveSharpHeight_fifth_power](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualAdaptiveSharpHeight.lean/declarations/actualadaptivesharpheight-fifth-power.md) | 58 | `result-track:c7af0797fd7480ec3d4b75eaa33e0a59022008c231909e97e7a2afde8cdcdd3d` |
+| 6 | `theorem` | [actualAdaptiveSharpHeight_log](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualAdaptiveSharpHeight.lean/declarations/actualadaptivesharpheight-log.md) | 72 | `result-track:d1dda0dc1697d4fc67ec0632865ed301de4cae4109d1606bdfc8bb315d194a98` |
+| 7 | `theorem` | [actualAdaptiveSharpTail_uniform_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualAdaptiveSharpHeight.lean/declarations/actualadaptivesharptail-uniform-bound.md) | 81 | `result-track:7fb832a4748517c813172d0ff8d1cb061116f753dd70c4481ff0a16bd689a861` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

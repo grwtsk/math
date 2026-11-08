@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FiveModeCoshEnvelope.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FiveModeCoshEnvelope.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FiveModeCoshEnvelope.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FiveModeCoshEnvelope.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_cosh_envelope_le_endpoint](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FiveModeCoshEnvelope.lean/declarations/actual-cosh-envelope-le-endpoint.md) | 13 | `result-track:f4962623e43d6562dd37f6daec8d8bb5f135d884a8394225515f47decea943bd` |
-| 2 | `theorem` | [actual_cosh_envelope_le_rational_max](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FiveModeCoshEnvelope.lean/declarations/actual-cosh-envelope-le-rational-max.md) | 38 | `result-track:c083f4693d7ef871a5c97d2e648607a787621ce17f352cbfb1667773a8510f3e` |
+| 1 | `theorem` | [actual_cosh_envelope_le_endpoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FiveModeCoshEnvelope.lean/declarations/actual-cosh-envelope-le-endpoint.md) | 13 | `result-track:f4962623e43d6562dd37f6daec8d8bb5f135d884a8394225515f47decea943bd` |
+| 2 | `theorem` | [actual_cosh_envelope_le_rational_max](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FiveModeCoshEnvelope.lean/declarations/actual-cosh-envelope-le-rational-max.md) | 38 | `result-track:c083f4693d7ef871a5c97d2e648607a787621ce17f352cbfb1667773a8510f3e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

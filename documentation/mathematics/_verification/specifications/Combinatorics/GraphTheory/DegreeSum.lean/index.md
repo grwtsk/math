@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/DegreeSum.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/DegreeSum.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DegreeSum.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DegreeSum.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,16 +60,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [dart_fst_fiber](../../../../../Combinatorics/GraphTheory/DegreeSum.lean/declarations/dart-fst-fiber.md) | 58 | `result-track:94dc6179cd615198da7ffb0089b51f636e8899936a3fcbb27f36e5b3b329274a` |
-| 2 | `theorem` | [dart_fst_fiber_card_eq_degree](../../../../../Combinatorics/GraphTheory/DegreeSum.lean/declarations/dart-fst-fiber-card-eq-degree.md) | 69 | `result-track:0c4448cb2e86cb0c4b21d4996dd56bb8245d8ceee506942f32cdcaec84ad9e00` |
-| 3 | `theorem` | [dart_card_eq_sum_degrees](../../../../../Combinatorics/GraphTheory/DegreeSum.lean/declarations/dart-card-eq-sum-degrees.md) | 75 | `result-track:5d34ad94c54a4381f393baae3ebc37441ed8984f123ecf41c9bb8d71451ed138` |
-| 4 | `theorem` | [Dart.edge_fiber](../../../../../Combinatorics/GraphTheory/DegreeSum.lean/declarations/dart-edge-fiber.md) | 83 | `result-track:c0da674c2dff6846cdbf8b5a01dd9e42567f8d9609659fc5bf45ea21debcf9ba` |
-| 5 | `theorem` | [dart_edge_fiber_card](../../../../../Combinatorics/GraphTheory/DegreeSum.lean/declarations/dart-edge-fiber-card.md) | 90 | `result-track:93981aca3f0abbed76beb3b7bcf02e8ff99cae7673e182f44a6b4eddd8516881` |
-| 6 | `theorem` | [dart_card_eq_twice_card_edges](../../../../../Combinatorics/GraphTheory/DegreeSum.lean/declarations/dart-card-eq-twice-card-edges.md) | 100 | `result-track:0f92af903823bda9d148eb24b004911aaf08e326745fa3ceee8cc295d7057a80` |
-| 7 | `theorem` | [sum_degrees_eq_twice_card_edges](../../../../../Combinatorics/GraphTheory/DegreeSum.lean/declarations/sum-degrees-eq-twice-card-edges.md) | 112 | `result-track:6c972ceae7de00e8a0b64099867b1ee9ea12da68f704be5180febd6b3fafbd9f` |
-| 8 | `theorem` | [even_card_odd_degree_vertices](../../../../../Combinatorics/GraphTheory/DegreeSum.lean/declarations/even-card-odd-degree-vertices.md) | 119 | `result-track:9d2660bc11e31491a4fa1331ea568ec45652615e54d2a1d7e0090db6038e82e8` |
-| 9 | `theorem` | [odd_card_odd_degree_vertices_ne](../../../../../Combinatorics/GraphTheory/DegreeSum.lean/declarations/odd-card-odd-degree-vertices-ne.md) | 136 | `result-track:1f61f71a36ea2c1c092bdd0953298718f42bc1652a0fc611f09073efc14a4ff4` |
-| 10 | `theorem` | [exists_ne_odd_degree_of_exists_odd_degree](../../../../../Combinatorics/GraphTheory/DegreeSum.lean/declarations/exists-ne-odd-degree-of-exists-odd-degree.md) | 158 | `result-track:c9f6b5d5e111e1ca2ccace58350b86c230f7d8dc305d50b9c1d15410ac55926b` |
+| 1 | `theorem` | [dart_fst_fiber](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DegreeSum.lean/declarations/dart-fst-fiber.md) | 58 | `result-track:94dc6179cd615198da7ffb0089b51f636e8899936a3fcbb27f36e5b3b329274a` |
+| 2 | `theorem` | [dart_fst_fiber_card_eq_degree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DegreeSum.lean/declarations/dart-fst-fiber-card-eq-degree.md) | 69 | `result-track:0c4448cb2e86cb0c4b21d4996dd56bb8245d8ceee506942f32cdcaec84ad9e00` |
+| 3 | `theorem` | [dart_card_eq_sum_degrees](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DegreeSum.lean/declarations/dart-card-eq-sum-degrees.md) | 75 | `result-track:5d34ad94c54a4381f393baae3ebc37441ed8984f123ecf41c9bb8d71451ed138` |
+| 4 | `theorem` | [Dart.edge_fiber](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DegreeSum.lean/declarations/dart-edge-fiber.md) | 83 | `result-track:c0da674c2dff6846cdbf8b5a01dd9e42567f8d9609659fc5bf45ea21debcf9ba` |
+| 5 | `theorem` | [dart_edge_fiber_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DegreeSum.lean/declarations/dart-edge-fiber-card.md) | 90 | `result-track:93981aca3f0abbed76beb3b7bcf02e8ff99cae7673e182f44a6b4eddd8516881` |
+| 6 | `theorem` | [dart_card_eq_twice_card_edges](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DegreeSum.lean/declarations/dart-card-eq-twice-card-edges.md) | 100 | `result-track:0f92af903823bda9d148eb24b004911aaf08e326745fa3ceee8cc295d7057a80` |
+| 7 | `theorem` | [sum_degrees_eq_twice_card_edges](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DegreeSum.lean/declarations/sum-degrees-eq-twice-card-edges.md) | 112 | `result-track:6c972ceae7de00e8a0b64099867b1ee9ea12da68f704be5180febd6b3fafbd9f` |
+| 8 | `theorem` | [even_card_odd_degree_vertices](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DegreeSum.lean/declarations/even-card-odd-degree-vertices.md) | 119 | `result-track:9d2660bc11e31491a4fa1331ea568ec45652615e54d2a1d7e0090db6038e82e8` |
+| 9 | `theorem` | [odd_card_odd_degree_vertices_ne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DegreeSum.lean/declarations/odd-card-odd-degree-vertices-ne.md) | 136 | `result-track:1f61f71a36ea2c1c092bdd0953298718f42bc1652a0fc611f09073efc14a4ff4` |
+| 10 | `theorem` | [exists_ne_odd_degree_of_exists_odd_degree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DegreeSum.lean/declarations/exists-ne-odd-degree-of-exists-odd-degree.md) | 158 | `result-track:c9f6b5d5e111e1ca2ccace58350b86c230f7d8dc305d50b9c1d15410ac55926b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

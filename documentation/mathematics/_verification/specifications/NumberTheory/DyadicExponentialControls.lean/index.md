@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/DyadicExponentialControls.lean/index.md) · [Full source](../../../../NumberTheory/DyadicExponentialControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DyadicExponentialControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DyadicExponentialControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.ScaledLogPowerEvaluation`](../../../../FunctionsOfAComplexVariable/ScaledLogPowerEvaluation.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.ScaledLogPowerEvaluation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ScaledLogPowerEvaluation.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Tactic.NormNum` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,18 +58,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [zero_squarings_keeps_value](../../../../NumberTheory/DyadicExponentialControls.lean/declarations/zero-squarings-keeps-value.md) | 17 | `result-track:18dd2cc731844dde2540298c147fd8e762959f439ba27ff600a4b258d639f1fa` |
-| 2 | `theorem` | [zero_squarings_keeps_error](../../../../NumberTheory/DyadicExponentialControls.lean/declarations/zero-squarings-keeps-error.md) | 19 | `result-track:adb64484bf59acfdd7f4d99e694a43c7813c5b49cdd5dd9b2d8d98108739a623` |
-| 3 | `theorem` | [two_squarings_is_fourth_power](../../../../NumberTheory/DyadicExponentialControls.lean/declarations/two-squarings-is-fourth-power.md) | 22 | `result-track:2db1e452d04c323c5bfbcb5f6fa028301031752f4f0b83f1713f25b9d235ff20` |
-| 4 | `theorem` | [quadratic_error_is_required](../../../../NumberTheory/DyadicExponentialControls.lean/declarations/quadratic-error-is-required.md) | 27 | `result-track:a82bb467376e91d135da3b97ab0e54ad2cfd3548bf912d8b20570b4f846b5eb2` |
-| 5 | `theorem` | [unit_center_error_step](../../../../NumberTheory/DyadicExponentialControls.lean/declarations/unit-center-error-step.md) | 30 | `result-track:ed988f1fc58db34250e81080e50fffef5233f47361ee24a98b6175d95b0b28b3` |
-| 6 | `theorem` | [early_rounding_is_not_final_rounding](../../../../NumberTheory/DyadicExponentialControls.lean/declarations/early-rounding-is-not-final-rounding.md) | 35 | `result-track:4a70d1a5e8ae76b13deb863cc7a5093f82a6d69114f5f3a0f50e6be1ddff935d` |
-| 7 | `theorem` | [scaled_argument_guard_example](../../../../NumberTheory/DyadicExponentialControls.lean/declarations/scaled-argument-guard-example.md) | 38 | `result-track:709b883ebbf8ba1b26b9570adb6967c77473bc5e92b93231db57d4a2684f35d7` |
-| 8 | `theorem` | [unscaled_small_degree_guard_fails](../../../../NumberTheory/DyadicExponentialControls.lean/declarations/unscaled-small-degree-guard-fails.md) | 41 | `result-track:993fe558e1cf48a556ac49771d947e6a69777652d3f800c9a81181f6b9b57bab` |
-| 9 | `theorem` | [reduced_small_degree_guard_holds](../../../../NumberTheory/DyadicExponentialControls.lean/declarations/reduced-small-degree-guard-holds.md) | 44 | `result-track:6cf6b65d836e95285e2bfc3113941a8fcb4f37e8e3cb064898cca5d39a9cd64f` |
-| 10 | `theorem` | [scaled_polynomial_not_unscaled](../../../../NumberTheory/DyadicExponentialControls.lean/declarations/scaled-polynomial-not-unscaled.md) | 48 | `result-track:078b7d42e5019b207f21e78bf3184cec552293cd81290cd936278660d728ec5c` |
-| 11 | `theorem` | [multiplicity_scales_propagated_error](../../../../NumberTheory/DyadicExponentialControls.lean/declarations/multiplicity-scales-propagated-error.md) | 52 | `result-track:dca86f854ed82ce0586bf89d2601559ec96ab3bb2d0151b114dd6227f0e517b6` |
-| 12 | `theorem` | [equality_margin_still_rejected](../../../../NumberTheory/DyadicExponentialControls.lean/declarations/equality-margin-still-rejected.md) | 55 | `result-track:01f57c37e3c9f883381dacbefbb88c16fd4b6d6edecca6e4ceeb0d4df9607f19` |
+| 1 | `theorem` | [zero_squarings_keeps_value](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DyadicExponentialControls.lean/declarations/zero-squarings-keeps-value.md) | 17 | `result-track:18dd2cc731844dde2540298c147fd8e762959f439ba27ff600a4b258d639f1fa` |
+| 2 | `theorem` | [zero_squarings_keeps_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DyadicExponentialControls.lean/declarations/zero-squarings-keeps-error.md) | 19 | `result-track:adb64484bf59acfdd7f4d99e694a43c7813c5b49cdd5dd9b2d8d98108739a623` |
+| 3 | `theorem` | [two_squarings_is_fourth_power](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DyadicExponentialControls.lean/declarations/two-squarings-is-fourth-power.md) | 22 | `result-track:2db1e452d04c323c5bfbcb5f6fa028301031752f4f0b83f1713f25b9d235ff20` |
+| 4 | `theorem` | [quadratic_error_is_required](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DyadicExponentialControls.lean/declarations/quadratic-error-is-required.md) | 27 | `result-track:a82bb467376e91d135da3b97ab0e54ad2cfd3548bf912d8b20570b4f846b5eb2` |
+| 5 | `theorem` | [unit_center_error_step](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DyadicExponentialControls.lean/declarations/unit-center-error-step.md) | 30 | `result-track:ed988f1fc58db34250e81080e50fffef5233f47361ee24a98b6175d95b0b28b3` |
+| 6 | `theorem` | [early_rounding_is_not_final_rounding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DyadicExponentialControls.lean/declarations/early-rounding-is-not-final-rounding.md) | 35 | `result-track:4a70d1a5e8ae76b13deb863cc7a5093f82a6d69114f5f3a0f50e6be1ddff935d` |
+| 7 | `theorem` | [scaled_argument_guard_example](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DyadicExponentialControls.lean/declarations/scaled-argument-guard-example.md) | 38 | `result-track:709b883ebbf8ba1b26b9570adb6967c77473bc5e92b93231db57d4a2684f35d7` |
+| 8 | `theorem` | [unscaled_small_degree_guard_fails](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DyadicExponentialControls.lean/declarations/unscaled-small-degree-guard-fails.md) | 41 | `result-track:993fe558e1cf48a556ac49771d947e6a69777652d3f800c9a81181f6b9b57bab` |
+| 9 | `theorem` | [reduced_small_degree_guard_holds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DyadicExponentialControls.lean/declarations/reduced-small-degree-guard-holds.md) | 44 | `result-track:6cf6b65d836e95285e2bfc3113941a8fcb4f37e8e3cb064898cca5d39a9cd64f` |
+| 10 | `theorem` | [scaled_polynomial_not_unscaled](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DyadicExponentialControls.lean/declarations/scaled-polynomial-not-unscaled.md) | 48 | `result-track:078b7d42e5019b207f21e78bf3184cec552293cd81290cd936278660d728ec5c` |
+| 11 | `theorem` | [multiplicity_scales_propagated_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DyadicExponentialControls.lean/declarations/multiplicity-scales-propagated-error.md) | 52 | `result-track:dca86f854ed82ce0586bf89d2601559ec96ab3bb2d0151b114dd6227f0e517b6` |
+| 12 | `theorem` | [equality_margin_still_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DyadicExponentialControls.lean/declarations/equality-margin-still-rejected.md) | 55 | `result-track:01f57c37e3c9f883381dacbefbb88c16fd4b6d6edecca6e4ceeb0d4df9607f19` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

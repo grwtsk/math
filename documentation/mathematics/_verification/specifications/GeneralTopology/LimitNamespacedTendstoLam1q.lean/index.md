@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/LimitNamespacedTendstoLam1q.lean/index.md) · [Full source](../../../../GeneralTopology/LimitNamespacedTendstoLam1q.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LimitNamespacedTendstoLam1q.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LimitNamespacedTendstoLam1q.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [tendsto_lam1q](../../../../GeneralTopology/LimitNamespacedTendstoLam1q.lean/declarations/tendsto-lam1q.md) | 29 | `result-track:56253091113fca69b3a3dc1bc87dfbc0d61c0243a8091a5df3478081810f63ea` |
-| 2 | `theorem` | [tendsto_cRatio_concreteChi](../../../../GeneralTopology/LimitNamespacedTendstoLam1q.lean/declarations/tendsto-cratio-concretechi.md) | 47 | `result-track:ce2d17ba1f53fc844f9947588b1da21d5f274796c5a2b70b22b056dc0ff58629` |
+| 1 | `theorem` | [tendsto_lam1q](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LimitNamespacedTendstoLam1q.lean/declarations/tendsto-lam1q.md) | 29 | `result-track:56253091113fca69b3a3dc1bc87dfbc0d61c0243a8091a5df3478081810f63ea` |
+| 2 | `theorem` | [tendsto_cRatio_concreteChi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LimitNamespacedTendstoLam1q.lean/declarations/tendsto-cratio-concretechi.md) | 47 | `result-track:ce2d17ba1f53fc844f9947588b1da21d5f274796c5a2b70b22b056dc0ff58629` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

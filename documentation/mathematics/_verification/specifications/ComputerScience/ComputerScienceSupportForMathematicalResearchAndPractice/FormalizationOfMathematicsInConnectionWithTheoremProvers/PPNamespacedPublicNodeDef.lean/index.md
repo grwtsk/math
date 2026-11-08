@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PPNamespacedPublicNodeDef.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PPNamespacedPublicNodeDef.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PPNamespacedPublicNodeDef.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PPNamespacedPublicNodeDef.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [NodeDef](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PPNamespacedPublicNodeDef.lean/declarations/nodedef.md) | 27 | `declaration-track:19c70b7a2def9596e6017d82df52cd8784846f00d479f138b292e7bc063eedda` |
-| 2 | `def` | [node_def](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PPNamespacedPublicNodeDef.lean/declarations/node-def.md) | 31 | `declaration-track:abe900b19b785d98db5b79a33d3daea16b30ede7247b91bacf60a5dfe67722fd` |
-| 3 | `def` | [nodeDefUnexpander](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PPNamespacedPublicNodeDef.lean/declarations/nodedefunexpander.md) | 34 | `declaration-track:6efa6950dcc0692f63836cde1272807e619d7fab3693ee5d47da44244843fba2` |
-| 4 | `def` | [NodeDefUnexpander](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PPNamespacedPublicNodeDef.lean/declarations/nodedefunexpander-source-edition-2.md) | 40 | `declaration-track:a94013472aa3847a6cc63b91ee04199abbae4759c5a79ef5eb575979320ba40d` |
+| 1 | `inductive` | [NodeDef](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PPNamespacedPublicNodeDef.lean/declarations/nodedef.md) | 27 | `declaration-track:19c70b7a2def9596e6017d82df52cd8784846f00d479f138b292e7bc063eedda` |
+| 2 | `def` | [node_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PPNamespacedPublicNodeDef.lean/declarations/node-def.md) | 31 | `declaration-track:abe900b19b785d98db5b79a33d3daea16b30ede7247b91bacf60a5dfe67722fd` |
+| 3 | `def` | [nodeDefUnexpander](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PPNamespacedPublicNodeDef.lean/declarations/nodedefunexpander.md) | 34 | `declaration-track:6efa6950dcc0692f63836cde1272807e619d7fab3693ee5d47da44244843fba2` |
+| 4 | `def` | [NodeDefUnexpander](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PPNamespacedPublicNodeDef.lean/declarations/nodedefunexpander-source-edition-2.md) | 40 | `declaration-track:a94013472aa3847a6cc63b91ee04199abbae4759c5a79ef5eb575979320ba40d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

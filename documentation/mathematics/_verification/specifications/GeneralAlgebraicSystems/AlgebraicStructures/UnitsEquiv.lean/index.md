@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/UnitsEquiv.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/UnitsEquiv.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/UnitsEquiv.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/UnitsEquiv.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [_root_.unitsEquivNeZero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/UnitsEquiv.lean/declarations/root-unitsequivnezero.md) | 23 | `declaration-track:13c7d3e207b437cd5d2600d0bbbcc4f5072c4324aa402bcb8fd623fdd88785a6` |
-| 2 | `def` | [mulLeft₀](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/UnitsEquiv.lean/declarations/mulleft.md) | 32 | `declaration-track:4016fcd4ff90e2ef2a8298f1ee62676a1e2cdc5e7a71d94f7034ad9460b46abe` |
-| 3 | `theorem` | [_root_.mulLeft_bijective₀](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/UnitsEquiv.lean/declarations/root-mulleft-bijective.md) | 35 | `result-track:43f2ee89f5fad6a6f89400d99cab22d113249d0dcbe39d045e8f4ff28275befd` |
-| 4 | `def` | [mulRight₀](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/UnitsEquiv.lean/declarations/mulright.md) | 41 | `declaration-track:d90120d6c7aaf475611cc55532e08216370f5744409041f5eac8cb31c8029b0b` |
-| 5 | `theorem` | [_root_.mulRight_bijective₀](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/UnitsEquiv.lean/declarations/root-mulright-bijective.md) | 44 | `result-track:bc0db364f266bd79d5b59b986803f842e37344ba9353a7a004fa184443bf399f` |
-| 6 | `def` | [divRight₀](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/UnitsEquiv.lean/declarations/divright.md) | 50 | `declaration-track:f92c1d6c6ace784838e267bddccd44b4aab1f414f95e8557d0648bfa6e7f1e34` |
-| 7 | `def` | [divLeft₀](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/UnitsEquiv.lean/declarations/divleft.md) | 64 | `declaration-track:8585176fa6c337c795f5b6b03ea7c1b71b103428ffef02d559ac350cdd11b213` |
+| 1 | `def` | [_root_.unitsEquivNeZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/UnitsEquiv.lean/declarations/root-unitsequivnezero.md) | 23 | `declaration-track:13c7d3e207b437cd5d2600d0bbbcc4f5072c4324aa402bcb8fd623fdd88785a6` |
+| 2 | `def` | [mulLeft₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/UnitsEquiv.lean/declarations/mulleft.md) | 32 | `declaration-track:4016fcd4ff90e2ef2a8298f1ee62676a1e2cdc5e7a71d94f7034ad9460b46abe` |
+| 3 | `theorem` | [_root_.mulLeft_bijective₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/UnitsEquiv.lean/declarations/root-mulleft-bijective.md) | 35 | `result-track:43f2ee89f5fad6a6f89400d99cab22d113249d0dcbe39d045e8f4ff28275befd` |
+| 4 | `def` | [mulRight₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/UnitsEquiv.lean/declarations/mulright.md) | 41 | `declaration-track:d90120d6c7aaf475611cc55532e08216370f5744409041f5eac8cb31c8029b0b` |
+| 5 | `theorem` | [_root_.mulRight_bijective₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/UnitsEquiv.lean/declarations/root-mulright-bijective.md) | 44 | `result-track:bc0db364f266bd79d5b59b986803f842e37344ba9353a7a004fa184443bf399f` |
+| 6 | `def` | [divRight₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/UnitsEquiv.lean/declarations/divright.md) | 50 | `declaration-track:f92c1d6c6ace784838e267bddccd44b4aab1f414f95e8557d0648bfa6e7f1e34` |
+| 7 | `def` | [divLeft₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/UnitsEquiv.lean/declarations/divleft.md) | 64 | `declaration-track:8585176fa6c337c795f5b6b03ea7c1b71b103428ffef02d559ac350cdd11b213` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/CandidateRemainderL1.lean/index.md) · [Full source](../../../../RealFunctions/CandidateRemainderL1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CandidateRemainderL1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CandidateRemainderL1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_remainder_integrable](../../../../RealFunctions/CandidateRemainderL1.lean/declarations/actual-remainder-integrable.md) | 17 | `result-track:5fe2ca3fb2b162afd739b8ce5fa05fa61ffe9dde15c33e75f801a0eab5c50e39` |
+| 1 | `theorem` | [actual_remainder_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CandidateRemainderL1.lean/declarations/actual-remainder-integrable.md) | 17 | `result-track:5fe2ca3fb2b162afd739b8ce5fa05fa61ffe9dde15c33e75f801a0eab5c50e39` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

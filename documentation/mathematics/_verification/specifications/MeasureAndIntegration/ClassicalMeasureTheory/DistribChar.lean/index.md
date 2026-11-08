@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/DistribChar.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/DistribChar.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/DistribChar.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/DistribChar.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [distribHaarChar](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/DistribChar.lean/declarations/distribhaarchar.md) | 39 | `declaration-track:4f0b9a2ff4227286453bfa708e90bddb2318cf5d4b2f3d24272346e6b4f1a524` |
-| 2 | `lemma` | [distribHaarChar_pos](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/DistribChar.lean/declarations/distribhaarchar-pos.md) | 53 | `result-track:4b09836a88393d3758f97655eb5ba036d451987a635e47ecfadf36539787dc89` |
-| 3 | `lemma` | [addHaarScalarFactor_smul_eq_distribHaarChar](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/DistribChar.lean/declarations/addhaarscalarfactor-smul-eq-distribhaarchar.md) | 59 | `result-track:ffa18ba8489fd01160298ee4660cfd4bccc580faaeb53ebdf93c5a10cb09fc65` |
-| 4 | `lemma` | [addHaarScalarFactor_smul_inv_eq_distribHaarChar](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/DistribChar.lean/declarations/addhaarscalarfactor-smul-inv-eq-distribhaarchar.md) | 65 | `result-track:706d88657e91d0e8d0b360bb370384a695f55592636a21d935482463daf28eb6` |
-| 5 | `lemma` | [addHaarScalarFactor_smul_eq_distribHaarChar_inv](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/DistribChar.lean/declarations/addhaarscalarfactor-smul-eq-distribhaarchar-inv.md) | 72 | `result-track:3dd1f930d6c8f4d02d7136520be1eb846dbc488b8e54416503de09d6c810f0e7` |
-| 6 | `lemma` | [distribHaarChar_mul](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/DistribChar.lean/declarations/distribhaarchar-mul.md) | 79 | `result-track:70c9b85349f7b27308e004e0d5428dda0d03a86e158aa184131ae9c7d23630bc` |
-| 7 | `lemma` | [distribHaarChar_eq_div](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/DistribChar.lean/declarations/distribhaarchar-eq-div.md) | 84 | `result-track:a600f855dfaaedf93be33b8ad157763a37e7a8c4baae0f93ad12a45ea085ed84` |
-| 8 | `lemma` | [distribHaarChar_eq_of_measure_smul_eq_mul](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/DistribChar.lean/declarations/distribhaarchar-eq-of-measure-smul-eq-mul.md) | 88 | `result-track:488fa0fefbe07bc2fb98526a67c856f5ad1b7e6a2a9b4c4995921f45a91b04e1` |
+| 1 | `def` | [distribHaarChar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/DistribChar.lean/declarations/distribhaarchar.md) | 39 | `declaration-track:4f0b9a2ff4227286453bfa708e90bddb2318cf5d4b2f3d24272346e6b4f1a524` |
+| 2 | `lemma` | [distribHaarChar_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/DistribChar.lean/declarations/distribhaarchar-pos.md) | 53 | `result-track:4b09836a88393d3758f97655eb5ba036d451987a635e47ecfadf36539787dc89` |
+| 3 | `lemma` | [addHaarScalarFactor_smul_eq_distribHaarChar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/DistribChar.lean/declarations/addhaarscalarfactor-smul-eq-distribhaarchar.md) | 59 | `result-track:ffa18ba8489fd01160298ee4660cfd4bccc580faaeb53ebdf93c5a10cb09fc65` |
+| 4 | `lemma` | [addHaarScalarFactor_smul_inv_eq_distribHaarChar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/DistribChar.lean/declarations/addhaarscalarfactor-smul-inv-eq-distribhaarchar.md) | 65 | `result-track:706d88657e91d0e8d0b360bb370384a695f55592636a21d935482463daf28eb6` |
+| 5 | `lemma` | [addHaarScalarFactor_smul_eq_distribHaarChar_inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/DistribChar.lean/declarations/addhaarscalarfactor-smul-eq-distribhaarchar-inv.md) | 72 | `result-track:3dd1f930d6c8f4d02d7136520be1eb846dbc488b8e54416503de09d6c810f0e7` |
+| 6 | `lemma` | [distribHaarChar_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/DistribChar.lean/declarations/distribhaarchar-mul.md) | 79 | `result-track:70c9b85349f7b27308e004e0d5428dda0d03a86e158aa184131ae9c7d23630bc` |
+| 7 | `lemma` | [distribHaarChar_eq_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/DistribChar.lean/declarations/distribhaarchar-eq-div.md) | 84 | `result-track:a600f855dfaaedf93be33b8ad157763a37e7a8c4baae0f93ad12a45ea085ed84` |
+| 8 | `lemma` | [distribHaarChar_eq_of_measure_smul_eq_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/DistribChar.lean/declarations/distribhaarchar-eq-of-measure-smul-eq-mul.md) | 88 | `result-track:488fa0fefbe07bc2fb98526a67c856f5ad1b7e6a2a9b4c4995921f45a91b04e1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

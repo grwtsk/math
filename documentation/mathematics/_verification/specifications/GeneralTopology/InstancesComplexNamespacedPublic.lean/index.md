@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/InstancesComplexNamespacedPublic.lean/index.md) · [Full source](../../../../GeneralTopology/InstancesComplexNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/InstancesComplexNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/InstancesComplexNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Complex.subfield_eq_of_closed](../../../../GeneralTopology/InstancesComplexNamespacedPublic.lean/declarations/complex-subfield-eq-of-closed.md) | 37 | `result-track:1acb693656d15f57e6fba1ea1359c2ba887692321b6423fd5da273f9028e390c` |
-| 2 | `theorem` | [Complex.uniformContinuous_ringHom_eq_id_or_conj](../../../../GeneralTopology/InstancesComplexNamespacedPublic.lean/declarations/complex-uniformcontinuous-ringhom-eq-id-or-conj.md) | 61 | `result-track:b9678bf2434d173a8ef78bab63a4b8e56ed91c37c64b9fb63dc8a07971c16f5a` |
+| 1 | `theorem` | [Complex.subfield_eq_of_closed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/InstancesComplexNamespacedPublic.lean/declarations/complex-subfield-eq-of-closed.md) | 37 | `result-track:1acb693656d15f57e6fba1ea1359c2ba887692321b6423fd5da273f9028e390c` |
+| 2 | `theorem` | [Complex.uniformContinuous_ringHom_eq_id_or_conj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/InstancesComplexNamespacedPublic.lean/declarations/complex-uniformcontinuous-ringhom-eq-id-or-conj.md) | 61 | `result-track:b9678bf2434d173a8ef78bab63a4b8e56ed91c37c64b9fb63dc8a07971c16f5a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

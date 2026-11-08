@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/StrokeNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/StrokeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StrokeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StrokeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [Cap](../../../../../ComputerScience/AlgorithmsInComputerScience/StrokeNamespaced.lean/declarations/cap.md) | 22 | `declaration-track:de795a15a8f25025d378b76c33d6f86a5685c0479fa3aaf06424636f397f28a2` |
-| 2 | `inductive` | [Join](../../../../../ComputerScience/AlgorithmsInComputerScience/StrokeNamespaced.lean/declarations/join.md) | 29 | `declaration-track:52ecee18108fe4ebe5c34901153f8778f8d33cfe83403c3ea9548abf2da06771` |
-| 3 | `inductive` | [Alignment](../../../../../ComputerScience/AlgorithmsInComputerScience/StrokeNamespaced.lean/declarations/alignment.md) | 38 | `declaration-track:a4de7fc48d1cc9ae80fbb6c1a4aace976b6d5a410d3f5667cd902a2b246c2101` |
-| 4 | `structure` | [Style](../../../../../ComputerScience/AlgorithmsInComputerScience/StrokeNamespaced.lean/declarations/style.md) | 45 | `declaration-track:47a6c1975b24edd04a108e6a33b6dde8d352d4641525396d98ecdf6740c4871f` |
-| 5 | `abbrev` | [Region](../../../../../ComputerScience/AlgorithmsInComputerScience/StrokeNamespaced.lean/declarations/region.md) | 55 | `declaration-track:873b303069b6ab0a594bf8e4dca0d8350b821c93db313fee6e1a901662d8a609` |
-| 6 | `inductive` | [SetOperation](../../../../../ComputerScience/AlgorithmsInComputerScience/StrokeNamespaced.lean/declarations/setoperation.md) | 58 | `declaration-track:8283a4107924cbc453c14eb65b2315b67cd5b60569c8ab47c3ffbb6d3a9f8685` |
-| 7 | `def` | [combine](../../../../../ComputerScience/AlgorithmsInComputerScience/StrokeNamespaced.lean/declarations/combine.md) | 66 | `declaration-track:b79a95fbe8e8a0b33e9c331b569f889181f375b88af29d9f35a829b5a62a27a4` |
+| 1 | `inductive` | [Cap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StrokeNamespaced.lean/declarations/cap.md) | 22 | `declaration-track:de795a15a8f25025d378b76c33d6f86a5685c0479fa3aaf06424636f397f28a2` |
+| 2 | `inductive` | [Join](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StrokeNamespaced.lean/declarations/join.md) | 29 | `declaration-track:52ecee18108fe4ebe5c34901153f8778f8d33cfe83403c3ea9548abf2da06771` |
+| 3 | `inductive` | [Alignment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StrokeNamespaced.lean/declarations/alignment.md) | 38 | `declaration-track:a4de7fc48d1cc9ae80fbb6c1a4aace976b6d5a410d3f5667cd902a2b246c2101` |
+| 4 | `structure` | [Style](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StrokeNamespaced.lean/declarations/style.md) | 45 | `declaration-track:47a6c1975b24edd04a108e6a33b6dde8d352d4641525396d98ecdf6740c4871f` |
+| 5 | `abbrev` | [Region](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StrokeNamespaced.lean/declarations/region.md) | 55 | `declaration-track:873b303069b6ab0a594bf8e4dca0d8350b821c93db313fee6e1a901662d8a609` |
+| 6 | `inductive` | [SetOperation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StrokeNamespaced.lean/declarations/setoperation.md) | 58 | `declaration-track:8283a4107924cbc453c14eb65b2315b67cd5b60569c8ab47c3ffbb6d3a9f8685` |
+| 7 | `def` | [combine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StrokeNamespaced.lean/declarations/combine.md) | 66 | `declaration-track:b79a95fbe8e8a0b33e9c331b569f889181f375b88af29d9f35a829b5a62a27a4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/NobelingSpanPublic.lean/index.md) · [Full source](../../../../GeneralTopology/NobelingSpanPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/NobelingSpanPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/NobelingSpanPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,22 +57,22 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [πJ](../../../../GeneralTopology/NobelingSpanPublic.lean/declarations/j.md) | 47 | `declaration-track:ee052e1cfbddd672691c8a7a8c1dcdb034c38b8336d5ea09768d40805b3403d3` |
-| 2 | `theorem` | [eval_eq_πJ](../../../../GeneralTopology/NobelingSpanPublic.lean/declarations/eval-eq-j.md) | 50 | `result-track:3e03c6db0498643451ae191a58f4705dc1e3615d3eb328ca833b261ac1e3ae58` |
-| 3 | `instance` | [(anonymous)](../../../../GeneralTopology/NobelingSpanPublic.lean/declarations/instance.md) | 58 | `declaration-track:bf3fd4efd49cadf0a8180560c59bf4f9b98b87c65bc8491db1ad10de78347f66` |
-| 4 | `def` | [spanFinBasis](../../../../GeneralTopology/NobelingSpanPublic.lean/declarations/spanfinbasis.md) | 70 | `declaration-track:747c06bf702cf846a604e4f97323eb9164edbe148470b8aeedd788a362bb6213` |
-| 5 | `theorem` | [spanFinBasis.span](../../../../GeneralTopology/NobelingSpanPublic.lean/declarations/spanfinbasis-span.md) | 76 | `result-track:69d20307cbdc3e18933c9b219be052066aff9d42efe010752fe7c419dff043c2` |
-| 6 | `def` | [factors](../../../../GeneralTopology/NobelingSpanPublic.lean/declarations/factors.md) | 91 | `declaration-track:fc2570dd0aa3fba10fdb07f6afd6530f8f7eb5ca59b104ff21a20d836851aee0` |
-| 7 | `theorem` | [list_prod_apply](../../../../GeneralTopology/NobelingSpanPublic.lean/declarations/list-prod-apply.md) | 95 | `result-track:461aaf82f4913b9d3d8dbddceba2cfee5d468b033ebd6783debf1fc74649269d` |
-| 8 | `theorem` | [factors_prod_eq_basis_of_eq](../../../../GeneralTopology/NobelingSpanPublic.lean/declarations/factors-prod-eq-basis-of-eq.md) | 100 | `result-track:a0c7b92f1c458e859075c15b2a3c50888ebc0f9c2de7b302797cdaa925d1e890` |
-| 9 | `theorem` | [e_mem_of_eq_true](../../../../GeneralTopology/NobelingSpanPublic.lean/declarations/e-mem-of-eq-true.md) | 113 | `result-track:4e76ba9e606c4e84a807155580eb387001000a96c632c57b3fcffb558fcb0da2` |
-| 10 | `theorem` | [one_sub_e_mem_of_false](../../../../GeneralTopology/NobelingSpanPublic.lean/declarations/one-sub-e-mem-of-false.md) | 120 | `result-track:73faa9773e5c63a06d3ab43eadb8c1133cd8f01d09bd4a05d8966f188428091d` |
-| 11 | `theorem` | [factors_prod_eq_basis_of_ne](../../../../GeneralTopology/NobelingSpanPublic.lean/declarations/factors-prod-eq-basis-of-ne.md) | 128 | `result-track:bd472ede54b9b052edc090eceed18953686eb95e36a2853dbd540c6bf333f6e7` |
-| 12 | `theorem` | [factors_prod_eq_basis](../../../../GeneralTopology/NobelingSpanPublic.lean/declarations/factors-prod-eq-basis.md) | 145 | `result-track:bdfa6353475e4b90845ddac2f413864e1dfdf57eb2474d60e75202f4dc94a40f` |
-| 13 | `theorem` | [GoodProducts.finsuppSum_mem_span_eval](../../../../GeneralTopology/NobelingSpanPublic.lean/declarations/goodproducts-finsuppsum-mem-span-eval.md) | 152 | `result-track:10a2cdc556428953813f883ccdbc87af6d7790007f9a6c35638c99718956d314` |
-| 14 | `theorem` | [GoodProducts.spanFin](../../../../GeneralTopology/NobelingSpanPublic.lean/declarations/goodproducts-spanfin.md) | 171 | `result-track:2397ea6fb54f8ed53a8c7579587e3e8f7e281e2002b04fd3599ddcc2a04b4fed` |
-| 15 | `theorem` | [fin_comap_jointlySurjective](../../../../GeneralTopology/NobelingSpanPublic.lean/declarations/fin-comap-jointlysurjective.md) | 229 | `result-track:2a8c6ca9ac675c1c846d5f7bc20b6085f042c2bf5089468eaf1f8bbf8463dc58` |
-| 16 | `theorem` | [GoodProducts.span](../../../../GeneralTopology/NobelingSpanPublic.lean/declarations/goodproducts-span.md) | 240 | `result-track:8545453906d0e10da82393b5eeb31ee82dd5f583e64a071a0ee4a37aa18aec4c` |
+| 1 | `def` | [πJ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/NobelingSpanPublic.lean/declarations/j.md) | 47 | `declaration-track:ee052e1cfbddd672691c8a7a8c1dcdb034c38b8336d5ea09768d40805b3403d3` |
+| 2 | `theorem` | [eval_eq_πJ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/NobelingSpanPublic.lean/declarations/eval-eq-j.md) | 50 | `result-track:3e03c6db0498643451ae191a58f4705dc1e3615d3eb328ca833b261ac1e3ae58` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/NobelingSpanPublic.lean/declarations/instance.md) | 58 | `declaration-track:bf3fd4efd49cadf0a8180560c59bf4f9b98b87c65bc8491db1ad10de78347f66` |
+| 4 | `def` | [spanFinBasis](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/NobelingSpanPublic.lean/declarations/spanfinbasis.md) | 70 | `declaration-track:747c06bf702cf846a604e4f97323eb9164edbe148470b8aeedd788a362bb6213` |
+| 5 | `theorem` | [spanFinBasis.span](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/NobelingSpanPublic.lean/declarations/spanfinbasis-span.md) | 76 | `result-track:69d20307cbdc3e18933c9b219be052066aff9d42efe010752fe7c419dff043c2` |
+| 6 | `def` | [factors](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/NobelingSpanPublic.lean/declarations/factors.md) | 91 | `declaration-track:fc2570dd0aa3fba10fdb07f6afd6530f8f7eb5ca59b104ff21a20d836851aee0` |
+| 7 | `theorem` | [list_prod_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/NobelingSpanPublic.lean/declarations/list-prod-apply.md) | 95 | `result-track:461aaf82f4913b9d3d8dbddceba2cfee5d468b033ebd6783debf1fc74649269d` |
+| 8 | `theorem` | [factors_prod_eq_basis_of_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/NobelingSpanPublic.lean/declarations/factors-prod-eq-basis-of-eq.md) | 100 | `result-track:a0c7b92f1c458e859075c15b2a3c50888ebc0f9c2de7b302797cdaa925d1e890` |
+| 9 | `theorem` | [e_mem_of_eq_true](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/NobelingSpanPublic.lean/declarations/e-mem-of-eq-true.md) | 113 | `result-track:4e76ba9e606c4e84a807155580eb387001000a96c632c57b3fcffb558fcb0da2` |
+| 10 | `theorem` | [one_sub_e_mem_of_false](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/NobelingSpanPublic.lean/declarations/one-sub-e-mem-of-false.md) | 120 | `result-track:73faa9773e5c63a06d3ab43eadb8c1133cd8f01d09bd4a05d8966f188428091d` |
+| 11 | `theorem` | [factors_prod_eq_basis_of_ne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/NobelingSpanPublic.lean/declarations/factors-prod-eq-basis-of-ne.md) | 128 | `result-track:bd472ede54b9b052edc090eceed18953686eb95e36a2853dbd540c6bf333f6e7` |
+| 12 | `theorem` | [factors_prod_eq_basis](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/NobelingSpanPublic.lean/declarations/factors-prod-eq-basis.md) | 145 | `result-track:bdfa6353475e4b90845ddac2f413864e1dfdf57eb2474d60e75202f4dc94a40f` |
+| 13 | `theorem` | [GoodProducts.finsuppSum_mem_span_eval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/NobelingSpanPublic.lean/declarations/goodproducts-finsuppsum-mem-span-eval.md) | 152 | `result-track:10a2cdc556428953813f883ccdbc87af6d7790007f9a6c35638c99718956d314` |
+| 14 | `theorem` | [GoodProducts.spanFin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/NobelingSpanPublic.lean/declarations/goodproducts-spanfin.md) | 171 | `result-track:2397ea6fb54f8ed53a8c7579587e3e8f7e281e2002b04fd3599ddcc2a04b4fed` |
+| 15 | `theorem` | [fin_comap_jointlySurjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/NobelingSpanPublic.lean/declarations/fin-comap-jointlysurjective.md) | 229 | `result-track:2a8c6ca9ac675c1c846d5f7bc20b6085f042c2bf5089468eaf1f8bbf8463dc58` |
+| 16 | `theorem` | [GoodProducts.span](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/NobelingSpanPublic.lean/declarations/goodproducts-span.md) | 240 | `result-track:8545453906d0e10da82393b5eeb31ee82dd5f583e64a071a0ee4a37aa18aec4c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

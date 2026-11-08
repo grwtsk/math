@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ScalarV1Prebytes.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ScalarV1Prebytes.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ScalarV1Prebytes.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ScalarV1Prebytes.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [greenKernel](../../../../MeasureAndIntegration/ScalarV1Prebytes.lean/declarations/greenkernel.md) | 26 | `declaration-track:2e9bc00919ae2aec2e8a134bacdfa3dcd5e712ff8b4a922d4bd6981d929a254d` |
-| 2 | `def` | [sourceGreenPairing](../../../../MeasureAndIntegration/ScalarV1Prebytes.lean/declarations/sourcegreenpairing.md) | 29 | `declaration-track:0568a24451bf7f824162983688c846088d963217e4702a129dc0e803609371b2` |
-| 3 | `def` | [sourceGreenConvolution](../../../../MeasureAndIntegration/ScalarV1Prebytes.lean/declarations/sourcegreenconvolution.md) | 33 | `declaration-track:7becac2c0bb53db2af0c82438d0d1ee12428c8cc2d2a5fd7d3374c867fa8feb3` |
-| 4 | `theorem` | [greenKernel_continuous](../../../../MeasureAndIntegration/ScalarV1Prebytes.lean/declarations/greenkernel-continuous.md) | 37 | `result-track:fbb280f61353baa2759010d8ee8e001caf6b51d1af62cd18d6499f1ee5423088` |
-| 5 | `theorem` | [greenKernel_even](../../../../MeasureAndIntegration/ScalarV1Prebytes.lean/declarations/greenkernel-even.md) | 41 | `result-track:7bfc659a34ce13c79725d0a5e0b442cbf975bc157c20e60c221ebe329c3b6131` |
-| 6 | `theorem` | [sourceGreenPairing_integrable](../../../../MeasureAndIntegration/ScalarV1Prebytes.lean/declarations/sourcegreenpairing-integrable.md) | 45 | `result-track:a4744371703e8f88a047718b25f0217bcbbeb08980ffb7b0701f3ede3740dc5c` |
-| 7 | `theorem` | [sourceGreenConvolution_integrable](../../../../MeasureAndIntegration/ScalarV1Prebytes.lean/declarations/sourcegreenconvolution-integrable.md) | 51 | `result-track:ff23a6de04c4718e53f3c72b552ef98e9ad654973cd77c4589ea61acb5d8e56e` |
-| 8 | `theorem` | [sourceGreenPairing_eq_twice_negativeSmoothMoment](../../../../MeasureAndIntegration/ScalarV1Prebytes.lean/declarations/sourcegreenpairing-eq-twice-negativesmoothmoment.md) | 58 | `result-track:0c3fe1edad099ed62f0a4e0cb153653d62fc1bdbb30a05e588d3d6629090028e` |
-| 9 | `theorem` | [sourceGreenPairing_eq_causal_energy](../../../../MeasureAndIntegration/ScalarV1Prebytes.lean/declarations/sourcegreenpairing-eq-causal-energy.md) | 96 | `result-track:63f4fa83f3b37691c17e3816dd8905c194e3bcc7ebbee73cb5624f5701439396` |
-| 10 | `theorem` | [criticalContinuousMoment_eq_neg_half_green](../../../../MeasureAndIntegration/ScalarV1Prebytes.lean/declarations/criticalcontinuousmoment-eq-neg-half-green.md) | 103 | `result-track:77f4cdf512939340026ba38fbb6a7026437dbe23b6e9b5e113c3fcec94cc4d31` |
+| 1 | `def` | [greenKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ScalarV1Prebytes.lean/declarations/greenkernel.md) | 26 | `declaration-track:2e9bc00919ae2aec2e8a134bacdfa3dcd5e712ff8b4a922d4bd6981d929a254d` |
+| 2 | `def` | [sourceGreenPairing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ScalarV1Prebytes.lean/declarations/sourcegreenpairing.md) | 29 | `declaration-track:0568a24451bf7f824162983688c846088d963217e4702a129dc0e803609371b2` |
+| 3 | `def` | [sourceGreenConvolution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ScalarV1Prebytes.lean/declarations/sourcegreenconvolution.md) | 33 | `declaration-track:7becac2c0bb53db2af0c82438d0d1ee12428c8cc2d2a5fd7d3374c867fa8feb3` |
+| 4 | `theorem` | [greenKernel_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ScalarV1Prebytes.lean/declarations/greenkernel-continuous.md) | 37 | `result-track:fbb280f61353baa2759010d8ee8e001caf6b51d1af62cd18d6499f1ee5423088` |
+| 5 | `theorem` | [greenKernel_even](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ScalarV1Prebytes.lean/declarations/greenkernel-even.md) | 41 | `result-track:7bfc659a34ce13c79725d0a5e0b442cbf975bc157c20e60c221ebe329c3b6131` |
+| 6 | `theorem` | [sourceGreenPairing_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ScalarV1Prebytes.lean/declarations/sourcegreenpairing-integrable.md) | 45 | `result-track:a4744371703e8f88a047718b25f0217bcbbeb08980ffb7b0701f3ede3740dc5c` |
+| 7 | `theorem` | [sourceGreenConvolution_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ScalarV1Prebytes.lean/declarations/sourcegreenconvolution-integrable.md) | 51 | `result-track:ff23a6de04c4718e53f3c72b552ef98e9ad654973cd77c4589ea61acb5d8e56e` |
+| 8 | `theorem` | [sourceGreenPairing_eq_twice_negativeSmoothMoment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ScalarV1Prebytes.lean/declarations/sourcegreenpairing-eq-twice-negativesmoothmoment.md) | 58 | `result-track:0c3fe1edad099ed62f0a4e0cb153653d62fc1bdbb30a05e588d3d6629090028e` |
+| 9 | `theorem` | [sourceGreenPairing_eq_causal_energy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ScalarV1Prebytes.lean/declarations/sourcegreenpairing-eq-causal-energy.md) | 96 | `result-track:63f4fa83f3b37691c17e3816dd8905c194e3bcc7ebbee73cb5624f5701439396` |
+| 10 | `theorem` | [criticalContinuousMoment_eq_neg_half_green](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ScalarV1Prebytes.lean/declarations/criticalcontinuousmoment-eq-neg-half-green.md) | 103 | `result-track:77f4cdf512939340026ba38fbb6a7026437dbe23b6e9b5e113c3fcec94cc4d31` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

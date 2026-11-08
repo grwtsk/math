@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/UnitsOpposite.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/UnitsOpposite.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/UnitsOpposite.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/UnitsOpposite.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Units.opEquiv](../../../../GroupTheoryAndGeneralizations/UnitsOpposite.lean/declarations/units-opequiv.md) | 24 | `declaration-track:7d22434e0c16e94e1e2a641d90c543eac754a217e682937f58509a3e7804c2c1` |
-| 2 | `theorem` | [Units.coe_unop_opEquiv](../../../../GroupTheoryAndGeneralizations/UnitsOpposite.lean/declarations/units-coe-unop-opequiv.md) | 32 | `result-track:4753a76b4e5d81c158c9ccb35d51cfc0848248d9bfba0b2a6ef86c93b8a8248d` |
-| 3 | `theorem` | [Units.coe_opEquiv_symm](../../../../GroupTheoryAndGeneralizations/UnitsOpposite.lean/declarations/units-coe-opequiv-symm.md) | 37 | `result-track:34678098096c6347f6cb42be827adeb9fc0c64f1a16510da0de0d55bf6a75005` |
-| 4 | `theorem` | [IsUnit.op](../../../../GroupTheoryAndGeneralizations/UnitsOpposite.lean/declarations/isunit-op.md) | 42 | `result-track:890319ebc11d36f8646236973c0491db70cfe22ff9e5cedc48912d016de01c5f` |
-| 5 | `theorem` | [IsUnit.unop](../../../../GroupTheoryAndGeneralizations/UnitsOpposite.lean/declarations/isunit-unop.md) | 47 | `result-track:8f9f4eeba39096e3cc35f105e0b941b6f246323a3813ef553d0f8380dfed39b1` |
-| 6 | `theorem` | [isUnit_op](../../../../GroupTheoryAndGeneralizations/UnitsOpposite.lean/declarations/isunit-op-source-edition-2.md) | 52 | `result-track:e6376c583b1e0be8e998982abbe989f6f70b5d4c0b0015567e442bbfda2ad00c` |
-| 7 | `theorem` | [isUnit_unop](../../../../GroupTheoryAndGeneralizations/UnitsOpposite.lean/declarations/isunit-unop-source-edition-2.md) | 56 | `result-track:a038c3655576cfa3354242921be4898261a87d5e4db5a50a229392f2e00559a0` |
+| 1 | `def` | [Units.opEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/UnitsOpposite.lean/declarations/units-opequiv.md) | 24 | `declaration-track:7d22434e0c16e94e1e2a641d90c543eac754a217e682937f58509a3e7804c2c1` |
+| 2 | `theorem` | [Units.coe_unop_opEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/UnitsOpposite.lean/declarations/units-coe-unop-opequiv.md) | 32 | `result-track:4753a76b4e5d81c158c9ccb35d51cfc0848248d9bfba0b2a6ef86c93b8a8248d` |
+| 3 | `theorem` | [Units.coe_opEquiv_symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/UnitsOpposite.lean/declarations/units-coe-opequiv-symm.md) | 37 | `result-track:34678098096c6347f6cb42be827adeb9fc0c64f1a16510da0de0d55bf6a75005` |
+| 4 | `theorem` | [IsUnit.op](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/UnitsOpposite.lean/declarations/isunit-op.md) | 42 | `result-track:890319ebc11d36f8646236973c0491db70cfe22ff9e5cedc48912d016de01c5f` |
+| 5 | `theorem` | [IsUnit.unop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/UnitsOpposite.lean/declarations/isunit-unop.md) | 47 | `result-track:8f9f4eeba39096e3cc35f105e0b941b6f246323a3813ef553d0f8380dfed39b1` |
+| 6 | `theorem` | [isUnit_op](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/UnitsOpposite.lean/declarations/isunit-op-source-edition-2.md) | 52 | `result-track:e6376c583b1e0be8e998982abbe989f6f70b5d4c0b0015567e442bbfda2ad00c` |
+| 7 | `theorem` | [isUnit_unop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/UnitsOpposite.lean/declarations/isunit-unop-source-edition-2.md) | 56 | `result-track:a038c3655576cfa3354242921be4898261a87d5e4db5a50a229392f2e00559a0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

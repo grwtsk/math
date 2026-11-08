@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZetaZerosPublic.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZetaZerosPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZetaZerosPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZetaZerosPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [riemannZetaZeros](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZetaZerosPublic.lean/declarations/riemannzetazeros.md) | 36 | `declaration-track:ab935136ff0c5cf1b94549cdccf86bf03d75f9411432c7b3bceb0b569e93a261` |
-| 2 | `lemma` | [mem_riemannZetaZeros](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZetaZerosPublic.lean/declarations/mem-riemannzetazeros.md) | 38 | `result-track:c81253ddad4efc0a58bf53f96a8c08302603e78505521126623e7906e1e6ef11` |
-| 3 | `lemma` | [riemannZetaZeros_codiscreteWithin_compl_one](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZetaZerosPublic.lean/declarations/riemannzetazeros-codiscretewithin-compl-one.md) | 42 | `result-track:d975c5dbc509dde84c27c630031c5d1616b5ba4b9cc37d0e96572abf7b67def6` |
-| 4 | `lemma` | [compl_riemannZetaZeros_mem_codiscrete](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZetaZerosPublic.lean/declarations/compl-riemannzetazeros-mem-codiscrete.md) | 49 | `result-track:719072b4cc941b1fac1289aaab12778d1c67b618da144ba2deb680a2e117b068` |
-| 5 | `lemma` | [isClosed_riemannZetaZeros](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZetaZerosPublic.lean/declarations/isclosed-riemannzetazeros.md) | 60 | `result-track:51fb372d03e93ce7fcd135fcf453d83f3620451f177b317e6a376266aa7db906` |
-| 6 | `lemma` | [isDiscrete_riemannZetaZeros](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZetaZerosPublic.lean/declarations/isdiscrete-riemannzetazeros.md) | 63 | `result-track:277cdce5d4b856350f2bb20cf841f0964320da4f6b51be9823e48b2bccfd2487` |
-| 7 | `lemma` | [IsCompact.inter_riemannZetaZeros_finite](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZetaZerosPublic.lean/declarations/iscompact-inter-riemannzetazeros-finite.md) | 67 | `result-track:d7d5fb72f46d3e079a771a800934fa4bba094431306dbc8033a1c0112b2e1dad` |
-| 8 | `lemma` | [tendsto_riemannZeta_cofinite_cocompact](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZetaZerosPublic.lean/declarations/tendsto-riemannzeta-cofinite-cocompact.md) | 73 | `result-track:1a67b8cbf5949425214946860c7c1ca9253a0782cbff2518abb04df05aa03da2` |
+| 1 | `def` | [riemannZetaZeros](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZetaZerosPublic.lean/declarations/riemannzetazeros.md) | 36 | `declaration-track:ab935136ff0c5cf1b94549cdccf86bf03d75f9411432c7b3bceb0b569e93a261` |
+| 2 | `lemma` | [mem_riemannZetaZeros](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZetaZerosPublic.lean/declarations/mem-riemannzetazeros.md) | 38 | `result-track:c81253ddad4efc0a58bf53f96a8c08302603e78505521126623e7906e1e6ef11` |
+| 3 | `lemma` | [riemannZetaZeros_codiscreteWithin_compl_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZetaZerosPublic.lean/declarations/riemannzetazeros-codiscretewithin-compl-one.md) | 42 | `result-track:d975c5dbc509dde84c27c630031c5d1616b5ba4b9cc37d0e96572abf7b67def6` |
+| 4 | `lemma` | [compl_riemannZetaZeros_mem_codiscrete](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZetaZerosPublic.lean/declarations/compl-riemannzetazeros-mem-codiscrete.md) | 49 | `result-track:719072b4cc941b1fac1289aaab12778d1c67b618da144ba2deb680a2e117b068` |
+| 5 | `lemma` | [isClosed_riemannZetaZeros](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZetaZerosPublic.lean/declarations/isclosed-riemannzetazeros.md) | 60 | `result-track:51fb372d03e93ce7fcd135fcf453d83f3620451f177b317e6a376266aa7db906` |
+| 6 | `lemma` | [isDiscrete_riemannZetaZeros](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZetaZerosPublic.lean/declarations/isdiscrete-riemannzetazeros.md) | 63 | `result-track:277cdce5d4b856350f2bb20cf841f0964320da4f6b51be9823e48b2bccfd2487` |
+| 7 | `lemma` | [IsCompact.inter_riemannZetaZeros_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZetaZerosPublic.lean/declarations/iscompact-inter-riemannzetazeros-finite.md) | 67 | `result-track:d7d5fb72f46d3e079a771a800934fa4bba094431306dbc8033a1c0112b2e1dad` |
+| 8 | `lemma` | [tendsto_riemannZeta_cofinite_cocompact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZetaZerosPublic.lean/declarations/tendsto-riemannzeta-cofinite-cocompact.md) | 73 | `result-track:1a67b8cbf5949425214946860c7c1ca9253a0782cbff2518abb04df05aa03da2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

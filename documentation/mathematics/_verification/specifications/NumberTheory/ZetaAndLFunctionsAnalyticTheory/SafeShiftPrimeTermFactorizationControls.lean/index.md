@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SafeShiftPrimeTermFactorizationControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SafeShiftPrimeTermFactorizationControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SafeShiftPrimeTermFactorizationControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SafeShiftPrimeTermFactorizationControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.SafeShiftPrimeTermFactorization`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SafeShiftPrimeTermFactorization.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.SafeShiftPrimeTermFactorization`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SafeShiftPrimeTermFactorization.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [even_scale_centered](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SafeShiftPrimeTermFactorizationControls.lean/declarations/even-scale-centered.md) | 14 | `result-track:85c7199c44be12387e58eac32d50f5e0c51a4135a59784cc99a50f15435348c4` |
-| 2 | `theorem` | [odd_scale_centered](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SafeShiftPrimeTermFactorizationControls.lean/declarations/odd-scale-centered.md) | 20 | `result-track:a7d123164ac55259e068dc8407ce9e1882c61325a2af73615905049ef96e55f1` |
+| 1 | `theorem` | [even_scale_centered](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SafeShiftPrimeTermFactorizationControls.lean/declarations/even-scale-centered.md) | 14 | `result-track:85c7199c44be12387e58eac32d50f5e0c51a4135a59784cc99a50f15435348c4` |
+| 2 | `theorem` | [odd_scale_centered](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SafeShiftPrimeTermFactorizationControls.lean/declarations/odd-scale-centered.md) | 20 | `result-track:a7d123164ac55259e068dc8407ce9e1882c61325a2af73615905049ef96e55f1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

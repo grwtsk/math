@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceCorrelationEnergyNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceCorrelationEnergyNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCorrelationEnergyNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCorrelationEnergyNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sourceCorrelation_hasDerivAt_integral](../../../../MeasureAndIntegration/SourceCorrelationEnergyNamespaced.lean/declarations/sourcecorrelation-hasderivat-integral.md) | 33 | `result-track:05e75dc76e01f65dd1bd540db16f7a67c963e4909bbe165fb1c4cc339058ae9f` |
-| 2 | `theorem` | [sourceCorrelation_deriv_eq_integral](../../../../MeasureAndIntegration/SourceCorrelationEnergyNamespaced.lean/declarations/sourcecorrelation-deriv-eq-integral.md) | 44 | `result-track:6c143068c8866784a65b1ec257092686f3eafb44d96b53d80113759e32f03f9a` |
-| 3 | `theorem` | [sourceCorrelation_deriv_integrand_integrable](../../../../MeasureAndIntegration/SourceCorrelationEnergyNamespaced.lean/declarations/sourcecorrelation-deriv-integrand-integrable.md) | 51 | `result-track:699f437370f59b7959b155fafb18980ac83848189699c163999972dfd7a7d22a` |
-| 4 | `theorem` | [integral_mul_square_le_of_unit](../../../../MeasureAndIntegration/SourceCorrelationEnergyNamespaced.lean/declarations/integral-mul-square-le-of-unit.md) | 59 | `result-track:2e5ffba14decef073d1ce27b3300006c0d6d42fdbfd568ef137a6f6c3b997d02` |
-| 5 | `theorem` | [sourceCorrelation_deriv_square_le_energy](../../../../MeasureAndIntegration/SourceCorrelationEnergyNamespaced.lean/declarations/sourcecorrelation-deriv-square-le-energy.md) | 83 | `result-track:250e29d463c7d4886d6c86959be27fd8e29d70386fbc86741b9fe48278da24cf` |
-| 6 | `theorem` | [sourceCorrelation_deriv_abs_le_coefficient](../../../../MeasureAndIntegration/SourceCorrelationEnergyNamespaced.lean/declarations/sourcecorrelation-deriv-abs-le-coefficient.md) | 97 | `result-track:64608a7be997d4b905b7611f92ce7da5c9b4be9075d2bbab325d51f69a98d272` |
-| 7 | `theorem` | [sourceCorrelation_deriv_abs_le_five_div](../../../../MeasureAndIntegration/SourceCorrelationEnergyNamespaced.lean/declarations/sourcecorrelation-deriv-abs-le-five-div.md) | 110 | `result-track:fb02270f6789b90e4e899bb6b42c85b1e3603fee9fd35059dbe8305a9e9b4441` |
+| 1 | `theorem` | [sourceCorrelation_hasDerivAt_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCorrelationEnergyNamespaced.lean/declarations/sourcecorrelation-hasderivat-integral.md) | 33 | `result-track:05e75dc76e01f65dd1bd540db16f7a67c963e4909bbe165fb1c4cc339058ae9f` |
+| 2 | `theorem` | [sourceCorrelation_deriv_eq_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCorrelationEnergyNamespaced.lean/declarations/sourcecorrelation-deriv-eq-integral.md) | 44 | `result-track:6c143068c8866784a65b1ec257092686f3eafb44d96b53d80113759e32f03f9a` |
+| 3 | `theorem` | [sourceCorrelation_deriv_integrand_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCorrelationEnergyNamespaced.lean/declarations/sourcecorrelation-deriv-integrand-integrable.md) | 51 | `result-track:699f437370f59b7959b155fafb18980ac83848189699c163999972dfd7a7d22a` |
+| 4 | `theorem` | [integral_mul_square_le_of_unit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCorrelationEnergyNamespaced.lean/declarations/integral-mul-square-le-of-unit.md) | 59 | `result-track:2e5ffba14decef073d1ce27b3300006c0d6d42fdbfd568ef137a6f6c3b997d02` |
+| 5 | `theorem` | [sourceCorrelation_deriv_square_le_energy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCorrelationEnergyNamespaced.lean/declarations/sourcecorrelation-deriv-square-le-energy.md) | 83 | `result-track:250e29d463c7d4886d6c86959be27fd8e29d70386fbc86741b9fe48278da24cf` |
+| 6 | `theorem` | [sourceCorrelation_deriv_abs_le_coefficient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCorrelationEnergyNamespaced.lean/declarations/sourcecorrelation-deriv-abs-le-coefficient.md) | 97 | `result-track:64608a7be997d4b905b7611f92ce7da5c9b4be9075d2bbab325d51f69a98d272` |
+| 7 | `theorem` | [sourceCorrelation_deriv_abs_le_five_div](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCorrelationEnergyNamespaced.lean/declarations/sourcecorrelation-deriv-abs-le-five-div.md) | 110 | `result-track:fb02270f6789b90e4e899bb6b42c85b1e3603fee9fd35059dbe8305a9e9b4441` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/SubalgebraPiNamespaced.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/SubalgebraPiNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubalgebraPiNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubalgebraPiNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [pi](../../../../AssociativeRingsAndAlgebras/SubalgebraPiNamespaced.lean/declarations/pi.md) | 36 | `declaration-track:78a77909abd3985e53080e752ca5725eb01187fb06d0b38e281a0e8dfd0622b4` |
-| 2 | `lemma` | [mem_pi](../../../../AssociativeRingsAndAlgebras/SubalgebraPiNamespaced.lean/declarations/mem-pi.md) | 41 | `result-track:a452a0166ea97ba778c68778fa8155b843bea75c9cafb39243eee4b61de15579` |
-| 3 | `lemma` | [pi_toSubmodule](../../../../AssociativeRingsAndAlgebras/SubalgebraPiNamespaced.lean/declarations/pi-tosubmodule.md) | 44 | `result-track:8adaa1aa535076f0d3ea6a64938e8980812629f446e0584ddcb4bc08e1540d05` |
-| 4 | `lemma` | [pi_top](../../../../AssociativeRingsAndAlgebras/SubalgebraPiNamespaced.lean/declarations/pi-top.md) | 47 | `result-track:61d87c341d32918af4e575f85ec1ec3966cd26c6e3269512a84306dedaa696cb` |
-| 5 | `lemma` | [pi_mono](../../../../AssociativeRingsAndAlgebras/SubalgebraPiNamespaced.lean/declarations/pi-mono.md) | 50 | `result-track:3c314b6eb7c8feb87c072469e7af46705d68a115426517feb1d812c3b7853037` |
+| 1 | `def` | [pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubalgebraPiNamespaced.lean/declarations/pi.md) | 36 | `declaration-track:78a77909abd3985e53080e752ca5725eb01187fb06d0b38e281a0e8dfd0622b4` |
+| 2 | `lemma` | [mem_pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubalgebraPiNamespaced.lean/declarations/mem-pi.md) | 41 | `result-track:a452a0166ea97ba778c68778fa8155b843bea75c9cafb39243eee4b61de15579` |
+| 3 | `lemma` | [pi_toSubmodule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubalgebraPiNamespaced.lean/declarations/pi-tosubmodule.md) | 44 | `result-track:8adaa1aa535076f0d3ea6a64938e8980812629f446e0584ddcb4bc08e1540d05` |
+| 4 | `lemma` | [pi_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubalgebraPiNamespaced.lean/declarations/pi-top.md) | 47 | `result-track:61d87c341d32918af4e575f85ec1ec3966cd26c6e3269512a84306dedaa696cb` |
+| 5 | `lemma` | [pi_mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubalgebraPiNamespaced.lean/declarations/pi-mono.md) | 50 | `result-track:3c314b6eb7c8feb87c072469e7af46705d68a115426517feb1d812c3b7853037` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

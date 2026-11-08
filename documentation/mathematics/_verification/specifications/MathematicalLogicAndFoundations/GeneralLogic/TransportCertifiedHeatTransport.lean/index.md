@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TransportCertifiedHeatTransport.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TransportCertifiedHeatTransport.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TransportCertifiedHeatTransport.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TransportCertifiedHeatTransport.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CertifiedHeatTransport](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TransportCertifiedHeatTransport.lean/declarations/certifiedheattransport.md) | 5 | `declaration-track:c9be7c10fb266efb058cb389b753399f078551090a0f064938e155214bbdccc1` |
-| 2 | `theorem` | [CertifiedHeatTransport.transportSound_id](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TransportCertifiedHeatTransport.lean/declarations/certifiedheattransport-transportsound-id.md) | 16 | `result-track:a5b5bc895f3e72f2a5128c7f06f23f495839f4c4e6297689bd55af66ab376aa6` |
+| 1 | `structure` | [CertifiedHeatTransport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TransportCertifiedHeatTransport.lean/declarations/certifiedheattransport.md) | 5 | `declaration-track:c9be7c10fb266efb058cb389b753399f078551090a0f064938e155214bbdccc1` |
+| 2 | `theorem` | [CertifiedHeatTransport.transportSound_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TransportCertifiedHeatTransport.lean/declarations/certifiedheattransport-transportsound-id.md) | 16 | `result-track:a5b5bc895f3e72f2a5128c7f06f23f495839f4c4e6297689bd55af66ab376aa6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

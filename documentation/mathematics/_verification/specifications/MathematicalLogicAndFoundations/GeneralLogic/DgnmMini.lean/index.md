@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DgnmMini.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DgnmMini.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DgnmMini.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DgnmMini.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [interior_holder_regular](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DgnmMini.lean/declarations/interior-holder-regular.md) | 3 | `result-track:46e07121f0a3325c13681ce2e68d09af042c6bf7b6c4adb5c968211b923e440a` |
+| 1 | `theorem` | [interior_holder_regular](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DgnmMini.lean/declarations/interior-holder-regular.md) | 3 | `result-track:46e07121f0a3325c13681ce2e68d09af042c6bf7b6c4adb5c968211b923e440a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

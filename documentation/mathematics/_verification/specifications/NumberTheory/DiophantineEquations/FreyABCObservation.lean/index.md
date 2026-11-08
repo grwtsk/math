@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/DiophantineEquations/FreyABCObservation.lean/index.md) · [Full source](../../../../../NumberTheory/DiophantineEquations/FreyABCObservation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyABCObservation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyABCObservation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyRationalHeight`](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FreyRationalHeight.lean/index.md) — import line 8; pinned internal source present.
-- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.EquivalentForms`](../../../../../NumberTheory/DiophantineEquations/EquivalentForms.lean/index.md) — import line 9; pinned internal source present.
+- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyRationalHeight`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FreyRationalHeight.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.EquivalentForms`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/EquivalentForms.lean/index.md) — import line 9; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [PrimitiveAdditiveTriple.frey_triple_height_eq_source](../../../../../NumberTheory/DiophantineEquations/FreyABCObservation.lean/declarations/primitiveadditivetriple-frey-triple-height-eq-source.md) | 17 | `result-track:6d04885c0b6db9ae226c30627b8750b2b81bf21dbc8a3c5a336bdaacb31e4e76` |
-| 2 | `theorem` | [PrimitiveAdditiveTriple.frey_observation_source_height_bounds](../../../../../NumberTheory/DiophantineEquations/FreyABCObservation.lean/declarations/primitiveadditivetriple-frey-observation-source-height-bounds.md) | 23 | `result-track:6592ed1ed7b205de8a4519ca63e971d5f19c33f5f78bf70650e3cdf672f563af` |
-| 3 | `def` | [FreyObservationLogBound](../../../../../NumberTheory/DiophantineEquations/FreyABCObservation.lean/declarations/freyobservationlogbound.md) | 32 | `declaration-track:f8dd6fdd5cddbce714685948aca1655a690bf493e53a1efadf31db2bf34dbcf2` |
-| 4 | `theorem` | [freyObservationLogBound_of_abcLogBound](../../../../../NumberTheory/DiophantineEquations/FreyABCObservation.lean/declarations/freyobservationlogbound-of-abclogbound.md) | 39 | `result-track:f5d1f6abb41eb07fe5b1aefe743ce96591d4a94480e394f8661786a6c2bf8d18` |
-| 5 | `theorem` | [abcLogBound_of_freyObservationLogBound](../../../../../NumberTheory/DiophantineEquations/FreyABCObservation.lean/declarations/abclogbound-of-freyobservationlogbound.md) | 46 | `result-track:c684c9615619c92d6705aba4e76e0eeabd133803ef762b9f32373275aa4974a1` |
-| 6 | `theorem` | [abcLogBound_iff_freyObservationLogBound](../../../../../NumberTheory/DiophantineEquations/FreyABCObservation.lean/declarations/abclogbound-iff-freyobservationlogbound.md) | 55 | `result-track:f3b69c2b8e42d40f12f838732cdfcfc9c7ae57f5544d79e3c82d4b3edf9ee57a` |
-| 7 | `theorem` | [abcBound_iff_freyObservationLogBound](../../../../../NumberTheory/DiophantineEquations/FreyABCObservation.lean/declarations/abcbound-iff-freyobservationlogbound.md) | 62 | `result-track:11d8a1b3134d3db2c2a5226263efdd176219c083974174de2be8aa6d7322674f` |
-| 8 | `theorem` | [abcConjecture_iff_freyObservationLogBound](../../../../../NumberTheory/DiophantineEquations/FreyABCObservation.lean/declarations/abcconjecture-iff-freyobservationlogbound.md) | 68 | `result-track:3c38497ad796605ee8beea01ffdf5706ccd083b95d399f8893100d52d0c47e57` |
+| 1 | `theorem` | [PrimitiveAdditiveTriple.frey_triple_height_eq_source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyABCObservation.lean/declarations/primitiveadditivetriple-frey-triple-height-eq-source.md) | 17 | `result-track:6d04885c0b6db9ae226c30627b8750b2b81bf21dbc8a3c5a336bdaacb31e4e76` |
+| 2 | `theorem` | [PrimitiveAdditiveTriple.frey_observation_source_height_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyABCObservation.lean/declarations/primitiveadditivetriple-frey-observation-source-height-bounds.md) | 23 | `result-track:6592ed1ed7b205de8a4519ca63e971d5f19c33f5f78bf70650e3cdf672f563af` |
+| 3 | `def` | [FreyObservationLogBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyABCObservation.lean/declarations/freyobservationlogbound.md) | 32 | `declaration-track:f8dd6fdd5cddbce714685948aca1655a690bf493e53a1efadf31db2bf34dbcf2` |
+| 4 | `theorem` | [freyObservationLogBound_of_abcLogBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyABCObservation.lean/declarations/freyobservationlogbound-of-abclogbound.md) | 39 | `result-track:f5d1f6abb41eb07fe5b1aefe743ce96591d4a94480e394f8661786a6c2bf8d18` |
+| 5 | `theorem` | [abcLogBound_of_freyObservationLogBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyABCObservation.lean/declarations/abclogbound-of-freyobservationlogbound.md) | 46 | `result-track:c684c9615619c92d6705aba4e76e0eeabd133803ef762b9f32373275aa4974a1` |
+| 6 | `theorem` | [abcLogBound_iff_freyObservationLogBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyABCObservation.lean/declarations/abclogbound-iff-freyobservationlogbound.md) | 55 | `result-track:f3b69c2b8e42d40f12f838732cdfcfc9c7ae57f5544d79e3c82d4b3edf9ee57a` |
+| 7 | `theorem` | [abcBound_iff_freyObservationLogBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyABCObservation.lean/declarations/abcbound-iff-freyobservationlogbound.md) | 62 | `result-track:11d8a1b3134d3db2c2a5226263efdd176219c083974174de2be8aa6d7322674f` |
+| 8 | `theorem` | [abcConjecture_iff_freyObservationLogBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyABCObservation.lean/declarations/abcconjecture-iff-freyobservationlogbound.md) | 68 | `result-track:3c38497ad796605ee8beea01ffdf5706ccd083b95d399f8893100d52d0c47e57` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

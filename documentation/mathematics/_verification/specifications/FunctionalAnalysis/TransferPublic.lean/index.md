@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/TransferPublic.lean/index.md) · [Full source](../../../../FunctionalAnalysis/TransferPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/TransferPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/TransferPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,20 +57,20 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [cfcHomTransfer](../../../../FunctionalAnalysis/TransferPublic.lean/declarations/cfchomtransfer.md) | 40 | `declaration-track:cbc7374e408f2a3651ea1d4a3926b1dca2299d541473ee7fa193be02c582b50b` |
-| 2 | `lemma` | [cfcHomTransfer_injective](../../../../FunctionalAnalysis/TransferPublic.lean/declarations/cfchomtransfer-injective.md) | 45 | `result-track:e0577c77bd80961d61c91787511e1ac0afe5f94a0289c8a89faf268c4e4d34aa` |
-| 3 | `lemma` | [cfcHomTransfer_id](../../../../FunctionalAnalysis/TransferPublic.lean/declarations/cfchomtransfer-id.md) | 49 | `result-track:9faa61843afab7da9bf82f1a77f3589a07f93fecd3da64f7cdbf33dd3175e109` |
-| 4 | `lemma` | [continuous_cfcHomTransfer](../../../../FunctionalAnalysis/TransferPublic.lean/declarations/continuous-cfchomtransfer.md) | 56 | `result-track:61f02b5dbcb48a1230c02275f8b98ec9dd01e8aa7448d825577f2740ed34464d` |
-| 5 | `theorem` | [ContinuousFunctionalCalculus.transfer](../../../../FunctionalAnalysis/TransferPublic.lean/declarations/continuousfunctionalcalculus-transfer.md) | 63 | `result-track:3f1dbf05075e4141d5299c4757096fb2d8a189cae6ddbf99d5b92c85d4db8001` |
-| 6 | `lemma` | [cfcHom_eq_cfcHomTransfer](../../../../FunctionalAnalysis/TransferPublic.lean/declarations/cfchom-eq-cfchomtransfer.md) | 83 | `result-track:c054fca584e6c75cd7a1bdbcc69488f3f39ca3b2727f4588b547dc60b4626388` |
-| 7 | `lemma` | [cfc_eq_cfc_transfer](../../../../FunctionalAnalysis/TransferPublic.lean/declarations/cfc-eq-cfc-transfer.md) | 89 | `result-track:1e805c6d6f891cce25bd79ef446adc4a715bba2e6a45194fbcf258c49b8ffaf2` |
-| 8 | `def` | [cfcₙHomTransfer](../../../../FunctionalAnalysis/TransferPublic.lean/declarations/cfc-homtransfer.md) | 121 | `declaration-track:33d8cf423113b1000ee2bbb528ce56373b8aee246aaa4d4b14c70edd2506be91` |
-| 9 | `lemma` | [cfcₙHomTransfer_injective](../../../../FunctionalAnalysis/TransferPublic.lean/declarations/cfc-homtransfer-injective.md) | 127 | `result-track:b889379d2807c3cce2d75cedbec658bd33dc3c8844a9d6942c10e72e61e87b71` |
-| 10 | `lemma` | [cfcₙHomTransfer_id](../../../../FunctionalAnalysis/TransferPublic.lean/declarations/cfc-homtransfer-id.md) | 131 | `result-track:502a88e05c83f28e1c5341540dec94f5e5db7dcac4b72ce29be39cea5413ffec` |
-| 11 | `lemma` | [continuous_cfcₙHomTransfer](../../../../FunctionalAnalysis/TransferPublic.lean/declarations/continuous-cfc-homtransfer.md) | 138 | `result-track:c08970c8a676855bb4b7c1b0cf233f47e0e3ec579a3178baa82cf23f4799afdf` |
-| 12 | `theorem` | [NonUnitalContinuousFunctionalCalculus.transfer](../../../../FunctionalAnalysis/TransferPublic.lean/declarations/nonunitalcontinuousfunctionalcalculus-transfer.md) | 147 | `result-track:633c97578378d8a28f3a2bfa0127bff5f58bbee00d002e25422c257f4450e3a6` |
-| 13 | `lemma` | [cfcₙHom_eq_cfcₙHomTransfer](../../../../FunctionalAnalysis/TransferPublic.lean/declarations/cfc-hom-eq-cfc-homtransfer.md) | 166 | `result-track:931dff2f3f9a8b4ab285c1c571db9aef706d762ced774933141b154dd8e0c1b8` |
-| 14 | `lemma` | [cfcₙ_eq_cfcₙ_transfer](../../../../FunctionalAnalysis/TransferPublic.lean/declarations/cfc-eq-cfc-transfer-source-edition-2.md) | 173 | `result-track:e67173e45ef97ed2dcbaae4f9da209b4c56fb91b387064e66560c97faf322481` |
+| 1 | `def` | [cfcHomTransfer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/TransferPublic.lean/declarations/cfchomtransfer.md) | 40 | `declaration-track:cbc7374e408f2a3651ea1d4a3926b1dca2299d541473ee7fa193be02c582b50b` |
+| 2 | `lemma` | [cfcHomTransfer_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/TransferPublic.lean/declarations/cfchomtransfer-injective.md) | 45 | `result-track:e0577c77bd80961d61c91787511e1ac0afe5f94a0289c8a89faf268c4e4d34aa` |
+| 3 | `lemma` | [cfcHomTransfer_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/TransferPublic.lean/declarations/cfchomtransfer-id.md) | 49 | `result-track:9faa61843afab7da9bf82f1a77f3589a07f93fecd3da64f7cdbf33dd3175e109` |
+| 4 | `lemma` | [continuous_cfcHomTransfer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/TransferPublic.lean/declarations/continuous-cfchomtransfer.md) | 56 | `result-track:61f02b5dbcb48a1230c02275f8b98ec9dd01e8aa7448d825577f2740ed34464d` |
+| 5 | `theorem` | [ContinuousFunctionalCalculus.transfer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/TransferPublic.lean/declarations/continuousfunctionalcalculus-transfer.md) | 63 | `result-track:3f1dbf05075e4141d5299c4757096fb2d8a189cae6ddbf99d5b92c85d4db8001` |
+| 6 | `lemma` | [cfcHom_eq_cfcHomTransfer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/TransferPublic.lean/declarations/cfchom-eq-cfchomtransfer.md) | 83 | `result-track:c054fca584e6c75cd7a1bdbcc69488f3f39ca3b2727f4588b547dc60b4626388` |
+| 7 | `lemma` | [cfc_eq_cfc_transfer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/TransferPublic.lean/declarations/cfc-eq-cfc-transfer.md) | 89 | `result-track:1e805c6d6f891cce25bd79ef446adc4a715bba2e6a45194fbcf258c49b8ffaf2` |
+| 8 | `def` | [cfcₙHomTransfer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/TransferPublic.lean/declarations/cfc-homtransfer.md) | 121 | `declaration-track:33d8cf423113b1000ee2bbb528ce56373b8aee246aaa4d4b14c70edd2506be91` |
+| 9 | `lemma` | [cfcₙHomTransfer_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/TransferPublic.lean/declarations/cfc-homtransfer-injective.md) | 127 | `result-track:b889379d2807c3cce2d75cedbec658bd33dc3c8844a9d6942c10e72e61e87b71` |
+| 10 | `lemma` | [cfcₙHomTransfer_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/TransferPublic.lean/declarations/cfc-homtransfer-id.md) | 131 | `result-track:502a88e05c83f28e1c5341540dec94f5e5db7dcac4b72ce29be39cea5413ffec` |
+| 11 | `lemma` | [continuous_cfcₙHomTransfer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/TransferPublic.lean/declarations/continuous-cfc-homtransfer.md) | 138 | `result-track:c08970c8a676855bb4b7c1b0cf233f47e0e3ec579a3178baa82cf23f4799afdf` |
+| 12 | `theorem` | [NonUnitalContinuousFunctionalCalculus.transfer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/TransferPublic.lean/declarations/nonunitalcontinuousfunctionalcalculus-transfer.md) | 147 | `result-track:633c97578378d8a28f3a2bfa0127bff5f58bbee00d002e25422c257f4450e3a6` |
+| 13 | `lemma` | [cfcₙHom_eq_cfcₙHomTransfer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/TransferPublic.lean/declarations/cfc-hom-eq-cfc-homtransfer.md) | 166 | `result-track:931dff2f3f9a8b4ab285c1c571db9aef706d762ced774933141b154dd8e0c1b8` |
+| 14 | `lemma` | [cfcₙ_eq_cfcₙ_transfer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/TransferPublic.lean/declarations/cfc-eq-cfc-transfer-source-edition-2.md) | 173 | `result-track:e67173e45ef97ed2dcbaae4f9da209b4c56fb91b387064e66560c97faf322481` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

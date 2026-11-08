@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PresheafMonoidal.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PresheafMonoidal.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PresheafMonoidal.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PresheafMonoidal.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PresheafMonoidal.lean/declarations/instance.md) | 30 | `declaration-track:b5aadb6a4d9be1fd4967038760c7020998a7409b5b38f11decac5f63d6fb1163` |
-| 2 | `def` | [tensorObjMap](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PresheafMonoidal.lean/declarations/tensorobjmap.md) | 40 | `declaration-track:a5b71d6ed6e6bd9803525cd9be11e82b94a915b6db490804ce5a69bff3c556eb` |
-| 3 | `def` | [tensorObj](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PresheafMonoidal.lean/declarations/tensorobj.md) | 50 | `declaration-track:02276f60efb4db03a3b1f0883367c0ef57a57b1b902e933bbf912c6975e987c2` |
-| 4 | `lemma` | [tensorObj_map_tmul](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PresheafMonoidal.lean/declarations/tensorobj-map-tmul.md) | 66 | `result-track:52795e88bc7254551856ab672b49a0535fb67cb30fba2fa16e8e3ad8c73f4082` |
-| 5 | `def` | [tensorHom](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PresheafMonoidal.lean/declarations/tensorhom.md) | 74 | `declaration-track:db843585e9326c303fe54da6d73689d9f16e99a3d34039e26c94933635aff029` |
-| 6 | `instance` | [monoidalCategoryStruct](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PresheafMonoidal.lean/declarations/monoidalcategorystruct.md) | 89 | `declaration-track:20f111e3c34eb7389730e1153281b347438b69686233f54189874ef3062b18cb` |
-| 7 | `instance` | [monoidalCategory](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PresheafMonoidal.lean/declarations/monoidalcategory.md) | 109 | `declaration-track:7a20c9d38c31f65561df2a3f894cad13fafae9f1d1367960a09e98cd30a3282e` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PresheafMonoidal.lean/declarations/instance.md) | 30 | `declaration-track:b5aadb6a4d9be1fd4967038760c7020998a7409b5b38f11decac5f63d6fb1163` |
+| 2 | `def` | [tensorObjMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PresheafMonoidal.lean/declarations/tensorobjmap.md) | 40 | `declaration-track:a5b71d6ed6e6bd9803525cd9be11e82b94a915b6db490804ce5a69bff3c556eb` |
+| 3 | `def` | [tensorObj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PresheafMonoidal.lean/declarations/tensorobj.md) | 50 | `declaration-track:02276f60efb4db03a3b1f0883367c0ef57a57b1b902e933bbf912c6975e987c2` |
+| 4 | `lemma` | [tensorObj_map_tmul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PresheafMonoidal.lean/declarations/tensorobj-map-tmul.md) | 66 | `result-track:52795e88bc7254551856ab672b49a0535fb67cb30fba2fa16e8e3ad8c73f4082` |
+| 5 | `def` | [tensorHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PresheafMonoidal.lean/declarations/tensorhom.md) | 74 | `declaration-track:db843585e9326c303fe54da6d73689d9f16e99a3d34039e26c94933635aff029` |
+| 6 | `instance` | [monoidalCategoryStruct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PresheafMonoidal.lean/declarations/monoidalcategorystruct.md) | 89 | `declaration-track:20f111e3c34eb7389730e1153281b347438b69686233f54189874ef3062b18cb` |
+| 7 | `instance` | [monoidalCategory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PresheafMonoidal.lean/declarations/monoidalcategory.md) | 109 | `declaration-track:7a20c9d38c31f65561df2a3f894cad13fafae9f1d1367960a09e98cd30a3282e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

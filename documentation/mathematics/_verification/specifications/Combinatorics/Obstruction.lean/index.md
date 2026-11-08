@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/Obstruction.lean/index.md) · [Full source](../../../../Combinatorics/Obstruction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Obstruction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Obstruction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [ObstructionKind](../../../../Combinatorics/Obstruction.lean/declarations/obstructionkind.md) | 14 | `declaration-track:3ab374384ea1f2e777b8e802b1e925d82a938e19db2b02d101575403f55ad9ae` |
-| 2 | `structure` | [ImmutableSnapshot](../../../../Combinatorics/Obstruction.lean/declarations/immutablesnapshot.md) | 33 | `declaration-track:d90517929c3b9e5070fda843ac4af9d9aa6b47e8828bc12532613590082f7343` |
-| 3 | `structure` | [MutationProgram](../../../../Combinatorics/Obstruction.lean/declarations/mutationprogram.md) | 38 | `declaration-track:65b26ceb9a32b4c4a2c7234fa1758de266ecfb14630f4b1c699dccd8246dec0d` |
-| 4 | `structure` | [KnownObstruction](../../../../Combinatorics/Obstruction.lean/declarations/knownobstruction.md) | 43 | `declaration-track:dbcb38e32a243b732b36a2081b6c7076e251d1828131e87a69fb83a95a578368` |
-| 5 | `def` | [directMutationSupport](../../../../Combinatorics/Obstruction.lean/declarations/directmutationsupport.md) | 61 | `declaration-track:c22c35dbdc0d938e994a26fb27a4ea0c0028b717f9396f57f646b543af8dc955` |
-| 6 | `theorem` | [direct_mutation_support_exact](../../../../Combinatorics/Obstruction.lean/declarations/direct-mutation-support-exact.md) | 68 | `result-track:1dd583f8a98b609ce3394c48986579b863b1329f24b5e9f427f0a6cf5975f324` |
+| 1 | `inductive` | [ObstructionKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Obstruction.lean/declarations/obstructionkind.md) | 14 | `declaration-track:3ab374384ea1f2e777b8e802b1e925d82a938e19db2b02d101575403f55ad9ae` |
+| 2 | `structure` | [ImmutableSnapshot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Obstruction.lean/declarations/immutablesnapshot.md) | 33 | `declaration-track:d90517929c3b9e5070fda843ac4af9d9aa6b47e8828bc12532613590082f7343` |
+| 3 | `structure` | [MutationProgram](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Obstruction.lean/declarations/mutationprogram.md) | 38 | `declaration-track:65b26ceb9a32b4c4a2c7234fa1758de266ecfb14630f4b1c699dccd8246dec0d` |
+| 4 | `structure` | [KnownObstruction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Obstruction.lean/declarations/knownobstruction.md) | 43 | `declaration-track:dbcb38e32a243b732b36a2081b6c7076e251d1828131e87a69fb83a95a578368` |
+| 5 | `def` | [directMutationSupport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Obstruction.lean/declarations/directmutationsupport.md) | 61 | `declaration-track:c22c35dbdc0d938e994a26fb27a4ea0c0028b717f9396f57f646b543af8dc955` |
+| 6 | `theorem` | [direct_mutation_support_exact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Obstruction.lean/declarations/direct-mutation-support-exact.md) | 68 | `result-track:1dd583f8a98b609ce3394c48986579b863b1329f24b5e9f427f0a6cf5975f324` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

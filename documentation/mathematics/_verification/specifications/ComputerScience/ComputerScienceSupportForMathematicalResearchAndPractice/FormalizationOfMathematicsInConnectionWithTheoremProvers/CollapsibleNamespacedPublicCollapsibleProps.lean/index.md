@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CollapsibleNamespacedPublicCollapsibleProps.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CollapsibleNamespacedPublicCollapsibleProps.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CollapsibleNamespacedPublicCollapsibleProps.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CollapsibleNamespacedPublicCollapsibleProps.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CollapsibleProps](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CollapsibleNamespacedPublicCollapsibleProps.lean/declarations/collapsibleprops.md) | 46 | `declaration-track:c816320e65623fba29773f94344f0573e557a1678cc9cbf4a821ec02ea331df5` |
-| 2 | `def` | [Collapsible](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CollapsibleNamespacedPublicCollapsibleProps.lean/declarations/collapsible-source-edition-2.md) | 61 | `declaration-track:ec9b2d6037f81dd35c71754dac5ff4008ddd924af9509686df90a5ed4217c557` |
-| 3 | `def` | [collapsible](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CollapsibleNamespacedPublicCollapsibleProps.lean/declarations/collapsible.md) | 106 | `declaration-track:56c3166eb1b18871f078c455cdffa0312565ef5312f3e7100d2ca312bb6d26e4` |
+| 1 | `structure` | [CollapsibleProps](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CollapsibleNamespacedPublicCollapsibleProps.lean/declarations/collapsibleprops.md) | 46 | `declaration-track:c816320e65623fba29773f94344f0573e557a1678cc9cbf4a821ec02ea331df5` |
+| 2 | `def` | [Collapsible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CollapsibleNamespacedPublicCollapsibleProps.lean/declarations/collapsible-source-edition-2.md) | 61 | `declaration-track:ec9b2d6037f81dd35c71754dac5ff4008ddd924af9509686df90a5ed4217c557` |
+| 3 | `def` | [collapsible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CollapsibleNamespacedPublicCollapsibleProps.lean/declarations/collapsible.md) | 106 | `declaration-track:56c3166eb1b18871f078c455cdffa0312565ef5312f3e7100d2ca312bb6d26e4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

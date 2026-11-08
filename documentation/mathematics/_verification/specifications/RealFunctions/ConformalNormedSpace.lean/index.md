@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/ConformalNormedSpace.lean/index.md) · [Full source](../../../../RealFunctions/ConformalNormedSpace.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ConformalNormedSpace.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ConformalNormedSpace.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,22 +58,22 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ConformalAt](../../../../RealFunctions/ConformalNormedSpace.lean/declarations/conformalat.md) | 53 | `declaration-track:8ee82e3230bbeedf7075952deb41f62dc001be8b0cb4abf94c8ef6136dc24f37` |
-| 2 | `theorem` | [conformalAt_id](../../../../RealFunctions/ConformalNormedSpace.lean/declarations/conformalat-id.md) | 56 | `result-track:2342628b33eef77cd8c0211fa4897578b3bccf243117c5aa4abbbdf22b5b5922` |
-| 3 | `theorem` | [conformalAt_const_smul](../../../../RealFunctions/ConformalNormedSpace.lean/declarations/conformalat-const-smul.md) | 59 | `result-track:1f75bea68996475db4387f556327a087af098a5e8af3aa21b98a6e8157e4402c` |
-| 4 | `theorem` | [Subsingleton.conformalAt](../../../../RealFunctions/ConformalNormedSpace.lean/declarations/subsingleton-conformalat.md) | 63 | `result-track:244b315d46a792d519717f87456669a9e9a4c905d6df39ec7edfa4d3d4134e8c` |
-| 5 | `theorem` | [conformalAt_iff_isConformalMap_fderiv](../../../../RealFunctions/ConformalNormedSpace.lean/declarations/conformalat-iff-isconformalmap-fderiv.md) | 67 | `result-track:65b18f57566217b7f2f792bcd0091645cde7c3b07e5f8314641e11a5e3d7cdcf` |
-| 6 | `theorem` | [differentiableAt](../../../../RealFunctions/ConformalNormedSpace.lean/declarations/differentiableat.md) | 80 | `result-track:926fcd5e682bd1156f7d7519e637db4fc38b0a330c4903b5f43b796f00c45af2` |
-| 7 | `theorem` | [congr](../../../../RealFunctions/ConformalNormedSpace.lean/declarations/congr.md) | 84 | `result-track:382ce71473fba61000d189018463d1482b7e579007e1553ab1a81f24b7a92ef2` |
-| 8 | `theorem` | [comp](../../../../RealFunctions/ConformalNormedSpace.lean/declarations/comp-source-edition-2.md) | 89 | `result-track:fe131aa817245417b35dee79eaff4257e585e61349a70260b9d72d7c8409cd37` |
-| 9 | `theorem` | [const_smul](../../../../RealFunctions/ConformalNormedSpace.lean/declarations/const-smul-source-edition-2.md) | 95 | `result-track:b703c7b1a385f6fc14c06564c219c81c894fdc8f654cfb097edfd6fdd048c5d7` |
-| 10 | `def` | [Conformal](../../../../RealFunctions/ConformalNormedSpace.lean/declarations/conformal.md) | 106 | `declaration-track:f9d3fd0ee7bc6dacdb39bd6e761b384cbc415a48c84771ad29deedfeb0ae0041` |
-| 11 | `theorem` | [conformal_id](../../../../RealFunctions/ConformalNormedSpace.lean/declarations/conformal-id.md) | 109 | `result-track:df167f6c5b9e84ff4539b994b17d73c6774d50d44eb9b853b8a1520aa16485ca` |
-| 12 | `theorem` | [conformal_const_smul](../../../../RealFunctions/ConformalNormedSpace.lean/declarations/conformal-const-smul.md) | 111 | `result-track:600099c69bc5beb4d48360018cf71bae0ca5fe342fc8b5f10a726b8d99bc70a0` |
-| 13 | `theorem` | [conformalAt](../../../../RealFunctions/ConformalNormedSpace.lean/declarations/conformalat-source-edition-2.md) | 116 | `result-track:c3076112b000e2a428c656104d609898028ef5bed97290c01772bc0a3487ee23` |
-| 14 | `theorem` | [differentiable](../../../../RealFunctions/ConformalNormedSpace.lean/declarations/differentiable.md) | 119 | `result-track:5c97fd0a9b2f99b1fab5cbb773ae1343c2e026dc15d256a5821376a2da2fb10c` |
-| 15 | `theorem` | [comp](../../../../RealFunctions/ConformalNormedSpace.lean/declarations/comp.md) | 122 | `result-track:3ac12ee29638e2bf9f5618abf74e97f8c4d920970993cbd0162fea9fca4bae58` |
-| 16 | `theorem` | [const_smul](../../../../RealFunctions/ConformalNormedSpace.lean/declarations/const-smul.md) | 125 | `result-track:1a4e3088f640ec85608312974c2e3f5ceffb743a3406c66adb8dd7588b8079ca` |
+| 1 | `def` | [ConformalAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ConformalNormedSpace.lean/declarations/conformalat.md) | 53 | `declaration-track:8ee82e3230bbeedf7075952deb41f62dc001be8b0cb4abf94c8ef6136dc24f37` |
+| 2 | `theorem` | [conformalAt_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ConformalNormedSpace.lean/declarations/conformalat-id.md) | 56 | `result-track:2342628b33eef77cd8c0211fa4897578b3bccf243117c5aa4abbbdf22b5b5922` |
+| 3 | `theorem` | [conformalAt_const_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ConformalNormedSpace.lean/declarations/conformalat-const-smul.md) | 59 | `result-track:1f75bea68996475db4387f556327a087af098a5e8af3aa21b98a6e8157e4402c` |
+| 4 | `theorem` | [Subsingleton.conformalAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ConformalNormedSpace.lean/declarations/subsingleton-conformalat.md) | 63 | `result-track:244b315d46a792d519717f87456669a9e9a4c905d6df39ec7edfa4d3d4134e8c` |
+| 5 | `theorem` | [conformalAt_iff_isConformalMap_fderiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ConformalNormedSpace.lean/declarations/conformalat-iff-isconformalmap-fderiv.md) | 67 | `result-track:65b18f57566217b7f2f792bcd0091645cde7c3b07e5f8314641e11a5e3d7cdcf` |
+| 6 | `theorem` | [differentiableAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ConformalNormedSpace.lean/declarations/differentiableat.md) | 80 | `result-track:926fcd5e682bd1156f7d7519e637db4fc38b0a330c4903b5f43b796f00c45af2` |
+| 7 | `theorem` | [congr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ConformalNormedSpace.lean/declarations/congr.md) | 84 | `result-track:382ce71473fba61000d189018463d1482b7e579007e1553ab1a81f24b7a92ef2` |
+| 8 | `theorem` | [comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ConformalNormedSpace.lean/declarations/comp-source-edition-2.md) | 89 | `result-track:fe131aa817245417b35dee79eaff4257e585e61349a70260b9d72d7c8409cd37` |
+| 9 | `theorem` | [const_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ConformalNormedSpace.lean/declarations/const-smul-source-edition-2.md) | 95 | `result-track:b703c7b1a385f6fc14c06564c219c81c894fdc8f654cfb097edfd6fdd048c5d7` |
+| 10 | `def` | [Conformal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ConformalNormedSpace.lean/declarations/conformal.md) | 106 | `declaration-track:f9d3fd0ee7bc6dacdb39bd6e761b384cbc415a48c84771ad29deedfeb0ae0041` |
+| 11 | `theorem` | [conformal_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ConformalNormedSpace.lean/declarations/conformal-id.md) | 109 | `result-track:df167f6c5b9e84ff4539b994b17d73c6774d50d44eb9b853b8a1520aa16485ca` |
+| 12 | `theorem` | [conformal_const_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ConformalNormedSpace.lean/declarations/conformal-const-smul.md) | 111 | `result-track:600099c69bc5beb4d48360018cf71bae0ca5fe342fc8b5f10a726b8d99bc70a0` |
+| 13 | `theorem` | [conformalAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ConformalNormedSpace.lean/declarations/conformalat-source-edition-2.md) | 116 | `result-track:c3076112b000e2a428c656104d609898028ef5bed97290c01772bc0a3487ee23` |
+| 14 | `theorem` | [differentiable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ConformalNormedSpace.lean/declarations/differentiable.md) | 119 | `result-track:5c97fd0a9b2f99b1fab5cbb773ae1343c2e026dc15d256a5821376a2da2fb10c` |
+| 15 | `theorem` | [comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ConformalNormedSpace.lean/declarations/comp.md) | 122 | `result-track:3ac12ee29638e2bf9f5618abf74e97f8c4d920970993cbd0162fea9fca4bae58` |
+| 16 | `theorem` | [const_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ConformalNormedSpace.lean/declarations/const-smul.md) | 125 | `result-track:1a4e3088f640ec85608312974c2e3f5ceffb743a3406c66adb8dd7588b8079ca` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

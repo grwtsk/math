@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/PortFiberEvaluationTopology.lean/index.md) · [Full source](../../../../GeneralTopology/PortFiberEvaluationTopology.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PortFiberEvaluationTopology.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PortFiberEvaluationTopology.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.AlgebraicGeometry.AnalyticAffineTopology`](../../../../GeneralTopology/AnalyticAffineTopology.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.PortFiberTheoremPortfolio`](../../../../AssociativeRingsAndAlgebras/PortFiberTheoremPortfolio.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.AlgebraicGeometry.AnalyticAffineTopology`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/AnalyticAffineTopology.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.PortFiberTheoremPortfolio`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/PortFiberTheoremPortfolio.lean/index.md) — import line 2; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [ClaimIndex](../../../../GeneralTopology/PortFiberEvaluationTopology.lean/declarations/claimindex.md) | 14 | `declaration-track:03e26301e4485a3247c2e9adcab20546520752ed19672baf14da7da0b7e8b554` |
-| 2 | `def` | [Claim](../../../../GeneralTopology/PortFiberEvaluationTopology.lean/declarations/claim.md) | 23 | `declaration-track:ecb0f5b59305d1ebbae9cbc675c2e039009f3ea2a93073d637dd1926b072b219` |
-| 3 | `theorem` | [claim_proof](../../../../GeneralTopology/PortFiberEvaluationTopology.lean/declarations/claim-proof.md) | 40 | `result-track:fd09c0fb288c86cead1286931ab52f6af1492cb50b010e904440bdbd71ebda29` |
-| 4 | `def` | [portfolio](../../../../GeneralTopology/PortFiberEvaluationTopology.lean/declarations/portfolio.md) | 53 | `declaration-track:fde8fcf705859e3532c9fac0bb5bdd0b78930ffd8be1250c881f6e9f08cb5090` |
-| 5 | `def` | [architecture](../../../../GeneralTopology/PortFiberEvaluationTopology.lean/declarations/architecture.md) | 57 | `declaration-track:966c238483c79c8f0036835665f053a190544e26efd6c7473b559cbf44307a36` |
-| 6 | `theorem` | [original_branch_unchanged](../../../../GeneralTopology/PortFiberEvaluationTopology.lean/declarations/original-branch-unchanged.md) | 63 | `result-track:d841a60c6c93efe27c1d94955407dbc21faff8be03399192791e9387d2c4fa73` |
-| 7 | `theorem` | [new_branch_proved](../../../../GeneralTopology/PortFiberEvaluationTopology.lean/declarations/new-branch-proved.md) | 71 | `result-track:8160be56abf8634638c823d5a43308243f4023975609d9eeda93b6eebacfa871` |
-| 8 | `theorem` | [target_unchanged](../../../../GeneralTopology/PortFiberEvaluationTopology.lean/declarations/target-unchanged.md) | 78 | `result-track:975d5d5068028565ff08c402cbe252020d1e63155a98dc80ad724f24bf0a45b9` |
-| 9 | `theorem` | [retarget_preserves_new](../../../../GeneralTopology/PortFiberEvaluationTopology.lean/declarations/retarget-preserves-new.md) | 85 | `result-track:1e6681aa4bda51567a42a398b91c174d8c2a988ba28788b222bae371802ab2fc` |
+| 1 | `inductive` | [ClaimIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PortFiberEvaluationTopology.lean/declarations/claimindex.md) | 14 | `declaration-track:03e26301e4485a3247c2e9adcab20546520752ed19672baf14da7da0b7e8b554` |
+| 2 | `def` | [Claim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PortFiberEvaluationTopology.lean/declarations/claim.md) | 23 | `declaration-track:ecb0f5b59305d1ebbae9cbc675c2e039009f3ea2a93073d637dd1926b072b219` |
+| 3 | `theorem` | [claim_proof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PortFiberEvaluationTopology.lean/declarations/claim-proof.md) | 40 | `result-track:fd09c0fb288c86cead1286931ab52f6af1492cb50b010e904440bdbd71ebda29` |
+| 4 | `def` | [portfolio](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PortFiberEvaluationTopology.lean/declarations/portfolio.md) | 53 | `declaration-track:fde8fcf705859e3532c9fac0bb5bdd0b78930ffd8be1250c881f6e9f08cb5090` |
+| 5 | `def` | [architecture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PortFiberEvaluationTopology.lean/declarations/architecture.md) | 57 | `declaration-track:966c238483c79c8f0036835665f053a190544e26efd6c7473b559cbf44307a36` |
+| 6 | `theorem` | [original_branch_unchanged](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PortFiberEvaluationTopology.lean/declarations/original-branch-unchanged.md) | 63 | `result-track:d841a60c6c93efe27c1d94955407dbc21faff8be03399192791e9387d2c4fa73` |
+| 7 | `theorem` | [new_branch_proved](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PortFiberEvaluationTopology.lean/declarations/new-branch-proved.md) | 71 | `result-track:8160be56abf8634638c823d5a43308243f4023975609d9eeda93b6eebacfa871` |
+| 8 | `theorem` | [target_unchanged](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PortFiberEvaluationTopology.lean/declarations/target-unchanged.md) | 78 | `result-track:975d5d5068028565ff08c402cbe252020d1e63155a98dc80ad724f24bf0a45b9` |
+| 9 | `theorem` | [retarget_preserves_new](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PortFiberEvaluationTopology.lean/declarations/retarget-preserves-new.md) | 85 | `result-track:1e6681aa4bda51567a42a398b91c174d8c2a988ba28788b222bae371802ab2fc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/StoneanEffectiveEpiNamespacedPublic.lean/index.md) · [Full source](../../../../GeneralTopology/StoneanEffectiveEpiNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StoneanEffectiveEpiNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StoneanEffectiveEpiNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [effectiveEpi_tfae](../../../../GeneralTopology/StoneanEffectiveEpiNamespacedPublic.lean/declarations/effectiveepi-tfae.md) | 42 | `result-track:665ad1d9998bc9f751096d863daf5e0374e038e358c3a0b581b5d95a59231b71` |
-| 2 | `instance` | [(anonymous)](../../../../GeneralTopology/StoneanEffectiveEpiNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 54 | `declaration-track:bbe48c5c7c0355b2d0ef70d0bb8094e38d245b2600e4d8c8772b7e0edb7d89e4` |
-| 3 | `instance` | [(anonymous)](../../../../GeneralTopology/StoneanEffectiveEpiNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 59 | `declaration-track:91585e4b686aa8c51b95fcd96ac6f07234f46e611006b5d03f682654afaa6c47` |
-| 4 | `def` | [stoneanToCompHausEffectivePresentation](../../../../GeneralTopology/StoneanEffectiveEpiNamespacedPublic.lean/declarations/stoneantocomphauseffectivepresentation.md) | 67 | `declaration-track:57bc1acd6d15302d30a91325e2ab6bc9fa3036e1c66044570446337ea3bc6a8a` |
-| 5 | `instance` | [(anonymous)](../../../../GeneralTopology/StoneanEffectiveEpiNamespacedPublic.lean/declarations/instance.md) | 73 | `declaration-track:49025331659f9e49610324fea7b93808742557a04543d3cacf215d1c491595e0` |
-| 6 | `instance` | [(anonymous)](../../../../GeneralTopology/StoneanEffectiveEpiNamespacedPublic.lean/declarations/instance-source-edition-4.md) | 76 | `declaration-track:e0c2f6722df3c76e5cde921a2329583d8e1f8f89678c7081d61ee9cff4ba224c` |
-| 7 | `example` | [(anonymous)](../../../../GeneralTopology/StoneanEffectiveEpiNamespacedPublic.lean/declarations/example.md) | 78 | `declaration-track:088bc2dae33d38f9de3fcb1d239d49149ef67c28432bdfff61d06edd4c1d4682` |
-| 8 | `theorem` | [effectiveEpiFamily_tfae](../../../../GeneralTopology/StoneanEffectiveEpiNamespacedPublic.lean/declarations/effectiveepifamily-tfae.md) | 82 | `result-track:4f2b07af42dd813d60bd5fa5501c29fa25fdd52273bbfe9e94bc9ac5e2aca11d` |
-| 9 | `theorem` | [effectiveEpiFamily_of_jointly_surjective](../../../../GeneralTopology/StoneanEffectiveEpiNamespacedPublic.lean/declarations/effectiveepifamily-of-jointly-surjective.md) | 101 | `result-track:64b8b84a39a916b3ed2070612af3c98129bcd554b31470f68fd93a766abe025b` |
+| 1 | `theorem` | [effectiveEpi_tfae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StoneanEffectiveEpiNamespacedPublic.lean/declarations/effectiveepi-tfae.md) | 42 | `result-track:665ad1d9998bc9f751096d863daf5e0374e038e358c3a0b581b5d95a59231b71` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StoneanEffectiveEpiNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 54 | `declaration-track:bbe48c5c7c0355b2d0ef70d0bb8094e38d245b2600e4d8c8772b7e0edb7d89e4` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StoneanEffectiveEpiNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 59 | `declaration-track:91585e4b686aa8c51b95fcd96ac6f07234f46e611006b5d03f682654afaa6c47` |
+| 4 | `def` | [stoneanToCompHausEffectivePresentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StoneanEffectiveEpiNamespacedPublic.lean/declarations/stoneantocomphauseffectivepresentation.md) | 67 | `declaration-track:57bc1acd6d15302d30a91325e2ab6bc9fa3036e1c66044570446337ea3bc6a8a` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StoneanEffectiveEpiNamespacedPublic.lean/declarations/instance.md) | 73 | `declaration-track:49025331659f9e49610324fea7b93808742557a04543d3cacf215d1c491595e0` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StoneanEffectiveEpiNamespacedPublic.lean/declarations/instance-source-edition-4.md) | 76 | `declaration-track:e0c2f6722df3c76e5cde921a2329583d8e1f8f89678c7081d61ee9cff4ba224c` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StoneanEffectiveEpiNamespacedPublic.lean/declarations/example.md) | 78 | `declaration-track:088bc2dae33d38f9de3fcb1d239d49149ef67c28432bdfff61d06edd4c1d4682` |
+| 8 | `theorem` | [effectiveEpiFamily_tfae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StoneanEffectiveEpiNamespacedPublic.lean/declarations/effectiveepifamily-tfae.md) | 82 | `result-track:4f2b07af42dd813d60bd5fa5501c29fa25fdd52273bbfe9e94bc9ac5e2aca11d` |
+| 9 | `theorem` | [effectiveEpiFamily_of_jointly_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/StoneanEffectiveEpiNamespacedPublic.lean/declarations/effectiveepifamily-of-jointly-surjective.md) | 101 | `result-track:64b8b84a39a916b3ed2070612af3c98129bcd554b31470f68fd93a766abe025b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

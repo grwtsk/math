@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MetadataMachineValidationStatus.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MetadataMachineValidationStatus.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MetadataMachineValidationStatus.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MetadataMachineValidationStatus.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [MachineValidationStatus](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MetadataMachineValidationStatus.lean/declarations/machinevalidationstatus.md) | 8 | `declaration-track:38eaa9913dd1749778174c63f40560816a6afc065bdeb8ca26f60e738f33c273` |
-| 2 | `structure` | [ArtifactMetadata](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MetadataMachineValidationStatus.lean/declarations/artifactmetadata.md) | 15 | `declaration-track:8c49bc6e4c94469f764c976c98a74a51551bfb5e8e8df11d39449ebaa61b4e5e` |
-| 3 | `def` | [algHenCompletenessMetadata](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MetadataMachineValidationStatus.lean/declarations/alghencompletenessmetadata.md) | 25 | `declaration-track:02a0e62f20908c86333994f46d0bffbbeb441deee759d2d6b779023976b27d40` |
+| 1 | `inductive` | [MachineValidationStatus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MetadataMachineValidationStatus.lean/declarations/machinevalidationstatus.md) | 8 | `declaration-track:38eaa9913dd1749778174c63f40560816a6afc065bdeb8ca26f60e738f33c273` |
+| 2 | `structure` | [ArtifactMetadata](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MetadataMachineValidationStatus.lean/declarations/artifactmetadata.md) | 15 | `declaration-track:8c49bc6e4c94469f764c976c98a74a51551bfb5e8e8df11d39449ebaa61b4e5e` |
+| 3 | `def` | [algHenCompletenessMetadata](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MetadataMachineValidationStatus.lean/declarations/alghencompletenessmetadata.md) | 25 | `declaration-track:02a0e62f20908c86333994f46d0bffbbeb441deee759d2d6b779023976b27d40` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

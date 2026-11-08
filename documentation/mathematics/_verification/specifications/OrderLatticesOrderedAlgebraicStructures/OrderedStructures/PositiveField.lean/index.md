@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/PositiveField.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/PositiveField.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/PositiveField.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/PositiveField.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [Subtype.inv](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/PositiveField.lean/declarations/subtype-inv.md) | 21 | `declaration-track:ecb6b8d6efda1c61463267b178d750fbb68f209950950ff274b692310d05fbb3` |
-| 2 | `theorem` | [coe_inv](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/PositiveField.lean/declarations/coe-inv.md) | 24 | `result-track:9f6dc39189bada9867ad271d31bf11b1bab1faa2797df7682c4c16a0b2812104` |
-| 3 | `instance` | [(anonymous)](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/PositiveField.lean/declarations/instance-source-edition-2.md) | 27 | `declaration-track:6888d21222159bd116f5928cc255724d5a3b0e37cb075ad86d9453cc8202b6d2` |
-| 4 | `theorem` | [coe_zpow](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/PositiveField.lean/declarations/coe-zpow.md) | 31 | `result-track:69e1fd4a507f28aaf5355e7946995fa19f1019dd21bb7ce96fc50e7901b01017` |
-| 5 | `instance` | [(anonymous)](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/PositiveField.lean/declarations/instance.md) | 34 | `declaration-track:0cfe5d594f8bf26656980a4d5bea2961be4ebe0f8d4275be91d67a704c838dfe` |
+| 1 | `instance` | [Subtype.inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/PositiveField.lean/declarations/subtype-inv.md) | 21 | `declaration-track:ecb6b8d6efda1c61463267b178d750fbb68f209950950ff274b692310d05fbb3` |
+| 2 | `theorem` | [coe_inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/PositiveField.lean/declarations/coe-inv.md) | 24 | `result-track:9f6dc39189bada9867ad271d31bf11b1bab1faa2797df7682c4c16a0b2812104` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/PositiveField.lean/declarations/instance-source-edition-2.md) | 27 | `declaration-track:6888d21222159bd116f5928cc255724d5a3b0e37cb075ad86d9453cc8202b6d2` |
+| 4 | `theorem` | [coe_zpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/PositiveField.lean/declarations/coe-zpow.md) | 31 | `result-track:69e1fd4a507f28aaf5355e7946995fa19f1019dd21bb7ce96fc50e7901b01017` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/PositiveField.lean/declarations/instance.md) | 34 | `declaration-track:0cfe5d594f8bf26656980a4d5bea2961be4ebe0f8d4275be91d67a704c838dfe` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

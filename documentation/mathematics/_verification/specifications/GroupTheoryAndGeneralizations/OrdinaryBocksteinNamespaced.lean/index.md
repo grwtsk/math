@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/OrdinaryBocksteinNamespaced.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/OrdinaryBocksteinNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OrdinaryBocksteinNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OrdinaryBocksteinNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [OrdinaryBocksteinPhase](../../../../GroupTheoryAndGeneralizations/OrdinaryBocksteinNamespaced.lean/declarations/ordinarybocksteinphase.md) | 23 | `declaration-track:a7eb4fc5acd74a29bc1d6a672573683e467731219f0714b5e29deaef782c3e4d` |
+| 1 | `structure` | [OrdinaryBocksteinPhase](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/OrdinaryBocksteinNamespaced.lean/declarations/ordinarybocksteinphase.md) | 23 | `declaration-track:a7eb4fc5acd74a29bc1d6a672573683e467731219f0714b5e29deaef782c3e4d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

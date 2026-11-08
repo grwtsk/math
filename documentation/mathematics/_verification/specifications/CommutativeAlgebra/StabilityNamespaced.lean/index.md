@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/StabilityNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/StabilityNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/StabilityNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/StabilityNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,11 +61,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [trans](../../../../CommutativeAlgebra/StabilityNamespaced.lean/declarations/trans.md) | 66 | `result-track:b78caddbec93c8b705c6873eec942cd2f916166a25c4f2982e632637584624dd` |
-| 2 | `instance` | [baseChange](../../../../CommutativeAlgebra/StabilityNamespaced.lean/declarations/basechange.md) | 93 | `declaration-track:f5a68a2dcf2d30c19bb61bd3c6603caf19740a9a2b557d55a88597fc2f188a96` |
-| 3 | `theorem` | [isBaseChange](../../../../CommutativeAlgebra/StabilityNamespaced.lean/declarations/isbasechange.md) | 96 | `result-track:cf44a3e6a1e68fd2e47ae818209652b15bcc7065f2353ae5ba6cd201306b40f5` |
-| 4 | `instance` | [localizedModule](../../../../CommutativeAlgebra/StabilityNamespaced.lean/declarations/localizedmodule.md) | 109 | `declaration-track:6b1432031247da72781c93474ef694b15080774d78e622f785f87a2d266a95b5` |
-| 5 | `theorem` | [of_isLocalizedModule](../../../../CommutativeAlgebra/StabilityNamespaced.lean/declarations/of-islocalizedmodule.md) | 116 | `result-track:a391a6c3a3d87ff750eb098aaa7078f776065db931a349ca36a3cf500b7be531` |
+| 1 | `theorem` | [trans](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/StabilityNamespaced.lean/declarations/trans.md) | 66 | `result-track:b78caddbec93c8b705c6873eec942cd2f916166a25c4f2982e632637584624dd` |
+| 2 | `instance` | [baseChange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/StabilityNamespaced.lean/declarations/basechange.md) | 93 | `declaration-track:f5a68a2dcf2d30c19bb61bd3c6603caf19740a9a2b557d55a88597fc2f188a96` |
+| 3 | `theorem` | [isBaseChange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/StabilityNamespaced.lean/declarations/isbasechange.md) | 96 | `result-track:cf44a3e6a1e68fd2e47ae818209652b15bcc7065f2353ae5ba6cd201306b40f5` |
+| 4 | `instance` | [localizedModule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/StabilityNamespaced.lean/declarations/localizedmodule.md) | 109 | `declaration-track:6b1432031247da72781c93474ef694b15080774d78e622f785f87a2d266a95b5` |
+| 5 | `theorem` | [of_isLocalizedModule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/StabilityNamespaced.lean/declarations/of-islocalizedmodule.md) | 116 | `result-track:a391a6c3a3d87ff750eb098aaa7078f776065db931a349ca36a3cf500b7be531` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

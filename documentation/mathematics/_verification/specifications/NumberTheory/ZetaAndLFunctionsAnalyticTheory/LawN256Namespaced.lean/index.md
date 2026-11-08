@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LawN256Namespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LawN256Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LawN256Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LawN256Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [LawN256](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LawN256Namespaced.lean/declarations/lawn256.md) | 31 | `declaration-track:ec419735f56988ef0f14bbe1191a85c27e3901491e510ea1e1e553d960032bc3` |
-| 2 | `theorem` | [LawN256_check](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LawN256Namespaced.lean/declarations/lawn256-check.md) | 296 | `result-track:bc2daacdcb13d41c42d6e4c75b63147c272add3a2e2de5961372c153cf68aece` |
+| 1 | `def` | [LawN256](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LawN256Namespaced.lean/declarations/lawn256.md) | 31 | `declaration-track:ec419735f56988ef0f14bbe1191a85c27e3901491e510ea1e1e553d960032bc3` |
+| 2 | `theorem` | [LawN256_check](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LawN256Namespaced.lean/declarations/lawn256-check.md) | 296 | `result-track:bc2daacdcb13d41c42d6e4c75b63147c272add3a2e2de5961372c153cf68aece` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BaseCaseUnresolvedIssuesNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BaseCaseUnresolvedIssuesNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BaseCaseUnresolvedIssuesNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BaseCaseUnresolvedIssuesNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [BaseCaseUnresolvedIssues](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BaseCaseUnresolvedIssuesNamespaced.lean/declarations/basecaseunresolvedissues.md) | 26 | `declaration-track:0bd03f0576f7571728fb6c9206d1983d46cb6abb779276f856f3b7631eeeddae` |
-| 2 | `def` | [baseCaseUnresolvedIssues](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BaseCaseUnresolvedIssuesNamespaced.lean/declarations/basecaseunresolvedissues-source-edition-2.md) | 42 | `declaration-track:b62f47250f87b9c6893bc860c7a0d55244e7cdf3f8d52ab30ff4c5a54c885c09` |
+| 1 | `structure` | [BaseCaseUnresolvedIssues](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BaseCaseUnresolvedIssuesNamespaced.lean/declarations/basecaseunresolvedissues.md) | 26 | `declaration-track:0bd03f0576f7571728fb6c9206d1983d46cb6abb779276f856f3b7631eeeddae` |
+| 2 | `def` | [baseCaseUnresolvedIssues](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BaseCaseUnresolvedIssuesNamespaced.lean/declarations/basecaseunresolvedissues-source-edition-2.md) | 42 | `declaration-track:b62f47250f87b9c6893bc860c7a0d55244e7cdf3f8d52ab30ff4c5a54c885c09` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

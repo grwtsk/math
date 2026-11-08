@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/BitVecStructureTestNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/BitVecStructureTestNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BitVecStructureTestNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BitVecStructureTestNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,10 +60,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [DummyInductive](../../../../../ComputerScience/AlgorithmsInComputerScience/BitVecStructureTestNamespaced.lean/declarations/dummyinductive.md) | 20 | `declaration-track:3706e48de78f41ead7211ae94b18b60586f26f15b425b10488e03a4a2ae6e2d4` |
-| 2 | `def` | [shrinkDummyInductive](../../../../../ComputerScience/AlgorithmsInComputerScience/BitVecStructureTestNamespaced.lean/declarations/shrinkdummyinductive.md) | 76 | `declaration-track:2995bd4645878a6cf14bba367936b3715a5f34cad645a50328c55aab1dc6e27f` |
-| 3 | `instance` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/BitVecStructureTestNamespaced.lean/declarations/instance.md) | 83 | `declaration-track:0e9a5d9f87b5cbdf6d121cf0652eb2446f63080e5a5929109f8b16b7f71a0a25` |
-| 4 | `def` | [BitVecEqualsTwo](../../../../../ComputerScience/AlgorithmsInComputerScience/BitVecStructureTestNamespaced.lean/declarations/bitvecequalstwo.md) | 90 | `declaration-track:107a56974037aae6e82501a40faf27ed7a407a773df23cdca642ab680cfbabaa` |
+| 1 | `inductive` | [DummyInductive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BitVecStructureTestNamespaced.lean/declarations/dummyinductive.md) | 20 | `declaration-track:3706e48de78f41ead7211ae94b18b60586f26f15b425b10488e03a4a2ae6e2d4` |
+| 2 | `def` | [shrinkDummyInductive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BitVecStructureTestNamespaced.lean/declarations/shrinkdummyinductive.md) | 76 | `declaration-track:2995bd4645878a6cf14bba367936b3715a5f34cad645a50328c55aab1dc6e27f` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BitVecStructureTestNamespaced.lean/declarations/instance.md) | 83 | `declaration-track:0e9a5d9f87b5cbdf6d121cf0652eb2446f63080e5a5929109f8b16b7f71a0a25` |
+| 4 | `def` | [BitVecEqualsTwo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BitVecStructureTestNamespaced.lean/declarations/bitvecequalstwo.md) | 90 | `declaration-track:107a56974037aae6e82501a40faf27ed7a407a773df23cdca642ab680cfbabaa` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

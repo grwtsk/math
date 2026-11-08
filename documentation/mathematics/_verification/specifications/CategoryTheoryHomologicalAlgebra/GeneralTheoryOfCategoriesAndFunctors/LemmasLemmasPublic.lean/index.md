@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LemmasLemmasPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LemmasLemmasPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LemmasLemmasPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LemmasLemmasPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [fromSigma](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LemmasLemmasPublic.lean/declarations/fromsigma.md) | 39 | `declaration-track:5c822b11df55574baf78feda4a9cd7b780d7ba34dd16252e5159e8d00289af50` |
-| 2 | `lemma` | [fromSigma_surjective](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LemmasLemmasPublic.lean/declarations/fromsigma-surjective.md) | 48 | `result-track:9b6fc56f7b3e59ad28391ea8704649b0162dfe42a952e1bef21dd4501c13a157` |
-| 3 | `lemma` | [of_pow_lt](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LemmasLemmasPublic.lean/declarations/of-pow-lt.md) | 63 | `result-track:608d18adc6449432365b0d6cbad1d83c36f972b6efb254dbbcc9425ac38c8f32` |
-| 4 | `lemma` | [succ_two_pow_of_le](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LemmasLemmasPublic.lean/declarations/succ-two-pow-of-le.md) | 76 | `result-track:83860372738b740d089431e540c982d42265811cac2368b6657e3b799921d5f0` |
-| 5 | `lemma` | [exists_of_small](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LemmasLemmasPublic.lean/declarations/exists-of-small.md) | 93 | `result-track:ccd8e570f1539b6dde62f61be6c3ac6eefb6977b7ae834505d8bcb47d0b2b56c` |
-| 6 | `lemma` | [exists_of_pair](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LemmasLemmasPublic.lean/declarations/exists-of-pair.md) | 104 | `result-track:e441d72dce3b4c380da5eb639e2f309ec180551a6042d0ce826dbe69cec5bd3f` |
-| 7 | `lemma` | [exists_of_triple](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LemmasLemmasPublic.lean/declarations/exists-of-triple.md) | 117 | `result-track:fff2438d230e9d5d8b8faff5e91b0176ad2a60673ccf23eb42cad36431d25849` |
+| 1 | `def` | [fromSigma](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LemmasLemmasPublic.lean/declarations/fromsigma.md) | 39 | `declaration-track:5c822b11df55574baf78feda4a9cd7b780d7ba34dd16252e5159e8d00289af50` |
+| 2 | `lemma` | [fromSigma_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LemmasLemmasPublic.lean/declarations/fromsigma-surjective.md) | 48 | `result-track:9b6fc56f7b3e59ad28391ea8704649b0162dfe42a952e1bef21dd4501c13a157` |
+| 3 | `lemma` | [of_pow_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LemmasLemmasPublic.lean/declarations/of-pow-lt.md) | 63 | `result-track:608d18adc6449432365b0d6cbad1d83c36f972b6efb254dbbcc9425ac38c8f32` |
+| 4 | `lemma` | [succ_two_pow_of_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LemmasLemmasPublic.lean/declarations/succ-two-pow-of-le.md) | 76 | `result-track:83860372738b740d089431e540c982d42265811cac2368b6657e3b799921d5f0` |
+| 5 | `lemma` | [exists_of_small](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LemmasLemmasPublic.lean/declarations/exists-of-small.md) | 93 | `result-track:ccd8e570f1539b6dde62f61be6c3ac6eefb6977b7ae834505d8bcb47d0b2b56c` |
+| 6 | `lemma` | [exists_of_pair](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LemmasLemmasPublic.lean/declarations/exists-of-pair.md) | 104 | `result-track:e441d72dce3b4c380da5eb639e2f309ec180551a6042d0ce826dbe69cec5bd3f` |
+| 7 | `lemma` | [exists_of_triple](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LemmasLemmasPublic.lean/declarations/exists-of-triple.md) | 117 | `result-track:fff2438d230e9d5d8b8faff5e91b0176ad2a60673ccf23eb42cad36431d25849` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

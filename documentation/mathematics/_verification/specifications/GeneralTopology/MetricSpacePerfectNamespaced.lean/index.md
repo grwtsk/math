@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/MetricSpacePerfectNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/MetricSpacePerfectNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MetricSpacePerfectNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MetricSpacePerfectNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,10 +60,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Perfect.small_diam_aux](../../../../GeneralTopology/MetricSpacePerfectNamespaced.lean/declarations/perfect-small-diam-aux.md) | 48 | `result-track:1db5b8d51b6634541f51d3ce42744b89cc0ca63ad627d7256cd7a2f5f4b24c40` |
-| 2 | `theorem` | [Perfect.small_diam_splitting](../../../../GeneralTopology/MetricSpacePerfectNamespaced.lean/declarations/perfect-small-diam-splitting.md) | 66 | `result-track:7b29e038d04bb303f43b96a4ded91bbc61178bd1d688a0174d31ec331a09a122` |
-| 3 | `theorem` | [Perfect.exists_nat_bool_injection](../../../../GeneralTopology/MetricSpacePerfectNamespaced.lean/declarations/perfect-exists-nat-bool-injection.md) | 83 | `result-track:551a39dc7c410669d58ce743da23e0d5242062516aa428ee5751bd2a975fa346` |
-| 4 | `theorem` | [IsClosed.exists_nat_bool_injection_of_not_countable](../../../../GeneralTopology/MetricSpacePerfectNamespaced.lean/declarations/isclosed-exists-nat-bool-injection-of-not-countable.md) | 141 | `result-track:4be61cb14807cc1ece12981273d71a50aeb8a00de10d8c14e1b149a524c6bf0d` |
+| 1 | `theorem` | [Perfect.small_diam_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MetricSpacePerfectNamespaced.lean/declarations/perfect-small-diam-aux.md) | 48 | `result-track:1db5b8d51b6634541f51d3ce42744b89cc0ca63ad627d7256cd7a2f5f4b24c40` |
+| 2 | `theorem` | [Perfect.small_diam_splitting](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MetricSpacePerfectNamespaced.lean/declarations/perfect-small-diam-splitting.md) | 66 | `result-track:7b29e038d04bb303f43b96a4ded91bbc61178bd1d688a0174d31ec331a09a122` |
+| 3 | `theorem` | [Perfect.exists_nat_bool_injection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MetricSpacePerfectNamespaced.lean/declarations/perfect-exists-nat-bool-injection.md) | 83 | `result-track:551a39dc7c410669d58ce743da23e0d5242062516aa428ee5751bd2a975fa346` |
+| 4 | `theorem` | [IsClosed.exists_nat_bool_injection_of_not_countable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MetricSpacePerfectNamespaced.lean/declarations/isclosed-exists-nat-bool-injection-of-not-countable.md) | 141 | `result-track:4be61cb14807cc1ece12981273d71a50aeb8a00de10d8c14e1b149a524c6bf0d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

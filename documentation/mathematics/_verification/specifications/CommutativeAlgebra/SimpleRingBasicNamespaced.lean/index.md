@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/SimpleRingBasicNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/SimpleRingBasicNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SimpleRingBasicNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SimpleRingBasicNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,16 +59,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/SimpleRingBasicNamespaced.lean/declarations/instance.md) | 41 | `declaration-track:687b23ea0ec4129222e4aaae1d7efe97bff7e1d67e23900ede5fdae7258d3fad` |
-| 2 | `lemma` | [one_mem_of_ne_bot](../../../../CommutativeAlgebra/SimpleRingBasicNamespaced.lean/declarations/one-mem-of-ne-bot.md) | 45 | `result-track:790c778f1f68dcc0088591f8771c6ae1d246018db3293fbda27a0c5b3851fb04` |
-| 3 | `lemma` | [one_mem_of_ne_zero_mem](../../../../CommutativeAlgebra/SimpleRingBasicNamespaced.lean/declarations/one-mem-of-ne-zero-mem.md) | 49 | `result-track:c246069dd3291cf74c2a71889aa41cfe5eb14821466963cb2e54204fc0ea9318` |
-| 4 | `lemma` | [of_eq_bot_or_eq_top](../../../../CommutativeAlgebra/SimpleRingBasicNamespaced.lean/declarations/of-eq-bot-or-eq-top.md) | 53 | `result-track:747e435d31d9f819ff49ce669f09a48bb9103dcc574819c15000d43706fcf41a` |
-| 5 | `instance` | [Simple Ring Basic Namespaced](../../../../CommutativeAlgebra/SimpleRingBasicNamespaced.lean/declarations/root-grwtsk-foundationslogicandtypetheory-mathematicallogic-onememofnebo-source-edition-2.md) | 57 | `declaration-track:ad53cb22373cd1787b42c16a6bebfac4d52348d2edb6e78be14918a5b4692c61` |
-| 6 | `lemma` | [injective_ringHom_or_subsingleton_codomain](../../../../CommutativeAlgebra/SimpleRingBasicNamespaced.lean/declarations/injective-ringhom-or-subsingleton-codomain.md) | 64 | `result-track:35afee7f24ff30e30e90a45df004cbe97ac31e293a25d46e75f188105a8e4eb3` |
-| 7 | `theorem` | [Simple Ring Basic Namespaced](../../../../CommutativeAlgebra/SimpleRingBasicNamespaced.lean/declarations/root-grwtsk-foundationslogicandtypetheory-mathematicallogic-onememofnebo.md) | 72 | `result-track:64bcee4243dd62ca846dcc1840e100dea071a344d5014c35477ebd33ccfab63d` |
-| 8 | `lemma` | [iff_injective_ringHom_or_subsingleton_codomain](../../../../CommutativeAlgebra/SimpleRingBasicNamespaced.lean/declarations/iff-injective-ringhom-or-subsingleton-codomain.md) | 78 | `result-track:44a89d55819c79341b0bd332be01adb5207dbc76760123c4dff1040af3735984` |
-| 9 | `lemma` | [iff_injective_ringHom](../../../../CommutativeAlgebra/SimpleRingBasicNamespaced.lean/declarations/iff-injective-ringhom.md) | 88 | `result-track:dda69090b768fda34967c634a50eac0a9cf8aea3624c7098b8267c2d317bb1fe` |
-| 10 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/SimpleRingBasicNamespaced.lean/declarations/instance-source-edition-2.md) | 95 | `declaration-track:da8b28763402996f8c9927e4f209531be2648da6f0f2ca1ce9f78d0a3e128a7e` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SimpleRingBasicNamespaced.lean/declarations/instance.md) | 41 | `declaration-track:687b23ea0ec4129222e4aaae1d7efe97bff7e1d67e23900ede5fdae7258d3fad` |
+| 2 | `lemma` | [one_mem_of_ne_bot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SimpleRingBasicNamespaced.lean/declarations/one-mem-of-ne-bot.md) | 45 | `result-track:790c778f1f68dcc0088591f8771c6ae1d246018db3293fbda27a0c5b3851fb04` |
+| 3 | `lemma` | [one_mem_of_ne_zero_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SimpleRingBasicNamespaced.lean/declarations/one-mem-of-ne-zero-mem.md) | 49 | `result-track:c246069dd3291cf74c2a71889aa41cfe5eb14821466963cb2e54204fc0ea9318` |
+| 4 | `lemma` | [of_eq_bot_or_eq_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SimpleRingBasicNamespaced.lean/declarations/of-eq-bot-or-eq-top.md) | 53 | `result-track:747e435d31d9f819ff49ce669f09a48bb9103dcc574819c15000d43706fcf41a` |
+| 5 | `instance` | [Simple Ring Basic Namespaced](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SimpleRingBasicNamespaced.lean/declarations/root-grwtsk-foundationslogicandtypetheory-mathematicallogic-onememofnebo-source-edition-2.md) | 57 | `declaration-track:ad53cb22373cd1787b42c16a6bebfac4d52348d2edb6e78be14918a5b4692c61` |
+| 6 | `lemma` | [injective_ringHom_or_subsingleton_codomain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SimpleRingBasicNamespaced.lean/declarations/injective-ringhom-or-subsingleton-codomain.md) | 64 | `result-track:35afee7f24ff30e30e90a45df004cbe97ac31e293a25d46e75f188105a8e4eb3` |
+| 7 | `theorem` | [Simple Ring Basic Namespaced](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SimpleRingBasicNamespaced.lean/declarations/root-grwtsk-foundationslogicandtypetheory-mathematicallogic-onememofnebo.md) | 72 | `result-track:64bcee4243dd62ca846dcc1840e100dea071a344d5014c35477ebd33ccfab63d` |
+| 8 | `lemma` | [iff_injective_ringHom_or_subsingleton_codomain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SimpleRingBasicNamespaced.lean/declarations/iff-injective-ringhom-or-subsingleton-codomain.md) | 78 | `result-track:44a89d55819c79341b0bd332be01adb5207dbc76760123c4dff1040af3735984` |
+| 9 | `lemma` | [iff_injective_ringHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SimpleRingBasicNamespaced.lean/declarations/iff-injective-ringhom.md) | 88 | `result-track:dda69090b768fda34967c634a50eac0a9cf8aea3624c7098b8267c2d317bb1fe` |
+| 10 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SimpleRingBasicNamespaced.lean/declarations/instance-source-edition-2.md) | 95 | `declaration-track:da8b28763402996f8c9927e4f209531be2648da6f0f2ca1ce9f78d0a3e128a7e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

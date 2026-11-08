@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/SummabilityAndSum.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/SummabilityAndSum.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/SummabilityAndSum.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/SummabilityAndSum.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [complex_geometric_series_summable](../../../../FunctionsOfAComplexVariable/SummabilityAndSum.lean/declarations/complex-geometric-series-summable.md) | 43 | `result-track:30b248218710e06634cb8820316585a962996e748bd28b0c87c65858a87e53d9` |
-| 2 | `theorem` | [complex_geometric_series_abs_summable](../../../../FunctionsOfAComplexVariable/SummabilityAndSum.lean/declarations/complex-geometric-series-abs-summable.md) | 50 | `result-track:c8ddeecef2cf5de8b7c33ebd6f4ec692ae70f4cbfacaedca1681803cc37907d6` |
-| 3 | `theorem` | [complex_geometric_series_hasSum](../../../../FunctionsOfAComplexVariable/SummabilityAndSum.lean/declarations/complex-geometric-series-hassum.md) | 57 | `result-track:7348c89512ede7e260bfd6afd1eecdd9401928d569420df91b931cf3cd786764` |
+| 1 | `theorem` | [complex_geometric_series_summable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/SummabilityAndSum.lean/declarations/complex-geometric-series-summable.md) | 43 | `result-track:30b248218710e06634cb8820316585a962996e748bd28b0c87c65858a87e53d9` |
+| 2 | `theorem` | [complex_geometric_series_abs_summable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/SummabilityAndSum.lean/declarations/complex-geometric-series-abs-summable.md) | 50 | `result-track:c8ddeecef2cf5de8b7c33ebd6f4ec692ae70f4cbfacaedca1681803cc37907d6` |
+| 3 | `theorem` | [complex_geometric_series_hasSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/SummabilityAndSum.lean/declarations/complex-geometric-series-hassum.md) | 57 | `result-track:7348c89512ede7e260bfd6afd1eecdd9401928d569420df91b931cf3cd786764` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

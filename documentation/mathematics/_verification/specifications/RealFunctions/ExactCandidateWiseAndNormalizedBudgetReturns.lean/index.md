@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/ExactCandidateWiseAndNormalizedBudgetReturns.lean/index.md) · [Full source](../../../../RealFunctions/ExactCandidateWiseAndNormalizedBudgetReturns.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExactCandidateWiseAndNormalizedBudgetReturns.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExactCandidateWiseAndNormalizedBudgetReturns.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [candidate_budget_iff](../../../../RealFunctions/ExactCandidateWiseAndNormalizedBudgetReturns.lean/declarations/candidate-budget-iff.md) | 19 | `result-track:39f373d66a11b77eb1fd002eddc6aa96023606bc52fce320cd1376b33917da22` |
-| 2 | `theorem` | [zero_represents_nonnegative_meter](../../../../RealFunctions/ExactCandidateWiseAndNormalizedBudgetReturns.lean/declarations/zero-represents-nonnegative-meter.md) | 27 | `result-track:51767da66ecb822dd04d40e38291ee36c9c10367fb88126fbf36e99aa1050525` |
-| 3 | `theorem` | [zero_is_automatically_paid](../../../../RealFunctions/ExactCandidateWiseAndNormalizedBudgetReturns.lean/declarations/zero-is-automatically-paid.md) | 30 | `result-track:9149f66eed4335fc60e42e8ea0298bc34f64be8e6bf120a9c797e3ab502ea680` |
-| 4 | `theorem` | [zero_removed_budget_iff](../../../../RealFunctions/ExactCandidateWiseAndNormalizedBudgetReturns.lean/declarations/zero-removed-budget-iff.md) | 32 | `result-track:ea6a80443d83b78b81c5a1054b1e4b7de9db0c0d452a5923ec1aaa0f6a505e10` |
-| 5 | `theorem` | [positive_part_budget_iff](../../../../RealFunctions/ExactCandidateWiseAndNormalizedBudgetReturns.lean/declarations/positive-part-budget-iff.md) | 42 | `result-track:1631bd81dd3916f5dffb738820e0c1040e41ce4b78c90dce709f4386de5b7db3` |
-| 6 | `theorem` | [represented_meter_needs_no_extra_positive_part](../../../../RealFunctions/ExactCandidateWiseAndNormalizedBudgetReturns.lean/declarations/represented-meter-needs-no-extra-positive-part.md) | 46 | `result-track:66545cc7f6962a915dd46ab07cdbb27c950323b7382b4187415514f93ef3cc06` |
-| 7 | `theorem` | [normalized_candidate_budget_iff](../../../../RealFunctions/ExactCandidateWiseAndNormalizedBudgetReturns.lean/declarations/normalized-candidate-budget-iff.md) | 50 | `result-track:55a68efcba21194611fbcdd1f83fec41fd1058066f9ef32a8e40ebd02c232708` |
-| 8 | `theorem` | [combine_return_allowances](../../../../RealFunctions/ExactCandidateWiseAndNormalizedBudgetReturns.lean/declarations/combine-return-allowances.md) | 56 | `result-track:eadd9e0f3b325a6f71d74984c7fa427ca4bc356a4fd1f10e3e53447e130fa42b` |
+| 1 | `theorem` | [candidate_budget_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExactCandidateWiseAndNormalizedBudgetReturns.lean/declarations/candidate-budget-iff.md) | 19 | `result-track:39f373d66a11b77eb1fd002eddc6aa96023606bc52fce320cd1376b33917da22` |
+| 2 | `theorem` | [zero_represents_nonnegative_meter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExactCandidateWiseAndNormalizedBudgetReturns.lean/declarations/zero-represents-nonnegative-meter.md) | 27 | `result-track:51767da66ecb822dd04d40e38291ee36c9c10367fb88126fbf36e99aa1050525` |
+| 3 | `theorem` | [zero_is_automatically_paid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExactCandidateWiseAndNormalizedBudgetReturns.lean/declarations/zero-is-automatically-paid.md) | 30 | `result-track:9149f66eed4335fc60e42e8ea0298bc34f64be8e6bf120a9c797e3ab502ea680` |
+| 4 | `theorem` | [zero_removed_budget_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExactCandidateWiseAndNormalizedBudgetReturns.lean/declarations/zero-removed-budget-iff.md) | 32 | `result-track:ea6a80443d83b78b81c5a1054b1e4b7de9db0c0d452a5923ec1aaa0f6a505e10` |
+| 5 | `theorem` | [positive_part_budget_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExactCandidateWiseAndNormalizedBudgetReturns.lean/declarations/positive-part-budget-iff.md) | 42 | `result-track:1631bd81dd3916f5dffb738820e0c1040e41ce4b78c90dce709f4386de5b7db3` |
+| 6 | `theorem` | [represented_meter_needs_no_extra_positive_part](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExactCandidateWiseAndNormalizedBudgetReturns.lean/declarations/represented-meter-needs-no-extra-positive-part.md) | 46 | `result-track:66545cc7f6962a915dd46ab07cdbb27c950323b7382b4187415514f93ef3cc06` |
+| 7 | `theorem` | [normalized_candidate_budget_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExactCandidateWiseAndNormalizedBudgetReturns.lean/declarations/normalized-candidate-budget-iff.md) | 50 | `result-track:55a68efcba21194611fbcdd1f83fec41fd1058066f9ef32a8e40ebd02c232708` |
+| 8 | `theorem` | [combine_return_allowances](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ExactCandidateWiseAndNormalizedBudgetReturns.lean/declarations/combine-return-allowances.md) | 56 | `result-track:eadd9e0f3b325a6f71d74984c7fa427ca4bc356a4fd1f10e3e53447e130fa42b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

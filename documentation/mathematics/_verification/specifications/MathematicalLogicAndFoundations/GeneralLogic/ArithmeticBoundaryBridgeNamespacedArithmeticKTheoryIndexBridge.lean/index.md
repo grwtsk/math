@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ArithmeticBoundaryBridgeNamespacedArithmeticKTheoryIndexBridge.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ArithmeticBoundaryBridgeNamespacedArithmeticKTheoryIndexBridge.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ArithmeticBoundaryBridgeNamespacedArithmeticKTheoryIndexBridge.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ArithmeticBoundaryBridgeNamespacedArithmeticKTheoryIndexBridge.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ArithmeticKTheoryIndexBridge](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ArithmeticBoundaryBridgeNamespacedArithmeticKTheoryIndexBridge.lean/declarations/arithmeticktheoryindexbridge.md) | 34 | `declaration-track:e6c4f8310b13a704a2246d0d7e276557818fd831bc6545ede73a6077d0f04366` |
-| 2 | `theorem` | [arithmetic_bridge_supports_k_index](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ArithmeticBoundaryBridgeNamespacedArithmeticKTheoryIndexBridge.lean/declarations/arithmetic-bridge-supports-k-index.md) | 45 | `result-track:bd6bf3c3b99698006ea9fa33839b227b36434876fe863be24c4031a295628f6e` |
-| 3 | `theorem` | [arithmetic_bridge_has_k_index](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ArithmeticBoundaryBridgeNamespacedArithmeticKTheoryIndexBridge.lean/declarations/arithmetic-bridge-has-k-index.md) | 51 | `result-track:3bac0af58362fd1b30bb7ecb0f5f5af3e2aa90ebd377be84a0203d689a4f0fff` |
+| 1 | `structure` | [ArithmeticKTheoryIndexBridge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ArithmeticBoundaryBridgeNamespacedArithmeticKTheoryIndexBridge.lean/declarations/arithmeticktheoryindexbridge.md) | 34 | `declaration-track:e6c4f8310b13a704a2246d0d7e276557818fd831bc6545ede73a6077d0f04366` |
+| 2 | `theorem` | [arithmetic_bridge_supports_k_index](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ArithmeticBoundaryBridgeNamespacedArithmeticKTheoryIndexBridge.lean/declarations/arithmetic-bridge-supports-k-index.md) | 45 | `result-track:bd6bf3c3b99698006ea9fa33839b227b36434876fe863be24c4031a295628f6e` |
+| 3 | `theorem` | [arithmetic_bridge_has_k_index](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ArithmeticBoundaryBridgeNamespacedArithmeticKTheoryIndexBridge.lean/declarations/arithmetic-bridge-has-k-index.md) | 51 | `result-track:3bac0af58362fd1b30bb7ecb0f5f5af3e2aa90ebd377be84a0203d689a4f0fff` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

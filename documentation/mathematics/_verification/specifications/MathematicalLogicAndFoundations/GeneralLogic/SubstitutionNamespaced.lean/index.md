@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SubstitutionNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SubstitutionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SubstitutionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SubstitutionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SubstitutionCertificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SubstitutionNamespaced.lean/declarations/substitutioncertificate.md) | 15 | `declaration-track:c1bdc2b4592a0f8bbb136a8bf6eac7d8424af7372a97c543d9c24b5d8ca112f4` |
-| 2 | `def` | [ContextualSynonymy](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SubstitutionNamespaced.lean/declarations/contextualsynonymy.md) | 32 | `declaration-track:b37c3a0db5552d12deec1161b8e8671ccebfeef17ce0a3be4aebe10262d8c272` |
-| 3 | `structure` | [GlobalSynonymyClaim](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SubstitutionNamespaced.lean/declarations/globalsynonymyclaim.md) | 37 | `declaration-track:b9e54a72214f18cd2728d53a54d9292525b8474f3d3d150f11843db9f7fa0d23` |
-| 4 | `def` | [contextualSynonymyPromotesToGlobal](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SubstitutionNamespaced.lean/declarations/contextualsynonymypromotestoglobal.md) | 42 | `declaration-track:fb9efa82eca3f709c3c84d6e3c9144137183d79b31ec2417c12b12053aead792` |
-| 5 | `theorem` | [global_synonymy_prohibition](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SubstitutionNamespaced.lean/declarations/global-synonymy-prohibition.md) | 45 | `result-track:7ae3f5069bb29575ebb44e0089d3b72324ca3883b2f43db2a99040014ce5e702` |
-| 6 | `structure` | [SingleWordEquivalent](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SubstitutionNamespaced.lean/declarations/singlewordequivalent.md) | 49 | `declaration-track:7fa5e4f1fb0591827434e12e790dd0af310a5ff473bb414533a2467dca3edc84` |
+| 1 | `structure` | [SubstitutionCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SubstitutionNamespaced.lean/declarations/substitutioncertificate.md) | 15 | `declaration-track:c1bdc2b4592a0f8bbb136a8bf6eac7d8424af7372a97c543d9c24b5d8ca112f4` |
+| 2 | `def` | [ContextualSynonymy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SubstitutionNamespaced.lean/declarations/contextualsynonymy.md) | 32 | `declaration-track:b37c3a0db5552d12deec1161b8e8671ccebfeef17ce0a3be4aebe10262d8c272` |
+| 3 | `structure` | [GlobalSynonymyClaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SubstitutionNamespaced.lean/declarations/globalsynonymyclaim.md) | 37 | `declaration-track:b9e54a72214f18cd2728d53a54d9292525b8474f3d3d150f11843db9f7fa0d23` |
+| 4 | `def` | [contextualSynonymyPromotesToGlobal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SubstitutionNamespaced.lean/declarations/contextualsynonymypromotestoglobal.md) | 42 | `declaration-track:fb9efa82eca3f709c3c84d6e3c9144137183d79b31ec2417c12b12053aead792` |
+| 5 | `theorem` | [global_synonymy_prohibition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SubstitutionNamespaced.lean/declarations/global-synonymy-prohibition.md) | 45 | `result-track:7ae3f5069bb29575ebb44e0089d3b72324ca3883b2f43db2a99040014ce5e702` |
+| 6 | `structure` | [SingleWordEquivalent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SubstitutionNamespaced.lean/declarations/singlewordequivalent.md) | 49 | `declaration-track:7fa5e4f1fb0591827434e12e790dd0af310a5ff473bb414533a2467dca3edc84` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

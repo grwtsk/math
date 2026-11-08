@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/PrescribedRelativeAccuracyAndIntegerConsumerOfTheActualSixthCensus.lean/index.md) · [Full source](../../../../Combinatorics/PrescribedRelativeAccuracyAndIntegerConsumerOfTheActualSixthCensus.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrescribedRelativeAccuracyAndIntegerConsumerOfTheActualSixthCensus.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrescribedRelativeAccuracyAndIntegerConsumerOfTheActualSixthCensus.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_sixth_census_integer_leading_coefficient](../../../../Combinatorics/PrescribedRelativeAccuracyAndIntegerConsumerOfTheActualSixthCensus.lean/declarations/actual-sixth-census-integer-leading-coefficient.md) | 23 | `result-track:e6f9d0f90836ceec681feab727e4b35d30d9d39dfebc2d2fb23a4718c530b3c6` |
-| 2 | `theorem` | [actual_sixth_census_eventual_relative_accuracy](../../../../Combinatorics/PrescribedRelativeAccuracyAndIntegerConsumerOfTheActualSixthCensus.lean/declarations/actual-sixth-census-eventual-relative-accuracy.md) | 28 | `result-track:f8f24fb53062a6ca0827d9c6e1021680fa43ca0d976559e93244d658619f0e43` |
-| 3 | `theorem` | [actual_sixth_census_prescribed_relative_bounds](../../../../Combinatorics/PrescribedRelativeAccuracyAndIntegerConsumerOfTheActualSixthCensus.lean/declarations/actual-sixth-census-prescribed-relative-bounds.md) | 37 | `result-track:66d07463cc379adb04a28a5a36b2d30aed005358c09a139d6c75a79c60a510a9` |
+| 1 | `theorem` | [actual_sixth_census_integer_leading_coefficient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrescribedRelativeAccuracyAndIntegerConsumerOfTheActualSixthCensus.lean/declarations/actual-sixth-census-integer-leading-coefficient.md) | 23 | `result-track:e6f9d0f90836ceec681feab727e4b35d30d9d39dfebc2d2fb23a4718c530b3c6` |
+| 2 | `theorem` | [actual_sixth_census_eventual_relative_accuracy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrescribedRelativeAccuracyAndIntegerConsumerOfTheActualSixthCensus.lean/declarations/actual-sixth-census-eventual-relative-accuracy.md) | 28 | `result-track:f8f24fb53062a6ca0827d9c6e1021680fa43ca0d976559e93244d658619f0e43` |
+| 3 | `theorem` | [actual_sixth_census_prescribed_relative_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrescribedRelativeAccuracyAndIntegerConsumerOfTheActualSixthCensus.lean/declarations/actual-sixth-census-prescribed-relative-bounds.md) | 37 | `result-track:66d07463cc379adb04a28a5a36b2d30aed005358c09a139d6c75a79c60a510a9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

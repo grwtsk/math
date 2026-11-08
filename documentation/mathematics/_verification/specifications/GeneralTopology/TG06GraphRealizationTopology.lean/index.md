@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/TG06GraphRealizationTopology.lean/index.md) · [Full source](../../../../GeneralTopology/TG06GraphRealizationTopology.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TG06GraphRealizationTopology.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TG06GraphRealizationTopology.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [tg06_graphRealizationTopology](../../../../GeneralTopology/TG06GraphRealizationTopology.lean/declarations/tg06-graphrealizationtopology.md) | 11 | `result-track:0cfc18d1efa736ef82a9adb0533efb4b45d8ca28dae117ed754562f145c63650` |
+| 1 | `theorem` | [tg06_graphRealizationTopology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TG06GraphRealizationTopology.lean/declarations/tg06-graphrealizationtopology.md) | 11 | `result-track:0cfc18d1efa736ef82a9adb0533efb4b45d8ca28dae117ed754562f145c63650` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

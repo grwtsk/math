@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/SineNetWeightsNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/SineNetWeightsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SineNetWeightsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SineNetWeightsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [layer1Weights](../../../../../ComputerScience/AlgorithmsInComputerScience/SineNetWeightsNamespaced.lean/declarations/layer1weights.md) | 31 | `declaration-track:e0752431d2d798dcab15dc0f5978c91159a869a28a3f327f4929db10f65d0828` |
-| 2 | `def` | [layer1Bias](../../../../../ComputerScience/AlgorithmsInComputerScience/SineNetWeightsNamespaced.lean/declarations/layer1bias.md) | 42 | `declaration-track:6f82ced4b2d9d1b60ec5e25d5fa5fe20f74076ffa8b3c45c2e2c52ca7082054e` |
-| 3 | `def` | [layer2Weights](../../../../../ComputerScience/AlgorithmsInComputerScience/SineNetWeightsNamespaced.lean/declarations/layer2weights.md) | 47 | `declaration-track:efc5cdffd81d29f377ac8e9c139f0106717f0b127307a843e66a36ea2d983d5a` |
-| 4 | `def` | [layer2Bias](../../../../../ComputerScience/AlgorithmsInComputerScience/SineNetWeightsNamespaced.lean/declarations/layer2bias.md) | 58 | `declaration-track:143564045d978b8386918bab423a211194de32a16c3da6978c916837f0de71b8` |
-| 5 | `def` | [layer3Weights](../../../../../ComputerScience/AlgorithmsInComputerScience/SineNetWeightsNamespaced.lean/declarations/layer3weights.md) | 63 | `declaration-track:94606ae37666f1f4473c06033aeb8b6e3e8acb527af17181c383d3e08044ad52` |
-| 6 | `def` | [layer3Bias](../../../../../ComputerScience/AlgorithmsInComputerScience/SineNetWeightsNamespaced.lean/declarations/layer3bias.md) | 67 | `declaration-track:b261fe32d226d5da9c2f583212d42a99d98518a03be13d86a2031e3c67ab8feb` |
-| 7 | `def` | [layer1](../../../../../ComputerScience/AlgorithmsInComputerScience/SineNetWeightsNamespaced.lean/declarations/layer1.md) | 71 | `declaration-track:88140d4c259ebeb7f29e323a98c9065360e20eb5099273f87cffcfdaea4428bc` |
-| 8 | `def` | [layer2](../../../../../ComputerScience/AlgorithmsInComputerScience/SineNetWeightsNamespaced.lean/declarations/layer2.md) | 75 | `declaration-track:d928049c91408c81ac54795fdd93bcdc95069cdbaba9ef3493bf33af493fe7a1` |
-| 9 | `def` | [layer3](../../../../../ComputerScience/AlgorithmsInComputerScience/SineNetWeightsNamespaced.lean/declarations/layer3.md) | 79 | `declaration-track:dcf9b390248bd51a416acd8c304e052abbbdf4244cc3fbd14ed63a030628a50d` |
+| 1 | `def` | [layer1Weights](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SineNetWeightsNamespaced.lean/declarations/layer1weights.md) | 31 | `declaration-track:e0752431d2d798dcab15dc0f5978c91159a869a28a3f327f4929db10f65d0828` |
+| 2 | `def` | [layer1Bias](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SineNetWeightsNamespaced.lean/declarations/layer1bias.md) | 42 | `declaration-track:6f82ced4b2d9d1b60ec5e25d5fa5fe20f74076ffa8b3c45c2e2c52ca7082054e` |
+| 3 | `def` | [layer2Weights](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SineNetWeightsNamespaced.lean/declarations/layer2weights.md) | 47 | `declaration-track:efc5cdffd81d29f377ac8e9c139f0106717f0b127307a843e66a36ea2d983d5a` |
+| 4 | `def` | [layer2Bias](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SineNetWeightsNamespaced.lean/declarations/layer2bias.md) | 58 | `declaration-track:143564045d978b8386918bab423a211194de32a16c3da6978c916837f0de71b8` |
+| 5 | `def` | [layer3Weights](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SineNetWeightsNamespaced.lean/declarations/layer3weights.md) | 63 | `declaration-track:94606ae37666f1f4473c06033aeb8b6e3e8acb527af17181c383d3e08044ad52` |
+| 6 | `def` | [layer3Bias](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SineNetWeightsNamespaced.lean/declarations/layer3bias.md) | 67 | `declaration-track:b261fe32d226d5da9c2f583212d42a99d98518a03be13d86a2031e3c67ab8feb` |
+| 7 | `def` | [layer1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SineNetWeightsNamespaced.lean/declarations/layer1.md) | 71 | `declaration-track:88140d4c259ebeb7f29e323a98c9065360e20eb5099273f87cffcfdaea4428bc` |
+| 8 | `def` | [layer2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SineNetWeightsNamespaced.lean/declarations/layer2.md) | 75 | `declaration-track:d928049c91408c81ac54795fdd93bcdc95069cdbaba9ef3493bf33af493fe7a1` |
+| 9 | `def` | [layer3](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SineNetWeightsNamespaced.lean/declarations/layer3.md) | 79 | `declaration-track:dcf9b390248bd51a416acd8c304e052abbbdf4244cc3fbd14ed63a030628a50d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

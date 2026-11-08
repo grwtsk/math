@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuantitativeGapMetric.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuantitativeGapMetric.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuantitativeGapMetric.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuantitativeGapMetric.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [weightedAdjoint](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuantitativeGapMetric.lean/declarations/weightedadjoint.md) | 32 | `declaration-track:f83484512f06412be40e75077fea7f83437dbea4802ca5b65a95d438ccc0a3c7` |
-| 2 | `theorem` | [metric_pullback_identity](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuantitativeGapMetric.lean/declarations/metric-pullback-identity.md) | 36 | `result-track:7da8c48e9cf9c5e74ed5b6833a129f887796c34f592110ee64b7056ac5657f68` |
-| 3 | `theorem` | [quadratic_congruence](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuantitativeGapMetric.lean/declarations/quadratic-congruence.md) | 44 | `result-track:3ff3050903276b4a9bf6d5b68cc96fcc4000a8947b71e4e738e2f7b483db694e` |
-| 4 | `theorem` | [weighted_coercivity](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuantitativeGapMetric.lean/declarations/weighted-coercivity.md) | 52 | `result-track:c7ee04ebbc9cf948097180bd7ef639b5d8653a22a029bc2dd19602f26df38231` |
-| 5 | `theorem` | [certificate_gap](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuantitativeGapMetric.lean/declarations/certificate-gap.md) | 76 | `result-track:9c2859b5cc16a85d84265b66c80477e2ba77025992cb546dff979862bbf6deb0` |
+| 1 | `def` | [weightedAdjoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuantitativeGapMetric.lean/declarations/weightedadjoint.md) | 32 | `declaration-track:f83484512f06412be40e75077fea7f83437dbea4802ca5b65a95d438ccc0a3c7` |
+| 2 | `theorem` | [metric_pullback_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuantitativeGapMetric.lean/declarations/metric-pullback-identity.md) | 36 | `result-track:7da8c48e9cf9c5e74ed5b6833a129f887796c34f592110ee64b7056ac5657f68` |
+| 3 | `theorem` | [quadratic_congruence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuantitativeGapMetric.lean/declarations/quadratic-congruence.md) | 44 | `result-track:3ff3050903276b4a9bf6d5b68cc96fcc4000a8947b71e4e738e2f7b483db694e` |
+| 4 | `theorem` | [weighted_coercivity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuantitativeGapMetric.lean/declarations/weighted-coercivity.md) | 52 | `result-track:c7ee04ebbc9cf948097180bd7ef639b5d8653a22a029bc2dd19602f26df38231` |
+| 5 | `theorem` | [certificate_gap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuantitativeGapMetric.lean/declarations/certificate-gap.md) | 76 | `result-track:9c2859b5cc16a85d84265b66c80477e2ba77025992cb546dff979862bbf6deb0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

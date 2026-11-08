@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/MaximalDefect.lean/index.md) · [Full source](../../../../Combinatorics/MaximalDefect.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MaximalDefect.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MaximalDefect.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,17 +62,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Supermodular](../../../../Combinatorics/MaximalDefect.lean/declarations/supermodular.md) | 43 | `declaration-track:b94f6d37623f71c6845cff6ef583f374e3e4cfb0e138150ac407d281298b382d` |
-| 2 | `def` | [IsMaximizer](../../../../Combinatorics/MaximalDefect.lean/declarations/ismaximizer.md) | 47 | `declaration-track:eb6f1fdc8846956c95318bf03c998493a084d14aeeb357db662190f0a2fde4b2` |
-| 3 | `theorem` | [maximizers_inf_sup](../../../../Combinatorics/MaximalDefect.lean/declarations/maximizers-inf-sup.md) | 51 | `result-track:f687bd2902132123715decdb56b9b9d99bbd8cf3b03962750a45006737a9b82c` |
-| 4 | `theorem` | [exists_unique_greatest_maximizer_of_attained](../../../../Combinatorics/MaximalDefect.lean/declarations/exists-unique-greatest-maximizer-of-attained.md) | 68 | `result-track:5289fb17b39f2a85776e0cb3df2e2ffbcf89ae64649159ebaaba9a3e5f42313e` |
-| 5 | `theorem` | [exists_unique_greatest_maximizer](../../../../Combinatorics/MaximalDefect.lean/declarations/exists-unique-greatest-maximizer.md) | 90 | `result-track:f51dcdc06f9c940f6dbfa25c6474520b389cf5babf52f8f0423decbdd0107272` |
-| 6 | `theorem` | [greatest_maximizer_fixed](../../../../Combinatorics/MaximalDefect.lean/declarations/greatest-maximizer-fixed.md) | 101 | `result-track:a2bfa8c589db330d1391a7c2a4603010c17efe71b03a5b41f00930aa9aa6e8f5` |
-| 7 | `theorem` | [exists_greatest_maximizer_fixed](../../../../Combinatorics/MaximalDefect.lean/declarations/exists-greatest-maximizer-fixed.md) | 117 | `result-track:7bee031d911756e4505eb27409a0bdd38757096f52a883d32c0d2839ff36ca93` |
-| 8 | `theorem` | [bound_of_fixed_points_bound](../../../../Combinatorics/MaximalDefect.lean/declarations/bound-of-fixed-points-bound.md) | 126 | `result-track:6bbcaee9eaaf24107b718d797afa0432f4037b14609709c3fb32e05fdc146338` |
-| 9 | `theorem` | [finset_exists_greatest_maximizer_fixed](../../../../Combinatorics/MaximalDefect.lean/declarations/finset-exists-greatest-maximizer-fixed.md) | 139 | `result-track:1e874d353edbac048f414b5eb0de6b796d10f7c85319acf4c7c512d37ac20a15` |
-| 10 | `theorem` | [canonical_selection_does_not_bound_defect](../../../../Combinatorics/MaximalDefect.lean/declarations/canonical-selection-does-not-bound-defect.md) | 150 | `result-track:2bc7ebd9a8138705995bff0fb5b2cab70a2323486c1010ae3ff638b7ff3da54e` |
-| 11 | `theorem` | [finite_values_do_not_ensure_greatest_maximizer](../../../../Combinatorics/MaximalDefect.lean/declarations/finite-values-do-not-ensure-greatest-maximizer.md) | 162 | `result-track:ace1a519ae55b9d6ff1b3c1bb9596929603623e224e82f06106c02eb3e687ffb` |
+| 1 | `def` | [Supermodular](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MaximalDefect.lean/declarations/supermodular.md) | 43 | `declaration-track:b94f6d37623f71c6845cff6ef583f374e3e4cfb0e138150ac407d281298b382d` |
+| 2 | `def` | [IsMaximizer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MaximalDefect.lean/declarations/ismaximizer.md) | 47 | `declaration-track:eb6f1fdc8846956c95318bf03c998493a084d14aeeb357db662190f0a2fde4b2` |
+| 3 | `theorem` | [maximizers_inf_sup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MaximalDefect.lean/declarations/maximizers-inf-sup.md) | 51 | `result-track:f687bd2902132123715decdb56b9b9d99bbd8cf3b03962750a45006737a9b82c` |
+| 4 | `theorem` | [exists_unique_greatest_maximizer_of_attained](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MaximalDefect.lean/declarations/exists-unique-greatest-maximizer-of-attained.md) | 68 | `result-track:5289fb17b39f2a85776e0cb3df2e2ffbcf89ae64649159ebaaba9a3e5f42313e` |
+| 5 | `theorem` | [exists_unique_greatest_maximizer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MaximalDefect.lean/declarations/exists-unique-greatest-maximizer.md) | 90 | `result-track:f51dcdc06f9c940f6dbfa25c6474520b389cf5babf52f8f0423decbdd0107272` |
+| 6 | `theorem` | [greatest_maximizer_fixed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MaximalDefect.lean/declarations/greatest-maximizer-fixed.md) | 101 | `result-track:a2bfa8c589db330d1391a7c2a4603010c17efe71b03a5b41f00930aa9aa6e8f5` |
+| 7 | `theorem` | [exists_greatest_maximizer_fixed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MaximalDefect.lean/declarations/exists-greatest-maximizer-fixed.md) | 117 | `result-track:7bee031d911756e4505eb27409a0bdd38757096f52a883d32c0d2839ff36ca93` |
+| 8 | `theorem` | [bound_of_fixed_points_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MaximalDefect.lean/declarations/bound-of-fixed-points-bound.md) | 126 | `result-track:6bbcaee9eaaf24107b718d797afa0432f4037b14609709c3fb32e05fdc146338` |
+| 9 | `theorem` | [finset_exists_greatest_maximizer_fixed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MaximalDefect.lean/declarations/finset-exists-greatest-maximizer-fixed.md) | 139 | `result-track:1e874d353edbac048f414b5eb0de6b796d10f7c85319acf4c7c512d37ac20a15` |
+| 10 | `theorem` | [canonical_selection_does_not_bound_defect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MaximalDefect.lean/declarations/canonical-selection-does-not-bound-defect.md) | 150 | `result-track:2bc7ebd9a8138705995bff0fb5b2cab70a2323486c1010ae3ff638b7ff3da54e` |
+| 11 | `theorem` | [finite_values_do_not_ensure_greatest_maximizer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MaximalDefect.lean/declarations/finite-values-do-not-ensure-greatest-maximizer.md) | 162 | `result-track:ace1a519ae55b9d6ff1b3c1bb9596929603623e224e82f06106c02eb3e687ffb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

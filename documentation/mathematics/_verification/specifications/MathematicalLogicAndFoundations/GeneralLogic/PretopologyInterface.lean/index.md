@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PretopologyInterface.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PretopologyInterface.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PretopologyInterface.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PretopologyInterface.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Pretopology](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PretopologyInterface.lean/declarations/pretopology.md) | 46 | `declaration-track:d36b2ca373ea424c01c43ba491446488d3fb9954fd7beb88fc229f5c2fb48457` |
-| 2 | `theorem` | [identity_covering](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PretopologyInterface.lean/declarations/identity-covering.md) | 88 | `result-track:4913bf2dcc6d65774310a25c28c5aad8605d43dde5d7f897464b004bb725284e` |
-| 3 | `theorem` | [pullback_stable](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PretopologyInterface.lean/declarations/pullback-stable.md) | 94 | `result-track:6da9d04a3bab090aeb95b031bdeec4690f1ff27a1fba7516bd611c3440905270` |
-| 4 | `theorem` | [transitive_covering](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PretopologyInterface.lean/declarations/transitive-covering.md) | 104 | `result-track:bcd20a5bcd74f67a05ce4efc99c7fc582666ab19d8cb6378e99d155b2a8f1667` |
+| 1 | `structure` | [Pretopology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PretopologyInterface.lean/declarations/pretopology.md) | 46 | `declaration-track:d36b2ca373ea424c01c43ba491446488d3fb9954fd7beb88fc229f5c2fb48457` |
+| 2 | `theorem` | [identity_covering](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PretopologyInterface.lean/declarations/identity-covering.md) | 88 | `result-track:4913bf2dcc6d65774310a25c28c5aad8605d43dde5d7f897464b004bb725284e` |
+| 3 | `theorem` | [pullback_stable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PretopologyInterface.lean/declarations/pullback-stable.md) | 94 | `result-track:6da9d04a3bab090aeb95b031bdeec4690f1ff27a1fba7516bd611c3440905270` |
+| 4 | `theorem` | [transitive_covering](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PretopologyInterface.lean/declarations/transitive-covering.md) | 104 | `result-track:bcd20a5bcd74f67a05ce4efc99c7fc582666ab19d8cb6378e99d155b2a8f1667` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

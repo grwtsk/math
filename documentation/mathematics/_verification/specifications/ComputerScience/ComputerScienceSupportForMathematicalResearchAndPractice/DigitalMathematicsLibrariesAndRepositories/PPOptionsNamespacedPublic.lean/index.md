@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/PPOptionsNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/PPOptionsNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/PPOptionsNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/PPOptionsNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `register_option` | [pp.mathlib.binderPredicates](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/PPOptionsNamespacedPublic.lean/declarations/pp-mathlib-binderpredicates.md) | 32 | `declaration-track:959b4069dce726e1790c9a98cef0c0f69729b2715c2bd0b090104818602c17e3` |
-| 2 | `def` | [getPPBinderPredicates](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/PPOptionsNamespacedPublic.lean/declarations/getppbinderpredicates.md) | 39 | `declaration-track:255b94eb0f8863e82e36bb1405b77455c3a035c260de3712b6ee08628ac7d289` |
+| 1 | `register_option` | [pp.mathlib.binderPredicates](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/PPOptionsNamespacedPublic.lean/declarations/pp-mathlib-binderpredicates.md) | 32 | `declaration-track:959b4069dce726e1790c9a98cef0c0f69729b2715c2bd0b090104818602c17e3` |
+| 2 | `def` | [getPPBinderPredicates](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/PPOptionsNamespacedPublic.lean/declarations/getppbinderpredicates.md) | 39 | `declaration-track:255b94eb0f8863e82e36bb1405b77455c3a035c260de3712b6ee08628ac7d289` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

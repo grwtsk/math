@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FailIfNoProgressEdition4.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FailIfNoProgressEdition4.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FailIfNoProgressEdition4.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FailIfNoProgressEdition4.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FailIfNoProgressEdition4.lean/declarations/example-source-edition-2.md) | 5 | `declaration-track:281bfa5fee6eeb26f00b2c616ac7293835c5e2c58c7c6c8e3f78297544598944` |
-| 2 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FailIfNoProgressEdition4.lean/declarations/example-source-edition-4.md) | 6 | `declaration-track:f1b64d3b84090c9e3706a12d8732ac0f485971ff82692b2126defec94dbd25b2` |
-| 3 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FailIfNoProgressEdition4.lean/declarations/example-source-edition-3.md) | 14 | `declaration-track:71cf786d193cadc0a621a0f29ec9c13038405c9739726960f82c06221ecc6107` |
-| 4 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FailIfNoProgressEdition4.lean/declarations/example.md) | 20 | `declaration-track:277879218845ad29d3b7f117ec92b9a05784fb9a2d0b0f4c4a202ff2e076acc3` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FailIfNoProgressEdition4.lean/declarations/example-source-edition-2.md) | 5 | `declaration-track:281bfa5fee6eeb26f00b2c616ac7293835c5e2c58c7c6c8e3f78297544598944` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FailIfNoProgressEdition4.lean/declarations/example-source-edition-4.md) | 6 | `declaration-track:f1b64d3b84090c9e3706a12d8732ac0f485971ff82692b2126defec94dbd25b2` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FailIfNoProgressEdition4.lean/declarations/example-source-edition-3.md) | 14 | `declaration-track:71cf786d193cadc0a621a0f29ec9c13038405c9739726960f82c06221ecc6107` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FailIfNoProgressEdition4.lean/declarations/example.md) | 20 | `declaration-track:277879218845ad29d3b7f117ec92b9a05784fb9a2d0b0f4c4a202ff2e076acc3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

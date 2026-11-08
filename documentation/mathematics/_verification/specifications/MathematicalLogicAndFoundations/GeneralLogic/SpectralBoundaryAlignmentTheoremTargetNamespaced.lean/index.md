@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SpectralBoundaryAlignmentTheoremTargetNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SpectralBoundaryAlignmentTheoremTargetNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SpectralBoundaryAlignmentTheoremTargetNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SpectralBoundaryAlignmentTheoremTargetNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CanonicalSpectralBoundaryAlignmentTarget](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SpectralBoundaryAlignmentTheoremTargetNamespaced.lean/declarations/canonicalspectralboundaryalignmenttarget.md) | 31 | `declaration-track:a1b2d2dea06347dc9671f7a75cc6792c6589b8cb2c3ecd7349cd7c5d9d72f869` |
-| 2 | `theorem` | [canonical_alignment_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SpectralBoundaryAlignmentTheoremTargetNamespaced.lean/declarations/canonical-alignment-if-supplied.md) | 38 | `result-track:f727325d3a3bc24f73299b52346ede0bc13528bee61bb267ec3c943eef124686` |
+| 1 | `structure` | [CanonicalSpectralBoundaryAlignmentTarget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SpectralBoundaryAlignmentTheoremTargetNamespaced.lean/declarations/canonicalspectralboundaryalignmenttarget.md) | 31 | `declaration-track:a1b2d2dea06347dc9671f7a75cc6792c6589b8cb2c3ecd7349cd7c5d9d72f869` |
+| 2 | `theorem` | [canonical_alignment_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SpectralBoundaryAlignmentTheoremTargetNamespaced.lean/declarations/canonical-alignment-if-supplied.md) | 38 | `result-track:f727325d3a3bc24f73299b52346ede0bc13528bee61bb267ec3c943eef124686` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

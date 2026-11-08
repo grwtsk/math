@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/ArrayExtractNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/ArrayExtractNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ArrayExtractNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ArrayExtractNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [extract_eq_nil_of_start_eq_end](../../../../../../ComputerScience/TheoryOfData/DataStructures/ArrayExtractNamespaced.lean/declarations/extract-eq-nil-of-start-eq-end.md) | 27 | `result-track:fc392638425819213ca2b6623eab71ecd6e94310ba74d31d546679ffcaa66c8b` |
-| 2 | `theorem` | [extract_append_left'](../../../../../../ComputerScience/TheoryOfData/DataStructures/ArrayExtractNamespaced.lean/declarations/extract-append-left.md) | 36 | `result-track:cc2a39aee4480a14ef8d1b6d7b3ef22c0a293ad2ce6f1ea1cc993ddbb0b51f8b` |
-| 3 | `theorem` | [extract_append_right'](../../../../../../ComputerScience/TheoryOfData/DataStructures/ArrayExtractNamespaced.lean/declarations/extract-append-right.md) | 48 | `result-track:ae295d4a4a16e8ee6dbfd3b76c82b2253116ff1fb7846fe4462caeee245191bc` |
-| 4 | `theorem` | [extract_eq_of_size_le_end](../../../../../../ComputerScience/TheoryOfData/DataStructures/ArrayExtractNamespaced.lean/declarations/extract-eq-of-size-le-end.md) | 59 | `result-track:ab17e8ccf9927cd4dcf88ad40aa24f56290acdcf0b7ade6c9352773b92cf4db1` |
+| 1 | `theorem` | [extract_eq_nil_of_start_eq_end](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ArrayExtractNamespaced.lean/declarations/extract-eq-nil-of-start-eq-end.md) | 27 | `result-track:fc392638425819213ca2b6623eab71ecd6e94310ba74d31d546679ffcaa66c8b` |
+| 2 | `theorem` | [extract_append_left'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ArrayExtractNamespaced.lean/declarations/extract-append-left.md) | 36 | `result-track:cc2a39aee4480a14ef8d1b6d7b3ef22c0a293ad2ce6f1ea1cc993ddbb0b51f8b` |
+| 3 | `theorem` | [extract_append_right'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ArrayExtractNamespaced.lean/declarations/extract-append-right.md) | 48 | `result-track:ae295d4a4a16e8ee6dbfd3b76c82b2253116ff1fb7846fe4462caeee245191bc` |
+| 4 | `theorem` | [extract_eq_of_size_le_end](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ArrayExtractNamespaced.lean/declarations/extract-eq-of-size-le-end.md) | 59 | `result-track:ab17e8ccf9927cd4dcf88ad40aa24f56290acdcf0b7ade6c9352773b92cf4db1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

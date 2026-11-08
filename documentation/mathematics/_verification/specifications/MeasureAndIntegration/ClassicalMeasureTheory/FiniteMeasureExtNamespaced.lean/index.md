@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FiniteMeasureExtNamespaced.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FiniteMeasureExtNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/FiniteMeasureExtNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/FiniteMeasureExtNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [ext_of_forall_mem_subalgebra_integral_eq_of_pseudoEMetric_complete_countable](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FiniteMeasureExtNamespaced.lean/declarations/ext-of-forall-mem-subalgebra-integral-eq-of-pseudoemetric-complete-count.md) | 40 | `result-track:4b7fd685e21b1f8ec16090aca015c5cc983240ea19a27c2ded7ebb8c053192d4` |
-| 2 | `theorem` | [ext_of_forall_mem_subalgebra_integral_eq_of_polish](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FiniteMeasureExtNamespaced.lean/declarations/ext-of-forall-mem-subalgebra-integral-eq-of-polish.md) | 76 | `result-track:45f53ffef8ed56c948712a4a09b50a8c54e0d664bf5a4f3c90deedb2167eaf24` |
+| 1 | `theorem` | [ext_of_forall_mem_subalgebra_integral_eq_of_pseudoEMetric_complete_countable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/FiniteMeasureExtNamespaced.lean/declarations/ext-of-forall-mem-subalgebra-integral-eq-of-pseudoemetric-complete-count.md) | 40 | `result-track:4b7fd685e21b1f8ec16090aca015c5cc983240ea19a27c2ded7ebb8c053192d4` |
+| 2 | `theorem` | [ext_of_forall_mem_subalgebra_integral_eq_of_polish](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/FiniteMeasureExtNamespaced.lean/declarations/ext-of-forall-mem-subalgebra-integral-eq-of-polish.md) | 76 | `result-track:45f53ffef8ed56c948712a4a09b50a8c54e0d664bf5a4f3c90deedb2167eaf24` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

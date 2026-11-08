@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProfileOperationSupport.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProfileOperationSupport.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProfileOperationSupport.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProfileOperationSupport.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [OperationSupport](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProfileOperationSupport.lean/declarations/operationsupport.md) | 14 | `declaration-track:738b785bfe514e7aaf136dccaf393822116522cb54c90ed062775a8da7ed1b9e` |
-| 2 | `structure` | [AssuranceProfile](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProfileOperationSupport.lean/declarations/assuranceprofile.md) | 23 | `declaration-track:2eb562f5bc068613ab39abc60a02032ef8c4f28f4f503b719d104ead335632c1` |
-| 3 | `theorem` | [preservesValidity](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProfileOperationSupport.lean/declarations/preservesvalidity.md) | 39 | `result-track:e9731c81d4fcc742431c8a32bdcde641b064efd4a1a38443c56b3a7d089bf1db` |
-| 4 | `def` | [unsupportedProfile](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProfileOperationSupport.lean/declarations/unsupportedprofile.md) | 52 | `declaration-track:50c8be2ece5f04290598e32f71045f29505a7c81cea1e4f98be0eabd80b8cbd1` |
+| 1 | `inductive` | [OperationSupport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProfileOperationSupport.lean/declarations/operationsupport.md) | 14 | `declaration-track:738b785bfe514e7aaf136dccaf393822116522cb54c90ed062775a8da7ed1b9e` |
+| 2 | `structure` | [AssuranceProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProfileOperationSupport.lean/declarations/assuranceprofile.md) | 23 | `declaration-track:2eb562f5bc068613ab39abc60a02032ef8c4f28f4f503b719d104ead335632c1` |
+| 3 | `theorem` | [preservesValidity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProfileOperationSupport.lean/declarations/preservesvalidity.md) | 39 | `result-track:e9731c81d4fcc742431c8a32bdcde641b064efd4a1a38443c56b3a7d089bf1db` |
+| 4 | `def` | [unsupportedProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProfileOperationSupport.lean/declarations/unsupportedprofile.md) | 52 | `declaration-track:50c8be2ece5f04290598e32f71045f29505a7c81cea1e4f98be0eabd80b8cbd1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

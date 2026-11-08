@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ChebCoprime.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ChebCoprime.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ChebCoprime.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ChebCoprime.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [sum_half_pow_Icc_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ChebCoprime.lean/declarations/sum-half-pow-icc-le.md) | 23 | `result-track:c6cfb8cb30a100c9873ea2468a49d5bf1420a771a86845e3e8790c14330bb9f4` |
-| 2 | `lemma` | [removed_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ChebCoprime.lean/declarations/removed-le.md) | 35 | `result-track:82460032cb03390ba61238abbf3b0b43b854072bf6a90b5348ba86f4de0a36b9` |
-| 3 | `theorem` | [chebyshevMertensCoprime](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ChebCoprime.lean/declarations/chebyshevmertenscoprime.md) | 206 | `result-track:89bae733f12e33d6a8742bdcf9a8a4a57e7a88737337d836664aa35259e194c6` |
-| 4 | `theorem` | [chebyshevMertensCoprimeBounded](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ChebCoprime.lean/declarations/chebyshevmertenscoprimebounded.md) | 295 | `result-track:03e4f6e60468b1415fcbf5170e05a2921a889d3d232362168efe6fff0673913d` |
-| 5 | `theorem` | [chebyshevMertensCoprime'](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ChebCoprime.lean/declarations/chebyshevmertenscoprime-source-edition-2.md) | 411 | `result-track:e73e519651f1214ae07cadea44dd81a1a7470d8e8935e75334e26e83c1013e3e` |
+| 1 | `lemma` | [sum_half_pow_Icc_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ChebCoprime.lean/declarations/sum-half-pow-icc-le.md) | 23 | `result-track:c6cfb8cb30a100c9873ea2468a49d5bf1420a771a86845e3e8790c14330bb9f4` |
+| 2 | `lemma` | [removed_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ChebCoprime.lean/declarations/removed-le.md) | 35 | `result-track:82460032cb03390ba61238abbf3b0b43b854072bf6a90b5348ba86f4de0a36b9` |
+| 3 | `theorem` | [chebyshevMertensCoprime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ChebCoprime.lean/declarations/chebyshevmertenscoprime.md) | 206 | `result-track:89bae733f12e33d6a8742bdcf9a8a4a57e7a88737337d836664aa35259e194c6` |
+| 4 | `theorem` | [chebyshevMertensCoprimeBounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ChebCoprime.lean/declarations/chebyshevmertenscoprimebounded.md) | 295 | `result-track:03e4f6e60468b1415fcbf5170e05a2921a889d3d232362168efe6fff0673913d` |
+| 5 | `theorem` | [chebyshevMertensCoprime'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ChebCoprime.lean/declarations/chebyshevmertenscoprime-source-edition-2.md) | 411 | `result-track:e73e519651f1214ae07cadea44dd81a1a7470d8e8935e75334e26e83c1013e3e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

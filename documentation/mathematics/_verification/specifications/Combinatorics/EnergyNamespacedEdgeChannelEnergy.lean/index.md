@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/EnergyNamespacedEdgeChannelEnergy.lean/index.md) · [Full source](../../../../Combinatorics/EnergyNamespacedEdgeChannelEnergy.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnergyNamespacedEdgeChannelEnergy.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnergyNamespacedEdgeChannelEnergy.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [edgeChannelEnergy](../../../../Combinatorics/EnergyNamespacedEdgeChannelEnergy.lean/declarations/edgechannelenergy.md) | 30 | `declaration-track:da045c69591c4f54d4ced817dd0e566fcebf848e626d83c49b5a0638ca0aa367` |
-| 2 | `def` | [cellEnergy](../../../../Combinatorics/EnergyNamespacedEdgeChannelEnergy.lean/declarations/cellenergy.md) | 36 | `declaration-track:15c4ef14143defb8a1cde85eecfb6a02bf39c8ea7851e560d09ccfb6b32204b7` |
-| 3 | `def` | [energy](../../../../Combinatorics/EnergyNamespacedEdgeChannelEnergy.lean/declarations/energy.md) | 49 | `declaration-track:2c8859ecf7420e99c9ebd6a3fc33a98185acb10f730335b24bbadedcabf17008` |
-| 4 | `def` | [HasChannelContrast](../../../../Combinatorics/EnergyNamespacedEdgeChannelEnergy.lean/declarations/haschannelcontrast.md) | 55 | `declaration-track:c4cefddb31639bb3b86e80899f08959645b409b9fb2a453394be0261c163eb82` |
-| 5 | `def` | [CenteredAroundHalf](../../../../Combinatorics/EnergyNamespacedEdgeChannelEnergy.lean/declarations/centeredaroundhalf.md) | 63 | `declaration-track:998e88ceecc5d517156afeb0e115fb91626015dc9499d85970afa86c072fc8d6` |
-| 6 | `theorem` | [edgeChannelEnergy_nonneg](../../../../Combinatorics/EnergyNamespacedEdgeChannelEnergy.lean/declarations/edgechannelenergy-nonneg.md) | 69 | `result-track:a12178cf799320e033ce65359788ee480896f3051d5b0cf1df79d37ccc05778f` |
-| 7 | `theorem` | [cellEnergy_nonneg](../../../../Combinatorics/EnergyNamespacedEdgeChannelEnergy.lean/declarations/cellenergy-nonneg.md) | 77 | `result-track:e8e8d67d77d5e1a82a81ebb5d8f9d860410484557da755e4de71a34e7d12737a` |
-| 8 | `theorem` | [energy_nonneg](../../../../Combinatorics/EnergyNamespacedEdgeChannelEnergy.lean/declarations/energy-nonneg.md) | 87 | `result-track:125ed480b0028a1ed0ef6906a6367e6cd0e6bfb775b573301e13b4dbda682c8c` |
-| 9 | `theorem` | [energy_positive_of_contrast](../../../../Combinatorics/EnergyNamespacedEdgeChannelEnergy.lean/declarations/energy-positive-of-contrast.md) | 95 | `result-track:48c8c313b8f6a08c823b17854b4d86a656311ab8b5f90d6aa02d9730f36a6800` |
+| 1 | `def` | [edgeChannelEnergy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnergyNamespacedEdgeChannelEnergy.lean/declarations/edgechannelenergy.md) | 30 | `declaration-track:da045c69591c4f54d4ced817dd0e566fcebf848e626d83c49b5a0638ca0aa367` |
+| 2 | `def` | [cellEnergy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnergyNamespacedEdgeChannelEnergy.lean/declarations/cellenergy.md) | 36 | `declaration-track:15c4ef14143defb8a1cde85eecfb6a02bf39c8ea7851e560d09ccfb6b32204b7` |
+| 3 | `def` | [energy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnergyNamespacedEdgeChannelEnergy.lean/declarations/energy.md) | 49 | `declaration-track:2c8859ecf7420e99c9ebd6a3fc33a98185acb10f730335b24bbadedcabf17008` |
+| 4 | `def` | [HasChannelContrast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnergyNamespacedEdgeChannelEnergy.lean/declarations/haschannelcontrast.md) | 55 | `declaration-track:c4cefddb31639bb3b86e80899f08959645b409b9fb2a453394be0261c163eb82` |
+| 5 | `def` | [CenteredAroundHalf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnergyNamespacedEdgeChannelEnergy.lean/declarations/centeredaroundhalf.md) | 63 | `declaration-track:998e88ceecc5d517156afeb0e115fb91626015dc9499d85970afa86c072fc8d6` |
+| 6 | `theorem` | [edgeChannelEnergy_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnergyNamespacedEdgeChannelEnergy.lean/declarations/edgechannelenergy-nonneg.md) | 69 | `result-track:a12178cf799320e033ce65359788ee480896f3051d5b0cf1df79d37ccc05778f` |
+| 7 | `theorem` | [cellEnergy_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnergyNamespacedEdgeChannelEnergy.lean/declarations/cellenergy-nonneg.md) | 77 | `result-track:e8e8d67d77d5e1a82a81ebb5d8f9d860410484557da755e4de71a34e7d12737a` |
+| 8 | `theorem` | [energy_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnergyNamespacedEdgeChannelEnergy.lean/declarations/energy-nonneg.md) | 87 | `result-track:125ed480b0028a1ed0ef6906a6367e6cd0e6bfb775b573301e13b4dbda682c8c` |
+| 9 | `theorem` | [energy_positive_of_contrast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnergyNamespacedEdgeChannelEnergy.lean/declarations/energy-positive-of-contrast.md) | 95 | `result-track:48c8c313b8f6a08c823b17854b4d86a656311ab8b5f90d6aa02d9730f36a6800` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

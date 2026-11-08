@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/DefsDefsNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/DefsDefsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DefsDefsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DefsDefsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [UploadBackend](../../../../../ComputerScience/AlgorithmsInComputerScience/DefsDefsNamespaced.lean/declarations/uploadbackend.md) | 47 | `declaration-track:27f70089523b5c06f432fb0671cd5956d5da6c2457dbc5af02c1d19158c11b5b` |
-| 2 | `def` | [name](../../../../../ComputerScience/AlgorithmsInComputerScience/DefsDefsNamespaced.lean/declarations/name.md) | 57 | `declaration-track:f0a9b7881b5a5d8cb594a5a5c0bdfbf12800253bfff29f6bd93e3f5cf71034ba` |
-| 3 | `def` | [all](../../../../../ComputerScience/AlgorithmsInComputerScience/DefsDefsNamespaced.lean/declarations/all.md) | 62 | `declaration-track:aab4734d747adbc2f96fb2805e156a191d0a84d8c15d00aa3b645c5205adfe47` |
-| 4 | `def` | [parse?](../../../../../ComputerScience/AlgorithmsInComputerScience/DefsDefsNamespaced.lean/declarations/parse.md) | 66 | `declaration-track:556084a6bcb1834fd0aef6eadf0669e1662f9ccbf6167eb1a5e7f491e5955da6` |
-| 5 | `def` | [stagedUploadDestFrom](../../../../../ComputerScience/AlgorithmsInComputerScience/DefsDefsNamespaced.lean/declarations/stageduploaddestfrom.md) | 89 | `declaration-track:ed9a4fe20a98fed216cab7c30fc86ee791ff2874e209a86bec445b9aec6a1140` |
-| 6 | `def` | [stagedUploadDest](../../../../../ComputerScience/AlgorithmsInComputerScience/DefsDefsNamespaced.lean/declarations/stageduploaddest.md) | 114 | `declaration-track:170619892f315f7a57cf494046c2fd0603ca08d720428490cfc7ddc2c8aa2323` |
+| 1 | `inductive` | [UploadBackend](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DefsDefsNamespaced.lean/declarations/uploadbackend.md) | 47 | `declaration-track:27f70089523b5c06f432fb0671cd5956d5da6c2457dbc5af02c1d19158c11b5b` |
+| 2 | `def` | [name](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DefsDefsNamespaced.lean/declarations/name.md) | 57 | `declaration-track:f0a9b7881b5a5d8cb594a5a5c0bdfbf12800253bfff29f6bd93e3f5cf71034ba` |
+| 3 | `def` | [all](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DefsDefsNamespaced.lean/declarations/all.md) | 62 | `declaration-track:aab4734d747adbc2f96fb2805e156a191d0a84d8c15d00aa3b645c5205adfe47` |
+| 4 | `def` | [parse?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DefsDefsNamespaced.lean/declarations/parse.md) | 66 | `declaration-track:556084a6bcb1834fd0aef6eadf0669e1662f9ccbf6167eb1a5e7f491e5955da6` |
+| 5 | `def` | [stagedUploadDestFrom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DefsDefsNamespaced.lean/declarations/stageduploaddestfrom.md) | 89 | `declaration-track:ed9a4fe20a98fed216cab7c30fc86ee791ff2874e209a86bec445b9aec6a1140` |
+| 6 | `def` | [stagedUploadDest](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DefsDefsNamespaced.lean/declarations/stageduploaddest.md) | 114 | `declaration-track:170619892f315f7a57cf494046c2fd0603ca08d720428490cfc7ddc2c8aa2323` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

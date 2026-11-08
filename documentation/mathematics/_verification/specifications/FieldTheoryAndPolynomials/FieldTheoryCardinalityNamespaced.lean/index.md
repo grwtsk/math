@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FieldTheoryAndPolynomials/FieldTheoryCardinalityNamespaced.lean/index.md) · [Full source](../../../../FieldTheoryAndPolynomials/FieldTheoryCardinalityNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldTheoryCardinalityNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldTheoryCardinalityNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -63,11 +63,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Fintype.isPrimePow_card_of_field](../../../../FieldTheoryAndPolynomials/FieldTheoryCardinalityNamespaced.lean/declarations/fintype-isprimepow-card-of-field.md) | 45 | `result-track:b4c25878fab25ac6ccb2e1a69dccae9f3eb46a4757d3c70ee3da319416a33319` |
-| 2 | `theorem` | [Fintype.nonempty_field_iff](../../../../FieldTheoryAndPolynomials/FieldTheoryCardinalityNamespaced.lean/declarations/fintype-nonempty-field-iff.md) | 57 | `result-track:36bf83c1980c661b892771d96dcdcb38a4255400ea830d749926545ce82e70c2` |
-| 3 | `theorem` | [Fintype.not_isField_of_card_not_prime_pow](../../../../FieldTheoryAndPolynomials/FieldTheoryCardinalityNamespaced.lean/declarations/fintype-not-isfield-of-card-not-prime-pow.md) | 65 | `result-track:2bde50a5bb97a4794c2777e4068824ef57856e9722648c5d6c86ba6c34d37e3c` |
-| 4 | `theorem` | [Infinite.nonempty_field](../../../../FieldTheoryAndPolynomials/FieldTheoryCardinalityNamespaced.lean/declarations/infinite-nonempty-field.md) | 70 | `result-track:8636795b0b1775ae9fa0282f1a26e281fd4f1359bb6766138dcdc467f3c61f1c` |
-| 5 | `theorem` | [Field.nonempty_iff](../../../../FieldTheoryAndPolynomials/FieldTheoryCardinalityNamespaced.lean/declarations/field-nonempty-iff.md) | 76 | `result-track:3b4d9b24c420405c8ef92bb3064400830226d88c65530777c1e6695c0e56c356` |
+| 1 | `theorem` | [Fintype.isPrimePow_card_of_field](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldTheoryCardinalityNamespaced.lean/declarations/fintype-isprimepow-card-of-field.md) | 45 | `result-track:b4c25878fab25ac6ccb2e1a69dccae9f3eb46a4757d3c70ee3da319416a33319` |
+| 2 | `theorem` | [Fintype.nonempty_field_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldTheoryCardinalityNamespaced.lean/declarations/fintype-nonempty-field-iff.md) | 57 | `result-track:36bf83c1980c661b892771d96dcdcb38a4255400ea830d749926545ce82e70c2` |
+| 3 | `theorem` | [Fintype.not_isField_of_card_not_prime_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldTheoryCardinalityNamespaced.lean/declarations/fintype-not-isfield-of-card-not-prime-pow.md) | 65 | `result-track:2bde50a5bb97a4794c2777e4068824ef57856e9722648c5d6c86ba6c34d37e3c` |
+| 4 | `theorem` | [Infinite.nonempty_field](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldTheoryCardinalityNamespaced.lean/declarations/infinite-nonempty-field.md) | 70 | `result-track:8636795b0b1775ae9fa0282f1a26e281fd4f1359bb6766138dcdc467f3c61f1c` |
+| 5 | `theorem` | [Field.nonempty_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldTheoryCardinalityNamespaced.lean/declarations/field-nonempty-iff.md) | 76 | `result-track:3b4d9b24c420405c8ef92bb3064400830226d88c65530777c1e6695c0e56c356` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

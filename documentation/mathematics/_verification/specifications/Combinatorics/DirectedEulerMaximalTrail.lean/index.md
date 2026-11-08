@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/DirectedEulerMaximalTrail.lean/index.md) · [Full source](../../../../Combinatorics/DirectedEulerMaximalTrail.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DirectedEulerMaximalTrail.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DirectedEulerMaximalTrail.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Combinatorics.DirectedEulerSplicing`](../../../../Combinatorics/DirectedEulerSplicing.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.Combinatorics.DirectedEulerSplicing`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DirectedEulerSplicing.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Data.Finset.Card` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_maximal_trail](../../../../Combinatorics/DirectedEulerMaximalTrail.lean/declarations/exists-maximal-trail.md) | 27 | `result-track:80f219af190a68d33f3edfce02a3546da66788aa240396e9f0aa75703d122fa0` |
-| 2 | `theorem` | [exists_closed_maximal_trail](../../../../Combinatorics/DirectedEulerMaximalTrail.lean/declarations/exists-closed-maximal-trail.md) | 64 | `result-track:41a0805486026f52bf53e58f9e698ab34441d15502a6e56a94fa37a7aa523642` |
-| 3 | `theorem` | [exists_nonempty_closed_trail](../../../../Combinatorics/DirectedEulerMaximalTrail.lean/declarations/exists-nonempty-closed-trail.md) | 97 | `result-track:4b19e9fd9a31f925bc70d477382fac5a099410c7b506643666a27a3746dc7003` |
+| 1 | `theorem` | [exists_maximal_trail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DirectedEulerMaximalTrail.lean/declarations/exists-maximal-trail.md) | 27 | `result-track:80f219af190a68d33f3edfce02a3546da66788aa240396e9f0aa75703d122fa0` |
+| 2 | `theorem` | [exists_closed_maximal_trail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DirectedEulerMaximalTrail.lean/declarations/exists-closed-maximal-trail.md) | 64 | `result-track:41a0805486026f52bf53e58f9e698ab34441d15502a6e56a94fa37a7aa523642` |
+| 3 | `theorem` | [exists_nonempty_closed_trail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DirectedEulerMaximalTrail.lean/declarations/exists-nonempty-closed-trail.md) | 97 | `result-track:4b19e9fd9a31f925bc70d477382fac5a099410c7b506643666a27a3746dc7003` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

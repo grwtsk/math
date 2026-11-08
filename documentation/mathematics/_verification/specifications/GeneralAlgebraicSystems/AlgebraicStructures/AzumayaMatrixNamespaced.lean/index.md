@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AzumayaMatrixNamespaced.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AzumayaMatrixNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AzumayaMatrixNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AzumayaMatrixNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [AlgHom.mulLeftRightMatrix_inv](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AzumayaMatrixNamespaced.lean/declarations/alghom-mulleftrightmatrix-inv.md) | 39 | `declaration-track:e540066fb5fea06f047aae78f55d90b12132b5cf1b8554be337182a5f4084600` |
-| 2 | `lemma` | [AlgHom.mulLeftRightMatrix.inv_comp](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AzumayaMatrixNamespaced.lean/declarations/alghom-mulleftrightmatrix-inv-comp.md) | 46 | `result-track:3ea585e075ff93f07bf61f122a55ac45fd164d9d8f770c86e4efe8bc428486dc` |
-| 3 | `lemma` | [AlgHom.mulLeftRightMatrix.comp_inv](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AzumayaMatrixNamespaced.lean/declarations/alghom-mulleftrightmatrix-comp-inv.md) | 55 | `result-track:9f354d0e9d624bcce76da8e20211b71c199093ee3bfc06865e5591961c0e7566` |
-| 4 | `theorem` | [matrix](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AzumayaMatrixNamespaced.lean/declarations/matrix.md) | 71 | `result-track:1efa3f14fee29fb00ee765e11a3a7590c138eecf847391e5cbb9c44ec593fdbb` |
+| 1 | `abbrev` | [AlgHom.mulLeftRightMatrix_inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AzumayaMatrixNamespaced.lean/declarations/alghom-mulleftrightmatrix-inv.md) | 39 | `declaration-track:e540066fb5fea06f047aae78f55d90b12132b5cf1b8554be337182a5f4084600` |
+| 2 | `lemma` | [AlgHom.mulLeftRightMatrix.inv_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AzumayaMatrixNamespaced.lean/declarations/alghom-mulleftrightmatrix-inv-comp.md) | 46 | `result-track:3ea585e075ff93f07bf61f122a55ac45fd164d9d8f770c86e4efe8bc428486dc` |
+| 3 | `lemma` | [AlgHom.mulLeftRightMatrix.comp_inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AzumayaMatrixNamespaced.lean/declarations/alghom-mulleftrightmatrix-comp-inv.md) | 55 | `result-track:9f354d0e9d624bcce76da8e20211b71c199093ee3bfc06865e5591961c0e7566` |
+| 4 | `theorem` | [matrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AzumayaMatrixNamespaced.lean/declarations/matrix.md) | 71 | `result-track:1efa3f14fee29fb00ee765e11a3a7590c138eecf847391e5cbb9c44ec593fdbb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

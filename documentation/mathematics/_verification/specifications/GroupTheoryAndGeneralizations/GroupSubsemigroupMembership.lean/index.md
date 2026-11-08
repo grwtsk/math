@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/GroupSubsemigroupMembership.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/GroupSubsemigroupMembership.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupSubsemigroupMembership.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupSubsemigroupMembership.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,17 +57,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [mem_iSup_of_directed](../../../../GroupTheoryAndGeneralizations/GroupSubsemigroupMembership.lean/declarations/mem-isup-of-directed.md) | 45 | `result-track:c60ea663d45a95e9edaf3893ba26a0fbe826c1139de1e6275d91f77061498956` |
-| 2 | `theorem` | [coe_iSup_of_directed](../../../../GroupTheoryAndGeneralizations/GroupSubsemigroupMembership.lean/declarations/coe-isup-of-directed.md) | 56 | `result-track:8c2891eb932053d50b16b838630ca20f74449a45ab29c6611a6b455f15c7bda8` |
-| 3 | `theorem` | [mem_sSup_of_directed_on](../../../../GroupTheoryAndGeneralizations/GroupSubsemigroupMembership.lean/declarations/mem-ssup-of-directed-on.md) | 61 | `result-track:c2b77f1892bb5d0af15547ff6faab1018ecdec2ba38db36e10ccd818b20dfd01` |
-| 4 | `theorem` | [coe_sSup_of_directed_on](../../../../GroupTheoryAndGeneralizations/GroupSubsemigroupMembership.lean/declarations/coe-ssup-of-directed-on.md) | 67 | `result-track:d9a0c314eaaae2d1346498e38f6d986b11d9bbca055237648a767b5596a73b9f` |
-| 5 | `theorem` | [mem_sup_left](../../../../GroupTheoryAndGeneralizations/GroupSubsemigroupMembership.lean/declarations/mem-sup-left.md) | 72 | `result-track:fc5093f45155c9cc0594704279dc41a7e2cce24bc3dfa1c44b5eb7143b02a6dd` |
-| 6 | `theorem` | [mem_sup_right](../../../../GroupTheoryAndGeneralizations/GroupSubsemigroupMembership.lean/declarations/mem-sup-right.md) | 77 | `result-track:fdef0be8e6d7469207680aacd6fc2f01348f2d12ec47d0a6a096f1d5a44430e8` |
-| 7 | `theorem` | [mul_mem_sup](../../../../GroupTheoryAndGeneralizations/GroupSubsemigroupMembership.lean/declarations/mul-mem-sup.md) | 82 | `result-track:ea89be4b500f5b4317447c825ac9b91f41e84108bd865319db5666a8dd616212` |
-| 8 | `theorem` | [mem_iSup_of_mem](../../../../GroupTheoryAndGeneralizations/GroupSubsemigroupMembership.lean/declarations/mem-isup-of-mem.md) | 86 | `result-track:118a49640cd5615da816c9ccf026e35f952a9a717ebfb89c84dd91bbd5bab34e` |
-| 9 | `theorem` | [mem_sSup_of_mem](../../../../GroupTheoryAndGeneralizations/GroupSubsemigroupMembership.lean/declarations/mem-ssup-of-mem.md) | 91 | `result-track:9c2844e16edb7dd36f2d72673ac120dbb63edf0358427ea56572d4d996040943` |
-| 10 | `theorem` | [iSup_induction](../../../../GroupTheoryAndGeneralizations/GroupSubsemigroupMembership.lean/declarations/isup-induction.md) | 103 | `result-track:368d38eb25369c9cf72edefd19e8d4b1b908d8ddf0ecbcee1bebb40e40c8f4a0` |
-| 11 | `theorem` | [iSup_induction'](../../../../GroupTheoryAndGeneralizations/GroupSubsemigroupMembership.lean/declarations/isup-induction-source-edition-2.md) | 113 | `result-track:8e8195b88f87ef6192c9ca3809517b53aebff73a4072242327bf8877f3ddfe4e` |
+| 1 | `theorem` | [mem_iSup_of_directed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupSubsemigroupMembership.lean/declarations/mem-isup-of-directed.md) | 45 | `result-track:c60ea663d45a95e9edaf3893ba26a0fbe826c1139de1e6275d91f77061498956` |
+| 2 | `theorem` | [coe_iSup_of_directed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupSubsemigroupMembership.lean/declarations/coe-isup-of-directed.md) | 56 | `result-track:8c2891eb932053d50b16b838630ca20f74449a45ab29c6611a6b455f15c7bda8` |
+| 3 | `theorem` | [mem_sSup_of_directed_on](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupSubsemigroupMembership.lean/declarations/mem-ssup-of-directed-on.md) | 61 | `result-track:c2b77f1892bb5d0af15547ff6faab1018ecdec2ba38db36e10ccd818b20dfd01` |
+| 4 | `theorem` | [coe_sSup_of_directed_on](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupSubsemigroupMembership.lean/declarations/coe-ssup-of-directed-on.md) | 67 | `result-track:d9a0c314eaaae2d1346498e38f6d986b11d9bbca055237648a767b5596a73b9f` |
+| 5 | `theorem` | [mem_sup_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupSubsemigroupMembership.lean/declarations/mem-sup-left.md) | 72 | `result-track:fc5093f45155c9cc0594704279dc41a7e2cce24bc3dfa1c44b5eb7143b02a6dd` |
+| 6 | `theorem` | [mem_sup_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupSubsemigroupMembership.lean/declarations/mem-sup-right.md) | 77 | `result-track:fdef0be8e6d7469207680aacd6fc2f01348f2d12ec47d0a6a096f1d5a44430e8` |
+| 7 | `theorem` | [mul_mem_sup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupSubsemigroupMembership.lean/declarations/mul-mem-sup.md) | 82 | `result-track:ea89be4b500f5b4317447c825ac9b91f41e84108bd865319db5666a8dd616212` |
+| 8 | `theorem` | [mem_iSup_of_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupSubsemigroupMembership.lean/declarations/mem-isup-of-mem.md) | 86 | `result-track:118a49640cd5615da816c9ccf026e35f952a9a717ebfb89c84dd91bbd5bab34e` |
+| 9 | `theorem` | [mem_sSup_of_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupSubsemigroupMembership.lean/declarations/mem-ssup-of-mem.md) | 91 | `result-track:9c2844e16edb7dd36f2d72673ac120dbb63edf0358427ea56572d4d996040943` |
+| 10 | `theorem` | [iSup_induction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupSubsemigroupMembership.lean/declarations/isup-induction.md) | 103 | `result-track:368d38eb25369c9cf72edefd19e8d4b1b908d8ddf0ecbcee1bebb40e40c8f4a0` |
+| 11 | `theorem` | [iSup_induction'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupSubsemigroupMembership.lean/declarations/isup-induction-source-edition-2.md) | 113 | `result-track:8e8195b88f87ef6192c9ca3809517b53aebff73a4072242327bf8877f3ddfe4e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

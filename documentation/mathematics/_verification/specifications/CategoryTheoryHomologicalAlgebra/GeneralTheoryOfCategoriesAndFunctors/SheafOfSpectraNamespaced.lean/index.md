@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SheafOfSpectraNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SheafOfSpectraNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SheafOfSpectraNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SheafOfSpectraNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sheaf_of_spectra_has_descent](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SheafOfSpectraNamespaced.lean/declarations/sheaf-of-spectra-has-descent.md) | 28 | `result-track:d9af282471dec7268d6e05a3f1055b460f2890c57afe523609922892f48bf99d` |
-| 2 | `theorem` | [sheaf_of_spectra_has_hyperdescent](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SheafOfSpectraNamespaced.lean/declarations/sheaf-of-spectra-has-hyperdescent.md) | 35 | `result-track:4bfb93b21c66ea7c6e30e2713649df033e758ce899f1ae1b12545dd84f9ec185` |
+| 1 | `theorem` | [sheaf_of_spectra_has_descent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SheafOfSpectraNamespaced.lean/declarations/sheaf-of-spectra-has-descent.md) | 28 | `result-track:d9af282471dec7268d6e05a3f1055b460f2890c57afe523609922892f48bf99d` |
+| 2 | `theorem` | [sheaf_of_spectra_has_hyperdescent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SheafOfSpectraNamespaced.lean/declarations/sheaf-of-spectra-has-hyperdescent.md) | 35 | `result-track:4bfb93b21c66ea7c6e30e2713649df033e758ce899f1ae1b12545dd84f9ec185` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

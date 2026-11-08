@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CanonicalPathCompositionNamespacedCanonicalPathContract.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CanonicalPathCompositionNamespacedCanonicalPathContract.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CanonicalPathCompositionNamespacedCanonicalPathContract.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CanonicalPathCompositionNamespacedCanonicalPathContract.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CanonicalPathContract](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CanonicalPathCompositionNamespacedCanonicalPathContract.lean/declarations/canonicalpathcontract.md) | 29 | `declaration-track:8b4dcba491b803131eeaea483a531b6b869a49210000dbc40f2de5b9b3ba9c99` |
-| 2 | `theorem` | [canonical_path_contract_composes](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CanonicalPathCompositionNamespacedCanonicalPathContract.lean/declarations/canonical-path-contract-composes.md) | 38 | `result-track:77490cfa59b189a7f57c785d16953d407f83aa83cdae3ff72b59b41fbbf5957a` |
+| 1 | `structure` | [CanonicalPathContract](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CanonicalPathCompositionNamespacedCanonicalPathContract.lean/declarations/canonicalpathcontract.md) | 29 | `declaration-track:8b4dcba491b803131eeaea483a531b6b869a49210000dbc40f2de5b9b3ba9c99` |
+| 2 | `theorem` | [canonical_path_contract_composes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CanonicalPathCompositionNamespacedCanonicalPathContract.lean/declarations/canonical-path-contract-composes.md) | 38 | `result-track:77490cfa59b189a7f57c785d16953d407f83aa83cdae3ff72b59b41fbbf5957a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

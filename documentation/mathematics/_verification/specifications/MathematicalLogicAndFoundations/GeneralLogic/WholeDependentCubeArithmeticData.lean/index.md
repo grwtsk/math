@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeDependentCubeArithmeticData.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeDependentCubeArithmeticData.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeDependentCubeArithmeticData.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeDependentCubeArithmeticData.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CubeArithmeticAddress](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeDependentCubeArithmeticData.lean/declarations/cubearithmeticaddress.md) | 39 | `declaration-track:e49e895782519161d1e0626647313d66e14f6a4d13207f2cdbd6a731e88dc5e0` |
-| 2 | `structure` | [CubeArithmeticRepresentation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeDependentCubeArithmeticData.lean/declarations/cubearithmeticrepresentation.md) | 44 | `declaration-track:696583b5e01aed113b0256e3698de143d050086b17624da6b8f4774bca9615f8` |
+| 1 | `structure` | [CubeArithmeticAddress](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeDependentCubeArithmeticData.lean/declarations/cubearithmeticaddress.md) | 39 | `declaration-track:e49e895782519161d1e0626647313d66e14f6a4d13207f2cdbd6a731e88dc5e0` |
+| 2 | `structure` | [CubeArithmeticRepresentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeDependentCubeArithmeticData.lean/declarations/cubearithmeticrepresentation.md) | 44 | `declaration-track:696583b5e01aed113b0256e3698de143d050086b17624da6b8f4774bca9615f8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

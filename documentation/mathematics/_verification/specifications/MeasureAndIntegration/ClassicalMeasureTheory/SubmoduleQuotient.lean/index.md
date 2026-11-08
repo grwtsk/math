@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/SubmoduleQuotient.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/SubmoduleQuotient.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/SubmoduleQuotient.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/SubmoduleQuotient.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/SubmoduleQuotient.lean/declarations/instance-source-edition-2.md) | 16 | `declaration-track:c6388d428c073cabe7033f84fd231813b53927ba82350220436fda598e58889f` |
-| 2 | `instance` | [(anonymous)](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/SubmoduleQuotient.lean/declarations/instance.md) | 17 | `declaration-track:20314e550d52dc0beebf4f7d3b826c8f7c080b054c6dfbc8c76285f8e00d0f2e` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/SubmoduleQuotient.lean/declarations/instance-source-edition-2.md) | 16 | `declaration-track:c6388d428c073cabe7033f84fd231813b53927ba82350220436fda598e58889f` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/SubmoduleQuotient.lean/declarations/instance.md) | 17 | `declaration-track:20314e550d52dc0beebf4f7d3b826c8f7c080b054c6dfbc8c76285f8e00d0f2e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

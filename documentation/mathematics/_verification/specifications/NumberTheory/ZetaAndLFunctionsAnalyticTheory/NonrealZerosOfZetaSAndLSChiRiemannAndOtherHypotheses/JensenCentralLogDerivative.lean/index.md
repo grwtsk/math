@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/JensenCentralLogDerivative.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/JensenCentralLogDerivative.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/JensenCentralLogDerivative.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/JensenCentralLogDerivative.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.JensenDiskQuotient`](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/JensenDiskQuotient.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.JensenDiskQuotient`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/JensenDiskQuotient.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_actual_zeta_disk_log](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/JensenCentralLogDerivative.lean/declarations/exists-actual-zeta-disk-log.md) | 29 | `result-track:2bdf8273a0981333f9010cf1bf2edf69773c59d7ce6fe6903b4709c8c0c06fdc` |
-| 2 | `theorem` | [norm_logDeriv_central](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/JensenCentralLogDerivative.lean/declarations/norm-logderiv-central.md) | 43 | `result-track:b4b0a62857aa0f08498b5f2b8cdefd71590cdd53eca9f59da761a321dd698536` |
-| 3 | `theorem` | [norm_logDeriv_upper](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/JensenCentralLogDerivative.lean/declarations/norm-logderiv-upper.md) | 60 | `result-track:0de6c1c837b988432ff126383b35e500754f05a600b9d81d8741fd95a3111217` |
-| 4 | `theorem` | [norm_logDeriv_lower](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/JensenCentralLogDerivative.lean/declarations/norm-logderiv-lower.md) | 65 | `result-track:c411cf2e20cc00099725a07ed245c34c9364f108901dab754ed5c698f4d08603` |
-| 5 | `theorem` | [budget_eq_quadratic](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/JensenCentralLogDerivative.lean/declarations/budget-eq-quadratic.md) | 73 | `result-track:804db6838038fe152f98a53506d6cd9b700775db0de8179fb4b6e91e23b24131` |
+| 1 | `theorem` | [exists_actual_zeta_disk_log](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/JensenCentralLogDerivative.lean/declarations/exists-actual-zeta-disk-log.md) | 29 | `result-track:2bdf8273a0981333f9010cf1bf2edf69773c59d7ce6fe6903b4709c8c0c06fdc` |
+| 2 | `theorem` | [norm_logDeriv_central](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/JensenCentralLogDerivative.lean/declarations/norm-logderiv-central.md) | 43 | `result-track:b4b0a62857aa0f08498b5f2b8cdefd71590cdd53eca9f59da761a321dd698536` |
+| 3 | `theorem` | [norm_logDeriv_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/JensenCentralLogDerivative.lean/declarations/norm-logderiv-upper.md) | 60 | `result-track:0de6c1c837b988432ff126383b35e500754f05a600b9d81d8741fd95a3111217` |
+| 4 | `theorem` | [norm_logDeriv_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/JensenCentralLogDerivative.lean/declarations/norm-logderiv-lower.md) | 65 | `result-track:c411cf2e20cc00099725a07ed245c34c9364f108901dab754ed5c698f4d08603` |
+| 5 | `theorem` | [budget_eq_quadratic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/JensenCentralLogDerivative.lean/declarations/budget-eq-quadratic.md) | 73 | `result-track:804db6838038fe152f98a53506d6cd9b700775db0de8179fb4b6e91e23b24131` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

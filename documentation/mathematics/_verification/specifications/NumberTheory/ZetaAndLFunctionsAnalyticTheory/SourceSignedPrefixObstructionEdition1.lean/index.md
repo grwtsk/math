@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceSignedPrefixObstructionEdition1.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceSignedPrefixObstructionEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceSignedPrefixObstructionEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceSignedPrefixObstructionEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [centeredPrefix](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceSignedPrefixObstructionEdition1.lean/declarations/centeredprefix.md) | 19 | `declaration-track:5cbeb49cb4ef5282f27c70bbfcd677bd431056fec6fea32105d36d0884bce2e6` |
-| 2 | `theorem` | [actual_cutoff](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceSignedPrefixObstructionEdition1.lean/declarations/actual-cutoff.md) | 22 | `result-track:99f6c2fbeb7c32223789fdb8ad5f750e33d1719ad93fcfabe185454c859e01d2` |
-| 3 | `theorem` | [actual_alpha](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceSignedPrefixObstructionEdition1.lean/declarations/actual-alpha.md) | 25 | `result-track:b8cc142c891044a1ae8d9707017cc50f3ae5ab167ad9bf3a20006b78791d01e0` |
-| 4 | `theorem` | [actual_prefix_values](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceSignedPrefixObstructionEdition1.lean/declarations/actual-prefix-values.md) | 28 | `result-track:b9925a07328deb3b0013029071e272c51fb1651da837c6cc44fab232d0e00835` |
-| 5 | `theorem` | [centering_does_not_force_nonpositive_prefix](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceSignedPrefixObstructionEdition1.lean/declarations/centering-does-not-force-nonpositive-prefix.md) | 35 | `result-track:fc4ae3138e9f23c77747f6565f3310e0c44da3b39263e88d05f8975143687305` |
-| 6 | `theorem` | [centering_does_not_force_nonnegative_prefix](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceSignedPrefixObstructionEdition1.lean/declarations/centering-does-not-force-nonnegative-prefix.md) | 42 | `result-track:53a523cd3927aa1b8eece2c104c771586507bcaadfbddbd576985ee35b95e909` |
+| 1 | `def` | [centeredPrefix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceSignedPrefixObstructionEdition1.lean/declarations/centeredprefix.md) | 19 | `declaration-track:5cbeb49cb4ef5282f27c70bbfcd677bd431056fec6fea32105d36d0884bce2e6` |
+| 2 | `theorem` | [actual_cutoff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceSignedPrefixObstructionEdition1.lean/declarations/actual-cutoff.md) | 22 | `result-track:99f6c2fbeb7c32223789fdb8ad5f750e33d1719ad93fcfabe185454c859e01d2` |
+| 3 | `theorem` | [actual_alpha](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceSignedPrefixObstructionEdition1.lean/declarations/actual-alpha.md) | 25 | `result-track:b8cc142c891044a1ae8d9707017cc50f3ae5ab167ad9bf3a20006b78791d01e0` |
+| 4 | `theorem` | [actual_prefix_values](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceSignedPrefixObstructionEdition1.lean/declarations/actual-prefix-values.md) | 28 | `result-track:b9925a07328deb3b0013029071e272c51fb1651da837c6cc44fab232d0e00835` |
+| 5 | `theorem` | [centering_does_not_force_nonpositive_prefix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceSignedPrefixObstructionEdition1.lean/declarations/centering-does-not-force-nonpositive-prefix.md) | 35 | `result-track:fc4ae3138e9f23c77747f6565f3310e0c44da3b39263e88d05f8975143687305` |
+| 6 | `theorem` | [centering_does_not_force_nonnegative_prefix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceSignedPrefixObstructionEdition1.lean/declarations/centering-does-not-force-nonnegative-prefix.md) | 42 | `result-track:53a523cd3927aa1b8eece2c104c771586507bcaadfbddbd576985ee35b95e909` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ControlledClosureNamespacedPublic.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ControlledClosureNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ControlledClosureNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ControlledClosureNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [controlled_closure_of_complete](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ControlledClosureNamespacedPublic.lean/declarations/controlled-closure-of-complete.md) | 42 | `result-track:5ead26ae9eb7ad1528c815f8701ef2438549a443bf92fd301860ef3e1b129536` |
-| 2 | `theorem` | [controlled_closure_range_of_complete](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ControlledClosureNamespacedPublic.lean/declarations/controlled-closure-range-of-complete.md) | 125 | `result-track:9f95b79ce184348e53b02d5ba3baa9c2fff7aa4a578fed5966814ea135b4c913` |
+| 1 | `theorem` | [controlled_closure_of_complete](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ControlledClosureNamespacedPublic.lean/declarations/controlled-closure-of-complete.md) | 42 | `result-track:5ead26ae9eb7ad1528c815f8701ef2438549a443bf92fd301860ef3e1b129536` |
+| 2 | `theorem` | [controlled_closure_range_of_complete](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ControlledClosureNamespacedPublic.lean/declarations/controlled-closure-range-of-complete.md) | 125 | `result-track:9f95b79ce184348e53b02d5ba3baa9c2fff7aa4a578fed5966814ea135b4c913` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

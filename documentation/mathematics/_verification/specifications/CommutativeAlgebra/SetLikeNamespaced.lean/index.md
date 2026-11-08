@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/SetLikeNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/SetLikeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SetLikeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SetLikeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,18 +60,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../CommutativeAlgebra/SetLikeNamespaced.lean/declarations/example-source-edition-9.md) | 30 | `declaration-track:920e7b540cfa26cd62b269f5e165ea7e36eaa51a2e4bbd68402d674b83814513` |
-| 2 | `example` | [(anonymous)](../../../../CommutativeAlgebra/SetLikeNamespaced.lean/declarations/example-source-edition-4.md) | 34 | `declaration-track:3a54f6d7bac0c1527646b7e041ad81ae6abb377cbe7c973376172e05d94afe9c` |
-| 3 | `example` | [(anonymous)](../../../../CommutativeAlgebra/SetLikeNamespaced.lean/declarations/example-source-edition-7.md) | 38 | `declaration-track:517fb79c1af4f1aab95b4b78c20ff15eced4a6df5558805c5fa65f1e812ce95e` |
-| 4 | `example` | [(anonymous)](../../../../CommutativeAlgebra/SetLikeNamespaced.lean/declarations/example-source-edition-11.md) | 43 | `declaration-track:9f379d96ffc9f1fd2eababb4ba9c33714f0821c49b69952069cb78d87f54ea02` |
-| 5 | `example` | [(anonymous)](../../../../CommutativeAlgebra/SetLikeNamespaced.lean/declarations/example-source-edition-8.md) | 46 | `declaration-track:53c89e091d3fa0794bdc0f722ac1a01a9eb2f3d598d5ab9e655e66a08d023306` |
-| 6 | `example` | [(anonymous)](../../../../CommutativeAlgebra/SetLikeNamespaced.lean/declarations/example-source-edition-2.md) | 49 | `declaration-track:17dd4d2e6419945f73c810c1a5733f5013faf70523a7c9f53dc3535c2434146d` |
-| 7 | `example` | [(anonymous)](../../../../CommutativeAlgebra/SetLikeNamespaced.lean/declarations/example.md) | 52 | `declaration-track:0d859e1366950faf9eec466f45686c85d66ee7df39fc3ebae88ed0cb1e6f0d95` |
-| 8 | `example` | [(anonymous)](../../../../CommutativeAlgebra/SetLikeNamespaced.lean/declarations/example-source-edition-5.md) | 57 | `declaration-track:4ad1eb143ad4d76021c4b063bff6894e8d0ce215f182a504fb2a2e20373485bd` |
-| 9 | `example` | [(anonymous)](../../../../CommutativeAlgebra/SetLikeNamespaced.lean/declarations/example-source-edition-10.md) | 62 | `declaration-track:9d95ff808f8da1812322a625f5f23b25b96989694990f134999e971622f487a6` |
-| 10 | `example` | [(anonymous)](../../../../CommutativeAlgebra/SetLikeNamespaced.lean/declarations/example-source-edition-12.md) | 66 | `declaration-track:e069f8b6dae1cd9c894e22843ea6a47b705d437f4abd5c934495a7a5281ef7fa` |
-| 11 | `example` | [(anonymous)](../../../../CommutativeAlgebra/SetLikeNamespaced.lean/declarations/example-source-edition-6.md) | 69 | `declaration-track:50e767d49f3cd70f53a14a411be45bd19365937aab1491bd7e206aa9d1994c7a` |
-| 12 | `example` | [(anonymous)](../../../../CommutativeAlgebra/SetLikeNamespaced.lean/declarations/example-source-edition-3.md) | 72 | `declaration-track:2ba65f0e6de081976b002e922d278620314335f391b07003bbb4846268da784d` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SetLikeNamespaced.lean/declarations/example-source-edition-9.md) | 30 | `declaration-track:920e7b540cfa26cd62b269f5e165ea7e36eaa51a2e4bbd68402d674b83814513` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SetLikeNamespaced.lean/declarations/example-source-edition-4.md) | 34 | `declaration-track:3a54f6d7bac0c1527646b7e041ad81ae6abb377cbe7c973376172e05d94afe9c` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SetLikeNamespaced.lean/declarations/example-source-edition-7.md) | 38 | `declaration-track:517fb79c1af4f1aab95b4b78c20ff15eced4a6df5558805c5fa65f1e812ce95e` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SetLikeNamespaced.lean/declarations/example-source-edition-11.md) | 43 | `declaration-track:9f379d96ffc9f1fd2eababb4ba9c33714f0821c49b69952069cb78d87f54ea02` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SetLikeNamespaced.lean/declarations/example-source-edition-8.md) | 46 | `declaration-track:53c89e091d3fa0794bdc0f722ac1a01a9eb2f3d598d5ab9e655e66a08d023306` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SetLikeNamespaced.lean/declarations/example-source-edition-2.md) | 49 | `declaration-track:17dd4d2e6419945f73c810c1a5733f5013faf70523a7c9f53dc3535c2434146d` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SetLikeNamespaced.lean/declarations/example.md) | 52 | `declaration-track:0d859e1366950faf9eec466f45686c85d66ee7df39fc3ebae88ed0cb1e6f0d95` |
+| 8 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SetLikeNamespaced.lean/declarations/example-source-edition-5.md) | 57 | `declaration-track:4ad1eb143ad4d76021c4b063bff6894e8d0ce215f182a504fb2a2e20373485bd` |
+| 9 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SetLikeNamespaced.lean/declarations/example-source-edition-10.md) | 62 | `declaration-track:9d95ff808f8da1812322a625f5f23b25b96989694990f134999e971622f487a6` |
+| 10 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SetLikeNamespaced.lean/declarations/example-source-edition-12.md) | 66 | `declaration-track:e069f8b6dae1cd9c894e22843ea6a47b705d437f4abd5c934495a7a5281ef7fa` |
+| 11 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SetLikeNamespaced.lean/declarations/example-source-edition-6.md) | 69 | `declaration-track:50e767d49f3cd70f53a14a411be45bd19365937aab1491bd7e206aa9d1994c7a` |
+| 12 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SetLikeNamespaced.lean/declarations/example-source-edition-3.md) | 72 | `declaration-track:2ba65f0e6de081976b002e922d278620314335f391b07003bbb4846268da784d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

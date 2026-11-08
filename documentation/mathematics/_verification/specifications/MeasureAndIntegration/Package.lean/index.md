@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/Package.lean/index.md) · [Full source](../../../../MeasureAndIntegration/Package.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Package.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Package.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [C1_nonneg](../../../../MeasureAndIntegration/Package.lean/declarations/c1-nonneg.md) | 28 | `result-track:4419c1fc063935350ae046e6ea640a78c019a3496d3872e3a131785018211978` |
-| 2 | `theorem` | [eventually_tailPackage](../../../../MeasureAndIntegration/Package.lean/declarations/eventually-tailpackage.md) | 36 | `result-track:546266d8e9dca9769732b6b125338ff206d96afafc8edccbb5db4847b6cda1b8` |
+| 1 | `lemma` | [C1_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Package.lean/declarations/c1-nonneg.md) | 28 | `result-track:4419c1fc063935350ae046e6ea640a78c019a3496d3872e3a131785018211978` |
+| 2 | `theorem` | [eventually_tailPackage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Package.lean/declarations/eventually-tailpackage.md) | 36 | `result-track:546266d8e9dca9769732b6b125338ff206d96afafc8edccbb5db4847b6cda1b8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

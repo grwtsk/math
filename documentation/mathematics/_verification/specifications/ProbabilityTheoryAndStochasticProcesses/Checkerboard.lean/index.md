@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/Checkerboard.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/Checkerboard.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Checkerboard.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Checkerboard.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [checkerboard](../../../../ProbabilityTheoryAndStochasticProcesses/Checkerboard.lean/declarations/checkerboard.md) | 22 | `declaration-track:2fbdb5a8b0e6b2dbfca1b9f70fc282c42bfd149cbb9764db7bf1a3b884847495` |
-| 2 | `def` | [IsProper2Coloring](../../../../ProbabilityTheoryAndStochasticProcesses/Checkerboard.lean/declarations/isproper2coloring.md) | 26 | `declaration-track:08fe17b15c40da2b1e28c916eebd1cc54ce3274d0cffd4ae21c00dd1d015ec1c` |
-| 3 | `theorem` | [cast_succ_zmod_two_ne](../../../../ProbabilityTheoryAndStochasticProcesses/Checkerboard.lean/declarations/cast-succ-zmod-two-ne.md) | 31 | `result-track:cda1ca670c6d6c339483dfec60b6503e2af15430ed69d08ed383128e36e9eed1` |
-| 4 | `theorem` | [step_ne](../../../../ProbabilityTheoryAndStochasticProcesses/Checkerboard.lean/declarations/step-ne.md) | 40 | `result-track:383e7b2375b73aca062caeb75671ca1a62befae2ed04c8568c16fe7b22f082d5` |
-| 5 | `theorem` | [step_flip](../../../../ProbabilityTheoryAndStochasticProcesses/Checkerboard.lean/declarations/step-flip.md) | 55 | `result-track:1b72d029b62d93f0f5ec3404af74cb6eb9a338d5ba4d22fc3cbe7f660a863877` |
-| 6 | `theorem` | [checkerboard_isProper2Coloring](../../../../ProbabilityTheoryAndStochasticProcesses/Checkerboard.lean/declarations/checkerboard-isproper2coloring.md) | 64 | `result-track:301fb3190ff100bce7aab5be4a8f5ec82dad4fd71ed414103519f08bb70b8cfe` |
-| 7 | `theorem` | [checkerboard_isCheckerboardPattern](../../../../ProbabilityTheoryAndStochasticProcesses/Checkerboard.lean/declarations/checkerboard-ischeckerboardpattern.md) | 132 | `result-track:0cf5eea89cf034154460da09bc63fa0aaa7497001fb0d7bcfd4fb1ba4f1740d2` |
+| 1 | `def` | [checkerboard](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Checkerboard.lean/declarations/checkerboard.md) | 22 | `declaration-track:2fbdb5a8b0e6b2dbfca1b9f70fc282c42bfd149cbb9764db7bf1a3b884847495` |
+| 2 | `def` | [IsProper2Coloring](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Checkerboard.lean/declarations/isproper2coloring.md) | 26 | `declaration-track:08fe17b15c40da2b1e28c916eebd1cc54ce3274d0cffd4ae21c00dd1d015ec1c` |
+| 3 | `theorem` | [cast_succ_zmod_two_ne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Checkerboard.lean/declarations/cast-succ-zmod-two-ne.md) | 31 | `result-track:cda1ca670c6d6c339483dfec60b6503e2af15430ed69d08ed383128e36e9eed1` |
+| 4 | `theorem` | [step_ne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Checkerboard.lean/declarations/step-ne.md) | 40 | `result-track:383e7b2375b73aca062caeb75671ca1a62befae2ed04c8568c16fe7b22f082d5` |
+| 5 | `theorem` | [step_flip](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Checkerboard.lean/declarations/step-flip.md) | 55 | `result-track:1b72d029b62d93f0f5ec3404af74cb6eb9a338d5ba4d22fc3cbe7f660a863877` |
+| 6 | `theorem` | [checkerboard_isProper2Coloring](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Checkerboard.lean/declarations/checkerboard-isproper2coloring.md) | 64 | `result-track:301fb3190ff100bce7aab5be4a8f5ec82dad4fd71ed414103519f08bb70b8cfe` |
+| 7 | `theorem` | [checkerboard_isCheckerboardPattern](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Checkerboard.lean/declarations/checkerboard-ischeckerboardpattern.md) | 132 | `result-track:0cf5eea89cf034154460da09bc63fa0aaa7497001fb0d7bcfd4fb1ba4f1740d2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

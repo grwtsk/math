@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/PublicAlternative.lean/index.md) · [Full source](../../../../Combinatorics/PublicAlternative.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PublicAlternative.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PublicAlternative.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [verbose_identity](../../../../Combinatorics/PublicAlternative.lean/declarations/verbose-identity.md) | 18 | `result-track:160f52ed6713899097e10e0e7befc2c21401f19f143ef1aa4379c01e30524be2` |
-| 2 | `theorem` | [identity_with_local_auxiliary](../../../../Combinatorics/PublicAlternative.lean/declarations/identity-with-local-auxiliary.md) | 24 | `result-track:65ae3f145832d48c5bdd67f148204f6f096140e17be443254037a28f22b23d13` |
-| 3 | `theorem` | [sandbox_guard_identity](../../../../Combinatorics/PublicAlternative.lean/declarations/sandbox-guard-identity.md) | 31 | `result-track:9f9131afd4436a3bf2b84e3d3ec5f57c1454cec23825560c8d1cac7176671897` |
-| 4 | `def` | [import_sensitive_cardinality](../../../../Combinatorics/PublicAlternative.lean/declarations/import-sensitive-cardinality.md) | 36 | `declaration-track:4f09ba2a58d16f8fc60b31951a951186226bfc074d5f0d11873d0814d0765308` |
+| 1 | `theorem` | [verbose_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PublicAlternative.lean/declarations/verbose-identity.md) | 18 | `result-track:160f52ed6713899097e10e0e7befc2c21401f19f143ef1aa4379c01e30524be2` |
+| 2 | `theorem` | [identity_with_local_auxiliary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PublicAlternative.lean/declarations/identity-with-local-auxiliary.md) | 24 | `result-track:65ae3f145832d48c5bdd67f148204f6f096140e17be443254037a28f22b23d13` |
+| 3 | `theorem` | [sandbox_guard_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PublicAlternative.lean/declarations/sandbox-guard-identity.md) | 31 | `result-track:9f9131afd4436a3bf2b84e3d3ec5f57c1454cec23825560c8d1cac7176671897` |
+| 4 | `def` | [import_sensitive_cardinality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PublicAlternative.lean/declarations/import-sensitive-cardinality.md) | 36 | `declaration-track:4f09ba2a58d16f8fc60b31951a951186226bfc074d5f0d11873d0814d0765308` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

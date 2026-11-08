@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingPowNamespaced.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingPowNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingPowNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingPowNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [one_add_mul_le_pow'](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingPowNamespaced.lean/declarations/one-add-mul-le-pow-source-edition-2.md) | 26 | `result-track:e5b6b883daac3ede337df091ac576866011dd3bc32845ad101595b6000641ea3` |
-| 2 | `lemma` | [one_add_mul_le_pow](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingPowNamespaced.lean/declarations/one-add-mul-le-pow.md) | 51 | `result-track:b0188766f7d606f0ee2a11c97a7b4c406b950903b4663071c92633b832e8e0d9` |
-| 3 | `lemma` | [one_add_mul_sub_le_pow](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingPowNamespaced.lean/declarations/one-add-mul-sub-le-pow.md) | 55 | `result-track:62d7f92eef68b366aea67bcd4bb634f085aaddfae25c182980ed4cb9ffb8d365` |
+| 1 | `lemma` | [one_add_mul_le_pow'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingPowNamespaced.lean/declarations/one-add-mul-le-pow-source-edition-2.md) | 26 | `result-track:e5b6b883daac3ede337df091ac576866011dd3bc32845ad101595b6000641ea3` |
+| 2 | `lemma` | [one_add_mul_le_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingPowNamespaced.lean/declarations/one-add-mul-le-pow.md) | 51 | `result-track:b0188766f7d606f0ee2a11c97a7b4c406b950903b4663071c92633b832e8e0d9` |
+| 3 | `lemma` | [one_add_mul_sub_le_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingPowNamespaced.lean/declarations/one-add-mul-sub-le-pow.md) | 55 | `result-track:62d7f92eef68b366aea67bcd4bb634f085aaddfae25c182980ed4cb9ffb8d365` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

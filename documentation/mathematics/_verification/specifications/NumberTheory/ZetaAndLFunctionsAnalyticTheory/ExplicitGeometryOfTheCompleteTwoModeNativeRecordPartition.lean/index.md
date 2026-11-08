@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExplicitGeometryOfTheCompleteTwoModeNativeRecordPartition.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExplicitGeometryOfTheCompleteTwoModeNativeRecordPartition.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExplicitGeometryOfTheCompleteTwoModeNativeRecordPartition.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExplicitGeometryOfTheCompleteTwoModeNativeRecordPartition.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [literal_record_clock_strict_mono](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExplicitGeometryOfTheCompleteTwoModeNativeRecordPartition.lean/declarations/literal-record-clock-strict-mono.md) | 18 | `result-track:3e88602e39ef7e3f0e9c68afb415fcf4c2c4f5f48bff815c0d5ad81549a8f3fb` |
-| 2 | `theorem` | [literal_record_intervals_disjoint](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExplicitGeometryOfTheCompleteTwoModeNativeRecordPartition.lean/declarations/literal-record-intervals-disjoint.md) | 25 | `result-track:005f318bf804e067b040178876fee0d9ab975d6d66794b8dd804c97edf49696a` |
-| 3 | `theorem` | [literal_record_interval_tail_containment](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExplicitGeometryOfTheCompleteTwoModeNativeRecordPartition.lean/declarations/literal-record-interval-tail-containment.md) | 34 | `result-track:1b64bae2b5d61b46803a7ca0db8183b9fa6b5d0d8fc8f6b845ae5fe83b64aa55` |
+| 1 | `theorem` | [literal_record_clock_strict_mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExplicitGeometryOfTheCompleteTwoModeNativeRecordPartition.lean/declarations/literal-record-clock-strict-mono.md) | 18 | `result-track:3e88602e39ef7e3f0e9c68afb415fcf4c2c4f5f48bff815c0d5ad81549a8f3fb` |
+| 2 | `theorem` | [literal_record_intervals_disjoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExplicitGeometryOfTheCompleteTwoModeNativeRecordPartition.lean/declarations/literal-record-intervals-disjoint.md) | 25 | `result-track:005f318bf804e067b040178876fee0d9ab975d6d66794b8dd804c97edf49696a` |
+| 3 | `theorem` | [literal_record_interval_tail_containment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExplicitGeometryOfTheCompleteTwoModeNativeRecordPartition.lean/declarations/literal-record-interval-tail-containment.md) | 34 | `result-track:1b64bae2b5d61b46803a7ca0db8183b9fa6b5d0d8fc8f6b845ae5fe83b64aa55` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

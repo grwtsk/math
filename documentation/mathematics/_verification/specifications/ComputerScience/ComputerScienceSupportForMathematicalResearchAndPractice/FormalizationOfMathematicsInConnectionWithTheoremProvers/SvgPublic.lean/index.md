@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SvgPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SvgPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SvgPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SvgPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [frame](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SvgPublic.lean/declarations/frame.md) | 10 | `declaration-track:26ba97b68ff7b90d8b741fc3edfb0fb5f6f4000f4ac375d2d2f7ab9e48891f37` |
-| 2 | `def` | [github](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SvgPublic.lean/declarations/github.md) | 17 | `declaration-track:953facc944c1857ab58f03ee109e60739dae59a55b1c665a849aa9e2606ed378` |
-| 3 | `def` | [triangle01](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SvgPublic.lean/declarations/triangle01.md) | 35 | `declaration-track:d7693c7032d4c760174162add56d3e2223ba638735c50cd2239f93c3880d39e4` |
-| 4 | `def` | [cubic01](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SvgPublic.lean/declarations/cubic01.md) | 44 | `declaration-track:204c53d74e56d03198a9b9258227c495f88d5d16853eba8ed9212aba8c1948ca` |
-| 5 | `def` | [svgprims](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SvgPublic.lean/declarations/svgprims.md) | 87 | `declaration-track:93d262e0a3b73da443b53cc849b918e2c6721d4caef2d1cbf25902b45a814c74` |
+| 1 | `def` | [frame](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SvgPublic.lean/declarations/frame.md) | 10 | `declaration-track:26ba97b68ff7b90d8b741fc3edfb0fb5f6f4000f4ac375d2d2f7ab9e48891f37` |
+| 2 | `def` | [github](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SvgPublic.lean/declarations/github.md) | 17 | `declaration-track:953facc944c1857ab58f03ee109e60739dae59a55b1c665a849aa9e2606ed378` |
+| 3 | `def` | [triangle01](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SvgPublic.lean/declarations/triangle01.md) | 35 | `declaration-track:d7693c7032d4c760174162add56d3e2223ba638735c50cd2239f93c3880d39e4` |
+| 4 | `def` | [cubic01](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SvgPublic.lean/declarations/cubic01.md) | 44 | `declaration-track:204c53d74e56d03198a9b9258227c495f88d5d16853eba8ed9212aba8c1948ca` |
+| 5 | `def` | [svgprims](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SvgPublic.lean/declarations/svgprims.md) | 87 | `declaration-track:93d262e0a3b73da443b53cc849b918e2c6721d4caef2d1cbf25902b45a814c74` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

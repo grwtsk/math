@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PostSurgeryValidationNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PostSurgeryValidationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PostSurgeryValidationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PostSurgeryValidationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PostSurgeryValidation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PostSurgeryValidationNamespaced.lean/declarations/postsurgeryvalidation.md) | 22 | `declaration-track:1573799d2a6f20542d0d1df6bc7f6bb78af21e9c06f657400a97817ade0e5192` |
-| 2 | `def` | [PostSurgeryValidation.Passes](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PostSurgeryValidationNamespaced.lean/declarations/postsurgeryvalidation-passes.md) | 35 | `declaration-track:28b9f276c19b9d6503de2dd9f2f9bf93f85f15d4cadaad6b7d1b31474aea8f23` |
-| 3 | `structure` | [ValidatedSurgery](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PostSurgeryValidationNamespaced.lean/declarations/validatedsurgery.md) | 48 | `declaration-track:d2b2b743832e06c3554edbf5e94d692e8682dc5eb74670f08924e2d9e2496c12` |
-| 4 | `theorem` | [proof_regression_blocks_validation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PostSurgeryValidationNamespaced.lean/declarations/proof-regression-blocks-validation.md) | 55 | `result-track:0284206cd0b388e0d49a0f5819abb7acf9e392e37839377ae72557217ecf0e64` |
-| 5 | `theorem` | [rollback_failure_blocks_validation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PostSurgeryValidationNamespaced.lean/declarations/rollback-failure-blocks-validation.md) | 67 | `result-track:b8cd0f4f9338c737833dc02c53b67906ae9e6be92c830cbbb3a1b7f9cd44b9e8` |
+| 1 | `structure` | [PostSurgeryValidation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PostSurgeryValidationNamespaced.lean/declarations/postsurgeryvalidation.md) | 22 | `declaration-track:1573799d2a6f20542d0d1df6bc7f6bb78af21e9c06f657400a97817ade0e5192` |
+| 2 | `def` | [PostSurgeryValidation.Passes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PostSurgeryValidationNamespaced.lean/declarations/postsurgeryvalidation-passes.md) | 35 | `declaration-track:28b9f276c19b9d6503de2dd9f2f9bf93f85f15d4cadaad6b7d1b31474aea8f23` |
+| 3 | `structure` | [ValidatedSurgery](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PostSurgeryValidationNamespaced.lean/declarations/validatedsurgery.md) | 48 | `declaration-track:d2b2b743832e06c3554edbf5e94d692e8682dc5eb74670f08924e2d9e2496c12` |
+| 4 | `theorem` | [proof_regression_blocks_validation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PostSurgeryValidationNamespaced.lean/declarations/proof-regression-blocks-validation.md) | 55 | `result-track:0284206cd0b388e0d49a0f5819abb7acf9e392e37839377ae72557217ecf0e64` |
+| 5 | `theorem` | [rollback_failure_blocks_validation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PostSurgeryValidationNamespaced.lean/declarations/rollback-failure-blocks-validation.md) | 67 | `result-track:b8cd0f4f9338c737833dc02c53b67906ae9e6be92c830cbbb3a1b7f9cd44b9e8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/UnramifiedFieldNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/UnramifiedFieldNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UnramifiedFieldNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UnramifiedFieldNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,13 +61,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [of_isSeparable](../../../../CommutativeAlgebra/UnramifiedFieldNamespaced.lean/declarations/of-isseparable.md) | 50 | `result-track:65dc66b434fc9e1cd18ab10519011c0d705292bb179c8cb51e091a65efa9bb4e` |
-| 2 | `theorem` | [bijective_of_isAlgClosed_of_isLocalRing](../../../../CommutativeAlgebra/UnramifiedFieldNamespaced.lean/declarations/bijective-of-isalgclosed-of-islocalring.md) | 67 | `result-track:afc5fdbb5aaf8f33cac69427f08da526cd83bf4c7d038407039fbffb111f376b` |
-| 3 | `theorem` | [isField_of_isAlgClosed_of_isLocalRing](../../../../CommutativeAlgebra/UnramifiedFieldNamespaced.lean/declarations/isfield-of-isalgclosed-of-islocalring.md) | 117 | `result-track:a951f28154952896cad9de2e4f3e7fe47c69e3df6fd6080d3ff91e0139a22a82` |
-| 4 | `theorem` | [isReduced_of_field](../../../../CommutativeAlgebra/UnramifiedFieldNamespaced.lean/declarations/isreduced-of-field.md) | 135 | `result-track:d94b60eab5eab99cd89a1c0d60daffe099578394ddf821ab998177cd5c31cc37` |
-| 5 | `theorem` | [range_eq_top_of_isPurelyInseparable](../../../../CommutativeAlgebra/UnramifiedFieldNamespaced.lean/declarations/range-eq-top-of-ispurelyinseparable.md) | 166 | `result-track:6fef497d868c9d0261b28add5ea19ace94105a05958073161082eb2cd53f39e5` |
-| 6 | `theorem` | [isSeparable](../../../../CommutativeAlgebra/UnramifiedFieldNamespaced.lean/declarations/isseparable.md) | 212 | `result-track:6c52da0e98dbf7738d4c3a0988cabbfde96d950806fa28ac4d1379ab667dfa56` |
-| 7 | `theorem` | [iff_isSeparable](../../../../CommutativeAlgebra/UnramifiedFieldNamespaced.lean/declarations/iff-isseparable.md) | 222 | `result-track:f6269b2a4e99ba795820358e941bd15213d2098d1577d96516dd5c1341915f16` |
+| 1 | `theorem` | [of_isSeparable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UnramifiedFieldNamespaced.lean/declarations/of-isseparable.md) | 50 | `result-track:65dc66b434fc9e1cd18ab10519011c0d705292bb179c8cb51e091a65efa9bb4e` |
+| 2 | `theorem` | [bijective_of_isAlgClosed_of_isLocalRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UnramifiedFieldNamespaced.lean/declarations/bijective-of-isalgclosed-of-islocalring.md) | 67 | `result-track:afc5fdbb5aaf8f33cac69427f08da526cd83bf4c7d038407039fbffb111f376b` |
+| 3 | `theorem` | [isField_of_isAlgClosed_of_isLocalRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UnramifiedFieldNamespaced.lean/declarations/isfield-of-isalgclosed-of-islocalring.md) | 117 | `result-track:a951f28154952896cad9de2e4f3e7fe47c69e3df6fd6080d3ff91e0139a22a82` |
+| 4 | `theorem` | [isReduced_of_field](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UnramifiedFieldNamespaced.lean/declarations/isreduced-of-field.md) | 135 | `result-track:d94b60eab5eab99cd89a1c0d60daffe099578394ddf821ab998177cd5c31cc37` |
+| 5 | `theorem` | [range_eq_top_of_isPurelyInseparable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UnramifiedFieldNamespaced.lean/declarations/range-eq-top-of-ispurelyinseparable.md) | 166 | `result-track:6fef497d868c9d0261b28add5ea19ace94105a05958073161082eb2cd53f39e5` |
+| 6 | `theorem` | [isSeparable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UnramifiedFieldNamespaced.lean/declarations/isseparable.md) | 212 | `result-track:6c52da0e98dbf7738d4c3a0988cabbfde96d950806fa28ac4d1379ab667dfa56` |
+| 7 | `theorem` | [iff_isSeparable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UnramifiedFieldNamespaced.lean/declarations/iff-isseparable.md) | 222 | `result-track:f6269b2a4e99ba795820358e941bd15213d2098d1577d96516dd5c1341915f16` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/UniformlyNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/UniformlyNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/UniformlyNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/UniformlyNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,18 +62,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [isBigO_of_isBigOUniformly](../../../../FunctionalAnalysis/UniformlyNamespaced.lean/declarations/isbigo-of-isbigouniformly.md) | 45 | `result-track:5567da3aac45c961ca0fc902c9d58b04310492f425f25b3e63e1705226faa95a` |
-| 2 | `theorem` | [isBigO_rev_of_isBigOUniformly_rev](../../../../FunctionalAnalysis/UniformlyNamespaced.lean/declarations/isbigo-rev-of-isbigouniformly-rev.md) | 54 | `result-track:5abb99497888f875e56ff4dbe7bcd3d9f1766f0003771b66437ebdf7cb02286b` |
-| 3 | `theorem` | [isTheta_of_isThetaUniformly](../../../../FunctionalAnalysis/UniformlyNamespaced.lean/declarations/istheta-of-isthetauniformly.md) | 63 | `result-track:04d7190c95abeee953e4790c97326cc288fd77291a87eba471aae1fe386315b5` |
-| 4 | `theorem` | [isLittleO_const_fst_atBot](../../../../FunctionalAnalysis/UniformlyNamespaced.lean/declarations/islittleo-const-fst-atbot.md) | 73 | `result-track:27eb918d1696a5e9ba581f66c8eec19b08ecdf9da07669a5b52578f1ec4a064a` |
-| 5 | `theorem` | [isLittleO_const_snd_atBot](../../../../FunctionalAnalysis/UniformlyNamespaced.lean/declarations/islittleo-const-snd-atbot.md) | 80 | `result-track:05be3b9f59d4e7dc698c160bf2dbb58bd556efe5bc5d5cef527de01b7863d704` |
-| 6 | `theorem` | [isLittleO_const_fst_atTop](../../../../FunctionalAnalysis/UniformlyNamespaced.lean/declarations/islittleo-const-fst-attop.md) | 87 | `result-track:904c8e2418f48029fea96e57238821e8a1a11ffdfd12ece9d2d8874536194372` |
-| 7 | `theorem` | [isLittleO_const_snd_atTop](../../../../FunctionalAnalysis/UniformlyNamespaced.lean/declarations/islittleo-const-snd-attop.md) | 94 | `result-track:39e483cb97dbc978b5cf7efc069e48d32cc65d6aedfc6aaa7999120716ca1e21` |
-| 8 | `theorem` | [Uniformly Namespaced](../../../../FunctionalAnalysis/UniformlyNamespaced.lean/declarations/const-isbigowithuniformlyon-iscompact.md) | 113 | `result-track:44ce0d52a59452bbce81bfb30109c7ccec78eb9ed0ea424a165c9a478449467c` |
-| 9 | `theorem` | [Uniformly Namespaced](../../../../FunctionalAnalysis/UniformlyNamespaced.lean/declarations/const-isbigouniformlyon-iscompact.md) | 126 | `result-track:9841d8d6feb2054082c2fa9dc6ca2c9694a6a0f8e4697d62cc19d1699342e419` |
-| 10 | `theorem` | [Uniformly Namespaced](../../../../FunctionalAnalysis/UniformlyNamespaced.lean/declarations/const-isbigowithuniformlyon-iscompact-rev.md) | 139 | `result-track:e60ca4c4b2547ebaa10fe519860e2d77d4587baf63f8091bd0487e11c5d769d5` |
-| 11 | `theorem` | [Uniformly Namespaced](../../../../FunctionalAnalysis/UniformlyNamespaced.lean/declarations/const-isbigouniformlyon-iscompact-rev.md) | 156 | `result-track:5583669e86a29ee7487d8ea24153d919eb2469e82c6d74885d5878c875d091ab` |
-| 12 | `theorem` | [Uniformly Namespaced](../../../../FunctionalAnalysis/UniformlyNamespaced.lean/declarations/const-isthetauniformlyon-iscompact.md) | 163 | `result-track:c840f7c1b7fa1558f9a31c6bbb541cdb28c01811cc4ffe4dfb843284ccbf34b4` |
+| 1 | `theorem` | [isBigO_of_isBigOUniformly](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/UniformlyNamespaced.lean/declarations/isbigo-of-isbigouniformly.md) | 45 | `result-track:5567da3aac45c961ca0fc902c9d58b04310492f425f25b3e63e1705226faa95a` |
+| 2 | `theorem` | [isBigO_rev_of_isBigOUniformly_rev](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/UniformlyNamespaced.lean/declarations/isbigo-rev-of-isbigouniformly-rev.md) | 54 | `result-track:5abb99497888f875e56ff4dbe7bcd3d9f1766f0003771b66437ebdf7cb02286b` |
+| 3 | `theorem` | [isTheta_of_isThetaUniformly](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/UniformlyNamespaced.lean/declarations/istheta-of-isthetauniformly.md) | 63 | `result-track:04d7190c95abeee953e4790c97326cc288fd77291a87eba471aae1fe386315b5` |
+| 4 | `theorem` | [isLittleO_const_fst_atBot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/UniformlyNamespaced.lean/declarations/islittleo-const-fst-atbot.md) | 73 | `result-track:27eb918d1696a5e9ba581f66c8eec19b08ecdf9da07669a5b52578f1ec4a064a` |
+| 5 | `theorem` | [isLittleO_const_snd_atBot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/UniformlyNamespaced.lean/declarations/islittleo-const-snd-atbot.md) | 80 | `result-track:05be3b9f59d4e7dc698c160bf2dbb58bd556efe5bc5d5cef527de01b7863d704` |
+| 6 | `theorem` | [isLittleO_const_fst_atTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/UniformlyNamespaced.lean/declarations/islittleo-const-fst-attop.md) | 87 | `result-track:904c8e2418f48029fea96e57238821e8a1a11ffdfd12ece9d2d8874536194372` |
+| 7 | `theorem` | [isLittleO_const_snd_atTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/UniformlyNamespaced.lean/declarations/islittleo-const-snd-attop.md) | 94 | `result-track:39e483cb97dbc978b5cf7efc069e48d32cc65d6aedfc6aaa7999120716ca1e21` |
+| 8 | `theorem` | [Uniformly Namespaced](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/UniformlyNamespaced.lean/declarations/const-isbigowithuniformlyon-iscompact.md) | 113 | `result-track:44ce0d52a59452bbce81bfb30109c7ccec78eb9ed0ea424a165c9a478449467c` |
+| 9 | `theorem` | [Uniformly Namespaced](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/UniformlyNamespaced.lean/declarations/const-isbigouniformlyon-iscompact.md) | 126 | `result-track:9841d8d6feb2054082c2fa9dc6ca2c9694a6a0f8e4697d62cc19d1699342e419` |
+| 10 | `theorem` | [Uniformly Namespaced](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/UniformlyNamespaced.lean/declarations/const-isbigowithuniformlyon-iscompact-rev.md) | 139 | `result-track:e60ca4c4b2547ebaa10fe519860e2d77d4587baf63f8091bd0487e11c5d769d5` |
+| 11 | `theorem` | [Uniformly Namespaced](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/UniformlyNamespaced.lean/declarations/const-isbigouniformlyon-iscompact-rev.md) | 156 | `result-track:5583669e86a29ee7487d8ea24153d919eb2469e82c6d74885d5878c875d091ab` |
+| 12 | `theorem` | [Uniformly Namespaced](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/UniformlyNamespaced.lean/declarations/const-isthetauniformlyon-iscompact.md) | 163 | `result-track:c840f7c1b7fa1558f9a31c6bbb541cdb28c01811cc4ffe4dfb843284ccbf34b4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

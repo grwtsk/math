@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ModePlan.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ModePlan.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ModePlan.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ModePlan.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [TieBreaker](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ModePlan.lean/declarations/tiebreaker.md) | 12 | `declaration-track:ff6382d40a907ab38f02e6c64a06e87fb5e893fb9c4d9b6d83a8aa3be2044009` |
-| 2 | `inductive` | [TieBreakerAllowed](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ModePlan.lean/declarations/tiebreakerallowed.md) | 17 | `declaration-track:c03e2bf0bd4dc1107708b651bc2f17d0635a77b282ea4b7efe9ae7783fe8c8d1` |
-| 3 | `structure` | [ModePlan](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ModePlan.lean/declarations/modeplan.md) | 28 | `declaration-track:62d2d6b436026cf3ef0f484bbaa311f250c3f30fef4ef8bffb99f705ef14f862` |
-| 4 | `def` | [canonicalPrimaryMode](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ModePlan.lean/declarations/canonicalprimarymode.md) | 37 | `declaration-track:cc859c887ba357e3375c40b75047c9293f7bb418e6cee3dd4fff62059b22e909` |
-| 5 | `theorem` | [canonicalPrimaryMode_supports](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ModePlan.lean/declarations/canonicalprimarymode-supports.md) | 50 | `result-track:bb597b8227e89882fd7a269b01330cc4af9e03e498b3ceacfea2a1f8ed733828` |
-| 6 | `structure` | [ModeProfileFamily](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ModePlan.lean/declarations/modeprofilefamily.md) | 55 | `declaration-track:0e1658ca56182a138b6d9e174d8edc041be906367f21b0c28d26f95ac139d18d` |
+| 1 | `inductive` | [TieBreaker](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ModePlan.lean/declarations/tiebreaker.md) | 12 | `declaration-track:ff6382d40a907ab38f02e6c64a06e87fb5e893fb9c4d9b6d83a8aa3be2044009` |
+| 2 | `inductive` | [TieBreakerAllowed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ModePlan.lean/declarations/tiebreakerallowed.md) | 17 | `declaration-track:c03e2bf0bd4dc1107708b651bc2f17d0635a77b282ea4b7efe9ae7783fe8c8d1` |
+| 3 | `structure` | [ModePlan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ModePlan.lean/declarations/modeplan.md) | 28 | `declaration-track:62d2d6b436026cf3ef0f484bbaa311f250c3f30fef4ef8bffb99f705ef14f862` |
+| 4 | `def` | [canonicalPrimaryMode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ModePlan.lean/declarations/canonicalprimarymode.md) | 37 | `declaration-track:cc859c887ba357e3375c40b75047c9293f7bb418e6cee3dd4fff62059b22e909` |
+| 5 | `theorem` | [canonicalPrimaryMode_supports](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ModePlan.lean/declarations/canonicalprimarymode-supports.md) | 50 | `result-track:bb597b8227e89882fd7a269b01330cc4af9e03e498b3ceacfea2a1f8ed733828` |
+| 6 | `structure` | [ModeProfileFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ModePlan.lean/declarations/modeprofilefamily.md) | 55 | `declaration-track:0e1658ca56182a138b6d9e174d8edc041be906367f21b0c28d26f95ac139d18d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

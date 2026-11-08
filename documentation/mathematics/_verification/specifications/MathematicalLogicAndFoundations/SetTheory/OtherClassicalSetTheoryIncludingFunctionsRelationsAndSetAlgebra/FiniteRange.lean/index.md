@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/FiniteRange.lean/index.md) · [Full source](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/FiniteRange.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/FiniteRange.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/FiniteRange.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [fintypeRange](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/FiniteRange.lean/declarations/fintyperange.md) | 39 | `declaration-track:870883d8648f9670169dfde67eac9b951ac3643dff9fef836ef65b3ebeb77520` |
-| 2 | `instance` | [finite_range](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/FiniteRange.lean/declarations/finite-range.md) | 60 | `declaration-track:d7ea748f61da820748b103bf02977147d1ffe0f07bd54975109ab58a76b7031c` |
-| 3 | `instance` | [finite_replacement](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/FiniteRange.lean/declarations/finite-replacement.md) | 65 | `declaration-track:292720b5a32f2d12c971ede420ed83965c97562808bf5935cf661c9072b1f584` |
-| 4 | `theorem` | [finite_range](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/FiniteRange.lean/declarations/finite-range-source-edition-2.md) | 85 | `result-track:dfb5454ad8bf7a26f17a0c8abd3f3c877b141e6b545044fc22c2e2f59ed232c0` |
-| 5 | `theorem` | [Finite.dependent_image](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/FiniteRange.lean/declarations/finite-dependent-image.md) | 88 | `result-track:53d9969b9811f0820c5d26280668c4381d7d68300de85c5fb95f4de0507a862f` |
+| 1 | `instance` | [fintypeRange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/FiniteRange.lean/declarations/fintyperange.md) | 39 | `declaration-track:870883d8648f9670169dfde67eac9b951ac3643dff9fef836ef65b3ebeb77520` |
+| 2 | `instance` | [finite_range](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/FiniteRange.lean/declarations/finite-range.md) | 60 | `declaration-track:d7ea748f61da820748b103bf02977147d1ffe0f07bd54975109ab58a76b7031c` |
+| 3 | `instance` | [finite_replacement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/FiniteRange.lean/declarations/finite-replacement.md) | 65 | `declaration-track:292720b5a32f2d12c971ede420ed83965c97562808bf5935cf661c9072b1f584` |
+| 4 | `theorem` | [finite_range](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/FiniteRange.lean/declarations/finite-range-source-edition-2.md) | 85 | `result-track:dfb5454ad8bf7a26f17a0c8abd3f3c877b141e6b545044fc22c2e2f59ed232c0` |
+| 5 | `theorem` | [Finite.dependent_image](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/FiniteRange.lean/declarations/finite-dependent-image.md) | 88 | `result-track:53d9969b9811f0820c5d26280668c4381d7d68300de85c5fb95f4de0507a862f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

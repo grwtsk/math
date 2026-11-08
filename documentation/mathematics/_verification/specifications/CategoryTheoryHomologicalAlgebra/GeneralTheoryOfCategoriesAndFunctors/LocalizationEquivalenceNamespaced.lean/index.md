@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationEquivalenceNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationEquivalenceNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationEquivalenceNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationEquivalenceNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [equivalence](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationEquivalenceNamespaced.lean/declarations/equivalence.md) | 48 | `declaration-track:ab998649476fe880ba9f1caa922011ec3074fa2d69fdec67604027225de26c87` |
-| 2 | `lemma` | [equivalence_counitIso_app](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationEquivalenceNamespaced.lean/declarations/equivalence-counitiso-app.md) | 53 | `result-track:7026733ec9c35614577569943864d77c22f2ff3a390f26cc1395b073592fc84c` |
-| 3 | `lemma` | [isEquivalence](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationEquivalenceNamespaced.lean/declarations/isequivalence.md) | 64 | `result-track:522179760801c8dfb5ec9a004cdfd6bc362eb41f36c2b6f617443deb50c0296c` |
-| 4 | `lemma` | [of_equivalence_source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationEquivalenceNamespaced.lean/declarations/of-equivalence-source.md) | 76 | `result-track:48eca5156c8a74fe8830c608a201c40962fd8451b045e6850650a06a333b0657` |
-| 5 | `lemma` | [of_equivalences](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationEquivalenceNamespaced.lean/declarations/of-equivalences.md) | 108 | `result-track:cc4c95dbb777ebdf12fb3512b027de931eeb6cce18968d6855380d80d0448853` |
+| 1 | `def` | [equivalence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationEquivalenceNamespaced.lean/declarations/equivalence.md) | 48 | `declaration-track:ab998649476fe880ba9f1caa922011ec3074fa2d69fdec67604027225de26c87` |
+| 2 | `lemma` | [equivalence_counitIso_app](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationEquivalenceNamespaced.lean/declarations/equivalence-counitiso-app.md) | 53 | `result-track:7026733ec9c35614577569943864d77c22f2ff3a390f26cc1395b073592fc84c` |
+| 3 | `lemma` | [isEquivalence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationEquivalenceNamespaced.lean/declarations/isequivalence.md) | 64 | `result-track:522179760801c8dfb5ec9a004cdfd6bc362eb41f36c2b6f617443deb50c0296c` |
+| 4 | `lemma` | [of_equivalence_source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationEquivalenceNamespaced.lean/declarations/of-equivalence-source.md) | 76 | `result-track:48eca5156c8a74fe8830c608a201c40962fd8451b045e6850650a06a333b0657` |
+| 5 | `lemma` | [of_equivalences](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationEquivalenceNamespaced.lean/declarations/of-equivalences.md) | 108 | `result-track:cc4c95dbb777ebdf12fb3512b027de931eeb6cce18968d6855380d80d0448853` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

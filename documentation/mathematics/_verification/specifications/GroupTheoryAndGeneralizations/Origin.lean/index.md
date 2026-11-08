@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/Origin.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/Origin.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Origin.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Origin.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CertifiedOriginSystem](../../../../GroupTheoryAndGeneralizations/Origin.lean/declarations/certifiedoriginsystem.md) | 15 | `declaration-track:d7bc4220cb7d4e59963a0670d5781fae7fe17486e7e6bb885582db8988db0e09` |
-| 2 | `def` | [CertifiedOriginSystem.origin](../../../../GroupTheoryAndGeneralizations/Origin.lean/declarations/certifiedoriginsystem-origin.md) | 28 | `declaration-track:4be4f63ffcc10d29a2f5221f030acd644f0308d8b0a5a5843dcc6e6ac2909a38` |
-| 3 | `def` | [originLayer](../../../../GroupTheoryAndGeneralizations/Origin.lean/declarations/originlayer.md) | 38 | `declaration-track:8db4a4aef4230cfb0efeb146dce9c180359cd1eb131541c97382c8b44fce3e7e` |
-| 4 | `theorem` | [originLayer_coherent](../../../../GroupTheoryAndGeneralizations/Origin.lean/declarations/originlayer-coherent.md) | 57 | `result-track:486d52982e0d1f1a86dddf342ad308c80edbef5e69a8330f7b4932b8db1b1787` |
+| 1 | `structure` | [CertifiedOriginSystem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Origin.lean/declarations/certifiedoriginsystem.md) | 15 | `declaration-track:d7bc4220cb7d4e59963a0670d5781fae7fe17486e7e6bb885582db8988db0e09` |
+| 2 | `def` | [CertifiedOriginSystem.origin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Origin.lean/declarations/certifiedoriginsystem-origin.md) | 28 | `declaration-track:4be4f63ffcc10d29a2f5221f030acd644f0308d8b0a5a5843dcc6e6ac2909a38` |
+| 3 | `def` | [originLayer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Origin.lean/declarations/originlayer.md) | 38 | `declaration-track:8db4a4aef4230cfb0efeb146dce9c180359cd1eb131541c97382c8b44fce3e7e` |
+| 4 | `theorem` | [originLayer_coherent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Origin.lean/declarations/originlayer-coherent.md) | 57 | `result-track:486d52982e0d1f1a86dddf342ad308c80edbef5e69a8330f7b4932b8db1b1787` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

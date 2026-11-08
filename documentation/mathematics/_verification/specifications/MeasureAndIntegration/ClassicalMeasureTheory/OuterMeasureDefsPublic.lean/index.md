@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/OuterMeasureDefsPublic.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/OuterMeasureDefsPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/OuterMeasureDefsPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/OuterMeasureDefsPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [OuterMeasure](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/OuterMeasureDefsPublic.lean/declarations/outermeasure.md) | 51 | `declaration-track:60cb903187044a1b03a075b880c71e88d963299c8ebf71521701bd0abc28f04b` |
-| 2 | `class` | [OuterMeasureClass](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/OuterMeasureDefsPublic.lean/declarations/outermeasureclass.md) | 64 | `declaration-track:f1a1a3c6902b0ddcfd02aba133fab0b2f422aeedf57daed7b1ebfdd8d9bfaf01` |
-| 3 | `instance` | [(anonymous)](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/OuterMeasureDefsPublic.lean/declarations/instance.md) | 75 | `declaration-track:f2aa7d3c003c59637bb9d23bf06a80907b9a3229e190dd1aaad503d0fa78d0dd` |
-| 4 | `theorem` | [measureOf_eq_coe](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/OuterMeasureDefsPublic.lean/declarations/measureof-eq-coe.md) | 79 | `result-track:03f3cca511a828cfe68aa3ec5d274a2c9c54cbda7dd892e8c48c9ded8f28b5d9` |
-| 5 | `theorem` | [coe_mk](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/OuterMeasureDefsPublic.lean/declarations/coe-mk.md) | 80 | `result-track:7bb03e4bc2db2b3683d9c1cecd5c8466d6aae443aefe2284e8587f43a20046db` |
-| 6 | `instance` | [(anonymous)](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/OuterMeasureDefsPublic.lean/declarations/instance-source-edition-2.md) | 82 | `declaration-track:fc7609e1b1eecedf55b472775a73a79ae090daf00115aa1ac78af157f8fb4806` |
+| 1 | `structure` | [OuterMeasure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/OuterMeasureDefsPublic.lean/declarations/outermeasure.md) | 51 | `declaration-track:60cb903187044a1b03a075b880c71e88d963299c8ebf71521701bd0abc28f04b` |
+| 2 | `class` | [OuterMeasureClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/OuterMeasureDefsPublic.lean/declarations/outermeasureclass.md) | 64 | `declaration-track:f1a1a3c6902b0ddcfd02aba133fab0b2f422aeedf57daed7b1ebfdd8d9bfaf01` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/OuterMeasureDefsPublic.lean/declarations/instance.md) | 75 | `declaration-track:f2aa7d3c003c59637bb9d23bf06a80907b9a3229e190dd1aaad503d0fa78d0dd` |
+| 4 | `theorem` | [measureOf_eq_coe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/OuterMeasureDefsPublic.lean/declarations/measureof-eq-coe.md) | 79 | `result-track:03f3cca511a828cfe68aa3ec5d274a2c9c54cbda7dd892e8c48c9ded8f28b5d9` |
+| 5 | `theorem` | [coe_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/OuterMeasureDefsPublic.lean/declarations/coe-mk.md) | 80 | `result-track:7bb03e4bc2db2b3683d9c1cecd5c8466d6aae443aefe2284e8587f43a20046db` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/OuterMeasureDefsPublic.lean/declarations/instance-source-edition-2.md) | 82 | `declaration-track:fc7609e1b1eecedf55b472775a73a79ae090daf00115aa1ac78af157f8fb4806` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

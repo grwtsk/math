@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SignAuditHistoricalSourceEdition2.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SignAuditHistoricalSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SignAuditHistoricalSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SignAuditHistoricalSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.LinearAlgebra.CommonJ`](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CommonJ.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Algebra.LinearAlgebra.CommonJ`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CommonJ.lean/index.md) — import line 1; pinned internal source present.
 - `Lean` — import line 2; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [generic_sign_loop_consumer](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SignAuditHistoricalSourceEdition2.lean/declarations/generic-sign-loop-consumer.md) | 8 | `result-track:01457e80877b7cd379238e55567f187ce5bc2238fc7d5e6e3830bf2a87d6871d` |
-| 2 | `theorem` | [rational_reverse_consumer](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SignAuditHistoricalSourceEdition2.lean/declarations/rational-reverse-consumer.md) | 14 | `result-track:669344a6b8bdcdf975f30d6f1c0b76119566cae9e8562b83dd76a2b4193345ca` |
-| 3 | `example` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SignAuditHistoricalSourceEdition2.lean/declarations/example.md) | 18 | `declaration-track:37d9ba87f363e21542266a61c4ec7b4ce6782943974398e4b68ac6d23089632e` |
-| 4 | `elab` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SignAuditHistoricalSourceEdition2.lean/declarations/elab.md) | 24 | `declaration-track:86a9dc9ed738b9f87ebcf206a538bb0bcd1d44eb1ff3264761415f0eb3bc5e5d` |
+| 1 | `theorem` | [generic_sign_loop_consumer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SignAuditHistoricalSourceEdition2.lean/declarations/generic-sign-loop-consumer.md) | 8 | `result-track:01457e80877b7cd379238e55567f187ce5bc2238fc7d5e6e3830bf2a87d6871d` |
+| 2 | `theorem` | [rational_reverse_consumer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SignAuditHistoricalSourceEdition2.lean/declarations/rational-reverse-consumer.md) | 14 | `result-track:669344a6b8bdcdf975f30d6f1c0b76119566cae9e8562b83dd76a2b4193345ca` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SignAuditHistoricalSourceEdition2.lean/declarations/example.md) | 18 | `declaration-track:37d9ba87f363e21542266a61c4ec7b4ce6782943974398e4b68ac6d23089632e` |
+| 4 | `elab` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SignAuditHistoricalSourceEdition2.lean/declarations/elab.md) | 24 | `declaration-track:86a9dc9ed738b9f87ebcf206a538bb0bcd1d44eb1ff3264761415f0eb3bc5e5d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

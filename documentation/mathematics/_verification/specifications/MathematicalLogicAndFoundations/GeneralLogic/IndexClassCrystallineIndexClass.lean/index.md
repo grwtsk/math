@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IndexClassCrystallineIndexClass.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IndexClassCrystallineIndexClass.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IndexClassCrystallineIndexClass.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IndexClassCrystallineIndexClass.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CrystallineIndexClass](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IndexClassCrystallineIndexClass.lean/declarations/crystallineindexclass.md) | 26 | `declaration-track:85bac4689db9c5d5656e65bd5070435c085df9aa7bb002065705c096f924826e` |
-| 2 | `theorem` | [index_class_represents_formal_index](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IndexClassCrystallineIndexClass.lean/declarations/index-class-represents-formal-index.md) | 38 | `result-track:0040d68c7995069cc8ee6785d96617cfdc46c7772466678576ad8dd07cdd5a66` |
-| 3 | `structure` | [CrystallineIndexClassInWitt](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IndexClassCrystallineIndexClass.lean/declarations/crystallineindexclassinwitt.md) | 51 | `declaration-track:30585cf8cf86b7aaa82db7d5e0098ee1eb2e9f94a01d0b2a187409d13e8c0f4f` |
-| 4 | `theorem` | [crystalline_index_class_in_witt_is_index](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IndexClassCrystallineIndexClass.lean/declarations/crystalline-index-class-in-witt-is-index.md) | 61 | `result-track:76af4e87a6aca33862cf92f142f75f654b1e361ecf1ccdeba11ce3e8b0c9d37d` |
+| 1 | `structure` | [CrystallineIndexClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IndexClassCrystallineIndexClass.lean/declarations/crystallineindexclass.md) | 26 | `declaration-track:85bac4689db9c5d5656e65bd5070435c085df9aa7bb002065705c096f924826e` |
+| 2 | `theorem` | [index_class_represents_formal_index](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IndexClassCrystallineIndexClass.lean/declarations/index-class-represents-formal-index.md) | 38 | `result-track:0040d68c7995069cc8ee6785d96617cfdc46c7772466678576ad8dd07cdd5a66` |
+| 3 | `structure` | [CrystallineIndexClassInWitt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IndexClassCrystallineIndexClass.lean/declarations/crystallineindexclassinwitt.md) | 51 | `declaration-track:30585cf8cf86b7aaa82db7d5e0098ee1eb2e9f94a01d0b2a187409d13e8c0f4f` |
+| 4 | `theorem` | [crystalline_index_class_in_witt_is_index](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IndexClassCrystallineIndexClass.lean/declarations/crystalline-index-class-in-witt-is-index.md) | 61 | `result-track:76af4e87a6aca33862cf92f142f75f654b1e361ecf1ccdeba11ce3e8b0c9d37d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

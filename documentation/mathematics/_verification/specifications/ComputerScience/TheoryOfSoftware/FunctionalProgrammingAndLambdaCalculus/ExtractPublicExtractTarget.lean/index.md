@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ExtractPublicExtractTarget.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ExtractPublicExtractTarget.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ExtractPublicExtractTarget.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ExtractPublicExtractTarget.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ExtractTarget](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ExtractPublicExtractTarget.lean/declarations/extracttarget.md) | 28 | `declaration-track:91c93bf3282c01275be6cf3e29d693aa9909895e0d0b1dc2ea35b00c04f1c9e8` |
-| 2 | `def` | [blastExtract](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ExtractPublicExtractTarget.lean/declarations/blastextract.md) | 33 | `declaration-track:ff8921128fb239bc742c9bb8e00ba3c517004d4942a152b93f05af6931ee2258` |
-| 3 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ExtractPublicExtractTarget.lean/declarations/instance.md) | 51 | `declaration-track:7a4f41a87882e7917b5a7415520b8e604dbc4c36cd101da77eb45cc063556777` |
+| 1 | `structure` | [ExtractTarget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ExtractPublicExtractTarget.lean/declarations/extracttarget.md) | 28 | `declaration-track:91c93bf3282c01275be6cf3e29d693aa9909895e0d0b1dc2ea35b00c04f1c9e8` |
+| 2 | `def` | [blastExtract](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ExtractPublicExtractTarget.lean/declarations/blastextract.md) | 33 | `declaration-track:ff8921128fb239bc742c9bb8e00ba3c517004d4942a152b93f05af6931ee2258` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ExtractPublicExtractTarget.lean/declarations/instance.md) | 51 | `declaration-track:7a4f41a87882e7917b5a7415520b8e604dbc4c36cd101da77eb45cc063556777` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExternalPNTAndChebyshevThetaPortControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExternalPNTAndChebyshevThetaPortControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExternalPNTAndChebyshevThetaPortControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExternalPNTAndChebyshevThetaPortControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.ExternalPNTAndChebyshevThetaPort`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExternalPNTAndChebyshevThetaPort.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.ExternalPNTAndChebyshevThetaPort`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExternalPNTAndChebyshevThetaPort.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Tactic` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [replay_sourcePrimeLogSum_eq_localTheta](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExternalPNTAndChebyshevThetaPortControls.lean/declarations/replay-sourceprimelogsum-eq-localtheta.md) | 16 | `result-track:1e132175eee030aacb3430858b213c0a2a2bbb60ad1bf9842c1d14252527dbad` |
-| 2 | `theorem` | [replay_PNTAndAsymptotic_iff_namedThetaPNT](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExternalPNTAndChebyshevThetaPortControls.lean/declarations/replay-pntandasymptotic-iff-namedthetapnt.md) | 22 | `result-track:49981157062b262076965c53e8599c0f5242403468ff96c3cd8eb3349f5aedd8` |
-| 3 | `theorem` | [no_integerPsiCapacity_of_externalPNTAnd_proof](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExternalPNTAndChebyshevThetaPortControls.lean/declarations/no-integerpsicapacity-of-externalpntand-proof.md) | 29 | `result-track:eaac877ca652a8486521cc25cec4376ce72186b4041708d0b71a48b597cc5bd4` |
-| 4 | `def` | [remainingSourcePortObligations](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExternalPNTAndChebyshevThetaPortControls.lean/declarations/remainingsourceportobligations.md) | 37 | `declaration-track:cc8007a6ed6b5ac16bd3eba9412ede21fcc476c3c590223e1d0dd4d908bdc8ab` |
-| 5 | `def` | [prohibitedPromotions](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExternalPNTAndChebyshevThetaPortControls.lean/declarations/prohibitedpromotions.md) | 45 | `declaration-track:66d03fec0501aefb45fa9c867b9b6192ada1ffe850f17fb11237731d6214041a` |
+| 1 | `theorem` | [replay_sourcePrimeLogSum_eq_localTheta](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExternalPNTAndChebyshevThetaPortControls.lean/declarations/replay-sourceprimelogsum-eq-localtheta.md) | 16 | `result-track:1e132175eee030aacb3430858b213c0a2a2bbb60ad1bf9842c1d14252527dbad` |
+| 2 | `theorem` | [replay_PNTAndAsymptotic_iff_namedThetaPNT](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExternalPNTAndChebyshevThetaPortControls.lean/declarations/replay-pntandasymptotic-iff-namedthetapnt.md) | 22 | `result-track:49981157062b262076965c53e8599c0f5242403468ff96c3cd8eb3349f5aedd8` |
+| 3 | `theorem` | [no_integerPsiCapacity_of_externalPNTAnd_proof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExternalPNTAndChebyshevThetaPortControls.lean/declarations/no-integerpsicapacity-of-externalpntand-proof.md) | 29 | `result-track:eaac877ca652a8486521cc25cec4376ce72186b4041708d0b71a48b597cc5bd4` |
+| 4 | `def` | [remainingSourcePortObligations](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExternalPNTAndChebyshevThetaPortControls.lean/declarations/remainingsourceportobligations.md) | 37 | `declaration-track:cc8007a6ed6b5ac16bd3eba9412ede21fcc476c3c590223e1d0dd4d908bdc8ab` |
+| 5 | `def` | [prohibitedPromotions](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ExternalPNTAndChebyshevThetaPortControls.lean/declarations/prohibitedpromotions.md) | 45 | `declaration-track:66d03fec0501aefb45fa9c867b9b6192ada1ffe850f17fb11237731d6214041a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

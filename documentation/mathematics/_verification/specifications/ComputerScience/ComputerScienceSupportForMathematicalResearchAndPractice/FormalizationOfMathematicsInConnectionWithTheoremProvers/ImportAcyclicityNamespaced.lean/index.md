@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ImportAcyclicityNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ImportAcyclicityNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ImportAcyclicityNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ImportAcyclicityNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ImportClosureWitness](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ImportAcyclicityNamespaced.lean/declarations/importclosurewitness-source-edition-2.md) | 15 | `declaration-track:0a8a6016998b8d4d70fddae25b1b145a591c551224786ec59b3345d33775b84f` |
-| 2 | `def` | [importClosureWitness](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ImportAcyclicityNamespaced.lean/declarations/importclosurewitness.md) | 20 | `declaration-track:057657d9a447c2d8af166d8485fb20d0585738d2cf84d946ffe7b911ec667e23` |
-| 3 | `theorem` | [importClosureWitness_root](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ImportAcyclicityNamespaced.lean/declarations/importclosurewitness-root.md) | 25 | `result-track:4d1ed872a18feeb28245bd4a5d89c90d1db1d3c3daa17d47045c06f74491e2f1` |
+| 1 | `structure` | [ImportClosureWitness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ImportAcyclicityNamespaced.lean/declarations/importclosurewitness-source-edition-2.md) | 15 | `declaration-track:0a8a6016998b8d4d70fddae25b1b145a591c551224786ec59b3345d33775b84f` |
+| 2 | `def` | [importClosureWitness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ImportAcyclicityNamespaced.lean/declarations/importclosurewitness.md) | 20 | `declaration-track:057657d9a447c2d8af166d8485fb20d0585738d2cf84d946ffe7b911ec667e23` |
+| 3 | `theorem` | [importClosureWitness_root](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ImportAcyclicityNamespaced.lean/declarations/importclosurewitness-root.md) | 25 | `result-track:4d1ed872a18feeb28245bd4a5d89c90d1db1d3c3daa17d47045c06f74491e2f1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

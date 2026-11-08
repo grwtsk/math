@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ReverseExplicitFormulaPsiGate.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ReverseExplicitFormulaPsiGate.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ReverseExplicitFormulaPsiGate.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ReverseExplicitFormulaPsiGate.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,9 +46,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.GradedPsiThresholdTransport`](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/GradedPsiThresholdTransport.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThresholdDescentProgram`](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/QuadraticThresholdDescentProgram.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.DyadicThetaVonKochAdapter`](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicThetaVonKochAdapter.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.GradedPsiThresholdTransport`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/GradedPsiThresholdTransport.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThresholdDescentProgram`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/QuadraticThresholdDescentProgram.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.DyadicThetaVonKochAdapter`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicThetaVonKochAdapter.lean/index.md) — import line 6; pinned internal source present.
 - `Mathlib.Tactic` — import line 7; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ClassicalPsiPowerLogSqBound](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ReverseExplicitFormulaPsiGate.lean/declarations/classicalpsipowerlogsqbound.md) | 32 | `declaration-track:c6e8ccfd18a2f86ca91c9d104d6c2ba605f1d944835d6cb666b92bdf42b72ad1` |
-| 2 | `theorem` | [classicalPsiPowerLogSqBound_to_psiAtThreshold](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ReverseExplicitFormulaPsiGate.lean/declarations/classicalpsipowerlogsqbound-to-psiatthreshold.md) | 38 | `result-track:2d8d9b74c4bc71b57907535992454303f4de759881ae04a2fde831361bee3217` |
-| 3 | `def` | [ZeroFreeToPsiPowerLogSqAt](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ReverseExplicitFormulaPsiGate.lean/declarations/zerofreetopsipowerlogsqat.md) | 168 | `declaration-track:8913db155630a649bdcf6650cbf5dd6859c7cd1aa58c00fa912b4f28c744bf9b` |
-| 4 | `theorem` | [zeroFree_reversePsiGate_to_theta](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ReverseExplicitFormulaPsiGate.lean/declarations/zerofree-reversepsigate-to-theta.md) | 172 | `result-track:bfabc5087852b4f567f2a59076df355addd22583085b020c4475ea1f3e179529` |
-| 5 | `theorem` | [riemannHypothesis_of_acceptedSevenEighths_reversePsi_quadratic](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ReverseExplicitFormulaPsiGate.lean/declarations/riemannhypothesis-of-acceptedseveneighths-reversepsi-quadratic.md) | 182 | `result-track:04cf9b917d90634dbe5cb726f210b15739ea8b65b1dc4e0c77b7130cc3136881` |
+| 1 | `def` | [ClassicalPsiPowerLogSqBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ReverseExplicitFormulaPsiGate.lean/declarations/classicalpsipowerlogsqbound.md) | 32 | `declaration-track:c6e8ccfd18a2f86ca91c9d104d6c2ba605f1d944835d6cb666b92bdf42b72ad1` |
+| 2 | `theorem` | [classicalPsiPowerLogSqBound_to_psiAtThreshold](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ReverseExplicitFormulaPsiGate.lean/declarations/classicalpsipowerlogsqbound-to-psiatthreshold.md) | 38 | `result-track:2d8d9b74c4bc71b57907535992454303f4de759881ae04a2fde831361bee3217` |
+| 3 | `def` | [ZeroFreeToPsiPowerLogSqAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ReverseExplicitFormulaPsiGate.lean/declarations/zerofreetopsipowerlogsqat.md) | 168 | `declaration-track:8913db155630a649bdcf6650cbf5dd6859c7cd1aa58c00fa912b4f28c744bf9b` |
+| 4 | `theorem` | [zeroFree_reversePsiGate_to_theta](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ReverseExplicitFormulaPsiGate.lean/declarations/zerofree-reversepsigate-to-theta.md) | 172 | `result-track:bfabc5087852b4f567f2a59076df355addd22583085b020c4475ea1f3e179529` |
+| 5 | `theorem` | [riemannHypothesis_of_acceptedSevenEighths_reversePsi_quadratic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ReverseExplicitFormulaPsiGate.lean/declarations/riemannhypothesis-of-acceptedseveneighths-reversepsi-quadratic.md) | 182 | `result-track:04cf9b917d90634dbe5cb726f210b15739ea8b65b1dc4e0c77b7130cc3136881` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

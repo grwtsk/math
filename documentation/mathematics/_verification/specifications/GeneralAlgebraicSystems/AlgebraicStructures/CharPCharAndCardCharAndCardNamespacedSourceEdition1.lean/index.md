@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPCharAndCardCharAndCardNamespacedSourceEdition1.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPCharAndCardCharAndCardNamespacedSourceEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPCharAndCardCharAndCardNamespacedSourceEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPCharAndCardCharAndCardNamespacedSourceEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [isUnit_iff_not_dvd_char_of_ringChar_ne_zero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPCharAndCardCharAndCardNamespacedSourceEdition1.lean/declarations/isunit-iff-not-dvd-char-of-ringchar-ne-zero.md) | 31 | `result-track:cd6aea8a949b61a925bee242b3ca279240ca7885dd912058859c3d8f32f63fda` |
-| 2 | `theorem` | [isUnit_iff_not_dvd_char](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPCharAndCardCharAndCardNamespacedSourceEdition1.lean/declarations/isunit-iff-not-dvd-char.md) | 59 | `result-track:4449c5b2b1bdf99fb9d067a3a8c7f01486294f3d5ca8192bd393b5c895986e8b` |
-| 3 | `theorem` | [prime_dvd_char_iff_dvd_card](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPCharAndCardCharAndCardNamespacedSourceEdition1.lean/declarations/prime-dvd-char-iff-dvd-card.md) | 66 | `result-track:9bdb06e5fba14b598869ae909a9d7a9bfaa852a257b8d10183e251a43b3865dc` |
-| 4 | `theorem` | [not_isUnit_prime_of_dvd_card](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPCharAndCardCharAndCardNamespacedSourceEdition1.lean/declarations/not-isunit-prime-of-dvd-card.md) | 87 | `result-track:8aa0e9262a4a32a6416dc7408bbc2d3e8de1defe6d205fb669b6581fe6cdf861` |
+| 1 | `theorem` | [isUnit_iff_not_dvd_char_of_ringChar_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPCharAndCardCharAndCardNamespacedSourceEdition1.lean/declarations/isunit-iff-not-dvd-char-of-ringchar-ne-zero.md) | 31 | `result-track:cd6aea8a949b61a925bee242b3ca279240ca7885dd912058859c3d8f32f63fda` |
+| 2 | `theorem` | [isUnit_iff_not_dvd_char](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPCharAndCardCharAndCardNamespacedSourceEdition1.lean/declarations/isunit-iff-not-dvd-char.md) | 59 | `result-track:4449c5b2b1bdf99fb9d067a3a8c7f01486294f3d5ca8192bd393b5c895986e8b` |
+| 3 | `theorem` | [prime_dvd_char_iff_dvd_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPCharAndCardCharAndCardNamespacedSourceEdition1.lean/declarations/prime-dvd-char-iff-dvd-card.md) | 66 | `result-track:9bdb06e5fba14b598869ae909a9d7a9bfaa852a257b8d10183e251a43b3865dc` |
+| 4 | `theorem` | [not_isUnit_prime_of_dvd_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPCharAndCardCharAndCardNamespacedSourceEdition1.lean/declarations/not-isunit-prime-of-dvd-card.md) | 87 | `result-track:8aa0e9262a4a32a6416dc7408bbc2d3e8de1defe6d205fb669b6581fe6cdf861` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

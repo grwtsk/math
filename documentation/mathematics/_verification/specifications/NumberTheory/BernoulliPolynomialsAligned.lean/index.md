@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/BernoulliPolynomialsAligned.lean/index.md) · [Full source](../../../../NumberTheory/BernoulliPolynomialsAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/BernoulliPolynomialsAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/BernoulliPolynomialsAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,19 +60,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [bernoulli](../../../../NumberTheory/BernoulliPolynomialsAligned.lean/declarations/bernoulli.md) | 55 | `declaration-track:f0133e62a9b1cc2368e3724d2f23279b16576e275c7ccefa5b3112e3c14dcff5` |
-| 2 | `theorem` | [bernoulli_def](../../../../NumberTheory/BernoulliPolynomialsAligned.lean/declarations/bernoulli-def.md) | 59 | `result-track:2db43082cb8f0ce9dedadc829ba2ac87be878fa89313535f07f39180ead5ef2c` |
-| 3 | `theorem` | [bernoulli_zero](../../../../NumberTheory/BernoulliPolynomialsAligned.lean/declarations/bernoulli-zero.md) | 73 | `result-track:1f921881fb0d7ced7c368be0d2a85eaac4682303c22cc52ce828e8826bd26b16` |
-| 4 | `theorem` | [bernoulli_eval_zero](../../../../NumberTheory/BernoulliPolynomialsAligned.lean/declarations/bernoulli-eval-zero.md) | 77 | `result-track:539a1bcc87899ca72317d5915b5f9b8a242f573370c84af1351d9c4182ee9e96` |
-| 5 | `theorem` | [bernoulli_eval_one](../../../../NumberTheory/BernoulliPolynomialsAligned.lean/declarations/bernoulli-eval-one.md) | 88 | `result-track:42e4c7b7166990f8106ef7c6a2f20c4dbde1c2aa1bf6e243e75074be3691a764` |
-| 6 | `theorem` | [derivative_bernoulli_add_one](../../../../NumberTheory/BernoulliPolynomialsAligned.lean/declarations/derivative-bernoulli-add-one.md) | 100 | `result-track:49c0bafe0000bba85070cefaf6ced45f8c2404ad559548e575a1baa41fc56f34` |
-| 7 | `theorem` | [derivative_bernoulli](../../../../NumberTheory/BernoulliPolynomialsAligned.lean/declarations/derivative-bernoulli.md) | 114 | `result-track:c91baac53939f8fe3b9b726ff9458275b0db09e74ac4b7bd1ad3e50674d7931a` |
-| 8 | `theorem` | [sum_bernoulli](../../../../NumberTheory/BernoulliPolynomialsAligned.lean/declarations/sum-bernoulli.md) | 122 | `result-track:429bb7c0202ead13ae7c25d83dc42529eec5f79e15b660092feb384836ba6068` |
-| 9 | `theorem` | [bernoulli_eq_sub_sum](../../../../NumberTheory/BernoulliPolynomialsAligned.lean/declarations/bernoulli-eq-sub-sum.md) | 159 | `result-track:658a19edc7d6689e0726eb55d6049cd8db28ec93c165ca37595103edac60ea18` |
-| 10 | `theorem` | [sum_range_pow_eq_bernoulli_sub](../../../../NumberTheory/BernoulliPolynomialsAligned.lean/declarations/sum-range-pow-eq-bernoulli-sub.md) | 167 | `result-track:cba154a6b7073a084c21969573d85cef7aca36b31dd7f224daf6cec92d42eeb1` |
-| 11 | `theorem` | [bernoulli_succ_eval](../../../../NumberTheory/BernoulliPolynomialsAligned.lean/declarations/bernoulli-succ-eval.md) | 186 | `result-track:2c8fe37b1366276bafb4c0aeb86cfa3c7a08e266c55be788345d82fb4b9e06dc` |
-| 12 | `theorem` | [bernoulli_eval_one_add](../../../../NumberTheory/BernoulliPolynomialsAligned.lean/declarations/bernoulli-eval-one-add.md) | 192 | `result-track:e819d03b15b08fc80848d992cf6418defe0332ae53a4ab647aa2afacd2596572` |
-| 13 | `theorem` | [bernoulli_generating_function](../../../../NumberTheory/BernoulliPolynomialsAligned.lean/declarations/bernoulli-generating-function.md) | 225 | `result-track:eddab4eb66ab275b880067cd926e294c78dc2a4461364a0a8a8a397e9f7c5138` |
+| 1 | `def` | [bernoulli](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/BernoulliPolynomialsAligned.lean/declarations/bernoulli.md) | 55 | `declaration-track:f0133e62a9b1cc2368e3724d2f23279b16576e275c7ccefa5b3112e3c14dcff5` |
+| 2 | `theorem` | [bernoulli_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/BernoulliPolynomialsAligned.lean/declarations/bernoulli-def.md) | 59 | `result-track:2db43082cb8f0ce9dedadc829ba2ac87be878fa89313535f07f39180ead5ef2c` |
+| 3 | `theorem` | [bernoulli_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/BernoulliPolynomialsAligned.lean/declarations/bernoulli-zero.md) | 73 | `result-track:1f921881fb0d7ced7c368be0d2a85eaac4682303c22cc52ce828e8826bd26b16` |
+| 4 | `theorem` | [bernoulli_eval_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/BernoulliPolynomialsAligned.lean/declarations/bernoulli-eval-zero.md) | 77 | `result-track:539a1bcc87899ca72317d5915b5f9b8a242f573370c84af1351d9c4182ee9e96` |
+| 5 | `theorem` | [bernoulli_eval_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/BernoulliPolynomialsAligned.lean/declarations/bernoulli-eval-one.md) | 88 | `result-track:42e4c7b7166990f8106ef7c6a2f20c4dbde1c2aa1bf6e243e75074be3691a764` |
+| 6 | `theorem` | [derivative_bernoulli_add_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/BernoulliPolynomialsAligned.lean/declarations/derivative-bernoulli-add-one.md) | 100 | `result-track:49c0bafe0000bba85070cefaf6ced45f8c2404ad559548e575a1baa41fc56f34` |
+| 7 | `theorem` | [derivative_bernoulli](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/BernoulliPolynomialsAligned.lean/declarations/derivative-bernoulli.md) | 114 | `result-track:c91baac53939f8fe3b9b726ff9458275b0db09e74ac4b7bd1ad3e50674d7931a` |
+| 8 | `theorem` | [sum_bernoulli](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/BernoulliPolynomialsAligned.lean/declarations/sum-bernoulli.md) | 122 | `result-track:429bb7c0202ead13ae7c25d83dc42529eec5f79e15b660092feb384836ba6068` |
+| 9 | `theorem` | [bernoulli_eq_sub_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/BernoulliPolynomialsAligned.lean/declarations/bernoulli-eq-sub-sum.md) | 159 | `result-track:658a19edc7d6689e0726eb55d6049cd8db28ec93c165ca37595103edac60ea18` |
+| 10 | `theorem` | [sum_range_pow_eq_bernoulli_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/BernoulliPolynomialsAligned.lean/declarations/sum-range-pow-eq-bernoulli-sub.md) | 167 | `result-track:cba154a6b7073a084c21969573d85cef7aca36b31dd7f224daf6cec92d42eeb1` |
+| 11 | `theorem` | [bernoulli_succ_eval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/BernoulliPolynomialsAligned.lean/declarations/bernoulli-succ-eval.md) | 186 | `result-track:2c8fe37b1366276bafb4c0aeb86cfa3c7a08e266c55be788345d82fb4b9e06dc` |
+| 12 | `theorem` | [bernoulli_eval_one_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/BernoulliPolynomialsAligned.lean/declarations/bernoulli-eval-one-add.md) | 192 | `result-track:e819d03b15b08fc80848d992cf6418defe0332ae53a4ab647aa2afacd2596572` |
+| 13 | `theorem` | [bernoulli_generating_function](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/BernoulliPolynomialsAligned.lean/declarations/bernoulli-generating-function.md) | 225 | `result-track:eddab4eb66ab275b880067cd926e294c78dc2a4461364a0a8a8a397e9f7c5138` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompleteMapRefinementAndEqualities.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompleteMapRefinementAndEqualities.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompleteMapRefinementAndEqualities.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompleteMapRefinementAndEqualities.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -48,7 +48,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 - `DAF.Refinement` — import line 19; external provider; requires a separately pinned dependency.
 - `BitMatrix.Core.Basic` — import line 20; external provider; requires a separately pinned dependency.
-- [Declarative And Array Observation Systems](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DeclarativeAndArrayObservationSystems.lean/index.md) — import line 22; pinned internal source present.
+- [Declarative And Array Observation Systems](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DeclarativeAndArrayObservationSystems.lean/index.md) — import line 22; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mapRefinement](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompleteMapRefinementAndEqualities.lean/declarations/maprefinement.md) | 41 | `declaration-track:d1c9adc5f5c37338c817245c068c7701ce3fe83e53100ff45977c1bd3c76cfd8` |
-| 2 | `theorem` | [mapRefinement_abstract](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompleteMapRefinementAndEqualities.lean/declarations/maprefinement-abstract.md) | 56 | `result-track:24a1f62ba27b65f8bb9a7788d0e4562cfe25b3fce5cc832277d46719d2d75096` |
-| 3 | `theorem` | [mapRefinement_step_sound](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompleteMapRefinementAndEqualities.lean/declarations/maprefinement-step-sound.md) | 63 | `result-track:5982326fcd49727456fd0a84973d893c8c48ef4aa4acfe125d5fffc5288ec761` |
-| 4 | `theorem` | [refines_iff_abstract_eq](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompleteMapRefinementAndEqualities.lean/declarations/refines-iff-abstract-eq.md) | 74 | `result-track:9feaef432ff2b36a3536337b769cc82b8a4adaf14a9d0397de34cfbfff94702e` |
+| 1 | `def` | [mapRefinement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompleteMapRefinementAndEqualities.lean/declarations/maprefinement.md) | 41 | `declaration-track:d1c9adc5f5c37338c817245c068c7701ce3fe83e53100ff45977c1bd3c76cfd8` |
+| 2 | `theorem` | [mapRefinement_abstract](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompleteMapRefinementAndEqualities.lean/declarations/maprefinement-abstract.md) | 56 | `result-track:24a1f62ba27b65f8bb9a7788d0e4562cfe25b3fce5cc832277d46719d2d75096` |
+| 3 | `theorem` | [mapRefinement_step_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompleteMapRefinementAndEqualities.lean/declarations/maprefinement-step-sound.md) | 63 | `result-track:5982326fcd49727456fd0a84973d893c8c48ef4aa4acfe125d5fffc5288ec761` |
+| 4 | `theorem` | [refines_iff_abstract_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompleteMapRefinementAndEqualities.lean/declarations/refines-iff-abstract-eq.md) | 74 | `result-track:9feaef432ff2b36a3536337b769cc82b8a4adaf14a9d0397de34cfbfff94702e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

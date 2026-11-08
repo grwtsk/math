@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/Cubic05.lean/index.md) · [Full source](../../../../MeasureAndIntegration/Cubic05.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Cubic05.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Cubic05.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,19 +58,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [primitivePoleMoment](../../../../MeasureAndIntegration/Cubic05.lean/declarations/primitivepolemoment.md) | 25 | `declaration-track:2815f35b15b5ae8c1a364d39741968d73f24643f17838cb4bace35ffae4aef23` |
-| 2 | `def` | [unnormalizedPrimitivePoleMoment](../../../../MeasureAndIntegration/Cubic05.lean/declarations/unnormalizedprimitivepolemoment.md) | 29 | `declaration-track:e031215df13e77f3c8e3812da8c47f7cc36f395fb4d73793b45193580884c84a` |
-| 3 | `theorem` | [weighted_derivative](../../../../MeasureAndIntegration/Cubic05.lean/declarations/weighted-derivative.md) | 32 | `result-track:69754f12ae91f01feb95476ca92ed84c9a482be5195bbf6af1a5447d0cd3b81a` |
-| 4 | `theorem` | [first_weighted_derivative](../../../../MeasureAndIntegration/Cubic05.lean/declarations/first-weighted-derivative.md) | 52 | `result-track:55876420a78d7783f23a9654ecb58e22478cd41dc95201ff29871cdf35e095d4` |
-| 5 | `theorem` | [actual_first_source_pole_moment](../../../../MeasureAndIntegration/Cubic05.lean/declarations/actual-first-source-pole-moment.md) | 83 | `result-track:90f5510072b2f2c9953f193000f1d1782dfff10b1db81b9a334d7c5bdb24bc0e` |
-| 6 | `theorem` | [second_convolution_moment](../../../../MeasureAndIntegration/Cubic05.lean/declarations/second-convolution-moment.md) | 116 | `result-track:ffe5a5ccc3acf219997df65f666cd8130140f472639f61031f80c6bf3e76da51` |
-| 7 | `theorem` | [actual_second_correlation_pole_moment](../../../../MeasureAndIntegration/Cubic05.lean/declarations/actual-second-correlation-pole-moment.md) | 167 | `result-track:baf71849138d648f773948668602462ebce676be14488193fe29c54a185dd1d6` |
-| 8 | `theorem` | [reflected_cubic_derivative_integral](../../../../MeasureAndIntegration/Cubic05.lean/declarations/reflected-cubic-derivative-integral.md) | 205 | `result-track:d01c7d7f2055c5a5c72ace4f5c4b24cbd6a6c3609ffe5496a33925c0c62b680f` |
-| 9 | `theorem` | [boundary_cubic_moment](../../../../MeasureAndIntegration/Cubic05.lean/declarations/boundary-cubic-moment.md) | 240 | `result-track:04eff76ef70aeb1ba73dded8bc540175c141a858a47f9116e006d90097f21db1` |
-| 10 | `theorem` | [primitive_pole_normalization](../../../../MeasureAndIntegration/Cubic05.lean/declarations/primitive-pole-normalization.md) | 281 | `result-track:5e08c6c8fa467774a78e92f494e7d8b0f357eb462beb0e6fbcaeb42e40b1840b` |
-| 11 | `theorem` | [boundary_cubic_moment_unnormalized](../../../../MeasureAndIntegration/Cubic05.lean/declarations/boundary-cubic-moment-unnormalized.md) | 288 | `result-track:351826141dcad3ad9dd94d3dd198cb88005c18fe416423b65c4a97897744be7c` |
-| 12 | `theorem` | [primitive_pole_moment_pos](../../../../MeasureAndIntegration/Cubic05.lean/declarations/primitive-pole-moment-pos.md) | 295 | `result-track:db2f30577cc4590c9a8d04729231c603129eb8c98d7dc79fc9121d756ed756e9` |
-| 13 | `theorem` | [boundary_cubic_moment_pos](../../../../MeasureAndIntegration/Cubic05.lean/declarations/boundary-cubic-moment-pos.md) | 319 | `result-track:c92bafad10ab76665ae117ab7feab89629eeedb0e4b51993f3511740f65d13cb` |
+| 1 | `def` | [primitivePoleMoment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Cubic05.lean/declarations/primitivepolemoment.md) | 25 | `declaration-track:2815f35b15b5ae8c1a364d39741968d73f24643f17838cb4bace35ffae4aef23` |
+| 2 | `def` | [unnormalizedPrimitivePoleMoment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Cubic05.lean/declarations/unnormalizedprimitivepolemoment.md) | 29 | `declaration-track:e031215df13e77f3c8e3812da8c47f7cc36f395fb4d73793b45193580884c84a` |
+| 3 | `theorem` | [weighted_derivative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Cubic05.lean/declarations/weighted-derivative.md) | 32 | `result-track:69754f12ae91f01feb95476ca92ed84c9a482be5195bbf6af1a5447d0cd3b81a` |
+| 4 | `theorem` | [first_weighted_derivative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Cubic05.lean/declarations/first-weighted-derivative.md) | 52 | `result-track:55876420a78d7783f23a9654ecb58e22478cd41dc95201ff29871cdf35e095d4` |
+| 5 | `theorem` | [actual_first_source_pole_moment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Cubic05.lean/declarations/actual-first-source-pole-moment.md) | 83 | `result-track:90f5510072b2f2c9953f193000f1d1782dfff10b1db81b9a334d7c5bdb24bc0e` |
+| 6 | `theorem` | [second_convolution_moment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Cubic05.lean/declarations/second-convolution-moment.md) | 116 | `result-track:ffe5a5ccc3acf219997df65f666cd8130140f472639f61031f80c6bf3e76da51` |
+| 7 | `theorem` | [actual_second_correlation_pole_moment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Cubic05.lean/declarations/actual-second-correlation-pole-moment.md) | 167 | `result-track:baf71849138d648f773948668602462ebce676be14488193fe29c54a185dd1d6` |
+| 8 | `theorem` | [reflected_cubic_derivative_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Cubic05.lean/declarations/reflected-cubic-derivative-integral.md) | 205 | `result-track:d01c7d7f2055c5a5c72ace4f5c4b24cbd6a6c3609ffe5496a33925c0c62b680f` |
+| 9 | `theorem` | [boundary_cubic_moment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Cubic05.lean/declarations/boundary-cubic-moment.md) | 240 | `result-track:04eff76ef70aeb1ba73dded8bc540175c141a858a47f9116e006d90097f21db1` |
+| 10 | `theorem` | [primitive_pole_normalization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Cubic05.lean/declarations/primitive-pole-normalization.md) | 281 | `result-track:5e08c6c8fa467774a78e92f494e7d8b0f357eb462beb0e6fbcaeb42e40b1840b` |
+| 11 | `theorem` | [boundary_cubic_moment_unnormalized](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Cubic05.lean/declarations/boundary-cubic-moment-unnormalized.md) | 288 | `result-track:351826141dcad3ad9dd94d3dd198cb88005c18fe416423b65c4a97897744be7c` |
+| 12 | `theorem` | [primitive_pole_moment_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Cubic05.lean/declarations/primitive-pole-moment-pos.md) | 295 | `result-track:db2f30577cc4590c9a8d04729231c603129eb8c98d7dc79fc9121d756ed756e9` |
+| 13 | `theorem` | [boundary_cubic_moment_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Cubic05.lean/declarations/boundary-cubic-moment-pos.md) | 319 | `result-track:c92bafad10ab76665ae117ab7feab89629eeedb0e4b51993f3511740f65d13cb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

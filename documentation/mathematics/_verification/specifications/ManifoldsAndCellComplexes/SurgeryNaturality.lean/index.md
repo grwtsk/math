@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ManifoldsAndCellComplexes/SurgeryNaturality.lean/index.md) · [Full source](../../../../ManifoldsAndCellComplexes/SurgeryNaturality.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ManifoldsAndCellComplexes/SurgeryNaturality.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ManifoldsAndCellComplexes/SurgeryNaturality.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `Surface.SmoothFramedSurgery.CollaredGluing` — import line 25; external provider; requires a separately pinned dependency.
-- [`GRWTSK.Topology.GeometricTopology.EmbeddingProblems.Isotopy.AmbientExtension.Variant5dff998f.Theory`](../../../../MathematicalLogicAndFoundations/GeneralLogic/Theory.lean/index.md) — import line 26; pinned internal source present.
+- [`GRWTSK.Topology.GeometricTopology.EmbeddingProblems.Isotopy.AmbientExtension.Variant5dff998f.Theory`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Theory.lean/index.md) — import line 26; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [surgeryEnd_eq_induced](../../../../ManifoldsAndCellComplexes/SurgeryNaturality.lean/declarations/surgeryend-eq-induced.md) | 62 | `result-track:a91a567e82b71c096bb507910ce634a6185e93a86fc0b3dc0612bf427bbf1e08` |
-| 2 | `theorem` | [surgery_invariant](../../../../ManifoldsAndCellComplexes/SurgeryNaturality.lean/declarations/surgery-invariant.md) | 71 | `result-track:0dceff8ee860726d3f0b404b4eb117bfd92acec9510aba158995af967c48ac25` |
-| 3 | `theorem` | [surgeryEnd_reverse](../../../../ManifoldsAndCellComplexes/SurgeryNaturality.lean/declarations/surgeryend-reverse.md) | 79 | `result-track:de933ff4920a7d0f802038f5279419124debd395b869641077cd22aed51823be` |
-| 4 | `theorem` | [surgeryEnd_concat](../../../../ManifoldsAndCellComplexes/SurgeryNaturality.lean/declarations/surgeryend-concat.md) | 87 | `result-track:d886da1670721caf0e72e78a477b4b982542bec48e6ef461e984c07aa1250cdb` |
-| 5 | `theorem` | [ambientEnd_identity](../../../../ManifoldsAndCellComplexes/SurgeryNaturality.lean/declarations/ambientend-identity.md) | 98 | `result-track:f32f0e654b8066da62188ac04d5d1887c9007a580251ad018a4b390f72e156c9` |
-| 6 | `theorem` | [surgeryEnd_identity](../../../../ManifoldsAndCellComplexes/SurgeryNaturality.lean/declarations/surgeryend-identity.md) | 106 | `result-track:afaaaef082873c51b593290ec15c27fe22e0a053e15f0771749c6f131b1d98c5` |
-| 7 | `theorem` | [ambientEnd_reverse](../../../../ManifoldsAndCellComplexes/SurgeryNaturality.lean/declarations/ambientend-reverse.md) | 113 | `result-track:d22278d90b25dae7616d207da4323c61b4d36dec2b721af9a45ae2a0b86feca8` |
-| 8 | `theorem` | [ambientEnd_concat](../../../../ManifoldsAndCellComplexes/SurgeryNaturality.lean/declarations/ambientend-concat.md) | 121 | `result-track:44f970f3f1469fb506a8b07989f78b738e42d0bea7571658cdcfea5a4f0d48cd` |
-| 9 | `theorem` | [invariant_eq](../../../../ManifoldsAndCellComplexes/SurgeryNaturality.lean/declarations/invariant-eq.md) | 131 | `result-track:9846f5504f46bfb08fc3d36af68570586156b21a968d7b57b94ca24bc959925a` |
+| 1 | `theorem` | [surgeryEnd_eq_induced](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ManifoldsAndCellComplexes/SurgeryNaturality.lean/declarations/surgeryend-eq-induced.md) | 62 | `result-track:a91a567e82b71c096bb507910ce634a6185e93a86fc0b3dc0612bf427bbf1e08` |
+| 2 | `theorem` | [surgery_invariant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ManifoldsAndCellComplexes/SurgeryNaturality.lean/declarations/surgery-invariant.md) | 71 | `result-track:0dceff8ee860726d3f0b404b4eb117bfd92acec9510aba158995af967c48ac25` |
+| 3 | `theorem` | [surgeryEnd_reverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ManifoldsAndCellComplexes/SurgeryNaturality.lean/declarations/surgeryend-reverse.md) | 79 | `result-track:de933ff4920a7d0f802038f5279419124debd395b869641077cd22aed51823be` |
+| 4 | `theorem` | [surgeryEnd_concat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ManifoldsAndCellComplexes/SurgeryNaturality.lean/declarations/surgeryend-concat.md) | 87 | `result-track:d886da1670721caf0e72e78a477b4b982542bec48e6ef461e984c07aa1250cdb` |
+| 5 | `theorem` | [ambientEnd_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ManifoldsAndCellComplexes/SurgeryNaturality.lean/declarations/ambientend-identity.md) | 98 | `result-track:f32f0e654b8066da62188ac04d5d1887c9007a580251ad018a4b390f72e156c9` |
+| 6 | `theorem` | [surgeryEnd_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ManifoldsAndCellComplexes/SurgeryNaturality.lean/declarations/surgeryend-identity.md) | 106 | `result-track:afaaaef082873c51b593290ec15c27fe22e0a053e15f0771749c6f131b1d98c5` |
+| 7 | `theorem` | [ambientEnd_reverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ManifoldsAndCellComplexes/SurgeryNaturality.lean/declarations/ambientend-reverse.md) | 113 | `result-track:d22278d90b25dae7616d207da4323c61b4d36dec2b721af9a45ae2a0b86feca8` |
+| 8 | `theorem` | [ambientEnd_concat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ManifoldsAndCellComplexes/SurgeryNaturality.lean/declarations/ambientend-concat.md) | 121 | `result-track:44f970f3f1469fb506a8b07989f78b738e42d0bea7571658cdcfea5a4f0d48cd` |
+| 9 | `theorem` | [invariant_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ManifoldsAndCellComplexes/SurgeryNaturality.lean/declarations/invariant-eq.md) | 131 | `result-track:9846f5504f46bfb08fc3d36af68570586156b21a968d7b57b94ca24bc959925a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

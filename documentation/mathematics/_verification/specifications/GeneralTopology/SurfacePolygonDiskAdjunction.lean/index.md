@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SurfacePolygonDiskAdjunction.lean/index.md) · [Full source](../../../../GeneralTopology/SurfacePolygonDiskAdjunction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonDiskAdjunction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonDiskAdjunction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Topology.AlgebraicTopology.TopologicalDiskAdjunction`](../../../../GeneralTopology/TopologicalDiskAdjunction.lean/index.md) — import line 6; pinned internal source present.
-- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskBoundary`](../../../../GeneralTopology/SurfacePolygonDiskBoundary.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.Topology.AlgebraicTopology.TopologicalDiskAdjunction`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologicalDiskAdjunction.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskBoundary`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonDiskBoundary.lean/index.md) — import line 7; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,18 +58,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [PolygonAttachedDisk](../../../../GeneralTopology/SurfacePolygonDiskAdjunction.lean/declarations/polygonattacheddisk.md) | 37 | `declaration-track:fac32a1d0702e62c37ed0aacdbcb3f0b33380aa7af57342593b097f9bb997f98` |
-| 2 | `def` | [originalSkeletonMap](../../../../GeneralTopology/SurfacePolygonDiskAdjunction.lean/declarations/originalskeletonmap.md) | 41 | `declaration-track:2731ae6353bf60ee0273c4ccc51b517282881de2dda40cc2ae63f006e38b32eb` |
-| 3 | `def` | [originalDiskMap](../../../../GeneralTopology/SurfacePolygonDiskAdjunction.lean/declarations/originaldiskmap.md) | 46 | `declaration-track:c4cbf3fc3095a86492461584eea1fccdb1d2444830927027606e50a266f1906d` |
-| 4 | `theorem` | [originalSkeletonMap_continuous](../../../../GeneralTopology/SurfacePolygonDiskAdjunction.lean/declarations/originalskeletonmap-continuous.md) | 50 | `result-track:f1b2877c25c4b45a206e371eaef301827afb76eb2beac5b1c9bfc1942db2acbe` |
-| 5 | `theorem` | [originalDiskMap_continuous](../../../../GeneralTopology/SurfacePolygonDiskAdjunction.lean/declarations/originaldiskmap-continuous.md) | 54 | `result-track:852688681cff634da5746c8f8f6275948b15644bc32f3cbdffcc9b518a8fde5e` |
-| 6 | `theorem` | [original_source_boundary_commutes](../../../../GeneralTopology/SurfacePolygonDiskAdjunction.lean/declarations/original-source-boundary-commutes.md) | 61 | `result-track:a2bf8a4fa2788cd9ae6e7d0fe5cb2ce8429663427d946cdb7ed8c6a38a4c3fd1` |
-| 7 | `theorem` | [original_boundary_commutes](../../../../GeneralTopology/SurfacePolygonDiskAdjunction.lean/declarations/original-boundary-commutes.md) | 74 | `result-track:52ec63ed01b7287057bc730bf1748ee1747b3a41c8af7666a8efeb495eac1225` |
-| 8 | `def` | [polygonDescend](../../../../GeneralTopology/SurfacePolygonDiskAdjunction.lean/declarations/polygondescend.md) | 82 | `declaration-track:73145f94d3084625badd28bc03ae25652ae985ffcbbb416fbb1c09f588305fae` |
-| 9 | `theorem` | [polygonDescend_continuous](../../../../GeneralTopology/SurfacePolygonDiskAdjunction.lean/declarations/polygondescend-continuous.md) | 91 | `result-track:ef81875e26e3b8737ae3803a80f23782366cad436ce14a7c89f53e68aef11e6a` |
-| 10 | `theorem` | [polygonDescend_skeleton](../../../../GeneralTopology/SurfacePolygonDiskAdjunction.lean/declarations/polygondescend-skeleton.md) | 102 | `result-track:beca73f8c8838126c8f51e7c76480c33267090b05c853b215f0bc8b94ae4c8a1` |
-| 11 | `theorem` | [polygonDescend_disk](../../../../GeneralTopology/SurfacePolygonDiskAdjunction.lean/declarations/polygondescend-disk.md) | 113 | `result-track:d0ef8f634679de4037a57a482a3b89353363c180cec543374aac85f3853b68f8` |
-| 12 | `theorem` | [polygonDescend_unique](../../../../GeneralTopology/SurfacePolygonDiskAdjunction.lean/declarations/polygondescend-unique.md) | 124 | `result-track:66335ae564642f1b12e83a3ff1a3f54553f29a0665a067b0b3bc079d98409ea5` |
+| 1 | `abbrev` | [PolygonAttachedDisk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonDiskAdjunction.lean/declarations/polygonattacheddisk.md) | 37 | `declaration-track:fac32a1d0702e62c37ed0aacdbcb3f0b33380aa7af57342593b097f9bb997f98` |
+| 2 | `def` | [originalSkeletonMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonDiskAdjunction.lean/declarations/originalskeletonmap.md) | 41 | `declaration-track:2731ae6353bf60ee0273c4ccc51b517282881de2dda40cc2ae63f006e38b32eb` |
+| 3 | `def` | [originalDiskMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonDiskAdjunction.lean/declarations/originaldiskmap.md) | 46 | `declaration-track:c4cbf3fc3095a86492461584eea1fccdb1d2444830927027606e50a266f1906d` |
+| 4 | `theorem` | [originalSkeletonMap_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonDiskAdjunction.lean/declarations/originalskeletonmap-continuous.md) | 50 | `result-track:f1b2877c25c4b45a206e371eaef301827afb76eb2beac5b1c9bfc1942db2acbe` |
+| 5 | `theorem` | [originalDiskMap_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonDiskAdjunction.lean/declarations/originaldiskmap-continuous.md) | 54 | `result-track:852688681cff634da5746c8f8f6275948b15644bc32f3cbdffcc9b518a8fde5e` |
+| 6 | `theorem` | [original_source_boundary_commutes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonDiskAdjunction.lean/declarations/original-source-boundary-commutes.md) | 61 | `result-track:a2bf8a4fa2788cd9ae6e7d0fe5cb2ce8429663427d946cdb7ed8c6a38a4c3fd1` |
+| 7 | `theorem` | [original_boundary_commutes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonDiskAdjunction.lean/declarations/original-boundary-commutes.md) | 74 | `result-track:52ec63ed01b7287057bc730bf1748ee1747b3a41c8af7666a8efeb495eac1225` |
+| 8 | `def` | [polygonDescend](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonDiskAdjunction.lean/declarations/polygondescend.md) | 82 | `declaration-track:73145f94d3084625badd28bc03ae25652ae985ffcbbb416fbb1c09f588305fae` |
+| 9 | `theorem` | [polygonDescend_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonDiskAdjunction.lean/declarations/polygondescend-continuous.md) | 91 | `result-track:ef81875e26e3b8737ae3803a80f23782366cad436ce14a7c89f53e68aef11e6a` |
+| 10 | `theorem` | [polygonDescend_skeleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonDiskAdjunction.lean/declarations/polygondescend-skeleton.md) | 102 | `result-track:beca73f8c8838126c8f51e7c76480c33267090b05c853b215f0bc8b94ae4c8a1` |
+| 11 | `theorem` | [polygonDescend_disk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonDiskAdjunction.lean/declarations/polygondescend-disk.md) | 113 | `result-track:d0ef8f634679de4037a57a482a3b89353363c180cec543374aac85f3853b68f8` |
+| 12 | `theorem` | [polygonDescend_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonDiskAdjunction.lean/declarations/polygondescend-unique.md) | 124 | `result-track:66335ae564642f1b12e83a3ff1a3f54553f29a0665a067b0b3bc079d98409ea5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

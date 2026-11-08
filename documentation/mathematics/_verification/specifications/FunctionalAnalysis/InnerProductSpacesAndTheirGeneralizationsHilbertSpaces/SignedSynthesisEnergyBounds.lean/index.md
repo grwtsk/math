@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SignedSynthesisEnergyBounds.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SignedSynthesisEnergyBounds.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SignedSynthesisEnergyBounds.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SignedSynthesisEnergyBounds.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.AsymptoticAnalysis.SignedEnergyDecomposition`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SignedEnergyDecompositionHistoricalSourceEdition2.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.Analysis.InnerProductSpace.WeightedSchurBounds`](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/WeightedSchurBounds.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.Analysis.AsymptoticAnalysis.SignedEnergyDecomposition`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SignedEnergyDecompositionHistoricalSourceEdition2.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Analysis.InnerProductSpace.WeightedSchurBounds`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/WeightedSchurBounds.lean/index.md) — import line 2; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PacketModel](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SignedSynthesisEnergyBounds.lean/declarations/packetmodel.md) | 11 | `declaration-track:1d7fc37b54053217bfe4a4c3c95c9c6d61b071ca8108c79fb5c88eb4543b3b08` |
-| 2 | `def` | [coefficientBudget](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SignedSynthesisEnergyBounds.lean/declarations/coefficientbudget.md) | 24 | `declaration-track:521d7b09508ecc439eeadcf670dbc8d4a6187bb35c812a8713ecea1c101885fa` |
-| 3 | `def` | [SignedPacketReturn](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SignedSynthesisEnergyBounds.lean/declarations/signedpacketreturn.md) | 30 | `declaration-track:107b932a759b0f957e320a836236195f254a8c6a2255e5e6f903a874484c7cec` |
-| 4 | `theorem` | [polynomial_packet_budgets_imply_settlement](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SignedSynthesisEnergyBounds.lean/declarations/polynomial-packet-budgets-imply-settlement.md) | 35 | `result-track:6565143e30a025102c266c839ac7454f1f11e56f9fb1c09f60a81f409f1f2fbe` |
-| 5 | `theorem` | [packet_route_implies_literal_P04](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SignedSynthesisEnergyBounds.lean/declarations/packet-route-implies-literal-p04.md) | 72 | `result-track:243280ac0cb1f1161c0ceb9991ce440d29b464c9094f529acac8ab7d7d0bc313` |
+| 1 | `structure` | [PacketModel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SignedSynthesisEnergyBounds.lean/declarations/packetmodel.md) | 11 | `declaration-track:1d7fc37b54053217bfe4a4c3c95c9c6d61b071ca8108c79fb5c88eb4543b3b08` |
+| 2 | `def` | [coefficientBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SignedSynthesisEnergyBounds.lean/declarations/coefficientbudget.md) | 24 | `declaration-track:521d7b09508ecc439eeadcf670dbc8d4a6187bb35c812a8713ecea1c101885fa` |
+| 3 | `def` | [SignedPacketReturn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SignedSynthesisEnergyBounds.lean/declarations/signedpacketreturn.md) | 30 | `declaration-track:107b932a759b0f957e320a836236195f254a8c6a2255e5e6f903a874484c7cec` |
+| 4 | `theorem` | [polynomial_packet_budgets_imply_settlement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SignedSynthesisEnergyBounds.lean/declarations/polynomial-packet-budgets-imply-settlement.md) | 35 | `result-track:6565143e30a025102c266c839ac7454f1f11e56f9fb1c09f60a81f409f1f2fbe` |
+| 5 | `theorem` | [packet_route_implies_literal_P04](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SignedSynthesisEnergyBounds.lean/declarations/packet-route-implies-literal-p04.md) | 72 | `result-track:243280ac0cb1f1161c0ceb9991ce440d29b464c9094f529acac8ab7d7d0bc313` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

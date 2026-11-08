@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ValidationRequest.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ValidationRequest.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ValidationRequest.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ValidationRequest.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Request.Valid](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ValidationRequest.lean/declarations/request-valid.md) | 7 | `declaration-track:e4bd4546eaa7496776c66b0ecd874fba467f0907597fcf361376b6ace06e21c0` |
-| 2 | `theorem` | [boundary_is_not_automatically_surgery](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ValidationRequest.lean/declarations/boundary-is-not-automatically-surgery.md) | 15 | `result-track:95abc632dd35a52f9748e0928f8d4c26a5cd45844cec6b882ad0c38386eb75c3` |
+| 1 | `def` | [Request.Valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ValidationRequest.lean/declarations/request-valid.md) | 7 | `declaration-track:e4bd4546eaa7496776c66b0ecd874fba467f0907597fcf361376b6ace06e21c0` |
+| 2 | `theorem` | [boundary_is_not_automatically_surgery](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ValidationRequest.lean/declarations/boundary-is-not-automatically-surgery.md) | 15 | `result-track:95abc632dd35a52f9748e0928f8d4c26a5cd45844cec6b882ad0c38386eb75c3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

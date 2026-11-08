@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ZeroTestRegularityNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ZeroTestRegularityNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroTestRegularityNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroTestRegularityNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,17 +57,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [testInterior](../../../../MeasureAndIntegration/ZeroTestRegularityNamespaced.lean/declarations/testinterior.md) | 30 | `declaration-track:195666f589226989984a1485f0327667949859727e8dbd4422a7a1c604d29269` |
-| 2 | `def` | [testInteriorDerivative](../../../../MeasureAndIntegration/ZeroTestRegularityNamespaced.lean/declarations/testinteriorderivative.md) | 33 | `declaration-track:5be48646dbe3b31a3539d550d4119751bc6f3c17c3aaf38d6ecc4e05f1956568` |
-| 3 | `theorem` | [actualTest_eq_indicator](../../../../MeasureAndIntegration/ZeroTestRegularityNamespaced.lean/declarations/actualtest-eq-indicator.md) | 36 | `result-track:a22a13dbd4c72931d675fd14ffd0450851338c00ffd61fae31d7c6eab15ea03d` |
-| 4 | `theorem` | [testInterior_hasDerivAt](../../../../MeasureAndIntegration/ZeroTestRegularityNamespaced.lean/declarations/testinterior-hasderivat.md) | 41 | `result-track:2ce5b19437b5f4d3482bc9493ee68cc349f0515c362c0b3c866f2997e4337e01` |
-| 5 | `theorem` | [testInterior_frontier](../../../../MeasureAndIntegration/ZeroTestRegularityNamespaced.lean/declarations/testinterior-frontier.md) | 46 | `result-track:e832ed6ba7cec16e5fce1ab5d52f40e943f725e63dc28b5ef6288330ef3eb68f` |
-| 6 | `theorem` | [actualTest_contDiff](../../../../MeasureAndIntegration/ZeroTestRegularityNamespaced.lean/declarations/actualtest-contdiff.md) | 59 | `result-track:10ef0ff15e9a21592373a5a39e81c72d56c36797aec849afdf55ed9182eea83b` |
-| 7 | `theorem` | [actualTest_zero_of_notMem](../../../../MeasureAndIntegration/ZeroTestRegularityNamespaced.lean/declarations/actualtest-zero-of-notmem.md) | 74 | `result-track:bb5a44fb0e08f000686d6c0ace43e16cebf20cc8b2d5c58c56ffa24e4424c935` |
-| 8 | `theorem` | [actualTest_support_subset](../../../../MeasureAndIntegration/ZeroTestRegularityNamespaced.lean/declarations/actualtest-support-subset.md) | 80 | `result-track:5df32cec53dd1d75f5f5a5e9ad882035c77581b5234f25c231323d7662bdd1e2` |
-| 9 | `theorem` | [actualTest_hasCompactSupport](../../../../MeasureAndIntegration/ZeroTestRegularityNamespaced.lean/declarations/actualtest-hascompactsupport.md) | 87 | `result-track:1c55b9dae6238a995609c412e80abb55cc50a07f312274243326736ee0742bf5` |
-| 10 | `theorem` | [actualTest_even](../../../../MeasureAndIntegration/ZeroTestRegularityNamespaced.lean/declarations/actualtest-even.md) | 93 | `result-track:aeba8592247474b46e707c2077ffa41f67fef5b6611ebc1502aab59bbc64a32a` |
-| 11 | `theorem` | [actualTest_integrable](../../../../MeasureAndIntegration/ZeroTestRegularityNamespaced.lean/declarations/actualtest-integrable.md) | 103 | `result-track:91254f4aec5e11421b9eeee0ea1aee75e14888f0117c33e70caf13fd018904fb` |
+| 1 | `def` | [testInterior](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroTestRegularityNamespaced.lean/declarations/testinterior.md) | 30 | `declaration-track:195666f589226989984a1485f0327667949859727e8dbd4422a7a1c604d29269` |
+| 2 | `def` | [testInteriorDerivative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroTestRegularityNamespaced.lean/declarations/testinteriorderivative.md) | 33 | `declaration-track:5be48646dbe3b31a3539d550d4119751bc6f3c17c3aaf38d6ecc4e05f1956568` |
+| 3 | `theorem` | [actualTest_eq_indicator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroTestRegularityNamespaced.lean/declarations/actualtest-eq-indicator.md) | 36 | `result-track:a22a13dbd4c72931d675fd14ffd0450851338c00ffd61fae31d7c6eab15ea03d` |
+| 4 | `theorem` | [testInterior_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroTestRegularityNamespaced.lean/declarations/testinterior-hasderivat.md) | 41 | `result-track:2ce5b19437b5f4d3482bc9493ee68cc349f0515c362c0b3c866f2997e4337e01` |
+| 5 | `theorem` | [testInterior_frontier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroTestRegularityNamespaced.lean/declarations/testinterior-frontier.md) | 46 | `result-track:e832ed6ba7cec16e5fce1ab5d52f40e943f725e63dc28b5ef6288330ef3eb68f` |
+| 6 | `theorem` | [actualTest_contDiff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroTestRegularityNamespaced.lean/declarations/actualtest-contdiff.md) | 59 | `result-track:10ef0ff15e9a21592373a5a39e81c72d56c36797aec849afdf55ed9182eea83b` |
+| 7 | `theorem` | [actualTest_zero_of_notMem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroTestRegularityNamespaced.lean/declarations/actualtest-zero-of-notmem.md) | 74 | `result-track:bb5a44fb0e08f000686d6c0ace43e16cebf20cc8b2d5c58c56ffa24e4424c935` |
+| 8 | `theorem` | [actualTest_support_subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroTestRegularityNamespaced.lean/declarations/actualtest-support-subset.md) | 80 | `result-track:5df32cec53dd1d75f5f5a5e9ad882035c77581b5234f25c231323d7662bdd1e2` |
+| 9 | `theorem` | [actualTest_hasCompactSupport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroTestRegularityNamespaced.lean/declarations/actualtest-hascompactsupport.md) | 87 | `result-track:1c55b9dae6238a995609c412e80abb55cc50a07f312274243326736ee0742bf5` |
+| 10 | `theorem` | [actualTest_even](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroTestRegularityNamespaced.lean/declarations/actualtest-even.md) | 93 | `result-track:aeba8592247474b46e707c2077ffa41f67fef5b6611ebc1502aab59bbc64a32a` |
+| 11 | `theorem` | [actualTest_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroTestRegularityNamespaced.lean/declarations/actualtest-integrable.md) | 103 | `result-track:91254f4aec5e11421b9eeee0ea1aee75e14888f0117c33e70caf13fd018904fb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

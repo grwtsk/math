@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualCubicShortCalibrationNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualCubicShortCalibrationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualCubicShortCalibrationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualCubicShortCalibrationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_short_cubic_error_plus_plain_calibration_lt](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualCubicShortCalibrationNamespaced.lean/declarations/actual-short-cubic-error-plus-plain-calibration-lt.md) | 33 | `result-track:100eb891e6f4465742b62085703366eedf9d510b8ea3ceacef2ec130122d9e28` |
-| 2 | `theorem` | [actual_full_cubic_error_plus_plain_calibration_lt_with_complement](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualCubicShortCalibrationNamespaced.lean/declarations/actual-full-cubic-error-plus-plain-calibration-lt-with-complement.md) | 41 | `result-track:b36d18a14b4fa1d06df42955e9ba3904afffc5f2a303b3071a41c0cb351c5d64` |
+| 1 | `theorem` | [actual_short_cubic_error_plus_plain_calibration_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualCubicShortCalibrationNamespaced.lean/declarations/actual-short-cubic-error-plus-plain-calibration-lt.md) | 33 | `result-track:100eb891e6f4465742b62085703366eedf9d510b8ea3ceacef2ec130122d9e28` |
+| 2 | `theorem` | [actual_full_cubic_error_plus_plain_calibration_lt_with_complement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualCubicShortCalibrationNamespaced.lean/declarations/actual-full-cubic-error-plus-plain-calibration-lt-with-complement.md) | 41 | `result-track:b36d18a14b4fa1d06df42955e9ba3904afffc5f2a303b3071a41c0cb351c5d64` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

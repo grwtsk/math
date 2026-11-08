@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/MainUnusedTransitiveImportsPublic.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/MainUnusedTransitiveImportsPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MainUnusedTransitiveImportsPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MainUnusedTransitiveImportsPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [main](../../../../../ComputerScience/AlgorithmsInComputerScience/MainUnusedTransitiveImportsPublic.lean/declarations/main.md) | 13 | `declaration-track:1ba6f50c083e4738457db76e867ab4d81e0758c898c428c70eaefd237cc34058` |
+| 1 | `def` | [main](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MainUnusedTransitiveImportsPublic.lean/declarations/main.md) | 13 | `declaration-track:1ba6f50c083e4738457db76e867ab4d81e0758c898c428c70eaefd237cc34058` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

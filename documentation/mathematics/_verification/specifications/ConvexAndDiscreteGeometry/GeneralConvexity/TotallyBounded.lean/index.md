@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/TotallyBounded.lean/index.md) · [Full source](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/TotallyBounded.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/TotallyBounded.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/TotallyBounded.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,7 +60,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [totallyBounded_convexHull](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/TotallyBounded.lean/declarations/totallybounded-convexhull.md) | 34 | `result-track:b3dccb012eff760a3639e70d170d36086fc9361f94b70f5178ca8f57e47b9a68` |
+| 1 | `theorem` | [totallyBounded_convexHull](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/TotallyBounded.lean/declarations/totallybounded-convexhull.md) | 34 | `result-track:b3dccb012eff760a3639e70d170d36086fc9361f94b70f5178ca8f57e47b9a68` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

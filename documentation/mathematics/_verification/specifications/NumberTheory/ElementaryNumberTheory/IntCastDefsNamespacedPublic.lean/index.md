@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/IntCastDefsNamespacedPublic.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/IntCastDefsNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/IntCastDefsNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/IntCastDefsNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Int.castDef](../../../../../NumberTheory/ElementaryNumberTheory/IntCastDefsNamespacedPublic.lean/declarations/int-castdef.md) | 41 | `declaration-track:5f4314708baf40ed4b6a3386085e1433c2dbc47e872ad86acaf84d36a9e855ca` |
-| 2 | `class` | [AddGroupWithOne](../../../../../NumberTheory/ElementaryNumberTheory/IntCastDefsNamespacedPublic.lean/declarations/addgroupwithone.md) | 49 | `declaration-track:85eb71138b23455d542707874481fb82cb96912002f0333f514857dd1853cda8` |
-| 3 | `class` | [AddCommGroupWithOne](../../../../../NumberTheory/ElementaryNumberTheory/IntCastDefsNamespacedPublic.lean/declarations/addcommgroupwithone.md) | 59 | `declaration-track:0293a7a3db9291c50f8513d7a1ef615f0ea59fa57aad9e8df2538951586fd128` |
+| 1 | `def` | [Int.castDef](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/IntCastDefsNamespacedPublic.lean/declarations/int-castdef.md) | 41 | `declaration-track:5f4314708baf40ed4b6a3386085e1433c2dbc47e872ad86acaf84d36a9e855ca` |
+| 2 | `class` | [AddGroupWithOne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/IntCastDefsNamespacedPublic.lean/declarations/addgroupwithone.md) | 49 | `declaration-track:85eb71138b23455d542707874481fb82cb96912002f0333f514857dd1853cda8` |
+| 3 | `class` | [AddCommGroupWithOne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/IntCastDefsNamespacedPublic.lean/declarations/addcommgroupwithone.md) | 59 | `declaration-track:0293a7a3db9291c50f8513d7a1ef615f0ea59fa57aad9e8df2538951586fd128` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

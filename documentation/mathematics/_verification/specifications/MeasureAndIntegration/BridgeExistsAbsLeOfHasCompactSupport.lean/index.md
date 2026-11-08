@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/BridgeExistsAbsLeOfHasCompactSupport.lean/index.md) · [Full source](../../../../MeasureAndIntegration/BridgeExistsAbsLeOfHasCompactSupport.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeExistsAbsLeOfHasCompactSupport.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeExistsAbsLeOfHasCompactSupport.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,14 +60,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_abs_le_of_hasCompactSupport](../../../../MeasureAndIntegration/BridgeExistsAbsLeOfHasCompactSupport.lean/declarations/exists-abs-le-of-hascompactsupport.md) | 33 | `result-track:4f4cbfc49f361b36dd3de18ef37ec82bb8af4e4b48064a7409c46460092d1c1f` |
-| 2 | `theorem` | [norm_fourier_mul_one_add_sq_le](../../../../MeasureAndIntegration/BridgeExistsAbsLeOfHasCompactSupport.lean/declarations/norm-fourier-mul-one-add-sq-le.md) | 42 | `result-track:5dc2a6d1213bf255ff74a260f6a23f0887079a9c462aee0021fcdb835fc9376b` |
-| 3 | `theorem` | [continuous_fourier_of_integrable](../../../../MeasureAndIntegration/BridgeExistsAbsLeOfHasCompactSupport.lean/declarations/continuous-fourier-of-integrable.md) | 65 | `result-track:b73a7ecb471e3726fc4d1390eae43971726d8979d77ca3bc7d02fa2a70734267` |
-| 4 | `theorem` | [integrable_fourier_of_contDiff_two](../../../../MeasureAndIntegration/BridgeExistsAbsLeOfHasCompactSupport.lean/declarations/integrable-fourier-of-contdiff-two.md) | 69 | `result-track:484411cea0e0a18e75fab3ebe08f4c607343a410348be24da855426d1456adb2` |
-| 5 | `theorem` | [norm_paperFT_mul_one_add_sq_le](../../../../MeasureAndIntegration/BridgeExistsAbsLeOfHasCompactSupport.lean/declarations/norm-paperft-mul-one-add-sq-le.md) | 80 | `result-track:1d2cf7596d2fd8ed78a3d805cc9955570999606b3a5deedc5c36cefcebcc4c16` |
-| 6 | `theorem` | [abs_mu_le_of_gammaFacts](../../../../MeasureAndIntegration/BridgeExistsAbsLeOfHasCompactSupport.lean/declarations/abs-mu-le-of-gammafacts.md) | 94 | `result-track:3fce4b7c976ae0f307de0bd6ae4c42f15131473c89bec4319aff4fe0127e20ae` |
-| 7 | `theorem` | [integrable_paperFT_mul_mu](../../../../MeasureAndIntegration/BridgeExistsAbsLeOfHasCompactSupport.lean/declarations/integrable-paperft-mul-mu.md) | 158 | `result-track:14c45bb8ca53e9546ed336889dcc3c9c6830caf15cb62d5144bf1381a982f6a7` |
-| 8 | `theorem` | [explicitFormulaPaper_of_lit](../../../../MeasureAndIntegration/BridgeExistsAbsLeOfHasCompactSupport.lean/declarations/explicitformulapaper-of-lit.md) | 191 | `result-track:fd62121bca18433f5dbc52e2048ad3b0cb64f6b6cff31bf309d4b13bf8613ce5` |
+| 1 | `theorem` | [exists_abs_le_of_hasCompactSupport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeExistsAbsLeOfHasCompactSupport.lean/declarations/exists-abs-le-of-hascompactsupport.md) | 33 | `result-track:4f4cbfc49f361b36dd3de18ef37ec82bb8af4e4b48064a7409c46460092d1c1f` |
+| 2 | `theorem` | [norm_fourier_mul_one_add_sq_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeExistsAbsLeOfHasCompactSupport.lean/declarations/norm-fourier-mul-one-add-sq-le.md) | 42 | `result-track:5dc2a6d1213bf255ff74a260f6a23f0887079a9c462aee0021fcdb835fc9376b` |
+| 3 | `theorem` | [continuous_fourier_of_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeExistsAbsLeOfHasCompactSupport.lean/declarations/continuous-fourier-of-integrable.md) | 65 | `result-track:b73a7ecb471e3726fc4d1390eae43971726d8979d77ca3bc7d02fa2a70734267` |
+| 4 | `theorem` | [integrable_fourier_of_contDiff_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeExistsAbsLeOfHasCompactSupport.lean/declarations/integrable-fourier-of-contdiff-two.md) | 69 | `result-track:484411cea0e0a18e75fab3ebe08f4c607343a410348be24da855426d1456adb2` |
+| 5 | `theorem` | [norm_paperFT_mul_one_add_sq_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeExistsAbsLeOfHasCompactSupport.lean/declarations/norm-paperft-mul-one-add-sq-le.md) | 80 | `result-track:1d2cf7596d2fd8ed78a3d805cc9955570999606b3a5deedc5c36cefcebcc4c16` |
+| 6 | `theorem` | [abs_mu_le_of_gammaFacts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeExistsAbsLeOfHasCompactSupport.lean/declarations/abs-mu-le-of-gammafacts.md) | 94 | `result-track:3fce4b7c976ae0f307de0bd6ae4c42f15131473c89bec4319aff4fe0127e20ae` |
+| 7 | `theorem` | [integrable_paperFT_mul_mu](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeExistsAbsLeOfHasCompactSupport.lean/declarations/integrable-paperft-mul-mu.md) | 158 | `result-track:14c45bb8ca53e9546ed336889dcc3c9c6830caf15cb62d5144bf1381a982f6a7` |
+| 8 | `theorem` | [explicitFormulaPaper_of_lit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeExistsAbsLeOfHasCompactSupport.lean/declarations/explicitformulapaper-of-lit.md) | 191 | `result-track:fd62121bca18433f5dbc52e2048ad3b0cb64f6b6cff31bf309d4b13bf8613ce5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

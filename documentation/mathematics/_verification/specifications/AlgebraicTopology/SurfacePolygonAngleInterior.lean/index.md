@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/SurfacePolygonAngleInterior.lean/index.md) · [Full source](../../../../AlgebraicTopology/SurfacePolygonAngleInterior.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonAngleInterior.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonAngleInterior.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleAddress`](../../../../GeneralTopology/SurfacePolygonPerimeterCircleAddress.lean/index.md) — import line 9; pinned internal source present.
+- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleAddress`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonPerimeterCircleAddress.lean/index.md) — import line 9; pinned internal source present.
 - `Mathlib.Topology.Instances.AddCircle.Real` — import line 10; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 11; external provider; requires a separately pinned dependency.
 
@@ -59,16 +59,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [handleOrdinal_injective](../../../../AlgebraicTopology/SurfacePolygonAngleInterior.lean/declarations/handleordinal-injective.md) | 34 | `result-track:f878bbea7aa00e584d2ef79b0bd8ef645d00d76c0c3688040ec7d0d6cafb27aa` |
-| 2 | `theorem` | [directedSideOrdinal_injective](../../../../AlgebraicTopology/SurfacePolygonAngleInterior.lean/declarations/directedsideordinal-injective.md) | 61 | `result-track:939d52d0b6846245bf3b665b178e8d1f5014630957630fcaf8dd03fb3ba9ed27` |
-| 3 | `theorem` | [interior_real_angle_mem_Ico](../../../../AlgebraicTopology/SurfacePolygonAngleInterior.lean/declarations/interior-real-angle-mem-ico.md) | 82 | `result-track:e15bb831b7066f4f67e629a0746ecd89c755b865e18fb659749cf7469673ea50` |
-| 4 | `theorem` | [interior_angle_real_eq](../../../../AlgebraicTopology/SurfacePolygonAngleInterior.lean/declarations/interior-angle-real-eq.md) | 102 | `result-track:e3de2dcac642583251fa0ff1677fb66c52aed2e2a28cb9ffe4702645c42086cf` |
-| 5 | `theorem` | [interior_sourceAngle_injective](../../../../AlgebraicTopology/SurfacePolygonAngleInterior.lean/declarations/interior-sourceangle-injective.md) | 117 | `result-track:911ae398936b84c0ff3e50af5784fabac03fde1761fe1430ca6a15105294d953` |
-| 6 | `theorem` | [perimeterAngle_interior_separation](../../../../AlgebraicTopology/SurfacePolygonAngleInterior.lean/declarations/perimeterangle-interior-separation.md) | 148 | `result-track:3a097613231180f1f63150f91c100f94c7f0f536c6971db2c67ea1321bf63de1` |
-| 7 | `theorem` | [endpoint_alias_is_real](../../../../AlgebraicTopology/SurfacePolygonAngleInterior.lean/declarations/endpoint-alias-is-real.md) | 160 | `result-track:9795e7c8844c1cf68a66481d9e19671b10f19266f9cb6ac31facda6c7e3567c5` |
-| 8 | `theorem` | [distinct_source_corners_remain_distinct](../../../../AlgebraicTopology/SurfacePolygonAngleInterior.lean/declarations/distinct-source-corners-remain-distinct.md) | 168 | `result-track:9c607f41902436d44bf3eaa3b3ebb4b80894b62ee574bdbb63a4fa97b3fd0f7e` |
-| 9 | `theorem` | [genusTwo_directed_count](../../../../AlgebraicTopology/SurfacePolygonAngleInterior.lean/declarations/genustwo-directed-count.md) | 176 | `result-track:1d986b89dd3f876910561eaa506f4e269f1ae53fa855ff94aa8a8176fbbf6f5d` |
-| 10 | `theorem` | [genusThree_directed_count](../../../../AlgebraicTopology/SurfacePolygonAngleInterior.lean/declarations/genusthree-directed-count.md) | 181 | `result-track:186c5fe13944f5ebad5739863f3155df371f798df58ac1c45a6d15597dda94b3` |
+| 1 | `theorem` | [handleOrdinal_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonAngleInterior.lean/declarations/handleordinal-injective.md) | 34 | `result-track:f878bbea7aa00e584d2ef79b0bd8ef645d00d76c0c3688040ec7d0d6cafb27aa` |
+| 2 | `theorem` | [directedSideOrdinal_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonAngleInterior.lean/declarations/directedsideordinal-injective.md) | 61 | `result-track:939d52d0b6846245bf3b665b178e8d1f5014630957630fcaf8dd03fb3ba9ed27` |
+| 3 | `theorem` | [interior_real_angle_mem_Ico](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonAngleInterior.lean/declarations/interior-real-angle-mem-ico.md) | 82 | `result-track:e15bb831b7066f4f67e629a0746ecd89c755b865e18fb659749cf7469673ea50` |
+| 4 | `theorem` | [interior_angle_real_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonAngleInterior.lean/declarations/interior-angle-real-eq.md) | 102 | `result-track:e3de2dcac642583251fa0ff1677fb66c52aed2e2a28cb9ffe4702645c42086cf` |
+| 5 | `theorem` | [interior_sourceAngle_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonAngleInterior.lean/declarations/interior-sourceangle-injective.md) | 117 | `result-track:911ae398936b84c0ff3e50af5784fabac03fde1761fe1430ca6a15105294d953` |
+| 6 | `theorem` | [perimeterAngle_interior_separation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonAngleInterior.lean/declarations/perimeterangle-interior-separation.md) | 148 | `result-track:3a097613231180f1f63150f91c100f94c7f0f536c6971db2c67ea1321bf63de1` |
+| 7 | `theorem` | [endpoint_alias_is_real](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonAngleInterior.lean/declarations/endpoint-alias-is-real.md) | 160 | `result-track:9795e7c8844c1cf68a66481d9e19671b10f19266f9cb6ac31facda6c7e3567c5` |
+| 8 | `theorem` | [distinct_source_corners_remain_distinct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonAngleInterior.lean/declarations/distinct-source-corners-remain-distinct.md) | 168 | `result-track:9c607f41902436d44bf3eaa3b3ebb4b80894b62ee574bdbb63a4fa97b3fd0f7e` |
+| 9 | `theorem` | [genusTwo_directed_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonAngleInterior.lean/declarations/genustwo-directed-count.md) | 176 | `result-track:1d986b89dd3f876910561eaa506f4e269f1ae53fa855ff94aa8a8176fbbf6f5d` |
+| 10 | `theorem` | [genusThree_directed_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonAngleInterior.lean/declarations/genusthree-directed-count.md) | 181 | `result-track:186c5fe13944f5ebad5739863f3155df371f798df58ac1c45a6d15597dda94b3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

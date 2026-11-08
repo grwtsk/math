@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/CompactLedger.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/CompactLedger.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CompactLedger.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CompactLedger.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CompactResidueLedger](../../../../../ComputerScience/AlgorithmsInComputerScience/CompactLedger.lean/declarations/compactresidueledger-source-edition-2.md) | 7 | `declaration-track:8dbba5b24ef6458c6dd67393c31111f49be87fc318c5d1b1543a6edb29b866b3` |
-| 2 | `def` | [compactResidueLedger](../../../../../ComputerScience/AlgorithmsInComputerScience/CompactLedger.lean/declarations/compactresidueledger.md) | 13 | `declaration-track:80ab532b9edee5e94c22e6bd3613a02b4bf56e08413bba8570065bebfc8f6211` |
-| 3 | `theorem` | [compactResidueLedger_closed](../../../../../ComputerScience/AlgorithmsInComputerScience/CompactLedger.lean/declarations/compactresidueledger-closed.md) | 30 | `result-track:003f2da22f1041f684f48cc757c96b207608295bb6f136667f059a1b67a4f71c` |
-| 4 | `theorem` | [compactResidueLedger_doesNotClaimClearance](../../../../../ComputerScience/AlgorithmsInComputerScience/CompactLedger.lean/declarations/compactresidueledger-doesnotclaimclearance.md) | 34 | `result-track:3feb289b845e1526804e6e6aebb50e3106f7c059ae7ea4c2e0b21de3ad49c7c8` |
+| 1 | `structure` | [CompactResidueLedger](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CompactLedger.lean/declarations/compactresidueledger-source-edition-2.md) | 7 | `declaration-track:8dbba5b24ef6458c6dd67393c31111f49be87fc318c5d1b1543a6edb29b866b3` |
+| 2 | `def` | [compactResidueLedger](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CompactLedger.lean/declarations/compactresidueledger.md) | 13 | `declaration-track:80ab532b9edee5e94c22e6bd3613a02b4bf56e08413bba8570065bebfc8f6211` |
+| 3 | `theorem` | [compactResidueLedger_closed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CompactLedger.lean/declarations/compactresidueledger-closed.md) | 30 | `result-track:003f2da22f1041f684f48cc757c96b207608295bb6f136667f059a1b67a4f71c` |
+| 4 | `theorem` | [compactResidueLedger_doesNotClaimClearance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CompactLedger.lean/declarations/compactresidueledger-doesnotclaimclearance.md) | 34 | `result-track:3feb289b845e1526804e6e6aebb50e3106f7c059ae7ea4c2e0b21de3ad49c7c8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

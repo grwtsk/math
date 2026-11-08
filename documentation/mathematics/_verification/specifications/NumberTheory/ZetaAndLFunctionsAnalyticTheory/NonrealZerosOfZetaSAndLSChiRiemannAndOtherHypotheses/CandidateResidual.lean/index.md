@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CandidateResidual.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CandidateResidual.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CandidateResidual.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CandidateResidual.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,10 +61,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [residual_integrable](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CandidateResidual.lean/declarations/residual-integrable.md) | 21 | `result-track:fb052248b20039d81f37c83a2662ec3b6f09dabdbbf73ede4f05bddef408b723` |
-| 2 | `theorem` | [residual_fourier](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CandidateResidual.lean/declarations/residual-fourier.md) | 34 | `result-track:53590002e53a7df8251cb9a3d1ffc383a13f65caa01dbeeb1013eb4c5c98eb73` |
-| 3 | `theorem` | [residual_norm_sq](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CandidateResidual.lean/declarations/residual-norm-sq.md) | 56 | `result-track:7f7e98f50a64ddd4e8690d4c10a2725cea8105b8d4431a7bf680312ca6b28076` |
-| 4 | `theorem` | [residual_norm_le_delta_add_error](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CandidateResidual.lean/declarations/residual-norm-le-delta-add-error.md) | 72 | `result-track:9f262f8c463d2594b30b3308ee66409d3d4eaaba107b331939b64583f99c3884` |
+| 1 | `theorem` | [residual_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CandidateResidual.lean/declarations/residual-integrable.md) | 21 | `result-track:fb052248b20039d81f37c83a2662ec3b6f09dabdbbf73ede4f05bddef408b723` |
+| 2 | `theorem` | [residual_fourier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CandidateResidual.lean/declarations/residual-fourier.md) | 34 | `result-track:53590002e53a7df8251cb9a3d1ffc383a13f65caa01dbeeb1013eb4c5c98eb73` |
+| 3 | `theorem` | [residual_norm_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CandidateResidual.lean/declarations/residual-norm-sq.md) | 56 | `result-track:7f7e98f50a64ddd4e8690d4c10a2725cea8105b8d4431a7bf680312ca6b28076` |
+| 4 | `theorem` | [residual_norm_le_delta_add_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CandidateResidual.lean/declarations/residual-norm-le-delta-add-error.md) | 72 | `result-track:9f262f8c463d2594b30b3308ee66409d3d4eaaba107b331939b64583f99c3884` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

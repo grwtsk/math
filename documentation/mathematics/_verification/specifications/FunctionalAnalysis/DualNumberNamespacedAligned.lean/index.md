@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/DualNumberNamespacedAligned.lean/index.md) · [Full source](../../../../FunctionalAnalysis/DualNumberNamespacedAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/DualNumberNamespacedAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/DualNumberNamespacedAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exp_eps](../../../../FunctionalAnalysis/DualNumberNamespacedAligned.lean/declarations/exp-eps.md) | 42 | `result-track:5aeeb791028cd4eae3f56f9d19730edeb2c82f2cecc4057c3eecd6a89f9069bb` |
-| 2 | `theorem` | [exp_smul_eps](../../../../FunctionalAnalysis/DualNumberNamespacedAligned.lean/declarations/exp-smul-eps.md) | 47 | `result-track:300d3d3ce08ac32022c55c03a2e3a227f8d71b58ffc5c41d1deb2776801bcdc2` |
+| 1 | `theorem` | [exp_eps](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/DualNumberNamespacedAligned.lean/declarations/exp-eps.md) | 42 | `result-track:5aeeb791028cd4eae3f56f9d19730edeb2c82f2cecc4057c3eecd6a89f9069bb` |
+| 2 | `theorem` | [exp_smul_eps](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/DualNumberNamespacedAligned.lean/declarations/exp-smul-eps.md) | 47 | `result-track:300d3d3ce08ac32022c55c03a2e3a227f8d71b58ffc5c41d1deb2776801bcdc2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

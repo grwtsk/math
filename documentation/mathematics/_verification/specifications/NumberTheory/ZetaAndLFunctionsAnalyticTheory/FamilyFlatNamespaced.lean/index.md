@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FamilyFlatNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FamilyFlatNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FamilyFlatNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FamilyFlatNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,8 +61,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [hasCompactSupport_iteratedDeriv](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FamilyFlatNamespaced.lean/declarations/hascompactsupport-iteratedderiv.md) | 39 | `result-track:541e0d9d4b4afdc9b2bb47f7e1a1d1348922dc441c8ba483d486aa7815c9500b` |
-| 2 | `theorem` | [familyHyps_flat_gevrey](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FamilyFlatNamespaced.lean/declarations/familyhyps-flat-gevrey.md) | 46 | `result-track:65572ba26f9ee78fcab42325d13076bd24a29a7a37bfd72b6d057f2e5dccec98` |
+| 1 | `lemma` | [hasCompactSupport_iteratedDeriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FamilyFlatNamespaced.lean/declarations/hascompactsupport-iteratedderiv.md) | 39 | `result-track:541e0d9d4b4afdc9b2bb47f7e1a1d1348922dc441c8ba483d486aa7815c9500b` |
+| 2 | `theorem` | [familyHyps_flat_gevrey](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FamilyFlatNamespaced.lean/declarations/familyhyps-flat-gevrey.md) | 46 | `result-track:65572ba26f9ee78fcab42325d13076bd24a29a7a37bfd72b6d057f2e5dccec98` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

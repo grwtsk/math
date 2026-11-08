@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/TypesGrpNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/TypesGrpNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/TypesGrpNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/TypesGrpNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [grpGroup](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/TypesGrpNamespaced.lean/declarations/grpgroup.md) | 33 | `declaration-track:27b1f263defbb56b1760d2db2ddf5c4a607d81e85efd0d50d95d588826653d0e` |
-| 2 | `def` | [functor](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/TypesGrpNamespaced.lean/declarations/functor.md) | 39 | `declaration-track:ba92414873a4ca2ac3ebe5f8d9fe1880d9c49a6b97588eaf9eec15de493d534c` |
-| 3 | `def` | [inverse](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/TypesGrpNamespaced.lean/declarations/inverse.md) | 44 | `declaration-track:a1b6d371d60623402247476581798a17ac6c728c1270e69f17658b4943ae59df` |
-| 4 | `def` | [grpTypeEquivalenceGrp](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/TypesGrpNamespaced.lean/declarations/grptypeequivalencegrp.md) | 59 | `declaration-track:383583d44b50c5dc32635a43e9353ec562499401fec01cdaae796ec3d323ea19` |
-| 5 | `def` | [grpTypeEquivalenceGrpForget](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/TypesGrpNamespaced.lean/declarations/grptypeequivalencegrpforget.md) | 70 | `declaration-track:6fc145779e0209b8ac709cab943fa317fa69246e06c973f42f73f5669fe2720e` |
+| 1 | `instance` | [grpGroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/TypesGrpNamespaced.lean/declarations/grpgroup.md) | 33 | `declaration-track:27b1f263defbb56b1760d2db2ddf5c4a607d81e85efd0d50d95d588826653d0e` |
+| 2 | `def` | [functor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/TypesGrpNamespaced.lean/declarations/functor.md) | 39 | `declaration-track:ba92414873a4ca2ac3ebe5f8d9fe1880d9c49a6b97588eaf9eec15de493d534c` |
+| 3 | `def` | [inverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/TypesGrpNamespaced.lean/declarations/inverse.md) | 44 | `declaration-track:a1b6d371d60623402247476581798a17ac6c728c1270e69f17658b4943ae59df` |
+| 4 | `def` | [grpTypeEquivalenceGrp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/TypesGrpNamespaced.lean/declarations/grptypeequivalencegrp.md) | 59 | `declaration-track:383583d44b50c5dc32635a43e9353ec562499401fec01cdaae796ec3d323ea19` |
+| 5 | `def` | [grpTypeEquivalenceGrpForget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/TypesGrpNamespaced.lean/declarations/grptypeequivalencegrpforget.md) | 70 | `declaration-track:6fc145779e0209b8ac709cab943fa317fa69246e06c973f42f73f5669fe2720e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/MeasurableSpacePiNamespaced.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/MeasurableSpacePiNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/MeasurableSpacePiNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/MeasurableSpacePiNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [MeasurableSpace.pi_eq_generateFrom_projections](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/MeasurableSpacePiNamespaced.lean/declarations/measurablespace-pi-eq-generatefrom-projections.md) | 36 | `result-track:6affcd7ce48a5548ee9dd736da67f656844213cb7d92fd89009173b798ef2ea1` |
-| 2 | `theorem` | [IsPiSystem.pi](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/MeasurableSpacePiNamespaced.lean/declarations/ispisystem-pi.md) | 41 | `result-track:5b8a7906f889a36b5bffe376c639278898c89e167944ec90fb04ad55e504e678` |
-| 3 | `theorem` | [isPiSystem_pi](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/MeasurableSpacePiNamespaced.lean/declarations/ispisystem-pi-source-edition-2.md) | 48 | `result-track:cdc369ee143220e009915f52171fffe7c159debe9a9b6ff3a22a70689ead17df` |
-| 4 | `theorem` | [IsCountablySpanning.pi](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/MeasurableSpacePiNamespaced.lean/declarations/iscountablyspanning-pi.md) | 57 | `result-track:b3b47025f32b8ca94666b3bfd3070561bd7d4b6cec3a55e97b0e0ccc9036224c` |
-| 5 | `theorem` | [generateFrom_pi_eq](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/MeasurableSpacePiNamespaced.lean/declarations/generatefrom-pi-eq.md) | 70 | `result-track:658491d0c9244fceca652428ac1468b12c3250e8e8cd3e747f231a27cba0105a` |
-| 6 | `theorem` | [generateFrom_eq_pi](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/MeasurableSpacePiNamespaced.lean/declarations/generatefrom-eq-pi.md) | 102 | `result-track:b13f174510e5c7cbda895ac57c37b3348fdfaab55de7cca842eb7b2370633904` |
-| 7 | `theorem` | [generateFrom_pi](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/MeasurableSpacePiNamespaced.lean/declarations/generatefrom-pi.md) | 109 | `result-track:0fb4d9ec950fbdd95a5eab8e2fc3fe27e232aedf9cc49d6f8fa732e730568e34` |
+| 1 | `lemma` | [MeasurableSpace.pi_eq_generateFrom_projections](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/MeasurableSpacePiNamespaced.lean/declarations/measurablespace-pi-eq-generatefrom-projections.md) | 36 | `result-track:6affcd7ce48a5548ee9dd736da67f656844213cb7d92fd89009173b798ef2ea1` |
+| 2 | `theorem` | [IsPiSystem.pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/MeasurableSpacePiNamespaced.lean/declarations/ispisystem-pi.md) | 41 | `result-track:5b8a7906f889a36b5bffe376c639278898c89e167944ec90fb04ad55e504e678` |
+| 3 | `theorem` | [isPiSystem_pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/MeasurableSpacePiNamespaced.lean/declarations/ispisystem-pi-source-edition-2.md) | 48 | `result-track:cdc369ee143220e009915f52171fffe7c159debe9a9b6ff3a22a70689ead17df` |
+| 4 | `theorem` | [IsCountablySpanning.pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/MeasurableSpacePiNamespaced.lean/declarations/iscountablyspanning-pi.md) | 57 | `result-track:b3b47025f32b8ca94666b3bfd3070561bd7d4b6cec3a55e97b0e0ccc9036224c` |
+| 5 | `theorem` | [generateFrom_pi_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/MeasurableSpacePiNamespaced.lean/declarations/generatefrom-pi-eq.md) | 70 | `result-track:658491d0c9244fceca652428ac1468b12c3250e8e8cd3e747f231a27cba0105a` |
+| 6 | `theorem` | [generateFrom_eq_pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/MeasurableSpacePiNamespaced.lean/declarations/generatefrom-eq-pi.md) | 102 | `result-track:b13f174510e5c7cbda895ac57c37b3348fdfaab55de7cca842eb7b2370633904` |
+| 7 | `theorem` | [generateFrom_pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/MeasurableSpacePiNamespaced.lean/declarations/generatefrom-pi.md) | 109 | `result-track:0fb4d9ec950fbdd95a5eab8e2fc3fe27e232aedf9cc49d6f8fa732e730568e34` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/HashPublicEdition2.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/HashPublicEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/HashPublicEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/HashPublicEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [Hash256](../../../../../ComputerScience/AlgorithmsInComputerScience/HashPublicEdition2.lean/declarations/hash256.md) | 17 | `declaration-track:fccac812fda43e72aa2733e44e7a2a439278175ab3ea93ca84bcac8672667d4d` |
-| 2 | `abbrev` | [Hash256.algorithm](../../../../../ComputerScience/AlgorithmsInComputerScience/HashPublicEdition2.lean/declarations/hash256-algorithm.md) | 18 | `declaration-track:042af00f372824259b07823f9c9f102045717e4b2fc0d2ebddd8212e50477e2d` |
-| 3 | `abbrev` | [Hash256.hex](../../../../../ComputerScience/AlgorithmsInComputerScience/HashPublicEdition2.lean/declarations/hash256-hex.md) | 20 | `declaration-track:4c181668bf7cda332e16ed9160acf050cbcc3bdd814c783bf1375691da8dfb6c` |
-| 4 | `abbrev` | [lowerHexAlphabet](../../../../../ComputerScience/AlgorithmsInComputerScience/HashPublicEdition2.lean/declarations/lowerhexalphabet.md) | 22 | `declaration-track:fadf97c7576f282afd07e4cdca403983ba2d8e32a4f1a9e7d32b609a65327147` |
-| 5 | `abbrev` | [IsLowerHexDigit](../../../../../ComputerScience/AlgorithmsInComputerScience/HashPublicEdition2.lean/declarations/islowerhexdigit.md) | 23 | `declaration-track:03e595fc0386da4beb52c5d0b79fcbae9c655107791ed6027b0a81a93f0a2b27` |
-| 6 | `abbrev` | [Hash256.Valid](../../../../../ComputerScience/AlgorithmsInComputerScience/HashPublicEdition2.lean/declarations/hash256-valid.md) | 24 | `declaration-track:d88efcb3d2cb4b3f20da73851fb56e701a9b7c19efb0405e8fa02936927d6caa` |
-| 7 | `abbrev` | [verifyHash256](../../../../../ComputerScience/AlgorithmsInComputerScience/HashPublicEdition2.lean/declarations/verifyhash256.md) | 26 | `declaration-track:d03846b70123ffc7785738467233de5ff06ec4c7986cee2e2763fec48edab9f5` |
-| 8 | `theorem` | [verifyHash256_sound](../../../../../ComputerScience/AlgorithmsInComputerScience/HashPublicEdition2.lean/declarations/verifyhash256-sound.md) | 29 | `result-track:eefe182eb09fe1cacb4f6e618045b89127ab73d8d17e75f9781c40d49772ae96` |
+| 1 | `abbrev` | [Hash256](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/HashPublicEdition2.lean/declarations/hash256.md) | 17 | `declaration-track:fccac812fda43e72aa2733e44e7a2a439278175ab3ea93ca84bcac8672667d4d` |
+| 2 | `abbrev` | [Hash256.algorithm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/HashPublicEdition2.lean/declarations/hash256-algorithm.md) | 18 | `declaration-track:042af00f372824259b07823f9c9f102045717e4b2fc0d2ebddd8212e50477e2d` |
+| 3 | `abbrev` | [Hash256.hex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/HashPublicEdition2.lean/declarations/hash256-hex.md) | 20 | `declaration-track:4c181668bf7cda332e16ed9160acf050cbcc3bdd814c783bf1375691da8dfb6c` |
+| 4 | `abbrev` | [lowerHexAlphabet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/HashPublicEdition2.lean/declarations/lowerhexalphabet.md) | 22 | `declaration-track:fadf97c7576f282afd07e4cdca403983ba2d8e32a4f1a9e7d32b609a65327147` |
+| 5 | `abbrev` | [IsLowerHexDigit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/HashPublicEdition2.lean/declarations/islowerhexdigit.md) | 23 | `declaration-track:03e595fc0386da4beb52c5d0b79fcbae9c655107791ed6027b0a81a93f0a2b27` |
+| 6 | `abbrev` | [Hash256.Valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/HashPublicEdition2.lean/declarations/hash256-valid.md) | 24 | `declaration-track:d88efcb3d2cb4b3f20da73851fb56e701a9b7c19efb0405e8fa02936927d6caa` |
+| 7 | `abbrev` | [verifyHash256](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/HashPublicEdition2.lean/declarations/verifyhash256.md) | 26 | `declaration-track:d03846b70123ffc7785738467233de5ff06ec4c7986cee2e2763fec48edab9f5` |
+| 8 | `theorem` | [verifyHash256_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/HashPublicEdition2.lean/declarations/verifyhash256-sound.md) | 29 | `result-track:eefe182eb09fe1cacb4f6e618045b89127ab73d8d17e75f9781c40d49772ae96` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

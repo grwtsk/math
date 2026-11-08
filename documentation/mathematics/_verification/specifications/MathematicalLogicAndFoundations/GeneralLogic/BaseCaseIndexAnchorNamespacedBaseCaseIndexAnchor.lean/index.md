@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BaseCaseIndexAnchorNamespacedBaseCaseIndexAnchor.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BaseCaseIndexAnchorNamespacedBaseCaseIndexAnchor.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BaseCaseIndexAnchorNamespacedBaseCaseIndexAnchor.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BaseCaseIndexAnchorNamespacedBaseCaseIndexAnchor.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [BaseCaseIndexAnchor](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BaseCaseIndexAnchorNamespacedBaseCaseIndexAnchor.lean/declarations/basecaseindexanchor.md) | 34 | `declaration-track:db5bac5f2a0ebfe1dea75e09e0865439da0e0a2347827176be563139638bb169` |
-| 2 | `theorem` | [base_case_index_nonzero](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BaseCaseIndexAnchorNamespacedBaseCaseIndexAnchor.lean/declarations/base-case-index-nonzero.md) | 43 | `result-track:d09864addb01cde021575dafe435a4418e1442402fe456a95177500f2c0ba04d` |
-| 3 | `theorem` | [base_case_index_euler_realizes_kindex](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BaseCaseIndexAnchorNamespacedBaseCaseIndexAnchor.lean/declarations/base-case-index-euler-realizes-kindex-source-edition-2.md) | 49 | `result-track:a489fe9bbb81fde44bc950a9fafb3ecb03fee6e8643e1ac09c6a8e7a42f47d60` |
-| 4 | `theorem` | [base_case_index_euler_realizes_kIndex](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BaseCaseIndexAnchorNamespacedBaseCaseIndexAnchor.lean/declarations/base-case-index-euler-realizes-kindex.md) | 55 | `result-track:3380dc6a24439baa638db47f3cb5f1e7611fec6d01721444e1181dafe2d4fd30` |
-| 5 | `theorem` | [base_case_anchor_euler_nonzero](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BaseCaseIndexAnchorNamespacedBaseCaseIndexAnchor.lean/declarations/base-case-anchor-euler-nonzero.md) | 61 | `result-track:ff083a2e989cbbd870bcf13662834b636a0e6c2371f315b69c981fbb59789e9b` |
+| 1 | `structure` | [BaseCaseIndexAnchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BaseCaseIndexAnchorNamespacedBaseCaseIndexAnchor.lean/declarations/basecaseindexanchor.md) | 34 | `declaration-track:db5bac5f2a0ebfe1dea75e09e0865439da0e0a2347827176be563139638bb169` |
+| 2 | `theorem` | [base_case_index_nonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BaseCaseIndexAnchorNamespacedBaseCaseIndexAnchor.lean/declarations/base-case-index-nonzero.md) | 43 | `result-track:d09864addb01cde021575dafe435a4418e1442402fe456a95177500f2c0ba04d` |
+| 3 | `theorem` | [base_case_index_euler_realizes_kindex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BaseCaseIndexAnchorNamespacedBaseCaseIndexAnchor.lean/declarations/base-case-index-euler-realizes-kindex-source-edition-2.md) | 49 | `result-track:a489fe9bbb81fde44bc950a9fafb3ecb03fee6e8643e1ac09c6a8e7a42f47d60` |
+| 4 | `theorem` | [base_case_index_euler_realizes_kIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BaseCaseIndexAnchorNamespacedBaseCaseIndexAnchor.lean/declarations/base-case-index-euler-realizes-kindex.md) | 55 | `result-track:3380dc6a24439baa638db47f3cb5f1e7611fec6d01721444e1181dafe2d4fd30` |
+| 5 | `theorem` | [base_case_anchor_euler_nonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BaseCaseIndexAnchorNamespacedBaseCaseIndexAnchor.lean/declarations/base-case-anchor-euler-nonzero.md) | 61 | `result-track:ff083a2e989cbbd870bcf13662834b636a0e6c2371f315b69c981fbb59789e9b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

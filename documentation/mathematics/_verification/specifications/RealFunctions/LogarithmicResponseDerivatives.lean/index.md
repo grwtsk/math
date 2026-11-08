@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/LogarithmicResponseDerivatives.lean/index.md) · [Full source](../../../../RealFunctions/LogarithmicResponseDerivatives.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/LogarithmicResponseDerivatives.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/LogarithmicResponseDerivatives.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,8 +47,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `Mathlib.Analysis.SpecialFunctions.ExpDeriv` — import line 1; external provider; requires a separately pinned dependency.
-- [`GRWTSK.NumberTheory.Moebius.LogarithmicResponse`](../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/LogarithmicResponse.lean/index.md) — import line 2; pinned internal source present.
-- [`GRWTSK.NumberTheory.Moebius.FiniteTranslationProduct`](../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/FiniteTranslationProduct.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.LogarithmicResponse`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/LogarithmicResponse.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.FiniteTranslationProduct`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/FiniteTranslationProduct.lean/index.md) — import line 3; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [atom_smooth_branch_derivative](../../../../RealFunctions/LogarithmicResponseDerivatives.lean/declarations/atom-smooth-branch-derivative.md) | 15 | `result-track:571413448b83d7f82ebf96e536f5a4b2d9a90b6932c66c083fa68d60bd931c2f` |
-| 2 | `theorem` | [atom_right_derivative_at_entry](../../../../RealFunctions/LogarithmicResponseDerivatives.lean/declarations/atom-right-derivative-at-entry.md) | 24 | `result-track:6117a1746e7a5c3d9f0e4316b05c940419146250fa71a49eed869077eaba6d81` |
-| 3 | `theorem` | [atom_left_derivative_at_entry](../../../../RealFunctions/LogarithmicResponseDerivatives.lean/declarations/atom-left-derivative-at-entry.md) | 36 | `result-track:37614ce8ea8953d2b97765959ba9e539bf860683744136d6c7c6ef32463c2f48` |
-| 4 | `theorem` | [atom_derivative_jump](../../../../RealFunctions/LogarithmicResponseDerivatives.lean/declarations/atom-derivative-jump.md) | 49 | `result-track:d3233fc3f0c849962876f8cee1d863b2de3e7195c2696a02511fb704cee2f9d1` |
-| 5 | `theorem` | [signed_atom_derivative_jump](../../../../RealFunctions/LogarithmicResponseDerivatives.lean/declarations/signed-atom-derivative-jump.md) | 57 | `result-track:5007eb25d96600fa5b30526a15b9c746fa01e09755960c59151f78090459cd09` |
-| 6 | `theorem` | [atom_not_differentiable_at_entry](../../../../RealFunctions/LogarithmicResponseDerivatives.lean/declarations/atom-not-differentiable-at-entry.md) | 70 | `result-track:9775d683db4ebdea4319b4774ec4e5a60a0d94a74f01b88ebeb3ed3a96088c0a` |
+| 1 | `theorem` | [atom_smooth_branch_derivative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/LogarithmicResponseDerivatives.lean/declarations/atom-smooth-branch-derivative.md) | 15 | `result-track:571413448b83d7f82ebf96e536f5a4b2d9a90b6932c66c083fa68d60bd931c2f` |
+| 2 | `theorem` | [atom_right_derivative_at_entry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/LogarithmicResponseDerivatives.lean/declarations/atom-right-derivative-at-entry.md) | 24 | `result-track:6117a1746e7a5c3d9f0e4316b05c940419146250fa71a49eed869077eaba6d81` |
+| 3 | `theorem` | [atom_left_derivative_at_entry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/LogarithmicResponseDerivatives.lean/declarations/atom-left-derivative-at-entry.md) | 36 | `result-track:37614ce8ea8953d2b97765959ba9e539bf860683744136d6c7c6ef32463c2f48` |
+| 4 | `theorem` | [atom_derivative_jump](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/LogarithmicResponseDerivatives.lean/declarations/atom-derivative-jump.md) | 49 | `result-track:d3233fc3f0c849962876f8cee1d863b2de3e7195c2696a02511fb704cee2f9d1` |
+| 5 | `theorem` | [signed_atom_derivative_jump](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/LogarithmicResponseDerivatives.lean/declarations/signed-atom-derivative-jump.md) | 57 | `result-track:5007eb25d96600fa5b30526a15b9c746fa01e09755960c59151f78090459cd09` |
+| 6 | `theorem` | [atom_not_differentiable_at_entry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/LogarithmicResponseDerivatives.lean/declarations/atom-not-differentiable-at-entry.md) | 70 | `result-track:9775d683db4ebdea4319b4774ec4e5a60a0d94a74f01b88ebeb3ed3a96088c0a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

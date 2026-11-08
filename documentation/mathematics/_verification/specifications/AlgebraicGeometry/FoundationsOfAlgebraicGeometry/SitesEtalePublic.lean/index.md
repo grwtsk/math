@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SitesEtalePublic.lean/index.md) · [Full source](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SitesEtalePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SitesEtalePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SitesEtalePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [etalePrecoverage](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SitesEtalePublic.lean/declarations/etaleprecoverage.md) | 32 | `declaration-track:5f372508af135aa1848babef9ea277455a221b3ece06781b95315899b6ad0fa6` |
-| 2 | `def` | [etalePretopology](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SitesEtalePublic.lean/declarations/etalepretopology.md) | 36 | `declaration-track:a9dc928239097c53cab541163a8468b733d84fef4e7f9264cf4f155764709250` |
-| 3 | `abbrev` | [etaleTopology](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SitesEtalePublic.lean/declarations/etaletopology.md) | 40 | `declaration-track:c7a890eac509dd92c7d5b28825c3cbf70740b7d8c8ecd605faa7a32e5e99a5c9` |
-| 4 | `lemma` | [zariskiTopology_le_etaleTopology](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SitesEtalePublic.lean/declarations/zariskitopology-le-etaletopology.md) | 43 | `result-track:b7152b25329e39d6dbf0675f7afb3976158cce8015f2eea420d538bfbb4090ca` |
-| 5 | `def` | [smallEtaleTopology](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SitesEtalePublic.lean/declarations/smalletaletopology.md) | 50 | `declaration-track:a20b6a3af08ba2eca5cf8c349b1c6b843cf2969d31948b94779c0346a45bbf8a` |
-| 6 | `def` | [smallEtalePretopology](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SitesEtalePublic.lean/declarations/smalletalepretopology.md) | 55 | `declaration-track:af7688c858cff1dedc029efdb5ef144496d6407090820a232914e5f08a4462a0` |
-| 7 | `lemma` | [ofArrows_mem_smallEtaleTopology_iff](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SitesEtalePublic.lean/declarations/ofarrows-mem-smalletaletopology-iff.md) | 60 | `result-track:6e5e9972818bf4d2f0333b150fe37896698c9996b54e5f0c9d51dc99b49c7f50` |
-| 8 | `instance` | [(anonymous)](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SitesEtalePublic.lean/declarations/instance.md) | 89 | `declaration-track:c34d868819dc67519748a264ad424969d0210c41521c0368440107f1e8f987e6` |
-| 9 | `def` | [geometricFiber](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SitesEtalePublic.lean/declarations/geometricfiber.md) | 96 | `declaration-track:674d14b21deb05a1e54ecd7b5510fd0eb40602fb6b83052435584009d1d34c65` |
+| 1 | `def` | [etalePrecoverage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SitesEtalePublic.lean/declarations/etaleprecoverage.md) | 32 | `declaration-track:5f372508af135aa1848babef9ea277455a221b3ece06781b95315899b6ad0fa6` |
+| 2 | `def` | [etalePretopology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SitesEtalePublic.lean/declarations/etalepretopology.md) | 36 | `declaration-track:a9dc928239097c53cab541163a8468b733d84fef4e7f9264cf4f155764709250` |
+| 3 | `abbrev` | [etaleTopology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SitesEtalePublic.lean/declarations/etaletopology.md) | 40 | `declaration-track:c7a890eac509dd92c7d5b28825c3cbf70740b7d8c8ecd605faa7a32e5e99a5c9` |
+| 4 | `lemma` | [zariskiTopology_le_etaleTopology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SitesEtalePublic.lean/declarations/zariskitopology-le-etaletopology.md) | 43 | `result-track:b7152b25329e39d6dbf0675f7afb3976158cce8015f2eea420d538bfbb4090ca` |
+| 5 | `def` | [smallEtaleTopology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SitesEtalePublic.lean/declarations/smalletaletopology.md) | 50 | `declaration-track:a20b6a3af08ba2eca5cf8c349b1c6b843cf2969d31948b94779c0346a45bbf8a` |
+| 6 | `def` | [smallEtalePretopology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SitesEtalePublic.lean/declarations/smalletalepretopology.md) | 55 | `declaration-track:af7688c858cff1dedc029efdb5ef144496d6407090820a232914e5f08a4462a0` |
+| 7 | `lemma` | [ofArrows_mem_smallEtaleTopology_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SitesEtalePublic.lean/declarations/ofarrows-mem-smalletaletopology-iff.md) | 60 | `result-track:6e5e9972818bf4d2f0333b150fe37896698c9996b54e5f0c9d51dc99b49c7f50` |
+| 8 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SitesEtalePublic.lean/declarations/instance.md) | 89 | `declaration-track:c34d868819dc67519748a264ad424969d0210c41521c0368440107f1e8f987e6` |
+| 9 | `def` | [geometricFiber](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/SitesEtalePublic.lean/declarations/geometricfiber.md) | 96 | `declaration-track:674d14b21deb05a1e54ecd7b5510fd0eb40602fb6b83052435584009d1d34c65` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

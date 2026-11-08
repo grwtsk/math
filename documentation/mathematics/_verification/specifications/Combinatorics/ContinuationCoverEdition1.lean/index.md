@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ContinuationCoverEdition1.lean/index.md) · [Full source](../../../../Combinatorics/ContinuationCoverEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContinuationCoverEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContinuationCoverEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ContinuationCover](../../../../Combinatorics/ContinuationCoverEdition1.lean/declarations/continuationcover.md) | 14 | `declaration-track:8591bb07f011bdd558ee596749d852dcc28eb2026dec473f161b8339432b2a81` |
-| 2 | `theorem` | [parent_infeasible_of_continuation_cover](../../../../Combinatorics/ContinuationCoverEdition1.lean/declarations/parent-infeasible-of-continuation-cover.md) | 34 | `result-track:aefebf6a09478d7de7ca36b9318f53ab902cb388b00b6724562b33deab7854fd` |
+| 1 | `structure` | [ContinuationCover](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContinuationCoverEdition1.lean/declarations/continuationcover.md) | 14 | `declaration-track:8591bb07f011bdd558ee596749d852dcc28eb2026dec473f161b8339432b2a81` |
+| 2 | `theorem` | [parent_infeasible_of_continuation_cover](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContinuationCoverEdition1.lean/declarations/parent-infeasible-of-continuation-cover.md) | 34 | `result-track:aefebf6a09478d7de7ca36b9318f53ab902cb388b00b6724562b33deab7854fd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

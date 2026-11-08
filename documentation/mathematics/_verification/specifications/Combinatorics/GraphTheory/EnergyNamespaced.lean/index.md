@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/EnergyNamespaced.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/EnergyNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/EnergyNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/EnergyNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,10 +60,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [energy](../../../../../Combinatorics/GraphTheory/EnergyNamespaced.lean/declarations/energy.md) | 43 | `declaration-track:c758557c88e9930bc8077ae83734f9c837d8f01faec40903af95c33ca2b207e0` |
-| 2 | `theorem` | [energy_nonneg](../../../../../Combinatorics/GraphTheory/EnergyNamespaced.lean/declarations/energy-nonneg.md) | 46 | `result-track:95818ab75a4b9d5f30bfbea9642646843dc3cbb1d15996257886d972b0e35254` |
-| 3 | `theorem` | [energy_le_one](../../../../../Combinatorics/GraphTheory/EnergyNamespaced.lean/declarations/energy-le-one.md) | 49 | `result-track:0b2a259e6bf36c17ca914073c21533526c432d5a77c1cb12685dc71d36d60c57` |
-| 4 | `theorem` | [coe_energy](../../../../../Combinatorics/GraphTheory/EnergyNamespaced.lean/declarations/coe-energy.md) | 63 | `result-track:47c0df1ff64f7e39f16fd683b197f8a96468e9c039d378aba92d38759fc9b76b` |
+| 1 | `def` | [energy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/EnergyNamespaced.lean/declarations/energy.md) | 43 | `declaration-track:c758557c88e9930bc8077ae83734f9c837d8f01faec40903af95c33ca2b207e0` |
+| 2 | `theorem` | [energy_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/EnergyNamespaced.lean/declarations/energy-nonneg.md) | 46 | `result-track:95818ab75a4b9d5f30bfbea9642646843dc3cbb1d15996257886d972b0e35254` |
+| 3 | `theorem` | [energy_le_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/EnergyNamespaced.lean/declarations/energy-le-one.md) | 49 | `result-track:0b2a259e6bf36c17ca914073c21533526c432d5a77c1cb12685dc71d36d60c57` |
+| 4 | `theorem` | [coe_energy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/EnergyNamespaced.lean/declarations/coe-energy.md) | 63 | `result-track:47c0df1ff64f7e39f16fd683b197f8a96468e9c039d378aba92d38759fc9b76b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

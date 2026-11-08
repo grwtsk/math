@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceFiveCesaroPrimitiveConsumer.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceFiveCesaroPrimitiveConsumer.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFiveCesaroPrimitiveConsumer.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFiveCesaroPrimitiveConsumer.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [remainingAtomWork_lower_of_five_cesaro](../../../../MeasureAndIntegration/SourceFiveCesaroPrimitiveConsumer.lean/declarations/remainingatomwork-lower-of-five-cesaro.md) | 28 | `result-track:97d2dcd6bc54c6bc90f16a6adffc79e702b14280b9aa941fcc2c4f77e9263955` |
-| 2 | `theorem` | [estimate_of_five_cesaro_global](../../../../MeasureAndIntegration/SourceFiveCesaroPrimitiveConsumer.lean/declarations/estimate-of-five-cesaro-global.md) | 71 | `result-track:3a8a8cb58864121bb41a34e1d7bbe34d6f174dfa65e5ed74b86e4e42cedde6ad` |
-| 3 | `theorem` | [all_real_source_lower_of_five_cesaro_global](../../../../MeasureAndIntegration/SourceFiveCesaroPrimitiveConsumer.lean/declarations/all-real-source-lower-of-five-cesaro-global.md) | 80 | `result-track:5a4be5c3df18952939a3611a4be569d18ce60304163954040ba76b5da38cf6fc` |
-| 4 | `theorem` | [estimate_of_five_cesaro_global_exists](../../../../MeasureAndIntegration/SourceFiveCesaroPrimitiveConsumer.lean/declarations/estimate-of-five-cesaro-global-exists.md) | 93 | `result-track:894e39c78002cdbf7722fe006761fc9558620e4e344c9aef145391c34a0a3e53` |
+| 1 | `theorem` | [remainingAtomWork_lower_of_five_cesaro](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFiveCesaroPrimitiveConsumer.lean/declarations/remainingatomwork-lower-of-five-cesaro.md) | 28 | `result-track:97d2dcd6bc54c6bc90f16a6adffc79e702b14280b9aa941fcc2c4f77e9263955` |
+| 2 | `theorem` | [estimate_of_five_cesaro_global](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFiveCesaroPrimitiveConsumer.lean/declarations/estimate-of-five-cesaro-global.md) | 71 | `result-track:3a8a8cb58864121bb41a34e1d7bbe34d6f174dfa65e5ed74b86e4e42cedde6ad` |
+| 3 | `theorem` | [all_real_source_lower_of_five_cesaro_global](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFiveCesaroPrimitiveConsumer.lean/declarations/all-real-source-lower-of-five-cesaro-global.md) | 80 | `result-track:5a4be5c3df18952939a3611a4be569d18ce60304163954040ba76b5da38cf6fc` |
+| 4 | `theorem` | [estimate_of_five_cesaro_global_exists](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceFiveCesaroPrimitiveConsumer.lean/declarations/estimate-of-five-cesaro-global-exists.md) | 93 | `result-track:894e39c78002cdbf7722fe006761fc9558620e4e344c9aef145391c34a0a3e53` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

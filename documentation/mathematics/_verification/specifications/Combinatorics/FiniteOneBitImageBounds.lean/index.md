@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/FiniteOneBitImageBounds.lean/index.md) · [Full source](../../../../Combinatorics/FiniteOneBitImageBounds.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteOneBitImageBounds.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteOneBitImageBounds.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -51,7 +51,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 - `Batteries.Data.Nat.Lemmas` — import line 21; external provider; requires a separately pinned dependency.
 - `Mathlib.Data.Fintype.BigOperators` — import line 22; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 23; external provider; requires a separately pinned dependency.
-- [One Bit Image Quotient](../../../../MathematicalLogicAndFoundations/GeneralLogic/OneBitImageQuotient.lean/index.md) — import line 25; pinned internal source present.
+- [One Bit Image Quotient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OneBitImageQuotient.lean/index.md) — import line 25; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -62,11 +62,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [effectiveStates](../../../../Combinatorics/FiniteOneBitImageBounds.lean/declarations/effectivestates.md) | 57 | `declaration-track:d1b56a56311e78625284a017d7cc56b303e8aab8f65851f46c70b524be905754` |
-| 2 | `theorem` | [mem_effectiveStates_iff](../../../../Combinatorics/FiniteOneBitImageBounds.lean/declarations/mem-effectivestates-iff.md) | 64 | `result-track:3385572299794ec489c217511187f92a0a83aba4ff1bb9da4d96a542642d538c` |
-| 3 | `theorem` | [card_effectiveStates_le_domain](../../../../Combinatorics/FiniteOneBitImageBounds.lean/declarations/card-effectivestates-le-domain.md) | 73 | `result-track:50f20d1cd882b29ca1718b3c176a2b2ec2ff1ac8e2b50527be20eb08429f70e5` |
-| 4 | `theorem` | [card_bitMatrix](../../../../Combinatorics/FiniteOneBitImageBounds.lean/declarations/card-bitmatrix.md) | 86 | `result-track:061a97ce998011fe12346de563df713243d353fdd70059e468a0f200284b05eb` |
-| 5 | `theorem` | [card_effectiveStates_le_bits](../../../../Combinatorics/FiniteOneBitImageBounds.lean/declarations/card-effectivestates-le-bits.md) | 98 | `result-track:a5216e48540e3cb48be49accd9ab9bb93b0be9911d5fc97911b37ba295ffb834` |
+| 1 | `def` | [effectiveStates](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteOneBitImageBounds.lean/declarations/effectivestates.md) | 57 | `declaration-track:d1b56a56311e78625284a017d7cc56b303e8aab8f65851f46c70b524be905754` |
+| 2 | `theorem` | [mem_effectiveStates_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteOneBitImageBounds.lean/declarations/mem-effectivestates-iff.md) | 64 | `result-track:3385572299794ec489c217511187f92a0a83aba4ff1bb9da4d96a542642d538c` |
+| 3 | `theorem` | [card_effectiveStates_le_domain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteOneBitImageBounds.lean/declarations/card-effectivestates-le-domain.md) | 73 | `result-track:50f20d1cd882b29ca1718b3c176a2b2ec2ff1ac8e2b50527be20eb08429f70e5` |
+| 4 | `theorem` | [card_bitMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteOneBitImageBounds.lean/declarations/card-bitmatrix.md) | 86 | `result-track:061a97ce998011fe12346de563df713243d353fdd70059e468a0f200284b05eb` |
+| 5 | `theorem` | [card_effectiveStates_le_bits](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteOneBitImageBounds.lean/declarations/card-effectivestates-le-bits.md) | 98 | `result-track:a5216e48540e3cb48be49accd9ab9bb93b0be9911d5fc97911b37ba295ffb834` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

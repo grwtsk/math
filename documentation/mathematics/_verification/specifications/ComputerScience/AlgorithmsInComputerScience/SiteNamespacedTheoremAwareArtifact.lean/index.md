@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/SiteNamespacedTheoremAwareArtifact.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/SiteNamespacedTheoremAwareArtifact.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SiteNamespacedTheoremAwareArtifact.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SiteNamespacedTheoremAwareArtifact.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TheoremAwareArtifact](../../../../../ComputerScience/AlgorithmsInComputerScience/SiteNamespacedTheoremAwareArtifact.lean/declarations/theoremawareartifact.md) | 15 | `declaration-track:229cd30b953e04a65c0e28509031449c6f1ba7d2e7c5ccf86ab2ce024fb05fe1` |
-| 2 | `structure` | [CoveringFamily](../../../../../ComputerScience/AlgorithmsInComputerScience/SiteNamespacedTheoremAwareArtifact.lean/declarations/coveringfamily.md) | 21 | `declaration-track:64966f9cfa254cfc8ff9288c1ab7b5fabbaa3f55416369f707ead7600ff244a8` |
-| 3 | `structure` | [SurfaceSite](../../../../../ComputerScience/AlgorithmsInComputerScience/SiteNamespacedTheoremAwareArtifact.lean/declarations/surfacesite.md) | 28 | `declaration-track:2c9ba5ade1ce7a29d7553ebaa854464d410fc66580b78ec2a76a06786d702b0b` |
-| 4 | `theorem` | [coveringFamily_foundation_compatible](../../../../../ComputerScience/AlgorithmsInComputerScience/SiteNamespacedTheoremAwareArtifact.lean/declarations/coveringfamily-foundation-compatible.md) | 33 | `result-track:384201e3e2bda87e6a4ec71f501d7d3c9309630bcfbfe6e38298e2458f299ddf` |
-| 5 | `theorem` | [coveringFamily_gamma_compatible](../../../../../ComputerScience/AlgorithmsInComputerScience/SiteNamespacedTheoremAwareArtifact.lean/declarations/coveringfamily-gamma-compatible.md) | 39 | `result-track:da6b5cf312dd04f99ae3a05660f3fb4241d0da62c2fca18bc7ad95b48cf689e0` |
+| 1 | `structure` | [TheoremAwareArtifact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SiteNamespacedTheoremAwareArtifact.lean/declarations/theoremawareartifact.md) | 15 | `declaration-track:229cd30b953e04a65c0e28509031449c6f1ba7d2e7c5ccf86ab2ce024fb05fe1` |
+| 2 | `structure` | [CoveringFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SiteNamespacedTheoremAwareArtifact.lean/declarations/coveringfamily.md) | 21 | `declaration-track:64966f9cfa254cfc8ff9288c1ab7b5fabbaa3f55416369f707ead7600ff244a8` |
+| 3 | `structure` | [SurfaceSite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SiteNamespacedTheoremAwareArtifact.lean/declarations/surfacesite.md) | 28 | `declaration-track:2c9ba5ade1ce7a29d7553ebaa854464d410fc66580b78ec2a76a06786d702b0b` |
+| 4 | `theorem` | [coveringFamily_foundation_compatible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SiteNamespacedTheoremAwareArtifact.lean/declarations/coveringfamily-foundation-compatible.md) | 33 | `result-track:384201e3e2bda87e6a4ec71f501d7d3c9309630bcfbfe6e38298e2458f299ddf` |
+| 5 | `theorem` | [coveringFamily_gamma_compatible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SiteNamespacedTheoremAwareArtifact.lean/declarations/coveringfamily-gamma-compatible.md) | 39 | `result-track:da6b5cf312dd04f99ae3a05660f3fb4241d0da62c2fca18bc7ad95b48cf689e0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

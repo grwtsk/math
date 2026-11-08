@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/PrismMesh.lean/index.md) · [Full source](../../../../RealFunctions/PrismMesh.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PrismMesh.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PrismMesh.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,18 +58,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [MeshOrientation](../../../../RealFunctions/PrismMesh.lean/declarations/meshorientation.md) | 18 | `declaration-track:45bfda34bc5d158d18c16a99273f33e50ebbdc79a4689fc8154faeaefde3685a` |
-| 2 | `structure` | [PrismMesh](../../../../RealFunctions/PrismMesh.lean/declarations/prismmesh.md) | 25 | `declaration-track:74ed88defa4cb557e8805ce075bb76716e53bdcb97d34b9345b99ec2eb5b0452` |
-| 3 | `abbrev` | [ActiveCell](../../../../RealFunctions/PrismMesh.lean/declarations/activecell.md) | 65 | `declaration-track:e09ad18cdbebcf6147bdca51b9fcc63bc376b6ae6c9eb9fd0ac6fd65ce5f7419` |
-| 4 | `def` | [activeCellId](../../../../RealFunctions/PrismMesh.lean/declarations/activecellid.md) | 69 | `declaration-track:a80dcbea2f161b99c2b0f304352e9ff5780fe7b3c834b92e16edce3748175bec` |
-| 5 | `theorem` | [activeCellId_injective](../../../../RealFunctions/PrismMesh.lean/declarations/activecellid-injective.md) | 73 | `result-track:3cfef4d707f52ab64af705cc1712514a5e872b1bdc0a5cee21263099ace87857` |
-| 6 | `theorem` | [activeCell_mem](../../../../RealFunctions/PrismMesh.lean/declarations/activecell-mem.md) | 78 | `result-track:9a8e3e28dad40afc8b7db51be93fb15b33fac58c975589181259ffbbc7272059` |
-| 7 | `theorem` | [boundaryCell_active](../../../../RealFunctions/PrismMesh.lean/declarations/boundarycell-active.md) | 85 | `result-track:67204e4a4787757e986a212bd329c41508794a8c186e53211e0afdccd169708d` |
-| 8 | `theorem` | [boundaryCell_mem](../../../../RealFunctions/PrismMesh.lean/declarations/boundarycell-mem.md) | 92 | `result-track:c5995d3b1668a69c4a3ba468c81581af98b8c83c448965086461b23f9b21ef1f` |
-| 9 | `theorem` | [obstacleCell_active](../../../../RealFunctions/PrismMesh.lean/declarations/obstaclecell-active.md) | 99 | `result-track:894513fd9ea2d880b91f911b61c8ed6921c66685de5917c2d5bc826aa449b289` |
-| 10 | `theorem` | [obstacleCell_mem](../../../../RealFunctions/PrismMesh.lean/declarations/obstaclecell-mem.md) | 106 | `result-track:15b770b2fef6c006b36bbd5cf2e336675a9315cf9ea33ff6fd0adb959de7a262` |
-| 11 | `theorem` | [interpolation_partition_of_unity](../../../../RealFunctions/PrismMesh.lean/declarations/interpolation-partition-of-unity.md) | 113 | `result-track:9c690e91b1c2dacfe1591c359413adc91146e048b1b7c21b03fdd3d5b68b1ee0` |
-| 12 | `theorem` | [interpolationWeight_eq_zero_of_not_mem](../../../../RealFunctions/PrismMesh.lean/declarations/interpolationweight-eq-zero-of-not-mem.md) | 123 | `result-track:757deab9746d93fa2f6c5ae10b2f66953974c1309582e6988c5d65fe27473cb1` |
+| 1 | `inductive` | [MeshOrientation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PrismMesh.lean/declarations/meshorientation.md) | 18 | `declaration-track:45bfda34bc5d158d18c16a99273f33e50ebbdc79a4689fc8154faeaefde3685a` |
+| 2 | `structure` | [PrismMesh](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PrismMesh.lean/declarations/prismmesh.md) | 25 | `declaration-track:74ed88defa4cb557e8805ce075bb76716e53bdcb97d34b9345b99ec2eb5b0452` |
+| 3 | `abbrev` | [ActiveCell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PrismMesh.lean/declarations/activecell.md) | 65 | `declaration-track:e09ad18cdbebcf6147bdca51b9fcc63bc376b6ae6c9eb9fd0ac6fd65ce5f7419` |
+| 4 | `def` | [activeCellId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PrismMesh.lean/declarations/activecellid.md) | 69 | `declaration-track:a80dcbea2f161b99c2b0f304352e9ff5780fe7b3c834b92e16edce3748175bec` |
+| 5 | `theorem` | [activeCellId_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PrismMesh.lean/declarations/activecellid-injective.md) | 73 | `result-track:3cfef4d707f52ab64af705cc1712514a5e872b1bdc0a5cee21263099ace87857` |
+| 6 | `theorem` | [activeCell_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PrismMesh.lean/declarations/activecell-mem.md) | 78 | `result-track:9a8e3e28dad40afc8b7db51be93fb15b33fac58c975589181259ffbbc7272059` |
+| 7 | `theorem` | [boundaryCell_active](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PrismMesh.lean/declarations/boundarycell-active.md) | 85 | `result-track:67204e4a4787757e986a212bd329c41508794a8c186e53211e0afdccd169708d` |
+| 8 | `theorem` | [boundaryCell_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PrismMesh.lean/declarations/boundarycell-mem.md) | 92 | `result-track:c5995d3b1668a69c4a3ba468c81581af98b8c83c448965086461b23f9b21ef1f` |
+| 9 | `theorem` | [obstacleCell_active](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PrismMesh.lean/declarations/obstaclecell-active.md) | 99 | `result-track:894513fd9ea2d880b91f911b61c8ed6921c66685de5917c2d5bc826aa449b289` |
+| 10 | `theorem` | [obstacleCell_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PrismMesh.lean/declarations/obstaclecell-mem.md) | 106 | `result-track:15b770b2fef6c006b36bbd5cf2e336675a9315cf9ea33ff6fd0adb959de7a262` |
+| 11 | `theorem` | [interpolation_partition_of_unity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PrismMesh.lean/declarations/interpolation-partition-of-unity.md) | 113 | `result-track:9c690e91b1c2dacfe1591c359413adc91146e048b1b7c21b03fdd3d5b68b1ee0` |
+| 12 | `theorem` | [interpolationWeight_eq_zero_of_not_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PrismMesh.lean/declarations/interpolationweight-eq-zero-of-not-mem.md) | 123 | `result-track:757deab9746d93fa2f6c5ae10b2f66953974c1309582e6988c5d65fe27473cb1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

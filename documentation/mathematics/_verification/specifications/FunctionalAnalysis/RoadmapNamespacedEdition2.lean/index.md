@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/RoadmapNamespacedEdition2.lean/index.md) · [Full source](../../../../FunctionalAnalysis/RoadmapNamespacedEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/RoadmapNamespacedEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/RoadmapNamespacedEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -86,7 +86,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [roadmapLabel](../../../../FunctionalAnalysis/RoadmapNamespacedEdition2.lean/declarations/roadmaplabel.md) | 76 | `declaration-track:21cf0a877af77cf6f64f0626dabe5297eab556a44e7706aadaaae4bb6840d6ab` |
+| 1 | `def` | [roadmapLabel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/RoadmapNamespacedEdition2.lean/declarations/roadmaplabel.md) | 76 | `declaration-track:21cf0a877af77cf6f64f0626dabe5297eab556a44e7706aadaaae4bb6840d6ab` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

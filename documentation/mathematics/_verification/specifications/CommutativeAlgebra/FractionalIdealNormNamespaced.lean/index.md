@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/FractionalIdealNormNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/FractionalIdealNormNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FractionalIdealNormNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FractionalIdealNormNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,17 +59,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [absNorm_div_norm_eq_absNorm_div_norm](../../../../CommutativeAlgebra/FractionalIdealNormNamespaced.lean/declarations/absnorm-div-norm-eq-absnorm-div-norm.md) | 45 | `result-track:c638a04db66dd48de97c454bf69c223ee7ae3202db7fa9751d64b490a723db80` |
-| 2 | `def` | [absNorm](../../../../CommutativeAlgebra/FractionalIdealNormNamespaced.lean/declarations/absnorm.md) | 64 | `declaration-track:5cb51165e7c1fb45fa7aa8a3b324b830c0f8d0dd868be90644fd3c009f9a1dfd` |
-| 3 | `theorem` | [absNorm_eq](../../../../CommutativeAlgebra/FractionalIdealNormNamespaced.lean/declarations/absnorm-eq-source-edition-2.md) | 82 | `result-track:b58ba4ccb7305fb528b94a7f8c56d1591c814ade77ce920fbda790c67c194f19` |
-| 4 | `theorem` | [absNorm_eq'](../../../../CommutativeAlgebra/FractionalIdealNormNamespaced.lean/declarations/absnorm-eq.md) | 85 | `result-track:35fcc8e0f188a7024036de548c018a5573848f0bf63c3232a23d3ad04c56c01a` |
-| 5 | `theorem` | [absNorm_nonneg](../../../../CommutativeAlgebra/FractionalIdealNormNamespaced.lean/declarations/absnorm-nonneg.md) | 91 | `result-track:2e0724efadfcf4c079d51998cb1754cee67e9b97b0aa17aca3fed3b3c654faf1` |
-| 6 | `theorem` | [absNorm_bot](../../../../CommutativeAlgebra/FractionalIdealNormNamespaced.lean/declarations/absnorm-bot.md) | 93 | `result-track:9d4718186eaab57c9d427f0740e8b87769593c7b9af8c0dec70e60e3c172115c` |
-| 7 | `theorem` | [absNorm_one](../../../../CommutativeAlgebra/FractionalIdealNormNamespaced.lean/declarations/absnorm-one.md) | 95 | `result-track:bc4092edebebb8ea2c190fedbf6a62da639817b001c629c1cef53b2df681ad98` |
-| 8 | `theorem` | [absNorm_eq_zero_iff](../../../../CommutativeAlgebra/FractionalIdealNormNamespaced.lean/declarations/absnorm-eq-zero-iff.md) | 97 | `result-track:564624ef9f39b582b41eec35a08d67c90f642c86e4dbc91b698e781a141818bf` |
-| 9 | `theorem` | [coeIdeal_absNorm](../../../../CommutativeAlgebra/FractionalIdealNormNamespaced.lean/declarations/coeideal-absnorm.md) | 104 | `result-track:73ab24da0d08372bca1df203f41ea665e4c8ad1ee4f47d3f208b003f7fb7803d` |
-| 10 | `theorem` | [abs_det_basis_change](../../../../CommutativeAlgebra/FractionalIdealNormNamespaced.lean/declarations/abs-det-basis-change.md) | 113 | `result-track:a8402d731bb3883dc63794c509bf79b9ba6c3ecfa9e9678e4412530d62da6629` |
-| 11 | `theorem` | [absNorm_span_singleton](../../../../CommutativeAlgebra/FractionalIdealNormNamespaced.lean/declarations/absnorm-span-singleton.md) | 139 | `result-track:077b35c31e12a1707774462a0b19097f39661ecd920076f3bbb4cdb62a0aeb21` |
+| 1 | `theorem` | [absNorm_div_norm_eq_absNorm_div_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FractionalIdealNormNamespaced.lean/declarations/absnorm-div-norm-eq-absnorm-div-norm.md) | 45 | `result-track:c638a04db66dd48de97c454bf69c223ee7ae3202db7fa9751d64b490a723db80` |
+| 2 | `def` | [absNorm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FractionalIdealNormNamespaced.lean/declarations/absnorm.md) | 64 | `declaration-track:5cb51165e7c1fb45fa7aa8a3b324b830c0f8d0dd868be90644fd3c009f9a1dfd` |
+| 3 | `theorem` | [absNorm_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FractionalIdealNormNamespaced.lean/declarations/absnorm-eq-source-edition-2.md) | 82 | `result-track:b58ba4ccb7305fb528b94a7f8c56d1591c814ade77ce920fbda790c67c194f19` |
+| 4 | `theorem` | [absNorm_eq'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FractionalIdealNormNamespaced.lean/declarations/absnorm-eq.md) | 85 | `result-track:35fcc8e0f188a7024036de548c018a5573848f0bf63c3232a23d3ad04c56c01a` |
+| 5 | `theorem` | [absNorm_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FractionalIdealNormNamespaced.lean/declarations/absnorm-nonneg.md) | 91 | `result-track:2e0724efadfcf4c079d51998cb1754cee67e9b97b0aa17aca3fed3b3c654faf1` |
+| 6 | `theorem` | [absNorm_bot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FractionalIdealNormNamespaced.lean/declarations/absnorm-bot.md) | 93 | `result-track:9d4718186eaab57c9d427f0740e8b87769593c7b9af8c0dec70e60e3c172115c` |
+| 7 | `theorem` | [absNorm_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FractionalIdealNormNamespaced.lean/declarations/absnorm-one.md) | 95 | `result-track:bc4092edebebb8ea2c190fedbf6a62da639817b001c629c1cef53b2df681ad98` |
+| 8 | `theorem` | [absNorm_eq_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FractionalIdealNormNamespaced.lean/declarations/absnorm-eq-zero-iff.md) | 97 | `result-track:564624ef9f39b582b41eec35a08d67c90f642c86e4dbc91b698e781a141818bf` |
+| 9 | `theorem` | [coeIdeal_absNorm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FractionalIdealNormNamespaced.lean/declarations/coeideal-absnorm.md) | 104 | `result-track:73ab24da0d08372bca1df203f41ea665e4c8ad1ee4f47d3f208b003f7fb7803d` |
+| 10 | `theorem` | [abs_det_basis_change](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FractionalIdealNormNamespaced.lean/declarations/abs-det-basis-change.md) | 113 | `result-track:a8402d731bb3883dc63794c509bf79b9ba6c3ecfa9e9678e4412530d62da6629` |
+| 11 | `theorem` | [absNorm_span_singleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FractionalIdealNormNamespaced.lean/declarations/absnorm-span-singleton.md) | 139 | `result-track:077b35c31e12a1707774462a0b19097f39661ecd920076f3bbb4cdb62a0aeb21` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

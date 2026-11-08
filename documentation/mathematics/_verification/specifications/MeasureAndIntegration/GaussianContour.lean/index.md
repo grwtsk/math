@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/GaussianContour.lean/index.md) · [Full source](../../../../MeasureAndIntegration/GaussianContour.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GaussianContour.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GaussianContour.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.LSeries.GaussianContour`](../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/GaussianContour.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.LSeries.GaussianContour`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/GaussianContour.lean/index.md) — import line 3; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [gaussianContour_generic](../../../../MeasureAndIntegration/GaussianContour.lean/declarations/gaussiancontour-generic.md) | 10 | `result-track:a8b55d31c094fcb48f95941ccfc26be0a3aa21a8f674377454727a3eb1899ae9` |
-| 2 | `theorem` | [gaussianContour_two_one](../../../../MeasureAndIntegration/GaussianContour.lean/declarations/gaussiancontour-two-one.md) | 14 | `result-track:0a7c4cbdf8ed0b03c0923d24d14a8a22801123d2247babfee95313167dadd459` |
-| 3 | `theorem` | [gaussianProfile_sum_one](../../../../MeasureAndIntegration/GaussianContour.lean/declarations/gaussianprofile-sum-one.md) | 18 | `result-track:eb83615b827c57fe761dbae34dbda7e329b5dcfc90c0866b76362b50e8acde9e` |
-| 4 | `theorem` | [gaussianDirichletWeight_one_not_summable](../../../../MeasureAndIntegration/GaussianContour.lean/declarations/gaussiandirichletweight-one-not-summable.md) | 23 | `result-track:7d4a885aca0a0b0da69a796e2b473ab7418f231f160f4cacc5955c4886d6165a` |
-| 5 | `theorem` | [gaussianZetaSummand_one_integral_norm_not_summable](../../../../MeasureAndIntegration/GaussianContour.lean/declarations/gaussianzetasummand-one-integral-norm-not-summable.md) | 31 | `result-track:15c4362235e538f2244fffcd1d89e94a225b336205de62172e52104d43e5110d` |
+| 1 | `theorem` | [gaussianContour_generic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GaussianContour.lean/declarations/gaussiancontour-generic.md) | 10 | `result-track:a8b55d31c094fcb48f95941ccfc26be0a3aa21a8f674377454727a3eb1899ae9` |
+| 2 | `theorem` | [gaussianContour_two_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GaussianContour.lean/declarations/gaussiancontour-two-one.md) | 14 | `result-track:0a7c4cbdf8ed0b03c0923d24d14a8a22801123d2247babfee95313167dadd459` |
+| 3 | `theorem` | [gaussianProfile_sum_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GaussianContour.lean/declarations/gaussianprofile-sum-one.md) | 18 | `result-track:eb83615b827c57fe761dbae34dbda7e329b5dcfc90c0866b76362b50e8acde9e` |
+| 4 | `theorem` | [gaussianDirichletWeight_one_not_summable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GaussianContour.lean/declarations/gaussiandirichletweight-one-not-summable.md) | 23 | `result-track:7d4a885aca0a0b0da69a796e2b473ab7418f231f160f4cacc5955c4886d6165a` |
+| 5 | `theorem` | [gaussianZetaSummand_one_integral_norm_not_summable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GaussianContour.lean/declarations/gaussianzetasummand-one-integral-norm-not-summable.md) | 31 | `result-track:15c4362235e538f2244fffcd1d89e94a225b336205de62172e52104d43e5110d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

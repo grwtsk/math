@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/IrreducibleDefsNamespaced.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/IrreducibleDefsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IrreducibleDefsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IrreducibleDefsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [AddIrreducible](../../../../GroupTheoryAndGeneralizations/IrreducibleDefsNamespaced.lean/declarations/addirreducible.md) | 34 | `declaration-track:a6e0fbd283ded2e63007f55bddf57c250f5f50d8c535f309fd93ae315df110f0` |
-| 2 | `structure` | [Irreducible](../../../../GroupTheoryAndGeneralizations/IrreducibleDefsNamespaced.lean/declarations/irreducible.md) | 48 | `declaration-track:0495fbfd5c73dab30a2f4a72f66d4150f4b1b458b09673b6f6b7735987bd6a65` |
-| 3 | `lemma` | [irreducible_iff](../../../../GroupTheoryAndGeneralizations/IrreducibleDefsNamespaced.lean/declarations/irreducible-iff.md) | 61 | `result-track:b866e09696836234ec7b4af005d4f0969f90f2954152051fa4b1cb11ed5dfe46` |
-| 4 | `lemma` | [not_irreducible_one](../../../../GroupTheoryAndGeneralizations/IrreducibleDefsNamespaced.lean/declarations/not-irreducible-one.md) | 67 | `result-track:a17f2abc0ed1a9714c6ba8104329e3e60be84237922766878959ee1afedcaf15` |
-| 5 | `lemma` | [Irreducible.ne_one](../../../../GroupTheoryAndGeneralizations/IrreducibleDefsNamespaced.lean/declarations/irreducible-ne-one.md) | 70 | `result-track:92de2331c20f3ba8822d2af934cc05f3cb7bb1488d83414ba2497b8c351e7d08` |
-| 6 | `lemma` | [of_irreducible_mul](../../../../GroupTheoryAndGeneralizations/IrreducibleDefsNamespaced.lean/declarations/of-irreducible-mul.md) | 73 | `result-track:fbb5004ef64431efc6b28bb6b457cfb95b7eed87c565c493f42f51c72f00c1b1` |
-| 7 | `lemma` | [irreducible_or_factor](../../../../GroupTheoryAndGeneralizations/IrreducibleDefsNamespaced.lean/declarations/irreducible-or-factor.md) | 76 | `result-track:5b96eb984c298c152066d65aa54e15871f31eca231da7600201012bf05e382bd` |
+| 1 | `structure` | [AddIrreducible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IrreducibleDefsNamespaced.lean/declarations/addirreducible.md) | 34 | `declaration-track:a6e0fbd283ded2e63007f55bddf57c250f5f50d8c535f309fd93ae315df110f0` |
+| 2 | `structure` | [Irreducible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IrreducibleDefsNamespaced.lean/declarations/irreducible.md) | 48 | `declaration-track:0495fbfd5c73dab30a2f4a72f66d4150f4b1b458b09673b6f6b7735987bd6a65` |
+| 3 | `lemma` | [irreducible_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IrreducibleDefsNamespaced.lean/declarations/irreducible-iff.md) | 61 | `result-track:b866e09696836234ec7b4af005d4f0969f90f2954152051fa4b1cb11ed5dfe46` |
+| 4 | `lemma` | [not_irreducible_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IrreducibleDefsNamespaced.lean/declarations/not-irreducible-one.md) | 67 | `result-track:a17f2abc0ed1a9714c6ba8104329e3e60be84237922766878959ee1afedcaf15` |
+| 5 | `lemma` | [Irreducible.ne_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IrreducibleDefsNamespaced.lean/declarations/irreducible-ne-one.md) | 70 | `result-track:92de2331c20f3ba8822d2af934cc05f3cb7bb1488d83414ba2497b8c351e7d08` |
+| 6 | `lemma` | [of_irreducible_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IrreducibleDefsNamespaced.lean/declarations/of-irreducible-mul.md) | 73 | `result-track:fbb5004ef64431efc6b28bb6b457cfb95b7eed87c565c493f42f51c72f00c1b1` |
+| 7 | `lemma` | [irreducible_or_factor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IrreducibleDefsNamespaced.lean/declarations/irreducible-or-factor.md) | 76 | `result-track:5b96eb984c298c152066d65aa54e15871f31eca231da7600201012bf05e382bd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

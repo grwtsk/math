@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NetworkSurgeryPatchNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NetworkSurgeryPatchNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NetworkSurgeryPatchNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NetworkSurgeryPatchNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [forwardReversePatch_roundTrip](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NetworkSurgeryPatchNamespacedPublic.lean/declarations/forwardreversepatch-roundtrip.md) | 27 | `result-track:c4c7e18e68c0f01933b60beeba061178c79a79d9cea6c9e4b9f8a0d49cafa0e0` |
-| 2 | `theorem` | [reverseForwardPatch_roundTrip](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NetworkSurgeryPatchNamespacedPublic.lean/declarations/reverseforwardpatch-roundtrip.md) | 37 | `result-track:b09308ae7067fb80e5385a8736ec6917aafb522570461e4265c90fb3b66a9347` |
+| 1 | `theorem` | [forwardReversePatch_roundTrip](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NetworkSurgeryPatchNamespacedPublic.lean/declarations/forwardreversepatch-roundtrip.md) | 27 | `result-track:c4c7e18e68c0f01933b60beeba061178c79a79d9cea6c9e4b9f8a0d49cafa0e0` |
+| 2 | `theorem` | [reverseForwardPatch_roundTrip](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NetworkSurgeryPatchNamespacedPublic.lean/declarations/reverseforwardpatch-roundtrip.md) | 37 | `result-track:b09308ae7067fb80e5385a8736ec6917aafb522570461e4265c90fb3b66a9347` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

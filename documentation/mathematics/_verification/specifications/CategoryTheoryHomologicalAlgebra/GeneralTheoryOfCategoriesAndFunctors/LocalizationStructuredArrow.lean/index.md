@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationStructuredArrow.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationStructuredArrow.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationStructuredArrow.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationStructuredArrow.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [structuredArrowEquiv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationStructuredArrow.lean/declarations/structuredarrowequiv.md) | 41 | `declaration-track:e109ad4db8096c5afa9cf542f245ad415ff3eee67c2b368ae8f1477373012e57` |
-| 2 | `lemma` | [induction_structuredArrow'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationStructuredArrow.lean/declarations/induction-structuredarrow.md) | 62 | `result-track:0ef924f3eb6ad023c474448009994559fb2716a28167e097642662d9cabac545` |
-| 3 | `lemma` | [induction_structuredArrow](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationStructuredArrow.lean/declarations/induction-structuredarrow-source-edition-2.md) | 92 | `result-track:5b17ee7c75ce70d91b791ae509803b4ff56999d1a4a1a98836c87580294e7574` |
-| 4 | `lemma` | [induction_costructuredArrow](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationStructuredArrow.lean/declarations/induction-costructuredarrow.md) | 120 | `result-track:ea7904ec14750f38b2d14abc4adc4222287d4a16e457daa5752b173ccc212ec2` |
+| 1 | `def` | [structuredArrowEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationStructuredArrow.lean/declarations/structuredarrowequiv.md) | 41 | `declaration-track:e109ad4db8096c5afa9cf542f245ad415ff3eee67c2b368ae8f1477373012e57` |
+| 2 | `lemma` | [induction_structuredArrow'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationStructuredArrow.lean/declarations/induction-structuredarrow.md) | 62 | `result-track:0ef924f3eb6ad023c474448009994559fb2716a28167e097642662d9cabac545` |
+| 3 | `lemma` | [induction_structuredArrow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationStructuredArrow.lean/declarations/induction-structuredarrow-source-edition-2.md) | 92 | `result-track:5b17ee7c75ce70d91b791ae509803b4ff56999d1a4a1a98836c87580294e7574` |
+| 4 | `lemma` | [induction_costructuredArrow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationStructuredArrow.lean/declarations/induction-costructuredarrow.md) | 120 | `result-track:ea7904ec14750f38b2d14abc4adc4222287d4a16e457daa5752b173ccc212ec2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

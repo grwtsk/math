@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GluingNamespacedMatching.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GluingNamespacedMatching.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GluingNamespacedMatching.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GluingNamespacedMatching.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Matching](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GluingNamespacedMatching.lean/declarations/matching.md) | 15 | `declaration-track:0e64d830b9ab68c6e112f368ca491d746d7f040e17060fd667b1c9fca9eeb43b` |
-| 2 | `def` | [Glues](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GluingNamespacedMatching.lean/declarations/glues.md) | 24 | `declaration-track:cf4c12cec1db678d00eb3c591c60667ca3a51b7df2782c2f14f8ee202fc08883` |
-| 3 | `structure` | [GluingCertificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GluingNamespacedMatching.lean/declarations/gluingcertificate.md) | 32 | `declaration-track:ea623a206f109df82500e2ed8d3bfb6f14f1bd46a7591e244be1d1dd200e64b6` |
-| 4 | `def` | [ExistsUniqueGluing](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GluingNamespacedMatching.lean/declarations/existsuniquegluing.md) | 42 | `declaration-track:40179ca542fbe0977656386045fe720faf1e64d67711dc59945febd19730bdb5` |
-| 5 | `theorem` | [gluing_sound](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GluingNamespacedMatching.lean/declarations/gluing-sound.md) | 50 | `result-track:3ff672430dfea845b5e59eeb8121973a79f445cf8b38353a91bf1ab22a7432a5` |
+| 1 | `def` | [Matching](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GluingNamespacedMatching.lean/declarations/matching.md) | 15 | `declaration-track:0e64d830b9ab68c6e112f368ca491d746d7f040e17060fd667b1c9fca9eeb43b` |
+| 2 | `def` | [Glues](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GluingNamespacedMatching.lean/declarations/glues.md) | 24 | `declaration-track:cf4c12cec1db678d00eb3c591c60667ca3a51b7df2782c2f14f8ee202fc08883` |
+| 3 | `structure` | [GluingCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GluingNamespacedMatching.lean/declarations/gluingcertificate.md) | 32 | `declaration-track:ea623a206f109df82500e2ed8d3bfb6f14f1bd46a7591e244be1d1dd200e64b6` |
+| 4 | `def` | [ExistsUniqueGluing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GluingNamespacedMatching.lean/declarations/existsuniquegluing.md) | 42 | `declaration-track:40179ca542fbe0977656386045fe720faf1e64d67711dc59945febd19730bdb5` |
+| 5 | `theorem` | [gluing_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GluingNamespacedMatching.lean/declarations/gluing-sound.md) | 50 | `result-track:3ff672430dfea845b5e59eeb8121973a79f445cf8b38353a91bf1ab22a7432a5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

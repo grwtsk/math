@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SemanticsOrdinalSemanticallyEqual.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SemanticsOrdinalSemanticallyEqual.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SemanticsOrdinalSemanticallyEqual.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SemanticsOrdinalSemanticallyEqual.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [OrdinalSemanticallyEqual](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SemanticsOrdinalSemanticallyEqual.lean/declarations/ordinalsemanticallyequal.md) | 11 | `declaration-track:3f3c34fc9a4b52555dd0c504d627cb9af9bf1351ae597c11e214d6ce554019e0` |
-| 2 | `structure` | [CompleteNormalizationProfile](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SemanticsOrdinalSemanticallyEqual.lean/declarations/completenormalizationprofile.md) | 17 | `declaration-track:e2e8e35a45d8b6fd397b4338b1561d1daab63cc2c1777b990d14dd68572bfa51` |
+| 1 | `def` | [OrdinalSemanticallyEqual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SemanticsOrdinalSemanticallyEqual.lean/declarations/ordinalsemanticallyequal.md) | 11 | `declaration-track:3f3c34fc9a4b52555dd0c504d627cb9af9bf1351ae597c11e214d6ce554019e0` |
+| 2 | `structure` | [CompleteNormalizationProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SemanticsOrdinalSemanticallyEqual.lean/declarations/completenormalizationprofile.md) | 17 | `declaration-track:e2e8e35a45d8b6fd397b4338b1561d1daab63cc2c1777b990d14dd68572bfa51` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

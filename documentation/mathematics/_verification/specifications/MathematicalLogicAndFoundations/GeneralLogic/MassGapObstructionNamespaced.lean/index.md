@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MassGapObstructionNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MassGapObstructionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MassGapObstructionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MassGapObstructionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [MassGapObstruction](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MassGapObstructionNamespaced.lean/declarations/massgapobstruction.md) | 29 | `declaration-track:d4cef2e270bf68a2d8d6bcabf2a2c900547385b08629d660a90050fe4197d551` |
-| 2 | `theorem` | [ym_zero_mass_obstructed_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MassGapObstructionNamespaced.lean/declarations/ym-zero-mass-obstructed-if-supplied.md) | 39 | `result-track:ffd09ee1b3db85718d12139af652ce72ad60f2cb3a581ca562c2d99dfb86acf0` |
+| 1 | `structure` | [MassGapObstruction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MassGapObstructionNamespaced.lean/declarations/massgapobstruction.md) | 29 | `declaration-track:d4cef2e270bf68a2d8d6bcabf2a2c900547385b08629d660a90050fe4197d551` |
+| 2 | `theorem` | [ym_zero_mass_obstructed_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MassGapObstructionNamespaced.lean/declarations/ym-zero-mass-obstructed-if-supplied.md) | 39 | `result-track:ffd09ee1b3db85718d12139af652ce72ad60f2cb3a581ca562c2d99dfb86acf0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

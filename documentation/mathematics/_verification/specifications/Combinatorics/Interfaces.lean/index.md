@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/Interfaces.lean/index.md) · [Full source](../../../../Combinatorics/Interfaces.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Interfaces.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Interfaces.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,9 +60,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [BoundarySemanticIdentification](../../../../Combinatorics/Interfaces.lean/declarations/boundarysemanticidentification.md) | 21 | `declaration-track:d34e4bdd1cb58e56a89644d0f9fc034fb953b97c15cfa1f583fb19c6a1d10899` |
-| 2 | `structure` | [UniformEnsembleLimitCertificate](../../../../Combinatorics/Interfaces.lean/declarations/uniformensemblelimitcertificate.md) | 41 | `declaration-track:017bd5b995a386759b1bbc0c56c56640388d904a499872ca8fcb35290a66d9f7` |
-| 3 | `structure` | [LocalGlobalArithmeticCompatibility](../../../../Combinatorics/Interfaces.lean/declarations/localglobalarithmeticcompatibility.md) | 69 | `declaration-track:cc917f2274a27a71faf900b02a870cb4bf6c7fca5f852bd5e114d9ea9a917035` |
+| 1 | `structure` | [BoundarySemanticIdentification](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Interfaces.lean/declarations/boundarysemanticidentification.md) | 21 | `declaration-track:d34e4bdd1cb58e56a89644d0f9fc034fb953b97c15cfa1f583fb19c6a1d10899` |
+| 2 | `structure` | [UniformEnsembleLimitCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Interfaces.lean/declarations/uniformensemblelimitcertificate.md) | 41 | `declaration-track:017bd5b995a386759b1bbc0c56c56640388d904a499872ca8fcb35290a66d9f7` |
+| 3 | `structure` | [LocalGlobalArithmeticCompatibility](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Interfaces.lean/declarations/localglobalarithmeticcompatibility.md) | 69 | `declaration-track:cc917f2274a27a71faf900b02a870cb4bf6c7fca5f852bd5e114d9ea9a917035` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

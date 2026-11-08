@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PhaseConnectionNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PhaseConnectionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PhaseConnectionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PhaseConnectionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [loopIntegral_coboundary_zero](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PhaseConnectionNamespaced.lean/declarations/loopintegral-coboundary-zero.md) | 29 | `result-track:f37e0190c36f7cf2e9692357b60a33f9d8d07454281da378d1ca9a21d637eadf` |
-| 2 | `theorem` | [phaseConnection_loopIntegral_eq_scan](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PhaseConnectionNamespaced.lean/declarations/phaseconnection-loopintegral-eq-scan.md) | 35 | `result-track:2f19a5db4a5dd378fc4220cc6bf0a2b81f6b61f6ec82baf4ecaebeaa254d7f98` |
+| 1 | `theorem` | [loopIntegral_coboundary_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PhaseConnectionNamespaced.lean/declarations/loopintegral-coboundary-zero.md) | 29 | `result-track:f37e0190c36f7cf2e9692357b60a33f9d8d07454281da378d1ca9a21d637eadf` |
+| 2 | `theorem` | [phaseConnection_loopIntegral_eq_scan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PhaseConnectionNamespaced.lean/declarations/phaseconnection-loopintegral-eq-scan.md) | 35 | `result-track:2f19a5db4a5dd378fc4220cc6bf0a2b81f6b61f6ec82baf4ecaebeaa254d7f98` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

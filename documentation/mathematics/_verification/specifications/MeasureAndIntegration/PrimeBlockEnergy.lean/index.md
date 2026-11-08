@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/PrimeBlockEnergy.lean/index.md) · [Full source](../../../../MeasureAndIntegration/PrimeBlockEnergy.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PrimeBlockEnergy.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PrimeBlockEnergy.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Moebius.PrimeFilterEnergy`](../../../../MeasureAndIntegration/PrimeFilterEnergy.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.PrimeFilterEnergy`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PrimeFilterEnergy.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [cascade_eq_zero_of_nonpos](../../../../MeasureAndIntegration/PrimeBlockEnergy.lean/declarations/cascade-eq-zero-of-nonpos.md) | 14 | `result-track:8413da127cf16794e04f40e0d76aecccee6c3b682216e71f5ed9e06d7eb3b0ec` |
-| 2 | `theorem` | [cascade_insert_before_delay](../../../../MeasureAndIntegration/PrimeBlockEnergy.lean/declarations/cascade-insert-before-delay.md) | 20 | `result-track:620cd24efb325239643b8a473d675d43a747ac56e5aee61e00c46cda0d14dfc3` |
-| 3 | `theorem` | [cascade_union_before_delays](../../../../MeasureAndIntegration/PrimeBlockEnergy.lean/declarations/cascade-union-before-delays.md) | 32 | `result-track:ceab5277003d83b926e831d82a33bd5452005a7ef2fcb72daec65e9c94d66f96` |
-| 4 | `def` | [primeBlockEcho](../../../../MeasureAndIntegration/PrimeBlockEnergy.lean/declarations/primeblockecho.md) | 48 | `declaration-track:15859a51ca54aa958a49f7b7859a7ed62c8b5b135e3f579c46fbc6a952fc2693` |
-| 5 | `theorem` | [cascade_union_eq_sub_echo](../../../../MeasureAndIntegration/PrimeBlockEnergy.lean/declarations/cascade-union-eq-sub-echo.md) | 53 | `result-track:499a47c48fbeddff0bb80851f5165c77a06217d3170666b6345dd394b249a49f` |
-| 6 | `theorem` | [primeBlockEcho_continuous](../../../../MeasureAndIntegration/PrimeBlockEnergy.lean/declarations/primeblockecho-continuous.md) | 82 | `result-track:301a4376d6cb5f0343f8df1d9c19d5506704fe1b9b6f2901e3a3aab082d6b284` |
-| 7 | `theorem` | [energy_after_causal_block](../../../../MeasureAndIntegration/PrimeBlockEnergy.lean/declarations/energy-after-causal-block.md) | 90 | `result-track:b6448c84b01d7b01a453d20e7499a3f3302261dfcdf591417f929601860a70e2` |
-| 8 | `theorem` | [causal_block_condition_of_half_horizon](../../../../MeasureAndIntegration/PrimeBlockEnergy.lean/declarations/causal-block-condition-of-half-horizon.md) | 122 | `result-track:276a724b6657a68c8e62dfaaac74c69826e426a84dac458f5a39dc76dd163769` |
+| 1 | `theorem` | [cascade_eq_zero_of_nonpos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PrimeBlockEnergy.lean/declarations/cascade-eq-zero-of-nonpos.md) | 14 | `result-track:8413da127cf16794e04f40e0d76aecccee6c3b682216e71f5ed9e06d7eb3b0ec` |
+| 2 | `theorem` | [cascade_insert_before_delay](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PrimeBlockEnergy.lean/declarations/cascade-insert-before-delay.md) | 20 | `result-track:620cd24efb325239643b8a473d675d43a747ac56e5aee61e00c46cda0d14dfc3` |
+| 3 | `theorem` | [cascade_union_before_delays](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PrimeBlockEnergy.lean/declarations/cascade-union-before-delays.md) | 32 | `result-track:ceab5277003d83b926e831d82a33bd5452005a7ef2fcb72daec65e9c94d66f96` |
+| 4 | `def` | [primeBlockEcho](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PrimeBlockEnergy.lean/declarations/primeblockecho.md) | 48 | `declaration-track:15859a51ca54aa958a49f7b7859a7ed62c8b5b135e3f579c46fbc6a952fc2693` |
+| 5 | `theorem` | [cascade_union_eq_sub_echo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PrimeBlockEnergy.lean/declarations/cascade-union-eq-sub-echo.md) | 53 | `result-track:499a47c48fbeddff0bb80851f5165c77a06217d3170666b6345dd394b249a49f` |
+| 6 | `theorem` | [primeBlockEcho_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PrimeBlockEnergy.lean/declarations/primeblockecho-continuous.md) | 82 | `result-track:301a4376d6cb5f0343f8df1d9c19d5506704fe1b9b6f2901e3a3aab082d6b284` |
+| 7 | `theorem` | [energy_after_causal_block](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PrimeBlockEnergy.lean/declarations/energy-after-causal-block.md) | 90 | `result-track:b6448c84b01d7b01a453d20e7499a3f3302261dfcdf591417f929601860a70e2` |
+| 8 | `theorem` | [causal_block_condition_of_half_horizon](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PrimeBlockEnergy.lean/declarations/causal-block-condition-of-half-horizon.md) | 122 | `result-track:276a724b6657a68c8e62dfaaac74c69826e426a84dac458f5a39dc76dd163769` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

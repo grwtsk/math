@@ -11,7 +11,7 @@
 
 | Immediate module or directory | Kind |
 |---|---|
-| [_support](_support/complete-source-index.md) | directory |
+| [_support](../../provider-documentation/complete-source-index.md) | directory |
 
 <!-- DOCUMENTATION RELOCATION /1 original-sha256=81b656d6f9622d9e24a39ddf27939480b18a58e4766213d1a51cdc9f5613c77b -->
 

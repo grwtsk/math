@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndexedStateFold.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndexedStateFold.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/IndexedStateFold.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/IndexedStateFold.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [run](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndexedStateFold.lean/declarations/run.md) | 22 | `declaration-track:5f25c3bc932110207eb9efc1fe832ca1ddbe35f0ae184bdf4f26c20c53225583` |
-| 2 | `theorem` | [run_spec](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndexedStateFold.lean/declarations/run-spec.md) | 28 | `result-track:90d87a2b65dfed8936b280bcb7c1924a23930651cdcfc4910e3431db9e8bef38` |
-| 3 | `theorem` | [run_add](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndexedStateFold.lean/declarations/run-add.md) | 39 | `result-track:fd6b6aeda6508458ec2e99dd73ee22abf1d388ec5ce1002e3769cffcabb4ca20` |
-| 4 | `theorem` | [run_congr](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndexedStateFold.lean/declarations/run-congr.md) | 50 | `result-track:3b4d0e9ed307ddfe75edfce66dd47a52c1ebcb39960c67ebe88f8533751f6a31` |
+| 1 | `def` | [run](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/IndexedStateFold.lean/declarations/run.md) | 22 | `declaration-track:5f25c3bc932110207eb9efc1fe832ca1ddbe35f0ae184bdf4f26c20c53225583` |
+| 2 | `theorem` | [run_spec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/IndexedStateFold.lean/declarations/run-spec.md) | 28 | `result-track:90d87a2b65dfed8936b280bcb7c1924a23930651cdcfc4910e3431db9e8bef38` |
+| 3 | `theorem` | [run_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/IndexedStateFold.lean/declarations/run-add.md) | 39 | `result-track:fd6b6aeda6508458ec2e99dd73ee22abf1d388ec5ce1002e3769cffcabb4ca20` |
+| 4 | `theorem` | [run_congr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/IndexedStateFold.lean/declarations/run-congr.md) | 50 | `result-track:3b4d0e9ed307ddfe75edfce66dd47a52c1ebcb39960c67ebe88f8533751f6a31` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

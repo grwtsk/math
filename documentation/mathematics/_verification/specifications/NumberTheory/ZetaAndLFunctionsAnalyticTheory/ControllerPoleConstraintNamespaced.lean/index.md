@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ControllerPoleConstraintNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ControllerPoleConstraintNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ControllerPoleConstraintNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ControllerPoleConstraintNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [source_residual_evaluation_of_input_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ControllerPoleConstraintNamespaced.lean/declarations/source-residual-evaluation-of-input-zero.md) | 23 | `result-track:bf8915e8e0da7f5d72d7d2794714469c296c8c9aef024810f55a437ebd5835e4` |
-| 2 | `theorem` | [source_residual_sq_ge_of_input_half_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ControllerPoleConstraintNamespaced.lean/declarations/source-residual-sq-ge-of-input-half-zero.md) | 31 | `result-track:bc13993d825aa1a455cd619672e9eafefd286d59818ebb459fecd16a8256b410` |
-| 3 | `theorem` | [source_full_energy_ge_of_input_half_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ControllerPoleConstraintNamespaced.lean/declarations/source-full-energy-ge-of-input-half-zero.md) | 49 | `result-track:58696ce4709b64961ebd8f01f81421c2d483b6505a2d566a5fa4392044f039c4` |
+| 1 | `theorem` | [source_residual_evaluation_of_input_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ControllerPoleConstraintNamespaced.lean/declarations/source-residual-evaluation-of-input-zero.md) | 23 | `result-track:bf8915e8e0da7f5d72d7d2794714469c296c8c9aef024810f55a437ebd5835e4` |
+| 2 | `theorem` | [source_residual_sq_ge_of_input_half_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ControllerPoleConstraintNamespaced.lean/declarations/source-residual-sq-ge-of-input-half-zero.md) | 31 | `result-track:bc13993d825aa1a455cd619672e9eafefd286d59818ebb459fecd16a8256b410` |
+| 3 | `theorem` | [source_full_energy_ge_of_input_half_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ControllerPoleConstraintNamespaced.lean/declarations/source-full-energy-ge-of-input-half-zero.md) | 49 | `result-track:58696ce4709b64961ebd8f01f81421c2d483b6505a2d566a5fa4392044f039c4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

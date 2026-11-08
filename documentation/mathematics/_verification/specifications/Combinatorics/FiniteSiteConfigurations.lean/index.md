@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/FiniteSiteConfigurations.lean/index.md) · [Full source](../../../../Combinatorics/FiniteSiteConfigurations.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteSiteConfigurations.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteSiteConfigurations.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [PhysicalConfiguration](../../../../Combinatorics/FiniteSiteConfigurations.lean/declarations/physicalconfiguration.md) | 27 | `declaration-track:c655cd9b7d32de8030738f0ff6ace64cec09d8483f606a4efd321a20e51da1b4` |
-| 2 | `theorem` | [physicalConfiguration_card](../../../../Combinatorics/FiniteSiteConfigurations.lean/declarations/physicalconfiguration-card.md) | 31 | `result-track:e163dcce05ebc207cec70eacc100dedfb57a83bf3a84a4e4342c69cd86208bc5` |
-| 3 | `theorem` | [qubitConfiguration_card](../../../../Combinatorics/FiniteSiteConfigurations.lean/declarations/qubitconfiguration-card.md) | 36 | `result-track:6fe08b682b025b3ca7c70d7def499ac04ed161c50cac023453fa3eb41443180f` |
+| 1 | `abbrev` | [PhysicalConfiguration](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteSiteConfigurations.lean/declarations/physicalconfiguration.md) | 27 | `declaration-track:c655cd9b7d32de8030738f0ff6ace64cec09d8483f606a4efd321a20e51da1b4` |
+| 2 | `theorem` | [physicalConfiguration_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteSiteConfigurations.lean/declarations/physicalconfiguration-card.md) | 31 | `result-track:e163dcce05ebc207cec70eacc100dedfb57a83bf3a84a4e4342c69cd86208bc5` |
+| 3 | `theorem` | [qubitConfiguration_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteSiteConfigurations.lean/declarations/qubitconfiguration-card.md) | 36 | `result-track:6fe08b682b025b3ca7c70d7def499ac04ed161c50cac023453fa3eb41443180f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

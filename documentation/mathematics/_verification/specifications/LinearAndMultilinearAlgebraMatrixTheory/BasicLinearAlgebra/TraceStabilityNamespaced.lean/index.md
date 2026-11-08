@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TraceStabilityNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TraceStabilityNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TraceStabilityNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TraceStabilityNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [invariantLawReducedTrace](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TraceStabilityNamespaced.lean/declarations/invariantlawreducedtrace.md) | 23 | `declaration-track:2e44747f5f2be5d4dc47e629d7556465b910dba15a17c4ff5e6129076d9261ed` |
-| 2 | `structure` | [BoundaryTraceStabilityCertificate](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TraceStabilityNamespaced.lean/declarations/boundarytracestabilitycertificate.md) | 42 | `declaration-track:148697db5d1bea3d9867fb22b552b7840c99fdc1b2f21470e967e5dee481f109` |
-| 3 | `def` | [BoundaryTraceStabilityCertificate.globalBound](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TraceStabilityNamespaced.lean/declarations/boundarytracestabilitycertificate-globalbound.md) | 160 | `declaration-track:1eafbee2b811189b5137eb103fcf1901fbefe02c156c694ba357af8f780058cd` |
-| 4 | `theorem` | [boundary_trace_stability](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TraceStabilityNamespaced.lean/declarations/boundary-trace-stability.md) | 187 | `result-track:1301ff77eac9d62d266420b0165b2527171157a5b0d73a3103d265f1e5b854fb` |
+| 1 | `def` | [invariantLawReducedTrace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TraceStabilityNamespaced.lean/declarations/invariantlawreducedtrace.md) | 23 | `declaration-track:2e44747f5f2be5d4dc47e629d7556465b910dba15a17c4ff5e6129076d9261ed` |
+| 2 | `structure` | [BoundaryTraceStabilityCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TraceStabilityNamespaced.lean/declarations/boundarytracestabilitycertificate.md) | 42 | `declaration-track:148697db5d1bea3d9867fb22b552b7840c99fdc1b2f21470e967e5dee481f109` |
+| 3 | `def` | [BoundaryTraceStabilityCertificate.globalBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TraceStabilityNamespaced.lean/declarations/boundarytracestabilitycertificate-globalbound.md) | 160 | `declaration-track:1eafbee2b811189b5137eb103fcf1901fbefe02c156c694ba357af8f780058cd` |
+| 4 | `theorem` | [boundary_trace_stability](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TraceStabilityNamespaced.lean/declarations/boundary-trace-stability.md) | 187 | `result-track:1301ff77eac9d62d266420b0165b2527171157a5b0d73a3103d265f1e5b854fb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

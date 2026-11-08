@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EnoughNamespacedPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EnoughNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EnoughNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EnoughNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [EffectivePresentation](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EnoughNamespacedPublic.lean/declarations/effectivepresentation.md) | 37 | `declaration-track:37e310fba9f928b8422b23475dbfbd26cd1fe5845bfb16a1b4312a6c4dbeedae` |
-| 2 | `class` | [EffectivelyEnough](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EnoughNamespacedPublic.lean/declarations/effectivelyenough.md) | 49 | `declaration-track:a7f8185624dc6f04548a4c0492623d6d72fc95a2d0d74a041803a7311f3e85c2` |
-| 3 | `def` | [effectiveEpiOverObj](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EnoughNamespacedPublic.lean/declarations/effectiveepioverobj.md) | 59 | `declaration-track:243760cd3bbd5719cb346688b682ffff8ae8dc3ffa76b50ad0c1e922f8a67fca` |
-| 4 | `def` | [effectiveEpiOver](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EnoughNamespacedPublic.lean/declarations/effectiveepiover.md) | 66 | `declaration-track:4323ce1b68c6d51d0ca867e20b71e24e45bf409eb20304405b6e53e50950c7bf` |
-| 5 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EnoughNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 69 | `declaration-track:e6be02fb59fe1c3eb306248f0df01665e76e1ce9b8dfe7893e9a6344c15125aa` |
-| 6 | `def` | [equivalenceEffectivePresentation](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EnoughNamespacedPublic.lean/declarations/equivalenceeffectivepresentation.md) | 73 | `declaration-track:fb6ad49f154b146aba5309644daff6d16feec4d366220514d9a87392d67f20d8` |
-| 7 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EnoughNamespacedPublic.lean/declarations/instance.md) | 79 | `declaration-track:d54366dd551139a5ae1818af6ec5d8d2200f1b4bb08f42dc282049c212b58dbd` |
+| 1 | `structure` | [EffectivePresentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EnoughNamespacedPublic.lean/declarations/effectivepresentation.md) | 37 | `declaration-track:37e310fba9f928b8422b23475dbfbd26cd1fe5845bfb16a1b4312a6c4dbeedae` |
+| 2 | `class` | [EffectivelyEnough](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EnoughNamespacedPublic.lean/declarations/effectivelyenough.md) | 49 | `declaration-track:a7f8185624dc6f04548a4c0492623d6d72fc95a2d0d74a041803a7311f3e85c2` |
+| 3 | `def` | [effectiveEpiOverObj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EnoughNamespacedPublic.lean/declarations/effectiveepioverobj.md) | 59 | `declaration-track:243760cd3bbd5719cb346688b682ffff8ae8dc3ffa76b50ad0c1e922f8a67fca` |
+| 4 | `def` | [effectiveEpiOver](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EnoughNamespacedPublic.lean/declarations/effectiveepiover.md) | 66 | `declaration-track:4323ce1b68c6d51d0ca867e20b71e24e45bf409eb20304405b6e53e50950c7bf` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EnoughNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 69 | `declaration-track:e6be02fb59fe1c3eb306248f0df01665e76e1ce9b8dfe7893e9a6344c15125aa` |
+| 6 | `def` | [equivalenceEffectivePresentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EnoughNamespacedPublic.lean/declarations/equivalenceeffectivepresentation.md) | 73 | `declaration-track:fb6ad49f154b146aba5309644daff6d16feec4d366220514d9a87392d67f20d8` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/EnoughNamespacedPublic.lean/declarations/instance.md) | 79 | `declaration-track:d54366dd551139a5ae1818af6ec5d8d2200f1b4bb08f42dc282049c212b58dbd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

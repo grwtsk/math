@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularKernelClosedForm.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularKernelClosedForm.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularKernelClosedForm.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularKernelClosedForm.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeTriangularHalfAngleSineConversion`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularHalfAngleSineConversion.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeTriangularHalfAngleSineConversion`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularHalfAngleSineConversion.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [triangularPhaseConjugateCancellation](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularKernelClosedForm.lean/declarations/triangularphaseconjugatecancellation.md) | 13 | `result-track:840d7ff9f9f4298438f6b20d17542dceacc8b5edea54bbf5eaec2c905aace57f` |
-| 2 | `theorem` | [triangularGeometricBlockSineNorm_offBoundary](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularKernelClosedForm.lean/declarations/triangulargeometricblocksinenorm-offboundary.md) | 22 | `result-track:2c65ca081dd47e4f21937e12877a3461e3cc264bbd77ae8c05f575b724ded9ae` |
-| 3 | `theorem` | [symmetricTriangularKernelClosedForm_offBoundary](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularKernelClosedForm.lean/declarations/symmetrictriangularkernelclosedform-offboundary.md) | 29 | `result-track:5504032a77b3e61b586ee8f7f31304a624a09a44ca2e6bdc06f941be9973d4b7` |
-| 4 | `theorem` | [symmetricTriangularKernelDecay](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularKernelClosedForm.lean/declarations/symmetrictriangularkerneldecay.md) | 37 | `result-track:c6cc8687de5607f1e35dfa39a45cbc02e7974c8c1375630b81a08d076cf1a362` |
+| 1 | `theorem` | [triangularPhaseConjugateCancellation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularKernelClosedForm.lean/declarations/triangularphaseconjugatecancellation.md) | 13 | `result-track:840d7ff9f9f4298438f6b20d17542dceacc8b5edea54bbf5eaec2c905aace57f` |
+| 2 | `theorem` | [triangularGeometricBlockSineNorm_offBoundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularKernelClosedForm.lean/declarations/triangulargeometricblocksinenorm-offboundary.md) | 22 | `result-track:2c65ca081dd47e4f21937e12877a3461e3cc264bbd77ae8c05f575b724ded9ae` |
+| 3 | `theorem` | [symmetricTriangularKernelClosedForm_offBoundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularKernelClosedForm.lean/declarations/symmetrictriangularkernelclosedform-offboundary.md) | 29 | `result-track:5504032a77b3e61b586ee8f7f31304a624a09a44ca2e6bdc06f941be9973d4b7` |
+| 4 | `theorem` | [symmetricTriangularKernelDecay](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeTriangularKernelClosedForm.lean/declarations/symmetrictriangularkerneldecay.md) | 37 | `result-track:c6cc8687de5607f1e35dfa39a45cbc02e7974c8c1375630b81a08d076cf1a362` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ZetaPartialSums.lean/index.md) · [Full source](../../../../Combinatorics/ZetaPartialSums.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ZetaPartialSums.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ZetaPartialSums.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [zetaPartialReal](../../../../Combinatorics/ZetaPartialSums.lean/declarations/zetapartialreal.md) | 16 | `declaration-track:50e94de4e54c83e2702d0371027cc3947738aab0104dcfdc0b634b7bf94fd713` |
-| 2 | `theorem` | [zetaPartialReal_nonneg](../../../../Combinatorics/ZetaPartialSums.lean/declarations/zetapartialreal-nonneg.md) | 21 | `result-track:d713b6262ea570e84e0909300aa48b098afb181e16a74a9e43280c727e24f9d2` |
-| 3 | `theorem` | [zetaPartialReal_mono](../../../../Combinatorics/ZetaPartialSums.lean/declarations/zetapartialreal-mono.md) | 28 | `result-track:609fecf59aaa951169f1981e7d3677415f27ebcbc66afd6f13d18ca7ec19be71` |
-| 4 | `theorem` | [zetaPartialReal_eq_range_sum](../../../../Combinatorics/ZetaPartialSums.lean/declarations/zetapartialreal-eq-range-sum.md) | 40 | `result-track:afcb0e96758f0eccdcd9438ee7f6bf6fd271c9ba58a1372c37b6cc8683ed7a41` |
-| 5 | `theorem` | [tendsto_zetaPartialReal](../../../../Combinatorics/ZetaPartialSums.lean/declarations/tendsto-zetapartialreal.md) | 64 | `result-track:789b5a5e142dea41461e29ca3b7659ebe095c63dc47c16e895b79a3895f6ef7d` |
+| 1 | `def` | [zetaPartialReal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ZetaPartialSums.lean/declarations/zetapartialreal.md) | 16 | `declaration-track:50e94de4e54c83e2702d0371027cc3947738aab0104dcfdc0b634b7bf94fd713` |
+| 2 | `theorem` | [zetaPartialReal_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ZetaPartialSums.lean/declarations/zetapartialreal-nonneg.md) | 21 | `result-track:d713b6262ea570e84e0909300aa48b098afb181e16a74a9e43280c727e24f9d2` |
+| 3 | `theorem` | [zetaPartialReal_mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ZetaPartialSums.lean/declarations/zetapartialreal-mono.md) | 28 | `result-track:609fecf59aaa951169f1981e7d3677415f27ebcbc66afd6f13d18ca7ec19be71` |
+| 4 | `theorem` | [zetaPartialReal_eq_range_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ZetaPartialSums.lean/declarations/zetapartialreal-eq-range-sum.md) | 40 | `result-track:afcb0e96758f0eccdcd9438ee7f6bf6fd271c9ba58a1372c37b6cc8683ed7a41` |
+| 5 | `theorem` | [tendsto_zetaPartialReal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ZetaPartialSums.lean/declarations/tendsto-zetapartialreal.md) | 64 | `result-track:789b5a5e142dea41461e29ca3b7659ebe095c63dc47c16e895b79a3895f6ef7d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

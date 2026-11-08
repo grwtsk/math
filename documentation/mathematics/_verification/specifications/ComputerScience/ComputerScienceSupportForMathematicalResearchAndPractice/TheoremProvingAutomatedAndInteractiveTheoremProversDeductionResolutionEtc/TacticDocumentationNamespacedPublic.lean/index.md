@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/TacticDocumentationNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/TacticDocumentationNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/TacticDocumentationNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/TacticDocumentationNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [isNonemptyDoc](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/TacticDocumentationNamespacedPublic.lean/declarations/isnonemptydoc.md) | 35 | `declaration-track:0575d141e4b3bfd3a7253f03e3dddcaf8bf8e9a2b12d266b93c773a2a29c2eaf` |
-| 2 | `def` | [tacticDocs](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/TacticDocumentationNamespacedPublic.lean/declarations/tacticdocs.md) | 39 | `declaration-track:395694b434504655288051278c0ef28eea881b85773f0688fd08328a6daf9d8a` |
-| 3 | `def` | [tacticAlt](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/TacticDocumentationNamespacedPublic.lean/declarations/tacticalt.md) | 67 | `declaration-track:c219ff245897a078f9110225b1e899e6287a78634e640e0a36f6f3ee1437eed8` |
+| 1 | `def` | [isNonemptyDoc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/TacticDocumentationNamespacedPublic.lean/declarations/isnonemptydoc.md) | 35 | `declaration-track:0575d141e4b3bfd3a7253f03e3dddcaf8bf8e9a2b12d266b93c773a2a29c2eaf` |
+| 2 | `def` | [tacticDocs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/TacticDocumentationNamespacedPublic.lean/declarations/tacticdocs.md) | 39 | `declaration-track:395694b434504655288051278c0ef28eea881b85773f0688fd08328a6daf9d8a` |
+| 3 | `def` | [tacticAlt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/TacticDocumentationNamespacedPublic.lean/declarations/tacticalt.md) | 67 | `declaration-track:c219ff245897a078f9110225b1e899e6287a78634e640e0a36f6f3ee1437eed8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

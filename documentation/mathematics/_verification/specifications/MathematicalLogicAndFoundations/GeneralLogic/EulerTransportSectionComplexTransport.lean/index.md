@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EulerTransportSectionComplexTransport.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EulerTransportSectionComplexTransport.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EulerTransportSectionComplexTransport.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EulerTransportSectionComplexTransport.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SectionComplexTransport](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EulerTransportSectionComplexTransport.lean/declarations/sectioncomplextransport.md) | 25 | `declaration-track:07b433912544a9c251e3e106d1da4ded48da85344db0084d882a176f49b459b0` |
-| 2 | `structure` | [EulerPreservingTransport](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EulerTransportSectionComplexTransport.lean/declarations/eulerpreservingtransport.md) | 40 | `declaration-track:1a145fc533762c573701b78e137b112a8305b9f3c7b381305ac37abf934b0822` |
-| 3 | `theorem` | [euler_preserving_transport_value_eq](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EulerTransportSectionComplexTransport.lean/declarations/euler-preserving-transport-value-eq.md) | 48 | `result-track:4b3f4a207028fd026448bee69d6e66bace53863dc38eb7d9e2e5a4767e38266a` |
-| 4 | `theorem` | [euler_preserving_transport_respects_differential](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EulerTransportSectionComplexTransport.lean/declarations/euler-preserving-transport-respects-differential.md) | 54 | `result-track:ec4295967fb7c8ffee07db74c7d8496f201366a525064c0a62698f312936db83` |
-| 5 | `theorem` | [euler_preserving_transport_quasi_iso_like](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EulerTransportSectionComplexTransport.lean/declarations/euler-preserving-transport-quasi-iso-like.md) | 60 | `result-track:1ca8d3042d2d933cd688aaa0344267681eb76c921f5651b44c77f7038c3ede6e` |
+| 1 | `structure` | [SectionComplexTransport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EulerTransportSectionComplexTransport.lean/declarations/sectioncomplextransport.md) | 25 | `declaration-track:07b433912544a9c251e3e106d1da4ded48da85344db0084d882a176f49b459b0` |
+| 2 | `structure` | [EulerPreservingTransport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EulerTransportSectionComplexTransport.lean/declarations/eulerpreservingtransport.md) | 40 | `declaration-track:1a145fc533762c573701b78e137b112a8305b9f3c7b381305ac37abf934b0822` |
+| 3 | `theorem` | [euler_preserving_transport_value_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EulerTransportSectionComplexTransport.lean/declarations/euler-preserving-transport-value-eq.md) | 48 | `result-track:4b3f4a207028fd026448bee69d6e66bace53863dc38eb7d9e2e5a4767e38266a` |
+| 4 | `theorem` | [euler_preserving_transport_respects_differential](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EulerTransportSectionComplexTransport.lean/declarations/euler-preserving-transport-respects-differential.md) | 54 | `result-track:ec4295967fb7c8ffee07db74c7d8496f201366a525064c0a62698f312936db83` |
+| 5 | `theorem` | [euler_preserving_transport_quasi_iso_like](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EulerTransportSectionComplexTransport.lean/declarations/euler-preserving-transport-quasi-iso-like.md) | 60 | `result-track:1ca8d3042d2d933cd688aaa0344267681eb76c921f5651b44c77f7038c3ede6e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

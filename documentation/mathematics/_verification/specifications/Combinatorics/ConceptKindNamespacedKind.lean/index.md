@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ConceptKindNamespacedKind.lean/index.md) · [Full source](../../../../Combinatorics/ConceptKindNamespacedKind.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConceptKindNamespacedKind.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConceptKindNamespacedKind.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [Kind](../../../../Combinatorics/ConceptKindNamespacedKind.lean/declarations/kind.md) | 17 | `declaration-track:449e1612b2d7e9ff878ce711fc7897a9ec97555300604558fdcd534bac638f63` |
-| 2 | `theorem` | [theorem_ne_proposition](../../../../Combinatorics/ConceptKindNamespacedKind.lean/declarations/theorem-ne-proposition.md) | 33 | `result-track:f5b7a147a0a8756dc6a5a15b06884f5a6a059908d133068565a921bd66dc207f` |
-| 3 | `theorem` | [representation_ne_object](../../../../Combinatorics/ConceptKindNamespacedKind.lean/declarations/representation-ne-object.md) | 36 | `result-track:45834d0f0e6dc3f55b8a272c71407828a54f62cf0899e2bb89c4e0b739310fa0` |
+| 1 | `inductive` | [Kind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConceptKindNamespacedKind.lean/declarations/kind.md) | 17 | `declaration-track:449e1612b2d7e9ff878ce711fc7897a9ec97555300604558fdcd534bac638f63` |
+| 2 | `theorem` | [theorem_ne_proposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConceptKindNamespacedKind.lean/declarations/theorem-ne-proposition.md) | 33 | `result-track:f5b7a147a0a8756dc6a5a15b06884f5a6a059908d133068565a921bd66dc207f` |
+| 3 | `theorem` | [representation_ne_object](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ConceptKindNamespacedKind.lean/declarations/representation-ne-object.md) | 36 | `result-track:45834d0f0e6dc3f55b8a272c71407828a54f62cf0899e2bb89c4e0b739310fa0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

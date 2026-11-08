@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FinalThmDLamAbstract.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FinalThmDLamAbstract.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FinalThmDLamAbstract.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FinalThmDLamAbstract.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,17 +61,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [thmD_lam_abstract](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FinalThmDLamAbstract.lean/declarations/thmd-lam-abstract.md) | 45 | `result-track:4ebd775501974614e70c4db36b34aa315e01c8c89d7c6fc50ef05ba5b714751c` |
-| 2 | `theorem` | [thmD_lam](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FinalThmDLamAbstract.lean/declarations/thmd-lam.md) | 83 | `result-track:8f804c2941be3ad731c14125573d516b683f91b6f82a3709e2f336f71922c32d` |
-| 3 | `theorem` | [thmD_simple_lam](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FinalThmDLamAbstract.lean/declarations/thmd-simple-lam.md) | 89 | `result-track:2e584275712ac5e5cbff48dcc6428af83a1eb6517a6ab476083ece9c2e0e7eba` |
-| 4 | `theorem` | [thmD_dist_lam](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FinalThmDLamAbstract.lean/declarations/thmd-dist-lam.md) | 96 | `result-track:d4299ff601aaf6229ae00c9cc44b5836f9d916bedeb3a2db850c66ce506748f5` |
-| 5 | `theorem` | [thmD₀](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FinalThmDLamAbstract.lean/declarations/thmd.md) | 105 | `result-track:540fe375fbbbfde7cc6ef24cbfb54c8bdc2490bee96aef56d58bf7e4551208cd` |
-| 6 | `theorem` | [thmD₀'](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FinalThmDLamAbstract.lean/declarations/thmd-source-edition-2.md) | 111 | `result-track:f39b7467ec285e067040db25c136b1da8e5497f96f21e10c5aa201e4e4a51a74` |
-| 7 | `theorem` | [thmD₀_simple](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FinalThmDLamAbstract.lean/declarations/thmd-simple.md) | 119 | `result-track:dd46956051502f872313e0a6ed509ff6907435c8613640716eb926a1cd6894a3` |
-| 8 | `theorem` | [thmD₀_dist](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FinalThmDLamAbstract.lean/declarations/thmd-dist.md) | 128 | `result-track:84b04dc698cb97f397faf0f015f1233dec7ecb03283663847b4d49e08f8a54cc` |
-| 9 | `theorem` | [thmD₀_cumulative](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FinalThmDLamAbstract.lean/declarations/thmd-cumulative.md) | 134 | `result-track:aac8306b2c3d7b3a86e16d6adff689b606a731513f4683450dbd99a26eb0bc99` |
-| 10 | `theorem` | [thmD₀_simple_cumulative](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FinalThmDLamAbstract.lean/declarations/thmd-simple-cumulative.md) | 139 | `result-track:93b067e4890059eb1bf49e1080427db5993986dc17819828469dfc7ca3eff5e4` |
-| 11 | `theorem` | [thmD₀_dist_cumulative](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FinalThmDLamAbstract.lean/declarations/thmd-dist-cumulative.md) | 145 | `result-track:74f962c6331353cd7dbf7d1a77bb64e2dcd810c02fae00a5bed374b65d2f0b73` |
+| 1 | `theorem` | [thmD_lam_abstract](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FinalThmDLamAbstract.lean/declarations/thmd-lam-abstract.md) | 45 | `result-track:4ebd775501974614e70c4db36b34aa315e01c8c89d7c6fc50ef05ba5b714751c` |
+| 2 | `theorem` | [thmD_lam](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FinalThmDLamAbstract.lean/declarations/thmd-lam.md) | 83 | `result-track:8f804c2941be3ad731c14125573d516b683f91b6f82a3709e2f336f71922c32d` |
+| 3 | `theorem` | [thmD_simple_lam](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FinalThmDLamAbstract.lean/declarations/thmd-simple-lam.md) | 89 | `result-track:2e584275712ac5e5cbff48dcc6428af83a1eb6517a6ab476083ece9c2e0e7eba` |
+| 4 | `theorem` | [thmD_dist_lam](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FinalThmDLamAbstract.lean/declarations/thmd-dist-lam.md) | 96 | `result-track:d4299ff601aaf6229ae00c9cc44b5836f9d916bedeb3a2db850c66ce506748f5` |
+| 5 | `theorem` | [thmD₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FinalThmDLamAbstract.lean/declarations/thmd.md) | 105 | `result-track:540fe375fbbbfde7cc6ef24cbfb54c8bdc2490bee96aef56d58bf7e4551208cd` |
+| 6 | `theorem` | [thmD₀'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FinalThmDLamAbstract.lean/declarations/thmd-source-edition-2.md) | 111 | `result-track:f39b7467ec285e067040db25c136b1da8e5497f96f21e10c5aa201e4e4a51a74` |
+| 7 | `theorem` | [thmD₀_simple](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FinalThmDLamAbstract.lean/declarations/thmd-simple.md) | 119 | `result-track:dd46956051502f872313e0a6ed509ff6907435c8613640716eb926a1cd6894a3` |
+| 8 | `theorem` | [thmD₀_dist](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FinalThmDLamAbstract.lean/declarations/thmd-dist.md) | 128 | `result-track:84b04dc698cb97f397faf0f015f1233dec7ecb03283663847b4d49e08f8a54cc` |
+| 9 | `theorem` | [thmD₀_cumulative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FinalThmDLamAbstract.lean/declarations/thmd-cumulative.md) | 134 | `result-track:aac8306b2c3d7b3a86e16d6adff689b606a731513f4683450dbd99a26eb0bc99` |
+| 10 | `theorem` | [thmD₀_simple_cumulative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FinalThmDLamAbstract.lean/declarations/thmd-simple-cumulative.md) | 139 | `result-track:93b067e4890059eb1bf49e1080427db5993986dc17819828469dfc7ca3eff5e4` |
+| 11 | `theorem` | [thmD₀_dist_cumulative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FinalThmDLamAbstract.lean/declarations/thmd-dist-cumulative.md) | 145 | `result-track:74f962c6331353cd7dbf7d1a77bb64e2dcd810c02fae00a5bed374b65d2f0b73` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

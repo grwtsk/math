@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RootPairingCatNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RootPairingCatNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RootPairingCatNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RootPairingCatNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RootPairingCat](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RootPairingCatNamespaced.lean/declarations/rootpairingcat.md) | 45 | `declaration-track:6ddad0caaae6fb31eb7b393520ee597e2488945bddb917db581ebdfa1affdcf8` |
-| 2 | `instance` | [category](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RootPairingCatNamespaced.lean/declarations/category.md) | 64 | `declaration-track:b422f3e530366f406699874c732d07c2d052cf651d17420ce05309d4562053f1` |
+| 1 | `structure` | [RootPairingCat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RootPairingCatNamespaced.lean/declarations/rootpairingcat.md) | 45 | `declaration-track:6ddad0caaae6fb31eb7b393520ee597e2488945bddb917db581ebdfa1affdcf8` |
+| 2 | `instance` | [category](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RootPairingCatNamespaced.lean/declarations/category.md) | 64 | `declaration-track:b422f3e530366f406699874c732d07c2d052cf651d17420ce05309d4562053f1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

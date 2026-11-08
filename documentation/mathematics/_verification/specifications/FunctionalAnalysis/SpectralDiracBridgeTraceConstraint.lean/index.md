@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/SpectralDiracBridgeTraceConstraint.lean/index.md) · [Full source](../../../../FunctionalAnalysis/SpectralDiracBridgeTraceConstraint.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralDiracBridgeTraceConstraint.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralDiracBridgeTraceConstraint.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [TraceConstraint](../../../../FunctionalAnalysis/SpectralDiracBridgeTraceConstraint.lean/declarations/traceconstraint.md) | 13 | `declaration-track:c0163712419e738e2c9b6ff6318571d865f55471923c75b3eba8054b767f23c7` |
-| 2 | `abbrev` | [DiracSymbol](../../../../FunctionalAnalysis/SpectralDiracBridgeTraceConstraint.lean/declarations/diracsymbol.md) | 16 | `declaration-track:592e09b9ac635f3fa306ed360144cbf8ae67fd95e8fcca9e67ac4d871b7dc1e3` |
-| 3 | `abbrev` | [PrismaticDifferenceSymbol](../../../../FunctionalAnalysis/SpectralDiracBridgeTraceConstraint.lean/declarations/prismaticdifferencesymbol.md) | 19 | `declaration-track:efa9f76ecf637e99fd28d42705ab98a2e6344586cf2b7605f22fca9f452cb381` |
-| 4 | `abbrev` | [SpectralBridgeNode](../../../../FunctionalAnalysis/SpectralDiracBridgeTraceConstraint.lean/declarations/spectralbridgenode.md) | 22 | `declaration-track:574f775543256ce945c0b733761181c83931ee682d35f0562f6b9d4b4ae53f3b` |
-| 5 | `abbrev` | [ConnesStyleBridge](../../../../FunctionalAnalysis/SpectralDiracBridgeTraceConstraint.lean/declarations/connesstylebridge.md) | 25 | `declaration-track:63058db8725433f0067a3e1aaaf882aa03a663f1fe2fdc3920916cca7496c779` |
-| 6 | `abbrev` | [PrismaticLimitCertificate](../../../../FunctionalAnalysis/SpectralDiracBridgeTraceConstraint.lean/declarations/prismaticlimitcertificate.md) | 28 | `declaration-track:35c06ffffc3f0e504cdbb0c46cd65b2b1bf2e7f8dad4325d7accad85a60b3094` |
-| 7 | `theorem` | [connes_bridge_has_matrix_tree_lowering](../../../../FunctionalAnalysis/SpectralDiracBridgeTraceConstraint.lean/declarations/connes-bridge-has-matrix-tree-lowering.md) | 31 | `result-track:dfa017bcd378c2b4e725199de4f5957752b8e35da250f3d9a3fd75d6a84b992e` |
-| 8 | `theorem` | [prismatic_limit_aligns_with_functional_equation](../../../../FunctionalAnalysis/SpectralDiracBridgeTraceConstraint.lean/declarations/prismatic-limit-aligns-with-functional-equation.md) | 36 | `result-track:ac4c22d1c8d862643624e35f863df5c60f06ab9a411397b3266010a275df4a54` |
+| 1 | `abbrev` | [TraceConstraint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralDiracBridgeTraceConstraint.lean/declarations/traceconstraint.md) | 13 | `declaration-track:c0163712419e738e2c9b6ff6318571d865f55471923c75b3eba8054b767f23c7` |
+| 2 | `abbrev` | [DiracSymbol](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralDiracBridgeTraceConstraint.lean/declarations/diracsymbol.md) | 16 | `declaration-track:592e09b9ac635f3fa306ed360144cbf8ae67fd95e8fcca9e67ac4d871b7dc1e3` |
+| 3 | `abbrev` | [PrismaticDifferenceSymbol](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralDiracBridgeTraceConstraint.lean/declarations/prismaticdifferencesymbol.md) | 19 | `declaration-track:efa9f76ecf637e99fd28d42705ab98a2e6344586cf2b7605f22fca9f452cb381` |
+| 4 | `abbrev` | [SpectralBridgeNode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralDiracBridgeTraceConstraint.lean/declarations/spectralbridgenode.md) | 22 | `declaration-track:574f775543256ce945c0b733761181c83931ee682d35f0562f6b9d4b4ae53f3b` |
+| 5 | `abbrev` | [ConnesStyleBridge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralDiracBridgeTraceConstraint.lean/declarations/connesstylebridge.md) | 25 | `declaration-track:63058db8725433f0067a3e1aaaf882aa03a663f1fe2fdc3920916cca7496c779` |
+| 6 | `abbrev` | [PrismaticLimitCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralDiracBridgeTraceConstraint.lean/declarations/prismaticlimitcertificate.md) | 28 | `declaration-track:35c06ffffc3f0e504cdbb0c46cd65b2b1bf2e7f8dad4325d7accad85a60b3094` |
+| 7 | `theorem` | [connes_bridge_has_matrix_tree_lowering](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralDiracBridgeTraceConstraint.lean/declarations/connes-bridge-has-matrix-tree-lowering.md) | 31 | `result-track:dfa017bcd378c2b4e725199de4f5957752b8e35da250f3d9a3fd75d6a84b992e` |
+| 8 | `theorem` | [prismatic_limit_aligns_with_functional_equation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralDiracBridgeTraceConstraint.lean/declarations/prismatic-limit-aligns-with-functional-equation.md) | 36 | `result-track:ac4c22d1c8d862643624e35f863df5c60f06ab9a411397b3266010a275df4a54` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

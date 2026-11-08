@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/SeparatedHeightControls.lean/index.md) · [Full source](../../../../NumberTheory/SeparatedHeightControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SeparatedHeightControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SeparatedHeightControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Chebyshev.SeparatedTentContours`](../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SeparatedTentContours.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.SeparatedTentContours`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SeparatedTentContours.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [empty_clearance](../../../../NumberTheory/SeparatedHeightControls.lean/declarations/empty-clearance.md) | 22 | `result-track:cc131f18daf0e08ca8223ddc0067e04898dc02bf9db4c5b795e23751e1c8d808` |
-| 2 | `theorem` | [empty_grid_midpoint](../../../../NumberTheory/SeparatedHeightControls.lean/declarations/empty-grid-midpoint.md) | 24 | `result-track:600676522d4d1288bb275ef1bfa284cee16354ea5405cefd81f9c9c674c1d698` |
-| 3 | `theorem` | [one_blocker_other_candidate](../../../../NumberTheory/SeparatedHeightControls.lean/declarations/one-blocker-other-candidate.md) | 28 | `result-track:4445b3539f51b88ea6220b54f1f62024647e9eb2e57a0b184bb33e8d50476033` |
-| 4 | `theorem` | [local_band_endpoints](../../../../NumberTheory/SeparatedHeightControls.lean/declarations/local-band-endpoints.md) | 34 | `result-track:fc55280cc521a13c72ebc383492dedcae910678ffc7c3692641c6072cd6c6ee6` |
-| 5 | `theorem` | [whole_gap_rounding_can_hit](../../../../NumberTheory/SeparatedHeightControls.lean/declarations/whole-gap-rounding-can-hit.md) | 39 | `result-track:003ef5de79bf110a3da53b3775ced1636ccd0fd6d15ce4957f5253d80123c372` |
-| 6 | `theorem` | [equal_height_distinct_points](../../../../NumberTheory/SeparatedHeightControls.lean/declarations/equal-height-distinct-points.md) | 44 | `result-track:986f063b434c9215e538093036cb1056c0528bf4600476b0a7e2e0791a70a80c` |
-| 7 | `theorem` | [multiplicity_mass_is_not_cardinality](../../../../NumberTheory/SeparatedHeightControls.lean/declarations/multiplicity-mass-is-not-cardinality.md) | 54 | `result-track:e12dffbe244951641633f86181a2f4710bcf328e828b73c9d55a2aa3238aea3b` |
-| 8 | `theorem` | [omitted_record_breaks_gap](../../../../NumberTheory/SeparatedHeightControls.lean/declarations/omitted-record-breaks-gap.md) | 57 | `result-track:d9c5b8aea857c3f97efd7b9d8449db6b4aa4ed0a9fbac34679650cf20a0513d3` |
-| 9 | `theorem` | [regular_part_not_controlled](../../../../NumberTheory/SeparatedHeightControls.lean/declarations/regular-part-not-controlled.md) | 61 | `result-track:0044ae2afda4e78d4ddb83506e5d34f6bd168cea26b2c29435bc5847565cc05d` |
+| 1 | `theorem` | [empty_clearance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SeparatedHeightControls.lean/declarations/empty-clearance.md) | 22 | `result-track:cc131f18daf0e08ca8223ddc0067e04898dc02bf9db4c5b795e23751e1c8d808` |
+| 2 | `theorem` | [empty_grid_midpoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SeparatedHeightControls.lean/declarations/empty-grid-midpoint.md) | 24 | `result-track:600676522d4d1288bb275ef1bfa284cee16354ea5405cefd81f9c9c674c1d698` |
+| 3 | `theorem` | [one_blocker_other_candidate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SeparatedHeightControls.lean/declarations/one-blocker-other-candidate.md) | 28 | `result-track:4445b3539f51b88ea6220b54f1f62024647e9eb2e57a0b184bb33e8d50476033` |
+| 4 | `theorem` | [local_band_endpoints](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SeparatedHeightControls.lean/declarations/local-band-endpoints.md) | 34 | `result-track:fc55280cc521a13c72ebc383492dedcae910678ffc7c3692641c6072cd6c6ee6` |
+| 5 | `theorem` | [whole_gap_rounding_can_hit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SeparatedHeightControls.lean/declarations/whole-gap-rounding-can-hit.md) | 39 | `result-track:003ef5de79bf110a3da53b3775ced1636ccd0fd6d15ce4957f5253d80123c372` |
+| 6 | `theorem` | [equal_height_distinct_points](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SeparatedHeightControls.lean/declarations/equal-height-distinct-points.md) | 44 | `result-track:986f063b434c9215e538093036cb1056c0528bf4600476b0a7e2e0791a70a80c` |
+| 7 | `theorem` | [multiplicity_mass_is_not_cardinality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SeparatedHeightControls.lean/declarations/multiplicity-mass-is-not-cardinality.md) | 54 | `result-track:e12dffbe244951641633f86181a2f4710bcf328e828b73c9d55a2aa3238aea3b` |
+| 8 | `theorem` | [omitted_record_breaks_gap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SeparatedHeightControls.lean/declarations/omitted-record-breaks-gap.md) | 57 | `result-track:d9c5b8aea857c3f97efd7b9d8449db6b4aa4ed0a9fbac34679650cf20a0513d3` |
+| 9 | `theorem` | [regular_part_not_controlled](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SeparatedHeightControls.lean/declarations/regular-part-not-controlled.md) | 61 | `result-track:0044ae2afda4e78d4ddb83506e5d34f6bd168cea26b2c29435bc5847565cc05d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/MetrizableSpaceNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/MetrizableSpaceNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MetrizableSpaceNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MetrizableSpaceNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../GeneralTopology/MetrizableSpaceNamespaced.lean/declarations/instance-source-edition-2.md) | 33 | `declaration-track:77fdd6d42a401bbabe3e4083873a793ec5f7ecf38c6cf56ca6d9d9099529faf1` |
-| 2 | `instance` | [(anonymous)](../../../../GeneralTopology/MetrizableSpaceNamespaced.lean/declarations/instance.md) | 49 | `declaration-track:1fb0e0efb7b4d5372200bb2e99ad6192f2a4f90836bcc0b7688dd0f0eec54fc7` |
-| 3 | `instance` | [(anonymous)](../../../../GeneralTopology/MetrizableSpaceNamespaced.lean/declarations/instance-source-edition-4.md) | 57 | `declaration-track:e382c99674da612eb2b55f52a9900167d16970e99fced55c5f0eecd089327815` |
-| 4 | `instance` | [(anonymous)](../../../../GeneralTopology/MetrizableSpaceNamespaced.lean/declarations/instance-source-edition-3.md) | 59 | `declaration-track:a1105e6b7570354fbc02536ceb97efc7711b12183cc5ca78d107ab719e71728a` |
-| 5 | `theorem` | [IsGδ.setOf_continuousAt](../../../../GeneralTopology/MetrizableSpaceNamespaced.lean/declarations/isg-setof-continuousat.md) | 66 | `result-track:cbf5af4897a5789e15397ca1db3e764d7c59d998583229e904ce62632d469257` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MetrizableSpaceNamespaced.lean/declarations/instance-source-edition-2.md) | 33 | `declaration-track:77fdd6d42a401bbabe3e4083873a793ec5f7ecf38c6cf56ca6d9d9099529faf1` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MetrizableSpaceNamespaced.lean/declarations/instance.md) | 49 | `declaration-track:1fb0e0efb7b4d5372200bb2e99ad6192f2a4f90836bcc0b7688dd0f0eec54fc7` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MetrizableSpaceNamespaced.lean/declarations/instance-source-edition-4.md) | 57 | `declaration-track:e382c99674da612eb2b55f52a9900167d16970e99fced55c5f0eecd089327815` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MetrizableSpaceNamespaced.lean/declarations/instance-source-edition-3.md) | 59 | `declaration-track:a1105e6b7570354fbc02536ceb97efc7711b12183cc5ca78d107ab719e71728a` |
+| 5 | `theorem` | [IsGδ.setOf_continuousAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MetrizableSpaceNamespaced.lean/declarations/isg-setof-continuousat.md) | 66 | `result-track:cbf5af4897a5789e15397ca1db3e764d7c59d998583229e904ce62632d469257` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

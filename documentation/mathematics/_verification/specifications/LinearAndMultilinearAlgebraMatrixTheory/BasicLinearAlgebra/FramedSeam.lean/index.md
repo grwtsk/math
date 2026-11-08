@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedSeam.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedSeam.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedSeam.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedSeam.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FramedPort](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedSeam.lean/declarations/framedport.md) | 14 | `declaration-track:38fbc231e1eb81626beba56f0f5f636934cf8b50937e6b33cfbae2564082a1ba` |
-| 2 | `theorem` | [coordinate_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedSeam.lean/declarations/coordinate-apply.md) | 31 | `result-track:8429ca69b013a4c8d9e30d2365bed177535df0bb57d2ae66c1c1b5747733efee` |
-| 3 | `def` | [identity](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedSeam.lean/declarations/identity.md) | 38 | `declaration-track:f8196131be2fb2dd5d5fff6f9caba0bad0277d2393bc16d79569c124d9d2de47` |
-| 4 | `structure` | [SameFramedSeam](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedSeam.lean/declarations/sameframedseam.md) | 52 | `declaration-track:6b68f39ab472acc5002d924d6ec6cf84dd162c13a03458e7fa81c8821361c20c` |
-| 5 | `theorem` | [coordinate_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedSeam.lean/declarations/coordinate-apply-source-edition-2.md) | 59 | `result-track:dcac8c2e2522bde59f5b709fb9009409bc5f051d589a17a1eefb90b7a1278cb6` |
-| 6 | `theorem` | [of_coordinate_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedSeam.lean/declarations/of-coordinate-apply.md) | 67 | `result-track:620632d43c97734e108862cf4aa239871acba29b5723724559a40bf9ee241d6f` |
-| 7 | `theorem` | [refl](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedSeam.lean/declarations/refl.md) | 79 | `result-track:3cf44f63bb1dd90a17fb4c9c966c6b6eba76d83485d2e93edce6b70368e166a7` |
-| 8 | `theorem` | [symm](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedSeam.lean/declarations/symm.md) | 83 | `result-track:a049c024a3f92869ce47020f122ab85c5400b3571b71ae811125c47272ee5db5` |
-| 9 | `theorem` | [trans](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedSeam.lean/declarations/trans.md) | 88 | `result-track:0687da6ae768faa0be0008b72130a374c6224f32a8ab8bdddb0fdfc1ecaf91d5` |
+| 1 | `structure` | [FramedPort](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedSeam.lean/declarations/framedport.md) | 14 | `declaration-track:38fbc231e1eb81626beba56f0f5f636934cf8b50937e6b33cfbae2564082a1ba` |
+| 2 | `theorem` | [coordinate_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedSeam.lean/declarations/coordinate-apply.md) | 31 | `result-track:8429ca69b013a4c8d9e30d2365bed177535df0bb57d2ae66c1c1b5747733efee` |
+| 3 | `def` | [identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedSeam.lean/declarations/identity.md) | 38 | `declaration-track:f8196131be2fb2dd5d5fff6f9caba0bad0277d2393bc16d79569c124d9d2de47` |
+| 4 | `structure` | [SameFramedSeam](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedSeam.lean/declarations/sameframedseam.md) | 52 | `declaration-track:6b68f39ab472acc5002d924d6ec6cf84dd162c13a03458e7fa81c8821361c20c` |
+| 5 | `theorem` | [coordinate_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedSeam.lean/declarations/coordinate-apply-source-edition-2.md) | 59 | `result-track:dcac8c2e2522bde59f5b709fb9009409bc5f051d589a17a1eefb90b7a1278cb6` |
+| 6 | `theorem` | [of_coordinate_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedSeam.lean/declarations/of-coordinate-apply.md) | 67 | `result-track:620632d43c97734e108862cf4aa239871acba29b5723724559a40bf9ee241d6f` |
+| 7 | `theorem` | [refl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedSeam.lean/declarations/refl.md) | 79 | `result-track:3cf44f63bb1dd90a17fb4c9c966c6b6eba76d83485d2e93edce6b70368e166a7` |
+| 8 | `theorem` | [symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedSeam.lean/declarations/symm.md) | 83 | `result-track:a049c024a3f92869ce47020f122ab85c5400b3571b71ae811125c47272ee5db5` |
+| 9 | `theorem` | [trans](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedSeam.lean/declarations/trans.md) | 88 | `result-track:0687da6ae768faa0be0008b72130a374c6224f32a8ab8bdddb0fdfc1ecaf91d5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

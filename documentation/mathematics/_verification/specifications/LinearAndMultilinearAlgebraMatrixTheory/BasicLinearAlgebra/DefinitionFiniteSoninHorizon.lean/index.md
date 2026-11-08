@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DefinitionFiniteSoninHorizon.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DefinitionFiniteSoninHorizon.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DefinitionFiniteSoninHorizon.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DefinitionFiniteSoninHorizon.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [FiniteSoninHorizon.transportedRange](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DefinitionFiniteSoninHorizon.lean/declarations/finitesoninhorizon-transportedrange.md) | 9 | `declaration-track:1dee08f7380baef410f70c6a19caac4df8c15825b14628e68838e6ad714fdab3` |
+| 1 | `def` | [FiniteSoninHorizon.transportedRange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DefinitionFiniteSoninHorizon.lean/declarations/finitesoninhorizon-transportedrange.md) | 9 | `declaration-track:1dee08f7380baef410f70c6a19caac4df8c15825b14628e68838e6ad714fdab3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

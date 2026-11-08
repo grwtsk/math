@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SurfacePolygonConeKernel.lean/index.md) · [Full source](../../../../GeneralTopology/SurfacePolygonConeKernel.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonConeKernel.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonConeKernel.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonConeOuterPairs`](../../../../AlgebraicTopology/SurfacePolygonConeOuterPairs.lean/index.md) — import line 9; pinned internal source present.
+- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonConeOuterPairs`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonConeOuterPairs.lean/index.md) — import line 9; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [radialStep_to_outerConnected](../../../../GeneralTopology/SurfacePolygonConeKernel.lean/declarations/radialstep-to-outerconnected.md) | 37 | `result-track:605b4596e12aecb27fa0f68374bf5169152bceb1d27d0d8b13794e86fd038924` |
-| 2 | `theorem` | [radialConnected_to_outerConnected](../../../../GeneralTopology/SurfacePolygonConeKernel.lean/declarations/radialconnected-to-outerconnected.md) | 86 | `result-track:f597bd1807552bd1cdebcc6f18bae303c6158fb1b85d8b167eaf202d89b873dd` |
-| 3 | `theorem` | [coneToFilled_eq_implies_outerConnected](../../../../GeneralTopology/SurfacePolygonConeKernel.lean/declarations/conetofilled-eq-implies-outerconnected.md) | 99 | `result-track:22190a63cde0d1b5ce14c71b9b08cb4ab48de2cac96ab923031a5fd8384cb6ac` |
-| 4 | `theorem` | [coneToFilled_eq_iff_outerConnected](../../../../GeneralTopology/SurfacePolygonConeKernel.lean/declarations/conetofilled-eq-iff-outerconnected.md) | 111 | `result-track:548cde3b1a582606dd2ca4e491b90e917c0ac96acc9149a25e0af40d2fb6a3dc` |
-| 5 | `theorem` | [outerPairedConeToFilled_injective](../../../../GeneralTopology/SurfacePolygonConeKernel.lean/declarations/outerpairedconetofilled-injective.md) | 120 | `result-track:8127dc31a4689e9aa9bbf8d430f1be66b66fac7dd6d32037b25dd1fa53f9c244` |
-| 6 | `theorem` | [outerPairedConeToFilled_bijective](../../../../GeneralTopology/SurfacePolygonConeKernel.lean/declarations/outerpairedconetofilled-bijective.md) | 133 | `result-track:be13406ac3687efbf87fcdd6fe10da9a776558327c1bbd80fb1aac89c3cabcce` |
-| 7 | `theorem` | [outerPairedConeToFilled_continuous](../../../../GeneralTopology/SurfacePolygonConeKernel.lean/declarations/outerpairedconetofilled-continuous.md) | 140 | `result-track:ca17fda749bbcd87ae2fe5f802e6735e4accb01fbbfed2f14e0fc1dd6729c3e2` |
-| 8 | `def` | [outerPairedConeHomeomorph](../../../../GeneralTopology/SurfacePolygonConeKernel.lean/declarations/outerpairedconehomeomorph.md) | 149 | `declaration-track:dd81e0ad11cbf70101ba18487f101a63a4ef6d80cf6fda9a4a6322818e19a6f3` |
+| 1 | `theorem` | [radialStep_to_outerConnected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonConeKernel.lean/declarations/radialstep-to-outerconnected.md) | 37 | `result-track:605b4596e12aecb27fa0f68374bf5169152bceb1d27d0d8b13794e86fd038924` |
+| 2 | `theorem` | [radialConnected_to_outerConnected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonConeKernel.lean/declarations/radialconnected-to-outerconnected.md) | 86 | `result-track:f597bd1807552bd1cdebcc6f18bae303c6158fb1b85d8b167eaf202d89b873dd` |
+| 3 | `theorem` | [coneToFilled_eq_implies_outerConnected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonConeKernel.lean/declarations/conetofilled-eq-implies-outerconnected.md) | 99 | `result-track:22190a63cde0d1b5ce14c71b9b08cb4ab48de2cac96ab923031a5fd8384cb6ac` |
+| 4 | `theorem` | [coneToFilled_eq_iff_outerConnected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonConeKernel.lean/declarations/conetofilled-eq-iff-outerconnected.md) | 111 | `result-track:548cde3b1a582606dd2ca4e491b90e917c0ac96acc9149a25e0af40d2fb6a3dc` |
+| 5 | `theorem` | [outerPairedConeToFilled_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonConeKernel.lean/declarations/outerpairedconetofilled-injective.md) | 120 | `result-track:8127dc31a4689e9aa9bbf8d430f1be66b66fac7dd6d32037b25dd1fa53f9c244` |
+| 6 | `theorem` | [outerPairedConeToFilled_bijective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonConeKernel.lean/declarations/outerpairedconetofilled-bijective.md) | 133 | `result-track:be13406ac3687efbf87fcdd6fe10da9a776558327c1bbd80fb1aac89c3cabcce` |
+| 7 | `theorem` | [outerPairedConeToFilled_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonConeKernel.lean/declarations/outerpairedconetofilled-continuous.md) | 140 | `result-track:ca17fda749bbcd87ae2fe5f802e6735e4accb01fbbfed2f14e0fc1dd6729c3e2` |
+| 8 | `def` | [outerPairedConeHomeomorph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SurfacePolygonConeKernel.lean/declarations/outerpairedconehomeomorph.md) | 149 | `declaration-track:dd81e0ad11cbf70101ba18487f101a63a4ef6d80cf6fda9a4a6322818e19a6f3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/UniqueFactorizationDomainFiniteNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/UniqueFactorizationDomainFiniteNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UniqueFactorizationDomainFiniteNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UniqueFactorizationDomainFiniteNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [fintypeSubtypeDvd](../../../../CommutativeAlgebra/UniqueFactorizationDomainFiniteNamespaced.lean/declarations/fintypesubtypedvd.md) | 34 | `declaration-track:1731626c860c35cb6be735e538dcab4942f8e7617dc4aac1c1cc030c1403d71b` |
+| 1 | `def` | [fintypeSubtypeDvd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/UniqueFactorizationDomainFiniteNamespaced.lean/declarations/fintypesubtypedvd.md) | 34 | `declaration-track:1731626c860c35cb6be735e538dcab4942f8e7617dc4aac1c1cc030c1403d71b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

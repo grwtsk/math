@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/CovBySMul.lean/index.md) · [Full source](../../../../Combinatorics/CovBySMul.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CovBySMul.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CovBySMul.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,16 +60,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [CovBySMul](../../../../Combinatorics/CovBySMul.lean/declarations/covbysmul.md) | 29 | `declaration-track:86ff0e949e697f0cdb2cceb78dad7e9892f12433dff73b00deee1b933206f727` |
-| 2 | `lemma` | [CovBySMul.rfl](../../../../Combinatorics/CovBySMul.lean/declarations/covbysmul-rfl.md) | 32 | `result-track:906b7d5ec55bd2ccaf2d98ecbf17bcb3f072f60233b8a5e4a7b5a50e47526422` |
-| 3 | `lemma` | [CovBySMul.of_subset](../../../../Combinatorics/CovBySMul.lean/declarations/covbysmul-of-subset.md) | 35 | `result-track:db7d895086f09aea0dc79890c0a504bf0d9e9887b77f17ea8bdd7a3476b9d803` |
-| 4 | `lemma` | [CovBySMul.nonneg](../../../../Combinatorics/CovBySMul.lean/declarations/covbysmul-nonneg.md) | 37 | `result-track:91a165f8e3d5065caeb4786ca3d2b20e83bcbf95a21af0f4a7cb07b1e08c2584` |
-| 5 | `lemma` | [covBySMul_zero](../../../../Combinatorics/CovBySMul.lean/declarations/covbysmul-zero.md) | 41 | `result-track:acf73d1e454a3dd22a4e3bd52a626a636f8e3321de37f776177f632fb1de0137` |
-| 6 | `lemma` | [CovBySMul.mono](../../../../Combinatorics/CovBySMul.lean/declarations/covbysmul-mono.md) | 44 | `result-track:620acad783573fe999c969b68a12126ccc4381f1d384fb0b0bd4ac5747076e69` |
-| 7 | `lemma` | [CovBySMul.trans](../../../../Combinatorics/CovBySMul.lean/declarations/covbysmul-trans.md) | 47 | `result-track:e717552aabaade3801bdb0dee25c346c50700bb6dfc7236a5ad15b31c9197c22` |
-| 8 | `lemma` | [CovBySMul.subset_left](../../../../Combinatorics/CovBySMul.lean/declarations/covbysmul-subset-left.md) | 63 | `result-track:ceacfa0a23a393d263f40f5c5dcc77dd04a1e07269bf96ecd012e1760a7cbe72` |
-| 9 | `lemma` | [CovBySMul.subset_right](../../../../Combinatorics/CovBySMul.lean/declarations/covbysmul-subset-right.md) | 67 | `result-track:40d566f8b6f9424dbf46b1cf70eaba9fa0e654d362ddf1a9eabd9083a5dcc72a` |
-| 10 | `lemma` | [CovBySMul.subset](../../../../Combinatorics/CovBySMul.lean/declarations/covbysmul-subset.md) | 71 | `result-track:908e6d2a5a59bdc78c47c73ca166c690e3db455defd3c8722e464cc1585dec7b` |
+| 1 | `def` | [CovBySMul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CovBySMul.lean/declarations/covbysmul.md) | 29 | `declaration-track:86ff0e949e697f0cdb2cceb78dad7e9892f12433dff73b00deee1b933206f727` |
+| 2 | `lemma` | [CovBySMul.rfl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CovBySMul.lean/declarations/covbysmul-rfl.md) | 32 | `result-track:906b7d5ec55bd2ccaf2d98ecbf17bcb3f072f60233b8a5e4a7b5a50e47526422` |
+| 3 | `lemma` | [CovBySMul.of_subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CovBySMul.lean/declarations/covbysmul-of-subset.md) | 35 | `result-track:db7d895086f09aea0dc79890c0a504bf0d9e9887b77f17ea8bdd7a3476b9d803` |
+| 4 | `lemma` | [CovBySMul.nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CovBySMul.lean/declarations/covbysmul-nonneg.md) | 37 | `result-track:91a165f8e3d5065caeb4786ca3d2b20e83bcbf95a21af0f4a7cb07b1e08c2584` |
+| 5 | `lemma` | [covBySMul_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CovBySMul.lean/declarations/covbysmul-zero.md) | 41 | `result-track:acf73d1e454a3dd22a4e3bd52a626a636f8e3321de37f776177f632fb1de0137` |
+| 6 | `lemma` | [CovBySMul.mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CovBySMul.lean/declarations/covbysmul-mono.md) | 44 | `result-track:620acad783573fe999c969b68a12126ccc4381f1d384fb0b0bd4ac5747076e69` |
+| 7 | `lemma` | [CovBySMul.trans](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CovBySMul.lean/declarations/covbysmul-trans.md) | 47 | `result-track:e717552aabaade3801bdb0dee25c346c50700bb6dfc7236a5ad15b31c9197c22` |
+| 8 | `lemma` | [CovBySMul.subset_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CovBySMul.lean/declarations/covbysmul-subset-left.md) | 63 | `result-track:ceacfa0a23a393d263f40f5c5dcc77dd04a1e07269bf96ecd012e1760a7cbe72` |
+| 9 | `lemma` | [CovBySMul.subset_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CovBySMul.lean/declarations/covbysmul-subset-right.md) | 67 | `result-track:40d566f8b6f9424dbf46b1cf70eaba9fa0e654d362ddf1a9eabd9083a5dcc72a` |
+| 10 | `lemma` | [CovBySMul.subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CovBySMul.lean/declarations/covbysmul-subset.md) | 71 | `result-track:908e6d2a5a59bdc78c47c73ca166c690e3db455defd3c8722e464cc1585dec7b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

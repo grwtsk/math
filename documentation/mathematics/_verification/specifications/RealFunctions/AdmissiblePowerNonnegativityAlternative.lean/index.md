@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/AdmissiblePowerNonnegativityAlternative.lean/index.md) · [Full source](../../../../RealFunctions/AdmissiblePowerNonnegativityAlternative.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AdmissiblePowerNonnegativityAlternative.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AdmissiblePowerNonnegativityAlternative.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PrecessionInvocation](../../../../RealFunctions/AdmissiblePowerNonnegativityAlternative.lean/declarations/precessioninvocation.md) | 41 | `declaration-track:ba3a993524af0bc7c0f93cb3fe79c8c83668bc05eef1021194c26f604e483d2b` |
-| 2 | `def` | [executePrecession](../../../../RealFunctions/AdmissiblePowerNonnegativityAlternative.lean/declarations/executeprecession.md) | 46 | `declaration-track:f01d7a90fdab5c34119b2e0a401e736718d3c8e659799c93911df53ce7262807` |
-| 3 | `def` | [precessionRepresentation](../../../../RealFunctions/AdmissiblePowerNonnegativityAlternative.lean/declarations/precessionrepresentation.md) | 49 | `declaration-track:fe6c451d12aba05db9da1d15fcd71102a211f6e835da75e980c14a9ecdea39c8` |
-| 4 | `theorem` | [executePrecession_represents](../../../../RealFunctions/AdmissiblePowerNonnegativityAlternative.lean/declarations/executeprecession-represents.md) | 55 | `result-track:42e2204dc3e48bdd7267872b46a712258a396cbbaaff81e58a595ad21f673f9c` |
-| 5 | `theorem` | [executePrecession_nonnegative](../../../../RealFunctions/AdmissiblePowerNonnegativityAlternative.lean/declarations/executeprecession-nonnegative.md) | 63 | `result-track:d08f4c6acfc18205c8e838cb52361dfcbff077218de8d43163f050eb4457cd15` |
+| 1 | `structure` | [PrecessionInvocation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AdmissiblePowerNonnegativityAlternative.lean/declarations/precessioninvocation.md) | 41 | `declaration-track:ba3a993524af0bc7c0f93cb3fe79c8c83668bc05eef1021194c26f604e483d2b` |
+| 2 | `def` | [executePrecession](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AdmissiblePowerNonnegativityAlternative.lean/declarations/executeprecession.md) | 46 | `declaration-track:f01d7a90fdab5c34119b2e0a401e736718d3c8e659799c93911df53ce7262807` |
+| 3 | `def` | [precessionRepresentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AdmissiblePowerNonnegativityAlternative.lean/declarations/precessionrepresentation.md) | 49 | `declaration-track:fe6c451d12aba05db9da1d15fcd71102a211f6e835da75e980c14a9ecdea39c8` |
+| 4 | `theorem` | [executePrecession_represents](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AdmissiblePowerNonnegativityAlternative.lean/declarations/executeprecession-represents.md) | 55 | `result-track:42e2204dc3e48bdd7267872b46a712258a396cbbaaff81e58a595ad21f673f9c` |
+| 5 | `theorem` | [executePrecession_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AdmissiblePowerNonnegativityAlternative.lean/declarations/executeprecession-nonnegative.md) | 63 | `result-track:d08f4c6acfc18205c8e838cb52361dfcbff077218de8d43163f050eb4457cd15` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

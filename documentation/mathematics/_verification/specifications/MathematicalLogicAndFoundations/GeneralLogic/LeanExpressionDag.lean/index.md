@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LeanExpressionDag.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LeanExpressionDag.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LeanExpressionDag.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LeanExpressionDag.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [maximumNodes](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LeanExpressionDag.lean/declarations/maximumnodes.md) | 13 | `declaration-track:156f69b829eced6ffe1ae2a296d0cb39410343347c4d9b65df183d06fd99a8b4` |
-| 2 | `def` | [maximumDepth](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LeanExpressionDag.lean/declarations/maximumdepth.md) | 14 | `declaration-track:8c72b55f347395f875be79315cd00e3e5f3c63712bef78500abfa4bd69c8c6b2` |
-| 3 | `def` | [maximumRowBytes](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LeanExpressionDag.lean/declarations/maximumrowbytes.md) | 15 | `declaration-track:95c85dbf4d70d129e57096ef5eee31f8fc889eec5d3ded310e5b1cb4b53b5493` |
-| 4 | `def` | [maximumArtifactBytes](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LeanExpressionDag.lean/declarations/maximumartifactbytes.md) | 16 | `declaration-track:dfd38c388603652ab4c65d1f642098ce5190a3aab3ce0c08c47719fafb11e1f4` |
-| 5 | `def` | [children](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LeanExpressionDag.lean/declarations/children.md) | 18 | `declaration-track:9b9ae279561eabee2fe874cc90158ce139f47fb9fd8140b797f1ababee72842b` |
-| 6 | `def` | [shallow](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LeanExpressionDag.lean/declarations/shallow.md) | 25 | `declaration-track:7a26cf16f9a38339df935fe88de59538685e8e0cff985be93404594eb38f15cd` |
-| 7 | `structure` | [Node](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LeanExpressionDag.lean/declarations/node.md) | 35 | `declaration-track:980c3e231699d22e52071ba8dbcc12dae67f642733396682fdf22fab21d956d8` |
-| 8 | `structure` | [Result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LeanExpressionDag.lean/declarations/result.md) | 39 | `declaration-track:adf47c6ff2abd591726fe5df588493715502055f083cba4d150e21abda770d48` |
-| 9 | `def` | [writeDag](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LeanExpressionDag.lean/declarations/writedag.md) | 46 | `declaration-track:6e244b6e1fc255678eb74cd3acb26ca328528f780d508fc16004c0108219e44b` |
+| 1 | `def` | [maximumNodes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LeanExpressionDag.lean/declarations/maximumnodes.md) | 13 | `declaration-track:156f69b829eced6ffe1ae2a296d0cb39410343347c4d9b65df183d06fd99a8b4` |
+| 2 | `def` | [maximumDepth](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LeanExpressionDag.lean/declarations/maximumdepth.md) | 14 | `declaration-track:8c72b55f347395f875be79315cd00e3e5f3c63712bef78500abfa4bd69c8c6b2` |
+| 3 | `def` | [maximumRowBytes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LeanExpressionDag.lean/declarations/maximumrowbytes.md) | 15 | `declaration-track:95c85dbf4d70d129e57096ef5eee31f8fc889eec5d3ded310e5b1cb4b53b5493` |
+| 4 | `def` | [maximumArtifactBytes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LeanExpressionDag.lean/declarations/maximumartifactbytes.md) | 16 | `declaration-track:dfd38c388603652ab4c65d1f642098ce5190a3aab3ce0c08c47719fafb11e1f4` |
+| 5 | `def` | [children](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LeanExpressionDag.lean/declarations/children.md) | 18 | `declaration-track:9b9ae279561eabee2fe874cc90158ce139f47fb9fd8140b797f1ababee72842b` |
+| 6 | `def` | [shallow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LeanExpressionDag.lean/declarations/shallow.md) | 25 | `declaration-track:7a26cf16f9a38339df935fe88de59538685e8e0cff985be93404594eb38f15cd` |
+| 7 | `structure` | [Node](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LeanExpressionDag.lean/declarations/node.md) | 35 | `declaration-track:980c3e231699d22e52071ba8dbcc12dae67f642733396682fdf22fab21d956d8` |
+| 8 | `structure` | [Result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LeanExpressionDag.lean/declarations/result.md) | 39 | `declaration-track:adf47c6ff2abd591726fe5df588493715502055f083cba4d150e21abda770d48` |
+| 9 | `def` | [writeDag](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LeanExpressionDag.lean/declarations/writedag.md) | 46 | `declaration-track:6e244b6e1fc255678eb74cd3acb26ca328528f780d508fc16004c0108219e44b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

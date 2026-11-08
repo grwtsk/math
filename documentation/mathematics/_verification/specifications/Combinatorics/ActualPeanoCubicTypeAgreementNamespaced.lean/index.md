@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ActualPeanoCubicTypeAgreementNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/ActualPeanoCubicTypeAgreementNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ActualPeanoCubicTypeAgreementNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ActualPeanoCubicTypeAgreementNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_remainder_type_agreement](../../../../Combinatorics/ActualPeanoCubicTypeAgreementNamespaced.lean/declarations/actual-remainder-type-agreement.md) | 24 | `result-track:cf596b9b3e3fea40e384f5fc1ee32cc360424ba800186664191091cefe476f44` |
-| 2 | `theorem` | [actual_root_remainder_abs_le](../../../../Combinatorics/ActualPeanoCubicTypeAgreementNamespaced.lean/declarations/actual-root-remainder-abs-le.md) | 28 | `result-track:3ffc85692f846f80f561135748e7a834b8d0b8302262e90ff4e499df87dc5683` |
-| 3 | `theorem` | [actual_row_bound_for_root_consumer](../../../../Combinatorics/ActualPeanoCubicTypeAgreementNamespaced.lean/declarations/actual-row-bound-for-root-consumer.md) | 34 | `result-track:d2901c5580d46b1ccf42a585afcfb665aa64fe28cee59dc1e9f41dd964932380` |
+| 1 | `theorem` | [actual_remainder_type_agreement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ActualPeanoCubicTypeAgreementNamespaced.lean/declarations/actual-remainder-type-agreement.md) | 24 | `result-track:cf596b9b3e3fea40e384f5fc1ee32cc360424ba800186664191091cefe476f44` |
+| 2 | `theorem` | [actual_root_remainder_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ActualPeanoCubicTypeAgreementNamespaced.lean/declarations/actual-root-remainder-abs-le.md) | 28 | `result-track:3ffc85692f846f80f561135748e7a834b8d0b8302262e90ff4e499df87dc5683` |
+| 3 | `theorem` | [actual_row_bound_for_root_consumer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ActualPeanoCubicTypeAgreementNamespaced.lean/declarations/actual-row-bound-for-root-consumer.md) | 34 | `result-track:d2901c5580d46b1ccf42a585afcfb665aa64fe28cee59dc1e9f41dd964932380` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

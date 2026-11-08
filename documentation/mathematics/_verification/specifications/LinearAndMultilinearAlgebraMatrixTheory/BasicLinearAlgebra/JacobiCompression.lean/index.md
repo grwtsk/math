@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/JacobiCompression.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/JacobiCompression.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/JacobiCompression.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/JacobiCompression.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [RationalMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/JacobiCompression.lean/declarations/rationalmatrix.md) | 12 | `declaration-track:eb20e707c024d384720aa2c6202ce6c69ce60a6261934e7c1cf4c84c7cd0133d` |
-| 2 | `def` | [rationalQuadraticForm](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/JacobiCompression.lean/declarations/rationalquadraticform.md) | 15 | `declaration-track:0ad373333f5dbbf396d6e0bfa8563ea37b2bb0817d5f1e5af41c47f938ac12f9` |
-| 3 | `structure` | [JacobiCompression](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/JacobiCompression.lean/declarations/jacobicompression.md) | 22 | `declaration-track:c492a095d4b30b7818488dd2f8404b2e7b8e7d29bae0ae59f1808ed0c574417f` |
+| 1 | `abbrev` | [RationalMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/JacobiCompression.lean/declarations/rationalmatrix.md) | 12 | `declaration-track:eb20e707c024d384720aa2c6202ce6c69ce60a6261934e7c1cf4c84c7cd0133d` |
+| 2 | `def` | [rationalQuadraticForm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/JacobiCompression.lean/declarations/rationalquadraticform.md) | 15 | `declaration-track:0ad373333f5dbbf396d6e0bfa8563ea37b2bb0817d5f1e5af41c47f938ac12f9` |
+| 3 | `structure` | [JacobiCompression](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/JacobiCompression.lean/declarations/jacobicompression.md) | 22 | `declaration-track:c492a095d4b30b7818488dd2f8404b2e7b8e7d29bae0ae59f1808ed0c574417f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

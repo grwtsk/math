@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../RealFunctions/InequalitiesInRealAnalysis/PolynomialEnergyRatio.lean/index.md) · [Full source](../../../../../RealFunctions/InequalitiesInRealAnalysis/PolynomialEnergyRatio.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/PolynomialEnergyRatio.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/PolynomialEnergyRatio.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,14 +60,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [normPolynomial](../../../../../RealFunctions/InequalitiesInRealAnalysis/PolynomialEnergyRatio.lean/declarations/normpolynomial.md) | 22 | `declaration-track:4a59e2be2105d04cad167555134d2b5328bc5a6254075c4aa16becccbd2de6a9` |
-| 2 | `def` | [derivativePolynomial](../../../../../RealFunctions/InequalitiesInRealAnalysis/PolynomialEnergyRatio.lean/declarations/derivativepolynomial.md) | 27 | `declaration-track:ce8eb5a73e40ec123d4120209420e67bdca13e123390e51c08b97237bde62e37` |
-| 3 | `def` | [squaredCoefficient](../../../../../RealFunctions/InequalitiesInRealAnalysis/PolynomialEnergyRatio.lean/declarations/squaredcoefficient.md) | 32 | `declaration-track:4dc5097ff67d34416e24ec8b3b3320662e46768420aff9ad58dd6aa446d03e7d` |
-| 4 | `theorem` | [normPolynomial_pos](../../../../../RealFunctions/InequalitiesInRealAnalysis/PolynomialEnergyRatio.lean/declarations/normpolynomial-pos.md) | 34 | `result-track:11e197d5849aae5e36b28161bc05bad0f3ad90c996b0a7f8f4c98cf090db2688` |
-| 5 | `theorem` | [exact_coefficient_gap](../../../../../RealFunctions/InequalitiesInRealAnalysis/PolynomialEnergyRatio.lean/declarations/exact-coefficient-gap.md) | 39 | `result-track:bd069906f633b8946b97128e2215badc5c0409124a640cf44cabfea661c85ee1` |
-| 6 | `theorem` | [derivativePolynomial_le](../../../../../RealFunctions/InequalitiesInRealAnalysis/PolynomialEnergyRatio.lean/declarations/derivativepolynomial-le.md) | 45 | `result-track:3e2f81eb396005bcb954f395f05166427d908d4c9641e04940466f7de79f1f17` |
-| 7 | `theorem` | [exact_ratio_upper_bound](../../../../../RealFunctions/InequalitiesInRealAnalysis/PolynomialEnergyRatio.lean/declarations/exact-ratio-upper-bound.md) | 55 | `result-track:4ee288721ce9619fd4852d3431250d9e62154527329921e2385253927cc28c72` |
-| 8 | `theorem` | [squaredCoefficient_lt_twenty_five](../../../../../RealFunctions/InequalitiesInRealAnalysis/PolynomialEnergyRatio.lean/declarations/squaredcoefficient-lt-twenty-five.md) | 60 | `result-track:778bd7f7d6da06175ed8184c7b35b2917ad7f385a0d9723b89ac5022b5bf4335` |
+| 1 | `def` | [normPolynomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/PolynomialEnergyRatio.lean/declarations/normpolynomial.md) | 22 | `declaration-track:4a59e2be2105d04cad167555134d2b5328bc5a6254075c4aa16becccbd2de6a9` |
+| 2 | `def` | [derivativePolynomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/PolynomialEnergyRatio.lean/declarations/derivativepolynomial.md) | 27 | `declaration-track:ce8eb5a73e40ec123d4120209420e67bdca13e123390e51c08b97237bde62e37` |
+| 3 | `def` | [squaredCoefficient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/PolynomialEnergyRatio.lean/declarations/squaredcoefficient.md) | 32 | `declaration-track:4dc5097ff67d34416e24ec8b3b3320662e46768420aff9ad58dd6aa446d03e7d` |
+| 4 | `theorem` | [normPolynomial_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/PolynomialEnergyRatio.lean/declarations/normpolynomial-pos.md) | 34 | `result-track:11e197d5849aae5e36b28161bc05bad0f3ad90c996b0a7f8f4c98cf090db2688` |
+| 5 | `theorem` | [exact_coefficient_gap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/PolynomialEnergyRatio.lean/declarations/exact-coefficient-gap.md) | 39 | `result-track:bd069906f633b8946b97128e2215badc5c0409124a640cf44cabfea661c85ee1` |
+| 6 | `theorem` | [derivativePolynomial_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/PolynomialEnergyRatio.lean/declarations/derivativepolynomial-le.md) | 45 | `result-track:3e2f81eb396005bcb954f395f05166427d908d4c9641e04940466f7de79f1f17` |
+| 7 | `theorem` | [exact_ratio_upper_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/PolynomialEnergyRatio.lean/declarations/exact-ratio-upper-bound.md) | 55 | `result-track:4ee288721ce9619fd4852d3431250d9e62154527329921e2385253927cc28c72` |
+| 8 | `theorem` | [squaredCoefficient_lt_twenty_five](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/PolynomialEnergyRatio.lean/declarations/squaredcoefficient-lt-twenty-five.md) | 60 | `result-track:778bd7f7d6da06175ed8184c7b35b2917ad7f385a0d9723b89ac5022b5bf4335` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

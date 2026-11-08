@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/SubalgebraOperationsNamespaced.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/SubalgebraOperationsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubalgebraOperationsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubalgebraOperationsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [ker_rangeRestrict](../../../../AssociativeRingsAndAlgebras/SubalgebraOperationsNamespaced.lean/declarations/ker-rangerestrict.md) | 33 | `result-track:abbe935e7cbeafd3f55159974fddadf4071b98324be4f7235238a9ab70484c66` |
-| 2 | `theorem` | [mem_of_finset_sum_eq_one_of_pow_smul_mem](../../../../AssociativeRingsAndAlgebras/SubalgebraOperationsNamespaced.lean/declarations/mem-of-finset-sum-eq-one-of-pow-smul-mem.md) | 48 | `result-track:712424fc722c668080c0eca4641209c395a8fea02dde75006642f970896b4b62` |
-| 3 | `theorem` | [mem_of_span_eq_top_of_smul_pow_mem](../../../../AssociativeRingsAndAlgebras/SubalgebraOperationsNamespaced.lean/declarations/mem-of-span-eq-top-of-smul-pow-mem.md) | 76 | `result-track:ba80aefb82838fddae023b7a91f5a2afec99994a3ac06b5bead8ed8120d3e6da` |
-| 4 | `def` | [FixedPoints.subring](../../../../AssociativeRingsAndAlgebras/SubalgebraOperationsNamespaced.lean/declarations/fixedpoints-subring.md) | 90 | `declaration-track:50dcd6ffe3d480d21667b4ce961ff800bd2bfdeaedaf8c80277d86800cc4977b` |
-| 5 | `def` | [FixedPoints.subalgebra](../../../../AssociativeRingsAndAlgebras/SubalgebraOperationsNamespaced.lean/declarations/fixedpoints-subalgebra.md) | 95 | `declaration-track:75c355dda62202402d23f774bbebb54140da21454980f5b861b0d20fdf42bb99` |
+| 1 | `theorem` | [ker_rangeRestrict](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubalgebraOperationsNamespaced.lean/declarations/ker-rangerestrict.md) | 33 | `result-track:abbe935e7cbeafd3f55159974fddadf4071b98324be4f7235238a9ab70484c66` |
+| 2 | `theorem` | [mem_of_finset_sum_eq_one_of_pow_smul_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubalgebraOperationsNamespaced.lean/declarations/mem-of-finset-sum-eq-one-of-pow-smul-mem.md) | 48 | `result-track:712424fc722c668080c0eca4641209c395a8fea02dde75006642f970896b4b62` |
+| 3 | `theorem` | [mem_of_span_eq_top_of_smul_pow_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubalgebraOperationsNamespaced.lean/declarations/mem-of-span-eq-top-of-smul-pow-mem.md) | 76 | `result-track:ba80aefb82838fddae023b7a91f5a2afec99994a3ac06b5bead8ed8120d3e6da` |
+| 4 | `def` | [FixedPoints.subring](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubalgebraOperationsNamespaced.lean/declarations/fixedpoints-subring.md) | 90 | `declaration-track:50dcd6ffe3d480d21667b4ce961ff800bd2bfdeaedaf8c80277d86800cc4977b` |
+| 5 | `def` | [FixedPoints.subalgebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubalgebraOperationsNamespaced.lean/declarations/fixedpoints-subalgebra.md) | 95 | `declaration-track:75c355dda62202402d23f774bbebb54140da21454980f5b861b0d20fdf42bb99` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

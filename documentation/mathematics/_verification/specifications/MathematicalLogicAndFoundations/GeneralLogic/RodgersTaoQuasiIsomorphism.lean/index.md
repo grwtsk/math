@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RodgersTaoQuasiIsomorphism.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RodgersTaoQuasiIsomorphism.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RodgersTaoQuasiIsomorphism.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RodgersTaoQuasiIsomorphism.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RodgersTaoQuasiIsomorphism](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RodgersTaoQuasiIsomorphism.lean/declarations/rodgerstaoquasiisomorphism.md) | 28 | `declaration-track:6dae8d3131f9a4062df8b7e98e96b8f943dfac39191130fd3f33f7c61d8c5bfd` |
-| 2 | `theorem` | [rodgers_tao_flow_is_quasi_isomorphism](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RodgersTaoQuasiIsomorphism.lean/declarations/rodgers-tao-flow-is-quasi-isomorphism.md) | 41 | `result-track:42b99110b1eedc05d13dcdbd6cfcb57f354db7dd9330494668b39107513aab3e` |
-| 3 | `theorem` | [rodgers_tao_flow_has_quasi_isomorphism](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RodgersTaoQuasiIsomorphism.lean/declarations/rodgers-tao-flow-has-quasi-isomorphism.md) | 49 | `result-track:659967021c18f94f5c9ea7d89e489df57aeec1a4a08062ffdb5aeaf78680dcd5` |
-| 4 | `theorem` | [rodgers_tao_flow_realizes_quasi_iso](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RodgersTaoQuasiIsomorphism.lean/declarations/rodgers-tao-flow-realizes-quasi-iso.md) | 58 | `result-track:c63711d8fbe39c8a5ef888e5d7186d6df59a7affde5e560ba9842d4d4234b842` |
-| 5 | `structure` | [RodgersTaoIndexTransport](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RodgersTaoQuasiIsomorphism.lean/declarations/rodgerstaoindextransport.md) | 67 | `declaration-track:c05160c443c5d0cbcf2c5fba994ce02cc52ec8edc676c205e47508acd08cf85e` |
-| 6 | `theorem` | [rodgers_tao_index_transport_quasi_iso](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RodgersTaoQuasiIsomorphism.lean/declarations/rodgers-tao-index-transport-quasi-iso.md) | 71 | `result-track:f4b3016f7864f7b876bbaac6d174f007d16fa9cebce74e85b1a2b6921ef33ee7` |
-| 7 | `theorem` | [rodgers_tao_index_transport_preserves_euler](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RodgersTaoQuasiIsomorphism.lean/declarations/rodgers-tao-index-transport-preserves-euler.md) | 76 | `result-track:3f579643381fab3285c835c131d503524dfe3bf21a2f4605b179b88bb8135884` |
+| 1 | `structure` | [RodgersTaoQuasiIsomorphism](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RodgersTaoQuasiIsomorphism.lean/declarations/rodgerstaoquasiisomorphism.md) | 28 | `declaration-track:6dae8d3131f9a4062df8b7e98e96b8f943dfac39191130fd3f33f7c61d8c5bfd` |
+| 2 | `theorem` | [rodgers_tao_flow_is_quasi_isomorphism](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RodgersTaoQuasiIsomorphism.lean/declarations/rodgers-tao-flow-is-quasi-isomorphism.md) | 41 | `result-track:42b99110b1eedc05d13dcdbd6cfcb57f354db7dd9330494668b39107513aab3e` |
+| 3 | `theorem` | [rodgers_tao_flow_has_quasi_isomorphism](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RodgersTaoQuasiIsomorphism.lean/declarations/rodgers-tao-flow-has-quasi-isomorphism.md) | 49 | `result-track:659967021c18f94f5c9ea7d89e489df57aeec1a4a08062ffdb5aeaf78680dcd5` |
+| 4 | `theorem` | [rodgers_tao_flow_realizes_quasi_iso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RodgersTaoQuasiIsomorphism.lean/declarations/rodgers-tao-flow-realizes-quasi-iso.md) | 58 | `result-track:c63711d8fbe39c8a5ef888e5d7186d6df59a7affde5e560ba9842d4d4234b842` |
+| 5 | `structure` | [RodgersTaoIndexTransport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RodgersTaoQuasiIsomorphism.lean/declarations/rodgerstaoindextransport.md) | 67 | `declaration-track:c05160c443c5d0cbcf2c5fba994ce02cc52ec8edc676c205e47508acd08cf85e` |
+| 6 | `theorem` | [rodgers_tao_index_transport_quasi_iso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RodgersTaoQuasiIsomorphism.lean/declarations/rodgers-tao-index-transport-quasi-iso.md) | 71 | `result-track:f4b3016f7864f7b876bbaac6d174f007d16fa9cebce74e85b1a2b6921ef33ee7` |
+| 7 | `theorem` | [rodgers_tao_index_transport_preserves_euler](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RodgersTaoQuasiIsomorphism.lean/declarations/rodgers-tao-index-transport-preserves-euler.md) | 76 | `result-track:3f579643381fab3285c835c131d503524dfe3bf21a2f4605b179b88bb8135884` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

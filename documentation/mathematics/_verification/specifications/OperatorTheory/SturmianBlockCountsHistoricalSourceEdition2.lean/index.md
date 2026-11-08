@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../OperatorTheory/SturmianBlockCountsHistoricalSourceEdition2.lean/index.md) · [Full source](../../../../OperatorTheory/SturmianBlockCountsHistoricalSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/SturmianBlockCountsHistoricalSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/SturmianBlockCountsHistoricalSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Spectral.DirichletCut`](../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DirichletCut.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Spectral.DirichletCut`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DirichletCut.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,19 +57,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [bit_origin_to_phase](../../../../OperatorTheory/SturmianBlockCountsHistoricalSourceEdition2.lean/declarations/bit-origin-to-phase.md) | 23 | `result-track:2f12ae110897492e284ebe5b3d1a5f3764a1f16f41f38b40b9fad885b325d0d6` |
-| 2 | `theorem` | [potential_origin_to_phase](../../../../OperatorTheory/SturmianBlockCountsHistoricalSourceEdition2.lean/declarations/potential-origin-to-phase.md) | 28 | `result-track:6202aaea5dcc131b492e70fae996827a3e86f66edb96df04bdd69beb7efe6299` |
-| 3 | `theorem` | [hamiltonian_origin_to_phase](../../../../OperatorTheory/SturmianBlockCountsHistoricalSourceEdition2.lean/declarations/hamiltonian-origin-to-phase.md) | 33 | `result-track:d859d9f5b5809748595bf577c6cba1e939b4fcdca6e272bffbc3121e97907c52` |
-| 4 | `theorem` | [count_origin_to_phase](../../../../OperatorTheory/SturmianBlockCountsHistoricalSourceEdition2.lean/declarations/count-origin-to-phase.md) | 45 | `result-track:6a29cb9271ec3955b2357acf89a90c9a7c711322db63b27ac89eadb86fb6aad6` |
-| 5 | `theorem` | [count_le_volume](../../../../OperatorTheory/SturmianBlockCountsHistoricalSourceEdition2.lean/declarations/count-le-volume.md) | 51 | `result-track:63ac77eccd9e9d5a9f54bd9415d8e8bd1a2e384d87792b11d0fb07e95b4ffec3` |
-| 6 | `def` | [blockCountSum](../../../../OperatorTheory/SturmianBlockCountsHistoricalSourceEdition2.lean/declarations/blockcountsum.md) | 58 | `declaration-track:595365a36d22494318831569c84fd3da09c602dc7e30aa515780b16595120080` |
-| 7 | `theorem` | [blockCountSum_phase](../../../../OperatorTheory/SturmianBlockCountsHistoricalSourceEdition2.lean/declarations/blockcountsum-phase.md) | 62 | `result-track:374c624f3e87ec6999f8169c946bef456133e0f18ce484cece2b52ac3b108174` |
-| 8 | `theorem` | [blockCountSum_succ](../../../../OperatorTheory/SturmianBlockCountsHistoricalSourceEdition2.lean/declarations/blockcountsum-succ.md) | 73 | `result-track:bb53cb4793ca65dc6c7340d7689b1ee5f12efd1d3b6e2fa8be260c1db1d9ae82` |
-| 9 | `theorem` | [block_count_error_with_remainder](../../../../OperatorTheory/SturmianBlockCountsHistoricalSourceEdition2.lean/declarations/block-count-error-with-remainder.md) | 89 | `result-track:de0c31f493b50e31c74788ea376e3895118ef4f915ae36d18320622c7d0b0a4f` |
-| 10 | `theorem` | [complete_block_count_error](../../../../OperatorTheory/SturmianBlockCountsHistoricalSourceEdition2.lean/declarations/complete-block-count-error.md) | 119 | `result-track:dd18885a5a55f3f1d9d338c8f3243b6e82203024ba289da38c3c9a2de5c68312` |
-| 11 | `theorem` | [block_count_error](../../../../OperatorTheory/SturmianBlockCountsHistoricalSourceEdition2.lean/declarations/block-count-error.md) | 137 | `result-track:cb1976fa9e45276522f0879b85e463e85823ab40e5e55b8864c5579ec6c37411` |
-| 12 | `theorem` | [normalized_block_count_error](../../../../OperatorTheory/SturmianBlockCountsHistoricalSourceEdition2.lean/declarations/normalized-block-count-error.md) | 157 | `result-track:bf37baf50ecc17d072a639b36822f8f6ee8cd90a271df3b3242a79957fd86b01` |
-| 13 | `theorem` | [finite_block_approximation](../../../../OperatorTheory/SturmianBlockCountsHistoricalSourceEdition2.lean/declarations/finite-block-approximation.md) | 169 | `result-track:39b03584a5a81408821d6364e7c4ddcd6dd62ca0bf79d5ef575ba87e83b29117` |
+| 1 | `theorem` | [bit_origin_to_phase](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/SturmianBlockCountsHistoricalSourceEdition2.lean/declarations/bit-origin-to-phase.md) | 23 | `result-track:2f12ae110897492e284ebe5b3d1a5f3764a1f16f41f38b40b9fad885b325d0d6` |
+| 2 | `theorem` | [potential_origin_to_phase](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/SturmianBlockCountsHistoricalSourceEdition2.lean/declarations/potential-origin-to-phase.md) | 28 | `result-track:6202aaea5dcc131b492e70fae996827a3e86f66edb96df04bdd69beb7efe6299` |
+| 3 | `theorem` | [hamiltonian_origin_to_phase](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/SturmianBlockCountsHistoricalSourceEdition2.lean/declarations/hamiltonian-origin-to-phase.md) | 33 | `result-track:d859d9f5b5809748595bf577c6cba1e939b4fcdca6e272bffbc3121e97907c52` |
+| 4 | `theorem` | [count_origin_to_phase](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/SturmianBlockCountsHistoricalSourceEdition2.lean/declarations/count-origin-to-phase.md) | 45 | `result-track:6a29cb9271ec3955b2357acf89a90c9a7c711322db63b27ac89eadb86fb6aad6` |
+| 5 | `theorem` | [count_le_volume](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/SturmianBlockCountsHistoricalSourceEdition2.lean/declarations/count-le-volume.md) | 51 | `result-track:63ac77eccd9e9d5a9f54bd9415d8e8bd1a2e384d87792b11d0fb07e95b4ffec3` |
+| 6 | `def` | [blockCountSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/SturmianBlockCountsHistoricalSourceEdition2.lean/declarations/blockcountsum.md) | 58 | `declaration-track:595365a36d22494318831569c84fd3da09c602dc7e30aa515780b16595120080` |
+| 7 | `theorem` | [blockCountSum_phase](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/SturmianBlockCountsHistoricalSourceEdition2.lean/declarations/blockcountsum-phase.md) | 62 | `result-track:374c624f3e87ec6999f8169c946bef456133e0f18ce484cece2b52ac3b108174` |
+| 8 | `theorem` | [blockCountSum_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/SturmianBlockCountsHistoricalSourceEdition2.lean/declarations/blockcountsum-succ.md) | 73 | `result-track:bb53cb4793ca65dc6c7340d7689b1ee5f12efd1d3b6e2fa8be260c1db1d9ae82` |
+| 9 | `theorem` | [block_count_error_with_remainder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/SturmianBlockCountsHistoricalSourceEdition2.lean/declarations/block-count-error-with-remainder.md) | 89 | `result-track:de0c31f493b50e31c74788ea376e3895118ef4f915ae36d18320622c7d0b0a4f` |
+| 10 | `theorem` | [complete_block_count_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/SturmianBlockCountsHistoricalSourceEdition2.lean/declarations/complete-block-count-error.md) | 119 | `result-track:dd18885a5a55f3f1d9d338c8f3243b6e82203024ba289da38c3c9a2de5c68312` |
+| 11 | `theorem` | [block_count_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/SturmianBlockCountsHistoricalSourceEdition2.lean/declarations/block-count-error.md) | 137 | `result-track:cb1976fa9e45276522f0879b85e463e85823ab40e5e55b8864c5579ec6c37411` |
+| 12 | `theorem` | [normalized_block_count_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/SturmianBlockCountsHistoricalSourceEdition2.lean/declarations/normalized-block-count-error.md) | 157 | `result-track:bf37baf50ecc17d072a639b36822f8f6ee8cd90a271df3b3242a79957fd86b01` |
+| 13 | `theorem` | [finite_block_approximation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/SturmianBlockCountsHistoricalSourceEdition2.lean/declarations/finite-block-approximation.md) | 169 | `result-track:39b03584a5a81408821d6364e7c4ddcd6dd62ca0bf79d5ef575ba87e83b29117` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

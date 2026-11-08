@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/MultiplicativeNumberTheory/ChebyshevUpperBoundsNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/MultiplicativeNumberTheory/ChebyshevUpperBoundsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/ChebyshevUpperBoundsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/ChebyshevUpperBoundsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [chebyshevTheta_linear_upper](../../../../../NumberTheory/MultiplicativeNumberTheory/ChebyshevUpperBoundsNamespaced.lean/declarations/chebyshevtheta-linear-upper.md) | 28 | `result-track:df48761911c07ddef037aef2e8f18e491ca5e2d85b41c908b8b0153663653a8f` |
-| 2 | `theorem` | [ChebyshevThetaUpperBoundTarget_checked](../../../../../NumberTheory/MultiplicativeNumberTheory/ChebyshevUpperBoundsNamespaced.lean/declarations/chebyshevthetaupperboundtarget-checked.md) | 33 | `result-track:7fea76ee87c45b8d3e2f077082f586ef92e3c91fbeaf5c3a37e29c6d35ca3400` |
-| 3 | `def` | [ChebyshevPsiLinearUpperBoundTarget](../../../../../NumberTheory/MultiplicativeNumberTheory/ChebyshevUpperBoundsNamespaced.lean/declarations/chebyshevpsilinearupperboundtarget.md) | 38 | `declaration-track:ec36d352e5348edbe8c67e74d91a33c11c60539fcf9762ede74895930779090d` |
-| 4 | `def` | [PrimeCountingLinearUpperBoundTarget](../../../../../NumberTheory/MultiplicativeNumberTheory/ChebyshevUpperBoundsNamespaced.lean/declarations/primecountinglinearupperboundtarget.md) | 42 | `declaration-track:efbd08d4b4196aa0ca659b290b3fab4af6e57e29af322913f10721390940e977` |
+| 1 | `theorem` | [chebyshevTheta_linear_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/ChebyshevUpperBoundsNamespaced.lean/declarations/chebyshevtheta-linear-upper.md) | 28 | `result-track:df48761911c07ddef037aef2e8f18e491ca5e2d85b41c908b8b0153663653a8f` |
+| 2 | `theorem` | [ChebyshevThetaUpperBoundTarget_checked](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/ChebyshevUpperBoundsNamespaced.lean/declarations/chebyshevthetaupperboundtarget-checked.md) | 33 | `result-track:7fea76ee87c45b8d3e2f077082f586ef92e3c91fbeaf5c3a37e29c6d35ca3400` |
+| 3 | `def` | [ChebyshevPsiLinearUpperBoundTarget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/ChebyshevUpperBoundsNamespaced.lean/declarations/chebyshevpsilinearupperboundtarget.md) | 38 | `declaration-track:ec36d352e5348edbe8c67e74d91a33c11c60539fcf9762ede74895930779090d` |
+| 4 | `def` | [PrimeCountingLinearUpperBoundTarget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/ChebyshevUpperBoundsNamespaced.lean/declarations/primecountinglinearupperboundtarget.md) | 42 | `declaration-track:efbd08d4b4196aa0ca659b290b3fab4af6e57e29af322913f10721390940e977` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

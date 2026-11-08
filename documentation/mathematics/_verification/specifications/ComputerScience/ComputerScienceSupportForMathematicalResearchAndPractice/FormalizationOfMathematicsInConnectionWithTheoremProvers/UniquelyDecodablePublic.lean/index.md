@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/UniquelyDecodablePublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/UniquelyDecodablePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/UniquelyDecodablePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/UniquelyDecodablePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [IsUniquelyDecodable](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/UniquelyDecodablePublic.lean/declarations/isuniquelydecodable.md) | 38 | `declaration-track:c4e2548a116fdfa92e5d69344ef6c88c4689aec8df0605c88665eb52a7227350` |
-| 2 | `lemma` | [IsUniquelyDecodable.epsilon_not_mem](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/UniquelyDecodablePublic.lean/declarations/isuniquelydecodable-epsilon-not-mem.md) | 51 | `result-track:76dfe19aef8b1718de7d8527fc532478356924ec7c84108e644a35ca768e9b85` |
-| 3 | `lemma` | [IsUniquelyDecodable.flatten_injective](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/UniquelyDecodablePublic.lean/declarations/isuniquelydecodable-flatten-injective.md) | 59 | `result-track:a409cd280631b117b6e0306d99b6d6d2a78df4493129a4ad10238685c16ff76b` |
+| 1 | `def` | [IsUniquelyDecodable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/UniquelyDecodablePublic.lean/declarations/isuniquelydecodable.md) | 38 | `declaration-track:c4e2548a116fdfa92e5d69344ef6c88c4689aec8df0605c88665eb52a7227350` |
+| 2 | `lemma` | [IsUniquelyDecodable.epsilon_not_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/UniquelyDecodablePublic.lean/declarations/isuniquelydecodable-epsilon-not-mem.md) | 51 | `result-track:76dfe19aef8b1718de7d8527fc532478356924ec7c84108e644a35ca768e9b85` |
+| 3 | `lemma` | [IsUniquelyDecodable.flatten_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/UniquelyDecodablePublic.lean/declarations/isuniquelydecodable-flatten-injective.md) | 59 | `result-track:a409cd280631b117b6e0306d99b6d6d2a78df4493129a4ad10238685c16ff76b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

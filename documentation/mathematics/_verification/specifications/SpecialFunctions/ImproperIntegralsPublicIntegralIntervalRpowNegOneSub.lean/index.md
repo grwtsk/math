@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../SpecialFunctions/ImproperIntegralsPublicIntegralIntervalRpowNegOneSub.lean/index.md) · [Full source](../../../../SpecialFunctions/ImproperIntegralsPublicIntegralIntervalRpowNegOneSub.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ImproperIntegralsPublicIntegralIntervalRpowNegOneSub.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ImproperIntegralsPublicIntegralIntervalRpowNegOneSub.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [integral_interval_rpow_neg_one_sub](../../../../SpecialFunctions/ImproperIntegralsPublicIntegralIntervalRpowNegOneSub.lean/declarations/integral-interval-rpow-neg-one-sub.md) | 23 | `result-track:4b346dd0fe9291fb6153210b11946fbb8e1f8cf6fc3d9f8da014aab4597d886a` |
-| 2 | `theorem` | [integral_interval_rpow_neg_le](../../../../SpecialFunctions/ImproperIntegralsPublicIntegralIntervalRpowNegOneSub.lean/declarations/integral-interval-rpow-neg-le.md) | 42 | `result-track:690fec3b0e497e70bc3bfb4ad7e6dad201f084e545d52d81eef3b5f4c52e8471` |
-| 3 | `theorem` | [intervalIntegral.tendsto_integral_Ioi_of_ae_norm_le](../../../../SpecialFunctions/ImproperIntegralsPublicIntegralIntervalRpowNegOneSub.lean/declarations/intervalintegral-tendsto-integral-ioi-of-ae-norm-le.md) | 48 | `result-track:2f34a38a3e605debe4b92d857fa4e5e6e4b18655ef1d57659012c37706bc5820` |
-| 4 | `theorem` | [integral_Ioi_rpow_neg_re_sub_one](../../../../SpecialFunctions/ImproperIntegralsPublicIntegralIntervalRpowNegOneSub.lean/declarations/integral-ioi-rpow-neg-re-sub-one.md) | 58 | `result-track:696ac56576862fe87b5114d4b237bc959df9264d7b3e8ee9831e6c2966da06d0` |
+| 1 | `theorem` | [integral_interval_rpow_neg_one_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ImproperIntegralsPublicIntegralIntervalRpowNegOneSub.lean/declarations/integral-interval-rpow-neg-one-sub.md) | 23 | `result-track:4b346dd0fe9291fb6153210b11946fbb8e1f8cf6fc3d9f8da014aab4597d886a` |
+| 2 | `theorem` | [integral_interval_rpow_neg_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ImproperIntegralsPublicIntegralIntervalRpowNegOneSub.lean/declarations/integral-interval-rpow-neg-le.md) | 42 | `result-track:690fec3b0e497e70bc3bfb4ad7e6dad201f084e545d52d81eef3b5f4c52e8471` |
+| 3 | `theorem` | [intervalIntegral.tendsto_integral_Ioi_of_ae_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ImproperIntegralsPublicIntegralIntervalRpowNegOneSub.lean/declarations/intervalintegral-tendsto-integral-ioi-of-ae-norm-le.md) | 48 | `result-track:2f34a38a3e605debe4b92d857fa4e5e6e4b18655ef1d57659012c37706bc5820` |
+| 4 | `theorem` | [integral_Ioi_rpow_neg_re_sub_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ImproperIntegralsPublicIntegralIntervalRpowNegOneSub.lean/declarations/integral-ioi-rpow-neg-re-sub-one.md) | 58 | `result-track:696ac56576862fe87b5114d4b237bc959df9264d7b3e8ee9831e6c2966da06d0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

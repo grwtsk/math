@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Finite.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Finite.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Finite.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Finite.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [FiniteHilbert](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Finite.lean/declarations/finitehilbert.md) | 21 | `declaration-track:6349a002d84d918f1b08831df5884b882ecac206f5c8fa789278b20a5d8caf58` |
-| 2 | `abbrev` | [FiniteOperator](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Finite.lean/declarations/finiteoperator.md) | 25 | `declaration-track:72545f45b6ccfb1652e66c1a04ba4fefe667c710cd3f4a9b2785a163d76fcad2` |
-| 3 | `def` | [FiniteOperator.toLinearMap](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Finite.lean/declarations/finiteoperator-tolinearmap.md) | 29 | `declaration-track:85af5781bf8eeb023921fbf3a476cc730beeb8f34c3f85a7f985195f005265fd` |
-| 4 | `theorem` | [FiniteOperator.isSymmetric_toLinearMap_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Finite.lean/declarations/finiteoperator-issymmetric-tolinearmap-iff.md) | 37 | `result-track:8b98876935353db4d010ece26985d82cd90222182ebf8693dd9488d450a70bc9` |
-| 5 | `theorem` | [FiniteOperator.conjTranspose_toLinearMap_eq_adjoint](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Finite.lean/declarations/finiteoperator-conjtranspose-tolinearmap-eq-adjoint.md) | 44 | `result-track:df9dedb6f6f25f8249c13142aa26587b932e03edd77f5cd46e56108b3429225a` |
+| 1 | `abbrev` | [FiniteHilbert](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Finite.lean/declarations/finitehilbert.md) | 21 | `declaration-track:6349a002d84d918f1b08831df5884b882ecac206f5c8fa789278b20a5d8caf58` |
+| 2 | `abbrev` | [FiniteOperator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Finite.lean/declarations/finiteoperator.md) | 25 | `declaration-track:72545f45b6ccfb1652e66c1a04ba4fefe667c710cd3f4a9b2785a163d76fcad2` |
+| 3 | `def` | [FiniteOperator.toLinearMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Finite.lean/declarations/finiteoperator-tolinearmap.md) | 29 | `declaration-track:85af5781bf8eeb023921fbf3a476cc730beeb8f34c3f85a7f985195f005265fd` |
+| 4 | `theorem` | [FiniteOperator.isSymmetric_toLinearMap_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Finite.lean/declarations/finiteoperator-issymmetric-tolinearmap-iff.md) | 37 | `result-track:8b98876935353db4d010ece26985d82cd90222182ebf8693dd9488d450a70bc9` |
+| 5 | `theorem` | [FiniteOperator.conjTranspose_toLinearMap_eq_adjoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Finite.lean/declarations/finiteoperator-conjtranspose-tolinearmap-eq-adjoint.md) | 44 | `result-track:df9dedb6f6f25f8249c13142aa26587b932e03edd77f5cd46e56108b3429225a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

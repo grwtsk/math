@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/FrmNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/FrmNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FrmNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FrmNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [topCatOpToFrm](../../../../GeneralTopology/FrmNamespaced.lean/declarations/topcatoptofrm.md) | 27 | `declaration-track:6fec45c9787bd985f24bfa79469350d4d1b3fd591ba1e841cc72b271d9d64698` |
-| 2 | `instance` | [CompHausOpToFrame.faithful](../../../../GeneralTopology/FrmNamespaced.lean/declarations/comphausoptoframe-faithful.md) | 32 | `declaration-track:ab36aea184645013ca4a6fddbce4cd50b5c16e2b23a1c55ee70ca3bf568bd8f6` |
+| 1 | `def` | [topCatOpToFrm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FrmNamespaced.lean/declarations/topcatoptofrm.md) | 27 | `declaration-track:6fec45c9787bd985f24bfa79469350d4d1b3fd591ba1e841cc72b271d9d64698` |
+| 2 | `instance` | [CompHausOpToFrame.faithful](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FrmNamespaced.lean/declarations/comphausoptoframe-faithful.md) | 32 | `declaration-track:ab36aea184645013ca4a6fddbce4cd50b5c16e2b23a1c55ee70ca3bf568bd8f6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

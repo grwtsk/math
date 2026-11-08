@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/SubringOrderNamespaced.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/SubringOrderNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubringOrderNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubringOrderNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [toIsOrderedRing](../../../../AssociativeRingsAndAlgebras/SubringOrderNamespaced.lean/declarations/toisorderedring.md) | 36 | `declaration-track:fbf5d737f2bc39fc1fa8c90b74d5684164baf3eba54b679b0f5412e895f4a0b4` |
-| 2 | `instance` | [toIsStrictOrderedRing](../../../../AssociativeRingsAndAlgebras/SubringOrderNamespaced.lean/declarations/toisstrictorderedring.md) | 42 | `declaration-track:dca1606169304a938cefe75079a1d4d9545d2c5ea5fa08ab127d38514652e085` |
-| 3 | `def` | [orderedSubtype](../../../../AssociativeRingsAndAlgebras/SubringOrderNamespaced.lean/declarations/orderedsubtype.md) | 48 | `declaration-track:4b8b3b2c7b76967a586af0de2bba4bf17cb7e4113f85bf4a862a75dff1517805` |
-| 4 | `lemma` | [orderedSubtype_coe](../../../../AssociativeRingsAndAlgebras/SubringOrderNamespaced.lean/declarations/orderedsubtype-coe.md) | 55 | `result-track:27fe07fb167086ccfb9c573393321af35d7344346e4bf89a601b437a858a35b8` |
+| 1 | `instance` | [toIsOrderedRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubringOrderNamespaced.lean/declarations/toisorderedring.md) | 36 | `declaration-track:fbf5d737f2bc39fc1fa8c90b74d5684164baf3eba54b679b0f5412e895f4a0b4` |
+| 2 | `instance` | [toIsStrictOrderedRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubringOrderNamespaced.lean/declarations/toisstrictorderedring.md) | 42 | `declaration-track:dca1606169304a938cefe75079a1d4d9545d2c5ea5fa08ab127d38514652e085` |
+| 3 | `def` | [orderedSubtype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubringOrderNamespaced.lean/declarations/orderedsubtype.md) | 48 | `declaration-track:4b8b3b2c7b76967a586af0de2bba4bf17cb7e4113f85bf4a862a75dff1517805` |
+| 4 | `lemma` | [orderedSubtype_coe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubringOrderNamespaced.lean/declarations/orderedsubtype-coe.md) | 55 | `result-track:27fe07fb167086ccfb9c573393321af35d7344346e4bf89a601b437a858a35b8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

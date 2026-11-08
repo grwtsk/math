@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LambdaNamespacedPublicMkFunextFor.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LambdaNamespacedPublicMkFunextFor.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LambdaNamespacedPublicMkFunextFor.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LambdaNamespacedPublicMkFunextFor.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mkFunextFor](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LambdaNamespacedPublicMkFunextFor.lean/declarations/mkfunextfor.md) | 32 | `declaration-track:b4a0c7e3d23c21b8c724565ff8048fa39ad9147f7d9d9631775fa2b95a8f58e8` |
-| 2 | `def` | [simpLambda'](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LambdaNamespacedPublicMkFunextFor.lean/declarations/simplambda-source-edition-2.md) | 56 | `declaration-track:61eeb40d9ec97b7a3e2d0e25a9acd4afbe1ee440d6dd42d266552ee7fccbe32d` |
-| 3 | `def` | [simpLambda](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LambdaNamespacedPublicMkFunextFor.lean/declarations/simplambda.md) | 80 | `declaration-track:2a6fa6d368afebb0ecc74ebff4601fc80758a01218516bc54117deafb97ae36d` |
+| 1 | `def` | [mkFunextFor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LambdaNamespacedPublicMkFunextFor.lean/declarations/mkfunextfor.md) | 32 | `declaration-track:b4a0c7e3d23c21b8c724565ff8048fa39ad9147f7d9d9631775fa2b95a8f58e8` |
+| 2 | `def` | [simpLambda'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LambdaNamespacedPublicMkFunextFor.lean/declarations/simplambda-source-edition-2.md) | 56 | `declaration-track:61eeb40d9ec97b7a3e2d0e25a9acd4afbe1ee440d6dd42d266552ee7fccbe32d` |
+| 3 | `def` | [simpLambda](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LambdaNamespacedPublicMkFunextFor.lean/declarations/simplambda.md) | 80 | `declaration-track:2a6fa6d368afebb0ecc74ebff4601fc80758a01218516bc54117deafb97ae36d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

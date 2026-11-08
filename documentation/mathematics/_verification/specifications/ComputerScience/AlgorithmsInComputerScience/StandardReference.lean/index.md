@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/StandardReference.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/StandardReference.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StandardReference.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StandardReference.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [standardReference_manifestSerializer_roundtrip_copy](../../../../../ComputerScience/AlgorithmsInComputerScience/StandardReference.lean/declarations/standardreference-manifestserializer-roundtrip-copy.md) | 19 | `result-track:2c6be6a4bbd38ba4f55f8f85d27121c851a238ea5dfe2cf4ec60559982cdd7cc` |
-| 2 | `theorem` | [standardReference_copyArchive_materializes_file_layers](../../../../../ComputerScience/AlgorithmsInComputerScience/StandardReference.lean/declarations/standardreference-copyarchive-materializes-file-layers.md) | 27 | `result-track:f8c4a73f4d25a30c862766f57ed0a100914973809060bef990bf6718a36699ba` |
+| 1 | `theorem` | [standardReference_manifestSerializer_roundtrip_copy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StandardReference.lean/declarations/standardreference-manifestserializer-roundtrip-copy.md) | 19 | `result-track:2c6be6a4bbd38ba4f55f8f85d27121c851a238ea5dfe2cf4ec60559982cdd7cc` |
+| 2 | `theorem` | [standardReference_copyArchive_materializes_file_layers](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StandardReference.lean/declarations/standardreference-copyarchive-materializes-file-layers.md) | 27 | `result-track:f8c4a73f4d25a30c862766f57ed0a100914973809060bef990bf6718a36699ba` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

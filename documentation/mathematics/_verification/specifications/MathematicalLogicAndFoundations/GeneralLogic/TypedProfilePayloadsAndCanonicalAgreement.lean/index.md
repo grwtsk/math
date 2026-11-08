@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypedProfilePayloadsAndCanonicalAgreement.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypedProfilePayloadsAndCanonicalAgreement.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TypedProfilePayloadsAndCanonicalAgreement.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TypedProfilePayloadsAndCanonicalAgreement.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -48,7 +48,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 - `BitMatrix.Codec.BitDocument` — import line 19; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 20; external provider; requires a separately pinned dependency.
-- [Line Ending Normalization](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LineEndingNormalization.lean/index.md) — import line 22; pinned internal source present.
+- [Line Ending Normalization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LineEndingNormalization.lean/index.md) — import line 22; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,17 +59,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [payloadOfCharacters](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypedProfilePayloadsAndCanonicalAgreement.lean/declarations/payloadofcharacters.md) | 41 | `declaration-track:6e55d326f763c38713ae014cfacc53465d520e11e2eed93407f16b942ce95b90` |
-| 2 | `inductive` | [RuntimeCodecProfile](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypedProfilePayloadsAndCanonicalAgreement.lean/declarations/runtimecodecprofile.md) | 49 | `declaration-track:3c3ac409097dc582f1369387b51c215eca608f65997ee0cc46906fe3564c0b9b` |
-| 3 | `def` | [profileCharacters](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypedProfilePayloadsAndCanonicalAgreement.lean/declarations/profilecharacters.md) | 56 | `declaration-track:a2db678779152dd14a9c902e4858f77ed32cc84d08ebdc45f22f430ded04a4d1` |
-| 4 | `def` | [profilePayload](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypedProfilePayloadsAndCanonicalAgreement.lean/declarations/profilepayload.md) | 62 | `declaration-track:d57a412cb00194cb4b763d1b6729274fe7a37d08e2c8a3b618685e432dae682b` |
-| 5 | `def` | [encodeWithProfile](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypedProfilePayloadsAndCanonicalAgreement.lean/declarations/encodewithprofile.md) | 68 | `declaration-track:b13481b0437e6d357e5273ca629067cd9257df79036951f23a4f74a3e20b4c8c` |
-| 6 | `def` | [encodeRustProfile](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypedProfilePayloadsAndCanonicalAgreement.lean/declarations/encoderustprofile.md) | 73 | `declaration-track:9448ba4fc1257763129bebb96dce427fcadc81fe1025274a9b026dab279e87dc` |
-| 7 | `def` | [encodeJavaScriptProfile](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypedProfilePayloadsAndCanonicalAgreement.lean/declarations/encodejavascriptprofile.md) | 76 | `declaration-track:da592180a81b2bba65a4c1c931ff7b90d0e239fda027a8424880c28d47b5d59a` |
-| 8 | `theorem` | [rust_profile_payload_bytes](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypedProfilePayloadsAndCanonicalAgreement.lean/declarations/rust-profile-payload-bytes.md) | 81 | `result-track:2f79d03791342230464f19e0b32e381c67b4b65d426e04e25a8293c603c1c6f2` |
-| 9 | `theorem` | [javascript_profile_payload_bytes](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypedProfilePayloadsAndCanonicalAgreement.lean/declarations/javascript-profile-payload-bytes.md) | 89 | `result-track:3f9de8eba4717068537d8c8063d5cc54320b45407bfbbab9c7024c6ace627761` |
-| 10 | `theorem` | [encodeWithProfile_relation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypedProfilePayloadsAndCanonicalAgreement.lean/declarations/encodewithprofile-relation.md) | 98 | `result-track:74c7ab8f59c84fa730d664042529fa40acd602ba3c34b5a2e42b7ae49e1742ce` |
-| 11 | `theorem` | [profiles_agree_on_canonical_domain](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypedProfilePayloadsAndCanonicalAgreement.lean/declarations/profiles-agree-on-canonical-domain.md) | 108 | `result-track:7b79d6bad2bc1684bfe96d1d657b3262962ef4a91a0f90092ad63aeb1d6aebad` |
+| 1 | `def` | [payloadOfCharacters](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TypedProfilePayloadsAndCanonicalAgreement.lean/declarations/payloadofcharacters.md) | 41 | `declaration-track:6e55d326f763c38713ae014cfacc53465d520e11e2eed93407f16b942ce95b90` |
+| 2 | `inductive` | [RuntimeCodecProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TypedProfilePayloadsAndCanonicalAgreement.lean/declarations/runtimecodecprofile.md) | 49 | `declaration-track:3c3ac409097dc582f1369387b51c215eca608f65997ee0cc46906fe3564c0b9b` |
+| 3 | `def` | [profileCharacters](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TypedProfilePayloadsAndCanonicalAgreement.lean/declarations/profilecharacters.md) | 56 | `declaration-track:a2db678779152dd14a9c902e4858f77ed32cc84d08ebdc45f22f430ded04a4d1` |
+| 4 | `def` | [profilePayload](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TypedProfilePayloadsAndCanonicalAgreement.lean/declarations/profilepayload.md) | 62 | `declaration-track:d57a412cb00194cb4b763d1b6729274fe7a37d08e2c8a3b618685e432dae682b` |
+| 5 | `def` | [encodeWithProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TypedProfilePayloadsAndCanonicalAgreement.lean/declarations/encodewithprofile.md) | 68 | `declaration-track:b13481b0437e6d357e5273ca629067cd9257df79036951f23a4f74a3e20b4c8c` |
+| 6 | `def` | [encodeRustProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TypedProfilePayloadsAndCanonicalAgreement.lean/declarations/encoderustprofile.md) | 73 | `declaration-track:9448ba4fc1257763129bebb96dce427fcadc81fe1025274a9b026dab279e87dc` |
+| 7 | `def` | [encodeJavaScriptProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TypedProfilePayloadsAndCanonicalAgreement.lean/declarations/encodejavascriptprofile.md) | 76 | `declaration-track:da592180a81b2bba65a4c1c931ff7b90d0e239fda027a8424880c28d47b5d59a` |
+| 8 | `theorem` | [rust_profile_payload_bytes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TypedProfilePayloadsAndCanonicalAgreement.lean/declarations/rust-profile-payload-bytes.md) | 81 | `result-track:2f79d03791342230464f19e0b32e381c67b4b65d426e04e25a8293c603c1c6f2` |
+| 9 | `theorem` | [javascript_profile_payload_bytes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TypedProfilePayloadsAndCanonicalAgreement.lean/declarations/javascript-profile-payload-bytes.md) | 89 | `result-track:3f9de8eba4717068537d8c8063d5cc54320b45407bfbbab9c7024c6ace627761` |
+| 10 | `theorem` | [encodeWithProfile_relation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TypedProfilePayloadsAndCanonicalAgreement.lean/declarations/encodewithprofile-relation.md) | 98 | `result-track:74c7ab8f59c84fa730d664042529fa40acd602ba3c34b5a2e42b7ae49e1742ce` |
+| 11 | `theorem` | [profiles_agree_on_canonical_domain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TypedProfilePayloadsAndCanonicalAgreement.lean/declarations/profiles-agree-on-canonical-domain.md) | 108 | `result-track:7b79d6bad2bc1684bfe96d1d657b3262962ef4a91a0f90092ad63aeb1d6aebad` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

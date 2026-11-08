@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/HeightNormalizationPreservesCompressionAndExposesTheCompleteCurveEdition2.lean/index.md) · [Full source](../../../../MeasureAndIntegration/HeightNormalizationPreservesCompressionAndExposesTheCompleteCurveEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HeightNormalizationPreservesCompressionAndExposesTheCompleteCurveEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HeightNormalizationPreservesCompressionAndExposesTheCompleteCurveEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [unitProfile](../../../../MeasureAndIntegration/HeightNormalizationPreservesCompressionAndExposesTheCompleteCurveEdition2.lean/declarations/unitprofile.md) | 28 | `declaration-track:d8b0d638650c7434097d1fd67ce9e9c38c7574046203e16e0a9e244185892301` |
-| 2 | `theorem` | [load_height_identity](../../../../MeasureAndIntegration/HeightNormalizationPreservesCompressionAndExposesTheCompleteCurveEdition2.lean/declarations/load-height-identity.md) | 31 | `result-track:d7b1fe9845d0b0d19f2b20429535b80caecefb4b435b143d251b620e46302a35` |
-| 3 | `theorem` | [moment_height_identity](../../../../MeasureAndIntegration/HeightNormalizationPreservesCompressionAndExposesTheCompleteCurveEdition2.lean/declarations/moment-height-identity.md) | 40 | `result-track:9983e705427868ae7adedce506f5351151791b56746d12b548d9ff7d56545eb7` |
-| 4 | `theorem` | [compression_height_invariant](../../../../MeasureAndIntegration/HeightNormalizationPreservesCompressionAndExposesTheCompleteCurveEdition2.lean/declarations/compression-height-invariant.md) | 51 | `result-track:0881a7b760a892d55007dffcb22e13dd572be415adb67e8a48acb902528e888e` |
-| 5 | `theorem` | [positive_panel_complete_curve](../../../../MeasureAndIntegration/HeightNormalizationPreservesCompressionAndExposesTheCompleteCurveEdition2.lean/declarations/positive-panel-complete-curve.md) | 77 | `result-track:2cb72f1db7fec4988b168b8860f09acde0cb23b34ce02d92ed1c2fdeb110dace` |
-| 6 | `theorem` | [actual_prime_panel_complete_curve](../../../../MeasureAndIntegration/HeightNormalizationPreservesCompressionAndExposesTheCompleteCurveEdition2.lean/declarations/actual-prime-panel-complete-curve.md) | 103 | `result-track:23990b16aaad32bee028b4e97f37fe23cc5530696e6fdb7bedb43476ef7eb284` |
+| 1 | `def` | [unitProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HeightNormalizationPreservesCompressionAndExposesTheCompleteCurveEdition2.lean/declarations/unitprofile.md) | 28 | `declaration-track:d8b0d638650c7434097d1fd67ce9e9c38c7574046203e16e0a9e244185892301` |
+| 2 | `theorem` | [load_height_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HeightNormalizationPreservesCompressionAndExposesTheCompleteCurveEdition2.lean/declarations/load-height-identity.md) | 31 | `result-track:d7b1fe9845d0b0d19f2b20429535b80caecefb4b435b143d251b620e46302a35` |
+| 3 | `theorem` | [moment_height_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HeightNormalizationPreservesCompressionAndExposesTheCompleteCurveEdition2.lean/declarations/moment-height-identity.md) | 40 | `result-track:9983e705427868ae7adedce506f5351151791b56746d12b548d9ff7d56545eb7` |
+| 4 | `theorem` | [compression_height_invariant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HeightNormalizationPreservesCompressionAndExposesTheCompleteCurveEdition2.lean/declarations/compression-height-invariant.md) | 51 | `result-track:0881a7b760a892d55007dffcb22e13dd572be415adb67e8a48acb902528e888e` |
+| 5 | `theorem` | [positive_panel_complete_curve](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HeightNormalizationPreservesCompressionAndExposesTheCompleteCurveEdition2.lean/declarations/positive-panel-complete-curve.md) | 77 | `result-track:2cb72f1db7fec4988b168b8860f09acde0cb23b34ce02d92ed1c2fdeb110dace` |
+| 6 | `theorem` | [actual_prime_panel_complete_curve](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HeightNormalizationPreservesCompressionAndExposesTheCompleteCurveEdition2.lean/declarations/actual-prime-panel-complete-curve.md) | 103 | `result-track:23990b16aaad32bee028b4e97f37fe23cc5530696e6fdb7bedb43476ef7eb284` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

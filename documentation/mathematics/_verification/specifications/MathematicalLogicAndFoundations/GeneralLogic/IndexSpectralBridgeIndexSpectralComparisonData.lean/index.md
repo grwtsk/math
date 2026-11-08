@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IndexSpectralBridgeIndexSpectralComparisonData.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IndexSpectralBridgeIndexSpectralComparisonData.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IndexSpectralBridgeIndexSpectralComparisonData.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IndexSpectralBridgeIndexSpectralComparisonData.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [IndexSpectralComparisonData](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IndexSpectralBridgeIndexSpectralComparisonData.lean/declarations/indexspectralcomparisondata.md) | 27 | `declaration-track:2e8db554047993d14913be61a00b39b26cca2e40efb8344c4205fc4b2bb1faad` |
-| 2 | `def` | [IndexSpectralBridgeCondition](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IndexSpectralBridgeIndexSpectralComparisonData.lean/declarations/indexspectralbridgecondition.md) | 38 | `declaration-track:a67da49055c7ce938d066ab7f1db7a569ada5aad958d689b1a8a1c86491a3e51` |
-| 3 | `theorem` | [index_spectral_bridge_from_trace_formula](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IndexSpectralBridgeIndexSpectralComparisonData.lean/declarations/index-spectral-bridge-from-trace-formula.md) | 42 | `result-track:19cacba620c1a6b74a5c8eb2001a4e7c048d203509441f6865115ac6bd4f3c5d` |
-| 4 | `theorem` | [index_spectral_bridge_has_operator](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IndexSpectralBridgeIndexSpectralComparisonData.lean/declarations/index-spectral-bridge-has-operator.md) | 48 | `result-track:8fcd53747147d2f12a2763636ca6d3ea43d2270f88e6000bdddaf96a277837f7` |
-| 5 | `theorem` | [index_spectral_bridge_has_pairing](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IndexSpectralBridgeIndexSpectralComparisonData.lean/declarations/index-spectral-bridge-has-pairing.md) | 53 | `result-track:241cf24bf462302aa76cd89ed835748d499d6c2e2fb39c3ff4be49b462928422` |
+| 1 | `structure` | [IndexSpectralComparisonData](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IndexSpectralBridgeIndexSpectralComparisonData.lean/declarations/indexspectralcomparisondata.md) | 27 | `declaration-track:2e8db554047993d14913be61a00b39b26cca2e40efb8344c4205fc4b2bb1faad` |
+| 2 | `def` | [IndexSpectralBridgeCondition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IndexSpectralBridgeIndexSpectralComparisonData.lean/declarations/indexspectralbridgecondition.md) | 38 | `declaration-track:a67da49055c7ce938d066ab7f1db7a569ada5aad958d689b1a8a1c86491a3e51` |
+| 3 | `theorem` | [index_spectral_bridge_from_trace_formula](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IndexSpectralBridgeIndexSpectralComparisonData.lean/declarations/index-spectral-bridge-from-trace-formula.md) | 42 | `result-track:19cacba620c1a6b74a5c8eb2001a4e7c048d203509441f6865115ac6bd4f3c5d` |
+| 4 | `theorem` | [index_spectral_bridge_has_operator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IndexSpectralBridgeIndexSpectralComparisonData.lean/declarations/index-spectral-bridge-has-operator.md) | 48 | `result-track:8fcd53747147d2f12a2763636ca6d3ea43d2270f88e6000bdddaf96a277837f7` |
+| 5 | `theorem` | [index_spectral_bridge_has_pairing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IndexSpectralBridgeIndexSpectralComparisonData.lean/declarations/index-spectral-bridge-has-pairing.md) | 53 | `result-track:241cf24bf462302aa76cd89ed835748d499d6c2e2fb39c3ff4be49b462928422` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

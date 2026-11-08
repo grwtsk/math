@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/MobiusNamespacedEdition2.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/MobiusNamespacedEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MobiusNamespacedEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MobiusNamespacedEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FiniteMobiusWindow](../../../../../ComputerScience/AlgorithmsInComputerScience/MobiusNamespacedEdition2.lean/declarations/finitemobiuswindow.md) | 24 | `declaration-track:22805114133931ea80f6b4b987663733650ca9ded38da84b244f10953d3255a8` |
-| 2 | `theorem` | [finite_mobius_window_sound](../../../../../ComputerScience/AlgorithmsInComputerScience/MobiusNamespacedEdition2.lean/declarations/finite-mobius-window-sound.md) | 32 | `result-track:a949dbb244ce61ccd1ca853ee860fad27444cb93e8b06872290cfb63f176e907` |
-| 3 | `def` | [FiniteMobiusWindow.toArithmeticPayload](../../../../../ComputerScience/AlgorithmsInComputerScience/MobiusNamespacedEdition2.lean/declarations/finitemobiuswindow-toarithmeticpayload.md) | 38 | `declaration-track:ce4324a1e2f206c4cdcb1cc2269c67c753b38ac56782c5f7414f4ce2b8334ef1` |
-| 4 | `theorem` | [finiteMobius_toPayload_weight](../../../../../ComputerScience/AlgorithmsInComputerScience/MobiusNamespacedEdition2.lean/declarations/finitemobius-topayload-weight.md) | 50 | `result-track:33bc207d2831d9b894165544906a2d14a4b4e7a509b79a5adab461206a98bf47` |
-| 5 | `theorem` | [finiteMobius_toPayload_support](../../../../../ComputerScience/AlgorithmsInComputerScience/MobiusNamespacedEdition2.lean/declarations/finitemobius-topayload-support.md) | 57 | `result-track:88db701a4d75b578f58a9cd12f2517535853e839cc28ac524fdb97c4136d1746` |
-| 6 | `def` | [FiniteMobiusWindowProvesAnalyticIdentity](../../../../../ComputerScience/AlgorithmsInComputerScience/MobiusNamespacedEdition2.lean/declarations/finitemobiuswindowprovesanalyticidentity.md) | 65 | `declaration-track:aaf240904875d64b5b9fa4e8152ae52d1e4ee1546f2616fc17845dbc04e55616` |
-| 7 | `theorem` | [finite_mobius_window_not_analytic_identity](../../../../../ComputerScience/AlgorithmsInComputerScience/MobiusNamespacedEdition2.lean/declarations/finite-mobius-window-not-analytic-identity.md) | 69 | `result-track:31b4812527f730376400e67511e7c7f6e698748ce9312f5552ea9941602ebe74` |
+| 1 | `structure` | [FiniteMobiusWindow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MobiusNamespacedEdition2.lean/declarations/finitemobiuswindow.md) | 24 | `declaration-track:22805114133931ea80f6b4b987663733650ca9ded38da84b244f10953d3255a8` |
+| 2 | `theorem` | [finite_mobius_window_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MobiusNamespacedEdition2.lean/declarations/finite-mobius-window-sound.md) | 32 | `result-track:a949dbb244ce61ccd1ca853ee860fad27444cb93e8b06872290cfb63f176e907` |
+| 3 | `def` | [FiniteMobiusWindow.toArithmeticPayload](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MobiusNamespacedEdition2.lean/declarations/finitemobiuswindow-toarithmeticpayload.md) | 38 | `declaration-track:ce4324a1e2f206c4cdcb1cc2269c67c753b38ac56782c5f7414f4ce2b8334ef1` |
+| 4 | `theorem` | [finiteMobius_toPayload_weight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MobiusNamespacedEdition2.lean/declarations/finitemobius-topayload-weight.md) | 50 | `result-track:33bc207d2831d9b894165544906a2d14a4b4e7a509b79a5adab461206a98bf47` |
+| 5 | `theorem` | [finiteMobius_toPayload_support](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MobiusNamespacedEdition2.lean/declarations/finitemobius-topayload-support.md) | 57 | `result-track:88db701a4d75b578f58a9cd12f2517535853e839cc28ac524fdb97c4136d1746` |
+| 6 | `def` | [FiniteMobiusWindowProvesAnalyticIdentity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MobiusNamespacedEdition2.lean/declarations/finitemobiuswindowprovesanalyticidentity.md) | 65 | `declaration-track:aaf240904875d64b5b9fa4e8152ae52d1e4ee1546f2616fc17845dbc04e55616` |
+| 7 | `theorem` | [finite_mobius_window_not_analytic_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MobiusNamespacedEdition2.lean/declarations/finite-mobius-window-not-analytic-identity.md) | 69 | `result-track:31b4812527f730376400e67511e7c7f6e698748ce9312f5552ea9941602ebe74` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

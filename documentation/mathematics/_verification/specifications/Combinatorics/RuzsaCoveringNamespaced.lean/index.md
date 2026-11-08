@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/RuzsaCoveringNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/RuzsaCoveringNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RuzsaCoveringNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RuzsaCoveringNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,8 +61,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [ruzsa_covering_mul](../../../../Combinatorics/RuzsaCoveringNamespaced.lean/declarations/ruzsa-covering-mul.md) | 36 | `result-track:529f04c02abda46c7daaddbc35e3eeceb7d46ae371fd5bf13212f85ad788c065` |
-| 2 | `lemma` | [ruzsa_covering_mul](../../../../Combinatorics/RuzsaCoveringNamespaced.lean/declarations/ruzsa-covering-mul-source-edition-2.md) | 75 | `result-track:7abf011aa1b3ee1d3516cc2f83af9d5a8585984b190ef5aff239a4500cb33f18` |
+| 1 | `theorem` | [ruzsa_covering_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RuzsaCoveringNamespaced.lean/declarations/ruzsa-covering-mul.md) | 36 | `result-track:529f04c02abda46c7daaddbc35e3eeceb7d46ae371fd5bf13212f85ad788c065` |
+| 2 | `lemma` | [ruzsa_covering_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RuzsaCoveringNamespaced.lean/declarations/ruzsa-covering-mul-source-edition-2.md) | 75 | `result-track:7abf011aa1b3ee1d3516cc2f83af9d5a8585984b190ef5aff239a4500cb33f18` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConstantExpressions.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConstantExpressions.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ConstantExpressions.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ConstantExpressions.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [Negation Conjunction Disjunction](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegationConjunctionDisjunction.lean/index.md) — import line 17; pinned internal source present.
+- [Negation Conjunction Disjunction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NegationConjunctionDisjunction.lean/index.md) — import line 17; pinned internal source present.
 - `Folder.Boolean.Semantics` — import line 19; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [nandTrue](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConstantExpressions.lean/declarations/nandtrue.md) | 40 | `declaration-track:f839c0c35762049d14907c4fc968f39e62950c30f8e9bf8d9be8959b8a0895a8` |
-| 2 | `def` | [nandFalse](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConstantExpressions.lean/declarations/nandfalse.md) | 43 | `declaration-track:72fa2663952b48a9e246db9cae05e1a9303d6459051b54c08701bb6be59a23ae` |
-| 3 | `theorem` | [eval_nandTrue](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConstantExpressions.lean/declarations/eval-nandtrue.md) | 47 | `result-track:2164d9f7fc3cd96f900524abbbf67c14430c4742492ad6e74d813c06d3d44a7d` |
-| 4 | `theorem` | [eval_nandFalse](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConstantExpressions.lean/declarations/eval-nandfalse.md) | 52 | `result-track:99f99454f7fd0c3c738d9672b67c109c2b8f9f4b325173370121b17777fdb043` |
+| 1 | `def` | [nandTrue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ConstantExpressions.lean/declarations/nandtrue.md) | 40 | `declaration-track:f839c0c35762049d14907c4fc968f39e62950c30f8e9bf8d9be8959b8a0895a8` |
+| 2 | `def` | [nandFalse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ConstantExpressions.lean/declarations/nandfalse.md) | 43 | `declaration-track:72fa2663952b48a9e246db9cae05e1a9303d6459051b54c08701bb6be59a23ae` |
+| 3 | `theorem` | [eval_nandTrue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ConstantExpressions.lean/declarations/eval-nandtrue.md) | 47 | `result-track:2164d9f7fc3cd96f900524abbbf67c14430c4742492ad6e74d813c06d3d44a7d` |
+| 4 | `theorem` | [eval_nandFalse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ConstantExpressions.lean/declarations/eval-nandfalse.md) | 52 | `result-track:99f99454f7fd0c3c738d9672b67c109c2b8f9f4b325173370121b17777fdb043` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

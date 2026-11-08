@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SafeShiftSymmetricPackingControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SafeShiftSymmetricPackingControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SafeShiftSymmetricPackingControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SafeShiftSymmetricPackingControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.SafeShiftSymmetricPacking`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SafeShiftSymmetricPacking.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.SafeShiftSymmetricPacking`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SafeShiftSymmetricPacking.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [even_channel_reflection_invariant](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SafeShiftSymmetricPackingControls.lean/declarations/even-channel-reflection-invariant.md) | 14 | `result-track:12ebb3b54808b30a76bb8726130baf4f3b594b87277f5699c0cbed529c966389` |
-| 2 | `theorem` | [odd_channel_reflection_antisymmetric](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SafeShiftSymmetricPackingControls.lean/declarations/odd-channel-reflection-antisymmetric.md) | 20 | `result-track:75de819277ae8832d6be22588476af691afaea68af60e62bfa76cb751f8a4fa8` |
-| 3 | `theorem` | [symmetric_stage_nonnegative](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SafeShiftSymmetricPackingControls.lean/declarations/symmetric-stage-nonnegative.md) | 26 | `result-track:46770c5ac045699fde83f6cfb996d404aa328e30e63a1cb735d988f588dba403` |
+| 1 | `theorem` | [even_channel_reflection_invariant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SafeShiftSymmetricPackingControls.lean/declarations/even-channel-reflection-invariant.md) | 14 | `result-track:12ebb3b54808b30a76bb8726130baf4f3b594b87277f5699c0cbed529c966389` |
+| 2 | `theorem` | [odd_channel_reflection_antisymmetric](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SafeShiftSymmetricPackingControls.lean/declarations/odd-channel-reflection-antisymmetric.md) | 20 | `result-track:75de819277ae8832d6be22588476af691afaea68af60e62bfa76cb751f8a4fa8` |
+| 3 | `theorem` | [symmetric_stage_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SafeShiftSymmetricPackingControls.lean/declarations/symmetric-stage-nonnegative.md) | 26 | `result-track:46770c5ac045699fde83f6cfb996d404aa328e30e63a1cb735d988f588dba403` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FundamentalTheoremNamespacedFactorProduct.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FundamentalTheoremNamespacedFactorProduct.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FundamentalTheoremNamespacedFactorProduct.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FundamentalTheoremNamespacedFactorProduct.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [factorProduct](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FundamentalTheoremNamespacedFactorProduct.lean/declarations/factorproduct.md) | 26 | `declaration-track:9536b787ff5d2b780d837682e7e7de81818459090d62e668089f3de5a550b582` |
-| 2 | `theorem` | [factorProduct_factorization](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FundamentalTheoremNamespacedFactorProduct.lean/declarations/factorproduct-factorization.md) | 30 | `result-track:b85ee97a9a1a07a6696d3068846c4c95f4d0f8f9cc01f8e76974265384f12598` |
-| 3 | `theorem` | [factorProduct_one](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FundamentalTheoremNamespacedFactorProduct.lean/declarations/factorproduct-one.md) | 36 | `result-track:8bedc7ba8cef2f28f90d44bcf42d41fb675ec599107210ab2f22fcd0266c09ad` |
+| 1 | `def` | [factorProduct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FundamentalTheoremNamespacedFactorProduct.lean/declarations/factorproduct.md) | 26 | `declaration-track:9536b787ff5d2b780d837682e7e7de81818459090d62e668089f3de5a550b582` |
+| 2 | `theorem` | [factorProduct_factorization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FundamentalTheoremNamespacedFactorProduct.lean/declarations/factorproduct-factorization.md) | 30 | `result-track:b85ee97a9a1a07a6696d3068846c4c95f4d0f8f9cc01f8e76974265384f12598` |
+| 3 | `theorem` | [factorProduct_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FundamentalTheoremNamespacedFactorProduct.lean/declarations/factorproduct-one.md) | 36 | `result-track:8bedc7ba8cef2f28f90d44bcf42d41fb675ec599107210ab2f22fcd0266c09ad` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

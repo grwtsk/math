@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourcePhysicalWindowCutoffsNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourcePhysicalWindowCutoffsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourcePhysicalWindowCutoffsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourcePhysicalWindowCutoffsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_log_window_order](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourcePhysicalWindowCutoffsNamespaced.lean/declarations/actual-log-window-order.md) | 37 | `result-track:a64ca8b0cc1d5683473bb8edd83cfdf50d5915d36d8333dd259def9c8a89b795` |
-| 2 | `theorem` | [actual_lower_strip_width](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourcePhysicalWindowCutoffsNamespaced.lean/declarations/actual-lower-strip-width.md) | 54 | `result-track:dfd7571b1ceaa998d16cfc852b2ef21bc6ad9c43eec17995bf81ed1d6faa5bb4` |
-| 3 | `theorem` | [actual_lower_strip_pointwise_bounds](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourcePhysicalWindowCutoffsNamespaced.lean/declarations/actual-lower-strip-pointwise-bounds.md) | 74 | `result-track:aeb184f8ea11a87836fffa2998e6710ccc45f9cbfa1bef7fbd435122746207e0` |
+| 1 | `theorem` | [actual_log_window_order](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourcePhysicalWindowCutoffsNamespaced.lean/declarations/actual-log-window-order.md) | 37 | `result-track:a64ca8b0cc1d5683473bb8edd83cfdf50d5915d36d8333dd259def9c8a89b795` |
+| 2 | `theorem` | [actual_lower_strip_width](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourcePhysicalWindowCutoffsNamespaced.lean/declarations/actual-lower-strip-width.md) | 54 | `result-track:dfd7571b1ceaa998d16cfc852b2ef21bc6ad9c43eec17995bf81ed1d6faa5bb4` |
+| 3 | `theorem` | [actual_lower_strip_pointwise_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourcePhysicalWindowCutoffsNamespaced.lean/declarations/actual-lower-strip-pointwise-bounds.md) | 74 | `result-track:aeb184f8ea11a87836fffa2998e6710ccc45f9cbfa1bef7fbd435122746207e0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

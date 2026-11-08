@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/UniformizablePublic.lean/index.md) · [Full source](../../../../GeneralTopology/UniformizablePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UniformizablePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UniformizablePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [IsThickening](../../../../GeneralTopology/UniformizablePublic.lean/declarations/isthickening.md) | 50 | `declaration-track:8d8fb18b931ca3d38df25ab28cdb2bd5ef0a5ee2bf04b60a0db37e63ce02166b` |
-| 2 | `theorem` | [urysohns_main](../../../../GeneralTopology/UniformizablePublic.lean/declarations/urysohns-main.md) | 59 | `result-track:5216dda96196b38ee6603723fa3fa8ed9da67d802efa9929dee17edfe4b13fb7` |
-| 3 | `instance` | [UniformSpace.toCompletelyRegularSpace](../../../../GeneralTopology/UniformizablePublic.lean/declarations/uniformspace-tocompletelyregularspace.md) | 78 | `declaration-track:ffe132edfe9bb93a6ef879101caba8760dca27301b63225eadc35814ad6b284d` |
-| 4 | `theorem` | [CompletelyRegularSpace.of_exists_uniformSpace](../../../../GeneralTopology/UniformizablePublic.lean/declarations/completelyregularspace-of-exists-uniformspace.md) | 103 | `result-track:1da78fef956fe67872ce1bb8245df79d39d50c5e6bcb4b848e64ea851cc7fd2b` |
-| 5 | `theorem` | [CompletelyRegularSpace.exists_uniformSpace](../../../../GeneralTopology/UniformizablePublic.lean/declarations/completelyregularspace-exists-uniformspace.md) | 109 | `result-track:aeef3f7596c56bb0928175d46d5b427c6212d1a67e37c8dad8133a0ab3adf3c0` |
-| 6 | `theorem` | [completelyRegularSpace_iff_exists_uniformSpace](../../../../GeneralTopology/UniformizablePublic.lean/declarations/completelyregularspace-iff-exists-uniformspace.md) | 113 | `result-track:46cbd4d870058848cf9353e9b3d383bde3718cb96d977f7866c6c64493dcaaec` |
+| 1 | `def` | [IsThickening](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UniformizablePublic.lean/declarations/isthickening.md) | 50 | `declaration-track:8d8fb18b931ca3d38df25ab28cdb2bd5ef0a5ee2bf04b60a0db37e63ce02166b` |
+| 2 | `theorem` | [urysohns_main](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UniformizablePublic.lean/declarations/urysohns-main.md) | 59 | `result-track:5216dda96196b38ee6603723fa3fa8ed9da67d802efa9929dee17edfe4b13fb7` |
+| 3 | `instance` | [UniformSpace.toCompletelyRegularSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UniformizablePublic.lean/declarations/uniformspace-tocompletelyregularspace.md) | 78 | `declaration-track:ffe132edfe9bb93a6ef879101caba8760dca27301b63225eadc35814ad6b284d` |
+| 4 | `theorem` | [CompletelyRegularSpace.of_exists_uniformSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UniformizablePublic.lean/declarations/completelyregularspace-of-exists-uniformspace.md) | 103 | `result-track:1da78fef956fe67872ce1bb8245df79d39d50c5e6bcb4b848e64ea851cc7fd2b` |
+| 5 | `theorem` | [CompletelyRegularSpace.exists_uniformSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UniformizablePublic.lean/declarations/completelyregularspace-exists-uniformspace.md) | 109 | `result-track:aeef3f7596c56bb0928175d46d5b427c6212d1a67e37c8dad8133a0ab3adf3c0` |
+| 6 | `theorem` | [completelyRegularSpace_iff_exists_uniformSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UniformizablePublic.lean/declarations/completelyregularspace-iff-exists-uniformspace.md) | 113 | `result-track:46cbd4d870058848cf9353e9b3d383bde3718cb96d977f7866c6c64493dcaaec` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

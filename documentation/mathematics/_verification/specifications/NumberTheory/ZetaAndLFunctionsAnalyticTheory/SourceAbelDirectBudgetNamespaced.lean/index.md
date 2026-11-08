@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceAbelDirectBudgetNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceAbelDirectBudgetNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceAbelDirectBudgetNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceAbelDirectBudgetNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [all_real_source_lower_of_compensatedJointWork_tail](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceAbelDirectBudgetNamespaced.lean/declarations/all-real-source-lower-of-compensatedjointwork-tail.md) | 30 | `result-track:a9508cc591f67bdffc4eff51198d0034273eee592eb9dbc139b4fd6d7331f8b8` |
-| 2 | `theorem` | [all_real_source_lower_of_compensatedLocalizedWork_tail](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceAbelDirectBudgetNamespaced.lean/declarations/all-real-source-lower-of-compensatedlocalizedwork-tail.md) | 39 | `result-track:19cefd5c0a36473006a81f79d68ffd0407301eb7d8dba972081f3ea118ea1eaf` |
+| 1 | `theorem` | [all_real_source_lower_of_compensatedJointWork_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceAbelDirectBudgetNamespaced.lean/declarations/all-real-source-lower-of-compensatedjointwork-tail.md) | 30 | `result-track:a9508cc591f67bdffc4eff51198d0034273eee592eb9dbc139b4fd6d7331f8b8` |
+| 2 | `theorem` | [all_real_source_lower_of_compensatedLocalizedWork_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceAbelDirectBudgetNamespaced.lean/declarations/all-real-source-lower-of-compensatedlocalizedwork-tail.md) | 39 | `result-track:19cefd5c0a36473006a81f79d68ffd0407301eb7d8dba972081f3ea118ea1eaf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

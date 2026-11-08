@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ObservableAdapter.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ObservableAdapter.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ObservableAdapter.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ObservableAdapter.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [toDAF](../../../../../ComputerScience/AlgorithmsInComputerScience/ObservableAdapter.lean/declarations/todaf.md) | 18 | `declaration-track:a1a102689c16904f4ac5f64a57a333e48d805e4306a0e400bbfbdb83e7d1baad` |
-| 2 | `def` | [toObservable](../../../../../ComputerScience/AlgorithmsInComputerScience/ObservableAdapter.lean/declarations/toobservable.md) | 31 | `declaration-track:d7a1590fabd47c509b57921f3e03a5d446194b889e26d6e603aa53891e63016a` |
-| 3 | `theorem` | [toDAF_run](../../../../../ComputerScience/AlgorithmsInComputerScience/ObservableAdapter.lean/declarations/todaf-run.md) | 39 | `result-track:eb3ee73071217a8036b81da95d33448991b7af0fb3407799c05dd3a6c61c6b7b` |
-| 4 | `theorem` | [toObservable_run](../../../../../ComputerScience/AlgorithmsInComputerScience/ObservableAdapter.lean/declarations/toobservable-run.md) | 54 | `result-track:39258b9bc382a02c06bff71326e388008cb705428012b37f4932f5bad499662f` |
-| 5 | `theorem` | [toDAF_causalEquivalent_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/ObservableAdapter.lean/declarations/todaf-causalequivalent-iff.md) | 67 | `result-track:dbbfb35ae30a29eb38772576fe0d09bc9035e350e9594efe4bc46b321ceb4ca6` |
-| 6 | `def` | [causalStateEquiv](../../../../../ComputerScience/AlgorithmsInComputerScience/ObservableAdapter.lean/declarations/causalstateequiv.md) | 84 | `declaration-track:88c6243d05be59b15936e519343a9426917f2cc9af7048fcf40180f5a0aa7c68` |
-| 7 | `theorem` | [causalStateEquiv_toCausal](../../../../../ComputerScience/AlgorithmsInComputerScience/ObservableAdapter.lean/declarations/causalstateequiv-tocausal.md) | 108 | `result-track:8d91660f0c54116ce32bfaffe5ba6135c70b0b9dc2836c8d5665bec7949ae502` |
+| 1 | `def` | [toDAF](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ObservableAdapter.lean/declarations/todaf.md) | 18 | `declaration-track:a1a102689c16904f4ac5f64a57a333e48d805e4306a0e400bbfbdb83e7d1baad` |
+| 2 | `def` | [toObservable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ObservableAdapter.lean/declarations/toobservable.md) | 31 | `declaration-track:d7a1590fabd47c509b57921f3e03a5d446194b889e26d6e603aa53891e63016a` |
+| 3 | `theorem` | [toDAF_run](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ObservableAdapter.lean/declarations/todaf-run.md) | 39 | `result-track:eb3ee73071217a8036b81da95d33448991b7af0fb3407799c05dd3a6c61c6b7b` |
+| 4 | `theorem` | [toObservable_run](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ObservableAdapter.lean/declarations/toobservable-run.md) | 54 | `result-track:39258b9bc382a02c06bff71326e388008cb705428012b37f4932f5bad499662f` |
+| 5 | `theorem` | [toDAF_causalEquivalent_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ObservableAdapter.lean/declarations/todaf-causalequivalent-iff.md) | 67 | `result-track:dbbfb35ae30a29eb38772576fe0d09bc9035e350e9594efe4bc46b321ceb4ca6` |
+| 6 | `def` | [causalStateEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ObservableAdapter.lean/declarations/causalstateequiv.md) | 84 | `declaration-track:88c6243d05be59b15936e519343a9426917f2cc9af7048fcf40180f5a0aa7c68` |
+| 7 | `theorem` | [causalStateEquiv_toCausal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ObservableAdapter.lean/declarations/causalstateequiv-tocausal.md) | 108 | `result-track:8d91660f0c54116ce32bfaffe5ba6135c70b0b9dc2836c8d5665bec7949ae502` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

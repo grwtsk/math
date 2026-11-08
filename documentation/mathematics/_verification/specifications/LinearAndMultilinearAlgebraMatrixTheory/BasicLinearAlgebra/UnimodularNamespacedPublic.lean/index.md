@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnimodularNamespacedPublic.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnimodularNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnimodularNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnimodularNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [IsUnimodular](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnimodularNamespacedPublic.lean/declarations/isunimodular.md) | 55 | `declaration-track:f26a026d8449ea03b5a456439c22d058028f4041611c67bd27a17338002054fc` |
-| 2 | `theorem` | [isUnimodular_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnimodularNamespacedPublic.lean/declarations/isunimodular-iff.md) | 59 | `result-track:a3321c29dbd01e78f295a44c96e7cc9a95bc7cdbf896ac9df1f55855016be925` |
-| 3 | `theorem` | [isUnimodular_of_apply_eq_one](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnimodularNamespacedPublic.lean/declarations/isunimodular-of-apply-eq-one.md) | 61 | `result-track:83ef081017e7950112329008e639a2247d29a6ecd4c5e62457c571fbc89b9f76` |
-| 4 | `theorem` | [span_repr_eq_range_applyₗ](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnimodularNamespacedPublic.lean/declarations/span-repr-eq-range-apply.md) | 73 | `result-track:b483dddc688caee5e1e8bce2de360469d360acb5ea1802979c4801988bd3850a` |
-| 5 | `theorem` | [isUnimodular_iff_span_repr_eq_top](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnimodularNamespacedPublic.lean/declarations/isunimodular-iff-span-repr-eq-top.md) | 86 | `result-track:56403bb9fc773404203d07914ea18fa563ce932d92fe445e15fb3b535fc1257e` |
-| 6 | `theorem` | [Unimodular Namespaced Public](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnimodularNamespacedPublic.lean/declarations/isunimodular-one.md) | 97 | `result-track:1d5bcc3715e54c975dbe1f23cd2297fb124878db6a05afa43768b6ba3e8e7dba` |
-| 7 | `theorem` | [exists_basis_zero_eq](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnimodularNamespacedPublic.lean/declarations/exists-basis-zero-eq.md) | 110 | `result-track:5dc5065abbe5ea7f0ac61ada209f83a163a01b61a9a92a6b8bdd6fa82592bbd8` |
+| 1 | `def` | [IsUnimodular](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnimodularNamespacedPublic.lean/declarations/isunimodular.md) | 55 | `declaration-track:f26a026d8449ea03b5a456439c22d058028f4041611c67bd27a17338002054fc` |
+| 2 | `theorem` | [isUnimodular_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnimodularNamespacedPublic.lean/declarations/isunimodular-iff.md) | 59 | `result-track:a3321c29dbd01e78f295a44c96e7cc9a95bc7cdbf896ac9df1f55855016be925` |
+| 3 | `theorem` | [isUnimodular_of_apply_eq_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnimodularNamespacedPublic.lean/declarations/isunimodular-of-apply-eq-one.md) | 61 | `result-track:83ef081017e7950112329008e639a2247d29a6ecd4c5e62457c571fbc89b9f76` |
+| 4 | `theorem` | [span_repr_eq_range_applyₗ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnimodularNamespacedPublic.lean/declarations/span-repr-eq-range-apply.md) | 73 | `result-track:b483dddc688caee5e1e8bce2de360469d360acb5ea1802979c4801988bd3850a` |
+| 5 | `theorem` | [isUnimodular_iff_span_repr_eq_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnimodularNamespacedPublic.lean/declarations/isunimodular-iff-span-repr-eq-top.md) | 86 | `result-track:56403bb9fc773404203d07914ea18fa563ce932d92fe445e15fb3b535fc1257e` |
+| 6 | `theorem` | [Unimodular Namespaced Public](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnimodularNamespacedPublic.lean/declarations/isunimodular-one.md) | 97 | `result-track:1d5bcc3715e54c975dbe1f23cd2297fb124878db6a05afa43768b6ba3e8e7dba` |
+| 7 | `theorem` | [exists_basis_zero_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UnimodularNamespacedPublic.lean/declarations/exists-basis-zero-eq.md) | 110 | `result-track:5dc5065abbe5ea7f0ac61ada209f83a163a01b61a9a92a6b8bdd6fa82592bbd8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

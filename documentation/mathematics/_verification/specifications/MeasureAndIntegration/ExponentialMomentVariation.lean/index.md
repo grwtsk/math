@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ExponentialMomentVariation.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ExponentialMomentVariation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ExponentialMomentVariation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ExponentialMomentVariation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.TestFunctions.EvenSeparation`](../../../../MeasureAndIntegration/EvenSeparation.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.TestFunctions.EvenSeparation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EvenSeparation.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.MeasureTheory.Integral.IntegralEqImproper` — import line 5; external provider; requires a separately pinned dependency.
 - `Mathlib.Analysis.Calculus.Deriv.Support` — import line 6; external provider; requires a separately pinned dependency.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [poleVariation](../../../../MeasureAndIntegration/ExponentialMomentVariation.lean/declarations/polevariation.md) | 22 | `declaration-track:a792af45904841b8d00bd377d2071791d0e1e11bba33eecdb903be9a3a1f431f` |
-| 2 | `theorem` | [integral_second_derivative_exp](../../../../MeasureAndIntegration/ExponentialMomentVariation.lean/declarations/integral-second-derivative-exp.md) | 25 | `result-track:95e2aecd9bbeafdadcbcede61c27a7300a321140ab3a23e4466ba373513fc020` |
-| 3 | `theorem` | [pole_variation_exp_moment_zero](../../../../MeasureAndIntegration/ExponentialMomentVariation.lean/declarations/pole-variation-exp-moment-zero.md) | 58 | `result-track:043a9493714384be023deace2a686c781e435ff88f48f5818681f50240eb7e14` |
-| 4 | `theorem` | [even_homogeneous_residual_counterexample](../../../../MeasureAndIntegration/ExponentialMomentVariation.lean/declarations/even-homogeneous-residual-counterexample.md) | 78 | `result-track:1c2a34dc387fee89157f96b24fa3c82543b4e0ba9acdc43c330b8dc5d22e0d2d` |
+| 1 | `def` | [poleVariation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ExponentialMomentVariation.lean/declarations/polevariation.md) | 22 | `declaration-track:a792af45904841b8d00bd377d2071791d0e1e11bba33eecdb903be9a3a1f431f` |
+| 2 | `theorem` | [integral_second_derivative_exp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ExponentialMomentVariation.lean/declarations/integral-second-derivative-exp.md) | 25 | `result-track:95e2aecd9bbeafdadcbcede61c27a7300a321140ab3a23e4466ba373513fc020` |
+| 3 | `theorem` | [pole_variation_exp_moment_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ExponentialMomentVariation.lean/declarations/pole-variation-exp-moment-zero.md) | 58 | `result-track:043a9493714384be023deace2a686c781e435ff88f48f5818681f50240eb7e14` |
+| 4 | `theorem` | [even_homogeneous_residual_counterexample](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ExponentialMomentVariation.lean/declarations/even-homogeneous-residual-counterexample.md) | 78 | `result-track:1c2a34dc387fee89157f96b24fa3c82543b4e0ba9acdc43c330b8dc5d22e0d2d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

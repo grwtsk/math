@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Tamagawa.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Tamagawa.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Tamagawa.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Tamagawa.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [LocalTamagawaComponentGroupData](../../../../../ComputerScience/AlgorithmsInComputerScience/Tamagawa.lean/declarations/localtamagawacomponentgroupdata.md) | 34 | `declaration-track:51e254a13367a4c3e7af45f4404405ffe59bb4f192e6d461de96a10e842577b7` |
-| 2 | `structure` | [LocalTamagawaFactorCertificate](../../../../../ComputerScience/AlgorithmsInComputerScience/Tamagawa.lean/declarations/localtamagawafactorcertificate.md) | 70 | `declaration-track:886acd7abade9d8a0a4d0d4529b05f33cf178d37a634e81f321794c829567c4e` |
-| 3 | `def` | [LocalTamagawaFactorCertificate.certifiedForBSD](../../../../../ComputerScience/AlgorithmsInComputerScience/Tamagawa.lean/declarations/localtamagawafactorcertificate-certifiedforbsd.md) | 94 | `declaration-track:a1b7aa0e67b235ef2f3a8369fbf5acc2393a96bfc56f591749423601c739d2cf` |
-| 4 | `theorem` | [LocalTamagawaFactorCertificate.certifiedForBSD_of_fields](../../../../../ComputerScience/AlgorithmsInComputerScience/Tamagawa.lean/declarations/localtamagawafactorcertificate-certifiedforbsd-of-fields.md) | 112 | `result-track:107a779ad7695aa7bc01c364b0b9e2ef84de42026bd63ed45e7b9bf829594711` |
-| 5 | `structure` | [TamagawaProductCertificate](../../../../../ComputerScience/AlgorithmsInComputerScience/Tamagawa.lean/declarations/tamagawaproductcertificate.md) | 147 | `declaration-track:6aa625fb3b50a9bf41c8e649fab81df610fc3ff21307011abaebaa46b272b07c` |
-| 6 | `def` | [TamagawaProductCertificate.certifiedForBSD](../../../../../ComputerScience/AlgorithmsInComputerScience/Tamagawa.lean/declarations/tamagawaproductcertificate-certifiedforbsd.md) | 171 | `declaration-track:8397e55ecd4276292cc58a0dbf5bb96def2bb8f130c21f7685d7563fac64de61` |
-| 7 | `theorem` | [TamagawaProductCertificate.certifiedForBSD_of_fields](../../../../../ComputerScience/AlgorithmsInComputerScience/Tamagawa.lean/declarations/tamagawaproductcertificate-certifiedforbsd-of-fields.md) | 189 | `result-track:3d0ed122e23fdb32a4a591360a924e7be4d6cf40343cc86e55193c832598eb69` |
+| 1 | `structure` | [LocalTamagawaComponentGroupData](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Tamagawa.lean/declarations/localtamagawacomponentgroupdata.md) | 34 | `declaration-track:51e254a13367a4c3e7af45f4404405ffe59bb4f192e6d461de96a10e842577b7` |
+| 2 | `structure` | [LocalTamagawaFactorCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Tamagawa.lean/declarations/localtamagawafactorcertificate.md) | 70 | `declaration-track:886acd7abade9d8a0a4d0d4529b05f33cf178d37a634e81f321794c829567c4e` |
+| 3 | `def` | [LocalTamagawaFactorCertificate.certifiedForBSD](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Tamagawa.lean/declarations/localtamagawafactorcertificate-certifiedforbsd.md) | 94 | `declaration-track:a1b7aa0e67b235ef2f3a8369fbf5acc2393a96bfc56f591749423601c739d2cf` |
+| 4 | `theorem` | [LocalTamagawaFactorCertificate.certifiedForBSD_of_fields](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Tamagawa.lean/declarations/localtamagawafactorcertificate-certifiedforbsd-of-fields.md) | 112 | `result-track:107a779ad7695aa7bc01c364b0b9e2ef84de42026bd63ed45e7b9bf829594711` |
+| 5 | `structure` | [TamagawaProductCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Tamagawa.lean/declarations/tamagawaproductcertificate.md) | 147 | `declaration-track:6aa625fb3b50a9bf41c8e649fab81df610fc3ff21307011abaebaa46b272b07c` |
+| 6 | `def` | [TamagawaProductCertificate.certifiedForBSD](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Tamagawa.lean/declarations/tamagawaproductcertificate-certifiedforbsd.md) | 171 | `declaration-track:8397e55ecd4276292cc58a0dbf5bb96def2bb8f130c21f7685d7563fac64de61` |
+| 7 | `theorem` | [TamagawaProductCertificate.certifiedForBSD_of_fields](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Tamagawa.lean/declarations/tamagawaproductcertificate-certifiedforbsd-of-fields.md) | 189 | `result-track:3d0ed122e23fdb32a4a591360a924e7be4d6cf40343cc86e55193c832598eb69` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

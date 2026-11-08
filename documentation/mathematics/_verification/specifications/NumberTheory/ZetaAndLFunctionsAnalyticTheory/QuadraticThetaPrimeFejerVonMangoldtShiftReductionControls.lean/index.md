@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerVonMangoldtShiftReductionControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerVonMangoldtShiftReductionControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerVonMangoldtShiftReductionControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerVonMangoldtShiftReductionControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeFejerVonMangoldtShiftReduction`](../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/QuadraticThetaPrimeFejerVonMangoldtShiftReduction.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeFejerVonMangoldtShiftReduction`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/QuadraticThetaPrimeFejerVonMangoldtShiftReduction.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [exactFrontier](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerVonMangoldtShiftReductionControls.lean/declarations/exactfrontier.md) | 13 | `declaration-track:fb28acc6ecbc7f3f3d982dc4453a7013c5c4f0a4df6acf9954dba88538da08ab` |
-| 2 | `theorem` | [primePowerRemainderClosed](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerVonMangoldtShiftReductionControls.lean/declarations/primepowerremainderclosed.md) | 28 | `result-track:b7e4c20cff45d2b11fa01d30c2b256c67a258f917398eedde9b73b328a6555ba` |
-| 3 | `def` | [remainingArithmeticFrontier](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerVonMangoldtShiftReductionControls.lean/declarations/remainingarithmeticfrontier.md) | 32 | `declaration-track:1a43070a6754553eca26a74d2a91fcf2ae53580f93cac67aa3178ac916c315eb` |
+| 1 | `def` | [exactFrontier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerVonMangoldtShiftReductionControls.lean/declarations/exactfrontier.md) | 13 | `declaration-track:fb28acc6ecbc7f3f3d982dc4453a7013c5c4f0a4df6acf9954dba88538da08ab` |
+| 2 | `theorem` | [primePowerRemainderClosed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerVonMangoldtShiftReductionControls.lean/declarations/primepowerremainderclosed.md) | 28 | `result-track:b7e4c20cff45d2b11fa01d30c2b256c67a258f917398eedde9b73b328a6555ba` |
+| 3 | `def` | [remainingArithmeticFrontier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerVonMangoldtShiftReductionControls.lean/declarations/remainingarithmeticfrontier.md) | 32 | `declaration-track:1a43070a6754553eca26a74d2a91fcf2ae53580f93cac67aa3178ac916c315eb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

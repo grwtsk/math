@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/SetLikeFintypeNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/SetLikeFintypeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SetLikeFintypeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SetLikeFintypeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/SetLikeFintypeNamespaced.lean/declarations/instance.md) | 29 | `declaration-track:2ce8e00004f28bb8eabec4c82a599bfca133b8f3aadb34562a10f35e0fd6e687` |
-| 2 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/SetLikeFintypeNamespaced.lean/declarations/instance-source-edition-2.md) | 33 | `declaration-track:7a046775d4c05d84d4416905c05bf82fc91f9235ab5978cec8eaa9c6f7fa1014` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SetLikeFintypeNamespaced.lean/declarations/instance.md) | 29 | `declaration-track:2ce8e00004f28bb8eabec4c82a599bfca133b8f3aadb34562a10f35e0fd6e687` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SetLikeFintypeNamespaced.lean/declarations/instance-source-edition-2.md) | 33 | `declaration-track:7a046775d4c05d84d4416905c05bf82fc91f9235ab5978cec8eaa9c6f7fa1014` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

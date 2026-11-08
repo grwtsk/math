@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PPNamespacedAbelSumClose.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PPNamespacedAbelSumClose.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PPNamespacedAbelSumClose.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PPNamespacedAbelSumClose.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [abel_sum_close](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PPNamespacedAbelSumClose.lean/declarations/abel-sum-close.md) | 44 | `result-track:e8b3f49d069140a81defab282f0ef7f2e75b66605f01adfd2ba4f532e7b0eae1` |
-| 2 | `theorem` | [sumA2g_close](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PPNamespacedAbelSumClose.lean/declarations/suma2g-close.md) | 346 | `result-track:d7c3993a2ea7ab8515f407345d5cea4f8192d9935663e293a3361bcfe7a1bc6f` |
+| 1 | `theorem` | [abel_sum_close](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PPNamespacedAbelSumClose.lean/declarations/abel-sum-close.md) | 44 | `result-track:e8b3f49d069140a81defab282f0ef7f2e75b66605f01adfd2ba4f532e7b0eae1` |
+| 2 | `theorem` | [sumA2g_close](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PPNamespacedAbelSumClose.lean/declarations/suma2g-close.md) | 346 | `result-track:d7c3993a2ea7ab8515f407345d5cea4f8192d9935663e293a3361bcfe7a1bc6f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

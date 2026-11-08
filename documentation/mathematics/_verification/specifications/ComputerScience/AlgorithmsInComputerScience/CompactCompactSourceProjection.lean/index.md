@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/CompactCompactSourceProjection.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/CompactCompactSourceProjection.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CompactCompactSourceProjection.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CompactCompactSourceProjection.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CompactSourceProjection](../../../../../ComputerScience/AlgorithmsInComputerScience/CompactCompactSourceProjection.lean/declarations/compactsourceprojection.md) | 8 | `declaration-track:5bd1ccb317e24d4a20beace2fdbb18189193d9d275ac874d4c74701c994b16dc` |
-| 2 | `def` | [CompactSourceProjection.admitted](../../../../../ComputerScience/AlgorithmsInComputerScience/CompactCompactSourceProjection.lean/declarations/compactsourceprojection-admitted.md) | 16 | `declaration-track:bb9ba33e63a2676b1287b0a3c54b7226c41a44c381c1a52b02f39b1e4ed45d0e` |
-| 3 | `structure` | [CompactSourceTreePass](../../../../../ComputerScience/AlgorithmsInComputerScience/CompactCompactSourceProjection.lean/declarations/compactsourcetreepass.md) | 20 | `declaration-track:a925c5860a7044388306ad4453df6b1b0397bf923584a1742480a8a06226af63` |
-| 4 | `def` | [CompactSourceTreePass.admitted](../../../../../ComputerScience/AlgorithmsInComputerScience/CompactCompactSourceProjection.lean/declarations/compactsourcetreepass-admitted.md) | 26 | `declaration-track:8728e82dc3eeef70eda637c3b9438c8979675f6e1e856bacc20049f8c017db9b` |
-| 5 | `theorem` | [admitted_projection_has_residue_complete](../../../../../ComputerScience/AlgorithmsInComputerScience/CompactCompactSourceProjection.lean/declarations/admitted-projection-has-residue-complete.md) | 32 | `result-track:fe6133f3f3468f14d3d13356a10af3c4d169669d8983c299644fb07a0e32ec05` |
+| 1 | `structure` | [CompactSourceProjection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CompactCompactSourceProjection.lean/declarations/compactsourceprojection.md) | 8 | `declaration-track:5bd1ccb317e24d4a20beace2fdbb18189193d9d275ac874d4c74701c994b16dc` |
+| 2 | `def` | [CompactSourceProjection.admitted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CompactCompactSourceProjection.lean/declarations/compactsourceprojection-admitted.md) | 16 | `declaration-track:bb9ba33e63a2676b1287b0a3c54b7226c41a44c381c1a52b02f39b1e4ed45d0e` |
+| 3 | `structure` | [CompactSourceTreePass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CompactCompactSourceProjection.lean/declarations/compactsourcetreepass.md) | 20 | `declaration-track:a925c5860a7044388306ad4453df6b1b0397bf923584a1742480a8a06226af63` |
+| 4 | `def` | [CompactSourceTreePass.admitted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CompactCompactSourceProjection.lean/declarations/compactsourcetreepass-admitted.md) | 26 | `declaration-track:8728e82dc3eeef70eda637c3b9438c8979675f6e1e856bacc20049f8c017db9b` |
+| 5 | `theorem` | [admitted_projection_has_residue_complete](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CompactCompactSourceProjection.lean/declarations/admitted-projection-has-residue-complete.md) | 32 | `result-track:fe6133f3f3468f14d3d13356a10af3c4d169669d8983c299644fb07a0e32ec05` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

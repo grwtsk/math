@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AEb5.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AEb5.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AEb5.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AEb5.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [SourceAtom.NamingComplete](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AEb5.lean/declarations/sourceatom-namingcomplete.md) | 10 | `declaration-track:2c1334b2c10a1b0625ffae9058b7ce5e16a15b1ea813937165a684cc8babe44f` |
+| 1 | `def` | [SourceAtom.NamingComplete](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AEb5.lean/declarations/sourceatom-namingcomplete.md) | 10 | `declaration-track:2c1334b2c10a1b0625ffae9058b7ce5e16a15b1ea813937165a684cc8babe44f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

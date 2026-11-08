@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RefinementClosedCoordinateComplete.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RefinementClosedCoordinateComplete.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RefinementClosedCoordinateComplete.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RefinementClosedCoordinateComplete.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ClosedCoordinateComplete](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RefinementClosedCoordinateComplete.lean/declarations/closedcoordinatecomplete.md) | 8 | `declaration-track:35218846f918d5cd1a5c5e8b0de227f223a22168c8aec3e44c9eca7c49fd9c74` |
-| 2 | `def` | [PersistentCoverage](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RefinementClosedCoordinateComplete.lean/declarations/persistentcoverage.md) | 14 | `declaration-track:263663a359b6ff2208d5eac8e58d57cb3f7f7869d80ede83c52c14f11f645495` |
-| 3 | `structure` | [RefinementSystem](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RefinementClosedCoordinateComplete.lean/declarations/refinementsystem.md) | 27 | `declaration-track:ce1594f0de70508f7c7b4bc228191ee2caa163bf6c5e244ced628f7454e6f7fb` |
-| 4 | `structure` | [RefinementCoherent](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RefinementClosedCoordinateComplete.lean/declarations/refinementcoherent.md) | 40 | `declaration-track:9a71114b1ae851d3b62d33e265cc9c6d047bfde6d0f3f4cf766aeaa46bc10a8f` |
-| 5 | `structure` | [CoherentControlledPresentation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/RefinementClosedCoordinateComplete.lean/declarations/coherentcontrolledpresentation.md) | 87 | `declaration-track:2331ec6940d24b22ae74baab6bedd12beea9764b24bccfc703e044fbb7b5d38d` |
+| 1 | `def` | [ClosedCoordinateComplete](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RefinementClosedCoordinateComplete.lean/declarations/closedcoordinatecomplete.md) | 8 | `declaration-track:35218846f918d5cd1a5c5e8b0de227f223a22168c8aec3e44c9eca7c49fd9c74` |
+| 2 | `def` | [PersistentCoverage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RefinementClosedCoordinateComplete.lean/declarations/persistentcoverage.md) | 14 | `declaration-track:263663a359b6ff2208d5eac8e58d57cb3f7f7869d80ede83c52c14f11f645495` |
+| 3 | `structure` | [RefinementSystem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RefinementClosedCoordinateComplete.lean/declarations/refinementsystem.md) | 27 | `declaration-track:ce1594f0de70508f7c7b4bc228191ee2caa163bf6c5e244ced628f7454e6f7fb` |
+| 4 | `structure` | [RefinementCoherent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RefinementClosedCoordinateComplete.lean/declarations/refinementcoherent.md) | 40 | `declaration-track:9a71114b1ae851d3b62d33e265cc9c6d047bfde6d0f3f4cf766aeaa46bc10a8f` |
+| 5 | `structure` | [CoherentControlledPresentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/RefinementClosedCoordinateComplete.lean/declarations/coherentcontrolledpresentation.md) | 87 | `declaration-track:2331ec6940d24b22ae74baab6bedd12beea9764b24bccfc703e044fbb7b5d38d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

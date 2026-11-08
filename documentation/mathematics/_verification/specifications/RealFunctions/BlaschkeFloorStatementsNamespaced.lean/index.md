@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/BlaschkeFloorStatementsNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/BlaschkeFloorStatementsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BlaschkeFloorStatementsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BlaschkeFloorStatementsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,18 +58,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [blaschkeAtOne](../../../../RealFunctions/BlaschkeFloorStatementsNamespaced.lean/declarations/blaschkeatone.md) | 17 | `declaration-track:806ef9527f61c1ca2b17c708ad641c3cae8db94a92403081c8e8e5becb2d4605` |
-| 2 | `theorem` | [reference_denominator_ne_zero](../../../../RealFunctions/BlaschkeFloorStatementsNamespaced.lean/declarations/reference-denominator-ne-zero.md) | 20 | `result-track:b75d4a55e6eadca18ed7099e145fb34f4787d914ba40d482ffb2c3e14cff7d19` |
-| 3 | `theorem` | [reference_denominator_normSq](../../../../RealFunctions/BlaschkeFloorStatementsNamespaced.lean/declarations/reference-denominator-normsq.md) | 28 | `result-track:0de95227dfb68006ca04106f051253d37c615f7a2eef69fc2052f15c1f97ee0a` |
-| 4 | `theorem` | [blaschke_deficit](../../../../RealFunctions/BlaschkeFloorStatementsNamespaced.lean/declarations/blaschke-deficit.md) | 35 | `result-track:dc472388d96a0d07455b3f95bdb36bedfc59f98e64e02381b20ae8699a0f63e5` |
-| 5 | `theorem` | [factor_deficit_lower](../../../../RealFunctions/BlaschkeFloorStatementsNamespaced.lean/declarations/factor-deficit-lower.md) | 47 | `result-track:244c5c9deb45f19f9b1fd2dd6c316dac421f874c5101100cc82557ba0c8c5423` |
-| 6 | `theorem` | [blaschke_floor_pos](../../../../RealFunctions/BlaschkeFloorStatementsNamespaced.lean/declarations/blaschke-floor-pos.md) | 55 | `result-track:57498e298711633da85be2980e070a6b2b657e59b26df4cf326b4890abc53a0c` |
-| 7 | `example` | [(anonymous)](../../../../RealFunctions/BlaschkeFloorStatementsNamespaced.lean/declarations/example-source-edition-2.md) | 66 | `declaration-track:25711ee737659e91f48c88514ff8f6ba2a30e008e79675ca972613e0deff6623` |
-| 8 | `example` | [(anonymous)](../../../../RealFunctions/BlaschkeFloorStatementsNamespaced.lean/declarations/example-source-edition-3.md) | 68 | `declaration-track:545b7b07a0ca20d8210ec873f0b1bf8b3178bcd6606cd8d329fb6bfc1684eb0f` |
-| 9 | `example` | [(anonymous)](../../../../RealFunctions/BlaschkeFloorStatementsNamespaced.lean/declarations/example-source-edition-6.md) | 72 | `declaration-track:fe6b151d84e075e5fa6fbed2a073ecfe599f3506b9618aea3eca3dde8e58229a` |
-| 10 | `example` | [(anonymous)](../../../../RealFunctions/BlaschkeFloorStatementsNamespaced.lean/declarations/example.md) | 76 | `declaration-track:20d71d3018a8f547671cfc65e923e2e4b5dddd6e931ac9cc68db7dcffe579aed` |
-| 11 | `example` | [(anonymous)](../../../../RealFunctions/BlaschkeFloorStatementsNamespaced.lean/declarations/example-source-edition-5.md) | 80 | `declaration-track:bc3959ce7a1976fbb1002da398feb22a8112e4ca56549074cbbc1c4d008aa9d8` |
-| 12 | `example` | [(anonymous)](../../../../RealFunctions/BlaschkeFloorStatementsNamespaced.lean/declarations/example-source-edition-4.md) | 84 | `declaration-track:a40cf093cf59080e55a3963ce05fd60ffaa14683b7940a342ad8c04ba4fc40ef` |
+| 1 | `def` | [blaschkeAtOne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BlaschkeFloorStatementsNamespaced.lean/declarations/blaschkeatone.md) | 17 | `declaration-track:806ef9527f61c1ca2b17c708ad641c3cae8db94a92403081c8e8e5becb2d4605` |
+| 2 | `theorem` | [reference_denominator_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BlaschkeFloorStatementsNamespaced.lean/declarations/reference-denominator-ne-zero.md) | 20 | `result-track:b75d4a55e6eadca18ed7099e145fb34f4787d914ba40d482ffb2c3e14cff7d19` |
+| 3 | `theorem` | [reference_denominator_normSq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BlaschkeFloorStatementsNamespaced.lean/declarations/reference-denominator-normsq.md) | 28 | `result-track:0de95227dfb68006ca04106f051253d37c615f7a2eef69fc2052f15c1f97ee0a` |
+| 4 | `theorem` | [blaschke_deficit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BlaschkeFloorStatementsNamespaced.lean/declarations/blaschke-deficit.md) | 35 | `result-track:dc472388d96a0d07455b3f95bdb36bedfc59f98e64e02381b20ae8699a0f63e5` |
+| 5 | `theorem` | [factor_deficit_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BlaschkeFloorStatementsNamespaced.lean/declarations/factor-deficit-lower.md) | 47 | `result-track:244c5c9deb45f19f9b1fd2dd6c316dac421f874c5101100cc82557ba0c8c5423` |
+| 6 | `theorem` | [blaschke_floor_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BlaschkeFloorStatementsNamespaced.lean/declarations/blaschke-floor-pos.md) | 55 | `result-track:57498e298711633da85be2980e070a6b2b657e59b26df4cf326b4890abc53a0c` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BlaschkeFloorStatementsNamespaced.lean/declarations/example-source-edition-2.md) | 66 | `declaration-track:25711ee737659e91f48c88514ff8f6ba2a30e008e79675ca972613e0deff6623` |
+| 8 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BlaschkeFloorStatementsNamespaced.lean/declarations/example-source-edition-3.md) | 68 | `declaration-track:545b7b07a0ca20d8210ec873f0b1bf8b3178bcd6606cd8d329fb6bfc1684eb0f` |
+| 9 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BlaschkeFloorStatementsNamespaced.lean/declarations/example-source-edition-6.md) | 72 | `declaration-track:fe6b151d84e075e5fa6fbed2a073ecfe599f3506b9618aea3eca3dde8e58229a` |
+| 10 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BlaschkeFloorStatementsNamespaced.lean/declarations/example.md) | 76 | `declaration-track:20d71d3018a8f547671cfc65e923e2e4b5dddd6e931ac9cc68db7dcffe579aed` |
+| 11 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BlaschkeFloorStatementsNamespaced.lean/declarations/example-source-edition-5.md) | 80 | `declaration-track:bc3959ce7a1976fbb1002da398feb22a8112e4ca56549074cbbc1c4d008aa9d8` |
+| 12 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/BlaschkeFloorStatementsNamespaced.lean/declarations/example-source-edition-4.md) | 84 | `declaration-track:a40cf093cf59080e55a3963ce05fd60ffaa14683b7940a342ad8c04ba4fc40ef` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

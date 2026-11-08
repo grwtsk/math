@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/BoxIntegralIntegrabilityContinuousOn.lean/index.md) · [Full source](../../../../FunctionalAnalysis/BoxIntegralIntegrabilityContinuousOn.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BoxIntegralIntegrabilityContinuousOn.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BoxIntegralIntegrabilityContinuousOn.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [hasIntegralIndicatorConst](../../../../FunctionalAnalysis/BoxIntegralIntegrabilityContinuousOn.lean/declarations/hasintegralindicatorconst.md) | 36 | `result-track:ad119f2846afb862df6adc006b4dd211ef833f858c6f9585c22cd13191199c14` |
-| 2 | `theorem` | [HasIntegral.of_aeEq_zero](../../../../FunctionalAnalysis/BoxIntegralIntegrabilityContinuousOn.lean/declarations/hasintegral-of-aeeq-zero.md) | 101 | `result-track:b5fa607881f454ed67e267dead10759f59f40873b7a36f97b70b6fd87313aff3` |
-| 3 | `theorem` | [HasIntegral.congr_ae](../../../../FunctionalAnalysis/BoxIntegralIntegrabilityContinuousOn.lean/declarations/hasintegral-congr-ae.md) | 156 | `result-track:951baefd61e39fcffb3ea88745e3e93dd84580a4ba8dee7c822aadab9222efbf` |
-| 4 | `theorem` | [hasBoxIntegral](../../../../FunctionalAnalysis/BoxIntegralIntegrabilityContinuousOn.lean/declarations/hasboxintegral.md) | 170 | `result-track:e9f83fd36279b64b755110bb225da0f67ec038c47d1153e3c740a3c384686dc5` |
-| 5 | `theorem` | [box_integral_eq_integral](../../../../FunctionalAnalysis/BoxIntegralIntegrabilityContinuousOn.lean/declarations/box-integral-eq-integral.md) | 184 | `result-track:11ce876787792dfff5a0ead3c4032562e610884a2358af6d3353089dc8dfe01f` |
-| 6 | `theorem` | [IntegrableOn.hasBoxIntegral](../../../../FunctionalAnalysis/BoxIntegralIntegrabilityContinuousOn.lean/declarations/integrableon-hasboxintegral.md) | 195 | `result-track:39ebe6ac0c706c084721fd0ce9fe2b120416bec2d44e7896799079815cbec99a` |
-| 7 | `theorem` | [ContinuousOn.hasBoxIntegral](../../../../FunctionalAnalysis/BoxIntegralIntegrabilityContinuousOn.lean/declarations/continuouson-hasboxintegral.md) | 302 | `result-track:4221972913e94c061b8ac1adcd8798d70d844e8e2cfa4df2ce8957a2c59c18a3` |
-| 8 | `theorem` | [AEContinuous.hasBoxIntegral](../../../../FunctionalAnalysis/BoxIntegralIntegrabilityContinuousOn.lean/declarations/aecontinuous-hasboxintegral.md) | 314 | `result-track:564ad104748cee16d6b6e2f957718a346d681f445e50d14bd0062745eb8fa4b6` |
+| 1 | `theorem` | [hasIntegralIndicatorConst](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BoxIntegralIntegrabilityContinuousOn.lean/declarations/hasintegralindicatorconst.md) | 36 | `result-track:ad119f2846afb862df6adc006b4dd211ef833f858c6f9585c22cd13191199c14` |
+| 2 | `theorem` | [HasIntegral.of_aeEq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BoxIntegralIntegrabilityContinuousOn.lean/declarations/hasintegral-of-aeeq-zero.md) | 101 | `result-track:b5fa607881f454ed67e267dead10759f59f40873b7a36f97b70b6fd87313aff3` |
+| 3 | `theorem` | [HasIntegral.congr_ae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BoxIntegralIntegrabilityContinuousOn.lean/declarations/hasintegral-congr-ae.md) | 156 | `result-track:951baefd61e39fcffb3ea88745e3e93dd84580a4ba8dee7c822aadab9222efbf` |
+| 4 | `theorem` | [hasBoxIntegral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BoxIntegralIntegrabilityContinuousOn.lean/declarations/hasboxintegral.md) | 170 | `result-track:e9f83fd36279b64b755110bb225da0f67ec038c47d1153e3c740a3c384686dc5` |
+| 5 | `theorem` | [box_integral_eq_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BoxIntegralIntegrabilityContinuousOn.lean/declarations/box-integral-eq-integral.md) | 184 | `result-track:11ce876787792dfff5a0ead3c4032562e610884a2358af6d3353089dc8dfe01f` |
+| 6 | `theorem` | [IntegrableOn.hasBoxIntegral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BoxIntegralIntegrabilityContinuousOn.lean/declarations/integrableon-hasboxintegral.md) | 195 | `result-track:39ebe6ac0c706c084721fd0ce9fe2b120416bec2d44e7896799079815cbec99a` |
+| 7 | `theorem` | [ContinuousOn.hasBoxIntegral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BoxIntegralIntegrabilityContinuousOn.lean/declarations/continuouson-hasboxintegral.md) | 302 | `result-track:4221972913e94c061b8ac1adcd8798d70d844e8e2cfa4df2ce8957a2c59c18a3` |
+| 8 | `theorem` | [AEContinuous.hasBoxIntegral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BoxIntegralIntegrabilityContinuousOn.lean/declarations/aecontinuous-hasboxintegral.md) | 314 | `result-track:564ad104748cee16d6b6e2f957718a346d681f445e50d14bd0062745eb8fa4b6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

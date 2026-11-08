@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/ParameterProfile.lean/index.md) · [Full source](../../../../FunctionalAnalysis/ParameterProfile.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ParameterProfile.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ParameterProfile.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [GeometryCapability](../../../../FunctionalAnalysis/ParameterProfile.lean/declarations/geometrycapability.md) | 7 | `declaration-track:bc51b5842f32e0cefd09d9eab33b6e669c918c536a023d2b44028fc63b693636` |
-| 2 | `def` | [GeometryCapability.hasInnerProduct](../../../../FunctionalAnalysis/ParameterProfile.lean/declarations/geometrycapability-hasinnerproduct.md) | 12 | `declaration-track:aef72e891aa9d56f8ff0f03aeb723df5a2961653b71fcd2749f6e534107f3136` |
-| 3 | `theorem` | [banach_does_not_supply_inner_product](../../../../FunctionalAnalysis/ParameterProfile.lean/declarations/banach-does-not-supply-inner-product.md) | 16 | `result-track:deb95d3da3b55fa33193a2345e64a31f9d494c7c342dcb60847983c79cc3049b` |
-| 4 | `structure` | [ParameterProfile](../../../../FunctionalAnalysis/ParameterProfile.lean/declarations/parameterprofile.md) | 19 | `declaration-track:a249e5538602741b0980f0d0c44e2410700330182f935459e19b7012017e9e6c` |
+| 1 | `inductive` | [GeometryCapability](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ParameterProfile.lean/declarations/geometrycapability.md) | 7 | `declaration-track:bc51b5842f32e0cefd09d9eab33b6e669c918c536a023d2b44028fc63b693636` |
+| 2 | `def` | [GeometryCapability.hasInnerProduct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ParameterProfile.lean/declarations/geometrycapability-hasinnerproduct.md) | 12 | `declaration-track:aef72e891aa9d56f8ff0f03aeb723df5a2961653b71fcd2749f6e534107f3136` |
+| 3 | `theorem` | [banach_does_not_supply_inner_product](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ParameterProfile.lean/declarations/banach-does-not-supply-inner-product.md) | 16 | `result-track:deb95d3da3b55fa33193a2345e64a31f9d494c7c342dcb60847983c79cc3049b` |
+| 4 | `structure` | [ParameterProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ParameterProfile.lean/declarations/parameterprofile.md) | 19 | `declaration-track:a249e5538602741b0980f0d0c44e2410700330182f935459e19b7012017e9e6c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/IndexNormalNamespacedPublic.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/IndexNormalNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IndexNormalNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IndexNormalNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [normal_of_index_eq_one](../../../../GroupTheoryAndGeneralizations/IndexNormalNamespacedPublic.lean/declarations/normal-of-index-eq-one.md) | 41 | `result-track:12f49de8e39c0e1431fd330a4973abc81d46f4c6caf12b77ff21dfdc6d6e2554` |
-| 2 | `theorem` | [normal_of_index_eq_two](../../../../GroupTheoryAndGeneralizations/IndexNormalNamespacedPublic.lean/declarations/normal-of-index-eq-two.md) | 47 | `result-track:97ddbfc5fc1c97d80afdd0427bf1ed0027c5d01cd27a29c6bb8fd7fe975e3b64` |
-| 3 | `theorem` | [normal_of_index_eq_minFac_card](../../../../GroupTheoryAndGeneralizations/IndexNormalNamespacedPublic.lean/declarations/normal-of-index-eq-minfac-card.md) | 53 | `result-track:c4fd37a4d97b24c9ef783ef4bd71c311887109cb44fbc00a6a6d260e65bc0f0b` |
+| 1 | `theorem` | [normal_of_index_eq_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IndexNormalNamespacedPublic.lean/declarations/normal-of-index-eq-one.md) | 41 | `result-track:12f49de8e39c0e1431fd330a4973abc81d46f4c6caf12b77ff21dfdc6d6e2554` |
+| 2 | `theorem` | [normal_of_index_eq_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IndexNormalNamespacedPublic.lean/declarations/normal-of-index-eq-two.md) | 47 | `result-track:97ddbfc5fc1c97d80afdd0427bf1ed0027c5d01cd27a29c6bb8fd7fe975e3b64` |
+| 3 | `theorem` | [normal_of_index_eq_minFac_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IndexNormalNamespacedPublic.lean/declarations/normal-of-index-eq-minfac-card.md) | 53 | `result-track:c4fd37a4d97b24c9ef783ef4bd71c311887109cb44fbc00a6a6d260e65bc0f0b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

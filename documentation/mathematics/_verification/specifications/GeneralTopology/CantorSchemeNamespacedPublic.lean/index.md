@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/CantorSchemeNamespacedPublic.lean/index.md) · [Full source](../../../../GeneralTopology/CantorSchemeNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CantorSchemeNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CantorSchemeNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,18 +57,18 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [inducedMap](../../../../GeneralTopology/CantorSchemeNamespacedPublic.lean/declarations/inducedmap.md) | 65 | `declaration-track:3057b2fe1cf8ae3b90b53ea0122f6cce96fda0f65b25f8b852760fa5c4718c7b` |
-| 2 | `def` | [Antitone](../../../../GeneralTopology/CantorSchemeNamespacedPublic.lean/declarations/antitone.md) | 71 | `declaration-track:c9af82b844ea1962dd5c60afe0a235b5856a80ad358944d6c56e5d17e59aef1f` |
-| 3 | `def` | [ClosureAntitone](../../../../GeneralTopology/CantorSchemeNamespacedPublic.lean/declarations/closureantitone.md) | 76 | `declaration-track:b26b9cae48a025f4b9cc1702c441221fc89447b8341064da5bc44bcab523777b` |
-| 4 | `def` | [Disjoint](../../../../GeneralTopology/CantorSchemeNamespacedPublic.lean/declarations/disjoint.md) | 80 | `declaration-track:260859b9150643ded4d74306d0736a93ccf05d920a753af3587b691552847d90` |
-| 5 | `theorem` | [map_mem](../../../../GeneralTopology/CantorSchemeNamespacedPublic.lean/declarations/map-mem.md) | 87 | `result-track:185967a9dda68cdcc27bade50dc5997e88a94c9b79c0244cc7c03d40e735ec4d` |
-| 6 | `theorem` | [ClosureAntitone.antitone](../../../../GeneralTopology/CantorSchemeNamespacedPublic.lean/declarations/closureantitone-antitone.md) | 92 | `result-track:9fcbc080f42ac8d4258669ee2ce31812914b967e54c8e47bcf7b9dffe1c8de98` |
-| 7 | `theorem` | [Antitone.closureAntitone](../../../../GeneralTopology/CantorSchemeNamespacedPublic.lean/declarations/antitone-closureantitone.md) | 95 | `result-track:19d43b8427660b604ceaa51c2c7c0c0782253ea29e817b13d2852dd6fca62893` |
-| 8 | `theorem` | [Disjoint.map_injective](../../../../GeneralTopology/CantorSchemeNamespacedPublic.lean/declarations/disjoint-map-injective.md) | 100 | `result-track:c0a9b00a8d66bf067df6150d232c7ecbca6d710aa2fa82f9a71c7ed53b999f11` |
-| 9 | `def` | [VanishingDiam](../../../../GeneralTopology/CantorSchemeNamespacedPublic.lean/declarations/vanishingdiam.md) | 127 | `declaration-track:47becb763849a0d6481ad80b1b988c40c2da886737c52f5c55ecbab5a52533df` |
-| 10 | `theorem` | [VanishingDiam.dist_lt](../../../../GeneralTopology/CantorSchemeNamespacedPublic.lean/declarations/vanishingdiam-dist-lt.md) | 132 | `result-track:80d2363702e502bb1a0c3c5a072e5c849a86d0ee8f031892102f30a4fc4e32e0` |
-| 11 | `theorem` | [VanishingDiam.map_continuous](../../../../GeneralTopology/CantorSchemeNamespacedPublic.lean/declarations/vanishingdiam-map-continuous.md) | 147 | `result-track:f6ec788ff2ba4a01d7df5636cb02d7f9deee91130af4cbc8fe7d567937a07bdd` |
-| 12 | `theorem` | [ClosureAntitone.map_of_vanishingDiam](../../../../GeneralTopology/CantorSchemeNamespacedPublic.lean/declarations/closureantitone-map-of-vanishingdiam.md) | 166 | `result-track:4958b604653af02721b2cbf1ae4ebe49532c194496d94a879062bde58456dbcf` |
+| 1 | `def` | [inducedMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CantorSchemeNamespacedPublic.lean/declarations/inducedmap.md) | 65 | `declaration-track:3057b2fe1cf8ae3b90b53ea0122f6cce96fda0f65b25f8b852760fa5c4718c7b` |
+| 2 | `def` | [Antitone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CantorSchemeNamespacedPublic.lean/declarations/antitone.md) | 71 | `declaration-track:c9af82b844ea1962dd5c60afe0a235b5856a80ad358944d6c56e5d17e59aef1f` |
+| 3 | `def` | [ClosureAntitone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CantorSchemeNamespacedPublic.lean/declarations/closureantitone.md) | 76 | `declaration-track:b26b9cae48a025f4b9cc1702c441221fc89447b8341064da5bc44bcab523777b` |
+| 4 | `def` | [Disjoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CantorSchemeNamespacedPublic.lean/declarations/disjoint.md) | 80 | `declaration-track:260859b9150643ded4d74306d0736a93ccf05d920a753af3587b691552847d90` |
+| 5 | `theorem` | [map_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CantorSchemeNamespacedPublic.lean/declarations/map-mem.md) | 87 | `result-track:185967a9dda68cdcc27bade50dc5997e88a94c9b79c0244cc7c03d40e735ec4d` |
+| 6 | `theorem` | [ClosureAntitone.antitone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CantorSchemeNamespacedPublic.lean/declarations/closureantitone-antitone.md) | 92 | `result-track:9fcbc080f42ac8d4258669ee2ce31812914b967e54c8e47bcf7b9dffe1c8de98` |
+| 7 | `theorem` | [Antitone.closureAntitone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CantorSchemeNamespacedPublic.lean/declarations/antitone-closureantitone.md) | 95 | `result-track:19d43b8427660b604ceaa51c2c7c0c0782253ea29e817b13d2852dd6fca62893` |
+| 8 | `theorem` | [Disjoint.map_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CantorSchemeNamespacedPublic.lean/declarations/disjoint-map-injective.md) | 100 | `result-track:c0a9b00a8d66bf067df6150d232c7ecbca6d710aa2fa82f9a71c7ed53b999f11` |
+| 9 | `def` | [VanishingDiam](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CantorSchemeNamespacedPublic.lean/declarations/vanishingdiam.md) | 127 | `declaration-track:47becb763849a0d6481ad80b1b988c40c2da886737c52f5c55ecbab5a52533df` |
+| 10 | `theorem` | [VanishingDiam.dist_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CantorSchemeNamespacedPublic.lean/declarations/vanishingdiam-dist-lt.md) | 132 | `result-track:80d2363702e502bb1a0c3c5a072e5c849a86d0ee8f031892102f30a4fc4e32e0` |
+| 11 | `theorem` | [VanishingDiam.map_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CantorSchemeNamespacedPublic.lean/declarations/vanishingdiam-map-continuous.md) | 147 | `result-track:f6ec788ff2ba4a01d7df5636cb02d7f9deee91130af4cbc8fe7d567937a07bdd` |
+| 12 | `theorem` | [ClosureAntitone.map_of_vanishingDiam](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CantorSchemeNamespacedPublic.lean/declarations/closureantitone-map-of-vanishingdiam.md) | 166 | `result-track:4958b604653af02721b2cbf1ae4ebe49532c194496d94a879062bde58456dbcf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

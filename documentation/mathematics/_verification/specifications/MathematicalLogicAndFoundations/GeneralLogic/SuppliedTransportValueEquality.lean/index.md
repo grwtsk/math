@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuppliedTransportValueEquality.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuppliedTransportValueEquality.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuppliedTransportValueEquality.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuppliedTransportValueEquality.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [rodgers_tao_transport_preserves_euler_characteristic](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuppliedTransportValueEquality.lean/declarations/rodgers-tao-transport-preserves-euler-characteristic.md) | 33 | `result-track:3145b171c74db1d8d5cbc29a2c9a52ca7b2f06f479444c30dc84d10f768682b2` |
+| 1 | `theorem` | [rodgers_tao_transport_preserves_euler_characteristic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuppliedTransportValueEquality.lean/declarations/rodgers-tao-transport-preserves-euler-characteristic.md) | 33 | `result-track:3145b171c74db1d8d5cbc29a2c9a52ca7b2f06f479444c30dc84d10f768682b2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

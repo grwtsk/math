@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FoundryPhaseAdvanceEdition1.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FoundryPhaseAdvanceEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FoundryPhaseAdvanceEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FoundryPhaseAdvanceEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,8 +60,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FoundryPhaseAdvanceCertificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FoundryPhaseAdvanceEdition1.lean/declarations/foundryphaseadvancecertificate.md) | 18 | `declaration-track:b09710a781d3720dd939afd1b3e74fd45623103093adffff153cc0632dd4bbdf` |
-| 2 | `theorem` | [foundry_phase_advance_sound](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FoundryPhaseAdvanceEdition1.lean/declarations/foundry-phase-advance-sound.md) | 36 | `result-track:2f84bab1cece99a917e78dba2a5e92333d724a9f5366101d0229b390972a2d7d` |
+| 1 | `structure` | [FoundryPhaseAdvanceCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FoundryPhaseAdvanceEdition1.lean/declarations/foundryphaseadvancecertificate.md) | 18 | `declaration-track:b09710a781d3720dd939afd1b3e74fd45623103093adffff153cc0632dd4bbdf` |
+| 2 | `theorem` | [foundry_phase_advance_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FoundryPhaseAdvanceEdition1.lean/declarations/foundry-phase-advance-sound.md) | 36 | `result-track:2f84bab1cece99a917e78dba2a5e92333d724a9f5366101d0229b390972a2d7d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

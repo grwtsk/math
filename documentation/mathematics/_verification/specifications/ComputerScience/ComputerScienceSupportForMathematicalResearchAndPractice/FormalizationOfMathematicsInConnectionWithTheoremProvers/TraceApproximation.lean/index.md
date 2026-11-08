@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TraceApproximation.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TraceApproximation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TraceApproximation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TraceApproximation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [low_discrepancy_trace_error_bound](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TraceApproximation.lean/declarations/low-discrepancy-trace-error-bound.md) | 9 | `result-track:be1373e76d2e8f104177e33cee3b30ae97fb21ef64d29ed2e2cbbdbacefcceb9` |
-| 2 | `theorem` | [sampled_trace_is_not_reclassified_as_canonical](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TraceApproximation.lean/declarations/sampled-trace-is-not-reclassified-as-canonical.md) | 15 | `result-track:73465e010ed11faedea8bcd82186b292bda0863104dd35a6d64b4dc8bd5c1716` |
+| 1 | `theorem` | [low_discrepancy_trace_error_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TraceApproximation.lean/declarations/low-discrepancy-trace-error-bound.md) | 9 | `result-track:be1373e76d2e8f104177e33cee3b30ae97fb21ef64d29ed2e2cbbdbacefcceb9` |
+| 2 | `theorem` | [sampled_trace_is_not_reclassified_as_canonical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TraceApproximation.lean/declarations/sampled-trace-is-not-reclassified-as-canonical.md) | 15 | `result-track:73465e010ed11faedea8bcd82186b292bda0863104dd35a6d64b4dc8bd5c1716` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

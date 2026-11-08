@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ScopeFixturesNamespacedEdition10.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ScopeFixturesNamespacedEdition10.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ScopeFixturesNamespacedEdition10.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ScopeFixturesNamespacedEdition10.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [boundary_mass_correction_required](../../../../MeasureAndIntegration/ScopeFixturesNamespacedEdition10.lean/declarations/boundary-mass-correction-required.md) | 25 | `result-track:a3594b9fb99f31edb734bc477ca69243e22c1d9fb8f436f54e454913eceeb670` |
-| 2 | `theorem` | [actual_preprime_mass_not_balanced](../../../../MeasureAndIntegration/ScopeFixturesNamespacedEdition10.lean/declarations/actual-preprime-mass-not-balanced.md) | 35 | `result-track:e6de381509260cb5b962f97f2989bc248339ee660202b32eea347d68b74bb2d9` |
-| 3 | `theorem` | [actual_opposite_signed_source_integrals](../../../../MeasureAndIntegration/ScopeFixturesNamespacedEdition10.lean/declarations/actual-opposite-signed-source-integrals.md) | 48 | `result-track:731ddd942c0e8d552ab7ab8d013e1765ea60bcd7c61e29252b25b6bdf2928719` |
-| 4 | `theorem` | [actual_bounded_density_increases_signed_integral](../../../../MeasureAndIntegration/ScopeFixturesNamespacedEdition10.lean/declarations/actual-bounded-density-increases-signed-integral.md) | 62 | `result-track:51d5f2962f4b9d661c4c743e7e5e0f176cf45452bd6d4dcc6d4c17eb2c89d440` |
-| 5 | `theorem` | [actual_negative_axis_density](../../../../MeasureAndIntegration/ScopeFixturesNamespacedEdition10.lean/declarations/actual-negative-axis-density.md) | 73 | `result-track:b12e80b3a42d77df1087ba48fe9ac33131a5502bf99bd0939884713d4e6a232d` |
+| 1 | `theorem` | [boundary_mass_correction_required](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ScopeFixturesNamespacedEdition10.lean/declarations/boundary-mass-correction-required.md) | 25 | `result-track:a3594b9fb99f31edb734bc477ca69243e22c1d9fb8f436f54e454913eceeb670` |
+| 2 | `theorem` | [actual_preprime_mass_not_balanced](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ScopeFixturesNamespacedEdition10.lean/declarations/actual-preprime-mass-not-balanced.md) | 35 | `result-track:e6de381509260cb5b962f97f2989bc248339ee660202b32eea347d68b74bb2d9` |
+| 3 | `theorem` | [actual_opposite_signed_source_integrals](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ScopeFixturesNamespacedEdition10.lean/declarations/actual-opposite-signed-source-integrals.md) | 48 | `result-track:731ddd942c0e8d552ab7ab8d013e1765ea60bcd7c61e29252b25b6bdf2928719` |
+| 4 | `theorem` | [actual_bounded_density_increases_signed_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ScopeFixturesNamespacedEdition10.lean/declarations/actual-bounded-density-increases-signed-integral.md) | 62 | `result-track:51d5f2962f4b9d661c4c743e7e5e0f176cf45452bd6d4dcc6d4c17eb2c89d440` |
+| 5 | `theorem` | [actual_negative_axis_density](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ScopeFixturesNamespacedEdition10.lean/declarations/actual-negative-axis-density.md) | 73 | `result-track:b12e80b3a42d77df1087ba48fe9ac33131a5502bf99bd0939884713d4e6a232d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../AlgebraicTopology/HomotopyTheory/RealPolygonClock.lean/index.md) · [Full source](../../../../../AlgebraicTopology/HomotopyTheory/RealPolygonClock.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomotopyTheory/RealPolygonClock.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomotopyTheory/RealPolygonClock.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Topology.Homotopy.FiniteConcatenation`](../../../../../GeneralTopology/FiniteConcatenation.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Topology.Homotopy.FiniteConcatenation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FiniteConcatenation.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,17 +57,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [blend](../../../../../AlgebraicTopology/HomotopyTheory/RealPolygonClock.lean/declarations/blend.md) | 24 | `declaration-track:7ccd790915f0149f8def5f81f889ee169afd11aaf429f522c0ea64dfffa94a99` |
-| 2 | `def` | [vertex](../../../../../AlgebraicTopology/HomotopyTheory/RealPolygonClock.lean/declarations/vertex.md) | 26 | `declaration-track:647722746de39cb30d3925233560ee2f3232b4cbdeeabfd51cf4b13566f01652` |
-| 3 | `def` | [cell](../../../../../AlgebraicTopology/HomotopyTheory/RealPolygonClock.lean/declarations/cell.md) | 28 | `declaration-track:f0bc63c022c60143ac8d2a904d3b075b1852ec02517dfdd7ab2364f7f37e286e` |
-| 4 | `def` | [clock](../../../../../AlgebraicTopology/HomotopyTheory/RealPolygonClock.lean/declarations/clock.md) | 34 | `declaration-track:16ab647371181d2b17746310771d04c7313c755feb570686234cad35523c5fb7` |
-| 5 | `theorem` | [start](../../../../../AlgebraicTopology/HomotopyTheory/RealPolygonClock.lean/declarations/start.md) | 39 | `result-track:0ec81b2bfe18968431be252bf6766e7e76f06f1b95c52561599710d564583ed9` |
-| 6 | `theorem` | [finish](../../../../../AlgebraicTopology/HomotopyTheory/RealPolygonClock.lean/declarations/finish.md) | 42 | `result-track:52086e970e9294754a3f4a3d127ba112bd1b16fba951ffb9955fb7f8b07236c0` |
-| 7 | `theorem` | [blend_mem](../../../../../AlgebraicTopology/HomotopyTheory/RealPolygonClock.lean/declarations/blend-mem.md) | 45 | `result-track:16225d4d3e425c86860065235ce6a88d36d1083c34de6b190c7808e790b84bc5` |
-| 8 | `theorem` | [mem_interval](../../../../../AlgebraicTopology/HomotopyTheory/RealPolygonClock.lean/declarations/mem-interval.md) | 56 | `result-track:c813f1f27951c7677a7a6193a8a11bc0fed600a7acd270c1bda359e57fcbc6fe` |
-| 9 | `theorem` | [bracket](../../../../../AlgebraicTopology/HomotopyTheory/RealPolygonClock.lean/declarations/bracket.md) | 69 | `result-track:67f70acdf7f26ba918619245c62fab1436b23b6df8e44b65ef29bb2a7d79fa75` |
-| 10 | `theorem` | [exists_blend](../../../../../AlgebraicTopology/HomotopyTheory/RealPolygonClock.lean/declarations/exists-blend.md) | 82 | `result-track:e4b3bfbb8088f22220259cc7c714cb38ae3907afb7b8222fc364319a4db67606` |
-| 11 | `theorem` | [covers](../../../../../AlgebraicTopology/HomotopyTheory/RealPolygonClock.lean/declarations/covers.md) | 98 | `result-track:0a4d13edf8aafaafcfba75f20aba8ae22d7f8741285b35985d57911f2b1841fd` |
+| 1 | `def` | [blend](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomotopyTheory/RealPolygonClock.lean/declarations/blend.md) | 24 | `declaration-track:7ccd790915f0149f8def5f81f889ee169afd11aaf429f522c0ea64dfffa94a99` |
+| 2 | `def` | [vertex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomotopyTheory/RealPolygonClock.lean/declarations/vertex.md) | 26 | `declaration-track:647722746de39cb30d3925233560ee2f3232b4cbdeeabfd51cf4b13566f01652` |
+| 3 | `def` | [cell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomotopyTheory/RealPolygonClock.lean/declarations/cell.md) | 28 | `declaration-track:f0bc63c022c60143ac8d2a904d3b075b1852ec02517dfdd7ab2364f7f37e286e` |
+| 4 | `def` | [clock](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomotopyTheory/RealPolygonClock.lean/declarations/clock.md) | 34 | `declaration-track:16ab647371181d2b17746310771d04c7313c755feb570686234cad35523c5fb7` |
+| 5 | `theorem` | [start](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomotopyTheory/RealPolygonClock.lean/declarations/start.md) | 39 | `result-track:0ec81b2bfe18968431be252bf6766e7e76f06f1b95c52561599710d564583ed9` |
+| 6 | `theorem` | [finish](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomotopyTheory/RealPolygonClock.lean/declarations/finish.md) | 42 | `result-track:52086e970e9294754a3f4a3d127ba112bd1b16fba951ffb9955fb7f8b07236c0` |
+| 7 | `theorem` | [blend_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomotopyTheory/RealPolygonClock.lean/declarations/blend-mem.md) | 45 | `result-track:16225d4d3e425c86860065235ce6a88d36d1083c34de6b190c7808e790b84bc5` |
+| 8 | `theorem` | [mem_interval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomotopyTheory/RealPolygonClock.lean/declarations/mem-interval.md) | 56 | `result-track:c813f1f27951c7677a7a6193a8a11bc0fed600a7acd270c1bda359e57fcbc6fe` |
+| 9 | `theorem` | [bracket](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomotopyTheory/RealPolygonClock.lean/declarations/bracket.md) | 69 | `result-track:67f70acdf7f26ba918619245c62fab1436b23b6df8e44b65ef29bb2a7d79fa75` |
+| 10 | `theorem` | [exists_blend](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomotopyTheory/RealPolygonClock.lean/declarations/exists-blend.md) | 82 | `result-track:e4b3bfbb8088f22220259cc7c714cb38ae3907afb7b8222fc364319a4db67606` |
+| 11 | `theorem` | [covers](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/HomotopyTheory/RealPolygonClock.lean/declarations/covers.md) | 98 | `result-track:0a4d13edf8aafaafcfba75f20aba8ae22d7f8741285b35985d57911f2b1841fd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

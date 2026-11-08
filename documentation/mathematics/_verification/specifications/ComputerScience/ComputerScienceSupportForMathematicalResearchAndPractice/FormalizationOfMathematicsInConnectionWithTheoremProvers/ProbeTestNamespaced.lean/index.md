@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ProbeTestNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ProbeTestNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ProbeTestNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ProbeTestNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [atlasHasOmission](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ProbeTestNamespaced.lean/declarations/atlashasomission.md) | 19 | `declaration-track:0c24561896bd80d724202b2681b92c4f19b61fa85852bde59e5b7fe817852fc2` |
-| 2 | `def` | [atlasCanonicalType](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ProbeTestNamespaced.lean/declarations/atlascanonicaltype.md) | 21 | `declaration-track:e6b9c3ec1d95d1e2e2b7dfeca811dbf8edb98f2a2414ae1c18b9d292cd1794ae` |
-| 3 | `def` | [atlasConstantKind](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ProbeTestNamespaced.lean/declarations/atlasconstantkind.md) | 31 | `declaration-track:73497bc92c10584c2e449825ae5ca791f0b24d8174f8b6150b5840be07d96745` |
+| 1 | `def` | [atlasHasOmission](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ProbeTestNamespaced.lean/declarations/atlashasomission.md) | 19 | `declaration-track:0c24561896bd80d724202b2681b92c4f19b61fa85852bde59e5b7fe817852fc2` |
+| 2 | `def` | [atlasCanonicalType](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ProbeTestNamespaced.lean/declarations/atlascanonicaltype.md) | 21 | `declaration-track:e6b9c3ec1d95d1e2e2b7dfeca811dbf8edb98f2a2414ae1c18b9d292cd1794ae` |
+| 3 | `def` | [atlasConstantKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ProbeTestNamespaced.lean/declarations/atlasconstantkind.md) | 31 | `declaration-track:73497bc92c10584c2e449825ae5ca791f0b24d8174f8b6150b5840be07d96745` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AssertHypothesesNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AssertHypothesesNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AssertHypothesesNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AssertHypothesesNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Hypothesis'](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AssertHypothesesNamespaced.lean/declarations/hypothesis.md) | 24 | `declaration-track:d8fb65ed49494f6fc9f3586117adb47c58cf2cff8b2e4a6984f8fbdfcf9f5b93` |
-| 2 | `def` | [Assert Hypotheses Namespaced](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AssertHypothesesNamespaced.lean/declarations/root-grwtsk-foundationslogicandtypetheory-formallibraryengineering-hypot.md) | 34 | `declaration-track:acdba7eef03d8fa7e23514ff8789eee23ae2904163aa763d58e09ba71fdde5be` |
+| 1 | `structure` | [Hypothesis'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AssertHypothesesNamespaced.lean/declarations/hypothesis.md) | 24 | `declaration-track:d8fb65ed49494f6fc9f3586117adb47c58cf2cff8b2e4a6984f8fbdfcf9f5b93` |
+| 2 | `def` | [Assert Hypotheses Namespaced](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AssertHypothesesNamespaced.lean/declarations/root-grwtsk-foundationslogicandtypetheory-formallibraryengineering-hypot.md) | 34 | `declaration-track:acdba7eef03d8fa7e23514ff8789eee23ae2904163aa763d58e09ba71fdde5be` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

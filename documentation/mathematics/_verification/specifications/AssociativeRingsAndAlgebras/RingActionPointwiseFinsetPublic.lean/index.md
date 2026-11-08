@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/RingActionPointwiseFinsetPublic.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/RingActionPointwiseFinsetPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingActionPointwiseFinsetPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingActionPointwiseFinsetPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [zero_mem_smul_finset_iff](../../../../AssociativeRingsAndAlgebras/RingActionPointwiseFinsetPublic.lean/declarations/zero-mem-smul-finset-iff.md) | 36 | `result-track:ed15855f142d3a0b031cab625c0b700d68ea97e6c796008e5d66c70e5c072413` |
-| 2 | `lemma` | [zero_mem_smul_iff](../../../../AssociativeRingsAndAlgebras/RingActionPointwiseFinsetPublic.lean/declarations/zero-mem-smul-iff.md) | 39 | `result-track:55e378f31f51b7a98ed7815bc8e40fb23b92e7c21bd53bbd19c7eeb1486a12f3` |
-| 3 | `lemma` | [neg_smul_finset](../../../../AssociativeRingsAndAlgebras/RingActionPointwiseFinsetPublic.lean/declarations/neg-smul-finset.md) | 47 | `result-track:c0e63081bf1e429486ebffbcb194bb4476e023d772f53435ef10084deb71c34b` |
-| 4 | `lemma` | [neg_smul](../../../../AssociativeRingsAndAlgebras/RingActionPointwiseFinsetPublic.lean/declarations/neg-smul.md) | 50 | `result-track:c993dc5e9f23d0fa18aa2a670d329c6474a4eb1af860d6d8eb1c048975c29603` |
+| 1 | `lemma` | [zero_mem_smul_finset_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingActionPointwiseFinsetPublic.lean/declarations/zero-mem-smul-finset-iff.md) | 36 | `result-track:ed15855f142d3a0b031cab625c0b700d68ea97e6c796008e5d66c70e5c072413` |
+| 2 | `lemma` | [zero_mem_smul_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingActionPointwiseFinsetPublic.lean/declarations/zero-mem-smul-iff.md) | 39 | `result-track:55e378f31f51b7a98ed7815bc8e40fb23b92e7c21bd53bbd19c7eeb1486a12f3` |
+| 3 | `lemma` | [neg_smul_finset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingActionPointwiseFinsetPublic.lean/declarations/neg-smul-finset.md) | 47 | `result-track:c0e63081bf1e429486ebffbcb194bb4476e023d772f53435ef10084deb71c34b` |
+| 4 | `lemma` | [neg_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingActionPointwiseFinsetPublic.lean/declarations/neg-smul.md) | 50 | `result-track:c993dc5e9f23d0fa18aa2a670d329c6474a4eb1af860d6d8eb1c048975c29603` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

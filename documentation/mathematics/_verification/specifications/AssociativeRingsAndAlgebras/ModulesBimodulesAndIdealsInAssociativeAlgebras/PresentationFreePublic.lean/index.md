@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/PresentationFreePublic.lean/index.md) · [Full source](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/PresentationFreePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/PresentationFreePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/PresentationFreePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [solutionFinsupp](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/PresentationFreePublic.lean/declarations/solutionfinsupp.md) | 39 | `declaration-track:f3a2b6688cffbf434113c25fcd15df12234de733fc5ba09a102e9e1948da5ad9` |
-| 2 | `def` | [solutionFinsupp.isPresentationCore](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/PresentationFreePublic.lean/declarations/solutionfinsupp-ispresentationcore.md) | 46 | `declaration-track:258cda69fa1a14ee8f224fc58930eb3ee4e452f12cd32a016b0ec4e636fa29af` |
-| 3 | `lemma` | [solutionFinsupp_isPresentation](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/PresentationFreePublic.lean/declarations/solutionfinsupp-ispresentation.md) | 52 | `result-track:1b66019d77d05d0fa264ced6556b243f181efe765e3607af94dd57f4c3cd0026` |
-| 4 | `lemma` | [Solution.IsPresentation.free](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/PresentationFreePublic.lean/declarations/solution-ispresentation-free.md) | 58 | `result-track:d64a1330f06f453fa89a34fef412b23714831e4cb4ebb82f8bf0993cdbd81297` |
-| 5 | `def` | [presentationFinsupp](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/PresentationFreePublic.lean/declarations/presentationfinsupp.md) | 71 | `declaration-track:5f7f99a679d69dbfc6d200e07500844d6ac77d0c869b8134de34b07cd82728d8` |
-| 6 | `lemma` | [free_iff_exists_presentation](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/PresentationFreePublic.lean/declarations/free-iff-exists-presentation.md) | 80 | `result-track:5e0e51552f78578f2ef7886f7f59378d7b7e88695be0b9a8fab3982d5abce624` |
+| 1 | `def` | [solutionFinsupp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/PresentationFreePublic.lean/declarations/solutionfinsupp.md) | 39 | `declaration-track:f3a2b6688cffbf434113c25fcd15df12234de733fc5ba09a102e9e1948da5ad9` |
+| 2 | `def` | [solutionFinsupp.isPresentationCore](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/PresentationFreePublic.lean/declarations/solutionfinsupp-ispresentationcore.md) | 46 | `declaration-track:258cda69fa1a14ee8f224fc58930eb3ee4e452f12cd32a016b0ec4e636fa29af` |
+| 3 | `lemma` | [solutionFinsupp_isPresentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/PresentationFreePublic.lean/declarations/solutionfinsupp-ispresentation.md) | 52 | `result-track:1b66019d77d05d0fa264ced6556b243f181efe765e3607af94dd57f4c3cd0026` |
+| 4 | `lemma` | [Solution.IsPresentation.free](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/PresentationFreePublic.lean/declarations/solution-ispresentation-free.md) | 58 | `result-track:d64a1330f06f453fa89a34fef412b23714831e4cb4ebb82f8bf0993cdbd81297` |
+| 5 | `def` | [presentationFinsupp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/PresentationFreePublic.lean/declarations/presentationfinsupp.md) | 71 | `declaration-track:5f7f99a679d69dbfc6d200e07500844d6ac77d0c869b8134de34b07cd82728d8` |
+| 6 | `lemma` | [free_iff_exists_presentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/PresentationFreePublic.lean/declarations/free-iff-exists-presentation.md) | 80 | `result-track:5e0e51552f78578f2ef7886f7f59378d7b7e88695be0b9a8fab3982d5abce624` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

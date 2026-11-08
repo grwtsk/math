@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/Budget.lean/index.md) · [Full source](../../../../Combinatorics/Budget.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Budget.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Budget.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TraversalBudget](../../../../Combinatorics/Budget.lean/declarations/traversalbudget.md) | 13 | `declaration-track:19999271883b0389881a74412efb6fa1b51b4ef8f075180785cdbf872aea1352` |
-| 2 | `structure` | [TraversalUsage](../../../../Combinatorics/Budget.lean/declarations/traversalusage.md) | 23 | `declaration-track:2fdffdb25fceedd53c022040179961cd25726ed8edd9a72a0bb977d2b026537b` |
-| 3 | `def` | [TraversalUsage.zero](../../../../Combinatorics/Budget.lean/declarations/traversalusage-zero.md) | 33 | `declaration-track:7602810cc26bbd4b63ccfc0408d700b7f06cad70d96057bc1c63eaee9a0913b6` |
-| 4 | `def` | [WithinBudget](../../../../Combinatorics/Budget.lean/declarations/withinbudget.md) | 42 | `declaration-track:0ab70b63701f69c861f276698bca8ebbe699286f35a931b85c7b7d899a6cfb56` |
-| 5 | `instance` | [(anonymous)](../../../../Combinatorics/Budget.lean/declarations/instance.md) | 54 | `declaration-track:46647e67f7365990eab378e28ea924d49fa6c40693a0ddd0b917288ee1ba2425` |
-| 6 | `inductive` | [BudgetDimension](../../../../Combinatorics/Budget.lean/declarations/budgetdimension.md) | 62 | `declaration-track:3db151cee119d86e32270debea96d12ec011a05cb582b5e47639f8bd9d7393d8` |
-| 7 | `def` | [BudgetDimension.exceeded](../../../../Combinatorics/Budget.lean/declarations/budgetdimension-exceeded.md) | 72 | `declaration-track:590cc10c76f1d18f99511a36b97df784542443369beccd8f9c665de0dbf0bd9e` |
-| 8 | `def` | [exceededDimensions](../../../../Combinatorics/Budget.lean/declarations/exceededdimensions.md) | 101 | `declaration-track:987b10c9933d3550226d6a49832bc14b97ae7b51a936ddd0c2ba02eca5e1a605` |
-| 9 | `theorem` | [withinBudget_iff_no_exceeded](../../../../Combinatorics/Budget.lean/declarations/withinbudget-iff-no-exceeded.md) | 108 | `result-track:a75e3b6ccfbbe82f3a12c0619d8cc41b9af716af0b48c6a9ba510c2d9c2baade` |
-| 10 | `def` | [UsageMonotone](../../../../Combinatorics/Budget.lean/declarations/usagemonotone.md) | 164 | `declaration-track:9953150e7ed2f9973a928e3d9f2ad654691a8e5cef53a0821077e45ca7cd5133` |
+| 1 | `structure` | [TraversalBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Budget.lean/declarations/traversalbudget.md) | 13 | `declaration-track:19999271883b0389881a74412efb6fa1b51b4ef8f075180785cdbf872aea1352` |
+| 2 | `structure` | [TraversalUsage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Budget.lean/declarations/traversalusage.md) | 23 | `declaration-track:2fdffdb25fceedd53c022040179961cd25726ed8edd9a72a0bb977d2b026537b` |
+| 3 | `def` | [TraversalUsage.zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Budget.lean/declarations/traversalusage-zero.md) | 33 | `declaration-track:7602810cc26bbd4b63ccfc0408d700b7f06cad70d96057bc1c63eaee9a0913b6` |
+| 4 | `def` | [WithinBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Budget.lean/declarations/withinbudget.md) | 42 | `declaration-track:0ab70b63701f69c861f276698bca8ebbe699286f35a931b85c7b7d899a6cfb56` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Budget.lean/declarations/instance.md) | 54 | `declaration-track:46647e67f7365990eab378e28ea924d49fa6c40693a0ddd0b917288ee1ba2425` |
+| 6 | `inductive` | [BudgetDimension](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Budget.lean/declarations/budgetdimension.md) | 62 | `declaration-track:3db151cee119d86e32270debea96d12ec011a05cb582b5e47639f8bd9d7393d8` |
+| 7 | `def` | [BudgetDimension.exceeded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Budget.lean/declarations/budgetdimension-exceeded.md) | 72 | `declaration-track:590cc10c76f1d18f99511a36b97df784542443369beccd8f9c665de0dbf0bd9e` |
+| 8 | `def` | [exceededDimensions](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Budget.lean/declarations/exceededdimensions.md) | 101 | `declaration-track:987b10c9933d3550226d6a49832bc14b97ae7b51a936ddd0c2ba02eca5e1a605` |
+| 9 | `theorem` | [withinBudget_iff_no_exceeded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Budget.lean/declarations/withinbudget-iff-no-exceeded.md) | 108 | `result-track:a75e3b6ccfbbe82f3a12c0619d8cc41b9af716af0b48c6a9ba510c2d9c2baade` |
+| 10 | `def` | [UsageMonotone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Budget.lean/declarations/usagemonotone.md) | 164 | `declaration-track:9953150e7ed2f9973a928e3d9f2ad654691a8e5cef53a0821077e45ca7cd5133` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

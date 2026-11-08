@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/FiveModeFiniteTailBudgetNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/FiveModeFiniteTailBudgetNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiveModeFiniteTailBudgetNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiveModeFiniteTailBudgetNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [rationalCountCap](../../../../CommutativeAlgebra/FiveModeFiniteTailBudgetNamespaced.lean/declarations/rationalcountcap.md) | 25 | `declaration-track:57f047039f9a77278623498196bd1c6d6d171cde419c1b4952e15f6403a96c83` |
-| 2 | `def` | [rationalSourceCap](../../../../CommutativeAlgebra/FiveModeFiniteTailBudgetNamespaced.lean/declarations/rationalsourcecap.md) | 28 | `declaration-track:2ee14c44a1fb68938ad93de99f68ca21f20d1ebf42eed9f052dc2a5a143e2940` |
-| 3 | `theorem` | [source_polynomial_budget_le_385](../../../../CommutativeAlgebra/FiveModeFiniteTailBudgetNamespaced.lean/declarations/source-polynomial-budget-le-385.md) | 32 | `result-track:d6e954fbf0ee449179809b2c0656bd7ef97fbb6fc24c413d0fd85874c17c6d46` |
-| 4 | `theorem` | [original_normalization_ge_limit](../../../../CommutativeAlgebra/FiveModeFiniteTailBudgetNamespaced.lean/declarations/original-normalization-ge-limit.md) | 41 | `result-track:52dbaa09c4b97820a41fcbbdb8f37978c6118c74f2f9653e5343000df068125d` |
-| 5 | `theorem` | [source_absolute_tail_constant_le_rational_cap](../../../../CommutativeAlgebra/FiveModeFiniteTailBudgetNamespaced.lean/declarations/source-absolute-tail-constant-le-rational-cap.md) | 50 | `result-track:b8a9eecb41185e9153050dac81c2f063ffe301eddb0247e0e26cb3f954eac6b4` |
-| 6 | `theorem` | [rational_tail_cap_eq](../../../../CommutativeAlgebra/FiveModeFiniteTailBudgetNamespaced.lean/declarations/rational-tail-cap-eq.md) | 79 | `result-track:ba795bbe918d8773ee79ff0fdb34048701c115ac7e5f34e624ccf19680fc46a9` |
-| 7 | `theorem` | [actual_strict_tail_certificate_of_source_and_count](../../../../CommutativeAlgebra/FiveModeFiniteTailBudgetNamespaced.lean/declarations/actual-strict-tail-certificate-of-source-and-count.md) | 86 | `result-track:56d987342497b767f6d40ad3fcc57fe5c7e5a2ac9c7cb68c21def3588bb34745` |
+| 1 | `def` | [rationalCountCap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiveModeFiniteTailBudgetNamespaced.lean/declarations/rationalcountcap.md) | 25 | `declaration-track:57f047039f9a77278623498196bd1c6d6d171cde419c1b4952e15f6403a96c83` |
+| 2 | `def` | [rationalSourceCap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiveModeFiniteTailBudgetNamespaced.lean/declarations/rationalsourcecap.md) | 28 | `declaration-track:2ee14c44a1fb68938ad93de99f68ca21f20d1ebf42eed9f052dc2a5a143e2940` |
+| 3 | `theorem` | [source_polynomial_budget_le_385](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiveModeFiniteTailBudgetNamespaced.lean/declarations/source-polynomial-budget-le-385.md) | 32 | `result-track:d6e954fbf0ee449179809b2c0656bd7ef97fbb6fc24c413d0fd85874c17c6d46` |
+| 4 | `theorem` | [original_normalization_ge_limit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiveModeFiniteTailBudgetNamespaced.lean/declarations/original-normalization-ge-limit.md) | 41 | `result-track:52dbaa09c4b97820a41fcbbdb8f37978c6118c74f2f9653e5343000df068125d` |
+| 5 | `theorem` | [source_absolute_tail_constant_le_rational_cap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiveModeFiniteTailBudgetNamespaced.lean/declarations/source-absolute-tail-constant-le-rational-cap.md) | 50 | `result-track:b8a9eecb41185e9153050dac81c2f063ffe301eddb0247e0e26cb3f954eac6b4` |
+| 6 | `theorem` | [rational_tail_cap_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiveModeFiniteTailBudgetNamespaced.lean/declarations/rational-tail-cap-eq.md) | 79 | `result-track:ba795bbe918d8773ee79ff0fdb34048701c115ac7e5f34e624ccf19680fc46a9` |
+| 7 | `theorem` | [actual_strict_tail_certificate_of_source_and_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiveModeFiniteTailBudgetNamespaced.lean/declarations/actual-strict-tail-certificate-of-source-and-count.md) | 86 | `result-track:56d987342497b767f6d40ad3fcc57fe5c7e5a2ac9c7cb68c21def3588bb34745` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

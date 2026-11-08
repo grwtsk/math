@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/VectorZipNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/VectorZipNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/VectorZipNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/VectorZipNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [zipWith](../../../../../../ComputerScience/TheoryOfData/DataStructures/VectorZipNamespaced.lean/declarations/zipwith.md) | 29 | `declaration-track:4de1ac2dc12fbd60c9bd97ccf3544e9550af23fa6be08d56ae2ebed524843458` |
-| 2 | `theorem` | [zipWith_toList](../../../../../../ComputerScience/TheoryOfData/DataStructures/VectorZipNamespaced.lean/declarations/zipwith-tolist.md) | 32 | `result-track:f0c60ea38f3c18c9ade1a812a6b888709e0fb24810a00280d0860163f4503890` |
-| 3 | `theorem` | [zipWith_get](../../../../../../ComputerScience/TheoryOfData/DataStructures/VectorZipNamespaced.lean/declarations/zipwith-get.md) | 37 | `result-track:62f6a8f46bae4d614bd4aaf4700de600914a10eb89459777047876884ec46942` |
-| 4 | `theorem` | [zipWith_tail](../../../../../../ComputerScience/TheoryOfData/DataStructures/VectorZipNamespaced.lean/declarations/zipwith-tail.md) | 43 | `result-track:1819e3693ee7d6bd5d6f8010e81b1e5e7c8beed99cfac3236849001d2d3e90dd` |
-| 5 | `theorem` | [prod_mul_prod_eq_prod_zipWith](../../../../../../ComputerScience/TheoryOfData/DataStructures/VectorZipNamespaced.lean/declarations/prod-mul-prod-eq-prod-zipwith.md) | 49 | `result-track:d170afcc77f66af20fba277065973c74e712d9af7e84cf573c1e14811cdd4ecf` |
+| 1 | `def` | [zipWith](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/VectorZipNamespaced.lean/declarations/zipwith.md) | 29 | `declaration-track:4de1ac2dc12fbd60c9bd97ccf3544e9550af23fa6be08d56ae2ebed524843458` |
+| 2 | `theorem` | [zipWith_toList](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/VectorZipNamespaced.lean/declarations/zipwith-tolist.md) | 32 | `result-track:f0c60ea38f3c18c9ade1a812a6b888709e0fb24810a00280d0860163f4503890` |
+| 3 | `theorem` | [zipWith_get](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/VectorZipNamespaced.lean/declarations/zipwith-get.md) | 37 | `result-track:62f6a8f46bae4d614bd4aaf4700de600914a10eb89459777047876884ec46942` |
+| 4 | `theorem` | [zipWith_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/VectorZipNamespaced.lean/declarations/zipwith-tail.md) | 43 | `result-track:1819e3693ee7d6bd5d6f8010e81b1e5e7c8beed99cfac3236849001d2d3e90dd` |
+| 5 | `theorem` | [prod_mul_prod_eq_prod_zipWith](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/VectorZipNamespaced.lean/declarations/prod-mul-prod-eq-prod-zipwith.md) | 49 | `result-track:d170afcc77f66af20fba277065973c74e712d9af7e84cf573c1e14811cdd4ecf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

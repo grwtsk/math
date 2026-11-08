@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/BicomplexNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/BicomplexNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BicomplexNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BicomplexNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FiniteBicomplex](../../../../FunctionalAnalysis/BicomplexNamespaced.lean/declarations/finitebicomplex.md) | 28 | `declaration-track:a6b745d81f82ff229b0bf6702a202c4629badf4ddd428a508d702f750c7248b4` |
-| 2 | `def` | [totalDifferential](../../../../FunctionalAnalysis/BicomplexNamespaced.lean/declarations/totaldifferential.md) | 43 | `declaration-track:9e6efff5c41cb2b70c829b181a12ee482b1096e168442ea0ac8d9b75de04407d` |
-| 3 | `theorem` | [totalDifferential_sq_zero](../../../../FunctionalAnalysis/BicomplexNamespaced.lean/declarations/totaldifferential-sq-zero.md) | 48 | `result-track:df8627e2af636b4393b64f5f15fa524df3a287eb9368f6ca1bae9261ff77fc28` |
-| 4 | `def` | [toDifferentialComplex](../../../../FunctionalAnalysis/BicomplexNamespaced.lean/declarations/todifferentialcomplex.md) | 65 | `declaration-track:b15bdee9326693854794941aaa99bd78797db5c54dfab25fb6f2c92d82be8c3b` |
+| 1 | `structure` | [FiniteBicomplex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BicomplexNamespaced.lean/declarations/finitebicomplex.md) | 28 | `declaration-track:a6b745d81f82ff229b0bf6702a202c4629badf4ddd428a508d702f750c7248b4` |
+| 2 | `def` | [totalDifferential](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BicomplexNamespaced.lean/declarations/totaldifferential.md) | 43 | `declaration-track:9e6efff5c41cb2b70c829b181a12ee482b1096e168442ea0ac8d9b75de04407d` |
+| 3 | `theorem` | [totalDifferential_sq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BicomplexNamespaced.lean/declarations/totaldifferential-sq-zero.md) | 48 | `result-track:df8627e2af636b4393b64f5f15fa524df3a287eb9368f6ca1bae9261ff77fc28` |
+| 4 | `def` | [toDifferentialComplex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BicomplexNamespaced.lean/declarations/todifferentialcomplex.md) | 65 | `declaration-track:b15bdee9326693854794941aaa99bd78797db5c54dfab25fb6f2c92d82be8c3b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

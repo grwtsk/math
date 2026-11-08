@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/CStarAlgebraUnitization.lean/index.md) · [Full source](../../../../FunctionalAnalysis/CStarAlgebraUnitization.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CStarAlgebraUnitization.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CStarAlgebraUnitization.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [opNorm_mul_flip_apply](../../../../FunctionalAnalysis/CStarAlgebraUnitization.lean/declarations/opnorm-mul-flip-apply.md) | 30 | `result-track:bf3db0867abda16e9c42f6ff349387f886ed4756660eb2adfe269d176ffa13af` |
-| 2 | `lemma` | [opNNNorm_mul_flip_apply](../../../../FunctionalAnalysis/CStarAlgebraUnitization.lean/declarations/opnnnorm-mul-flip-apply.md) | 41 | `result-track:8081838047e9e7ba362344cecf7b2800f6951db572fecaf5ae775ff26fc17788` |
-| 3 | `lemma` | [isometry_mul_flip](../../../../FunctionalAnalysis/CStarAlgebraUnitization.lean/declarations/isometry-mul-flip.md) | 46 | `result-track:1db66e03ddbed1271f348dd0252787ba4d6935baabb3104575af664fa583d752` |
-| 4 | `instance` | [CStarRing.instRegularNormedAlgebra](../../../../FunctionalAnalysis/CStarAlgebraUnitization.lean/declarations/cstarring-instregularnormedalgebra.md) | 56 | `declaration-track:cd0459ec4241b2d7c240de632224afd4bc70c98baeacc64be08db381ac70d51a` |
-| 5 | `theorem` | [Unitization.norm_splitMul_snd_sq](../../../../FunctionalAnalysis/CStarAlgebraUnitization.lean/declarations/unitization-norm-splitmul-snd-sq.md) | 84 | `result-track:bc36db8bc403606f05d357fdb78f1ea501f4c1b08dba0dd8894f49e7325737dc` |
-| 6 | `instance` | [Unitization.instCStarRing](../../../../FunctionalAnalysis/CStarAlgebraUnitization.lean/declarations/unitization-instcstarring.md) | 127 | `declaration-track:1dcf664d397fd200d32ff01c8deb6646284b96bbb5600766501bab1389769a0f` |
-| 7 | `instance` | [Unitization.instCStarAlgebra](../../../../FunctionalAnalysis/CStarAlgebraUnitization.lean/declarations/unitization-instcstaralgebra.md) | 178 | `declaration-track:f0720379584f54dd2dd99347cb9a3d58edc1ddd7e787f8d6082e9746b2b588d2` |
-| 8 | `instance` | [Unitization.instCommCStarAlgebra](../../../../FunctionalAnalysis/CStarAlgebraUnitization.lean/declarations/unitization-instcommcstaralgebra.md) | 182 | `declaration-track:1d021e7d95b8158677da07ee1937bca3a9665ba30d15c3d102cd9c09a40d4a59` |
+| 1 | `lemma` | [opNorm_mul_flip_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CStarAlgebraUnitization.lean/declarations/opnorm-mul-flip-apply.md) | 30 | `result-track:bf3db0867abda16e9c42f6ff349387f886ed4756660eb2adfe269d176ffa13af` |
+| 2 | `lemma` | [opNNNorm_mul_flip_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CStarAlgebraUnitization.lean/declarations/opnnnorm-mul-flip-apply.md) | 41 | `result-track:8081838047e9e7ba362344cecf7b2800f6951db572fecaf5ae775ff26fc17788` |
+| 3 | `lemma` | [isometry_mul_flip](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CStarAlgebraUnitization.lean/declarations/isometry-mul-flip.md) | 46 | `result-track:1db66e03ddbed1271f348dd0252787ba4d6935baabb3104575af664fa583d752` |
+| 4 | `instance` | [CStarRing.instRegularNormedAlgebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CStarAlgebraUnitization.lean/declarations/cstarring-instregularnormedalgebra.md) | 56 | `declaration-track:cd0459ec4241b2d7c240de632224afd4bc70c98baeacc64be08db381ac70d51a` |
+| 5 | `theorem` | [Unitization.norm_splitMul_snd_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CStarAlgebraUnitization.lean/declarations/unitization-norm-splitmul-snd-sq.md) | 84 | `result-track:bc36db8bc403606f05d357fdb78f1ea501f4c1b08dba0dd8894f49e7325737dc` |
+| 6 | `instance` | [Unitization.instCStarRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CStarAlgebraUnitization.lean/declarations/unitization-instcstarring.md) | 127 | `declaration-track:1dcf664d397fd200d32ff01c8deb6646284b96bbb5600766501bab1389769a0f` |
+| 7 | `instance` | [Unitization.instCStarAlgebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CStarAlgebraUnitization.lean/declarations/unitization-instcstaralgebra.md) | 178 | `declaration-track:f0720379584f54dd2dd99347cb9a3d58edc1ddd7e787f8d6082e9746b2b588d2` |
+| 8 | `instance` | [Unitization.instCommCStarAlgebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CStarAlgebraUnitization.lean/declarations/unitization-instcommcstaralgebra.md) | 182 | `declaration-track:1d021e7d95b8158677da07ee1937bca3a9665ba30d15c3d102cd9c09a40d4a59` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

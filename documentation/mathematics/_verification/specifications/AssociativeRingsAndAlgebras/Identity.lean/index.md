@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/Identity.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/Identity.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Identity.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Identity.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [bot_join](../../../../AssociativeRingsAndAlgebras/Identity.lean/declarations/bot-join.md) | 14 | `result-track:fb3243d4302aaa04d2ac3a8b1725ad1ae93db9bed4cc57737ed126078f676245` |
-| 2 | `theorem` | [top_meet](../../../../AssociativeRingsAndAlgebras/Identity.lean/declarations/top-meet.md) | 15 | `result-track:90ab2f6f49be05586e454b29ce936b6c169cc6b52acfff5af6cee2b6bdbf6db1` |
-| 3 | `theorem` | [complement_join](../../../../AssociativeRingsAndAlgebras/Identity.lean/declarations/complement-join.md) | 16 | `result-track:0685eaa116a20d6e067a6299cd86bbfc2cf70cd89964f3aaba0e7d239a9f4504` |
-| 4 | `theorem` | [complement_meet](../../../../AssociativeRingsAndAlgebras/Identity.lean/declarations/complement-meet.md) | 17 | `result-track:201f675746b529505702ed11d3faa09324d7f1e0f7e07dd25eda711485e95670` |
-| 5 | `theorem` | [join_idempotent](../../../../AssociativeRingsAndAlgebras/Identity.lean/declarations/join-idempotent.md) | 18 | `result-track:891bfea1e156440255a23639c584a93b9ea41ba4ea07400276f1c5bc8dcee083` |
-| 6 | `theorem` | [meet_idempotent](../../../../AssociativeRingsAndAlgebras/Identity.lean/declarations/meet-idempotent.md) | 19 | `result-track:beb43c52711b37476c5adbaa6a262584d73f0589e268a8db2ac2ae73fce75c56` |
-| 7 | `theorem` | [join_top](../../../../AssociativeRingsAndAlgebras/Identity.lean/declarations/join-top.md) | 20 | `result-track:6beb82a6e3fbdf70626079745285219eacaa7456665f9ccc6972170e02f67917` |
-| 8 | `theorem` | [top_join](../../../../AssociativeRingsAndAlgebras/Identity.lean/declarations/top-join.md) | 21 | `result-track:6f2190f20b566217e6475eab14e7021bb4a4472facb5cc3587adfaae7f09190d` |
-| 9 | `theorem` | [meet_bot](../../../../AssociativeRingsAndAlgebras/Identity.lean/declarations/meet-bot.md) | 22 | `result-track:ecdd068ce470cdd3c46f4603471b582a084aff7de9916af091166c4d9d3508a1` |
-| 10 | `theorem` | [bot_meet](../../../../AssociativeRingsAndAlgebras/Identity.lean/declarations/bot-meet.md) | 23 | `result-track:ce49bb3d3b8d1d7495e4ff00c07cae773fe2d9dcfbc1949788b0ef8be5fee6e7` |
+| 1 | `theorem` | [bot_join](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Identity.lean/declarations/bot-join.md) | 14 | `result-track:fb3243d4302aaa04d2ac3a8b1725ad1ae93db9bed4cc57737ed126078f676245` |
+| 2 | `theorem` | [top_meet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Identity.lean/declarations/top-meet.md) | 15 | `result-track:90ab2f6f49be05586e454b29ce936b6c169cc6b52acfff5af6cee2b6bdbf6db1` |
+| 3 | `theorem` | [complement_join](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Identity.lean/declarations/complement-join.md) | 16 | `result-track:0685eaa116a20d6e067a6299cd86bbfc2cf70cd89964f3aaba0e7d239a9f4504` |
+| 4 | `theorem` | [complement_meet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Identity.lean/declarations/complement-meet.md) | 17 | `result-track:201f675746b529505702ed11d3faa09324d7f1e0f7e07dd25eda711485e95670` |
+| 5 | `theorem` | [join_idempotent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Identity.lean/declarations/join-idempotent.md) | 18 | `result-track:891bfea1e156440255a23639c584a93b9ea41ba4ea07400276f1c5bc8dcee083` |
+| 6 | `theorem` | [meet_idempotent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Identity.lean/declarations/meet-idempotent.md) | 19 | `result-track:beb43c52711b37476c5adbaa6a262584d73f0589e268a8db2ac2ae73fce75c56` |
+| 7 | `theorem` | [join_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Identity.lean/declarations/join-top.md) | 20 | `result-track:6beb82a6e3fbdf70626079745285219eacaa7456665f9ccc6972170e02f67917` |
+| 8 | `theorem` | [top_join](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Identity.lean/declarations/top-join.md) | 21 | `result-track:6f2190f20b566217e6475eab14e7021bb4a4472facb5cc3587adfaae7f09190d` |
+| 9 | `theorem` | [meet_bot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Identity.lean/declarations/meet-bot.md) | 22 | `result-track:ecdd068ce470cdd3c46f4603471b582a084aff7de9916af091166c4d9d3508a1` |
+| 10 | `theorem` | [bot_meet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/Identity.lean/declarations/bot-meet.md) | 23 | `result-track:ce49bb3d3b8d1d7495e4ff00c07cae773fe2d9dcfbc1949788b0ef8be5fee6e7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

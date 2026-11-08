@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/CorrespondenceNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/CorrespondenceNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CorrespondenceNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CorrespondenceNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [LocalMatchStatus](../../../../FunctionalAnalysis/CorrespondenceNamespaced.lean/declarations/localmatchstatus.md) | 20 | `declaration-track:07ade527a32311bd2111c340c4335f1e524c5e77fdd728f4a9c56db6314cb207` |
-| 2 | `structure` | [LocalMatchAssessment](../../../../FunctionalAnalysis/CorrespondenceNamespaced.lean/declarations/localmatchassessment.md) | 29 | `declaration-track:4c25f1d4713daa1ab188c19fafe470d425892e370e574761c21bc292bbe54f07` |
-| 3 | `structure` | [LocalCorrespondenceCertificate](../../../../FunctionalAnalysis/CorrespondenceNamespaced.lean/declarations/localcorrespondencecertificate.md) | 39 | `declaration-track:0541c40306483eeef7fca6b532eaf4591823c85e7b3eb7250d5606bb4225398a` |
-| 4 | `theorem` | [certifiedLocalCorrespondence_preservesMultiplicity](../../../../FunctionalAnalysis/CorrespondenceNamespaced.lean/declarations/certifiedlocalcorrespondence-preservesmultiplicity.md) | 67 | `result-track:12fa071ce0235b52b3fb83eca51e3cdd1b791865d58e4506c88fff5e8c4d3fa2` |
+| 1 | `inductive` | [LocalMatchStatus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CorrespondenceNamespaced.lean/declarations/localmatchstatus.md) | 20 | `declaration-track:07ade527a32311bd2111c340c4335f1e524c5e77fdd728f4a9c56db6314cb207` |
+| 2 | `structure` | [LocalMatchAssessment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CorrespondenceNamespaced.lean/declarations/localmatchassessment.md) | 29 | `declaration-track:4c25f1d4713daa1ab188c19fafe470d425892e370e574761c21bc292bbe54f07` |
+| 3 | `structure` | [LocalCorrespondenceCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CorrespondenceNamespaced.lean/declarations/localcorrespondencecertificate.md) | 39 | `declaration-track:0541c40306483eeef7fca6b532eaf4591823c85e7b3eb7250d5606bb4225398a` |
+| 4 | `theorem` | [certifiedLocalCorrespondence_preservesMultiplicity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CorrespondenceNamespaced.lean/declarations/certifiedlocalcorrespondence-preservesmultiplicity.md) | 67 | `result-track:12fa071ce0235b52b3fb83eca51e3cdd1b791865d58e4506c88fff5e8c4d3fa2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

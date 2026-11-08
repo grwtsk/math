@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/RadonNikodymNamespacedPublic.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/RadonNikodymNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/RadonNikodymNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/RadonNikodymNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [rnDeriv_measure_compProd_left_of_ac](../../../../ProbabilityTheoryAndStochasticProcesses/RadonNikodymNamespacedPublic.lean/declarations/rnderiv-measure-compprod-left-of-ac.md) | 57 | `result-track:48e2a420a041632ebec411608c483613ae3b71528228c527dd6fc36b5d9dbb8a` |
-| 2 | `lemma` | [rnDeriv_compProd_withDensity_rnDeriv](../../../../ProbabilityTheoryAndStochasticProcesses/RadonNikodymNamespacedPublic.lean/declarations/rnderiv-compprod-withdensity-rnderiv.md) | 89 | `result-track:79106929180209bfc1ce572433d58ee814d8738357eb35317a4259b192cf1241` |
-| 3 | `lemma` | [rnDeriv_measure_compProd_left](../../../../ProbabilityTheoryAndStochasticProcesses/RadonNikodymNamespacedPublic.lean/declarations/rnderiv-measure-compprod-left.md) | 104 | `result-track:a47698d7581f1f7887a412065b45786f4a3efc209105ab589890880a1c74a19e` |
-| 4 | `lemma` | [rnDeriv_compProd](../../../../ProbabilityTheoryAndStochasticProcesses/RadonNikodymNamespacedPublic.lean/declarations/rnderiv-compprod.md) | 123 | `result-track:711c4a75bbaf99809a74fb71367f320c0f19d0a74e5aa5bcc6ab3d30cbe7fb13` |
-| 5 | `lemma` | [rnDeriv_measure_compProd](../../../../ProbabilityTheoryAndStochasticProcesses/RadonNikodymNamespacedPublic.lean/declarations/rnderiv-measure-compprod.md) | 137 | `result-track:fc135c0b3de6ca00e1f332b2a9881eaae983c5e6eb44dd2029b299ff97fd2a48` |
-| 6 | `lemma` | [rnDeriv_measure_compProd_right](../../../../ProbabilityTheoryAndStochasticProcesses/RadonNikodymNamespacedPublic.lean/declarations/rnderiv-measure-compprod-right.md) | 164 | `result-track:3c171c63d96c43c7a55bba540043bde775a0339c5c11bfa5f0391a315046c02a` |
+| 1 | `lemma` | [rnDeriv_measure_compProd_left_of_ac](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/RadonNikodymNamespacedPublic.lean/declarations/rnderiv-measure-compprod-left-of-ac.md) | 57 | `result-track:48e2a420a041632ebec411608c483613ae3b71528228c527dd6fc36b5d9dbb8a` |
+| 2 | `lemma` | [rnDeriv_compProd_withDensity_rnDeriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/RadonNikodymNamespacedPublic.lean/declarations/rnderiv-compprod-withdensity-rnderiv.md) | 89 | `result-track:79106929180209bfc1ce572433d58ee814d8738357eb35317a4259b192cf1241` |
+| 3 | `lemma` | [rnDeriv_measure_compProd_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/RadonNikodymNamespacedPublic.lean/declarations/rnderiv-measure-compprod-left.md) | 104 | `result-track:a47698d7581f1f7887a412065b45786f4a3efc209105ab589890880a1c74a19e` |
+| 4 | `lemma` | [rnDeriv_compProd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/RadonNikodymNamespacedPublic.lean/declarations/rnderiv-compprod.md) | 123 | `result-track:711c4a75bbaf99809a74fb71367f320c0f19d0a74e5aa5bcc6ab3d30cbe7fb13` |
+| 5 | `lemma` | [rnDeriv_measure_compProd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/RadonNikodymNamespacedPublic.lean/declarations/rnderiv-measure-compprod.md) | 137 | `result-track:fc135c0b3de6ca00e1f332b2a9881eaae983c5e6eb44dd2029b299ff97fd2a48` |
+| 6 | `lemma` | [rnDeriv_measure_compProd_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/RadonNikodymNamespacedPublic.lean/declarations/rnderiv-measure-compprod-right.md) | 164 | `result-track:3c171c63d96c43c7a55bba540043bde775a0339c5c11bfa5f0391a315046c02a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

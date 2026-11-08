@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntersectivityNamespaced.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntersectivityNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntersectivityNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntersectivityNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [bergelson'](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntersectivityNamespaced.lean/declarations/bergelson.md) | 48 | `result-track:3ef493a5ba1ae9d7747fbb769021b188aa45bf1fbe9bf6cc8c03b2d8e751d6d8` |
-| 2 | `lemma` | [bergelson](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntersectivityNamespaced.lean/declarations/bergelson-source-edition-2.md) | 128 | `result-track:cd6e631e0fde6be2cc02a243a087a6a9411e7009b16da06ccc4646cfdf6c40b4` |
+| 1 | `lemma` | [bergelson'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntersectivityNamespaced.lean/declarations/bergelson.md) | 48 | `result-track:3ef493a5ba1ae9d7747fbb769021b188aa45bf1fbe9bf6cc8c03b2d8e751d6d8` |
+| 2 | `lemma` | [bergelson](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntersectivityNamespaced.lean/declarations/bergelson-source-edition-2.md) | 128 | `result-track:cd6e631e0fde6be2cc02a243a087a6a9411e7009b16da06ccc4646cfdf6c40b4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

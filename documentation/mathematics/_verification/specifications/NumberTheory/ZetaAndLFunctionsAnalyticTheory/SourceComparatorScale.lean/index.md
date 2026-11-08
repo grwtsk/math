@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceComparatorScale.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceComparatorScale.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceComparatorScale.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceComparatorScale.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [sevenEighthsEnvelope](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceComparatorScale.lean/declarations/seveneighthsenvelope.md) | 30 | `declaration-track:f34b6175b719b39bca0c75f679aaf8e58bc09d2a98bdfcc5d6637594cc2d1062` |
-| 2 | `def` | [nativeBoundaryScale](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceComparatorScale.lean/declarations/nativeboundaryscale.md) | 33 | `declaration-track:12046ad4178763c8aa4f0e5ec74b3219df357e6b35cb2338d8c6f626f39e8559` |
-| 3 | `theorem` | [nativeBoundaryScale_physical_endpoint](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceComparatorScale.lean/declarations/nativeboundaryscale-physical-endpoint.md) | 36 | `result-track:3bee541042477d2b9eca81bcde740e1297427a16132b9ee08fd116e97c4784b9` |
-| 4 | `theorem` | [envelope_ratio](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceComparatorScale.lean/declarations/envelope-ratio.md) | 46 | `result-track:60dbbee0afab779f1333c578a7a1f463ec7ba0197f9d73ff029d16a98dd55a9e` |
-| 5 | `theorem` | [envelope_ratio_tendsto](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceComparatorScale.lean/declarations/envelope-ratio-tendsto.md) | 59 | `result-track:aff41e28d300c505d23361851956f74969f73a48876df6813b735705de53c77d` |
-| 6 | `theorem` | [mesh_decay_positive_iff](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceComparatorScale.lean/declarations/mesh-decay-positive-iff.md) | 69 | `result-track:a09d49c8f2904f7ac46e90d8776e3150c6161d225e747397fcd02bbc832efd35` |
-| 7 | `theorem` | [bhp_mesh_decay](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceComparatorScale.lean/declarations/bhp-mesh-decay.md) | 74 | `result-track:28fa12ecf3c7a2894ea47f21a558da2b4354d102001e72a0f456dab1d918e4b5` |
-| 8 | `theorem` | [sevenEighths_mesh_decay_negative](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceComparatorScale.lean/declarations/seveneighths-mesh-decay-negative.md) | 78 | `result-track:3b7aa0e7edd0acdbcf03b92c6b14268204e0ce5b69ea18e8575058041099c3e7` |
+| 1 | `def` | [sevenEighthsEnvelope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceComparatorScale.lean/declarations/seveneighthsenvelope.md) | 30 | `declaration-track:f34b6175b719b39bca0c75f679aaf8e58bc09d2a98bdfcc5d6637594cc2d1062` |
+| 2 | `def` | [nativeBoundaryScale](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceComparatorScale.lean/declarations/nativeboundaryscale.md) | 33 | `declaration-track:12046ad4178763c8aa4f0e5ec74b3219df357e6b35cb2338d8c6f626f39e8559` |
+| 3 | `theorem` | [nativeBoundaryScale_physical_endpoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceComparatorScale.lean/declarations/nativeboundaryscale-physical-endpoint.md) | 36 | `result-track:3bee541042477d2b9eca81bcde740e1297427a16132b9ee08fd116e97c4784b9` |
+| 4 | `theorem` | [envelope_ratio](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceComparatorScale.lean/declarations/envelope-ratio.md) | 46 | `result-track:60dbbee0afab779f1333c578a7a1f463ec7ba0197f9d73ff029d16a98dd55a9e` |
+| 5 | `theorem` | [envelope_ratio_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceComparatorScale.lean/declarations/envelope-ratio-tendsto.md) | 59 | `result-track:aff41e28d300c505d23361851956f74969f73a48876df6813b735705de53c77d` |
+| 6 | `theorem` | [mesh_decay_positive_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceComparatorScale.lean/declarations/mesh-decay-positive-iff.md) | 69 | `result-track:a09d49c8f2904f7ac46e90d8776e3150c6161d225e747397fcd02bbc832efd35` |
+| 7 | `theorem` | [bhp_mesh_decay](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceComparatorScale.lean/declarations/bhp-mesh-decay.md) | 74 | `result-track:28fa12ecf3c7a2894ea47f21a558da2b4354d102001e72a0f456dab1d918e4b5` |
+| 8 | `theorem` | [sevenEighths_mesh_decay_negative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceComparatorScale.lean/declarations/seveneighths-mesh-decay-negative.md) | 78 | `result-track:3b7aa0e7edd0acdbcf03b92c6b14268204e0ce5b69ea18e8575058041099c3e7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

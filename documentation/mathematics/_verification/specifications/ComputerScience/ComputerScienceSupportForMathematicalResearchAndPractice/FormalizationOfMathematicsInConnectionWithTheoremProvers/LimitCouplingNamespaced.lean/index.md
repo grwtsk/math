@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LimitCouplingNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LimitCouplingNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LimitCouplingNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LimitCouplingNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CompatibleLimitCoupling](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LimitCouplingNamespaced.lean/declarations/compatiblelimitcoupling.md) | 18 | `declaration-track:4b09b6b66a349c237ecdc8ae25aa7813c48fa1c7b6505a165ac245dadc6a975a` |
-| 2 | `theorem` | [compatible_couplings_construct_limit_kernel](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LimitCouplingNamespaced.lean/declarations/compatible-couplings-construct-limit-kernel.md) | 29 | `result-track:02cba26329ae5893f49a9b7598b0962aeb8beaa020f902d8d8f906a0cec514c8` |
+| 1 | `structure` | [CompatibleLimitCoupling](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LimitCouplingNamespaced.lean/declarations/compatiblelimitcoupling.md) | 18 | `declaration-track:4b09b6b66a349c237ecdc8ae25aa7813c48fa1c7b6505a165ac245dadc6a975a` |
+| 2 | `theorem` | [compatible_couplings_construct_limit_kernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LimitCouplingNamespaced.lean/declarations/compatible-couplings-construct-limit-kernel.md) | 29 | `result-track:02cba26329ae5893f49a9b7598b0962aeb8beaa020f902d8d8f906a0cec514c8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

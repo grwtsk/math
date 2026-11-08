@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/SpectrumPublic.lean/index.md) · [Full source](../../../../FunctionalAnalysis/SpectrumPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectrumPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectrumPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,17 +57,17 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [nnreal_iff](../../../../FunctionalAnalysis/SpectrumPublic.lean/declarations/nnreal-iff.md) | 25 | `result-track:a8dc0d8ee209b9c0fba769dac1f6ecfd08733f4d15f545ff917aa4244a8f62e8` |
-| 2 | `lemma` | [nnreal_of_nonneg](../../../../FunctionalAnalysis/SpectrumPublic.lean/declarations/nnreal-of-nonneg.md) | 32 | `result-track:2b7b096f62ac4418c6b798dae57574a7d02ccf8a3b0bfe916107cea3e75f63f6` |
-| 3 | `lemma` | [nnreal_le_iff](../../../../FunctionalAnalysis/SpectrumPublic.lean/declarations/nnreal-le-iff.md) | 36 | `result-track:f29fc8989dc8b3269e0dfdd0b023dafaf7f252d5ce532d6f41b306f67a58391f` |
-| 4 | `lemma` | [nnreal_lt_iff](../../../../FunctionalAnalysis/SpectrumPublic.lean/declarations/nnreal-lt-iff.md) | 41 | `result-track:03cad58c6571370b11363238e3bb280c83145e38a50b749e91a0372a7c3526e6` |
-| 5 | `lemma` | [le_nnreal_iff](../../../../FunctionalAnalysis/SpectrumPublic.lean/declarations/le-nnreal-iff-source-edition-2.md) | 46 | `result-track:beab99d587ca7d7ceda6aecaedc7146c1fab27f18be918aeae12ada5df0c2db2` |
-| 6 | `lemma` | [lt_nnreal_iff](../../../../FunctionalAnalysis/SpectrumPublic.lean/declarations/lt-nnreal-iff.md) | 51 | `result-track:0bafaf471e950080fe9dd2738bfa87094bfd14201d22f795281097448d5a5d6b` |
-| 7 | `lemma` | [nnreal_iff](../../../../FunctionalAnalysis/SpectrumPublic.lean/declarations/nnreal-iff-source-edition-2.md) | 65 | `result-track:b6274f762cc2dfc6081abb9c82064a923025aa185b916cae9f1394f52f5e31ac` |
-| 8 | `lemma` | [nnreal_of_nonneg](../../../../FunctionalAnalysis/SpectrumPublic.lean/declarations/nnreal-of-nonneg-source-edition-2.md) | 70 | `result-track:7ad62d5330fa203b6d30deec8792d516259918a7c534719f364c5afe3289c7e0` |
-| 9 | `lemma` | [le_nnreal_iff](../../../../FunctionalAnalysis/SpectrumPublic.lean/declarations/le-nnreal-iff.md) | 75 | `result-track:be19ee6c0242f3d2afb90975f39bd124a992e38b9d33f32005dd5dc6c27817e5` |
-| 10 | `lemma` | [lt_nnreal_iff](../../../../FunctionalAnalysis/SpectrumPublic.lean/declarations/lt-nnreal-iff-source-edition-2.md) | 80 | `result-track:84f0056cca6cd274aeeb33a7a712b66a2c11f2606831f625259ed70d2d36d083` |
-| 11 | `lemma` | [coe_mem_spectrum_real_of_nonneg](../../../../FunctionalAnalysis/SpectrumPublic.lean/declarations/coe-mem-spectrum-real-of-nonneg.md) | 91 | `result-track:80b9b86a4a29c6e62b3c559aaca30a6af00e58cfdc4dc19b26e36baab8428cf8` |
+| 1 | `lemma` | [nnreal_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectrumPublic.lean/declarations/nnreal-iff.md) | 25 | `result-track:a8dc0d8ee209b9c0fba769dac1f6ecfd08733f4d15f545ff917aa4244a8f62e8` |
+| 2 | `lemma` | [nnreal_of_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectrumPublic.lean/declarations/nnreal-of-nonneg.md) | 32 | `result-track:2b7b096f62ac4418c6b798dae57574a7d02ccf8a3b0bfe916107cea3e75f63f6` |
+| 3 | `lemma` | [nnreal_le_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectrumPublic.lean/declarations/nnreal-le-iff.md) | 36 | `result-track:f29fc8989dc8b3269e0dfdd0b023dafaf7f252d5ce532d6f41b306f67a58391f` |
+| 4 | `lemma` | [nnreal_lt_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectrumPublic.lean/declarations/nnreal-lt-iff.md) | 41 | `result-track:03cad58c6571370b11363238e3bb280c83145e38a50b749e91a0372a7c3526e6` |
+| 5 | `lemma` | [le_nnreal_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectrumPublic.lean/declarations/le-nnreal-iff-source-edition-2.md) | 46 | `result-track:beab99d587ca7d7ceda6aecaedc7146c1fab27f18be918aeae12ada5df0c2db2` |
+| 6 | `lemma` | [lt_nnreal_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectrumPublic.lean/declarations/lt-nnreal-iff.md) | 51 | `result-track:0bafaf471e950080fe9dd2738bfa87094bfd14201d22f795281097448d5a5d6b` |
+| 7 | `lemma` | [nnreal_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectrumPublic.lean/declarations/nnreal-iff-source-edition-2.md) | 65 | `result-track:b6274f762cc2dfc6081abb9c82064a923025aa185b916cae9f1394f52f5e31ac` |
+| 8 | `lemma` | [nnreal_of_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectrumPublic.lean/declarations/nnreal-of-nonneg-source-edition-2.md) | 70 | `result-track:7ad62d5330fa203b6d30deec8792d516259918a7c534719f364c5afe3289c7e0` |
+| 9 | `lemma` | [le_nnreal_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectrumPublic.lean/declarations/le-nnreal-iff.md) | 75 | `result-track:be19ee6c0242f3d2afb90975f39bd124a992e38b9d33f32005dd5dc6c27817e5` |
+| 10 | `lemma` | [lt_nnreal_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectrumPublic.lean/declarations/lt-nnreal-iff-source-edition-2.md) | 80 | `result-track:84f0056cca6cd274aeeb33a7a712b66a2c11f2606831f625259ed70d2d36d083` |
+| 11 | `lemma` | [coe_mem_spectrum_real_of_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectrumPublic.lean/declarations/coe-mem-spectrum-real-of-nonneg.md) | 91 | `result-track:80b9b86a4a29c6e62b3c559aaca30a6af00e58cfdc4dc19b26e36baab8428cf8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

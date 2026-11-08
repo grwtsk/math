@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Coherence.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Coherence.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Coherence.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Coherence.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [lifts_agree](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Coherence.lean/declarations/lifts-agree.md) | 12 | `result-track:f5b0d831b96335dcb92ae32df9e994d1723d61e9d477caceac6e78696daf6a8d` |
-| 2 | `theorem` | [observations_agree](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Coherence.lean/declarations/observations-agree.md) | 22 | `result-track:cb7a355ffe00ac7397a6e969cb7224ba938f86d80892ad5325bad778c6ff82a8` |
-| 3 | `theorem` | [joint_impossible](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Coherence.lean/declarations/joint-impossible.md) | 31 | `result-track:f1943b596200ae3dd030afe9d95c64cd147427672978a62564035bd4cece5488` |
-| 4 | `theorem` | [pairwise_bool_witnesses](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Coherence.lean/declarations/pairwise-bool-witnesses.md) | 36 | `result-track:49daa3e6723917e3f90200f16e33cdff0b3bf1682d723e7380e7590d0334894e` |
+| 1 | `theorem` | [lifts_agree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Coherence.lean/declarations/lifts-agree.md) | 12 | `result-track:f5b0d831b96335dcb92ae32df9e994d1723d61e9d477caceac6e78696daf6a8d` |
+| 2 | `theorem` | [observations_agree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Coherence.lean/declarations/observations-agree.md) | 22 | `result-track:cb7a355ffe00ac7397a6e969cb7224ba938f86d80892ad5325bad778c6ff82a8` |
+| 3 | `theorem` | [joint_impossible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Coherence.lean/declarations/joint-impossible.md) | 31 | `result-track:f1943b596200ae3dd030afe9d95c64cd147427672978a62564035bd4cece5488` |
+| 4 | `theorem` | [pairwise_bool_witnesses](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Coherence.lean/declarations/pairwise-bool-witnesses.md) | 36 | `result-track:49daa3e6723917e3f90200f16e33cdff0b3bf1682d723e7380e7590d0334894e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

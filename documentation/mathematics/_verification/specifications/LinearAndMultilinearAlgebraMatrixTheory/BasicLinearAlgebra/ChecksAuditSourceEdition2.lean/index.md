@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChecksAuditSourceEdition2.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChecksAuditSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChecksAuditSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChecksAuditSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.LinearAlgebra.OrderedTransfer`](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrderedTransfer.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.LinearAlgebra.OrderedTransfer`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OrderedTransfer.lean/index.md) — import line 1; pinned internal source present.
 - `Lean` — import line 2; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [use_product](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChecksAuditSourceEdition2.lean/declarations/use-product.md) | 5 | `result-track:20ea34ee6fefa2e6948372c2a9ed2c834c53f408a5ef3b1abf89121d5537be0f` |
-| 2 | `theorem` | [use_endpoint](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChecksAuditSourceEdition2.lean/declarations/use-endpoint.md) | 6 | `result-track:2a9e264679e6fe006b221842f39eb64f68920eb0d89b801b6c3907716170ede1` |
-| 3 | `elab` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChecksAuditSourceEdition2.lean/declarations/elab.md) | 8 | `declaration-track:bf9beede98b927ee30da02e70db6bda0e21d85917c221b133e539031b7b8b8e9` |
+| 1 | `theorem` | [use_product](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChecksAuditSourceEdition2.lean/declarations/use-product.md) | 5 | `result-track:20ea34ee6fefa2e6948372c2a9ed2c834c53f408a5ef3b1abf89121d5537be0f` |
+| 2 | `theorem` | [use_endpoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChecksAuditSourceEdition2.lean/declarations/use-endpoint.md) | 6 | `result-track:2a9e264679e6fe006b221842f39eb64f68920eb0d89b801b6c3907716170ede1` |
+| 3 | `elab` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChecksAuditSourceEdition2.lean/declarations/elab.md) | 8 | `declaration-track:bf9beede98b927ee30da02e70db6bda0e21d85917c221b133e539031b7b8b8e9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

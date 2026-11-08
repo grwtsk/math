@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IdempotentsBiproductsNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IdempotentsBiproductsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IdempotentsBiproductsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IdempotentsBiproductsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [bicone](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IdempotentsBiproductsNamespaced.lean/declarations/bicone.md) | 54 | `declaration-track:2588ebfce2aadc7b04303033606973028566d663f23f2fdeb7414856e3626e6a` |
-| 2 | `theorem` | [karoubi_hasFiniteBiproducts](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IdempotentsBiproductsNamespaced.lean/declarations/karoubi-hasfinitebiproducts.md) | 79 | `result-track:9fc4a549bd99605b155a4a8d6212188e7ef771aacb02ccb7df84de85edccf8a6` |
-| 3 | `def` | [complement](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IdempotentsBiproductsNamespaced.lean/declarations/complement.md) | 100 | `declaration-track:d13545569fb4c5e46900bb4333d38fa4d4e6725eb2b3a0497959950de8c8ed07` |
-| 4 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IdempotentsBiproductsNamespaced.lean/declarations/instance.md) | 105 | `declaration-track:03ff537e666e195f2bd1f8238ce102cc98b36738449551a06bf94ebe8c48e969` |
-| 5 | `def` | [decomposition](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IdempotentsBiproductsNamespaced.lean/declarations/decomposition.md) | 130 | `declaration-track:ea5bc417232a0b7d4b2a490a556b44675a2db9b73c3dc25a62cb1839fb8563a7` |
+| 1 | `def` | [bicone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IdempotentsBiproductsNamespaced.lean/declarations/bicone.md) | 54 | `declaration-track:2588ebfce2aadc7b04303033606973028566d663f23f2fdeb7414856e3626e6a` |
+| 2 | `theorem` | [karoubi_hasFiniteBiproducts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IdempotentsBiproductsNamespaced.lean/declarations/karoubi-hasfinitebiproducts.md) | 79 | `result-track:9fc4a549bd99605b155a4a8d6212188e7ef771aacb02ccb7df84de85edccf8a6` |
+| 3 | `def` | [complement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IdempotentsBiproductsNamespaced.lean/declarations/complement.md) | 100 | `declaration-track:d13545569fb4c5e46900bb4333d38fa4d4e6725eb2b3a0497959950de8c8ed07` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IdempotentsBiproductsNamespaced.lean/declarations/instance.md) | 105 | `declaration-track:03ff537e666e195f2bd1f8238ce102cc98b36738449551a06bf94ebe8c48e969` |
+| 5 | `def` | [decomposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/IdempotentsBiproductsNamespaced.lean/declarations/decomposition.md) | 130 | `declaration-track:ea5bc417232a0b7d4b2a490a556b44675a2db9b73c3dc25a62cb1839fb8563a7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

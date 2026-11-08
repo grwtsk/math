@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/TheActualNodalComponentAtomsPreserveContinuityEdition1.lean/index.md) · [Full source](../../../../GeneralTopology/TheActualNodalComponentAtomsPreserveContinuityEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TheActualNodalComponentAtomsPreserveContinuityEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TheActualNodalComponentAtomsPreserveContinuityEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [component_atom_norm_le_source](../../../../GeneralTopology/TheActualNodalComponentAtomsPreserveContinuityEdition1.lean/declarations/component-atom-norm-le-source.md) | 24 | `result-track:2ca915d1d224563609c4f3ed4bfd93615c676f7a1ff33a472b9fd9bbb0dff8c3` |
-| 2 | `theorem` | [component_atom_continuous](../../../../GeneralTopology/TheActualNodalComponentAtomsPreserveContinuityEdition1.lean/declarations/component-atom-continuous.md) | 28 | `result-track:9d0079f3787982a777dedef35685e70fb6f7c745616fc96381675c840a24751f` |
-| 3 | `theorem` | [finite_minimal_reconstruction_is_continuous](../../../../GeneralTopology/TheActualNodalComponentAtomsPreserveContinuityEdition1.lean/declarations/finite-minimal-reconstruction-is-continuous.md) | 56 | `result-track:df5d5693812f3c7008a41ddfdb7c6559d57e5da5a63884becc7036aa03e033f4` |
+| 1 | `theorem` | [component_atom_norm_le_source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TheActualNodalComponentAtomsPreserveContinuityEdition1.lean/declarations/component-atom-norm-le-source.md) | 24 | `result-track:2ca915d1d224563609c4f3ed4bfd93615c676f7a1ff33a472b9fd9bbb0dff8c3` |
+| 2 | `theorem` | [component_atom_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TheActualNodalComponentAtomsPreserveContinuityEdition1.lean/declarations/component-atom-continuous.md) | 28 | `result-track:9d0079f3787982a777dedef35685e70fb6f7c745616fc96381675c840a24751f` |
+| 3 | `theorem` | [finite_minimal_reconstruction_is_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TheActualNodalComponentAtomsPreserveContinuityEdition1.lean/declarations/finite-minimal-reconstruction-is-continuous.md) | 56 | `result-track:df5d5693812f3c7008a41ddfdb7c6559d57e5da5a63884becc7036aa03e033f4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

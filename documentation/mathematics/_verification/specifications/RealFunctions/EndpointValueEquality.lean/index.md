@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/EndpointValueEquality.lean/index.md) · [Full source](../../../../RealFunctions/EndpointValueEquality.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/EndpointValueEquality.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/EndpointValueEquality.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CubicCellSemantics](../../../../RealFunctions/EndpointValueEquality.lean/declarations/cubiccellsemantics.md) | 38 | `declaration-track:0e600ad5254432f1192178a66e3ff7440caa55ffcd20deebf1783634fbb28d85` |
-| 2 | `theorem` | [CubicCellSemantics.correct](../../../../RealFunctions/EndpointValueEquality.lean/declarations/cubiccellsemantics-correct.md) | 46 | `result-track:7b1c1834183c2d6b55a36ec8099c8c59ef539838c40b042d5b3eb3360531b97c` |
+| 1 | `structure` | [CubicCellSemantics](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/EndpointValueEquality.lean/declarations/cubiccellsemantics.md) | 38 | `declaration-track:0e600ad5254432f1192178a66e3ff7440caa55ffcd20deebf1783634fbb28d85` |
+| 2 | `theorem` | [CubicCellSemantics.correct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/EndpointValueEquality.lean/declarations/cubiccellsemantics-correct.md) | 46 | `result-track:7b1c1834183c2d6b55a36ec8099c8c59ef539838c40b042d5b3eb3360531b97c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

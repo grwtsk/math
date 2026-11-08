@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/CoverageBoundary.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/CoverageBoundary.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CoverageBoundary.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CoverageBoundary.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CoverageBoundary](../../../../../ComputerScience/AlgorithmsInComputerScience/CoverageBoundary.lean/declarations/coverageboundary.md) | 12 | `declaration-track:9f09da6092031549c5e354f4e13044fabe994251cf8d91e5168082a526f0b732` |
-| 2 | `theorem` | [candidate_has_disposition](../../../../../ComputerScience/AlgorithmsInComputerScience/CoverageBoundary.lean/declarations/candidate-has-disposition.md) | 26 | `result-track:d77fe456f687ccf619af99b729997a46f11ba24afe6c30e3f655597f25716fd8` |
-| 3 | `theorem` | [registry_lookup_is_snapshot_qualified](../../../../../ComputerScience/AlgorithmsInComputerScience/CoverageBoundary.lean/declarations/registry-lookup-is-snapshot-qualified.md) | 38 | `result-track:e46eca486d56aec241ce4275620341fea0056614976b161e46e3f4e55ce0a754` |
+| 1 | `structure` | [CoverageBoundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CoverageBoundary.lean/declarations/coverageboundary.md) | 12 | `declaration-track:9f09da6092031549c5e354f4e13044fabe994251cf8d91e5168082a526f0b732` |
+| 2 | `theorem` | [candidate_has_disposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CoverageBoundary.lean/declarations/candidate-has-disposition.md) | 26 | `result-track:d77fe456f687ccf619af99b729997a46f11ba24afe6c30e3f655597f25716fd8` |
+| 3 | `theorem` | [registry_lookup_is_snapshot_qualified](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CoverageBoundary.lean/declarations/registry-lookup-is-snapshot-qualified.md) | 38 | `result-track:e46eca486d56aec241ce4275620341fea0056614976b161e46e3f4e55ce0a754` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

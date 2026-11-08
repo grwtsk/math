@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripFifteenDerivativeBernstein.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripFifteenDerivativeBernstein.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripFifteenDerivativeBernstein.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripFifteenDerivativeBernstein.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripFifteenDerivativeJet`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripFifteenDerivativeJet.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripSevenHeightBernstein`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSevenHeightBernstein.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripFifteenDerivativeJet`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripFifteenDerivativeJet.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripSevenHeightBernstein`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSevenHeightBernstein.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [reLower](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripFifteenDerivativeBernstein.lean/declarations/relower.md) | 23 | `declaration-track:052b698f8a4c722da29f16c8e83c2c7da2e154a010fdf2aeec66972ad63a18e4` |
-| 2 | `theorem` | [reLower_identity](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripFifteenDerivativeBernstein.lean/declarations/relower-identity.md) | 36 | `result-track:620411d797355623983f3fbe5e773f9323691f0a4eb00196d46cb903904b0795` |
-| 3 | `def` | [reUpper](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripFifteenDerivativeBernstein.lean/declarations/reupper.md) | 43 | `declaration-track:b5eed7c8421e05f3928c99dd39ce48e02aac2416a0436f959a91d91a671c60d8` |
-| 4 | `theorem` | [reUpper_identity](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripFifteenDerivativeBernstein.lean/declarations/reupper-identity.md) | 56 | `result-track:15c32401a232e2b29df603a566dcc2d16fe81263e0978639f83105b89bec1d18` |
-| 5 | `def` | [imLower](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripFifteenDerivativeBernstein.lean/declarations/imlower.md) | 63 | `declaration-track:df55b935867e2ac8ed5bd6b5e632cbe1fff688365207868429baecc5e82cb3a2` |
-| 6 | `theorem` | [imLower_identity](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripFifteenDerivativeBernstein.lean/declarations/imlower-identity.md) | 76 | `result-track:8e6c886c66cada18869445718de07233e2bd7bec51819ed17bd8c6d622f8371f` |
-| 7 | `def` | [imUpper](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripFifteenDerivativeBernstein.lean/declarations/imupper.md) | 83 | `declaration-track:4cc8b307c169c9d966a50590a3cdbd61dcd0f6101e2bff678234765343db43c9` |
-| 8 | `theorem` | [imUpper_identity](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripFifteenDerivativeBernstein.lean/declarations/imupper-identity.md) | 96 | `result-track:2a6171e36b8579f0b3b4eb8eef3ba0e0e0af22918bf8cf187be16f18160e7a78` |
-| 9 | `theorem` | [component_bounds](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripFifteenDerivativeBernstein.lean/declarations/component-bounds.md) | 104 | `result-track:77762c0212e4b1ac5b144432c726b3b2071832b5f605c8f19a27b83029ee0f96` |
-| 10 | `theorem` | [model_disk](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripFifteenDerivativeBernstein.lean/declarations/model-disk.md) | 124 | `result-track:03a9bc543c3fedad3068a9b877416690ac71760bfe2c01e1df628e9fc11f0718` |
+| 1 | `def` | [reLower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripFifteenDerivativeBernstein.lean/declarations/relower.md) | 23 | `declaration-track:052b698f8a4c722da29f16c8e83c2c7da2e154a010fdf2aeec66972ad63a18e4` |
+| 2 | `theorem` | [reLower_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripFifteenDerivativeBernstein.lean/declarations/relower-identity.md) | 36 | `result-track:620411d797355623983f3fbe5e773f9323691f0a4eb00196d46cb903904b0795` |
+| 3 | `def` | [reUpper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripFifteenDerivativeBernstein.lean/declarations/reupper.md) | 43 | `declaration-track:b5eed7c8421e05f3928c99dd39ce48e02aac2416a0436f959a91d91a671c60d8` |
+| 4 | `theorem` | [reUpper_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripFifteenDerivativeBernstein.lean/declarations/reupper-identity.md) | 56 | `result-track:15c32401a232e2b29df603a566dcc2d16fe81263e0978639f83105b89bec1d18` |
+| 5 | `def` | [imLower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripFifteenDerivativeBernstein.lean/declarations/imlower.md) | 63 | `declaration-track:df55b935867e2ac8ed5bd6b5e632cbe1fff688365207868429baecc5e82cb3a2` |
+| 6 | `theorem` | [imLower_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripFifteenDerivativeBernstein.lean/declarations/imlower-identity.md) | 76 | `result-track:8e6c886c66cada18869445718de07233e2bd7bec51819ed17bd8c6d622f8371f` |
+| 7 | `def` | [imUpper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripFifteenDerivativeBernstein.lean/declarations/imupper.md) | 83 | `declaration-track:4cc8b307c169c9d966a50590a3cdbd61dcd0f6101e2bff678234765343db43c9` |
+| 8 | `theorem` | [imUpper_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripFifteenDerivativeBernstein.lean/declarations/imupper-identity.md) | 96 | `result-track:2a6171e36b8579f0b3b4eb8eef3ba0e0e0af22918bf8cf187be16f18160e7a78` |
+| 9 | `theorem` | [component_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripFifteenDerivativeBernstein.lean/declarations/component-bounds.md) | 104 | `result-track:77762c0212e4b1ac5b144432c726b3b2071832b5f605c8f19a27b83029ee0f96` |
+| 10 | `theorem` | [model_disk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripFifteenDerivativeBernstein.lean/declarations/model-disk.md) | 124 | `result-track:03a9bc543c3fedad3068a9b877416690ac71760bfe2c01e1df628e9fc11f0718` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

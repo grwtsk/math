@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/IsPrimaryNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/IsPrimaryNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsPrimaryNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsPrimaryNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [IsPrimary](../../../../CommutativeAlgebra/IsPrimaryNamespaced.lean/declarations/isprimary.md) | 53 | `declaration-track:d6e631d65239b2ff26d8ef52c3c939122d64ce410c7bd47cd1a2a2d02e610c3f` |
-| 2 | `lemma` | [IsPrimary.ne_top](../../../../CommutativeAlgebra/IsPrimaryNamespaced.lean/declarations/isprimary-ne-top.md) | 58 | `result-track:c977f7da529642f610626ec42e844b0e6b8fcb71c0d2e22e7c067460e4166bbb` |
-| 3 | `lemma` | [isPrimary_iff_zero_divisor_quotient_imp_nilpotent_smul](../../../../CommutativeAlgebra/IsPrimaryNamespaced.lean/declarations/isprimary-iff-zero-divisor-quotient-imp-nilpotent-smul.md) | 66 | `result-track:f920c32b1ae78d43a1b600e383a11c2643aa61ad2aad2d855bc4e3c19b828a80` |
+| 1 | `def` | [IsPrimary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsPrimaryNamespaced.lean/declarations/isprimary.md) | 53 | `declaration-track:d6e631d65239b2ff26d8ef52c3c939122d64ce410c7bd47cd1a2a2d02e610c3f` |
+| 2 | `lemma` | [IsPrimary.ne_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsPrimaryNamespaced.lean/declarations/isprimary-ne-top.md) | 58 | `result-track:c977f7da529642f610626ec42e844b0e6b8fcb71c0d2e22e7c067460e4166bbb` |
+| 3 | `lemma` | [isPrimary_iff_zero_divisor_quotient_imp_nilpotent_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsPrimaryNamespaced.lean/declarations/isprimary-iff-zero-divisor-quotient-imp-nilpotent-smul.md) | 66 | `result-track:f920c32b1ae78d43a1b600e383a11c2643aa61ad2aad2d855bc4e3c19b828a80` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

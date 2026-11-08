@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinEnumOption.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinEnumOption.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinEnumOption.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinEnumOption.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [insertNone](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinEnumOption.lean/declarations/insertnone.md) | 23 | `declaration-track:73602f50ff6590b3a97f18976dbc7303d49f18c1fbdc3843912923ee146db359` |
-| 2 | `instance` | [instFinEnumOptionLast](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinEnumOption.lean/declarations/instfinenumoptionlast.md) | 29 | `declaration-track:6455602929f242dd3fe1bb953f7c69ae73d3366144c493e600312532bd834775` |
-| 3 | `def` | [recEmptyOption](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinEnumOption.lean/declarations/recemptyoption.md) | 43 | `declaration-track:847cd63492f474aed6632d931791e0b131e5f69737f92c0fc014c57e33d2924a` |
-| 4 | `theorem` | [recEmptyOption_of_card_eq_zero](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinEnumOption.lean/declarations/recemptyoption-of-card-eq-zero.md) | 64 | `result-track:c1fbb2f9d70ad1896e0d1d38eef88faeae50c5fa221191c8d4f38f4abbcfb595` |
-| 5 | `theorem` | [recEmptyOption_of_card_pos](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinEnumOption.lean/declarations/recemptyoption-of-card-pos.md) | 82 | `result-track:01d3e130df5f9b24cd36a42b69a59a0283d4640ce5dc72f9a934a70978eb16fb` |
-| 6 | `abbrev` | [recOnEmptyOption](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinEnumOption.lean/declarations/reconemptyoption.md) | 105 | `declaration-track:758e78bd41a07f4480b9e259ba82bda3ef6a7ea5cc6b1956e955d2db95d38dba` |
+| 1 | `def` | [insertNone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinEnumOption.lean/declarations/insertnone.md) | 23 | `declaration-track:73602f50ff6590b3a97f18976dbc7303d49f18c1fbdc3843912923ee146db359` |
+| 2 | `instance` | [instFinEnumOptionLast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinEnumOption.lean/declarations/instfinenumoptionlast.md) | 29 | `declaration-track:6455602929f242dd3fe1bb953f7c69ae73d3366144c493e600312532bd834775` |
+| 3 | `def` | [recEmptyOption](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinEnumOption.lean/declarations/recemptyoption.md) | 43 | `declaration-track:847cd63492f474aed6632d931791e0b131e5f69737f92c0fc014c57e33d2924a` |
+| 4 | `theorem` | [recEmptyOption_of_card_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinEnumOption.lean/declarations/recemptyoption-of-card-eq-zero.md) | 64 | `result-track:c1fbb2f9d70ad1896e0d1d38eef88faeae50c5fa221191c8d4f38f4abbcfb595` |
+| 5 | `theorem` | [recEmptyOption_of_card_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinEnumOption.lean/declarations/recemptyoption-of-card-pos.md) | 82 | `result-track:01d3e130df5f9b24cd36a42b69a59a0283d4640ce5dc72f9a934a70978eb16fb` |
+| 6 | `abbrev` | [recOnEmptyOption](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinEnumOption.lean/declarations/reconemptyoption.md) | 105 | `declaration-track:758e78bd41a07f4480b9e259ba82bda3ef6a7ea5cc6b1956e955d2db95d38dba` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

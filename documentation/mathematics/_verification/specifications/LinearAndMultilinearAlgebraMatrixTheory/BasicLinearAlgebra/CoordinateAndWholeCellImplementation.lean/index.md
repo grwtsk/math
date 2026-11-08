@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoordinateAndWholeCellImplementation.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoordinateAndWholeCellImplementation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoordinateAndWholeCellImplementation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoordinateAndWholeCellImplementation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,9 +60,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoordinateAndWholeCellImplementation.lean/declarations/example-source-edition-2.md) | 38 | `declaration-track:d1d96c44d5d4b99f0703127c0ccae1d310bbd58eecf6bf5d65cb9c2e0e038512` |
-| 2 | `def` | [matrixCellImplementation](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoordinateAndWholeCellImplementation.lean/declarations/matrixcellimplementation.md) | 43 | `declaration-track:c3afee7dae1920c27b3ad824c628677f660c351fe38248007dda2a27b67f01b6` |
-| 3 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoordinateAndWholeCellImplementation.lean/declarations/example.md) | 49 | `declaration-track:85137fde41d318b8dbca3a3e52ef780609e5dd9854d95ee6fee75d3a5b14c82e` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoordinateAndWholeCellImplementation.lean/declarations/example-source-edition-2.md) | 38 | `declaration-track:d1d96c44d5d4b99f0703127c0ccae1d310bbd58eecf6bf5d65cb9c2e0e038512` |
+| 2 | `def` | [matrixCellImplementation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoordinateAndWholeCellImplementation.lean/declarations/matrixcellimplementation.md) | 43 | `declaration-track:c3afee7dae1920c27b3ad824c628677f660c351fe38248007dda2a27b67f01b6` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoordinateAndWholeCellImplementation.lean/declarations/example.md) | 49 | `declaration-track:85137fde41d318b8dbca3a3e52ef780609e5dd9854d95ee6fee75d3a5b14c82e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ContextConservativeNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/ContextConservativeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContextConservativeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContextConservativeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [context_solution_sound](../../../../Combinatorics/ContextConservativeNamespaced.lean/declarations/context-solution-sound.md) | 19 | `result-track:004eb4cba5caae36049bb61eeb172c846aaec6d9362cf3ecbb838e0bf831523b` |
-| 2 | `theorem` | [context_authority_view_noninterference](../../../../Combinatorics/ContextConservativeNamespaced.lean/declarations/context-authority-view-noninterference.md) | 31 | `result-track:a2b0162f66a52a13f058f47e73c67dfc3006a8010ee51c5b1e9690e47bb2702b` |
-| 3 | `theorem` | [context_certificate_extension_monotone](../../../../Combinatorics/ContextConservativeNamespaced.lean/declarations/context-certificate-extension-monotone.md) | 38 | `result-track:9987783f6fd9f5e3c5f06f163b5d83c3a57356da91a87c277b511e0ed296dfab` |
-| 4 | `theorem` | [resolveCut_rejected_exactly_when_context_invalid](../../../../Combinatorics/ContextConservativeNamespaced.lean/declarations/resolvecut-rejected-exactly-when-context-invalid.md) | 50 | `result-track:0379d8880f83177cc76d38fff30be6652fb0c12cda6c3eb8d07388f302ba3c88` |
-| 5 | `theorem` | [resolveCut_total](../../../../Combinatorics/ContextConservativeNamespaced.lean/declarations/resolvecut-total.md) | 70 | `result-track:4707374f80c93f4b61533c8f52bf54339a6b578e55c2a537dca83bd7322d76b1` |
+| 1 | `theorem` | [context_solution_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContextConservativeNamespaced.lean/declarations/context-solution-sound.md) | 19 | `result-track:004eb4cba5caae36049bb61eeb172c846aaec6d9362cf3ecbb838e0bf831523b` |
+| 2 | `theorem` | [context_authority_view_noninterference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContextConservativeNamespaced.lean/declarations/context-authority-view-noninterference.md) | 31 | `result-track:a2b0162f66a52a13f058f47e73c67dfc3006a8010ee51c5b1e9690e47bb2702b` |
+| 3 | `theorem` | [context_certificate_extension_monotone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContextConservativeNamespaced.lean/declarations/context-certificate-extension-monotone.md) | 38 | `result-track:9987783f6fd9f5e3c5f06f163b5d83c3a57356da91a87c277b511e0ed296dfab` |
+| 4 | `theorem` | [resolveCut_rejected_exactly_when_context_invalid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContextConservativeNamespaced.lean/declarations/resolvecut-rejected-exactly-when-context-invalid.md) | 50 | `result-track:0379d8880f83177cc76d38fff30be6652fb0c12cda6c3eb8d07388f302ba3c88` |
+| 5 | `theorem` | [resolveCut_total](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContextConservativeNamespaced.lean/declarations/resolvecut-total.md) | 70 | `result-track:4707374f80c93f4b61533c8f52bf54339a6b578e55c2a537dca83bd7322d76b1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/QuotientGroupFiniteNamespaced.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/QuotientGroupFiniteNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/QuotientGroupFiniteNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/QuotientGroupFiniteNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [fintypeOfKerLeRange](../../../../GroupTheoryAndGeneralizations/QuotientGroupFiniteNamespaced.lean/declarations/fintypeofkerlerange.md) | 39 | `declaration-track:e2e76eed2af98c4819b5022e825787739acd48b1e50ee0c1c51145c7c31db8df` |
-| 2 | `def` | [fintypeOfKerEqRange](../../../../GroupTheoryAndGeneralizations/QuotientGroupFiniteNamespaced.lean/declarations/fintypeofkereqrange.md) | 47 | `declaration-track:6d27d4b4c9e062853e6a81a609a37d1b6ddb10d48b042a9c5036183a56e4fae8` |
-| 3 | `def` | [fintypeOfKerOfCodom](../../../../GroupTheoryAndGeneralizations/QuotientGroupFiniteNamespaced.lean/declarations/fintypeofkerofcodom.md) | 52 | `declaration-track:ec07349364978990a0b3e27e980f77ec85a26c7f15473a7a2dd28ca7c992287f` |
-| 4 | `def` | [fintypeOfDomOfCoker](../../../../GroupTheoryAndGeneralizations/QuotientGroupFiniteNamespaced.lean/declarations/fintypeofdomofcoker.md) | 58 | `declaration-track:6c6c16326cdef388d17681446cbf86685e54ec3a1d786c8c8f6418bd2e39bcde` |
-| 5 | `lemma` | [Quotient Group Finite Namespaced](../../../../GroupTheoryAndGeneralizations/QuotientGroupFiniteNamespaced.lean/declarations/of-finite-quot-finite-subgroup.md) | 62 | `result-track:b4faa36cf79f231db4431cf6e6d4eb440faf8272903ea2dca827e38566f09190` |
+| 1 | `def` | [fintypeOfKerLeRange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/QuotientGroupFiniteNamespaced.lean/declarations/fintypeofkerlerange.md) | 39 | `declaration-track:e2e76eed2af98c4819b5022e825787739acd48b1e50ee0c1c51145c7c31db8df` |
+| 2 | `def` | [fintypeOfKerEqRange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/QuotientGroupFiniteNamespaced.lean/declarations/fintypeofkereqrange.md) | 47 | `declaration-track:6d27d4b4c9e062853e6a81a609a37d1b6ddb10d48b042a9c5036183a56e4fae8` |
+| 3 | `def` | [fintypeOfKerOfCodom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/QuotientGroupFiniteNamespaced.lean/declarations/fintypeofkerofcodom.md) | 52 | `declaration-track:ec07349364978990a0b3e27e980f77ec85a26c7f15473a7a2dd28ca7c992287f` |
+| 4 | `def` | [fintypeOfDomOfCoker](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/QuotientGroupFiniteNamespaced.lean/declarations/fintypeofdomofcoker.md) | 58 | `declaration-track:6c6c16326cdef388d17681446cbf86685e54ec3a1d786c8c8f6418bd2e39bcde` |
+| 5 | `lemma` | [Quotient Group Finite Namespaced](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/QuotientGroupFiniteNamespaced.lean/declarations/of-finite-quot-finite-subgroup.md) | 62 | `result-track:b4faa36cf79f231db4431cf6e6d4eb440faf8272903ea2dca827e38566f09190` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

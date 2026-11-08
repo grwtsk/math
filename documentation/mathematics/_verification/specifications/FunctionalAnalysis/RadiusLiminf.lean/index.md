@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/RadiusLiminf.lean/index.md) · [Full source](../../../../FunctionalAnalysis/RadiusLiminf.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/RadiusLiminf.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/RadiusLiminf.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [radius_eq_liminf](../../../../FunctionalAnalysis/RadiusLiminf.lean/declarations/radius-eq-liminf.md) | 33 | `result-track:1aae692b7d0d2bb83bd4ee740f09cc74388135f38bf8f7cb5873d3e9293fd5ea` |
+| 1 | `theorem` | [radius_eq_liminf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/RadiusLiminf.lean/declarations/radius-eq-liminf.md) | 33 | `result-track:1aae692b7d0d2bb83bd4ee740f09cc74388135f38bf8f7cb5873d3e9293fd5ea` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

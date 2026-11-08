@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/DefaultEpsilonPosNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/DefaultEpsilonPosNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DefaultEpsilonPosNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DefaultEpsilonPosNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,7 +60,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [defaultEpsilon_pos](../../../../RealFunctions/DefaultEpsilonPosNamespaced.lean/declarations/defaultepsilon-pos.md) | 31 | `result-track:969ca05ee7aa0030b7ff758c00a8a324140d04b7d1c28dfa082086ae0e2c0cb7` |
+| 1 | `theorem` | [defaultEpsilon_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DefaultEpsilonPosNamespaced.lean/declarations/defaultepsilon-pos.md) | 31 | `result-track:969ca05ee7aa0030b7ff758c00a8a324140d04b7d1c28dfa082086ae0e2c0cb7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

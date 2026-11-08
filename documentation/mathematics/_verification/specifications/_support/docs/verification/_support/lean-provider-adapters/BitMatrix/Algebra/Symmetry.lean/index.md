@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../../../../../_support/docs/verification/_support/lean-provider-adapters/BitMatrix/Algebra/Symmetry.lean/index.md) · [Full source](../../../../../../../../../../_support/docs/verification/_support/lean-provider-adapters/BitMatrix/Algebra/Symmetry.lean/source.md)
+[Module and every result](../../../../../../../../../../_support/provider-documentation/lean-provider-adapters/BitMatrix/Algebra/Symmetry.lean/index.md) · [Full source](../../../../../../../../../../_support/provider-documentation/lean-provider-adapters/BitMatrix/Algebra/Symmetry.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,9 +46,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [Xor Translation Embedding](../../../../../../../../../../GroupTheoryAndGeneralizations/XorTranslationEmbedding.lean/index.md) — import line 1; pinned internal source present.
-- [Hamming Conjugacy And Avalanche](../../../../../../../../../../GroupTheoryAndGeneralizations/HammingConjugacyAndAvalanche.lean/index.md) — import line 2; pinned internal source present.
-- [Iterated Fixed Point Conjugacy](../../../../../../../../../../GroupTheoryAndGeneralizations/IteratedFixedPointConjugacy.lean/index.md) — import line 3; pinned internal source present.
+- [Xor Translation Embedding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/XorTranslationEmbedding.lean/index.md) — import line 1; pinned internal source present.
+- [Hamming Conjugacy And Avalanche](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/HammingConjugacyAndAvalanche.lean/index.md) — import line 2; pinned internal source present.
+- [Iterated Fixed Point Conjugacy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IteratedFixedPointConjugacy.lean/index.md) — import line 3; pinned internal source present.
 
 ## Top results and three-degree verification metric
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/RingTheoryIntegrallyClosed.lean/index.md) · [Full source](../../../../CommutativeAlgebra/RingTheoryIntegrallyClosed.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryIntegrallyClosed.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryIntegrallyClosed.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [IsIntegrallyClosed](../../../../CommutativeAlgebra/RingTheoryIntegrallyClosed.lean/declarations/isintegrallyclosed.md) | 37 | `declaration-track:19a871826b23ece28b395a77ab69e9405ddf536fafc033410d94aafa72e466e3` |
-| 2 | `theorem` | [isIntegrallyClosed_iff](../../../../CommutativeAlgebra/RingTheoryIntegrallyClosed.lean/declarations/isintegrallyclosed-iff.md) | 51 | `result-track:7be7a6ceec0ae2766fdbbe6f24f551c493db439f991e3b3c76a11364e80883f7` |
-| 3 | `theorem` | [isIntegrallyClosed_iff_isIntegralClosure](../../../../CommutativeAlgebra/RingTheoryIntegrallyClosed.lean/declarations/isintegrallyclosed-iff-isintegralclosure.md) | 66 | `result-track:cb50b89403551306d9b66e8999b5f41242ca49bf1f03e8e22aa14f32e24a2267` |
-| 4 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/RingTheoryIntegrallyClosed.lean/declarations/instance.md) | 86 | `declaration-track:e2a86510bc407821ba6bf18221732645a80e7823961e20aeadcb297a5c967325` |
-| 5 | `theorem` | [isIntegral_iff](../../../../CommutativeAlgebra/RingTheoryIntegrallyClosed.lean/declarations/isintegral-iff.md) | 89 | `result-track:08b821b42e1e9c4349b41e9853db1bd56699cd1145b1d159c97b36d040b6efdf` |
-| 6 | `theorem` | [exists_algebraMap_eq_of_isIntegral_pow](../../../../CommutativeAlgebra/RingTheoryIntegrallyClosed.lean/declarations/exists-algebramap-eq-of-isintegral-pow.md) | 93 | `result-track:8fe6f51dce3fc8f7f374a27ed0e6a305fd2c2071748b7ec380224c67ca72189b` |
-| 7 | `theorem` | [exists_algebraMap_eq_of_pow_mem_subalgebra](../../../../CommutativeAlgebra/RingTheoryIntegrallyClosed.lean/declarations/exists-algebramap-eq-of-pow-mem-subalgebra.md) | 98 | `result-track:b3cee465fe62e5fdbb8d67afd9ea2f20b5a2429a44aa92b524910b9770dc3f11` |
-| 8 | `theorem` | [integralClosure_eq_bot_iff](../../../../CommutativeAlgebra/RingTheoryIntegrallyClosed.lean/declarations/integralclosure-eq-bot-iff.md) | 106 | `result-track:89ac60c900a6f397db761374d27158baec987d6e5d5f87dc19f9a5eba4ffe531` |
-| 9 | `theorem` | [integralClosure_eq_bot](../../../../CommutativeAlgebra/RingTheoryIntegrallyClosed.lean/declarations/integralclosure-eq-bot.md) | 120 | `result-track:c0c36aead7bdf1733c301830b792e7e5d728b9ad7c27048b4462f2f525ac0e46` |
-| 10 | `theorem` | [isIntegrallyClosedOfFiniteExtension](../../../../CommutativeAlgebra/RingTheoryIntegrallyClosed.lean/declarations/isintegrallyclosedoffiniteextension.md) | 139 | `result-track:715653e7dec81cd045d787e6d9bcff36154e027efa91a75e58c875453b2f7a6c` |
+| 1 | `class` | [IsIntegrallyClosed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryIntegrallyClosed.lean/declarations/isintegrallyclosed.md) | 37 | `declaration-track:19a871826b23ece28b395a77ab69e9405ddf536fafc033410d94aafa72e466e3` |
+| 2 | `theorem` | [isIntegrallyClosed_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryIntegrallyClosed.lean/declarations/isintegrallyclosed-iff.md) | 51 | `result-track:7be7a6ceec0ae2766fdbbe6f24f551c493db439f991e3b3c76a11364e80883f7` |
+| 3 | `theorem` | [isIntegrallyClosed_iff_isIntegralClosure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryIntegrallyClosed.lean/declarations/isintegrallyclosed-iff-isintegralclosure.md) | 66 | `result-track:cb50b89403551306d9b66e8999b5f41242ca49bf1f03e8e22aa14f32e24a2267` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryIntegrallyClosed.lean/declarations/instance.md) | 86 | `declaration-track:e2a86510bc407821ba6bf18221732645a80e7823961e20aeadcb297a5c967325` |
+| 5 | `theorem` | [isIntegral_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryIntegrallyClosed.lean/declarations/isintegral-iff.md) | 89 | `result-track:08b821b42e1e9c4349b41e9853db1bd56699cd1145b1d159c97b36d040b6efdf` |
+| 6 | `theorem` | [exists_algebraMap_eq_of_isIntegral_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryIntegrallyClosed.lean/declarations/exists-algebramap-eq-of-isintegral-pow.md) | 93 | `result-track:8fe6f51dce3fc8f7f374a27ed0e6a305fd2c2071748b7ec380224c67ca72189b` |
+| 7 | `theorem` | [exists_algebraMap_eq_of_pow_mem_subalgebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryIntegrallyClosed.lean/declarations/exists-algebramap-eq-of-pow-mem-subalgebra.md) | 98 | `result-track:b3cee465fe62e5fdbb8d67afd9ea2f20b5a2429a44aa92b524910b9770dc3f11` |
+| 8 | `theorem` | [integralClosure_eq_bot_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryIntegrallyClosed.lean/declarations/integralclosure-eq-bot-iff.md) | 106 | `result-track:89ac60c900a6f397db761374d27158baec987d6e5d5f87dc19f9a5eba4ffe531` |
+| 9 | `theorem` | [integralClosure_eq_bot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryIntegrallyClosed.lean/declarations/integralclosure-eq-bot.md) | 120 | `result-track:c0c36aead7bdf1733c301830b792e7e5d728b9ad7c27048b4462f2f525ac0e46` |
+| 10 | `theorem` | [isIntegrallyClosedOfFiniteExtension](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryIntegrallyClosed.lean/declarations/isintegrallyclosedoffiniteextension.md) | 139 | `result-track:715653e7dec81cd045d787e6d9bcff36154e027efa91a75e58c875453b2f7a6c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

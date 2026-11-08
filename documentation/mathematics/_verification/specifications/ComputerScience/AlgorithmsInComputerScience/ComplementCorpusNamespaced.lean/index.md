@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ComplementCorpusNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ComplementCorpusNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ComplementCorpusNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ComplementCorpusNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [theoremLink](../../../../../ComputerScience/AlgorithmsInComputerScience/ComplementCorpusNamespaced.lean/declarations/theoremlink.md) | 24 | `declaration-track:219afa5ba08d2b322a57c9783973693ea0cdff19233fb3472429b3859c67745e` |
-| 2 | `def` | [complementUnique](../../../../../ComputerScience/AlgorithmsInComputerScience/ComplementCorpusNamespaced.lean/declarations/complementunique.md) | 47 | `declaration-track:2268d8c083338e2fdba0ab13f1a66d67d1105bfb9b97fcebaf239aa386d25a74` |
-| 3 | `def` | [complementInvolutive](../../../../../ComputerScience/AlgorithmsInComputerScience/ComplementCorpusNamespaced.lean/declarations/complementinvolutive.md) | 53 | `declaration-track:b2f9615e1fb1ff061fdcbf3bc11cc17dbafa05ed354e25a60a8d7cee37388dc8` |
-| 4 | `def` | [complementJoinEqMeet](../../../../../ComputerScience/AlgorithmsInComputerScience/ComplementCorpusNamespaced.lean/declarations/complementjoineqmeet.md) | 59 | `declaration-track:77b8d30fdd97bdf7d23717ee4dd8e9ef44617e084ae37e3d79ec7f776d00ab42` |
-| 5 | `def` | [complementMeetEqJoin](../../../../../ComputerScience/AlgorithmsInComputerScience/ComplementCorpusNamespaced.lean/declarations/complementmeeteqjoin.md) | 65 | `declaration-track:53a7384627825c5a7ea20d1faa2162ebb6f33290355e03840c701584a87e2a28` |
-| 6 | `def` | [links](../../../../../ComputerScience/AlgorithmsInComputerScience/ComplementCorpusNamespaced.lean/declarations/links.md) | 71 | `declaration-track:db053993cf9f1f23673166a33282c5d4027d6a8f3a865d47dfb5b98e102e92d9` |
-| 7 | `theorem` | [links_length](../../../../../ComputerScience/AlgorithmsInComputerScience/ComplementCorpusNamespaced.lean/declarations/links-length.md) | 78 | `result-track:485a36b4c5f99865f43f954f42308bec42a88b5e366468828be47bac96fb30a6` |
+| 1 | `def` | [theoremLink](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ComplementCorpusNamespaced.lean/declarations/theoremlink.md) | 24 | `declaration-track:219afa5ba08d2b322a57c9783973693ea0cdff19233fb3472429b3859c67745e` |
+| 2 | `def` | [complementUnique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ComplementCorpusNamespaced.lean/declarations/complementunique.md) | 47 | `declaration-track:2268d8c083338e2fdba0ab13f1a66d67d1105bfb9b97fcebaf239aa386d25a74` |
+| 3 | `def` | [complementInvolutive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ComplementCorpusNamespaced.lean/declarations/complementinvolutive.md) | 53 | `declaration-track:b2f9615e1fb1ff061fdcbf3bc11cc17dbafa05ed354e25a60a8d7cee37388dc8` |
+| 4 | `def` | [complementJoinEqMeet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ComplementCorpusNamespaced.lean/declarations/complementjoineqmeet.md) | 59 | `declaration-track:77b8d30fdd97bdf7d23717ee4dd8e9ef44617e084ae37e3d79ec7f776d00ab42` |
+| 5 | `def` | [complementMeetEqJoin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ComplementCorpusNamespaced.lean/declarations/complementmeeteqjoin.md) | 65 | `declaration-track:53a7384627825c5a7ea20d1faa2162ebb6f33290355e03840c701584a87e2a28` |
+| 6 | `def` | [links](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ComplementCorpusNamespaced.lean/declarations/links.md) | 71 | `declaration-track:db053993cf9f1f23673166a33282c5d4027d6a8f3a865d47dfb5b98e102e92d9` |
+| 7 | `theorem` | [links_length](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ComplementCorpusNamespaced.lean/declarations/links-length.md) | 78 | `result-track:485a36b4c5f99865f43f954f42308bec42a88b5e366468828be47bac96fb30a6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

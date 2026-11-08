@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/MonoidalBasicNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/MonoidalBasicNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/MonoidalBasicNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/MonoidalBasicNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [monoidalNf](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/MonoidalBasicNamespaced.lean/declarations/monoidalnf.md) | 39 | `declaration-track:a266c4626f93197a2b8d31d46b875283ace92f1c255cc58b8fafe1b0440b1172` |
-| 2 | `elab` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/MonoidalBasicNamespaced.lean/declarations/elab.md) | 43 | `declaration-track:5c92011f7f4e90857b5f49f84940c03fbfae6dfac034ea4197e3bb1a785905cd` |
-| 3 | `def` | [monoidal](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/MonoidalBasicNamespaced.lean/declarations/monoidal.md) | 56 | `declaration-track:1dce219b8200accbf47e68c735400337569c189d3201426b3b94602ffe289866` |
-| 4 | `elab` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/MonoidalBasicNamespaced.lean/declarations/elab-source-edition-2.md) | 60 | `declaration-track:9fee0f0e3de10ce33b0c3c2769e3b46836c39b5bafad54a4b3e6f02101d5bb50` |
+| 1 | `def` | [monoidalNf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/MonoidalBasicNamespaced.lean/declarations/monoidalnf.md) | 39 | `declaration-track:a266c4626f93197a2b8d31d46b875283ace92f1c255cc58b8fafe1b0440b1172` |
+| 2 | `elab` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/MonoidalBasicNamespaced.lean/declarations/elab.md) | 43 | `declaration-track:5c92011f7f4e90857b5f49f84940c03fbfae6dfac034ea4197e3bb1a785905cd` |
+| 3 | `def` | [monoidal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/MonoidalBasicNamespaced.lean/declarations/monoidal.md) | 56 | `declaration-track:1dce219b8200accbf47e68c735400337569c189d3201426b3b94602ffe289866` |
+| 4 | `elab` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/MonoidalBasicNamespaced.lean/declarations/elab-source-edition-2.md) | 60 | `declaration-track:9fee0f0e3de10ce33b0c3c2769e3b46836c39b5bafad54a4b3e6f02101d5bb50` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

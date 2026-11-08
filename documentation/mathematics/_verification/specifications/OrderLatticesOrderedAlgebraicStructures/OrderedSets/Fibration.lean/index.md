@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/Fibration.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/Fibration.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/Fibration.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/Fibration.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [Fibration.isLowerSet_image](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/Fibration.lean/declarations/fibration-islowerset-image.md) | 18 | `result-track:1d45e4a9dc56acaf2cf14343d23919c0436f4388355521486df0aae3380ea21c` |
-| 2 | `lemma` | [fibration_iff_isLowerSet_image_Iic](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/Fibration.lean/declarations/fibration-iff-islowerset-image-iic.md) | 24 | `result-track:315f9615f726979e5c773391fcd4fcb4e4dced1dc47e2920ffc1f844f3519ebe` |
-| 3 | `lemma` | [fibration_iff_isLowerSet_image](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/Fibration.lean/declarations/fibration-iff-islowerset-image.md) | 28 | `result-track:04cdba98c175069650973b3c3fedb92f3be106afc3bc457c3e5c1b15baebea7a` |
-| 4 | `lemma` | [fibration_iff_image_Iic](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/Fibration.lean/declarations/fibration-iff-image-iic.md) | 33 | `result-track:69a273fe6e1be44340a363458a9a7a1bc4decf026982d04e3996f31094fda43d` |
-| 5 | `lemma` | [Fibration.isUpperSet_image](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/Fibration.lean/declarations/fibration-isupperset-image.md) | 39 | `result-track:cd86d9c60757595c7a61a243c6306cf1bd02851b3751e216096da562b17d6efd` |
-| 6 | `lemma` | [fibration_iff_isUpperSet_image_Ici](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/Fibration.lean/declarations/fibration-iff-isupperset-image-ici.md) | 45 | `result-track:fae94f66068d9d6b2ba581f616d9d028e55ebe846722d6e66fe44bbee1ab8e82` |
-| 7 | `lemma` | [fibration_iff_isUpperSet_image](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/Fibration.lean/declarations/fibration-iff-isupperset-image.md) | 49 | `result-track:f044af4a8483cbf974ac66e5d1460d7317e2ffc05eef6be0d4a13611836cc5d9` |
-| 8 | `lemma` | [fibration_iff_image_Ici](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/Fibration.lean/declarations/fibration-iff-image-ici.md) | 53 | `result-track:f4e4e1be28d4e577d5ab86f04657d611c8e7e658e53e749f641ca69ff5d667a0` |
+| 1 | `lemma` | [Fibration.isLowerSet_image](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/Fibration.lean/declarations/fibration-islowerset-image.md) | 18 | `result-track:1d45e4a9dc56acaf2cf14343d23919c0436f4388355521486df0aae3380ea21c` |
+| 2 | `lemma` | [fibration_iff_isLowerSet_image_Iic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/Fibration.lean/declarations/fibration-iff-islowerset-image-iic.md) | 24 | `result-track:315f9615f726979e5c773391fcd4fcb4e4dced1dc47e2920ffc1f844f3519ebe` |
+| 3 | `lemma` | [fibration_iff_isLowerSet_image](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/Fibration.lean/declarations/fibration-iff-islowerset-image.md) | 28 | `result-track:04cdba98c175069650973b3c3fedb92f3be106afc3bc457c3e5c1b15baebea7a` |
+| 4 | `lemma` | [fibration_iff_image_Iic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/Fibration.lean/declarations/fibration-iff-image-iic.md) | 33 | `result-track:69a273fe6e1be44340a363458a9a7a1bc4decf026982d04e3996f31094fda43d` |
+| 5 | `lemma` | [Fibration.isUpperSet_image](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/Fibration.lean/declarations/fibration-isupperset-image.md) | 39 | `result-track:cd86d9c60757595c7a61a243c6306cf1bd02851b3751e216096da562b17d6efd` |
+| 6 | `lemma` | [fibration_iff_isUpperSet_image_Ici](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/Fibration.lean/declarations/fibration-iff-isupperset-image-ici.md) | 45 | `result-track:fae94f66068d9d6b2ba581f616d9d028e55ebe846722d6e66fe44bbee1ab8e82` |
+| 7 | `lemma` | [fibration_iff_isUpperSet_image](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/Fibration.lean/declarations/fibration-iff-isupperset-image.md) | 49 | `result-track:f044af4a8483cbf974ac66e5d1460d7317e2ffc05eef6be0d4a13611836cc5d9` |
+| 8 | `lemma` | [fibration_iff_image_Ici](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/Fibration.lean/declarations/fibration-iff-image-ici.md) | 53 | `result-track:f4e4e1be28d4e577d5ab86f04657d611c8e7e658e53e749f641ca69ff5d667a0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

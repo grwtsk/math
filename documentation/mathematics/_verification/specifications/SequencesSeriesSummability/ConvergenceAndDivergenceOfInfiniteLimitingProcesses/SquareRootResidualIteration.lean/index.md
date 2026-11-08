@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/SquareRootResidualIteration.lean/index.md) · [Full source](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/SquareRootResidualIteration.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/SquareRootResidualIteration.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/SquareRootResidualIteration.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [step](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/SquareRootResidualIteration.lean/declarations/step.md) | 14 | `declaration-track:61d39fcd3b8a97a5f78e40db0d30def7467ae4620fd714da0e3866141a96e85d` |
-| 2 | `def` | [bound](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/SquareRootResidualIteration.lean/declarations/bound.md) | 16 | `declaration-track:d319607593353627dccccffb1b07fdb6a472e700f55a108a414d2548fb63a9c8` |
-| 3 | `theorem` | [step_mono](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/SquareRootResidualIteration.lean/declarations/step-mono.md) | 20 | `result-track:d5a2290319c1346e3c71d0ff40f7d2b04aeb580dbbc686ccf3fbc5022b83116f` |
-| 4 | `theorem` | [finite_return](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/SquareRootResidualIteration.lean/declarations/finite-return.md) | 26 | `result-track:7166f1555c37878c61df73e2efec3d69170d6ecd95660a7f75fb6bd3c6b4de0f` |
-| 5 | `def` | [exponent](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/SquareRootResidualIteration.lean/declarations/exponent.md) | 36 | `declaration-track:468f50b62f49fc87fe7d6b9d49e2e0cd3cdb63ae4a43aa76748843180bb0eca7` |
-| 6 | `theorem` | [exponent_step](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/SquareRootResidualIteration.lean/declarations/exponent-step.md) | 40 | `result-track:a2f50dd71f0a072c3d84396f367c0cb335ea10944849a7aa8af2190534c4c03d` |
-| 7 | `theorem` | [zero_loss](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/SquareRootResidualIteration.lean/declarations/zero-loss.md) | 44 | `result-track:fcdc141b8c3ebcbc8d8a7f2479675a4693816fd8cb0c5b59fab26b4b782a1dc3` |
+| 1 | `def` | [step](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/SquareRootResidualIteration.lean/declarations/step.md) | 14 | `declaration-track:61d39fcd3b8a97a5f78e40db0d30def7467ae4620fd714da0e3866141a96e85d` |
+| 2 | `def` | [bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/SquareRootResidualIteration.lean/declarations/bound.md) | 16 | `declaration-track:d319607593353627dccccffb1b07fdb6a472e700f55a108a414d2548fb63a9c8` |
+| 3 | `theorem` | [step_mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/SquareRootResidualIteration.lean/declarations/step-mono.md) | 20 | `result-track:d5a2290319c1346e3c71d0ff40f7d2b04aeb580dbbc686ccf3fbc5022b83116f` |
+| 4 | `theorem` | [finite_return](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/SquareRootResidualIteration.lean/declarations/finite-return.md) | 26 | `result-track:7166f1555c37878c61df73e2efec3d69170d6ecd95660a7f75fb6bd3c6b4de0f` |
+| 5 | `def` | [exponent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/SquareRootResidualIteration.lean/declarations/exponent.md) | 36 | `declaration-track:468f50b62f49fc87fe7d6b9d49e2e0cd3cdb63ae4a43aa76748843180bb0eca7` |
+| 6 | `theorem` | [exponent_step](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/SquareRootResidualIteration.lean/declarations/exponent-step.md) | 40 | `result-track:a2f50dd71f0a072c3d84396f367c0cb335ea10944849a7aa8af2190534c4c03d` |
+| 7 | `theorem` | [zero_loss](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/SquareRootResidualIteration.lean/declarations/zero-loss.md) | 44 | `result-track:fcdc141b8c3ebcbc8d8a7f2479675a4693816fd8cb0c5b59fab26b4b782a1dc3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

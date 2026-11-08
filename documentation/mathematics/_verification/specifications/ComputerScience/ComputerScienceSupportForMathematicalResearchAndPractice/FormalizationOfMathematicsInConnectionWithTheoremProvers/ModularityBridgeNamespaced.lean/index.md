@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ModularityBridgeNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ModularityBridgeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ModularityBridgeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ModularityBridgeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [hasse_weil_analytic_from_modularity](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ModularityBridgeNamespaced.lean/declarations/hasse-weil-analytic-from-modularity.md) | 28 | `result-track:687f2609737722f01647a08c6a867cfaeb10b6cedc2669653101bb1a611f3093` |
-| 2 | `theorem` | [hasse_weil_functional_from_modularity](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ModularityBridgeNamespaced.lean/declarations/hasse-weil-functional-from-modularity.md) | 34 | `result-track:4e01ce0221f33c3de4965eca7a7098de9f6fe87705bf31ac9eb47ed90f50e34b` |
+| 1 | `theorem` | [hasse_weil_analytic_from_modularity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ModularityBridgeNamespaced.lean/declarations/hasse-weil-analytic-from-modularity.md) | 28 | `result-track:687f2609737722f01647a08c6a867cfaeb10b6cedc2669653101bb1a611f3093` |
+| 2 | `theorem` | [hasse_weil_functional_from_modularity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ModularityBridgeNamespaced.lean/declarations/hasse-weil-functional-from-modularity.md) | 34 | `result-track:4e01ce0221f33c3de4965eca7a7098de9f6fe87705bf31ac9eb47ed90f50e34b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

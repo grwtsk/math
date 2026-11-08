@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/CliPublicEdition5.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/CliPublicEdition5.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CliPublicEdition5.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CliPublicEdition5.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CliConfig](../../../../../ComputerScience/AlgorithmsInComputerScience/CliPublicEdition5.lean/declarations/cliconfig.md) | 13 | `declaration-track:73dea3ea8e4491759657d2dd9b66c82440f4ee6f6ae3851903f4cbcd1cd5aa63` |
-| 2 | `def` | [parseModuleName](../../../../../ComputerScience/AlgorithmsInComputerScience/CliPublicEdition5.lean/declarations/parsemodulename.md) | 20 | `declaration-track:2711a737ae5f717832543ce4ca4b67ed26c589adec4e856e971bd80099a6d04b` |
-| 3 | `def` | [parseArgs](../../../../../ComputerScience/AlgorithmsInComputerScience/CliPublicEdition5.lean/declarations/parseargs.md) | 24 | `declaration-track:75a29265515e92370d22aacf717b870a25da3e53249577339b82b61407380129` |
-| 4 | `def` | [sourcePath](../../../../../ComputerScience/AlgorithmsInComputerScience/CliPublicEdition5.lean/declarations/sourcepath.md) | 40 | `declaration-track:a37d8861b3e2dfc14d92b58e67f618bb4d64698a8651f372466651a5241394a4` |
-| 5 | `def` | [selectedModules](../../../../../ComputerScience/AlgorithmsInComputerScience/CliPublicEdition5.lean/declarations/selectedmodules.md) | 43 | `declaration-track:debd8db25cf38d6e045b1f474940a35ac246241a33ffd322c466d440ad0d854c` |
-| 6 | `def` | [run](../../../../../ComputerScience/AlgorithmsInComputerScience/CliPublicEdition5.lean/declarations/run.md) | 53 | `declaration-track:b49b7302a6e27d9ab6d64088524837075d5f899ba25940d1621c7ef097df8b9d` |
+| 1 | `structure` | [CliConfig](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CliPublicEdition5.lean/declarations/cliconfig.md) | 13 | `declaration-track:73dea3ea8e4491759657d2dd9b66c82440f4ee6f6ae3851903f4cbcd1cd5aa63` |
+| 2 | `def` | [parseModuleName](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CliPublicEdition5.lean/declarations/parsemodulename.md) | 20 | `declaration-track:2711a737ae5f717832543ce4ca4b67ed26c589adec4e856e971bd80099a6d04b` |
+| 3 | `def` | [parseArgs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CliPublicEdition5.lean/declarations/parseargs.md) | 24 | `declaration-track:75a29265515e92370d22aacf717b870a25da3e53249577339b82b61407380129` |
+| 4 | `def` | [sourcePath](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CliPublicEdition5.lean/declarations/sourcepath.md) | 40 | `declaration-track:a37d8861b3e2dfc14d92b58e67f618bb4d64698a8651f372466651a5241394a4` |
+| 5 | `def` | [selectedModules](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CliPublicEdition5.lean/declarations/selectedmodules.md) | 43 | `declaration-track:debd8db25cf38d6e045b1f474940a35ac246241a33ffd322c466d440ad0d854c` |
+| 6 | `def` | [run](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CliPublicEdition5.lean/declarations/run.md) | 53 | `declaration-track:b49b7302a6e27d9ab6d64088524837075d5f899ba25940d1621c7ef097df8b9d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

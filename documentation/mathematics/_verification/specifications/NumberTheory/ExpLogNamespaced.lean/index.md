@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/ExpLogNamespaced.lean/index.md) · [Full source](../../../../NumberTheory/ExpLogNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ExpLogNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ExpLogNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,8 +60,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [Summable.clog_one_sub](../../../../NumberTheory/ExpLogNamespaced.lean/declarations/summable-clog-one-sub.md) | 31 | `result-track:d48e98c75c4d824261438210998bedfd363725951fadc62554fd8cda7cefa047` |
-| 2 | `theorem` | [exp_tsum_primes_log_eq_tsum](../../../../NumberTheory/ExpLogNamespaced.lean/declarations/exp-tsum-primes-log-eq-tsum.md) | 43 | `result-track:5509ae5e9edf6f2a196c297b31d3c5bf6ce04f0e295dcd2f19e18dcd13cef49c` |
+| 1 | `lemma` | [Summable.clog_one_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ExpLogNamespaced.lean/declarations/summable-clog-one-sub.md) | 31 | `result-track:d48e98c75c4d824261438210998bedfd363725951fadc62554fd8cda7cefa047` |
+| 2 | `theorem` | [exp_tsum_primes_log_eq_tsum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ExpLogNamespaced.lean/declarations/exp-tsum-primes-log-eq-tsum.md) | 43 | `result-track:5509ae5e9edf6f2a196c297b31d3c5bf6ce04f0e295dcd2f19e18dcd13cef49c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ActualHighLagMixedSignFixtures.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ActualHighLagMixedSignFixtures.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualHighLagMixedSignFixtures.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualHighLagMixedSignFixtures.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exact_actual_negative_value](../../../../MeasureAndIntegration/ActualHighLagMixedSignFixtures.lean/declarations/exact-actual-negative-value.md) | 15 | `result-track:c769c62ddea1a8e0ddbd4a4cc854c0fbb29a2f36f8c264caae3a0aa548211a49` |
-| 2 | `theorem` | [actual_mixed_atom_is_not_nonnegative](../../../../MeasureAndIntegration/ActualHighLagMixedSignFixtures.lean/declarations/actual-mixed-atom-is-not-nonnegative.md) | 21 | `result-track:d6235f9d06f56fe4b20fb74f721e50ecd87db288475d0139d50c6c03a4188f76` |
-| 3 | `theorem` | [positive_correlation_does_not_make_mixed_atom_positive](../../../../MeasureAndIntegration/ActualHighLagMixedSignFixtures.lean/declarations/positive-correlation-does-not-make-mixed-atom-positive.md) | 26 | `result-track:1c5a2f0e0e56e63d9fa8c9becab9d290268e5ed997268fdf6fe9c65068a9ba0b` |
-| 4 | `theorem` | [sign_uses_plus_derivative_pairing](../../../../MeasureAndIntegration/ActualHighLagMixedSignFixtures.lean/declarations/sign-uses-plus-derivative-pairing.md) | 32 | `result-track:ac402ab126d70d1b79554dbce1e7d48e5fa754d72e73ff8ab82c0d48e24777d4` |
-| 5 | `theorem` | [universal_atom_positivity_is_not_available](../../../../MeasureAndIntegration/ActualHighLagMixedSignFixtures.lean/declarations/universal-atom-positivity-is-not-available.md) | 39 | `result-track:d51d9d3dfdb66c6208c89d5e95a040806c9193622c41216d3cd1acf8a7afc461` |
+| 1 | `theorem` | [exact_actual_negative_value](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualHighLagMixedSignFixtures.lean/declarations/exact-actual-negative-value.md) | 15 | `result-track:c769c62ddea1a8e0ddbd4a4cc854c0fbb29a2f36f8c264caae3a0aa548211a49` |
+| 2 | `theorem` | [actual_mixed_atom_is_not_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualHighLagMixedSignFixtures.lean/declarations/actual-mixed-atom-is-not-nonnegative.md) | 21 | `result-track:d6235f9d06f56fe4b20fb74f721e50ecd87db288475d0139d50c6c03a4188f76` |
+| 3 | `theorem` | [positive_correlation_does_not_make_mixed_atom_positive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualHighLagMixedSignFixtures.lean/declarations/positive-correlation-does-not-make-mixed-atom-positive.md) | 26 | `result-track:1c5a2f0e0e56e63d9fa8c9becab9d290268e5ed997268fdf6fe9c65068a9ba0b` |
+| 4 | `theorem` | [sign_uses_plus_derivative_pairing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualHighLagMixedSignFixtures.lean/declarations/sign-uses-plus-derivative-pairing.md) | 32 | `result-track:ac402ab126d70d1b79554dbce1e7d48e5fa754d72e73ff8ab82c0d48e24777d4` |
+| 5 | `theorem` | [universal_atom_positivity_is_not_available](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualHighLagMixedSignFixtures.lean/declarations/universal-atom-positivity-is-not-available.md) | 39 | `result-track:d51d9d3dfdb66c6208c89d5e95a040806c9193622c41216d3cd1acf8a7afc461` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

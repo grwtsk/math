@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceNamespacedEdition4.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceNamespacedEdition4.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceNamespacedEdition4.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceNamespacedEdition4.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,15 +61,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [wholeCubicMajorant](../../../../MeasureAndIntegration/SourceNamespacedEdition4.lean/declarations/wholecubicmajorant.md) | 33 | `declaration-track:bc52c6ac9f1773ef38530f26254681b50f3dbe94265381347e36ab99193d237d` |
-| 2 | `def` | [wholeCubicErrorRow](../../../../MeasureAndIntegration/SourceNamespacedEdition4.lean/declarations/wholecubicerrorrow.md) | 38 | `declaration-track:a31d0828005d7fec61f8bf2701252be03745a7a1c211d415fe651eb33a3511ae` |
-| 3 | `theorem` | [cubic_log_error_all_positive](../../../../MeasureAndIntegration/SourceNamespacedEdition4.lean/declarations/cubic-log-error-all-positive.md) | 43 | `result-track:239f307c7b8706c3a993da6edfe6916c65948c8ef5a0f694aea27050e45206c7` |
-| 4 | `theorem` | [wholeCubicMajorant_integrable](../../../../MeasureAndIntegration/SourceNamespacedEdition4.lean/declarations/wholecubicmajorant-integrable.md) | 72 | `result-track:d2b358464a74056ac17e57317a1052da8031f9d84efa0f2c522f797374ab7800` |
-| 5 | `theorem` | [actual_whole_error_le_majorant](../../../../MeasureAndIntegration/SourceNamespacedEdition4.lean/declarations/actual-whole-error-le-majorant.md) | 77 | `result-track:b9ff49e99fb708b84f7892376a24319efa316d904fd992534a1bb47e89c1bd64` |
-| 6 | `theorem` | [actual_whole_error_integrable](../../../../MeasureAndIntegration/SourceNamespacedEdition4.lean/declarations/actual-whole-error-integrable.md) | 91 | `result-track:2d56f40bb48a145ed078a1a0e7f4802dc4fb572fec89de82467049e1cc7d020e` |
-| 7 | `theorem` | [wholeCubicMajorant_integral_le](../../../../MeasureAndIntegration/SourceNamespacedEdition4.lean/declarations/wholecubicmajorant-integral-le.md) | 102 | `result-track:cfd8dad107a5d93807f8a57671d91128334b93a6936b8d2161eb41669d18f3cc` |
-| 8 | `theorem` | [wholeCubicErrorRow_abs_le](../../../../MeasureAndIntegration/SourceNamespacedEdition4.lean/declarations/wholecubicerrorrow-abs-le.md) | 119 | `result-track:3d0f10673140d834b7a011a86d40682fd0372ac9a7c4e7ac75db7477a415f025` |
-| 9 | `theorem` | [whole_short_error_abs_le](../../../../MeasureAndIntegration/SourceNamespacedEdition4.lean/declarations/whole-short-error-abs-le.md) | 129 | `result-track:fa8dec5fa4d9e8e081bbb30049f970992265de9e81ad6aba638ce6289f2b4bb5` |
+| 1 | `def` | [wholeCubicMajorant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceNamespacedEdition4.lean/declarations/wholecubicmajorant.md) | 33 | `declaration-track:bc52c6ac9f1773ef38530f26254681b50f3dbe94265381347e36ab99193d237d` |
+| 2 | `def` | [wholeCubicErrorRow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceNamespacedEdition4.lean/declarations/wholecubicerrorrow.md) | 38 | `declaration-track:a31d0828005d7fec61f8bf2701252be03745a7a1c211d415fe651eb33a3511ae` |
+| 3 | `theorem` | [cubic_log_error_all_positive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceNamespacedEdition4.lean/declarations/cubic-log-error-all-positive.md) | 43 | `result-track:239f307c7b8706c3a993da6edfe6916c65948c8ef5a0f694aea27050e45206c7` |
+| 4 | `theorem` | [wholeCubicMajorant_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceNamespacedEdition4.lean/declarations/wholecubicmajorant-integrable.md) | 72 | `result-track:d2b358464a74056ac17e57317a1052da8031f9d84efa0f2c522f797374ab7800` |
+| 5 | `theorem` | [actual_whole_error_le_majorant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceNamespacedEdition4.lean/declarations/actual-whole-error-le-majorant.md) | 77 | `result-track:b9ff49e99fb708b84f7892376a24319efa316d904fd992534a1bb47e89c1bd64` |
+| 6 | `theorem` | [actual_whole_error_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceNamespacedEdition4.lean/declarations/actual-whole-error-integrable.md) | 91 | `result-track:2d56f40bb48a145ed078a1a0e7f4802dc4fb572fec89de82467049e1cc7d020e` |
+| 7 | `theorem` | [wholeCubicMajorant_integral_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceNamespacedEdition4.lean/declarations/wholecubicmajorant-integral-le.md) | 102 | `result-track:cfd8dad107a5d93807f8a57671d91128334b93a6936b8d2161eb41669d18f3cc` |
+| 8 | `theorem` | [wholeCubicErrorRow_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceNamespacedEdition4.lean/declarations/wholecubicerrorrow-abs-le.md) | 119 | `result-track:3d0f10673140d834b7a011a86d40682fd0372ac9a7c4e7ac75db7477a415f025` |
+| 9 | `theorem` | [whole_short_error_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceNamespacedEdition4.lean/declarations/whole-short-error-abs-le.md) | 129 | `result-track:fa8dec5fa4d9e8e081bbb30049f970992265de9e81ad6aba638ce6289f2b4bb5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

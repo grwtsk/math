@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/MultiplicativeNumberTheory/FiveModeFiniteActualNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/MultiplicativeNumberTheory/FiveModeFiniteActualNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/FiveModeFiniteActualNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/FiveModeFiniteActualNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,7 +60,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_finite_bounds_of_complete_height_and_strict_tail](../../../../../NumberTheory/MultiplicativeNumberTheory/FiveModeFiniteActualNamespaced.lean/declarations/actual-finite-bounds-of-complete-height-and-strict-tail.md) | 34 | `result-track:7bd9733692399739d899699c65dbc2bb944fcc7eb8a4e97f37191cc6332bb1a2` |
+| 1 | `theorem` | [actual_finite_bounds_of_complete_height_and_strict_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/FiveModeFiniteActualNamespaced.lean/declarations/actual-finite-bounds-of-complete-height-and-strict-tail.md) | 34 | `result-track:7bd9733692399739d899699c65dbc2bb944fcc7eb8a4e97f37191cc6332bb1a2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

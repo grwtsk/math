@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/PortFiberSectionPairing.lean/index.md) · [Full source](../../../../MeasureAndIntegration/PortFiberSectionPairing.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PortFiberSectionPairing.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PortFiberSectionPairing.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Interfaces.PortFiberSectionLinear`](../../../../FunctionsOfAComplexVariable/PortFiberSectionLinear.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.HolomorphicLineSectionPairing`](../../../../MeasureAndIntegration/HolomorphicLineSectionPairing.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.Interfaces.PortFiberSectionLinear`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberSectionLinear.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.HolomorphicLineSectionPairing`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/HolomorphicLineSectionPairing.lean/index.md) — import line 2; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,17 +58,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [schemaVersion](../../../../MeasureAndIntegration/PortFiberSectionPairing.lean/declarations/schemaversion.md) | 29 | `declaration-track:e8f8f66c3fdb6489b2ac46b0a285b315972ff879ff5a6c7622258ef7b3896178` |
-| 2 | `inductive` | [AddedIndex](../../../../MeasureAndIntegration/PortFiberSectionPairing.lean/declarations/addedindex.md) | 31 | `declaration-track:fa89526e4534393f1705f412fee19a687fd25a9b6538c369f781acb4ca186d3f` |
-| 3 | `def` | [AddedClaim](../../../../MeasureAndIntegration/PortFiberSectionPairing.lean/declarations/addedclaim.md) | 42 | `declaration-track:f1c6062885417403b12c02b8354b6bc840745834088e2959c12d3af8bb7a3623` |
-| 4 | `theorem` | [addedClaim_proof](../../../../MeasureAndIntegration/PortFiberSectionPairing.lean/declarations/addedclaim-proof.md) | 95 | `result-track:e055ca2cc7e477961b9fe09499edfb4cea47529801fb88e58406584766394315` |
-| 5 | `def` | [portfolio](../../../../MeasureAndIntegration/PortFiberSectionPairing.lean/declarations/portfolio.md) | 131 | `declaration-track:f7a2613c60b1f0e3d9024fd63b1ea22cc12e1ac2bec252e752a02ae85c457c80` |
-| 6 | `def` | [architecture](../../../../MeasureAndIntegration/PortFiberSectionPairing.lean/declarations/architecture.md) | 134 | `declaration-track:859b6dd704fdddac95719cec209c26ccf403d601f0e6792e2f531bc63bd9e387` |
-| 7 | `abbrev` | [PreviousIndex](../../../../MeasureAndIntegration/PortFiberSectionPairing.lean/declarations/previousindex.md) | 138 | `declaration-track:ef359edfd6d59dd6753395d8898c8c10b5cc463d85959fd5a3053374170f58a0` |
-| 8 | `theorem` | [original_branch_unchanged](../../../../MeasureAndIntegration/PortFiberSectionPairing.lean/declarations/original-branch-unchanged.md) | 142 | `result-track:0852133baa133e13a21b0af09a999e7b8027b515f36a1519c0c7c46ba5c7258a` |
-| 9 | `theorem` | [new_branch_proved](../../../../MeasureAndIntegration/PortFiberSectionPairing.lean/declarations/new-branch-proved.md) | 148 | `result-track:03e52620c2c558f97741958f438dedaaa26d92c2ff562fae337fa063145c42f3` |
-| 10 | `theorem` | [target_unchanged](../../../../MeasureAndIntegration/PortFiberSectionPairing.lean/declarations/target-unchanged.md) | 153 | `result-track:15a4c61607d2415f22c7d676f3782949e3d28c82ecd98eb7cd36f182b9ec237a` |
-| 11 | `theorem` | [retarget_preserves_new](../../../../MeasureAndIntegration/PortFiberSectionPairing.lean/declarations/retarget-preserves-new.md) | 158 | `result-track:0fc29b77437bc3f370303b0e46dcfb7afa699588c3fbafaad7c1f98b1092ae6e` |
+| 1 | `def` | [schemaVersion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PortFiberSectionPairing.lean/declarations/schemaversion.md) | 29 | `declaration-track:e8f8f66c3fdb6489b2ac46b0a285b315972ff879ff5a6c7622258ef7b3896178` |
+| 2 | `inductive` | [AddedIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PortFiberSectionPairing.lean/declarations/addedindex.md) | 31 | `declaration-track:fa89526e4534393f1705f412fee19a687fd25a9b6538c369f781acb4ca186d3f` |
+| 3 | `def` | [AddedClaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PortFiberSectionPairing.lean/declarations/addedclaim.md) | 42 | `declaration-track:f1c6062885417403b12c02b8354b6bc840745834088e2959c12d3af8bb7a3623` |
+| 4 | `theorem` | [addedClaim_proof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PortFiberSectionPairing.lean/declarations/addedclaim-proof.md) | 95 | `result-track:e055ca2cc7e477961b9fe09499edfb4cea47529801fb88e58406584766394315` |
+| 5 | `def` | [portfolio](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PortFiberSectionPairing.lean/declarations/portfolio.md) | 131 | `declaration-track:f7a2613c60b1f0e3d9024fd63b1ea22cc12e1ac2bec252e752a02ae85c457c80` |
+| 6 | `def` | [architecture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PortFiberSectionPairing.lean/declarations/architecture.md) | 134 | `declaration-track:859b6dd704fdddac95719cec209c26ccf403d601f0e6792e2f531bc63bd9e387` |
+| 7 | `abbrev` | [PreviousIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PortFiberSectionPairing.lean/declarations/previousindex.md) | 138 | `declaration-track:ef359edfd6d59dd6753395d8898c8c10b5cc463d85959fd5a3053374170f58a0` |
+| 8 | `theorem` | [original_branch_unchanged](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PortFiberSectionPairing.lean/declarations/original-branch-unchanged.md) | 142 | `result-track:0852133baa133e13a21b0af09a999e7b8027b515f36a1519c0c7c46ba5c7258a` |
+| 9 | `theorem` | [new_branch_proved](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PortFiberSectionPairing.lean/declarations/new-branch-proved.md) | 148 | `result-track:03e52620c2c558f97741958f438dedaaa26d92c2ff562fae337fa063145c42f3` |
+| 10 | `theorem` | [target_unchanged](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PortFiberSectionPairing.lean/declarations/target-unchanged.md) | 153 | `result-track:15a4c61607d2415f22c7d676f3782949e3d28c82ecd98eb7cd36f182b9ec237a` |
+| 11 | `theorem` | [retarget_preserves_new](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PortFiberSectionPairing.lean/declarations/retarget-preserves-new.md) | 158 | `result-track:0fc29b77437bc3f370303b0e46dcfb7afa699588c3fbafaad7c1f98b1092ae6e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

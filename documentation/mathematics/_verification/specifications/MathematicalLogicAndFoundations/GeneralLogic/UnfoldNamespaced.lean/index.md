@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/UnfoldNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/UnfoldNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/UnfoldNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/UnfoldNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [WalkingPair](../../../../../MathematicalLogicAndFoundations/GeneralLogic/UnfoldNamespaced.lean/declarations/walkingpair.md) | 22 | `declaration-track:a3c6bb883eee74b802ad04089a35fc80f2b6e09a5f1f35a2f52bdcd5022a939a` |
-| 2 | `def` | [WidePullbackShape](../../../../../MathematicalLogicAndFoundations/GeneralLogic/UnfoldNamespaced.lean/declarations/widepullbackshape.md) | 24 | `declaration-track:2756f8798021cd429f8227271911a46b167fc842d7c1c55278d574937f48a8f5` |
-| 3 | `abbrev` | [WalkingCospan](../../../../../MathematicalLogicAndFoundations/GeneralLogic/UnfoldNamespaced.lean/declarations/walkingcospan.md) | 26 | `declaration-track:fc01c50bfb7bea68daa69f1210fd6a7a08e6edd36d4f6333c0fddc3e1736aed5` |
-| 4 | `def` | [WalkingCospan_elim](../../../../../MathematicalLogicAndFoundations/GeneralLogic/UnfoldNamespaced.lean/declarations/walkingcospan-elim.md) | 29 | `declaration-track:4af56192f37e4c20eb270a1382aa361bb5cfadc39b0f8c3e47e8f5650caa7272` |
-| 5 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/UnfoldNamespaced.lean/declarations/example-source-edition-3.md) | 45 | `declaration-track:e930c688a74d38a41c5283b6bf84d467d9ef16ba9a703fda87930f799cb1bf93` |
-| 6 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/UnfoldNamespaced.lean/declarations/example-source-edition-2.md) | 48 | `declaration-track:845068f3e74d1ce3061ad933fdd748d7da796f2cce15b96cdd01652a0f47ab65` |
-| 7 | `def` | [Foo](../../../../../MathematicalLogicAndFoundations/GeneralLogic/UnfoldNamespaced.lean/declarations/foo.md) | 52 | `declaration-track:b10092e81bd358d0dfcf4d34b24fc1aebf66e50f720a8ab1a40f756e8a59b212` |
-| 8 | `def` | [Bar](../../../../../MathematicalLogicAndFoundations/GeneralLogic/UnfoldNamespaced.lean/declarations/bar.md) | 55 | `declaration-track:46f5b63816c2b99f9b857eae0f57c84be5ddd6b8da4bcc3886c462784afc166b` |
-| 9 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/UnfoldNamespaced.lean/declarations/example.md) | 72 | `declaration-track:4861eac1d12455ba045d1a75c43379529f9c9ee0efb0f64ec18f57b96f3809d8` |
+| 1 | `structure` | [WalkingPair](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/UnfoldNamespaced.lean/declarations/walkingpair.md) | 22 | `declaration-track:a3c6bb883eee74b802ad04089a35fc80f2b6e09a5f1f35a2f52bdcd5022a939a` |
+| 2 | `def` | [WidePullbackShape](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/UnfoldNamespaced.lean/declarations/widepullbackshape.md) | 24 | `declaration-track:2756f8798021cd429f8227271911a46b167fc842d7c1c55278d574937f48a8f5` |
+| 3 | `abbrev` | [WalkingCospan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/UnfoldNamespaced.lean/declarations/walkingcospan.md) | 26 | `declaration-track:fc01c50bfb7bea68daa69f1210fd6a7a08e6edd36d4f6333c0fddc3e1736aed5` |
+| 4 | `def` | [WalkingCospan_elim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/UnfoldNamespaced.lean/declarations/walkingcospan-elim.md) | 29 | `declaration-track:4af56192f37e4c20eb270a1382aa361bb5cfadc39b0f8c3e47e8f5650caa7272` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/UnfoldNamespaced.lean/declarations/example-source-edition-3.md) | 45 | `declaration-track:e930c688a74d38a41c5283b6bf84d467d9ef16ba9a703fda87930f799cb1bf93` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/UnfoldNamespaced.lean/declarations/example-source-edition-2.md) | 48 | `declaration-track:845068f3e74d1ce3061ad933fdd748d7da796f2cce15b96cdd01652a0f47ab65` |
+| 7 | `def` | [Foo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/UnfoldNamespaced.lean/declarations/foo.md) | 52 | `declaration-track:b10092e81bd358d0dfcf4d34b24fc1aebf66e50f720a8ab1a40f756e8a59b212` |
+| 8 | `def` | [Bar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/UnfoldNamespaced.lean/declarations/bar.md) | 55 | `declaration-track:46f5b63816c2b99f9b857eae0f57c84be5ddd6b8da4bcc3886c462784afc166b` |
+| 9 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/UnfoldNamespaced.lean/declarations/example.md) | 72 | `declaration-track:4861eac1d12455ba045d1a75c43379529f9c9ee0efb0f64ec18f57b96f3809d8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

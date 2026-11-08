@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FixedHankelCutoff.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FixedHankelCutoff.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FixedHankelCutoff.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FixedHankelCutoff.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FixedHankelCutoff.lean/declarations/example-source-edition-2.md) | 7 | `declaration-track:ab90a9fc67bb3a46daaf8031da902aa970bcb8d7359bf4d388d4d16b9183f4c1` |
-| 2 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FixedHankelCutoff.lean/declarations/example-source-edition-3.md) | 11 | `declaration-track:b7edc859ff107467d8d939dacea749212e680ff102169d0dd2b2a8838511941f` |
-| 3 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FixedHankelCutoff.lean/declarations/example-source-edition-5.md) | 15 | `declaration-track:f7f6367d9214fd0c3fe7b425b02903ccc8b735fbe340a0179708ab8f15046ce7` |
-| 4 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FixedHankelCutoff.lean/declarations/example.md) | 19 | `declaration-track:9d8609172b2dadf1f4a930cfea7a6eb52c397ed601d8e013aace1521640bba7b` |
-| 5 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FixedHankelCutoff.lean/declarations/example-source-edition-4.md) | 24 | `declaration-track:e56422e99e2cf9fcf4ccb01f0f61e354211a32fb19635212b9011c9366cc2207` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FixedHankelCutoff.lean/declarations/example-source-edition-2.md) | 7 | `declaration-track:ab90a9fc67bb3a46daaf8031da902aa970bcb8d7359bf4d388d4d16b9183f4c1` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FixedHankelCutoff.lean/declarations/example-source-edition-3.md) | 11 | `declaration-track:b7edc859ff107467d8d939dacea749212e680ff102169d0dd2b2a8838511941f` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FixedHankelCutoff.lean/declarations/example-source-edition-5.md) | 15 | `declaration-track:f7f6367d9214fd0c3fe7b425b02903ccc8b735fbe340a0179708ab8f15046ce7` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FixedHankelCutoff.lean/declarations/example.md) | 19 | `declaration-track:9d8609172b2dadf1f4a930cfea7a6eb52c397ed601d8e013aace1521640bba7b` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FixedHankelCutoff.lean/declarations/example-source-edition-4.md) | 24 | `declaration-track:e56422e99e2cf9fcf4ccb01f0f61e354211a32fb19635212b9011c9366cc2207` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

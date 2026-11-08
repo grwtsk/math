@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/Realization.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/Realization.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Realization.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Realization.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,19 +59,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [modularRealization](../../../../GroupTheoryAndGeneralizations/Realization.lean/declarations/modularrealization.md) | 15 | `declaration-track:0e909c22f497401fe8878732773c532c0f74ff72b514febbeeb7573a544ff6e0` |
-| 2 | `def` | [realRealization](../../../../GroupTheoryAndGeneralizations/Realization.lean/declarations/realrealization.md) | 18 | `declaration-track:b37fc3f6e1cb04f530f10024998a9a443d9bf01cbd626c0a35922905e19e2413` |
-| 3 | `def` | [groupRealization](../../../../GroupTheoryAndGeneralizations/Realization.lean/declarations/grouprealization.md) | 21 | `declaration-track:31e2484964c5f2240cb8f4da32ab59c464237e944e00c700d308c0ce2842c223` |
-| 4 | `structure` | [FrontierCoordinate](../../../../GroupTheoryAndGeneralizations/Realization.lean/declarations/frontiercoordinate.md) | 28 | `declaration-track:e61b446937f511e9c559c08532b9d8d1d91c419f0485f3c39f2672ac96d44e0c` |
-| 5 | `theorem` | [modularRealization_ofNat](../../../../GroupTheoryAndGeneralizations/Realization.lean/declarations/modularrealization-ofnat.md) | 31 | `result-track:b3292d2fd86ccd99ba1ff9c0f9a0f17a3b60ad26a86001f8475a4b12f897a2f5` |
-| 6 | `theorem` | [realRealization_ofNat](../../../../GroupTheoryAndGeneralizations/Realization.lean/declarations/realrealization-ofnat.md) | 37 | `result-track:359b087d51cb0bc7bb2a69bcf6013fcffd019be78db305562ac1dcc3d71cfaf8` |
-| 7 | `theorem` | [groupRealization_ofNat](../../../../GroupTheoryAndGeneralizations/Realization.lean/declarations/grouprealization-ofnat.md) | 41 | `result-track:5c455e5848efa4fa99eb681ac57af707c078acd1c025f089b498ee34242e9bd3` |
-| 8 | `example` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/Realization.lean/declarations/example-source-edition-2.md) | 50 | `declaration-track:3c925ad29618fd5fe5e5fc11b83a6af2f1a1e9879dcefc70a6c598f0595ffb5f` |
-| 9 | `example` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/Realization.lean/declarations/example-source-edition-6.md) | 51 | `declaration-track:eb97bcb6bcf9acd44bf337b8ab1f3e4e275a47b3e632626594ca0b6d7e68c218` |
-| 10 | `example` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/Realization.lean/declarations/example-source-edition-4.md) | 52 | `declaration-track:706c0a61c5228e9eeee2f0c7c8d51cce1d6b57b041273e5ed2b54ac3eadbc712` |
-| 11 | `example` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/Realization.lean/declarations/example.md) | 53 | `declaration-track:15c9a8a9e4716d2d603da3ffb64349a5a0ab3e5bad6f40c54fe0f3c55a9ba716` |
-| 12 | `example` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/Realization.lean/declarations/example-source-edition-3.md) | 54 | `declaration-track:4d8fae270f90d260ed3e472b9351bf650449d24539e36b3b4e311012dadfd2e9` |
-| 13 | `example` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/Realization.lean/declarations/example-source-edition-5.md) | 55 | `declaration-track:aae9a3c759121c55785c80ea667931eeb75fb55a713ff68f203e7c4ebad2a8d7` |
+| 1 | `def` | [modularRealization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Realization.lean/declarations/modularrealization.md) | 15 | `declaration-track:0e909c22f497401fe8878732773c532c0f74ff72b514febbeeb7573a544ff6e0` |
+| 2 | `def` | [realRealization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Realization.lean/declarations/realrealization.md) | 18 | `declaration-track:b37fc3f6e1cb04f530f10024998a9a443d9bf01cbd626c0a35922905e19e2413` |
+| 3 | `def` | [groupRealization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Realization.lean/declarations/grouprealization.md) | 21 | `declaration-track:31e2484964c5f2240cb8f4da32ab59c464237e944e00c700d308c0ce2842c223` |
+| 4 | `structure` | [FrontierCoordinate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Realization.lean/declarations/frontiercoordinate.md) | 28 | `declaration-track:e61b446937f511e9c559c08532b9d8d1d91c419f0485f3c39f2672ac96d44e0c` |
+| 5 | `theorem` | [modularRealization_ofNat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Realization.lean/declarations/modularrealization-ofnat.md) | 31 | `result-track:b3292d2fd86ccd99ba1ff9c0f9a0f17a3b60ad26a86001f8475a4b12f897a2f5` |
+| 6 | `theorem` | [realRealization_ofNat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Realization.lean/declarations/realrealization-ofnat.md) | 37 | `result-track:359b087d51cb0bc7bb2a69bcf6013fcffd019be78db305562ac1dcc3d71cfaf8` |
+| 7 | `theorem` | [groupRealization_ofNat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Realization.lean/declarations/grouprealization-ofnat.md) | 41 | `result-track:5c455e5848efa4fa99eb681ac57af707c078acd1c025f089b498ee34242e9bd3` |
+| 8 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Realization.lean/declarations/example-source-edition-2.md) | 50 | `declaration-track:3c925ad29618fd5fe5e5fc11b83a6af2f1a1e9879dcefc70a6c598f0595ffb5f` |
+| 9 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Realization.lean/declarations/example-source-edition-6.md) | 51 | `declaration-track:eb97bcb6bcf9acd44bf337b8ab1f3e4e275a47b3e632626594ca0b6d7e68c218` |
+| 10 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Realization.lean/declarations/example-source-edition-4.md) | 52 | `declaration-track:706c0a61c5228e9eeee2f0c7c8d51cce1d6b57b041273e5ed2b54ac3eadbc712` |
+| 11 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Realization.lean/declarations/example.md) | 53 | `declaration-track:15c9a8a9e4716d2d603da3ffb64349a5a0ab3e5bad6f40c54fe0f3c55a9ba716` |
+| 12 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Realization.lean/declarations/example-source-edition-3.md) | 54 | `declaration-track:4d8fae270f90d260ed3e472b9351bf650449d24539e36b3b4e311012dadfd2e9` |
+| 13 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/Realization.lean/declarations/example-source-edition-5.md) | 55 | `declaration-track:aae9a3c759121c55785c80ea667931eeb75fb55a713ff68f203e7c4ebad2a8d7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

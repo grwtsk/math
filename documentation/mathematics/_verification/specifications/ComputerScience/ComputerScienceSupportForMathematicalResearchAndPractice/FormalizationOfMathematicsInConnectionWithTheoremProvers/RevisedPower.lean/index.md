@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RevisedPower.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RevisedPower.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RevisedPower.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RevisedPower.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [RevisedPowerCandidate](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RevisedPower.lean/declarations/revisedpowercandidate.md) | 28 | `declaration-track:80a09e4c377fc7595e2d6e1613a1e4750ec1636155aa4b15528ba5f25a83e85a` |
-| 2 | `def` | [RevisedPowerEquals](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RevisedPower.lean/declarations/revisedpowerequals.md) | 34 | `declaration-track:1e63a6b37974506e9f81e465ed458c29d4b6e1f13cbd3cbddf2afaef9753e819` |
-| 3 | `def` | [RevisedGCHStatement](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RevisedPower.lean/declarations/revisedgchstatement.md) | 39 | `declaration-track:ccd51493c756ce1d234aef437e51e052ed08199864832687354f72ca1f3c22af` |
-| 4 | `theorem` | [exact_block_restriction](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RevisedPower.lean/declarations/exact-block-restriction.md) | 48 | `result-track:d509cfcaad8efeffd1fa2315d20446aa5cfd1adc2430b6c57813ca13b47b8f00` |
+| 1 | `def` | [RevisedPowerCandidate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RevisedPower.lean/declarations/revisedpowercandidate.md) | 28 | `declaration-track:80a09e4c377fc7595e2d6e1613a1e4750ec1636155aa4b15528ba5f25a83e85a` |
+| 2 | `def` | [RevisedPowerEquals](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RevisedPower.lean/declarations/revisedpowerequals.md) | 34 | `declaration-track:1e63a6b37974506e9f81e465ed458c29d4b6e1f13cbd3cbddf2afaef9753e819` |
+| 3 | `def` | [RevisedGCHStatement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RevisedPower.lean/declarations/revisedgchstatement.md) | 39 | `declaration-track:ccd51493c756ce1d234aef437e51e052ed08199864832687354f72ca1f3c22af` |
+| 4 | `theorem` | [exact_block_restriction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RevisedPower.lean/declarations/exact-block-restriction.md) | 48 | `result-track:d509cfcaad8efeffd1fa2315d20446aa5cfd1adc2430b6c57813ca13b47b8f00` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

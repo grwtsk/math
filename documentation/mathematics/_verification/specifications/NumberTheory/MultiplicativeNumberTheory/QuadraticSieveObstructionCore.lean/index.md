@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/MultiplicativeNumberTheory/QuadraticSieveObstructionCore.lean/index.md) · [Full source](../../../../../NumberTheory/MultiplicativeNumberTheory/QuadraticSieveObstructionCore.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/QuadraticSieveObstructionCore.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/QuadraticSieveObstructionCore.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,12 +46,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Interfaces.QuadraticPlusOneCore`](../../../../../NumberTheory/MultiplicativeNumberTheory/QuadraticPlusOneCore.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Primes.LandauStatements`](../../../../../NumberTheory/MultiplicativeNumberTheory/LandauStatements.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.NumberTheory.Primes.QuadraticSieveObstruction`](../../../../../NumberTheory/MultiplicativeNumberTheory/QuadraticSieveObstruction.lean/index.md) — import line 6; pinned internal source present.
-- [`GRWTSK.NumberTheory.Primes.QuadraticValuePowerExclusion`](../../../../../NumberTheory/MultiplicativeNumberTheory/QuadraticValuePowerExclusion.lean/index.md) — import line 7; pinned internal source present.
-- [`GRWTSK.NumberTheory.Primes.QuadraticMangoldtBoundary`](../../../../../NumberTheory/MultiplicativeNumberTheory/QuadraticMangoldtBoundary.lean/index.md) — import line 8; pinned internal source present.
-- [`GRWTSK.NumberTheory.Primes.Checks.QuadraticSieveObstructionControls`](../../../../../NumberTheory/MultiplicativeNumberTheory/QuadraticSieveObstructionControls.lean/index.md) — import line 9; pinned internal source present.
+- [`GRWTSK.Interfaces.QuadraticPlusOneCore`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/QuadraticPlusOneCore.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Primes.LandauStatements`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/LandauStatements.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Primes.QuadraticSieveObstruction`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/QuadraticSieveObstruction.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.NumberTheory.Primes.QuadraticValuePowerExclusion`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/QuadraticValuePowerExclusion.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Primes.QuadraticMangoldtBoundary`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/QuadraticMangoldtBoundary.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.NumberTheory.Primes.Checks.QuadraticSieveObstructionControls`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/QuadraticSieveObstructionControls.lean/index.md) — import line 9; pinned internal source present.
 
 ## Top results and three-degree verification metric
 

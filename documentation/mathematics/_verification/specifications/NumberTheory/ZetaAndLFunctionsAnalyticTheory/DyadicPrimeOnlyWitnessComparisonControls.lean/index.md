@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicPrimeOnlyWitnessComparisonControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicPrimeOnlyWitnessComparisonControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicPrimeOnlyWitnessComparisonControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicPrimeOnlyWitnessComparisonControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.DyadicPrimeOnlyWitnessComparison`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicPrimeOnlyWitnessComparison.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.DyadicPrimeOnlyWitnessComparison`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicPrimeOnlyWitnessComparison.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [full_vs_prime_stage](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicPrimeOnlyWitnessComparisonControls.lean/declarations/full-vs-prime-stage.md) | 13 | `result-track:2cb05b781ea91557119f788011ffd28fcee36ae38899576e7d87bfe0d6ec1ff7` |
-| 2 | `theorem` | [prime_vs_full_stage](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicPrimeOnlyWitnessComparisonControls.lean/declarations/prime-vs-full-stage.md) | 20 | `result-track:14c26b34e188205be4b55a6dce4cd1c642d4b5935e7ad8447de7ea75c4887937` |
+| 1 | `theorem` | [full_vs_prime_stage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicPrimeOnlyWitnessComparisonControls.lean/declarations/full-vs-prime-stage.md) | 13 | `result-track:2cb05b781ea91557119f788011ffd28fcee36ae38899576e7d87bfe0d6ec1ff7` |
+| 2 | `theorem` | [prime_vs_full_stage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicPrimeOnlyWitnessComparisonControls.lean/declarations/prime-vs-full-stage.md) | 20 | `result-track:14c26b34e188205be4b55a6dce4cd1c642d4b5935e7ad8447de7ea75c4887937` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

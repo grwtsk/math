@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KarnaughMapNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KarnaughMapNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KarnaughMapNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KarnaughMapNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [KarnaughMap.KMap](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KarnaughMapNamespaced.lean/declarations/karnaughmap-kmap.md) | 19 | `declaration-track:e2b6eae32a209084c44c61ff1752d2b8ddbf6f1b099a0e9b4a54b2a1f738efd4` |
-| 2 | `def` | [KarnaughMap.rowBit](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KarnaughMapNamespaced.lean/declarations/karnaughmap-rowbit.md) | 23 | `declaration-track:b941d9a2ec3e6bfeae13302163423c8cde94cf72bf53e5f1e4c1a644ae46ba08` |
-| 3 | `def` | [KarnaughMap.colBit](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KarnaughMapNamespaced.lean/declarations/karnaughmap-colbit.md) | 31 | `declaration-track:efb11de758b53f83192d8137f0d14647bcdb873f5e8090fee0307a138b26831d` |
-| 4 | `def` | [KarnaughMap.input](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KarnaughMapNamespaced.lean/declarations/karnaughmap-input.md) | 44 | `declaration-track:b4ee15a93b4304150023a533f2d97be8b1d24892f2fb7a3f02d821498a9a24a9` |
-| 5 | `def` | [KarnaughMap.fromTruthTable](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KarnaughMapNamespaced.lean/declarations/karnaughmap-fromtruthtable.md) | 56 | `declaration-track:40d6018d5893b46d8f56ece18bc39381f82f055a229811ad575b62c18006adf6` |
-| 6 | `def` | [KarnaughMap.rowAxis](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KarnaughMapNamespaced.lean/declarations/karnaughmap-rowaxis.md) | 62 | `declaration-track:48552ca34f5b312c2021fa2bdcd15d81066c06ff4c9ac2f4b41372f28689805b` |
-| 7 | `def` | [KarnaughMap.colAxis](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KarnaughMapNamespaced.lean/declarations/karnaughmap-colaxis.md) | 67 | `declaration-track:8a256c9ac9e17f3ddb77ee9319bfa16b552ed9de1e0ca2bf17ff84f85358061b` |
+| 1 | `abbrev` | [KarnaughMap.KMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KarnaughMapNamespaced.lean/declarations/karnaughmap-kmap.md) | 19 | `declaration-track:e2b6eae32a209084c44c61ff1752d2b8ddbf6f1b099a0e9b4a54b2a1f738efd4` |
+| 2 | `def` | [KarnaughMap.rowBit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KarnaughMapNamespaced.lean/declarations/karnaughmap-rowbit.md) | 23 | `declaration-track:b941d9a2ec3e6bfeae13302163423c8cde94cf72bf53e5f1e4c1a644ae46ba08` |
+| 3 | `def` | [KarnaughMap.colBit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KarnaughMapNamespaced.lean/declarations/karnaughmap-colbit.md) | 31 | `declaration-track:efb11de758b53f83192d8137f0d14647bcdb873f5e8090fee0307a138b26831d` |
+| 4 | `def` | [KarnaughMap.input](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KarnaughMapNamespaced.lean/declarations/karnaughmap-input.md) | 44 | `declaration-track:b4ee15a93b4304150023a533f2d97be8b1d24892f2fb7a3f02d821498a9a24a9` |
+| 5 | `def` | [KarnaughMap.fromTruthTable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KarnaughMapNamespaced.lean/declarations/karnaughmap-fromtruthtable.md) | 56 | `declaration-track:40d6018d5893b46d8f56ece18bc39381f82f055a229811ad575b62c18006adf6` |
+| 6 | `def` | [KarnaughMap.rowAxis](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KarnaughMapNamespaced.lean/declarations/karnaughmap-rowaxis.md) | 62 | `declaration-track:48552ca34f5b312c2021fa2bdcd15d81066c06ff4c9ac2f4b41372f28689805b` |
+| 7 | `def` | [KarnaughMap.colAxis](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KarnaughMapNamespaced.lean/declarations/karnaughmap-colaxis.md) | 67 | `declaration-track:8a256c9ac9e17f3ddb77ee9319bfa16b552ed9de1e0ca2bf17ff84f85358061b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

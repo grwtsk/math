@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TransverseSquarePublic.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TransverseSquarePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TransverseSquarePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TransverseSquarePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [coefficientIntervalSquareSum](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TransverseSquarePublic.lean/declarations/coefficientintervalsquaresum.md) | 32 | `declaration-track:18b8304942fd6b2a67de0d6ea267c9347e64674648c8446ec7d458f42c955ffd` |
-| 2 | `def` | [EvaluatedSurgeryTree.nodeIntervalSquareSum](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TransverseSquarePublic.lean/declarations/evaluatedsurgerytree-nodeintervalsquaresum.md) | 42 | `declaration-track:90f77c79b8dbc99120733a0d6b1a1840cf5501a182b01d77dc51314db91e6a9a` |
-| 3 | `theorem` | [rootNodeIntervalSquareSum_eq_shell](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TransverseSquarePublic.lean/declarations/rootnodeintervalsquaresum-eq-shell.md) | 54 | `result-track:8b489fdc1d4e5139678eab7d3d22224890bf6f8c22209d6f06098df3fed0353e` |
-| 4 | `def` | [LocalTransverseDiffuseSquareEstimate](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TransverseSquarePublic.lean/declarations/localtransversediffusesquareestimate.md) | 76 | `declaration-track:15ce553f7f601c4a7f0078cea282a49e0912be2af2d7cc04d6bf5103bc17a8d0` |
+| 1 | `def` | [coefficientIntervalSquareSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TransverseSquarePublic.lean/declarations/coefficientintervalsquaresum.md) | 32 | `declaration-track:18b8304942fd6b2a67de0d6ea267c9347e64674648c8446ec7d458f42c955ffd` |
+| 2 | `def` | [EvaluatedSurgeryTree.nodeIntervalSquareSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TransverseSquarePublic.lean/declarations/evaluatedsurgerytree-nodeintervalsquaresum.md) | 42 | `declaration-track:90f77c79b8dbc99120733a0d6b1a1840cf5501a182b01d77dc51314db91e6a9a` |
+| 3 | `theorem` | [rootNodeIntervalSquareSum_eq_shell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TransverseSquarePublic.lean/declarations/rootnodeintervalsquaresum-eq-shell.md) | 54 | `result-track:8b489fdc1d4e5139678eab7d3d22224890bf6f8c22209d6f06098df3fed0353e` |
+| 4 | `def` | [LocalTransverseDiffuseSquareEstimate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TransverseSquarePublic.lean/declarations/localtransversediffusesquareestimate.md) | 76 | `declaration-track:15ce553f7f601c4a7f0078cea282a49e0912be2af2d7cc04d6bf5103bc17a8d0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

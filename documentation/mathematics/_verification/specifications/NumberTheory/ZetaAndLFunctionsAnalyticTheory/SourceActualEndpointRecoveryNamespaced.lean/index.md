@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualEndpointRecoveryNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualEndpointRecoveryNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualEndpointRecoveryNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualEndpointRecoveryNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [endpointPlus](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualEndpointRecoveryNamespaced.lean/declarations/endpointplus.md) | 23 | `declaration-track:f8888852ea2db527d5e000fb0c86b1bd5fd857720e90f9403b5fa5d3cdeb186a` |
-| 2 | `def` | [endpointMinus](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualEndpointRecoveryNamespaced.lean/declarations/endpointminus.md) | 27 | `declaration-track:7283a51308390cfc39ec5bb5f0b929d866644ecded94f06f08f0bf45e85317e7` |
-| 3 | `def` | [endpointCommon](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualEndpointRecoveryNamespaced.lean/declarations/endpointcommon.md) | 31 | `declaration-track:33212a394e8d48f969d4b2666308eb6f4692d5ac9b857faeae316b83798afc87` |
-| 4 | `def` | [positiveEndpoint](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualEndpointRecoveryNamespaced.lean/declarations/positiveendpoint.md) | 35 | `declaration-track:a48839d6e96b22911aaa4015083271ec7ea8d95ce113f49630de44eab9c4c72c` |
-| 5 | `def` | [negativeEndpoint](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualEndpointRecoveryNamespaced.lean/declarations/negativeendpoint.md) | 38 | `declaration-track:bbe3922faa19a73b2bd44df384671ff2c652ec41a67919423bb4eb2bc16f3c9c` |
-| 6 | `def` | [invariantMixed](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualEndpointRecoveryNamespaced.lean/declarations/invariantmixed.md) | 41 | `declaration-track:9070a720382d30e28c15f8da412d44274662af49aa0a2b4a1dad304d7fbd3ba6` |
-| 7 | `theorem` | [endpoint_product](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualEndpointRecoveryNamespaced.lean/declarations/endpoint-product.md) | 45 | `result-track:853ad742396851865bdb290051a6f402cd7782218caa36f9db71e3ac75201e82` |
-| 8 | `theorem` | [actual_source_endpoint_recovery](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualEndpointRecoveryNamespaced.lean/declarations/actual-source-endpoint-recovery.md) | 55 | `result-track:ef5f579fff3f4f93033d4ccf8a1668914aa554d247330fb792d86cba703787e3` |
+| 1 | `def` | [endpointPlus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualEndpointRecoveryNamespaced.lean/declarations/endpointplus.md) | 23 | `declaration-track:f8888852ea2db527d5e000fb0c86b1bd5fd857720e90f9403b5fa5d3cdeb186a` |
+| 2 | `def` | [endpointMinus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualEndpointRecoveryNamespaced.lean/declarations/endpointminus.md) | 27 | `declaration-track:7283a51308390cfc39ec5bb5f0b929d866644ecded94f06f08f0bf45e85317e7` |
+| 3 | `def` | [endpointCommon](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualEndpointRecoveryNamespaced.lean/declarations/endpointcommon.md) | 31 | `declaration-track:33212a394e8d48f969d4b2666308eb6f4692d5ac9b857faeae316b83798afc87` |
+| 4 | `def` | [positiveEndpoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualEndpointRecoveryNamespaced.lean/declarations/positiveendpoint.md) | 35 | `declaration-track:a48839d6e96b22911aaa4015083271ec7ea8d95ce113f49630de44eab9c4c72c` |
+| 5 | `def` | [negativeEndpoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualEndpointRecoveryNamespaced.lean/declarations/negativeendpoint.md) | 38 | `declaration-track:bbe3922faa19a73b2bd44df384671ff2c652ec41a67919423bb4eb2bc16f3c9c` |
+| 6 | `def` | [invariantMixed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualEndpointRecoveryNamespaced.lean/declarations/invariantmixed.md) | 41 | `declaration-track:9070a720382d30e28c15f8da412d44274662af49aa0a2b4a1dad304d7fbd3ba6` |
+| 7 | `theorem` | [endpoint_product](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualEndpointRecoveryNamespaced.lean/declarations/endpoint-product.md) | 45 | `result-track:853ad742396851865bdb290051a6f402cd7782218caa36f9db71e3ac75201e82` |
+| 8 | `theorem` | [actual_source_endpoint_recovery](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualEndpointRecoveryNamespaced.lean/declarations/actual-source-endpoint-recovery.md) | 55 | `result-track:ef5f579fff3f4f93033d4ccf8a1668914aa554d247330fb792d86cba703787e3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

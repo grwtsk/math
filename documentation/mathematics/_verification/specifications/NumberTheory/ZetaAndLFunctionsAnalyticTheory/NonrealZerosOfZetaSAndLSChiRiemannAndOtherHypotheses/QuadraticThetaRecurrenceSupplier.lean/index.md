@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/QuadraticThetaRecurrenceSupplier.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/QuadraticThetaRecurrenceSupplier.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/QuadraticThetaRecurrenceSupplier.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/QuadraticThetaRecurrenceSupplier.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThresholdDescentProgram`](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/QuadraticThresholdDescentProgram.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThresholdDescentProgram`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/QuadraticThresholdDescentProgram.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [QuadraticThetaSourceRecurrenceAt](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/QuadraticThetaRecurrenceSupplier.lean/declarations/quadraticthetasourcerecurrenceat.md) | 44 | `declaration-track:6530b2a2c0241818eb18758eb8ae4e0bf27d274c1c28e521cdac0038368e3832` |
-| 2 | `theorem` | [dyadicScale_succ_eq_two_mul](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/QuadraticThetaRecurrenceSupplier.lean/declarations/dyadicscale-succ-eq-two-mul.md) | 60 | `result-track:6d1b930a20a5cfa17caeb688b7c67daa8d324e577a2e59c9b5ae6ee5ef7bd5de` |
-| 3 | `theorem` | [quadraticThetaSourceRecurrence_to_descent](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/QuadraticThetaRecurrenceSupplier.lean/declarations/quadraticthetasourcerecurrence-to-descent.md) | 67 | `result-track:4afc3ef879e5ce1b52306bb6a3391f84354bd1e7376ac6595585e0dad4b4ace8` |
-| 4 | `theorem` | [twoStepQuadraticRecurrence_to_rh](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/QuadraticThetaRecurrenceSupplier.lean/declarations/twostepquadraticrecurrence-to-rh.md) | 160 | `result-track:686682f151aec68a9f9c0d2f558b00e19141016ffe874605e26d6850f32bb395` |
+| 1 | `def` | [QuadraticThetaSourceRecurrenceAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/QuadraticThetaRecurrenceSupplier.lean/declarations/quadraticthetasourcerecurrenceat.md) | 44 | `declaration-track:6530b2a2c0241818eb18758eb8ae4e0bf27d274c1c28e521cdac0038368e3832` |
+| 2 | `theorem` | [dyadicScale_succ_eq_two_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/QuadraticThetaRecurrenceSupplier.lean/declarations/dyadicscale-succ-eq-two-mul.md) | 60 | `result-track:6d1b930a20a5cfa17caeb688b7c67daa8d324e577a2e59c9b5ae6ee5ef7bd5de` |
+| 3 | `theorem` | [quadraticThetaSourceRecurrence_to_descent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/QuadraticThetaRecurrenceSupplier.lean/declarations/quadraticthetasourcerecurrence-to-descent.md) | 67 | `result-track:4afc3ef879e5ce1b52306bb6a3391f84354bd1e7376ac6595585e0dad4b4ace8` |
+| 4 | `theorem` | [twoStepQuadraticRecurrence_to_rh](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/QuadraticThetaRecurrenceSupplier.lean/declarations/twostepquadraticrecurrence-to-rh.md) | 160 | `result-track:686682f151aec68a9f9c0d2f558b00e19141016ffe874605e26d6850f32bb395` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

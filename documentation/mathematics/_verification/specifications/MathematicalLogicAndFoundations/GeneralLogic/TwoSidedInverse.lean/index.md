@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TwoSidedInverse.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TwoSidedInverse.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TwoSidedInverse.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TwoSidedInverse.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [HasTwoSidedInverse](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TwoSidedInverse.lean/declarations/hastwosidedinverse.md) | 40 | `declaration-track:fb35e52994d85be705fa34ae4fb612a3dd23f35e5614154b22459eb257738bf3` |
-| 2 | `theorem` | [ordinary_heat_left_inverse](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TwoSidedInverse.lean/declarations/ordinary-heat-left-inverse.md) | 47 | `result-track:3349333d4eb72528ebafaa3ff117f9a285808a6dde1797ad042938657bbcd915` |
-| 3 | `theorem` | [ordinary_heat_right_inverse](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TwoSidedInverse.lean/declarations/ordinary-heat-right-inverse.md) | 55 | `result-track:aa6e58ce52e9f1d2062609386e67783022a76bba206335c6066e4bcd9d0556ab` |
+| 1 | `structure` | [HasTwoSidedInverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TwoSidedInverse.lean/declarations/hastwosidedinverse.md) | 40 | `declaration-track:fb35e52994d85be705fa34ae4fb612a3dd23f35e5614154b22459eb257738bf3` |
+| 2 | `theorem` | [ordinary_heat_left_inverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TwoSidedInverse.lean/declarations/ordinary-heat-left-inverse.md) | 47 | `result-track:3349333d4eb72528ebafaa3ff117f9a285808a6dde1797ad042938657bbcd915` |
+| 3 | `theorem` | [ordinary_heat_right_inverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TwoSidedInverse.lean/declarations/ordinary-heat-right-inverse.md) | 55 | `result-track:aa6e58ce52e9f1d2062609386e67783022a76bba206335c6066e4bcd9d0556ab` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

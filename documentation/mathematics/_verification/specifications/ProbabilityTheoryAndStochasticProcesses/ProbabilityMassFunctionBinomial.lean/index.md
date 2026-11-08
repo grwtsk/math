@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/ProbabilityMassFunctionBinomial.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/ProbabilityMassFunctionBinomial.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ProbabilityMassFunctionBinomial.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ProbabilityMassFunctionBinomial.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [binomial](../../../../ProbabilityTheoryAndStochasticProcesses/ProbabilityMassFunctionBinomial.lean/declarations/binomial.md) | 27 | `declaration-track:e5ecdca235dccbd931520975fef36f7e46c0ffa9748ac017815060a0de03e1ee` |
-| 2 | `theorem` | [binomial_apply](../../../../ProbabilityTheoryAndStochasticProcesses/ProbabilityMassFunctionBinomial.lean/declarations/binomial-apply.md) | 37 | `result-track:156ad114dc4055e87ffa00ba3f83b27d3684b816f090d72627701b49d579bb42` |
-| 3 | `theorem` | [binomial_apply_zero](../../../../ProbabilityTheoryAndStochasticProcesses/ProbabilityMassFunctionBinomial.lean/declarations/binomial-apply-zero.md) | 41 | `result-track:12bf01504ac949525ccc0dfc88b164eee0a6049470094cbefc81eae46676f98f` |
-| 4 | `theorem` | [binomial_apply_self](../../../../ProbabilityTheoryAndStochasticProcesses/ProbabilityMassFunctionBinomial.lean/declarations/binomial-apply-self.md) | 46 | `result-track:928e85c5cc5d562c63d4f0f0d1221b05b7986865edd39907479f275508b012e6` |
-| 5 | `theorem` | [binomial_one_eq_bernoulli](../../../../ProbabilityTheoryAndStochasticProcesses/ProbabilityMassFunctionBinomial.lean/declarations/binomial-one-eq-bernoulli.md) | 51 | `result-track:bd5994d8f0a8f4f454057ccf1709281b4418d216c42bfc703b5040139e3e7ef0` |
+| 1 | `def` | [binomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ProbabilityMassFunctionBinomial.lean/declarations/binomial.md) | 27 | `declaration-track:e5ecdca235dccbd931520975fef36f7e46c0ffa9748ac017815060a0de03e1ee` |
+| 2 | `theorem` | [binomial_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ProbabilityMassFunctionBinomial.lean/declarations/binomial-apply.md) | 37 | `result-track:156ad114dc4055e87ffa00ba3f83b27d3684b816f090d72627701b49d579bb42` |
+| 3 | `theorem` | [binomial_apply_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ProbabilityMassFunctionBinomial.lean/declarations/binomial-apply-zero.md) | 41 | `result-track:12bf01504ac949525ccc0dfc88b164eee0a6049470094cbefc81eae46676f98f` |
+| 4 | `theorem` | [binomial_apply_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ProbabilityMassFunctionBinomial.lean/declarations/binomial-apply-self.md) | 46 | `result-track:928e85c5cc5d562c63d4f0f0d1221b05b7986865edd39907479f275508b012e6` |
+| 5 | `theorem` | [binomial_one_eq_bernoulli](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ProbabilityMassFunctionBinomial.lean/declarations/binomial-one-eq-bernoulli.md) | 51 | `result-track:bd5994d8f0a8f4f454057ccf1709281b4418d216c42bfc703b5040139e3e7ef0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

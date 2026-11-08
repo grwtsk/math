@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/SubmonoidCenter.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/SubmonoidCenter.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SubmonoidCenter.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SubmonoidCenter.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,18 +58,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [center](../../../../GroupTheoryAndGeneralizations/SubmonoidCenter.lean/declarations/center.md) | 33 | `declaration-track:a927589696e757fb652b16cbad7728dd9a901a9d087a8863878dd1ec4d78bd9c` |
-| 2 | `theorem` | [coe_center](../../../../GroupTheoryAndGeneralizations/SubmonoidCenter.lean/declarations/coe-center.md) | 41 | `result-track:11290a552c2ee41159c44e6d10bf684d6da24b675935ef893ca6b9890ef6d140` |
-| 3 | `theorem` | [center_toSubsemigroup](../../../../GroupTheoryAndGeneralizations/SubmonoidCenter.lean/declarations/center-tosubsemigroup.md) | 47 | `result-track:d77182117b6dea3ed62500b1f22f1bce09a5cec82af83b5832fba941f48073e4` |
-| 4 | `theorem` | [mem_center_iff](../../../../GroupTheoryAndGeneralizations/SubmonoidCenter.lean/declarations/mem-center-iff.md) | 54 | `result-track:e9ad6e5dbe9a1f6ed30ac2779b2a0ffef2ebe5d4c6b3f167f25d0e51ed215a73` |
-| 5 | `instance` | [decidableMemCenter](../../../../GroupTheoryAndGeneralizations/SubmonoidCenter.lean/declarations/decidablememcenter.md) | 60 | `declaration-track:32be8285263318513b33743c425c3e519bba1c943cb277816b75e666fd210474` |
-| 6 | `instance` | [center.commMonoid](../../../../GroupTheoryAndGeneralizations/SubmonoidCenter.lean/declarations/center-commmonoid.md) | 66 | `declaration-track:d7a5e773c18eeaf1a3b0b9f31d77d01d99c157d180b7fcff7dc11d9bc2590800` |
-| 7 | `instance` | [center.smulCommClass_left](../../../../GroupTheoryAndGeneralizations/SubmonoidCenter.lean/declarations/center-smulcommclass-left.md) | 71 | `declaration-track:63cdb0fe0a7e40864ab8161a2881f2ea5733e5b701ac6c63749ecd6216c77bcb` |
-| 8 | `instance` | [center.smulCommClass_right](../../../../GroupTheoryAndGeneralizations/SubmonoidCenter.lean/declarations/center-smulcommclass-right.md) | 76 | `declaration-track:6e6eb5464789695e9614a9690fca9b317c3845012c3c9e4fbca7d1cd9c8c65a8` |
-| 9 | `example` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/SubmonoidCenter.lean/declarations/example.md) | 83 | `declaration-track:0c7deb61ef8cfa730604edb597f7b24caa2867ba910c81e76c2613b8a6e622fb` |
-| 10 | `theorem` | [center_eq_top](../../../../GroupTheoryAndGeneralizations/SubmonoidCenter.lean/declarations/center-eq-top.md) | 92 | `result-track:246cdb54f0204a4514733221547d5c85102cfb3d97c0bd7f66b4531914d9cfa8` |
-| 11 | `def` | [unitsCenterToCenterUnits](../../../../GroupTheoryAndGeneralizations/SubmonoidCenter.lean/declarations/unitscentertocenterunits.md) | 107 | `declaration-track:2fa998ff497a4675b95da7159a1b4ebe601a7444fdfb31ef41ecc5b56237e61e` |
-| 12 | `theorem` | [unitsCenterToCenterUnits_injective](../../../../GroupTheoryAndGeneralizations/SubmonoidCenter.lean/declarations/unitscentertocenterunits-injective.md) | 111 | `result-track:500c61e617b27942fe1213255b24a1902a8ae1e11c2844a18189208c3716600a` |
+| 1 | `def` | [center](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SubmonoidCenter.lean/declarations/center.md) | 33 | `declaration-track:a927589696e757fb652b16cbad7728dd9a901a9d087a8863878dd1ec4d78bd9c` |
+| 2 | `theorem` | [coe_center](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SubmonoidCenter.lean/declarations/coe-center.md) | 41 | `result-track:11290a552c2ee41159c44e6d10bf684d6da24b675935ef893ca6b9890ef6d140` |
+| 3 | `theorem` | [center_toSubsemigroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SubmonoidCenter.lean/declarations/center-tosubsemigroup.md) | 47 | `result-track:d77182117b6dea3ed62500b1f22f1bce09a5cec82af83b5832fba941f48073e4` |
+| 4 | `theorem` | [mem_center_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SubmonoidCenter.lean/declarations/mem-center-iff.md) | 54 | `result-track:e9ad6e5dbe9a1f6ed30ac2779b2a0ffef2ebe5d4c6b3f167f25d0e51ed215a73` |
+| 5 | `instance` | [decidableMemCenter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SubmonoidCenter.lean/declarations/decidablememcenter.md) | 60 | `declaration-track:32be8285263318513b33743c425c3e519bba1c943cb277816b75e666fd210474` |
+| 6 | `instance` | [center.commMonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SubmonoidCenter.lean/declarations/center-commmonoid.md) | 66 | `declaration-track:d7a5e773c18eeaf1a3b0b9f31d77d01d99c157d180b7fcff7dc11d9bc2590800` |
+| 7 | `instance` | [center.smulCommClass_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SubmonoidCenter.lean/declarations/center-smulcommclass-left.md) | 71 | `declaration-track:63cdb0fe0a7e40864ab8161a2881f2ea5733e5b701ac6c63749ecd6216c77bcb` |
+| 8 | `instance` | [center.smulCommClass_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SubmonoidCenter.lean/declarations/center-smulcommclass-right.md) | 76 | `declaration-track:6e6eb5464789695e9614a9690fca9b317c3845012c3c9e4fbca7d1cd9c8c65a8` |
+| 9 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SubmonoidCenter.lean/declarations/example.md) | 83 | `declaration-track:0c7deb61ef8cfa730604edb597f7b24caa2867ba910c81e76c2613b8a6e622fb` |
+| 10 | `theorem` | [center_eq_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SubmonoidCenter.lean/declarations/center-eq-top.md) | 92 | `result-track:246cdb54f0204a4514733221547d5c85102cfb3d97c0bd7f66b4531914d9cfa8` |
+| 11 | `def` | [unitsCenterToCenterUnits](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SubmonoidCenter.lean/declarations/unitscentertocenterunits.md) | 107 | `declaration-track:2fa998ff497a4675b95da7159a1b4ebe601a7444fdfb31ef41ecc5b56237e61e` |
+| 12 | `theorem` | [unitsCenterToCenterUnits_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SubmonoidCenter.lean/declarations/unitscentertocenterunits-injective.md) | 111 | `result-track:500c61e617b27942fe1213255b24a1902a8ae1e11c2844a18189208c3716600a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

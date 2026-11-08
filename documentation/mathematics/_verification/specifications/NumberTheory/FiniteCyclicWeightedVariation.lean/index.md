@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/FiniteCyclicWeightedVariation.lean/index.md) · [Full source](../../../../NumberTheory/FiniteCyclicWeightedVariation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteCyclicWeightedVariation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteCyclicWeightedVariation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.CharacterSums.FiniteCyclicIntervalDistance`](../../../../NumberTheory/FiniteCyclicIntervalDistance.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.CharacterSums.FiniteCyclicIntervalDistance`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteCyclicIntervalDistance.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Algebra.BigOperators.Module` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [finiteCyclicCoefficientVariation](../../../../NumberTheory/FiniteCyclicWeightedVariation.lean/declarations/finitecycliccoefficientvariation.md) | 36 | `declaration-track:876eb733c187b6206d9b3d4e6025bbdc1433abf4a99c3ebb467d32a37d47eaf5` |
-| 2 | `theorem` | [finiteCyclicCoefficientVariation_nonneg](../../../../NumberTheory/FiniteCyclicWeightedVariation.lean/declarations/finitecycliccoefficientvariation-nonneg.md) | 44 | `result-track:c9f2c8d74cad009d970f8dae4c1a16c76963e702aab405d1fb6b028a51165c26` |
-| 3 | `theorem` | [sum_mul_stdAddChar_neg_Ico_eq_terminal_add_variation](../../../../NumberTheory/FiniteCyclicWeightedVariation.lean/declarations/sum-mul-stdaddchar-neg-ico-eq-terminal-add-variation.md) | 54 | `result-track:2052017172e0470278b10058d7dc2899aa040557d4d224d8978f9029dbee5007` |
-| 4 | `theorem` | [norm_sum_mul_stdAddChar_neg_Ico_le_coefficientVariation](../../../../NumberTheory/FiniteCyclicWeightedVariation.lean/declarations/norm-sum-mul-stdaddchar-neg-ico-le-coefficientvariation.md) | 107 | `result-track:56d2a6caff196076ffa919b9d9b4a15d3f24e97d509f9022d380ef108b7e8fd9` |
-| 5 | `def` | [finiteCyclicReciprocalCoefficientVariation](../../../../NumberTheory/FiniteCyclicWeightedVariation.lean/declarations/finitecyclicreciprocalcoefficientvariation.md) | 194 | `declaration-track:19feb4bb3ab05d6c426bbb2ef43c13e1c7fa6aa847d59d6902ddd8830bd0f877` |
-| 6 | `theorem` | [norm_sum_mul_stdAddChar_neg_div_nat_add_Ico_le_variation](../../../../NumberTheory/FiniteCyclicWeightedVariation.lean/declarations/norm-sum-mul-stdaddchar-neg-div-nat-add-ico-le-variation.md) | 201 | `result-track:6ae57c07b86701f01d7314d7e7a7b15cdc673433e4856e8a7c472660c5f30005` |
+| 1 | `def` | [finiteCyclicCoefficientVariation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteCyclicWeightedVariation.lean/declarations/finitecycliccoefficientvariation.md) | 36 | `declaration-track:876eb733c187b6206d9b3d4e6025bbdc1433abf4a99c3ebb467d32a37d47eaf5` |
+| 2 | `theorem` | [finiteCyclicCoefficientVariation_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteCyclicWeightedVariation.lean/declarations/finitecycliccoefficientvariation-nonneg.md) | 44 | `result-track:c9f2c8d74cad009d970f8dae4c1a16c76963e702aab405d1fb6b028a51165c26` |
+| 3 | `theorem` | [sum_mul_stdAddChar_neg_Ico_eq_terminal_add_variation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteCyclicWeightedVariation.lean/declarations/sum-mul-stdaddchar-neg-ico-eq-terminal-add-variation.md) | 54 | `result-track:2052017172e0470278b10058d7dc2899aa040557d4d224d8978f9029dbee5007` |
+| 4 | `theorem` | [norm_sum_mul_stdAddChar_neg_Ico_le_coefficientVariation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteCyclicWeightedVariation.lean/declarations/norm-sum-mul-stdaddchar-neg-ico-le-coefficientvariation.md) | 107 | `result-track:56d2a6caff196076ffa919b9d9b4a15d3f24e97d509f9022d380ef108b7e8fd9` |
+| 5 | `def` | [finiteCyclicReciprocalCoefficientVariation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteCyclicWeightedVariation.lean/declarations/finitecyclicreciprocalcoefficientvariation.md) | 194 | `declaration-track:19feb4bb3ab05d6c426bbb2ef43c13e1c7fa6aa847d59d6902ddd8830bd0f877` |
+| 6 | `theorem` | [norm_sum_mul_stdAddChar_neg_div_nat_add_Ico_le_variation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FiniteCyclicWeightedVariation.lean/declarations/norm-sum-mul-stdaddchar-neg-div-nat-add-ico-le-variation.md) | 201 | `result-track:6ae57c07b86701f01d7314d7e7a7b15cdc673433e4856e8a7c472660c5f30005` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

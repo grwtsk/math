@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualPsiInverseSquareAttempt02.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualPsiInverseSquareAttempt02.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualPsiInverseSquareAttempt02.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualPsiInverseSquareAttempt02.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,8 +60,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [psi_inverseSquare_intervalIntegrable](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualPsiInverseSquareAttempt02.lean/declarations/psi-inversesquare-intervalintegrable.md) | 22 | `result-track:937c9ab7576a6f83a6d221177306f052e8f9ef90b2d680c52ea9d133f978ecad` |
-| 2 | `theorem` | [actual_psi_inverse_square](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualPsiInverseSquareAttempt02.lean/declarations/actual-psi-inverse-square.md) | 39 | `result-track:0a952f88cdd4abf3af862e898a3e8970982b1975f45a718b0f303cf362ce0709` |
+| 1 | `theorem` | [psi_inverseSquare_intervalIntegrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualPsiInverseSquareAttempt02.lean/declarations/psi-inversesquare-intervalintegrable.md) | 22 | `result-track:937c9ab7576a6f83a6d221177306f052e8f9ef90b2d680c52ea9d133f978ecad` |
+| 2 | `theorem` | [actual_psi_inverse_square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualPsiInverseSquareAttempt02.lean/declarations/actual-psi-inverse-square.md) | 39 | `result-track:0a952f88cdd4abf3af862e898a3e8970982b1975f45a718b0f303cf362ce0709` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

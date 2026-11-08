@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Geometry/FrobeniusSurfaceNamespaced.lean/index.md) · [Full source](../../../../Geometry/FrobeniusSurfaceNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/FrobeniusSurfaceNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/FrobeniusSurfaceNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FrobeniusSurface](../../../../Geometry/FrobeniusSurfaceNamespaced.lean/declarations/frobeniussurface.md) | 13 | `declaration-track:ac4b32a98df552a296b5c4477fb3c6b853774c85f21dcf78f9fd0cd5a1309d47` |
-| 2 | `def` | [currentGeometryBoundary](../../../../Geometry/FrobeniusSurfaceNamespaced.lean/declarations/currentgeometryboundary.md) | 19 | `declaration-track:fa523ed15b29940eeba51c951a1041523913b9c6f3595534b05c157779684197` |
-| 3 | `theorem` | [absolute_frobenius_not_implemented](../../../../Geometry/FrobeniusSurfaceNamespaced.lean/declarations/absolute-frobenius-not-implemented.md) | 21 | `result-track:e8baded71556bef91f5aa7b76d443b9c44370da50399cca0dba236e1adbe8262` |
-| 4 | `theorem` | [geometric_frobenius_not_glued](../../../../Geometry/FrobeniusSurfaceNamespaced.lean/declarations/geometric-frobenius-not-glued.md) | 25 | `result-track:38b2743979ae8fab5cf586eacc692fc53c8337b06db71f41b40878acbcc51b8f` |
-| 5 | `theorem` | [mathlib_scheme_interface_not_active](../../../../Geometry/FrobeniusSurfaceNamespaced.lean/declarations/mathlib-scheme-interface-not-active.md) | 29 | `result-track:7bdc22ad772fafc20dbf02487705971eeddc0f8aa314246551b11b309d9088df` |
-| 6 | `theorem` | [drinfeld_shtuka_residue_isolated](../../../../Geometry/FrobeniusSurfaceNamespaced.lean/declarations/drinfeld-shtuka-residue-isolated.md) | 33 | `result-track:489bb842f462de7bdbc9782dbbc916ec9344f896f245bece79efa3c7891baf93` |
+| 1 | `structure` | [FrobeniusSurface](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/FrobeniusSurfaceNamespaced.lean/declarations/frobeniussurface.md) | 13 | `declaration-track:ac4b32a98df552a296b5c4477fb3c6b853774c85f21dcf78f9fd0cd5a1309d47` |
+| 2 | `def` | [currentGeometryBoundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/FrobeniusSurfaceNamespaced.lean/declarations/currentgeometryboundary.md) | 19 | `declaration-track:fa523ed15b29940eeba51c951a1041523913b9c6f3595534b05c157779684197` |
+| 3 | `theorem` | [absolute_frobenius_not_implemented](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/FrobeniusSurfaceNamespaced.lean/declarations/absolute-frobenius-not-implemented.md) | 21 | `result-track:e8baded71556bef91f5aa7b76d443b9c44370da50399cca0dba236e1adbe8262` |
+| 4 | `theorem` | [geometric_frobenius_not_glued](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/FrobeniusSurfaceNamespaced.lean/declarations/geometric-frobenius-not-glued.md) | 25 | `result-track:38b2743979ae8fab5cf586eacc692fc53c8337b06db71f41b40878acbcc51b8f` |
+| 5 | `theorem` | [mathlib_scheme_interface_not_active](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/FrobeniusSurfaceNamespaced.lean/declarations/mathlib-scheme-interface-not-active.md) | 29 | `result-track:7bdc22ad772fafc20dbf02487705971eeddc0f8aa314246551b11b309d9088df` |
+| 6 | `theorem` | [drinfeld_shtuka_residue_isolated](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/FrobeniusSurfaceNamespaced.lean/declarations/drinfeld-shtuka-residue-isolated.md) | 33 | `result-track:489bb842f462de7bdbc9782dbbc916ec9344f896f245bece79efa3c7891baf93` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

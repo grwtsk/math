@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Sphere.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Sphere.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Sphere.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Sphere.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [NullCenteredSphereShadow](../../../../../ComputerScience/AlgorithmsInComputerScience/Sphere.lean/declarations/nullcenteredsphereshadow.md) | 24 | `declaration-track:94a227b689c655e2e88ffab808cc5e408fbce92010d360b8e8edb8d7b2aee08b` |
-| 2 | `structure` | [AngularChart](../../../../../ComputerScience/AlgorithmsInComputerScience/Sphere.lean/declarations/angularchart.md) | 37 | `declaration-track:8d37c7c426054cf9860a26b116a5cadb50c16ae4af5e74461d5fafbe59c5cfe4` |
-| 3 | `structure` | [RatioSphere](../../../../../ComputerScience/AlgorithmsInComputerScience/Sphere.lean/declarations/ratiosphere.md) | 48 | `declaration-track:e3e944ef638dc5faeadda0876a6664107f9a021578134f94802c13b5c3eb699e` |
-| 4 | `theorem` | [ratioSphere_sound](../../../../../ComputerScience/AlgorithmsInComputerScience/Sphere.lean/declarations/ratiosphere-sound.md) | 56 | `result-track:444156c675daabb1d2627e729bfe42c595e42a2fa0563b437645442fd14e4120` |
+| 1 | `structure` | [NullCenteredSphereShadow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Sphere.lean/declarations/nullcenteredsphereshadow.md) | 24 | `declaration-track:94a227b689c655e2e88ffab808cc5e408fbce92010d360b8e8edb8d7b2aee08b` |
+| 2 | `structure` | [AngularChart](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Sphere.lean/declarations/angularchart.md) | 37 | `declaration-track:8d37c7c426054cf9860a26b116a5cadb50c16ae4af5e74461d5fafbe59c5cfe4` |
+| 3 | `structure` | [RatioSphere](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Sphere.lean/declarations/ratiosphere.md) | 48 | `declaration-track:e3e944ef638dc5faeadda0876a6664107f9a021578134f94802c13b5c3eb699e` |
+| 4 | `theorem` | [ratioSphere_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Sphere.lean/declarations/ratiosphere-sound.md) | 56 | `result-track:444156c675daabb1d2627e729bfe42c595e42a2fa0563b437645442fd14e4120` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

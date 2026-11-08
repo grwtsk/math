@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Agreement.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Agreement.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Agreement.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Agreement.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [AgreementDimension](../../../../../ComputerScience/AlgorithmsInComputerScience/Agreement.lean/declarations/agreementdimension.md) | 13 | `declaration-track:78d9fecdcf8df45f8757e03332479558c53e30c34f4f123e5c15e013e100f2c7` |
-| 2 | `inductive` | [AgreementStatus](../../../../../ComputerScience/AlgorithmsInComputerScience/Agreement.lean/declarations/agreementstatus.md) | 31 | `declaration-track:cbc1e0088fd5e7be9f7e2f2e9c3b2289afe2b191e506be8d3d2cc7538d0a5c1d` |
-| 3 | `structure` | [AgreementFinding](../../../../../ComputerScience/AlgorithmsInComputerScience/Agreement.lean/declarations/agreementfinding.md) | 38 | `declaration-track:5351335088523b6602bc07a1c6868b05875d35d77b96386987b27a517a9b9989` |
-| 4 | `structure` | [AgreementLedger](../../../../../ComputerScience/AlgorithmsInComputerScience/Agreement.lean/declarations/agreementledger.md) | 48 | `declaration-track:ab50024668ea22c5fa84d575b7e92d1397168f963f3bfc3f0109f5ed681956a3` |
-| 5 | `def` | [AgreementLedger.authority](../../../../../ComputerScience/AlgorithmsInComputerScience/Agreement.lean/declarations/agreementledger-authority.md) | 58 | `declaration-track:0cfe1bc54e58ff19289ba90ec2fdd229af9f176ef82dff032d3e14656322b25a` |
-| 6 | `theorem` | [agreement_is_not_fact_authority](../../../../../ComputerScience/AlgorithmsInComputerScience/Agreement.lean/declarations/agreement-is-not-fact-authority.md) | 63 | `result-track:ebb25c864893e7b28e37b71efdba78248b6040bcb754e13fd40247fcffbdf66b` |
+| 1 | `inductive` | [AgreementDimension](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Agreement.lean/declarations/agreementdimension.md) | 13 | `declaration-track:78d9fecdcf8df45f8757e03332479558c53e30c34f4f123e5c15e013e100f2c7` |
+| 2 | `inductive` | [AgreementStatus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Agreement.lean/declarations/agreementstatus.md) | 31 | `declaration-track:cbc1e0088fd5e7be9f7e2f2e9c3b2289afe2b191e506be8d3d2cc7538d0a5c1d` |
+| 3 | `structure` | [AgreementFinding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Agreement.lean/declarations/agreementfinding.md) | 38 | `declaration-track:5351335088523b6602bc07a1c6868b05875d35d77b96386987b27a517a9b9989` |
+| 4 | `structure` | [AgreementLedger](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Agreement.lean/declarations/agreementledger.md) | 48 | `declaration-track:ab50024668ea22c5fa84d575b7e92d1397168f963f3bfc3f0109f5ed681956a3` |
+| 5 | `def` | [AgreementLedger.authority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Agreement.lean/declarations/agreementledger-authority.md) | 58 | `declaration-track:0cfe1bc54e58ff19289ba90ec2fdd229af9f176ef82dff032d3e14656322b25a` |
+| 6 | `theorem` | [agreement_is_not_fact_authority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Agreement.lean/declarations/agreement-is-not-fact-authority.md) | 63 | `result-track:ebb25c864893e7b28e37b71efdba78248b6040bcb754e13fd40247fcffbdf66b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../IntegralTransformsOperationalCalculus/GaussianAnnularMissingPositivity.lean/index.md) · [Full source](../../../../IntegralTransformsOperationalCalculus/GaussianAnnularMissingPositivity.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/GaussianAnnularMissingPositivity.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/GaussianAnnularMissingPositivity.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.MellinTransform.Checks.Positive.GaussianAnnularSeparation`](../../../../MeasureAndIntegration/PositiveGaussianAnnularSeparation.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.Analysis.MellinTransform.Checks.Positive.GaussianAnnularSeparation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveGaussianAnnularSeparation.lean/index.md) — import line 3; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../IntegralTransformsOperationalCalculus/GaussianAnnularMissingPositivity.lean/declarations/example.md) | 8 | `declaration-track:c96f892364a1b04adfac792e83f2dba3d3f5feb69326d62b57741dda965a0046` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/GaussianAnnularMissingPositivity.lean/declarations/example.md) | 8 | `declaration-track:c96f892364a1b04adfac792e83f2dba3d3f5feb69326d62b57741dda965a0046` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

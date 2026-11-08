@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/SourcePolynomialArithmeticCheck.lean/index.md) · [Full source](../../../../CommutativeAlgebra/SourcePolynomialArithmeticCheck.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SourcePolynomialArithmeticCheck.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SourcePolynomialArithmeticCheck.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [x_collected](../../../../CommutativeAlgebra/SourcePolynomialArithmeticCheck.lean/declarations/x-collected.md) | 10 | `result-track:4697806f225689ca7f29a16793ef123a5088678fb3da39cb504cb75b576d00de` |
+| 1 | `theorem` | [x_collected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SourcePolynomialArithmeticCheck.lean/declarations/x-collected.md) | 10 | `result-track:4697806f225689ca7f29a16793ef123a5088678fb3da39cb504cb75b576d00de` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

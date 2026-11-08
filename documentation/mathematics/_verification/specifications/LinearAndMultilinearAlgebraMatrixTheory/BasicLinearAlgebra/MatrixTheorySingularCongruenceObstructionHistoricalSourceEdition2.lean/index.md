@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixTheorySingularCongruenceObstructionHistoricalSourceEdition2.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixTheorySingularCongruenceObstructionHistoricalSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixTheorySingularCongruenceObstructionHistoricalSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixTheorySingularCongruenceObstructionHistoricalSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [singular_square_congruence_ne_positive_definite](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixTheorySingularCongruenceObstructionHistoricalSourceEdition2.lean/declarations/singular-square-congruence-ne-positive-definite.md) | 26 | `result-track:75d417c67673218bd0df00ceb24cc41a6aa0aca6ef2b85882cb4aedda180f196` |
-| 2 | `theorem` | [zero_row_square_congruence_ne_positive_definite](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixTheorySingularCongruenceObstructionHistoricalSourceEdition2.lean/declarations/zero-row-square-congruence-ne-positive-definite.md) | 39 | `result-track:6137b0b2ada2d8da8410c1b8ecea67975bc5eefbf593e3019ddae02ec1bdc688` |
+| 1 | `theorem` | [singular_square_congruence_ne_positive_definite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixTheorySingularCongruenceObstructionHistoricalSourceEdition2.lean/declarations/singular-square-congruence-ne-positive-definite.md) | 26 | `result-track:75d417c67673218bd0df00ceb24cc41a6aa0aca6ef2b85882cb4aedda180f196` |
+| 2 | `theorem` | [zero_row_square_congruence_ne_positive_definite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixTheorySingularCongruenceObstructionHistoricalSourceEdition2.lean/declarations/zero-row-square-congruence-ne-positive-definite.md) | 39 | `result-track:6137b0b2ada2d8da8410c1b8ecea67975bc5eefbf593e3019ddae02ec1bdc688` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

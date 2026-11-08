@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RootPairingCatPublic.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RootPairingCatPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RootPairingCatPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RootPairingCatPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RootPairingCat](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RootPairingCatPublic.lean/declarations/rootpairingcat.md) | 42 | `declaration-track:63ef82684fd052612e6a4a66961046935ef668f2754140ae965057309e129242` |
-| 2 | `instance` | [category](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RootPairingCatPublic.lean/declarations/category.md) | 61 | `declaration-track:0bc83462d6e308b03cbe87e90e5292f01f703f76d435c59aeb8aaa53deebfe72` |
+| 1 | `structure` | [RootPairingCat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RootPairingCatPublic.lean/declarations/rootpairingcat.md) | 42 | `declaration-track:63ef82684fd052612e6a4a66961046935ef668f2754140ae965057309e129242` |
+| 2 | `instance` | [category](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RootPairingCatPublic.lean/declarations/category.md) | 61 | `declaration-track:0bc83462d6e308b03cbe87e90e5292f01f703f76d435c59aeb8aaa53deebfe72` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

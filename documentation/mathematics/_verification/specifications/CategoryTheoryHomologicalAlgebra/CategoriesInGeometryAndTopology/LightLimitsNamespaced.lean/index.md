@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightLimitsNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightLimitsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightLimitsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightLimitsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightLimitsNamespaced.lean/declarations/instance-source-edition-5.md) | 26 | `declaration-track:feece88a3f5cd11fa368d9507c586200aabdae187f9b7d603aaa4fb38e9b05c1` |
-| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightLimitsNamespaced.lean/declarations/instance-source-edition-2.md) | 30 | `declaration-track:79f5a0037fb510ab18d7f8d3862c7597b23bf368bfb8f5b129acec644409a3ff` |
-| 3 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightLimitsNamespaced.lean/declarations/instance-source-edition-3.md) | 34 | `declaration-track:99fe2a1d70d0fd4b23f5c2e2d332c9bfdd0d9f1f56657677ad49bda6f67d6fd2` |
-| 4 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightLimitsNamespaced.lean/declarations/instance.md) | 37 | `declaration-track:758981a499a353a4439ad523e152319a9f62c3817fbc0e4a23727f79c306e398` |
-| 5 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightLimitsNamespaced.lean/declarations/instance-source-edition-4.md) | 40 | `declaration-track:ea54dbabd39832b6b20c541070365a93518107d8e7f264449fd7705c96ed0d9e` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightLimitsNamespaced.lean/declarations/instance-source-edition-5.md) | 26 | `declaration-track:feece88a3f5cd11fa368d9507c586200aabdae187f9b7d603aaa4fb38e9b05c1` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightLimitsNamespaced.lean/declarations/instance-source-edition-2.md) | 30 | `declaration-track:79f5a0037fb510ab18d7f8d3862c7597b23bf368bfb8f5b129acec644409a3ff` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightLimitsNamespaced.lean/declarations/instance-source-edition-3.md) | 34 | `declaration-track:99fe2a1d70d0fd4b23f5c2e2d332c9bfdd0d9f1f56657677ad49bda6f67d6fd2` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightLimitsNamespaced.lean/declarations/instance.md) | 37 | `declaration-track:758981a499a353a4439ad523e152319a9f62c3817fbc0e4a23727f79c306e398` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightLimitsNamespaced.lean/declarations/instance-source-edition-4.md) | 40 | `declaration-track:ea54dbabd39832b6b20c541070365a93518107d8e7f264449fd7705c96ed0d9e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

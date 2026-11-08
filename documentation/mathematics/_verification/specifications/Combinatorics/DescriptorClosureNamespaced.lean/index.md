@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/DescriptorClosureNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/DescriptorClosureNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DescriptorClosureNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DescriptorClosureNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [DescriptorRelationClosed](../../../../Combinatorics/DescriptorClosureNamespaced.lean/declarations/descriptorrelationclosed.md) | 24 | `declaration-track:f87f3b3489ea19a5c9705b1da538450d4f06abbcafab6997676e06f340914524` |
-| 2 | `def` | [LeastDescriptorRelationClosure](../../../../Combinatorics/DescriptorClosureNamespaced.lean/declarations/leastdescriptorrelationclosure.md) | 36 | `declaration-track:497ea040fea80b1caf2952e1ce32b5608fb779dca9b728ea7a81f706b9bc56e3` |
-| 3 | `def` | [IntrinsicDescriptorClosureStatement](../../../../Combinatorics/DescriptorClosureNamespaced.lean/declarations/intrinsicdescriptorclosurestatement.md) | 47 | `declaration-track:cfa81a74c75704e40ecb1c77b2a4b8459180c196d23f47c890a2a83087f0233b` |
-| 4 | `def` | [intrinsicDescriptorClosureOpenElement](../../../../Combinatorics/DescriptorClosureNamespaced.lean/declarations/intrinsicdescriptorclosureopenelement.md) | 58 | `declaration-track:404a3076ac52e8ee9f7d122afdfd677b404d741c01e6aaf2d390ad8c528fef98` |
+| 1 | `def` | [DescriptorRelationClosed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DescriptorClosureNamespaced.lean/declarations/descriptorrelationclosed.md) | 24 | `declaration-track:f87f3b3489ea19a5c9705b1da538450d4f06abbcafab6997676e06f340914524` |
+| 2 | `def` | [LeastDescriptorRelationClosure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DescriptorClosureNamespaced.lean/declarations/leastdescriptorrelationclosure.md) | 36 | `declaration-track:497ea040fea80b1caf2952e1ce32b5608fb779dca9b728ea7a81f706b9bc56e3` |
+| 3 | `def` | [IntrinsicDescriptorClosureStatement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DescriptorClosureNamespaced.lean/declarations/intrinsicdescriptorclosurestatement.md) | 47 | `declaration-track:cfa81a74c75704e40ecb1c77b2a4b8459180c196d23f47c890a2a83087f0233b` |
+| 4 | `def` | [intrinsicDescriptorClosureOpenElement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DescriptorClosureNamespaced.lean/declarations/intrinsicdescriptorclosureopenelement.md) | 58 | `declaration-track:404a3076ac52e8ee9f7d122afdfd677b404d741c01e6aaf2d390ad8c528fef98` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

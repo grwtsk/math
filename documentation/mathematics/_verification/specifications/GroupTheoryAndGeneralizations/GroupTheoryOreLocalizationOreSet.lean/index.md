@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/GroupTheoryOreLocalizationOreSet.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/GroupTheoryOreLocalizationOreSet.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupTheoryOreLocalizationOreSet.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupTheoryOreLocalizationOreSet.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [AddOreSet](../../../../GroupTheoryAndGeneralizations/GroupTheoryOreLocalizationOreSet.lean/declarations/addoreset.md) | 27 | `declaration-track:3d0fa0fd1faf0f2f61bb946564c794fc85d009aef2e487a9b4c02db43bce07cf` |
-| 2 | `class` | [OreSet](../../../../GroupTheoryAndGeneralizations/GroupTheoryOreLocalizationOreSet.lean/declarations/oreset.md) | 48 | `declaration-track:5508639cfd5183c7353f086d38abcc4baa300c7ccff4564f73ccfd1a2d2a5758` |
-| 3 | `theorem` | [ore_right_cancel](../../../../GroupTheoryAndGeneralizations/GroupTheoryOreLocalizationOreSet.lean/declarations/ore-right-cancel.md) | 67 | `result-track:992a57dc4b01f482a3d6753c41756dae3fa1189eb0f6dd8c5463eb014fba3e16` |
-| 4 | `def` | [oreNum](../../../../GroupTheoryAndGeneralizations/GroupTheoryOreLocalizationOreSet.lean/declarations/orenum.md) | 72 | `declaration-track:1f03e599e27389e06e714164d5bc648321aa7d4e868437f2fb384d845c97ac00` |
-| 5 | `def` | [oreDenom](../../../../GroupTheoryAndGeneralizations/GroupTheoryOreLocalizationOreSet.lean/declarations/oredenom.md) | 77 | `declaration-track:0e128be85649b37e26d8922b488c7e3b9073b0df1df8d1f24f3533b850f900d9` |
-| 6 | `theorem` | [ore_eq](../../../../GroupTheoryAndGeneralizations/GroupTheoryOreLocalizationOreSet.lean/declarations/ore-eq.md) | 83 | `result-track:e4e4cde787d04400d80768c0e306b977c01423866eb7b20c8d382769ccd63a27` |
-| 7 | `def` | [oreCondition](../../../../GroupTheoryAndGeneralizations/GroupTheoryOreLocalizationOreSet.lean/declarations/orecondition.md) | 91 | `declaration-track:bf462c36b5cf04e7f3b70f28157acdf82afd890a9c2262979281e3e945630bda` |
-| 8 | `instance` | [oreSetBot](../../../../GroupTheoryAndGeneralizations/GroupTheoryOreLocalizationOreSet.lean/declarations/oresetbot.md) | 96 | `declaration-track:33d6620543d845571b54389e87ccc360695cf6a23141771ef51c8ec3a0ed8b21` |
-| 9 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/GroupTheoryOreLocalizationOreSet.lean/declarations/instance.md) | 114 | `declaration-track:59b5fb12d688d951f0a8b115cbe603ce7d83bda8a791c164051922026b530e2a` |
+| 1 | `class` | [AddOreSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupTheoryOreLocalizationOreSet.lean/declarations/addoreset.md) | 27 | `declaration-track:3d0fa0fd1faf0f2f61bb946564c794fc85d009aef2e487a9b4c02db43bce07cf` |
+| 2 | `class` | [OreSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupTheoryOreLocalizationOreSet.lean/declarations/oreset.md) | 48 | `declaration-track:5508639cfd5183c7353f086d38abcc4baa300c7ccff4564f73ccfd1a2d2a5758` |
+| 3 | `theorem` | [ore_right_cancel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupTheoryOreLocalizationOreSet.lean/declarations/ore-right-cancel.md) | 67 | `result-track:992a57dc4b01f482a3d6753c41756dae3fa1189eb0f6dd8c5463eb014fba3e16` |
+| 4 | `def` | [oreNum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupTheoryOreLocalizationOreSet.lean/declarations/orenum.md) | 72 | `declaration-track:1f03e599e27389e06e714164d5bc648321aa7d4e868437f2fb384d845c97ac00` |
+| 5 | `def` | [oreDenom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupTheoryOreLocalizationOreSet.lean/declarations/oredenom.md) | 77 | `declaration-track:0e128be85649b37e26d8922b488c7e3b9073b0df1df8d1f24f3533b850f900d9` |
+| 6 | `theorem` | [ore_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupTheoryOreLocalizationOreSet.lean/declarations/ore-eq.md) | 83 | `result-track:e4e4cde787d04400d80768c0e306b977c01423866eb7b20c8d382769ccd63a27` |
+| 7 | `def` | [oreCondition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupTheoryOreLocalizationOreSet.lean/declarations/orecondition.md) | 91 | `declaration-track:bf462c36b5cf04e7f3b70f28157acdf82afd890a9c2262979281e3e945630bda` |
+| 8 | `instance` | [oreSetBot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupTheoryOreLocalizationOreSet.lean/declarations/oresetbot.md) | 96 | `declaration-track:33d6620543d845571b54389e87ccc360695cf6a23141771ef51c8ec3a0ed8b21` |
+| 9 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupTheoryOreLocalizationOreSet.lean/declarations/instance.md) | 114 | `declaration-track:59b5fb12d688d951f0a8b115cbe603ce7d83bda8a791c164051922026b530e2a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

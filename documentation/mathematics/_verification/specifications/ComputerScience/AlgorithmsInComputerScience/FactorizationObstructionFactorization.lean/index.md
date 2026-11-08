@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/FactorizationObstructionFactorization.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/FactorizationObstructionFactorization.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FactorizationObstructionFactorization.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FactorizationObstructionFactorization.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ObstructionFactorization](../../../../../ComputerScience/AlgorithmsInComputerScience/FactorizationObstructionFactorization.lean/declarations/obstructionfactorization.md) | 12 | `declaration-track:6e15df7d3cd09d39d356168959d471cf7307c20f5744bd603fb37ff39faab3bd` |
-| 2 | `theorem` | [obstruction_factorization_retains_occurrence](../../../../../ComputerScience/AlgorithmsInComputerScience/FactorizationObstructionFactorization.lean/declarations/obstruction-factorization-retains-occurrence.md) | 23 | `result-track:5809a495270a5cc29b55cd176d952c53a124d95f6f6f31606f8ed8e635a579b9` |
+| 1 | `structure` | [ObstructionFactorization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FactorizationObstructionFactorization.lean/declarations/obstructionfactorization.md) | 12 | `declaration-track:6e15df7d3cd09d39d356168959d471cf7307c20f5744bd603fb37ff39faab3bd` |
+| 2 | `theorem` | [obstruction_factorization_retains_occurrence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FactorizationObstructionFactorization.lean/declarations/obstruction-factorization-retains-occurrence.md) | 23 | `result-track:5809a495270a5cc29b55cd176d952c53a124d95f6f6f31606f8ed8e635a579b9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/TopCatAdjunctionsNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/TopCatAdjunctionsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopCatAdjunctionsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopCatAdjunctionsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [adj₁](../../../../GeneralTopology/TopCatAdjunctionsNamespaced.lean/declarations/adj.md) | 37 | `declaration-track:0a01b5d179602d36356d58bbeca30b40e44d81ca13a861c4b4d7ce8471ae237c` |
-| 2 | `def` | [adj₂](../../../../GeneralTopology/TopCatAdjunctionsNamespaced.lean/declarations/adj-source-edition-2.md) | 44 | `declaration-track:2da769f279b1e138f8337cfb5621a711152d6a090de198c4e44fc815633b8db0` |
-| 3 | `instance` | [(anonymous)](../../../../GeneralTopology/TopCatAdjunctionsNamespaced.lean/declarations/instance-source-edition-2.md) | 48 | `declaration-track:d1fb824c93b912c5384b8f1b25b07cd268984962207ffcb9620e2f06022d6578` |
-| 4 | `instance` | [(anonymous)](../../../../GeneralTopology/TopCatAdjunctionsNamespaced.lean/declarations/instance.md) | 51 | `declaration-track:8ec88cc5b4a0a168a66a4850f1b628c988dbbcb750e9eb54a8707a2a5d3650df` |
+| 1 | `def` | [adj₁](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopCatAdjunctionsNamespaced.lean/declarations/adj.md) | 37 | `declaration-track:0a01b5d179602d36356d58bbeca30b40e44d81ca13a861c4b4d7ce8471ae237c` |
+| 2 | `def` | [adj₂](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopCatAdjunctionsNamespaced.lean/declarations/adj-source-edition-2.md) | 44 | `declaration-track:2da769f279b1e138f8337cfb5621a711152d6a090de198c4e44fc815633b8db0` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopCatAdjunctionsNamespaced.lean/declarations/instance-source-edition-2.md) | 48 | `declaration-track:d1fb824c93b912c5384b8f1b25b07cd268984962207ffcb9620e2f06022d6578` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopCatAdjunctionsNamespaced.lean/declarations/instance.md) | 51 | `declaration-track:8ec88cc5b4a0a168a66a4850f1b628c988dbbcb750e9eb54a8707a2a5d3650df` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

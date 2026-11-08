@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ActualCorrelationOppositeHalfNamespacedEdition2.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ActualCorrelationOppositeHalfNamespacedEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCorrelationOppositeHalfNamespacedEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCorrelationOppositeHalfNamespacedEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualBilateralCorrelationTransform](../../../../MeasureAndIntegration/ActualCorrelationOppositeHalfNamespacedEdition2.lean/declarations/actualbilateralcorrelationtransform.md) | 32 | `declaration-track:0f84c0b3fad519fdf12393e2f85f260ebf06a579f4dfdc2870f63b3b4a365b1f` |
-| 2 | `theorem` | [actualBilateralCorrelationTransform_eq_halves](../../../../MeasureAndIntegration/ActualCorrelationOppositeHalfNamespacedEdition2.lean/declarations/actualbilateralcorrelationtransform-eq-halves.md) | 37 | `result-track:e4891a1031c81ac57e7842511e026da5291126a7082fbeb995101e318d02519f` |
-| 3 | `theorem` | [actualHalfCorrelationTransform_opposite_norm_le](../../../../MeasureAndIntegration/ActualCorrelationOppositeHalfNamespacedEdition2.lean/declarations/actualhalfcorrelationtransform-opposite-norm-le.md) | 67 | `result-track:2711a913dc53e85f0447c8d088641b7abf9a1f8b00ff0001ce6fe8a413c08cb5` |
-| 4 | `theorem` | [actualHalfCorrelationTransform_sub_bilateral_norm_le](../../../../MeasureAndIntegration/ActualCorrelationOppositeHalfNamespacedEdition2.lean/declarations/actualhalfcorrelationtransform-sub-bilateral-norm-le.md) | 115 | `result-track:0620ba7bb5f9c987583fd0905b3884229b586112df0e6c5f6a2e03312c704ef1` |
+| 1 | `def` | [actualBilateralCorrelationTransform](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCorrelationOppositeHalfNamespacedEdition2.lean/declarations/actualbilateralcorrelationtransform.md) | 32 | `declaration-track:0f84c0b3fad519fdf12393e2f85f260ebf06a579f4dfdc2870f63b3b4a365b1f` |
+| 2 | `theorem` | [actualBilateralCorrelationTransform_eq_halves](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCorrelationOppositeHalfNamespacedEdition2.lean/declarations/actualbilateralcorrelationtransform-eq-halves.md) | 37 | `result-track:e4891a1031c81ac57e7842511e026da5291126a7082fbeb995101e318d02519f` |
+| 3 | `theorem` | [actualHalfCorrelationTransform_opposite_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCorrelationOppositeHalfNamespacedEdition2.lean/declarations/actualhalfcorrelationtransform-opposite-norm-le.md) | 67 | `result-track:2711a913dc53e85f0447c8d088641b7abf9a1f8b00ff0001ce6fe8a413c08cb5` |
+| 4 | `theorem` | [actualHalfCorrelationTransform_sub_bilateral_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCorrelationOppositeHalfNamespacedEdition2.lean/declarations/actualhalfcorrelationtransform-sub-bilateral-norm-le.md) | 115 | `result-track:0620ba7bb5f9c987583fd0905b3884229b586112df0e6c5f6a2e03312c704ef1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

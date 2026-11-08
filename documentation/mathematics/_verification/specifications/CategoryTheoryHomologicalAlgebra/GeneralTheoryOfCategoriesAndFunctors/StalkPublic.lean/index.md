@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StalkPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StalkPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StalkPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StalkPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [colimit.smul](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StalkPublic.lean/declarations/colimit-smul.md) | 41 | `declaration-track:b812871c39b334848626638fa19df458daa3c813e7e7003bc1b5623085c1844e` |
-| 2 | `abbrev` | [filteredColimitsModule](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StalkPublic.lean/declarations/filteredcolimitsmodule.md) | 62 | `declaration-track:8bb3ae98fda5b72d53b5f5dfa85e1d2ed556f816830b2f376cd640544d523b76` |
-| 3 | `abbrev` | [IsColimit.module](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StalkPublic.lean/declarations/iscolimit-module.md) | 122 | `declaration-track:ca97edcbbb108da7932d8cc1dfe74fe472382b9fb57352ddbe0fae9c5a8c0e4d` |
-| 4 | `lemma` | [IsColimit.ι_smul](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StalkPublic.lean/declarations/iscolimit-smul.md) | 134 | `result-track:a9b3eb1e7f02a8fa5d5a02bfa8cd05319182f290907326d1e0050aef290558a8` |
-| 5 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StalkPublic.lean/declarations/instance.md) | 165 | `declaration-track:1b2b8e27fbf11cb7a30c5f93b42b8485f9c3c0542ecdf68ebdf7c79fe038561f` |
-| 6 | `lemma` | [germ_ringCat_smul](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StalkPublic.lean/declarations/germ-ringcat-smul.md) | 174 | `result-track:3b18cedc361b693dd2d411c9f1e55d2f9b361dfe3f05cf3ec2f6cd2a60a9dc01` |
-| 7 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StalkPublic.lean/declarations/instance-source-edition-2.md) | 192 | `declaration-track:fc8d472ae249d4733e3aa752b22117c71d59d1b50d0e1b908d9c58604b3ef44f` |
-| 8 | `lemma` | [germ_smul](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StalkPublic.lean/declarations/germ-smul.md) | 203 | `result-track:260bf03451ed252e82c52787d126abe57edaecf00ee707866d32e190de9d049e` |
+| 1 | `def` | [colimit.smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StalkPublic.lean/declarations/colimit-smul.md) | 41 | `declaration-track:b812871c39b334848626638fa19df458daa3c813e7e7003bc1b5623085c1844e` |
+| 2 | `abbrev` | [filteredColimitsModule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StalkPublic.lean/declarations/filteredcolimitsmodule.md) | 62 | `declaration-track:8bb3ae98fda5b72d53b5f5dfa85e1d2ed556f816830b2f376cd640544d523b76` |
+| 3 | `abbrev` | [IsColimit.module](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StalkPublic.lean/declarations/iscolimit-module.md) | 122 | `declaration-track:ca97edcbbb108da7932d8cc1dfe74fe472382b9fb57352ddbe0fae9c5a8c0e4d` |
+| 4 | `lemma` | [IsColimit.ι_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StalkPublic.lean/declarations/iscolimit-smul.md) | 134 | `result-track:a9b3eb1e7f02a8fa5d5a02bfa8cd05319182f290907326d1e0050aef290558a8` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StalkPublic.lean/declarations/instance.md) | 165 | `declaration-track:1b2b8e27fbf11cb7a30c5f93b42b8485f9c3c0542ecdf68ebdf7c79fe038561f` |
+| 6 | `lemma` | [germ_ringCat_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StalkPublic.lean/declarations/germ-ringcat-smul.md) | 174 | `result-track:3b18cedc361b693dd2d411c9f1e55d2f9b361dfe3f05cf3ec2f6cd2a60a9dc01` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StalkPublic.lean/declarations/instance-source-edition-2.md) | 192 | `declaration-track:fc8d472ae249d4733e3aa752b22117c71d59d1b50d0e1b908d9c58604b3ef44f` |
+| 8 | `lemma` | [germ_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StalkPublic.lean/declarations/germ-smul.md) | 203 | `result-track:260bf03451ed252e82c52787d126abe57edaecf00ee707866d32e190de9d049e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

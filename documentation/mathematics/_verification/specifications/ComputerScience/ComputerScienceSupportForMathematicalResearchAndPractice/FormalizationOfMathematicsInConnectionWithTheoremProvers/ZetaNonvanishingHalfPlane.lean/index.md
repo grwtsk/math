@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ZetaNonvanishingHalfPlane.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ZetaNonvanishingHalfPlane.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ZetaNonvanishingHalfPlane.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ZetaNonvanishingHalfPlane.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [zetaComplexHalfPlane_mul_mobiusDirichletSeries](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ZetaNonvanishingHalfPlane.lean/declarations/zetacomplexhalfplane-mul-mobiusdirichletseries.md) | 14 | `result-track:bc4fa3d55f311e2f699697d610d8adea71e8996b83caf1b56100e443211b3efe` |
-| 2 | `theorem` | [zeta_mul_mobiusDirichletSeries](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ZetaNonvanishingHalfPlane.lean/declarations/zeta-mul-mobiusdirichletseries.md) | 32 | `result-track:2863f04d8cf3169fe3d1724f3270635ee3e9ca33176a712060cd96e846204cb3` |
-| 3 | `theorem` | [zetaComplexHalfPlane_ne_zero](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ZetaNonvanishingHalfPlane.lean/declarations/zetacomplexhalfplane-ne-zero.md) | 46 | `result-track:ca82eb092ba54b76db16428768cb78d86569f9cc74eb68be6a21b8c8fffc9ec1` |
+| 1 | `theorem` | [zetaComplexHalfPlane_mul_mobiusDirichletSeries](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ZetaNonvanishingHalfPlane.lean/declarations/zetacomplexhalfplane-mul-mobiusdirichletseries.md) | 14 | `result-track:bc4fa3d55f311e2f699697d610d8adea71e8996b83caf1b56100e443211b3efe` |
+| 2 | `theorem` | [zeta_mul_mobiusDirichletSeries](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ZetaNonvanishingHalfPlane.lean/declarations/zeta-mul-mobiusdirichletseries.md) | 32 | `result-track:2863f04d8cf3169fe3d1724f3270635ee3e9ca33176a712060cd96e846204cb3` |
+| 3 | `theorem` | [zetaComplexHalfPlane_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ZetaNonvanishingHalfPlane.lean/declarations/zetacomplexhalfplane-ne-zero.md) | 46 | `result-track:ca82eb092ba54b76db16428768cb78d86569f9cc74eb68be6a21b8c8fffc9ec1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

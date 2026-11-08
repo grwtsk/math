@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicPublicBody.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicPublicBody.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicPublicBody.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicPublicBody.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [Body](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicPublicBody.lean/declarations/body.md) | 32 | `declaration-track:4ac5c2527cc4ce242ff271c647799a07cfeab8ded1d76338ad04e52268c04d44` |
-| 2 | `class` | [ToByteArray](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicPublicBody.lean/declarations/tobytearray.md) | 75 | `declaration-track:7dd61298ec380a7b0b69fb2979b7676d5a562f1cb00623c42dd1593340cef906` |
-| 3 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicPublicBody.lean/declarations/instance-source-edition-2.md) | 82 | `declaration-track:7b9d505eaec95db1a3c236a09fab17390a473a0d1ef95b2b7f502f3e09abe366` |
-| 4 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicPublicBody.lean/declarations/instance.md) | 85 | `declaration-track:62d8135f40b1d02cdc6a3a92015b05e6bda754b11eac5e735543546e328b4052` |
-| 5 | `class` | [FromByteArray](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicPublicBody.lean/declarations/frombytearray.md) | 92 | `declaration-track:e2fb2dabd8875958db4d83e820a405143ae13de33407382e24cb32822182da80` |
-| 6 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicPublicBody.lean/declarations/instance-source-edition-3.md) | 99 | `declaration-track:8bcfd0122d98b9a2d1499b3907ceb0e826a8919e37d8d89d8f9ec3ad5595dff7` |
-| 7 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicPublicBody.lean/declarations/instance-source-edition-4.md) | 102 | `declaration-track:9211e4b0e32d558276077cb150fd555133a67a5ed80703a2748254aa70b5be57` |
+| 1 | `class` | [Body](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicPublicBody.lean/declarations/body.md) | 32 | `declaration-track:4ac5c2527cc4ce242ff271c647799a07cfeab8ded1d76338ad04e52268c04d44` |
+| 2 | `class` | [ToByteArray](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicPublicBody.lean/declarations/tobytearray.md) | 75 | `declaration-track:7dd61298ec380a7b0b69fb2979b7676d5a562f1cb00623c42dd1593340cef906` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicPublicBody.lean/declarations/instance-source-edition-2.md) | 82 | `declaration-track:7b9d505eaec95db1a3c236a09fab17390a473a0d1ef95b2b7f502f3e09abe366` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicPublicBody.lean/declarations/instance.md) | 85 | `declaration-track:62d8135f40b1d02cdc6a3a92015b05e6bda754b11eac5e735543546e328b4052` |
+| 5 | `class` | [FromByteArray](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicPublicBody.lean/declarations/frombytearray.md) | 92 | `declaration-track:e2fb2dabd8875958db4d83e820a405143ae13de33407382e24cb32822182da80` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicPublicBody.lean/declarations/instance-source-edition-3.md) | 99 | `declaration-track:8bcfd0122d98b9a2d1499b3907ceb0e826a8919e37d8d89d8f9ec3ad5595dff7` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicPublicBody.lean/declarations/instance-source-edition-4.md) | 102 | `declaration-track:9211e4b0e32d558276077cb150fd555133a67a5ed80703a2748254aa70b5be57` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

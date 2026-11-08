@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/InstantiateMVarsSNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/InstantiateMVarsSNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/InstantiateMVarsSNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/InstantiateMVarsSNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [instantiateMVarsS](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/InstantiateMVarsSNamespacedPublic.lean/declarations/instantiatemvarss.md) | 22 | `declaration-track:67950adc4c786ca524ad968a735668a7c51545f0457c0547c01969c1dd7d2b22` |
-| 2 | `def` | [instantiateMVarsIfMVarAppS](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/InstantiateMVarsSNamespacedPublic.lean/declarations/instantiatemvarsifmvarapps.md) | 33 | `declaration-track:bf9b0cd31ffa9ca7ad5096e86a8d5f6df6e52a3f225ac98357adf1ffc6ede060` |
+| 1 | `def` | [instantiateMVarsS](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/InstantiateMVarsSNamespacedPublic.lean/declarations/instantiatemvarss.md) | 22 | `declaration-track:67950adc4c786ca524ad968a735668a7c51545f0457c0547c01969c1dd7d2b22` |
+| 2 | `def` | [instantiateMVarsIfMVarAppS](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/InstantiateMVarsSNamespacedPublic.lean/declarations/instantiatemvarsifmvarapps.md) | 33 | `declaration-track:bf9b0cd31ffa9ca7ad5096e86a8d5f6df6e52a3f225ac98357adf1ffc6ede060` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

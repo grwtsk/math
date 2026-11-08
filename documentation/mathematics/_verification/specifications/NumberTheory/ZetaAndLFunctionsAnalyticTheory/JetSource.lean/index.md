@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetSource.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetSource.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetSource.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetSource.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [jetCoefficient](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetSource.lean/declarations/jetcoefficient.md) | 9 | `declaration-track:f02cd5a8463398bee06ed68be880aef7d43b191deb7176298b7ea9baa90ce5e2` |
-| 2 | `theorem` | [jetPolynomial_eq_sum](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetSource.lean/declarations/jetpolynomial-eq-sum.md) | 14 | `result-track:40e6cac05d51bc11a2340d99e011695f31054714e267de964bcc95478cee88c3` |
-| 3 | `def` | [thetaPhiJet](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetSource.lean/declarations/thetaphijet.md) | 19 | `declaration-track:74e473f5bc95da3378675b04abd6baa4f9cd46834c2a75283d253a860bafb79a` |
-| 4 | `theorem` | [thetaPhi_eq_gaussianSums](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetSource.lean/declarations/thetaphi-eq-gaussiansums.md) | 22 | `result-track:56148c3d5e09e438c4b0f61787c85b2e90eeef392ee31b479c4469df3366539d` |
-| 5 | `theorem` | [thetaPhiJet_eq_gaussianSum](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetSource.lean/declarations/thetaphijet-eq-gaussiansum.md) | 38 | `result-track:56bb0cfa3b1f306fdadfe21aa822b708baf61ab73a5203b9f6ae5b66716a22f3` |
-| 6 | `theorem` | [scaledGaussianTerm_eq](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetSource.lean/declarations/scaledgaussianterm-eq.md) | 46 | `result-track:77369decd6da676743713dc51acc5ab063859d77f2dbfa49e2b78178a3b9fe07` |
-| 7 | `theorem` | [thetaPhiJet_eq_polynomial_sum](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetSource.lean/declarations/thetaphijet-eq-polynomial-sum.md) | 75 | `result-track:71520ff72a20bf6351a4cd7104c8e433f35ea2a618d9d2a8013af3d081678a13` |
-| 8 | `theorem` | [thetaPhiJet_polynomial_summable](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetSource.lean/declarations/thetaphijet-polynomial-summable.md) | 107 | `result-track:9c7510d68026ba79de323f9b93d642e0068f8a0a33f61519993f8556eefaa968` |
-| 9 | `theorem` | [hasDerivAt_thetaPhiJet](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetSource.lean/declarations/hasderivat-thetaphijet.md) | 126 | `result-track:4dff2bb3524bdb9b84aae2176d5d366e15d06959952175e2c1b5773cc01d8e1a` |
+| 1 | `def` | [jetCoefficient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetSource.lean/declarations/jetcoefficient.md) | 9 | `declaration-track:f02cd5a8463398bee06ed68be880aef7d43b191deb7176298b7ea9baa90ce5e2` |
+| 2 | `theorem` | [jetPolynomial_eq_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetSource.lean/declarations/jetpolynomial-eq-sum.md) | 14 | `result-track:40e6cac05d51bc11a2340d99e011695f31054714e267de964bcc95478cee88c3` |
+| 3 | `def` | [thetaPhiJet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetSource.lean/declarations/thetaphijet.md) | 19 | `declaration-track:74e473f5bc95da3378675b04abd6baa4f9cd46834c2a75283d253a860bafb79a` |
+| 4 | `theorem` | [thetaPhi_eq_gaussianSums](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetSource.lean/declarations/thetaphi-eq-gaussiansums.md) | 22 | `result-track:56148c3d5e09e438c4b0f61787c85b2e90eeef392ee31b479c4469df3366539d` |
+| 5 | `theorem` | [thetaPhiJet_eq_gaussianSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetSource.lean/declarations/thetaphijet-eq-gaussiansum.md) | 38 | `result-track:56bb0cfa3b1f306fdadfe21aa822b708baf61ab73a5203b9f6ae5b66716a22f3` |
+| 6 | `theorem` | [scaledGaussianTerm_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetSource.lean/declarations/scaledgaussianterm-eq.md) | 46 | `result-track:77369decd6da676743713dc51acc5ab063859d77f2dbfa49e2b78178a3b9fe07` |
+| 7 | `theorem` | [thetaPhiJet_eq_polynomial_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetSource.lean/declarations/thetaphijet-eq-polynomial-sum.md) | 75 | `result-track:71520ff72a20bf6351a4cd7104c8e433f35ea2a618d9d2a8013af3d081678a13` |
+| 8 | `theorem` | [thetaPhiJet_polynomial_summable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetSource.lean/declarations/thetaphijet-polynomial-summable.md) | 107 | `result-track:9c7510d68026ba79de323f9b93d642e0068f8a0a33f61519993f8556eefaa968` |
+| 9 | `theorem` | [hasDerivAt_thetaPhiJet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/JetSource.lean/declarations/hasderivat-thetaphijet.md) | 126 | `result-track:4dff2bb3524bdb9b84aae2176d5d366e15d06959952175e2c1b5773cc01d8e1a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

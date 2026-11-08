@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WellFoundedTacticsNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WellFoundedTacticsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WellFoundedTacticsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WellFoundedTacticsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Nat.lt_add_of_zero_lt_left](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WellFoundedTacticsNamespaced.lean/declarations/nat-lt-add-of-zero-lt-left.md) | 21 | `result-track:ce8e7314c299348dab7d05f8e16bf648733ffc5f3cce16bc0f8a2140303da081` |
-| 2 | `theorem` | [Nat.zero_lt_one_add](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WellFoundedTacticsNamespaced.lean/declarations/nat-zero-lt-one-add.md) | 27 | `result-track:942d031e204d377ad82a50cfab0db714c556832de0489dab1b9d8e1f2860fbe0` |
-| 3 | `theorem` | [Nat.lt_add_left](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WellFoundedTacticsNamespaced.lean/declarations/nat-lt-add-left.md) | 36 | `result-track:e2fdb4f469bc02bb068e71baa302f60eb8b7c6d414b65b44553a21536d5664cf` |
+| 1 | `theorem` | [Nat.lt_add_of_zero_lt_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WellFoundedTacticsNamespaced.lean/declarations/nat-lt-add-of-zero-lt-left.md) | 21 | `result-track:ce8e7314c299348dab7d05f8e16bf648733ffc5f3cce16bc0f8a2140303da081` |
+| 2 | `theorem` | [Nat.zero_lt_one_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WellFoundedTacticsNamespaced.lean/declarations/nat-zero-lt-one-add.md) | 27 | `result-track:942d031e204d377ad82a50cfab0db714c556832de0489dab1b9d8e1f2860fbe0` |
+| 3 | `theorem` | [Nat.lt_add_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/WellFoundedTacticsNamespaced.lean/declarations/nat-lt-add-left.md) | 36 | `result-track:e2fdb4f469bc02bb068e71baa302f60eb8b7c6d414b65b44553a21536d5664cf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

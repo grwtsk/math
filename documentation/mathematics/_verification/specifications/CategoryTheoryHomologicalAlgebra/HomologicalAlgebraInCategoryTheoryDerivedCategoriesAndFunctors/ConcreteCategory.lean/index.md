@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/ConcreteCategory.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/ConcreteCategory.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/ConcreteCategory.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/ConcreteCategory.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [cyclesMk](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/ConcreteCategory.lean/declarations/cyclesmk.md) | 35 | `declaration-track:ab17ef0ea9b4e838e6e8a54f6e379c3c084df387a2dea0a3df9540e515f88d69` |
-| 2 | `lemma` | [i_cyclesMk](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/ConcreteCategory.lean/declarations/i-cyclesmk.md) | 41 | `result-track:e1b8ec3f512d591d66ee33f0a67b3f092d753c0d3309c3575c30eb2758a0f57a` |
-| 3 | `lemma` | [δ_apply'](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/ConcreteCategory.lean/declarations/apply.md) | 58 | `result-track:46954697afc430e1911663c784e2e1491487db6ebb42556a9f954bdac6befb14` |
-| 4 | `lemma` | [δ_apply](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/ConcreteCategory.lean/declarations/apply-source-edition-2.md) | 68 | `result-track:87a688bf4530b4ea6b1e61e4be26e2daa7e97eb554c441addf789382ac7a67bd` |
+| 1 | `def` | [cyclesMk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/ConcreteCategory.lean/declarations/cyclesmk.md) | 35 | `declaration-track:ab17ef0ea9b4e838e6e8a54f6e379c3c084df387a2dea0a3df9540e515f88d69` |
+| 2 | `lemma` | [i_cyclesMk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/ConcreteCategory.lean/declarations/i-cyclesmk.md) | 41 | `result-track:e1b8ec3f512d591d66ee33f0a67b3f092d753c0d3309c3575c30eb2758a0f57a` |
+| 3 | `lemma` | [δ_apply'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/ConcreteCategory.lean/declarations/apply.md) | 58 | `result-track:46954697afc430e1911663c784e2e1491487db6ebb42556a9f954bdac6befb14` |
+| 4 | `lemma` | [δ_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/ConcreteCategory.lean/declarations/apply-source-edition-2.md) | 68 | `result-track:87a688bf4530b4ea6b1e61e4be26e2daa7e97eb554c441addf789382ac7a67bd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

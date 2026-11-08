@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SmithCertificateNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SmithCertificateNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SmithCertificateNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SmithCertificateNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [SmithTorsionCoordinates](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SmithCertificateNamespaced.lean/declarations/smithtorsioncoordinates.md) | 28 | `declaration-track:dafc8d48826f38110fe20b0d603511d69a9d06be055c8a76513035858a24a7be` |
-| 2 | `structure` | [DegreeSmithCertificate](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SmithCertificateNamespaced.lean/declarations/degreesmithcertificate.md) | 33 | `declaration-track:11cfdd8fd7708c516f2c03d85e4a6a1585c9e0637de7f9f4b3ecfb329c8df20b` |
-| 3 | `theorem` | [torsionOrder_ne_zero](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SmithCertificateNamespaced.lean/declarations/torsionorder-ne-zero.md) | 76 | `result-track:78bcdc5096ac8f67a5aace4e2267ea5934c040f422cbeb3c2368b5198ee6a31a` |
-| 4 | `instance` | [torsionFintype](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SmithCertificateNamespaced.lean/declarations/torsionfintype.md) | 83 | `declaration-track:e1a9be7a85d1270117e909412a9ea764b569ac05158467ad9fbfeaa862be001f` |
+| 1 | `abbrev` | [SmithTorsionCoordinates](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SmithCertificateNamespaced.lean/declarations/smithtorsioncoordinates.md) | 28 | `declaration-track:dafc8d48826f38110fe20b0d603511d69a9d06be055c8a76513035858a24a7be` |
+| 2 | `structure` | [DegreeSmithCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SmithCertificateNamespaced.lean/declarations/degreesmithcertificate.md) | 33 | `declaration-track:11cfdd8fd7708c516f2c03d85e4a6a1585c9e0637de7f9f4b3ecfb329c8df20b` |
+| 3 | `theorem` | [torsionOrder_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SmithCertificateNamespaced.lean/declarations/torsionorder-ne-zero.md) | 76 | `result-track:78bcdc5096ac8f67a5aace4e2267ea5934c040f422cbeb3c2368b5198ee6a31a` |
+| 4 | `instance` | [torsionFintype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SmithCertificateNamespaced.lean/declarations/torsionfintype.md) | 83 | `declaration-track:e1a9be7a85d1270117e909412a9ea764b569ac05158467ad9fbfeaa862be001f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

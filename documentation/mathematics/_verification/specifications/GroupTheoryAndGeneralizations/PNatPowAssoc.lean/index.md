@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/PNatPowAssoc.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/PNatPowAssoc.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PNatPowAssoc.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PNatPowAssoc.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [PNatPowAssoc](../../../../GroupTheoryAndGeneralizations/PNatPowAssoc.lean/declarations/pnatpowassoc.md) | 44 | `declaration-track:90408460129d9a33d4038c22b3d041a030f3ddbc728d2d0cf735ac340c8983df` |
-| 2 | `theorem` | [ppow_add](../../../../GroupTheoryAndGeneralizations/PNatPowAssoc.lean/declarations/ppow-add.md) | 54 | `result-track:cf4e03e23230d2c567322beebd9048e33f28bde96f92b836b22ad4e320597851` |
-| 3 | `theorem` | [ppow_one](../../../../GroupTheoryAndGeneralizations/PNatPowAssoc.lean/declarations/ppow-one.md) | 58 | `result-track:e792d3b9a2f8e8ba9c0068ad0a09d1d4bc1bcbb03f21139a8eeaee64712c8985` |
-| 4 | `theorem` | [ppow_mul_assoc](../../../../GroupTheoryAndGeneralizations/PNatPowAssoc.lean/declarations/ppow-mul-assoc.md) | 61 | `result-track:4b2e6aaecd021de5ea2b32868949d9c163b572990c423afd9932533ecf35d1c9` |
-| 5 | `theorem` | [ppow_mul_comm](../../../../GroupTheoryAndGeneralizations/PNatPowAssoc.lean/declarations/ppow-mul-comm.md) | 65 | `result-track:bf095005505d5104b2227ea53a37d427f3f59b01e3dc8679a4674d2206677d96` |
-| 6 | `theorem` | [ppow_mul](../../../../GroupTheoryAndGeneralizations/PNatPowAssoc.lean/declarations/ppow-mul-source-edition-2.md) | 68 | `result-track:8f4a7dcdd19f8996b24f73f7b9e0d05ae78ef8444c28cf4e372ebc0b0c46ae52` |
-| 7 | `theorem` | [ppow_mul'](../../../../GroupTheoryAndGeneralizations/PNatPowAssoc.lean/declarations/ppow-mul.md) | 73 | `result-track:2a2b3922599b6278cd36599935ceae3e475da81b58bba913140c6ce8f48b96c6` |
-| 8 | `instance` | [Pi.instPNatPowAssoc](../../../../GroupTheoryAndGeneralizations/PNatPowAssoc.lean/declarations/pi-instpnatpowassoc.md) | 79 | `declaration-track:6e2952d0ffa93ba9350748d27f991d648cbbe333cd9681966bed11e26ceba950` |
-| 9 | `instance` | [Prod.instPNatPowAssoc](../../../../GroupTheoryAndGeneralizations/PNatPowAssoc.lean/declarations/prod-instpnatpowassoc.md) | 84 | `declaration-track:200deb48cbdced1fcee2f159b1c1da16dcf2f3876a6c979c36d887313aa42618` |
-| 10 | `theorem` | [ppow_eq_pow](../../../../GroupTheoryAndGeneralizations/PNatPowAssoc.lean/declarations/ppow-eq-pow.md) | 89 | `result-track:d5ec08ec114a27d124f6cdc84c0a4a8b0ed95e97a63dbd6fa57dd108ecacfb24` |
+| 1 | `class` | [PNatPowAssoc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PNatPowAssoc.lean/declarations/pnatpowassoc.md) | 44 | `declaration-track:90408460129d9a33d4038c22b3d041a030f3ddbc728d2d0cf735ac340c8983df` |
+| 2 | `theorem` | [ppow_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PNatPowAssoc.lean/declarations/ppow-add.md) | 54 | `result-track:cf4e03e23230d2c567322beebd9048e33f28bde96f92b836b22ad4e320597851` |
+| 3 | `theorem` | [ppow_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PNatPowAssoc.lean/declarations/ppow-one.md) | 58 | `result-track:e792d3b9a2f8e8ba9c0068ad0a09d1d4bc1bcbb03f21139a8eeaee64712c8985` |
+| 4 | `theorem` | [ppow_mul_assoc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PNatPowAssoc.lean/declarations/ppow-mul-assoc.md) | 61 | `result-track:4b2e6aaecd021de5ea2b32868949d9c163b572990c423afd9932533ecf35d1c9` |
+| 5 | `theorem` | [ppow_mul_comm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PNatPowAssoc.lean/declarations/ppow-mul-comm.md) | 65 | `result-track:bf095005505d5104b2227ea53a37d427f3f59b01e3dc8679a4674d2206677d96` |
+| 6 | `theorem` | [ppow_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PNatPowAssoc.lean/declarations/ppow-mul-source-edition-2.md) | 68 | `result-track:8f4a7dcdd19f8996b24f73f7b9e0d05ae78ef8444c28cf4e372ebc0b0c46ae52` |
+| 7 | `theorem` | [ppow_mul'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PNatPowAssoc.lean/declarations/ppow-mul.md) | 73 | `result-track:2a2b3922599b6278cd36599935ceae3e475da81b58bba913140c6ce8f48b96c6` |
+| 8 | `instance` | [Pi.instPNatPowAssoc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PNatPowAssoc.lean/declarations/pi-instpnatpowassoc.md) | 79 | `declaration-track:6e2952d0ffa93ba9350748d27f991d648cbbe333cd9681966bed11e26ceba950` |
+| 9 | `instance` | [Prod.instPNatPowAssoc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PNatPowAssoc.lean/declarations/prod-instpnatpowassoc.md) | 84 | `declaration-track:200deb48cbdced1fcee2f159b1c1da16dcf2f3876a6c979c36d887313aa42618` |
+| 10 | `theorem` | [ppow_eq_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PNatPowAssoc.lean/declarations/ppow-eq-pow.md) | 89 | `result-track:d5ec08ec114a27d124f6cdc84c0a4a8b0ed95e97a63dbd6fa57dd108ecacfb24` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

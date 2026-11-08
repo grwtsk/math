@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/SymmetricStream.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/SymmetricStream.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SymmetricStream.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SymmetricStream.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [materialize_copy_atom_stream](../../../../../ComputerScience/AlgorithmsInComputerScience/SymmetricStream.lean/declarations/materialize-copy-atom-stream.md) | 19 | `result-track:8892b75950b2add5967e34a0548bd7b3fe6d577fb6414c4f0dd177f5b2b500b4` |
+| 1 | `theorem` | [materialize_copy_atom_stream](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SymmetricStream.lean/declarations/materialize-copy-atom-stream.md) | 19 | `result-track:8892b75950b2add5967e34a0548bd7b3fe6d577fb6414c4f0dd177f5b2b500b4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

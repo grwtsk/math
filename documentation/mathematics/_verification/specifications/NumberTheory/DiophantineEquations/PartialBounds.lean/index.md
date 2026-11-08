@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/DiophantineEquations/PartialBounds.lean/index.md) · [Full source](../../../../../NumberTheory/DiophantineEquations/PartialBounds.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/PartialBounds.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/PartialBounds.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.EquivalentForms`](../../../../../NumberTheory/DiophantineEquations/EquivalentForms.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.EquivalentForms`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/EquivalentForms.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [radical_eq_product_of_squarefree](../../../../../NumberTheory/DiophantineEquations/PartialBounds.lean/declarations/radical-eq-product-of-squarefree.md) | 13 | `result-track:b919271d98e63993fdade794025f0cd6d9e9591d2b90374a73b0254aa88062a7` |
-| 2 | `theorem` | [height_le_radical_of_squarefree](../../../../../NumberTheory/DiophantineEquations/PartialBounds.lean/declarations/height-le-radical-of-squarefree.md) | 19 | `result-track:1e21f0e4b47884ecaf82baff259c58a5036c31da36e0b2a9aaf8cb8c40e378a9` |
-| 3 | `theorem` | [bound_of_squarefree](../../../../../NumberTheory/DiophantineEquations/PartialBounds.lean/declarations/bound-of-squarefree.md) | 26 | `result-track:7a2578d9682b0bef3dfa02f48c4cee09dd23ad4ef3124ac4c61ad4a74578a8be` |
+| 1 | `theorem` | [radical_eq_product_of_squarefree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/PartialBounds.lean/declarations/radical-eq-product-of-squarefree.md) | 13 | `result-track:b919271d98e63993fdade794025f0cd6d9e9591d2b90374a73b0254aa88062a7` |
+| 2 | `theorem` | [height_le_radical_of_squarefree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/PartialBounds.lean/declarations/height-le-radical-of-squarefree.md) | 19 | `result-track:1e21f0e4b47884ecaf82baff259c58a5036c31da36e0b2a9aaf8cb8c40e378a9` |
+| 3 | `theorem` | [bound_of_squarefree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/PartialBounds.lean/declarations/bound-of-squarefree.md) | 26 | `result-track:7a2578d9682b0bef3dfa02f48c4cee09dd23ad4ef3124ac4c61ad4a74578a8be` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

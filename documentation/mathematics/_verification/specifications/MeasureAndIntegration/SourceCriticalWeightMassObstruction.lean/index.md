@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceCriticalWeightMassObstruction.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceCriticalWeightMassObstruction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCriticalWeightMassObstruction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCriticalWeightMassObstruction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [absoluteCriticalWeightMass](../../../../MeasureAndIntegration/SourceCriticalWeightMassObstruction.lean/declarations/absolutecriticalweightmass.md) | 21 | `declaration-track:af8054dbff85ffa07eb2d618d1c4078703c7b9165a62cbbdb042e705dfd12512` |
-| 2 | `theorem` | [criticalWeight_early_lower](../../../../MeasureAndIntegration/SourceCriticalWeightMassObstruction.lean/declarations/criticalweight-early-lower.md) | 25 | `result-track:17ca24d1202981ac48bddfb46be8536d4139b78bc84049bb216f9e84d931cc4c` |
-| 3 | `theorem` | [baselineLogKernel_continuous](../../../../MeasureAndIntegration/SourceCriticalWeightMassObstruction.lean/declarations/baselinelogkernel-continuous.md) | 40 | `result-track:935e24dcf9b31846e59bc44face6432aa2fa2d4eff0358045fbaa7bff10ed391` |
-| 4 | `theorem` | [absoluteCriticalWeightMass_integrable](../../../../MeasureAndIntegration/SourceCriticalWeightMassObstruction.lean/declarations/absolutecriticalweightmass-integrable.md) | 46 | `result-track:0a72f1d67a21e92be111a2b414c70ef79cc934543e743caa5f24bd9b8a0dd792` |
-| 5 | `theorem` | [absoluteWeight_prefix_lower](../../../../MeasureAndIntegration/SourceCriticalWeightMassObstruction.lean/declarations/absoluteweight-prefix-lower.md) | 51 | `result-track:95824ead9fa317ed815dd8164af2b0a419dbf1f40badaf04704a975b045c74e3` |
-| 6 | `theorem` | [absoluteCriticalWeightMass_exponential_lower](../../../../MeasureAndIntegration/SourceCriticalWeightMassObstruction.lean/declarations/absolutecriticalweightmass-exponential-lower.md) | 81 | `result-track:7f9f2a81a5b84f9d9aaa784dbd5578ff460f9ccbf3243877b7ae39c41235bc83` |
-| 7 | `theorem` | [absoluteCriticalWeightMass_linear_lower](../../../../MeasureAndIntegration/SourceCriticalWeightMassObstruction.lean/declarations/absolutecriticalweightmass-linear-lower.md) | 92 | `result-track:887a41b57c61880ed7b9a946850b6d80311c571a66745edee65cfae88078fe56` |
-| 8 | `theorem` | [absoluteCriticalWeightMass_not_eventually_bounded](../../../../MeasureAndIntegration/SourceCriticalWeightMassObstruction.lean/declarations/absolutecriticalweightmass-not-eventually-bounded.md) | 99 | `result-track:9f64762ea2a6e0df35283f95478a4f71f54f94eb2ed929788547abf41fceb911` |
+| 1 | `def` | [absoluteCriticalWeightMass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCriticalWeightMassObstruction.lean/declarations/absolutecriticalweightmass.md) | 21 | `declaration-track:af8054dbff85ffa07eb2d618d1c4078703c7b9165a62cbbdb042e705dfd12512` |
+| 2 | `theorem` | [criticalWeight_early_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCriticalWeightMassObstruction.lean/declarations/criticalweight-early-lower.md) | 25 | `result-track:17ca24d1202981ac48bddfb46be8536d4139b78bc84049bb216f9e84d931cc4c` |
+| 3 | `theorem` | [baselineLogKernel_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCriticalWeightMassObstruction.lean/declarations/baselinelogkernel-continuous.md) | 40 | `result-track:935e24dcf9b31846e59bc44face6432aa2fa2d4eff0358045fbaa7bff10ed391` |
+| 4 | `theorem` | [absoluteCriticalWeightMass_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCriticalWeightMassObstruction.lean/declarations/absolutecriticalweightmass-integrable.md) | 46 | `result-track:0a72f1d67a21e92be111a2b414c70ef79cc934543e743caa5f24bd9b8a0dd792` |
+| 5 | `theorem` | [absoluteWeight_prefix_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCriticalWeightMassObstruction.lean/declarations/absoluteweight-prefix-lower.md) | 51 | `result-track:95824ead9fa317ed815dd8164af2b0a419dbf1f40badaf04704a975b045c74e3` |
+| 6 | `theorem` | [absoluteCriticalWeightMass_exponential_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCriticalWeightMassObstruction.lean/declarations/absolutecriticalweightmass-exponential-lower.md) | 81 | `result-track:7f9f2a81a5b84f9d9aaa784dbd5578ff460f9ccbf3243877b7ae39c41235bc83` |
+| 7 | `theorem` | [absoluteCriticalWeightMass_linear_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCriticalWeightMassObstruction.lean/declarations/absolutecriticalweightmass-linear-lower.md) | 92 | `result-track:887a41b57c61880ed7b9a946850b6d80311c571a66745edee65cfae88078fe56` |
+| 8 | `theorem` | [absoluteCriticalWeightMass_not_eventually_bounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceCriticalWeightMassObstruction.lean/declarations/absolutecriticalweightmass-not-eventually-bounded.md) | 99 | `result-track:9f64762ea2a6e0df35283f95478a4f71f54f94eb2ed929788547abf41fceb911` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

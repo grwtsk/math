@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/DedekindZetaPublic.lean/index.md) · [Full source](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/DedekindZetaPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/DedekindZetaPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/DedekindZetaPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [dedekindZeta](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/DedekindZetaPublic.lean/declarations/dedekindzeta.md) | 49 | `declaration-track:1f3de9d9eec8f0b2a319e58e0be3bbea15aa7447afc7495ddaa3fb23e0ad9e16` |
-| 2 | `def` | [dedekindZeta_residue](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/DedekindZetaPublic.lean/declarations/dedekindzeta-residue.md) | 56 | `declaration-track:72aa5ac7987c204a01303fa3ce4ab93bca133ed6a465384ae359134402ad43f2` |
-| 3 | `theorem` | [dedekindZeta_residue_def](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/DedekindZetaPublic.lean/declarations/dedekindzeta-residue-def.md) | 60 | `result-track:51e7f71a04d49ad5e6ca95ea53d5105f61758b4323e49c15543063e6151f566b` |
-| 4 | `theorem` | [dedekindZeta_residue_pos](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/DedekindZetaPublic.lean/declarations/dedekindzeta-residue-pos.md) | 65 | `result-track:c307ffe1d7c0a8ef00a13ecec132027fd1f38e22a8277f3bc86110b674b05ac7` |
-| 5 | `theorem` | [dedekindZeta_residue_ne_zero](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/DedekindZetaPublic.lean/declarations/dedekindzeta-residue-ne-zero.md) | 71 | `result-track:aecca44fee56a2fee308aa9866579736d3d44143716a5269f2ffdf939dd0d6b2` |
-| 6 | `theorem` | [tendsto_sub_one_mul_dedekindZeta_nhdsGT](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/DedekindZetaPublic.lean/declarations/tendsto-sub-one-mul-dedekindzeta-nhdsgt.md) | 77 | `result-track:da51f50e94a2f52eb17f542d8da19d321ea6826dd823adae953a7240f1467eb3` |
+| 1 | `def` | [dedekindZeta](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/DedekindZetaPublic.lean/declarations/dedekindzeta.md) | 49 | `declaration-track:1f3de9d9eec8f0b2a319e58e0be3bbea15aa7447afc7495ddaa3fb23e0ad9e16` |
+| 2 | `def` | [dedekindZeta_residue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/DedekindZetaPublic.lean/declarations/dedekindzeta-residue.md) | 56 | `declaration-track:72aa5ac7987c204a01303fa3ce4ab93bca133ed6a465384ae359134402ad43f2` |
+| 3 | `theorem` | [dedekindZeta_residue_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/DedekindZetaPublic.lean/declarations/dedekindzeta-residue-def.md) | 60 | `result-track:51e7f71a04d49ad5e6ca95ea53d5105f61758b4323e49c15543063e6151f566b` |
+| 4 | `theorem` | [dedekindZeta_residue_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/DedekindZetaPublic.lean/declarations/dedekindzeta-residue-pos.md) | 65 | `result-track:c307ffe1d7c0a8ef00a13ecec132027fd1f38e22a8277f3bc86110b674b05ac7` |
+| 5 | `theorem` | [dedekindZeta_residue_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/DedekindZetaPublic.lean/declarations/dedekindzeta-residue-ne-zero.md) | 71 | `result-track:aecca44fee56a2fee308aa9866579736d3d44143716a5269f2ffdf939dd0d6b2` |
+| 6 | `theorem` | [tendsto_sub_one_mul_dedekindZeta_nhdsGT](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AlgebraicNumberTheoryGlobalFields/DedekindZetaPublic.lean/declarations/tendsto-sub-one-mul-dedekindzeta-nhdsgt.md) | 77 | `result-track:da51f50e94a2f52eb17f542d8da19d321ea6826dd823adae953a7240f1467eb3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

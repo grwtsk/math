@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/DivModNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/DivModNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/DivModNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/DivModNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [mul_ediv_le_mul_ediv_assoc](../../../../../NumberTheory/ElementaryNumberTheory/DivModNamespaced.lean/declarations/mul-ediv-le-mul-ediv-assoc.md) | 26 | `result-track:a36d9251f68857e2554b79a6cc71390a1594187608f978449287c1a023bfa9f3` |
-| 2 | `theorem` | [ediv_ediv_eq_ediv_mul](../../../../../NumberTheory/ElementaryNumberTheory/DivModNamespaced.lean/declarations/ediv-ediv-eq-ediv-mul.md) | 33 | `result-track:06d43f5e9d08681ca48a02705bbeefec797a81cd651cd5f1d672a9313a2f84b3` |
-| 3 | `theorem` | [fdiv_fdiv_eq_fdiv_mul](../../../../../NumberTheory/ElementaryNumberTheory/DivModNamespaced.lean/declarations/fdiv-fdiv-eq-fdiv-mul.md) | 57 | `result-track:dc7009c6b96f3dd6c50e9c8f4254aecdb82938358d235f98f0281fcc7f3e1d0d` |
-| 4 | `theorem` | [emod_eq_sub_self_emod](../../../../../NumberTheory/ElementaryNumberTheory/DivModNamespaced.lean/declarations/emod-eq-sub-self-emod.md) | 66 | `result-track:23af62b47f228ecc7cb39c66b9f32fd1d1b2d6e133ab61d5ec6cff3923545100` |
+| 1 | `theorem` | [mul_ediv_le_mul_ediv_assoc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/DivModNamespaced.lean/declarations/mul-ediv-le-mul-ediv-assoc.md) | 26 | `result-track:a36d9251f68857e2554b79a6cc71390a1594187608f978449287c1a023bfa9f3` |
+| 2 | `theorem` | [ediv_ediv_eq_ediv_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/DivModNamespaced.lean/declarations/ediv-ediv-eq-ediv-mul.md) | 33 | `result-track:06d43f5e9d08681ca48a02705bbeefec797a81cd651cd5f1d672a9313a2f84b3` |
+| 3 | `theorem` | [fdiv_fdiv_eq_fdiv_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/DivModNamespaced.lean/declarations/fdiv-fdiv-eq-fdiv-mul.md) | 57 | `result-track:dc7009c6b96f3dd6c50e9c8f4254aecdb82938358d235f98f0281fcc7f3e1d0d` |
+| 4 | `theorem` | [emod_eq_sub_self_emod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/DivModNamespaced.lean/declarations/emod-eq-sub-self-emod.md) | 66 | `result-track:23af62b47f228ecc7cb39c66b9f32fd1d1b2d6e133ab61d5ec6cff3923545100` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

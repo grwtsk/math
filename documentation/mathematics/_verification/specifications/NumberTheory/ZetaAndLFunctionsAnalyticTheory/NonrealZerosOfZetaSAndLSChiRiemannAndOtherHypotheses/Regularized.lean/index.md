@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/Regularized.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/Regularized.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/Regularized.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/Regularized.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,9 +61,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [regularizedZeta](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/Regularized.lean/declarations/regularizedzeta.md) | 15 | `declaration-track:fc84520e756fec0c956bd92fe2a2cbe9ba384b914475529f1286d34b0c51bb26` |
-| 2 | `theorem` | [regularizedZeta_eq](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/Regularized.lean/declarations/regularizedzeta-eq.md) | 19 | `result-track:927274c8b4a8e99271d3dd9a997838dd20c1a35673dd58820d228906c7e25f91` |
-| 3 | `theorem` | [differentiable_regularizedZeta](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/Regularized.lean/declarations/differentiable-regularizedzeta.md) | 28 | `result-track:8442692036076f31fd12a4c3370ea67c4d3527c9f9061e577f2475b86ac7cf95` |
+| 1 | `def` | [regularizedZeta](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/Regularized.lean/declarations/regularizedzeta.md) | 15 | `declaration-track:fc84520e756fec0c956bd92fe2a2cbe9ba384b914475529f1286d34b0c51bb26` |
+| 2 | `theorem` | [regularizedZeta_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/Regularized.lean/declarations/regularizedzeta-eq.md) | 19 | `result-track:927274c8b4a8e99271d3dd9a997838dd20c1a35673dd58820d228906c7e25f91` |
+| 3 | `theorem` | [differentiable_regularizedZeta](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/Regularized.lean/declarations/differentiable-regularizedzeta.md) | 28 | `result-track:8442692036076f31fd12a4c3370ea67c4d3527c9f9061e577f2475b86ac7cf95` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

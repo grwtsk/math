@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AbelianNamespacedPublic.lean/index.md) · [Full source](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AbelianNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AbelianNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AbelianNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AbelianNamespacedPublic.lean/declarations/instance.md) | 42 | `declaration-track:ec28c7eb4c432069a9ae3fda50acbacb3e12d1b8abb45cb89dbd1e6aa4b83314` |
-| 2 | `theorem` | [isCommMonObj_of_isProper_of_isIntegral_tensorObj_of_isAlgClosed](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AbelianNamespacedPublic.lean/declarations/iscommmonobj-of-isproper-of-isintegral-tensorobj-of-isalgclosed.md) | 47 | `result-track:37682a414771488ee8daf242b65f5cc78a912741fb43b735c42a57b22da43289` |
-| 3 | `theorem` | [isCommMonObj_of_isProper_of_geometricallyIntegral](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AbelianNamespacedPublic.lean/declarations/iscommmonobj-of-isproper-of-geometricallyintegral.md) | 140 | `result-track:b78696eeddc2cf7fe800e09e0f25bf8026465e93ba0268a7534faa277406e485` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AbelianNamespacedPublic.lean/declarations/instance.md) | 42 | `declaration-track:ec28c7eb4c432069a9ae3fda50acbacb3e12d1b8abb45cb89dbd1e6aa4b83314` |
+| 2 | `theorem` | [isCommMonObj_of_isProper_of_isIntegral_tensorObj_of_isAlgClosed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AbelianNamespacedPublic.lean/declarations/iscommmonobj-of-isproper-of-isintegral-tensorobj-of-isalgclosed.md) | 47 | `result-track:37682a414771488ee8daf242b65f5cc78a912741fb43b735c42a57b22da43289` |
+| 3 | `theorem` | [isCommMonObj_of_isProper_of_geometricallyIntegral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AbelianNamespacedPublic.lean/declarations/iscommmonobj-of-isproper-of-geometricallyintegral.md) | 140 | `result-track:b78696eeddc2cf7fe800e09e0f25bf8026465e93ba0268a7534faa277406e485` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

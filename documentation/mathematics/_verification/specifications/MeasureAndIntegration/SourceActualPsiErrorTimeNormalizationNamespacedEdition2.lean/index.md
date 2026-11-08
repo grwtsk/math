@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceActualPsiErrorTimeNormalizationNamespacedEdition2.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceActualPsiErrorTimeNormalizationNamespacedEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualPsiErrorTimeNormalizationNamespacedEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualPsiErrorTimeNormalizationNamespacedEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualRelativePsiTimeError](../../../../MeasureAndIntegration/SourceActualPsiErrorTimeNormalizationNamespacedEdition2.lean/declarations/actualrelativepsitimeerror.md) | 29 | `declaration-track:b7afece5b53ee87778037d60086368d63597d08c11fb5ada98301d21bdfc7e25` |
-| 2 | `theorem` | [actualRelativePsiTimeError_at_zero](../../../../MeasureAndIntegration/SourceActualPsiErrorTimeNormalizationNamespacedEdition2.lean/declarations/actualrelativepsitimeerror-at-zero.md) | 33 | `result-track:8d5ee8537c268cd1a356e10d84e7b2223a189792e6b93272caf9c32be43116ad` |
-| 3 | `theorem` | [actualRelativePsiTimeError_eq_convolution](../../../../MeasureAndIntegration/SourceActualPsiErrorTimeNormalizationNamespacedEdition2.lean/declarations/actualrelativepsitimeerror-eq-convolution.md) | 37 | `result-track:52bd4077cd12b75efe3cf8df80bf0271b916a539524e0c2b123fbaf6de42820f` |
-| 4 | `theorem` | [actualRelativePsiTimeError_intervalIntegrable](../../../../MeasureAndIntegration/SourceActualPsiErrorTimeNormalizationNamespacedEdition2.lean/declarations/actualrelativepsitimeerror-intervalintegrable.md) | 49 | `result-track:1d6dca9a30cd3d5584200c3534090ae14f59b3e3b28daff4a220383ce9b326d7` |
-| 5 | `theorem` | [actualMangoldtErrorConvolution_one_eq_relative_primitive](../../../../MeasureAndIntegration/SourceActualPsiErrorTimeNormalizationNamespacedEdition2.lean/declarations/actualmangoldterrorconvolution-one-eq-relative-primitive.md) | 68 | `result-track:a9d355ece3effdcdb8b819ebef994933ee791e7773621fbda6ea780d027b3846` |
-| 6 | `theorem` | [mangoldtLogError_eq_relative_primitive](../../../../MeasureAndIntegration/SourceActualPsiErrorTimeNormalizationNamespacedEdition2.lean/declarations/mangoldtlogerror-eq-relative-primitive.md) | 101 | `result-track:f3f75ad1f4d7a54be69aa6ab57b161807140e22d9a35a06ce03260134f5ac86a` |
+| 1 | `def` | [actualRelativePsiTimeError](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualPsiErrorTimeNormalizationNamespacedEdition2.lean/declarations/actualrelativepsitimeerror.md) | 29 | `declaration-track:b7afece5b53ee87778037d60086368d63597d08c11fb5ada98301d21bdfc7e25` |
+| 2 | `theorem` | [actualRelativePsiTimeError_at_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualPsiErrorTimeNormalizationNamespacedEdition2.lean/declarations/actualrelativepsitimeerror-at-zero.md) | 33 | `result-track:8d5ee8537c268cd1a356e10d84e7b2223a189792e6b93272caf9c32be43116ad` |
+| 3 | `theorem` | [actualRelativePsiTimeError_eq_convolution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualPsiErrorTimeNormalizationNamespacedEdition2.lean/declarations/actualrelativepsitimeerror-eq-convolution.md) | 37 | `result-track:52bd4077cd12b75efe3cf8df80bf0271b916a539524e0c2b123fbaf6de42820f` |
+| 4 | `theorem` | [actualRelativePsiTimeError_intervalIntegrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualPsiErrorTimeNormalizationNamespacedEdition2.lean/declarations/actualrelativepsitimeerror-intervalintegrable.md) | 49 | `result-track:1d6dca9a30cd3d5584200c3534090ae14f59b3e3b28daff4a220383ce9b326d7` |
+| 5 | `theorem` | [actualMangoldtErrorConvolution_one_eq_relative_primitive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualPsiErrorTimeNormalizationNamespacedEdition2.lean/declarations/actualmangoldterrorconvolution-one-eq-relative-primitive.md) | 68 | `result-track:a9d355ece3effdcdb8b819ebef994933ee791e7773621fbda6ea780d027b3846` |
+| 6 | `theorem` | [mangoldtLogError_eq_relative_primitive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualPsiErrorTimeNormalizationNamespacedEdition2.lean/declarations/mangoldtlogerror-eq-relative-primitive.md) | 101 | `result-track:f3f75ad1f4d7a54be69aa6ab57b161807140e22d9a35a06ce03260134f5ac86a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

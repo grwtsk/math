@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceActualTiltEnergyNamespacedEdition4.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceActualTiltEnergyNamespacedEdition4.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualTiltEnergyNamespacedEdition4.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualTiltEnergyNamespacedEdition4.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualUnitTilt](../../../../MeasureAndIntegration/SourceActualTiltEnergyNamespacedEdition4.lean/declarations/actualunittilt.md) | 29 | `declaration-track:10d2a989e1b5495728e79ed47b1ee681c5c99ff725bed94db5caab5155e353d9` |
-| 2 | `def` | [actualUnitTiltEnergy](../../../../MeasureAndIntegration/SourceActualTiltEnergyNamespacedEdition4.lean/declarations/actualunittiltenergy.md) | 33 | `declaration-track:21fa5c39350202c4ce6d8d343d15d0faa499f0b005ba14fb008e74aea241daa8` |
-| 3 | `theorem` | [actualUnitTilt_sq_integrable](../../../../MeasureAndIntegration/SourceActualTiltEnergyNamespacedEdition4.lean/declarations/actualunittilt-sq-integrable.md) | 37 | `result-track:95d4a49b95e2ff3dbdc174dd0a85658f16744276d369098b6597e8d0f5aa5405` |
-| 4 | `theorem` | [actualUnitTiltEnergy_eq_integral](../../../../MeasureAndIntegration/SourceActualTiltEnergyNamespacedEdition4.lean/declarations/actualunittiltenergy-eq-integral.md) | 50 | `result-track:4a12765ce65e1cd655558c584b8cf6f6287bd8be0b355db7fa76fa6577e3b2d4` |
-| 5 | `theorem` | [actualUnitTilt_transform](../../../../MeasureAndIntegration/SourceActualTiltEnergyNamespacedEdition4.lean/declarations/actualunittilt-transform.md) | 60 | `result-track:30ae884d81f175723b6be3f7068376939ed0c8aa65f61f6fc759e7fa3fe846f2` |
-| 6 | `theorem` | [actualUnitTilt_integral_sq_le](../../../../MeasureAndIntegration/SourceActualTiltEnergyNamespacedEdition4.lean/declarations/actualunittilt-integral-sq-le.md) | 68 | `result-track:fd94fdf417914330d5fdd27fc1dffec0ca9eff77fa6719974205808ff5521553` |
-| 7 | `theorem` | [actualUnitTiltEnergy_eventually_ge](../../../../MeasureAndIntegration/SourceActualTiltEnergyNamespacedEdition4.lean/declarations/actualunittiltenergy-eventually-ge.md) | 98 | `result-track:c0b5022497412bdbd09ab56a3bacc9329211cafbc76776a63cf6d5d839f1b5db` |
-| 8 | `theorem` | [actualUnitTiltEnergy_tendsto_atTop](../../../../MeasureAndIntegration/SourceActualTiltEnergyNamespacedEdition4.lean/declarations/actualunittiltenergy-tendsto-attop.md) | 148 | `result-track:3f7058acb20ad94155a1d4ec8c491d40a33fad2145bba95c4e08447d8803b991` |
+| 1 | `def` | [actualUnitTilt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualTiltEnergyNamespacedEdition4.lean/declarations/actualunittilt.md) | 29 | `declaration-track:10d2a989e1b5495728e79ed47b1ee681c5c99ff725bed94db5caab5155e353d9` |
+| 2 | `def` | [actualUnitTiltEnergy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualTiltEnergyNamespacedEdition4.lean/declarations/actualunittiltenergy.md) | 33 | `declaration-track:21fa5c39350202c4ce6d8d343d15d0faa499f0b005ba14fb008e74aea241daa8` |
+| 3 | `theorem` | [actualUnitTilt_sq_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualTiltEnergyNamespacedEdition4.lean/declarations/actualunittilt-sq-integrable.md) | 37 | `result-track:95d4a49b95e2ff3dbdc174dd0a85658f16744276d369098b6597e8d0f5aa5405` |
+| 4 | `theorem` | [actualUnitTiltEnergy_eq_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualTiltEnergyNamespacedEdition4.lean/declarations/actualunittiltenergy-eq-integral.md) | 50 | `result-track:4a12765ce65e1cd655558c584b8cf6f6287bd8be0b355db7fa76fa6577e3b2d4` |
+| 5 | `theorem` | [actualUnitTilt_transform](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualTiltEnergyNamespacedEdition4.lean/declarations/actualunittilt-transform.md) | 60 | `result-track:30ae884d81f175723b6be3f7068376939ed0c8aa65f61f6fc759e7fa3fe846f2` |
+| 6 | `theorem` | [actualUnitTilt_integral_sq_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualTiltEnergyNamespacedEdition4.lean/declarations/actualunittilt-integral-sq-le.md) | 68 | `result-track:fd94fdf417914330d5fdd27fc1dffec0ca9eff77fa6719974205808ff5521553` |
+| 7 | `theorem` | [actualUnitTiltEnergy_eventually_ge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualTiltEnergyNamespacedEdition4.lean/declarations/actualunittiltenergy-eventually-ge.md) | 98 | `result-track:c0b5022497412bdbd09ab56a3bacc9329211cafbc76776a63cf6d5d839f1b5db` |
+| 8 | `theorem` | [actualUnitTiltEnergy_tendsto_atTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualTiltEnergyNamespacedEdition4.lean/declarations/actualunittiltenergy-tendsto-attop.md) | 148 | `result-track:3f7058acb20ad94155a1d4ec8c491d40a33fad2145bba95c4e08447d8803b991` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/IsBaseChangeFreeNamespacedPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/IsBaseChangeFreeNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsBaseChangeFreeNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsBaseChangeFreeNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [basis](../../../../CommutativeAlgebra/IsBaseChangeFreeNamespacedPublic.lean/declarations/basis.md) | 42 | `declaration-track:562a1d58d13ea458bb2d254a7f4a2dcc465a13c3edb92b10dfd7c2cafbd58e7e` |
-| 2 | `theorem` | [basis_apply](../../../../CommutativeAlgebra/IsBaseChangeFreeNamespacedPublic.lean/declarations/basis-apply.md) | 47 | `result-track:4569ebdd87c947c5dc61660a1101262ca6b692bd9011fa9eb87e816ff724b3f0` |
-| 3 | `theorem` | [basis_repr_comp_apply](../../../../CommutativeAlgebra/IsBaseChangeFreeNamespacedPublic.lean/declarations/basis-repr-comp-apply.md) | 55 | `result-track:74c6921eb2c688df5f8ff3ee0764594ae86ac077a04c3b1a0b1c5797665e7540` |
-| 4 | `theorem` | [basis_repr_comp](../../../../CommutativeAlgebra/IsBaseChangeFreeNamespacedPublic.lean/declarations/basis-repr-comp.md) | 70 | `result-track:46dc3f6355a833dcd444ed3506f114ec6542d1d212c6365c3645f4e39be79009` |
-| 5 | `theorem` | [free](../../../../CommutativeAlgebra/IsBaseChangeFreeNamespacedPublic.lean/declarations/free.md) | 77 | `result-track:e6ab0f9c584b58e47941c7d93f4f43710091b8af2f9b54715d6a957fe907296b` |
-| 6 | `theorem` | [of_basis](../../../../CommutativeAlgebra/IsBaseChangeFreeNamespacedPublic.lean/declarations/of-basis.md) | 97 | `result-track:1940a7a64923cdbf3cd6589eab3855d1b85e96a79912649d6824ed9d55d446cb` |
-| 7 | `theorem` | [of_fintype_basis](../../../../CommutativeAlgebra/IsBaseChangeFreeNamespacedPublic.lean/declarations/of-fintype-basis.md) | 116 | `result-track:14841ee1e3b311093c7d41310fb0ff2be282f397b4b3152d72c8245c26b4f1e8` |
-| 8 | `theorem` | [of_fintype_basis_eq](../../../../CommutativeAlgebra/IsBaseChangeFreeNamespacedPublic.lean/declarations/of-fintype-basis-eq.md) | 137 | `result-track:c80f74593c4e240eb57a14e4f9036886dd73248c91d5ca6020a9f45ca18f5d58` |
+| 1 | `def` | [basis](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsBaseChangeFreeNamespacedPublic.lean/declarations/basis.md) | 42 | `declaration-track:562a1d58d13ea458bb2d254a7f4a2dcc465a13c3edb92b10dfd7c2cafbd58e7e` |
+| 2 | `theorem` | [basis_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsBaseChangeFreeNamespacedPublic.lean/declarations/basis-apply.md) | 47 | `result-track:4569ebdd87c947c5dc61660a1101262ca6b692bd9011fa9eb87e816ff724b3f0` |
+| 3 | `theorem` | [basis_repr_comp_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsBaseChangeFreeNamespacedPublic.lean/declarations/basis-repr-comp-apply.md) | 55 | `result-track:74c6921eb2c688df5f8ff3ee0764594ae86ac077a04c3b1a0b1c5797665e7540` |
+| 4 | `theorem` | [basis_repr_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsBaseChangeFreeNamespacedPublic.lean/declarations/basis-repr-comp.md) | 70 | `result-track:46dc3f6355a833dcd444ed3506f114ec6542d1d212c6365c3645f4e39be79009` |
+| 5 | `theorem` | [free](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsBaseChangeFreeNamespacedPublic.lean/declarations/free.md) | 77 | `result-track:e6ab0f9c584b58e47941c7d93f4f43710091b8af2f9b54715d6a957fe907296b` |
+| 6 | `theorem` | [of_basis](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsBaseChangeFreeNamespacedPublic.lean/declarations/of-basis.md) | 97 | `result-track:1940a7a64923cdbf3cd6589eab3855d1b85e96a79912649d6824ed9d55d446cb` |
+| 7 | `theorem` | [of_fintype_basis](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsBaseChangeFreeNamespacedPublic.lean/declarations/of-fintype-basis.md) | 116 | `result-track:14841ee1e3b311093c7d41310fb0ff2be282f397b4b3152d72c8245c26b4f1e8` |
+| 8 | `theorem` | [of_fintype_basis_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IsBaseChangeFreeNamespacedPublic.lean/declarations/of-fintype-basis-eq.md) | 137 | `result-track:c80f74593c4e240eb57a14e4f9036886dd73248c91d5ca6020a9f45ca18f5d58` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidOrderDualPublic.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidOrderDualPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidOrderDualPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidOrderDualPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [isOrderedMonoid](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidOrderDualPublic.lean/declarations/isorderedmonoid.md) | 23 | `declaration-track:1c747044f68669285bb32891d095911f1baf21853cc79cd8968e4516b1597a7a` |
-| 2 | `instance` | [isOrderedCancelMonoid](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidOrderDualPublic.lean/declarations/isorderedcancelmonoid.md) | 28 | `declaration-track:f4729f1cf1dfb18ae9e95bad57332b91f351bd4873819400705f8e76fcb17d26` |
+| 1 | `instance` | [isOrderedMonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidOrderDualPublic.lean/declarations/isorderedmonoid.md) | 23 | `declaration-track:1c747044f68669285bb32891d095911f1baf21853cc79cd8968e4516b1597a7a` |
+| 2 | `instance` | [isOrderedCancelMonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/MonoidOrderDualPublic.lean/declarations/isorderedcancelmonoid.md) | 28 | `declaration-track:f4729f1cf1dfb18ae9e95bad57332b91f351bd4873819400705f8e76fcb17d26` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

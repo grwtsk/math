@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceActualZeroArithmeticDictionaryNative2.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceActualZeroArithmeticDictionaryNative2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualZeroArithmeticDictionaryNative2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualZeroArithmeticDictionaryNative2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actualCorrelation_paperFT_eq_sourceSquare](../../../../MeasureAndIntegration/SourceActualZeroArithmeticDictionaryNative2.lean/declarations/actualcorrelation-paperft-eq-sourcesquare.md) | 23 | `result-track:0133b639def825068c873c94fc7efffa7e08589ba28fbe5b214eacac9a44863a` |
-| 2 | `theorem` | [actualInitialPrimeMellin_on_half](../../../../MeasureAndIntegration/SourceActualZeroArithmeticDictionaryNative2.lean/declarations/actualinitialprimemellin-on-half.md) | 33 | `result-track:ff7dece780a146a680f74965549e6354aae861cd173e5da2a5c464102dd50f4e` |
-| 3 | `theorem` | [gammaBracket_eq_source](../../../../MeasureAndIntegration/SourceActualZeroArithmeticDictionaryNative2.lean/declarations/gammabracket-eq-source.md) | 42 | `result-track:e5af97b25e8914936b179891a94903de2c8cb22f4c9753fa9b8c4a98a258e411` |
-| 4 | `theorem` | [actualGammaBracket_integrable](../../../../MeasureAndIntegration/SourceActualZeroArithmeticDictionaryNative2.lean/declarations/actualgammabracket-integrable.md) | 49 | `result-track:c636699704de4aabe740f25d43fa18160cbb55cd3b79145c714637567a04bce9` |
-| 5 | `theorem` | [actual_original_archimedean_integrable](../../../../MeasureAndIntegration/SourceActualZeroArithmeticDictionaryNative2.lean/declarations/actual-original-archimedean-integrable.md) | 76 | `result-track:3aad09eee8fabd010e09c8f0cee5be221c2e275b6d53ff5076190b67ef7e22b8` |
-| 6 | `theorem` | [actualArchimedeanLine_eq_half_original](../../../../MeasureAndIntegration/SourceActualZeroArithmeticDictionaryNative2.lean/declarations/actualarchimedeanline-eq-half-original.md) | 91 | `result-track:63841756460c3895a91dad680a475489add372db227a1722092d81ca89b6ef74` |
-| 7 | `theorem` | [actualFullZeroContribution_eq_original_sourceQuadraticValue](../../../../MeasureAndIntegration/SourceActualZeroArithmeticDictionaryNative2.lean/declarations/actualfullzerocontribution-eq-original-sourcequadraticvalue.md) | 136 | `result-track:59c323f1106ea0f9a1adc652a151c0242e9632240e6e6298cc590ded255de0f8` |
+| 1 | `theorem` | [actualCorrelation_paperFT_eq_sourceSquare](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualZeroArithmeticDictionaryNative2.lean/declarations/actualcorrelation-paperft-eq-sourcesquare.md) | 23 | `result-track:0133b639def825068c873c94fc7efffa7e08589ba28fbe5b214eacac9a44863a` |
+| 2 | `theorem` | [actualInitialPrimeMellin_on_half](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualZeroArithmeticDictionaryNative2.lean/declarations/actualinitialprimemellin-on-half.md) | 33 | `result-track:ff7dece780a146a680f74965549e6354aae861cd173e5da2a5c464102dd50f4e` |
+| 3 | `theorem` | [gammaBracket_eq_source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualZeroArithmeticDictionaryNative2.lean/declarations/gammabracket-eq-source.md) | 42 | `result-track:e5af97b25e8914936b179891a94903de2c8cb22f4c9753fa9b8c4a98a258e411` |
+| 4 | `theorem` | [actualGammaBracket_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualZeroArithmeticDictionaryNative2.lean/declarations/actualgammabracket-integrable.md) | 49 | `result-track:c636699704de4aabe740f25d43fa18160cbb55cd3b79145c714637567a04bce9` |
+| 5 | `theorem` | [actual_original_archimedean_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualZeroArithmeticDictionaryNative2.lean/declarations/actual-original-archimedean-integrable.md) | 76 | `result-track:3aad09eee8fabd010e09c8f0cee5be221c2e275b6d53ff5076190b67ef7e22b8` |
+| 6 | `theorem` | [actualArchimedeanLine_eq_half_original](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualZeroArithmeticDictionaryNative2.lean/declarations/actualarchimedeanline-eq-half-original.md) | 91 | `result-track:63841756460c3895a91dad680a475489add372db227a1722092d81ca89b6ef74` |
+| 7 | `theorem` | [actualFullZeroContribution_eq_original_sourceQuadraticValue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualZeroArithmeticDictionaryNative2.lean/declarations/actualfullzerocontribution-eq-original-sourcequadraticvalue.md) | 136 | `result-track:59c323f1106ea0f9a1adc652a151c0242e9632240e6e6298cc590ded255de0f8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

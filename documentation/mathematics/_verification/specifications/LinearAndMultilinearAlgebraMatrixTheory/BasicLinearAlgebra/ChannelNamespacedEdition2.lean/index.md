@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChannelNamespacedEdition2.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChannelNamespacedEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChannelNamespacedEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChannelNamespacedEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [FeatureChannelAuthority](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChannelNamespacedEdition2.lean/declarations/featurechannelauthority.md) | 31 | `declaration-track:1f0ea413358af51addcf17d7ef0873cab004d4807194f54a0c1e8deea1fedede` |
-| 2 | `structure` | [FeatureKernelChannel](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChannelNamespacedEdition2.lean/declarations/featurekernelchannel.md) | 43 | `declaration-track:92187d94ff34a353aeb665ad0d0de052bc2fbda79536205525efcd8c94720f69` |
-| 3 | `def` | [FeatureKernelChannel.weighted](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChannelNamespacedEdition2.lean/declarations/featurekernelchannel-weighted.md) | 51 | `declaration-track:ba5cb11f69216a9bc2fcf64a1ccf27be76d71e048ccd2edb160cc105b3e21150` |
-| 4 | `def` | [featureChannelKernel](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChannelNamespacedEdition2.lean/declarations/featurechannelkernel.md) | 58 | `declaration-track:dd4620026c639280e7aa089e80b9f06adcbcb518f003b6171f90f384d1b8704e` |
-| 5 | `theorem` | [featureChannelKernel_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChannelNamespacedEdition2.lean/declarations/featurechannelkernel-apply.md) | 66 | `result-track:b8551086b4a53072b1bca612d7e5712bfffa16c1a2eb205d982c6423946f06e5` |
-| 6 | `structure` | [FeatureChannelModel](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChannelNamespacedEdition2.lean/declarations/featurechannelmodel.md) | 80 | `declaration-track:22a1dd40efc4747a6c37fd00279b1de3c86a3dbe63a57578814b006ee3b62770` |
-| 7 | `def` | [FeatureChannelModel.toKernelChannel](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChannelNamespacedEdition2.lean/declarations/featurechannelmodel-tokernelchannel.md) | 88 | `declaration-track:afcf7348922916a234a20ac0fe68a2900fa7188f8065e780d15d60f3eeae4614` |
+| 1 | `inductive` | [FeatureChannelAuthority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChannelNamespacedEdition2.lean/declarations/featurechannelauthority.md) | 31 | `declaration-track:1f0ea413358af51addcf17d7ef0873cab004d4807194f54a0c1e8deea1fedede` |
+| 2 | `structure` | [FeatureKernelChannel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChannelNamespacedEdition2.lean/declarations/featurekernelchannel.md) | 43 | `declaration-track:92187d94ff34a353aeb665ad0d0de052bc2fbda79536205525efcd8c94720f69` |
+| 3 | `def` | [FeatureKernelChannel.weighted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChannelNamespacedEdition2.lean/declarations/featurekernelchannel-weighted.md) | 51 | `declaration-track:ba5cb11f69216a9bc2fcf64a1ccf27be76d71e048ccd2edb160cc105b3e21150` |
+| 4 | `def` | [featureChannelKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChannelNamespacedEdition2.lean/declarations/featurechannelkernel.md) | 58 | `declaration-track:dd4620026c639280e7aa089e80b9f06adcbcb518f003b6171f90f384d1b8704e` |
+| 5 | `theorem` | [featureChannelKernel_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChannelNamespacedEdition2.lean/declarations/featurechannelkernel-apply.md) | 66 | `result-track:b8551086b4a53072b1bca612d7e5712bfffa16c1a2eb205d982c6423946f06e5` |
+| 6 | `structure` | [FeatureChannelModel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChannelNamespacedEdition2.lean/declarations/featurechannelmodel.md) | 80 | `declaration-track:22a1dd40efc4747a6c37fd00279b1de3c86a3dbe63a57578814b006ee3b62770` |
+| 7 | `def` | [FeatureChannelModel.toKernelChannel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChannelNamespacedEdition2.lean/declarations/featurechannelmodel-tokernelchannel.md) | 88 | `declaration-track:afcf7348922916a234a20ac0fe68a2900fa7188f8065e780d15d60f3eeae4614` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

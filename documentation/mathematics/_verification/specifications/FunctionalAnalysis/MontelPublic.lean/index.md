@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/MontelPublic.lean/index.md) · [Full source](../../../../FunctionalAnalysis/MontelPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/MontelPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/MontelPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [MontelSpace](../../../../FunctionalAnalysis/MontelPublic.lean/declarations/montelspace.md) | 46 | `declaration-track:4acbe4e31ede32e915dbedd8839bea6b08bb20388e009ef042a3a0f79d330cbb` |
-| 2 | `theorem` | [isCompact_of_isClosed_of_isVonNBounded](../../../../FunctionalAnalysis/MontelPublic.lean/declarations/iscompact-of-isclosed-of-isvonnbounded.md) | 53 | `result-track:a5b0a1bb7c640032556583f6dd7f7848d02ca5060fa5b03b47ecf80e808a39f5` |
-| 3 | `theorem` | [finiteDimensional_of_normedSpace](../../../../FunctionalAnalysis/MontelPublic.lean/declarations/finitedimensional-of-normedspace.md) | 69 | `result-track:aa5c1d0f33f00c3a91c27d2c04dbd2915dc724aa0999933d46681f5ea55c1413` |
-| 4 | `def` | [_root_.LinearEquiv.toCompactConvergenceCLM](../../../../FunctionalAnalysis/MontelPublic.lean/declarations/root-linearequiv-tocompactconvergenceclm.md) | 93 | `declaration-track:fd626f6c6b251c77b90d5fade013c7eff067813e91b79d47d9341cd2dd1a8f54` |
-| 5 | `def` | [_root_.ContinuousLinearEquiv.toCompactConvergenceCLM](../../../../FunctionalAnalysis/MontelPublic.lean/declarations/root-continuouslinearequiv-tocompactconvergenceclm.md) | 104 | `declaration-track:5d8c8cf5e726a31a8d6e2f8c5145d72adf9116c1c0fdb26d5b9c077fd19fd271` |
-| 6 | `theorem` | [_root_.ContinuousLinearEquiv.toCompactConvergenceCLM_apply](../../../../FunctionalAnalysis/MontelPublic.lean/declarations/root-continuouslinearequiv-tocompactconvergenceclm-apply.md) | 124 | `result-track:51ada98181c5f6135305bcc26673ff30dee97c95456cf85e72623b95b9b86c17` |
-| 7 | `theorem` | [_root_.ContinuousLinearEquiv.toCompactConvergenceCLM_symm_apply](../../../../FunctionalAnalysis/MontelPublic.lean/declarations/root-continuouslinearequiv-tocompactconvergenceclm-symm-apply.md) | 128 | `result-track:a8e902c14ed0b0426352bab321a996b51ae58c1ebdb2e500afb328920b393c65` |
+| 1 | `class` | [MontelSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/MontelPublic.lean/declarations/montelspace.md) | 46 | `declaration-track:4acbe4e31ede32e915dbedd8839bea6b08bb20388e009ef042a3a0f79d330cbb` |
+| 2 | `theorem` | [isCompact_of_isClosed_of_isVonNBounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/MontelPublic.lean/declarations/iscompact-of-isclosed-of-isvonnbounded.md) | 53 | `result-track:a5b0a1bb7c640032556583f6dd7f7848d02ca5060fa5b03b47ecf80e808a39f5` |
+| 3 | `theorem` | [finiteDimensional_of_normedSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/MontelPublic.lean/declarations/finitedimensional-of-normedspace.md) | 69 | `result-track:aa5c1d0f33f00c3a91c27d2c04dbd2915dc724aa0999933d46681f5ea55c1413` |
+| 4 | `def` | [_root_.LinearEquiv.toCompactConvergenceCLM](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/MontelPublic.lean/declarations/root-linearequiv-tocompactconvergenceclm.md) | 93 | `declaration-track:fd626f6c6b251c77b90d5fade013c7eff067813e91b79d47d9341cd2dd1a8f54` |
+| 5 | `def` | [_root_.ContinuousLinearEquiv.toCompactConvergenceCLM](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/MontelPublic.lean/declarations/root-continuouslinearequiv-tocompactconvergenceclm.md) | 104 | `declaration-track:5d8c8cf5e726a31a8d6e2f8c5145d72adf9116c1c0fdb26d5b9c077fd19fd271` |
+| 6 | `theorem` | [_root_.ContinuousLinearEquiv.toCompactConvergenceCLM_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/MontelPublic.lean/declarations/root-continuouslinearequiv-tocompactconvergenceclm-apply.md) | 124 | `result-track:51ada98181c5f6135305bcc26673ff30dee97c95456cf85e72623b95b9b86c17` |
+| 7 | `theorem` | [_root_.ContinuousLinearEquiv.toCompactConvergenceCLM_symm_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/MontelPublic.lean/declarations/root-continuouslinearequiv-tocompactconvergenceclm-symm-apply.md) | 128 | `result-track:a8e902c14ed0b0426352bab321a996b51ae58c1ebdb2e500afb328920b393c65` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

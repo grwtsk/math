@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LambdaPublicMkFunextFor.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LambdaPublicMkFunextFor.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LambdaPublicMkFunextFor.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LambdaPublicMkFunextFor.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mkFunextFor](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LambdaPublicMkFunextFor.lean/declarations/mkfunextfor.md) | 24 | `declaration-track:ab0a8e29e0f022734150e3071ad42dab11a76d91855ad7693ce3b2a7c1f6c88b` |
-| 2 | `def` | [simpLambda'](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LambdaPublicMkFunextFor.lean/declarations/simplambda-source-edition-2.md) | 48 | `declaration-track:dfc29560bea8771b026c2e82bca231f6110756e2772d630abe8ea4742f431ecc` |
-| 3 | `def` | [simpLambda](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LambdaPublicMkFunextFor.lean/declarations/simplambda.md) | 72 | `declaration-track:67aa25b61e565049f6a769f87b290a070b40617db70f953a1027def395701ebb` |
+| 1 | `def` | [mkFunextFor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LambdaPublicMkFunextFor.lean/declarations/mkfunextfor.md) | 24 | `declaration-track:ab0a8e29e0f022734150e3071ad42dab11a76d91855ad7693ce3b2a7c1f6c88b` |
+| 2 | `def` | [simpLambda'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LambdaPublicMkFunextFor.lean/declarations/simplambda-source-edition-2.md) | 48 | `declaration-track:dfc29560bea8771b026c2e82bca231f6110756e2772d630abe8ea4742f431ecc` |
+| 3 | `def` | [simpLambda](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LambdaPublicMkFunextFor.lean/declarations/simplambda.md) | 72 | `declaration-track:67aa25b61e565049f6a769f87b290a070b40617db70f953a1027def395701ebb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

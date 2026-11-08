@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CriticalLineConclusionAdelicCriticalLineContract.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CriticalLineConclusionAdelicCriticalLineContract.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CriticalLineConclusionAdelicCriticalLineContract.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CriticalLineConclusionAdelicCriticalLineContract.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [AdelicCriticalLineContract](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CriticalLineConclusionAdelicCriticalLineContract.lean/declarations/adeliccriticallinecontract.md) | 18 | `declaration-track:143f8c4e03bd914a0920f90f2d7016a0e10c3850e0bb456eef55bdf590765e18` |
-| 2 | `def` | [AllZerosOnCriticalLine](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CriticalLineConclusionAdelicCriticalLineContract.lean/declarations/allzerosoncriticalline.md) | 24 | `declaration-track:83a50a26fdff0e663629cba688ec3071367e6ffd47aa15af46d4530736769157` |
-| 3 | `theorem` | [conditional_critical_line_from_adelic_boundary_alignment](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CriticalLineConclusionAdelicCriticalLineContract.lean/declarations/conditional-critical-line-from-adelic-boundary-alignment.md) | 30 | `result-track:4480ee134090803a26d9ed8787e36de71aaa741562d02e762b60f177374cf700` |
+| 1 | `structure` | [AdelicCriticalLineContract](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CriticalLineConclusionAdelicCriticalLineContract.lean/declarations/adeliccriticallinecontract.md) | 18 | `declaration-track:143f8c4e03bd914a0920f90f2d7016a0e10c3850e0bb456eef55bdf590765e18` |
+| 2 | `def` | [AllZerosOnCriticalLine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CriticalLineConclusionAdelicCriticalLineContract.lean/declarations/allzerosoncriticalline.md) | 24 | `declaration-track:83a50a26fdff0e663629cba688ec3071367e6ffd47aa15af46d4530736769157` |
+| 3 | `theorem` | [conditional_critical_line_from_adelic_boundary_alignment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CriticalLineConclusionAdelicCriticalLineContract.lean/declarations/conditional-critical-line-from-adelic-boundary-alignment.md) | 30 | `result-track:4480ee134090803a26d9ed8787e36de71aaa741562d02e762b60f177374cf700` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

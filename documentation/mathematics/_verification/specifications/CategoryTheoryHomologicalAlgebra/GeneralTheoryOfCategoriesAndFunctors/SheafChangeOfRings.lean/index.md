@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SheafChangeOfRings.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SheafChangeOfRings.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SheafChangeOfRings.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SheafChangeOfRings.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [restrictScalars](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SheafChangeOfRings.lean/declarations/restrictscalars.md) | 32 | `declaration-track:0aa56fcc14d233ca41f04fefe64c812c197e3185883bb77fe871875e06b13c32` |
-| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SheafChangeOfRings.lean/declarations/instance.md) | 39 | `declaration-track:88ffe9835fec80b3c63a8446080b1c139467c4e1fcfc4d31854f30800d8107b9` |
-| 3 | `def` | [restrictHomEquivOfIsLocallySurjective](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SheafChangeOfRings.lean/declarations/restricthomequivofislocallysurjective.md) | 50 | `declaration-track:fa5a13e1d95bbb57b2b3f82697ffa4bd1325aa55e2fa27f7925ac1720c239748` |
+| 1 | `def` | [restrictScalars](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SheafChangeOfRings.lean/declarations/restrictscalars.md) | 32 | `declaration-track:0aa56fcc14d233ca41f04fefe64c812c197e3185883bb77fe871875e06b13c32` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SheafChangeOfRings.lean/declarations/instance.md) | 39 | `declaration-track:88ffe9835fec80b3c63a8446080b1c139467c4e1fcfc4d31854f30800d8107b9` |
+| 3 | `def` | [restrictHomEquivOfIsLocallySurjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SheafChangeOfRings.lean/declarations/restricthomequivofislocallysurjective.md) | 50 | `declaration-track:fa5a13e1d95bbb57b2b3f82697ffa4bd1325aa55e2fa27f7925ac1720c239748` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

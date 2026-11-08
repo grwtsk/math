@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ExtraPublicTreeMap.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ExtraPublicTreeMap.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ExtraPublicTreeMap.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ExtraPublicTreeMap.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [TreeMap.toJson](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ExtraPublicTreeMap.lean/declarations/treemap-tojson.md) | 22 | `declaration-track:a999fb44f7208cff864eee6555e0594a2a6029ce6c3038d38397f2df75ac2e6b` |
-| 2 | `def` | [TreeMap.fromJson?](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ExtraPublicTreeMap.lean/declarations/treemap-fromjson.md) | 27 | `declaration-track:3a28f889a2c61cc3869ce49733b33ebe174d3efc6be6dc408a6aa5190378febc` |
-| 3 | `instance` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ExtraPublicTreeMap.lean/declarations/instance-source-edition-2.md) | 32 | `declaration-track:af349bca071e06876703edb52d28752fa5128b5cd6df436a9b053e996ed33ee9` |
-| 4 | `instance` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ExtraPublicTreeMap.lean/declarations/instance.md) | 35 | `declaration-track:8471ce2b4b9ea90c9ded0f4b511930ed3e199be53d3eed3bd9ef2eb71b2d533c` |
+| 1 | `def` | [TreeMap.toJson](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ExtraPublicTreeMap.lean/declarations/treemap-tojson.md) | 22 | `declaration-track:a999fb44f7208cff864eee6555e0594a2a6029ce6c3038d38397f2df75ac2e6b` |
+| 2 | `def` | [TreeMap.fromJson?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ExtraPublicTreeMap.lean/declarations/treemap-fromjson.md) | 27 | `declaration-track:3a28f889a2c61cc3869ce49733b33ebe174d3efc6be6dc408a6aa5190378febc` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ExtraPublicTreeMap.lean/declarations/instance-source-edition-2.md) | 32 | `declaration-track:af349bca071e06876703edb52d28752fa5128b5cd6df436a9b053e996ed33ee9` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ExtraPublicTreeMap.lean/declarations/instance.md) | 35 | `declaration-track:8471ce2b4b9ea90c9ded0f4b511930ed3e199be53d3eed3bd9ef2eb71b2d533c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

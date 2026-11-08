@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ActualCompletedHorizontalIntegrabilityEdition1.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ActualCompletedHorizontalIntegrabilityEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ActualCompletedHorizontalIntegrabilityEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ActualCompletedHorizontalIntegrabilityEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_bilateral_transform_continuous](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ActualCompletedHorizontalIntegrabilityEdition1.lean/declarations/actual-bilateral-transform-continuous.md) | 18 | `result-track:3362c57722383b4e61e948e14f915faffa719462ee4449e7e19e49d2dbaa588f` |
-| 2 | `theorem` | [actual_completed_horizontal_intervalIntegrable](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ActualCompletedHorizontalIntegrabilityEdition1.lean/declarations/actual-completed-horizontal-intervalintegrable.md) | 30 | `result-track:9fd2bb5da952e7f00c8864f054bd1a4b84be0594a2ae7f8b50a12613da235fdb` |
+| 1 | `theorem` | [actual_bilateral_transform_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ActualCompletedHorizontalIntegrabilityEdition1.lean/declarations/actual-bilateral-transform-continuous.md) | 18 | `result-track:3362c57722383b4e61e948e14f915faffa719462ee4449e7e19e49d2dbaa588f` |
+| 2 | `theorem` | [actual_completed_horizontal_intervalIntegrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ActualCompletedHorizontalIntegrabilityEdition1.lean/declarations/actual-completed-horizontal-intervalintegrable.md) | 30 | `result-track:9fd2bb5da952e7f00c8864f054bd1a4b84be0594a2ae7f8b50a12613da235fdb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

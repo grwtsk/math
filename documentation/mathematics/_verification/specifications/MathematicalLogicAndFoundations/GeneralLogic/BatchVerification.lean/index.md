@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BatchVerification.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BatchVerification.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BatchVerification.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BatchVerification.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Certificates.DependencyRevision`](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DependencyRevision.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Certificates.DependencyRevision`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DependencyRevision.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,16 +57,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CertificateAdmission](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BatchVerification.lean/declarations/certificateadmission.md) | 42 | `declaration-track:9238ce8a935abdcbb62eb626ded93f1bdcde41e50996062975599ce1ac081e9a` |
-| 2 | `def` | [RevisionLedger.admit](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BatchVerification.lean/declarations/revisionledger-admit.md) | 55 | `declaration-track:08fab8504e7448a9eedf2886221c59690137149179924fbc4c4c8d730886e15a` |
-| 3 | `theorem` | [admitted_certificate_target](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BatchVerification.lean/declarations/admitted-certificate-target.md) | 67 | `result-track:d34ab731fa99191749972ac522cc1e7d4ba3189c5edcf82370bf2d9ba9535b34` |
-| 4 | `theorem` | [admission_preserves_safe](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BatchVerification.lean/declarations/admission-preserves-safe.md) | 80 | `result-track:b3044ec5219f9dc92a415388cb99df86698285e2456e15935bcc3066398ddf44` |
-| 5 | `theorem` | [admission_source_preserved](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BatchVerification.lean/declarations/admission-source-preserved.md) | 120 | `result-track:a1cbbb144bea51ee87b4a914aba5bb57db2abd0337600155bcc0f5b4e6cc9e31` |
-| 6 | `theorem` | [admission_archive_append](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BatchVerification.lean/declarations/admission-archive-append.md) | 124 | `result-track:11b77d4c3c593754a2c7bd95ed90f3e1c90fb991cc8d68291f46c9751a6a8edc` |
-| 7 | `theorem` | [admission_archive_prefix](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BatchVerification.lean/declarations/admission-archive-prefix.md) | 128 | `result-track:445dde847843f729d028d3380c93c94b8bfe799ce1e492c6afd495daa23789c9` |
-| 8 | `theorem` | [admission_effect_history_preserved](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BatchVerification.lean/declarations/admission-effect-history-preserved.md) | 134 | `result-track:3a1ecd315470b514a1697f1227c40e0e6a55bd7414495188cc684999bb8c5443` |
-| 9 | `theorem` | [admission_issued_preserved](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BatchVerification.lean/declarations/admission-issued-preserved.md) | 140 | `result-track:fe58069dd52d823f2ce217157e8028a47f2b86683a5142092e5b4803cb60ff43` |
-| 10 | `theorem` | [admission_pending_accounted](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BatchVerification.lean/declarations/admission-pending-accounted.md) | 145 | `result-track:3c61c83b994f85519bbe373e240d5f03250b28a7d661e4d73c23ff3a65b47fff` |
+| 1 | `structure` | [CertificateAdmission](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BatchVerification.lean/declarations/certificateadmission.md) | 42 | `declaration-track:9238ce8a935abdcbb62eb626ded93f1bdcde41e50996062975599ce1ac081e9a` |
+| 2 | `def` | [RevisionLedger.admit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BatchVerification.lean/declarations/revisionledger-admit.md) | 55 | `declaration-track:08fab8504e7448a9eedf2886221c59690137149179924fbc4c4c8d730886e15a` |
+| 3 | `theorem` | [admitted_certificate_target](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BatchVerification.lean/declarations/admitted-certificate-target.md) | 67 | `result-track:d34ab731fa99191749972ac522cc1e7d4ba3189c5edcf82370bf2d9ba9535b34` |
+| 4 | `theorem` | [admission_preserves_safe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BatchVerification.lean/declarations/admission-preserves-safe.md) | 80 | `result-track:b3044ec5219f9dc92a415388cb99df86698285e2456e15935bcc3066398ddf44` |
+| 5 | `theorem` | [admission_source_preserved](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BatchVerification.lean/declarations/admission-source-preserved.md) | 120 | `result-track:a1cbbb144bea51ee87b4a914aba5bb57db2abd0337600155bcc0f5b4e6cc9e31` |
+| 6 | `theorem` | [admission_archive_append](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BatchVerification.lean/declarations/admission-archive-append.md) | 124 | `result-track:11b77d4c3c593754a2c7bd95ed90f3e1c90fb991cc8d68291f46c9751a6a8edc` |
+| 7 | `theorem` | [admission_archive_prefix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BatchVerification.lean/declarations/admission-archive-prefix.md) | 128 | `result-track:445dde847843f729d028d3380c93c94b8bfe799ce1e492c6afd495daa23789c9` |
+| 8 | `theorem` | [admission_effect_history_preserved](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BatchVerification.lean/declarations/admission-effect-history-preserved.md) | 134 | `result-track:3a1ecd315470b514a1697f1227c40e0e6a55bd7414495188cc684999bb8c5443` |
+| 9 | `theorem` | [admission_issued_preserved](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BatchVerification.lean/declarations/admission-issued-preserved.md) | 140 | `result-track:fe58069dd52d823f2ce217157e8028a47f2b86683a5142092e5b4803cb60ff43` |
+| 10 | `theorem` | [admission_pending_accounted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BatchVerification.lean/declarations/admission-pending-accounted.md) | 145 | `result-track:3c61c83b994f85519bbe373e240d5f03250b28a7d661e4d73c23ff3a65b47fff` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerOctaveRestriction.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerOctaveRestriction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerOctaveRestriction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerOctaveRestriction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeFejerCyclicTwoBoundary`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicTwoBoundary.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeFejerCyclicTwoBoundary`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerCyclicTwoBoundary.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [nonAliasingFejerSharpStepL1Error_eq_cyclicOctaveSubtypeSum](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerOctaveRestriction.lean/declarations/nonaliasingfejersharpstepl1error-eq-cyclicoctavesubtypesum.md) | 14 | `result-track:2b1032117e6027c23a794454a9016aa4481c0ebb44707c42691b197c51af389e` |
-| 2 | `theorem` | [octaveL1LeCyclicL1](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerOctaveRestriction.lean/declarations/octavel1lecyclicl1.md) | 56 | `result-track:a9bbd4823a82e1abf859db4cff17e77a52837d1b47c763c7a8dbeeb2e2cc4a08` |
-| 3 | `theorem` | [octaveL1LeCyclicL1_closed](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerOctaveRestriction.lean/declarations/octavel1lecyclicl1-closed.md) | 82 | `result-track:982dcb636ea8a740a3a528b1aeb5b6119b14d86c4109853fbb932467e17eb00e` |
+| 1 | `theorem` | [nonAliasingFejerSharpStepL1Error_eq_cyclicOctaveSubtypeSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerOctaveRestriction.lean/declarations/nonaliasingfejersharpstepl1error-eq-cyclicoctavesubtypesum.md) | 14 | `result-track:2b1032117e6027c23a794454a9016aa4481c0ebb44707c42691b197c51af389e` |
+| 2 | `theorem` | [octaveL1LeCyclicL1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerOctaveRestriction.lean/declarations/octavel1lecyclicl1.md) | 56 | `result-track:a9bbd4823a82e1abf859db4cff17e77a52837d1b47c763c7a8dbeeb2e2cc4a08` |
+| 3 | `theorem` | [octaveL1LeCyclicL1_closed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerOctaveRestriction.lean/declarations/octavel1lecyclicl1-closed.md) | 82 | `result-track:982dcb636ea8a740a3a528b1aeb5b6119b14d86c4109853fbb932467e17eb00e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

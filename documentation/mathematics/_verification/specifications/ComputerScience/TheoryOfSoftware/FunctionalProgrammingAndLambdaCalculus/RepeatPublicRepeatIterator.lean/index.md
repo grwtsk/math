@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RepeatPublicRepeatIterator.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RepeatPublicRepeatIterator.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RepeatPublicRepeatIterator.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RepeatPublicRepeatIterator.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RepeatIterator](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RepeatPublicRepeatIterator.lean/declarations/repeatiterator.md) | 32 | `declaration-track:04202d3726ec1b83bb7300abddd2069f57ba085b27e61e5ed048fbf637b5436f` |
-| 2 | `instance` | [RepeatIterator.instIterator](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RepeatPublicRepeatIterator.lean/declarations/repeatiterator-institerator.md) | 37 | `declaration-track:a452b07162d44ce87535ae2192a089a11b7972ca7702b1597ba785b57feca852` |
-| 3 | `def` | [RepeatIterator.instProductivenessRelation](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RepeatPublicRepeatIterator.lean/declarations/repeatiterator-instproductivenessrelation.md) | 44 | `declaration-track:9a5a57c098227118c48dd6cf4e30d1a6024dea2fcc8bf384dbd3aa02a2b1f885` |
-| 4 | `instance` | [RepeatIterator.instProductive](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RepeatPublicRepeatIterator.lean/declarations/repeatiterator-instproductive.md) | 50 | `declaration-track:74c1eebd596d758a27254d0437afc2bd451d3ffd2b87f5963518e3eb6da30ef7` |
-| 5 | `instance` | [RepeatIterator.instIteratorLoop](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RepeatPublicRepeatIterator.lean/declarations/repeatiterator-institeratorloop.md) | 54 | `declaration-track:4808f735bfa417fd62156fa7a27a39ca7858a4b416f538aeccd9b01e913d9a3c` |
-| 6 | `def` | [Iter.repeat](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RepeatPublicRepeatIterator.lean/declarations/iter-repeat.md) | 75 | `declaration-track:44640947d4a279cf027df470f03ddb7c7f34b3d8a1a721c29a470b65b33d5ccf` |
+| 1 | `structure` | [RepeatIterator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RepeatPublicRepeatIterator.lean/declarations/repeatiterator.md) | 32 | `declaration-track:04202d3726ec1b83bb7300abddd2069f57ba085b27e61e5ed048fbf637b5436f` |
+| 2 | `instance` | [RepeatIterator.instIterator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RepeatPublicRepeatIterator.lean/declarations/repeatiterator-institerator.md) | 37 | `declaration-track:a452b07162d44ce87535ae2192a089a11b7972ca7702b1597ba785b57feca852` |
+| 3 | `def` | [RepeatIterator.instProductivenessRelation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RepeatPublicRepeatIterator.lean/declarations/repeatiterator-instproductivenessrelation.md) | 44 | `declaration-track:9a5a57c098227118c48dd6cf4e30d1a6024dea2fcc8bf384dbd3aa02a2b1f885` |
+| 4 | `instance` | [RepeatIterator.instProductive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RepeatPublicRepeatIterator.lean/declarations/repeatiterator-instproductive.md) | 50 | `declaration-track:74c1eebd596d758a27254d0437afc2bd451d3ffd2b87f5963518e3eb6da30ef7` |
+| 5 | `instance` | [RepeatIterator.instIteratorLoop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RepeatPublicRepeatIterator.lean/declarations/repeatiterator-institeratorloop.md) | 54 | `declaration-track:4808f735bfa417fd62156fa7a27a39ca7858a4b416f538aeccd9b01e913d9a3c` |
+| 6 | `def` | [Iter.repeat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RepeatPublicRepeatIterator.lean/declarations/iter-repeat.md) | 75 | `declaration-track:44640947d4a279cf027df470f03ddb7c7f34b3d8a1a721c29a470b65b33d5ccf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

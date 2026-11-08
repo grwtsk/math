@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ActualBoundaryCorrelation.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ActualBoundaryCorrelation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualBoundaryCorrelation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualBoundaryCorrelation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_correlation_upper_strip_integral](../../../../MeasureAndIntegration/ActualBoundaryCorrelation.lean/declarations/actual-correlation-upper-strip-integral.md) | 22 | `result-track:47075358c8897d5870fc3a5502c3d799df916331cd26f85a11ff4fc6c0a92d31` |
-| 2 | `theorem` | [actual_correlation_upper_strip_lower](../../../../MeasureAndIntegration/ActualBoundaryCorrelation.lean/declarations/actual-correlation-upper-strip-lower.md) | 53 | `result-track:2fd793debe1f615e18f90404dceea8d76f6d6eb78f95dac9ad66889198898883` |
+| 1 | `theorem` | [actual_correlation_upper_strip_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualBoundaryCorrelation.lean/declarations/actual-correlation-upper-strip-integral.md) | 22 | `result-track:47075358c8897d5870fc3a5502c3d799df916331cd26f85a11ff4fc6c0a92d31` |
+| 2 | `theorem` | [actual_correlation_upper_strip_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualBoundaryCorrelation.lean/declarations/actual-correlation-upper-strip-lower.md) | 53 | `result-track:2fd793debe1f615e18f90404dceea8d76f6d6eb78f95dac9ad66889198898883` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicThetaVonKochAdapter.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicThetaVonKochAdapter.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicThetaVonKochAdapter.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicThetaVonKochAdapter.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.DyadicThetaOctaveSupplier`](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicThetaOctaveSupplier.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.DyadicThetaOctaveSupplier`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicThetaOctaveSupplier.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics` — import line 5; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 6; external provider; requires a separately pinned dependency.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ClassicalThetaSqrtLogSqBound](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicThetaVonKochAdapter.lean/declarations/classicalthetasqrtlogsqbound.md) | 48 | `declaration-track:172ed4c1460dcb404c9998de6687d1663a919dd522dc796afcf7655414a2e7b4` |
-| 2 | `theorem` | [eventually_log_sq_le_rpow](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicThetaVonKochAdapter.lean/declarations/eventually-log-sq-le-rpow.md) | 54 | `result-track:479a38a43ec424022291ed7dc24291b6d9c3515480bb68ae2cf1cafbcc199a55` |
-| 3 | `theorem` | [classicalThetaSqrtLogSqBound_to_thetaOctave](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicThetaVonKochAdapter.lean/declarations/classicalthetasqrtlogsqbound-to-thetaoctave.md) | 66 | `result-track:32c769ce11ac39dcf1c1b96bb19208e8f81ffcccf18d2648bb9dd3e0104bfe00` |
-| 4 | `theorem` | [classicalThetaSqrtLogSqBound_to_allDyadicEnergyBound](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicThetaVonKochAdapter.lean/declarations/classicalthetasqrtlogsqbound-to-alldyadicenergybound.md) | 205 | `result-track:5e3fba6aef792f5704d847c63578ae065f743298fa47d8ecfb4f02ef06b61700` |
-| 5 | `theorem` | [riemannHypothesis_of_classicalThetaSqrtLogSqBound](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicThetaVonKochAdapter.lean/declarations/riemannhypothesis-of-classicalthetasqrtlogsqbound.md) | 211 | `result-track:cb39ab6d8d04d3800c3d852c6e4a71eab55745ad1d2cfeea375b91a63b405a98` |
+| 1 | `def` | [ClassicalThetaSqrtLogSqBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicThetaVonKochAdapter.lean/declarations/classicalthetasqrtlogsqbound.md) | 48 | `declaration-track:172ed4c1460dcb404c9998de6687d1663a919dd522dc796afcf7655414a2e7b4` |
+| 2 | `theorem` | [eventually_log_sq_le_rpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicThetaVonKochAdapter.lean/declarations/eventually-log-sq-le-rpow.md) | 54 | `result-track:479a38a43ec424022291ed7dc24291b6d9c3515480bb68ae2cf1cafbcc199a55` |
+| 3 | `theorem` | [classicalThetaSqrtLogSqBound_to_thetaOctave](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicThetaVonKochAdapter.lean/declarations/classicalthetasqrtlogsqbound-to-thetaoctave.md) | 66 | `result-track:32c769ce11ac39dcf1c1b96bb19208e8f81ffcccf18d2648bb9dd3e0104bfe00` |
+| 4 | `theorem` | [classicalThetaSqrtLogSqBound_to_allDyadicEnergyBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicThetaVonKochAdapter.lean/declarations/classicalthetasqrtlogsqbound-to-alldyadicenergybound.md) | 205 | `result-track:5e3fba6aef792f5704d847c63578ae065f743298fa47d8ecfb4f02ef06b61700` |
+| 5 | `theorem` | [riemannHypothesis_of_classicalThetaSqrtLogSqBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicThetaVonKochAdapter.lean/declarations/riemannhypothesis-of-classicalthetasqrtlogsqbound.md) | 211 | `result-track:cb39ab6d8d04d3800c3d852c6e4a71eab55745ad1d2cfeea375b91a63b405a98` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/PositiveGeometry.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/PositiveGeometry.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PositiveGeometry.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PositiveGeometry.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,20 +57,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PositiveForm](../../../../GroupTheoryAndGeneralizations/PositiveGeometry.lean/declarations/positiveform.md) | 27 | `declaration-track:9a4173009f398980968834861fc9f370664d6ee8c455e74b2a560aa425df0860` |
-| 2 | `def` | [Visible](../../../../GroupTheoryAndGeneralizations/PositiveGeometry.lean/declarations/visible.md) | 43 | `declaration-track:42c1ffcae3b446f4da8a3c2d5a32891fe4c44f99dee4680ae3a7b07cfa779c45` |
-| 3 | `def` | [IsNull](../../../../GroupTheoryAndGeneralizations/PositiveGeometry.lean/declarations/isnull.md) | 47 | `declaration-track:684ddb01a4c934aeb70f49354dcdae615b76c30c200f795a78a22fc311f0d58f` |
-| 4 | `def` | [pullback](../../../../GroupTheoryAndGeneralizations/PositiveGeometry.lean/declarations/pullback.md) | 51 | `declaration-track:995fb93478536f0caab43f5d090911d57bf5af576523a95f28980c2d5830001a` |
-| 5 | `theorem` | [pullback_nonnegative](../../../../GroupTheoryAndGeneralizations/PositiveGeometry.lean/declarations/pullback-nonnegative.md) | 65 | `result-track:6a58579c2deedfb3d38fb70ef0534722ca0a994c56d1635c02349e2c3a0ad2d1` |
-| 6 | `theorem` | [pullback_visible_iff](../../../../GroupTheoryAndGeneralizations/PositiveGeometry.lean/declarations/pullback-visible-iff.md) | 70 | `result-track:4a738e85889f2b9e87cc8acadf9eeca8b1c1a389406f0d9a37c0fd7e85c0b77f` |
-| 7 | `theorem` | [pullback_isNull_iff](../../../../GroupTheoryAndGeneralizations/PositiveGeometry.lean/declarations/pullback-isnull-iff.md) | 75 | `result-track:d099e31ca9b5e74e56753cba3c131087ef0deaf904b932028bc6b79d918261bc` |
-| 8 | `def` | [add](../../../../GroupTheoryAndGeneralizations/PositiveGeometry.lean/declarations/add.md) | 80 | `declaration-track:fffb100034ba4ae0e95dea631f5f618c3b15de64cc6f9d65b57ec1f7e4214943` |
-| 9 | `theorem` | [add_nonnegative](../../../../GroupTheoryAndGeneralizations/PositiveGeometry.lean/declarations/add-nonnegative.md) | 99 | `result-track:f9754b1e4d2c31960c7a689cc9495cf5a341285b5f9cf9f82a2cd977d4939772` |
-| 10 | `structure` | [ProvenanceResidualization](../../../../GroupTheoryAndGeneralizations/PositiveGeometry.lean/declarations/provenanceresidualization.md) | 110 | `declaration-track:cd42d167045994f991c9ff11bf131d22da0f45df4343fddfa778037e55d1958b` |
-| 11 | `def` | [residualForm](../../../../GroupTheoryAndGeneralizations/PositiveGeometry.lean/declarations/residualform.md) | 124 | `declaration-track:c9c258f6c62271e4ba9f47721ed69d5c6b3a2f073a9119d9585a6e00e6080593` |
-| 12 | `theorem` | [residual_nonnegative](../../../../GroupTheoryAndGeneralizations/PositiveGeometry.lean/declarations/residual-nonnegative.md) | 129 | `result-track:98daf36087cfe415dc947da7f32f7b30abdee4183bb4c0eb5087064c591fcf8a` |
-| 13 | `theorem` | [residual_visible_iff](../../../../GroupTheoryAndGeneralizations/PositiveGeometry.lean/declarations/residual-visible-iff.md) | 136 | `result-track:51553492cd215bbf04e3b86a7f321557d1e27ced0d24d85821cdf71c39586cba` |
-| 14 | `theorem` | [residual_isNull_iff](../../../../GroupTheoryAndGeneralizations/PositiveGeometry.lean/declarations/residual-isnull-iff.md) | 143 | `result-track:43f3bc2f274932bf3e9d09dad92ecb5670bff6b44f1e677dcc1e2a0b7c470f55` |
+| 1 | `structure` | [PositiveForm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PositiveGeometry.lean/declarations/positiveform.md) | 27 | `declaration-track:9a4173009f398980968834861fc9f370664d6ee8c455e74b2a560aa425df0860` |
+| 2 | `def` | [Visible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PositiveGeometry.lean/declarations/visible.md) | 43 | `declaration-track:42c1ffcae3b446f4da8a3c2d5a32891fe4c44f99dee4680ae3a7b07cfa779c45` |
+| 3 | `def` | [IsNull](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PositiveGeometry.lean/declarations/isnull.md) | 47 | `declaration-track:684ddb01a4c934aeb70f49354dcdae615b76c30c200f795a78a22fc311f0d58f` |
+| 4 | `def` | [pullback](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PositiveGeometry.lean/declarations/pullback.md) | 51 | `declaration-track:995fb93478536f0caab43f5d090911d57bf5af576523a95f28980c2d5830001a` |
+| 5 | `theorem` | [pullback_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PositiveGeometry.lean/declarations/pullback-nonnegative.md) | 65 | `result-track:6a58579c2deedfb3d38fb70ef0534722ca0a994c56d1635c02349e2c3a0ad2d1` |
+| 6 | `theorem` | [pullback_visible_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PositiveGeometry.lean/declarations/pullback-visible-iff.md) | 70 | `result-track:4a738e85889f2b9e87cc8acadf9eeca8b1c1a389406f0d9a37c0fd7e85c0b77f` |
+| 7 | `theorem` | [pullback_isNull_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PositiveGeometry.lean/declarations/pullback-isnull-iff.md) | 75 | `result-track:d099e31ca9b5e74e56753cba3c131087ef0deaf904b932028bc6b79d918261bc` |
+| 8 | `def` | [add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PositiveGeometry.lean/declarations/add.md) | 80 | `declaration-track:fffb100034ba4ae0e95dea631f5f618c3b15de64cc6f9d65b57ec1f7e4214943` |
+| 9 | `theorem` | [add_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PositiveGeometry.lean/declarations/add-nonnegative.md) | 99 | `result-track:f9754b1e4d2c31960c7a689cc9495cf5a341285b5f9cf9f82a2cd977d4939772` |
+| 10 | `structure` | [ProvenanceResidualization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PositiveGeometry.lean/declarations/provenanceresidualization.md) | 110 | `declaration-track:cd42d167045994f991c9ff11bf131d22da0f45df4343fddfa778037e55d1958b` |
+| 11 | `def` | [residualForm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PositiveGeometry.lean/declarations/residualform.md) | 124 | `declaration-track:c9c258f6c62271e4ba9f47721ed69d5c6b3a2f073a9119d9585a6e00e6080593` |
+| 12 | `theorem` | [residual_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PositiveGeometry.lean/declarations/residual-nonnegative.md) | 129 | `result-track:98daf36087cfe415dc947da7f32f7b30abdee4183bb4c0eb5087064c591fcf8a` |
+| 13 | `theorem` | [residual_visible_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PositiveGeometry.lean/declarations/residual-visible-iff.md) | 136 | `result-track:51553492cd215bbf04e3b86a7f321557d1e27ced0d24d85821cdf71c39586cba` |
+| 14 | `theorem` | [residual_isNull_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PositiveGeometry.lean/declarations/residual-isnull-iff.md) | 143 | `result-track:43f3bc2f274932bf3e9d09dad92ecb5670bff6b44f1e677dcc1e2a0b7c470f55` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

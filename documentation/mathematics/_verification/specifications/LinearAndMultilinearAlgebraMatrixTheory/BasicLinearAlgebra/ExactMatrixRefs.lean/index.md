@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExactMatrixRefs.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExactMatrixRefs.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExactMatrixRefs.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExactMatrixRefs.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [PSDDecompositionKind](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExactMatrixRefs.lean/declarations/psddecompositionkind.md) | 12 | `declaration-track:eb5c10b2ebfcdb15c1ab5293b041bbad4c58cc5a9f6f732933b98834725fd9a9` |
-| 2 | `structure` | [ExactCoefficientRingRef](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExactMatrixRefs.lean/declarations/exactcoefficientringref.md) | 21 | `declaration-track:1ef0ebe733f35c2c22ac650795808e3936f9aba71ec39004dae4f8e7eced4b19` |
-| 3 | `structure` | [ExactMatrixRef](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExactMatrixRefs.lean/declarations/exactmatrixref.md) | 28 | `declaration-track:2642d41936f96227aa729547260bafc74414f7c0f53f2adbcf4cdbe5b5cec36f` |
-| 4 | `structure` | [ExactPSDCompressionRef](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExactMatrixRefs.lean/declarations/exactpsdcompressionref.md) | 37 | `declaration-track:5d8466f301ca97bdc82bb34d8665a056b3950d5a833fb0c260051c5bae7a0b59` |
+| 1 | `inductive` | [PSDDecompositionKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExactMatrixRefs.lean/declarations/psddecompositionkind.md) | 12 | `declaration-track:eb5c10b2ebfcdb15c1ab5293b041bbad4c58cc5a9f6f732933b98834725fd9a9` |
+| 2 | `structure` | [ExactCoefficientRingRef](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExactMatrixRefs.lean/declarations/exactcoefficientringref.md) | 21 | `declaration-track:1ef0ebe733f35c2c22ac650795808e3936f9aba71ec39004dae4f8e7eced4b19` |
+| 3 | `structure` | [ExactMatrixRef](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExactMatrixRefs.lean/declarations/exactmatrixref.md) | 28 | `declaration-track:2642d41936f96227aa729547260bafc74414f7c0f53f2adbcf4cdbe5b5cec36f` |
+| 4 | `structure` | [ExactPSDCompressionRef](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExactMatrixRefs.lean/declarations/exactpsdcompressionref.md) | 37 | `declaration-track:5d8466f301ca97bdc82bb34d8665a056b3950d5a833fb0c260051c5bae7a0b59` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

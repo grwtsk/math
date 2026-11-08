@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ContinuationCoverNamespacedEdition1.lean/index.md) · [Full source](../../../../Combinatorics/ContinuationCoverNamespacedEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContinuationCoverNamespacedEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContinuationCoverNamespacedEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ContinuationCover](../../../../Combinatorics/ContinuationCoverNamespacedEdition1.lean/declarations/continuationcover.md) | 21 | `declaration-track:e0b6745e7ca80e0281f7809ac3b47c09a5498672508405ea0765b3bf2e299f1b` |
-| 2 | `theorem` | [parent_infeasible_of_continuation_cover](../../../../Combinatorics/ContinuationCoverNamespacedEdition1.lean/declarations/parent-infeasible-of-continuation-cover.md) | 36 | `result-track:8984baa8e8c4f13d3881e604aef10acb4ed1d9aef10740b5e7bb0ec39dc6dab5` |
+| 1 | `structure` | [ContinuationCover](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContinuationCoverNamespacedEdition1.lean/declarations/continuationcover.md) | 21 | `declaration-track:e0b6745e7ca80e0281f7809ac3b47c09a5498672508405ea0765b3bf2e299f1b` |
+| 2 | `theorem` | [parent_infeasible_of_continuation_cover](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContinuationCoverNamespacedEdition1.lean/declarations/parent-infeasible-of-continuation-cover.md) | 36 | `result-track:8984baa8e8c4f13d3881e604aef10acb4ed1d9aef10740b5e7bb0ec39dc6dab5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ProperActionCompactlyGeneratedNamespacedPublic.lean/index.md) · [Full source](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ProperActionCompactlyGeneratedNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ProperActionCompactlyGeneratedNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ProperActionCompactlyGeneratedNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [MulAction.properSMul_iff_isCompact_setOfPred_inter_nonempty](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ProperActionCompactlyGeneratedNamespacedPublic.lean/declarations/mulaction-propersmul-iff-iscompact-setofpred-inter-nonempty.md) | 70 | `result-track:f0704968ba471fcc3f8144fb82e4383dd5d57b54f299338ed9f18847917c1390` |
-| 2 | `theorem` | [properlyDiscontinuousSMul_iff_properSMul](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ProperActionCompactlyGeneratedNamespacedPublic.lean/declarations/properlydiscontinuoussmul-iff-propersmul.md) | 103 | `result-track:d710bfad1c754413702d9ca07597d3ee4b493730bab85d53051066204f0a651f` |
+| 1 | `lemma` | [MulAction.properSMul_iff_isCompact_setOfPred_inter_nonempty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ProperActionCompactlyGeneratedNamespacedPublic.lean/declarations/mulaction-propersmul-iff-iscompact-setofpred-inter-nonempty.md) | 70 | `result-track:f0704968ba471fcc3f8144fb82e4383dd5d57b54f299338ed9f18847917c1390` |
+| 2 | `theorem` | [properlyDiscontinuousSMul_iff_properSMul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ProperActionCompactlyGeneratedNamespacedPublic.lean/declarations/properlydiscontinuoussmul-iff-propersmul.md) | 103 | `result-track:d710bfad1c754413702d9ca07597d3ee4b493730bab85d53051066204f0a651f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

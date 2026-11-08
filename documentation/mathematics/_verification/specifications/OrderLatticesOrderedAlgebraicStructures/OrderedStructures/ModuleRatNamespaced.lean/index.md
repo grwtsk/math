@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ModuleRatNamespaced.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ModuleRatNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ModuleRatNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ModuleRatNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [PosSMulMono.nnrat_of_rat](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ModuleRatNamespaced.lean/declarations/possmulmono-nnrat-of-rat.md) | 24 | `declaration-track:e5d2438fe8fbe57a6073a85321704f327bdec8be57989b0e4069d3602f3ae290` |
-| 2 | `instance` | [PosSMulStrictMono.nnrat_of_rat](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ModuleRatNamespaced.lean/declarations/possmulstrictmono-nnrat-of-rat.md) | 27 | `declaration-track:9cc73a901ea23bfe3250f06e49b8d748c87c5c151048a96f15d4f73a23b042ef` |
-| 3 | `lemma` | [abs_nnqsmul](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ModuleRatNamespaced.lean/declarations/abs-nnqsmul.md) | 33 | `result-track:c1011b14be197ad6b2d9921e4bdeb828d3953c508fd895f544a9a060ba7868ed` |
-| 4 | `lemma` | [abs_qsmul](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ModuleRatNamespaced.lean/declarations/abs-qsmul.md) | 38 | `result-track:7c2d373f900211674cf814e92f6ba54573c39a2ce7e1115ba24873851ef4d0c3` |
-| 5 | `instance` | [LinearOrderedSemifield.toPosSMulStrictMono_rat](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ModuleRatNamespaced.lean/declarations/linearorderedsemifield-topossmulstrictmono-rat.md) | 49 | `declaration-track:018b465ef0b103d8793b2fcbae47bb39bba982d119d1159bd6fcafdfcef96320` |
-| 6 | `instance` | [LinearOrderedField.toPosSMulStrictMono_rat](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ModuleRatNamespaced.lean/declarations/linearorderedfield-topossmulstrictmono-rat.md) | 58 | `declaration-track:1d757a1b8f0e0353a029742006d2b4dbc6953b3168348d307b4b4eb23ec468f6` |
+| 1 | `instance` | [PosSMulMono.nnrat_of_rat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ModuleRatNamespaced.lean/declarations/possmulmono-nnrat-of-rat.md) | 24 | `declaration-track:e5d2438fe8fbe57a6073a85321704f327bdec8be57989b0e4069d3602f3ae290` |
+| 2 | `instance` | [PosSMulStrictMono.nnrat_of_rat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ModuleRatNamespaced.lean/declarations/possmulstrictmono-nnrat-of-rat.md) | 27 | `declaration-track:9cc73a901ea23bfe3250f06e49b8d748c87c5c151048a96f15d4f73a23b042ef` |
+| 3 | `lemma` | [abs_nnqsmul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ModuleRatNamespaced.lean/declarations/abs-nnqsmul.md) | 33 | `result-track:c1011b14be197ad6b2d9921e4bdeb828d3953c508fd895f544a9a060ba7868ed` |
+| 4 | `lemma` | [abs_qsmul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ModuleRatNamespaced.lean/declarations/abs-qsmul.md) | 38 | `result-track:7c2d373f900211674cf814e92f6ba54573c39a2ce7e1115ba24873851ef4d0c3` |
+| 5 | `instance` | [LinearOrderedSemifield.toPosSMulStrictMono_rat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ModuleRatNamespaced.lean/declarations/linearorderedsemifield-topossmulstrictmono-rat.md) | 49 | `declaration-track:018b465ef0b103d8793b2fcbae47bb39bba982d119d1159bd6fcafdfcef96320` |
+| 6 | `instance` | [LinearOrderedField.toPosSMulStrictMono_rat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/ModuleRatNamespaced.lean/declarations/linearorderedfield-topossmulstrictmono-rat.md) | 58 | `declaration-track:1d757a1b8f0e0353a029742006d2b4dbc6953b3168348d307b4b4eb23ec468f6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

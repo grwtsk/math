@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CrystallineAhatGenus.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CrystallineAhatGenus.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CrystallineAhatGenus.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CrystallineAhatGenus.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CrystallineAhatGenus](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CrystallineAhatGenus.lean/declarations/crystallineahatgenus.md) | 18 | `declaration-track:d711b950f7d976f60239cf6a5b1614207cab32184f5a1a747f38bc4b0acfa038` |
-| 2 | `theorem` | [ahat_genus_multiplicative](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CrystallineAhatGenus.lean/declarations/ahat-genus-multiplicative.md) | 26 | `result-track:4a2dcc89d6724f1a4ce725d8995a2f83834c76ed834fc031edc03d14a3483384` |
+| 1 | `structure` | [CrystallineAhatGenus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CrystallineAhatGenus.lean/declarations/crystallineahatgenus.md) | 18 | `declaration-track:d711b950f7d976f60239cf6a5b1614207cab32184f5a1a747f38bc4b0acfa038` |
+| 2 | `theorem` | [ahat_genus_multiplicative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CrystallineAhatGenus.lean/declarations/ahat-genus-multiplicative.md) | 26 | `result-track:4a2dcc89d6724f1a4ce725d8995a2f83834c76ed834fc031edc03d14a3483384` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ClosureLevel.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ClosureLevel.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ClosureLevel.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ClosureLevel.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [ClosureLevel](../../../../../ComputerScience/AlgorithmsInComputerScience/ClosureLevel.lean/declarations/closurelevel.md) | 13 | `declaration-track:b6fead921136f37021c266fcece76234ed783586a0b1bc0adb6b732a1e7289d5` |
-| 2 | `inductive` | [ClosureStatus](../../../../../ComputerScience/AlgorithmsInComputerScience/ClosureLevel.lean/declarations/closurestatus.md) | 26 | `declaration-track:0cb11c777335f76a8f5dcf3993c79e013d377c07aa97901a0a6a9427f38e35c9` |
-| 3 | `structure` | [ClosureRecord](../../../../../ComputerScience/AlgorithmsInComputerScience/ClosureLevel.lean/declarations/closurerecord.md) | 38 | `declaration-track:344bd796f5745d81d50905743999e1c5c19cacae18b9155f15548fe83ba1d1ed` |
-| 4 | `structure` | [ClosureSemantics](../../../../../ComputerScience/AlgorithmsInComputerScience/ClosureLevel.lean/declarations/closuresemantics.md) | 48 | `declaration-track:c7fa9f9186fd525c7cdae8298859632d8e531c294bc8e33d67a7fe6a24cb65f2` |
-| 5 | `structure` | [ClosureLedger](../../../../../ComputerScience/AlgorithmsInComputerScience/ClosureLevel.lean/declarations/closureledger.md) | 58 | `declaration-track:d204a1cdb52b0b2d38317cb88ee4817b0af1e2ffba4ea63a2e8cc1f795fd3d71` |
-| 6 | `def` | [SemanticallyTotal](../../../../../ComputerScience/AlgorithmsInComputerScience/ClosureLevel.lean/declarations/semanticallytotal.md) | 81 | `declaration-track:5044f85dc92dbe69fd4a8f493ff37d85053744020473b008cebf081d480832e4` |
-| 7 | `theorem` | [record_exists](../../../../../ComputerScience/AlgorithmsInComputerScience/ClosureLevel.lean/declarations/record-exists.md) | 85 | `result-track:2d92291c20969ba7b26d3cf1768671c1920a61845ae9247744bf0d5a81eb1ecd` |
-| 8 | `theorem` | [incomplete_has_obligation](../../../../../ComputerScience/AlgorithmsInComputerScience/ClosureLevel.lean/declarations/incomplete-has-obligation.md) | 92 | `result-track:dc2820de11c9a8bfca2a797cee6b734a31017c57c1f0648b7b58e4175c2c9c6b` |
-| 9 | `theorem` | [semanticallyTotal_of_all_complete](../../../../../ComputerScience/AlgorithmsInComputerScience/ClosureLevel.lean/declarations/semanticallytotal-of-all-complete.md) | 101 | `result-track:69bbb9c6b05ee4d692407154368b6a8a8dde19535ad72216dec03f736f2fe848` |
+| 1 | `inductive` | [ClosureLevel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ClosureLevel.lean/declarations/closurelevel.md) | 13 | `declaration-track:b6fead921136f37021c266fcece76234ed783586a0b1bc0adb6b732a1e7289d5` |
+| 2 | `inductive` | [ClosureStatus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ClosureLevel.lean/declarations/closurestatus.md) | 26 | `declaration-track:0cb11c777335f76a8f5dcf3993c79e013d377c07aa97901a0a6a9427f38e35c9` |
+| 3 | `structure` | [ClosureRecord](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ClosureLevel.lean/declarations/closurerecord.md) | 38 | `declaration-track:344bd796f5745d81d50905743999e1c5c19cacae18b9155f15548fe83ba1d1ed` |
+| 4 | `structure` | [ClosureSemantics](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ClosureLevel.lean/declarations/closuresemantics.md) | 48 | `declaration-track:c7fa9f9186fd525c7cdae8298859632d8e531c294bc8e33d67a7fe6a24cb65f2` |
+| 5 | `structure` | [ClosureLedger](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ClosureLevel.lean/declarations/closureledger.md) | 58 | `declaration-track:d204a1cdb52b0b2d38317cb88ee4817b0af1e2ffba4ea63a2e8cc1f795fd3d71` |
+| 6 | `def` | [SemanticallyTotal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ClosureLevel.lean/declarations/semanticallytotal.md) | 81 | `declaration-track:5044f85dc92dbe69fd4a8f493ff37d85053744020473b008cebf081d480832e4` |
+| 7 | `theorem` | [record_exists](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ClosureLevel.lean/declarations/record-exists.md) | 85 | `result-track:2d92291c20969ba7b26d3cf1768671c1920a61845ae9247744bf0d5a81eb1ecd` |
+| 8 | `theorem` | [incomplete_has_obligation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ClosureLevel.lean/declarations/incomplete-has-obligation.md) | 92 | `result-track:dc2820de11c9a8bfca2a797cee6b734a31017c57c1f0648b7b58e4175c2c9c6b` |
+| 9 | `theorem` | [semanticallyTotal_of_all_complete](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ClosureLevel.lean/declarations/semanticallytotal-of-all-complete.md) | 101 | `result-track:69bbb9c6b05ee4d692407154368b6a8a8dde19535ad72216dec03f736f2fe848` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

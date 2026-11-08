@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CorrelationAssemblyNamespacedEdition1.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CorrelationAssemblyNamespacedEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CorrelationAssemblyNamespacedEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CorrelationAssemblyNamespacedEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,10 +60,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [source_arithmetic_representation](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CorrelationAssemblyNamespacedEdition1.lean/declarations/source-arithmetic-representation.md) | 28 | `result-track:16612cf43c02b91b4a5cd67e071ce8f702b478197573ea841a371aecb42cad21` |
-| 2 | `def` | [UniformLowerBound](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CorrelationAssemblyNamespacedEdition1.lean/declarations/uniformlowerbound.md) | 37 | `declaration-track:8e5ccbc56c1b1f642ef1d8dbfe20a0e1ad72ff8b5531bf0e80b54617ac8c0968` |
-| 3 | `def` | [BridgeObligation](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CorrelationAssemblyNamespacedEdition1.lean/declarations/bridgeobligation.md) | 41 | `declaration-track:3961ba51151d694790904263eb043d03e741534bc72820df864808d11af40fc7` |
-| 4 | `def` | [EstimateObligation](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CorrelationAssemblyNamespacedEdition1.lean/declarations/estimateobligation.md) | 44 | `declaration-track:721ccf1e7ed1c3f1dc96670687f1806d6dcef5f88ce4536fd02c691c6344b097` |
+| 1 | `theorem` | [source_arithmetic_representation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CorrelationAssemblyNamespacedEdition1.lean/declarations/source-arithmetic-representation.md) | 28 | `result-track:16612cf43c02b91b4a5cd67e071ce8f702b478197573ea841a371aecb42cad21` |
+| 2 | `def` | [UniformLowerBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CorrelationAssemblyNamespacedEdition1.lean/declarations/uniformlowerbound.md) | 37 | `declaration-track:8e5ccbc56c1b1f642ef1d8dbfe20a0e1ad72ff8b5531bf0e80b54617ac8c0968` |
+| 3 | `def` | [BridgeObligation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CorrelationAssemblyNamespacedEdition1.lean/declarations/bridgeobligation.md) | 41 | `declaration-track:3961ba51151d694790904263eb043d03e741534bc72820df864808d11af40fc7` |
+| 4 | `def` | [EstimateObligation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CorrelationAssemblyNamespacedEdition1.lean/declarations/estimateobligation.md) | 44 | `declaration-track:721ccf1e7ed1c3f1dc96670687f1806d6dcef5f88ce4536fd02c691c6344b097` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

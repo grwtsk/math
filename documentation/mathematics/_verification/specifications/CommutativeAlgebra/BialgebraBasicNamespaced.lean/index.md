@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/BialgebraBasicNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/BialgebraBasicNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BialgebraBasicNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BialgebraBasicNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,23 +58,23 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [Bialgebra](../../../../CommutativeAlgebra/BialgebraBasicNamespaced.lean/declarations/bialgebra.md) | 63 | `declaration-track:539b3d11c95880abc2d7ad7ec8c9f2bb6159d2b79e00c4b0258dab9b58735e9c` |
-| 2 | `lemma` | [counit_mul](../../../../CommutativeAlgebra/BialgebraBasicNamespaced.lean/declarations/counit-mul.md) | 99 | `result-track:8116edee623de809bae44ab3f4cca8113f83221a6ca34f72df275830f106f864` |
-| 3 | `lemma` | [comul_mul](../../../../CommutativeAlgebra/BialgebraBasicNamespaced.lean/declarations/comul-mul.md) | 102 | `result-track:eb46fd94153b493677bfbb8702b43866696cce6e3b3aca95ac17b36c3deb5cda` |
-| 4 | `def` | [mk'](../../../../CommutativeAlgebra/BialgebraBasicNamespaced.lean/declarations/mk.md) | 112 | `declaration-track:ecf60981cf1bd79e34dfdaf7b8e482da6ba31f026c3edb4e5c6549ffab8c8744` |
-| 5 | `def` | [counitAlgHom](../../../../CommutativeAlgebra/BialgebraBasicNamespaced.lean/declarations/counitalghom.md) | 127 | `declaration-track:2c9bfe8bc7493a1bef91dea3e2dfbdee8332d5cff5e42a72782ae45bf39111e0` |
-| 6 | `def` | [comulAlgHom](../../../../CommutativeAlgebra/BialgebraBasicNamespaced.lean/declarations/comulalghom.md) | 132 | `declaration-track:68066eb1a632293bbc584dce7bd89b8a93b633ccf9aad8d75c21815bc76a2378` |
-| 7 | `lemma` | [counit_algebraMap](../../../../CommutativeAlgebra/BialgebraBasicNamespaced.lean/declarations/counit-algebramap.md) | 137 | `result-track:b36cca8d5edad6647797e131a16de987a9586ad554a04d17024a5b58eea6132f` |
-| 8 | `lemma` | [comul_algebraMap](../../../../CommutativeAlgebra/BialgebraBasicNamespaced.lean/declarations/comul-algebramap.md) | 140 | `result-track:94327dbe1cb40814e1659db4e31c7132c65da77e45ac73e9034993d8974aa456` |
-| 9 | `lemma` | [counit_natCast](../../../../CommutativeAlgebra/BialgebraBasicNamespaced.lean/declarations/counit-natcast.md) | 144 | `result-track:12a0fff51811f9984ecfc07189f9b214dbc54e04d9c616979b1e6eea07f0442f` |
-| 10 | `lemma` | [comul_natCast](../../../../CommutativeAlgebra/BialgebraBasicNamespaced.lean/declarations/comul-natcast.md) | 147 | `result-track:a2143e599c6e2b0338334263c78cf6cb22dc49490029bbbc210f6786bac40f70` |
-| 11 | `lemma` | [counit_pow](../../../../CommutativeAlgebra/BialgebraBasicNamespaced.lean/declarations/counit-pow.md) | 150 | `result-track:8086b7eefad1613ef93b8ecf59bcf4faf31063d6c9f6f4a5fcd6815a11412214` |
-| 12 | `lemma` | [comul_pow](../../../../CommutativeAlgebra/BialgebraBasicNamespaced.lean/declarations/comul-pow.md) | 153 | `result-track:d93cf1e7d44cd261113391563e5b63ac0818a77fa46d6e2440ded48b9ef9ed9b` |
-| 13 | `instance` | [toBialgebra](../../../../CommutativeAlgebra/BialgebraBasicNamespaced.lean/declarations/tobialgebra.md) | 165 | `declaration-track:0cbc77b7d70825ff088ad1f8229dfa8bd960e875d7882fc832e970871b811713` |
-| 14 | `abbrev` | [ofAlgHom](../../../../CommutativeAlgebra/BialgebraBasicNamespaced.lean/declarations/ofalghom.md) | 182 | `declaration-track:a8a8edd25868777b10bd6fd35320942854b2d43176f0ecfed4b2e4d87db87ec9` |
-| 15 | `lemma` | [algebraMap_injective](../../../../CommutativeAlgebra/BialgebraBasicNamespaced.lean/declarations/algebramap-injective.md) | 206 | `result-track:1fd47b021739166c6a4f56ef11ec65d4d5d0eac25bb60f83d894d2ff7e8487ab` |
-| 16 | `lemma` | [counit_surjective](../../../../CommutativeAlgebra/BialgebraBasicNamespaced.lean/declarations/counit-surjective.md) | 208 | `result-track:233d94984796548f19369ca6f33191873cf8df87860348c5520a34254f22d6ae` |
-| 17 | `lemma` | [nontrivial](../../../../CommutativeAlgebra/BialgebraBasicNamespaced.lean/declarations/nontrivial.md) | 214 | `result-track:7d5aba848f226ed3592784e5a025ef22c736bb05b8fa9e4ca31ccf59beaa87ff` |
+| 1 | `class` | [Bialgebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BialgebraBasicNamespaced.lean/declarations/bialgebra.md) | 63 | `declaration-track:539b3d11c95880abc2d7ad7ec8c9f2bb6159d2b79e00c4b0258dab9b58735e9c` |
+| 2 | `lemma` | [counit_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BialgebraBasicNamespaced.lean/declarations/counit-mul.md) | 99 | `result-track:8116edee623de809bae44ab3f4cca8113f83221a6ca34f72df275830f106f864` |
+| 3 | `lemma` | [comul_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BialgebraBasicNamespaced.lean/declarations/comul-mul.md) | 102 | `result-track:eb46fd94153b493677bfbb8702b43866696cce6e3b3aca95ac17b36c3deb5cda` |
+| 4 | `def` | [mk'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BialgebraBasicNamespaced.lean/declarations/mk.md) | 112 | `declaration-track:ecf60981cf1bd79e34dfdaf7b8e482da6ba31f026c3edb4e5c6549ffab8c8744` |
+| 5 | `def` | [counitAlgHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BialgebraBasicNamespaced.lean/declarations/counitalghom.md) | 127 | `declaration-track:2c9bfe8bc7493a1bef91dea3e2dfbdee8332d5cff5e42a72782ae45bf39111e0` |
+| 6 | `def` | [comulAlgHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BialgebraBasicNamespaced.lean/declarations/comulalghom.md) | 132 | `declaration-track:68066eb1a632293bbc584dce7bd89b8a93b633ccf9aad8d75c21815bc76a2378` |
+| 7 | `lemma` | [counit_algebraMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BialgebraBasicNamespaced.lean/declarations/counit-algebramap.md) | 137 | `result-track:b36cca8d5edad6647797e131a16de987a9586ad554a04d17024a5b58eea6132f` |
+| 8 | `lemma` | [comul_algebraMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BialgebraBasicNamespaced.lean/declarations/comul-algebramap.md) | 140 | `result-track:94327dbe1cb40814e1659db4e31c7132c65da77e45ac73e9034993d8974aa456` |
+| 9 | `lemma` | [counit_natCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BialgebraBasicNamespaced.lean/declarations/counit-natcast.md) | 144 | `result-track:12a0fff51811f9984ecfc07189f9b214dbc54e04d9c616979b1e6eea07f0442f` |
+| 10 | `lemma` | [comul_natCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BialgebraBasicNamespaced.lean/declarations/comul-natcast.md) | 147 | `result-track:a2143e599c6e2b0338334263c78cf6cb22dc49490029bbbc210f6786bac40f70` |
+| 11 | `lemma` | [counit_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BialgebraBasicNamespaced.lean/declarations/counit-pow.md) | 150 | `result-track:8086b7eefad1613ef93b8ecf59bcf4faf31063d6c9f6f4a5fcd6815a11412214` |
+| 12 | `lemma` | [comul_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BialgebraBasicNamespaced.lean/declarations/comul-pow.md) | 153 | `result-track:d93cf1e7d44cd261113391563e5b63ac0818a77fa46d6e2440ded48b9ef9ed9b` |
+| 13 | `instance` | [toBialgebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BialgebraBasicNamespaced.lean/declarations/tobialgebra.md) | 165 | `declaration-track:0cbc77b7d70825ff088ad1f8229dfa8bd960e875d7882fc832e970871b811713` |
+| 14 | `abbrev` | [ofAlgHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BialgebraBasicNamespaced.lean/declarations/ofalghom.md) | 182 | `declaration-track:a8a8edd25868777b10bd6fd35320942854b2d43176f0ecfed4b2e4d87db87ec9` |
+| 15 | `lemma` | [algebraMap_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BialgebraBasicNamespaced.lean/declarations/algebramap-injective.md) | 206 | `result-track:1fd47b021739166c6a4f56ef11ec65d4d5d0eac25bb60f83d894d2ff7e8487ab` |
+| 16 | `lemma` | [counit_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BialgebraBasicNamespaced.lean/declarations/counit-surjective.md) | 208 | `result-track:233d94984796548f19369ca6f33191873cf8df87860348c5520a34254f22d6ae` |
+| 17 | `lemma` | [nontrivial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/BialgebraBasicNamespaced.lean/declarations/nontrivial.md) | 214 | `result-track:7d5aba848f226ed3592784e5a025ef22c736bb05b8fa9e4ca31ccf59beaa87ff` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PrismaticPivotBridgeNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PrismaticPivotBridgeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PrismaticPivotBridgeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PrismaticPivotBridgeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [HeatflowPrismaticPivot](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PrismaticPivotBridgeNamespaced.lean/declarations/heatflowprismaticpivot.md) | 30 | `declaration-track:2d477b1825472ddc812ae827671a3811e2f04d1d078c7d49db6ca7ed4a309f7c` |
-| 2 | `theorem` | [heatflow_prismatic_pivot_has_barrier](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PrismaticPivotBridgeNamespaced.lean/declarations/heatflow-prismatic-pivot-has-barrier.md) | 39 | `result-track:2c816be033253ab2cd38680f82c857b7f7eacea3489d06e2663734120e142e40` |
-| 3 | `theorem` | [heatflow_prismatic_pivot_has_comparison](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PrismaticPivotBridgeNamespaced.lean/declarations/heatflow-prismatic-pivot-has-comparison.md) | 44 | `result-track:39661c49e1ae8763ea3277a4cebd25f43796305741ac582d70b38873c029eb14` |
-| 4 | `structure` | [PrismaticPivotAtlasBridge](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PrismaticPivotBridgeNamespaced.lean/declarations/prismaticpivotatlasbridge.md) | 54 | `declaration-track:fd56058e12b4c27e76f4050d7da9e044f727fac2384f872be5df9b921b9c510e` |
-| 5 | `theorem` | [prismatic_pivot_bridge_supports_descent_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PrismaticPivotBridgeNamespaced.lean/declarations/prismatic-pivot-bridge-supports-descent-if-supplied.md) | 60 | `result-track:c2b8a4a0a7ff234068c64a901c1ff70488ad62b993d29de8340133d92aa3b33a` |
+| 1 | `structure` | [HeatflowPrismaticPivot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PrismaticPivotBridgeNamespaced.lean/declarations/heatflowprismaticpivot.md) | 30 | `declaration-track:2d477b1825472ddc812ae827671a3811e2f04d1d078c7d49db6ca7ed4a309f7c` |
+| 2 | `theorem` | [heatflow_prismatic_pivot_has_barrier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PrismaticPivotBridgeNamespaced.lean/declarations/heatflow-prismatic-pivot-has-barrier.md) | 39 | `result-track:2c816be033253ab2cd38680f82c857b7f7eacea3489d06e2663734120e142e40` |
+| 3 | `theorem` | [heatflow_prismatic_pivot_has_comparison](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PrismaticPivotBridgeNamespaced.lean/declarations/heatflow-prismatic-pivot-has-comparison.md) | 44 | `result-track:39661c49e1ae8763ea3277a4cebd25f43796305741ac582d70b38873c029eb14` |
+| 4 | `structure` | [PrismaticPivotAtlasBridge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PrismaticPivotBridgeNamespaced.lean/declarations/prismaticpivotatlasbridge.md) | 54 | `declaration-track:fd56058e12b4c27e76f4050d7da9e044f727fac2384f872be5df9b921b9c510e` |
+| 5 | `theorem` | [prismatic_pivot_bridge_supports_descent_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PrismaticPivotBridgeNamespaced.lean/declarations/prismatic-pivot-bridge-supports-descent-if-supplied.md) | 60 | `result-track:c2b8a4a0a7ff234068c64a901c1ff70488ad62b993d29de8340133d92aa3b33a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/StatementNamespacedRiemannVonMangoldt.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/StatementNamespacedRiemannVonMangoldt.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/StatementNamespacedRiemannVonMangoldt.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/StatementNamespacedRiemannVonMangoldt.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [riemannVonMangoldt](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/StatementNamespacedRiemannVonMangoldt.lean/declarations/riemannvonmangoldt.md) | 28 | `result-track:0bea8dc25ee501b5f5e0712097d636f129bbad595b7e5b7fcb9d51c5d5385449` |
+| 1 | `theorem` | [riemannVonMangoldt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/StatementNamespacedRiemannVonMangoldt.lean/declarations/riemannvonmangoldt.md) | 28 | `result-track:0bea8dc25ee501b5f5e0712097d636f129bbad595b7e5b7fcb9d51c5d5385449` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

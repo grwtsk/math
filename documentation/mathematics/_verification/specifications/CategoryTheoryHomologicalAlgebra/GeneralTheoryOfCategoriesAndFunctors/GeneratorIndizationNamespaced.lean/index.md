@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GeneratorIndizationNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GeneratorIndizationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GeneratorIndizationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GeneratorIndizationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Ind.isSeparating_range_yoneda](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GeneratorIndizationNamespaced.lean/declarations/ind-isseparating-range-yoneda.md) | 36 | `result-track:36a3e0b1afd333126999474f423cba497f8b9c2e03e41df8119a11190c142ab5` |
-| 2 | `theorem` | [Ind.isSeparator_range_yoneda](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GeneratorIndizationNamespaced.lean/declarations/ind-isseparator-range-yoneda.md) | 46 | `result-track:f8eccd853ca10b0d22e858c22760791fdc02c0f2b34f0caff5e2112739716e2f` |
+| 1 | `theorem` | [Ind.isSeparating_range_yoneda](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GeneratorIndizationNamespaced.lean/declarations/ind-isseparating-range-yoneda.md) | 36 | `result-track:36a3e0b1afd333126999474f423cba497f8b9c2e03e41df8119a11190c142ab5` |
+| 2 | `theorem` | [Ind.isSeparator_range_yoneda](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GeneratorIndizationNamespaced.lean/declarations/ind-isseparator-range-yoneda.md) | 46 | `result-track:f8eccd853ca10b0d22e858c22760791fdc02c0f2b34f0caff5e2112739716e2f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

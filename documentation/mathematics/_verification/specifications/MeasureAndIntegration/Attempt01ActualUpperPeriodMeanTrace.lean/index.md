@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/Attempt01ActualUpperPeriodMeanTrace.lean/index.md) · [Full source](../../../../MeasureAndIntegration/Attempt01ActualUpperPeriodMeanTrace.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01ActualUpperPeriodMeanTrace.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01ActualUpperPeriodMeanTrace.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualUpperPeriodMeanTrace](../../../../MeasureAndIntegration/Attempt01ActualUpperPeriodMeanTrace.lean/declarations/actualupperperiodmeantrace.md) | 25 | `declaration-track:d9900e3f66f06f7470334141dead23a507b82be598ba4502669d1ffa9bba532a` |
-| 2 | `theorem` | [upper_time_orders](../../../../MeasureAndIntegration/Attempt01ActualUpperPeriodMeanTrace.lean/declarations/upper-time-orders.md) | 31 | `result-track:70a8543fd0cdb838f03009f4e181d6e31c690cf2f0f6bd0b9d50f0da24b37e18` |
-| 3 | `theorem` | [time_factor_intervalIntegrable](../../../../MeasureAndIntegration/Attempt01ActualUpperPeriodMeanTrace.lean/declarations/time-factor-intervalintegrable.md) | 56 | `result-track:217e41f54196ae0d7c687a17589584e619c02de09b3678108f181742e8bd7c0a` |
-| 4 | `theorem` | [actualUpperPeriodMeanTimeFactor_eq_support](../../../../MeasureAndIntegration/Attempt01ActualUpperPeriodMeanTrace.lean/declarations/actualupperperiodmeantimefactor-eq-support.md) | 73 | `result-track:a384942d370517c1a019d57013cb60878f34bb807301a182794ac0b429dff8ec` |
-| 5 | `theorem` | [mean_jet_abs_le](../../../../MeasureAndIntegration/Attempt01ActualUpperPeriodMeanTrace.lean/declarations/mean-jet-abs-le.md) | 98 | `result-track:03c58655f50191a9356b1f9a5395367f4f4c53f73b58807a41c7480d0a5c200d` |
-| 6 | `theorem` | [upper_factor_abs_le](../../../../MeasureAndIntegration/Attempt01ActualUpperPeriodMeanTrace.lean/declarations/upper-factor-abs-le.md) | 118 | `result-track:29ab651b0b7adfb40fe6458547009a1ea93c714938aadedbb7db49404153ba15` |
-| 7 | `theorem` | [actualUpperPeriodMeanTrace_abs_le](../../../../MeasureAndIntegration/Attempt01ActualUpperPeriodMeanTrace.lean/declarations/actualupperperiodmeantrace-abs-le.md) | 194 | `result-track:e4720b9672bb3ab7ebdd207b9cc4598572548cc092c2bde73249b13f041ce6f2` |
-| 8 | `theorem` | [actualUpperPeriodMeanTrace_tendsto_zero](../../../../MeasureAndIntegration/Attempt01ActualUpperPeriodMeanTrace.lean/declarations/actualupperperiodmeantrace-tendsto-zero.md) | 241 | `result-track:c361959c35db94d704b0f44a3f48ff3d365f2a78651bb59557869a66b556e97b` |
+| 1 | `def` | [actualUpperPeriodMeanTrace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01ActualUpperPeriodMeanTrace.lean/declarations/actualupperperiodmeantrace.md) | 25 | `declaration-track:d9900e3f66f06f7470334141dead23a507b82be598ba4502669d1ffa9bba532a` |
+| 2 | `theorem` | [upper_time_orders](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01ActualUpperPeriodMeanTrace.lean/declarations/upper-time-orders.md) | 31 | `result-track:70a8543fd0cdb838f03009f4e181d6e31c690cf2f0f6bd0b9d50f0da24b37e18` |
+| 3 | `theorem` | [time_factor_intervalIntegrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01ActualUpperPeriodMeanTrace.lean/declarations/time-factor-intervalintegrable.md) | 56 | `result-track:217e41f54196ae0d7c687a17589584e619c02de09b3678108f181742e8bd7c0a` |
+| 4 | `theorem` | [actualUpperPeriodMeanTimeFactor_eq_support](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01ActualUpperPeriodMeanTrace.lean/declarations/actualupperperiodmeantimefactor-eq-support.md) | 73 | `result-track:a384942d370517c1a019d57013cb60878f34bb807301a182794ac0b429dff8ec` |
+| 5 | `theorem` | [mean_jet_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01ActualUpperPeriodMeanTrace.lean/declarations/mean-jet-abs-le.md) | 98 | `result-track:03c58655f50191a9356b1f9a5395367f4f4c53f73b58807a41c7480d0a5c200d` |
+| 6 | `theorem` | [upper_factor_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01ActualUpperPeriodMeanTrace.lean/declarations/upper-factor-abs-le.md) | 118 | `result-track:29ab651b0b7adfb40fe6458547009a1ea93c714938aadedbb7db49404153ba15` |
+| 7 | `theorem` | [actualUpperPeriodMeanTrace_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01ActualUpperPeriodMeanTrace.lean/declarations/actualupperperiodmeantrace-abs-le.md) | 194 | `result-track:e4720b9672bb3ab7ebdd207b9cc4598572548cc092c2bde73249b13f041ce6f2` |
+| 8 | `theorem` | [actualUpperPeriodMeanTrace_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt01ActualUpperPeriodMeanTrace.lean/declarations/actualupperperiodmeantrace-tendsto-zero.md) | 241 | `result-track:c361959c35db94d704b0f44a3f48ff3d365f2a78651bb59557869a66b556e97b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

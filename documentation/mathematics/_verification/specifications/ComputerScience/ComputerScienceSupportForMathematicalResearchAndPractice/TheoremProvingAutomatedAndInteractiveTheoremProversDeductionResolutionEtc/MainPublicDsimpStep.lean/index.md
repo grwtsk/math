@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/MainPublicDsimpStep.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/MainPublicDsimpStep.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/MainPublicDsimpStep.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/MainPublicDsimpStep.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,9 +62,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [dsimpStep](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/MainPublicDsimpStep.lean/declarations/dsimpstep.md) | 18 | `declaration-track:c5bfeab3fc8c7dd7961722f7b965e7853117969e27224861dfcd60c761923d32` |
-| 2 | `abbrev` | [cacheResult](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/MainPublicDsimpStep.lean/declarations/cacheresult.md) | 32 | `declaration-track:fc6b1f412071e9447b1479634b579a624a8c5767a16277551a72beb6504a7779` |
-| 3 | `def` | [dsimpImpl](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/MainPublicDsimpStep.lean/declarations/dsimpimpl.md) | 38 | `declaration-track:c936fc4344377f82d2381a577ccdbe67816540b99e801718b724e03b47d25515` |
+| 1 | `def` | [dsimpStep](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/MainPublicDsimpStep.lean/declarations/dsimpstep.md) | 18 | `declaration-track:c5bfeab3fc8c7dd7961722f7b965e7853117969e27224861dfcd60c761923d32` |
+| 2 | `abbrev` | [cacheResult](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/MainPublicDsimpStep.lean/declarations/cacheresult.md) | 32 | `declaration-track:fc6b1f412071e9447b1479634b579a624a8c5767a16277551a72beb6504a7779` |
+| 3 | `def` | [dsimpImpl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/MainPublicDsimpStep.lean/declarations/dsimpimpl.md) | 38 | `declaration-track:c936fc4344377f82d2381a577ccdbe67816540b99e801718b724e03b47d25515` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

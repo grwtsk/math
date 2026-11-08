@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/FiniteBlaschkeRemoval.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/FiniteBlaschkeRemoval.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FiniteBlaschkeRemoval.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FiniteBlaschkeRemoval.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.DiskBlaschkeFactors`](../../../../FunctionsOfAComplexVariable/DiskBlaschkeFactors.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.DiskBlaschkeFactors`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/DiskBlaschkeFactors.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Analysis.Meromorphic.NormalForm` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,17 +58,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [unitCoefficient](../../../../FunctionsOfAComplexVariable/FiniteBlaschkeRemoval.lean/declarations/unitcoefficient.md) | 29 | `declaration-track:7e8eaf7a0b283077a3fb609a5a2e13de12daa7e1ce440530b840b5ab8ee923d6` |
-| 2 | `theorem` | [factor_eq_sub_mul_unit](../../../../FunctionsOfAComplexVariable/FiniteBlaschkeRemoval.lean/declarations/factor-eq-sub-mul-unit.md) | 31 | `result-track:01711bd453ac09960cd9dfd7dc465e8dc402f1b69fc2908cfc3d3e10cdd8eab4` |
-| 3 | `theorem` | [analyticAt_unit](../../../../FunctionsOfAComplexVariable/FiniteBlaschkeRemoval.lean/declarations/analyticat-unit.md) | 37 | `result-track:962337ca1e7201de0980b0710b3ccabebe83ebb72797398aea6ace4489adcb35` |
-| 4 | `theorem` | [unit_ne_zero](../../../../FunctionsOfAComplexVariable/FiniteBlaschkeRemoval.lean/declarations/unit-ne-zero.md) | 43 | `result-track:d56c3b392d3ca43d825df3a69e09f277de85c7a0a7a9751138cbd3517053d832` |
-| 5 | `theorem` | [analyticAt_factor_three](../../../../FunctionsOfAComplexVariable/FiniteBlaschkeRemoval.lean/declarations/analyticat-factor-three.md) | 47 | `result-track:ffd2e720661fc1a88c14ec4c40cf51169ae06b2866ca465a76727290aef59eb9` |
-| 6 | `theorem` | [analyticAt_product](../../../../FunctionsOfAComplexVariable/FiniteBlaschkeRemoval.lean/declarations/analyticat-product.md) | 55 | `result-track:db65a634330158d01f24f6780182b936b82896ecec9f8ab0116922cf186328dd` |
-| 7 | `theorem` | [product_ne_zero_off_roots](../../../../FunctionsOfAComplexVariable/FiniteBlaschkeRemoval.lean/declarations/product-ne-zero-off-roots.md) | 60 | `result-track:69d646c2095215cfdf9fc37185a0aa7fb324dd1e3a103c004a5d3dbc20a2cc70` |
-| 8 | `theorem` | [product_local_factorization](../../../../FunctionsOfAComplexVariable/FiniteBlaschkeRemoval.lean/declarations/product-local-factorization.md) | 71 | `result-track:15749270182d63d61c176da62a7dd858ee52016c32c6f2bf8db38e2b9b1dff72` |
-| 9 | `theorem` | [normalForm_germ](../../../../FunctionsOfAComplexVariable/FiniteBlaschkeRemoval.lean/declarations/normalform-germ.md) | 98 | `result-track:3308bbada4b6550d574ee8c5160dca7236d273c27c32537950315b15c9a0dd6a` |
-| 10 | `theorem` | [quotient_germ_of_matching_power](../../../../FunctionsOfAComplexVariable/FiniteBlaschkeRemoval.lean/declarations/quotient-germ-of-matching-power.md) | 107 | `result-track:41b6f6a370807d52a79b8d2be00188e76228a4a4b741447e9d5c5c4fd75573cf` |
-| 11 | `theorem` | [exists_removed_quotient](../../../../FunctionsOfAComplexVariable/FiniteBlaschkeRemoval.lean/declarations/exists-removed-quotient.md) | 122 | `result-track:b3828aca09a5fbf8ee7074bd224f639cb70c82bb8bef02e798e08bf262102ec0` |
+| 1 | `def` | [unitCoefficient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FiniteBlaschkeRemoval.lean/declarations/unitcoefficient.md) | 29 | `declaration-track:7e8eaf7a0b283077a3fb609a5a2e13de12daa7e1ce440530b840b5ab8ee923d6` |
+| 2 | `theorem` | [factor_eq_sub_mul_unit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FiniteBlaschkeRemoval.lean/declarations/factor-eq-sub-mul-unit.md) | 31 | `result-track:01711bd453ac09960cd9dfd7dc465e8dc402f1b69fc2908cfc3d3e10cdd8eab4` |
+| 3 | `theorem` | [analyticAt_unit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FiniteBlaschkeRemoval.lean/declarations/analyticat-unit.md) | 37 | `result-track:962337ca1e7201de0980b0710b3ccabebe83ebb72797398aea6ace4489adcb35` |
+| 4 | `theorem` | [unit_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FiniteBlaschkeRemoval.lean/declarations/unit-ne-zero.md) | 43 | `result-track:d56c3b392d3ca43d825df3a69e09f277de85c7a0a7a9751138cbd3517053d832` |
+| 5 | `theorem` | [analyticAt_factor_three](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FiniteBlaschkeRemoval.lean/declarations/analyticat-factor-three.md) | 47 | `result-track:ffd2e720661fc1a88c14ec4c40cf51169ae06b2866ca465a76727290aef59eb9` |
+| 6 | `theorem` | [analyticAt_product](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FiniteBlaschkeRemoval.lean/declarations/analyticat-product.md) | 55 | `result-track:db65a634330158d01f24f6780182b936b82896ecec9f8ab0116922cf186328dd` |
+| 7 | `theorem` | [product_ne_zero_off_roots](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FiniteBlaschkeRemoval.lean/declarations/product-ne-zero-off-roots.md) | 60 | `result-track:69d646c2095215cfdf9fc37185a0aa7fb324dd1e3a103c004a5d3dbc20a2cc70` |
+| 8 | `theorem` | [product_local_factorization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FiniteBlaschkeRemoval.lean/declarations/product-local-factorization.md) | 71 | `result-track:15749270182d63d61c176da62a7dd858ee52016c32c6f2bf8db38e2b9b1dff72` |
+| 9 | `theorem` | [normalForm_germ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FiniteBlaschkeRemoval.lean/declarations/normalform-germ.md) | 98 | `result-track:3308bbada4b6550d574ee8c5160dca7236d273c27c32537950315b15c9a0dd6a` |
+| 10 | `theorem` | [quotient_germ_of_matching_power](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FiniteBlaschkeRemoval.lean/declarations/quotient-germ-of-matching-power.md) | 107 | `result-track:41b6f6a370807d52a79b8d2be00188e76228a4a4b741447e9d5c5c4fd75573cf` |
+| 11 | `theorem` | [exists_removed_quotient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FiniteBlaschkeRemoval.lean/declarations/exists-removed-quotient.md) | 122 | `result-track:b3828aca09a5fbf8ee7074bd224f639cb70c82bb8bef02e798e08bf262102ec0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

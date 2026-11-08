@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/BlueprintCannotCloseAuthorityAdeba310a88Namespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/BlueprintCannotCloseAuthorityAdeba310a88Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BlueprintCannotCloseAuthorityAdeba310a88Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BlueprintCannotCloseAuthorityAdeba310a88Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [AuthorityBand](../../../../../ComputerScience/AlgorithmsInComputerScience/BlueprintCannotCloseAuthorityAdeba310a88Namespaced.lean/declarations/authorityband.md) | 24 | `declaration-track:7c5dca45db4a874bdc55350a05e9ee9558f61099730bb18038204d7d76ff192f` |
-| 2 | `def` | [mayCloseTheoremAuthority](../../../../../ComputerScience/AlgorithmsInComputerScience/BlueprintCannotCloseAuthorityAdeba310a88Namespaced.lean/declarations/mayclosetheoremauthority.md) | 28 | `declaration-track:67d13e157660f2c228362489acc58e3493de130f26d6c0082b616af54e28b5d2` |
-| 3 | `theorem` | [blueprint_cannot_close_authority](../../../../../ComputerScience/AlgorithmsInComputerScience/BlueprintCannotCloseAuthorityAdeba310a88Namespaced.lean/declarations/blueprint-cannot-close-authority.md) | 31 | `result-track:f0aa49359f663df2fe24f1d1996c160f3c18c45e2ec4d8ff60f3b5beeaf04dad` |
-| 4 | `def` | [conceptualBoundaries](../../../../../ComputerScience/AlgorithmsInComputerScience/BlueprintCannotCloseAuthorityAdeba310a88Namespaced.lean/declarations/conceptualboundaries.md) | 35 | `declaration-track:2b4403dfb04b3f963c1a429e85ef02a9807d229c655e70b048b183f2feac6a3f` |
-| 5 | `theorem` | [conceptualBoundaries_count](../../../../../ComputerScience/AlgorithmsInComputerScience/BlueprintCannotCloseAuthorityAdeba310a88Namespaced.lean/declarations/conceptualboundaries-count.md) | 41 | `result-track:01d0ff2c743147c44944eccb537c9018b8918d8688dfeebb290161ae41a59875` |
+| 1 | `inductive` | [AuthorityBand](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BlueprintCannotCloseAuthorityAdeba310a88Namespaced.lean/declarations/authorityband.md) | 24 | `declaration-track:7c5dca45db4a874bdc55350a05e9ee9558f61099730bb18038204d7d76ff192f` |
+| 2 | `def` | [mayCloseTheoremAuthority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BlueprintCannotCloseAuthorityAdeba310a88Namespaced.lean/declarations/mayclosetheoremauthority.md) | 28 | `declaration-track:67d13e157660f2c228362489acc58e3493de130f26d6c0082b616af54e28b5d2` |
+| 3 | `theorem` | [blueprint_cannot_close_authority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BlueprintCannotCloseAuthorityAdeba310a88Namespaced.lean/declarations/blueprint-cannot-close-authority.md) | 31 | `result-track:f0aa49359f663df2fe24f1d1996c160f3c18c45e2ec4d8ff60f3b5beeaf04dad` |
+| 4 | `def` | [conceptualBoundaries](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BlueprintCannotCloseAuthorityAdeba310a88Namespaced.lean/declarations/conceptualboundaries.md) | 35 | `declaration-track:2b4403dfb04b3f963c1a429e85ef02a9807d229c655e70b048b183f2feac6a3f` |
+| 5 | `theorem` | [conceptualBoundaries_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BlueprintCannotCloseAuthorityAdeba310a88Namespaced.lean/declarations/conceptualboundaries-count.md) | 41 | `result-track:01d0ff2c743147c44944eccb537c9018b8918d8688dfeebb290161ae41a59875` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

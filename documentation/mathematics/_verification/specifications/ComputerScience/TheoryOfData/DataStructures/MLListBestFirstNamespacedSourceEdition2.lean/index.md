@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/MLListBestFirstNamespacedSourceEdition2.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/MLListBestFirstNamespacedSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/MLListBestFirstNamespacedSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/MLListBestFirstNamespacedSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [bestFirstSearchAux](../../../../../../ComputerScience/TheoryOfData/DataStructures/MLListBestFirstNamespacedSourceEdition2.lean/declarations/bestfirstsearchaux.md) | 53 | `declaration-track:970f1689645a0d61c29768c68d8590065775082feef1059dc9b33ef9d7e49100` |
-| 2 | `def` | [bestFirstSearch](../../../../../../ComputerScience/TheoryOfData/DataStructures/MLListBestFirstNamespacedSourceEdition2.lean/declarations/bestfirstsearch.md) | 88 | `declaration-track:5162cbc0ceebf179c2a2783b3b7cf9884cbdc739f8c3c2ed6ee529727a0d0d70` |
+| 1 | `def` | [bestFirstSearchAux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/MLListBestFirstNamespacedSourceEdition2.lean/declarations/bestfirstsearchaux.md) | 53 | `declaration-track:970f1689645a0d61c29768c68d8590065775082feef1059dc9b33ef9d7e49100` |
+| 2 | `def` | [bestFirstSearch](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/MLListBestFirstNamespacedSourceEdition2.lean/declarations/bestfirstsearch.md) | 88 | `declaration-track:5162cbc0ceebf179c2a2783b3b7cf9884cbdc739f8c3c2ed6ee529727a0d0d70` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/ShiftNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/ShiftNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ShiftNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ShiftNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,20 +59,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [HasDerivAt.comp_const_add](../../../../RealFunctions/ShiftNamespaced.lean/declarations/hasderivat-comp-const-add.md) | 31 | `result-track:6ee6f5db3d05c807f4abfc74a5d0e3bf584076a286833871e04e466808271d2e` |
-| 2 | `lemma` | [HasDerivAt.comp_add_const](../../../../RealFunctions/ShiftNamespaced.lean/declarations/hasderivat-comp-add-const.md) | 36 | `result-track:cd539ad410edb3f25ad673c4530c63215e2352bf5af7676e794c0c93c2903b5c` |
-| 3 | `lemma` | [HasDerivAt.comp_const_sub](../../../../RealFunctions/ShiftNamespaced.lean/declarations/hasderivat-comp-const-sub.md) | 41 | `result-track:9807cd9398bf5d23639fdd6c6188dbb1b6f28120ee650e44cbf1de0640d246cc` |
-| 4 | `lemma` | [HasDerivAt.comp_sub_const](../../../../RealFunctions/ShiftNamespaced.lean/declarations/hasderivat-comp-sub-const.md) | 46 | `result-track:34cf3fa7d38e43126d74da6777fb962a7a246f689abb21b1d9c59ba80127548a` |
-| 5 | `lemma` | [derivWithin_comp_neg](../../../../RealFunctions/ShiftNamespaced.lean/declarations/derivwithin-comp-neg.md) | 53 | `result-track:0f3874cbde7a561ddbe49fd319f380ac60e7bec400b73a729fc6c97a1588a075` |
-| 6 | `lemma` | [deriv_comp_neg](../../../../RealFunctions/ShiftNamespaced.lean/declarations/deriv-comp-neg.md) | 57 | `result-track:bd86b27f88fe9be4ebed79f97ea770c1c212e15c6ccafcd81720c2a9d1d25a06` |
-| 7 | `lemma` | [derivWithin_comp_const_add](../../../../RealFunctions/ShiftNamespaced.lean/declarations/derivwithin-comp-const-add.md) | 61 | `result-track:67b76b01bdb0e1e65f10f9a8c892a030b595a0731676dea62fb309e76f680941` |
-| 8 | `lemma` | [deriv_comp_const_add](../../../../RealFunctions/ShiftNamespaced.lean/declarations/deriv-comp-const-add.md) | 66 | `result-track:21540b77c983ebc59db9c14769796cb6e51917092a4e7dc4afe4a179065f8053` |
-| 9 | `lemma` | [derivWithin_comp_add_const](../../../../RealFunctions/ShiftNamespaced.lean/declarations/derivwithin-comp-add-const.md) | 70 | `result-track:d3a0dd6f1acd6e5728e15b827d875ab19757c1a3d1863693b0f5ce07f4f2d37e` |
-| 10 | `lemma` | [deriv_comp_add_const](../../../../RealFunctions/ShiftNamespaced.lean/declarations/deriv-comp-add-const.md) | 75 | `result-track:8fa8d5f02d54842ca4f74f48064c6d678b0a08375b8bd891c29e5e38c187b93c` |
-| 11 | `lemma` | [derivWithin_comp_const_sub](../../../../RealFunctions/ShiftNamespaced.lean/declarations/derivwithin-comp-const-sub.md) | 78 | `result-track:41eb91cef4aae46276d9fafd9057ca7a40f69fab2e649b3e01433d58a280fec7` |
-| 12 | `lemma` | [deriv_comp_const_sub](../../../../RealFunctions/ShiftNamespaced.lean/declarations/deriv-comp-const-sub.md) | 83 | `result-track:f6b9bf45dd9617427be59cb767df8ec7a52d2a215a05615ac102e7982bd7f32e` |
-| 13 | `lemma` | [derivWithin_comp_sub_const](../../../../RealFunctions/ShiftNamespaced.lean/declarations/derivwithin-comp-sub-const.md) | 86 | `result-track:20308424e4edad0f97619b1c69a8c70b7152eb5e75cc5c3affb7330a7c5a81f8` |
-| 14 | `lemma` | [deriv_comp_sub_const](../../../../RealFunctions/ShiftNamespaced.lean/declarations/deriv-comp-sub-const.md) | 90 | `result-track:5b97a51e240800019d61539db133c763daf7510dcdaf209c83eb3a19c9f6845c` |
+| 1 | `lemma` | [HasDerivAt.comp_const_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ShiftNamespaced.lean/declarations/hasderivat-comp-const-add.md) | 31 | `result-track:6ee6f5db3d05c807f4abfc74a5d0e3bf584076a286833871e04e466808271d2e` |
+| 2 | `lemma` | [HasDerivAt.comp_add_const](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ShiftNamespaced.lean/declarations/hasderivat-comp-add-const.md) | 36 | `result-track:cd539ad410edb3f25ad673c4530c63215e2352bf5af7676e794c0c93c2903b5c` |
+| 3 | `lemma` | [HasDerivAt.comp_const_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ShiftNamespaced.lean/declarations/hasderivat-comp-const-sub.md) | 41 | `result-track:9807cd9398bf5d23639fdd6c6188dbb1b6f28120ee650e44cbf1de0640d246cc` |
+| 4 | `lemma` | [HasDerivAt.comp_sub_const](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ShiftNamespaced.lean/declarations/hasderivat-comp-sub-const.md) | 46 | `result-track:34cf3fa7d38e43126d74da6777fb962a7a246f689abb21b1d9c59ba80127548a` |
+| 5 | `lemma` | [derivWithin_comp_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ShiftNamespaced.lean/declarations/derivwithin-comp-neg.md) | 53 | `result-track:0f3874cbde7a561ddbe49fd319f380ac60e7bec400b73a729fc6c97a1588a075` |
+| 6 | `lemma` | [deriv_comp_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ShiftNamespaced.lean/declarations/deriv-comp-neg.md) | 57 | `result-track:bd86b27f88fe9be4ebed79f97ea770c1c212e15c6ccafcd81720c2a9d1d25a06` |
+| 7 | `lemma` | [derivWithin_comp_const_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ShiftNamespaced.lean/declarations/derivwithin-comp-const-add.md) | 61 | `result-track:67b76b01bdb0e1e65f10f9a8c892a030b595a0731676dea62fb309e76f680941` |
+| 8 | `lemma` | [deriv_comp_const_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ShiftNamespaced.lean/declarations/deriv-comp-const-add.md) | 66 | `result-track:21540b77c983ebc59db9c14769796cb6e51917092a4e7dc4afe4a179065f8053` |
+| 9 | `lemma` | [derivWithin_comp_add_const](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ShiftNamespaced.lean/declarations/derivwithin-comp-add-const.md) | 70 | `result-track:d3a0dd6f1acd6e5728e15b827d875ab19757c1a3d1863693b0f5ce07f4f2d37e` |
+| 10 | `lemma` | [deriv_comp_add_const](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ShiftNamespaced.lean/declarations/deriv-comp-add-const.md) | 75 | `result-track:8fa8d5f02d54842ca4f74f48064c6d678b0a08375b8bd891c29e5e38c187b93c` |
+| 11 | `lemma` | [derivWithin_comp_const_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ShiftNamespaced.lean/declarations/derivwithin-comp-const-sub.md) | 78 | `result-track:41eb91cef4aae46276d9fafd9057ca7a40f69fab2e649b3e01433d58a280fec7` |
+| 12 | `lemma` | [deriv_comp_const_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ShiftNamespaced.lean/declarations/deriv-comp-const-sub.md) | 83 | `result-track:f6b9bf45dd9617427be59cb767df8ec7a52d2a215a05615ac102e7982bd7f32e` |
+| 13 | `lemma` | [derivWithin_comp_sub_const](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ShiftNamespaced.lean/declarations/derivwithin-comp-sub-const.md) | 86 | `result-track:20308424e4edad0f97619b1c69a8c70b7152eb5e75cc5c3affb7330a7c5a81f8` |
+| 14 | `lemma` | [deriv_comp_sub_const](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ShiftNamespaced.lean/declarations/deriv-comp-sub-const.md) | 90 | `result-track:5b97a51e240800019d61539db133c763daf7510dcdaf209c83eb3a19c9f6845c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LIntegralNamespacedLintegralInvEqSelf.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LIntegralNamespacedLintegralInvEqSelf.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/LIntegralNamespacedLintegralInvEqSelf.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/LIntegralNamespacedLintegralInvEqSelf.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [lintegral_inv_eq_self](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LIntegralNamespacedLintegralInvEqSelf.lean/declarations/lintegral-inv-eq-self.md) | 42 | `result-track:77dccf454ebb9ad71b4a869aab9f926d2be04f8e505f95186a55d714a47e1da4` |
-| 2 | `theorem` | [lintegral_mul_left_eq_self](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LIntegralNamespacedLintegralInvEqSelf.lean/declarations/lintegral-mul-left-eq-self.md) | 57 | `result-track:91167b9d91106710827c2f966de493581a6d6d16551662b6b8845116de4e2dbc` |
-| 3 | `theorem` | [lintegral_mul_right_eq_self](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LIntegralNamespacedLintegralInvEqSelf.lean/declarations/lintegral-mul-right-eq-self.md) | 67 | `result-track:44236f1ab31b498915c523892b516e7c494ffe5d43b69405c3acefafc4c9e1bc` |
-| 4 | `theorem` | [lintegral_div_right_eq_self](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LIntegralNamespacedLintegralInvEqSelf.lean/declarations/lintegral-div-right-eq-self.md) | 73 | `result-track:ee4d6f8d69f3d1f672cc5eb001414625996cd938652530ba561d5fc061b9c93f` |
-| 5 | `theorem` | [lintegral_div_left_eq_self](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LIntegralNamespacedLintegralInvEqSelf.lean/declarations/lintegral-div-left-eq-self.md) | 78 | `result-track:e68f02bec046ad8a7235de51599308d942c3d06efc6c5e97c45ed061f93018dc` |
-| 6 | `theorem` | [lintegral_eq_zero_of_isMulLeftInvariant](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LIntegralNamespacedLintegralInvEqSelf.lean/declarations/lintegral-eq-zero-of-ismulleftinvariant.md) | 94 | `result-track:90f54ca8722f70e2afe1a72c5721cac58760cf4398ec66470a8695329fd9f4d7` |
+| 1 | `theorem` | [lintegral_inv_eq_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/LIntegralNamespacedLintegralInvEqSelf.lean/declarations/lintegral-inv-eq-self.md) | 42 | `result-track:77dccf454ebb9ad71b4a869aab9f926d2be04f8e505f95186a55d714a47e1da4` |
+| 2 | `theorem` | [lintegral_mul_left_eq_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/LIntegralNamespacedLintegralInvEqSelf.lean/declarations/lintegral-mul-left-eq-self.md) | 57 | `result-track:91167b9d91106710827c2f966de493581a6d6d16551662b6b8845116de4e2dbc` |
+| 3 | `theorem` | [lintegral_mul_right_eq_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/LIntegralNamespacedLintegralInvEqSelf.lean/declarations/lintegral-mul-right-eq-self.md) | 67 | `result-track:44236f1ab31b498915c523892b516e7c494ffe5d43b69405c3acefafc4c9e1bc` |
+| 4 | `theorem` | [lintegral_div_right_eq_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/LIntegralNamespacedLintegralInvEqSelf.lean/declarations/lintegral-div-right-eq-self.md) | 73 | `result-track:ee4d6f8d69f3d1f672cc5eb001414625996cd938652530ba561d5fc061b9c93f` |
+| 5 | `theorem` | [lintegral_div_left_eq_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/LIntegralNamespacedLintegralInvEqSelf.lean/declarations/lintegral-div-left-eq-self.md) | 78 | `result-track:e68f02bec046ad8a7235de51599308d942c3d06efc6c5e97c45ed061f93018dc` |
+| 6 | `theorem` | [lintegral_eq_zero_of_isMulLeftInvariant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/LIntegralNamespacedLintegralInvEqSelf.lean/declarations/lintegral-eq-zero-of-ismulleftinvariant.md) | 94 | `result-track:90f54ca8722f70e2afe1a72c5721cac58760cf4398ec66470a8695329fd9f4d7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

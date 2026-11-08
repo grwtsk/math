@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/CountNamespacedCatalan.lean/index.md) · [Full source](../../../../Combinatorics/CountNamespacedCatalan.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CountNamespacedCatalan.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CountNamespacedCatalan.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [catalan](../../../../Combinatorics/CountNamespacedCatalan.lean/declarations/catalan.md) | 28 | `declaration-track:46567917f87c99cfa007ff95da97e36a88a902b7008e3a1e230d8f82d50cdad8` |
-| 2 | `theorem` | [catalan_zero](../../../../Combinatorics/CountNamespacedCatalan.lean/declarations/catalan-zero.md) | 32 | `result-track:196a87a095e8205bf3fd997fd806bf8dd490c3b76fcfe06fb3328bbeb1e1e85a` |
-| 3 | `theorem` | [catalan_succ](../../../../Combinatorics/CountNamespacedCatalan.lean/declarations/catalan-succ.md) | 36 | `result-track:69893bcdf202bf21cfbede846fc5253ae5b1ed17a042c97258a5f73a004aaf9e` |
-| 4 | `def` | [treesOfInternalCardinalityTarget](../../../../Combinatorics/CountNamespacedCatalan.lean/declarations/treesofinternalcardinalitytarget.md) | 48 | `declaration-track:225b55b421c81ad41cc94c6ed89b662a7e72dc58628e705a22fe8e0a32a5871c` |
+| 1 | `abbrev` | [catalan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CountNamespacedCatalan.lean/declarations/catalan.md) | 28 | `declaration-track:46567917f87c99cfa007ff95da97e36a88a902b7008e3a1e230d8f82d50cdad8` |
+| 2 | `theorem` | [catalan_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CountNamespacedCatalan.lean/declarations/catalan-zero.md) | 32 | `result-track:196a87a095e8205bf3fd997fd806bf8dd490c3b76fcfe06fb3328bbeb1e1e85a` |
+| 3 | `theorem` | [catalan_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CountNamespacedCatalan.lean/declarations/catalan-succ.md) | 36 | `result-track:69893bcdf202bf21cfbede846fc5253ae5b1ed17a042c97258a5f73a004aaf9e` |
+| 4 | `def` | [treesOfInternalCardinalityTarget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CountNamespacedCatalan.lean/declarations/treesofinternalcardinalitytarget.md) | 48 | `declaration-track:225b55b421c81ad41cc94c6ed89b662a7e72dc58628e705a22fe8e0a32a5871c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/EvenIntegerWindow.lean/index.md) · [Full source](../../../../RealFunctions/EvenIntegerWindow.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/EvenIntegerWindow.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/EvenIntegerWindow.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [check](../../../../RealFunctions/EvenIntegerWindow.lean/declarations/check.md) | 22 | `declaration-track:3ae63aeb3e2a8713fba42ccdce754c02bf3d4f7629e05f0265ed6569aee3c21a` |
-| 2 | `theorem` | [check_sound](../../../../RealFunctions/EvenIntegerWindow.lean/declarations/check-sound.md) | 26 | `result-track:238cd615ae10a4f68b8a6d894506b8df5b9c3ba813ee28621b8c74360464c271` |
-| 3 | `theorem` | [zero_target](../../../../RealFunctions/EvenIntegerWindow.lean/declarations/zero-target.md) | 42 | `result-track:300dcfc2423e1f8484dfb182701627687d9ffaa7327e243a0cbc8863e1136355` |
-| 4 | `theorem` | [enclosing_two](../../../../RealFunctions/EvenIntegerWindow.lean/declarations/enclosing-two.md) | 44 | `result-track:77c7eec52a0bb3c4ce8f8c22492110852fd5e10cfd7153d0aa7f08990467030e` |
-| 5 | `theorem` | [adjacent_even_endpoints_rejected](../../../../RealFunctions/EvenIntegerWindow.lean/declarations/adjacent-even-endpoints-rejected.md) | 46 | `result-track:ef7acd800c25ac2b49e12638fea8c0ff22f338e7bd1b362420882e6945fbe1ff` |
-| 6 | `theorem` | [reversed_or_wrong_target_rejected](../../../../RealFunctions/EvenIntegerWindow.lean/declarations/reversed-or-wrong-target-rejected.md) | 49 | `result-track:3de07014409c3a7e68366dcef39f78032acd9724902ff28d9a3675974208389a` |
-| 7 | `theorem` | [window_without_parity_is_insufficient](../../../../RealFunctions/EvenIntegerWindow.lean/declarations/window-without-parity-is-insufficient.md) | 53 | `result-track:bab5801b4cb2e1d4dcfd00300e059b31e35ce65d850757a14a99edd7192c5e92` |
+| 1 | `def` | [check](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/EvenIntegerWindow.lean/declarations/check.md) | 22 | `declaration-track:3ae63aeb3e2a8713fba42ccdce754c02bf3d4f7629e05f0265ed6569aee3c21a` |
+| 2 | `theorem` | [check_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/EvenIntegerWindow.lean/declarations/check-sound.md) | 26 | `result-track:238cd615ae10a4f68b8a6d894506b8df5b9c3ba813ee28621b8c74360464c271` |
+| 3 | `theorem` | [zero_target](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/EvenIntegerWindow.lean/declarations/zero-target.md) | 42 | `result-track:300dcfc2423e1f8484dfb182701627687d9ffaa7327e243a0cbc8863e1136355` |
+| 4 | `theorem` | [enclosing_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/EvenIntegerWindow.lean/declarations/enclosing-two.md) | 44 | `result-track:77c7eec52a0bb3c4ce8f8c22492110852fd5e10cfd7153d0aa7f08990467030e` |
+| 5 | `theorem` | [adjacent_even_endpoints_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/EvenIntegerWindow.lean/declarations/adjacent-even-endpoints-rejected.md) | 46 | `result-track:ef7acd800c25ac2b49e12638fea8c0ff22f338e7bd1b362420882e6945fbe1ff` |
+| 6 | `theorem` | [reversed_or_wrong_target_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/EvenIntegerWindow.lean/declarations/reversed-or-wrong-target-rejected.md) | 49 | `result-track:3de07014409c3a7e68366dcef39f78032acd9724902ff28d9a3675974208389a` |
+| 7 | `theorem` | [window_without_parity_is_insufficient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/EvenIntegerWindow.lean/declarations/window-without-parity-is-insufficient.md) | 53 | `result-track:bab5801b4cb2e1d4dcfd00300e059b31e35ce65d850757a14a99edd7192c5e92` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

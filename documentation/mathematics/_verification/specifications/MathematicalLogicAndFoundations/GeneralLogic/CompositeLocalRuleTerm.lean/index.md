@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompositeLocalRuleTerm.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompositeLocalRuleTerm.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompositeLocalRuleTerm.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompositeLocalRuleTerm.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [A](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompositeLocalRuleTerm.lean/declarations/a.md) | 14 | `declaration-track:8519db1d6bf0d583435517230c1c7eedd77bff8fee8dbac99692d3b49af7daa9` |
-| 2 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompositeLocalRuleTerm.lean/declarations/example-source-edition-3.md) | 20 | `declaration-track:661b1f7f219c224bcd5081dae6a9be78e211b7ebf45709216842ced60783222a` |
-| 3 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompositeLocalRuleTerm.lean/declarations/example.md) | 23 | `declaration-track:1496d12dac13cb93acbb19ca1884258fe2faff9dd6730ced0d1f4f6ea7ceee64` |
-| 4 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompositeLocalRuleTerm.lean/declarations/example-source-edition-2.md) | 26 | `declaration-track:1cbbee66f9b523f13e4bb8608280e3c47d703b97c94b58ea475fad13bf6a70dd` |
-| 5 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompositeLocalRuleTerm.lean/declarations/example-source-edition-5.md) | 35 | `declaration-track:a48e23723a33a61b4eb3e1178fff971b5296ae380d070159985ffbfab9800171` |
-| 6 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompositeLocalRuleTerm.lean/declarations/example-source-edition-4.md) | 38 | `declaration-track:7ced35019860a3fa7b8085d20161ce0c2caace9dc0561f4f75eeb9ee8d470d43` |
-| 7 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompositeLocalRuleTerm.lean/declarations/example-source-edition-7.md) | 45 | `declaration-track:ab67aa29537b68fa48f68bc2aa400f310de6800ef18cd34dbbcb72e54cee092d` |
-| 8 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompositeLocalRuleTerm.lean/declarations/example-source-edition-6.md) | 48 | `declaration-track:a8636ca1f7332cd2b685cd9a2a2ed680fed3d15ebac99e0666311404aa3a6f18` |
+| 1 | `structure` | [A](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompositeLocalRuleTerm.lean/declarations/a.md) | 14 | `declaration-track:8519db1d6bf0d583435517230c1c7eedd77bff8fee8dbac99692d3b49af7daa9` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompositeLocalRuleTerm.lean/declarations/example-source-edition-3.md) | 20 | `declaration-track:661b1f7f219c224bcd5081dae6a9be78e211b7ebf45709216842ced60783222a` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompositeLocalRuleTerm.lean/declarations/example.md) | 23 | `declaration-track:1496d12dac13cb93acbb19ca1884258fe2faff9dd6730ced0d1f4f6ea7ceee64` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompositeLocalRuleTerm.lean/declarations/example-source-edition-2.md) | 26 | `declaration-track:1cbbee66f9b523f13e4bb8608280e3c47d703b97c94b58ea475fad13bf6a70dd` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompositeLocalRuleTerm.lean/declarations/example-source-edition-5.md) | 35 | `declaration-track:a48e23723a33a61b4eb3e1178fff971b5296ae380d070159985ffbfab9800171` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompositeLocalRuleTerm.lean/declarations/example-source-edition-4.md) | 38 | `declaration-track:7ced35019860a3fa7b8085d20161ce0c2caace9dc0561f4f75eeb9ee8d470d43` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompositeLocalRuleTerm.lean/declarations/example-source-edition-7.md) | 45 | `declaration-track:ab67aa29537b68fa48f68bc2aa400f310de6800ef18cd34dbbcb72e54cee092d` |
+| 8 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompositeLocalRuleTerm.lean/declarations/example-source-edition-6.md) | 48 | `declaration-track:a8636ca1f7332cd2b685cd9a2a2ed680fed3d15ebac99e0666311404aa3a6f18` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

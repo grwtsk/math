@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/FrontierResidualCause.lean/index.md) · [Full source](../../../../Combinatorics/FrontierResidualCause.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FrontierResidualCause.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FrontierResidualCause.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [ResidualCause](../../../../Combinatorics/FrontierResidualCause.lean/declarations/residualcause.md) | 12 | `declaration-track:193ae07dfa29d30389732bb3d5979fbc82683b06e63db6acfeb4055c5a795514` |
-| 2 | `instance` | [(anonymous)](../../../../Combinatorics/FrontierResidualCause.lean/declarations/instance.md) | 21 | `declaration-track:0460669d9eb8164a45622aae4cf47c882fff34a212b1fa4269415798cfb8bb15` |
-| 3 | `structure` | [ResidualFrontier](../../../../Combinatorics/FrontierResidualCause.lean/declarations/residualfrontier.md) | 35 | `declaration-track:25dfef2c3e9704aa2b687040fb353dbf2107ee0219be8251450b9d02d0c44309` |
-| 4 | `def` | [HasCertifiedTargetUnreachability](../../../../Combinatorics/FrontierResidualCause.lean/declarations/hascertifiedtargetunreachability.md) | 64 | `declaration-track:026111a7412703a8894bdd1311ef2eed111f057adcbe5445d1453f7ddc7361a0` |
+| 1 | `inductive` | [ResidualCause](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FrontierResidualCause.lean/declarations/residualcause.md) | 12 | `declaration-track:193ae07dfa29d30389732bb3d5979fbc82683b06e63db6acfeb4055c5a795514` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FrontierResidualCause.lean/declarations/instance.md) | 21 | `declaration-track:0460669d9eb8164a45622aae4cf47c882fff34a212b1fa4269415798cfb8bb15` |
+| 3 | `structure` | [ResidualFrontier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FrontierResidualCause.lean/declarations/residualfrontier.md) | 35 | `declaration-track:25dfef2c3e9704aa2b687040fb353dbf2107ee0219be8251450b9d02d0c44309` |
+| 4 | `def` | [HasCertifiedTargetUnreachability](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FrontierResidualCause.lean/declarations/hascertifiedtargetunreachability.md) | 64 | `declaration-track:026111a7412703a8894bdd1311ef2eed111f057adcbe5445d1453f7ddc7361a0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

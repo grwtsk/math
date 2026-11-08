@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Axioms.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Axioms.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Axioms.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Axioms.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Context](../../../../../ComputerScience/AlgorithmsInComputerScience/Axioms.lean/declarations/context.md) | 13 | `declaration-track:f842e734acbd6a1c2a38c55ce97286fe6faab19cfda19154e7594ce3928d7ba7` |
-| 2 | `structure` | [State](../../../../../ComputerScience/AlgorithmsInComputerScience/Axioms.lean/declarations/state.md) | 17 | `declaration-track:66d91e0b1b11921c21112bb2773753ab9d2dd63341b285c632d2bb0fa58dba63` |
-| 3 | `abbrev` | [AxiomsM](../../../../../ComputerScience/AlgorithmsInComputerScience/Axioms.lean/declarations/axiomsm.md) | 21 | `declaration-track:7862c3e7c9de896190ac46a7fc85b430c7bd914325fd11e35b88896dd60dcba9` |
-| 4 | `def` | [loop](../../../../../ComputerScience/AlgorithmsInComputerScience/Axioms.lean/declarations/loop.md) | 23 | `declaration-track:fae20c499543ba0b72262dcf5e330ea6e4d5800ae86a67a730fe595ef2c7def0` |
-| 5 | `def` | [checkAxioms](../../../../../ComputerScience/AlgorithmsInComputerScience/Axioms.lean/declarations/checkaxioms.md) | 52 | `declaration-track:a3d60b80b78e0c2a41f6421e226f00107c3c3b12ced3beeb6c2f3ce2f6a1f3c0` |
+| 1 | `structure` | [Context](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Axioms.lean/declarations/context.md) | 13 | `declaration-track:f842e734acbd6a1c2a38c55ce97286fe6faab19cfda19154e7594ce3928d7ba7` |
+| 2 | `structure` | [State](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Axioms.lean/declarations/state.md) | 17 | `declaration-track:66d91e0b1b11921c21112bb2773753ab9d2dd63341b285c632d2bb0fa58dba63` |
+| 3 | `abbrev` | [AxiomsM](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Axioms.lean/declarations/axiomsm.md) | 21 | `declaration-track:7862c3e7c9de896190ac46a7fc85b430c7bd914325fd11e35b88896dd60dcba9` |
+| 4 | `def` | [loop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Axioms.lean/declarations/loop.md) | 23 | `declaration-track:fae20c499543ba0b72262dcf5e330ea6e4d5800ae86a67a730fe595ef2c7def0` |
+| 5 | `def` | [checkAxioms](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Axioms.lean/declarations/checkaxioms.md) | 52 | `declaration-track:a3d60b80b78e0c2a41f6421e226f00107c3c3b12ced3beeb6c2f3ce2f6a1f3c0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

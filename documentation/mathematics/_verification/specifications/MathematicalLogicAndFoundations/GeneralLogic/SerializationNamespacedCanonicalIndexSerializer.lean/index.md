@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SerializationNamespacedCanonicalIndexSerializer.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SerializationNamespacedCanonicalIndexSerializer.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SerializationNamespacedCanonicalIndexSerializer.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SerializationNamespacedCanonicalIndexSerializer.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CanonicalIndexSerializer](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SerializationNamespacedCanonicalIndexSerializer.lean/declarations/canonicalindexserializer.md) | 26 | `declaration-track:bb655854108c98ce61e8229f8a23898124b2da093950e60cfd3a14fb2a824aee` |
-| 2 | `theorem` | [CanonicalIndexSerializer.encode_deterministic](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SerializationNamespacedCanonicalIndexSerializer.lean/declarations/canonicalindexserializer-encode-deterministic.md) | 35 | `result-track:380f5c47a5183fb2689247c90dc0f5635433c38b662846470d7e8d784834ce2d` |
-| 3 | `structure` | [SerializedCanonicalIndex](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SerializationNamespacedCanonicalIndexSerializer.lean/declarations/serializedcanonicalindex.md) | 47 | `declaration-track:ff9d396a56a33137a71b4dd693a6eb79627aea7b22fb01516c52178d0a5dd595` |
-| 4 | `theorem` | [SerializedCanonicalIndex.representation_chain](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SerializationNamespacedCanonicalIndexSerializer.lean/declarations/serializedcanonicalindex-representation-chain.md) | 60 | `result-track:d8ea131a15ad902fc60126cb05b7a6dd9f63fd7fef6606a300a24da9eeaf9a97` |
+| 1 | `structure` | [CanonicalIndexSerializer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SerializationNamespacedCanonicalIndexSerializer.lean/declarations/canonicalindexserializer.md) | 26 | `declaration-track:bb655854108c98ce61e8229f8a23898124b2da093950e60cfd3a14fb2a824aee` |
+| 2 | `theorem` | [CanonicalIndexSerializer.encode_deterministic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SerializationNamespacedCanonicalIndexSerializer.lean/declarations/canonicalindexserializer-encode-deterministic.md) | 35 | `result-track:380f5c47a5183fb2689247c90dc0f5635433c38b662846470d7e8d784834ce2d` |
+| 3 | `structure` | [SerializedCanonicalIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SerializationNamespacedCanonicalIndexSerializer.lean/declarations/serializedcanonicalindex.md) | 47 | `declaration-track:ff9d396a56a33137a71b4dd693a6eb79627aea7b22fb01516c52178d0a5dd595` |
+| 4 | `theorem` | [SerializedCanonicalIndex.representation_chain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SerializationNamespacedCanonicalIndexSerializer.lean/declarations/serializedcanonicalindex-representation-chain.md) | 60 | `result-track:d8ea131a15ad902fc60126cb05b7a6dd9f63fd7fef6606a300a24da9eeaf9a97` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

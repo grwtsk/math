@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtColumnQuotientNamespacedAlternative.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtColumnQuotientNamespacedAlternative.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtColumnQuotientNamespacedAlternative.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtColumnQuotientNamespacedAlternative.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_mangoldt_column_eq_zero_of_quotient_lt](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtColumnQuotientNamespacedAlternative.lean/declarations/actual-mangoldt-column-eq-zero-of-quotient-lt.md) | 31 | `result-track:c9471c7ed0fb0547730cde7d9e5f1cd88111f187615edbefa1a4664194571ebd` |
-| 2 | `theorem` | [mangoldt_inner_eq_quotient_truncated_column_increments](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtColumnQuotientNamespacedAlternative.lean/declarations/mangoldt-inner-eq-quotient-truncated-column-increments.md) | 50 | `result-track:8f141a1e9b4fd5868bc7b8f90262d59fe9c9f4abe68f3ac3fe47d46058e4d4e6` |
-| 3 | `theorem` | [covariance_sub_main_eq_quotient_truncated_column_increments](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtColumnQuotientNamespacedAlternative.lean/declarations/covariance-sub-main-eq-quotient-truncated-column-increments.md) | 90 | `result-track:6923ffe078bb0c5027f175625aece286ef57dd578e56b564ee79789b5bd8339d` |
+| 1 | `theorem` | [actual_mangoldt_column_eq_zero_of_quotient_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtColumnQuotientNamespacedAlternative.lean/declarations/actual-mangoldt-column-eq-zero-of-quotient-lt.md) | 31 | `result-track:c9471c7ed0fb0547730cde7d9e5f1cd88111f187615edbefa1a4664194571ebd` |
+| 2 | `theorem` | [mangoldt_inner_eq_quotient_truncated_column_increments](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtColumnQuotientNamespacedAlternative.lean/declarations/mangoldt-inner-eq-quotient-truncated-column-increments.md) | 50 | `result-track:8f141a1e9b4fd5868bc7b8f90262d59fe9c9f4abe68f3ac3fe47d46058e4d4e6` |
+| 3 | `theorem` | [covariance_sub_main_eq_quotient_truncated_column_increments](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtColumnQuotientNamespacedAlternative.lean/declarations/covariance-sub-main-eq-quotient-truncated-column-increments.md) | 90 | `result-track:6923ffe078bb0c5027f175625aece286ef57dd578e56b564ee79789b5bd8339d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

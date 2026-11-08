@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/SelfAdjointFiniteOperator.lean/index.md) · [Full source](../../../../FunctionalAnalysis/SelfAdjointFiniteOperator.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SelfAdjointFiniteOperator.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SelfAdjointFiniteOperator.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [FiniteOperator](../../../../FunctionalAnalysis/SelfAdjointFiniteOperator.lean/declarations/finiteoperator.md) | 13 | `declaration-track:735a09e204f8b1ad5a5e04aa2fa1b675f5d2427af5c91856b9a6bbd074f841d4` |
-| 2 | `def` | [IsSelfAdjoint](../../../../FunctionalAnalysis/SelfAdjointFiniteOperator.lean/declarations/isselfadjoint.md) | 16 | `declaration-track:cf49af6fd4d75f381a4dcecd14d67fabd8224e0c15d494ff44675ef336ee2995` |
-| 3 | `def` | [diagonalOperator](../../../../FunctionalAnalysis/SelfAdjointFiniteOperator.lean/declarations/diagonaloperator.md) | 21 | `declaration-track:1b7d031f697eb828138ee22fd8ce066098c91de971f6499027529cf9a83709c5` |
-| 4 | `def` | [addOperator](../../../../FunctionalAnalysis/SelfAdjointFiniteOperator.lean/declarations/addoperator.md) | 28 | `declaration-track:b3eae6d2c9ecee6d5a43ed58c68a87f0d7ed52a37f114bf6a55d46ae7ab2b2c8` |
-| 5 | `theorem` | [diagonalOperator_selfAdjoint](../../../../FunctionalAnalysis/SelfAdjointFiniteOperator.lean/declarations/diagonaloperator-selfadjoint.md) | 34 | `result-track:db0583335ff95b365d9f6f9d7bc04f1ef23b3edd71c195d551fcda0affcd4ad1` |
-| 6 | `structure` | [SelfAdjointCoefficientCertificate](../../../../FunctionalAnalysis/SelfAdjointFiniteOperator.lean/declarations/selfadjointcoefficientcertificate.md) | 45 | `declaration-track:8b912c6f5519a7700eabef6f9aab932156ebadd0e75c61f5a30f625f22734803` |
-| 7 | `theorem` | [crossedProductOperator_selfAdjoint](../../../../FunctionalAnalysis/SelfAdjointFiniteOperator.lean/declarations/crossedproductoperator-selfadjoint.md) | 53 | `result-track:a5e1b438f634de8d6f5e23207b141a02a12f1a68e041668021c78f2ac2eccbe6` |
-| 8 | `structure` | [JordanSemisimplicityObligation](../../../../FunctionalAnalysis/SelfAdjointFiniteOperator.lean/declarations/jordansemisimplicityobligation.md) | 67 | `declaration-track:291855b3f2e505480449948b686634c5780f60c3276425beb83adea2b065dcc8` |
+| 1 | `abbrev` | [FiniteOperator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SelfAdjointFiniteOperator.lean/declarations/finiteoperator.md) | 13 | `declaration-track:735a09e204f8b1ad5a5e04aa2fa1b675f5d2427af5c91856b9a6bbd074f841d4` |
+| 2 | `def` | [IsSelfAdjoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SelfAdjointFiniteOperator.lean/declarations/isselfadjoint.md) | 16 | `declaration-track:cf49af6fd4d75f381a4dcecd14d67fabd8224e0c15d494ff44675ef336ee2995` |
+| 3 | `def` | [diagonalOperator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SelfAdjointFiniteOperator.lean/declarations/diagonaloperator.md) | 21 | `declaration-track:1b7d031f697eb828138ee22fd8ce066098c91de971f6499027529cf9a83709c5` |
+| 4 | `def` | [addOperator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SelfAdjointFiniteOperator.lean/declarations/addoperator.md) | 28 | `declaration-track:b3eae6d2c9ecee6d5a43ed58c68a87f0d7ed52a37f114bf6a55d46ae7ab2b2c8` |
+| 5 | `theorem` | [diagonalOperator_selfAdjoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SelfAdjointFiniteOperator.lean/declarations/diagonaloperator-selfadjoint.md) | 34 | `result-track:db0583335ff95b365d9f6f9d7bc04f1ef23b3edd71c195d551fcda0affcd4ad1` |
+| 6 | `structure` | [SelfAdjointCoefficientCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SelfAdjointFiniteOperator.lean/declarations/selfadjointcoefficientcertificate.md) | 45 | `declaration-track:8b912c6f5519a7700eabef6f9aab932156ebadd0e75c61f5a30f625f22734803` |
+| 7 | `theorem` | [crossedProductOperator_selfAdjoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SelfAdjointFiniteOperator.lean/declarations/crossedproductoperator-selfadjoint.md) | 53 | `result-track:a5e1b438f634de8d6f5e23207b141a02a12f1a68e041668021c78f2ac2eccbe6` |
+| 8 | `structure` | [JordanSemisimplicityObligation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SelfAdjointFiniteOperator.lean/declarations/jordansemisimplicityobligation.md) | 67 | `declaration-track:291855b3f2e505480449948b686634c5780f60c3276425beb83adea2b065dcc8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

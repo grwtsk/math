@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ProjectFiberNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ProjectFiberNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProjectFiberNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProjectFiberNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ProjectFiber](../../../../../ComputerScience/AlgorithmsInComputerScience/ProjectFiberNamespaced.lean/declarations/projectfiber.md) | 20 | `declaration-track:ac77bc6a4c4e592c8e0c4bf4847c338b9c4c090f0a9ef5a7d61a91e7cc7e1db9` |
-| 2 | `structure` | [FederatedEnvironment](../../../../../ComputerScience/AlgorithmsInComputerScience/ProjectFiberNamespaced.lean/declarations/federatedenvironment.md) | 27 | `declaration-track:2f02ca5a07a43b40ec675da0dfb711f0c49f94f65e65f0afaa4fc81842eca079` |
+| 1 | `structure` | [ProjectFiber](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProjectFiberNamespaced.lean/declarations/projectfiber.md) | 20 | `declaration-track:ac77bc6a4c4e592c8e0c4bf4847c338b9c4c090f0a9ef5a7d61a91e7cc7e1db9` |
+| 2 | `structure` | [FederatedEnvironment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProjectFiberNamespaced.lean/declarations/federatedenvironment.md) | 27 | `declaration-track:2f02ca5a07a43b40ec675da0dfb711f0c49f94f65e65f0afaa4fc81842eca079` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

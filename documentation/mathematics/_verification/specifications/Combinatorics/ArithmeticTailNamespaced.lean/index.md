@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ArithmeticTailNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/ArithmeticTailNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ArithmeticTailNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ArithmeticTailNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SemiLocalArithmeticTail](../../../../Combinatorics/ArithmeticTailNamespaced.lean/declarations/semilocalarithmetictail.md) | 19 | `declaration-track:9cb9f60be441c5726bb5d59507f59b240f99bef3da884b445ad0b268021dbae0` |
+| 1 | `structure` | [SemiLocalArithmeticTail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ArithmeticTailNamespaced.lean/declarations/semilocalarithmetictail.md) | 19 | `declaration-track:9cb9f60be441c5726bb5d59507f59b240f99bef3da884b445ad0b268021dbae0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/CanonicalRationalTentEvaluation.lean/index.md) · [Full source](../../../../NumberTheory/CanonicalRationalTentEvaluation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalRationalTentEvaluation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalRationalTentEvaluation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.RationalTentAccumulation`](../../../../FunctionsOfAComplexVariable/RationalTentAccumulation.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Chebyshev.CanonicalTentPrimeCriterion`](../../../../NumberTheory/CanonicalTentPrimeCriterion.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.RationalTentAccumulation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalTentAccumulation.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.CanonicalTentPrimeCriterion`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentPrimeCriterion.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [HeadBinding](../../../../NumberTheory/CanonicalRationalTentEvaluation.lean/declarations/headbinding.md) | 30 | `declaration-track:6c832bda8fa5f5a58db1a56fd1019fcf663739b90305cf63417ea746269101ff` |
-| 2 | `def` | [squareCenterQ](../../../../NumberTheory/CanonicalRationalTentEvaluation.lean/declarations/squarecenterq.md) | 36 | `declaration-track:2e98eaadaa5927e9834aea6b03c6dfdfd55bf14f5648c24391a2f3fab7f3dbe4` |
-| 3 | `def` | [squareRadiusQ](../../../../NumberTheory/CanonicalRationalTentEvaluation.lean/declarations/squareradiusq.md) | 37 | `declaration-track:e2c0af4aaa911b488fb71dfbab266d30e6fce425c0085ab10a3d3321c2c17b1e` |
-| 4 | `theorem` | [cast_squareCenterQ](../../../../NumberTheory/CanonicalRationalTentEvaluation.lean/declarations/cast-squarecenterq.md) | 39 | `result-track:db54d611eb07fdc381017f5b519c953fed31fcd4c18b110785020fb2962d2541` |
-| 5 | `theorem` | [cast_squareRadiusQ](../../../../NumberTheory/CanonicalRationalTentEvaluation.lean/declarations/cast-squareradiusq.md) | 42 | `result-track:a1826198b7bb47ce836f29139cae205779551a84e31098186f41c62d2c91f554` |
-| 6 | `theorem` | [head_eq_bound_sum](../../../../NumberTheory/CanonicalRationalTentEvaluation.lean/declarations/head-eq-bound-sum.md) | 46 | `result-track:06e1ee24ce6f666186a7c98345b44caaa7d78bee88bbeff5d3f7cf2976d53171` |
-| 7 | `theorem` | [verified_head_sound](../../../../NumberTheory/CanonicalRationalTentEvaluation.lean/declarations/verified-head-sound.md) | 62 | `result-track:ad967a2e8a6111d1d3a65088f5922079161da7b75b19a249d6b3c0d8f3b7a4b1` |
-| 8 | `theorem` | [prime_in_square_of_verified_rational_head](../../../../NumberTheory/CanonicalRationalTentEvaluation.lean/declarations/prime-in-square-of-verified-rational-head.md) | 77 | `result-track:78a1bc994f118489d9df0abd6be8e1870ca8bab7103294c0f638ce2f44582662` |
+| 1 | `structure` | [HeadBinding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalRationalTentEvaluation.lean/declarations/headbinding.md) | 30 | `declaration-track:6c832bda8fa5f5a58db1a56fd1019fcf663739b90305cf63417ea746269101ff` |
+| 2 | `def` | [squareCenterQ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalRationalTentEvaluation.lean/declarations/squarecenterq.md) | 36 | `declaration-track:2e98eaadaa5927e9834aea6b03c6dfdfd55bf14f5648c24391a2f3fab7f3dbe4` |
+| 3 | `def` | [squareRadiusQ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalRationalTentEvaluation.lean/declarations/squareradiusq.md) | 37 | `declaration-track:e2c0af4aaa911b488fb71dfbab266d30e6fce425c0085ab10a3d3321c2c17b1e` |
+| 4 | `theorem` | [cast_squareCenterQ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalRationalTentEvaluation.lean/declarations/cast-squarecenterq.md) | 39 | `result-track:db54d611eb07fdc381017f5b519c953fed31fcd4c18b110785020fb2962d2541` |
+| 5 | `theorem` | [cast_squareRadiusQ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalRationalTentEvaluation.lean/declarations/cast-squareradiusq.md) | 42 | `result-track:a1826198b7bb47ce836f29139cae205779551a84e31098186f41c62d2c91f554` |
+| 6 | `theorem` | [head_eq_bound_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalRationalTentEvaluation.lean/declarations/head-eq-bound-sum.md) | 46 | `result-track:06e1ee24ce6f666186a7c98345b44caaa7d78bee88bbeff5d3f7cf2976d53171` |
+| 7 | `theorem` | [verified_head_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalRationalTentEvaluation.lean/declarations/verified-head-sound.md) | 62 | `result-track:ad967a2e8a6111d1d3a65088f5922079161da7b75b19a249d6b3c0d8f3b7a4b1` |
+| 8 | `theorem` | [prime_in_square_of_verified_rational_head](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalRationalTentEvaluation.lean/declarations/prime-in-square-of-verified-rational-head.md) | 77 | `result-track:78a1bc994f118489d9df0abd6be8e1870ca8bab7103294c0f638ce2f44582662` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/DenseSubgroupNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/DenseSubgroupNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DenseSubgroupNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DenseSubgroupNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [dense_addSubgroupClosure_pair_iff](../../../../GeneralTopology/DenseSubgroupNamespaced.lean/declarations/dense-addsubgroupclosure-pair-iff.md) | 34 | `result-track:e5df0efbad8fbb1c121179256c248e08a482e157e17f0318fe99003bae803570` |
-| 2 | `theorem` | [denseRange_zsmul_coe_iff](../../../../GeneralTopology/DenseSubgroupNamespaced.lean/declarations/denserange-zsmul-coe-iff.md) | 59 | `result-track:25f4e8d774fa4245e4ed3887d60d59045a2cc3351348451354a0c12539c90a6c` |
-| 3 | `theorem` | [denseRange_zsmul_iff](../../../../GeneralTopology/DenseSubgroupNamespaced.lean/declarations/denserange-zsmul-iff.md) | 69 | `result-track:1642e229fd4c7373c8842ba795600fc89cef3de446ef6b88a34ccdf959478a2e` |
-| 4 | `theorem` | [dense_addSubgroup_iff_ne_zmultiples](../../../../GeneralTopology/DenseSubgroupNamespaced.lean/declarations/dense-addsubgroup-iff-ne-zmultiples.md) | 76 | `result-track:92e2fd58bf4409d67bc66eee792b0a5e444474f83d10a4c93e7eb3bea06b0e80` |
+| 1 | `theorem` | [dense_addSubgroupClosure_pair_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DenseSubgroupNamespaced.lean/declarations/dense-addsubgroupclosure-pair-iff.md) | 34 | `result-track:e5df0efbad8fbb1c121179256c248e08a482e157e17f0318fe99003bae803570` |
+| 2 | `theorem` | [denseRange_zsmul_coe_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DenseSubgroupNamespaced.lean/declarations/denserange-zsmul-coe-iff.md) | 59 | `result-track:25f4e8d774fa4245e4ed3887d60d59045a2cc3351348451354a0c12539c90a6c` |
+| 3 | `theorem` | [denseRange_zsmul_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DenseSubgroupNamespaced.lean/declarations/denserange-zsmul-iff.md) | 69 | `result-track:1642e229fd4c7373c8842ba795600fc89cef3de446ef6b88a34ccdf959478a2e` |
+| 4 | `theorem` | [dense_addSubgroup_iff_ne_zmultiples](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DenseSubgroupNamespaced.lean/declarations/dense-addsubgroup-iff-ne-zmultiples.md) | 76 | `result-track:92e2fd58bf4409d67bc66eee792b0a5e444474f83d10a4c93e7eb3bea06b0e80` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

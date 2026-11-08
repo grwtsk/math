@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/DerangementsBasic.lean/index.md) · [Full source](../../../../Combinatorics/DerangementsBasic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DerangementsBasic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DerangementsBasic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,17 +61,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [derangements](../../../../Combinatorics/DerangementsBasic.lean/declarations/derangements.md) | 32 | `declaration-track:1437b030e0e44f36d0136547a056acecacd0af084a02251865b4dd17e0f912c2` |
-| 2 | `theorem` | [mem_derangements_iff_fixedPoints_eq_empty](../../../../Combinatorics/DerangementsBasic.lean/declarations/mem-derangements-iff-fixedpoints-eq-empty.md) | 37 | `result-track:64a9386de9929db14e598fd7e2dc069a3349151c5340012ec72f8016b09488db` |
-| 3 | `def` | [Equiv.derangementsCongr](../../../../Combinatorics/DerangementsBasic.lean/declarations/equiv-derangementscongr.md) | 42 | `declaration-track:2685c6d95e01e94d69b160024eff8aabcc115b9f2224cb735e152e22e30f08be` |
-| 4 | `def` | [subtypeEquiv](../../../../Combinatorics/DerangementsBasic.lean/declarations/subtypeequiv.md) | 50 | `declaration-track:4265c9c01541da3409a8dd37ae16fcb67072dfc9f1ec349f1a19f76ddf5b705d` |
-| 5 | `def` | [atMostOneFixedPointEquivSum_derangements](../../../../Combinatorics/DerangementsBasic.lean/declarations/atmostonefixedpointequivsum-derangements.md) | 75 | `declaration-track:5c5afa5d38137d2224ee41cd309851ca5a5430bbb27391663db58cc3b7887d62` |
-| 6 | `def` | [RemoveNone.fiber](../../../../Combinatorics/DerangementsBasic.lean/declarations/removenone-fiber.md) | 112 | `declaration-track:d114f91ea0ed46b7b6335681461aae1acb5ead1010095a36e81c6a452ef0e7b1` |
-| 7 | `theorem` | [RemoveNone.mem_fiber](../../../../Combinatorics/DerangementsBasic.lean/declarations/removenone-mem-fiber.md) | 115 | `result-track:88ae3b474ae93aed24d211046b05743c5286bf187768c949cf5760db87fcefb5` |
-| 8 | `theorem` | [RemoveNone.fiber_none](../../../../Combinatorics/DerangementsBasic.lean/declarations/removenone-fiber-none.md) | 120 | `result-track:ca18b68ab92ac1c3791a2a6e348bf93321deff0ed95323168af57b92f5d55347` |
-| 9 | `theorem` | [RemoveNone.fiber_some](../../../../Combinatorics/DerangementsBasic.lean/declarations/removenone-fiber-some.md) | 129 | `result-track:28548bbcba6e6d35a2dd72857fd6cb0a42b52206ab848b9126a65fc6714e3479` |
-| 10 | `def` | [derangementsOptionEquivSigmaAtMostOneFixedPoint](../../../../Combinatorics/DerangementsBasic.lean/declarations/derangementsoptionequivsigmaatmostonefixedpoint.md) | 169 | `declaration-track:043f0519b6d9b1721c7e511df976c3807fda313aea660b9449943887e893f2e9` |
-| 11 | `def` | [derangementsRecursionEquiv](../../../../Combinatorics/DerangementsBasic.lean/declarations/derangementsrecursionequiv.md) | 186 | `declaration-track:315ed3b7092c8249100b8826b3db1518d6f5f0a900375e0c61ced42a27a41885` |
+| 1 | `def` | [derangements](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DerangementsBasic.lean/declarations/derangements.md) | 32 | `declaration-track:1437b030e0e44f36d0136547a056acecacd0af084a02251865b4dd17e0f912c2` |
+| 2 | `theorem` | [mem_derangements_iff_fixedPoints_eq_empty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DerangementsBasic.lean/declarations/mem-derangements-iff-fixedpoints-eq-empty.md) | 37 | `result-track:64a9386de9929db14e598fd7e2dc069a3349151c5340012ec72f8016b09488db` |
+| 3 | `def` | [Equiv.derangementsCongr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DerangementsBasic.lean/declarations/equiv-derangementscongr.md) | 42 | `declaration-track:2685c6d95e01e94d69b160024eff8aabcc115b9f2224cb735e152e22e30f08be` |
+| 4 | `def` | [subtypeEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DerangementsBasic.lean/declarations/subtypeequiv.md) | 50 | `declaration-track:4265c9c01541da3409a8dd37ae16fcb67072dfc9f1ec349f1a19f76ddf5b705d` |
+| 5 | `def` | [atMostOneFixedPointEquivSum_derangements](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DerangementsBasic.lean/declarations/atmostonefixedpointequivsum-derangements.md) | 75 | `declaration-track:5c5afa5d38137d2224ee41cd309851ca5a5430bbb27391663db58cc3b7887d62` |
+| 6 | `def` | [RemoveNone.fiber](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DerangementsBasic.lean/declarations/removenone-fiber.md) | 112 | `declaration-track:d114f91ea0ed46b7b6335681461aae1acb5ead1010095a36e81c6a452ef0e7b1` |
+| 7 | `theorem` | [RemoveNone.mem_fiber](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DerangementsBasic.lean/declarations/removenone-mem-fiber.md) | 115 | `result-track:88ae3b474ae93aed24d211046b05743c5286bf187768c949cf5760db87fcefb5` |
+| 8 | `theorem` | [RemoveNone.fiber_none](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DerangementsBasic.lean/declarations/removenone-fiber-none.md) | 120 | `result-track:ca18b68ab92ac1c3791a2a6e348bf93321deff0ed95323168af57b92f5d55347` |
+| 9 | `theorem` | [RemoveNone.fiber_some](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DerangementsBasic.lean/declarations/removenone-fiber-some.md) | 129 | `result-track:28548bbcba6e6d35a2dd72857fd6cb0a42b52206ab848b9126a65fc6714e3479` |
+| 10 | `def` | [derangementsOptionEquivSigmaAtMostOneFixedPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DerangementsBasic.lean/declarations/derangementsoptionequivsigmaatmostonefixedpoint.md) | 169 | `declaration-track:043f0519b6d9b1721c7e511df976c3807fda313aea660b9449943887e893f2e9` |
+| 11 | `def` | [derangementsRecursionEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DerangementsBasic.lean/declarations/derangementsrecursionequiv.md) | 186 | `declaration-track:315ed3b7092c8249100b8826b3db1518d6f5f0a900375e0c61ced42a27a41885` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

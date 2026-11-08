@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ComplexEulerProductConvergenceNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/ComplexEulerProductConvergenceNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ComplexEulerProductConvergenceNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ComplexEulerProductConvergenceNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [tendsto_finset_sums_of_summable_of_eventually_contains_Icc](../../../../GeneralTopology/ComplexEulerProductConvergenceNamespaced.lean/declarations/tendsto-finset-sums-of-summable-of-eventually-contains-icc.md) | 25 | `result-track:5d2e33dbc86a0eebfd53027187ab3481d37ad5beeda75ee87762cdcd7dedfa0f` |
-| 2 | `theorem` | [tendsto_boundedSmoothNumber_sums_complexWeight](../../../../GeneralTopology/ComplexEulerProductConvergenceNamespaced.lean/declarations/tendsto-boundedsmoothnumber-sums-complexweight.md) | 68 | `result-track:b4377706f67663d9079456b160c451755c356137c35b4d52a7ffa78917887342` |
-| 3 | `theorem` | [tendsto_zetaEulerApproxComplex](../../../../GeneralTopology/ComplexEulerProductConvergenceNamespaced.lean/declarations/tendsto-zetaeulerapproxcomplex.md) | 100 | `result-track:2de221fcddbf3c9c38600a914555dccbdb1fccb5553b30eb15ae30d6592223a2` |
+| 1 | `theorem` | [tendsto_finset_sums_of_summable_of_eventually_contains_Icc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ComplexEulerProductConvergenceNamespaced.lean/declarations/tendsto-finset-sums-of-summable-of-eventually-contains-icc.md) | 25 | `result-track:5d2e33dbc86a0eebfd53027187ab3481d37ad5beeda75ee87762cdcd7dedfa0f` |
+| 2 | `theorem` | [tendsto_boundedSmoothNumber_sums_complexWeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ComplexEulerProductConvergenceNamespaced.lean/declarations/tendsto-boundedsmoothnumber-sums-complexweight.md) | 68 | `result-track:b4377706f67663d9079456b160c451755c356137c35b4d52a7ffa78917887342` |
+| 3 | `theorem` | [tendsto_zetaEulerApproxComplex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ComplexEulerProductConvergenceNamespaced.lean/declarations/tendsto-zetaeulerapproxcomplex.md) | 100 | `result-track:2de221fcddbf3c9c38600a914555dccbdb1fccb5553b30eb15ae30d6592223a2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

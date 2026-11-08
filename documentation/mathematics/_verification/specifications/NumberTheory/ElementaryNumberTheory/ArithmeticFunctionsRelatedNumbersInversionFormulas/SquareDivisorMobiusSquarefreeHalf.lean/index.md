@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SquareDivisorMobiusSquarefreeHalf.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SquareDivisorMobiusSquarefreeHalf.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SquareDivisorMobiusSquarefreeHalf.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SquareDivisorMobiusSquarefreeHalf.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Moebius.EndpointCrossCollisionDivisorSquareSieve`](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/EndpointCrossCollisionDivisorSquareSieve.lean/index.md) — import line 11; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.EndpointCrossCollisionDivisorSquareSieve`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/EndpointCrossCollisionDivisorSquareSieve.lean/index.md) — import line 11; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [squareDivisorMobiusSum_eq_one_of_squarefree](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SquareDivisorMobiusSquarefreeHalf.lean/declarations/squaredivisormobiussum-eq-one-of-squarefree.md) | 41 | `result-track:6be9e52c510378c4e36c2a1a5594fb8bdbb8956541b84b34d88ccc35b7ca2079` |
-| 2 | `theorem` | [squarefreeIndicatorReal_eq_squareDivisorMobiusSum_of_squarefree](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SquareDivisorMobiusSquarefreeHalf.lean/declarations/squarefreeindicatorreal-eq-squaredivisormobiussum-of-squarefree.md) | 60 | `result-track:05221cb2b181c9667410665c7d6c03778773744cdb299f6d87f48782272a0c5c` |
-| 3 | `structure` | [NonSquarefreeSquareDivisorMobiusCancellation](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SquareDivisorMobiusSquarefreeHalf.lean/declarations/nonsquarefreesquaredivisormobiuscancellation.md) | 71 | `declaration-track:a6a3d7bd385ddfffc78cafbc8648710fb353c49df5f23641ae7f66e113459e64` |
-| 4 | `def` | [squarefreeDivisorSquareMobiusIdentity_of_nonsquarefreeCancellation](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SquareDivisorMobiusSquarefreeHalf.lean/declarations/squarefreedivisorsquaremobiusidentity-of-nonsquarefreecancellation.md) | 78 | `declaration-track:e1fce1ba3c24b91266ef3f86fb244579c4102b2ffd8878352cf8ae40d759de11` |
-| 5 | `theorem` | [exists_squarefreeDivisorSquareMobiusIdentity_of_exists_nonsquarefreeCancellation](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SquareDivisorMobiusSquarefreeHalf.lean/declarations/exists-squarefreedivisorsquaremobiusidentity-of-exists-nonsquarefreecanc.md) | 91 | `result-track:c69de492a3ee462a347addf0c68f964f14c5fc3a65c33f5b0206b5386196404a` |
+| 1 | `theorem` | [squareDivisorMobiusSum_eq_one_of_squarefree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SquareDivisorMobiusSquarefreeHalf.lean/declarations/squaredivisormobiussum-eq-one-of-squarefree.md) | 41 | `result-track:6be9e52c510378c4e36c2a1a5594fb8bdbb8956541b84b34d88ccc35b7ca2079` |
+| 2 | `theorem` | [squarefreeIndicatorReal_eq_squareDivisorMobiusSum_of_squarefree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SquareDivisorMobiusSquarefreeHalf.lean/declarations/squarefreeindicatorreal-eq-squaredivisormobiussum-of-squarefree.md) | 60 | `result-track:05221cb2b181c9667410665c7d6c03778773744cdb299f6d87f48782272a0c5c` |
+| 3 | `structure` | [NonSquarefreeSquareDivisorMobiusCancellation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SquareDivisorMobiusSquarefreeHalf.lean/declarations/nonsquarefreesquaredivisormobiuscancellation.md) | 71 | `declaration-track:a6a3d7bd385ddfffc78cafbc8648710fb353c49df5f23641ae7f66e113459e64` |
+| 4 | `def` | [squarefreeDivisorSquareMobiusIdentity_of_nonsquarefreeCancellation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SquareDivisorMobiusSquarefreeHalf.lean/declarations/squarefreedivisorsquaremobiusidentity-of-nonsquarefreecancellation.md) | 78 | `declaration-track:e1fce1ba3c24b91266ef3f86fb244579c4102b2ffd8878352cf8ae40d759de11` |
+| 5 | `theorem` | [exists_squarefreeDivisorSquareMobiusIdentity_of_exists_nonsquarefreeCancellation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SquareDivisorMobiusSquarefreeHalf.lean/declarations/exists-squarefreedivisorsquaremobiusidentity-of-exists-nonsquarefreecanc.md) | 91 | `result-track:c69de492a3ee462a347addf0c68f964f14c5fc3a65c33f5b0206b5386196404a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

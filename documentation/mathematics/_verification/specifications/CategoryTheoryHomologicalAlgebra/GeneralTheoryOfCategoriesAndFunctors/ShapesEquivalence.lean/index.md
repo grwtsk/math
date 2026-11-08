@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShapesEquivalence.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShapesEquivalence.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShapesEquivalence.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShapesEquivalence.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [hasInitial_of_equivalence](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShapesEquivalence.lean/declarations/hasinitial-of-equivalence.md) | 25 | `result-track:276d77362f4318fc66b8119afa18ebf212f5d8b86d07c094eb15ad3a22c738ae` |
-| 2 | `theorem` | [Equivalence.hasInitial_iff](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShapesEquivalence.lean/declarations/equivalence-hasinitial-iff.md) | 28 | `result-track:0361a19f8af4efbc287c96d58e8777b3e457a269b98af1f20fd1b9af432e795a` |
-| 3 | `theorem` | [hasTerminal_of_equivalence](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShapesEquivalence.lean/declarations/hasterminal-of-equivalence.md) | 32 | `result-track:d324af983df3b29325593f8996c5fd46b7cbc54db52cd715479a329dfa09cf79` |
-| 4 | `theorem` | [Equivalence.hasTerminal_iff](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShapesEquivalence.lean/declarations/equivalence-hasterminal-iff.md) | 35 | `result-track:b032189f7925983a1e84f32022d49e566a8c240f992eb10daf719126486f7933` |
+| 1 | `theorem` | [hasInitial_of_equivalence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShapesEquivalence.lean/declarations/hasinitial-of-equivalence.md) | 25 | `result-track:276d77362f4318fc66b8119afa18ebf212f5d8b86d07c094eb15ad3a22c738ae` |
+| 2 | `theorem` | [Equivalence.hasInitial_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShapesEquivalence.lean/declarations/equivalence-hasinitial-iff.md) | 28 | `result-track:0361a19f8af4efbc287c96d58e8777b3e457a269b98af1f20fd1b9af432e795a` |
+| 3 | `theorem` | [hasTerminal_of_equivalence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShapesEquivalence.lean/declarations/hasterminal-of-equivalence.md) | 32 | `result-track:d324af983df3b29325593f8996c5fd46b7cbc54db52cd715479a329dfa09cf79` |
+| 4 | `theorem` | [Equivalence.hasTerminal_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShapesEquivalence.lean/declarations/equivalence-hasterminal-iff.md) | 35 | `result-track:b032189f7925983a1e84f32022d49e566a8c240f992eb10daf719126486f7933` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

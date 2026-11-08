@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ModularWitnessModularMonodromyWitness.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ModularWitnessModularMonodromyWitness.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ModularWitnessModularMonodromyWitness.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ModularWitnessModularMonodromyWitness.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ModularMonodromyWitness](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ModularWitnessModularMonodromyWitness.lean/declarations/modularmonodromywitness.md) | 19 | `declaration-track:dd21f6268cd082b793e5cd8de9f5d4c6e1c9f5979a0272e145d1307769043321` |
-| 2 | `structure` | [CompatibleModularWitness](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ModularWitnessModularMonodromyWitness.lean/declarations/compatiblemodularwitness.md) | 28 | `declaration-track:d4f49132d5b2b9c98c51c95a64dae225d9770f644c2233e928bc8b7af42c057e` |
-| 3 | `theorem` | [modular_witness_certified](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ModularWitnessModularMonodromyWitness.lean/declarations/modular-witness-certified.md) | 38 | `result-track:35f447b98000b8aec061fe19fc3d971d4a1119363674da7870c1f2740d4799c1` |
+| 1 | `structure` | [ModularMonodromyWitness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ModularWitnessModularMonodromyWitness.lean/declarations/modularmonodromywitness.md) | 19 | `declaration-track:dd21f6268cd082b793e5cd8de9f5d4c6e1c9f5979a0272e145d1307769043321` |
+| 2 | `structure` | [CompatibleModularWitness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ModularWitnessModularMonodromyWitness.lean/declarations/compatiblemodularwitness.md) | 28 | `declaration-track:d4f49132d5b2b9c98c51c95a64dae225d9770f644c2233e928bc8b7af42c057e` |
+| 3 | `theorem` | [modular_witness_certified](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ModularWitnessModularMonodromyWitness.lean/declarations/modular-witness-certified.md) | 38 | `result-track:35f447b98000b8aec061fe19fc3d971d4a1119363674da7870c1f2740d4799c1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

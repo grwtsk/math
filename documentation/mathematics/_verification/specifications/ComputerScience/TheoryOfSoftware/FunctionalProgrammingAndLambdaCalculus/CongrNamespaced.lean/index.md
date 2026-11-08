@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CongrNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CongrNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CongrNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CongrNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Congr.Config](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CongrNamespaced.lean/declarations/congr-config.md) | 24 | `declaration-track:c97f64b12e5f4b3bfc4bdd7b3c58d394f8e6c0c9586ea52e8b22a5d8d49cab47` |
-| 2 | `syntax` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CongrNamespaced.lean/declarations/syntax.md) | 36 | `declaration-track:00726c3ac7c737beb6b33217fcfeb41c7568901439b38a013e351a002029e8e9` |
-| 3 | `syntax` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CongrNamespaced.lean/declarations/syntax-source-edition-2.md) | 50 | `declaration-track:a15c91e90ebc769024bd13116c4e920b42d13de7f7c177087da21ddbdc8d9684` |
-| 4 | `elab_rules` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CongrNamespaced.lean/declarations/elab-rules.md) | 53 | `declaration-track:4727a6d9425c917ddbbb49918613cead7d9a1c611faf85253e3ee45df5bda2c0` |
-| 5 | `macro_rules` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CongrNamespaced.lean/declarations/macro-rules.md) | 61 | `declaration-track:58b96ad4d7f84bc8737c9a146f324d8022b4f5f67b87b1353b7a12b3cd8fe784` |
-| 6 | `def` | [rcongrCore](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CongrNamespaced.lean/declarations/rcongrcore.md) | 71 | `declaration-track:a8115ec2c1fcd7e0dbcae46aae8555d458639c6803faf12d92a7472d770938e7` |
-| 7 | `elab` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CongrNamespaced.lean/declarations/elab.md) | 112 | `declaration-track:d4ed2932ad9d5d304cab9b592e4d3defaf8296b7f6d623a6dc62a16f119a3697` |
+| 1 | `structure` | [Congr.Config](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CongrNamespaced.lean/declarations/congr-config.md) | 24 | `declaration-track:c97f64b12e5f4b3bfc4bdd7b3c58d394f8e6c0c9586ea52e8b22a5d8d49cab47` |
+| 2 | `syntax` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CongrNamespaced.lean/declarations/syntax.md) | 36 | `declaration-track:00726c3ac7c737beb6b33217fcfeb41c7568901439b38a013e351a002029e8e9` |
+| 3 | `syntax` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CongrNamespaced.lean/declarations/syntax-source-edition-2.md) | 50 | `declaration-track:a15c91e90ebc769024bd13116c4e920b42d13de7f7c177087da21ddbdc8d9684` |
+| 4 | `elab_rules` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CongrNamespaced.lean/declarations/elab-rules.md) | 53 | `declaration-track:4727a6d9425c917ddbbb49918613cead7d9a1c611faf85253e3ee45df5bda2c0` |
+| 5 | `macro_rules` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CongrNamespaced.lean/declarations/macro-rules.md) | 61 | `declaration-track:58b96ad4d7f84bc8737c9a146f324d8022b4f5f67b87b1353b7a12b3cd8fe784` |
+| 6 | `def` | [rcongrCore](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CongrNamespaced.lean/declarations/rcongrcore.md) | 71 | `declaration-track:a8115ec2c1fcd7e0dbcae46aae8555d458639c6803faf12d92a7472d770938e7` |
+| 7 | `elab` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CongrNamespaced.lean/declarations/elab.md) | 112 | `declaration-track:d4ed2932ad9d5d304cab9b592e4d3defaf8296b7f6d623a6dc62a16f119a3697` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/RationalDiskSeparation.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/RationalDiskSeparation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalDiskSeparation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalDiskSeparation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.RationalComplexQuotient`](../../../../FunctionsOfAComplexVariable/RationalComplexQuotient.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.RationalComplexQuotient`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalComplexQuotient.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Admissible](../../../../FunctionsOfAComplexVariable/RationalDiskSeparation.lean/declarations/admissible.md) | 22 | `declaration-track:30a7f497f068f0c469af3ccb428cbe0b4b2f3bb36e232a0899429a1f4ce476e4` |
-| 2 | `instance` | [(anonymous)](../../../../FunctionsOfAComplexVariable/RationalDiskSeparation.lean/declarations/instance.md) | 26 | `declaration-track:bc3274bab5d40c610c4bd670a59f1e85ce224d4b6a3a4c76121cc200839fc3e2` |
-| 3 | `def` | [verify](../../../../FunctionsOfAComplexVariable/RationalDiskSeparation.lean/declarations/verify.md) | 31 | `declaration-track:6bed5eecc730dda790f1d5d0c83b692a7c7f71662e82b253bfc2f56d775b87b2` |
-| 4 | `theorem` | [verify_iff](../../../../FunctionsOfAComplexVariable/RationalDiskSeparation.lean/declarations/verify-iff.md) | 34 | `result-track:6f4856e34936d507255c7353955b560663ac6906867d245809875ad97f78ddec` |
-| 5 | `theorem` | [center_gap](../../../../FunctionsOfAComplexVariable/RationalDiskSeparation.lean/declarations/center-gap.md) | 39 | `result-track:d34cd8065e147ac212971883aaf2c6e196bafa3950f4800b994730f2c5d6a7c8` |
-| 6 | `theorem` | [abs_im_le_cutoff](../../../../FunctionsOfAComplexVariable/RationalDiskSeparation.lean/declarations/abs-im-le-cutoff.md) | 52 | `result-track:407ecd5e49d773f4c1991e993fa8f1cbb01d0bde15300e69e1d7ec23c501d2fd` |
-| 7 | `theorem` | [not_in_two_balls](../../../../FunctionsOfAComplexVariable/RationalDiskSeparation.lean/declarations/not-in-two-balls.md) | 66 | `result-track:70ac1d9c1245854b682ce51b2847863a8a124208c21a90025ccbc40ec72e668e` |
-| 8 | `theorem` | [witnesses_injective](../../../../FunctionsOfAComplexVariable/RationalDiskSeparation.lean/declarations/witnesses-injective.md) | 84 | `result-track:cb69fe296341a83a80d53c3e4b4140759813096408c359ea36474cee830ac5ed` |
+| 1 | `def` | [Admissible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalDiskSeparation.lean/declarations/admissible.md) | 22 | `declaration-track:30a7f497f068f0c469af3ccb428cbe0b4b2f3bb36e232a0899429a1f4ce476e4` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalDiskSeparation.lean/declarations/instance.md) | 26 | `declaration-track:bc3274bab5d40c610c4bd670a59f1e85ce224d4b6a3a4c76121cc200839fc3e2` |
+| 3 | `def` | [verify](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalDiskSeparation.lean/declarations/verify.md) | 31 | `declaration-track:6bed5eecc730dda790f1d5d0c83b692a7c7f71662e82b253bfc2f56d775b87b2` |
+| 4 | `theorem` | [verify_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalDiskSeparation.lean/declarations/verify-iff.md) | 34 | `result-track:6f4856e34936d507255c7353955b560663ac6906867d245809875ad97f78ddec` |
+| 5 | `theorem` | [center_gap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalDiskSeparation.lean/declarations/center-gap.md) | 39 | `result-track:d34cd8065e147ac212971883aaf2c6e196bafa3950f4800b994730f2c5d6a7c8` |
+| 6 | `theorem` | [abs_im_le_cutoff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalDiskSeparation.lean/declarations/abs-im-le-cutoff.md) | 52 | `result-track:407ecd5e49d773f4c1991e993fa8f1cbb01d0bde15300e69e1d7ec23c501d2fd` |
+| 7 | `theorem` | [not_in_two_balls](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalDiskSeparation.lean/declarations/not-in-two-balls.md) | 66 | `result-track:70ac1d9c1245854b682ce51b2847863a8a124208c21a90025ccbc40ec72e668e` |
+| 8 | `theorem` | [witnesses_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalDiskSeparation.lean/declarations/witnesses-injective.md) | 84 | `result-track:cb69fe296341a83a80d53c3e4b4140759813096408c359ea36474cee830ac5ed` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

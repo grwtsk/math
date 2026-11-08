@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/ToRealNamespaced.lean/index.md) · [Full source](../../../../NumberTheory/ToRealNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ToRealNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ToRealNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [toReal](../../../../NumberTheory/ToRealNamespaced.lean/declarations/toreal.md) | 31 | `declaration-track:98fb7ba51d9e64cde2ca29ab893bd28e510021f32a69aee2687546a62ed00af2` |
-| 2 | `theorem` | [toReal_injective](../../../../NumberTheory/ToRealNamespaced.lean/declarations/toreal-injective.md) | 34 | `result-track:b724a614200d35158ed75ff8b4ebce383d51a02420f714aedabbb42827a15857` |
+| 1 | `def` | [toReal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ToRealNamespaced.lean/declarations/toreal.md) | 31 | `declaration-track:98fb7ba51d9e64cde2ca29ab893bd28e510021f32a69aee2687546a62ed00af2` |
+| 2 | `theorem` | [toReal_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ToRealNamespaced.lean/declarations/toreal-injective.md) | 34 | `result-track:b724a614200d35158ed75ff8b4ebce383d51a02420f714aedabbb42827a15857` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

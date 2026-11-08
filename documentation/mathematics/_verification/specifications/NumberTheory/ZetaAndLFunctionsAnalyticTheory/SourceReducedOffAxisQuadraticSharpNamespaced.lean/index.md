@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceReducedOffAxisQuadraticSharpNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceReducedOffAxisQuadraticSharpNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceReducedOffAxisQuadraticSharpNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceReducedOffAxisQuadraticSharpNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actualReducedZeroEnvelope_le_at_radius](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceReducedOffAxisQuadraticSharpNamespaced.lean/declarations/actualreducedzeroenvelope-le-at-radius.md) | 25 | `result-track:c080934b4fb9b5eb256e5ea42fdef4dec398a6387be4ee3e05ed8b25124813ef` |
-| 2 | `theorem` | [quadratic_tail_of_reduced_offAxis_lower](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceReducedOffAxisQuadraticSharpNamespaced.lean/declarations/quadratic-tail-of-reduced-offaxis-lower.md) | 36 | `result-track:98d67709344d209dc9da261f608ad086d136256ac2dff2f20b836dff346c2854` |
-| 3 | `theorem` | [all_real_sharp_lower_of_reduced_offAxis_lower](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceReducedOffAxisQuadraticSharpNamespaced.lean/declarations/all-real-sharp-lower-of-reduced-offaxis-lower.md) | 55 | `result-track:d278b7a59fab94a2f9d9ba3f47d24a7f7aaaed45b5cdc28576ffc1565e3282df` |
-| 4 | `theorem` | [estimate_sharp_of_reduced_offAxis_lower](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceReducedOffAxisQuadraticSharpNamespaced.lean/declarations/estimate-sharp-of-reduced-offaxis-lower.md) | 69 | `result-track:70367a29ab8c77e3de48f2a957237152a43824661d9961e43b67896eaa73d641` |
+| 1 | `theorem` | [actualReducedZeroEnvelope_le_at_radius](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceReducedOffAxisQuadraticSharpNamespaced.lean/declarations/actualreducedzeroenvelope-le-at-radius.md) | 25 | `result-track:c080934b4fb9b5eb256e5ea42fdef4dec398a6387be4ee3e05ed8b25124813ef` |
+| 2 | `theorem` | [quadratic_tail_of_reduced_offAxis_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceReducedOffAxisQuadraticSharpNamespaced.lean/declarations/quadratic-tail-of-reduced-offaxis-lower.md) | 36 | `result-track:98d67709344d209dc9da261f608ad086d136256ac2dff2f20b836dff346c2854` |
+| 3 | `theorem` | [all_real_sharp_lower_of_reduced_offAxis_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceReducedOffAxisQuadraticSharpNamespaced.lean/declarations/all-real-sharp-lower-of-reduced-offaxis-lower.md) | 55 | `result-track:d278b7a59fab94a2f9d9ba3f47d24a7f7aaaed45b5cdc28576ffc1565e3282df` |
+| 4 | `theorem` | [estimate_sharp_of_reduced_offAxis_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceReducedOffAxisQuadraticSharpNamespaced.lean/declarations/estimate-sharp-of-reduced-offaxis-lower.md) | 69 | `result-track:70367a29ab8c77e3de48f2a957237152a43824661d9961e43b67896eaa73d641` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

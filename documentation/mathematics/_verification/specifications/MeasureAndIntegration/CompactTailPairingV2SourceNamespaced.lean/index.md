@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CompactTailPairingV2SourceNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CompactTailPairingV2SourceNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactTailPairingV2SourceNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactTailPairingV2SourceNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [forwardHalfKernel](../../../../MeasureAndIntegration/CompactTailPairingV2SourceNamespaced.lean/declarations/forwardhalfkernel.md) | 25 | `declaration-track:862100fb7a0b5e5d342fd7cee18367002dddffcba8f368f0c625dc1582989967` |
-| 2 | `theorem` | [forwardHalfKernel_continuous](../../../../MeasureAndIntegration/CompactTailPairingV2SourceNamespaced.lean/declarations/forwardhalfkernel-continuous.md) | 30 | `result-track:56448b36fbaa3daf38cc2dae13522a0653917fa78b04e29d20a166dcf8ae4463` |
-| 3 | `theorem` | [forwardHalfKernel_hasCompactSupport](../../../../MeasureAndIntegration/CompactTailPairingV2SourceNamespaced.lean/declarations/forwardhalfkernel-hascompactsupport.md) | 38 | `result-track:2198d751d1c3170419b64185dc041a60e7236b47b9a36402aaea211cdf994453` |
-| 4 | `theorem` | [forwardHalfKernel_integrable](../../../../MeasureAndIntegration/CompactTailPairingV2SourceNamespaced.lean/declarations/forwardhalfkernel-integrable.md) | 60 | `result-track:ce79476f37f027eb6680ea874c5cafe4373afa8657121c6a966a09fa26143b40` |
-| 5 | `theorem` | [sourceCorrelation_eq_plus_shift](../../../../MeasureAndIntegration/CompactTailPairingV2SourceNamespaced.lean/declarations/sourcecorrelation-eq-plus-shift.md) | 66 | `result-track:8112572cf6a1949aab1c6745ec8820eeb64424ca0f6ef74e040b651c874dcf36` |
-| 6 | `theorem` | [negativeSmoothMoment_eq_forward_integral](../../../../MeasureAndIntegration/CompactTailPairingV2SourceNamespaced.lean/declarations/negativesmoothmoment-eq-forward-integral.md) | 74 | `result-track:be6442994b232bb5161f3cdbb52f3aa523f13764ba5ff52505975362dba616fa` |
-| 7 | `theorem` | [forwardHalfKernel_interval_eq_tail_pairing](../../../../MeasureAndIntegration/CompactTailPairingV2SourceNamespaced.lean/declarations/forwardhalfkernel-interval-eq-tail-pairing.md) | 86 | `result-track:7fea1ef0268ea3728590a0b0dc87e17b1fa180a0ba657f56bf10c16b84673cc9` |
-| 8 | `theorem` | [negativeSmoothMoment_eq_tail_pairing](../../../../MeasureAndIntegration/CompactTailPairingV2SourceNamespaced.lean/declarations/negativesmoothmoment-eq-tail-pairing.md) | 129 | `result-track:dccedbaae22150e988e5aa5a36a61b451c94b662353c9b20b238964b3369b3db` |
+| 1 | `def` | [forwardHalfKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactTailPairingV2SourceNamespaced.lean/declarations/forwardhalfkernel.md) | 25 | `declaration-track:862100fb7a0b5e5d342fd7cee18367002dddffcba8f368f0c625dc1582989967` |
+| 2 | `theorem` | [forwardHalfKernel_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactTailPairingV2SourceNamespaced.lean/declarations/forwardhalfkernel-continuous.md) | 30 | `result-track:56448b36fbaa3daf38cc2dae13522a0653917fa78b04e29d20a166dcf8ae4463` |
+| 3 | `theorem` | [forwardHalfKernel_hasCompactSupport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactTailPairingV2SourceNamespaced.lean/declarations/forwardhalfkernel-hascompactsupport.md) | 38 | `result-track:2198d751d1c3170419b64185dc041a60e7236b47b9a36402aaea211cdf994453` |
+| 4 | `theorem` | [forwardHalfKernel_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactTailPairingV2SourceNamespaced.lean/declarations/forwardhalfkernel-integrable.md) | 60 | `result-track:ce79476f37f027eb6680ea874c5cafe4373afa8657121c6a966a09fa26143b40` |
+| 5 | `theorem` | [sourceCorrelation_eq_plus_shift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactTailPairingV2SourceNamespaced.lean/declarations/sourcecorrelation-eq-plus-shift.md) | 66 | `result-track:8112572cf6a1949aab1c6745ec8820eeb64424ca0f6ef74e040b651c874dcf36` |
+| 6 | `theorem` | [negativeSmoothMoment_eq_forward_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactTailPairingV2SourceNamespaced.lean/declarations/negativesmoothmoment-eq-forward-integral.md) | 74 | `result-track:be6442994b232bb5161f3cdbb52f3aa523f13764ba5ff52505975362dba616fa` |
+| 7 | `theorem` | [forwardHalfKernel_interval_eq_tail_pairing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactTailPairingV2SourceNamespaced.lean/declarations/forwardhalfkernel-interval-eq-tail-pairing.md) | 86 | `result-track:7fea1ef0268ea3728590a0b0dc87e17b1fa180a0ba657f56bf10c16b84673cc9` |
+| 8 | `theorem` | [negativeSmoothMoment_eq_tail_pairing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactTailPairingV2SourceNamespaced.lean/declarations/negativesmoothmoment-eq-tail-pairing.md) | 129 | `result-track:dccedbaae22150e988e5aa5a36a61b451c94b662353c9b20b238964b3369b3db` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

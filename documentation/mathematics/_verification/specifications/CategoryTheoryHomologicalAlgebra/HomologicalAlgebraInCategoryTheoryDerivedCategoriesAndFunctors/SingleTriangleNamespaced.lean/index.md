@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/SingleTriangleNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/SingleTriangleNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/SingleTriangleNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/SingleTriangleNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [singleδ](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/SingleTriangleNamespaced.lean/declarations/single.md) | 49 | `declaration-track:b0d1874793acbdf14602caef05e76dc83415006dcd44935ab4c5654f61505715` |
-| 2 | `def` | [singleTriangle](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/SingleTriangleNamespaced.lean/declarations/singletriangle.md) | 59 | `declaration-track:a851ec5ff67ce8cca44970f5fab2b8252bd05073e1c7f3149d2b38591117cbc5` |
-| 3 | `def` | [singleTriangleIso](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/SingleTriangleNamespaced.lean/declarations/singletriangleiso.md) | 68 | `declaration-track:714732baec128fefe8defca104ea673695fcbfcf4b3ab10ae8c883cf38de661b` |
-| 4 | `lemma` | [singleTriangle_distinguished](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/SingleTriangleNamespaced.lean/declarations/singletriangle-distinguished.md) | 82 | `result-track:1d3e9df7a772aa14aa816c41ab3f6aa96518f8ae4d6ea448bee85a403dbdf3a3` |
+| 1 | `def` | [singleδ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/SingleTriangleNamespaced.lean/declarations/single.md) | 49 | `declaration-track:b0d1874793acbdf14602caef05e76dc83415006dcd44935ab4c5654f61505715` |
+| 2 | `def` | [singleTriangle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/SingleTriangleNamespaced.lean/declarations/singletriangle.md) | 59 | `declaration-track:a851ec5ff67ce8cca44970f5fab2b8252bd05073e1c7f3149d2b38591117cbc5` |
+| 3 | `def` | [singleTriangleIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/SingleTriangleNamespaced.lean/declarations/singletriangleiso.md) | 68 | `declaration-track:714732baec128fefe8defca104ea673695fcbfcf4b3ab10ae8c883cf38de661b` |
+| 4 | `lemma` | [singleTriangle_distinguished](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/SingleTriangleNamespaced.lean/declarations/singletriangle-distinguished.md) | 82 | `result-track:1d3e9df7a772aa14aa816c41ab3f6aa96518f8ae4d6ea448bee85a403dbdf3a3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

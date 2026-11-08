@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../HarmonicAnalysisOnEuclideanSpaces/FiniteAdditiveProjector.lean/index.md) · [Full source](../../../../HarmonicAnalysisOnEuclideanSpaces/FiniteAdditiveProjector.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/FiniteAdditiveProjector.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/FiniteAdditiveProjector.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [characterAverage](../../../../HarmonicAnalysisOnEuclideanSpaces/FiniteAdditiveProjector.lean/declarations/characteraverage.md) | 15 | `declaration-track:3c9397b9519087db9528f61712b1b13339b0bd7943ff2e5484bef25cceb97a30` |
-| 2 | `theorem` | [characterAverage_eq_indicator](../../../../HarmonicAnalysisOnEuclideanSpaces/FiniteAdditiveProjector.lean/declarations/characteraverage-eq-indicator.md) | 20 | `result-track:386e114f50880b575dcc46a1964d9c4d6c6c22808081a53c5cbebd80ceacc471` |
-| 3 | `def` | [characterProjector](../../../../HarmonicAnalysisOnEuclideanSpaces/FiniteAdditiveProjector.lean/declarations/characterprojector.md) | 33 | `declaration-track:939350bb6f5a78e92b73c929f325406e5aa6034b5ef37c8fc02e791e587e1239` |
-| 4 | `theorem` | [characterProjector_eq_average](../../../../HarmonicAnalysisOnEuclideanSpaces/FiniteAdditiveProjector.lean/declarations/characterprojector-eq-average.md) | 37 | `result-track:aa285f463930bd42efd9b9b321cc3403e145c9fe1bb21656bb858d423a54c1e7` |
-| 5 | `theorem` | [characterProjector_eq_modular_indicator](../../../../HarmonicAnalysisOnEuclideanSpaces/FiniteAdditiveProjector.lean/declarations/characterprojector-eq-modular-indicator.md) | 45 | `result-track:0e076794db5977aea43625a449df3868ea100ba2e4cd6aa7f4c0b5e658c78dfa` |
-| 6 | `theorem` | [nat_add_sub_eq_zero_iff_of_lt](../../../../HarmonicAnalysisOnEuclideanSpaces/FiniteAdditiveProjector.lean/declarations/nat-add-sub-eq-zero-iff-of-lt.md) | 53 | `result-track:1a694205fa4aedf3cb32197d42990f9250e29650c572c1159b754f2c4414de20` |
-| 7 | `theorem` | [nat_add_sub_eq_zero_iff_of_noWrap](../../../../HarmonicAnalysisOnEuclideanSpaces/FiniteAdditiveProjector.lean/declarations/nat-add-sub-eq-zero-iff-of-nowrap.md) | 61 | `result-track:440571f88c560425f870e74592c856db1b6bce62ec3bd47bbc926a8dc6d59fd1` |
-| 8 | `theorem` | [characterProjector_eq_indicator_of_noWrap](../../../../HarmonicAnalysisOnEuclideanSpaces/FiniteAdditiveProjector.lean/declarations/characterprojector-eq-indicator-of-nowrap.md) | 72 | `result-track:4bdb148c14fc6223bf919b56aac9ffa5c88fcd51cda023fc10042370cc16acd3` |
+| 1 | `def` | [characterAverage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/FiniteAdditiveProjector.lean/declarations/characteraverage.md) | 15 | `declaration-track:3c9397b9519087db9528f61712b1b13339b0bd7943ff2e5484bef25cceb97a30` |
+| 2 | `theorem` | [characterAverage_eq_indicator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/FiniteAdditiveProjector.lean/declarations/characteraverage-eq-indicator.md) | 20 | `result-track:386e114f50880b575dcc46a1964d9c4d6c6c22808081a53c5cbebd80ceacc471` |
+| 3 | `def` | [characterProjector](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/FiniteAdditiveProjector.lean/declarations/characterprojector.md) | 33 | `declaration-track:939350bb6f5a78e92b73c929f325406e5aa6034b5ef37c8fc02e791e587e1239` |
+| 4 | `theorem` | [characterProjector_eq_average](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/FiniteAdditiveProjector.lean/declarations/characterprojector-eq-average.md) | 37 | `result-track:aa285f463930bd42efd9b9b321cc3403e145c9fe1bb21656bb858d423a54c1e7` |
+| 5 | `theorem` | [characterProjector_eq_modular_indicator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/FiniteAdditiveProjector.lean/declarations/characterprojector-eq-modular-indicator.md) | 45 | `result-track:0e076794db5977aea43625a449df3868ea100ba2e4cd6aa7f4c0b5e658c78dfa` |
+| 6 | `theorem` | [nat_add_sub_eq_zero_iff_of_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/FiniteAdditiveProjector.lean/declarations/nat-add-sub-eq-zero-iff-of-lt.md) | 53 | `result-track:1a694205fa4aedf3cb32197d42990f9250e29650c572c1159b754f2c4414de20` |
+| 7 | `theorem` | [nat_add_sub_eq_zero_iff_of_noWrap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/FiniteAdditiveProjector.lean/declarations/nat-add-sub-eq-zero-iff-of-nowrap.md) | 61 | `result-track:440571f88c560425f870e74592c856db1b6bce62ec3bd47bbc926a8dc6d59fd1` |
+| 8 | `theorem` | [characterProjector_eq_indicator_of_noWrap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/FiniteAdditiveProjector.lean/declarations/characterprojector-eq-indicator-of-nowrap.md) | 72 | `result-track:4bdb148c14fc6223bf919b56aac9ffa5c88fcd51cda023fc10042370cc16acd3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

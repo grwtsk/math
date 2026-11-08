@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualMixedInwardPositiveNamespacedEdition4.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualMixedInwardPositiveNamespacedEdition4.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualMixedInwardPositiveNamespacedEdition4.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualMixedInwardPositiveNamespacedEdition4.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [inverse_six_norm](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualMixedInwardPositiveNamespacedEdition4.lean/declarations/inverse-six-norm.md) | 19 | `result-track:b74270836bd9209a2706087e8be5f911d5127ba4dbbc0fb9d1fa94550efcee30` |
-| 2 | `theorem` | [inverse_six_real_sector](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualMixedInwardPositiveNamespacedEdition4.lean/declarations/inverse-six-real-sector.md) | 28 | `result-track:c71d96e78e994d52a51c7f7009b10b2a0933179a7f6740093e6614468a09ef51` |
+| 1 | `theorem` | [inverse_six_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualMixedInwardPositiveNamespacedEdition4.lean/declarations/inverse-six-norm.md) | 19 | `result-track:b74270836bd9209a2706087e8be5f911d5127ba4dbbc0fb9d1fa94550efcee30` |
+| 2 | `theorem` | [inverse_six_real_sector](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualMixedInwardPositiveNamespacedEdition4.lean/declarations/inverse-six-real-sector.md) | 28 | `result-track:c71d96e78e994d52a51c7f7009b10b2a0933179a7f6740093e6614468a09ef51` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

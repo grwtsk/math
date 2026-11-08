@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/RationalThresholdTieExamples.lean/index.md) · [Full source](../../../../Combinatorics/RationalThresholdTieExamples.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RationalThresholdTieExamples.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RationalThresholdTieExamples.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,9 +62,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../Combinatorics/RationalThresholdTieExamples.lean/declarations/example-source-edition-3.md) | 30 | `declaration-track:d7be95a46bf757f60c8ec3d986985fdb4ce93ce241a6fec061564566f34daeba` |
-| 2 | `example` | [(anonymous)](../../../../Combinatorics/RationalThresholdTieExamples.lean/declarations/example-source-edition-2.md) | 37 | `declaration-track:947ba7d0eb2a262f33cf077a2ab5e52042397f53b181ffa9b6d56ae631a887ad` |
-| 3 | `example` | [(anonymous)](../../../../Combinatorics/RationalThresholdTieExamples.lean/declarations/example.md) | 44 | `declaration-track:2f1bc9db6fdc7bc11cb956c6d5b9a284252661c0f3d889e5eda212f3bc0cf609` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RationalThresholdTieExamples.lean/declarations/example-source-edition-3.md) | 30 | `declaration-track:d7be95a46bf757f60c8ec3d986985fdb4ce93ce241a6fec061564566f34daeba` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RationalThresholdTieExamples.lean/declarations/example-source-edition-2.md) | 37 | `declaration-track:947ba7d0eb2a262f33cf077a2ab5e52042397f53b181ffa9b6d56ae631a887ad` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RationalThresholdTieExamples.lean/declarations/example.md) | 44 | `declaration-track:2f1bc9db6fdc7bc11cb956c6d5b9a284252661c0f3d889e5eda212f3bc0cf609` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

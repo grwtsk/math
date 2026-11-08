@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IsAlgClosedNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IsAlgClosedNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IsAlgClosedNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IsAlgClosedNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_eigenvalue](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IsAlgClosedNamespaced.lean/declarations/exists-eigenvalue.md) | 49 | `result-track:8d5af2e7bf6e2843bfaba21982b036a295a4ec9f02b83e198ef741fb55b3a902` |
-| 2 | `instance` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IsAlgClosedNamespaced.lean/declarations/instance.md) | 55 | `declaration-track:8d5c98af1d576d51dc5844fda03d853213a8d049c6bd7e82b84bf7698fe91d45` |
-| 3 | `theorem` | [iSup_generalizedEigenspace_eq_top](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IsAlgClosedNamespaced.lean/declarations/isup-generalizedeigenspace-eq-top.md) | 60 | `result-track:f8285970d93e4b5626e20dec1f2a3b0db464191fc39c44c1f061bfe037456e62` |
+| 1 | `theorem` | [exists_eigenvalue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IsAlgClosedNamespaced.lean/declarations/exists-eigenvalue.md) | 49 | `result-track:8d5af2e7bf6e2843bfaba21982b036a295a4ec9f02b83e198ef741fb55b3a902` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IsAlgClosedNamespaced.lean/declarations/instance.md) | 55 | `declaration-track:8d5c98af1d576d51dc5844fda03d853213a8d049c6bd7e82b84bf7698fe91d45` |
+| 3 | `theorem` | [iSup_generalizedEigenspace_eq_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IsAlgClosedNamespaced.lean/declarations/isup-generalizedeigenspace-eq-top.md) | 60 | `result-track:f8285970d93e4b5626e20dec1f2a3b0db464191fc39c44c1f061bfe037456e62` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RepresentationFaithfulnessNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RepresentationFaithfulnessNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RepresentationFaithfulnessNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RepresentationFaithfulnessNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [every_selected_twist_has_preimage](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RepresentationFaithfulnessNamespaced.lean/declarations/every-selected-twist-has-preimage.md) | 29 | `result-track:6306771b314e78062346e67df8067a683e4d5e8dde619829008352eeea364c58` |
-| 2 | `theorem` | [selected_twist_preimage_unique_of_faithful](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RepresentationFaithfulnessNamespaced.lean/declarations/selected-twist-preimage-unique-of-faithful.md) | 42 | `result-track:fa8b361381ee97852c7446e734069c4adb0dfcae0fd16364a717304b59201b4b` |
+| 1 | `theorem` | [every_selected_twist_has_preimage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RepresentationFaithfulnessNamespaced.lean/declarations/every-selected-twist-has-preimage.md) | 29 | `result-track:6306771b314e78062346e67df8067a683e4d5e8dde619829008352eeea364c58` |
+| 2 | `theorem` | [selected_twist_preimage_unique_of_faithful](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RepresentationFaithfulnessNamespaced.lean/declarations/selected-twist-preimage-unique-of-faithful.md) | 42 | `result-track:fa8b361381ee97852c7446e734069c4adb0dfcae0fd16364a717304b59201b4b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

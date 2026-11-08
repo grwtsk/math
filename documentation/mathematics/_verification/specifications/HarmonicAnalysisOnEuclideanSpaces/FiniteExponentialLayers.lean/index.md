@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../HarmonicAnalysisOnEuclideanSpaces/FiniteExponentialLayers.lean/index.md) · [Full source](../../../../HarmonicAnalysisOnEuclideanSpaces/FiniteExponentialLayers.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/FiniteExponentialLayers.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/FiniteExponentialLayers.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,14 +60,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [lowBand](../../../../HarmonicAnalysisOnEuclideanSpaces/FiniteExponentialLayers.lean/declarations/lowband.md) | 22 | `declaration-track:099e47d2c699bb31fd7df6166a3234f668469d405f3baed2488e073b0f0a0a54` |
-| 2 | `def` | [dyadicBand](../../../../HarmonicAnalysisOnEuclideanSpaces/FiniteExponentialLayers.lean/declarations/dyadicband.md) | 25 | `declaration-track:8e5163f5078a8a59f4e91a90c872e17476b5d5e526f0f28ad1c56b8ce5750f30` |
-| 3 | `theorem` | [dyadic_cover](../../../../HarmonicAnalysisOnEuclideanSpaces/FiniteExponentialLayers.lean/declarations/dyadic-cover.md) | 28 | `result-track:75e820ea843f0ff98c1db979bb19b8239ac4f64c1787ccc00019de95886dfcc0` |
-| 4 | `theorem` | [exp_neg_le_one](../../../../HarmonicAnalysisOnEuclideanSpaces/FiniteExponentialLayers.lean/declarations/exp-neg-le-one.md) | 43 | `result-track:44420fa3f504f93376891d55b7c08773390689596b23663c307491ad15db8568` |
-| 5 | `theorem` | [sum_exp_neg_le_layers](../../../../HarmonicAnalysisOnEuclideanSpaces/FiniteExponentialLayers.lean/declarations/sum-exp-neg-le-layers.md) | 48 | `result-track:48c1081b99e99e1dc395eaa841509fcbbec48a2c5029ea61c56cafb218545d32` |
-| 6 | `theorem` | [exp_dyadic_term_le_geometric](../../../../HarmonicAnalysisOnEuclideanSpaces/FiniteExponentialLayers.lean/declarations/exp-dyadic-term-le-geometric.md) | 92 | `result-track:a41a84eb760efeb2997e7a9f0ad9b4f583f455cf73ef4a3986ae8a2dc3767a9e` |
-| 7 | `theorem` | [sum_exp_dyadic_le_geometric](../../../../HarmonicAnalysisOnEuclideanSpaces/FiniteExponentialLayers.lean/declarations/sum-exp-dyadic-le-geometric.md) | 110 | `result-track:a6cbb7cbe404d665feff3e14573a2e640598d4bbfa02762600453ef24d7bdbcb` |
-| 8 | `theorem` | [sum_exp_dyadic_le_two](../../../../HarmonicAnalysisOnEuclideanSpaces/FiniteExponentialLayers.lean/declarations/sum-exp-dyadic-le-two.md) | 116 | `result-track:6154ee8e914c6348c9b136fb9b09969079d866beb9e651f9185e465ff2dbd595` |
+| 1 | `def` | [lowBand](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/FiniteExponentialLayers.lean/declarations/lowband.md) | 22 | `declaration-track:099e47d2c699bb31fd7df6166a3234f668469d405f3baed2488e073b0f0a0a54` |
+| 2 | `def` | [dyadicBand](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/FiniteExponentialLayers.lean/declarations/dyadicband.md) | 25 | `declaration-track:8e5163f5078a8a59f4e91a90c872e17476b5d5e526f0f28ad1c56b8ce5750f30` |
+| 3 | `theorem` | [dyadic_cover](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/FiniteExponentialLayers.lean/declarations/dyadic-cover.md) | 28 | `result-track:75e820ea843f0ff98c1db979bb19b8239ac4f64c1787ccc00019de95886dfcc0` |
+| 4 | `theorem` | [exp_neg_le_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/FiniteExponentialLayers.lean/declarations/exp-neg-le-one.md) | 43 | `result-track:44420fa3f504f93376891d55b7c08773390689596b23663c307491ad15db8568` |
+| 5 | `theorem` | [sum_exp_neg_le_layers](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/FiniteExponentialLayers.lean/declarations/sum-exp-neg-le-layers.md) | 48 | `result-track:48c1081b99e99e1dc395eaa841509fcbbec48a2c5029ea61c56cafb218545d32` |
+| 6 | `theorem` | [exp_dyadic_term_le_geometric](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/FiniteExponentialLayers.lean/declarations/exp-dyadic-term-le-geometric.md) | 92 | `result-track:a41a84eb760efeb2997e7a9f0ad9b4f583f455cf73ef4a3986ae8a2dc3767a9e` |
+| 7 | `theorem` | [sum_exp_dyadic_le_geometric](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/FiniteExponentialLayers.lean/declarations/sum-exp-dyadic-le-geometric.md) | 110 | `result-track:a6cbb7cbe404d665feff3e14573a2e640598d4bbfa02762600453ef24d7bdbcb` |
+| 8 | `theorem` | [sum_exp_dyadic_le_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/FiniteExponentialLayers.lean/declarations/sum-exp-dyadic-le-two.md) | 116 | `result-track:6154ee8e914c6348c9b136fb9b09969079d866beb9e651f9185e465ff2dbd595` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

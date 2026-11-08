@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/RealizationEdition1.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/RealizationEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RealizationEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RealizationEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [AuthorityClass](../../../../../ComputerScience/AlgorithmsInComputerScience/RealizationEdition1.lean/declarations/authorityclass.md) | 24 | `declaration-track:6e671fe1f140aed915bb652c61caf51bcb7c9534e897b73fd46dd704d9a55ad6` |
-| 2 | `inductive` | [RealizationMode](../../../../../ComputerScience/AlgorithmsInComputerScience/RealizationEdition1.lean/declarations/realizationmode.md) | 32 | `declaration-track:a637d0fc0c6f89f0e33cb7c8cbba72fb4ce0a2adcf14a30053c4c6b71bb0a0cc` |
-| 3 | `structure` | [ClaimBoundary](../../../../../ComputerScience/AlgorithmsInComputerScience/RealizationEdition1.lean/declarations/claimboundary.md) | 43 | `declaration-track:22e2b431e785f75b8336005422f5e8eb8f22f93a579460dfcbd5f3cc18b4d57d` |
-| 4 | `structure` | [Presentation](../../../../../ComputerScience/AlgorithmsInComputerScience/RealizationEdition1.lean/declarations/presentation.md) | 52 | `declaration-track:6b077054a0ef2cd07afb434c66af4faf03548e1f3ad6cef02836571e69f8cd28` |
-| 5 | `structure` | [RealizationCertificate](../../../../../ComputerScience/AlgorithmsInComputerScience/RealizationEdition1.lean/declarations/realizationcertificate.md) | 63 | `declaration-track:bcefacc500a58fb311d91c4dadbfb6a514537df97bc5f42b0dfbb93c56438263` |
-| 6 | `structure` | [ComplexRealizes](../../../../../ComputerScience/AlgorithmsInComputerScience/RealizationEdition1.lean/declarations/complexrealizes.md) | 69 | `declaration-track:1b3a4b3e6c73d1f8916f4988506cc9d975a03685358f4f0ff3879ac6144fbe14` |
-| 7 | `theorem` | [complexRealizes_sound](../../../../../ComputerScience/AlgorithmsInComputerScience/RealizationEdition1.lean/declarations/complexrealizes-sound.md) | 75 | `result-track:b99ff393562d8ab61fbe735a8a4b538ff6a018d7e694f5e250e8a2d9008061b8` |
+| 1 | `inductive` | [AuthorityClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RealizationEdition1.lean/declarations/authorityclass.md) | 24 | `declaration-track:6e671fe1f140aed915bb652c61caf51bcb7c9534e897b73fd46dd704d9a55ad6` |
+| 2 | `inductive` | [RealizationMode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RealizationEdition1.lean/declarations/realizationmode.md) | 32 | `declaration-track:a637d0fc0c6f89f0e33cb7c8cbba72fb4ce0a2adcf14a30053c4c6b71bb0a0cc` |
+| 3 | `structure` | [ClaimBoundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RealizationEdition1.lean/declarations/claimboundary.md) | 43 | `declaration-track:22e2b431e785f75b8336005422f5e8eb8f22f93a579460dfcbd5f3cc18b4d57d` |
+| 4 | `structure` | [Presentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RealizationEdition1.lean/declarations/presentation.md) | 52 | `declaration-track:6b077054a0ef2cd07afb434c66af4faf03548e1f3ad6cef02836571e69f8cd28` |
+| 5 | `structure` | [RealizationCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RealizationEdition1.lean/declarations/realizationcertificate.md) | 63 | `declaration-track:bcefacc500a58fb311d91c4dadbfb6a514537df97bc5f42b0dfbb93c56438263` |
+| 6 | `structure` | [ComplexRealizes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RealizationEdition1.lean/declarations/complexrealizes.md) | 69 | `declaration-track:1b3a4b3e6c73d1f8916f4988506cc9d975a03685358f4f0ff3879ac6144fbe14` |
+| 7 | `theorem` | [complexRealizes_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RealizationEdition1.lean/declarations/complexrealizes-sound.md) | 75 | `result-track:b99ff393562d8ab61fbe735a8a4b538ff6a018d7e694f5e250e8a2d9008061b8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

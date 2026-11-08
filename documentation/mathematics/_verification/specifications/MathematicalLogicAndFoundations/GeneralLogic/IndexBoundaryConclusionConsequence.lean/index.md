@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IndexBoundaryConclusionConsequence.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IndexBoundaryConclusionConsequence.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IndexBoundaryConclusionConsequence.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IndexBoundaryConclusionConsequence.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [critical_line_from_nonzero_crystalline_index](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IndexBoundaryConclusionConsequence.lean/declarations/critical-line-from-nonzero-crystalline-index.md) | 39 | `result-track:f7e5e98bbb1a0000f17e83cdb9829ebfeb488bb769414d4886f11f0da57ed1c1` |
+| 1 | `theorem` | [critical_line_from_nonzero_crystalline_index](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IndexBoundaryConclusionConsequence.lean/declarations/critical-line-from-nonzero-crystalline-index.md) | 39 | `result-track:f7e5e98bbb1a0000f17e83cdb9829ebfeb488bb769414d4886f11f0da57ed1c1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

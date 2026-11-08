@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/OperatorNorm.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/OperatorNorm.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/OperatorNorm.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/OperatorNorm.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,16 +59,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [det_conjLIE](../../../../FunctionsOfAComplexVariable/OperatorNorm.lean/declarations/det-conjlie.md) | 24 | `result-track:1066d0068c549849fb2122513ac09ff9b3a427b870d3e9ff5a5743f1cccdadcf` |
-| 2 | `theorem` | [linearEquiv_det_conjLIE](../../../../FunctionsOfAComplexVariable/OperatorNorm.lean/declarations/linearequiv-det-conjlie.md) | 29 | `result-track:a32b7f980d53ee3b4952bbe5f88e4f336150f6eaac99ba6455a29835c8794fb9` |
-| 3 | `theorem` | [reCLM_norm](../../../../FunctionsOfAComplexVariable/OperatorNorm.lean/declarations/reclm-norm.md) | 33 | `result-track:4fb2b133de923641c07dfdcbab236ee574fab8a734777897e46810f33b0c20c6` |
-| 4 | `theorem` | [reCLM_nnnorm](../../../../FunctionsOfAComplexVariable/OperatorNorm.lean/declarations/reclm-nnnorm.md) | 40 | `result-track:c8484cac1914fdac94bc0d29fb8875b678ce8f79ca2adedd8dd82a69ea7e3ecf` |
-| 5 | `theorem` | [imCLM_norm](../../../../FunctionsOfAComplexVariable/OperatorNorm.lean/declarations/imclm-norm.md) | 44 | `result-track:f5d38053e755dea77b5fc639ac2e9d38ef62e1ad52e998ea8b504b49b0553e52` |
-| 6 | `theorem` | [imCLM_nnnorm](../../../../FunctionsOfAComplexVariable/OperatorNorm.lean/declarations/imclm-nnnorm.md) | 51 | `result-track:7b8f9048cf1b2726ae9f6e18d25d6ca6997b5bb9002f9145e93283515e95da4c` |
-| 7 | `theorem` | [conjCLE_norm](../../../../FunctionsOfAComplexVariable/OperatorNorm.lean/declarations/conjcle-norm.md) | 55 | `result-track:507797107720e6509ff7889169bd57f5338e2e8fea671c75759ae4702153289e` |
-| 8 | `theorem` | [conjCLE_nnorm](../../../../FunctionsOfAComplexVariable/OperatorNorm.lean/declarations/conjcle-nnorm.md) | 59 | `result-track:da82c340c8e90b2fe4924c4bea8d84811bb7dd85882f2b6c0d5faf8cc155b62f` |
-| 9 | `theorem` | [ofRealCLM_norm](../../../../FunctionsOfAComplexVariable/OperatorNorm.lean/declarations/ofrealclm-norm.md) | 63 | `result-track:22a440871b60e046fbef46621a7dc4f742dd1089abc1ea547ebb69510dcdfb0d` |
-| 10 | `theorem` | [ofRealCLM_nnnorm](../../../../FunctionsOfAComplexVariable/OperatorNorm.lean/declarations/ofrealclm-nnnorm.md) | 67 | `result-track:e4b4333487a9cbf3a2bffec7d0b0917a4446bc3a19f22e1eaadc327a19b3f608` |
+| 1 | `theorem` | [det_conjLIE](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/OperatorNorm.lean/declarations/det-conjlie.md) | 24 | `result-track:1066d0068c549849fb2122513ac09ff9b3a427b870d3e9ff5a5743f1cccdadcf` |
+| 2 | `theorem` | [linearEquiv_det_conjLIE](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/OperatorNorm.lean/declarations/linearequiv-det-conjlie.md) | 29 | `result-track:a32b7f980d53ee3b4952bbe5f88e4f336150f6eaac99ba6455a29835c8794fb9` |
+| 3 | `theorem` | [reCLM_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/OperatorNorm.lean/declarations/reclm-norm.md) | 33 | `result-track:4fb2b133de923641c07dfdcbab236ee574fab8a734777897e46810f33b0c20c6` |
+| 4 | `theorem` | [reCLM_nnnorm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/OperatorNorm.lean/declarations/reclm-nnnorm.md) | 40 | `result-track:c8484cac1914fdac94bc0d29fb8875b678ce8f79ca2adedd8dd82a69ea7e3ecf` |
+| 5 | `theorem` | [imCLM_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/OperatorNorm.lean/declarations/imclm-norm.md) | 44 | `result-track:f5d38053e755dea77b5fc639ac2e9d38ef62e1ad52e998ea8b504b49b0553e52` |
+| 6 | `theorem` | [imCLM_nnnorm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/OperatorNorm.lean/declarations/imclm-nnnorm.md) | 51 | `result-track:7b8f9048cf1b2726ae9f6e18d25d6ca6997b5bb9002f9145e93283515e95da4c` |
+| 7 | `theorem` | [conjCLE_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/OperatorNorm.lean/declarations/conjcle-norm.md) | 55 | `result-track:507797107720e6509ff7889169bd57f5338e2e8fea671c75759ae4702153289e` |
+| 8 | `theorem` | [conjCLE_nnorm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/OperatorNorm.lean/declarations/conjcle-nnorm.md) | 59 | `result-track:da82c340c8e90b2fe4924c4bea8d84811bb7dd85882f2b6c0d5faf8cc155b62f` |
+| 9 | `theorem` | [ofRealCLM_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/OperatorNorm.lean/declarations/ofrealclm-norm.md) | 63 | `result-track:22a440871b60e046fbef46621a7dc4f742dd1089abc1ea547ebb69510dcdfb0d` |
+| 10 | `theorem` | [ofRealCLM_nnnorm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/OperatorNorm.lean/declarations/ofrealclm-nnnorm.md) | 67 | `result-track:e4b4333487a9cbf3a2bffec7d0b0917a4446bc3a19f22e1eaadc327a19b3f608` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

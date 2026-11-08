@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LineageNamespacedLineageRelation.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LineageNamespacedLineageRelation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LineageNamespacedLineageRelation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LineageNamespacedLineageRelation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [LineageRelation](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LineageNamespacedLineageRelation.lean/declarations/lineagerelation.md) | 15 | `declaration-track:7b7c6a63f4bf2bd1c2e55c676094fc7bf84a7571115cf68bcdb07a009d31fec9` |
-| 2 | `structure` | [DeclarationLineageEdge](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LineageNamespacedLineageRelation.lean/declarations/declarationlineageedge.md) | 27 | `declaration-track:20c0f5aba039cd6bb7a2ced1eb4435ed59432459b01cbc3947afcf4502ba04ac` |
+| 1 | `inductive` | [LineageRelation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LineageNamespacedLineageRelation.lean/declarations/lineagerelation.md) | 15 | `declaration-track:7b7c6a63f4bf2bd1c2e55c676094fc7bf84a7571115cf68bcdb07a009d31fec9` |
+| 2 | `structure` | [DeclarationLineageEdge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LineageNamespacedLineageRelation.lean/declarations/declarationlineageedge.md) | 27 | `declaration-track:20c0f5aba039cd6bb7a2ced1eb4435ed59432459b01cbc3947afcf4502ba04ac` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

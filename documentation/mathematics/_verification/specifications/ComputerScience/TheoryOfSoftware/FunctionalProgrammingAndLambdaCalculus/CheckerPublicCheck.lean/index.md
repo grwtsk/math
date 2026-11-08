@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CheckerPublicCheck.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CheckerPublicCheck.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CheckerPublicCheck.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CheckerPublicCheck.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [check](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CheckerPublicCheck.lean/declarations/check.md) | 30 | `declaration-track:2ea1a8892c7b4b90be09532f7360e838b18f74aa1f726d764b35f92cade363d5` |
-| 2 | `theorem` | [check_sound](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CheckerPublicCheck.lean/declarations/check-sound.md) | 39 | `result-track:234d0e725f3b61b6636c50637d65ae3e12fe3951d6683d1b46df5172bc0058ff` |
+| 1 | `def` | [check](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CheckerPublicCheck.lean/declarations/check.md) | 30 | `declaration-track:2ea1a8892c7b4b90be09532f7360e838b18f74aa1f726d764b35f92cade363d5` |
+| 2 | `theorem` | [check_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CheckerPublicCheck.lean/declarations/check-sound.md) | 39 | `result-track:234d0e725f3b61b6636c50637d65ae3e12fe3951d6683d1b46df5172bc0058ff` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

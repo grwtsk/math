@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SamplingSecondDerivativeExactStatements.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SamplingSecondDerivativeExactStatements.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SamplingSecondDerivativeExactStatements.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SamplingSecondDerivativeExactStatements.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../MeasureAndIntegration/SamplingSecondDerivativeExactStatements.lean/declarations/example.md) | 12 | `declaration-track:0664f3d6dce6dfe90ebcb02c9bcfcda8ab6dd649455440dbe6ca5675648623b9` |
-| 2 | `example` | [(anonymous)](../../../../MeasureAndIntegration/SamplingSecondDerivativeExactStatements.lean/declarations/example-source-edition-2.md) | 15 | `declaration-track:231ed35fa6c6f6336a6c548ee645a83ff0920f02d8090cfc13a43af67eb4c37b` |
-| 3 | `example` | [(anonymous)](../../../../MeasureAndIntegration/SamplingSecondDerivativeExactStatements.lean/declarations/example-source-edition-8.md) | 22 | `declaration-track:702b9cb80b5a7677ea7eeea847d99a9d21599af177a0b277c5e12d6b054a964d` |
-| 4 | `example` | [(anonymous)](../../../../MeasureAndIntegration/SamplingSecondDerivativeExactStatements.lean/declarations/example-source-edition-10.md) | 25 | `declaration-track:b5470ba9a23cdfd88c6d8ca36c097853fdef34ec22c83ea76cad44edc5362b3d` |
-| 5 | `example` | [(anonymous)](../../../../MeasureAndIntegration/SamplingSecondDerivativeExactStatements.lean/declarations/example-source-edition-3.md) | 30 | `declaration-track:41a8043336f593c1546c04bad307c8e4af7fd7cedb9164f52600822406348808` |
-| 6 | `example` | [(anonymous)](../../../../MeasureAndIntegration/SamplingSecondDerivativeExactStatements.lean/declarations/example-source-edition-9.md) | 34 | `declaration-track:7bdee3a1e668a5235aa77eb65fec72af6180ec46dd0b9c68e88273e1d028e58f` |
-| 7 | `example` | [(anonymous)](../../../../MeasureAndIntegration/SamplingSecondDerivativeExactStatements.lean/declarations/example-source-edition-5.md) | 41 | `declaration-track:6402d15878badde13416d3134fbd54a413c0e1b4d5669f75ef8b40ef44ec4ac2` |
-| 8 | `example` | [(anonymous)](../../../../MeasureAndIntegration/SamplingSecondDerivativeExactStatements.lean/declarations/example-source-edition-6.md) | 49 | `declaration-track:66df9f86b5ddac6f90c6b4da7de247ee6002a7fd39fe5b6dfb8212f7c40e9a2d` |
-| 9 | `example` | [(anonymous)](../../../../MeasureAndIntegration/SamplingSecondDerivativeExactStatements.lean/declarations/example-source-edition-7.md) | 56 | `declaration-track:6704d5728e29e8e1065d93a129e45cbb3c7c1c5dc8b9de0aea0ea76d413bf239` |
-| 10 | `example` | [(anonymous)](../../../../MeasureAndIntegration/SamplingSecondDerivativeExactStatements.lean/declarations/example-source-edition-4.md) | 62 | `declaration-track:5ac7cfb981f0ca918bfdf0c5a0dc5b9053451d511a8dc668f164caebc28f7b03` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SamplingSecondDerivativeExactStatements.lean/declarations/example.md) | 12 | `declaration-track:0664f3d6dce6dfe90ebcb02c9bcfcda8ab6dd649455440dbe6ca5675648623b9` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SamplingSecondDerivativeExactStatements.lean/declarations/example-source-edition-2.md) | 15 | `declaration-track:231ed35fa6c6f6336a6c548ee645a83ff0920f02d8090cfc13a43af67eb4c37b` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SamplingSecondDerivativeExactStatements.lean/declarations/example-source-edition-8.md) | 22 | `declaration-track:702b9cb80b5a7677ea7eeea847d99a9d21599af177a0b277c5e12d6b054a964d` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SamplingSecondDerivativeExactStatements.lean/declarations/example-source-edition-10.md) | 25 | `declaration-track:b5470ba9a23cdfd88c6d8ca36c097853fdef34ec22c83ea76cad44edc5362b3d` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SamplingSecondDerivativeExactStatements.lean/declarations/example-source-edition-3.md) | 30 | `declaration-track:41a8043336f593c1546c04bad307c8e4af7fd7cedb9164f52600822406348808` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SamplingSecondDerivativeExactStatements.lean/declarations/example-source-edition-9.md) | 34 | `declaration-track:7bdee3a1e668a5235aa77eb65fec72af6180ec46dd0b9c68e88273e1d028e58f` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SamplingSecondDerivativeExactStatements.lean/declarations/example-source-edition-5.md) | 41 | `declaration-track:6402d15878badde13416d3134fbd54a413c0e1b4d5669f75ef8b40ef44ec4ac2` |
+| 8 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SamplingSecondDerivativeExactStatements.lean/declarations/example-source-edition-6.md) | 49 | `declaration-track:66df9f86b5ddac6f90c6b4da7de247ee6002a7fd39fe5b6dfb8212f7c40e9a2d` |
+| 9 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SamplingSecondDerivativeExactStatements.lean/declarations/example-source-edition-7.md) | 56 | `declaration-track:6704d5728e29e8e1065d93a129e45cbb3c7c1c5dc8b9de0aea0ea76d413bf239` |
+| 10 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SamplingSecondDerivativeExactStatements.lean/declarations/example-source-edition-4.md) | 62 | `declaration-track:5ac7cfb981f0ca918bfdf0c5a0dc5b9053451d511a8dc668f164caebc28f7b03` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

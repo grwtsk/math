@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/VertexOperator.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/VertexOperator.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/VertexOperator.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/VertexOperator.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,17 +58,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [VertexOperator](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/VertexOperator.lean/declarations/vertexoperator.md) | 35 | `declaration-track:3de22a830b84ecadb6421161895f54848038c85826a06bf91ea40b9dd9f4226c` |
-| 2 | `theorem` | [ext](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/VertexOperator.lean/declarations/ext.md) | 43 | `result-track:3f660295ee0d6f6377b7da0c7e91d80e040d877736f29afbdacd7c387701d802` |
-| 3 | `def` | [ncoeff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/VertexOperator.lean/declarations/ncoeff.md) | 47 | `declaration-track:25611df22092e875b136deb003259d523c75aff556cd08aee35478aa5fde804a` |
-| 4 | `theorem` | [coeff_eq_ncoeff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/VertexOperator.lean/declarations/coeff-eq-ncoeff.md) | 55 | `result-track:f4ccb0f6714baf3ca6be22becb5c1f468ba344b428ef769efc366267f2143c02` |
-| 5 | `theorem` | [ncoeff_add](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/VertexOperator.lean/declarations/ncoeff-add.md) | 60 | `result-track:09da6438ce709d8c1ee801414810699bd14eee854b633d53721e8a517fd6385a` |
-| 6 | `theorem` | [ncoeff_smul](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/VertexOperator.lean/declarations/ncoeff-smul.md) | 64 | `result-track:b66bb636e0306dee348c2e951073249f14683403892761e0833e15ba86aa9d0a` |
-| 7 | `theorem` | [ncoeff_eq_zero_of_lt_order](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/VertexOperator.lean/declarations/ncoeff-eq-zero-of-lt-order.md) | 67 | `result-track:d470d26680834d8c2c5550467968a2d97403ec905e689add2d8239a3f7882d95` |
-| 8 | `theorem` | [coeff_eq_zero_of_lt_order](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/VertexOperator.lean/declarations/coeff-eq-zero-of-lt-order.md) | 72 | `result-track:f082e699ef9dbca68acca53dcb8d43d881fbe182b04f264f5988b9d9362ab55f` |
-| 9 | `def` | [of_coeff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/VertexOperator.lean/declarations/of-coeff.md) | 79 | `declaration-track:9c9981d005fd640cee66de567be8d832955e1713cc307e8433d957800cf1b955` |
-| 10 | `theorem` | [of_coeff_apply_coeff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/VertexOperator.lean/declarations/of-coeff-apply-coeff.md) | 87 | `result-track:421da6bb0b1d9439c9a20651b2ae0a00ba59f83018716f2373f72e892a78bf70` |
-| 11 | `theorem` | [ncoeff_of_coeff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/VertexOperator.lean/declarations/ncoeff-of-coeff.md) | 93 | `result-track:f2e328f5cb67ab6ca86421a60efb52368e9701f037faefcbec0e7270a672540a` |
+| 1 | `abbrev` | [VertexOperator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/VertexOperator.lean/declarations/vertexoperator.md) | 35 | `declaration-track:3de22a830b84ecadb6421161895f54848038c85826a06bf91ea40b9dd9f4226c` |
+| 2 | `theorem` | [ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/VertexOperator.lean/declarations/ext.md) | 43 | `result-track:3f660295ee0d6f6377b7da0c7e91d80e040d877736f29afbdacd7c387701d802` |
+| 3 | `def` | [ncoeff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/VertexOperator.lean/declarations/ncoeff.md) | 47 | `declaration-track:25611df22092e875b136deb003259d523c75aff556cd08aee35478aa5fde804a` |
+| 4 | `theorem` | [coeff_eq_ncoeff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/VertexOperator.lean/declarations/coeff-eq-ncoeff.md) | 55 | `result-track:f4ccb0f6714baf3ca6be22becb5c1f468ba344b428ef769efc366267f2143c02` |
+| 5 | `theorem` | [ncoeff_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/VertexOperator.lean/declarations/ncoeff-add.md) | 60 | `result-track:09da6438ce709d8c1ee801414810699bd14eee854b633d53721e8a517fd6385a` |
+| 6 | `theorem` | [ncoeff_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/VertexOperator.lean/declarations/ncoeff-smul.md) | 64 | `result-track:b66bb636e0306dee348c2e951073249f14683403892761e0833e15ba86aa9d0a` |
+| 7 | `theorem` | [ncoeff_eq_zero_of_lt_order](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/VertexOperator.lean/declarations/ncoeff-eq-zero-of-lt-order.md) | 67 | `result-track:d470d26680834d8c2c5550467968a2d97403ec905e689add2d8239a3f7882d95` |
+| 8 | `theorem` | [coeff_eq_zero_of_lt_order](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/VertexOperator.lean/declarations/coeff-eq-zero-of-lt-order.md) | 72 | `result-track:f082e699ef9dbca68acca53dcb8d43d881fbe182b04f264f5988b9d9362ab55f` |
+| 9 | `def` | [of_coeff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/VertexOperator.lean/declarations/of-coeff.md) | 79 | `declaration-track:9c9981d005fd640cee66de567be8d832955e1713cc307e8433d957800cf1b955` |
+| 10 | `theorem` | [of_coeff_apply_coeff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/VertexOperator.lean/declarations/of-coeff-apply-coeff.md) | 87 | `result-track:421da6bb0b1d9439c9a20651b2ae0a00ba59f83018716f2373f72e892a78bf70` |
+| 11 | `theorem` | [ncoeff_of_coeff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/VertexOperator.lean/declarations/ncoeff-of-coeff.md) | 93 | `result-track:f2e328f5cb67ab6ca86421a60efb52368e9701f037faefcbec0e7270a672540a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

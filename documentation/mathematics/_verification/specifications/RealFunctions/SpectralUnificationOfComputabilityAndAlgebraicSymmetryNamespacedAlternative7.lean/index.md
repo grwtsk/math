@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/SpectralUnificationOfComputabilityAndAlgebraicSymmetryNamespacedAlternative7.lean/index.md) · [Full source](../../../../RealFunctions/SpectralUnificationOfComputabilityAndAlgebraicSymmetryNamespacedAlternative7.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SpectralUnificationOfComputabilityAndAlgebraicSymmetryNamespacedAlternative7.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SpectralUnificationOfComputabilityAndAlgebraicSymmetryNamespacedAlternative7.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sourceCorrelation_deriv_zero](../../../../RealFunctions/SpectralUnificationOfComputabilityAndAlgebraicSymmetryNamespacedAlternative7.lean/declarations/sourcecorrelation-deriv-zero.md) | 33 | `result-track:0ec3f17b58cc8972d240edaab4cc3ea28808021cee5ac5ae2e45609eaed7208d` |
-| 2 | `theorem` | [sourceCorrelation_deriv_abs_le_anchored](../../../../RealFunctions/SpectralUnificationOfComputabilityAndAlgebraicSymmetryNamespacedAlternative7.lean/declarations/sourcecorrelation-deriv-abs-le-anchored.md) | 49 | `result-track:d28f361e2563eec29d8c7f5542be8d3aad96b03c2319a62f9e41fe1dce71bafe` |
-| 3 | `theorem` | [sourceLogKernel_deriv_abs_le_anchored](../../../../RealFunctions/SpectralUnificationOfComputabilityAndAlgebraicSymmetryNamespacedAlternative7.lean/declarations/sourcelogkernel-deriv-abs-le-anchored.md) | 64 | `result-track:c0637f34606c362f5f305b48eb4a35feef6a5b1c5f548158da553fa2649dbd43` |
-| 4 | `theorem` | [sourceLogKernel_deriv_abs_le_min](../../../../RealFunctions/SpectralUnificationOfComputabilityAndAlgebraicSymmetryNamespacedAlternative7.lean/declarations/sourcelogkernel-deriv-abs-le-min.md) | 77 | `result-track:369efd61b9f57845e132d92bdbed4fab91e79d161429578926cba2c7dd7291f2` |
+| 1 | `theorem` | [sourceCorrelation_deriv_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SpectralUnificationOfComputabilityAndAlgebraicSymmetryNamespacedAlternative7.lean/declarations/sourcecorrelation-deriv-zero.md) | 33 | `result-track:0ec3f17b58cc8972d240edaab4cc3ea28808021cee5ac5ae2e45609eaed7208d` |
+| 2 | `theorem` | [sourceCorrelation_deriv_abs_le_anchored](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SpectralUnificationOfComputabilityAndAlgebraicSymmetryNamespacedAlternative7.lean/declarations/sourcecorrelation-deriv-abs-le-anchored.md) | 49 | `result-track:d28f361e2563eec29d8c7f5542be8d3aad96b03c2319a62f9e41fe1dce71bafe` |
+| 3 | `theorem` | [sourceLogKernel_deriv_abs_le_anchored](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SpectralUnificationOfComputabilityAndAlgebraicSymmetryNamespacedAlternative7.lean/declarations/sourcelogkernel-deriv-abs-le-anchored.md) | 64 | `result-track:c0637f34606c362f5f305b48eb4a35feef6a5b1c5f548158da553fa2649dbd43` |
+| 4 | `theorem` | [sourceLogKernel_deriv_abs_le_min](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SpectralUnificationOfComputabilityAndAlgebraicSymmetryNamespacedAlternative7.lean/declarations/sourcelogkernel-deriv-abs-le-min.md) | 77 | `result-track:369efd61b9f57845e132d92bdbed4fab91e79d161429578926cba2c7dd7291f2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

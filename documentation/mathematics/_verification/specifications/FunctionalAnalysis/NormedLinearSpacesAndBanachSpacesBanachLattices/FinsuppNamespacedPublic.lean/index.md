@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/FinsuppNamespacedPublic.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/FinsuppNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/FinsuppNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/FinsuppNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,13 +60,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/FinsuppNamespacedPublic.lean/declarations/instance.md) | 47 | `declaration-track:53c779b6501494939646e58a046c12a669af8c15dd8b2e7e8abb456d3734248d` |
-| 2 | `lemma` | [edist_def](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/FinsuppNamespacedPublic.lean/declarations/edist-def.md) | 70 | `result-track:0122b6af89304e8eb36c954eaa78a5a60e74ace41528f9c4a9e4d670267efef7` |
-| 3 | `instance` | [(anonymous)](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/FinsuppNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 76 | `declaration-track:e08eee9a5126840e1db0821f32c193d243eb391c4f3169ab812832dd5b367ea4` |
-| 4 | `instance` | [(anonymous)](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/FinsuppNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 80 | `declaration-track:add3c46c7b3f2502b73763c724db5f1d9dd55636cd63640372fad97f20e0d2d6` |
-| 5 | `lemma` | [dist_def](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/FinsuppNamespacedPublic.lean/declarations/dist-def.md) | 91 | `result-track:95b1267be2b2d76baf17d384e8495c9182a91e8990bf2225435a36c82cec3b6e` |
-| 6 | `lemma` | [nndist_def](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/FinsuppNamespacedPublic.lean/declarations/nndist-def.md) | 95 | `result-track:428a7022da99a8e4d7ca353ec6b78bb05b47b3dd55f45e7937dfc6061cf16a5c` |
-| 7 | `instance` | [(anonymous)](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/FinsuppNamespacedPublic.lean/declarations/instance-source-edition-4.md) | 105 | `declaration-track:e467751a3602dd1b44d686882994223b861b4c81d8296d38d20c8f2130904f1e` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/FinsuppNamespacedPublic.lean/declarations/instance.md) | 47 | `declaration-track:53c779b6501494939646e58a046c12a669af8c15dd8b2e7e8abb456d3734248d` |
+| 2 | `lemma` | [edist_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/FinsuppNamespacedPublic.lean/declarations/edist-def.md) | 70 | `result-track:0122b6af89304e8eb36c954eaa78a5a60e74ace41528f9c4a9e4d670267efef7` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/FinsuppNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 76 | `declaration-track:e08eee9a5126840e1db0821f32c193d243eb391c4f3169ab812832dd5b367ea4` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/FinsuppNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 80 | `declaration-track:add3c46c7b3f2502b73763c724db5f1d9dd55636cd63640372fad97f20e0d2d6` |
+| 5 | `lemma` | [dist_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/FinsuppNamespacedPublic.lean/declarations/dist-def.md) | 91 | `result-track:95b1267be2b2d76baf17d384e8495c9182a91e8990bf2225435a36c82cec3b6e` |
+| 6 | `lemma` | [nndist_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/FinsuppNamespacedPublic.lean/declarations/nndist-def.md) | 95 | `result-track:428a7022da99a8e4d7ca353ec6b78bb05b47b3dd55f45e7937dfc6061cf16a5c` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/FinsuppNamespacedPublic.lean/declarations/instance-source-edition-4.md) | 105 | `declaration-track:e467751a3602dd1b44d686882994223b861b4c81d8296d38d20c8f2130904f1e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

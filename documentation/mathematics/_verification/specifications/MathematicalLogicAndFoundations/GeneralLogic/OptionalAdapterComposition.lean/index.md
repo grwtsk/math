@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OptionalAdapterComposition.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OptionalAdapterComposition.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OptionalAdapterComposition.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OptionalAdapterComposition.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Interfaces.OptionalAdapterGate`](../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/OptionalAdapterGate.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Interfaces.OptionalAdapterGate`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/OptionalAdapterGate.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [AcceptedPlan](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OptionalAdapterComposition.lean/declarations/acceptedplan.md) | 11 | `declaration-track:ff627f311bbba62b1e71bb58aa3bab8e31da32585dd9ffb37ad55d147a58cd71` |
-| 2 | `def` | [Touches](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OptionalAdapterComposition.lean/declarations/touches.md) | 25 | `declaration-track:c69dfad62b8194f4ce5d85b8c45116cbdf23e7263b429f7e1b4dc47b2a45aeef` |
-| 3 | `def` | [append](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OptionalAdapterComposition.lean/declarations/append.md) | 30 | `declaration-track:f2894ccd47414639c2f8ca900f86ca25cc98a756c67411bcab7ef7ab48c9e315` |
-| 4 | `theorem` | [nil_append](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OptionalAdapterComposition.lean/declarations/nil-append.md) | 35 | `result-track:b8ec696fca11e03a686caed1083563a0c895f1bc5d4c548cd6dad4bf82e26574` |
-| 5 | `theorem` | [append_nil](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OptionalAdapterComposition.lean/declarations/append-nil.md) | 39 | `result-track:6dcd643ee4fe47f1edfb735bd5a33ba2186a4972fe188b4eeea3418c3cf6304f` |
-| 6 | `theorem` | [append_assoc](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OptionalAdapterComposition.lean/declarations/append-assoc.md) | 46 | `result-track:9c878f9c4854a7a2f79cf22f0ac2d99cbcd3871f54ad62fdcd1499d5c2716ce1` |
-| 7 | `theorem` | [apply_eq_of_not_touches](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OptionalAdapterComposition.lean/declarations/apply-eq-of-not-touches.md) | 55 | `result-track:543e47cc59a408f7455bdae902fd86689aaf20ba8065bbf93cbf8e6cdd1d1c9c` |
-| 8 | `theorem` | [preserves_none_of_not_touches](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OptionalAdapterComposition.lean/declarations/preserves-none-of-not-touches.md) | 70 | `result-track:8ebcd0dbe9d491ea8ab07ddefd2cfbee04fb7dfc571836df90d5154f04bd82ab` |
-| 9 | `theorem` | [touches_append](../../../../../MathematicalLogicAndFoundations/GeneralLogic/OptionalAdapterComposition.lean/declarations/touches-append.md) | 77 | `result-track:6110b3061b859b9094f9d3c11585f053ed568e16ff4ce91ce9c21fe1cabc4010` |
+| 1 | `inductive` | [AcceptedPlan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OptionalAdapterComposition.lean/declarations/acceptedplan.md) | 11 | `declaration-track:ff627f311bbba62b1e71bb58aa3bab8e31da32585dd9ffb37ad55d147a58cd71` |
+| 2 | `def` | [Touches](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OptionalAdapterComposition.lean/declarations/touches.md) | 25 | `declaration-track:c69dfad62b8194f4ce5d85b8c45116cbdf23e7263b429f7e1b4dc47b2a45aeef` |
+| 3 | `def` | [append](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OptionalAdapterComposition.lean/declarations/append.md) | 30 | `declaration-track:f2894ccd47414639c2f8ca900f86ca25cc98a756c67411bcab7ef7ab48c9e315` |
+| 4 | `theorem` | [nil_append](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OptionalAdapterComposition.lean/declarations/nil-append.md) | 35 | `result-track:b8ec696fca11e03a686caed1083563a0c895f1bc5d4c548cd6dad4bf82e26574` |
+| 5 | `theorem` | [append_nil](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OptionalAdapterComposition.lean/declarations/append-nil.md) | 39 | `result-track:6dcd643ee4fe47f1edfb735bd5a33ba2186a4972fe188b4eeea3418c3cf6304f` |
+| 6 | `theorem` | [append_assoc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OptionalAdapterComposition.lean/declarations/append-assoc.md) | 46 | `result-track:9c878f9c4854a7a2f79cf22f0ac2d99cbcd3871f54ad62fdcd1499d5c2716ce1` |
+| 7 | `theorem` | [apply_eq_of_not_touches](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OptionalAdapterComposition.lean/declarations/apply-eq-of-not-touches.md) | 55 | `result-track:543e47cc59a408f7455bdae902fd86689aaf20ba8065bbf93cbf8e6cdd1d1c9c` |
+| 8 | `theorem` | [preserves_none_of_not_touches](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OptionalAdapterComposition.lean/declarations/preserves-none-of-not-touches.md) | 70 | `result-track:8ebcd0dbe9d491ea8ab07ddefd2cfbee04fb7dfc571836df90d5154f04bd82ab` |
+| 9 | `theorem` | [touches_append](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/OptionalAdapterComposition.lean/declarations/touches-append.md) | 77 | `result-track:6110b3061b859b9094f9d3c11585f053ed568e16ff4ce91ce9c21fe1cabc4010` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

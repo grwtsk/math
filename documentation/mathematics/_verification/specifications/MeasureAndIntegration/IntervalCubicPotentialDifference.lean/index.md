@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/IntervalCubicPotentialDifference.lean/index.md) · [Full source](../../../../MeasureAndIntegration/IntervalCubicPotentialDifference.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntervalCubicPotentialDifference.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntervalCubicPotentialDifference.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [cubicPotentialDifference](../../../../MeasureAndIntegration/IntervalCubicPotentialDifference.lean/declarations/cubicpotentialdifference.md) | 17 | `declaration-track:59d23408528d4f3622a82b9ccfb4dd00be870535e2b17a5f011d92ed1e65f49d` |
-| 2 | `theorem` | [cubicPotentialDifference_self](../../../../MeasureAndIntegration/IntervalCubicPotentialDifference.lean/declarations/cubicpotentialdifference-self.md) | 22 | `result-track:c62869f3f1f4fb19c73cade205819a36fe471bb3ed65855c8138d2c171755ab5` |
-| 3 | `theorem` | [cubicPotentialDifference_trans](../../../../MeasureAndIntegration/IntervalCubicPotentialDifference.lean/declarations/cubicpotentialdifference-trans.md) | 28 | `result-track:d5d69d3fe6afb4c8051d61fd1363dcb575a33f371da58871a6b99cd88abad035` |
-| 4 | `theorem` | [intervalIntegral_cubic](../../../../MeasureAndIntegration/IntervalCubicPotentialDifference.lean/declarations/intervalintegral-cubic.md) | 37 | `result-track:33c04aa86fda2f61eb3e682f4889e429130d5010fb06cdb0f5ff6592d99e740c` |
+| 1 | `def` | [cubicPotentialDifference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntervalCubicPotentialDifference.lean/declarations/cubicpotentialdifference.md) | 17 | `declaration-track:59d23408528d4f3622a82b9ccfb4dd00be870535e2b17a5f011d92ed1e65f49d` |
+| 2 | `theorem` | [cubicPotentialDifference_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntervalCubicPotentialDifference.lean/declarations/cubicpotentialdifference-self.md) | 22 | `result-track:c62869f3f1f4fb19c73cade205819a36fe471bb3ed65855c8138d2c171755ab5` |
+| 3 | `theorem` | [cubicPotentialDifference_trans](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntervalCubicPotentialDifference.lean/declarations/cubicpotentialdifference-trans.md) | 28 | `result-track:d5d69d3fe6afb4c8051d61fd1363dcb575a33f371da58871a6b99cd88abad035` |
+| 4 | `theorem` | [intervalIntegral_cubic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntervalCubicPotentialDifference.lean/declarations/intervalintegral-cubic.md) | 37 | `result-track:33c04aa86fda2f61eb3e682f4889e429130d5010fb06cdb0f5ff6592d99e740c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

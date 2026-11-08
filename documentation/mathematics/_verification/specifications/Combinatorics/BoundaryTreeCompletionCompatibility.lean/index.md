@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/BoundaryTreeCompletionCompatibility.lean/index.md) · [Full source](../../../../Combinatorics/BoundaryTreeCompletionCompatibility.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundaryTreeCompletionCompatibility.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundaryTreeCompletionCompatibility.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TreeCompletionCompatibility](../../../../Combinatorics/BoundaryTreeCompletionCompatibility.lean/declarations/treecompletioncompatibility.md) | 20 | `declaration-track:75012b0972d47d46a0a4d6c67dc70b06d4c0a4a852ed9b6ef6208c9e7bbadbc2` |
-| 2 | `structure` | [FirstInfeasibleBoundary](../../../../Combinatorics/BoundaryTreeCompletionCompatibility.lean/declarations/firstinfeasibleboundary.md) | 40 | `declaration-track:875c6bef5f4c473d24a43b1e19060c86d7b24c12df5ab861fb8b2d61ada40eac` |
-| 3 | `structure` | [RootedBranch](../../../../Combinatorics/BoundaryTreeCompletionCompatibility.lean/declarations/rootedbranch.md) | 66 | `declaration-track:f7f22695732ac4a55f6f01473654941517425158b8fcb4f23e6f29b896c0a14d` |
-| 4 | `structure` | [FailedBranchBoundaryCertificate](../../../../Combinatorics/BoundaryTreeCompletionCompatibility.lean/declarations/failedbranchboundarycertificate.md) | 84 | `declaration-track:1e9c6af773d78ca46ff91338949bd5be12d651f250683129d8ace5cac53f74a9` |
-| 5 | `theorem` | [failed_branch_has_first_infeasible](../../../../Combinatorics/BoundaryTreeCompletionCompatibility.lean/declarations/failed-branch-has-first-infeasible.md) | 112 | `result-track:4d4dd886f85bf090bf5f1ee729196cdaf0b88e9661114300fb9836ae4556fcdc` |
-| 6 | `theorem` | [first_infeasible_unique_on_branch](../../../../Combinatorics/BoundaryTreeCompletionCompatibility.lean/declarations/first-infeasible-unique-on-branch.md) | 136 | `result-track:3f7e45657630c9f9793f7e8f1d55e3910b6d1fec8cfcb07c1e797e0639d57a81` |
+| 1 | `structure` | [TreeCompletionCompatibility](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundaryTreeCompletionCompatibility.lean/declarations/treecompletioncompatibility.md) | 20 | `declaration-track:75012b0972d47d46a0a4d6c67dc70b06d4c0a4a852ed9b6ef6208c9e7bbadbc2` |
+| 2 | `structure` | [FirstInfeasibleBoundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundaryTreeCompletionCompatibility.lean/declarations/firstinfeasibleboundary.md) | 40 | `declaration-track:875c6bef5f4c473d24a43b1e19060c86d7b24c12df5ab861fb8b2d61ada40eac` |
+| 3 | `structure` | [RootedBranch](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundaryTreeCompletionCompatibility.lean/declarations/rootedbranch.md) | 66 | `declaration-track:f7f22695732ac4a55f6f01473654941517425158b8fcb4f23e6f29b896c0a14d` |
+| 4 | `structure` | [FailedBranchBoundaryCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundaryTreeCompletionCompatibility.lean/declarations/failedbranchboundarycertificate.md) | 84 | `declaration-track:1e9c6af773d78ca46ff91338949bd5be12d651f250683129d8ace5cac53f74a9` |
+| 5 | `theorem` | [failed_branch_has_first_infeasible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundaryTreeCompletionCompatibility.lean/declarations/failed-branch-has-first-infeasible.md) | 112 | `result-track:4d4dd886f85bf090bf5f1ee729196cdaf0b88e9661114300fb9836ae4556fcdc` |
+| 6 | `theorem` | [first_infeasible_unique_on_branch](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundaryTreeCompletionCompatibility.lean/declarations/first-infeasible-unique-on-branch.md) | 136 | `result-track:3f7e45657630c9f9793f7e8f1d55e3910b6d1fec8cfcb07c1e797e0639d57a81` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/StringOrderPublic.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/StringOrderPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StringOrderPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StringOrderPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,18 +61,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [not_le](../../../../../ComputerScience/AlgorithmsInComputerScience/StringOrderPublic.lean/declarations/not-le.md) | 23 | `result-track:1424e3e6f1ac62ce2de5ad370269ab6eabf6b4d989fae8b09a03a1256328060b` |
-| 2 | `theorem` | [not_lt](../../../../../ComputerScience/AlgorithmsInComputerScience/StringOrderPublic.lean/declarations/not-lt.md) | 24 | `result-track:3a25bc69840d8620cf98674bd4202ade6a50bfb80f8fe04083f4c2bc4a67f97e` |
-| 3 | `theorem` | [le_refl](../../../../../ComputerScience/AlgorithmsInComputerScience/StringOrderPublic.lean/declarations/le-refl.md) | 25 | `result-track:3b695ff9e7c7ed846d1a64dc54ed176867a7731ede6cf8a3614ba8a6a345da63` |
-| 4 | `theorem` | [lt_irrefl](../../../../../ComputerScience/AlgorithmsInComputerScience/StringOrderPublic.lean/declarations/lt-irrefl.md) | 26 | `result-track:fad62fdc2730b009bbd8b4749ce1c9dcdbff07a5830cfb0ac422f3508f2769e4` |
-| 5 | `theorem` | [le_trans](../../../../../ComputerScience/AlgorithmsInComputerScience/StringOrderPublic.lean/declarations/le-trans.md) | 30 | `result-track:116a6d22898046434c12728bbb4f613705a0f24ed9252ddf80e771b1c1b74e02` |
-| 6 | `theorem` | [lt_trans](../../../../../ComputerScience/AlgorithmsInComputerScience/StringOrderPublic.lean/declarations/lt-trans.md) | 31 | `result-track:fe2f7c8456ff4fca49c677f380ac577c67d0aaaf95831c70f7ef6d7f5a051b9a` |
-| 7 | `theorem` | [le_total](../../../../../ComputerScience/AlgorithmsInComputerScience/StringOrderPublic.lean/declarations/le-total.md) | 32 | `result-track:7bb80787aa3a3b880d9689fb67d0644ca2aa1ef6c4eabcf979835e43fe553bb0` |
-| 8 | `theorem` | [le_antisymm](../../../../../ComputerScience/AlgorithmsInComputerScience/StringOrderPublic.lean/declarations/le-antisymm.md) | 33 | `result-track:0a3f26de9c5e21da7de25b7144e1312d30c45a018a5402b28c9f89c96fe5b95a` |
-| 9 | `theorem` | [lt_asymm](../../../../../ComputerScience/AlgorithmsInComputerScience/StringOrderPublic.lean/declarations/lt-asymm.md) | 34 | `result-track:32ff45c97ecd797deefa3e4afe5882890f4cf7670f9e46c5463097831856eab9` |
-| 10 | `theorem` | [ne_of_lt](../../../../../ComputerScience/AlgorithmsInComputerScience/StringOrderPublic.lean/declarations/ne-of-lt.md) | 35 | `result-track:cd9795fcb021f42bd11c1ab01e495065c3e582e7461215ffabe1a8b6a214fbcf` |
-| 11 | `instance` | [instIsLinearOrder](../../../../../ComputerScience/AlgorithmsInComputerScience/StringOrderPublic.lean/declarations/instislinearorder.md) | 39 | `declaration-track:0ca311c94e7cf60e331c7378402548c78fc2cf920eaef224960fb02a9ece4f16` |
-| 12 | `instance` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/StringOrderPublic.lean/declarations/instance.md) | 45 | `declaration-track:d48f4000f5696c6b9686ff7760b64e7d158016c0373ce625c01b6611400bf990` |
+| 1 | `theorem` | [not_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StringOrderPublic.lean/declarations/not-le.md) | 23 | `result-track:1424e3e6f1ac62ce2de5ad370269ab6eabf6b4d989fae8b09a03a1256328060b` |
+| 2 | `theorem` | [not_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StringOrderPublic.lean/declarations/not-lt.md) | 24 | `result-track:3a25bc69840d8620cf98674bd4202ade6a50bfb80f8fe04083f4c2bc4a67f97e` |
+| 3 | `theorem` | [le_refl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StringOrderPublic.lean/declarations/le-refl.md) | 25 | `result-track:3b695ff9e7c7ed846d1a64dc54ed176867a7731ede6cf8a3614ba8a6a345da63` |
+| 4 | `theorem` | [lt_irrefl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StringOrderPublic.lean/declarations/lt-irrefl.md) | 26 | `result-track:fad62fdc2730b009bbd8b4749ce1c9dcdbff07a5830cfb0ac422f3508f2769e4` |
+| 5 | `theorem` | [le_trans](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StringOrderPublic.lean/declarations/le-trans.md) | 30 | `result-track:116a6d22898046434c12728bbb4f613705a0f24ed9252ddf80e771b1c1b74e02` |
+| 6 | `theorem` | [lt_trans](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StringOrderPublic.lean/declarations/lt-trans.md) | 31 | `result-track:fe2f7c8456ff4fca49c677f380ac577c67d0aaaf95831c70f7ef6d7f5a051b9a` |
+| 7 | `theorem` | [le_total](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StringOrderPublic.lean/declarations/le-total.md) | 32 | `result-track:7bb80787aa3a3b880d9689fb67d0644ca2aa1ef6c4eabcf979835e43fe553bb0` |
+| 8 | `theorem` | [le_antisymm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StringOrderPublic.lean/declarations/le-antisymm.md) | 33 | `result-track:0a3f26de9c5e21da7de25b7144e1312d30c45a018a5402b28c9f89c96fe5b95a` |
+| 9 | `theorem` | [lt_asymm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StringOrderPublic.lean/declarations/lt-asymm.md) | 34 | `result-track:32ff45c97ecd797deefa3e4afe5882890f4cf7670f9e46c5463097831856eab9` |
+| 10 | `theorem` | [ne_of_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StringOrderPublic.lean/declarations/ne-of-lt.md) | 35 | `result-track:cd9795fcb021f42bd11c1ab01e495065c3e582e7461215ffabe1a8b6a214fbcf` |
+| 11 | `instance` | [instIsLinearOrder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StringOrderPublic.lean/declarations/instislinearorder.md) | 39 | `declaration-track:0ca311c94e7cf60e331c7378402548c78fc2cf920eaef224960fb02a9ece4f16` |
+| 12 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/StringOrderPublic.lean/declarations/instance.md) | 45 | `declaration-track:d48f4000f5696c6b9686ff7760b64e7d158016c0373ce625c01b6611400bf990` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

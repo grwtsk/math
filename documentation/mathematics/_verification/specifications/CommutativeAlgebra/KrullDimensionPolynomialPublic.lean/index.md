@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/KrullDimensionPolynomialPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/KrullDimensionPolynomialPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/KrullDimensionPolynomialPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/KrullDimensionPolynomialPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Polynomial.ringKrullDim_le](../../../../CommutativeAlgebra/KrullDimensionPolynomialPublic.lean/declarations/polynomial-ringkrulldim-le.md) | 32 | `result-track:3f755c7323424ae4559d300d64a9424959daff2e5858bf24d9d8ee0b789ffdb9` |
-| 2 | `lemma` | [height_eq_height_add_one_of_isMaximal](../../../../CommutativeAlgebra/KrullDimensionPolynomialPublic.lean/declarations/height-eq-height-add-one-of-ismaximal.md) | 55 | `result-track:f693877a31e56f195c9fa029126c9b6c3b61b46475eda87adaa55a35f9f707c6` |
-| 3 | `lemma` | [height_map_C](../../../../CommutativeAlgebra/KrullDimensionPolynomialPublic.lean/declarations/height-map-c.md) | 73 | `result-track:48541a1a01a8a86efd42b9f9b6e80202eaeb1b67c7838b44fe8a3aa256c82fc1` |
-| 4 | `lemma` | [height_eq_height_add_one](../../../../CommutativeAlgebra/KrullDimensionPolynomialPublic.lean/declarations/height-eq-height-add-one.md) | 80 | `result-track:57987d084426108fe790658b3a1e1b66a2a081812cd2ac18ce978b89d3ced596` |
-| 5 | `lemma` | [ringKrullDim_of_isNoetherianRing](../../../../CommutativeAlgebra/KrullDimensionPolynomialPublic.lean/declarations/ringkrulldim-of-isnoetherianring.md) | 107 | `result-track:ae4618db84b9658f7ab27ddad13ec74fa5b0f6754ff774ccf7f247147293a761` |
-| 6 | `lemma` | [MvPolynomial.ringKrullDim_of_isNoetherianRing_of_finite](../../../../CommutativeAlgebra/KrullDimensionPolynomialPublic.lean/declarations/mvpolynomial-ringkrulldim-of-isnoetherianring-of-finite.md) | 120 | `result-track:e1b7bb176515a68756b96403075c161da219ebe5dd6c749f156bc98cfd00090e` |
-| 7 | `lemma` | [MvPolynomial.ringKrullDim_of_isNoetherianRing](../../../../CommutativeAlgebra/KrullDimensionPolynomialPublic.lean/declarations/mvpolynomial-ringkrulldim-of-isnoetherianring.md) | 135 | `result-track:413416dc93e5f983618f4822db5bbceef64110cfd5348bf0a3707f1640baf4cc` |
+| 1 | `theorem` | [Polynomial.ringKrullDim_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/KrullDimensionPolynomialPublic.lean/declarations/polynomial-ringkrulldim-le.md) | 32 | `result-track:3f755c7323424ae4559d300d64a9424959daff2e5858bf24d9d8ee0b789ffdb9` |
+| 2 | `lemma` | [height_eq_height_add_one_of_isMaximal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/KrullDimensionPolynomialPublic.lean/declarations/height-eq-height-add-one-of-ismaximal.md) | 55 | `result-track:f693877a31e56f195c9fa029126c9b6c3b61b46475eda87adaa55a35f9f707c6` |
+| 3 | `lemma` | [height_map_C](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/KrullDimensionPolynomialPublic.lean/declarations/height-map-c.md) | 73 | `result-track:48541a1a01a8a86efd42b9f9b6e80202eaeb1b67c7838b44fe8a3aa256c82fc1` |
+| 4 | `lemma` | [height_eq_height_add_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/KrullDimensionPolynomialPublic.lean/declarations/height-eq-height-add-one.md) | 80 | `result-track:57987d084426108fe790658b3a1e1b66a2a081812cd2ac18ce978b89d3ced596` |
+| 5 | `lemma` | [ringKrullDim_of_isNoetherianRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/KrullDimensionPolynomialPublic.lean/declarations/ringkrulldim-of-isnoetherianring.md) | 107 | `result-track:ae4618db84b9658f7ab27ddad13ec74fa5b0f6754ff774ccf7f247147293a761` |
+| 6 | `lemma` | [MvPolynomial.ringKrullDim_of_isNoetherianRing_of_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/KrullDimensionPolynomialPublic.lean/declarations/mvpolynomial-ringkrulldim-of-isnoetherianring-of-finite.md) | 120 | `result-track:e1b7bb176515a68756b96403075c161da219ebe5dd6c749f156bc98cfd00090e` |
+| 7 | `lemma` | [MvPolynomial.ringKrullDim_of_isNoetherianRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/KrullDimensionPolynomialPublic.lean/declarations/mvpolynomial-ringkrulldim-of-isnoetherianring.md) | 135 | `result-track:413416dc93e5f983618f4822db5bbceef64110cfd5348bf0a3707f1640baf4cc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/SubpermNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/SubpermNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SubpermNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SubpermNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [subperm_iff_count](../../../../../../ComputerScience/TheoryOfData/DataStructures/SubpermNamespacedPublic.lean/declarations/subperm-iff-count.md) | 45 | `result-track:1233f5a00cff4dfc747033c599dea1532c098d8c2fbd2855b2d0555b83c9aadd` |
-| 2 | `lemma` | [subperm_iff](../../../../../../ComputerScience/TheoryOfData/DataStructures/SubpermNamespacedPublic.lean/declarations/subperm-iff.md) | 49 | `result-track:386f63bdc8e29e32ad6d9b7edb69c0737f99e39d83b5a9fd52c90ff2bee3972a` |
-| 3 | `lemma` | [subperm_singleton_iff](../../../../../../ComputerScience/TheoryOfData/DataStructures/SubpermNamespacedPublic.lean/declarations/subperm-singleton-iff.md) | 55 | `result-track:4b4658541e8a0a0dc3ccb6c413a2399eb5c6d4be08fae63310db36ad1ad62d2e` |
-| 4 | `lemma` | [subperm_cons_self](../../../../../../ComputerScience/TheoryOfData/DataStructures/SubpermNamespacedPublic.lean/declarations/subperm-cons-self.md) | 63 | `result-track:be992b352c02562684fa1d942333f64cd6bdd8644884ffbb158650fa79797c62` |
-| 5 | `theorem` | [Subperm.append](../../../../../../ComputerScience/TheoryOfData/DataStructures/SubpermNamespacedPublic.lean/declarations/subperm-append.md) | 67 | `result-track:45868b5c26c9a0a443aa0e0a24de58a110c65e35433147e3992e5c44f357cf71` |
-| 6 | `theorem` | [map_subperm_map_iff](../../../../../../ComputerScience/TheoryOfData/DataStructures/SubpermNamespacedPublic.lean/declarations/map-subperm-map-iff.md) | 72 | `result-track:d974b88558fb050b4d79cc37bf5e6e2bd3e3e86853e20d6face8a9792bd3dbfb` |
-| 7 | `theorem` | [Nodup.subperm](../../../../../../ComputerScience/TheoryOfData/DataStructures/SubpermNamespacedPublic.lean/declarations/nodup-subperm.md) | 88 | `result-track:f398777bb82866048fbdaecfbde0aeb5e1f4a2b0df6f6c535a523299cd268328` |
+| 1 | `lemma` | [subperm_iff_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SubpermNamespacedPublic.lean/declarations/subperm-iff-count.md) | 45 | `result-track:1233f5a00cff4dfc747033c599dea1532c098d8c2fbd2855b2d0555b83c9aadd` |
+| 2 | `lemma` | [subperm_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SubpermNamespacedPublic.lean/declarations/subperm-iff.md) | 49 | `result-track:386f63bdc8e29e32ad6d9b7edb69c0737f99e39d83b5a9fd52c90ff2bee3972a` |
+| 3 | `lemma` | [subperm_singleton_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SubpermNamespacedPublic.lean/declarations/subperm-singleton-iff.md) | 55 | `result-track:4b4658541e8a0a0dc3ccb6c413a2399eb5c6d4be08fae63310db36ad1ad62d2e` |
+| 4 | `lemma` | [subperm_cons_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SubpermNamespacedPublic.lean/declarations/subperm-cons-self.md) | 63 | `result-track:be992b352c02562684fa1d942333f64cd6bdd8644884ffbb158650fa79797c62` |
+| 5 | `theorem` | [Subperm.append](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SubpermNamespacedPublic.lean/declarations/subperm-append.md) | 67 | `result-track:45868b5c26c9a0a443aa0e0a24de58a110c65e35433147e3992e5c44f357cf71` |
+| 6 | `theorem` | [map_subperm_map_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SubpermNamespacedPublic.lean/declarations/map-subperm-map-iff.md) | 72 | `result-track:d974b88558fb050b4d79cc37bf5e6e2bd3e3e86853e20d6face8a9792bd3dbfb` |
+| 7 | `theorem` | [Nodup.subperm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SubpermNamespacedPublic.lean/declarations/nodup-subperm.md) | 88 | `result-track:f398777bb82866048fbdaecfbde0aeb5e1f4a2b0df6f6c535a523299cd268328` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

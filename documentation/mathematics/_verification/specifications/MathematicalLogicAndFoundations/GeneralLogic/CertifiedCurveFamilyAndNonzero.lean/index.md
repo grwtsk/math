@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CertifiedCurveFamilyAndNonzero.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CertifiedCurveFamilyAndNonzero.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CertifiedCurveFamilyAndNonzero.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CertifiedCurveFamilyAndNonzero.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CertifiedEllipticCurveFamily](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CertifiedCurveFamilyAndNonzero.lean/declarations/certifiedellipticcurvefamily.md) | 42 | `declaration-track:dae2c0d5b622e74f7a710447fbc439e6b76b99aa65e18dd37213672873b4223b` |
-| 2 | `theorem` | [elliptic_family_global_index_nonzero](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CertifiedCurveFamilyAndNonzero.lean/declarations/elliptic-family-global-index-nonzero.md) | 52 | `result-track:a5a270560ba5593dde61684ebfdc2e556df839e6fadfbd5ecbf196c96f806d87` |
+| 1 | `structure` | [CertifiedEllipticCurveFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CertifiedCurveFamilyAndNonzero.lean/declarations/certifiedellipticcurvefamily.md) | 42 | `declaration-track:dae2c0d5b622e74f7a710447fbc439e6b76b99aa65e18dd37213672873b4223b` |
+| 2 | `theorem` | [elliptic_family_global_index_nonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CertifiedCurveFamilyAndNonzero.lean/declarations/elliptic-family-global-index-nonzero.md) | 52 | `result-track:a5a270560ba5593dde61684ebfdc2e556df839e6fadfbd5ecbf196c96f806d87` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

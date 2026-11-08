@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NoProgressNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NoProgressNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NoProgressNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NoProgressNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [T](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NoProgressNamespaced.lean/declarations/t.md) | 20 | `declaration-track:717b36857a6ae6b6c716305c21b1a74ee9d5e2dcda163c8843a46d57f8c43d44` |
-| 2 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NoProgressNamespaced.lean/declarations/example-source-edition-2.md) | 26 | `declaration-track:57d03fd680dbdf5e176ada51dc7e99b995b592ba25fd70bfcd853a398d461aa5` |
-| 3 | `def` | [F](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NoProgressNamespaced.lean/declarations/f-source-edition-2.md) | 30 | `declaration-track:4cca54c8a0b0280c759f867bc435c0e25020cd6ed77ae4f9666bbe43baaa4090` |
-| 4 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NoProgressNamespaced.lean/declarations/example-source-edition-3.md) | 39 | `declaration-track:cbcb7bcf4f69a1ab6bdd63e77a4a633a0510d49dd494ee653ae1d6c9babe17ca` |
-| 5 | `def` | [F'](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NoProgressNamespaced.lean/declarations/f.md) | 42 | `declaration-track:3f877d9e75ffed88dcdccd4cad987aef17ca5ded655e0f6c3319004bb995427e` |
-| 6 | `theorem` | [F'_def](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NoProgressNamespaced.lean/declarations/f-def.md) | 45 | `result-track:e614cf03db533eab27a3454ea614aeff6eaa515a7d86957a7fa34ee266c2d21f` |
-| 7 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NoProgressNamespaced.lean/declarations/example.md) | 54 | `declaration-track:27e5e4e5075d5aa9c7ec81551c9754b808e17441fe9560c487bfea44f8a6ea59` |
-| 8 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NoProgressNamespaced.lean/declarations/example-source-edition-4.md) | 68 | `declaration-track:f9bf4a1a12e442bd84e82eed21c84c1b6fa0dc8cfddb504eaea73bce27c5d1f5` |
+| 1 | `def` | [T](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NoProgressNamespaced.lean/declarations/t.md) | 20 | `declaration-track:717b36857a6ae6b6c716305c21b1a74ee9d5e2dcda163c8843a46d57f8c43d44` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NoProgressNamespaced.lean/declarations/example-source-edition-2.md) | 26 | `declaration-track:57d03fd680dbdf5e176ada51dc7e99b995b592ba25fd70bfcd853a398d461aa5` |
+| 3 | `def` | [F](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NoProgressNamespaced.lean/declarations/f-source-edition-2.md) | 30 | `declaration-track:4cca54c8a0b0280c759f867bc435c0e25020cd6ed77ae4f9666bbe43baaa4090` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NoProgressNamespaced.lean/declarations/example-source-edition-3.md) | 39 | `declaration-track:cbcb7bcf4f69a1ab6bdd63e77a4a633a0510d49dd494ee653ae1d6c9babe17ca` |
+| 5 | `def` | [F'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NoProgressNamespaced.lean/declarations/f.md) | 42 | `declaration-track:3f877d9e75ffed88dcdccd4cad987aef17ca5ded655e0f6c3319004bb995427e` |
+| 6 | `theorem` | [F'_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NoProgressNamespaced.lean/declarations/f-def.md) | 45 | `result-track:e614cf03db533eab27a3454ea614aeff6eaa515a7d86957a7fa34ee266c2d21f` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NoProgressNamespaced.lean/declarations/example.md) | 54 | `declaration-track:27e5e4e5075d5aa9c7ec81551c9754b808e17441fe9560c487bfea44f8a6ea59` |
+| 8 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/NoProgressNamespaced.lean/declarations/example-source-edition-4.md) | 68 | `declaration-track:f9bf4a1a12e442bd84e82eed21c84c1b6fa0dc8cfddb504eaea73bce27c5d1f5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

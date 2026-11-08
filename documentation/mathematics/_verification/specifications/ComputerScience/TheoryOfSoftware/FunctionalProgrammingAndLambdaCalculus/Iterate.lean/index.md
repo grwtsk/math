@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/Iterate.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/Iterate.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/Iterate.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/Iterate.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [hIterateFrom](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/Iterate.lean/declarations/hiteratefrom.md) | 17 | `declaration-track:5fe74f09f06ddba4e4eae27c7741207702bfccad29b9a02ead1a1b75d516bfd2` |
-| 2 | `def` | [hIterate](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/Iterate.lean/declarations/hiterate.md) | 42 | `declaration-track:2523b0465247d4c881c3952422c412db30d7dad3d699ceaa265e47bdb46f9c7b` |
-| 3 | `theorem` | [hIterateFrom_elim](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/Iterate.lean/declarations/hiteratefrom-elim.md) | 46 | `result-track:edd735a79be7e8a9e40ff94c3562858ed244ceed8f8901b901b9b2d76c46addd` |
-| 4 | `theorem` | [hIterate_elim](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/Iterate.lean/declarations/hiterate-elim.md) | 74 | `result-track:8ef29325d7a025a940f08fccf52e71d7421c9d2366a3ae7a26bbac6fbe683fe1` |
-| 5 | `theorem` | [hIterate_eq](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/Iterate.lean/declarations/hiterate-eq.md) | 87 | `result-track:b8b71f8136ac69d38b7ed9f31591b6ce409b920b0300a5c1fc6ce2efc874546f` |
+| 1 | `def` | [hIterateFrom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/Iterate.lean/declarations/hiteratefrom.md) | 17 | `declaration-track:5fe74f09f06ddba4e4eae27c7741207702bfccad29b9a02ead1a1b75d516bfd2` |
+| 2 | `def` | [hIterate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/Iterate.lean/declarations/hiterate.md) | 42 | `declaration-track:2523b0465247d4c881c3952422c412db30d7dad3d699ceaa265e47bdb46f9c7b` |
+| 3 | `theorem` | [hIterateFrom_elim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/Iterate.lean/declarations/hiteratefrom-elim.md) | 46 | `result-track:edd735a79be7e8a9e40ff94c3562858ed244ceed8f8901b901b9b2d76c46addd` |
+| 4 | `theorem` | [hIterate_elim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/Iterate.lean/declarations/hiterate-elim.md) | 74 | `result-track:8ef29325d7a025a940f08fccf52e71d7421c9d2366a3ae7a26bbac6fbe683fe1` |
+| 5 | `theorem` | [hIterate_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/Iterate.lean/declarations/hiterate-eq.md) | 87 | `result-track:b8b71f8136ac69d38b7ed9f31591b6ce409b920b0300a5c1fc6ce2efc874546f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

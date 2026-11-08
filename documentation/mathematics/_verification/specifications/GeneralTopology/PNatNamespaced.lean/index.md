@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/PNatNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/PNatNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PNatNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PNatNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../GeneralTopology/PNatNamespaced.lean/declarations/instance-source-edition-2.md) | 28 | `declaration-track:134d4a3e11aa63c3ea16d46054966fa0fcf55013c117eb455c70d34c2d188555` |
-| 2 | `theorem` | [dist_eq](../../../../GeneralTopology/PNatNamespaced.lean/declarations/dist-eq.md) | 30 | `result-track:6845d356a12ddb68ed993d5853d7714b9e8fde01e3529e2a78297aaa089fd430` |
-| 3 | `theorem` | [dist_coe](../../../../GeneralTopology/PNatNamespaced.lean/declarations/dist-coe.md) | 33 | `result-track:b2098029bcb2ab45c18bf92102807d3487ac30ad7acb070d2e7b24c0157fdeee` |
-| 4 | `theorem` | [isUniformEmbedding_coe](../../../../GeneralTopology/PNatNamespaced.lean/declarations/isuniformembedding-coe.md) | 35 | `result-track:5a275dbd29a34feff8d0b857f073745a33dc8aaa040fbf1d17a0a4cc19b30238` |
-| 5 | `instance` | [(anonymous)](../../../../GeneralTopology/PNatNamespaced.lean/declarations/instance-source-edition-4.md) | 37 | `declaration-track:b42ad224323d8d0ae27f3a556dfa378e79a1ca46efad1890ea35cbb4f9818289` |
-| 6 | `instance` | [(anonymous)](../../../../GeneralTopology/PNatNamespaced.lean/declarations/instance-source-edition-3.md) | 39 | `declaration-track:1a8c0c411ee8f813341a08d317e0baec7ef3727ab2e8bdfff1504ca39ab8c8f3` |
-| 7 | `instance` | [(anonymous)](../../../../GeneralTopology/PNatNamespaced.lean/declarations/instance.md) | 45 | `declaration-track:0b81f2b046a5e4103b9418540bbaac160cae253a9ee5d0901ef1e8e6934be1a0` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PNatNamespaced.lean/declarations/instance-source-edition-2.md) | 28 | `declaration-track:134d4a3e11aa63c3ea16d46054966fa0fcf55013c117eb455c70d34c2d188555` |
+| 2 | `theorem` | [dist_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PNatNamespaced.lean/declarations/dist-eq.md) | 30 | `result-track:6845d356a12ddb68ed993d5853d7714b9e8fde01e3529e2a78297aaa089fd430` |
+| 3 | `theorem` | [dist_coe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PNatNamespaced.lean/declarations/dist-coe.md) | 33 | `result-track:b2098029bcb2ab45c18bf92102807d3487ac30ad7acb070d2e7b24c0157fdeee` |
+| 4 | `theorem` | [isUniformEmbedding_coe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PNatNamespaced.lean/declarations/isuniformembedding-coe.md) | 35 | `result-track:5a275dbd29a34feff8d0b857f073745a33dc8aaa040fbf1d17a0a4cc19b30238` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PNatNamespaced.lean/declarations/instance-source-edition-4.md) | 37 | `declaration-track:b42ad224323d8d0ae27f3a556dfa378e79a1ca46efad1890ea35cbb4f9818289` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PNatNamespaced.lean/declarations/instance-source-edition-3.md) | 39 | `declaration-track:1a8c0c411ee8f813341a08d317e0baec7ef3727ab2e8bdfff1504ca39ab8c8f3` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PNatNamespaced.lean/declarations/instance.md) | 45 | `declaration-track:0b81f2b046a5e4103b9418540bbaac160cae253a9ee5d0901ef1e8e6934be1a0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

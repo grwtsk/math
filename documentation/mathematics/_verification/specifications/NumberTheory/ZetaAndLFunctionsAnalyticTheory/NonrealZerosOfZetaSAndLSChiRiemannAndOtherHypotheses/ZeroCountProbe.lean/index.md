@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZeroCountProbe.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZeroCountProbe.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZeroCountProbe.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZeroCountProbe.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [clearedZeta](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZeroCountProbe.lean/declarations/clearedzeta.md) | 5 | `declaration-track:3796e0a87c5317e71f980d68a7a05dc90c9a13cd3a30e86b98531627752ca871` |
-| 2 | `theorem` | [cleared_entire](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZeroCountProbe.lean/declarations/cleared-entire.md) | 8 | `result-track:90ab3dbefedbbb748c6b8f9d857c7bde0e82389fb5b0cbab31f3632ca42f784b` |
-| 3 | `theorem` | [cleared_zero_value](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZeroCountProbe.lean/declarations/cleared-zero-value.md) | 12 | `result-track:b4b6006daeea776b33c57eb0aafd7fb9abc6480e221b50508292ac4e952a9b11` |
-| 4 | `theorem` | [cleared_eq](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZeroCountProbe.lean/declarations/cleared-eq.md) | 14 | `result-track:395047401ac0557f0cceaa9c2219a52e70a5e7121a70cacd71d8edd045b55318` |
-| 5 | `theorem` | [jensen_with_explicit_missing_bound](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZeroCountProbe.lean/declarations/jensen-with-explicit-missing-bound.md) | 21 | `result-track:122eb51e58bf99eca4134134d536223e15ff4b2ef33fcda608c3c764c6b3c1da` |
+| 1 | `def` | [clearedZeta](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZeroCountProbe.lean/declarations/clearedzeta.md) | 5 | `declaration-track:3796e0a87c5317e71f980d68a7a05dc90c9a13cd3a30e86b98531627752ca871` |
+| 2 | `theorem` | [cleared_entire](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZeroCountProbe.lean/declarations/cleared-entire.md) | 8 | `result-track:90ab3dbefedbbb748c6b8f9d857c7bde0e82389fb5b0cbab31f3632ca42f784b` |
+| 3 | `theorem` | [cleared_zero_value](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZeroCountProbe.lean/declarations/cleared-zero-value.md) | 12 | `result-track:b4b6006daeea776b33c57eb0aafd7fb9abc6480e221b50508292ac4e952a9b11` |
+| 4 | `theorem` | [cleared_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZeroCountProbe.lean/declarations/cleared-eq.md) | 14 | `result-track:395047401ac0557f0cceaa9c2219a52e70a5e7121a70cacd71d8edd045b55318` |
+| 5 | `theorem` | [jensen_with_explicit_missing_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ZeroCountProbe.lean/declarations/jensen-with-explicit-missing-bound.md) | 21 | `result-track:122eb51e58bf99eca4134134d536223e15ff4b2ef33fcda608c3c764c6b3c1da` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

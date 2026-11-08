@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/SchedulerPlacements.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/SchedulerPlacements.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SchedulerPlacements.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SchedulerPlacements.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [placements](../../../../../ComputerScience/AlgorithmsInComputerScience/SchedulerPlacements.lean/declarations/placements.md) | 7 | `declaration-track:a2cdb1024445e503ee99c5330a7bcc9f8f09dba9ccb843b2382b5588e90c50c5` |
-| 2 | `theorem` | [placements_count](../../../../../ComputerScience/AlgorithmsInComputerScience/SchedulerPlacements.lean/declarations/placements-count.md) | 10 | `result-track:ae7c6eb91e868623fd0520e8937e78fe7845d30483d243cf48046269fbb3e7a4` |
-| 3 | `theorem` | [placements_centerControlled](../../../../../ComputerScience/AlgorithmsInComputerScience/SchedulerPlacements.lean/declarations/placements-centercontrolled.md) | 14 | `result-track:3f1ca716b70d62b71b158ecbe0961d3c785d5b6d4bbb177710e83c9789cca0df` |
+| 1 | `def` | [placements](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SchedulerPlacements.lean/declarations/placements.md) | 7 | `declaration-track:a2cdb1024445e503ee99c5330a7bcc9f8f09dba9ccb843b2382b5588e90c50c5` |
+| 2 | `theorem` | [placements_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SchedulerPlacements.lean/declarations/placements-count.md) | 10 | `result-track:ae7c6eb91e868623fd0520e8937e78fe7845d30483d243cf48046269fbb3e7a4` |
+| 3 | `theorem` | [placements_centerControlled](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SchedulerPlacements.lean/declarations/placements-centercontrolled.md) | 14 | `result-track:3f1ca716b70d62b71b158ecbe0961d3c785d5b6d4bbb177710e83c9789cca0df` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

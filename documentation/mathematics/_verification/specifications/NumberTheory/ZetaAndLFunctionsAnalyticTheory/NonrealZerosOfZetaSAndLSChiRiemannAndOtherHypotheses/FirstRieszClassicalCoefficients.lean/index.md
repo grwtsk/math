@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FirstRieszClassicalCoefficients.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FirstRieszClassicalCoefficients.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FirstRieszClassicalCoefficients.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FirstRieszClassicalCoefficients.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [logDeriv_riemannZeta_zero](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FirstRieszClassicalCoefficients.lean/declarations/logderiv-riemannzeta-zero.md) | 14 | `result-track:47a213ebcc170927caf238fee6850d88b68765a331e855ab78bba5a4c4600e43` |
-| 2 | `theorem` | [continuousAt_neg_logDeriv_zero](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FirstRieszClassicalCoefficients.lean/declarations/continuousat-neg-logderiv-zero.md) | 19 | `result-track:eafa822fbdb5f11382b085bc314eae96b78560f3052a9ac29a3b52d2cafd6c18` |
-| 3 | `theorem` | [classical_linear_coefficient](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FirstRieszClassicalCoefficients.lean/declarations/classical-linear-coefficient.md) | 25 | `result-track:02419ff81f70dfdd9abc1a2213655328e7464e27d64962c40a2fbc2dbdcc5f92` |
+| 1 | `theorem` | [logDeriv_riemannZeta_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FirstRieszClassicalCoefficients.lean/declarations/logderiv-riemannzeta-zero.md) | 14 | `result-track:47a213ebcc170927caf238fee6850d88b68765a331e855ab78bba5a4c4600e43` |
+| 2 | `theorem` | [continuousAt_neg_logDeriv_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FirstRieszClassicalCoefficients.lean/declarations/continuousat-neg-logderiv-zero.md) | 19 | `result-track:eafa822fbdb5f11382b085bc314eae96b78560f3052a9ac29a3b52d2cafd6c18` |
+| 3 | `theorem` | [classical_linear_coefficient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FirstRieszClassicalCoefficients.lean/declarations/classical-linear-coefficient.md) | 25 | `result-track:02419ff81f70dfdd9abc1a2213655328e7464e27d64962c40a2fbc2dbdcc5f92` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

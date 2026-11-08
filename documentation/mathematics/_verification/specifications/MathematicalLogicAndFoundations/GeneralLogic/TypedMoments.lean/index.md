@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypedMoments.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypedMoments.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TypedMoments.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TypedMoments.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Family](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypedMoments.lean/declarations/family.md) | 22 | `declaration-track:c5cbfd7811d169e3ad5f58d3fbe2642975c247cc9cd3bd30a49981a02c673692` |
-| 2 | `def` | [Family.Agree](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypedMoments.lean/declarations/family-agree.md) | 27 | `declaration-track:d07be649e55b531aca92c811d1afad0b20d9a843a8dd65655831c498c66c3a23` |
-| 3 | `theorem` | [Family.agree_refl](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypedMoments.lean/declarations/family-agree-refl.md) | 30 | `result-track:12d5fbbce59d6c03ced3b613b6c5ce8bd4823bd16844681cee1983371dd65230` |
-| 4 | `theorem` | [Family.agree_symm](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypedMoments.lean/declarations/family-agree-symm.md) | 35 | `result-track:cd78304f517feda42ead9b8d7b09097d6c96d8c16118b455d247b8745f77ba78` |
-| 5 | `theorem` | [Family.agree_trans](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypedMoments.lean/declarations/family-agree-trans.md) | 40 | `result-track:c16c681e159c9ff5c8f2a9f53fb007c8638da1614592dc65276aa222459182e2` |
+| 1 | `structure` | [Family](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TypedMoments.lean/declarations/family.md) | 22 | `declaration-track:c5cbfd7811d169e3ad5f58d3fbe2642975c247cc9cd3bd30a49981a02c673692` |
+| 2 | `def` | [Family.Agree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TypedMoments.lean/declarations/family-agree.md) | 27 | `declaration-track:d07be649e55b531aca92c811d1afad0b20d9a843a8dd65655831c498c66c3a23` |
+| 3 | `theorem` | [Family.agree_refl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TypedMoments.lean/declarations/family-agree-refl.md) | 30 | `result-track:12d5fbbce59d6c03ced3b613b6c5ce8bd4823bd16844681cee1983371dd65230` |
+| 4 | `theorem` | [Family.agree_symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TypedMoments.lean/declarations/family-agree-symm.md) | 35 | `result-track:cd78304f517feda42ead9b8d7b09097d6c96d8c16118b455d247b8745f77ba78` |
+| 5 | `theorem` | [Family.agree_trans](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TypedMoments.lean/declarations/family-agree-trans.md) | 40 | `result-track:c16c681e159c9ff5c8f2a9f53fb007c8638da1614592dc65276aa222459182e2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MatchingEventualUpperTDeficitForTheActualTwoModePrefixMaximum.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MatchingEventualUpperTDeficitForTheActualTwoModePrefixMaximum.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MatchingEventualUpperTDeficitForTheActualTwoModePrefixMaximum.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MatchingEventualUpperTDeficitForTheActualTwoModePrefixMaximum.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [literal_prefix_deficit_eventual_upper](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MatchingEventualUpperTDeficitForTheActualTwoModePrefixMaximum.lean/declarations/literal-prefix-deficit-eventual-upper.md) | 20 | `result-track:23fd833d93f30d575a1d5e6be45487ac449cce41e62899f8f70c4efd6a3ff2d4` |
-| 2 | `theorem` | [literal_prefix_deficit_eventual_two_sided](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MatchingEventualUpperTDeficitForTheActualTwoModePrefixMaximum.lean/declarations/literal-prefix-deficit-eventual-two-sided.md) | 99 | `result-track:12244818ee18f0f7c0bb9a4965020ed6c26162450434af358081489a0b184518` |
+| 1 | `theorem` | [literal_prefix_deficit_eventual_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MatchingEventualUpperTDeficitForTheActualTwoModePrefixMaximum.lean/declarations/literal-prefix-deficit-eventual-upper.md) | 20 | `result-track:23fd833d93f30d575a1d5e6be45487ac449cce41e62899f8f70c4efd6a3ff2d4` |
+| 2 | `theorem` | [literal_prefix_deficit_eventual_two_sided](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MatchingEventualUpperTDeficitForTheActualTwoModePrefixMaximum.lean/declarations/literal-prefix-deficit-eventual-two-sided.md) | 99 | `result-track:12244818ee18f0f7c0bb9a4965020ed6c26162450434af358081489a0b184518` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Schema003Edition2.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Schema003Edition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Schema003Edition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Schema003Edition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [SchemaValueKind](../../../../../ComputerScience/AlgorithmsInComputerScience/Schema003Edition2.lean/declarations/schemavaluekind.md) | 12 | `declaration-track:90484a4501e66d6fd093d74b764561e9f584e853fe5db64af85ca85dd1068aea` |
-| 2 | `structure` | [SchemaEntry](../../../../../ComputerScience/AlgorithmsInComputerScience/Schema003Edition2.lean/declarations/schemaentry.md) | 23 | `declaration-track:bed312433acb63dd25d38fca888dddc6276c1a7d0ae5dedbb5395cb10a6b2bf0` |
-| 3 | `structure` | [ConfigurationPolicy](../../../../../ComputerScience/AlgorithmsInComputerScience/Schema003Edition2.lean/declarations/configurationpolicy.md) | 38 | `declaration-track:47c15b817866fe4128e32f9df22ae38beb2d24db15d495c53f83c3c42c35e2ff` |
-| 4 | `inductive` | [ValidationResult](../../../../../ComputerScience/AlgorithmsInComputerScience/Schema003Edition2.lean/declarations/validationresult.md) | 49 | `declaration-track:b52698638801ad52cf6a80d955a690125dff0abf6597b24a979f3e4880e4d207` |
+| 1 | `inductive` | [SchemaValueKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Schema003Edition2.lean/declarations/schemavaluekind.md) | 12 | `declaration-track:90484a4501e66d6fd093d74b764561e9f584e853fe5db64af85ca85dd1068aea` |
+| 2 | `structure` | [SchemaEntry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Schema003Edition2.lean/declarations/schemaentry.md) | 23 | `declaration-track:bed312433acb63dd25d38fca888dddc6276c1a7d0ae5dedbb5395cb10a6b2bf0` |
+| 3 | `structure` | [ConfigurationPolicy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Schema003Edition2.lean/declarations/configurationpolicy.md) | 38 | `declaration-track:47c15b817866fe4128e32f9df22ae38beb2d24db15d495c53f83c3c42c35e2ff` |
+| 4 | `inductive` | [ValidationResult](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Schema003Edition2.lean/declarations/validationresult.md) | 49 | `declaration-track:b52698638801ad52cf6a80d955a690125dff0abf6597b24a979f3e4880e4d207` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

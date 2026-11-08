@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../IntegralTransformsOperationalCalculus/LogarithmicProfileDerivative.lean/index.md) · [Full source](../../../../IntegralTransformsOperationalCalculus/LogarithmicProfileDerivative.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/LogarithmicProfileDerivative.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/LogarithmicProfileDerivative.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [logarithmic_profile_hasDerivAt](../../../../IntegralTransformsOperationalCalculus/LogarithmicProfileDerivative.lean/declarations/logarithmic-profile-hasderivat.md) | 22 | `result-track:496372afa1d8e5e1cefdd783197dd106f9d67b3e153f4210924a92b3e09635ea` |
-| 2 | `theorem` | [logarithmic_profile_derivative_abs_le](../../../../IntegralTransformsOperationalCalculus/LogarithmicProfileDerivative.lean/declarations/logarithmic-profile-derivative-abs-le.md) | 51 | `result-track:c56f67899a3f035a3fb398da79dcea0d79e2fdd4e572da104bd0f0fa376e1f41` |
+| 1 | `theorem` | [logarithmic_profile_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/LogarithmicProfileDerivative.lean/declarations/logarithmic-profile-hasderivat.md) | 22 | `result-track:496372afa1d8e5e1cefdd783197dd106f9d67b3e153f4210924a92b3e09635ea` |
+| 2 | `theorem` | [logarithmic_profile_derivative_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/LogarithmicProfileDerivative.lean/declarations/logarithmic-profile-derivative-abs-le.md) | 51 | `result-track:c56f67899a3f035a3fb398da79dcea0d79e2fdd4e572da104bd0f0fa376e1f41` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

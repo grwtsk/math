@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/CochainReconstructionNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/CochainReconstructionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CochainReconstructionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CochainReconstructionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [DefectCochainProjection](../../../../Combinatorics/CochainReconstructionNamespaced.lean/declarations/defectcochainprojection.md) | 23 | `declaration-track:dbe983ed1c79bd98033a2f78c6b8df92b2cde8110c6cd61f58b1d99ac4c1874c` |
-| 2 | `structure` | [PositiveCapacityReconstruction](../../../../Combinatorics/CochainReconstructionNamespaced.lean/declarations/positivecapacityreconstruction.md) | 51 | `declaration-track:2c0dad9ce4295755c086d0a3848858482ee8651634019acb69c796cdac5e3482` |
+| 1 | `structure` | [DefectCochainProjection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CochainReconstructionNamespaced.lean/declarations/defectcochainprojection.md) | 23 | `declaration-track:dbe983ed1c79bd98033a2f78c6b8df92b2cde8110c6cd61f58b1d99ac4c1874c` |
+| 2 | `structure` | [PositiveCapacityReconstruction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CochainReconstructionNamespaced.lean/declarations/positivecapacityreconstruction.md) | 51 | `declaration-track:2c0dad9ce4295755c086d0a3848858482ee8651634019acb69c796cdac5e3482` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

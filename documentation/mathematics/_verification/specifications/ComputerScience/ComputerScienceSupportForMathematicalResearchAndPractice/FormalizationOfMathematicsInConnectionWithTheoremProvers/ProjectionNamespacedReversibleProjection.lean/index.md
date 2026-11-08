@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ProjectionNamespacedReversibleProjection.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ProjectionNamespacedReversibleProjection.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ProjectionNamespacedReversibleProjection.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ProjectionNamespacedReversibleProjection.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ReversibleProjection](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ProjectionNamespacedReversibleProjection.lean/declarations/reversibleprojection.md) | 23 | `declaration-track:e7e1d0964ab55d728c006079a4b0b9a3dbcb8d5893ceeb1cd4fe2b15c9f2df15` |
-| 2 | `theorem` | [ReversibleProjection.rehydrate_project](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ProjectionNamespacedReversibleProjection.lean/declarations/reversibleprojection-rehydrate-project.md) | 33 | `result-track:841bf874364a90733c72d012ba4a4da3b3539312e20519060daec92a4665609c` |
-| 3 | `structure` | [ObligationProjection](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ProjectionNamespacedReversibleProjection.lean/declarations/obligationprojection.md) | 41 | `declaration-track:0c3576c8df6543847c8c5feb935a35d75abe73ad35e68cf755568418a799bedd` |
+| 1 | `structure` | [ReversibleProjection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ProjectionNamespacedReversibleProjection.lean/declarations/reversibleprojection.md) | 23 | `declaration-track:e7e1d0964ab55d728c006079a4b0b9a3dbcb8d5893ceeb1cd4fe2b15c9f2df15` |
+| 2 | `theorem` | [ReversibleProjection.rehydrate_project](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ProjectionNamespacedReversibleProjection.lean/declarations/reversibleprojection-rehydrate-project.md) | 33 | `result-track:841bf874364a90733c72d012ba4a4da3b3539312e20519060daec92a4665609c` |
+| 3 | `structure` | [ObligationProjection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ProjectionNamespacedReversibleProjection.lean/declarations/obligationprojection.md) | 41 | `declaration-track:0c3576c8df6543847c8c5feb935a35d75abe73ad35e68cf755568418a799bedd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

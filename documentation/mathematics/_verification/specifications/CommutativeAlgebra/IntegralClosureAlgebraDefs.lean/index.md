@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/IntegralClosureAlgebraDefs.lean/index.md) · [Full source](../../../../CommutativeAlgebra/IntegralClosureAlgebraDefs.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IntegralClosureAlgebraDefs.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IntegralClosureAlgebraDefs.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [Algebra.IsIntegral](../../../../CommutativeAlgebra/IntegralClosureAlgebraDefs.lean/declarations/algebra-isintegral.md) | 32 | `declaration-track:9a24f27d75216feba1451fd822474975e38d3df20b2fd8176d9af0b6a31af214` |
-| 2 | `lemma` | [Algebra.isIntegral_def](../../../../CommutativeAlgebra/IntegralClosureAlgebraDefs.lean/declarations/algebra-isintegral-def.md) | 37 | `result-track:982da76d18bb4568332ef9393a34fa3fa5d0b5e639d4f6f146c6aa260d967860` |
+| 1 | `class` | [Algebra.IsIntegral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IntegralClosureAlgebraDefs.lean/declarations/algebra-isintegral.md) | 32 | `declaration-track:9a24f27d75216feba1451fd822474975e38d3df20b2fd8176d9af0b6a31af214` |
+| 2 | `lemma` | [Algebra.isIntegral_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/IntegralClosureAlgebraDefs.lean/declarations/algebra-isintegral-def.md) | 37 | `result-track:982da76d18bb4568332ef9393a34fa3fa5d0b5e639d4f6f146c6aa260d967860` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

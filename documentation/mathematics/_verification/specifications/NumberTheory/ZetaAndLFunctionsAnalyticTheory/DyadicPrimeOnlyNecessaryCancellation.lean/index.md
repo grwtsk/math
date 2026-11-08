@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicPrimeOnlyNecessaryCancellation.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicPrimeOnlyNecessaryCancellation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicPrimeOnlyNecessaryCancellation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicPrimeOnlyNecessaryCancellation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.DyadicPrimeOnlyLiteralFormulas`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicPrimeOnlyLiteralFormulas.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.DyadicPrimeOnlyLiteralFormulas`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicPrimeOnlyLiteralFormulas.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Tactic` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [primeOnlyMass0_sq_le_stage](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicPrimeOnlyNecessaryCancellation.lean/declarations/primeonlymass0-sq-le-stage.md) | 34 | `result-track:c4cf4ea35ff038daf49e939754cc52eb6083369b8bab8d4e5dafd421f6ab2b04` |
-| 2 | `theorem` | [primeOnlyMass1_sq_le_stage](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicPrimeOnlyNecessaryCancellation.lean/declarations/primeonlymass1-sq-le-stage.md) | 43 | `result-track:7c83ce86f21a947edbceeec39b797a80f742f8173892c2b92b9ebb5b42eab479` |
-| 3 | `theorem` | [thetaOctaveDiscrepancy_sq_le_two_stage](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicPrimeOnlyNecessaryCancellation.lean/declarations/thetaoctavediscrepancy-sq-le-two-stage.md) | 54 | `result-track:0758a3befde3e00c346506d5360381a1eb11c969cecb4b3490c3e9aa6003e94f` |
-| 4 | `theorem` | [primeOnly_negOne_sq_le_stage](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicPrimeOnlyNecessaryCancellation.lean/declarations/primeonly-negone-sq-le-stage.md) | 71 | `result-track:c510a326068ba37ccc369991e2ba852014b855bf2614ad9af2a62034f27bcec9` |
-| 5 | `theorem` | [primeOnly_one_sq_le_stage](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicPrimeOnlyNecessaryCancellation.lean/declarations/primeonly-one-sq-le-stage.md) | 85 | `result-track:8d57a87d96d3957667f3a8555087bec405075e74c0b83578313f4b4a7d03f30e` |
-| 6 | `theorem` | [primeOnlyBound_forces_harmonicMass_decay](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicPrimeOnlyNecessaryCancellation.lean/declarations/primeonlybound-forces-harmonicmass-decay.md) | 98 | `result-track:a8227110bb2c94bd8481c48806ffc4f0a26f0a3f2ee9d34a09de4f5f04f2482c` |
-| 7 | `theorem` | [primeOnlyBound_forces_thetaOctave_decay](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicPrimeOnlyNecessaryCancellation.lean/declarations/primeonlybound-forces-thetaoctave-decay.md) | 113 | `result-track:f0abd5da16bcb728aeb701904e4189ac47acd193a8c78abfeca8b951c7bbbe2d` |
-| 8 | `theorem` | [primeOnlyBound_forces_negOne_decay](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicPrimeOnlyNecessaryCancellation.lean/declarations/primeonlybound-forces-negone-decay.md) | 134 | `result-track:e0ec99bb1d3ff5200c7c63c9d622e6c25ddbbad8a20e5c5e9b3cfe90846dab72` |
-| 9 | `theorem` | [primeOnlyBound_forces_one_decay](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicPrimeOnlyNecessaryCancellation.lean/declarations/primeonlybound-forces-one-decay.md) | 148 | `result-track:8333239c7eb37f4edddb26d8aa7d62f9b846c7e4065a958617af53a9c68311b7` |
+| 1 | `theorem` | [primeOnlyMass0_sq_le_stage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicPrimeOnlyNecessaryCancellation.lean/declarations/primeonlymass0-sq-le-stage.md) | 34 | `result-track:c4cf4ea35ff038daf49e939754cc52eb6083369b8bab8d4e5dafd421f6ab2b04` |
+| 2 | `theorem` | [primeOnlyMass1_sq_le_stage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicPrimeOnlyNecessaryCancellation.lean/declarations/primeonlymass1-sq-le-stage.md) | 43 | `result-track:7c83ce86f21a947edbceeec39b797a80f742f8173892c2b92b9ebb5b42eab479` |
+| 3 | `theorem` | [thetaOctaveDiscrepancy_sq_le_two_stage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicPrimeOnlyNecessaryCancellation.lean/declarations/thetaoctavediscrepancy-sq-le-two-stage.md) | 54 | `result-track:0758a3befde3e00c346506d5360381a1eb11c969cecb4b3490c3e9aa6003e94f` |
+| 4 | `theorem` | [primeOnly_negOne_sq_le_stage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicPrimeOnlyNecessaryCancellation.lean/declarations/primeonly-negone-sq-le-stage.md) | 71 | `result-track:c510a326068ba37ccc369991e2ba852014b855bf2614ad9af2a62034f27bcec9` |
+| 5 | `theorem` | [primeOnly_one_sq_le_stage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicPrimeOnlyNecessaryCancellation.lean/declarations/primeonly-one-sq-le-stage.md) | 85 | `result-track:8d57a87d96d3957667f3a8555087bec405075e74c0b83578313f4b4a7d03f30e` |
+| 6 | `theorem` | [primeOnlyBound_forces_harmonicMass_decay](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicPrimeOnlyNecessaryCancellation.lean/declarations/primeonlybound-forces-harmonicmass-decay.md) | 98 | `result-track:a8227110bb2c94bd8481c48806ffc4f0a26f0a3f2ee9d34a09de4f5f04f2482c` |
+| 7 | `theorem` | [primeOnlyBound_forces_thetaOctave_decay](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicPrimeOnlyNecessaryCancellation.lean/declarations/primeonlybound-forces-thetaoctave-decay.md) | 113 | `result-track:f0abd5da16bcb728aeb701904e4189ac47acd193a8c78abfeca8b951c7bbbe2d` |
+| 8 | `theorem` | [primeOnlyBound_forces_negOne_decay](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicPrimeOnlyNecessaryCancellation.lean/declarations/primeonlybound-forces-negone-decay.md) | 134 | `result-track:e0ec99bb1d3ff5200c7c63c9d622e6c25ddbbad8a20e5c5e9b3cfe90846dab72` |
+| 9 | `theorem` | [primeOnlyBound_forces_one_decay](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DyadicPrimeOnlyNecessaryCancellation.lean/declarations/primeonlybound-forces-one-decay.md) | 148 | `result-track:8333239c7eb37f4edddb26d8aa7d62f9b846c7e4065a958617af53a9c68311b7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

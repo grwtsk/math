@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeSideTemp.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeSideTemp.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeSideTemp.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeSideTemp.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [EvBound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeSideTemp.lean/declarations/evbound.md) | 44 | `declaration-track:82de125114047ef0e86ffbab6f5c4ede4bae9b9940629d26c9a8017a593c4096` |
-| 2 | `def` | [mainTr2](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeSideTemp.lean/declarations/maintr2.md) | 52 | `declaration-track:8644b35ba40cae07371afcad6fb088e59c089e6fe52e9a6fac173781709e1c4d` |
-| 3 | `structure` | [TracesBounds](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeSideTemp.lean/declarations/tracesbounds.md) | 81 | `declaration-track:f2e9c943ff4ccddc3439818df5e554c786c3b53bfa7a45245cdef81e218c9a6f` |
-| 4 | `def` | [ThmTracesHyp](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeSideTemp.lean/declarations/thmtraceshyp.md) | 97 | `declaration-track:fc01e968438deefa42ba2c29a7efe557d6be51ba08504205c773686b47e87df5` |
+| 1 | `def` | [EvBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeSideTemp.lean/declarations/evbound.md) | 44 | `declaration-track:82de125114047ef0e86ffbab6f5c4ede4bae9b9940629d26c9a8017a593c4096` |
+| 2 | `def` | [mainTr2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeSideTemp.lean/declarations/maintr2.md) | 52 | `declaration-track:8644b35ba40cae07371afcad6fb088e59c089e6fe52e9a6fac173781709e1c4d` |
+| 3 | `structure` | [TracesBounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeSideTemp.lean/declarations/tracesbounds.md) | 81 | `declaration-track:f2e9c943ff4ccddc3439818df5e554c786c3b53bfa7a45245cdef81e218c9a6f` |
+| 4 | `def` | [ThmTracesHyp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeSideTemp.lean/declarations/thmtraceshyp.md) | 97 | `declaration-track:fc01e968438deefa42ba2c29a7efe557d6be51ba08504205c773686b47e87df5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

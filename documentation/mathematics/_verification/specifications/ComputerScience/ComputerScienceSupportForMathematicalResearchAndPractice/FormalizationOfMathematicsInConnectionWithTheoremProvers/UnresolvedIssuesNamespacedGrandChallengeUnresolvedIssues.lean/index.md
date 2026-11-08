@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/UnresolvedIssuesNamespacedGrandChallengeUnresolvedIssues.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/UnresolvedIssuesNamespacedGrandChallengeUnresolvedIssues.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/UnresolvedIssuesNamespacedGrandChallengeUnresolvedIssues.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/UnresolvedIssuesNamespacedGrandChallengeUnresolvedIssues.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [GrandChallengeUnresolvedIssues](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/UnresolvedIssuesNamespacedGrandChallengeUnresolvedIssues.lean/declarations/grandchallengeunresolvedissues.md) | 24 | `declaration-track:e9faed9940d9ecb6a52c8109382e04f47ca70e823d2dfa4c09b8a4f28cc6528e` |
-| 2 | `def` | [unresolvedIssues](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/UnresolvedIssuesNamespacedGrandChallengeUnresolvedIssues.lean/declarations/unresolvedissues.md) | 76 | `declaration-track:e78cf95dc140d7cba48dafa743832f00dc18437b2f50fc93871e6880aa41130c` |
+| 1 | `structure` | [GrandChallengeUnresolvedIssues](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/UnresolvedIssuesNamespacedGrandChallengeUnresolvedIssues.lean/declarations/grandchallengeunresolvedissues.md) | 24 | `declaration-track:e9faed9940d9ecb6a52c8109382e04f47ca70e823d2dfa4c09b8a4f28cc6528e` |
+| 2 | `def` | [unresolvedIssues](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/UnresolvedIssuesNamespacedGrandChallengeUnresolvedIssues.lean/declarations/unresolvedissues.md) | 76 | `declaration-track:e78cf95dc140d7cba48dafa743832f00dc18437b2f50fc93871e6880aa41130c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/AddTorsorAffineMapPublic.lean/index.md) · [Full source](../../../../RealFunctions/AddTorsorAffineMapPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AddTorsorAffineMapPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AddTorsorAffineMapPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [contDiff](../../../../RealFunctions/AddTorsorAffineMapPublic.lean/declarations/contdiff.md) | 33 | `result-track:8514deb5f93b60fb6f5b008d669f4c9a176b98d5628110ec9b634f44f6f715f0` |
-| 2 | `theorem` | [contDiff_lineMap_uncurry](../../../../RealFunctions/AddTorsorAffineMapPublic.lean/declarations/contdiff-linemap-uncurry.md) | 47 | `result-track:a7bca597d3e6eb2d7a0652603c230b183171ca0983ad2188c0a304bbe03f72f4` |
-| 3 | `theorem` | [contDiff_lineMap](../../../../RealFunctions/AddTorsorAffineMapPublic.lean/declarations/contdiff-linemap-source-edition-2.md) | 53 | `result-track:bd20c5156b72fa6178837b74b9bcc6a68b9f43dc9772d4c950b4b52b6ead9f62` |
-| 4 | `theorem` | [ContDiffWithinAt.lineMap](../../../../RealFunctions/AddTorsorAffineMapPublic.lean/declarations/contdiffwithinat-linemap.md) | 67 | `result-track:9acfd06330f33a7b8fc5a66c0e2fcbf9d4a6e824679f9587d725095454594456` |
-| 5 | `theorem` | [ContDiffAt.lineMap](../../../../RealFunctions/AddTorsorAffineMapPublic.lean/declarations/contdiffat-linemap.md) | 73 | `result-track:fe423bba50228fbe969cbba64693e2c2f612922695870321f95c1fadfce14aa7` |
-| 6 | `theorem` | [ContDiffOn.lineMap](../../../../RealFunctions/AddTorsorAffineMapPublic.lean/declarations/contdiffon-linemap.md) | 78 | `result-track:0278e4874e0d9fbc52d13ea0d4f376e1a860898b2c35d1fa689477d7e00c027a` |
-| 7 | `theorem` | [ContDiff.lineMap](../../../../RealFunctions/AddTorsorAffineMapPublic.lean/declarations/contdiff-linemap.md) | 83 | `result-track:2996ba9985a8490e92fa1f38fcc6ceac0d8247d946ceee55ea043b12b2b2df9f` |
+| 1 | `theorem` | [contDiff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AddTorsorAffineMapPublic.lean/declarations/contdiff.md) | 33 | `result-track:8514deb5f93b60fb6f5b008d669f4c9a176b98d5628110ec9b634f44f6f715f0` |
+| 2 | `theorem` | [contDiff_lineMap_uncurry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AddTorsorAffineMapPublic.lean/declarations/contdiff-linemap-uncurry.md) | 47 | `result-track:a7bca597d3e6eb2d7a0652603c230b183171ca0983ad2188c0a304bbe03f72f4` |
+| 3 | `theorem` | [contDiff_lineMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AddTorsorAffineMapPublic.lean/declarations/contdiff-linemap-source-edition-2.md) | 53 | `result-track:bd20c5156b72fa6178837b74b9bcc6a68b9f43dc9772d4c950b4b52b6ead9f62` |
+| 4 | `theorem` | [ContDiffWithinAt.lineMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AddTorsorAffineMapPublic.lean/declarations/contdiffwithinat-linemap.md) | 67 | `result-track:9acfd06330f33a7b8fc5a66c0e2fcbf9d4a6e824679f9587d725095454594456` |
+| 5 | `theorem` | [ContDiffAt.lineMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AddTorsorAffineMapPublic.lean/declarations/contdiffat-linemap.md) | 73 | `result-track:fe423bba50228fbe969cbba64693e2c2f612922695870321f95c1fadfce14aa7` |
+| 6 | `theorem` | [ContDiffOn.lineMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AddTorsorAffineMapPublic.lean/declarations/contdiffon-linemap.md) | 78 | `result-track:0278e4874e0d9fbc52d13ea0d4f376e1a860898b2c35d1fa689477d7e00c027a` |
+| 7 | `theorem` | [ContDiff.lineMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AddTorsorAffineMapPublic.lean/declarations/contdiff-linemap.md) | 83 | `result-track:2996ba9985a8490e92fa1f38fcc6ceac0d8247d946ceee55ea043b12b2b2df9f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

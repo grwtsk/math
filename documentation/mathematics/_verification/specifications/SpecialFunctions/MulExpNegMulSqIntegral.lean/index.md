@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../SpecialFunctions/MulExpNegMulSqIntegral.lean/index.md) · [Full source](../../../../SpecialFunctions/MulExpNegMulSqIntegral.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/MulExpNegMulSqIntegral.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/MulExpNegMulSqIntegral.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,14 +62,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [integrable_mulExpNegMulSq_comp](../../../../SpecialFunctions/MulExpNegMulSqIntegral.lean/declarations/integrable-mulexpnegmulsq-comp.md) | 47 | `result-track:e3a14b39a3484d9c6d9842aa44fd5d84ddd10333a3c7d7490506cc875cd6b13b` |
-| 2 | `theorem` | [integrable_mulExpNegMulSq_comp_restrict_of_isCompact](../../../../SpecialFunctions/MulExpNegMulSqIntegral.lean/declarations/integrable-mulexpnegmulsq-comp-restrict-of-iscompact.md) | 52 | `result-track:bafcf2b79e00ba119978a2bfa1e508b4c4347be4bc80c7a5d40c597c57ef7f20` |
-| 3 | `theorem` | [tendsto_integral_mulExpNegMulSq_comp](../../../../SpecialFunctions/MulExpNegMulSqIntegral.lean/declarations/tendsto-integral-mulexpnegmulsq-comp.md) | 59 | `result-track:e06aec20b7b38f2a1dd5f94832142eb5a4860234341c884b7e8a49acdda06804` |
-| 4 | `theorem` | [tendsto_integral_mul_one_add_inv_smul_sq_pow](../../../../SpecialFunctions/MulExpNegMulSqIntegral.lean/declarations/tendsto-integral-mul-one-add-inv-smul-sq-pow.md) | 77 | `result-track:953c806b099ed63f1f454e31d733d582458786323bca6b8fe66f0458dc66449c` |
-| 5 | `theorem` | [integral_mulExpNegMulSq_comp_eq](../../../../SpecialFunctions/MulExpNegMulSqIntegral.lean/declarations/integral-mulexpnegmulsq-comp-eq.md) | 115 | `result-track:edaa892d2832fdeb9ec4446f5d702ae59ab32325efaddb1d33ddc2f8e0337a5c` |
-| 6 | `theorem` | [abs_integral_sub_setIntegral_mulExpNegMulSq_comp_lt](../../../../SpecialFunctions/MulExpNegMulSqIntegral.lean/declarations/abs-integral-sub-setintegral-mulexpnegmulsq-comp-lt.md) | 130 | `result-track:fba97e045cba5a87a3206335f5b09b8919141812db6b165f3ce42e17c4d1d9fe` |
-| 7 | `theorem` | [abs_setIntegral_mulExpNegMulSq_comp_sub_le_mul_measure](../../../../SpecialFunctions/MulExpNegMulSqIntegral.lean/declarations/abs-setintegral-mulexpnegmulsq-comp-sub-le-mul-measure.md) | 139 | `result-track:8cd92fde57f38061e5c228cb75aeaec7b83b20cf813186174971e1f40b0ee02f` |
-| 8 | `theorem` | [dist_integral_mulExpNegMulSq_comp_le](../../../../SpecialFunctions/MulExpNegMulSqIntegral.lean/declarations/dist-integral-mulexpnegmulsq-comp-le.md) | 156 | `result-track:52b0ff662e24e7e56e2c301c15e5522809fdd3ad0d2a0649bd5014d48fc74bf2` |
+| 1 | `theorem` | [integrable_mulExpNegMulSq_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/MulExpNegMulSqIntegral.lean/declarations/integrable-mulexpnegmulsq-comp.md) | 47 | `result-track:e3a14b39a3484d9c6d9842aa44fd5d84ddd10333a3c7d7490506cc875cd6b13b` |
+| 2 | `theorem` | [integrable_mulExpNegMulSq_comp_restrict_of_isCompact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/MulExpNegMulSqIntegral.lean/declarations/integrable-mulexpnegmulsq-comp-restrict-of-iscompact.md) | 52 | `result-track:bafcf2b79e00ba119978a2bfa1e508b4c4347be4bc80c7a5d40c597c57ef7f20` |
+| 3 | `theorem` | [tendsto_integral_mulExpNegMulSq_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/MulExpNegMulSqIntegral.lean/declarations/tendsto-integral-mulexpnegmulsq-comp.md) | 59 | `result-track:e06aec20b7b38f2a1dd5f94832142eb5a4860234341c884b7e8a49acdda06804` |
+| 4 | `theorem` | [tendsto_integral_mul_one_add_inv_smul_sq_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/MulExpNegMulSqIntegral.lean/declarations/tendsto-integral-mul-one-add-inv-smul-sq-pow.md) | 77 | `result-track:953c806b099ed63f1f454e31d733d582458786323bca6b8fe66f0458dc66449c` |
+| 5 | `theorem` | [integral_mulExpNegMulSq_comp_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/MulExpNegMulSqIntegral.lean/declarations/integral-mulexpnegmulsq-comp-eq.md) | 115 | `result-track:edaa892d2832fdeb9ec4446f5d702ae59ab32325efaddb1d33ddc2f8e0337a5c` |
+| 6 | `theorem` | [abs_integral_sub_setIntegral_mulExpNegMulSq_comp_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/MulExpNegMulSqIntegral.lean/declarations/abs-integral-sub-setintegral-mulexpnegmulsq-comp-lt.md) | 130 | `result-track:fba97e045cba5a87a3206335f5b09b8919141812db6b165f3ce42e17c4d1d9fe` |
+| 7 | `theorem` | [abs_setIntegral_mulExpNegMulSq_comp_sub_le_mul_measure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/MulExpNegMulSqIntegral.lean/declarations/abs-setintegral-mulexpnegmulsq-comp-sub-le-mul-measure.md) | 139 | `result-track:8cd92fde57f38061e5c228cb75aeaec7b83b20cf813186174971e1f40b0ee02f` |
+| 8 | `theorem` | [dist_integral_mulExpNegMulSq_comp_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/MulExpNegMulSqIntegral.lean/declarations/dist-integral-mulexpnegmulsq-comp-le.md) | 156 | `result-track:52b0ff662e24e7e56e2c301c15e5522809fdd3ad0d2a0649bd5014d48fc74bf2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

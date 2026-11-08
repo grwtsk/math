@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/QuarticRootFaithfulness.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/QuarticRootFaithfulness.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticRootFaithfulness.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticRootFaithfulness.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.QuarticAdjacencyGaloisCorrespondence`](../../../../AssociativeRingsAndAlgebras/QuarticAdjacencyGaloisCorrespondence.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Algebra.QuarticAdjacencyGaloisCorrespondence`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticAdjacencyGaloisCorrespondence.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [RootsGenerate](../../../../AssociativeRingsAndAlgebras/QuarticRootFaithfulness.lean/declarations/rootsgenerate.md) | 25 | `declaration-track:e0c49523fd8ca6638e365f2e8a22ac945513918aaf8a25fabb0180e6ffc158ea` |
-| 2 | `theorem` | [fixes_adjoined_roots](../../../../AssociativeRingsAndAlgebras/QuarticRootFaithfulness.lean/declarations/fixes-adjoined-roots.md) | 30 | `result-track:56ede04b3fc71fd9869d75fda6d8db34a9cc8bd34c82e84b962f1cd60f298b03` |
-| 3 | `theorem` | [actualRootPermutationHom_injective_of_generates](../../../../AssociativeRingsAndAlgebras/QuarticRootFaithfulness.lean/declarations/actualrootpermutationhom-injective-of-generates.md) | 49 | `result-track:73b3eee247ecfeb1076885f3e60b147ee2288471d92e0d5ce5a26473719b302d` |
+| 1 | `def` | [RootsGenerate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticRootFaithfulness.lean/declarations/rootsgenerate.md) | 25 | `declaration-track:e0c49523fd8ca6638e365f2e8a22ac945513918aaf8a25fabb0180e6ffc158ea` |
+| 2 | `theorem` | [fixes_adjoined_roots](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticRootFaithfulness.lean/declarations/fixes-adjoined-roots.md) | 30 | `result-track:56ede04b3fc71fd9869d75fda6d8db34a9cc8bd34c82e84b962f1cd60f298b03` |
+| 3 | `theorem` | [actualRootPermutationHom_injective_of_generates](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticRootFaithfulness.lean/declarations/actualrootpermutationhom-injective-of-generates.md) | 49 | `result-track:73b3eee247ecfeb1076885f3e60b147ee2288471d92e0d5ce5a26473719b302d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

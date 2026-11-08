@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/DirichletCharacterBoundsBounds.lean/index.md) · [Full source](../../../../NumberTheory/DirichletCharacterBoundsBounds.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DirichletCharacterBoundsBounds.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DirichletCharacterBoundsBounds.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [unit_norm_eq_one](../../../../NumberTheory/DirichletCharacterBoundsBounds.lean/declarations/unit-norm-eq-one.md) | 23 | `result-track:ca900b5d4e872d5611a6a99f0d27cc5f03e515c3638b73a1466bf085519fcd59` |
-| 2 | `lemma` | [norm_le_one](../../../../NumberTheory/DirichletCharacterBoundsBounds.lean/declarations/norm-le-one.md) | 29 | `result-track:4927c2cc61204a52f18381cd867a533fd5f2fb1aaa55d41f3aaf0c7ef19371ee` |
+| 1 | `lemma` | [unit_norm_eq_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DirichletCharacterBoundsBounds.lean/declarations/unit-norm-eq-one.md) | 23 | `result-track:ca900b5d4e872d5611a6a99f0d27cc5f03e515c3638b73a1466bf085519fcd59` |
+| 2 | `lemma` | [norm_le_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DirichletCharacterBoundsBounds.lean/declarations/norm-le-one.md) | 29 | `result-track:4927c2cc61204a52f18381cd867a533fd5f2fb1aaa55d41f3aaf0c7ef19371ee` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

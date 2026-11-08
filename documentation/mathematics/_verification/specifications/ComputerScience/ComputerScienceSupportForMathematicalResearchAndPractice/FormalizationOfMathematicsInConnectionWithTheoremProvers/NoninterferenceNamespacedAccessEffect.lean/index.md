@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NoninterferenceNamespacedAccessEffect.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NoninterferenceNamespacedAccessEffect.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NoninterferenceNamespacedAccessEffect.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NoninterferenceNamespacedAccessEffect.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [AccessEffect](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NoninterferenceNamespacedAccessEffect.lean/declarations/accesseffect.md) | 20 | `declaration-track:3c07798900f1d00237b15f6a11b0e993a8f84eac8a5344905875b3cc6beaa85f` |
-| 2 | `def` | [MachineResolution.authoritativeEffect](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NoninterferenceNamespacedAccessEffect.lean/declarations/machineresolution-authoritativeeffect.md) | 24 | `declaration-track:e4f1c144fdc42f5331eca612deca7f42b1a1722499bd7d799facbf307efe9d39` |
-| 3 | `theorem` | [accessMachine_has_no_authoritative_effect](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NoninterferenceNamespacedAccessEffect.lean/declarations/accessmachine-has-no-authoritative-effect.md) | 34 | `result-track:0d0546edc82a02aa69c2492a004f7831ae7e54aba5fffb0c687ae642f56b4e0a` |
+| 1 | `inductive` | [AccessEffect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NoninterferenceNamespacedAccessEffect.lean/declarations/accesseffect.md) | 20 | `declaration-track:3c07798900f1d00237b15f6a11b0e993a8f84eac8a5344905875b3cc6beaa85f` |
+| 2 | `def` | [MachineResolution.authoritativeEffect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NoninterferenceNamespacedAccessEffect.lean/declarations/machineresolution-authoritativeeffect.md) | 24 | `declaration-track:e4f1c144fdc42f5331eca612deca7f42b1a1722499bd7d799facbf307efe9d39` |
+| 3 | `theorem` | [accessMachine_has_no_authoritative_effect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NoninterferenceNamespacedAccessEffect.lean/declarations/accessmachine-has-no-authoritative-effect.md) | 34 | `result-track:0d0546edc82a02aa69c2492a004f7831ae7e54aba5fffb0c687ae642f56b4e0a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/PrimeMultiplicityNamespacedPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/PrimeMultiplicityNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PrimeMultiplicityNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PrimeMultiplicityNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [multiplicity_addValuation](../../../../CommutativeAlgebra/PrimeMultiplicityNamespacedPublic.lean/declarations/multiplicity-addvaluation.md) | 28 | `declaration-track:4f52fdbf6c4354869f5cdf2ffebdb184327ff1d0198f4aa2c42c469b9f31f3a2` |
-| 2 | `theorem` | [multiplicity_addValuation_apply](../../../../CommutativeAlgebra/PrimeMultiplicityNamespacedPublic.lean/declarations/multiplicity-addvaluation-apply.md) | 34 | `result-track:2bc8530422922a119a51c77178bd858e82a7a51de34ac65ac6873cad875394ae` |
+| 1 | `def` | [multiplicity_addValuation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PrimeMultiplicityNamespacedPublic.lean/declarations/multiplicity-addvaluation.md) | 28 | `declaration-track:4f52fdbf6c4354869f5cdf2ffebdb184327ff1d0198f4aa2c42c469b9f31f3a2` |
+| 2 | `theorem` | [multiplicity_addValuation_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PrimeMultiplicityNamespacedPublic.lean/declarations/multiplicity-addvaluation-apply.md) | 34 | `result-track:2bc8530422922a119a51c77178bd858e82a7a51de34ac65ac6873cad875394ae` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

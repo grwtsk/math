@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightUnboundedPrimeJumpControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightUnboundedPrimeJumpControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightUnboundedPrimeJumpControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightUnboundedPrimeJumpControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.PinnedPrimeWeightUnboundedPrimeJump`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightUnboundedPrimeJump.lean/index.md) — import line 3; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.Checks.PinnedPrimeWeightPsiCapacityNoGoControls`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightPsiCapacityNoGoControls.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.PinnedPrimeWeightUnboundedPrimeJump`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightUnboundedPrimeJump.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.Checks.PinnedPrimeWeightPsiCapacityNoGoControls`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightPsiCapacityNoGoControls.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Tactic` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [concrete_chebyshev_prime_jump](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightUnboundedPrimeJumpControls.lean/declarations/concrete-chebyshev-prime-jump.md) | 17 | `result-track:46d61806007e4c626bfb3a921c57ef52fed1d30e16ef1bffb08a20bb4271d3c1` |
-| 2 | `theorem` | [concrete_psi_error_prime_jump](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightUnboundedPrimeJumpControls.lean/declarations/concrete-psi-error-prime-jump.md) | 25 | `result-track:14507b9c93c3432f33c79f707e8a7ecddb1c16a4b7bb4a8c196036054cefbfae` |
-| 3 | `theorem` | [concrete_unbounded_adjacent_psi_jump](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightUnboundedPrimeJumpControls.lean/declarations/concrete-unbounded-adjacent-psi-jump.md) | 34 | `result-track:b2e3f260fadb6f323ff9709764122296938d3b3990de49a43255e1fc12385b3d` |
-| 4 | `theorem` | [fixed_integerPsiCapacity_rejected_given_PNT_and_recurrence](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightUnboundedPrimeJumpControls.lean/declarations/fixed-integerpsicapacity-rejected-given-pnt-and-recurrence.md) | 41 | `result-track:ce08d43f75a7cb853abacd17f86f6d5e78bb813401acc5513f494b4f93f7c16d` |
-| 5 | `theorem` | [integerPsiCapacity_rejected_given_PNT_and_recurrence](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightUnboundedPrimeJumpControls.lean/declarations/integerpsicapacity-rejected-given-pnt-and-recurrence.md) | 52 | `result-track:b99f55ffaadba815c97385070c040719cbe73db3e46334b40ac1dc4e017cd6be` |
-| 6 | `def` | [remainingNoGoSuppliers](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightUnboundedPrimeJumpControls.lean/declarations/remainingnogosuppliers.md) | 62 | `declaration-track:eb9e7017f06e5b06f2d8c682ea3942170deccadffef74ab42bcee500a61a47bd` |
-| 7 | `def` | [prohibitedPromotions](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightUnboundedPrimeJumpControls.lean/declarations/prohibitedpromotions.md) | 69 | `declaration-track:53f632cf52917b6788481a86463f94b835499c0f52573e041e03da925c12efd2` |
+| 1 | `theorem` | [concrete_chebyshev_prime_jump](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightUnboundedPrimeJumpControls.lean/declarations/concrete-chebyshev-prime-jump.md) | 17 | `result-track:46d61806007e4c626bfb3a921c57ef52fed1d30e16ef1bffb08a20bb4271d3c1` |
+| 2 | `theorem` | [concrete_psi_error_prime_jump](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightUnboundedPrimeJumpControls.lean/declarations/concrete-psi-error-prime-jump.md) | 25 | `result-track:14507b9c93c3432f33c79f707e8a7ecddb1c16a4b7bb4a8c196036054cefbfae` |
+| 3 | `theorem` | [concrete_unbounded_adjacent_psi_jump](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightUnboundedPrimeJumpControls.lean/declarations/concrete-unbounded-adjacent-psi-jump.md) | 34 | `result-track:b2e3f260fadb6f323ff9709764122296938d3b3990de49a43255e1fc12385b3d` |
+| 4 | `theorem` | [fixed_integerPsiCapacity_rejected_given_PNT_and_recurrence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightUnboundedPrimeJumpControls.lean/declarations/fixed-integerpsicapacity-rejected-given-pnt-and-recurrence.md) | 41 | `result-track:ce08d43f75a7cb853abacd17f86f6d5e78bb813401acc5513f494b4f93f7c16d` |
+| 5 | `theorem` | [integerPsiCapacity_rejected_given_PNT_and_recurrence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightUnboundedPrimeJumpControls.lean/declarations/integerpsicapacity-rejected-given-pnt-and-recurrence.md) | 52 | `result-track:b99f55ffaadba815c97385070c040719cbe73db3e46334b40ac1dc4e017cd6be` |
+| 6 | `def` | [remainingNoGoSuppliers](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightUnboundedPrimeJumpControls.lean/declarations/remainingnogosuppliers.md) | 62 | `declaration-track:eb9e7017f06e5b06f2d8c682ea3942170deccadffef74ab42bcee500a61a47bd` |
+| 7 | `def` | [prohibitedPromotions](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightUnboundedPrimeJumpControls.lean/declarations/prohibitedpromotions.md) | 69 | `declaration-track:53f632cf52917b6788481a86463f94b835499c0f52573e041e03da925c12efd2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

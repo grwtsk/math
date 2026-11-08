@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WholePredicatePreservingApplication.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WholePredicatePreservingApplication.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WholePredicatePreservingApplication.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WholePredicatePreservingApplication.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TypedApplication](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WholePredicatePreservingApplication.lean/declarations/typedapplication.md) | 32 | `declaration-track:4a6585218298c761e9d4871fe103a66c6ceaab49a5b44b8d312562fd729a1998` |
-| 2 | `def` | [identity](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WholePredicatePreservingApplication.lean/declarations/identity.md) | 43 | `declaration-track:9b6e46677c3bc85b8829cf84d47a5fa84710f93dd20880b079955a9fc05b710d` |
-| 3 | `def` | [comp](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WholePredicatePreservingApplication.lean/declarations/comp.md) | 52 | `declaration-track:8a9568575ad0797dfac3d675f50e2a95644548c8b05e77bc297c202b2fe89b91` |
+| 1 | `structure` | [TypedApplication](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WholePredicatePreservingApplication.lean/declarations/typedapplication.md) | 32 | `declaration-track:4a6585218298c761e9d4871fe103a66c6ceaab49a5b44b8d312562fd729a1998` |
+| 2 | `def` | [identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WholePredicatePreservingApplication.lean/declarations/identity.md) | 43 | `declaration-track:9b6e46677c3bc85b8829cf84d47a5fa84710f93dd20880b079955a9fc05b710d` |
+| 3 | `def` | [comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WholePredicatePreservingApplication.lean/declarations/comp.md) | 52 | `declaration-track:8a9568575ad0797dfac3d675f50e2a95644548c8b05e77bc297c202b2fe89b91` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

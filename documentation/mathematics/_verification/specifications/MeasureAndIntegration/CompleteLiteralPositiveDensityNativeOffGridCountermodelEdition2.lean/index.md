@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CompleteLiteralPositiveDensityNativeOffGridCountermodelEdition2.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CompleteLiteralPositiveDensityNativeOffGridCountermodelEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompleteLiteralPositiveDensityNativeOffGridCountermodelEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompleteLiteralPositiveDensityNativeOffGridCountermodelEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [comparisonReadout](../../../../MeasureAndIntegration/CompleteLiteralPositiveDensityNativeOffGridCountermodelEdition2.lean/declarations/comparisonreadout.md) | 31 | `declaration-track:3027f1fae2187ec9e568363cc6ff6f80f122e1e78bc6be4bc27d7265d379cd84` |
-| 2 | `theorem` | [literal_integer_native_readout_negative](../../../../MeasureAndIntegration/CompleteLiteralPositiveDensityNativeOffGridCountermodelEdition2.lean/declarations/literal-integer-native-readout-negative.md) | 35 | `result-track:c26b68cce8b5565cb9229dd250d74b9f5187302e4e5ed2717eb826ac28bd17c9` |
-| 3 | `theorem` | [literal_half_integer_native_readout_lower](../../../../MeasureAndIntegration/CompleteLiteralPositiveDensityNativeOffGridCountermodelEdition2.lean/declarations/literal-half-integer-native-readout-lower.md) | 47 | `result-track:0cbbd6d512df29dacbfbc8474f5e577fdd9e8f910bec540489dfd2592c2e24b4` |
-| 4 | `theorem` | [literal_density_comparison_readout](../../../../MeasureAndIntegration/CompleteLiteralPositiveDensityNativeOffGridCountermodelEdition2.lean/declarations/literal-density-comparison-readout.md) | 63 | `result-track:99b455bfee7f56fa96c9a2a2a4ad2e8cca4dd3501e61af9d6d9a48bd2ce476d4` |
-| 5 | `theorem` | [literal_positive_native_offgrid_countermodel](../../../../MeasureAndIntegration/CompleteLiteralPositiveDensityNativeOffGridCountermodelEdition2.lean/declarations/literal-positive-native-offgrid-countermodel.md) | 66 | `result-track:92307148abd8e3fe6763db42e005e090c680ad814b7f8989f8a0f05b5f577139` |
+| 1 | `def` | [comparisonReadout](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompleteLiteralPositiveDensityNativeOffGridCountermodelEdition2.lean/declarations/comparisonreadout.md) | 31 | `declaration-track:3027f1fae2187ec9e568363cc6ff6f80f122e1e78bc6be4bc27d7265d379cd84` |
+| 2 | `theorem` | [literal_integer_native_readout_negative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompleteLiteralPositiveDensityNativeOffGridCountermodelEdition2.lean/declarations/literal-integer-native-readout-negative.md) | 35 | `result-track:c26b68cce8b5565cb9229dd250d74b9f5187302e4e5ed2717eb826ac28bd17c9` |
+| 3 | `theorem` | [literal_half_integer_native_readout_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompleteLiteralPositiveDensityNativeOffGridCountermodelEdition2.lean/declarations/literal-half-integer-native-readout-lower.md) | 47 | `result-track:0cbbd6d512df29dacbfbc8474f5e577fdd9e8f910bec540489dfd2592c2e24b4` |
+| 4 | `theorem` | [literal_density_comparison_readout](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompleteLiteralPositiveDensityNativeOffGridCountermodelEdition2.lean/declarations/literal-density-comparison-readout.md) | 63 | `result-track:99b455bfee7f56fa96c9a2a2a4ad2e8cca4dd3501e61af9d6d9a48bd2ce476d4` |
+| 5 | `theorem` | [literal_positive_native_offgrid_countermodel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompleteLiteralPositiveDensityNativeOffGridCountermodelEdition2.lean/declarations/literal-positive-native-offgrid-countermodel.md) | 66 | `result-track:92307148abd8e3fe6763db42e005e090c680ad814b7f8989f8a0f05b5f577139` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

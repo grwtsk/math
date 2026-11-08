@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/QuotientNilpotent.lean/index.md) · [Full source](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/QuotientNilpotent.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/QuotientNilpotent.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/QuotientNilpotent.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Ideal.isRadical_iff_quotient_reduced](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/QuotientNilpotent.lean/declarations/ideal-isradical-iff-quotient-reduced.md) | 13 | `result-track:7c31083e79133ddcddbeda97d148d226060a0720446f4cbcf9d5c99746557b68` |
-| 2 | `theorem` | [Ideal.IsNilpotent.induction_on](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/QuotientNilpotent.lean/declarations/ideal-isnilpotent-induction-on.md) | 22 | `result-track:2df0c311935838d9b1503c33ce271f989a649396c5d5d8f8cc2aef4e4ee76fc2` |
-| 3 | `theorem` | [IsNilpotent.isUnit_quotient_mk_iff](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/QuotientNilpotent.lean/declarations/isnilpotent-isunit-quotient-mk-iff.md) | 49 | `result-track:ee8c89d10fe8a6f17d03557a15344e1bc147f0c192e632921a6aa92cdf726351` |
+| 1 | `theorem` | [Ideal.isRadical_iff_quotient_reduced](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/QuotientNilpotent.lean/declarations/ideal-isradical-iff-quotient-reduced.md) | 13 | `result-track:7c31083e79133ddcddbeda97d148d226060a0720446f4cbcf9d5c99746557b68` |
+| 2 | `theorem` | [Ideal.IsNilpotent.induction_on](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/QuotientNilpotent.lean/declarations/ideal-isnilpotent-induction-on.md) | 22 | `result-track:2df0c311935838d9b1503c33ce271f989a649396c5d5d8f8cc2aef4e4ee76fc2` |
+| 3 | `theorem` | [IsNilpotent.isUnit_quotient_mk_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/QuotientNilpotent.lean/declarations/isnilpotent-isunit-quotient-mk-iff.md) | 49 | `result-track:ee8c89d10fe8a6f17d03557a15344e1bc147f0c192e632921a6aa92cdf726351` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

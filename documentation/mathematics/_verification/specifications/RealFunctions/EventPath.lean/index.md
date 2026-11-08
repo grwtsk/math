@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/EventPath.lean/index.md) · [Full source](../../../../RealFunctions/EventPath.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/EventPath.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/EventPath.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [EventPath](../../../../RealFunctions/EventPath.lean/declarations/eventpath.md) | 10 | `declaration-track:e93fb228da841ab6d3f4ed793e8fc243c076a612170d8576eba9b8c81bde641c` |
-| 2 | `structure` | [ExactPathCertificate](../../../../RealFunctions/EventPath.lean/declarations/exactpathcertificate.md) | 15 | `declaration-track:9f3cee443e9ebf960e216b8060f98f6f2532de72a8634b7e8eace10dcdc0278f` |
-| 3 | `theorem` | [coboundary_integral_closedWalk_eq_zero](../../../../RealFunctions/EventPath.lean/declarations/coboundary-integral-closedwalk-eq-zero.md) | 19 | `result-track:2e8b643c07efc7288afde8b115ac981309b62653db57fb79fce4cf9957b4e7ae` |
-| 4 | `theorem` | [parallel_paths_have_equal_integral_of_exact_cochain](../../../../RealFunctions/EventPath.lean/declarations/parallel-paths-have-equal-integral-of-exact-cochain.md) | 27 | `result-track:4e4bdecc03749c204aae47efcdd3ca8bd6d9dcd7437eca0fc59ca9dd480475a1` |
+| 1 | `structure` | [EventPath](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/EventPath.lean/declarations/eventpath.md) | 10 | `declaration-track:e93fb228da841ab6d3f4ed793e8fc243c076a612170d8576eba9b8c81bde641c` |
+| 2 | `structure` | [ExactPathCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/EventPath.lean/declarations/exactpathcertificate.md) | 15 | `declaration-track:9f3cee443e9ebf960e216b8060f98f6f2532de72a8634b7e8eace10dcdc0278f` |
+| 3 | `theorem` | [coboundary_integral_closedWalk_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/EventPath.lean/declarations/coboundary-integral-closedwalk-eq-zero.md) | 19 | `result-track:2e8b643c07efc7288afde8b115ac981309b62653db57fb79fce4cf9957b4e7ae` |
+| 4 | `theorem` | [parallel_paths_have_equal_integral_of_exact_cochain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/EventPath.lean/declarations/parallel-paths-have-equal-integral-of-exact-cochain.md) | 27 | `result-track:4e4bdecc03749c204aae47efcdd3ca8bd6d9dcd7437eca0fc59ca9dd480475a1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

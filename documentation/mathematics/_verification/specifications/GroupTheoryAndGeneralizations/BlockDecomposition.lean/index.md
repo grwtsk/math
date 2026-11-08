@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/BlockDecomposition.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/BlockDecomposition.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/BlockDecomposition.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/BlockDecomposition.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [OperatorComposition](../../../../GroupTheoryAndGeneralizations/BlockDecomposition.lean/declarations/operatorcomposition.md) | 13 | `declaration-track:90aaf20a8244004cacac1c5c318189308a6cf7c9ed7a420db7020c7febc6c50c` |
-| 2 | `structure` | [HardyBlockModel](../../../../GroupTheoryAndGeneralizations/BlockDecomposition.lean/declarations/hardyblockmodel.md) | 32 | `declaration-track:1a4cfdd6e1452e50540098812f3208090e417dabaeab7c496797398f4e2e8b3a` |
-| 3 | `structure` | [HardyProductInteraction](../../../../GroupTheoryAndGeneralizations/BlockDecomposition.lean/declarations/hardyproductinteraction.md) | 57 | `declaration-track:bbe5c08899f8a478c2f8d6a5da922266348a85fe822b63627465a76c7adece91` |
+| 1 | `structure` | [OperatorComposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/BlockDecomposition.lean/declarations/operatorcomposition.md) | 13 | `declaration-track:90aaf20a8244004cacac1c5c318189308a6cf7c9ed7a420db7020c7febc6c50c` |
+| 2 | `structure` | [HardyBlockModel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/BlockDecomposition.lean/declarations/hardyblockmodel.md) | 32 | `declaration-track:1a4cfdd6e1452e50540098812f3208090e417dabaeab7c496797398f4e2e8b3a` |
+| 3 | `structure` | [HardyProductInteraction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/BlockDecomposition.lean/declarations/hardyproductinteraction.md) | 57 | `declaration-track:bbe5c08899f8a478c2f8d6a5da922266348a85fe822b63627465a76c7adece91` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

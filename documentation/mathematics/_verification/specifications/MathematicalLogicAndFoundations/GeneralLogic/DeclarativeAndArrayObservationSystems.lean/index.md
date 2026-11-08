@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DeclarativeAndArrayObservationSystems.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DeclarativeAndArrayObservationSystems.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DeclarativeAndArrayObservationSystems.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DeclarativeAndArrayObservationSystems.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mapSpecSystem](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DeclarativeAndArrayObservationSystems.lean/declarations/mapspecsystem.md) | 39 | `declaration-track:a932f1554e94fb459217b94d43b0b2e6a260832f610800dc7851ccf4432f7975` |
-| 2 | `def` | [mapImplSystem](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DeclarativeAndArrayObservationSystems.lean/declarations/mapimplsystem.md) | 49 | `declaration-track:435ef3edefd5ced6bf10b79170073cb8bc1b08fed4945206d7d90893ecfd678b` |
+| 1 | `def` | [mapSpecSystem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DeclarativeAndArrayObservationSystems.lean/declarations/mapspecsystem.md) | 39 | `declaration-track:a932f1554e94fb459217b94d43b0b2e6a260832f610800dc7851ccf4432f7975` |
+| 2 | `def` | [mapImplSystem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DeclarativeAndArrayObservationSystems.lean/declarations/mapimplsystem.md) | 49 | `declaration-track:435ef3edefd5ced6bf10b79170073cb8bc1b08fed4945206d7d90893ecfd678b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

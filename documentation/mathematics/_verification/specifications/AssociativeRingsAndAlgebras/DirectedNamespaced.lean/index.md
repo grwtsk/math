@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/DirectedNamespaced.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/DirectedNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/DirectedNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/DirectedNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [coe_iSup_of_directed](../../../../AssociativeRingsAndAlgebras/DirectedNamespaced.lean/declarations/coe-isup-of-directed.md) | 37 | `result-track:8d90b280cbe0013873c7931ea1e317bb752b3dc917d8912b80d12d3d30e56118` |
-| 2 | `def` | [iSupLift](../../../../AssociativeRingsAndAlgebras/DirectedNamespaced.lean/declarations/isuplift.md) | 53 | `declaration-track:62055bc507b35d2816ed5807645a5cbf5edd73ab7772874d98ba30fdb1b59c1f` |
-| 3 | `theorem` | [iSupLift_inclusion](../../../../AssociativeRingsAndAlgebras/DirectedNamespaced.lean/declarations/isuplift-inclusion.md) | 79 | `result-track:806d6b991ba26d7742385abdbb9a0f0bf1c7e564bc6f75f08fc0300e788a881b` |
-| 4 | `theorem` | [iSupLift_comp_inclusion](../../../../AssociativeRingsAndAlgebras/DirectedNamespaced.lean/declarations/isuplift-comp-inclusion.md) | 87 | `result-track:bec087e47016a37179444b61643a586ac007e8687fe31da4e4385d374ee5f111` |
-| 5 | `theorem` | [iSupLift_mk](../../../../AssociativeRingsAndAlgebras/DirectedNamespaced.lean/declarations/isuplift-mk.md) | 93 | `result-track:8dc66757ea03e2cdba2c663078ddea4b9f2e4dedfe2a83521b58592cd456d924` |
-| 6 | `theorem` | [iSupLift_of_mem](../../../../AssociativeRingsAndAlgebras/DirectedNamespaced.lean/declarations/isuplift-of-mem.md) | 100 | `result-track:31f574d81e5995cbb9417bb679b9805b0feb2548dd40892a0a0952e1521a5d02` |
+| 1 | `theorem` | [coe_iSup_of_directed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/DirectedNamespaced.lean/declarations/coe-isup-of-directed.md) | 37 | `result-track:8d90b280cbe0013873c7931ea1e317bb752b3dc917d8912b80d12d3d30e56118` |
+| 2 | `def` | [iSupLift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/DirectedNamespaced.lean/declarations/isuplift.md) | 53 | `declaration-track:62055bc507b35d2816ed5807645a5cbf5edd73ab7772874d98ba30fdb1b59c1f` |
+| 3 | `theorem` | [iSupLift_inclusion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/DirectedNamespaced.lean/declarations/isuplift-inclusion.md) | 79 | `result-track:806d6b991ba26d7742385abdbb9a0f0bf1c7e564bc6f75f08fc0300e788a881b` |
+| 4 | `theorem` | [iSupLift_comp_inclusion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/DirectedNamespaced.lean/declarations/isuplift-comp-inclusion.md) | 87 | `result-track:bec087e47016a37179444b61643a586ac007e8687fe31da4e4385d374ee5f111` |
+| 5 | `theorem` | [iSupLift_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/DirectedNamespaced.lean/declarations/isuplift-mk.md) | 93 | `result-track:8dc66757ea03e2cdba2c663078ddea4b9f2e4dedfe2a83521b58592cd456d924` |
+| 6 | `theorem` | [iSupLift_of_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/DirectedNamespaced.lean/declarations/isuplift-of-mem.md) | 100 | `result-track:31f574d81e5995cbb9417bb679b9805b0feb2548dd40892a0a0952e1521a5d02` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

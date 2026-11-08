@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PrimeNumberTheoremAnd.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PrimeNumberTheoremAnd.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PrimeNumberTheoremAnd.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PrimeNumberTheoremAnd.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [declaredLakeDependency](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PrimeNumberTheoremAnd.lean/declarations/declaredlakedependency.md) | 11 | `declaration-track:81ed25f604db9ce0293edf0557c361d0ee0ecf90703b3a49e61b8905518be4bc` |
-| 2 | `theorem` | [not_declared_dependency](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PrimeNumberTheoremAnd.lean/declarations/not-declared-dependency.md) | 13 | `result-track:9aadadd1bc86e1b328014d5f4d6b72490bd16e7b6d29d40c403b5a2af3f608a1` |
+| 1 | `def` | [declaredLakeDependency](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PrimeNumberTheoremAnd.lean/declarations/declaredlakedependency.md) | 11 | `declaration-track:81ed25f604db9ce0293edf0557c361d0ee0ecf90703b3a49e61b8905518be4bc` |
+| 2 | `theorem` | [not_declared_dependency](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PrimeNumberTheoremAnd.lean/declarations/not-declared-dependency.md) | 13 | `result-track:9aadadd1bc86e1b328014d5f4d6b72490bd16e7b6d29d40c403b5a2af3f608a1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

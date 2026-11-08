@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/GaussSumNamespaced.lean/index.md) · [Full source](../../../../NumberTheory/GaussSumNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/GaussSumNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/GaussSumNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [gaussSum_aux_of_mulShift](../../../../NumberTheory/GaussSumNamespaced.lean/declarations/gausssum-aux-of-mulshift.md) | 24 | `result-track:13c04579f5e26254224c56281a6449df04bf2143aae3727f66346632d2423e46` |
-| 2 | `lemma` | [factorsThrough_of_gaussSum_ne_zero](../../../../NumberTheory/GaussSumNamespaced.lean/declarations/factorsthrough-of-gausssum-ne-zero.md) | 43 | `result-track:3c66065a4275cdb058296a7fb6bb2a2138adee9926e9616c6c6f7fe1978e4ddb` |
-| 3 | `lemma` | [gaussSum_eq_zero_of_isPrimitive_of_not_isPrimitive](../../../../NumberTheory/GaussSumNamespaced.lean/declarations/gausssum-eq-zero-of-isprimitive-of-not-isprimitive.md) | 53 | `result-track:0e5f7d2b990264de955e32951a8a1099838f806ae42505f189a48f197c49cde4` |
-| 4 | `lemma` | [gaussSum_mulShift_of_isPrimitive](../../../../NumberTheory/GaussSumNamespaced.lean/declarations/gausssum-mulshift-of-isprimitive.md) | 63 | `result-track:7ce749bacbf519428d7679460aceba86c74c342813e4e31eafaa97d6f95161eb` |
+| 1 | `lemma` | [gaussSum_aux_of_mulShift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/GaussSumNamespaced.lean/declarations/gausssum-aux-of-mulshift.md) | 24 | `result-track:13c04579f5e26254224c56281a6449df04bf2143aae3727f66346632d2423e46` |
+| 2 | `lemma` | [factorsThrough_of_gaussSum_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/GaussSumNamespaced.lean/declarations/factorsthrough-of-gausssum-ne-zero.md) | 43 | `result-track:3c66065a4275cdb058296a7fb6bb2a2138adee9926e9616c6c6f7fe1978e4ddb` |
+| 3 | `lemma` | [gaussSum_eq_zero_of_isPrimitive_of_not_isPrimitive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/GaussSumNamespaced.lean/declarations/gausssum-eq-zero-of-isprimitive-of-not-isprimitive.md) | 53 | `result-track:0e5f7d2b990264de955e32951a8a1099838f806ae42505f189a48f197c49cde4` |
+| 4 | `lemma` | [gaussSum_mulShift_of_isPrimitive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/GaussSumNamespaced.lean/declarations/gausssum-mulshift-of-isprimitive.md) | 63 | `result-track:7ce749bacbf519428d7679460aceba86c74c342813e4e31eafaa97d6f95161eb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

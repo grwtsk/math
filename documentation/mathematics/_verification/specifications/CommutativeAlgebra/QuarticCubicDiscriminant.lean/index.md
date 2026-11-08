@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/QuarticCubicDiscriminant.lean/index.md) · [Full source](../../../../CommutativeAlgebra/QuarticCubicDiscriminant.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticCubicDiscriminant.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticCubicDiscriminant.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.QuarticAdjacencyDiscriminant`](../../../../CommutativeAlgebra/QuarticAdjacencyDiscriminant.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Algebra.QuarticAdjacencyDiscriminant`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticAdjacencyDiscriminant.lean/index.md) — import line 1; pinned internal source present.
 - `Mathlib.Algebra.CubicDiscriminant` — import line 2; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [adjacencyCubic](../../../../CommutativeAlgebra/QuarticCubicDiscriminant.lean/declarations/adjacencycubic.md) | 25 | `declaration-track:67b54284ec585e6b250fe3d983534c1c0e64921d81b7157ac6ea8440f42c989f` |
-| 2 | `theorem` | [adjacencyCubic_discr_eq_quarticVandermonde_sq](../../../../CommutativeAlgebra/QuarticCubicDiscriminant.lean/declarations/adjacencycubic-discr-eq-quarticvandermonde-sq.md) | 32 | `result-track:15a69fba0580842900584abd2567219b6ef52254de8b6a494755b09d2d8ea74b` |
-| 3 | `theorem` | [adjacencyCubic_discr_eq_adjacencyVandermonde_sq](../../../../CommutativeAlgebra/QuarticCubicDiscriminant.lean/declarations/adjacencycubic-discr-eq-adjacencyvandermonde-sq.md) | 43 | `result-track:0e793566d73c663cd3547cecc5c771c32b20f12dc8c4b66b76b5cd0276ca90c4` |
+| 1 | `def` | [adjacencyCubic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticCubicDiscriminant.lean/declarations/adjacencycubic.md) | 25 | `declaration-track:67b54284ec585e6b250fe3d983534c1c0e64921d81b7157ac6ea8440f42c989f` |
+| 2 | `theorem` | [adjacencyCubic_discr_eq_quarticVandermonde_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticCubicDiscriminant.lean/declarations/adjacencycubic-discr-eq-quarticvandermonde-sq.md) | 32 | `result-track:15a69fba0580842900584abd2567219b6ef52254de8b6a494755b09d2d8ea74b` |
+| 3 | `theorem` | [adjacencyCubic_discr_eq_adjacencyVandermonde_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticCubicDiscriminant.lean/declarations/adjacencycubic-discr-eq-adjacencyvandermonde-sq.md) | 43 | `result-track:0e793566d73c663cd3547cecc5c771c32b20f12dc8c4b66b76b5cd0276ca90c4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

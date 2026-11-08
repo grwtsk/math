@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/DerivativeAttempt01Namespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/DerivativeAttempt01Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DerivativeAttempt01Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DerivativeAttempt01Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actualNormalization_ge_one_div_32](../../../../MeasureAndIntegration/DerivativeAttempt01Namespaced.lean/declarations/actualnormalization-ge-one-div-32.md) | 32 | `result-track:e7630cebba7ecedfd73b01268d1f9ffa87aa8106242853e9ee89bfb3cb2a356f` |
-| 2 | `def` | [endpointDerivativePolynomial](../../../../MeasureAndIntegration/DerivativeAttempt01Namespaced.lean/declarations/endpointderivativepolynomial.md) | 40 | `declaration-track:805b6f5ce64f74a24e3c403736ba501876863135c7b8dd11b118c77bee272c36` |
-| 3 | `theorem` | [actual_deriv_eq_indicator](../../../../MeasureAndIntegration/DerivativeAttempt01Namespaced.lean/declarations/actual-deriv-eq-indicator.md) | 46 | `result-track:7f1da9a1b7b3c4ad8c590c970adbad5b85ca6bc7322170c7944cea5ba666795b` |
-| 4 | `theorem` | [actual_normalized_deriv_endpoint](../../../../MeasureAndIntegration/DerivativeAttempt01Namespaced.lean/declarations/actual-normalized-deriv-endpoint.md) | 54 | `result-track:34b29893e7a811ce84dc97366f9c4aa275b6558baa81b733ac4ac7179c6988d8` |
-| 5 | `theorem` | [endpointDerivativePolynomial_abs_le](../../../../MeasureAndIntegration/DerivativeAttempt01Namespaced.lean/declarations/endpointderivativepolynomial-abs-le.md) | 68 | `result-track:65446cfca27c3d2b5af7544503e05e1b089fa08927c7444f88d5c6c842e2ff1b` |
-| 6 | `theorem` | [actual_correlation_deriv_edge_overlap](../../../../MeasureAndIntegration/DerivativeAttempt01Namespaced.lean/declarations/actual-correlation-deriv-edge-overlap.md) | 131 | `result-track:c9c9ca310302720c7af505691541fb391c6713a0179f2498e6788f6d80475706` |
-| 7 | `theorem` | [actual_correlation_deriv_upper_edge](../../../../MeasureAndIntegration/DerivativeAttempt01Namespaced.lean/declarations/actual-correlation-deriv-upper-edge.md) | 163 | `result-track:41fdd752ec80f6901751d07edf883447ae124110f1231a7c4e5484e9fdd363c4` |
-| 8 | `def` | [edgeFirstPolynomial](../../../../MeasureAndIntegration/DerivativeAttempt01Namespaced.lean/declarations/edgefirstpolynomial.md) | 190 | `declaration-track:0fbb6462b4fe0cc5a755543a28c4ff74f62c33d25bcae011558df82986c70280` |
-| 9 | `theorem` | [actual_correlation_deriv_upper_edge_abs_le](../../../../MeasureAndIntegration/DerivativeAttempt01Namespaced.lean/declarations/actual-correlation-deriv-upper-edge-abs-le.md) | 193 | `result-track:6472f2b25158297d81c554fd7510dd4c945ee9198153f04357fdde3a728fe90e` |
+| 1 | `theorem` | [actualNormalization_ge_one_div_32](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DerivativeAttempt01Namespaced.lean/declarations/actualnormalization-ge-one-div-32.md) | 32 | `result-track:e7630cebba7ecedfd73b01268d1f9ffa87aa8106242853e9ee89bfb3cb2a356f` |
+| 2 | `def` | [endpointDerivativePolynomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DerivativeAttempt01Namespaced.lean/declarations/endpointderivativepolynomial.md) | 40 | `declaration-track:805b6f5ce64f74a24e3c403736ba501876863135c7b8dd11b118c77bee272c36` |
+| 3 | `theorem` | [actual_deriv_eq_indicator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DerivativeAttempt01Namespaced.lean/declarations/actual-deriv-eq-indicator.md) | 46 | `result-track:7f1da9a1b7b3c4ad8c590c970adbad5b85ca6bc7322170c7944cea5ba666795b` |
+| 4 | `theorem` | [actual_normalized_deriv_endpoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DerivativeAttempt01Namespaced.lean/declarations/actual-normalized-deriv-endpoint.md) | 54 | `result-track:34b29893e7a811ce84dc97366f9c4aa275b6558baa81b733ac4ac7179c6988d8` |
+| 5 | `theorem` | [endpointDerivativePolynomial_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DerivativeAttempt01Namespaced.lean/declarations/endpointderivativepolynomial-abs-le.md) | 68 | `result-track:65446cfca27c3d2b5af7544503e05e1b089fa08927c7444f88d5c6c842e2ff1b` |
+| 6 | `theorem` | [actual_correlation_deriv_edge_overlap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DerivativeAttempt01Namespaced.lean/declarations/actual-correlation-deriv-edge-overlap.md) | 131 | `result-track:c9c9ca310302720c7af505691541fb391c6713a0179f2498e6788f6d80475706` |
+| 7 | `theorem` | [actual_correlation_deriv_upper_edge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DerivativeAttempt01Namespaced.lean/declarations/actual-correlation-deriv-upper-edge.md) | 163 | `result-track:41fdd752ec80f6901751d07edf883447ae124110f1231a7c4e5484e9fdd363c4` |
+| 8 | `def` | [edgeFirstPolynomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DerivativeAttempt01Namespaced.lean/declarations/edgefirstpolynomial.md) | 190 | `declaration-track:0fbb6462b4fe0cc5a755543a28c4ff74f62c33d25bcae011558df82986c70280` |
+| 9 | `theorem` | [actual_correlation_deriv_upper_edge_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DerivativeAttempt01Namespaced.lean/declarations/actual-correlation-deriv-upper-edge-abs-le.md) | 193 | `result-track:6472f2b25158297d81c554fd7510dd4c945ee9198153f04357fdde3a728fe90e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

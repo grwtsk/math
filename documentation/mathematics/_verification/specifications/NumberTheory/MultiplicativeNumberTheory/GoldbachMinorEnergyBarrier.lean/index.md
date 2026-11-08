@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachMinorEnergyBarrier.lean/index.md) · [Full source](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachMinorEnergyBarrier.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachMinorEnergyBarrier.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachMinorEnergyBarrier.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Primes.GoldbachMinorAbsoluteEnergy`](../../../../../MeasureAndIntegration/GoldbachMinorAbsoluteEnergy.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Primes.GoldbachMinorAbsoluteEnergy`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GoldbachMinorAbsoluteEnergy.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Tactic` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [goldbachRationalArcIndices_two](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachMinorEnergyBarrier.lean/declarations/goldbachrationalarcindices-two.md) | 34 | `result-track:a076ac5473f3c786ff752e2b8971f0a5335e751e26f93cdd282206e4c6240436` |
-| 2 | `theorem` | [goldbachMajorArcSet_two_eq_union](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachMinorEnergyBarrier.lean/declarations/goldbachmajorarcset-two-eq-union.md) | 38 | `result-track:195c18133dfd7044065a0695022225f8eb630950265185e64c44687af53f61cd` |
-| 3 | `theorem` | [measureReal_goldbachMajorArcSet_two_le](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachMinorEnergyBarrier.lean/declarations/measurereal-goldbachmajorarcset-two-le.md) | 47 | `result-track:a732d7e5230f080bada7f5bc8dae642c955e633c3915dac98be0751a38eeed91` |
-| 4 | `theorem` | [goldbachMajorEnergy_two_le_theta_square](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachMinorEnergyBarrier.lean/declarations/goldbachmajorenergy-two-le-theta-square.md) | 69 | `result-track:e0783e47be89dd37484d8a744001447c35f63df78935e09cf6be9378fe51f49e` |
-| 5 | `theorem` | [goldbachMajorEnergy_two_le_nineteen](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachMinorEnergyBarrier.lean/declarations/goldbachmajorenergy-two-le-nineteen.md) | 95 | `result-track:8f2f4938d1533e11b21e32968eff48d45d1fc89a102d962c515024f0df960d34` |
-| 6 | `theorem` | [goldbachSquareTotal_double_ge_log_theta_difference](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachMinorEnergyBarrier.lean/declarations/goldbachsquaretotal-double-ge-log-theta-difference.md) | 112 | `result-track:11782b63a03f29379ec4fb4549f7ee0af1788f864fdde40a0ecebffa818228f7` |
-| 7 | `theorem` | [goldbachSquareTotal_double_ge_of_coarse](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachMinorEnergyBarrier.lean/declarations/goldbachsquaretotal-double-ge-of-coarse.md) | 152 | `result-track:ba5885220ec013de9bf408e83f68cdc9d196af04081f03f5b6495c51f5308290` |
-| 8 | `theorem` | [goldbachMinorAbsoluteIntegral_double_lower](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachMinorEnergyBarrier.lean/declarations/goldbachminorabsoluteintegral-double-lower.md) | 167 | `result-track:50aabb4601b85bd2139f4362aae9fff50270e1ea6c46ab09dafbd275a7479e6a` |
-| 9 | `theorem` | [goldbachMinorAbsoluteIntegral_gt_linear](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachMinorEnergyBarrier.lean/declarations/goldbachminorabsoluteintegral-gt-linear.md) | 179 | `result-track:9023fc184b1d89bc12101beb2ecda9617d2f6658ffa074411392012ea67200dd` |
+| 1 | `theorem` | [goldbachRationalArcIndices_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachMinorEnergyBarrier.lean/declarations/goldbachrationalarcindices-two.md) | 34 | `result-track:a076ac5473f3c786ff752e2b8971f0a5335e751e26f93cdd282206e4c6240436` |
+| 2 | `theorem` | [goldbachMajorArcSet_two_eq_union](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachMinorEnergyBarrier.lean/declarations/goldbachmajorarcset-two-eq-union.md) | 38 | `result-track:195c18133dfd7044065a0695022225f8eb630950265185e64c44687af53f61cd` |
+| 3 | `theorem` | [measureReal_goldbachMajorArcSet_two_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachMinorEnergyBarrier.lean/declarations/measurereal-goldbachmajorarcset-two-le.md) | 47 | `result-track:a732d7e5230f080bada7f5bc8dae642c955e633c3915dac98be0751a38eeed91` |
+| 4 | `theorem` | [goldbachMajorEnergy_two_le_theta_square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachMinorEnergyBarrier.lean/declarations/goldbachmajorenergy-two-le-theta-square.md) | 69 | `result-track:e0783e47be89dd37484d8a744001447c35f63df78935e09cf6be9378fe51f49e` |
+| 5 | `theorem` | [goldbachMajorEnergy_two_le_nineteen](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachMinorEnergyBarrier.lean/declarations/goldbachmajorenergy-two-le-nineteen.md) | 95 | `result-track:8f2f4938d1533e11b21e32968eff48d45d1fc89a102d962c515024f0df960d34` |
+| 6 | `theorem` | [goldbachSquareTotal_double_ge_log_theta_difference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachMinorEnergyBarrier.lean/declarations/goldbachsquaretotal-double-ge-log-theta-difference.md) | 112 | `result-track:11782b63a03f29379ec4fb4549f7ee0af1788f864fdde40a0ecebffa818228f7` |
+| 7 | `theorem` | [goldbachSquareTotal_double_ge_of_coarse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachMinorEnergyBarrier.lean/declarations/goldbachsquaretotal-double-ge-of-coarse.md) | 152 | `result-track:ba5885220ec013de9bf408e83f68cdc9d196af04081f03f5b6495c51f5308290` |
+| 8 | `theorem` | [goldbachMinorAbsoluteIntegral_double_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachMinorEnergyBarrier.lean/declarations/goldbachminorabsoluteintegral-double-lower.md) | 167 | `result-track:50aabb4601b85bd2139f4362aae9fff50270e1ea6c46ab09dafbd275a7479e6a` |
+| 9 | `theorem` | [goldbachMinorAbsoluteIntegral_gt_linear](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachMinorEnergyBarrier.lean/declarations/goldbachminorabsoluteintegral-gt-linear.md) | 179 | `result-track:9023fc184b1d89bc12101beb2ecda9617d2f6658ffa074411392012ea67200dd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

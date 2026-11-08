@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Pivot.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Pivot.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Pivot.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Pivot.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PivotPosition](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Pivot.lean/declarations/pivotposition.md) | 19 | `declaration-track:e15b6ff02c4207819d33e0c149f4f1896209d3138551781dd72f943243532665` |
-| 2 | `structure` | [PivotCertificate](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Pivot.lean/declarations/pivotcertificate.md) | 24 | `declaration-track:e4919fc19c3e643b212b819bac7af5fae97dfd76617938f755df037873295300` |
-| 3 | `theorem` | [pivot_nonzero](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Pivot.lean/declarations/pivot-nonzero.md) | 32 | `result-track:5c9a04fa0a6c314f9e22abd5dfc88148e601dd88b5ebebdeebaffe7cffea6c2e` |
+| 1 | `structure` | [PivotPosition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Pivot.lean/declarations/pivotposition.md) | 19 | `declaration-track:e15b6ff02c4207819d33e0c149f4f1896209d3138551781dd72f943243532665` |
+| 2 | `structure` | [PivotCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Pivot.lean/declarations/pivotcertificate.md) | 24 | `declaration-track:e4919fc19c3e643b212b819bac7af5fae97dfd76617938f755df037873295300` |
+| 3 | `theorem` | [pivot_nonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Pivot.lean/declarations/pivot-nonzero.md) | 32 | `result-track:5c9a04fa0a6c314f9e22abd5dfc88148e601dd88b5ebebdeebaffe7cffea6c2e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

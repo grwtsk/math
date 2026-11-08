@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteCovarianceBudget.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteCovarianceBudget.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteCovarianceBudget.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteCovarianceBudget.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Probability.Moments.FiniteUncorrelatedBudget`](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteUncorrelatedBudget.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Probability.Moments.FiniteUncorrelatedBudget`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteUncorrelatedBudget.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [variance_sum_le_covariance_budget](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteCovarianceBudget.lean/declarations/variance-sum-le-covariance-budget.md) | 12 | `result-track:5983409aac9925e1ead9026b2cadf6949088340c50fdb60c961aa72b26984309` |
-| 2 | `theorem` | [variance_average_le_covariance_budget](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteCovarianceBudget.lean/declarations/variance-average-le-covariance-budget.md) | 34 | `result-track:5e584fd30a8215134e58beb15f6258220a93aa44eeca334af86873020e6fc149` |
+| 1 | `theorem` | [variance_sum_le_covariance_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteCovarianceBudget.lean/declarations/variance-sum-le-covariance-budget.md) | 12 | `result-track:5983409aac9925e1ead9026b2cadf6949088340c50fdb60c961aa72b26984309` |
+| 2 | `theorem` | [variance_average_le_covariance_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteCovarianceBudget.lean/declarations/variance-average-le-covariance-budget.md) | 34 | `result-track:5e584fd30a8215134e58beb15f6258220a93aa44eeca334af86873020e6fc149` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

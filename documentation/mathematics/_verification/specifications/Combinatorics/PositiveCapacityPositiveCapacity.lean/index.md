@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/PositiveCapacityPositiveCapacity.lean/index.md) · [Full source](../../../../Combinatorics/PositiveCapacityPositiveCapacity.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PositiveCapacityPositiveCapacity.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PositiveCapacityPositiveCapacity.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PositiveCapacity](../../../../Combinatorics/PositiveCapacityPositiveCapacity.lean/declarations/positivecapacity.md) | 15 | `declaration-track:a76897189ffce8d558b9efce6e0829fda2ebc65baacc2e3c4520433291dfa75d` |
-| 2 | `def` | [PositiveCapacity.increment](../../../../Combinatorics/PositiveCapacityPositiveCapacity.lean/declarations/positivecapacity-increment.md) | 36 | `declaration-track:64d31f839fb966b007fc1d57433de5b95a6ba4e54369ce3a46ce876d194c15da` |
-| 3 | `def` | [PositiveCapacity.reduced](../../../../Combinatorics/PositiveCapacityPositiveCapacity.lean/declarations/positivecapacity-reduced.md) | 46 | `declaration-track:6bee7971b9a461eb2bbc9f131c52592c78fb966e6e43de0158bcf8c77e53e5ad` |
-| 4 | `theorem` | [reduced_empty_zero](../../../../Combinatorics/PositiveCapacityPositiveCapacity.lean/declarations/reduced-empty-zero.md) | 55 | `result-track:0cd97695ef5e10de5f93d741d732671a7aaedb63b7d0c24a962df27f62e41537` |
-| 5 | `theorem` | [capacity_increment_nonnegative](../../../../Combinatorics/PositiveCapacityPositiveCapacity.lean/declarations/capacity-increment-nonnegative.md) | 64 | `result-track:b132bd5d1367c2739365d4fc2cabb8ee35fc2eb1030059e6867615ee380f9326` |
-| 6 | `theorem` | [capacity_value_bounded](../../../../Combinatorics/PositiveCapacityPositiveCapacity.lean/declarations/capacity-value-bounded.md) | 81 | `result-track:e2f12f282c4c47d3a63d7defa296ddb9a4e2879916c2e8514f94ff4aec5aefae` |
+| 1 | `structure` | [PositiveCapacity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PositiveCapacityPositiveCapacity.lean/declarations/positivecapacity.md) | 15 | `declaration-track:a76897189ffce8d558b9efce6e0829fda2ebc65baacc2e3c4520433291dfa75d` |
+| 2 | `def` | [PositiveCapacity.increment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PositiveCapacityPositiveCapacity.lean/declarations/positivecapacity-increment.md) | 36 | `declaration-track:64d31f839fb966b007fc1d57433de5b95a6ba4e54369ce3a46ce876d194c15da` |
+| 3 | `def` | [PositiveCapacity.reduced](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PositiveCapacityPositiveCapacity.lean/declarations/positivecapacity-reduced.md) | 46 | `declaration-track:6bee7971b9a461eb2bbc9f131c52592c78fb966e6e43de0158bcf8c77e53e5ad` |
+| 4 | `theorem` | [reduced_empty_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PositiveCapacityPositiveCapacity.lean/declarations/reduced-empty-zero.md) | 55 | `result-track:0cd97695ef5e10de5f93d741d732671a7aaedb63b7d0c24a962df27f62e41537` |
+| 5 | `theorem` | [capacity_increment_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PositiveCapacityPositiveCapacity.lean/declarations/capacity-increment-nonnegative.md) | 64 | `result-track:b132bd5d1367c2739365d4fc2cabb8ee35fc2eb1030059e6867615ee380f9326` |
+| 6 | `theorem` | [capacity_value_bounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PositiveCapacityPositiveCapacity.lean/declarations/capacity-value-bounded.md) | 81 | `result-track:e2f12f282c4c47d3a63d7defa296ddb9a4e2879916c2e8514f94ff4aec5aefae` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

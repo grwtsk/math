@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/ExponentialBoundsNamespaced.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/ExponentialBoundsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ExponentialBoundsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ExponentialBoundsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exp_one_near_10](../../../../FunctionsOfAComplexVariable/ExponentialBoundsNamespaced.lean/declarations/exp-one-near-10.md) | 26 | `result-track:bc6550b47c0ec335c87253ea4d77a85023a32f24fb6e5f97ae63848bff9ce822` |
-| 2 | `theorem` | [exp_one_near_20](../../../../FunctionsOfAComplexVariable/ExponentialBoundsNamespaced.lean/declarations/exp-one-near-20.md) | 33 | `result-track:768960560065001e200d50a644dd4ef39b55d25c8b448a8d34f99faec799241c` |
-| 3 | `theorem` | [exp_one_gt_d9](../../../../FunctionsOfAComplexVariable/ExponentialBoundsNamespaced.lean/declarations/exp-one-gt-d9.md) | 40 | `result-track:d7fabf18e53e500405c0e1388e9f5de378c381f456596b94f79408e04e6bca6c` |
-| 4 | `theorem` | [exp_one_lt_d9](../../../../FunctionsOfAComplexVariable/ExponentialBoundsNamespaced.lean/declarations/exp-one-lt-d9.md) | 43 | `result-track:11e385919fa681b3b9bba9886ba6d32285f597c57f57908c768369c550e3d668` |
-| 5 | `theorem` | [exp_neg_one_gt_d9](../../../../FunctionsOfAComplexVariable/ExponentialBoundsNamespaced.lean/declarations/exp-neg-one-gt-d9.md) | 46 | `result-track:ec00664ba84cee10899649166678a4bbc903c607bedccd35016d1b6ff594e941` |
-| 6 | `theorem` | [exp_neg_one_lt_d9](../../../../FunctionsOfAComplexVariable/ExponentialBoundsNamespaced.lean/declarations/exp-neg-one-lt-d9.md) | 52 | `result-track:005587000dc6830bc6712b5fbd12a60e0985bc2889e4b324f11e993c4bd13c83` |
-| 7 | `theorem` | [log_two_near_10](../../../../FunctionsOfAComplexVariable/ExponentialBoundsNamespaced.lean/declarations/log-two-near-10.md) | 56 | `result-track:670e031846580a563c495396d7990597a098ee71b30857d8d2ff3410a270cfb3` |
-| 8 | `theorem` | [log_two_gt_d9](../../../../FunctionsOfAComplexVariable/ExponentialBoundsNamespaced.lean/declarations/log-two-gt-d9.md) | 70 | `result-track:406ed144f93838e04c8972947351396144f0a388b021ffcabf0f204ce1d6d165` |
-| 9 | `theorem` | [log_two_lt_d9](../../../../FunctionsOfAComplexVariable/ExponentialBoundsNamespaced.lean/declarations/log-two-lt-d9.md) | 73 | `result-track:03769b97011981b3382023290c8df23446e804fa6686d4cc08dc3a8b9d16e859` |
+| 1 | `theorem` | [exp_one_near_10](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ExponentialBoundsNamespaced.lean/declarations/exp-one-near-10.md) | 26 | `result-track:bc6550b47c0ec335c87253ea4d77a85023a32f24fb6e5f97ae63848bff9ce822` |
+| 2 | `theorem` | [exp_one_near_20](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ExponentialBoundsNamespaced.lean/declarations/exp-one-near-20.md) | 33 | `result-track:768960560065001e200d50a644dd4ef39b55d25c8b448a8d34f99faec799241c` |
+| 3 | `theorem` | [exp_one_gt_d9](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ExponentialBoundsNamespaced.lean/declarations/exp-one-gt-d9.md) | 40 | `result-track:d7fabf18e53e500405c0e1388e9f5de378c381f456596b94f79408e04e6bca6c` |
+| 4 | `theorem` | [exp_one_lt_d9](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ExponentialBoundsNamespaced.lean/declarations/exp-one-lt-d9.md) | 43 | `result-track:11e385919fa681b3b9bba9886ba6d32285f597c57f57908c768369c550e3d668` |
+| 5 | `theorem` | [exp_neg_one_gt_d9](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ExponentialBoundsNamespaced.lean/declarations/exp-neg-one-gt-d9.md) | 46 | `result-track:ec00664ba84cee10899649166678a4bbc903c607bedccd35016d1b6ff594e941` |
+| 6 | `theorem` | [exp_neg_one_lt_d9](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ExponentialBoundsNamespaced.lean/declarations/exp-neg-one-lt-d9.md) | 52 | `result-track:005587000dc6830bc6712b5fbd12a60e0985bc2889e4b324f11e993c4bd13c83` |
+| 7 | `theorem` | [log_two_near_10](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ExponentialBoundsNamespaced.lean/declarations/log-two-near-10.md) | 56 | `result-track:670e031846580a563c495396d7990597a098ee71b30857d8d2ff3410a270cfb3` |
+| 8 | `theorem` | [log_two_gt_d9](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ExponentialBoundsNamespaced.lean/declarations/log-two-gt-d9.md) | 70 | `result-track:406ed144f93838e04c8972947351396144f0a388b021ffcabf0f204ce1d6d165` |
+| 9 | `theorem` | [log_two_lt_d9](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ExponentialBoundsNamespaced.lean/declarations/log-two-lt-d9.md) | 73 | `result-track:03769b97011981b3382023290c8df23446e804fa6686d4cc08dc3a8b9d16e859` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/CutPrimeCut.lean/index.md) · [Full source](../../../../Combinatorics/CutPrimeCut.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CutPrimeCut.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CutPrimeCut.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [PrimeCut](../../../../Combinatorics/CutPrimeCut.lean/declarations/primecut.md) | 10 | `declaration-track:68947326a48d4015176d943bbdfb03b86d8ece2ecda4959bbcd9e393ab67a86c` |
-| 2 | `def` | [topCut](../../../../Combinatorics/CutPrimeCut.lean/declarations/topcut.md) | 14 | `declaration-track:81fc5f880e2f52dfc133bfeb1833d8ea3b64a65b9cc89880a89ad568b283c726` |
-| 3 | `def` | [cutDepth](../../../../Combinatorics/CutPrimeCut.lean/declarations/cutdepth.md) | 19 | `declaration-track:e37c0ad5ee3c1372109622655b0b338a7ed814325a25415346c93b07e157e438` |
+| 1 | `abbrev` | [PrimeCut](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CutPrimeCut.lean/declarations/primecut.md) | 10 | `declaration-track:68947326a48d4015176d943bbdfb03b86d8ece2ecda4959bbcd9e393ab67a86c` |
+| 2 | `def` | [topCut](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CutPrimeCut.lean/declarations/topcut.md) | 14 | `declaration-track:81fc5f880e2f52dfc133bfeb1833d8ea3b64a65b9cc89880a89ad568b283c726` |
+| 3 | `def` | [cutDepth](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CutPrimeCut.lean/declarations/cutdepth.md) | 19 | `declaration-track:e37c0ad5ee3c1372109622655b0b338a7ed814325a25415346c93b07e157e438` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

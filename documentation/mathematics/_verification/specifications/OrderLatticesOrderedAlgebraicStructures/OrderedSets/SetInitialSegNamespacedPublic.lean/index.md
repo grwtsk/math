@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SetInitialSegNamespacedPublic.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SetInitialSegNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/SetInitialSegNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/SetInitialSegNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [initialSegIic](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SetInitialSegNamespacedPublic.lean/declarations/initialsegiic.md) | 34 | `declaration-track:13a3419a658e3244f796f2a5b5a89c53043a4f816400f5ab776d850b8d6381d3` |
-| 2 | `def` | [principalSegIio](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SetInitialSegNamespacedPublic.lean/declarations/principalsegiio.md) | 42 | `declaration-track:5bf5726e7b93ae38ea61fdc84dc87fcd4672746f807c898f2c7ebc49e271da77` |
-| 3 | `lemma` | [principalSegIio_apply](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SetInitialSegNamespacedPublic.lean/declarations/principalsegiio-apply.md) | 50 | `result-track:2b8060ecd3346f9dafa2cbb946260ba180708728ee1f5664e12614fd52397f20` |
-| 4 | `def` | [initialSegIicIicOfLE](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SetInitialSegNamespacedPublic.lean/declarations/initialsegiiciicofle.md) | 59 | `declaration-track:6c122f5b4a394472e50f3cb41b1a9c25367cbc8fa538636a6742cae067785436` |
-| 5 | `def` | [principalSegIioIicOfLE](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SetInitialSegNamespacedPublic.lean/declarations/principalsegiioiicofle.md) | 68 | `declaration-track:4448d75199e5fa7a9d99e9f8d26954ac75e3bbea5f8297d6f2c7719a9b2e57df` |
-| 6 | `lemma` | [principalSegIioIicOfLE_apply](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SetInitialSegNamespacedPublic.lean/declarations/principalsegiioiicofle-apply.md) | 76 | `result-track:7f11625ccf5b640cee16be5097ac67a9a52ede09ae34415fad6d209031948e6e` |
-| 7 | `def` | [PrincipalSeg.orderIsoIio](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SetInitialSegNamespacedPublic.lean/declarations/principalseg-orderisoiio.md) | 87 | `declaration-track:c13e0e5e9119ce4cdb5136571e2fbc7441b257b0cbf3f22a887697a6b46042e8` |
+| 1 | `def` | [initialSegIic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/SetInitialSegNamespacedPublic.lean/declarations/initialsegiic.md) | 34 | `declaration-track:13a3419a658e3244f796f2a5b5a89c53043a4f816400f5ab776d850b8d6381d3` |
+| 2 | `def` | [principalSegIio](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/SetInitialSegNamespacedPublic.lean/declarations/principalsegiio.md) | 42 | `declaration-track:5bf5726e7b93ae38ea61fdc84dc87fcd4672746f807c898f2c7ebc49e271da77` |
+| 3 | `lemma` | [principalSegIio_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/SetInitialSegNamespacedPublic.lean/declarations/principalsegiio-apply.md) | 50 | `result-track:2b8060ecd3346f9dafa2cbb946260ba180708728ee1f5664e12614fd52397f20` |
+| 4 | `def` | [initialSegIicIicOfLE](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/SetInitialSegNamespacedPublic.lean/declarations/initialsegiiciicofle.md) | 59 | `declaration-track:6c122f5b4a394472e50f3cb41b1a9c25367cbc8fa538636a6742cae067785436` |
+| 5 | `def` | [principalSegIioIicOfLE](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/SetInitialSegNamespacedPublic.lean/declarations/principalsegiioiicofle.md) | 68 | `declaration-track:4448d75199e5fa7a9d99e9f8d26954ac75e3bbea5f8297d6f2c7719a9b2e57df` |
+| 6 | `lemma` | [principalSegIioIicOfLE_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/SetInitialSegNamespacedPublic.lean/declarations/principalsegiioiicofle-apply.md) | 76 | `result-track:7f11625ccf5b640cee16be5097ac67a9a52ede09ae34415fad6d209031948e6e` |
+| 7 | `def` | [PrincipalSeg.orderIsoIio](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/SetInitialSegNamespacedPublic.lean/declarations/principalseg-orderisoiio.md) | 87 | `declaration-track:c13e0e5e9119ce4cdb5136571e2fbc7441b257b0cbf3f22a887697a6b46042e8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

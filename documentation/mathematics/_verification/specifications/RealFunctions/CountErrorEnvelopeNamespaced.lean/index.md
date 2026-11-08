@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/CountErrorEnvelopeNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/CountErrorEnvelopeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CountErrorEnvelopeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CountErrorEnvelopeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [loglog_tangent_upper](../../../../RealFunctions/CountErrorEnvelopeNamespaced.lean/declarations/loglog-tangent-upper.md) | 24 | `result-track:1e4c85f6c74fd7f53e34dac9d062ce2fc1651edbc89a23ded5681c2a3a0299f3` |
-| 2 | `theorem` | [corrected_count_error_tangent_upper](../../../../RealFunctions/CountErrorEnvelopeNamespaced.lean/declarations/corrected-count-error-tangent-upper.md) | 39 | `result-track:57b7d696ca15f60c0a0585f833ca9f9de1326da4387958eeb53e235e42989606` |
-| 3 | `theorem` | [corrected_count_upper_of_external](../../../../RealFunctions/CountErrorEnvelopeNamespaced.lean/declarations/corrected-count-upper-of-external.md) | 59 | `result-track:2165e2e508f56600f8d049e53ab0065b749df9f29246437f1570e3a681188c06` |
-| 4 | `theorem` | [corrected_count_endpoint_lower_of_external](../../../../RealFunctions/CountErrorEnvelopeNamespaced.lean/declarations/corrected-count-endpoint-lower-of-external.md) | 68 | `result-track:52517af0318aac2de9cc0bc406b3b2b35c053bc1721a4df7ada5fb94361a987c` |
+| 1 | `theorem` | [loglog_tangent_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CountErrorEnvelopeNamespaced.lean/declarations/loglog-tangent-upper.md) | 24 | `result-track:1e4c85f6c74fd7f53e34dac9d062ce2fc1651edbc89a23ded5681c2a3a0299f3` |
+| 2 | `theorem` | [corrected_count_error_tangent_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CountErrorEnvelopeNamespaced.lean/declarations/corrected-count-error-tangent-upper.md) | 39 | `result-track:57b7d696ca15f60c0a0585f833ca9f9de1326da4387958eeb53e235e42989606` |
+| 3 | `theorem` | [corrected_count_upper_of_external](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CountErrorEnvelopeNamespaced.lean/declarations/corrected-count-upper-of-external.md) | 59 | `result-track:2165e2e508f56600f8d049e53ab0065b749df9f29246437f1570e3a681188c06` |
+| 4 | `theorem` | [corrected_count_endpoint_lower_of_external](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CountErrorEnvelopeNamespaced.lean/declarations/corrected-count-endpoint-lower-of-external.md) | 68 | `result-track:52517af0318aac2de9cc0bc406b3b2b35c053bc1721a4df7ada5fb94361a987c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/QuarticCoefficientReductionCriterion.lean/index.md) · [Full source](../../../../CommutativeAlgebra/QuarticCoefficientReductionCriterion.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticCoefficientReductionCriterion.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticCoefficientReductionCriterion.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.QuarticCoefficientDiscriminant`](../../../../CommutativeAlgebra/QuarticCoefficientDiscriminant.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.Algebra.QuarticBaseMaximalCriterion`](../../../../CommutativeAlgebra/QuarticBaseMaximalCriterion.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.Algebra.QuarticCoefficientDiscriminant`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticCoefficientDiscriminant.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Algebra.QuarticBaseMaximalCriterion`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticBaseMaximalCriterion.lean/index.md) — import line 2; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [quartic_discriminant_nonmem_separable_resolvent](../../../../CommutativeAlgebra/QuarticCoefficientReductionCriterion.lean/declarations/quartic-discriminant-nonmem-separable-resolvent.md) | 22 | `result-track:370961127da0476a29814fa1a9d19f4a97e3796f88fe25ff8177c3c26c16b164` |
+| 1 | `theorem` | [quartic_discriminant_nonmem_separable_resolvent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticCoefficientReductionCriterion.lean/declarations/quartic-discriminant-nonmem-separable-resolvent.md) | 22 | `result-track:370961127da0476a29814fa1a9d19f4a97e3796f88fe25ff8177c3c26c16b164` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

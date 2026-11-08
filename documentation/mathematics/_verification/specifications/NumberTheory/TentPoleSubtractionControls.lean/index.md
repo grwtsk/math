@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/TentPoleSubtractionControls.lean/index.md) · [Full source](../../../../NumberTheory/TentPoleSubtractionControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentPoleSubtractionControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentPoleSubtractionControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Chebyshev.TentPoleSubtraction`](../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TentPoleSubtraction.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.TentPoleSubtraction`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TentPoleSubtraction.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [dividedDifference_center](../../../../NumberTheory/TentPoleSubtractionControls.lean/declarations/divideddifference-center.md) | 23 | `result-track:aa441bf47b4bf1acaf3bb3a9d586e8407f8d4c0e6fb8bfedbd5c8ae1838eeabe` |
-| 2 | `theorem` | [nonconstant_multiplier_remainder](../../../../NumberTheory/TentPoleSubtractionControls.lean/declarations/nonconstant-multiplier-remainder.md) | 27 | `result-track:202586ddb54f341ecdafaf2023d2d36a6c5fbc1a55f1f5e3ade4045ac8ee0ea4` |
-| 3 | `theorem` | [zero_multiplier_cancels_pole](../../../../NumberTheory/TentPoleSubtractionControls.lean/declarations/zero-multiplier-cancels-pole.md) | 33 | `result-track:ed7d48f92df99e56bba32625eb5196aa36f1ad6fb6101f098d35c8d6a5b8df08` |
-| 4 | `theorem` | [raw_center_not_extension](../../../../NumberTheory/TentPoleSubtractionControls.lean/declarations/raw-center-not-extension.md) | 37 | `result-track:9e1f54eca3bf6c88411d45c6c50959ced6560f30a99699967714c174522da313` |
-| 5 | `theorem` | [omitted_pole_remains](../../../../NumberTheory/TentPoleSubtractionControls.lean/declarations/omitted-pole-remains.md) | 41 | `result-track:28380103079861c69de73d1715afe480e99c395746569d218e542f0ba75cc352` |
-| 6 | `theorem` | [duplicate_coefficient_changes_sum](../../../../NumberTheory/TentPoleSubtractionControls.lean/declarations/duplicate-coefficient-changes-sum.md) | 45 | `result-track:add362f79332129fe6531bffcb21c1c0edfa0c6cace266b996c9e5a146a1a6ef` |
-| 7 | `theorem` | [nonzero_entire_remainder](../../../../NumberTheory/TentPoleSubtractionControls.lean/declarations/nonzero-entire-remainder.md) | 49 | `result-track:dd1435e6b976aad25d49fff9bf4da19df0a523960c07147e858e51c5d873aaea` |
-| 8 | `theorem` | [first_trivial_coefficient](../../../../NumberTheory/TentPoleSubtractionControls.lean/declarations/first-trivial-coefficient.md) | 54 | `result-track:bfbbdc1717d117f76922a10d975296f889f5f4eb4c1740b5f7e86146838e27fd` |
-| 9 | `theorem` | [actual_tent_pole_radius](../../../../NumberTheory/TentPoleSubtractionControls.lean/declarations/actual-tent-pole-radius.md) | 58 | `result-track:df6a995ee933ac4bffe9236cb7aafde300879d51bfe0ae879145f11a49770919` |
+| 1 | `theorem` | [dividedDifference_center](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentPoleSubtractionControls.lean/declarations/divideddifference-center.md) | 23 | `result-track:aa441bf47b4bf1acaf3bb3a9d586e8407f8d4c0e6fb8bfedbd5c8ae1838eeabe` |
+| 2 | `theorem` | [nonconstant_multiplier_remainder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentPoleSubtractionControls.lean/declarations/nonconstant-multiplier-remainder.md) | 27 | `result-track:202586ddb54f341ecdafaf2023d2d36a6c5fbc1a55f1f5e3ade4045ac8ee0ea4` |
+| 3 | `theorem` | [zero_multiplier_cancels_pole](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentPoleSubtractionControls.lean/declarations/zero-multiplier-cancels-pole.md) | 33 | `result-track:ed7d48f92df99e56bba32625eb5196aa36f1ad6fb6101f098d35c8d6a5b8df08` |
+| 4 | `theorem` | [raw_center_not_extension](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentPoleSubtractionControls.lean/declarations/raw-center-not-extension.md) | 37 | `result-track:9e1f54eca3bf6c88411d45c6c50959ced6560f30a99699967714c174522da313` |
+| 5 | `theorem` | [omitted_pole_remains](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentPoleSubtractionControls.lean/declarations/omitted-pole-remains.md) | 41 | `result-track:28380103079861c69de73d1715afe480e99c395746569d218e542f0ba75cc352` |
+| 6 | `theorem` | [duplicate_coefficient_changes_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentPoleSubtractionControls.lean/declarations/duplicate-coefficient-changes-sum.md) | 45 | `result-track:add362f79332129fe6531bffcb21c1c0edfa0c6cace266b996c9e5a146a1a6ef` |
+| 7 | `theorem` | [nonzero_entire_remainder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentPoleSubtractionControls.lean/declarations/nonzero-entire-remainder.md) | 49 | `result-track:dd1435e6b976aad25d49fff9bf4da19df0a523960c07147e858e51c5d873aaea` |
+| 8 | `theorem` | [first_trivial_coefficient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentPoleSubtractionControls.lean/declarations/first-trivial-coefficient.md) | 54 | `result-track:bfbbdc1717d117f76922a10d975296f889f5f4eb4c1740b5f7e86146838e27fd` |
+| 9 | `theorem` | [actual_tent_pole_radius](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentPoleSubtractionControls.lean/declarations/actual-tent-pole-radius.md) | 58 | `result-track:df6a995ee933ac4bffe9236cb7aafde300879d51bfe0ae879145f11a49770919` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

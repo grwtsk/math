@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Smoothing.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Smoothing.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Smoothing.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Smoothing.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SmoothingCertificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Smoothing.lean/declarations/smoothingcertificate.md) | 5 | `declaration-track:598df8f5c7f5f0ad16b9efb226303644f668686df9c380d9a0cdc783ab77512c` |
-| 2 | `theorem` | [SmoothingCertificate.certificateSound_id](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Smoothing.lean/declarations/smoothingcertificate-certificatesound-id.md) | 16 | `result-track:dbd381759954d9892df6415488365fb012a2cfa782105d68dde49b27c66d3689` |
+| 1 | `structure` | [SmoothingCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Smoothing.lean/declarations/smoothingcertificate.md) | 5 | `declaration-track:598df8f5c7f5f0ad16b9efb226303644f668686df9c380d9a0cdc783ab77512c` |
+| 2 | `theorem` | [SmoothingCertificate.certificateSound_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Smoothing.lean/declarations/smoothingcertificate-certificatesound-id.md) | 16 | `result-track:dbd381759954d9892df6415488365fb012a2cfa782105d68dde49b27c66d3689` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

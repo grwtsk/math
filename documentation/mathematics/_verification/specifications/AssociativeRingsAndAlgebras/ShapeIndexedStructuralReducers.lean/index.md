@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/ShapeIndexedStructuralReducers.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/ShapeIndexedStructuralReducers.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ShapeIndexedStructuralReducers.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ShapeIndexedStructuralReducers.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -49,7 +49,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 - `DAF.Runtime.ReducerIR` — import line 19; external provider; requires a separately pinned dependency.
 - `FilesystemCodec.FieldRows` — import line 20; external provider; requires a separately pinned dependency.
 - `DAF.Causal.ObserverFactor` — import line 21; external provider; requires a separately pinned dependency.
-- [Typed Representations](../../../../MathematicalLogicAndFoundations/GeneralLogic/TypedRepresentations.lean/index.md) — import line 23; pinned internal source present.
+- [Typed Representations](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TypedRepresentations.lean/index.md) — import line 23; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -60,13 +60,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [ReducerIR](../../../../AssociativeRingsAndAlgebras/ShapeIndexedStructuralReducers.lean/declarations/reducerir.md) | 50 | `declaration-track:5815d4359986d46bebb3c909b3d72352e5e57982a997c473a6e6139b2eb88aac` |
-| 2 | `def` | [xorFamily](../../../../AssociativeRingsAndAlgebras/ShapeIndexedStructuralReducers.lean/declarations/xorfamily.md) | 84 | `declaration-track:d221d317d8771570ed2216217297b965ad90de5cef965aa59a9023027163876f` |
-| 3 | `def` | [eval](../../../../AssociativeRingsAndAlgebras/ShapeIndexedStructuralReducers.lean/declarations/eval.md) | 88 | `declaration-track:4b0938ca3e8edc3b0d00ce10fc27f99d286e7e4cec7b60d9c37abed414df424a` |
-| 4 | `theorem` | [eval_identity](../../../../AssociativeRingsAndAlgebras/ShapeIndexedStructuralReducers.lean/declarations/eval-identity.md) | 119 | `result-track:af012d3c7b30170851da800a0cc375b01b25ff2c84c09b0295d400a52a08cca6` |
-| 5 | `theorem` | [eval_compose](../../../../AssociativeRingsAndAlgebras/ShapeIndexedStructuralReducers.lean/declarations/eval-compose.md) | 124 | `result-track:74f68ed98b061e92a1739149faf57dc91610341a5839cffc812f21a692cc4734` |
-| 6 | `def` | [describe](../../../../AssociativeRingsAndAlgebras/ShapeIndexedStructuralReducers.lean/declarations/describe.md) | 132 | `declaration-track:4ed496782018eeded3aa63dfd453d843d57362313f03492e87bf650cb7192497` |
-| 7 | `def` | [ofRuntime](../../../../AssociativeRingsAndAlgebras/ShapeIndexedStructuralReducers.lean/declarations/ofruntime.md) | 159 | `declaration-track:227192fc985f686cc6eb49cf8b23387687849c80a62ac4592007d6291e7c96b8` |
+| 1 | `inductive` | [ReducerIR](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ShapeIndexedStructuralReducers.lean/declarations/reducerir.md) | 50 | `declaration-track:5815d4359986d46bebb3c909b3d72352e5e57982a997c473a6e6139b2eb88aac` |
+| 2 | `def` | [xorFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ShapeIndexedStructuralReducers.lean/declarations/xorfamily.md) | 84 | `declaration-track:d221d317d8771570ed2216217297b965ad90de5cef965aa59a9023027163876f` |
+| 3 | `def` | [eval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ShapeIndexedStructuralReducers.lean/declarations/eval.md) | 88 | `declaration-track:4b0938ca3e8edc3b0d00ce10fc27f99d286e7e4cec7b60d9c37abed414df424a` |
+| 4 | `theorem` | [eval_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ShapeIndexedStructuralReducers.lean/declarations/eval-identity.md) | 119 | `result-track:af012d3c7b30170851da800a0cc375b01b25ff2c84c09b0295d400a52a08cca6` |
+| 5 | `theorem` | [eval_compose](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ShapeIndexedStructuralReducers.lean/declarations/eval-compose.md) | 124 | `result-track:74f68ed98b061e92a1739149faf57dc91610341a5839cffc812f21a692cc4734` |
+| 6 | `def` | [describe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ShapeIndexedStructuralReducers.lean/declarations/describe.md) | 132 | `declaration-track:4ed496782018eeded3aa63dfd453d843d57362313f03492e87bf650cb7192497` |
+| 7 | `def` | [ofRuntime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ShapeIndexedStructuralReducers.lean/declarations/ofruntime.md) | 159 | `declaration-track:227192fc985f686cc6eb49cf8b23387687849c80a62ac4592007d6291e7c96b8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SurjOn.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SurjOn.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/SurjOn.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/SurjOn.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [surjOn_Ioo_of_monotone_surjective](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SurjOn.lean/declarations/surjon-ioo-of-monotone-surjective.md) | 24 | `result-track:18271bb88c5b6960690f5dc5fc3a42ae0ba16325668aaa1f74053af4b49e0cd6` |
-| 2 | `theorem` | [surjOn_Ico_of_monotone_surjective](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SurjOn.lean/declarations/surjon-ico-of-monotone-surjective.md) | 32 | `result-track:6d0f0b75b5782f49f69ccf4ff9a709d9e579c6624c9be908eeed1d768638f1ae` |
-| 3 | `theorem` | [surjOn_Ioc_of_monotone_surjective](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SurjOn.lean/declarations/surjon-ioc-of-monotone-surjective.md) | 43 | `result-track:458580f605d587f9cd5c766d2a8b949788eb0c32bd16276e2ae1e3c3004e0b1f` |
-| 4 | `theorem` | [surjOn_Icc_of_monotone_surjective](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SurjOn.lean/declarations/surjon-icc-of-monotone-surjective.md) | 48 | `result-track:2be063750c0c2f2863962022a4f5aea1197272f2df148ce0b2089c22459dc5e3` |
-| 5 | `theorem` | [surjOn_Ioi_of_monotone_surjective](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SurjOn.lean/declarations/surjon-ioi-of-monotone-surjective.md) | 57 | `result-track:364a2927e5093a4f8fb9a4ff98aed704d5294394f0be59274a5e539a110949d7` |
-| 6 | `theorem` | [surjOn_Iio_of_monotone_surjective](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SurjOn.lean/declarations/surjon-iio-of-monotone-surjective.md) | 63 | `result-track:eab2af39ceb1974f6ff228ce38070b5ac957b6c2618aeb35272ba420859c67df` |
-| 7 | `theorem` | [surjOn_Ici_of_monotone_surjective](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SurjOn.lean/declarations/surjon-ici-of-monotone-surjective.md) | 67 | `result-track:f9d3a8e95455f164a1bc66a273d2b426c4c326e2347ca24fbb88989b5f1ef104` |
-| 8 | `theorem` | [surjOn_Iic_of_monotone_surjective](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SurjOn.lean/declarations/surjon-iic-of-monotone-surjective.md) | 74 | `result-track:16064aa6334d93b259293538c60dd0eaadd64e052aabdb344d46ef53840c8708` |
+| 1 | `theorem` | [surjOn_Ioo_of_monotone_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/SurjOn.lean/declarations/surjon-ioo-of-monotone-surjective.md) | 24 | `result-track:18271bb88c5b6960690f5dc5fc3a42ae0ba16325668aaa1f74053af4b49e0cd6` |
+| 2 | `theorem` | [surjOn_Ico_of_monotone_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/SurjOn.lean/declarations/surjon-ico-of-monotone-surjective.md) | 32 | `result-track:6d0f0b75b5782f49f69ccf4ff9a709d9e579c6624c9be908eeed1d768638f1ae` |
+| 3 | `theorem` | [surjOn_Ioc_of_monotone_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/SurjOn.lean/declarations/surjon-ioc-of-monotone-surjective.md) | 43 | `result-track:458580f605d587f9cd5c766d2a8b949788eb0c32bd16276e2ae1e3c3004e0b1f` |
+| 4 | `theorem` | [surjOn_Icc_of_monotone_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/SurjOn.lean/declarations/surjon-icc-of-monotone-surjective.md) | 48 | `result-track:2be063750c0c2f2863962022a4f5aea1197272f2df148ce0b2089c22459dc5e3` |
+| 5 | `theorem` | [surjOn_Ioi_of_monotone_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/SurjOn.lean/declarations/surjon-ioi-of-monotone-surjective.md) | 57 | `result-track:364a2927e5093a4f8fb9a4ff98aed704d5294394f0be59274a5e539a110949d7` |
+| 6 | `theorem` | [surjOn_Iio_of_monotone_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/SurjOn.lean/declarations/surjon-iio-of-monotone-surjective.md) | 63 | `result-track:eab2af39ceb1974f6ff228ce38070b5ac957b6c2618aeb35272ba420859c67df` |
+| 7 | `theorem` | [surjOn_Ici_of_monotone_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/SurjOn.lean/declarations/surjon-ici-of-monotone-surjective.md) | 67 | `result-track:f9d3a8e95455f164a1bc66a273d2b426c4c326e2347ca24fbb88989b5f1ef104` |
+| 8 | `theorem` | [surjOn_Iic_of_monotone_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/SurjOn.lean/declarations/surjon-iic-of-monotone-surjective.md) | 74 | `result-track:16064aa6334d93b259293538c60dd0eaadd64e052aabdb344d46ef53840c8708` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

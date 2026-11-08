@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/AutocorrelationTranslationEnergy.lean/index.md) · [Full source](../../../../MeasureAndIntegration/AutocorrelationTranslationEnergy.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AutocorrelationTranslationEnergy.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AutocorrelationTranslationEnergy.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,14 +60,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [autocorrelation](../../../../MeasureAndIntegration/AutocorrelationTranslationEnergy.lean/declarations/autocorrelation.md) | 25 | `declaration-track:8f8cba988bbc087a79029f97b2e9f277d46e41c0f3d76b3a77041c016077f903` |
-| 2 | `theorem` | [translated_memLp](../../../../MeasureAndIntegration/AutocorrelationTranslationEnergy.lean/declarations/translated-memlp.md) | 28 | `result-track:d6a10a64d2551fb864f872d47fcb7bfced02327a21cc5d814eda03204493b200` |
-| 3 | `theorem` | [translated_product_integrable](../../../../MeasureAndIntegration/AutocorrelationTranslationEnergy.lean/declarations/translated-product-integrable.md) | 32 | `result-track:50819042aee56ef3db0f42461071d1c1c7d2aeeb403e97a5a6344ccf2868f29d` |
-| 4 | `theorem` | [translated_difference_square_integrable](../../../../MeasureAndIntegration/AutocorrelationTranslationEnergy.lean/declarations/translated-difference-square-integrable.md) | 36 | `result-track:ec50a0bd31d68526369b32a06ade31c047264bcd7481af773809e7e4f8328ebd` |
-| 5 | `theorem` | [zero_eq_square_integral](../../../../MeasureAndIntegration/AutocorrelationTranslationEnergy.lean/declarations/zero-eq-square-integral.md) | 41 | `result-track:266756f78e8e0807880e6cab55c8b43120a868d3d3bd0003219a47813636e955` |
-| 6 | `theorem` | [even](../../../../MeasureAndIntegration/AutocorrelationTranslationEnergy.lean/declarations/even.md) | 46 | `result-track:a5251927df711e631c1a3c1fdbeca0adf501694330804978c0993efb2a66e2ff` |
-| 7 | `theorem` | [defect_eq_half_translation_energy](../../../../MeasureAndIntegration/AutocorrelationTranslationEnergy.lean/declarations/defect-eq-half-translation-energy.md) | 56 | `result-track:c0dfade919c6c5eed6161fd219cbdf56cb3f798edc8248573ec448a3e681a968` |
-| 8 | `theorem` | [defect_nonneg](../../../../MeasureAndIntegration/AutocorrelationTranslationEnergy.lean/declarations/defect-nonneg.md) | 79 | `result-track:f11ea9c74d36fac0c5f28ac0d276eebd4cee690b008a025c796729bda7eafca6` |
+| 1 | `def` | [autocorrelation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AutocorrelationTranslationEnergy.lean/declarations/autocorrelation.md) | 25 | `declaration-track:8f8cba988bbc087a79029f97b2e9f277d46e41c0f3d76b3a77041c016077f903` |
+| 2 | `theorem` | [translated_memLp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AutocorrelationTranslationEnergy.lean/declarations/translated-memlp.md) | 28 | `result-track:d6a10a64d2551fb864f872d47fcb7bfced02327a21cc5d814eda03204493b200` |
+| 3 | `theorem` | [translated_product_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AutocorrelationTranslationEnergy.lean/declarations/translated-product-integrable.md) | 32 | `result-track:50819042aee56ef3db0f42461071d1c1c7d2aeeb403e97a5a6344ccf2868f29d` |
+| 4 | `theorem` | [translated_difference_square_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AutocorrelationTranslationEnergy.lean/declarations/translated-difference-square-integrable.md) | 36 | `result-track:ec50a0bd31d68526369b32a06ade31c047264bcd7481af773809e7e4f8328ebd` |
+| 5 | `theorem` | [zero_eq_square_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AutocorrelationTranslationEnergy.lean/declarations/zero-eq-square-integral.md) | 41 | `result-track:266756f78e8e0807880e6cab55c8b43120a868d3d3bd0003219a47813636e955` |
+| 6 | `theorem` | [even](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AutocorrelationTranslationEnergy.lean/declarations/even.md) | 46 | `result-track:a5251927df711e631c1a3c1fdbeca0adf501694330804978c0993efb2a66e2ff` |
+| 7 | `theorem` | [defect_eq_half_translation_energy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AutocorrelationTranslationEnergy.lean/declarations/defect-eq-half-translation-energy.md) | 56 | `result-track:c0dfade919c6c5eed6161fd219cbdf56cb3f798edc8248573ec448a3e681a968` |
+| 8 | `theorem` | [defect_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AutocorrelationTranslationEnergy.lean/declarations/defect-nonneg.md) | 79 | `result-track:f11ea9c74d36fac0c5f28ac0d276eebd4cee690b008a025c796729bda7eafca6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

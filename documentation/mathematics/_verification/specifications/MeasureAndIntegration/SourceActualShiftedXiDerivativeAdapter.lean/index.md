@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceActualShiftedXiDerivativeAdapter.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceActualShiftedXiDerivativeAdapter.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualShiftedXiDerivativeAdapter.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualShiftedXiDerivativeAdapter.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [plain_derivative_prefactor_eq](../../../../MeasureAndIntegration/SourceActualShiftedXiDerivativeAdapter.lean/declarations/plain-derivative-prefactor-eq.md) | 27 | `result-track:1d8a91f0b9f8fc0f0fd06e4439e0ab07f2e6ee5b76c133ca0170c9891a6109d5` |
-| 2 | `theorem` | [plainProfile_deriv_eq_actual_kernel](../../../../MeasureAndIntegration/SourceActualShiftedXiDerivativeAdapter.lean/declarations/plainprofile-deriv-eq-actual-kernel.md) | 39 | `result-track:e66cc6186353fe66ac5ce8b7f3ef76c52b33069eeffcdd141785aa7b6c05de02` |
-| 3 | `theorem` | [signedCesaroPairing_eq_explicit_shiftedXi](../../../../MeasureAndIntegration/SourceActualShiftedXiDerivativeAdapter.lean/declarations/signedcesaropairing-eq-explicit-shiftedxi.md) | 50 | `result-track:60809b4de1442c0e94aca7ec3eb0e2c50570c12bc3357cb1a309751b0c7cfb01` |
-| 4 | `theorem` | [remainingAtomWork_eq_explicit_shiftedXi](../../../../MeasureAndIntegration/SourceActualShiftedXiDerivativeAdapter.lean/declarations/remainingatomwork-eq-explicit-shiftedxi.md) | 71 | `result-track:b740042d3255a6f46f35ae1bfd47d119866dee0734479bad0c426f491e4202a8` |
+| 1 | `theorem` | [plain_derivative_prefactor_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualShiftedXiDerivativeAdapter.lean/declarations/plain-derivative-prefactor-eq.md) | 27 | `result-track:1d8a91f0b9f8fc0f0fd06e4439e0ab07f2e6ee5b76c133ca0170c9891a6109d5` |
+| 2 | `theorem` | [plainProfile_deriv_eq_actual_kernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualShiftedXiDerivativeAdapter.lean/declarations/plainprofile-deriv-eq-actual-kernel.md) | 39 | `result-track:e66cc6186353fe66ac5ce8b7f3ef76c52b33069eeffcdd141785aa7b6c05de02` |
+| 3 | `theorem` | [signedCesaroPairing_eq_explicit_shiftedXi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualShiftedXiDerivativeAdapter.lean/declarations/signedcesaropairing-eq-explicit-shiftedxi.md) | 50 | `result-track:60809b4de1442c0e94aca7ec3eb0e2c50570c12bc3357cb1a309751b0c7cfb01` |
+| 4 | `theorem` | [remainingAtomWork_eq_explicit_shiftedXi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualShiftedXiDerivativeAdapter.lean/declarations/remainingatomwork-eq-explicit-shiftedxi.md) | 71 | `result-track:b740042d3255a6f46f35ae1bfd47d119866dee0734479bad0c426f491e4202a8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

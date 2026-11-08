@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../SpecialFunctions/SincNamespacedPublic.lean/index.md) · [Full source](../../../../SpecialFunctions/SincNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/SincNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/SincNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,18 +57,18 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [sinc](../../../../SpecialFunctions/SincNamespacedPublic.lean/declarations/sinc.md) | 45 | `declaration-track:37eae36f46b37a5e403e9eb0b2dfc7c0df80f602db3a87ed82c9288a68e3cc7b` |
-| 2 | `lemma` | [sinc_apply](../../../../SpecialFunctions/SincNamespacedPublic.lean/declarations/sinc-apply.md) | 47 | `result-track:8f53ef13551072434bbb93616071e1fbec878147613b2e3629d36f66a933daec` |
-| 3 | `lemma` | [sinc_zero](../../../../SpecialFunctions/SincNamespacedPublic.lean/declarations/sinc-zero.md) | 50 | `result-track:90de9aa05b782bf04a325c280d07f6679acf50c6c0448df6fdbd0e572e206b91` |
-| 4 | `lemma` | [sinc_of_ne_zero](../../../../SpecialFunctions/SincNamespacedPublic.lean/declarations/sinc-of-ne-zero.md) | 52 | `result-track:48aee8bcf765210b823bf150b834f9c5a9dc40b49a911d937472a139d2eccee2` |
-| 5 | `lemma` | [sinc_eq_dslope](../../../../SpecialFunctions/SincNamespacedPublic.lean/declarations/sinc-eq-dslope.md) | 54 | `result-track:9729c3feb0908d22f3a368e33446969492f6ad21b49f0a698494b9b88cd01eb4` |
-| 6 | `lemma` | [sinc_neg](../../../../SpecialFunctions/SincNamespacedPublic.lean/declarations/sinc-neg.md) | 59 | `result-track:b01255b2273f0b2fda3eca2c1c844e043953df66ad403515949e748b221ae2b9` |
-| 7 | `lemma` | [abs_sinc_le_one](../../../../SpecialFunctions/SincNamespacedPublic.lean/declarations/abs-sinc-le-one.md) | 64 | `result-track:4d768d9025e1b3653951efa2bfe9c2f3a6e3030cd623e63ea73db4f8e3286b7a` |
-| 8 | `lemma` | [sinc_le_one](../../../../SpecialFunctions/SincNamespacedPublic.lean/declarations/sinc-le-one.md) | 72 | `result-track:4ddc3e8118be996c0a3451fbb97e5354797ec8cf79d3b6a0314b6eca75d8da03` |
-| 9 | `lemma` | [neg_one_le_sinc](../../../../SpecialFunctions/SincNamespacedPublic.lean/declarations/neg-one-le-sinc.md) | 74 | `result-track:2957063cb0897c8c453669b6c69f418268758022ae5bd2fc660ce31720e54848` |
-| 10 | `lemma` | [sin_div_le_inv_abs](../../../../SpecialFunctions/SincNamespacedPublic.lean/declarations/sin-div-le-inv-abs.md) | 76 | `result-track:4b1a0eaf9b3743fca8cb2d68fb167881f7b5a80a3d307447afbb1d7c96278909` |
-| 11 | `lemma` | [sinc_le_inv_abs](../../../../SpecialFunctions/SincNamespacedPublic.lean/declarations/sinc-le-inv-abs.md) | 87 | `result-track:b4d085a95d41742cc87740c4e8d3a2b70b29127af954c7197650d9de99de6681` |
-| 12 | `lemma` | [continuous_sinc](../../../../SpecialFunctions/SincNamespacedPublic.lean/declarations/continuous-sinc.md) | 93 | `result-track:b3c3a3db1cb3b09141d84f0e267d5a37ea269f45c39078f40dadd881c9003bad` |
+| 1 | `def` | [sinc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/SincNamespacedPublic.lean/declarations/sinc.md) | 45 | `declaration-track:37eae36f46b37a5e403e9eb0b2dfc7c0df80f602db3a87ed82c9288a68e3cc7b` |
+| 2 | `lemma` | [sinc_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/SincNamespacedPublic.lean/declarations/sinc-apply.md) | 47 | `result-track:8f53ef13551072434bbb93616071e1fbec878147613b2e3629d36f66a933daec` |
+| 3 | `lemma` | [sinc_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/SincNamespacedPublic.lean/declarations/sinc-zero.md) | 50 | `result-track:90de9aa05b782bf04a325c280d07f6679acf50c6c0448df6fdbd0e572e206b91` |
+| 4 | `lemma` | [sinc_of_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/SincNamespacedPublic.lean/declarations/sinc-of-ne-zero.md) | 52 | `result-track:48aee8bcf765210b823bf150b834f9c5a9dc40b49a911d937472a139d2eccee2` |
+| 5 | `lemma` | [sinc_eq_dslope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/SincNamespacedPublic.lean/declarations/sinc-eq-dslope.md) | 54 | `result-track:9729c3feb0908d22f3a368e33446969492f6ad21b49f0a698494b9b88cd01eb4` |
+| 6 | `lemma` | [sinc_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/SincNamespacedPublic.lean/declarations/sinc-neg.md) | 59 | `result-track:b01255b2273f0b2fda3eca2c1c844e043953df66ad403515949e748b221ae2b9` |
+| 7 | `lemma` | [abs_sinc_le_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/SincNamespacedPublic.lean/declarations/abs-sinc-le-one.md) | 64 | `result-track:4d768d9025e1b3653951efa2bfe9c2f3a6e3030cd623e63ea73db4f8e3286b7a` |
+| 8 | `lemma` | [sinc_le_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/SincNamespacedPublic.lean/declarations/sinc-le-one.md) | 72 | `result-track:4ddc3e8118be996c0a3451fbb97e5354797ec8cf79d3b6a0314b6eca75d8da03` |
+| 9 | `lemma` | [neg_one_le_sinc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/SincNamespacedPublic.lean/declarations/neg-one-le-sinc.md) | 74 | `result-track:2957063cb0897c8c453669b6c69f418268758022ae5bd2fc660ce31720e54848` |
+| 10 | `lemma` | [sin_div_le_inv_abs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/SincNamespacedPublic.lean/declarations/sin-div-le-inv-abs.md) | 76 | `result-track:4b1a0eaf9b3743fca8cb2d68fb167881f7b5a80a3d307447afbb1d7c96278909` |
+| 11 | `lemma` | [sinc_le_inv_abs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/SincNamespacedPublic.lean/declarations/sinc-le-inv-abs.md) | 87 | `result-track:b4d085a95d41742cc87740c4e8d3a2b70b29127af954c7197650d9de99de6681` |
+| 12 | `lemma` | [continuous_sinc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/SincNamespacedPublic.lean/declarations/continuous-sinc.md) | 93 | `result-track:b3c3a3db1cb3b09141d84f0e267d5a37ea269f45c39078f40dadd881c9003bad` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

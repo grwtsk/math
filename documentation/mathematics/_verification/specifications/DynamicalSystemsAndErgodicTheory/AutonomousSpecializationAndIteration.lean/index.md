@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../DynamicalSystemsAndErgodicTheory/AutonomousSpecializationAndIteration.lean/index.md) · [Full source](../../../../DynamicalSystemsAndErgodicTheory/AutonomousSpecializationAndIteration.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/AutonomousSpecializationAndIteration.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/AutonomousSpecializationAndIteration.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `Mathlib.Logic.Function.Iterate` — import line 18; external provider; requires a separately pinned dependency.
-- [Whole Dependent System And Finite Trace Run](../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeDependentSystemAndFiniteTraceRun.lean/index.md) — import line 19; pinned internal source present.
+- [Whole Dependent System And Finite Trace Run](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeDependentSystemAndFiniteTraceRun.lean/index.md) — import line 19; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [autonomous](../../../../DynamicalSystemsAndErgodicTheory/AutonomousSpecializationAndIteration.lean/declarations/autonomous.md) | 49 | `declaration-track:c1c8066dff19aef6fd4b743e89ea60c75d10fb4d1702958550aef869f934a015` |
-| 2 | `theorem` | [autonomous_run_replicate](../../../../DynamicalSystemsAndErgodicTheory/AutonomousSpecializationAndIteration.lean/declarations/autonomous-run-replicate.md) | 59 | `result-track:db788ee0f5e03a88e426b72c983ab29a6d7aaedd76455136e1800f0d26caf819` |
+| 1 | `def` | [autonomous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/AutonomousSpecializationAndIteration.lean/declarations/autonomous.md) | 49 | `declaration-track:c1c8066dff19aef6fd4b743e89ea60c75d10fb4d1702958550aef869f934a015` |
+| 2 | `theorem` | [autonomous_run_replicate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DynamicalSystemsAndErgodicTheory/AutonomousSpecializationAndIteration.lean/declarations/autonomous-run-replicate.md) | 59 | `result-track:db788ee0f5e03a88e426b72c983ab29a6d7aaedd76455136e1800f0d26caf819` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

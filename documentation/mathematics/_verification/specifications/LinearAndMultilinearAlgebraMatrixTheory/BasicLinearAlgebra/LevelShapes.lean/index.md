@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LevelShapes.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LevelShapes.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LevelShapes.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LevelShapes.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,10 +61,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [levelShape](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LevelShapes.lean/declarations/levelshape.md) | 45 | `declaration-track:db0ae15bcc12265f22f61f1653e46ca9a73bd6baa031d92eb6321e6b36693c70` |
-| 2 | `theorem` | [levelShape_rows_succ](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LevelShapes.lean/declarations/levelshape-rows-succ.md) | 50 | `result-track:aeb063dd20cbd74d3a866e3d2f4a6225b988c4fc26ebaba9643f7ab199fb9de8` |
-| 3 | `theorem` | [levelShape_cols_succ](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LevelShapes.lean/declarations/levelshape-cols-succ.md) | 58 | `result-track:9e928fbc9a54c0e9be6188cfbe3a797c2fc8c1fa42ee01bac620e4330e932e2e` |
-| 4 | `theorem` | [shape_changes_of_step](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LevelShapes.lean/declarations/shape-changes-of-step.md) | 66 | `result-track:d5de51408c84967237bb6cea5f66a4cb11ddbd9674efd37c4ebe8c0272bbe6a6` |
+| 1 | `def` | [levelShape](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LevelShapes.lean/declarations/levelshape.md) | 45 | `declaration-track:db0ae15bcc12265f22f61f1653e46ca9a73bd6baa031d92eb6321e6b36693c70` |
+| 2 | `theorem` | [levelShape_rows_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LevelShapes.lean/declarations/levelshape-rows-succ.md) | 50 | `result-track:aeb063dd20cbd74d3a866e3d2f4a6225b988c4fc26ebaba9643f7ab199fb9de8` |
+| 3 | `theorem` | [levelShape_cols_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LevelShapes.lean/declarations/levelshape-cols-succ.md) | 58 | `result-track:9e928fbc9a54c0e9be6188cfbe3a797c2fc8c1fa42ee01bac620e4330e932e2e` |
+| 4 | `theorem` | [shape_changes_of_step](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LevelShapes.lean/declarations/shape-changes-of-step.md) | 66 | `result-track:d5de51408c84967237bb6cea5f66a4cb11ddbd9674efd37c4ebe8c0272bbe6a6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

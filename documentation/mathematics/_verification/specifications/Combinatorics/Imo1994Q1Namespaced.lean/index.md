@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/Imo1994Q1Namespaced.lean/index.md) · [Full source](../../../../Combinatorics/Imo1994Q1Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Imo1994Q1Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Imo1994Q1Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -63,8 +63,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [tedious](../../../../Combinatorics/Imo1994Q1Namespaced.lean/declarations/tedious.md) | 48 | `result-track:7e8c579a19e58e747f4126fa260f9ebf513cce9152bdf3afe478a139607a16aa` |
-| 2 | `theorem` | [imo1994_q1](../../../../Combinatorics/Imo1994Q1Namespaced.lean/declarations/imo1994-q1.md) | 62 | `result-track:4d9ba390e2b18146fa0b59b9977ce98e7449dbd1c2a2eab8b05e4a4ca49058bc` |
+| 1 | `theorem` | [tedious](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Imo1994Q1Namespaced.lean/declarations/tedious.md) | 48 | `result-track:7e8c579a19e58e747f4126fa260f9ebf513cce9152bdf3afe478a139607a16aa` |
+| 2 | `theorem` | [imo1994_q1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Imo1994Q1Namespaced.lean/declarations/imo1994-q1.md) | 62 | `result-track:4d9ba390e2b18146fa0b59b9977ce98e7449dbd1c2a2eab8b05e4a4ca49058bc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

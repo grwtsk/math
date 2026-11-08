@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PositiveSubdivisionRetainsHeightWidthAndScalarDebtEdition2.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PositiveSubdivisionRetainsHeightWidthAndScalarDebtEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PositiveSubdivisionRetainsHeightWidthAndScalarDebtEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PositiveSubdivisionRetainsHeightWidthAndScalarDebtEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [compression](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PositiveSubdivisionRetainsHeightWidthAndScalarDebtEdition2.lean/declarations/compression.md) | 24 | `declaration-track:8d683fae841a4a329b8a89815f324eba6b22087c483868e78fd6952a4bf2aa6f` |
-| 2 | `theorem` | [exact_scalar_debt](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PositiveSubdivisionRetainsHeightWidthAndScalarDebtEdition2.lean/declarations/exact-scalar-debt.md) | 26 | `result-track:d1e92a7ccb69348232981bdf0c8bf78059164f8fd0f34217ad6b242bbbf4efc2` |
-| 3 | `theorem` | [parent_le_weighted_children](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PositiveSubdivisionRetainsHeightWidthAndScalarDebtEdition2.lean/declarations/parent-le-weighted-children.md) | 31 | `result-track:ec412a4e84d2bc75e5d0c54f34d71ea46ff1cc017d812e5c229b2f6a62335dae` |
-| 4 | `theorem` | [weighted_children_le_cap](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PositiveSubdivisionRetainsHeightWidthAndScalarDebtEdition2.lean/declarations/weighted-children-le-cap.md) | 48 | `result-track:4e7a0efccb6a4bbf29dfb373cb8b33acb2406c2893de62c8b2b6d917e5d39975` |
-| 5 | `theorem` | [subdivision_compression_limit](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PositiveSubdivisionRetainsHeightWidthAndScalarDebtEdition2.lean/declarations/subdivision-compression-limit.md) | 58 | `result-track:b510790f4525ac3412879bfb35e1a3963d77b76fa8020c089870619e660e36ce` |
+| 1 | `def` | [compression](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PositiveSubdivisionRetainsHeightWidthAndScalarDebtEdition2.lean/declarations/compression.md) | 24 | `declaration-track:8d683fae841a4a329b8a89815f324eba6b22087c483868e78fd6952a4bf2aa6f` |
+| 2 | `theorem` | [exact_scalar_debt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PositiveSubdivisionRetainsHeightWidthAndScalarDebtEdition2.lean/declarations/exact-scalar-debt.md) | 26 | `result-track:d1e92a7ccb69348232981bdf0c8bf78059164f8fd0f34217ad6b242bbbf4efc2` |
+| 3 | `theorem` | [parent_le_weighted_children](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PositiveSubdivisionRetainsHeightWidthAndScalarDebtEdition2.lean/declarations/parent-le-weighted-children.md) | 31 | `result-track:ec412a4e84d2bc75e5d0c54f34d71ea46ff1cc017d812e5c229b2f6a62335dae` |
+| 4 | `theorem` | [weighted_children_le_cap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PositiveSubdivisionRetainsHeightWidthAndScalarDebtEdition2.lean/declarations/weighted-children-le-cap.md) | 48 | `result-track:4e7a0efccb6a4bbf29dfb373cb8b33acb2406c2893de62c8b2b6d917e5d39975` |
+| 5 | `theorem` | [subdivision_compression_limit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PositiveSubdivisionRetainsHeightWidthAndScalarDebtEdition2.lean/declarations/subdivision-compression-limit.md) | 58 | `result-track:b510790f4525ac3412879bfb35e1a3963d77b76fa8020c089870619e660e36ce` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

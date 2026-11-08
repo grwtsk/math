@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/TentEdgeBoundControls.lean/index.md) · [Full source](../../../../NumberTheory/TentEdgeBoundControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentEdgeBoundControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentEdgeBoundControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Chebyshev.TentEdgeBounds`](../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TentEdgeBounds.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.TentEdgeBounds`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TentEdgeBounds.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Tactic.NormNum` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [negative_power_reverses_endpoint_order](../../../../NumberTheory/TentEdgeBoundControls.lean/declarations/negative-power-reverses-endpoint-order.md) | 28 | `result-track:30980316346873d70ba9f432570c5312a32e5d52e8f80bded69fbc936ec324b0` |
-| 2 | `theorem` | [nonnegative_beta_rejects_left_substitution](../../../../NumberTheory/TentEdgeBoundControls.lean/declarations/nonnegative-beta-rejects-left-substitution.md) | 31 | `result-track:b88e6f67e7bb901e995a1ba80b7139cedfabd58a32e621133b09b78d4081f5d3` |
-| 3 | `theorem` | [inverse_height_zero_is_not_cauchy_majorant](../../../../NumberTheory/TentEdgeBoundControls.lean/declarations/inverse-height-zero-is-not-cauchy-majorant.md) | 33 | `result-track:919b9bef23ce9ca2457e2b7b2f792e8bba9f2d5b28983aea17db84cfa2e5f92d` |
-| 4 | `theorem` | [first_left_cutoff_outside_majorant_domain](../../../../NumberTheory/TentEdgeBoundControls.lean/declarations/first-left-cutoff-outside-majorant-domain.md) | 36 | `result-track:2bae6c9ec9dc7f5806a8210640b4e4be40400480b9e3bc4901806c0fb72e79d8` |
-| 5 | `theorem` | [left_kernel_at_zero_height](../../../../NumberTheory/TentEdgeBoundControls.lean/declarations/left-kernel-at-zero-height.md) | 40 | `result-track:878f458a167359f10f1ae1302d5385fca9a9399f0dda82a8f6c69488cc7ffb01` |
-| 6 | `theorem` | [endpoint_one_rejects_log_budget](../../../../NumberTheory/TentEdgeBoundControls.lean/declarations/endpoint-one-rejects-log-budget.md) | 44 | `result-track:5410d76c3040f45ae84b66edbc3a33115470e15bd00195478745cb3a1aaf182c` |
-| 7 | `theorem` | [quadratic_horizontal_growth_does_not_decay](../../../../NumberTheory/TentEdgeBoundControls.lean/declarations/quadratic-horizontal-growth-does-not-decay.md) | 47 | `result-track:264a42371d2553f1f12a68a65bc2b4ba4dd07b577f5c96d516fa216ccabf9581` |
-| 8 | `theorem` | [empty_principal_sum_does_not_bound_regular](../../../../NumberTheory/TentEdgeBoundControls.lean/declarations/empty-principal-sum-does-not-bound-regular.md) | 51 | `result-track:1f83e4703d7f98ee4745b0ceb40829dfdde70b7bdec061385cf3d345e52a7d46` |
+| 1 | `theorem` | [negative_power_reverses_endpoint_order](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentEdgeBoundControls.lean/declarations/negative-power-reverses-endpoint-order.md) | 28 | `result-track:30980316346873d70ba9f432570c5312a32e5d52e8f80bded69fbc936ec324b0` |
+| 2 | `theorem` | [nonnegative_beta_rejects_left_substitution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentEdgeBoundControls.lean/declarations/nonnegative-beta-rejects-left-substitution.md) | 31 | `result-track:b88e6f67e7bb901e995a1ba80b7139cedfabd58a32e621133b09b78d4081f5d3` |
+| 3 | `theorem` | [inverse_height_zero_is_not_cauchy_majorant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentEdgeBoundControls.lean/declarations/inverse-height-zero-is-not-cauchy-majorant.md) | 33 | `result-track:919b9bef23ce9ca2457e2b7b2f792e8bba9f2d5b28983aea17db84cfa2e5f92d` |
+| 4 | `theorem` | [first_left_cutoff_outside_majorant_domain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentEdgeBoundControls.lean/declarations/first-left-cutoff-outside-majorant-domain.md) | 36 | `result-track:2bae6c9ec9dc7f5806a8210640b4e4be40400480b9e3bc4901806c0fb72e79d8` |
+| 5 | `theorem` | [left_kernel_at_zero_height](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentEdgeBoundControls.lean/declarations/left-kernel-at-zero-height.md) | 40 | `result-track:878f458a167359f10f1ae1302d5385fca9a9399f0dda82a8f6c69488cc7ffb01` |
+| 6 | `theorem` | [endpoint_one_rejects_log_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentEdgeBoundControls.lean/declarations/endpoint-one-rejects-log-budget.md) | 44 | `result-track:5410d76c3040f45ae84b66edbc3a33115470e15bd00195478745cb3a1aaf182c` |
+| 7 | `theorem` | [quadratic_horizontal_growth_does_not_decay](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentEdgeBoundControls.lean/declarations/quadratic-horizontal-growth-does-not-decay.md) | 47 | `result-track:264a42371d2553f1f12a68a65bc2b4ba4dd07b577f5c96d516fa216ccabf9581` |
+| 8 | `theorem` | [empty_principal_sum_does_not_bound_regular](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentEdgeBoundControls.lean/declarations/empty-principal-sum-does-not-bound-regular.md) | 51 | `result-track:1f83e4703d7f98ee4745b0ceb40829dfdde70b7bdec061385cf3d345e52a7d46` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/TaxaResolveConceptsNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/TaxaResolveConceptsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TaxaResolveConceptsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TaxaResolveConceptsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [TaxaResolveConcepts](../../../../../ComputerScience/AlgorithmsInComputerScience/TaxaResolveConceptsNamespaced.lean/declarations/taxaresolveconcepts.md) | 22 | `declaration-track:aac2c80ac41d23603487d10a31680d2298ccffcf5b1a6590b85d1642fd140398` |
+| 1 | `def` | [TaxaResolveConcepts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TaxaResolveConceptsNamespaced.lean/declarations/taxaresolveconcepts.md) | 22 | `declaration-track:aac2c80ac41d23603487d10a31680d2298ccffcf5b1a6590b85d1642fd140398` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

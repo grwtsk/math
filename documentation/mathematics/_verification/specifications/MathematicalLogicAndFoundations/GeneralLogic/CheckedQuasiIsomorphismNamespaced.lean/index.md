@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CheckedQuasiIsomorphismNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CheckedQuasiIsomorphismNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CheckedQuasiIsomorphismNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CheckedQuasiIsomorphismNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CheckedQuasiIsoShadow](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CheckedQuasiIsomorphismNamespaced.lean/declarations/checkedquasiisoshadow.md) | 22 | `declaration-track:0fa8b3a3891490b571b7adf437acc8693412d9e6f50309b7f283ef3764753991` |
-| 2 | `theorem` | [checkedQuasiIsoShadow_refl](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CheckedQuasiIsomorphismNamespaced.lean/declarations/checkedquasiisoshadow-refl.md) | 27 | `result-track:41b10ac391eca05a39bf162072468d7c4651119a19a8b9442bda2e0c8ada6c63` |
-| 3 | `theorem` | [checkedQuasiIsoShadow_symm](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CheckedQuasiIsomorphismNamespaced.lean/declarations/checkedquasiisoshadow-symm.md) | 33 | `result-track:456ac03858ed135731c2fdb5c30e60f93879d953fa5edb588d76fd0c2cf9df7c` |
-| 4 | `theorem` | [checkedQuasiIsoShadow_trans](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CheckedQuasiIsomorphismNamespaced.lean/declarations/checkedquasiisoshadow-trans.md) | 40 | `result-track:7f684db37c1c98c5cca023401e2898e17bb33ca1a4f336ada7cf1d54b8bace00` |
-| 5 | `theorem` | [checkedQuasiIsoShadow_preserves_euler](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CheckedQuasiIsomorphismNamespaced.lean/declarations/checkedquasiisoshadow-preserves-euler.md) | 48 | `result-track:cc80f3debdf589ba4b908c49f0e5cde1f3a8796b3c64834f16f41bce1fefaff1` |
-| 6 | `theorem` | [checkedQuasiIsoShadow_preserves_torsionMass](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CheckedQuasiIsomorphismNamespaced.lean/declarations/checkedquasiisoshadow-preserves-torsionmass.md) | 54 | `result-track:3807b87a73df589a737a112212807ec5d75d233a019cfbf174e57daf4e4e73dd` |
-| 7 | `structure` | [LegacyQuasiIsoAnchor](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CheckedQuasiIsomorphismNamespaced.lean/declarations/legacyquasiisoanchor.md) | 60 | `declaration-track:31d2f059e0b91c31ff274b95accdfeab5f3c47442c6392ee7694bae882c43d20` |
+| 1 | `structure` | [CheckedQuasiIsoShadow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CheckedQuasiIsomorphismNamespaced.lean/declarations/checkedquasiisoshadow.md) | 22 | `declaration-track:0fa8b3a3891490b571b7adf437acc8693412d9e6f50309b7f283ef3764753991` |
+| 2 | `theorem` | [checkedQuasiIsoShadow_refl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CheckedQuasiIsomorphismNamespaced.lean/declarations/checkedquasiisoshadow-refl.md) | 27 | `result-track:41b10ac391eca05a39bf162072468d7c4651119a19a8b9442bda2e0c8ada6c63` |
+| 3 | `theorem` | [checkedQuasiIsoShadow_symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CheckedQuasiIsomorphismNamespaced.lean/declarations/checkedquasiisoshadow-symm.md) | 33 | `result-track:456ac03858ed135731c2fdb5c30e60f93879d953fa5edb588d76fd0c2cf9df7c` |
+| 4 | `theorem` | [checkedQuasiIsoShadow_trans](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CheckedQuasiIsomorphismNamespaced.lean/declarations/checkedquasiisoshadow-trans.md) | 40 | `result-track:7f684db37c1c98c5cca023401e2898e17bb33ca1a4f336ada7cf1d54b8bace00` |
+| 5 | `theorem` | [checkedQuasiIsoShadow_preserves_euler](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CheckedQuasiIsomorphismNamespaced.lean/declarations/checkedquasiisoshadow-preserves-euler.md) | 48 | `result-track:cc80f3debdf589ba4b908c49f0e5cde1f3a8796b3c64834f16f41bce1fefaff1` |
+| 6 | `theorem` | [checkedQuasiIsoShadow_preserves_torsionMass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CheckedQuasiIsomorphismNamespaced.lean/declarations/checkedquasiisoshadow-preserves-torsionmass.md) | 54 | `result-track:3807b87a73df589a737a112212807ec5d75d233a019cfbf174e57daf4e4e73dd` |
+| 7 | `structure` | [LegacyQuasiIsoAnchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CheckedQuasiIsomorphismNamespaced.lean/declarations/legacyquasiisoanchor.md) | 60 | `declaration-track:31d2f059e0b91c31ff274b95accdfeab5f3c47442c6392ee7694bae882c43d20` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

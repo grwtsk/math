@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/TheoremSeedHodgeTateTheoremSeed.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/TheoremSeedHodgeTateTheoremSeed.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TheoremSeedHodgeTateTheoremSeed.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TheoremSeedHodgeTateTheoremSeed.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [HodgeTateTheoremSeed](../../../../../ComputerScience/AlgorithmsInComputerScience/TheoremSeedHodgeTateTheoremSeed.lean/declarations/hodgetatetheoremseed.md) | 32 | `declaration-track:f86183ea6950e00fa93f6395b5a565e0d678c359e5c04ecb69889b72c42b75e0` |
-| 2 | `def` | [HasHodgeTateTheoremSeed](../../../../../ComputerScience/AlgorithmsInComputerScience/TheoremSeedHodgeTateTheoremSeed.lean/declarations/hashodgetatetheoremseed.md) | 43 | `declaration-track:395f3fcef17b2dc96343033b06125a7f6c10ae5dfaa66351eddeed2fbf844387` |
-| 3 | `def` | [currentHodgeTateTheoremSeed?](../../../../../ComputerScience/AlgorithmsInComputerScience/TheoremSeedHodgeTateTheoremSeed.lean/declarations/currenthodgetatetheoremseed.md) | 47 | `declaration-track:7e737bb6e5f2ac4c59192a2cce76e491cf2d36b5f692074637e54c08031098cf` |
-| 4 | `theorem` | [currentHodgeTateTheoremSeed_absent](../../../../../ComputerScience/AlgorithmsInComputerScience/TheoremSeedHodgeTateTheoremSeed.lean/declarations/currenthodgetatetheoremseed-absent.md) | 50 | `result-track:d87bcd83000abc3c2ca162c2b2294d93afc7ca4409a2279a1c5052e442d379d2` |
+| 1 | `structure` | [HodgeTateTheoremSeed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TheoremSeedHodgeTateTheoremSeed.lean/declarations/hodgetatetheoremseed.md) | 32 | `declaration-track:f86183ea6950e00fa93f6395b5a565e0d678c359e5c04ecb69889b72c42b75e0` |
+| 2 | `def` | [HasHodgeTateTheoremSeed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TheoremSeedHodgeTateTheoremSeed.lean/declarations/hashodgetatetheoremseed.md) | 43 | `declaration-track:395f3fcef17b2dc96343033b06125a7f6c10ae5dfaa66351eddeed2fbf844387` |
+| 3 | `def` | [currentHodgeTateTheoremSeed?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TheoremSeedHodgeTateTheoremSeed.lean/declarations/currenthodgetatetheoremseed.md) | 47 | `declaration-track:7e737bb6e5f2ac4c59192a2cce76e491cf2d36b5f692074637e54c08031098cf` |
+| 4 | `theorem` | [currentHodgeTateTheoremSeed_absent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TheoremSeedHodgeTateTheoremSeed.lean/declarations/currenthodgetatetheoremseed-absent.md) | 50 | `result-track:d87bcd83000abc3c2ca162c2b2294d93afc7ca4409a2279a1c5052e442d379d2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

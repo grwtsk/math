@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/SurfacePolygonPolarAddCircleKernel.lean/index.md) · [Full source](../../../../AlgebraicTopology/SurfacePolygonPolarAddCircleKernel.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonPolarAddCircleKernel.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonPolarAddCircleKernel.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarPhaseInteger`](../../../../AlgebraicTopology/SurfacePolygonPolarPhaseInteger.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarPhaseInteger`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonPolarPhaseInteger.lean/index.md) — import line 8; pinned internal source present.
 - `Mathlib.Topology.Instances.AddCircle.Defs` — import line 9; external provider; requires a separately pinned dependency.
 - `Mathlib.Topology.Instances.AddCircle.Real` — import line 10; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 11; external provider; requires a separately pinned dependency.
@@ -60,9 +60,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [unitAddCircle_coe_eq_iff_integer](../../../../AlgebraicTopology/SurfacePolygonPolarAddCircleKernel.lean/declarations/unitaddcircle-coe-eq-iff-integer.md) | 33 | `result-track:5ee53a6f31f5171448f0751f746a9cdb83a7b534393c7dc01b450ad61fa4c850` |
-| 2 | `theorem` | [polar_phase_eq_iff_unitAddCircle_eq](../../../../AlgebraicTopology/SurfacePolygonPolarAddCircleKernel.lean/declarations/polar-phase-eq-iff-unitaddcircle-eq.md) | 53 | `result-track:4c41e3543cff52290560675a8cbb2b6ddf7d4b802fe159b8272f03b64b6788d0` |
-| 3 | `theorem` | [polar_eq_implies_unitAddCircle_eq](../../../../AlgebraicTopology/SurfacePolygonPolarAddCircleKernel.lean/declarations/polar-eq-implies-unitaddcircle-eq.md) | 61 | `result-track:b4d78a19958482c8262cf5df4f98b41ae1eb0d49ad22d0382dd156b8d30b802f` |
+| 1 | `theorem` | [unitAddCircle_coe_eq_iff_integer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonPolarAddCircleKernel.lean/declarations/unitaddcircle-coe-eq-iff-integer.md) | 33 | `result-track:5ee53a6f31f5171448f0751f746a9cdb83a7b534393c7dc01b450ad61fa4c850` |
+| 2 | `theorem` | [polar_phase_eq_iff_unitAddCircle_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonPolarAddCircleKernel.lean/declarations/polar-phase-eq-iff-unitaddcircle-eq.md) | 53 | `result-track:4c41e3543cff52290560675a8cbb2b6ddf7d4b802fe159b8272f03b64b6788d0` |
+| 3 | `theorem` | [polar_eq_implies_unitAddCircle_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/SurfacePolygonPolarAddCircleKernel.lean/declarations/polar-eq-implies-unitaddcircle-eq.md) | 61 | `result-track:b4d78a19958482c8262cf5df4f98b41ae1eb0d49ad22d0382dd156b8d30b802f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

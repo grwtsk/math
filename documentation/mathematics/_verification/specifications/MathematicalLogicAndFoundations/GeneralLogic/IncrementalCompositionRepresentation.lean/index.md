@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IncrementalCompositionRepresentation.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IncrementalCompositionRepresentation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IncrementalCompositionRepresentation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IncrementalCompositionRepresentation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Logic.FiniteSequences.IncrementalComposition`](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesIncrementalCompositionHistoricalSourceEdition2.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Logic.FiniteSequences.IncrementalComposition`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesIncrementalCompositionHistoricalSourceEdition2.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [firstBatch](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IncrementalCompositionRepresentation.lean/declarations/firstbatch.md) | 7 | `declaration-track:39abee679060cf4e83b7049be939cdf5eb68b9a5b766ebf244a462563adb33d7` |
-| 2 | `def` | [secondBatch](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IncrementalCompositionRepresentation.lean/declarations/secondbatch.md) | 8 | `declaration-track:f00186d2fa5503eb1ea071e011d8e0ee8dd390703c5e31b6c03bd41eed6766fd` |
-| 3 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IncrementalCompositionRepresentation.lean/declarations/example.md) | 11 | `declaration-track:ed84f3697fe499b84739a9d0d4a4cd390652f8249374dcba44a09bc947be8ddf` |
+| 1 | `def` | [firstBatch](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IncrementalCompositionRepresentation.lean/declarations/firstbatch.md) | 7 | `declaration-track:39abee679060cf4e83b7049be939cdf5eb68b9a5b766ebf244a462563adb33d7` |
+| 2 | `def` | [secondBatch](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IncrementalCompositionRepresentation.lean/declarations/secondbatch.md) | 8 | `declaration-track:f00186d2fa5503eb1ea071e011d8e0ee8dd390703c5e31b6c03bd41eed6766fd` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IncrementalCompositionRepresentation.lean/declarations/example.md) | 11 | `declaration-track:ed84f3697fe499b84739a9d0d4a4cd390652f8249374dcba44a09bc947be8ddf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

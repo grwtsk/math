@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Idempotents.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Idempotents.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Idempotents.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Idempotents.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [idempotent](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Idempotents.lean/declarations/idempotent.md) | 26 | `declaration-track:3c0c42f11976d091d08aaf8e29c6d9b0aff7a094811b8c4b9d4219616c740aac` |
-| 2 | `lemma` | [decompose_eq_mul_idempotent](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Idempotents.lean/declarations/decompose-eq-mul-idempotent.md) | 29 | `result-track:c4b6567ecdef461fadba83a310eef6e7ec5aef6bb5bfbec0ef3ac147d52d4bf6` |
-| 3 | `lemma` | [isIdempotentElem_idempotent](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Idempotents.lean/declarations/isidempotentelem-idempotent.md) | 33 | `result-track:d002d779cea5670f1533e63d33bfd76f4b4dbd6c780d80202762010da9d48ddc` |
-| 4 | `theorem` | [completeOrthogonalIdempotents_idempotent](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Idempotents.lean/declarations/completeorthogonalidempotents-idempotent.md) | 39 | `result-track:cb7d5db8864d7a17e9ea8a178a71ab38a106f37e937ba31d7a9b5cb643adb554` |
+| 1 | `def` | [idempotent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Idempotents.lean/declarations/idempotent.md) | 26 | `declaration-track:3c0c42f11976d091d08aaf8e29c6d9b0aff7a094811b8c4b9d4219616c740aac` |
+| 2 | `lemma` | [decompose_eq_mul_idempotent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Idempotents.lean/declarations/decompose-eq-mul-idempotent.md) | 29 | `result-track:c4b6567ecdef461fadba83a310eef6e7ec5aef6bb5bfbec0ef3ac147d52d4bf6` |
+| 3 | `lemma` | [isIdempotentElem_idempotent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Idempotents.lean/declarations/isidempotentelem-idempotent.md) | 33 | `result-track:d002d779cea5670f1533e63d33bfd76f4b4dbd6c780d80202762010da9d48ddc` |
+| 4 | `theorem` | [completeOrthogonalIdempotents_idempotent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Idempotents.lean/declarations/completeorthogonalidempotents-idempotent.md) | 39 | `result-track:cb7d5db8864d7a17e9ea8a178a71ab38a106f37e937ba31d7a9b5cb643adb554` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

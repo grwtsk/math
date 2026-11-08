@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/BaselineRelativeEquivalence.lean/index.md) · [Full source](../../../../Combinatorics/BaselineRelativeEquivalence.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BaselineRelativeEquivalence.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BaselineRelativeEquivalence.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `BitMatrix.Carrier.Address` — import line 17; external provider; requires a separately pinned dependency.
-- [Chosen Stream Representation](../../../../Combinatorics/ChosenStreamRepresentation.lean/index.md) — import line 19; pinned internal source present.
+- [Chosen Stream Representation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ChosenStreamRepresentation.lean/index.md) — import line 19; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [distinguishedInterpreter](../../../../Combinatorics/BaselineRelativeEquivalence.lean/declarations/distinguishedinterpreter.md) | 36 | `declaration-track:645bfae27da0df350c51f314fd8a03ed5d73807fa7ab1e4b4e5e2e4213515677` |
-| 2 | `def` | [discrepancy](../../../../Combinatorics/BaselineRelativeEquivalence.lean/declarations/discrepancy.md) | 48 | `declaration-track:974527a76b24a5dc12d982f0b03f012d21783aa157784e5c3d2c74366c1ed729` |
-| 3 | `def` | [baselineEquiv](../../../../Combinatorics/BaselineRelativeEquivalence.lean/declarations/baselineequiv.md) | 60 | `declaration-track:05569afc33ea3a87fdbca319ea05a07e710bc2c350e4169ba5e1e76f1ef6c253` |
-| 4 | `theorem` | [baselineEquiv_apply](../../../../Combinatorics/BaselineRelativeEquivalence.lean/declarations/baselineequiv-apply.md) | 85 | `result-track:e217fcc21eca98d60f3cdeb7803579dbde399a80301f766892c740615685cca5` |
-| 5 | `theorem` | [baselineEquiv_symm_apply](../../../../Combinatorics/BaselineRelativeEquivalence.lean/declarations/baselineequiv-symm-apply.md) | 96 | `result-track:212ec721caddbc27b0c3a24615bb6e49c89d61ee0e9d2d74ea48e98f0689c6f0` |
-| 6 | `theorem` | [distinguishedInterpreter_eq_baseline_iff](../../../../Combinatorics/BaselineRelativeEquivalence.lean/declarations/distinguishedinterpreter-eq-baseline-iff.md) | 110 | `result-track:2c0fc7464ee7d971736cae43daeea9bc303692f8eb6015f9d370c5b9d1a17428` |
+| 1 | `def` | [distinguishedInterpreter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BaselineRelativeEquivalence.lean/declarations/distinguishedinterpreter.md) | 36 | `declaration-track:645bfae27da0df350c51f314fd8a03ed5d73807fa7ab1e4b4e5e2e4213515677` |
+| 2 | `def` | [discrepancy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BaselineRelativeEquivalence.lean/declarations/discrepancy.md) | 48 | `declaration-track:974527a76b24a5dc12d982f0b03f012d21783aa157784e5c3d2c74366c1ed729` |
+| 3 | `def` | [baselineEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BaselineRelativeEquivalence.lean/declarations/baselineequiv.md) | 60 | `declaration-track:05569afc33ea3a87fdbca319ea05a07e710bc2c350e4169ba5e1e76f1ef6c253` |
+| 4 | `theorem` | [baselineEquiv_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BaselineRelativeEquivalence.lean/declarations/baselineequiv-apply.md) | 85 | `result-track:e217fcc21eca98d60f3cdeb7803579dbde399a80301f766892c740615685cca5` |
+| 5 | `theorem` | [baselineEquiv_symm_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BaselineRelativeEquivalence.lean/declarations/baselineequiv-symm-apply.md) | 96 | `result-track:212ec721caddbc27b0c3a24615bb6e49c89d61ee0e9d2d74ea48e98f0689c6f0` |
+| 6 | `theorem` | [distinguishedInterpreter_eq_baseline_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BaselineRelativeEquivalence.lean/declarations/distinguishedinterpreter-eq-baseline-iff.md) | 110 | `result-track:2c0fc7464ee7d971736cae43daeea9bc303692f8eb6015f9d370c5b9d1a17428` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

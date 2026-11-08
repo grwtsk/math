@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FieldTheoryAndPolynomials/FieldTheoryFiniteness.lean/index.md) · [Full source](../../../../FieldTheoryAndPolynomials/FieldTheoryFiniteness.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldTheoryFiniteness.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldTheoryFiniteness.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,18 +59,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [iff_rank_lt_aleph0](../../../../FieldTheoryAndPolynomials/FieldTheoryFiniteness.lean/declarations/iff-rank-lt-aleph0.md) | 27 | `result-track:b435bf0e096d65def14518d593cd97d251828304cdcb3ff8af1db813d56a0179` |
-| 2 | `def` | [fintypeBasisIndex](../../../../FieldTheoryAndPolynomials/FieldTheoryFiniteness.lean/declarations/fintypebasisindex.md) | 41 | `declaration-track:9020dac2fc73c577c5f1ab02dcc38e83c7c5c14ff738edb02b293ab91502104c` |
-| 3 | `instance` | [(anonymous)](../../../../FieldTheoryAndPolynomials/FieldTheoryFiniteness.lean/declarations/instance.md) | 46 | `declaration-track:096f02e7654f86b3b249d3f4b59683662071d5e9b3ee7fd704f503b4a5e0fb4e` |
-| 4 | `theorem` | [finite_basis_index](../../../../FieldTheoryAndPolynomials/FieldTheoryFiniteness.lean/declarations/finite-basis-index.md) | 51 | `result-track:e3ed64b841196968bd48f00fed7a9cd55cab6830d4d77b24aca6bfe8c61f4fb2` |
-| 5 | `def` | [finsetBasisIndex](../../../../FieldTheoryAndPolynomials/FieldTheoryFiniteness.lean/declarations/finsetbasisindex.md) | 59 | `declaration-track:b6cf810962df9e627a7d304bee0524dc1c4e3e74d0e9c5d5a90e124b48baa111` |
-| 6 | `theorem` | [coe_finsetBasisIndex](../../../../FieldTheoryAndPolynomials/FieldTheoryFiniteness.lean/declarations/coe-finsetbasisindex.md) | 63 | `result-track:93c148ebd1ca553098f05f50603bfb7de74b20d3274b386ec861922b4d8e1854` |
-| 7 | `theorem` | [coeSort_finsetBasisIndex](../../../../FieldTheoryAndPolynomials/FieldTheoryFiniteness.lean/declarations/coesort-finsetbasisindex.md) | 68 | `result-track:71af14efe5b4bb5feb2716a86c93372b04b548e1f2ed5318f0877733ba3c1998` |
-| 8 | `def` | [finsetBasis](../../../../FieldTheoryAndPolynomials/FieldTheoryFiniteness.lean/declarations/finsetbasis.md) | 77 | `declaration-track:d6213bc589df1fae69792f4d5207dee73cab56158492e6f52c2d6ca95459d663` |
-| 9 | `theorem` | [range_finsetBasis](../../../../FieldTheoryAndPolynomials/FieldTheoryFiniteness.lean/declarations/range-finsetbasis.md) | 81 | `result-track:f2130760e2cc7c905b66d9f03df1a4423a8f630c2a2dd6271614052a731d86e1` |
-| 10 | `theorem` | [_root_.Module.card_eq_pow_finrank](../../../../FieldTheoryAndPolynomials/FieldTheoryFiniteness.lean/declarations/root-module-card-eq-pow-finrank.md) | 87 | `result-track:18e306c5bf57087cbc982bd1c58cfe28ed1418aa04de0b3002cc497ee4e3030f` |
-| 11 | `theorem` | [_root_.Module.natCard_eq_pow_finrank](../../../../FieldTheoryAndPolynomials/FieldTheoryFiniteness.lean/declarations/root-module-natcard-eq-pow-finrank.md) | 94 | `result-track:e761c167eedf968e629b7fbda4af77988993ea162415c57356eda4a608f42423` |
-| 12 | `theorem` | [iff_fg](../../../../FieldTheoryAndPolynomials/FieldTheoryFiniteness.lean/declarations/iff-fg.md) | 100 | `result-track:89d676ba4f348bdccb5513a7057f5f96180ae5de51a46ec6347e72534c46b395` |
+| 1 | `theorem` | [iff_rank_lt_aleph0](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldTheoryFiniteness.lean/declarations/iff-rank-lt-aleph0.md) | 27 | `result-track:b435bf0e096d65def14518d593cd97d251828304cdcb3ff8af1db813d56a0179` |
+| 2 | `def` | [fintypeBasisIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldTheoryFiniteness.lean/declarations/fintypebasisindex.md) | 41 | `declaration-track:9020dac2fc73c577c5f1ab02dcc38e83c7c5c14ff738edb02b293ab91502104c` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldTheoryFiniteness.lean/declarations/instance.md) | 46 | `declaration-track:096f02e7654f86b3b249d3f4b59683662071d5e9b3ee7fd704f503b4a5e0fb4e` |
+| 4 | `theorem` | [finite_basis_index](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldTheoryFiniteness.lean/declarations/finite-basis-index.md) | 51 | `result-track:e3ed64b841196968bd48f00fed7a9cd55cab6830d4d77b24aca6bfe8c61f4fb2` |
+| 5 | `def` | [finsetBasisIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldTheoryFiniteness.lean/declarations/finsetbasisindex.md) | 59 | `declaration-track:b6cf810962df9e627a7d304bee0524dc1c4e3e74d0e9c5d5a90e124b48baa111` |
+| 6 | `theorem` | [coe_finsetBasisIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldTheoryFiniteness.lean/declarations/coe-finsetbasisindex.md) | 63 | `result-track:93c148ebd1ca553098f05f50603bfb7de74b20d3274b386ec861922b4d8e1854` |
+| 7 | `theorem` | [coeSort_finsetBasisIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldTheoryFiniteness.lean/declarations/coesort-finsetbasisindex.md) | 68 | `result-track:71af14efe5b4bb5feb2716a86c93372b04b548e1f2ed5318f0877733ba3c1998` |
+| 8 | `def` | [finsetBasis](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldTheoryFiniteness.lean/declarations/finsetbasis.md) | 77 | `declaration-track:d6213bc589df1fae69792f4d5207dee73cab56158492e6f52c2d6ca95459d663` |
+| 9 | `theorem` | [range_finsetBasis](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldTheoryFiniteness.lean/declarations/range-finsetbasis.md) | 81 | `result-track:f2130760e2cc7c905b66d9f03df1a4423a8f630c2a2dd6271614052a731d86e1` |
+| 10 | `theorem` | [_root_.Module.card_eq_pow_finrank](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldTheoryFiniteness.lean/declarations/root-module-card-eq-pow-finrank.md) | 87 | `result-track:18e306c5bf57087cbc982bd1c58cfe28ed1418aa04de0b3002cc497ee4e3030f` |
+| 11 | `theorem` | [_root_.Module.natCard_eq_pow_finrank](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldTheoryFiniteness.lean/declarations/root-module-natcard-eq-pow-finrank.md) | 94 | `result-track:e761c167eedf968e629b7fbda4af77988993ea162415c57356eda4a608f42423` |
+| 12 | `theorem` | [iff_fg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldTheoryFiniteness.lean/declarations/iff-fg.md) | 100 | `result-track:89d676ba4f348bdccb5513a7057f5f96180ae5de51a46ec6347e72534c46b395` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

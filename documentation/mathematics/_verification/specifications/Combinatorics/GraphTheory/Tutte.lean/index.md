@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/Tutte.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/Tutte.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/Tutte.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/Tutte.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,16 +61,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [IsTutteViolator](../../../../../Combinatorics/GraphTheory/Tutte.lean/declarations/istutteviolator.md) | 33 | `declaration-track:c75daa4a26cbc93b597ebab513f456ffa36ae95a0337fcc353e84cdf7623ca80` |
-| 2 | `lemma` | [tutte_exists_isAlternating_isCycles](../../../../../Combinatorics/GraphTheory/Tutte.lean/declarations/tutte-exists-isalternating-iscycles.md) | 38 | `result-track:638d46dfbd64a227c5cdbb73eb112737595e4b7edb237893e9f462237d649032` |
-| 3 | `lemma` | [IsTutteViolator.mono](../../../../../Combinatorics/GraphTheory/Tutte.lean/declarations/istutteviolator-mono.md) | 57 | `result-track:2aab488738a9197aef588159cb3973f1840ad0f6ff2f8faaf69df07195a27eeb` |
-| 4 | `lemma` | [Subgraph.IsMatching.exists_verts_compl_subset_universalVerts](../../../../../Combinatorics/GraphTheory/Tutte.lean/declarations/subgraph-ismatching-exists-verts-compl-subset-universalverts.md) | 70 | `result-track:a6a6c454c9116455f84e64ab1cb4f65cee16e38e54b025c19b1656111f1fa6db` |
-| 5 | `theorem` | [Subgraph.IsPerfectMatching.exists_of_isClique_supp](../../../../../Combinatorics/GraphTheory/Tutte.lean/declarations/subgraph-isperfectmatching-exists-of-isclique-supp.md) | 117 | `result-track:313d584447813d6856adf9b0306e1018027c985798a41c730b74fb46a9438733` |
-| 6 | `theorem` | [IsTutteViolator.empty](../../../../../Combinatorics/GraphTheory/Tutte.lean/declarations/istutteviolator-empty.md) | 133 | `result-track:3f5c3016392c2f6976462c6e38e9739ebe8dd5557179eaca9791f68d00b4db2c` |
-| 7 | `lemma` | [not_isTutteViolator_of_isPerfectMatching](../../../../../Combinatorics/GraphTheory/Tutte.lean/declarations/not-istutteviolator-of-isperfectmatching.md) | 138 | `result-track:8656ebdae88f0aa943d688f1d8e7869e3a593c2ec16a59c2c6c174d3f691e395` |
-| 8 | `theorem` | [tutte_exists_isPerfectMatching_of_near_matchings](../../../../../Combinatorics/GraphTheory/Tutte.lean/declarations/tutte-exists-isperfectmatching-of-near-matchings.md) | 151 | `result-track:7e5e453b30de19f97892a95df7b7ca51793030170e6d0dda45c52d57cd79ed7c` |
-| 9 | `lemma` | [exists_isTutteViolator](../../../../../Combinatorics/GraphTheory/Tutte.lean/declarations/exists-istutteviolator.md) | 269 | `result-track:b7faae87379a755236cf59c222ef292b7f01594226e8f460e8b212c215a0bc91` |
-| 10 | `theorem` | [tutte](../../../../../Combinatorics/GraphTheory/Tutte.lean/declarations/tutte.md) | 316 | `result-track:c0fc49db5df7c2efa5f29bffad3b22b2d861c3936ea9070854755dabe3a565f5` |
+| 1 | `def` | [IsTutteViolator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/Tutte.lean/declarations/istutteviolator.md) | 33 | `declaration-track:c75daa4a26cbc93b597ebab513f456ffa36ae95a0337fcc353e84cdf7623ca80` |
+| 2 | `lemma` | [tutte_exists_isAlternating_isCycles](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/Tutte.lean/declarations/tutte-exists-isalternating-iscycles.md) | 38 | `result-track:638d46dfbd64a227c5cdbb73eb112737595e4b7edb237893e9f462237d649032` |
+| 3 | `lemma` | [IsTutteViolator.mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/Tutte.lean/declarations/istutteviolator-mono.md) | 57 | `result-track:2aab488738a9197aef588159cb3973f1840ad0f6ff2f8faaf69df07195a27eeb` |
+| 4 | `lemma` | [Subgraph.IsMatching.exists_verts_compl_subset_universalVerts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/Tutte.lean/declarations/subgraph-ismatching-exists-verts-compl-subset-universalverts.md) | 70 | `result-track:a6a6c454c9116455f84e64ab1cb4f65cee16e38e54b025c19b1656111f1fa6db` |
+| 5 | `theorem` | [Subgraph.IsPerfectMatching.exists_of_isClique_supp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/Tutte.lean/declarations/subgraph-isperfectmatching-exists-of-isclique-supp.md) | 117 | `result-track:313d584447813d6856adf9b0306e1018027c985798a41c730b74fb46a9438733` |
+| 6 | `theorem` | [IsTutteViolator.empty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/Tutte.lean/declarations/istutteviolator-empty.md) | 133 | `result-track:3f5c3016392c2f6976462c6e38e9739ebe8dd5557179eaca9791f68d00b4db2c` |
+| 7 | `lemma` | [not_isTutteViolator_of_isPerfectMatching](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/Tutte.lean/declarations/not-istutteviolator-of-isperfectmatching.md) | 138 | `result-track:8656ebdae88f0aa943d688f1d8e7869e3a593c2ec16a59c2c6c174d3f691e395` |
+| 8 | `theorem` | [tutte_exists_isPerfectMatching_of_near_matchings](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/Tutte.lean/declarations/tutte-exists-isperfectmatching-of-near-matchings.md) | 151 | `result-track:7e5e453b30de19f97892a95df7b7ca51793030170e6d0dda45c52d57cd79ed7c` |
+| 9 | `lemma` | [exists_isTutteViolator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/Tutte.lean/declarations/exists-istutteviolator.md) | 269 | `result-track:b7faae87379a755236cf59c222ef292b7f01594226e8f460e8b212c215a0bc91` |
+| 10 | `theorem` | [tutte](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/Tutte.lean/declarations/tutte.md) | 316 | `result-track:c0fc49db5df7c2efa5f29bffad3b22b2d861c3936ea9070854755dabe3a565f5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

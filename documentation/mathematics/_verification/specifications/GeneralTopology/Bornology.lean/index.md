@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/Bornology.lean/index.md) · [Full source](../../../../GeneralTopology/Bornology.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Bornology.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Bornology.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,21 +57,21 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [orderBornology](../../../../GeneralTopology/Bornology.lean/declarations/orderbornology.md) | 29 | `declaration-track:f5b301e8914cc99104d5b92f23b0c9afbdd3e3b57d5a2d7adf1389e07cb62c80` |
-| 2 | `lemma` | [orderBornology_isBounded](../../../../GeneralTopology/Bornology.lean/declarations/orderbornology-isbounded.md) | 36 | `result-track:c58154d050cd1161276a323b99e7378f696ccce85eff6d2dba730d907842122f` |
-| 3 | `class` | [IsOrderBornology](../../../../GeneralTopology/Bornology.lean/declarations/isorderbornology.md) | 46 | `declaration-track:8d0a81298ccf530c333b2a27141d85f4eb897bb6cb042df9ad9765e7700c90fe` |
-| 4 | `lemma` | [isOrderBornology_iff_eq_orderBornology](../../../../GeneralTopology/Bornology.lean/declarations/isorderbornology-iff-eq-orderbornology.md) | 49 | `result-track:d35b000c88ef3fe2b9f31030f1f8bff6a201b9a82e822d4c9eb4b2adb8269b03` |
-| 5 | `lemma` | [isBounded_iff_bddBelow_bddAbove](../../../../GeneralTopology/Bornology.lean/declarations/isbounded-iff-bddbelow-bddabove.md) | 58 | `result-track:42c68accf76323e37619ddfd4bce26c82239635294e477591cf2055c4bf585b1` |
-| 6 | `lemma` | [Bornology.IsBounded.bddBelow](../../../../GeneralTopology/Bornology.lean/declarations/bornology-isbounded-bddbelow.md) | 61 | `result-track:114a8ccfbf0ccdd4d001732282b1a84b3f03f282e66f5cd20aa97cda9cae19ce` |
-| 7 | `lemma` | [Bornology.IsBounded.bddAbove](../../../../GeneralTopology/Bornology.lean/declarations/bornology-isbounded-bddabove.md) | 64 | `result-track:f4dc3bdabf43a33d12ba4725c30c4c068f40a13c0ee05a78b4ab819b4e98cf24` |
-| 8 | `lemma` | [BddBelow.isBounded](../../../../GeneralTopology/Bornology.lean/declarations/bddbelow-isbounded.md) | 67 | `result-track:8ae9975fb42f326885e657e9b62ea59e7136510f021852a9cd08e6e598850c83` |
-| 9 | `lemma` | [BddAbove.isBounded](../../../../GeneralTopology/Bornology.lean/declarations/bddabove-isbounded.md) | 70 | `result-track:f40d4ab2e565af0a41fb53c750031283241c02ccabf7aaa6c4ef06429accfd8d` |
-| 10 | `lemma` | [BddBelow.isBounded_inter](../../../../GeneralTopology/Bornology.lean/declarations/bddbelow-isbounded-inter.md) | 73 | `result-track:92041ef4007b85c64d995b53c65dce3d14fb48c278859f9e5816a1549eef1c46` |
-| 11 | `lemma` | [BddAbove.isBounded_inter](../../../../GeneralTopology/Bornology.lean/declarations/bddabove-isbounded-inter.md) | 76 | `result-track:723f7de8b07f77b7e022093bcd01a09cfc5079d0de96e9d8b48ed7e87ca7045c` |
-| 12 | `instance` | [OrderDual.instIsOrderBornology](../../../../GeneralTopology/Bornology.lean/declarations/orderdual-instisorderbornology.md) | 79 | `declaration-track:3a66bd3dec13bc1330abfb86ade630194a95734458a0aad63aac0c9107ee8453` |
-| 13 | `instance` | [Prod.instIsOrderBornology](../../../../GeneralTopology/Bornology.lean/declarations/prod-instisorderbornology.md) | 84 | `declaration-track:154abf625703bdde733f5931d24250c13e11be3133c4453c83936c75f678e03a` |
-| 14 | `instance` | [Pi.instIsOrderBornology](../../../../GeneralTopology/Bornology.lean/declarations/pi-instisorderbornology.md) | 90 | `declaration-track:7463fed16abb5ddabdd560773d5023ec1e40d0eb1b0ac3c5069fa2540d43aef8` |
-| 15 | `lemma` | [Bornology.IsBounded.subset_Icc_sInf_sSup](../../../../GeneralTopology/Bornology.lean/declarations/bornology-isbounded-subset-icc-sinf-ssup.md) | 101 | `result-track:cc5d8858b42aef6ce387c4fc07bc85e9e2a5789e7dd864df94d90853111fdeb6` |
+| 1 | `def` | [orderBornology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Bornology.lean/declarations/orderbornology.md) | 29 | `declaration-track:f5b301e8914cc99104d5b92f23b0c9afbdd3e3b57d5a2d7adf1389e07cb62c80` |
+| 2 | `lemma` | [orderBornology_isBounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Bornology.lean/declarations/orderbornology-isbounded.md) | 36 | `result-track:c58154d050cd1161276a323b99e7378f696ccce85eff6d2dba730d907842122f` |
+| 3 | `class` | [IsOrderBornology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Bornology.lean/declarations/isorderbornology.md) | 46 | `declaration-track:8d0a81298ccf530c333b2a27141d85f4eb897bb6cb042df9ad9765e7700c90fe` |
+| 4 | `lemma` | [isOrderBornology_iff_eq_orderBornology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Bornology.lean/declarations/isorderbornology-iff-eq-orderbornology.md) | 49 | `result-track:d35b000c88ef3fe2b9f31030f1f8bff6a201b9a82e822d4c9eb4b2adb8269b03` |
+| 5 | `lemma` | [isBounded_iff_bddBelow_bddAbove](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Bornology.lean/declarations/isbounded-iff-bddbelow-bddabove.md) | 58 | `result-track:42c68accf76323e37619ddfd4bce26c82239635294e477591cf2055c4bf585b1` |
+| 6 | `lemma` | [Bornology.IsBounded.bddBelow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Bornology.lean/declarations/bornology-isbounded-bddbelow.md) | 61 | `result-track:114a8ccfbf0ccdd4d001732282b1a84b3f03f282e66f5cd20aa97cda9cae19ce` |
+| 7 | `lemma` | [Bornology.IsBounded.bddAbove](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Bornology.lean/declarations/bornology-isbounded-bddabove.md) | 64 | `result-track:f4dc3bdabf43a33d12ba4725c30c4c068f40a13c0ee05a78b4ab819b4e98cf24` |
+| 8 | `lemma` | [BddBelow.isBounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Bornology.lean/declarations/bddbelow-isbounded.md) | 67 | `result-track:8ae9975fb42f326885e657e9b62ea59e7136510f021852a9cd08e6e598850c83` |
+| 9 | `lemma` | [BddAbove.isBounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Bornology.lean/declarations/bddabove-isbounded.md) | 70 | `result-track:f40d4ab2e565af0a41fb53c750031283241c02ccabf7aaa6c4ef06429accfd8d` |
+| 10 | `lemma` | [BddBelow.isBounded_inter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Bornology.lean/declarations/bddbelow-isbounded-inter.md) | 73 | `result-track:92041ef4007b85c64d995b53c65dce3d14fb48c278859f9e5816a1549eef1c46` |
+| 11 | `lemma` | [BddAbove.isBounded_inter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Bornology.lean/declarations/bddabove-isbounded-inter.md) | 76 | `result-track:723f7de8b07f77b7e022093bcd01a09cfc5079d0de96e9d8b48ed7e87ca7045c` |
+| 12 | `instance` | [OrderDual.instIsOrderBornology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Bornology.lean/declarations/orderdual-instisorderbornology.md) | 79 | `declaration-track:3a66bd3dec13bc1330abfb86ade630194a95734458a0aad63aac0c9107ee8453` |
+| 13 | `instance` | [Prod.instIsOrderBornology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Bornology.lean/declarations/prod-instisorderbornology.md) | 84 | `declaration-track:154abf625703bdde733f5931d24250c13e11be3133c4453c83936c75f678e03a` |
+| 14 | `instance` | [Pi.instIsOrderBornology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Bornology.lean/declarations/pi-instisorderbornology.md) | 90 | `declaration-track:7463fed16abb5ddabdd560773d5023ec1e40d0eb1b0ac3c5069fa2540d43aef8` |
+| 15 | `lemma` | [Bornology.IsBounded.subset_Icc_sInf_sSup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Bornology.lean/declarations/bornology-isbounded-subset-icc-sinf-ssup.md) | 101 | `result-track:cc5d8858b42aef6ce387c4fc07bc85e9e2a5789e7dd864df94d90853111fdeb6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

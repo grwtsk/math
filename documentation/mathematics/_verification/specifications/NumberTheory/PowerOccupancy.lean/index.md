@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/PowerOccupancy.lean/index.md) · [Full source](../../../../NumberTheory/PowerOccupancy.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PowerOccupancy.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PowerOccupancy.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,13 +62,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [successor_power_gap](../../../../NumberTheory/PowerOccupancy.lean/declarations/successor-power-gap.md) | 23 | `result-track:c075a5a5c2c9079afa04378cf0ebf4613cdce164b33e369e15e7be1d55584faa` |
-| 2 | `theorem` | [successor_power_above_square](../../../../NumberTheory/PowerOccupancy.lean/declarations/successor-power-above-square.md) | 41 | `result-track:de293a9b9389356080333a91aab48e68d2e3005075c81ace64db7737ecdd366c` |
-| 3 | `theorem` | [square_interval_power_base_unique](../../../../NumberTheory/PowerOccupancy.lean/declarations/square-interval-power-base-unique.md) | 61 | `result-track:f27267be454f2d13ce4911ea1ed7aa343b243b040b2aec427e2d3ad0a25332d7` |
-| 4 | `theorem` | [closed_left_endpoint_control](../../../../NumberTheory/PowerOccupancy.lean/declarations/closed-left-endpoint-control.md) | 77 | `result-track:35ccaac6319b4863123ca552f98eef3d4d764bc8332417f0d87f6a2ccc43da72` |
-| 5 | `theorem` | [exponent_one_control](../../../../NumberTheory/PowerOccupancy.lean/declarations/exponent-one-control.md) | 83 | `result-track:34d337a0cfa43b2821a66616f9edac4c8a5ba89335135500e1a8c39948a04fe3` |
-| 6 | `theorem` | [different_exponents_control](../../../../NumberTheory/PowerOccupancy.lean/declarations/different-exponents-control.md) | 90 | `result-track:2543620d774e73f4ae0dfe780d8c459df6664737c4613040e21d57a0c58c1b1e` |
-| 7 | `theorem` | [right_square_endpoint_control](../../../../NumberTheory/PowerOccupancy.lean/declarations/right-square-endpoint-control.md) | 96 | `result-track:ea7ac8c9780630b3dd5f2b61c5cc196ea9cbe4b8499db70f4e1fa001538b0456` |
+| 1 | `theorem` | [successor_power_gap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PowerOccupancy.lean/declarations/successor-power-gap.md) | 23 | `result-track:c075a5a5c2c9079afa04378cf0ebf4613cdce164b33e369e15e7be1d55584faa` |
+| 2 | `theorem` | [successor_power_above_square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PowerOccupancy.lean/declarations/successor-power-above-square.md) | 41 | `result-track:de293a9b9389356080333a91aab48e68d2e3005075c81ace64db7737ecdd366c` |
+| 3 | `theorem` | [square_interval_power_base_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PowerOccupancy.lean/declarations/square-interval-power-base-unique.md) | 61 | `result-track:f27267be454f2d13ce4911ea1ed7aa343b243b040b2aec427e2d3ad0a25332d7` |
+| 4 | `theorem` | [closed_left_endpoint_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PowerOccupancy.lean/declarations/closed-left-endpoint-control.md) | 77 | `result-track:35ccaac6319b4863123ca552f98eef3d4d764bc8332417f0d87f6a2ccc43da72` |
+| 5 | `theorem` | [exponent_one_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PowerOccupancy.lean/declarations/exponent-one-control.md) | 83 | `result-track:34d337a0cfa43b2821a66616f9edac4c8a5ba89335135500e1a8c39948a04fe3` |
+| 6 | `theorem` | [different_exponents_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PowerOccupancy.lean/declarations/different-exponents-control.md) | 90 | `result-track:2543620d774e73f4ae0dfe780d8c459df6664737c4613040e21d57a0c58c1b1e` |
+| 7 | `theorem` | [right_square_endpoint_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PowerOccupancy.lean/declarations/right-square-endpoint-control.md) | 96 | `result-track:ea7ac8c9780630b3dd5f2b61c5cc196ea9cbe4b8499db70f4e1fa001538b0456` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/FiveModeSourceTailMajorant.lean/index.md) · [Full source](../../../../CommutativeAlgebra/FiveModeSourceTailMajorant.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiveModeSourceTailMajorant.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiveModeSourceTailMajorant.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [sourcePolynomialBracket](../../../../CommutativeAlgebra/FiveModeSourceTailMajorant.lean/declarations/sourcepolynomialbracket.md) | 17 | `declaration-track:130a99cc6ccccf4335cb85fed6398444ecdeb409cc350aa22dab9779560b4c8d` |
-| 2 | `theorem` | [polynomial_triangle](../../../../CommutativeAlgebra/FiveModeSourceTailMajorant.lean/declarations/polynomial-triangle.md) | 20 | `result-track:637ea388bd392dcd3ea866ce444f5fb05a6835e6a459b276578a99d66343d12d` |
-| 3 | `theorem` | [transform_polynomial_sharp_budget](../../../../CommutativeAlgebra/FiveModeSourceTailMajorant.lean/declarations/transform-polynomial-sharp-budget.md) | 37 | `result-track:2e30230df06700b561c545cabff5d4d61a50363ae31d8fb25af48c1480a240d8` |
-| 4 | `theorem` | [exponential_sum_strip](../../../../CommutativeAlgebra/FiveModeSourceTailMajorant.lean/declarations/exponential-sum-strip.md) | 51 | `result-track:bd15a98ae8a8659ee554f0be94166b70c9107727a6cb78813d73824e532c1c60` |
-| 5 | `theorem` | [source_factor_sharp_budget](../../../../CommutativeAlgebra/FiveModeSourceTailMajorant.lean/declarations/source-factor-sharp-budget.md) | 66 | `result-track:94d8196895211e8ffae63cd109dbe2dbb132ee404457d9e73645021122f53c18` |
-| 6 | `theorem` | [actual_bilateral_sharp_tail_bound](../../../../CommutativeAlgebra/FiveModeSourceTailMajorant.lean/declarations/actual-bilateral-sharp-tail-bound.md) | 80 | `result-track:5d33e5997afe69934f93855e7ad15348324885080c768265ed7cc59ff4da63d1` |
-| 7 | `theorem` | [exponential_sum_square](../../../../CommutativeAlgebra/FiveModeSourceTailMajorant.lean/declarations/exponential-sum-square.md) | 131 | `result-track:d0a26264380001574e9aa2d3aed59af7ca3c9b3bb56be21916b9186ed98d38cd` |
-| 8 | `theorem` | [actual_source_absolute_tail_majorant](../../../../CommutativeAlgebra/FiveModeSourceTailMajorant.lean/declarations/actual-source-absolute-tail-majorant.md) | 148 | `result-track:0ac0596ce8a721cc6848f7c2743b7d42969ed6682dfecefe380be8823959edc4` |
+| 1 | `def` | [sourcePolynomialBracket](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiveModeSourceTailMajorant.lean/declarations/sourcepolynomialbracket.md) | 17 | `declaration-track:130a99cc6ccccf4335cb85fed6398444ecdeb409cc350aa22dab9779560b4c8d` |
+| 2 | `theorem` | [polynomial_triangle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiveModeSourceTailMajorant.lean/declarations/polynomial-triangle.md) | 20 | `result-track:637ea388bd392dcd3ea866ce444f5fb05a6835e6a459b276578a99d66343d12d` |
+| 3 | `theorem` | [transform_polynomial_sharp_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiveModeSourceTailMajorant.lean/declarations/transform-polynomial-sharp-budget.md) | 37 | `result-track:2e30230df06700b561c545cabff5d4d61a50363ae31d8fb25af48c1480a240d8` |
+| 4 | `theorem` | [exponential_sum_strip](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiveModeSourceTailMajorant.lean/declarations/exponential-sum-strip.md) | 51 | `result-track:bd15a98ae8a8659ee554f0be94166b70c9107727a6cb78813d73824e532c1c60` |
+| 5 | `theorem` | [source_factor_sharp_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiveModeSourceTailMajorant.lean/declarations/source-factor-sharp-budget.md) | 66 | `result-track:94d8196895211e8ffae63cd109dbe2dbb132ee404457d9e73645021122f53c18` |
+| 6 | `theorem` | [actual_bilateral_sharp_tail_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiveModeSourceTailMajorant.lean/declarations/actual-bilateral-sharp-tail-bound.md) | 80 | `result-track:5d33e5997afe69934f93855e7ad15348324885080c768265ed7cc59ff4da63d1` |
+| 7 | `theorem` | [exponential_sum_square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiveModeSourceTailMajorant.lean/declarations/exponential-sum-square.md) | 131 | `result-track:d0a26264380001574e9aa2d3aed59af7ca3c9b3bb56be21916b9186ed98d38cd` |
+| 8 | `theorem` | [actual_source_absolute_tail_majorant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FiveModeSourceTailMajorant.lean/declarations/actual-source-absolute-tail-majorant.md) | 148 | `result-track:0ac0596ce8a721cc6848f7c2743b7d42969ed6682dfecefe380be8823959edc4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

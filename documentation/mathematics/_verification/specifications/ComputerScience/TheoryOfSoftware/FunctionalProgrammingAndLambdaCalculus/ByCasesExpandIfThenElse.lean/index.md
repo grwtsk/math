@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ByCasesExpandIfThenElse.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ByCasesExpandIfThenElse.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ByCasesExpandIfThenElse.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ByCasesExpandIfThenElse.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `macro_rules` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ByCasesExpandIfThenElse.lean/declarations/macro-rules-source-edition-2.md) | 17 | `declaration-track:ac7c8734faead4a64b2a3cffd198e987b028b90e4fa551c6120a77e8082f0343` |
-| 2 | `macro_rules` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ByCasesExpandIfThenElse.lean/declarations/macro-rules.md) | 18 | `declaration-track:6b6e2ee284086119c81e474a32b2a9b5d6186625eac3ecfe98a0e3bf05f7f770` |
-| 3 | `def` | [expandIfThenElse](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ByCasesExpandIfThenElse.lean/declarations/expandifthenelse.md) | 22 | `declaration-track:e2d2529631dc3de343bb48001fe71d41d888a46cf070da7035cc11078e8d4b50` |
-| 4 | `syntax` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ByCasesExpandIfThenElse.lean/declarations/syntax.md) | 56 | `declaration-track:90a8311ee0fd63220a4953520fc4abed4efdb731138e33abfcbef28051b720d9` |
-| 5 | `syntax` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ByCasesExpandIfThenElse.lean/declarations/syntax-source-edition-2.md) | 73 | `declaration-track:f358555ca29ac0d643dc7c3296c7354f831dd21a297d3a502b795521044f9a4a` |
-| 6 | `macro_rules` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ByCasesExpandIfThenElse.lean/declarations/macro-rules-source-edition-3.md) | 77 | `declaration-track:c38dfb65d27d97806864bcdcf855e3fe29f327ec9ebf6ed22ba8f042ee5316ca` |
-| 7 | `macro_rules` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ByCasesExpandIfThenElse.lean/declarations/macro-rules-source-edition-4.md) | 81 | `declaration-track:ea9774a8e9b442ac6070459b3495306306c73384d2b628e194ecba4febbdcc88` |
+| 1 | `macro_rules` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ByCasesExpandIfThenElse.lean/declarations/macro-rules-source-edition-2.md) | 17 | `declaration-track:ac7c8734faead4a64b2a3cffd198e987b028b90e4fa551c6120a77e8082f0343` |
+| 2 | `macro_rules` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ByCasesExpandIfThenElse.lean/declarations/macro-rules.md) | 18 | `declaration-track:6b6e2ee284086119c81e474a32b2a9b5d6186625eac3ecfe98a0e3bf05f7f770` |
+| 3 | `def` | [expandIfThenElse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ByCasesExpandIfThenElse.lean/declarations/expandifthenelse.md) | 22 | `declaration-track:e2d2529631dc3de343bb48001fe71d41d888a46cf070da7035cc11078e8d4b50` |
+| 4 | `syntax` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ByCasesExpandIfThenElse.lean/declarations/syntax.md) | 56 | `declaration-track:90a8311ee0fd63220a4953520fc4abed4efdb731138e33abfcbef28051b720d9` |
+| 5 | `syntax` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ByCasesExpandIfThenElse.lean/declarations/syntax-source-edition-2.md) | 73 | `declaration-track:f358555ca29ac0d643dc7c3296c7354f831dd21a297d3a502b795521044f9a4a` |
+| 6 | `macro_rules` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ByCasesExpandIfThenElse.lean/declarations/macro-rules-source-edition-3.md) | 77 | `declaration-track:c38dfb65d27d97806864bcdcf855e3fe29f327ec9ebf6ed22ba8f042ee5316ca` |
+| 7 | `macro_rules` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ByCasesExpandIfThenElse.lean/declarations/macro-rules-source-edition-4.md) | 81 | `declaration-track:ea9774a8e9b442ac6070459b3495306306c73384d2b628e194ecba4febbdcc88` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

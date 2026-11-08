@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/SpecificCodomainsPiPublic.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/SpecificCodomainsPiPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/SpecificCodomainsPiPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/SpecificCodomainsPiPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [memLp_pi_iff](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/SpecificCodomainsPiPublic.lean/declarations/memlp-pi-iff.md) | 30 | `result-track:74ff9c2d6736b5bbdd53599738a3522992590b26d4837d483621072d962adf98` |
-| 2 | `lemma` | [integrable_pi_iff](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/SpecificCodomainsPiPublic.lean/declarations/integrable-pi-iff.md) | 41 | `result-track:9dedecd4113aadac381969b4984c7261343a478d310215ed45ca432a93ee399a` |
-| 3 | `lemma` | [eval_integral](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/SpecificCodomainsPiPublic.lean/declarations/eval-integral.md) | 48 | `result-track:442ed37783eddd649039f2b727c30f46e536d584e3ab98158603f2b14702e2d4` |
-| 4 | `lemma` | [memLp_prod_iff](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/SpecificCodomainsPiPublic.lean/declarations/memlp-prod-iff.md) | 59 | `result-track:44e611479eaa57bfa03a297ba00d96dbdc1597c238f204a09fbeea3d169a3fd6` |
-| 5 | `lemma` | [MemLp.fst](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/SpecificCodomainsPiPublic.lean/declarations/memlp-fst.md) | 71 | `result-track:7c4255b7c501c6beb40fe4ee55edbf9918377aa382f58ea259689755dc215c37` |
-| 6 | `lemma` | [MemLp.snd](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/SpecificCodomainsPiPublic.lean/declarations/memlp-snd.md) | 74 | `result-track:36015e30b44485db62ec4918becdcb848b8487ea4771016fbafac3f64d90415c` |
+| 1 | `lemma` | [memLp_pi_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/SpecificCodomainsPiPublic.lean/declarations/memlp-pi-iff.md) | 30 | `result-track:74ff9c2d6736b5bbdd53599738a3522992590b26d4837d483621072d962adf98` |
+| 2 | `lemma` | [integrable_pi_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/SpecificCodomainsPiPublic.lean/declarations/integrable-pi-iff.md) | 41 | `result-track:9dedecd4113aadac381969b4984c7261343a478d310215ed45ca432a93ee399a` |
+| 3 | `lemma` | [eval_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/SpecificCodomainsPiPublic.lean/declarations/eval-integral.md) | 48 | `result-track:442ed37783eddd649039f2b727c30f46e536d584e3ab98158603f2b14702e2d4` |
+| 4 | `lemma` | [memLp_prod_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/SpecificCodomainsPiPublic.lean/declarations/memlp-prod-iff.md) | 59 | `result-track:44e611479eaa57bfa03a297ba00d96dbdc1597c238f204a09fbeea3d169a3fd6` |
+| 5 | `lemma` | [MemLp.fst](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/SpecificCodomainsPiPublic.lean/declarations/memlp-fst.md) | 71 | `result-track:7c4255b7c501c6beb40fe4ee55edbf9918377aa382f58ea259689755dc215c37` |
+| 6 | `lemma` | [MemLp.snd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/SpecificCodomainsPiPublic.lean/declarations/memlp-snd.md) | 74 | `result-track:36015e30b44485db62ec4918becdcb848b8487ea4771016fbafac3f64d90415c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

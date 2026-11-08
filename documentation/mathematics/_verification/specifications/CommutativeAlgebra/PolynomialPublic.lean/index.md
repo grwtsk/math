@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/PolynomialPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/PolynomialPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PolynomialPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PolynomialPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [not_weaklyQuasiFiniteAt](../../../../CommutativeAlgebra/PolynomialPublic.lean/declarations/not-weaklyquasifiniteat.md) | 20 | `result-track:1ab30c7c955324587d4cc40268f928a5b46105c4041fdbb00ca37a4f3401c7a8` |
-| 2 | `lemma` | [not_quasiFiniteAt](../../../../CommutativeAlgebra/PolynomialPublic.lean/declarations/not-quasifiniteat.md) | 37 | `result-track:36b3ade05a0ca9c5b9f7e690114f055bb1adc568d1eb46dbf97f8e174797057f` |
-| 3 | `lemma` | [map_under_lt_comap_of_weaklyQuasiFiniteAt](../../../../CommutativeAlgebra/PolynomialPublic.lean/declarations/map-under-lt-comap-of-weaklyquasifiniteat.md) | 40 | `result-track:5cfe9fd6ff7aa2c639173846c9be720b25ebd5d13bdad33c976c38bc0e02507c` |
-| 4 | `lemma` | [map_under_lt_comap_of_quasiFiniteAt](../../../../CommutativeAlgebra/PolynomialPublic.lean/declarations/map-under-lt-comap-of-quasifiniteat.md) | 60 | `result-track:1b4b5dee1527dbe22ef41064240dc78ba78da3ceff33a396b5161d780baaf24e` |
-| 5 | `lemma` | [not_ker_le_map_C_of_surjective_of_weaklyQuasiFiniteAt](../../../../CommutativeAlgebra/PolynomialPublic.lean/declarations/not-ker-le-map-c-of-surjective-of-weaklyquasifiniteat.md) | 65 | `result-track:87cff1285ade66bd3ba743771b0f72ba41cb3ad51a37aef0eaa0e013deedc35a` |
-| 6 | `lemma` | [not_ker_le_map_C_of_surjective_of_quasiFiniteAt](../../../../CommutativeAlgebra/PolynomialPublic.lean/declarations/not-ker-le-map-c-of-surjective-of-quasifiniteat.md) | 90 | `result-track:72750ea703555754774269909abda3c5f8db3f5dbe4b1c45422cfa8fd1847abd` |
+| 1 | `lemma` | [not_weaklyQuasiFiniteAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PolynomialPublic.lean/declarations/not-weaklyquasifiniteat.md) | 20 | `result-track:1ab30c7c955324587d4cc40268f928a5b46105c4041fdbb00ca37a4f3401c7a8` |
+| 2 | `lemma` | [not_quasiFiniteAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PolynomialPublic.lean/declarations/not-quasifiniteat.md) | 37 | `result-track:36b3ade05a0ca9c5b9f7e690114f055bb1adc568d1eb46dbf97f8e174797057f` |
+| 3 | `lemma` | [map_under_lt_comap_of_weaklyQuasiFiniteAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PolynomialPublic.lean/declarations/map-under-lt-comap-of-weaklyquasifiniteat.md) | 40 | `result-track:5cfe9fd6ff7aa2c639173846c9be720b25ebd5d13bdad33c976c38bc0e02507c` |
+| 4 | `lemma` | [map_under_lt_comap_of_quasiFiniteAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PolynomialPublic.lean/declarations/map-under-lt-comap-of-quasifiniteat.md) | 60 | `result-track:1b4b5dee1527dbe22ef41064240dc78ba78da3ceff33a396b5161d780baaf24e` |
+| 5 | `lemma` | [not_ker_le_map_C_of_surjective_of_weaklyQuasiFiniteAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PolynomialPublic.lean/declarations/not-ker-le-map-c-of-surjective-of-weaklyquasifiniteat.md) | 65 | `result-track:87cff1285ade66bd3ba743771b0f72ba41cb3ad51a37aef0eaa0e013deedc35a` |
+| 6 | `lemma` | [not_ker_le_map_C_of_surjective_of_quasiFiniteAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PolynomialPublic.lean/declarations/not-ker-le-map-c-of-surjective-of-quasifiniteat.md) | 90 | `result-track:72750ea703555754774269909abda3c5f8db3f5dbe4b1c45422cfa8fd1847abd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

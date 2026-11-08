@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteWalshOrthogonality.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteWalshOrthogonality.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteWalshOrthogonality.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteWalshOrthogonality.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteWalshPatterns`](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteWalshPatterns.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteWalshPatterns`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteWalshPatterns.lean/index.md) — import line 5; pinned internal source present.
 - `Mathlib.Algebra.BigOperators.Ring.Finset` — import line 6; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 7; external provider; requires a separately pinned dependency.
 
@@ -59,15 +59,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [walshCharacter](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteWalshOrthogonality.lean/declarations/walshcharacter.md) | 35 | `declaration-track:34b05c519341b688cab0eb86d935c594424894ff4a13970fb2ddbaef80d6ed4d` |
-| 2 | `theorem` | [boolSign_square](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteWalshOrthogonality.lean/declarations/boolsign-square.md) | 39 | `result-track:49555c84c688eee7f54b5ff98af36501733a5d2935b1363be84cd562e228814b` |
-| 3 | `theorem` | [walshCharacter_square](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteWalshOrthogonality.lean/declarations/walshcharacter-square.md) | 46 | `result-track:71aad694a9dc2e25682b153bb615d3f4930d11f790247b2dd5284617f2389540` |
-| 4 | `theorem` | [walshCharacter_diagonal](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteWalshOrthogonality.lean/declarations/walshcharacter-diagonal.md) | 53 | `result-track:348587ace458ca80e189f26f2f14b3b9990f2c2604e634a6b8ebefec732d0c12` |
-| 5 | `theorem` | [walshCharacter_orthogonal](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteWalshOrthogonality.lean/declarations/walshcharacter-orthogonal.md) | 60 | `result-track:0672b037121b8e680fda1f599362e3ec6855b843c0d6d2b33bdb788583783ade` |
-| 6 | `theorem` | [walshCharacter_orthogonality](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteWalshOrthogonality.lean/declarations/walshcharacter-orthogonality.md) | 103 | `result-track:cf4c1acf2c67a61d1a26ba6e6dd3bf71aafb781fcb909faea3f38e52ff2d1fe3` |
-| 7 | `def` | [plainMomentOn](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteWalshOrthogonality.lean/declarations/plainmomenton.md) | 114 | `declaration-track:50e62e65ca1662aa93a698c4487c910d128ff0169f4bc46c66a5fb96e9564436` |
-| 8 | `theorem` | [signedMomentOn_factor](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteWalshOrthogonality.lean/declarations/signedmomenton-factor.md) | 121 | `result-track:7f6481d2b91d3ff7e111afc914b7a463859afa9dc47d6b767bb24d854e21502c` |
-| 9 | `theorem` | [empiricalMoment_factor](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteWalshOrthogonality.lean/declarations/empiricalmoment-factor.md) | 141 | `result-track:b69b6af68835aa2e6c32b3184b0d0a438ba075ca595812168db528cea216eb1f` |
+| 1 | `def` | [walshCharacter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteWalshOrthogonality.lean/declarations/walshcharacter.md) | 35 | `declaration-track:34b05c519341b688cab0eb86d935c594424894ff4a13970fb2ddbaef80d6ed4d` |
+| 2 | `theorem` | [boolSign_square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteWalshOrthogonality.lean/declarations/boolsign-square.md) | 39 | `result-track:49555c84c688eee7f54b5ff98af36501733a5d2935b1363be84cd562e228814b` |
+| 3 | `theorem` | [walshCharacter_square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteWalshOrthogonality.lean/declarations/walshcharacter-square.md) | 46 | `result-track:71aad694a9dc2e25682b153bb615d3f4930d11f790247b2dd5284617f2389540` |
+| 4 | `theorem` | [walshCharacter_diagonal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteWalshOrthogonality.lean/declarations/walshcharacter-diagonal.md) | 53 | `result-track:348587ace458ca80e189f26f2f14b3b9990f2c2604e634a6b8ebefec732d0c12` |
+| 5 | `theorem` | [walshCharacter_orthogonal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteWalshOrthogonality.lean/declarations/walshcharacter-orthogonal.md) | 60 | `result-track:0672b037121b8e680fda1f599362e3ec6855b843c0d6d2b33bdb788583783ade` |
+| 6 | `theorem` | [walshCharacter_orthogonality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteWalshOrthogonality.lean/declarations/walshcharacter-orthogonality.md) | 103 | `result-track:cf4c1acf2c67a61d1a26ba6e6dd3bf71aafb781fcb909faea3f38e52ff2d1fe3` |
+| 7 | `def` | [plainMomentOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteWalshOrthogonality.lean/declarations/plainmomenton.md) | 114 | `declaration-track:50e62e65ca1662aa93a698c4487c910d128ff0169f4bc46c66a5fb96e9564436` |
+| 8 | `theorem` | [signedMomentOn_factor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteWalshOrthogonality.lean/declarations/signedmomenton-factor.md) | 121 | `result-track:7f6481d2b91d3ff7e111afc914b7a463859afa9dc47d6b767bb24d854e21502c` |
+| 9 | `theorem` | [empiricalMoment_factor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteWalshOrthogonality.lean/declarations/empiricalmoment-factor.md) | 141 | `result-track:b69b6af68835aa2e6c32b3184b0d0a438ba075ca595812168db528cea216eb1f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/BinomialRandomGraphDefsPublic.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/BinomialRandomGraphDefsPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/BinomialRandomGraphDefsPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/BinomialRandomGraphDefsPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [binomialRandom](../../../../ProbabilityTheoryAndStochasticProcesses/BinomialRandomGraphDefsPublic.lean/declarations/binomialrandom.md) | 46 | `declaration-track:8ee959bbde3184754a20e03a78a4aa5dc439e04da324b3869e58639bbd8025e8` |
-| 2 | `lemma` | [binomialRandom_eq_map](../../../../ProbabilityTheoryAndStochasticProcesses/BinomialRandomGraphDefsPublic.lean/declarations/binomialrandom-eq-map.md) | 55 | `result-track:002c0123dd859aa1100a2776c7ff06fda515e225511fb9305c1ca851a0b923dc` |
-| 3 | `lemma` | [binomialRandom_apply'](../../../../ProbabilityTheoryAndStochasticProcesses/BinomialRandomGraphDefsPublic.lean/declarations/binomialrandom-apply.md) | 62 | `result-track:503140079c20c6a45af42e0284b3d231d309b1265dd2e47f0b69e2e55b5753a1` |
-| 4 | `lemma` | [binomialRandom_apply](../../../../ProbabilityTheoryAndStochasticProcesses/BinomialRandomGraphDefsPublic.lean/declarations/binomialrandom-apply-source-edition-2.md) | 67 | `result-track:600af90d918c180c5bb0584853f1c6115e6419e4b8a5676ef28d015516a1a10b` |
-| 5 | `instance` | [(anonymous)](../../../../ProbabilityTheoryAndStochasticProcesses/BinomialRandomGraphDefsPublic.lean/declarations/instance.md) | 72 | `declaration-track:6aa65cdaac63965ae1a331af7ef28e7ebdebe01ee8f33dc999779cdbe71d50e9` |
-| 6 | `lemma` | [binomialRandom_zero](../../../../ProbabilityTheoryAndStochasticProcesses/BinomialRandomGraphDefsPublic.lean/declarations/binomialrandom-zero.md) | 79 | `result-track:5935ab08f82d1d8b776149392f07a9b667663204cf2f4c8f65c709d467979ab3` |
-| 7 | `lemma` | [binomialRandom_one](../../../../ProbabilityTheoryAndStochasticProcesses/BinomialRandomGraphDefsPublic.lean/declarations/binomialrandom-one.md) | 82 | `result-track:c91b7a9615d5ebd2b4bd4c432f6f0ab8014d19c58b15ab30bf96aded87a4ff9d` |
-| 8 | `lemma` | [binomialRandom_singleton](../../../../ProbabilityTheoryAndStochasticProcesses/BinomialRandomGraphDefsPublic.lean/declarations/binomialrandom-singleton.md) | 87 | `result-track:1c95d459709f00490343a7e41d824b5085b6943e6f6eb7b39ef80372cf72d6df` |
+| 1 | `def` | [binomialRandom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/BinomialRandomGraphDefsPublic.lean/declarations/binomialrandom.md) | 46 | `declaration-track:8ee959bbde3184754a20e03a78a4aa5dc439e04da324b3869e58639bbd8025e8` |
+| 2 | `lemma` | [binomialRandom_eq_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/BinomialRandomGraphDefsPublic.lean/declarations/binomialrandom-eq-map.md) | 55 | `result-track:002c0123dd859aa1100a2776c7ff06fda515e225511fb9305c1ca851a0b923dc` |
+| 3 | `lemma` | [binomialRandom_apply'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/BinomialRandomGraphDefsPublic.lean/declarations/binomialrandom-apply.md) | 62 | `result-track:503140079c20c6a45af42e0284b3d231d309b1265dd2e47f0b69e2e55b5753a1` |
+| 4 | `lemma` | [binomialRandom_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/BinomialRandomGraphDefsPublic.lean/declarations/binomialrandom-apply-source-edition-2.md) | 67 | `result-track:600af90d918c180c5bb0584853f1c6115e6419e4b8a5676ef28d015516a1a10b` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/BinomialRandomGraphDefsPublic.lean/declarations/instance.md) | 72 | `declaration-track:6aa65cdaac63965ae1a331af7ef28e7ebdebe01ee8f33dc999779cdbe71d50e9` |
+| 6 | `lemma` | [binomialRandom_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/BinomialRandomGraphDefsPublic.lean/declarations/binomialrandom-zero.md) | 79 | `result-track:5935ab08f82d1d8b776149392f07a9b667663204cf2f4c8f65c709d467979ab3` |
+| 7 | `lemma` | [binomialRandom_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/BinomialRandomGraphDefsPublic.lean/declarations/binomialrandom-one.md) | 82 | `result-track:c91b7a9615d5ebd2b4bd4c432f6f0ab8014d19c58b15ab30bf96aded87a4ff9d` |
+| 8 | `lemma` | [binomialRandom_singleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/BinomialRandomGraphDefsPublic.lean/declarations/binomialrandom-singleton.md) | 87 | `result-track:1c95d459709f00490343a7e41d824b5085b6943e6f6eb7b39ef80372cf72d6df` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

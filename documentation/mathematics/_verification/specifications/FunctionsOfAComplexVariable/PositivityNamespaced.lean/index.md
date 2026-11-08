@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/PositivityNamespaced.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/PositivityNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PositivityNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PositivityNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [nonneg_of_iteratedDeriv_nonneg](../../../../FunctionsOfAComplexVariable/PositivityNamespaced.lean/declarations/nonneg-of-iteratedderiv-nonneg.md) | 34 | `result-track:0c1e52c6de006d71b25dd78ee61772f650cb97559028fb60085936cd71dd29ba` |
-| 2 | `theorem` | [nonneg_of_iteratedDeriv_nonneg](../../../../FunctionsOfAComplexVariable/PositivityNamespaced.lean/declarations/nonneg-of-iteratedderiv-nonneg-source-edition-2.md) | 55 | `result-track:761cff856887556f5b0ec8c2fe5070939c5ed2e66e0ccc83864d1ebf60ec3887` |
-| 3 | `theorem` | [apply_le_of_iteratedDeriv_nonneg](../../../../FunctionsOfAComplexVariable/PositivityNamespaced.lean/declarations/apply-le-of-iteratedderiv-nonneg.md) | 65 | `result-track:5373085162897c8d5a0046bddfc347a9812757253d6a9fc8b77d58fa87d68f12` |
-| 4 | `theorem` | [apply_le_of_iteratedDeriv_alternating](../../../../FunctionsOfAComplexVariable/PositivityNamespaced.lean/declarations/apply-le-of-iteratedderiv-alternating.md) | 80 | `result-track:a35b3435bde2e494dca7e35cfaf59c0795de17b04759c07e12a74091fa690d6f` |
+| 1 | `theorem` | [nonneg_of_iteratedDeriv_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PositivityNamespaced.lean/declarations/nonneg-of-iteratedderiv-nonneg.md) | 34 | `result-track:0c1e52c6de006d71b25dd78ee61772f650cb97559028fb60085936cd71dd29ba` |
+| 2 | `theorem` | [nonneg_of_iteratedDeriv_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PositivityNamespaced.lean/declarations/nonneg-of-iteratedderiv-nonneg-source-edition-2.md) | 55 | `result-track:761cff856887556f5b0ec8c2fe5070939c5ed2e66e0ccc83864d1ebf60ec3887` |
+| 3 | `theorem` | [apply_le_of_iteratedDeriv_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PositivityNamespaced.lean/declarations/apply-le-of-iteratedderiv-nonneg.md) | 65 | `result-track:5373085162897c8d5a0046bddfc347a9812757253d6a9fc8b77d58fa87d68f12` |
+| 4 | `theorem` | [apply_le_of_iteratedDeriv_alternating](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PositivityNamespaced.lean/declarations/apply-le-of-iteratedderiv-alternating.md) | 80 | `result-track:a35b3435bde2e494dca7e35cfaf59c0795de17b04759c07e12a74091fa690d6f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InertiaEdition2.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InertiaEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InertiaEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InertiaEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [posIndex_conj_le](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InertiaEdition2.lean/declarations/posindex-conj-le.md) | 51 | `result-track:ed840a0380a62ffbf60b75d9584b2e232503c18baeac52cf747c79790dac42ca` |
-| 2 | `theorem` | [posIndex_add_le](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InertiaEdition2.lean/declarations/posindex-add-le.md) | 90 | `result-track:8ca7954424de988f6edf9e36178fb7666ecafc6146e444df1f05e84a718071a9` |
+| 1 | `theorem` | [posIndex_conj_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InertiaEdition2.lean/declarations/posindex-conj-le.md) | 51 | `result-track:ed840a0380a62ffbf60b75d9584b2e232503c18baeac52cf747c79790dac42ca` |
+| 2 | `theorem` | [posIndex_add_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InertiaEdition2.lean/declarations/posindex-add-le.md) | 90 | `result-track:8ca7954424de988f6edf9e36178fb7666ecafc6146e444df1f05e84a718071a9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

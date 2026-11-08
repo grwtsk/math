@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/RetentionNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/RetentionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RetentionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RetentionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RetentionRangeCertificate](../../../../RealFunctions/RetentionNamespaced.lean/declarations/retentionrangecertificate.md) | 23 | `declaration-track:c9e4b21a5bea3cb80cbcff4c92b530ec663176afff384980736e78cdbb4840d9` |
-| 2 | `theorem` | [retention_product_positive](../../../../RealFunctions/RetentionNamespaced.lean/declarations/retention-product-positive.md) | 44 | `result-track:0cbe422791892fcca99e0de29a86e65bc4e9b63b6848d0f90384f9c226ac4aec` |
-| 3 | `theorem` | [reciprocal_retention_defined](../../../../RealFunctions/RetentionNamespaced.lean/declarations/reciprocal-retention-defined.md) | 54 | `result-track:ea26e547386fc0c30fb682457c6d377631ff87bd7fc1217c02544bbb22b25ca2` |
+| 1 | `structure` | [RetentionRangeCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RetentionNamespaced.lean/declarations/retentionrangecertificate.md) | 23 | `declaration-track:c9e4b21a5bea3cb80cbcff4c92b530ec663176afff384980736e78cdbb4840d9` |
+| 2 | `theorem` | [retention_product_positive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RetentionNamespaced.lean/declarations/retention-product-positive.md) | 44 | `result-track:0cbe422791892fcca99e0de29a86e65bc4e9b63b6848d0f90384f9c226ac4aec` |
+| 3 | `theorem` | [reciprocal_retention_defined](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RetentionNamespaced.lean/declarations/reciprocal-retention-defined.md) | 54 | `result-track:ea26e547386fc0c30fb682457c6d377631ff87bd7fc1217c02544bbb22b25ca2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

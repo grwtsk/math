@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceActualFixedRieszCriticalPairing.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceActualFixedRieszCriticalPairing.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualFixedRieszCriticalPairing.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualFixedRieszCriticalPairing.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actualFixedCenteredMangoldtRiesz_eq_criticalRelativePairing](../../../../MeasureAndIntegration/SourceActualFixedRieszCriticalPairing.lean/declarations/actualfixedcenteredmangoldtriesz-eq-criticalrelativepairing.md) | 24 | `result-track:912ff0bb82df823b1bfdcf098483418ebd8126d6693e9ac82a6b919750ee1faf` |
+| 1 | `theorem` | [actualFixedCenteredMangoldtRiesz_eq_criticalRelativePairing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualFixedRieszCriticalPairing.lean/declarations/actualfixedcenteredmangoldtriesz-eq-criticalrelativepairing.md) | 24 | `result-track:912ff0bb82df823b1bfdcf098483418ebd8126d6693e9ac82a6b919750ee1faf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

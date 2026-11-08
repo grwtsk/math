@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/Audit.lean/index.md) · [Full source](../../../../MeasureAndIntegration/Audit.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Audit.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Audit.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.IntervalReflection`](../../../../MeasureAndIntegration/IntervalReflection.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Analysis.IntervalReflection`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntervalReflection.lean/index.md) — import line 1; pinned internal source present.
 - `Lean` — import line 2; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [endpoint_consumer](../../../../MeasureAndIntegration/Audit.lean/declarations/endpoint-consumer.md) | 5 | `result-track:616bdf4333efd3573c8b12dde05641663182ec53281c2e2460c4b75a64e8bcf1` |
-| 2 | `theorem` | [signed_square_consumer](../../../../MeasureAndIntegration/Audit.lean/declarations/signed-square-consumer.md) | 6 | `result-track:1bcb970a74b5e392f5a9edb3945d2df95fa2e2c5f995441772c77ccf243ebf80` |
-| 3 | `elab` | [(anonymous)](../../../../MeasureAndIntegration/Audit.lean/declarations/elab.md) | 12 | `declaration-track:9105c39ecee253766a34a6b9ae0527582092606c93e50f2a05052266600448a4` |
+| 1 | `theorem` | [endpoint_consumer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Audit.lean/declarations/endpoint-consumer.md) | 5 | `result-track:616bdf4333efd3573c8b12dde05641663182ec53281c2e2460c4b75a64e8bcf1` |
+| 2 | `theorem` | [signed_square_consumer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Audit.lean/declarations/signed-square-consumer.md) | 6 | `result-track:1bcb970a74b5e392f5a9edb3945d2df95fa2e2c5f995441772c77ccf243ebf80` |
+| 3 | `elab` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Audit.lean/declarations/elab.md) | 12 | `declaration-track:9105c39ecee253766a34a6b9ae0527582092606c93e50f2a05052266600448a4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

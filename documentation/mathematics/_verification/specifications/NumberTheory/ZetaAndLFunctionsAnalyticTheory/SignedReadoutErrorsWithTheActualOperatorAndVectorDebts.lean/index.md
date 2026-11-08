@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedReadoutErrorsWithTheActualOperatorAndVectorDebts.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedReadoutErrorsWithTheActualOperatorAndVectorDebts.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedReadoutErrorsWithTheActualOperatorAndVectorDebts.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedReadoutErrorsWithTheActualOperatorAndVectorDebts.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [readout](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedReadoutErrorsWithTheActualOperatorAndVectorDebts.lean/declarations/readout.md) | 22 | `declaration-track:812102fa26735aeca3bdc02cb5bf4e575a99a3ed78d5179ff44a9f88d453034b` |
-| 2 | `theorem` | [state_difference](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedReadoutErrorsWithTheActualOperatorAndVectorDebts.lean/declarations/state-difference.md) | 26 | `result-track:a92af713625cfc2f51dafe83364e269b7deebecdcb442ac5b419c98e8c3b2d4a` |
-| 3 | `theorem` | [state_readout_bound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedReadoutErrorsWithTheActualOperatorAndVectorDebts.lean/declarations/state-readout-bound.md) | 32 | `result-track:3e20d741055e1ee53e3dcd5e55a4334200312d34b05bae7a75d2ca2310395561` |
-| 4 | `theorem` | [operator_and_state_bound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedReadoutErrorsWithTheActualOperatorAndVectorDebts.lean/declarations/operator-and-state-bound.md) | 47 | `result-track:eed28c35de2962f6110d66305d4ec9806eab28dd59ef212f7305b0603663e420` |
-| 5 | `theorem` | [source_approximation_bound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedReadoutErrorsWithTheActualOperatorAndVectorDebts.lean/declarations/source-approximation-bound.md) | 60 | `result-track:44e9a3a3d5dc59774a2b41ba9b49c05fea65447610014ef075a03303113f9f0e` |
+| 1 | `def` | [readout](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedReadoutErrorsWithTheActualOperatorAndVectorDebts.lean/declarations/readout.md) | 22 | `declaration-track:812102fa26735aeca3bdc02cb5bf4e575a99a3ed78d5179ff44a9f88d453034b` |
+| 2 | `theorem` | [state_difference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedReadoutErrorsWithTheActualOperatorAndVectorDebts.lean/declarations/state-difference.md) | 26 | `result-track:a92af713625cfc2f51dafe83364e269b7deebecdcb442ac5b419c98e8c3b2d4a` |
+| 3 | `theorem` | [state_readout_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedReadoutErrorsWithTheActualOperatorAndVectorDebts.lean/declarations/state-readout-bound.md) | 32 | `result-track:3e20d741055e1ee53e3dcd5e55a4334200312d34b05bae7a75d2ca2310395561` |
+| 4 | `theorem` | [operator_and_state_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedReadoutErrorsWithTheActualOperatorAndVectorDebts.lean/declarations/operator-and-state-bound.md) | 47 | `result-track:eed28c35de2962f6110d66305d4ec9806eab28dd59ef212f7305b0603663e420` |
+| 5 | `theorem` | [source_approximation_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedReadoutErrorsWithTheActualOperatorAndVectorDebts.lean/declarations/source-approximation-bound.md) | 60 | `result-track:44e9a3a3d5dc59774a2b41ba9b49c05fea65447610014ef075a03303113f9f0e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

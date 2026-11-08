@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/BoundedContinuousNamespacedPublic.lean/index.md) · [Full source](../../../../FunctionalAnalysis/BoundedContinuousNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BoundedContinuousNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BoundedContinuousNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [restrict_toContinuousMap_eq_toContinuousMapStar_restrict](../../../../FunctionalAnalysis/BoundedContinuousNamespacedPublic.lean/declarations/restrict-tocontinuousmap-eq-tocontinuousmapstar-restrict.md) | 36 | `result-track:77cb3bb8f83d8bce6c2f0d1b2646f1faf5d26e209889c65858d07730d5b53d2e` |
+| 1 | `theorem` | [restrict_toContinuousMap_eq_toContinuousMapStar_restrict](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BoundedContinuousNamespacedPublic.lean/declarations/restrict-tocontinuousmap-eq-tocontinuousmapstar-restrict.md) | 36 | `result-track:77cb3bb8f83d8bce6c2f0d1b2646f1faf5d26e209889c65858d07730d5b53d2e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

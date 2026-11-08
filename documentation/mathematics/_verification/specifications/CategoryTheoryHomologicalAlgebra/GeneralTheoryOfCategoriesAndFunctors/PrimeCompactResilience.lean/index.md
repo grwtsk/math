@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PrimeCompactResilience.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PrimeCompactResilience.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PrimeCompactResilience.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PrimeCompactResilience.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [admitted_prime_adjunction_preserves_old_source_tree](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PrimeCompactResilience.lean/declarations/admitted-prime-adjunction-preserves-old-source-tree.md) | 7 | `result-track:44eeaf43197874de8dd2e64f6cc9f5901b2f88a05fdff899cc98f5ee4e04d50f` |
-| 2 | `theorem` | [admitted_prime_compact_pass_has_pnt_zero](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PrimeCompactResilience.lean/declarations/admitted-prime-compact-pass-has-pnt-zero.md) | 13 | `result-track:56fdc849046aeac2f321d52336e1e0a89e14a59d1c21b0f1ab03c62859106c66` |
-| 3 | `theorem` | [memory_prime_resilience_gives_stable_extension](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PrimeCompactResilience.lean/declarations/memory-prime-resilience-gives-stable-extension.md) | 19 | `result-track:94d410f0e2268f01a7d950970a00ee5bf57d2daed7618ec221e9846295438856` |
+| 1 | `theorem` | [admitted_prime_adjunction_preserves_old_source_tree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PrimeCompactResilience.lean/declarations/admitted-prime-adjunction-preserves-old-source-tree.md) | 7 | `result-track:44eeaf43197874de8dd2e64f6cc9f5901b2f88a05fdff899cc98f5ee4e04d50f` |
+| 2 | `theorem` | [admitted_prime_compact_pass_has_pnt_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PrimeCompactResilience.lean/declarations/admitted-prime-compact-pass-has-pnt-zero.md) | 13 | `result-track:56fdc849046aeac2f321d52336e1e0a89e14a59d1c21b0f1ab03c62859106c66` |
+| 3 | `theorem` | [memory_prime_resilience_gives_stable_extension](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PrimeCompactResilience.lean/declarations/memory-prime-resilience-gives-stable-extension.md) | 19 | `result-track:94d410f0e2268f01a7d950970a00ee5bf57d2daed7618ec221e9846295438856` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

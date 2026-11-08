@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ModularDecompositionNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ModularDecompositionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ModularDecompositionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ModularDecompositionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ModularDecompositionCertificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ModularDecompositionNamespaced.lean/declarations/modulardecompositioncertificate.md) | 13 | `declaration-track:1399c9cd4af150c8b0df434b79ecaac6bccc5688625b1333b2f8056db9280683` |
-| 2 | `theorem` | [heatFlow_decomposition_sound](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ModularDecompositionNamespaced.lean/declarations/heatflow-decomposition-sound.md) | 18 | `result-track:942890f1cd1cd57e401c6caba4614ecb4dc45faac47d61b73c617c2866303106` |
+| 1 | `structure` | [ModularDecompositionCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ModularDecompositionNamespaced.lean/declarations/modulardecompositioncertificate.md) | 13 | `declaration-track:1399c9cd4af150c8b0df434b79ecaac6bccc5688625b1333b2f8056db9280683` |
+| 2 | `theorem` | [heatFlow_decomposition_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ModularDecompositionNamespaced.lean/declarations/heatflow-decomposition-sound.md) | 18 | `result-track:942890f1cd1cd57e401c6caba4614ecb4dc45faac47d61b73c617c2866303106` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

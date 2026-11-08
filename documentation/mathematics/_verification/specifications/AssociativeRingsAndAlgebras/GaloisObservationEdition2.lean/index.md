@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/GaloisObservationEdition2.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/GaloisObservationEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/GaloisObservationEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/GaloisObservationEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,15 +61,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [reduction](../../../../AssociativeRingsAndAlgebras/GaloisObservationEdition2.lean/declarations/reduction.md) | 23 | `declaration-track:0f310bd5b750909561be416af1f80a7fa8fcc55d80af83359530ae3ab5e8ad16` |
-| 2 | `structure` | [GoodPrimeFactorization](../../../../AssociativeRingsAndAlgebras/GaloisObservationEdition2.lean/declarations/goodprimefactorization.md) | 28 | `declaration-track:973de3814cb0222d6ded6ebe59a1f9863f9e12820d89d236ee042d54ce2c638f` |
-| 3 | `def` | [factorDegrees](../../../../AssociativeRingsAndAlgebras/GaloisObservationEdition2.lean/declarations/factordegrees.md) | 46 | `declaration-track:095eb52f1f644c74b348a8bc41616ba62d7b7d6dc13d2ced1748393ab39886c1` |
-| 4 | `def` | [fullCycleType](../../../../AssociativeRingsAndAlgebras/GaloisObservationEdition2.lean/declarations/fullcycletype.md) | 51 | `declaration-track:eacfef6338d8028ce31711c5fc3ac12ad67c4efad5f9b2fee46456a03e31a11b` |
-| 5 | `theorem` | [full_cycle_type_identity](../../../../AssociativeRingsAndAlgebras/GaloisObservationEdition2.lean/declarations/full-cycle-type-identity.md) | 56 | `result-track:ccedd603e674dbc7b41196659e319a5d16764e088aaecdcdd2d9cc3d68d667b0` |
-| 6 | `theorem` | [full_cycle_type_sum](../../../../AssociativeRingsAndAlgebras/GaloisObservationEdition2.lean/declarations/full-cycle-type-sum.md) | 61 | `result-track:e9829661d026b88eb5e87c67fc39a83e8adfa824b5b7b51d3d7494a8b4bc36eb` |
-| 7 | `structure` | [FactorCycleWitness](../../../../AssociativeRingsAndAlgebras/GaloisObservationEdition2.lean/declarations/factorcyclewitness.md) | 69 | `declaration-track:8e09bc5ed24e7177b411d5eaf55d533fe5ea6e0d7aaf03be09fccbdb2e52bd0b` |
-| 8 | `theorem` | [factor_degrees_identify_cycles](../../../../AssociativeRingsAndAlgebras/GaloisObservationEdition2.lean/declarations/factor-degrees-identify-cycles.md) | 91 | `result-track:635d256de5582d67c5c5843c24ecf9a6c09bd3c3e6a813145bb93f650c826ea4` |
-| 9 | `theorem` | [cycle_observation_does_not_determine_group](../../../../AssociativeRingsAndAlgebras/GaloisObservationEdition2.lean/declarations/cycle-observation-does-not-determine-group.md) | 99 | `result-track:50bd08890f19d67716a5848f96fb7ddbcc8b574194738117a0334df400c08818` |
+| 1 | `def` | [reduction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/GaloisObservationEdition2.lean/declarations/reduction.md) | 23 | `declaration-track:0f310bd5b750909561be416af1f80a7fa8fcc55d80af83359530ae3ab5e8ad16` |
+| 2 | `structure` | [GoodPrimeFactorization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/GaloisObservationEdition2.lean/declarations/goodprimefactorization.md) | 28 | `declaration-track:973de3814cb0222d6ded6ebe59a1f9863f9e12820d89d236ee042d54ce2c638f` |
+| 3 | `def` | [factorDegrees](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/GaloisObservationEdition2.lean/declarations/factordegrees.md) | 46 | `declaration-track:095eb52f1f644c74b348a8bc41616ba62d7b7d6dc13d2ced1748393ab39886c1` |
+| 4 | `def` | [fullCycleType](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/GaloisObservationEdition2.lean/declarations/fullcycletype.md) | 51 | `declaration-track:eacfef6338d8028ce31711c5fc3ac12ad67c4efad5f9b2fee46456a03e31a11b` |
+| 5 | `theorem` | [full_cycle_type_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/GaloisObservationEdition2.lean/declarations/full-cycle-type-identity.md) | 56 | `result-track:ccedd603e674dbc7b41196659e319a5d16764e088aaecdcdd2d9cc3d68d667b0` |
+| 6 | `theorem` | [full_cycle_type_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/GaloisObservationEdition2.lean/declarations/full-cycle-type-sum.md) | 61 | `result-track:e9829661d026b88eb5e87c67fc39a83e8adfa824b5b7b51d3d7494a8b4bc36eb` |
+| 7 | `structure` | [FactorCycleWitness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/GaloisObservationEdition2.lean/declarations/factorcyclewitness.md) | 69 | `declaration-track:8e09bc5ed24e7177b411d5eaf55d533fe5ea6e0d7aaf03be09fccbdb2e52bd0b` |
+| 8 | `theorem` | [factor_degrees_identify_cycles](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/GaloisObservationEdition2.lean/declarations/factor-degrees-identify-cycles.md) | 91 | `result-track:635d256de5582d67c5c5843c24ecf9a6c09bd3c3e6a813145bb93f650c826ea4` |
+| 9 | `theorem` | [cycle_observation_does_not_determine_group](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/GaloisObservationEdition2.lean/declarations/cycle-observation-does-not-determine-group.md) | 99 | `result-track:50bd08890f19d67716a5848f96fb7ddbcc8b574194738117a0334df400c08818` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

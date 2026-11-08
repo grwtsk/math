@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/AFixedNonzeroExponentialModeSurvivesEveryFixedPrimitiveOrderEdition2.lean/index.md) · [Full source](../../../../RealFunctions/AFixedNonzeroExponentialModeSurvivesEveryFixedPrimitiveOrderEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AFixedNonzeroExponentialModeSurvivesEveryFixedPrimitiveOrderEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AFixedNonzeroExponentialModeSurvivesEveryFixedPrimitiveOrderEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [primitive](../../../../RealFunctions/AFixedNonzeroExponentialModeSurvivesEveryFixedPrimitiveOrderEdition2.lean/declarations/primitive.md) | 23 | `declaration-track:c2e05947d9cf45d19c8941b2950787b18d3db11029d91fd1a9699d52e183e2cf` |
-| 2 | `theorem` | [order_zero](../../../../RealFunctions/AFixedNonzeroExponentialModeSurvivesEveryFixedPrimitiveOrderEdition2.lean/declarations/order-zero.md) | 25 | `result-track:5e07aeb0b89abed6f8097376d6e431a63f753ada8366a18a1fbeda4f8dcfa52e` |
-| 3 | `theorem` | [primitive_derivative](../../../../RealFunctions/AFixedNonzeroExponentialModeSurvivesEveryFixedPrimitiveOrderEdition2.lean/declarations/primitive-derivative.md) | 28 | `result-track:b3fab08fdffdeb7eb02086cd067261337c6e4121563f068ae5476487bbe451d3` |
-| 4 | `theorem` | [exact_real_time_norm](../../../../RealFunctions/AFixedNonzeroExponentialModeSurvivesEveryFixedPrimitiveOrderEdition2.lean/declarations/exact-real-time-norm.md) | 37 | `result-track:54df62635b545c94fe6dba82f41fc067db42a9ab774163c19b98fe8dd3c812f0` |
-| 5 | `theorem` | [unchanged_exponential_rate](../../../../RealFunctions/AFixedNonzeroExponentialModeSurvivesEveryFixedPrimitiveOrderEdition2.lean/declarations/unchanged-exponential-rate.md) | 41 | `result-track:d17dfac349c83fea02c3de1e3a55b9647bd0dde781d20fe8b32f2c0754ebda7d` |
-| 6 | `theorem` | [faster_exponential_comparison](../../../../RealFunctions/AFixedNonzeroExponentialModeSurvivesEveryFixedPrimitiveOrderEdition2.lean/declarations/faster-exponential-comparison.md) | 45 | `result-track:7fdca1f4fe0135d2efe3bff206894c0b027d7015a75727de2a530afb1e36fced` |
-| 7 | `theorem` | [no_eventual_smaller_rate_cap](../../../../RealFunctions/AFixedNonzeroExponentialModeSurvivesEveryFixedPrimitiveOrderEdition2.lean/declarations/no-eventual-smaller-rate-cap.md) | 59 | `result-track:0c4c0c9b90f52659ac0928f3d5c07df6d02872bf491abe78e8d4dfe40729e47e` |
+| 1 | `def` | [primitive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AFixedNonzeroExponentialModeSurvivesEveryFixedPrimitiveOrderEdition2.lean/declarations/primitive.md) | 23 | `declaration-track:c2e05947d9cf45d19c8941b2950787b18d3db11029d91fd1a9699d52e183e2cf` |
+| 2 | `theorem` | [order_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AFixedNonzeroExponentialModeSurvivesEveryFixedPrimitiveOrderEdition2.lean/declarations/order-zero.md) | 25 | `result-track:5e07aeb0b89abed6f8097376d6e431a63f753ada8366a18a1fbeda4f8dcfa52e` |
+| 3 | `theorem` | [primitive_derivative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AFixedNonzeroExponentialModeSurvivesEveryFixedPrimitiveOrderEdition2.lean/declarations/primitive-derivative.md) | 28 | `result-track:b3fab08fdffdeb7eb02086cd067261337c6e4121563f068ae5476487bbe451d3` |
+| 4 | `theorem` | [exact_real_time_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AFixedNonzeroExponentialModeSurvivesEveryFixedPrimitiveOrderEdition2.lean/declarations/exact-real-time-norm.md) | 37 | `result-track:54df62635b545c94fe6dba82f41fc067db42a9ab774163c19b98fe8dd3c812f0` |
+| 5 | `theorem` | [unchanged_exponential_rate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AFixedNonzeroExponentialModeSurvivesEveryFixedPrimitiveOrderEdition2.lean/declarations/unchanged-exponential-rate.md) | 41 | `result-track:d17dfac349c83fea02c3de1e3a55b9647bd0dde781d20fe8b32f2c0754ebda7d` |
+| 6 | `theorem` | [faster_exponential_comparison](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AFixedNonzeroExponentialModeSurvivesEveryFixedPrimitiveOrderEdition2.lean/declarations/faster-exponential-comparison.md) | 45 | `result-track:7fdca1f4fe0135d2efe3bff206894c0b027d7015a75727de2a530afb1e36fced` |
+| 7 | `theorem` | [no_eventual_smaller_rate_cap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AFixedNonzeroExponentialModeSurvivesEveryFixedPrimitiveOrderEdition2.lean/declarations/no-eventual-smaller-rate-cap.md) | 59 | `result-track:0c4c0c9b90f52659ac0928f3d5c07df6d02872bf491abe78e8d4dfe40729e47e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

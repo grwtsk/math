@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/CStarAlgebraContinuousMap.lean/index.md) · [Full source](../../../../FunctionalAnalysis/CStarAlgebraContinuousMap.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CStarAlgebraContinuousMap.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CStarAlgebraContinuousMap.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,16 +59,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../FunctionalAnalysis/CStarAlgebraContinuousMap.lean/declarations/instance-source-edition-8.md) | 24 | `declaration-track:9683168b0f0bac05512724eaa86ee3f7da441f27b3be20070a33b6f6bb57bc88` |
-| 2 | `instance` | [(anonymous)](../../../../FunctionalAnalysis/CStarAlgebraContinuousMap.lean/declarations/instance-source-edition-4.md) | 27 | `declaration-track:3fafbe3043a1bab0363cf6856c10072c27c74595dee01964e7050f00768d927b` |
-| 3 | `instance` | [(anonymous)](../../../../FunctionalAnalysis/CStarAlgebraContinuousMap.lean/declarations/instance-source-edition-10.md) | 31 | `declaration-track:f849796aa9910569a0132d1e5bcd653852eaf8c26ce60a9ba754df47dc2008b7` |
-| 4 | `instance` | [(anonymous)](../../../../FunctionalAnalysis/CStarAlgebraContinuousMap.lean/declarations/instance-source-edition-5.md) | 34 | `declaration-track:50d67d1ecf7ae58a476919bf596a81462ccbf18100a88423f9bf1dc184c7554f` |
-| 5 | `instance` | [(anonymous)](../../../../FunctionalAnalysis/CStarAlgebraContinuousMap.lean/declarations/instance-source-edition-6.md) | 44 | `declaration-track:61dc0a60cdd958c7b0beb447cfff28e79ed877dd0e69ee3d1a5f770c99d2df83` |
-| 6 | `instance` | [(anonymous)](../../../../FunctionalAnalysis/CStarAlgebraContinuousMap.lean/declarations/instance-source-edition-3.md) | 47 | `declaration-track:31346f49aa22c697fba607314edc46852e8ab5c2880f4bb52653133f5293ba45` |
-| 7 | `instance` | [(anonymous)](../../../../FunctionalAnalysis/CStarAlgebraContinuousMap.lean/declarations/instance-source-edition-2.md) | 51 | `declaration-track:12311ba2fb3d1451a0fc39bb358bb1dfdaf3d0a72432be86874a02b8b500f318` |
-| 8 | `instance` | [(anonymous)](../../../../FunctionalAnalysis/CStarAlgebraContinuousMap.lean/declarations/instance-source-edition-9.md) | 54 | `declaration-track:b2d11266527a2a4d576e4fb0389533a1b156582cf8f8e10c6d79dff00d234ebc` |
-| 9 | `instance` | [(anonymous)](../../../../FunctionalAnalysis/CStarAlgebraContinuousMap.lean/declarations/instance-source-edition-7.md) | 64 | `declaration-track:8d0c35ca8caea5550b3821c7c6ed1b07996afaf4c8c4d425fd1476d5fb1cc933` |
-| 10 | `instance` | [(anonymous)](../../../../FunctionalAnalysis/CStarAlgebraContinuousMap.lean/declarations/instance.md) | 67 | `declaration-track:0c58fa61ce1ae3172bf41efbe8bc9aee1944b68f2cdf1d8ad72e03e978eab5a2` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CStarAlgebraContinuousMap.lean/declarations/instance-source-edition-8.md) | 24 | `declaration-track:9683168b0f0bac05512724eaa86ee3f7da441f27b3be20070a33b6f6bb57bc88` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CStarAlgebraContinuousMap.lean/declarations/instance-source-edition-4.md) | 27 | `declaration-track:3fafbe3043a1bab0363cf6856c10072c27c74595dee01964e7050f00768d927b` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CStarAlgebraContinuousMap.lean/declarations/instance-source-edition-10.md) | 31 | `declaration-track:f849796aa9910569a0132d1e5bcd653852eaf8c26ce60a9ba754df47dc2008b7` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CStarAlgebraContinuousMap.lean/declarations/instance-source-edition-5.md) | 34 | `declaration-track:50d67d1ecf7ae58a476919bf596a81462ccbf18100a88423f9bf1dc184c7554f` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CStarAlgebraContinuousMap.lean/declarations/instance-source-edition-6.md) | 44 | `declaration-track:61dc0a60cdd958c7b0beb447cfff28e79ed877dd0e69ee3d1a5f770c99d2df83` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CStarAlgebraContinuousMap.lean/declarations/instance-source-edition-3.md) | 47 | `declaration-track:31346f49aa22c697fba607314edc46852e8ab5c2880f4bb52653133f5293ba45` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CStarAlgebraContinuousMap.lean/declarations/instance-source-edition-2.md) | 51 | `declaration-track:12311ba2fb3d1451a0fc39bb358bb1dfdaf3d0a72432be86874a02b8b500f318` |
+| 8 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CStarAlgebraContinuousMap.lean/declarations/instance-source-edition-9.md) | 54 | `declaration-track:b2d11266527a2a4d576e4fb0389533a1b156582cf8f8e10c6d79dff00d234ebc` |
+| 9 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CStarAlgebraContinuousMap.lean/declarations/instance-source-edition-7.md) | 64 | `declaration-track:8d0c35ca8caea5550b3821c7c6ed1b07996afaf4c8c4d425fd1476d5fb1cc933` |
+| 10 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CStarAlgebraContinuousMap.lean/declarations/instance.md) | 67 | `declaration-track:0c58fa61ce1ae3172bf41efbe8bc9aee1944b68f2cdf1d8ad72e03e978eab5a2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

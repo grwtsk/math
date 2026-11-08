@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/AB4de7738e9e1.lean/index.md) · [Full source](../../../../FunctionalAnalysis/AB4de7738e9e1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AB4de7738e9e1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AB4de7738e9e1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,7 +60,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [kroneckerCompletionEquivL2](../../../../FunctionalAnalysis/AB4de7738e9e1.lean/declarations/kroneckercompletionequivl2.md) | 27 | `declaration-track:a350eede7d773a0a57a5ec3d561e024f34cecd731105849bd304cb99b844da62` |
+| 1 | `def` | [kroneckerCompletionEquivL2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AB4de7738e9e1.lean/declarations/kroneckercompletionequivl2.md) | 27 | `declaration-track:a350eede7d773a0a57a5ec3d561e024f34cecd731105849bd304cb99b844da62` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

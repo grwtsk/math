@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/ActualEarlyLowerBoundNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/ActualEarlyLowerBoundNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualEarlyLowerBoundNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualEarlyLowerBoundNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actualCriticalWeight_upper_curvature](../../../../RealFunctions/ActualEarlyLowerBoundNamespaced.lean/declarations/actualcriticalweight-upper-curvature.md) | 33 | `result-track:01cdcaf093a5b917c48e0d681308605a000d2fbc075305b00da3483025d5a693` |
-| 2 | `theorem` | [exp_neg_half_log_eq_inv_sqrt](../../../../RealFunctions/ActualEarlyLowerBoundNamespaced.lean/declarations/exp-neg-half-log-eq-inv-sqrt.md) | 46 | `result-track:950550082acf51c6a95049463536774d16496cc5fe865d7a2acedd8c7a9ed496` |
-| 3 | `theorem` | [actualEarlyDerivative_lower_curvature](../../../../RealFunctions/ActualEarlyLowerBoundNamespaced.lean/declarations/actualearlyderivative-lower-curvature.md) | 53 | `result-track:0e82a850292a8dbd3e268a9d6b0fff924b8fd782706c7f8925e382c8f4646c12` |
-| 4 | `def` | [earlyLowerPrimitive](../../../../RealFunctions/ActualEarlyLowerBoundNamespaced.lean/declarations/earlylowerprimitive.md) | 87 | `declaration-track:57794fb2aa63a77911f4cb24cea9e06e932eee1cad1be208ae9b7a36d746f83e` |
-| 5 | `theorem` | [earlyLowerPrimitive_hasDerivAt](../../../../RealFunctions/ActualEarlyLowerBoundNamespaced.lean/declarations/earlylowerprimitive-hasderivat.md) | 91 | `result-track:73116852089efcad3603eb9943f31fd5c42baf42dc542a44d6ef33cf6c969ac5` |
-| 6 | `theorem` | [complementaryEarlyBaseline_lower_curvature_endpoint](../../../../RealFunctions/ActualEarlyLowerBoundNamespaced.lean/declarations/complementaryearlybaseline-lower-curvature-endpoint.md) | 112 | `result-track:5db1a1b429cb5be1901414f1133d00b7054eddae2c475c216e8906cbabd6af11` |
-| 7 | `theorem` | [complementaryEarlyBaseline_lower_neg_scale_sub_four](../../../../RealFunctions/ActualEarlyLowerBoundNamespaced.lean/declarations/complementaryearlybaseline-lower-neg-scale-sub-four.md) | 151 | `result-track:8513b05fa8dcf7d645833918f2aed0619237b3b9055d6c44e73cdd7c5eb05f0d` |
-| 8 | `theorem` | [complementaryEarlyBaseline_add_scale_abs_le_seven](../../../../RealFunctions/ActualEarlyLowerBoundNamespaced.lean/declarations/complementaryearlybaseline-add-scale-abs-le-seven.md) | 162 | `result-track:89fbdd9f6b0052d9ecc600ef41c2b973cabafbd9d5f42093c2e3194e9b51f923` |
+| 1 | `theorem` | [actualCriticalWeight_upper_curvature](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualEarlyLowerBoundNamespaced.lean/declarations/actualcriticalweight-upper-curvature.md) | 33 | `result-track:01cdcaf093a5b917c48e0d681308605a000d2fbc075305b00da3483025d5a693` |
+| 2 | `theorem` | [exp_neg_half_log_eq_inv_sqrt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualEarlyLowerBoundNamespaced.lean/declarations/exp-neg-half-log-eq-inv-sqrt.md) | 46 | `result-track:950550082acf51c6a95049463536774d16496cc5fe865d7a2acedd8c7a9ed496` |
+| 3 | `theorem` | [actualEarlyDerivative_lower_curvature](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualEarlyLowerBoundNamespaced.lean/declarations/actualearlyderivative-lower-curvature.md) | 53 | `result-track:0e82a850292a8dbd3e268a9d6b0fff924b8fd782706c7f8925e382c8f4646c12` |
+| 4 | `def` | [earlyLowerPrimitive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualEarlyLowerBoundNamespaced.lean/declarations/earlylowerprimitive.md) | 87 | `declaration-track:57794fb2aa63a77911f4cb24cea9e06e932eee1cad1be208ae9b7a36d746f83e` |
+| 5 | `theorem` | [earlyLowerPrimitive_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualEarlyLowerBoundNamespaced.lean/declarations/earlylowerprimitive-hasderivat.md) | 91 | `result-track:73116852089efcad3603eb9943f31fd5c42baf42dc542a44d6ef33cf6c969ac5` |
+| 6 | `theorem` | [complementaryEarlyBaseline_lower_curvature_endpoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualEarlyLowerBoundNamespaced.lean/declarations/complementaryearlybaseline-lower-curvature-endpoint.md) | 112 | `result-track:5db1a1b429cb5be1901414f1133d00b7054eddae2c475c216e8906cbabd6af11` |
+| 7 | `theorem` | [complementaryEarlyBaseline_lower_neg_scale_sub_four](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualEarlyLowerBoundNamespaced.lean/declarations/complementaryearlybaseline-lower-neg-scale-sub-four.md) | 151 | `result-track:8513b05fa8dcf7d645833918f2aed0619237b3b9055d6c44e73cdd7c5eb05f0d` |
+| 8 | `theorem` | [complementaryEarlyBaseline_add_scale_abs_le_seven](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ActualEarlyLowerBoundNamespaced.lean/declarations/complementaryearlybaseline-add-scale-abs-le-seven.md) | 162 | `result-track:89fbdd9f6b0052d9ecc600ef41c2b973cabafbd9d5f42093c2e3194e9b51f923` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

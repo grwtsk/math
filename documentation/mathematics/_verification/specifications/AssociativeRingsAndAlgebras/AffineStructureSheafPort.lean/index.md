@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/AffineStructureSheafPort.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/AffineStructureSheafPort.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AffineStructureSheafPort.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AffineStructureSheafPort.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.AlgebraicGeometry.AffineSpecPort`](../../../../Geometry/AffineSpecPort.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.Topology.Algebra.PortFiberRing`](../../../../GeneralTopology/PortFiberRing.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.AlgebraicGeometry.AffineSpecPort`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/AffineSpecPort.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Topology.Algebra.PortFiberRing`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PortFiberRing.lean/index.md) — import line 2; pinned internal source present.
 - `Mathlib.AlgebraicGeometry.AffineScheme` — import line 3; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -59,20 +59,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [globalSectionsSystem](../../../../AssociativeRingsAndAlgebras/AffineStructureSheafPort.lean/declarations/globalsectionssystem.md) | 18 | `declaration-track:27863b491cae0ac0eba26847f693c55d864d889092ebe150aabd297a140e846e` |
-| 2 | `def` | [ringCertificate](../../../../AssociativeRingsAndAlgebras/AffineStructureSheafPort.lean/declarations/ringcertificate.md) | 37 | `declaration-track:1b5bb2d0a5d7d997841fb24e407efa99ce4c39d2397984e3313054ba91b50dfd` |
-| 3 | `def` | [ringProperty](../../../../AssociativeRingsAndAlgebras/AffineStructureSheafPort.lean/declarations/ringproperty.md) | 44 | `declaration-track:ccf7c29303f2e2e6152227d8ade831b81ebbef29a199c287f3ae893bbacdabde` |
-| 4 | `def` | [sectionMap](../../../../AssociativeRingsAndAlgebras/AffineStructureSheafPort.lean/declarations/sectionmap.md) | 50 | `declaration-track:e41af92cf025b857a3b56f97f324da4dcf98b08e4a1323d422e8329b76053906` |
-| 5 | `theorem` | [sectionMap_eq_structureSheafComap](../../../../AssociativeRingsAndAlgebras/AffineStructureSheafPort.lean/declarations/sectionmap-eq-structuresheafcomap.md) | 55 | `result-track:c128c7bbf0ad5ef3b61432cfd62192f3e6521342b95df3cae5debb2803225619` |
-| 6 | `def` | [stalkMap](../../../../AssociativeRingsAndAlgebras/AffineStructureSheafPort.lean/declarations/stalkmap.md) | 64 | `declaration-track:711c7e4babc47146e6034c40b28432f58329b2b0203c9feeb28531ba801ed808` |
-| 7 | `theorem` | [stalkMap_isLocal](../../../../AssociativeRingsAndAlgebras/AffineStructureSheafPort.lean/declarations/stalkmap-islocal.md) | 69 | `result-track:9a6d5fe54b01236df330a9a5aea19d4e90323d69df9633bb3839a98bed386ab1` |
-| 8 | `def` | [globalSectionsArrowIso](../../../../AssociativeRingsAndAlgebras/AffineStructureSheafPort.lean/declarations/globalsectionsarrowiso.md) | 77 | `declaration-track:29fe5595fb0e863811582070c4ec4a47a155d46a04acd795b887656888e1a8e7` |
-| 9 | `theorem` | [globalSections_recover_original](../../../../AssociativeRingsAndAlgebras/AffineStructureSheafPort.lean/declarations/globalsections-recover-original.md) | 82 | `result-track:31d56ff7e68f33173604958d8d6a68adffd39795a55d4919aafeb341eca2c125` |
-| 10 | `def` | [integerToRational](../../../../AssociativeRingsAndAlgebras/AffineStructureSheafPort.lean/declarations/integertorational.md) | 92 | `declaration-track:aa9a3f8fb9e75ccd5fe55f81a1353b3233b0d2accd143b6e4ced06699db58654` |
-| 11 | `def` | [rationalToComplex](../../../../AssociativeRingsAndAlgebras/AffineStructureSheafPort.lean/declarations/rationaltocomplex.md) | 96 | `declaration-track:26da1c3d94da37c6a2561d0e7477082920d967bb82ab65a50f7d9e3eca159308` |
-| 12 | `def` | [arithmeticTowerPath](../../../../AssociativeRingsAndAlgebras/AffineStructureSheafPort.lean/declarations/arithmetictowerpath.md) | 100 | `declaration-track:ef3948cc801f65261c7a3698e0c3712dff11b967183b322f03fde5480ef767c3` |
-| 13 | `theorem` | [arithmeticTower_ring](../../../../AssociativeRingsAndAlgebras/AffineStructureSheafPort.lean/declarations/arithmetictower-ring.md) | 108 | `result-track:403109dadb13714fa0da67a834493a77addc5481cd1c470e5ceb6eed11803b80` |
-| 14 | `theorem` | [arithmeticTower_recovers_original](../../../../AssociativeRingsAndAlgebras/AffineStructureSheafPort.lean/declarations/arithmetictower-recovers-original.md) | 114 | `result-track:4a939e59f43f4ee5e9a67cd607af8f350c07113454382f919517c53e08fbca18` |
+| 1 | `def` | [globalSectionsSystem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AffineStructureSheafPort.lean/declarations/globalsectionssystem.md) | 18 | `declaration-track:27863b491cae0ac0eba26847f693c55d864d889092ebe150aabd297a140e846e` |
+| 2 | `def` | [ringCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AffineStructureSheafPort.lean/declarations/ringcertificate.md) | 37 | `declaration-track:1b5bb2d0a5d7d997841fb24e407efa99ce4c39d2397984e3313054ba91b50dfd` |
+| 3 | `def` | [ringProperty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AffineStructureSheafPort.lean/declarations/ringproperty.md) | 44 | `declaration-track:ccf7c29303f2e2e6152227d8ade831b81ebbef29a199c287f3ae893bbacdabde` |
+| 4 | `def` | [sectionMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AffineStructureSheafPort.lean/declarations/sectionmap.md) | 50 | `declaration-track:e41af92cf025b857a3b56f97f324da4dcf98b08e4a1323d422e8329b76053906` |
+| 5 | `theorem` | [sectionMap_eq_structureSheafComap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AffineStructureSheafPort.lean/declarations/sectionmap-eq-structuresheafcomap.md) | 55 | `result-track:c128c7bbf0ad5ef3b61432cfd62192f3e6521342b95df3cae5debb2803225619` |
+| 6 | `def` | [stalkMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AffineStructureSheafPort.lean/declarations/stalkmap.md) | 64 | `declaration-track:711c7e4babc47146e6034c40b28432f58329b2b0203c9feeb28531ba801ed808` |
+| 7 | `theorem` | [stalkMap_isLocal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AffineStructureSheafPort.lean/declarations/stalkmap-islocal.md) | 69 | `result-track:9a6d5fe54b01236df330a9a5aea19d4e90323d69df9633bb3839a98bed386ab1` |
+| 8 | `def` | [globalSectionsArrowIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AffineStructureSheafPort.lean/declarations/globalsectionsarrowiso.md) | 77 | `declaration-track:29fe5595fb0e863811582070c4ec4a47a155d46a04acd795b887656888e1a8e7` |
+| 9 | `theorem` | [globalSections_recover_original](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AffineStructureSheafPort.lean/declarations/globalsections-recover-original.md) | 82 | `result-track:31d56ff7e68f33173604958d8d6a68adffd39795a55d4919aafeb341eca2c125` |
+| 10 | `def` | [integerToRational](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AffineStructureSheafPort.lean/declarations/integertorational.md) | 92 | `declaration-track:aa9a3f8fb9e75ccd5fe55f81a1353b3233b0d2accd143b6e4ced06699db58654` |
+| 11 | `def` | [rationalToComplex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AffineStructureSheafPort.lean/declarations/rationaltocomplex.md) | 96 | `declaration-track:26da1c3d94da37c6a2561d0e7477082920d967bb82ab65a50f7d9e3eca159308` |
+| 12 | `def` | [arithmeticTowerPath](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AffineStructureSheafPort.lean/declarations/arithmetictowerpath.md) | 100 | `declaration-track:ef3948cc801f65261c7a3698e0c3712dff11b967183b322f03fde5480ef767c3` |
+| 13 | `theorem` | [arithmeticTower_ring](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AffineStructureSheafPort.lean/declarations/arithmetictower-ring.md) | 108 | `result-track:403109dadb13714fa0da67a834493a77addc5481cd1c470e5ceb6eed11803b80` |
+| 14 | `theorem` | [arithmeticTower_recovers_original](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AffineStructureSheafPort.lean/declarations/arithmetictower-recovers-original.md) | 114 | `result-track:4a939e59f43f4ee5e9a67cd607af8f350c07113454382f919517c53e08fbca18` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

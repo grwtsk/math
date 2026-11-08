@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ClaimAndScopeRecords.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ClaimAndScopeRecords.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ClaimAndScopeRecords.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ClaimAndScopeRecords.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [Claim](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ClaimAndScopeRecords.lean/declarations/claim.md) | 99 | `declaration-track:0a6e0d001f6525e011bbb6113202e4948bd70794e9cac33c63af68c7e10c2aaa` |
-| 2 | `structure` | [ScopedJudgment](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ClaimAndScopeRecords.lean/declarations/scopedjudgment.md) | 135 | `declaration-track:3cc2dd564d7f9281fbbf6b8da90efef10d40705fc7977b11db2e109d4b93fd02` |
+| 1 | `inductive` | [Claim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ClaimAndScopeRecords.lean/declarations/claim.md) | 99 | `declaration-track:0a6e0d001f6525e011bbb6113202e4948bd70794e9cac33c63af68c7e10c2aaa` |
+| 2 | `structure` | [ScopedJudgment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ClaimAndScopeRecords.lean/declarations/scopedjudgment.md) | 135 | `declaration-track:3cc2dd564d7f9281fbbf6b8da90efef10d40705fc7977b11db2e109d4b93fd02` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

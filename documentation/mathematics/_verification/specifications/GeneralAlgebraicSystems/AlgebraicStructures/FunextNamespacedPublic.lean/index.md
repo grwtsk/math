@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/FunextNamespacedPublic.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/FunextNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/FunextNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/FunextNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [funext_fin](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/FunextNamespacedPublic.lean/declarations/funext-fin.md) | 40 | `result-track:cadcefb00bc410682478abd24fa3e9acb60a485a29a658f6d1fab7f4050dd1c8` |
-| 2 | `theorem` | [funext_set](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/FunextNamespacedPublic.lean/declarations/funext-set.md) | 64 | `result-track:2f563fed09130df5098332d82e136cdf2c664dd904ad3c92b3b0c0a62ff102c1` |
-| 3 | `theorem` | [funext_set_iff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/FunextNamespacedPublic.lean/declarations/funext-set-iff.md) | 81 | `result-track:852ba5ccd5d14342b08627fcacededd13d272b97081f41506bfb03d916319595` |
-| 4 | `theorem` | [funext](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/FunextNamespacedPublic.lean/declarations/funext.md) | 90 | `result-track:e99c87ca01772b61d1d926e561d92e79620b5f1854e4bc3d6b4056a48e318caa` |
-| 5 | `theorem` | [funext_iff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/FunextNamespacedPublic.lean/declarations/funext-iff.md) | 95 | `result-track:16f2dbe13d40e2bef1293f8176b01017bbb3c18508aff4aa5f7298f6ac3f600b` |
+| 1 | `theorem` | [funext_fin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/FunextNamespacedPublic.lean/declarations/funext-fin.md) | 40 | `result-track:cadcefb00bc410682478abd24fa3e9acb60a485a29a658f6d1fab7f4050dd1c8` |
+| 2 | `theorem` | [funext_set](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/FunextNamespacedPublic.lean/declarations/funext-set.md) | 64 | `result-track:2f563fed09130df5098332d82e136cdf2c664dd904ad3c92b3b0c0a62ff102c1` |
+| 3 | `theorem` | [funext_set_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/FunextNamespacedPublic.lean/declarations/funext-set-iff.md) | 81 | `result-track:852ba5ccd5d14342b08627fcacededd13d272b97081f41506bfb03d916319595` |
+| 4 | `theorem` | [funext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/FunextNamespacedPublic.lean/declarations/funext.md) | 90 | `result-track:e99c87ca01772b61d1d926e561d92e79620b5f1854e4bc3d6b4056a48e318caa` |
+| 5 | `theorem` | [funext_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/FunextNamespacedPublic.lean/declarations/funext-iff.md) | 95 | `result-track:16f2dbe13d40e2bef1293f8176b01017bbb3c18508aff4aa5f7298f6ac3f600b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/PrefixTableReferenceTransport.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/PrefixTableReferenceTransport.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PrefixTableReferenceTransport.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PrefixTableReferenceTransport.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Combinatorics.DirectedGraph.PrefixTableSchedule`](../../../../../Combinatorics/GraphTheory/DirectedGraphPrefixTableSchedule.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.Combinatorics.DirectedGraph.PrefixTableSchedule`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/DirectedGraphPrefixTableSchedule.lean/index.md) — import line 6; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,18 +57,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actionSlot](../../../../../Combinatorics/GraphTheory/PrefixTableReferenceTransport.lean/declarations/actionslot.md) | 29 | `declaration-track:20a7abd23f09eff7de04c77bc21b9a81a72b014b683e4b8852df8fd7eb015338` |
-| 2 | `def` | [trackedStep](../../../../../Combinatorics/GraphTheory/PrefixTableReferenceTransport.lean/declarations/trackedstep.md) | 36 | `declaration-track:d661bdc93812a2e4cdf2ea241d63a5265374e1ddf4ea83423cf3a161b70f9e73` |
-| 3 | `def` | [transportSlotAt](../../../../../Combinatorics/GraphTheory/PrefixTableReferenceTransport.lean/declarations/transportslotat.md) | 41 | `declaration-track:f3c3ed3eb2c846b5ac631292ef33fcc1c87bdd02f19498091621d9880c5a4ef7` |
-| 4 | `theorem` | [tracked_state](../../../../../Combinatorics/GraphTheory/PrefixTableReferenceTransport.lean/declarations/tracked-state.md) | 46 | `result-track:de71de11656301813c2cd9f8e7a030d3c480385e3f7eef2a24261986f17725d3` |
-| 5 | `theorem` | [tracked_none](../../../../../Combinatorics/GraphTheory/PrefixTableReferenceTransport.lean/declarations/tracked-none.md) | 54 | `result-track:873a57361391f0b7ddff7a453e632343133e68536c134c5125201de2d86ad56a` |
-| 6 | `theorem` | [transportSlotAt_nil](../../../../../Combinatorics/GraphTheory/PrefixTableReferenceTransport.lean/declarations/transportslotat-nil.md) | 61 | `result-track:145feb8c6de75e190e990ce0969705d052f8830711dafde0c12f466c31f4e56f` |
-| 7 | `theorem` | [transportSlotAt_cons](../../../../../Combinatorics/GraphTheory/PrefixTableReferenceTransport.lean/declarations/transportslotat-cons.md) | 65 | `result-track:f9b8f00ce37e5b74a8235de2c5f79dc39199bee774c972d980e0f315b3ad20fd` |
-| 8 | `theorem` | [compact_reference](../../../../../Combinatorics/GraphTheory/PrefixTableReferenceTransport.lean/declarations/compact-reference.md) | 83 | `result-track:964d5eb04f363a399ea369510ba447eb81af1abb5e7250a53f5844aaa471474a` |
-| 9 | `theorem` | [action_reference](../../../../../Combinatorics/GraphTheory/PrefixTableReferenceTransport.lean/declarations/action-reference.md) | 116 | `result-track:b0f0461f1b37e521a6b3cdca0a8c03b151b386446b49bf449861c5a9219f9a1f` |
-| 10 | `theorem` | [transport_reference](../../../../../Combinatorics/GraphTheory/PrefixTableReferenceTransport.lean/declarations/transport-reference.md) | 134 | `result-track:dcb463ab0992209b70c7e0ee9f9fb6c81ad67e19b1e6d30a94f9dfdac25646ef` |
-| 11 | `def` | [transportReferences](../../../../../Combinatorics/GraphTheory/PrefixTableReferenceTransport.lean/declarations/transportreferences.md) | 153 | `declaration-track:6a7a68ac6395dc10c5fbd58189bb7a15675d1ad6e9701ae5f7da1518f354a296` |
-| 12 | `theorem` | [transportReferences_success](../../../../../Combinatorics/GraphTheory/PrefixTableReferenceTransport.lean/declarations/transportreferences-success.md) | 159 | `result-track:a1ad4fa332b60468da6d7abd590b2e652295bba4b64c69ba46c05b00f9b65fe9` |
+| 1 | `def` | [actionSlot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PrefixTableReferenceTransport.lean/declarations/actionslot.md) | 29 | `declaration-track:20a7abd23f09eff7de04c77bc21b9a81a72b014b683e4b8852df8fd7eb015338` |
+| 2 | `def` | [trackedStep](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PrefixTableReferenceTransport.lean/declarations/trackedstep.md) | 36 | `declaration-track:d661bdc93812a2e4cdf2ea241d63a5265374e1ddf4ea83423cf3a161b70f9e73` |
+| 3 | `def` | [transportSlotAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PrefixTableReferenceTransport.lean/declarations/transportslotat.md) | 41 | `declaration-track:f3c3ed3eb2c846b5ac631292ef33fcc1c87bdd02f19498091621d9880c5a4ef7` |
+| 4 | `theorem` | [tracked_state](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PrefixTableReferenceTransport.lean/declarations/tracked-state.md) | 46 | `result-track:de71de11656301813c2cd9f8e7a030d3c480385e3f7eef2a24261986f17725d3` |
+| 5 | `theorem` | [tracked_none](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PrefixTableReferenceTransport.lean/declarations/tracked-none.md) | 54 | `result-track:873a57361391f0b7ddff7a453e632343133e68536c134c5125201de2d86ad56a` |
+| 6 | `theorem` | [transportSlotAt_nil](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PrefixTableReferenceTransport.lean/declarations/transportslotat-nil.md) | 61 | `result-track:145feb8c6de75e190e990ce0969705d052f8830711dafde0c12f466c31f4e56f` |
+| 7 | `theorem` | [transportSlotAt_cons](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PrefixTableReferenceTransport.lean/declarations/transportslotat-cons.md) | 65 | `result-track:f9b8f00ce37e5b74a8235de2c5f79dc39199bee774c972d980e0f315b3ad20fd` |
+| 8 | `theorem` | [compact_reference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PrefixTableReferenceTransport.lean/declarations/compact-reference.md) | 83 | `result-track:964d5eb04f363a399ea369510ba447eb81af1abb5e7250a53f5844aaa471474a` |
+| 9 | `theorem` | [action_reference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PrefixTableReferenceTransport.lean/declarations/action-reference.md) | 116 | `result-track:b0f0461f1b37e521a6b3cdca0a8c03b151b386446b49bf449861c5a9219f9a1f` |
+| 10 | `theorem` | [transport_reference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PrefixTableReferenceTransport.lean/declarations/transport-reference.md) | 134 | `result-track:dcb463ab0992209b70c7e0ee9f9fb6c81ad67e19b1e6d30a94f9dfdac25646ef` |
+| 11 | `def` | [transportReferences](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PrefixTableReferenceTransport.lean/declarations/transportreferences.md) | 153 | `declaration-track:6a7a68ac6395dc10c5fbd58189bb7a15675d1ad6e9701ae5f7da1518f354a296` |
+| 12 | `theorem` | [transportReferences_success](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/PrefixTableReferenceTransport.lean/declarations/transportreferences-success.md) | 159 | `result-track:a1ad4fa332b60468da6d7abd590b2e652295bba4b64c69ba46c05b00f9b65fe9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

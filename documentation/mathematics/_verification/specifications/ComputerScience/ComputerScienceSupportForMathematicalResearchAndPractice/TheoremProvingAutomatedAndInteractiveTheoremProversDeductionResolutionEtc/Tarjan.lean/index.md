@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/Tarjan.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/Tarjan.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/Tarjan.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/Tarjan.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TarjanState](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/Tarjan.lean/declarations/tarjanstate.md) | 18 | `declaration-track:34c5b4934c0e551e290ce618184990e4a9beb085c06aaa84d4ab1be2f9cc77ba` |
-| 2 | `def` | [tarjanDFS](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/Tarjan.lean/declarations/tarjandfs.md) | 33 | `declaration-track:c54eabed1f22814b72c4ad2be75fa90ba0d2be250ab016c6f7712f4797ebb8b7` |
-| 3 | `def` | [findSCCsImp](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/Tarjan.lean/declarations/findsccsimp.md) | 68 | `declaration-track:96b1b410f470ee909585cb39a083075aecf08c6b730b5e8a4247bf1032e8896c` |
-| 4 | `def` | [findSCCs](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/Tarjan.lean/declarations/findsccs.md) | 75 | `declaration-track:909fa9610427dce43d429a9078adde1b0361a7ef65fbcc2ea574b4cb88b886a8` |
+| 1 | `structure` | [TarjanState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/Tarjan.lean/declarations/tarjanstate.md) | 18 | `declaration-track:34c5b4934c0e551e290ce618184990e4a9beb085c06aaa84d4ab1be2f9cc77ba` |
+| 2 | `def` | [tarjanDFS](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/Tarjan.lean/declarations/tarjandfs.md) | 33 | `declaration-track:c54eabed1f22814b72c4ad2be75fa90ba0d2be250ab016c6f7712f4797ebb8b7` |
+| 3 | `def` | [findSCCsImp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/Tarjan.lean/declarations/findsccsimp.md) | 68 | `declaration-track:96b1b410f470ee909585cb39a083075aecf08c6b730b5e8a4247bf1032e8896c` |
+| 4 | `def` | [findSCCs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/Tarjan.lean/declarations/findsccs.md) | 75 | `declaration-track:909fa9610427dce43d429a9078adde1b0361a7ef65fbcc2ea574b4cb88b886a8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

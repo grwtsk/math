@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/RankOneBarCoordinates.lean/index.md) · [Full source](../../../../CommutativeAlgebra/RankOneBarCoordinates.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RankOneBarCoordinates.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RankOneBarCoordinates.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.Hecke.RankOneNormalizedBasis`](../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RankOneNormalizedBasis.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Algebra.Hecke.RankOneNormalizedBasis`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RankOneNormalizedBasis.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [rankOneCoordinateMul](../../../../CommutativeAlgebra/RankOneBarCoordinates.lean/declarations/rankonecoordinatemul.md) | 10 | `declaration-track:7a6a7697573d7d934fd69b70479a84e6505cb37cf97b3f48ddc19709e5093d18` |
-| 2 | `def` | [rankOneBarCoordinates](../../../../CommutativeAlgebra/RankOneBarCoordinates.lean/declarations/rankonebarcoordinates.md) | 15 | `declaration-track:bd433c518cd413e35edd559c3931534ad273b9dd843b4830b349457011e6c5ab` |
-| 3 | `theorem` | [rankOne_bar_generators](../../../../CommutativeAlgebra/RankOneBarCoordinates.lean/declarations/rankone-bar-generators.md) | 19 | `result-track:810a35beb0bd69f31f2ad3da70dd26ea5e4819fc355d659b1a3c2bd4e92f0e24` |
-| 4 | `theorem` | [rankOne_bar_involutive](../../../../CommutativeAlgebra/RankOneBarCoordinates.lean/declarations/rankone-bar-involutive.md) | 25 | `result-track:a4dd8e396ec456afa86c1e1e515c499a993cd2d376ff323e05093533c7b53aec` |
-| 5 | `theorem` | [rankOne_bar_mul](../../../../CommutativeAlgebra/RankOneBarCoordinates.lean/declarations/rankone-bar-mul.md) | 36 | `result-track:a212b09af26baacd8af5b8a2b74f698a74e3bb528eb055b6db84fb13bd5f4573` |
-| 6 | `theorem` | [rankOne_bar_normalized_fixed](../../../../CommutativeAlgebra/RankOneBarCoordinates.lean/declarations/rankone-bar-normalized-fixed.md) | 46 | `result-track:5fae54eefc52cd955c3447b2d2e451d6cebe9970d56c4bbbc6f2b16fe1cf7349` |
+| 1 | `def` | [rankOneCoordinateMul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RankOneBarCoordinates.lean/declarations/rankonecoordinatemul.md) | 10 | `declaration-track:7a6a7697573d7d934fd69b70479a84e6505cb37cf97b3f48ddc19709e5093d18` |
+| 2 | `def` | [rankOneBarCoordinates](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RankOneBarCoordinates.lean/declarations/rankonebarcoordinates.md) | 15 | `declaration-track:bd433c518cd413e35edd559c3931534ad273b9dd843b4830b349457011e6c5ab` |
+| 3 | `theorem` | [rankOne_bar_generators](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RankOneBarCoordinates.lean/declarations/rankone-bar-generators.md) | 19 | `result-track:810a35beb0bd69f31f2ad3da70dd26ea5e4819fc355d659b1a3c2bd4e92f0e24` |
+| 4 | `theorem` | [rankOne_bar_involutive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RankOneBarCoordinates.lean/declarations/rankone-bar-involutive.md) | 25 | `result-track:a4dd8e396ec456afa86c1e1e515c499a993cd2d376ff323e05093533c7b53aec` |
+| 5 | `theorem` | [rankOne_bar_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RankOneBarCoordinates.lean/declarations/rankone-bar-mul.md) | 36 | `result-track:a212b09af26baacd8af5b8a2b74f698a74e3bb528eb055b6db84fb13bd5f4573` |
+| 6 | `theorem` | [rankOne_bar_normalized_fixed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RankOneBarCoordinates.lean/declarations/rankone-bar-normalized-fixed.md) | 46 | `result-track:5fae54eefc52cd955c3447b2d2e451d6cebe9970d56c4bbbc6f2b16fe1cf7349` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

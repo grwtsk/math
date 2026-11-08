@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/FixedPointSyntax.lean/index.md) · [Full source](../../../../Combinatorics/FixedPointSyntax.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FixedPointSyntax.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FixedPointSyntax.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [fold](../../../../Combinatorics/FixedPointSyntax.lean/declarations/fold.md) | 21 | `declaration-track:a29cbf15e300bbc51217c1041b5ca3fc5779d0a0eadd1a626d291fa5be105e6f` |
-| 2 | `theorem` | [fold_leaf](../../../../Combinatorics/FixedPointSyntax.lean/declarations/fold-leaf.md) | 26 | `result-track:12b37d4bb84b467fab54aca63525a6dc6d457af17fe6e470085b6bb1a4c662cd` |
-| 3 | `theorem` | [fold_node](../../../../Combinatorics/FixedPointSyntax.lean/declarations/fold-node.md) | 31 | `result-track:9fbe6302566a07058f355a72013b0c81adab0e04dda0cdcb8efddb03d904813f` |
-| 4 | `theorem` | [fold_unique](../../../../Combinatorics/FixedPointSyntax.lean/declarations/fold-unique.md) | 39 | `result-track:e69c689879ababc187b558727d223d241bfd88be99aa066174dfb623d6bc5e18` |
+| 1 | `def` | [fold](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FixedPointSyntax.lean/declarations/fold.md) | 21 | `declaration-track:a29cbf15e300bbc51217c1041b5ca3fc5779d0a0eadd1a626d291fa5be105e6f` |
+| 2 | `theorem` | [fold_leaf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FixedPointSyntax.lean/declarations/fold-leaf.md) | 26 | `result-track:12b37d4bb84b467fab54aca63525a6dc6d457af17fe6e470085b6bb1a4c662cd` |
+| 3 | `theorem` | [fold_node](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FixedPointSyntax.lean/declarations/fold-node.md) | 31 | `result-track:9fbe6302566a07058f355a72013b0c81adab0e04dda0cdcb8efddb03d904813f` |
+| 4 | `theorem` | [fold_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FixedPointSyntax.lean/declarations/fold-unique.md) | 39 | `result-track:e69c689879ababc187b558727d223d241bfd88be99aa066174dfb623d6bc5e18` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

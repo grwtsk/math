@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/CausalFixtures.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/CausalFixtures.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CausalFixtures.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CausalFixtures.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [proposals](../../../../../ComputerScience/AlgorithmsInComputerScience/CausalFixtures.lean/declarations/proposals.md) | 16 | `declaration-track:20679e42d6c2fd8bfee0110f01fd48c5528a42a6d57d132fd39e22db4c068446` |
-| 2 | `def` | [declarationFor](../../../../../ComputerScience/AlgorithmsInComputerScience/CausalFixtures.lean/declarations/declarationfor.md) | 25 | `declaration-track:f9659dccbf76ba674629d55c360f3104e59f1cef7b7506468ca60b5b5db3b0d0` |
-| 3 | `def` | [CandidateDispositions](../../../../../ComputerScience/AlgorithmsInComputerScience/CausalFixtures.lean/declarations/candidatedispositions.md) | 29 | `declaration-track:59891371ae94234db868f0b1b36872d9788a31875ed83236227c7c2e0bb787fe` |
-| 4 | `theorem` | [candidate_dispositions](../../../../../ComputerScience/AlgorithmsInComputerScience/CausalFixtures.lean/declarations/candidate-dispositions.md) | 38 | `result-track:309fcb46cf774e29afb6b918c13bfd7735a2e07d9305302da51d399592c508c6` |
+| 1 | `def` | [proposals](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CausalFixtures.lean/declarations/proposals.md) | 16 | `declaration-track:20679e42d6c2fd8bfee0110f01fd48c5528a42a6d57d132fd39e22db4c068446` |
+| 2 | `def` | [declarationFor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CausalFixtures.lean/declarations/declarationfor.md) | 25 | `declaration-track:f9659dccbf76ba674629d55c360f3104e59f1cef7b7506468ca60b5b5db3b0d0` |
+| 3 | `def` | [CandidateDispositions](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CausalFixtures.lean/declarations/candidatedispositions.md) | 29 | `declaration-track:59891371ae94234db868f0b1b36872d9788a31875ed83236227c7c2e0bb787fe` |
+| 4 | `theorem` | [candidate_dispositions](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CausalFixtures.lean/declarations/candidate-dispositions.md) | 38 | `result-track:309fcb46cf774e29afb6b918c13bfd7735a2e07d9305302da51d399592c508c6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

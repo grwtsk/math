@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/DifferentialCalculusSupportEdgeDifferentiability.lean/index.md) · [Full source](../../../../RealFunctions/DifferentialCalculusSupportEdgeDifferentiability.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DifferentialCalculusSupportEdgeDifferentiability.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DifferentialCalculusSupportEdgeDifferentiability.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [deriv_zero_of_zero_right](../../../../RealFunctions/DifferentialCalculusSupportEdgeDifferentiability.lean/declarations/deriv-zero-of-zero-right.md) | 25 | `result-track:8504eb9163d0ac8bff6590585900b88b7edd19f7324e8ff4368d88782ec7b6da` |
-| 2 | `theorem` | [not_differentiable_of_left_linear_contact](../../../../RealFunctions/DifferentialCalculusSupportEdgeDifferentiability.lean/declarations/not-differentiable-of-left-linear-contact.md) | 42 | `result-track:2390e8b8ea62936ceb10e470b354ebd72079657464c370a4ec4cb2249a305506` |
+| 1 | `theorem` | [deriv_zero_of_zero_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DifferentialCalculusSupportEdgeDifferentiability.lean/declarations/deriv-zero-of-zero-right.md) | 25 | `result-track:8504eb9163d0ac8bff6590585900b88b7edd19f7324e8ff4368d88782ec7b6da` |
+| 2 | `theorem` | [not_differentiable_of_left_linear_contact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DifferentialCalculusSupportEdgeDifferentiability.lean/declarations/not-differentiable-of-left-linear-contact.md) | 42 | `result-track:2390e8b8ea62936ceb10e470b354ebd72079657464c370a4ec4cb2249a305506` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/ReflexiveNamespaced.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/ReflexiveNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ReflexiveNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ReflexiveNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [AssuranceRun](../../../../ProbabilityTheoryAndStochasticProcesses/ReflexiveNamespaced.lean/declarations/assurancerun.md) | 24 | `declaration-track:5458b10ffeea149ff7391ddf590e4f09c6c0035625808d2cf91b823e31319c4c` |
-| 2 | `theorem` | [cannot_authorize_controller_version](../../../../ProbabilityTheoryAndStochasticProcesses/ReflexiveNamespaced.lean/declarations/cannot-authorize-controller-version.md) | 39 | `result-track:dd8acfe3f0b344a8c5bda0b09433272e13b62caa4b8f2ba4f4ae812f8d49e210` |
-| 3 | `theorem` | [cannot_alter_governing_policy](../../../../ProbabilityTheoryAndStochasticProcesses/ReflexiveNamespaced.lean/declarations/cannot-alter-governing-policy.md) | 45 | `result-track:cb4941e2dc1117f5ff28aa618783e39d13d1fb663b4b747410892284ac2790db` |
-| 4 | `def` | [versionDependencyGraph](../../../../ProbabilityTheoryAndStochasticProcesses/ReflexiveNamespaced.lean/declarations/versiondependencygraph.md) | 53 | `declaration-track:3b8acd1088837d997847189d97ceaebd8a1476f10e6a1895091693adab706f20` |
-| 5 | `theorem` | [strictlyIncreasingReflexiveChain_no_cycle](../../../../ProbabilityTheoryAndStochasticProcesses/ReflexiveNamespaced.lean/declarations/strictlyincreasingreflexivechain-no-cycle.md) | 61 | `result-track:28b11db7acd9d1d07c67898b923efa531db7dfa5d2fc4e70100a5f2924a36036` |
-| 6 | `inductive` | [ReviewClassification](../../../../ProbabilityTheoryAndStochasticProcesses/ReflexiveNamespaced.lean/declarations/reviewclassification.md) | 67 | `declaration-track:4b9f6bbaa07b32200b28a03343176875f67c7ca7f5f14e00a9357c6cfe04ad0c` |
-| 7 | `def` | [classifyReview](../../../../ProbabilityTheoryAndStochasticProcesses/ReflexiveNamespaced.lean/declarations/classifyreview.md) | 76 | `declaration-track:b314b4a86e6b6db554b5feb243256683b6739aea8392e9302089f1f91ba7e522` |
-| 8 | `theorem` | [classify_same_version_self_check](../../../../ProbabilityTheoryAndStochasticProcesses/ReflexiveNamespaced.lean/declarations/classify-same-version-self-check.md) | 87 | `result-track:ab88acfa9a0cd61cbcc8b7af35591f67463711d7875e13f929f4b8648d470780` |
-| 9 | `theorem` | [classifyReview_eq_independentReview_iff](../../../../ProbabilityTheoryAndStochasticProcesses/ReflexiveNamespaced.lean/declarations/classifyreview-eq-independentreview-iff.md) | 94 | `result-track:ad1dd2a9494707e35247a750c8522e7265a6a2e772814fed9d657a31c0da9e3f` |
+| 1 | `structure` | [AssuranceRun](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ReflexiveNamespaced.lean/declarations/assurancerun.md) | 24 | `declaration-track:5458b10ffeea149ff7391ddf590e4f09c6c0035625808d2cf91b823e31319c4c` |
+| 2 | `theorem` | [cannot_authorize_controller_version](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ReflexiveNamespaced.lean/declarations/cannot-authorize-controller-version.md) | 39 | `result-track:dd8acfe3f0b344a8c5bda0b09433272e13b62caa4b8f2ba4f4ae812f8d49e210` |
+| 3 | `theorem` | [cannot_alter_governing_policy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ReflexiveNamespaced.lean/declarations/cannot-alter-governing-policy.md) | 45 | `result-track:cb4941e2dc1117f5ff28aa618783e39d13d1fb663b4b747410892284ac2790db` |
+| 4 | `def` | [versionDependencyGraph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ReflexiveNamespaced.lean/declarations/versiondependencygraph.md) | 53 | `declaration-track:3b8acd1088837d997847189d97ceaebd8a1476f10e6a1895091693adab706f20` |
+| 5 | `theorem` | [strictlyIncreasingReflexiveChain_no_cycle](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ReflexiveNamespaced.lean/declarations/strictlyincreasingreflexivechain-no-cycle.md) | 61 | `result-track:28b11db7acd9d1d07c67898b923efa531db7dfa5d2fc4e70100a5f2924a36036` |
+| 6 | `inductive` | [ReviewClassification](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ReflexiveNamespaced.lean/declarations/reviewclassification.md) | 67 | `declaration-track:4b9f6bbaa07b32200b28a03343176875f67c7ca7f5f14e00a9357c6cfe04ad0c` |
+| 7 | `def` | [classifyReview](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ReflexiveNamespaced.lean/declarations/classifyreview.md) | 76 | `declaration-track:b314b4a86e6b6db554b5feb243256683b6739aea8392e9302089f1f91ba7e522` |
+| 8 | `theorem` | [classify_same_version_self_check](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ReflexiveNamespaced.lean/declarations/classify-same-version-self-check.md) | 87 | `result-track:ab88acfa9a0cd61cbcc8b7af35591f67463711d7875e13f929f4b8648d470780` |
+| 9 | `theorem` | [classifyReview_eq_independentReview_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/ReflexiveNamespaced.lean/declarations/classifyreview-eq-independentreview-iff.md) | 94 | `result-track:ad1dd2a9494707e35247a750c8522e7265a6a2e772814fed9d657a31c0da9e3f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

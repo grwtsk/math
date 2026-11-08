@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FromSourceNamespacedPublicEdition1.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FromSourceNamespacedPublicEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FromSourceNamespacedPublicEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FromSourceNamespacedPublicEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [findImportsFromSource](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FromSourceNamespacedPublicEdition1.lean/declarations/findimportsfromsource.md) | 43 | `declaration-track:7225c891564155e34857d8f56b7921a0cad5b239cb355160a1fcbf41004c440d` |
-| 2 | `def` | [findTransitiveImportsFromSource](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FromSourceNamespacedPublicEdition1.lean/declarations/findtransitiveimportsfromsource.md) | 65 | `declaration-track:2a8f3ef929e8a8921ad39e504dfa515cc49e4ac6542fd4ad56ef59da0bd9ddf6` |
+| 1 | `def` | [findImportsFromSource](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FromSourceNamespacedPublicEdition1.lean/declarations/findimportsfromsource.md) | 43 | `declaration-track:7225c891564155e34857d8f56b7921a0cad5b239cb355160a1fcbf41004c440d` |
+| 2 | `def` | [findTransitiveImportsFromSource](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/FromSourceNamespacedPublicEdition1.lean/declarations/findtransitiveimportsfromsource.md) | 65 | `declaration-track:2a8f3ef929e8a8921ad39e504dfa515cc49e4ac6542fd4ad56ef59da0bd9ddf6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

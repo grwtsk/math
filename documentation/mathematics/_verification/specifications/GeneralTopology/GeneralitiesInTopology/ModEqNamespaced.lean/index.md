@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralTopology/GeneralitiesInTopology/ModEqNamespaced.lean/index.md) · [Full source](../../../../../GeneralTopology/GeneralitiesInTopology/ModEqNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/ModEqNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/ModEqNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -64,11 +64,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [frequently_modEq](../../../../../GeneralTopology/GeneralitiesInTopology/ModEqNamespaced.lean/declarations/frequently-modeq.md) | 35 | `result-track:772d350ed077d332d5a90d03b6d2d6fa74d32df9e819db5841703ba09fbb857d` |
-| 2 | `theorem` | [frequently_mod_eq](../../../../../GeneralTopology/GeneralitiesInTopology/ModEqNamespaced.lean/declarations/frequently-mod-eq.md) | 39 | `result-track:6a621f9bc2fe8bb32a6eb7ca460cc9989d0900d0d7852144cdf35aca22ddac7c` |
-| 3 | `theorem` | [frequently_even](../../../../../GeneralTopology/GeneralitiesInTopology/ModEqNamespaced.lean/declarations/frequently-even.md) | 42 | `result-track:bf60b58a3fcd78ffe13d5c16e72745c9307f0d2650e6ee048974fc5fb17f1166` |
-| 4 | `theorem` | [frequently_odd](../../../../../GeneralTopology/GeneralitiesInTopology/ModEqNamespaced.lean/declarations/frequently-odd.md) | 45 | `result-track:837c80f73e84dff661db7b8e77fc73da3a5c4b6f8e4dcc1498c44c9a44c86d25` |
-| 5 | `theorem` | [Filter.nonneg_of_eventually_pow_nonneg](../../../../../GeneralTopology/GeneralitiesInTopology/ModEqNamespaced.lean/declarations/filter-nonneg-of-eventually-pow-nonneg.md) | 50 | `result-track:ae3e412e0332c4c5a64b4ae59409e95a2bf5287e0eb03426f787b611dc8b4043` |
+| 1 | `theorem` | [frequently_modEq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/ModEqNamespaced.lean/declarations/frequently-modeq.md) | 35 | `result-track:772d350ed077d332d5a90d03b6d2d6fa74d32df9e819db5841703ba09fbb857d` |
+| 2 | `theorem` | [frequently_mod_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/ModEqNamespaced.lean/declarations/frequently-mod-eq.md) | 39 | `result-track:6a621f9bc2fe8bb32a6eb7ca460cc9989d0900d0d7852144cdf35aca22ddac7c` |
+| 3 | `theorem` | [frequently_even](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/ModEqNamespaced.lean/declarations/frequently-even.md) | 42 | `result-track:bf60b58a3fcd78ffe13d5c16e72745c9307f0d2650e6ee048974fc5fb17f1166` |
+| 4 | `theorem` | [frequently_odd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/ModEqNamespaced.lean/declarations/frequently-odd.md) | 45 | `result-track:837c80f73e84dff661db7b8e77fc73da3a5c4b6f8e4dcc1498c44c9a44c86d25` |
+| 5 | `theorem` | [Filter.nonneg_of_eventually_pow_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/ModEqNamespaced.lean/declarations/filter-nonneg-of-eventually-pow-nonneg.md) | 50 | `result-track:ae3e412e0332c4c5a64b4ae59409e95a2bf5287e0eb03426f787b611dc8b4043` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

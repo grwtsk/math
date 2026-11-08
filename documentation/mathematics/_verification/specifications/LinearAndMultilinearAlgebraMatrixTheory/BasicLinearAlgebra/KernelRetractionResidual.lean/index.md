@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KernelRetractionResidual.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KernelRetractionResidual.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KernelRetractionResidual.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KernelRetractionResidual.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Logic.InformationLoss.KernelSplittingSharpness`](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KernelSplittingSharpness.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.Logic.InformationLoss.KernelSplittingSharpness`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KernelSplittingSharpness.lean/index.md) — import line 6; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [kernelRetractionResidual](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KernelRetractionResidual.lean/declarations/kernelretractionresidual.md) | 27 | `declaration-track:4b44e8a058e8a31792856ebca70fab7efe583dd018488aa24315f65586d03bf6` |
-| 2 | `theorem` | [kernelRetractionResidual_preserves_observation](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KernelRetractionResidual.lean/declarations/kernelretractionresidual-preserves-observation.md) | 32 | `result-track:726f5c4c7d9b6235b7fe22ee84234ece152c462df888cbd7cd1e2048755152d9` |
-| 3 | `theorem` | [kernelRetractionResidual_projection_zero](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KernelRetractionResidual.lean/declarations/kernelretractionresidual-projection-zero.md) | 42 | `result-track:edc83fd0897473718a04138999e3b1266b802d86aa8404adabec023f8d1cf57f` |
-| 4 | `theorem` | [kernelRetraction_decompose](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KernelRetractionResidual.lean/declarations/kernelretraction-decompose.md) | 54 | `result-track:ed3842f3ed3bb1feb46431369f40f899158eca45a644786800bb4e14cd43f1c0` |
+| 1 | `def` | [kernelRetractionResidual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KernelRetractionResidual.lean/declarations/kernelretractionresidual.md) | 27 | `declaration-track:4b44e8a058e8a31792856ebca70fab7efe583dd018488aa24315f65586d03bf6` |
+| 2 | `theorem` | [kernelRetractionResidual_preserves_observation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KernelRetractionResidual.lean/declarations/kernelretractionresidual-preserves-observation.md) | 32 | `result-track:726f5c4c7d9b6235b7fe22ee84234ece152c462df888cbd7cd1e2048755152d9` |
+| 3 | `theorem` | [kernelRetractionResidual_projection_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KernelRetractionResidual.lean/declarations/kernelretractionresidual-projection-zero.md) | 42 | `result-track:edc83fd0897473718a04138999e3b1266b802d86aa8404adabec023f8d1cf57f` |
+| 4 | `theorem` | [kernelRetraction_decompose](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/KernelRetractionResidual.lean/declarations/kernelretraction-decompose.md) | 54 | `result-track:ed3842f3ed3bb1feb46431369f40f899158eca45a644786800bb4e14cd43f1c0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

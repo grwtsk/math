@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Membrane.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Membrane.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Membrane.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Membrane.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [MembraneStage](../../../../../ComputerScience/AlgorithmsInComputerScience/Membrane.lean/declarations/membranestage.md) | 9 | `declaration-track:74b98a8f643eda047151e8773b1f7014e90fe36e9268bd6ee62ea8b97f2638c7` |
-| 2 | `inductive` | [DeliveryClass](../../../../../ComputerScience/AlgorithmsInComputerScience/Membrane.lean/declarations/deliveryclass.md) | 20 | `declaration-track:894674163b8414149645c9fdce6e6121f556d8dbe486591995491c89a177b455` |
-| 3 | `structure` | [ArbitratorMembrane](../../../../../ComputerScience/AlgorithmsInComputerScience/Membrane.lean/declarations/arbitratormembrane.md) | 26 | `declaration-track:bf2965b83b2bd5a0bd8b56344c5f95515f99792b756c59d2d75c7d7d2e94e81f` |
-| 4 | `def` | [ArbitratorMembrane.evidenceKind](../../../../../ComputerScience/AlgorithmsInComputerScience/Membrane.lean/declarations/arbitratormembrane-evidencekind.md) | 35 | `declaration-track:e9fab892b5f78130402d87146a873653206189107cc67f05d26cee5bc04e5c17` |
-| 5 | `theorem` | [membrane_has_no_theorem_authority](../../../../../ComputerScience/AlgorithmsInComputerScience/Membrane.lean/declarations/membrane-has-no-theorem-authority.md) | 41 | `result-track:9c2e3317ea045714a3e5ca04160c829f6cfc2d56c5cdcf4fed4c68a4df7504d0` |
+| 1 | `inductive` | [MembraneStage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Membrane.lean/declarations/membranestage.md) | 9 | `declaration-track:74b98a8f643eda047151e8773b1f7014e90fe36e9268bd6ee62ea8b97f2638c7` |
+| 2 | `inductive` | [DeliveryClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Membrane.lean/declarations/deliveryclass.md) | 20 | `declaration-track:894674163b8414149645c9fdce6e6121f556d8dbe486591995491c89a177b455` |
+| 3 | `structure` | [ArbitratorMembrane](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Membrane.lean/declarations/arbitratormembrane.md) | 26 | `declaration-track:bf2965b83b2bd5a0bd8b56344c5f95515f99792b756c59d2d75c7d7d2e94e81f` |
+| 4 | `def` | [ArbitratorMembrane.evidenceKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Membrane.lean/declarations/arbitratormembrane-evidencekind.md) | 35 | `declaration-track:e9fab892b5f78130402d87146a873653206189107cc67f05d26cee5bc04e5c17` |
+| 5 | `theorem` | [membrane_has_no_theorem_authority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Membrane.lean/declarations/membrane-has-no-theorem-authority.md) | 41 | `result-track:9c2e3317ea045714a3e5ca04160c829f6cfc2d56c5cdcf4fed4c68a4df7504d0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

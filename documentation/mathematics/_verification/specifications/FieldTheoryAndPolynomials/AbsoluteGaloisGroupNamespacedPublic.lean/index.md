@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FieldTheoryAndPolynomials/AbsoluteGaloisGroupNamespacedPublic.lean/index.md) · [Full source](../../../../FieldTheoryAndPolynomials/AbsoluteGaloisGroupNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/AbsoluteGaloisGroupNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/AbsoluteGaloisGroupNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [absoluteGaloisGroup](../../../../FieldTheoryAndPolynomials/AbsoluteGaloisGroupNamespacedPublic.lean/declarations/absolutegaloisgroup.md) | 51 | `declaration-track:5527fc8cfedac654b32db32f4fe2808f94f5348b6a4b09ad41d174722d3b253c` |
-| 2 | `def` | [absoluteGaloisGroup.mapOfAlgebra](../../../../FieldTheoryAndPolynomials/AbsoluteGaloisGroupNamespacedPublic.lean/declarations/absolutegaloisgroup-mapofalgebra.md) | 68 | `declaration-track:f6d64713a14e5fdb07278c0b7f058165dd96bd97bd03ef38762c0c01f3c5711b` |
-| 3 | `def` | [absoluteGaloisGroup.map](../../../../FieldTheoryAndPolynomials/AbsoluteGaloisGroupNamespacedPublic.lean/declarations/absolutegaloisgroup-map.md) | 96 | `declaration-track:e0c614a5a9b8a8a3f0929db41b1d8f4c959b374f99493ea6973d72025a81ea89` |
-| 4 | `instance` | [absoluteGaloisGroup.commutator_closure_isNormal](../../../../FieldTheoryAndPolynomials/AbsoluteGaloisGroupNamespacedPublic.lean/declarations/absolutegaloisgroup-commutator-closure-isnormal.md) | 104 | `declaration-track:10d7c52bda041d5545c5d9260aa5ddc02ad43da7549ba378060fd8811e57984f` |
-| 5 | `abbrev` | [absoluteGaloisGroupAbelianization](../../../../FieldTheoryAndPolynomials/AbsoluteGaloisGroupNamespacedPublic.lean/declarations/absolutegaloisgroupabelianization.md) | 110 | `declaration-track:384d82ebc5bb7238fa6b7a43832cd462b3ca72e398b89c9d5004bdd71c8a1125` |
+| 1 | `def` | [absoluteGaloisGroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/AbsoluteGaloisGroupNamespacedPublic.lean/declarations/absolutegaloisgroup.md) | 51 | `declaration-track:5527fc8cfedac654b32db32f4fe2808f94f5348b6a4b09ad41d174722d3b253c` |
+| 2 | `def` | [absoluteGaloisGroup.mapOfAlgebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/AbsoluteGaloisGroupNamespacedPublic.lean/declarations/absolutegaloisgroup-mapofalgebra.md) | 68 | `declaration-track:f6d64713a14e5fdb07278c0b7f058165dd96bd97bd03ef38762c0c01f3c5711b` |
+| 3 | `def` | [absoluteGaloisGroup.map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/AbsoluteGaloisGroupNamespacedPublic.lean/declarations/absolutegaloisgroup-map.md) | 96 | `declaration-track:e0c614a5a9b8a8a3f0929db41b1d8f4c959b374f99493ea6973d72025a81ea89` |
+| 4 | `instance` | [absoluteGaloisGroup.commutator_closure_isNormal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/AbsoluteGaloisGroupNamespacedPublic.lean/declarations/absolutegaloisgroup-commutator-closure-isnormal.md) | 104 | `declaration-track:10d7c52bda041d5545c5d9260aa5ddc02ad43da7549ba378060fd8811e57984f` |
+| 5 | `abbrev` | [absoluteGaloisGroupAbelianization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/AbsoluteGaloisGroupNamespacedPublic.lean/declarations/absolutegaloisgroupabelianization.md) | 110 | `declaration-track:384d82ebc5bb7238fa6b7a43832cd462b3ca72e398b89c9d5004bdd71c8a1125` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

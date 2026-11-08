@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ActualSecondEnergyCalibrationNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ActualSecondEnergyCalibrationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualSecondEnergyCalibrationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualSecondEnergyCalibrationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_second_derivative_energy_le_global](../../../../MeasureAndIntegration/ActualSecondEnergyCalibrationNamespaced.lean/declarations/actual-second-derivative-energy-le-global.md) | 29 | `result-track:f52d04f5b0f363d9e7438dcfa293893e1b3e467f2ef2677df183c937d555cb1b` |
-| 2 | `theorem` | [actual_second_derivative_energy_le_sixty_seven](../../../../MeasureAndIntegration/ActualSecondEnergyCalibrationNamespaced.lean/declarations/actual-second-derivative-energy-le-sixty-seven.md) | 39 | `result-track:a7c84e122fd01c511219df68d57327c3cabdd2226cf60468112601d396565207` |
-| 3 | `theorem` | [actual_second_derivative_square_integral_le_sixty_seven](../../../../MeasureAndIntegration/ActualSecondEnergyCalibrationNamespaced.lean/declarations/actual-second-derivative-square-integral-le-sixty-seven.md) | 46 | `result-track:fb79692860d2f98d31a49690719483c38531955489209302e37bfa939a4bf8d0` |
+| 1 | `theorem` | [actual_second_derivative_energy_le_global](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualSecondEnergyCalibrationNamespaced.lean/declarations/actual-second-derivative-energy-le-global.md) | 29 | `result-track:f52d04f5b0f363d9e7438dcfa293893e1b3e467f2ef2677df183c937d555cb1b` |
+| 2 | `theorem` | [actual_second_derivative_energy_le_sixty_seven](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualSecondEnergyCalibrationNamespaced.lean/declarations/actual-second-derivative-energy-le-sixty-seven.md) | 39 | `result-track:a7c84e122fd01c511219df68d57327c3cabdd2226cf60468112601d396565207` |
+| 3 | `theorem` | [actual_second_derivative_square_integral_le_sixty_seven](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualSecondEnergyCalibrationNamespaced.lean/declarations/actual-second-derivative-square-integral-le-sixty-seven.md) | 46 | `result-track:fb79692860d2f98d31a49690719483c38531955489209302e37bfa939a4bf8d0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

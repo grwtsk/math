@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SheafOfSpectraNamespacedPresheafOfSpectra.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SheafOfSpectraNamespacedPresheafOfSpectra.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SheafOfSpectraNamespacedPresheafOfSpectra.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SheafOfSpectraNamespacedPresheafOfSpectra.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PresheafOfSpectra](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SheafOfSpectraNamespacedPresheafOfSpectra.lean/declarations/presheafofspectra.md) | 29 | `declaration-track:1167c1bd1d0bfc6348119eeaab9748280cc9fc0d71e18c74ceafb4111b14eb0c` |
-| 2 | `structure` | [SheafOfSpectra](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SheafOfSpectraNamespacedPresheafOfSpectra.lean/declarations/sheafofspectra.md) | 36 | `declaration-track:8e606d2115741155b59529b6883e204909ff80828e1d386adb6c4ac01c126aac` |
-| 3 | `theorem` | [sheaf_of_spectra_has_descent](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SheafOfSpectraNamespacedPresheafOfSpectra.lean/declarations/sheaf-of-spectra-has-descent.md) | 46 | `result-track:37ac6bdf801ccc0b0e8c9db5dc8188fd6e2f1a1cdc7ebd5650cef1551d9f0806` |
-| 4 | `theorem` | [sheaf_of_spectra_has_hyperdescent](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SheafOfSpectraNamespacedPresheafOfSpectra.lean/declarations/sheaf-of-spectra-has-hyperdescent.md) | 53 | `result-track:8333e19b8ff91f0f32faede068121fd7b131e4c39127f6316804e95ea2027cea` |
+| 1 | `structure` | [PresheafOfSpectra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SheafOfSpectraNamespacedPresheafOfSpectra.lean/declarations/presheafofspectra.md) | 29 | `declaration-track:1167c1bd1d0bfc6348119eeaab9748280cc9fc0d71e18c74ceafb4111b14eb0c` |
+| 2 | `structure` | [SheafOfSpectra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SheafOfSpectraNamespacedPresheafOfSpectra.lean/declarations/sheafofspectra.md) | 36 | `declaration-track:8e606d2115741155b59529b6883e204909ff80828e1d386adb6c4ac01c126aac` |
+| 3 | `theorem` | [sheaf_of_spectra_has_descent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SheafOfSpectraNamespacedPresheafOfSpectra.lean/declarations/sheaf-of-spectra-has-descent.md) | 46 | `result-track:37ac6bdf801ccc0b0e8c9db5dc8188fd6e2f1a1cdc7ebd5650cef1551d9f0806` |
+| 4 | `theorem` | [sheaf_of_spectra_has_hyperdescent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SheafOfSpectraNamespacedPresheafOfSpectra.lean/declarations/sheaf-of-spectra-has-hyperdescent.md) | 53 | `result-track:8333e19b8ff91f0f32faede068121fd7b131e4c39127f6316804e95ea2027cea` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

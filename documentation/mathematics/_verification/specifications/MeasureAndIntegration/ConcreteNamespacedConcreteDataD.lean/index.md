@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ConcreteNamespacedConcreteDataD.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ConcreteNamespacedConcreteDataD.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ConcreteNamespacedConcreteDataD.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ConcreteNamespacedConcreteDataD.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,12 +62,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [concreteDataD](../../../../MeasureAndIntegration/ConcreteNamespacedConcreteDataD.lean/declarations/concretedatad.md) | 44 | `declaration-track:df66a5f9c23fe14fc0a3b0e41a04a6ab49f55fa4aa22185b204bbbe60a46dbde` |
-| 2 | `def` | [LocalHypsCoreDEventually](../../../../MeasureAndIntegration/ConcreteNamespacedConcreteDataD.lean/declarations/localhypscoredeventually.md) | 65 | `declaration-track:a87dd0c0e0fb079e8de0bd5f42d50577b376cb1669e10edc25c089bbefcaf3a2` |
-| 3 | `lemma` | [evBound_of_eventuallyAtCoreD](../../../../MeasureAndIntegration/ConcreteNamespacedConcreteDataD.lean/declarations/evbound-of-eventuallyatcored.md) | 70 | `result-track:e1055a7298c38fb648ba0926892d5c42963c8afd85a729a77fb05eda2a2a2c03` |
-| 4 | `lemma` | [autocorr_eq_zero_of_support](../../../../MeasureAndIntegration/ConcreteNamespacedConcreteDataD.lean/declarations/autocorr-eq-zero-of-support.md) | 89 | `result-track:e12dc9228a5ae9755efd449ac81f0c57c5096a17d505320efffced4487481a47` |
-| 5 | `theorem` | [concreteFactsD](../../../../MeasureAndIntegration/ConcreteNamespacedConcreteDataD.lean/declarations/concretefactsd.md) | 108 | `result-track:5eb5dc433c34827eec5ca16b0a95eef104bd953dd10b222110fd513b3e1a5342` |
-| 6 | `theorem` | [tracesBoundsD_concrete](../../../../MeasureAndIntegration/ConcreteNamespacedConcreteDataD.lean/declarations/tracesboundsd-concrete.md) | 245 | `result-track:7105406ad2c318eeb077768ec1b8855766150ff9c3f7e4673ad41a8a2ee7c8dc` |
+| 1 | `def` | [concreteDataD](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ConcreteNamespacedConcreteDataD.lean/declarations/concretedatad.md) | 44 | `declaration-track:df66a5f9c23fe14fc0a3b0e41a04a6ab49f55fa4aa22185b204bbbe60a46dbde` |
+| 2 | `def` | [LocalHypsCoreDEventually](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ConcreteNamespacedConcreteDataD.lean/declarations/localhypscoredeventually.md) | 65 | `declaration-track:a87dd0c0e0fb079e8de0bd5f42d50577b376cb1669e10edc25c089bbefcaf3a2` |
+| 3 | `lemma` | [evBound_of_eventuallyAtCoreD](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ConcreteNamespacedConcreteDataD.lean/declarations/evbound-of-eventuallyatcored.md) | 70 | `result-track:e1055a7298c38fb648ba0926892d5c42963c8afd85a729a77fb05eda2a2a2c03` |
+| 4 | `lemma` | [autocorr_eq_zero_of_support](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ConcreteNamespacedConcreteDataD.lean/declarations/autocorr-eq-zero-of-support.md) | 89 | `result-track:e12dc9228a5ae9755efd449ac81f0c57c5096a17d505320efffced4487481a47` |
+| 5 | `theorem` | [concreteFactsD](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ConcreteNamespacedConcreteDataD.lean/declarations/concretefactsd.md) | 108 | `result-track:5eb5dc433c34827eec5ca16b0a95eef104bd953dd10b222110fd513b3e1a5342` |
+| 6 | `theorem` | [tracesBoundsD_concrete](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ConcreteNamespacedConcreteDataD.lean/declarations/tracesboundsd-concrete.md) | 245 | `result-track:7105406ad2c318eeb077768ec1b8855766150ff9c3f7e4673ad41a8a2ee7c8dc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

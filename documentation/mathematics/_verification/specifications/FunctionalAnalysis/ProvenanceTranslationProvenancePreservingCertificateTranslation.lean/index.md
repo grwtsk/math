@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/ProvenanceTranslationProvenancePreservingCertificateTranslation.lean/index.md) · [Full source](../../../../FunctionalAnalysis/ProvenanceTranslationProvenancePreservingCertificateTranslation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ProvenanceTranslationProvenancePreservingCertificateTranslation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ProvenanceTranslationProvenancePreservingCertificateTranslation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ProvenancePreservingTranslation](../../../../FunctionalAnalysis/ProvenanceTranslationProvenancePreservingCertificateTranslation.lean/declarations/provenancepreservingtranslation.md) | 15 | `declaration-track:7d98fa14fb611d9642004896830a8e24d6fab5eccc279a71a83ebd5f15f0a57e` |
-| 2 | `theorem` | [ProvenancePreservingTranslation.retains_source](../../../../FunctionalAnalysis/ProvenanceTranslationProvenancePreservingCertificateTranslation.lean/declarations/provenancepreservingtranslation-retains-source.md) | 22 | `result-track:f2dcff2f7b7cc55634aa8b137bb40b9eecec2db1df0795c0da0439245492a3e6` |
-| 3 | `theorem` | [ProvenancePreservingTranslation.checked_statement](../../../../FunctionalAnalysis/ProvenanceTranslationProvenancePreservingCertificateTranslation.lean/declarations/provenancepreservingtranslation-checked-statement.md) | 29 | `result-track:b950bc4aa8efd76fe665c81f182d481391d3c6c9243ad543f9f1306cdbc133cd` |
+| 1 | `structure` | [ProvenancePreservingTranslation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ProvenanceTranslationProvenancePreservingCertificateTranslation.lean/declarations/provenancepreservingtranslation.md) | 15 | `declaration-track:7d98fa14fb611d9642004896830a8e24d6fab5eccc279a71a83ebd5f15f0a57e` |
+| 2 | `theorem` | [ProvenancePreservingTranslation.retains_source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ProvenanceTranslationProvenancePreservingCertificateTranslation.lean/declarations/provenancepreservingtranslation-retains-source.md) | 22 | `result-track:f2dcff2f7b7cc55634aa8b137bb40b9eecec2db1df0795c0da0439245492a3e6` |
+| 3 | `theorem` | [ProvenancePreservingTranslation.checked_statement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ProvenanceTranslationProvenancePreservingCertificateTranslation.lean/declarations/provenancepreservingtranslation-checked-statement.md) | 29 | `result-track:b950bc4aa8efd76fe665c81f182d481391d3c6c9243ad543f9f1306cdbc133cd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

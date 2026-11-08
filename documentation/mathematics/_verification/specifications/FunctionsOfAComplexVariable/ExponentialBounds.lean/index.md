@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/ExponentialBounds.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/ExponentialBounds.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ExponentialBounds.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ExponentialBounds.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exp_one_near_10](../../../../FunctionsOfAComplexVariable/ExponentialBounds.lean/declarations/exp-one-near-10.md) | 18 | `result-track:32c6710c5beab01689db0e05f58da966eff32e2de3bc5208ea0785f78073ed89` |
-| 2 | `theorem` | [exp_one_near_20](../../../../FunctionsOfAComplexVariable/ExponentialBounds.lean/declarations/exp-one-near-20.md) | 25 | `result-track:676cbdf597a44ed2ecd4a76081fe7b83093ad7adb756a61d28970608c28d2de1` |
-| 3 | `theorem` | [exp_one_gt_d9](../../../../FunctionsOfAComplexVariable/ExponentialBounds.lean/declarations/exp-one-gt-d9.md) | 32 | `result-track:73942ec76bd345728bc117864b97e950972355b0a8c546763176946a20282494` |
-| 4 | `theorem` | [exp_one_lt_d9](../../../../FunctionsOfAComplexVariable/ExponentialBounds.lean/declarations/exp-one-lt-d9.md) | 35 | `result-track:0231cc5a54f4a8f89f39372f2302169dd2fb5d5a78288ff994f28bcab03c7506` |
-| 5 | `theorem` | [exp_neg_one_gt_d9](../../../../FunctionsOfAComplexVariable/ExponentialBounds.lean/declarations/exp-neg-one-gt-d9.md) | 38 | `result-track:99709639d4f2344a50fee6e9a748213735f7ae3bf36c239f2ec173f8dd4e2eb0` |
-| 6 | `theorem` | [exp_neg_one_lt_d9](../../../../FunctionsOfAComplexVariable/ExponentialBounds.lean/declarations/exp-neg-one-lt-d9.md) | 44 | `result-track:e4fd21350a7514b273bdac68846386b6dd5f754aa48fbffda82d43f7461157fb` |
-| 7 | `theorem` | [log_two_near_10](../../../../FunctionsOfAComplexVariable/ExponentialBounds.lean/declarations/log-two-near-10.md) | 48 | `result-track:430c6515a14cfdd92c1cb58469aba7ded10f8d5570ed8da67c969ab54f29d651` |
-| 8 | `theorem` | [log_two_gt_d9](../../../../FunctionsOfAComplexVariable/ExponentialBounds.lean/declarations/log-two-gt-d9.md) | 62 | `result-track:baa504772229f78a96efa6376e067058926ae8899c8117d76bd21b6b3053a612` |
-| 9 | `theorem` | [log_two_lt_d9](../../../../FunctionsOfAComplexVariable/ExponentialBounds.lean/declarations/log-two-lt-d9.md) | 65 | `result-track:7de6ed81f0da3ee8c9d128427d76ac6871bb3c49f01013682815c6a4f92f9d9e` |
+| 1 | `theorem` | [exp_one_near_10](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ExponentialBounds.lean/declarations/exp-one-near-10.md) | 18 | `result-track:32c6710c5beab01689db0e05f58da966eff32e2de3bc5208ea0785f78073ed89` |
+| 2 | `theorem` | [exp_one_near_20](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ExponentialBounds.lean/declarations/exp-one-near-20.md) | 25 | `result-track:676cbdf597a44ed2ecd4a76081fe7b83093ad7adb756a61d28970608c28d2de1` |
+| 3 | `theorem` | [exp_one_gt_d9](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ExponentialBounds.lean/declarations/exp-one-gt-d9.md) | 32 | `result-track:73942ec76bd345728bc117864b97e950972355b0a8c546763176946a20282494` |
+| 4 | `theorem` | [exp_one_lt_d9](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ExponentialBounds.lean/declarations/exp-one-lt-d9.md) | 35 | `result-track:0231cc5a54f4a8f89f39372f2302169dd2fb5d5a78288ff994f28bcab03c7506` |
+| 5 | `theorem` | [exp_neg_one_gt_d9](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ExponentialBounds.lean/declarations/exp-neg-one-gt-d9.md) | 38 | `result-track:99709639d4f2344a50fee6e9a748213735f7ae3bf36c239f2ec173f8dd4e2eb0` |
+| 6 | `theorem` | [exp_neg_one_lt_d9](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ExponentialBounds.lean/declarations/exp-neg-one-lt-d9.md) | 44 | `result-track:e4fd21350a7514b273bdac68846386b6dd5f754aa48fbffda82d43f7461157fb` |
+| 7 | `theorem` | [log_two_near_10](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ExponentialBounds.lean/declarations/log-two-near-10.md) | 48 | `result-track:430c6515a14cfdd92c1cb58469aba7ded10f8d5570ed8da67c969ab54f29d651` |
+| 8 | `theorem` | [log_two_gt_d9](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ExponentialBounds.lean/declarations/log-two-gt-d9.md) | 62 | `result-track:baa504772229f78a96efa6376e067058926ae8899c8117d76bd21b6b3053a612` |
+| 9 | `theorem` | [log_two_lt_d9](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ExponentialBounds.lean/declarations/log-two-lt-d9.md) | 65 | `result-track:7de6ed81f0da3ee8c9d128427d76ac6871bb3c49f01013682815c6a4f92f9d9e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

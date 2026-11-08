@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightPsiCapacityNoGo.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightPsiCapacityNoGo.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightPsiCapacityNoGo.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightPsiCapacityNoGo.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.PinnedPrimeWeightIntegerizedPsiSourceRule`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightIntegerizedPsiSourceRule.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.PinnedPrimeWeightRatioSandwich`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightRatioSandwich.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.PinnedPrimeWeightIntegerizedPsiSourceRule`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightIntegerizedPsiSourceRule.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.PinnedPrimeWeightRatioSandwich`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightRatioSandwich.lean/index.md) — import line 5; pinned internal source present.
 - `Mathlib.Tactic` — import line 6; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [SublinearDyadicEnvelope](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightPsiCapacityNoGo.lean/declarations/sublineardyadicenvelope.md) | 53 | `declaration-track:fe638fb803b259ba2b8a5fb51788f164d1bd149d9468b59da05c3fc638b1ed97` |
-| 2 | `def` | [SquareRootForcedQuadraticRecurrence](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightPsiCapacityNoGo.lean/declarations/squarerootforcedquadraticrecurrence.md) | 60 | `declaration-track:228d054717c705003aab8a06f247fcebd1590488dfb1aba82cb57a497f03336c` |
-| 3 | `theorem` | [sublinear_quadraticRecurrence_eventually_sqrt](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightPsiCapacityNoGo.lean/declarations/sublinear-quadraticrecurrence-eventually-sqrt.md) | 70 | `result-track:2429317bfd85e9f3424e442776ec7e8696487edc376cf707b8c8266441eb4cdf` |
-| 4 | `def` | [UnboundedAdjacentPsiJump](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightPsiCapacityNoGo.lean/declarations/unboundedadjacentpsijump.md) | 173 | `declaration-track:77f402946ed4ec09e0b856cbe34a0670dcd4ad35c33595717dce3d097d441c21` |
-| 5 | `def` | [EnvelopeQuadraticIntegerPsiResponse](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightPsiCapacityNoGo.lean/declarations/envelopequadraticintegerpsiresponse.md) | 184 | `declaration-track:6021f2e7219c42f8163daf87cf04ff268cc57c3baa9408e84db7a928ef8ed56f` |
-| 6 | `theorem` | [no_uniform_integerPsiResponse_of_sublinear_recurrence_and_jumps](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightPsiCapacityNoGo.lean/declarations/no-uniform-integerpsiresponse-of-sublinear-recurrence-and-jumps.md) | 194 | `result-track:b2a662fc40c43ec1b2fcb16a560ba1caf30c26a775071e7a7f8935d22484545c` |
-| 7 | `theorem` | [integerPsiCapacity_to_envelopeQuadraticResponse](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightPsiCapacityNoGo.lean/declarations/integerpsicapacity-to-envelopequadraticresponse.md) | 254 | `result-track:e7959515e4266e88af8b94b1fc4e5f699ea0bba320881b7b827abfdfbd337442` |
+| 1 | `def` | [SublinearDyadicEnvelope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightPsiCapacityNoGo.lean/declarations/sublineardyadicenvelope.md) | 53 | `declaration-track:fe638fb803b259ba2b8a5fb51788f164d1bd149d9468b59da05c3fc638b1ed97` |
+| 2 | `def` | [SquareRootForcedQuadraticRecurrence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightPsiCapacityNoGo.lean/declarations/squarerootforcedquadraticrecurrence.md) | 60 | `declaration-track:228d054717c705003aab8a06f247fcebd1590488dfb1aba82cb57a497f03336c` |
+| 3 | `theorem` | [sublinear_quadraticRecurrence_eventually_sqrt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightPsiCapacityNoGo.lean/declarations/sublinear-quadraticrecurrence-eventually-sqrt.md) | 70 | `result-track:2429317bfd85e9f3424e442776ec7e8696487edc376cf707b8c8266441eb4cdf` |
+| 4 | `def` | [UnboundedAdjacentPsiJump](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightPsiCapacityNoGo.lean/declarations/unboundedadjacentpsijump.md) | 173 | `declaration-track:77f402946ed4ec09e0b856cbe34a0670dcd4ad35c33595717dce3d097d441c21` |
+| 5 | `def` | [EnvelopeQuadraticIntegerPsiResponse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightPsiCapacityNoGo.lean/declarations/envelopequadraticintegerpsiresponse.md) | 184 | `declaration-track:6021f2e7219c42f8163daf87cf04ff268cc57c3baa9408e84db7a928ef8ed56f` |
+| 6 | `theorem` | [no_uniform_integerPsiResponse_of_sublinear_recurrence_and_jumps](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightPsiCapacityNoGo.lean/declarations/no-uniform-integerpsiresponse-of-sublinear-recurrence-and-jumps.md) | 194 | `result-track:b2a662fc40c43ec1b2fcb16a560ba1caf30c26a775071e7a7f8935d22484545c` |
+| 7 | `theorem` | [integerPsiCapacity_to_envelopeQuadraticResponse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightPsiCapacityNoGo.lean/declarations/integerpsicapacity-to-envelopequadraticresponse.md) | 254 | `result-track:e7959515e4266e88af8b94b1fc4e5f699ea0bba320881b7b827abfdfbd337442` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

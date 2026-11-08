@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Geometry/ConvexSpaceModuleTopologyPublic.lean/index.md) · [Full source](../../../../Geometry/ConvexSpaceModuleTopologyPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/ConvexSpaceModuleTopologyPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/ConvexSpaceModuleTopologyPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [continuous_of_affineMap](../../../../Geometry/ConvexSpaceModuleTopologyPublic.lean/declarations/continuous-of-affinemap.md) | 26 | `result-track:ff1cc453d53ddc5f82109215ea8c65e9bce8c7f044be98e1bef3f72ac9646513` |
-| 2 | `lemma` | [continuous_of_isAffineMap](../../../../Geometry/ConvexSpaceModuleTopologyPublic.lean/declarations/continuous-of-isaffinemap.md) | 37 | `result-track:74df0853b1b0ccc940780385437486c16533ba5a4dc9bd3ef1f18c53e4fb85ed` |
+| 1 | `lemma` | [continuous_of_affineMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/ConvexSpaceModuleTopologyPublic.lean/declarations/continuous-of-affinemap.md) | 26 | `result-track:ff1cc453d53ddc5f82109215ea8c65e9bce8c7f044be98e1bef3f72ac9646513` |
+| 2 | `lemma` | [continuous_of_isAffineMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/ConvexSpaceModuleTopologyPublic.lean/declarations/continuous-of-isaffinemap.md) | 37 | `result-track:74df0853b1b0ccc940780385437486c16533ba5a4dc9bd3ef1f18c53e4fb85ed` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

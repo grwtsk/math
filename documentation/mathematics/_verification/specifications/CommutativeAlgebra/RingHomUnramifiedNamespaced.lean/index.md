@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/RingHomUnramifiedNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/RingHomUnramifiedNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomUnramifiedNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomUnramifiedNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [FormallyUnramified](../../../../CommutativeAlgebra/RingHomUnramifiedNamespaced.lean/declarations/formallyunramified.md) | 32 | `declaration-track:1b350f524275905dc968a90b24625f20b2b0acccdd36e3734a61036fa5f4793e` |
-| 2 | `lemma` | [formallyUnramified_algebraMap](../../../../CommutativeAlgebra/RingHomUnramifiedNamespaced.lean/declarations/formallyunramified-algebramap.md) | 36 | `result-track:4f46cd0ef49872d4c752a5bc7494f4a0a0390013317d3a54ce7e5e4cf8d34b49` |
-| 3 | `lemma` | [stableUnderComposition](../../../../CommutativeAlgebra/RingHomUnramifiedNamespaced.lean/declarations/stableundercomposition.md) | 44 | `result-track:8358f43f942be4e833c45086e65d63c99af518797ee2b89b02d55fa256685de0` |
-| 4 | `lemma` | [respectsIso](../../../../CommutativeAlgebra/RingHomUnramifiedNamespaced.lean/declarations/respectsiso.md) | 50 | `result-track:1bda1737c780708389036ea46c5f118eaf13b73fe561f83872cba036313a9f53` |
-| 5 | `lemma` | [isStableUnderBaseChange](../../../../CommutativeAlgebra/RingHomUnramifiedNamespaced.lean/declarations/isstableunderbasechange.md) | 57 | `result-track:e9c7125a1c8bd182b8054074579bd9be703cfc720ec2a0e32ad1fba5fde694a4` |
-| 6 | `lemma` | [holdsForLocalizationAway](../../../../CommutativeAlgebra/RingHomUnramifiedNamespaced.lean/declarations/holdsforlocalizationaway.md) | 65 | `result-track:6c910846b4d043ce597604c62603d8bf01b34d347e501bfbb4b82ec690afc991` |
-| 7 | `lemma` | [ofLocalizationPrime](../../../../CommutativeAlgebra/RingHomUnramifiedNamespaced.lean/declarations/oflocalizationprime.md) | 71 | `result-track:08e0053f26ae099bb3232f05bd859bdd1730e4bf4a9c4a59717badc7be1e3120` |
-| 8 | `lemma` | [ofLocalizationSpanTarget](../../../../CommutativeAlgebra/RingHomUnramifiedNamespaced.lean/declarations/oflocalizationspantarget.md) | 86 | `result-track:a51e61796fcc82062412561b8366e12e7249dcdbe23bde1aa7e7ca60300a0680` |
-| 9 | `lemma` | [propertyIsLocal](../../../../CommutativeAlgebra/RingHomUnramifiedNamespaced.lean/declarations/propertyislocal.md) | 101 | `result-track:f0a20ebe4134ea92dc3638d9a6673adba9c361fca67214a959f9196778a65b44` |
+| 1 | `def` | [FormallyUnramified](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomUnramifiedNamespaced.lean/declarations/formallyunramified.md) | 32 | `declaration-track:1b350f524275905dc968a90b24625f20b2b0acccdd36e3734a61036fa5f4793e` |
+| 2 | `lemma` | [formallyUnramified_algebraMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomUnramifiedNamespaced.lean/declarations/formallyunramified-algebramap.md) | 36 | `result-track:4f46cd0ef49872d4c752a5bc7494f4a0a0390013317d3a54ce7e5e4cf8d34b49` |
+| 3 | `lemma` | [stableUnderComposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomUnramifiedNamespaced.lean/declarations/stableundercomposition.md) | 44 | `result-track:8358f43f942be4e833c45086e65d63c99af518797ee2b89b02d55fa256685de0` |
+| 4 | `lemma` | [respectsIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomUnramifiedNamespaced.lean/declarations/respectsiso.md) | 50 | `result-track:1bda1737c780708389036ea46c5f118eaf13b73fe561f83872cba036313a9f53` |
+| 5 | `lemma` | [isStableUnderBaseChange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomUnramifiedNamespaced.lean/declarations/isstableunderbasechange.md) | 57 | `result-track:e9c7125a1c8bd182b8054074579bd9be703cfc720ec2a0e32ad1fba5fde694a4` |
+| 6 | `lemma` | [holdsForLocalizationAway](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomUnramifiedNamespaced.lean/declarations/holdsforlocalizationaway.md) | 65 | `result-track:6c910846b4d043ce597604c62603d8bf01b34d347e501bfbb4b82ec690afc991` |
+| 7 | `lemma` | [ofLocalizationPrime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomUnramifiedNamespaced.lean/declarations/oflocalizationprime.md) | 71 | `result-track:08e0053f26ae099bb3232f05bd859bdd1730e4bf4a9c4a59717badc7be1e3120` |
+| 8 | `lemma` | [ofLocalizationSpanTarget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomUnramifiedNamespaced.lean/declarations/oflocalizationspantarget.md) | 86 | `result-track:a51e61796fcc82062412561b8366e12e7249dcdbe23bde1aa7e7ca60300a0680` |
+| 9 | `lemma` | [propertyIsLocal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingHomUnramifiedNamespaced.lean/declarations/propertyislocal.md) | 101 | `result-track:f0a20ebe4134ea92dc3638d9a6673adba9c361fca67214a959f9196778a65b44` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

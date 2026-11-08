@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/OpaqueType.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/OpaqueType.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/OpaqueType.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/OpaqueType.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `macro` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/OpaqueType.lean/declarations/macro-source-edition-2.md) | 23 | `declaration-track:f881b7c19ee146994c64c5f07b8ee714fbc097bb8cf41dd22b6ba246b40cefa8` |
-| 2 | `opaque` | [$nonemptyType](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/OpaqueType.lean/declarations/nonemptytype.md) | 34 | `declaration-track:ae6d676a6454ebf1903e559a96b954d86e4c5ebbe1beb3b07d5927a8daddfb09` |
-| 3 | `macro` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/OpaqueType.lean/declarations/macro.md) | 40 | `declaration-track:8123f5fa24e106502d410e1cbd5d8f9ed402faf6032bd704fe275ec8b0945209` |
-| 4 | `def` | [$unsafeMk](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/OpaqueType.lean/declarations/unsafemk.md) | 51 | `declaration-track:916a6f46ad5678eca84d78ee011e75e980e8c1d3b222559eb08bc1cae29a14cd` |
-| 5 | `def` | [$unsafeGet](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/OpaqueType.lean/declarations/unsafeget.md) | 55 | `declaration-track:fdea0cb64833ce2f3477292449e02d54428402a1e85ae978b4bd88b33e0f65a3` |
+| 1 | `macro` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/OpaqueType.lean/declarations/macro-source-edition-2.md) | 23 | `declaration-track:f881b7c19ee146994c64c5f07b8ee714fbc097bb8cf41dd22b6ba246b40cefa8` |
+| 2 | `opaque` | [$nonemptyType](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/OpaqueType.lean/declarations/nonemptytype.md) | 34 | `declaration-track:ae6d676a6454ebf1903e559a96b954d86e4c5ebbe1beb3b07d5927a8daddfb09` |
+| 3 | `macro` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/OpaqueType.lean/declarations/macro.md) | 40 | `declaration-track:8123f5fa24e106502d410e1cbd5d8f9ed402faf6032bd704fe275ec8b0945209` |
+| 4 | `def` | [$unsafeMk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/OpaqueType.lean/declarations/unsafemk.md) | 51 | `declaration-track:916a6f46ad5678eca84d78ee011e75e980e8c1d3b222559eb08bc1cae29a14cd` |
+| 5 | `def` | [$unsafeGet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/OpaqueType.lean/declarations/unsafeget.md) | 55 | `declaration-track:fdea0cb64833ce2f3477292449e02d54428402a1e85ae978b4bd88b33e0f65a3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

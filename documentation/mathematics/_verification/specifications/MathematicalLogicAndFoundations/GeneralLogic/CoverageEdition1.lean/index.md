@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoverageEdition1.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoverageEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoverageEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoverageEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [InvariantTheory](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoverageEdition1.lean/declarations/invarianttheory.md) | 14 | `declaration-track:d2c4627ed2b2a3391f77f737d841b856ce910d90439619af34d87667e1afec25` |
-| 2 | `structure` | [SourceSpecialization](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoverageEdition1.lean/declarations/sourcespecialization.md) | 21 | `declaration-track:ba4503346758c541ac852051c9231e3f064813d8d7be59b00df7aa40c01bad8e` |
-| 3 | `def` | [quadrantCoordinate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoverageEdition1.lean/declarations/quadrantcoordinate.md) | 26 | `declaration-track:26c22493645987ced13c34167d51f9f926010de98acd77faf5c2246e9bb42845` |
-| 4 | `def` | [fourModePresentation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoverageEdition1.lean/declarations/fourmodepresentation.md) | 41 | `declaration-track:56c72d5179d946cd764369dc4f3d2c35d5c129fd90d62498889027678c3b7526` |
-| 5 | `theorem` | [four_mode_coverage](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoverageEdition1.lean/declarations/four-mode-coverage.md) | 70 | `result-track:1612857f2308a9aa6710e9ccc02adf1215cddf248c4a73fbbc6442bf99f24edd` |
-| 6 | `theorem` | [source_relative_scalar_exists_unique](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoverageEdition1.lean/declarations/source-relative-scalar-exists-unique.md) | 85 | `result-track:3e2c2bd14067c76e0cf8fcbad0f982be4d0a818b653353dc25b5253f794defef` |
-| 7 | `def` | [validityRestrictedEquiv](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoverageEdition1.lean/declarations/validityrestrictedequiv.md) | 102 | `declaration-track:e084c9a972f6b937a91e77331e7bab81ac71d335ed42af21eee219c8059f3d1d` |
-| 8 | `def` | [TransformationCardinalityBoundary](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CoverageEdition1.lean/declarations/transformationcardinalityboundary.md) | 135 | `declaration-track:eacd27dc3604b0da453c7b9c3b76bae879231924e244e02d961538fde3367d3c` |
+| 1 | `structure` | [InvariantTheory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoverageEdition1.lean/declarations/invarianttheory.md) | 14 | `declaration-track:d2c4627ed2b2a3391f77f737d841b856ce910d90439619af34d87667e1afec25` |
+| 2 | `structure` | [SourceSpecialization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoverageEdition1.lean/declarations/sourcespecialization.md) | 21 | `declaration-track:ba4503346758c541ac852051c9231e3f064813d8d7be59b00df7aa40c01bad8e` |
+| 3 | `def` | [quadrantCoordinate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoverageEdition1.lean/declarations/quadrantcoordinate.md) | 26 | `declaration-track:26c22493645987ced13c34167d51f9f926010de98acd77faf5c2246e9bb42845` |
+| 4 | `def` | [fourModePresentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoverageEdition1.lean/declarations/fourmodepresentation.md) | 41 | `declaration-track:56c72d5179d946cd764369dc4f3d2c35d5c129fd90d62498889027678c3b7526` |
+| 5 | `theorem` | [four_mode_coverage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoverageEdition1.lean/declarations/four-mode-coverage.md) | 70 | `result-track:1612857f2308a9aa6710e9ccc02adf1215cddf248c4a73fbbc6442bf99f24edd` |
+| 6 | `theorem` | [source_relative_scalar_exists_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoverageEdition1.lean/declarations/source-relative-scalar-exists-unique.md) | 85 | `result-track:3e2c2bd14067c76e0cf8fcbad0f982be4d0a818b653353dc25b5253f794defef` |
+| 7 | `def` | [validityRestrictedEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoverageEdition1.lean/declarations/validityrestrictedequiv.md) | 102 | `declaration-track:e084c9a972f6b937a91e77331e7bab81ac71d335ed42af21eee219c8059f3d1d` |
+| 8 | `def` | [TransformationCardinalityBoundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CoverageEdition1.lean/declarations/transformationcardinalityboundary.md) | 135 | `declaration-track:eacd27dc3604b0da453c7b9c3b76bae879231924e244e02d961538fde3367d3c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

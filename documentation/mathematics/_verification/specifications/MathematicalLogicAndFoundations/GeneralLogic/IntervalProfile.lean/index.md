@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IntervalProfile.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IntervalProfile.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IntervalProfile.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IntervalProfile.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [IntervalProfile](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IntervalProfile.lean/declarations/intervalprofile.md) | 11 | `declaration-track:779c787f8ad059aad61f379e5615c78d6f3956c54507e692a20bae4c7c00b9d1` |
-| 2 | `def` | [lowerSatisfied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IntervalProfile.lean/declarations/lowersatisfied.md) | 32 | `declaration-track:32d9e7717c693532b0bc264a395e19a3606e87a394675e907b7dfb4241ab0553` |
-| 3 | `def` | [upperSatisfied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IntervalProfile.lean/declarations/uppersatisfied.md) | 42 | `declaration-track:4ce5a7f06c0d0986fd1949b3ae40fb96438ce6e3486edc607d66e8db9c7dc3c8` |
-| 4 | `def` | [contains](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IntervalProfile.lean/declarations/contains.md) | 56 | `declaration-track:8a20335ee96f51e83d5d08ebee4b787579cb08f4c13c156f84d9f17ae7b28497` |
-| 5 | `def` | [admissible](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IntervalProfile.lean/declarations/admissible.md) | 66 | `declaration-track:098d25760e1137124b51a084a90ca9d698b3a61f4b8fb94a62ad81da169134e7` |
-| 6 | `def` | [IntervalClaim](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IntervalProfile.lean/declarations/intervalclaim.md) | 77 | `declaration-track:b385108f66a85e738a53ba1e73d24d39cea3c25fe035a4754691e14b0f9a2b42` |
-| 7 | `structure` | [IntervalWitness](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IntervalProfile.lean/declarations/intervalwitness.md) | 84 | `declaration-track:8c562ba2f18ad2662ded3bd48c8ce57a4badfa7fd31f24384dfd23cdc828eb81` |
+| 1 | `structure` | [IntervalProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IntervalProfile.lean/declarations/intervalprofile.md) | 11 | `declaration-track:779c787f8ad059aad61f379e5615c78d6f3956c54507e692a20bae4c7c00b9d1` |
+| 2 | `def` | [lowerSatisfied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IntervalProfile.lean/declarations/lowersatisfied.md) | 32 | `declaration-track:32d9e7717c693532b0bc264a395e19a3606e87a394675e907b7dfb4241ab0553` |
+| 3 | `def` | [upperSatisfied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IntervalProfile.lean/declarations/uppersatisfied.md) | 42 | `declaration-track:4ce5a7f06c0d0986fd1949b3ae40fb96438ce6e3486edc607d66e8db9c7dc3c8` |
+| 4 | `def` | [contains](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IntervalProfile.lean/declarations/contains.md) | 56 | `declaration-track:8a20335ee96f51e83d5d08ebee4b787579cb08f4c13c156f84d9f17ae7b28497` |
+| 5 | `def` | [admissible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IntervalProfile.lean/declarations/admissible.md) | 66 | `declaration-track:098d25760e1137124b51a084a90ca9d698b3a61f4b8fb94a62ad81da169134e7` |
+| 6 | `def` | [IntervalClaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IntervalProfile.lean/declarations/intervalclaim.md) | 77 | `declaration-track:b385108f66a85e738a53ba1e73d24d39cea3c25fe035a4754691e14b0f9a2b42` |
+| 7 | `structure` | [IntervalWitness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IntervalProfile.lean/declarations/intervalwitness.md) | 84 | `declaration-track:8c562ba2f18ad2662ded3bd48c8ce57a4badfa7fd31f24384dfd23cdc828eb81` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

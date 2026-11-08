@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/OrzechPropertyPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/OrzechPropertyPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/OrzechPropertyPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/OrzechPropertyPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [OrzechProperty](../../../../CommutativeAlgebra/OrzechPropertyPublic.lean/declarations/orzechproperty.md) | 63 | `declaration-track:0ae7436d567859d8e5753aabc0ae2f08ff7380df22bf546f694ea02c147f898c` |
-| 2 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/OrzechPropertyPublic.lean/declarations/instance.md) | 69 | `declaration-track:d4eafe16077f52f9f22a37304b640e3a7e497276b8839ba3a62155d627e86b83` |
-| 3 | `theorem` | [injective_of_surjective_of_injective](../../../../CommutativeAlgebra/OrzechPropertyPublic.lean/declarations/injective-of-surjective-of-injective.md) | 79 | `result-track:f2fa6272b0e210ea871d590a58a09cc97b7ce0382c04f5fa9d5e2f6ce7cddb53` |
-| 4 | `theorem` | [bijective_of_surjective_of_injective](../../../../CommutativeAlgebra/OrzechPropertyPublic.lean/declarations/bijective-of-surjective-of-injective.md) | 91 | `result-track:926b1bb5b973efc67df97a777d40adbf931838189a51fd7998486fb7c8e640f8` |
-| 5 | `theorem` | [injective_of_surjective_of_submodule](../../../../CommutativeAlgebra/OrzechPropertyPublic.lean/declarations/injective-of-surjective-of-submodule.md) | 97 | `result-track:50921ab726d240b77745f070a902f84f5517c342481e62faa460622397bbfb3e` |
-| 6 | `theorem` | [injective_of_surjective_endomorphism](../../../../CommutativeAlgebra/OrzechPropertyPublic.lean/declarations/injective-of-surjective-endomorphism.md) | 101 | `result-track:6d7daccce32ccd38011abed5c95481628cc3af2557da03a3f1293006ddb2c3d5` |
-| 7 | `theorem` | [bijective_of_surjective_endomorphism](../../../../CommutativeAlgebra/OrzechPropertyPublic.lean/declarations/bijective-of-surjective-endomorphism.md) | 105 | `result-track:6d9c24e1c4e4420fe1f624f6ee92fcde45bf9cb7378b42d337e1a2ded887b04e` |
+| 1 | `class` | [OrzechProperty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/OrzechPropertyPublic.lean/declarations/orzechproperty.md) | 63 | `declaration-track:0ae7436d567859d8e5753aabc0ae2f08ff7380df22bf546f694ea02c147f898c` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/OrzechPropertyPublic.lean/declarations/instance.md) | 69 | `declaration-track:d4eafe16077f52f9f22a37304b640e3a7e497276b8839ba3a62155d627e86b83` |
+| 3 | `theorem` | [injective_of_surjective_of_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/OrzechPropertyPublic.lean/declarations/injective-of-surjective-of-injective.md) | 79 | `result-track:f2fa6272b0e210ea871d590a58a09cc97b7ce0382c04f5fa9d5e2f6ce7cddb53` |
+| 4 | `theorem` | [bijective_of_surjective_of_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/OrzechPropertyPublic.lean/declarations/bijective-of-surjective-of-injective.md) | 91 | `result-track:926b1bb5b973efc67df97a777d40adbf931838189a51fd7998486fb7c8e640f8` |
+| 5 | `theorem` | [injective_of_surjective_of_submodule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/OrzechPropertyPublic.lean/declarations/injective-of-surjective-of-submodule.md) | 97 | `result-track:50921ab726d240b77745f070a902f84f5517c342481e62faa460622397bbfb3e` |
+| 6 | `theorem` | [injective_of_surjective_endomorphism](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/OrzechPropertyPublic.lean/declarations/injective-of-surjective-endomorphism.md) | 101 | `result-track:6d7daccce32ccd38011abed5c95481628cc3af2557da03a3f1293006ddb2c3d5` |
+| 7 | `theorem` | [bijective_of_surjective_endomorphism](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/OrzechPropertyPublic.lean/declarations/bijective-of-surjective-endomorphism.md) | 105 | `result-track:6d9c24e1c4e4420fe1f624f6ee92fcde45bf9cb7378b42d337e1a2ded887b04e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/EstimateSourceEdgeCorrelationNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/EstimateSourceEdgeCorrelationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EstimateSourceEdgeCorrelationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EstimateSourceEdgeCorrelationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [edgePolynomial](../../../../MeasureAndIntegration/EstimateSourceEdgeCorrelationNamespaced.lean/declarations/edgepolynomial.md) | 30 | `declaration-track:1a953960098b459c3edcb01f01e21f10b201236c4b93f7e41dbc009525373eed` |
-| 2 | `theorem` | [sourceCorrelation_edge_overlap](../../../../MeasureAndIntegration/EstimateSourceEdgeCorrelationNamespaced.lean/declarations/sourcecorrelation-edge-overlap.md) | 33 | `result-track:cc25fca9cdc3aa53f195573b0e9639d797812cfaf2a5b4dde230993ff27e89a2` |
-| 3 | `theorem` | [endpointProduct_intervalIntegrable](../../../../MeasureAndIntegration/EstimateSourceEdgeCorrelationNamespaced.lean/declarations/endpointproduct-intervalintegrable.md) | 64 | `result-track:c3adb993346d02bce9ea5ed9742624f2d5032956762d59e16054e138324ad587` |
-| 4 | `theorem` | [sourceCorrelation_upper_edge](../../../../MeasureAndIntegration/EstimateSourceEdgeCorrelationNamespaced.lean/declarations/sourcecorrelation-upper-edge.md) | 73 | `result-track:b4ace2a8c6c3831b9c13932d3dc242b74ca18236ef7c94d5b3e791c937aa6565` |
-| 5 | `theorem` | [endpointPolynomial_full_overlap_integral](../../../../MeasureAndIntegration/EstimateSourceEdgeCorrelationNamespaced.lean/declarations/endpointpolynomial-full-overlap-integral.md) | 99 | `result-track:480c3d4cc4de3553e0557e0920f54a1fb4a75c79cbc7b3a71689cc7b98e58f5f` |
-| 6 | `theorem` | [sourceCorrelation_upper_edge_abs_le](../../../../MeasureAndIntegration/EstimateSourceEdgeCorrelationNamespaced.lean/declarations/sourcecorrelation-upper-edge-abs-le.md) | 110 | `result-track:716bf9cd96b036ba4d98f5fc4945394e8a7fb967456d050e8bc24133ecde0768` |
+| 1 | `def` | [edgePolynomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EstimateSourceEdgeCorrelationNamespaced.lean/declarations/edgepolynomial.md) | 30 | `declaration-track:1a953960098b459c3edcb01f01e21f10b201236c4b93f7e41dbc009525373eed` |
+| 2 | `theorem` | [sourceCorrelation_edge_overlap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EstimateSourceEdgeCorrelationNamespaced.lean/declarations/sourcecorrelation-edge-overlap.md) | 33 | `result-track:cc25fca9cdc3aa53f195573b0e9639d797812cfaf2a5b4dde230993ff27e89a2` |
+| 3 | `theorem` | [endpointProduct_intervalIntegrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EstimateSourceEdgeCorrelationNamespaced.lean/declarations/endpointproduct-intervalintegrable.md) | 64 | `result-track:c3adb993346d02bce9ea5ed9742624f2d5032956762d59e16054e138324ad587` |
+| 4 | `theorem` | [sourceCorrelation_upper_edge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EstimateSourceEdgeCorrelationNamespaced.lean/declarations/sourcecorrelation-upper-edge.md) | 73 | `result-track:b4ace2a8c6c3831b9c13932d3dc242b74ca18236ef7c94d5b3e791c937aa6565` |
+| 5 | `theorem` | [endpointPolynomial_full_overlap_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EstimateSourceEdgeCorrelationNamespaced.lean/declarations/endpointpolynomial-full-overlap-integral.md) | 99 | `result-track:480c3d4cc4de3553e0557e0920f54a1fb4a75c79cbc7b3a71689cc7b98e58f5f` |
+| 6 | `theorem` | [sourceCorrelation_upper_edge_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EstimateSourceEdgeCorrelationNamespaced.lean/declarations/sourcecorrelation-upper-edge-abs-le.md) | 110 | `result-track:716bf9cd96b036ba4d98f5fc4945394e8a7fb967456d050e8bc24133ecde0768` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

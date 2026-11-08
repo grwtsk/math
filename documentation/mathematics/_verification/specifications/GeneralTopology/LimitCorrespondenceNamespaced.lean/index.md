@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/LimitCorrespondenceNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/LimitCorrespondenceNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LimitCorrespondenceNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LimitCorrespondenceNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [ArithmeticLimitMode](../../../../GeneralTopology/LimitCorrespondenceNamespaced.lean/declarations/arithmeticlimitmode.md) | 31 | `declaration-track:0e0705dadd61f3d06d7aad3af919d4e4874e8fc166d96fcaf6dec3786bdef980` |
-| 2 | `structure` | [TestSpaceCompatibilityCertificate](../../../../GeneralTopology/LimitCorrespondenceNamespaced.lean/declarations/testspacecompatibilitycertificate.md) | 37 | `declaration-track:1d013ec99e2b30470d0091e2ea2e4d4cf8bca0916805049717553172e8834ea4` |
-| 3 | `structure` | [NormalizedLimitArithmeticCorrespondence](../../../../GeneralTopology/LimitCorrespondenceNamespaced.lean/declarations/normalizedlimitarithmeticcorrespondence.md) | 63 | `declaration-track:d5675371b60d574386684cba6468e18eb779a7de92115ecdbea337b66ef612d3` |
-| 4 | `abbrev` | [LimitArithmeticCorrespondence](../../../../GeneralTopology/LimitCorrespondenceNamespaced.lean/declarations/limitarithmeticcorrespondence.md) | 136 | `declaration-track:8d646528f0f83614d09691c090837d7e942df267aa65719a4e3ad54e5434e217` |
-| 5 | `theorem` | [normalized_limit_arithmetic_trace_correspondence](../../../../GeneralTopology/LimitCorrespondenceNamespaced.lean/declarations/normalized-limit-arithmetic-trace-correspondence.md) | 139 | `result-track:824c426fba3ed65ca322c498e9d40052b30bec70691d2d6074decb0f200b8dda` |
+| 1 | `inductive` | [ArithmeticLimitMode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LimitCorrespondenceNamespaced.lean/declarations/arithmeticlimitmode.md) | 31 | `declaration-track:0e0705dadd61f3d06d7aad3af919d4e4874e8fc166d96fcaf6dec3786bdef980` |
+| 2 | `structure` | [TestSpaceCompatibilityCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LimitCorrespondenceNamespaced.lean/declarations/testspacecompatibilitycertificate.md) | 37 | `declaration-track:1d013ec99e2b30470d0091e2ea2e4d4cf8bca0916805049717553172e8834ea4` |
+| 3 | `structure` | [NormalizedLimitArithmeticCorrespondence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LimitCorrespondenceNamespaced.lean/declarations/normalizedlimitarithmeticcorrespondence.md) | 63 | `declaration-track:d5675371b60d574386684cba6468e18eb779a7de92115ecdbea337b66ef612d3` |
+| 4 | `abbrev` | [LimitArithmeticCorrespondence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LimitCorrespondenceNamespaced.lean/declarations/limitarithmeticcorrespondence.md) | 136 | `declaration-track:8d646528f0f83614d09691c090837d7e942df267aa65719a4e3ad54e5434e217` |
+| 5 | `theorem` | [normalized_limit_arithmetic_trace_correspondence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LimitCorrespondenceNamespaced.lean/declarations/normalized-limit-arithmetic-trace-correspondence.md) | 139 | `result-track:824c426fba3ed65ca322c498e9d40052b30bec70691d2d6074decb0f200b8dda` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

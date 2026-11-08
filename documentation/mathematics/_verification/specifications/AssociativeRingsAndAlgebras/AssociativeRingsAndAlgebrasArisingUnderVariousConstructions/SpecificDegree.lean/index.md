@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/SpecificDegree.lean/index.md) · [Full source](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/SpecificDegree.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/SpecificDegree.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/SpecificDegree.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Monic.irreducible_iff_roots_eq_zero_of_degree_le_three](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/SpecificDegree.lean/declarations/monic-irreducible-iff-roots-eq-zero-of-degree-le-three.md) | 23 | `result-track:a74a1a6131261053d46e4472ddbda5c6ad449e4df1888e6404897d6f841a3459` |
-| 2 | `theorem` | [irreducible_iff_roots_eq_zero_of_degree_le_three](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/SpecificDegree.lean/declarations/irreducible-iff-roots-eq-zero-of-degree-le-three.md) | 44 | `result-track:d92bd22b0e8c01ec6ec80ad05deac13af5c10943a7c18b743d6d2d62a51ccc55` |
-| 3 | `lemma` | [irreducible_of_degree_le_three_of_not_isRoot](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/SpecificDegree.lean/declarations/irreducible-of-degree-le-three-of-not-isroot.md) | 55 | `result-track:4310ad8e774d82e3ac36770601e917da29f7feb252d115b001c84bc9d1690700` |
+| 1 | `theorem` | [Monic.irreducible_iff_roots_eq_zero_of_degree_le_three](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/SpecificDegree.lean/declarations/monic-irreducible-iff-roots-eq-zero-of-degree-le-three.md) | 23 | `result-track:a74a1a6131261053d46e4472ddbda5c6ad449e4df1888e6404897d6f841a3459` |
+| 2 | `theorem` | [irreducible_iff_roots_eq_zero_of_degree_le_three](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/SpecificDegree.lean/declarations/irreducible-iff-roots-eq-zero-of-degree-le-three.md) | 44 | `result-track:d92bd22b0e8c01ec6ec80ad05deac13af5c10943a7c18b743d6d2d62a51ccc55` |
+| 3 | `lemma` | [irreducible_of_degree_le_three_of_not_isRoot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/SpecificDegree.lean/declarations/irreducible-of-degree-le-three-of-not-isroot.md) | 55 | `result-track:4310ad8e774d82e3ac36770601e917da29f7feb252d115b001c84bc9d1690700` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

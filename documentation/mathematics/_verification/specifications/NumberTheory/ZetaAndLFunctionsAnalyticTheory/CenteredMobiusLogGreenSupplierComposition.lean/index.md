@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenSupplierComposition.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenSupplierComposition.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenSupplierComposition.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenSupplierComposition.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenFiniteSourceIBP`](../../../../../MeasureAndIntegration/CenteredMobiusLogGreenFiniteSourceIBP.lean/index.md) — import line 6; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenThreeSupplier`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenThreeSupplier.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenFiniteSourceIBP`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredMobiusLogGreenFiniteSourceIBP.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenThreeSupplier`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenThreeSupplier.lean/index.md) — import line 7; pinned internal source present.
 - `Mathlib.Tactic` — import line 8; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [thinGreenEnergy_eq_historicalGreenEnergy](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenSupplierComposition.lean/declarations/thingreenenergy-eq-historicalgreenenergy.md) | 17 | `result-track:0315613160b85f4ca14a9fa00b7a22cb02ca27ce290ed366370337f14487878d` |
-| 2 | `theorem` | [historicalDyadicScale_ge_two](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenSupplierComposition.lean/declarations/historicaldyadicscale-ge-two.md) | 27 | `result-track:dc4f9a5dfb6e3791b08d0c522a08e8863ca1983c589091adaab50fd2d8269d04` |
-| 3 | `theorem` | [allDyadicEnergyBound_of_centered_and_boundaries](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenSupplierComposition.lean/declarations/alldyadicenergybound-of-centered-and-boundaries.md) | 34 | `result-track:051abd33e98916b8da68a47e983d16ef75c085c73857ee9668a99f119501738e` |
-| 4 | `def` | [CenteredMobiusLogThreeSupplierPackage](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenSupplierComposition.lean/declarations/centeredmobiuslogthreesupplierpackage.md) | 47 | `declaration-track:fdcebe16bba410a416bafd7956affbf6617ee09b17324cc8244ab84524d8af91` |
-| 5 | `theorem` | [allDyadicEnergyBound_of_threeSupplierPackage](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenSupplierComposition.lean/declarations/alldyadicenergybound-of-threesupplierpackage.md) | 52 | `result-track:9a729024f553533ccf58c81b29c9df4fb95234f18c57fc74cea4259d526f555c` |
+| 1 | `theorem` | [thinGreenEnergy_eq_historicalGreenEnergy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenSupplierComposition.lean/declarations/thingreenenergy-eq-historicalgreenenergy.md) | 17 | `result-track:0315613160b85f4ca14a9fa00b7a22cb02ca27ce290ed366370337f14487878d` |
+| 2 | `theorem` | [historicalDyadicScale_ge_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenSupplierComposition.lean/declarations/historicaldyadicscale-ge-two.md) | 27 | `result-track:dc4f9a5dfb6e3791b08d0c522a08e8863ca1983c589091adaab50fd2d8269d04` |
+| 3 | `theorem` | [allDyadicEnergyBound_of_centered_and_boundaries](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenSupplierComposition.lean/declarations/alldyadicenergybound-of-centered-and-boundaries.md) | 34 | `result-track:051abd33e98916b8da68a47e983d16ef75c085c73857ee9668a99f119501738e` |
+| 4 | `def` | [CenteredMobiusLogThreeSupplierPackage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenSupplierComposition.lean/declarations/centeredmobiuslogthreesupplierpackage.md) | 47 | `declaration-track:fdcebe16bba410a416bafd7956affbf6617ee09b17324cc8244ab84524d8af91` |
+| 5 | `theorem` | [allDyadicEnergyBound_of_threeSupplierPackage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenSupplierComposition.lean/declarations/alldyadicenergybound-of-threesupplierpackage.md) | 52 | `result-track:9a729024f553533ccf58c81b29c9df4fb95234f18c57fc74cea4259d526f555c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Spinor.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Spinor.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Spinor.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Spinor.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [ℓ²](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Spinor.lean/declarations/anonymous.md) | 13 | `declaration-track:b72fc2057a43bbd658ed03401b2f77c82385d2419ded71a3573e78eeb461e62d` |
-| 2 | `def` | [embed](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Spinor.lean/declarations/embed.md) | 16 | `declaration-track:31343316bab865f5736180c9795ec7ec0eb7e1f5457e89d9938eec87080658bb` |
-| 3 | `def` | [dist](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Spinor.lean/declarations/dist.md) | 22 | `declaration-track:e7697f9d6600f4a98b0cd92cddd39f960cf7a12fab1d71f6c97d2bdade50632a` |
-| 4 | `def` | [addSpin](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Spinor.lean/declarations/addspin.md) | 26 | `declaration-track:6dd42beecbb1c49141a9bfc8600c4dcd151467444aa629d811b56da1463d2978` |
-| 5 | `theorem` | [sound](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Spinor.lean/declarations/sound.md) | 42 | `result-track:1e46b66200fbecfeaebf27b6594755f01edd61cbd4b985e9bf4db6fdd155e6fe` |
+| 1 | `abbrev` | [ℓ²](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Spinor.lean/declarations/anonymous.md) | 13 | `declaration-track:b72fc2057a43bbd658ed03401b2f77c82385d2419ded71a3573e78eeb461e62d` |
+| 2 | `def` | [embed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Spinor.lean/declarations/embed.md) | 16 | `declaration-track:31343316bab865f5736180c9795ec7ec0eb7e1f5457e89d9938eec87080658bb` |
+| 3 | `def` | [dist](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Spinor.lean/declarations/dist.md) | 22 | `declaration-track:e7697f9d6600f4a98b0cd92cddd39f960cf7a12fab1d71f6c97d2bdade50632a` |
+| 4 | `def` | [addSpin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Spinor.lean/declarations/addspin.md) | 26 | `declaration-track:6dd42beecbb1c49141a9bfc8600c4dcd151467444aa629d811b56da1463d2978` |
+| 5 | `theorem` | [sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Spinor.lean/declarations/sound.md) | 42 | `result-track:1e46b66200fbecfeaebf27b6594755f01edd61cbd4b985e9bf4db6fdd155e6fe` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

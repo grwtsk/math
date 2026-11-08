@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeProd.lean/index.md) · [Full source](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeProd.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeProd.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeProd.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,18 +58,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [toFinset_prod](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeProd.lean/declarations/tofinset-prod.md) | 27 | `result-track:cf7628a5706a365da7075b9a1834b29350c76e495d806ba2b662e024a7403423` |
-| 2 | `theorem` | [toFinset_off_diag](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeProd.lean/declarations/tofinset-off-diag.md) | 32 | `result-track:6c3315f0add793ee88e9acce062ffd48dfe0cdb020003be957f79a26b8adc587` |
-| 3 | `instance` | [instFintypeProd](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeProd.lean/declarations/instfintypeprod.md) | 38 | `declaration-track:00ab49554cf15fc4f13de1670f8b6b76ca7416b2bdbf268ec81a4aa75ace2826` |
-| 4 | `lemma` | [univ_product_univ](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeProd.lean/declarations/univ-product-univ.md) | 44 | `result-track:4948e44fe2a73c7a892522b526d2b77a79d18efbcdb2a38f27e656ab65aa1d10` |
-| 5 | `lemma` | [product_eq_univ](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeProd.lean/declarations/product-eq-univ.md) | 46 | `result-track:ff9887fbd3861ab2df5cbf9c8055fba31cf2c915c3e4d578abdaea46adf134f7` |
-| 6 | `theorem` | [Fintype.card_prod](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeProd.lean/declarations/fintype-card-prod.md) | 52 | `result-track:67c13bbc89d4db7236c4ce6285d147f404ecc8fa91c392f9b37c4f497b99b9cf` |
-| 7 | `theorem` | [infinite_prod](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeProd.lean/declarations/infinite-prod.md) | 59 | `result-track:2f1f53c44b27089e00286078156ee57c9143043b11858aed5350eb7b7d6f7590` |
-| 8 | `instance` | [Pi.infinite_of_left](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeProd.lean/declarations/pi-infinite-of-left.md) | 68 | `declaration-track:74c4ef9d373b4fbf3458760b0c5f69bf3c19fc741e5a0b95182aa5865b5ff5bb` |
-| 9 | `theorem` | [Pi.infinite_of_exists_right](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeProd.lean/declarations/pi-infinite-of-exists-right.md) | 77 | `result-track:cd52501c03175c5e9a08c9ac25f17f9e855c8c93c807663ddca944b8a690449d` |
-| 10 | `instance` | [Pi.infinite_of_right](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeProd.lean/declarations/pi-infinite-of-right.md) | 84 | `declaration-track:4aa41341ef2e6d4d8aed62805bce021cdd7ea3eae904899368036e0d76b9b07b` |
-| 11 | `instance` | [Function.infinite_of_left](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeProd.lean/declarations/function-infinite-of-left.md) | 89 | `declaration-track:0f3ac4e127f4ddd7537863ac2e8fcc25960c74ea682dd3eb853da47d4db39ac0` |
-| 12 | `instance` | [Function.infinite_of_right](../../../../../Combinatorics/EnumerativeCombinatorics/FintypeProd.lean/declarations/function-infinite-of-right.md) | 94 | `declaration-track:a98590c5231389b5e0859b5a72a1f0df5abdafdcfa4e0734d4f435ee8086f899` |
+| 1 | `theorem` | [toFinset_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeProd.lean/declarations/tofinset-prod.md) | 27 | `result-track:cf7628a5706a365da7075b9a1834b29350c76e495d806ba2b662e024a7403423` |
+| 2 | `theorem` | [toFinset_off_diag](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeProd.lean/declarations/tofinset-off-diag.md) | 32 | `result-track:6c3315f0add793ee88e9acce062ffd48dfe0cdb020003be957f79a26b8adc587` |
+| 3 | `instance` | [instFintypeProd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeProd.lean/declarations/instfintypeprod.md) | 38 | `declaration-track:00ab49554cf15fc4f13de1670f8b6b76ca7416b2bdbf268ec81a4aa75ace2826` |
+| 4 | `lemma` | [univ_product_univ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeProd.lean/declarations/univ-product-univ.md) | 44 | `result-track:4948e44fe2a73c7a892522b526d2b77a79d18efbcdb2a38f27e656ab65aa1d10` |
+| 5 | `lemma` | [product_eq_univ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeProd.lean/declarations/product-eq-univ.md) | 46 | `result-track:ff9887fbd3861ab2df5cbf9c8055fba31cf2c915c3e4d578abdaea46adf134f7` |
+| 6 | `theorem` | [Fintype.card_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeProd.lean/declarations/fintype-card-prod.md) | 52 | `result-track:67c13bbc89d4db7236c4ce6285d147f404ecc8fa91c392f9b37c4f497b99b9cf` |
+| 7 | `theorem` | [infinite_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeProd.lean/declarations/infinite-prod.md) | 59 | `result-track:2f1f53c44b27089e00286078156ee57c9143043b11858aed5350eb7b7d6f7590` |
+| 8 | `instance` | [Pi.infinite_of_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeProd.lean/declarations/pi-infinite-of-left.md) | 68 | `declaration-track:74c4ef9d373b4fbf3458760b0c5f69bf3c19fc741e5a0b95182aa5865b5ff5bb` |
+| 9 | `theorem` | [Pi.infinite_of_exists_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeProd.lean/declarations/pi-infinite-of-exists-right.md) | 77 | `result-track:cd52501c03175c5e9a08c9ac25f17f9e855c8c93c807663ddca944b8a690449d` |
+| 10 | `instance` | [Pi.infinite_of_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeProd.lean/declarations/pi-infinite-of-right.md) | 84 | `declaration-track:4aa41341ef2e6d4d8aed62805bce021cdd7ea3eae904899368036e0d76b9b07b` |
+| 11 | `instance` | [Function.infinite_of_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeProd.lean/declarations/function-infinite-of-left.md) | 89 | `declaration-track:0f3ac4e127f4ddd7537863ac2e8fcc25960c74ea682dd3eb853da47d4db39ac0` |
+| 12 | `instance` | [Function.infinite_of_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypeProd.lean/declarations/function-infinite-of-right.md) | 94 | `declaration-track:a98590c5231389b5e0859b5a72a1f0df5abdafdcfa4e0734d4f435ee8086f899` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

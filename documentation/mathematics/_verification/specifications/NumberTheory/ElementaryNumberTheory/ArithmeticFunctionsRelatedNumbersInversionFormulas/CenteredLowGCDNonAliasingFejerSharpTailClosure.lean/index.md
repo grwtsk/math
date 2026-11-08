@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDNonAliasingFejerSharpTailClosure.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDNonAliasingFejerSharpTailClosure.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDNonAliasingFejerSharpTailClosure.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDNonAliasingFejerSharpTailClosure.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Moebius.CenteredLowGCDSharpDivisibilityTail`](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDSharpDivisibilityTail.lean/index.md) — import line 7; pinned internal source present.
-- [`GRWTSK.NumberTheory.Moebius.CenteredLowGCDNonAliasingFejerResidualObstruction`](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDNonAliasingFejerResidualObstruction.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.CenteredLowGCDSharpDivisibilityTail`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDSharpDivisibilityTail.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.CenteredLowGCDNonAliasingFejerResidualObstruction`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDNonAliasingFejerResidualObstruction.lean/index.md) — import line 8; pinned internal source present.
 - `Mathlib.Tactic` — import line 9; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [nonAliasingFejerSharpDivisibilityTail_proved](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDNonAliasingFejerSharpTailClosure.lean/declarations/nonaliasingfejersharpdivisibilitytail-proved.md) | 34 | `result-track:484dad632ef323dcc90d963d3b3c4383ed9ca03e2c8d610dbbb279a34af96179` |
-| 2 | `theorem` | [abs_nonAliasingFejer_cutoffCorrection_le_target](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDNonAliasingFejerSharpTailClosure.lean/declarations/abs-nonaliasingfejer-cutoffcorrection-le-target.md) | 56 | `result-track:f3ae4d33e781f3b5486f2c7cb2ec42edcc6ef5b82b37daeb764fb06466b8ec0b` |
-| 3 | `theorem` | [centeredMass_sq_le_of_residual](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDNonAliasingFejerSharpTailClosure.lean/declarations/centeredmass-sq-le-of-residual.md) | 73 | `result-track:92a9cd85b27affd2666d9dd193230d316ac347ff807c27926c04f1acbc9c2436` |
-| 4 | `theorem` | [abs_residual_le_of_centeredMass_sq](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDNonAliasingFejerSharpTailClosure.lean/declarations/abs-residual-le-of-centeredmass-sq.md) | 94 | `result-track:f14dca41721f9532acca55ad72d86d0f4de6a7923b966ac88dea8f2ad5e8f9e4` |
-| 5 | `theorem` | [abs_nonAliasingFejer_positiveShift_sqrt_le_of_centeredMass_sq_closedTail](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDNonAliasingFejerSharpTailClosure.lean/declarations/abs-nonaliasingfejer-positiveshift-sqrt-le-of-centeredmass-sq-closedtail.md) | 116 | `result-track:69f4c27825b79f3172ff63a7348f4b97b4f5fcfcec956e37ca088736a40cfb44` |
+| 1 | `theorem` | [nonAliasingFejerSharpDivisibilityTail_proved](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDNonAliasingFejerSharpTailClosure.lean/declarations/nonaliasingfejersharpdivisibilitytail-proved.md) | 34 | `result-track:484dad632ef323dcc90d963d3b3c4383ed9ca03e2c8d610dbbb279a34af96179` |
+| 2 | `theorem` | [abs_nonAliasingFejer_cutoffCorrection_le_target](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDNonAliasingFejerSharpTailClosure.lean/declarations/abs-nonaliasingfejer-cutoffcorrection-le-target.md) | 56 | `result-track:f3ae4d33e781f3b5486f2c7cb2ec42edcc6ef5b82b37daeb764fb06466b8ec0b` |
+| 3 | `theorem` | [centeredMass_sq_le_of_residual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDNonAliasingFejerSharpTailClosure.lean/declarations/centeredmass-sq-le-of-residual.md) | 73 | `result-track:92a9cd85b27affd2666d9dd193230d316ac347ff807c27926c04f1acbc9c2436` |
+| 4 | `theorem` | [abs_residual_le_of_centeredMass_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDNonAliasingFejerSharpTailClosure.lean/declarations/abs-residual-le-of-centeredmass-sq.md) | 94 | `result-track:f14dca41721f9532acca55ad72d86d0f4de6a7923b966ac88dea8f2ad5e8f9e4` |
+| 5 | `theorem` | [abs_nonAliasingFejer_positiveShift_sqrt_le_of_centeredMass_sq_closedTail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDNonAliasingFejerSharpTailClosure.lean/declarations/abs-nonaliasingfejer-positiveshift-sqrt-le-of-centeredmass-sq-closedtail.md) | 116 | `result-track:69f4c27825b79f3172ff63a7348f4b97b4f5fcfcec956e37ca088736a40cfb44` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

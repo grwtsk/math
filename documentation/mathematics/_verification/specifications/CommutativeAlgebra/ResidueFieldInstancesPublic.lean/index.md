@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/ResidueFieldInstancesPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/ResidueFieldInstancesPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ResidueFieldInstancesPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ResidueFieldInstancesPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/ResidueFieldInstancesPublic.lean/declarations/instance-source-edition-4.md) | 31 | `declaration-track:c1b3137267b08982dd09e502867d6a9b806bb5c61f0f4fd9da8927ef4b2b9099` |
-| 2 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/ResidueFieldInstancesPublic.lean/declarations/instance-source-edition-2.md) | 40 | `declaration-track:6ad2067f3ae42ac303dbef8784b1594aee93cc53fd946596bdded8eef6af9a72` |
-| 3 | `lemma` | [Algebra.isSeparable_residueField_iff](../../../../CommutativeAlgebra/ResidueFieldInstancesPublic.lean/declarations/algebra-isseparable-residuefield-iff.md) | 55 | `result-track:48f7d302d9fcba1f33cdf81e591267c330b95dad9ce11f08bf992cdc3668b5f3` |
-| 4 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/ResidueFieldInstancesPublic.lean/declarations/instance.md) | 66 | `declaration-track:14bbc55877af6dc2f5bbed7d88aec9c2843d3ee262a571ceee98c8e7b26b0e1a` |
-| 5 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/ResidueFieldInstancesPublic.lean/declarations/instance-source-edition-5.md) | 70 | `declaration-track:ea5ba776d2fb3944785a82467aa2092b91b17b14136032826d579962f8b2c0e4` |
-| 6 | `instance` | [ResidueField.algebraOfIsIntegral](../../../../CommutativeAlgebra/ResidueFieldInstancesPublic.lean/declarations/residuefield-algebraofisintegral.md) | 89 | `declaration-track:718cee9544782752806828f5cb58b52e9ce39247eef6b33386b63b835dc5a513` |
-| 7 | `instance` | [ResidueField.isScalarTowerOfIsIntegral](../../../../CommutativeAlgebra/ResidueFieldInstancesPublic.lean/declarations/residuefield-isscalartowerofisintegral.md) | 93 | `declaration-track:bd81a2799987fe5efcfa59329cb9c274f2db4d7bb7709af6334dbcea530f29c7` |
-| 8 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/ResidueFieldInstancesPublic.lean/declarations/instance-source-edition-3.md) | 97 | `declaration-track:b9bad93c7fec336be01fe226b33cc1f30042e6b3a17ef62a0493080f2eaffdf2` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ResidueFieldInstancesPublic.lean/declarations/instance-source-edition-4.md) | 31 | `declaration-track:c1b3137267b08982dd09e502867d6a9b806bb5c61f0f4fd9da8927ef4b2b9099` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ResidueFieldInstancesPublic.lean/declarations/instance-source-edition-2.md) | 40 | `declaration-track:6ad2067f3ae42ac303dbef8784b1594aee93cc53fd946596bdded8eef6af9a72` |
+| 3 | `lemma` | [Algebra.isSeparable_residueField_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ResidueFieldInstancesPublic.lean/declarations/algebra-isseparable-residuefield-iff.md) | 55 | `result-track:48f7d302d9fcba1f33cdf81e591267c330b95dad9ce11f08bf992cdc3668b5f3` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ResidueFieldInstancesPublic.lean/declarations/instance.md) | 66 | `declaration-track:14bbc55877af6dc2f5bbed7d88aec9c2843d3ee262a571ceee98c8e7b26b0e1a` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ResidueFieldInstancesPublic.lean/declarations/instance-source-edition-5.md) | 70 | `declaration-track:ea5ba776d2fb3944785a82467aa2092b91b17b14136032826d579962f8b2c0e4` |
+| 6 | `instance` | [ResidueField.algebraOfIsIntegral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ResidueFieldInstancesPublic.lean/declarations/residuefield-algebraofisintegral.md) | 89 | `declaration-track:718cee9544782752806828f5cb58b52e9ce39247eef6b33386b63b835dc5a513` |
+| 7 | `instance` | [ResidueField.isScalarTowerOfIsIntegral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ResidueFieldInstancesPublic.lean/declarations/residuefield-isscalartowerofisintegral.md) | 93 | `declaration-track:bd81a2799987fe5efcfa59329cb9c274f2db4d7bb7709af6334dbcea530f29c7` |
+| 8 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ResidueFieldInstancesPublic.lean/declarations/instance-source-edition-3.md) | 97 | `declaration-track:b9bad93c7fec336be01fe226b33cc1f30042e6b3a17ef62a0493080f2eaffdf2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

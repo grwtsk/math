@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/IncorrectOwnStep.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/IncorrectOwnStep.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IncorrectOwnStep.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IncorrectOwnStep.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.LinearAlgebra.GaugeState`](../../../../GroupTheoryAndGeneralizations/GaugeStateHistoricalSourceEdition2.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Algebra.LinearAlgebra.GaugeState`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GaugeStateHistoricalSourceEdition2.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [B](../../../../GroupTheoryAndGeneralizations/IncorrectOwnStep.lean/declarations/b.md) | 3 | `declaration-track:41d4548372f496309a5a804bd43764fd0145b98de90ca3ad68a962ce9fc9ab9c` |
-| 2 | `def` | [X](../../../../GroupTheoryAndGeneralizations/IncorrectOwnStep.lean/declarations/x.md) | 4 | `declaration-track:189f4c122b49d2c7a871aa463f9231ffb18bc0ac866d331a1273576a439f2121` |
-| 3 | `example` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/IncorrectOwnStep.lean/declarations/example.md) | 5 | `declaration-track:88877098d6e2f618bae1b620dd53eafdb021b20d055f398877f912b3218a370f` |
+| 1 | `def` | [B](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IncorrectOwnStep.lean/declarations/b.md) | 3 | `declaration-track:41d4548372f496309a5a804bd43764fd0145b98de90ca3ad68a962ce9fc9ab9c` |
+| 2 | `def` | [X](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IncorrectOwnStep.lean/declarations/x.md) | 4 | `declaration-track:189f4c122b49d2c7a871aa463f9231ffb18bc0ac866d331a1273576a439f2121` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/IncorrectOwnStep.lean/declarations/example.md) | 5 | `declaration-track:88877098d6e2f618bae1b620dd53eafdb021b20d055f398877f912b3218a370f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

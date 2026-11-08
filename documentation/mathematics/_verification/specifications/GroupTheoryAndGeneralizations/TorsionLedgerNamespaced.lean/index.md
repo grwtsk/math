@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/TorsionLedgerNamespaced.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/TorsionLedgerNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/TorsionLedgerNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/TorsionLedgerNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,17 +58,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TorsionLedger](../../../../GroupTheoryAndGeneralizations/TorsionLedgerNamespaced.lean/declarations/torsionledger.md) | 31 | `declaration-track:3dbd14aae58dbb716304a4460c8e922614679a4e185551a8806bde8f28f77c03` |
-| 2 | `abbrev` | [Coordinate](../../../../GroupTheoryAndGeneralizations/TorsionLedgerNamespaced.lean/declarations/coordinate.md) | 49 | `declaration-track:334aa96f9f269a6a0b6952fb729952ecccc4589aaff4fd6ee669b0c2e3bb9cf1` |
-| 3 | `instance` | [coordinateFintype](../../../../GroupTheoryAndGeneralizations/TorsionLedgerNamespaced.lean/declarations/coordinatefintype.md) | 52 | `declaration-track:271cd7cc4fcd1a7820f21bec590f39d42708f8963f5ce291e30f34070e63e31b` |
-| 4 | `structure` | [UCTBocksteinTorsionRepresentation](../../../../GroupTheoryAndGeneralizations/TorsionLedgerNamespaced.lean/declarations/uctbocksteintorsionrepresentation.md) | 66 | `declaration-track:ad8894b9a2129af0c754eafd9624f9ca11de1312d59ae7ec3910fce117f24f0f` |
-| 5 | `theorem` | [finite](../../../../GroupTheoryAndGeneralizations/TorsionLedgerNamespaced.lean/declarations/finite.md) | 92 | `result-track:cbecc35c98e0498ad17c4d3ff3227f9d4037af05889f3d833f51dfc392d0aa91` |
-| 6 | `theorem` | [coordinates_injective](../../../../GroupTheoryAndGeneralizations/TorsionLedgerNamespaced.lean/declarations/coordinates-injective.md) | 97 | `result-track:8c6df5bef9c003a8640effa73311c1e8765326a225d72f8f452dbdcad479e342` |
-| 7 | `structure` | [TorsionTransport](../../../../GroupTheoryAndGeneralizations/TorsionLedgerNamespaced.lean/declarations/torsiontransport.md) | 114 | `declaration-track:978cee60027ac8484cef7da12c37a4a19a29dceb39fa948c93b7224979f8bac7` |
-| 8 | `theorem` | [transports_bockstein](../../../../GroupTheoryAndGeneralizations/TorsionLedgerNamespaced.lean/declarations/transports-bockstein.md) | 193 | `result-track:4a141b617242e57372a01358dc67f1f4417b769c78a9094231fb21ac24affcfd` |
-| 9 | `theorem` | [transports_coordinates](../../../../GroupTheoryAndGeneralizations/TorsionLedgerNamespaced.lean/declarations/transports-coordinates.md) | 199 | `result-track:a8dfb08f71634315d8cdc79b26f4d4f5ec093205ce8f88e84e76711d1d563eea` |
-| 10 | `theorem` | [transports_gluing](../../../../GroupTheoryAndGeneralizations/TorsionLedgerNamespaced.lean/declarations/transports-gluing.md) | 207 | `result-track:d0337d491067a48fd4b43accaf5d74d85d957a5193815477ee69c6007e545321` |
-| 11 | `structure` | [UniformTorsionBound](../../../../GroupTheoryAndGeneralizations/TorsionLedgerNamespaced.lean/declarations/uniformtorsionbound.md) | 215 | `declaration-track:2576feb65207aba092fd8c29e4ca323da91e4930d7395f996bd7e78d1843e709` |
+| 1 | `structure` | [TorsionLedger](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/TorsionLedgerNamespaced.lean/declarations/torsionledger.md) | 31 | `declaration-track:3dbd14aae58dbb716304a4460c8e922614679a4e185551a8806bde8f28f77c03` |
+| 2 | `abbrev` | [Coordinate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/TorsionLedgerNamespaced.lean/declarations/coordinate.md) | 49 | `declaration-track:334aa96f9f269a6a0b6952fb729952ecccc4589aaff4fd6ee669b0c2e3bb9cf1` |
+| 3 | `instance` | [coordinateFintype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/TorsionLedgerNamespaced.lean/declarations/coordinatefintype.md) | 52 | `declaration-track:271cd7cc4fcd1a7820f21bec590f39d42708f8963f5ce291e30f34070e63e31b` |
+| 4 | `structure` | [UCTBocksteinTorsionRepresentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/TorsionLedgerNamespaced.lean/declarations/uctbocksteintorsionrepresentation.md) | 66 | `declaration-track:ad8894b9a2129af0c754eafd9624f9ca11de1312d59ae7ec3910fce117f24f0f` |
+| 5 | `theorem` | [finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/TorsionLedgerNamespaced.lean/declarations/finite.md) | 92 | `result-track:cbecc35c98e0498ad17c4d3ff3227f9d4037af05889f3d833f51dfc392d0aa91` |
+| 6 | `theorem` | [coordinates_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/TorsionLedgerNamespaced.lean/declarations/coordinates-injective.md) | 97 | `result-track:8c6df5bef9c003a8640effa73311c1e8765326a225d72f8f452dbdcad479e342` |
+| 7 | `structure` | [TorsionTransport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/TorsionLedgerNamespaced.lean/declarations/torsiontransport.md) | 114 | `declaration-track:978cee60027ac8484cef7da12c37a4a19a29dceb39fa948c93b7224979f8bac7` |
+| 8 | `theorem` | [transports_bockstein](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/TorsionLedgerNamespaced.lean/declarations/transports-bockstein.md) | 193 | `result-track:4a141b617242e57372a01358dc67f1f4417b769c78a9094231fb21ac24affcfd` |
+| 9 | `theorem` | [transports_coordinates](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/TorsionLedgerNamespaced.lean/declarations/transports-coordinates.md) | 199 | `result-track:a8dfb08f71634315d8cdc79b26f4d4f5ec093205ce8f88e84e76711d1d563eea` |
+| 10 | `theorem` | [transports_gluing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/TorsionLedgerNamespaced.lean/declarations/transports-gluing.md) | 207 | `result-track:d0337d491067a48fd4b43accaf5d74d85d957a5193815477ee69c6007e545321` |
+| 11 | `structure` | [UniformTorsionBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/TorsionLedgerNamespaced.lean/declarations/uniformtorsionbound.md) | 215 | `declaration-track:2576feb65207aba092fd8c29e4ca323da91e4930d7395f996bd7e78d1843e709` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

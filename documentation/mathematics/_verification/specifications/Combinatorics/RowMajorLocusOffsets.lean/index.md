@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/RowMajorLocusOffsets.lean/index.md) · [Full source](../../../../Combinatorics/RowMajorLocusOffsets.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RowMajorLocusOffsets.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RowMajorLocusOffsets.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -48,7 +48,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 - `BitMatrix.FiniteField.Galois` — import line 19; external provider; requires a separately pinned dependency.
 - `Mathlib.Data.Finset.Sort` — import line 20; external provider; requires a separately pinned dependency.
-- [Ordered Global Loci](../../../../Combinatorics/OrderedGlobalLoci.lean/index.md) — import line 22; pinned internal source present.
+- [Ordered Global Loci](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OrderedGlobalLoci.lean/index.md) — import line 22; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [coordinateOfOffset](../../../../Combinatorics/RowMajorLocusOffsets.lean/declarations/coordinateofoffset.md) | 43 | `declaration-track:42a68d7a0e9882a7f7bedb78e1998e13a3a3e3957b5b641c4e7fc072d333bc5d` |
-| 2 | `theorem` | [coordinateOfOffset_flatIdx](../../../../Combinatorics/RowMajorLocusOffsets.lean/declarations/coordinateofoffset-flatidx.md) | 49 | `result-track:76ad806fbdeceef5e5d129011ac64af59340e62fa4fddabf6f6733c476b86a2e` |
-| 3 | `def` | [rowMajorOffsets](../../../../Combinatorics/RowMajorLocusOffsets.lean/declarations/rowmajoroffsets.md) | 61 | `declaration-track:e65f7687e73c9db4d9ca7a69b3717b8f6bd5bad2af755f552bfd0aeac46ffbfa` |
-| 4 | `theorem` | [mem_rowMajorOffsets_iff](../../../../Combinatorics/RowMajorLocusOffsets.lean/declarations/mem-rowmajoroffsets-iff.md) | 67 | `result-track:8c5d4b7a3981fb92083b4d400fc983411473e39a0c27f13a254c506cd951ee14` |
-| 5 | `theorem` | [flatIdx_mem_rowMajorOffsets_iff](../../../../Combinatorics/RowMajorLocusOffsets.lean/declarations/flatidx-mem-rowmajoroffsets-iff.md) | 76 | `result-track:16221546ce1a7e459573f58549a2f09a957aadcfaf5dd51a259aa6a74173de7f` |
+| 1 | `def` | [coordinateOfOffset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RowMajorLocusOffsets.lean/declarations/coordinateofoffset.md) | 43 | `declaration-track:42a68d7a0e9882a7f7bedb78e1998e13a3a3e3957b5b641c4e7fc072d333bc5d` |
+| 2 | `theorem` | [coordinateOfOffset_flatIdx](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RowMajorLocusOffsets.lean/declarations/coordinateofoffset-flatidx.md) | 49 | `result-track:76ad806fbdeceef5e5d129011ac64af59340e62fa4fddabf6f6733c476b86a2e` |
+| 3 | `def` | [rowMajorOffsets](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RowMajorLocusOffsets.lean/declarations/rowmajoroffsets.md) | 61 | `declaration-track:e65f7687e73c9db4d9ca7a69b3717b8f6bd5bad2af755f552bfd0aeac46ffbfa` |
+| 4 | `theorem` | [mem_rowMajorOffsets_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RowMajorLocusOffsets.lean/declarations/mem-rowmajoroffsets-iff.md) | 67 | `result-track:8c5d4b7a3981fb92083b4d400fc983411473e39a0c27f13a254c506cd951ee14` |
+| 5 | `theorem` | [flatIdx_mem_rowMajorOffsets_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RowMajorLocusOffsets.lean/declarations/flatidx-mem-rowmajoroffsets-iff.md) | 76 | `result-track:16221546ce1a7e459573f58549a2f09a957aadcfaf5dd51a259aa6a74173de7f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

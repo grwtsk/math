@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/CanonicalFourFamilyFullAdjointReconstruction.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/CanonicalFourFamilyFullAdjointReconstruction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CanonicalFourFamilyFullAdjointReconstruction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CanonicalFourFamilyFullAdjointReconstruction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.LinearAlgebra.Matrix.FiniteAdjointDescent`](../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteAdjointDescent.lean/index.md) — import line 3; pinned internal source present.
-- [`GRWTSK.NumberTheory.Moebius.CanonicalFourFamilyArithmeticRestrictions`](../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CanonicalFourFamilyArithmeticRestrictions.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.LinearAlgebra.Matrix.FiniteAdjointDescent`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteAdjointDescent.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.CanonicalFourFamilyArithmeticRestrictions`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CanonicalFourFamilyArithmeticRestrictions.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [matrix](../../../../AssociativeRingsAndAlgebras/CanonicalFourFamilyFullAdjointReconstruction.lean/declarations/matrix.md) | 15 | `declaration-track:3eab7ac0a5e81719124e6bedb54fb9976f916f72efe17e0644fda556af081936` |
-| 2 | `abbrev` | [cells](../../../../AssociativeRingsAndAlgebras/CanonicalFourFamilyFullAdjointReconstruction.lean/declarations/cells.md) | 17 | `declaration-track:fe9b962967389372197b12bac18413fc86913b98e541139cc33ce9a70903c9c5` |
-| 3 | `abbrev` | [window](../../../../AssociativeRingsAndAlgebras/CanonicalFourFamilyFullAdjointReconstruction.lean/declarations/window.md) | 18 | `declaration-track:7255a7caa554b46657ac293b53e51fd716734ea2939866dceadd0557f8a39e11` |
-| 4 | `def` | [fullAdjointDamping](../../../../AssociativeRingsAndAlgebras/CanonicalFourFamilyFullAdjointReconstruction.lean/declarations/fulladjointdamping.md) | 20 | `declaration-track:a943d119ef921b48587a0f4dc4c915f2fecd5266328c60eb511be10955366149` |
-| 5 | `def` | [fullAdjointReconstruction](../../../../AssociativeRingsAndAlgebras/CanonicalFourFamilyFullAdjointReconstruction.lean/declarations/fulladjointreconstruction.md) | 21 | `declaration-track:633dcd0d218adb5588141d80adaa629458c94f08251d7688885a50779884d861` |
-| 6 | `theorem` | [source_energy](../../../../AssociativeRingsAndAlgebras/CanonicalFourFamilyFullAdjointReconstruction.lean/declarations/source-energy.md) | 24 | `result-track:c0b0ef9de29d37723e7e67f83ba1635efe105f702b1db8130344647fe9cb4d74` |
-| 7 | `theorem` | [matrix_apply](../../../../AssociativeRingsAndAlgebras/CanonicalFourFamilyFullAdjointReconstruction.lean/declarations/matrix-apply.md) | 28 | `result-track:0f42dbbc74e5553629ee5150645f2ccd7dea913482255046502384e584f3c53e` |
-| 8 | `theorem` | [fullAdjointDamping_pos](../../../../AssociativeRingsAndAlgebras/CanonicalFourFamilyFullAdjointReconstruction.lean/declarations/fulladjointdamping-pos.md) | 34 | `result-track:f7db369db9d1de061b84fab18e9f84bac07175bcf63caae146d4cb2b024849ba` |
-| 9 | `theorem` | [fullAdjointReconstruction_bound](../../../../AssociativeRingsAndAlgebras/CanonicalFourFamilyFullAdjointReconstruction.lean/declarations/fulladjointreconstruction-bound.md) | 37 | `result-track:dddec1f79f0fc3d7b73802c62a063b6f4f27d8d7aca917a6b72e007c81d82e7d` |
-| 10 | `theorem` | [fullAdjointResidual_descent](../../../../AssociativeRingsAndAlgebras/CanonicalFourFamilyFullAdjointReconstruction.lean/declarations/fulladjointresidual-descent.md) | 43 | `result-track:547612a42cb50bb9d399649f265742cbc782b0d8cd71ba96f986f585b8a1c4b1` |
+| 1 | `abbrev` | [matrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CanonicalFourFamilyFullAdjointReconstruction.lean/declarations/matrix.md) | 15 | `declaration-track:3eab7ac0a5e81719124e6bedb54fb9976f916f72efe17e0644fda556af081936` |
+| 2 | `abbrev` | [cells](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CanonicalFourFamilyFullAdjointReconstruction.lean/declarations/cells.md) | 17 | `declaration-track:fe9b962967389372197b12bac18413fc86913b98e541139cc33ce9a70903c9c5` |
+| 3 | `abbrev` | [window](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CanonicalFourFamilyFullAdjointReconstruction.lean/declarations/window.md) | 18 | `declaration-track:7255a7caa554b46657ac293b53e51fd716734ea2939866dceadd0557f8a39e11` |
+| 4 | `def` | [fullAdjointDamping](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CanonicalFourFamilyFullAdjointReconstruction.lean/declarations/fulladjointdamping.md) | 20 | `declaration-track:a943d119ef921b48587a0f4dc4c915f2fecd5266328c60eb511be10955366149` |
+| 5 | `def` | [fullAdjointReconstruction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CanonicalFourFamilyFullAdjointReconstruction.lean/declarations/fulladjointreconstruction.md) | 21 | `declaration-track:633dcd0d218adb5588141d80adaa629458c94f08251d7688885a50779884d861` |
+| 6 | `theorem` | [source_energy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CanonicalFourFamilyFullAdjointReconstruction.lean/declarations/source-energy.md) | 24 | `result-track:c0b0ef9de29d37723e7e67f83ba1635efe105f702b1db8130344647fe9cb4d74` |
+| 7 | `theorem` | [matrix_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CanonicalFourFamilyFullAdjointReconstruction.lean/declarations/matrix-apply.md) | 28 | `result-track:0f42dbbc74e5553629ee5150645f2ccd7dea913482255046502384e584f3c53e` |
+| 8 | `theorem` | [fullAdjointDamping_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CanonicalFourFamilyFullAdjointReconstruction.lean/declarations/fulladjointdamping-pos.md) | 34 | `result-track:f7db369db9d1de061b84fab18e9f84bac07175bcf63caae146d4cb2b024849ba` |
+| 9 | `theorem` | [fullAdjointReconstruction_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CanonicalFourFamilyFullAdjointReconstruction.lean/declarations/fulladjointreconstruction-bound.md) | 37 | `result-track:dddec1f79f0fc3d7b73802c62a063b6f4f27d8d7aca917a6b72e007c81d82e7d` |
+| 10 | `theorem` | [fullAdjointResidual_descent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/CanonicalFourFamilyFullAdjointReconstruction.lean/declarations/fulladjointresidual-descent.md) | 43 | `result-track:547612a42cb50bb9d399649f265742cbc782b0d8cd71ba96f986f585b8a1c4b1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

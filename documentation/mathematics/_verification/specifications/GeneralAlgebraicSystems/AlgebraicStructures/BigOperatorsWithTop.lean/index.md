@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsWithTop.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsWithTop.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsWithTop.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsWithTop.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,18 +58,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [coe_sum](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsWithTop.lean/declarations/coe-sum-source-edition-2.md) | 23 | `result-track:67cac59f6026c266f23c1b30b69447be06e15e11e8d19f314ebfbe5703d4d391` |
-| 2 | `lemma` | [sum_eq_top](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsWithTop.lean/declarations/sum-eq-top.md) | 27 | `result-track:332372a39c8f9b227869a51f1c494b075c880db627ab6fcc2d894d528c7c896a` |
-| 3 | `lemma` | [sum_ne_top](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsWithTop.lean/declarations/sum-ne-top.md) | 31 | `result-track:ce3d05844e2cdc11dcb4d4aa15424e40add4a57a3e32b823f32e1545b12cfc03` |
-| 4 | `lemma` | [sum_lt_top](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsWithTop.lean/declarations/sum-lt-top.md) | 36 | `result-track:e9001d455255b98521abba113cc76b81e3626f50268120a2f7f4c19efb97441d` |
-| 5 | `lemma` | [prod_ne_top](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsWithTop.lean/declarations/prod-ne-top.md) | 46 | `result-track:c042e463f1ae70926ed351830cb14c723a310bb0e9f588e07962c530c6473321` |
-| 6 | `lemma` | [prod_lt_top](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsWithTop.lean/declarations/prod-lt-top.md) | 50 | `result-track:7cfe30c8d54648e33065cc145b3546afc17cea1ba2e37842ed915b398c03b377` |
-| 7 | `lemma` | [coe_sum](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsWithTop.lean/declarations/coe-sum.md) | 60 | `result-track:06607df60cb8686eda0fa523586e11fc18f0384534ac16b19a783f3acd5bc891` |
-| 8 | `lemma` | [sum_eq_bot_iff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsWithTop.lean/declarations/sum-eq-bot-iff.md) | 64 | `result-track:7d1cba74439433ddf5f8929acf524027c16f6dc85e184eacf79a61fd90863fac` |
-| 9 | `lemma` | [bot_lt_sum_iff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsWithTop.lean/declarations/bot-lt-sum-iff.md) | 70 | `result-track:a81018130bc1389196354dd2b3ee38a2dc310cd675d3bbd428ac1d1d244e77a8` |
-| 10 | `lemma` | [sum_lt_bot](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsWithTop.lean/declarations/sum-lt-bot.md) | 74 | `result-track:b8b8128aea3a0901dfd3386f55ef7140dcb4757cb1c1585cc5d4a4f39ea4ba96` |
-| 11 | `lemma` | [prod_ne_bot](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsWithTop.lean/declarations/prod-ne-bot.md) | 84 | `result-track:02179197d2b5514431e0bc998a519df959fb95ec39c2e76e0b88ef6ac0b3a4e4` |
-| 12 | `lemma` | [bot_lt_prod](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsWithTop.lean/declarations/bot-lt-prod.md) | 88 | `result-track:11f08a6e638f82927bee7d6bee7e33cc73f17f643441884d0a043076f06dd580` |
+| 1 | `lemma` | [coe_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsWithTop.lean/declarations/coe-sum-source-edition-2.md) | 23 | `result-track:67cac59f6026c266f23c1b30b69447be06e15e11e8d19f314ebfbe5703d4d391` |
+| 2 | `lemma` | [sum_eq_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsWithTop.lean/declarations/sum-eq-top.md) | 27 | `result-track:332372a39c8f9b227869a51f1c494b075c880db627ab6fcc2d894d528c7c896a` |
+| 3 | `lemma` | [sum_ne_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsWithTop.lean/declarations/sum-ne-top.md) | 31 | `result-track:ce3d05844e2cdc11dcb4d4aa15424e40add4a57a3e32b823f32e1545b12cfc03` |
+| 4 | `lemma` | [sum_lt_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsWithTop.lean/declarations/sum-lt-top.md) | 36 | `result-track:e9001d455255b98521abba113cc76b81e3626f50268120a2f7f4c19efb97441d` |
+| 5 | `lemma` | [prod_ne_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsWithTop.lean/declarations/prod-ne-top.md) | 46 | `result-track:c042e463f1ae70926ed351830cb14c723a310bb0e9f588e07962c530c6473321` |
+| 6 | `lemma` | [prod_lt_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsWithTop.lean/declarations/prod-lt-top.md) | 50 | `result-track:7cfe30c8d54648e33065cc145b3546afc17cea1ba2e37842ed915b398c03b377` |
+| 7 | `lemma` | [coe_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsWithTop.lean/declarations/coe-sum.md) | 60 | `result-track:06607df60cb8686eda0fa523586e11fc18f0384534ac16b19a783f3acd5bc891` |
+| 8 | `lemma` | [sum_eq_bot_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsWithTop.lean/declarations/sum-eq-bot-iff.md) | 64 | `result-track:7d1cba74439433ddf5f8929acf524027c16f6dc85e184eacf79a61fd90863fac` |
+| 9 | `lemma` | [bot_lt_sum_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsWithTop.lean/declarations/bot-lt-sum-iff.md) | 70 | `result-track:a81018130bc1389196354dd2b3ee38a2dc310cd675d3bbd428ac1d1d244e77a8` |
+| 10 | `lemma` | [sum_lt_bot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsWithTop.lean/declarations/sum-lt-bot.md) | 74 | `result-track:b8b8128aea3a0901dfd3386f55ef7140dcb4757cb1c1585cc5d4a4f39ea4ba96` |
+| 11 | `lemma` | [prod_ne_bot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsWithTop.lean/declarations/prod-ne-bot.md) | 84 | `result-track:02179197d2b5514431e0bc998a519df959fb95ec39c2e76e0b88ef6ac0b3a4e4` |
+| 12 | `lemma` | [bot_lt_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsWithTop.lean/declarations/bot-lt-prod.md) | 88 | `result-track:11f08a6e638f82927bee7d6bee7e33cc73f17f643441884d0a043076f06dd580` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

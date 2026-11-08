@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/FundamentalLemmaPublic.lean/index.md) · [Full source](../../../../AlgebraicTopology/FundamentalLemmaPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FundamentalLemmaPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FundamentalLemmaPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [leftHomotopyClassToHom](../../../../AlgebraicTopology/FundamentalLemmaPublic.lean/declarations/lefthomotopyclasstohom.md) | 37 | `declaration-track:94e7971d283dd0267f5a675ed28a116eea51e7e6b23417b1e8e621844e1fccb9` |
-| 2 | `lemma` | [leftHomotopyClassToHom_mk](../../../../AlgebraicTopology/FundamentalLemmaPublic.lean/declarations/lefthomotopyclasstohom-mk.md) | 41 | `result-track:46129d36a6d2e0e1a5d4c574520998ebffdb89654caf3d9c0706b39a0d2eef25` |
-| 3 | `def` | [rightHomotopyClassToHom](../../../../AlgebraicTopology/FundamentalLemmaPublic.lean/declarations/righthomotopyclasstohom.md) | 46 | `declaration-track:0e20741b5930cb5c69abb76ace2872532a4e7610a0316719693c66764b292da8` |
-| 4 | `lemma` | [rightHomotopyClassToHom_mk](../../../../AlgebraicTopology/FundamentalLemmaPublic.lean/declarations/righthomotopyclasstohom-mk.md) | 50 | `result-track:61efe7c1d565892604c13ea8b6d3f855bb15886ceefc0f7deee430c74dc1246e` |
-| 5 | `lemma` | [bijective_leftHomotopyClassToHom_iff_bijective_rightHomotopyClassToHom](../../../../AlgebraicTopology/FundamentalLemmaPublic.lean/declarations/bijective-lefthomotopyclasstohom-iff-bijective-righthomotopyclasstohom.md) | 54 | `result-track:49ecfb30446858ba9e8664c3f19a7ad36f1de5e5eacdadd8388288c6a68bf417` |
-| 6 | `lemma` | [bijective_rightHomotopyClassToHom](../../../../AlgebraicTopology/FundamentalLemmaPublic.lean/declarations/bijective-righthomotopyclasstohom.md) | 69 | `result-track:bc39bdaa003f0164bc1a3468dd70d98f049d981bbfb2da90c37f559e46e7e6d4` |
-| 7 | `lemma` | [bijective_leftHomotopyClassToHom](../../../../AlgebraicTopology/FundamentalLemmaPublic.lean/declarations/bijective-lefthomotopyclasstohom.md) | 111 | `result-track:2a3e67156c127496ecee4333847fc6e7faec002de1597cc44de21ea218e650ab` |
-| 8 | `lemma` | [map_surjective_of_isLocalization](../../../../AlgebraicTopology/FundamentalLemmaPublic.lean/declarations/map-surjective-of-islocalization.md) | 116 | `result-track:02d6ed3b194ff98af7ec80e48f8b8478bf8685d2f51662e30c9ee752778910fd` |
-| 9 | `lemma` | [RightHomotopyRel.iff_map_eq](../../../../AlgebraicTopology/FundamentalLemmaPublic.lean/declarations/righthomotopyrel-iff-map-eq.md) | 122 | `result-track:0a1df4c2faf47744eb005d92874e29a2c0f82db7304f32bd928f8118d1ab0d24` |
-| 10 | `lemma` | [LeftHomotopyRel.iff_map_eq](../../../../AlgebraicTopology/FundamentalLemmaPublic.lean/declarations/lefthomotopyrel-iff-map-eq.md) | 129 | `result-track:9a897e724369f9fb6e187db33db170b5941593233fda58a061cb160f479d201f` |
+| 1 | `def` | [leftHomotopyClassToHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FundamentalLemmaPublic.lean/declarations/lefthomotopyclasstohom.md) | 37 | `declaration-track:94e7971d283dd0267f5a675ed28a116eea51e7e6b23417b1e8e621844e1fccb9` |
+| 2 | `lemma` | [leftHomotopyClassToHom_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FundamentalLemmaPublic.lean/declarations/lefthomotopyclasstohom-mk.md) | 41 | `result-track:46129d36a6d2e0e1a5d4c574520998ebffdb89654caf3d9c0706b39a0d2eef25` |
+| 3 | `def` | [rightHomotopyClassToHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FundamentalLemmaPublic.lean/declarations/righthomotopyclasstohom.md) | 46 | `declaration-track:0e20741b5930cb5c69abb76ace2872532a4e7610a0316719693c66764b292da8` |
+| 4 | `lemma` | [rightHomotopyClassToHom_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FundamentalLemmaPublic.lean/declarations/righthomotopyclasstohom-mk.md) | 50 | `result-track:61efe7c1d565892604c13ea8b6d3f855bb15886ceefc0f7deee430c74dc1246e` |
+| 5 | `lemma` | [bijective_leftHomotopyClassToHom_iff_bijective_rightHomotopyClassToHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FundamentalLemmaPublic.lean/declarations/bijective-lefthomotopyclasstohom-iff-bijective-righthomotopyclasstohom.md) | 54 | `result-track:49ecfb30446858ba9e8664c3f19a7ad36f1de5e5eacdadd8388288c6a68bf417` |
+| 6 | `lemma` | [bijective_rightHomotopyClassToHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FundamentalLemmaPublic.lean/declarations/bijective-righthomotopyclasstohom.md) | 69 | `result-track:bc39bdaa003f0164bc1a3468dd70d98f049d981bbfb2da90c37f559e46e7e6d4` |
+| 7 | `lemma` | [bijective_leftHomotopyClassToHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FundamentalLemmaPublic.lean/declarations/bijective-lefthomotopyclasstohom.md) | 111 | `result-track:2a3e67156c127496ecee4333847fc6e7faec002de1597cc44de21ea218e650ab` |
+| 8 | `lemma` | [map_surjective_of_isLocalization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FundamentalLemmaPublic.lean/declarations/map-surjective-of-islocalization.md) | 116 | `result-track:02d6ed3b194ff98af7ec80e48f8b8478bf8685d2f51662e30c9ee752778910fd` |
+| 9 | `lemma` | [RightHomotopyRel.iff_map_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FundamentalLemmaPublic.lean/declarations/righthomotopyrel-iff-map-eq.md) | 122 | `result-track:0a1df4c2faf47744eb005d92874e29a2c0f82db7304f32bd928f8118d1ab0d24` |
+| 10 | `lemma` | [LeftHomotopyRel.iff_map_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/FundamentalLemmaPublic.lean/declarations/lefthomotopyrel-iff-map-eq.md) | 129 | `result-track:9a897e724369f9fb6e187db33db170b5941593233fda58a061cb160f479d201f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

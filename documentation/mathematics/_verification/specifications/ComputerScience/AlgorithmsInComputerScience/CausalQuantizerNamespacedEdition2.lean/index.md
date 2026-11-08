@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/CausalQuantizerNamespacedEdition2.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/CausalQuantizerNamespacedEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CausalQuantizerNamespacedEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CausalQuantizerNamespacedEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [quantizerIdentitySystem](../../../../../ComputerScience/AlgorithmsInComputerScience/CausalQuantizerNamespacedEdition2.lean/declarations/quantizeridentitysystem.md) | 29 | `declaration-track:90cfef3484f9578d4b49bd165226a3e06a8c6abe0991e987c091d1632f0b4d3c` |
-| 2 | `theorem` | [quantizerIdentitySystem_run](../../../../../ComputerScience/AlgorithmsInComputerScience/CausalQuantizerNamespacedEdition2.lean/declarations/quantizeridentitysystem-run.md) | 38 | `result-track:02b8c51fdd211af3a817602589e6f5dc0119a830b79edf60b70cf779bac77241` |
-| 3 | `theorem` | [causalEquivalent_identity_iff_indistinguishable](../../../../../ComputerScience/AlgorithmsInComputerScience/CausalQuantizerNamespacedEdition2.lean/declarations/causalequivalent-identity-iff-indistinguishable.md) | 51 | `result-track:8a389c94f2b461b46254f2aa7a2f3ed7cb3def59a530741472144f22f6a7b53f` |
-| 4 | `def` | [identityCausalStateEquivEffectiveState](../../../../../ComputerScience/AlgorithmsInComputerScience/CausalQuantizerNamespacedEdition2.lean/declarations/identitycausalstateequiveffectivestate.md) | 67 | `declaration-track:0bb8c96301a58100a4e634fe22773796eaf33ab3932343b2994abc780460ffca` |
+| 1 | `def` | [quantizerIdentitySystem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CausalQuantizerNamespacedEdition2.lean/declarations/quantizeridentitysystem.md) | 29 | `declaration-track:90cfef3484f9578d4b49bd165226a3e06a8c6abe0991e987c091d1632f0b4d3c` |
+| 2 | `theorem` | [quantizerIdentitySystem_run](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CausalQuantizerNamespacedEdition2.lean/declarations/quantizeridentitysystem-run.md) | 38 | `result-track:02b8c51fdd211af3a817602589e6f5dc0119a830b79edf60b70cf779bac77241` |
+| 3 | `theorem` | [causalEquivalent_identity_iff_indistinguishable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CausalQuantizerNamespacedEdition2.lean/declarations/causalequivalent-identity-iff-indistinguishable.md) | 51 | `result-track:8a389c94f2b461b46254f2aa7a2f3ed7cb3def59a530741472144f22f6a7b53f` |
+| 4 | `def` | [identityCausalStateEquivEffectiveState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CausalQuantizerNamespacedEdition2.lean/declarations/identitycausalstateequiveffectivestate.md) | 67 | `declaration-track:0bb8c96301a58100a4e634fe22773796eaf33ab3932343b2994abc780460ffca` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

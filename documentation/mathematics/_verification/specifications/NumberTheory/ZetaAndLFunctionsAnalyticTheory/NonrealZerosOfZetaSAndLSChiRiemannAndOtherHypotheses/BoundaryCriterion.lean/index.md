@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/BoundaryCriterion.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/BoundaryCriterion.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/BoundaryCriterion.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/BoundaryCriterion.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [h0_real_zeros_from_spectral_reality_and_zero_correspondence](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/BoundaryCriterion.lean/declarations/h0-real-zeros-from-spectral-reality-and-zero-correspondence.md) | 20 | `result-track:474aa6117ad98d7456f839d1dbe6467996e6dd75f32006f8985770d560a2089b` |
-| 2 | `theorem` | [critical_line_from_boundary_alignment](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/BoundaryCriterion.lean/declarations/critical-line-from-boundary-alignment.md) | 33 | `result-track:7d18ffcee8324211b5aa222f9b19591aa67bac97a499b80640f0f007bba88a64` |
-| 3 | `theorem` | [critical_line_statement_from_h0_real_zeros](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/BoundaryCriterion.lean/declarations/critical-line-statement-from-h0-real-zeros.md) | 48 | `result-track:1bccdfd0bd3e97bf318e2a4356c01dc3727f7b21815e2a486f34e16bafb45c13` |
-| 4 | `theorem` | [riemann_hypothesis_of_h0_equivalence_and_h0_real_zeros](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/BoundaryCriterion.lean/declarations/riemann-hypothesis-of-h0-equivalence-and-h0-real-zeros.md) | 54 | `result-track:56e868c39f448bb6a93820ed54614a81285bea870e450a9655c4a6a4314e600c` |
+| 1 | `theorem` | [h0_real_zeros_from_spectral_reality_and_zero_correspondence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/BoundaryCriterion.lean/declarations/h0-real-zeros-from-spectral-reality-and-zero-correspondence.md) | 20 | `result-track:474aa6117ad98d7456f839d1dbe6467996e6dd75f32006f8985770d560a2089b` |
+| 2 | `theorem` | [critical_line_from_boundary_alignment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/BoundaryCriterion.lean/declarations/critical-line-from-boundary-alignment.md) | 33 | `result-track:7d18ffcee8324211b5aa222f9b19591aa67bac97a499b80640f0f007bba88a64` |
+| 3 | `theorem` | [critical_line_statement_from_h0_real_zeros](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/BoundaryCriterion.lean/declarations/critical-line-statement-from-h0-real-zeros.md) | 48 | `result-track:1bccdfd0bd3e97bf318e2a4356c01dc3727f7b21815e2a486f34e16bafb45c13` |
+| 4 | `theorem` | [riemann_hypothesis_of_h0_equivalence_and_h0_real_zeros](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/BoundaryCriterion.lean/declarations/riemann-hypothesis-of-h0-equivalence-and-h0-real-zeros.md) | 54 | `result-track:56e868c39f448bb6a93820ed54614a81285bea870e450a9655c4a6a4314e600c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

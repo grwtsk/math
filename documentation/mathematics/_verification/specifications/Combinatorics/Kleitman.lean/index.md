@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/Kleitman.lean/index.md) · [Full source](../../../../Combinatorics/Kleitman.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Kleitman.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Kleitman.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Finset.card_biUnion_le_of_intersecting](../../../../Combinatorics/Kleitman.lean/declarations/finset-card-biunion-le-of-intersecting.md) | 35 | `result-track:9be16bfd9858ed210a42726d18bb64f81a1d145c82fe5dfb5e7f5cf353654838` |
+| 1 | `theorem` | [Finset.card_biUnion_le_of_intersecting](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Kleitman.lean/declarations/finset-card-biunion-le-of-intersecting.md) | 35 | `result-track:9be16bfd9858ed210a42726d18bb64f81a1d145c82fe5dfb5e7f5cf353654838` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

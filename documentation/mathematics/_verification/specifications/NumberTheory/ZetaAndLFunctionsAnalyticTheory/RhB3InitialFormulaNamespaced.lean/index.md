@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RhB3InitialFormulaNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RhB3InitialFormulaNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RhB3InitialFormulaNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RhB3InitialFormulaNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RhB3InitialFormulaNamespaced.lean/declarations/example-source-edition-3.md) | 17 | `declaration-track:208becab68630157ad8d0b2cc378bd12dd9e5e6a5fc8f8017b7015110a0a3d31` |
-| 2 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RhB3InitialFormulaNamespaced.lean/declarations/example-source-edition-4.md) | 19 | `declaration-track:660cd619f378cde45aa3546a25fe68d3b05060074f28ba7eef5b5933a260b8ff` |
-| 3 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RhB3InitialFormulaNamespaced.lean/declarations/example.md) | 21 | `declaration-track:0d0f7fdcdcb6a00551aa941155defec9703f1377bb977175dbc91f36984254d0` |
-| 4 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RhB3InitialFormulaNamespaced.lean/declarations/example-source-edition-5.md) | 23 | `declaration-track:abe0ed6b3710d53e46764adf28df879a4bdcefa772fa52bf9597ea72b82b7cf0` |
-| 5 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RhB3InitialFormulaNamespaced.lean/declarations/example-source-edition-2.md) | 26 | `declaration-track:19d4119b7457f476ce2b19ddb49cff35d2dba2a4a789672d4ae727a030b8b9e0` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RhB3InitialFormulaNamespaced.lean/declarations/example-source-edition-3.md) | 17 | `declaration-track:208becab68630157ad8d0b2cc378bd12dd9e5e6a5fc8f8017b7015110a0a3d31` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RhB3InitialFormulaNamespaced.lean/declarations/example-source-edition-4.md) | 19 | `declaration-track:660cd619f378cde45aa3546a25fe68d3b05060074f28ba7eef5b5933a260b8ff` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RhB3InitialFormulaNamespaced.lean/declarations/example.md) | 21 | `declaration-track:0d0f7fdcdcb6a00551aa941155defec9703f1377bb977175dbc91f36984254d0` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RhB3InitialFormulaNamespaced.lean/declarations/example-source-edition-5.md) | 23 | `declaration-track:abe0ed6b3710d53e46764adf28df879a4bdcefa772fa52bf9597ea72b82b7cf0` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RhB3InitialFormulaNamespaced.lean/declarations/example-source-edition-2.md) | 26 | `declaration-track:19d4119b7457f476ce2b19ddb49cff35d2dba2a4a789672d4ae727a030b8b9e0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

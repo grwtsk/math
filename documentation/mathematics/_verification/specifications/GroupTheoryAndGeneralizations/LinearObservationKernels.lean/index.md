@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/LinearObservationKernels.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/LinearObservationKernels.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/LinearObservationKernels.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/LinearObservationKernels.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Logic.InformationLoss.AugmentedRepairCriterion`](../../../../MathematicalLogicAndFoundations/GeneralLogic/AugmentedRepairCriterion.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.Logic.InformationLoss.AugmentedRepairCriterion`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AugmentedRepairCriterion.lean/index.md) — import line 6; pinned internal source present.
 - `Mathlib.LinearAlgebra.Prod` — import line 7; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [pairedLinearObservation](../../../../GroupTheoryAndGeneralizations/LinearObservationKernels.lean/declarations/pairedlinearobservation.md) | 32 | `declaration-track:3e166e307a7abb4cc2d6faad6a55a29ca95eeaafa57ad9d00875b7afc793695a` |
-| 2 | `theorem` | [pairedLinear_zero_iff](../../../../GroupTheoryAndGeneralizations/LinearObservationKernels.lean/declarations/pairedlinear-zero-iff.md) | 37 | `result-track:abef159fa1f70710ac8fdc6eeed3b8fb5a135605ae92b0a90e58e76fc643df89` |
-| 3 | `theorem` | [linear_fiberConstant_iff_kernelContainment](../../../../GroupTheoryAndGeneralizations/LinearObservationKernels.lean/declarations/linear-fiberconstant-iff-kernelcontainment.md) | 43 | `result-track:2a2b8962d11921467fff35e4467bc3a9dd641914fea551dfbd2d9242d232e38e` |
-| 4 | `theorem` | [linear_augmented_unique_reconstruction_iff](../../../../GroupTheoryAndGeneralizations/LinearObservationKernels.lean/declarations/linear-augmented-unique-reconstruction-iff.md) | 63 | `result-track:9b80cd0d3ccfd1715df5d7457ae9b96b91d3fd3929bd98970eadedea20ba6d78` |
+| 1 | `def` | [pairedLinearObservation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/LinearObservationKernels.lean/declarations/pairedlinearobservation.md) | 32 | `declaration-track:3e166e307a7abb4cc2d6faad6a55a29ca95eeaafa57ad9d00875b7afc793695a` |
+| 2 | `theorem` | [pairedLinear_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/LinearObservationKernels.lean/declarations/pairedlinear-zero-iff.md) | 37 | `result-track:abef159fa1f70710ac8fdc6eeed3b8fb5a135605ae92b0a90e58e76fc643df89` |
+| 3 | `theorem` | [linear_fiberConstant_iff_kernelContainment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/LinearObservationKernels.lean/declarations/linear-fiberconstant-iff-kernelcontainment.md) | 43 | `result-track:2a2b8962d11921467fff35e4467bc3a9dd641914fea551dfbd2d9242d232e38e` |
+| 4 | `theorem` | [linear_augmented_unique_reconstruction_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/LinearObservationKernels.lean/declarations/linear-augmented-unique-reconstruction-iff.md) | 63 | `result-track:9b80cd0d3ccfd1715df5d7457ae9b96b91d3fd3929bd98970eadedea20ba6d78` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

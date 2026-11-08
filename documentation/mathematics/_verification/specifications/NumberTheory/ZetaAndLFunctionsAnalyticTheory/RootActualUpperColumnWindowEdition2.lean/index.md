@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualUpperColumnWindowEdition2.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualUpperColumnWindowEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualUpperColumnWindowEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualUpperColumnWindowEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actualUpperColumn_quotient_gap](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualUpperColumnWindowEdition2.lean/declarations/actualuppercolumn-quotient-gap.md) | 21 | `result-track:eaed26cbf32899690dca2e7264601234e7ffd3a3dca447383168c8e5f1ef3eb6` |
-| 2 | `theorem` | [actualUpperColumn_time_width_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualUpperColumnWindowEdition2.lean/declarations/actualuppercolumn-time-width-le.md) | 39 | `result-track:4469363ee2adfd3df04a162ec84f3474a2203e7f0a7ec7d08431a7216aede2a7` |
-| 3 | `theorem` | [actualCorrelation_jet_zero_right](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualUpperColumnWindowEdition2.lean/declarations/actualcorrelation-jet-zero-right.md) | 76 | `result-track:d9bbc63ac8463e964fba307a1e2ff914b7fb60920568602e7b13a6f3aa22c7da` |
-| 4 | `theorem` | [actualTwistedTimeDensity_upperColumn_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualUpperColumnWindowEdition2.lean/declarations/actualtwistedtimedensity-uppercolumn-zero.md) | 96 | `result-track:e323fd15e3b5a74bb4a66819535a2b51aea8775698e8e261eae3a215892b687a` |
+| 1 | `theorem` | [actualUpperColumn_quotient_gap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualUpperColumnWindowEdition2.lean/declarations/actualuppercolumn-quotient-gap.md) | 21 | `result-track:eaed26cbf32899690dca2e7264601234e7ffd3a3dca447383168c8e5f1ef3eb6` |
+| 2 | `theorem` | [actualUpperColumn_time_width_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualUpperColumnWindowEdition2.lean/declarations/actualuppercolumn-time-width-le.md) | 39 | `result-track:4469363ee2adfd3df04a162ec84f3474a2203e7f0a7ec7d08431a7216aede2a7` |
+| 3 | `theorem` | [actualCorrelation_jet_zero_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualUpperColumnWindowEdition2.lean/declarations/actualcorrelation-jet-zero-right.md) | 76 | `result-track:d9bbc63ac8463e964fba307a1e2ff914b7fb60920568602e7b13a6f3aa22c7da` |
+| 4 | `theorem` | [actualTwistedTimeDensity_upperColumn_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RootActualUpperColumnWindowEdition2.lean/declarations/actualtwistedtimedensity-uppercolumn-zero.md) | 96 | `result-track:e323fd15e3b5a74bb4a66819535a2b51aea8775698e8e261eae3a215892b687a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

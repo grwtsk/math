@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/RationalRealPairUpperBound.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/RationalRealPairUpperBound.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalRealPairUpperBound.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalRealPairUpperBound.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.RationalRealPairAccumulation`](../../../../FunctionsOfAComplexVariable/RationalRealPairAccumulation.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.RationalRealPairAccumulation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalRealPairAccumulation.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Tactic` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [computeUpper](../../../../FunctionsOfAComplexVariable/RationalRealPairUpperBound.lean/declarations/computeupper.md) | 42 | `declaration-track:256ab45c47b024830d9b95de547e710e5cbcc5c7002f423be3cc3e3e7179a937` |
-| 2 | `def` | [evaluate](../../../../FunctionsOfAComplexVariable/RationalRealPairUpperBound.lean/declarations/evaluate.md) | 51 | `declaration-track:29040af75b9ed8a5f79273a5c2fd01d0ccc6be59d54b0e784ab90123910322e6` |
-| 3 | `def` | [verify](../../../../FunctionsOfAComplexVariable/RationalRealPairUpperBound.lean/declarations/verify.md) | 60 | `declaration-track:71cef1504ce78ed08c69a159b603b86904c18b56fbe94538d1740a86fd20ce3e` |
-| 4 | `theorem` | [base_le_computeUpper](../../../../FunctionsOfAComplexVariable/RationalRealPairUpperBound.lean/declarations/base-le-computeupper.md) | 66 | `result-track:bbb735d6e0e0867cf96f92ee601d4517e05d3bca271989517d19c2209bd551c6` |
-| 5 | `theorem` | [computeUpper_lt_base_add_grid](../../../../FunctionsOfAComplexVariable/RationalRealPairUpperBound.lean/declarations/computeupper-lt-base-add-grid.md) | 76 | `result-track:7dc2c437387fa4687904b1ac727e3b7b134d33110851b57784265db76e92825c` |
-| 6 | `theorem` | [source_re_le_base](../../../../FunctionsOfAComplexVariable/RationalRealPairUpperBound.lean/declarations/source-re-le-base.md) | 88 | `result-track:e0f85bbf5894fabe66f08346b2d9806f91adbf23b7d6703bdea52b38eb49acbf` |
-| 7 | `theorem` | [computeUpper_sound](../../../../FunctionsOfAComplexVariable/RationalRealPairUpperBound.lean/declarations/computeupper-sound.md) | 113 | `result-track:3f842f7e635cf16b0769bf0fcc90ceb266f02ef9955ef1d52a4ec15f80acf9ad` |
-| 8 | `theorem` | [verify_iff](../../../../FunctionsOfAComplexVariable/RationalRealPairUpperBound.lean/declarations/verify-iff.md) | 130 | `result-track:5d09e6e0e10fe6f9d57ea4d7663c0e01608cfea49d39ce5149d4045ae8b1ee18` |
-| 9 | `theorem` | [verify_sound](../../../../FunctionsOfAComplexVariable/RationalRealPairUpperBound.lean/declarations/verify-sound.md) | 142 | `result-track:d108a6843dc3613cc4693f12cb872e795d91e847c965c6140c8ca9ee1250c150` |
-| 10 | `theorem` | [verify_limit_sound](../../../../FunctionsOfAComplexVariable/RationalRealPairUpperBound.lean/declarations/verify-limit-sound.md) | 164 | `result-track:f400127814fe9169efda7382b09d95e7a1c9ce664958f838031553b58f5a47c2` |
+| 1 | `def` | [computeUpper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalRealPairUpperBound.lean/declarations/computeupper.md) | 42 | `declaration-track:256ab45c47b024830d9b95de547e710e5cbcc5c7002f423be3cc3e3e7179a937` |
+| 2 | `def` | [evaluate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalRealPairUpperBound.lean/declarations/evaluate.md) | 51 | `declaration-track:29040af75b9ed8a5f79273a5c2fd01d0ccc6be59d54b0e784ab90123910322e6` |
+| 3 | `def` | [verify](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalRealPairUpperBound.lean/declarations/verify.md) | 60 | `declaration-track:71cef1504ce78ed08c69a159b603b86904c18b56fbe94538d1740a86fd20ce3e` |
+| 4 | `theorem` | [base_le_computeUpper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalRealPairUpperBound.lean/declarations/base-le-computeupper.md) | 66 | `result-track:bbb735d6e0e0867cf96f92ee601d4517e05d3bca271989517d19c2209bd551c6` |
+| 5 | `theorem` | [computeUpper_lt_base_add_grid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalRealPairUpperBound.lean/declarations/computeupper-lt-base-add-grid.md) | 76 | `result-track:7dc2c437387fa4687904b1ac727e3b7b134d33110851b57784265db76e92825c` |
+| 6 | `theorem` | [source_re_le_base](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalRealPairUpperBound.lean/declarations/source-re-le-base.md) | 88 | `result-track:e0f85bbf5894fabe66f08346b2d9806f91adbf23b7d6703bdea52b38eb49acbf` |
+| 7 | `theorem` | [computeUpper_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalRealPairUpperBound.lean/declarations/computeupper-sound.md) | 113 | `result-track:3f842f7e635cf16b0769bf0fcc90ceb266f02ef9955ef1d52a4ec15f80acf9ad` |
+| 8 | `theorem` | [verify_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalRealPairUpperBound.lean/declarations/verify-iff.md) | 130 | `result-track:5d09e6e0e10fe6f9d57ea4d7663c0e01608cfea49d39ce5149d4045ae8b1ee18` |
+| 9 | `theorem` | [verify_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalRealPairUpperBound.lean/declarations/verify-sound.md) | 142 | `result-track:d108a6843dc3613cc4693f12cb872e795d91e847c965c6140c8ca9ee1250c150` |
+| 10 | `theorem` | [verify_limit_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalRealPairUpperBound.lean/declarations/verify-limit-sound.md) | 164 | `result-track:f400127814fe9169efda7382b09d95e7a1c9ce664958f838031553b58f5a47c2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

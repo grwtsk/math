@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/DecoderNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/DecoderNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DecoderNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DecoderNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [MobiusDecoderCertificate](../../../../../ComputerScience/AlgorithmsInComputerScience/DecoderNamespaced.lean/declarations/mobiusdecodercertificate.md) | 25 | `declaration-track:5896375c2756cdc616ae5f602fcff0136b64abc6e32394fdc0bf2830cf0424f1` |
-| 2 | `structure` | [ConfinedDecoderCertificate](../../../../../ComputerScience/AlgorithmsInComputerScience/DecoderNamespaced.lean/declarations/confineddecodercertificate.md) | 48 | `declaration-track:47ba9cadbaf3682b018c9017514d3b4986c6f5fcd75560eec24f283964baaa2c` |
+| 1 | `structure` | [MobiusDecoderCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DecoderNamespaced.lean/declarations/mobiusdecodercertificate.md) | 25 | `declaration-track:5896375c2756cdc616ae5f602fcff0136b64abc6e32394fdc0bf2830cf0424f1` |
+| 2 | `structure` | [ConfinedDecoderCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DecoderNamespaced.lean/declarations/confineddecodercertificate.md) | 48 | `declaration-track:47ba9cadbaf3682b018c9017514d3b4986c6f5fcd75560eec24f283964baaa2c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

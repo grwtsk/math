@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/FullyFaithfulPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/FullyFaithfulPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/FullyFaithfulPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/FullyFaithfulPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [singleFunctorCompHomologyFunctorIso](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/FullyFaithfulPublic.lean/declarations/singlefunctorcomphomologyfunctoriso.md) | 30 | `declaration-track:73fb28119b055243b6a01a0cf25184330ad2dacd2d2daf838d9eb31a01eacbee` |
-| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/FullyFaithfulPublic.lean/declarations/instance-source-edition-2.md) | 37 | `declaration-track:a31d3750ce96f003b1c4e7592d7e964677f5c72b8079b99eca2c7ef3b907c8da` |
-| 3 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/FullyFaithfulPublic.lean/declarations/instance.md) | 44 | `declaration-track:4e5f4515008f01677906634f5f43bf36bdd40a217db389288cc725c4a1d8dd8b` |
+| 1 | `def` | [singleFunctorCompHomologyFunctorIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/FullyFaithfulPublic.lean/declarations/singlefunctorcomphomologyfunctoriso.md) | 30 | `declaration-track:73fb28119b055243b6a01a0cf25184330ad2dacd2d2daf838d9eb31a01eacbee` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/FullyFaithfulPublic.lean/declarations/instance-source-edition-2.md) | 37 | `declaration-track:a31d3750ce96f003b1c4e7592d7e964677f5c72b8079b99eca2c7ef3b907c8da` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/FullyFaithfulPublic.lean/declarations/instance.md) | 44 | `declaration-track:4e5f4515008f01677906634f5f43bf36bdd40a217db389288cc725c4a1d8dd8b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

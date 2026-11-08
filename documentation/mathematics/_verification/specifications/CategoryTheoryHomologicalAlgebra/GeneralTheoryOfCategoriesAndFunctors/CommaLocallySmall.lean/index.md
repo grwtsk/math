@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaLocallySmall.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaLocallySmall.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaLocallySmall.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaLocallySmall.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [Comma.locallySmall](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaLocallySmall.lean/declarations/comma-locallysmall.md) | 27 | `declaration-track:6fe2925bb5cb108fb43eb8672c2e5278bc60d49679f29ba9cca76de2d3d98d8f` |
-| 2 | `instance` | [StructuredArrow.locallySmall](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaLocallySmall.lean/declarations/structuredarrow-locallysmall.md) | 34 | `declaration-track:5c0eb1464718c350e5e69eae1dd7e9e8abbc792446b049b07e53517f00690563` |
-| 3 | `instance` | [CostructuredArrow.locallySmall](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaLocallySmall.lean/declarations/costructuredarrow-locallysmall.md) | 39 | `declaration-track:00708b21796a8f5502355f3389b8ebd67a672c58a86302d7c7ccf34faf95ae2e` |
-| 4 | `instance` | [Over.locallySmall](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaLocallySmall.lean/declarations/over-locallysmall.md) | 44 | `declaration-track:b494ff3863ef6e804e7a427ffdce5f0777d06da0be365f1c18f9b30aca57f8d8` |
-| 5 | `instance` | [Under.locallySmall](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaLocallySmall.lean/declarations/under-locallysmall.md) | 48 | `declaration-track:8a917dada3bfdecc6d88e94efb2e0dab016d8f6d9bcf9936676252ff4b3b4450` |
+| 1 | `instance` | [Comma.locallySmall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaLocallySmall.lean/declarations/comma-locallysmall.md) | 27 | `declaration-track:6fe2925bb5cb108fb43eb8672c2e5278bc60d49679f29ba9cca76de2d3d98d8f` |
+| 2 | `instance` | [StructuredArrow.locallySmall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaLocallySmall.lean/declarations/structuredarrow-locallysmall.md) | 34 | `declaration-track:5c0eb1464718c350e5e69eae1dd7e9e8abbc792446b049b07e53517f00690563` |
+| 3 | `instance` | [CostructuredArrow.locallySmall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaLocallySmall.lean/declarations/costructuredarrow-locallysmall.md) | 39 | `declaration-track:00708b21796a8f5502355f3389b8ebd67a672c58a86302d7c7ccf34faf95ae2e` |
+| 4 | `instance` | [Over.locallySmall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaLocallySmall.lean/declarations/over-locallysmall.md) | 44 | `declaration-track:b494ff3863ef6e804e7a427ffdce5f0777d06da0be365f1c18f9b30aca57f8d8` |
+| 5 | `instance` | [Under.locallySmall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaLocallySmall.lean/declarations/under-locallysmall.md) | 48 | `declaration-track:8a917dada3bfdecc6d88e94efb2e0dab016d8f6d9bcf9936676252ff4b3b4450` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

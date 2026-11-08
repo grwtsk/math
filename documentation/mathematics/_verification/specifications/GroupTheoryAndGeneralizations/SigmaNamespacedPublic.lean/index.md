@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/SigmaNamespacedPublic.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/SigmaNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SigmaNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SigmaNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/SigmaNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 46 | `declaration-track:af8baeec79532a62d6892c4270793af5d0135f53ea8b22e3ec4810ea7e7b8df5` |
-| 2 | `theorem` | [smul_def](../../../../GroupTheoryAndGeneralizations/SigmaNamespacedPublic.lean/declarations/smul-def.md) | 50 | `result-track:a37987eb2d2718bffbdde1783ffa1e5d02bedf7bfbae587a0e100eb06a02ca28` |
-| 3 | `theorem` | [smul_mk](../../../../GroupTheoryAndGeneralizations/SigmaNamespacedPublic.lean/declarations/smul-mk.md) | 54 | `result-track:832121fd496cc90cf92f8c595da54cb2b588ee52f89c575f95da5d567dc8ef57` |
-| 4 | `instance` | [instIsScalarTowerOfSMul](../../../../GroupTheoryAndGeneralizations/SigmaNamespacedPublic.lean/declarations/instisscalartowerofsmul.md) | 58 | `declaration-track:c80c5b6054475a59400e85af697c10098b3312b694a4aa0374f88223109f83e8` |
-| 5 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/SigmaNamespacedPublic.lean/declarations/instance.md) | 65 | `declaration-track:8ae875ff857eb3cc38df0c40992fe64dc1e24105d1e9bdfe33ec7cd715817924` |
-| 6 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/SigmaNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 71 | `declaration-track:93425bb6a6207f6cdff4aecb01d4d615e2e481d1ec6cae5419f168af816699d2` |
-| 7 | `theorem` | [FaithfulSMul'](../../../../GroupTheoryAndGeneralizations/SigmaNamespacedPublic.lean/declarations/faithfulsmul.md) | 78 | `result-track:17c852e876a631d961f5626aec586cad3766698a4da94f7a6cd8050cea528a53` |
-| 8 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/SigmaNamespacedPublic.lean/declarations/instance-source-edition-4.md) | 82 | `declaration-track:d5d67295bffcb130797a787270863f3b598e65ea4682bf30a8763ac151013289` |
-| 9 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/SigmaNamespacedPublic.lean/declarations/instance-source-edition-5.md) | 88 | `declaration-track:f3c3fe5b35853a310921bb32bb451e80b05e02905a24f622fb54be009c332d7c` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SigmaNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 46 | `declaration-track:af8baeec79532a62d6892c4270793af5d0135f53ea8b22e3ec4810ea7e7b8df5` |
+| 2 | `theorem` | [smul_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SigmaNamespacedPublic.lean/declarations/smul-def.md) | 50 | `result-track:a37987eb2d2718bffbdde1783ffa1e5d02bedf7bfbae587a0e100eb06a02ca28` |
+| 3 | `theorem` | [smul_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SigmaNamespacedPublic.lean/declarations/smul-mk.md) | 54 | `result-track:832121fd496cc90cf92f8c595da54cb2b588ee52f89c575f95da5d567dc8ef57` |
+| 4 | `instance` | [instIsScalarTowerOfSMul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SigmaNamespacedPublic.lean/declarations/instisscalartowerofsmul.md) | 58 | `declaration-track:c80c5b6054475a59400e85af697c10098b3312b694a4aa0374f88223109f83e8` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SigmaNamespacedPublic.lean/declarations/instance.md) | 65 | `declaration-track:8ae875ff857eb3cc38df0c40992fe64dc1e24105d1e9bdfe33ec7cd715817924` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SigmaNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 71 | `declaration-track:93425bb6a6207f6cdff4aecb01d4d615e2e481d1ec6cae5419f168af816699d2` |
+| 7 | `theorem` | [FaithfulSMul'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SigmaNamespacedPublic.lean/declarations/faithfulsmul.md) | 78 | `result-track:17c852e876a631d961f5626aec586cad3766698a4da94f7a6cd8050cea528a53` |
+| 8 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SigmaNamespacedPublic.lean/declarations/instance-source-edition-4.md) | 82 | `declaration-track:d5d67295bffcb130797a787270863f3b598e65ea4682bf30a8763ac151013289` |
+| 9 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/SigmaNamespacedPublic.lean/declarations/instance-source-edition-5.md) | 88 | `declaration-track:f3c3fe5b35853a310921bb32bb451e80b05e02905a24f622fb54be009c332d7c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

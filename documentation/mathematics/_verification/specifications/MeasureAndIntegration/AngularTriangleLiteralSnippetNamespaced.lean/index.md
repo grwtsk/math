@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/AngularTriangleLiteralSnippetNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/AngularTriangleLiteralSnippetNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AngularTriangleLiteralSnippetNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AngularTriangleLiteralSnippetNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../MeasureAndIntegration/AngularTriangleLiteralSnippetNamespaced.lean/declarations/example.md) | 12 | `declaration-track:2087d9140858f15fdce71af6367abba5fffd41816bd4b8160643455e167a220d` |
-| 2 | `example` | [(anonymous)](../../../../MeasureAndIntegration/AngularTriangleLiteralSnippetNamespaced.lean/declarations/example-source-edition-2.md) | 17 | `declaration-track:4ab372f32411cd512481b7b751c26869670c93f992bac8bcc6f8ae0aaa4b2420` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AngularTriangleLiteralSnippetNamespaced.lean/declarations/example.md) | 12 | `declaration-track:2087d9140858f15fdce71af6367abba5fffd41816bd4b8160643455e167a220d` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AngularTriangleLiteralSnippetNamespaced.lean/declarations/example-source-edition-2.md) | 17 | `declaration-track:4ab372f32411cd512481b7b751c26869670c93f992bac8bcc6f8ae0aaa4b2420` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Conj.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Conj.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Conj.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Conj.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [isConj_iff₀](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Conj.lean/declarations/isconj-iff.md) | 21 | `result-track:34195c0a31a3a20abd75993ba012afbe19f4eef02340a8621266636a4fa47b39` |
-| 2 | `lemma` | [conj_pow₀](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Conj.lean/declarations/conj-pow.md) | 26 | `result-track:11acd5b274ab415b3f780dee77460ea3a94ec58fb2d7be7ba5a9b362ac148264` |
+| 1 | `lemma` | [isConj_iff₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Conj.lean/declarations/isconj-iff.md) | 21 | `result-track:34195c0a31a3a20abd75993ba012afbe19f4eef02340a8621266636a4fa47b39` |
+| 2 | `lemma` | [conj_pow₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Conj.lean/declarations/conj-pow.md) | 26 | `result-track:11acd5b274ab415b3f780dee77460ea3a94ec58fb2d7be7ba5a9b362ac148264` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt01ActualDampedXiCompactSevenCorrection.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt01ActualDampedXiCompactSevenCorrection.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt01ActualDampedXiCompactSevenCorrection.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt01ActualDampedXiCompactSevenCorrection.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualDampedXiCompactSevenCorrection](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt01ActualDampedXiCompactSevenCorrection.lean/declarations/actualdampedxicompactsevencorrection.md) | 21 | `declaration-track:eaadc837dd064aa343b34d41e63ec468b5237e196895549d70f07089ee9f84f3` |
-| 2 | `theorem` | [actualDampedXiFinitePrimitive_eq_compact_square](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt01ActualDampedXiCompactSevenCorrection.lean/declarations/actualdampedxifiniteprimitive-eq-compact-square.md) | 26 | `result-track:17d746deb6275ff1d99fb4b674dcb9f2e015b08dbd31398ff740d74f4ffa14c2` |
-| 3 | `theorem` | [actualDampedXiSquare_logarithmic_deficiency_abs_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt01ActualDampedXiCompactSevenCorrection.lean/declarations/actualdampedxisquare-logarithmic-deficiency-abs-le.md) | 43 | `result-track:c76454e58ab22422e18230394d27cc0db03e82320fc315b49b99e58b870ba26c` |
+| 1 | `def` | [actualDampedXiCompactSevenCorrection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt01ActualDampedXiCompactSevenCorrection.lean/declarations/actualdampedxicompactsevencorrection.md) | 21 | `declaration-track:eaadc837dd064aa343b34d41e63ec468b5237e196895549d70f07089ee9f84f3` |
+| 2 | `theorem` | [actualDampedXiFinitePrimitive_eq_compact_square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt01ActualDampedXiCompactSevenCorrection.lean/declarations/actualdampedxifiniteprimitive-eq-compact-square.md) | 26 | `result-track:17d746deb6275ff1d99fb4b674dcb9f2e015b08dbd31398ff740d74f4ffa14c2` |
+| 3 | `theorem` | [actualDampedXiSquare_logarithmic_deficiency_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt01ActualDampedXiCompactSevenCorrection.lean/declarations/actualdampedxisquare-logarithmic-deficiency-abs-le.md) | 43 | `result-track:c76454e58ab22422e18230394d27cc0db03e82320fc315b49b99e58b870ba26c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/HodgeDeRhamFiltration.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/HodgeDeRhamFiltration.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/HodgeDeRhamFiltration.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/HodgeDeRhamFiltration.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Filtration](../../../../ProbabilityTheoryAndStochasticProcesses/HodgeDeRhamFiltration.lean/declarations/filtration.md) | 18 | `declaration-track:9401a4b5977aaee3f8d53294c5741373e9e88bd5c2a797fee9e5bda558c96cc1` |
-| 2 | `structure` | [HodgeDeRhamFiltration](../../../../ProbabilityTheoryAndStochasticProcesses/HodgeDeRhamFiltration.lean/declarations/hodgederhamfiltration.md) | 27 | `declaration-track:b3d212eab8cd503aa481f961c5d2a2ea7548bb3c15c4bd9f0c889016c7e6696f` |
-| 3 | `theorem` | [filtration_exhaustive](../../../../ProbabilityTheoryAndStochasticProcesses/HodgeDeRhamFiltration.lean/declarations/filtration-exhaustive.md) | 37 | `result-track:2cb87d298895af681e3a31ca5b8555fa3141a338dd688cf2aeb93e866cf8ce6b` |
-| 4 | `theorem` | [filtration_separated](../../../../ProbabilityTheoryAndStochasticProcesses/HodgeDeRhamFiltration.lean/declarations/filtration-separated.md) | 42 | `result-track:60494cc8011e3b5feff5118d9cf24eb42d9dfb29d8773e5c763063673acec109` |
-| 5 | `theorem` | [hodge_de_rham_has_associated_connection](../../../../ProbabilityTheoryAndStochasticProcesses/HodgeDeRhamFiltration.lean/declarations/hodge-de-rham-has-associated-connection.md) | 47 | `result-track:2897a2c9fe35d44791aa6070faf44a013ecf89077fd8d62e05b9419b79164c3c` |
+| 1 | `structure` | [Filtration](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/HodgeDeRhamFiltration.lean/declarations/filtration.md) | 18 | `declaration-track:9401a4b5977aaee3f8d53294c5741373e9e88bd5c2a797fee9e5bda558c96cc1` |
+| 2 | `structure` | [HodgeDeRhamFiltration](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/HodgeDeRhamFiltration.lean/declarations/hodgederhamfiltration.md) | 27 | `declaration-track:b3d212eab8cd503aa481f961c5d2a2ea7548bb3c15c4bd9f0c889016c7e6696f` |
+| 3 | `theorem` | [filtration_exhaustive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/HodgeDeRhamFiltration.lean/declarations/filtration-exhaustive.md) | 37 | `result-track:2cb87d298895af681e3a31ca5b8555fa3141a338dd688cf2aeb93e866cf8ce6b` |
+| 4 | `theorem` | [filtration_separated](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/HodgeDeRhamFiltration.lean/declarations/filtration-separated.md) | 42 | `result-track:60494cc8011e3b5feff5118d9cf24eb42d9dfb29d8773e5c763063673acec109` |
+| 5 | `theorem` | [hodge_de_rham_has_associated_connection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/HodgeDeRhamFiltration.lean/declarations/hodge-de-rham-has-associated-connection.md) | 47 | `result-track:2897a2c9fe35d44791aa6070faf44a013ecf89077fd8d62e05b9419b79164c3c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

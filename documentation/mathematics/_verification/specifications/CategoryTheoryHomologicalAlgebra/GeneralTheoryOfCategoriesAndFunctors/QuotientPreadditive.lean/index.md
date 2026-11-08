@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/QuotientPreadditive.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/QuotientPreadditive.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/QuotientPreadditive.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/QuotientPreadditive.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [add](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/QuotientPreadditive.lean/declarations/add.md) | 28 | `declaration-track:bdcf5de512e5a2167632bec45ed1a1898bcae6a30158f64ca19086483202b27b` |
-| 2 | `def` | [neg](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/QuotientPreadditive.lean/declarations/neg.md) | 42 | `declaration-track:795fbb0833352067f2e4f8d8b136d47cee37eb0e8f7068a83cb38b74ab604950` |
-| 3 | `def` | [preadditive](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/QuotientPreadditive.lean/declarations/preadditive.md) | 56 | `declaration-track:e4d0f48a13cf3c16c593cc73532f85de3b212712c8f664065db78db39f77ef6d` |
-| 4 | `lemma` | [functor_additive](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/QuotientPreadditive.lean/declarations/functor-additive.md) | 81 | `result-track:184b29dfaee05ad5cfd40a5a44a93fc869bb32dd4cc065979b01073e2fbddc2b` |
+| 1 | `def` | [add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/QuotientPreadditive.lean/declarations/add.md) | 28 | `declaration-track:bdcf5de512e5a2167632bec45ed1a1898bcae6a30158f64ca19086483202b27b` |
+| 2 | `def` | [neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/QuotientPreadditive.lean/declarations/neg.md) | 42 | `declaration-track:795fbb0833352067f2e4f8d8b136d47cee37eb0e8f7068a83cb38b74ab604950` |
+| 3 | `def` | [preadditive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/QuotientPreadditive.lean/declarations/preadditive.md) | 56 | `declaration-track:e4d0f48a13cf3c16c593cc73532f85de3b212712c8f664065db78db39f77ef6d` |
+| 4 | `lemma` | [functor_additive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/QuotientPreadditive.lean/declarations/functor-additive.md) | 81 | `result-track:184b29dfaee05ad5cfd40a5a44a93fc869bb32dd4cc065979b01073e2fbddc2b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicQpartition.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicQpartition.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicQpartition.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicQpartition.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [qpartition](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicQpartition.lean/declarations/qpartition.md) | 45 | `declaration-track:9b323a864b4109e9f528de4b416f41a5f7817002316b251649a8276538925e98` |
-| 2 | `def` | [qsort](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicQpartition.lean/declarations/qsort.md) | 72 | `declaration-track:20b9dd3b0c862ae7582bf28bada050d145ad9f15cfc5d7ea8ec5ab07dd3d0c45` |
-| 3 | `def` | [qsortOrd](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicQpartition.lean/declarations/qsortord.md) | 97 | `declaration-track:9ae694a079186cee4c921d817047339a1c9cf9a31cb97a96d26bc616e7f4959d` |
+| 1 | `def` | [qpartition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicQpartition.lean/declarations/qpartition.md) | 45 | `declaration-track:9b323a864b4109e9f528de4b416f41a5f7817002316b251649a8276538925e98` |
+| 2 | `def` | [qsort](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicQpartition.lean/declarations/qsort.md) | 72 | `declaration-track:20b9dd3b0c862ae7582bf28bada050d145ad9f15cfc5d7ea8ec5ab07dd3d0c45` |
+| 3 | `def` | [qsortOrd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedPublicQpartition.lean/declarations/qsortord.md) | 97 | `declaration-track:9ae694a079186cee4c921d817047339a1c9cf9a31cb97a96d26bc616e7f4959d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DerivedIndexNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DerivedIndexNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DerivedIndexNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DerivedIndexNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [DerivedIndex](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DerivedIndexNamespaced.lean/declarations/derivedindex.md) | 26 | `declaration-track:1f5368f3ca562d951bd47ed5e56b2519a82ffe50e3fb51acc3d6c0fdf5396a06` |
-| 2 | `theorem` | [derived_index_interprets_as_index](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DerivedIndexNamespaced.lean/declarations/derived-index-interprets-as-index.md) | 33 | `result-track:842f2ae7f450622f5dd5eb37b2a0d3944f1a2b0794f216e5223622662aa5e340` |
-| 3 | `theorem` | [derived_index_has_euler_characteristic](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DerivedIndexNamespaced.lean/declarations/derived-index-has-euler-characteristic.md) | 38 | `result-track:a2dd501762096370e5ef12f6f26dad412d548ecf2d7ed3ca9180bb08fd30a256` |
+| 1 | `structure` | [DerivedIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DerivedIndexNamespaced.lean/declarations/derivedindex.md) | 26 | `declaration-track:1f5368f3ca562d951bd47ed5e56b2519a82ffe50e3fb51acc3d6c0fdf5396a06` |
+| 2 | `theorem` | [derived_index_interprets_as_index](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DerivedIndexNamespaced.lean/declarations/derived-index-interprets-as-index.md) | 33 | `result-track:842f2ae7f450622f5dd5eb37b2a0d3944f1a2b0794f216e5223622662aa5e340` |
+| 3 | `theorem` | [derived_index_has_euler_characteristic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DerivedIndexNamespaced.lean/declarations/derived-index-has-euler-characteristic.md) | 38 | `result-track:a2dd501762096370e5ef12f6f26dad412d548ecf2d7ed3ca9180bb08fd30a256` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

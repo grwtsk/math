@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/DampedDivisorScheduleAuditNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/DampedDivisorScheduleAuditNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DampedDivisorScheduleAuditNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DampedDivisorScheduleAuditNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,16 +59,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [fastEpsilon](../../../../GeneralTopology/DampedDivisorScheduleAuditNamespaced.lean/declarations/fastepsilon.md) | 24 | `declaration-track:9ab1b997654d1e9308d164c1588841ad6906da7b2c089d3fe9eeab1922898962` |
-| 2 | `theorem` | [scale_facts](../../../../GeneralTopology/DampedDivisorScheduleAuditNamespaced.lean/declarations/scale-facts.md) | 26 | `result-track:cc3a39e7f27ee3075e0f65015decd7d7c7d0d546bbe731e9f475c78d16ffff12` |
-| 3 | `theorem` | [cutoff_sqrt](../../../../GeneralTopology/DampedDivisorScheduleAuditNamespaced.lean/declarations/cutoff-sqrt.md) | 34 | `result-track:aed2291096e9453ef710752f721d9ba199b028107ecae6aa890cc7c291251d47` |
-| 4 | `theorem` | [fast_schedule_admissible](../../../../GeneralTopology/DampedDivisorScheduleAuditNamespaced.lean/declarations/fast-schedule-admissible.md) | 43 | `result-track:7858d060555fd48475efd4b6d3a2b2b8d2fc06bd606af76f7e74c8044b002c53` |
-| 5 | `theorem` | [fast_endpoint_bounds](../../../../GeneralTopology/DampedDivisorScheduleAuditNamespaced.lean/declarations/fast-endpoint-bounds.md) | 51 | `result-track:890368aef264f2e74ca87e88231035935f1308959f3ac2c0ce60c8772bdf9b6c` |
-| 6 | `theorem` | [fast_taylor_bound](../../../../GeneralTopology/DampedDivisorScheduleAuditNamespaced.lean/declarations/fast-taylor-bound.md) | 71 | `result-track:1b1daa51251fcafeefba82b95f5bc04c7bc8312d736322782f5d1ba2c72d7cda` |
-| 7 | `theorem` | [logScale_power_div_rpow_tendsto](../../../../GeneralTopology/DampedDivisorScheduleAuditNamespaced.lean/declarations/logscale-power-div-rpow-tendsto.md) | 101 | `result-track:130ccc542cf22c5c019b3b8f600b783aa7e248a7aad3cba94367f794a6a0ba48` |
-| 8 | `theorem` | [fast_explicit_budgets_tendsto](../../../../GeneralTopology/DampedDivisorScheduleAuditNamespaced.lean/declarations/fast-explicit-budgets-tendsto.md) | 121 | `result-track:efb9c187e812414a8c19c979423c40f9cd9f911797d1aff24f133e084b322dba` |
-| 9 | `theorem` | [fast_actual_budgets_tendsto](../../../../GeneralTopology/DampedDivisorScheduleAuditNamespaced.lean/declarations/fast-actual-budgets-tendsto.md) | 137 | `result-track:ed0f4b7a55c38038b923c38cda606db45158af1e282aba20e44b8654b3a32e6e` |
-| 10 | `theorem` | [fast_actual_tail_norm_bounds](../../../../GeneralTopology/DampedDivisorScheduleAuditNamespaced.lean/declarations/fast-actual-tail-norm-bounds.md) | 157 | `result-track:35a0f22e86a25c8710cbc2b1f0af9122cb7cd8bb579b59329a3a4cc368097401` |
+| 1 | `def` | [fastEpsilon](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DampedDivisorScheduleAuditNamespaced.lean/declarations/fastepsilon.md) | 24 | `declaration-track:9ab1b997654d1e9308d164c1588841ad6906da7b2c089d3fe9eeab1922898962` |
+| 2 | `theorem` | [scale_facts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DampedDivisorScheduleAuditNamespaced.lean/declarations/scale-facts.md) | 26 | `result-track:cc3a39e7f27ee3075e0f65015decd7d7c7d0d546bbe731e9f475c78d16ffff12` |
+| 3 | `theorem` | [cutoff_sqrt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DampedDivisorScheduleAuditNamespaced.lean/declarations/cutoff-sqrt.md) | 34 | `result-track:aed2291096e9453ef710752f721d9ba199b028107ecae6aa890cc7c291251d47` |
+| 4 | `theorem` | [fast_schedule_admissible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DampedDivisorScheduleAuditNamespaced.lean/declarations/fast-schedule-admissible.md) | 43 | `result-track:7858d060555fd48475efd4b6d3a2b2b8d2fc06bd606af76f7e74c8044b002c53` |
+| 5 | `theorem` | [fast_endpoint_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DampedDivisorScheduleAuditNamespaced.lean/declarations/fast-endpoint-bounds.md) | 51 | `result-track:890368aef264f2e74ca87e88231035935f1308959f3ac2c0ce60c8772bdf9b6c` |
+| 6 | `theorem` | [fast_taylor_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DampedDivisorScheduleAuditNamespaced.lean/declarations/fast-taylor-bound.md) | 71 | `result-track:1b1daa51251fcafeefba82b95f5bc04c7bc8312d736322782f5d1ba2c72d7cda` |
+| 7 | `theorem` | [logScale_power_div_rpow_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DampedDivisorScheduleAuditNamespaced.lean/declarations/logscale-power-div-rpow-tendsto.md) | 101 | `result-track:130ccc542cf22c5c019b3b8f600b783aa7e248a7aad3cba94367f794a6a0ba48` |
+| 8 | `theorem` | [fast_explicit_budgets_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DampedDivisorScheduleAuditNamespaced.lean/declarations/fast-explicit-budgets-tendsto.md) | 121 | `result-track:efb9c187e812414a8c19c979423c40f9cd9f911797d1aff24f133e084b322dba` |
+| 9 | `theorem` | [fast_actual_budgets_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DampedDivisorScheduleAuditNamespaced.lean/declarations/fast-actual-budgets-tendsto.md) | 137 | `result-track:ed0f4b7a55c38038b923c38cda606db45158af1e282aba20e44b8654b3a32e6e` |
+| 10 | `theorem` | [fast_actual_tail_norm_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DampedDivisorScheduleAuditNamespaced.lean/declarations/fast-actual-tail-norm-bounds.md) | 157 | `result-track:35a0f22e86a25c8710cbc2b1f0af9122cb7cd8bb579b59329a3a4cc368097401` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/FloatToRatParts.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/FloatToRatParts.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/FloatToRatParts.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/FloatToRatParts.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [toRatParts](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/FloatToRatParts.lean/declarations/toratparts-source-edition-2.md) | 12 | `declaration-track:edd83edd137e411c091000b0cfc7f6cfb53195c4676053b2b7aa460258fc2b36` |
-| 2 | `def` | [toRatParts'](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/FloatToRatParts.lean/declarations/toratparts.md) | 27 | `declaration-track:1197b6492ee68763f49e51b40976b2b48d051cac3dd6e14fcd83a905f1ee5afd` |
-| 3 | `def` | [toStringFull](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/FloatToRatParts.lean/declarations/tostringfull.md) | 44 | `declaration-track:9d40f151b28f9e675d52613699a96c9131a6c8003e8fa26a3a307d86880f7a39` |
+| 1 | `def` | [toRatParts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/FloatToRatParts.lean/declarations/toratparts-source-edition-2.md) | 12 | `declaration-track:edd83edd137e411c091000b0cfc7f6cfb53195c4676053b2b7aa460258fc2b36` |
+| 2 | `def` | [toRatParts'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/FloatToRatParts.lean/declarations/toratparts.md) | 27 | `declaration-track:1197b6492ee68763f49e51b40976b2b48d051cac3dd6e14fcd83a905f1ee5afd` |
+| 3 | `def` | [toStringFull](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/FloatToRatParts.lean/declarations/tostringfull.md) | 44 | `declaration-track:9d40f151b28f9e675d52613699a96c9131a6c8003e8fa26a3a307d86880f7a39` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

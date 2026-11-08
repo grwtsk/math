@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimilarityNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimilarityNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimilarityNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimilarityNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [MatrixSimilarity](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimilarityNamespaced.lean/declarations/matrixsimilarity.md) | 13 | `declaration-track:b0cb06ec73cfc22dd50c79defc30011b1faba403e603f91566644549d31dcb27` |
-| 2 | `def` | [similarityValue](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimilarityNamespaced.lean/declarations/similarityvalue.md) | 19 | `declaration-track:2b2764d8cad12f42f12ae4e8276f5a36909bf71a31870323de952f68fc15b4bd` |
-| 3 | `def` | [similarityGE](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimilarityNamespaced.lean/declarations/similarityge.md) | 22 | `declaration-track:d3a52412cb61df87ab51f34bfc7b4e7417fa551c3007f8003c66940d2e6a9d99` |
-| 4 | `inductive` | [SimilarityMode](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimilarityNamespaced.lean/declarations/similaritymode.md) | 27 | `declaration-track:8fee99d5bc3afc406705911a38d9350a0a1fee95a879cc71f3ec57e20a2222bb` |
-| 5 | `structure` | [SimilarityThreshold](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimilarityNamespaced.lean/declarations/similaritythreshold.md) | 35 | `declaration-track:6151bdb07148bf226db8254b4e26c34b2cb17b16880f9600aa865f6bed33d4c5` |
-| 6 | `theorem` | [matrixSimilarity_denominator_ne_zero](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimilarityNamespaced.lean/declarations/matrixsimilarity-denominator-ne-zero.md) | 40 | `result-track:8f459ad01045c093b69fc28f6bb2108220d273bb97efc28cd58e89b4c57ddc9d` |
-| 7 | `theorem` | [matrixSimilarity_operational_boundary](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimilarityNamespaced.lean/declarations/matrixsimilarity-operational-boundary.md) | 45 | `result-track:73dd656e6e356d3715b0f876d85fe69f7a466535073b47880fe78a77c4dc7047` |
+| 1 | `structure` | [MatrixSimilarity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimilarityNamespaced.lean/declarations/matrixsimilarity.md) | 13 | `declaration-track:b0cb06ec73cfc22dd50c79defc30011b1faba403e603f91566644549d31dcb27` |
+| 2 | `def` | [similarityValue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimilarityNamespaced.lean/declarations/similarityvalue.md) | 19 | `declaration-track:2b2764d8cad12f42f12ae4e8276f5a36909bf71a31870323de952f68fc15b4bd` |
+| 3 | `def` | [similarityGE](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimilarityNamespaced.lean/declarations/similarityge.md) | 22 | `declaration-track:d3a52412cb61df87ab51f34bfc7b4e7417fa551c3007f8003c66940d2e6a9d99` |
+| 4 | `inductive` | [SimilarityMode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimilarityNamespaced.lean/declarations/similaritymode.md) | 27 | `declaration-track:8fee99d5bc3afc406705911a38d9350a0a1fee95a879cc71f3ec57e20a2222bb` |
+| 5 | `structure` | [SimilarityThreshold](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimilarityNamespaced.lean/declarations/similaritythreshold.md) | 35 | `declaration-track:6151bdb07148bf226db8254b4e26c34b2cb17b16880f9600aa865f6bed33d4c5` |
+| 6 | `theorem` | [matrixSimilarity_denominator_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimilarityNamespaced.lean/declarations/matrixsimilarity-denominator-ne-zero.md) | 40 | `result-track:8f459ad01045c093b69fc28f6bb2108220d273bb97efc28cd58e89b4c57ddc9d` |
+| 7 | `theorem` | [matrixSimilarity_operational_boundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimilarityNamespaced.lean/declarations/matrixsimilarity-operational-boundary.md) | 45 | `result-track:73dd656e6e356d3715b0f876d85fe69f7a466535073b47880fe78a77c4dc7047` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

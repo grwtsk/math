@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/DiophantineEquations/FreyIntegralModel.lean/index.md) · [Full source](../../../../../NumberTheory/DiophantineEquations/FreyIntegralModel.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyIntegralModel.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyIntegralModel.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyAffineEvaluation`](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FreyAffineEvaluation.lean/index.md) — import line 9; pinned internal source present.
+- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyAffineEvaluation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FreyAffineEvaluation.lean/index.md) — import line 9; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [freyWeierstrassInt](../../../../../NumberTheory/DiophantineEquations/FreyIntegralModel.lean/declarations/freyweierstrassint-source-edition-2.md) | 17 | `declaration-track:efbf52c4ec19e695fe8562d62273bb87581477d010d2ca5aa37cec6dee9ae990` |
-| 2 | `theorem` | [freyWeierstrassInt_Δ](../../../../../NumberTheory/DiophantineEquations/FreyIntegralModel.lean/declarations/freyweierstrassint.md) | 25 | `result-track:adf757294a2fb7066a74cabbd7deaf555fe7c487953a92f0e16299906789aab6` |
-| 3 | `def` | [PrimitiveAdditiveTriple.freyIntegralModel](../../../../../NumberTheory/DiophantineEquations/FreyIntegralModel.lean/declarations/primitiveadditivetriple-freyintegralmodel.md) | 33 | `declaration-track:09e6b10b6e4bc872941afd0b96b0a4b7e68d599c4747ee2a092f42a782eaa4b3` |
-| 4 | `theorem` | [PrimitiveAdditiveTriple.freyIntegralModel_Δ](../../../../../NumberTheory/DiophantineEquations/FreyIntegralModel.lean/declarations/primitiveadditivetriple-freyintegralmodel-source-edition-2.md) | 38 | `result-track:4a65102fb9403e0ba0ea1e319cdf545ffa37ab8a1e5bbb72491203f285d661ce` |
-| 5 | `theorem` | [PrimitiveAdditiveTriple.freyIntegralModel_Δ_ne_zero](../../../../../NumberTheory/DiophantineEquations/FreyIntegralModel.lean/declarations/primitiveadditivetriple-freyintegralmodel-ne-zero.md) | 49 | `result-track:585ada058ad3a04d6b5391cc3fa71f885ac68818e19a1fc0d0ca01ebded0f388` |
-| 6 | `theorem` | [PrimitiveAdditiveTriple.freyIntegralModel_baseChange_eq](../../../../../NumberTheory/DiophantineEquations/FreyIntegralModel.lean/declarations/primitiveadditivetriple-freyintegralmodel-basechange-eq.md) | 65 | `result-track:3c53b8b50d32da9685f32c92b04e7b679c79f6b2bc7ae1af667956759bc8ba6e` |
-| 7 | `theorem` | [PrimitiveAdditiveTriple.freyCurve_Δ_eq_intCast](../../../../../NumberTheory/DiophantineEquations/FreyIntegralModel.lean/declarations/primitiveadditivetriple-freycurve-eq-intcast.md) | 75 | `result-track:874b897ed882e65f2a06cf81b4eb5aa80ce506d03abe183c68d0d06f32b18ea0` |
-| 8 | `def` | [PrimitiveAdditiveTriple.freyIntegralCoefficients](../../../../../NumberTheory/DiophantineEquations/FreyIntegralModel.lean/declarations/primitiveadditivetriple-freyintegralcoefficients.md) | 83 | `declaration-track:914c5ce56d753ffbe4cc050804cfed2e5c5ec8349c6aee649c70bdbf9d5e0803` |
-| 9 | `theorem` | [PrimitiveAdditiveTriple.freyIntegralCoefficients_eq](../../../../../NumberTheory/DiophantineEquations/FreyIntegralModel.lean/declarations/primitiveadditivetriple-freyintegralcoefficients-eq.md) | 90 | `result-track:9ed15537bbbd1b9e48748c69345680fd907dcfb2a747d39f7422b1b2b47760b4` |
+| 1 | `def` | [freyWeierstrassInt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyIntegralModel.lean/declarations/freyweierstrassint-source-edition-2.md) | 17 | `declaration-track:efbf52c4ec19e695fe8562d62273bb87581477d010d2ca5aa37cec6dee9ae990` |
+| 2 | `theorem` | [freyWeierstrassInt_Δ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyIntegralModel.lean/declarations/freyweierstrassint.md) | 25 | `result-track:adf757294a2fb7066a74cabbd7deaf555fe7c487953a92f0e16299906789aab6` |
+| 3 | `def` | [PrimitiveAdditiveTriple.freyIntegralModel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyIntegralModel.lean/declarations/primitiveadditivetriple-freyintegralmodel.md) | 33 | `declaration-track:09e6b10b6e4bc872941afd0b96b0a4b7e68d599c4747ee2a092f42a782eaa4b3` |
+| 4 | `theorem` | [PrimitiveAdditiveTriple.freyIntegralModel_Δ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyIntegralModel.lean/declarations/primitiveadditivetriple-freyintegralmodel-source-edition-2.md) | 38 | `result-track:4a65102fb9403e0ba0ea1e319cdf545ffa37ab8a1e5bbb72491203f285d661ce` |
+| 5 | `theorem` | [PrimitiveAdditiveTriple.freyIntegralModel_Δ_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyIntegralModel.lean/declarations/primitiveadditivetriple-freyintegralmodel-ne-zero.md) | 49 | `result-track:585ada058ad3a04d6b5391cc3fa71f885ac68818e19a1fc0d0ca01ebded0f388` |
+| 6 | `theorem` | [PrimitiveAdditiveTriple.freyIntegralModel_baseChange_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyIntegralModel.lean/declarations/primitiveadditivetriple-freyintegralmodel-basechange-eq.md) | 65 | `result-track:3c53b8b50d32da9685f32c92b04e7b679c79f6b2bc7ae1af667956759bc8ba6e` |
+| 7 | `theorem` | [PrimitiveAdditiveTriple.freyCurve_Δ_eq_intCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyIntegralModel.lean/declarations/primitiveadditivetriple-freycurve-eq-intcast.md) | 75 | `result-track:874b897ed882e65f2a06cf81b4eb5aa80ce506d03abe183c68d0d06f32b18ea0` |
+| 8 | `def` | [PrimitiveAdditiveTriple.freyIntegralCoefficients](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyIntegralModel.lean/declarations/primitiveadditivetriple-freyintegralcoefficients.md) | 83 | `declaration-track:914c5ce56d753ffbe4cc050804cfed2e5c5ec8349c6aee649c70bdbf9d5e0803` |
+| 9 | `theorem` | [PrimitiveAdditiveTriple.freyIntegralCoefficients_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/FreyIntegralModel.lean/declarations/primitiveadditivetriple-freyintegralcoefficients-eq.md) | 90 | `result-track:9ed15537bbbd1b9e48748c69345680fd907dcfb2a747d39f7422b1b2b47760b4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

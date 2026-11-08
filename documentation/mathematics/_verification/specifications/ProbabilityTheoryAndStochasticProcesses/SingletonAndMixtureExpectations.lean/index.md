@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/SingletonAndMixtureExpectations.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/SingletonAndMixtureExpectations.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/SingletonAndMixtureExpectations.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/SingletonAndMixtureExpectations.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -49,7 +49,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 - `BitMatrix.Probability` — import line 20; external provider; requires a separately pinned dependency.
 - `BitMatrix.Spectral` — import line 21; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 22; external provider; requires a separately pinned dependency.
-- [Positive Data And Finite Laws](../../../../ProbabilityTheoryAndStochasticProcesses/PositiveDataAndFiniteLaws.lean/index.md) — import line 24; pinned internal source present.
+- [Positive Data And Finite Laws](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/PositiveDataAndFiniteLaws.lean/index.md) — import line 24; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [singletonPacket](../../../../ProbabilityTheoryAndStochasticProcesses/SingletonAndMixtureExpectations.lean/declarations/singletonpacket.md) | 43 | `declaration-track:5e9596e589bce28dbe8faa2bc561bbd18dd1caace23f54761a12da93d8037395` |
-| 2 | `example` | [(anonymous)](../../../../ProbabilityTheoryAndStochasticProcesses/SingletonAndMixtureExpectations.lean/declarations/example-source-edition-4.md) | 50 | `declaration-track:b97e72c6c463ae0c67327dfad46155dabab48072aa6475d54162cb416ea1f243` |
-| 3 | `example` | [(anonymous)](../../../../ProbabilityTheoryAndStochasticProcesses/SingletonAndMixtureExpectations.lean/declarations/example-source-edition-2.md) | 54 | `declaration-track:6defe72bca7bbf8dad38cde0a5bcf743569564965fe6e33304d6dc8f8ea306f2` |
-| 4 | `example` | [(anonymous)](../../../../ProbabilityTheoryAndStochasticProcesses/SingletonAndMixtureExpectations.lean/declarations/example-source-edition-3.md) | 58 | `declaration-track:ab34c94d1a01c083120945b6d43ae4143344a4a6c2c9ba1f8f3be18e76fcced0` |
-| 5 | `example` | [(anonymous)](../../../../ProbabilityTheoryAndStochasticProcesses/SingletonAndMixtureExpectations.lean/declarations/example.md) | 65 | `declaration-track:667bae2e778fd13b4985dbec0306ac459765f1ee804e290c31e40c651f50ad2b` |
+| 1 | `def` | [singletonPacket](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/SingletonAndMixtureExpectations.lean/declarations/singletonpacket.md) | 43 | `declaration-track:5e9596e589bce28dbe8faa2bc561bbd18dd1caace23f54761a12da93d8037395` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/SingletonAndMixtureExpectations.lean/declarations/example-source-edition-4.md) | 50 | `declaration-track:b97e72c6c463ae0c67327dfad46155dabab48072aa6475d54162cb416ea1f243` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/SingletonAndMixtureExpectations.lean/declarations/example-source-edition-2.md) | 54 | `declaration-track:6defe72bca7bbf8dad38cde0a5bcf743569564965fe6e33304d6dc8f8ea306f2` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/SingletonAndMixtureExpectations.lean/declarations/example-source-edition-3.md) | 58 | `declaration-track:ab34c94d1a01c083120945b6d43ae4143344a4a6c2c9ba1f8f3be18e76fcced0` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/SingletonAndMixtureExpectations.lean/declarations/example.md) | 65 | `declaration-track:667bae2e778fd13b4985dbec0306ac459765f1ee804e290c31e40c651f50ad2b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

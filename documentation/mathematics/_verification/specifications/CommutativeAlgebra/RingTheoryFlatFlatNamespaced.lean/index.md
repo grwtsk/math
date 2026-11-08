@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/RingTheoryFlatFlatNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/RingTheoryFlatFlatNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryFlatFlatNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryFlatFlatNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [Flat](../../../../CommutativeAlgebra/RingTheoryFlatFlatNamespaced.lean/declarations/flat.md) | 69 | `declaration-track:9a1f0c51d88e63024a0df6f1cacf247de54ab320e7a66b11b5da36df625fee7e` |
-| 2 | `instance` | [self](../../../../CommutativeAlgebra/RingTheoryFlatFlatNamespaced.lean/declarations/self.md) | 77 | `declaration-track:532818ee82398c3cc637a4bb70c4300de2894b33b35bd9b5afa137e8a59e9ddd` |
+| 1 | `class` | [Flat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryFlatFlatNamespaced.lean/declarations/flat.md) | 69 | `declaration-track:9a1f0c51d88e63024a0df6f1cacf247de54ab320e7a66b11b5da36df625fee7e` |
+| 2 | `instance` | [self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RingTheoryFlatFlatNamespaced.lean/declarations/self.md) | 77 | `declaration-track:532818ee82398c3cc637a4bb70c4300de2894b33b35bd9b5afa137e8a59e9ddd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

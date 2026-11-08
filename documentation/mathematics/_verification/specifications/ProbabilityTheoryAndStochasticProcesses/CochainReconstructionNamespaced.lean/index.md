@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/CochainReconstructionNamespaced.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/CochainReconstructionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CochainReconstructionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CochainReconstructionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [insertPath](../../../../ProbabilityTheoryAndStochasticProcesses/CochainReconstructionNamespaced.lean/declarations/insertpath.md) | 21 | `declaration-track:59bf292f9392f2ead3ac70aa1cf7d04c70eb22ef50e2e2dbc5c6422093a18f58` |
-| 2 | `def` | [capacityPathSum](../../../../ProbabilityTheoryAndStochasticProcesses/CochainReconstructionNamespaced.lean/declarations/capacitypathsum.md) | 29 | `declaration-track:373370020bc23f1bf3a0818c33084cda1e541b4826ab589abe6b789e9747207b` |
-| 3 | `theorem` | [capacityPathSum_eq_terminal_sub_initial](../../../../ProbabilityTheoryAndStochasticProcesses/CochainReconstructionNamespaced.lean/declarations/capacitypathsum-eq-terminal-sub-initial.md) | 40 | `result-track:0218295e4c65a7c83bb8e6eaf4dfa47f12c14fc7c88d3f1cf088fd90fdb2047e` |
-| 4 | `theorem` | [capacity_path_sum_independent](../../../../ProbabilityTheoryAndStochasticProcesses/CochainReconstructionNamespaced.lean/declarations/capacity-path-sum-independent.md) | 68 | `result-track:4da4dfe70438308a8e9eae36a873aa013e2c7d1af15ef5c161072436e7ef1bfe` |
+| 1 | `def` | [insertPath](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CochainReconstructionNamespaced.lean/declarations/insertpath.md) | 21 | `declaration-track:59bf292f9392f2ead3ac70aa1cf7d04c70eb22ef50e2e2dbc5c6422093a18f58` |
+| 2 | `def` | [capacityPathSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CochainReconstructionNamespaced.lean/declarations/capacitypathsum.md) | 29 | `declaration-track:373370020bc23f1bf3a0818c33084cda1e541b4826ab589abe6b789e9747207b` |
+| 3 | `theorem` | [capacityPathSum_eq_terminal_sub_initial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CochainReconstructionNamespaced.lean/declarations/capacitypathsum-eq-terminal-sub-initial.md) | 40 | `result-track:0218295e4c65a7c83bb8e6eaf4dfa47f12c14fc7c88d3f1cf088fd90fdb2047e` |
+| 4 | `theorem` | [capacity_path_sum_independent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CochainReconstructionNamespaced.lean/declarations/capacity-path-sum-independent.md) | 68 | `result-track:4da4dfe70438308a8e9eae36a873aa013e2c7d1af15ef5c161072436e7ef1bfe` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

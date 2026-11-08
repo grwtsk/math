@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ForgetNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/ForgetNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ForgetNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ForgetNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [isSheaf_iff_isSheaf_comp'](../../../../GeneralTopology/ForgetNamespaced.lean/declarations/issheaf-iff-issheaf-comp-source-edition-2.md) | 54 | `result-track:aff5f223b3a900d2d61de928874d139296282aed6c891f090a99527630c9cc32` |
-| 2 | `theorem` | [isSheaf_iff_isSheaf_comp](../../../../GeneralTopology/ForgetNamespaced.lean/declarations/issheaf-iff-issheaf-comp.md) | 59 | `result-track:a329dd333759d7527748b71e44103924f0beb2338b702eba6b93aece8b3506af` |
+| 1 | `theorem` | [isSheaf_iff_isSheaf_comp'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ForgetNamespaced.lean/declarations/issheaf-iff-issheaf-comp-source-edition-2.md) | 54 | `result-track:aff5f223b3a900d2d61de928874d139296282aed6c891f090a99527630c9cc32` |
+| 2 | `theorem` | [isSheaf_iff_isSheaf_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ForgetNamespaced.lean/declarations/issheaf-iff-issheaf-comp.md) | 59 | `result-track:a329dd333759d7527748b71e44103924f0beb2338b702eba6b93aece8b3506af` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

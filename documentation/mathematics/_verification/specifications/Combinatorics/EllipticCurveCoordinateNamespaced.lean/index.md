@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/EllipticCurveCoordinateNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/EllipticCurveCoordinateNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EllipticCurveCoordinateNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EllipticCurveCoordinateNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [surfaceId](../../../../Combinatorics/EllipticCurveCoordinateNamespaced.lean/declarations/surfaceid.md) | 16 | `declaration-track:76e48cb6e4604f488d9fb51ca790547e47e7fdddbd987b1f0ac00e4c5d150b28` |
-| 2 | `def` | [ownsDeclaredSurface](../../../../Combinatorics/EllipticCurveCoordinateNamespaced.lean/declarations/ownsdeclaredsurface.md) | 17 | `declaration-track:ff24e92d38893fe2561020e3eb45c2ef4b9c3d59c044ed3c778474fcc35110f0` |
-| 3 | `def` | [crossLeafReasoningRequiresGlue](../../../../Combinatorics/EllipticCurveCoordinateNamespaced.lean/declarations/crossleafreasoningrequiresglue.md) | 18 | `declaration-track:4b00900be7f5b062cb6ceb28e824ad375511df62e50b8579eb2c9952710e01ef` |
-| 4 | `theorem` | [surface_id_declared](../../../../Combinatorics/EllipticCurveCoordinateNamespaced.lean/declarations/surface-id-declared.md) | 20 | `result-track:5ed6e5a7cc1cb06f015eeb9e782eb2941c83ff919ef72aa055319ad3105fcca3` |
-| 5 | `theorem` | [owns_declared_surface](../../../../Combinatorics/EllipticCurveCoordinateNamespaced.lean/declarations/owns-declared-surface.md) | 24 | `result-track:88f0e3e3ed7ab2a3c7d12c1f483a2e4eb074413fa505b70a1b44bd7ab89f394f` |
+| 1 | `def` | [surfaceId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EllipticCurveCoordinateNamespaced.lean/declarations/surfaceid.md) | 16 | `declaration-track:76e48cb6e4604f488d9fb51ca790547e47e7fdddbd987b1f0ac00e4c5d150b28` |
+| 2 | `def` | [ownsDeclaredSurface](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EllipticCurveCoordinateNamespaced.lean/declarations/ownsdeclaredsurface.md) | 17 | `declaration-track:ff24e92d38893fe2561020e3eb45c2ef4b9c3d59c044ed3c778474fcc35110f0` |
+| 3 | `def` | [crossLeafReasoningRequiresGlue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EllipticCurveCoordinateNamespaced.lean/declarations/crossleafreasoningrequiresglue.md) | 18 | `declaration-track:4b00900be7f5b062cb6ceb28e824ad375511df62e50b8579eb2c9952710e01ef` |
+| 4 | `theorem` | [surface_id_declared](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EllipticCurveCoordinateNamespaced.lean/declarations/surface-id-declared.md) | 20 | `result-track:5ed6e5a7cc1cb06f015eeb9e782eb2941c83ff919ef72aa055319ad3105fcca3` |
+| 5 | `theorem` | [owns_declared_surface](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EllipticCurveCoordinateNamespaced.lean/declarations/owns-declared-surface.md) | 24 | `result-track:88f0e3e3ed7ab2a3c7d12c1f483a2e4eb074413fa505b70a1b44bd7ab89f394f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

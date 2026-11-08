@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ValidationClassifiedCutValidator.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ValidationClassifiedCutValidator.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ValidationClassifiedCutValidator.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ValidationClassifiedCutValidator.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ClassifiedCutValidator](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ValidationClassifiedCutValidator.lean/declarations/classifiedcutvalidator.md) | 14 | `declaration-track:2aa0c64066a9f3b48c7ae2f090b76c7c804e18b6e6627fe3fa4abd88b668975b` |
-| 2 | `inductive` | [CutValidation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ValidationClassifiedCutValidator.lean/declarations/cutvalidation.md) | 25 | `declaration-track:c77d492bf666d9bbb77c12f96ab32a1d3d6d3571dd6593dbcbf7a528ac2c96bc` |
-| 3 | `def` | [validateCut](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ValidationClassifiedCutValidator.lean/declarations/validatecut.md) | 37 | `declaration-track:09283fe3a79285fe04d64804d61557b08843e828a68d9684cfbe562636b35c0e` |
-| 4 | `def` | [CutValidation.IsRejected](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ValidationClassifiedCutValidator.lean/declarations/cutvalidation-isrejected.md) | 50 | `declaration-track:d2fd73eaf30184fda18464cf21f9eda58cd82f29cc6d36c78deae9cd7fd1cf11` |
-| 5 | `theorem` | [validateCut_rejected_exactly_when_invalid](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ValidationClassifiedCutValidator.lean/declarations/validatecut-rejected-exactly-when-invalid.md) | 64 | `result-track:f29d4036b66a6c96849fad9b3641b390ff264ccbba7ced082f2043d5f13d3fe0` |
+| 1 | `structure` | [ClassifiedCutValidator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ValidationClassifiedCutValidator.lean/declarations/classifiedcutvalidator.md) | 14 | `declaration-track:2aa0c64066a9f3b48c7ae2f090b76c7c804e18b6e6627fe3fa4abd88b668975b` |
+| 2 | `inductive` | [CutValidation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ValidationClassifiedCutValidator.lean/declarations/cutvalidation.md) | 25 | `declaration-track:c77d492bf666d9bbb77c12f96ab32a1d3d6d3571dd6593dbcbf7a528ac2c96bc` |
+| 3 | `def` | [validateCut](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ValidationClassifiedCutValidator.lean/declarations/validatecut.md) | 37 | `declaration-track:09283fe3a79285fe04d64804d61557b08843e828a68d9684cfbe562636b35c0e` |
+| 4 | `def` | [CutValidation.IsRejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ValidationClassifiedCutValidator.lean/declarations/cutvalidation-isrejected.md) | 50 | `declaration-track:d2fd73eaf30184fda18464cf21f9eda58cd82f29cc6d36c78deae9cd7fd1cf11` |
+| 5 | `theorem` | [validateCut_rejected_exactly_when_invalid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ValidationClassifiedCutValidator.lean/declarations/validatecut-rejected-exactly-when-invalid.md) | 64 | `result-track:f29d4036b66a6c96849fad9b3641b390ff264ccbba7ced082f2043d5f13d3fe0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

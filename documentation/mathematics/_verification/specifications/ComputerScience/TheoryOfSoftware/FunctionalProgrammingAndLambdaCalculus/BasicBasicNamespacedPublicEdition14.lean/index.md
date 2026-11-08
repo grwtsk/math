@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicNamespacedPublicEdition14.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicNamespacedPublicEdition14.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicNamespacedPublicEdition14.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicNamespacedPublicEdition14.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `macro_rules` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicNamespacedPublicEdition14.lean/declarations/macro-rules-source-edition-2.md) | 44 | `declaration-track:9d00a35d2da60cb64e588b5627a9d20bda323e4155aa590990ed7cd58d111045` |
-| 2 | `macro_rules` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicNamespacedPublicEdition14.lean/declarations/macro-rules.md) | 49 | `declaration-track:03fe02f9d1b11e7aa7ec8175d5c6dd3f6f09fc160014eca79f8bbaa5e726f13d` |
-| 3 | `def` | [SPred.Notation.unpack](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicNamespacedPublicEdition14.lean/declarations/spred-notation-unpack.md) | 57 | `declaration-track:232ba605f09f9b201b056110ec820680940cdf95e469f61a8356ca7e1dd2c530` |
+| 1 | `macro_rules` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicNamespacedPublicEdition14.lean/declarations/macro-rules-source-edition-2.md) | 44 | `declaration-track:9d00a35d2da60cb64e588b5627a9d20bda323e4155aa590990ed7cd58d111045` |
+| 2 | `macro_rules` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicNamespacedPublicEdition14.lean/declarations/macro-rules.md) | 49 | `declaration-track:03fe02f9d1b11e7aa7ec8175d5c6dd3f6f09fc160014eca79f8bbaa5e726f13d` |
+| 3 | `def` | [SPred.Notation.unpack](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicNamespacedPublicEdition14.lean/declarations/spred-notation-unpack.md) | 57 | `declaration-track:232ba605f09f9b201b056110ec820680940cdf95e469f61a8356ca7e1dd2c530` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

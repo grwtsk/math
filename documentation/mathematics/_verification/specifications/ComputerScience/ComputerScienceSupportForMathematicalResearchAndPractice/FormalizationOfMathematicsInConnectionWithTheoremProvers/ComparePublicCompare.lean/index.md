@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ComparePublicCompare.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ComparePublicCompare.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ComparePublicCompare.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ComparePublicCompare.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [compare](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ComparePublicCompare.lean/declarations/compare.md) | 25 | `declaration-track:79c682ec5f7f2c1baa4e8362a643305e5400f6f2c46a41d8458136dcec4a5111` |
-| 2 | `def` | [le](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ComparePublicCompare.lean/declarations/le.md) | 50 | `declaration-track:7b116c3c0f4417796ab1d4fc375082b5f6b21e2ea0198bb78702692ba254410c` |
-| 3 | `def` | [lt](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ComparePublicCompare.lean/declarations/lt.md) | 58 | `declaration-track:3267b0d4c6a11d63c28512573630aba75caccf311dca5a6fea97ede1f3108e3c` |
-| 4 | `def` | [beq](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ComparePublicCompare.lean/declarations/beq.md) | 66 | `declaration-track:717c5f71e65d972f07007a2896af5673eb731acbc683ea1c0e6bc8aecdd3d273` |
+| 1 | `def` | [compare](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ComparePublicCompare.lean/declarations/compare.md) | 25 | `declaration-track:79c682ec5f7f2c1baa4e8362a643305e5400f6f2c46a41d8458136dcec4a5111` |
+| 2 | `def` | [le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ComparePublicCompare.lean/declarations/le.md) | 50 | `declaration-track:7b116c3c0f4417796ab1d4fc375082b5f6b21e2ea0198bb78702692ba254410c` |
+| 3 | `def` | [lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ComparePublicCompare.lean/declarations/lt.md) | 58 | `declaration-track:3267b0d4c6a11d63c28512573630aba75caccf311dca5a6fea97ede1f3108e3c` |
+| 4 | `def` | [beq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ComparePublicCompare.lean/declarations/beq.md) | 66 | `declaration-track:717c5f71e65d972f07007a2896af5673eb731acbc683ea1c0e6bc8aecdd3d273` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/CubicIntegrationCubicIntegralSame.lean/index.md) · [Full source](../../../../RealFunctions/CubicIntegrationCubicIntegralSame.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CubicIntegrationCubicIntegralSame.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CubicIntegrationCubicIntegralSame.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [cubic_integral_same](../../../../RealFunctions/CubicIntegrationCubicIntegralSame.lean/declarations/cubic-integral-same.md) | 19 | `result-track:c3f476d68623335daf046bde79fe254d01fb28098c94e4e70b8cd076134b9ce8` |
-| 2 | `theorem` | [cubic_integral_add_interval](../../../../RealFunctions/CubicIntegrationCubicIntegralSame.lean/declarations/cubic-integral-add-interval.md) | 25 | `result-track:e9c91198caaaf3a53fadc40454d1d8cb5b10cdf8b0bcad9a02dc59dac4a2ba8f` |
-| 3 | `theorem` | [cubic_cell_semantics_sound](../../../../RealFunctions/CubicIntegrationCubicIntegralSame.lean/declarations/cubic-cell-semantics-sound.md) | 31 | `result-track:0041745b1d4a2d02554d79f7bbefdcf4f9eadaf841964be8acfc99ede1e2ee5e` |
+| 1 | `theorem` | [cubic_integral_same](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CubicIntegrationCubicIntegralSame.lean/declarations/cubic-integral-same.md) | 19 | `result-track:c3f476d68623335daf046bde79fe254d01fb28098c94e4e70b8cd076134b9ce8` |
+| 2 | `theorem` | [cubic_integral_add_interval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CubicIntegrationCubicIntegralSame.lean/declarations/cubic-integral-add-interval.md) | 25 | `result-track:e9c91198caaaf3a53fadc40454d1d8cb5b10cdf8b0bcad9a02dc59dac4a2ba8f` |
+| 3 | `theorem` | [cubic_cell_semantics_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CubicIntegrationCubicIntegralSame.lean/declarations/cubic-cell-semantics-sound.md) | 31 | `result-track:0041745b1d4a2d02554d79f7bbefdcf4f9eadaf841964be8acfc99ede1e2ee5e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

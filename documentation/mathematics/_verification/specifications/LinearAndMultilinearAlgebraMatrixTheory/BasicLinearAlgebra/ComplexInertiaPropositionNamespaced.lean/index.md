@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ComplexInertiaPropositionNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ComplexInertiaPropositionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ComplexInertiaPropositionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ComplexInertiaPropositionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [complexInertia](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ComplexInertiaPropositionNamespaced.lean/declarations/complexinertia.md) | 17 | `declaration-track:f577cb301c8c4e7230ad60b94e678d62fa3bf9bf6a4b8ede88f90fb6d4d8151a` |
-| 2 | `def` | [ComplexFeshbachInertiaObligation](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ComplexInertiaPropositionNamespaced.lean/declarations/complexfeshbachinertiaobligation.md) | 26 | `declaration-track:258d9dc29056f616aa48aa4b6fbdd6f240f4d626315d001f31842733f6678e29` |
+| 1 | `def` | [complexInertia](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ComplexInertiaPropositionNamespaced.lean/declarations/complexinertia.md) | 17 | `declaration-track:f577cb301c8c4e7230ad60b94e678d62fa3bf9bf6a4b8ede88f90fb6d4d8151a` |
+| 2 | `def` | [ComplexFeshbachInertiaObligation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ComplexInertiaPropositionNamespaced.lean/declarations/complexfeshbachinertiaobligation.md) | 26 | `declaration-track:258d9dc29056f616aa48aa4b6fbdd6f240f4d626315d001f31842733f6678e29` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

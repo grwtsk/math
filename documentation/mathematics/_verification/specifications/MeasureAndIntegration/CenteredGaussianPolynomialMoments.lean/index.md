@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CenteredGaussianPolynomialMoments.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CenteredGaussianPolynomialMoments.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredGaussianPolynomialMoments.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredGaussianPolynomialMoments.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,10 +60,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [integrable_id](../../../../MeasureAndIntegration/CenteredGaussianPolynomialMoments.lean/declarations/integrable-id.md) | 24 | `result-track:c0852ada89a41ac65785cdfd860d8d385602a78a0284dc01cee20e1d2552bbee` |
-| 2 | `theorem` | [integrable_square](../../../../MeasureAndIntegration/CenteredGaussianPolynomialMoments.lean/declarations/integrable-square.md) | 29 | `result-track:04a8fd855d293678217c3856879e75ad70407f81e4c48acd672c675e37119d2e` |
-| 3 | `theorem` | [integral_id_zero](../../../../MeasureAndIntegration/CenteredGaussianPolynomialMoments.lean/declarations/integral-id-zero.md) | 33 | `result-track:724c5db9298a14a892c035808e1f487441f4da1c812483964a42ec1340c71ce1` |
-| 4 | `theorem` | [integral_square](../../../../MeasureAndIntegration/CenteredGaussianPolynomialMoments.lean/declarations/integral-square.md) | 37 | `result-track:99c71480e5b941af471c616fa0afbd5a54959b23094d44145cfa0d99b633eb2e` |
+| 1 | `theorem` | [integrable_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredGaussianPolynomialMoments.lean/declarations/integrable-id.md) | 24 | `result-track:c0852ada89a41ac65785cdfd860d8d385602a78a0284dc01cee20e1d2552bbee` |
+| 2 | `theorem` | [integrable_square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredGaussianPolynomialMoments.lean/declarations/integrable-square.md) | 29 | `result-track:04a8fd855d293678217c3856879e75ad70407f81e4c48acd672c675e37119d2e` |
+| 3 | `theorem` | [integral_id_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredGaussianPolynomialMoments.lean/declarations/integral-id-zero.md) | 33 | `result-track:724c5db9298a14a892c035808e1f487441f4da1c812483964a42ec1340c71ce1` |
+| 4 | `theorem` | [integral_square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CenteredGaussianPolynomialMoments.lean/declarations/integral-square.md) | 37 | `result-track:99c71480e5b941af471c616fa0afbd5a54959b23094d44145cfa0d99b633eb2e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

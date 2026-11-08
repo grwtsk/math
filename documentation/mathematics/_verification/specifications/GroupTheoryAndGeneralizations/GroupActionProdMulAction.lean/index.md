@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/GroupActionProdMulAction.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/GroupActionProdMulAction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupActionProdMulAction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupActionProdMulAction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,18 +59,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [isScalarTower](../../../../GroupTheoryAndGeneralizations/GroupActionProdMulAction.lean/declarations/isscalartower.md) | 47 | `declaration-track:9e92bda1381d25a948d5f22fc7f40c04e783a59600882bb42a1eda398c3e69c5` |
-| 2 | `instance` | [smulCommClass](../../../../GroupTheoryAndGeneralizations/GroupActionProdMulAction.lean/declarations/smulcommclass.md) | 52 | `declaration-track:44243f76306b303d02b5a56d7691758a3a79df478cc886b9b44607584d0ec35c` |
-| 3 | `instance` | [isCentralScalar](../../../../GroupTheoryAndGeneralizations/GroupActionProdMulAction.lean/declarations/iscentralscalar.md) | 56 | `declaration-track:bbc9d1c82e3a5c926faeed8aca3a9ff0130b23d061c784661bec69f46df2e249` |
-| 4 | `instance` | [faithfulSMulLeft](../../../../GroupTheoryAndGeneralizations/GroupActionProdMulAction.lean/declarations/faithfulsmulleft.md) | 61 | `declaration-track:b1d1a13e0db01f9916717230bc9634bba69acf5a42f97a015f9c2b699fdb0730` |
-| 5 | `instance` | [faithfulSMulRight](../../../../GroupTheoryAndGeneralizations/GroupActionProdMulAction.lean/declarations/faithfulsmulright.md) | 67 | `declaration-track:d4ec9c889df7abbd824154aaf1370fa626b437089e4c2acbef48cab1249c246b` |
-| 6 | `instance` | [smulCommClassBoth](../../../../GroupTheoryAndGeneralizations/GroupActionProdMulAction.lean/declarations/smulcommclassboth.md) | 75 | `declaration-track:25663d222aaf58142bac30a235a83b5fe7109808b8dee33b2d6c1d30094e8705` |
-| 7 | `instance` | [isScalarTowerBoth](../../../../GroupTheoryAndGeneralizations/GroupActionProdMulAction.lean/declarations/isscalartowerboth.md) | 79 | `declaration-track:cd07cbce8f255f83ec42828cc1d0660f6e1fea010e620286b483477b4c891c5c` |
-| 8 | `instance` | [mulAction](../../../../GroupTheoryAndGeneralizations/GroupActionProdMulAction.lean/declarations/mulaction.md) | 84 | `declaration-track:57f39a1d262f185ea7ca6c4d4f7a5db15e9d8be1c94c86159740b9b5bf7c5cc6` |
-| 9 | `def` | [smulMulHom](../../../../GroupTheoryAndGeneralizations/GroupActionProdMulAction.lean/declarations/smulmulhom.md) | 96 | `declaration-track:dcdac7675d7785b7f7498478a6838e89d4cc71a53f136f4112181896ee2ba87a` |
-| 10 | `def` | [smulMonoidHom](../../../../GroupTheoryAndGeneralizations/GroupActionProdMulAction.lean/declarations/smulmonoidhom.md) | 103 | `declaration-track:b1514f7d8379cec0e0ab789e0766ad5707503cb03ec61a00b5770c02f2e1fabe` |
-| 11 | `abbrev` | [MulAction.prodOfSMulCommClass](../../../../GroupTheoryAndGeneralizations/GroupActionProdMulAction.lean/declarations/mulaction-prodofsmulcommclass.md) | 117 | `declaration-track:dbc693433afd78a726d902e080fcc49787ad67a79c4f717c3f109f28939a0284` |
-| 12 | `def` | [MulAction.prodEquiv](../../../../GroupTheoryAndGeneralizations/GroupActionProdMulAction.lean/declarations/mulaction-prodequiv.md) | 128 | `declaration-track:df904c2f6a08b5af2dfc9349be917ebd39191aff37cb42913a0272e45e5a36e9` |
+| 1 | `instance` | [isScalarTower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupActionProdMulAction.lean/declarations/isscalartower.md) | 47 | `declaration-track:9e92bda1381d25a948d5f22fc7f40c04e783a59600882bb42a1eda398c3e69c5` |
+| 2 | `instance` | [smulCommClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupActionProdMulAction.lean/declarations/smulcommclass.md) | 52 | `declaration-track:44243f76306b303d02b5a56d7691758a3a79df478cc886b9b44607584d0ec35c` |
+| 3 | `instance` | [isCentralScalar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupActionProdMulAction.lean/declarations/iscentralscalar.md) | 56 | `declaration-track:bbc9d1c82e3a5c926faeed8aca3a9ff0130b23d061c784661bec69f46df2e249` |
+| 4 | `instance` | [faithfulSMulLeft](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupActionProdMulAction.lean/declarations/faithfulsmulleft.md) | 61 | `declaration-track:b1d1a13e0db01f9916717230bc9634bba69acf5a42f97a015f9c2b699fdb0730` |
+| 5 | `instance` | [faithfulSMulRight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupActionProdMulAction.lean/declarations/faithfulsmulright.md) | 67 | `declaration-track:d4ec9c889df7abbd824154aaf1370fa626b437089e4c2acbef48cab1249c246b` |
+| 6 | `instance` | [smulCommClassBoth](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupActionProdMulAction.lean/declarations/smulcommclassboth.md) | 75 | `declaration-track:25663d222aaf58142bac30a235a83b5fe7109808b8dee33b2d6c1d30094e8705` |
+| 7 | `instance` | [isScalarTowerBoth](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupActionProdMulAction.lean/declarations/isscalartowerboth.md) | 79 | `declaration-track:cd07cbce8f255f83ec42828cc1d0660f6e1fea010e620286b483477b4c891c5c` |
+| 8 | `instance` | [mulAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupActionProdMulAction.lean/declarations/mulaction.md) | 84 | `declaration-track:57f39a1d262f185ea7ca6c4d4f7a5db15e9d8be1c94c86159740b9b5bf7c5cc6` |
+| 9 | `def` | [smulMulHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupActionProdMulAction.lean/declarations/smulmulhom.md) | 96 | `declaration-track:dcdac7675d7785b7f7498478a6838e89d4cc71a53f136f4112181896ee2ba87a` |
+| 10 | `def` | [smulMonoidHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupActionProdMulAction.lean/declarations/smulmonoidhom.md) | 103 | `declaration-track:b1514f7d8379cec0e0ab789e0766ad5707503cb03ec61a00b5770c02f2e1fabe` |
+| 11 | `abbrev` | [MulAction.prodOfSMulCommClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupActionProdMulAction.lean/declarations/mulaction-prodofsmulcommclass.md) | 117 | `declaration-track:dbc693433afd78a726d902e080fcc49787ad67a79c4f717c3f109f28939a0284` |
+| 12 | `def` | [MulAction.prodEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupActionProdMulAction.lean/declarations/mulaction-prodequiv.md) | 128 | `declaration-track:df904c2f6a08b5af2dfc9349be917ebd39191aff37cb42913a0272e45e5a36e9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

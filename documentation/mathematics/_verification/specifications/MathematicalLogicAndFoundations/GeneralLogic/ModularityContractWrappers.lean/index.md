@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ModularityContractWrappers.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ModularityContractWrappers.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ModularityContractWrappers.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ModularityContractWrappers.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [hasse_weil_analytic_from_modularity](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ModularityContractWrappers.lean/declarations/hasse-weil-analytic-from-modularity.md) | 36 | `result-track:ade9bc22b3d98132650dcb2c42b393c5ba903ba44587060da44d232f67c3a5ba` |
-| 2 | `theorem` | [hasse_weil_functional_from_modularity](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ModularityContractWrappers.lean/declarations/hasse-weil-functional-from-modularity.md) | 42 | `result-track:64c12dd2c7150ac82e9d452d15b1e17798f4d1037ae71762f43a128a89bf55ce` |
+| 1 | `theorem` | [hasse_weil_analytic_from_modularity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ModularityContractWrappers.lean/declarations/hasse-weil-analytic-from-modularity.md) | 36 | `result-track:ade9bc22b3d98132650dcb2c42b393c5ba903ba44587060da44d232f67c3a5ba` |
+| 2 | `theorem` | [hasse_weil_functional_from_modularity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ModularityContractWrappers.lean/declarations/hasse-weil-functional-from-modularity.md) | 42 | `result-track:64c12dd2c7150ac82e9d452d15b1e17798f4d1037ae71762f43a128a89bf55ce` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/BoundedContinuous.lean/index.md) · [Full source](../../../../FunctionalAnalysis/BoundedContinuous.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BoundedContinuous.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BoundedContinuous.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,7 +60,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [restrict_toContinuousMap_eq_toContinuousMapStar_restrict](../../../../FunctionalAnalysis/BoundedContinuous.lean/declarations/restrict-tocontinuousmap-eq-tocontinuousmapstar-restrict.md) | 23 | `result-track:b8442b2c0f9f2785d53aaeffa3d58702049509b3794a4811685400a2c5ca9199` |
+| 1 | `theorem` | [restrict_toContinuousMap_eq_toContinuousMapStar_restrict](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/BoundedContinuous.lean/declarations/restrict-tocontinuousmap-eq-tocontinuousmapstar-restrict.md) | 23 | `result-track:b8442b2c0f9f2785d53aaeffa3d58702049509b3794a4811685400a2c5ca9199` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/IneqNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/IneqNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/IneqNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/IneqNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [Ineq](../../../../../../ComputerScience/TheoryOfData/DataStructures/IneqNamespaced.lean/declarations/ineq-source-edition-2.md) | 32 | `declaration-track:d96b9313199838121aa2e266e9f4d57e0655bc1ff49fc634a3996dedafb3b59b` |
-| 2 | `def` | [max](../../../../../../ComputerScience/TheoryOfData/DataStructures/IneqNamespaced.lean/declarations/max.md) | 42 | `declaration-track:57d168b7a2d33bb6697fce08e4655ad9766414313d9408df7ffad4a6697de11b` |
-| 3 | `def` | [cmp](../../../../../../ComputerScience/TheoryOfData/DataStructures/IneqNamespaced.lean/declarations/cmp.md) | 50 | `declaration-track:38c710759921357f24118a85ecda2aa5cb427d25e84d76b264664d05ec344dcf` |
-| 4 | `def` | [toString](../../../../../../ComputerScience/TheoryOfData/DataStructures/IneqNamespaced.lean/declarations/tostring.md) | 59 | `declaration-track:411fb4a8232980520cceffc2c7e04c6b36717e09382a6bf9166fb90d7eb6cdc0` |
-| 5 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/IneqNamespaced.lean/declarations/instance.md) | 64 | `declaration-track:d3ed2f6ebf84ebe95d4013c2a766199dedfbfa6763625a2b4453ffbac25a6620` |
-| 6 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/IneqNamespaced.lean/declarations/instance-source-edition-2.md) | 66 | `declaration-track:f3538447427a52243722c9a3b709da84a2ab5bf1c1cbfca9c249684f6d5fe428` |
-| 7 | `def` | [ineq?](../../../../../../ComputerScience/TheoryOfData/DataStructures/IneqNamespaced.lean/declarations/ineq.md) | 82 | `declaration-track:327ee732728476f07242c02f3fc242e5dbb6d94652d97fa5e9dd49166517ee73` |
-| 8 | `def` | [ineqOrNotIneq?](../../../../../../ComputerScience/TheoryOfData/DataStructures/IneqNamespaced.lean/declarations/ineqornotineq.md) | 101 | `declaration-track:0d465399af550ecc09b746d3706fdf3a511efc42276adb28f57363fae2e0181c` |
+| 1 | `inductive` | [Ineq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/IneqNamespaced.lean/declarations/ineq-source-edition-2.md) | 32 | `declaration-track:d96b9313199838121aa2e266e9f4d57e0655bc1ff49fc634a3996dedafb3b59b` |
+| 2 | `def` | [max](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/IneqNamespaced.lean/declarations/max.md) | 42 | `declaration-track:57d168b7a2d33bb6697fce08e4655ad9766414313d9408df7ffad4a6697de11b` |
+| 3 | `def` | [cmp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/IneqNamespaced.lean/declarations/cmp.md) | 50 | `declaration-track:38c710759921357f24118a85ecda2aa5cb427d25e84d76b264664d05ec344dcf` |
+| 4 | `def` | [toString](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/IneqNamespaced.lean/declarations/tostring.md) | 59 | `declaration-track:411fb4a8232980520cceffc2c7e04c6b36717e09382a6bf9166fb90d7eb6cdc0` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/IneqNamespaced.lean/declarations/instance.md) | 64 | `declaration-track:d3ed2f6ebf84ebe95d4013c2a766199dedfbfa6763625a2b4453ffbac25a6620` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/IneqNamespaced.lean/declarations/instance-source-edition-2.md) | 66 | `declaration-track:f3538447427a52243722c9a3b709da84a2ab5bf1c1cbfca9c249684f6d5fe428` |
+| 7 | `def` | [ineq?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/IneqNamespaced.lean/declarations/ineq.md) | 82 | `declaration-track:327ee732728476f07242c02f3fc242e5dbb6d94652d97fa5e9dd49166517ee73` |
+| 8 | `def` | [ineqOrNotIneq?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/IneqNamespaced.lean/declarations/ineqornotineq.md) | 101 | `declaration-track:0d465399af550ecc09b746d3706fdf3a511efc42276adb28f57363fae2e0181c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

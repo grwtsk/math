@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/MainRequestTimeGenerationCertificate.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/MainRequestTimeGenerationCertificate.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MainRequestTimeGenerationCertificate.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MainRequestTimeGenerationCertificate.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RequestTimeGenerationCertificate](../../../../../ComputerScience/AlgorithmsInComputerScience/MainRequestTimeGenerationCertificate.lean/declarations/requesttimegenerationcertificate.md) | 6 | `declaration-track:aab837bffe2bb57b0b2a07a54be115b29c57c7a16fabf652cb92fa6a8c530bfb` |
-| 2 | `theorem` | [requestTime_generation_preserves_AST_discipline](../../../../../ComputerScience/AlgorithmsInComputerScience/MainRequestTimeGenerationCertificate.lean/declarations/requesttime-generation-preserves-ast-discipline.md) | 14 | `result-track:e201d02556f83eb2523ef8fd0867e47771794175bb38cd3b340cbe5f7143e013` |
-| 3 | `theorem` | [requestTime_generation_is_deterministic](../../../../../ComputerScience/AlgorithmsInComputerScience/MainRequestTimeGenerationCertificate.lean/declarations/requesttime-generation-is-deterministic.md) | 19 | `result-track:6e3447d8b6e8f8618f8a2e03e2212e63b598358c7b1c14489951a82c951471b5` |
+| 1 | `structure` | [RequestTimeGenerationCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MainRequestTimeGenerationCertificate.lean/declarations/requesttimegenerationcertificate.md) | 6 | `declaration-track:aab837bffe2bb57b0b2a07a54be115b29c57c7a16fabf652cb92fa6a8c530bfb` |
+| 2 | `theorem` | [requestTime_generation_preserves_AST_discipline](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MainRequestTimeGenerationCertificate.lean/declarations/requesttime-generation-preserves-ast-discipline.md) | 14 | `result-track:e201d02556f83eb2523ef8fd0867e47771794175bb38cd3b340cbe5f7143e013` |
+| 3 | `theorem` | [requestTime_generation_is_deterministic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MainRequestTimeGenerationCertificate.lean/declarations/requesttime-generation-is-deterministic.md) | 19 | `result-track:6e3447d8b6e8f8618f8a2e03e2212e63b598358c7b1c14489951a82c951471b5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

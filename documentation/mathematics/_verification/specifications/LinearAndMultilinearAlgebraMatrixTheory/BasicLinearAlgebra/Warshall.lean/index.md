@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Warshall.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Warshall.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Warshall.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Warshall.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Matrix.warshallStep](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Warshall.lean/declarations/matrix-warshallstep.md) | 11 | `declaration-track:1555bb4e78dfd77cf09d457346bf0fdb6678504513ac65a5ff8e2f5920043fa8` |
-| 2 | `theorem` | [Matrix.entry_warshallStep](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Warshall.lean/declarations/matrix-entry-warshallstep.md) | 18 | `result-track:221aca6ccc43207ece09b9aa42be9bd18f85ebd5e9d6cebe5f3da7e0c84e8999` |
-| 3 | `def` | [Matrix.warshallAux](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Warshall.lean/declarations/matrix-warshallaux.md) | 35 | `declaration-track:dcb04951521cccd8169f48916c736742dbb3aab1c2bd6722b3e6d46f670f0703` |
-| 4 | `def` | [Matrix.warshall](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Warshall.lean/declarations/matrix-warshall.md) | 55 | `declaration-track:be805ff30b3f925701df4ecdd839fee5603f8b67f8b873d0112639d3826c690d` |
-| 5 | `theorem` | [Matrix.warshallAux_zero](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Warshall.lean/declarations/matrix-warshallaux-zero.md) | 61 | `result-track:3445540df4bfcc34617fbddbe9d8a0010e11be9ddca3888b915a358a3c3e7816` |
+| 1 | `def` | [Matrix.warshallStep](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Warshall.lean/declarations/matrix-warshallstep.md) | 11 | `declaration-track:1555bb4e78dfd77cf09d457346bf0fdb6678504513ac65a5ff8e2f5920043fa8` |
+| 2 | `theorem` | [Matrix.entry_warshallStep](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Warshall.lean/declarations/matrix-entry-warshallstep.md) | 18 | `result-track:221aca6ccc43207ece09b9aa42be9bd18f85ebd5e9d6cebe5f3da7e0c84e8999` |
+| 3 | `def` | [Matrix.warshallAux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Warshall.lean/declarations/matrix-warshallaux.md) | 35 | `declaration-track:dcb04951521cccd8169f48916c736742dbb3aab1c2bd6722b3e6d46f670f0703` |
+| 4 | `def` | [Matrix.warshall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Warshall.lean/declarations/matrix-warshall.md) | 55 | `declaration-track:be805ff30b3f925701df4ecdd839fee5603f8b67f8b873d0112639d3826c690d` |
+| 5 | `theorem` | [Matrix.warshallAux_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Warshall.lean/declarations/matrix-warshallaux-zero.md) | 61 | `result-track:3445540df4bfcc34617fbddbe9d8a0010e11be9ddca3888b915a358a3c3e7816` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

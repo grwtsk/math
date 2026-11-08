@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EventCohomologyNamespacedEventDefects.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EventCohomologyNamespacedEventDefects.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EventCohomologyNamespacedEventDefects.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EventCohomologyNamespacedEventDefects.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [EventDefects](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EventCohomologyNamespacedEventDefects.lean/declarations/eventdefects.md) | 16 | `declaration-track:67fbbdcb488f2dcd3259988fda08359021e61e737728b86075945bfa4027b3a1` |
-| 2 | `def` | [EventDefects.zero](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EventCohomologyNamespacedEventDefects.lean/declarations/eventdefects-zero.md) | 22 | `declaration-track:cafd02aa78383585c7421f1ac33e815ab62a6a20a9e091e6a901c02a9ab2a8f3` |
+| 1 | `structure` | [EventDefects](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EventCohomologyNamespacedEventDefects.lean/declarations/eventdefects.md) | 16 | `declaration-track:67fbbdcb488f2dcd3259988fda08359021e61e737728b86075945bfa4027b3a1` |
+| 2 | `def` | [EventDefects.zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EventCohomologyNamespacedEventDefects.lean/declarations/eventdefects-zero.md) | 22 | `declaration-track:cafd02aa78383585c7421f1ac33e815ab62a6a20a9e091e6a901c02a9ab2a8f3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

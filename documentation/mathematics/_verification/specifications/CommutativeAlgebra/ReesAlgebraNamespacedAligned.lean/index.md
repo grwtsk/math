@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/ReesAlgebraNamespacedAligned.lean/index.md) · [Full source](../../../../CommutativeAlgebra/ReesAlgebraNamespacedAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ReesAlgebraNamespacedAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ReesAlgebraNamespacedAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [reesAlgebra](../../../../CommutativeAlgebra/ReesAlgebraNamespacedAligned.lean/declarations/reesalgebra.md) | 46 | `declaration-track:824ac24db5c2cb154d6f30deb09b8feabe0c00a00cef1e96060c8a6c8662bc21` |
-| 2 | `theorem` | [mem_reesAlgebra_iff](../../../../CommutativeAlgebra/ReesAlgebraNamespacedAligned.lean/declarations/mem-reesalgebra-iff.md) | 72 | `result-track:fcc04c21f82654cc50d9ae43dc4b4cf832547433d1d89854385e9825a209a4ff` |
-| 3 | `theorem` | [mem_reesAlgebra_iff_support](../../../../CommutativeAlgebra/ReesAlgebraNamespacedAligned.lean/declarations/mem-reesalgebra-iff-support.md) | 76 | `result-track:43f65753fb8cebae42432fdc0d25624294ea4ff95a4ea29cb932c559de273ab7` |
-| 4 | `theorem` | [reesAlgebra.monomial_mem](../../../../CommutativeAlgebra/ReesAlgebraNamespacedAligned.lean/declarations/reesalgebra-monomial-mem.md) | 84 | `result-track:26a184dbd62838360e466ae72dbef6d900415c60379e697dfcde321dca35a354` |
-| 5 | `theorem` | [monomial_mem_adjoin_monomial](../../../../CommutativeAlgebra/ReesAlgebraNamespacedAligned.lean/declarations/monomial-mem-adjoin-monomial.md) | 90 | `result-track:cd55b4881e19c6dc154fd85fe36babf3a9de32151fe63d35a07325d606011670` |
-| 6 | `theorem` | [adjoin_monomial_eq_reesAlgebra](../../../../CommutativeAlgebra/ReesAlgebraNamespacedAligned.lean/declarations/adjoin-monomial-eq-reesalgebra.md) | 106 | `result-track:ea23a6e22977670a8e453f7acdc052a23dc828e2af86b88cd79002ab5902134b` |
-| 7 | `theorem` | [reesAlgebra.fg](../../../../CommutativeAlgebra/ReesAlgebraNamespacedAligned.lean/declarations/reesalgebra-fg.md) | 121 | `result-track:274c0656a6067c4d894ba880428cf77498ffdf95542be1dc4c8df1340591f0d3` |
-| 8 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/ReesAlgebraNamespacedAligned.lean/declarations/instance.md) | 134 | `declaration-track:40a42eabac5cf04958fe68dc1c83fdcb8f641f2aa6f8e1cb709b1d80378c149b` |
-| 9 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/ReesAlgebraNamespacedAligned.lean/declarations/instance-source-edition-2.md) | 137 | `declaration-track:c6f69303cca05589001b6edc571eb1f31fa5ced68bcf4b67b263fa6ef6db2d49` |
+| 1 | `def` | [reesAlgebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ReesAlgebraNamespacedAligned.lean/declarations/reesalgebra.md) | 46 | `declaration-track:824ac24db5c2cb154d6f30deb09b8feabe0c00a00cef1e96060c8a6c8662bc21` |
+| 2 | `theorem` | [mem_reesAlgebra_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ReesAlgebraNamespacedAligned.lean/declarations/mem-reesalgebra-iff.md) | 72 | `result-track:fcc04c21f82654cc50d9ae43dc4b4cf832547433d1d89854385e9825a209a4ff` |
+| 3 | `theorem` | [mem_reesAlgebra_iff_support](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ReesAlgebraNamespacedAligned.lean/declarations/mem-reesalgebra-iff-support.md) | 76 | `result-track:43f65753fb8cebae42432fdc0d25624294ea4ff95a4ea29cb932c559de273ab7` |
+| 4 | `theorem` | [reesAlgebra.monomial_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ReesAlgebraNamespacedAligned.lean/declarations/reesalgebra-monomial-mem.md) | 84 | `result-track:26a184dbd62838360e466ae72dbef6d900415c60379e697dfcde321dca35a354` |
+| 5 | `theorem` | [monomial_mem_adjoin_monomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ReesAlgebraNamespacedAligned.lean/declarations/monomial-mem-adjoin-monomial.md) | 90 | `result-track:cd55b4881e19c6dc154fd85fe36babf3a9de32151fe63d35a07325d606011670` |
+| 6 | `theorem` | [adjoin_monomial_eq_reesAlgebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ReesAlgebraNamespacedAligned.lean/declarations/adjoin-monomial-eq-reesalgebra.md) | 106 | `result-track:ea23a6e22977670a8e453f7acdc052a23dc828e2af86b88cd79002ab5902134b` |
+| 7 | `theorem` | [reesAlgebra.fg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ReesAlgebraNamespacedAligned.lean/declarations/reesalgebra-fg.md) | 121 | `result-track:274c0656a6067c4d894ba880428cf77498ffdf95542be1dc4c8df1340591f0d3` |
+| 8 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ReesAlgebraNamespacedAligned.lean/declarations/instance.md) | 134 | `declaration-track:40a42eabac5cf04958fe68dc1c83fdcb8f641f2aa6f8e1cb709b1d80378c149b` |
+| 9 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ReesAlgebraNamespacedAligned.lean/declarations/instance-source-edition-2.md) | 137 | `declaration-track:c6f69303cca05589001b6edc571eb1f31fa5ced68bcf4b67b263fa6ef6db2d49` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

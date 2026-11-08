@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/BoundedWitnesses.lean/index.md) · [Full source](../../../../Combinatorics/BoundedWitnesses.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundedWitnesses.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundedWitnesses.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [count](../../../../Combinatorics/BoundedWitnesses.lean/declarations/count.md) | 21 | `declaration-track:f2d1a7f6ca8250a18fe0a1b08565a6aa6cf4dc552c6d36c4d03ed861520af152` |
-| 2 | `theorem` | [count_pos_iff](../../../../Combinatorics/BoundedWitnesses.lean/declarations/count-pos-iff.md) | 25 | `result-track:bccc0eb36982151d05ca1495e89bb0f110d1ae3faa20f8b3e4676d6627fd92d7` |
-| 3 | `theorem` | [count_mono_cutoff](../../../../Combinatorics/BoundedWitnesses.lean/declarations/count-mono-cutoff.md) | 37 | `result-track:417a9469a9f43f92bf111a3e87638c97db2454b4a531f3f86b090f81ffa2bfca` |
-| 4 | `theorem` | [count_mono_predicate](../../../../Combinatorics/BoundedWitnesses.lean/declarations/count-mono-predicate.md) | 48 | `result-track:9b5ceb59240a5ecb3eb3b517fcf6d71ee9363bff972a0e7c6ca98808bd873b80` |
-| 5 | `theorem` | [count_congr_on](../../../../Combinatorics/BoundedWitnesses.lean/declarations/count-congr-on.md) | 57 | `result-track:6415b7f127019100633c026dae1cf63a366a391713fe960b1c5a10b014fa29b1` |
-| 6 | `def` | [tailCount](../../../../Combinatorics/BoundedWitnesses.lean/declarations/tailcount.md) | 74 | `declaration-track:305cdd59152385eb0cb114fa1e6bf7f7711f76a4aaf759e2cc14e56011a10798` |
-| 7 | `theorem` | [tailCount_pos_iff](../../../../Combinatorics/BoundedWitnesses.lean/declarations/tailcount-pos-iff.md) | 78 | `result-track:11271f330cfe414c3db2e6f002a1d7933c46e5cac7f345aeef2f124bcef745d2` |
-| 8 | `def` | [UnboundedWitnesses](../../../../Combinatorics/BoundedWitnesses.lean/declarations/unboundedwitnesses.md) | 88 | `declaration-track:17013c580a0bc28c0a32f4c099fbc91440c623f2f7d7ed3c5c79ed80922fae3d` |
-| 9 | `theorem` | [unbounded_iff_positive_tailCounts](../../../../Combinatorics/BoundedWitnesses.lean/declarations/unbounded-iff-positive-tailcounts.md) | 92 | `result-track:7a1cfdb74c63a8749dcaf7993dd52e407458957a231af81b1aadc4dae6192ac8` |
+| 1 | `def` | [count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundedWitnesses.lean/declarations/count.md) | 21 | `declaration-track:f2d1a7f6ca8250a18fe0a1b08565a6aa6cf4dc552c6d36c4d03ed861520af152` |
+| 2 | `theorem` | [count_pos_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundedWitnesses.lean/declarations/count-pos-iff.md) | 25 | `result-track:bccc0eb36982151d05ca1495e89bb0f110d1ae3faa20f8b3e4676d6627fd92d7` |
+| 3 | `theorem` | [count_mono_cutoff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundedWitnesses.lean/declarations/count-mono-cutoff.md) | 37 | `result-track:417a9469a9f43f92bf111a3e87638c97db2454b4a531f3f86b090f81ffa2bfca` |
+| 4 | `theorem` | [count_mono_predicate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundedWitnesses.lean/declarations/count-mono-predicate.md) | 48 | `result-track:9b5ceb59240a5ecb3eb3b517fcf6d71ee9363bff972a0e7c6ca98808bd873b80` |
+| 5 | `theorem` | [count_congr_on](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundedWitnesses.lean/declarations/count-congr-on.md) | 57 | `result-track:6415b7f127019100633c026dae1cf63a366a391713fe960b1c5a10b014fa29b1` |
+| 6 | `def` | [tailCount](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundedWitnesses.lean/declarations/tailcount.md) | 74 | `declaration-track:305cdd59152385eb0cb114fa1e6bf7f7711f76a4aaf759e2cc14e56011a10798` |
+| 7 | `theorem` | [tailCount_pos_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundedWitnesses.lean/declarations/tailcount-pos-iff.md) | 78 | `result-track:11271f330cfe414c3db2e6f002a1d7933c46e5cac7f345aeef2f124bcef745d2` |
+| 8 | `def` | [UnboundedWitnesses](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundedWitnesses.lean/declarations/unboundedwitnesses.md) | 88 | `declaration-track:17013c580a0bc28c0a32f4c099fbc91440c623f2f7d7ed3c5c79ed80922fae3d` |
+| 9 | `theorem` | [unbounded_iff_positive_tailCounts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundedWitnesses.lean/declarations/unbounded-iff-positive-tailcounts.md) | 92 | `result-track:7a1cfdb74c63a8749dcaf7993dd52e407458957a231af81b1aadc4dae6192ac8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

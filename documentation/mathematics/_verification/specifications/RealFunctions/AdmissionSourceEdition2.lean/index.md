@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/AdmissionSourceEdition2.lean/index.md) · [Full source](../../../../RealFunctions/AdmissionSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AdmissionSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AdmissionSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,16 +59,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [QuarterSeriesObligation](../../../../RealFunctions/AdmissionSourceEdition2.lean/declarations/quarterseriesobligation.md) | 25 | `declaration-track:d4c25eafe26ca31ac00ccd1e7d9afae8013abeb84fe4c931d2fc4d7dd6615877` |
-| 2 | `theorem` | [actual_multiplier_difference](../../../../RealFunctions/AdmissionSourceEdition2.lean/declarations/actual-multiplier-difference.md) | 30 | `result-track:b7b622c6ddd3c7f3b09fdd0199bc05c04293891e9656ea2b0f0e4fc9d93bdd46` |
-| 3 | `theorem` | [quarter_series_of_derivative_limit](../../../../RealFunctions/AdmissionSourceEdition2.lean/declarations/quarter-series-of-derivative-limit.md) | 40 | `result-track:e1ad0801ff5f6f3b21b06f08e7db41a80873496c6d966de3737be7ebe087ecfc` |
-| 4 | `theorem` | [multiplier_estimate_of_series](../../../../RealFunctions/AdmissionSourceEdition2.lean/declarations/multiplier-estimate-of-series.md) | 49 | `result-track:65a03e1ce428851749c74ff9b35b358feab5c264f9c3b37407d113921a20773c` |
-| 5 | `theorem` | [archimedean_integrability_of_series](../../../../RealFunctions/AdmissionSourceEdition2.lean/declarations/archimedean-integrability-of-series.md) | 57 | `result-track:2b07aa054cab01a559756083a3488d7cb6042d967f42797a70cdc56a0c4a4bbf` |
-| 6 | `theorem` | [admission_of_derivative_limit](../../../../RealFunctions/AdmissionSourceEdition2.lean/declarations/admission-of-derivative-limit.md) | 64 | `result-track:7b59d0fec4909ac96f8adc72048101227c82645484f5135a8f71c3fb3c9d6cd7` |
-| 7 | `theorem` | [quarter_series](../../../../RealFunctions/AdmissionSourceEdition2.lean/declarations/quarter-series.md) | 70 | `result-track:2f3d41d37b4d081b28ac89ee93f572b540bbb7e37e61ca63d08d844a0094200b` |
-| 8 | `theorem` | [multiplier_estimate](../../../../RealFunctions/AdmissionSourceEdition2.lean/declarations/multiplier-estimate.md) | 74 | `result-track:67f01efb5c2e2f01ef8e52ac5d5a117f23e21a2e0423c667060c74ac734544be` |
-| 9 | `theorem` | [archimedean_integrability](../../../../RealFunctions/AdmissionSourceEdition2.lean/declarations/archimedean-integrability.md) | 78 | `result-track:97cfc4877d214e8827e944563812248ec7d31ea8a395cf8ad25e1e9a5fa39dd2` |
-| 10 | `theorem` | [normalization_admissibility](../../../../RealFunctions/AdmissionSourceEdition2.lean/declarations/normalization-admissibility.md) | 83 | `result-track:2d0d3182bd90c106c278715fdc06f8748bbbdb6b4edc471959d0d627ffa50517` |
+| 1 | `def` | [QuarterSeriesObligation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AdmissionSourceEdition2.lean/declarations/quarterseriesobligation.md) | 25 | `declaration-track:d4c25eafe26ca31ac00ccd1e7d9afae8013abeb84fe4c931d2fc4d7dd6615877` |
+| 2 | `theorem` | [actual_multiplier_difference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AdmissionSourceEdition2.lean/declarations/actual-multiplier-difference.md) | 30 | `result-track:b7b622c6ddd3c7f3b09fdd0199bc05c04293891e9656ea2b0f0e4fc9d93bdd46` |
+| 3 | `theorem` | [quarter_series_of_derivative_limit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AdmissionSourceEdition2.lean/declarations/quarter-series-of-derivative-limit.md) | 40 | `result-track:e1ad0801ff5f6f3b21b06f08e7db41a80873496c6d966de3737be7ebe087ecfc` |
+| 4 | `theorem` | [multiplier_estimate_of_series](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AdmissionSourceEdition2.lean/declarations/multiplier-estimate-of-series.md) | 49 | `result-track:65a03e1ce428851749c74ff9b35b358feab5c264f9c3b37407d113921a20773c` |
+| 5 | `theorem` | [archimedean_integrability_of_series](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AdmissionSourceEdition2.lean/declarations/archimedean-integrability-of-series.md) | 57 | `result-track:2b07aa054cab01a559756083a3488d7cb6042d967f42797a70cdc56a0c4a4bbf` |
+| 6 | `theorem` | [admission_of_derivative_limit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AdmissionSourceEdition2.lean/declarations/admission-of-derivative-limit.md) | 64 | `result-track:7b59d0fec4909ac96f8adc72048101227c82645484f5135a8f71c3fb3c9d6cd7` |
+| 7 | `theorem` | [quarter_series](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AdmissionSourceEdition2.lean/declarations/quarter-series.md) | 70 | `result-track:2f3d41d37b4d081b28ac89ee93f572b540bbb7e37e61ca63d08d844a0094200b` |
+| 8 | `theorem` | [multiplier_estimate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AdmissionSourceEdition2.lean/declarations/multiplier-estimate.md) | 74 | `result-track:67f01efb5c2e2f01ef8e52ac5d5a117f23e21a2e0423c667060c74ac734544be` |
+| 9 | `theorem` | [archimedean_integrability](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AdmissionSourceEdition2.lean/declarations/archimedean-integrability.md) | 78 | `result-track:97cfc4877d214e8827e944563812248ec7d31ea8a395cf8ad25e1e9a5fa39dd2` |
+| 10 | `theorem` | [normalization_admissibility](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/AdmissionSourceEdition2.lean/declarations/normalization-admissibility.md) | 83 | `result-track:2d0d3182bd90c106c278715fdc06f8748bbbdb6b4edc471959d0d627ffa50517` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

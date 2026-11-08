@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/EmbeddingOfLocalNamespacedPublic.lean/index.md) · [Full source](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/EmbeddingOfLocalNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/EmbeddingOfLocalNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/EmbeddingOfLocalNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [ContinuousSMul.topology_eq_of_nhds_inf_principal_eq](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/EmbeddingOfLocalNamespacedPublic.lean/declarations/continuoussmul-topology-eq-of-nhds-inf-principal-eq.md) | 86 | `result-track:ae50dc9bc1161658de27c62907e67c7049655f8b84f4edbce443e1a159808025` |
-| 2 | `lemma` | [ContinuousSMul.topology_eq_of_induced_eq](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/EmbeddingOfLocalNamespacedPublic.lean/declarations/continuoussmul-topology-eq-of-induced-eq.md) | 138 | `result-track:e3f9269442232b2cde68082bc93d2b387d9a72b69ac90975daac0ce0067bc8a3` |
-| 3 | `lemma` | [LinearMap.isInducing_of_restrict_nhds_zero](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/EmbeddingOfLocalNamespacedPublic.lean/declarations/linearmap-isinducing-of-restrict-nhds-zero.md) | 153 | `result-track:3f6e4ba07995368a0adf64f97b03668844872121f9ed3bbb4a4d32a11fea044b` |
-| 4 | `lemma` | [LinearMap.isEmbedding_of_restrict_nhds_zero](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/EmbeddingOfLocalNamespacedPublic.lean/declarations/linearmap-isembedding-of-restrict-nhds-zero.md) | 165 | `result-track:5e935121ac50eec83f78ce083a710dda6d127dc59f353d6800544244ac6b110d` |
+| 1 | `lemma` | [ContinuousSMul.topology_eq_of_nhds_inf_principal_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/EmbeddingOfLocalNamespacedPublic.lean/declarations/continuoussmul-topology-eq-of-nhds-inf-principal-eq.md) | 86 | `result-track:ae50dc9bc1161658de27c62907e67c7049655f8b84f4edbce443e1a159808025` |
+| 2 | `lemma` | [ContinuousSMul.topology_eq_of_induced_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/EmbeddingOfLocalNamespacedPublic.lean/declarations/continuoussmul-topology-eq-of-induced-eq.md) | 138 | `result-track:e3f9269442232b2cde68082bc93d2b387d9a72b69ac90975daac0ce0067bc8a3` |
+| 3 | `lemma` | [LinearMap.isInducing_of_restrict_nhds_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/EmbeddingOfLocalNamespacedPublic.lean/declarations/linearmap-isinducing-of-restrict-nhds-zero.md) | 153 | `result-track:3f6e4ba07995368a0adf64f97b03668844872121f9ed3bbb4a4d32a11fea044b` |
+| 4 | `lemma` | [LinearMap.isEmbedding_of_restrict_nhds_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/EmbeddingOfLocalNamespacedPublic.lean/declarations/linearmap-isembedding-of-restrict-nhds-zero.md) | 165 | `result-track:5e935121ac50eec83f78ce083a710dda6d127dc59f353d6800544244ac6b110d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/SubringNamespacedPublic.lean/index.md) · [Full source](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/SubringNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/SubringNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/SubringNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [mem_map_rangeS](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/SubringNamespacedPublic.lean/declarations/mem-map-ranges.md) | 41 | `result-track:81f6d8a9a3cef6ed960c7a196faa697cc27d19aae4982d9154e720f6ee6f5405` |
-| 2 | `theorem` | [notMem_map_rangeS](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/SubringNamespacedPublic.lean/declarations/notmem-map-ranges.md) | 54 | `result-track:57ee4cbcc744e790a82af237e8b5a5f3d743ea3e7537158f78ea3aea4a8cb1ff` |
-| 3 | `theorem` | [mem_map_range](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/SubringNamespacedPublic.lean/declarations/mem-map-range.md) | 57 | `result-track:461b81f6f3cf38954e86b6480b2b06864816319f28934756aaa03766ae8636e4` |
-| 4 | `theorem` | [notMem_map_range](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/SubringNamespacedPublic.lean/declarations/notmem-map-range.md) | 61 | `result-track:50dc403a76cd727f1c388a3f65005c44f5f402e9cf95bd0d47a8026141c6eaf1` |
+| 1 | `theorem` | [mem_map_rangeS](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/SubringNamespacedPublic.lean/declarations/mem-map-ranges.md) | 41 | `result-track:81f6d8a9a3cef6ed960c7a196faa697cc27d19aae4982d9154e720f6ee6f5405` |
+| 2 | `theorem` | [notMem_map_rangeS](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/SubringNamespacedPublic.lean/declarations/notmem-map-ranges.md) | 54 | `result-track:57ee4cbcc744e790a82af237e8b5a5f3d743ea3e7537158f78ea3aea4a8cb1ff` |
+| 3 | `theorem` | [mem_map_range](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/SubringNamespacedPublic.lean/declarations/mem-map-range.md) | 57 | `result-track:461b81f6f3cf38954e86b6480b2b06864816319f28934756aaa03766ae8636e4` |
+| 4 | `theorem` | [notMem_map_range](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/SubringNamespacedPublic.lean/declarations/notmem-map-range.md) | 61 | `result-track:50dc403a76cd727f1c388a3f65005c44f5f402e9cf95bd0d47a8026141c6eaf1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

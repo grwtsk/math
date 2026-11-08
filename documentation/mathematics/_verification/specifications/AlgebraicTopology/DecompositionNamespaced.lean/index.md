@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/DecompositionNamespaced.lean/index.md) · [Full source](../../../../AlgebraicTopology/DecompositionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/DecompositionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/DecompositionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [decomposition_Q](../../../../AlgebraicTopology/DecompositionNamespaced.lean/declarations/decomposition-q.md) | 58 | `result-track:3a1f6162c358a727b306e4f6ba4013e24f1b028f5a028cd814c8792efb14f1ca` |
-| 2 | `structure` | [MorphComponents](../../../../AlgebraicTopology/DecompositionNamespaced.lean/declarations/morphcomponents.md) | 96 | `declaration-track:6891963480b6388a68bc3b4505fbd0c5e6d583d60ee72dbd58ae1d20aecfd2fa` |
-| 3 | `def` | [φ](../../../../AlgebraicTopology/DecompositionNamespaced.lean/declarations/anonymous.md) | 105 | `declaration-track:752fce86c9f6b56575bf35cc55763d3fa9cbfaef0c8c8d0505052ac66a09b327` |
-| 4 | `def` | [id](../../../../AlgebraicTopology/DecompositionNamespaced.lean/declarations/id.md) | 114 | `declaration-track:4d9c1bf73ec47862c442d45e1d0e1d7f8014d0af78f8141350dfb0007b1503ae` |
-| 5 | `theorem` | [id_φ](../../../../AlgebraicTopology/DecompositionNamespaced.lean/declarations/id-source-edition-2.md) | 119 | `result-track:90c5ea0a6ec7a5d1ca2b318bd10404880a6aa0ebb538d987d95f3fed6a4850c4` |
-| 6 | `def` | [postComp](../../../../AlgebraicTopology/DecompositionNamespaced.lean/declarations/postcomp.md) | 129 | `declaration-track:5e0202e2ddc9d61c8f2dd0dc78d1b0284afd48b5a9275a6802e64df17397cde0` |
-| 7 | `theorem` | [postComp_φ](../../../../AlgebraicTopology/DecompositionNamespaced.lean/declarations/postcomp-source-edition-2.md) | 134 | `result-track:9db1246b02a887866bb341f23a6d3679dde598d4e3e621d748b93fb38f86a0b1` |
-| 8 | `def` | [preComp](../../../../AlgebraicTopology/DecompositionNamespaced.lean/declarations/precomp.md) | 140 | `declaration-track:305d2e75abc8033b53adf42763c12795dc586692307ae2b45e8b5bb87976eace` |
-| 9 | `theorem` | [preComp_φ](../../../../AlgebraicTopology/DecompositionNamespaced.lean/declarations/precomp-source-edition-2.md) | 145 | `result-track:4909b9858a133db5f2bb2d4894725d2749b7ff0616bbdc5a7af94b1acb3d5296` |
+| 1 | `theorem` | [decomposition_Q](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/DecompositionNamespaced.lean/declarations/decomposition-q.md) | 58 | `result-track:3a1f6162c358a727b306e4f6ba4013e24f1b028f5a028cd814c8792efb14f1ca` |
+| 2 | `structure` | [MorphComponents](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/DecompositionNamespaced.lean/declarations/morphcomponents.md) | 96 | `declaration-track:6891963480b6388a68bc3b4505fbd0c5e6d583d60ee72dbd58ae1d20aecfd2fa` |
+| 3 | `def` | [φ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/DecompositionNamespaced.lean/declarations/anonymous.md) | 105 | `declaration-track:752fce86c9f6b56575bf35cc55763d3fa9cbfaef0c8c8d0505052ac66a09b327` |
+| 4 | `def` | [id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/DecompositionNamespaced.lean/declarations/id.md) | 114 | `declaration-track:4d9c1bf73ec47862c442d45e1d0e1d7f8014d0af78f8141350dfb0007b1503ae` |
+| 5 | `theorem` | [id_φ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/DecompositionNamespaced.lean/declarations/id-source-edition-2.md) | 119 | `result-track:90c5ea0a6ec7a5d1ca2b318bd10404880a6aa0ebb538d987d95f3fed6a4850c4` |
+| 6 | `def` | [postComp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/DecompositionNamespaced.lean/declarations/postcomp.md) | 129 | `declaration-track:5e0202e2ddc9d61c8f2dd0dc78d1b0284afd48b5a9275a6802e64df17397cde0` |
+| 7 | `theorem` | [postComp_φ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/DecompositionNamespaced.lean/declarations/postcomp-source-edition-2.md) | 134 | `result-track:9db1246b02a887866bb341f23a6d3679dde598d4e3e621d748b93fb38f86a0b1` |
+| 8 | `def` | [preComp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/DecompositionNamespaced.lean/declarations/precomp.md) | 140 | `declaration-track:305d2e75abc8033b53adf42763c12795dc586692307ae2b45e8b5bb87976eace` |
+| 9 | `theorem` | [preComp_φ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/DecompositionNamespaced.lean/declarations/precomp-source-edition-2.md) | 145 | `result-track:4909b9858a133db5f2bb2d4894725d2749b7ff0616bbdc5a7af94b1acb3d5296` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

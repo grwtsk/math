@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/OrderClosedExtrNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/OrderClosedExtrNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OrderClosedExtrNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OrderClosedExtrNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [isLocalMax_of_mono_anti](../../../../GeneralTopology/OrderClosedExtrNamespaced.lean/declarations/islocalmax-of-mono-anti.md) | 41 | `result-track:e9c2e955980655d6eb205c0b228b4e0cfcb7dc9f6161e9ed898e8ff715235137` |
-| 2 | `lemma` | [isLocalMin_of_anti_mono](../../../../GeneralTopology/OrderClosedExtrNamespaced.lean/declarations/islocalmin-of-anti-mono.md) | 51 | `result-track:04412d644a2a4d14c94bf48372cabf9c7e1b4730fc1830f5baf3f4d40abbe4ca` |
+| 1 | `lemma` | [isLocalMax_of_mono_anti](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OrderClosedExtrNamespaced.lean/declarations/islocalmax-of-mono-anti.md) | 41 | `result-track:e9c2e955980655d6eb205c0b228b4e0cfcb7dc9f6161e9ed898e8ff715235137` |
+| 2 | `lemma` | [isLocalMin_of_anti_mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/OrderClosedExtrNamespaced.lean/declarations/islocalmin-of-anti-mono.md) | 51 | `result-track:04412d644a2a4d14c94bf48372cabf9c7e1b4730fc1830f5baf3f4d40abbe4ca` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

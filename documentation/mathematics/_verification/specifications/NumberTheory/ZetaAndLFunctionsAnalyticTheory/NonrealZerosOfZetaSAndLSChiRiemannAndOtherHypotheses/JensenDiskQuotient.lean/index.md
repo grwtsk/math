@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/JensenDiskQuotient.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/JensenDiskQuotient.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/JensenDiskQuotient.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/JensenDiskQuotient.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.FiniteBlaschkeRemoval`](../../../../../../FunctionsOfAComplexVariable/FiniteBlaschkeRemoval.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.JensenDiskQuotientLog`](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/JensenDiskQuotientLog.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.FiniteBlaschkeRemoval`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/FiniteBlaschkeRemoval.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.JensenDiskQuotientLog`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/JensenDiskQuotientLog.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [translated_mem_outer](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/JensenDiskQuotient.lean/declarations/translated-mem-outer.md) | 31 | `result-track:7edcf361e190d197192f618b15f934468209471f0400cfcf394f5d458d82bd81` |
-| 2 | `theorem` | [analytic_translated_zeta](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/JensenDiskQuotient.lean/declarations/analytic-translated-zeta.md) | 36 | `result-track:fd6faa0c8e0d79fd9138934cdd0b8cffec90cae2b1b49ba91691143be74e39ce` |
-| 3 | `theorem` | [translated_multiplicity_factorization](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/JensenDiskQuotient.lean/declarations/translated-multiplicity-factorization.md) | 50 | `result-track:d2a9bb314e7856c53f538f750ac4cb2d26a9320f0668d94ae280471b5cdcbe28` |
-| 4 | `theorem` | [inner_zero_covered](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/JensenDiskQuotient.lean/declarations/inner-zero-covered.md) | 69 | `result-track:f78c719a2556cf15bf8040d56dbb08ed498747cdbf82159de1c39cb4c768316e` |
-| 5 | `theorem` | [exists_zeta_disk_quotient](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/JensenDiskQuotient.lean/declarations/exists-zeta-disk-quotient.md) | 95 | `result-track:33bdfd9cbbb8aef70d02681219514db6c056dd63346b96de0d43c3df14ffec98` |
-| 6 | `theorem` | [quotient_diffContOnCl](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/JensenDiskQuotient.lean/declarations/quotient-diffcontoncl.md) | 117 | `result-track:72af8c35956bad62e66b4ae92b8e307df19eb827000e10f33fd202456631203e` |
+| 1 | `theorem` | [translated_mem_outer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/JensenDiskQuotient.lean/declarations/translated-mem-outer.md) | 31 | `result-track:7edcf361e190d197192f618b15f934468209471f0400cfcf394f5d458d82bd81` |
+| 2 | `theorem` | [analytic_translated_zeta](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/JensenDiskQuotient.lean/declarations/analytic-translated-zeta.md) | 36 | `result-track:fd6faa0c8e0d79fd9138934cdd0b8cffec90cae2b1b49ba91691143be74e39ce` |
+| 3 | `theorem` | [translated_multiplicity_factorization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/JensenDiskQuotient.lean/declarations/translated-multiplicity-factorization.md) | 50 | `result-track:d2a9bb314e7856c53f538f750ac4cb2d26a9320f0668d94ae280471b5cdcbe28` |
+| 4 | `theorem` | [inner_zero_covered](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/JensenDiskQuotient.lean/declarations/inner-zero-covered.md) | 69 | `result-track:f78c719a2556cf15bf8040d56dbb08ed498747cdbf82159de1c39cb4c768316e` |
+| 5 | `theorem` | [exists_zeta_disk_quotient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/JensenDiskQuotient.lean/declarations/exists-zeta-disk-quotient.md) | 95 | `result-track:33bdfd9cbbb8aef70d02681219514db6c056dd63346b96de0d43c3df14ffec98` |
+| 6 | `theorem` | [quotient_diffContOnCl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/JensenDiskQuotient.lean/declarations/quotient-diffcontoncl.md) | 117 | `result-track:72af8c35956bad62e66b4ae92b8e307df19eb827000e10f33fd202456631203e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

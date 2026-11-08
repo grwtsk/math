@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/SProd.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/SProd.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SProd.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SProd.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [SProd](../../../../../../ComputerScience/TheoryOfData/DataStructures/SProd.lean/declarations/sprod.md) | 27 | `declaration-track:c2feea1013cef34e8b1ccfdf51036427228897059a96f8d3fb6ca9ab86c0b2c5` |
-| 2 | `macro_rules` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/SProd.lean/declarations/macro-rules.md) | 33 | `declaration-track:6c90aec2da826993ed8b4844ee0a2b00caa3e30f9c2d850c8edad0c87509da8a` |
+| 1 | `class` | [SProd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SProd.lean/declarations/sprod.md) | 27 | `declaration-track:c2feea1013cef34e8b1ccfdf51036427228897059a96f8d3fb6ca9ab86c0b2c5` |
+| 2 | `macro_rules` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/SProd.lean/declarations/macro-rules.md) | 33 | `declaration-track:6c90aec2da826993ed8b4844ee0a2b00caa3e30f9c2d850c8edad0c87509da8a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

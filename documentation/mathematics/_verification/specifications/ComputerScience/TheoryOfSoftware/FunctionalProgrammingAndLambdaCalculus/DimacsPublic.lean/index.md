@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DimacsPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DimacsPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DimacsPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DimacsPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [DimacsState](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DimacsPublic.lean/declarations/dimacsstate.md) | 18 | `declaration-track:1186f5851cbaeb53c2ad275e21f57e463b3a7d51ea63514d91feda19596161a7` |
-| 2 | `abbrev` | [DimacsM](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DimacsPublic.lean/declarations/dimacsm.md) | 22 | `declaration-track:5ecab38dd07c8dfb4f1a76c36f3cbca8702ebaec571dca61d7e4c2df9120d01d` |
-| 3 | `def` | [handleLit](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DimacsPublic.lean/declarations/handlelit.md) | 27 | `declaration-track:0e1c58fb31502f6c3c2fb0a9710283f8cb7f5eb5047d899c4e5f18934ed71fb3` |
-| 4 | `def` | [incrementClauses](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DimacsPublic.lean/declarations/incrementclauses.md) | 31 | `declaration-track:666c39932bf1d2ea26a4d5ff5484bc90d5e1716097b774aa7f9234b09ab1dab0` |
-| 5 | `def` | [dimacs](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DimacsPublic.lean/declarations/dimacs.md) | 42 | `declaration-track:7ff8e30133dac218ae3ef940e2d424e118de4bb0da43be08785a5f3c12405f58` |
+| 1 | `structure` | [DimacsState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DimacsPublic.lean/declarations/dimacsstate.md) | 18 | `declaration-track:1186f5851cbaeb53c2ad275e21f57e463b3a7d51ea63514d91feda19596161a7` |
+| 2 | `abbrev` | [DimacsM](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DimacsPublic.lean/declarations/dimacsm.md) | 22 | `declaration-track:5ecab38dd07c8dfb4f1a76c36f3cbca8702ebaec571dca61d7e4c2df9120d01d` |
+| 3 | `def` | [handleLit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DimacsPublic.lean/declarations/handlelit.md) | 27 | `declaration-track:0e1c58fb31502f6c3c2fb0a9710283f8cb7f5eb5047d899c4e5f18934ed71fb3` |
+| 4 | `def` | [incrementClauses](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DimacsPublic.lean/declarations/incrementclauses.md) | 31 | `declaration-track:666c39932bf1d2ea26a4d5ff5484bc90d5e1716097b774aa7f9234b09ab1dab0` |
+| 5 | `def` | [dimacs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DimacsPublic.lean/declarations/dimacs.md) | 42 | `declaration-track:7ff8e30133dac218ae3ef940e2d424e118de4bb0da43be08785a5f3c12405f58` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

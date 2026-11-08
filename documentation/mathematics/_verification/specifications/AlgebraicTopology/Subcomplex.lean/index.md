@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/Subcomplex.lean/index.md) · [Full source](../../../../AlgebraicTopology/Subcomplex.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/Subcomplex.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/Subcomplex.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [Subcomplex](../../../../AlgebraicTopology/Subcomplex.lean/declarations/subcomplex-source-edition-2.md) | 34 | `declaration-track:89a21eb3cd4719b2095b69872f9c8b6629835e6cb7ae138f5d8e275eb806e2ca` |
-| 2 | `abbrev` | [Subcomplex.toSSet](../../../../AlgebraicTopology/Subcomplex.lean/declarations/subcomplex-tosset.md) | 39 | `declaration-track:9eed6e695b5fd712c4a136b2e8ff93cb17dcc321136de9f9b7c310c7c521d4e8` |
-| 3 | `instance` | [(anonymous)](../../../../AlgebraicTopology/Subcomplex.lean/declarations/instance.md) | 41 | `declaration-track:0448a87b983ebc51d45146f6fbdd76bfe2b4cd3ab1eb906e511d50a8418cbf89` |
-| 4 | `abbrev` | [Subcomplex.ι](../../../../AlgebraicTopology/Subcomplex.lean/declarations/subcomplex.md) | 45 | `declaration-track:1bd5d49bc1fdb7a825858df14ea0d503b8e765329dd4148c6922e12486c5afa1` |
-| 5 | `instance` | [(anonymous)](../../../../AlgebraicTopology/Subcomplex.lean/declarations/instance-source-edition-2.md) | 47 | `declaration-track:6784b49dce586c3b2b9e134c498110a534f50f7b120f6c9a1c34e5d0f47f3c87` |
+| 1 | `abbrev` | [Subcomplex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/Subcomplex.lean/declarations/subcomplex-source-edition-2.md) | 34 | `declaration-track:89a21eb3cd4719b2095b69872f9c8b6629835e6cb7ae138f5d8e275eb806e2ca` |
+| 2 | `abbrev` | [Subcomplex.toSSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/Subcomplex.lean/declarations/subcomplex-tosset.md) | 39 | `declaration-track:9eed6e695b5fd712c4a136b2e8ff93cb17dcc321136de9f9b7c310c7c521d4e8` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/Subcomplex.lean/declarations/instance.md) | 41 | `declaration-track:0448a87b983ebc51d45146f6fbdd76bfe2b4cd3ab1eb906e511d50a8418cbf89` |
+| 4 | `abbrev` | [Subcomplex.ι](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/Subcomplex.lean/declarations/subcomplex.md) | 45 | `declaration-track:1bd5d49bc1fdb7a825858df14ea0d503b8e765329dd4148c6922e12486c5afa1` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/Subcomplex.lean/declarations/instance-source-edition-2.md) | 47 | `declaration-track:6784b49dce586c3b2b9e134c498110a534f50f7b120f6c9a1c34e5d0f47f3c87` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

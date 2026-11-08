@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MorleyTrisectorAnalogy.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MorleyTrisectorAnalogy.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MorleyTrisectorAnalogy.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MorleyTrisectorAnalogy.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [MorleyTrisectorAnalogy](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MorleyTrisectorAnalogy.lean/declarations/morleytrisectoranalogy.md) | 21 | `declaration-track:5db815f7cb188942f1508921167c2ba2ca9695278eeb67520cd19095e05cf3ca` |
-| 2 | `def` | [morleyAnalogy](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MorleyTrisectorAnalogy.lean/declarations/morleyanalogy.md) | 27 | `declaration-track:77143221ca3eb2589ca14c0a21e14df2eac3f13d11e97ffaadbbace87509ca09` |
-| 3 | `theorem` | [morley_analogy_only](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MorleyTrisectorAnalogy.lean/declarations/morley-analogy-only.md) | 34 | `result-track:3a4646dab8f86228b052ed1a584dcc990363cc8896c6eb7d07aef1b4c92586c4` |
+| 1 | `structure` | [MorleyTrisectorAnalogy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MorleyTrisectorAnalogy.lean/declarations/morleytrisectoranalogy.md) | 21 | `declaration-track:5db815f7cb188942f1508921167c2ba2ca9695278eeb67520cd19095e05cf3ca` |
+| 2 | `def` | [morleyAnalogy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MorleyTrisectorAnalogy.lean/declarations/morleyanalogy.md) | 27 | `declaration-track:77143221ca3eb2589ca14c0a21e14df2eac3f13d11e97ffaadbbace87509ca09` |
+| 3 | `theorem` | [morley_analogy_only](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MorleyTrisectorAnalogy.lean/declarations/morley-analogy-only.md) | 34 | `result-track:3a4646dab8f86228b052ed1a584dcc990363cc8896c6eb7d07aef1b4c92586c4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

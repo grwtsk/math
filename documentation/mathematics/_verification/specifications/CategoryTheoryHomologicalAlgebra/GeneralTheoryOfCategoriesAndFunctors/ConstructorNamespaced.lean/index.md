@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConstructorNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConstructorNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConstructorNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConstructorNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [fromRightResolution](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConstructorNamespaced.lean/declarations/fromrightresolution.md) | 66 | `declaration-track:e946942042af02a5ecb8322cf2c799227e242d208ed2197aab512bcac7f0604c` |
-| 2 | `lemma` | [isConnected](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConstructorNamespaced.lean/declarations/isconnected.md) | 78 | `result-track:ba134959c2547df945a421c14511277c6d8b45c2db36833ea6fbbd813373ffd8` |
-| 3 | `lemma` | [mk'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConstructorNamespaced.lean/declarations/mk.md) | 115 | `result-track:a61383fae82892b2176ce3c9b9b61060c708a79156fe1d60db314f84611db56a` |
+| 1 | `def` | [fromRightResolution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConstructorNamespaced.lean/declarations/fromrightresolution.md) | 66 | `declaration-track:e946942042af02a5ecb8322cf2c799227e242d208ed2197aab512bcac7f0604c` |
+| 2 | `lemma` | [isConnected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConstructorNamespaced.lean/declarations/isconnected.md) | 78 | `result-track:ba134959c2547df945a421c14511277c6d8b45c2db36833ea6fbbd813373ffd8` |
+| 3 | `lemma` | [mk'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ConstructorNamespaced.lean/declarations/mk.md) | 115 | `result-track:a61383fae82892b2176ce3c9b9b61060c708a79156fe1d60db314f84611db56a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

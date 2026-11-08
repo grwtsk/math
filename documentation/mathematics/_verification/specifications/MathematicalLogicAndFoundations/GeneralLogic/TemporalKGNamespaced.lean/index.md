@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TemporalKGNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TemporalKGNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TemporalKGNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TemporalKGNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [TemporalEdgeKind](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TemporalKGNamespaced.lean/declarations/temporaledgekind.md) | 15 | `declaration-track:53bd0d6fe92ba1834bd089633b578d554d12b712dd36c81ef7e465d477d37182` |
-| 2 | `structure` | [TemporalEdge](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TemporalKGNamespaced.lean/declarations/temporaledge.md) | 23 | `declaration-track:6804a39d01e0959a3099f3eddec5bb5e26639a4ad0e6fba942955bfa2754306e` |
-| 3 | `def` | [TemporalEdge.invalidated](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TemporalKGNamespaced.lean/declarations/temporaledge-invalidated.md) | 32 | `declaration-track:3c9f8a61d587a24e4852a810a78da059a22e5ee4f890ed26fbe6184b7e72ad9d` |
-| 4 | `def` | [invalidationPreservesHistory](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TemporalKGNamespaced.lean/declarations/invalidationpreserveshistory.md) | 35 | `declaration-track:9ede8992bbd1a1c947e576087481ea32cd6597a8a7722d0df4d9613c1025b1d3` |
-| 5 | `theorem` | [invalidated_iff_has_invalid_time](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TemporalKGNamespaced.lean/declarations/invalidated-iff-has-invalid-time.md) | 40 | `result-track:48fcc172c95d2cc1265d1aff7a9984d9b50c844bfd820ecfc2ec66f995accc16` |
+| 1 | `inductive` | [TemporalEdgeKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TemporalKGNamespaced.lean/declarations/temporaledgekind.md) | 15 | `declaration-track:53bd0d6fe92ba1834bd089633b578d554d12b712dd36c81ef7e465d477d37182` |
+| 2 | `structure` | [TemporalEdge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TemporalKGNamespaced.lean/declarations/temporaledge.md) | 23 | `declaration-track:6804a39d01e0959a3099f3eddec5bb5e26639a4ad0e6fba942955bfa2754306e` |
+| 3 | `def` | [TemporalEdge.invalidated](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TemporalKGNamespaced.lean/declarations/temporaledge-invalidated.md) | 32 | `declaration-track:3c9f8a61d587a24e4852a810a78da059a22e5ee4f890ed26fbe6184b7e72ad9d` |
+| 4 | `def` | [invalidationPreservesHistory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TemporalKGNamespaced.lean/declarations/invalidationpreserveshistory.md) | 35 | `declaration-track:9ede8992bbd1a1c947e576087481ea32cd6597a8a7722d0df4d9613c1025b1d3` |
+| 5 | `theorem` | [invalidated_iff_has_invalid_time](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TemporalKGNamespaced.lean/declarations/invalidated-iff-has-invalid-time.md) | 40 | `result-track:48fcc172c95d2cc1265d1aff7a9984d9b50c844bfd820ecfc2ec66f995accc16` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

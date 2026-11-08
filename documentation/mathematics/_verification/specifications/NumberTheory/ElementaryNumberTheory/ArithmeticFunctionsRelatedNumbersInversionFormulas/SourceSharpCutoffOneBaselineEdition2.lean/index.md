@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSharpCutoffOneBaselineEdition2.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSharpCutoffOneBaselineEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSharpCutoffOneBaselineEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSharpCutoffOneBaselineEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [sharpBaselineResidualBudget](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSharpCutoffOneBaselineEdition2.lean/declarations/sharpbaselineresidualbudget.md) | 17 | `declaration-track:daba71c4205b9117edb541bdd48221aa3a9e4a306bc420d38252e7ee66262780` |
-| 2 | `theorem` | [residual_tail_of_baseline](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSharpCutoffOneBaselineEdition2.lean/declarations/residual-tail-of-baseline.md) | 20 | `result-track:5a46397928fe222e999465a0d2ed667b20b362f020c22c0f73a9c4417fb9ce7b` |
-| 3 | `theorem` | [all_real_lower_of_baseline](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSharpCutoffOneBaselineEdition2.lean/declarations/all-real-lower-of-baseline.md) | 31 | `result-track:2baeee79728ff7a9be8460cef45ad7aeccef85a8e9bba3fb1ca7996c7fb4c101` |
-| 4 | `theorem` | [estimate_of_baseline](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSharpCutoffOneBaselineEdition2.lean/declarations/estimate-of-baseline.md) | 49 | `result-track:fcae60f3ebabfa55ed4830353b9ce9f7d088f17d33fa601c44d21c990f44a5bd` |
+| 1 | `def` | [sharpBaselineResidualBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSharpCutoffOneBaselineEdition2.lean/declarations/sharpbaselineresidualbudget.md) | 17 | `declaration-track:daba71c4205b9117edb541bdd48221aa3a9e4a306bc420d38252e7ee66262780` |
+| 2 | `theorem` | [residual_tail_of_baseline](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSharpCutoffOneBaselineEdition2.lean/declarations/residual-tail-of-baseline.md) | 20 | `result-track:5a46397928fe222e999465a0d2ed667b20b362f020c22c0f73a9c4417fb9ce7b` |
+| 3 | `theorem` | [all_real_lower_of_baseline](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSharpCutoffOneBaselineEdition2.lean/declarations/all-real-lower-of-baseline.md) | 31 | `result-track:2baeee79728ff7a9be8460cef45ad7aeccef85a8e9bba3fb1ca7996c7fb4c101` |
+| 4 | `theorem` | [estimate_of_baseline](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSharpCutoffOneBaselineEdition2.lean/declarations/estimate-of-baseline.md) | 49 | `result-track:fcae60f3ebabfa55ed4830353b9ce9f7d088f17d33fa601c44d21c990f44a5bd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

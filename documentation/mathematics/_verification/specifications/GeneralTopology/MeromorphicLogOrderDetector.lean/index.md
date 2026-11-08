@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/MeromorphicLogOrderDetector.lean/index.md) · [Full source](../../../../GeneralTopology/MeromorphicLogOrderDetector.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MeromorphicLogOrderDetector.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MeromorphicLogOrderDetector.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.LogarithmicOrderDetection`](../../../../GeneralTopology/LogarithmicOrderDetection.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.LogarithmicOrderDetection`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LogarithmicOrderDetection.lean/index.md) — import line 1; pinned internal source present.
 - `Mathlib.Analysis.Meromorphic.Order` — import line 2; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [meromorphic_order_of_local_factorization](../../../../GeneralTopology/MeromorphicLogOrderDetector.lean/declarations/meromorphic-order-of-local-factorization.md) | 11 | `result-track:5c29440e6912045a7e3204def5c0447c80be30ff342eaf54114cc32c79aefa21` |
-| 2 | `theorem` | [meromorphic_finite_order_factorization](../../../../GeneralTopology/MeromorphicLogOrderDetector.lean/declarations/meromorphic-finite-order-factorization.md) | 21 | `result-track:7aa6e0cb2858ec972c2cb23fa787b05b9e6c6170b30b0278507f42253c37e9c5` |
-| 3 | `theorem` | [meromorphic_finite_order_scaled_coefficient](../../../../GeneralTopology/MeromorphicLogOrderDetector.lean/declarations/meromorphic-finite-order-scaled-coefficient.md) | 28 | `result-track:ac37abdf92bf2318649382a8c2dbf2d536c5b09297d51537e391e61c74fc0628` |
-| 4 | `theorem` | [meromorphic_nonzero_order_no_continuous_extension](../../../../GeneralTopology/MeromorphicLogOrderDetector.lean/declarations/meromorphic-nonzero-order-no-continuous-extension.md) | 36 | `result-track:e3b4434de16fe1dd48e9e4ca68a2362518a1335e24f7b419e012c014fe21e0df` |
+| 1 | `theorem` | [meromorphic_order_of_local_factorization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MeromorphicLogOrderDetector.lean/declarations/meromorphic-order-of-local-factorization.md) | 11 | `result-track:5c29440e6912045a7e3204def5c0447c80be30ff342eaf54114cc32c79aefa21` |
+| 2 | `theorem` | [meromorphic_finite_order_factorization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MeromorphicLogOrderDetector.lean/declarations/meromorphic-finite-order-factorization.md) | 21 | `result-track:7aa6e0cb2858ec972c2cb23fa787b05b9e6c6170b30b0278507f42253c37e9c5` |
+| 3 | `theorem` | [meromorphic_finite_order_scaled_coefficient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MeromorphicLogOrderDetector.lean/declarations/meromorphic-finite-order-scaled-coefficient.md) | 28 | `result-track:ac37abdf92bf2318649382a8c2dbf2d536c5b09297d51537e391e61c74fc0628` |
+| 4 | `theorem` | [meromorphic_nonzero_order_no_continuous_extension](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MeromorphicLogOrderDetector.lean/declarations/meromorphic-nonzero-order-no-continuous-extension.md) | 36 | `result-track:e3b4434de16fe1dd48e9e4ca68a2362518a1335e24f7b419e012c014fe21e0df` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

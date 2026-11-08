@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GaugeNamespacedGaugeTransformation.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GaugeNamespacedGaugeTransformation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GaugeNamespacedGaugeTransformation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GaugeNamespacedGaugeTransformation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [GaugeTransformation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GaugeNamespacedGaugeTransformation.lean/declarations/gaugetransformation.md) | 22 | `declaration-track:aa71c74eea3e2d5ff59c4a0fe142c6346841b4c348c67eb01259b2b86fea98c0` |
-| 2 | `def` | [GaugeEquivalent](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GaugeNamespacedGaugeTransformation.lean/declarations/gaugeequivalent.md) | 31 | `declaration-track:d306a8928c3893515e3e53572ca719753b03065d2e32106c0bfdf5f2a818adb4` |
-| 3 | `theorem` | [contract_gauge_invariant](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GaugeNamespacedGaugeTransformation.lean/declarations/contract-gauge-invariant.md) | 36 | `result-track:4fc2398e09c8e03b7743f88cf30106e73dc8c94545e3c3632b3e5a1e2106efe1` |
-| 4 | `theorem` | [inserted_inverse_cancels](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GaugeNamespacedGaugeTransformation.lean/declarations/inserted-inverse-cancels.md) | 43 | `result-track:490de9c58c9dbeb5ef67a1b488918401d3de2bbd2839c490897421088284296c` |
+| 1 | `structure` | [GaugeTransformation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GaugeNamespacedGaugeTransformation.lean/declarations/gaugetransformation.md) | 22 | `declaration-track:aa71c74eea3e2d5ff59c4a0fe142c6346841b4c348c67eb01259b2b86fea98c0` |
+| 2 | `def` | [GaugeEquivalent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GaugeNamespacedGaugeTransformation.lean/declarations/gaugeequivalent.md) | 31 | `declaration-track:d306a8928c3893515e3e53572ca719753b03065d2e32106c0bfdf5f2a818adb4` |
+| 3 | `theorem` | [contract_gauge_invariant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GaugeNamespacedGaugeTransformation.lean/declarations/contract-gauge-invariant.md) | 36 | `result-track:4fc2398e09c8e03b7743f88cf30106e73dc8c94545e3c3632b3e5a1e2106efe1` |
+| 4 | `theorem` | [inserted_inverse_cancels](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GaugeNamespacedGaugeTransformation.lean/declarations/inserted-inverse-cancels.md) | 43 | `result-track:490de9c58c9dbeb5ef67a1b488918401d3de2bbd2839c490897421088284296c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

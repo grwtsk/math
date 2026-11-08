@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MarkedValues.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MarkedValues.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MarkedValues.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MarkedValues.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `Folder.DerivedSheaf.BaseCaseIndexAnchor` — import line 16; external provider; requires a separately pinned dependency.
-- [`GRWTSK.Algebra.UniversalAlgebra.SignaturesAndAlgebras.TwoConstructorOperationData.Variantb88ceb9c.CarrierAndOperations`](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CarrierAndOperations.lean/index.md) — import line 18; pinned internal source present.
+- [`GRWTSK.Algebra.UniversalAlgebra.SignaturesAndAlgebras.TwoConstructorOperationData.Variantb88ceb9c.CarrierAndOperations`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CarrierAndOperations.lean/index.md) — import line 18; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [toyKTheoryClass](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MarkedValues.lean/declarations/toyktheoryclass.md) | 38 | `declaration-track:7d383690be7f1485ba284ac2c98ff3722876813eed69c50666988ce4f6d71601` |
-| 2 | `def` | [standardReference11a1KTheoryClass](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MarkedValues.lean/declarations/standardreference11a1ktheoryclass.md) | 42 | `declaration-track:3d5ddc1c961544152393e4bf19eea44a1fe8c49e69664e84db9387df0e57c8ed` |
+| 1 | `def` | [toyKTheoryClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MarkedValues.lean/declarations/toyktheoryclass.md) | 38 | `declaration-track:7d383690be7f1485ba284ac2c98ff3722876813eed69c50666988ce4f6d71601` |
+| 2 | `def` | [standardReference11a1KTheoryClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/MarkedValues.lean/declarations/standardreference11a1ktheoryclass.md) | 42 | `declaration-track:3d5ddc1c961544152393e4bf19eea44a1fe8c49e69664e84db9387df0e57c8ed` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

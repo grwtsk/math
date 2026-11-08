@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/HopfAlgebraMonoidAlgebraNamespacedPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/HopfAlgebraMonoidAlgebraNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HopfAlgebraMonoidAlgebraNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HopfAlgebraMonoidAlgebraNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [instHopfAlgebraStruct](../../../../CommutativeAlgebra/HopfAlgebraMonoidAlgebraNamespacedPublic.lean/declarations/insthopfalgebrastruct.md) | 48 | `declaration-track:d7fa10e216b7c5a314f92490de6038e749ca9ff3f0d6fc5aa4176be96539aabe` |
-| 2 | `lemma` | [antipode_single](../../../../CommutativeAlgebra/HopfAlgebraMonoidAlgebraNamespacedPublic.lean/declarations/antipode-single.md) | 52 | `result-track:400575a78baefe612b8c8cb2e3c1b36b70f4e8452fc423ccf6765893ce756a3f` |
-| 3 | `instance` | [instHopfAlgebra](../../../../CommutativeAlgebra/HopfAlgebraMonoidAlgebraNamespacedPublic.lean/declarations/insthopfalgebra.md) | 57 | `declaration-track:29588f50b5cdc730a9e716ff986e4e29601b272c79f32a2d03e16e760643bea6` |
-| 4 | `instance` | [instHopfAlgebra](../../../../CommutativeAlgebra/HopfAlgebraMonoidAlgebraNamespacedPublic.lean/declarations/insthopfalgebra-source-edition-2.md) | 73 | `declaration-track:fa832e0f44f918b6360475b2d488c180a189d88fb0392e5df1a1f4e8fa794389` |
-| 5 | `theorem` | [antipode_C](../../../../CommutativeAlgebra/HopfAlgebraMonoidAlgebraNamespacedPublic.lean/declarations/antipode-c.md) | 79 | `result-track:1164f003612bf3903355bdbbf25eb16fad67330c51d4e622d1dfff1a7a4a12fc` |
-| 6 | `theorem` | [antipode_T](../../../../CommutativeAlgebra/HopfAlgebraMonoidAlgebraNamespacedPublic.lean/declarations/antipode-t.md) | 85 | `result-track:ec40c51d46695c0876f7bb9822a1a3ec9309d834bdbf4db7adce11cc883d2ab7` |
-| 7 | `theorem` | [antipode_C_mul_T](../../../../CommutativeAlgebra/HopfAlgebraMonoidAlgebraNamespacedPublic.lean/declarations/antipode-c-mul-t.md) | 92 | `result-track:691afe92396c9f6fdfbb1e7aa02dbf7d2f5d1cdb9cb375ad7e76e93adb857a17` |
+| 1 | `instance` | [instHopfAlgebraStruct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HopfAlgebraMonoidAlgebraNamespacedPublic.lean/declarations/insthopfalgebrastruct.md) | 48 | `declaration-track:d7fa10e216b7c5a314f92490de6038e749ca9ff3f0d6fc5aa4176be96539aabe` |
+| 2 | `lemma` | [antipode_single](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HopfAlgebraMonoidAlgebraNamespacedPublic.lean/declarations/antipode-single.md) | 52 | `result-track:400575a78baefe612b8c8cb2e3c1b36b70f4e8452fc423ccf6765893ce756a3f` |
+| 3 | `instance` | [instHopfAlgebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HopfAlgebraMonoidAlgebraNamespacedPublic.lean/declarations/insthopfalgebra.md) | 57 | `declaration-track:29588f50b5cdc730a9e716ff986e4e29601b272c79f32a2d03e16e760643bea6` |
+| 4 | `instance` | [instHopfAlgebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HopfAlgebraMonoidAlgebraNamespacedPublic.lean/declarations/insthopfalgebra-source-edition-2.md) | 73 | `declaration-track:fa832e0f44f918b6360475b2d488c180a189d88fb0392e5df1a1f4e8fa794389` |
+| 5 | `theorem` | [antipode_C](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HopfAlgebraMonoidAlgebraNamespacedPublic.lean/declarations/antipode-c.md) | 79 | `result-track:1164f003612bf3903355bdbbf25eb16fad67330c51d4e622d1dfff1a7a4a12fc` |
+| 6 | `theorem` | [antipode_T](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HopfAlgebraMonoidAlgebraNamespacedPublic.lean/declarations/antipode-t.md) | 85 | `result-track:ec40c51d46695c0876f7bb9822a1a3ec9309d834bdbf4db7adce11cc883d2ab7` |
+| 7 | `theorem` | [antipode_C_mul_T](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HopfAlgebraMonoidAlgebraNamespacedPublic.lean/declarations/antipode-c-mul-t.md) | 92 | `result-track:691afe92396c9f6fdfbb1e7aa02dbf7d2f5d1cdb9cb375ad7e76e93adb857a17` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

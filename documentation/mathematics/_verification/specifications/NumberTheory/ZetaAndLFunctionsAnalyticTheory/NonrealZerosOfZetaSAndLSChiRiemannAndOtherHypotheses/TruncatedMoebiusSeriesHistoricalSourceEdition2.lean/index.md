@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TruncatedMoebiusSeriesHistoricalSourceEdition2.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TruncatedMoebiusSeriesHistoricalSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TruncatedMoebiusSeriesHistoricalSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TruncatedMoebiusSeriesHistoricalSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.FunctionFieldArithmetic.ComplexMoebiusCast`](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ComplexMoebiusCastHistoricalSourceEdition2.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.FunctionFieldArithmetic.ComplexMoebiusCast`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ComplexMoebiusCastHistoricalSourceEdition2.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.NumberTheory.LSeries.Dirichlet` — import line 5; external provider; requires a separately pinned dependency.
 - `Mathlib.NumberTheory.LSeries.Linearity` — import line 6; external provider; requires a separately pinned dependency.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [closedMoebiusSeries](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TruncatedMoebiusSeriesHistoricalSourceEdition2.lean/declarations/closedmoebiusseries.md) | 20 | `declaration-track:1a9f5d9a4546fdebb5702a6bf955399ccc8b31b9830616e5a4ed5e129cf4e037` |
-| 2 | `def` | [highMoebiusSeries](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TruncatedMoebiusSeriesHistoricalSourceEdition2.lean/declarations/highmoebiusseries.md) | 24 | `declaration-track:906d6c2de5c95c71c2c2943c80f9247d6e67ff1f4f75a31dc5f520a69ba8aa35` |
-| 3 | `theorem` | [closed_moebius_summable](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TruncatedMoebiusSeriesHistoricalSourceEdition2.lean/declarations/closed-moebius-summable.md) | 28 | `result-track:5142bc22326837eb492de652e8fce8ad1d0d39cf53ee8e7920bfd9f867cacbbc` |
-| 4 | `theorem` | [high_moebius_series_initial](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TruncatedMoebiusSeriesHistoricalSourceEdition2.lean/declarations/high-moebius-series-initial.md) | 39 | `result-track:ef444f1ac1116ab093f16cf72a6c3f6321126695bdba20d45e9cd7a5e0a50546` |
-| 5 | `theorem` | [high_moebius_series_reciprocal](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TruncatedMoebiusSeriesHistoricalSourceEdition2.lean/declarations/high-moebius-series-reciprocal.md) | 78 | `result-track:a4e3cfe84659aaca9c4c7d53e0b8fcd967f2464427c96cdc1d5e45c92d122583` |
+| 1 | `def` | [closedMoebiusSeries](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TruncatedMoebiusSeriesHistoricalSourceEdition2.lean/declarations/closedmoebiusseries.md) | 20 | `declaration-track:1a9f5d9a4546fdebb5702a6bf955399ccc8b31b9830616e5a4ed5e129cf4e037` |
+| 2 | `def` | [highMoebiusSeries](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TruncatedMoebiusSeriesHistoricalSourceEdition2.lean/declarations/highmoebiusseries.md) | 24 | `declaration-track:906d6c2de5c95c71c2c2943c80f9247d6e67ff1f4f75a31dc5f520a69ba8aa35` |
+| 3 | `theorem` | [closed_moebius_summable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TruncatedMoebiusSeriesHistoricalSourceEdition2.lean/declarations/closed-moebius-summable.md) | 28 | `result-track:5142bc22326837eb492de652e8fce8ad1d0d39cf53ee8e7920bfd9f867cacbbc` |
+| 4 | `theorem` | [high_moebius_series_initial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TruncatedMoebiusSeriesHistoricalSourceEdition2.lean/declarations/high-moebius-series-initial.md) | 39 | `result-track:ef444f1ac1116ab093f16cf72a6c3f6321126695bdba20d45e9cd7a5e0a50546` |
+| 5 | `theorem` | [high_moebius_series_reciprocal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TruncatedMoebiusSeriesHistoricalSourceEdition2.lean/declarations/high-moebius-series-reciprocal.md) | 78 | `result-track:a4e3cfe84659aaca9c4c7d53e0b8fcd967f2464427c96cdc1d5e45c92d122583` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

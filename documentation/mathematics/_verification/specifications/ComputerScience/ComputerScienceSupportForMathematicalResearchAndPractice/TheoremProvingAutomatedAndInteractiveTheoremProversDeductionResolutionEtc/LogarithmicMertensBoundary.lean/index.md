@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LogarithmicMertensBoundary.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LogarithmicMertensBoundary.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LogarithmicMertensBoundary.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LogarithmicMertensBoundary.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Moebius.LogarithmicMertensBoundary`](../../../../../../MeasureAndIntegration/LogarithmicMertensBoundary.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.LogarithmicMertensBoundary`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogarithmicMertensBoundary.lean/index.md) — import line 1; pinned internal source present.
 - `Lean` — import line 2; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LogarithmicMertensBoundary.lean/declarations/example-source-edition-2.md) | 10 | `declaration-track:80727ae0a6d49a037ff29e6c33cc799e381015335f44fc0e0348fb60e570be32` |
-| 2 | `example` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LogarithmicMertensBoundary.lean/declarations/example-source-edition-5.md) | 14 | `declaration-track:e532923e20c3b96eff6422ba8e8b97242980f0dc953a17d6d1747e4076fbe4cb` |
-| 3 | `example` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LogarithmicMertensBoundary.lean/declarations/example-source-edition-3.md) | 17 | `declaration-track:82d67ff3a01cb68048367f346475d95ee35c1e281165ea2033cff37fed4daa73` |
-| 4 | `example` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LogarithmicMertensBoundary.lean/declarations/example-source-edition-4.md) | 22 | `declaration-track:ba2f85c886598885daeaedd7f2fd84f1c8d9b0979751be3eb419fa1e73d6375e` |
-| 5 | `example` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LogarithmicMertensBoundary.lean/declarations/example.md) | 31 | `declaration-track:7f275528a7eb8542baa6398e0ddca32730064cf49a42029abb59fe19e83beb8a` |
-| 6 | `elab` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LogarithmicMertensBoundary.lean/declarations/elab.md) | 43 | `declaration-track:c9ce7c0669f11c39e1f399c8d14dcdc1fce20dfb1e54ba8b5e0561af5614d158` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LogarithmicMertensBoundary.lean/declarations/example-source-edition-2.md) | 10 | `declaration-track:80727ae0a6d49a037ff29e6c33cc799e381015335f44fc0e0348fb60e570be32` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LogarithmicMertensBoundary.lean/declarations/example-source-edition-5.md) | 14 | `declaration-track:e532923e20c3b96eff6422ba8e8b97242980f0dc953a17d6d1747e4076fbe4cb` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LogarithmicMertensBoundary.lean/declarations/example-source-edition-3.md) | 17 | `declaration-track:82d67ff3a01cb68048367f346475d95ee35c1e281165ea2033cff37fed4daa73` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LogarithmicMertensBoundary.lean/declarations/example-source-edition-4.md) | 22 | `declaration-track:ba2f85c886598885daeaedd7f2fd84f1c8d9b0979751be3eb419fa1e73d6375e` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LogarithmicMertensBoundary.lean/declarations/example.md) | 31 | `declaration-track:7f275528a7eb8542baa6398e0ddca32730064cf49a42029abb59fe19e83beb8a` |
+| 6 | `elab` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LogarithmicMertensBoundary.lean/declarations/elab.md) | 43 | `declaration-track:c9ce7c0669f11c39e1f399c8d14dcdc1fce20dfb1e54ba8b5e0561af5614d158` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

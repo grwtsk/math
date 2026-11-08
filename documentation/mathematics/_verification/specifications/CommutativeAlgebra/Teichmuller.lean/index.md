@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/Teichmuller.lean/index.md) · [Full source](../../../../CommutativeAlgebra/Teichmuller.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Teichmuller.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Teichmuller.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,17 +57,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [teichmullerFun](../../../../CommutativeAlgebra/Teichmuller.lean/declarations/teichmullerfun.md) | 40 | `declaration-track:ff0fdaff1d0c8daebe5ad97b979c645a7da210f7e25553f6cb7d82846fb9b6e9` |
-| 2 | `theorem` | [ghostComponent_teichmullerFun](../../../../CommutativeAlgebra/Teichmuller.lean/declarations/ghostcomponent-teichmullerfun.md) | 58 | `result-track:96ee42511e10750f2cb412110299115592d936db5e6d9f7112164d859785d414` |
-| 3 | `theorem` | [map_teichmullerFun](../../../../CommutativeAlgebra/Teichmuller.lean/declarations/map-teichmullerfun.md) | 67 | `result-track:64b65ab1933dbe684decbe1dd9af791b28ba45825f71fddfc5de77b3f0515730` |
-| 4 | `theorem` | [teichmuller_mul_aux₁](../../../../CommutativeAlgebra/Teichmuller.lean/declarations/teichmuller-mul-aux.md) | 73 | `result-track:2920282d6001b1ce4ebed39c2235e4d5d35293bd295bc1fca5aba2a2a38c37ae` |
-| 5 | `theorem` | [teichmuller_mul_aux₂](../../../../CommutativeAlgebra/Teichmuller.lean/declarations/teichmuller-mul-aux-source-edition-2.md) | 80 | `result-track:2a9dc620a9b5df61a4fd82dbcde131425d25b061e3ebe48e5fdd4b6b4557aa8d` |
-| 6 | `def` | [teichmuller](../../../../CommutativeAlgebra/Teichmuller.lean/declarations/teichmuller.md) | 89 | `declaration-track:a414f8d2cc17b4dfa25328a0cb7c732db6dc53cda6d813173337db155bb822d8` |
-| 7 | `theorem` | [teichmuller_coeff_zero](../../../../CommutativeAlgebra/Teichmuller.lean/declarations/teichmuller-coeff-zero.md) | 102 | `result-track:22356c85e5e21d2510bdafd295bc0670206e67c117c4b031a557259a9569d3f8` |
-| 8 | `theorem` | [teichmuller_coeff_pos](../../../../CommutativeAlgebra/Teichmuller.lean/declarations/teichmuller-coeff-pos.md) | 106 | `result-track:d639cffc4ee3824ae0550569dd79d0ca07c94c1a76861e3a469837b67fd59a16` |
-| 9 | `theorem` | [teichmuller_zero](../../../../CommutativeAlgebra/Teichmuller.lean/declarations/teichmuller-zero.md) | 110 | `result-track:84553b0bc0252e23106651860488894caa8251311da135b9762a48f5c947b227` |
-| 10 | `theorem` | [map_teichmuller](../../../../CommutativeAlgebra/Teichmuller.lean/declarations/map-teichmuller.md) | 115 | `result-track:1b167b26a4c401d81659602942f66c696b8ee0653c40bddd61208d8790b8c865` |
-| 11 | `theorem` | [ghostComponent_teichmuller](../../../../CommutativeAlgebra/Teichmuller.lean/declarations/ghostcomponent-teichmuller.md) | 120 | `result-track:497d94db7b84a9befbe36f636b59c4357f8be26a239fad2668fc2c7e98061ee9` |
+| 1 | `def` | [teichmullerFun](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Teichmuller.lean/declarations/teichmullerfun.md) | 40 | `declaration-track:ff0fdaff1d0c8daebe5ad97b979c645a7da210f7e25553f6cb7d82846fb9b6e9` |
+| 2 | `theorem` | [ghostComponent_teichmullerFun](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Teichmuller.lean/declarations/ghostcomponent-teichmullerfun.md) | 58 | `result-track:96ee42511e10750f2cb412110299115592d936db5e6d9f7112164d859785d414` |
+| 3 | `theorem` | [map_teichmullerFun](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Teichmuller.lean/declarations/map-teichmullerfun.md) | 67 | `result-track:64b65ab1933dbe684decbe1dd9af791b28ba45825f71fddfc5de77b3f0515730` |
+| 4 | `theorem` | [teichmuller_mul_aux₁](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Teichmuller.lean/declarations/teichmuller-mul-aux.md) | 73 | `result-track:2920282d6001b1ce4ebed39c2235e4d5d35293bd295bc1fca5aba2a2a38c37ae` |
+| 5 | `theorem` | [teichmuller_mul_aux₂](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Teichmuller.lean/declarations/teichmuller-mul-aux-source-edition-2.md) | 80 | `result-track:2a9dc620a9b5df61a4fd82dbcde131425d25b061e3ebe48e5fdd4b6b4557aa8d` |
+| 6 | `def` | [teichmuller](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Teichmuller.lean/declarations/teichmuller.md) | 89 | `declaration-track:a414f8d2cc17b4dfa25328a0cb7c732db6dc53cda6d813173337db155bb822d8` |
+| 7 | `theorem` | [teichmuller_coeff_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Teichmuller.lean/declarations/teichmuller-coeff-zero.md) | 102 | `result-track:22356c85e5e21d2510bdafd295bc0670206e67c117c4b031a557259a9569d3f8` |
+| 8 | `theorem` | [teichmuller_coeff_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Teichmuller.lean/declarations/teichmuller-coeff-pos.md) | 106 | `result-track:d639cffc4ee3824ae0550569dd79d0ca07c94c1a76861e3a469837b67fd59a16` |
+| 9 | `theorem` | [teichmuller_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Teichmuller.lean/declarations/teichmuller-zero.md) | 110 | `result-track:84553b0bc0252e23106651860488894caa8251311da135b9762a48f5c947b227` |
+| 10 | `theorem` | [map_teichmuller](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Teichmuller.lean/declarations/map-teichmuller.md) | 115 | `result-track:1b167b26a4c401d81659602942f66c696b8ee0653c40bddd61208d8790b8c865` |
+| 11 | `theorem` | [ghostComponent_teichmuller](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/Teichmuller.lean/declarations/ghostcomponent-teichmuller.md) | 120 | `result-track:497d94db7b84a9befbe36f636b59c4357f8be26a239fad2668fc2c7e98061ee9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

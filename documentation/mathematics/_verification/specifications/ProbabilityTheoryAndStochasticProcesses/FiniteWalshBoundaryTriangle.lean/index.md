@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteWalshBoundaryTriangle.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteWalshBoundaryTriangle.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteWalshBoundaryTriangle.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteWalshBoundaryTriangle.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteLabeledBoundaryTV`](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteLabeledBoundaryTV.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteLabeledBoundaryTV`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteLabeledBoundaryTV.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Tactic` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [scaledDeviation_change](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteWalshBoundaryTriangle.lean/declarations/scaleddeviation-change.md) | 27 | `result-track:3e719f91ae938f24b3f2ce724c322537640c13cf79eca52379bfd81819656d76` |
-| 2 | `theorem` | [uniformTV_le_boundaryTV_add_sourceTV](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteWalshBoundaryTriangle.lean/declarations/uniformtv-le-boundarytv-add-sourcetv.md) | 43 | `result-track:5cba7f077fb8128f0d124d597b9671a6174e3feae6273112f53e0ae999c2e724` |
-| 3 | `theorem` | [finiteWalshBoundary_return](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteWalshBoundaryTriangle.lean/declarations/finitewalshboundary-return.md) | 141 | `result-track:f4d14e63f9113eace3edebae6ee9063411c660da16088a7859e5fd9c925efe64` |
+| 1 | `theorem` | [scaledDeviation_change](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteWalshBoundaryTriangle.lean/declarations/scaleddeviation-change.md) | 27 | `result-track:3e719f91ae938f24b3f2ce724c322537640c13cf79eca52379bfd81819656d76` |
+| 2 | `theorem` | [uniformTV_le_boundaryTV_add_sourceTV](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteWalshBoundaryTriangle.lean/declarations/uniformtv-le-boundarytv-add-sourcetv.md) | 43 | `result-track:5cba7f077fb8128f0d124d597b9671a6174e3feae6273112f53e0ae999c2e724` |
+| 3 | `theorem` | [finiteWalshBoundary_return](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteWalshBoundaryTriangle.lean/declarations/finitewalshboundary-return.md) | 141 | `result-track:f4d14e63f9113eace3edebae6ee9063411c660da16088a7859e5fd9c925efe64` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

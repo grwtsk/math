@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/WholeZeroOperatorAndConsequences.lean/index.md) · [Full source](../../../../Combinatorics/WholeZeroOperatorAndConsequences.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WholeZeroOperatorAndConsequences.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WholeZeroOperatorAndConsequences.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,9 +60,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [boolZeroOperator](../../../../Combinatorics/WholeZeroOperatorAndConsequences.lean/declarations/boolzerooperator.md) | 46 | `declaration-track:8b33393af9f56ebff417d721b45d8e7fe52c2e996273c8ecc8fb4864f3e4a810` |
-| 2 | `example` | [(anonymous)](../../../../Combinatorics/WholeZeroOperatorAndConsequences.lean/declarations/example-source-edition-2.md) | 49 | `declaration-track:df17a64017c108bcf6b508f68c76dd6e32613a64300ad107b99230b65aa9105e` |
-| 3 | `example` | [(anonymous)](../../../../Combinatorics/WholeZeroOperatorAndConsequences.lean/declarations/example.md) | 53 | `declaration-track:0239f3e6fa11bfe33e982e7ab10c605119ca6579ee72d7adf4115355cdb4918a` |
+| 1 | `def` | [boolZeroOperator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WholeZeroOperatorAndConsequences.lean/declarations/boolzerooperator.md) | 46 | `declaration-track:8b33393af9f56ebff417d721b45d8e7fe52c2e996273c8ecc8fb4864f3e4a810` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WholeZeroOperatorAndConsequences.lean/declarations/example-source-edition-2.md) | 49 | `declaration-track:df17a64017c108bcf6b508f68c76dd6e32613a64300ad107b99230b65aa9105e` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/WholeZeroOperatorAndConsequences.lean/declarations/example.md) | 53 | `declaration-track:0239f3e6fa11bfe33e982e7ab10c605119ca6579ee72d7adf4115355cdb4918a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

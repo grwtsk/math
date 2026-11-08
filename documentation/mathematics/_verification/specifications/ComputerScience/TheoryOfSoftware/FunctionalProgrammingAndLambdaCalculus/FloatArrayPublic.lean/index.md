@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/FloatArrayPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/FloatArrayPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/FloatArrayPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/FloatArrayPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mapMUnsafe](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/FloatArrayPublic.lean/declarations/mapmunsafe.md) | 21 | `declaration-track:594e5c8779497a5439c3552ce86a8fe2e2b45d8642a4846acf44ac92bee56090` |
-| 2 | `def` | [mapM](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/FloatArrayPublic.lean/declarations/mapm.md) | 36 | `declaration-track:9c686f35081c9d09f95a7143240b2ede6c26f25c54ef0917c2e1fdb4850e182e` |
-| 3 | `def` | [map](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/FloatArrayPublic.lean/declarations/map.md) | 44 | `declaration-track:8f37787cb4f74a2c4d4e3f07c579250269e693ace3ccc26c501fe2a084328532` |
+| 1 | `def` | [mapMUnsafe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/FloatArrayPublic.lean/declarations/mapmunsafe.md) | 21 | `declaration-track:594e5c8779497a5439c3552ce86a8fe2e2b45d8642a4846acf44ac92bee56090` |
+| 2 | `def` | [mapM](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/FloatArrayPublic.lean/declarations/mapm.md) | 36 | `declaration-track:9c686f35081c9d09f95a7143240b2ede6c26f25c54ef0917c2e1fdb4850e182e` |
+| 3 | `def` | [map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/FloatArrayPublic.lean/declarations/map.md) | 44 | `declaration-track:8f37787cb4f74a2c4d4e3f07c579250269e693ace3ccc26c501fe2a084328532` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

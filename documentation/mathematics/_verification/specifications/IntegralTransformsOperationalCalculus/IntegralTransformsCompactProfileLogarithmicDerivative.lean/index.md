@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../IntegralTransformsOperationalCalculus/IntegralTransformsCompactProfileLogarithmicDerivative.lean/index.md) · [Full source](../../../../IntegralTransformsOperationalCalculus/IntegralTransformsCompactProfileLogarithmicDerivative.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/IntegralTransformsCompactProfileLogarithmicDerivative.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/IntegralTransformsCompactProfileLogarithmicDerivative.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Inequalities.CompactProfileDifferentialBounds`](../../../../RealFunctions/InequalitiesInRealAnalysis/CompactProfileDifferentialBounds.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.IntegralTransforms.LogarithmicProfileDerivative`](../../../../IntegralTransformsOperationalCalculus/LogarithmicProfileDerivative.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Inequalities.CompactProfileDifferentialBounds`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/CompactProfileDifferentialBounds.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.IntegralTransforms.LogarithmicProfileDerivative`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/LogarithmicProfileDerivative.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_logarithmic_profile_hasDerivAt](../../../../IntegralTransformsOperationalCalculus/IntegralTransformsCompactProfileLogarithmicDerivative.lean/declarations/actual-logarithmic-profile-hasderivat.md) | 28 | `result-track:009201a68ffbcb714b75b4e3b96e82aaa68615b9dbe48e936e43f49a47b4b4ae` |
-| 2 | `theorem` | [actual_logarithmic_profile_derivative_abs_le](../../../../IntegralTransformsOperationalCalculus/IntegralTransformsCompactProfileLogarithmicDerivative.lean/declarations/actual-logarithmic-profile-derivative-abs-le.md) | 41 | `result-track:3920af326637bc5476ef97f99c20a9d75b831dfb95a444d8964c503513d1a992` |
+| 1 | `theorem` | [actual_logarithmic_profile_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/IntegralTransformsCompactProfileLogarithmicDerivative.lean/declarations/actual-logarithmic-profile-hasderivat.md) | 28 | `result-track:009201a68ffbcb714b75b4e3b96e82aaa68615b9dbe48e936e43f49a47b4b4ae` |
+| 2 | `theorem` | [actual_logarithmic_profile_derivative_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/IntegralTransformsCompactProfileLogarithmicDerivative.lean/declarations/actual-logarithmic-profile-derivative-abs-le.md) | 41 | `result-track:3920af326637bc5476ef97f99c20a9d75b831dfb95a444d8964c503513d1a992` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

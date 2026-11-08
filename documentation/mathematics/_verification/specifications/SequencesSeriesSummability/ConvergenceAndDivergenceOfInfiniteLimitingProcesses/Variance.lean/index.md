@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/Variance.lean/index.md) · [Full source](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/Variance.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/Variance.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/Variance.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [weighted_sub_sq_summable](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/Variance.lean/declarations/weighted-sub-sq-summable.md) | 7 | `result-track:3a9d49901e9f3a6041a45d770d1e518252c994a8df515ad415ca0289ad7b45f6` |
-| 2 | `lemma` | [tsum_weighted_sub_sq](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/Variance.lean/declarations/tsum-weighted-sub-sq.md) | 15 | `result-track:9d866197b8058a73c57a547fecf690df7e84aa187cea76dbd4d0e0ddddcb76f7` |
-| 3 | `lemma` | [weighted_variance_le_center](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/Variance.lean/declarations/weighted-variance-le-center.md) | 29 | `result-track:aec31b3db25b7304a5361554d3fc89f26d209f5a91a85cf6344abeae9d95ea68` |
-| 4 | `lemma` | [weighted_variance_le_tail_bound](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/Variance.lean/declarations/weighted-variance-le-tail-bound.md) | 37 | `result-track:aa1d86950e432957ca378624025e2eb55b1177e919ac43425aa714e398bacb13` |
-| 5 | `lemma` | [weighted_curvature_variance_identity](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/Variance.lean/declarations/weighted-curvature-variance-identity.md) | 54 | `result-track:fb01c4ddb3e42eb86ee4409347db9157e7ad6100d892b51d4b4813d46f187e1e` |
+| 1 | `lemma` | [weighted_sub_sq_summable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/Variance.lean/declarations/weighted-sub-sq-summable.md) | 7 | `result-track:3a9d49901e9f3a6041a45d770d1e518252c994a8df515ad415ca0289ad7b45f6` |
+| 2 | `lemma` | [tsum_weighted_sub_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/Variance.lean/declarations/tsum-weighted-sub-sq.md) | 15 | `result-track:9d866197b8058a73c57a547fecf690df7e84aa187cea76dbd4d0e0ddddcb76f7` |
+| 3 | `lemma` | [weighted_variance_le_center](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/Variance.lean/declarations/weighted-variance-le-center.md) | 29 | `result-track:aec31b3db25b7304a5361554d3fc89f26d209f5a91a85cf6344abeae9d95ea68` |
+| 4 | `lemma` | [weighted_variance_le_tail_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/Variance.lean/declarations/weighted-variance-le-tail-bound.md) | 37 | `result-track:aa1d86950e432957ca378624025e2eb55b1177e919ac43425aa714e398bacb13` |
+| 5 | `lemma` | [weighted_curvature_variance_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/Variance.lean/declarations/weighted-curvature-variance-identity.md) | 54 | `result-track:fb01c4ddb3e42eb86ee4409347db9157e7ad6100d892b51d4b4813d46f187e1e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

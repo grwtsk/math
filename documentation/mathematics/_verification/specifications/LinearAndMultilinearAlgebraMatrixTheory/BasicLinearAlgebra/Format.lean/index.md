@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Format.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Format.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Format.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Format.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Format](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Format.lean/declarations/format.md) | 14 | `declaration-track:904c31132a9f7970ede6874beebbcbec2dad70da847845ca8359e44c17568fed` |
-| 2 | `def` | [any](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Format.lean/declarations/any.md) | 20 | `declaration-track:caa92c6a9113a4217ac56c449d5df6278a7d4cf6f425d3565c4db05bc31fca33` |
-| 3 | `def` | [exact](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Format.lean/declarations/exact.md) | 24 | `declaration-track:5407446675db73d38d61cbc0bc63a7c940927b7fb3c2e8c0dd3e1cda606b1197` |
-| 4 | `def` | [intersection](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Format.lean/declarations/intersection.md) | 28 | `declaration-track:7303e9fe559e20bf662b9616689823decfad8b364210ce95213d32be16a62fdc` |
+| 1 | `structure` | [Format](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Format.lean/declarations/format.md) | 14 | `declaration-track:904c31132a9f7970ede6874beebbcbec2dad70da847845ca8359e44c17568fed` |
+| 2 | `def` | [any](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Format.lean/declarations/any.md) | 20 | `declaration-track:caa92c6a9113a4217ac56c449d5df6278a7d4cf6f425d3565c4db05bc31fca33` |
+| 3 | `def` | [exact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Format.lean/declarations/exact.md) | 24 | `declaration-track:5407446675db73d38d61cbc0bc63a7c940927b7fb3c2e8c0dd3e1cda606b1197` |
+| 4 | `def` | [intersection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Format.lean/declarations/intersection.md) | 28 | `declaration-track:7303e9fe559e20bf662b9616689823decfad8b364210ce95213d32be16a62fdc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

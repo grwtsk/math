@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Geometry/EquivarianceNamespaced.lean/index.md) · [Full source](../../../../Geometry/EquivarianceNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/EquivarianceNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/EquivarianceNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [EquivariantScheduleKernelCertificate](../../../../Geometry/EquivarianceNamespaced.lean/declarations/equivariantschedulekernelcertificate.md) | 24 | `declaration-track:891199b71f712e9cde268f0abf275ef6a22c4c63a35f5d0466006ffef2e2839b` |
-| 2 | `theorem` | [invariantLaw_automorphism_invariant](../../../../Geometry/EquivarianceNamespaced.lean/declarations/invariantlaw-automorphism-invariant.md) | 68 | `result-track:cf09a4497091830ace7b467b450aa8d738fccc0a523171933da23550d2c39d2b` |
-| 3 | `theorem` | [iterateLaw_automorphism_equivariant](../../../../Geometry/EquivarianceNamespaced.lean/declarations/iteratelaw-automorphism-equivariant.md) | 87 | `result-track:9c0a8e897c18ec53d9b2858b40dcc26cdf966db9318e7f5c3d9d7721cef4cc8b` |
-| 4 | `theorem` | [automorphism_distance_to_boundary](../../../../Geometry/EquivarianceNamespaced.lean/declarations/automorphism-distance-to-boundary.md) | 129 | `result-track:c23c2f425bd0b657e30653d1c9245405ec4b81f5a22375edc517ebfbe584ef5a` |
-| 5 | `theorem` | [automorphism_related_traversals_wasserstein_le](../../../../Geometry/EquivarianceNamespaced.lean/declarations/automorphism-related-traversals-wasserstein-le.md) | 165 | `result-track:b68a3aa8706aa133ae4c031c3d817e540ee578179b7f410417a427dad7ef3f10` |
+| 1 | `structure` | [EquivariantScheduleKernelCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/EquivarianceNamespaced.lean/declarations/equivariantschedulekernelcertificate.md) | 24 | `declaration-track:891199b71f712e9cde268f0abf275ef6a22c4c63a35f5d0466006ffef2e2839b` |
+| 2 | `theorem` | [invariantLaw_automorphism_invariant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/EquivarianceNamespaced.lean/declarations/invariantlaw-automorphism-invariant.md) | 68 | `result-track:cf09a4497091830ace7b467b450aa8d738fccc0a523171933da23550d2c39d2b` |
+| 3 | `theorem` | [iterateLaw_automorphism_equivariant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/EquivarianceNamespaced.lean/declarations/iteratelaw-automorphism-equivariant.md) | 87 | `result-track:9c0a8e897c18ec53d9b2858b40dcc26cdf966db9318e7f5c3d9d7721cef4cc8b` |
+| 4 | `theorem` | [automorphism_distance_to_boundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/EquivarianceNamespaced.lean/declarations/automorphism-distance-to-boundary.md) | 129 | `result-track:c23c2f425bd0b657e30653d1c9245405ec4b81f5a22375edc517ebfbe584ef5a` |
+| 5 | `theorem` | [automorphism_related_traversals_wasserstein_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/EquivarianceNamespaced.lean/declarations/automorphism-related-traversals-wasserstein-le.md) | 165 | `result-track:b68a3aa8706aa133ae4c031c3d817e540ee578179b7f410417a427dad7ef3f10` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

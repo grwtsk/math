@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FieldTheoryAndPolynomials/FieldExtensions/AbelianPublic.lean/index.md) · [Full source](../../../../../FieldTheoryAndPolynomials/FieldExtensions/AbelianPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldExtensions/AbelianPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldExtensions/AbelianPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [IsAbelianGalois](../../../../../FieldTheoryAndPolynomials/FieldExtensions/AbelianPublic.lean/declarations/isabeliangalois.md) | 25 | `declaration-track:50f898fa0cec1908b8a8a7340325474c152b833a277c30ca124c5f8b5ce10891` |
-| 2 | `lemma` | [IsAbelianGalois.tower_bot](../../../../../FieldTheoryAndPolynomials/FieldExtensions/AbelianPublic.lean/declarations/isabeliangalois-tower-bot.md) | 29 | `result-track:d00a8a7b57dca66bfaf416a47e4d170e24240bc41c7ab170424b1e6e8c8a8669` |
-| 3 | `lemma` | [IsAbelianGalois.tower_top](../../../../../FieldTheoryAndPolynomials/FieldExtensions/AbelianPublic.lean/declarations/isabeliangalois-tower-top.md) | 42 | `result-track:f99e2d467bd38f9e0674ece5a11f6659bbeed70228370f6a6c052e6590361c74` |
-| 4 | `lemma` | [IsAbelianGalois.of_algHom](../../../../../FieldTheoryAndPolynomials/FieldExtensions/AbelianPublic.lean/declarations/isabeliangalois-of-alghom.md) | 50 | `result-track:f5d09981d7f85783411dd3ca4f2566c3da6277367769c57eeec52b9643cb5659` |
-| 5 | `instance` | [(anonymous)](../../../../../FieldTheoryAndPolynomials/FieldExtensions/AbelianPublic.lean/declarations/instance-source-edition-2.md) | 56 | `declaration-track:5f43f3e0dff869f860d19e76622b7264f70be2454b549aae36e82babeeadff7c` |
-| 6 | `instance` | [(anonymous)](../../../../../FieldTheoryAndPolynomials/FieldExtensions/AbelianPublic.lean/declarations/instance.md) | 59 | `declaration-track:096cbc7a975950f5e32fca033d6b44493d11b73e92e35970f6dbd71ad6cb86d9` |
-| 7 | `instance` | [(anonymous)](../../../../../FieldTheoryAndPolynomials/FieldExtensions/AbelianPublic.lean/declarations/instance-source-edition-3.md) | 63 | `declaration-track:6fe195aeda6060e8e62ce34f551e9cca2669caf20308e80abea8a55fbf83a22a` |
-| 8 | `instance` | [(anonymous)](../../../../../FieldTheoryAndPolynomials/FieldExtensions/AbelianPublic.lean/declarations/instance-source-edition-4.md) | 66 | `declaration-track:d6dc1984c0db923e1f21084d2be0399b6a9f09e3a81ecd5a27d8f67468d061a5` |
-| 9 | `lemma` | [IsAbelianGalois.of_isCyclic](../../../../../FieldTheoryAndPolynomials/FieldExtensions/AbelianPublic.lean/declarations/isabeliangalois-of-iscyclic.md) | 69 | `result-track:579fefb9b24f23e1b810b6c472eba2e33d2fb982a05e3a508331fde8edf8729b` |
-| 10 | `instance` | [IsAbelianGalois.sup](../../../../../FieldTheoryAndPolynomials/FieldExtensions/AbelianPublic.lean/declarations/isabeliangalois-sup.md) | 73 | `declaration-track:8f728b21ab9ffd19c75ab9fe83992a1e0ecb0b090c485642a47425e897b0602a` |
+| 1 | `class` | [IsAbelianGalois](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldExtensions/AbelianPublic.lean/declarations/isabeliangalois.md) | 25 | `declaration-track:50f898fa0cec1908b8a8a7340325474c152b833a277c30ca124c5f8b5ce10891` |
+| 2 | `lemma` | [IsAbelianGalois.tower_bot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldExtensions/AbelianPublic.lean/declarations/isabeliangalois-tower-bot.md) | 29 | `result-track:d00a8a7b57dca66bfaf416a47e4d170e24240bc41c7ab170424b1e6e8c8a8669` |
+| 3 | `lemma` | [IsAbelianGalois.tower_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldExtensions/AbelianPublic.lean/declarations/isabeliangalois-tower-top.md) | 42 | `result-track:f99e2d467bd38f9e0674ece5a11f6659bbeed70228370f6a6c052e6590361c74` |
+| 4 | `lemma` | [IsAbelianGalois.of_algHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldExtensions/AbelianPublic.lean/declarations/isabeliangalois-of-alghom.md) | 50 | `result-track:f5d09981d7f85783411dd3ca4f2566c3da6277367769c57eeec52b9643cb5659` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldExtensions/AbelianPublic.lean/declarations/instance-source-edition-2.md) | 56 | `declaration-track:5f43f3e0dff869f860d19e76622b7264f70be2454b549aae36e82babeeadff7c` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldExtensions/AbelianPublic.lean/declarations/instance.md) | 59 | `declaration-track:096cbc7a975950f5e32fca033d6b44493d11b73e92e35970f6dbd71ad6cb86d9` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldExtensions/AbelianPublic.lean/declarations/instance-source-edition-3.md) | 63 | `declaration-track:6fe195aeda6060e8e62ce34f551e9cca2669caf20308e80abea8a55fbf83a22a` |
+| 8 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldExtensions/AbelianPublic.lean/declarations/instance-source-edition-4.md) | 66 | `declaration-track:d6dc1984c0db923e1f21084d2be0399b6a9f09e3a81ecd5a27d8f67468d061a5` |
+| 9 | `lemma` | [IsAbelianGalois.of_isCyclic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldExtensions/AbelianPublic.lean/declarations/isabeliangalois-of-iscyclic.md) | 69 | `result-track:579fefb9b24f23e1b810b6c472eba2e33d2fb982a05e3a508331fde8edf8729b` |
+| 10 | `instance` | [IsAbelianGalois.sup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/FieldExtensions/AbelianPublic.lean/declarations/isabeliangalois-sup.md) | 73 | `declaration-track:8f728b21ab9ffd19c75ab9fe83992a1e0ecb0b090c485642a47425e897b0602a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

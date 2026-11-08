@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/AbsorptionNamespaced.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/AbsorptionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AbsorptionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AbsorptionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [join_absorption](../../../../AssociativeRingsAndAlgebras/AbsorptionNamespaced.lean/declarations/join-absorption.md) | 22 | `result-track:e7305794e80b2f809bd872c48cd5277d254b4c568755c6705e1ecdf555cf5e0c` |
-| 2 | `theorem` | [meet_absorption](../../../../AssociativeRingsAndAlgebras/AbsorptionNamespaced.lean/declarations/meet-absorption.md) | 25 | `result-track:1d88147748310555f4b7307b9bdc68cc5cec058ddaf8a9166014640ae447ed95` |
-| 3 | `theorem` | [join_left_commutative](../../../../AssociativeRingsAndAlgebras/AbsorptionNamespaced.lean/declarations/join-left-commutative.md) | 28 | `result-track:295c72ad92a466909973cf76e8950a4eb9b004d87cc6815e0cbe0069118586b8` |
-| 4 | `theorem` | [meet_left_commutative](../../../../AssociativeRingsAndAlgebras/AbsorptionNamespaced.lean/declarations/meet-left-commutative.md) | 32 | `result-track:c1529f763857d3c6c9ae4ecee15d2baa5d70018afebb219d1d56fbd8e7f7e43f` |
+| 1 | `theorem` | [join_absorption](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AbsorptionNamespaced.lean/declarations/join-absorption.md) | 22 | `result-track:e7305794e80b2f809bd872c48cd5277d254b4c568755c6705e1ecdf555cf5e0c` |
+| 2 | `theorem` | [meet_absorption](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AbsorptionNamespaced.lean/declarations/meet-absorption.md) | 25 | `result-track:1d88147748310555f4b7307b9bdc68cc5cec058ddaf8a9166014640ae447ed95` |
+| 3 | `theorem` | [join_left_commutative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AbsorptionNamespaced.lean/declarations/join-left-commutative.md) | 28 | `result-track:295c72ad92a466909973cf76e8950a4eb9b004d87cc6815e0cbe0069118586b8` |
+| 4 | `theorem` | [meet_left_commutative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AbsorptionNamespaced.lean/declarations/meet-left-commutative.md) | 32 | `result-track:c1529f763857d3c6c9ae4ecee15d2baa5d70018afebb219d1d56fbd8e7f7e43f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

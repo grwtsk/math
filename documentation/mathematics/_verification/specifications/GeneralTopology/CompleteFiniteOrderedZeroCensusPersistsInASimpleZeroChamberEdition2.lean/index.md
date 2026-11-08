@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/CompleteFiniteOrderedZeroCensusPersistsInASimpleZeroChamberEdition2.lean/index.md) · [Full source](../../../../GeneralTopology/CompleteFiniteOrderedZeroCensusPersistsInASimpleZeroChamberEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompleteFiniteOrderedZeroCensusPersistsInASimpleZeroChamberEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompleteFiniteOrderedZeroCensusPersistsInASimpleZeroChamberEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [complete_ordered_zero_census_persists](../../../../GeneralTopology/CompleteFiniteOrderedZeroCensusPersistsInASimpleZeroChamberEdition2.lean/declarations/complete-ordered-zero-census-persists.md) | 23 | `result-track:a7c796307d14220cb03a6a3e30f510933330877026e829f5cca90984030d53d8` |
+| 1 | `theorem` | [complete_ordered_zero_census_persists](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompleteFiniteOrderedZeroCensusPersistsInASimpleZeroChamberEdition2.lean/declarations/complete-ordered-zero-census-persists.md) | 23 | `result-track:a7c796307d14220cb03a6a3e30f510933330877026e829f5cca90984030d53d8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

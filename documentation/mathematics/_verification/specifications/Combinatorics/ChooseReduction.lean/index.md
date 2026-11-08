@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ChooseReduction.lean/index.md) · [Full source](../../../../Combinatorics/ChooseReduction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ChooseReduction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ChooseReduction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,24 +57,24 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [foo](../../../../Combinatorics/ChooseReduction.lean/declarations/foo-source-edition-3.md) | 11 | `result-track:8a1c0b4bb116f54383af07fca5f6b390e247b7460b4752b9e1224738a9fc82dd` |
-| 2 | `example` | [(anonymous)](../../../../Combinatorics/ChooseReduction.lean/declarations/example-source-edition-14.md) | 15 | `declaration-track:f11dd4c38eb9c41b5831657284385960825691e7aaebc2d71cb8ed72c3912263` |
-| 3 | `example` | [(anonymous)](../../../../Combinatorics/ChooseReduction.lean/declarations/example-source-edition-10.md) | 16 | `declaration-track:c09c3e768378b7905dfa39c8f49968f9f0206fffc9c66ca308191d4102ca59b2` |
-| 4 | `example` | [(anonymous)](../../../../Combinatorics/ChooseReduction.lean/declarations/example-source-edition-9.md) | 17 | `declaration-track:b8bf4af7b2adf4d63d53bec7bafbb052202a97e2856c79ee9f324121df4dabfa` |
-| 5 | `example` | [(anonymous)](../../../../Combinatorics/ChooseReduction.lean/declarations/example-source-edition-11.md) | 18 | `declaration-track:c58f8e72c3ae075d2462d14e89c6d0ec9c5ff822c01a0c09eb73776cc515db9b` |
-| 6 | `example` | [(anonymous)](../../../../Combinatorics/ChooseReduction.lean/declarations/example.md) | 19 | `declaration-track:0c7c3834d5a8a1229e0f9544d4406fc0b65aef4fe937f77d674c0ba8538bd088` |
-| 7 | `lemma` | [foo](../../../../Combinatorics/ChooseReduction.lean/declarations/foo.md) | 25 | `result-track:398bd2ff564f5119a45a5363c95d53d038c1ea845f4add18f4a1a1cef5ec2f0b` |
-| 8 | `example` | [(anonymous)](../../../../Combinatorics/ChooseReduction.lean/declarations/example-source-edition-2.md) | 29 | `declaration-track:24369bbc9daf9fc5f3b98685cbce500e4a0b8d33190f203359ee4d61307eadba` |
-| 9 | `example` | [(anonymous)](../../../../Combinatorics/ChooseReduction.lean/declarations/example-source-edition-7.md) | 30 | `declaration-track:70c4702c477c0fa013c8c23cf3dffc2c214fc46b1e49edfcb11e8dad0ecb2729` |
-| 10 | `example` | [(anonymous)](../../../../Combinatorics/ChooseReduction.lean/declarations/example-source-edition-5.md) | 31 | `declaration-track:462fe789cc77a0c3ccaea291d6ecb1c53cdf7a010ad4abdca3ad041390d82c15` |
-| 11 | `example` | [(anonymous)](../../../../Combinatorics/ChooseReduction.lean/declarations/example-source-edition-4.md) | 32 | `declaration-track:44574184c7dcb6bb5701978d7d7af44b3840036b8cbf7784fa0eeca5570ad124` |
-| 12 | `example` | [(anonymous)](../../../../Combinatorics/ChooseReduction.lean/declarations/example-source-edition-13.md) | 33 | `declaration-track:d8d6c1defdcbe43755568eaed209838a62653d363696a4d5973fd21b174511e2` |
-| 13 | `lemma` | [foo](../../../../Combinatorics/ChooseReduction.lean/declarations/foo-source-edition-2.md) | 39 | `result-track:60af572e516f6a1b93bde5206080b556d5cf5602be644de0ed3dbafe5694aecf` |
-| 14 | `example` | [(anonymous)](../../../../Combinatorics/ChooseReduction.lean/declarations/example-source-edition-15.md) | 43 | `declaration-track:fbe504afece8de79a765b12494e0d9d7eafacaaf0136c4fe2b3418305b34cff7` |
-| 15 | `example` | [(anonymous)](../../../../Combinatorics/ChooseReduction.lean/declarations/example-source-edition-3.md) | 44 | `declaration-track:3874b0467a106629e59f2cab8b5a88938bd70e4b2f5e2492cad54b255f600828` |
-| 16 | `example` | [(anonymous)](../../../../Combinatorics/ChooseReduction.lean/declarations/example-source-edition-12.md) | 45 | `declaration-track:cfb9acb198e8c5cfa362db7ca98e5d0178284be46480c2a09f2fc9c16791ffaf` |
-| 17 | `example` | [(anonymous)](../../../../Combinatorics/ChooseReduction.lean/declarations/example-source-edition-8.md) | 46 | `declaration-track:7da3d822ac542db10f545d7448d8ae087bb37534e67df6662fb5c55e663a611b` |
-| 18 | `example` | [(anonymous)](../../../../Combinatorics/ChooseReduction.lean/declarations/example-source-edition-6.md) | 47 | `declaration-track:6b2798845a563d0fe98f0ed86a1d63b4f85ceee6fc929f4f6c3c888ee8443fc0` |
+| 1 | `lemma` | [foo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ChooseReduction.lean/declarations/foo-source-edition-3.md) | 11 | `result-track:8a1c0b4bb116f54383af07fca5f6b390e247b7460b4752b9e1224738a9fc82dd` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ChooseReduction.lean/declarations/example-source-edition-14.md) | 15 | `declaration-track:f11dd4c38eb9c41b5831657284385960825691e7aaebc2d71cb8ed72c3912263` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ChooseReduction.lean/declarations/example-source-edition-10.md) | 16 | `declaration-track:c09c3e768378b7905dfa39c8f49968f9f0206fffc9c66ca308191d4102ca59b2` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ChooseReduction.lean/declarations/example-source-edition-9.md) | 17 | `declaration-track:b8bf4af7b2adf4d63d53bec7bafbb052202a97e2856c79ee9f324121df4dabfa` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ChooseReduction.lean/declarations/example-source-edition-11.md) | 18 | `declaration-track:c58f8e72c3ae075d2462d14e89c6d0ec9c5ff822c01a0c09eb73776cc515db9b` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ChooseReduction.lean/declarations/example.md) | 19 | `declaration-track:0c7c3834d5a8a1229e0f9544d4406fc0b65aef4fe937f77d674c0ba8538bd088` |
+| 7 | `lemma` | [foo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ChooseReduction.lean/declarations/foo.md) | 25 | `result-track:398bd2ff564f5119a45a5363c95d53d038c1ea845f4add18f4a1a1cef5ec2f0b` |
+| 8 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ChooseReduction.lean/declarations/example-source-edition-2.md) | 29 | `declaration-track:24369bbc9daf9fc5f3b98685cbce500e4a0b8d33190f203359ee4d61307eadba` |
+| 9 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ChooseReduction.lean/declarations/example-source-edition-7.md) | 30 | `declaration-track:70c4702c477c0fa013c8c23cf3dffc2c214fc46b1e49edfcb11e8dad0ecb2729` |
+| 10 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ChooseReduction.lean/declarations/example-source-edition-5.md) | 31 | `declaration-track:462fe789cc77a0c3ccaea291d6ecb1c53cdf7a010ad4abdca3ad041390d82c15` |
+| 11 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ChooseReduction.lean/declarations/example-source-edition-4.md) | 32 | `declaration-track:44574184c7dcb6bb5701978d7d7af44b3840036b8cbf7784fa0eeca5570ad124` |
+| 12 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ChooseReduction.lean/declarations/example-source-edition-13.md) | 33 | `declaration-track:d8d6c1defdcbe43755568eaed209838a62653d363696a4d5973fd21b174511e2` |
+| 13 | `lemma` | [foo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ChooseReduction.lean/declarations/foo-source-edition-2.md) | 39 | `result-track:60af572e516f6a1b93bde5206080b556d5cf5602be644de0ed3dbafe5694aecf` |
+| 14 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ChooseReduction.lean/declarations/example-source-edition-15.md) | 43 | `declaration-track:fbe504afece8de79a765b12494e0d9d7eafacaaf0136c4fe2b3418305b34cff7` |
+| 15 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ChooseReduction.lean/declarations/example-source-edition-3.md) | 44 | `declaration-track:3874b0467a106629e59f2cab8b5a88938bd70e4b2f5e2492cad54b255f600828` |
+| 16 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ChooseReduction.lean/declarations/example-source-edition-12.md) | 45 | `declaration-track:cfb9acb198e8c5cfa362db7ca98e5d0178284be46480c2a09f2fc9c16791ffaf` |
+| 17 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ChooseReduction.lean/declarations/example-source-edition-8.md) | 46 | `declaration-track:7da3d822ac542db10f545d7448d8ae087bb37534e67df6662fb5c55e663a611b` |
+| 18 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ChooseReduction.lean/declarations/example-source-edition-6.md) | 47 | `declaration-track:6b2798845a563d0fe98f0ed86a1d63b4f85ceee6fc929f4f6c3c888ee8443fc0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FoundationNamespacedWrapperIsNotTheoremAuthority.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FoundationNamespacedWrapperIsNotTheoremAuthority.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FoundationNamespacedWrapperIsNotTheoremAuthority.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FoundationNamespacedWrapperIsNotTheoremAuthority.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [wrapper_is_not_theorem_authority](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FoundationNamespacedWrapperIsNotTheoremAuthority.lean/declarations/wrapper-is-not-theorem-authority.md) | 21 | `result-track:721d17f8e3ac8e96c484f2064f524574b9dbca9c90f506ad9d60d7d5b3c47de9` |
+| 1 | `theorem` | [wrapper_is_not_theorem_authority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FoundationNamespacedWrapperIsNotTheoremAuthority.lean/declarations/wrapper-is-not-theorem-authority.md) | 21 | `result-track:721d17f8e3ac8e96c484f2064f524574b9dbca9c90f506ad9d60d7d5b3c47de9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Boundary.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Boundary.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Boundary.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Boundary.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [placements](../../../../../ComputerScience/AlgorithmsInComputerScience/Boundary.lean/declarations/placements.md) | 7 | `declaration-track:ebb771862d97eabbacb381b53c92a4ba51b563a31eee3994a064fa1c52d506ac` |
-| 2 | `theorem` | [placements_count](../../../../../ComputerScience/AlgorithmsInComputerScience/Boundary.lean/declarations/placements-count.md) | 10 | `result-track:74d290d4b7e6acaa4d1c0e6229ef2e1e119b0f9ccf06669dbff01354c4cafac8` |
-| 3 | `theorem` | [placements_centerControlled](../../../../../ComputerScience/AlgorithmsInComputerScience/Boundary.lean/declarations/placements-centercontrolled.md) | 14 | `result-track:bb966d225434f34032775d4699896a61e558c60a8f5650797ba3904e797b18e3` |
+| 1 | `def` | [placements](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Boundary.lean/declarations/placements.md) | 7 | `declaration-track:ebb771862d97eabbacb381b53c92a4ba51b563a31eee3994a064fa1c52d506ac` |
+| 2 | `theorem` | [placements_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Boundary.lean/declarations/placements-count.md) | 10 | `result-track:74d290d4b7e6acaa4d1c0e6229ef2e1e119b0f9ccf06669dbff01354c4cafac8` |
+| 3 | `theorem` | [placements_centerControlled](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Boundary.lean/declarations/placements-centercontrolled.md) | 14 | `result-track:bb966d225434f34032775d4699896a61e558c60a8f5650797ba3904e797b18e3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

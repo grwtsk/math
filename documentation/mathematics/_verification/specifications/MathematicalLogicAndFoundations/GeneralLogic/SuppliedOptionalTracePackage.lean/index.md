@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuppliedOptionalTracePackage.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuppliedOptionalTracePackage.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuppliedOptionalTracePackage.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuppliedOptionalTracePackage.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,8 +61,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [IndexSpectralTraceIdentity](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuppliedOptionalTracePackage.lean/declarations/indexspectraltraceidentity.md) | 47 | `declaration-track:1749effc8fc3d5eea2b5e78c085bd334e2230556d70be1e2afe3469a52ad84e5` |
-| 2 | `theorem` | [index_spectral_trace_identity_holds](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuppliedOptionalTracePackage.lean/declarations/index-spectral-trace-identity-holds.md) | 56 | `result-track:107a188fa9008a293a65619bd7da1c7bc8f5c4432340dac5a4e47b9cdd6d76bd` |
+| 1 | `structure` | [IndexSpectralTraceIdentity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuppliedOptionalTracePackage.lean/declarations/indexspectraltraceidentity.md) | 47 | `declaration-track:1749effc8fc3d5eea2b5e78c085bd334e2230556d70be1e2afe3469a52ad84e5` |
+| 2 | `theorem` | [index_spectral_trace_identity_holds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuppliedOptionalTracePackage.lean/declarations/index-spectral-trace-identity-holds.md) | 56 | `result-track:107a188fa9008a293a65619bd7da1c7bc8f5c4432340dac5a4e47b9cdd6d76bd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

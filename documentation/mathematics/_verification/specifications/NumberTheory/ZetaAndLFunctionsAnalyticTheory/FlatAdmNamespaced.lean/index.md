@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FlatAdmNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FlatAdmNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FlatAdmNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FlatAdmNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [admWindow_taperPhi](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FlatAdmNamespaced.lean/declarations/admwindow-taperphi.md) | 37 | `result-track:35869bba3d2325432c0eebc227c9bfef83e4be1b4ee6633ed05ceed3f4ad0b8a` |
-| 2 | `theorem` | [admWindow_taper](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FlatAdmNamespaced.lean/declarations/admwindow-taper.md) | 55 | `result-track:6335eb5fe5aac33073eee46452021b790e65e0af8a09af2392fd358d51efa8df` |
-| 3 | `theorem` | [av_taper](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FlatAdmNamespaced.lean/declarations/av-taper.md) | 63 | `result-track:ee46cf223d50f70662f59203d8ee189d3bf9d12e526041411ecc2a430cdc47f6` |
-| 4 | `theorem` | [bv_taper](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FlatAdmNamespaced.lean/declarations/bv-taper.md) | 64 | `result-track:9fca2153d51e868ef1ea43495d4669ca07cfd946f70be318899ed9a65d07a85b` |
-| 5 | `theorem` | [gv_taper](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FlatAdmNamespaced.lean/declarations/gv-taper.md) | 65 | `result-track:0c5528f936db31a9e7d28417c9b617a578f71bda306594d54f9eab77928b4689` |
-| 6 | `theorem` | [half_le_bv_taper](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FlatAdmNamespaced.lean/declarations/half-le-bv-taper.md) | 68 | `result-track:9f7f279fbacf88226ff32f9e316725444813bc205a43226d4098bc9b0270c801` |
-| 7 | `theorem` | [admFamily_taper](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FlatAdmNamespaced.lean/declarations/admfamily-taper.md) | 74 | `result-track:54bb0542ac65e3210976c3323d69b338926007f8697eb4a9d54d11b8b7e1cd39` |
+| 1 | `theorem` | [admWindow_taperPhi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FlatAdmNamespaced.lean/declarations/admwindow-taperphi.md) | 37 | `result-track:35869bba3d2325432c0eebc227c9bfef83e4be1b4ee6633ed05ceed3f4ad0b8a` |
+| 2 | `theorem` | [admWindow_taper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FlatAdmNamespaced.lean/declarations/admwindow-taper.md) | 55 | `result-track:6335eb5fe5aac33073eee46452021b790e65e0af8a09af2392fd358d51efa8df` |
+| 3 | `theorem` | [av_taper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FlatAdmNamespaced.lean/declarations/av-taper.md) | 63 | `result-track:ee46cf223d50f70662f59203d8ee189d3bf9d12e526041411ecc2a430cdc47f6` |
+| 4 | `theorem` | [bv_taper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FlatAdmNamespaced.lean/declarations/bv-taper.md) | 64 | `result-track:9fca2153d51e868ef1ea43495d4669ca07cfd946f70be318899ed9a65d07a85b` |
+| 5 | `theorem` | [gv_taper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FlatAdmNamespaced.lean/declarations/gv-taper.md) | 65 | `result-track:0c5528f936db31a9e7d28417c9b617a578f71bda306594d54f9eab77928b4689` |
+| 6 | `theorem` | [half_le_bv_taper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FlatAdmNamespaced.lean/declarations/half-le-bv-taper.md) | 68 | `result-track:9f7f279fbacf88226ff32f9e316725444813bc205a43226d4098bc9b0270c801` |
+| 7 | `theorem` | [admFamily_taper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FlatAdmNamespaced.lean/declarations/admfamily-taper.md) | 74 | `result-track:54bb0542ac65e3210976c3323d69b338926007f8697eb4a9d54d11b8b7e1cd39` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

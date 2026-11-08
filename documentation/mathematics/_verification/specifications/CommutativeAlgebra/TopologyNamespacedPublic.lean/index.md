@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/TopologyNamespacedPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/TopologyNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TopologyNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TopologyNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [IsAdic.isHausdorff_iff](../../../../CommutativeAlgebra/TopologyNamespacedPublic.lean/declarations/isadic-ishausdorff-iff.md) | 39 | `result-track:b612da3ec8b72604a6e31ff2c31b7251cddb2f1d3733ccbf399e4b6a691d6ca8` |
-| 2 | `lemma` | [IsAdic.isPrecomplete_iff](../../../../CommutativeAlgebra/TopologyNamespacedPublic.lean/declarations/isadic-isprecomplete-iff.md) | 54 | `result-track:1afd9c03587c3c47790340fc01507e2bf7d137d13db29b26672d769d7ffd624e` |
-| 3 | `lemma` | [IsAdic.isAdicComplete_iff](../../../../CommutativeAlgebra/TopologyNamespacedPublic.lean/declarations/isadic-isadiccomplete-iff.md) | 84 | `result-track:2da74ac397814e08a082b40ed8e4ac8aed1203344485f2ca4b3177a172fdf124` |
-| 4 | `theorem` | [IsPrecomplete.congr_ringEquiv](../../../../CommutativeAlgebra/TopologyNamespacedPublic.lean/declarations/isprecomplete-congr-ringequiv.md) | 93 | `result-track:f754d7a4f356bc16e8fa1863e29cab14c9db536e8d5e76bad0ef152d0a801945` |
-| 5 | `theorem` | [IsHausdorff.congr_ringEquiv](../../../../CommutativeAlgebra/TopologyNamespacedPublic.lean/declarations/ishausdorff-congr-ringequiv.md) | 100 | `result-track:23e4a47a71174753e2d78fe94483ed45cd82247179ed2cc9ba4265e9aeebaa6a` |
-| 6 | `theorem` | [IsAdicComplete.congr_ringEquiv](../../../../CommutativeAlgebra/TopologyNamespacedPublic.lean/declarations/isadiccomplete-congr-ringequiv.md) | 107 | `result-track:025ea76cdd681a486bff163aed4e8339b6a70dc6d702395e28f522398fffb2ed` |
+| 1 | `lemma` | [IsAdic.isHausdorff_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TopologyNamespacedPublic.lean/declarations/isadic-ishausdorff-iff.md) | 39 | `result-track:b612da3ec8b72604a6e31ff2c31b7251cddb2f1d3733ccbf399e4b6a691d6ca8` |
+| 2 | `lemma` | [IsAdic.isPrecomplete_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TopologyNamespacedPublic.lean/declarations/isadic-isprecomplete-iff.md) | 54 | `result-track:1afd9c03587c3c47790340fc01507e2bf7d137d13db29b26672d769d7ffd624e` |
+| 3 | `lemma` | [IsAdic.isAdicComplete_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TopologyNamespacedPublic.lean/declarations/isadic-isadiccomplete-iff.md) | 84 | `result-track:2da74ac397814e08a082b40ed8e4ac8aed1203344485f2ca4b3177a172fdf124` |
+| 4 | `theorem` | [IsPrecomplete.congr_ringEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TopologyNamespacedPublic.lean/declarations/isprecomplete-congr-ringequiv.md) | 93 | `result-track:f754d7a4f356bc16e8fa1863e29cab14c9db536e8d5e76bad0ef152d0a801945` |
+| 5 | `theorem` | [IsHausdorff.congr_ringEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TopologyNamespacedPublic.lean/declarations/ishausdorff-congr-ringequiv.md) | 100 | `result-track:23e4a47a71174753e2d78fe94483ed45cd82247179ed2cc9ba4265e9aeebaa6a` |
+| 6 | `theorem` | [IsAdicComplete.congr_ringEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/TopologyNamespacedPublic.lean/declarations/isadiccomplete-congr-ringequiv.md) | 107 | `result-track:025ea76cdd681a486bff163aed4e8339b6a70dc6d702395e28f522398fffb2ed` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

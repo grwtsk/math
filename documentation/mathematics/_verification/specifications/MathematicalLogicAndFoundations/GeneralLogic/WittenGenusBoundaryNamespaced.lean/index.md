@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WittenGenusBoundaryNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WittenGenusBoundaryNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WittenGenusBoundaryNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WittenGenusBoundaryNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [WittenGenusIndexBoundary](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WittenGenusBoundaryNamespaced.lean/declarations/wittengenusindexboundary.md) | 28 | `declaration-track:3d1e1f4b5274a4cfba665b9e00276f99e641ffc14987168d92801eea49ccec1d` |
-| 2 | `theorem` | [witten_genus_refines_ahat_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WittenGenusBoundaryNamespaced.lean/declarations/witten-genus-refines-ahat-if-supplied.md) | 39 | `result-track:104348355e742f4a45ed3359bad4e67859f2bb90d3541b52fad17bdf7adcb64e` |
-| 3 | `theorem` | [witten_genus_requires_string_orientation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WittenGenusBoundaryNamespaced.lean/declarations/witten-genus-requires-string-orientation.md) | 45 | `result-track:fb432731301f55d6963e081da833bc455d16bccb118358e5acaf8d84eaa0d83a` |
+| 1 | `structure` | [WittenGenusIndexBoundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WittenGenusBoundaryNamespaced.lean/declarations/wittengenusindexboundary.md) | 28 | `declaration-track:3d1e1f4b5274a4cfba665b9e00276f99e641ffc14987168d92801eea49ccec1d` |
+| 2 | `theorem` | [witten_genus_refines_ahat_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WittenGenusBoundaryNamespaced.lean/declarations/witten-genus-refines-ahat-if-supplied.md) | 39 | `result-track:104348355e742f4a45ed3359bad4e67859f2bb90d3541b52fad17bdf7adcb64e` |
+| 3 | `theorem` | [witten_genus_requires_string_orientation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WittenGenusBoundaryNamespaced.lean/declarations/witten-genus-requires-string-orientation.md) | 45 | `result-track:fb432731301f55d6963e081da833bc455d16bccb118358e5acaf8d84eaa0d83a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

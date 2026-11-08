@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SourceActualEulerFrequencyCancellationNamespacedEdition3.lean/index.md) · [Full source](../../../../GeneralTopology/SourceActualEulerFrequencyCancellationNamespacedEdition3.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceActualEulerFrequencyCancellationNamespacedEdition3.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceActualEulerFrequencyCancellationNamespacedEdition3.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [residual_abs_le_mass](../../../../GeneralTopology/SourceActualEulerFrequencyCancellationNamespacedEdition3.lean/declarations/residual-abs-le-mass.md) | 30 | `result-track:4d30f945260ee03f99dd30808518a4f6c3a655aea2b2df13f7270525bd0e662c` |
-| 2 | `theorem` | [whole_head_abs_le](../../../../GeneralTopology/SourceActualEulerFrequencyCancellationNamespacedEdition3.lean/declarations/whole-head-abs-le.md) | 38 | `result-track:5d95b4f459edc319d604dfcba0c7f9640f10573ffd0f787e70ecf930a2cdfb15` |
-| 3 | `theorem` | [actualCentralFrequencyMass_eventually_pos](../../../../GeneralTopology/SourceActualEulerFrequencyCancellationNamespacedEdition3.lean/declarations/actualcentralfrequencymass-eventually-pos.md) | 73 | `result-track:d46c28ca06ab7cff5ba145750a5164aa845455b5350e29da75b912765d529f67` |
-| 4 | `theorem` | [actualComplementaryFrequencyRatio_eventually_abs_le](../../../../GeneralTopology/SourceActualEulerFrequencyCancellationNamespacedEdition3.lean/declarations/actualcomplementaryfrequencyratio-eventually-abs-le.md) | 83 | `result-track:bd2101b288cdb3fedc0f47857ea56f7437f0729626535af4c243890823171ec8` |
-| 5 | `theorem` | [actualComplementaryFrequencyRatio_centered_tendsto_zero](../../../../GeneralTopology/SourceActualEulerFrequencyCancellationNamespacedEdition3.lean/declarations/actualcomplementaryfrequencyratio-centered-tendsto-zero.md) | 125 | `result-track:cb1ee0918d2b413c650d0e1ad07acc0be208e77d8144318dba233a0fa30458f7` |
-| 6 | `theorem` | [actualComplementaryFrequencyRatio_tendsto_neg_one](../../../../GeneralTopology/SourceActualEulerFrequencyCancellationNamespacedEdition3.lean/declarations/actualcomplementaryfrequencyratio-tendsto-neg-one.md) | 148 | `result-track:f385b30ee04e482990c1d118dcc77c4a7a223f0172c55ca40d7582df647b7787` |
+| 1 | `theorem` | [residual_abs_le_mass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceActualEulerFrequencyCancellationNamespacedEdition3.lean/declarations/residual-abs-le-mass.md) | 30 | `result-track:4d30f945260ee03f99dd30808518a4f6c3a655aea2b2df13f7270525bd0e662c` |
+| 2 | `theorem` | [whole_head_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceActualEulerFrequencyCancellationNamespacedEdition3.lean/declarations/whole-head-abs-le.md) | 38 | `result-track:5d95b4f459edc319d604dfcba0c7f9640f10573ffd0f787e70ecf930a2cdfb15` |
+| 3 | `theorem` | [actualCentralFrequencyMass_eventually_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceActualEulerFrequencyCancellationNamespacedEdition3.lean/declarations/actualcentralfrequencymass-eventually-pos.md) | 73 | `result-track:d46c28ca06ab7cff5ba145750a5164aa845455b5350e29da75b912765d529f67` |
+| 4 | `theorem` | [actualComplementaryFrequencyRatio_eventually_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceActualEulerFrequencyCancellationNamespacedEdition3.lean/declarations/actualcomplementaryfrequencyratio-eventually-abs-le.md) | 83 | `result-track:bd2101b288cdb3fedc0f47857ea56f7437f0729626535af4c243890823171ec8` |
+| 5 | `theorem` | [actualComplementaryFrequencyRatio_centered_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceActualEulerFrequencyCancellationNamespacedEdition3.lean/declarations/actualcomplementaryfrequencyratio-centered-tendsto-zero.md) | 125 | `result-track:cb1ee0918d2b413c650d0e1ad07acc0be208e77d8144318dba233a0fa30458f7` |
+| 6 | `theorem` | [actualComplementaryFrequencyRatio_tendsto_neg_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceActualEulerFrequencyCancellationNamespacedEdition3.lean/declarations/actualcomplementaryfrequencyratio-tendsto-neg-one.md) | 148 | `result-track:f385b30ee04e482990c1d118dcc77c4a7a223f0172c55ca40d7582df647b7787` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

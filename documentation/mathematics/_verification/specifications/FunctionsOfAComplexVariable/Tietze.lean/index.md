@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/Tietze.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/Tietze.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/Tietze.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/Tietze.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,15 +61,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [TietzeExtension.of_tvs](../../../../FunctionsOfAComplexVariable/Tietze.lean/declarations/tietzeextension-of-tvs.md) | 27 | `result-track:fe7fc25d8baa908297587df5dc488a162012d1f8de392957e710e964b0e7a996` |
-| 2 | `instance` | [Complex.instTietzeExtension](../../../../FunctionsOfAComplexVariable/Tietze.lean/declarations/complex-insttietzeextension.md) | 33 | `declaration-track:42199f93d1e62bbafa65c8fe9ababca953855a986cd953ac0221e2629a21ad04` |
-| 3 | `instance` | [(anonymous)](../../../../FunctionsOfAComplexVariable/Tietze.lean/declarations/instance.md) | 36 | `declaration-track:d558d416c0c96598539f2afdffad633f46aac16935440c5da16c445e0f3cb317` |
-| 4 | `instance` | [RCLike.instTietzeExtensionTVS](../../../../FunctionsOfAComplexVariable/Tietze.lean/declarations/rclike-insttietzeextensiontvs.md) | 39 | `declaration-track:6d8967a9370d21a04e7fdef19cdb104022a2a43bdd75334d1b5120c6a2645923` |
-| 5 | `instance` | [Set.instTietzeExtensionUnitBall](../../../../FunctionsOfAComplexVariable/Tietze.lean/declarations/set-insttietzeextensionunitball.md) | 45 | `declaration-track:71b26e95530a4eef4c54ef14ba428115e3c2b44a8290d9aaaa3f37859383105a` |
-| 6 | `instance` | [Set.instTietzeExtensionUnitClosedBall](../../../../FunctionsOfAComplexVariable/Tietze.lean/declarations/set-insttietzeextensionunitclosedball.md) | 51 | `declaration-track:711fa2d224eda3abf620b63634276427376c57cdd32dcb8216675202d988bb43` |
-| 7 | `theorem` | [Metric.instTietzeExtensionBall](../../../../FunctionsOfAComplexVariable/Tietze.lean/declarations/metric-insttietzeextensionball.md) | 75 | `result-track:58b28a3ce6127bfa670cc1df5da29d0c9a4ede6ed72298931f181882a68f4551` |
-| 8 | `theorem` | [Metric.instTietzeExtensionClosedBall](../../../../FunctionsOfAComplexVariable/Tietze.lean/declarations/metric-insttietzeextensionclosedball.md) | 82 | `result-track:6821e626dbac5d68b8f084c6237dc6b9c0c870f371f8146de2d872a059a78918` |
-| 9 | `theorem` | [exists_norm_eq_restrict_eq](../../../../FunctionsOfAComplexVariable/Tietze.lean/declarations/exists-norm-eq-restrict-eq.md) | 106 | `result-track:b8186f2f3a12b578674e4ea8a6a18370ca7dc30d0a38ee86d25f65940339f6d3` |
+| 1 | `theorem` | [TietzeExtension.of_tvs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/Tietze.lean/declarations/tietzeextension-of-tvs.md) | 27 | `result-track:fe7fc25d8baa908297587df5dc488a162012d1f8de392957e710e964b0e7a996` |
+| 2 | `instance` | [Complex.instTietzeExtension](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/Tietze.lean/declarations/complex-insttietzeextension.md) | 33 | `declaration-track:42199f93d1e62bbafa65c8fe9ababca953855a986cd953ac0221e2629a21ad04` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/Tietze.lean/declarations/instance.md) | 36 | `declaration-track:d558d416c0c96598539f2afdffad633f46aac16935440c5da16c445e0f3cb317` |
+| 4 | `instance` | [RCLike.instTietzeExtensionTVS](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/Tietze.lean/declarations/rclike-insttietzeextensiontvs.md) | 39 | `declaration-track:6d8967a9370d21a04e7fdef19cdb104022a2a43bdd75334d1b5120c6a2645923` |
+| 5 | `instance` | [Set.instTietzeExtensionUnitBall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/Tietze.lean/declarations/set-insttietzeextensionunitball.md) | 45 | `declaration-track:71b26e95530a4eef4c54ef14ba428115e3c2b44a8290d9aaaa3f37859383105a` |
+| 6 | `instance` | [Set.instTietzeExtensionUnitClosedBall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/Tietze.lean/declarations/set-insttietzeextensionunitclosedball.md) | 51 | `declaration-track:711fa2d224eda3abf620b63634276427376c57cdd32dcb8216675202d988bb43` |
+| 7 | `theorem` | [Metric.instTietzeExtensionBall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/Tietze.lean/declarations/metric-insttietzeextensionball.md) | 75 | `result-track:58b28a3ce6127bfa670cc1df5da29d0c9a4ede6ed72298931f181882a68f4551` |
+| 8 | `theorem` | [Metric.instTietzeExtensionClosedBall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/Tietze.lean/declarations/metric-insttietzeextensionclosedball.md) | 82 | `result-track:6821e626dbac5d68b8f084c6237dc6b9c0c870f371f8146de2d872a059a78918` |
+| 9 | `theorem` | [exists_norm_eq_restrict_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/Tietze.lean/declarations/exists-norm-eq-restrict-eq.md) | 106 | `result-track:b8186f2f3a12b578674e4ea8a6a18370ca7dc30d0a38ee86d25f65940339f6d3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

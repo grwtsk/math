@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/StirlingNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/StirlingNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/StirlingNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/StirlingNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [differentiableAt_digamma](../../../../RealFunctions/StirlingNamespaced.lean/declarations/differentiableat-digamma.md) | 37 | `result-track:d02f61f66a706eb3c0b17286ba995c48d08871cccac850fc430506df4a373405` |
-| 2 | `theorem` | [hasSum_trigamma](../../../../RealFunctions/StirlingNamespaced.lean/declarations/hassum-trigamma.md) | 61 | `result-track:5efc3a57d19444314d93bbb11ae18b5a14cccbd29cd36f46f1af637d317ee34c` |
+| 1 | `theorem` | [differentiableAt_digamma](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/StirlingNamespaced.lean/declarations/differentiableat-digamma.md) | 37 | `result-track:d02f61f66a706eb3c0b17286ba995c48d08871cccac850fc430506df4a373405` |
+| 2 | `theorem` | [hasSum_trigamma](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/StirlingNamespaced.lean/declarations/hassum-trigamma.md) | 61 | `result-track:5efc3a57d19444314d93bbb11ae18b5a14cccbd29cd36f46f1af637d317ee34c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

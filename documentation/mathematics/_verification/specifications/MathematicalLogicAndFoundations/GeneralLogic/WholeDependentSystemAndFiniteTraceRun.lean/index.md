@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeDependentSystemAndFiniteTraceRun.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeDependentSystemAndFiniteTraceRun.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeDependentSystemAndFiniteTraceRun.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeDependentSystemAndFiniteTraceRun.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [System](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeDependentSystemAndFiniteTraceRun.lean/declarations/system.md) | 44 | `declaration-track:b9bea74f077aaddca643903236857b654b6ca9e814b67c77515526a460cfe89b` |
-| 2 | `def` | [run](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeDependentSystemAndFiniteTraceRun.lean/declarations/run.md) | 57 | `declaration-track:8326f848bd0eb7a8001a833e9332448c368bbb0481c768d248165545a737ac2e` |
-| 3 | `theorem` | [run_nil](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeDependentSystemAndFiniteTraceRun.lean/declarations/run-nil.md) | 66 | `result-track:78101f6a55671defd10cf29eb83ac01aff351a452eb0ed7f0f7dfaf85a825825` |
-| 4 | `theorem` | [run_cons](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeDependentSystemAndFiniteTraceRun.lean/declarations/run-cons.md) | 73 | `result-track:5ba05a5823e2a08cac703fb3681e9b13540883506ed9291237c55e2fd87dc73c` |
-| 5 | `theorem` | [run_append](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeDependentSystemAndFiniteTraceRun.lean/declarations/run-append.md) | 83 | `result-track:1cc71fc66bd8aa4c7f4bc764eeff8e44f3165afdbbac9d6de155de43834c4bdf` |
-| 6 | `theorem` | [run_singleton](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeDependentSystemAndFiniteTraceRun.lean/declarations/run-singleton.md) | 96 | `result-track:080b877b045421a01d53f2c98fb218cb3e0b82ba3ab6be94d8af156d2082eeb3` |
+| 1 | `structure` | [System](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeDependentSystemAndFiniteTraceRun.lean/declarations/system.md) | 44 | `declaration-track:b9bea74f077aaddca643903236857b654b6ca9e814b67c77515526a460cfe89b` |
+| 2 | `def` | [run](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeDependentSystemAndFiniteTraceRun.lean/declarations/run.md) | 57 | `declaration-track:8326f848bd0eb7a8001a833e9332448c368bbb0481c768d248165545a737ac2e` |
+| 3 | `theorem` | [run_nil](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeDependentSystemAndFiniteTraceRun.lean/declarations/run-nil.md) | 66 | `result-track:78101f6a55671defd10cf29eb83ac01aff351a452eb0ed7f0f7dfaf85a825825` |
+| 4 | `theorem` | [run_cons](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeDependentSystemAndFiniteTraceRun.lean/declarations/run-cons.md) | 73 | `result-track:5ba05a5823e2a08cac703fb3681e9b13540883506ed9291237c55e2fd87dc73c` |
+| 5 | `theorem` | [run_append](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeDependentSystemAndFiniteTraceRun.lean/declarations/run-append.md) | 83 | `result-track:1cc71fc66bd8aa4c7f4bc764eeff8e44f3165afdbbac9d6de155de43834c4bdf` |
+| 6 | `theorem` | [run_singleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeDependentSystemAndFiniteTraceRun.lean/declarations/run-singleton.md) | 96 | `result-track:080b877b045421a01d53f2c98fb218cb3e0b82ba3ab6be94d8af156d2082eeb3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

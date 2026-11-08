@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/WitnessBoundaryWitnessKind.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/WitnessBoundaryWitnessKind.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/WitnessBoundaryWitnessKind.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/WitnessBoundaryWitnessKind.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [BoundaryWitnessKind](../../../../../ComputerScience/AlgorithmsInComputerScience/WitnessBoundaryWitnessKind.lean/declarations/boundarywitnesskind.md) | 7 | `declaration-track:e18144364a91edf8805ece440917728020ec494a557882e2f9a07328e599dda4` |
-| 2 | `structure` | [BoundaryWitness](../../../../../ComputerScience/AlgorithmsInComputerScience/WitnessBoundaryWitnessKind.lean/declarations/boundarywitness.md) | 16 | `declaration-track:1b4acb58e0d381224786dcd663896023be735452e4a4a14f4a7f32ac7c187ac4` |
-| 3 | `def` | [BoundaryWitness.insertedForResidue](../../../../../ComputerScience/AlgorithmsInComputerScience/WitnessBoundaryWitnessKind.lean/declarations/boundarywitness-insertedforresidue.md) | 26 | `declaration-track:62c0ad57acdb5739e20a9ed18bc05f132dc7945c82d684c1c4ce0803dc2c1bc5` |
-| 4 | `theorem` | [boundary_witness_is_bridge](../../../../../ComputerScience/AlgorithmsInComputerScience/WitnessBoundaryWitnessKind.lean/declarations/boundary-witness-is-bridge.md) | 29 | `result-track:a752a6b86a608aacd222c19d987e5b4c64aa0a02ee28757e178b9ebec0c72143` |
+| 1 | `inductive` | [BoundaryWitnessKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/WitnessBoundaryWitnessKind.lean/declarations/boundarywitnesskind.md) | 7 | `declaration-track:e18144364a91edf8805ece440917728020ec494a557882e2f9a07328e599dda4` |
+| 2 | `structure` | [BoundaryWitness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/WitnessBoundaryWitnessKind.lean/declarations/boundarywitness.md) | 16 | `declaration-track:1b4acb58e0d381224786dcd663896023be735452e4a4a14f4a7f32ac7c187ac4` |
+| 3 | `def` | [BoundaryWitness.insertedForResidue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/WitnessBoundaryWitnessKind.lean/declarations/boundarywitness-insertedforresidue.md) | 26 | `declaration-track:62c0ad57acdb5739e20a9ed18bc05f132dc7945c82d684c1c4ce0803dc2c1bc5` |
+| 4 | `theorem` | [boundary_witness_is_bridge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/WitnessBoundaryWitnessKind.lean/declarations/boundary-witness-is-bridge.md) | 29 | `result-track:a752a6b86a608aacd222c19d987e5b4c64aa0a02ee28757e178b9ebec0c72143` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

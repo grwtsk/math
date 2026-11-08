@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/NonemptyPublic.lean/index.md) · [Full source](../../../../AlgebraicTopology/NonemptyPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NonemptyPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NonemptyPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [Nonempty](../../../../AlgebraicTopology/NonemptyPublic.lean/declarations/nonempty.md) | 28 | `declaration-track:36ad8d8aaccdc0e60cd8c06bcf8d49408601ca815d5035a0b14e8f8c42ed5cdb` |
-| 2 | `lemma` | [Nonempty.mk](../../../../AlgebraicTopology/NonemptyPublic.lean/declarations/nonempty-mk.md) | 31 | `result-track:ab12547857b4f724e630220aab09ac92fa5920e59202286cc80b2ae68db4db3b` |
-| 3 | `instance` | [(anonymous)](../../../../AlgebraicTopology/NonemptyPublic.lean/declarations/instance-source-edition-3.md) | 34 | `declaration-track:ae4972cc9659e630be0424435f322ca6947b061cd98771aa332f8cdd911c5d89` |
-| 4 | `instance` | [(anonymous)](../../../../AlgebraicTopology/NonemptyPublic.lean/declarations/instance-source-edition-5.md) | 37 | `declaration-track:e94d22c0eae005e4e9bb0915c8a48f78e679b32d374d98afff8ec5f077031e47` |
-| 5 | `instance` | [(anonymous)](../../../../AlgebraicTopology/NonemptyPublic.lean/declarations/instance.md) | 39 | `declaration-track:44fe3751a85620175e2366ea0cb10c77baf501dd7e53040ae9d4d86488ff1ef7` |
-| 6 | `instance` | [(anonymous)](../../../../AlgebraicTopology/NonemptyPublic.lean/declarations/instance-source-edition-4.md) | 41 | `declaration-track:e4a16615ef9f7f71b8717a9d6e01e5767ab854757a4cfa76d8a74ff3410ab82a` |
-| 7 | `instance` | [(anonymous)](../../../../AlgebraicTopology/NonemptyPublic.lean/declarations/instance-source-edition-2.md) | 44 | `declaration-track:8836e2e3128b0757388614f8994ac91131b189c53f18daaa6c03eeaada36617e` |
-| 8 | `lemma` | [nonempty_of_hom](../../../../AlgebraicTopology/NonemptyPublic.lean/declarations/nonempty-of-hom.md) | 48 | `result-track:1d7b5d5f4a3c682dc030e488bd47182cd775d5461ca531b22a5c879a26a2e11c` |
-| 9 | `lemma` | [notNonempty_iff_hasDimensionLT_zero](../../../../AlgebraicTopology/NonemptyPublic.lean/declarations/notnonempty-iff-hasdimensionlt-zero.md) | 51 | `result-track:ae3d4403ee52db26f5001834fdfa29999179a8085932225949ddce57af77795d` |
-| 10 | `def` | [isInitialOfNotNonempty](../../../../AlgebraicTopology/NonemptyPublic.lean/declarations/isinitialofnotnonempty.md) | 61 | `declaration-track:22c3e21bf5646a443104b4c6212f6c86a750a7ec920d2fcd481271c625546f29` |
+| 1 | `abbrev` | [Nonempty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NonemptyPublic.lean/declarations/nonempty.md) | 28 | `declaration-track:36ad8d8aaccdc0e60cd8c06bcf8d49408601ca815d5035a0b14e8f8c42ed5cdb` |
+| 2 | `lemma` | [Nonempty.mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NonemptyPublic.lean/declarations/nonempty-mk.md) | 31 | `result-track:ab12547857b4f724e630220aab09ac92fa5920e59202286cc80b2ae68db4db3b` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NonemptyPublic.lean/declarations/instance-source-edition-3.md) | 34 | `declaration-track:ae4972cc9659e630be0424435f322ca6947b061cd98771aa332f8cdd911c5d89` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NonemptyPublic.lean/declarations/instance-source-edition-5.md) | 37 | `declaration-track:e94d22c0eae005e4e9bb0915c8a48f78e679b32d374d98afff8ec5f077031e47` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NonemptyPublic.lean/declarations/instance.md) | 39 | `declaration-track:44fe3751a85620175e2366ea0cb10c77baf501dd7e53040ae9d4d86488ff1ef7` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NonemptyPublic.lean/declarations/instance-source-edition-4.md) | 41 | `declaration-track:e4a16615ef9f7f71b8717a9d6e01e5767ab854757a4cfa76d8a74ff3410ab82a` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NonemptyPublic.lean/declarations/instance-source-edition-2.md) | 44 | `declaration-track:8836e2e3128b0757388614f8994ac91131b189c53f18daaa6c03eeaada36617e` |
+| 8 | `lemma` | [nonempty_of_hom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NonemptyPublic.lean/declarations/nonempty-of-hom.md) | 48 | `result-track:1d7b5d5f4a3c682dc030e488bd47182cd775d5461ca531b22a5c879a26a2e11c` |
+| 9 | `lemma` | [notNonempty_iff_hasDimensionLT_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NonemptyPublic.lean/declarations/notnonempty-iff-hasdimensionlt-zero.md) | 51 | `result-track:ae3d4403ee52db26f5001834fdfa29999179a8085932225949ddce57af77795d` |
+| 10 | `def` | [isInitialOfNotNonempty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/NonemptyPublic.lean/declarations/isinitialofnotnonempty.md) | 61 | `declaration-track:22c3e21bf5646a443104b4c6212f6c86a750a7ec920d2fcd481271c625546f29` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsBifunctor.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsBifunctor.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsBifunctor.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsBifunctor.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [map_id](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsBifunctor.lean/declarations/map-id.md) | 23 | `result-track:20e7874887b6ca419e11aeacac02b27c83b740436fe59340d1dc55b657f2625c` |
-| 2 | `theorem` | [map_id_comp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsBifunctor.lean/declarations/map-id-comp.md) | 28 | `result-track:029a53a00e8a157aa516f603008a8e027f2ffb337a8f02d1dfa0218e923698ae` |
-| 3 | `theorem` | [map_comp_id](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsBifunctor.lean/declarations/map-comp-id.md) | 34 | `result-track:bffd9a38c6fb80bda9722adf65dd66a74847cbc1536da98da95d8e2f6e002f74` |
-| 4 | `theorem` | [diagonal](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsBifunctor.lean/declarations/diagonal.md) | 40 | `result-track:595fde4f8d87c1213c8c6deeb015db0d148f1dbdbb9469c9a367305a129d6dd1` |
-| 5 | `theorem` | [diagonal'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsBifunctor.lean/declarations/diagonal-source-edition-2.md) | 46 | `result-track:9595e1a848f9373aae899fb99d0e0b02ac0bca2a60edbbc2c8e76c65a2e2e5c5` |
+| 1 | `theorem` | [map_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsBifunctor.lean/declarations/map-id.md) | 23 | `result-track:20e7874887b6ca419e11aeacac02b27c83b740436fe59340d1dc55b657f2625c` |
+| 2 | `theorem` | [map_id_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsBifunctor.lean/declarations/map-id-comp.md) | 28 | `result-track:029a53a00e8a157aa516f603008a8e027f2ffb337a8f02d1dfa0218e923698ae` |
+| 3 | `theorem` | [map_comp_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsBifunctor.lean/declarations/map-comp-id.md) | 34 | `result-track:bffd9a38c6fb80bda9722adf65dd66a74847cbc1536da98da95d8e2f6e002f74` |
+| 4 | `theorem` | [diagonal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsBifunctor.lean/declarations/diagonal.md) | 40 | `result-track:595fde4f8d87c1213c8c6deeb015db0d148f1dbdbb9469c9a367305a129d6dd1` |
+| 5 | `theorem` | [diagonal'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProductsBifunctor.lean/declarations/diagonal-source-edition-2.md) | 46 | `result-track:9595e1a848f9373aae899fb99d0e0b02ac0bca2a60edbbc2c8e76c65a2e2e5c5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

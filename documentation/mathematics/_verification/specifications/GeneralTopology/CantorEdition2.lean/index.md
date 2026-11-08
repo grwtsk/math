@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/CantorEdition2.lean/index.md) · [Full source](../../../../GeneralTopology/CantorEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CantorEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CantorEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,10 +60,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CantorTopologyCapability](../../../../GeneralTopology/CantorEdition2.lean/declarations/cantortopologycapability.md) | 18 | `declaration-track:95741a22f470aeaa100c74b669005b64f5c4612001507d67d264db60dd52f2e2` |
-| 2 | `structure` | [HomeomorphicBaselineCapability](../../../../GeneralTopology/CantorEdition2.lean/declarations/homeomorphicbaselinecapability.md) | 35 | `declaration-track:d22459413e3b38b77b36f66b802b2be431cd66b3a2e498e460d4b2a0ec692c5e` |
-| 3 | `theorem` | [compact_univ](../../../../GeneralTopology/CantorEdition2.lean/declarations/compact-univ.md) | 49 | `result-track:09f69aee93466802acd7f6670921f7236f138f8d95d9fb089c6aa54aa2710fbf` |
-| 4 | `theorem` | [connected_subsets_are_singletons](../../../../GeneralTopology/CantorEdition2.lean/declarations/connected-subsets-are-singletons.md) | 56 | `result-track:36816f9796611675a4f209547cbd632df1fec176c14eb443d817822343c5e00c` |
+| 1 | `structure` | [CantorTopologyCapability](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CantorEdition2.lean/declarations/cantortopologycapability.md) | 18 | `declaration-track:95741a22f470aeaa100c74b669005b64f5c4612001507d67d264db60dd52f2e2` |
+| 2 | `structure` | [HomeomorphicBaselineCapability](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CantorEdition2.lean/declarations/homeomorphicbaselinecapability.md) | 35 | `declaration-track:d22459413e3b38b77b36f66b802b2be431cd66b3a2e498e460d4b2a0ec692c5e` |
+| 3 | `theorem` | [compact_univ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CantorEdition2.lean/declarations/compact-univ.md) | 49 | `result-track:09f69aee93466802acd7f6670921f7236f138f8d95d9fb089c6aa54aa2710fbf` |
+| 4 | `theorem` | [connected_subsets_are_singletons](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CantorEdition2.lean/declarations/connected-subsets-are-singletons.md) | 56 | `result-track:36816f9796611675a4f209547cbd632df1fec176c14eb443d817822343c5e00c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

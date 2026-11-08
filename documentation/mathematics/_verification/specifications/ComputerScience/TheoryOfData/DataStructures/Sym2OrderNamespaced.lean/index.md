@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/Sym2OrderNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/Sym2OrderNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Sym2OrderNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Sym2OrderNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [sup](../../../../../../ComputerScience/TheoryOfData/DataStructures/Sym2OrderNamespaced.lean/declarations/sup.md) | 29 | `declaration-track:f76ff200d56888b18fee77a57f253a117af3e5946bce67b8282256a92b295104` |
-| 2 | `theorem` | [sup_mk](../../../../../../ComputerScience/TheoryOfData/DataStructures/Sym2OrderNamespaced.lean/declarations/sup-mk.md) | 31 | `result-track:820571111ca9ef8261387dec4e3a1a9fd374b2eb1ca4cf4934655f14d514d5f8` |
-| 3 | `def` | [inf](../../../../../../ComputerScience/TheoryOfData/DataStructures/Sym2OrderNamespaced.lean/declarations/inf.md) | 34 | `declaration-track:df3cc7c28b8b48f73b3e33bcbd22bfbe85cb932e3b1a04242d7a3c901414765d` |
-| 4 | `theorem` | [inf_mk](../../../../../../ComputerScience/TheoryOfData/DataStructures/Sym2OrderNamespaced.lean/declarations/inf-mk.md) | 36 | `result-track:253399e62f654a885ec485ff81de47cbc331ed1f154216996978344143b79f33` |
-| 5 | `theorem` | [inf_le_sup](../../../../../../ComputerScience/TheoryOfData/DataStructures/Sym2OrderNamespaced.lean/declarations/inf-le-sup.md) | 38 | `result-track:e12dd9128a3f29fc41a827f9ac5d3c4f57b08d8dbe8cd8756b191cb38ee74512` |
-| 6 | `def` | [sortEquiv](../../../../../../ComputerScience/TheoryOfData/DataStructures/Sym2OrderNamespaced.lean/declarations/sortequiv.md) | 43 | `declaration-track:97ab212fc537b2d6a00345467b282c1025b4c3c2e65d1f316a7ffbfe97bb4082` |
-| 7 | `theorem` | [inf_eq_inf_and_sup_eq_sup](../../../../../../ComputerScience/TheoryOfData/DataStructures/Sym2OrderNamespaced.lean/declarations/inf-eq-inf-and-sup-eq-sup.md) | 55 | `result-track:44180cc0992c364129042703b9229f30be3d8f9d2d16589842ee62b2114a1d4d` |
+| 1 | `def` | [sup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Sym2OrderNamespaced.lean/declarations/sup.md) | 29 | `declaration-track:f76ff200d56888b18fee77a57f253a117af3e5946bce67b8282256a92b295104` |
+| 2 | `theorem` | [sup_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Sym2OrderNamespaced.lean/declarations/sup-mk.md) | 31 | `result-track:820571111ca9ef8261387dec4e3a1a9fd374b2eb1ca4cf4934655f14d514d5f8` |
+| 3 | `def` | [inf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Sym2OrderNamespaced.lean/declarations/inf.md) | 34 | `declaration-track:df3cc7c28b8b48f73b3e33bcbd22bfbe85cb932e3b1a04242d7a3c901414765d` |
+| 4 | `theorem` | [inf_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Sym2OrderNamespaced.lean/declarations/inf-mk.md) | 36 | `result-track:253399e62f654a885ec485ff81de47cbc331ed1f154216996978344143b79f33` |
+| 5 | `theorem` | [inf_le_sup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Sym2OrderNamespaced.lean/declarations/inf-le-sup.md) | 38 | `result-track:e12dd9128a3f29fc41a827f9ac5d3c4f57b08d8dbe8cd8756b191cb38ee74512` |
+| 6 | `def` | [sortEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Sym2OrderNamespaced.lean/declarations/sortequiv.md) | 43 | `declaration-track:97ab212fc537b2d6a00345467b282c1025b4c3c2e65d1f316a7ffbfe97bb4082` |
+| 7 | `theorem` | [inf_eq_inf_and_sup_eq_sup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/Sym2OrderNamespaced.lean/declarations/inf-eq-inf-and-sup-eq-sup.md) | 55 | `result-track:44180cc0992c364129042703b9229f30be3d8f9d2d16589842ee62b2114a1d4d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

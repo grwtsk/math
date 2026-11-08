@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannZetaLogDerivPublic.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannZetaLogDerivPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannZetaLogDerivPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannZetaLogDerivPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [logDeriv_riemannZeta_one_sub](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannZetaLogDerivPublic.lean/declarations/logderiv-riemannzeta-one-sub.md) | 32 | `result-track:817e6780be471d31f258807d26fae3c7f1c3607926b2d0166d08863dafb7a60e` |
+| 1 | `theorem` | [logDeriv_riemannZeta_one_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RiemannZetaLogDerivPublic.lean/declarations/logderiv-riemannzeta-one-sub.md) | 32 | `result-track:817e6780be471d31f258807d26fae3c7f1c3607926b2d0166d08863dafb7a60e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

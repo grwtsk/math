@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/CatalogRecoverabilityFixtures.lean/index.md) · [Full source](../../../../FunctionalAnalysis/CatalogRecoverabilityFixtures.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CatalogRecoverabilityFixtures.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CatalogRecoverabilityFixtures.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [recoverability_fixture_related](../../../../FunctionalAnalysis/CatalogRecoverabilityFixtures.lean/declarations/recoverability-fixture-related.md) | 8 | `result-track:ce5656aa894f2ae57ae18e69c0b09a71fb56127876c13175c48607ca57271b3b` |
-| 2 | `theorem` | [recoverability_fixture_same_quotient](../../../../FunctionalAnalysis/CatalogRecoverabilityFixtures.lean/declarations/recoverability-fixture-same-quotient.md) | 14 | `result-track:1e496e78dd1d04e63a3abf54134e53f54c5070c3e3bdb8ab49fef5f3da482e60` |
-| 3 | `theorem` | [recoverability_fixture_index_not_recoverable](../../../../FunctionalAnalysis/CatalogRecoverabilityFixtures.lean/declarations/recoverability-fixture-index-not-recoverable.md) | 22 | `result-track:c899abc4f909087177b8378de729e72087fd67acba7ad60f3e1b82c9b1508d40` |
-| 4 | `theorem` | [recoverability_fixture_interpreter_recoverable](../../../../FunctionalAnalysis/CatalogRecoverabilityFixtures.lean/declarations/recoverability-fixture-interpreter-recoverable.md) | 32 | `result-track:54fa4794350355676c735e74ca6368b2b836226eb04a8f263984d77dbf67fc9e` |
+| 1 | `theorem` | [recoverability_fixture_related](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CatalogRecoverabilityFixtures.lean/declarations/recoverability-fixture-related.md) | 8 | `result-track:ce5656aa894f2ae57ae18e69c0b09a71fb56127876c13175c48607ca57271b3b` |
+| 2 | `theorem` | [recoverability_fixture_same_quotient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CatalogRecoverabilityFixtures.lean/declarations/recoverability-fixture-same-quotient.md) | 14 | `result-track:1e496e78dd1d04e63a3abf54134e53f54c5070c3e3bdb8ab49fef5f3da482e60` |
+| 3 | `theorem` | [recoverability_fixture_index_not_recoverable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CatalogRecoverabilityFixtures.lean/declarations/recoverability-fixture-index-not-recoverable.md) | 22 | `result-track:c899abc4f909087177b8378de729e72087fd67acba7ad60f3e1b82c9b1508d40` |
+| 4 | `theorem` | [recoverability_fixture_interpreter_recoverable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CatalogRecoverabilityFixtures.lean/declarations/recoverability-fixture-interpreter-recoverable.md) | 32 | `result-track:54fa4794350355676c735e74ca6368b2b836226eb04a8f263984d77dbf67fc9e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

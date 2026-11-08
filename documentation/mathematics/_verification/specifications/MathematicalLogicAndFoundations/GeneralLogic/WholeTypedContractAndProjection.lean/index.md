@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeTypedContractAndProjection.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeTypedContractAndProjection.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeTypedContractAndProjection.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeTypedContractAndProjection.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CanonicalPathContract](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeTypedContractAndProjection.lean/declarations/canonicalpathcontract.md) | 39 | `declaration-track:e42720a3bae83cc2f417b847b268ab157eb306791788d2c1dcc7fa22c77d0ebe` |
-| 2 | `theorem` | [canonical_path_contract_composes](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeTypedContractAndProjection.lean/declarations/canonical-path-contract-composes.md) | 48 | `result-track:366d1bf7b40af340bdc8a71e3ffaff25c2b707a4256f81126930fff5a82847cb` |
+| 1 | `structure` | [CanonicalPathContract](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeTypedContractAndProjection.lean/declarations/canonicalpathcontract.md) | 39 | `declaration-track:e42720a3bae83cc2f417b847b268ab157eb306791788d2c1dcc7fa22c77d0ebe` |
+| 2 | `theorem` | [canonical_path_contract_composes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeTypedContractAndProjection.lean/declarations/canonical-path-contract-composes.md) | 48 | `result-track:366d1bf7b40af340bdc8a71e3ffaff25c2b707a4256f81126930fff5a82847cb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

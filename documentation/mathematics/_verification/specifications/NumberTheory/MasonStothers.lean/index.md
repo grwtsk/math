@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/MasonStothers.lean/index.md) · [Full source](../../../../NumberTheory/MasonStothers.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MasonStothers.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MasonStothers.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [abc_subcall](../../../../NumberTheory/MasonStothers.lean/declarations/abc-subcall.md) | 26 | `result-track:26caac503b47e37a95a87c3d4ebad07199ced55fd341ce1dc14d8f5e2413cbe4` |
-| 2 | `theorem` | [Polynomial.abc](../../../../NumberTheory/MasonStothers.lean/declarations/polynomial-abc.md) | 51 | `result-track:9dc2a3a2bcfe274e07866d637e7e9511b34e3e699edcfb5ecd67d87e209dbdce` |
+| 1 | `theorem` | [abc_subcall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MasonStothers.lean/declarations/abc-subcall.md) | 26 | `result-track:26caac503b47e37a95a87c3d4ebad07199ced55fd341ce1dc14d8f5e2413cbe4` |
+| 2 | `theorem` | [Polynomial.abc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MasonStothers.lean/declarations/polynomial-abc.md) | 51 | `result-track:9dc2a3a2bcfe274e07866d637e7e9511b34e3e699edcfb5ecd67d87e209dbdce` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/SurjectiveNamespacedPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/SurjectiveNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SurjectiveNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SurjectiveNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [surjective_stableUnderComposition](../../../../CommutativeAlgebra/SurjectiveNamespacedPublic.lean/declarations/surjective-stableundercomposition.md) | 48 | `result-track:008682ffb34c03959a8d1209ddbfe822ae371a5807b3bce12b3f4645935d4bd3` |
-| 2 | `theorem` | [surjective_respectsIso](../../../../CommutativeAlgebra/SurjectiveNamespacedPublic.lean/declarations/surjective-respectsiso.md) | 51 | `result-track:cb806b5b105bd8ab0e410448946b8fe1d70289211768484902e9e54c09882b48` |
-| 3 | `theorem` | [surjective_isStableUnderBaseChange](../../../../CommutativeAlgebra/SurjectiveNamespacedPublic.lean/declarations/surjective-isstableunderbasechange.md) | 56 | `result-track:772ceb49183e1de5263c3fe1a1770c97f59a2ccb39cf94351a8be43b35a1baaa` |
-| 4 | `theorem` | [surjective_localizationPreserves](../../../../CommutativeAlgebra/SurjectiveNamespacedPublic.lean/declarations/surjective-localizationpreserves.md) | 66 | `result-track:86bb1b247e13d69cbcc09f9fd84a9e4cab5464cec8ea8555d766c64aef93b511` |
-| 5 | `theorem` | [surjective_ofLocalizationSpan](../../../../CommutativeAlgebra/SurjectiveNamespacedPublic.lean/declarations/surjective-oflocalizationspan.md) | 76 | `result-track:1ae5589a5cff6ca0fb184822a9d4036935bfc472174fbd99cb38b19f7686ec4b` |
-| 6 | `theorem` | [surjective_localRingHom_of_surjective](../../../../CommutativeAlgebra/SurjectiveNamespacedPublic.lean/declarations/surjective-localringhom-of-surjective.md) | 95 | `result-track:973d30ba215cc618b3bca1f3bf4769aaf62c84f7b76f54278b97693c96032413` |
+| 1 | `theorem` | [surjective_stableUnderComposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SurjectiveNamespacedPublic.lean/declarations/surjective-stableundercomposition.md) | 48 | `result-track:008682ffb34c03959a8d1209ddbfe822ae371a5807b3bce12b3f4645935d4bd3` |
+| 2 | `theorem` | [surjective_respectsIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SurjectiveNamespacedPublic.lean/declarations/surjective-respectsiso.md) | 51 | `result-track:cb806b5b105bd8ab0e410448946b8fe1d70289211768484902e9e54c09882b48` |
+| 3 | `theorem` | [surjective_isStableUnderBaseChange](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SurjectiveNamespacedPublic.lean/declarations/surjective-isstableunderbasechange.md) | 56 | `result-track:772ceb49183e1de5263c3fe1a1770c97f59a2ccb39cf94351a8be43b35a1baaa` |
+| 4 | `theorem` | [surjective_localizationPreserves](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SurjectiveNamespacedPublic.lean/declarations/surjective-localizationpreserves.md) | 66 | `result-track:86bb1b247e13d69cbcc09f9fd84a9e4cab5464cec8ea8555d766c64aef93b511` |
+| 5 | `theorem` | [surjective_ofLocalizationSpan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SurjectiveNamespacedPublic.lean/declarations/surjective-oflocalizationspan.md) | 76 | `result-track:1ae5589a5cff6ca0fb184822a9d4036935bfc472174fbd99cb38b19f7686ec4b` |
+| 6 | `theorem` | [surjective_localRingHom_of_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SurjectiveNamespacedPublic.lean/declarations/surjective-localringhom-of-surjective.md) | 95 | `result-track:973d30ba215cc618b3bca1f3bf4769aaf62c84f7b76f54278b97693c96032413` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

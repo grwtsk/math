@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyEdition1.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [positive_candidate_eq](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyEdition1.lean/declarations/positive-candidate-eq.md) | 41 | `result-track:fa56a6efa8da5606e50a77f4e7786bb4ae9aa8e132ccdb498d46f36469da6796` |
-| 2 | `theorem` | [continuedTransform_meromorphic](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyEdition1.lean/declarations/continuedtransform-meromorphic.md) | 69 | `result-track:b6835ea4850e7932742944c382b1af1922160962ff0b8c6ec2f627dff7ec9aeb` |
-| 3 | `theorem` | [shifted_pole_nonreal](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyEdition1.lean/declarations/shifted-pole-nonreal.md) | 84 | `result-track:c8701fb3ef7d34bf41587cd72e7abfe7e29cdc236146dffb08a15edc15b539c2` |
-| 4 | `theorem` | [shifted_pole_ne_real](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyEdition1.lean/declarations/shifted-pole-ne-real.md) | 92 | `result-track:8c083b843363e4aafeea7b3da33e73025ea48f916712eae5d9424315514b35f1` |
-| 5 | `theorem` | [positive_real_mem_domain](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyEdition1.lean/declarations/positive-real-mem-domain.md) | 101 | `result-track:e3a9851af71df13deb80ed19c0a41d5f04a7746817320345b44925840c766497` |
-| 6 | `theorem` | [continuedTransform_analytic_positive_real](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyEdition1.lean/declarations/continuedtransform-analytic-positive-real.md) | 116 | `result-track:1202946d716849690c9e2c6c4250d45a3b3af5f0b46f3baed4c57dde58a5682b` |
-| 7 | `def` | [MeromorphicLaplacePoleObligation](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyEdition1.lean/declarations/meromorphiclaplacepoleobligation.md) | 127 | `declaration-track:ec5ad388a968002dd20dad38da4bafdb7cc9f193e963eb3ac8f02381eeb38786` |
-| 8 | `theorem` | [meromorphic_laplace_pole](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyEdition1.lean/declarations/meromorphic-laplace-pole.md) | 154 | `result-track:48c227a9478afe366746d53baff58214c91517cd95a84af4d7d57b00c1a2fe97` |
+| 1 | `theorem` | [positive_candidate_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyEdition1.lean/declarations/positive-candidate-eq.md) | 41 | `result-track:fa56a6efa8da5606e50a77f4e7786bb4ae9aa8e132ccdb498d46f36469da6796` |
+| 2 | `theorem` | [continuedTransform_meromorphic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyEdition1.lean/declarations/continuedtransform-meromorphic.md) | 69 | `result-track:b6835ea4850e7932742944c382b1af1922160962ff0b8c6ec2f627dff7ec9aeb` |
+| 3 | `theorem` | [shifted_pole_nonreal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyEdition1.lean/declarations/shifted-pole-nonreal.md) | 84 | `result-track:c8701fb3ef7d34bf41587cd72e7abfe7e29cdc236146dffb08a15edc15b539c2` |
+| 4 | `theorem` | [shifted_pole_ne_real](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyEdition1.lean/declarations/shifted-pole-ne-real.md) | 92 | `result-track:8c083b843363e4aafeea7b3da33e73025ea48f916712eae5d9424315514b35f1` |
+| 5 | `theorem` | [positive_real_mem_domain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyEdition1.lean/declarations/positive-real-mem-domain.md) | 101 | `result-track:e3a9851af71df13deb80ed19c0a41d5f04a7746817320345b44925840c766497` |
+| 6 | `theorem` | [continuedTransform_analytic_positive_real](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyEdition1.lean/declarations/continuedtransform-analytic-positive-real.md) | 116 | `result-track:1202946d716849690c9e2c6c4250d45a3b3af5f0b46f3baed4c57dde58a5682b` |
+| 7 | `def` | [MeromorphicLaplacePoleObligation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyEdition1.lean/declarations/meromorphiclaplacepoleobligation.md) | 127 | `declaration-track:ec5ad388a968002dd20dad38da4bafdb7cc9f193e963eb3ac8f02381eeb38786` |
+| 8 | `theorem` | [meromorphic_laplace_pole](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyEdition1.lean/declarations/meromorphic-laplace-pole.md) | 154 | `result-track:48c227a9478afe366746d53baff58214c91517cd95a84af4d7d57b00c1a2fe97` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

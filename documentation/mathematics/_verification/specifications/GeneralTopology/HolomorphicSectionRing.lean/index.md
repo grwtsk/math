@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/HolomorphicSectionRing.lean/index.md) · [Full source](../../../../GeneralTopology/HolomorphicSectionRing.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicSectionRing.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicSectionRing.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.HolomorphicRestriction`](../../../../GeneralTopology/HolomorphicRestriction.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.HolomorphicRestriction`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicRestriction.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,26 +57,26 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [holomorphicSubring](../../../../GeneralTopology/HolomorphicSectionRing.lean/declarations/holomorphicsubring.md) | 10 | `declaration-track:a3f0ec019b5b6850adb42bbe604495f0408e245dca49188714c392ec0b2d7114` |
-| 2 | `abbrev` | [HolomorphicSection](../../../../GeneralTopology/HolomorphicSectionRing.lean/declarations/holomorphicsection.md) | 42 | `declaration-track:dac2dfa5aadecb18d4dd7645348561bba3a720ee9de191fc857bbf77f3e548c9` |
-| 3 | `def` | [restrict](../../../../GeneralTopology/HolomorphicSectionRing.lean/declarations/restrict.md) | 45 | `declaration-track:4d1d909480182f23d964316622ce1bfa83ecb42f9afbab95fd878eb4b8833afa` |
-| 4 | `def` | [restrictionRingHom](../../../../GeneralTopology/HolomorphicSectionRing.lean/declarations/restrictionringhom.md) | 53 | `declaration-track:245363573a42ef9560feb71b7066780638b8f58096c0a76996793d260ad68222` |
-| 5 | `def` | [system](../../../../GeneralTopology/HolomorphicSectionRing.lean/declarations/system.md) | 72 | `declaration-track:72b477a7ec1306cef1c232891f61cc27ecbc56359fc706468d1a8fe0e4c21d9f` |
-| 6 | `def` | [ringCertificate](../../../../GeneralTopology/HolomorphicSectionRing.lean/declarations/ringcertificate.md) | 91 | `declaration-track:39d4acf0cdebd5ae6b209218a7baae49dac63abfcffc0e69ce03029a0a4e4eb0` |
-| 7 | `theorem` | [restrict_continuous](../../../../GeneralTopology/HolomorphicSectionRing.lean/declarations/restrict-continuous.md) | 97 | `result-track:6a0a349419646eeb1fc6dac5406e9bc44c5918b1409da56f82e2e928d4a40b84` |
-| 8 | `def` | [topologicalRingCertificate](../../../../GeneralTopology/HolomorphicSectionRing.lean/declarations/topologicalringcertificate.md) | 104 | `declaration-track:31cc04520cff09765414fb604067a5858a27a2742cce73e198ca9a1dcc509075` |
-| 9 | `structure` | [HolomorphicFiberCertificate](../../../../GeneralTopology/HolomorphicSectionRing.lean/declarations/holomorphicfibercertificate.md) | 110 | `declaration-track:8c25b06acc967d1ff47ad9061753a8ceeb30685996f130aac020bd0c0c2c4be4` |
-| 10 | `def` | [canonical](../../../../GeneralTopology/HolomorphicSectionRing.lean/declarations/canonical.md) | 118 | `declaration-track:9ae6ca73d6dae7bd18b042344524939190aacfd660ea335f5c0c9271997405d3` |
-| 11 | `def` | [composableProperty](../../../../GeneralTopology/HolomorphicSectionRing.lean/declarations/composableproperty.md) | 123 | `declaration-track:d62e3a18f9ef8f54e4f63c12f0c722f8581124817e46b15a1b2152696dd4216a` |
-| 12 | `inductive` | [LawIndex](../../../../GeneralTopology/HolomorphicSectionRing.lean/declarations/lawindex.md) | 134 | `declaration-track:2ffe211cfe9ef861df47ec5fddebe48999241bd63de1bc11b0597100ed0c16e8` |
-| 13 | `def` | [law](../../../../GeneralTopology/HolomorphicSectionRing.lean/declarations/law.md) | 140 | `declaration-track:394896cda7f1a60f742686923937faaa8155b7d3a6119b2f08a4a93affc164d1` |
-| 14 | `def` | [simultaneousProperty](../../../../GeneralTopology/HolomorphicSectionRing.lean/declarations/simultaneousproperty.md) | 146 | `declaration-track:6b18a37b74f490417d09becb3ddc2aead88e3fa7f2a7711a53975d83106ff2bf` |
-| 15 | `def` | [simultaneousCertificate](../../../../GeneralTopology/HolomorphicSectionRing.lean/declarations/simultaneouscertificate.md) | 151 | `declaration-track:b0dbeba211de2bf30fa03739abf8a4e040463634f6e1b03d85073de1d3429235` |
-| 16 | `def` | [forget](../../../../GeneralTopology/HolomorphicSectionRing.lean/declarations/forget.md) | 159 | `declaration-track:e23d932a156b9c3c9d37073d7a8af9ba6cc32782eb5808c306656c0e4acf701e` |
-| 17 | `theorem` | [forget_restrict](../../../../GeneralTopology/HolomorphicSectionRing.lean/declarations/forget-restrict.md) | 163 | `result-track:06e572a7d67773fad44e9fcb214e3351e96e6ba9233b35747950e510e2319287` |
-| 18 | `def` | [restrictionPath](../../../../GeneralTopology/HolomorphicSectionRing.lean/declarations/restrictionpath.md) | 172 | `declaration-track:450c4a45061eb6fd5053327feadd198b065da7211fbed47f609cae1dfaf9e9ef` |
-| 19 | `theorem` | [restrictionPath_holomorphicFiber](../../../../GeneralTopology/HolomorphicSectionRing.lean/declarations/restrictionpath-holomorphicfiber.md) | 185 | `result-track:6f775899ea6c9af3e422cff25a71e3bdf6b8483cc678d83c9be38d53c3192c71` |
-| 20 | `theorem` | [restrictionPath_topologicalRing](../../../../GeneralTopology/HolomorphicSectionRing.lean/declarations/restrictionpath-topologicalring.md) | 190 | `result-track:0d6f360db8cd370d0817f3151141f485c1edd023a57846eda226fc6985d62e1a` |
+| 1 | `def` | [holomorphicSubring](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicSectionRing.lean/declarations/holomorphicsubring.md) | 10 | `declaration-track:a3f0ec019b5b6850adb42bbe604495f0408e245dca49188714c392ec0b2d7114` |
+| 2 | `abbrev` | [HolomorphicSection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicSectionRing.lean/declarations/holomorphicsection.md) | 42 | `declaration-track:dac2dfa5aadecb18d4dd7645348561bba3a720ee9de191fc857bbf77f3e548c9` |
+| 3 | `def` | [restrict](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicSectionRing.lean/declarations/restrict.md) | 45 | `declaration-track:4d1d909480182f23d964316622ce1bfa83ecb42f9afbab95fd878eb4b8833afa` |
+| 4 | `def` | [restrictionRingHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicSectionRing.lean/declarations/restrictionringhom.md) | 53 | `declaration-track:245363573a42ef9560feb71b7066780638b8f58096c0a76996793d260ad68222` |
+| 5 | `def` | [system](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicSectionRing.lean/declarations/system.md) | 72 | `declaration-track:72b477a7ec1306cef1c232891f61cc27ecbc56359fc706468d1a8fe0e4c21d9f` |
+| 6 | `def` | [ringCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicSectionRing.lean/declarations/ringcertificate.md) | 91 | `declaration-track:39d4acf0cdebd5ae6b209218a7baae49dac63abfcffc0e69ce03029a0a4e4eb0` |
+| 7 | `theorem` | [restrict_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicSectionRing.lean/declarations/restrict-continuous.md) | 97 | `result-track:6a0a349419646eeb1fc6dac5406e9bc44c5918b1409da56f82e2e928d4a40b84` |
+| 8 | `def` | [topologicalRingCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicSectionRing.lean/declarations/topologicalringcertificate.md) | 104 | `declaration-track:31cc04520cff09765414fb604067a5858a27a2742cce73e198ca9a1dcc509075` |
+| 9 | `structure` | [HolomorphicFiberCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicSectionRing.lean/declarations/holomorphicfibercertificate.md) | 110 | `declaration-track:8c25b06acc967d1ff47ad9061753a8ceeb30685996f130aac020bd0c0c2c4be4` |
+| 10 | `def` | [canonical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicSectionRing.lean/declarations/canonical.md) | 118 | `declaration-track:9ae6ca73d6dae7bd18b042344524939190aacfd660ea335f5c0c9271997405d3` |
+| 11 | `def` | [composableProperty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicSectionRing.lean/declarations/composableproperty.md) | 123 | `declaration-track:d62e3a18f9ef8f54e4f63c12f0c722f8581124817e46b15a1b2152696dd4216a` |
+| 12 | `inductive` | [LawIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicSectionRing.lean/declarations/lawindex.md) | 134 | `declaration-track:2ffe211cfe9ef861df47ec5fddebe48999241bd63de1bc11b0597100ed0c16e8` |
+| 13 | `def` | [law](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicSectionRing.lean/declarations/law.md) | 140 | `declaration-track:394896cda7f1a60f742686923937faaa8155b7d3a6119b2f08a4a93affc164d1` |
+| 14 | `def` | [simultaneousProperty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicSectionRing.lean/declarations/simultaneousproperty.md) | 146 | `declaration-track:6b18a37b74f490417d09becb3ddc2aead88e3fa7f2a7711a53975d83106ff2bf` |
+| 15 | `def` | [simultaneousCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicSectionRing.lean/declarations/simultaneouscertificate.md) | 151 | `declaration-track:b0dbeba211de2bf30fa03739abf8a4e040463634f6e1b03d85073de1d3429235` |
+| 16 | `def` | [forget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicSectionRing.lean/declarations/forget.md) | 159 | `declaration-track:e23d932a156b9c3c9d37073d7a8af9ba6cc32782eb5808c306656c0e4acf701e` |
+| 17 | `theorem` | [forget_restrict](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicSectionRing.lean/declarations/forget-restrict.md) | 163 | `result-track:06e572a7d67773fad44e9fcb214e3351e96e6ba9233b35747950e510e2319287` |
+| 18 | `def` | [restrictionPath](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicSectionRing.lean/declarations/restrictionpath.md) | 172 | `declaration-track:450c4a45061eb6fd5053327feadd198b065da7211fbed47f609cae1dfaf9e9ef` |
+| 19 | `theorem` | [restrictionPath_holomorphicFiber](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicSectionRing.lean/declarations/restrictionpath-holomorphicfiber.md) | 185 | `result-track:6f775899ea6c9af3e422cff25a71e3bdf6b8483cc678d83c9be38d53c3192c71` |
+| 20 | `theorem` | [restrictionPath_topologicalRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/HolomorphicSectionRing.lean/declarations/restrictionpath-topologicalring.md) | 190 | `result-track:0d6f360db8cd370d0817f3151141f485c1edd023a57846eda226fc6985d62e1a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

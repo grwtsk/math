@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OfBilinear.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OfBilinear.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OfBilinear.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OfBilinear.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [IsReflective](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OfBilinear.lean/declarations/isreflective.md) | 36 | `declaration-track:e50a4f049ede4c9fbb60ca43572dda7da73b752e1efc61b5445b74933e6be2d8` |
-| 2 | `lemma` | [of_dvd_two](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OfBilinear.lean/declarations/of-dvd-two.md) | 44 | `result-track:6e913631dc3168263e7079d7e6f69117d286fb3c45df06c86d459bc237527a9e` |
-| 3 | `def` | [coroot](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OfBilinear.lean/declarations/coroot.md) | 52 | `declaration-track:210889c8796d55a35b75a63190a15dcd64ecd5bf3657784ef51deef4b4d5ecab` |
-| 4 | `lemma` | [apply_self_mul_coroot_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OfBilinear.lean/declarations/apply-self-mul-coroot-apply.md) | 66 | `result-track:8c4314c09f99147001674f5af7300bc60aa9ee0741982042b1c78159634118eb` |
-| 5 | `lemma` | [smul_coroot](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OfBilinear.lean/declarations/smul-coroot.md) | 70 | `result-track:0b2652556bcd7553eb71d3ab85fa1b5f5fa26a38e3c4573b5d68bac03c12a174` |
-| 6 | `lemma` | [coroot_apply_self](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OfBilinear.lean/declarations/coroot-apply-self.md) | 75 | `result-track:8bc1f1ac9c59d5ba70b9d9e9113a169f069b3021080e90f0be6b643ff61cf95f` |
-| 7 | `lemma` | [isOrthogonal_reflection](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OfBilinear.lean/declarations/isorthogonal-reflection.md) | 78 | `result-track:559f0347580caf6fef444d0d1231e422f980dec8f79f4570367fd900d017f787` |
-| 8 | `lemma` | [reflective_reflection](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OfBilinear.lean/declarations/reflective-reflection.md) | 89 | `result-track:b2ea47b136f7c2e65ed68a0574db87ac0016afa4cb94947227b234088b0f0c25` |
-| 9 | `def` | [ofBilinear](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OfBilinear.lean/declarations/ofbilinear.md) | 112 | `declaration-track:68b8383656c6595bcbadb71356089dee8802df132c64d9c0e0e54ac6651b08cd` |
+| 1 | `structure` | [IsReflective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OfBilinear.lean/declarations/isreflective.md) | 36 | `declaration-track:e50a4f049ede4c9fbb60ca43572dda7da73b752e1efc61b5445b74933e6be2d8` |
+| 2 | `lemma` | [of_dvd_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OfBilinear.lean/declarations/of-dvd-two.md) | 44 | `result-track:6e913631dc3168263e7079d7e6f69117d286fb3c45df06c86d459bc237527a9e` |
+| 3 | `def` | [coroot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OfBilinear.lean/declarations/coroot.md) | 52 | `declaration-track:210889c8796d55a35b75a63190a15dcd64ecd5bf3657784ef51deef4b4d5ecab` |
+| 4 | `lemma` | [apply_self_mul_coroot_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OfBilinear.lean/declarations/apply-self-mul-coroot-apply.md) | 66 | `result-track:8c4314c09f99147001674f5af7300bc60aa9ee0741982042b1c78159634118eb` |
+| 5 | `lemma` | [smul_coroot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OfBilinear.lean/declarations/smul-coroot.md) | 70 | `result-track:0b2652556bcd7553eb71d3ab85fa1b5f5fa26a38e3c4573b5d68bac03c12a174` |
+| 6 | `lemma` | [coroot_apply_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OfBilinear.lean/declarations/coroot-apply-self.md) | 75 | `result-track:8bc1f1ac9c59d5ba70b9d9e9113a169f069b3021080e90f0be6b643ff61cf95f` |
+| 7 | `lemma` | [isOrthogonal_reflection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OfBilinear.lean/declarations/isorthogonal-reflection.md) | 78 | `result-track:559f0347580caf6fef444d0d1231e422f980dec8f79f4570367fd900d017f787` |
+| 8 | `lemma` | [reflective_reflection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OfBilinear.lean/declarations/reflective-reflection.md) | 89 | `result-track:b2ea47b136f7c2e65ed68a0574db87ac0016afa4cb94947227b234088b0f0c25` |
+| 9 | `def` | [ofBilinear](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/OfBilinear.lean/declarations/ofbilinear.md) | 112 | `declaration-track:68b8383656c6595bcbadb71356089dee8802df132c64d9c0e0e54ac6651b08cd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

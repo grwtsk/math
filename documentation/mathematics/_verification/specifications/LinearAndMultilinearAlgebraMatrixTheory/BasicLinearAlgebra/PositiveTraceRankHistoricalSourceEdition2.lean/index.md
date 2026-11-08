@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveTraceRankHistoricalSourceEdition2.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveTraceRankHistoricalSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveTraceRankHistoricalSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveTraceRankHistoricalSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.LinearAlgebra.Matrix.TraceRank`](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixTheoryTraceRankHistoricalSourceEdition2.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.LinearAlgebra.Matrix.TraceRank`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixTheoryTraceRankHistoricalSourceEdition2.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic.NormNum` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveTraceRankHistoricalSourceEdition2.lean/declarations/example-source-edition-4.md) | 12 | `declaration-track:a4c276056aab80f574839baf612375f2d381b907120b718b5effee897dc80bca` |
-| 2 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveTraceRankHistoricalSourceEdition2.lean/declarations/example-source-edition-6.md) | 16 | `declaration-track:ed0f5635f49144f792bff57015fc5a3a82cdf1cdafd9abc40142f80b00a37e6a` |
-| 3 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveTraceRankHistoricalSourceEdition2.lean/declarations/example.md) | 22 | `declaration-track:40f32e24c142d0624a4b5afbd43319f6f9f4133be1e8c133cb5dcbb4d606bc93` |
-| 4 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveTraceRankHistoricalSourceEdition2.lean/declarations/example-source-edition-7.md) | 27 | `declaration-track:f2c79d54a3187f64f78aee457129385fa07fab91746b341ac8d6d8106414e1b8` |
-| 5 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveTraceRankHistoricalSourceEdition2.lean/declarations/example-source-edition-5.md) | 35 | `declaration-track:aafd74575c6bcac989558bcaf0b3904a63e909baed4cd761e3cfd98279983854` |
-| 6 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveTraceRankHistoricalSourceEdition2.lean/declarations/example-source-edition-3.md) | 39 | `declaration-track:49424e62fbac38f84cce58b28dc871c1340925a38a935deed223ad14587921a0` |
-| 7 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveTraceRankHistoricalSourceEdition2.lean/declarations/example-source-edition-2.md) | 42 | `declaration-track:48cf9b1557f8b124329e1e37e67a10b1d5c253a4d5864f1755a57a726298b039` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveTraceRankHistoricalSourceEdition2.lean/declarations/example-source-edition-4.md) | 12 | `declaration-track:a4c276056aab80f574839baf612375f2d381b907120b718b5effee897dc80bca` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveTraceRankHistoricalSourceEdition2.lean/declarations/example-source-edition-6.md) | 16 | `declaration-track:ed0f5635f49144f792bff57015fc5a3a82cdf1cdafd9abc40142f80b00a37e6a` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveTraceRankHistoricalSourceEdition2.lean/declarations/example.md) | 22 | `declaration-track:40f32e24c142d0624a4b5afbd43319f6f9f4133be1e8c133cb5dcbb4d606bc93` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveTraceRankHistoricalSourceEdition2.lean/declarations/example-source-edition-7.md) | 27 | `declaration-track:f2c79d54a3187f64f78aee457129385fa07fab91746b341ac8d6d8106414e1b8` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveTraceRankHistoricalSourceEdition2.lean/declarations/example-source-edition-5.md) | 35 | `declaration-track:aafd74575c6bcac989558bcaf0b3904a63e909baed4cd761e3cfd98279983854` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveTraceRankHistoricalSourceEdition2.lean/declarations/example-source-edition-3.md) | 39 | `declaration-track:49424e62fbac38f84cce58b28dc871c1340925a38a935deed223ad14587921a0` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PositiveTraceRankHistoricalSourceEdition2.lean/declarations/example-source-edition-2.md) | 42 | `declaration-track:48cf9b1557f8b124329e1e37e67a10b1d5c253a4d5864f1755a57a726298b039` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

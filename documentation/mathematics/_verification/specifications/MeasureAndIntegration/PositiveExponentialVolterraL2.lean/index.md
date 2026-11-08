@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/PositiveExponentialVolterraL2.lean/index.md) · [Full source](../../../../MeasureAndIntegration/PositiveExponentialVolterraL2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveExponentialVolterraL2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveExponentialVolterraL2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Integration.ExponentialVolterraL2`](../../../../MeasureAndIntegration/IntegrationExponentialVolterraL2.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Analysis.Integration.ExponentialVolterraL2`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntegrationExponentialVolterraL2.lean/index.md) — import line 1; pinned internal source present.
 - `Lean` — import line 2; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../MeasureAndIntegration/PositiveExponentialVolterraL2.lean/declarations/example.md) | 8 | `declaration-track:d7142c880fe18c881bec9fa8e4058d943859950a9a7dc259379493b9f0edb91c` |
-| 2 | `elab` | [(anonymous)](../../../../MeasureAndIntegration/PositiveExponentialVolterraL2.lean/declarations/elab.md) | 16 | `declaration-track:0f11aca6b5ec64b05c73f099486460414380ce9aefc1dc0e44226412b31bc910` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveExponentialVolterraL2.lean/declarations/example.md) | 8 | `declaration-track:d7142c880fe18c881bec9fa8e4058d943859950a9a7dc259379493b9f0edb91c` |
+| 2 | `elab` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PositiveExponentialVolterraL2.lean/declarations/elab.md) | 16 | `declaration-track:0f11aca6b5ec64b05c73f099486460414380ce9aefc1dc0e44226412b31bc910` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

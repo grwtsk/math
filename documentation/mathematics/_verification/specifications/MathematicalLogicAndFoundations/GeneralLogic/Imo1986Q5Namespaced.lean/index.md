@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Imo1986Q5Namespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Imo1986Q5Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Imo1986Q5Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Imo1986Q5Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [IsGood](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Imo1986Q5Namespaced.lean/declarations/isgood.md) | 41 | `declaration-track:c422274f7c34662b282dcb2ebd4fce3d73cff8fe28bb16aa7de160e6540d376e` |
-| 2 | `theorem` | [map_add](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Imo1986Q5Namespaced.lean/declarations/map-add.md) | 51 | `result-track:7b010fac30029ecb52610811e15466bff859a6b5bfa31df68ae0c6ac2f04f985` |
-| 3 | `theorem` | [map_eq_zero](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Imo1986Q5Namespaced.lean/declarations/map-eq-zero.md) | 54 | `result-track:92e32320b5f73154b2b60892e23f3805d9305da36b0c7b37107047c2aee2dff4` |
-| 4 | `theorem` | [map_ne_zero_iff](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Imo1986Q5Namespaced.lean/declarations/map-ne-zero-iff.md) | 59 | `result-track:b5e2384f0e213548d4234e00c698b98f47fae8b229cf7238b2966c8586989532` |
-| 5 | `theorem` | [map_of_lt_two](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Imo1986Q5Namespaced.lean/declarations/map-of-lt-two.md) | 61 | `result-track:2a62ab9a45890543de9eefcafc81c5cd8d606b125b8544a0fb9ef55b8005e52f` |
-| 6 | `theorem` | [map_eq](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Imo1986Q5Namespaced.lean/declarations/map-eq.md) | 71 | `result-track:64ae5d5622501e25b26ddec457d4b791493a9bd4309218c0950b772edb18d331` |
-| 7 | `theorem` | [isGood_iff](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Imo1986Q5Namespaced.lean/declarations/isgood-iff.md) | 78 | `result-track:10a74fb3ceb7e867244dd5bf5d2cb2234ed8673c7440168a7e8679d98ef1b505` |
+| 1 | `structure` | [IsGood](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Imo1986Q5Namespaced.lean/declarations/isgood.md) | 41 | `declaration-track:c422274f7c34662b282dcb2ebd4fce3d73cff8fe28bb16aa7de160e6540d376e` |
+| 2 | `theorem` | [map_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Imo1986Q5Namespaced.lean/declarations/map-add.md) | 51 | `result-track:7b010fac30029ecb52610811e15466bff859a6b5bfa31df68ae0c6ac2f04f985` |
+| 3 | `theorem` | [map_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Imo1986Q5Namespaced.lean/declarations/map-eq-zero.md) | 54 | `result-track:92e32320b5f73154b2b60892e23f3805d9305da36b0c7b37107047c2aee2dff4` |
+| 4 | `theorem` | [map_ne_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Imo1986Q5Namespaced.lean/declarations/map-ne-zero-iff.md) | 59 | `result-track:b5e2384f0e213548d4234e00c698b98f47fae8b229cf7238b2966c8586989532` |
+| 5 | `theorem` | [map_of_lt_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Imo1986Q5Namespaced.lean/declarations/map-of-lt-two.md) | 61 | `result-track:2a62ab9a45890543de9eefcafc81c5cd8d606b125b8544a0fb9ef55b8005e52f` |
+| 6 | `theorem` | [map_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Imo1986Q5Namespaced.lean/declarations/map-eq.md) | 71 | `result-track:64ae5d5622501e25b26ddec457d4b791493a9bd4309218c0950b772edb18d331` |
+| 7 | `theorem` | [isGood_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Imo1986Q5Namespaced.lean/declarations/isgood-iff.md) | 78 | `result-track:10a74fb3ceb7e867244dd5bf5d2cb2234ed8673c7440168a7e8679d98ef1b505` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

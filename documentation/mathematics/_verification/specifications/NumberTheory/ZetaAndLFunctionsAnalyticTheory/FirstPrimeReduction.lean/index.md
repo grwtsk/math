@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FirstPrimeReduction.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FirstPrimeReduction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FirstPrimeReduction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FirstPrimeReduction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sourceQuadraticValue_eq_centered_firstPrime](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FirstPrimeReduction.lean/declarations/sourcequadraticvalue-eq-centered-firstprime.md) | 13 | `result-track:9aaf6a2768891c7eb997381d1351faf93b2709ed5b7619cfc6c5f7457a1f20e1` |
-| 2 | `theorem` | [source_lower_comparison](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FirstPrimeReduction.lean/declarations/source-lower-comparison.md) | 21 | `result-track:1cabce9b3c06c4eab294c7e3da2e0e35513645b02df107c8309dfba2db1567ef` |
-| 3 | `theorem` | [source_negativePart_comparison](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FirstPrimeReduction.lean/declarations/source-negativepart-comparison.md) | 31 | `result-track:c511ef23398462660a3a43d14c469e18bf503d6a3ed59a6a97c6feff77c185a9` |
+| 1 | `theorem` | [sourceQuadraticValue_eq_centered_firstPrime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FirstPrimeReduction.lean/declarations/sourcequadraticvalue-eq-centered-firstprime.md) | 13 | `result-track:9aaf6a2768891c7eb997381d1351faf93b2709ed5b7619cfc6c5f7457a1f20e1` |
+| 2 | `theorem` | [source_lower_comparison](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FirstPrimeReduction.lean/declarations/source-lower-comparison.md) | 21 | `result-track:1cabce9b3c06c4eab294c7e3da2e0e35513645b02df107c8309dfba2db1567ef` |
+| 3 | `theorem` | [source_negativePart_comparison](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FirstPrimeReduction.lean/declarations/source-negativepart-comparison.md) | 31 | `result-track:c511ef23398462660a3a43d14c469e18bf503d6a3ed59a6a97c6feff77c185a9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

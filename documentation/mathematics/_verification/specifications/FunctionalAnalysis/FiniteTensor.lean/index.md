@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/FiniteTensor.lean/index.md) · [Full source](../../../../FunctionalAnalysis/FiniteTensor.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FiniteTensor.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FiniteTensor.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [tensorVector](../../../../FunctionalAnalysis/FiniteTensor.lean/declarations/tensorvector.md) | 18 | `declaration-track:9511c27263ab59cfa74de34e4931f6abb03cfe57045592ccf744d57aa9b94afd` |
-| 2 | `theorem` | [tensorVector_apply](../../../../FunctionalAnalysis/FiniteTensor.lean/declarations/tensorvector-apply.md) | 23 | `result-track:1b859edef7ca71b4f12a6eec6ad9e7d300684555a24a42e0c08201d5c108a837` |
-| 3 | `theorem` | [tensorVector_norm_sq](../../../../FunctionalAnalysis/FiniteTensor.lean/declarations/tensorvector-norm-sq.md) | 30 | `result-track:af0a755407c26092227abf38aab6cfcd37c8eaccc0aeb0c3b4cdfa17232089ac` |
-| 4 | `theorem` | [tensorVector_norm](../../../../FunctionalAnalysis/FiniteTensor.lean/declarations/tensorvector-norm.md) | 41 | `result-track:0eaf4b0ca14b0523a7c28deb20b47d4ce1bdbd4d6f2deb6022acec9d2718b915` |
+| 1 | `def` | [tensorVector](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FiniteTensor.lean/declarations/tensorvector.md) | 18 | `declaration-track:9511c27263ab59cfa74de34e4931f6abb03cfe57045592ccf744d57aa9b94afd` |
+| 2 | `theorem` | [tensorVector_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FiniteTensor.lean/declarations/tensorvector-apply.md) | 23 | `result-track:1b859edef7ca71b4f12a6eec6ad9e7d300684555a24a42e0c08201d5c108a837` |
+| 3 | `theorem` | [tensorVector_norm_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FiniteTensor.lean/declarations/tensorvector-norm-sq.md) | 30 | `result-track:af0a755407c26092227abf38aab6cfcd37c8eaccc0aeb0c3b4cdfa17232089ac` |
+| 4 | `theorem` | [tensorVector_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/FiniteTensor.lean/declarations/tensorvector-norm.md) | 41 | `result-track:0eaf4b0ca14b0523a7c28deb20b47d4ce1bdbd4d6f2deb6022acec9d2718b915` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

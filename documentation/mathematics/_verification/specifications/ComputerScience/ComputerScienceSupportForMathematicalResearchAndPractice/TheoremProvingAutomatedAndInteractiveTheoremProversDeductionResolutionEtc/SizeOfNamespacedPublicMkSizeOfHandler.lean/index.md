@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SizeOfNamespacedPublicMkSizeOfHandler.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SizeOfNamespacedPublicMkSizeOfHandler.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SizeOfNamespacedPublicMkSizeOfHandler.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SizeOfNamespacedPublicMkSizeOfHandler.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mkSizeOfHandler](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SizeOfNamespacedPublicMkSizeOfHandler.lean/declarations/mksizeofhandler.md) | 32 | `declaration-track:bea0f9e4becc4bd40cc695fd57d03717e74c452a49f0a166c4dcd3d9e4d565ef` |
-| 2 | `builtin_initialize` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SizeOfNamespacedPublicMkSizeOfHandler.lean/declarations/builtin-initialize.md) | 40 | `declaration-track:7ae3457ef33853eded0dbf0d846e9d4df6a7087a6180fd8d2e5a3cfec68e7844` |
+| 1 | `def` | [mkSizeOfHandler](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SizeOfNamespacedPublicMkSizeOfHandler.lean/declarations/mksizeofhandler.md) | 32 | `declaration-track:bea0f9e4becc4bd40cc695fd57d03717e74c452a49f0a166c4dcd3d9e4d565ef` |
+| 2 | `builtin_initialize` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SizeOfNamespacedPublicMkSizeOfHandler.lean/declarations/builtin-initialize.md) | 40 | `declaration-track:7ae3457ef33853eded0dbf0d846e9d4df6a7087a6180fd8d2e5a3cfec68e7844` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/StrictPositivityFromContrast.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/StrictPositivityFromContrast.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/StrictPositivityFromContrast.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/StrictPositivityFromContrast.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [Edge Channel Sum](../../../../../RealFunctions/EdgeChannelSum.lean/index.md) — import line 19; pinned internal source present.
-- [Neighbor And Total Sums](../../../../../Combinatorics/GraphTheory/NeighborAndTotalSums.lean/index.md) — import line 20; pinned internal source present.
+- [Edge Channel Sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/EdgeChannelSum.lean/index.md) — import line 19; pinned internal source present.
+- [Neighbor And Total Sums](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/NeighborAndTotalSums.lean/index.md) — import line 20; pinned internal source present.
 - `Folder.Spectral.Graph` — import line 22; external provider; requires a separately pinned dependency.
 - `Folder.Spectral.Tensor` — import line 23; external provider; requires a separately pinned dependency.
 
@@ -60,8 +60,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [HasChannelContrast](../../../../../Combinatorics/GraphTheory/StrictPositivityFromContrast.lean/declarations/haschannelcontrast.md) | 46 | `declaration-track:ad71f4d47649bb71b7d23917c80f67a64994bfb25535cc2f9eb9d80b84fa1ccb` |
-| 2 | `theorem` | [energy_positive_of_contrast](../../../../../Combinatorics/GraphTheory/StrictPositivityFromContrast.lean/declarations/energy-positive-of-contrast.md) | 54 | `result-track:ba54f734768c556a0a2bd5b0b5e1a5e8174ffa136fa2c2c0d901f882c00a8f76` |
+| 1 | `def` | [HasChannelContrast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/StrictPositivityFromContrast.lean/declarations/haschannelcontrast.md) | 46 | `declaration-track:ad71f4d47649bb71b7d23917c80f67a64994bfb25535cc2f9eb9d80b84fa1ccb` |
+| 2 | `theorem` | [energy_positive_of_contrast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/StrictPositivityFromContrast.lean/declarations/energy-positive-of-contrast.md) | 54 | `result-track:ba54f734768c556a0a2bd5b0b5e1a5e8174ffa136fa2c2c0d901f882c00a8f76` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteUncorrelatedBudget.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteUncorrelatedBudget.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteUncorrelatedBudget.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteUncorrelatedBudget.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [variance_sum_of_uncorrelated](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteUncorrelatedBudget.lean/declarations/variance-sum-of-uncorrelated.md) | 16 | `result-track:9526bf4f5c5201fe7531ef7b02ff9284bbe0711001592900afe5de21a80db7e1` |
-| 2 | `theorem` | [variance_sum_le_card_mul](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteUncorrelatedBudget.lean/declarations/variance-sum-le-card-mul.md) | 31 | `result-track:e65d70211076e34a8feb6a542e00ed650219e4a50907ec87559bf0e57adfdeec` |
-| 3 | `theorem` | [variance_average_le](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteUncorrelatedBudget.lean/declarations/variance-average-le.md) | 42 | `result-track:272e4ac91f74f061db0355d41d6cba8747f7c1dd305246ecb6237761ca1c4459` |
+| 1 | `theorem` | [variance_sum_of_uncorrelated](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteUncorrelatedBudget.lean/declarations/variance-sum-of-uncorrelated.md) | 16 | `result-track:9526bf4f5c5201fe7531ef7b02ff9284bbe0711001592900afe5de21a80db7e1` |
+| 2 | `theorem` | [variance_sum_le_card_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteUncorrelatedBudget.lean/declarations/variance-sum-le-card-mul.md) | 31 | `result-track:e65d70211076e34a8feb6a542e00ed650219e4a50907ec87559bf0e57adfdeec` |
+| 3 | `theorem` | [variance_average_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteUncorrelatedBudget.lean/declarations/variance-average-le.md) | 42 | `result-track:272e4ac91f74f061db0355d41d6cba8747f7c1dd305246ecb6237761ca1c4459` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

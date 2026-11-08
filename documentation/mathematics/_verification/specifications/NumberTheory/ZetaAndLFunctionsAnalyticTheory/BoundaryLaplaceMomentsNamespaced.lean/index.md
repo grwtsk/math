@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BoundaryLaplaceMomentsNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BoundaryLaplaceMomentsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BoundaryLaplaceMomentsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BoundaryLaplaceMomentsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [profilePoleFactor](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BoundaryLaplaceMomentsNamespaced.lean/declarations/profilepolefactor.md) | 16 | `declaration-track:0baef71afec056df01c2ed6d79619769e7daaade7f8fb3bdd02bcba66d5cbd5a` |
-| 2 | `theorem` | [profile_laplace_eventually_factor](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BoundaryLaplaceMomentsNamespaced.lean/declarations/profile-laplace-eventually-factor.md) | 19 | `result-track:f13a38b920f42045dbed5d6d6b82e10e8fc70021fbe30b69e5014c379658d76a` |
-| 3 | `theorem` | [first_derivative_test](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BoundaryLaplaceMomentsNamespaced.lean/declarations/first-derivative-test.md) | 30 | `result-track:3e96cf96a46c323fe9b148c7e51063ce402429cf5df3c81ac442708adaa1d2ac` |
-| 4 | `theorem` | [second_derivative_test](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BoundaryLaplaceMomentsNamespaced.lean/declarations/second-derivative-test.md) | 40 | `result-track:1cc60b39b79f0c5156122eee75f7921c5b06beab1bdfe1fe07979e945274c152` |
+| 1 | `def` | [profilePoleFactor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BoundaryLaplaceMomentsNamespaced.lean/declarations/profilepolefactor.md) | 16 | `declaration-track:0baef71afec056df01c2ed6d79619769e7daaade7f8fb3bdd02bcba66d5cbd5a` |
+| 2 | `theorem` | [profile_laplace_eventually_factor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BoundaryLaplaceMomentsNamespaced.lean/declarations/profile-laplace-eventually-factor.md) | 19 | `result-track:f13a38b920f42045dbed5d6d6b82e10e8fc70021fbe30b69e5014c379658d76a` |
+| 3 | `theorem` | [first_derivative_test](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BoundaryLaplaceMomentsNamespaced.lean/declarations/first-derivative-test.md) | 30 | `result-track:3e96cf96a46c323fe9b148c7e51063ce402429cf5df3c81ac442708adaa1d2ac` |
+| 4 | `theorem` | [second_derivative_test](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BoundaryLaplaceMomentsNamespaced.lean/declarations/second-derivative-test.md) | 40 | `result-track:1cc60b39b79f0c5156122eee75f7921c5b06beab1bdfe1fe07979e945274c152` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

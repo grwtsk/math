@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Grains.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Grains.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Grains.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Grains.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Grain](../../../../../ComputerScience/AlgorithmsInComputerScience/Grains.lean/declarations/grain.md) | 18 | `declaration-track:faee38680036cbbb582d3127b9406d3da1bdf7e0812178d4adc2507a7234bbb4` |
-| 2 | `structure` | [GrainDecomposition](../../../../../ComputerScience/AlgorithmsInComputerScience/Grains.lean/declarations/graindecomposition.md) | 26 | `declaration-track:56e1de93b3ec5e5aae757ab4c33d8bee83b1b3f9972acfbc79060674ad44f135` |
-| 3 | `def` | [GrainDecomposition.usableForMajorProof](../../../../../ComputerScience/AlgorithmsInComputerScience/Grains.lean/declarations/graindecomposition-usableformajorproof.md) | 36 | `declaration-track:44bddf7071ab70832f11026c1e128d6e4c6410f0233a1dd3f138e1bab19feeb1` |
-| 4 | `theorem` | [GrainDecomposition.usableForMajorProof_of_fields](../../../../../ComputerScience/AlgorithmsInComputerScience/Grains.lean/declarations/graindecomposition-usableformajorproof-of-fields.md) | 42 | `result-track:1679f757a03807667a63050b51ff6332bbba39068e3ee3f4eb0016363838249d` |
+| 1 | `structure` | [Grain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Grains.lean/declarations/grain.md) | 18 | `declaration-track:faee38680036cbbb582d3127b9406d3da1bdf7e0812178d4adc2507a7234bbb4` |
+| 2 | `structure` | [GrainDecomposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Grains.lean/declarations/graindecomposition.md) | 26 | `declaration-track:56e1de93b3ec5e5aae757ab4c33d8bee83b1b3f9972acfbc79060674ad44f135` |
+| 3 | `def` | [GrainDecomposition.usableForMajorProof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Grains.lean/declarations/graindecomposition-usableformajorproof.md) | 36 | `declaration-track:44bddf7071ab70832f11026c1e128d6e4c6410f0233a1dd3f138e1bab19feeb1` |
+| 4 | `theorem` | [GrainDecomposition.usableForMajorProof_of_fields](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Grains.lean/declarations/graindecomposition-usableformajorproof-of-fields.md) | 42 | `result-track:1679f757a03807667a63050b51ff6332bbba39068e3ee3f4eb0016363838249d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

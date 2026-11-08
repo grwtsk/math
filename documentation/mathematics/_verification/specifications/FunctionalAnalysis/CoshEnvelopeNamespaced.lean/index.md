@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/CoshEnvelopeNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/CoshEnvelopeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CoshEnvelopeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CoshEnvelopeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,20 +62,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [envelope](../../../../FunctionalAnalysis/CoshEnvelopeNamespaced.lean/declarations/envelope.md) | 24 | `declaration-track:34760064af2df31c06c3c854fb554666ef442a318f896114d998e3a1989dadf4` |
-| 2 | `def` | [logEnvelope](../../../../FunctionalAnalysis/CoshEnvelopeNamespaced.lean/declarations/logenvelope.md) | 25 | `declaration-track:2f9af238ef65d56099dea79adfffa1140455764d93e6c666f87890748c70a4d5` |
-| 3 | `def` | [logSlope](../../../../FunctionalAnalysis/CoshEnvelopeNamespaced.lean/declarations/logslope.md) | 26 | `declaration-track:29151e72bc0bd74bafc9572641ed867c59557b53137eb4bf38b544795d394bd6` |
-| 4 | `theorem` | [logEnvelope_hasDerivAt](../../../../FunctionalAnalysis/CoshEnvelopeNamespaced.lean/declarations/logenvelope-hasderivat.md) | 28 | `result-track:cf621b630a7eeb17b1aabc1e7ed05d37cf892bc7f56283864d2ac396b5a417f2` |
-| 5 | `theorem` | [logSlope_hasDerivAt](../../../../FunctionalAnalysis/CoshEnvelopeNamespaced.lean/declarations/logslope-hasderivat.md) | 37 | `result-track:620874afb50a06d0957bbf6ba0f429d1fdfb47f269e964f8e49a87feeea104aa` |
-| 6 | `theorem` | [logEnvelope_convex](../../../../FunctionalAnalysis/CoshEnvelopeNamespaced.lean/declarations/logenvelope-convex.md) | 49 | `result-track:45ff04f7d14cc7a1fd87f2db40290922a28f9adddd6c365b2262f58b1f43c22a` |
-| 7 | `theorem` | [envelope_pos](../../../../FunctionalAnalysis/CoshEnvelopeNamespaced.lean/declarations/envelope-pos.md) | 60 | `result-track:4f16dceb573a541b44ebb1039bc7f996f79bdab7f814a271394ab2984ef84877` |
-| 8 | `theorem` | [logEnvelope_eq_log](../../../../FunctionalAnalysis/CoshEnvelopeNamespaced.lean/declarations/logenvelope-eq-log.md) | 64 | `result-track:2d7c944d2a82bb5bd2474c2f35dd96f74dfa0c43463edd6ef6874a8a652e58ff` |
-| 9 | `theorem` | [envelope_le_max_endpoints](../../../../FunctionalAnalysis/CoshEnvelopeNamespaced.lean/declarations/envelope-le-max-endpoints.md) | 73 | `result-track:69d07e3ac73f1f0a686f2bb463e1c846f566e5edd6efa05e898db8aa4afff52a` |
-| 10 | `theorem` | [exp_one_lt_rational](../../../../FunctionalAnalysis/CoshEnvelopeNamespaced.lean/declarations/exp-one-lt-rational.md) | 83 | `result-track:0aa39f2b38643606b7e3b1a3f5fb9a3359808e7219bce271d3c4f30ba952bcf2` |
-| 11 | `theorem` | [envelope_exp_formula](../../../../FunctionalAnalysis/CoshEnvelopeNamespaced.lean/declarations/envelope-exp-formula.md) | 86 | `result-track:fcea77f27cfb7e2bc1f97cb8efae18ea1f8e7263b815981599a954923c487413` |
-| 12 | `theorem` | [envelope_one_lt_six](../../../../FunctionalAnalysis/CoshEnvelopeNamespaced.lean/declarations/envelope-one-lt-six.md) | 94 | `result-track:adf71f04cd34c5e900f3ebf79f78385efb4a7aab02ea2c17570049edcab3c322` |
-| 13 | `theorem` | [envelope_nat_endpoint_le](../../../../FunctionalAnalysis/CoshEnvelopeNamespaced.lean/declarations/envelope-nat-endpoint-le.md) | 100 | `result-track:1384a3f153cd30ce4b7ca47c509bdaa43f308d97cd2e1127809fd2583560e1d2` |
-| 14 | `theorem` | [envelope_le_rational_endpoints](../../../../FunctionalAnalysis/CoshEnvelopeNamespaced.lean/declarations/envelope-le-rational-endpoints.md) | 109 | `result-track:cc5d5859945b4cc9c7c8ca47baaffacf15866e870806caf61e523ef6851bc413` |
+| 1 | `def` | [envelope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CoshEnvelopeNamespaced.lean/declarations/envelope.md) | 24 | `declaration-track:34760064af2df31c06c3c854fb554666ef442a318f896114d998e3a1989dadf4` |
+| 2 | `def` | [logEnvelope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CoshEnvelopeNamespaced.lean/declarations/logenvelope.md) | 25 | `declaration-track:2f9af238ef65d56099dea79adfffa1140455764d93e6c666f87890748c70a4d5` |
+| 3 | `def` | [logSlope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CoshEnvelopeNamespaced.lean/declarations/logslope.md) | 26 | `declaration-track:29151e72bc0bd74bafc9572641ed867c59557b53137eb4bf38b544795d394bd6` |
+| 4 | `theorem` | [logEnvelope_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CoshEnvelopeNamespaced.lean/declarations/logenvelope-hasderivat.md) | 28 | `result-track:cf621b630a7eeb17b1aabc1e7ed05d37cf892bc7f56283864d2ac396b5a417f2` |
+| 5 | `theorem` | [logSlope_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CoshEnvelopeNamespaced.lean/declarations/logslope-hasderivat.md) | 37 | `result-track:620874afb50a06d0957bbf6ba0f429d1fdfb47f269e964f8e49a87feeea104aa` |
+| 6 | `theorem` | [logEnvelope_convex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CoshEnvelopeNamespaced.lean/declarations/logenvelope-convex.md) | 49 | `result-track:45ff04f7d14cc7a1fd87f2db40290922a28f9adddd6c365b2262f58b1f43c22a` |
+| 7 | `theorem` | [envelope_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CoshEnvelopeNamespaced.lean/declarations/envelope-pos.md) | 60 | `result-track:4f16dceb573a541b44ebb1039bc7f996f79bdab7f814a271394ab2984ef84877` |
+| 8 | `theorem` | [logEnvelope_eq_log](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CoshEnvelopeNamespaced.lean/declarations/logenvelope-eq-log.md) | 64 | `result-track:2d7c944d2a82bb5bd2474c2f35dd96f74dfa0c43463edd6ef6874a8a652e58ff` |
+| 9 | `theorem` | [envelope_le_max_endpoints](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CoshEnvelopeNamespaced.lean/declarations/envelope-le-max-endpoints.md) | 73 | `result-track:69d07e3ac73f1f0a686f2bb463e1c846f566e5edd6efa05e898db8aa4afff52a` |
+| 10 | `theorem` | [exp_one_lt_rational](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CoshEnvelopeNamespaced.lean/declarations/exp-one-lt-rational.md) | 83 | `result-track:0aa39f2b38643606b7e3b1a3f5fb9a3359808e7219bce271d3c4f30ba952bcf2` |
+| 11 | `theorem` | [envelope_exp_formula](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CoshEnvelopeNamespaced.lean/declarations/envelope-exp-formula.md) | 86 | `result-track:fcea77f27cfb7e2bc1f97cb8efae18ea1f8e7263b815981599a954923c487413` |
+| 12 | `theorem` | [envelope_one_lt_six](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CoshEnvelopeNamespaced.lean/declarations/envelope-one-lt-six.md) | 94 | `result-track:adf71f04cd34c5e900f3ebf79f78385efb4a7aab02ea2c17570049edcab3c322` |
+| 13 | `theorem` | [envelope_nat_endpoint_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CoshEnvelopeNamespaced.lean/declarations/envelope-nat-endpoint-le.md) | 100 | `result-track:1384a3f153cd30ce4b7ca47c509bdaa43f308d97cd2e1127809fd2583560e1d2` |
+| 14 | `theorem` | [envelope_le_rational_endpoints](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CoshEnvelopeNamespaced.lean/declarations/envelope-le-rational-endpoints.md) | 109 | `result-track:cc5d5859945b4cc9c7c8ca47baaffacf15866e870806caf61e523ef6851bc413` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

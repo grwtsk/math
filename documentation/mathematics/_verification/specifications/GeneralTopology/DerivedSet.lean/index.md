@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/DerivedSet.lean/index.md) · [Full source](../../../../GeneralTopology/DerivedSet.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DerivedSet.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DerivedSet.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,20 +58,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [AccPt.map](../../../../GeneralTopology/DerivedSet.lean/declarations/accpt-map.md) | 21 | `result-track:9f3d972de9acefc3eafa2608401fc98110fea6e6e2418a74ddb62468f865b0f6` |
-| 2 | `def` | [derivedSet](../../../../GeneralTopology/DerivedSet.lean/declarations/derivedset.md) | 33 | `declaration-track:18309acb19f08de8c698d4797b28c54519ccd4eea9ae284cc7f3691913a32d01` |
-| 3 | `lemma` | [mem_derivedSet](../../../../GeneralTopology/DerivedSet.lean/declarations/mem-derivedset.md) | 36 | `result-track:740284eac4cdb8459e8d70ecbb4bd72ce823933c104abb5dcaf1f978137861a6` |
-| 4 | `lemma` | [derivedSet_union](../../../../GeneralTopology/DerivedSet.lean/declarations/derivedset-union.md) | 38 | `result-track:137bc69cd52d0cecd3d247b699294322496e403157f55704248aebf9ee99a99b` |
-| 5 | `lemma` | [derivedSet_mono](../../../../GeneralTopology/DerivedSet.lean/declarations/derivedset-mono.md) | 42 | `result-track:8de1129417f82ce23e704e62dd8eb0b99db6f2985cd59b7b30f94ca5db37025a` |
-| 6 | `theorem` | [Continuous.image_derivedSet](../../../../GeneralTopology/DerivedSet.lean/declarations/continuous-image-derivedset.md) | 45 | `result-track:228e599a4742c98b7b1cd716d2c8bf1faab5453efd632cb867921269c8fedeeb` |
-| 7 | `lemma` | [derivedSet_subset_closure](../../../../GeneralTopology/DerivedSet.lean/declarations/derivedset-subset-closure.md) | 54 | `result-track:ce6240813a59904af30459725ce1c83df26dca7e1aef27e70a757c5f055130c9` |
-| 8 | `lemma` | [isClosed_iff_derivedSet_subset](../../../../GeneralTopology/DerivedSet.lean/declarations/isclosed-iff-derivedset-subset.md) | 57 | `result-track:41dcc80d25505e30888d7e07bd344a7079243f94938f69b426b981bb29a182f9` |
-| 9 | `lemma` | [closure_eq_self_union_derivedSet](../../../../GeneralTopology/DerivedSet.lean/declarations/closure-eq-self-union-derivedset.md) | 67 | `result-track:7e9899882ec725ca6d4fdb272f7f063981fad6838857f4fb0275065d5614f2c9` |
-| 10 | `lemma` | [derivedSet_closure](../../../../GeneralTopology/DerivedSet.lean/declarations/derivedset-closure.md) | 77 | `result-track:894f8c5f96da8dfa38ad3f9a39d97ac5d889fb8f14001da2f355163f75cac496` |
-| 11 | `lemma` | [isClosed_derivedSet](../../../../GeneralTopology/DerivedSet.lean/declarations/isclosed-derivedset.md) | 86 | `result-track:5b0d4433c4590f6d2ba8965611d5240383b3c56836c527b77b47c759b4d589d2` |
-| 12 | `lemma` | [preperfect_iff_subset_derivedSet](../../../../GeneralTopology/DerivedSet.lean/declarations/preperfect-iff-subset-derivedset.md) | 91 | `result-track:103488e2250d675dd7d5b44c241e275982e54da25b79aa85dc56f0fccae2ceb2` |
-| 13 | `lemma` | [perfect_iff_eq_derivedSet](../../../../GeneralTopology/DerivedSet.lean/declarations/perfect-iff-eq-derivedset.md) | 94 | `result-track:e2874878d22d9c3127d27b2e80400d5b294b7843ec37a0bd646b060902753465` |
-| 14 | `lemma` | [IsPreconnected.inter_derivedSet_nonempty](../../../../GeneralTopology/DerivedSet.lean/declarations/ispreconnected-inter-derivedset-nonempty.md) | 98 | `result-track:1cc44046f33874fd84774ee068df255ac69dd7a9ae804f9a6510b769bdf303dc` |
+| 1 | `theorem` | [AccPt.map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DerivedSet.lean/declarations/accpt-map.md) | 21 | `result-track:9f3d972de9acefc3eafa2608401fc98110fea6e6e2418a74ddb62468f865b0f6` |
+| 2 | `def` | [derivedSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DerivedSet.lean/declarations/derivedset.md) | 33 | `declaration-track:18309acb19f08de8c698d4797b28c54519ccd4eea9ae284cc7f3691913a32d01` |
+| 3 | `lemma` | [mem_derivedSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DerivedSet.lean/declarations/mem-derivedset.md) | 36 | `result-track:740284eac4cdb8459e8d70ecbb4bd72ce823933c104abb5dcaf1f978137861a6` |
+| 4 | `lemma` | [derivedSet_union](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DerivedSet.lean/declarations/derivedset-union.md) | 38 | `result-track:137bc69cd52d0cecd3d247b699294322496e403157f55704248aebf9ee99a99b` |
+| 5 | `lemma` | [derivedSet_mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DerivedSet.lean/declarations/derivedset-mono.md) | 42 | `result-track:8de1129417f82ce23e704e62dd8eb0b99db6f2985cd59b7b30f94ca5db37025a` |
+| 6 | `theorem` | [Continuous.image_derivedSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DerivedSet.lean/declarations/continuous-image-derivedset.md) | 45 | `result-track:228e599a4742c98b7b1cd716d2c8bf1faab5453efd632cb867921269c8fedeeb` |
+| 7 | `lemma` | [derivedSet_subset_closure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DerivedSet.lean/declarations/derivedset-subset-closure.md) | 54 | `result-track:ce6240813a59904af30459725ce1c83df26dca7e1aef27e70a757c5f055130c9` |
+| 8 | `lemma` | [isClosed_iff_derivedSet_subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DerivedSet.lean/declarations/isclosed-iff-derivedset-subset.md) | 57 | `result-track:41dcc80d25505e30888d7e07bd344a7079243f94938f69b426b981bb29a182f9` |
+| 9 | `lemma` | [closure_eq_self_union_derivedSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DerivedSet.lean/declarations/closure-eq-self-union-derivedset.md) | 67 | `result-track:7e9899882ec725ca6d4fdb272f7f063981fad6838857f4fb0275065d5614f2c9` |
+| 10 | `lemma` | [derivedSet_closure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DerivedSet.lean/declarations/derivedset-closure.md) | 77 | `result-track:894f8c5f96da8dfa38ad3f9a39d97ac5d889fb8f14001da2f355163f75cac496` |
+| 11 | `lemma` | [isClosed_derivedSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DerivedSet.lean/declarations/isclosed-derivedset.md) | 86 | `result-track:5b0d4433c4590f6d2ba8965611d5240383b3c56836c527b77b47c759b4d589d2` |
+| 12 | `lemma` | [preperfect_iff_subset_derivedSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DerivedSet.lean/declarations/preperfect-iff-subset-derivedset.md) | 91 | `result-track:103488e2250d675dd7d5b44c241e275982e54da25b79aa85dc56f0fccae2ceb2` |
+| 13 | `lemma` | [perfect_iff_eq_derivedSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DerivedSet.lean/declarations/perfect-iff-eq-derivedset.md) | 94 | `result-track:e2874878d22d9c3127d27b2e80400d5b294b7843ec37a0bd646b060902753465` |
+| 14 | `lemma` | [IsPreconnected.inter_derivedSet_nonempty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/DerivedSet.lean/declarations/ispreconnected-inter-derivedset-nonempty.md) | 98 | `result-track:1cc44046f33874fd84774ee068df255ac69dd7a9ae804f9a6510b769bdf303dc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

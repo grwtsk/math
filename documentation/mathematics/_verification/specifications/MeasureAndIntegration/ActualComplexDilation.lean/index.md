@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ActualComplexDilation.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ActualComplexDilation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualComplexDilation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualComplexDilation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualComplexOperator](../../../../MeasureAndIntegration/ActualComplexDilation.lean/declarations/actualcomplexoperator.md) | 13 | `declaration-track:c9511c22929166188108cb5bb06aeceb5adb99d67fa9a8790d68e8b85764f7c6` |
-| 2 | `theorem` | [actualComplexOperator_memLp](../../../../MeasureAndIntegration/ActualComplexDilation.lean/declarations/actualcomplexoperator-memlp.md) | 15 | `result-track:9c8317531b53117de589ad56b126078673379952b2bfb3450b8c10f6feac09ed` |
-| 3 | `def` | [actualComplexL2](../../../../MeasureAndIntegration/ActualComplexDilation.lean/declarations/actualcomplexl2.md) | 19 | `declaration-track:5290a994cd64b2095e51f01755892952c877bfc65c36ac129870244aab145576` |
-| 4 | `theorem` | [actualComplexL2_ae](../../../../MeasureAndIntegration/ActualComplexDilation.lean/declarations/actualcomplexl2-ae.md) | 22 | `result-track:5ceac2c822042dcb1f0869c20ffeead63ae2d6655fa5b4be5cd3fa44c4ba5898` |
-| 5 | `theorem` | [actualComplexL2_norm_sq](../../../../MeasureAndIntegration/ActualComplexDilation.lean/declarations/actualcomplexl2-norm-sq.md) | 26 | `result-track:e9d773b0c763204f93616e38588549e2b265f515666b6b8b28222f70faa9970b` |
-| 6 | `theorem` | [dilate_actual_ae](../../../../MeasureAndIntegration/ActualComplexDilation.lean/declarations/dilate-actual-ae.md) | 33 | `result-track:659864c30c9bc4d442b8ea3fbb0758c7ca98d9de84411d42893354117007a601` |
-| 7 | `theorem` | [dilate_actual_norm](../../../../MeasureAndIntegration/ActualComplexDilation.lean/declarations/dilate-actual-norm.md) | 41 | `result-track:edd9af7cf0c191742076d6bcd9834131bb3f6f0a28154bbd436e0ecfd644f4c9` |
-| 8 | `def` | [integerOrbit](../../../../MeasureAndIntegration/ActualComplexDilation.lean/declarations/integerorbit.md) | 46 | `declaration-track:dcf939faa229c4a4d7fb042acfebbf52365740f79cd57063c9abb909472648a6` |
-| 9 | `theorem` | [integerOrbit_ae](../../../../MeasureAndIntegration/ActualComplexDilation.lean/declarations/integerorbit-ae.md) | 49 | `result-track:3d0f89636cabb372891d64d0938d2a53448038095f966c721a2f77f15993181d` |
-| 10 | `theorem` | [integerOrbit_norm](../../../../MeasureAndIntegration/ActualComplexDilation.lean/declarations/integerorbit-norm.md) | 54 | `result-track:7b3992423d7abad1bb8058eef8c3dca0c4cdef9d285b20dbc0c6ae613d0b5b49` |
+| 1 | `def` | [actualComplexOperator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualComplexDilation.lean/declarations/actualcomplexoperator.md) | 13 | `declaration-track:c9511c22929166188108cb5bb06aeceb5adb99d67fa9a8790d68e8b85764f7c6` |
+| 2 | `theorem` | [actualComplexOperator_memLp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualComplexDilation.lean/declarations/actualcomplexoperator-memlp.md) | 15 | `result-track:9c8317531b53117de589ad56b126078673379952b2bfb3450b8c10f6feac09ed` |
+| 3 | `def` | [actualComplexL2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualComplexDilation.lean/declarations/actualcomplexl2.md) | 19 | `declaration-track:5290a994cd64b2095e51f01755892952c877bfc65c36ac129870244aab145576` |
+| 4 | `theorem` | [actualComplexL2_ae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualComplexDilation.lean/declarations/actualcomplexl2-ae.md) | 22 | `result-track:5ceac2c822042dcb1f0869c20ffeead63ae2d6655fa5b4be5cd3fa44c4ba5898` |
+| 5 | `theorem` | [actualComplexL2_norm_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualComplexDilation.lean/declarations/actualcomplexl2-norm-sq.md) | 26 | `result-track:e9d773b0c763204f93616e38588549e2b265f515666b6b8b28222f70faa9970b` |
+| 6 | `theorem` | [dilate_actual_ae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualComplexDilation.lean/declarations/dilate-actual-ae.md) | 33 | `result-track:659864c30c9bc4d442b8ea3fbb0758c7ca98d9de84411d42893354117007a601` |
+| 7 | `theorem` | [dilate_actual_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualComplexDilation.lean/declarations/dilate-actual-norm.md) | 41 | `result-track:edd9af7cf0c191742076d6bcd9834131bb3f6f0a28154bbd436e0ecfd644f4c9` |
+| 8 | `def` | [integerOrbit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualComplexDilation.lean/declarations/integerorbit.md) | 46 | `declaration-track:dcf939faa229c4a4d7fb042acfebbf52365740f79cd57063c9abb909472648a6` |
+| 9 | `theorem` | [integerOrbit_ae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualComplexDilation.lean/declarations/integerorbit-ae.md) | 49 | `result-track:3d0f89636cabb372891d64d0938d2a53448038095f966c721a2f77f15993181d` |
+| 10 | `theorem` | [integerOrbit_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualComplexDilation.lean/declarations/integerorbit-norm.md) | 54 | `result-track:7b3992423d7abad1bb8058eef8c3dca0c4cdef9d285b20dbc0c6ae613d0b5b49` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

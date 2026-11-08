@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/DigitsSeriesMembershipAndInjectivity.lean/index.md) · [Full source](../../../../RealFunctions/DigitsSeriesMembershipAndInjectivity.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DigitsSeriesMembershipAndInjectivity.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DigitsSeriesMembershipAndInjectivity.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [designatedTernaryExpansion](../../../../RealFunctions/DigitsSeriesMembershipAndInjectivity.lean/declarations/designatedternaryexpansion.md) | 36 | `declaration-track:9841889c8c3f5018d40f2ef4c0afba8739983290b18d3d943b368dffe5d04539` |
-| 2 | `theorem` | [designatedTernaryExpansion_ne_one](../../../../RealFunctions/DigitsSeriesMembershipAndInjectivity.lean/declarations/designatedternaryexpansion-ne-one.md) | 40 | `result-track:7b808bc6dde752125f4de8a9a18c2ac5aa1c244e11af08a6f7931ba46c8c9f82` |
-| 3 | `theorem` | [designatedTernaryExpansion_value](../../../../RealFunctions/DigitsSeriesMembershipAndInjectivity.lean/declarations/designatedternaryexpansion-value.md) | 46 | `result-track:6fdccbc156805ebef0ddaaace18e324561986b2425bd96971145482a9e213c3f` |
-| 4 | `def` | [designatedCantorScalar](../../../../RealFunctions/DigitsSeriesMembershipAndInjectivity.lean/declarations/designatedcantorscalar.md) | 54 | `declaration-track:a93ce53e03a1e1de45929962f2db8a3fa2185621874e326582bbf1231191b221` |
-| 5 | `theorem` | [designatedCantorScalar_series](../../../../RealFunctions/DigitsSeriesMembershipAndInjectivity.lean/declarations/designatedcantorscalar-series.md) | 58 | `result-track:1a64fb7ddab90f889eaddb3d82baac681a7840a5a9ba810cb519df0790d3c278` |
-| 6 | `theorem` | [designatedCantorScalar_mem_cantorSet](../../../../RealFunctions/DigitsSeriesMembershipAndInjectivity.lean/declarations/designatedcantorscalar-mem-cantorset.md) | 69 | `result-track:465c44759b47c867678c54626c6ab30785beabd971b87825a36296844dea891a` |
-| 7 | `theorem` | [designatedCantorScalar_injective](../../../../RealFunctions/DigitsSeriesMembershipAndInjectivity.lean/declarations/designatedcantorscalar-injective.md) | 75 | `result-track:9747e92b15aaa1721f5655bbab46dd32d5ba24d3a2b2b46d777ad6b4a2cf5bf5` |
+| 1 | `def` | [designatedTernaryExpansion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DigitsSeriesMembershipAndInjectivity.lean/declarations/designatedternaryexpansion.md) | 36 | `declaration-track:9841889c8c3f5018d40f2ef4c0afba8739983290b18d3d943b368dffe5d04539` |
+| 2 | `theorem` | [designatedTernaryExpansion_ne_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DigitsSeriesMembershipAndInjectivity.lean/declarations/designatedternaryexpansion-ne-one.md) | 40 | `result-track:7b808bc6dde752125f4de8a9a18c2ac5aa1c244e11af08a6f7931ba46c8c9f82` |
+| 3 | `theorem` | [designatedTernaryExpansion_value](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DigitsSeriesMembershipAndInjectivity.lean/declarations/designatedternaryexpansion-value.md) | 46 | `result-track:6fdccbc156805ebef0ddaaace18e324561986b2425bd96971145482a9e213c3f` |
+| 4 | `def` | [designatedCantorScalar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DigitsSeriesMembershipAndInjectivity.lean/declarations/designatedcantorscalar.md) | 54 | `declaration-track:a93ce53e03a1e1de45929962f2db8a3fa2185621874e326582bbf1231191b221` |
+| 5 | `theorem` | [designatedCantorScalar_series](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DigitsSeriesMembershipAndInjectivity.lean/declarations/designatedcantorscalar-series.md) | 58 | `result-track:1a64fb7ddab90f889eaddb3d82baac681a7840a5a9ba810cb519df0790d3c278` |
+| 6 | `theorem` | [designatedCantorScalar_mem_cantorSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DigitsSeriesMembershipAndInjectivity.lean/declarations/designatedcantorscalar-mem-cantorset.md) | 69 | `result-track:465c44759b47c867678c54626c6ab30785beabd971b87825a36296844dea891a` |
+| 7 | `theorem` | [designatedCantorScalar_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DigitsSeriesMembershipAndInjectivity.lean/declarations/designatedcantorscalar-injective.md) | 75 | `result-track:9747e92b15aaa1721f5655bbab46dd32d5ba24d3a2b2b46d777ad6b4a2cf5bf5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

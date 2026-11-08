@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/CokernelsNamespacedPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/CokernelsNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/CokernelsNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/CokernelsNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [tensor](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/CokernelsNamespacedPublic.lean/declarations/tensor.md) | 46 | `declaration-track:c7bc87c537de64ffd4dae37d9c54a5f262d75d5fb16ead44be67ecb70e5118bb` |
-| 2 | `def` | [isColimitTensor](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/CokernelsNamespacedPublic.lean/declarations/iscolimittensor.md) | 57 | `declaration-track:6be55d1c23c868dc164d695c4af9ad33f736d8401e8f91d77f35c7eea6b03f6e` |
+| 1 | `abbrev` | [tensor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/CokernelsNamespacedPublic.lean/declarations/tensor.md) | 46 | `declaration-track:c7bc87c537de64ffd4dae37d9c54a5f262d75d5fb16ead44be67ecb70e5118bb` |
+| 2 | `def` | [isColimitTensor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/CokernelsNamespacedPublic.lean/declarations/iscolimittensor.md) | 57 | `declaration-track:6be55d1c23c868dc164d695c4af9ad33f736d8401e8f91d77f35c7eea6b03f6e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

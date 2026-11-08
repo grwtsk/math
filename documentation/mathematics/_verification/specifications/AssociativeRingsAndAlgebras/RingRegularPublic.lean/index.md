@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/RingRegularPublic.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/RingRegularPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingRegularPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingRegularPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [isLeftRegular_of_non_zero_divisor](../../../../AssociativeRingsAndAlgebras/RingRegularPublic.lean/declarations/isleftregular-of-non-zero-divisor.md) | 23 | `result-track:4e7ff0c7fbf6f0c5c7a8f76cd35beeb2781fea243e4b032c660b1ddbd2a27ad8` |
-| 2 | `theorem` | [isRightRegular_of_non_zero_divisor](../../../../AssociativeRingsAndAlgebras/RingRegularPublic.lean/declarations/isrightregular-of-non-zero-divisor.md) | 30 | `result-track:4a6d9a7f901f9279aab904e0753cd62e2c770abd0f82c2ac815f58488c93b783` |
-| 3 | `theorem` | [IsRegular.of_ne_zero'](../../../../AssociativeRingsAndAlgebras/RingRegularPublic.lean/declarations/isregular-of-ne-zero.md) | 35 | `result-track:7715df19d39aab930fc6a9da7538e5a67899131e3aabb0e800ea439761f2742b` |
-| 4 | `theorem` | [isRegular_iff_ne_zero'](../../../../AssociativeRingsAndAlgebras/RingRegularPublic.lean/declarations/isregular-iff-ne-zero.md) | 42 | `result-track:afa70e513ab338352731410c67d4f620d7307edc54e2cea50d3b59f9eee7080c` |
-| 5 | `lemma` | [NoZeroDivisors.toIsCancelMulZero](../../../../AssociativeRingsAndAlgebras/RingRegularPublic.lean/declarations/nozerodivisors-toiscancelmulzero.md) | 51 | `result-track:92a0d58a4d40622bbf078afb1ea1462239b0538450f219880d1f02e231505428` |
-| 6 | `theorem` | [iff_eq_of_mul_left_eq_one](../../../../AssociativeRingsAndAlgebras/RingRegularPublic.lean/declarations/iff-eq-of-mul-left-eq-one.md) | 61 | `result-track:71483387e05475c31159d71110e91c91347cf176adc1d3e4ae15c592a167418d` |
-| 7 | `theorem` | [iff_eq_of_mul_right_eq_one](../../../../AssociativeRingsAndAlgebras/RingRegularPublic.lean/declarations/iff-eq-of-mul-right-eq-one.md) | 70 | `result-track:0aa42b3fd1fa270a83353687e2a7fe2be036153554ba99bdef7dbbf64cda4550` |
+| 1 | `theorem` | [isLeftRegular_of_non_zero_divisor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingRegularPublic.lean/declarations/isleftregular-of-non-zero-divisor.md) | 23 | `result-track:4e7ff0c7fbf6f0c5c7a8f76cd35beeb2781fea243e4b032c660b1ddbd2a27ad8` |
+| 2 | `theorem` | [isRightRegular_of_non_zero_divisor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingRegularPublic.lean/declarations/isrightregular-of-non-zero-divisor.md) | 30 | `result-track:4a6d9a7f901f9279aab904e0753cd62e2c770abd0f82c2ac815f58488c93b783` |
+| 3 | `theorem` | [IsRegular.of_ne_zero'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingRegularPublic.lean/declarations/isregular-of-ne-zero.md) | 35 | `result-track:7715df19d39aab930fc6a9da7538e5a67899131e3aabb0e800ea439761f2742b` |
+| 4 | `theorem` | [isRegular_iff_ne_zero'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingRegularPublic.lean/declarations/isregular-iff-ne-zero.md) | 42 | `result-track:afa70e513ab338352731410c67d4f620d7307edc54e2cea50d3b59f9eee7080c` |
+| 5 | `lemma` | [NoZeroDivisors.toIsCancelMulZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingRegularPublic.lean/declarations/nozerodivisors-toiscancelmulzero.md) | 51 | `result-track:92a0d58a4d40622bbf078afb1ea1462239b0538450f219880d1f02e231505428` |
+| 6 | `theorem` | [iff_eq_of_mul_left_eq_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingRegularPublic.lean/declarations/iff-eq-of-mul-left-eq-one.md) | 61 | `result-track:71483387e05475c31159d71110e91c91347cf176adc1d3e4ae15c592a167418d` |
+| 7 | `theorem` | [iff_eq_of_mul_right_eq_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingRegularPublic.lean/declarations/iff-eq-of-mul-right-eq-one.md) | 70 | `result-track:0aa42b3fd1fa270a83353687e2a7fe2be036153554ba99bdef7dbbf64cda4550` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

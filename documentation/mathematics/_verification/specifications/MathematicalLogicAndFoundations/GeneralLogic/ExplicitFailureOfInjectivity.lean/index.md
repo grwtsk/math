@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExplicitFailureOfInjectivity.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExplicitFailureOfInjectivity.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExplicitFailureOfInjectivity.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExplicitFailureOfInjectivity.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,9 +46,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [Complete Threshold Specification](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompleteThresholdSpecification.lean/index.md) — import line 19; pinned internal source present.
-- [Channel Application](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ChannelApplication.lean/index.md) — import line 20; pinned internal source present.
-- [Unit Threshold Construction](../../../../../MathematicalLogicAndFoundations/GeneralLogic/UnitThresholdConstruction.lean/index.md) — import line 21; pinned internal source present.
+- [Complete Threshold Specification](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompleteThresholdSpecification.lean/index.md) — import line 19; pinned internal source present.
+- [Channel Application](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ChannelApplication.lean/index.md) — import line 20; pinned internal source present.
+- [Unit Threshold Construction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/UnitThresholdConstruction.lean/index.md) — import line 21; pinned internal source present.
 - `Folder.Carrier.BinaryMatrix` — import line 23; external provider; requires a separately pinned dependency.
 - `Folder.Spectral.Tensor` — import line 24; external provider; requires a separately pinned dependency.
 
@@ -61,7 +61,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [quantization_not_declared_injective](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExplicitFailureOfInjectivity.lean/declarations/quantization-not-declared-injective.md) | 46 | `result-track:be0735b3eeefd4b362f13a0fdd46030502498b5e4be6f375280fdaee042bb534` |
+| 1 | `theorem` | [quantization_not_declared_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExplicitFailureOfInjectivity.lean/declarations/quantization-not-declared-injective.md) | 46 | `result-track:be0735b3eeefd4b362f13a0fdd46030502498b5e4be6f375280fdaee042bb534` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

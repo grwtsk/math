@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Functorial.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Functorial.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Functorial.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Functorial.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [Functorial](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Functorial.lean/declarations/functorial.md) | 23 | `declaration-track:198ddbcef899394f249792cfd0a99b96d4ca7a2b59244ad985ff9bbc1f50932a` |
-| 2 | `def` | [of](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Functorial.lean/declarations/of.md) | 40 | `declaration-track:48d7e5f27dfdb7d89acd5c9dc1f58843201e541b4b1e2cf427f4fceebaced373` |
-| 3 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Functorial.lean/declarations/instance.md) | 46 | `declaration-track:ab15472b40ff6749c9969a5a805c11c55f032dc634492d1c350dfe0a0a399e92` |
-| 4 | `theorem` | [map_functorial_obj](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Functorial.lean/declarations/map-functorial-obj.md) | 50 | `result-track:a4ac5ccc23a94e88867366f30fabaf5204022bd4f0b0b339720f3b581ab3bcf4` |
-| 5 | `instance` | [functorial_id](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Functorial.lean/declarations/functorial-id.md) | 53 | `declaration-track:dca70af0742b3c5aac6674207d38b440dc813882fa22634045525e3441a0989d` |
-| 6 | `def` | [functorial_comp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Functorial.lean/declarations/functorial-comp.md) | 64 | `declaration-track:29ff334a5aef15d6ff140e9905cb1f3699e35d74b3530050ee8e64fcc2344a14` |
+| 1 | `class` | [Functorial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Functorial.lean/declarations/functorial.md) | 23 | `declaration-track:198ddbcef899394f249792cfd0a99b96d4ca7a2b59244ad985ff9bbc1f50932a` |
+| 2 | `def` | [of](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Functorial.lean/declarations/of.md) | 40 | `declaration-track:48d7e5f27dfdb7d89acd5c9dc1f58843201e541b4b1e2cf427f4fceebaced373` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Functorial.lean/declarations/instance.md) | 46 | `declaration-track:ab15472b40ff6749c9969a5a805c11c55f032dc634492d1c350dfe0a0a399e92` |
+| 4 | `theorem` | [map_functorial_obj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Functorial.lean/declarations/map-functorial-obj.md) | 50 | `result-track:a4ac5ccc23a94e88867366f30fabaf5204022bd4f0b0b339720f3b581ab3bcf4` |
+| 5 | `instance` | [functorial_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Functorial.lean/declarations/functorial-id.md) | 53 | `declaration-track:dca70af0742b3c5aac6674207d38b440dc813882fa22634045525e3441a0989d` |
+| 6 | `def` | [functorial_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Functorial.lean/declarations/functorial-comp.md) | 64 | `declaration-track:29ff334a5aef15d6ff140e9905cb1f3699e35d74b3530050ee8e64fcc2344a14` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

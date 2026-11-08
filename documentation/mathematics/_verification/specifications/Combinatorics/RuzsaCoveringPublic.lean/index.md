@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/RuzsaCoveringPublic.lean/index.md) · [Full source](../../../../Combinatorics/RuzsaCoveringPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RuzsaCoveringPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RuzsaCoveringPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [ruzsa_covering_mul](../../../../Combinatorics/RuzsaCoveringPublic.lean/declarations/ruzsa-covering-mul-source-edition-2.md) | 32 | `result-track:aeba8be18a9df3b304ddb0db53df186e68169e812a8ba47aa527e485f27edaef` |
-| 2 | `lemma` | [ruzsa_covering_mul](../../../../Combinatorics/RuzsaCoveringPublic.lean/declarations/ruzsa-covering-mul.md) | 63 | `result-track:2e41191f94be31e2b4ac0b3e8018322352b4776d2af63542172925e72d65efee` |
+| 1 | `theorem` | [ruzsa_covering_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RuzsaCoveringPublic.lean/declarations/ruzsa-covering-mul-source-edition-2.md) | 32 | `result-track:aeba8be18a9df3b304ddb0db53df186e68169e812a8ba47aa527e485f27edaef` |
+| 2 | `lemma` | [ruzsa_covering_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RuzsaCoveringPublic.lean/declarations/ruzsa-covering-mul.md) | 63 | `result-track:2e41191f94be31e2b4ac0b3e8018322352b4776d2af63542172925e72d65efee` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

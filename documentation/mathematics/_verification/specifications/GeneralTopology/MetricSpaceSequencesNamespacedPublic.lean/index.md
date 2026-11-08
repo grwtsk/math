@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/MetricSpaceSequencesNamespacedPublic.lean/index.md) · [Full source](../../../../GeneralTopology/MetricSpaceSequencesNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MetricSpaceSequencesNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MetricSpaceSequencesNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [tendsto_subseq_of_frequently_bounded](../../../../GeneralTopology/MetricSpaceSequencesNamespacedPublic.lean/declarations/tendsto-subseq-of-frequently-bounded.md) | 37 | `result-track:c4430a00dcf52df320ea0bffbe6b82f6204d806bad13375c61cb15d63e1707af` |
-| 2 | `theorem` | [tendsto_subseq_of_bounded](../../../../GeneralTopology/MetricSpaceSequencesNamespacedPublic.lean/declarations/tendsto-subseq-of-bounded.md) | 46 | `result-track:7d8ed9819cb6b15c00ca263f26668a584f9d7868375bba42f5fd66b1f9e4eef9` |
+| 1 | `theorem` | [tendsto_subseq_of_frequently_bounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MetricSpaceSequencesNamespacedPublic.lean/declarations/tendsto-subseq-of-frequently-bounded.md) | 37 | `result-track:c4430a00dcf52df320ea0bffbe6b82f6204d806bad13375c61cb15d63e1707af` |
+| 2 | `theorem` | [tendsto_subseq_of_bounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MetricSpaceSequencesNamespacedPublic.lean/declarations/tendsto-subseq-of-bounded.md) | 46 | `result-track:7d8ed9819cb6b15c00ca263f26668a584f9d7868375bba42f5fd66b1f9e4eef9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

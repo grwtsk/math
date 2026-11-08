@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LintSimpNFNamespacedSum.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LintSimpNFNamespacedSum.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LintSimpNFNamespacedSum.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LintSimpNFNamespacedSum.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Sum.elim](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LintSimpNFNamespacedSum.lean/declarations/sum-elim.md) | 13 | `declaration-track:122f1eeaf7e50a9964237a201528068d113180c23491b9f1f6063c5a2547b8a2` |
-| 2 | `structure` | [Equiv](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LintSimpNFNamespacedSum.lean/declarations/equiv.md) | 16 | `declaration-track:5db4048cbf8dedf9aac6650e70dc03ecf0dc734d7a64adfaeb059ab8b7e669ca` |
-| 3 | `instance` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LintSimpNFNamespacedSum.lean/declarations/instance.md) | 24 | `declaration-track:854112a6a51cc5f280b0565bb8d9da369febf569f848ee26b1e8460068b71961` |
-| 4 | `def` | [symm](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LintSimpNFNamespacedSum.lean/declarations/symm.md) | 26 | `declaration-track:385b2b50f7263e66ea86d4d6f50b3a1261e261f60f1e7f659e8b43d2064e910f` |
-| 5 | `def` | [sumCompl](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LintSimpNFNamespacedSum.lean/declarations/sumcompl.md) | 28 | `declaration-track:a6390d869c53cf83c0b2a1835752b99f5c8ba1ee733d3a341605a936104df65c` |
-| 6 | `theorem` | [sumCompl_apply_symm_of_pos](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LintSimpNFNamespacedSum.lean/declarations/sumcompl-apply-symm-of-pos.md) | 34 | `result-track:a3edc5d1791a6992bcc39687ec038e1899f2f5034531441a5e4a4fa572ec62d9` |
+| 1 | `def` | [Sum.elim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LintSimpNFNamespacedSum.lean/declarations/sum-elim.md) | 13 | `declaration-track:122f1eeaf7e50a9964237a201528068d113180c23491b9f1f6063c5a2547b8a2` |
+| 2 | `structure` | [Equiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LintSimpNFNamespacedSum.lean/declarations/equiv.md) | 16 | `declaration-track:5db4048cbf8dedf9aac6650e70dc03ecf0dc734d7a64adfaeb059ab8b7e669ca` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LintSimpNFNamespacedSum.lean/declarations/instance.md) | 24 | `declaration-track:854112a6a51cc5f280b0565bb8d9da369febf569f848ee26b1e8460068b71961` |
+| 4 | `def` | [symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LintSimpNFNamespacedSum.lean/declarations/symm.md) | 26 | `declaration-track:385b2b50f7263e66ea86d4d6f50b3a1261e261f60f1e7f659e8b43d2064e910f` |
+| 5 | `def` | [sumCompl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LintSimpNFNamespacedSum.lean/declarations/sumcompl.md) | 28 | `declaration-track:a6390d869c53cf83c0b2a1835752b99f5c8ba1ee733d3a341605a936104df65c` |
+| 6 | `theorem` | [sumCompl_apply_symm_of_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LintSimpNFNamespacedSum.lean/declarations/sumcompl-apply-symm-of-pos.md) | 34 | `result-track:a3edc5d1791a6992bcc39687ec038e1899f2f5034531441a5e4a4fa572ec62d9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

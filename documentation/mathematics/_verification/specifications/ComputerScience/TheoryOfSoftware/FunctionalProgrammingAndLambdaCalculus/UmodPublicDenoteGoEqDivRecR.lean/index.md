@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UmodPublicDenoteGoEqDivRecR.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UmodPublicDenoteGoEqDivRecR.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UmodPublicDenoteGoEqDivRecR.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UmodPublicDenoteGoEqDivRecR.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [denote_go_eq_divRec_r](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UmodPublicDenoteGoEqDivRecR.lean/declarations/denote-go-eq-divrec-r.md) | 33 | `result-track:e7c75468cf92bf12a09b38f79a2e020ba9b49cf646f7509fd780f815b0e4edec` |
-| 2 | `theorem` | [denote_go](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UmodPublicDenoteGoEqDivRecR.lean/declarations/denote-go.md) | 109 | `result-track:fbd7269bbac10febe27b33faad6558a04dcadf4a41e9393ed71412bf233a77fc` |
-| 3 | `theorem` | [denote_blastUmod](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UmodPublicDenoteGoEqDivRecR.lean/declarations/denote-blastumod.md) | 136 | `result-track:f01f4c4dc7e0f31c8c8c97642925850e7174bdd2eab0bb1414e5fb2a2a316bd8` |
+| 1 | `theorem` | [denote_go_eq_divRec_r](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UmodPublicDenoteGoEqDivRecR.lean/declarations/denote-go-eq-divrec-r.md) | 33 | `result-track:e7c75468cf92bf12a09b38f79a2e020ba9b49cf646f7509fd780f815b0e4edec` |
+| 2 | `theorem` | [denote_go](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UmodPublicDenoteGoEqDivRecR.lean/declarations/denote-go.md) | 109 | `result-track:fbd7269bbac10febe27b33faad6558a04dcadf4a41e9393ed71412bf233a77fc` |
+| 3 | `theorem` | [denote_blastUmod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UmodPublicDenoteGoEqDivRecR.lean/declarations/denote-blastumod.md) | 136 | `result-track:f01f4c4dc7e0f31c8c8c97642925850e7174bdd2eab0bb1414e5fb2a2a316bd8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ControlledShiftAndReconstructionBoundary.lean/index.md) · [Full source](../../../../GeneralTopology/ControlledShiftAndReconstructionBoundary.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ControlledShiftAndReconstructionBoundary.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ControlledShiftAndReconstructionBoundary.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../GeneralTopology/ControlledShiftAndReconstructionBoundary.lean/declarations/example.md) | 39 | `declaration-track:30e0313c36abc7e28db1390992b63af896cdbf5479db6691920d82f2535f5b58` |
-| 2 | `example` | [(anonymous)](../../../../GeneralTopology/ControlledShiftAndReconstructionBoundary.lean/declarations/example-source-edition-5.md) | 42 | `declaration-track:e7a43d976287057e5b52ce5551cfc1bd2035cf6432a473a1aee1fb805e617a11` |
-| 3 | `example` | [(anonymous)](../../../../GeneralTopology/ControlledShiftAndReconstructionBoundary.lean/declarations/example-source-edition-4.md) | 53 | `declaration-track:e2cee089fbd27e2352252402f8f33d85fd5f03a4daa16170d69b93c2c253ff8d` |
-| 4 | `example` | [(anonymous)](../../../../GeneralTopology/ControlledShiftAndReconstructionBoundary.lean/declarations/example-source-edition-3.md) | 56 | `declaration-track:de502aae9da05fef41b9de51ed05bb46ea0f0f83bd8d78eb4fd96cdeb19e0d5c` |
-| 5 | `example` | [(anonymous)](../../../../GeneralTopology/ControlledShiftAndReconstructionBoundary.lean/declarations/example-source-edition-2.md) | 60 | `declaration-track:b162aeebc7d3b189b3bf79ba09f3bfb28edf734ec271608a5fed361b03253560` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ControlledShiftAndReconstructionBoundary.lean/declarations/example.md) | 39 | `declaration-track:30e0313c36abc7e28db1390992b63af896cdbf5479db6691920d82f2535f5b58` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ControlledShiftAndReconstructionBoundary.lean/declarations/example-source-edition-5.md) | 42 | `declaration-track:e7a43d976287057e5b52ce5551cfc1bd2035cf6432a473a1aee1fb805e617a11` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ControlledShiftAndReconstructionBoundary.lean/declarations/example-source-edition-4.md) | 53 | `declaration-track:e2cee089fbd27e2352252402f8f33d85fd5f03a4daa16170d69b93c2c253ff8d` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ControlledShiftAndReconstructionBoundary.lean/declarations/example-source-edition-3.md) | 56 | `declaration-track:de502aae9da05fef41b9de51ed05bb46ea0f0f83bd8d78eb4fd96cdeb19e0d5c` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ControlledShiftAndReconstructionBoundary.lean/declarations/example-source-edition-2.md) | 60 | `declaration-track:b162aeebc7d3b189b3bf79ba09f3bfb28edf734ec271608a5fed361b03253560` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

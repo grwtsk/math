@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MarkedElements.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MarkedElements.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MarkedElements.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MarkedElements.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `Folder.Basic` — import line 15; external provider; requires a separately pinned dependency.
-- [`GRWTSK.Algebra.UniversalAlgebra.SignaturesAndAlgebras.PointedUnaryBinaryData.Variant32a667ad.OperationSignature`](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/OperationSignature.lean/index.md) — import line 17; pinned internal source present.
+- [`GRWTSK.Algebra.UniversalAlgebra.SignaturesAndAlgebras.PointedUnaryBinaryData.Variant32a667ad.OperationSignature`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/OperationSignature.lean/index.md) — import line 17; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [KTheoryClass](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MarkedElements.lean/declarations/ktheoryclass.md) | 33 | `declaration-track:615b1eef57e76d9b004086b59e0279f35ba5cee33e7109ac46c62918691f523b` |
-| 2 | `def` | [KTheoryClass.IsZero](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MarkedElements.lean/declarations/ktheoryclass-iszero.md) | 38 | `declaration-track:62d80989776e9f7d71ac155272bbafe893837ab48840b006b5f75fa1ad3577ed` |
-| 3 | `def` | [KTheoryClass.Nonzero](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MarkedElements.lean/declarations/ktheoryclass-nonzero.md) | 43 | `declaration-track:23a48df0238f8d451711b0683df69edf451b71403ec9d2dcf51481192ec30db0` |
-| 4 | `theorem` | [ktheory_class_has_value](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MarkedElements.lean/declarations/ktheory-class-has-value.md) | 48 | `result-track:e54ee069108a49c48a06eda0ac8940cf6eb8bff73a3c1ecb0947be3f876715f0` |
+| 1 | `structure` | [KTheoryClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MarkedElements.lean/declarations/ktheoryclass.md) | 33 | `declaration-track:615b1eef57e76d9b004086b59e0279f35ba5cee33e7109ac46c62918691f523b` |
+| 2 | `def` | [KTheoryClass.IsZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MarkedElements.lean/declarations/ktheoryclass-iszero.md) | 38 | `declaration-track:62d80989776e9f7d71ac155272bbafe893837ab48840b006b5f75fa1ad3577ed` |
+| 3 | `def` | [KTheoryClass.Nonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MarkedElements.lean/declarations/ktheoryclass-nonzero.md) | 43 | `declaration-track:23a48df0238f8d451711b0683df69edf451b71403ec9d2dcf51481192ec30db0` |
+| 4 | `theorem` | [ktheory_class_has_value](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MarkedElements.lean/declarations/ktheory-class-has-value.md) | 48 | `result-track:e54ee069108a49c48a06eda0ac8940cf6eb8bff73a3c1ecb0947be3f876715f0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

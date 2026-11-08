@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ConeIndexEdition5.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ConeIndexEdition5.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ConeIndexEdition5.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ConeIndexEdition5.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [coneName](../../../../../ComputerScience/AlgorithmsInComputerScience/ConeIndexEdition5.lean/declarations/conename.md) | 7 | `declaration-track:a3e913938916d7c2d7f23287793cd3ae0b84d641310c3a26186f2b724cb2ba48` |
-| 2 | `def` | [publicTheoremDeclarations](../../../../../ComputerScience/AlgorithmsInComputerScience/ConeIndexEdition5.lean/declarations/publictheoremdeclarations.md) | 9 | `declaration-track:1f50423b5926823450f85afed7944c7e31c2e31ed8dd16ab9fd8da8cabb2a9e6` |
-| 3 | `def` | [certificateOnlyDeclarations](../../../../../ComputerScience/AlgorithmsInComputerScience/ConeIndexEdition5.lean/declarations/certificateonlydeclarations.md) | 15 | `declaration-track:cc4f0f3f61e923cbd5dbf2e219478ac58f3cda8bb46319eaf22e8a9d09983730` |
-| 4 | `def` | [hardInputDeclarations](../../../../../ComputerScience/AlgorithmsInComputerScience/ConeIndexEdition5.lean/declarations/hardinputdeclarations.md) | 21 | `declaration-track:1e4e13d0625d9cc2eac719c6450d2f0d8633633dd5d5d00abcaced02dadd509d` |
-| 5 | `def` | [forbiddenClaims](../../../../../ComputerScience/AlgorithmsInComputerScience/ConeIndexEdition5.lean/declarations/forbiddenclaims.md) | 29 | `declaration-track:1eb89bfe87a5350a6e796627a2d188a27935be372df8b988941cfc3150b6ba16` |
+| 1 | `def` | [coneName](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ConeIndexEdition5.lean/declarations/conename.md) | 7 | `declaration-track:a3e913938916d7c2d7f23287793cd3ae0b84d641310c3a26186f2b724cb2ba48` |
+| 2 | `def` | [publicTheoremDeclarations](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ConeIndexEdition5.lean/declarations/publictheoremdeclarations.md) | 9 | `declaration-track:1f50423b5926823450f85afed7944c7e31c2e31ed8dd16ab9fd8da8cabb2a9e6` |
+| 3 | `def` | [certificateOnlyDeclarations](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ConeIndexEdition5.lean/declarations/certificateonlydeclarations.md) | 15 | `declaration-track:cc4f0f3f61e923cbd5dbf2e219478ac58f3cda8bb46319eaf22e8a9d09983730` |
+| 4 | `def` | [hardInputDeclarations](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ConeIndexEdition5.lean/declarations/hardinputdeclarations.md) | 21 | `declaration-track:1e4e13d0625d9cc2eac719c6450d2f0d8633633dd5d5d00abcaced02dadd509d` |
+| 5 | `def` | [forbiddenClaims](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ConeIndexEdition5.lean/declarations/forbiddenclaims.md) | 29 | `declaration-track:1eb89bfe87a5350a6e796627a2d188a27935be372df8b988941cfc3150b6ba16` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

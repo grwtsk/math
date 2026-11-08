@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/BoundedMixedRadixData.lean/index.md) · [Full source](../../../../NumberTheory/BoundedMixedRadixData.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/BoundedMixedRadixData.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/BoundedMixedRadixData.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,10 +60,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FiberCoordinate](../../../../NumberTheory/BoundedMixedRadixData.lean/declarations/fibercoordinate.md) | 35 | `declaration-track:819e0c5e02b48cd24f751395934888a5ff3cb87c3a67b5a9575565a6cbb561c5` |
-| 2 | `def` | [mixedRadixValues](../../../../NumberTheory/BoundedMixedRadixData.lean/declarations/mixedradixvalues.md) | 43 | `declaration-track:274867f27b8249566f2924c6ee81f1c96517c520811b14249edb9b67010d2905` |
-| 3 | `def` | [FiberCoordinate.mixedRadix](../../../../NumberTheory/BoundedMixedRadixData.lean/declarations/fibercoordinate-mixedradix.md) | 50 | `declaration-track:77b7679dbb9ab9a7439886431c17008d5e4f82ebadfa3dfc4ef5c884cba7530f` |
-| 4 | `structure` | [MixedRadixEquivalence](../../../../NumberTheory/BoundedMixedRadixData.lean/declarations/mixedradixequivalence.md) | 58 | `declaration-track:d0abcabaaa979145374f0a453ef39528f9976d4d88211707aed69941458f2d31` |
+| 1 | `structure` | [FiberCoordinate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/BoundedMixedRadixData.lean/declarations/fibercoordinate.md) | 35 | `declaration-track:819e0c5e02b48cd24f751395934888a5ff3cb87c3a67b5a9575565a6cbb561c5` |
+| 2 | `def` | [mixedRadixValues](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/BoundedMixedRadixData.lean/declarations/mixedradixvalues.md) | 43 | `declaration-track:274867f27b8249566f2924c6ee81f1c96517c520811b14249edb9b67010d2905` |
+| 3 | `def` | [FiberCoordinate.mixedRadix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/BoundedMixedRadixData.lean/declarations/fibercoordinate-mixedradix.md) | 50 | `declaration-track:77b7679dbb9ab9a7439886431c17008d5e4f82ebadfa3dfc4ef5c884cba7530f` |
+| 4 | `structure` | [MixedRadixEquivalence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/BoundedMixedRadixData.lean/declarations/mixedradixequivalence.md) | 58 | `declaration-track:d0abcabaaa979145374f0a453ef39528f9976d4d88211707aed69941458f2d31` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

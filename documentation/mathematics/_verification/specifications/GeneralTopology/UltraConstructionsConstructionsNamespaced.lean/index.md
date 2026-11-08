@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/UltraConstructionsConstructionsNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/UltraConstructionsConstructionsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UltraConstructionsConstructionsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UltraConstructionsConstructionsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [IsTransitiveRel.entourageProd](../../../../GeneralTopology/UltraConstructionsConstructionsNamespaced.lean/declarations/istransitiverel-entourageprod.md) | 37 | `result-track:cef7b1f31a434ecec7cb5d939e9e4e9cfb80098896aa7ee3da73fdd07d3dcc3d` |
-| 2 | `lemma` | [IsUltraUniformity.comap](../../../../GeneralTopology/UltraConstructionsConstructionsNamespaced.lean/declarations/isultrauniformity-comap.md) | 42 | `result-track:979c8ccf46da9bac860b7e5be243c876e80c62f92373f50de9c42cdcdeebde6f` |
-| 3 | `lemma` | [IsUltraUniformity.inf](../../../../GeneralTopology/UltraConstructionsConstructionsNamespaced.lean/declarations/isultrauniformity-inf.md) | 49 | `result-track:79a87cd34d388c6b61c70b7a9fdb3bbecf4ae167cbf6a9150d89b4e92359a6ef` |
-| 4 | `instance` | [IsUltraUniformity.prod](../../../../GeneralTopology/UltraConstructionsConstructionsNamespaced.lean/declarations/isultrauniformity-prod.md) | 59 | `declaration-track:98bdda397fa3ac5c49d85eada6c36dae0cea7baa20aa1894718fc8f9a77a9fb0` |
-| 5 | `lemma` | [IsUltraUniformity.iInf](../../../../GeneralTopology/UltraConstructionsConstructionsNamespaced.lean/declarations/isultrauniformity-iinf.md) | 64 | `result-track:bb1abcad987ee42d447cf69932594f314f60523f20d37b1f17551e3e00a0e2f1` |
-| 6 | `instance` | [IsUltraUniformity.pi](../../../../GeneralTopology/UltraConstructionsConstructionsNamespaced.lean/declarations/isultrauniformity-pi.md) | 74 | `declaration-track:151a5ff966c6b899dfa8a87a61e42700f70f5d8e7f55942dda705bbcf647bc0d` |
+| 1 | `lemma` | [IsTransitiveRel.entourageProd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UltraConstructionsConstructionsNamespaced.lean/declarations/istransitiverel-entourageprod.md) | 37 | `result-track:cef7b1f31a434ecec7cb5d939e9e4e9cfb80098896aa7ee3da73fdd07d3dcc3d` |
+| 2 | `lemma` | [IsUltraUniformity.comap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UltraConstructionsConstructionsNamespaced.lean/declarations/isultrauniformity-comap.md) | 42 | `result-track:979c8ccf46da9bac860b7e5be243c876e80c62f92373f50de9c42cdcdeebde6f` |
+| 3 | `lemma` | [IsUltraUniformity.inf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UltraConstructionsConstructionsNamespaced.lean/declarations/isultrauniformity-inf.md) | 49 | `result-track:79a87cd34d388c6b61c70b7a9fdb3bbecf4ae167cbf6a9150d89b4e92359a6ef` |
+| 4 | `instance` | [IsUltraUniformity.prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UltraConstructionsConstructionsNamespaced.lean/declarations/isultrauniformity-prod.md) | 59 | `declaration-track:98bdda397fa3ac5c49d85eada6c36dae0cea7baa20aa1894718fc8f9a77a9fb0` |
+| 5 | `lemma` | [IsUltraUniformity.iInf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UltraConstructionsConstructionsNamespaced.lean/declarations/isultrauniformity-iinf.md) | 64 | `result-track:bb1abcad987ee42d447cf69932594f314f60523f20d37b1f17551e3e00a0e2f1` |
+| 6 | `instance` | [IsUltraUniformity.pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UltraConstructionsConstructionsNamespaced.lean/declarations/isultrauniformity-pi.md) | 74 | `declaration-track:151a5ff966c6b899dfa8a87a61e42700f70f5d8e7f55942dda705bbcf647bc0d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

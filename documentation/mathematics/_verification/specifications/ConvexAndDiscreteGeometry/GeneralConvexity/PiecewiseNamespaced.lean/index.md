@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/PiecewiseNamespaced.lean/index.md) · [Full source](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/PiecewiseNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/PiecewiseNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/PiecewiseNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [convexOn_univ_piecewise_Iic_of_antitoneOn_Iic_monotoneOn_Ici](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/PiecewiseNamespaced.lean/declarations/convexon-univ-piecewise-iic-of-antitoneon-iic-monotoneon-ici.md) | 46 | `result-track:618b03eac058bb120fcaf029f669f5fed2384e8b21855410ecca542d8ea3d868` |
-| 2 | `theorem` | [convexOn_univ_piecewise_Ici_of_monotoneOn_Ici_antitoneOn_Iic](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/PiecewiseNamespaced.lean/declarations/convexon-univ-piecewise-ici-of-monotoneon-ici-antitoneon-iic.md) | 100 | `result-track:73a3c83345a762676df0470c1c224f9611fbabb7f9cb2551a6547e47741cbeac` |
-| 3 | `theorem` | [concaveOn_univ_piecewise_Iic_of_monotoneOn_Iic_antitoneOn_Ici](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/PiecewiseNamespaced.lean/declarations/concaveon-univ-piecewise-iic-of-monotoneon-iic-antitoneon-ici.md) | 114 | `result-track:af019bb207cb7a6f752c4c812c5a0549bcb0ebdb97696988b7df598f6a0b1908` |
-| 4 | `theorem` | [concaveOn_univ_piecewise_Ici_of_antitoneOn_Ici_monotoneOn_Iic](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/PiecewiseNamespaced.lean/declarations/concaveon-univ-piecewise-ici-of-antitoneon-ici-monotoneon-iic.md) | 125 | `result-track:28f8eabd8f22ed5ca81103327731b5298bf79d0d19b793da8180fce063b30af2` |
+| 1 | `theorem` | [convexOn_univ_piecewise_Iic_of_antitoneOn_Iic_monotoneOn_Ici](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/PiecewiseNamespaced.lean/declarations/convexon-univ-piecewise-iic-of-antitoneon-iic-monotoneon-ici.md) | 46 | `result-track:618b03eac058bb120fcaf029f669f5fed2384e8b21855410ecca542d8ea3d868` |
+| 2 | `theorem` | [convexOn_univ_piecewise_Ici_of_monotoneOn_Ici_antitoneOn_Iic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/PiecewiseNamespaced.lean/declarations/convexon-univ-piecewise-ici-of-monotoneon-ici-antitoneon-iic.md) | 100 | `result-track:73a3c83345a762676df0470c1c224f9611fbabb7f9cb2551a6547e47741cbeac` |
+| 3 | `theorem` | [concaveOn_univ_piecewise_Iic_of_monotoneOn_Iic_antitoneOn_Ici](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/PiecewiseNamespaced.lean/declarations/concaveon-univ-piecewise-iic-of-monotoneon-iic-antitoneon-ici.md) | 114 | `result-track:af019bb207cb7a6f752c4c812c5a0549bcb0ebdb97696988b7df598f6a0b1908` |
+| 4 | `theorem` | [concaveOn_univ_piecewise_Ici_of_antitoneOn_Ici_monotoneOn_Iic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/PiecewiseNamespaced.lean/declarations/concaveon-univ-piecewise-ici-of-antitoneon-ici-monotoneon-iic.md) | 125 | `result-track:28f8eabd8f22ed5ca81103327731b5298bf79d0d19b793da8180fce063b30af2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

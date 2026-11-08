@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceColumnEnvelopeMassEdition3.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceColumnEnvelopeMassEdition3.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceColumnEnvelopeMassEdition3.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceColumnEnvelopeMassEdition3.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [inverse_sqrt_antiderivative](../../../../MeasureAndIntegration/SourceColumnEnvelopeMassEdition3.lean/declarations/inverse-sqrt-antiderivative.md) | 21 | `result-track:7dc6e0294beadf75276695a555d4425e150d5c5564e41470917a1845a58d30f1` |
-| 2 | `theorem` | [inverse_sqrt_cell_integrable](../../../../MeasureAndIntegration/SourceColumnEnvelopeMassEdition3.lean/declarations/inverse-sqrt-cell-integrable.md) | 31 | `result-track:ae3a28f20897ccd117a03accaf461e12d206b00d7612eafbf80dfef754f3b7a4` |
-| 3 | `theorem` | [inverse_sqrt_integral](../../../../MeasureAndIntegration/SourceColumnEnvelopeMassEdition3.lean/declarations/inverse-sqrt-integral.md) | 40 | `result-track:395cf064cbb090750eb5e380af503e4f5633716b7a6aecd293f42314b820f856` |
-| 4 | `def` | [columnEnvelopeMass](../../../../MeasureAndIntegration/SourceColumnEnvelopeMassEdition3.lean/declarations/columnenvelopemass.md) | 50 | `declaration-track:85bc0a4df17e0aa0cde6c526cbe2a7e03ef7b5338fe037606441929ba35c7fab` |
-| 5 | `theorem` | [columnEnvelopeMass_le](../../../../MeasureAndIntegration/SourceColumnEnvelopeMassEdition3.lean/declarations/columnenvelopemass-le.md) | 57 | `result-track:c486c2977359501ee0eaa44f5c42135e1566eb7219568f23acb027151eae15e2` |
+| 1 | `theorem` | [inverse_sqrt_antiderivative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceColumnEnvelopeMassEdition3.lean/declarations/inverse-sqrt-antiderivative.md) | 21 | `result-track:7dc6e0294beadf75276695a555d4425e150d5c5564e41470917a1845a58d30f1` |
+| 2 | `theorem` | [inverse_sqrt_cell_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceColumnEnvelopeMassEdition3.lean/declarations/inverse-sqrt-cell-integrable.md) | 31 | `result-track:ae3a28f20897ccd117a03accaf461e12d206b00d7612eafbf80dfef754f3b7a4` |
+| 3 | `theorem` | [inverse_sqrt_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceColumnEnvelopeMassEdition3.lean/declarations/inverse-sqrt-integral.md) | 40 | `result-track:395cf064cbb090750eb5e380af503e4f5633716b7a6aecd293f42314b820f856` |
+| 4 | `def` | [columnEnvelopeMass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceColumnEnvelopeMassEdition3.lean/declarations/columnenvelopemass.md) | 50 | `declaration-track:85bc0a4df17e0aa0cde6c526cbe2a7e03ef7b5338fe037606441929ba35c7fab` |
+| 5 | `theorem` | [columnEnvelopeMass_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceColumnEnvelopeMassEdition3.lean/declarations/columnenvelopemass-le.md) | 57 | `result-track:c486c2977359501ee0eaa44f5c42135e1566eb7219568f23acb027151eae15e2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/OnePositiveCountingSystemHasDivergentFullNativeSquareEnergyEdition1.lean/index.md) · [Full source](../../../../RealFunctions/OnePositiveCountingSystemHasDivergentFullNativeSquareEnergyEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/OnePositiveCountingSystemHasDivergentFullNativeSquareEnergyEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/OnePositiveCountingSystemHasDivergentFullNativeSquareEnergyEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [cellEnergy](../../../../RealFunctions/OnePositiveCountingSystemHasDivergentFullNativeSquareEnergyEdition1.lean/declarations/cellenergy.md) | 30 | `declaration-track:de58ff0c72e24cc6585a5e745f61c51d4dd3381a160db3192af01bbef47fea49` |
-| 2 | `theorem` | [bank_cell_energy_nonnegative](../../../../RealFunctions/OnePositiveCountingSystemHasDivergentFullNativeSquareEnergyEdition1.lean/declarations/bank-cell-energy-nonnegative.md) | 33 | `result-track:c386e1dee10573a646cdfeef58bc5c6648270cbffd56ce1519d0c1ebf6cbe71d` |
-| 3 | `theorem` | [complete_dyadic_pulse_pays_square_price](../../../../RealFunctions/OnePositiveCountingSystemHasDivergentFullNativeSquareEnergyEdition1.lean/declarations/complete-dyadic-pulse-pays-square-price.md) | 39 | `result-track:1debab60590d4bf6ef64662c92f059586a89842f12d9cd1a7a7d66860f4f3057` |
-| 4 | `theorem` | [full_dyadic_bank_square_energy_not_summable](../../../../RealFunctions/OnePositiveCountingSystemHasDivergentFullNativeSquareEnergyEdition1.lean/declarations/full-dyadic-bank-square-energy-not-summable.md) | 64 | `result-track:f0d503a8539402c3b3e3a763592d8a07e48722da1a809db50710ec58bed2302c` |
-| 5 | `theorem` | [positive_counting_with_square_root_error_and_divergent_native_square_energy](../../../../RealFunctions/OnePositiveCountingSystemHasDivergentFullNativeSquareEnergyEdition1.lean/declarations/positive-counting-with-square-root-error-and-divergent-native-square-ene.md) | 83 | `result-track:917cd5c386679baf10f46793749054d607eb3edaa40af5c41ace57cc88da4ea2` |
+| 1 | `def` | [cellEnergy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/OnePositiveCountingSystemHasDivergentFullNativeSquareEnergyEdition1.lean/declarations/cellenergy.md) | 30 | `declaration-track:de58ff0c72e24cc6585a5e745f61c51d4dd3381a160db3192af01bbef47fea49` |
+| 2 | `theorem` | [bank_cell_energy_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/OnePositiveCountingSystemHasDivergentFullNativeSquareEnergyEdition1.lean/declarations/bank-cell-energy-nonnegative.md) | 33 | `result-track:c386e1dee10573a646cdfeef58bc5c6648270cbffd56ce1519d0c1ebf6cbe71d` |
+| 3 | `theorem` | [complete_dyadic_pulse_pays_square_price](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/OnePositiveCountingSystemHasDivergentFullNativeSquareEnergyEdition1.lean/declarations/complete-dyadic-pulse-pays-square-price.md) | 39 | `result-track:1debab60590d4bf6ef64662c92f059586a89842f12d9cd1a7a7d66860f4f3057` |
+| 4 | `theorem` | [full_dyadic_bank_square_energy_not_summable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/OnePositiveCountingSystemHasDivergentFullNativeSquareEnergyEdition1.lean/declarations/full-dyadic-bank-square-energy-not-summable.md) | 64 | `result-track:f0d503a8539402c3b3e3a763592d8a07e48722da1a809db50710ec58bed2302c` |
+| 5 | `theorem` | [positive_counting_with_square_root_error_and_divergent_native_square_energy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/OnePositiveCountingSystemHasDivergentFullNativeSquareEnergyEdition1.lean/declarations/positive-counting-with-square-root-error-and-divergent-native-square-ene.md) | 83 | `result-track:917cd5c386679baf10f46793749054d607eb3edaa40af5c41ace57cc88da4ea2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

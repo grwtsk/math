@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../HarmonicAnalysisOnEuclideanSpaces/DescriptionsHistoricalSourceEdition2.lean/index.md) · [Full source](../../../../HarmonicAnalysisOnEuclideanSpaces/DescriptionsHistoricalSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/DescriptionsHistoricalSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/DescriptionsHistoricalSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -67,9 +67,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [Role](../../../../HarmonicAnalysisOnEuclideanSpaces/DescriptionsHistoricalSourceEdition2.lean/declarations/role.md) | 26 | `declaration-track:48332f31de92e26011e731035a4b0f81232a5258c49b745725d0ab831605b477` |
-| 2 | `structure` | [SourceDescription](../../../../HarmonicAnalysisOnEuclideanSpaces/DescriptionsHistoricalSourceEdition2.lean/declarations/sourcedescription.md) | 31 | `declaration-track:9a823da193c5e25a47641d5791b44d7689a597f7e01428768ac859e55c350bfe` |
-| 3 | `structure` | [SamplingDescription](../../../../HarmonicAnalysisOnEuclideanSpaces/DescriptionsHistoricalSourceEdition2.lean/declarations/samplingdescription.md) | 41 | `declaration-track:1c9090e1c683246601d3fadd818770780721bc2d1ddef74ba120ba3312b94b74` |
+| 1 | `inductive` | [Role](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/DescriptionsHistoricalSourceEdition2.lean/declarations/role.md) | 26 | `declaration-track:48332f31de92e26011e731035a4b0f81232a5258c49b745725d0ab831605b477` |
+| 2 | `structure` | [SourceDescription](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/DescriptionsHistoricalSourceEdition2.lean/declarations/sourcedescription.md) | 31 | `declaration-track:9a823da193c5e25a47641d5791b44d7689a597f7e01428768ac859e55c350bfe` |
+| 3 | `structure` | [SamplingDescription](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/DescriptionsHistoricalSourceEdition2.lean/declarations/samplingdescription.md) | 41 | `declaration-track:1c9090e1c683246601d3fadd818770780721bc2d1ddef74ba120ba3312b94b74` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

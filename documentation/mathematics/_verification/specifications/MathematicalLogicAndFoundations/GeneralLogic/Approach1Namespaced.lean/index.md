@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Approach1Namespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Approach1Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Approach1Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Approach1Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CertificateFamily](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Approach1Namespaced.lean/declarations/certificatefamily.md) | 13 | `declaration-track:da4b0574c140ac57f6bde9fcb296369c2d7f11156f028f1dfa3899ed94f40c41` |
-| 2 | `def` | [Equivalent](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Approach1Namespaced.lean/declarations/equivalent.md) | 19 | `declaration-track:963dbe2d9e56d4fefaf9dee2c7fb4502a3ffd32e668915c139443fca2423fafa` |
-| 3 | `structure` | [SufficientRepresentation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Approach1Namespaced.lean/declarations/sufficientrepresentation.md) | 22 | `declaration-track:0457c5edfa9fc02912cf20f8c86b6fb3c64bd466d2eb138ca66733ff708f836c` |
-| 4 | `def` | [FactorsThrough](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Approach1Namespaced.lean/declarations/factorsthrough.md) | 31 | `declaration-track:d4325961ac8482c44b538fbeb8e526d030aa065421dea728a6abb42d131df041` |
-| 5 | `def` | [IsMinimal](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Approach1Namespaced.lean/declarations/isminimal.md) | 35 | `declaration-track:e3a62a39958e1657a3d2205567cf358ef0aff5058cb43500eef605f8fd689096` |
-| 6 | `theorem` | [factor_of_minimal](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Approach1Namespaced.lean/declarations/factor-of-minimal.md) | 41 | `result-track:dd9131533f5772af609fca347acad04b48b0c3ed68906efe7543aecf673088b3` |
+| 1 | `structure` | [CertificateFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Approach1Namespaced.lean/declarations/certificatefamily.md) | 13 | `declaration-track:da4b0574c140ac57f6bde9fcb296369c2d7f11156f028f1dfa3899ed94f40c41` |
+| 2 | `def` | [Equivalent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Approach1Namespaced.lean/declarations/equivalent.md) | 19 | `declaration-track:963dbe2d9e56d4fefaf9dee2c7fb4502a3ffd32e668915c139443fca2423fafa` |
+| 3 | `structure` | [SufficientRepresentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Approach1Namespaced.lean/declarations/sufficientrepresentation.md) | 22 | `declaration-track:0457c5edfa9fc02912cf20f8c86b6fb3c64bd466d2eb138ca66733ff708f836c` |
+| 4 | `def` | [FactorsThrough](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Approach1Namespaced.lean/declarations/factorsthrough.md) | 31 | `declaration-track:d4325961ac8482c44b538fbeb8e526d030aa065421dea728a6abb42d131df041` |
+| 5 | `def` | [IsMinimal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Approach1Namespaced.lean/declarations/isminimal.md) | 35 | `declaration-track:e3a62a39958e1657a3d2205567cf358ef0aff5058cb43500eef605f8fd689096` |
+| 6 | `theorem` | [factor_of_minimal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Approach1Namespaced.lean/declarations/factor-of-minimal.md) | 41 | `result-track:dd9131533f5772af609fca347acad04b48b0c3ed68906efe7543aecf673088b3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/IsCofibrant.lean/index.md) · [Full source](../../../../AlgebraicTopology/IsCofibrant.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/IsCofibrant.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/IsCofibrant.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [IsCofibrant](../../../../AlgebraicTopology/IsCofibrant.lean/declarations/iscofibrant.md) | 30 | `declaration-track:5b006ad98c0af8f2c4157173d244310dcad00b32faa4f836b1ee23d619496fd6` |
-| 2 | `lemma` | [isCofibrant_iff](../../../../AlgebraicTopology/IsCofibrant.lean/declarations/iscofibrant-iff.md) | 32 | `result-track:de89e5941712f1a03d72e8f817da5ce1b205a6ce7a1565781cffe84a8aac79c7` |
-| 3 | `lemma` | [isCofibrant_iff_of_isInitial](../../../../AlgebraicTopology/IsCofibrant.lean/declarations/iscofibrant-iff-of-isinitial.md) | 35 | `result-track:8ec4ab3175f4715fe8afcab94536f5fab80c6813eff0d6eb5ad381c02ce83126` |
-| 4 | `abbrev` | [IsFibrant](../../../../AlgebraicTopology/IsCofibrant.lean/declarations/isfibrant.md) | 49 | `declaration-track:89129f47e70e6227f29a4198e939c75af46ff9a53197090932f000ff13f4ae67` |
-| 5 | `lemma` | [isFibrant_iff](../../../../AlgebraicTopology/IsCofibrant.lean/declarations/isfibrant-iff.md) | 51 | `result-track:544acf2cb6a910a91ebc120555d1abb5b6c2b4231eb647b97a772fefd35d75cf` |
-| 6 | `lemma` | [isFibrant_iff_of_isTerminal](../../../../AlgebraicTopology/IsCofibrant.lean/declarations/isfibrant-iff-of-isterminal.md) | 54 | `result-track:814817a1fd587e258f2f7cabe10802553af221511a75417a8938398348580bcc` |
+| 1 | `abbrev` | [IsCofibrant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/IsCofibrant.lean/declarations/iscofibrant.md) | 30 | `declaration-track:5b006ad98c0af8f2c4157173d244310dcad00b32faa4f836b1ee23d619496fd6` |
+| 2 | `lemma` | [isCofibrant_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/IsCofibrant.lean/declarations/iscofibrant-iff.md) | 32 | `result-track:de89e5941712f1a03d72e8f817da5ce1b205a6ce7a1565781cffe84a8aac79c7` |
+| 3 | `lemma` | [isCofibrant_iff_of_isInitial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/IsCofibrant.lean/declarations/iscofibrant-iff-of-isinitial.md) | 35 | `result-track:8ec4ab3175f4715fe8afcab94536f5fab80c6813eff0d6eb5ad381c02ce83126` |
+| 4 | `abbrev` | [IsFibrant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/IsCofibrant.lean/declarations/isfibrant.md) | 49 | `declaration-track:89129f47e70e6227f29a4198e939c75af46ff9a53197090932f000ff13f4ae67` |
+| 5 | `lemma` | [isFibrant_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/IsCofibrant.lean/declarations/isfibrant-iff.md) | 51 | `result-track:544acf2cb6a910a91ebc120555d1abb5b6c2b4231eb647b97a772fefd35d75cf` |
+| 6 | `lemma` | [isFibrant_iff_of_isTerminal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/IsCofibrant.lean/declarations/isfibrant-iff-of-isterminal.md) | 54 | `result-track:814817a1fd587e258f2f7cabe10802553af221511a75417a8938398348580bcc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

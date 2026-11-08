@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/Piecewise.lean/index.md) · [Full source](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/Piecewise.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/Piecewise.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/Piecewise.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [convexOn_univ_piecewise_Iic_of_antitoneOn_Iic_monotoneOn_Ici](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/Piecewise.lean/declarations/convexon-univ-piecewise-iic-of-antitoneon-iic-monotoneon-ici.md) | 38 | `result-track:6c605f3e8d6f6c2326b972e3810547ce446005a0a979f88996325886e1461ce0` |
-| 2 | `theorem` | [convexOn_univ_piecewise_Ici_of_monotoneOn_Ici_antitoneOn_Iic](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/Piecewise.lean/declarations/convexon-univ-piecewise-ici-of-monotoneon-ici-antitoneon-iic.md) | 92 | `result-track:2d00fe5aa84c2c307981c0d1eca63ac45f1baf48908290549803dd083fa3e7ea` |
-| 3 | `theorem` | [concaveOn_univ_piecewise_Iic_of_monotoneOn_Iic_antitoneOn_Ici](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/Piecewise.lean/declarations/concaveon-univ-piecewise-iic-of-monotoneon-iic-antitoneon-ici.md) | 106 | `result-track:15ca315b67bb7bf1cba19f7390f8571b4588ce3799128f4299a2e180567ae089` |
-| 4 | `theorem` | [concaveOn_univ_piecewise_Ici_of_antitoneOn_Ici_monotoneOn_Iic](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/Piecewise.lean/declarations/concaveon-univ-piecewise-ici-of-antitoneon-ici-monotoneon-iic.md) | 117 | `result-track:a15270f48db4b7cca2c4ec27c21b4a47d7422fca45294f395353e2389e9cfdde` |
+| 1 | `theorem` | [convexOn_univ_piecewise_Iic_of_antitoneOn_Iic_monotoneOn_Ici](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/Piecewise.lean/declarations/convexon-univ-piecewise-iic-of-antitoneon-iic-monotoneon-ici.md) | 38 | `result-track:6c605f3e8d6f6c2326b972e3810547ce446005a0a979f88996325886e1461ce0` |
+| 2 | `theorem` | [convexOn_univ_piecewise_Ici_of_monotoneOn_Ici_antitoneOn_Iic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/Piecewise.lean/declarations/convexon-univ-piecewise-ici-of-monotoneon-ici-antitoneon-iic.md) | 92 | `result-track:2d00fe5aa84c2c307981c0d1eca63ac45f1baf48908290549803dd083fa3e7ea` |
+| 3 | `theorem` | [concaveOn_univ_piecewise_Iic_of_monotoneOn_Iic_antitoneOn_Ici](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/Piecewise.lean/declarations/concaveon-univ-piecewise-iic-of-monotoneon-iic-antitoneon-ici.md) | 106 | `result-track:15ca315b67bb7bf1cba19f7390f8571b4588ce3799128f4299a2e180567ae089` |
+| 4 | `theorem` | [concaveOn_univ_piecewise_Ici_of_antitoneOn_Ici_monotoneOn_Iic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/Piecewise.lean/declarations/concaveon-univ-piecewise-ici-of-antitoneon-ici-monotoneon-iic.md) | 117 | `result-track:a15270f48db4b7cca2c4ec27c21b4a47d7422fca45294f395353e2389e9cfdde` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

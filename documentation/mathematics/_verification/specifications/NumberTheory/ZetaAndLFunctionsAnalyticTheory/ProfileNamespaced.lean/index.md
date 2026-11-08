@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ProfileNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ProfileNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ProfileNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ProfileNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [taperProfile_smoothTransition](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ProfileNamespaced.lean/declarations/taperprofile-smoothtransition.md) | 28 | `result-track:68ab88e1530d1a9553dd3856bdff9e33da58d07c8e8ca6f64fa796ac0bc9e2d5` |
-| 2 | `def` | [stdProfile](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ProfileNamespaced.lean/declarations/stdprofile.md) | 35 | `declaration-track:73183670782e2a8c79e6b689faf4a03e2e194a982acec18e55db0e7645e3da6b` |
-| 3 | `theorem` | [taperProfile_stdProfile](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ProfileNamespaced.lean/declarations/taperprofile-stdprofile.md) | 37 | `result-track:f7cb09183fd9a010ff97ad7936242e009f5ebeaebcb9d54c94de6aa67b6c751d` |
-| 4 | `theorem` | [exists_taperProfile](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ProfileNamespaced.lean/declarations/exists-taperprofile.md) | 40 | `result-track:b897a5eadf0744d77f107cefe0bf725975c70ecf5fcc325b3b6ff9137abab5da` |
+| 1 | `theorem` | [taperProfile_smoothTransition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ProfileNamespaced.lean/declarations/taperprofile-smoothtransition.md) | 28 | `result-track:68ab88e1530d1a9553dd3856bdff9e33da58d07c8e8ca6f64fa796ac0bc9e2d5` |
+| 2 | `def` | [stdProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ProfileNamespaced.lean/declarations/stdprofile.md) | 35 | `declaration-track:73183670782e2a8c79e6b689faf4a03e2e194a982acec18e55db0e7645e3da6b` |
+| 3 | `theorem` | [taperProfile_stdProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ProfileNamespaced.lean/declarations/taperprofile-stdprofile.md) | 37 | `result-track:f7cb09183fd9a010ff97ad7936242e009f5ebeaebcb9d54c94de6aa67b6c751d` |
+| 4 | `theorem` | [exists_taperProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ProfileNamespaced.lean/declarations/exists-taperprofile.md) | 40 | `result-track:b897a5eadf0744d77f107cefe0bf725975c70ecf5fcc325b3b6ff9137abab5da` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

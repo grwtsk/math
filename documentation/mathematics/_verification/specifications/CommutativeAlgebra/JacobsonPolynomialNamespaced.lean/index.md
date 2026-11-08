@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/JacobsonPolynomialNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/JacobsonPolynomialNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/JacobsonPolynomialNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/JacobsonPolynomialNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [jacobson_bot_polynomial_le_sInf_map_maximal](../../../../CommutativeAlgebra/JacobsonPolynomialNamespaced.lean/declarations/jacobson-bot-polynomial-le-sinf-map-maximal.md) | 29 | `result-track:cb4bbfd4674045aa00d07ecc505552cbd1710c3b440778feadd19d7941f6be77` |
-| 2 | `theorem` | [jacobson_bot_polynomial_of_jacobson_bot](../../../../CommutativeAlgebra/JacobsonPolynomialNamespaced.lean/declarations/jacobson-bot-polynomial-of-jacobson-bot.md) | 43 | `result-track:eb80f323b96d2444735c2848a177ced5cd311ec61039f123713efc52608f765d` |
+| 1 | `theorem` | [jacobson_bot_polynomial_le_sInf_map_maximal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/JacobsonPolynomialNamespaced.lean/declarations/jacobson-bot-polynomial-le-sinf-map-maximal.md) | 29 | `result-track:cb4bbfd4674045aa00d07ecc505552cbd1710c3b440778feadd19d7941f6be77` |
+| 2 | `theorem` | [jacobson_bot_polynomial_of_jacobson_bot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/JacobsonPolynomialNamespaced.lean/declarations/jacobson-bot-polynomial-of-jacobson-bot.md) | 43 | `result-track:eb80f323b96d2444735c2848a177ced5cd311ec61039f123713efc52608f765d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

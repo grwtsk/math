@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BlackNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BlackNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BlackNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BlackNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [band](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BlackNamespaced.lean/declarations/band.md) | 15 | `declaration-track:5834f13faca6094882d2499f2ecbdd72bf10e89a188e34c8344bc496ba30c137` |
-| 2 | `def` | [accepts](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BlackNamespaced.lean/declarations/accepts.md) | 23 | `declaration-track:548f09bfe7395f26f60e13caf2c62603acefdd93a9c91205181883ec792437cf` |
-| 3 | `def` | [rejects](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BlackNamespaced.lean/declarations/rejects.md) | 25 | `declaration-track:3411f88ea695edbfdb12f3f086cfe08608c85201fcadff3646771ab91f3b49b6` |
-| 4 | `def` | [admissibility](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BlackNamespaced.lean/declarations/admissibility.md) | 27 | `declaration-track:ce725e6e89d840ffc514fb0029025fd24c5baf7ed0c72cd956e289d1c2f99a60` |
-| 5 | `theorem` | [namespace_eq](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BlackNamespaced.lean/declarations/namespace-eq.md) | 30 | `result-track:f2cab90748279ff9ca47971f8ee3e8e12c6642f2421b2750c23b9a2784c0512d` |
+| 1 | `def` | [band](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BlackNamespaced.lean/declarations/band.md) | 15 | `declaration-track:5834f13faca6094882d2499f2ecbdd72bf10e89a188e34c8344bc496ba30c137` |
+| 2 | `def` | [accepts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BlackNamespaced.lean/declarations/accepts.md) | 23 | `declaration-track:548f09bfe7395f26f60e13caf2c62603acefdd93a9c91205181883ec792437cf` |
+| 3 | `def` | [rejects](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BlackNamespaced.lean/declarations/rejects.md) | 25 | `declaration-track:3411f88ea695edbfdb12f3f086cfe08608c85201fcadff3646771ab91f3b49b6` |
+| 4 | `def` | [admissibility](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BlackNamespaced.lean/declarations/admissibility.md) | 27 | `declaration-track:ce725e6e89d840ffc514fb0029025fd24c5baf7ed0c72cd956e289d1c2f99a60` |
+| 5 | `theorem` | [namespace_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BlackNamespaced.lean/declarations/namespace-eq.md) | 30 | `result-track:f2cab90748279ff9ca47971f8ee3e8e12c6642f2421b2750c23b9a2784c0512d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

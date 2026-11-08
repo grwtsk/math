@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourcePhysicalCutoffComplementFixturesEdition1.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourcePhysicalCutoffComplementFixturesEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourcePhysicalCutoffComplementFixturesEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourcePhysicalCutoffComplementFixturesEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [generic_signed_tail_sign_change_preserves_compensated_total](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourcePhysicalCutoffComplementFixturesEdition1.lean/declarations/generic-signed-tail-sign-change-preserves-compensated-total.md) | 21 | `result-track:c26178d05efb69e2bb3212850acfa3fae3ff0f70748f133b7dd4f7646335957b` |
-| 2 | `theorem` | [generic_fixed_finite_carrier_has_no_eventual_uniform_cap](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourcePhysicalCutoffComplementFixturesEdition1.lean/declarations/generic-fixed-finite-carrier-has-no-eventual-uniform-cap.md) | 42 | `result-track:dbc01dfe3100d68c608e961eae02a56d1d2a4837e229a9d5fae35a7e7c4ef3a9` |
+| 1 | `theorem` | [generic_signed_tail_sign_change_preserves_compensated_total](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourcePhysicalCutoffComplementFixturesEdition1.lean/declarations/generic-signed-tail-sign-change-preserves-compensated-total.md) | 21 | `result-track:c26178d05efb69e2bb3212850acfa3fae3ff0f70748f133b7dd4f7646335957b` |
+| 2 | `theorem` | [generic_fixed_finite_carrier_has_no_eventual_uniform_cap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourcePhysicalCutoffComplementFixturesEdition1.lean/declarations/generic-fixed-finite-carrier-has-no-eventual-uniform-cap.md) | 42 | `result-track:dbc01dfe3100d68c608e961eae02a56d1d2a4837e229a9d5fae35a7e7c4ef3a9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

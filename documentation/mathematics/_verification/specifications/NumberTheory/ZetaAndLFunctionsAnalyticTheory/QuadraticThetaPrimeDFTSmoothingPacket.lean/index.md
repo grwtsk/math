@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeDFTSmoothingPacket.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeDFTSmoothingPacket.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeDFTSmoothingPacket.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeDFTSmoothingPacket.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeDFTSmoothingWindow`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeDFTSmoothingWindow.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeDFTSmoothingWindow`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeDFTSmoothingWindow.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PrimeIntervalSmoothingPacket](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeDFTSmoothingPacket.lean/declarations/primeintervalsmoothingpacket.md) | 19 | `declaration-track:23dcd2ae18a2cddcf079fed38ef0a7ee4131d4be253ebda67730c43a9326e862` |
-| 2 | `structure` | [DyadicPrimeIntervalSmoothingFamily](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeDFTSmoothingPacket.lean/declarations/dyadicprimeintervalsmoothingfamily.md) | 32 | `declaration-track:65553ce246f25da4b07f0d905a39b48a50025fcbaeeed3d32ea6273907dfe524` |
-| 3 | `def` | [PrimeDFTSmoothingPacketReadoutAt](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeDFTSmoothingPacket.lean/declarations/primedftsmoothingpacketreadoutat.md) | 45 | `declaration-track:cab057abe9ef8ace6376adfb86d65783b895509aa730466df6fd1c2675fac2c7` |
-| 4 | `def` | [SmoothingFamilyInThreeQuarterWindow](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeDFTSmoothingPacket.lean/declarations/smoothingfamilyinthreequarterwindow.md) | 53 | `declaration-track:442c67160640edc7472e64aa6c1b59f4dee6e5bc1080f1b21cc60c001e181432` |
-| 5 | `theorem` | [smoothingPacketReadout_to_sevenEighthsPartialDiscrepancy](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeDFTSmoothingPacket.lean/declarations/smoothingpacketreadout-to-seveneighthspartialdiscrepancy.md) | 60 | `result-track:0f6819a2880db3043a8dead633d7158a9aefdb095845a7f46809e036f48458c6` |
-| 6 | `theorem` | [oneThird_in_smoothing_window](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeDFTSmoothingPacket.lean/declarations/onethird-in-smoothing-window.md) | 71 | `result-track:b0ae8c2cfa9f8b756dae9a850262c96d634ce42e43496e5ccc30624a0f2a8e1a` |
-| 7 | `theorem` | [oneThird_balanced_smoothing_exponents](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeDFTSmoothingPacket.lean/declarations/onethird-balanced-smoothing-exponents.md) | 77 | `result-track:6ef65b77e603ff18111aab7e745e1f6946d62fcb5931834cca769c634a73ffb0` |
+| 1 | `structure` | [PrimeIntervalSmoothingPacket](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeDFTSmoothingPacket.lean/declarations/primeintervalsmoothingpacket.md) | 19 | `declaration-track:23dcd2ae18a2cddcf079fed38ef0a7ee4131d4be253ebda67730c43a9326e862` |
+| 2 | `structure` | [DyadicPrimeIntervalSmoothingFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeDFTSmoothingPacket.lean/declarations/dyadicprimeintervalsmoothingfamily.md) | 32 | `declaration-track:65553ce246f25da4b07f0d905a39b48a50025fcbaeeed3d32ea6273907dfe524` |
+| 3 | `def` | [PrimeDFTSmoothingPacketReadoutAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeDFTSmoothingPacket.lean/declarations/primedftsmoothingpacketreadoutat.md) | 45 | `declaration-track:cab057abe9ef8ace6376adfb86d65783b895509aa730466df6fd1c2675fac2c7` |
+| 4 | `def` | [SmoothingFamilyInThreeQuarterWindow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeDFTSmoothingPacket.lean/declarations/smoothingfamilyinthreequarterwindow.md) | 53 | `declaration-track:442c67160640edc7472e64aa6c1b59f4dee6e5bc1080f1b21cc60c001e181432` |
+| 5 | `theorem` | [smoothingPacketReadout_to_sevenEighthsPartialDiscrepancy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeDFTSmoothingPacket.lean/declarations/smoothingpacketreadout-to-seveneighthspartialdiscrepancy.md) | 60 | `result-track:0f6819a2880db3043a8dead633d7158a9aefdb095845a7f46809e036f48458c6` |
+| 6 | `theorem` | [oneThird_in_smoothing_window](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeDFTSmoothingPacket.lean/declarations/onethird-in-smoothing-window.md) | 71 | `result-track:b0ae8c2cfa9f8b756dae9a850262c96d634ce42e43496e5ccc30624a0f2a8e1a` |
+| 7 | `theorem` | [oneThird_balanced_smoothing_exponents](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeDFTSmoothingPacket.lean/declarations/onethird-balanced-smoothing-exponents.md) | 77 | `result-track:6ef65b77e603ff18111aab7e745e1f6946d62fcb5931834cca769c634a73ffb0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

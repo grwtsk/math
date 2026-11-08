@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/FrameAdjunctionPublic.lean/index.md) · [Full source](../../../../GeneralTopology/FrameAdjunctionPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FrameAdjunctionPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FrameAdjunctionPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [PT](../../../../GeneralTopology/FrameAdjunctionPublic.lean/declarations/pt.md) | 55 | `declaration-track:2fe71eda8c9739c6beb1d0932f0168b10ec9574eb65b360e3772b9e130428f36` |
-| 2 | `def` | [openOfElementHom](../../../../GeneralTopology/FrameAdjunctionPublic.lean/declarations/openofelementhom.md) | 60 | `declaration-track:ad994918301913fa1bdebe049e5ae0e08454d7582ca6ac2ffb68be2675d23c75` |
-| 3 | `instance` | [instTopologicalSpace](../../../../GeneralTopology/FrameAdjunctionPublic.lean/declarations/insttopologicalspace.md) | 69 | `declaration-track:3ebda31634d7cf410a8e03a4705b7d9fe4dce8761c2696f7b2c4c1a9707136b9` |
-| 4 | `lemma` | [isOpen_iff](../../../../GeneralTopology/FrameAdjunctionPublic.lean/declarations/isopen-iff.md) | 79 | `result-track:336950c438038e4e92668d1f123621c496f1a4a870ca79a0022fff8bfec54f2b` |
-| 5 | `def` | [pt](../../../../GeneralTopology/FrameAdjunctionPublic.lean/declarations/pt-source-edition-2.md) | 87 | `declaration-track:e226095d9b946b4e5745709bcae062b41d1cf170d1cfb0e9690d5c2c51ef1ad9` |
-| 6 | `def` | [localePointOfSpacePoint](../../../../GeneralTopology/FrameAdjunctionPublic.lean/declarations/localepointofspacepoint.md) | 101 | `declaration-track:acee530d8c268fc3557150f64de9dba34f011ba4682b440d512f6a39c0537015` |
-| 7 | `def` | [counitAppCont](../../../../GeneralTopology/FrameAdjunctionPublic.lean/declarations/counitappcont.md) | 108 | `declaration-track:9a80bd669c8c5e731c1e57daf9652afb46a36fa7d1a2653daf3540bb756b5981` |
-| 8 | `def` | [adjunctionTopToLocalePT](../../../../GeneralTopology/FrameAdjunctionPublic.lean/declarations/adjunctiontoptolocalept.md) | 115 | `declaration-track:b8677ac877090898c728f4628b0f827240a4532995b577a3dc21dc0780d7a2dc` |
+| 1 | `abbrev` | [PT](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FrameAdjunctionPublic.lean/declarations/pt.md) | 55 | `declaration-track:2fe71eda8c9739c6beb1d0932f0168b10ec9574eb65b360e3772b9e130428f36` |
+| 2 | `def` | [openOfElementHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FrameAdjunctionPublic.lean/declarations/openofelementhom.md) | 60 | `declaration-track:ad994918301913fa1bdebe049e5ae0e08454d7582ca6ac2ffb68be2675d23c75` |
+| 3 | `instance` | [instTopologicalSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FrameAdjunctionPublic.lean/declarations/insttopologicalspace.md) | 69 | `declaration-track:3ebda31634d7cf410a8e03a4705b7d9fe4dce8761c2696f7b2c4c1a9707136b9` |
+| 4 | `lemma` | [isOpen_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FrameAdjunctionPublic.lean/declarations/isopen-iff.md) | 79 | `result-track:336950c438038e4e92668d1f123621c496f1a4a870ca79a0022fff8bfec54f2b` |
+| 5 | `def` | [pt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FrameAdjunctionPublic.lean/declarations/pt-source-edition-2.md) | 87 | `declaration-track:e226095d9b946b4e5745709bcae062b41d1cf170d1cfb0e9690d5c2c51ef1ad9` |
+| 6 | `def` | [localePointOfSpacePoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FrameAdjunctionPublic.lean/declarations/localepointofspacepoint.md) | 101 | `declaration-track:acee530d8c268fc3557150f64de9dba34f011ba4682b440d512f6a39c0537015` |
+| 7 | `def` | [counitAppCont](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FrameAdjunctionPublic.lean/declarations/counitappcont.md) | 108 | `declaration-track:9a80bd669c8c5e731c1e57daf9652afb46a36fa7d1a2653daf3540bb756b5981` |
+| 8 | `def` | [adjunctionTopToLocalePT](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FrameAdjunctionPublic.lean/declarations/adjunctiontoptolocalept.md) | 115 | `declaration-track:b8677ac877090898c728f4628b0f827240a4532995b577a3dc21dc0780d7a2dc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

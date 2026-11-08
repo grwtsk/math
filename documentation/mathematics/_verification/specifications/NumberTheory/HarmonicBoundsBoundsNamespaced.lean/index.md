@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/HarmonicBoundsBoundsNamespaced.lean/index.md) · [Full source](../../../../NumberTheory/HarmonicBoundsBoundsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/HarmonicBoundsBoundsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/HarmonicBoundsBoundsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [harmonic_eq_sum_Icc](../../../../NumberTheory/HarmonicBoundsBoundsNamespaced.lean/declarations/harmonic-eq-sum-icc.md) | 25 | `result-track:442532d6ff4bb9d9db592912b41731fb4eefa50d59aedc6fa1a9459f44281656` |
-| 2 | `theorem` | [log_add_one_le_harmonic](../../../../NumberTheory/HarmonicBoundsBoundsNamespaced.lean/declarations/log-add-one-le-harmonic.md) | 29 | `result-track:94098b3f24ccfd429fb12c1d423de9a55253a9d8d0511d96d35eb05de166c471` |
-| 3 | `theorem` | [harmonic_le_one_add_log](../../../../NumberTheory/HarmonicBoundsBoundsNamespaced.lean/declarations/harmonic-le-one-add-log.md) | 38 | `result-track:7ecf2af587828064de80ad68ab356483095783a6117ff16986ef4c5c28a0802f` |
-| 4 | `theorem` | [log_le_harmonic_floor](../../../../NumberTheory/HarmonicBoundsBoundsNamespaced.lean/declarations/log-le-harmonic-floor.md) | 64 | `result-track:22f1c122c012a669309ed8fcab9506d6b26c35170f63612e3fd064c64735472d` |
-| 5 | `theorem` | [harmonic_floor_le_one_add_log](../../../../NumberTheory/HarmonicBoundsBoundsNamespaced.lean/declarations/harmonic-floor-le-one-add-log.md) | 76 | `result-track:213a2de55cd5301c7ae91249e918a74c6f6ca552351238a8eef337b7de91f14d` |
+| 1 | `lemma` | [harmonic_eq_sum_Icc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/HarmonicBoundsBoundsNamespaced.lean/declarations/harmonic-eq-sum-icc.md) | 25 | `result-track:442532d6ff4bb9d9db592912b41731fb4eefa50d59aedc6fa1a9459f44281656` |
+| 2 | `theorem` | [log_add_one_le_harmonic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/HarmonicBoundsBoundsNamespaced.lean/declarations/log-add-one-le-harmonic.md) | 29 | `result-track:94098b3f24ccfd429fb12c1d423de9a55253a9d8d0511d96d35eb05de166c471` |
+| 3 | `theorem` | [harmonic_le_one_add_log](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/HarmonicBoundsBoundsNamespaced.lean/declarations/harmonic-le-one-add-log.md) | 38 | `result-track:7ecf2af587828064de80ad68ab356483095783a6117ff16986ef4c5c28a0802f` |
+| 4 | `theorem` | [log_le_harmonic_floor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/HarmonicBoundsBoundsNamespaced.lean/declarations/log-le-harmonic-floor.md) | 64 | `result-track:22f1c122c012a669309ed8fcab9506d6b26c35170f63612e3fd064c64735472d` |
+| 5 | `theorem` | [harmonic_floor_le_one_add_log](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/HarmonicBoundsBoundsNamespaced.lean/declarations/harmonic-floor-le-one-add-log.md) | 76 | `result-track:213a2de55cd5301c7ae91249e918a74c6f6ca552351238a8eef337b7de91f14d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

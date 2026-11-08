@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/IntRange.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/IntRange.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/IntRange.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/IntRange.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [range](../../../../../NumberTheory/ElementaryNumberTheory/IntRange.lean/declarations/range.md) | 22 | `declaration-track:034cff34a576e7cbfcaa55b0c50239e64014e5e88f13d0ccbb4ca775ef4262e5` |
-| 2 | `theorem` | [mem_range_iff](../../../../../NumberTheory/ElementaryNumberTheory/IntRange.lean/declarations/mem-range-iff.md) | 25 | `result-track:dab679d7b9d197ddcc6032d5bf4aba8d5ed0cd6a21397a5b68b07ce2036f2ae8` |
-| 3 | `instance` | [decidableLELT](../../../../../NumberTheory/ElementaryNumberTheory/IntRange.lean/declarations/decidablelelt.md) | 30 | `declaration-track:4699b580166c06c2366f871011d7e1a55db4d692ffbec42a89355be8c6326431` |
-| 4 | `instance` | [decidableLELE](../../../../../NumberTheory/ElementaryNumberTheory/IntRange.lean/declarations/decidablelele.md) | 34 | `declaration-track:ba4cd6414a605ef51623e3f1100a4a7f19aeb4e4703bc583d7841573e6c41ae1` |
-| 5 | `instance` | [decidableLTLT](../../../../../NumberTheory/ElementaryNumberTheory/IntRange.lean/declarations/decidableltlt.md) | 40 | `declaration-track:47045c6ad603bc0e1e4fe875b30db1266000eb53954b3a2e96dc690f68c92e4a` |
-| 6 | `instance` | [decidableLTLE](../../../../../NumberTheory/ElementaryNumberTheory/IntRange.lean/declarations/decidableltle.md) | 44 | `declaration-track:f375f389eda68652f0c80493b9594d4dd38388a0756d378bcc4043c3079cc6d1` |
+| 1 | `def` | [range](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/IntRange.lean/declarations/range.md) | 22 | `declaration-track:034cff34a576e7cbfcaa55b0c50239e64014e5e88f13d0ccbb4ca775ef4262e5` |
+| 2 | `theorem` | [mem_range_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/IntRange.lean/declarations/mem-range-iff.md) | 25 | `result-track:dab679d7b9d197ddcc6032d5bf4aba8d5ed0cd6a21397a5b68b07ce2036f2ae8` |
+| 3 | `instance` | [decidableLELT](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/IntRange.lean/declarations/decidablelelt.md) | 30 | `declaration-track:4699b580166c06c2366f871011d7e1a55db4d692ffbec42a89355be8c6326431` |
+| 4 | `instance` | [decidableLELE](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/IntRange.lean/declarations/decidablelele.md) | 34 | `declaration-track:ba4cd6414a605ef51623e3f1100a4a7f19aeb4e4703bc583d7841573e6c41ae1` |
+| 5 | `instance` | [decidableLTLT](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/IntRange.lean/declarations/decidableltlt.md) | 40 | `declaration-track:47045c6ad603bc0e1e4fe875b30db1266000eb53954b3a2e96dc690f68c92e4a` |
+| 6 | `instance` | [decidableLTLE](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/IntRange.lean/declarations/decidableltle.md) | 44 | `declaration-track:f375f389eda68652f0c80493b9594d4dd38388a0756d378bcc4043c3079cc6d1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

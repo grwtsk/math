@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/GeneratorsPublic.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/GeneratorsPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GeneratorsPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GeneratorsPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,22 +57,22 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Group.Generators](../../../../GroupTheoryAndGeneralizations/GeneratorsPublic.lean/declarations/group-generators.md) | 47 | `declaration-track:82c8bdfe4dbf6b609d2da8bb3b03edff94b7b3645ef770f2ccd5fcf68878d485` |
-| 2 | `abbrev` | [lift](../../../../GroupTheoryAndGeneralizations/GeneratorsPublic.lean/declarations/lift.md) | 58 | `declaration-track:cd4cbc9bbbbe9eda47888035a6e4c607591eb4f5df62f11be3d61dedc41a0a04` |
-| 3 | `lemma` | [lift_surjective](../../../../GroupTheoryAndGeneralizations/GeneratorsPublic.lean/declarations/lift-surjective.md) | 60 | `result-track:e963ecf1e115fb016e0e9a6435c0ca04a46b9f80f46340410d18c8bec2284c9b` |
-| 4 | `lemma` | [range_lift_eq_top](../../../../GroupTheoryAndGeneralizations/GeneratorsPublic.lean/declarations/range-lift-eq-top.md) | 67 | `result-track:8dd7475ac6e1dcacb2eea509f84acbead3109996d3f7b439d9b9d71871397334` |
-| 5 | `theorem` | [hom_ext](../../../../GroupTheoryAndGeneralizations/GeneratorsPublic.lean/declarations/hom-ext.md) | 70 | `result-track:548b38a46440969fe23ddb5c9a140dcca0db5baad1d26f639f512519ed585f93` |
-| 6 | `def` | [ofSet](../../../../GroupTheoryAndGeneralizations/GeneratorsPublic.lean/declarations/ofset.md) | 74 | `declaration-track:250047384a5ccc40558863cc74ee03df364056addd0e659d6563d2c7daac0983` |
-| 7 | `lemma` | [ofSet_val](../../../../GroupTheoryAndGeneralizations/GeneratorsPublic.lean/declarations/ofset-val.md) | 79 | `result-track:0f406fcec37914ecff672b20b59fa93434e3b791d68d72e50de4ee249f72c53a` |
-| 8 | `def` | [ofFreeGroupHom](../../../../GroupTheoryAndGeneralizations/GeneratorsPublic.lean/declarations/offreegrouphom.md) | 84 | `declaration-track:42f2345b3c4db51c98b308ce3903d4deb515940139a02a48a44c01b029584d48` |
-| 9 | `lemma` | [ofFreeGroupHom_val](../../../../GroupTheoryAndGeneralizations/GeneratorsPublic.lean/declarations/offreegrouphom-val.md) | 92 | `result-track:5281785c499b81a9b2e74b15b55d3d4892e706fa0b4a36738dca89614e7d13ee` |
-| 10 | `lemma` | [ofFreeGroupHom_lift](../../../../GroupTheoryAndGeneralizations/GeneratorsPublic.lean/declarations/offreegrouphom-lift.md) | 98 | `result-track:57de5f3a58721ac2f96f351f20c2acd43733cc8107fd7c56e5c6635662003e10` |
-| 11 | `def` | [map](../../../../GroupTheoryAndGeneralizations/GeneratorsPublic.lean/declarations/map.md) | 103 | `declaration-track:3fe8d706b53ba95e4245d1d155bf1e858520f796bce5dd82005ba90c985bd155` |
-| 12 | `lemma` | [map_val](../../../../GroupTheoryAndGeneralizations/GeneratorsPublic.lean/declarations/map-val.md) | 110 | `result-track:ba50ca7b95c9404ee2f0e1354ea5e3bbeca5a4479727df4f7bf3c052a0d7941f` |
-| 13 | `def` | [reindex](../../../../GroupTheoryAndGeneralizations/GeneratorsPublic.lean/declarations/reindex.md) | 115 | `declaration-track:71cc8670621a0de09fd1fbfa6ae25e17c19ae9417ed2f04725d4a8de2aeceecd` |
-| 14 | `lemma` | [reindex_val](../../../../GroupTheoryAndGeneralizations/GeneratorsPublic.lean/declarations/reindex-val.md) | 121 | `result-track:170e204fea39b600f5300a5cc6c5416ddc0b352ebefbc0c5a7422fcaf9097c27` |
-| 15 | `theorem` | [fg](../../../../GroupTheoryAndGeneralizations/GeneratorsPublic.lean/declarations/fg.md) | 126 | `result-track:7858a450a76e13239cbf2fab5ce93c1f748d213ff2cbb036b5189e62fdfba08f` |
-| 16 | `theorem` | [Group.fg_iff_nonempty_finite_generators](../../../../GroupTheoryAndGeneralizations/GeneratorsPublic.lean/declarations/group-fg-iff-nonempty-finite-generators.md) | 132 | `result-track:f2af4842e44b646dda97e2632ccaec8f4d1963e14082c91201f0b8927838ff22` |
+| 1 | `structure` | [Group.Generators](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GeneratorsPublic.lean/declarations/group-generators.md) | 47 | `declaration-track:82c8bdfe4dbf6b609d2da8bb3b03edff94b7b3645ef770f2ccd5fcf68878d485` |
+| 2 | `abbrev` | [lift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GeneratorsPublic.lean/declarations/lift.md) | 58 | `declaration-track:cd4cbc9bbbbe9eda47888035a6e4c607591eb4f5df62f11be3d61dedc41a0a04` |
+| 3 | `lemma` | [lift_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GeneratorsPublic.lean/declarations/lift-surjective.md) | 60 | `result-track:e963ecf1e115fb016e0e9a6435c0ca04a46b9f80f46340410d18c8bec2284c9b` |
+| 4 | `lemma` | [range_lift_eq_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GeneratorsPublic.lean/declarations/range-lift-eq-top.md) | 67 | `result-track:8dd7475ac6e1dcacb2eea509f84acbead3109996d3f7b439d9b9d71871397334` |
+| 5 | `theorem` | [hom_ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GeneratorsPublic.lean/declarations/hom-ext.md) | 70 | `result-track:548b38a46440969fe23ddb5c9a140dcca0db5baad1d26f639f512519ed585f93` |
+| 6 | `def` | [ofSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GeneratorsPublic.lean/declarations/ofset.md) | 74 | `declaration-track:250047384a5ccc40558863cc74ee03df364056addd0e659d6563d2c7daac0983` |
+| 7 | `lemma` | [ofSet_val](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GeneratorsPublic.lean/declarations/ofset-val.md) | 79 | `result-track:0f406fcec37914ecff672b20b59fa93434e3b791d68d72e50de4ee249f72c53a` |
+| 8 | `def` | [ofFreeGroupHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GeneratorsPublic.lean/declarations/offreegrouphom.md) | 84 | `declaration-track:42f2345b3c4db51c98b308ce3903d4deb515940139a02a48a44c01b029584d48` |
+| 9 | `lemma` | [ofFreeGroupHom_val](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GeneratorsPublic.lean/declarations/offreegrouphom-val.md) | 92 | `result-track:5281785c499b81a9b2e74b15b55d3d4892e706fa0b4a36738dca89614e7d13ee` |
+| 10 | `lemma` | [ofFreeGroupHom_lift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GeneratorsPublic.lean/declarations/offreegrouphom-lift.md) | 98 | `result-track:57de5f3a58721ac2f96f351f20c2acd43733cc8107fd7c56e5c6635662003e10` |
+| 11 | `def` | [map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GeneratorsPublic.lean/declarations/map.md) | 103 | `declaration-track:3fe8d706b53ba95e4245d1d155bf1e858520f796bce5dd82005ba90c985bd155` |
+| 12 | `lemma` | [map_val](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GeneratorsPublic.lean/declarations/map-val.md) | 110 | `result-track:ba50ca7b95c9404ee2f0e1354ea5e3bbeca5a4479727df4f7bf3c052a0d7941f` |
+| 13 | `def` | [reindex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GeneratorsPublic.lean/declarations/reindex.md) | 115 | `declaration-track:71cc8670621a0de09fd1fbfa6ae25e17c19ae9417ed2f04725d4a8de2aeceecd` |
+| 14 | `lemma` | [reindex_val](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GeneratorsPublic.lean/declarations/reindex-val.md) | 121 | `result-track:170e204fea39b600f5300a5cc6c5416ddc0b352ebefbc0c5a7422fcaf9097c27` |
+| 15 | `theorem` | [fg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GeneratorsPublic.lean/declarations/fg.md) | 126 | `result-track:7858a450a76e13239cbf2fab5ce93c1f748d213ff2cbb036b5189e62fdfba08f` |
+| 16 | `theorem` | [Group.fg_iff_nonempty_finite_generators](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GeneratorsPublic.lean/declarations/group-fg-iff-nonempty-finite-generators.md) | 132 | `result-track:f2af4842e44b646dda97e2632ccaec8f4d1963e14082c91201f0b8927838ff22` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

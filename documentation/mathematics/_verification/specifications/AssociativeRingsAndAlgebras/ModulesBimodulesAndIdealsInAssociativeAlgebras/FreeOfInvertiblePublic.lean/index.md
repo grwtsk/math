@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/FreeOfInvertiblePublic.lean/index.md) · [Full source](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/FreeOfInvertiblePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/FreeOfInvertiblePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/FreeOfInvertiblePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [exteriorPower.cofactorLinear](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/FreeOfInvertiblePublic.lean/declarations/exteriorpower-cofactorlinear.md) | 27 | `declaration-track:aa1f047db1e9c744b65f78c6223d400001e307df7ceb45ea2f4099154bad6eb9` |
-| 2 | `def` | [exteriorPower.cofactorToLeft](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/FreeOfInvertiblePublic.lean/declarations/exteriorpower-cofactortoleft.md) | 35 | `declaration-track:92df7e570c2e43ff3fedcf4f6168e3a2d0bbb4cadc0fa12fc9658bbdcf15f43f` |
-| 3 | `lemma` | [exteriorPower.cofactorToLeft_ιMulti_cons](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/FreeOfInvertiblePublic.lean/declarations/exteriorpower-cofactortoleft-multi-cons.md) | 39 | `result-track:2904ccbc1b1e963135d4f6b758a2c7fe2052bcfeb6161bbc2a8e60340d4e780c` |
-| 4 | `theorem` | [Module.free_of_isStablyFree_of_invertible](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/FreeOfInvertiblePublic.lean/declarations/module-free-of-isstablyfree-of-invertible.md) | 47 | `result-track:440ddfb44e6992d61306d0da8f0af7113361b9fdf91381a3a21c6511d677e210` |
+| 1 | `def` | [exteriorPower.cofactorLinear](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/FreeOfInvertiblePublic.lean/declarations/exteriorpower-cofactorlinear.md) | 27 | `declaration-track:aa1f047db1e9c744b65f78c6223d400001e307df7ceb45ea2f4099154bad6eb9` |
+| 2 | `def` | [exteriorPower.cofactorToLeft](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/FreeOfInvertiblePublic.lean/declarations/exteriorpower-cofactortoleft.md) | 35 | `declaration-track:92df7e570c2e43ff3fedcf4f6168e3a2d0bbb4cadc0fa12fc9658bbdcf15f43f` |
+| 3 | `lemma` | [exteriorPower.cofactorToLeft_ιMulti_cons](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/FreeOfInvertiblePublic.lean/declarations/exteriorpower-cofactortoleft-multi-cons.md) | 39 | `result-track:2904ccbc1b1e963135d4f6b758a2c7fe2052bcfeb6161bbc2a8e60340d4e780c` |
+| 4 | `theorem` | [Module.free_of_isStablyFree_of_invertible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/FreeOfInvertiblePublic.lean/declarations/module-free-of-isstablyfree-of-invertible.md) | 47 | `result-track:440ddfb44e6992d61306d0da8f0af7113361b9fdf91381a3a21c6511d677e210` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

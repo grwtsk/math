@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/JacobsonPolynomial.lean/index.md) · [Full source](../../../../CommutativeAlgebra/JacobsonPolynomial.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/JacobsonPolynomial.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/JacobsonPolynomial.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [jacobson_bot_polynomial_le_sInf_map_maximal](../../../../CommutativeAlgebra/JacobsonPolynomial.lean/declarations/jacobson-bot-polynomial-le-sinf-map-maximal.md) | 21 | `result-track:2f4334870c990bf197be769c402ff004f32828d422d32b995e8c9e9373333dff` |
-| 2 | `theorem` | [jacobson_bot_polynomial_of_jacobson_bot](../../../../CommutativeAlgebra/JacobsonPolynomial.lean/declarations/jacobson-bot-polynomial-of-jacobson-bot.md) | 35 | `result-track:906504e3a338df2fe12f3c1afbf69c4d3186bbb86850e5a754cb1d37e7bd3ac3` |
+| 1 | `theorem` | [jacobson_bot_polynomial_le_sInf_map_maximal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/JacobsonPolynomial.lean/declarations/jacobson-bot-polynomial-le-sinf-map-maximal.md) | 21 | `result-track:2f4334870c990bf197be769c402ff004f32828d422d32b995e8c9e9373333dff` |
+| 2 | `theorem` | [jacobson_bot_polynomial_of_jacobson_bot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/JacobsonPolynomial.lean/declarations/jacobson-bot-polynomial-of-jacobson-bot.md) | 35 | `result-track:906504e3a338df2fe12f3c1afbf69c4d3186bbb86850e5a754cb1d37e7bd3ac3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

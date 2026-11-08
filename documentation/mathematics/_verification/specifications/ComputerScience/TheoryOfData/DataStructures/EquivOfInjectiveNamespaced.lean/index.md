@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/EquivOfInjectiveNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/EquivOfInjectiveNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/EquivOfInjectiveNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/EquivOfInjectiveNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [coe_of_injective_castLE_symm](../../../../../../ComputerScience/TheoryOfData/DataStructures/EquivOfInjectiveNamespaced.lean/declarations/coe-of-injective-castle-symm.md) | 21 | `result-track:33cdfbb1843a91c217dce66b467369e3f1685b9b0c54318db2d84a9796abb06c` |
-| 2 | `theorem` | [coe_of_injective_castSucc_symm](../../../../../../ComputerScience/TheoryOfData/DataStructures/EquivOfInjectiveNamespaced.lean/declarations/coe-of-injective-castsucc-symm.md) | 26 | `result-track:ed58c8e132122659e8933935b15ccf2df52b943dc0f903f530bf3af8e0849ec9` |
+| 1 | `theorem` | [coe_of_injective_castLE_symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/EquivOfInjectiveNamespaced.lean/declarations/coe-of-injective-castle-symm.md) | 21 | `result-track:33cdfbb1843a91c217dce66b467369e3f1685b9b0c54318db2d84a9796abb06c` |
+| 2 | `theorem` | [coe_of_injective_castSucc_symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/EquivOfInjectiveNamespaced.lean/declarations/coe-of-injective-castsucc-symm.md) | 26 | `result-track:ed58c8e132122659e8933935b15ccf2df52b943dc0f903f530bf3af8e0849ec9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

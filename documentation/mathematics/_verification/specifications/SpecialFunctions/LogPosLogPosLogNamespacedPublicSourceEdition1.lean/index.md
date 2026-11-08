@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../SpecialFunctions/LogPosLogPosLogNamespacedPublicSourceEdition1.lean/index.md) · [Full source](../../../../SpecialFunctions/LogPosLogPosLogNamespacedPublicSourceEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/LogPosLogPosLogNamespacedPublicSourceEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/LogPosLogPosLogNamespacedPublicSourceEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [log_one_add_exp_le_add_log_two](../../../../SpecialFunctions/LogPosLogPosLogNamespacedPublicSourceEdition1.lean/declarations/log-one-add-exp-le-add-log-two.md) | 30 | `result-track:2776269947351ad8174f963a1dbcee6e0d869ea02249d07be5edd265a8b27917` |
-| 2 | `theorem` | [log_one_add_le_add_log_two_of_le_exp](../../../../SpecialFunctions/LogPosLogPosLogNamespacedPublicSourceEdition1.lean/declarations/log-one-add-le-add-log-two-of-le-exp.md) | 43 | `result-track:2d4535cb4575eb428453748463c9c08bb4cba3c0f752c34c58557d9458d48caf` |
-| 3 | `theorem` | [le_exp_of_log_one_add_le](../../../../SpecialFunctions/LogPosLogPosLogNamespacedPublicSourceEdition1.lean/declarations/le-exp-of-log-one-add-le.md) | 51 | `result-track:90cf58225d581259d613f16306ca815c4547909b8fe060a4870c994924b6fd77` |
-| 4 | `theorem` | [neg_posLog_inv_le_log](../../../../SpecialFunctions/LogPosLogPosLogNamespacedPublicSourceEdition1.lean/declarations/neg-poslog-inv-le-log.md) | 58 | `result-track:3a80233ea7b506850710c4b4c1b3cb9966c9aea42b72af829c96db2311657304` |
+| 1 | `theorem` | [log_one_add_exp_le_add_log_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/LogPosLogPosLogNamespacedPublicSourceEdition1.lean/declarations/log-one-add-exp-le-add-log-two.md) | 30 | `result-track:2776269947351ad8174f963a1dbcee6e0d869ea02249d07be5edd265a8b27917` |
+| 2 | `theorem` | [log_one_add_le_add_log_two_of_le_exp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/LogPosLogPosLogNamespacedPublicSourceEdition1.lean/declarations/log-one-add-le-add-log-two-of-le-exp.md) | 43 | `result-track:2d4535cb4575eb428453748463c9c08bb4cba3c0f752c34c58557d9458d48caf` |
+| 3 | `theorem` | [le_exp_of_log_one_add_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/LogPosLogPosLogNamespacedPublicSourceEdition1.lean/declarations/le-exp-of-log-one-add-le.md) | 51 | `result-track:90cf58225d581259d613f16306ca815c4547909b8fe060a4870c994924b6fd77` |
+| 4 | `theorem` | [neg_posLog_inv_le_log](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/LogPosLogPosLogNamespacedPublicSourceEdition1.lean/declarations/neg-poslog-inv-le-log.md) | 58 | `result-track:3a80233ea7b506850710c4b4c1b3cb9966c9aea42b72af829c96db2311657304` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

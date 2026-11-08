@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/WholeEquivalenceAndExpectations.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/WholeEquivalenceAndExpectations.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/WholeEquivalenceAndExpectations.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/WholeEquivalenceAndExpectations.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PacketEquiv](../../../../ProbabilityTheoryAndStochasticProcesses/WholeEquivalenceAndExpectations.lean/declarations/packetequiv.md) | 43 | `declaration-track:863a0811bb2b7a1bd35c74e4a36805c79d018a0bda1f3f4d2a2c5b38272eabb6` |
-| 2 | `theorem` | [expectation_preserved](../../../../ProbabilityTheoryAndStochasticProcesses/WholeEquivalenceAndExpectations.lean/declarations/expectation-preserved.md) | 59 | `result-track:8b131b6bb813d8bb152bbd0368c61551b3cd745935d695077f641343576d9abf` |
-| 3 | `theorem` | [spectralExpectation_preserved](../../../../ProbabilityTheoryAndStochasticProcesses/WholeEquivalenceAndExpectations.lean/declarations/spectralexpectation-preserved.md) | 78 | `result-track:8638280b2c20f11d2d9148c3f167766412db6d17cbe18a53f20f75518bfb37bf` |
+| 1 | `structure` | [PacketEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/WholeEquivalenceAndExpectations.lean/declarations/packetequiv.md) | 43 | `declaration-track:863a0811bb2b7a1bd35c74e4a36805c79d018a0bda1f3f4d2a2c5b38272eabb6` |
+| 2 | `theorem` | [expectation_preserved](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/WholeEquivalenceAndExpectations.lean/declarations/expectation-preserved.md) | 59 | `result-track:8b131b6bb813d8bb152bbd0368c61551b3cd745935d695077f641343576d9abf` |
+| 3 | `theorem` | [spectralExpectation_preserved](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/WholeEquivalenceAndExpectations.lean/declarations/spectralexpectation-preserved.md) | 78 | `result-track:8638280b2c20f11d2d9148c3f167766412db6d17cbe18a53f20f75518bfb37bf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

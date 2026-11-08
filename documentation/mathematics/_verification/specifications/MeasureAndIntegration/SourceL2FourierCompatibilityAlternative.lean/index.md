@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceL2FourierCompatibilityAlternative.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceL2FourierCompatibilityAlternative.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceL2FourierCompatibilityAlternative.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceL2FourierCompatibilityAlternative.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [fourier_coe_ae](../../../../MeasureAndIntegration/SourceL2FourierCompatibilityAlternative.lean/declarations/fourier-coe-ae.md) | 24 | `result-track:792b8a0877d83318a3b9c11a34c93a5f5aa812b66b574a2bf6f3a18c3602a13c` |
+| 1 | `theorem` | [fourier_coe_ae](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceL2FourierCompatibilityAlternative.lean/declarations/fourier-coe-ae.md) | 24 | `result-track:792b8a0877d83318a3b9c11a34c93a5f5aa812b66b574a2bf6f3a18c3602a13c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

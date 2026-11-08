@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StoredDependentElementExists.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StoredDependentElementExists.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StoredDependentElementExists.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StoredDependentElementExists.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [witt_index_has_witt_element](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StoredDependentElementExists.lean/declarations/witt-index-has-witt-element.md) | 33 | `result-track:6823e65f6cc30a642176fe49e1009b524d5128aa750dd2eaa3bb33d50fd0deb4` |
+| 1 | `theorem` | [witt_index_has_witt_element](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StoredDependentElementExists.lean/declarations/witt-index-has-witt-element.md) | 33 | `result-track:6823e65f6cc30a642176fe49e1009b524d5128aa750dd2eaa3bb33d50fd0deb4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

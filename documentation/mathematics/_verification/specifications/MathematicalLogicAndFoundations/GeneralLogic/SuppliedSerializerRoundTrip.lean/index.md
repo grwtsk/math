@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuppliedSerializerRoundTrip.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuppliedSerializerRoundTrip.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuppliedSerializerRoundTrip.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuppliedSerializerRoundTrip.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [standardReference_manifestSerializer_roundtrip_copy](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuppliedSerializerRoundTrip.lean/declarations/standardreference-manifestserializer-roundtrip-copy.md) | 40 | `result-track:cade6c79a3eee3e7dad8e217cf9db5c2d42c8822b2b024047ac683f31a9f81a6` |
+| 1 | `theorem` | [standardReference_manifestSerializer_roundtrip_copy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuppliedSerializerRoundTrip.lean/declarations/standardreference-manifestserializer-roundtrip-copy.md) | 40 | `result-track:cade6c79a3eee3e7dad8e217cf9db5c2d42c8822b2b024047ac683f31a9f81a6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

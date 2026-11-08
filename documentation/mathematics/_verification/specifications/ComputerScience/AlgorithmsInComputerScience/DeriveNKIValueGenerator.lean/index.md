@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/DeriveNKIValueGenerator.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/DeriveNKIValueGenerator.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DeriveNKIValueGenerator.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DeriveNKIValueGenerator.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,9 +60,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [Value](../../../../../ComputerScience/AlgorithmsInComputerScience/DeriveNKIValueGenerator.lean/declarations/value.md) | 12 | `declaration-track:f120dee3b21a507fe127a8745924bb036ee81e1290051680aa4b8f1e19437d84` |
-| 2 | `instance` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/DeriveNKIValueGenerator.lean/declarations/instance.md) | 87 | `declaration-track:2288f3df138a2e4e309c3f863c87d01ba7a2c09f1770805cfe87e767d3f75b62` |
-| 3 | `def` | [isBool](../../../../../ComputerScience/AlgorithmsInComputerScience/DeriveNKIValueGenerator.lean/declarations/isbool.md) | 104 | `declaration-track:315b3512ce6ddfa13d363fce24eeb1eec43bcd0e8db8ff657bfa9cfa800c731f` |
+| 1 | `inductive` | [Value](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DeriveNKIValueGenerator.lean/declarations/value.md) | 12 | `declaration-track:f120dee3b21a507fe127a8745924bb036ee81e1290051680aa4b8f1e19437d84` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DeriveNKIValueGenerator.lean/declarations/instance.md) | 87 | `declaration-track:2288f3df138a2e4e309c3f863c87d01ba7a2c09f1770805cfe87e767d3f75b62` |
+| 3 | `def` | [isBool](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/DeriveNKIValueGenerator.lean/declarations/isbool.md) | 104 | `declaration-track:315b3512ce6ddfa13d363fce24eeb1eec43bcd0e8db8ff657bfa9cfa800c731f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

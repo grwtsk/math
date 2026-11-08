@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/AwayLemmasNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/AwayLemmasNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AwayLemmasNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AwayLemmasNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mulNumerator](../../../../CommutativeAlgebra/AwayLemmasNamespaced.lean/declarations/mulnumerator.md) | 32 | `declaration-track:782f91064ed1bef5a0a58ca78f313b40dbc0d173ca19f9bc9b89116650686bcb` |
-| 2 | `lemma` | [span_range_mulNumerator_eq_top](../../../../CommutativeAlgebra/AwayLemmasNamespaced.lean/declarations/span-range-mulnumerator-eq-top.md) | 38 | `result-track:29b3761c35d10550bb22ca6fa4e9beb29af6b23b12d6588ecf50178d370a2707` |
-| 3 | `lemma` | [quotient_of_isIdempotentElem](../../../../CommutativeAlgebra/AwayLemmasNamespaced.lean/declarations/quotient-of-isidempotentelem.md) | 70 | `result-track:e66c5a620fcb1a568102c08c65f41f4bdb4814241e95e92eaa8a43fb8fa4eb9b` |
+| 1 | `def` | [mulNumerator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AwayLemmasNamespaced.lean/declarations/mulnumerator.md) | 32 | `declaration-track:782f91064ed1bef5a0a58ca78f313b40dbc0d173ca19f9bc9b89116650686bcb` |
+| 2 | `lemma` | [span_range_mulNumerator_eq_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AwayLemmasNamespaced.lean/declarations/span-range-mulnumerator-eq-top.md) | 38 | `result-track:29b3761c35d10550bb22ca6fa4e9beb29af6b23b12d6588ecf50178d370a2707` |
+| 3 | `lemma` | [quotient_of_isIdempotentElem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/AwayLemmasNamespaced.lean/declarations/quotient-of-isidempotentelem.md) | 70 | `result-track:e66c5a620fcb1a568102c08c65f41f4bdb4814241e95e92eaa8a43fb8fa4eb9b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

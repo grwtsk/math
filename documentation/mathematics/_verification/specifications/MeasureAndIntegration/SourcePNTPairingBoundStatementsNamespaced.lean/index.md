@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourcePNTPairingBoundStatementsNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourcePNTPairingBoundStatementsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePNTPairingBoundStatementsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePNTPairingBoundStatementsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../MeasureAndIntegration/SourcePNTPairingBoundStatementsNamespaced.lean/declarations/example-source-edition-7.md) | 19 | `declaration-track:91179636ff152c3b6e089b95d8e98d34482ba0612b66ef00d3a9e15458c642ca` |
-| 2 | `example` | [(anonymous)](../../../../MeasureAndIntegration/SourcePNTPairingBoundStatementsNamespaced.lean/declarations/example-source-edition-2.md) | 20 | `declaration-track:107e09074d7ddb3793c22585aaaeec32d76c09a10e21a895aa295f28fdba2f9b` |
-| 3 | `example` | [(anonymous)](../../../../MeasureAndIntegration/SourcePNTPairingBoundStatementsNamespaced.lean/declarations/example.md) | 21 | `declaration-track:0984260aae4fbe6d7224d9e34509bed9836c04f11f36e61069f3093706ca37e5` |
-| 4 | `example` | [(anonymous)](../../../../MeasureAndIntegration/SourcePNTPairingBoundStatementsNamespaced.lean/declarations/example-source-edition-8.md) | 23 | `declaration-track:c59de059c763f3a66491f8117feb8425c2841bc11aab6d3c3fe8f6f1886203a1` |
-| 5 | `example` | [(anonymous)](../../../../MeasureAndIntegration/SourcePNTPairingBoundStatementsNamespaced.lean/declarations/example-source-edition-4.md) | 26 | `declaration-track:70a367ac811353d3e2dca0e0f9ae6f1fcfbed587bb5f25820ed592b96ba73da2` |
-| 6 | `example` | [(anonymous)](../../../../MeasureAndIntegration/SourcePNTPairingBoundStatementsNamespaced.lean/declarations/example-source-edition-5.md) | 29 | `declaration-track:70e91387bbe723ce094187035d6bb6143d75f199f69c0ec847e1a0807abea511` |
-| 7 | `example` | [(anonymous)](../../../../MeasureAndIntegration/SourcePNTPairingBoundStatementsNamespaced.lean/declarations/example-source-edition-6.md) | 33 | `declaration-track:80946ed7a61884c45ef0337f2931cb484b5bb39545181e922b09b6cd28460fcb` |
-| 8 | `example` | [(anonymous)](../../../../MeasureAndIntegration/SourcePNTPairingBoundStatementsNamespaced.lean/declarations/example-source-edition-9.md) | 37 | `declaration-track:dbf5e39af30187ba3637e5c9b8c8fb20509dda97e31dce6e80a56b54ea0069b5` |
-| 9 | `example` | [(anonymous)](../../../../MeasureAndIntegration/SourcePNTPairingBoundStatementsNamespaced.lean/declarations/example-source-edition-3.md) | 46 | `declaration-track:4e6b8e33b127b828c26956629bc3d80b478b3aaf1fd7e644c416ae5df8ff3a63` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePNTPairingBoundStatementsNamespaced.lean/declarations/example-source-edition-7.md) | 19 | `declaration-track:91179636ff152c3b6e089b95d8e98d34482ba0612b66ef00d3a9e15458c642ca` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePNTPairingBoundStatementsNamespaced.lean/declarations/example-source-edition-2.md) | 20 | `declaration-track:107e09074d7ddb3793c22585aaaeec32d76c09a10e21a895aa295f28fdba2f9b` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePNTPairingBoundStatementsNamespaced.lean/declarations/example.md) | 21 | `declaration-track:0984260aae4fbe6d7224d9e34509bed9836c04f11f36e61069f3093706ca37e5` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePNTPairingBoundStatementsNamespaced.lean/declarations/example-source-edition-8.md) | 23 | `declaration-track:c59de059c763f3a66491f8117feb8425c2841bc11aab6d3c3fe8f6f1886203a1` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePNTPairingBoundStatementsNamespaced.lean/declarations/example-source-edition-4.md) | 26 | `declaration-track:70a367ac811353d3e2dca0e0f9ae6f1fcfbed587bb5f25820ed592b96ba73da2` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePNTPairingBoundStatementsNamespaced.lean/declarations/example-source-edition-5.md) | 29 | `declaration-track:70e91387bbe723ce094187035d6bb6143d75f199f69c0ec847e1a0807abea511` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePNTPairingBoundStatementsNamespaced.lean/declarations/example-source-edition-6.md) | 33 | `declaration-track:80946ed7a61884c45ef0337f2931cb484b5bb39545181e922b09b6cd28460fcb` |
+| 8 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePNTPairingBoundStatementsNamespaced.lean/declarations/example-source-edition-9.md) | 37 | `declaration-track:dbf5e39af30187ba3637e5c9b8c8fb20509dda97e31dce6e80a56b54ea0069b5` |
+| 9 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePNTPairingBoundStatementsNamespaced.lean/declarations/example-source-edition-3.md) | 46 | `declaration-track:4e6b8e33b127b828c26956629bc3d80b478b3aaf1fd7e644c416ae5df8ff3a63` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

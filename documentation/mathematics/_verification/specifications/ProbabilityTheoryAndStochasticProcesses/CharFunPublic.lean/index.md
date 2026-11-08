@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/CharFunPublic.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/CharFunPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CharFunPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CharFunPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [IsGaussian.charFunDual_eq'](../../../../ProbabilityTheoryAndStochasticProcesses/CharFunPublic.lean/declarations/isgaussian-charfundual-eq.md) | 57 | `result-track:31ced2459d4a3c5ebf0119ccf9cb90b1612dceeffe48a4ed3df0f4ebcd3d6348` |
-| 2 | `lemma` | [isGaussian_iff_gaussian_charFunDual](../../../../ProbabilityTheoryAndStochasticProcesses/CharFunPublic.lean/declarations/isgaussian-iff-gaussian-charfundual.md) | 67 | `result-track:04827571372f9ac676dd7ee4cc54d7fe4dfc4026571c36368ee2476543d21765` |
-| 3 | `lemma` | [gaussian_charFunDual_congr](../../../../ProbabilityTheoryAndStochasticProcesses/CharFunPublic.lean/declarations/gaussian-charfundual-congr.md) | 84 | `result-track:67011cf49cf8993c1b33cfe2d39004167982c90eadd242ce6d908f35144eb8b3` |
-| 4 | `lemma` | [IsGaussian.ext_covarianceBilinDual](../../../../ProbabilityTheoryAndStochasticProcesses/CharFunPublic.lean/declarations/isgaussian-ext-covariancebilindual.md) | 118 | `result-track:a0a567e52619b2ddbe39cc4d4f9f9e7c4d39dba7168f6973b1cfc6488d47df04` |
-| 5 | `lemma` | [IsGaussian.ext_iff_covarianceBilinDual](../../../../ProbabilityTheoryAndStochasticProcesses/CharFunPublic.lean/declarations/isgaussian-ext-iff-covariancebilindual.md) | 125 | `result-track:f44b2a5c95980ed02bf4a4090ae9c7c2d39160ebe13631fd76cbb13b55207c5b` |
-| 6 | `lemma` | [IsGaussian.charFun_eq'](../../../../ProbabilityTheoryAndStochasticProcesses/CharFunPublic.lean/declarations/isgaussian-charfun-eq.md) | 137 | `result-track:3f9275ae6ce267f5e6374a54932c6ce3db7ddb0a5999df8bc84bce9f796bde03` |
-| 7 | `lemma` | [isGaussian_iff_gaussian_charFun](../../../../ProbabilityTheoryAndStochasticProcesses/CharFunPublic.lean/declarations/isgaussian-iff-gaussian-charfun.md) | 148 | `result-track:ceb2faffb4e5b27b8f90459077a14a1b583b7974819e72bc20051647f54ea72d` |
-| 8 | `lemma` | [gaussian_charFun_congr](../../../../ProbabilityTheoryAndStochasticProcesses/CharFunPublic.lean/declarations/gaussian-charfun-congr.md) | 168 | `result-track:3549c6c90745547c1f28c045551028c720777dbc887c1c24e61c514e2779d9fa` |
-| 9 | `lemma` | [IsGaussian.ext](../../../../ProbabilityTheoryAndStochasticProcesses/CharFunPublic.lean/declarations/isgaussian-ext.md) | 186 | `result-track:86900b17c4b1cd77f954f565c28ec14ba77be6bf7bde14fb7a0a80e255e90d50` |
-| 10 | `lemma` | [IsGaussian.ext_iff](../../../../ProbabilityTheoryAndStochasticProcesses/CharFunPublic.lean/declarations/isgaussian-ext-iff.md) | 194 | `result-track:c0b3becce6e2fb37a43c5c1258aadd13b8377560fe508c743c36174530c3e81e` |
+| 1 | `lemma` | [IsGaussian.charFunDual_eq'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CharFunPublic.lean/declarations/isgaussian-charfundual-eq.md) | 57 | `result-track:31ced2459d4a3c5ebf0119ccf9cb90b1612dceeffe48a4ed3df0f4ebcd3d6348` |
+| 2 | `lemma` | [isGaussian_iff_gaussian_charFunDual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CharFunPublic.lean/declarations/isgaussian-iff-gaussian-charfundual.md) | 67 | `result-track:04827571372f9ac676dd7ee4cc54d7fe4dfc4026571c36368ee2476543d21765` |
+| 3 | `lemma` | [gaussian_charFunDual_congr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CharFunPublic.lean/declarations/gaussian-charfundual-congr.md) | 84 | `result-track:67011cf49cf8993c1b33cfe2d39004167982c90eadd242ce6d908f35144eb8b3` |
+| 4 | `lemma` | [IsGaussian.ext_covarianceBilinDual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CharFunPublic.lean/declarations/isgaussian-ext-covariancebilindual.md) | 118 | `result-track:a0a567e52619b2ddbe39cc4d4f9f9e7c4d39dba7168f6973b1cfc6488d47df04` |
+| 5 | `lemma` | [IsGaussian.ext_iff_covarianceBilinDual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CharFunPublic.lean/declarations/isgaussian-ext-iff-covariancebilindual.md) | 125 | `result-track:f44b2a5c95980ed02bf4a4090ae9c7c2d39160ebe13631fd76cbb13b55207c5b` |
+| 6 | `lemma` | [IsGaussian.charFun_eq'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CharFunPublic.lean/declarations/isgaussian-charfun-eq.md) | 137 | `result-track:3f9275ae6ce267f5e6374a54932c6ce3db7ddb0a5999df8bc84bce9f796bde03` |
+| 7 | `lemma` | [isGaussian_iff_gaussian_charFun](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CharFunPublic.lean/declarations/isgaussian-iff-gaussian-charfun.md) | 148 | `result-track:ceb2faffb4e5b27b8f90459077a14a1b583b7974819e72bc20051647f54ea72d` |
+| 8 | `lemma` | [gaussian_charFun_congr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CharFunPublic.lean/declarations/gaussian-charfun-congr.md) | 168 | `result-track:3549c6c90745547c1f28c045551028c720777dbc887c1c24e61c514e2779d9fa` |
+| 9 | `lemma` | [IsGaussian.ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CharFunPublic.lean/declarations/isgaussian-ext.md) | 186 | `result-track:86900b17c4b1cd77f954f565c28ec14ba77be6bf7bde14fb7a0a80e255e90d50` |
+| 10 | `lemma` | [IsGaussian.ext_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CharFunPublic.lean/declarations/isgaussian-ext-iff.md) | 194 | `result-track:c0b3becce6e2fb37a43c5c1258aadd13b8377560fe508c743c36174530c3e81e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

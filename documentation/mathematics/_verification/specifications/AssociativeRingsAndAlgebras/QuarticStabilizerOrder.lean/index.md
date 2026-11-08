@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/QuarticStabilizerOrder.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/QuarticStabilizerOrder.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticStabilizerOrder.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticStabilizerOrder.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.QuarticSplittingFaithfulness`](../../../../AssociativeRingsAndAlgebras/QuarticSplittingFaithfulness.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.Algebra.QuarticAdjacencyGaloisCorrespondence`](../../../../AssociativeRingsAndAlgebras/QuarticAdjacencyGaloisCorrespondence.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.Algebra.QuarticSplittingFaithfulness`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticSplittingFaithfulness.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Algebra.QuarticAdjacencyGaloisCorrespondence`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticAdjacencyGaloisCorrespondence.lean/index.md) — import line 2; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [rootActionImage](../../../../AssociativeRingsAndAlgebras/QuarticStabilizerOrder.lean/declarations/rootactionimage.md) | 29 | `declaration-track:8989d44e31098b3e8c5a0e1af027c076d29149464fd1181bdf3c4dfef12114f2` |
-| 2 | `def` | [matchingKernel](../../../../AssociativeRingsAndAlgebras/QuarticStabilizerOrder.lean/declarations/matchingkernel.md) | 35 | `declaration-track:ffdaefe028a1701190bbb44925728076827c35b4fe2408bd9712a3cb3ca94084` |
-| 3 | `def` | [rootImageKleinIntersection](../../../../AssociativeRingsAndAlgebras/QuarticStabilizerOrder.lean/declarations/rootimagekleinintersection.md) | 39 | `declaration-track:3afcf67cd6d70ff7d41a783020f9b3607cacf737c517caee21ba00ba770c3f3d` |
-| 4 | `def` | [stabilizerToImageIntersection](../../../../AssociativeRingsAndAlgebras/QuarticStabilizerOrder.lean/declarations/stabilizertoimageintersection.md) | 46 | `declaration-track:d5eae3f3da19ead3fe84324051cb00a1dcfe53c37689b28992f5c5f849f8526d` |
-| 5 | `theorem` | [stabilizerToImageIntersection_injective](../../../../AssociativeRingsAndAlgebras/QuarticStabilizerOrder.lean/declarations/stabilizertoimageintersection-injective.md) | 58 | `result-track:0bb3dce2c3734b31c8b370f3037771f3fff552ab2f51bb6a89f34b00701ce2fd` |
-| 6 | `theorem` | [stabilizerToImageIntersection_surjective](../../../../AssociativeRingsAndAlgebras/QuarticStabilizerOrder.lean/declarations/stabilizertoimageintersection-surjective.md) | 69 | `result-track:3dc02567428b94cfc97385f5ca09ee86fb930c5fe719c0f79fec2cd69ac62859` |
-| 7 | `theorem` | [card_stabilizer_eq_card_image_intersection](../../../../AssociativeRingsAndAlgebras/QuarticStabilizerOrder.lean/declarations/card-stabilizer-eq-card-image-intersection.md) | 86 | `result-track:530de46e725dfa0c1a31624c23095f35889c92422de258018b4dc64e7a300418` |
+| 1 | `def` | [rootActionImage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticStabilizerOrder.lean/declarations/rootactionimage.md) | 29 | `declaration-track:8989d44e31098b3e8c5a0e1af027c076d29149464fd1181bdf3c4dfef12114f2` |
+| 2 | `def` | [matchingKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticStabilizerOrder.lean/declarations/matchingkernel.md) | 35 | `declaration-track:ffdaefe028a1701190bbb44925728076827c35b4fe2408bd9712a3cb3ca94084` |
+| 3 | `def` | [rootImageKleinIntersection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticStabilizerOrder.lean/declarations/rootimagekleinintersection.md) | 39 | `declaration-track:3afcf67cd6d70ff7d41a783020f9b3607cacf737c517caee21ba00ba770c3f3d` |
+| 4 | `def` | [stabilizerToImageIntersection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticStabilizerOrder.lean/declarations/stabilizertoimageintersection.md) | 46 | `declaration-track:d5eae3f3da19ead3fe84324051cb00a1dcfe53c37689b28992f5c5f849f8526d` |
+| 5 | `theorem` | [stabilizerToImageIntersection_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticStabilizerOrder.lean/declarations/stabilizertoimageintersection-injective.md) | 58 | `result-track:0bb3dce2c3734b31c8b370f3037771f3fff552ab2f51bb6a89f34b00701ce2fd` |
+| 6 | `theorem` | [stabilizerToImageIntersection_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticStabilizerOrder.lean/declarations/stabilizertoimageintersection-surjective.md) | 69 | `result-track:3dc02567428b94cfc97385f5ca09ee86fb930c5fe719c0f79fec2cd69ac62859` |
+| 7 | `theorem` | [card_stabilizer_eq_card_image_intersection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticStabilizerOrder.lean/declarations/card-stabilizer-eq-card-image-intersection.md) | 86 | `result-track:530de46e725dfa0c1a31624c23095f35889c92422de258018b4dc64e7a300418` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

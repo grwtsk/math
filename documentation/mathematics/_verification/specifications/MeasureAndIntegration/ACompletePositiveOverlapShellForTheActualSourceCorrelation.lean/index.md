@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ACompletePositiveOverlapShellForTheActualSourceCorrelation.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ACompletePositiveOverlapShellForTheActualSourceCorrelation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ACompletePositiveOverlapShellForTheActualSourceCorrelation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ACompletePositiveOverlapShellForTheActualSourceCorrelation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_normalized_test_even](../../../../MeasureAndIntegration/ACompletePositiveOverlapShellForTheActualSourceCorrelation.lean/declarations/actual-normalized-test-even.md) | 22 | `result-track:4bac7f2be4d03da6a5b52ccd759fcd8178b3ac59b52b35080bc5590378e25e6d` |
-| 2 | `theorem` | [complete_window_edge_product_nonnegative](../../../../MeasureAndIntegration/ACompletePositiveOverlapShellForTheActualSourceCorrelation.lean/declarations/complete-window-edge-product-nonnegative.md) | 36 | `result-track:32ddcef8e2d76057d09a3444d1f6334a84d76d779c261635d7821755024bfff0` |
-| 3 | `theorem` | [interior_edge_point_lower](../../../../MeasureAndIntegration/ACompletePositiveOverlapShellForTheActualSourceCorrelation.lean/declarations/interior-edge-point-lower.md) | 64 | `result-track:e542ba54d11ff68727a5beaf49f9bab691aef46c2d7b5b155d4545cbc2a70da6` |
-| 4 | `theorem` | [middle_overlap_product_lower](../../../../MeasureAndIntegration/ACompletePositiveOverlapShellForTheActualSourceCorrelation.lean/declarations/middle-overlap-product-lower.md) | 76 | `result-track:ab03b51160ac1b411336e809d64a6c5c9d8555a0168cc63f795581986cd93b60` |
-| 5 | `theorem` | [actual_correlation_edge_shell_lower](../../../../MeasureAndIntegration/ACompletePositiveOverlapShellForTheActualSourceCorrelation.lean/declarations/actual-correlation-edge-shell-lower.md) | 100 | `result-track:2f34f3ddbe0b1fa5cb69ad8773b7771d8093ffac80e4c4e7e3fe79da3e4e52e5` |
+| 1 | `theorem` | [actual_normalized_test_even](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ACompletePositiveOverlapShellForTheActualSourceCorrelation.lean/declarations/actual-normalized-test-even.md) | 22 | `result-track:4bac7f2be4d03da6a5b52ccd759fcd8178b3ac59b52b35080bc5590378e25e6d` |
+| 2 | `theorem` | [complete_window_edge_product_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ACompletePositiveOverlapShellForTheActualSourceCorrelation.lean/declarations/complete-window-edge-product-nonnegative.md) | 36 | `result-track:32ddcef8e2d76057d09a3444d1f6334a84d76d779c261635d7821755024bfff0` |
+| 3 | `theorem` | [interior_edge_point_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ACompletePositiveOverlapShellForTheActualSourceCorrelation.lean/declarations/interior-edge-point-lower.md) | 64 | `result-track:e542ba54d11ff68727a5beaf49f9bab691aef46c2d7b5b155d4545cbc2a70da6` |
+| 4 | `theorem` | [middle_overlap_product_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ACompletePositiveOverlapShellForTheActualSourceCorrelation.lean/declarations/middle-overlap-product-lower.md) | 76 | `result-track:ab03b51160ac1b411336e809d64a6c5c9d8555a0168cc63f795581986cd93b60` |
+| 5 | `theorem` | [actual_correlation_edge_shell_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ACompletePositiveOverlapShellForTheActualSourceCorrelation.lean/declarations/actual-correlation-edge-shell-lower.md) | 100 | `result-track:2f34f3ddbe0b1fa5cb69ad8773b7771d8093ffac80e4c4e7e3fe79da3e4e52e5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

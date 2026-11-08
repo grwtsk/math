@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/CharZeroCastDivOfNatCharZero.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/CharZeroCastDivOfNatCharZero.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CharZeroCastDivOfNatCharZero.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CharZeroCastDivOfNatCharZero.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [cast_div_charZero](../../../../../NumberTheory/ElementaryNumberTheory/CharZeroCastDivOfNatCharZero.lean/declarations/cast-div-charzero.md) | 23 | `result-track:9cb70e635719464e608fb80ecb4dd13733672bad80d3a2a237671f66912da2a6` |
-| 2 | `theorem` | [cast_div_ofNat_charZero](../../../../../NumberTheory/ElementaryNumberTheory/CharZeroCastDivOfNatCharZero.lean/declarations/cast-div-ofnat-charzero.md) | 31 | `result-track:748d4918e4d18a1e4f8721152b3d30174a6ac429482c4352c2eaff340c0c217f` |
-| 3 | `theorem` | [RingHom.injective_int](../../../../../NumberTheory/ElementaryNumberTheory/CharZeroCastDivOfNatCharZero.lean/declarations/ringhom-injective-int.md) | 37 | `result-track:ce0a35cc9f461893aa54b29b431e9cbd8763d5b05415903f5b69177176678fc1` |
-| 4 | `lemma` | [support_intCast](../../../../../NumberTheory/ElementaryNumberTheory/CharZeroCastDivOfNatCharZero.lean/declarations/support-intcast.md) | 44 | `result-track:8862ac2b5bb63df16fa078c47b474e082e5da5cb5ea4360e85ac8f6e4261c8fb` |
-| 5 | `lemma` | [mulSupport_intCast](../../../../../NumberTheory/ElementaryNumberTheory/CharZeroCastDivOfNatCharZero.lean/declarations/mulsupport-intcast.md) | 47 | `result-track:d2f802e9ba9b95b879dfc89894325241dbe7d687609cbc8dbf8bc03dfc8bdd6d` |
+| 1 | `theorem` | [cast_div_charZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CharZeroCastDivOfNatCharZero.lean/declarations/cast-div-charzero.md) | 23 | `result-track:9cb70e635719464e608fb80ecb4dd13733672bad80d3a2a237671f66912da2a6` |
+| 2 | `theorem` | [cast_div_ofNat_charZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CharZeroCastDivOfNatCharZero.lean/declarations/cast-div-ofnat-charzero.md) | 31 | `result-track:748d4918e4d18a1e4f8721152b3d30174a6ac429482c4352c2eaff340c0c217f` |
+| 3 | `theorem` | [RingHom.injective_int](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CharZeroCastDivOfNatCharZero.lean/declarations/ringhom-injective-int.md) | 37 | `result-track:ce0a35cc9f461893aa54b29b431e9cbd8763d5b05415903f5b69177176678fc1` |
+| 4 | `lemma` | [support_intCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CharZeroCastDivOfNatCharZero.lean/declarations/support-intcast.md) | 44 | `result-track:8862ac2b5bb63df16fa078c47b474e082e5da5cb5ea4360e85ac8f6e4261c8fb` |
+| 5 | `lemma` | [mulSupport_intCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/CharZeroCastDivOfNatCharZero.lean/declarations/mulsupport-intcast.md) | 47 | `result-track:d2f802e9ba9b95b879dfc89894325241dbe7d687609cbc8dbf8bc03dfc8bdd6d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

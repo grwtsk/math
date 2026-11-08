@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FieldTheoryAndPolynomials/JacobsonNoetherNamespaced.lean/index.md) · [Full source](../../../../FieldTheoryAndPolynomials/JacobsonNoetherNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/JacobsonNoetherNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/JacobsonNoetherNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,11 +62,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [exists_pow_mem_center_of_inseparable](../../../../FieldTheoryAndPolynomials/JacobsonNoetherNamespaced.lean/declarations/exists-pow-mem-center-of-inseparable-source-edition-2.md) | 68 | `result-track:9964b5a675536e8558a8cf0757be332844cf335fa9ad5d7b9224209acbf0f2bf` |
-| 2 | `lemma` | [exists_pow_mem_center_of_inseparable'](../../../../FieldTheoryAndPolynomials/JacobsonNoetherNamespaced.lean/declarations/exists-pow-mem-center-of-inseparable.md) | 81 | `result-track:46725cefd59813afe0fbd929b93fe490f6415d8672f8936a3e0b6c94dd4889f4` |
-| 3 | `lemma` | [exist_pow_eq_zero_of_le](../../../../FieldTheoryAndPolynomials/JacobsonNoetherNamespaced.lean/declarations/exist-pow-eq-zero-of-le.md) | 94 | `result-track:27d969e3de99d87f27a3de1ca52a3768748fefd7b14ab2fc33edaccbc02b548e` |
-| 4 | `theorem` | [exists_separable_and_not_isCentral](../../../../FieldTheoryAndPolynomials/JacobsonNoetherNamespaced.lean/declarations/exists-separable-and-not-iscentral-source-edition-2.md) | 113 | `result-track:e6ac685d4a38993f8ea64fd000b012f6a472b67ec59bebd625fd3c99be13d941` |
-| 5 | `theorem` | [exists_separable_and_not_isCentral'](../../../../FieldTheoryAndPolynomials/JacobsonNoetherNamespaced.lean/declarations/exists-separable-and-not-iscentral.md) | 184 | `result-track:6419f4172fc7b026f7c756cbebaac36ed1934125cf2463c8b542831efcee6a63` |
+| 1 | `lemma` | [exists_pow_mem_center_of_inseparable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/JacobsonNoetherNamespaced.lean/declarations/exists-pow-mem-center-of-inseparable-source-edition-2.md) | 68 | `result-track:9964b5a675536e8558a8cf0757be332844cf335fa9ad5d7b9224209acbf0f2bf` |
+| 2 | `lemma` | [exists_pow_mem_center_of_inseparable'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/JacobsonNoetherNamespaced.lean/declarations/exists-pow-mem-center-of-inseparable.md) | 81 | `result-track:46725cefd59813afe0fbd929b93fe490f6415d8672f8936a3e0b6c94dd4889f4` |
+| 3 | `lemma` | [exist_pow_eq_zero_of_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/JacobsonNoetherNamespaced.lean/declarations/exist-pow-eq-zero-of-le.md) | 94 | `result-track:27d969e3de99d87f27a3de1ca52a3768748fefd7b14ab2fc33edaccbc02b548e` |
+| 4 | `theorem` | [exists_separable_and_not_isCentral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/JacobsonNoetherNamespaced.lean/declarations/exists-separable-and-not-iscentral-source-edition-2.md) | 113 | `result-track:e6ac685d4a38993f8ea64fd000b012f6a472b67ec59bebd625fd3c99be13d941` |
+| 5 | `theorem` | [exists_separable_and_not_isCentral'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/JacobsonNoetherNamespaced.lean/declarations/exists-separable-and-not-iscentral.md) | 184 | `result-track:6419f4172fc7b026f7c756cbebaac36ed1934125cf2463c8b542831efcee6a63` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

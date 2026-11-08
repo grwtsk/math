@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDNonAliasingFejerRepresentatives.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDNonAliasingFejerRepresentatives.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDNonAliasingFejerRepresentatives.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDNonAliasingFejerRepresentatives.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Moebius.CenteredLowGCDNonAliasingFejerCyclic`](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDNonAliasingFejerCyclic.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.CenteredLowGCDNonAliasingFejerCyclic`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDNonAliasingFejerCyclic.lean/index.md) — import line 2; pinned internal source present.
 - `Mathlib.Tactic` — import line 3; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [octaveRepresentative](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDNonAliasingFejerRepresentatives.lean/declarations/octaverepresentative.md) | 11 | `declaration-track:304c5c4925ddecaa7c982799ce2614a653a18db38f6c790db6c7657b537542e8` |
-| 2 | `theorem` | [octaveRepresentative_natCast](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDNonAliasingFejerRepresentatives.lean/declarations/octaverepresentative-natcast.md) | 16 | `result-track:6f3b41e0c926963978f07036fc7d4133f1e790544a54684dd48a08f942ceb4ec` |
-| 3 | `def` | [nonAliasingFejerPrefixResidues](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDNonAliasingFejerRepresentatives.lean/declarations/nonaliasingfejerprefixresidues.md) | 33 | `declaration-track:ddaf0fdc6e6b7bc6ce86cad6d06d362871ce66dd0f714008f3ad9a46d7390415` |
-| 4 | `theorem` | [nonAliasingFejerPrefixResidueMap_injective](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDNonAliasingFejerRepresentatives.lean/declarations/nonaliasingfejerprefixresiduemap-injective.md) | 41 | `result-track:0efef19469f07c6ddebe7a1fa929d91a670e31919ba87ff728906af6b431da09` |
+| 1 | `def` | [octaveRepresentative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDNonAliasingFejerRepresentatives.lean/declarations/octaverepresentative.md) | 11 | `declaration-track:304c5c4925ddecaa7c982799ce2614a653a18db38f6c790db6c7657b537542e8` |
+| 2 | `theorem` | [octaveRepresentative_natCast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDNonAliasingFejerRepresentatives.lean/declarations/octaverepresentative-natcast.md) | 16 | `result-track:6f3b41e0c926963978f07036fc7d4133f1e790544a54684dd48a08f942ceb4ec` |
+| 3 | `def` | [nonAliasingFejerPrefixResidues](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDNonAliasingFejerRepresentatives.lean/declarations/nonaliasingfejerprefixresidues.md) | 33 | `declaration-track:ddaf0fdc6e6b7bc6ce86cad6d06d362871ce66dd0f714008f3ad9a46d7390415` |
+| 4 | `theorem` | [nonAliasingFejerPrefixResidueMap_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/CenteredLowGCDNonAliasingFejerRepresentatives.lean/declarations/nonaliasingfejerprefixresiduemap-injective.md) | 41 | `result-track:0efef19469f07c6ddebe7a1fa929d91a670e31919ba87ff728906af6b431da09` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/MultiplicativeNumberTheory/LandauStatements.lean/index.md) · [Full source](../../../../../NumberTheory/MultiplicativeNumberTheory/LandauStatements.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/LandauStatements.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/LandauStatements.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Primes.ConfigurationCounts`](../../../../../NumberTheory/MultiplicativeNumberTheory/ConfigurationCounts.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Primes.ConfigurationCounts`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/ConfigurationCounts.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,18 +57,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Goldbach](../../../../../NumberTheory/MultiplicativeNumberTheory/LandauStatements.lean/declarations/goldbach.md) | 23 | `declaration-track:2de5ccfa2fbc6b623feb75f9bebd86e781e80c9f7e37a48367c7cf3ec49787c1` |
-| 2 | `def` | [TwinPrimes](../../../../../NumberTheory/MultiplicativeNumberTheory/LandauStatements.lean/declarations/twinprimes.md) | 28 | `declaration-track:f2a153671a03210724166e27120feaa051026e78e881fae2518f0b0bb207436c` |
-| 3 | `def` | [Legendre](../../../../../NumberTheory/MultiplicativeNumberTheory/LandauStatements.lean/declarations/legendre.md) | 32 | `declaration-track:307b56091999227faffc5c9ea3138ced2d090c4604026ddb663e615623025827` |
-| 4 | `def` | [QuadraticPrimeValues](../../../../../NumberTheory/MultiplicativeNumberTheory/LandauStatements.lean/declarations/quadraticprimevalues.md) | 36 | `declaration-track:72e89333f728bcbb74afd5509ab24f66772c76dab41f40ae2cce263d96047e54` |
-| 5 | `theorem` | [goldbach_iff_positive_counts](../../../../../NumberTheory/MultiplicativeNumberTheory/LandauStatements.lean/declarations/goldbach-iff-positive-counts.md) | 40 | `result-track:2da76fbbf61c79dc23938f3f3c60a0bd6f78abab6f8fe6b619fedb355b45c49d` |
-| 6 | `theorem` | [twinPrimes_iff_positive_tails](../../../../../NumberTheory/MultiplicativeNumberTheory/LandauStatements.lean/declarations/twinprimes-iff-positive-tails.md) | 49 | `result-track:8b6afc93186691811b7e6b21227884b5a0e9896a1d47a81050723a1eea691bb3` |
-| 7 | `theorem` | [legendre_iff_positive_counts](../../../../../NumberTheory/MultiplicativeNumberTheory/LandauStatements.lean/declarations/legendre-iff-positive-counts.md) | 55 | `result-track:17d64c6d2fca4b43e791890594cd000161aa723cb897d68d5aa9047e87302954` |
-| 8 | `theorem` | [quadraticPrimeValues_iff_positive_tails](../../../../../NumberTheory/MultiplicativeNumberTheory/LandauStatements.lean/declarations/quadraticprimevalues-iff-positive-tails.md) | 64 | `result-track:457e293ef662b2eb5a79bdfd6ffa708517f4bf457ac0cd884f56f3154034b14f` |
-| 9 | `def` | [LegendreThrough](../../../../../NumberTheory/MultiplicativeNumberTheory/LandauStatements.lean/declarations/legendrethrough.md) | 70 | `declaration-track:0441a1a5c7a61ae16f465d0c53eff39c7361d05feb7a8eef5b99011c6c110981` |
-| 10 | `def` | [LegendreBeyond](../../../../../NumberTheory/MultiplicativeNumberTheory/LandauStatements.lean/declarations/legendrebeyond.md) | 74 | `declaration-track:5de98c958c3abec56571d0d12e6802a36f20ddc20eced8d26aad7d1fdd1b3340` |
-| 11 | `theorem` | [legendre_of_prefix_and_tail](../../../../../NumberTheory/MultiplicativeNumberTheory/LandauStatements.lean/declarations/legendre-of-prefix-and-tail.md) | 78 | `result-track:08d1aed7b3b70c833f3e6fb785a52081108606f174b545fb9438c43cfcf68d00` |
-| 12 | `theorem` | [legendre_through_of_legendre](../../../../../NumberTheory/MultiplicativeNumberTheory/LandauStatements.lean/declarations/legendre-through-of-legendre.md) | 87 | `result-track:ab99330f5aeb9b1e582da872e52daf5ffe264b57d02b07ad402fdfaf0b5b0676` |
+| 1 | `def` | [Goldbach](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/LandauStatements.lean/declarations/goldbach.md) | 23 | `declaration-track:2de5ccfa2fbc6b623feb75f9bebd86e781e80c9f7e37a48367c7cf3ec49787c1` |
+| 2 | `def` | [TwinPrimes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/LandauStatements.lean/declarations/twinprimes.md) | 28 | `declaration-track:f2a153671a03210724166e27120feaa051026e78e881fae2518f0b0bb207436c` |
+| 3 | `def` | [Legendre](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/LandauStatements.lean/declarations/legendre.md) | 32 | `declaration-track:307b56091999227faffc5c9ea3138ced2d090c4604026ddb663e615623025827` |
+| 4 | `def` | [QuadraticPrimeValues](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/LandauStatements.lean/declarations/quadraticprimevalues.md) | 36 | `declaration-track:72e89333f728bcbb74afd5509ab24f66772c76dab41f40ae2cce263d96047e54` |
+| 5 | `theorem` | [goldbach_iff_positive_counts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/LandauStatements.lean/declarations/goldbach-iff-positive-counts.md) | 40 | `result-track:2da76fbbf61c79dc23938f3f3c60a0bd6f78abab6f8fe6b619fedb355b45c49d` |
+| 6 | `theorem` | [twinPrimes_iff_positive_tails](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/LandauStatements.lean/declarations/twinprimes-iff-positive-tails.md) | 49 | `result-track:8b6afc93186691811b7e6b21227884b5a0e9896a1d47a81050723a1eea691bb3` |
+| 7 | `theorem` | [legendre_iff_positive_counts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/LandauStatements.lean/declarations/legendre-iff-positive-counts.md) | 55 | `result-track:17d64c6d2fca4b43e791890594cd000161aa723cb897d68d5aa9047e87302954` |
+| 8 | `theorem` | [quadraticPrimeValues_iff_positive_tails](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/LandauStatements.lean/declarations/quadraticprimevalues-iff-positive-tails.md) | 64 | `result-track:457e293ef662b2eb5a79bdfd6ffa708517f4bf457ac0cd884f56f3154034b14f` |
+| 9 | `def` | [LegendreThrough](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/LandauStatements.lean/declarations/legendrethrough.md) | 70 | `declaration-track:0441a1a5c7a61ae16f465d0c53eff39c7361d05feb7a8eef5b99011c6c110981` |
+| 10 | `def` | [LegendreBeyond](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/LandauStatements.lean/declarations/legendrebeyond.md) | 74 | `declaration-track:5de98c958c3abec56571d0d12e6802a36f20ddc20eced8d26aad7d1fdd1b3340` |
+| 11 | `theorem` | [legendre_of_prefix_and_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/LandauStatements.lean/declarations/legendre-of-prefix-and-tail.md) | 78 | `result-track:08d1aed7b3b70c833f3e6fb785a52081108606f174b545fb9438c43cfcf68d00` |
+| 12 | `theorem` | [legendre_through_of_legendre](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/LandauStatements.lean/declarations/legendre-through-of-legendre.md) | 87 | `result-track:ab99330f5aeb9b1e582da872e52daf5ffe264b57d02b07ad402fdfaf0b5b0676` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

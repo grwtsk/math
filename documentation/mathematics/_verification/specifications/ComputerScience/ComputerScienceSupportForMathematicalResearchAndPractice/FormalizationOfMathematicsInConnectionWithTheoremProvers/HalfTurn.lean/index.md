@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/HalfTurn.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/HalfTurn.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/HalfTurn.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/HalfTurn.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [halfTurn](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/HalfTurn.lean/declarations/halfturn.md) | 13 | `declaration-track:93b7ef53e9f2643cec2592b3e5528f22455777c47e27a527815698e560ef4d30` |
-| 2 | `theorem` | [halfTurn_involutive](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/HalfTurn.lean/declarations/halfturn-involutive.md) | 16 | `result-track:5a8b614ecbc2988fecb97c072f9ecbec9d4e75b3ff52820eb968dc89332bb5b6` |
-| 3 | `theorem` | [halfTurn_difference](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/HalfTurn.lean/declarations/halfturn-difference.md) | 21 | `result-track:8c92d32269c8da9d143760415f601f93084912136f197d37b8831157e95fae8c` |
-| 4 | `theorem` | [halfTurn_preserves_centered_squaredDistance](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/HalfTurn.lean/declarations/halfturn-preserves-centered-squareddistance.md) | 27 | `result-track:5ecac533d46375540ee27eb1404cbbb2c5c057b3e0fd520869c527eeb273c111` |
+| 1 | `def` | [halfTurn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/HalfTurn.lean/declarations/halfturn.md) | 13 | `declaration-track:93b7ef53e9f2643cec2592b3e5528f22455777c47e27a527815698e560ef4d30` |
+| 2 | `theorem` | [halfTurn_involutive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/HalfTurn.lean/declarations/halfturn-involutive.md) | 16 | `result-track:5a8b614ecbc2988fecb97c072f9ecbec9d4e75b3ff52820eb968dc89332bb5b6` |
+| 3 | `theorem` | [halfTurn_difference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/HalfTurn.lean/declarations/halfturn-difference.md) | 21 | `result-track:8c92d32269c8da9d143760415f601f93084912136f197d37b8831157e95fae8c` |
+| 4 | `theorem` | [halfTurn_preserves_centered_squaredDistance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/HalfTurn.lean/declarations/halfturn-preserves-centered-squareddistance.md) | 27 | `result-track:5ecac533d46375540ee27eb1404cbbb2c5c057b3e0fd520869c527eeb273c111` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

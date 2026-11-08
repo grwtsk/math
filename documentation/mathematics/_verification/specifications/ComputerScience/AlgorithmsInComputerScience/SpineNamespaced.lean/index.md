@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/SpineNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/SpineNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SpineNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SpineNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [spine](../../../../../ComputerScience/AlgorithmsInComputerScience/SpineNamespaced.lean/declarations/spine.md) | 18 | `declaration-track:180c9bbe0bc7ee8b4c406295055483f65c65f8ecb28598207fc5caf6e7760453` |
-| 2 | `theorem` | [spine_count](../../../../../ComputerScience/AlgorithmsInComputerScience/SpineNamespaced.lean/declarations/spine-count.md) | 21 | `result-track:0186e1af288d74b9a1084e6692ed992457a44c4ff19958b983a4097e2eb044d2` |
-| 3 | `theorem` | [spine_complete](../../../../../ComputerScience/AlgorithmsInComputerScience/SpineNamespaced.lean/declarations/spine-complete.md) | 25 | `result-track:193afc4d4e76ca1bbf078390f31e4d7227e76fe036cd209328407bf00f2b98e6` |
-| 4 | `theorem` | [spine_nodup](../../../../../ComputerScience/AlgorithmsInComputerScience/SpineNamespaced.lean/declarations/spine-nodup.md) | 29 | `result-track:ef0569cc588672514d6f3f6397df084d2dce9e4d74dd991b72070fb9ae64842f` |
+| 1 | `def` | [spine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SpineNamespaced.lean/declarations/spine.md) | 18 | `declaration-track:180c9bbe0bc7ee8b4c406295055483f65c65f8ecb28598207fc5caf6e7760453` |
+| 2 | `theorem` | [spine_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SpineNamespaced.lean/declarations/spine-count.md) | 21 | `result-track:0186e1af288d74b9a1084e6692ed992457a44c4ff19958b983a4097e2eb044d2` |
+| 3 | `theorem` | [spine_complete](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SpineNamespaced.lean/declarations/spine-complete.md) | 25 | `result-track:193afc4d4e76ca1bbf078390f31e4d7227e76fe036cd209328407bf00f2b98e6` |
+| 4 | `theorem` | [spine_nodup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/SpineNamespaced.lean/declarations/spine-nodup.md) | 29 | `result-track:ef0569cc588672514d6f3f6397df084d2dce9e4d74dd991b72070fb9ae64842f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

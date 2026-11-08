@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/PriestleyNamespacedExistsIsClopenUpperOfNotLe.lean/index.md) · [Full source](../../../../GeneralTopology/PriestleyNamespacedExistsIsClopenUpperOfNotLe.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PriestleyNamespacedExistsIsClopenUpperOfNotLe.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PriestleyNamespacedExistsIsClopenUpperOfNotLe.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [PriestleySpace](../../../../GeneralTopology/PriestleyNamespacedExistsIsClopenUpperOfNotLe.lean/declarations/priestleyspace.md) | 46 | `declaration-track:5fa8d01619df58b310fe2d4c4a03b97819e883acd97f517e8c193efefe5be46b` |
-| 2 | `theorem` | [exists_isClopen_upper_of_not_le](../../../../GeneralTopology/PriestleyNamespacedExistsIsClopenUpperOfNotLe.lean/declarations/exists-isclopen-upper-of-not-le.md) | 55 | `result-track:878390b191137e0954e7f83454479f2632b6438732fda6675c3e9957635a0437` |
-| 3 | `theorem` | [exists_isClopen_lower_of_not_le](../../../../GeneralTopology/PriestleyNamespacedExistsIsClopenUpperOfNotLe.lean/declarations/exists-isclopen-lower-of-not-le.md) | 59 | `result-track:9d7c131e9f4926d096653b7b227d7b41ba7f07a76b77eb39a47fe6deea793654` |
-| 4 | `theorem` | [exists_isClopen_upper_or_lower_of_ne](../../../../GeneralTopology/PriestleyNamespacedExistsIsClopenUpperOfNotLe.lean/declarations/exists-isclopen-upper-or-lower-of-ne.md) | 70 | `result-track:5ffa97250893186c9da6d6494df27aa487737b59dd53f4560d582c81a376be74` |
-| 5 | `instance` | [(anonymous)](../../../../GeneralTopology/PriestleyNamespacedExistsIsClopenUpperOfNotLe.lean/declarations/instance.md) | 78 | `declaration-track:0df36cf3223d16fa6c137ac0fc36ed8372d89100b0823bccd95f70ae66cf2338` |
+| 1 | `class` | [PriestleySpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PriestleyNamespacedExistsIsClopenUpperOfNotLe.lean/declarations/priestleyspace.md) | 46 | `declaration-track:5fa8d01619df58b310fe2d4c4a03b97819e883acd97f517e8c193efefe5be46b` |
+| 2 | `theorem` | [exists_isClopen_upper_of_not_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PriestleyNamespacedExistsIsClopenUpperOfNotLe.lean/declarations/exists-isclopen-upper-of-not-le.md) | 55 | `result-track:878390b191137e0954e7f83454479f2632b6438732fda6675c3e9957635a0437` |
+| 3 | `theorem` | [exists_isClopen_lower_of_not_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PriestleyNamespacedExistsIsClopenUpperOfNotLe.lean/declarations/exists-isclopen-lower-of-not-le.md) | 59 | `result-track:9d7c131e9f4926d096653b7b227d7b41ba7f07a76b77eb39a47fe6deea793654` |
+| 4 | `theorem` | [exists_isClopen_upper_or_lower_of_ne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PriestleyNamespacedExistsIsClopenUpperOfNotLe.lean/declarations/exists-isclopen-upper-or-lower-of-ne.md) | 70 | `result-track:5ffa97250893186c9da6d6494df27aa487737b59dd53f4560d582c81a376be74` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PriestleyNamespacedExistsIsClopenUpperOfNotLe.lean/declarations/instance.md) | 78 | `declaration-track:0df36cf3223d16fa6c137ac0fc36ed8372d89100b0823bccd95f70ae66cf2338` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

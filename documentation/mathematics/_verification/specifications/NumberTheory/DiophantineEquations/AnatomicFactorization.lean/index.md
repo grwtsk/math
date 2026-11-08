@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/DiophantineEquations/AnatomicFactorization.lean/index.md) · [Full source](../../../../../NumberTheory/DiophantineEquations/AnatomicFactorization.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/AnatomicFactorization.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/AnatomicFactorization.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.QuantitativeAnatomicFactorization`](../../../../../NumberTheory/DiophantineEquations/QuantitativeAnatomicFactorization.lean/index.md) — import line 15; pinned internal source present.
+- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.QuantitativeAnatomicFactorization`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/QuantitativeAnatomicFactorization.lean/index.md) — import line 15; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_uniform_anatomic_factorization](../../../../../NumberTheory/DiophantineEquations/AnatomicFactorization.lean/declarations/exists-uniform-anatomic-factorization.md) | 27 | `result-track:516cd39256709f2f17c4b003984942990c34ade3141a5758b18ccc4dd1d10a9c` |
-| 2 | `theorem` | [exists_anatomic_factorization](../../../../../NumberTheory/DiophantineEquations/AnatomicFactorization.lean/declarations/exists-anatomic-factorization.md) | 101 | `result-track:c4963570c0cfb8b4d1e2986a7c76835ab803abff7b5e3c4f82f54fe2a19d196f` |
+| 1 | `theorem` | [exists_uniform_anatomic_factorization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/AnatomicFactorization.lean/declarations/exists-uniform-anatomic-factorization.md) | 27 | `result-track:516cd39256709f2f17c4b003984942990c34ade3141a5758b18ccc4dd1d10a9c` |
+| 2 | `theorem` | [exists_anatomic_factorization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/AnatomicFactorization.lean/declarations/exists-anatomic-factorization.md) | 101 | `result-track:c4963570c0cfb8b4d1e2986a7c76835ab803abff7b5e3c4f82f54fe2a19d196f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

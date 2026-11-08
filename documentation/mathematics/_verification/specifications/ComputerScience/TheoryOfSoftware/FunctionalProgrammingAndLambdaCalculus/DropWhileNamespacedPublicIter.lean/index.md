@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DropWhileNamespacedPublicIter.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DropWhileNamespacedPublicIter.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DropWhileNamespacedPublicIter.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DropWhileNamespacedPublicIter.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Iter.Intermediate.dropWhile](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DropWhileNamespacedPublicIter.lean/declarations/iter-intermediate-dropwhile.md) | 31 | `declaration-track:03c0c6c6b9ef59b261a02d951b04955a596fb9c307873ab4bf144f879d35a310` |
-| 2 | `def` | [Iter.dropWhile](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DropWhileNamespacedPublicIter.lean/declarations/iter-dropwhile.md) | 68 | `declaration-track:cd5ddf4615a86dccc9a6039281f50caed0f30940c28bb9b94a22b18cbc8507d1` |
+| 1 | `def` | [Iter.Intermediate.dropWhile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DropWhileNamespacedPublicIter.lean/declarations/iter-intermediate-dropwhile.md) | 31 | `declaration-track:03c0c6c6b9ef59b261a02d951b04955a596fb9c307873ab4bf144f879d35a310` |
+| 2 | `def` | [Iter.dropWhile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DropWhileNamespacedPublicIter.lean/declarations/iter-dropwhile.md) | 68 | `declaration-track:cd5ddf4615a86dccc9a6039281f50caed0f30940c28bb9b94a22b18cbc8507d1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

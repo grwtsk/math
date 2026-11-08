@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/RecallNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/RecallNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RecallNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RecallNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [BoundaryRecallOperator](../../../../../ComputerScience/AlgorithmsInComputerScience/RecallNamespaced.lean/declarations/boundaryrecalloperator.md) | 15 | `declaration-track:5004cd8b2fccf3a4f7a12ec34997bf8fc4e4cfab09e3205cf3ebeb3b4b81be06` |
-| 2 | `structure` | [BoundaryRecallRequest](../../../../../ComputerScience/AlgorithmsInComputerScience/RecallNamespaced.lean/declarations/boundaryrecallrequest.md) | 24 | `declaration-track:c9137f8c5d7d6a5c602df145e80b05568bc7759dc2f1e9929253d9b4bd1d75a0` |
-| 3 | `def` | [BoundaryRecallRequest.usesGraphNeighborhood](../../../../../ComputerScience/AlgorithmsInComputerScience/RecallNamespaced.lean/declarations/boundaryrecallrequest-usesgraphneighborhood.md) | 32 | `declaration-track:cf4d7e0c75850a5862b5a36bfbb6b777e7b691ba4bb937d94faf4cfced75dcc3` |
-| 4 | `theorem` | [queryRAG_uses_graph_neighborhood](../../../../../ComputerScience/AlgorithmsInComputerScience/RecallNamespaced.lean/declarations/queryrag-uses-graph-neighborhood.md) | 39 | `result-track:8cf35897ba88af949cc34d1ebfadbfbedfb3cf0a77b259f21e90d8253a605cc7` |
+| 1 | `inductive` | [BoundaryRecallOperator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RecallNamespaced.lean/declarations/boundaryrecalloperator.md) | 15 | `declaration-track:5004cd8b2fccf3a4f7a12ec34997bf8fc4e4cfab09e3205cf3ebeb3b4b81be06` |
+| 2 | `structure` | [BoundaryRecallRequest](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RecallNamespaced.lean/declarations/boundaryrecallrequest.md) | 24 | `declaration-track:c9137f8c5d7d6a5c602df145e80b05568bc7759dc2f1e9929253d9b4bd1d75a0` |
+| 3 | `def` | [BoundaryRecallRequest.usesGraphNeighborhood](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RecallNamespaced.lean/declarations/boundaryrecallrequest-usesgraphneighborhood.md) | 32 | `declaration-track:cf4d7e0c75850a5862b5a36bfbb6b777e7b691ba4bb937d94faf4cfced75dcc3` |
+| 4 | `theorem` | [queryRAG_uses_graph_neighborhood](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RecallNamespaced.lean/declarations/queryrag-uses-graph-neighborhood.md) | 39 | `result-track:8cf35897ba88af949cc34d1ebfadbfbedfb3cf0a77b259f21e90d8253a605cc7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

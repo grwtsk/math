@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WhilePublicRepeatMEq.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WhilePublicRepeatMEq.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WhilePublicRepeatMEq.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WhilePublicRepeatMEq.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [repeatM.body](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WhilePublicRepeatMEq.lean/declarations/repeatm-body.md) | 24 | `declaration-track:df6108977ce273aa97b815873aa4b97eb52b3fa5025c1133fb0892fc770c5a4d` |
-| 2 | `abbrev` | [repeatM.Pred](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WhilePublicRepeatMEq.lean/declarations/repeatm-pred.md) | 36 | `declaration-track:29209915516cd0650a36edf0a3018dd210d2453d7537c9dddd983a602a095d8b` |
-| 3 | `instance` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WhilePublicRepeatMEq.lean/declarations/instance.md) | 43 | `declaration-track:d75c9405393ee958a8213a29bb6b20e563a4c6eb682047ad68237d53793d9cd1` |
-| 4 | `def` | [repeatM.impl](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WhilePublicRepeatMEq.lean/declarations/repeatm-impl.md) | 53 | `declaration-track:22942dac14acaef2f9d277742afa1a364ea3d4d5a72d1317f93b01a6389024ff` |
-| 5 | `def` | [repeatM.erased](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WhilePublicRepeatMEq.lean/declarations/repeatm-erased.md) | 68 | `declaration-track:cf1aa5d12a2bb24a53bdef2a8b3aafd754f4409c38434f5fba94fc15de30f9c8` |
-| 6 | `def` | [repeatM](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WhilePublicRepeatMEq.lean/declarations/repeatm.md) | 77 | `declaration-track:ca86770309979f5ac1622351ed32cf782761caa45b8b6273fee3210308155d65` |
-| 7 | `theorem` | [repeatM_eq](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WhilePublicRepeatMEq.lean/declarations/repeatm-eq.md) | 82 | `result-track:e74d2101454acb63eb3fd18eaf80e95e24b0fc17152fae6f02d90d6ecb2b4b81` |
-| 8 | `structure` | [Loop](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WhilePublicRepeatMEq.lean/declarations/loop.md) | 100 | `declaration-track:71019ab832d79575cae43eb7c9368b461aa5e80b017ddaddb0fd736209f4c876` |
-| 9 | `def` | [Loop.forIn](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WhilePublicRepeatMEq.lean/declarations/loop-forin.md) | 102 | `declaration-track:50417a411dcbd96b6fc73da1228b23d24201ab1f2c0348ae20cfd8f0abb56812` |
-| 10 | `instance` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WhilePublicRepeatMEq.lean/declarations/instance-source-edition-2.md) | 110 | `declaration-track:eac88b8485e17afbc44ebe946d1f89dd334fc3613d3dcef827492d514112b22b` |
+| 1 | `abbrev` | [repeatM.body](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WhilePublicRepeatMEq.lean/declarations/repeatm-body.md) | 24 | `declaration-track:df6108977ce273aa97b815873aa4b97eb52b3fa5025c1133fb0892fc770c5a4d` |
+| 2 | `abbrev` | [repeatM.Pred](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WhilePublicRepeatMEq.lean/declarations/repeatm-pred.md) | 36 | `declaration-track:29209915516cd0650a36edf0a3018dd210d2453d7537c9dddd983a602a095d8b` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WhilePublicRepeatMEq.lean/declarations/instance.md) | 43 | `declaration-track:d75c9405393ee958a8213a29bb6b20e563a4c6eb682047ad68237d53793d9cd1` |
+| 4 | `def` | [repeatM.impl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WhilePublicRepeatMEq.lean/declarations/repeatm-impl.md) | 53 | `declaration-track:22942dac14acaef2f9d277742afa1a364ea3d4d5a72d1317f93b01a6389024ff` |
+| 5 | `def` | [repeatM.erased](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WhilePublicRepeatMEq.lean/declarations/repeatm-erased.md) | 68 | `declaration-track:cf1aa5d12a2bb24a53bdef2a8b3aafd754f4409c38434f5fba94fc15de30f9c8` |
+| 6 | `def` | [repeatM](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WhilePublicRepeatMEq.lean/declarations/repeatm.md) | 77 | `declaration-track:ca86770309979f5ac1622351ed32cf782761caa45b8b6273fee3210308155d65` |
+| 7 | `theorem` | [repeatM_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WhilePublicRepeatMEq.lean/declarations/repeatm-eq.md) | 82 | `result-track:e74d2101454acb63eb3fd18eaf80e95e24b0fc17152fae6f02d90d6ecb2b4b81` |
+| 8 | `structure` | [Loop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WhilePublicRepeatMEq.lean/declarations/loop.md) | 100 | `declaration-track:71019ab832d79575cae43eb7c9368b461aa5e80b017ddaddb0fd736209f4c876` |
+| 9 | `def` | [Loop.forIn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WhilePublicRepeatMEq.lean/declarations/loop-forin.md) | 102 | `declaration-track:50417a411dcbd96b6fc73da1228b23d24201ab1f2c0348ae20cfd8f0abb56812` |
+| 10 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WhilePublicRepeatMEq.lean/declarations/instance-source-edition-2.md) | 110 | `declaration-track:eac88b8485e17afbc44ebe946d1f89dd334fc3613d3dcef827492d514112b22b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

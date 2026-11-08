@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ActualOrthonormalFrameRepresentatives.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ActualOrthonormalFrameRepresentatives.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ActualOrthonormalFrameRepresentatives.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ActualOrthonormalFrameRepresentatives.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_orthonormal_frame_of_intrinsicPlane](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ActualOrthonormalFrameRepresentatives.lean/declarations/exists-orthonormal-frame-of-intrinsicplane.md) | 23 | `result-track:7652f0f173da4bd45f9791db7fee1d0df62c64c0ec3dbb248ac8568f42484b79` |
-| 2 | `theorem` | [exists_orthogonal_rowChange_of_orthonormal_frames](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ActualOrthonormalFrameRepresentatives.lean/declarations/exists-orthogonal-rowchange-of-orthonormal-frames.md) | 60 | `result-track:6ca400cab1308078f1487354e97126d335e102f1336edd0297c4019c2b539fa9` |
-| 3 | `theorem` | [intrinsicPlane_controlled_orthonormal_pivot](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ActualOrthonormalFrameRepresentatives.lean/declarations/intrinsicplane-controlled-orthonormal-pivot.md) | 78 | `result-track:4f7f3ad9eec89a2fdc8ccd1e2bb26cacd308445671e878b087f84bbc1e9fe270` |
-| 4 | `theorem` | [controlledPivotDomain_orthonormal_representative_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ActualOrthonormalFrameRepresentatives.lean/declarations/controlledpivotdomain-orthonormal-representative-iff.md) | 87 | `result-track:b732877aec0c88580a30d1152702ba37b001823e02ce103721a61e5c30aa3bcb` |
+| 1 | `theorem` | [exists_orthonormal_frame_of_intrinsicPlane](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ActualOrthonormalFrameRepresentatives.lean/declarations/exists-orthonormal-frame-of-intrinsicplane.md) | 23 | `result-track:7652f0f173da4bd45f9791db7fee1d0df62c64c0ec3dbb248ac8568f42484b79` |
+| 2 | `theorem` | [exists_orthogonal_rowChange_of_orthonormal_frames](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ActualOrthonormalFrameRepresentatives.lean/declarations/exists-orthogonal-rowchange-of-orthonormal-frames.md) | 60 | `result-track:6ca400cab1308078f1487354e97126d335e102f1336edd0297c4019c2b539fa9` |
+| 3 | `theorem` | [intrinsicPlane_controlled_orthonormal_pivot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ActualOrthonormalFrameRepresentatives.lean/declarations/intrinsicplane-controlled-orthonormal-pivot.md) | 78 | `result-track:4f7f3ad9eec89a2fdc8ccd1e2bb26cacd308445671e878b087f84bbc1e9fe270` |
+| 4 | `theorem` | [controlledPivotDomain_orthonormal_representative_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ActualOrthonormalFrameRepresentatives.lean/declarations/controlledpivotdomain-orthonormal-representative-iff.md) | 87 | `result-track:b732877aec0c88580a30d1152702ba37b001823e02ce103721a61e5c30aa3bcb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

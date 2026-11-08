@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/QuotientOverPublic.lean/index.md) · [Full source](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/QuotientOverPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/QuotientOverPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/QuotientOverPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [Ideal.ncard_primesOver_lt_of_not_le](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/QuotientOverPublic.lean/declarations/ideal-ncard-primesover-lt-of-not-le.md) | 23 | `result-track:4b79786388f3354211efa90880832ff945850c8603c557f0adccbfb773e7309f` |
-| 2 | `lemma` | [Ideal.ncard_primesOver_quotient_singleton_lt_of_notMem](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/QuotientOverPublic.lean/declarations/ideal-ncard-primesover-quotient-singleton-lt-of-notmem.md) | 34 | `result-track:fb89e4ada137d3f92085bd0b071d9140ff85add0b0fd0d616a7dfd4df0892400` |
+| 1 | `lemma` | [Ideal.ncard_primesOver_lt_of_not_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/QuotientOverPublic.lean/declarations/ideal-ncard-primesover-lt-of-not-le.md) | 23 | `result-track:4b79786388f3354211efa90880832ff945850c8603c557f0adccbfb773e7309f` |
+| 2 | `lemma` | [Ideal.ncard_primesOver_quotient_singleton_lt_of_notMem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GeneralCommutativeRingTheory/QuotientOverPublic.lean/declarations/ideal-ncard-primesover-quotient-singleton-lt-of-notmem.md) | 34 | `result-track:fb89e4ada137d3f92085bd0b071d9140ff85add0b0fd0d616a7dfd4df0892400` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/RealLemmas.lean/index.md) · [Full source](../../../../GeneralTopology/RealLemmas.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RealLemmas.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RealLemmas.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,20 +60,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Real.isTopologicalBasis_Ioo_rat](../../../../GeneralTopology/RealLemmas.lean/declarations/real-istopologicalbasis-ioo-rat.md) | 26 | `result-track:cb698bc11e60cc3c4869dbc3980007ae5a5f9dab6a87755d8f3f1b4b41428b23` |
-| 2 | `theorem` | [Real.cobounded_eq](../../../../GeneralTopology/RealLemmas.lean/declarations/real-cobounded-eq.md) | 39 | `result-track:50e36d459327b972573e6eb7d7ee601b35050c36cd3a22a5a16e8505df36bacb` |
-| 3 | `theorem` | [Real.mem_closure_iff](../../../../GeneralTopology/RealLemmas.lean/declarations/real-mem-closure-iff.md) | 48 | `result-track:f3e340d675182be2eace9aae5bb85813b9a087b881e844be1a123f4591cafc79` |
-| 4 | `theorem` | [Real.uniformContinuous_inv](../../../../GeneralTopology/RealLemmas.lean/declarations/real-uniformcontinuous-inv.md) | 52 | `result-track:37d6af58ad27eaa16773846ef1d168a8eecee0014594ee9f8c115af7d215a959` |
-| 5 | `theorem` | [Real.uniformContinuous_abs](../../../../GeneralTopology/RealLemmas.lean/declarations/real-uniformcontinuous-abs.md) | 58 | `result-track:d76c552780e55ee5cae62578db30edb54a7f4f8d66799ca141077e8e1c1d8e3d` |
-| 6 | `theorem` | [Real.continuous_inv](../../../../GeneralTopology/RealLemmas.lean/declarations/real-continuous-inv.md) | 62 | `result-track:2eb8316b3f500a7d1bae12638a6c0e60d6301cda19a6b59436e31268efc3d042` |
-| 7 | `theorem` | [Real.uniformContinuous_mul](../../../../GeneralTopology/RealLemmas.lean/declarations/real-uniformcontinuous-mul.md) | 65 | `result-track:a50aa997c9d53f83b8801c20b997a4eb7efe0212ab0f00c4e0361e47857a5ab9` |
-| 8 | `theorem` | [Real.totallyBounded_ball](../../../../GeneralTopology/RealLemmas.lean/declarations/real-totallybounded-ball.md) | 74 | `result-track:d5da12e8fe90c5abe71fccfefeba99b30b9dccf810a08d5bc511c32a9b4494ed` |
-| 9 | `theorem` | [Real.subfield_eq_of_closed](../../../../GeneralTopology/RealLemmas.lean/declarations/real-subfield-eq-of-closed.md) | 77 | `result-track:e0c90e9958d84559610d24bae11f42e1d979713f768440226a2c970d71c81df5` |
-| 10 | `theorem` | [Real.exists_seq_rat_strictMono_tendsto](../../../../GeneralTopology/RealLemmas.lean/declarations/real-exists-seq-rat-strictmono-tendsto.md) | 83 | `result-track:ca392d61fce3a8c23afca107b646e40cef35c2b1280e90100ae41e3074530369` |
-| 11 | `theorem` | [Real.exists_seq_rat_strictAnti_tendsto](../../../../GeneralTopology/RealLemmas.lean/declarations/real-exists-seq-rat-strictanti-tendsto.md) | 87 | `result-track:39e564fd2ba1a4fc63d2e9c1a8d8eba043c514f86cc06e74d262bd41d6ef3c81` |
-| 12 | `theorem` | [closure_of_rat_image_lt](../../../../GeneralTopology/RealLemmas.lean/declarations/closure-of-rat-image-lt.md) | 93 | `result-track:058ae68cb8722a0ff7c0c643ce6cec8fbb0619bb2be0630d985024a569427736` |
-| 13 | `theorem` | [Periodic.compact_of_continuous](../../../../GeneralTopology/RealLemmas.lean/declarations/periodic-compact-of-continuous.md) | 120 | `result-track:92576a9df2d8ba8521f9ae3c388f85e04fdd7e79f10e2a15c0cbe6cf4b99d651` |
-| 14 | `theorem` | [Periodic.isBounded_of_continuous](../../../../GeneralTopology/RealLemmas.lean/declarations/periodic-isbounded-of-continuous.md) | 126 | `result-track:1943035b6d225268bcde0a9e9029472f8b4215c087cb6d42d97f9cedee2160ce` |
+| 1 | `theorem` | [Real.isTopologicalBasis_Ioo_rat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RealLemmas.lean/declarations/real-istopologicalbasis-ioo-rat.md) | 26 | `result-track:cb698bc11e60cc3c4869dbc3980007ae5a5f9dab6a87755d8f3f1b4b41428b23` |
+| 2 | `theorem` | [Real.cobounded_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RealLemmas.lean/declarations/real-cobounded-eq.md) | 39 | `result-track:50e36d459327b972573e6eb7d7ee601b35050c36cd3a22a5a16e8505df36bacb` |
+| 3 | `theorem` | [Real.mem_closure_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RealLemmas.lean/declarations/real-mem-closure-iff.md) | 48 | `result-track:f3e340d675182be2eace9aae5bb85813b9a087b881e844be1a123f4591cafc79` |
+| 4 | `theorem` | [Real.uniformContinuous_inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RealLemmas.lean/declarations/real-uniformcontinuous-inv.md) | 52 | `result-track:37d6af58ad27eaa16773846ef1d168a8eecee0014594ee9f8c115af7d215a959` |
+| 5 | `theorem` | [Real.uniformContinuous_abs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RealLemmas.lean/declarations/real-uniformcontinuous-abs.md) | 58 | `result-track:d76c552780e55ee5cae62578db30edb54a7f4f8d66799ca141077e8e1c1d8e3d` |
+| 6 | `theorem` | [Real.continuous_inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RealLemmas.lean/declarations/real-continuous-inv.md) | 62 | `result-track:2eb8316b3f500a7d1bae12638a6c0e60d6301cda19a6b59436e31268efc3d042` |
+| 7 | `theorem` | [Real.uniformContinuous_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RealLemmas.lean/declarations/real-uniformcontinuous-mul.md) | 65 | `result-track:a50aa997c9d53f83b8801c20b997a4eb7efe0212ab0f00c4e0361e47857a5ab9` |
+| 8 | `theorem` | [Real.totallyBounded_ball](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RealLemmas.lean/declarations/real-totallybounded-ball.md) | 74 | `result-track:d5da12e8fe90c5abe71fccfefeba99b30b9dccf810a08d5bc511c32a9b4494ed` |
+| 9 | `theorem` | [Real.subfield_eq_of_closed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RealLemmas.lean/declarations/real-subfield-eq-of-closed.md) | 77 | `result-track:e0c90e9958d84559610d24bae11f42e1d979713f768440226a2c970d71c81df5` |
+| 10 | `theorem` | [Real.exists_seq_rat_strictMono_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RealLemmas.lean/declarations/real-exists-seq-rat-strictmono-tendsto.md) | 83 | `result-track:ca392d61fce3a8c23afca107b646e40cef35c2b1280e90100ae41e3074530369` |
+| 11 | `theorem` | [Real.exists_seq_rat_strictAnti_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RealLemmas.lean/declarations/real-exists-seq-rat-strictanti-tendsto.md) | 87 | `result-track:39e564fd2ba1a4fc63d2e9c1a8d8eba043c514f86cc06e74d262bd41d6ef3c81` |
+| 12 | `theorem` | [closure_of_rat_image_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RealLemmas.lean/declarations/closure-of-rat-image-lt.md) | 93 | `result-track:058ae68cb8722a0ff7c0c643ce6cec8fbb0619bb2be0630d985024a569427736` |
+| 13 | `theorem` | [Periodic.compact_of_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RealLemmas.lean/declarations/periodic-compact-of-continuous.md) | 120 | `result-track:92576a9df2d8ba8521f9ae3c388f85e04fdd7e79f10e2a15c0cbe6cf4b99d651` |
+| 14 | `theorem` | [Periodic.isBounded_of_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RealLemmas.lean/declarations/periodic-isbounded-of-continuous.md) | 126 | `result-track:1943035b6d225268bcde0a9e9029472f8b4215c087cb6d42d97f9cedee2160ce` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

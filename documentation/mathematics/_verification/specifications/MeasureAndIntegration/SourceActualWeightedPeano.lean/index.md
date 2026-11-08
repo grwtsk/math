@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceActualWeightedPeano.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceActualWeightedPeano.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualWeightedPeano.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualWeightedPeano.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,11 +61,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [weightedCorrelation_contDiff_two](../../../../MeasureAndIntegration/SourceActualWeightedPeano.lean/declarations/weightedcorrelation-contdiff-two.md) | 22 | `result-track:488588b635d9abc28e772c3987b164a0c19ad55f9e9bad832374035ba8a6f0d5` |
-| 2 | `theorem` | [actual_correlation_deriv_zero](../../../../MeasureAndIntegration/SourceActualWeightedPeano.lean/declarations/actual-correlation-deriv-zero.md) | 28 | `result-track:9eebd35938eceba0bd76360048fa5c935d4e3879c8d8125c97951fa6773b6c3f` |
-| 3 | `theorem` | [weightedCorrelation_zero](../../../../MeasureAndIntegration/SourceActualWeightedPeano.lean/declarations/weightedcorrelation-zero.md) | 41 | `result-track:8feebde3648edcbd4b78120c2c9c15f26d31110d1c396322d48d90143602fbc9` |
-| 4 | `theorem` | [weightedCorrelation_deriv_zero](../../../../MeasureAndIntegration/SourceActualWeightedPeano.lean/declarations/weightedcorrelation-deriv-zero.md) | 45 | `result-track:324c9d7e735d23707825ae7181defafa420f173a219291fd1e625dc4893ba207` |
-| 5 | `theorem` | [weightedCorrelation_peano](../../../../MeasureAndIntegration/SourceActualWeightedPeano.lean/declarations/weightedcorrelation-peano.md) | 58 | `result-track:bfeaad06863f4df2f8113faaaf41cbcdb76e74dfffc5d353b31bd409d3af800a` |
+| 1 | `theorem` | [weightedCorrelation_contDiff_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualWeightedPeano.lean/declarations/weightedcorrelation-contdiff-two.md) | 22 | `result-track:488588b635d9abc28e772c3987b164a0c19ad55f9e9bad832374035ba8a6f0d5` |
+| 2 | `theorem` | [actual_correlation_deriv_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualWeightedPeano.lean/declarations/actual-correlation-deriv-zero.md) | 28 | `result-track:9eebd35938eceba0bd76360048fa5c935d4e3879c8d8125c97951fa6773b6c3f` |
+| 3 | `theorem` | [weightedCorrelation_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualWeightedPeano.lean/declarations/weightedcorrelation-zero.md) | 41 | `result-track:8feebde3648edcbd4b78120c2c9c15f26d31110d1c396322d48d90143602fbc9` |
+| 4 | `theorem` | [weightedCorrelation_deriv_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualWeightedPeano.lean/declarations/weightedcorrelation-deriv-zero.md) | 45 | `result-track:324c9d7e735d23707825ae7181defafa420f173a219291fd1e625dc4893ba207` |
+| 5 | `theorem` | [weightedCorrelation_peano](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualWeightedPeano.lean/declarations/weightedcorrelation-peano.md) | 58 | `result-track:bfeaad06863f4df2f8113faaaf41cbcdb76e74dfffc5d353b31bd409d3af800a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

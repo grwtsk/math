@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesUliftNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesUliftNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesUliftNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesUliftNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [sectionsEquiv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesUliftNamespaced.lean/declarations/sectionsequiv.md) | 40 | `declaration-track:46c890564bcd36108bf7f64a592cca8991d8eca393a459c794967ac8259ef063` |
-| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesUliftNamespaced.lean/declarations/instance-source-edition-3.md) | 50 | `declaration-track:92580e2e7174a1f7c8bffececd610fe39b30098fd019793c7e9c3bf659e1a909` |
-| 3 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesUliftNamespaced.lean/declarations/instance-source-edition-4.md) | 63 | `declaration-track:b787fb662b4cc820cccaea87235c7355c0b4e87a2db56a840a310fb1e23b3a6a` |
-| 4 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesUliftNamespaced.lean/declarations/instance.md) | 72 | `declaration-track:052615f3c41dd76198a7996aa4a064df2cc5e7afd2b147616c62efe0a52d70f5` |
-| 5 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesUliftNamespaced.lean/declarations/instance-source-edition-2.md) | 83 | `declaration-track:558ecce34bbe7aa05233babd7a6045f3540b818ca312cd7b8ad691caa8fd6158` |
+| 1 | `def` | [sectionsEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesUliftNamespaced.lean/declarations/sectionsequiv.md) | 40 | `declaration-track:46c890564bcd36108bf7f64a592cca8991d8eca393a459c794967ac8259ef063` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesUliftNamespaced.lean/declarations/instance-source-edition-3.md) | 50 | `declaration-track:92580e2e7174a1f7c8bffececd610fe39b30098fd019793c7e9c3bf659e1a909` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesUliftNamespaced.lean/declarations/instance-source-edition-4.md) | 63 | `declaration-track:b787fb662b4cc820cccaea87235c7355c0b4e87a2db56a840a310fb1e23b3a6a` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesUliftNamespaced.lean/declarations/instance.md) | 72 | `declaration-track:052615f3c41dd76198a7996aa4a064df2cc5e7afd2b147616c62efe0a52d70f5` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesUliftNamespaced.lean/declarations/instance-source-edition-2.md) | 83 | `declaration-track:558ecce34bbe7aa05233babd7a6045f3540b818ca312cd7b8ad691caa8fd6158` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

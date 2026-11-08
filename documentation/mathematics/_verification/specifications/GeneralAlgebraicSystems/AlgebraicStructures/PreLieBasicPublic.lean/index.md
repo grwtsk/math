@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PreLieBasicPublic.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PreLieBasicPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PreLieBasicPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PreLieBasicPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [LeftPreLieRing](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PreLieBasicPublic.lean/declarations/leftpreliering.md) | 49 | `declaration-track:059d8ec862d00923f8bd486273002c63762e4a2bf98783aff8f2a0fb3a08e1bf` |
-| 2 | `class` | [RightPreLieRing](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PreLieBasicPublic.lean/declarations/rightpreliering.md) | 55 | `declaration-track:99830a4744bb06de6ecbd599da75525b75f8e7cefd52a34e3ec999deacc86f98` |
-| 3 | `class` | [LeftPreLieAlgebra](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PreLieBasicPublic.lean/declarations/leftpreliealgebra.md) | 65 | `declaration-track:fb77e6ed9a901ee1f22312f114b158edc4f57db9edb42ca0be8cc8aefe5350cd` |
-| 4 | `class` | [RightPreLieAlgebra](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PreLieBasicPublic.lean/declarations/rightpreliealgebra.md) | 71 | `declaration-track:5a10eb23547f6e98f1f043eb5e4bcf4e28e7be9ed9ae9f272b260c12d3bda96e` |
-| 5 | `theorem` | [assoc_symm](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PreLieBasicPublic.lean/declarations/assoc-symm-source-edition-2.md) | 82 | `result-track:a96c3f421210367e8b2096e5f51028b36c907e13d2c036b43a26a84cf186de03` |
-| 6 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PreLieBasicPublic.lean/declarations/instance-source-edition-4.md) | 86 | `declaration-track:85483b604043e63d522424e806e28e95500f20603fa91c3b693e7a45dc6cf90b` |
-| 7 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PreLieBasicPublic.lean/declarations/instance.md) | 97 | `declaration-track:3bcee0c39308a200d4edb4f3b526866f8b87dff4a565c469f8c3f084ff394c01` |
-| 8 | `theorem` | [assoc_symm](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PreLieBasicPublic.lean/declarations/assoc-symm.md) | 105 | `result-track:8bfbc55913dacd43048a6a3920c7be09fd3630a33af7e4ff3470cbcede0f6c6c` |
-| 9 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PreLieBasicPublic.lean/declarations/instance-source-edition-3.md) | 109 | `declaration-track:6dbb3b1ee507fc58b55958a0f854a03a21b91b49ad652ecdb413cbc8f4359596` |
-| 10 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/PreLieBasicPublic.lean/declarations/instance-source-edition-2.md) | 120 | `declaration-track:42e8c15d72dcd2900be23640d5d0b9b96d8db09e5c7281b39f88f7cdf197ff3c` |
+| 1 | `class` | [LeftPreLieRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PreLieBasicPublic.lean/declarations/leftpreliering.md) | 49 | `declaration-track:059d8ec862d00923f8bd486273002c63762e4a2bf98783aff8f2a0fb3a08e1bf` |
+| 2 | `class` | [RightPreLieRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PreLieBasicPublic.lean/declarations/rightpreliering.md) | 55 | `declaration-track:99830a4744bb06de6ecbd599da75525b75f8e7cefd52a34e3ec999deacc86f98` |
+| 3 | `class` | [LeftPreLieAlgebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PreLieBasicPublic.lean/declarations/leftpreliealgebra.md) | 65 | `declaration-track:fb77e6ed9a901ee1f22312f114b158edc4f57db9edb42ca0be8cc8aefe5350cd` |
+| 4 | `class` | [RightPreLieAlgebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PreLieBasicPublic.lean/declarations/rightpreliealgebra.md) | 71 | `declaration-track:5a10eb23547f6e98f1f043eb5e4bcf4e28e7be9ed9ae9f272b260c12d3bda96e` |
+| 5 | `theorem` | [assoc_symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PreLieBasicPublic.lean/declarations/assoc-symm-source-edition-2.md) | 82 | `result-track:a96c3f421210367e8b2096e5f51028b36c907e13d2c036b43a26a84cf186de03` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PreLieBasicPublic.lean/declarations/instance-source-edition-4.md) | 86 | `declaration-track:85483b604043e63d522424e806e28e95500f20603fa91c3b693e7a45dc6cf90b` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PreLieBasicPublic.lean/declarations/instance.md) | 97 | `declaration-track:3bcee0c39308a200d4edb4f3b526866f8b87dff4a565c469f8c3f084ff394c01` |
+| 8 | `theorem` | [assoc_symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PreLieBasicPublic.lean/declarations/assoc-symm.md) | 105 | `result-track:8bfbc55913dacd43048a6a3920c7be09fd3630a33af7e4ff3470cbcede0f6c6c` |
+| 9 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PreLieBasicPublic.lean/declarations/instance-source-edition-3.md) | 109 | `declaration-track:6dbb3b1ee507fc58b55958a0f854a03a21b91b49ad652ecdb413cbc8f4359596` |
+| 10 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/PreLieBasicPublic.lean/declarations/instance-source-edition-2.md) | 120 | `declaration-track:42e8c15d72dcd2900be23640d5d0b9b96d8db09e5c7281b39f88f7cdf197ff3c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

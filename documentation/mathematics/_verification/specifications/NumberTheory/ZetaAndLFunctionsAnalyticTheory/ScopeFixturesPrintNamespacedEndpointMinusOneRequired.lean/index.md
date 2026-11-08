@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ScopeFixturesPrintNamespacedEndpointMinusOneRequired.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ScopeFixturesPrintNamespacedEndpointMinusOneRequired.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ScopeFixturesPrintNamespacedEndpointMinusOneRequired.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ScopeFixturesPrintNamespacedEndpointMinusOneRequired.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [endpoint_minus_one_required](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ScopeFixturesPrintNamespacedEndpointMinusOneRequired.lean/declarations/endpoint-minus-one-required.md) | 18 | `result-track:bc2803ab0639867dc88ddfe8bafe385b5c69c9fff0ee24817b568f66d16fe7ec` |
-| 2 | `theorem` | [actual_square_tail_not_decay](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ScopeFixturesPrintNamespacedEndpointMinusOneRequired.lean/declarations/actual-square-tail-not-decay.md) | 24 | `result-track:e65f47cc4a83199bf50c0e02e43d11a9beefdcfe211535f78df4b530d84c5066` |
+| 1 | `theorem` | [endpoint_minus_one_required](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ScopeFixturesPrintNamespacedEndpointMinusOneRequired.lean/declarations/endpoint-minus-one-required.md) | 18 | `result-track:bc2803ab0639867dc88ddfe8bafe385b5c69c9fff0ee24817b568f66d16fe7ec` |
+| 2 | `theorem` | [actual_square_tail_not_decay](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ScopeFixturesPrintNamespacedEndpointMinusOneRequired.lean/declarations/actual-square-tail-not-decay.md) | 24 | `result-track:e65f47cc4a83199bf50c0e02e43d11a9beefdcfe211535f78df4b530d84c5066` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

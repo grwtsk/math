@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedJetControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedJetControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedJetControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedJetControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenCanonicalJets`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenCanonicalJets.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.Checks.CheckedJetControls`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CheckedJetControls.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenCanonicalJets`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenCanonicalJets.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.Checks.CheckedJetControls`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CheckedJetControls.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [canonical_pole_packet](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedJetControls.lean/declarations/canonical-pole-packet.md) | 21 | `result-track:7195ae0dcec02b6b20df0de89cf05e73a53ac309944550d741f3adaacb821b81` |
-| 2 | `theorem` | [canonical_two_packet](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedJetControls.lean/declarations/canonical-two-packet.md) | 25 | `result-track:cad897e673aaf3a8abd075f425cca5eb7d042ddb2097df5a614983c4016769a8` |
-| 3 | `theorem` | [canonical_small_square](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedJetControls.lean/declarations/canonical-small-square.md) | 29 | `result-track:5dfaeae7633591deed9529810bb31e6bf8df1c9bc28c029b4751fe868e330763` |
-| 4 | `def` | [badImage](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedJetControls.lean/declarations/badimage.md) | 36 | `declaration-track:8be7bb84b9b66a8bc0fb6e737c4d446e5b822eef1b63b3716f54e65230887836` |
-| 5 | `theorem` | [old_bad_closure](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedJetControls.lean/declarations/old-bad-closure.md) | 40 | `result-track:8e7a2a3acade2b630b002e50e67b6eb9525a846c5c5eded0b3eb94e217ae0eb6` |
-| 6 | `theorem` | [canonical_bad_closure](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedJetControls.lean/declarations/canonical-bad-closure.md) | 43 | `result-track:f8b872a0bb08b9f8694c0c79b138fa2bd20ad175b94f34ac24600a952844a484` |
-| 7 | `theorem` | [zero_result_not_none](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedJetControls.lean/declarations/zero-result-not-none.md) | 49 | `result-track:1d0bac0ad07a25b6ff3fdca0b84aab7b4aa07180566f4f67b3c14f80fbdd79f7` |
-| 8 | `theorem` | [canonical_terminal_mutation_reject](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedJetControls.lean/declarations/canonical-terminal-mutation-reject.md) | 56 | `result-track:e56612934d0034b0a2a008fb5ed9d33efefa632ba696ef97af72d74b335e5d78` |
+| 1 | `theorem` | [canonical_pole_packet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedJetControls.lean/declarations/canonical-pole-packet.md) | 21 | `result-track:7195ae0dcec02b6b20df0de89cf05e73a53ac309944550d741f3adaacb821b81` |
+| 2 | `theorem` | [canonical_two_packet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedJetControls.lean/declarations/canonical-two-packet.md) | 25 | `result-track:cad897e673aaf3a8abd075f425cca5eb7d042ddb2097df5a614983c4016769a8` |
+| 3 | `theorem` | [canonical_small_square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedJetControls.lean/declarations/canonical-small-square.md) | 29 | `result-track:5dfaeae7633591deed9529810bb31e6bf8df1c9bc28c029b4751fe868e330763` |
+| 4 | `def` | [badImage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedJetControls.lean/declarations/badimage.md) | 36 | `declaration-track:8be7bb84b9b66a8bc0fb6e737c4d446e5b822eef1b63b3716f54e65230887836` |
+| 5 | `theorem` | [old_bad_closure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedJetControls.lean/declarations/old-bad-closure.md) | 40 | `result-track:8e7a2a3acade2b630b002e50e67b6eb9525a846c5c5eded0b3eb94e217ae0eb6` |
+| 6 | `theorem` | [canonical_bad_closure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedJetControls.lean/declarations/canonical-bad-closure.md) | 43 | `result-track:f8b872a0bb08b9f8694c0c79b138fa2bd20ad175b94f34ac24600a952844a484` |
+| 7 | `theorem` | [zero_result_not_none](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedJetControls.lean/declarations/zero-result-not-none.md) | 49 | `result-track:1d0bac0ad07a25b6ff3fdca0b84aab7b4aa07180566f4f67b3c14f80fbdd79f7` |
+| 8 | `theorem` | [canonical_terminal_mutation_reject](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedJetControls.lean/declarations/canonical-terminal-mutation-reject.md) | 56 | `result-track:e56612934d0034b0a2a008fb5ed9d33efefa632ba696ef97af72d74b335e5d78` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

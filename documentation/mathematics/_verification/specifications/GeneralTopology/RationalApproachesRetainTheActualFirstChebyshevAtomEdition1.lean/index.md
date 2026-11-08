@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/RationalApproachesRetainTheActualFirstChebyshevAtomEdition1.lean/index.md) · [Full source](../../../../GeneralTopology/RationalApproachesRetainTheActualFirstChebyshevAtomEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RationalApproachesRetainTheActualFirstChebyshevAtomEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RationalApproachesRetainTheActualFirstChebyshevAtomEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [rationalProbe](../../../../GeneralTopology/RationalApproachesRetainTheActualFirstChebyshevAtomEdition1.lean/declarations/rationalprobe.md) | 24 | `declaration-track:22f3ee4bc3df62f58a887151d1e9967a06262e0f2e9b370aad71d7fda00f2a91` |
-| 2 | `theorem` | [rational_probe_bounds](../../../../GeneralTopology/RationalApproachesRetainTheActualFirstChebyshevAtomEdition1.lean/declarations/rational-probe-bounds.md) | 26 | `result-track:71b8049f08f1324e969862d916e6800ce1c4cfae2a1c72881f964e9772ce585f` |
-| 3 | `theorem` | [rational_probe_tends_to_birth](../../../../GeneralTopology/RationalApproachesRetainTheActualFirstChebyshevAtomEdition1.lean/declarations/rational-probe-tends-to-birth.md) | 36 | `result-track:caf386665e85fa04f4cc8e781d439073447a1366d18b6d23de1fdd33f7fc1817` |
-| 4 | `theorem` | [every_rational_probe_precedes_atom](../../../../GeneralTopology/RationalApproachesRetainTheActualFirstChebyshevAtomEdition1.lean/declarations/every-rational-probe-precedes-atom.md) | 44 | `result-track:a35efd3cd83670dcb60e7423d52219b1599147bb833d89d901ba3a9465de04a0` |
-| 5 | `theorem` | [actual_first_theta_atom](../../../../GeneralTopology/RationalApproachesRetainTheActualFirstChebyshevAtomEdition1.lean/declarations/actual-first-theta-atom.md) | 47 | `result-track:be8ee0b282977eaf3fb2a10e4fccb1706ab017e15cd84ffe562f9a36b3861732` |
-| 6 | `theorem` | [theta_discontinuous_at_first_prime](../../../../GeneralTopology/RationalApproachesRetainTheActualFirstChebyshevAtomEdition1.lean/declarations/theta-discontinuous-at-first-prime.md) | 51 | `result-track:df252c8d318e7c86ea7cbc1a0897b94c44e1c20ad62c44d8ac8a75926821fee6` |
-| 7 | `theorem` | [integrated_source_retains_continuity_at_birth](../../../../GeneralTopology/RationalApproachesRetainTheActualFirstChebyshevAtomEdition1.lean/declarations/integrated-source-retains-continuity-at-birth.md) | 61 | `result-track:b8a31352cefda3650b71d7d92d170267d937c49eca3ffcca9154e626d632244b` |
+| 1 | `def` | [rationalProbe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RationalApproachesRetainTheActualFirstChebyshevAtomEdition1.lean/declarations/rationalprobe.md) | 24 | `declaration-track:22f3ee4bc3df62f58a887151d1e9967a06262e0f2e9b370aad71d7fda00f2a91` |
+| 2 | `theorem` | [rational_probe_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RationalApproachesRetainTheActualFirstChebyshevAtomEdition1.lean/declarations/rational-probe-bounds.md) | 26 | `result-track:71b8049f08f1324e969862d916e6800ce1c4cfae2a1c72881f964e9772ce585f` |
+| 3 | `theorem` | [rational_probe_tends_to_birth](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RationalApproachesRetainTheActualFirstChebyshevAtomEdition1.lean/declarations/rational-probe-tends-to-birth.md) | 36 | `result-track:caf386665e85fa04f4cc8e781d439073447a1366d18b6d23de1fdd33f7fc1817` |
+| 4 | `theorem` | [every_rational_probe_precedes_atom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RationalApproachesRetainTheActualFirstChebyshevAtomEdition1.lean/declarations/every-rational-probe-precedes-atom.md) | 44 | `result-track:a35efd3cd83670dcb60e7423d52219b1599147bb833d89d901ba3a9465de04a0` |
+| 5 | `theorem` | [actual_first_theta_atom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RationalApproachesRetainTheActualFirstChebyshevAtomEdition1.lean/declarations/actual-first-theta-atom.md) | 47 | `result-track:be8ee0b282977eaf3fb2a10e4fccb1706ab017e15cd84ffe562f9a36b3861732` |
+| 6 | `theorem` | [theta_discontinuous_at_first_prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RationalApproachesRetainTheActualFirstChebyshevAtomEdition1.lean/declarations/theta-discontinuous-at-first-prime.md) | 51 | `result-track:df252c8d318e7c86ea7cbc1a0897b94c44e1c20ad62c44d8ac8a75926821fee6` |
+| 7 | `theorem` | [integrated_source_retains_continuity_at_birth](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/RationalApproachesRetainTheActualFirstChebyshevAtomEdition1.lean/declarations/integrated-source-retains-continuity-at-birth.md) | 61 | `result-track:b8a31352cefda3650b71d7d92d170267d937c49eca3ffcca9154e626d632244b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

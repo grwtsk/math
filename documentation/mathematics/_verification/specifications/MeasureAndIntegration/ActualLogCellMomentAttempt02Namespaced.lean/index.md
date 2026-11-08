@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ActualLogCellMomentAttempt02Namespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ActualLogCellMomentAttempt02Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualLogCellMomentAttempt02Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualLogCellMomentAttempt02Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [logCell](../../../../MeasureAndIntegration/ActualLogCellMomentAttempt02Namespaced.lean/declarations/logcell.md) | 23 | `declaration-track:208178f02d7363230038ae000eb7178ca114e8b55033b0ba130bcc1cec3c4794` |
-| 2 | `def` | [logCellSum](../../../../MeasureAndIntegration/ActualLogCellMomentAttempt02Namespaced.lean/declarations/logcellsum.md) | 26 | `declaration-track:06db1649c7304ad4d35da14359322378ad91e8f5f6f2ebed05b87319041d263d` |
-| 3 | `theorem` | [logCell_integrable](../../../../MeasureAndIntegration/ActualLogCellMomentAttempt02Namespaced.lean/declarations/logcell-integrable.md) | 28 | `result-track:47f1725ebee2731448e527f7ad5c704a266a41636a8b5eba726416ae09eef05c` |
-| 4 | `theorem` | [logCell_eval](../../../../MeasureAndIntegration/ActualLogCellMomentAttempt02Namespaced.lean/declarations/logcell-eval.md) | 40 | `result-track:208976bdc8da59cc8652f2a884bddf76c098a2f5d5ce58d4ae341b24437766ff` |
-| 5 | `theorem` | [logCell_nonneg](../../../../MeasureAndIntegration/ActualLogCellMomentAttempt02Namespaced.lean/declarations/logcell-nonneg.md) | 67 | `result-track:c09fe990efb5e47c125dca32a01845518d6e3f1b02f770ce2fb76a5ca560275d` |
-| 6 | `theorem` | [logCellSum_eval](../../../../MeasureAndIntegration/ActualLogCellMomentAttempt02Namespaced.lean/declarations/logcellsum-eval.md) | 75 | `result-track:a4ed8d2dc3a0e0123c04de8cc30939ba2c99520b9b575cb3a2cd46c708033702` |
-| 7 | `theorem` | [logCellSum_tendsto](../../../../MeasureAndIntegration/ActualLogCellMomentAttempt02Namespaced.lean/declarations/logcellsum-tendsto.md) | 89 | `result-track:7d02aed58b847010c7deac3a3250dd017e44c03fa3660b8227692a127ccc9372` |
-| 8 | `theorem` | [logCell_hasSum](../../../../MeasureAndIntegration/ActualLogCellMomentAttempt02Namespaced.lean/declarations/logcell-hassum.md) | 101 | `result-track:2c62fc800c98f8f456a9d5a7c26d188774f6dbf28748fb76e5b4e8b310c8cc69` |
-| 9 | `theorem` | [logCell_summable](../../../../MeasureAndIntegration/ActualLogCellMomentAttempt02Namespaced.lean/declarations/logcell-summable.md) | 107 | `result-track:9ae0f25cf26c83e1af42a39c0d1c0b4c6520b9574760187e051d9abf35dfed5d` |
-| 10 | `theorem` | [logCell_tsum](../../../../MeasureAndIntegration/ActualLogCellMomentAttempt02Namespaced.lean/declarations/logcell-tsum.md) | 110 | `result-track:d0cc2c67e318e6f20e7b4ea41c6273cc68f543278fb3d5e6c771ffe073f870a5` |
+| 1 | `def` | [logCell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualLogCellMomentAttempt02Namespaced.lean/declarations/logcell.md) | 23 | `declaration-track:208178f02d7363230038ae000eb7178ca114e8b55033b0ba130bcc1cec3c4794` |
+| 2 | `def` | [logCellSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualLogCellMomentAttempt02Namespaced.lean/declarations/logcellsum.md) | 26 | `declaration-track:06db1649c7304ad4d35da14359322378ad91e8f5f6f2ebed05b87319041d263d` |
+| 3 | `theorem` | [logCell_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualLogCellMomentAttempt02Namespaced.lean/declarations/logcell-integrable.md) | 28 | `result-track:47f1725ebee2731448e527f7ad5c704a266a41636a8b5eba726416ae09eef05c` |
+| 4 | `theorem` | [logCell_eval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualLogCellMomentAttempt02Namespaced.lean/declarations/logcell-eval.md) | 40 | `result-track:208976bdc8da59cc8652f2a884bddf76c098a2f5d5ce58d4ae341b24437766ff` |
+| 5 | `theorem` | [logCell_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualLogCellMomentAttempt02Namespaced.lean/declarations/logcell-nonneg.md) | 67 | `result-track:c09fe990efb5e47c125dca32a01845518d6e3f1b02f770ce2fb76a5ca560275d` |
+| 6 | `theorem` | [logCellSum_eval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualLogCellMomentAttempt02Namespaced.lean/declarations/logcellsum-eval.md) | 75 | `result-track:a4ed8d2dc3a0e0123c04de8cc30939ba2c99520b9b575cb3a2cd46c708033702` |
+| 7 | `theorem` | [logCellSum_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualLogCellMomentAttempt02Namespaced.lean/declarations/logcellsum-tendsto.md) | 89 | `result-track:7d02aed58b847010c7deac3a3250dd017e44c03fa3660b8227692a127ccc9372` |
+| 8 | `theorem` | [logCell_hasSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualLogCellMomentAttempt02Namespaced.lean/declarations/logcell-hassum.md) | 101 | `result-track:2c62fc800c98f8f456a9d5a7c26d188774f6dbf28748fb76e5b4e8b310c8cc69` |
+| 9 | `theorem` | [logCell_summable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualLogCellMomentAttempt02Namespaced.lean/declarations/logcell-summable.md) | 107 | `result-track:9ae0f25cf26c83e1af42a39c0d1c0b4c6520b9574760187e051d9abf35dfed5d` |
+| 10 | `theorem` | [logCell_tsum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualLogCellMomentAttempt02Namespaced.lean/declarations/logcell-tsum.md) | 110 | `result-track:d0cc2c67e318e6f20e7b4ea41c6273cc68f543278fb3d5e6c771ffe073f870a5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

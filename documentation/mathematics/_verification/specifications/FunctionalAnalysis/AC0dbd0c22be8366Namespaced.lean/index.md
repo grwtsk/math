@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/AC0dbd0c22be8366Namespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/AC0dbd0c22be8366Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AC0dbd0c22be8366Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AC0dbd0c22be8366Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,7 +61,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [kronecker_kernelVector_orthonormal](../../../../FunctionalAnalysis/AC0dbd0c22be8366Namespaced.lean/declarations/kronecker-kernelvector-orthonormal.md) | 35 | `result-track:a2e2557c81bc90d9a7defe8ff3d995b25ebdde8264bcc5b3d72d2140e359b8f0` |
+| 1 | `theorem` | [kronecker_kernelVector_orthonormal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AC0dbd0c22be8366Namespaced.lean/declarations/kronecker-kernelvector-orthonormal.md) | 35 | `result-track:a2e2557c81bc90d9a7defe8ff3d995b25ebdde8264bcc5b3d72d2140e359b8f0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

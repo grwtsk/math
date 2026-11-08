@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/Rolle.lean/index.md) · [Full source](../../../../GeneralTopology/Rolle.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Rolle.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Rolle.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,10 +60,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_Ioo_extr_on_Icc](../../../../GeneralTopology/Rolle.lean/declarations/exists-ioo-extr-on-icc.md) | 35 | `result-track:1d4392bc9ad9fae9eed6fbd665e2d3404ea6423605d5e1510e9578b9089c458f` |
-| 2 | `theorem` | [exists_isLocalExtr_Ioo](../../../../GeneralTopology/Rolle.lean/declarations/exists-islocalextr-ioo.md) | 57 | `result-track:1c1e38f27c65bb19e5ca58c4966a4dbb403c5a44284920f1ab88d394ddec4897` |
-| 3 | `lemma` | [exists_isExtrOn_Ioo_of_tendsto](../../../../GeneralTopology/Rolle.lean/declarations/exists-isextron-ioo-of-tendsto.md) | 64 | `result-track:cfdc104329e79f928cfebaac867d7042f3f99bde56da18e6f6f7d89ae2a38524` |
-| 4 | `lemma` | [exists_isLocalExtr_Ioo_of_tendsto](../../../../GeneralTopology/Rolle.lean/declarations/exists-islocalextr-ioo-of-tendsto.md) | 76 | `result-track:8b52684544cd00716442cd5c0bbc65fa3655ef78b2987fee25e30f04067e4f49` |
+| 1 | `theorem` | [exists_Ioo_extr_on_Icc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Rolle.lean/declarations/exists-ioo-extr-on-icc.md) | 35 | `result-track:1d4392bc9ad9fae9eed6fbd665e2d3404ea6423605d5e1510e9578b9089c458f` |
+| 2 | `theorem` | [exists_isLocalExtr_Ioo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Rolle.lean/declarations/exists-islocalextr-ioo.md) | 57 | `result-track:1c1e38f27c65bb19e5ca58c4966a4dbb403c5a44284920f1ab88d394ddec4897` |
+| 3 | `lemma` | [exists_isExtrOn_Ioo_of_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Rolle.lean/declarations/exists-isextron-ioo-of-tendsto.md) | 64 | `result-track:cfdc104329e79f928cfebaac867d7042f3f99bde56da18e6f6f7d89ae2a38524` |
+| 4 | `lemma` | [exists_isLocalExtr_Ioo_of_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Rolle.lean/declarations/exists-islocalextr-ioo-of-tendsto.md) | 76 | `result-track:8b52684544cd00716442cd5c0bbc65fa3655ef78b2987fee25e30f04067e4f49` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

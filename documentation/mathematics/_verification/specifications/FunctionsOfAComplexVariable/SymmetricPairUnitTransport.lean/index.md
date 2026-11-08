@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/SymmetricPairUnitTransport.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/SymmetricPairUnitTransport.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/SymmetricPairUnitTransport.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/SymmetricPairUnitTransport.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.SymmetricPairChannelChoice`](../../../../FunctionsOfAComplexVariable/SymmetricPairChannelChoice.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.SymmetricPairChannelChoice`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/SymmetricPairChannelChoice.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [unitDeterminant](../../../../FunctionsOfAComplexVariable/SymmetricPairUnitTransport.lean/declarations/unitdeterminant.md) | 22 | `declaration-track:c7286f6548fc1cbc86d49e672e685418b1ac9e45cfda46bb53372a27fe595c0f` |
-| 2 | `lemma` | [unitDeterminant_eq](../../../../FunctionsOfAComplexVariable/SymmetricPairUnitTransport.lean/declarations/unitdeterminant-eq.md) | 25 | `result-track:e94d1df8d029f64ba83b9741ff9c6087472ef139c67a1f2a4f24096e1c4eb67e` |
-| 3 | `lemma` | [unitDeterminant_ne_zero](../../../../FunctionsOfAComplexVariable/SymmetricPairUnitTransport.lean/declarations/unitdeterminant-ne-zero.md) | 32 | `result-track:9aca6625e2f71262bcec656bdee141feda9da76f5855d6f735c5a7391e772c6e` |
-| 4 | `theorem` | [quotient_channels](../../../../FunctionsOfAComplexVariable/SymmetricPairUnitTransport.lean/declarations/quotient-channels.md) | 38 | `result-track:5ba7acf6689de62f6b6e79d50d8c790531664a5c3a28068b2b4f7bee59e3ddae` |
-| 5 | `theorem` | [quotient_zero_pair_iff](../../../../FunctionsOfAComplexVariable/SymmetricPairUnitTransport.lean/declarations/quotient-zero-pair-iff.md) | 48 | `result-track:f1918b7c2dd10a29dadc62e26e34889dee8d0a993b6d39795e4b0a1daced7a3e` |
-| 6 | `theorem` | [quotient_telescope](../../../../FunctionsOfAComplexVariable/SymmetricPairUnitTransport.lean/declarations/quotient-telescope.md) | 55 | `result-track:ba1e4f58b88ed36ca701aa5bad0f502a225a1668c2f9c5ea4631fb1ffefe79f8` |
-| 7 | `theorem` | [energy_unit_comparison](../../../../FunctionsOfAComplexVariable/SymmetricPairUnitTransport.lean/declarations/energy-unit-comparison.md) | 59 | `result-track:5b981c6a373c1be283d6057a01018f0371b08e355f3f69423e396c9eb96a6f36` |
-| 8 | `theorem` | [channels_of_endpoint_disks](../../../../FunctionsOfAComplexVariable/SymmetricPairUnitTransport.lean/declarations/channels-of-endpoint-disks.md) | 84 | `result-track:8fa39b4bcc0d6167338872b36d56ba3a67a3af746d050dc95dce02b15d84915b` |
+| 1 | `def` | [unitDeterminant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/SymmetricPairUnitTransport.lean/declarations/unitdeterminant.md) | 22 | `declaration-track:c7286f6548fc1cbc86d49e672e685418b1ac9e45cfda46bb53372a27fe595c0f` |
+| 2 | `lemma` | [unitDeterminant_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/SymmetricPairUnitTransport.lean/declarations/unitdeterminant-eq.md) | 25 | `result-track:e94d1df8d029f64ba83b9741ff9c6087472ef139c67a1f2a4f24096e1c4eb67e` |
+| 3 | `lemma` | [unitDeterminant_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/SymmetricPairUnitTransport.lean/declarations/unitdeterminant-ne-zero.md) | 32 | `result-track:9aca6625e2f71262bcec656bdee141feda9da76f5855d6f735c5a7391e772c6e` |
+| 4 | `theorem` | [quotient_channels](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/SymmetricPairUnitTransport.lean/declarations/quotient-channels.md) | 38 | `result-track:5ba7acf6689de62f6b6e79d50d8c790531664a5c3a28068b2b4f7bee59e3ddae` |
+| 5 | `theorem` | [quotient_zero_pair_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/SymmetricPairUnitTransport.lean/declarations/quotient-zero-pair-iff.md) | 48 | `result-track:f1918b7c2dd10a29dadc62e26e34889dee8d0a993b6d39795e4b0a1daced7a3e` |
+| 6 | `theorem` | [quotient_telescope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/SymmetricPairUnitTransport.lean/declarations/quotient-telescope.md) | 55 | `result-track:ba1e4f58b88ed36ca701aa5bad0f502a225a1668c2f9c5ea4631fb1ffefe79f8` |
+| 7 | `theorem` | [energy_unit_comparison](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/SymmetricPairUnitTransport.lean/declarations/energy-unit-comparison.md) | 59 | `result-track:5b981c6a373c1be283d6057a01018f0371b08e355f3f69423e396c9eb96a6f36` |
+| 8 | `theorem` | [channels_of_endpoint_disks](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/SymmetricPairUnitTransport.lean/declarations/channels-of-endpoint-disks.md) | 84 | `result-track:8fa39b4bcc0d6167338872b36d56ba3a67a3af746d050dc95dce02b15d84915b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

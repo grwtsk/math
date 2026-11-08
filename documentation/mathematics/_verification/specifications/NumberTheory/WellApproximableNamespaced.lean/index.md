@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/WellApproximableNamespaced.lean/index.md) · [Full source](../../../../NumberTheory/WellApproximableNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WellApproximableNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WellApproximableNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,19 +58,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [approxOrderOf](../../../../NumberTheory/WellApproximableNamespaced.lean/declarations/approxorderof.md) | 77 | `declaration-track:0d6951241d2a88baf4cf67f22972edb09733a76f141a7c900b5813f2830d946f` |
-| 2 | `theorem` | [mem_approxOrderOf_iff](../../../../NumberTheory/WellApproximableNamespaced.lean/declarations/mem-approxorderof-iff.md) | 81 | `result-track:dacff12744a68e5f8d49382cd27a12e3fa16d2c8895f72e17133e50d010f0680` |
-| 3 | `def` | [wellApproximable](../../../../NumberTheory/WellApproximableNamespaced.lean/declarations/wellapproximable.md) | 92 | `declaration-track:353d8dc4ac5288658155c09f9bfb199f0848932bbce78290b65413320294b536` |
-| 4 | `theorem` | [mem_wellApproximable_iff](../../../../NumberTheory/WellApproximableNamespaced.lean/declarations/mem-wellapproximable-iff.md) | 96 | `result-track:aed3edfae886453acc4128f7d8718e85def35159134787255a912462cc38bafa` |
-| 5 | `theorem` | [image_pow_subset_of_coprime](../../../../NumberTheory/WellApproximableNamespaced.lean/declarations/image-pow-subset-of-coprime.md) | 106 | `result-track:f312f3152e25cfc5cf0edf05c1fef296075307704c0704557659b5bf33220c52` |
-| 6 | `theorem` | [image_pow_subset](../../../../NumberTheory/WellApproximableNamespaced.lean/declarations/image-pow-subset.md) | 117 | `result-track:ea797f9db5983a7d26f8a62ee44fb154b490b4c5598dc7ee729da9cde344a4af` |
-| 7 | `theorem` | [smul_subset_of_coprime](../../../../NumberTheory/WellApproximableNamespaced.lean/declarations/smul-subset-of-coprime.md) | 128 | `result-track:ee69197beb55dce44e3ea094c09041d4ae4626ef354173b0d2b8ac15021a457d` |
-| 8 | `theorem` | [smul_eq_of_mul_dvd](../../../../NumberTheory/WellApproximableNamespaced.lean/declarations/smul-eq-of-mul-dvd.md) | 139 | `result-track:f354f0becc3c4be4e8d6ce3f1c81f22eb6df83f01094d7f88163151fe63bdab8` |
-| 9 | `theorem` | [mem_approxAddOrderOf_iff](../../../../NumberTheory/WellApproximableNamespaced.lean/declarations/mem-approxaddorderof-iff.md) | 164 | `result-track:95fb5166b5efa2ce1dff720239bed41a34143026e31628005e88256d1bdace40` |
-| 10 | `theorem` | [mem_addWellApproximable_iff](../../../../NumberTheory/WellApproximableNamespaced.lean/declarations/mem-addwellapproximable-iff.md) | 172 | `result-track:1d1446be59a392412aa08fc0f3bbe7ecb7cf57d8b7e7fb77e292fb6f4ca53f9c` |
-| 11 | `theorem` | [addWellApproximable_ae_empty_or_univ](../../../../NumberTheory/WellApproximableNamespaced.lean/declarations/addwellapproximable-ae-empty-or-univ.md) | 195 | `result-track:6aca75e47f4b85b0fcdf44a9a8306b3d803a36ec44024a6323b948af387c1a29` |
-| 12 | `lemma` | [Well Approximable Namespaced](../../../../NumberTheory/WellApproximableNamespaced.lean/declarations/exists-norm-nsmul-le-source-line-326-occurrence-2.md) | 326 | `result-track:fa1bca95309e908763648eae7c78a3d92838ced5958be87009769f27ed8008ca` |
-| 13 | `lemma` | [exists_norm_nsmul_le](../../../../NumberTheory/WellApproximableNamespaced.lean/declarations/exists-norm-nsmul-le.md) | 363 | `result-track:f73c67a2ab1c3a62ddedbdb4cca42d5f42b13e8b5cd68f1077e2e5cb6d6774a8` |
+| 1 | `def` | [approxOrderOf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WellApproximableNamespaced.lean/declarations/approxorderof.md) | 77 | `declaration-track:0d6951241d2a88baf4cf67f22972edb09733a76f141a7c900b5813f2830d946f` |
+| 2 | `theorem` | [mem_approxOrderOf_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WellApproximableNamespaced.lean/declarations/mem-approxorderof-iff.md) | 81 | `result-track:dacff12744a68e5f8d49382cd27a12e3fa16d2c8895f72e17133e50d010f0680` |
+| 3 | `def` | [wellApproximable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WellApproximableNamespaced.lean/declarations/wellapproximable.md) | 92 | `declaration-track:353d8dc4ac5288658155c09f9bfb199f0848932bbce78290b65413320294b536` |
+| 4 | `theorem` | [mem_wellApproximable_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WellApproximableNamespaced.lean/declarations/mem-wellapproximable-iff.md) | 96 | `result-track:aed3edfae886453acc4128f7d8718e85def35159134787255a912462cc38bafa` |
+| 5 | `theorem` | [image_pow_subset_of_coprime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WellApproximableNamespaced.lean/declarations/image-pow-subset-of-coprime.md) | 106 | `result-track:f312f3152e25cfc5cf0edf05c1fef296075307704c0704557659b5bf33220c52` |
+| 6 | `theorem` | [image_pow_subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WellApproximableNamespaced.lean/declarations/image-pow-subset.md) | 117 | `result-track:ea797f9db5983a7d26f8a62ee44fb154b490b4c5598dc7ee729da9cde344a4af` |
+| 7 | `theorem` | [smul_subset_of_coprime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WellApproximableNamespaced.lean/declarations/smul-subset-of-coprime.md) | 128 | `result-track:ee69197beb55dce44e3ea094c09041d4ae4626ef354173b0d2b8ac15021a457d` |
+| 8 | `theorem` | [smul_eq_of_mul_dvd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WellApproximableNamespaced.lean/declarations/smul-eq-of-mul-dvd.md) | 139 | `result-track:f354f0becc3c4be4e8d6ce3f1c81f22eb6df83f01094d7f88163151fe63bdab8` |
+| 9 | `theorem` | [mem_approxAddOrderOf_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WellApproximableNamespaced.lean/declarations/mem-approxaddorderof-iff.md) | 164 | `result-track:95fb5166b5efa2ce1dff720239bed41a34143026e31628005e88256d1bdace40` |
+| 10 | `theorem` | [mem_addWellApproximable_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WellApproximableNamespaced.lean/declarations/mem-addwellapproximable-iff.md) | 172 | `result-track:1d1446be59a392412aa08fc0f3bbe7ecb7cf57d8b7e7fb77e292fb6f4ca53f9c` |
+| 11 | `theorem` | [addWellApproximable_ae_empty_or_univ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WellApproximableNamespaced.lean/declarations/addwellapproximable-ae-empty-or-univ.md) | 195 | `result-track:6aca75e47f4b85b0fcdf44a9a8306b3d803a36ec44024a6323b948af387c1a29` |
+| 12 | `lemma` | [Well Approximable Namespaced](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WellApproximableNamespaced.lean/declarations/exists-norm-nsmul-le-source-line-326-occurrence-2.md) | 326 | `result-track:fa1bca95309e908763648eae7c78a3d92838ced5958be87009769f27ed8008ca` |
+| 13 | `lemma` | [exists_norm_nsmul_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WellApproximableNamespaced.lean/declarations/exists-norm-nsmul-le.md) | 363 | `result-track:f73c67a2ab1c3a62ddedbdb4cca42d5f42b13e8b5cd68f1077e2e5cb6d6774a8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

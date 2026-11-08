@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IdentityReconstructionExample.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IdentityReconstructionExample.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IdentityReconstructionExample.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IdentityReconstructionExample.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [Existential Reachability And Reconstruction](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExistentialReachabilityAndReconstruction.lean/index.md) — import line 17; pinned internal source present.
+- [Existential Reachability And Reconstruction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExistentialReachabilityAndReconstruction.lean/index.md) — import line 17; pinned internal source present.
 - `Folder.Archive.MatrixSymmetry` — import line 19; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [copyCanonicalizer](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IdentityReconstructionExample.lean/declarations/copycanonicalizer.md) | 37 | `declaration-track:8efe566083026a048c5686882f9d424d2913f091f2c10d1e0794e930ae4367f1` |
-| 2 | `theorem` | [copyCanonicalizer_reconstruct](../../../../../MathematicalLogicAndFoundations/GeneralLogic/IdentityReconstructionExample.lean/declarations/copycanonicalizer-reconstruct.md) | 45 | `result-track:0026d549802f73296ca07e46aaf02fd05c7b979100665842da664840d8c64871` |
+| 1 | `def` | [copyCanonicalizer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IdentityReconstructionExample.lean/declarations/copycanonicalizer.md) | 37 | `declaration-track:8efe566083026a048c5686882f9d424d2913f091f2c10d1e0794e930ae4367f1` |
+| 2 | `theorem` | [copyCanonicalizer_reconstruct](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/IdentityReconstructionExample.lean/declarations/copycanonicalizer-reconstruct.md) | 45 | `result-track:0026d549802f73296ca07e46aaf02fd05c7b979100665842da664840d8c64871` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

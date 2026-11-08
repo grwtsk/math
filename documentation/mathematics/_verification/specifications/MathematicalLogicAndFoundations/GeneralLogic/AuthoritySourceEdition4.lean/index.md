@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AuthoritySourceEdition4.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AuthoritySourceEdition4.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AuthoritySourceEdition4.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AuthoritySourceEdition4.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [AuthorityClass](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AuthoritySourceEdition4.lean/declarations/authorityclass.md) | 13 | `declaration-track:5f1d84d8f3a0785eaf1d95b211e192dd23342e25e19b3982af069e50a68fe5f6` |
-| 2 | `inductive` | [MayMint](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AuthoritySourceEdition4.lean/declarations/maymint.md) | 23 | `declaration-track:d580e0384eefb0b880bf693dd4038c20c81a81be167234f0c594b0e7e4822aac` |
-| 3 | `theorem` | [runtime_cannot_mint_theorem](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AuthoritySourceEdition4.lean/declarations/runtime-cannot-mint-theorem.md) | 31 | `result-track:9ab3bcda6b0072e1b76dbd821d5dd04d744f859c3cad0f0b9681543d1cbce514` |
-| 4 | `theorem` | [boolean_cannot_mint_theorem](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AuthoritySourceEdition4.lean/declarations/boolean-cannot-mint-theorem.md) | 36 | `result-track:e4f969f34a1c78a957cfd2061f5e9fa748b61bc261115f959007ea4931adcc57` |
-| 5 | `theorem` | [analytic_cannot_mint_computational](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AuthoritySourceEdition4.lean/declarations/analytic-cannot-mint-computational.md) | 41 | `result-track:d5a469765cea62f42f54a835525d33a0d58f851699120cc8e6e3683ad46033a0` |
-| 6 | `structure` | [AuthorityArtifact](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AuthoritySourceEdition4.lean/declarations/authorityartifact.md) | 46 | `declaration-track:dd82c2f2e58b656759985c821ff19635b40c53f3acb3a01751d1337a5a6f6b5e` |
+| 1 | `inductive` | [AuthorityClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AuthoritySourceEdition4.lean/declarations/authorityclass.md) | 13 | `declaration-track:5f1d84d8f3a0785eaf1d95b211e192dd23342e25e19b3982af069e50a68fe5f6` |
+| 2 | `inductive` | [MayMint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AuthoritySourceEdition4.lean/declarations/maymint.md) | 23 | `declaration-track:d580e0384eefb0b880bf693dd4038c20c81a81be167234f0c594b0e7e4822aac` |
+| 3 | `theorem` | [runtime_cannot_mint_theorem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AuthoritySourceEdition4.lean/declarations/runtime-cannot-mint-theorem.md) | 31 | `result-track:9ab3bcda6b0072e1b76dbd821d5dd04d744f859c3cad0f0b9681543d1cbce514` |
+| 4 | `theorem` | [boolean_cannot_mint_theorem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AuthoritySourceEdition4.lean/declarations/boolean-cannot-mint-theorem.md) | 36 | `result-track:e4f969f34a1c78a957cfd2061f5e9fa748b61bc261115f959007ea4931adcc57` |
+| 5 | `theorem` | [analytic_cannot_mint_computational](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AuthoritySourceEdition4.lean/declarations/analytic-cannot-mint-computational.md) | 41 | `result-track:d5a469765cea62f42f54a835525d33a0d58f851699120cc8e6e3683ad46033a0` |
+| 6 | `structure` | [AuthorityArtifact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AuthoritySourceEdition4.lean/declarations/authorityartifact.md) | 46 | `declaration-track:dd82c2f2e58b656759985c821ff19635b40c53f3acb3a01751d1337a5a6f6b5e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

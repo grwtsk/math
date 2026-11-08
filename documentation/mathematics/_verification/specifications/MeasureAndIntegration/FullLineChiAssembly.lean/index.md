@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/FullLineChiAssembly.lean/index.md) · [Full source](../../../../MeasureAndIntegration/FullLineChiAssembly.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FullLineChiAssembly.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FullLineChiAssembly.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_heights_chi](../../../../MeasureAndIntegration/FullLineChiAssembly.lean/declarations/exists-heights-chi.md) | 34 | `result-track:946058a4b773461c8605602ffddee733aa5fc14866f856c6c5f350c5fe1a1c5f` |
-| 2 | `theorem` | [completedL_ne_zero_on_horizontals](../../../../MeasureAndIntegration/FullLineChiAssembly.lean/declarations/completedl-ne-zero-on-horizontals.md) | 62 | `result-track:df10a0b314f2b9fa033666c7879e930c18329c27daf8ab07f25a5b19516c178b` |
-| 3 | `theorem` | [integrable_FlineChi](../../../../MeasureAndIntegration/FullLineChiAssembly.lean/declarations/integrable-flinechi.md) | 94 | `result-track:9ee891f468064a18beec3e444e301631ae16d8d14526a9c9fdd955469dc71991` |
-| 4 | `theorem` | [tendsto_interval_FlineChi](../../../../MeasureAndIntegration/FullLineChiAssembly.lean/declarations/tendsto-interval-flinechi.md) | 140 | `result-track:e3bf2bd594c695ec5817b888b1872ef34dc6f3f71fb6a8dc5f3700e6cf025354` |
-| 5 | `theorem` | [full_line_identity_chi'](../../../../MeasureAndIntegration/FullLineChiAssembly.lean/declarations/full-line-identity-chi.md) | 152 | `result-track:97ccf35a0c5533489b407e1af3bae9330614aa952ee8971f5442ed45103d4020` |
+| 1 | `theorem` | [exists_heights_chi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FullLineChiAssembly.lean/declarations/exists-heights-chi.md) | 34 | `result-track:946058a4b773461c8605602ffddee733aa5fc14866f856c6c5f350c5fe1a1c5f` |
+| 2 | `theorem` | [completedL_ne_zero_on_horizontals](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FullLineChiAssembly.lean/declarations/completedl-ne-zero-on-horizontals.md) | 62 | `result-track:df10a0b314f2b9fa033666c7879e930c18329c27daf8ab07f25a5b19516c178b` |
+| 3 | `theorem` | [integrable_FlineChi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FullLineChiAssembly.lean/declarations/integrable-flinechi.md) | 94 | `result-track:9ee891f468064a18beec3e444e301631ae16d8d14526a9c9fdd955469dc71991` |
+| 4 | `theorem` | [tendsto_interval_FlineChi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FullLineChiAssembly.lean/declarations/tendsto-interval-flinechi.md) | 140 | `result-track:e3bf2bd594c695ec5817b888b1872ef34dc6f3f71fb6a8dc5f3700e6cf025354` |
+| 5 | `theorem` | [full_line_identity_chi'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FullLineChiAssembly.lean/declarations/full-line-identity-chi.md) | 152 | `result-track:97ccf35a0c5533489b407e1af3bae9330614aa952ee8971f5442ed45103d4020` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

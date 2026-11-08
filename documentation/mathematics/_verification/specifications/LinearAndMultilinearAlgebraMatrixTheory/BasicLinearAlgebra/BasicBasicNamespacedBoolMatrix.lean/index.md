@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicNamespacedBoolMatrix.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicNamespacedBoolMatrix.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicNamespacedBoolMatrix.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicNamespacedBoolMatrix.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [BoolMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicNamespacedBoolMatrix.lean/declarations/boolmatrix.md) | 19 | `declaration-track:e480c0f7b7ef49a64e2edaeb7089ea230c221179508e2b1be32091e1f5c0e25c` |
-| 2 | `def` | [BoolMatrix.entry](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicNamespacedBoolMatrix.lean/declarations/boolmatrix-entry.md) | 23 | `declaration-track:41c20453cc0c54c2f5da25c630ece46abbadfe07dab7030dee323613452274ab` |
-| 3 | `def` | [BoolMatrix.row](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicNamespacedBoolMatrix.lean/declarations/boolmatrix-row.md) | 31 | `declaration-track:784981897841fb96ffcec6a99446e1d500a8dba5822e76a016af437c21da9fd7` |
-| 4 | `def` | [BoolMatrix.col](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicNamespacedBoolMatrix.lean/declarations/boolmatrix-col.md) | 38 | `declaration-track:28ccd95ab8cfb1d712edbab4d6f8d8829a9cb008d128739b45c2188021a1827c` |
-| 5 | `theorem` | [BoolMatrix.entry_eq_false_or_true](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicNamespacedBoolMatrix.lean/declarations/boolmatrix-entry-eq-false-or-true.md) | 45 | `result-track:60c470dfd1a97f96b7f9e8f0b2d50d51ea102be001a00f586c09f83977ae9397` |
+| 1 | `abbrev` | [BoolMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicNamespacedBoolMatrix.lean/declarations/boolmatrix.md) | 19 | `declaration-track:e480c0f7b7ef49a64e2edaeb7089ea230c221179508e2b1be32091e1f5c0e25c` |
+| 2 | `def` | [BoolMatrix.entry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicNamespacedBoolMatrix.lean/declarations/boolmatrix-entry.md) | 23 | `declaration-track:41c20453cc0c54c2f5da25c630ece46abbadfe07dab7030dee323613452274ab` |
+| 3 | `def` | [BoolMatrix.row](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicNamespacedBoolMatrix.lean/declarations/boolmatrix-row.md) | 31 | `declaration-track:784981897841fb96ffcec6a99446e1d500a8dba5822e76a016af437c21da9fd7` |
+| 4 | `def` | [BoolMatrix.col](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicNamespacedBoolMatrix.lean/declarations/boolmatrix-col.md) | 38 | `declaration-track:28ccd95ab8cfb1d712edbab4d6f8d8829a9cb008d128739b45c2188021a1827c` |
+| 5 | `theorem` | [BoolMatrix.entry_eq_false_or_true](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasicBasicNamespacedBoolMatrix.lean/declarations/boolmatrix-entry-eq-false-or-true.md) | 45 | `result-track:60c470dfd1a97f96b7f9e8f0b2d50d51ea102be001a00f586c09f83977ae9397` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

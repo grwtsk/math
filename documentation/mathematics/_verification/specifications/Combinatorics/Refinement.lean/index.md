@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/Refinement.lean/index.md) · [Full source](../../../../Combinatorics/Refinement.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Refinement.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Refinement.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CellPartitionCertificate](../../../../Combinatorics/Refinement.lean/declarations/cellpartitioncertificate.md) | 18 | `declaration-track:16f8a41fb649bd38ae98e640496f7b437cd20bf1d6e0ee63abf4da44ff791e08` |
-| 2 | `structure` | [CountPreservingRefinement](../../../../Combinatorics/Refinement.lean/declarations/countpreservingrefinement.md) | 42 | `declaration-track:9f746b3b063a668f0131155493aae74cd19512b0a3d9d0a52b4470bd975c9e29` |
-| 3 | `inductive` | [RefinementDisposition](../../../../Combinatorics/Refinement.lean/declarations/refinementdisposition.md) | 71 | `declaration-track:ea862eed5146468f1d203feca6c68d06987ec41fdb8a406af6eab6ac6e853bfc` |
-| 4 | `theorem` | [countPreservingRefinement_sound](../../../../Combinatorics/Refinement.lean/declarations/countpreservingrefinement-sound.md) | 85 | `result-track:7d346a4c89814221310994477d75516bdfd305d1dcb6219246c38a7711cd3207` |
-| 5 | `theorem` | [countPreservingRefinement_preserves_totalMass](../../../../Combinatorics/Refinement.lean/declarations/countpreservingrefinement-preserves-totalmass.md) | 98 | `result-track:03b078845b9ee8b27b12645ef2c627f90e57b47ac9c050d7fec110a3ec6bedb0` |
+| 1 | `structure` | [CellPartitionCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Refinement.lean/declarations/cellpartitioncertificate.md) | 18 | `declaration-track:16f8a41fb649bd38ae98e640496f7b437cd20bf1d6e0ee63abf4da44ff791e08` |
+| 2 | `structure` | [CountPreservingRefinement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Refinement.lean/declarations/countpreservingrefinement.md) | 42 | `declaration-track:9f746b3b063a668f0131155493aae74cd19512b0a3d9d0a52b4470bd975c9e29` |
+| 3 | `inductive` | [RefinementDisposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Refinement.lean/declarations/refinementdisposition.md) | 71 | `declaration-track:ea862eed5146468f1d203feca6c68d06987ec41fdb8a406af6eab6ac6e853bfc` |
+| 4 | `theorem` | [countPreservingRefinement_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Refinement.lean/declarations/countpreservingrefinement-sound.md) | 85 | `result-track:7d346a4c89814221310994477d75516bdfd305d1dcb6219246c38a7711cd3207` |
+| 5 | `theorem` | [countPreservingRefinement_preserves_totalMass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Refinement.lean/declarations/countpreservingrefinement-preserves-totalmass.md) | 98 | `result-track:03b078845b9ee8b27b12645ef2c627f90e57b47ac9c050d7fec110a3ec6bedb0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

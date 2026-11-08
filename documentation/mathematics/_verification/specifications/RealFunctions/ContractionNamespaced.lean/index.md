@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/ContractionNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/ContractionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContractionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContractionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ContractionCertificate](../../../../RealFunctions/ContractionNamespaced.lean/declarations/contractioncertificate.md) | 15 | `declaration-track:2bf05d42cacf626a4e81ae8e25d7ea62ddfeeeac2b960d691b201fcb035c607f` |
-| 2 | `structure` | [BanachFixedPointObligation](../../../../RealFunctions/ContractionNamespaced.lean/declarations/banachfixedpointobligation.md) | 25 | `declaration-track:3881d4ecf0ad79358452eb87fcd82251d5cbced41438d9c999b9f87647ff7e61` |
-| 3 | `theorem` | [certified_integral_traversal_obeys_affine_bound](../../../../RealFunctions/ContractionNamespaced.lean/declarations/certified-integral-traversal-obeys-affine-bound.md) | 37 | `result-track:a13afc6dcdfe2043e2336413290d7b0cd0afcd9ae2088d366afa48c2120da725` |
-| 4 | `theorem` | [exact_zero_gain_converges_after_one_step](../../../../RealFunctions/ContractionNamespaced.lean/declarations/exact-zero-gain-converges-after-one-step.md) | 56 | `result-track:2ae2a2fd538d95121bd268c28c5bc90cd2ea9cf9bc34cd313aa62a726bad56f3` |
-| 5 | `structure` | [ResidualFloorObligation](../../../../RealFunctions/ContractionNamespaced.lean/declarations/residualfloorobligation.md) | 64 | `declaration-track:09cb33c5b7449f56506b6a9ae070b8ce845deebb305e7beee1638212aaac5831` |
+| 1 | `structure` | [ContractionCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContractionNamespaced.lean/declarations/contractioncertificate.md) | 15 | `declaration-track:2bf05d42cacf626a4e81ae8e25d7ea62ddfeeeac2b960d691b201fcb035c607f` |
+| 2 | `structure` | [BanachFixedPointObligation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContractionNamespaced.lean/declarations/banachfixedpointobligation.md) | 25 | `declaration-track:3881d4ecf0ad79358452eb87fcd82251d5cbced41438d9c999b9f87647ff7e61` |
+| 3 | `theorem` | [certified_integral_traversal_obeys_affine_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContractionNamespaced.lean/declarations/certified-integral-traversal-obeys-affine-bound.md) | 37 | `result-track:a13afc6dcdfe2043e2336413290d7b0cd0afcd9ae2088d366afa48c2120da725` |
+| 4 | `theorem` | [exact_zero_gain_converges_after_one_step](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContractionNamespaced.lean/declarations/exact-zero-gain-converges-after-one-step.md) | 56 | `result-track:2ae2a2fd538d95121bd268c28c5bc90cd2ea9cf9bc34cd313aa62a726bad56f3` |
+| 5 | `structure` | [ResidualFloorObligation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ContractionNamespaced.lean/declarations/residualfloorobligation.md) | 64 | `declaration-track:09cb33c5b7449f56506b6a9ae070b8ce845deebb305e7beee1638212aaac5831` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

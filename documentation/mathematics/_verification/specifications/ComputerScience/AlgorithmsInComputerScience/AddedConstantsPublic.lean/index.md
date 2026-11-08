@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/AddedConstantsPublic.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/AddedConstantsPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AddedConstantsPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AddedConstantsPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [addedConstants](../../../../../ComputerScience/AlgorithmsInComputerScience/AddedConstantsPublic.lean/declarations/addedconstants.md) | 15 | `declaration-track:e6ebd9e8b90e95b355a04dd236e4776da92e85de1dcf5563226e0bce1116c7be` |
+| 1 | `def` | [addedConstants](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AddedConstantsPublic.lean/declarations/addedconstants.md) | 15 | `declaration-track:e6ebd9e8b90e95b355a04dd236e4776da92e85de1dcf5563226e0bce1116c7be` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

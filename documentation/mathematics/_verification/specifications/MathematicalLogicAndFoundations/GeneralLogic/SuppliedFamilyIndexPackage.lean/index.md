@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuppliedFamilyIndexPackage.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuppliedFamilyIndexPackage.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuppliedFamilyIndexPackage.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuppliedFamilyIndexPackage.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FamiliesKIndexPropagation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuppliedFamilyIndexPackage.lean/declarations/familieskindexpropagation.md) | 40 | `declaration-track:d13c91c2b9f2db3e8446ece722a4ed5df811166025f85f53015cb9815a461dd4` |
-| 2 | `theorem` | [families_k_index_nontrivial_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuppliedFamilyIndexPackage.lean/declarations/families-k-index-nontrivial-if-supplied.md) | 51 | `result-track:25afb6244450daf6624dac7dd933009bf316bb88eef0ce5d8b0325257e49dc5c` |
-| 3 | `theorem` | [families_k_index_specializes_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuppliedFamilyIndexPackage.lean/declarations/families-k-index-specializes-if-supplied.md) | 58 | `result-track:5a08993b7ad6f27d9c2578aa878f6bb21b4ca3db1fed80b457b94b11424626f6` |
+| 1 | `structure` | [FamiliesKIndexPropagation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuppliedFamilyIndexPackage.lean/declarations/familieskindexpropagation.md) | 40 | `declaration-track:d13c91c2b9f2db3e8446ece722a4ed5df811166025f85f53015cb9815a461dd4` |
+| 2 | `theorem` | [families_k_index_nontrivial_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuppliedFamilyIndexPackage.lean/declarations/families-k-index-nontrivial-if-supplied.md) | 51 | `result-track:25afb6244450daf6624dac7dd933009bf316bb88eef0ce5d8b0325257e49dc5c` |
+| 3 | `theorem` | [families_k_index_specializes_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuppliedFamilyIndexPackage.lean/declarations/families-k-index-specializes-if-supplied.md) | 58 | `result-track:5a08993b7ad6f27d9c2578aa878f6bb21b4ca3db1fed80b457b94b11424626f6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

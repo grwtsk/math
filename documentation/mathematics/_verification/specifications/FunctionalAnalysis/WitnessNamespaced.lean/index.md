@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/WitnessNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/WitnessNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/WitnessNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/WitnessNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Witness](../../../../FunctionalAnalysis/WitnessNamespaced.lean/declarations/witness.md) | 30 | `declaration-track:c03253c8150f64261aea30cda08ca4ebf941ffbbf70835fe17b5d4526383d251` |
-| 2 | `def` | [Consistent](../../../../FunctionalAnalysis/WitnessNamespaced.lean/declarations/consistent.md) | 33 | `declaration-track:68d8d5b9094718f4cdcaed16145071f97be188ceaa5bd50d3ebd6e4db494ac6d` |
-| 3 | `def` | [meanWitness](../../../../FunctionalAnalysis/WitnessNamespaced.lean/declarations/meanwitness.md) | 40 | `declaration-track:2362f71907a0ef8fc3fa30e682da41edf3821b60d785ce2ce2297f2f79cf8689` |
-| 4 | `def` | [energyWitness](../../../../FunctionalAnalysis/WitnessNamespaced.lean/declarations/energywitness.md) | 44 | `declaration-track:5cab18d3a56f58df724179d775ebddd5206f4ff8d3648103480a02782b5ef8fa` |
-| 5 | `def` | [cellCountWitness](../../../../FunctionalAnalysis/WitnessNamespaced.lean/declarations/cellcountwitness.md) | 49 | `declaration-track:f03ffcaa988419fbc9aa7b48b1b0e28b6cde00c4dee8a91d8d9284f75a851021` |
+| 1 | `structure` | [Witness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/WitnessNamespaced.lean/declarations/witness.md) | 30 | `declaration-track:c03253c8150f64261aea30cda08ca4ebf941ffbbf70835fe17b5d4526383d251` |
+| 2 | `def` | [Consistent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/WitnessNamespaced.lean/declarations/consistent.md) | 33 | `declaration-track:68d8d5b9094718f4cdcaed16145071f97be188ceaa5bd50d3ebd6e4db494ac6d` |
+| 3 | `def` | [meanWitness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/WitnessNamespaced.lean/declarations/meanwitness.md) | 40 | `declaration-track:2362f71907a0ef8fc3fa30e682da41edf3821b60d785ce2ce2297f2f79cf8689` |
+| 4 | `def` | [energyWitness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/WitnessNamespaced.lean/declarations/energywitness.md) | 44 | `declaration-track:5cab18d3a56f58df724179d775ebddd5206f4ff8d3648103480a02782b5ef8fa` |
+| 5 | `def` | [cellCountWitness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/WitnessNamespaced.lean/declarations/cellcountwitness.md) | 49 | `declaration-track:f03ffcaa988419fbc9aa7b48b1b0e28b6cde00c4dee8a91d8d9284f75a851021` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

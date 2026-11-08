@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/LocalExtrPolynomialNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/LocalExtrPolynomialNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/LocalExtrPolynomialNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/LocalExtrPolynomialNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [card_roots_toFinset_le_card_roots_derivative_diff_roots_succ](../../../../RealFunctions/LocalExtrPolynomialNamespaced.lean/declarations/card-roots-tofinset-le-card-roots-derivative-diff-roots-succ.md) | 42 | `result-track:bcf33a57d6aab2d75876060aab360e32bc3f0dcc159ecc2bf98059d31b28487b` |
-| 2 | `theorem` | [card_roots_toFinset_le_derivative](../../../../RealFunctions/LocalExtrPolynomialNamespaced.lean/declarations/card-roots-tofinset-le-derivative.md) | 56 | `result-track:adcde40a1f7391ce165c16566ee7d561d8e63b73c6e8eaa78c5989e52ba4af78` |
-| 3 | `theorem` | [card_roots_le_derivative](../../../../RealFunctions/LocalExtrPolynomialNamespaced.lean/declarations/card-roots-le-derivative.md) | 63 | `result-track:e7857b01fd3dbedbb8b35f70a33765935db317ea86b1fc907dd0eac64b016b26` |
-| 4 | `theorem` | [card_rootSet_le_derivative](../../../../RealFunctions/LocalExtrPolynomialNamespaced.lean/declarations/card-rootset-le-derivative.md) | 94 | `result-track:f3226948a58e88c8ed35556d7833a4be10037f927b98a9a1cc2afe9d4b5a46b2` |
+| 1 | `theorem` | [card_roots_toFinset_le_card_roots_derivative_diff_roots_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/LocalExtrPolynomialNamespaced.lean/declarations/card-roots-tofinset-le-card-roots-derivative-diff-roots-succ.md) | 42 | `result-track:bcf33a57d6aab2d75876060aab360e32bc3f0dcc159ecc2bf98059d31b28487b` |
+| 2 | `theorem` | [card_roots_toFinset_le_derivative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/LocalExtrPolynomialNamespaced.lean/declarations/card-roots-tofinset-le-derivative.md) | 56 | `result-track:adcde40a1f7391ce165c16566ee7d561d8e63b73c6e8eaa78c5989e52ba4af78` |
+| 3 | `theorem` | [card_roots_le_derivative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/LocalExtrPolynomialNamespaced.lean/declarations/card-roots-le-derivative.md) | 63 | `result-track:e7857b01fd3dbedbb8b35f70a33765935db317ea86b1fc907dd0eac64b016b26` |
+| 4 | `theorem` | [card_rootSet_le_derivative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/LocalExtrPolynomialNamespaced.lean/declarations/card-rootset-le-derivative.md) | 94 | `result-track:f3226948a58e88c8ed35556d7833a4be10037f927b98a9a1cc2afe9d4b5a46b2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ContraposeNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ContraposeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ContraposeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ContraposeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ContraposeNamespaced.lean/declarations/example-source-edition-6.md) | 18 | `declaration-track:71bba44839ea560996ef1434b40a0134b22620fa2d5e268d9996a7a18d2ab859` |
-| 2 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ContraposeNamespaced.lean/declarations/example-source-edition-2.md) | 23 | `declaration-track:0caa6d1e74381ba994f777551d63161e8add7bf08c8e0b8c068e2ef3937c5b2c` |
-| 3 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ContraposeNamespaced.lean/declarations/example-source-edition-4.md) | 28 | `declaration-track:41d807503e3d55b60915cad567892b59c223c2870dd0e15fad79f29474d44926` |
-| 4 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ContraposeNamespaced.lean/declarations/example-source-edition-7.md) | 33 | `declaration-track:73964234bd8c60ae8469c4f6b2dc75e1e3d1fe65bd1fa0e048a16b2ca839eebb` |
-| 5 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ContraposeNamespaced.lean/declarations/example.md) | 38 | `declaration-track:0b97498e3effe1de3dc433d2d17b524863a5bdaea65e4703834d00d64e773ea8` |
-| 6 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ContraposeNamespaced.lean/declarations/example-source-edition-3.md) | 43 | `declaration-track:253ab829a97b5d4dc95f7b3f60e50c6d63c386ddd71b0cf45f5f6643c1eeeea6` |
-| 7 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ContraposeNamespaced.lean/declarations/example-source-edition-5.md) | 48 | `declaration-track:4fd3e8607932c762a4ccd0027bfd309d293051496ece4532a6f8275221d87540` |
-| 8 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ContraposeNamespaced.lean/declarations/example-source-edition-8.md) | 52 | `declaration-track:9e136a1202f1d32dac1a56beaeb1ab890059cc2724aebe71c842c082c15ba1bf` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ContraposeNamespaced.lean/declarations/example-source-edition-6.md) | 18 | `declaration-track:71bba44839ea560996ef1434b40a0134b22620fa2d5e268d9996a7a18d2ab859` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ContraposeNamespaced.lean/declarations/example-source-edition-2.md) | 23 | `declaration-track:0caa6d1e74381ba994f777551d63161e8add7bf08c8e0b8c068e2ef3937c5b2c` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ContraposeNamespaced.lean/declarations/example-source-edition-4.md) | 28 | `declaration-track:41d807503e3d55b60915cad567892b59c223c2870dd0e15fad79f29474d44926` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ContraposeNamespaced.lean/declarations/example-source-edition-7.md) | 33 | `declaration-track:73964234bd8c60ae8469c4f6b2dc75e1e3d1fe65bd1fa0e048a16b2ca839eebb` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ContraposeNamespaced.lean/declarations/example.md) | 38 | `declaration-track:0b97498e3effe1de3dc433d2d17b524863a5bdaea65e4703834d00d64e773ea8` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ContraposeNamespaced.lean/declarations/example-source-edition-3.md) | 43 | `declaration-track:253ab829a97b5d4dc95f7b3f60e50c6d63c386ddd71b0cf45f5f6643c1eeeea6` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ContraposeNamespaced.lean/declarations/example-source-edition-5.md) | 48 | `declaration-track:4fd3e8607932c762a4ccd0027bfd309d293051496ece4532a6f8275221d87540` |
+| 8 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ContraposeNamespaced.lean/declarations/example-source-edition-8.md) | 52 | `declaration-track:9e136a1202f1d32dac1a56beaeb1ab890059cc2724aebe71c842c082c15ba1bf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

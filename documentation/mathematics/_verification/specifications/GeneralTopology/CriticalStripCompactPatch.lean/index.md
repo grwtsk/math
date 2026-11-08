@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/CriticalStripCompactPatch.lean/index.md) · [Full source](../../../../GeneralTopology/CriticalStripCompactPatch.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CriticalStripCompactPatch.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CriticalStripCompactPatch.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripPatchCertificate`](../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CriticalStripPatchCertificate.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripPatchCertificate`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CriticalStripPatchCertificate.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Topology.MetricSpace.Thickening` — import line 5; external provider; requires a separately pinned dependency.
 - `Mathlib.Topology.Order.Compact` — import line 6; external provider; requires a separately pinned dependency.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_variationPatch_of_continuousAt_ne_zero](../../../../GeneralTopology/CriticalStripCompactPatch.lean/declarations/exists-variationpatch-of-continuousat-ne-zero.md) | 29 | `result-track:78f44c211a4e474554c1fce865f3f5b398cf9cd8febe80ff86f5ec8b4f54b60d` |
-| 2 | `theorem` | [exists_finiteVariationCover_of_compact](../../../../GeneralTopology/CriticalStripCompactPatch.lean/declarations/exists-finitevariationcover-of-compact.md) | 45 | `result-track:6ce4d5e2e69f805569057d7c39c561b1b17a0cdd034bcc518f02d5f81f6352e4` |
-| 3 | `theorem` | [finiteVariationCover_iff_nonzero_of_compact](../../../../GeneralTopology/CriticalStripCompactPatch.lean/declarations/finitevariationcover-iff-nonzero-of-compact.md) | 77 | `result-track:c80f3b330ca68d7273b3003f585f8070b33022123f1ee7b034d5f31700601f08` |
-| 4 | `def` | [FiniteVariationCover.restrict](../../../../GeneralTopology/CriticalStripCompactPatch.lean/declarations/finitevariationcover-restrict.md) | 86 | `declaration-track:23150ffc62d0bf89746a6993a19baf41b91f6714826c8301e28a2d437ed755c3` |
-| 5 | `theorem` | [no_finiteVariationCover_of_zero](../../../../GeneralTopology/CriticalStripCompactPatch.lean/declarations/no-finitevariationcover-of-zero.md) | 94 | `result-track:30330b626678d2457f7aaa708b7856ab57bcd10000f0c93654c4b8c234a229a8` |
-| 6 | `theorem` | [exists_thickening_norm_lower_of_compact](../../../../GeneralTopology/CriticalStripCompactPatch.lean/declarations/exists-thickening-norm-lower-of-compact.md) | 102 | `result-track:120081bd0830ed5fe3d0431022ce77e5aaf9813ee6764df9fa9133147d245b2c` |
-| 7 | `theorem` | [reciprocal_widths_no_uniform_positive_lower](../../../../GeneralTopology/CriticalStripCompactPatch.lean/declarations/reciprocal-widths-no-uniform-positive-lower.md) | 121 | `result-track:006d89cc3b8b02affb57434df464fd232469634f2f243a033e82d57a0ae6e0bd` |
+| 1 | `theorem` | [exists_variationPatch_of_continuousAt_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CriticalStripCompactPatch.lean/declarations/exists-variationpatch-of-continuousat-ne-zero.md) | 29 | `result-track:78f44c211a4e474554c1fce865f3f5b398cf9cd8febe80ff86f5ec8b4f54b60d` |
+| 2 | `theorem` | [exists_finiteVariationCover_of_compact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CriticalStripCompactPatch.lean/declarations/exists-finitevariationcover-of-compact.md) | 45 | `result-track:6ce4d5e2e69f805569057d7c39c561b1b17a0cdd034bcc518f02d5f81f6352e4` |
+| 3 | `theorem` | [finiteVariationCover_iff_nonzero_of_compact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CriticalStripCompactPatch.lean/declarations/finitevariationcover-iff-nonzero-of-compact.md) | 77 | `result-track:c80f3b330ca68d7273b3003f585f8070b33022123f1ee7b034d5f31700601f08` |
+| 4 | `def` | [FiniteVariationCover.restrict](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CriticalStripCompactPatch.lean/declarations/finitevariationcover-restrict.md) | 86 | `declaration-track:23150ffc62d0bf89746a6993a19baf41b91f6714826c8301e28a2d437ed755c3` |
+| 5 | `theorem` | [no_finiteVariationCover_of_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CriticalStripCompactPatch.lean/declarations/no-finitevariationcover-of-zero.md) | 94 | `result-track:30330b626678d2457f7aaa708b7856ab57bcd10000f0c93654c4b8c234a229a8` |
+| 6 | `theorem` | [exists_thickening_norm_lower_of_compact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CriticalStripCompactPatch.lean/declarations/exists-thickening-norm-lower-of-compact.md) | 102 | `result-track:120081bd0830ed5fe3d0431022ce77e5aaf9813ee6764df9fa9133147d245b2c` |
+| 7 | `theorem` | [reciprocal_widths_no_uniform_positive_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CriticalStripCompactPatch.lean/declarations/reciprocal-widths-no-uniform-positive-lower.md) | 121 | `result-track:006d89cc3b8b02affb57434df464fd232469634f2f243a033e82d57a0ae6e0bd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

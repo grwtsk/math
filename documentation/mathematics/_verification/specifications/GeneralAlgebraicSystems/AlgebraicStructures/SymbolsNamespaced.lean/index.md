@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SymbolsNamespaced.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SymbolsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SymbolsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SymbolsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [symbols](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SymbolsNamespaced.lean/declarations/symbols.md) | 30 | `declaration-track:a5820416c0dadb9860595e464096153fa36a8efcaa8d4165e97443483c39f0b8` |
-| 2 | `theorem` | [symbols_one](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SymbolsNamespaced.lean/declarations/symbols-one.md) | 33 | `result-track:2f6d452ee8119517a67775c2c9abbf29f58d135a847ed02f5f1f2ff17bc25d74` |
-| 3 | `theorem` | [symbols_of](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SymbolsNamespaced.lean/declarations/symbols-of.md) | 36 | `result-track:04456812b332ef9f94cb0084442aa28a01dfd4e2c625941d26cff80e1374021f` |
-| 4 | `theorem` | [symbols_mul](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SymbolsNamespaced.lean/declarations/symbols-mul.md) | 39 | `result-track:a4f7abd851174bbd4171ff4db14e6c12c1a445baaf9a269a917157ed7dbfd89c` |
-| 5 | `theorem` | [mem_symbols](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/SymbolsNamespaced.lean/declarations/mem-symbols.md) | 44 | `result-track:f6357f97a74603f2982ce008e022468d52e503650c80328b5471c8b55c347896` |
+| 1 | `def` | [symbols](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SymbolsNamespaced.lean/declarations/symbols.md) | 30 | `declaration-track:a5820416c0dadb9860595e464096153fa36a8efcaa8d4165e97443483c39f0b8` |
+| 2 | `theorem` | [symbols_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SymbolsNamespaced.lean/declarations/symbols-one.md) | 33 | `result-track:2f6d452ee8119517a67775c2c9abbf29f58d135a847ed02f5f1f2ff17bc25d74` |
+| 3 | `theorem` | [symbols_of](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SymbolsNamespaced.lean/declarations/symbols-of.md) | 36 | `result-track:04456812b332ef9f94cb0084442aa28a01dfd4e2c625941d26cff80e1374021f` |
+| 4 | `theorem` | [symbols_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SymbolsNamespaced.lean/declarations/symbols-mul.md) | 39 | `result-track:a4f7abd851174bbd4171ff4db14e6c12c1a445baaf9a269a917157ed7dbfd89c` |
+| 5 | `theorem` | [mem_symbols](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/SymbolsNamespaced.lean/declarations/mem-symbols.md) | 44 | `result-track:f6357f97a74603f2982ce008e022468d52e503650c80328b5471c8b55c347896` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

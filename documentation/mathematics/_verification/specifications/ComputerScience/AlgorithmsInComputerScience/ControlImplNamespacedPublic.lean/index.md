@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ControlImplNamespacedPublic.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ControlImplNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ControlImplNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ControlImplNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [flatMapMTR](../../../../../ComputerScience/AlgorithmsInComputerScience/ControlImplNamespacedPublic.lean/declarations/flatmapmtr.md) | 29 | `declaration-track:c59ab8b461bc28adf3fbf1d00cc24a3eff3f29863b4e4bd60f68dbb95e025e80` |
-| 2 | `theorem` | [flatMapM_eq_flatMapMTR](../../../../../ComputerScience/AlgorithmsInComputerScience/ControlImplNamespacedPublic.lean/declarations/flatmapm-eq-flatmapmtr.md) | 37 | `result-track:d25b8acc8915903739d51a4338c949344d9a2b189132b89fd459fef562d85650` |
+| 1 | `def` | [flatMapMTR](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ControlImplNamespacedPublic.lean/declarations/flatmapmtr.md) | 29 | `declaration-track:c59ab8b461bc28adf3fbf1d00cc24a3eff3f29863b4e4bd60f68dbb95e025e80` |
+| 2 | `theorem` | [flatMapM_eq_flatMapMTR](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ControlImplNamespacedPublic.lean/declarations/flatmapm-eq-flatmapmtr.md) | 37 | `result-track:d25b8acc8915903739d51a4338c949344d9a2b189132b89fd459fef562d85650` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

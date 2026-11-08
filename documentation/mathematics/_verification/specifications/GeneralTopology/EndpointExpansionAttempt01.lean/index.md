@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/EndpointExpansionAttempt01.lean/index.md) · [Full source](../../../../GeneralTopology/EndpointExpansionAttempt01.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/EndpointExpansionAttempt01.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/EndpointExpansionAttempt01.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [endpointFullPolynomial](../../../../GeneralTopology/EndpointExpansionAttempt01.lean/declarations/endpointfullpolynomial.md) | 17 | `declaration-track:62d73eba09bffe700fd2036a2f33ca97c1b0addd82e305a2f29518937c32fc7e` |
-| 2 | `theorem` | [endpointPolynomialCorrelation_eq_full](../../../../GeneralTopology/EndpointExpansionAttempt01.lean/declarations/endpointpolynomialcorrelation-eq-full.md) | 28 | `result-track:c399ef7a5bb9bb9c8e5d6b8653dfee4000db0e1867e7953a568c74c76b24df86` |
+| 1 | `def` | [endpointFullPolynomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/EndpointExpansionAttempt01.lean/declarations/endpointfullpolynomial.md) | 17 | `declaration-track:62d73eba09bffe700fd2036a2f33ca97c1b0addd82e305a2f29518937c32fc7e` |
+| 2 | `theorem` | [endpointPolynomialCorrelation_eq_full](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/EndpointExpansionAttempt01.lean/declarations/endpointpolynomialcorrelation-eq-full.md) | 28 | `result-track:c399ef7a5bb9bb9c8e5d6b8653dfee4000db0e1867e7953a568c74c76b24df86` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

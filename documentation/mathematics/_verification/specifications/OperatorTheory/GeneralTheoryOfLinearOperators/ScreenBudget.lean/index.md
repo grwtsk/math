@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OperatorTheory/GeneralTheoryOfLinearOperators/ScreenBudget.lean/index.md) · [Full source](../../../../../OperatorTheory/GeneralTheoryOfLinearOperators/ScreenBudget.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/GeneralTheoryOfLinearOperators/ScreenBudget.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/GeneralTheoryOfLinearOperators/ScreenBudget.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [root_budget](../../../../../OperatorTheory/GeneralTheoryOfLinearOperators/ScreenBudget.lean/declarations/root-budget.md) | 12 | `result-track:42c5b73e86809282817309eb05e78924c1c57776e6e9f581cc6b3fb831752276` |
-| 2 | `theorem` | [measured_three_term](../../../../../OperatorTheory/GeneralTheoryOfLinearOperators/ScreenBudget.lean/declarations/measured-three-term.md) | 20 | `result-track:5983e8b5deb0a8d3ca436f9c45e2ca3dfb19e318583736aa3c48884b65510324` |
-| 3 | `theorem` | [source_return](../../../../../OperatorTheory/GeneralTheoryOfLinearOperators/ScreenBudget.lean/declarations/source-return.md) | 24 | `result-track:2be4c4bd3f941dcb4f828fac427495819cf676bbefd5b5625e3b7abf19b992c8` |
-| 4 | `theorem` | [low_first_return](../../../../../OperatorTheory/GeneralTheoryOfLinearOperators/ScreenBudget.lean/declarations/low-first-return.md) | 36 | `result-track:4f919d4dfe1c3987cbbba5fc1bf9b1bcbb77f0f6c0cabbde10aa473781df1410` |
-| 5 | `theorem` | [reverse_return](../../../../../OperatorTheory/GeneralTheoryOfLinearOperators/ScreenBudget.lean/declarations/reverse-return.md) | 47 | `result-track:b7a1edb2c0ce96055d8443692143800405e4f9f2665cf4c9d04bd0b043a10d09` |
-| 6 | `theorem` | [sharp_high_budget](../../../../../OperatorTheory/GeneralTheoryOfLinearOperators/ScreenBudget.lean/declarations/sharp-high-budget.md) | 51 | `result-track:5a7c118a04b6a2560f6646fd2d2285de70f7a800ef6abdcb9c3abc26737fc1b1` |
+| 1 | `theorem` | [root_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/GeneralTheoryOfLinearOperators/ScreenBudget.lean/declarations/root-budget.md) | 12 | `result-track:42c5b73e86809282817309eb05e78924c1c57776e6e9f581cc6b3fb831752276` |
+| 2 | `theorem` | [measured_three_term](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/GeneralTheoryOfLinearOperators/ScreenBudget.lean/declarations/measured-three-term.md) | 20 | `result-track:5983e8b5deb0a8d3ca436f9c45e2ca3dfb19e318583736aa3c48884b65510324` |
+| 3 | `theorem` | [source_return](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/GeneralTheoryOfLinearOperators/ScreenBudget.lean/declarations/source-return.md) | 24 | `result-track:2be4c4bd3f941dcb4f828fac427495819cf676bbefd5b5625e3b7abf19b992c8` |
+| 4 | `theorem` | [low_first_return](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/GeneralTheoryOfLinearOperators/ScreenBudget.lean/declarations/low-first-return.md) | 36 | `result-track:4f919d4dfe1c3987cbbba5fc1bf9b1bcbb77f0f6c0cabbde10aa473781df1410` |
+| 5 | `theorem` | [reverse_return](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/GeneralTheoryOfLinearOperators/ScreenBudget.lean/declarations/reverse-return.md) | 47 | `result-track:b7a1edb2c0ce96055d8443692143800405e4f9f2665cf4c9d04bd0b043a10d09` |
+| 6 | `theorem` | [sharp_high_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OperatorTheory/GeneralTheoryOfLinearOperators/ScreenBudget.lean/declarations/sharp-high-budget.md) | 51 | `result-track:5a7c118a04b6a2560f6646fd2d2285de70f7a800ef6abdcb9c3abc26737fc1b1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

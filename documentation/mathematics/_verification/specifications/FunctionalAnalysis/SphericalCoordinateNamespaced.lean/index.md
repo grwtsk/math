@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/SphericalCoordinateNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/SphericalCoordinateNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SphericalCoordinateNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SphericalCoordinateNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [surfaceId](../../../../FunctionalAnalysis/SphericalCoordinateNamespaced.lean/declarations/surfaceid.md) | 16 | `declaration-track:ede9543cbffc5d3f2cc2e92bae7814eba471edc73d99ad028b13c44a2083d897` |
-| 2 | `def` | [ownsDeclaredSurface](../../../../FunctionalAnalysis/SphericalCoordinateNamespaced.lean/declarations/ownsdeclaredsurface.md) | 17 | `declaration-track:a5bcd02cab0c71db17439863d83f052688bd9a22a359a15f9b59b42818cba86e` |
-| 3 | `def` | [crossLeafReasoningRequiresGlue](../../../../FunctionalAnalysis/SphericalCoordinateNamespaced.lean/declarations/crossleafreasoningrequiresglue.md) | 18 | `declaration-track:c6fac242b0e414f84aefc971ed79b8ed11071abe82688a2a3312af34405d75af` |
-| 4 | `theorem` | [surface_id_declared](../../../../FunctionalAnalysis/SphericalCoordinateNamespaced.lean/declarations/surface-id-declared.md) | 20 | `result-track:75072c703c4dd9951be4ba4b68133cedf0dc4f98fa1c4117d61db022f2c03636` |
-| 5 | `theorem` | [owns_declared_surface](../../../../FunctionalAnalysis/SphericalCoordinateNamespaced.lean/declarations/owns-declared-surface.md) | 24 | `result-track:40b463c22f6bbdf46ccb3a471e8c5d0def8e9c01b900d2e687e0a20bc8bf3244` |
+| 1 | `def` | [surfaceId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SphericalCoordinateNamespaced.lean/declarations/surfaceid.md) | 16 | `declaration-track:ede9543cbffc5d3f2cc2e92bae7814eba471edc73d99ad028b13c44a2083d897` |
+| 2 | `def` | [ownsDeclaredSurface](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SphericalCoordinateNamespaced.lean/declarations/ownsdeclaredsurface.md) | 17 | `declaration-track:a5bcd02cab0c71db17439863d83f052688bd9a22a359a15f9b59b42818cba86e` |
+| 3 | `def` | [crossLeafReasoningRequiresGlue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SphericalCoordinateNamespaced.lean/declarations/crossleafreasoningrequiresglue.md) | 18 | `declaration-track:c6fac242b0e414f84aefc971ed79b8ed11071abe82688a2a3312af34405d75af` |
+| 4 | `theorem` | [surface_id_declared](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SphericalCoordinateNamespaced.lean/declarations/surface-id-declared.md) | 20 | `result-track:75072c703c4dd9951be4ba4b68133cedf0dc4f98fa1c4117d61db022f2c03636` |
+| 5 | `theorem` | [owns_declared_surface](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SphericalCoordinateNamespaced.lean/declarations/owns-declared-surface.md) | 24 | `result-track:40b463c22f6bbdf46ccb3a471e8c5d0def8e9c01b900d2e687e0a20bc8bf3244` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

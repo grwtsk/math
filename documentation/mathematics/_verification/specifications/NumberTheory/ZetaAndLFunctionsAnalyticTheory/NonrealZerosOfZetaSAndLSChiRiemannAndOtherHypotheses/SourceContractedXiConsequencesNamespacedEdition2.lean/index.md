@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceContractedXiConsequencesNamespacedEdition2.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceContractedXiConsequencesNamespacedEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceContractedXiConsequencesNamespacedEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceContractedXiConsequencesNamespacedEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [residual_upper_of_contracted_Xi](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceContractedXiConsequencesNamespacedEdition2.lean/declarations/residual-upper-of-contracted-xi.md) | 31 | `result-track:781ed426340bc24b9570bb3c9df586b5434607831424d53bb01cfcc381411fc9` |
-| 2 | `theorem` | [all_real_lower_of_contracted_Xi](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceContractedXiConsequencesNamespacedEdition2.lean/declarations/all-real-lower-of-contracted-xi.md) | 38 | `result-track:3254c75fa57c962266dbc34b5ca3b8ffec659bfd2c6b979e74bbef06f249da9a` |
-| 3 | `theorem` | [actual_leading_upper_of_contracted_Xi](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceContractedXiConsequencesNamespacedEdition2.lean/declarations/actual-leading-upper-of-contracted-xi.md) | 50 | `result-track:6166720f36782ba0db41e4be49116d07089793a02d4f76b77a6340a0e30d78ed` |
+| 1 | `theorem` | [residual_upper_of_contracted_Xi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceContractedXiConsequencesNamespacedEdition2.lean/declarations/residual-upper-of-contracted-xi.md) | 31 | `result-track:781ed426340bc24b9570bb3c9df586b5434607831424d53bb01cfcc381411fc9` |
+| 2 | `theorem` | [all_real_lower_of_contracted_Xi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceContractedXiConsequencesNamespacedEdition2.lean/declarations/all-real-lower-of-contracted-xi.md) | 38 | `result-track:3254c75fa57c962266dbc34b5ca3b8ffec659bfd2c6b979e74bbef06f249da9a` |
+| 3 | `theorem` | [actual_leading_upper_of_contracted_Xi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceContractedXiConsequencesNamespacedEdition2.lean/declarations/actual-leading-upper-of-contracted-xi.md) | 50 | `result-track:6166720f36782ba0db41e4be49116d07089793a02d4f76b77a6340a0e30d78ed` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

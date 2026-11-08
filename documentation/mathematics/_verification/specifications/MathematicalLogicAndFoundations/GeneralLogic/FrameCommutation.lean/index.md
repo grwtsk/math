@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FrameCommutation.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FrameCommutation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FrameCommutation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FrameCommutation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FrameCommutationCertificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FrameCommutation.lean/declarations/framecommutationcertificate.md) | 5 | `declaration-track:20071d5c647f56db8030fa86cd588aa0ee790c069df78e3a2a36cb28b7cbffe8` |
-| 2 | `theorem` | [frameCommuting_flow_requires_commutation_certificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FrameCommutation.lean/declarations/framecommuting-flow-requires-commutation-certificate.md) | 10 | `result-track:873baf9e2c709db74671ddc588e4d64febeaaeeb327e53351af586090c8027f6` |
+| 1 | `structure` | [FrameCommutationCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FrameCommutation.lean/declarations/framecommutationcertificate.md) | 5 | `declaration-track:20071d5c647f56db8030fa86cd588aa0ee790c069df78e3a2a36cb28b7cbffe8` |
+| 2 | `theorem` | [frameCommuting_flow_requires_commutation_certificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FrameCommutation.lean/declarations/framecommuting-flow-requires-commutation-certificate.md) | 10 | `result-track:873baf9e2c709db74671ddc588e4d64febeaaeeb327e53351af586090c8027f6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

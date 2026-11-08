@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/MathlibCategory.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/MathlibCategory.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MathlibCategory.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MathlibCategory.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PrismaticSiteMathlibCategoryAdapter](../../../../../ComputerScience/AlgorithmsInComputerScience/MathlibCategory.lean/declarations/prismaticsitemathlibcategoryadapter.md) | 24 | `declaration-track:970653ea347ad0553a7cd413a8822b93fbdc51d869c606618842fb3df26744f4` |
-| 2 | `def` | [PrismaticSiteMathlibCategoryAdapter.usableForFinalTheorem](../../../../../ComputerScience/AlgorithmsInComputerScience/MathlibCategory.lean/declarations/prismaticsitemathlibcategoryadapter-usableforfinaltheorem.md) | 34 | `declaration-track:4fb0c9a7ac75faac9e3860a5377d496b15aec3e7acc499bb3e6101e6a1667900` |
-| 3 | `theorem` | [PrismaticSiteMathlibCategoryAdapter.unavailable_not_usableForFinalTheorem](../../../../../ComputerScience/AlgorithmsInComputerScience/MathlibCategory.lean/declarations/prismaticsitemathlibcategoryadapter-unavailable-not-usableforfinaltheore.md) | 43 | `result-track:f2d375bea5f1cf03bf6e6b0dec7b824baeed0a24d4876adb9c9f0a5ff277ed63` |
+| 1 | `structure` | [PrismaticSiteMathlibCategoryAdapter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MathlibCategory.lean/declarations/prismaticsitemathlibcategoryadapter.md) | 24 | `declaration-track:970653ea347ad0553a7cd413a8822b93fbdc51d869c606618842fb3df26744f4` |
+| 2 | `def` | [PrismaticSiteMathlibCategoryAdapter.usableForFinalTheorem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MathlibCategory.lean/declarations/prismaticsitemathlibcategoryadapter-usableforfinaltheorem.md) | 34 | `declaration-track:4fb0c9a7ac75faac9e3860a5377d496b15aec3e7acc499bb3e6101e6a1667900` |
+| 3 | `theorem` | [PrismaticSiteMathlibCategoryAdapter.unavailable_not_usableForFinalTheorem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/MathlibCategory.lean/declarations/prismaticsitemathlibcategoryadapter-unavailable-not-usableforfinaltheore.md) | 43 | `result-track:f2d375bea5f1cf03bf6e6b0dec7b824baeed0a24d4876adb9c9f0a5ff277ed63` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

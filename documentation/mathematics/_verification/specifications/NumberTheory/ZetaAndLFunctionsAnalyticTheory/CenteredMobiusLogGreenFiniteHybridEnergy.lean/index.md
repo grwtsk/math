@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFiniteHybridEnergy.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFiniteHybridEnergy.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFiniteHybridEnergy.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFiniteHybridEnergy.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenAliasEnergy`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenAliasEnergy.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenAliasEnergy`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenAliasEnergy.lean/index.md) — import line 7; pinned internal source present.
 - `Mathlib.Tactic` — import line 8; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [greenHighNonaliasResidualEnergy](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFiniteHybridEnergy.lean/declarations/greenhighnonaliasresidualenergy.md) | 17 | `declaration-track:f82e77978e5fdbfb472d6df2abae0253449340817e6dec4a809517e0af23de7e` |
-| 2 | `theorem` | [greenHighNonaliasResidualEnergy_le_components](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFiniteHybridEnergy.lean/declarations/greenhighnonaliasresidualenergy-le-components.md) | 25 | `result-track:bcb0bdc45c9a902bfd85eb70886d5a176ed39cccdf84981caadeacd78454aec2` |
-| 3 | `def` | [greenFiniteHybridResidualEnergy](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFiniteHybridEnergy.lean/declarations/greenfinitehybridresidualenergy.md) | 90 | `declaration-track:c66f078e276863c588b7c6de50bb7fb3821c92cde0c39f7ff7ee5c5f87bde0e8` |
-| 4 | `theorem` | [greenFiniteHybridResidualEnergy_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFiniteHybridEnergy.lean/declarations/greenfinitehybridresidualenergy-le.md) | 97 | `result-track:c9e672cb6cabdf6bfa7fdac7b4d938bd13498310e1f627c2d1b1c74c8bee17d9` |
+| 1 | `def` | [greenHighNonaliasResidualEnergy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFiniteHybridEnergy.lean/declarations/greenhighnonaliasresidualenergy.md) | 17 | `declaration-track:f82e77978e5fdbfb472d6df2abae0253449340817e6dec4a809517e0af23de7e` |
+| 2 | `theorem` | [greenHighNonaliasResidualEnergy_le_components](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFiniteHybridEnergy.lean/declarations/greenhighnonaliasresidualenergy-le-components.md) | 25 | `result-track:bcb0bdc45c9a902bfd85eb70886d5a176ed39cccdf84981caadeacd78454aec2` |
+| 3 | `def` | [greenFiniteHybridResidualEnergy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFiniteHybridEnergy.lean/declarations/greenfinitehybridresidualenergy.md) | 90 | `declaration-track:c66f078e276863c588b7c6de50bb7fb3821c92cde0c39f7ff7ee5c5f87bde0e8` |
+| 4 | `theorem` | [greenFiniteHybridResidualEnergy_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenFiniteHybridEnergy.lean/declarations/greenfinitehybridresidualenergy-le.md) | 97 | `result-track:c9e672cb6cabdf6bfa7fdac7b4d938bd13498310e1f627c2d1b1c74c8bee17d9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

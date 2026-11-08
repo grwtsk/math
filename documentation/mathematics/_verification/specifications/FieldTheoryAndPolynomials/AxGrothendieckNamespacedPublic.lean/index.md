@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FieldTheoryAndPolynomials/AxGrothendieckNamespacedPublic.lean/index.md) · [Full source](../../../../FieldTheoryAndPolynomials/AxGrothendieckNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/AxGrothendieckNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/AxGrothendieckNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [ax_grothendieck_of_locally_finite](../../../../FieldTheoryAndPolynomials/AxGrothendieckNamespacedPublic.lean/declarations/ax-grothendieck-of-locally-finite.md) | 54 | `result-track:2610d6b3ad25220abf5c525bf68f7d7638068fffbacee259d983106880fe8590` |
-| 2 | `def` | [genericPolyMapSurjOnOfInjOn](../../../../FieldTheoryAndPolynomials/AxGrothendieckNamespacedPublic.lean/declarations/genericpolymapsurjonofinjon.md) | 103 | `declaration-track:39a62033f07aa4707695b6b7367b2b4cf0351b4812a6237843f75fa8e9750aef` |
-| 3 | `theorem` | [realize_genericPolyMapSurjOnOfInjOn](../../../../FieldTheoryAndPolynomials/AxGrothendieckNamespacedPublic.lean/declarations/realize-genericpolymapsurjonofinjon.md) | 150 | `result-track:9a22c0f619d99dc697e7fa3bebf567ceb7e1ea8d8561c057af9133366a872154` |
-| 4 | `theorem` | [ACF_models_genericPolyMapSurjOnOfInjOn_of_prime](../../../../FieldTheoryAndPolynomials/AxGrothendieckNamespacedPublic.lean/declarations/acf-models-genericpolymapsurjonofinjon-of-prime.md) | 176 | `result-track:727f280ba9606803280216539a3019f5cc9753e1bdfd95bf3c3da24f126f47df` |
-| 5 | `theorem` | [ACF_models_genericPolyMapSurjOnOfInjOn_of_prime_or_zero](../../../../FieldTheoryAndPolynomials/AxGrothendieckNamespacedPublic.lean/declarations/acf-models-genericpolymapsurjonofinjon-of-prime-or-zero.md) | 186 | `result-track:0d41b8d3b15075e80a34d81dd7f763198059950d60fcb8fe9780242fd793b1e6` |
-| 6 | `theorem` | [ax_grothendieck_of_definable](../../../../FieldTheoryAndPolynomials/AxGrothendieckNamespacedPublic.lean/declarations/ax-grothendieck-of-definable.md) | 208 | `result-track:67138e72e377287e9974bb79734144f965559e1d73e15f084e3fe52ca534c48f` |
-| 7 | `theorem` | [ax_grothendieck_zeroLocus](../../../../FieldTheoryAndPolynomials/AxGrothendieckNamespacedPublic.lean/declarations/ax-grothendieck-zerolocus.md) | 232 | `result-track:b13154fc24d8d8d7e54e5bc1bd72e88b565d0626e824f04ad73962b291cce576` |
-| 8 | `theorem` | [ax_grothendieck_univ](../../../../FieldTheoryAndPolynomials/AxGrothendieckNamespacedPublic.lean/declarations/ax-grothendieck-univ.md) | 248 | `result-track:ad2e3e49cfafcaf29c6f959a5815aa2c5aee9042689f7cec453e9aa7ec1a1b08` |
+| 1 | `theorem` | [ax_grothendieck_of_locally_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/AxGrothendieckNamespacedPublic.lean/declarations/ax-grothendieck-of-locally-finite.md) | 54 | `result-track:2610d6b3ad25220abf5c525bf68f7d7638068fffbacee259d983106880fe8590` |
+| 2 | `def` | [genericPolyMapSurjOnOfInjOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/AxGrothendieckNamespacedPublic.lean/declarations/genericpolymapsurjonofinjon.md) | 103 | `declaration-track:39a62033f07aa4707695b6b7367b2b4cf0351b4812a6237843f75fa8e9750aef` |
+| 3 | `theorem` | [realize_genericPolyMapSurjOnOfInjOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/AxGrothendieckNamespacedPublic.lean/declarations/realize-genericpolymapsurjonofinjon.md) | 150 | `result-track:9a22c0f619d99dc697e7fa3bebf567ceb7e1ea8d8561c057af9133366a872154` |
+| 4 | `theorem` | [ACF_models_genericPolyMapSurjOnOfInjOn_of_prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/AxGrothendieckNamespacedPublic.lean/declarations/acf-models-genericpolymapsurjonofinjon-of-prime.md) | 176 | `result-track:727f280ba9606803280216539a3019f5cc9753e1bdfd95bf3c3da24f126f47df` |
+| 5 | `theorem` | [ACF_models_genericPolyMapSurjOnOfInjOn_of_prime_or_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/AxGrothendieckNamespacedPublic.lean/declarations/acf-models-genericpolymapsurjonofinjon-of-prime-or-zero.md) | 186 | `result-track:0d41b8d3b15075e80a34d81dd7f763198059950d60fcb8fe9780242fd793b1e6` |
+| 6 | `theorem` | [ax_grothendieck_of_definable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/AxGrothendieckNamespacedPublic.lean/declarations/ax-grothendieck-of-definable.md) | 208 | `result-track:67138e72e377287e9974bb79734144f965559e1d73e15f084e3fe52ca534c48f` |
+| 7 | `theorem` | [ax_grothendieck_zeroLocus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/AxGrothendieckNamespacedPublic.lean/declarations/ax-grothendieck-zerolocus.md) | 232 | `result-track:b13154fc24d8d8d7e54e5bc1bd72e88b565d0626e824f04ad73962b291cce576` |
+| 8 | `theorem` | [ax_grothendieck_univ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/AxGrothendieckNamespacedPublic.lean/declarations/ax-grothendieck-univ.md) | 248 | `result-track:ad2e3e49cfafcaf29c6f959a5815aa2c5aee9042689f7cec453e9aa7ec1a1b08` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

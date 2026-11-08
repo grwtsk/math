@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/QuarticResolventReduction.lean/index.md) · [Full source](../../../../CommutativeAlgebra/QuarticResolventReduction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticResolventReduction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticResolventReduction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.QuarticResolventRingNaturality`](../../../../CommutativeAlgebra/QuarticResolventRingNaturality.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Algebra.QuarticResolventRingNaturality`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticResolventRingNaturality.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [resolvent_quotient](../../../../CommutativeAlgebra/QuarticResolventReduction.lean/declarations/resolvent-quotient.md) | 24 | `result-track:9030282af8b0b1d48ce8cfcfa41f7a1bf19730700f7a7129ee837277174c8762` |
-| 2 | `theorem` | [resolvent_quotient_congr](../../../../CommutativeAlgebra/QuarticResolventReduction.lean/declarations/resolvent-quotient-congr.md) | 34 | `result-track:afb04749fee1f5f37c2b484e9b7c97e04667c9c4b72756b57fa1c98b8cf932ee` |
+| 1 | `theorem` | [resolvent_quotient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticResolventReduction.lean/declarations/resolvent-quotient.md) | 24 | `result-track:9030282af8b0b1d48ce8cfcfa41f7a1bf19730700f7a7129ee837277174c8762` |
+| 2 | `theorem` | [resolvent_quotient_congr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/QuarticResolventReduction.lean/declarations/resolvent-quotient-congr.md) | 34 | `result-track:afb04749fee1f5f37c2b484e9b7c97e04667c9c4b72756b57fa1c98b8cf932ee` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

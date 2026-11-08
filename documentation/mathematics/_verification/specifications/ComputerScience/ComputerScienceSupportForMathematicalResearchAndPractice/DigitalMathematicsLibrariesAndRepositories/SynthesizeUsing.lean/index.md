@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/SynthesizeUsing.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/SynthesizeUsing.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/SynthesizeUsing.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/SynthesizeUsing.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [synthesizeUsing](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/SynthesizeUsing.lean/declarations/synthesizeusing.md) | 27 | `declaration-track:62d67b10e3aff35c3cc87fd61fd561953c2f8b2d69cd571113dc98ac32967cfa` |
-| 2 | `def` | [synthesizeUsing'](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/SynthesizeUsing.lean/declarations/synthesizeusing-source-edition-2.md) | 38 | `declaration-track:88841ff8a306cdb932115c630cc32972cf9c050486c64551ebde1eda1836c3ef` |
-| 3 | `def` | [synthesizeUsingTactic](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/SynthesizeUsing.lean/declarations/synthesizeusingtactic.md) | 58 | `declaration-track:002cbd2b2473fb5a56f6be6ba8a1db647b3fb14d51c4395a795430c08aacdfff` |
-| 4 | `def` | [synthesizeUsingTactic'](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/SynthesizeUsing.lean/declarations/synthesizeusingtactic-source-edition-2.md) | 89 | `declaration-track:c2b28b65306a0c887d0eca7bfdcfb8f6788d03c672c8941e05735e6445b634d6` |
+| 1 | `def` | [synthesizeUsing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/SynthesizeUsing.lean/declarations/synthesizeusing.md) | 27 | `declaration-track:62d67b10e3aff35c3cc87fd61fd561953c2f8b2d69cd571113dc98ac32967cfa` |
+| 2 | `def` | [synthesizeUsing'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/SynthesizeUsing.lean/declarations/synthesizeusing-source-edition-2.md) | 38 | `declaration-track:88841ff8a306cdb932115c630cc32972cf9c050486c64551ebde1eda1836c3ef` |
+| 3 | `def` | [synthesizeUsingTactic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/SynthesizeUsing.lean/declarations/synthesizeusingtactic.md) | 58 | `declaration-track:002cbd2b2473fb5a56f6be6ba8a1db647b3fb14d51c4395a795430c08aacdfff` |
+| 4 | `def` | [synthesizeUsingTactic'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/SynthesizeUsing.lean/declarations/synthesizeusingtactic-source-edition-2.md) | 89 | `declaration-track:c2b28b65306a0c887d0eca7bfdcfb8f6788d03c672c8941e05735e6445b634d6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

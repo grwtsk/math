@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/LowTimeScalarBudgetFixtures.lean/index.md) · [Full source](../../../../MeasureAndIntegration/LowTimeScalarBudgetFixtures.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LowTimeScalarBudgetFixtures.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LowTimeScalarBudgetFixtures.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [diagonal_prefix_empty](../../../../MeasureAndIntegration/LowTimeScalarBudgetFixtures.lean/declarations/diagonal-prefix-empty.md) | 20 | `result-track:a7de8c3b11a59a52f1bd8c7d2cb8d16bb242f7ef870c473f46c0d1f7a413f49e` |
-| 2 | `theorem` | [empty_prefix_bound_reuses_literal_row](../../../../MeasureAndIntegration/LowTimeScalarBudgetFixtures.lean/declarations/empty-prefix-bound-reuses-literal-row.md) | 23 | `result-track:3c87b66480721897aaadb5bf74ec9f6dfe21b6489a98ae11ae04ede10c7107c4` |
-| 3 | `theorem` | [cutoff_zero_refutes_exponential_reconstruction](../../../../MeasureAndIntegration/LowTimeScalarBudgetFixtures.lean/declarations/cutoff-zero-refutes-exponential-reconstruction.md) | 27 | `result-track:16864bfefd7ead01ea9bdc021fcac32ebc189d36c69f8528632a625a240ddd21` |
-| 4 | `theorem` | [cutoff_factor_cannot_be_erased](../../../../MeasureAndIntegration/LowTimeScalarBudgetFixtures.lean/declarations/cutoff-factor-cannot-be-erased.md) | 31 | `result-track:d110854c4590434dd2949d7810ba09c8c6c384cefa5a1423d7b78859cf4bdb06` |
-| 5 | `theorem` | [exact_curvature_margin](../../../../MeasureAndIntegration/LowTimeScalarBudgetFixtures.lean/declarations/exact-curvature-margin.md) | 34 | `result-track:a6beb9b1d864601f44d2f946b0aff523421d01ebd0f85e153ef666b9f5c445b5` |
-| 6 | `theorem` | [scale_one_margin_keeps_actual_constant](../../../../MeasureAndIntegration/LowTimeScalarBudgetFixtures.lean/declarations/scale-one-margin-keeps-actual-constant.md) | 37 | `result-track:0f5f73e571b928fa4c8ffd64b922c1ad14d2d7879cd26ff1883ffa5ff3c46642` |
+| 1 | `theorem` | [diagonal_prefix_empty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LowTimeScalarBudgetFixtures.lean/declarations/diagonal-prefix-empty.md) | 20 | `result-track:a7de8c3b11a59a52f1bd8c7d2cb8d16bb242f7ef870c473f46c0d1f7a413f49e` |
+| 2 | `theorem` | [empty_prefix_bound_reuses_literal_row](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LowTimeScalarBudgetFixtures.lean/declarations/empty-prefix-bound-reuses-literal-row.md) | 23 | `result-track:3c87b66480721897aaadb5bf74ec9f6dfe21b6489a98ae11ae04ede10c7107c4` |
+| 3 | `theorem` | [cutoff_zero_refutes_exponential_reconstruction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LowTimeScalarBudgetFixtures.lean/declarations/cutoff-zero-refutes-exponential-reconstruction.md) | 27 | `result-track:16864bfefd7ead01ea9bdc021fcac32ebc189d36c69f8528632a625a240ddd21` |
+| 4 | `theorem` | [cutoff_factor_cannot_be_erased](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LowTimeScalarBudgetFixtures.lean/declarations/cutoff-factor-cannot-be-erased.md) | 31 | `result-track:d110854c4590434dd2949d7810ba09c8c6c384cefa5a1423d7b78859cf4bdb06` |
+| 5 | `theorem` | [exact_curvature_margin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LowTimeScalarBudgetFixtures.lean/declarations/exact-curvature-margin.md) | 34 | `result-track:a6beb9b1d864601f44d2f946b0aff523421d01ebd0f85e153ef666b9f5c445b5` |
+| 6 | `theorem` | [scale_one_margin_keeps_actual_constant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LowTimeScalarBudgetFixtures.lean/declarations/scale-one-margin-keeps-actual-constant.md) | 37 | `result-track:0f5f73e571b928fa4c8ffd64b922c1ad14d2d7879cd26ff1883ffa5ff3c46642` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

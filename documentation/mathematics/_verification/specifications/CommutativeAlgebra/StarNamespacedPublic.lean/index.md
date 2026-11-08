@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/StarNamespacedPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/StarNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/StarNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/StarNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [RingConGen.Rel.star](../../../../CommutativeAlgebra/StarNamespacedPublic.lean/declarations/ringcongen-rel-star.md) | 31 | `result-track:2186342dce2e37e261ad6ab0bae7adc07f1b95bfd339b5dbbed9d396ae4b8229` |
-| 2 | `theorem` | [ringConGen_star](../../../../CommutativeAlgebra/StarNamespacedPublic.lean/declarations/ringcongen-star.md) | 44 | `result-track:5ddf4333fcb1677346d3d0319bf5b2c480178ccd8fcae35af298a096e4c66d83` |
+| 1 | `theorem` | [RingConGen.Rel.star](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/StarNamespacedPublic.lean/declarations/ringcongen-rel-star.md) | 31 | `result-track:2186342dce2e37e261ad6ab0bae7adc07f1b95bfd339b5dbbed9d396ae4b8229` |
+| 2 | `theorem` | [ringConGen_star](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/StarNamespacedPublic.lean/declarations/ringcongen-star.md) | 44 | `result-track:5ddf4333fcb1677346d3d0319bf5b2c480178ccd8fcae35af298a096e4c66d83` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuppliedWittImageEvaluationEquality.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuppliedWittImageEvaluationEquality.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuppliedWittImageEvaluationEquality.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuppliedWittImageEvaluationEquality.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [dirac_k_index_witt_trace_formula](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuppliedWittImageEvaluationEquality.lean/declarations/dirac-k-index-witt-trace-formula.md) | 31 | `result-track:598417fbd56bcea595e1604095dad5761b6473b9fde91ad95ed2e933786bea6a` |
+| 1 | `theorem` | [dirac_k_index_witt_trace_formula](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuppliedWittImageEvaluationEquality.lean/declarations/dirac-k-index-witt-trace-formula.md) | 31 | `result-track:598417fbd56bcea595e1604095dad5761b6473b9fde91ad95ed2e933786bea6a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DefaultRuleSets.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DefaultRuleSets.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DefaultRuleSets.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DefaultRuleSets.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [T](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DefaultRuleSets.lean/declarations/t.md) | 13 | `declaration-track:0e3611bef3576176b52ffcf99fb18170578baa28191841e95571b277ab1040d0` |
-| 2 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DefaultRuleSets.lean/declarations/example-source-edition-2.md) | 19 | `declaration-track:53df47e5d11363c78a16ac4f6b327aa33d0437a03c2ab8d521fce00112ab8d20` |
-| 3 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DefaultRuleSets.lean/declarations/example-source-edition-3.md) | 22 | `declaration-track:6eaf73a4bc07794deaf107109384983b82261e275425c7b06b0ac955bfec2ec8` |
-| 4 | `def` | [U](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DefaultRuleSets.lean/declarations/u.md) | 26 | `declaration-track:23cf0eaccba678dcd224ba148e4b709f2d9da09065ef95cec01b3200d5648791` |
-| 5 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DefaultRuleSets.lean/declarations/example.md) | 32 | `declaration-track:04c3493a0f64714e5616d949dab0f122cc5c25a3ec8341c2083bff6a5e8c2e13` |
-| 6 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DefaultRuleSets.lean/declarations/example-source-edition-4.md) | 35 | `declaration-track:7303d67ce21c948e80f11ae4114e34ef26376414769406c595192d0f924e425e` |
+| 1 | `def` | [T](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DefaultRuleSets.lean/declarations/t.md) | 13 | `declaration-track:0e3611bef3576176b52ffcf99fb18170578baa28191841e95571b277ab1040d0` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DefaultRuleSets.lean/declarations/example-source-edition-2.md) | 19 | `declaration-track:53df47e5d11363c78a16ac4f6b327aa33d0437a03c2ab8d521fce00112ab8d20` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DefaultRuleSets.lean/declarations/example-source-edition-3.md) | 22 | `declaration-track:6eaf73a4bc07794deaf107109384983b82261e275425c7b06b0ac955bfec2ec8` |
+| 4 | `def` | [U](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DefaultRuleSets.lean/declarations/u.md) | 26 | `declaration-track:23cf0eaccba678dcd224ba148e4b709f2d9da09065ef95cec01b3200d5648791` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DefaultRuleSets.lean/declarations/example.md) | 32 | `declaration-track:04c3493a0f64714e5616d949dab0f122cc5c25a3ec8341c2083bff6a5e8c2e13` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DefaultRuleSets.lean/declarations/example-source-edition-4.md) | 35 | `declaration-track:7303d67ce21c948e80f11ae4114e34ef26376414769406c595192d0f924e425e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

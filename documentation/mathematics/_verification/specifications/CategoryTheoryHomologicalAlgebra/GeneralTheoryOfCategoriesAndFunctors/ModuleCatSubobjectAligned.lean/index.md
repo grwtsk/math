@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatSubobjectAligned.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatSubobjectAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatSubobjectAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatSubobjectAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [subobjectModule](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatSubobjectAligned.lean/declarations/subobjectmodule.md) | 39 | `declaration-track:587009a90d47319bea820f675ea9f6ac2864ff18a1d734a97794628ab16367b2` |
-| 2 | `instance` | [wellPowered_moduleCat](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatSubobjectAligned.lean/declarations/wellpowered-modulecat.md) | 76 | `declaration-track:2bbb0c3dc26a99402ed46f792d496a0970088d011090e2e423427d1bb7de97ee` |
-| 3 | `def` | [toKernelSubobject](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatSubobjectAligned.lean/declarations/tokernelsubobject.md) | 83 | `declaration-track:41eb1f63eeba66ecefbe73a42219c573fbee71ec3d256d1d689370eff7a504ba` |
-| 4 | `theorem` | [toKernelSubobject_arrow](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatSubobjectAligned.lean/declarations/tokernelsubobject-arrow.md) | 89 | `result-track:82dac802ffc6da800d6a8dd35198a07555af7759e99a0340994390a72708d204` |
-| 5 | `theorem` | [cokernel_π_imageSubobject_ext](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatSubobjectAligned.lean/declarations/cokernel-imagesubobject-ext.md) | 110 | `result-track:545253bccd81dcc938e1f264247e62896b622fa58f3d65d3a77795950440c8f8` |
+| 1 | `def` | [subobjectModule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatSubobjectAligned.lean/declarations/subobjectmodule.md) | 39 | `declaration-track:587009a90d47319bea820f675ea9f6ac2864ff18a1d734a97794628ab16367b2` |
+| 2 | `instance` | [wellPowered_moduleCat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatSubobjectAligned.lean/declarations/wellpowered-modulecat.md) | 76 | `declaration-track:2bbb0c3dc26a99402ed46f792d496a0970088d011090e2e423427d1bb7de97ee` |
+| 3 | `def` | [toKernelSubobject](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatSubobjectAligned.lean/declarations/tokernelsubobject.md) | 83 | `declaration-track:41eb1f63eeba66ecefbe73a42219c573fbee71ec3d256d1d689370eff7a504ba` |
+| 4 | `theorem` | [toKernelSubobject_arrow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatSubobjectAligned.lean/declarations/tokernelsubobject-arrow.md) | 89 | `result-track:82dac802ffc6da800d6a8dd35198a07555af7759e99a0340994390a72708d204` |
+| 5 | `theorem` | [cokernel_π_imageSubobject_ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ModuleCatSubobjectAligned.lean/declarations/cokernel-imagesubobject-ext.md) | 110 | `result-track:545253bccd81dcc938e1f264247e62896b622fa58f3d65d3a77795950440c8f8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

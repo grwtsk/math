@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/GaussLucasNamespacedPublic.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/GaussLucasNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/GaussLucasNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/GaussLucasNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [derivRootWeight](../../../../FunctionsOfAComplexVariable/GaussLucasNamespacedPublic.lean/declarations/derivrootweight.md) | 34 | `declaration-track:d29e348dd785e7d1bf5f7f2ff136f983731da8d0b56eab423000a18f0898e0da` |
-| 2 | `theorem` | [derivRootWeight_nonneg](../../../../FunctionsOfAComplexVariable/GaussLucasNamespacedPublic.lean/declarations/derivrootweight-nonneg.md) | 38 | `result-track:97de4ef09e6bbd54c747447e78bf991f407f20d011c1c5854af778145fd5df45` |
-| 3 | `theorem` | [sum_derivRootWeight_pos](../../../../FunctionsOfAComplexVariable/GaussLucasNamespacedPublic.lean/declarations/sum-derivrootweight-pos.md) | 46 | `result-track:649ba74dfd9415648f4f887151551769cdcaef8f7da5bfc59152b72ff623d2ae` |
-| 4 | `theorem` | [eq_centerMass_of_eval_derivative_eq_zero](../../../../FunctionsOfAComplexVariable/GaussLucasNamespacedPublic.lean/declarations/eq-centermass-of-eval-derivative-eq-zero.md) | 68 | `result-track:72adcc3968094419fee9ed51eb9934cba489c218f4180fcea722f9195fe06bfa` |
-| 5 | `theorem` | [rootSet_derivative_subset_convexHull_rootSet](../../../../FunctionsOfAComplexVariable/GaussLucasNamespacedPublic.lean/declarations/rootset-derivative-subset-convexhull-rootset.md) | 105 | `result-track:15f898759fd8cfdb23d90ca3e79a84f87a7f147d4b33485391f5f11aabdb7eca` |
+| 1 | `def` | [derivRootWeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/GaussLucasNamespacedPublic.lean/declarations/derivrootweight.md) | 34 | `declaration-track:d29e348dd785e7d1bf5f7f2ff136f983731da8d0b56eab423000a18f0898e0da` |
+| 2 | `theorem` | [derivRootWeight_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/GaussLucasNamespacedPublic.lean/declarations/derivrootweight-nonneg.md) | 38 | `result-track:97de4ef09e6bbd54c747447e78bf991f407f20d011c1c5854af778145fd5df45` |
+| 3 | `theorem` | [sum_derivRootWeight_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/GaussLucasNamespacedPublic.lean/declarations/sum-derivrootweight-pos.md) | 46 | `result-track:649ba74dfd9415648f4f887151551769cdcaef8f7da5bfc59152b72ff623d2ae` |
+| 4 | `theorem` | [eq_centerMass_of_eval_derivative_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/GaussLucasNamespacedPublic.lean/declarations/eq-centermass-of-eval-derivative-eq-zero.md) | 68 | `result-track:72adcc3968094419fee9ed51eb9934cba489c218f4180fcea722f9195fe06bfa` |
+| 5 | `theorem` | [rootSet_derivative_subset_convexHull_rootSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/GaussLucasNamespacedPublic.lean/declarations/rootset-derivative-subset-convexhull-rootset.md) | 105 | `result-track:15f898759fd8cfdb23d90ca3e79a84f87a7f147d4b33485391f5f11aabdb7eca` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ExtExtSuccOfProjective.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ExtExtSuccOfProjective.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ExtExtSuccOfProjective.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ExtExtSuccOfProjective.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,8 +61,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Ext](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ExtExtSuccOfProjective.lean/declarations/ext.md) | 51 | `declaration-track:fd40e79c6f86d22e83791a48dee0947778e875f67991dc265ee2e4c4cd245195` |
-| 2 | `def` | [extSuccOfProjective](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ExtExtSuccOfProjective.lean/declarations/extsuccofprojective.md) | 66 | `declaration-track:585cad97a2b888d05b188a23c6c1ce9168069dbaa95cac0d0638dfe91c944d03` |
+| 1 | `def` | [Ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ExtExtSuccOfProjective.lean/declarations/ext.md) | 51 | `declaration-track:fd40e79c6f86d22e83791a48dee0947778e875f67991dc265ee2e4c4cd245195` |
+| 2 | `def` | [extSuccOfProjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ExtExtSuccOfProjective.lean/declarations/extsuccofprojective.md) | 66 | `declaration-track:585cad97a2b888d05b188a23c6c1ce9168069dbaa95cac0d0638dfe91c944d03` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

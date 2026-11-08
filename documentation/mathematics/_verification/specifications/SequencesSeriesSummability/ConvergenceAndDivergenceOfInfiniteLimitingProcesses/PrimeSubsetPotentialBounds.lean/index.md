@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/PrimeSubsetPotentialBounds.lean/index.md) · [Full source](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/PrimeSubsetPotentialBounds.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/PrimeSubsetPotentialBounds.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/PrimeSubsetPotentialBounds.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.AsymptoticAnalysis.DisjointPrimeChainBounds`](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/DisjointPrimeChainBoundsHistoricalSourceEdition2.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Analysis.AsymptoticAnalysis.DisjointPrimeChainBounds`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/DisjointPrimeChainBoundsHistoricalSourceEdition2.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [harmonicMass_subset](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/PrimeSubsetPotentialBounds.lean/declarations/harmonicmass-subset.md) | 14 | `result-track:291946689f1e1a16ed318d3a0128f7d3ee5351287b9a211edbfd9a934facaad3` |
-| 2 | `theorem` | [subset_potential_bound](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/PrimeSubsetPotentialBounds.lean/declarations/subset-potential-bound.md) | 21 | `result-track:b9c7ad29ecec91d7a9ad45e5ea392270c9a90d56596b32369e84c7b764956e30` |
-| 3 | `theorem` | [AS_implies_uniform_subset_polynomial](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/PrimeSubsetPotentialBounds.lean/declarations/as-implies-uniform-subset-polynomial.md) | 99 | `result-track:bd4765dfbdd0dc4ca1417a47b3e70b6e270f006bf244cce2c68071d3b8049dc6` |
-| 4 | `theorem` | [primeBand_subset_inventory](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/PrimeSubsetPotentialBounds.lean/declarations/primeband-subset-inventory.md) | 176 | `result-track:608d985e39cf0d830b992cfe18b86f4f78c4c1d6f231f4d9ed2d4d302e7ce946` |
-| 5 | `theorem` | [threeQuarterBand_eventually_eligible](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/PrimeSubsetPotentialBounds.lean/declarations/threequarterband-eventually-eligible.md) | 190 | `result-track:b4634f4b80b6ea6b408919c8c6b7468fcad6ceac1226f5f51f83cf419a8e4060` |
-| 6 | `theorem` | [AS_implies_threeQuarterBand_eventual_polynomial](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/PrimeSubsetPotentialBounds.lean/declarations/as-implies-threequarterband-eventual-polynomial.md) | 209 | `result-track:bd7a57bbea8095576eae7eafed0fa9edda26a53f6fa3d28bca7db3c1e9301c90` |
+| 1 | `theorem` | [harmonicMass_subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/PrimeSubsetPotentialBounds.lean/declarations/harmonicmass-subset.md) | 14 | `result-track:291946689f1e1a16ed318d3a0128f7d3ee5351287b9a211edbfd9a934facaad3` |
+| 2 | `theorem` | [subset_potential_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/PrimeSubsetPotentialBounds.lean/declarations/subset-potential-bound.md) | 21 | `result-track:b9c7ad29ecec91d7a9ad45e5ea392270c9a90d56596b32369e84c7b764956e30` |
+| 3 | `theorem` | [AS_implies_uniform_subset_polynomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/PrimeSubsetPotentialBounds.lean/declarations/as-implies-uniform-subset-polynomial.md) | 99 | `result-track:bd4765dfbdd0dc4ca1417a47b3e70b6e270f006bf244cce2c68071d3b8049dc6` |
+| 4 | `theorem` | [primeBand_subset_inventory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/PrimeSubsetPotentialBounds.lean/declarations/primeband-subset-inventory.md) | 176 | `result-track:608d985e39cf0d830b992cfe18b86f4f78c4c1d6f231f4d9ed2d4d302e7ce946` |
+| 5 | `theorem` | [threeQuarterBand_eventually_eligible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/PrimeSubsetPotentialBounds.lean/declarations/threequarterband-eventually-eligible.md) | 190 | `result-track:b4634f4b80b6ea6b408919c8c6b7468fcad6ceac1226f5f51f83cf419a8e4060` |
+| 6 | `theorem` | [AS_implies_threeQuarterBand_eventual_polynomial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/PrimeSubsetPotentialBounds.lean/declarations/as-implies-threequarterband-eventual-polynomial.md) | 209 | `result-track:bd7a57bbea8095576eae7eafed0fa9edda26a53f6fa3d28bca7db3c1e9301c90` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

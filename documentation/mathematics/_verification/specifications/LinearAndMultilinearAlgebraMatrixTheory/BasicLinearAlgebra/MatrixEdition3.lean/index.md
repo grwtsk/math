@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixEdition3.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixEdition3.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixEdition3.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixEdition3.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [Matrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixEdition3.lean/declarations/matrix.md) | 17 | `declaration-track:a63dab5a3819dd8ba2c497b0c73b9b6a01ac2b203d5a7bee118b4fd868bf608f` |
-| 2 | `def` | [Matrix.entry](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixEdition3.lean/declarations/matrix-entry.md) | 21 | `declaration-track:90e71c3dd37d54db7bc0e51879cbbe9a5b3a1879b22a852dd302cd83554db2dc` |
-| 3 | `def` | [Matrix.row](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixEdition3.lean/declarations/matrix-row.md) | 29 | `declaration-track:838503c0c3edd5d7b2b725df75065cbc399cd0b1e5ae8547cf0db8c996f9f97f` |
-| 4 | `def` | [Matrix.col](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixEdition3.lean/declarations/matrix-col.md) | 36 | `declaration-track:1d765e7f8e7db1ad110a10b533ca11063bda8d15d420426150f154c3b7c180bd` |
-| 5 | `theorem` | [Matrix.entry_eq_false_or_true](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixEdition3.lean/declarations/matrix-entry-eq-false-or-true.md) | 43 | `result-track:6310851965f1a04ee8e5a5d4abc470bd401a6c13e897509ee0e321c839b71c64` |
+| 1 | `abbrev` | [Matrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixEdition3.lean/declarations/matrix.md) | 17 | `declaration-track:a63dab5a3819dd8ba2c497b0c73b9b6a01ac2b203d5a7bee118b4fd868bf608f` |
+| 2 | `def` | [Matrix.entry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixEdition3.lean/declarations/matrix-entry.md) | 21 | `declaration-track:90e71c3dd37d54db7bc0e51879cbbe9a5b3a1879b22a852dd302cd83554db2dc` |
+| 3 | `def` | [Matrix.row](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixEdition3.lean/declarations/matrix-row.md) | 29 | `declaration-track:838503c0c3edd5d7b2b725df75065cbc399cd0b1e5ae8547cf0db8c996f9f97f` |
+| 4 | `def` | [Matrix.col](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixEdition3.lean/declarations/matrix-col.md) | 36 | `declaration-track:1d765e7f8e7db1ad110a10b533ca11063bda8d15d420426150f154c3b7c180bd` |
+| 5 | `theorem` | [Matrix.entry_eq_false_or_true](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixEdition3.lean/declarations/matrix-entry-eq-false-or-true.md) | 43 | `result-track:6310851965f1a04ee8e5a5d4abc470bd401a6c13e897509ee0e321c839b71c64` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

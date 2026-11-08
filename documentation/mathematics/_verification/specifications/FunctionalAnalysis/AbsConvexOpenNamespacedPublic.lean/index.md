@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/AbsConvexOpenNamespacedPublic.lean/index.md) · [Full source](../../../../FunctionalAnalysis/AbsConvexOpenNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AbsConvexOpenNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AbsConvexOpenNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,18 +57,18 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [AbsConvexOpenSets](../../../../FunctionalAnalysis/AbsConvexOpenNamespacedPublic.lean/declarations/absconvexopensets.md) | 57 | `declaration-track:5578c81c021c10252525cc036f0e3ca2f85e961a5990616dd7fdea068f3cf6d9` |
-| 2 | `instance` | [AbsConvexOpenSets.instCoeOut](../../../../FunctionalAnalysis/AbsConvexOpenNamespacedPublic.lean/declarations/absconvexopensets-instcoeout.md) | 60 | `declaration-track:bd320f0a2239950db7b5e3ade26866a67484cf714cb3621d5e432b381f19af3f` |
-| 3 | `theorem` | [coe_zero_mem](../../../../FunctionalAnalysis/AbsConvexOpenNamespacedPublic.lean/declarations/coe-zero-mem.md) | 67 | `result-track:020d9e93d0ea08c69ee140734515a999950792e75c55f17cfee45e7586ab31f7` |
-| 4 | `theorem` | [coe_isOpen](../../../../FunctionalAnalysis/AbsConvexOpenNamespacedPublic.lean/declarations/coe-isopen.md) | 70 | `result-track:c309b884ee7472c177a09e4956489646b1a47b1c3e692d3bf64c6148287385a7` |
-| 5 | `theorem` | [coe_nhds](../../../../FunctionalAnalysis/AbsConvexOpenNamespacedPublic.lean/declarations/coe-nhds.md) | 73 | `result-track:c3f9f39e0f1319775588edd830406e7b1332f4efda3ab655336c164b6c15e308` |
-| 6 | `theorem` | [coe_balanced](../../../../FunctionalAnalysis/AbsConvexOpenNamespacedPublic.lean/declarations/coe-balanced.md) | 76 | `result-track:f3e3901a0e901b7d95201bff5e9cc616e6c8bfa58e30681ee3dabf2b00d48e66` |
-| 7 | `theorem` | [coe_convex](../../../../FunctionalAnalysis/AbsConvexOpenNamespacedPublic.lean/declarations/coe-convex.md) | 79 | `result-track:dd3de3aa3973d9c9a0ad9d1f0756193604408cb261aa05ae77521a26d18e1980` |
-| 8 | `instance` | [AbsConvexOpenSets.instNonempty](../../../../FunctionalAnalysis/AbsConvexOpenNamespacedPublic.lean/declarations/absconvexopensets-instnonempty.md) | 84 | `declaration-track:eeef516b01577cb50eabb37027d05998c1e886b0430a543b1093eb4fda0eada3` |
-| 9 | `def` | [gaugeSeminormFamily](../../../../FunctionalAnalysis/AbsConvexOpenNamespacedPublic.lean/declarations/gaugeseminormfamily.md) | 101 | `declaration-track:c9fc72b4c7b3644bab1d9a2197ecba00f33111445950ddc1713e5f87c69c52d0` |
-| 10 | `theorem` | [gaugeSeminormFamily_ball](../../../../FunctionalAnalysis/AbsConvexOpenNamespacedPublic.lean/declarations/gaugeseminormfamily-ball.md) | 106 | `result-track:a5127cbf56775ec9fcb1ec80ee4e90efc524fbf35369eee658baf34e7fa9aa52` |
-| 11 | `theorem` | [with_gaugeSeminormFamily](../../../../FunctionalAnalysis/AbsConvexOpenNamespacedPublic.lean/declarations/with-gaugeseminormfamily.md) | 118 | `result-track:d1ac4bb98e2499db1e84edd1d188e68cf316007692c70c38aedf69f71750654e` |
-| 12 | `instance` | [LocallyConvexSpace.toPolynormableSpace](../../../../FunctionalAnalysis/AbsConvexOpenNamespacedPublic.lean/declarations/locallyconvexspace-topolynormablespace.md) | 142 | `declaration-track:8b630d3cd08f5b5dbbc7bbdd9579e18d59f632a72fe2b8bf1ad526ce6da6bdab` |
+| 1 | `def` | [AbsConvexOpenSets](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AbsConvexOpenNamespacedPublic.lean/declarations/absconvexopensets.md) | 57 | `declaration-track:5578c81c021c10252525cc036f0e3ca2f85e961a5990616dd7fdea068f3cf6d9` |
+| 2 | `instance` | [AbsConvexOpenSets.instCoeOut](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AbsConvexOpenNamespacedPublic.lean/declarations/absconvexopensets-instcoeout.md) | 60 | `declaration-track:bd320f0a2239950db7b5e3ade26866a67484cf714cb3621d5e432b381f19af3f` |
+| 3 | `theorem` | [coe_zero_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AbsConvexOpenNamespacedPublic.lean/declarations/coe-zero-mem.md) | 67 | `result-track:020d9e93d0ea08c69ee140734515a999950792e75c55f17cfee45e7586ab31f7` |
+| 4 | `theorem` | [coe_isOpen](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AbsConvexOpenNamespacedPublic.lean/declarations/coe-isopen.md) | 70 | `result-track:c309b884ee7472c177a09e4956489646b1a47b1c3e692d3bf64c6148287385a7` |
+| 5 | `theorem` | [coe_nhds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AbsConvexOpenNamespacedPublic.lean/declarations/coe-nhds.md) | 73 | `result-track:c3f9f39e0f1319775588edd830406e7b1332f4efda3ab655336c164b6c15e308` |
+| 6 | `theorem` | [coe_balanced](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AbsConvexOpenNamespacedPublic.lean/declarations/coe-balanced.md) | 76 | `result-track:f3e3901a0e901b7d95201bff5e9cc616e6c8bfa58e30681ee3dabf2b00d48e66` |
+| 7 | `theorem` | [coe_convex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AbsConvexOpenNamespacedPublic.lean/declarations/coe-convex.md) | 79 | `result-track:dd3de3aa3973d9c9a0ad9d1f0756193604408cb261aa05ae77521a26d18e1980` |
+| 8 | `instance` | [AbsConvexOpenSets.instNonempty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AbsConvexOpenNamespacedPublic.lean/declarations/absconvexopensets-instnonempty.md) | 84 | `declaration-track:eeef516b01577cb50eabb37027d05998c1e886b0430a543b1093eb4fda0eada3` |
+| 9 | `def` | [gaugeSeminormFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AbsConvexOpenNamespacedPublic.lean/declarations/gaugeseminormfamily.md) | 101 | `declaration-track:c9fc72b4c7b3644bab1d9a2197ecba00f33111445950ddc1713e5f87c69c52d0` |
+| 10 | `theorem` | [gaugeSeminormFamily_ball](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AbsConvexOpenNamespacedPublic.lean/declarations/gaugeseminormfamily-ball.md) | 106 | `result-track:a5127cbf56775ec9fcb1ec80ee4e90efc524fbf35369eee658baf34e7fa9aa52` |
+| 11 | `theorem` | [with_gaugeSeminormFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AbsConvexOpenNamespacedPublic.lean/declarations/with-gaugeseminormfamily.md) | 118 | `result-track:d1ac4bb98e2499db1e84edd1d188e68cf316007692c70c38aedf69f71750654e` |
+| 12 | `instance` | [LocallyConvexSpace.toPolynormableSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/AbsConvexOpenNamespacedPublic.lean/declarations/locallyconvexspace-topolynormablespace.md) | 142 | `declaration-track:8b630d3cd08f5b5dbbc7bbdd9579e18d59f632a72fe2b8bf1ad526ce6da6bdab` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

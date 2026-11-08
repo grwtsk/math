@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicEdition1.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [scanAuxM](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicEdition1.lean/declarations/scanauxm.md) | 18 | `declaration-track:d242a585aa0cfa99c784b892a06ef1bafec6dd1d6de05f56c9aab22b5eb3fe4e` |
-| 2 | `def` | [scanlM](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicEdition1.lean/declarations/scanlm.md) | 31 | `declaration-track:06cb647e000072a624523adfa73d3b0b8913c5055b173d7461a6f21a5f6e5b17` |
-| 3 | `def` | [scanrM](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicEdition1.lean/declarations/scanrm.md) | 39 | `declaration-track:d120ea4735a168ceca46968e6f6f85a9530ae14b35099582276dfa05979ed7bf` |
-| 4 | `def` | [scanl](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicEdition1.lean/declarations/scanl.md) | 49 | `declaration-track:51efd6bf58c08f0b26ae9ede57a1b634e74aea74681019969aea6868fe9bf554` |
-| 5 | `def` | [scanr](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicEdition1.lean/declarations/scanr.md) | 59 | `declaration-track:62ebbc35633e39ea151535de4019145f384b1d7ecbc6b538065e35a6b3a220db` |
+| 1 | `def` | [scanAuxM](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicEdition1.lean/declarations/scanauxm.md) | 18 | `declaration-track:d242a585aa0cfa99c784b892a06ef1bafec6dd1d6de05f56c9aab22b5eb3fe4e` |
+| 2 | `def` | [scanlM](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicEdition1.lean/declarations/scanlm.md) | 31 | `declaration-track:06cb647e000072a624523adfa73d3b0b8913c5055b173d7461a6f21a5f6e5b17` |
+| 3 | `def` | [scanrM](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicEdition1.lean/declarations/scanrm.md) | 39 | `declaration-track:d120ea4735a168ceca46968e6f6f85a9530ae14b35099582276dfa05979ed7bf` |
+| 4 | `def` | [scanl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicEdition1.lean/declarations/scanl.md) | 49 | `declaration-track:51efd6bf58c08f0b26ae9ede57a1b634e74aea74681019969aea6868fe9bf554` |
+| 5 | `def` | [scanr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicEdition1.lean/declarations/scanr.md) | 59 | `declaration-track:62ebbc35633e39ea151535de4019145f384b1d7ecbc6b538065e35a6b3a220db` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

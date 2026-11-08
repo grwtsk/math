@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidueChord.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidueChord.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidueChord.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidueChord.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenAbel`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenAbel.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenAbel`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenAbel.lean/index.md) — import line 7; pinned internal source present.
 - `Mathlib.Analysis.SpecialFunctions.Trigonometric.Bounds` — import line 8; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 9; external provider; requires a separately pinned dependency.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [GreenCenteredResidue](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidueChord.lean/declarations/greencenteredresidue.md) | 17 | `declaration-track:2197c4114d379d6381956b1af7f24b35509fe4224746f234dd6f82a28e3d68cd` |
-| 2 | `theorem` | [greenMeshPhase_eq_residue](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidueChord.lean/declarations/greenmeshphase-eq-residue.md) | 24 | `result-track:7d18289a99c7ed708dd8603c0121566d8746a7906fd6c5d26480578f396496a0` |
-| 3 | `theorem` | [norm_one_sub_greenMeshPhase_eq](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidueChord.lean/declarations/norm-one-sub-greenmeshphase-eq.md) | 41 | `result-track:59eff708b25dabbe4471e1ea9f3978c3e41582440bd043aba151607a98ccdfda` |
-| 4 | `theorem` | [four_mul_abs_residue_div_X_le_norm_one_sub_phase](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidueChord.lean/declarations/four-mul-abs-residue-div-x-le-norm-one-sub-phase.md) | 52 | `result-track:763497b433c1342ee8009c75383e2dbe5774b78b4bbc7ed597ad645c88999df4` |
-| 5 | `theorem` | [centeredResidue_chord_lower_bound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidueChord.lean/declarations/centeredresidue-chord-lower-bound.md) | 89 | `result-track:2a40ac2b5464514f6e9dd280f89c5f688a75c6d2cc04e6f9db7fc8f787c78c7f` |
+| 1 | `structure` | [GreenCenteredResidue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidueChord.lean/declarations/greencenteredresidue.md) | 17 | `declaration-track:2197c4114d379d6381956b1af7f24b35509fe4224746f234dd6f82a28e3d68cd` |
+| 2 | `theorem` | [greenMeshPhase_eq_residue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidueChord.lean/declarations/greenmeshphase-eq-residue.md) | 24 | `result-track:7d18289a99c7ed708dd8603c0121566d8746a7906fd6c5d26480578f396496a0` |
+| 3 | `theorem` | [norm_one_sub_greenMeshPhase_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidueChord.lean/declarations/norm-one-sub-greenmeshphase-eq.md) | 41 | `result-track:59eff708b25dabbe4471e1ea9f3978c3e41582440bd043aba151607a98ccdfda` |
+| 4 | `theorem` | [four_mul_abs_residue_div_X_le_norm_one_sub_phase](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidueChord.lean/declarations/four-mul-abs-residue-div-x-le-norm-one-sub-phase.md) | 52 | `result-track:763497b433c1342ee8009c75383e2dbe5774b78b4bbc7ed597ad645c88999df4` |
+| 5 | `theorem` | [centeredResidue_chord_lower_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredMobiusLogGreenResidueChord.lean/declarations/centeredresidue-chord-lower-bound.md) | 89 | `result-track:2a40ac2b5464514f6e9dd280f89c5f688a75c6d2cc04e6f9db7fc8f787c78c7f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

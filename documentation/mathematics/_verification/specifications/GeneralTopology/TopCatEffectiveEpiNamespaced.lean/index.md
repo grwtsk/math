@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/TopCatEffectiveEpiNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/TopCatEffectiveEpiNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopCatEffectiveEpiNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopCatEffectiveEpiNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [effectiveEpiStructOfQuotientMap](../../../../GeneralTopology/TopCatEffectiveEpiNamespaced.lean/declarations/effectiveepistructofquotientmap.md) | 37 | `declaration-track:c9c4b0f4bc5846cd82de919cd9cdeef2263f46f0cc2afa87fde130705406655a` |
-| 2 | `theorem` | [effectiveEpi_iff_isQuotientMap](../../../../GeneralTopology/TopCatEffectiveEpiNamespaced.lean/declarations/effectiveepi-iff-isquotientmap.md) | 67 | `result-track:3f23d977c58eaa0135cd23ce47f48423eab3d6fb3dec712ab4da7a9cb6f05a8e` |
+| 1 | `def` | [effectiveEpiStructOfQuotientMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopCatEffectiveEpiNamespaced.lean/declarations/effectiveepistructofquotientmap.md) | 37 | `declaration-track:c9c4b0f4bc5846cd82de919cd9cdeef2263f46f0cc2afa87fde130705406655a` |
+| 2 | `theorem` | [effectiveEpi_iff_isQuotientMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopCatEffectiveEpiNamespaced.lean/declarations/effectiveepi-iff-isquotientmap.md) | 67 | `result-track:3f23d977c58eaa0135cd23ce47f48423eab3d6fb3dec712ab4da7a9cb6f05a8e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

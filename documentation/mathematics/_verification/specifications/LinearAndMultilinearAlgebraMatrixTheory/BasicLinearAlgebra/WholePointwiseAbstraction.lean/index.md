@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WholePointwiseAbstraction.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WholePointwiseAbstraction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WholePointwiseAbstraction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WholePointwiseAbstraction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,12 +60,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [falseMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WholePointwiseAbstraction.lean/declarations/falsematrix.md) | 38 | `declaration-track:1dfd8e2e9c3194e8cd435ad0f4f087002a0d5d2d154fab6bb78fd0e7070a244d` |
-| 2 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WholePointwiseAbstraction.lean/declarations/example-source-edition-3.md) | 41 | `declaration-track:afb9d3d28852332a49e9f671e9cd323cf0211709b21856b3426390661c65291f` |
-| 3 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WholePointwiseAbstraction.lean/declarations/example-source-edition-4.md) | 48 | `declaration-track:ff6a9999b07185b1f5f0d7e3c40be7a24cf466d3a9037bd5715c4ee9eaad12f6` |
-| 4 | `def` | [bitMatrixAbstraction](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WholePointwiseAbstraction.lean/declarations/bitmatrixabstraction.md) | 52 | `declaration-track:a710a737052a636c0457eeabb13b58188252f00c69743ca7d77c67e219563650` |
-| 5 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WholePointwiseAbstraction.lean/declarations/example-source-edition-2.md) | 56 | `declaration-track:a0fefbad44992b6cdcf71770d5ab9f52963b9909cf3dd097c2d30d006fe56e35` |
-| 6 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WholePointwiseAbstraction.lean/declarations/example.md) | 62 | `declaration-track:72923a99068f4138be05b3e7a7b39feb27bfb0ec9eaa1acb6be62a8841aced68` |
+| 1 | `def` | [falseMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WholePointwiseAbstraction.lean/declarations/falsematrix.md) | 38 | `declaration-track:1dfd8e2e9c3194e8cd435ad0f4f087002a0d5d2d154fab6bb78fd0e7070a244d` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WholePointwiseAbstraction.lean/declarations/example-source-edition-3.md) | 41 | `declaration-track:afb9d3d28852332a49e9f671e9cd323cf0211709b21856b3426390661c65291f` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WholePointwiseAbstraction.lean/declarations/example-source-edition-4.md) | 48 | `declaration-track:ff6a9999b07185b1f5f0d7e3c40be7a24cf466d3a9037bd5715c4ee9eaad12f6` |
+| 4 | `def` | [bitMatrixAbstraction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WholePointwiseAbstraction.lean/declarations/bitmatrixabstraction.md) | 52 | `declaration-track:a710a737052a636c0457eeabb13b58188252f00c69743ca7d77c67e219563650` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WholePointwiseAbstraction.lean/declarations/example-source-edition-2.md) | 56 | `declaration-track:a0fefbad44992b6cdcf71770d5ab9f52963b9909cf3dd097c2d30d006fe56e35` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/WholePointwiseAbstraction.lean/declarations/example.md) | 62 | `declaration-track:72923a99068f4138be05b3e7a7b39feb27bfb0ec9eaa1acb6be62a8841aced68` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

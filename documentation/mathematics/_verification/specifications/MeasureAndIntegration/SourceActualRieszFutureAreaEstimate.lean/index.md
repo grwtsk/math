@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceActualRieszFutureAreaEstimate.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceActualRieszFutureAreaEstimate.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualRieszFutureAreaEstimate.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualRieszFutureAreaEstimate.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actualResidual_future_quadratic_area_tail](../../../../MeasureAndIntegration/SourceActualRieszFutureAreaEstimate.lean/declarations/actualresidual-future-quadratic-area-tail.md) | 22 | `result-track:ec838209c5a93c1ee1f13a1627d46ab98b4070ad9a7672d81c54acaccf5df7cd` |
-| 2 | `theorem` | [estimate_of_actual_future_quadratic_area](../../../../MeasureAndIntegration/SourceActualRieszFutureAreaEstimate.lean/declarations/estimate-of-actual-future-quadratic-area.md) | 42 | `result-track:87ef7a4ea41b05d7aef59bcfc2c429a860acf783fadbed36d62b06ae9ea302cf` |
+| 1 | `theorem` | [actualResidual_future_quadratic_area_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualRieszFutureAreaEstimate.lean/declarations/actualresidual-future-quadratic-area-tail.md) | 22 | `result-track:ec838209c5a93c1ee1f13a1627d46ab98b4070ad9a7672d81c54acaccf5df7cd` |
+| 2 | `theorem` | [estimate_of_actual_future_quadratic_area](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualRieszFutureAreaEstimate.lean/declarations/estimate-of-actual-future-quadratic-area.md) | 42 | `result-track:87ef7a4ea41b05d7aef59bcfc2c429a860acf783fadbed36d62b06ae9ea302cf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

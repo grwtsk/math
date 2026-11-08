@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/SmoothQuotientPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/SmoothQuotientPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SmoothQuotientPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SmoothQuotientPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [LinearMap.ker_inf_smul_top_eq_smul_of_flat](../../../../CommutativeAlgebra/SmoothQuotientPublic.lean/declarations/linearmap-ker-inf-smul-top-eq-smul-of-flat.md) | 26 | `result-track:2dceebcd1b37c263d5c236511d07fda2fade5d9ddc08c6c80d69a5d8308890bc` |
-| 2 | `lemma` | [comap_ker_eq_sup_of_ker_eq_map](../../../../CommutativeAlgebra/SmoothQuotientPublic.lean/declarations/comap-ker-eq-sup-of-ker-eq-map.md) | 63 | `result-track:4eb866a33eb73d991af6536e405a9eb79cf6e81da1c1d199732d629369e13d34` |
-| 3 | `lemma` | [mul_le_ker_of_range_le_mul_of_sq_zero](../../../../CommutativeAlgebra/SmoothQuotientPublic.lean/declarations/mul-le-ker-of-range-le-mul-of-sq-zero.md) | 71 | `result-track:3830c127d4eae8e727a3c9c05d4879686039ce8e850a875d0e955a7b44676b63` |
-| 4 | `lemma` | [Algebra.FormallySmooth.of_surjective_of_ker_eq_map_of_flat](../../../../CommutativeAlgebra/SmoothQuotientPublic.lean/declarations/algebra-formallysmooth-of-surjective-of-ker-eq-map-of-flat.md) | 97 | `result-track:54e9e868460d7f48162173ec97ae53d80a61a1ce33ff3693e9b6b24f8574285b` |
-| 5 | `lemma` | [RingHom.FormallySmooth.of_flat_of_ker_eq_map_of_square_zero](../../../../CommutativeAlgebra/SmoothQuotientPublic.lean/declarations/ringhom-formallysmooth-of-flat-of-ker-eq-map-of-square-zero.md) | 217 | `result-track:d20e8260678dc982822b9a94e071624200644cadbd719f1c6b4d7b3fa6da6614` |
+| 1 | `lemma` | [LinearMap.ker_inf_smul_top_eq_smul_of_flat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SmoothQuotientPublic.lean/declarations/linearmap-ker-inf-smul-top-eq-smul-of-flat.md) | 26 | `result-track:2dceebcd1b37c263d5c236511d07fda2fade5d9ddc08c6c80d69a5d8308890bc` |
+| 2 | `lemma` | [comap_ker_eq_sup_of_ker_eq_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SmoothQuotientPublic.lean/declarations/comap-ker-eq-sup-of-ker-eq-map.md) | 63 | `result-track:4eb866a33eb73d991af6536e405a9eb79cf6e81da1c1d199732d629369e13d34` |
+| 3 | `lemma` | [mul_le_ker_of_range_le_mul_of_sq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SmoothQuotientPublic.lean/declarations/mul-le-ker-of-range-le-mul-of-sq-zero.md) | 71 | `result-track:3830c127d4eae8e727a3c9c05d4879686039ce8e850a875d0e955a7b44676b63` |
+| 4 | `lemma` | [Algebra.FormallySmooth.of_surjective_of_ker_eq_map_of_flat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SmoothQuotientPublic.lean/declarations/algebra-formallysmooth-of-surjective-of-ker-eq-map-of-flat.md) | 97 | `result-track:54e9e868460d7f48162173ec97ae53d80a61a1ce33ff3693e9b6b24f8574285b` |
+| 5 | `lemma` | [RingHom.FormallySmooth.of_flat_of_ker_eq_map_of_square_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/SmoothQuotientPublic.lean/declarations/ringhom-formallysmooth-of-flat-of-ker-eq-map-of-square-zero.md) | 217 | `result-track:d20e8260678dc982822b9a94e071624200644cadbd719f1c6b4d7b3fa6da6614` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

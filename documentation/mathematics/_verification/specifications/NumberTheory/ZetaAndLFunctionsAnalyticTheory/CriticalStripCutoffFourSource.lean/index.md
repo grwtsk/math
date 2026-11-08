@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffFourSource.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffFourSource.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffFourSource.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffFourSource.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripTranslatedPowerJet`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripTranslatedPowerJet.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripThirteenHeightSeed`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CriticalStripThirteenHeightSeed.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripTranslatedPowerJet`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripTranslatedPowerJet.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripThirteenHeightSeed`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CriticalStripThirteenHeightSeed.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,19 +58,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Band](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffFourSource.lean/declarations/band.md) | 24 | `declaration-track:9bdf6f83eadcc702522bc9b5d9b41d34f7aac4ebdd7ef37efc16afa82daef5bf` |
-| 2 | `def` | [coefficient](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffFourSource.lean/declarations/coefficient.md) | 26 | `declaration-track:134cc9a137e36eedb14724d8bba1d822ce1a8d9fbdbd4e5fd5368f51824522d9` |
-| 3 | `def` | [model](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffFourSource.lean/declarations/model.md) | 30 | `declaration-track:fb872e8ef163e2bf01313d98f230c403790b4180d21607fc0fb0fbc37fee9cb3` |
-| 4 | `lemma` | [negative_shift](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffFourSource.lean/declarations/negative-shift.md) | 34 | `result-track:61bc8723095c38a9350262a9d4785a38061f70f51749ab78ed53db138ec9c9d9` |
-| 5 | `theorem` | [finiteModel_four](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffFourSource.lean/declarations/finitemodel-four.md) | 39 | `result-track:9ef826d33638160fdd37e99002529262e74268c0c68c38f580d94b8705dacf98` |
-| 6 | `lemma` | [band_distance](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffFourSource.lean/declarations/band-distance.md) | 55 | `result-track:03aba50bccee200be4a3418ded1cd7c77d083c10412be34b03af68f6e28a5242` |
-| 7 | `lemma` | [band_norms](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffFourSource.lean/declarations/band-norms.md) | 63 | `result-track:3ea236e89cfb042f5473dbdf4c584867f002b23d3cb4218c884625a5a6b388e8` |
-| 8 | `lemma` | [coefficient_norm](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffFourSource.lean/declarations/coefficient-norm.md) | 72 | `result-track:99a529837f1e9ac99a0e164a2985d92dceab727a324b0f5971c7c269657ed3d0` |
-| 9 | `theorem` | [model_error](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffFourSource.lean/declarations/model-error.md) | 103 | `result-track:fe1ce6f26e8566b80322654b982d9fdebd3e2da4ce574a9b6fcb02a451a15f55` |
-| 10 | `lemma` | [multiplier_bound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffFourSource.lean/declarations/multiplier-bound.md) | 123 | `result-track:9368b5288a3a11891b8a72438209044d8e8f54cff19a6cd8caf041f596cd8643` |
-| 11 | `lemma` | [cutoff_four_weight](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffFourSource.lean/declarations/cutoff-four-weight.md) | 164 | `result-track:6408233ca63d6b5b11540b65ed3175d8cbd77a4a9896131baaa2c441f9186c5a` |
-| 12 | `theorem` | [tail_error](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffFourSource.lean/declarations/tail-error.md) | 174 | `result-track:93d06a9a72d366b1065e0356fc6fa41ae370e5c2800229844e1db4141bbec8f9` |
-| 13 | `theorem` | [source_model_error](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffFourSource.lean/declarations/source-model-error.md) | 182 | `result-track:304212fb790c67a02c450333dbfc86a9ff77f869d54381ba3e8306f06ca383a0` |
+| 1 | `def` | [Band](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffFourSource.lean/declarations/band.md) | 24 | `declaration-track:9bdf6f83eadcc702522bc9b5d9b41d34f7aac4ebdd7ef37efc16afa82daef5bf` |
+| 2 | `def` | [coefficient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffFourSource.lean/declarations/coefficient.md) | 26 | `declaration-track:134cc9a137e36eedb14724d8bba1d822ce1a8d9fbdbd4e5fd5368f51824522d9` |
+| 3 | `def` | [model](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffFourSource.lean/declarations/model.md) | 30 | `declaration-track:fb872e8ef163e2bf01313d98f230c403790b4180d21607fc0fb0fbc37fee9cb3` |
+| 4 | `lemma` | [negative_shift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffFourSource.lean/declarations/negative-shift.md) | 34 | `result-track:61bc8723095c38a9350262a9d4785a38061f70f51749ab78ed53db138ec9c9d9` |
+| 5 | `theorem` | [finiteModel_four](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffFourSource.lean/declarations/finitemodel-four.md) | 39 | `result-track:9ef826d33638160fdd37e99002529262e74268c0c68c38f580d94b8705dacf98` |
+| 6 | `lemma` | [band_distance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffFourSource.lean/declarations/band-distance.md) | 55 | `result-track:03aba50bccee200be4a3418ded1cd7c77d083c10412be34b03af68f6e28a5242` |
+| 7 | `lemma` | [band_norms](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffFourSource.lean/declarations/band-norms.md) | 63 | `result-track:3ea236e89cfb042f5473dbdf4c584867f002b23d3cb4218c884625a5a6b388e8` |
+| 8 | `lemma` | [coefficient_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffFourSource.lean/declarations/coefficient-norm.md) | 72 | `result-track:99a529837f1e9ac99a0e164a2985d92dceab727a324b0f5971c7c269657ed3d0` |
+| 9 | `theorem` | [model_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffFourSource.lean/declarations/model-error.md) | 103 | `result-track:fe1ce6f26e8566b80322654b982d9fdebd3e2da4ce574a9b6fcb02a451a15f55` |
+| 10 | `lemma` | [multiplier_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffFourSource.lean/declarations/multiplier-bound.md) | 123 | `result-track:9368b5288a3a11891b8a72438209044d8e8f54cff19a6cd8caf041f596cd8643` |
+| 11 | `lemma` | [cutoff_four_weight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffFourSource.lean/declarations/cutoff-four-weight.md) | 164 | `result-track:6408233ca63d6b5b11540b65ed3175d8cbd77a4a9896131baaa2c441f9186c5a` |
+| 12 | `theorem` | [tail_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffFourSource.lean/declarations/tail-error.md) | 174 | `result-track:93d06a9a72d366b1065e0356fc6fa41ae370e5c2800229844e1db4141bbec8f9` |
+| 13 | `theorem` | [source_model_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripCutoffFourSource.lean/declarations/source-model-error.md) | 182 | `result-track:304212fb790c67a02c450333dbfc86a9ff77f869d54381ba3e8306f06ca383a0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ULiftNamespacedPublic.lean/index.md) · [Full source](../../../../GeneralTopology/ULiftNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ULiftNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ULiftNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [uliftFunctor](../../../../GeneralTopology/ULiftNamespacedPublic.lean/declarations/uliftfunctor.md) | 41 | `declaration-track:96e9a43b77d6d07f398773ba885321ea76e36913ee8bfdd425524351c21e230d` |
-| 2 | `def` | [uliftFunctorObjHomeo](../../../../GeneralTopology/ULiftNamespacedPublic.lean/declarations/uliftfunctorobjhomeo.md) | 46 | `declaration-track:902aaf942748a2c148e569e8aaa48e15cba23136f5a836d3fefad003bd836a9b` |
-| 3 | `lemma` | [uliftFunctorObjHomeo_naturality_apply](../../../../GeneralTopology/ULiftNamespacedPublic.lean/declarations/uliftfunctorobjhomeo-naturality-apply.md) | 50 | `result-track:6c00f72777879fb561914c3cf090e0a8c2edb941f5ebf5edfb6940f03f8698fe` |
-| 4 | `lemma` | [uliftFunctorObjHomeo_symm_naturality_apply](../../../../GeneralTopology/ULiftNamespacedPublic.lean/declarations/uliftfunctorobjhomeo-symm-naturality-apply.md) | 55 | `result-track:ea2efa961dac915cca018a321b8ce4cb83193a76bea225e74eac14687ce14c6f` |
-| 5 | `def` | [uliftFunctorCompForgetIso](../../../../GeneralTopology/ULiftNamespacedPublic.lean/declarations/uliftfunctorcompforgetiso.md) | 64 | `declaration-track:014652c5257c4e31cb179f3ad438388e1b8dd001789e1baa1ea35aa176cd57ff` |
-| 6 | `def` | [uliftFunctorFullyFaithful](../../../../GeneralTopology/ULiftNamespacedPublic.lean/declarations/uliftfunctorfullyfaithful.md) | 69 | `declaration-track:cd759bf1df5ed75429df7c97d09e9be339e9805682bec66bada1e4a658e52db8` |
-| 7 | `instance` | [(anonymous)](../../../../GeneralTopology/ULiftNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 72 | `declaration-track:96b65de081c3d7b1ba5b85d088c7dfed88e08739dd0c04850da03a63d8558ac1` |
-| 8 | `instance` | [(anonymous)](../../../../GeneralTopology/ULiftNamespacedPublic.lean/declarations/instance.md) | 75 | `declaration-track:8cb53030bc107828017e5c346ed7922de4103801f6ac2961b2675f39267a0f62` |
-| 9 | `instance` | [(anonymous)](../../../../GeneralTopology/ULiftNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 81 | `declaration-track:9adfdb99f447107d7ecca9d7001407a96e6d4bb37f50e042c9eef68b3055a674` |
-| 10 | `instance` | [(anonymous)](../../../../GeneralTopology/ULiftNamespacedPublic.lean/declarations/instance-source-edition-4.md) | 99 | `declaration-track:d7b35e388b33f7bda9b9c79ff7c2b05786b8ad2154fdd489cc24416f092e4834` |
+| 1 | `def` | [uliftFunctor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ULiftNamespacedPublic.lean/declarations/uliftfunctor.md) | 41 | `declaration-track:96e9a43b77d6d07f398773ba885321ea76e36913ee8bfdd425524351c21e230d` |
+| 2 | `def` | [uliftFunctorObjHomeo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ULiftNamespacedPublic.lean/declarations/uliftfunctorobjhomeo.md) | 46 | `declaration-track:902aaf942748a2c148e569e8aaa48e15cba23136f5a836d3fefad003bd836a9b` |
+| 3 | `lemma` | [uliftFunctorObjHomeo_naturality_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ULiftNamespacedPublic.lean/declarations/uliftfunctorobjhomeo-naturality-apply.md) | 50 | `result-track:6c00f72777879fb561914c3cf090e0a8c2edb941f5ebf5edfb6940f03f8698fe` |
+| 4 | `lemma` | [uliftFunctorObjHomeo_symm_naturality_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ULiftNamespacedPublic.lean/declarations/uliftfunctorobjhomeo-symm-naturality-apply.md) | 55 | `result-track:ea2efa961dac915cca018a321b8ce4cb83193a76bea225e74eac14687ce14c6f` |
+| 5 | `def` | [uliftFunctorCompForgetIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ULiftNamespacedPublic.lean/declarations/uliftfunctorcompforgetiso.md) | 64 | `declaration-track:014652c5257c4e31cb179f3ad438388e1b8dd001789e1baa1ea35aa176cd57ff` |
+| 6 | `def` | [uliftFunctorFullyFaithful](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ULiftNamespacedPublic.lean/declarations/uliftfunctorfullyfaithful.md) | 69 | `declaration-track:cd759bf1df5ed75429df7c97d09e9be339e9805682bec66bada1e4a658e52db8` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ULiftNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 72 | `declaration-track:96b65de081c3d7b1ba5b85d088c7dfed88e08739dd0c04850da03a63d8558ac1` |
+| 8 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ULiftNamespacedPublic.lean/declarations/instance.md) | 75 | `declaration-track:8cb53030bc107828017e5c346ed7922de4103801f6ac2961b2675f39267a0f62` |
+| 9 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ULiftNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 81 | `declaration-track:9adfdb99f447107d7ecca9d7001407a96e6d4bb37f50e042c9eef68b3055a674` |
+| 10 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ULiftNamespacedPublic.lean/declarations/instance-source-edition-4.md) | 99 | `declaration-track:d7b35e388b33f7bda9b9c79ff7c2b05786b8ad2154fdd489cc24416f092e4834` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

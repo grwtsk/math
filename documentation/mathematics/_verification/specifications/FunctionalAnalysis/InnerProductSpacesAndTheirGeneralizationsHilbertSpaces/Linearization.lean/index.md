@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/Linearization.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/Linearization.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/Linearization.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/Linearization.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,13 +60,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [LinearizationCertificate](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/Linearization.lean/declarations/linearizationcertificate.md) | 19 | `declaration-track:98103e3b724b572b97639c26de68a6f1ada0c99109a7b1a99bc8b38bf276693b` |
-| 2 | `structure` | [LinearizationIntertwining](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/Linearization.lean/declarations/linearizationintertwining.md) | 47 | `declaration-track:8fce503a79be712a22b1a864ab0edf9b3032ed0517b7a90833161157d5c48214` |
-| 3 | `theorem` | [apply](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/Linearization.lean/declarations/apply.md) | 75 | `result-track:0040c528307d53b379ad45acd0a78e2cb0bbbde0e52e6c9bb8591b76cfe01473` |
-| 4 | `structure` | [FiniteLyapunovOperatorCertificate](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/Linearization.lean/declarations/finitelyapunovoperatorcertificate.md) | 93 | `declaration-track:4bd86f6fce7c00a3578b749738b057fe8a3ae1bc2553b957265068793a6ee0ca` |
-| 5 | `theorem` | [decreased_energy_with_margin](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/Linearization.lean/declarations/decreased-energy-with-margin.md) | 125 | `result-track:cca038070a76dfb6b56aabdf9fc765aa847c771011f375aa1cf35b646417be48` |
-| 6 | `structure` | [VerifiedNumericalChecker](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/Linearization.lean/declarations/verifiednumericalchecker.md) | 147 | `declaration-track:6ef926ae1259156803d06fc2fadde9c326e18bbdc0e9d9aae0b23f5a780744da` |
-| 7 | `theorem` | [proves_after_acceptance](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/Linearization.lean/declarations/proves-after-acceptance.md) | 155 | `result-track:3ad77d7137b84c29038e84b2d208e29622a33e32ef8eaf29051a1beb9447abf7` |
+| 1 | `structure` | [LinearizationCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/Linearization.lean/declarations/linearizationcertificate.md) | 19 | `declaration-track:98103e3b724b572b97639c26de68a6f1ada0c99109a7b1a99bc8b38bf276693b` |
+| 2 | `structure` | [LinearizationIntertwining](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/Linearization.lean/declarations/linearizationintertwining.md) | 47 | `declaration-track:8fce503a79be712a22b1a864ab0edf9b3032ed0517b7a90833161157d5c48214` |
+| 3 | `theorem` | [apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/Linearization.lean/declarations/apply.md) | 75 | `result-track:0040c528307d53b379ad45acd0a78e2cb0bbbde0e52e6c9bb8591b76cfe01473` |
+| 4 | `structure` | [FiniteLyapunovOperatorCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/Linearization.lean/declarations/finitelyapunovoperatorcertificate.md) | 93 | `declaration-track:4bd86f6fce7c00a3578b749738b057fe8a3ae1bc2553b957265068793a6ee0ca` |
+| 5 | `theorem` | [decreased_energy_with_margin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/Linearization.lean/declarations/decreased-energy-with-margin.md) | 125 | `result-track:cca038070a76dfb6b56aabdf9fc765aa847c771011f375aa1cf35b646417be48` |
+| 6 | `structure` | [VerifiedNumericalChecker](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/Linearization.lean/declarations/verifiednumericalchecker.md) | 147 | `declaration-track:6ef926ae1259156803d06fc2fadde9c326e18bbdc0e9d9aae0b23f5a780744da` |
+| 7 | `theorem` | [proves_after_acceptance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/Linearization.lean/declarations/proves-after-acceptance.md) | 155 | `result-track:3ad77d7137b84c29038e84b2d208e29622a33e32ef8eaf29051a1beb9447abf7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/AB74a1710b270.lean/index.md) · [Full source](../../../../Combinatorics/AB74a1710b270.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AB74a1710b270.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AB74a1710b270.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,7 +61,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [liftProjectionOrbit_unique](../../../../Combinatorics/AB74a1710b270.lean/declarations/liftprojectionorbit-unique.md) | 17 | `result-track:fb05f3642a2df23daa930036707c8d17a6f787ab75c66b5f4e017e855b5fe761` |
+| 1 | `theorem` | [liftProjectionOrbit_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AB74a1710b270.lean/declarations/liftprojectionorbit-unique.md) | 17 | `result-track:fb05f3642a2df23daa930036707c8d17a6f787ab75c66b5f4e017e855b5fe761` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

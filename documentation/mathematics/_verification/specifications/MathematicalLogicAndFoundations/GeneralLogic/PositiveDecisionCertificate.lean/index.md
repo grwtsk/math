@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PositiveDecisionCertificate.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PositiveDecisionCertificate.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PositiveDecisionCertificate.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PositiveDecisionCertificate.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.DecisionCertificate`](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesDecisionCertificate.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.DecisionCertificate`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesDecisionCertificate.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PositiveDecisionCertificate.lean/declarations/example-source-edition-5.md) | 9 | `declaration-track:f13121dd56fdb09629d2d16b5e1094b043212306d95877286656289018b555e4` |
-| 2 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PositiveDecisionCertificate.lean/declarations/example-source-edition-4.md) | 14 | `declaration-track:e20ba51f6071899436d6c317c1fd8e8b04e71ad30852163e19bbe58ea97f4999` |
-| 3 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PositiveDecisionCertificate.lean/declarations/example.md) | 22 | `declaration-track:1a07dd4692f4c62f84c8021806df3f79e97ef3bd2b111e63efce47759b5bb134` |
-| 4 | `def` | [boundedPremise](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PositiveDecisionCertificate.lean/declarations/boundedpremise.md) | 29 | `declaration-track:9134f9de3bfb11a0dd0f4aa3afe3957bbd18fcdbe202b92d0afebcce99f22a6c` |
-| 5 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PositiveDecisionCertificate.lean/declarations/example-source-edition-3.md) | 33 | `declaration-track:b3ac4204ff35056e32a25e1c9fe7cc3747024ca70816215d809dfb8c04ca5d68` |
-| 6 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PositiveDecisionCertificate.lean/declarations/example-source-edition-2.md) | 41 | `declaration-track:22b89413b39518dd945a2cd0c59d2b2513a322570f5e88d6b7affd701f2e7b19` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PositiveDecisionCertificate.lean/declarations/example-source-edition-5.md) | 9 | `declaration-track:f13121dd56fdb09629d2d16b5e1094b043212306d95877286656289018b555e4` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PositiveDecisionCertificate.lean/declarations/example-source-edition-4.md) | 14 | `declaration-track:e20ba51f6071899436d6c317c1fd8e8b04e71ad30852163e19bbe58ea97f4999` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PositiveDecisionCertificate.lean/declarations/example.md) | 22 | `declaration-track:1a07dd4692f4c62f84c8021806df3f79e97ef3bd2b111e63efce47759b5bb134` |
+| 4 | `def` | [boundedPremise](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PositiveDecisionCertificate.lean/declarations/boundedpremise.md) | 29 | `declaration-track:9134f9de3bfb11a0dd0f4aa3afe3957bbd18fcdbe202b92d0afebcce99f22a6c` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PositiveDecisionCertificate.lean/declarations/example-source-edition-3.md) | 33 | `declaration-track:b3ac4204ff35056e32a25e1c9fe7cc3747024ca70816215d809dfb8c04ca5d68` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PositiveDecisionCertificate.lean/declarations/example-source-edition-2.md) | 41 | `declaration-track:22b89413b39518dd945a2cd0c59d2b2513a322570f5e88d6b7affd701f2e7b19` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

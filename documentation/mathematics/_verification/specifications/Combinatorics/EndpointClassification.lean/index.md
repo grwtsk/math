@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/EndpointClassification.lean/index.md) · [Full source](../../../../Combinatorics/EndpointClassification.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EndpointClassification.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EndpointClassification.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,8 +47,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `Folder.Carrier.Bit` — import line 19; external provider; requires a separately pinned dependency.
-- [Endpoint Labels](../../../../MathematicalLogicAndFoundations/GeneralLogic/EndpointLabels.lean/index.md) — import line 21; pinned internal source present.
-- [Last Entry](../../../../Combinatorics/LastEntry.lean/index.md) — import line 22; pinned internal source present.
+- [Endpoint Labels](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/EndpointLabels.lean/index.md) — import line 21; pinned internal source present.
+- [Last Entry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/LastEntry.lean/index.md) — import line 22; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [endpointClassOfBits](../../../../Combinatorics/EndpointClassification.lean/declarations/endpointclassofbits.md) | 44 | `declaration-track:eea1a4c982838c2f767a4527d80e51cdd93485a4393d1d775be0b46eb5ea6e39` |
-| 2 | `theorem` | [endpointClass_depends_only_on_endpoints](../../../../Combinatorics/EndpointClassification.lean/declarations/endpointclass-depends-only-on-endpoints.md) | 49 | `result-track:c09fb38acf0f1929bc0e1f07d34d30c2ed8bc42ea27217ec6c223fb2d08d2ca2` |
+| 1 | `def` | [endpointClassOfBits](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EndpointClassification.lean/declarations/endpointclassofbits.md) | 44 | `declaration-track:eea1a4c982838c2f767a4527d80e51cdd93485a4393d1d775be0b46eb5ea6e39` |
+| 2 | `theorem` | [endpointClass_depends_only_on_endpoints](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EndpointClassification.lean/declarations/endpointclass-depends-only-on-endpoints.md) | 49 | `result-track:c09fb38acf0f1929bc0e1f07d34d30c2ed8bc42ea27217ec6c223fb2d08d2ca2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

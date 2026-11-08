@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/EisensteinSeriesBasicNamespaced.lean/index.md) · [Full source](../../../../NumberTheory/EisensteinSeriesBasicNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/EisensteinSeriesBasicNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/EisensteinSeriesBasicNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [eisensteinSeries_MF](../../../../NumberTheory/EisensteinSeriesBasicNamespaced.lean/declarations/eisensteinseries-mf.md) | 38 | `declaration-track:a50808d72a9fbaf42285efcd4cd6d5895dd4e4fc0ee14e755c36297311a7f147` |
+| 1 | `def` | [eisensteinSeries_MF](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/EisensteinSeriesBasicNamespaced.lean/declarations/eisensteinseries-mf.md) | 38 | `declaration-track:a50808d72a9fbaf42285efcd4cd6d5895dd4e4fc0ee14e755c36297311a7f147` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

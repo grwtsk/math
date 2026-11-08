@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/DirichletConvolution.lean/index.md) · [Full source](../../../../Combinatorics/DirichletConvolution.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DirichletConvolution.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DirichletConvolution.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [dirichletConv](../../../../Combinatorics/DirichletConvolution.lean/declarations/dirichletconv.md) | 16 | `declaration-track:90ff405b6842ebddd268f4b0699b2ebcdcdd9de24286299440f3849befe77f85` |
-| 2 | `def` | [dirichletEpsilon](../../../../Combinatorics/DirichletConvolution.lean/declarations/dirichletepsilon.md) | 21 | `declaration-track:d3c347a80f7b0439c0c16469e282ec2138e8b2aa9e8b1f9d5851e655e041ccce` |
-| 3 | `theorem` | [dirichletConv_apply](../../../../Combinatorics/DirichletConvolution.lean/declarations/dirichletconv-apply.md) | 25 | `result-track:e71f10d71a0f54f779473d7d28456740b0df612bcf88ce45ff443105f5b81f93` |
-| 4 | `theorem` | [dirichletEpsilon_one](../../../../Combinatorics/DirichletConvolution.lean/declarations/dirichletepsilon-one.md) | 33 | `result-track:d6739f01f515589c04bcabc9739c16699d7b13c55960e6a871f0ebd31ae543b7` |
-| 5 | `theorem` | [dirichletEpsilon_of_ne_one](../../../../Combinatorics/DirichletConvolution.lean/declarations/dirichletepsilon-of-ne-one.md) | 38 | `result-track:1e9120aca1f1a1400f3d6a297638526f9439202a80c09801c7207ca09721d8d0` |
-| 6 | `theorem` | [dirichletConv_epsilon_left_at_one](../../../../Combinatorics/DirichletConvolution.lean/declarations/dirichletconv-epsilon-left-at-one.md) | 45 | `result-track:c60d4cabf06fd19d11aa911bd3210d9a1d3aad39ab7c87d84382f3f2bab0f135` |
+| 1 | `def` | [dirichletConv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DirichletConvolution.lean/declarations/dirichletconv.md) | 16 | `declaration-track:90ff405b6842ebddd268f4b0699b2ebcdcdd9de24286299440f3849befe77f85` |
+| 2 | `def` | [dirichletEpsilon](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DirichletConvolution.lean/declarations/dirichletepsilon.md) | 21 | `declaration-track:d3c347a80f7b0439c0c16469e282ec2138e8b2aa9e8b1f9d5851e655e041ccce` |
+| 3 | `theorem` | [dirichletConv_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DirichletConvolution.lean/declarations/dirichletconv-apply.md) | 25 | `result-track:e71f10d71a0f54f779473d7d28456740b0df612bcf88ce45ff443105f5b81f93` |
+| 4 | `theorem` | [dirichletEpsilon_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DirichletConvolution.lean/declarations/dirichletepsilon-one.md) | 33 | `result-track:d6739f01f515589c04bcabc9739c16699d7b13c55960e6a871f0ebd31ae543b7` |
+| 5 | `theorem` | [dirichletEpsilon_of_ne_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DirichletConvolution.lean/declarations/dirichletepsilon-of-ne-one.md) | 38 | `result-track:1e9120aca1f1a1400f3d6a297638526f9439202a80c09801c7207ca09721d8d0` |
+| 6 | `theorem` | [dirichletConv_epsilon_left_at_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DirichletConvolution.lean/declarations/dirichletconv-epsilon-left-at-one.md) | 45 | `result-track:c60d4cabf06fd19d11aa911bd3210d9a1d3aad39ab7c87d84382f3f2bab0f135` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

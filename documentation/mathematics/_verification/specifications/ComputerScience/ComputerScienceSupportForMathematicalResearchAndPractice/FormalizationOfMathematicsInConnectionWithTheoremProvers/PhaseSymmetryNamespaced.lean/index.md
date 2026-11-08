@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PhaseSymmetryNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PhaseSymmetryNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PhaseSymmetryNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PhaseSymmetryNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [phase37_mirror](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PhaseSymmetryNamespaced.lean/declarations/phase37-mirror.md) | 18 | `result-track:a8301bf45941bfd41dc7d96606e595e0305816cb89beb1d141cf81a13fa5b3eb` |
-| 2 | `theorem` | [phase37_weight_matches_phase23](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PhaseSymmetryNamespaced.lean/declarations/phase37-weight-matches-phase23.md) | 22 | `result-track:01256cf0498c55a87b7cc6dfe559e2a35588c57349e1fd6bcb9eeee47077268e` |
-| 3 | `theorem` | [central_phase_fixed](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PhaseSymmetryNamespaced.lean/declarations/central-phase-fixed.md) | 26 | `result-track:b1d9fe827b62505032abb84b7840f5b66578ab42e6dfe23696cb922b8a67456c` |
+| 1 | `theorem` | [phase37_mirror](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PhaseSymmetryNamespaced.lean/declarations/phase37-mirror.md) | 18 | `result-track:a8301bf45941bfd41dc7d96606e595e0305816cb89beb1d141cf81a13fa5b3eb` |
+| 2 | `theorem` | [phase37_weight_matches_phase23](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PhaseSymmetryNamespaced.lean/declarations/phase37-weight-matches-phase23.md) | 22 | `result-track:01256cf0498c55a87b7cc6dfe559e2a35588c57349e1fd6bcb9eeee47077268e` |
+| 3 | `theorem` | [central_phase_fixed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PhaseSymmetryNamespaced.lean/declarations/central-phase-fixed.md) | 26 | `result-track:b1d9fe827b62505032abb84b7840f5b66578ab42e6dfe23696cb922b8a67456c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

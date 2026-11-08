@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt01InversePowerBoundSharp.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt01InversePowerBoundSharp.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt01InversePowerBoundSharp.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt01InversePowerBoundSharp.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [inverse_power_bound_sharp](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt01InversePowerBoundSharp.lean/declarations/inverse-power-bound-sharp.md) | 16 | `result-track:35314e0c768715ea0c6b23a80c4f872b73b1dcd88f7d7c43b61403648d167077` |
-| 2 | `theorem` | [positiveEndpoint_error_sharp](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt01InversePowerBoundSharp.lean/declarations/positiveendpoint-error-sharp.md) | 25 | `result-track:7ac44413423c6dc54cac1e45cdc33854d26d2f7d7c26b4326b8111c4119fe969` |
-| 3 | `theorem` | [reflectedEndpoint_bound_sharp](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt01InversePowerBoundSharp.lean/declarations/reflectedendpoint-bound-sharp.md) | 57 | `result-track:b98b4921ad700f7efd09754b807cc897544eda7d3ab9e95918bb70566d195e33` |
-| 4 | `theorem` | [negative_endpoint_envelope](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt01InversePowerBoundSharp.lean/declarations/negative-endpoint-envelope.md) | 90 | `result-track:328d4748328bd30d0814eca71abf273402b4e6caa939eadbc35469aad39ab52b` |
-| 5 | `theorem` | [actual_normalization_deficit_544](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt01InversePowerBoundSharp.lean/declarations/actual-normalization-deficit-544.md) | 101 | `result-track:616625421c45194e97606f0fc89cc1c25ba6178e55b49c7caf65cca9b43dfe0e` |
-| 6 | `def` | [sharpError](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt01InversePowerBoundSharp.lean/declarations/sharperror.md) | 107 | `declaration-track:59944cc6073084a49231f417a7a367a1543a75421bebb32f2f145ee5b6700650` |
-| 7 | `theorem` | [actual_source_ratio_sharp](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt01InversePowerBoundSharp.lean/declarations/actual-source-ratio-sharp.md) | 110 | `result-track:7f0b43f0ce59add667bf07f752d1e1ea14bc5274f11fb50c314938549b4aef45` |
+| 1 | `theorem` | [inverse_power_bound_sharp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt01InversePowerBoundSharp.lean/declarations/inverse-power-bound-sharp.md) | 16 | `result-track:35314e0c768715ea0c6b23a80c4f872b73b1dcd88f7d7c43b61403648d167077` |
+| 2 | `theorem` | [positiveEndpoint_error_sharp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt01InversePowerBoundSharp.lean/declarations/positiveendpoint-error-sharp.md) | 25 | `result-track:7ac44413423c6dc54cac1e45cdc33854d26d2f7d7c26b4326b8111c4119fe969` |
+| 3 | `theorem` | [reflectedEndpoint_bound_sharp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt01InversePowerBoundSharp.lean/declarations/reflectedendpoint-bound-sharp.md) | 57 | `result-track:b98b4921ad700f7efd09754b807cc897544eda7d3ab9e95918bb70566d195e33` |
+| 4 | `theorem` | [negative_endpoint_envelope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt01InversePowerBoundSharp.lean/declarations/negative-endpoint-envelope.md) | 90 | `result-track:328d4748328bd30d0814eca71abf273402b4e6caa939eadbc35469aad39ab52b` |
+| 5 | `theorem` | [actual_normalization_deficit_544](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt01InversePowerBoundSharp.lean/declarations/actual-normalization-deficit-544.md) | 101 | `result-track:616625421c45194e97606f0fc89cc1c25ba6178e55b49c7caf65cca9b43dfe0e` |
+| 6 | `def` | [sharpError](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt01InversePowerBoundSharp.lean/declarations/sharperror.md) | 107 | `declaration-track:59944cc6073084a49231f417a7a367a1543a75421bebb32f2f145ee5b6700650` |
+| 7 | `theorem` | [actual_source_ratio_sharp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Attempt01InversePowerBoundSharp.lean/declarations/actual-source-ratio-sharp.md) | 110 | `result-track:7f0b43f0ce59add667bf07f752d1e1ea14bc5274f11fb50c314938549b4aef45` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/TentPairing.lean/index.md) · [Full source](../../../../MeasureAndIntegration/TentPairing.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentPairing.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentPairing.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Complex.TentMellinInversion`](../../../../MeasureAndIntegration/TentMellinInversion.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.TentMellinInversion`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentMellinInversion.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.NumberTheory.LSeries.Basic` — import line 5; external provider; requires a separately pinned dependency.
 - `Mathlib.MeasureTheory.Integral.DominatedConvergence` — import line 6; external provider; requires a separately pinned dependency.
 
@@ -59,15 +59,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [pairedTerm](../../../../MeasureAndIntegration/TentPairing.lean/declarations/pairedterm.md) | 32 | `declaration-track:6b10d08eb6ff761b2201e3b5bc343c35ecaf96db43bf614e7c78510d221ecb4d` |
-| 2 | `theorem` | [term_norm_on_rightLine](../../../../MeasureAndIntegration/TentPairing.lean/declarations/term-norm-on-rightline.md) | 36 | `result-track:bd3811cb819772f4ecc2fce1d2f8a7ff298e366eb6ba7a85e4a61deebc4be80b` |
-| 3 | `theorem` | [continuous_term_rightLine](../../../../MeasureAndIntegration/TentPairing.lean/declarations/continuous-term-rightline.md) | 40 | `result-track:5d476ae04fce668572c73a4ef68d04bd8ba430915fc88f1f7e09cc35dda58fd3` |
-| 4 | `theorem` | [norm_pairedTerm_le](../../../../MeasureAndIntegration/TentPairing.lean/declarations/norm-pairedterm-le.md) | 50 | `result-track:4c2b5ba53ad8697b9fca19fe4e886a5bbcd13496faec50cd4f11c8712625ebef` |
-| 5 | `theorem` | [integrable_pairedTerm](../../../../MeasureAndIntegration/TentPairing.lean/declarations/integrable-pairedterm.md) | 59 | `result-track:930cd6da324140b39bf64bdf6043820d5d0cfa8ac908a372de99dae4339ae8d2` |
-| 6 | `theorem` | [integral_norm_pairedTerm_le](../../../../MeasureAndIntegration/TentPairing.lean/declarations/integral-norm-pairedterm-le.md) | 68 | `result-track:0d857d6931708b248e9dc0607efdcd290a8e0dc166df14c4d6b1d7e7a9b80664` |
-| 7 | `theorem` | [summable_integral_norm_pairedTerm](../../../../MeasureAndIntegration/TentPairing.lean/declarations/summable-integral-norm-pairedterm.md) | 79 | `result-track:5b98aaabb46024b8f3fe1c4fd03260d98e2369b7f136d6adee2ec731967ac8de` |
-| 8 | `theorem` | [pairedTerm_inversion](../../../../MeasureAndIntegration/TentPairing.lean/declarations/pairedterm-inversion.md) | 88 | `result-track:f3a271e3271881ee2dcda32158908ab9c85d7f018e829794af5543068eaca323` |
-| 9 | `theorem` | [dirichlet_tent_pairing](../../../../MeasureAndIntegration/TentPairing.lean/declarations/dirichlet-tent-pairing.md) | 111 | `result-track:e58b61c67a7be6cbecd49c04d99ab3589e0a7418393149e4b3b08355afc13932` |
+| 1 | `def` | [pairedTerm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentPairing.lean/declarations/pairedterm.md) | 32 | `declaration-track:6b10d08eb6ff761b2201e3b5bc343c35ecaf96db43bf614e7c78510d221ecb4d` |
+| 2 | `theorem` | [term_norm_on_rightLine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentPairing.lean/declarations/term-norm-on-rightline.md) | 36 | `result-track:bd3811cb819772f4ecc2fce1d2f8a7ff298e366eb6ba7a85e4a61deebc4be80b` |
+| 3 | `theorem` | [continuous_term_rightLine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentPairing.lean/declarations/continuous-term-rightline.md) | 40 | `result-track:5d476ae04fce668572c73a4ef68d04bd8ba430915fc88f1f7e09cc35dda58fd3` |
+| 4 | `theorem` | [norm_pairedTerm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentPairing.lean/declarations/norm-pairedterm-le.md) | 50 | `result-track:4c2b5ba53ad8697b9fca19fe4e886a5bbcd13496faec50cd4f11c8712625ebef` |
+| 5 | `theorem` | [integrable_pairedTerm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentPairing.lean/declarations/integrable-pairedterm.md) | 59 | `result-track:930cd6da324140b39bf64bdf6043820d5d0cfa8ac908a372de99dae4339ae8d2` |
+| 6 | `theorem` | [integral_norm_pairedTerm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentPairing.lean/declarations/integral-norm-pairedterm-le.md) | 68 | `result-track:0d857d6931708b248e9dc0607efdcd290a8e0dc166df14c4d6b1d7e7a9b80664` |
+| 7 | `theorem` | [summable_integral_norm_pairedTerm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentPairing.lean/declarations/summable-integral-norm-pairedterm.md) | 79 | `result-track:5b98aaabb46024b8f3fe1c4fd03260d98e2369b7f136d6adee2ec731967ac8de` |
+| 8 | `theorem` | [pairedTerm_inversion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentPairing.lean/declarations/pairedterm-inversion.md) | 88 | `result-track:f3a271e3271881ee2dcda32158908ab9c85d7f018e829794af5543068eaca323` |
+| 9 | `theorem` | [dirichlet_tent_pairing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentPairing.lean/declarations/dirichlet-tent-pairing.md) | 111 | `result-track:e58b61c67a7be6cbecd49c04d99ab3589e0a7418393149e4b3b08355afc13932` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

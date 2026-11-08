@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Strategy.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Strategy.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Strategy.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Strategy.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [I₁](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Strategy.lean/declarations/i.md) | 13 | `declaration-track:6a79f3ffeec149a020cd0b1e54b3608da12c69f52a9a2330914878b4030e68b4` |
-| 2 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Strategy.lean/declarations/example.md) | 17 | `declaration-track:276cbd0bca52faed50361ecfc7ff2f9f6967724dce57f67550682323a9436dab` |
-| 3 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Strategy.lean/declarations/example-source-edition-3.md) | 20 | `declaration-track:8d32cb0e1fe4cad4dddd20fd681aff1878fa81cebe3de917ca5ef3e7d21d57c1` |
-| 4 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Strategy.lean/declarations/example-source-edition-4.md) | 23 | `declaration-track:acc61df674747cba6f76cb5923a259ef9942ffb426b20bd0f1935d1909fc2590` |
-| 5 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Strategy.lean/declarations/example-source-edition-2.md) | 30 | `declaration-track:712c531b3cc18718ec0d7bfc938416de31a46adcb7aac476c818b91338af7a6f` |
-| 6 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Strategy.lean/declarations/example-source-edition-5.md) | 37 | `declaration-track:d1640949b640be15c75606018cf5474078cb34a640add0b47c04c6fd7cf11192` |
+| 1 | `inductive` | [I₁](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Strategy.lean/declarations/i.md) | 13 | `declaration-track:6a79f3ffeec149a020cd0b1e54b3608da12c69f52a9a2330914878b4030e68b4` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Strategy.lean/declarations/example.md) | 17 | `declaration-track:276cbd0bca52faed50361ecfc7ff2f9f6967724dce57f67550682323a9436dab` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Strategy.lean/declarations/example-source-edition-3.md) | 20 | `declaration-track:8d32cb0e1fe4cad4dddd20fd681aff1878fa81cebe3de917ca5ef3e7d21d57c1` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Strategy.lean/declarations/example-source-edition-4.md) | 23 | `declaration-track:acc61df674747cba6f76cb5923a259ef9942ffb426b20bd0f1935d1909fc2590` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Strategy.lean/declarations/example-source-edition-2.md) | 30 | `declaration-track:712c531b3cc18718ec0d7bfc938416de31a46adcb7aac476c818b91338af7a6f` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Strategy.lean/declarations/example-source-edition-5.md) | 37 | `declaration-track:d1640949b640be15c75606018cf5474078cb34a640add0b47c04c6fd7cf11192` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

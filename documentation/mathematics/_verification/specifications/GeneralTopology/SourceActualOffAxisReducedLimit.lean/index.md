@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SourceActualOffAxisReducedLimit.lean/index.md) · [Full source](../../../../GeneralTopology/SourceActualOffAxisReducedLimit.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceActualOffAxisReducedLimit.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceActualOffAxisReducedLimit.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actualCriticalZeroHead_anyHeight_tendsto_zero](../../../../GeneralTopology/SourceActualOffAxisReducedLimit.lean/declarations/actualcriticalzerohead-anyheight-tendsto-zero.md) | 24 | `result-track:69f23bc11dc2aa65b7e6a6bbecfce85f2acbd8b924110b8ca9462cce8e5ee830` |
-| 2 | `theorem` | [actualSourceQuadraticValue_reducedOffAxis_norm_bound](../../../../GeneralTopology/SourceActualOffAxisReducedLimit.lean/declarations/actualsourcequadraticvalue-reducedoffaxis-norm-bound.md) | 34 | `result-track:6c037b387f1a02fcc140e93abf71f7274908e43a1dd6b9c96056bb0613f71020` |
-| 3 | `theorem` | [actualSourceQuadraticValue_reducedOffAxis_tendsto_zero](../../../../GeneralTopology/SourceActualOffAxisReducedLimit.lean/declarations/actualsourcequadraticvalue-reducedoffaxis-tendsto-zero.md) | 61 | `result-track:39b436dff0781db28c0499a5af6147153a57b85b6b5db8c9ec149c6ad0f4441e` |
-| 4 | `theorem` | [actualResidual_reducedOffAxis_signed_error_bound](../../../../GeneralTopology/SourceActualOffAxisReducedLimit.lean/declarations/actualresidual-reducedoffaxis-signed-error-bound.md) | 77 | `result-track:6a97ea8a141cb3976f314e92321060c553bf5dc7c9d9198cf7a89d146eb586a9` |
-| 5 | `theorem` | [actualResidual_reducedOffAxis_signed_error_tendsto](../../../../GeneralTopology/SourceActualOffAxisReducedLimit.lean/declarations/actualresidual-reducedoffaxis-signed-error-tendsto.md) | 99 | `result-track:d073c28899d81edf6817e6c5269e7066c86326b8a57ec241fb3ebe626b9eee88` |
+| 1 | `theorem` | [actualCriticalZeroHead_anyHeight_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceActualOffAxisReducedLimit.lean/declarations/actualcriticalzerohead-anyheight-tendsto-zero.md) | 24 | `result-track:69f23bc11dc2aa65b7e6a6bbecfce85f2acbd8b924110b8ca9462cce8e5ee830` |
+| 2 | `theorem` | [actualSourceQuadraticValue_reducedOffAxis_norm_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceActualOffAxisReducedLimit.lean/declarations/actualsourcequadraticvalue-reducedoffaxis-norm-bound.md) | 34 | `result-track:6c037b387f1a02fcc140e93abf71f7274908e43a1dd6b9c96056bb0613f71020` |
+| 3 | `theorem` | [actualSourceQuadraticValue_reducedOffAxis_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceActualOffAxisReducedLimit.lean/declarations/actualsourcequadraticvalue-reducedoffaxis-tendsto-zero.md) | 61 | `result-track:39b436dff0781db28c0499a5af6147153a57b85b6b5db8c9ec149c6ad0f4441e` |
+| 4 | `theorem` | [actualResidual_reducedOffAxis_signed_error_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceActualOffAxisReducedLimit.lean/declarations/actualresidual-reducedoffaxis-signed-error-bound.md) | 77 | `result-track:6a97ea8a141cb3976f314e92321060c553bf5dc7c9d9198cf7a89d146eb586a9` |
+| 5 | `theorem` | [actualResidual_reducedOffAxis_signed_error_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceActualOffAxisReducedLimit.lean/declarations/actualresidual-reducedoffaxis-signed-error-tendsto.md) | 99 | `result-track:d073c28899d81edf6817e6c5269e7066c86326b8a57ec241fb3ebe626b9eee88` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

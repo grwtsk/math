@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ConductorThreeCriticalReindexBoundsNamespacedPublic.lean/index.md) · [Full source](../../../../GeneralTopology/ConductorThreeCriticalReindexBoundsNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ConductorThreeCriticalReindexBoundsNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ConductorThreeCriticalReindexBoundsNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [count_to_matrix_pointwise](../../../../GeneralTopology/ConductorThreeCriticalReindexBoundsNamespacedPublic.lean/declarations/count-to-matrix-pointwise.md) | 40 | `result-track:99e846114f4db72e3be8e14393bfaf8b7a6e319d86cab2ec280a861d0d05a2be` |
-| 2 | `theorem` | [residueDifferenceCriticalBound_implies_matrixCriticalDecay](../../../../GeneralTopology/ConductorThreeCriticalReindexBoundsNamespacedPublic.lean/declarations/residuedifferencecriticalbound-implies-matrixcriticaldecay.md) | 204 | `result-track:b243c32a06d7e9c026cba7812433d8103eb9a7d018aca42327f5b283fc4cc83f` |
-| 3 | `lemma` | [matrix_to_count_pointwise](../../../../GeneralTopology/ConductorThreeCriticalReindexBoundsNamespacedPublic.lean/declarations/matrix-to-count-pointwise.md) | 221 | `result-track:d29ea6ddb6168018654e2a30c88574a5cd74d01bff143591404d99baff66d894` |
-| 4 | `theorem` | [matrixCriticalDecay_implies_residueDifferenceCriticalBound](../../../../GeneralTopology/ConductorThreeCriticalReindexBoundsNamespacedPublic.lean/declarations/matrixcriticaldecay-implies-residuedifferencecriticalbound.md) | 362 | `result-track:3b3eae407c3ee68dd9eea5239ae5b73da795e59fb73f4310b44b0e74c7db3b8c` |
-| 5 | `theorem` | [residueDifferenceCriticalBound_iff_matrixCriticalDecay](../../../../GeneralTopology/ConductorThreeCriticalReindexBoundsNamespacedPublic.lean/declarations/residuedifferencecriticalbound-iff-matrixcriticaldecay.md) | 412 | `result-track:5ce83e964939f85b9bfaf1736ceaf31ce5a24e54a145890bb424d93fbc0f89e6` |
+| 1 | `lemma` | [count_to_matrix_pointwise](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ConductorThreeCriticalReindexBoundsNamespacedPublic.lean/declarations/count-to-matrix-pointwise.md) | 40 | `result-track:99e846114f4db72e3be8e14393bfaf8b7a6e319d86cab2ec280a861d0d05a2be` |
+| 2 | `theorem` | [residueDifferenceCriticalBound_implies_matrixCriticalDecay](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ConductorThreeCriticalReindexBoundsNamespacedPublic.lean/declarations/residuedifferencecriticalbound-implies-matrixcriticaldecay.md) | 204 | `result-track:b243c32a06d7e9c026cba7812433d8103eb9a7d018aca42327f5b283fc4cc83f` |
+| 3 | `lemma` | [matrix_to_count_pointwise](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ConductorThreeCriticalReindexBoundsNamespacedPublic.lean/declarations/matrix-to-count-pointwise.md) | 221 | `result-track:d29ea6ddb6168018654e2a30c88574a5cd74d01bff143591404d99baff66d894` |
+| 4 | `theorem` | [matrixCriticalDecay_implies_residueDifferenceCriticalBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ConductorThreeCriticalReindexBoundsNamespacedPublic.lean/declarations/matrixcriticaldecay-implies-residuedifferencecriticalbound.md) | 362 | `result-track:3b3eae407c3ee68dd9eea5239ae5b73da795e59fb73f4310b44b0e74c7db3b8c` |
+| 5 | `theorem` | [residueDifferenceCriticalBound_iff_matrixCriticalDecay](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ConductorThreeCriticalReindexBoundsNamespacedPublic.lean/declarations/residuedifferencecriticalbound-iff-matrixcriticaldecay.md) | 412 | `result-track:5ce83e964939f85b9bfaf1736ceaf31ce5a24e54a145890bb424d93fbc0f89e6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

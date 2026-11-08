@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimePowerAtomControls.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimePowerAtomControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimePowerAtomControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimePowerAtomControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerAtoms`](../../../../../../GroupTheoryAndGeneralizations/PrimePowerAtoms.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerAtoms`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/PrimePowerAtoms.lean/index.md) — import line 5; pinned internal source present.
 - `Mathlib.Tactic` — import line 6; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [square_atom_distinct_from_two_unit_atoms](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimePowerAtomControls.lean/declarations/square-atom-distinct-from-two-unit-atoms.md) | 16 | `result-track:2c4a0ca32e1ec967d55b617cd61563966396d946edc87003b40a87333a06e31d` |
-| 2 | `theorem` | [square_atom_and_two_unit_atoms_same_collapse](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimePowerAtomControls.lean/declarations/square-atom-and-two-unit-atoms-same-collapse.md) | 24 | `result-track:e5a2b9e137c914ebde6139b9940af60d3459f6cad7c3f4bb86927495fd95ba46` |
-| 3 | `theorem` | [atom_collapse_information_loss](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimePowerAtomControls.lean/declarations/atom-collapse-information-loss.md) | 32 | `result-track:51af2adbcd6dae516f51283f1c4156b5bd017a08c38ab50a739368ecd4f67511` |
-| 4 | `theorem` | [nonlinear_readout_rejected](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimePowerAtomControls.lean/declarations/nonlinear-readout-rejected.md) | 38 | `result-track:701a8958d2a4952badeb2211523e1440cb67c0189d453bc4bfcb5f283126e817` |
-| 5 | `theorem` | [collapse_has_section](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimePowerAtomControls.lean/declarations/collapse-has-section.md) | 43 | `result-track:31dad43c57f6abd4b0df57bc36e13d1262cc02c957fa87631bc7dd6b1d0c2dd4` |
-| 6 | `def` | [twoAtomStage](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimePowerAtomControls.lean/declarations/twoatomstage.md) | 49 | `declaration-track:de7b88df0b844f897ce990ec5b04ee74181ca75f65dd29008a09c9a087cae400` |
-| 7 | `theorem` | [twoAtomStage_card](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimePowerAtomControls.lean/declarations/twoatomstage-card.md) | 52 | `result-track:223dab71e871984b5b088846c2eceff5fac3a2bc553559e6bbd3c65baa9b1ccb` |
-| 8 | `theorem` | [triangle_remains_three](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimePowerAtomControls.lean/declarations/triangle-remains-three.md) | 60 | `result-track:befca1fdb047dd809b309a031356bcec052b200337540b89898cfd96939f9b82` |
-| 9 | `theorem` | [no_triangle_fin_four](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimePowerAtomControls.lean/declarations/no-triangle-fin-four.md) | 65 | `result-track:dfc81ab29f5125e271a1a0786a2d4e12e618dad7bd457a930f6eeebb154b3b64` |
+| 1 | `theorem` | [square_atom_distinct_from_two_unit_atoms](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimePowerAtomControls.lean/declarations/square-atom-distinct-from-two-unit-atoms.md) | 16 | `result-track:2c4a0ca32e1ec967d55b617cd61563966396d946edc87003b40a87333a06e31d` |
+| 2 | `theorem` | [square_atom_and_two_unit_atoms_same_collapse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimePowerAtomControls.lean/declarations/square-atom-and-two-unit-atoms-same-collapse.md) | 24 | `result-track:e5a2b9e137c914ebde6139b9940af60d3459f6cad7c3f4bb86927495fd95ba46` |
+| 3 | `theorem` | [atom_collapse_information_loss](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimePowerAtomControls.lean/declarations/atom-collapse-information-loss.md) | 32 | `result-track:51af2adbcd6dae516f51283f1c4156b5bd017a08c38ab50a739368ecd4f67511` |
+| 4 | `theorem` | [nonlinear_readout_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimePowerAtomControls.lean/declarations/nonlinear-readout-rejected.md) | 38 | `result-track:701a8958d2a4952badeb2211523e1440cb67c0189d453bc4bfcb5f283126e817` |
+| 5 | `theorem` | [collapse_has_section](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimePowerAtomControls.lean/declarations/collapse-has-section.md) | 43 | `result-track:31dad43c57f6abd4b0df57bc36e13d1262cc02c957fa87631bc7dd6b1d0c2dd4` |
+| 6 | `def` | [twoAtomStage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimePowerAtomControls.lean/declarations/twoatomstage.md) | 49 | `declaration-track:de7b88df0b844f897ce990ec5b04ee74181ca75f65dd29008a09c9a087cae400` |
+| 7 | `theorem` | [twoAtomStage_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimePowerAtomControls.lean/declarations/twoatomstage-card.md) | 52 | `result-track:223dab71e871984b5b088846c2eceff5fac3a2bc553559e6bbd3c65baa9b1ccb` |
+| 8 | `theorem` | [triangle_remains_three](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimePowerAtomControls.lean/declarations/triangle-remains-three.md) | 60 | `result-track:befca1fdb047dd809b309a031356bcec052b200337540b89898cfd96939f9b82` |
+| 9 | `theorem` | [no_triangle_fin_four](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimePowerAtomControls.lean/declarations/no-triangle-fin-four.md) | 65 | `result-track:dfc81ab29f5125e271a1a0786a2d4e12e618dad7bd457a930f6eeebb154b3b64` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

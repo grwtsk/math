@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/AbelNamespacedKM.lean/index.md) · [Full source](../../../../MeasureAndIntegration/AbelNamespacedKM.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AbelNamespacedKM.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AbelNamespacedKM.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,17 +58,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [KM](../../../../MeasureAndIntegration/AbelNamespacedKM.lean/declarations/km.md) | 37 | `declaration-track:0e3d3531799259a5a66d4980d22078a2f0d9132e523fa2ec3c3a9c0677452382` |
-| 2 | `lemma` | [KM_pos](../../../../MeasureAndIntegration/AbelNamespacedKM.lean/declarations/km-pos.md) | 39 | `result-track:d9945d627089a8058f16cbf3837b378ccb8967a9581f4cce67f6774a1609712a` |
-| 3 | `lemma` | [KM_nonneg](../../../../MeasureAndIntegration/AbelNamespacedKM.lean/declarations/km-nonneg.md) | 40 | `result-track:554c37f5270bc255c6c4d4b6f7962439c057e9a17ecdea4a1ce66d44b3146ded` |
-| 4 | `def` | [Mfun](../../../../MeasureAndIntegration/AbelNamespacedKM.lean/declarations/mfun.md) | 43 | `declaration-track:294f65772f97e6eef18a8e93a34f4c7d4c49cd5ec3da94bd41ba0b4af2b0cd83` |
-| 5 | `lemma` | [sum_Icc_eq_sum_Ioc'](../../../../MeasureAndIntegration/AbelNamespacedKM.lean/declarations/sum-icc-eq-sum-ioc.md) | 45 | `result-track:d065160a2467e21d58d10f5f69a2ce45176c30c7a2e9a5359e38893fefc4cc5d` |
-| 6 | `lemma` | [Mfun_eq_Ioc](../../../../MeasureAndIntegration/AbelNamespacedKM.lean/declarations/mfun-eq-ioc.md) | 49 | `result-track:07eec7d0684b6bb48f806f834dc979092acb0d05db2aebf47e1d6dc3baa7b9f2` |
-| 7 | `lemma` | [Mfun_mono](../../../../MeasureAndIntegration/AbelNamespacedKM.lean/declarations/mfun-mono.md) | 52 | `result-track:a606145a44140f0321e08edf4ebd7e3392c13a6d4c49c2b8ba9312c5d371834e` |
-| 8 | `lemma` | [Mfun_nonneg](../../../../MeasureAndIntegration/AbelNamespacedKM.lean/declarations/mfun-nonneg.md) | 56 | `result-track:da8e3f412dc4b2f34467ae093740523866ae6da54e7589a88ae5db5a5347d281` |
-| 9 | `lemma` | [abs_Mfun_sub_log_le](../../../../MeasureAndIntegration/AbelNamespacedKM.lean/declarations/abs-mfun-sub-log-le.md) | 59 | `result-track:1102cb7a2b0c58c2dc79c06b26b6bf75809a798b192d09ef54970a55e1ccb0d6` |
-| 10 | `theorem` | [abel_mertens_t](../../../../MeasureAndIntegration/AbelNamespacedKM.lean/declarations/abel-mertens-t.md) | 64 | `result-track:78a86d64486c27a317f0d9c708f9413087b52742efac854fd370d9120a1acf42` |
-| 11 | `theorem` | [mertens_step](../../../../MeasureAndIntegration/AbelNamespacedKM.lean/declarations/mertens-step.md) | 148 | `result-track:90c36eff52101d8c2db8656596d60f5b9dfcb9d9d85d01fa0c0073522247fb49` |
+| 1 | `def` | [KM](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AbelNamespacedKM.lean/declarations/km.md) | 37 | `declaration-track:0e3d3531799259a5a66d4980d22078a2f0d9132e523fa2ec3c3a9c0677452382` |
+| 2 | `lemma` | [KM_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AbelNamespacedKM.lean/declarations/km-pos.md) | 39 | `result-track:d9945d627089a8058f16cbf3837b378ccb8967a9581f4cce67f6774a1609712a` |
+| 3 | `lemma` | [KM_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AbelNamespacedKM.lean/declarations/km-nonneg.md) | 40 | `result-track:554c37f5270bc255c6c4d4b6f7962439c057e9a17ecdea4a1ce66d44b3146ded` |
+| 4 | `def` | [Mfun](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AbelNamespacedKM.lean/declarations/mfun.md) | 43 | `declaration-track:294f65772f97e6eef18a8e93a34f4c7d4c49cd5ec3da94bd41ba0b4af2b0cd83` |
+| 5 | `lemma` | [sum_Icc_eq_sum_Ioc'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AbelNamespacedKM.lean/declarations/sum-icc-eq-sum-ioc.md) | 45 | `result-track:d065160a2467e21d58d10f5f69a2ce45176c30c7a2e9a5359e38893fefc4cc5d` |
+| 6 | `lemma` | [Mfun_eq_Ioc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AbelNamespacedKM.lean/declarations/mfun-eq-ioc.md) | 49 | `result-track:07eec7d0684b6bb48f806f834dc979092acb0d05db2aebf47e1d6dc3baa7b9f2` |
+| 7 | `lemma` | [Mfun_mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AbelNamespacedKM.lean/declarations/mfun-mono.md) | 52 | `result-track:a606145a44140f0321e08edf4ebd7e3392c13a6d4c49c2b8ba9312c5d371834e` |
+| 8 | `lemma` | [Mfun_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AbelNamespacedKM.lean/declarations/mfun-nonneg.md) | 56 | `result-track:da8e3f412dc4b2f34467ae093740523866ae6da54e7589a88ae5db5a5347d281` |
+| 9 | `lemma` | [abs_Mfun_sub_log_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AbelNamespacedKM.lean/declarations/abs-mfun-sub-log-le.md) | 59 | `result-track:1102cb7a2b0c58c2dc79c06b26b6bf75809a798b192d09ef54970a55e1ccb0d6` |
+| 10 | `theorem` | [abel_mertens_t](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AbelNamespacedKM.lean/declarations/abel-mertens-t.md) | 64 | `result-track:78a86d64486c27a317f0d9c708f9413087b52742efac854fd370d9120a1acf42` |
+| 11 | `theorem` | [mertens_step](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/AbelNamespacedKM.lean/declarations/mertens-step.md) | 148 | `result-track:90c36eff52101d8c2db8656596d60f5b9dfcb9d9d85d01fa0c0073522247fb49` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

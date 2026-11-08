@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ChebyshevMarkovPublic.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ChebyshevMarkovPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ChebyshevMarkovPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ChebyshevMarkovPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [pow_mul_meas_ge_le_eLpNorm](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ChebyshevMarkovPublic.lean/declarations/pow-mul-meas-ge-le-elpnorm.md) | 26 | `result-track:2d72b6b9e94fd75e5882bda204b2ce8902b38961fe44340110f28e6e862a6670` |
-| 2 | `theorem` | [mul_meas_ge_le_pow_eLpNorm](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ChebyshevMarkovPublic.lean/declarations/mul-meas-ge-le-pow-elpnorm-source-edition-2.md) | 36 | `result-track:c3ad3b872404585ff2b7913717ef39d284d8379f4bed480f5ea0e2a45b99cff2` |
-| 3 | `theorem` | [mul_meas_ge_le_pow_eLpNorm'](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ChebyshevMarkovPublic.lean/declarations/mul-meas-ge-le-pow-elpnorm.md) | 48 | `result-track:33178bf0a34a124584c96a5154d0905d6ea3b0b4b13e1f7df1ff5858a95d987a` |
-| 4 | `theorem` | [meas_ge_le_mul_pow_eLpNorm_enorm](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ChebyshevMarkovPublic.lean/declarations/meas-ge-le-mul-pow-elpnorm-enorm.md) | 55 | `result-track:373f4223a0cc823c6af09e3c96aaff503eebf3e6be5a1ab7e1650262d73da96d` |
-| 5 | `theorem` | [MemLp.meas_ge_lt_top'_enorm](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ChebyshevMarkovPublic.lean/declarations/memlp-meas-ge-lt-top-enorm.md) | 68 | `result-track:0f1a17a700a3534e0a6b10a9e98cdb82957af75d291b54970277333a23738e94` |
-| 6 | `theorem` | [MemLp.meas_ge_lt_top'](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ChebyshevMarkovPublic.lean/declarations/memlp-meas-ge-lt-top-source-edition-2.md) | 77 | `result-track:96ff256caee0e919878f342bd25dde0c6817b5653fd579903891ac90d8c09b04` |
-| 7 | `theorem` | [MemLp.meas_ge_lt_top_enorm](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ChebyshevMarkovPublic.lean/declarations/memlp-meas-ge-lt-top-enorm-source-edition-2.md) | 84 | `result-track:f4caeb5c9eec9f41f0de42d4f63ba7f79e49bb8afce46a9ca55908bb2b063a6b` |
-| 8 | `theorem` | [MemLp.meas_ge_lt_top](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ChebyshevMarkovPublic.lean/declarations/memlp-meas-ge-lt-top.md) | 89 | `result-track:63cda0b45febe15bf1d144bfe6ad018c8d5690d9bf6108a935dd4c9037303e61` |
+| 1 | `theorem` | [pow_mul_meas_ge_le_eLpNorm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ChebyshevMarkovPublic.lean/declarations/pow-mul-meas-ge-le-elpnorm.md) | 26 | `result-track:2d72b6b9e94fd75e5882bda204b2ce8902b38961fe44340110f28e6e862a6670` |
+| 2 | `theorem` | [mul_meas_ge_le_pow_eLpNorm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ChebyshevMarkovPublic.lean/declarations/mul-meas-ge-le-pow-elpnorm-source-edition-2.md) | 36 | `result-track:c3ad3b872404585ff2b7913717ef39d284d8379f4bed480f5ea0e2a45b99cff2` |
+| 3 | `theorem` | [mul_meas_ge_le_pow_eLpNorm'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ChebyshevMarkovPublic.lean/declarations/mul-meas-ge-le-pow-elpnorm.md) | 48 | `result-track:33178bf0a34a124584c96a5154d0905d6ea3b0b4b13e1f7df1ff5858a95d987a` |
+| 4 | `theorem` | [meas_ge_le_mul_pow_eLpNorm_enorm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ChebyshevMarkovPublic.lean/declarations/meas-ge-le-mul-pow-elpnorm-enorm.md) | 55 | `result-track:373f4223a0cc823c6af09e3c96aaff503eebf3e6be5a1ab7e1650262d73da96d` |
+| 5 | `theorem` | [MemLp.meas_ge_lt_top'_enorm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ChebyshevMarkovPublic.lean/declarations/memlp-meas-ge-lt-top-enorm.md) | 68 | `result-track:0f1a17a700a3534e0a6b10a9e98cdb82957af75d291b54970277333a23738e94` |
+| 6 | `theorem` | [MemLp.meas_ge_lt_top'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ChebyshevMarkovPublic.lean/declarations/memlp-meas-ge-lt-top-source-edition-2.md) | 77 | `result-track:96ff256caee0e919878f342bd25dde0c6817b5653fd579903891ac90d8c09b04` |
+| 7 | `theorem` | [MemLp.meas_ge_lt_top_enorm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ChebyshevMarkovPublic.lean/declarations/memlp-meas-ge-lt-top-enorm-source-edition-2.md) | 84 | `result-track:f4caeb5c9eec9f41f0de42d4f63ba7f79e49bb8afce46a9ca55908bb2b063a6b` |
+| 8 | `theorem` | [MemLp.meas_ge_lt_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/ChebyshevMarkovPublic.lean/declarations/memlp-meas-ge-lt-top.md) | 89 | `result-track:63cda0b45febe15bf1d144bfe6ad018c8d5690d9bf6108a935dd4c9037303e61` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

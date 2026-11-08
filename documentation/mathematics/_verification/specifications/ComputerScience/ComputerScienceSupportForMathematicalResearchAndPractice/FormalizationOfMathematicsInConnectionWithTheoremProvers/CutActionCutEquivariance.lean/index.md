@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CutActionCutEquivariance.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CutActionCutEquivariance.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CutActionCutEquivariance.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CutActionCutEquivariance.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [CutEquivariance](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CutActionCutEquivariance.lean/declarations/cutequivariance.md) | 19 | `declaration-track:4d43b8715b8e83e294212704c19fab3735edc5653f748b0da14a358429f556ec` |
-| 2 | `def` | [FiniteReflectiveCut.cutEquivariance](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CutActionCutEquivariance.lean/declarations/finitereflectivecut-cutequivariance.md) | 31 | `declaration-track:fbad4d9eaeb4f2f84a4a843396e18ae53f836baa134c88bc57e12529baf91327` |
-| 3 | `theorem` | [finite_cut_boundary_law_automorphism_invariant](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CutActionCutEquivariance.lean/declarations/finite-cut-boundary-law-automorphism-invariant.md) | 42 | `result-track:7e8488d25550fc9286d4ded897aa640755e338ecb3cd88b45e6ce045f7325c7c` |
+| 1 | `abbrev` | [CutEquivariance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CutActionCutEquivariance.lean/declarations/cutequivariance.md) | 19 | `declaration-track:4d43b8715b8e83e294212704c19fab3735edc5653f748b0da14a358429f556ec` |
+| 2 | `def` | [FiniteReflectiveCut.cutEquivariance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CutActionCutEquivariance.lean/declarations/finitereflectivecut-cutequivariance.md) | 31 | `declaration-track:fbad4d9eaeb4f2f84a4a843396e18ae53f836baa134c88bc57e12529baf91327` |
+| 3 | `theorem` | [finite_cut_boundary_law_automorphism_invariant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CutActionCutEquivariance.lean/declarations/finite-cut-boundary-law-automorphism-invariant.md) | 42 | `result-track:7e8488d25550fc9286d4ded897aa640755e338ecb3cd88b45e6ce045f7325c7c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

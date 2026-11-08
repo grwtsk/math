@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/UniqueFactorizationPublic.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/UniqueFactorizationPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/UniqueFactorizationPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/UniqueFactorizationPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [map_prime](../../../../GroupTheoryAndGeneralizations/UniqueFactorizationPublic.lean/declarations/map-prime.md) | 28 | `result-track:95fc8f331b230b02569b5a2a327ed0d47ac08a8ce61a3a33645faf865a6f70ee` |
-| 2 | `theorem` | [eq_isUnit_map_mul_irreducible_of_irreducible_map](../../../../GroupTheoryAndGeneralizations/UniqueFactorizationPublic.lean/declarations/eq-isunit-map-mul-irreducible-of-irreducible-map.md) | 43 | `result-track:0f66c4eab764955fa3fb34db85b6485996820acd92cbf7b0010f32ab0c813599` |
-| 3 | `theorem` | [uniqueFactorizationMonoid](../../../../GroupTheoryAndGeneralizations/UniqueFactorizationPublic.lean/declarations/uniquefactorizationmonoid.md) | 56 | `result-track:9fa7cc491206f89523b70fedbd1c5e9180bd0bd48c5f842b2eee99d239fbdb9b` |
-| 4 | `theorem` | [UniqueFactorizationMonoid.of_isLocalization](../../../../GroupTheoryAndGeneralizations/UniqueFactorizationPublic.lean/declarations/uniquefactorizationmonoid-of-islocalization.md) | 79 | `result-track:010ffb49624e3a8268c50089e2b65819e3f6f741adbfc55087cdf34ea3493dc9` |
-| 5 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/UniqueFactorizationPublic.lean/declarations/instance.md) | 83 | `declaration-track:354ef03bc2048a6b288f65627a6b85268207ce096b3f343fcb2198c28c437bf3` |
+| 1 | `theorem` | [map_prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/UniqueFactorizationPublic.lean/declarations/map-prime.md) | 28 | `result-track:95fc8f331b230b02569b5a2a327ed0d47ac08a8ce61a3a33645faf865a6f70ee` |
+| 2 | `theorem` | [eq_isUnit_map_mul_irreducible_of_irreducible_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/UniqueFactorizationPublic.lean/declarations/eq-isunit-map-mul-irreducible-of-irreducible-map.md) | 43 | `result-track:0f66c4eab764955fa3fb34db85b6485996820acd92cbf7b0010f32ab0c813599` |
+| 3 | `theorem` | [uniqueFactorizationMonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/UniqueFactorizationPublic.lean/declarations/uniquefactorizationmonoid.md) | 56 | `result-track:9fa7cc491206f89523b70fedbd1c5e9180bd0bd48c5f842b2eee99d239fbdb9b` |
+| 4 | `theorem` | [UniqueFactorizationMonoid.of_isLocalization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/UniqueFactorizationPublic.lean/declarations/uniquefactorizationmonoid-of-islocalization.md) | 79 | `result-track:010ffb49624e3a8268c50089e2b65819e3f6f741adbfc55087cdf34ea3493dc9` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/UniqueFactorizationPublic.lean/declarations/instance.md) | 83 | `declaration-track:354ef03bc2048a6b288f65627a6b85268207ce096b3f343fcb2198c28c437bf3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

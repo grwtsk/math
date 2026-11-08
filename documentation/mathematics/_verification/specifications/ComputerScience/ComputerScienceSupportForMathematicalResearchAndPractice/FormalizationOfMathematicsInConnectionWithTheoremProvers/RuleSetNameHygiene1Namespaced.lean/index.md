@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RuleSetNameHygiene1Namespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RuleSetNameHygiene1Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RuleSetNameHygiene1Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RuleSetNameHygiene1Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `macro` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RuleSetNameHygiene1Namespaced.lean/declarations/macro.md) | 20 | `declaration-track:b46f880cc66e9827bcdcb247b29258243c76a81fb0d8af8c508a73c831a946d3` |
-| 2 | `structure` | [TT](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RuleSetNameHygiene1Namespaced.lean/declarations/tt.md) | 23 | `declaration-track:ad9aec31ccb4cb713c4acd6431adf3213b2f92e8db5781444b1332767696aefa` |
-| 3 | `example` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RuleSetNameHygiene1Namespaced.lean/declarations/example-source-edition-2.md) | 29 | `declaration-track:211611e6f7990917fff8442c66a8e2175cc4a4db040cb91ecdad4b0f8bf4c3b0` |
-| 4 | `example` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RuleSetNameHygiene1Namespaced.lean/declarations/example.md) | 32 | `declaration-track:045bee564baa691a7006eb7fda8aa980acef7178e5e238b5a26113ac28b2e865` |
+| 1 | `macro` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RuleSetNameHygiene1Namespaced.lean/declarations/macro.md) | 20 | `declaration-track:b46f880cc66e9827bcdcb247b29258243c76a81fb0d8af8c508a73c831a946d3` |
+| 2 | `structure` | [TT](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RuleSetNameHygiene1Namespaced.lean/declarations/tt.md) | 23 | `declaration-track:ad9aec31ccb4cb713c4acd6431adf3213b2f92e8db5781444b1332767696aefa` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RuleSetNameHygiene1Namespaced.lean/declarations/example-source-edition-2.md) | 29 | `declaration-track:211611e6f7990917fff8442c66a8e2175cc4a4db040cb91ecdad4b0f8bf4c3b0` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RuleSetNameHygiene1Namespaced.lean/declarations/example.md) | 32 | `declaration-track:045bee564baa691a7006eb7fda8aa980acef7178e5e238b5a26113ac28b2e865` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

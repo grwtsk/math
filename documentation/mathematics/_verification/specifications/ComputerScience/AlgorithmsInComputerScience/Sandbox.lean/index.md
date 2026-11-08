@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Sandbox.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Sandbox.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Sandbox.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Sandbox.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SandboxPolicy](../../../../../ComputerScience/AlgorithmsInComputerScience/Sandbox.lean/declarations/sandboxpolicy.md) | 8 | `declaration-track:d7f940496c17337ada5c75fc5eef479c156d28c874f497e159e5059d316880e8` |
-| 2 | `def` | [SandboxPolicy.FailClosed](../../../../../ComputerScience/AlgorithmsInComputerScience/Sandbox.lean/declarations/sandboxpolicy-failclosed.md) | 16 | `declaration-track:6e0ef2e86fa251bb6606007f9181960a876da87cf8fff45d919c5539a53a667a` |
-| 3 | `structure` | [SandboxedCapsule](../../../../../ComputerScience/AlgorithmsInComputerScience/Sandbox.lean/declarations/sandboxedcapsule.md) | 21 | `declaration-track:c3a7a6bcf5c0dabb38d5e69f504be585df48824ad4b3d8f92d67d0029f0f8f58` |
+| 1 | `structure` | [SandboxPolicy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Sandbox.lean/declarations/sandboxpolicy.md) | 8 | `declaration-track:d7f940496c17337ada5c75fc5eef479c156d28c874f497e159e5059d316880e8` |
+| 2 | `def` | [SandboxPolicy.FailClosed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Sandbox.lean/declarations/sandboxpolicy-failclosed.md) | 16 | `declaration-track:6e0ef2e86fa251bb6606007f9181960a876da87cf8fff45d919c5539a53a667a` |
+| 3 | `structure` | [SandboxedCapsule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Sandbox.lean/declarations/sandboxedcapsule.md) | 21 | `declaration-track:c3a7a6bcf5c0dabb38d5e69f504be585df48824ad4b3d8f92d67d0029f0f8f58` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

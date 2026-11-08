@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FamilyPublic.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FamilyPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FamilyPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FamilyPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [FamilyDef](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FamilyPublic.lean/declarations/familydef.md) | 147 | `declaration-track:69378f3cd763faf590da8c6e9966ab408398eeab14bb8263f798a819694f313c` |
-| 2 | `class` | [FamilyOut](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FamilyPublic.lean/declarations/familyout.md) | 151 | `declaration-track:78449b09722f979a236f8e0371b0689cbf3790001364043e9dc365af73ea3c54` |
-| 3 | `instance` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FamilyPublic.lean/declarations/instance-source-edition-2.md) | 160 | `declaration-track:ca41afe41cc94b8ca366e949077191a6a23313fec471941436f42ddc4e07f410` |
-| 4 | `instance` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FamilyPublic.lean/declarations/instance-source-edition-3.md) | 164 | `declaration-track:d5c26d6cf6fc3293c6c6ae1b4477b271e493368c736a8276f94d6790ed682ef5` |
-| 5 | `instance` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FamilyPublic.lean/declarations/instance.md) | 168 | `declaration-track:ada418ec3ef29a58f517fe9972a8a56ef53e37934b15c5e2287a5dfbb6f84bb6` |
-| 6 | `def` | [toFamily](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FamilyPublic.lean/declarations/tofamily.md) | 172 | `declaration-track:1f854f921d303836e6690ee1c9a83e26bb76c2e57dd504a950341410cb999401` |
-| 7 | `def` | [ofFamily](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FamilyPublic.lean/declarations/offamily.md) | 176 | `declaration-track:d82b3c98deba722b9c41d2c167cef698abe9e54396e3ccf95b584027c81a6036` |
-| 8 | `macro` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FamilyPublic.lean/declarations/macro.md) | 191 | `declaration-track:12399bfea93d80a658989ac52fb017af0cae8bdb411937b4ec3bcf770bcf597f` |
-| 9 | `instance` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FamilyPublic.lean/declarations/instance-source-edition-4.md) | 200 | `declaration-track:dc59b7d4df44d12797ca9c0ff19aaf4792c1c29b97dacd4ecd30ebba8a0390d5` |
+| 1 | `class` | [FamilyDef](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FamilyPublic.lean/declarations/familydef.md) | 147 | `declaration-track:69378f3cd763faf590da8c6e9966ab408398eeab14bb8263f798a819694f313c` |
+| 2 | `class` | [FamilyOut](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FamilyPublic.lean/declarations/familyout.md) | 151 | `declaration-track:78449b09722f979a236f8e0371b0689cbf3790001364043e9dc365af73ea3c54` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FamilyPublic.lean/declarations/instance-source-edition-2.md) | 160 | `declaration-track:ca41afe41cc94b8ca366e949077191a6a23313fec471941436f42ddc4e07f410` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FamilyPublic.lean/declarations/instance-source-edition-3.md) | 164 | `declaration-track:d5c26d6cf6fc3293c6c6ae1b4477b271e493368c736a8276f94d6790ed682ef5` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FamilyPublic.lean/declarations/instance.md) | 168 | `declaration-track:ada418ec3ef29a58f517fe9972a8a56ef53e37934b15c5e2287a5dfbb6f84bb6` |
+| 6 | `def` | [toFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FamilyPublic.lean/declarations/tofamily.md) | 172 | `declaration-track:1f854f921d303836e6690ee1c9a83e26bb76c2e57dd504a950341410cb999401` |
+| 7 | `def` | [ofFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FamilyPublic.lean/declarations/offamily.md) | 176 | `declaration-track:d82b3c98deba722b9c41d2c167cef698abe9e54396e3ccf95b584027c81a6036` |
+| 8 | `macro` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FamilyPublic.lean/declarations/macro.md) | 191 | `declaration-track:12399bfea93d80a658989ac52fb017af0cae8bdb411937b4ec3bcf770bcf597f` |
+| 9 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FamilyPublic.lean/declarations/instance-source-edition-4.md) | 200 | `declaration-track:dc59b7d4df44d12797ca9c0ff19aaf4792c1c29b97dacd4ecd30ebba8a0390d5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

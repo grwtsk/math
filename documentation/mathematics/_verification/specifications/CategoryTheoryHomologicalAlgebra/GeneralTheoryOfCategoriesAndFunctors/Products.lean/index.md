@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Products.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Products.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Products.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Products.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [productCone](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Products.lean/declarations/productcone.md) | 31 | `declaration-track:236973afb3c4ff65b1d5f0abe2709b3925184b6153a89c6fd3c277a1915bf640` |
-| 2 | `def` | [productConeIsLimit](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Products.lean/declarations/productconeislimit.md) | 36 | `declaration-track:351eb60e245e10cc95a6ae151306af28775411ef85d6ecf1dff9000bf2da49fa` |
-| 3 | `def` | [piIsoPi](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Products.lean/declarations/piisopi.md) | 54 | `declaration-track:34e76b228ab0d07d4785717cac75d2dd1582a54457e175f0787089ec1b17e4ef` |
-| 4 | `theorem` | [piIsoPi_inv_kernel_ι](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Products.lean/declarations/piisopi-inv-kernel.md) | 60 | `result-track:449e431c3027ad61f2d52672e9e8a4bdb51a1f6850da1b24b165d741bf538c31` |
-| 5 | `theorem` | [piIsoPi_hom_ker_subtype](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Products.lean/declarations/piisopi-hom-ker-subtype.md) | 66 | `result-track:54140042c53982c35423572b1b0100f0cb126c4f3876f73c28ecb60d94ce6db3` |
+| 1 | `def` | [productCone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Products.lean/declarations/productcone.md) | 31 | `declaration-track:236973afb3c4ff65b1d5f0abe2709b3925184b6153a89c6fd3c277a1915bf640` |
+| 2 | `def` | [productConeIsLimit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Products.lean/declarations/productconeislimit.md) | 36 | `declaration-track:351eb60e245e10cc95a6ae151306af28775411ef85d6ecf1dff9000bf2da49fa` |
+| 3 | `def` | [piIsoPi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Products.lean/declarations/piisopi.md) | 54 | `declaration-track:34e76b228ab0d07d4785717cac75d2dd1582a54457e175f0787089ec1b17e4ef` |
+| 4 | `theorem` | [piIsoPi_inv_kernel_ι](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Products.lean/declarations/piisopi-inv-kernel.md) | 60 | `result-track:449e431c3027ad61f2d52672e9e8a4bdb51a1f6850da1b24b165d741bf538c31` |
+| 5 | `theorem` | [piIsoPi_hom_ker_subtype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Products.lean/declarations/piisopi-hom-ker-subtype.md) | 66 | `result-track:54140042c53982c35423572b1b0100f0cb126c4f3876f73c28ecb60d94ce6db3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

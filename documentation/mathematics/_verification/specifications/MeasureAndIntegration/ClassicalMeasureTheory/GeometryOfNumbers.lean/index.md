@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/GeometryOfNumbers.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/GeometryOfNumbers.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/GeometryOfNumbers.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/GeometryOfNumbers.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_pair_mem_lattice_not_disjoint_vadd](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/GeometryOfNumbers.lean/declarations/exists-pair-mem-lattice-not-disjoint-vadd.md) | 50 | `result-track:8645126df9fe0b3c1aefa810ab5e3a995e56941c70073982a71a639abbc0e261` |
-| 2 | `theorem` | [exists_ne_zero_mem_lattice_of_measure_mul_two_pow_lt_measure](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/GeometryOfNumbers.lean/declarations/exists-ne-zero-mem-lattice-of-measure-mul-two-pow-lt-measure.md) | 64 | `result-track:97b201a5c43b812f5108634445c9ad9a21e304fbc2ce647c123f29851eab096f` |
+| 1 | `theorem` | [exists_pair_mem_lattice_not_disjoint_vadd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/GeometryOfNumbers.lean/declarations/exists-pair-mem-lattice-not-disjoint-vadd.md) | 50 | `result-track:8645126df9fe0b3c1aefa810ab5e3a995e56941c70073982a71a639abbc0e261` |
+| 2 | `theorem` | [exists_ne_zero_mem_lattice_of_measure_mul_two_pow_lt_measure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/GeometryOfNumbers.lean/declarations/exists-ne-zero-mem-lattice-of-measure-mul-two-pow-lt-measure.md) | 64 | `result-track:97b201a5c43b812f5108634445c9ad9a21e304fbc2ce647c123f29851eab096f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

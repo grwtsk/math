@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/TokenGraph.lean/index.md) · [Full source](../../../../Combinatorics/TokenGraph.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TokenGraph.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TokenGraph.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TokenNode](../../../../Combinatorics/TokenGraph.lean/declarations/tokennode.md) | 10 | `declaration-track:2c78d8269703ebe79a15d0ab9cd8f6edba179fb6bc79b375d475acc0c1b43bd8` |
-| 2 | `structure` | [SemanticEdge](../../../../Combinatorics/TokenGraph.lean/declarations/semanticedge.md) | 21 | `declaration-track:ae1468f813210ccc87f1a1bef3df8f5e055289e2922e6c44b8a41fc9f77c14bc` |
-| 3 | `structure` | [TokenGraph](../../../../Combinatorics/TokenGraph.lean/declarations/tokengraph.md) | 34 | `declaration-track:1ddd875d323bf80562eaea615d9499aa5f63079bd199c2d728009b918bc9f6b0` |
-| 4 | `inductive` | [SemanticPath](../../../../Combinatorics/TokenGraph.lean/declarations/semanticpath.md) | 54 | `declaration-track:ed872a30285d6eb69a61696f8e7b9c8349da4ff972a0ed56b82c8a4d40760f79` |
-| 5 | `structure` | [TokenConnectivityCertificate](../../../../Combinatorics/TokenGraph.lean/declarations/tokenconnectivitycertificate.md) | 68 | `declaration-track:e219b1f4959f5e3d35bd3137b4354efb8b8116e428bb2fda925ff92da7645f96` |
-| 6 | `theorem` | [tokenGraph_edge_evidence](../../../../Combinatorics/TokenGraph.lean/declarations/tokengraph-edge-evidence.md) | 82 | `result-track:7eccc0c607cd0e4e57f02118b5ca056ce76dfdc5413f7525328c61689e282bda` |
+| 1 | `structure` | [TokenNode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TokenGraph.lean/declarations/tokennode.md) | 10 | `declaration-track:2c78d8269703ebe79a15d0ab9cd8f6edba179fb6bc79b375d475acc0c1b43bd8` |
+| 2 | `structure` | [SemanticEdge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TokenGraph.lean/declarations/semanticedge.md) | 21 | `declaration-track:ae1468f813210ccc87f1a1bef3df8f5e055289e2922e6c44b8a41fc9f77c14bc` |
+| 3 | `structure` | [TokenGraph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TokenGraph.lean/declarations/tokengraph.md) | 34 | `declaration-track:1ddd875d323bf80562eaea615d9499aa5f63079bd199c2d728009b918bc9f6b0` |
+| 4 | `inductive` | [SemanticPath](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TokenGraph.lean/declarations/semanticpath.md) | 54 | `declaration-track:ed872a30285d6eb69a61696f8e7b9c8349da4ff972a0ed56b82c8a4d40760f79` |
+| 5 | `structure` | [TokenConnectivityCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TokenGraph.lean/declarations/tokenconnectivitycertificate.md) | 68 | `declaration-track:e219b1f4959f5e3d35bd3137b4354efb8b8116e428bb2fda925ff92da7645f96` |
+| 6 | `theorem` | [tokenGraph_edge_evidence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TokenGraph.lean/declarations/tokengraph-edge-evidence.md) | 82 | `result-track:7eccc0c607cd0e4e57f02118b5ca056ce76dfdc5413f7525328c61689e282bda` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

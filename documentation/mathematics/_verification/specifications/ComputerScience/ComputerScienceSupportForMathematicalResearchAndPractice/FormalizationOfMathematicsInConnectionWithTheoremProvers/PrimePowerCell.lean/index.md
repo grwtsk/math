@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PrimePowerCell.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PrimePowerCell.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PrimePowerCell.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PrimePowerCell.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PrimePowerCell](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PrimePowerCell.lean/declarations/primepowercell.md) | 18 | `declaration-track:432235bf3d991b73d571e164b9570713fae5a3c08fdcd9d8a22f0990bad0a9f1` |
-| 2 | `def` | [dilateTree](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PrimePowerCell.lean/declarations/dilatetree.md) | 22 | `declaration-track:489ea13c228f4bc3a3b901add13aad5add600d19375fdc1a4ef0213a5c1854df` |
-| 3 | `theorem` | [decode_dilateTree](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PrimePowerCell.lean/declarations/decode-dilatetree.md) | 28 | `result-track:5dc20482bbda3565512b40bed463a4684c65896c4d88e0c372e3610f07e24f51` |
+| 1 | `structure` | [PrimePowerCell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PrimePowerCell.lean/declarations/primepowercell.md) | 18 | `declaration-track:432235bf3d991b73d571e164b9570713fae5a3c08fdcd9d8a22f0990bad0a9f1` |
+| 2 | `def` | [dilateTree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PrimePowerCell.lean/declarations/dilatetree.md) | 22 | `declaration-track:489ea13c228f4bc3a3b901add13aad5add600d19375fdc1a4ef0213a5c1854df` |
+| 3 | `theorem` | [decode_dilateTree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PrimePowerCell.lean/declarations/decode-dilatetree.md) | 28 | `result-track:5dc20482bbda3565512b40bed463a4684c65896c4d88e0c372e3610f07e24f51` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

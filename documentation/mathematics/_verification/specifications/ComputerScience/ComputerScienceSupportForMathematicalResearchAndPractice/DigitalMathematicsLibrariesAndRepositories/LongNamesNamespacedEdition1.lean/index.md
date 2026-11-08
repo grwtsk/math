@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/LongNamesNamespacedEdition1.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/LongNamesNamespacedEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/LongNamesNamespacedEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/LongNamesNamespacedEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [printNameHashMap](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/LongNamesNamespacedEdition1.lean/declarations/printnamehashmap.md) | 27 | `declaration-track:15ff62b6bf401449011f97d43bf4d73ab06015064f236f0ee08013fac27c4874` |
-| 2 | `elab` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/LongNamesNamespacedEdition1.lean/declarations/elab-source-edition-2.md) | 38 | `declaration-track:9e2b7ec8f96a155603e4ab492a07845a1bd4c7e4f160eed13d26c6d99ab469c3` |
-| 3 | `elab` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/LongNamesNamespacedEdition1.lean/declarations/elab.md) | 52 | `declaration-track:1d78cf03007442646b10d4e73c56af83638d06d223d7cc84ec8129fcbb54fb9c` |
+| 1 | `def` | [printNameHashMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/LongNamesNamespacedEdition1.lean/declarations/printnamehashmap.md) | 27 | `declaration-track:15ff62b6bf401449011f97d43bf4d73ab06015064f236f0ee08013fac27c4874` |
+| 2 | `elab` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/LongNamesNamespacedEdition1.lean/declarations/elab-source-edition-2.md) | 38 | `declaration-track:9e2b7ec8f96a155603e4ab492a07845a1bd4c7e4f160eed13d26c6d99ab469c3` |
+| 3 | `elab` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/LongNamesNamespacedEdition1.lean/declarations/elab.md) | 52 | `declaration-track:1d78cf03007442646b10d4e73c56af83638d06d223d7cc84ec8129fcbb54fb9c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/NormalizationNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/NormalizationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NormalizationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NormalizationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [thetaPhi_complex_even_moment_eq](../../../../MeasureAndIntegration/NormalizationNamespaced.lean/declarations/thetaphi-complex-even-moment-eq.md) | 19 | `result-track:22f60b1c91de66d07422bdc378877339760c770a91586043a8c388a8112afbb1` |
-| 2 | `theorem` | [thetaPhi_evenBasis_integral_Ici_eq_Ioi](../../../../MeasureAndIntegration/NormalizationNamespaced.lean/declarations/thetaphi-evenbasis-integral-ici-eq-ioi.md) | 26 | `result-track:e44a725289ba960dd9be44462211dd55172d1719fc0eb13c631692164612eb0d` |
-| 3 | `theorem` | [coefficient_eq_thetaPhi_Ioi_of_even_derivative](../../../../MeasureAndIntegration/NormalizationNamespaced.lean/declarations/coefficient-eq-thetaphi-ioi-of-even-derivative.md) | 33 | `result-track:4a0118aac12e7cc01e47414d11fc889f2cab2b79433af9e89a671f46f6318508` |
-| 4 | `theorem` | [coefficient_eq_thetaPhi_Ici_of_even_derivative](../../../../MeasureAndIntegration/NormalizationNamespaced.lean/declarations/coefficient-eq-thetaphi-ici-of-even-derivative.md) | 51 | `result-track:fc37258e5d3ae51cc3b6d77fbc791db5e0cae4e604bc1cfe5e9d09b579e6a9b2` |
-| 5 | `theorem` | [thetaCoefficientFormula_of_even_derivatives](../../../../MeasureAndIntegration/NormalizationNamespaced.lean/declarations/thetacoefficientformula-of-even-derivatives.md) | 62 | `result-track:ddaf549d0e42b838451f36955d72f7e377f875a8d15f63b726362dd2e47c3aec` |
-| 6 | `theorem` | [coefficient_zero_eq_eight_integral_of_formula](../../../../MeasureAndIntegration/NormalizationNamespaced.lean/declarations/coefficient-zero-eq-eight-integral-of-formula.md) | 70 | `result-track:e7e13329e724828ce867a0c562a61b376bf8e3c61720b9e4f1860f9f4b835dca` |
-| 7 | `theorem` | [coefficient_one_eq_sixteen_integral_of_formula](../../../../MeasureAndIntegration/NormalizationNamespaced.lean/declarations/coefficient-one-eq-sixteen-integral-of-formula.md) | 77 | `result-track:14464a637b8a71720ef0b1ae26bd4515af7fad992234799d2f3762364abd5fb7` |
-| 8 | `theorem` | [coefficient_zero_pos_of_formula](../../../../MeasureAndIntegration/NormalizationNamespaced.lean/declarations/coefficient-zero-pos-of-formula.md) | 90 | `result-track:7dbebd5e1a1f831f11d49c7493cfaf026eb9cef6f198784f551c4751d22895e8` |
+| 1 | `theorem` | [thetaPhi_complex_even_moment_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NormalizationNamespaced.lean/declarations/thetaphi-complex-even-moment-eq.md) | 19 | `result-track:22f60b1c91de66d07422bdc378877339760c770a91586043a8c388a8112afbb1` |
+| 2 | `theorem` | [thetaPhi_evenBasis_integral_Ici_eq_Ioi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NormalizationNamespaced.lean/declarations/thetaphi-evenbasis-integral-ici-eq-ioi.md) | 26 | `result-track:e44a725289ba960dd9be44462211dd55172d1719fc0eb13c631692164612eb0d` |
+| 3 | `theorem` | [coefficient_eq_thetaPhi_Ioi_of_even_derivative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NormalizationNamespaced.lean/declarations/coefficient-eq-thetaphi-ioi-of-even-derivative.md) | 33 | `result-track:4a0118aac12e7cc01e47414d11fc889f2cab2b79433af9e89a671f46f6318508` |
+| 4 | `theorem` | [coefficient_eq_thetaPhi_Ici_of_even_derivative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NormalizationNamespaced.lean/declarations/coefficient-eq-thetaphi-ici-of-even-derivative.md) | 51 | `result-track:fc37258e5d3ae51cc3b6d77fbc791db5e0cae4e604bc1cfe5e9d09b579e6a9b2` |
+| 5 | `theorem` | [thetaCoefficientFormula_of_even_derivatives](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NormalizationNamespaced.lean/declarations/thetacoefficientformula-of-even-derivatives.md) | 62 | `result-track:ddaf549d0e42b838451f36955d72f7e377f875a8d15f63b726362dd2e47c3aec` |
+| 6 | `theorem` | [coefficient_zero_eq_eight_integral_of_formula](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NormalizationNamespaced.lean/declarations/coefficient-zero-eq-eight-integral-of-formula.md) | 70 | `result-track:e7e13329e724828ce867a0c562a61b376bf8e3c61720b9e4f1860f9f4b835dca` |
+| 7 | `theorem` | [coefficient_one_eq_sixteen_integral_of_formula](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NormalizationNamespaced.lean/declarations/coefficient-one-eq-sixteen-integral-of-formula.md) | 77 | `result-track:14464a637b8a71720ef0b1ae26bd4515af7fad992234799d2f3762364abd5fb7` |
+| 8 | `theorem` | [coefficient_zero_pos_of_formula](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/NormalizationNamespaced.lean/declarations/coefficient-zero-pos-of-formula.md) | 90 | `result-track:7dbebd5e1a1f831f11d49c7493cfaf026eb9cef6f198784f551c4751d22895e8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

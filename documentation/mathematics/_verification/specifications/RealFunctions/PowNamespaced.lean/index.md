@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/PowNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/PowNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PowNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PowNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,20 +58,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [hasStrictDerivAt_pow](../../../../RealFunctions/PowNamespaced.lean/declarations/hasstrictderivat-pow.md) | 39 | `result-track:7107c34c1abfcd9affc0012d43b737dd70931aeb6e01e67638aaf16b60eecf60` |
-| 2 | `theorem` | [hasDerivAt_pow](../../../../RealFunctions/PowNamespaced.lean/declarations/hasderivat-pow-source-edition-2.md) | 47 | `result-track:aa9016e57ac76873375a0775d725d896f945c0e0d45b985db5f1fb407a36be33` |
-| 3 | `theorem` | [hasDerivWithinAt_pow](../../../../RealFunctions/PowNamespaced.lean/declarations/hasderivwithinat-pow-source-edition-2.md) | 51 | `result-track:f1c514f6ffb2143b568e9451152e6917dffcdb92d312f444d7911cb1b3011de6` |
-| 4 | `theorem` | [differentiableAt_pow](../../../../RealFunctions/PowNamespaced.lean/declarations/differentiableat-pow.md) | 55 | `result-track:6edc4db80df31a37b41ac13df4eb1383c815933cdc295d10fa8665beb1ff69bc` |
-| 5 | `theorem` | [differentiableWithinAt_pow](../../../../RealFunctions/PowNamespaced.lean/declarations/differentiablewithinat-pow.md) | 58 | `result-track:5a149274522f35a2ae3bd1c830b7653e70336d71aabf1bef451d333d88d3a63a` |
-| 6 | `theorem` | [differentiable_pow](../../../../RealFunctions/PowNamespaced.lean/declarations/differentiable-pow.md) | 62 | `result-track:9f477c6ce0c59b42fd7f444cbdde0080e14c2aef0662ed96e7398113ea7085cf` |
-| 7 | `theorem` | [differentiableOn_pow](../../../../RealFunctions/PowNamespaced.lean/declarations/differentiableon-pow.md) | 64 | `result-track:80809b1d76add8209e003d7fa74bd4311b6c410fdeb973c7efaab1c35836d7c0` |
-| 8 | `theorem` | [deriv_pow](../../../../RealFunctions/PowNamespaced.lean/declarations/deriv-pow.md) | 67 | `result-track:0734bffe4654dc06875508ad62e65cbfd2f40c47ac5f6b4726d52618adea3709` |
-| 9 | `theorem` | [deriv_pow'](../../../../RealFunctions/PowNamespaced.lean/declarations/deriv-pow-source-edition-2.md) | 71 | `result-track:427fb2fc1db677e53a5077690c6e3d4d4f4b9164a3067df5244677fa7866c11b` |
-| 10 | `theorem` | [derivWithin_pow](../../../../RealFunctions/PowNamespaced.lean/declarations/derivwithin-pow-source-edition-2.md) | 74 | `result-track:b5b13dce59e15bb8173868d2e2461620bf17cc255b52a2d0ffce155d666c48fe` |
-| 11 | `theorem` | [HasDerivWithinAt.pow](../../../../RealFunctions/PowNamespaced.lean/declarations/hasderivwithinat-pow.md) | 78 | `result-track:1c075bdee28695b62c9ef842dc7e640c6d8b01aac40fe0414be6c9ab6b9f1457` |
-| 12 | `theorem` | [HasDerivAt.pow](../../../../RealFunctions/PowNamespaced.lean/declarations/hasderivat-pow.md) | 82 | `result-track:83edc7dc809309cf3b9d8b4ef923d43024bfdda3154749cb730556dd52980594` |
-| 13 | `theorem` | [derivWithin_pow'](../../../../RealFunctions/PowNamespaced.lean/declarations/derivwithin-pow.md) | 87 | `result-track:8d079fd94ea3c74a0c64d8811e27aa8fdcd2cf0765522f6df53e7207276d0647` |
-| 14 | `theorem` | [deriv_pow''](../../../../RealFunctions/PowNamespaced.lean/declarations/deriv-pow-source-edition-3.md) | 94 | `result-track:ac5b7280bba11ded1c399d7518c0ba6c000b7f812543675ab3df275937fe38f5` |
+| 1 | `theorem` | [hasStrictDerivAt_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PowNamespaced.lean/declarations/hasstrictderivat-pow.md) | 39 | `result-track:7107c34c1abfcd9affc0012d43b737dd70931aeb6e01e67638aaf16b60eecf60` |
+| 2 | `theorem` | [hasDerivAt_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PowNamespaced.lean/declarations/hasderivat-pow-source-edition-2.md) | 47 | `result-track:aa9016e57ac76873375a0775d725d896f945c0e0d45b985db5f1fb407a36be33` |
+| 3 | `theorem` | [hasDerivWithinAt_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PowNamespaced.lean/declarations/hasderivwithinat-pow-source-edition-2.md) | 51 | `result-track:f1c514f6ffb2143b568e9451152e6917dffcdb92d312f444d7911cb1b3011de6` |
+| 4 | `theorem` | [differentiableAt_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PowNamespaced.lean/declarations/differentiableat-pow.md) | 55 | `result-track:6edc4db80df31a37b41ac13df4eb1383c815933cdc295d10fa8665beb1ff69bc` |
+| 5 | `theorem` | [differentiableWithinAt_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PowNamespaced.lean/declarations/differentiablewithinat-pow.md) | 58 | `result-track:5a149274522f35a2ae3bd1c830b7653e70336d71aabf1bef451d333d88d3a63a` |
+| 6 | `theorem` | [differentiable_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PowNamespaced.lean/declarations/differentiable-pow.md) | 62 | `result-track:9f477c6ce0c59b42fd7f444cbdde0080e14c2aef0662ed96e7398113ea7085cf` |
+| 7 | `theorem` | [differentiableOn_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PowNamespaced.lean/declarations/differentiableon-pow.md) | 64 | `result-track:80809b1d76add8209e003d7fa74bd4311b6c410fdeb973c7efaab1c35836d7c0` |
+| 8 | `theorem` | [deriv_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PowNamespaced.lean/declarations/deriv-pow.md) | 67 | `result-track:0734bffe4654dc06875508ad62e65cbfd2f40c47ac5f6b4726d52618adea3709` |
+| 9 | `theorem` | [deriv_pow'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PowNamespaced.lean/declarations/deriv-pow-source-edition-2.md) | 71 | `result-track:427fb2fc1db677e53a5077690c6e3d4d4f4b9164a3067df5244677fa7866c11b` |
+| 10 | `theorem` | [derivWithin_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PowNamespaced.lean/declarations/derivwithin-pow-source-edition-2.md) | 74 | `result-track:b5b13dce59e15bb8173868d2e2461620bf17cc255b52a2d0ffce155d666c48fe` |
+| 11 | `theorem` | [HasDerivWithinAt.pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PowNamespaced.lean/declarations/hasderivwithinat-pow.md) | 78 | `result-track:1c075bdee28695b62c9ef842dc7e640c6d8b01aac40fe0414be6c9ab6b9f1457` |
+| 12 | `theorem` | [HasDerivAt.pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PowNamespaced.lean/declarations/hasderivat-pow.md) | 82 | `result-track:83edc7dc809309cf3b9d8b4ef923d43024bfdda3154749cb730556dd52980594` |
+| 13 | `theorem` | [derivWithin_pow'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PowNamespaced.lean/declarations/derivwithin-pow.md) | 87 | `result-track:8d079fd94ea3c74a0c64d8811e27aa8fdcd2cf0765522f6df53e7207276d0647` |
+| 14 | `theorem` | [deriv_pow''](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PowNamespaced.lean/declarations/deriv-pow-source-edition-3.md) | 94 | `result-track:ac5b7280bba11ded1c399d7518c0ba6c000b7f812543675ab3df275937fe38f5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupWithZeroBounds.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupWithZeroBounds.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupWithZeroBounds.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupWithZeroBounds.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [BddAbove.range_comp_of_nonneg](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupWithZeroBounds.lean/declarations/bddabove-range-comp-of-nonneg.md) | 18 | `result-track:7edfa6ac87ae3077fa2778649f179703960f614f7874d6ccaf745a6dcbc0a763` |
-| 2 | `theorem` | [bddAbove_range_mul](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupWithZeroBounds.lean/declarations/bddabove-range-mul.md) | 30 | `result-track:85fa2023a39070911e07f6b99abd9485d5b5083de2448fdd8bf49dc55588c685` |
+| 1 | `lemma` | [BddAbove.range_comp_of_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupWithZeroBounds.lean/declarations/bddabove-range-comp-of-nonneg.md) | 18 | `result-track:7edfa6ac87ae3077fa2778649f179703960f614f7874d6ccaf745a6dcbc0a763` |
+| 2 | `theorem` | [bddAbove_range_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupWithZeroBounds.lean/declarations/bddabove-range-mul.md) | 30 | `result-track:85fa2023a39070911e07f6b99abd9485d5b5083de2448fdd8bf49dc55588c685` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

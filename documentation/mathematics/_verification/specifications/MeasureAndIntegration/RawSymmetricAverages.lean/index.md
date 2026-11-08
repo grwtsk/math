@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/RawSymmetricAverages.lean/index.md) · [Full source](../../../../MeasureAndIntegration/RawSymmetricAverages.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RawSymmetricAverages.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RawSymmetricAverages.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Chebyshev.FirstRieszWeakRawLimit`](../../../../MeasureAndIntegration/FirstRieszWeakRawLimit.lean/index.md) — import line 3; pinned internal source present.
-- [`GRWTSK.NumberTheory.Chebyshev.RieszDiagonalUnsmoothing`](../../../../NumberTheory/RieszDiagonalUnsmoothing.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.FirstRieszWeakRawLimit`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FirstRieszWeakRawLimit.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.RieszDiagonalUnsmoothing`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/RieszDiagonalUnsmoothing.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [rawAverage](../../../../MeasureAndIntegration/RawSymmetricAverages.lean/declarations/rawaverage.md) | 18 | `declaration-track:c7bd9e107c52dfc4ec64bdd63d3b3815c37e8c7305051c5a49d27eff6cfcf69d` |
-| 2 | `def` | [rawAverageTailBudget](../../../../MeasureAndIntegration/RawSymmetricAverages.lean/declarations/rawaveragetailbudget.md) | 20 | `declaration-track:ff101002474e256249574aa67aabff3eca8ae627e8035a7d7be0466f62419da8` |
-| 3 | `def` | [rawMeanOscillation](../../../../MeasureAndIntegration/RawSymmetricAverages.lean/declarations/rawmeanoscillation.md) | 22 | `declaration-track:80d12740a1e5dfd4afa18c17fa93cbdcdd6b015c05e044a3622910ed63248078` |
-| 4 | `theorem` | [norm_source_sub_average_le](../../../../MeasureAndIntegration/RawSymmetricAverages.lean/declarations/norm-source-sub-average-le.md) | 25 | `result-track:ff9f44223a4569c7e728cd28c5db1514f46589796a847d264bd09df3d0fa8226` |
-| 5 | `theorem` | [rawAverageTailBudget_tendsto_zero](../../../../MeasureAndIntegration/RawSymmetricAverages.lean/declarations/rawaveragetailbudget-tendsto-zero.md) | 36 | `result-track:767a20ddbd9f7563ffabd7d2f374a2530e4d2be8a1104569cd1b9d734f0103f3` |
-| 6 | `theorem` | [exists_raw_average_reconstruction](../../../../MeasureAndIntegration/RawSymmetricAverages.lean/declarations/exists-raw-average-reconstruction.md) | 43 | `result-track:315d120183489f3e5eba0879bf3e50ea484b08f50f8a9369c958196f6e266cce` |
-| 7 | `theorem` | [norm_average_sub_point_le](../../../../MeasureAndIntegration/RawSymmetricAverages.lean/declarations/norm-average-sub-point-le.md) | 65 | `result-track:68b8fc61b67df07d55d90ce869cd3e2e82b92c61dc37c801818cd7087485d070` |
-| 8 | `theorem` | [norm_source_sub_raw_le](../../../../MeasureAndIntegration/RawSymmetricAverages.lean/declarations/norm-source-sub-raw-le.md) | 87 | `result-track:0d9e01e0c73c4c677449da3ab4181beb467c6eb9cd09400e43f3db9ed65839d8` |
-| 9 | `theorem` | [exists_raw_reconstruction_tauberian](../../../../MeasureAndIntegration/RawSymmetricAverages.lean/declarations/exists-raw-reconstruction-tauberian.md) | 96 | `result-track:f50ff82a97974d409e25f9bc96bef8cabb75107d26cbf623bdf2009bc87020ad` |
+| 1 | `def` | [rawAverage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RawSymmetricAverages.lean/declarations/rawaverage.md) | 18 | `declaration-track:c7bd9e107c52dfc4ec64bdd63d3b3815c37e8c7305051c5a49d27eff6cfcf69d` |
+| 2 | `def` | [rawAverageTailBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RawSymmetricAverages.lean/declarations/rawaveragetailbudget.md) | 20 | `declaration-track:ff101002474e256249574aa67aabff3eca8ae627e8035a7d7be0466f62419da8` |
+| 3 | `def` | [rawMeanOscillation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RawSymmetricAverages.lean/declarations/rawmeanoscillation.md) | 22 | `declaration-track:80d12740a1e5dfd4afa18c17fa93cbdcdd6b015c05e044a3622910ed63248078` |
+| 4 | `theorem` | [norm_source_sub_average_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RawSymmetricAverages.lean/declarations/norm-source-sub-average-le.md) | 25 | `result-track:ff9f44223a4569c7e728cd28c5db1514f46589796a847d264bd09df3d0fa8226` |
+| 5 | `theorem` | [rawAverageTailBudget_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RawSymmetricAverages.lean/declarations/rawaveragetailbudget-tendsto-zero.md) | 36 | `result-track:767a20ddbd9f7563ffabd7d2f374a2530e4d2be8a1104569cd1b9d734f0103f3` |
+| 6 | `theorem` | [exists_raw_average_reconstruction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RawSymmetricAverages.lean/declarations/exists-raw-average-reconstruction.md) | 43 | `result-track:315d120183489f3e5eba0879bf3e50ea484b08f50f8a9369c958196f6e266cce` |
+| 7 | `theorem` | [norm_average_sub_point_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RawSymmetricAverages.lean/declarations/norm-average-sub-point-le.md) | 65 | `result-track:68b8fc61b67df07d55d90ce869cd3e2e82b92c61dc37c801818cd7087485d070` |
+| 8 | `theorem` | [norm_source_sub_raw_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RawSymmetricAverages.lean/declarations/norm-source-sub-raw-le.md) | 87 | `result-track:0d9e01e0c73c4c677449da3ab4181beb467c6eb9cd09400e43f3db9ed65839d8` |
+| 9 | `theorem` | [exists_raw_reconstruction_tauberian](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RawSymmetricAverages.lean/declarations/exists-raw-reconstruction-tauberian.md) | 96 | `result-track:f50ff82a97974d409e25f9bc96bef8cabb75107d26cbf623bdf2009bc87020ad` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

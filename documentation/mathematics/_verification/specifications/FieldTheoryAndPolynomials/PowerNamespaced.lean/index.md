@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FieldTheoryAndPolynomials/PowerNamespaced.lean/index.md) · [Full source](../../../../FieldTheoryAndPolynomials/PowerNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/PowerNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/PowerNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Odd.neg_zpow](../../../../FieldTheoryAndPolynomials/PowerNamespaced.lean/declarations/odd-neg-zpow.md) | 32 | `result-track:e5cf7a553e7a44b0083ea666d1249f9184755819008c28feb1d61d9a1fbb74dc` |
-| 2 | `theorem` | [Odd.neg_one_zpow](../../../../FieldTheoryAndPolynomials/PowerNamespaced.lean/declarations/odd-neg-one-zpow.md) | 38 | `result-track:fa348aa4330b7ed36b85e1392a5b99d07842d83de312a76c06728b18601ed6b1` |
+| 1 | `theorem` | [Odd.neg_zpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/PowerNamespaced.lean/declarations/odd-neg-zpow.md) | 32 | `result-track:e5cf7a553e7a44b0083ea666d1249f9184755819008c28feb1d61d9a1fbb74dc` |
+| 2 | `theorem` | [Odd.neg_one_zpow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/PowerNamespaced.lean/declarations/odd-neg-one-zpow.md) | 38 | `result-track:fa348aa4330b7ed36b85e1392a5b99d07842d83de312a76c06728b18601ed6b1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

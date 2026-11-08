@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OfSection.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OfSection.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OfSection.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OfSection.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ofSection](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OfSection.lean/declarations/ofsection.md) | 33 | `declaration-track:42fd007867729783930a7e0760d82161e53a0f7391e801d150d126f58dca1cb8` |
-| 2 | `lemma` | [mem_ofSection_obj](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OfSection.lean/declarations/mem-ofsection-obj.md) | 39 | `result-track:70388a761ff5d9937296edfb8aa48a305ccc74fb59e3e8ca4cd71dcf820df0d1` |
-| 3 | `lemma` | [ofSection_le_iff](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OfSection.lean/declarations/ofsection-le-iff.md) | 42 | `result-track:cd0752cf61090158d301377d6e011e7134ef7fa486e5ba016b38da0875a78601` |
-| 4 | `lemma` | [ofSection_image](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OfSection.lean/declarations/ofsection-image.md) | 51 | `result-track:ea7f0abc487ced90f892318e79429141bd5ec98b5b6fadd7d18e816c3a616d9a` |
-| 5 | `lemma` | [ofSection_eq_range](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OfSection.lean/declarations/ofsection-eq-range-source-edition-2.md) | 65 | `result-track:97f66f97c85b16adc54478a3d65a92760c103ef055db40b0b7452d7cb953919d` |
-| 6 | `lemma` | [range_eq_ofSection](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OfSection.lean/declarations/range-eq-ofsection-source-edition-2.md) | 76 | `result-track:c678d6f8070c67bbc5ab594e1d1cc8fc442c4dccc8e2ee396a013c2291b15560` |
-| 7 | `lemma` | [ofSection_eq_range'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OfSection.lean/declarations/ofsection-eq-range.md) | 86 | `result-track:249ce2b860b93e95d8cc8dfa4aa61c0f1789cebe0973bb061dfcde54d7bda4da` |
-| 8 | `lemma` | [range_eq_ofSection'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OfSection.lean/declarations/range-eq-ofsection.md) | 97 | `result-track:8d5be58181b056c89f89327d6a670e42a6f4490ccfd9d813930638cdaba7f11f` |
+| 1 | `def` | [ofSection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OfSection.lean/declarations/ofsection.md) | 33 | `declaration-track:42fd007867729783930a7e0760d82161e53a0f7391e801d150d126f58dca1cb8` |
+| 2 | `lemma` | [mem_ofSection_obj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OfSection.lean/declarations/mem-ofsection-obj.md) | 39 | `result-track:70388a761ff5d9937296edfb8aa48a305ccc74fb59e3e8ca4cd71dcf820df0d1` |
+| 3 | `lemma` | [ofSection_le_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OfSection.lean/declarations/ofsection-le-iff.md) | 42 | `result-track:cd0752cf61090158d301377d6e011e7134ef7fa486e5ba016b38da0875a78601` |
+| 4 | `lemma` | [ofSection_image](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OfSection.lean/declarations/ofsection-image.md) | 51 | `result-track:ea7f0abc487ced90f892318e79429141bd5ec98b5b6fadd7d18e816c3a616d9a` |
+| 5 | `lemma` | [ofSection_eq_range](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OfSection.lean/declarations/ofsection-eq-range-source-edition-2.md) | 65 | `result-track:97f66f97c85b16adc54478a3d65a92760c103ef055db40b0b7452d7cb953919d` |
+| 6 | `lemma` | [range_eq_ofSection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OfSection.lean/declarations/range-eq-ofsection-source-edition-2.md) | 76 | `result-track:c678d6f8070c67bbc5ab594e1d1cc8fc442c4dccc8e2ee396a013c2291b15560` |
+| 7 | `lemma` | [ofSection_eq_range'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OfSection.lean/declarations/ofsection-eq-range.md) | 86 | `result-track:249ce2b860b93e95d8cc8dfa4aa61c0f1789cebe0973bb061dfcde54d7bda4da` |
+| 8 | `lemma` | [range_eq_ofSection'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/OfSection.lean/declarations/range-eq-ofsection.md) | 97 | `result-track:8d5be58181b056c89f89327d6a670e42a6f4490ccfd9d813930638cdaba7f11f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

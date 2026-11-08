@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LeftRightNthConstructor.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LeftRightNthConstructor.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LeftRightNthConstructor.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LeftRightNthConstructor.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [nthConstructor](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LeftRightNthConstructor.lean/declarations/nthconstructor.md) | 18 | `declaration-track:20917e0385ef80f4bed55a582e8409805bf283656f8cabb754b9a9307c9fb956` |
-| 2 | `elab` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LeftRightNthConstructor.lean/declarations/elab-source-edition-2.md) | 43 | `declaration-track:fc10d32bbc93c9e5a32d40cbe03f1c2fbecf50ad250ffab73369c50a86a98b91` |
-| 3 | `elab` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LeftRightNthConstructor.lean/declarations/elab.md) | 54 | `declaration-track:8089bbad1265f58378f878578dfac0732d1a44658e85715226025baa4a761487` |
+| 1 | `def` | [nthConstructor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LeftRightNthConstructor.lean/declarations/nthconstructor.md) | 18 | `declaration-track:20917e0385ef80f4bed55a582e8409805bf283656f8cabb754b9a9307c9fb956` |
+| 2 | `elab` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LeftRightNthConstructor.lean/declarations/elab-source-edition-2.md) | 43 | `declaration-track:fc10d32bbc93c9e5a32d40cbe03f1c2fbecf50ad250ffab73369c50a86a98b91` |
+| 3 | `elab` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LeftRightNthConstructor.lean/declarations/elab.md) | 54 | `declaration-track:8089bbad1265f58378f878578dfac0732d1a44658e85715226025baa4a761487` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

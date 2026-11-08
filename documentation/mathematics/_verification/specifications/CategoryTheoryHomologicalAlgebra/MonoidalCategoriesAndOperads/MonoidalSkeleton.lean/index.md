@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalSkeleton.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalSkeleton.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalSkeleton.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalSkeleton.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [monoidOfSkeletalMonoidal](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalSkeleton.lean/declarations/monoidofskeletalmonoidal.md) | 30 | `declaration-track:b4a4d2faf342d5c01e7f511154af4ef276c04c9dad4d92d45f5f2a843d624018` |
-| 2 | `def` | [commMonoidOfSkeletalBraided](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalSkeleton.lean/declarations/commmonoidofskeletalbraided.md) | 39 | `declaration-track:9c0cbcb159b42b3a3a8d4a7189b2f252b0822f483a8c52078ffa3b7a3bcb4b93` |
-| 3 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalSkeleton.lean/declarations/instance-source-edition-2.md) | 45 | `declaration-track:800d6d2d9ef9380159df4fce79e9bca01e047bddc09a075a5eb32d69ce0b08f6` |
-| 4 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalSkeleton.lean/declarations/instance.md) | 52 | `declaration-track:454b2ef38220a80b95247b6e826f44bf351cdaa664137039a57749d98a64659a` |
+| 1 | `def` | [monoidOfSkeletalMonoidal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalSkeleton.lean/declarations/monoidofskeletalmonoidal.md) | 30 | `declaration-track:b4a4d2faf342d5c01e7f511154af4ef276c04c9dad4d92d45f5f2a843d624018` |
+| 2 | `def` | [commMonoidOfSkeletalBraided](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalSkeleton.lean/declarations/commmonoidofskeletalbraided.md) | 39 | `declaration-track:9c0cbcb159b42b3a3a8d4a7189b2f252b0822f483a8c52078ffa3b7a3bcb4b93` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalSkeleton.lean/declarations/instance-source-edition-2.md) | 45 | `declaration-track:800d6d2d9ef9380159df4fce79e9bca01e047bddc09a075a5eb32d69ce0b08f6` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalSkeleton.lean/declarations/instance.md) | 52 | `declaration-track:454b2ef38220a80b95247b6e826f44bf351cdaa664137039a57749d98a64659a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

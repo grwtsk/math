@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupRingActionBasic.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupRingActionBasic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupRingActionBasic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupRingActionBasic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [MulSemiringAction](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupRingActionBasic.lean/declarations/mulsemiringaction.md) | 37 | `declaration-track:d90677fa2f2dc4deb1a5cea181beea365f91ea383ff275ffdb561034fe066f54` |
-| 2 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupRingActionBasic.lean/declarations/instance.md) | 52 | `declaration-track:681f21f5abf3635f92b1bc695fdd1930c7f54c1c74dd6d31440f6a8cef26f944` |
-| 3 | `def` | [MulSemiringAction.toRingHom](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupRingActionBasic.lean/declarations/mulsemiringaction-toringhom.md) | 59 | `declaration-track:5f06ec927926405ec5db81d2c1c6cda8bc102f4650825f1f6a9507ad3703284e` |
-| 4 | `theorem` | [toRingHom_injective](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupRingActionBasic.lean/declarations/toringhom-injective.md) | 64 | `result-track:f9440f7d10e9c2858ede8d023a1f7f933a5cbb10aeae40c769ec0d498097ed2b` |
-| 5 | `def` | [MulSemiringAction.toRingEquiv](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupRingActionBasic.lean/declarations/mulsemiringaction-toringequiv.md) | 71 | `declaration-track:c4f4573de86ce7a6d73adcc60cc3c2de0e3f3a3c2a25af04f6aadda46545d417` |
-| 6 | `def` | [MulSemiringAction.compHom](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupRingActionBasic.lean/declarations/mulsemiringaction-comphom.md) | 84 | `declaration-track:8fca22f39c4f73620e0f818ce2343e3e3164655950333e7203695a1ac0e4e3eb` |
-| 7 | `theorem` | [smul_inv''](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/GroupRingActionBasic.lean/declarations/smul-inv.md) | 99 | `result-track:0e8bd8824164a8bd069588eeb114b14471db317ee5ce1e92ba166f88e2597149` |
+| 1 | `class` | [MulSemiringAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupRingActionBasic.lean/declarations/mulsemiringaction.md) | 37 | `declaration-track:d90677fa2f2dc4deb1a5cea181beea365f91ea383ff275ffdb561034fe066f54` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupRingActionBasic.lean/declarations/instance.md) | 52 | `declaration-track:681f21f5abf3635f92b1bc695fdd1930c7f54c1c74dd6d31440f6a8cef26f944` |
+| 3 | `def` | [MulSemiringAction.toRingHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupRingActionBasic.lean/declarations/mulsemiringaction-toringhom.md) | 59 | `declaration-track:5f06ec927926405ec5db81d2c1c6cda8bc102f4650825f1f6a9507ad3703284e` |
+| 4 | `theorem` | [toRingHom_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupRingActionBasic.lean/declarations/toringhom-injective.md) | 64 | `result-track:f9440f7d10e9c2858ede8d023a1f7f933a5cbb10aeae40c769ec0d498097ed2b` |
+| 5 | `def` | [MulSemiringAction.toRingEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupRingActionBasic.lean/declarations/mulsemiringaction-toringequiv.md) | 71 | `declaration-track:c4f4573de86ce7a6d73adcc60cc3c2de0e3f3a3c2a25af04f6aadda46545d417` |
+| 6 | `def` | [MulSemiringAction.compHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupRingActionBasic.lean/declarations/mulsemiringaction-comphom.md) | 84 | `declaration-track:8fca22f39c4f73620e0f818ce2343e3e3164655950333e7203695a1ac0e4e3eb` |
+| 7 | `theorem` | [smul_inv''](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/GroupRingActionBasic.lean/declarations/smul-inv.md) | 99 | `result-track:0e8bd8824164a8bd069588eeb114b14471db317ee5ce1e92ba166f88e2597149` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

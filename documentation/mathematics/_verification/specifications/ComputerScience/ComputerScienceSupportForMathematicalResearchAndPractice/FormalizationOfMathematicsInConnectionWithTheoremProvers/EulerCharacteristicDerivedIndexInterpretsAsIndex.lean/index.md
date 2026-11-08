@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EulerCharacteristicDerivedIndexInterpretsAsIndex.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EulerCharacteristicDerivedIndexInterpretsAsIndex.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EulerCharacteristicDerivedIndexInterpretsAsIndex.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EulerCharacteristicDerivedIndexInterpretsAsIndex.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [euler_characteristic_signed_sum](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EulerCharacteristicDerivedIndexInterpretsAsIndex.lean/declarations/euler-characteristic-signed-sum.md) | 19 | `result-track:703dc58f5651762ac2393bcefac7a9e98c0205b8aefda8f87635821e69a08fb0` |
-| 2 | `theorem` | [derived_index_interprets_as_index](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EulerCharacteristicDerivedIndexInterpretsAsIndex.lean/declarations/derived-index-interprets-as-index.md) | 25 | `result-track:87e2273364e590b9efa70c7d7849b5bbfbbb75e5849763406fac5e3d6cf352cd` |
-| 3 | `theorem` | [derived_index_has_euler_characteristic](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EulerCharacteristicDerivedIndexInterpretsAsIndex.lean/declarations/derived-index-has-euler-characteristic.md) | 30 | `result-track:0d92b833ea83eec2eef3333024ae9b93c35c8aed5024e1eb730444eea0e343b4` |
+| 1 | `theorem` | [euler_characteristic_signed_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EulerCharacteristicDerivedIndexInterpretsAsIndex.lean/declarations/euler-characteristic-signed-sum.md) | 19 | `result-track:703dc58f5651762ac2393bcefac7a9e98c0205b8aefda8f87635821e69a08fb0` |
+| 2 | `theorem` | [derived_index_interprets_as_index](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EulerCharacteristicDerivedIndexInterpretsAsIndex.lean/declarations/derived-index-interprets-as-index.md) | 25 | `result-track:87e2273364e590b9efa70c7d7849b5bbfbbb75e5849763406fac5e3d6cf352cd` |
+| 3 | `theorem` | [derived_index_has_euler_characteristic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EulerCharacteristicDerivedIndexInterpretsAsIndex.lean/declarations/derived-index-has-euler-characteristic.md) | 30 | `result-track:0d92b833ea83eec2eef3333024ae9b93c35c8aed5024e1eb730444eea0e343b4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

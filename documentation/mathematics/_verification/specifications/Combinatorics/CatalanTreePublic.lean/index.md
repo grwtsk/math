@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/CatalanTreePublic.lean/index.md) · [Full source](../../../../Combinatorics/CatalanTreePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CatalanTreePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CatalanTreePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [pairwiseNode](../../../../Combinatorics/CatalanTreePublic.lean/declarations/pairwisenode.md) | 33 | `declaration-track:f0d9d341208b3be19026cfc14a3cd1a2720f5471a205b6ee7510f8e8a99fd186` |
-| 2 | `def` | [treesOfNumNodesEq](../../../../Combinatorics/CatalanTreePublic.lean/declarations/treesofnumnodeseq.md) | 37 | `declaration-track:debf694584c0e97eacb031b707276491ea1a92f849a2f258b911c1e6671b3f43` |
-| 3 | `abbrev` | [_root_.Tree.treesOfNumNodesEq](../../../../Combinatorics/CatalanTreePublic.lean/declarations/root-tree-treesofnumnodeseq.md) | 48 | `declaration-track:d15cb75a39e3b27413597d226b4a3bf26d715a20d2cf07a9196c6af83990beff` |
-| 4 | `theorem` | [treesOfNumNodesEq_zero](../../../../Combinatorics/CatalanTreePublic.lean/declarations/treesofnumnodeseq-zero.md) | 52 | `result-track:f30f17bbaf98356e41633366a44c370a7ba1c28b86e7554e77ca0824dc5b4ca3` |
-| 5 | `theorem` | [treesOfNumNodesEq_succ](../../../../Combinatorics/CatalanTreePublic.lean/declarations/treesofnumnodeseq-succ.md) | 54 | `result-track:c476d00722bbd2aa279197bc697a5bd4b7595733e5051879002e56400c9566a5` |
-| 6 | `theorem` | [mem_treesOfNumNodesEq](../../../../Combinatorics/CatalanTreePublic.lean/declarations/mem-treesofnumnodeseq.md) | 64 | `result-track:41c115cdb31b976ceb6902716520177c99a8ae5c3148db57a00239ead382245f` |
-| 7 | `theorem` | [mem_treesOfNumNodesEq_numNodes](../../../../Combinatorics/CatalanTreePublic.lean/declarations/mem-treesofnumnodeseq-numnodes.md) | 69 | `result-track:2394cb3cef64fc6412978d744198a30271408cde0d500a7e89beeb63e79f65b5` |
-| 8 | `theorem` | [coe_treesOfNumNodesEq](../../../../Combinatorics/CatalanTreePublic.lean/declarations/coe-treesofnumnodeseq.md) | 73 | `result-track:8084019d37d33f1a8971db3ae2121ad4d6189d68feed10d7674e4c5839ce2bfe` |
-| 9 | `theorem` | [treesOfNumNodesEq_card_eq_catalan](../../../../Combinatorics/CatalanTreePublic.lean/declarations/treesofnumnodeseq-card-eq-catalan.md) | 77 | `result-track:f5045ec0c4166f585da15d904c93761cb09dfd9e13b996a6a630fdfd11ccbaf3` |
+| 1 | `abbrev` | [pairwiseNode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CatalanTreePublic.lean/declarations/pairwisenode.md) | 33 | `declaration-track:f0d9d341208b3be19026cfc14a3cd1a2720f5471a205b6ee7510f8e8a99fd186` |
+| 2 | `def` | [treesOfNumNodesEq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CatalanTreePublic.lean/declarations/treesofnumnodeseq.md) | 37 | `declaration-track:debf694584c0e97eacb031b707276491ea1a92f849a2f258b911c1e6671b3f43` |
+| 3 | `abbrev` | [_root_.Tree.treesOfNumNodesEq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CatalanTreePublic.lean/declarations/root-tree-treesofnumnodeseq.md) | 48 | `declaration-track:d15cb75a39e3b27413597d226b4a3bf26d715a20d2cf07a9196c6af83990beff` |
+| 4 | `theorem` | [treesOfNumNodesEq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CatalanTreePublic.lean/declarations/treesofnumnodeseq-zero.md) | 52 | `result-track:f30f17bbaf98356e41633366a44c370a7ba1c28b86e7554e77ca0824dc5b4ca3` |
+| 5 | `theorem` | [treesOfNumNodesEq_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CatalanTreePublic.lean/declarations/treesofnumnodeseq-succ.md) | 54 | `result-track:c476d00722bbd2aa279197bc697a5bd4b7595733e5051879002e56400c9566a5` |
+| 6 | `theorem` | [mem_treesOfNumNodesEq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CatalanTreePublic.lean/declarations/mem-treesofnumnodeseq.md) | 64 | `result-track:41c115cdb31b976ceb6902716520177c99a8ae5c3148db57a00239ead382245f` |
+| 7 | `theorem` | [mem_treesOfNumNodesEq_numNodes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CatalanTreePublic.lean/declarations/mem-treesofnumnodeseq-numnodes.md) | 69 | `result-track:2394cb3cef64fc6412978d744198a30271408cde0d500a7e89beeb63e79f65b5` |
+| 8 | `theorem` | [coe_treesOfNumNodesEq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CatalanTreePublic.lean/declarations/coe-treesofnumnodeseq.md) | 73 | `result-track:8084019d37d33f1a8971db3ae2121ad4d6189d68feed10d7674e4c5839ce2bfe` |
+| 9 | `theorem` | [treesOfNumNodesEq_card_eq_catalan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CatalanTreePublic.lean/declarations/treesofnumnodeseq-card-eq-catalan.md) | 77 | `result-track:f5045ec0c4166f585da15d904c93761cb09dfd9e13b996a6a630fdfd11ccbaf3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

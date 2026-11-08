@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/Action.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/Action.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/Action.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/Action.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,13 +60,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [smul_mono_right](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/Action.lean/declarations/smul-mono-right.md) | 21 | `result-track:c596ebb6c9ef65c0b0d24a9eb79862d18767b3d22e655e7ca2f316c962d0aac5` |
-| 2 | `theorem` | [smul_le_smul_left](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/Action.lean/declarations/smul-le-smul-left.md) | 27 | `result-track:f58c5b3941db7d638c19b3c5ebf722620d01580d4858c99c00f52319aaf47666` |
-| 3 | `theorem` | [smul_inf_le](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/Action.lean/declarations/smul-inf-le.md) | 32 | `result-track:f0af0c08f79f3d7664ecbc47552ebbb985bdb4a2253316653cfc9030a38e9205` |
-| 4 | `theorem` | [smul_iInf_le](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/Action.lean/declarations/smul-iinf-le.md) | 36 | `result-track:bb08af183ba30d0eb0318c41630e13b4b0005a645c0dbbc1f2b4943aaa5859e1` |
-| 5 | `theorem` | [smul_strictMono_right](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/Action.lean/declarations/smul-strictmono-right.md) | 41 | `result-track:4c61fd92f4555178bc82733005db13e728fa019a5d9381c1899e95c6f10b908e` |
-| 6 | `lemma` | [le_pow_smul](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/Action.lean/declarations/le-pow-smul.md) | 45 | `result-track:1978853514feffaccd1a70a212c76343e71a9650cef0e51fb9233bebac128256` |
-| 7 | `lemma` | [pow_smul_le](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/Action.lean/declarations/pow-smul-le.md) | 54 | `result-track:879759bb0dfe01168a57d2611dc6276879e06995cf727bcd45c567c8b4ca699d` |
+| 1 | `theorem` | [smul_mono_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/Action.lean/declarations/smul-mono-right.md) | 21 | `result-track:c596ebb6c9ef65c0b0d24a9eb79862d18767b3d22e655e7ca2f316c962d0aac5` |
+| 2 | `theorem` | [smul_le_smul_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/Action.lean/declarations/smul-le-smul-left.md) | 27 | `result-track:f58c5b3941db7d638c19b3c5ebf722620d01580d4858c99c00f52319aaf47666` |
+| 3 | `theorem` | [smul_inf_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/Action.lean/declarations/smul-inf-le.md) | 32 | `result-track:f0af0c08f79f3d7664ecbc47552ebbb985bdb4a2253316653cfc9030a38e9205` |
+| 4 | `theorem` | [smul_iInf_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/Action.lean/declarations/smul-iinf-le.md) | 36 | `result-track:bb08af183ba30d0eb0318c41630e13b4b0005a645c0dbbc1f2b4943aaa5859e1` |
+| 5 | `theorem` | [smul_strictMono_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/Action.lean/declarations/smul-strictmono-right.md) | 41 | `result-track:4c61fd92f4555178bc82733005db13e728fa019a5d9381c1899e95c6f10b908e` |
+| 6 | `lemma` | [le_pow_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/Action.lean/declarations/le-pow-smul.md) | 45 | `result-track:1978853514feffaccd1a70a212c76343e71a9650cef0e51fb9233bebac128256` |
+| 7 | `lemma` | [pow_smul_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/Action.lean/declarations/pow-smul-le.md) | 54 | `result-track:879759bb0dfe01168a57d2611dc6276879e06995cf727bcd45c567c8b4ca699d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/AnchorIndex.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/AnchorIndex.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AnchorIndex.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AnchorIndex.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [euclidAnchor](../../../../../ComputerScience/AlgorithmsInComputerScience/AnchorIndex.lean/declarations/euclidanchor.md) | 14 | `declaration-track:790714c1f3cb5bac38883bc56a79753402d9892c116e32ab3632da29960d58b2` |
-| 2 | `def` | [eulerProductAnchor](../../../../../ComputerScience/AlgorithmsInComputerScience/AnchorIndex.lean/declarations/eulerproductanchor.md) | 23 | `declaration-track:1af7e4c85f2d5b75b74302712f0f0327090f9276f10323c7a32c067e9b28bc03` |
-| 3 | `def` | [dirichletSeriesAnchor](../../../../../ComputerScience/AlgorithmsInComputerScience/AnchorIndex.lean/declarations/dirichletseriesanchor.md) | 32 | `declaration-track:0d9440fe1028d66abbda42cfa4bc7fa82014d510b0ac4b511fe0a9b6ca8f8433` |
-| 4 | `def` | [pntAnchor](../../../../../ComputerScience/AlgorithmsInComputerScience/AnchorIndex.lean/declarations/pntanchor.md) | 41 | `declaration-track:4d16102d7a5ac2c62fdcb8841abdf885d9c8dfae5d03a8dfe4e6895f76ac2033` |
-| 5 | `def` | [prismaticTorsionAnchor](../../../../../ComputerScience/AlgorithmsInComputerScience/AnchorIndex.lean/declarations/prismatictorsionanchor.md) | 50 | `declaration-track:8aff29f3a1c177a78c6a4c13a88ebe50936fb36f7ffbe2e7af2c7a938b843ffc` |
-| 6 | `def` | [ricciFlowSurgeryAnchor](../../../../../ComputerScience/AlgorithmsInComputerScience/AnchorIndex.lean/declarations/ricciflowsurgeryanchor.md) | 59 | `declaration-track:4fc5760c19426f06a2c79c684574394c0e9417c5e08f73831af3dca2c26b2e3b` |
-| 7 | `def` | [allAnchors](../../../../../ComputerScience/AlgorithmsInComputerScience/AnchorIndex.lean/declarations/allanchors.md) | 68 | `declaration-track:5b3d7880242b8c8a02351345c2732a332d950e93614fd67b94b2416094aac4d9` |
+| 1 | `def` | [euclidAnchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AnchorIndex.lean/declarations/euclidanchor.md) | 14 | `declaration-track:790714c1f3cb5bac38883bc56a79753402d9892c116e32ab3632da29960d58b2` |
+| 2 | `def` | [eulerProductAnchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AnchorIndex.lean/declarations/eulerproductanchor.md) | 23 | `declaration-track:1af7e4c85f2d5b75b74302712f0f0327090f9276f10323c7a32c067e9b28bc03` |
+| 3 | `def` | [dirichletSeriesAnchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AnchorIndex.lean/declarations/dirichletseriesanchor.md) | 32 | `declaration-track:0d9440fe1028d66abbda42cfa4bc7fa82014d510b0ac4b511fe0a9b6ca8f8433` |
+| 4 | `def` | [pntAnchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AnchorIndex.lean/declarations/pntanchor.md) | 41 | `declaration-track:4d16102d7a5ac2c62fdcb8841abdf885d9c8dfae5d03a8dfe4e6895f76ac2033` |
+| 5 | `def` | [prismaticTorsionAnchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AnchorIndex.lean/declarations/prismatictorsionanchor.md) | 50 | `declaration-track:8aff29f3a1c177a78c6a4c13a88ebe50936fb36f7ffbe2e7af2c7a938b843ffc` |
+| 6 | `def` | [ricciFlowSurgeryAnchor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AnchorIndex.lean/declarations/ricciflowsurgeryanchor.md) | 59 | `declaration-track:4fc5760c19426f06a2c79c684574394c0e9417c5e08f73831af3dca2c26b2e3b` |
+| 7 | `def` | [allAnchors](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/AnchorIndex.lean/declarations/allanchors.md) | 68 | `declaration-track:5b3d7880242b8c8a02351345c2732a332d950e93614fd67b94b2416094aac4d9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConstructiveDerivation.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConstructiveDerivation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ConstructiveDerivation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ConstructiveDerivation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [Formula](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConstructiveDerivation.lean/declarations/formula.md) | 14 | `declaration-track:04eb7cccb7c2ddddac765b73b3701d5b802ab18187265f67c045c055dd826c7c` |
-| 2 | `def` | [Meaning](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConstructiveDerivation.lean/declarations/meaning.md) | 22 | `declaration-track:90aef62dde11f77b158b90ee5489e619f80e3854d8f66675335d682b964a82f0` |
-| 3 | `inductive` | [Derives](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConstructiveDerivation.lean/declarations/derives.md) | 30 | `declaration-track:3a8c19857ce97eabea525f519d3c0486699068227988cb8a38c062e6e68b874e` |
-| 4 | `theorem` | [sound](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConstructiveDerivation.lean/declarations/sound.md) | 47 | `result-track:87ce7245d4f8f9761698b1b23031aaf929c5a3e8ba1c7adc79479ceedec9c760` |
-| 5 | `theorem` | [closed_sound](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConstructiveDerivation.lean/declarations/closed-sound.md) | 82 | `result-track:e92cc08b0f53152b38bda181285b9ceba1cf1da47f0d78ac7d399c05a2dbb260` |
-| 6 | `theorem` | [no_closed_falsity](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConstructiveDerivation.lean/declarations/no-closed-falsity.md) | 86 | `result-track:efec4ccbb1be03c836d760960b2bc6d53ebd4c3fe2ad6087bd75551dd89e0107` |
+| 1 | `inductive` | [Formula](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ConstructiveDerivation.lean/declarations/formula.md) | 14 | `declaration-track:04eb7cccb7c2ddddac765b73b3701d5b802ab18187265f67c045c055dd826c7c` |
+| 2 | `def` | [Meaning](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ConstructiveDerivation.lean/declarations/meaning.md) | 22 | `declaration-track:90aef62dde11f77b158b90ee5489e619f80e3854d8f66675335d682b964a82f0` |
+| 3 | `inductive` | [Derives](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ConstructiveDerivation.lean/declarations/derives.md) | 30 | `declaration-track:3a8c19857ce97eabea525f519d3c0486699068227988cb8a38c062e6e68b874e` |
+| 4 | `theorem` | [sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ConstructiveDerivation.lean/declarations/sound.md) | 47 | `result-track:87ce7245d4f8f9761698b1b23031aaf929c5a3e8ba1c7adc79479ceedec9c760` |
+| 5 | `theorem` | [closed_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ConstructiveDerivation.lean/declarations/closed-sound.md) | 82 | `result-track:e92cc08b0f53152b38bda181285b9ceba1cf1da47f0d78ac7d399c05a2dbb260` |
+| 6 | `theorem` | [no_closed_falsity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ConstructiveDerivation.lean/declarations/no-closed-falsity.md) | 86 | `result-track:efec4ccbb1be03c836d760960b2bc6d53ebd4c3fe2ad6087bd75551dd89e0107` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

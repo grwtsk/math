@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralTopology/GeneralitiesInTopology/Curry.lean/index.md) · [Full source](../../../../../GeneralTopology/GeneralitiesInTopology/Curry.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/Curry.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/Curry.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [eventually_curry_iff](../../../../../GeneralTopology/GeneralitiesInTopology/Curry.lean/declarations/eventually-curry-iff.md) | 52 | `result-track:e8585d0f43a4837294d6df4b0ef5ae1b0b7826da6b7bebf3b738a1b980f5720e` |
-| 2 | `theorem` | [frequently_curry_iff](../../../../../GeneralTopology/GeneralitiesInTopology/Curry.lean/declarations/frequently-curry-iff.md) | 56 | `result-track:c38e7a17ce0429e0d455bb4ef542c47bec845a81559c600808e4ea38ca87baa0` |
-| 3 | `theorem` | [mem_curry_iff](../../../../../GeneralTopology/GeneralitiesInTopology/Curry.lean/declarations/mem-curry-iff.md) | 60 | `result-track:73dbf40865d2d1f1d8e4b9ef5b5fed81fd074d103bd3cc0e47a6327722f890b2` |
-| 4 | `theorem` | [curry_le_prod](../../../../../GeneralTopology/GeneralitiesInTopology/Curry.lean/declarations/curry-le-prod.md) | 63 | `result-track:bbf779a0ddb58fdd491c4bc566a09210c09854167dbef7c013acc0a14785ce88` |
-| 5 | `theorem` | [Tendsto.curry](../../../../../GeneralTopology/GeneralitiesInTopology/Curry.lean/declarations/tendsto-curry.md) | 65 | `result-track:9f3982e6cf193737c56f2ad2ed3b5003df7862833152235c1904aad9af333f8f` |
-| 6 | `theorem` | [frequently_curry_prod_iff](../../../../../GeneralTopology/GeneralitiesInTopology/Curry.lean/declarations/frequently-curry-prod-iff.md) | 69 | `result-track:182a8eed8330bc62c948f30756006aba0f2370bd14e5dfca04e0b3b98f96437e` |
-| 7 | `theorem` | [eventually_curry_prod_iff](../../../../../GeneralTopology/GeneralitiesInTopology/Curry.lean/declarations/eventually-curry-prod-iff.md) | 73 | `result-track:d085291ccb1815ee59171c680da0acde29e87905bda9fb6495d89550fb6ea7e8` |
-| 8 | `theorem` | [prod_mem_curry](../../../../../GeneralTopology/GeneralitiesInTopology/Curry.lean/declarations/prod-mem-curry.md) | 77 | `result-track:26379bcec922a4aff9e10023d7dd51512168d69c7075333562e3fc2901e3e6b3` |
+| 1 | `theorem` | [eventually_curry_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/Curry.lean/declarations/eventually-curry-iff.md) | 52 | `result-track:e8585d0f43a4837294d6df4b0ef5ae1b0b7826da6b7bebf3b738a1b980f5720e` |
+| 2 | `theorem` | [frequently_curry_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/Curry.lean/declarations/frequently-curry-iff.md) | 56 | `result-track:c38e7a17ce0429e0d455bb4ef542c47bec845a81559c600808e4ea38ca87baa0` |
+| 3 | `theorem` | [mem_curry_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/Curry.lean/declarations/mem-curry-iff.md) | 60 | `result-track:73dbf40865d2d1f1d8e4b9ef5b5fed81fd074d103bd3cc0e47a6327722f890b2` |
+| 4 | `theorem` | [curry_le_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/Curry.lean/declarations/curry-le-prod.md) | 63 | `result-track:bbf779a0ddb58fdd491c4bc566a09210c09854167dbef7c013acc0a14785ce88` |
+| 5 | `theorem` | [Tendsto.curry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/Curry.lean/declarations/tendsto-curry.md) | 65 | `result-track:9f3982e6cf193737c56f2ad2ed3b5003df7862833152235c1904aad9af333f8f` |
+| 6 | `theorem` | [frequently_curry_prod_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/Curry.lean/declarations/frequently-curry-prod-iff.md) | 69 | `result-track:182a8eed8330bc62c948f30756006aba0f2370bd14e5dfca04e0b3b98f96437e` |
+| 7 | `theorem` | [eventually_curry_prod_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/Curry.lean/declarations/eventually-curry-prod-iff.md) | 73 | `result-track:d085291ccb1815ee59171c680da0acde29e87905bda9fb6495d89550fb6ea7e8` |
+| 8 | `theorem` | [prod_mem_curry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/Curry.lean/declarations/prod-mem-curry.md) | 77 | `result-track:26379bcec922a4aff9e10023d7dd51512168d69c7075333562e3fc2901e3e6b3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/RhEstimateTwoMomentSamplingCore.lean/index.md) · [Full source](../../../../RealFunctions/RhEstimateTwoMomentSamplingCore.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RhEstimateTwoMomentSamplingCore.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RhEstimateTwoMomentSamplingCore.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../RealFunctions/RhEstimateTwoMomentSamplingCore.lean/declarations/example.md) | 9 | `declaration-track:c719b7132817e8b68a18bac1f03b6c163b567923db0e0b453073a25a10a90af3` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RhEstimateTwoMomentSamplingCore.lean/declarations/example.md) | 9 | `declaration-track:c719b7132817e8b68a18bac1f03b6c163b567923db0e0b453073a25a10a90af3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/SMul.lean/index.md) · [Full source](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/SMul.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/SMul.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/SMul.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [eval₂_smul](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/SMul.lean/declarations/eval-smul-source-edition-2.md) | 40 | `result-track:7f38e1ea3106febe6c7f0c16bf19ce4bd948e7b3e99062a3b8f478c3a8e6e27a` |
-| 2 | `theorem` | [eval_smul](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/SMul.lean/declarations/eval-smul.md) | 54 | `result-track:6701aee2b05b98fd6bdddb83192010d715c77eb32e99c43a32da6c1e6c619df1` |
-| 3 | `def` | [leval](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/SMul.lean/declarations/leval.md) | 60 | `declaration-track:26860e0723f7b32321bad5c147bd9e7078c961fa750a0f0e885ed1233d4b3810` |
-| 4 | `theorem` | [smul_comp](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/SMul.lean/declarations/smul-comp.md) | 70 | `result-track:2f3f7b205f5c220058ca8ed5d26672b989b5272cbea8b89ca4a43e9229d3e31c` |
-| 5 | `theorem` | [map_smul](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/SMul.lean/declarations/map-smul.md) | 82 | `result-track:bdb25d2cbd6fbab9967f6a221cf6918298bc9ac3a52cc2a187e196a094bcdbd4` |
+| 1 | `theorem` | [eval₂_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/SMul.lean/declarations/eval-smul-source-edition-2.md) | 40 | `result-track:7f38e1ea3106febe6c7f0c16bf19ce4bd948e7b3e99062a3b8f478c3a8e6e27a` |
+| 2 | `theorem` | [eval_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/SMul.lean/declarations/eval-smul.md) | 54 | `result-track:6701aee2b05b98fd6bdddb83192010d715c77eb32e99c43a32da6c1e6c619df1` |
+| 3 | `def` | [leval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/SMul.lean/declarations/leval.md) | 60 | `declaration-track:26860e0723f7b32321bad5c147bd9e7078c961fa750a0f0e885ed1233d4b3810` |
+| 4 | `theorem` | [smul_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/SMul.lean/declarations/smul-comp.md) | 70 | `result-track:2f3f7b205f5c220058ca8ed5d26672b989b5272cbea8b89ca4a43e9229d3e31c` |
+| 5 | `theorem` | [map_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/SMul.lean/declarations/map-smul.md) | 82 | `result-track:bdb25d2cbd6fbab9967f6a221cf6918298bc9ac3a52cc2a187e196a094bcdbd4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

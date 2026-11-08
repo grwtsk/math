@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExactImageAndSequentialPrimeSourceCodec.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExactImageAndSequentialPrimeSourceCodec.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExactImageAndSequentialPrimeSourceCodec.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExactImageAndSequentialPrimeSourceCodec.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -49,7 +49,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 - `BitMatrix.Carrier.SequentialPrime` — import line 19; external provider; requires a separately pinned dependency.
 - `BitMatrix.Codec.Source` — import line 20; external provider; requires a separately pinned dependency.
 - `Mathlib.Data.Nat.Bitwise` — import line 21; external provider; requires a separately pinned dependency.
-- [Source State Placement And Recovery](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SourceStatePlacementAndRecovery.lean/index.md) — import line 23; pinned internal source present.
+- [Source State Placement And Recovery](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SourceStatePlacementAndRecovery.lean/index.md) — import line 23; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -60,10 +60,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [decodeSourceState](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExactImageAndSequentialPrimeSourceCodec.lean/declarations/decodesourcestate.md) | 51 | `declaration-track:3dfcef6f4c5bdaf2a4d4e766d68378757f8af239fbcd1864a780036171ac5e55` |
-| 2 | `def` | [sourceCodecOfInjective](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExactImageAndSequentialPrimeSourceCodec.lean/declarations/sourcecodecofinjective.md) | 61 | `declaration-track:6c069c0cd5886fedd7a1060fcaae80336a7abd9968017ecaff569b168dcb74e6` |
-| 3 | `def` | [sourceCodec](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExactImageAndSequentialPrimeSourceCodec.lean/declarations/sourcecodec.md) | 90 | `declaration-track:2a770751a4c80fac8f11834c80562746fabdef5080b2dd9e27b3c0266213f22d` |
-| 4 | `theorem` | [sourceCodec_decode_encode](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExactImageAndSequentialPrimeSourceCodec.lean/declarations/sourcecodec-decode-encode.md) | 95 | `result-track:b7a68c6c962a251f1b9ec373dd3fd648312f54fa6564ad34487a9de88b8c5264` |
+| 1 | `def` | [decodeSourceState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExactImageAndSequentialPrimeSourceCodec.lean/declarations/decodesourcestate.md) | 51 | `declaration-track:3dfcef6f4c5bdaf2a4d4e766d68378757f8af239fbcd1864a780036171ac5e55` |
+| 2 | `def` | [sourceCodecOfInjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExactImageAndSequentialPrimeSourceCodec.lean/declarations/sourcecodecofinjective.md) | 61 | `declaration-track:6c069c0cd5886fedd7a1060fcaae80336a7abd9968017ecaff569b168dcb74e6` |
+| 3 | `def` | [sourceCodec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExactImageAndSequentialPrimeSourceCodec.lean/declarations/sourcecodec.md) | 90 | `declaration-track:2a770751a4c80fac8f11834c80562746fabdef5080b2dd9e27b3c0266213f22d` |
+| 4 | `theorem` | [sourceCodec_decode_encode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExactImageAndSequentialPrimeSourceCodec.lean/declarations/sourcecodec-decode-encode.md) | 95 | `result-track:b7a68c6c962a251f1b9ec373dd3fd648312f54fa6564ad34487a9de88b8c5264` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

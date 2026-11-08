@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Dijkstra.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Dijkstra.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Dijkstra.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Dijkstra.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [DijkstraPathCertificate](../../../../../ComputerScience/AlgorithmsInComputerScience/Dijkstra.lean/declarations/dijkstrapathcertificate.md) | 11 | `declaration-track:8cef8b050ca08e1337ffcfb3e32f83dd106acf82f930e3dba5f3e2b46b0c96f8` |
-| 2 | `theorem` | [dijkstra_settled_label_optimal](../../../../../ComputerScience/AlgorithmsInComputerScience/Dijkstra.lean/declarations/dijkstra-settled-label-optimal.md) | 25 | `result-track:9e0d5f72ab330c5fb796e6ff46603fefe78813893862f6884d2876d2149a5524` |
+| 1 | `structure` | [DijkstraPathCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Dijkstra.lean/declarations/dijkstrapathcertificate.md) | 11 | `declaration-track:8cef8b050ca08e1337ffcfb3e32f83dd106acf82f930e3dba5f3e2b46b0c96f8` |
+| 2 | `theorem` | [dijkstra_settled_label_optimal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Dijkstra.lean/declarations/dijkstra-settled-label-optimal.md) | 25 | `result-track:9e0d5f72ab330c5fb796e6ff46603fefe78813893862f6884d2876d2149a5524` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

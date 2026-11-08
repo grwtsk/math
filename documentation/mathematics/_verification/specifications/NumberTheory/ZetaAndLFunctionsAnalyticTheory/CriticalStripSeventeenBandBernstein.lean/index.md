@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSeventeenBandBernstein.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSeventeenBandBernstein.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSeventeenBandBernstein.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSeventeenBandBernstein.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripSeventeenBandEnclosure`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSeventeenBandEnclosure.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripSeventeenBandEnclosure`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSeventeenBandEnclosure.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [coefficients](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSeventeenBandBernstein.lean/declarations/coefficients.md) | 20 | `declaration-track:0ee6a8b4db12f94812cf9c930d83380bfac88cdc3f19afd216d1377d3b5ecb4e` |
-| 2 | `def` | [basis](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSeventeenBandBernstein.lean/declarations/basis.md) | 23 | `declaration-track:770a16b243998ccd4a775a11292b701463d0787f9f72b206101227841887a576` |
-| 3 | `def` | [value](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSeventeenBandBernstein.lean/declarations/value.md) | 24 | `declaration-track:cc7f15df6cb757431327d7db917fb2608c1d6383a867967519a5fec22a70225c` |
-| 4 | `lemma` | [value_nonneg](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSeventeenBandBernstein.lean/declarations/value-nonneg.md) | 27 | `result-track:557c2337ef78ccda74833ce95cfcebc1e9ec50294f130270fd7db7d984fcda69` |
-| 5 | `theorem` | [tensor_identity](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSeventeenBandBernstein.lean/declarations/tensor-identity.md) | 39 | `result-track:207c624e7d937fd222e9d149726d1fc7069729c103ca403fa63543de0b8af398` |
-| 6 | `theorem` | [polynomial_projection](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSeventeenBandBernstein.lean/declarations/polynomial-projection.md) | 46 | `result-track:c5382d8660d4af51d585a6dbd5628379b0915430646475875e276c45c012dcc7` |
-| 7 | `theorem` | [projection_failure_below_band](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSeventeenBandBernstein.lean/declarations/projection-failure-below-band.md) | 57 | `result-track:074497e50813866b17e6b1e2bf91cb48b72cae09c2cecf2caa5aea7c64dbe24c` |
+| 1 | `def` | [coefficients](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSeventeenBandBernstein.lean/declarations/coefficients.md) | 20 | `declaration-track:0ee6a8b4db12f94812cf9c930d83380bfac88cdc3f19afd216d1377d3b5ecb4e` |
+| 2 | `def` | [basis](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSeventeenBandBernstein.lean/declarations/basis.md) | 23 | `declaration-track:770a16b243998ccd4a775a11292b701463d0787f9f72b206101227841887a576` |
+| 3 | `def` | [value](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSeventeenBandBernstein.lean/declarations/value.md) | 24 | `declaration-track:cc7f15df6cb757431327d7db917fb2608c1d6383a867967519a5fec22a70225c` |
+| 4 | `lemma` | [value_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSeventeenBandBernstein.lean/declarations/value-nonneg.md) | 27 | `result-track:557c2337ef78ccda74833ce95cfcebc1e9ec50294f130270fd7db7d984fcda69` |
+| 5 | `theorem` | [tensor_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSeventeenBandBernstein.lean/declarations/tensor-identity.md) | 39 | `result-track:207c624e7d937fd222e9d149726d1fc7069729c103ca403fa63543de0b8af398` |
+| 6 | `theorem` | [polynomial_projection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSeventeenBandBernstein.lean/declarations/polynomial-projection.md) | 46 | `result-track:c5382d8660d4af51d585a6dbd5628379b0915430646475875e276c45c012dcc7` |
+| 7 | `theorem` | [projection_failure_below_band](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripSeventeenBandBernstein.lean/declarations/projection-failure-below-band.md) | 57 | `result-track:074497e50813866b17e6b1e2bf91cb48b72cae09c2cecf2caa5aea7c64dbe24c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

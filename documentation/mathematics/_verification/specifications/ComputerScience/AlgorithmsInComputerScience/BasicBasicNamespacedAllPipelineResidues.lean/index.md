@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedAllPipelineResidues.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedAllPipelineResidues.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedAllPipelineResidues.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedAllPipelineResidues.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [allPipelineResidues](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedAllPipelineResidues.lean/declarations/allpipelineresidues.md) | 15 | `declaration-track:c02534e091fe4f126eafca2f4b9551859a7df628b3c51a0819bc36dd49388981` |
-| 2 | `theorem` | [allPipelineResidues_count](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedAllPipelineResidues.lean/declarations/allpipelineresidues-count.md) | 18 | `result-track:5126c6f54daa659d6be04a7c9941c9bb8f0e51e84f9ec0eae1ac2dc5f41f9cdc` |
+| 1 | `def` | [allPipelineResidues](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedAllPipelineResidues.lean/declarations/allpipelineresidues.md) | 15 | `declaration-track:c02534e091fe4f126eafca2f4b9551859a7df628b3c51a0819bc36dd49388981` |
+| 2 | `theorem` | [allPipelineResidues_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/BasicBasicNamespacedAllPipelineResidues.lean/declarations/allpipelineresidues-count.md) | 18 | `result-track:5126c6f54daa659d6be04a7c9941c9bb8f0e51e84f9ec0eae1ac2dc5f41f9cdc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

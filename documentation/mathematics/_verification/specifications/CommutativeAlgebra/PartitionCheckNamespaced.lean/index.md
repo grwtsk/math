@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/PartitionCheckNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/PartitionCheckNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PartitionCheckNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PartitionCheckNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,19 +59,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [blocks01_2](../../../../CommutativeAlgebra/PartitionCheckNamespaced.lean/declarations/blocks01-2.md) | 46 | `declaration-track:cac7e9ccf24fff7664cd1685826caddb8cad4443af54b8e5573d976a3e933733` |
-| 2 | `def` | [blocks02_1](../../../../CommutativeAlgebra/PartitionCheckNamespaced.lean/declarations/blocks02-1.md) | 50 | `declaration-track:052d3b2a8fad99ae8a3ac73dbbcd08a1950f9aba3c1cfdbfb8d975ad81ae1006` |
-| 3 | `def` | [blocks12_0](../../../../CommutativeAlgebra/PartitionCheckNamespaced.lean/declarations/blocks12-0.md) | 54 | `declaration-track:f309d39927db6c95ec31b9af4306642c4c38dbf213f07c0a217a3e5bc1ef3c2e` |
-| 4 | `def` | [pairPartition01_2](../../../../CommutativeAlgebra/PartitionCheckNamespaced.lean/declarations/pairpartition01-2.md) | 58 | `declaration-track:715dee3afa8654ab7bd42e55fce77b60d151fc6de520e54ad7d3dded906b5a90` |
-| 5 | `def` | [pairPartition02_1](../../../../CommutativeAlgebra/PartitionCheckNamespaced.lean/declarations/pairpartition02-1.md) | 69 | `declaration-track:9b771a2c2257a3f0936b5a919014a1c8093d4ca6a71bb29e580a9e9e1e3a7a6f` |
-| 6 | `def` | [pairPartition12_0](../../../../CommutativeAlgebra/PartitionCheckNamespaced.lean/declarations/pairpartition12-0.md) | 80 | `declaration-track:d03963a30fa0678f910ed2efdc6125de17dd7b5ad03586cf06a6704cc048ecd3` |
-| 7 | `theorem` | [pairPartition01_2_parts](../../../../CommutativeAlgebra/PartitionCheckNamespaced.lean/declarations/pairpartition01-2-parts.md) | 91 | `result-track:2044c1b74ab279e58b4f4b1e822acfce6bd145484546461066e327df3fec0e2e` |
-| 8 | `theorem` | [pairPartition02_1_parts](../../../../CommutativeAlgebra/PartitionCheckNamespaced.lean/declarations/pairpartition02-1-parts.md) | 96 | `result-track:efef2b89a827cdb5d488dbec7e5d0947b7b737af05458e3de03337c356cf8708` |
-| 9 | `theorem` | [pairPartition12_0_parts](../../../../CommutativeAlgebra/PartitionCheckNamespaced.lean/declarations/pairpartition12-0-parts.md) | 101 | `result-track:4b71aedbab5dc3166fd2eef2fb407289fad586c35de86dffee5c317f364c9cb0` |
-| 10 | `def` | [properPartitionsThreeExplicit](../../../../CommutativeAlgebra/PartitionCheckNamespaced.lean/declarations/properpartitionsthreeexplicit.md) | 106 | `declaration-track:6613c5a4671d1ce78da072cdc7bbf1f10f9d870e613640861475739aece114ab` |
-| 11 | `example` | [(anonymous)](../../../../CommutativeAlgebra/PartitionCheckNamespaced.lean/declarations/example.md) | 114 | `declaration-track:28632df91da54de3f478753ab4857d6f40b1ce705b84402211e6775f77e48705` |
-| 12 | `example` | [(anonymous)](../../../../CommutativeAlgebra/PartitionCheckNamespaced.lean/declarations/example-source-edition-2.md) | 115 | `declaration-track:42d5666761853fc7e502f0595ae76b35a65362a9c681e914147974df0414856c` |
-| 13 | `example` | [(anonymous)](../../../../CommutativeAlgebra/PartitionCheckNamespaced.lean/declarations/example-source-edition-3.md) | 116 | `declaration-track:44aa9bd2785a1a386e365d1e1204383ff9c5450a4fcac70aee97ac64623492ff` |
+| 1 | `def` | [blocks01_2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PartitionCheckNamespaced.lean/declarations/blocks01-2.md) | 46 | `declaration-track:cac7e9ccf24fff7664cd1685826caddb8cad4443af54b8e5573d976a3e933733` |
+| 2 | `def` | [blocks02_1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PartitionCheckNamespaced.lean/declarations/blocks02-1.md) | 50 | `declaration-track:052d3b2a8fad99ae8a3ac73dbbcd08a1950f9aba3c1cfdbfb8d975ad81ae1006` |
+| 3 | `def` | [blocks12_0](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PartitionCheckNamespaced.lean/declarations/blocks12-0.md) | 54 | `declaration-track:f309d39927db6c95ec31b9af4306642c4c38dbf213f07c0a217a3e5bc1ef3c2e` |
+| 4 | `def` | [pairPartition01_2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PartitionCheckNamespaced.lean/declarations/pairpartition01-2.md) | 58 | `declaration-track:715dee3afa8654ab7bd42e55fce77b60d151fc6de520e54ad7d3dded906b5a90` |
+| 5 | `def` | [pairPartition02_1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PartitionCheckNamespaced.lean/declarations/pairpartition02-1.md) | 69 | `declaration-track:9b771a2c2257a3f0936b5a919014a1c8093d4ca6a71bb29e580a9e9e1e3a7a6f` |
+| 6 | `def` | [pairPartition12_0](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PartitionCheckNamespaced.lean/declarations/pairpartition12-0.md) | 80 | `declaration-track:d03963a30fa0678f910ed2efdc6125de17dd7b5ad03586cf06a6704cc048ecd3` |
+| 7 | `theorem` | [pairPartition01_2_parts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PartitionCheckNamespaced.lean/declarations/pairpartition01-2-parts.md) | 91 | `result-track:2044c1b74ab279e58b4f4b1e822acfce6bd145484546461066e327df3fec0e2e` |
+| 8 | `theorem` | [pairPartition02_1_parts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PartitionCheckNamespaced.lean/declarations/pairpartition02-1-parts.md) | 96 | `result-track:efef2b89a827cdb5d488dbec7e5d0947b7b737af05458e3de03337c356cf8708` |
+| 9 | `theorem` | [pairPartition12_0_parts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PartitionCheckNamespaced.lean/declarations/pairpartition12-0-parts.md) | 101 | `result-track:4b71aedbab5dc3166fd2eef2fb407289fad586c35de86dffee5c317f364c9cb0` |
+| 10 | `def` | [properPartitionsThreeExplicit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PartitionCheckNamespaced.lean/declarations/properpartitionsthreeexplicit.md) | 106 | `declaration-track:6613c5a4671d1ce78da072cdc7bbf1f10f9d870e613640861475739aece114ab` |
+| 11 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PartitionCheckNamespaced.lean/declarations/example.md) | 114 | `declaration-track:28632df91da54de3f478753ab4857d6f40b1ce705b84402211e6775f77e48705` |
+| 12 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PartitionCheckNamespaced.lean/declarations/example-source-edition-2.md) | 115 | `declaration-track:42d5666761853fc7e502f0595ae76b35a65362a9c681e914147974df0414856c` |
+| 13 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PartitionCheckNamespaced.lean/declarations/example-source-edition-3.md) | 116 | `declaration-track:44aa9bd2785a1a386e365d1e1204383ff9c5450a4fcac70aee97ac64623492ff` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

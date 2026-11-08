@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/RhEstimateWeightedBetaAbelGate.lean/index.md) · [Full source](../../../../MeasureAndIntegration/RhEstimateWeightedBetaAbelGate.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RhEstimateWeightedBetaAbelGate.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RhEstimateWeightedBetaAbelGate.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RhEstimateWeightedBetaAbelGate.lean/declarations/example-source-edition-5.md) | 12 | `declaration-track:6e445442598395865c43d72d63ba7fb31e9c2ccded5dba3dc3d4f20195078b6a` |
-| 2 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RhEstimateWeightedBetaAbelGate.lean/declarations/example-source-edition-9.md) | 16 | `declaration-track:d4fb695f21bba579eacabd0df1d25775931a4e1aed64fbc0e85a2d846ac9cab5` |
-| 3 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RhEstimateWeightedBetaAbelGate.lean/declarations/example-source-edition-3.md) | 23 | `declaration-track:4431f38cd08263fd8eafeea1d8cf6998d8e7fdaa27b8104ec40cf3528f2dc7ed` |
-| 4 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RhEstimateWeightedBetaAbelGate.lean/declarations/example-source-edition-6.md) | 28 | `declaration-track:80aa409d683113bfbfa8fcc50421420b518e7e2b79e7a96e6bb03c1aa035a221` |
-| 5 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RhEstimateWeightedBetaAbelGate.lean/declarations/example-source-edition-7.md) | 34 | `declaration-track:9d71b5568dde44e372878367e6f8868824b6c7ae70d1da9cc24b359867167d91` |
-| 6 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RhEstimateWeightedBetaAbelGate.lean/declarations/example-source-edition-4.md) | 38 | `declaration-track:6cd5d9018c656ccc85bf8359312dafc2d09220fcf02329bccc59270a574ef180` |
-| 7 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RhEstimateWeightedBetaAbelGate.lean/declarations/example-source-edition-8.md) | 44 | `declaration-track:aadd9219c9bdae07a2b2d46a8813379578673cfd05aefc54ec50ea245647c13e` |
-| 8 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RhEstimateWeightedBetaAbelGate.lean/declarations/example-source-edition-2.md) | 47 | `declaration-track:4244cd9bac6b315f8590d8c818d2fdbe28592f80e8770639b6f345badb9289d5` |
-| 9 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RhEstimateWeightedBetaAbelGate.lean/declarations/example.md) | 51 | `declaration-track:182525436c67a352d76dd9dc845f07b7ed05299d4e602b18f72c6fb61079f7b6` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RhEstimateWeightedBetaAbelGate.lean/declarations/example-source-edition-5.md) | 12 | `declaration-track:6e445442598395865c43d72d63ba7fb31e9c2ccded5dba3dc3d4f20195078b6a` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RhEstimateWeightedBetaAbelGate.lean/declarations/example-source-edition-9.md) | 16 | `declaration-track:d4fb695f21bba579eacabd0df1d25775931a4e1aed64fbc0e85a2d846ac9cab5` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RhEstimateWeightedBetaAbelGate.lean/declarations/example-source-edition-3.md) | 23 | `declaration-track:4431f38cd08263fd8eafeea1d8cf6998d8e7fdaa27b8104ec40cf3528f2dc7ed` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RhEstimateWeightedBetaAbelGate.lean/declarations/example-source-edition-6.md) | 28 | `declaration-track:80aa409d683113bfbfa8fcc50421420b518e7e2b79e7a96e6bb03c1aa035a221` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RhEstimateWeightedBetaAbelGate.lean/declarations/example-source-edition-7.md) | 34 | `declaration-track:9d71b5568dde44e372878367e6f8868824b6c7ae70d1da9cc24b359867167d91` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RhEstimateWeightedBetaAbelGate.lean/declarations/example-source-edition-4.md) | 38 | `declaration-track:6cd5d9018c656ccc85bf8359312dafc2d09220fcf02329bccc59270a574ef180` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RhEstimateWeightedBetaAbelGate.lean/declarations/example-source-edition-8.md) | 44 | `declaration-track:aadd9219c9bdae07a2b2d46a8813379578673cfd05aefc54ec50ea245647c13e` |
+| 8 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RhEstimateWeightedBetaAbelGate.lean/declarations/example-source-edition-2.md) | 47 | `declaration-track:4244cd9bac6b315f8590d8c818d2fdbe28592f80e8770639b6f345badb9289d5` |
+| 9 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RhEstimateWeightedBetaAbelGate.lean/declarations/example.md) | 51 | `declaration-track:182525436c67a352d76dd9dc845f07b7ed05299d4e602b18f72c6fb61079f7b6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

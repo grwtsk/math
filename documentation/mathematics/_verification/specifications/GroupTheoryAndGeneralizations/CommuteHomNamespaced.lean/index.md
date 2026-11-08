@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/CommuteHomNamespaced.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/CommuteHomNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CommuteHomNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CommuteHomNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [SemiconjBy.map](../../../../GroupTheoryAndGeneralizations/CommuteHomNamespaced.lean/declarations/semiconjby-map.md) | 29 | `result-track:9b1a37b946a01d62aa9a05888a49ec5b025a1ff96aa7aee6e884397d5f8e75bc` |
-| 2 | `theorem` | [Commute.map](../../../../GroupTheoryAndGeneralizations/CommuteHomNamespaced.lean/declarations/commute-map.md) | 33 | `result-track:e963278a1ea90d55925828669f39ead8bc8c9ba5ac1b0b26115e32111c3354ca` |
-| 3 | `theorem` | [SemiconjBy.of_map](../../../../GroupTheoryAndGeneralizations/CommuteHomNamespaced.lean/declarations/semiconjby-of-map.md) | 37 | `result-track:5e65727c4ebb8ed587d3548325f34e461ef7074018aa09e9ca874d70294e4ba6` |
-| 4 | `theorem` | [Commute.of_map](../../../../GroupTheoryAndGeneralizations/CommuteHomNamespaced.lean/declarations/commute-of-map.md) | 42 | `result-track:d65468a88b0bfa4d3f6e3c908d79fb994c38e5f201f832f5359f9e04593a90b3` |
+| 1 | `theorem` | [SemiconjBy.map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CommuteHomNamespaced.lean/declarations/semiconjby-map.md) | 29 | `result-track:9b1a37b946a01d62aa9a05888a49ec5b025a1ff96aa7aee6e884397d5f8e75bc` |
+| 2 | `theorem` | [Commute.map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CommuteHomNamespaced.lean/declarations/commute-map.md) | 33 | `result-track:e963278a1ea90d55925828669f39ead8bc8c9ba5ac1b0b26115e32111c3354ca` |
+| 3 | `theorem` | [SemiconjBy.of_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CommuteHomNamespaced.lean/declarations/semiconjby-of-map.md) | 37 | `result-track:5e65727c4ebb8ed587d3548325f34e461ef7074018aa09e9ca874d70294e4ba6` |
+| 4 | `theorem` | [Commute.of_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CommuteHomNamespaced.lean/declarations/commute-of-map.md) | 42 | `result-track:d65468a88b0bfa4d3f6e3c908d79fb994c38e5f201f832f5359f9e04593a90b3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

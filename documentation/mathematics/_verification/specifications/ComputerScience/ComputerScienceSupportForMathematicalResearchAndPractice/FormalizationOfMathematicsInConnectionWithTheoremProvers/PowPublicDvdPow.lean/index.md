@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PowPublicDvdPow.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PowPublicDvdPow.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PowPublicDvdPow.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PowPublicDvdPow.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,10 +62,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [dvd_pow](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PowPublicDvdPow.lean/declarations/dvd-pow.md) | 21 | `result-track:2f7314c7802935252fe2f12403777664c78dd9bcd5ba2684514b0048da836091` |
-| 2 | `theorem` | [ediv_pow](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PowPublicDvdPow.lean/declarations/ediv-pow.md) | 26 | `result-track:fc3667290b32cd1f9d1ac9d5eb7cbead3a4d9ec66003401083059b8a3f9aebdf` |
-| 3 | `theorem` | [tdiv_pow](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PowPublicDvdPow.lean/declarations/tdiv-pow.md) | 33 | `result-track:0ec6a8f48a6205b82807aa47c2aaf16cc97c630b2177f7837d7d86ca382d5847` |
-| 4 | `theorem` | [fdiv_pow](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PowPublicDvdPow.lean/declarations/fdiv-pow.md) | 37 | `result-track:c11611023c173f9531f46363b3cbbd979bacaeb0a9fd663d21e9ecffa6e90f07` |
+| 1 | `theorem` | [dvd_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PowPublicDvdPow.lean/declarations/dvd-pow.md) | 21 | `result-track:2f7314c7802935252fe2f12403777664c78dd9bcd5ba2684514b0048da836091` |
+| 2 | `theorem` | [ediv_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PowPublicDvdPow.lean/declarations/ediv-pow.md) | 26 | `result-track:fc3667290b32cd1f9d1ac9d5eb7cbead3a4d9ec66003401083059b8a3f9aebdf` |
+| 3 | `theorem` | [tdiv_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PowPublicDvdPow.lean/declarations/tdiv-pow.md) | 33 | `result-track:0ec6a8f48a6205b82807aa47c2aaf16cc97c630b2177f7837d7d86ca382d5847` |
+| 4 | `theorem` | [fdiv_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/PowPublicDvdPow.lean/declarations/fdiv-pow.md) | 37 | `result-track:c11611023c173f9531f46363b3cbbd979bacaeb0a9fd663d21e9ecffa6e90f07` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

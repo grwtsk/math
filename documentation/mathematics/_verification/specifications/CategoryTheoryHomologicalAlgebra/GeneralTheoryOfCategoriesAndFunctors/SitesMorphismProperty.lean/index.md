@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesMorphismProperty.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesMorphismProperty.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesMorphismProperty.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesMorphismProperty.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [pretopology](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesMorphismProperty.lean/declarations/pretopology.md) | 32 | `declaration-track:b5adf757b01eac1769340018494fad1aa819bb5d3ffcc76c691bfddde0b00b63` |
-| 2 | `abbrev` | [grothendieckTopology](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesMorphismProperty.lean/declarations/grothendiecktopology.md) | 47 | `declaration-track:3c93d33f3d93161fa7e2a6b219d6c86da3841ff15cdc8734c64e53a1c12cfe4c` |
-| 3 | `lemma` | [pretopology_le](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesMorphismProperty.lean/declarations/pretopology-le.md) | 55 | `result-track:abd14a50b9aa899b5368233ac08568fe55a2cc7008d966f92e0b9027e24ddb44` |
-| 4 | `lemma` | [pretopology_inf](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesMorphismProperty.lean/declarations/pretopology-inf.md) | 59 | `result-track:c65dd115fc3ff5b619af007f4039228ca3605845194277af653fed793e3283f1` |
+| 1 | `def` | [pretopology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesMorphismProperty.lean/declarations/pretopology.md) | 32 | `declaration-track:b5adf757b01eac1769340018494fad1aa819bb5d3ffcc76c691bfddde0b00b63` |
+| 2 | `abbrev` | [grothendieckTopology](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesMorphismProperty.lean/declarations/grothendiecktopology.md) | 47 | `declaration-track:3c93d33f3d93161fa7e2a6b219d6c86da3841ff15cdc8734c64e53a1c12cfe4c` |
+| 3 | `lemma` | [pretopology_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesMorphismProperty.lean/declarations/pretopology-le.md) | 55 | `result-track:abd14a50b9aa899b5368233ac08568fe55a2cc7008d966f92e0b9027e24ddb44` |
+| 4 | `lemma` | [pretopology_inf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesMorphismProperty.lean/declarations/pretopology-inf.md) | 59 | `result-track:c65dd115fc3ff5b619af007f4039228ca3605845194277af653fed793e3283f1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

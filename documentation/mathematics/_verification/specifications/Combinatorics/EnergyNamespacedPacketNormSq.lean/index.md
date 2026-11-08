@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/EnergyNamespacedPacketNormSq.lean/index.md) · [Full source](../../../../Combinatorics/EnergyNamespacedPacketNormSq.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnergyNamespacedPacketNormSq.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnergyNamespacedPacketNormSq.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,16 +60,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [packetNormSq](../../../../Combinatorics/EnergyNamespacedPacketNormSq.lean/declarations/packetnormsq.md) | 26 | `declaration-track:be663d17c25cbff3ad635ba7198a8573729e3e8e649d0cb7371ebfa2fd1db7ec` |
-| 2 | `def` | [packetEnergy](../../../../Combinatorics/EnergyNamespacedPacketNormSq.lean/declarations/packetenergy.md) | 32 | `declaration-track:49a0d6bd7c2cfe874aeea5050b6a6e8d05b1eb4ecc92be16bfa7fcc7074d7e19` |
-| 3 | `def` | [weightedIncrementEnergy](../../../../Combinatorics/EnergyNamespacedPacketNormSq.lean/declarations/weightedincrementenergy.md) | 44 | `declaration-track:58f6ca512770598c7f59a1a90864233ff1f0afd79e692fdabe0ef6bfb0b26d32` |
-| 4 | `theorem` | [packetEnergy_nonnegative](../../../../Combinatorics/EnergyNamespacedPacketNormSq.lean/declarations/packetenergy-nonnegative.md) | 57 | `result-track:eeb0b31ee5d85efeec2a99d883fbbb5f5957709ce3582043177151129ad0f30b` |
-| 5 | `theorem` | [packetEnergy_monotone](../../../../Combinatorics/EnergyNamespacedPacketNormSq.lean/declarations/packetenergy-monotone.md) | 73 | `result-track:0f4bf8ca49faa49dd8c077697af367d4acf1eee32052257fe9672a4f0e69af1a` |
-| 6 | `theorem` | [packetEnergy_bounded_by_packetNorm](../../../../Combinatorics/EnergyNamespacedPacketNormSq.lean/declarations/packetenergy-bounded-by-packetnorm.md) | 96 | `result-track:6fd58ea53d0a377849cb528a9ae243776a4f387e0a8827b542424c3cb4138a03` |
-| 7 | `theorem` | [packetEnergy_increment_eq_weightedIncrement](../../../../Combinatorics/EnergyNamespacedPacketNormSq.lean/declarations/packetenergy-increment-eq-weightedincrement.md) | 116 | `result-track:6c5947cb1306ea67a50dc4d8f71ab24c3eaeb735785c7e4b3a01f73792aa678d` |
-| 8 | `def` | [packetEnergyPathSum](../../../../Combinatorics/EnergyNamespacedPacketNormSq.lean/declarations/packetenergypathsum.md) | 135 | `declaration-track:e8256015051af6597cd8ce6577a36adb1d773e2a01511f9d3ceef10c9c17ab91` |
-| 9 | `theorem` | [packetEnergy_chain_telescope](../../../../Combinatorics/EnergyNamespacedPacketNormSq.lean/declarations/packetenergy-chain-telescope.md) | 153 | `result-track:2f594508ef6e750047af1980cd42ffbf4355f1a8859f6e952fa16d521da75299` |
-| 10 | `theorem` | [packetEnergy_enumeration_independent](../../../../Combinatorics/EnergyNamespacedPacketNormSq.lean/declarations/packetenergy-enumeration-independent.md) | 181 | `result-track:46d8702345dfa49c94ebbfecb64b7a6870c8f319dd6ebf8fd39c172c173dd3cb` |
+| 1 | `def` | [packetNormSq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnergyNamespacedPacketNormSq.lean/declarations/packetnormsq.md) | 26 | `declaration-track:be663d17c25cbff3ad635ba7198a8573729e3e8e649d0cb7371ebfa2fd1db7ec` |
+| 2 | `def` | [packetEnergy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnergyNamespacedPacketNormSq.lean/declarations/packetenergy.md) | 32 | `declaration-track:49a0d6bd7c2cfe874aeea5050b6a6e8d05b1eb4ecc92be16bfa7fcc7074d7e19` |
+| 3 | `def` | [weightedIncrementEnergy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnergyNamespacedPacketNormSq.lean/declarations/weightedincrementenergy.md) | 44 | `declaration-track:58f6ca512770598c7f59a1a90864233ff1f0afd79e692fdabe0ef6bfb0b26d32` |
+| 4 | `theorem` | [packetEnergy_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnergyNamespacedPacketNormSq.lean/declarations/packetenergy-nonnegative.md) | 57 | `result-track:eeb0b31ee5d85efeec2a99d883fbbb5f5957709ce3582043177151129ad0f30b` |
+| 5 | `theorem` | [packetEnergy_monotone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnergyNamespacedPacketNormSq.lean/declarations/packetenergy-monotone.md) | 73 | `result-track:0f4bf8ca49faa49dd8c077697af367d4acf1eee32052257fe9672a4f0e69af1a` |
+| 6 | `theorem` | [packetEnergy_bounded_by_packetNorm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnergyNamespacedPacketNormSq.lean/declarations/packetenergy-bounded-by-packetnorm.md) | 96 | `result-track:6fd58ea53d0a377849cb528a9ae243776a4f387e0a8827b542424c3cb4138a03` |
+| 7 | `theorem` | [packetEnergy_increment_eq_weightedIncrement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnergyNamespacedPacketNormSq.lean/declarations/packetenergy-increment-eq-weightedincrement.md) | 116 | `result-track:6c5947cb1306ea67a50dc4d8f71ab24c3eaeb735785c7e4b3a01f73792aa678d` |
+| 8 | `def` | [packetEnergyPathSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnergyNamespacedPacketNormSq.lean/declarations/packetenergypathsum.md) | 135 | `declaration-track:e8256015051af6597cd8ce6577a36adb1d773e2a01511f9d3ceef10c9c17ab91` |
+| 9 | `theorem` | [packetEnergy_chain_telescope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnergyNamespacedPacketNormSq.lean/declarations/packetenergy-chain-telescope.md) | 153 | `result-track:2f594508ef6e750047af1980cd42ffbf4355f1a8859f6e952fa16d521da75299` |
+| 10 | `theorem` | [packetEnergy_enumeration_independent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnergyNamespacedPacketNormSq.lean/declarations/packetenergy-enumeration-independent.md) | 181 | `result-track:46d8702345dfa49c94ebbfecb64b7a6870c8f319dd6ebf8fd39c172c173dd3cb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

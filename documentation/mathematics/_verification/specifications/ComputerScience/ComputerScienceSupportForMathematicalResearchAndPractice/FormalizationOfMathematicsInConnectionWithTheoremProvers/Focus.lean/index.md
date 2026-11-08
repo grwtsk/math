@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Focus.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Focus.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Focus.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Focus.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -65,10 +65,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [UnifiedSEAPayload](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Focus.lean/declarations/unifiedseapayload.md) | 20 | `declaration-track:a2180fd2173026e8e5cbbdb15acb96fa3521ab75d9d89dbbf91dc9faa2b54fef` |
-| 2 | `structure` | [UnifiedCutBinding](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Focus.lean/declarations/unifiedcutbinding.md) | 54 | `declaration-track:016f3282f132516f95ebf3dfecd6147e1a0d666ca593c8418cab7fa334f07d2c` |
-| 3 | `structure` | [CertifiedSymmetryFixedTallyLiftedSEAReuse](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Focus.lean/declarations/certifiedsymmetryfixedtallyliftedseareuse.md) | 63 | `declaration-track:cdc9616b0be97302c75a90c9392af5ced675f383aa51e5fa59634236284e9042` |
-| 4 | `structure` | [UnifiedCandidate](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Focus.lean/declarations/unifiedcandidate.md) | 115 | `declaration-track:332f0b50262f23ea290f2e5f4c6b1ddcab1c6544d32fc2e772d753248cfc0043` |
+| 1 | `structure` | [UnifiedSEAPayload](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Focus.lean/declarations/unifiedseapayload.md) | 20 | `declaration-track:a2180fd2173026e8e5cbbdb15acb96fa3521ab75d9d89dbbf91dc9faa2b54fef` |
+| 2 | `structure` | [UnifiedCutBinding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Focus.lean/declarations/unifiedcutbinding.md) | 54 | `declaration-track:016f3282f132516f95ebf3dfecd6147e1a0d666ca593c8418cab7fa334f07d2c` |
+| 3 | `structure` | [CertifiedSymmetryFixedTallyLiftedSEAReuse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Focus.lean/declarations/certifiedsymmetryfixedtallyliftedseareuse.md) | 63 | `declaration-track:cdc9616b0be97302c75a90c9392af5ced675f383aa51e5fa59634236284e9042` |
+| 4 | `structure` | [UnifiedCandidate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Focus.lean/declarations/unifiedcandidate.md) | 115 | `declaration-track:332f0b50262f23ea290f2e5f4c6b1ddcab1c6544d32fc2e772d753248cfc0043` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

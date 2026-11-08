@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/WellApproximablePublic.lean/index.md) · [Full source](../../../../NumberTheory/WellApproximablePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WellApproximablePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WellApproximablePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,19 +57,19 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [approxOrderOf](../../../../NumberTheory/WellApproximablePublic.lean/declarations/approxorderof.md) | 73 | `declaration-track:17738d48576cbb657cf0033be73bf23a4fc411ce37d9caf821eeb830d0b83147` |
-| 2 | `theorem` | [mem_approxOrderOf_iff](../../../../NumberTheory/WellApproximablePublic.lean/declarations/mem-approxorderof-iff.md) | 77 | `result-track:1b4453781288c3a5d99dc225f63dcb63ccda7927a642183203e5e2f6d6d7ad3e` |
-| 3 | `def` | [wellApproximable](../../../../NumberTheory/WellApproximablePublic.lean/declarations/wellapproximable.md) | 88 | `declaration-track:790e224b32796741b3bd0cbe8b31006f4dd2665c2aaa23c530039689fdbfd89e` |
-| 4 | `theorem` | [mem_wellApproximable_iff](../../../../NumberTheory/WellApproximablePublic.lean/declarations/mem-wellapproximable-iff.md) | 92 | `result-track:cdaec1231d70623c997d4945bbc684265b592bd28f2aa6f620d8c60d5dd87d51` |
-| 5 | `theorem` | [image_pow_subset_of_coprime](../../../../NumberTheory/WellApproximablePublic.lean/declarations/image-pow-subset-of-coprime.md) | 102 | `result-track:dd069c5bd2c6a5a1add5c92f14eeb851178897f55ee3e1353ff85bd5c8311547` |
-| 6 | `theorem` | [image_pow_subset](../../../../NumberTheory/WellApproximablePublic.lean/declarations/image-pow-subset.md) | 113 | `result-track:73fb2cdb27dc7b1a12eeaa7b0078a3ada8cf981df60a44272d9b97e09f629c44` |
-| 7 | `theorem` | [smul_subset_of_coprime](../../../../NumberTheory/WellApproximablePublic.lean/declarations/smul-subset-of-coprime.md) | 124 | `result-track:1f44a22e5e2ec641ffe06989fa6ae0fbdfebc7894dd3dce9dece7797f35ffbcc` |
-| 8 | `theorem` | [smul_eq_of_mul_dvd](../../../../NumberTheory/WellApproximablePublic.lean/declarations/smul-eq-of-mul-dvd.md) | 135 | `result-track:1a18e5c076bceeaa0c81d8404c36071cd4859a32a3bc3c2ade7abab07722e6a2` |
-| 9 | `theorem` | [mem_approxAddOrderOf_iff](../../../../NumberTheory/WellApproximablePublic.lean/declarations/mem-approxaddorderof-iff.md) | 160 | `result-track:fb0d2a88afdfdced0368dc11f972dfe9eaee1dfa3bb554b7fd873f8982d0ccd6` |
-| 10 | `theorem` | [mem_addWellApproximable_iff](../../../../NumberTheory/WellApproximablePublic.lean/declarations/mem-addwellapproximable-iff.md) | 168 | `result-track:9e985219b7b4a746a231f4c4ab9b2090598fc58ba39cb3004f5d0554b57954f8` |
-| 11 | `theorem` | [addWellApproximable_ae_empty_or_univ](../../../../NumberTheory/WellApproximablePublic.lean/declarations/addwellapproximable-ae-empty-or-univ.md) | 192 | `result-track:9c3e7c996ce6ac729804f062481ec06100480cf0abf1bbd8b51ab08ef0c928ba` |
-| 12 | `lemma` | [_root_.NormedAddCommGroup.exists_norm_nsmul_le](../../../../NumberTheory/WellApproximablePublic.lean/declarations/root-normedaddcommgroup-exists-norm-nsmul-le.md) | 322 | `result-track:55e0e9db6fcc0cd72fc75a294e8ec02a249b751e44ef19c2aae9cbb8a87f2b82` |
-| 13 | `lemma` | [exists_norm_nsmul_le](../../../../NumberTheory/WellApproximablePublic.lean/declarations/exists-norm-nsmul-le.md) | 357 | `result-track:d2813b346905b7a1d5e536e7c548dbd36abbc4360e8e51fbb4ffeed0683f4cf5` |
+| 1 | `def` | [approxOrderOf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WellApproximablePublic.lean/declarations/approxorderof.md) | 73 | `declaration-track:17738d48576cbb657cf0033be73bf23a4fc411ce37d9caf821eeb830d0b83147` |
+| 2 | `theorem` | [mem_approxOrderOf_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WellApproximablePublic.lean/declarations/mem-approxorderof-iff.md) | 77 | `result-track:1b4453781288c3a5d99dc225f63dcb63ccda7927a642183203e5e2f6d6d7ad3e` |
+| 3 | `def` | [wellApproximable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WellApproximablePublic.lean/declarations/wellapproximable.md) | 88 | `declaration-track:790e224b32796741b3bd0cbe8b31006f4dd2665c2aaa23c530039689fdbfd89e` |
+| 4 | `theorem` | [mem_wellApproximable_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WellApproximablePublic.lean/declarations/mem-wellapproximable-iff.md) | 92 | `result-track:cdaec1231d70623c997d4945bbc684265b592bd28f2aa6f620d8c60d5dd87d51` |
+| 5 | `theorem` | [image_pow_subset_of_coprime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WellApproximablePublic.lean/declarations/image-pow-subset-of-coprime.md) | 102 | `result-track:dd069c5bd2c6a5a1add5c92f14eeb851178897f55ee3e1353ff85bd5c8311547` |
+| 6 | `theorem` | [image_pow_subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WellApproximablePublic.lean/declarations/image-pow-subset.md) | 113 | `result-track:73fb2cdb27dc7b1a12eeaa7b0078a3ada8cf981df60a44272d9b97e09f629c44` |
+| 7 | `theorem` | [smul_subset_of_coprime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WellApproximablePublic.lean/declarations/smul-subset-of-coprime.md) | 124 | `result-track:1f44a22e5e2ec641ffe06989fa6ae0fbdfebc7894dd3dce9dece7797f35ffbcc` |
+| 8 | `theorem` | [smul_eq_of_mul_dvd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WellApproximablePublic.lean/declarations/smul-eq-of-mul-dvd.md) | 135 | `result-track:1a18e5c076bceeaa0c81d8404c36071cd4859a32a3bc3c2ade7abab07722e6a2` |
+| 9 | `theorem` | [mem_approxAddOrderOf_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WellApproximablePublic.lean/declarations/mem-approxaddorderof-iff.md) | 160 | `result-track:fb0d2a88afdfdced0368dc11f972dfe9eaee1dfa3bb554b7fd873f8982d0ccd6` |
+| 10 | `theorem` | [mem_addWellApproximable_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WellApproximablePublic.lean/declarations/mem-addwellapproximable-iff.md) | 168 | `result-track:9e985219b7b4a746a231f4c4ab9b2090598fc58ba39cb3004f5d0554b57954f8` |
+| 11 | `theorem` | [addWellApproximable_ae_empty_or_univ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WellApproximablePublic.lean/declarations/addwellapproximable-ae-empty-or-univ.md) | 192 | `result-track:9c3e7c996ce6ac729804f062481ec06100480cf0abf1bbd8b51ab08ef0c928ba` |
+| 12 | `lemma` | [_root_.NormedAddCommGroup.exists_norm_nsmul_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WellApproximablePublic.lean/declarations/root-normedaddcommgroup-exists-norm-nsmul-le.md) | 322 | `result-track:55e0e9db6fcc0cd72fc75a294e8ec02a249b751e44ef19c2aae9cbb8a87f2b82` |
+| 13 | `lemma` | [exists_norm_nsmul_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WellApproximablePublic.lean/declarations/exists-norm-nsmul-le.md) | 357 | `result-track:d2813b346905b7a1d5e536e7c548dbd36abbc4360e8e51fbb4ffeed0683f4cf5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

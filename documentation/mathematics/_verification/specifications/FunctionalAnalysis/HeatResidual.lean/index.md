@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/HeatResidual.lean/index.md) · [Full source](../../../../FunctionalAnalysis/HeatResidual.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HeatResidual.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HeatResidual.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [LiftedState](../../../../FunctionalAnalysis/HeatResidual.lean/declarations/liftedstate.md) | 21 | `declaration-track:04563df4cd048882c6423340e89cde72c3f0b92ba5661adfd2adf7382a6cbf4a` |
-| 2 | `def` | [liftedHeat](../../../../FunctionalAnalysis/HeatResidual.lean/declarations/liftedheat.md) | 25 | `declaration-track:b2b320d9945d8d3a8938b176b539a5a4704119112981ad2cb5f6f4e44f23b2ca` |
-| 3 | `def` | [reconstructHeat](../../../../FunctionalAnalysis/HeatResidual.lean/declarations/reconstructheat.md) | 32 | `declaration-track:9f6b7a211534181919499b2404a6abf24a1e7f0145800d42ad84891b5dcdca7f` |
-| 4 | `theorem` | [reconstruct_liftedHeat](../../../../FunctionalAnalysis/HeatResidual.lean/declarations/reconstruct-liftedheat.md) | 37 | `result-track:e9fb9527a889067c4204ca153dd0144c2c86d7ec1cce46d8d73f8e72e3444d5b` |
+| 1 | `structure` | [LiftedState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HeatResidual.lean/declarations/liftedstate.md) | 21 | `declaration-track:04563df4cd048882c6423340e89cde72c3f0b92ba5661adfd2adf7382a6cbf4a` |
+| 2 | `def` | [liftedHeat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HeatResidual.lean/declarations/liftedheat.md) | 25 | `declaration-track:b2b320d9945d8d3a8938b176b539a5a4704119112981ad2cb5f6f4e44f23b2ca` |
+| 3 | `def` | [reconstructHeat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HeatResidual.lean/declarations/reconstructheat.md) | 32 | `declaration-track:9f6b7a211534181919499b2404a6abf24a1e7f0145800d42ad84891b5dcdca7f` |
+| 4 | `theorem` | [reconstruct_liftedHeat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/HeatResidual.lean/declarations/reconstruct-liftedheat.md) | 37 | `result-track:e9fb9527a889067c4204ca153dd0144c2c86d7ec1cce46d8d73f8e72e3444d5b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CubicPowerSummation.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CubicPowerSummation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CubicPowerSummation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CubicPowerSummation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Real.CubicEulerMaclaurin`](../../../../MeasureAndIntegration/CubicEulerMaclaurin.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.IntervalMellinKernel`](../../../../MeasureAndIntegration/IntervalMellinKernel.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Real.CubicEulerMaclaurin`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CubicEulerMaclaurin.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.IntervalMellinKernel`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/IntervalMellinKernel.lean/index.md) — import line 5; pinned internal source present.
 - `Mathlib.Tactic.FieldSimp` — import line 6; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [cellRemainder](../../../../MeasureAndIntegration/CubicPowerSummation.lean/declarations/cellremainder.md) | 30 | `declaration-track:6e7b908d34034060c7c924163ff924deb3cc9b73293f087d588bd016f43cc8c6` |
-| 2 | `theorem` | [shifted_power_deriv](../../../../MeasureAndIntegration/CubicPowerSummation.lean/declarations/shifted-power-deriv.md) | 33 | `result-track:b1935fa324bbf01a2c39e8c02fb8893a1f0c72d79098a9248138b8d34d090c87` |
-| 3 | `theorem` | [continuousOn_shifted_power](../../../../MeasureAndIntegration/CubicPowerSummation.lean/declarations/continuouson-shifted-power.md) | 42 | `result-track:ecd38a169506719572dd826db786b7bbdc9ca8d3ff389a2b008aa5e084a2223e` |
-| 4 | `theorem` | [integral_shifted_power](../../../../MeasureAndIntegration/CubicPowerSummation.lean/declarations/integral-shifted-power.md) | 48 | `result-track:d981fbc16fc43772953590e69fce3c07f9f951a60242250501625b4f82372c32` |
-| 5 | `theorem` | [one_cell_power](../../../../MeasureAndIntegration/CubicPowerSummation.lean/declarations/one-cell-power.md) | 62 | `result-track:bf53298f6e297b5384bd3a47513bcdeedaea978b2da5d57df6d6a857932b80ac` |
-| 6 | `theorem` | [finite_power_sum](../../../../MeasureAndIntegration/CubicPowerSummation.lean/declarations/finite-power-sum.md) | 103 | `result-track:2eec4ff0cb88b99afa8b6f69e14d468caffff5d13de449aa7b88ee39186044d7` |
+| 1 | `def` | [cellRemainder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CubicPowerSummation.lean/declarations/cellremainder.md) | 30 | `declaration-track:6e7b908d34034060c7c924163ff924deb3cc9b73293f087d588bd016f43cc8c6` |
+| 2 | `theorem` | [shifted_power_deriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CubicPowerSummation.lean/declarations/shifted-power-deriv.md) | 33 | `result-track:b1935fa324bbf01a2c39e8c02fb8893a1f0c72d79098a9248138b8d34d090c87` |
+| 3 | `theorem` | [continuousOn_shifted_power](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CubicPowerSummation.lean/declarations/continuouson-shifted-power.md) | 42 | `result-track:ecd38a169506719572dd826db786b7bbdc9ca8d3ff389a2b008aa5e084a2223e` |
+| 4 | `theorem` | [integral_shifted_power](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CubicPowerSummation.lean/declarations/integral-shifted-power.md) | 48 | `result-track:d981fbc16fc43772953590e69fce3c07f9f951a60242250501625b4f82372c32` |
+| 5 | `theorem` | [one_cell_power](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CubicPowerSummation.lean/declarations/one-cell-power.md) | 62 | `result-track:bf53298f6e297b5384bd3a47513bcdeedaea978b2da5d57df6d6a857932b80ac` |
+| 6 | `theorem` | [finite_power_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CubicPowerSummation.lean/declarations/finite-power-sum.md) | 103 | `result-track:2eec4ff0cb88b99afa8b6f69e14d468caffff5d13de449aa7b88ee39186044d7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CriticalLineNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CriticalLineNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CriticalLineNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CriticalLineNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [criticalLine_of_centered_zero](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CriticalLineNamespaced.lean/declarations/criticalline-of-centered-zero.md) | 28 | `result-track:f00409268a9757b6c2c3d0223825ecfb08e06dfe4c682fcc03424500b1a80248` |
-| 2 | `theorem` | [centered_zero_of_criticalLine](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CriticalLineNamespaced.lean/declarations/centered-zero-of-criticalline.md) | 34 | `result-track:ab36fc096f7bec49cb67e2532537c89179dc24305c84098b41a604d8e5df266e` |
-| 3 | `theorem` | [criticalLine_iff_centered_zero](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CriticalLineNamespaced.lean/declarations/criticalline-iff-centered-zero.md) | 40 | `result-track:829613dde5e6ba1ae2355c9b3b30165df2f99335634a7591f55a637caddd580b` |
+| 1 | `theorem` | [criticalLine_of_centered_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CriticalLineNamespaced.lean/declarations/criticalline-of-centered-zero.md) | 28 | `result-track:f00409268a9757b6c2c3d0223825ecfb08e06dfe4c682fcc03424500b1a80248` |
+| 2 | `theorem` | [centered_zero_of_criticalLine](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CriticalLineNamespaced.lean/declarations/centered-zero-of-criticalline.md) | 34 | `result-track:ab36fc096f7bec49cb67e2532537c89179dc24305c84098b41a604d8e5df266e` |
+| 3 | `theorem` | [criticalLine_iff_centered_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CriticalLineNamespaced.lean/declarations/criticalline-iff-centered-zero.md) | 40 | `result-track:829613dde5e6ba1ae2355c9b3b30165df2f99335634a7591f55a637caddd580b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

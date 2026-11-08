@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../CommutativeAlgebra/ArithmeticRingsAndOtherSpecialCommutativeRings/PolynomialRingsAndIdealsRingsOfIntegerValuedPolynomials/CriterionNamespacedPublic.lean/index.md) · [Full source](../../../../../../CommutativeAlgebra/ArithmeticRingsAndOtherSpecialCommutativeRings/PolynomialRingsAndIdealsRingsOfIntegerValuedPolynomials/CriterionNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ArithmeticRingsAndOtherSpecialCommutativeRings/PolynomialRingsAndIdealsRingsOfIntegerValuedPolynomials/CriterionNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ArithmeticRingsAndOtherSpecialCommutativeRings/PolynomialRingsAndIdealsRingsOfIntegerValuedPolynomials/CriterionNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [generalizedEisenstein_aux](../../../../../../CommutativeAlgebra/ArithmeticRingsAndOtherSpecialCommutativeRings/PolynomialRingsAndIdealsRingsOfIntegerValuedPolynomials/CriterionNamespacedPublic.lean/declarations/generalizedeisenstein-aux.md) | 74 | `result-track:f85ea48c9fd82408a464980d3b85116e462f501b4966fe66b7e897949526b177` |
-| 2 | `theorem` | [generalizedEisenstein](../../../../../../CommutativeAlgebra/ArithmeticRingsAndOtherSpecialCommutativeRings/PolynomialRingsAndIdealsRingsOfIntegerValuedPolynomials/CriterionNamespacedPublic.lean/declarations/generalizedeisenstein.md) | 131 | `result-track:beb2d6e1bd003c2d47f04a41b75c8bf2b3a7af5cbaa53da600274cd7d675fa6c` |
-| 3 | `theorem` | [irreducible_of_eisenstein_criterion](../../../../../../CommutativeAlgebra/ArithmeticRingsAndOtherSpecialCommutativeRings/PolynomialRingsAndIdealsRingsOfIntegerValuedPolynomials/CriterionNamespacedPublic.lean/declarations/irreducible-of-eisenstein-criterion.md) | 184 | `result-track:e81f1f5672aca19a474548e1614afeec2ea0a4679a068eb1877bf04aa4066643` |
+| 1 | `lemma` | [generalizedEisenstein_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ArithmeticRingsAndOtherSpecialCommutativeRings/PolynomialRingsAndIdealsRingsOfIntegerValuedPolynomials/CriterionNamespacedPublic.lean/declarations/generalizedeisenstein-aux.md) | 74 | `result-track:f85ea48c9fd82408a464980d3b85116e462f501b4966fe66b7e897949526b177` |
+| 2 | `theorem` | [generalizedEisenstein](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ArithmeticRingsAndOtherSpecialCommutativeRings/PolynomialRingsAndIdealsRingsOfIntegerValuedPolynomials/CriterionNamespacedPublic.lean/declarations/generalizedeisenstein.md) | 131 | `result-track:beb2d6e1bd003c2d47f04a41b75c8bf2b3a7af5cbaa53da600274cd7d675fa6c` |
+| 3 | `theorem` | [irreducible_of_eisenstein_criterion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ArithmeticRingsAndOtherSpecialCommutativeRings/PolynomialRingsAndIdealsRingsOfIntegerValuedPolynomials/CriterionNamespacedPublic.lean/declarations/irreducible-of-eisenstein-criterion.md) | 184 | `result-track:e81f1f5672aca19a474548e1614afeec2ea0a4679a068eb1877bf04aa4066643` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

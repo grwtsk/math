@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Adjacency.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Adjacency.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Adjacency.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Adjacency.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [CoordDiffOne](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Adjacency.lean/declarations/coorddiffone.md) | 19 | `declaration-track:ee4eff8ecc3f5f2dbcd73766e42506ad3af691046518b94ba7d87cd66d1bc6f9` |
-| 2 | `def` | [SameExcept](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Adjacency.lean/declarations/sameexcept.md) | 26 | `declaration-track:2f335f7e280e51c64de52ac786859a567138cada9565790bc711ef36288b72d2` |
-| 3 | `def` | [CubeAdjacent](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Adjacency.lean/declarations/cubeadjacent.md) | 32 | `declaration-track:3d55848f1102de67308fed501a9a19eeb0951df0aeed591ec0afd241f13f9e7e` |
-| 4 | `theorem` | [cubeAdjacent_symm](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Adjacency.lean/declarations/cubeadjacent-symm.md) | 37 | `result-track:5edfa8391f5fac009a02d769d2d5fd446de40bf03783115a13839746651a3a85` |
-| 5 | `theorem` | [cubeAdjacent_irrefl](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Adjacency.lean/declarations/cubeadjacent-irrefl.md) | 48 | `result-track:3ddbc7d80927d5b84def79f91061a30ba6b37eddb2605369be27bfbd51db466f` |
+| 1 | `def` | [CoordDiffOne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Adjacency.lean/declarations/coorddiffone.md) | 19 | `declaration-track:ee4eff8ecc3f5f2dbcd73766e42506ad3af691046518b94ba7d87cd66d1bc6f9` |
+| 2 | `def` | [SameExcept](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Adjacency.lean/declarations/sameexcept.md) | 26 | `declaration-track:2f335f7e280e51c64de52ac786859a567138cada9565790bc711ef36288b72d2` |
+| 3 | `def` | [CubeAdjacent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Adjacency.lean/declarations/cubeadjacent.md) | 32 | `declaration-track:3d55848f1102de67308fed501a9a19eeb0951df0aeed591ec0afd241f13f9e7e` |
+| 4 | `theorem` | [cubeAdjacent_symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Adjacency.lean/declarations/cubeadjacent-symm.md) | 37 | `result-track:5edfa8391f5fac009a02d769d2d5fd446de40bf03783115a13839746651a3a85` |
+| 5 | `theorem` | [cubeAdjacent_irrefl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Adjacency.lean/declarations/cubeadjacent-irrefl.md) | 48 | `result-track:3ddbc7d80927d5b84def79f91061a30ba6b37eddb2605369be27bfbd51db466f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

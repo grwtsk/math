@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/EquicontinuityPublic.lean/index.md) · [Full source](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/EquicontinuityPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/EquicontinuityPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/EquicontinuityPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [equicontinuous_of_equicontinuousAt_one](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/EquicontinuityPublic.lean/declarations/equicontinuous-of-equicontinuousat-one.md) | 23 | `result-track:b524562cfc52fcfafb71648053c991b90506312bfd1ece2d7d7ebba4b1a380a6` |
-| 2 | `theorem` | [uniformEquicontinuous_of_equicontinuousAt_one](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/EquicontinuityPublic.lean/declarations/uniformequicontinuous-of-equicontinuousat-one.md) | 37 | `result-track:b3993deb22c374005115442c976ba2791963cd034dec4b223fcfe3488e979d78` |
+| 1 | `theorem` | [equicontinuous_of_equicontinuousAt_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/EquicontinuityPublic.lean/declarations/equicontinuous-of-equicontinuousat-one.md) | 23 | `result-track:b524562cfc52fcfafb71648053c991b90506312bfd1ece2d7d7ebba4b1a380a6` |
+| 2 | `theorem` | [uniformEquicontinuous_of_equicontinuousAt_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/EquicontinuityPublic.lean/declarations/uniformequicontinuous-of-equicontinuousat-one.md) | 37 | `result-track:b3993deb22c374005115442c976ba2791963cd034dec4b223fcfe3488e979d78` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

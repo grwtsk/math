@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/EnoughInjectives.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/EnoughInjectives.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/EnoughInjectives.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/EnoughInjectives.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [isSplitMono_from_singleFunctor_obj_of_injective](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/EnoughInjectives.lean/declarations/issplitmono-from-singlefunctor-obj-of-injective.md) | 36 | `result-track:7d9da94a132c05cf4654015f18b30f6ab60ab6f867bb7bc8708dd7fc9b51142e` |
-| 2 | `lemma` | [to_singleFunctor_obj_eq_zero_of_injective](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/EnoughInjectives.lean/declarations/to-singlefunctor-obj-eq-zero-of-injective.md) | 65 | `result-track:636c7b5bcb33a1a8a888d8906cb41f65b7e92d0f8603eea1bfac8af1f3e15d01` |
-| 3 | `lemma` | [eq_zero_of_injective](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/EnoughInjectives.lean/declarations/eq-zero-of-injective.md) | 93 | `result-track:5c44ae3496dc656be0c0b52faf9029067a9add1370f393f9a183549956a4f184` |
-| 4 | `lemma` | [hasExt_of_enoughInjectives](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/EnoughInjectives.lean/declarations/hasext-of-enoughinjectives.md) | 116 | `result-track:0da50728d408b3b14cf6f21a080133dd968de6151ee2e27fdddca0e70fc70dea` |
+| 1 | `lemma` | [isSplitMono_from_singleFunctor_obj_of_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/EnoughInjectives.lean/declarations/issplitmono-from-singlefunctor-obj-of-injective.md) | 36 | `result-track:7d9da94a132c05cf4654015f18b30f6ab60ab6f867bb7bc8708dd7fc9b51142e` |
+| 2 | `lemma` | [to_singleFunctor_obj_eq_zero_of_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/EnoughInjectives.lean/declarations/to-singlefunctor-obj-eq-zero-of-injective.md) | 65 | `result-track:636c7b5bcb33a1a8a888d8906cb41f65b7e92d0f8603eea1bfac8af1f3e15d01` |
+| 3 | `lemma` | [eq_zero_of_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/EnoughInjectives.lean/declarations/eq-zero-of-injective.md) | 93 | `result-track:5c44ae3496dc656be0c0b52faf9029067a9add1370f393f9a183549956a4f184` |
+| 4 | `lemma` | [hasExt_of_enoughInjectives](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/EnoughInjectives.lean/declarations/hasext-of-enoughinjectives.md) | 116 | `result-track:0da50728d408b3b14cf6f21a080133dd968de6151ee2e27fdddca0e70fc70dea` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

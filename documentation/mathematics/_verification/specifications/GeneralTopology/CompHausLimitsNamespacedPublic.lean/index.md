@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/CompHausLimitsNamespacedPublic.lean/index.md) · [Full source](../../../../GeneralTopology/CompHausLimitsNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompHausLimitsNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompHausLimitsNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../GeneralTopology/CompHausLimitsNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 34 | `declaration-track:6d8998099904b16cd4a923adb1c565260ed2eff1818d38e4fcd869c8e574c2b3` |
-| 2 | `instance` | [(anonymous)](../../../../GeneralTopology/CompHausLimitsNamespacedPublic.lean/declarations/instance.md) | 37 | `declaration-track:04f290075245ceaf9acb141e278d04fddd47c796c5847ab987decef9132bc297` |
-| 3 | `example` | [(anonymous)](../../../../GeneralTopology/CompHausLimitsNamespacedPublic.lean/declarations/example.md) | 40 | `declaration-track:3b363e76c67baf6f043a404fddeb230c122f871f007e50e4191ef98ee1f8f734` |
-| 4 | `abbrev` | [isTerminalPUnit](../../../../GeneralTopology/CompHausLimitsNamespacedPublic.lean/declarations/isterminalpunit.md) | 43 | `declaration-track:2b466339250e3dbf7dc3adf01a19c13fd6f90bb594245b256d2f3abc0dedd351` |
-| 5 | `def` | [terminalIsoPUnit](../../../../GeneralTopology/CompHausLimitsNamespacedPublic.lean/declarations/terminalisopunit.md) | 46 | `declaration-track:5e5fa300a6a64ef59f899a23632a08ac5641c586aa819182d994848837384015` |
-| 6 | `example` | [(anonymous)](../../../../GeneralTopology/CompHausLimitsNamespacedPublic.lean/declarations/example-source-edition-2.md) | 49 | `declaration-track:45c3739fd1182a81e7a75a02a3d7b43af8b039fbc0d981ad9785c93136162a1d` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompHausLimitsNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 34 | `declaration-track:6d8998099904b16cd4a923adb1c565260ed2eff1818d38e4fcd869c8e574c2b3` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompHausLimitsNamespacedPublic.lean/declarations/instance.md) | 37 | `declaration-track:04f290075245ceaf9acb141e278d04fddd47c796c5847ab987decef9132bc297` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompHausLimitsNamespacedPublic.lean/declarations/example.md) | 40 | `declaration-track:3b363e76c67baf6f043a404fddeb230c122f871f007e50e4191ef98ee1f8f734` |
+| 4 | `abbrev` | [isTerminalPUnit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompHausLimitsNamespacedPublic.lean/declarations/isterminalpunit.md) | 43 | `declaration-track:2b466339250e3dbf7dc3adf01a19c13fd6f90bb594245b256d2f3abc0dedd351` |
+| 5 | `def` | [terminalIsoPUnit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompHausLimitsNamespacedPublic.lean/declarations/terminalisopunit.md) | 46 | `declaration-track:5e5fa300a6a64ef59f899a23632a08ac5641c586aa819182d994848837384015` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompHausLimitsNamespacedPublic.lean/declarations/example-source-edition-2.md) | 49 | `declaration-track:45c3739fd1182a81e7a75a02a3d7b43af8b039fbc0d981ad9785c93136162a1d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

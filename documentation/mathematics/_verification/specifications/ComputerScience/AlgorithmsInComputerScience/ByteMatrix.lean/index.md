@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ByteMatrix.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ByteMatrix.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ByteMatrix.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ByteMatrix.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [matrixToBytes?_bytesToMatrix_of_codec](../../../../../ComputerScience/AlgorithmsInComputerScience/ByteMatrix.lean/declarations/matrixtobytes-bytestomatrix-of-codec.md) | 19 | `result-track:858c845cf8f94ae7c28f57535b34514e62fe0f521f250f83618d4463345d9ab6` |
+| 1 | `theorem` | [matrixToBytes?_bytesToMatrix_of_codec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ByteMatrix.lean/declarations/matrixtobytes-bytestomatrix-of-codec.md) | 19 | `result-track:858c845cf8f94ae7c28f57535b34514e62fe0f521f250f83618d4463345d9ab6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

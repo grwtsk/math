@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualHalfExponentialStrongWindowAttempt01Namespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualHalfExponentialStrongWindowAttempt01Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualHalfExponentialStrongWindowAttempt01Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualHalfExponentialStrongWindowAttempt01Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actualHalfExponentialPeriodicCutoff_lower_column](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualHalfExponentialStrongWindowAttempt01Namespaced.lean/declarations/actualhalfexponentialperiodiccutoff-lower-column.md) | 28 | `result-track:c59a923f763a7d0f56a4292f13cf14521ee5ad4ceebe1ea3b6e7c982561b939f` |
-| 2 | `theorem` | [actualHalfExponentialPeriodicCutoff_strong_orders](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualHalfExponentialStrongWindowAttempt01Namespaced.lean/declarations/actualhalfexponentialperiodiccutoff-strong-orders.md) | 41 | `result-track:8ab75c37ab20539ecd4ca5c4dbf228833d68bb760fa33b8ad99a03ee3a865152` |
-| 3 | `theorem` | [actualFullPhysicalPeriodicRow_eq_half_near_add_far](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualHalfExponentialStrongWindowAttempt01Namespaced.lean/declarations/actualfullphysicalperiodicrow-eq-half-near-add-far.md) | 49 | `result-track:6e40764bd686b910c5ea4717334f35f77ad22202117efa66b85bbcc6a6918496` |
+| 1 | `theorem` | [actualHalfExponentialPeriodicCutoff_lower_column](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualHalfExponentialStrongWindowAttempt01Namespaced.lean/declarations/actualhalfexponentialperiodiccutoff-lower-column.md) | 28 | `result-track:c59a923f763a7d0f56a4292f13cf14521ee5ad4ceebe1ea3b6e7c982561b939f` |
+| 2 | `theorem` | [actualHalfExponentialPeriodicCutoff_strong_orders](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualHalfExponentialStrongWindowAttempt01Namespaced.lean/declarations/actualhalfexponentialperiodiccutoff-strong-orders.md) | 41 | `result-track:8ab75c37ab20539ecd4ca5c4dbf228833d68bb760fa33b8ad99a03ee3a865152` |
+| 3 | `theorem` | [actualFullPhysicalPeriodicRow_eq_half_near_add_far](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualHalfExponentialStrongWindowAttempt01Namespaced.lean/declarations/actualfullphysicalperiodicrow-eq-half-near-add-far.md) | 49 | `result-track:6e40764bd686b910c5ea4717334f35f77ad22202117efa66b85bbcc6a6918496` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

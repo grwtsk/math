@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/MultiplicativeNumberTheory/ConfigurationCounts.lean/index.md) · [Full source](../../../../../NumberTheory/MultiplicativeNumberTheory/ConfigurationCounts.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/ConfigurationCounts.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/ConfigurationCounts.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Combinatorics.Enumerative.BoundedWitnesses`](../../../../../Combinatorics/BoundedWitnesses.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Combinatorics.Enumerative.BoundedWitnesses`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundedWitnesses.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Data.Nat.Prime.Basic` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,18 +58,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [goldbachCount](../../../../../NumberTheory/MultiplicativeNumberTheory/ConfigurationCounts.lean/declarations/goldbachcount.md) | 23 | `declaration-track:719e81f5abc49083a89686fc51aaa64bf068a5c9c6fb906976896c310034a481` |
-| 2 | `theorem` | [goldbachCount_pos_iff](../../../../../NumberTheory/MultiplicativeNumberTheory/ConfigurationCounts.lean/declarations/goldbachcount-pos-iff.md) | 27 | `result-track:247cf62186b9a0f5f754bd0bbd89e479e6809697185bcd3c73ca6475126c6137` |
-| 3 | `def` | [twinCount](../../../../../NumberTheory/MultiplicativeNumberTheory/ConfigurationCounts.lean/declarations/twincount.md) | 42 | `declaration-track:305012ff182a0b10527ad61b2e357019a39f760e8e971692d9407e228b66ff7e` |
-| 4 | `theorem` | [twinCount_pos_iff](../../../../../NumberTheory/MultiplicativeNumberTheory/ConfigurationCounts.lean/declarations/twincount-pos-iff.md) | 46 | `result-track:baa17622c9add089be8576c0d20f78975ba91746e5818c06172a74439158fd98` |
-| 5 | `def` | [twinTailCount](../../../../../NumberTheory/MultiplicativeNumberTheory/ConfigurationCounts.lean/declarations/twintailcount.md) | 51 | `declaration-track:4993eab7fb9b823dc68b2ab18607d56b896c00d67c955aeaa991365aa1653243` |
-| 6 | `def` | [intervalCount](../../../../../NumberTheory/MultiplicativeNumberTheory/ConfigurationCounts.lean/declarations/intervalcount.md) | 55 | `declaration-track:bd9b98f9fc09e143b2263d34a96a1a4b597df6541b10e5689b789840a2eb46aa` |
-| 7 | `theorem` | [intervalCount_pos_iff](../../../../../NumberTheory/MultiplicativeNumberTheory/ConfigurationCounts.lean/declarations/intervalcount-pos-iff.md) | 59 | `result-track:2aa1004558a0f3d650f586e4c9f94168802165df053f581e815ddc961150bce0` |
-| 8 | `def` | [squareCount](../../../../../NumberTheory/MultiplicativeNumberTheory/ConfigurationCounts.lean/declarations/squarecount.md) | 69 | `declaration-track:818e9e0e859b24ee5181af792a2d73e252845ea4f6805e2b84210005bb9cc8ec` |
-| 9 | `theorem` | [squareCount_pos_iff](../../../../../NumberTheory/MultiplicativeNumberTheory/ConfigurationCounts.lean/declarations/squarecount-pos-iff.md) | 73 | `result-track:4fd2c06ba0164abbbee739496e19165f0ccebb4feb37eb94cae842dc7c34c835` |
-| 10 | `def` | [quadraticCount](../../../../../NumberTheory/MultiplicativeNumberTheory/ConfigurationCounts.lean/declarations/quadraticcount.md) | 79 | `declaration-track:0abf5d2d4fe710c83a86d54fef4358d30da4f9ee8a850883c19a264d4dce6ff7` |
-| 11 | `theorem` | [quadraticCount_pos_iff](../../../../../NumberTheory/MultiplicativeNumberTheory/ConfigurationCounts.lean/declarations/quadraticcount-pos-iff.md) | 83 | `result-track:ffa328de85ec4735a62404291769362aed46a16e2f1ed9868c1e1174797a833e` |
-| 12 | `def` | [quadraticTailCount](../../../../../NumberTheory/MultiplicativeNumberTheory/ConfigurationCounts.lean/declarations/quadratictailcount.md) | 88 | `declaration-track:23bc703b55e31bda5357208dfd0b03619daae96a23486e921ba5247e569d353a` |
+| 1 | `def` | [goldbachCount](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/ConfigurationCounts.lean/declarations/goldbachcount.md) | 23 | `declaration-track:719e81f5abc49083a89686fc51aaa64bf068a5c9c6fb906976896c310034a481` |
+| 2 | `theorem` | [goldbachCount_pos_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/ConfigurationCounts.lean/declarations/goldbachcount-pos-iff.md) | 27 | `result-track:247cf62186b9a0f5f754bd0bbd89e479e6809697185bcd3c73ca6475126c6137` |
+| 3 | `def` | [twinCount](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/ConfigurationCounts.lean/declarations/twincount.md) | 42 | `declaration-track:305012ff182a0b10527ad61b2e357019a39f760e8e971692d9407e228b66ff7e` |
+| 4 | `theorem` | [twinCount_pos_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/ConfigurationCounts.lean/declarations/twincount-pos-iff.md) | 46 | `result-track:baa17622c9add089be8576c0d20f78975ba91746e5818c06172a74439158fd98` |
+| 5 | `def` | [twinTailCount](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/ConfigurationCounts.lean/declarations/twintailcount.md) | 51 | `declaration-track:4993eab7fb9b823dc68b2ab18607d56b896c00d67c955aeaa991365aa1653243` |
+| 6 | `def` | [intervalCount](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/ConfigurationCounts.lean/declarations/intervalcount.md) | 55 | `declaration-track:bd9b98f9fc09e143b2263d34a96a1a4b597df6541b10e5689b789840a2eb46aa` |
+| 7 | `theorem` | [intervalCount_pos_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/ConfigurationCounts.lean/declarations/intervalcount-pos-iff.md) | 59 | `result-track:2aa1004558a0f3d650f586e4c9f94168802165df053f581e815ddc961150bce0` |
+| 8 | `def` | [squareCount](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/ConfigurationCounts.lean/declarations/squarecount.md) | 69 | `declaration-track:818e9e0e859b24ee5181af792a2d73e252845ea4f6805e2b84210005bb9cc8ec` |
+| 9 | `theorem` | [squareCount_pos_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/ConfigurationCounts.lean/declarations/squarecount-pos-iff.md) | 73 | `result-track:4fd2c06ba0164abbbee739496e19165f0ccebb4feb37eb94cae842dc7c34c835` |
+| 10 | `def` | [quadraticCount](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/ConfigurationCounts.lean/declarations/quadraticcount.md) | 79 | `declaration-track:0abf5d2d4fe710c83a86d54fef4358d30da4f9ee8a850883c19a264d4dce6ff7` |
+| 11 | `theorem` | [quadraticCount_pos_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/ConfigurationCounts.lean/declarations/quadraticcount-pos-iff.md) | 83 | `result-track:ffa328de85ec4735a62404291769362aed46a16e2f1ed9868c1e1174797a833e` |
+| 12 | `def` | [quadraticTailCount](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/ConfigurationCounts.lean/declarations/quadratictailcount.md) | 88 | `declaration-track:23bc703b55e31bda5357208dfd0b03619daae96a23486e921ba5247e569d353a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

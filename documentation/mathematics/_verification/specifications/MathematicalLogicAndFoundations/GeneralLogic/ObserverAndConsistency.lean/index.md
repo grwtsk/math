@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ObserverAndConsistency.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ObserverAndConsistency.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ObserverAndConsistency.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ObserverAndConsistency.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Witness](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ObserverAndConsistency.lean/declarations/witness.md) | 43 | `declaration-track:7839ffccc5bf417dd43e24fc83b72b0f2f209cd50a5b04c30210420f303a42c5` |
-| 2 | `def` | [Consistent](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ObserverAndConsistency.lean/declarations/consistent.md) | 46 | `declaration-track:3314c273480fb6be2779a60de55069072681f2d372706ff01a35ced1b00f8928` |
+| 1 | `structure` | [Witness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ObserverAndConsistency.lean/declarations/witness.md) | 43 | `declaration-track:7839ffccc5bf417dd43e24fc83b72b0f2f209cd50a5b04c30210420f303a42c5` |
+| 2 | `def` | [Consistent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ObserverAndConsistency.lean/declarations/consistent.md) | 46 | `declaration-track:3314c273480fb6be2779a60de55069072681f2d372706ff01a35ced1b00f8928` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

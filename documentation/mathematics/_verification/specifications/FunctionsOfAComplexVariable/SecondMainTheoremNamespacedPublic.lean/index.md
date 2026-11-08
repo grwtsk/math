@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/SecondMainTheoremNamespacedPublic.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/SecondMainTheoremNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/SecondMainTheoremNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/SecondMainTheoremNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [sum_posLog_inv_norm_sub_le](../../../../FunctionsOfAComplexVariable/SecondMainTheoremNamespacedPublic.lean/declarations/sum-poslog-inv-norm-sub-le.md) | 48 | `result-track:d36afdcf5973a371d2f7e97dc91800beae56f53c1c3a11d5ba73891d0199d3b4` |
-| 2 | `theorem` | [exists_sum_posLog_inv_norm_sub_le](../../../../FunctionsOfAComplexVariable/SecondMainTheoremNamespacedPublic.lean/declarations/exists-sum-poslog-inv-norm-sub-le.md) | 64 | `result-track:f99a2a94b42f16ff9adcc34f190e00fb92018b2f5479c067c8b4e0e0f28642f5` |
+| 1 | `lemma` | [sum_posLog_inv_norm_sub_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/SecondMainTheoremNamespacedPublic.lean/declarations/sum-poslog-inv-norm-sub-le.md) | 48 | `result-track:d36afdcf5973a371d2f7e97dc91800beae56f53c1c3a11d5ba73891d0199d3b4` |
+| 2 | `theorem` | [exists_sum_posLog_inv_norm_sub_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/SecondMainTheoremNamespacedPublic.lean/declarations/exists-sum-poslog-inv-norm-sub-le.md) | 64 | `result-track:f99a2a94b42f16ff9adcc34f190e00fb92018b2f5479c067c8b4e0e0f28642f5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

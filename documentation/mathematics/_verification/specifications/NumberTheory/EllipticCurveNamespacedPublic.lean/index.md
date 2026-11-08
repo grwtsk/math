@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/EllipticCurveNamespacedPublic.lean/index.md) · [Full source](../../../../NumberTheory/EllipticCurveNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/EllipticCurveNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/EllipticCurveNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Point.naiveHeight](../../../../NumberTheory/EllipticCurveNamespacedPublic.lean/declarations/point-naiveheight.md) | 46 | `declaration-track:95767074e634d3aefb2fe2f1ce76d020cca5429cd7a583527a5348ef918e4d12` |
-| 2 | `lemma` | [Point.naiveHeight_eq_logHeight](../../../../NumberTheory/EllipticCurveNamespacedPublic.lean/declarations/point-naiveheight-eq-logheight-source-edition-2.md) | 49 | `result-track:840eff0df0dbad845ff6c6dd2d3bfe4d98ab1b74388194bc71d45e7afbb93895` |
-| 3 | `lemma` | [Point.naiveHeight_eq_logHeight₁](../../../../NumberTheory/EllipticCurveNamespacedPublic.lean/declarations/point-naiveheight-eq-logheight.md) | 52 | `result-track:295f884634e3d255f8f8b5bee6ba5b322f7907af9d7ecb35743e5c6e45d4bd63` |
-| 4 | `lemma` | [abs_logHeight_sym2x_sub_le](../../../../NumberTheory/EllipticCurveNamespacedPublic.lean/declarations/abs-logheight-sym2x-sub-le.md) | 60 | `result-track:71325c134456fbfa80ee2251156796c3f8e0c6beb1e4234ce4172793b52e171f` |
-| 5 | `theorem` | [abs_logHeight_addSubMap_sub_two_mul_logHeight_le](../../../../NumberTheory/EllipticCurveNamespacedPublic.lean/declarations/abs-logheight-addsubmap-sub-two-mul-logheight-le.md) | 79 | `result-track:479264a7dd1365ccbabe3afe555473cb87225963578a9f7e713914540aa98167` |
-| 6 | `theorem` | [approx_parallelogram_law](../../../../NumberTheory/EllipticCurveNamespacedPublic.lean/declarations/approx-parallelogram-law.md) | 89 | `result-track:eb47b37b024f8146996561da4183f259f016a247a4d48571c4aa590fab4ffadb` |
-| 7 | `instance` | [(anonymous)](../../../../NumberTheory/EllipticCurveNamespacedPublic.lean/declarations/instance.md) | 112 | `declaration-track:329b376055a083f1df3636458851e1fb4e5e2693498fcc41163d90bce7d5dc62` |
-| 8 | `lemma` | [finite_naiveHeight_le](../../../../NumberTheory/EllipticCurveNamespacedPublic.lean/declarations/finite-naiveheight-le.md) | 125 | `result-track:c5b9d1897ad9881666039d09356bcb55543f942c8f77d3c79d22fc3927c280b9` |
-| 9 | `theorem` | [finite_torsion](../../../../NumberTheory/EllipticCurveNamespacedPublic.lean/declarations/finite-torsion.md) | 132 | `result-track:29c5d76fb766d348c1c99023bf704883e0e95eb4d174672b6123cc685843a8e4` |
+| 1 | `def` | [Point.naiveHeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/EllipticCurveNamespacedPublic.lean/declarations/point-naiveheight.md) | 46 | `declaration-track:95767074e634d3aefb2fe2f1ce76d020cca5429cd7a583527a5348ef918e4d12` |
+| 2 | `lemma` | [Point.naiveHeight_eq_logHeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/EllipticCurveNamespacedPublic.lean/declarations/point-naiveheight-eq-logheight-source-edition-2.md) | 49 | `result-track:840eff0df0dbad845ff6c6dd2d3bfe4d98ab1b74388194bc71d45e7afbb93895` |
+| 3 | `lemma` | [Point.naiveHeight_eq_logHeight₁](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/EllipticCurveNamespacedPublic.lean/declarations/point-naiveheight-eq-logheight.md) | 52 | `result-track:295f884634e3d255f8f8b5bee6ba5b322f7907af9d7ecb35743e5c6e45d4bd63` |
+| 4 | `lemma` | [abs_logHeight_sym2x_sub_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/EllipticCurveNamespacedPublic.lean/declarations/abs-logheight-sym2x-sub-le.md) | 60 | `result-track:71325c134456fbfa80ee2251156796c3f8e0c6beb1e4234ce4172793b52e171f` |
+| 5 | `theorem` | [abs_logHeight_addSubMap_sub_two_mul_logHeight_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/EllipticCurveNamespacedPublic.lean/declarations/abs-logheight-addsubmap-sub-two-mul-logheight-le.md) | 79 | `result-track:479264a7dd1365ccbabe3afe555473cb87225963578a9f7e713914540aa98167` |
+| 6 | `theorem` | [approx_parallelogram_law](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/EllipticCurveNamespacedPublic.lean/declarations/approx-parallelogram-law.md) | 89 | `result-track:eb47b37b024f8146996561da4183f259f016a247a4d48571c4aa590fab4ffadb` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/EllipticCurveNamespacedPublic.lean/declarations/instance.md) | 112 | `declaration-track:329b376055a083f1df3636458851e1fb4e5e2693498fcc41163d90bce7d5dc62` |
+| 8 | `lemma` | [finite_naiveHeight_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/EllipticCurveNamespacedPublic.lean/declarations/finite-naiveheight-le.md) | 125 | `result-track:c5b9d1897ad9881666039d09356bcb55543f942c8f77d3c79d22fc3927c280b9` |
+| 9 | `theorem` | [finite_torsion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/EllipticCurveNamespacedPublic.lean/declarations/finite-torsion.md) | 132 | `result-track:29c5d76fb766d348c1c99023bf704883e0e95eb4d174672b6123cc685843a8e4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

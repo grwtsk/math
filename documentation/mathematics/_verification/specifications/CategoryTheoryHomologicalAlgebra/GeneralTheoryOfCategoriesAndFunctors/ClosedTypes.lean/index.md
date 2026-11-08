@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ClosedTypes.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ClosedTypes.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ClosedTypes.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ClosedTypes.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,13 +60,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Types.tensorProductAdjunction](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ClosedTypes.lean/declarations/types-tensorproductadjunction.md) | 34 | `declaration-track:ed4e38e1d674e677235a9c4fd857fd26e56b78f7b7ac6a0a42363242d3b3d034` |
-| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ClosedTypes.lean/declarations/instance-source-edition-2.md) | 39 | `declaration-track:168ffcf50645a2fce4e793f59eade02b589252690d3a9f316fc91a2c73826e0d` |
-| 3 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ClosedTypes.lean/declarations/instance-source-edition-5.md) | 42 | `declaration-track:f44d26977fd7edc623418757cd3e95c60f6f21303e3cd45e080818d58a631d93` |
-| 4 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ClosedTypes.lean/declarations/instance-source-edition-4.md) | 45 | `declaration-track:c116794be4bd19acb2d7195d689d40a9a02bf6816cf71b45ec43668071d0497f` |
-| 5 | `def` | [cartesianClosedFunctorToTypes](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ClosedTypes.lean/declarations/cartesianclosedfunctortotypes.md) | 57 | `declaration-track:a432ca674d2f22fb5da43092f628cc76d8eed03573f80823535cd311f96ad7b8` |
-| 6 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ClosedTypes.lean/declarations/instance-source-edition-3.md) | 67 | `declaration-track:8463d245ea240accf0101a4df5708e9b761d06d89f665f7b5563edc57de174bf` |
-| 7 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ClosedTypes.lean/declarations/instance.md) | 72 | `declaration-track:0488652600d82bea533b1547f9c187c3dff70f9e6f5a2344ba7a14265f4c8b4a` |
+| 1 | `def` | [Types.tensorProductAdjunction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ClosedTypes.lean/declarations/types-tensorproductadjunction.md) | 34 | `declaration-track:ed4e38e1d674e677235a9c4fd857fd26e56b78f7b7ac6a0a42363242d3b3d034` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ClosedTypes.lean/declarations/instance-source-edition-2.md) | 39 | `declaration-track:168ffcf50645a2fce4e793f59eade02b589252690d3a9f316fc91a2c73826e0d` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ClosedTypes.lean/declarations/instance-source-edition-5.md) | 42 | `declaration-track:f44d26977fd7edc623418757cd3e95c60f6f21303e3cd45e080818d58a631d93` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ClosedTypes.lean/declarations/instance-source-edition-4.md) | 45 | `declaration-track:c116794be4bd19acb2d7195d689d40a9a02bf6816cf71b45ec43668071d0497f` |
+| 5 | `def` | [cartesianClosedFunctorToTypes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ClosedTypes.lean/declarations/cartesianclosedfunctortotypes.md) | 57 | `declaration-track:a432ca674d2f22fb5da43092f628cc76d8eed03573f80823535cd311f96ad7b8` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ClosedTypes.lean/declarations/instance-source-edition-3.md) | 67 | `declaration-track:8463d245ea240accf0101a4df5708e9b761d06d89f665f7b5563edc57de174bf` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ClosedTypes.lean/declarations/instance.md) | 72 | `declaration-track:0488652600d82bea533b1547f9c187c3dff70f9e6f5a2344ba7a14265f4c8b4a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/SingletonNamespaced.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/SingletonNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/SingletonNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/SingletonNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [intrinsicStratum](../../../../ProbabilityTheoryAndStochasticProcesses/SingletonNamespaced.lean/declarations/intrinsicstratum.md) | 27 | `declaration-track:3edd13bbcc2bd15c811077032b998cb1302b5ca18c0e1d66edb5c716239e5aee` |
-| 2 | `def` | [structuralOrbit](../../../../ProbabilityTheoryAndStochasticProcesses/SingletonNamespaced.lean/declarations/structuralorbit.md) | 34 | `declaration-track:938fbe407f450da7a091d2afe53231a906319f2aed8732ea87c8f43a0243512d` |
-| 3 | `structure` | [CertifiedInvariantSingleton](../../../../ProbabilityTheoryAndStochasticProcesses/SingletonNamespaced.lean/declarations/certifiedinvariantsingleton.md) | 45 | `declaration-track:ffbc31af1cfd0c0eaa3e16a05ea082eef0838c66cc2f61392f44e32b926dfb6f` |
-| 4 | `theorem` | [CertifiedInvariantSingleton.flow_fixed](../../../../ProbabilityTheoryAndStochasticProcesses/SingletonNamespaced.lean/declarations/flow-fixed.md) | 61 | `result-track:8d205a02a24760ebf057b5b028030bf73b75b9f5cbcf38717425389f40ea77d3` |
-| 5 | `theorem` | [CertifiedInvariantSingleton.surgery_fixed](../../../../ProbabilityTheoryAndStochasticProcesses/SingletonNamespaced.lean/declarations/surgery-fixed.md) | 79 | `result-track:b9d2e0a0bc469d20c4d5c944e0bdff9e9dc1db24fa9d9c7662bee783b31c4259` |
+| 1 | `def` | [intrinsicStratum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/SingletonNamespaced.lean/declarations/intrinsicstratum.md) | 27 | `declaration-track:3edd13bbcc2bd15c811077032b998cb1302b5ca18c0e1d66edb5c716239e5aee` |
+| 2 | `def` | [structuralOrbit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/SingletonNamespaced.lean/declarations/structuralorbit.md) | 34 | `declaration-track:938fbe407f450da7a091d2afe53231a906319f2aed8732ea87c8f43a0243512d` |
+| 3 | `structure` | [CertifiedInvariantSingleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/SingletonNamespaced.lean/declarations/certifiedinvariantsingleton.md) | 45 | `declaration-track:ffbc31af1cfd0c0eaa3e16a05ea082eef0838c66cc2f61392f44e32b926dfb6f` |
+| 4 | `theorem` | [CertifiedInvariantSingleton.flow_fixed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/SingletonNamespaced.lean/declarations/flow-fixed.md) | 61 | `result-track:8d205a02a24760ebf057b5b028030bf73b75b9f5cbcf38717425389f40ea77d3` |
+| 5 | `theorem` | [CertifiedInvariantSingleton.surgery_fixed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/SingletonNamespaced.lean/declarations/surgery-fixed.md) | 79 | `result-track:b9d2e0a0bc469d20c4d5c944e0bdff9e9dc1db24fa9d9c7662bee783b31c4259` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

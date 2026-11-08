@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/FiniteDimensional.lean/index.md) · [Full source](../../../../RealFunctions/FiniteDimensional.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FiniteDimensional.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FiniteDimensional.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_homeomorph_extension](../../../../RealFunctions/FiniteDimensional.lean/declarations/exists-homeomorph-extension.md) | 27 | `result-track:a5fbba1afb34ecc69b565301dd927cca3d9fc829575a4127ba9115c2e9089041` |
+| 1 | `theorem` | [exists_homeomorph_extension](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FiniteDimensional.lean/declarations/exists-homeomorph-extension.md) | 27 | `result-track:a5fbba1afb34ecc69b565301dd927cca3d9fc829575a4127ba9115c2e9089041` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

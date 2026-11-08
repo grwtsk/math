@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Mathlib.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Mathlib.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Mathlib.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Mathlib.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [WisdomMonadBoundary](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Mathlib.lean/declarations/wisdommonadboundary.md) | 10 | `declaration-track:251200658bc9369536187d6f4f4d801688c13d741af833dd9839b8278c39568c` |
-| 2 | `def` | [WisdomMonadBoundary.accepted](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Mathlib.lean/declarations/wisdommonadboundary-accepted.md) | 20 | `declaration-track:d7f874ad12851c12186da79d27f616776a3eb1bd928839606be0519fb6ed16d1` |
-| 3 | `def` | [WisdomMonadBoundary.has_target_monad](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Mathlib.lean/declarations/wisdommonadboundary-has-target-monad.md) | 26 | `declaration-track:f90c5238ecacd7a78a0708ec31088e31f20e3a8a84215f9536a82e84d5254522` |
-| 4 | `abbrev` | [KleisliChoice](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Mathlib.lean/declarations/kleislichoice.md) | 34 | `declaration-track:4aff8f4ae489b208a15413d49a8fd876937b66aaa567dd4958f75a371d273be9` |
-| 5 | `def` | [KleisliChoice.underlying](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Mathlib.lean/declarations/kleislichoice-underlying.md) | 41 | `declaration-track:f799187711345c9b50795805171687e8f7e9d9da96b7caa77537fb70ffdfdd10` |
-| 6 | `def` | [KleisliChoice.compose](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Mathlib.lean/declarations/kleislichoice-compose.md) | 50 | `declaration-track:6c86d10075810aa81f786c5afcd88a672c726dc8bf7f1087d8d71f332d77b82b` |
-| 7 | `theorem` | [KleisliChoice.assoc](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Mathlib.lean/declarations/kleislichoice-assoc.md) | 61 | `result-track:2780e379b658522feccf7e3ab7088b9584f1ecce37b520b42f5279f154b429e7` |
-| 8 | `theorem` | [KleisliChoice.compose_assoc](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Mathlib.lean/declarations/kleislichoice-compose-assoc.md) | 73 | `result-track:f992a06d41480bf89541c00d9615eb48f42f03ff405a35c889997868dd197113` |
-| 9 | `abbrev` | [WisdomKleisli](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Mathlib.lean/declarations/wisdomkleisli.md) | 86 | `declaration-track:70e1f2b884355857762911619cd9a9a88abca8fb13a72894d19f7ddd3e23600d` |
-| 10 | `theorem` | [WisdomMonadBoundary.not_claim_bearing_if_accepted](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Mathlib.lean/declarations/wisdommonadboundary-not-claim-bearing-if-accepted.md) | 92 | `result-track:ef1d140eb7911f99922e4e754ee5d3b9dc018d931e516aeaf59111d93a851316` |
+| 1 | `structure` | [WisdomMonadBoundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Mathlib.lean/declarations/wisdommonadboundary.md) | 10 | `declaration-track:251200658bc9369536187d6f4f4d801688c13d741af833dd9839b8278c39568c` |
+| 2 | `def` | [WisdomMonadBoundary.accepted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Mathlib.lean/declarations/wisdommonadboundary-accepted.md) | 20 | `declaration-track:d7f874ad12851c12186da79d27f616776a3eb1bd928839606be0519fb6ed16d1` |
+| 3 | `def` | [WisdomMonadBoundary.has_target_monad](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Mathlib.lean/declarations/wisdommonadboundary-has-target-monad.md) | 26 | `declaration-track:f90c5238ecacd7a78a0708ec31088e31f20e3a8a84215f9536a82e84d5254522` |
+| 4 | `abbrev` | [KleisliChoice](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Mathlib.lean/declarations/kleislichoice.md) | 34 | `declaration-track:4aff8f4ae489b208a15413d49a8fd876937b66aaa567dd4958f75a371d273be9` |
+| 5 | `def` | [KleisliChoice.underlying](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Mathlib.lean/declarations/kleislichoice-underlying.md) | 41 | `declaration-track:f799187711345c9b50795805171687e8f7e9d9da96b7caa77537fb70ffdfdd10` |
+| 6 | `def` | [KleisliChoice.compose](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Mathlib.lean/declarations/kleislichoice-compose.md) | 50 | `declaration-track:6c86d10075810aa81f786c5afcd88a672c726dc8bf7f1087d8d71f332d77b82b` |
+| 7 | `theorem` | [KleisliChoice.assoc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Mathlib.lean/declarations/kleislichoice-assoc.md) | 61 | `result-track:2780e379b658522feccf7e3ab7088b9584f1ecce37b520b42f5279f154b429e7` |
+| 8 | `theorem` | [KleisliChoice.compose_assoc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Mathlib.lean/declarations/kleislichoice-compose-assoc.md) | 73 | `result-track:f992a06d41480bf89541c00d9615eb48f42f03ff405a35c889997868dd197113` |
+| 9 | `abbrev` | [WisdomKleisli](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Mathlib.lean/declarations/wisdomkleisli.md) | 86 | `declaration-track:70e1f2b884355857762911619cd9a9a88abca8fb13a72894d19f7ddd3e23600d` |
+| 10 | `theorem` | [WisdomMonadBoundary.not_claim_bearing_if_accepted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Mathlib.lean/declarations/wisdommonadboundary-not-claim-bearing-if-accepted.md) | 92 | `result-track:ef1d140eb7911f99922e4e754ee5d3b9dc018d931e516aeaf59111d93a851316` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

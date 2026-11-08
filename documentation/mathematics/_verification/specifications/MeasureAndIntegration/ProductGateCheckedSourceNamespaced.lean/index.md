@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ProductGateCheckedSourceNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ProductGateCheckedSourceNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ProductGateCheckedSourceNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ProductGateCheckedSourceNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [unitCorrelation_product_majorant_integrable](../../../../MeasureAndIntegration/ProductGateCheckedSourceNamespaced.lean/declarations/unitcorrelation-product-majorant-integrable.md) | 31 | `result-track:08b96fc779ceef49db88260d8f328193e9cc9d85bc7faa61475c51f053a2ddaa` |
-| 2 | `theorem` | [unitCorrelation_product_integrable](../../../../MeasureAndIntegration/ProductGateCheckedSourceNamespaced.lean/declarations/unitcorrelation-product-integrable.md) | 39 | `result-track:15fd06db188aa58390ca86202dd202bdb7afe82f084fe2f4f7ed3e6ff79194a0` |
+| 1 | `theorem` | [unitCorrelation_product_majorant_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ProductGateCheckedSourceNamespaced.lean/declarations/unitcorrelation-product-majorant-integrable.md) | 31 | `result-track:08b96fc779ceef49db88260d8f328193e9cc9d85bc7faa61475c51f053a2ddaa` |
+| 2 | `theorem` | [unitCorrelation_product_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ProductGateCheckedSourceNamespaced.lean/declarations/unitcorrelation-product-integrable.md) | 39 | `result-track:15fd06db188aa58390ca86202dd202bdb7afe82f084fe2f4f7ed3e6ff79194a0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/CoordinateWordsAndBinaryRefinement.lean/index.md) · [Full source](../../../../Combinatorics/CoordinateWordsAndBinaryRefinement.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoordinateWordsAndBinaryRefinement.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoordinateWordsAndBinaryRefinement.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `Folder.Basic` — import line 19; external provider; requires a separately pinned dependency.
-- [Dyadic Side And Successor Identity](../../../../NumberTheory/DyadicSideAndSuccessorIdentity.lean/index.md) — import line 21; pinned internal source present.
+- [Dyadic Side And Successor Identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DyadicSideAndSuccessorIdentity.lean/index.md) — import line 21; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [CubeAddress](../../../../Combinatorics/CoordinateWordsAndBinaryRefinement.lean/declarations/cubeaddress.md) | 39 | `declaration-track:12bc79e5d8283dc2e62f8cb3f691f7caebbc9ef8c7e9af511b8e2cc2a550d0aa` |
-| 2 | `def` | [appendBits](../../../../Combinatorics/CoordinateWordsAndBinaryRefinement.lean/declarations/appendbits.md) | 42 | `declaration-track:1ca8487901e0534f89750334ce8b7ae653e21787bff78d45d7392b82691919b2` |
-| 3 | `def` | [embedLow](../../../../Combinatorics/CoordinateWordsAndBinaryRefinement.lean/declarations/embedlow.md) | 54 | `declaration-track:6cd402a082d0023e72d552f03d5e70734fb437746a10af9a2f0ce455ffc4da73` |
-| 4 | `theorem` | [appendBits_coord_val](../../../../Combinatorics/CoordinateWordsAndBinaryRefinement.lean/declarations/appendbits-coord-val.md) | 60 | `result-track:5286b5be21364bb668d94866969dd403573c6e198dc6075f33510173a015db98` |
-| 5 | `theorem` | [embedLow_coord_val](../../../../Combinatorics/CoordinateWordsAndBinaryRefinement.lean/declarations/embedlow-coord-val.md) | 68 | `result-track:6caf7cc6f6a42ab6069f9ac8bac283a7cb9ace822f697677c89e19e99ff41d8c` |
+| 1 | `abbrev` | [CubeAddress](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoordinateWordsAndBinaryRefinement.lean/declarations/cubeaddress.md) | 39 | `declaration-track:12bc79e5d8283dc2e62f8cb3f691f7caebbc9ef8c7e9af511b8e2cc2a550d0aa` |
+| 2 | `def` | [appendBits](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoordinateWordsAndBinaryRefinement.lean/declarations/appendbits.md) | 42 | `declaration-track:1ca8487901e0534f89750334ce8b7ae653e21787bff78d45d7392b82691919b2` |
+| 3 | `def` | [embedLow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoordinateWordsAndBinaryRefinement.lean/declarations/embedlow.md) | 54 | `declaration-track:6cd402a082d0023e72d552f03d5e70734fb437746a10af9a2f0ce455ffc4da73` |
+| 4 | `theorem` | [appendBits_coord_val](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoordinateWordsAndBinaryRefinement.lean/declarations/appendbits-coord-val.md) | 60 | `result-track:5286b5be21364bb668d94866969dd403573c6e198dc6075f33510173a015db98` |
+| 5 | `theorem` | [embedLow_coord_val](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoordinateWordsAndBinaryRefinement.lean/declarations/embedlow-coord-val.md) | 68 | `result-track:6caf7cc6f6a42ab6069f9ac8bac283a7cb9ace822f697677c89e19e99ff41d8c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

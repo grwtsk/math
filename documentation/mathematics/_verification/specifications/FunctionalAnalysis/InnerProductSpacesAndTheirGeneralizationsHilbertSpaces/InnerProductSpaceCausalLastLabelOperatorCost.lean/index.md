@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/InnerProductSpaceCausalLastLabelOperatorCost.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/InnerProductSpaceCausalLastLabelOperatorCost.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/InnerProductSpaceCausalLastLabelOperatorCost.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/InnerProductSpaceCausalLastLabelOperatorCost.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.SpecialFunctions.ExponentialFloorGap`](../../../../../RealFunctions/SpecialFunctionsExponentialFloorGap.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.InnerProductSpace.CausalContactOperatorCost`](../../../../../MeasureAndIntegration/CausalContactOperatorCost.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.SpecialFunctions.ExponentialFloorGap`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SpecialFunctionsExponentialFloorGap.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.InnerProductSpace.CausalContactOperatorCost`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CausalContactOperatorCost.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [last_label_diagonal_quartic_upper](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/InnerProductSpaceCausalLastLabelOperatorCost.lean/declarations/last-label-diagonal-quartic-upper.md) | 45 | `result-track:498b6fa7672ff73d4f9105dccb886a2793c1d9c08fe79e0848602d2cf15bac01` |
-| 2 | `theorem` | [last_label_continuous_realization_norm](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/InnerProductSpaceCausalLastLabelOperatorCost.lean/declarations/last-label-continuous-realization-norm.md) | 54 | `result-track:a4ed62710e63ee286064c7c81f8a2db878fbccde0d3164be79702df98c760560` |
-| 3 | `theorem` | [last_label_continuous_realization_exponential_norm](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/InnerProductSpaceCausalLastLabelOperatorCost.lean/declarations/last-label-continuous-realization-exponential-norm.md) | 67 | `result-track:315d2c333125a337797c61ac0fb89c5c4fe50168803f277975320bb2db7e76b9` |
-| 4 | `theorem` | [prescribed_horizon_last_label_exponential_norm](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/InnerProductSpaceCausalLastLabelOperatorCost.lean/declarations/prescribed-horizon-last-label-exponential-norm.md) | 77 | `result-track:23bf398ab5f23737a15082f411a1f0a20596fd53f550adcdc6ed8b6e9ef4aadf` |
-| 5 | `theorem` | [whole_inventory_continuous_realization_exponential_norm](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/InnerProductSpaceCausalLastLabelOperatorCost.lean/declarations/whole-inventory-continuous-realization-exponential-norm.md) | 89 | `result-track:3770a0b5cee5c1f6b88040400a5a4c2feacc61058a06ad8c3551a892eff08b8e` |
+| 1 | `theorem` | [last_label_diagonal_quartic_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/InnerProductSpaceCausalLastLabelOperatorCost.lean/declarations/last-label-diagonal-quartic-upper.md) | 45 | `result-track:498b6fa7672ff73d4f9105dccb886a2793c1d9c08fe79e0848602d2cf15bac01` |
+| 2 | `theorem` | [last_label_continuous_realization_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/InnerProductSpaceCausalLastLabelOperatorCost.lean/declarations/last-label-continuous-realization-norm.md) | 54 | `result-track:a4ed62710e63ee286064c7c81f8a2db878fbccde0d3164be79702df98c760560` |
+| 3 | `theorem` | [last_label_continuous_realization_exponential_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/InnerProductSpaceCausalLastLabelOperatorCost.lean/declarations/last-label-continuous-realization-exponential-norm.md) | 67 | `result-track:315d2c333125a337797c61ac0fb89c5c4fe50168803f277975320bb2db7e76b9` |
+| 4 | `theorem` | [prescribed_horizon_last_label_exponential_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/InnerProductSpaceCausalLastLabelOperatorCost.lean/declarations/prescribed-horizon-last-label-exponential-norm.md) | 77 | `result-track:23bf398ab5f23737a15082f411a1f0a20596fd53f550adcdc6ed8b6e9ef4aadf` |
+| 5 | `theorem` | [whole_inventory_continuous_realization_exponential_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/InnerProductSpaceCausalLastLabelOperatorCost.lean/declarations/whole-inventory-continuous-realization-exponential-norm.md) | 89 | `result-track:3770a0b5cee5c1f6b88040400a5a4c2feacc61058a06ad8c3551a892eff08b8e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

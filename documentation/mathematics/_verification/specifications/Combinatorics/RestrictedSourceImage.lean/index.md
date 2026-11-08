@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/RestrictedSourceImage.lean/index.md) · [Full source](../../../../Combinatorics/RestrictedSourceImage.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RestrictedSourceImage.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RestrictedSourceImage.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -49,7 +49,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 - `BitMatrix.Codec.SequentialPrimeSource` — import line 20; external provider; requires a separately pinned dependency.
 - `BitMatrix.Rhetorical.Core` — import line 21; external provider; requires a separately pinned dependency.
 - `BitMatrix.Topology.DesignatedCantor` — import line 22; external provider; requires a separately pinned dependency.
-- [Documented Analytic Inverse](../../../../Combinatorics/DocumentedAnalyticInverse.lean/index.md) — import line 24; pinned internal source present.
+- [Documented Analytic Inverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DocumentedAnalyticInverse.lean/index.md) — import line 24; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -60,14 +60,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [documentedSourceStatePredicate](../../../../Combinatorics/RestrictedSourceImage.lean/declarations/documentedsourcestatepredicate.md) | 39 | `declaration-track:6f8058716d1901b6827b3160c3b414befd11b6e756eeaccaca8032750017df6a` |
-| 2 | `abbrev` | [DocumentedSourceState](../../../../Combinatorics/RestrictedSourceImage.lean/declarations/documentedsourcestate.md) | 46 | `declaration-track:91752809b3dd149f97db3c4a36d04e06e718ecbd4d21a32792b04854061ff313` |
-| 3 | `abbrev` | [SelfSourceScalarDomain](../../../../Combinatorics/RestrictedSourceImage.lean/declarations/selfsourcescalardomain.md) | 51 | `declaration-track:759bcb6292a4a12ebca52320154ea4016440ff140461c32f69cbbabe274a9477` |
-| 4 | `def` | [selfSourceScalarEquiv](../../../../Combinatorics/RestrictedSourceImage.lean/declarations/selfsourcescalarequiv.md) | 60 | `declaration-track:a5b964b23c2db8636f0ede3e6966d7c299b2a95d128cd6176ea98c8e45c5d17f` |
-| 5 | `def` | [scalarOfCanonicalSource](../../../../Combinatorics/RestrictedSourceImage.lean/declarations/scalarofcanonicalsource.md) | 75 | `declaration-track:3f554b56ed495433c2900d8bec78a87f5ce1b140e494e25a13bb7363cbed95d3` |
-| 6 | `theorem` | [selfSourceScalarEquiv_scalarOfCanonicalSource](../../../../Combinatorics/RestrictedSourceImage.lean/declarations/selfsourcescalarequiv-scalarofcanonicalsource.md) | 85 | `result-track:1adb5abdce6fe812afddb4b5c90d3b899694b0e959195cef549caad676e9dae9` |
-| 7 | `theorem` | [selfSourceScalarEquiv_inverse_laws](../../../../Combinatorics/RestrictedSourceImage.lean/declarations/selfsourcescalarequiv-inverse-laws.md) | 95 | `result-track:b0fc556a9efd5afdf93ed560c5fdd6ba450329dd1a0ef7fb941ab77c2be9645f` |
-| 8 | `theorem` | [documentedInterpreter_eq_baseline_iff](../../../../Combinatorics/RestrictedSourceImage.lean/declarations/documentedinterpreter-eq-baseline-iff.md) | 101 | `result-track:fd2ce184591f70b5cdc4899eae3167791a7b43601740addc46f027eb6f9b4106` |
+| 1 | `def` | [documentedSourceStatePredicate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RestrictedSourceImage.lean/declarations/documentedsourcestatepredicate.md) | 39 | `declaration-track:6f8058716d1901b6827b3160c3b414befd11b6e756eeaccaca8032750017df6a` |
+| 2 | `abbrev` | [DocumentedSourceState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RestrictedSourceImage.lean/declarations/documentedsourcestate.md) | 46 | `declaration-track:91752809b3dd149f97db3c4a36d04e06e718ecbd4d21a32792b04854061ff313` |
+| 3 | `abbrev` | [SelfSourceScalarDomain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RestrictedSourceImage.lean/declarations/selfsourcescalardomain.md) | 51 | `declaration-track:759bcb6292a4a12ebca52320154ea4016440ff140461c32f69cbbabe274a9477` |
+| 4 | `def` | [selfSourceScalarEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RestrictedSourceImage.lean/declarations/selfsourcescalarequiv.md) | 60 | `declaration-track:a5b964b23c2db8636f0ede3e6966d7c299b2a95d128cd6176ea98c8e45c5d17f` |
+| 5 | `def` | [scalarOfCanonicalSource](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RestrictedSourceImage.lean/declarations/scalarofcanonicalsource.md) | 75 | `declaration-track:3f554b56ed495433c2900d8bec78a87f5ce1b140e494e25a13bb7363cbed95d3` |
+| 6 | `theorem` | [selfSourceScalarEquiv_scalarOfCanonicalSource](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RestrictedSourceImage.lean/declarations/selfsourcescalarequiv-scalarofcanonicalsource.md) | 85 | `result-track:1adb5abdce6fe812afddb4b5c90d3b899694b0e959195cef549caad676e9dae9` |
+| 7 | `theorem` | [selfSourceScalarEquiv_inverse_laws](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RestrictedSourceImage.lean/declarations/selfsourcescalarequiv-inverse-laws.md) | 95 | `result-track:b0fc556a9efd5afdf93ed560c5fdd6ba450329dd1a0ef7fb941ab77c2be9645f` |
+| 8 | `theorem` | [documentedInterpreter_eq_baseline_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RestrictedSourceImage.lean/declarations/documentedinterpreter-eq-baseline-iff.md) | 101 | `result-track:fd2ce184591f70b5cdc4899eae3167791a7b43601740addc46f027eb6f9b4106` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

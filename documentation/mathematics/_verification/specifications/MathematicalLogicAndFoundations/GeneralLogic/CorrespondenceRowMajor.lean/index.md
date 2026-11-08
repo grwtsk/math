@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CorrespondenceRowMajor.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CorrespondenceRowMajor.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CorrespondenceRowMajor.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CorrespondenceRowMajor.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [rowMajor](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CorrespondenceRowMajor.lean/declarations/rowmajor.md) | 8 | `declaration-track:2cf5e92e8068ad5af5e0d940903987bc64a964e6ea9d89a5fb8f71d7e0eb99b7` |
-| 2 | `theorem` | [rowMajor_injective](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CorrespondenceRowMajor.lean/declarations/rowmajor-injective.md) | 13 | `result-track:35abe0666ea881ed39ebd0b65f92be022acaf572c80c308d2846b7a3c86a7bc7` |
-| 3 | `theorem` | [rowMajor_value](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CorrespondenceRowMajor.lean/declarations/rowmajor-value.md) | 18 | `result-track:23cefe779f81e11c8673b9ba9480f91218fba53f24c8b7610121b7f530f2d176` |
+| 1 | `def` | [rowMajor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CorrespondenceRowMajor.lean/declarations/rowmajor.md) | 8 | `declaration-track:2cf5e92e8068ad5af5e0d940903987bc64a964e6ea9d89a5fb8f71d7e0eb99b7` |
+| 2 | `theorem` | [rowMajor_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CorrespondenceRowMajor.lean/declarations/rowmajor-injective.md) | 13 | `result-track:35abe0666ea881ed39ebd0b65f92be022acaf572c80c308d2846b7a3c86a7bc7` |
+| 3 | `theorem` | [rowMajor_value](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CorrespondenceRowMajor.lean/declarations/rowmajor-value.md) | 18 | `result-track:23cefe779f81e11c8673b9ba9480f91218fba53f24c8b7610121b7f530f2d176` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

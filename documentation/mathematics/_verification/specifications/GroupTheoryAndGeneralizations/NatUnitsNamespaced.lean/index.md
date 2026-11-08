@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/NatUnitsNamespaced.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/NatUnitsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/NatUnitsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/NatUnitsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [units_eq_one](../../../../GroupTheoryAndGeneralizations/NatUnitsNamespaced.lean/declarations/units-eq-one.md) | 28 | `result-track:c301a3e65f0fa00bea73b10e6f1415683f4e73f37c9769750640435d86c32aef` |
-| 2 | `lemma` | [addUnits_eq_zero](../../../../GroupTheoryAndGeneralizations/NatUnitsNamespaced.lean/declarations/addunits-eq-zero.md) | 30 | `result-track:bdba0eb3813192262899ddd1817cd1a6582afae8470c956c93821d6508d2e2e1` |
-| 3 | `instance` | [unique_units](../../../../GroupTheoryAndGeneralizations/NatUnitsNamespaced.lean/declarations/unique-units.md) | 33 | `declaration-track:49c08631caa5c679d71eefa80ade96a54f770d2e4efe7f410b337e74dd3c934e` |
-| 4 | `instance` | [unique_addUnits](../../../../GroupTheoryAndGeneralizations/NatUnitsNamespaced.lean/declarations/unique-addunits.md) | 37 | `declaration-track:ffc29506ba5e38219c4274f396c46d32ede000a5f23f985dc305dff3ad44a303` |
-| 5 | `lemma` | [isUnit_iff](../../../../GroupTheoryAndGeneralizations/NatUnitsNamespaced.lean/declarations/isunit-iff.md) | 42 | `result-track:e08df699e48910d5084e5e6ef2617e58fec627b5364a894a151e16ce2250ddba` |
-| 6 | `lemma` | [isAddUnit_iff](../../../../GroupTheoryAndGeneralizations/NatUnitsNamespaced.lean/declarations/isaddunit-iff.md) | 45 | `result-track:e0047aab8a1ae9a2cde282c769307d3fe5dce839c6f9253f6264dd2eea69db2c` |
+| 1 | `lemma` | [units_eq_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/NatUnitsNamespaced.lean/declarations/units-eq-one.md) | 28 | `result-track:c301a3e65f0fa00bea73b10e6f1415683f4e73f37c9769750640435d86c32aef` |
+| 2 | `lemma` | [addUnits_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/NatUnitsNamespaced.lean/declarations/addunits-eq-zero.md) | 30 | `result-track:bdba0eb3813192262899ddd1817cd1a6582afae8470c956c93821d6508d2e2e1` |
+| 3 | `instance` | [unique_units](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/NatUnitsNamespaced.lean/declarations/unique-units.md) | 33 | `declaration-track:49c08631caa5c679d71eefa80ade96a54f770d2e4efe7f410b337e74dd3c934e` |
+| 4 | `instance` | [unique_addUnits](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/NatUnitsNamespaced.lean/declarations/unique-addunits.md) | 37 | `declaration-track:ffc29506ba5e38219c4274f396c46d32ede000a5f23f985dc305dff3ad44a303` |
+| 5 | `lemma` | [isUnit_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/NatUnitsNamespaced.lean/declarations/isunit-iff.md) | 42 | `result-track:e08df699e48910d5084e5e6ef2617e58fec627b5364a894a151e16ce2250ddba` |
+| 6 | `lemma` | [isAddUnit_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/NatUnitsNamespaced.lean/declarations/isaddunit-iff.md) | 45 | `result-track:e0047aab8a1ae9a2cde282c769307d3fe5dce839c6f9253f6264dd2eea69db2c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

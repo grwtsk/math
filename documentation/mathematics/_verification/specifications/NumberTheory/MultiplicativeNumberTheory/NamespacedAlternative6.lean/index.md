@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/MultiplicativeNumberTheory/NamespacedAlternative6.lean/index.md) · [Full source](../../../../../NumberTheory/MultiplicativeNumberTheory/NamespacedAlternative6.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/NamespacedAlternative6.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/NamespacedAlternative6.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [mertensResidual_sub_movingTail_abs_le_uniform](../../../../../NumberTheory/MultiplicativeNumberTheory/NamespacedAlternative6.lean/declarations/mertensresidual-sub-movingtail-abs-le-uniform.md) | 32 | `result-track:6ef7cb0554091b0cd8b85573ade481d4eff81e215200f435cb6f3608e572fe0e` |
-| 2 | `theorem` | [mertensResidual_sub_movingTail_tendsto_zero](../../../../../NumberTheory/MultiplicativeNumberTheory/NamespacedAlternative6.lean/declarations/mertensresidual-sub-movingtail-tendsto-zero.md) | 38 | `result-track:96fba0ee5f73402f3d756ad17231fbf7f92fa459562aa3bf7813cb517472193a` |
-| 3 | `theorem` | [mertens_residual_tail_iff_moving_signed_tail](../../../../../NumberTheory/MultiplicativeNumberTheory/NamespacedAlternative6.lean/declarations/mertens-residual-tail-iff-moving-signed-tail.md) | 47 | `result-track:f1ccc6d45855279e1701c4e1373b267a3d84ed161b0f8b0c25be457787102849` |
+| 1 | `theorem` | [mertensResidual_sub_movingTail_abs_le_uniform](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/NamespacedAlternative6.lean/declarations/mertensresidual-sub-movingtail-abs-le-uniform.md) | 32 | `result-track:6ef7cb0554091b0cd8b85573ade481d4eff81e215200f435cb6f3608e572fe0e` |
+| 2 | `theorem` | [mertensResidual_sub_movingTail_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/NamespacedAlternative6.lean/declarations/mertensresidual-sub-movingtail-tendsto-zero.md) | 38 | `result-track:96fba0ee5f73402f3d756ad17231fbf7f92fa459562aa3bf7813cb517472193a` |
+| 3 | `theorem` | [mertens_residual_tail_iff_moving_signed_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/NamespacedAlternative6.lean/declarations/mertens-residual-tail-iff-moving-signed-tail.md) | 47 | `result-track:f1ccc6d45855279e1701c4e1373b267a3d84ed161b0f8b0c25be457787102849` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

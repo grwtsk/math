@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/AtomicProbabilityMeasure.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/AtomicProbabilityMeasure.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/AtomicProbabilityMeasure.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/AtomicProbabilityMeasure.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [atomicMeasure](../../../../ProbabilityTheoryAndStochasticProcesses/AtomicProbabilityMeasure.lean/declarations/atomicmeasure.md) | 43 | `declaration-track:0e7ad2a4f86aef35a0639bf4e356a9be49e90a62c871eddfe02d9037b71f1620` |
-| 2 | `theorem` | [atomicMeasure_apply](../../../../ProbabilityTheoryAndStochasticProcesses/AtomicProbabilityMeasure.lean/declarations/atomicmeasure-apply.md) | 49 | `result-track:35179b2ced8843f47c9c2c42c73371fe62f820c1189be1d7a604f08cd8bc38b5` |
-| 3 | `theorem` | [atomicMeasure_event](../../../../ProbabilityTheoryAndStochasticProcesses/AtomicProbabilityMeasure.lean/declarations/atomicmeasure-event.md) | 60 | `result-track:0944c2a535d47351ee268a51cb52544da7f83a7ed91f4812593b2e4397435a78` |
-| 4 | `theorem` | [atomicMeasure_univ](../../../../ProbabilityTheoryAndStochasticProcesses/AtomicProbabilityMeasure.lean/declarations/atomicmeasure-univ.md) | 79 | `result-track:8e55393e34a9eff8e8bd470e310b9ff908e10685c310529dc733935073b1ff57` |
-| 5 | `instance` | [atomicMeasure_isProbabilityMeasure](../../../../ProbabilityTheoryAndStochasticProcesses/AtomicProbabilityMeasure.lean/declarations/atomicmeasure-isprobabilitymeasure.md) | 85 | `declaration-track:ed3319f573529d55182c948ade8368a03fe6a130408a01bd7d116f85cff8e89a` |
+| 1 | `def` | [atomicMeasure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/AtomicProbabilityMeasure.lean/declarations/atomicmeasure.md) | 43 | `declaration-track:0e7ad2a4f86aef35a0639bf4e356a9be49e90a62c871eddfe02d9037b71f1620` |
+| 2 | `theorem` | [atomicMeasure_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/AtomicProbabilityMeasure.lean/declarations/atomicmeasure-apply.md) | 49 | `result-track:35179b2ced8843f47c9c2c42c73371fe62f820c1189be1d7a604f08cd8bc38b5` |
+| 3 | `theorem` | [atomicMeasure_event](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/AtomicProbabilityMeasure.lean/declarations/atomicmeasure-event.md) | 60 | `result-track:0944c2a535d47351ee268a51cb52544da7f83a7ed91f4812593b2e4397435a78` |
+| 4 | `theorem` | [atomicMeasure_univ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/AtomicProbabilityMeasure.lean/declarations/atomicmeasure-univ.md) | 79 | `result-track:8e55393e34a9eff8e8bd470e310b9ff908e10685c310529dc733935073b1ff57` |
+| 5 | `instance` | [atomicMeasure_isProbabilityMeasure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/AtomicProbabilityMeasure.lean/declarations/atomicmeasure-isprobabilitymeasure.md) | 85 | `declaration-track:ed3319f573529d55182c948ade8368a03fe6a130408a01bd7d116f85cff8e89a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

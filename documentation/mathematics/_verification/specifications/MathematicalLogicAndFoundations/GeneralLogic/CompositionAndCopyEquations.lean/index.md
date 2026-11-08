@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompositionAndCopyEquations.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompositionAndCopyEquations.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompositionAndCopyEquations.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompositionAndCopyEquations.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -49,7 +49,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 - `Folder.Archive.IndexSpinRef` — import line 20; external provider; requires a separately pinned dependency.
 - `Folder.Archive.PresentationRule` — import line 21; external provider; requires a separately pinned dependency.
 - `Folder.Carrier.BinaryMatrixStream` — import line 22; external provider; requires a separately pinned dependency.
-- [Resolver And Recipe](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResolverAndRecipe.lean/index.md) — import line 24; pinned internal source present.
+- [Resolver And Recipe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResolverAndRecipe.lean/index.md) — import line 24; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -60,9 +60,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [realizeLayerRecipe?](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompositionAndCopyEquations.lean/declarations/realizelayerrecipe.md) | 43 | `declaration-track:81da87cb958e28f9dcfb64d11023b6fa0a125a89cc7fa84d05c395388c69d8c1` |
-| 2 | `theorem` | [realize_copy_recipe](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompositionAndCopyEquations.lean/declarations/realize-copy-recipe.md) | 53 | `result-track:f9591c8710d54da99f28316f9c71ea65fc81c32fdc71aa63118b01c68c2d09a7` |
-| 3 | `theorem` | [copyRuleEngine_realize](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompositionAndCopyEquations.lean/declarations/copyruleengine-realize.md) | 63 | `result-track:52269f13b08cb97fa772f82ee48a9605718b97cf73fd11a051dafcf96fa74879` |
+| 1 | `def` | [realizeLayerRecipe?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompositionAndCopyEquations.lean/declarations/realizelayerrecipe.md) | 43 | `declaration-track:81da87cb958e28f9dcfb64d11023b6fa0a125a89cc7fa84d05c395388c69d8c1` |
+| 2 | `theorem` | [realize_copy_recipe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompositionAndCopyEquations.lean/declarations/realize-copy-recipe.md) | 53 | `result-track:f9591c8710d54da99f28316f9c71ea65fc81c32fdc71aa63118b01c68c2d09a7` |
+| 3 | `theorem` | [copyRuleEngine_realize](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompositionAndCopyEquations.lean/declarations/copyruleengine-realize.md) | 63 | `result-track:52269f13b08cb97fa772f82ee48a9605718b97cf73fd11a051dafcf96fa74879` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

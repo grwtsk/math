@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/Attempt02PhysicalDecayHasDerivAt.lean/index.md) · [Full source](../../../../MeasureAndIntegration/Attempt02PhysicalDecayHasDerivAt.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt02PhysicalDecayHasDerivAt.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt02PhysicalDecayHasDerivAt.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [physical_decay_hasDerivAt](../../../../MeasureAndIntegration/Attempt02PhysicalDecayHasDerivAt.lean/declarations/physical-decay-hasderivat.md) | 16 | `result-track:17c81eaed96e89e6b1a4720c7b33728f9ece15bde14d6fe0387818d43e044e17` |
-| 2 | `theorem` | [physical_decay_integral](../../../../MeasureAndIntegration/Attempt02PhysicalDecayHasDerivAt.lean/declarations/physical-decay-integral.md) | 30 | `result-track:ed7bcc937b2ce478206bc8ffb0b0b7b09260b9297e94e171de31b1b3cf96f685` |
-| 3 | `theorem` | [physical_decay_integral_le](../../../../MeasureAndIntegration/Attempt02PhysicalDecayHasDerivAt.lean/declarations/physical-decay-integral-le.md) | 46 | `result-track:76acaeb01d4f7046e8424f7f51d7d2af997944b4e87b8d4ccc1088923a31c3f1` |
+| 1 | `theorem` | [physical_decay_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt02PhysicalDecayHasDerivAt.lean/declarations/physical-decay-hasderivat.md) | 16 | `result-track:17c81eaed96e89e6b1a4720c7b33728f9ece15bde14d6fe0387818d43e044e17` |
+| 2 | `theorem` | [physical_decay_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt02PhysicalDecayHasDerivAt.lean/declarations/physical-decay-integral.md) | 30 | `result-track:ed7bcc937b2ce478206bc8ffb0b0b7b09260b9297e94e171de31b1b3cf96f685` |
+| 3 | `theorem` | [physical_decay_integral_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Attempt02PhysicalDecayHasDerivAt.lean/declarations/physical-decay-integral-le.md) | 46 | `result-track:76acaeb01d4f7046e8424f7f51d7d2af997944b4e87b8d4ccc1088923a31c3f1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

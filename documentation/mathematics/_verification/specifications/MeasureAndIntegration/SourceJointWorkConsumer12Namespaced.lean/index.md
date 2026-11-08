@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceJointWorkConsumer12Namespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceJointWorkConsumer12Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceJointWorkConsumer12Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceJointWorkConsumer12Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [compensatedJointWork](../../../../MeasureAndIntegration/SourceJointWorkConsumer12Namespaced.lean/declarations/compensatedjointwork.md) | 33 | `declaration-track:2c842bbe090e93c41d8984e5f2893878091aee0d60b29c48a7f752ec77d751e7` |
-| 2 | `theorem` | [compensatedJointWork_eq_strictColumnInterior](../../../../MeasureAndIntegration/SourceJointWorkConsumer12Namespaced.lean/declarations/compensatedjointwork-eq-strictcolumninterior.md) | 40 | `result-track:b4abbd0f9d59e17256c36ecfefd368d54f4003ecbcc4d99f17b74e59f8e53757` |
-| 3 | `theorem` | [residual_upper_of_compensatedJointWork_upper](../../../../MeasureAndIntegration/SourceJointWorkConsumer12Namespaced.lean/declarations/residual-upper-of-compensatedjointwork-upper.md) | 45 | `result-track:841f35813a4b0b37dc2f1c2f268631af15c6687c77c79250211df96477d6d5eb` |
-| 4 | `theorem` | [residual_tail_of_compensatedJointWork_tail](../../../../MeasureAndIntegration/SourceJointWorkConsumer12Namespaced.lean/declarations/residual-tail-of-compensatedjointwork-tail.md) | 59 | `result-track:fc17dd7971b96834e279a92528e9d28da9bb6c7689933228eba929c65d2a60c8` |
-| 5 | `theorem` | [estimate_of_compensatedJointWork_tail](../../../../MeasureAndIntegration/SourceJointWorkConsumer12Namespaced.lean/declarations/estimate-of-compensatedjointwork-tail.md) | 71 | `result-track:1b614a3c8f226524d96597ef0bdd2894396845db6ae582d1175aff0bdfa854e2` |
+| 1 | `def` | [compensatedJointWork](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceJointWorkConsumer12Namespaced.lean/declarations/compensatedjointwork.md) | 33 | `declaration-track:2c842bbe090e93c41d8984e5f2893878091aee0d60b29c48a7f752ec77d751e7` |
+| 2 | `theorem` | [compensatedJointWork_eq_strictColumnInterior](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceJointWorkConsumer12Namespaced.lean/declarations/compensatedjointwork-eq-strictcolumninterior.md) | 40 | `result-track:b4abbd0f9d59e17256c36ecfefd368d54f4003ecbcc4d99f17b74e59f8e53757` |
+| 3 | `theorem` | [residual_upper_of_compensatedJointWork_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceJointWorkConsumer12Namespaced.lean/declarations/residual-upper-of-compensatedjointwork-upper.md) | 45 | `result-track:841f35813a4b0b37dc2f1c2f268631af15c6687c77c79250211df96477d6d5eb` |
+| 4 | `theorem` | [residual_tail_of_compensatedJointWork_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceJointWorkConsumer12Namespaced.lean/declarations/residual-tail-of-compensatedjointwork-tail.md) | 59 | `result-track:fc17dd7971b96834e279a92528e9d28da9bb6c7689933228eba929c65d2a60c8` |
+| 5 | `theorem` | [estimate_of_compensatedJointWork_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceJointWorkConsumer12Namespaced.lean/declarations/estimate-of-compensatedjointwork-tail.md) | 71 | `result-track:1b614a3c8f226524d96597ef0bdd2894396845db6ae582d1175aff0bdfa854e2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

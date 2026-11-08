@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CorrelationPairing.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CorrelationPairing.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CorrelationPairing.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CorrelationPairing.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,9 +46,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Convolution.PolynomialBumpRegularity`](../../../../../../MeasureAndIntegration/PolynomialBumpRegularity.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.Convolution.ExponentialMoments`](../../../../../../MeasureAndIntegration/ExponentialMoments.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.NumberTheory.Chebyshev.FiniteIntegrationByParts`](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/FiniteIntegrationByParts.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.Analysis.Convolution.PolynomialBumpRegularity`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PolynomialBumpRegularity.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Convolution.ExponentialMoments`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ExponentialMoments.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.FiniteIntegrationByParts`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/FiniteIntegrationByParts.lean/index.md) — import line 6; pinned internal source present.
 - `Mathlib.NumberTheory.LSeries.RiemannZeta` — import line 7; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -60,10 +60,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [source_arithmetic_representation](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CorrelationPairing.lean/declarations/source-arithmetic-representation.md) | 23 | `result-track:202a7bbf74a4df81641f2a0eee2a2a82f09b36ce994d856e145c09105ddf3f24` |
-| 2 | `def` | [UniformLowerBound](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CorrelationPairing.lean/declarations/uniformlowerbound.md) | 32 | `declaration-track:a8a7b43b6aa49dbe61bdba8d03ac2a3938329ecbb63fbac4ea8dffd1502b07a5` |
-| 3 | `def` | [BridgeObligation](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CorrelationPairing.lean/declarations/bridgeobligation.md) | 36 | `declaration-track:cc533c2626e504482f9cdaef12cdac3a9528d0088d06249f7718cec5ba0928ab` |
-| 4 | `def` | [EstimateObligation](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CorrelationPairing.lean/declarations/estimateobligation.md) | 39 | `declaration-track:0a6c92f0b3bc71085db58d0d103615f7ec007ad2a3ee9fceff5c120c401955e6` |
+| 1 | `theorem` | [source_arithmetic_representation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CorrelationPairing.lean/declarations/source-arithmetic-representation.md) | 23 | `result-track:202a7bbf74a4df81641f2a0eee2a2a82f09b36ce994d856e145c09105ddf3f24` |
+| 2 | `def` | [UniformLowerBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CorrelationPairing.lean/declarations/uniformlowerbound.md) | 32 | `declaration-track:a8a7b43b6aa49dbe61bdba8d03ac2a3938329ecbb63fbac4ea8dffd1502b07a5` |
+| 3 | `def` | [BridgeObligation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CorrelationPairing.lean/declarations/bridgeobligation.md) | 36 | `declaration-track:cc533c2626e504482f9cdaef12cdac3a9528d0088d06249f7718cec5ba0928ab` |
+| 4 | `def` | [EstimateObligation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CorrelationPairing.lean/declarations/estimateobligation.md) | 39 | `declaration-track:0a6c92f0b3bc71085db58d0d103615f7ec007ad2a3ee9fceff5c120c401955e6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

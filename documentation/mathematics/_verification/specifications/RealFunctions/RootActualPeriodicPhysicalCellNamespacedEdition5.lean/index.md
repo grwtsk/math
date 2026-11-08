@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/RootActualPeriodicPhysicalCellNamespacedEdition5.lean/index.md) · [Full source](../../../../RealFunctions/RootActualPeriodicPhysicalCellNamespacedEdition5.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RootActualPeriodicPhysicalCellNamespacedEdition5.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RootActualPeriodicPhysicalCellNamespacedEdition5.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualPeriodicPhysicalCellProfile](../../../../RealFunctions/RootActualPeriodicPhysicalCellNamespacedEdition5.lean/declarations/actualperiodicphysicalcellprofile.md) | 29 | `declaration-track:65564ba2314d3192b70c19b123ce2874e50d68e0b973928462cfb4cfb9fa2aaa` |
-| 2 | `theorem` | [jet_hasDerivAt](../../../../RealFunctions/RootActualPeriodicPhysicalCellNamespacedEdition5.lean/declarations/jet-hasderivat.md) | 32 | `result-track:56a15639430cb0824e3aee1dea61d5d2bd1bd8c5910e8ca5b93cdcd37d34c9d2` |
-| 3 | `theorem` | [twisted_column_hasDerivAt](../../../../RealFunctions/RootActualPeriodicPhysicalCellNamespacedEdition5.lean/declarations/twisted-column-hasderivat.md) | 40 | `result-track:eeddbe8678b35f58f60250b870a481fb1c32aec4ecb60cf5c3957bcd4920c5ba` |
-| 4 | `theorem` | [actualPeriodicPhysicalCellProfile_hasDerivAt](../../../../RealFunctions/RootActualPeriodicPhysicalCellNamespacedEdition5.lean/declarations/actualperiodicphysicalcellprofile-hasderivat.md) | 57 | `result-track:9ba8621bafa401a4c98ca0c63c548b96b64e986f22109dee85b748d60d106a2e` |
-| 5 | `theorem` | [actualPeriodicPhysicalCellProfile_deriv](../../../../RealFunctions/RootActualPeriodicPhysicalCellNamespacedEdition5.lean/declarations/actualperiodicphysicalcellprofile-deriv.md) | 71 | `result-track:bf60c9799ce7aa0504ff2fc0099d28ecbd1318d623a89759f745a6f60549b679` |
-| 6 | `theorem` | [actualPeriodicPhysicalCellProfile_deriv_abs_le](../../../../RealFunctions/RootActualPeriodicPhysicalCellNamespacedEdition5.lean/declarations/actualperiodicphysicalcellprofile-deriv-abs-le.md) | 79 | `result-track:533437f68a79286f60ae57832dbff1f81137788de26255e972a522861419deaf` |
+| 1 | `def` | [actualPeriodicPhysicalCellProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RootActualPeriodicPhysicalCellNamespacedEdition5.lean/declarations/actualperiodicphysicalcellprofile.md) | 29 | `declaration-track:65564ba2314d3192b70c19b123ce2874e50d68e0b973928462cfb4cfb9fa2aaa` |
+| 2 | `theorem` | [jet_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RootActualPeriodicPhysicalCellNamespacedEdition5.lean/declarations/jet-hasderivat.md) | 32 | `result-track:56a15639430cb0824e3aee1dea61d5d2bd1bd8c5910e8ca5b93cdcd37d34c9d2` |
+| 3 | `theorem` | [twisted_column_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RootActualPeriodicPhysicalCellNamespacedEdition5.lean/declarations/twisted-column-hasderivat.md) | 40 | `result-track:eeddbe8678b35f58f60250b870a481fb1c32aec4ecb60cf5c3957bcd4920c5ba` |
+| 4 | `theorem` | [actualPeriodicPhysicalCellProfile_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RootActualPeriodicPhysicalCellNamespacedEdition5.lean/declarations/actualperiodicphysicalcellprofile-hasderivat.md) | 57 | `result-track:9ba8621bafa401a4c98ca0c63c548b96b64e986f22109dee85b748d60d106a2e` |
+| 5 | `theorem` | [actualPeriodicPhysicalCellProfile_deriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RootActualPeriodicPhysicalCellNamespacedEdition5.lean/declarations/actualperiodicphysicalcellprofile-deriv.md) | 71 | `result-track:bf60c9799ce7aa0504ff2fc0099d28ecbd1318d623a89759f745a6f60549b679` |
+| 6 | `theorem` | [actualPeriodicPhysicalCellProfile_deriv_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RootActualPeriodicPhysicalCellNamespacedEdition5.lean/declarations/actualperiodicphysicalcellprofile-deriv-abs-le.md) | 79 | `result-track:533437f68a79286f60ae57832dbff1f81137788de26255e972a522861419deaf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

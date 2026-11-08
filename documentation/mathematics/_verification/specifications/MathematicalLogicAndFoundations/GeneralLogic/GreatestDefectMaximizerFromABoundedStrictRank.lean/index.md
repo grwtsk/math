@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GreatestDefectMaximizerFromABoundedStrictRank.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GreatestDefectMaximizerFromABoundedStrictRank.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GreatestDefectMaximizerFromABoundedStrictRank.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GreatestDefectMaximizerFromABoundedStrictRank.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_maximizer_of_finite_values](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GreatestDefectMaximizerFromABoundedStrictRank.lean/declarations/exists-maximizer-of-finite-values.md) | 29 | `result-track:75f4a63680fff0414298bd8f296b1537b6ae6e60fa929e0ee3136b3048f6b17c` |
-| 2 | `theorem` | [exists_unique_greatest_maximizer_of_bounded_rank](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GreatestDefectMaximizerFromABoundedStrictRank.lean/declarations/exists-unique-greatest-maximizer-of-bounded-rank.md) | 43 | `result-track:96a7df5f7a46c9cbb03aca6ad4a4b2cecfc232bda4718a9d5ce20d8786e55cee` |
-| 3 | `theorem` | [exists_greatest_maximizer_fixed_of_bounded_rank](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GreatestDefectMaximizerFromABoundedStrictRank.lean/declarations/exists-greatest-maximizer-fixed-of-bounded-rank.md) | 75 | `result-track:00d3ad0e948d8605e371b6d3b9e523458b9fc65d974c082d43c5bcd18886fdfe` |
-| 4 | `theorem` | [exists_greatest_maximizer_fixed_of_finite_values_bounded_rank](../../../../../MathematicalLogicAndFoundations/GeneralLogic/GreatestDefectMaximizerFromABoundedStrictRank.lean/declarations/exists-greatest-maximizer-fixed-of-finite-values-bounded-rank.md) | 88 | `result-track:ae3a072352d382eab27c25c90ddd0998969ab95ceea0c118af45660e5bf914d7` |
+| 1 | `theorem` | [exists_maximizer_of_finite_values](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GreatestDefectMaximizerFromABoundedStrictRank.lean/declarations/exists-maximizer-of-finite-values.md) | 29 | `result-track:75f4a63680fff0414298bd8f296b1537b6ae6e60fa929e0ee3136b3048f6b17c` |
+| 2 | `theorem` | [exists_unique_greatest_maximizer_of_bounded_rank](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GreatestDefectMaximizerFromABoundedStrictRank.lean/declarations/exists-unique-greatest-maximizer-of-bounded-rank.md) | 43 | `result-track:96a7df5f7a46c9cbb03aca6ad4a4b2cecfc232bda4718a9d5ce20d8786e55cee` |
+| 3 | `theorem` | [exists_greatest_maximizer_fixed_of_bounded_rank](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GreatestDefectMaximizerFromABoundedStrictRank.lean/declarations/exists-greatest-maximizer-fixed-of-bounded-rank.md) | 75 | `result-track:00d3ad0e948d8605e371b6d3b9e523458b9fc65d974c082d43c5bcd18886fdfe` |
+| 4 | `theorem` | [exists_greatest_maximizer_fixed_of_finite_values_bounded_rank](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/GreatestDefectMaximizerFromABoundedStrictRank.lean/declarations/exists-greatest-maximizer-fixed-of-finite-values-bounded-rank.md) | 88 | `result-track:ae3a072352d382eab27c25c90ddd0998969ab95ceea0c118af45660e5bf914d7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

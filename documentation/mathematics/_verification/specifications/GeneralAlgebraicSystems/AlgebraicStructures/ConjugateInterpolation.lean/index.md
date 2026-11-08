@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ConjugateInterpolation.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ConjugateInterpolation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ConjugateInterpolation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ConjugateInterpolation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [coeff_im_eq_zero_of_eval_compatible](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ConjugateInterpolation.lean/declarations/coeff-im-eq-zero-of-eval-compatible.md) | 26 | `result-track:6943afd12e4fda017fd53b215173b695582f05b8e89958b0d50834050934fd9d` |
-| 2 | `theorem` | [exists_real_interpolate](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ConjugateInterpolation.lean/declarations/exists-real-interpolate.md) | 50 | `result-track:b8058c86a7e7fc9e7a47af08fdc51cd1ff3d8576e8e13e061bc6178bb0a0a738` |
+| 1 | `theorem` | [coeff_im_eq_zero_of_eval_compatible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ConjugateInterpolation.lean/declarations/coeff-im-eq-zero-of-eval-compatible.md) | 26 | `result-track:6943afd12e4fda017fd53b215173b695582f05b8e89958b0d50834050934fd9d` |
+| 2 | `theorem` | [exists_real_interpolate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ConjugateInterpolation.lean/declarations/exists-real-interpolate.md) | 50 | `result-track:b8058c86a7e7fc9e7a47af08fdc51cd1ff3d8576e8e13e061bc6178bb0a0a738` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

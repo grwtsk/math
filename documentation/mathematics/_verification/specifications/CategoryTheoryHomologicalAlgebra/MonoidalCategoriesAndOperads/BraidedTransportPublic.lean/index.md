@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/BraidedTransportPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/BraidedTransportPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/BraidedTransportPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/BraidedTransportPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [Transported.instBraidedCategory](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/BraidedTransportPublic.lean/declarations/transported-instbraidedcategory.md) | 30 | `declaration-track:0c4639fd6374d94eaeb8ab68bcad6bd105d7c5924e2ea94ecf06c58fef91f66b` |
-| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/BraidedTransportPublic.lean/declarations/instance-source-edition-2.md) | 37 | `declaration-track:8767664bbdc107c87f1cf84501a828ba19bbbfc2b222f40710c06164093d9126` |
-| 3 | `def` | [transportedFunctorCompInverseLaxBraided](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/BraidedTransportPublic.lean/declarations/transportedfunctorcompinverselaxbraided.md) | 50 | `declaration-track:bb9068ccab333f21051652c7a58b566ea51ff2103305d859fa1f8675a055857f` |
-| 4 | `def` | [transportedFunctorCompInverseBraided](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/BraidedTransportPublic.lean/declarations/transportedfunctorcompinversebraided.md) | 60 | `declaration-track:a131dd3644ccfff1b7d2778cb36a0c6ff0b6bf21c9316d7136ee77cfbd2c7afb` |
-| 5 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/BraidedTransportPublic.lean/declarations/instance.md) | 65 | `declaration-track:6c0048b5531ea1873f060837d1bb0a1525edb8d557af09b0cf6aa0e4188d6f25` |
-| 6 | `instance` | [Transported.instSymmetricCategory](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/BraidedTransportPublic.lean/declarations/transported-instsymmetriccategory.md) | 80 | `declaration-track:7955c64ee2baaf7bbe4fb9a60ef05a51ed1a59b3f75b65a13abd10ba3711e43c` |
+| 1 | `instance` | [Transported.instBraidedCategory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/BraidedTransportPublic.lean/declarations/transported-instbraidedcategory.md) | 30 | `declaration-track:0c4639fd6374d94eaeb8ab68bcad6bd105d7c5924e2ea94ecf06c58fef91f66b` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/BraidedTransportPublic.lean/declarations/instance-source-edition-2.md) | 37 | `declaration-track:8767664bbdc107c87f1cf84501a828ba19bbbfc2b222f40710c06164093d9126` |
+| 3 | `def` | [transportedFunctorCompInverseLaxBraided](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/BraidedTransportPublic.lean/declarations/transportedfunctorcompinverselaxbraided.md) | 50 | `declaration-track:bb9068ccab333f21051652c7a58b566ea51ff2103305d859fa1f8675a055857f` |
+| 4 | `def` | [transportedFunctorCompInverseBraided](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/BraidedTransportPublic.lean/declarations/transportedfunctorcompinversebraided.md) | 60 | `declaration-track:a131dd3644ccfff1b7d2778cb36a0c6ff0b6bf21c9316d7136ee77cfbd2c7afb` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/BraidedTransportPublic.lean/declarations/instance.md) | 65 | `declaration-track:6c0048b5531ea1873f060837d1bb0a1525edb8d557af09b0cf6aa0e4188d6f25` |
+| 6 | `instance` | [Transported.instSymmetricCategory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/BraidedTransportPublic.lean/declarations/transported-instsymmetriccategory.md) | 80 | `declaration-track:7955c64ee2baaf7bbe4fb9a60ef05a51ed1a59b3f75b65a13abd10ba3711e43c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

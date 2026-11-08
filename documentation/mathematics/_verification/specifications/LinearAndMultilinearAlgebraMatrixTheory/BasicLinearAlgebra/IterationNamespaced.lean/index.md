@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IterationNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IterationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IterationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IterationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [iterate](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IterationNamespaced.lean/declarations/iterate.md) | 19 | `declaration-track:4788d1e91982096677dff8833c6eb8a54eb02439dab6b4f956e715a3f05819aa` |
-| 2 | `theorem` | [iterate_zero](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IterationNamespaced.lean/declarations/iterate-zero.md) | 27 | `result-track:4c5c499526fb8f4366e1e5f7cc06455879d1f6183ed22ff6a1c805055220395d` |
-| 3 | `theorem` | [iterate_succ](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IterationNamespaced.lean/declarations/iterate-succ.md) | 34 | `result-track:7e976a934cddc4dca8c11fbb979313b5da020f118a2830afb943891c43298681` |
-| 4 | `def` | [orbit](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IterationNamespaced.lean/declarations/orbit.md) | 43 | `declaration-track:0dd3dfe4432b8f38299186f82ed294a7dbf368665c3370c489b5f4f99de6e8ca` |
-| 5 | `theorem` | [orbit_zero](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IterationNamespaced.lean/declarations/orbit-zero.md) | 50 | `result-track:ea06a0981e826c3e365629d00e83f61187f7fad868acca9720d67f34c865f63b` |
-| 6 | `theorem` | [orbit_succ](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IterationNamespaced.lean/declarations/orbit-succ.md) | 57 | `result-track:bd99a73969b6c479ab95001ff7abb85c294ded58d3af320a78131612d27fa1af` |
+| 1 | `def` | [iterate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IterationNamespaced.lean/declarations/iterate.md) | 19 | `declaration-track:4788d1e91982096677dff8833c6eb8a54eb02439dab6b4f956e715a3f05819aa` |
+| 2 | `theorem` | [iterate_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IterationNamespaced.lean/declarations/iterate-zero.md) | 27 | `result-track:4c5c499526fb8f4366e1e5f7cc06455879d1f6183ed22ff6a1c805055220395d` |
+| 3 | `theorem` | [iterate_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IterationNamespaced.lean/declarations/iterate-succ.md) | 34 | `result-track:7e976a934cddc4dca8c11fbb979313b5da020f118a2830afb943891c43298681` |
+| 4 | `def` | [orbit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IterationNamespaced.lean/declarations/orbit.md) | 43 | `declaration-track:0dd3dfe4432b8f38299186f82ed294a7dbf368665c3370c489b5f4f99de6e8ca` |
+| 5 | `theorem` | [orbit_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IterationNamespaced.lean/declarations/orbit-zero.md) | 50 | `result-track:ea06a0981e826c3e365629d00e83f61187f7fad868acca9720d67f34c865f63b` |
+| 6 | `theorem` | [orbit_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IterationNamespaced.lean/declarations/orbit-succ.md) | 57 | `result-track:bd99a73969b6c479ab95001ff7abb85c294ded58d3af320a78131612d27fa1af` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CommutativeAlgebra/ChainConditionsFinitenessConditionsInCommutativeRingTheory/NoetherianNilpotentNamespaced.lean/index.md) · [Full source](../../../../../CommutativeAlgebra/ChainConditionsFinitenessConditionsInCommutativeRingTheory/NoetherianNilpotentNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ChainConditionsFinitenessConditionsInCommutativeRingTheory/NoetherianNilpotentNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ChainConditionsFinitenessConditionsInCommutativeRingTheory/NoetherianNilpotentNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [IsNoetherianRing.isNilpotent_nilradical](../../../../../CommutativeAlgebra/ChainConditionsFinitenessConditionsInCommutativeRingTheory/NoetherianNilpotentNamespaced.lean/declarations/isnoetherianring-isnilpotent-nilradical.md) | 29 | `result-track:ec47ce4a8e6044ca1bee33b273bf1c9d653ad4959e10eac08312fcd81c859d67` |
-| 2 | `lemma` | [Ideal.FG.isNilpotent_iff_le_nilradical](../../../../../CommutativeAlgebra/ChainConditionsFinitenessConditionsInCommutativeRingTheory/NoetherianNilpotentNamespaced.lean/declarations/ideal-fg-isnilpotent-iff-le-nilradical.md) | 34 | `result-track:3d0851fae5dfb3f57d3a215723d46547d5a62202d527244001056297d4785670` |
+| 1 | `theorem` | [IsNoetherianRing.isNilpotent_nilradical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ChainConditionsFinitenessConditionsInCommutativeRingTheory/NoetherianNilpotentNamespaced.lean/declarations/isnoetherianring-isnilpotent-nilradical.md) | 29 | `result-track:ec47ce4a8e6044ca1bee33b273bf1c9d653ad4959e10eac08312fcd81c859d67` |
+| 2 | `lemma` | [Ideal.FG.isNilpotent_iff_le_nilradical](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ChainConditionsFinitenessConditionsInCommutativeRingTheory/NoetherianNilpotentNamespaced.lean/declarations/ideal-fg-isnilpotent-iff-le-nilradical.md) | 34 | `result-track:3d0851fae5dfb3f57d3a215723d46547d5a62202d527244001056297d4785670` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

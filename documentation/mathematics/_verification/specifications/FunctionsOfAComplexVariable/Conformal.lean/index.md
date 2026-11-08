@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/Conformal.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/Conformal.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/Conformal.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/Conformal.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -63,13 +63,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [isConformalMap_conj](../../../../FunctionsOfAComplexVariable/Conformal.lean/declarations/isconformalmap-conj.md) | 56 | `result-track:e3e0d86ed03e8b0a38b37dab84ced8db850af6a739b4d0c9c1d1d38f6f94b1b4` |
-| 2 | `theorem` | [isConformalMap_complex_linear](../../../../FunctionsOfAComplexVariable/Conformal.lean/declarations/isconformalmap-complex-linear.md) | 63 | `result-track:2d3e7a77523941f9ae9fe92b7b74b1cea8a942b7ca1727b09fb23bf90e113719` |
-| 3 | `theorem` | [isConformalMap_complex_linear_conj](../../../../FunctionsOfAComplexVariable/Conformal.lean/declarations/isconformalmap-complex-linear-conj.md) | 78 | `result-track:3fd1cc2720be4cb559500bb3d283229f41b53d0c0b77b467c3c985e6db332b13` |
-| 4 | `theorem` | [IsConformalMap.is_complex_or_conj_linear](../../../../FunctionsOfAComplexVariable/Conformal.lean/declarations/isconformalmap-is-complex-or-conj-linear.md) | 90 | `result-track:40982d615d838fbf2b3234869da7e741371550d6f6a8e7e3fb6ecc0a19bf6b71` |
-| 5 | `theorem` | [isConformalMap_iff_is_complex_or_conj_linear](../../../../FunctionsOfAComplexVariable/Conformal.lean/declarations/isconformalmap-iff-is-complex-or-conj-linear.md) | 107 | `result-track:82196a08f8bbc9c4e4415699cb4a7d8092aadd51cae8178915f39f81bcce6ef5` |
-| 6 | `theorem` | [DifferentiableAt.conformalAt](../../../../FunctionsOfAComplexVariable/Conformal.lean/declarations/differentiableat-conformalat.md) | 137 | `result-track:856a200f787734592e94a239b362ed0cee16dfdac68c232eb01f34c30c1452a7` |
-| 7 | `theorem` | [conformalAt_iff_differentiableAt_or_differentiableAt_comp_conj](../../../../FunctionsOfAComplexVariable/Conformal.lean/declarations/conformalat-iff-differentiableat-or-differentiableat-comp-conj.md) | 145 | `result-track:4b764f3ceae6e9d4add2d1705ff64290f82888f295ff4fbabfe2719236478a1a` |
+| 1 | `theorem` | [isConformalMap_conj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/Conformal.lean/declarations/isconformalmap-conj.md) | 56 | `result-track:e3e0d86ed03e8b0a38b37dab84ced8db850af6a739b4d0c9c1d1d38f6f94b1b4` |
+| 2 | `theorem` | [isConformalMap_complex_linear](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/Conformal.lean/declarations/isconformalmap-complex-linear.md) | 63 | `result-track:2d3e7a77523941f9ae9fe92b7b74b1cea8a942b7ca1727b09fb23bf90e113719` |
+| 3 | `theorem` | [isConformalMap_complex_linear_conj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/Conformal.lean/declarations/isconformalmap-complex-linear-conj.md) | 78 | `result-track:3fd1cc2720be4cb559500bb3d283229f41b53d0c0b77b467c3c985e6db332b13` |
+| 4 | `theorem` | [IsConformalMap.is_complex_or_conj_linear](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/Conformal.lean/declarations/isconformalmap-is-complex-or-conj-linear.md) | 90 | `result-track:40982d615d838fbf2b3234869da7e741371550d6f6a8e7e3fb6ecc0a19bf6b71` |
+| 5 | `theorem` | [isConformalMap_iff_is_complex_or_conj_linear](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/Conformal.lean/declarations/isconformalmap-iff-is-complex-or-conj-linear.md) | 107 | `result-track:82196a08f8bbc9c4e4415699cb4a7d8092aadd51cae8178915f39f81bcce6ef5` |
+| 6 | `theorem` | [DifferentiableAt.conformalAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/Conformal.lean/declarations/differentiableat-conformalat.md) | 137 | `result-track:856a200f787734592e94a239b362ed0cee16dfdac68c232eb01f34c30c1452a7` |
+| 7 | `theorem` | [conformalAt_iff_differentiableAt_or_differentiableAt_comp_conj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/Conformal.lean/declarations/conformalat-iff-differentiableat-or-differentiableat-comp-conj.md) | 145 | `result-track:4b764f3ceae6e9d4add2d1705ff64290f82888f295ff4fbabfe2719236478a1a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/EulerMaclaurinNamespacedPublic.lean/index.md) · [Full source](../../../../MeasureAndIntegration/EulerMaclaurinNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EulerMaclaurinNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EulerMaclaurinNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [B1](../../../../MeasureAndIntegration/EulerMaclaurinNamespacedPublic.lean/declarations/b1.md) | 36 | `declaration-track:793a7021a95a6056f37784bb8b20cc4d25b0f130e53be2b7d680c3dc94b047e3` |
-| 2 | `lemma` | [aestronglyMeasurable_B1](../../../../MeasureAndIntegration/EulerMaclaurinNamespacedPublic.lean/declarations/aestronglymeasurable-b1.md) | 39 | `result-track:f92b0bebc3a334115b676a25db57bedd5be8271a8cab3213e8a8c7723b22e50b` |
-| 3 | `lemma` | [abs_B1_le_half](../../../../MeasureAndIntegration/EulerMaclaurinNamespacedPublic.lean/declarations/abs-b1-le-half.md) | 43 | `result-track:d15f7d30254edf12e729085abec6a2f692e32c6334db4e18b1908669ca3ef804` |
-| 4 | `lemma` | [integral_deriv_mul_add_const](../../../../MeasureAndIntegration/EulerMaclaurinNamespacedPublic.lean/declarations/integral-deriv-mul-add-const.md) | 49 | `result-track:8651bf302e6b4b99090eb69496e6fed5b111f6240304cb7558358905f963f3ad` |
-| 5 | `lemma` | [intervalIntegrable_deriv_mul_B1](../../../../MeasureAndIntegration/EulerMaclaurinNamespacedPublic.lean/declarations/intervalintegrable-deriv-mul-b1.md) | 62 | `result-track:2f2f036cc16644eb8ca8d5c64daa43e0cc2fd2b29e858bc21c4600258869b0f8` |
-| 6 | `lemma` | [integral_deriv_mul_floor_add_one](../../../../MeasureAndIntegration/EulerMaclaurinNamespacedPublic.lean/declarations/integral-deriv-mul-floor-add-one.md) | 72 | `result-track:9d2f048404d0c897ae44400a23841ab3c05a84fbf4cb4240487479f07e0f1947` |
-| 7 | `theorem` | [sum_eq_integral_add_integral_deriv](../../../../MeasureAndIntegration/EulerMaclaurinNamespacedPublic.lean/declarations/sum-eq-integral-add-integral-deriv.md) | 88 | `result-track:d743217071a9e38ff13521ec91f4827b6acc96e1105672f123d8c68105ea3f6e` |
+| 1 | `def` | [B1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EulerMaclaurinNamespacedPublic.lean/declarations/b1.md) | 36 | `declaration-track:793a7021a95a6056f37784bb8b20cc4d25b0f130e53be2b7d680c3dc94b047e3` |
+| 2 | `lemma` | [aestronglyMeasurable_B1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EulerMaclaurinNamespacedPublic.lean/declarations/aestronglymeasurable-b1.md) | 39 | `result-track:f92b0bebc3a334115b676a25db57bedd5be8271a8cab3213e8a8c7723b22e50b` |
+| 3 | `lemma` | [abs_B1_le_half](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EulerMaclaurinNamespacedPublic.lean/declarations/abs-b1-le-half.md) | 43 | `result-track:d15f7d30254edf12e729085abec6a2f692e32c6334db4e18b1908669ca3ef804` |
+| 4 | `lemma` | [integral_deriv_mul_add_const](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EulerMaclaurinNamespacedPublic.lean/declarations/integral-deriv-mul-add-const.md) | 49 | `result-track:8651bf302e6b4b99090eb69496e6fed5b111f6240304cb7558358905f963f3ad` |
+| 5 | `lemma` | [intervalIntegrable_deriv_mul_B1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EulerMaclaurinNamespacedPublic.lean/declarations/intervalintegrable-deriv-mul-b1.md) | 62 | `result-track:2f2f036cc16644eb8ca8d5c64daa43e0cc2fd2b29e858bc21c4600258869b0f8` |
+| 6 | `lemma` | [integral_deriv_mul_floor_add_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EulerMaclaurinNamespacedPublic.lean/declarations/integral-deriv-mul-floor-add-one.md) | 72 | `result-track:9d2f048404d0c897ae44400a23841ab3c05a84fbf4cb4240487479f07e0f1947` |
+| 7 | `theorem` | [sum_eq_integral_add_integral_deriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/EulerMaclaurinNamespacedPublic.lean/declarations/sum-eq-integral-add-integral-deriv.md) | 88 | `result-track:d743217071a9e38ff13521ec91f4827b6acc96e1105672f123d8c68105ea3f6e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

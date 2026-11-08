@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteChowlaUniformEnvelope.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteChowlaUniformEnvelope.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteChowlaUniformEnvelope.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteChowlaUniformEnvelope.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteCyclicWalshBoundary`](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteCyclicWalshBoundary.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteCyclicWalshBoundary`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteCyclicWalshBoundary.lean/index.md) — import line 5; pinned internal source present.
 - `Mathlib.Data.Fintype.Powerset` — import line 6; external provider; requires a separately pinned dependency.
 - `Mathlib.Algebra.Order.Ring.Abs` — import line 7; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 8; external provider; requires a separately pinned dependency.
@@ -60,13 +60,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [AllOrderCorrelationEnvelope](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteChowlaUniformEnvelope.lean/declarations/allordercorrelationenvelope.md) | 45 | `declaration-track:12c1a3f91e587be2a94d8555467decc86ad053410bd8692b48ecf50d41db245b` |
-| 2 | `theorem` | [nonemptyCharacterCount](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteChowlaUniformEnvelope.lean/declarations/nonemptycharactercount.md) | 53 | `result-track:7174e3861f0a0e2a47f6155e699736c620b08281ab5eccc3eec88b43ee451647` |
-| 3 | `theorem` | [nonemptyCharacterCount_rat](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteChowlaUniformEnvelope.lean/declarations/nonemptycharactercount-rat.md) | 61 | `result-track:83acb3f015594c8859a959985f885b75e9f78e28999b833fbc6e53475541bb68` |
-| 4 | `theorem` | [energy_le_characterCount_mul_envelope_sq](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteChowlaUniformEnvelope.lean/declarations/energy-le-charactercount-mul-envelope-sq.md) | 72 | `result-track:04a1cb4d92b426a0501f7b48d60cdc067095ff142f316a8ec01210e9b1632d0c` |
-| 5 | `theorem` | [energy_le_exponential_envelope_sq](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteChowlaUniformEnvelope.lean/declarations/energy-le-exponential-envelope-sq.md) | 102 | `result-track:0e7bfb1b225521cac34af7c4e82747a116c109494b071c044bdaea4c5b9625de` |
-| 6 | `def` | [OrdinaryAllOrderChowlaAtScale](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteChowlaUniformEnvelope.lean/declarations/ordinaryallorderchowlaatscale.md) | 119 | `declaration-track:1c910b5a885ee02e61cf4a0d217ef8115e98d646d9ce80eb1336b01b3ed642f2` |
-| 7 | `theorem` | [cyclicTV_le_allOrderEnvelope](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteChowlaUniformEnvelope.lean/declarations/cyclictv-le-allorderenvelope.md) | 132 | `result-track:4581fb63bb3d5769d1e9a11d9da18d2f6189d9eebc969e333c5f9e8407067d3d` |
+| 1 | `def` | [AllOrderCorrelationEnvelope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteChowlaUniformEnvelope.lean/declarations/allordercorrelationenvelope.md) | 45 | `declaration-track:12c1a3f91e587be2a94d8555467decc86ad053410bd8692b48ecf50d41db245b` |
+| 2 | `theorem` | [nonemptyCharacterCount](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteChowlaUniformEnvelope.lean/declarations/nonemptycharactercount.md) | 53 | `result-track:7174e3861f0a0e2a47f6155e699736c620b08281ab5eccc3eec88b43ee451647` |
+| 3 | `theorem` | [nonemptyCharacterCount_rat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteChowlaUniformEnvelope.lean/declarations/nonemptycharactercount-rat.md) | 61 | `result-track:83acb3f015594c8859a959985f885b75e9f78e28999b833fbc6e53475541bb68` |
+| 4 | `theorem` | [energy_le_characterCount_mul_envelope_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteChowlaUniformEnvelope.lean/declarations/energy-le-charactercount-mul-envelope-sq.md) | 72 | `result-track:04a1cb4d92b426a0501f7b48d60cdc067095ff142f316a8ec01210e9b1632d0c` |
+| 5 | `theorem` | [energy_le_exponential_envelope_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteChowlaUniformEnvelope.lean/declarations/energy-le-exponential-envelope-sq.md) | 102 | `result-track:0e7bfb1b225521cac34af7c4e82747a116c109494b071c044bdaea4c5b9625de` |
+| 6 | `def` | [OrdinaryAllOrderChowlaAtScale](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteChowlaUniformEnvelope.lean/declarations/ordinaryallorderchowlaatscale.md) | 119 | `declaration-track:1c910b5a885ee02e61cf4a0d217ef8115e98d646d9ce80eb1336b01b3ed642f2` |
+| 7 | `theorem` | [cyclicTV_le_allOrderEnvelope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteChowlaUniformEnvelope.lean/declarations/cyclictv-le-allorderenvelope.md) | 132 | `result-track:4581fb63bb3d5769d1e9a11d9da18d2f6189d9eebc969e333c5f9e8407067d3d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

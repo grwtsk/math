@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TransportDetEquiv.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TransportDetEquiv.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TransportDetEquiv.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TransportDetEquiv.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [detEquiv](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TransportDetEquiv.lean/declarations/detequiv-source-edition-2.md) | 30 | `declaration-track:a4a7f7cf051e01f5946025180d134e5f279f5b8a8024ebd68075c5fc57da4fc9` |
-| 2 | `theorem` | [detEquiv_id](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TransportDetEquiv.lean/declarations/detequiv-id.md) | 37 | `result-track:e300323465a61252e6b0d023aa50f579193cfcb277727e3ce24b227496f8fc4d` |
-| 3 | `theorem` | [detEquiv_comp](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TransportDetEquiv.lean/declarations/detequiv-comp.md) | 44 | `result-track:3e272bb868e923ab6ebbcd55e5603fd67d45db20fcd0a2c525e4e465679829d6` |
-| 4 | `def` | [detEquiv](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TransportDetEquiv.lean/declarations/detequiv.md) | 62 | `declaration-track:6ed1e515b290b3901a4df20929d88deb8ca01d16b9dd5f1ba3dee11cb03c9115` |
-| 5 | `theorem` | [detEquiv_nil](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TransportDetEquiv.lean/declarations/detequiv-nil.md) | 73 | `result-track:1990bed792f7e44fe3c9ca28aca5625ebd9429c21f37f58817f44eba0ae44b35` |
-| 6 | `theorem` | [detEquiv_cons](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TransportDetEquiv.lean/declarations/detequiv-cons.md) | 81 | `result-track:9d24a79b3f634fb7677b16fcb96365aad31b2078e1101503638739d56e6126ce` |
-| 7 | `theorem` | [detEquiv_eq_composite](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TransportDetEquiv.lean/declarations/detequiv-eq-composite.md) | 91 | `result-track:33af458d4905e4bd4c59f4a40b6f1ee2566b7454eeabd90135098f062adefa8f` |
-| 8 | `theorem` | [detEquiv_append](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TransportDetEquiv.lean/declarations/detequiv-append.md) | 104 | `result-track:05194ddfb7698b2a9bb4806bf1fbd7c8ef35b09010b92b9e236c1eee42227790` |
+| 1 | `def` | [detEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TransportDetEquiv.lean/declarations/detequiv-source-edition-2.md) | 30 | `declaration-track:a4a7f7cf051e01f5946025180d134e5f279f5b8a8024ebd68075c5fc57da4fc9` |
+| 2 | `theorem` | [detEquiv_id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TransportDetEquiv.lean/declarations/detequiv-id.md) | 37 | `result-track:e300323465a61252e6b0d023aa50f579193cfcb277727e3ce24b227496f8fc4d` |
+| 3 | `theorem` | [detEquiv_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TransportDetEquiv.lean/declarations/detequiv-comp.md) | 44 | `result-track:3e272bb868e923ab6ebbcd55e5603fd67d45db20fcd0a2c525e4e465679829d6` |
+| 4 | `def` | [detEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TransportDetEquiv.lean/declarations/detequiv.md) | 62 | `declaration-track:6ed1e515b290b3901a4df20929d88deb8ca01d16b9dd5f1ba3dee11cb03c9115` |
+| 5 | `theorem` | [detEquiv_nil](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TransportDetEquiv.lean/declarations/detequiv-nil.md) | 73 | `result-track:1990bed792f7e44fe3c9ca28aca5625ebd9429c21f37f58817f44eba0ae44b35` |
+| 6 | `theorem` | [detEquiv_cons](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TransportDetEquiv.lean/declarations/detequiv-cons.md) | 81 | `result-track:9d24a79b3f634fb7677b16fcb96365aad31b2078e1101503638739d56e6126ce` |
+| 7 | `theorem` | [detEquiv_eq_composite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TransportDetEquiv.lean/declarations/detequiv-eq-composite.md) | 91 | `result-track:33af458d4905e4bd4c59f4a40b6f1ee2566b7454eeabd90135098f062adefa8f` |
+| 8 | `theorem` | [detEquiv_append](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TransportDetEquiv.lean/declarations/detequiv-append.md) | 104 | `result-track:05194ddfb7698b2a9bb4806bf1fbd7c8ef35b09010b92b9e236c1eee42227790` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

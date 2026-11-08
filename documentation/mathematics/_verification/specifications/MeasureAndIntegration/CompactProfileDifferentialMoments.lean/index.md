@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CompactProfileDifferentialMoments.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CompactProfileDifferentialMoments.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactProfileDifferentialMoments.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactProfileDifferentialMoments.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,9 +46,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Convolution.CompactProfileFirstPoleMoment`](../../../../MeasureAndIntegration/CompactProfileFirstPoleMoment.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.Convolution.CompactProfileHigherDerivatives`](../../../../MeasureAndIntegration/CompactProfileHigherDerivatives.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.Analysis.Integration.CompactWeightedDerivativeMoments`](../../../../MeasureAndIntegration/CompactWeightedDerivativeMoments.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.Analysis.Convolution.CompactProfileFirstPoleMoment`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactProfileFirstPoleMoment.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Convolution.CompactProfileHigherDerivatives`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactProfileHigherDerivatives.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Integration.CompactWeightedDerivativeMoments`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactWeightedDerivativeMoments.lean/index.md) — import line 6; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_differential_moments_zero](../../../../MeasureAndIntegration/CompactProfileDifferentialMoments.lean/declarations/actual-differential-moments-zero.md) | 29 | `result-track:330f9d614b45a78fc2399db1e2a6a650e7e092a7b407d1ec62229b67eaf0a65f` |
+| 1 | `theorem` | [actual_differential_moments_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CompactProfileDifferentialMoments.lean/declarations/actual-differential-moments-zero.md) | 29 | `result-track:330f9d614b45a78fc2399db1e2a6a650e7e092a7b407d1ec62229b67eaf0a65f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

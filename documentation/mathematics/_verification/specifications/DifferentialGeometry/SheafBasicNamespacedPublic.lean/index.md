@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../DifferentialGeometry/SheafBasicNamespacedPublic.lean/index.md) · [Full source](../../../../DifferentialGeometry/SheafBasicNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/SheafBasicNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/SheafBasicNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [TopCat.of.chartedSpace](../../../../DifferentialGeometry/SheafBasicNamespacedPublic.lean/declarations/topcat-of-chartedspace.md) | 55 | `declaration-track:3f2cb6aa13980c33f9a8cfdaa74d15ed636f57155a26617a67cb4dc25bf7584d` |
-| 2 | `instance` | [TopCat.of.hasGroupoid](../../../../DifferentialGeometry/SheafBasicNamespacedPublic.lean/declarations/topcat-of-hasgroupoid.md) | 58 | `declaration-track:39b8a34e60888f16dc092ebf509df50ce890b4074a8a85bb4b07ddacbf0c3e58` |
-| 3 | `def` | [StructureGroupoid.LocalInvariantProp.localPredicate](../../../../DifferentialGeometry/SheafBasicNamespacedPublic.lean/declarations/localpredicate.md) | 64 | `declaration-track:7fe70946cfeb15b2aa21e881cf84e4521da42b2d7bd898f05486b10d29f913df` |
-| 4 | `def` | [StructureGroupoid.LocalInvariantProp.sheaf](../../../../DifferentialGeometry/SheafBasicNamespacedPublic.lean/declarations/sheaf.md) | 87 | `declaration-track:2db73542420994ce3527b9c35e05f0e669d44d8f9b10a5f2c9b393a37304caed` |
-| 5 | `instance` | [StructureGroupoid.LocalInvariantProp.sheafHasCoeToFun](../../../../DifferentialGeometry/SheafBasicNamespacedPublic.lean/declarations/sheafhascoetofun.md) | 91 | `declaration-track:5d80adcbe4c6d97a9c4cce982f8203c3154a2d0cd6bba155ba9dfa85e76b5c8a` |
-| 6 | `theorem` | [StructureGroupoid.LocalInvariantProp.section_spec](../../../../DifferentialGeometry/SheafBasicNamespacedPublic.lean/declarations/section-spec.md) | 95 | `result-track:10bd0c0b3e4dd0c2d7084f536b3100c3a023caf37ed4a1eaf22aedc5da7f21b7` |
+| 1 | `instance` | [TopCat.of.chartedSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/SheafBasicNamespacedPublic.lean/declarations/topcat-of-chartedspace.md) | 55 | `declaration-track:3f2cb6aa13980c33f9a8cfdaa74d15ed636f57155a26617a67cb4dc25bf7584d` |
+| 2 | `instance` | [TopCat.of.hasGroupoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/SheafBasicNamespacedPublic.lean/declarations/topcat-of-hasgroupoid.md) | 58 | `declaration-track:39b8a34e60888f16dc092ebf509df50ce890b4074a8a85bb4b07ddacbf0c3e58` |
+| 3 | `def` | [StructureGroupoid.LocalInvariantProp.localPredicate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/SheafBasicNamespacedPublic.lean/declarations/localpredicate.md) | 64 | `declaration-track:7fe70946cfeb15b2aa21e881cf84e4521da42b2d7bd898f05486b10d29f913df` |
+| 4 | `def` | [StructureGroupoid.LocalInvariantProp.sheaf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/SheafBasicNamespacedPublic.lean/declarations/sheaf.md) | 87 | `declaration-track:2db73542420994ce3527b9c35e05f0e669d44d8f9b10a5f2c9b393a37304caed` |
+| 5 | `instance` | [StructureGroupoid.LocalInvariantProp.sheafHasCoeToFun](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/SheafBasicNamespacedPublic.lean/declarations/sheafhascoetofun.md) | 91 | `declaration-track:5d80adcbe4c6d97a9c4cce982f8203c3154a2d0cd6bba155ba9dfa85e76b5c8a` |
+| 6 | `theorem` | [StructureGroupoid.LocalInvariantProp.section_spec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/SheafBasicNamespacedPublic.lean/declarations/section-spec.md) | 95 | `result-track:10bd0c0b3e4dd0c2d7084f536b3100c3a023caf37ed4a1eaf22aedc5da7f21b7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

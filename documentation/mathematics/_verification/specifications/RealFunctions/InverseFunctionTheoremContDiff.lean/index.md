@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/InverseFunctionTheoremContDiff.lean/index.md) · [Full source](../../../../RealFunctions/InverseFunctionTheoremContDiff.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InverseFunctionTheoremContDiff.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InverseFunctionTheoremContDiff.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [toPartialHomeomorph](../../../../RealFunctions/InverseFunctionTheoremContDiff.lean/declarations/topartialhomeomorph.md) | 27 | `declaration-track:10f9b866e89bc1d17560bb032deb8dc3a80cc025a911dff2260e91a507e636b6` |
-| 2 | `theorem` | [toPartialHomeomorph_coe](../../../../RealFunctions/InverseFunctionTheoremContDiff.lean/declarations/topartialhomeomorph-coe.md) | 34 | `result-track:3c8ee7f93ecca5f0eecf4f3adf9a6c8b2a2ccaceac9e54cdf51e5f46aed4d53b` |
-| 3 | `theorem` | [mem_toPartialHomeomorph_source](../../../../RealFunctions/InverseFunctionTheoremContDiff.lean/declarations/mem-topartialhomeomorph-source.md) | 39 | `result-track:a065e5535a5eb0e81a43a946233fbb3a40472e3b6ad757af86f6f26d7679ab6e` |
-| 4 | `theorem` | [image_mem_toPartialHomeomorph_target](../../../../RealFunctions/InverseFunctionTheoremContDiff.lean/declarations/image-mem-topartialhomeomorph-target.md) | 44 | `result-track:def0673702c1e9073aa457274b84c85ee8046e83c08887e2713b5823d6ee4f04` |
-| 5 | `def` | [localInverse](../../../../RealFunctions/InverseFunctionTheoremContDiff.lean/declarations/localinverse.md) | 51 | `declaration-track:69d4da10c8de5dcfde65b0a6a8e7667a6932ad257174e89494dfced5c78c4659` |
-| 6 | `theorem` | [localInverse_apply_image](../../../../RealFunctions/InverseFunctionTheoremContDiff.lean/declarations/localinverse-apply-image.md) | 55 | `result-track:da96628734e07816fcf5751cb05d0e885a1f382e7b7f214c40d07ee2a06c58af` |
-| 7 | `theorem` | [to_localInverse](../../../../RealFunctions/InverseFunctionTheoremContDiff.lean/declarations/to-localinverse.md) | 62 | `result-track:16cb97121825da39de459b8e7a94c099ad6ca1b2437e73b49a1cf2f76cf624d4` |
+| 1 | `def` | [toPartialHomeomorph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InverseFunctionTheoremContDiff.lean/declarations/topartialhomeomorph.md) | 27 | `declaration-track:10f9b866e89bc1d17560bb032deb8dc3a80cc025a911dff2260e91a507e636b6` |
+| 2 | `theorem` | [toPartialHomeomorph_coe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InverseFunctionTheoremContDiff.lean/declarations/topartialhomeomorph-coe.md) | 34 | `result-track:3c8ee7f93ecca5f0eecf4f3adf9a6c8b2a2ccaceac9e54cdf51e5f46aed4d53b` |
+| 3 | `theorem` | [mem_toPartialHomeomorph_source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InverseFunctionTheoremContDiff.lean/declarations/mem-topartialhomeomorph-source.md) | 39 | `result-track:a065e5535a5eb0e81a43a946233fbb3a40472e3b6ad757af86f6f26d7679ab6e` |
+| 4 | `theorem` | [image_mem_toPartialHomeomorph_target](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InverseFunctionTheoremContDiff.lean/declarations/image-mem-topartialhomeomorph-target.md) | 44 | `result-track:def0673702c1e9073aa457274b84c85ee8046e83c08887e2713b5823d6ee4f04` |
+| 5 | `def` | [localInverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InverseFunctionTheoremContDiff.lean/declarations/localinverse.md) | 51 | `declaration-track:69d4da10c8de5dcfde65b0a6a8e7667a6932ad257174e89494dfced5c78c4659` |
+| 6 | `theorem` | [localInverse_apply_image](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InverseFunctionTheoremContDiff.lean/declarations/localinverse-apply-image.md) | 55 | `result-track:da96628734e07816fcf5751cb05d0e885a1f382e7b7f214c40d07ee2a06c58af` |
+| 7 | `theorem` | [to_localInverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InverseFunctionTheoremContDiff.lean/declarations/to-localinverse.md) | 62 | `result-track:16cb97121825da39de459b8e7a94c099ad6ca1b2437e73b49a1cf2f76cf624d4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

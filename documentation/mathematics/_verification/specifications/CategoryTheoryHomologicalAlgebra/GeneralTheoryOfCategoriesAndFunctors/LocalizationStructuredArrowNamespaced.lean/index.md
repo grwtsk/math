@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationStructuredArrowNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationStructuredArrowNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationStructuredArrowNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationStructuredArrowNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [structuredArrowEquiv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationStructuredArrowNamespaced.lean/declarations/structuredarrowequiv.md) | 49 | `declaration-track:3255a4dc321473d700df0af81d68b761196e650ac5ba61b12fad1bef5d8398c0` |
-| 2 | `lemma` | [induction_structuredArrow'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationStructuredArrowNamespaced.lean/declarations/induction-structuredarrow.md) | 70 | `result-track:20fcba8212b46b088638ea09f364a5db6fb6dc41d6b8df9d3abc5c4ea6229ecd` |
-| 3 | `lemma` | [induction_structuredArrow](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationStructuredArrowNamespaced.lean/declarations/induction-structuredarrow-source-edition-2.md) | 100 | `result-track:9f7ae21445957539642c429e2271cfe1108cc40d2f314829fb4036c1a5bc61d4` |
-| 4 | `lemma` | [induction_costructuredArrow](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationStructuredArrowNamespaced.lean/declarations/induction-costructuredarrow.md) | 128 | `result-track:991dd5e43249259a3f17d947b5bc973759c58fc3008e763dd2b65f178ba639a1` |
+| 1 | `def` | [structuredArrowEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationStructuredArrowNamespaced.lean/declarations/structuredarrowequiv.md) | 49 | `declaration-track:3255a4dc321473d700df0af81d68b761196e650ac5ba61b12fad1bef5d8398c0` |
+| 2 | `lemma` | [induction_structuredArrow'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationStructuredArrowNamespaced.lean/declarations/induction-structuredarrow.md) | 70 | `result-track:20fcba8212b46b088638ea09f364a5db6fb6dc41d6b8df9d3abc5c4ea6229ecd` |
+| 3 | `lemma` | [induction_structuredArrow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationStructuredArrowNamespaced.lean/declarations/induction-structuredarrow-source-edition-2.md) | 100 | `result-track:9f7ae21445957539642c429e2271cfe1108cc40d2f314829fb4036c1a5bc61d4` |
+| 4 | `lemma` | [induction_costructuredArrow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationStructuredArrowNamespaced.lean/declarations/induction-costructuredarrow.md) | 128 | `result-track:991dd5e43249259a3f17d947b5bc973759c58fc3008e763dd2b65f178ba639a1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CheckedChunkComposition.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CheckedChunkComposition.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CheckedChunkComposition.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CheckedChunkComposition.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.BigOperators.CheckedContiguousBlocks`](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CheckedContiguousBlocks.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Algebra.BigOperators.CheckedContiguousBlocks`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CheckedContiguousBlocks.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [chunk_add](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CheckedChunkComposition.lean/declarations/chunk-add.md) | 21 | `result-track:b919fbf609bb3e76e35a36a5c1955be275220320442055fda695344b461d1240` |
-| 2 | `theorem` | [chunk_add_zero_right](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CheckedChunkComposition.lean/declarations/chunk-add-zero-right.md) | 32 | `result-track:185eb178a4d8ce97d6111ad8a05d0eddfecf37f00572319accfc0f589204e7b8` |
+| 1 | `theorem` | [chunk_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CheckedChunkComposition.lean/declarations/chunk-add.md) | 21 | `result-track:b919fbf609bb3e76e35a36a5c1955be275220320442055fda695344b461d1240` |
+| 2 | `theorem` | [chunk_add_zero_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CheckedChunkComposition.lean/declarations/chunk-add-zero-right.md) | 32 | `result-track:185eb178a4d8ce97d6111ad8a05d0eddfecf37f00572319accfc0f589204e7b8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

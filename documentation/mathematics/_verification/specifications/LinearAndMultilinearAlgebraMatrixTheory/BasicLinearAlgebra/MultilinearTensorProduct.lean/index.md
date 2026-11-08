@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearTensorProduct.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearTensorProduct.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearTensorProduct.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearTensorProduct.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [domCoprod](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearTensorProduct.lean/declarations/domcoprod.md) | 46 | `declaration-track:2c43a194502f40ffbca46370cc03f2f3fd71ffb96a45bc09ee8d2ea919bc6fb8` |
-| 2 | `def` | [domCoprod'](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearTensorProduct.lean/declarations/domcoprod-source-edition-2.md) | 62 | `declaration-track:d49307d6759ddc43228a5a3b78aac92f1aa7097838d99d75f39fee342bf968e3` |
-| 3 | `theorem` | [domCoprod'_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearTensorProduct.lean/declarations/domcoprod-apply.md) | 82 | `result-track:ac3b5585f68f69c695334fc9b0bcc358a9cf810d40a560e785a8e47d57a1aca4` |
-| 4 | `theorem` | [domCoprod_domDomCongr_sumCongr](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearTensorProduct.lean/declarations/domcoprod-domdomcongr-sumcongr.md) | 89 | `result-track:505b861a7463c7722ad2bcb8e1ee066ea1d73ef2ddb849e3208e90bd0b58714c` |
+| 1 | `def` | [domCoprod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearTensorProduct.lean/declarations/domcoprod.md) | 46 | `declaration-track:2c43a194502f40ffbca46370cc03f2f3fd71ffb96a45bc09ee8d2ea919bc6fb8` |
+| 2 | `def` | [domCoprod'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearTensorProduct.lean/declarations/domcoprod-source-edition-2.md) | 62 | `declaration-track:d49307d6759ddc43228a5a3b78aac92f1aa7097838d99d75f39fee342bf968e3` |
+| 3 | `theorem` | [domCoprod'_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearTensorProduct.lean/declarations/domcoprod-apply.md) | 82 | `result-track:ac3b5585f68f69c695334fc9b0bcc358a9cf810d40a560e785a8e47d57a1aca4` |
+| 4 | `theorem` | [domCoprod_domDomCongr_sumCongr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MultilinearTensorProduct.lean/declarations/domcoprod-domdomcongr-sumcongr.md) | 89 | `result-track:505b861a7463c7722ad2bcb8e1ee066ea1d73ef2ddb849e3208e90bd0b58714c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

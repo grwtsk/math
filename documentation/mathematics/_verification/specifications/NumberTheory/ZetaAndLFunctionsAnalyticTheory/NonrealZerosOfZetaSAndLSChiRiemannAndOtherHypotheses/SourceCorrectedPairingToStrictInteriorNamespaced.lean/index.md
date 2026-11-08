@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceCorrectedPairingToStrictInteriorNamespaced.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceCorrectedPairingToStrictInteriorNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceCorrectedPairingToStrictInteriorNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceCorrectedPairingToStrictInteriorNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [strictColumnInterior_upper_of_complete_pairing_calibration](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceCorrectedPairingToStrictInteriorNamespaced.lean/declarations/strictcolumninterior-upper-of-complete-pairing-calibration.md) | 30 | `result-track:f1dd79761044b5f4d6f78c8b0e742ce3f874d9e8b680ca57954aea1e0d59ceba` |
-| 2 | `theorem` | [uniform_strictColumnInterior_comparison](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceCorrectedPairingToStrictInteriorNamespaced.lean/declarations/uniform-strictcolumninterior-comparison.md) | 47 | `result-track:6bba72f6c1325c6bf733913c8aa5a1bd9891e852c4303ebd37f97b219c9ad3ed` |
-| 3 | `theorem` | [strictColumnInterior_tail_of_complete_pairing_tail](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceCorrectedPairingToStrictInteriorNamespaced.lean/declarations/strictcolumninterior-tail-of-complete-pairing-tail.md) | 58 | `result-track:6a6cddbf879170047082419835725c6ade8c14fec09685ff7e3f83dffd969ed2` |
+| 1 | `theorem` | [strictColumnInterior_upper_of_complete_pairing_calibration](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceCorrectedPairingToStrictInteriorNamespaced.lean/declarations/strictcolumninterior-upper-of-complete-pairing-calibration.md) | 30 | `result-track:f1dd79761044b5f4d6f78c8b0e742ce3f874d9e8b680ca57954aea1e0d59ceba` |
+| 2 | `theorem` | [uniform_strictColumnInterior_comparison](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceCorrectedPairingToStrictInteriorNamespaced.lean/declarations/uniform-strictcolumninterior-comparison.md) | 47 | `result-track:6bba72f6c1325c6bf733913c8aa5a1bd9891e852c4303ebd37f97b219c9ad3ed` |
+| 3 | `theorem` | [strictColumnInterior_tail_of_complete_pairing_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceCorrectedPairingToStrictInteriorNamespaced.lean/declarations/strictcolumninterior-tail-of-complete-pairing-tail.md) | 58 | `result-track:6a6cddbf879170047082419835725c6ade8c14fec09685ff7e3f83dffd969ed2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

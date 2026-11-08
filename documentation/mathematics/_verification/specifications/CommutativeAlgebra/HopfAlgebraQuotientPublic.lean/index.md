@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/HopfAlgebraQuotientPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/HopfAlgebraQuotientPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HopfAlgebraQuotientPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HopfAlgebraQuotientPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [_root_.LinearMap.algHom_comp_convOne](../../../../CommutativeAlgebra/HopfAlgebraQuotientPublic.lean/declarations/root-linearmap-alghom-comp-convone.md) | 41 | `result-track:b38ea3818186f14c5c6221eb778d9a9c1dbd1afe9c1f334c81df3385e552b572` |
-| 2 | `lemma` | [_root_.LinearMap.convOne_comp_coalgHom](../../../../CommutativeAlgebra/HopfAlgebraQuotientPublic.lean/declarations/root-linearmap-convone-comp-coalghom.md) | 46 | `result-track:286d1221e423feea8516f6fb8c2858a129302e46dc3af730869a9bf46f206011` |
-| 3 | `abbrev` | [ofSurjective](../../../../CommutativeAlgebra/HopfAlgebraQuotientPublic.lean/declarations/ofsurjective.md) | 52 | `declaration-track:92f51750cfc1a3334df7025043b0466e73ef67fdcd29c0295b0fd072393ad5e5` |
-| 4 | `class` | [Ideal.IsHopfIdeal](../../../../CommutativeAlgebra/HopfAlgebraQuotientPublic.lean/declarations/ideal-ishopfideal.md) | 89 | `declaration-track:ee854d2b268bface88e6724269b4c8462fc2e30a55bb3f18380d0eaa4a0fcda3` |
-| 5 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/HopfAlgebraQuotientPublic.lean/declarations/instance.md) | 100 | `declaration-track:abf5237533526ab6e41aa9b2e2108dde2470edb765625da6c205391439a1ffcc` |
-| 6 | `lemma` | [antipode_mk](../../../../CommutativeAlgebra/HopfAlgebraQuotientPublic.lean/declarations/antipode-mk.md) | 105 | `result-track:973401866d515dc376474580c92227d4e3468d747db8c7e19addd5ba2892df7d` |
-| 7 | `lemma` | [antipode_comp_mkₐ](../../../../CommutativeAlgebra/HopfAlgebraQuotientPublic.lean/declarations/antipode-comp-mk.md) | 108 | `result-track:45ecab1f4a97133f6445d6c7a706a85ac51095a1f6566e95a5dbfb42f3acbf0b` |
-| 8 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/HopfAlgebraQuotientPublic.lean/declarations/instance-source-edition-2.md) | 116 | `declaration-track:e135a7c3892ecda918f9aee41ce42c5847046655929e4d170820788bd2eec178` |
+| 1 | `lemma` | [_root_.LinearMap.algHom_comp_convOne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HopfAlgebraQuotientPublic.lean/declarations/root-linearmap-alghom-comp-convone.md) | 41 | `result-track:b38ea3818186f14c5c6221eb778d9a9c1dbd1afe9c1f334c81df3385e552b572` |
+| 2 | `lemma` | [_root_.LinearMap.convOne_comp_coalgHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HopfAlgebraQuotientPublic.lean/declarations/root-linearmap-convone-comp-coalghom.md) | 46 | `result-track:286d1221e423feea8516f6fb8c2858a129302e46dc3af730869a9bf46f206011` |
+| 3 | `abbrev` | [ofSurjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HopfAlgebraQuotientPublic.lean/declarations/ofsurjective.md) | 52 | `declaration-track:92f51750cfc1a3334df7025043b0466e73ef67fdcd29c0295b0fd072393ad5e5` |
+| 4 | `class` | [Ideal.IsHopfIdeal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HopfAlgebraQuotientPublic.lean/declarations/ideal-ishopfideal.md) | 89 | `declaration-track:ee854d2b268bface88e6724269b4c8462fc2e30a55bb3f18380d0eaa4a0fcda3` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HopfAlgebraQuotientPublic.lean/declarations/instance.md) | 100 | `declaration-track:abf5237533526ab6e41aa9b2e2108dde2470edb765625da6c205391439a1ffcc` |
+| 6 | `lemma` | [antipode_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HopfAlgebraQuotientPublic.lean/declarations/antipode-mk.md) | 105 | `result-track:973401866d515dc376474580c92227d4e3468d747db8c7e19addd5ba2892df7d` |
+| 7 | `lemma` | [antipode_comp_mkₐ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HopfAlgebraQuotientPublic.lean/declarations/antipode-comp-mk.md) | 108 | `result-track:45ecab1f4a97133f6445d6c7a706a85ac51095a1f6566e95a5dbfb42f3acbf0b` |
+| 8 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/HopfAlgebraQuotientPublic.lean/declarations/instance-source-edition-2.md) | 116 | `declaration-track:e135a7c3892ecda918f9aee41ce42c5847046655929e4d170820788bd2eec178` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

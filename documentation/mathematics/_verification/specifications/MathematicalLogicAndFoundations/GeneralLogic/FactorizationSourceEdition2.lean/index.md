@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FactorizationSourceEdition2.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FactorizationSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FactorizationSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FactorizationSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [FactorizationMap](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FactorizationSourceEdition2.lean/declarations/factorizationmap.md) | 19 | `declaration-track:b01272e75f2a5682948b1f242e13c76fa65b105682a0115aef2d5be8c9012971` |
-| 2 | `def` | [IsPrimeSupport](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FactorizationSourceEdition2.lean/declarations/isprimesupport.md) | 22 | `declaration-track:b14409bc5f6ccd60458694e18111ecda270246ab0d853c6ebe543c8c99632308` |
-| 3 | `theorem` | [factorization_support_prime](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FactorizationSourceEdition2.lean/declarations/factorization-support-prime.md) | 25 | `result-track:160168baeefc3df85370ab9cc39a984ac7ac29ca8828a466b8f7d34cf8e4fbba` |
-| 4 | `theorem` | [factorization_exponent_pos](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FactorizationSourceEdition2.lean/declarations/factorization-exponent-pos.md) | 36 | `result-track:9fbe189ec06e6006277a16e983f631593624296fbd2cccfec6cfb4e72857ea3f` |
-| 5 | `def` | [factorPrimePowerOfSupport](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FactorizationSourceEdition2.lean/declarations/factorprimepowerofsupport.md) | 43 | `declaration-track:c7303e907add242d29c2d9b51f128f42c589165646d0969988080cbb4eb69ec0` |
+| 1 | `def` | [FactorizationMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FactorizationSourceEdition2.lean/declarations/factorizationmap.md) | 19 | `declaration-track:b01272e75f2a5682948b1f242e13c76fa65b105682a0115aef2d5be8c9012971` |
+| 2 | `def` | [IsPrimeSupport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FactorizationSourceEdition2.lean/declarations/isprimesupport.md) | 22 | `declaration-track:b14409bc5f6ccd60458694e18111ecda270246ab0d853c6ebe543c8c99632308` |
+| 3 | `theorem` | [factorization_support_prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FactorizationSourceEdition2.lean/declarations/factorization-support-prime.md) | 25 | `result-track:160168baeefc3df85370ab9cc39a984ac7ac29ca8828a466b8f7d34cf8e4fbba` |
+| 4 | `theorem` | [factorization_exponent_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FactorizationSourceEdition2.lean/declarations/factorization-exponent-pos.md) | 36 | `result-track:9fbe189ec06e6006277a16e983f631593624296fbd2cccfec6cfb4e72857ea3f` |
+| 5 | `def` | [factorPrimePowerOfSupport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FactorizationSourceEdition2.lean/declarations/factorprimepowerofsupport.md) | 43 | `declaration-track:c7303e907add242d29c2d9b51f128f42c589165646d0969988080cbb4eb69ec0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

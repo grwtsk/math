@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/RegularDefsNamespacedPublic.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/RegularDefsNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/RegularDefsNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/RegularDefsNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [IsLeftRegular](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/RegularDefsNamespacedPublic.lean/declarations/isleftregular.md) | 36 | `declaration-track:5369f6c504341e7edcacc3a01b0829eaae819251d76e0e364931cd2c15f87370` |
-| 2 | `def` | [IsRightRegular](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/RegularDefsNamespacedPublic.lean/declarations/isrightregular.md) | 44 | `declaration-track:771ef5d66b500f233e9d297c322743e956213a836102ed8e010cd6d826eb872e` |
-| 3 | `structure` | [IsAddRegular](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/RegularDefsNamespacedPublic.lean/declarations/isaddregular.md) | 49 | `declaration-track:2fa41b2a8525313e354ee49f936c9c87f63b79ad37d87f531ee59984528e11c1` |
-| 4 | `structure` | [IsRegular](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/RegularDefsNamespacedPublic.lean/declarations/isregular.md) | 57 | `declaration-track:72fb13c955834285666564c35e36417f1dcd1564079663376126e0657ae1bc3b` |
-| 5 | `theorem` | [isRegular_iff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/RegularDefsNamespacedPublic.lean/declarations/isregular-iff.md) | 68 | `result-track:e8135755cb45cc71487cfd8bc947229a0ee2afdb28aa58298dd2cf1bba9d9535` |
+| 1 | `def` | [IsLeftRegular](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/RegularDefsNamespacedPublic.lean/declarations/isleftregular.md) | 36 | `declaration-track:5369f6c504341e7edcacc3a01b0829eaae819251d76e0e364931cd2c15f87370` |
+| 2 | `def` | [IsRightRegular](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/RegularDefsNamespacedPublic.lean/declarations/isrightregular.md) | 44 | `declaration-track:771ef5d66b500f233e9d297c322743e956213a836102ed8e010cd6d826eb872e` |
+| 3 | `structure` | [IsAddRegular](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/RegularDefsNamespacedPublic.lean/declarations/isaddregular.md) | 49 | `declaration-track:2fa41b2a8525313e354ee49f936c9c87f63b79ad37d87f531ee59984528e11c1` |
+| 4 | `structure` | [IsRegular](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/RegularDefsNamespacedPublic.lean/declarations/isregular.md) | 57 | `declaration-track:72fb13c955834285666564c35e36417f1dcd1564079663376126e0657ae1bc3b` |
+| 5 | `theorem` | [isRegular_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/RegularDefsNamespacedPublic.lean/declarations/isregular-iff.md) | 68 | `result-track:e8135755cb45cc71487cfd8bc947229a0ee2afdb28aa58298dd2cf1bba9d9535` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

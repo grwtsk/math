@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/AdhesiveOverNamespacedPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/AdhesiveOverNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/AdhesiveOverNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/AdhesiveOverNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [adhesive_over](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/AdhesiveOverNamespacedPublic.lean/declarations/adhesive-over.md) | 34 | `declaration-track:bb2d3518422537fb1cf8d6206775a3e89336c02cb63d27bc0efc4f8c60ea7738` |
-| 2 | `instance` | [adhesive_under](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/AdhesiveOverNamespacedPublic.lean/declarations/adhesive-under.md) | 39 | `declaration-track:8dc2baf9ac007424b69541d9b70d39e26a0a94ac103869b1ec885fd29430eda6` |
+| 1 | `instance` | [adhesive_over](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/AdhesiveOverNamespacedPublic.lean/declarations/adhesive-over.md) | 34 | `declaration-track:bb2d3518422537fb1cf8d6206775a3e89336c02cb63d27bc0efc4f8c60ea7738` |
+| 2 | `instance` | [adhesive_under](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/AdhesiveOverNamespacedPublic.lean/declarations/adhesive-under.md) | 39 | `declaration-track:8dc2baf9ac007424b69541d9b70d39e26a0a94ac103869b1ec885fd29430eda6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

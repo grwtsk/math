@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/FinitenessFinsupp.lean/index.md) · [Full source](../../../../CommutativeAlgebra/FinitenessFinsupp.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessFinsupp.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessFinsupp.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [fg_of_fg_map_of_fg_inf_ker](../../../../CommutativeAlgebra/FinitenessFinsupp.lean/declarations/fg-of-fg-map-of-fg-inf-ker.md) | 27 | `result-track:4fe1bdd6567fb98b25b6e4571c1927b44988367718724d2d663fd38810697eae` |
-| 2 | `theorem` | [fg_ker_comp](../../../../CommutativeAlgebra/FinitenessFinsupp.lean/declarations/fg-ker-comp.md) | 101 | `result-track:365c14b11a7e5657358ff688c10017e8d217fe6aebdd5bfbbaa655b009f1d034` |
-| 3 | `theorem` | [_root_.Module.Finite.of_submodule_quotient](../../../../CommutativeAlgebra/FinitenessFinsupp.lean/declarations/root-module-finite-of-submodule-quotient.md) | 110 | `result-track:6d6bdeb97320a70aa76d775f40ea461d8edf6ef3a320616d6a65903ac9cb1650` |
-| 4 | `instance` | [Module.Finite.finsupp](../../../../CommutativeAlgebra/FinitenessFinsupp.lean/declarations/module-finite-finsupp.md) | 122 | `declaration-track:271c2b45f1269b112a28a7c820315d07fd07a4ff3add03726f00793f3af659aa` |
+| 1 | `theorem` | [fg_of_fg_map_of_fg_inf_ker](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessFinsupp.lean/declarations/fg-of-fg-map-of-fg-inf-ker.md) | 27 | `result-track:4fe1bdd6567fb98b25b6e4571c1927b44988367718724d2d663fd38810697eae` |
+| 2 | `theorem` | [fg_ker_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessFinsupp.lean/declarations/fg-ker-comp.md) | 101 | `result-track:365c14b11a7e5657358ff688c10017e8d217fe6aebdd5bfbbaa655b009f1d034` |
+| 3 | `theorem` | [_root_.Module.Finite.of_submodule_quotient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessFinsupp.lean/declarations/root-module-finite-of-submodule-quotient.md) | 110 | `result-track:6d6bdeb97320a70aa76d775f40ea461d8edf6ef3a320616d6a65903ac9cb1650` |
+| 4 | `instance` | [Module.Finite.finsupp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/FinitenessFinsupp.lean/declarations/module-finite-finsupp.md) | 122 | `declaration-track:271c2b45f1269b112a28a7c820315d07fd07a4ff3add03726f00793f3af659aa` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

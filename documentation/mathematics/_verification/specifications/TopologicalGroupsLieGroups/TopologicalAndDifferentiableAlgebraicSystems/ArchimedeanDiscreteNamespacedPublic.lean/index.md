@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ArchimedeanDiscreteNamespacedPublic.lean/index.md) · [Full source](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ArchimedeanDiscreteNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ArchimedeanDiscreteNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ArchimedeanDiscreteNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [instDiscreteTopologyZMultiples](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ArchimedeanDiscreteNamespacedPublic.lean/declarations/instdiscretetopologyzmultiples.md) | 41 | `declaration-track:f044e875d6c59f42f0374b7ff5b68801aae128ad6d9e8be57861cdec4ccbbe91` |
-| 2 | `instance` | [(anonymous)](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ArchimedeanDiscreteNamespacedPublic.lean/declarations/instance.md) | 61 | `declaration-track:80e0f3852f5705548a915575242abfea8f64e54571da9377e2e85b8444686c4d` |
-| 3 | `lemma` | [discrete_iff_cyclic](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ArchimedeanDiscreteNamespacedPublic.lean/declarations/discrete-iff-cyclic.md) | 70 | `result-track:bb24c39c94b2397f69c2232158382a7445f2ec81672eb4fb14b2f72d40f6c525` |
+| 1 | `instance` | [instDiscreteTopologyZMultiples](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ArchimedeanDiscreteNamespacedPublic.lean/declarations/instdiscretetopologyzmultiples.md) | 41 | `declaration-track:f044e875d6c59f42f0374b7ff5b68801aae128ad6d9e8be57861cdec4ccbbe91` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ArchimedeanDiscreteNamespacedPublic.lean/declarations/instance.md) | 61 | `declaration-track:80e0f3852f5705548a915575242abfea8f64e54571da9377e2e85b8444686c4d` |
+| 3 | `lemma` | [discrete_iff_cyclic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ArchimedeanDiscreteNamespacedPublic.lean/declarations/discrete-iff-cyclic.md) | 70 | `result-track:bb24c39c94b2397f69c2232158382a7445f2ec81672eb4fb14b2f72d40f6c525` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

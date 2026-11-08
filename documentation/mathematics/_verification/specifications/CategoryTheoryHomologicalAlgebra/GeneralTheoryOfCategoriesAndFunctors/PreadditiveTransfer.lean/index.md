@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreadditiveTransfer.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreadditiveTransfer.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreadditiveTransfer.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreadditiveTransfer.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ofFullyFaithful](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreadditiveTransfer.lean/declarations/offullyfaithful.md) | 30 | `declaration-track:cab450a0143f61505ea4a619ebb8c85e00d0ea159d93d2c0be2cf62ee71b6b2a` |
-| 2 | `lemma` | [additive_ofFullyFaithful](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreadditiveTransfer.lean/declarations/additive-offullyfaithful.md) | 42 | `result-track:f37a794e12420ffc19df633c546f68e06dd84fa14317916d823196a67aa245b1` |
-| 3 | `lemma` | [additive_inverse_of_FullyFaithful](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreadditiveTransfer.lean/declarations/additive-inverse-of-fullyfaithful.md) | 54 | `result-track:f8a355991fe1be76395bce2aae07a95062ba8a659e6972f14b7d956fe2d14357` |
+| 1 | `def` | [ofFullyFaithful](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreadditiveTransfer.lean/declarations/offullyfaithful.md) | 30 | `declaration-track:cab450a0143f61505ea4a619ebb8c85e00d0ea159d93d2c0be2cf62ee71b6b2a` |
+| 2 | `lemma` | [additive_ofFullyFaithful](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreadditiveTransfer.lean/declarations/additive-offullyfaithful.md) | 42 | `result-track:f37a794e12420ffc19df633c546f68e06dd84fa14317916d823196a67aa245b1` |
+| 3 | `lemma` | [additive_inverse_of_FullyFaithful](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreadditiveTransfer.lean/declarations/additive-inverse-of-fullyfaithful.md) | 54 | `result-track:f8a355991fe1be76395bce2aae07a95062ba8a659e6972f14b7d956fe2d14357` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

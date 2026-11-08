@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/PortFiberAreaGaugeTransport.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/PortFiberAreaGaugeTransport.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberAreaGaugeTransport.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberAreaGaugeTransport.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Interfaces.PortFiberAreaKernelDensity`](../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/PortFiberAreaKernelDensity.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.HolomorphicAreaGaugeTransport`](../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/HolomorphicAreaGaugeTransport.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.Interfaces.PortFiberAreaKernelDensity`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/PortFiberAreaKernelDensity.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.HolomorphicAreaGaugeTransport`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/HolomorphicAreaGaugeTransport.lean/index.md) — import line 2; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,17 +58,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [schemaVersion](../../../../FunctionsOfAComplexVariable/PortFiberAreaGaugeTransport.lean/declarations/schemaversion.md) | 35 | `declaration-track:5bbc03e5d172c7f46cc8fb08d7dae400636a290756237468c77e7957a38a405e` |
-| 2 | `inductive` | [AddedIndex](../../../../FunctionsOfAComplexVariable/PortFiberAreaGaugeTransport.lean/declarations/addedindex.md) | 37 | `declaration-track:bd87f519897139c7a55810fc622c2f4993228f31ffabaa23a3da4187b8e91434` |
-| 3 | `def` | [AddedClaim](../../../../FunctionsOfAComplexVariable/PortFiberAreaGaugeTransport.lean/declarations/addedclaim.md) | 48 | `declaration-track:609c0e33142df7ae0655c6336f9db7980fed53d987b6fdf784f5854d22af67d7` |
-| 4 | `theorem` | [addedClaim_proof](../../../../FunctionsOfAComplexVariable/PortFiberAreaGaugeTransport.lean/declarations/addedclaim-proof.md) | 94 | `result-track:413d0489f8127cd5d37a0abed6d82efd85b7b60c2c7fcba7d03cb7d6145d82c6` |
-| 5 | `def` | [portfolio](../../../../FunctionsOfAComplexVariable/PortFiberAreaGaugeTransport.lean/declarations/portfolio.md) | 111 | `declaration-track:1af513c9da380e3f00b41e6fdf32f27714fdc31ecfbdc1eb60c2f11695b37678` |
-| 6 | `def` | [architecture](../../../../FunctionsOfAComplexVariable/PortFiberAreaGaugeTransport.lean/declarations/architecture.md) | 114 | `declaration-track:942426f926577ba083b9b916de615d561cfe2d8172703db12ad57909c6d29d22` |
-| 7 | `abbrev` | [PreviousIndex](../../../../FunctionsOfAComplexVariable/PortFiberAreaGaugeTransport.lean/declarations/previousindex.md) | 118 | `declaration-track:66a1fde719433a2be795d8d1da30267497031d17e0764f07bdba25ca733e5fb1` |
-| 8 | `theorem` | [original_branch_unchanged](../../../../FunctionsOfAComplexVariable/PortFiberAreaGaugeTransport.lean/declarations/original-branch-unchanged.md) | 122 | `result-track:23afefb2cea4a138c5e93ade5c1b4b72422bee3c7401f1462c4c77fc5352fedb` |
-| 9 | `theorem` | [new_branch_proved](../../../../FunctionsOfAComplexVariable/PortFiberAreaGaugeTransport.lean/declarations/new-branch-proved.md) | 128 | `result-track:05018c2174a0f6ec445977c2c46c9a75a7402b1269625644c7be8dd7073f1b84` |
-| 10 | `theorem` | [target_unchanged](../../../../FunctionsOfAComplexVariable/PortFiberAreaGaugeTransport.lean/declarations/target-unchanged.md) | 133 | `result-track:7a2cdfbf96cc44a7587949bb1dbe576831e79c1d503024910a09fdf889e6cbec` |
-| 11 | `theorem` | [retarget_preserves_new](../../../../FunctionsOfAComplexVariable/PortFiberAreaGaugeTransport.lean/declarations/retarget-preserves-new.md) | 138 | `result-track:340f08c6bb97c9ad52db0ceda4c370b7a70600a1b4dcb18e33f78cda356c51e1` |
+| 1 | `def` | [schemaVersion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberAreaGaugeTransport.lean/declarations/schemaversion.md) | 35 | `declaration-track:5bbc03e5d172c7f46cc8fb08d7dae400636a290756237468c77e7957a38a405e` |
+| 2 | `inductive` | [AddedIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberAreaGaugeTransport.lean/declarations/addedindex.md) | 37 | `declaration-track:bd87f519897139c7a55810fc622c2f4993228f31ffabaa23a3da4187b8e91434` |
+| 3 | `def` | [AddedClaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberAreaGaugeTransport.lean/declarations/addedclaim.md) | 48 | `declaration-track:609c0e33142df7ae0655c6336f9db7980fed53d987b6fdf784f5854d22af67d7` |
+| 4 | `theorem` | [addedClaim_proof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberAreaGaugeTransport.lean/declarations/addedclaim-proof.md) | 94 | `result-track:413d0489f8127cd5d37a0abed6d82efd85b7b60c2c7fcba7d03cb7d6145d82c6` |
+| 5 | `def` | [portfolio](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberAreaGaugeTransport.lean/declarations/portfolio.md) | 111 | `declaration-track:1af513c9da380e3f00b41e6fdf32f27714fdc31ecfbdc1eb60c2f11695b37678` |
+| 6 | `def` | [architecture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberAreaGaugeTransport.lean/declarations/architecture.md) | 114 | `declaration-track:942426f926577ba083b9b916de615d561cfe2d8172703db12ad57909c6d29d22` |
+| 7 | `abbrev` | [PreviousIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberAreaGaugeTransport.lean/declarations/previousindex.md) | 118 | `declaration-track:66a1fde719433a2be795d8d1da30267497031d17e0764f07bdba25ca733e5fb1` |
+| 8 | `theorem` | [original_branch_unchanged](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberAreaGaugeTransport.lean/declarations/original-branch-unchanged.md) | 122 | `result-track:23afefb2cea4a138c5e93ade5c1b4b72422bee3c7401f1462c4c77fc5352fedb` |
+| 9 | `theorem` | [new_branch_proved](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberAreaGaugeTransport.lean/declarations/new-branch-proved.md) | 128 | `result-track:05018c2174a0f6ec445977c2c46c9a75a7402b1269625644c7be8dd7073f1b84` |
+| 10 | `theorem` | [target_unchanged](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberAreaGaugeTransport.lean/declarations/target-unchanged.md) | 133 | `result-track:7a2cdfbf96cc44a7587949bb1dbe576831e79c1d503024910a09fdf889e6cbec` |
+| 11 | `theorem` | [retarget_preserves_new](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/PortFiberAreaGaugeTransport.lean/declarations/retarget-preserves-new.md) | 138 | `result-track:340f08c6bb97c9ad52db0ceda4c370b7a70600a1b4dcb18e33f78cda356c51e1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

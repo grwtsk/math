@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/UrysohnsBounded.lean/index.md) · [Full source](../../../../GeneralTopology/UrysohnsBounded.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UrysohnsBounded.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UrysohnsBounded.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_bounded_zero_one_of_closed](../../../../GeneralTopology/UrysohnsBounded.lean/declarations/exists-bounded-zero-one-of-closed.md) | 33 | `result-track:2d67db2b2ca74840d2bae4046d8f2def224a5622fd6ca6a1586d127681073183` |
-| 2 | `theorem` | [exists_bounded_mem_Icc_of_closed_of_le](../../../../GeneralTopology/UrysohnsBounded.lean/declarations/exists-bounded-mem-icc-of-closed-of-le.md) | 46 | `result-track:2f84fff102179a0f0489e86b756793f246f6d041d66943b5ba7d61bb1135365c` |
+| 1 | `theorem` | [exists_bounded_zero_one_of_closed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UrysohnsBounded.lean/declarations/exists-bounded-zero-one-of-closed.md) | 33 | `result-track:2d67db2b2ca74840d2bae4046d8f2def224a5622fd6ca6a1586d127681073183` |
+| 2 | `theorem` | [exists_bounded_mem_Icc_of_closed_of_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UrysohnsBounded.lean/declarations/exists-bounded-mem-icc-of-closed-of-le.md) | 46 | `result-track:2f84fff102179a0f0489e86b756793f246f6d041d66943b5ba7d61bb1135365c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

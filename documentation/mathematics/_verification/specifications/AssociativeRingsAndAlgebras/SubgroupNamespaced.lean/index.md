@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/SubgroupNamespaced.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/SubgroupNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubgroupNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubgroupNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mul](../../../../AssociativeRingsAndAlgebras/SubgroupNamespaced.lean/declarations/mul.md) | 32 | `declaration-track:8f3e116f4d73824346cc9b1a49823211fcc4253d5cf4b61fd91d951433fd4368` |
-| 2 | `lemma` | [mul_toAddSubmonoid](../../../../AssociativeRingsAndAlgebras/SubgroupNamespaced.lean/declarations/mul-toaddsubmonoid.md) | 41 | `result-track:d07ea2b2780580b036ea7bdd0800e405a3c6ef6810b687568dd34a1055ed13ed` |
-| 3 | `lemma` | [zero_smul](../../../../AssociativeRingsAndAlgebras/SubgroupNamespaced.lean/declarations/zero-smul.md) | 49 | `result-track:e32d47c2ea07fe1d26a476bb322541e7777cbc4332b7bf7d6c3e4e9680424e34` |
+| 1 | `def` | [mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubgroupNamespaced.lean/declarations/mul.md) | 32 | `declaration-track:8f3e116f4d73824346cc9b1a49823211fcc4253d5cf4b61fd91d951433fd4368` |
+| 2 | `lemma` | [mul_toAddSubmonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubgroupNamespaced.lean/declarations/mul-toaddsubmonoid.md) | 41 | `result-track:d07ea2b2780580b036ea7bdd0800e405a3c6ef6810b687568dd34a1055ed13ed` |
+| 3 | `lemma` | [zero_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SubgroupNamespaced.lean/declarations/zero-smul.md) | 49 | `result-track:e32d47c2ea07fe1d26a476bb322541e7777cbc4332b7bf7d6c3e4e9680424e34` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CrystalNamespaced.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CrystalNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CrystalNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CrystalNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [thickening_has_nilpotent_ideal](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CrystalNamespaced.lean/declarations/thickening-has-nilpotent-ideal.md) | 30 | `result-track:367700f8bb75a3f199193fc2ccaeea6ad549d9b28d75e00922b43217e9e70c2d` |
-| 2 | `theorem` | [crystalline_cover_is_cover](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CrystalNamespaced.lean/declarations/crystalline-cover-is-cover.md) | 35 | `result-track:dc00e7a81df756b8c6fd269abc7ac4549a1adcc5549d4d3d64b796f651ed98ab` |
-| 3 | `theorem` | [crystal_has_compatibility](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CrystalNamespaced.lean/declarations/crystal-has-compatibility.md) | 42 | `result-track:b29b44770396803af799edee83130a676bb174e0735ba9f4634b134502b9c13f` |
-| 4 | `theorem` | [crystal_has_infinitesimal_rigidity](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CrystalNamespaced.lean/declarations/crystal-has-infinitesimal-rigidity.md) | 48 | `result-track:f4c656500181736da32d9259d030dc095015606cdda79cf190cf426147dab5b3` |
+| 1 | `theorem` | [thickening_has_nilpotent_ideal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CrystalNamespaced.lean/declarations/thickening-has-nilpotent-ideal.md) | 30 | `result-track:367700f8bb75a3f199193fc2ccaeea6ad549d9b28d75e00922b43217e9e70c2d` |
+| 2 | `theorem` | [crystalline_cover_is_cover](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CrystalNamespaced.lean/declarations/crystalline-cover-is-cover.md) | 35 | `result-track:dc00e7a81df756b8c6fd269abc7ac4549a1adcc5549d4d3d64b796f651ed98ab` |
+| 3 | `theorem` | [crystal_has_compatibility](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CrystalNamespaced.lean/declarations/crystal-has-compatibility.md) | 42 | `result-track:b29b44770396803af799edee83130a676bb174e0735ba9f4634b134502b9c13f` |
+| 4 | `theorem` | [crystal_has_infinitesimal_rigidity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CrystalNamespaced.lean/declarations/crystal-has-infinitesimal-rigidity.md) | 48 | `result-track:f4c656500181736da32d9259d030dc095015606cdda79cf190cf426147dab5b3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ComputationBasic.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ComputationBasic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ComputationBasic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ComputationBasic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,18 +58,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [IntFractPair](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ComputationBasic.lean/declarations/intfractpair.md) | 71 | `declaration-track:76375f4610c228fdf9dbadbd31b1443d628bb8c8ef283c2ea17dba7de9a64e85` |
-| 2 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ComputationBasic.lean/declarations/instance.md) | 83 | `declaration-track:fe17f26d41c15aabee6eecdf2de2968f390419d28fdcb0ee3ffb1dba40578e70` |
-| 3 | `instance` | [inhabited](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ComputationBasic.lean/declarations/inhabited.md) | 86 | `declaration-track:42939d8e43c3e3c1a08685a8c32e2f7ba27570d5f5c0a9d3d528c9a5a9c18f99` |
-| 4 | `def` | [mapFr](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ComputationBasic.lean/declarations/mapfr.md) | 91 | `declaration-track:3c0a9f13b71e276b9e541d233d17c61b9fb62c309115b93595970ea9646b44ab` |
-| 5 | `def` | [coeFn](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ComputationBasic.lean/declarations/coefn.md) | 104 | `declaration-track:efb4115e4a1e29f2bf5746d74aabd15217ba6daad78e30b94a8c119fe2482bfe` |
-| 6 | `instance` | [coe](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ComputationBasic.lean/declarations/coe.md) | 107 | `declaration-track:39c0572ec92e12777406de7d90f000f31a2b40fe50767b188eac32d4e848130e` |
-| 7 | `theorem` | [coe_to_intFractPair](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ComputationBasic.lean/declarations/coe-to-intfractpair.md) | 111 | `result-track:820eb1209d0f288ebff84e38170de1b4265410d0b7ecb1eaf79c7b2d14579617` |
-| 8 | `def` | [of](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ComputationBasic.lean/declarations/of-source-edition-2.md) | 121 | `declaration-track:36a126c030bc8a61d79ed5090b68b6a020996329bd9375831b80adb600541c80` |
-| 9 | `def` | [stream](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ComputationBasic.lean/declarations/stream.md) | 138 | `declaration-track:7efe99be6f6b8b7f8a7fed4b373a779ecaee6b405ccaeb63d90d7d3751f19b8c` |
-| 10 | `theorem` | [stream_isSeq](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ComputationBasic.lean/declarations/stream-isseq.md) | 147 | `result-track:727ccfd11b66ce8f8d71faf129b6c6f5c8d0102202d8b2467840586af62f303d` |
-| 11 | `def` | [seq1](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ComputationBasic.lean/declarations/seq1.md) | 160 | `declaration-track:8129da10f4dc75105dd4797edcd1b989fba7d5fb473ac91e7732192565e8b064` |
-| 12 | `def` | [of](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ComputationBasic.lean/declarations/of.md) | 181 | `declaration-track:2a4a6cd225d7b5eecc1176ec736ce99beaa758378358c06ee643c53c5705c5e7` |
+| 1 | `structure` | [IntFractPair](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ComputationBasic.lean/declarations/intfractpair.md) | 71 | `declaration-track:76375f4610c228fdf9dbadbd31b1443d628bb8c8ef283c2ea17dba7de9a64e85` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ComputationBasic.lean/declarations/instance.md) | 83 | `declaration-track:fe17f26d41c15aabee6eecdf2de2968f390419d28fdcb0ee3ffb1dba40578e70` |
+| 3 | `instance` | [inhabited](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ComputationBasic.lean/declarations/inhabited.md) | 86 | `declaration-track:42939d8e43c3e3c1a08685a8c32e2f7ba27570d5f5c0a9d3d528c9a5a9c18f99` |
+| 4 | `def` | [mapFr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ComputationBasic.lean/declarations/mapfr.md) | 91 | `declaration-track:3c0a9f13b71e276b9e541d233d17c61b9fb62c309115b93595970ea9646b44ab` |
+| 5 | `def` | [coeFn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ComputationBasic.lean/declarations/coefn.md) | 104 | `declaration-track:efb4115e4a1e29f2bf5746d74aabd15217ba6daad78e30b94a8c119fe2482bfe` |
+| 6 | `instance` | [coe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ComputationBasic.lean/declarations/coe.md) | 107 | `declaration-track:39c0572ec92e12777406de7d90f000f31a2b40fe50767b188eac32d4e848130e` |
+| 7 | `theorem` | [coe_to_intFractPair](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ComputationBasic.lean/declarations/coe-to-intfractpair.md) | 111 | `result-track:820eb1209d0f288ebff84e38170de1b4265410d0b7ecb1eaf79c7b2d14579617` |
+| 8 | `def` | [of](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ComputationBasic.lean/declarations/of-source-edition-2.md) | 121 | `declaration-track:36a126c030bc8a61d79ed5090b68b6a020996329bd9375831b80adb600541c80` |
+| 9 | `def` | [stream](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ComputationBasic.lean/declarations/stream.md) | 138 | `declaration-track:7efe99be6f6b8b7f8a7fed4b373a779ecaee6b405ccaeb63d90d7d3751f19b8c` |
+| 10 | `theorem` | [stream_isSeq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ComputationBasic.lean/declarations/stream-isseq.md) | 147 | `result-track:727ccfd11b66ce8f8d71faf129b6c6f5c8d0102202d8b2467840586af62f303d` |
+| 11 | `def` | [seq1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ComputationBasic.lean/declarations/seq1.md) | 160 | `declaration-track:8129da10f4dc75105dd4797edcd1b989fba7d5fb473ac91e7732192565e8b064` |
+| 12 | `def` | [of](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ComputationBasic.lean/declarations/of.md) | 181 | `declaration-track:2a4a6cd225d7b5eecc1176ec736ce99beaa758378358c06ee643c53c5705c5e7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

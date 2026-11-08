@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectQuarterClosure.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectQuarterClosure.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectQuarterClosure.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectQuarterClosure.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,10 +46,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenDirectQuarterClaimsA`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectQuarterClaimsA.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenDirectQuarterClaimsB`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectQuarterClaimsB.lean/index.md) — import line 6; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenDirectQuarterClaimsC`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectQuarterClaimsC.lean/index.md) — import line 7; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenCanonicalJets`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenCanonicalJets.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenDirectQuarterClaimsA`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectQuarterClaimsA.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenDirectQuarterClaimsB`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectQuarterClaimsB.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenDirectQuarterClaimsC`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectQuarterClaimsC.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenCanonicalJets`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenCanonicalJets.lean/index.md) — import line 8; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -60,14 +60,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [quarter_obligations](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectQuarterClosure.lean/declarations/quarter-obligations.md) | 29 | `result-track:bc4c79e00fc518364fe43e1ef7853018e242fc9b8a476d897bbf1d5f46e0457e` |
-| 2 | `theorem` | [quarter_ranges](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectQuarterClosure.lean/declarations/quarter-ranges.md) | 34 | `result-track:ead734f7e963284de0b916436982e6a960b9c2859903d6fc488508eb2976850a` |
-| 3 | `theorem` | [positive_half](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectQuarterClosure.lean/declarations/positive-half.md) | 42 | `result-track:f8545b1905b8eb18a35626b57feb425abf49b435f22e9cb92e32488ac0a4303a` |
-| 4 | `theorem` | [positive_block](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectQuarterClosure.lean/declarations/positive-block.md) | 47 | `result-track:07cd08f2e33f3c38e2b0d3362c7a8975035e1c52d68775cdf9a9ea835962d48c` |
-| 5 | `theorem` | [original_success](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectQuarterClosure.lean/declarations/original-success.md) | 54 | `result-track:0f58d757f34777af21dba1cfc5463631ed3aafebc28b697d4718403a331b3e03` |
-| 6 | `theorem` | [canonical_result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectQuarterClosure.lean/declarations/canonical-result.md) | 57 | `result-track:ea23a33a3b1b8e31c3753244a6a902999ee09d84d02395c5737916241ecde144` |
-| 7 | `theorem` | [regional_count_one](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectQuarterClosure.lean/declarations/regional-count-one.md) | 61 | `result-track:04f98f5260580c9340492babd03a0ba2ec6c51d4cd6cb577868fd5f79d97a562` |
-| 8 | `theorem` | [complete_pair](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectQuarterClosure.lean/declarations/complete-pair.md) | 65 | `result-track:13dafe3474f6f05952edb7c51ad787b4dfe901a5d540a412fdeabd5601cf4f76` |
+| 1 | `theorem` | [quarter_obligations](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectQuarterClosure.lean/declarations/quarter-obligations.md) | 29 | `result-track:bc4c79e00fc518364fe43e1ef7853018e242fc9b8a476d897bbf1d5f46e0457e` |
+| 2 | `theorem` | [quarter_ranges](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectQuarterClosure.lean/declarations/quarter-ranges.md) | 34 | `result-track:ead734f7e963284de0b916436982e6a960b9c2859903d6fc488508eb2976850a` |
+| 3 | `theorem` | [positive_half](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectQuarterClosure.lean/declarations/positive-half.md) | 42 | `result-track:f8545b1905b8eb18a35626b57feb425abf49b435f22e9cb92e32488ac0a4303a` |
+| 4 | `theorem` | [positive_block](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectQuarterClosure.lean/declarations/positive-block.md) | 47 | `result-track:07cd08f2e33f3c38e2b0d3362c7a8975035e1c52d68775cdf9a9ea835962d48c` |
+| 5 | `theorem` | [original_success](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectQuarterClosure.lean/declarations/original-success.md) | 54 | `result-track:0f58d757f34777af21dba1cfc5463631ed3aafebc28b697d4718403a331b3e03` |
+| 6 | `theorem` | [canonical_result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectQuarterClosure.lean/declarations/canonical-result.md) | 57 | `result-track:ea23a33a3b1b8e31c3753244a6a902999ee09d84d02395c5737916241ecde144` |
+| 7 | `theorem` | [regional_count_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectQuarterClosure.lean/declarations/regional-count-one.md) | 61 | `result-track:04f98f5260580c9340492babd03a0ba2ec6c51d4cd6cb577868fd5f79d97a562` |
+| 8 | `theorem` | [complete_pair](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectQuarterClosure.lean/declarations/complete-pair.md) | 65 | `result-track:13dafe3474f6f05952edb7c51ad787b4dfe901a5d540a412fdeabd5601cf4f76` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

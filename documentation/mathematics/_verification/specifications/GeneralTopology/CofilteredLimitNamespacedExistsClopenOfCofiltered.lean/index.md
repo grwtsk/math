@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/CofilteredLimitNamespacedExistsClopenOfCofiltered.lean/index.md) · [Full source](../../../../GeneralTopology/CofilteredLimitNamespacedExistsClopenOfCofiltered.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CofilteredLimitNamespacedExistsClopenOfCofiltered.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CofilteredLimitNamespacedExistsClopenOfCofiltered.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,11 +61,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_clopen_of_cofiltered](../../../../GeneralTopology/CofilteredLimitNamespacedExistsClopenOfCofiltered.lean/declarations/exists-clopen-of-cofiltered.md) | 54 | `result-track:02ad1ca131a1c966e24f4838c0806f1d9311d34f60482c09f630fb2d461e57fc` |
-| 2 | `theorem` | [exists_locallyConstant_fin_two](../../../../GeneralTopology/CofilteredLimitNamespacedExistsClopenOfCofiltered.lean/declarations/exists-locallyconstant-fin-two.md) | 126 | `result-track:3bc1709923f5c2accd8dbf99ff8725cca2fd671a32934f91accf9023bd1de7bc` |
-| 3 | `theorem` | [exists_locallyConstant_finite_aux](../../../../GeneralTopology/CofilteredLimitNamespacedExistsClopenOfCofiltered.lean/declarations/exists-locallyconstant-finite-aux.md) | 139 | `result-track:1171c9910db08e1865a9ae0e2e3bbe97a057705b1e6aa3085b07ce3060f6ba0e` |
-| 4 | `theorem` | [exists_locallyConstant_finite_nonempty](../../../../GeneralTopology/CofilteredLimitNamespacedExistsClopenOfCofiltered.lean/declarations/exists-locallyconstant-finite-nonempty.md) | 184 | `result-track:87b2a902cba629b8165fe7568d5729bb41092622d85dcf8f737d118c45211f95` |
-| 5 | `theorem` | [exists_locallyConstant](../../../../GeneralTopology/CofilteredLimitNamespacedExistsClopenOfCofiltered.lean/declarations/exists-locallyconstant.md) | 216 | `result-track:0ae2d808b6eb3961b6235ffaccf1f5a081d17cb06156deb3791bf8928c36d2cc` |
+| 1 | `theorem` | [exists_clopen_of_cofiltered](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CofilteredLimitNamespacedExistsClopenOfCofiltered.lean/declarations/exists-clopen-of-cofiltered.md) | 54 | `result-track:02ad1ca131a1c966e24f4838c0806f1d9311d34f60482c09f630fb2d461e57fc` |
+| 2 | `theorem` | [exists_locallyConstant_fin_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CofilteredLimitNamespacedExistsClopenOfCofiltered.lean/declarations/exists-locallyconstant-fin-two.md) | 126 | `result-track:3bc1709923f5c2accd8dbf99ff8725cca2fd671a32934f91accf9023bd1de7bc` |
+| 3 | `theorem` | [exists_locallyConstant_finite_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CofilteredLimitNamespacedExistsClopenOfCofiltered.lean/declarations/exists-locallyconstant-finite-aux.md) | 139 | `result-track:1171c9910db08e1865a9ae0e2e3bbe97a057705b1e6aa3085b07ce3060f6ba0e` |
+| 4 | `theorem` | [exists_locallyConstant_finite_nonempty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CofilteredLimitNamespacedExistsClopenOfCofiltered.lean/declarations/exists-locallyconstant-finite-nonempty.md) | 184 | `result-track:87b2a902cba629b8165fe7568d5729bb41092622d85dcf8f737d118c45211f95` |
+| 5 | `theorem` | [exists_locallyConstant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CofilteredLimitNamespacedExistsClopenOfCofiltered.lean/declarations/exists-locallyconstant.md) | 216 | `result-track:0ae2d808b6eb3961b6235ffaccf1f5a081d17cb06156deb3791bf8928c36d2cc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/HomEndNamespaced.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/HomEndNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/HomEndNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/HomEndNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [instAddMonoidWithOne](../../../../GroupTheoryAndGeneralizations/HomEndNamespaced.lean/declarations/instaddmonoidwithone.md) | 35 | `declaration-track:a74858a8f7ecaaf707851d4965a4da39f3d52cef4955cbe48d3798eb9926803a` |
-| 2 | `lemma` | [natCast_apply](../../../../GroupTheoryAndGeneralizations/HomEndNamespaced.lean/declarations/natcast-apply.md) | 42 | `result-track:497ddf03b019863a9969bb58a879f06f1c3bf0e90f64df0aaf9ed0cff46b0d39` |
-| 3 | `lemma` | [ofNat_apply](../../../../GroupTheoryAndGeneralizations/HomEndNamespaced.lean/declarations/ofnat-apply.md) | 44 | `result-track:28b729f6a248b005d3682063a388652f33b00f8655f4679595d829befb13abec` |
-| 4 | `instance` | [instSemiring](../../../../GroupTheoryAndGeneralizations/HomEndNamespaced.lean/declarations/instsemiring.md) | 47 | `declaration-track:597a6e73679e1dc656dac7f7b41792c5308f490b42959177221239dd7cdb1c1c` |
-| 5 | `instance` | [instRing](../../../../GroupTheoryAndGeneralizations/HomEndNamespaced.lean/declarations/instring.md) | 56 | `declaration-track:ffae0a8c28f6f22890cf4195a3c104e46d12ea81e809bc763c49f48413536086` |
+| 1 | `instance` | [instAddMonoidWithOne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/HomEndNamespaced.lean/declarations/instaddmonoidwithone.md) | 35 | `declaration-track:a74858a8f7ecaaf707851d4965a4da39f3d52cef4955cbe48d3798eb9926803a` |
+| 2 | `lemma` | [natCast_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/HomEndNamespaced.lean/declarations/natcast-apply.md) | 42 | `result-track:497ddf03b019863a9969bb58a879f06f1c3bf0e90f64df0aaf9ed0cff46b0d39` |
+| 3 | `lemma` | [ofNat_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/HomEndNamespaced.lean/declarations/ofnat-apply.md) | 44 | `result-track:28b729f6a248b005d3682063a388652f33b00f8655f4679595d829befb13abec` |
+| 4 | `instance` | [instSemiring](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/HomEndNamespaced.lean/declarations/instsemiring.md) | 47 | `declaration-track:597a6e73679e1dc656dac7f7b41792c5308f490b42959177221239dd7cdb1c1c` |
+| 5 | `instance` | [instRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/HomEndNamespaced.lean/declarations/instring.md) | 56 | `declaration-track:ffae0a8c28f6f22890cf4195a3c104e46d12ea81e809bc763c49f48413536086` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

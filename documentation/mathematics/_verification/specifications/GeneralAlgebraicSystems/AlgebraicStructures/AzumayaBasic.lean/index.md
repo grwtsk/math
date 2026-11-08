@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AzumayaBasic.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AzumayaBasic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AzumayaBasic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AzumayaBasic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,12 +60,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [AlgHom.mulLeftRight_bij](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AzumayaBasic.lean/declarations/alghom-mulleftright-bij.md) | 37 | `result-track:ce5d6d38ee12a238dadeaae626ad684be446c684c74969212fc346078a40836b` |
-| 2 | `abbrev` | [tensorEquivEnd](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AzumayaBasic.lean/declarations/tensorequivend.md) | 42 | `declaration-track:948362435af181a66cb682b337e647cb0a19e5a1914cd3d4797069e298150c97` |
-| 3 | `lemma` | [coe_tensorEquivEnd](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AzumayaBasic.lean/declarations/coe-tensorequivend.md) | 45 | `result-track:3964c046a83588c6debe2f9cb2c0a7607219eeb248ac2386422f305ec8e4775c` |
-| 4 | `instance` | [id](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AzumayaBasic.lean/declarations/id.md) | 48 | `declaration-track:f4f67b413c4aeae3ed9309f794b3ef57e5931d223bfc90076dfcc5278e752308` |
-| 5 | `lemma` | [mulLeftRight_comp_congr](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AzumayaBasic.lean/declarations/mulleftright-comp-congr.md) | 65 | `result-track:9c650a1793f0f8cb09687986d3242b9880ef46ba5f00984364220b85f45e079a` |
-| 6 | `theorem` | [of_AlgEquiv](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/AzumayaBasic.lean/declarations/of-algequiv.md) | 76 | `result-track:3a4679926502c7b87d240236853baf8e823aeb5b8faafb937d2a57fd05cf7dff` |
+| 1 | `lemma` | [AlgHom.mulLeftRight_bij](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AzumayaBasic.lean/declarations/alghom-mulleftright-bij.md) | 37 | `result-track:ce5d6d38ee12a238dadeaae626ad684be446c684c74969212fc346078a40836b` |
+| 2 | `abbrev` | [tensorEquivEnd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AzumayaBasic.lean/declarations/tensorequivend.md) | 42 | `declaration-track:948362435af181a66cb682b337e647cb0a19e5a1914cd3d4797069e298150c97` |
+| 3 | `lemma` | [coe_tensorEquivEnd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AzumayaBasic.lean/declarations/coe-tensorequivend.md) | 45 | `result-track:3964c046a83588c6debe2f9cb2c0a7607219eeb248ac2386422f305ec8e4775c` |
+| 4 | `instance` | [id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AzumayaBasic.lean/declarations/id.md) | 48 | `declaration-track:f4f67b413c4aeae3ed9309f794b3ef57e5931d223bfc90076dfcc5278e752308` |
+| 5 | `lemma` | [mulLeftRight_comp_congr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AzumayaBasic.lean/declarations/mulleftright-comp-congr.md) | 65 | `result-track:9c650a1793f0f8cb09687986d3242b9880ef46ba5f00984364220b85f45e079a` |
+| 6 | `theorem` | [of_AlgEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/AzumayaBasic.lean/declarations/of-algequiv.md) | 76 | `result-track:3a4679926502c7b87d240236853baf8e823aeb5b8faafb937d2a57fd05cf7dff` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CrystallineDiracCrystallineDiracOperator.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CrystallineDiracCrystallineDiracOperator.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CrystallineDiracCrystallineDiracOperator.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CrystallineDiracCrystallineDiracOperator.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CrystallineDiracOperator](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CrystallineDiracCrystallineDiracOperator.lean/declarations/crystallinediracoperator.md) | 25 | `declaration-track:18ec503486c2c153ed2a1fe7827e70c30d1b7c0ac9acc5963f6201e104866afb` |
-| 2 | `theorem` | [crystalline_dirac_uses_connection](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CrystallineDiracCrystallineDiracOperator.lean/declarations/crystalline-dirac-uses-connection.md) | 40 | `result-track:36d17ceb0d6ad5c414ddd4fc81f5688705aed078b10c91984f0283168f00303d` |
-| 3 | `theorem` | [crystalline_dirac_fredholm_analogue](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CrystallineDiracCrystallineDiracOperator.lean/declarations/crystalline-dirac-fredholm-analogue.md) | 48 | `result-track:284b88ade09300133713c8423fedc53f850eadf43f1b90e574c70577ae21d17f` |
+| 1 | `structure` | [CrystallineDiracOperator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CrystallineDiracCrystallineDiracOperator.lean/declarations/crystallinediracoperator.md) | 25 | `declaration-track:18ec503486c2c153ed2a1fe7827e70c30d1b7c0ac9acc5963f6201e104866afb` |
+| 2 | `theorem` | [crystalline_dirac_uses_connection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CrystallineDiracCrystallineDiracOperator.lean/declarations/crystalline-dirac-uses-connection.md) | 40 | `result-track:36d17ceb0d6ad5c414ddd4fc81f5688705aed078b10c91984f0283168f00303d` |
+| 3 | `theorem` | [crystalline_dirac_fredholm_analogue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CrystallineDiracCrystallineDiracOperator.lean/declarations/crystalline-dirac-fredholm-analogue.md) | 48 | `result-track:284b88ade09300133713c8423fedc53f850eadf43f1b90e574c70577ae21d17f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

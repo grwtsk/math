@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripZeroPermittingExtension.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripZeroPermittingExtension.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripZeroPermittingExtension.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripZeroPermittingExtension.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripMirrorIsolation`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripMirrorIsolation.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripMirrorIsolation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripMirrorIsolation.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [noTargetZero_union](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripZeroPermittingExtension.lean/declarations/notargetzero-union.md) | 22 | `result-track:ea551bb735a6ac079d0a94fa89fe27d0554c57301ff421dbfe629e67ae97cb61` |
-| 2 | `def` | [extendZeroFree](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripZeroPermittingExtension.lean/declarations/extendzerofree.md) | 33 | `declaration-track:c748a0ad906efe0a405892e557b3c57b4cd30cfbfbe8e47ada5647885593c7ca` |
-| 3 | `theorem` | [extendZeroFree_count](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripZeroPermittingExtension.lean/declarations/extendzerofree-count.md) | 49 | `result-track:4807973baa2616167c581fb93c6caebfdc664052305ed48a98f1652671568136` |
-| 4 | `theorem` | [extendZeroFree_regions](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripZeroPermittingExtension.lean/declarations/extendzerofree-regions.md) | 52 | `result-track:8262c18848a4c6c95dd45c237d792ccadc267c3f92aeb3719fac2ccd7184c7ee` |
-| 5 | `theorem` | [extendZeroFree_carrier](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripZeroPermittingExtension.lean/declarations/extendzerofree-carrier.md) | 56 | `result-track:4e430f6406a347117754543cc89e8be2efa55a2ea67a5b9950ed9b1f2c6295ee` |
-| 6 | `theorem` | [extension_order_carrier](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripZeroPermittingExtension.lean/declarations/extension-order-carrier.md) | 61 | `result-track:38e09543aa45319d66fb6dba365434480cd4db0b9fec78734692cfc43360b93a` |
-| 7 | `theorem` | [extension_assoc_carrier](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripZeroPermittingExtension.lean/declarations/extension-assoc-carrier.md) | 70 | `result-track:0f87bdf0010717f83e3adaf10f4eaf70abb162fea07f1b420621c9c6a1a3334f` |
-| 8 | `theorem` | [atMostOneTarget_of_count_one](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripZeroPermittingExtension.lean/declarations/atmostonetarget-of-count-one.md) | 81 | `result-track:f5febbe5d659ed3516f325ffd8921bcade758a939f6331a7e50ce0940bc9ab4d` |
+| 1 | `lemma` | [noTargetZero_union](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripZeroPermittingExtension.lean/declarations/notargetzero-union.md) | 22 | `result-track:ea551bb735a6ac079d0a94fa89fe27d0554c57301ff421dbfe629e67ae97cb61` |
+| 2 | `def` | [extendZeroFree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripZeroPermittingExtension.lean/declarations/extendzerofree.md) | 33 | `declaration-track:c748a0ad906efe0a405892e557b3c57b4cd30cfbfbe8e47ada5647885593c7ca` |
+| 3 | `theorem` | [extendZeroFree_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripZeroPermittingExtension.lean/declarations/extendzerofree-count.md) | 49 | `result-track:4807973baa2616167c581fb93c6caebfdc664052305ed48a98f1652671568136` |
+| 4 | `theorem` | [extendZeroFree_regions](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripZeroPermittingExtension.lean/declarations/extendzerofree-regions.md) | 52 | `result-track:8262c18848a4c6c95dd45c237d792ccadc267c3f92aeb3719fac2ccd7184c7ee` |
+| 5 | `theorem` | [extendZeroFree_carrier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripZeroPermittingExtension.lean/declarations/extendzerofree-carrier.md) | 56 | `result-track:4e430f6406a347117754543cc89e8be2efa55a2ea67a5b9950ed9b1f2c6295ee` |
+| 6 | `theorem` | [extension_order_carrier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripZeroPermittingExtension.lean/declarations/extension-order-carrier.md) | 61 | `result-track:38e09543aa45319d66fb6dba365434480cd4db0b9fec78734692cfc43360b93a` |
+| 7 | `theorem` | [extension_assoc_carrier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripZeroPermittingExtension.lean/declarations/extension-assoc-carrier.md) | 70 | `result-track:0f87bdf0010717f83e3adaf10f4eaf70abb162fea07f1b420621c9c6a1a3334f` |
+| 8 | `theorem` | [atMostOneTarget_of_count_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripZeroPermittingExtension.lean/declarations/atmostonetarget-of-count-one.md) | 81 | `result-track:f5febbe5d659ed3516f325ffd8921bcade758a939f6331a7e50ce0940bc9ab4d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

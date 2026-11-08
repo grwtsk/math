@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../HarmonicAnalysisOnEuclideanSpaces/ZModLargerSliceParameters.lean/index.md) · [Full source](../../../../HarmonicAnalysisOnEuclideanSpaces/ZModLargerSliceParameters.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/ZModLargerSliceParameters.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/ZModLargerSliceParameters.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Fourier.ZModPartitionEnergy`](../../../../HarmonicAnalysisOnEuclideanSpaces/ZModPartitionEnergy.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Fourier.ZModPartitionEnergy`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/ZModPartitionEnergy.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Algebra.Order.Floor.Ring` — import line 5; external provider; requires a separately pinned dependency.
 - `Mathlib.Analysis.SpecialFunctions.Log.Basic` — import line 6; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic` — import line 7; external provider; requires a separately pinned dependency.
@@ -60,20 +60,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [sourceConstant](../../../../HarmonicAnalysisOnEuclideanSpaces/ZModLargerSliceParameters.lean/declarations/sourceconstant.md) | 18 | `declaration-track:bcc1c2494eafeba51f2ef6655b2e6ad14a97566f8e5aa3144db6d9baf04174dd` |
-| 2 | `def` | [sliceThreshold](../../../../HarmonicAnalysisOnEuclideanSpaces/ZModLargerSliceParameters.lean/declarations/slicethreshold.md) | 20 | `declaration-track:86970c0e52f7879af2d4bff4ef4377314229665b2b9736890fdd822330589ec0` |
-| 3 | `def` | [largerSliceConstant](../../../../HarmonicAnalysisOnEuclideanSpaces/ZModLargerSliceParameters.lean/declarations/largersliceconstant.md) | 23 | `declaration-track:da651a76a1bba5ff2b0e9281672f4038121b0389cf8059ad4f68092c587776fa` |
-| 4 | `def` | [auxiliarySliceSize](../../../../HarmonicAnalysisOnEuclideanSpaces/ZModLargerSliceParameters.lean/declarations/auxiliaryslicesize.md) | 26 | `declaration-track:2fedc1327d970b02d93ae11a49ddc82d90843bc724963ab194ffeec3c1b44f0f` |
-| 5 | `def` | [retainedSliceSize](../../../../HarmonicAnalysisOnEuclideanSpaces/ZModLargerSliceParameters.lean/declarations/retainedslicesize.md) | 29 | `declaration-track:c90c9cb60dbbbf02bed6f0588016bf51c84619a07b579616288e3ea877adfd92` |
-| 6 | `theorem` | [sourceConstant_pos](../../../../HarmonicAnalysisOnEuclideanSpaces/ZModLargerSliceParameters.lean/declarations/sourceconstant-pos.md) | 32 | `result-track:c6578842d4cae771e987a32019f65a251bbb9220cc99c34f765e2db7338b9249` |
-| 7 | `theorem` | [sourceConstant_ge_one](../../../../HarmonicAnalysisOnEuclideanSpaces/ZModLargerSliceParameters.lean/declarations/sourceconstant-ge-one.md) | 35 | `result-track:6ef67756c2af9f660c28f8b33b4c1c72156d22557adbffde1b3a3ff96f739a14` |
-| 8 | `theorem` | [log_sq_le_sixteen_sqrt](../../../../HarmonicAnalysisOnEuclideanSpaces/ZModLargerSliceParameters.lean/declarations/log-sq-le-sixteen-sqrt.md) | 38 | `result-track:9793fab0597c096b18a021c6c123b801c62625bf4c43b239643b9dbb4d2a2213` |
-| 9 | `theorem` | [sourceConstant_mul_log_ge_two](../../../../HarmonicAnalysisOnEuclideanSpaces/ZModLargerSliceParameters.lean/declarations/sourceconstant-mul-log-ge-two.md) | 51 | `result-track:02905045863c6f811858b311c5010008a35a13165372af4c12db760db7e81c31` |
-| 10 | `theorem` | [sample_le_card_of_density](../../../../HarmonicAnalysisOnEuclideanSpaces/ZModLargerSliceParameters.lean/declarations/sample-le-card-of-density.md) | 59 | `result-track:660497e9c441c8dbef7c413fb661b8030942ae3dd2c06049bc6494c233297372` |
-| 11 | `theorem` | [large_card_log_square](../../../../HarmonicAnalysisOnEuclideanSpaces/ZModLargerSliceParameters.lean/declarations/large-card-log-square.md) | 68 | `result-track:ac84ce6842cc727abbad3d4a91d0d6c405a3635ed5b7206a67e13ec0f6d889d3` |
-| 12 | `theorem` | [auxiliarySliceSize_bounds](../../../../HarmonicAnalysisOnEuclideanSpaces/ZModLargerSliceParameters.lean/declarations/auxiliaryslicesize-bounds.md) | 93 | `result-track:3ec23a67a52c4fb4620db0464e6cb31e275c7b89e380260af8f82bdda26deedc` |
-| 13 | `theorem` | [retainedSliceSize_bounds](../../../../HarmonicAnalysisOnEuclideanSpaces/ZModLargerSliceParameters.lean/declarations/retainedslicesize-bounds.md) | 154 | `result-track:5a2a1e5b32e921cf36c971d624ab8dc71d19aa5f15b6905f87ca2e6392ef0ac7` |
-| 14 | `theorem` | [residualSliceSize_source_range](../../../../HarmonicAnalysisOnEuclideanSpaces/ZModLargerSliceParameters.lean/declarations/residualslicesize-source-range.md) | 231 | `result-track:c67982a1c3927cf7ea4d39f06b66d81b50479bb357f7ba01227e7d67ca575a09` |
+| 1 | `def` | [sourceConstant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/ZModLargerSliceParameters.lean/declarations/sourceconstant.md) | 18 | `declaration-track:bcc1c2494eafeba51f2ef6655b2e6ad14a97566f8e5aa3144db6d9baf04174dd` |
+| 2 | `def` | [sliceThreshold](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/ZModLargerSliceParameters.lean/declarations/slicethreshold.md) | 20 | `declaration-track:86970c0e52f7879af2d4bff4ef4377314229665b2b9736890fdd822330589ec0` |
+| 3 | `def` | [largerSliceConstant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/ZModLargerSliceParameters.lean/declarations/largersliceconstant.md) | 23 | `declaration-track:da651a76a1bba5ff2b0e9281672f4038121b0389cf8059ad4f68092c587776fa` |
+| 4 | `def` | [auxiliarySliceSize](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/ZModLargerSliceParameters.lean/declarations/auxiliaryslicesize.md) | 26 | `declaration-track:2fedc1327d970b02d93ae11a49ddc82d90843bc724963ab194ffeec3c1b44f0f` |
+| 5 | `def` | [retainedSliceSize](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/ZModLargerSliceParameters.lean/declarations/retainedslicesize.md) | 29 | `declaration-track:c90c9cb60dbbbf02bed6f0588016bf51c84619a07b579616288e3ea877adfd92` |
+| 6 | `theorem` | [sourceConstant_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/ZModLargerSliceParameters.lean/declarations/sourceconstant-pos.md) | 32 | `result-track:c6578842d4cae771e987a32019f65a251bbb9220cc99c34f765e2db7338b9249` |
+| 7 | `theorem` | [sourceConstant_ge_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/ZModLargerSliceParameters.lean/declarations/sourceconstant-ge-one.md) | 35 | `result-track:6ef67756c2af9f660c28f8b33b4c1c72156d22557adbffde1b3a3ff96f739a14` |
+| 8 | `theorem` | [log_sq_le_sixteen_sqrt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/ZModLargerSliceParameters.lean/declarations/log-sq-le-sixteen-sqrt.md) | 38 | `result-track:9793fab0597c096b18a021c6c123b801c62625bf4c43b239643b9dbb4d2a2213` |
+| 9 | `theorem` | [sourceConstant_mul_log_ge_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/ZModLargerSliceParameters.lean/declarations/sourceconstant-mul-log-ge-two.md) | 51 | `result-track:02905045863c6f811858b311c5010008a35a13165372af4c12db760db7e81c31` |
+| 10 | `theorem` | [sample_le_card_of_density](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/ZModLargerSliceParameters.lean/declarations/sample-le-card-of-density.md) | 59 | `result-track:660497e9c441c8dbef7c413fb661b8030942ae3dd2c06049bc6494c233297372` |
+| 11 | `theorem` | [large_card_log_square](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/ZModLargerSliceParameters.lean/declarations/large-card-log-square.md) | 68 | `result-track:ac84ce6842cc727abbad3d4a91d0d6c405a3635ed5b7206a67e13ec0f6d889d3` |
+| 12 | `theorem` | [auxiliarySliceSize_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/ZModLargerSliceParameters.lean/declarations/auxiliaryslicesize-bounds.md) | 93 | `result-track:3ec23a67a52c4fb4620db0464e6cb31e275c7b89e380260af8f82bdda26deedc` |
+| 13 | `theorem` | [retainedSliceSize_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/ZModLargerSliceParameters.lean/declarations/retainedslicesize-bounds.md) | 154 | `result-track:5a2a1e5b32e921cf36c971d624ab8dc71d19aa5f15b6905f87ca2e6392ef0ac7` |
+| 14 | `theorem` | [residualSliceSize_source_range](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/HarmonicAnalysisOnEuclideanSpaces/ZModLargerSliceParameters.lean/declarations/residualslicesize-source-range.md) | 231 | `result-track:c67982a1c3927cf7ea4d39f06b66d81b50479bb357f7ba01227e7d67ca575a09` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

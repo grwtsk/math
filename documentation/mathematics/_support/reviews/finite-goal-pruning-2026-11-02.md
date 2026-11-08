@@ -4,7 +4,7 @@ Local attribution: grwtsk contributors. Date: 2026-11-02.
 
 ## Mathematical question and consumer
 
-The maintained [joint-premise inference](../../Combinatorics/joint-premise-inference.md)
+The maintained [joint-premise inference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/joint-premise-inference.md)
 model distinguishes AND-premises from alternative rule applications. The later
 [finite closure source](../../../../GRWTSK/MathematicalLogicAndFoundations/ProofTheoryAndConstructiveMathematics/FiniteJointPremiseClosure.lean)
 computes those derivable atoms for a finite list of instantiated rules and facts.

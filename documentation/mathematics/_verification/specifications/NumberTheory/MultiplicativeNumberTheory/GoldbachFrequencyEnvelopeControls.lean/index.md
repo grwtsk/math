@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachFrequencyEnvelopeControls.lean/index.md) · [Full source](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachFrequencyEnvelopeControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachFrequencyEnvelopeControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachFrequencyEnvelopeControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Primes.GoldbachFrequencyArcBudget`](../../../../../MeasureAndIntegration/GoldbachFrequencyArcBudget.lean/index.md) — import line 3; pinned internal source present.
-- [`GRWTSK.NumberTheory.Primes.Checks.GoldbachPrefixControls`](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachPrefixControls.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Primes.GoldbachFrequencyArcBudget`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GoldbachFrequencyArcBudget.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Primes.Checks.GoldbachPrefixControls`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachPrefixControls.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Tactic` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -59,13 +59,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [chord_loss_at_zero](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachFrequencyEnvelopeControls.lean/declarations/chord-loss-at-zero.md) | 21 | `result-track:312c28d0cfc24ec0dc8f0b1bd132a3e24d280dc36794b4189040a5a536d4ef57` |
-| 2 | `theorem` | [zero_model_requires_quadratic_error](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachFrequencyEnvelopeControls.lean/declarations/zero-model-requires-quadratic-error.md) | 26 | `result-track:1db1486ba2d578e30d136de4edbee47f637e4682dc814a31e1b224702210bec6` |
-| 3 | `theorem` | [zero_model_quadratic_budget](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachFrequencyEnvelopeControls.lean/declarations/zero-model-quadratic-budget.md) | 32 | `result-track:5db2ca0958c215f68e5c8c3d3b78589149b015553e54db3c2f308ace15ba706d` |
-| 4 | `theorem` | [envelope_cap_control](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachFrequencyEnvelopeControls.lean/declarations/envelope-cap-control.md) | 38 | `result-track:c27d5bc33340004257faedbbb0f7d4ae273fc9a9d174a0ef4b4533f49476a68f` |
-| 5 | `theorem` | [wrapped_envelope_control](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachFrequencyEnvelopeControls.lean/declarations/wrapped-envelope-control.md) | 41 | `result-track:caaf0fe37dfc21a4c6c444eba88cee69cb08a253a8d5935ffc2da2dcdb98a03d` |
-| 6 | `theorem` | [nonreduced_frequency_budget_at_two](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachFrequencyEnvelopeControls.lean/declarations/nonreduced-frequency-budget-at-two.md) | 48 | `result-track:f1280b59129a6106d479fffdae514060abda822daa5f3ab9cc153f95afa9cc93` |
-| 7 | `theorem` | [major_only_margin_does_not_pay_minor](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachFrequencyEnvelopeControls.lean/declarations/major-only-margin-does-not-pay-minor.md) | 56 | `result-track:fd9f05e0a5ce94a66fd2d6ff341442dc2bc5e7cced16b2486910eb70eca3215e` |
+| 1 | `theorem` | [chord_loss_at_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachFrequencyEnvelopeControls.lean/declarations/chord-loss-at-zero.md) | 21 | `result-track:312c28d0cfc24ec0dc8f0b1bd132a3e24d280dc36794b4189040a5a536d4ef57` |
+| 2 | `theorem` | [zero_model_requires_quadratic_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachFrequencyEnvelopeControls.lean/declarations/zero-model-requires-quadratic-error.md) | 26 | `result-track:1db1486ba2d578e30d136de4edbee47f637e4682dc814a31e1b224702210bec6` |
+| 3 | `theorem` | [zero_model_quadratic_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachFrequencyEnvelopeControls.lean/declarations/zero-model-quadratic-budget.md) | 32 | `result-track:5db2ca0958c215f68e5c8c3d3b78589149b015553e54db3c2f308ace15ba706d` |
+| 4 | `theorem` | [envelope_cap_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachFrequencyEnvelopeControls.lean/declarations/envelope-cap-control.md) | 38 | `result-track:c27d5bc33340004257faedbbb0f7d4ae273fc9a9d174a0ef4b4533f49476a68f` |
+| 5 | `theorem` | [wrapped_envelope_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachFrequencyEnvelopeControls.lean/declarations/wrapped-envelope-control.md) | 41 | `result-track:caaf0fe37dfc21a4c6c444eba88cee69cb08a253a8d5935ffc2da2dcdb98a03d` |
+| 6 | `theorem` | [nonreduced_frequency_budget_at_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachFrequencyEnvelopeControls.lean/declarations/nonreduced-frequency-budget-at-two.md) | 48 | `result-track:f1280b59129a6106d479fffdae514060abda822daa5f3ab9cc153f95afa9cc93` |
+| 7 | `theorem` | [major_only_margin_does_not_pay_minor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachFrequencyEnvelopeControls.lean/declarations/major-only-margin-does-not-pay-minor.md) | 56 | `result-track:fd9f05e0a5ce94a66fd2d6ff341442dc2bc5e7cced16b2486910eb70eca3215e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

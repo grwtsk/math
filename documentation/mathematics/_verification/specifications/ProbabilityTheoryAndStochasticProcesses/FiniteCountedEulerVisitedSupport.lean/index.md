@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerVisitedSupport.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerVisitedSupport.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerVisitedSupport.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerVisitedSupport.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteCountedEulerWalkConcat`](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerWalkConcat.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteCountedEulerWalkConcat`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerWalkConcat.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [CountedWalk.vertexSupport](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerVisitedSupport.lean/declarations/countedwalk-vertexsupport.md) | 23 | `declaration-track:0b0e036c28a787ed5dce2950842bc116a1dbd1c816ac606852a3213a259151b7` |
-| 2 | `theorem` | [CountedWalk.finish_mem_vertexSupport](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerVisitedSupport.lean/declarations/countedwalk-finish-mem-vertexsupport.md) | 32 | `result-track:2e5519855e250acd51e9f2256f8710c9b9f1013185c47b3d859100d92551349e` |
-| 3 | `theorem` | [CountedWalk.start_mem_vertexSupport](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerVisitedSupport.lean/declarations/countedwalk-start-mem-vertexsupport.md) | 43 | `result-track:e1e2178141cbbf3a6118dea8b7069cbe53746ddfcfa1210c71601bc4df8d2e87` |
-| 4 | `theorem` | [CountedWalk.visits_of_mem_vertexSupport](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerVisitedSupport.lean/declarations/countedwalk-visits-of-mem-vertexsupport.md) | 55 | `result-track:492202c14e639fa41a32214a9822df8ba18bfa1a3f48a68894ab60d4fb9e2342` |
-| 5 | `theorem` | [CountedWalk.used_edge_internal](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerVisitedSupport.lean/declarations/countedwalk-used-edge-internal.md) | 76 | `result-track:3a090aa885f95a98cfa8eed1a43b2e7a0e0fac4d74e71d16c8af3d392210937a` |
-| 6 | `theorem` | [FreshCountedTrail.exists_edge_meeting_vertexSupport](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerVisitedSupport.lean/declarations/freshcountedtrail-exists-edge-meeting-vertexsupport.md) | 103 | `result-track:a8b70df50c8128105d300ca8f82db0926a1f19bb145192308690d4c91455caf3` |
-| 7 | `theorem` | [FreshCountedTrail.used_internal_vertexSupport](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerVisitedSupport.lean/declarations/freshcountedtrail-used-internal-vertexsupport.md) | 117 | `result-track:bb0213fac28f4f95b0743270239cab59e19bf19616d33f55935ea6dd464b5b87` |
+| 1 | `def` | [CountedWalk.vertexSupport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerVisitedSupport.lean/declarations/countedwalk-vertexsupport.md) | 23 | `declaration-track:0b0e036c28a787ed5dce2950842bc116a1dbd1c816ac606852a3213a259151b7` |
+| 2 | `theorem` | [CountedWalk.finish_mem_vertexSupport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerVisitedSupport.lean/declarations/countedwalk-finish-mem-vertexsupport.md) | 32 | `result-track:2e5519855e250acd51e9f2256f8710c9b9f1013185c47b3d859100d92551349e` |
+| 3 | `theorem` | [CountedWalk.start_mem_vertexSupport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerVisitedSupport.lean/declarations/countedwalk-start-mem-vertexsupport.md) | 43 | `result-track:e1e2178141cbbf3a6118dea8b7069cbe53746ddfcfa1210c71601bc4df8d2e87` |
+| 4 | `theorem` | [CountedWalk.visits_of_mem_vertexSupport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerVisitedSupport.lean/declarations/countedwalk-visits-of-mem-vertexsupport.md) | 55 | `result-track:492202c14e639fa41a32214a9822df8ba18bfa1a3f48a68894ab60d4fb9e2342` |
+| 5 | `theorem` | [CountedWalk.used_edge_internal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerVisitedSupport.lean/declarations/countedwalk-used-edge-internal.md) | 76 | `result-track:3a090aa885f95a98cfa8eed1a43b2e7a0e0fac4d74e71d16c8af3d392210937a` |
+| 6 | `theorem` | [FreshCountedTrail.exists_edge_meeting_vertexSupport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerVisitedSupport.lean/declarations/freshcountedtrail-exists-edge-meeting-vertexsupport.md) | 103 | `result-track:a8b70df50c8128105d300ca8f82db0926a1f19bb145192308690d4c91455caf3` |
+| 7 | `theorem` | [FreshCountedTrail.used_internal_vertexSupport](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerVisitedSupport.lean/declarations/freshcountedtrail-used-internal-vertexsupport.md) | 117 | `result-track:bb0213fac28f4f95b0743270239cab59e19bf19616d33f55935ea6dd464b5b87` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

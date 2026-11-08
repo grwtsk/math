@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/OrbitSymmetry.lean/index.md) · [Full source](../../../../Combinatorics/OrbitSymmetry.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OrbitSymmetry.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OrbitSymmetry.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,20 +57,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [BitfieldObservable](../../../../Combinatorics/OrbitSymmetry.lean/declarations/bitfieldobservable.md) | 16 | `declaration-track:806bb306c905cf2b7d11efc4a799d5708036ad252e05e683f96f2dec684be6b8` |
-| 2 | `def` | [bitfieldObservableAction](../../../../Combinatorics/OrbitSymmetry.lean/declarations/bitfieldobservableaction.md) | 20 | `declaration-track:c09921012ca3d809faf10bc6b02d0f0f49953705ca8d715e1e60ef467696b693` |
-| 3 | `def` | [AutomorphismInvariantObservable](../../../../Combinatorics/OrbitSymmetry.lean/declarations/automorphisminvariantobservable.md) | 30 | `declaration-track:afd73095d997642f001c2e6915a8de468f3471219ca8264a8030f941ec0150b0` |
-| 4 | `def` | [reynoldsProjection](../../../../Combinatorics/OrbitSymmetry.lean/declarations/reynoldsprojection.md) | 39 | `declaration-track:066ecdb3535f6a7cfb72d662d86410446f5699529a341a6db3d1b14588f617f9` |
-| 5 | `def` | [nontrivialSymmetryComponent](../../../../Combinatorics/OrbitSymmetry.lean/declarations/nontrivialsymmetrycomponent.md) | 51 | `declaration-track:5c0272ad35af852411ff5ebb5125835bd63aaee5f27ae8fe3a78809c05a3269b` |
-| 6 | `def` | [OrbitEquivalent](../../../../Combinatorics/OrbitSymmetry.lean/declarations/orbitequivalent.md) | 60 | `declaration-track:8e080c66c4a01c0a00df0e423fc8a94b71a13be6cb5f9f2f244eedd430387b3d` |
-| 7 | `def` | [bitfieldOrbitSetoid](../../../../Combinatorics/OrbitSymmetry.lean/declarations/bitfieldorbitsetoid.md) | 67 | `declaration-track:2be2529627b05e3999a08e0bc9289bae0ff4023aa243e83b365f14ebcf4ebc80` |
-| 8 | `abbrev` | [BitfieldOrbitQuotient](../../../../Combinatorics/OrbitSymmetry.lean/declarations/bitfieldorbitquotient.md) | 96 | `declaration-track:15875bbe3aba3defacf626902d8d084b060c8260eadb4a7216dc7ebd2fd0d6e2` |
-| 9 | `def` | [automorphismOrbit](../../../../Combinatorics/OrbitSymmetry.lean/declarations/automorphismorbit.md) | 101 | `declaration-track:bea249494dac56b0ec3de1354ec293fae50940a471e75e22fada7dc02b12ade0` |
-| 10 | `def` | [automorphismStabilizer](../../../../Combinatorics/OrbitSymmetry.lean/declarations/automorphismstabilizer.md) | 112 | `declaration-track:2cd79b23a8c43087d14ead55dc07994f12aaaff256000835fe2b514de5d991e8` |
-| 11 | `structure` | [AutomorphismInvariantLabel](../../../../Combinatorics/OrbitSymmetry.lean/declarations/automorphisminvariantlabel.md) | 128 | `declaration-track:274fc0b743b5ec3505d1df17c94e00bc8e69daae9b7f4a43d40f341f4b5c0b91` |
-| 12 | `def` | [descendInvariantObservable](../../../../Combinatorics/OrbitSymmetry.lean/declarations/descendinvariantobservable.md) | 138 | `declaration-track:460a61032ed4e12c966e926f07ce23fb1247fc73b254e22c1f201dbcd14a6104` |
-| 13 | `theorem` | [descendInvariantObservable_mk](../../../../Combinatorics/OrbitSymmetry.lean/declarations/descendinvariantobservable-mk.md) | 153 | `result-track:dc5bbc263726a96621a769d1f43c9c0bfe2c7ac961a1f7348570534549315390` |
-| 14 | `structure` | [OrbitReynoldsCertificate](../../../../Combinatorics/OrbitSymmetry.lean/declarations/orbitreynoldscertificate.md) | 172 | `declaration-track:283784f05afebcc7c8dddce78280a849a3be196749c35f1bb20bf78cd243f364` |
+| 1 | `abbrev` | [BitfieldObservable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OrbitSymmetry.lean/declarations/bitfieldobservable.md) | 16 | `declaration-track:806bb306c905cf2b7d11efc4a799d5708036ad252e05e683f96f2dec684be6b8` |
+| 2 | `def` | [bitfieldObservableAction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OrbitSymmetry.lean/declarations/bitfieldobservableaction.md) | 20 | `declaration-track:c09921012ca3d809faf10bc6b02d0f0f49953705ca8d715e1e60ef467696b693` |
+| 3 | `def` | [AutomorphismInvariantObservable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OrbitSymmetry.lean/declarations/automorphisminvariantobservable.md) | 30 | `declaration-track:afd73095d997642f001c2e6915a8de468f3471219ca8264a8030f941ec0150b0` |
+| 4 | `def` | [reynoldsProjection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OrbitSymmetry.lean/declarations/reynoldsprojection.md) | 39 | `declaration-track:066ecdb3535f6a7cfb72d662d86410446f5699529a341a6db3d1b14588f617f9` |
+| 5 | `def` | [nontrivialSymmetryComponent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OrbitSymmetry.lean/declarations/nontrivialsymmetrycomponent.md) | 51 | `declaration-track:5c0272ad35af852411ff5ebb5125835bd63aaee5f27ae8fe3a78809c05a3269b` |
+| 6 | `def` | [OrbitEquivalent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OrbitSymmetry.lean/declarations/orbitequivalent.md) | 60 | `declaration-track:8e080c66c4a01c0a00df0e423fc8a94b71a13be6cb5f9f2f244eedd430387b3d` |
+| 7 | `def` | [bitfieldOrbitSetoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OrbitSymmetry.lean/declarations/bitfieldorbitsetoid.md) | 67 | `declaration-track:2be2529627b05e3999a08e0bc9289bae0ff4023aa243e83b365f14ebcf4ebc80` |
+| 8 | `abbrev` | [BitfieldOrbitQuotient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OrbitSymmetry.lean/declarations/bitfieldorbitquotient.md) | 96 | `declaration-track:15875bbe3aba3defacf626902d8d084b060c8260eadb4a7216dc7ebd2fd0d6e2` |
+| 9 | `def` | [automorphismOrbit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OrbitSymmetry.lean/declarations/automorphismorbit.md) | 101 | `declaration-track:bea249494dac56b0ec3de1354ec293fae50940a471e75e22fada7dc02b12ade0` |
+| 10 | `def` | [automorphismStabilizer](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OrbitSymmetry.lean/declarations/automorphismstabilizer.md) | 112 | `declaration-track:2cd79b23a8c43087d14ead55dc07994f12aaaff256000835fe2b514de5d991e8` |
+| 11 | `structure` | [AutomorphismInvariantLabel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OrbitSymmetry.lean/declarations/automorphisminvariantlabel.md) | 128 | `declaration-track:274fc0b743b5ec3505d1df17c94e00bc8e69daae9b7f4a43d40f341f4b5c0b91` |
+| 12 | `def` | [descendInvariantObservable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OrbitSymmetry.lean/declarations/descendinvariantobservable.md) | 138 | `declaration-track:460a61032ed4e12c966e926f07ce23fb1247fc73b254e22c1f201dbcd14a6104` |
+| 13 | `theorem` | [descendInvariantObservable_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OrbitSymmetry.lean/declarations/descendinvariantobservable-mk.md) | 153 | `result-track:dc5bbc263726a96621a769d1f43c9c0bfe2c7ac961a1f7348570534549315390` |
+| 14 | `structure` | [OrbitReynoldsCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/OrbitSymmetry.lean/declarations/orbitreynoldscertificate.md) | 172 | `declaration-track:283784f05afebcc7c8dddce78280a849a3be196749c35f1bb20bf78cd243f364` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

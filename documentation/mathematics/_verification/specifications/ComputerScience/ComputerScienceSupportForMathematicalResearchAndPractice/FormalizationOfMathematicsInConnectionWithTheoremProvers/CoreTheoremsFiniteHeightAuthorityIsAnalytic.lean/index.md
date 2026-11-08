@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CoreTheoremsFiniteHeightAuthorityIsAnalytic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CoreTheoremsFiniteHeightAuthorityIsAnalytic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CoreTheoremsFiniteHeightAuthorityIsAnalytic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CoreTheoremsFiniteHeightAuthorityIsAnalytic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [finite_height_authority_is_analytic](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CoreTheoremsFiniteHeightAuthorityIsAnalytic.lean/declarations/finite-height-authority-is-analytic.md) | 12 | `result-track:ceb700ed79569d5d297b19338aec252f8e629ebe0efaf5dd0a9c79714f8d79b0` |
-| 2 | `theorem` | [spectral_proposal_cannot_close_analytic_zero](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CoreTheoremsFiniteHeightAuthorityIsAnalytic.lean/declarations/spectral-proposal-cannot-close-analytic-zero.md) | 26 | `result-track:d8362aee0b0aa3eccb88ae4e5d78c499f640f546674f1e25948efff622f7d444` |
+| 1 | `theorem` | [finite_height_authority_is_analytic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CoreTheoremsFiniteHeightAuthorityIsAnalytic.lean/declarations/finite-height-authority-is-analytic.md) | 12 | `result-track:ceb700ed79569d5d297b19338aec252f8e629ebe0efaf5dd0a9c79714f8d79b0` |
+| 2 | `theorem` | [spectral_proposal_cannot_close_analytic_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CoreTheoremsFiniteHeightAuthorityIsAnalytic.lean/declarations/spectral-proposal-cannot-close-analytic-zero.md) | 26 | `result-track:d8362aee0b0aa3eccb88ae4e5d78c499f640f546674f1e25948efff622f7d444` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/EnumerativeCombinatorics/CastCardNamespaced.lean/index.md) · [Full source](../../../../../Combinatorics/EnumerativeCombinatorics/CastCardNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/CastCardNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/CastCardNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [cast_card_erase_of_mem](../../../../../Combinatorics/EnumerativeCombinatorics/CastCardNamespaced.lean/declarations/cast-card-erase-of-mem.md) | 44 | `result-track:ab84001db6320219dde46f75b1fa73bd2eb76d6e23b605f0c1922d7c156dd469` |
-| 2 | `lemma` | [cast_card_inter](../../../../../Combinatorics/EnumerativeCombinatorics/CastCardNamespaced.lean/declarations/cast-card-inter.md) | 47 | `result-track:733eec75ce354f17ed67225b1ac9cd9f1811cfba44f211eb9acac9de19929e84` |
-| 3 | `lemma` | [cast_card_union](../../../../../Combinatorics/EnumerativeCombinatorics/CastCardNamespaced.lean/declarations/cast-card-union.md) | 50 | `result-track:de58d810967f7fb086a242c07ab30894b78e1b135aea2336f746fd5b62f1b92b` |
-| 4 | `lemma` | [cast_card_sdiff](../../../../../Combinatorics/EnumerativeCombinatorics/CastCardNamespaced.lean/declarations/cast-card-sdiff.md) | 53 | `result-track:46ebda355cef77f8d48ce306dbc1420a6a68a354993d05c305d5b7ecec7d022e` |
+| 1 | `theorem` | [cast_card_erase_of_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/CastCardNamespaced.lean/declarations/cast-card-erase-of-mem.md) | 44 | `result-track:ab84001db6320219dde46f75b1fa73bd2eb76d6e23b605f0c1922d7c156dd469` |
+| 2 | `lemma` | [cast_card_inter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/CastCardNamespaced.lean/declarations/cast-card-inter.md) | 47 | `result-track:733eec75ce354f17ed67225b1ac9cd9f1811cfba44f211eb9acac9de19929e84` |
+| 3 | `lemma` | [cast_card_union](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/CastCardNamespaced.lean/declarations/cast-card-union.md) | 50 | `result-track:de58d810967f7fb086a242c07ab30894b78e1b135aea2336f746fd5b62f1b92b` |
+| 4 | `lemma` | [cast_card_sdiff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/CastCardNamespaced.lean/declarations/cast-card-sdiff.md) | 53 | `result-track:46ebda355cef77f8d48ce306dbc1420a6a68a354993d05c305d5b7ecec7d022e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

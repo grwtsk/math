@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerCoefficientRecoveryControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerCoefficientRecoveryControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerCoefficientRecoveryControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerCoefficientRecoveryControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.PrimePowerCoefficientRecovery`](../../../../../GeneralTopology/PrimePowerCoefficientRecovery.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.PrimePowerCoefficientRecovery`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PrimePowerCoefficientRecovery.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [primeThree](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerCoefficientRecoveryControls.lean/declarations/primethree.md) | 14 | `declaration-track:8ed617c1f7fc211b116923b52a47135aa19bbb6bb6e56cb21b8266c9e87993b6` |
-| 2 | `def` | [threeCubedEvent](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerCoefficientRecoveryControls.lean/declarations/threecubedevent.md) | 16 | `declaration-track:070f72c83b775c7b29b7039a151b21f9632124c476a148b1b509a21c9422aaa3` |
-| 3 | `theorem` | [threeCubed_mangoldt_nonzero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerCoefficientRecoveryControls.lean/declarations/threecubed-mangoldt-nonzero.md) | 23 | `result-track:e62b1d6917b1604674a23371bf0aa7e6b7b3162ca0b12f680543dc32a4c6d8e2` |
-| 4 | `def` | [toyCoefficientSource](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerCoefficientRecoveryControls.lean/declarations/toycoefficientsource.md) | 29 | `declaration-track:f8981ce1f8d942eadb4238c0b162ea71830e7ca9c0b27c780a4268e1daa9c017` |
-| 5 | `theorem` | [toy_vertical_coordinate_is_five](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerCoefficientRecoveryControls.lean/declarations/toy-vertical-coordinate-is-five.md) | 35 | `result-track:64f595708616336b395dc4ae039ff172602cbbfc963d531558f047bbc77e411e` |
-| 6 | `theorem` | [toy_weight_is_unique](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerCoefficientRecoveryControls.lean/declarations/toy-weight-is-unique.md) | 41 | `result-track:bddfb822f1b19cf1b36aa9bfc1e3ea7b57873c48c26bdb83653a19ec4d649205` |
+| 1 | `def` | [primeThree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerCoefficientRecoveryControls.lean/declarations/primethree.md) | 14 | `declaration-track:8ed617c1f7fc211b116923b52a47135aa19bbb6bb6e56cb21b8266c9e87993b6` |
+| 2 | `def` | [threeCubedEvent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerCoefficientRecoveryControls.lean/declarations/threecubedevent.md) | 16 | `declaration-track:070f72c83b775c7b29b7039a151b21f9632124c476a148b1b509a21c9422aaa3` |
+| 3 | `theorem` | [threeCubed_mangoldt_nonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerCoefficientRecoveryControls.lean/declarations/threecubed-mangoldt-nonzero.md) | 23 | `result-track:e62b1d6917b1604674a23371bf0aa7e6b7b3162ca0b12f680543dc32a4c6d8e2` |
+| 4 | `def` | [toyCoefficientSource](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerCoefficientRecoveryControls.lean/declarations/toycoefficientsource.md) | 29 | `declaration-track:f8981ce1f8d942eadb4238c0b162ea71830e7ca9c0b27c780a4268e1daa9c017` |
+| 5 | `theorem` | [toy_vertical_coordinate_is_five](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerCoefficientRecoveryControls.lean/declarations/toy-vertical-coordinate-is-five.md) | 35 | `result-track:64f595708616336b395dc4ae039ff172602cbbfc963d531558f047bbc77e411e` |
+| 6 | `theorem` | [toy_weight_is_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerCoefficientRecoveryControls.lean/declarations/toy-weight-is-unique.md) | 41 | `result-track:bddfb822f1b19cf1b36aa9bfc1e3ea7b57873c48c26bdb83653a19ec4d649205` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

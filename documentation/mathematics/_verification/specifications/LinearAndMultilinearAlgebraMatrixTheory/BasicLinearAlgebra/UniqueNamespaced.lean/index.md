@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UniqueNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UniqueNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UniqueNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UniqueNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [uniqueEquiv](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UniqueNamespaced.lean/declarations/uniqueequiv.md) | 36 | `declaration-track:7d1fb6470dbe4d112af06824fe0ee7cb710bd95cff3ee2c84560a49f5f014fd4` |
-| 2 | `def` | [uniqueAddEquiv](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UniqueNamespaced.lean/declarations/uniqueaddequiv.md) | 44 | `declaration-track:9bff440a57b65e11a03bb1362884222051a75b347a0f18d1a273cf99fce16125` |
-| 3 | `def` | [uniqueLinearEquiv](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UniqueNamespaced.lean/declarations/uniquelinearequiv.md) | 50 | `declaration-track:a0395bc8d83472ab22ab7d1f239868e4ed447d87457e164cb10f44f1cd8ce1aa` |
-| 4 | `def` | [uniqueRingEquiv](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UniqueNamespaced.lean/declarations/uniqueringequiv.md) | 56 | `declaration-track:7553b30b5ae060fb3d7d77bc680d473620b0443a2e14223b9081e047b7a62dc8` |
-| 5 | `def` | [uniqueAlgEquiv](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UniqueNamespaced.lean/declarations/uniquealgequiv.md) | 62 | `declaration-track:d759cc499edc45cd42c5ee6f6903bb6a984712400d36249a7b1a21bbf3615c69` |
+| 1 | `def` | [uniqueEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UniqueNamespaced.lean/declarations/uniqueequiv.md) | 36 | `declaration-track:7d1fb6470dbe4d112af06824fe0ee7cb710bd95cff3ee2c84560a49f5f014fd4` |
+| 2 | `def` | [uniqueAddEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UniqueNamespaced.lean/declarations/uniqueaddequiv.md) | 44 | `declaration-track:9bff440a57b65e11a03bb1362884222051a75b347a0f18d1a273cf99fce16125` |
+| 3 | `def` | [uniqueLinearEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UniqueNamespaced.lean/declarations/uniquelinearequiv.md) | 50 | `declaration-track:a0395bc8d83472ab22ab7d1f239868e4ed447d87457e164cb10f44f1cd8ce1aa` |
+| 4 | `def` | [uniqueRingEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UniqueNamespaced.lean/declarations/uniqueringequiv.md) | 56 | `declaration-track:7553b30b5ae060fb3d7d77bc680d473620b0443a2e14223b9081e047b7a62dc8` |
+| 5 | `def` | [uniqueAlgEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/UniqueNamespaced.lean/declarations/uniquealgequiv.md) | 62 | `declaration-track:d759cc499edc45cd42c5ee6f6903bb6a984712400d36249a7b1a21bbf3615c69` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

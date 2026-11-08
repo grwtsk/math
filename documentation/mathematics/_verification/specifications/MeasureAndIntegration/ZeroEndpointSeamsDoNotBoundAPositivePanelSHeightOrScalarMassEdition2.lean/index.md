@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ZeroEndpointSeamsDoNotBoundAPositivePanelSHeightOrScalarMassEdition2.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ZeroEndpointSeamsDoNotBoundAPositivePanelSHeightOrScalarMassEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroEndpointSeamsDoNotBoundAPositivePanelSHeightOrScalarMassEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroEndpointSeamsDoNotBoundAPositivePanelSHeightOrScalarMassEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [bump](../../../../MeasureAndIntegration/ZeroEndpointSeamsDoNotBoundAPositivePanelSHeightOrScalarMassEdition2.lean/declarations/bump.md) | 27 | `declaration-track:5105f12d4666e3a67cf9fb3122bc7401ddcd7a5db350c34b35e0ca152fde6109` |
-| 2 | `theorem` | [bump_continuous](../../../../MeasureAndIntegration/ZeroEndpointSeamsDoNotBoundAPositivePanelSHeightOrScalarMassEdition2.lean/declarations/bump-continuous.md) | 29 | `result-track:ffa1a4c42fcc0e90b58628842d3f11d4a727bb5a1002139371785b8127322fa3` |
-| 3 | `theorem` | [bump_endpoints](../../../../MeasureAndIntegration/ZeroEndpointSeamsDoNotBoundAPositivePanelSHeightOrScalarMassEdition2.lean/declarations/bump-endpoints.md) | 32 | `result-track:ff9e405b2916d74758c3b49fb14edad8a1486d4ddc2a45bf1d21c3a54412651e` |
-| 4 | `theorem` | [bump_nonneg](../../../../MeasureAndIntegration/ZeroEndpointSeamsDoNotBoundAPositivePanelSHeightOrScalarMassEdition2.lean/declarations/bump-nonneg.md) | 34 | `result-track:187d9e470b578de9b245f4e4d33be1459eb9990f36e918ae50f3c15728d2b57a` |
-| 5 | `theorem` | [bump_midpoint](../../../../MeasureAndIntegration/ZeroEndpointSeamsDoNotBoundAPositivePanelSHeightOrScalarMassEdition2.lean/declarations/bump-midpoint.md) | 37 | `result-track:75783a37fc91e792a6323c7fef9a2d21491d7d3cd6f18d824cd497989adddbb2` |
-| 6 | `theorem` | [bump_integral](../../../../MeasureAndIntegration/ZeroEndpointSeamsDoNotBoundAPositivePanelSHeightOrScalarMassEdition2.lean/declarations/bump-integral.md) | 39 | `result-track:257cbd54b625aeddf53a603d6b2d6efa1744032e05c12e73f117c0afd57046e0` |
-| 7 | `theorem` | [fixed_zero_seams_have_unbounded_height_and_mass](../../../../MeasureAndIntegration/ZeroEndpointSeamsDoNotBoundAPositivePanelSHeightOrScalarMassEdition2.lean/declarations/fixed-zero-seams-have-unbounded-height-and-mass.md) | 52 | `result-track:9f06d3e03a2fc6081651dce99d90fb606cfa09785e82bd031f5e3f3cf3b7973c` |
+| 1 | `def` | [bump](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroEndpointSeamsDoNotBoundAPositivePanelSHeightOrScalarMassEdition2.lean/declarations/bump.md) | 27 | `declaration-track:5105f12d4666e3a67cf9fb3122bc7401ddcd7a5db350c34b35e0ca152fde6109` |
+| 2 | `theorem` | [bump_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroEndpointSeamsDoNotBoundAPositivePanelSHeightOrScalarMassEdition2.lean/declarations/bump-continuous.md) | 29 | `result-track:ffa1a4c42fcc0e90b58628842d3f11d4a727bb5a1002139371785b8127322fa3` |
+| 3 | `theorem` | [bump_endpoints](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroEndpointSeamsDoNotBoundAPositivePanelSHeightOrScalarMassEdition2.lean/declarations/bump-endpoints.md) | 32 | `result-track:ff9e405b2916d74758c3b49fb14edad8a1486d4ddc2a45bf1d21c3a54412651e` |
+| 4 | `theorem` | [bump_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroEndpointSeamsDoNotBoundAPositivePanelSHeightOrScalarMassEdition2.lean/declarations/bump-nonneg.md) | 34 | `result-track:187d9e470b578de9b245f4e4d33be1459eb9990f36e918ae50f3c15728d2b57a` |
+| 5 | `theorem` | [bump_midpoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroEndpointSeamsDoNotBoundAPositivePanelSHeightOrScalarMassEdition2.lean/declarations/bump-midpoint.md) | 37 | `result-track:75783a37fc91e792a6323c7fef9a2d21491d7d3cd6f18d824cd497989adddbb2` |
+| 6 | `theorem` | [bump_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroEndpointSeamsDoNotBoundAPositivePanelSHeightOrScalarMassEdition2.lean/declarations/bump-integral.md) | 39 | `result-track:257cbd54b625aeddf53a603d6b2d6efa1744032e05c12e73f117c0afd57046e0` |
+| 7 | `theorem` | [fixed_zero_seams_have_unbounded_height_and_mass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroEndpointSeamsDoNotBoundAPositivePanelSHeightOrScalarMassEdition2.lean/declarations/fixed-zero-seams-have-unbounded-height-and-mass.md) | 52 | `result-track:9f06d3e03a2fc6081651dce99d90fb606cfa09785e82bd031f5e3f3cf3b7973c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

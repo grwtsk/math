@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ActualChebyshevTailAttempt03.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ActualChebyshevTailAttempt03.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualChebyshevTailAttempt03.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualChebyshevTailAttempt03.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [psiErrorTail](../../../../MeasureAndIntegration/ActualChebyshevTailAttempt03.lean/declarations/psierrortail.md) | 14 | `declaration-track:13d9caf17921ad76e486ef4e03ef29ae4d38fa131fb38b136c132d1f96ba15b5` |
-| 2 | `def` | [triangleKernel](../../../../MeasureAndIntegration/ActualChebyshevTailAttempt03.lean/declarations/trianglekernel.md) | 16 | `declaration-track:2f94cc77abc83eaed896a62855ef477ffe38768ad13c2c2c5dffc9c182daa0fd` |
-| 3 | `theorem` | [triangleKernel_measurable](../../../../MeasureAndIntegration/ActualChebyshevTailAttempt03.lean/declarations/trianglekernel-measurable.md) | 19 | `result-track:9ab9465d36f5f72cfb87f158aaee389f022e583b9a8614d35335f3f9af798392` |
-| 4 | `theorem` | [triangleKernel_slice](../../../../MeasureAndIntegration/ActualChebyshevTailAttempt03.lean/declarations/trianglekernel-slice.md) | 24 | `result-track:404a52a95e57c94177867a3d08ba992ee69986e862839476b35f6fdd921c4133` |
-| 5 | `theorem` | [triangleKernel_slice_integrable](../../../../MeasureAndIntegration/ActualChebyshevTailAttempt03.lean/declarations/trianglekernel-slice-integrable.md) | 30 | `result-track:9f260a8991f89378ab5e0d55456af2cd358f1f9ea7eafd85cc465fb791727488` |
-| 6 | `theorem` | [triangleKernel_slice_norm_integral](../../../../MeasureAndIntegration/ActualChebyshevTailAttempt03.lean/declarations/trianglekernel-slice-norm-integral.md) | 36 | `result-track:3e7a5f154433c41cc21f0dafa4df59b44a27cf82f321ca2ad317cd04003a937d` |
-| 7 | `theorem` | [triangleKernel_integrable](../../../../MeasureAndIntegration/ActualChebyshevTailAttempt03.lean/declarations/trianglekernel-integrable.md) | 45 | `result-track:4bf938a20d0f495153df6f7c78c0c4a6348e9880d60a33754cf3ce9d35b97675` |
-| 8 | `theorem` | [triangleKernel_inner_eq](../../../../MeasureAndIntegration/ActualChebyshevTailAttempt03.lean/declarations/trianglekernel-inner-eq.md) | 55 | `result-track:248d375c256c0f5cfd0ad66901a5221fc3a064d9736b374034b393c3d2d6a20f` |
-| 9 | `theorem` | [psiErrorTail_integrable](../../../../MeasureAndIntegration/ActualChebyshevTailAttempt03.lean/declarations/psierrortail-integrable.md) | 68 | `result-track:3bc8da50ec463ddf1751c63e8d8c317b802aff5120e2765e0d684519b9b99c86` |
+| 1 | `def` | [psiErrorTail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualChebyshevTailAttempt03.lean/declarations/psierrortail.md) | 14 | `declaration-track:13d9caf17921ad76e486ef4e03ef29ae4d38fa131fb38b136c132d1f96ba15b5` |
+| 2 | `def` | [triangleKernel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualChebyshevTailAttempt03.lean/declarations/trianglekernel.md) | 16 | `declaration-track:2f94cc77abc83eaed896a62855ef477ffe38768ad13c2c2c5dffc9c182daa0fd` |
+| 3 | `theorem` | [triangleKernel_measurable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualChebyshevTailAttempt03.lean/declarations/trianglekernel-measurable.md) | 19 | `result-track:9ab9465d36f5f72cfb87f158aaee389f022e583b9a8614d35335f3f9af798392` |
+| 4 | `theorem` | [triangleKernel_slice](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualChebyshevTailAttempt03.lean/declarations/trianglekernel-slice.md) | 24 | `result-track:404a52a95e57c94177867a3d08ba992ee69986e862839476b35f6fdd921c4133` |
+| 5 | `theorem` | [triangleKernel_slice_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualChebyshevTailAttempt03.lean/declarations/trianglekernel-slice-integrable.md) | 30 | `result-track:9f260a8991f89378ab5e0d55456af2cd358f1f9ea7eafd85cc465fb791727488` |
+| 6 | `theorem` | [triangleKernel_slice_norm_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualChebyshevTailAttempt03.lean/declarations/trianglekernel-slice-norm-integral.md) | 36 | `result-track:3e7a5f154433c41cc21f0dafa4df59b44a27cf82f321ca2ad317cd04003a937d` |
+| 7 | `theorem` | [triangleKernel_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualChebyshevTailAttempt03.lean/declarations/trianglekernel-integrable.md) | 45 | `result-track:4bf938a20d0f495153df6f7c78c0c4a6348e9880d60a33754cf3ce9d35b97675` |
+| 8 | `theorem` | [triangleKernel_inner_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualChebyshevTailAttempt03.lean/declarations/trianglekernel-inner-eq.md) | 55 | `result-track:248d375c256c0f5cfd0ad66901a5221fc3a064d9736b374034b393c3d2d6a20f` |
+| 9 | `theorem` | [psiErrorTail_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualChebyshevTailAttempt03.lean/declarations/psierrortail-integrable.md) | 68 | `result-track:3bc8da50ec463ddf1751c63e8d8c317b802aff5120e2765e0d684519b9b99c86` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

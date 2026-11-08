@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CodecFilesystemMatrixCodec.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CodecFilesystemMatrixCodec.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CodecFilesystemMatrixCodec.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CodecFilesystemMatrixCodec.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FilesystemMatrixCodec](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CodecFilesystemMatrixCodec.lean/declarations/filesystemmatrixcodec.md) | 26 | `declaration-track:df2a93bae797b773eeb807f7300ddd82c922e43c68162350f6127f23326e290a` |
-| 2 | `theorem` | [encode_injective](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CodecFilesystemMatrixCodec.lean/declarations/encode-injective.md) | 36 | `result-track:7626fce4b8a627754f376fa70559b9fdfdbb0ea2cd83430673e6ef183ddd93e1` |
-| 3 | `def` | [ValidPacket](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CodecFilesystemMatrixCodec.lean/declarations/validpacket.md) | 44 | `declaration-track:0d6fe774fcffde68b0d28ae43d23244be6f1832becebdf80824e9b101b631e57` |
-| 4 | `def` | [ValidPacketType](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CodecFilesystemMatrixCodec.lean/declarations/validpackettype.md) | 51 | `declaration-track:d64b6d077f1c860d2e34629f094e1320f1b35f6f5eb05c3c4a6d21b743551e15` |
-| 5 | `def` | [snapshotEquivValidPacket](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CodecFilesystemMatrixCodec.lean/declarations/snapshotequivvalidpacket.md) | 61 | `declaration-track:9d8a1300095f33c26eec72f943a4138ab4ded2f36229911fae364e5de499b12f` |
-| 6 | `def` | [ofLayers](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CodecFilesystemMatrixCodec.lean/declarations/oflayers.md) | 78 | `declaration-track:ea9f58c3cf558024912c397ebb4b515bbafead48d7a5670596b1392945943a4e` |
+| 1 | `structure` | [FilesystemMatrixCodec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CodecFilesystemMatrixCodec.lean/declarations/filesystemmatrixcodec.md) | 26 | `declaration-track:df2a93bae797b773eeb807f7300ddd82c922e43c68162350f6127f23326e290a` |
+| 2 | `theorem` | [encode_injective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CodecFilesystemMatrixCodec.lean/declarations/encode-injective.md) | 36 | `result-track:7626fce4b8a627754f376fa70559b9fdfdbb0ea2cd83430673e6ef183ddd93e1` |
+| 3 | `def` | [ValidPacket](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CodecFilesystemMatrixCodec.lean/declarations/validpacket.md) | 44 | `declaration-track:0d6fe774fcffde68b0d28ae43d23244be6f1832becebdf80824e9b101b631e57` |
+| 4 | `def` | [ValidPacketType](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CodecFilesystemMatrixCodec.lean/declarations/validpackettype.md) | 51 | `declaration-track:d64b6d077f1c860d2e34629f094e1320f1b35f6f5eb05c3c4a6d21b743551e15` |
+| 5 | `def` | [snapshotEquivValidPacket](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CodecFilesystemMatrixCodec.lean/declarations/snapshotequivvalidpacket.md) | 61 | `declaration-track:9d8a1300095f33c26eec72f943a4138ab4ded2f36229911fae364e5de499b12f` |
+| 6 | `def` | [ofLayers](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CodecFilesystemMatrixCodec.lean/declarations/oflayers.md) | 78 | `declaration-track:ea9f58c3cf558024912c397ebb4b515bbafead48d7a5670596b1392945943a4e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HasLocalization.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HasLocalization.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HasLocalization.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HasLocalization.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [HasLocalization](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HasLocalization.lean/declarations/haslocalization.md) | 50 | `declaration-track:f22ea93da3ad0b95104d6425720cfb2899cf753905a2878a69f7b39680c5487d` |
-| 2 | `def` | [Localization'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HasLocalization.lean/declarations/localization.md) | 63 | `declaration-track:4cea2e080f03019ca5a056552409a02b303e137dd6cd9386ebfb202e38238f3d` |
-| 3 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HasLocalization.lean/declarations/instance.md) | 65 | `declaration-track:4440a001dbaf9a75379d80647c7e4dfe8afa3461f0f1b966a4e8173416385753` |
-| 4 | `def` | [Q'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HasLocalization.lean/declarations/q.md) | 69 | `declaration-track:584f0296089ab99ab6aa99a2bcc76a94dec29e90ff59bcca74a08cda2d0a2838` |
-| 5 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HasLocalization.lean/declarations/instance-source-edition-2.md) | 71 | `declaration-track:e68c1c6256d47ac2e6f62e00e15482cebc3d2b5d786fc743a10a2cde77910401` |
-| 6 | `def` | [HasLocalization.standard](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HasLocalization.lean/declarations/haslocalization-standard.md) | 74 | `declaration-track:0c9cac05d5780eb4f61406547d6cd44b7a99937d53e3f52efb7af8691e1d8aa7` |
+| 1 | `class` | [HasLocalization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HasLocalization.lean/declarations/haslocalization.md) | 50 | `declaration-track:f22ea93da3ad0b95104d6425720cfb2899cf753905a2878a69f7b39680c5487d` |
+| 2 | `def` | [Localization'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HasLocalization.lean/declarations/localization.md) | 63 | `declaration-track:4cea2e080f03019ca5a056552409a02b303e137dd6cd9386ebfb202e38238f3d` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HasLocalization.lean/declarations/instance.md) | 65 | `declaration-track:4440a001dbaf9a75379d80647c7e4dfe8afa3461f0f1b966a4e8173416385753` |
+| 4 | `def` | [Q'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HasLocalization.lean/declarations/q.md) | 69 | `declaration-track:584f0296089ab99ab6aa99a2bcc76a94dec29e90ff59bcca74a08cda2d0a2838` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HasLocalization.lean/declarations/instance-source-edition-2.md) | 71 | `declaration-track:e68c1c6256d47ac2e6f62e00e15482cebc3d2b5d786fc743a10a2cde77910401` |
+| 6 | `def` | [HasLocalization.standard](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/HasLocalization.lean/declarations/haslocalization-standard.md) | 74 | `declaration-track:0c9cac05d5780eb4f61406547d6cd44b7a99937d53e3f52efb7af8691e1d8aa7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

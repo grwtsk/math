@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/AlgebraOrderDisjointed.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/AlgebraOrderDisjointed.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/AlgebraOrderDisjointed.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/AlgebraOrderDisjointed.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [disjointed_add_one](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/AlgebraOrderDisjointed.lean/declarations/disjointed-add-one.md) | 29 | `result-track:00855483277ce8cbede93110ccaa2e8e5b7aa0b9591829f8fad954bb3b9ff99a` |
-| 2 | `lemma` | [Monotone.disjointed_add_one_sup](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/AlgebraOrderDisjointed.lean/declarations/monotone-disjointed-add-one-sup.md) | 33 | `result-track:b085c4839e2bfe5ae5f18f6c9cd6cf080499a1b2cd101bcfc545da10fb32fa22` |
-| 3 | `lemma` | [Monotone.disjointed_add_one](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/AlgebraOrderDisjointed.lean/declarations/monotone-disjointed-add-one.md) | 37 | `result-track:daafdec4f5e753f8d7582817fba7c9317cb0e8a5185e55cac44fa295490e293e` |
-| 4 | `def` | [Nat.disjointedRec](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/AlgebraOrderDisjointed.lean/declarations/nat-disjointedrec.md) | 51 | `declaration-track:b6558ed4f3feb830963f9a0163dfe517da09d6dca18389900fa8a883020c4009` |
-| 5 | `theorem` | [disjointedRec_zero](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/AlgebraOrderDisjointed.lean/declarations/disjointedrec-zero.md) | 62 | `result-track:c78ecda63104c53735dc8df5b9e1e8fb8ef7a0c0fdc775c7186927d195772c76` |
+| 1 | `theorem` | [disjointed_add_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/AlgebraOrderDisjointed.lean/declarations/disjointed-add-one.md) | 29 | `result-track:00855483277ce8cbede93110ccaa2e8e5b7aa0b9591829f8fad954bb3b9ff99a` |
+| 2 | `lemma` | [Monotone.disjointed_add_one_sup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/AlgebraOrderDisjointed.lean/declarations/monotone-disjointed-add-one-sup.md) | 33 | `result-track:b085c4839e2bfe5ae5f18f6c9cd6cf080499a1b2cd101bcfc545da10fb32fa22` |
+| 3 | `lemma` | [Monotone.disjointed_add_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/AlgebraOrderDisjointed.lean/declarations/monotone-disjointed-add-one.md) | 37 | `result-track:daafdec4f5e753f8d7582817fba7c9317cb0e8a5185e55cac44fa295490e293e` |
+| 4 | `def` | [Nat.disjointedRec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/AlgebraOrderDisjointed.lean/declarations/nat-disjointedrec.md) | 51 | `declaration-track:b6558ed4f3feb830963f9a0163dfe517da09d6dca18389900fa8a883020c4009` |
+| 5 | `theorem` | [disjointedRec_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/AlgebraOrderDisjointed.lean/declarations/disjointedrec-zero.md) | 62 | `result-track:c78ecda63104c53735dc8df5b9e1e8fb8ef7a0c0fdc775c7186927d195772c76` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

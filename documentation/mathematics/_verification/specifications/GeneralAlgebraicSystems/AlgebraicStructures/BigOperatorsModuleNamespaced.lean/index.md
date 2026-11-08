@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsModuleNamespaced.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsModuleNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsModuleNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsModuleNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sum_Ico_by_parts](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsModuleNamespaced.lean/declarations/sum-ico-by-parts.md) | 29 | `result-track:fb13ab465da9285e581ca13d1e30a279e4b6f87b6d594696cd1acbb64512173c` |
-| 2 | `theorem` | [sum_Ioc_by_parts](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsModuleNamespaced.lean/declarations/sum-ioc-by-parts.md) | 52 | `result-track:d138ee326e08bcac143f5845035cd8b4aa81de4f0bf22260a09dcd825ff2798f` |
-| 3 | `theorem` | [sum_range_by_parts](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsModuleNamespaced.lean/declarations/sum-range-by-parts.md) | 62 | `result-track:6cff5aca4e6c3ad25e210c13c29c6d513cb5d9a7a61af0dbc786bc3d0a72178a` |
+| 1 | `theorem` | [sum_Ico_by_parts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsModuleNamespaced.lean/declarations/sum-ico-by-parts.md) | 29 | `result-track:fb13ab465da9285e581ca13d1e30a279e4b6f87b6d594696cd1acbb64512173c` |
+| 2 | `theorem` | [sum_Ioc_by_parts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsModuleNamespaced.lean/declarations/sum-ioc-by-parts.md) | 52 | `result-track:d138ee326e08bcac143f5845035cd8b4aa81de4f0bf22260a09dcd825ff2798f` |
+| 3 | `theorem` | [sum_range_by_parts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsModuleNamespaced.lean/declarations/sum-range-by-parts.md) | 62 | `result-track:6cff5aca4e6c3ad25e210c13c29c6d513cb5d9a7a61af0dbc786bc3d0a72178a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

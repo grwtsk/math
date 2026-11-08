@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/TraceTransportNamespaced.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/TraceTransportNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/TraceTransportNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/TraceTransportNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [operatorConjugate](../../../../ProbabilityTheoryAndStochasticProcesses/TraceTransportNamespaced.lean/declarations/operatorconjugate.md) | 27 | `declaration-track:b28a82d06d038622f57fd0e1fa7ed437efb9bc8dd327e1f4ccf064f4704baf3b` |
-| 2 | `structure` | [PolarTraceSystem](../../../../ProbabilityTheoryAndStochasticProcesses/TraceTransportNamespaced.lean/declarations/polartracesystem.md) | 37 | `declaration-track:2d46697aa45f817b572e477b30d4faa439c8ed05f29a8f8cec99b3075ee63b87` |
-| 3 | `def` | [polarPacketEnergy](../../../../ProbabilityTheoryAndStochasticProcesses/TraceTransportNamespaced.lean/declarations/polarpacketenergy.md) | 78 | `declaration-track:cda7bbc915a06e2afe1e03d6307c38787417a8a71a73681d5ed4593a7a2dda62` |
-| 4 | `structure` | [ExactTraceCompensation](../../../../ProbabilityTheoryAndStochasticProcesses/TraceTransportNamespaced.lean/declarations/exacttracecompensation.md) | 90 | `declaration-track:4d88e1cdd966a8fc32642b50ebe586d8d8d5e69677894e7ef9fdda69aaf864d7` |
-| 5 | `theorem` | [traceConserved_on_arc](../../../../ProbabilityTheoryAndStochasticProcesses/TraceTransportNamespaced.lean/declarations/traceconserved-on-arc.md) | 105 | `result-track:7deae93c8e797a9fb2950287e2e8c2e225c5e9288bac7067c1688ecc1a84e1ae` |
-| 6 | `theorem` | [traceConserved_on_path](../../../../ProbabilityTheoryAndStochasticProcesses/TraceTransportNamespaced.lean/declarations/traceconserved-on-path.md) | 122 | `result-track:7d5937fe9dbbd75a68a29052390741fabcab575cf36fb2f66707501d769f42ba` |
+| 1 | `def` | [operatorConjugate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/TraceTransportNamespaced.lean/declarations/operatorconjugate.md) | 27 | `declaration-track:b28a82d06d038622f57fd0e1fa7ed437efb9bc8dd327e1f4ccf064f4704baf3b` |
+| 2 | `structure` | [PolarTraceSystem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/TraceTransportNamespaced.lean/declarations/polartracesystem.md) | 37 | `declaration-track:2d46697aa45f817b572e477b30d4faa439c8ed05f29a8f8cec99b3075ee63b87` |
+| 3 | `def` | [polarPacketEnergy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/TraceTransportNamespaced.lean/declarations/polarpacketenergy.md) | 78 | `declaration-track:cda7bbc915a06e2afe1e03d6307c38787417a8a71a73681d5ed4593a7a2dda62` |
+| 4 | `structure` | [ExactTraceCompensation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/TraceTransportNamespaced.lean/declarations/exacttracecompensation.md) | 90 | `declaration-track:4d88e1cdd966a8fc32642b50ebe586d8d8d5e69677894e7ef9fdda69aaf864d7` |
+| 5 | `theorem` | [traceConserved_on_arc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/TraceTransportNamespaced.lean/declarations/traceconserved-on-arc.md) | 105 | `result-track:7deae93c8e797a9fb2950287e2e8c2e225c5e9288bac7067c1688ecc1a84e1ae` |
+| 6 | `theorem` | [traceConserved_on_path](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/TraceTransportNamespaced.lean/declarations/traceconserved-on-path.md) | 122 | `result-track:7d5937fe9dbbd75a68a29052390741fabcab575cf36fb2f66707501d769f42ba` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/Char.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/Char.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/Char.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/Char.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [csize_eq](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/Char.lean/declarations/csize-eq.md) | 11 | `result-track:d0d7f6b06960027f9b45700a3da7cd0fceb2b1f3c46d225cb2a01c5938cbb162` |
-| 2 | `theorem` | [csize_pos](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/Char.lean/declarations/csize-pos.md) | 17 | `result-track:92b8508b0fab74efa466f87e68c05d29d716c03bd17cf2c9a57f2a1756e0b505` |
-| 3 | `theorem` | [csize_le_4](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/Char.lean/declarations/csize-le-4.md) | 20 | `result-track:351f676c0e58e746ba93c03fb548731c394a92560b0f48dc997402e17e4fefe3` |
+| 1 | `theorem` | [csize_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/Char.lean/declarations/csize-eq.md) | 11 | `result-track:d0d7f6b06960027f9b45700a3da7cd0fceb2b1f3c46d225cb2a01c5938cbb162` |
+| 2 | `theorem` | [csize_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/Char.lean/declarations/csize-pos.md) | 17 | `result-track:92b8508b0fab74efa466f87e68c05d29d716c03bd17cf2c9a57f2a1756e0b505` |
+| 3 | `theorem` | [csize_le_4](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/Char.lean/declarations/csize-le-4.md) | 20 | `result-track:351f676c0e58e746ba93c03fb548731c394a92560b0f48dc997402e17e4fefe3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

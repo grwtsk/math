@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntervalIntegralBasicNamespacedPublicSourceEdition2.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntervalIntegralBasicNamespacedPublicSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntervalIntegralBasicNamespacedPublicSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntervalIntegralBasicNamespacedPublicSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [integral_congr_Ioc_of_le](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/IntervalIntegralBasicNamespacedPublicSourceEdition2.lean/declarations/integral-congr-ioc-of-le.md) | 29 | `result-track:770e1a1dc03866fb23f32cc8e4f023869795dd4802bf3577e32249ee6da217eb` |
+| 1 | `theorem` | [integral_congr_Ioc_of_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/IntervalIntegralBasicNamespacedPublicSourceEdition2.lean/declarations/integral-congr-ioc-of-le.md) | 29 | `result-track:770e1a1dc03866fb23f32cc8e4f023869795dd4802bf3577e32249ee6da217eb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

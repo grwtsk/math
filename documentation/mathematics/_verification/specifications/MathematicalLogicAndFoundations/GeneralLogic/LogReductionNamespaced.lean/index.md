@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LogReductionNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LogReductionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LogReductionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LogReductionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,15 +62,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [reductionExponent](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LogReductionNamespaced.lean/declarations/reductionexponent.md) | 51 | `declaration-track:3a29c6031e8c81c0774915f3459300902998042ce29209e8819156f122906da5` |
-| 2 | `def` | [reduceMantissa](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LogReductionNamespaced.lean/declarations/reducemantissa.md) | 59 | `declaration-track:eb1bfe27c2fc6b5d48c6b3539bb23427fcd0e6923019f7131078359d9dc9c533` |
-| 3 | `theorem` | [reconstruction_eq](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LogReductionNamespaced.lean/declarations/reconstruction-eq.md) | 66 | `result-track:23fd625273b9b00b72e289b1ae5e16a9c5f6980e48f76e7c10c6784e0bc80047` |
-| 4 | `theorem` | [reduced_bounds_weak](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LogReductionNamespaced.lean/declarations/reduced-bounds-weak.md) | 78 | `result-track:5b1bc8ca1098fadc6bce7e46ade406d5e915c2fda71add514d82bec725a1cda2` |
-| 5 | `theorem` | [reduced_bounds](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LogReductionNamespaced.lean/declarations/reduced-bounds.md) | 143 | `result-track:ecb187f7dde2a8f6de58e32b148fac5abf316bbc7ef02df2921f3c1893287b26` |
-| 6 | `theorem` | [reduced_pos](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LogReductionNamespaced.lean/declarations/reduced-pos.md) | 205 | `result-track:99ed6931fa86f42713d7939efc144ccd45c837a5c69e30d7a0f11681c98c318d` |
-| 7 | `theorem` | [log_reduction](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LogReductionNamespaced.lean/declarations/log-reduction.md) | 214 | `result-track:7da5bb55d802fda53287451c3febb2925bdd645d6e70fa2d53ef5058098842b0` |
-| 8 | `theorem` | [atanh_arg_bounds](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LogReductionNamespaced.lean/declarations/atanh-arg-bounds.md) | 230 | `result-track:d13d12ba3d1dee2050bbc4ec6a269095cc7dca74e7fa15e48f4ff6670cbcd7a7` |
-| 9 | `theorem` | [log_via_atanh](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LogReductionNamespaced.lean/declarations/log-via-atanh.md) | 251 | `result-track:3aa076cefc241717c8cad51f39319718312d1dd62374d2eab95bd1ac61831573` |
+| 1 | `def` | [reductionExponent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LogReductionNamespaced.lean/declarations/reductionexponent.md) | 51 | `declaration-track:3a29c6031e8c81c0774915f3459300902998042ce29209e8819156f122906da5` |
+| 2 | `def` | [reduceMantissa](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LogReductionNamespaced.lean/declarations/reducemantissa.md) | 59 | `declaration-track:eb1bfe27c2fc6b5d48c6b3539bb23427fcd0e6923019f7131078359d9dc9c533` |
+| 3 | `theorem` | [reconstruction_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LogReductionNamespaced.lean/declarations/reconstruction-eq.md) | 66 | `result-track:23fd625273b9b00b72e289b1ae5e16a9c5f6980e48f76e7c10c6784e0bc80047` |
+| 4 | `theorem` | [reduced_bounds_weak](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LogReductionNamespaced.lean/declarations/reduced-bounds-weak.md) | 78 | `result-track:5b1bc8ca1098fadc6bce7e46ade406d5e915c2fda71add514d82bec725a1cda2` |
+| 5 | `theorem` | [reduced_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LogReductionNamespaced.lean/declarations/reduced-bounds.md) | 143 | `result-track:ecb187f7dde2a8f6de58e32b148fac5abf316bbc7ef02df2921f3c1893287b26` |
+| 6 | `theorem` | [reduced_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LogReductionNamespaced.lean/declarations/reduced-pos.md) | 205 | `result-track:99ed6931fa86f42713d7939efc144ccd45c837a5c69e30d7a0f11681c98c318d` |
+| 7 | `theorem` | [log_reduction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LogReductionNamespaced.lean/declarations/log-reduction.md) | 214 | `result-track:7da5bb55d802fda53287451c3febb2925bdd645d6e70fa2d53ef5058098842b0` |
+| 8 | `theorem` | [atanh_arg_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LogReductionNamespaced.lean/declarations/atanh-arg-bounds.md) | 230 | `result-track:d13d12ba3d1dee2050bbc4ec6a269095cc7dca74e7fa15e48f4ff6670cbcd7a7` |
+| 9 | `theorem` | [log_via_atanh](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LogReductionNamespaced.lean/declarations/log-via-atanh.md) | 251 | `result-track:3aa076cefc241717c8cad51f39319718312d1dd62374d2eab95bd1ac61831573` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

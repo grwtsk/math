@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CertifiedMatrixFunctionStep.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CertifiedMatrixFunctionStep.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CertifiedMatrixFunctionStep.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CertifiedMatrixFunctionStep.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [MatrixProofStep](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CertifiedMatrixFunctionStep.lean/declarations/matrixproofstep.md) | 43 | `declaration-track:279fd7edd6a718e5f08b52c8053ed90751b4de5721034023640275abeb169c66` |
-| 2 | `def` | [run](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CertifiedMatrixFunctionStep.lean/declarations/run.md) | 51 | `declaration-track:4b2b1bc405c81b8817580f89de24d161f19f953e11a69b94720a2de351c78c3a` |
-| 3 | `theorem` | [run_eq_output](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CertifiedMatrixFunctionStep.lean/declarations/run-eq-output.md) | 54 | `result-track:d2c00c5584b340a39c5026bbdd499d2d657362958ff06c2cf5af9ef39584614f` |
+| 1 | `structure` | [MatrixProofStep](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CertifiedMatrixFunctionStep.lean/declarations/matrixproofstep.md) | 43 | `declaration-track:279fd7edd6a718e5f08b52c8053ed90751b4de5721034023640275abeb169c66` |
+| 2 | `def` | [run](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CertifiedMatrixFunctionStep.lean/declarations/run.md) | 51 | `declaration-track:4b2b1bc405c81b8817580f89de24d161f19f953e11a69b94720a2de351c78c3a` |
+| 3 | `theorem` | [run_eq_output](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CertifiedMatrixFunctionStep.lean/declarations/run-eq-output.md) | 54 | `result-track:d2c00c5584b340a39c5026bbdd499d2d657362958ff06c2cf5af9ef39584614f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

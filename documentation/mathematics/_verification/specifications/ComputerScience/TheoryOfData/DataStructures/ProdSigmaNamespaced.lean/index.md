@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/ProdSigmaNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/ProdSigmaNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ProdSigmaNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ProdSigmaNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [nil_product](../../../../../../ComputerScience/TheoryOfData/DataStructures/ProdSigmaNamespaced.lean/declarations/nil-product.md) | 34 | `result-track:3805a2c1f16f0d704958489add70991421e2e768d16081ed52aae8c81e4ffa28` |
-| 2 | `theorem` | [product_cons](../../../../../../ComputerScience/TheoryOfData/DataStructures/ProdSigmaNamespaced.lean/declarations/product-cons.md) | 38 | `result-track:ac1d6f4ef86736eb9772ee92f79a764d15ab502f5dae4b652064301bdb61da0f` |
-| 3 | `theorem` | [product_nil](../../../../../../ComputerScience/TheoryOfData/DataStructures/ProdSigmaNamespaced.lean/declarations/product-nil.md) | 43 | `result-track:46373fa1642e28580dec79df371cd4f41df296e51e25a1c856701a7de441d6fb` |
-| 4 | `theorem` | [mem_product](../../../../../../ComputerScience/TheoryOfData/DataStructures/ProdSigmaNamespaced.lean/declarations/mem-product.md) | 48 | `result-track:881a7687b2b745b15c6d1422d537ca15f9e8bbb62723e3769f27da72fe8ad5de` |
-| 5 | `theorem` | [length_product](../../../../../../ComputerScience/TheoryOfData/DataStructures/ProdSigmaNamespaced.lean/declarations/length-product.md) | 53 | `result-track:9db946cc881b587f2adeb5b3b8eddd78596b21d32db55aed785c51e09c0422e8` |
-| 6 | `theorem` | [nil_sigma](../../../../../../ComputerScience/TheoryOfData/DataStructures/ProdSigmaNamespaced.lean/declarations/nil-sigma.md) | 66 | `result-track:e5f376071d28947333af6cdffcc51dee4f76e0a07ecc402c8c2c5ca451ac5974` |
-| 7 | `theorem` | [sigma_cons](../../../../../../ComputerScience/TheoryOfData/DataStructures/ProdSigmaNamespaced.lean/declarations/sigma-cons.md) | 70 | `result-track:67397194ea589dde9770bb294a43945eec26d7dbf8c4c9544269612341f194ee` |
-| 8 | `theorem` | [sigma_nil](../../../../../../ComputerScience/TheoryOfData/DataStructures/ProdSigmaNamespaced.lean/declarations/sigma-nil.md) | 75 | `result-track:e564c8152dee35f97f0c0ab29c0ecf5332dfada9ec4aa032348287517ad55fc1` |
-| 9 | `theorem` | [mem_sigma](../../../../../../ComputerScience/TheoryOfData/DataStructures/ProdSigmaNamespaced.lean/declarations/mem-sigma.md) | 80 | `result-track:16e303652ec5bfc36abf8d2400a35595dea9e7fed40595d664e89d841700410c` |
-| 10 | `theorem` | [mem_map_swap](../../../../../../ComputerScience/TheoryOfData/DataStructures/ProdSigmaNamespaced.lean/declarations/mem-map-swap.md) | 88 | `result-track:21abcb81ab0862124695585f518552266d6dbac0da216323c1e3351d9dacec8e` |
+| 1 | `theorem` | [nil_product](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ProdSigmaNamespaced.lean/declarations/nil-product.md) | 34 | `result-track:3805a2c1f16f0d704958489add70991421e2e768d16081ed52aae8c81e4ffa28` |
+| 2 | `theorem` | [product_cons](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ProdSigmaNamespaced.lean/declarations/product-cons.md) | 38 | `result-track:ac1d6f4ef86736eb9772ee92f79a764d15ab502f5dae4b652064301bdb61da0f` |
+| 3 | `theorem` | [product_nil](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ProdSigmaNamespaced.lean/declarations/product-nil.md) | 43 | `result-track:46373fa1642e28580dec79df371cd4f41df296e51e25a1c856701a7de441d6fb` |
+| 4 | `theorem` | [mem_product](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ProdSigmaNamespaced.lean/declarations/mem-product.md) | 48 | `result-track:881a7687b2b745b15c6d1422d537ca15f9e8bbb62723e3769f27da72fe8ad5de` |
+| 5 | `theorem` | [length_product](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ProdSigmaNamespaced.lean/declarations/length-product.md) | 53 | `result-track:9db946cc881b587f2adeb5b3b8eddd78596b21d32db55aed785c51e09c0422e8` |
+| 6 | `theorem` | [nil_sigma](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ProdSigmaNamespaced.lean/declarations/nil-sigma.md) | 66 | `result-track:e5f376071d28947333af6cdffcc51dee4f76e0a07ecc402c8c2c5ca451ac5974` |
+| 7 | `theorem` | [sigma_cons](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ProdSigmaNamespaced.lean/declarations/sigma-cons.md) | 70 | `result-track:67397194ea589dde9770bb294a43945eec26d7dbf8c4c9544269612341f194ee` |
+| 8 | `theorem` | [sigma_nil](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ProdSigmaNamespaced.lean/declarations/sigma-nil.md) | 75 | `result-track:e564c8152dee35f97f0c0ab29c0ecf5332dfada9ec4aa032348287517ad55fc1` |
+| 9 | `theorem` | [mem_sigma](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ProdSigmaNamespaced.lean/declarations/mem-sigma.md) | 80 | `result-track:16e303652ec5bfc36abf8d2400a35595dea9e7fed40595d664e89d841700410c` |
+| 10 | `theorem` | [mem_map_swap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ProdSigmaNamespaced.lean/declarations/mem-map-swap.md) | 88 | `result-track:21abcb81ab0862124695585f518552266d6dbac0da216323c1e3351d9dacec8e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

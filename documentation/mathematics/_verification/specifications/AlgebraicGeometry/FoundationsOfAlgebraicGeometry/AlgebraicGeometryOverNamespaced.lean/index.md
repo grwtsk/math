@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryOverNamespaced.lean/index.md) · [Full source](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryOverNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryOverNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryOverNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [Over](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryOverNamespaced.lean/declarations/over.md) | 40 | `declaration-track:f7b087f109c4a731a6564963324edf5a403a7e6604bbf6b073b296282dfd9553` |
-| 2 | `abbrev` | [CanonicallyOver](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryOverNamespaced.lean/declarations/canonicallyover.md) | 46 | `declaration-track:4a56470f815672581ec6abae5958b0895e85a8672f742fcd831043d4595f34e2` |
-| 3 | `abbrev` | [Hom.IsOver](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryOverNamespaced.lean/declarations/hom-isover.md) | 50 | `declaration-track:52a9acf0cc3db886eedd49a9f55ce12aa3ad1f172236f01c28cfaba2f86f9c7c` |
-| 4 | `lemma` | [Hom.isOver_iff](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryOverNamespaced.lean/declarations/hom-isover-iff.md) | 53 | `result-track:16cf7db0c12333b195b6b60f917ea3b78fd0ac6cc48a0b915d8d3db2b8ca8e2b` |
-| 5 | `abbrev` | [asOver](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryOverNamespaced.lean/declarations/asover.md) | 59 | `declaration-track:016fa4ff6ba3c5c5f1b823d17730ca9d1223fc1ec0e0144c7749b1a81f019455` |
-| 6 | `abbrev` | [Hom.asOver](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryOverNamespaced.lean/declarations/hom-asover.md) | 62 | `declaration-track:ddf0bdb591d65263bdf7abf1c323fbb87566120fe4f4ba7282ef828830d046ce` |
+| 1 | `abbrev` | [Over](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryOverNamespaced.lean/declarations/over.md) | 40 | `declaration-track:f7b087f109c4a731a6564963324edf5a403a7e6604bbf6b073b296282dfd9553` |
+| 2 | `abbrev` | [CanonicallyOver](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryOverNamespaced.lean/declarations/canonicallyover.md) | 46 | `declaration-track:4a56470f815672581ec6abae5958b0895e85a8672f742fcd831043d4595f34e2` |
+| 3 | `abbrev` | [Hom.IsOver](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryOverNamespaced.lean/declarations/hom-isover.md) | 50 | `declaration-track:52a9acf0cc3db886eedd49a9f55ce12aa3ad1f172236f01c28cfaba2f86f9c7c` |
+| 4 | `lemma` | [Hom.isOver_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryOverNamespaced.lean/declarations/hom-isover-iff.md) | 53 | `result-track:16cf7db0c12333b195b6b60f917ea3b78fd0ac6cc48a0b915d8d3db2b8ca8e2b` |
+| 5 | `abbrev` | [asOver](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryOverNamespaced.lean/declarations/asover.md) | 59 | `declaration-track:016fa4ff6ba3c5c5f1b823d17730ca9d1223fc1ec0e0144c7749b1a81f019455` |
+| 6 | `abbrev` | [Hom.asOver](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryOverNamespaced.lean/declarations/hom-asover.md) | 62 | `declaration-track:ddf0bdb591d65263bdf7abf1c323fbb87566120fe4f4ba7282ef828830d046ce` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

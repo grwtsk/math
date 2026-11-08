@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/SemigroupNamespaced.lean/index.md) · [Full source](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/SemigroupNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/SemigroupNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/SemigroupNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_idempotent_of_compact_t2_of_continuous_mul_left](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/SemigroupNamespaced.lean/declarations/exists-idempotent-of-compact-t2-of-continuous-mul-left.md) | 33 | `result-track:702da175a321876f9837a6176634b822987903e5cd0b6a6f76b6be15aa42f7f4` |
-| 2 | `theorem` | [exists_idempotent_in_compact_subsemigroup](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/SemigroupNamespaced.lean/declarations/exists-idempotent-in-compact-subsemigroup.md) | 86 | `result-track:d192ada8cbda5138e5ba86defea883126ddf184babb16e3e46c2d849c24819ad` |
+| 1 | `theorem` | [exists_idempotent_of_compact_t2_of_continuous_mul_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/SemigroupNamespaced.lean/declarations/exists-idempotent-of-compact-t2-of-continuous-mul-left.md) | 33 | `result-track:702da175a321876f9837a6176634b822987903e5cd0b6a6f76b6be15aa42f7f4` |
+| 2 | `theorem` | [exists_idempotent_in_compact_subsemigroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/SemigroupNamespaced.lean/declarations/exists-idempotent-in-compact-subsemigroup.md) | 86 | `result-track:d192ada8cbda5138e5ba86defea883126ddf184babb16e3e46c2d849c24819ad` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

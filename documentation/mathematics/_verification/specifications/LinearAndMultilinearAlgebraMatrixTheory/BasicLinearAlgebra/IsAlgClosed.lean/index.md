@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IsAlgClosed.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IsAlgClosed.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IsAlgClosed.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IsAlgClosed.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_eigenvalue](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IsAlgClosed.lean/declarations/exists-eigenvalue.md) | 41 | `result-track:d90fadf0d2a104f17093e473d03468837a120cd7b2d0594885c6b2126b1a7d25` |
-| 2 | `instance` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IsAlgClosed.lean/declarations/instance.md) | 47 | `declaration-track:50268d80c3811ca941466e2275524e59e5140b4a57f0b765d5d65d6371535cbe` |
-| 3 | `theorem` | [iSup_generalizedEigenspace_eq_top](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IsAlgClosed.lean/declarations/isup-generalizedeigenspace-eq-top.md) | 52 | `result-track:4b8579cf4ba75b197aac1ea8f086599eb2b900fa089e45bac324e5aaa36879e0` |
+| 1 | `theorem` | [exists_eigenvalue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IsAlgClosed.lean/declarations/exists-eigenvalue.md) | 41 | `result-track:d90fadf0d2a104f17093e473d03468837a120cd7b2d0594885c6b2126b1a7d25` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IsAlgClosed.lean/declarations/instance.md) | 47 | `declaration-track:50268d80c3811ca941466e2275524e59e5140b4a57f0b765d5d65d6371535cbe` |
+| 3 | `theorem` | [iSup_generalizedEigenspace_eq_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IsAlgClosed.lean/declarations/isup-generalizedeigenspace-eq-top.md) | 52 | `result-track:4b8579cf4ba75b197aac1ea8f086599eb2b900fa089e45bac324e5aaa36879e0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

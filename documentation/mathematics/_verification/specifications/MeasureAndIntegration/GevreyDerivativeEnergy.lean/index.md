@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/GevreyDerivativeEnergy.lean/index.md) · [Full source](../../../../MeasureAndIntegration/GevreyDerivativeEnergy.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GevreyDerivativeEnergy.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GevreyDerivativeEnergy.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [integral_third_mul_first](../../../../MeasureAndIntegration/GevreyDerivativeEnergy.lean/declarations/integral-third-mul-first.md) | 20 | `result-track:af24738ca4af15d5c17573d9a5ff36f28af5b88e8e7550f8fdf072735bb2c9b2` |
-| 2 | `theorem` | [deriv_dilationOperator](../../../../MeasureAndIntegration/GevreyDerivativeEnergy.lean/declarations/deriv-dilationoperator.md) | 28 | `result-track:2f77130735b7113419483627d2aa52b5c46979328593e3782f92732bf14cfa4a` |
-| 3 | `theorem` | [deriv_normalizedOperator](../../../../MeasureAndIntegration/GevreyDerivativeEnergy.lean/declarations/deriv-normalizedoperator.md) | 49 | `result-track:03ca459ade977ad6bb1fa088ae09378b8fb27a2c500fa62a56199f1f3115a0b5` |
-| 4 | `theorem` | [normalizedOperator_deriv_square_integrable](../../../../MeasureAndIntegration/GevreyDerivativeEnergy.lean/declarations/normalizedoperator-deriv-square-integrable.md) | 56 | `result-track:1c2b0355dda3e85f6986e4ee90e1d320802d90df68a78e54954c6b9ebd43ba97` |
-| 5 | `theorem` | [normalizedOperator_deriv_square_integral_factorized](../../../../MeasureAndIntegration/GevreyDerivativeEnergy.lean/declarations/normalizedoperator-deriv-square-integral-factorized.md) | 67 | `result-track:d2ce39e3d1154ccbd5649731db2866031da4455642c032b32792311c4b749a68` |
-| 6 | `theorem` | [normalizedOperator_deriv_square_integral](../../../../MeasureAndIntegration/GevreyDerivativeEnergy.lean/declarations/normalizedoperator-deriv-square-integral.md) | 79 | `result-track:e32f104e6d06dc7134f96b6878d32cce4703f9ea843192262b599f436476bcaa` |
-| 7 | `theorem` | [profile_normalizedOperator_deriv_square_integral](../../../../MeasureAndIntegration/GevreyDerivativeEnergy.lean/declarations/profile-normalizedoperator-deriv-square-integral.md) | 94 | `result-track:b778cfc2099926b5e326d77b2ca4233f72b553611b13fe50ad74adf238b72a93` |
+| 1 | `theorem` | [integral_third_mul_first](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GevreyDerivativeEnergy.lean/declarations/integral-third-mul-first.md) | 20 | `result-track:af24738ca4af15d5c17573d9a5ff36f28af5b88e8e7550f8fdf072735bb2c9b2` |
+| 2 | `theorem` | [deriv_dilationOperator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GevreyDerivativeEnergy.lean/declarations/deriv-dilationoperator.md) | 28 | `result-track:2f77130735b7113419483627d2aa52b5c46979328593e3782f92732bf14cfa4a` |
+| 3 | `theorem` | [deriv_normalizedOperator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GevreyDerivativeEnergy.lean/declarations/deriv-normalizedoperator.md) | 49 | `result-track:03ca459ade977ad6bb1fa088ae09378b8fb27a2c500fa62a56199f1f3115a0b5` |
+| 4 | `theorem` | [normalizedOperator_deriv_square_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GevreyDerivativeEnergy.lean/declarations/normalizedoperator-deriv-square-integrable.md) | 56 | `result-track:1c2b0355dda3e85f6986e4ee90e1d320802d90df68a78e54954c6b9ebd43ba97` |
+| 5 | `theorem` | [normalizedOperator_deriv_square_integral_factorized](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GevreyDerivativeEnergy.lean/declarations/normalizedoperator-deriv-square-integral-factorized.md) | 67 | `result-track:d2ce39e3d1154ccbd5649731db2866031da4455642c032b32792311c4b749a68` |
+| 6 | `theorem` | [normalizedOperator_deriv_square_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GevreyDerivativeEnergy.lean/declarations/normalizedoperator-deriv-square-integral.md) | 79 | `result-track:e32f104e6d06dc7134f96b6878d32cce4703f9ea843192262b599f436476bcaa` |
+| 7 | `theorem` | [profile_normalizedOperator_deriv_square_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/GevreyDerivativeEnergy.lean/declarations/profile-normalizedoperator-deriv-square-integral.md) | 94 | `result-track:b778cfc2099926b5e326d77b2ca4233f72b553611b13fe50ad74adf238b72a93` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

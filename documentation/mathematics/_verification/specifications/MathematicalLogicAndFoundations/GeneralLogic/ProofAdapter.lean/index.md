@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProofAdapter.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProofAdapter.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProofAdapter.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProofAdapter.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ProofAdapterDescriptor](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProofAdapter.lean/declarations/proofadapterdescriptor.md) | 6 | `declaration-track:504c64a80324784e655b4b7014311c6fe983060c0795e83f864b2b671bf53a24` |
-| 2 | `theorem` | [proofAdapter_syntax_roundTrip_projects](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProofAdapter.lean/declarations/proofadapter-syntax-roundtrip-projects.md) | 12 | `result-track:8bd11505d423cf38e0c01626f7c13f26b7fa877629f102a8a9e96ee208f1214d` |
-| 3 | `theorem` | [proofAdapter_preserves_theorem_statement](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProofAdapter.lean/declarations/proofadapter-preserves-theorem-statement.md) | 18 | `result-track:28db65674752d08dc1919d074bfc0d340a02aa0b2975c651bbfa579cff488516` |
+| 1 | `structure` | [ProofAdapterDescriptor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProofAdapter.lean/declarations/proofadapterdescriptor.md) | 6 | `declaration-track:504c64a80324784e655b4b7014311c6fe983060c0795e83f864b2b671bf53a24` |
+| 2 | `theorem` | [proofAdapter_syntax_roundTrip_projects](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProofAdapter.lean/declarations/proofadapter-syntax-roundtrip-projects.md) | 12 | `result-track:8bd11505d423cf38e0c01626f7c13f26b7fa877629f102a8a9e96ee208f1214d` |
+| 3 | `theorem` | [proofAdapter_preserves_theorem_statement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProofAdapter.lean/declarations/proofadapter-preserves-theorem-statement.md) | 18 | `result-track:28db65674752d08dc1919d074bfc0d340a02aa0b2975c651bbfa579cff488516` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

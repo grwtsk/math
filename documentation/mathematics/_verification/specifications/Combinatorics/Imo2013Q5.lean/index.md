@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/Imo2013Q5.lean/index.md) · [Full source](../../../../Combinatorics/Imo2013Q5.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Imo2013Q5.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Imo2013Q5.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,14 +60,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [le_of_all_pow_lt_succ](../../../../Combinatorics/Imo2013Q5.lean/declarations/le-of-all-pow-lt-succ-source-edition-2.md) | 32 | `result-track:7cc491869916f2e3c0ceb8b810103aaacc6de9208ebb606996057d1e3ac49f83` |
-| 2 | `theorem` | [le_of_all_pow_lt_succ'](../../../../Combinatorics/Imo2013Q5.lean/declarations/le-of-all-pow-lt-succ.md) | 63 | `result-track:145806a12afeb7c82fec8e0aad79132795e7178982533556f7612eae2b37c3ac` |
-| 3 | `theorem` | [f_pos_of_pos](../../../../Combinatorics/Imo2013Q5.lean/declarations/f-pos-of-pos.md) | 79 | `result-track:737aa37621bd1a2ecd2f9f88c19479675c956de023f5b3d76e051f0d389d13d4` |
-| 4 | `theorem` | [fx_gt_xm1](../../../../Combinatorics/Imo2013Q5.lean/declarations/fx-gt-xm1.md) | 97 | `result-track:0f58125798112e78635709f2c695556f93f24831ebd8790d36684da9f0a84b21` |
-| 5 | `theorem` | [pow_f_le_f_pow](../../../../Combinatorics/Imo2013Q5.lean/declarations/pow-f-le-f-pow.md) | 113 | `result-track:003985f39ec2e2a7509e9a926a42f9130edadd4f3384663d2d10bb9939165652` |
-| 6 | `theorem` | [fixed_point_of_pos_nat_pow](../../../../Combinatorics/Imo2013Q5.lean/declarations/fixed-point-of-pos-nat-pow.md) | 127 | `result-track:1772c831d343d78bedb85e7b6f226669aa85c43be656005f052c465558c3564b` |
-| 7 | `theorem` | [fixed_point_of_gt_1](../../../../Combinatorics/Imo2013Q5.lean/declarations/fixed-point-of-gt-1.md) | 138 | `result-track:eb8b160131ca1d6aacc68b1f108954888ec6dbb36b7380ed7985c83d4fa6a8f9` |
-| 8 | `theorem` | [imo2013_q5](../../../../Combinatorics/Imo2013Q5.lean/declarations/imo2013-q5.md) | 164 | `result-track:671a7ca0a96792efea63f7e4c98e7f3d94fcea909d173f62c0666cf278ebc17d` |
+| 1 | `theorem` | [le_of_all_pow_lt_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Imo2013Q5.lean/declarations/le-of-all-pow-lt-succ-source-edition-2.md) | 32 | `result-track:7cc491869916f2e3c0ceb8b810103aaacc6de9208ebb606996057d1e3ac49f83` |
+| 2 | `theorem` | [le_of_all_pow_lt_succ'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Imo2013Q5.lean/declarations/le-of-all-pow-lt-succ.md) | 63 | `result-track:145806a12afeb7c82fec8e0aad79132795e7178982533556f7612eae2b37c3ac` |
+| 3 | `theorem` | [f_pos_of_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Imo2013Q5.lean/declarations/f-pos-of-pos.md) | 79 | `result-track:737aa37621bd1a2ecd2f9f88c19479675c956de023f5b3d76e051f0d389d13d4` |
+| 4 | `theorem` | [fx_gt_xm1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Imo2013Q5.lean/declarations/fx-gt-xm1.md) | 97 | `result-track:0f58125798112e78635709f2c695556f93f24831ebd8790d36684da9f0a84b21` |
+| 5 | `theorem` | [pow_f_le_f_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Imo2013Q5.lean/declarations/pow-f-le-f-pow.md) | 113 | `result-track:003985f39ec2e2a7509e9a926a42f9130edadd4f3384663d2d10bb9939165652` |
+| 6 | `theorem` | [fixed_point_of_pos_nat_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Imo2013Q5.lean/declarations/fixed-point-of-pos-nat-pow.md) | 127 | `result-track:1772c831d343d78bedb85e7b6f226669aa85c43be656005f052c465558c3564b` |
+| 7 | `theorem` | [fixed_point_of_gt_1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Imo2013Q5.lean/declarations/fixed-point-of-gt-1.md) | 138 | `result-track:eb8b160131ca1d6aacc68b1f108954888ec6dbb36b7380ed7985c83d4fa6a8f9` |
+| 8 | `theorem` | [imo2013_q5](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Imo2013Q5.lean/declarations/imo2013-q5.md) | 164 | `result-track:671a7ca0a96792efea63f7e4c98e7f3d94fcea909d173f62c0666cf278ebc17d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

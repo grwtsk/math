@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/LnFactorialSeriesNamespaced.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/LnFactorialSeriesNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/LnFactorialSeriesNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/LnFactorialSeriesNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,14 +60,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [summable_series](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/LnFactorialSeriesNamespaced.lean/declarations/summable-series.md) | 49 | `result-track:d9304cfc20754849360245dd21eed807138da8aeeb41a8c97339f975f127b073` |
-| 2 | `lemma` | [hs_lo](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/LnFactorialSeriesNamespaced.lean/declarations/hs-lo.md) | 58 | `result-track:d288f8ab601e6bddffee18b59de74bc7f90f3692374cfba3d0d9cf94563d1798` |
-| 3 | `lemma` | [tail_drop_factor](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/LnFactorialSeriesNamespaced.lean/declarations/tail-drop-factor.md) | 69 | `result-track:9797f82469b0d331f78d984c1716eb131b24eb1278378474d13f506b9a4d4458` |
-| 4 | `lemma` | [tail_factor_bound](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/LnFactorialSeriesNamespaced.lean/declarations/tail-factor-bound.md) | 80 | `result-track:08d16b20d8e5bdea4010c5cbaa22ecdce050b5eb61db54a18a0989a958c48fab` |
-| 5 | `lemma` | [exp_series_eq](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/LnFactorialSeriesNamespaced.lean/declarations/exp-series-eq.md) | 92 | `result-track:f4438d66586b745b424d8e50e4b593918e5f7ed84c4ba550f13a4e8c5a3960ad` |
-| 6 | `lemma` | [tail_bound](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/LnFactorialSeriesNamespaced.lean/declarations/tail-bound.md) | 96 | `result-track:4a07386123f9da3b2efba6e5807ff1552b13d414cbccdb71740994479771a000` |
-| 7 | `lemma` | [hs_hi_close](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/LnFactorialSeriesNamespaced.lean/declarations/hs-hi-close.md) | 101 | `result-track:8ed8e74918d351feea676dbc781d827c727a434d4159f6fdd7bcaee4608c81bd` |
-| 8 | `lemma` | [hs_hi](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/LnFactorialSeriesNamespaced.lean/declarations/hs-hi.md) | 117 | `result-track:0e6df08be3b91e15e1df4d349e330cb53a463355b071639f9d36ceab61fb066f` |
+| 1 | `lemma` | [summable_series](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/LnFactorialSeriesNamespaced.lean/declarations/summable-series.md) | 49 | `result-track:d9304cfc20754849360245dd21eed807138da8aeeb41a8c97339f975f127b073` |
+| 2 | `lemma` | [hs_lo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/LnFactorialSeriesNamespaced.lean/declarations/hs-lo.md) | 58 | `result-track:d288f8ab601e6bddffee18b59de74bc7f90f3692374cfba3d0d9cf94563d1798` |
+| 3 | `lemma` | [tail_drop_factor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/LnFactorialSeriesNamespaced.lean/declarations/tail-drop-factor.md) | 69 | `result-track:9797f82469b0d331f78d984c1716eb131b24eb1278378474d13f506b9a4d4458` |
+| 4 | `lemma` | [tail_factor_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/LnFactorialSeriesNamespaced.lean/declarations/tail-factor-bound.md) | 80 | `result-track:08d16b20d8e5bdea4010c5cbaa22ecdce050b5eb61db54a18a0989a958c48fab` |
+| 5 | `lemma` | [exp_series_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/LnFactorialSeriesNamespaced.lean/declarations/exp-series-eq.md) | 92 | `result-track:f4438d66586b745b424d8e50e4b593918e5f7ed84c4ba550f13a4e8c5a3960ad` |
+| 6 | `lemma` | [tail_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/LnFactorialSeriesNamespaced.lean/declarations/tail-bound.md) | 96 | `result-track:4a07386123f9da3b2efba6e5807ff1552b13d414cbccdb71740994479771a000` |
+| 7 | `lemma` | [hs_hi_close](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/LnFactorialSeriesNamespaced.lean/declarations/hs-hi-close.md) | 101 | `result-track:8ed8e74918d351feea676dbc781d827c727a434d4159f6fdd7bcaee4608c81bd` |
+| 8 | `lemma` | [hs_hi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/LnFactorialSeriesNamespaced.lean/declarations/hs-hi.md) | 117 | `result-track:0e6df08be3b91e15e1df4d349e330cb53a463355b071639f9d36ceab61fb066f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

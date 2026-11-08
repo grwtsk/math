@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompletionAdapterNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompletionAdapterNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompletionAdapterNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompletionAdapterNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PresentationCompletionAdapter](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompletionAdapterNamespaced.lean/declarations/presentationcompletionadapter.md) | 21 | `declaration-track:a187234a1140ae09a3bfead90468a85ec8e1ada58f9b48038467b0f3b004e4d1` |
-| 2 | `structure` | [CandidatePresentationCompletion](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompletionAdapterNamespaced.lean/declarations/candidatepresentationcompletion.md) | 35 | `declaration-track:56b4b213a675ff80d918116f6fc317271c37d161a67f6afb1b9ce200e9c1cb78` |
-| 3 | `theorem` | [candidate_completion_is_nonauthoritative](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompletionAdapterNamespaced.lean/declarations/candidate-completion-is-nonauthoritative.md) | 47 | `result-track:e3e3b36955f75c730d693877644fad3ed0628f14f085cc4fe83872e60195ee6e` |
+| 1 | `structure` | [PresentationCompletionAdapter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompletionAdapterNamespaced.lean/declarations/presentationcompletionadapter.md) | 21 | `declaration-track:a187234a1140ae09a3bfead90468a85ec8e1ada58f9b48038467b0f3b004e4d1` |
+| 2 | `structure` | [CandidatePresentationCompletion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompletionAdapterNamespaced.lean/declarations/candidatepresentationcompletion.md) | 35 | `declaration-track:56b4b213a675ff80d918116f6fc317271c37d161a67f6afb1b9ce200e9c1cb78` |
+| 3 | `theorem` | [candidate_completion_is_nonauthoritative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CompletionAdapterNamespaced.lean/declarations/candidate-completion-is-nonauthoritative.md) | 47 | `result-track:e3e3b36955f75c730d693877644fad3ed0628f14f085cc4fe83872e60195ee6e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

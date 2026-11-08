@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/Mobius.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/Mobius.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/Mobius.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/Mobius.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mobiusFn](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/Mobius.lean/declarations/mobiusfn.md) | 18 | `declaration-track:99f318e0c197f8701d0cc97f50a900fac0fe27380f3f0a98fa814dafcd3663e6` |
-| 2 | `theorem` | [mobius_sum_divisors_eq_one_or_zero](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/Mobius.lean/declarations/mobius-sum-divisors-eq-one-or-zero.md) | 21 | `result-track:847c1efb630d4658d3f806ef4d593679575e5e968b20af3d36eb829c19d0b0f5` |
-| 3 | `theorem` | [mobius_inversion_finite_checked](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/Mobius.lean/declarations/mobius-inversion-finite-checked.md) | 38 | `result-track:823997f67b17fb12ee2337e3d6b3884945aeb31338f299579f7d1a5075fe6afe` |
-| 4 | `theorem` | [mobius_inversion](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/Mobius.lean/declarations/mobius-inversion.md) | 61 | `result-track:6f34e0ff803dc153c0cd00904af4e01b254cbc2ca77368a4005fcad26f3dae72` |
+| 1 | `def` | [mobiusFn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/Mobius.lean/declarations/mobiusfn.md) | 18 | `declaration-track:99f318e0c197f8701d0cc97f50a900fac0fe27380f3f0a98fa814dafcd3663e6` |
+| 2 | `theorem` | [mobius_sum_divisors_eq_one_or_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/Mobius.lean/declarations/mobius-sum-divisors-eq-one-or-zero.md) | 21 | `result-track:847c1efb630d4658d3f806ef4d593679575e5e968b20af3d36eb829c19d0b0f5` |
+| 3 | `theorem` | [mobius_inversion_finite_checked](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/Mobius.lean/declarations/mobius-inversion-finite-checked.md) | 38 | `result-track:823997f67b17fb12ee2337e3d6b3884945aeb31338f299579f7d1a5075fe6afe` |
+| 4 | `theorem` | [mobius_inversion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/Mobius.lean/declarations/mobius-inversion.md) | 61 | `result-track:6f34e0ff803dc153c0cd00904af4e01b254cbc2ca77368a4005fcad26f3dae72` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StrongApproximationBoundary.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StrongApproximationBoundary.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StrongApproximationBoundary.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StrongApproximationBoundary.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [StrongApproximationContract](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StrongApproximationBoundary.lean/declarations/strongapproximationcontract.md) | 18 | `declaration-track:5e447653f64070c8002f8dc8e13997d6a044689b429a4c49539d9056630a16cb` |
-| 2 | `structure` | [StrongApproximationToBoundaryAlignment](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StrongApproximationBoundary.lean/declarations/strongapproximationtoboundaryalignment.md) | 25 | `declaration-track:46ccf10c18911db386fe04cbebb975321601af1af18ca2120e2f5493f155ce95` |
-| 3 | `theorem` | [strong_approx_supplies_restriction_compatibility](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StrongApproximationBoundary.lean/declarations/strong-approx-supplies-restriction-compatibility.md) | 34 | `result-track:01cfb90cbc7709d9d98e8fe9595dd81801efd6f829ae7ef3a3dde032eba94d85` |
-| 4 | `theorem` | [strong_approx_does_not_prove_critical_line_alone](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StrongApproximationBoundary.lean/declarations/strong-approx-does-not-prove-critical-line-alone.md) | 39 | `result-track:1e856ec4037dbbf32f6770bcfa29459cd502232cea100257bd577612ddf62bb4` |
+| 1 | `structure` | [StrongApproximationContract](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StrongApproximationBoundary.lean/declarations/strongapproximationcontract.md) | 18 | `declaration-track:5e447653f64070c8002f8dc8e13997d6a044689b429a4c49539d9056630a16cb` |
+| 2 | `structure` | [StrongApproximationToBoundaryAlignment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StrongApproximationBoundary.lean/declarations/strongapproximationtoboundaryalignment.md) | 25 | `declaration-track:46ccf10c18911db386fe04cbebb975321601af1af18ca2120e2f5493f155ce95` |
+| 3 | `theorem` | [strong_approx_supplies_restriction_compatibility](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StrongApproximationBoundary.lean/declarations/strong-approx-supplies-restriction-compatibility.md) | 34 | `result-track:01cfb90cbc7709d9d98e8fe9595dd81801efd6f829ae7ef3a3dde032eba94d85` |
+| 4 | `theorem` | [strong_approx_does_not_prove_critical_line_alone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StrongApproximationBoundary.lean/declarations/strong-approx-does-not-prove-critical-line-alone.md) | 39 | `result-track:1e856ec4037dbbf32f6770bcfa29459cd502232cea100257bd577612ddf62bb4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

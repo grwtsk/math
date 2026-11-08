@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LayerOne.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LayerOne.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LayerOne.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LayerOne.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [norm_sq_prime_term](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LayerOne.lean/declarations/norm-sq-prime-term.md) | 26 | `result-track:dd291bd2577867fd8d6496a1ebe7785fa1fbba3f73d70b538e39d7f063dd5040` |
-| 2 | `lemma` | [re_sq_add_im_sq_inv](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LayerOne.lean/declarations/re-sq-add-im-sq-inv.md) | 35 | `result-track:50ab33f770b5eaa04d285b65309aa278d4f4db18175b1e409ae4145935387e72` |
-| 3 | `def` | [primeLogPowSum](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LayerOne.lean/declarations/primelogpowsum.md) | 42 | `declaration-track:481656f7f8271d8cab2345eaa6e465cc4956d68f4d9c91b466e6a6364bc43b12` |
-| 4 | `lemma` | [sfPart_one_eq](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LayerOne.lean/declarations/sfpart-one-eq.md) | 46 | `result-track:554133f7c8303a7c4d76cceebf7698cc6b8eed4b539aadb4ac6572f440e91d41` |
-| 5 | `theorem` | [sfPart_one_asymp](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LayerOne.lean/declarations/sfpart-one-asymp.md) | 64 | `result-track:197f3195c4ce442bbec0d696bd708918474edcbe5f8b4e845057871e571678be` |
+| 1 | `lemma` | [norm_sq_prime_term](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LayerOne.lean/declarations/norm-sq-prime-term.md) | 26 | `result-track:dd291bd2577867fd8d6496a1ebe7785fa1fbba3f73d70b538e39d7f063dd5040` |
+| 2 | `lemma` | [re_sq_add_im_sq_inv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LayerOne.lean/declarations/re-sq-add-im-sq-inv.md) | 35 | `result-track:50ab33f770b5eaa04d285b65309aa278d4f4db18175b1e409ae4145935387e72` |
+| 3 | `def` | [primeLogPowSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LayerOne.lean/declarations/primelogpowsum.md) | 42 | `declaration-track:481656f7f8271d8cab2345eaa6e465cc4956d68f4d9c91b466e6a6364bc43b12` |
+| 4 | `lemma` | [sfPart_one_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LayerOne.lean/declarations/sfpart-one-eq.md) | 46 | `result-track:554133f7c8303a7c4d76cceebf7698cc6b8eed4b539aadb4ac6572f440e91d41` |
+| 5 | `theorem` | [sfPart_one_asymp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LayerOne.lean/declarations/sfpart-one-asymp.md) | 64 | `result-track:197f3195c4ce442bbec0d696bd708918474edcbe5f8b4e845057871e571678be` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

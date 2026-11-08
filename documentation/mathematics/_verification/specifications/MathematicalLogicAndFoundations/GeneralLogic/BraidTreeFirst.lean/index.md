@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BraidTreeFirst.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BraidTreeFirst.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BraidTreeFirst.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BraidTreeFirst.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [treeFirstLocallyGrounded](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BraidTreeFirst.lean/declarations/treefirstlocallygrounded.md) | 9 | `declaration-track:70f2ad230d2695ac676e1b27a0216dcedede6f6198e2dbddc7a267d57279c5c4` |
-| 2 | `theorem` | [tree_first_locally_grounded_is_V10](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BraidTreeFirst.lean/declarations/tree-first-locally-grounded-is-v10.md) | 12 | `result-track:bccc155f4cc610e9b7c859e37956b2507a66a2ffa40b0ed63cbc7abea8bd4f13` |
+| 1 | `def` | [treeFirstLocallyGrounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BraidTreeFirst.lean/declarations/treefirstlocallygrounded.md) | 9 | `declaration-track:70f2ad230d2695ac676e1b27a0216dcedede6f6198e2dbddc7a267d57279c5c4` |
+| 2 | `theorem` | [tree_first_locally_grounded_is_V10](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BraidTreeFirst.lean/declarations/tree-first-locally-grounded-is-v10.md) | 12 | `result-track:bccc155f4cc610e9b7c859e37956b2507a66a2ffa40b0ed63cbc7abea8bd4f13` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

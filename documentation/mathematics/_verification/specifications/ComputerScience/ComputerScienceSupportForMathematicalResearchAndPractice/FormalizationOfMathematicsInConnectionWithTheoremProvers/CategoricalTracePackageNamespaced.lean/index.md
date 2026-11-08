@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CategoricalTracePackageNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CategoricalTracePackageNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CategoricalTracePackageNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CategoricalTracePackageNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [categorical_trace_formula_if_supplied](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CategoricalTracePackageNamespaced.lean/declarations/categorical-trace-formula-if-supplied.md) | 27 | `result-track:358ba7abe2ffac80b15a492a21d355a228f1913576dfeff85a1cc0e0731034e0` |
-| 2 | `theorem` | [categorical_trace_hrr_compatible](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CategoricalTracePackageNamespaced.lean/declarations/categorical-trace-hrr-compatible.md) | 32 | `result-track:3f17aecfedb76aef6446b42e4df0354944f00621899a10d094a72aa56f30032b` |
+| 1 | `theorem` | [categorical_trace_formula_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CategoricalTracePackageNamespaced.lean/declarations/categorical-trace-formula-if-supplied.md) | 27 | `result-track:358ba7abe2ffac80b15a492a21d355a228f1913576dfeff85a1cc0e0731034e0` |
+| 2 | `theorem` | [categorical_trace_hrr_compatible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CategoricalTracePackageNamespaced.lean/declarations/categorical-trace-hrr-compatible.md) | 32 | `result-track:3f17aecfedb76aef6446b42e4df0354944f00621899a10d094a72aa56f30032b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

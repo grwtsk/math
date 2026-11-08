@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IntPublicTestBit.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IntPublicTestBit.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IntPublicTestBit.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IntPublicTestBit.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [testBit](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IntPublicTestBit.lean/declarations/testbit.md) | 18 | `declaration-track:cb7e3780cd62508c182c8fed8382e731465d8bdcb04a8cd19fb30622de0f9d99` |
-| 2 | `def` | [ofBits](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IntPublicTestBit.lean/declarations/ofbits.md) | 28 | `declaration-track:ccb3ebfa789d78fab9ef26f018dd0025d14efbdddf380cbd2742b3751e4c70b3` |
-| 3 | `theorem` | [ofBits_zero](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IntPublicTestBit.lean/declarations/ofbits-zero.md) | 34 | `result-track:de3a0cf21709cefdef22b482ade25cf45a346c99c953188b28f2a86fed17bc49` |
-| 4 | `theorem` | [testBit_ofBits_lt](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IntPublicTestBit.lean/declarations/testbit-ofbits-lt.md) | 37 | `result-track:e9a76b0822b35ea6f34c8ada13b2708f676cb6986a12e807d134c5ad130ec953` |
-| 5 | `theorem` | [testBit_ofBits_ge](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IntPublicTestBit.lean/declarations/testbit-ofbits-ge.md) | 45 | `result-track:b964b291d3eb2c1c91b0212ccfb5b8f0e188d6143c1100f8b65f735cb022927a` |
-| 6 | `theorem` | [testBit_ofBits](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IntPublicTestBit.lean/declarations/testbit-ofbits.md) | 56 | `result-track:826c82c5292b8a5e5327b847f0c0718a58981d37befba133426c712bba63f148` |
+| 1 | `def` | [testBit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IntPublicTestBit.lean/declarations/testbit.md) | 18 | `declaration-track:cb7e3780cd62508c182c8fed8382e731465d8bdcb04a8cd19fb30622de0f9d99` |
+| 2 | `def` | [ofBits](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IntPublicTestBit.lean/declarations/ofbits.md) | 28 | `declaration-track:ccb3ebfa789d78fab9ef26f018dd0025d14efbdddf380cbd2742b3751e4c70b3` |
+| 3 | `theorem` | [ofBits_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IntPublicTestBit.lean/declarations/ofbits-zero.md) | 34 | `result-track:de3a0cf21709cefdef22b482ade25cf45a346c99c953188b28f2a86fed17bc49` |
+| 4 | `theorem` | [testBit_ofBits_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IntPublicTestBit.lean/declarations/testbit-ofbits-lt.md) | 37 | `result-track:e9a76b0822b35ea6f34c8ada13b2708f676cb6986a12e807d134c5ad130ec953` |
+| 5 | `theorem` | [testBit_ofBits_ge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IntPublicTestBit.lean/declarations/testbit-ofbits-ge.md) | 45 | `result-track:b964b291d3eb2c1c91b0212ccfb5b8f0e188d6143c1100f8b65f735cb022927a` |
+| 6 | `theorem` | [testBit_ofBits](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/IntPublicTestBit.lean/declarations/testbit-ofbits.md) | 56 | `result-track:826c82c5292b8a5e5327b847f0c0718a58981d37befba133426c712bba63f148` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

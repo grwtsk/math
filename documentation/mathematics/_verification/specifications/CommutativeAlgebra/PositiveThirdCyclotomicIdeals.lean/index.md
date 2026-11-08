@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/PositiveThirdCyclotomicIdeals.lean/index.md) · [Full source](../../../../CommutativeAlgebra/PositiveThirdCyclotomicIdeals.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PositiveThirdCyclotomicIdeals.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PositiveThirdCyclotomicIdeals.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicIdeals`](../../../../CommutativeAlgebra/CyclotomicThirdCyclotomicIdeals.lean/index.md) — import line 3; pinned internal source present.
-- [`GRWTSK.Analysis.Calculus.CompactCutoff`](../../../../RealFunctions/CompactCutoff.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicIdeals`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CyclotomicThirdCyclotomicIdeals.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.Analysis.Calculus.CompactCutoff`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/CompactCutoff.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,19 +58,19 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [cyclotomicWindow](../../../../CommutativeAlgebra/PositiveThirdCyclotomicIdeals.lean/declarations/cyclotomicwindow.md) | 10 | `declaration-track:55fa1b7ac2e5f77b2cd0f082b82e432f2e0a5ae44bcc14df4fdca0c296c5d473` |
-| 2 | `lemma` | [cyclotomicWindow_compact](../../../../CommutativeAlgebra/PositiveThirdCyclotomicIdeals.lean/declarations/cyclotomicwindow-compact.md) | 11 | `result-track:fab2e1a284ebd3ae039bdaa50eb0a03c499ccd2a2aad0f21340bf062b88fd1dc` |
-| 3 | `lemma` | [cyclotomicWindow_one](../../../../CommutativeAlgebra/PositiveThirdCyclotomicIdeals.lean/declarations/cyclotomicwindow-one.md) | 12 | `result-track:5fc3c2cefa0babaa447b4feeddc022b7ff8ce7f9de4408310a1341f10006afd8` |
-| 4 | `def` | [cyclotomicTriple](../../../../CommutativeAlgebra/PositiveThirdCyclotomicIdeals.lean/declarations/cyclotomictriple.md) | 15 | `declaration-track:0ec688806934b035b97612e7aa08b3f5cbaf3887cfe4498507266176743653bf` |
-| 5 | `lemma` | [cyclotomicTriple_zero](../../../../CommutativeAlgebra/PositiveThirdCyclotomicIdeals.lean/declarations/cyclotomictriple-zero.md) | 19 | `result-track:26efa400edcdc3706e088a966ab73f4020a4d074522c224ad481220879e5bbdb` |
-| 6 | `lemma` | [cyclotomicTriple_window](../../../../CommutativeAlgebra/PositiveThirdCyclotomicIdeals.lean/declarations/cyclotomictriple-window.md) | 23 | `result-track:e124a8764cc86533267e14346b1a7b104aaba11a61f837e89cb6362f58a4ea27` |
-| 7 | `theorem` | [actual_cyclotomic_finite_support](../../../../CommutativeAlgebra/PositiveThirdCyclotomicIdeals.lean/declarations/actual-cyclotomic-finite-support.md) | 31 | `result-track:1428b9421031bf8f625d18163aab1a88a0adc2343838b4c7e5835556f90d076a` |
-| 8 | `lemma` | [principal_two_ne_zero](../../../../CommutativeAlgebra/PositiveThirdCyclotomicIdeals.lean/declarations/principal-two-ne-zero.md) | 35 | `result-track:5e5bcdb139358175235e510f2d270780a580ffae127abf716f46c72adc47044f` |
-| 9 | `theorem` | [actual_principal_two_term](../../../../CommutativeAlgebra/PositiveThirdCyclotomicIdeals.lean/declarations/actual-principal-two-term.md) | 42 | `result-track:c58a80ffddfaf1bd56104a64ec187aab29c1627f7d4678bce6b9991e6cd37c84` |
-| 10 | `lemma` | [integer_principal_two_absNorm](../../../../CommutativeAlgebra/PositiveThirdCyclotomicIdeals.lean/declarations/integer-principal-two-absnorm.md) | 56 | `result-track:128aae549ffbedd8731b5aca151cd4b10cb4ec51124a920ec76d247f158690a5` |
-| 11 | `theorem` | [actual_integer_norm_identification_false](../../../../CommutativeAlgebra/PositiveThirdCyclotomicIdeals.lean/declarations/actual-integer-norm-identification-false.md) | 60 | `result-track:985584afd3bb4a8dafeaa9da5604fbc62b5c3a56e92bca1bcc628e12ed996fbf` |
-| 12 | `lemma` | [actual_ring_rank_two](../../../../CommutativeAlgebra/PositiveThirdCyclotomicIdeals.lean/declarations/actual-ring-rank-two.md) | 65 | `result-track:d103a2cd1d4a3e3ca4c1265fa72a8133424e773f8e07589315f8bce98a069b57` |
-| 13 | `lemma` | [actual_zero_principal_norm](../../../../CommutativeAlgebra/PositiveThirdCyclotomicIdeals.lean/declarations/actual-zero-principal-norm.md) | 68 | `result-track:3ca4c11e84ef2c9bb7797333a4437845bad92eb00c9b030849159e6eab9da03b` |
+| 1 | `def` | [cyclotomicWindow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PositiveThirdCyclotomicIdeals.lean/declarations/cyclotomicwindow.md) | 10 | `declaration-track:55fa1b7ac2e5f77b2cd0f082b82e432f2e0a5ae44bcc14df4fdca0c296c5d473` |
+| 2 | `lemma` | [cyclotomicWindow_compact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PositiveThirdCyclotomicIdeals.lean/declarations/cyclotomicwindow-compact.md) | 11 | `result-track:fab2e1a284ebd3ae039bdaa50eb0a03c499ccd2a2aad0f21340bf062b88fd1dc` |
+| 3 | `lemma` | [cyclotomicWindow_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PositiveThirdCyclotomicIdeals.lean/declarations/cyclotomicwindow-one.md) | 12 | `result-track:5fc3c2cefa0babaa447b4feeddc022b7ff8ce7f9de4408310a1341f10006afd8` |
+| 4 | `def` | [cyclotomicTriple](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PositiveThirdCyclotomicIdeals.lean/declarations/cyclotomictriple.md) | 15 | `declaration-track:0ec688806934b035b97612e7aa08b3f5cbaf3887cfe4498507266176743653bf` |
+| 5 | `lemma` | [cyclotomicTriple_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PositiveThirdCyclotomicIdeals.lean/declarations/cyclotomictriple-zero.md) | 19 | `result-track:26efa400edcdc3706e088a966ab73f4020a4d074522c224ad481220879e5bbdb` |
+| 6 | `lemma` | [cyclotomicTriple_window](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PositiveThirdCyclotomicIdeals.lean/declarations/cyclotomictriple-window.md) | 23 | `result-track:e124a8764cc86533267e14346b1a7b104aaba11a61f837e89cb6362f58a4ea27` |
+| 7 | `theorem` | [actual_cyclotomic_finite_support](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PositiveThirdCyclotomicIdeals.lean/declarations/actual-cyclotomic-finite-support.md) | 31 | `result-track:1428b9421031bf8f625d18163aab1a88a0adc2343838b4c7e5835556f90d076a` |
+| 8 | `lemma` | [principal_two_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PositiveThirdCyclotomicIdeals.lean/declarations/principal-two-ne-zero.md) | 35 | `result-track:5e5bcdb139358175235e510f2d270780a580ffae127abf716f46c72adc47044f` |
+| 9 | `theorem` | [actual_principal_two_term](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PositiveThirdCyclotomicIdeals.lean/declarations/actual-principal-two-term.md) | 42 | `result-track:c58a80ffddfaf1bd56104a64ec187aab29c1627f7d4678bce6b9991e6cd37c84` |
+| 10 | `lemma` | [integer_principal_two_absNorm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PositiveThirdCyclotomicIdeals.lean/declarations/integer-principal-two-absnorm.md) | 56 | `result-track:128aae549ffbedd8731b5aca151cd4b10cb4ec51124a920ec76d247f158690a5` |
+| 11 | `theorem` | [actual_integer_norm_identification_false](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PositiveThirdCyclotomicIdeals.lean/declarations/actual-integer-norm-identification-false.md) | 60 | `result-track:985584afd3bb4a8dafeaa9da5604fbc62b5c3a56e92bca1bcc628e12ed996fbf` |
+| 12 | `lemma` | [actual_ring_rank_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PositiveThirdCyclotomicIdeals.lean/declarations/actual-ring-rank-two.md) | 65 | `result-track:d103a2cd1d4a3e3ca4c1265fa72a8133424e773f8e07589315f8bce98a069b57` |
+| 13 | `lemma` | [actual_zero_principal_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PositiveThirdCyclotomicIdeals.lean/declarations/actual-zero-principal-norm.md) | 68 | `result-track:3ca4c11e84ef2c9bb7797333a4437845bad92eb00c9b030849159e6eab9da03b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

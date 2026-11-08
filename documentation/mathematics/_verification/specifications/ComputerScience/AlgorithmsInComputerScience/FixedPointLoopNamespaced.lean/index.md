@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/FixedPointLoopNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/FixedPointLoopNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FixedPointLoopNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FixedPointLoopNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [fixedPointPhases](../../../../../ComputerScience/AlgorithmsInComputerScience/FixedPointLoopNamespaced.lean/declarations/fixedpointphases.md) | 18 | `declaration-track:0a57c0467d33dd54790a6a00072ee06319f8ca1c54dd3c1dd025bb641e46a68d` |
-| 2 | `theorem` | [fixedPointPhases_count](../../../../../ComputerScience/AlgorithmsInComputerScience/FixedPointLoopNamespaced.lean/declarations/fixedpointphases-count.md) | 28 | `result-track:84552b5f261c5d3dbf8e164cd2476645163354402ae1d6c35562e70fbf3fdabd` |
-| 3 | `theorem` | [fixedPointPhase_centerControlled](../../../../../ComputerScience/AlgorithmsInComputerScience/FixedPointLoopNamespaced.lean/declarations/fixedpointphase-centercontrolled.md) | 32 | `result-track:ea63b36421755d1e751287e6e28cd8c2ab0f8941f86521064ec8001750948ef9` |
+| 1 | `def` | [fixedPointPhases](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FixedPointLoopNamespaced.lean/declarations/fixedpointphases.md) | 18 | `declaration-track:0a57c0467d33dd54790a6a00072ee06319f8ca1c54dd3c1dd025bb641e46a68d` |
+| 2 | `theorem` | [fixedPointPhases_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FixedPointLoopNamespaced.lean/declarations/fixedpointphases-count.md) | 28 | `result-track:84552b5f261c5d3dbf8e164cd2476645163354402ae1d6c35562e70fbf3fdabd` |
+| 3 | `theorem` | [fixedPointPhase_centerControlled](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/FixedPointLoopNamespaced.lean/declarations/fixedpointphase-centercontrolled.md) | 32 | `result-track:ea63b36421755d1e751287e6e28cd8c2ab0f8941f86521064ec8001750948ef9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

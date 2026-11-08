@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/Embedding.lean/index.md) · [Full source](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/Embedding.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/Embedding.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/Embedding.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,10 +60,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_embedding_disjoint_range_of_add_le_ENat_card](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/Embedding.lean/declarations/exists-embedding-disjoint-range-of-add-le-enat-card.md) | 41 | `result-track:b5641eed52707759485b896ec4c637a65596d57b20160c69da63e8c3dcc88d68` |
-| 2 | `theorem` | [exists_embedding_disjoint_range_of_add_le_Nat_card](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/Embedding.lean/declarations/exists-embedding-disjoint-range-of-add-le-nat-card.md) | 59 | `result-track:00af2581acfc6f1a121acfed914b768a3b9fd16ae4970bf5b27392f8f700e1b5` |
-| 3 | `theorem` | [restrictSurjective_of_add_le_ENatCard](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/Embedding.lean/declarations/restrictsurjective-of-add-le-enatcard.md) | 65 | `result-track:187a9e4953494420a52bd825787cf3bb08bd1e428c91f1cb77498d077db4c84c` |
-| 4 | `theorem` | [restrictSurjective_of_add_le_natCard](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/Embedding.lean/declarations/restrictsurjective-of-add-le-natcard.md) | 75 | `result-track:e7a4d4b85b666a8c43e3676f795ce37bd8eef9fcb4f68ea1fd04ba88470d7463` |
+| 1 | `theorem` | [exists_embedding_disjoint_range_of_add_le_ENat_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/Embedding.lean/declarations/exists-embedding-disjoint-range-of-add-le-enat-card.md) | 41 | `result-track:b5641eed52707759485b896ec4c637a65596d57b20160c69da63e8c3dcc88d68` |
+| 2 | `theorem` | [exists_embedding_disjoint_range_of_add_le_Nat_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/Embedding.lean/declarations/exists-embedding-disjoint-range-of-add-le-nat-card.md) | 59 | `result-track:00af2581acfc6f1a121acfed914b768a3b9fd16ae4970bf5b27392f8f700e1b5` |
+| 3 | `theorem` | [restrictSurjective_of_add_le_ENatCard](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/Embedding.lean/declarations/restrictsurjective-of-add-le-enatcard.md) | 65 | `result-track:187a9e4953494420a52bd825787cf3bb08bd1e428c91f1cb77498d077db4c84c` |
+| 4 | `theorem` | [restrictSurjective_of_add_le_natCard](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/Embedding.lean/declarations/restrictsurjective-of-add-le-natcard.md) | 75 | `result-track:e7a4d4b85b666a8c43e3676f795ce37bd8eef9fcb4f68ea1fd04ba88470d7463` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

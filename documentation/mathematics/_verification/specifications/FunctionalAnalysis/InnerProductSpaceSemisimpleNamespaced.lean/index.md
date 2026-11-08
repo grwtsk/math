@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/InnerProductSpaceSemisimpleNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/InnerProductSpaceSemisimpleNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpaceSemisimpleNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpaceSemisimpleNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [orthogonalComplement_mem_invtSubmodule](../../../../FunctionalAnalysis/InnerProductSpaceSemisimpleNamespaced.lean/declarations/orthogonalcomplement-mem-invtsubmodule.md) | 34 | `result-track:0991bef3546da7b47438293affbd05d0924fe9fb30bb8cce6c04125c285b67f7` |
-| 2 | `theorem` | [isFinitelySemisimple](../../../../FunctionalAnalysis/InnerProductSpaceSemisimpleNamespaced.lean/declarations/isfinitelysemisimple.md) | 39 | `result-track:fd60d70182602f9d9d1b5944d8a2c55689e540d94972eaf76be1519e7b8d4d6f` |
+| 1 | `lemma` | [orthogonalComplement_mem_invtSubmodule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpaceSemisimpleNamespaced.lean/declarations/orthogonalcomplement-mem-invtsubmodule.md) | 34 | `result-track:0991bef3546da7b47438293affbd05d0924fe9fb30bb8cce6c04125c285b67f7` |
+| 2 | `theorem` | [isFinitelySemisimple](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpaceSemisimpleNamespaced.lean/declarations/isfinitelysemisimple.md) | 39 | `result-track:fd60d70182602f9d9d1b5944d8a2c55689e540d94972eaf76be1519e7b8d4d6f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

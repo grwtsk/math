@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BraidNonclaimClosureNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BraidNonclaimClosureNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BraidNonclaimClosureNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BraidNonclaimClosureNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [canonicalNonclaimClosure](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BraidNonclaimClosureNamespaced.lean/declarations/canonicalnonclaimclosure.md) | 17 | `declaration-track:9626b604efc9982c050cd6d91c1e4aff3c8f9d6374af7701674af30bbfeb9dfe` |
-| 2 | `theorem` | [default_contract_nonclaims_closed](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BraidNonclaimClosureNamespaced.lean/declarations/default-contract-nonclaims-closed.md) | 20 | `result-track:3e9ed2095156141c8c1fbe2fa8ace3ddac04702380ebf82c7a4a3bae3890ef28` |
+| 1 | `def` | [canonicalNonclaimClosure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BraidNonclaimClosureNamespaced.lean/declarations/canonicalnonclaimclosure.md) | 17 | `declaration-track:9626b604efc9982c050cd6d91c1e4aff3c8f9d6374af7701674af30bbfeb9dfe` |
+| 2 | `theorem` | [default_contract_nonclaims_closed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BraidNonclaimClosureNamespaced.lean/declarations/default-contract-nonclaims-closed.md) | 20 | `result-track:3e9ed2095156141c8c1fbe2fa8ace3ddac04702380ebf82c7a4a3bae3890ef28` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

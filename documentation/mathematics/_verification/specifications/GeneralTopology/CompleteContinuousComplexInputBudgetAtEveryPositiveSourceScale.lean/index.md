@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/CompleteContinuousComplexInputBudgetAtEveryPositiveSourceScale.lean/index.md) · [Full source](../../../../GeneralTopology/CompleteContinuousComplexInputBudgetAtEveryPositiveSourceScale.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompleteContinuousComplexInputBudgetAtEveryPositiveSourceScale.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompleteContinuousComplexInputBudgetAtEveryPositiveSourceScale.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [real_embedding_retains_positive_domain_continuity](../../../../GeneralTopology/CompleteContinuousComplexInputBudgetAtEveryPositiveSourceScale.lean/declarations/real-embedding-retains-positive-domain-continuity.md) | 24 | `result-track:2994c76d73993e1b8bdc70f37e6d30c09634fddb35335d1809da493f4995c7ec` |
-| 2 | `theorem` | [every_continuous_complex_product_genuinely_integrable](../../../../GeneralTopology/CompleteContinuousComplexInputBudgetAtEveryPositiveSourceScale.lean/declarations/every-continuous-complex-product-genuinely-integrable.md) | 28 | `result-track:f1cec1c437678cb973f95b5460413a835bbe0cbd9d07256254f39788680e4185` |
-| 3 | `theorem` | [continuous_complex_inputs_approach_every_positive_scale](../../../../GeneralTopology/CompleteContinuousComplexInputBudgetAtEveryPositiveSourceScale.lean/declarations/continuous-complex-inputs-approach-every-positive-scale.md) | 46 | `result-track:c1092e2d99921ffa9e4bd196419aba5bc89c2d809b1f983742f003398769de47` |
-| 4 | `theorem` | [exact_continuous_complex_input_budget_every_positive_scale](../../../../GeneralTopology/CompleteContinuousComplexInputBudgetAtEveryPositiveSourceScale.lean/declarations/exact-continuous-complex-input-budget-every-positive-scale.md) | 60 | `result-track:df0db9582bf597628c59e72549eb4fbfde0223a7350cd21731db479c1f398499` |
+| 1 | `theorem` | [real_embedding_retains_positive_domain_continuity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompleteContinuousComplexInputBudgetAtEveryPositiveSourceScale.lean/declarations/real-embedding-retains-positive-domain-continuity.md) | 24 | `result-track:2994c76d73993e1b8bdc70f37e6d30c09634fddb35335d1809da493f4995c7ec` |
+| 2 | `theorem` | [every_continuous_complex_product_genuinely_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompleteContinuousComplexInputBudgetAtEveryPositiveSourceScale.lean/declarations/every-continuous-complex-product-genuinely-integrable.md) | 28 | `result-track:f1cec1c437678cb973f95b5460413a835bbe0cbd9d07256254f39788680e4185` |
+| 3 | `theorem` | [continuous_complex_inputs_approach_every_positive_scale](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompleteContinuousComplexInputBudgetAtEveryPositiveSourceScale.lean/declarations/continuous-complex-inputs-approach-every-positive-scale.md) | 46 | `result-track:c1092e2d99921ffa9e4bd196419aba5bc89c2d809b1f983742f003398769de47` |
+| 4 | `theorem` | [exact_continuous_complex_input_budget_every_positive_scale](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CompleteContinuousComplexInputBudgetAtEveryPositiveSourceScale.lean/declarations/exact-continuous-complex-input-budget-every-positive-scale.md) | 60 | `result-track:df0db9582bf597628c59e72549eb4fbfde0223a7350cd21731db479c1f398499` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

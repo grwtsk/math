@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourcePNTAdapter.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourcePNTAdapter.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourcePNTAdapter.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourcePNTAdapter.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,15 +60,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [chebyshevPrimePower_eq_psi](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourcePNTAdapter.lean/declarations/chebyshevprimepower-eq-psi.md) | 15 | `result-track:4ce58375f185393960af0c75cfcc234fc1fef7c08ea800e24e38e034f5c12e9b` |
-| 2 | `theorem` | [chebyshevError_eq_psi_sub](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourcePNTAdapter.lean/declarations/chebysheverror-eq-psi-sub.md) | 28 | `result-track:8df02d07e9bd2b56b4163cdbd83f365eae06233a3b939c33c0058b36841904e3` |
-| 3 | `theorem` | [chebyshevError_eq_fun](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourcePNTAdapter.lean/declarations/chebysheverror-eq-fun.md) | 32 | `result-track:a3d19cd4a17f45268a5ba054dfac3e1b6ea723dc38ecdecc84ab4fd690a445b9` |
-| 4 | `theorem` | [chebyshevError_abs_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourcePNTAdapter.lean/declarations/chebysheverror-abs-le.md) | 37 | `result-track:0f0c0155fcafb6eb1d77ab76e54e0bd0a6139e0e93d1ce590aabbfe3d8660630` |
-| 5 | `theorem` | [errorProfile_abs_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourcePNTAdapter.lean/declarations/errorprofile-abs-le.md) | 49 | `result-track:20fb85be20d77b5283528b9a892571116db4b17adac3dda2213841345b227bde` |
-| 6 | `theorem` | [errorProfile_eventual_of_pnt](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourcePNTAdapter.lean/declarations/errorprofile-eventual-of-pnt.md) | 53 | `result-track:b9d777728e9f40b0508fced952ac142a4bcf0bc705c3fb900e77a590a08f717c` |
-| 7 | `theorem` | [errorProfile_tail_of_pnt](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourcePNTAdapter.lean/declarations/errorprofile-tail-of-pnt.md) | 68 | `result-track:5a09f406bc325228e7341b7a9671fbd38786fdf6c8f7e448500ee256f4821641` |
-| 8 | `theorem` | [source_quantitative_pnt](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourcePNTAdapter.lean/declarations/source-quantitative-pnt.md) | 84 | `result-track:5ec4757ea09dadb95bc35491d7d09aad2fcd3a32c28bdcd5f507ce069f52f9a4` |
-| 9 | `theorem` | [errorProfile_quantitative_tail](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourcePNTAdapter.lean/declarations/errorprofile-quantitative-tail.md) | 91 | `result-track:fa127c92e9a7f085e8b78cd3160f10accfc6ab68177babffe1527a22530f40c4` |
+| 1 | `theorem` | [chebyshevPrimePower_eq_psi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourcePNTAdapter.lean/declarations/chebyshevprimepower-eq-psi.md) | 15 | `result-track:4ce58375f185393960af0c75cfcc234fc1fef7c08ea800e24e38e034f5c12e9b` |
+| 2 | `theorem` | [chebyshevError_eq_psi_sub](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourcePNTAdapter.lean/declarations/chebysheverror-eq-psi-sub.md) | 28 | `result-track:8df02d07e9bd2b56b4163cdbd83f365eae06233a3b939c33c0058b36841904e3` |
+| 3 | `theorem` | [chebyshevError_eq_fun](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourcePNTAdapter.lean/declarations/chebysheverror-eq-fun.md) | 32 | `result-track:a3d19cd4a17f45268a5ba054dfac3e1b6ea723dc38ecdecc84ab4fd690a445b9` |
+| 4 | `theorem` | [chebyshevError_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourcePNTAdapter.lean/declarations/chebysheverror-abs-le.md) | 37 | `result-track:0f0c0155fcafb6eb1d77ab76e54e0bd0a6139e0e93d1ce590aabbfe3d8660630` |
+| 5 | `theorem` | [errorProfile_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourcePNTAdapter.lean/declarations/errorprofile-abs-le.md) | 49 | `result-track:20fb85be20d77b5283528b9a892571116db4b17adac3dda2213841345b227bde` |
+| 6 | `theorem` | [errorProfile_eventual_of_pnt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourcePNTAdapter.lean/declarations/errorprofile-eventual-of-pnt.md) | 53 | `result-track:b9d777728e9f40b0508fced952ac142a4bcf0bc705c3fb900e77a590a08f717c` |
+| 7 | `theorem` | [errorProfile_tail_of_pnt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourcePNTAdapter.lean/declarations/errorprofile-tail-of-pnt.md) | 68 | `result-track:5a09f406bc325228e7341b7a9671fbd38786fdf6c8f7e448500ee256f4821641` |
+| 8 | `theorem` | [source_quantitative_pnt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourcePNTAdapter.lean/declarations/source-quantitative-pnt.md) | 84 | `result-track:5ec4757ea09dadb95bc35491d7d09aad2fcd3a32c28bdcd5f507ce069f52f9a4` |
+| 9 | `theorem` | [errorProfile_quantitative_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourcePNTAdapter.lean/declarations/errorprofile-quantitative-tail.md) | 91 | `result-track:fa127c92e9a7f085e8b78cd3160f10accfc6ab68177babffe1527a22530f40c4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

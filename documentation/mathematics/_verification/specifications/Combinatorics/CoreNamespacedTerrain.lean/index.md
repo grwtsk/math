@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/CoreNamespacedTerrain.lean/index.md) · [Full source](../../../../Combinatorics/CoreNamespacedTerrain.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoreNamespacedTerrain.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoreNamespacedTerrain.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Terrain](../../../../Combinatorics/CoreNamespacedTerrain.lean/declarations/terrain.md) | 28 | `declaration-track:79390244cf9998d0030bf93f3e4ac537436563315e95aeeb2844bc8eeafced83` |
-| 2 | `def` | [Adjacent](../../../../Combinatorics/CoreNamespacedTerrain.lean/declarations/adjacent.md) | 36 | `declaration-track:1ce22ca98e9b82889bed02f4b81fe9083e18c52f11c286390c8263e9fffbfd36` |
-| 3 | `theorem` | [adjacent_comm](../../../../Combinatorics/CoreNamespacedTerrain.lean/declarations/adjacent-comm.md) | 40 | `result-track:76b84578ece52dc513267d926d9630f130ae3f77acc3fe2ca651059a41a3bec2` |
-| 4 | `theorem` | [not_adjacent_self](../../../../Combinatorics/CoreNamespacedTerrain.lean/declarations/not-adjacent-self.md) | 45 | `result-track:4ee16317b6475713ba6b2971c2ec1045d1c6fd6228557c6f5441798a201b8627` |
-| 5 | `structure` | [TerrainSection](../../../../Combinatorics/CoreNamespacedTerrain.lean/declarations/terrainsection.md) | 53 | `declaration-track:58a040b758b39fd061b3b00f9aef6e6b4d8d52967c52b7f34503d8667b8a9daa` |
-| 6 | `structure` | [Obstruction](../../../../Combinatorics/CoreNamespacedTerrain.lean/declarations/obstruction.md) | 58 | `declaration-track:ef8e2a19c230f2ef18d6c69aed5d6d943e0a22b7b05a193cba4b59d5414ea1f1` |
+| 1 | `structure` | [Terrain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoreNamespacedTerrain.lean/declarations/terrain.md) | 28 | `declaration-track:79390244cf9998d0030bf93f3e4ac537436563315e95aeeb2844bc8eeafced83` |
+| 2 | `def` | [Adjacent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoreNamespacedTerrain.lean/declarations/adjacent.md) | 36 | `declaration-track:1ce22ca98e9b82889bed02f4b81fe9083e18c52f11c286390c8263e9fffbfd36` |
+| 3 | `theorem` | [adjacent_comm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoreNamespacedTerrain.lean/declarations/adjacent-comm.md) | 40 | `result-track:76b84578ece52dc513267d926d9630f130ae3f77acc3fe2ca651059a41a3bec2` |
+| 4 | `theorem` | [not_adjacent_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoreNamespacedTerrain.lean/declarations/not-adjacent-self.md) | 45 | `result-track:4ee16317b6475713ba6b2971c2ec1045d1c6fd6228557c6f5441798a201b8627` |
+| 5 | `structure` | [TerrainSection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoreNamespacedTerrain.lean/declarations/terrainsection.md) | 53 | `declaration-track:58a040b758b39fd061b3b00f9aef6e6b4d8d52967c52b7f34503d8667b8a9daa` |
+| 6 | `structure` | [Obstruction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/CoreNamespacedTerrain.lean/declarations/obstruction.md) | 58 | `declaration-track:ef8e2a19c230f2ef18d6c69aed5d6d943e0a22b7b05a193cba4b59d5414ea1f1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

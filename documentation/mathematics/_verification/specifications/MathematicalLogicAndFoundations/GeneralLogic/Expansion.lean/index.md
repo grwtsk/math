@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Expansion.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Expansion.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Expansion.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Expansion.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SpectralShellEncoded](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Expansion.lean/declarations/spectralshellencoded.md) | 21 | `declaration-track:df3f5c24dc66c35fbf57b46c6938cd67706943867aa25fdf9e6b331f774ba4ab` |
-| 2 | `theorem` | [ext](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Expansion.lean/declarations/ext.md) | 28 | `result-track:9ee43fd3a24bd8ee9e24deeb8ef4655bdab8c6bf3802ce1307ca861af9ffc724` |
-| 3 | `def` | [encodeShell](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Expansion.lean/declarations/encodeshell.md) | 42 | `declaration-track:2b990a83977c1d8c8257298849e6ff7258286f24d79b0d2e9354858fabe21290` |
-| 4 | `def` | [decodeShell](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Expansion.lean/declarations/decodeshell.md) | 50 | `declaration-track:62d3d6823675a1e81109d56d75cd852779e2970acce7485cffbe29872d5393e7` |
-| 5 | `theorem` | [encodeShell_center_value](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Expansion.lean/declarations/encodeshell-center-value.md) | 62 | `result-track:94ccd6af4a291872310037eb2a741b2537aca742855409ab7d92543737594ee5` |
-| 6 | `theorem` | [encodeShell_shell_value](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Expansion.lean/declarations/encodeshell-shell-value.md) | 71 | `result-track:37cacfb2c0ffb15cc9f04c980779077a5596a8b2af9f1f0a0c1650fb532f65ed` |
-| 7 | `theorem` | [decode_encode_shell](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Expansion.lean/declarations/decode-encode-shell.md) | 78 | `result-track:77cfed34969e1ba1cf4693093f26855dbe240f6302e10fdb41e89c3a9ed87645` |
-| 8 | `theorem` | [encode_decode_shell](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Expansion.lean/declarations/encode-decode-shell.md) | 87 | `result-track:fdcc1c60495f92a0f03f10d4873382adad33f7228ad4ce5683ee95a6e58d7503` |
+| 1 | `structure` | [SpectralShellEncoded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Expansion.lean/declarations/spectralshellencoded.md) | 21 | `declaration-track:df3f5c24dc66c35fbf57b46c6938cd67706943867aa25fdf9e6b331f774ba4ab` |
+| 2 | `theorem` | [ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Expansion.lean/declarations/ext.md) | 28 | `result-track:9ee43fd3a24bd8ee9e24deeb8ef4655bdab8c6bf3802ce1307ca861af9ffc724` |
+| 3 | `def` | [encodeShell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Expansion.lean/declarations/encodeshell.md) | 42 | `declaration-track:2b990a83977c1d8c8257298849e6ff7258286f24d79b0d2e9354858fabe21290` |
+| 4 | `def` | [decodeShell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Expansion.lean/declarations/decodeshell.md) | 50 | `declaration-track:62d3d6823675a1e81109d56d75cd852779e2970acce7485cffbe29872d5393e7` |
+| 5 | `theorem` | [encodeShell_center_value](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Expansion.lean/declarations/encodeshell-center-value.md) | 62 | `result-track:94ccd6af4a291872310037eb2a741b2537aca742855409ab7d92543737594ee5` |
+| 6 | `theorem` | [encodeShell_shell_value](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Expansion.lean/declarations/encodeshell-shell-value.md) | 71 | `result-track:37cacfb2c0ffb15cc9f04c980779077a5596a8b2af9f1f0a0c1650fb532f65ed` |
+| 7 | `theorem` | [decode_encode_shell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Expansion.lean/declarations/decode-encode-shell.md) | 78 | `result-track:77cfed34969e1ba1cf4693093f26855dbe240f6302e10fdb41e89c3a9ed87645` |
+| 8 | `theorem` | [encode_decode_shell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Expansion.lean/declarations/encode-decode-shell.md) | 87 | `result-track:fdcc1c60495f92a0f03f10d4873382adad33f7228ad4ce5683ee95a6e58d7503` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

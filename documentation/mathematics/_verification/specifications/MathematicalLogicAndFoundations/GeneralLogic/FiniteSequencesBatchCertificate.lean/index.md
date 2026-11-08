@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesBatchCertificate.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesBatchCertificate.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesBatchCertificate.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesBatchCertificate.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Logic.FiniteSequences.DecisionCertificate`](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesDecisionCertificateHistoricalSourceEdition2.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Logic.FiniteSequences.IncrementalComposition`](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesIncrementalCompositionHistoricalSourceEdition2.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Logic.FiniteSequences.DecisionCertificate`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesDecisionCertificateHistoricalSourceEdition2.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Logic.FiniteSequences.IncrementalComposition`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesIncrementalCompositionHistoricalSourceEdition2.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [decodesSatisfying_sequential_iff_combined](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesBatchCertificate.lean/declarations/decodessatisfying-sequential-iff-combined.md) | 33 | `result-track:7a7ccd80c1d9b3df7c4462715ff7e136e2306d6e28a20353c4e76569d7218e37` |
-| 2 | `theorem` | [reuse_sequential](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesBatchCertificate.lean/declarations/reuse-sequential.md) | 42 | `result-track:6004eb0e90e63997a0f50670f060b3c6b44f7945bd588bbcba6576474caabaf6` |
-| 3 | `theorem` | [reuse_combined](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesBatchCertificate.lean/declarations/reuse-combined.md) | 51 | `result-track:8ff1d9087023945e6051ec01911806f848a11e32470057dbeb8c8e4f024ded54` |
-| 4 | `def` | [completeHistoryCertificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesBatchCertificate.lean/declarations/completehistorycertificate.md) | 60 | `declaration-track:91efe01232db2a214310183be73eb85521d222daa0c609be29c0b7dcf202df30` |
-| 5 | `theorem` | [complete_history_reuse](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesBatchCertificate.lean/declarations/complete-history-reuse.md) | 64 | `result-track:49833a84f17b7abf6c5f055e0a4fb01d08db69115ae65692cd1067f011d96f3c` |
-| 6 | `def` | [emptyHistoryCertificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesBatchCertificate.lean/declarations/emptyhistorycertificate.md) | 81 | `declaration-track:4a2005127c837546c1188fb7e09184d4cf93d577b133e9eac78f3e8396695d29` |
-| 7 | `theorem` | [old_evidence_not_append_stable](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesBatchCertificate.lean/declarations/old-evidence-not-append-stable.md) | 85 | `result-track:b103f6c01bd8303e479458fe31526bf2651c3a87f1c331bfc56eea7041c00882` |
+| 1 | `theorem` | [decodesSatisfying_sequential_iff_combined](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesBatchCertificate.lean/declarations/decodessatisfying-sequential-iff-combined.md) | 33 | `result-track:7a7ccd80c1d9b3df7c4462715ff7e136e2306d6e28a20353c4e76569d7218e37` |
+| 2 | `theorem` | [reuse_sequential](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesBatchCertificate.lean/declarations/reuse-sequential.md) | 42 | `result-track:6004eb0e90e63997a0f50670f060b3c6b44f7945bd588bbcba6576474caabaf6` |
+| 3 | `theorem` | [reuse_combined](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesBatchCertificate.lean/declarations/reuse-combined.md) | 51 | `result-track:8ff1d9087023945e6051ec01911806f848a11e32470057dbeb8c8e4f024ded54` |
+| 4 | `def` | [completeHistoryCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesBatchCertificate.lean/declarations/completehistorycertificate.md) | 60 | `declaration-track:91efe01232db2a214310183be73eb85521d222daa0c609be29c0b7dcf202df30` |
+| 5 | `theorem` | [complete_history_reuse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesBatchCertificate.lean/declarations/complete-history-reuse.md) | 64 | `result-track:49833a84f17b7abf6c5f055e0a4fb01d08db69115ae65692cd1067f011d96f3c` |
+| 6 | `def` | [emptyHistoryCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesBatchCertificate.lean/declarations/emptyhistorycertificate.md) | 81 | `declaration-track:4a2005127c837546c1188fb7e09184d4cf93d577b133e9eac78f3e8396695d29` |
+| 7 | `theorem` | [old_evidence_not_append_stable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteSequencesBatchCertificate.lean/declarations/old-evidence-not-append-stable.md) | 85 | `result-track:b103f6c01bd8303e479458fe31526bf2651c3a87f1c331bfc56eea7041c00882` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

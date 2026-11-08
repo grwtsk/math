@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/UniqueZeroNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/UniqueZeroNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/UniqueZeroNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/UniqueZeroNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,17 +57,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [HasSimpleZero](../../../../../MathematicalLogicAndFoundations/GeneralLogic/UniqueZeroNamespaced.lean/declarations/hassimplezero.md) | 20 | `declaration-track:0cc6bb167e6a5e0aa0c1f6dfdc8e03e47bb124d6defb775db148c98cbfd17162` |
-| 2 | `structure` | [UniqueZeroCertificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/UniqueZeroNamespaced.lean/declarations/uniquezerocertificate.md) | 26 | `declaration-track:c2cc2b80093be69dfffb4c46c67a66e9390d68a173c7dcc26a21d142f6c6e89f` |
-| 3 | `def` | [zero](../../../../../MathematicalLogicAndFoundations/GeneralLogic/UniqueZeroNamespaced.lean/declarations/zero.md) | 39 | `declaration-track:eb7c11e5ae890fad39f645e3bdaff22f35c74037b43c1508f2d307b9c3f34ec9` |
-| 4 | `theorem` | [zero_spec](../../../../../MathematicalLogicAndFoundations/GeneralLogic/UniqueZeroNamespaced.lean/declarations/zero-spec.md) | 54 | `result-track:b58fb226b5ccc6de2fa8214742550ef961ed555bac28e69052e30e61223505f9` |
-| 5 | `theorem` | [zero_mem](../../../../../MathematicalLogicAndFoundations/GeneralLogic/UniqueZeroNamespaced.lean/declarations/zero-mem.md) | 71 | `result-track:a0fc643a897c9c55b154d675da985ba2d81f4c586c3fae9d217715d2f548f7b7` |
-| 6 | `theorem` | [xi_zero](../../../../../MathematicalLogicAndFoundations/GeneralLogic/UniqueZeroNamespaced.lean/declarations/xi-zero.md) | 82 | `result-track:f54c227047a8c87e32c0ae026809c8fb5fa0d239f645750d6a3dce06fed4868c` |
-| 7 | `theorem` | [unique](../../../../../MathematicalLogicAndFoundations/GeneralLogic/UniqueZeroNamespaced.lean/declarations/unique.md) | 93 | `result-track:463869c9bf458eb51c2c72be8f6966d4e8dd3a37119971d9cead5d76d6bf7807` |
-| 8 | `theorem` | [multiplicity_eq_one](../../../../../MathematicalLogicAndFoundations/GeneralLogic/UniqueZeroNamespaced.lean/declarations/multiplicity-eq-one.md) | 123 | `result-track:ae3593b4d2b85908c062a05273bb429dfed5f930f9110b01b3b7182d462e0e4d` |
-| 9 | `theorem` | [simple](../../../../../MathematicalLogicAndFoundations/GeneralLogic/UniqueZeroNamespaced.lean/declarations/simple.md) | 161 | `result-track:33fd069c78aeab86348706cf0aa095360e7a0e0abd55a0ca7e3283457016cbb6` |
-| 10 | `theorem` | [countOne_implies_unique_simple_zero](../../../../../MathematicalLogicAndFoundations/GeneralLogic/UniqueZeroNamespaced.lean/declarations/countone-implies-unique-simple-zero.md) | 178 | `result-track:6fce1e452d7468899272a4e4cc941053d1b85694b9699f5df7e1437d18d1b502` |
-| 11 | `theorem` | [uniqueZero_simple](../../../../../MathematicalLogicAndFoundations/GeneralLogic/UniqueZeroNamespaced.lean/declarations/uniquezero-simple.md) | 206 | `result-track:bbfbd84c8bcf29c4a207d208a27e29c7f219ffe43310b022d23f10437ef416d6` |
+| 1 | `def` | [HasSimpleZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/UniqueZeroNamespaced.lean/declarations/hassimplezero.md) | 20 | `declaration-track:0cc6bb167e6a5e0aa0c1f6dfdc8e03e47bb124d6defb775db148c98cbfd17162` |
+| 2 | `structure` | [UniqueZeroCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/UniqueZeroNamespaced.lean/declarations/uniquezerocertificate.md) | 26 | `declaration-track:c2cc2b80093be69dfffb4c46c67a66e9390d68a173c7dcc26a21d142f6c6e89f` |
+| 3 | `def` | [zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/UniqueZeroNamespaced.lean/declarations/zero.md) | 39 | `declaration-track:eb7c11e5ae890fad39f645e3bdaff22f35c74037b43c1508f2d307b9c3f34ec9` |
+| 4 | `theorem` | [zero_spec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/UniqueZeroNamespaced.lean/declarations/zero-spec.md) | 54 | `result-track:b58fb226b5ccc6de2fa8214742550ef961ed555bac28e69052e30e61223505f9` |
+| 5 | `theorem` | [zero_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/UniqueZeroNamespaced.lean/declarations/zero-mem.md) | 71 | `result-track:a0fc643a897c9c55b154d675da985ba2d81f4c586c3fae9d217715d2f548f7b7` |
+| 6 | `theorem` | [xi_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/UniqueZeroNamespaced.lean/declarations/xi-zero.md) | 82 | `result-track:f54c227047a8c87e32c0ae026809c8fb5fa0d239f645750d6a3dce06fed4868c` |
+| 7 | `theorem` | [unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/UniqueZeroNamespaced.lean/declarations/unique.md) | 93 | `result-track:463869c9bf458eb51c2c72be8f6966d4e8dd3a37119971d9cead5d76d6bf7807` |
+| 8 | `theorem` | [multiplicity_eq_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/UniqueZeroNamespaced.lean/declarations/multiplicity-eq-one.md) | 123 | `result-track:ae3593b4d2b85908c062a05273bb429dfed5f930f9110b01b3b7182d462e0e4d` |
+| 9 | `theorem` | [simple](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/UniqueZeroNamespaced.lean/declarations/simple.md) | 161 | `result-track:33fd069c78aeab86348706cf0aa095360e7a0e0abd55a0ca7e3283457016cbb6` |
+| 10 | `theorem` | [countOne_implies_unique_simple_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/UniqueZeroNamespaced.lean/declarations/countone-implies-unique-simple-zero.md) | 178 | `result-track:6fce1e452d7468899272a4e4cc941053d1b85694b9699f5df7e1437d18d1b502` |
+| 11 | `theorem` | [uniqueZero_simple](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/UniqueZeroNamespaced.lean/declarations/uniquezero-simple.md) | 206 | `result-track:bbfbd84c8bcf29c4a207d208a27e29c7f219ffe43310b022d23f10437ef416d6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

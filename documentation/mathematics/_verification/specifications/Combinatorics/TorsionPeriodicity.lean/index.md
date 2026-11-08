@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/TorsionPeriodicity.lean/index.md) · [Full source](../../../../Combinatorics/TorsionPeriodicity.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TorsionPeriodicity.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TorsionPeriodicity.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [period_dividing_of_hasOrder](../../../../Combinatorics/TorsionPeriodicity.lean/declarations/period-dividing-of-hasorder.md) | 20 | `result-track:abb2ef668bd407b9240afdb4765198c33e8b93b196d16e7f6f4a7be84edae2fe` |
-| 2 | `theorem` | [exists_period_dividing_of_isTorsion](../../../../Combinatorics/TorsionPeriodicity.lean/declarations/exists-period-dividing-of-istorsion.md) | 32 | `result-track:a30149f34180b87a3778b1180b7729e9fe67b573429a1902d3adddf1bc52470e` |
-| 3 | `theorem` | [catalan_torsion_period_dividing_of_hasOrder](../../../../Combinatorics/TorsionPeriodicity.lean/declarations/catalan-torsion-period-dividing-of-hasorder.md) | 44 | `result-track:7e3f1f940cf8dad78181a6d0a4b22f9357d100944b772e846f3b54ff9ddd217f` |
-| 4 | `theorem` | [catalan_torsion_period_on_transported_of_hasOrder](../../../../Combinatorics/TorsionPeriodicity.lean/declarations/catalan-torsion-period-on-transported-of-hasorder.md) | 58 | `result-track:aaf51c0fd88ae5a3bda1d194977734290eaf923d8c7e0b57f88c55a7fd2da6c2` |
+| 1 | `theorem` | [period_dividing_of_hasOrder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TorsionPeriodicity.lean/declarations/period-dividing-of-hasorder.md) | 20 | `result-track:abb2ef668bd407b9240afdb4765198c33e8b93b196d16e7f6f4a7be84edae2fe` |
+| 2 | `theorem` | [exists_period_dividing_of_isTorsion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TorsionPeriodicity.lean/declarations/exists-period-dividing-of-istorsion.md) | 32 | `result-track:a30149f34180b87a3778b1180b7729e9fe67b573429a1902d3adddf1bc52470e` |
+| 3 | `theorem` | [catalan_torsion_period_dividing_of_hasOrder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TorsionPeriodicity.lean/declarations/catalan-torsion-period-dividing-of-hasorder.md) | 44 | `result-track:7e3f1f940cf8dad78181a6d0a4b22f9357d100944b772e846f3b54ff9ddd217f` |
+| 4 | `theorem` | [catalan_torsion_period_on_transported_of_hasOrder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/TorsionPeriodicity.lean/declarations/catalan-torsion-period-on-transported-of-hasorder.md) | 58 | `result-track:aaf51c0fd88ae5a3bda1d194977734290eaf923d8c7e0b57f88c55a7fd2da6c2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

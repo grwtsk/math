@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/SourceCriticalRelativeKernelSignAttempt04.lean/index.md) · [Full source](../../../../RealFunctions/SourceCriticalRelativeKernelSignAttempt04.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceCriticalRelativeKernelSignAttempt04.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceCriticalRelativeKernelSignAttempt04.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [dampedCorrelation](../../../../RealFunctions/SourceCriticalRelativeKernelSignAttempt04.lean/declarations/dampedcorrelation.md) | 21 | `declaration-track:1d7114d012b06ac19b03e33702943f451c594da0ed072dd9d6ede137f116e770` |
-| 2 | `theorem` | [dampedCorrelation_contDiff](../../../../RealFunctions/SourceCriticalRelativeKernelSignAttempt04.lean/declarations/dampedcorrelation-contdiff.md) | 24 | `result-track:011e364dff1cb7571f93f7b864800c964a11cc739077e9fb1d7fd0e7054084e1` |
-| 3 | `theorem` | [dampedCorrelation_deriv](../../../../RealFunctions/SourceCriticalRelativeKernelSignAttempt04.lean/declarations/dampedcorrelation-deriv.md) | 29 | `result-track:f68ea8200a5889edce2435b074c74de3861ccb93ac8026e66943fcb1816734fc` |
-| 4 | `theorem` | [actual_criticalWeight_both_signs](../../../../RealFunctions/SourceCriticalRelativeKernelSignAttempt04.lean/declarations/actual-criticalweight-both-signs.md) | 39 | `result-track:1fcda853c28849507ede7465c25605af9672313f921f41f67c0e0e1a858f8908` |
+| 1 | `def` | [dampedCorrelation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceCriticalRelativeKernelSignAttempt04.lean/declarations/dampedcorrelation.md) | 21 | `declaration-track:1d7114d012b06ac19b03e33702943f451c594da0ed072dd9d6ede137f116e770` |
+| 2 | `theorem` | [dampedCorrelation_contDiff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceCriticalRelativeKernelSignAttempt04.lean/declarations/dampedcorrelation-contdiff.md) | 24 | `result-track:011e364dff1cb7571f93f7b864800c964a11cc739077e9fb1d7fd0e7054084e1` |
+| 3 | `theorem` | [dampedCorrelation_deriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceCriticalRelativeKernelSignAttempt04.lean/declarations/dampedcorrelation-deriv.md) | 29 | `result-track:f68ea8200a5889edce2435b074c74de3861ccb93ac8026e66943fcb1816734fc` |
+| 4 | `theorem` | [actual_criticalWeight_both_signs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/SourceCriticalRelativeKernelSignAttempt04.lean/declarations/actual-criticalweight-both-signs.md) | 39 | `result-track:1fcda853c28849507ede7465c25605af9672313f921f41f67c0e0e1a858f8908` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

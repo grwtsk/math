@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuppliedBitRetraction.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuppliedBitRetraction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuppliedBitRetraction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuppliedBitRetraction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `Folder.Carrier.Bit` — import line 19; external provider; requires a separately pinned dependency.
-- [Bounded Values And Conversion](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BoundedValuesAndConversion.lean/index.md) — import line 21; pinned internal source present.
+- [Bounded Values And Conversion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BoundedValuesAndConversion.lean/index.md) — import line 21; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ByteCodec](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuppliedBitRetraction.lean/declarations/bytecodec.md) | 41 | `declaration-track:2b3bcdbba6335982e5a53ff83004ff93d5376bf6ad811cb36c1b042630049bb3` |
-| 2 | `theorem` | [byteCodec_roundtrip](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuppliedBitRetraction.lean/declarations/bytecodec-roundtrip.md) | 47 | `result-track:3ce2f0556740079cee47512d156d414c42a5c2a288eaf3d3cf389df110b9bcaa` |
-| 3 | `def` | [msb0CodecTarget](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuppliedBitRetraction.lean/declarations/msb0codectarget.md) | 54 | `declaration-track:4f8e484195d857a6bf7a8536942ca8cce0b281775cdf473d289a45d2b21f593c` |
+| 1 | `structure` | [ByteCodec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuppliedBitRetraction.lean/declarations/bytecodec.md) | 41 | `declaration-track:2b3bcdbba6335982e5a53ff83004ff93d5376bf6ad811cb36c1b042630049bb3` |
+| 2 | `theorem` | [byteCodec_roundtrip](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuppliedBitRetraction.lean/declarations/bytecodec-roundtrip.md) | 47 | `result-track:3ce2f0556740079cee47512d156d414c42a5c2a288eaf3d3cf389df110b9bcaa` |
+| 3 | `def` | [msb0CodecTarget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuppliedBitRetraction.lean/declarations/msb0codectarget.md) | 54 | `declaration-track:4f8e484195d857a6bf7a8536942ca8cce0b281775cdf473d289a45d2b21f593c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

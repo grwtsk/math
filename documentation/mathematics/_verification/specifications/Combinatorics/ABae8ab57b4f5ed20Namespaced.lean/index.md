@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ABae8ab57b4f5ed20Namespaced.lean/index.md) · [Full source](../../../../Combinatorics/ABae8ab57b4f5ed20Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ABae8ab57b4f5ed20Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ABae8ab57b4f5ed20Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [StructuralSignature](../../../../Combinatorics/ABae8ab57b4f5ed20Namespaced.lean/declarations/structuralsignature.md) | 25 | `declaration-track:101833bf7e40c56eb97521688c8b207d1bba29aa86f2aee0b8dc5b9f973b7af7` |
+| 1 | `structure` | [StructuralSignature](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ABae8ab57b4f5ed20Namespaced.lean/declarations/structuralsignature.md) | 25 | `declaration-track:101833bf7e40c56eb97521688c8b207d1bba29aa86f2aee0b8dc5b9f973b7af7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

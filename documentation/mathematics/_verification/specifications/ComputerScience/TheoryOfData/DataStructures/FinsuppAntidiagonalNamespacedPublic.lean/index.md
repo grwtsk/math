@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppAntidiagonalNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppAntidiagonalNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppAntidiagonalNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppAntidiagonalNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [antidiagonal'](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppAntidiagonalNamespacedPublic.lean/declarations/antidiagonal.md) | 42 | `declaration-track:644beaae959d6762d6b388a2501bca4db258adb00734e89e11e60e621c932fda` |
-| 2 | `instance` | [instHasAntidiagonal](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppAntidiagonalNamespacedPublic.lean/declarations/insthasantidiagonal.md) | 48 | `declaration-track:3c7f6e7fbe19d8716d0260daa3c509edbdeb2f31bfa5b396ec21d2914d845ce5` |
-| 3 | `theorem` | [antidiagonal_zero](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppAntidiagonalNamespacedPublic.lean/declarations/antidiagonal-zero.md) | 56 | `result-track:cfdbea0417f295a3637426f70c10078d40c11752d8db471a5486c708e2238aa3` |
-| 4 | `theorem` | [prod_antidiagonal_swap](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppAntidiagonalNamespacedPublic.lean/declarations/prod-antidiagonal-swap.md) | 59 | `result-track:f52d2f6ccf38d485e71e48e74740d63bfefa1ce927a1dae5d66c1ca12ca9d985` |
-| 5 | `theorem` | [antidiagonal_single](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppAntidiagonalNamespacedPublic.lean/declarations/antidiagonal-single.md) | 65 | `result-track:d3feaecab15c4ca7c97dfce8815c5ecb905b8ac644b639f100dfc3aafe59f2ff` |
-| 6 | `theorem` | [image_prodMap_embDomain_antidiagonal](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppAntidiagonalNamespacedPublic.lean/declarations/image-prodmap-embdomain-antidiagonal.md) | 85 | `result-track:ae09240eb56eba1168eb754a2d4c0a1ad0a419130fffca5f7ab8987a76b7c0ae` |
-| 7 | `theorem` | [image_sumElim_product_antidiagonal](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppAntidiagonalNamespacedPublic.lean/declarations/image-sumelim-product-antidiagonal.md) | 101 | `result-track:7e9cf8379e31452b0ffeda45c035e56fc781ba4f62782cf6414f5cbec69fa75f` |
+| 1 | `def` | [antidiagonal'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppAntidiagonalNamespacedPublic.lean/declarations/antidiagonal.md) | 42 | `declaration-track:644beaae959d6762d6b388a2501bca4db258adb00734e89e11e60e621c932fda` |
+| 2 | `instance` | [instHasAntidiagonal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppAntidiagonalNamespacedPublic.lean/declarations/insthasantidiagonal.md) | 48 | `declaration-track:3c7f6e7fbe19d8716d0260daa3c509edbdeb2f31bfa5b396ec21d2914d845ce5` |
+| 3 | `theorem` | [antidiagonal_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppAntidiagonalNamespacedPublic.lean/declarations/antidiagonal-zero.md) | 56 | `result-track:cfdbea0417f295a3637426f70c10078d40c11752d8db471a5486c708e2238aa3` |
+| 4 | `theorem` | [prod_antidiagonal_swap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppAntidiagonalNamespacedPublic.lean/declarations/prod-antidiagonal-swap.md) | 59 | `result-track:f52d2f6ccf38d485e71e48e74740d63bfefa1ce927a1dae5d66c1ca12ca9d985` |
+| 5 | `theorem` | [antidiagonal_single](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppAntidiagonalNamespacedPublic.lean/declarations/antidiagonal-single.md) | 65 | `result-track:d3feaecab15c4ca7c97dfce8815c5ecb905b8ac644b639f100dfc3aafe59f2ff` |
+| 6 | `theorem` | [image_prodMap_embDomain_antidiagonal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppAntidiagonalNamespacedPublic.lean/declarations/image-prodmap-embdomain-antidiagonal.md) | 85 | `result-track:ae09240eb56eba1168eb754a2d4c0a1ad0a419130fffca5f7ab8987a76b7c0ae` |
+| 7 | `theorem` | [image_sumElim_product_antidiagonal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/FinsuppAntidiagonalNamespacedPublic.lean/declarations/image-sumelim-product-antidiagonal.md) | 101 | `result-track:7e9cf8379e31452b0ffeda45c035e56fc781ba4f62782cf6414f5cbec69fa75f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

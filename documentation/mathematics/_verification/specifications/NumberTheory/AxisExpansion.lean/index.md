@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/AxisExpansion.lean/index.md) · [Full source](../../../../NumberTheory/AxisExpansion.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AxisExpansion.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AxisExpansion.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [ext](../../../../NumberTheory/AxisExpansion.lean/declarations/ext.md) | 41 | `result-track:a9e414c00b5b98918830544a2ebb029f956693ffc6ae2d911c4ebb0eef24ca43` |
-| 2 | `def` | [axesFrom](../../../../NumberTheory/AxisExpansion.lean/declarations/axesfrom.md) | 53 | `declaration-track:ca4e247c097b522d0bad727830371dbdeb2e032c9cb5c437650e321c4e25a5f0` |
-| 3 | `def` | [axisCardinalities](../../../../NumberTheory/AxisExpansion.lean/declarations/axiscardinalities.md) | 60 | `declaration-track:b7ff5cef166f08e4c4b86c5b1d0bb7f84fec4f4220a4227165f70e5408c171aa` |
-| 4 | `theorem` | [axesFrom_positive](../../../../NumberTheory/AxisExpansion.lean/declarations/axesfrom-positive.md) | 64 | `result-track:3538cf37c077c38d028be8cad7e624987277d522abe870ddf5d65e0ac47b5abb` |
-| 5 | `theorem` | [axisCardinalities_positive](../../../../NumberTheory/AxisExpansion.lean/declarations/axiscardinalities-positive.md) | 78 | `result-track:2a76a36c38737eaae9ed1368be27024a46e0826dd8839988e1c705283ec0872a` |
+| 1 | `theorem` | [ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AxisExpansion.lean/declarations/ext.md) | 41 | `result-track:a9e414c00b5b98918830544a2ebb029f956693ffc6ae2d911c4ebb0eef24ca43` |
+| 2 | `def` | [axesFrom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AxisExpansion.lean/declarations/axesfrom.md) | 53 | `declaration-track:ca4e247c097b522d0bad727830371dbdeb2e032c9cb5c437650e321c4e25a5f0` |
+| 3 | `def` | [axisCardinalities](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AxisExpansion.lean/declarations/axiscardinalities.md) | 60 | `declaration-track:b7ff5cef166f08e4c4b86c5b1d0bb7f84fec4f4220a4227165f70e5408c171aa` |
+| 4 | `theorem` | [axesFrom_positive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AxisExpansion.lean/declarations/axesfrom-positive.md) | 64 | `result-track:3538cf37c077c38d028be8cad7e624987277d522abe870ddf5d65e0ac47b5abb` |
+| 5 | `theorem` | [axisCardinalities_positive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AxisExpansion.lean/declarations/axiscardinalities-positive.md) | 78 | `result-track:2a76a36c38737eaae9ed1368be27024a46e0826dd8839988e1c705283ec0872a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

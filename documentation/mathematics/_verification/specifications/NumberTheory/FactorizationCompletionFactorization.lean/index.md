@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/FactorizationCompletionFactorization.lean/index.md) · [Full source](../../../../NumberTheory/FactorizationCompletionFactorization.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FactorizationCompletionFactorization.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FactorizationCompletionFactorization.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CompletionFactorization](../../../../NumberTheory/FactorizationCompletionFactorization.lean/declarations/completionfactorization.md) | 17 | `declaration-track:cc1dd236440827c90f7e3c3583b95478eafd8f70e9099cb67f3bac5f991f3628` |
-| 2 | `structure` | [CoprimeObstructionCertificate](../../../../NumberTheory/FactorizationCompletionFactorization.lean/declarations/coprimeobstructioncertificate.md) | 41 | `declaration-track:8ef9e7b16b60ac559d5875ab94e1906869d4f7dcb971e05f39da250f23088640` |
-| 3 | `theorem` | [coprime_core_factorization_sound](../../../../NumberTheory/FactorizationCompletionFactorization.lean/declarations/coprime-core-factorization-sound.md) | 80 | `result-track:3e68574f9585688c02d062ee418201dd227c2d6b5bc4cf7436231dc39bbb9712` |
+| 1 | `structure` | [CompletionFactorization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FactorizationCompletionFactorization.lean/declarations/completionfactorization.md) | 17 | `declaration-track:cc1dd236440827c90f7e3c3583b95478eafd8f70e9099cb67f3bac5f991f3628` |
+| 2 | `structure` | [CoprimeObstructionCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FactorizationCompletionFactorization.lean/declarations/coprimeobstructioncertificate.md) | 41 | `declaration-track:8ef9e7b16b60ac559d5875ab94e1906869d4f7dcb971e05f39da250f23088640` |
+| 3 | `theorem` | [coprime_core_factorization_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/FactorizationCompletionFactorization.lean/declarations/coprime-core-factorization-sound.md) | 80 | `result-track:3e68574f9585688c02d062ee418201dd227c2d6b5bc4cf7436231dc39bbb9712` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

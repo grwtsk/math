@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteWindowOverlapFlow.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteWindowOverlapFlow.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteWindowOverlapFlow.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteWindowOverlapFlow.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FinitePatternCountBalancing`](../../../../ProbabilityTheoryAndStochasticProcesses/FinitePatternCountBalancing.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FinitePatternCountBalancing`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FinitePatternCountBalancing.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Tactic` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [windowPrefix](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteWindowOverlapFlow.lean/declarations/windowprefix.md) | 23 | `declaration-track:ee1f5c13db0f22651ca459f3070b06a42dd92a074e9d477b0a1d13bdf05caf35` |
-| 2 | `def` | [windowSuffix](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteWindowOverlapFlow.lean/declarations/windowsuffix.md) | 27 | `declaration-track:cee295516b420aeff3dbd3c21137384d82a71d8a6f736576ed4f233fb92f29e5` |
-| 3 | `theorem` | [windowSuffix_eq_nextPrefix](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteWindowOverlapFlow.lean/declarations/windowsuffix-eq-nextprefix.md) | 31 | `result-track:189e80e2fd7cc02085b453e9a91afecad49594192b108093fa74e86f61e9720c` |
-| 4 | `def` | [windowOutCount](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteWindowOverlapFlow.lean/declarations/windowoutcount.md) | 39 | `declaration-track:085e5116b164b618ecec59725091d6f650be4430abd68be28cc81c1b70c72ce2` |
-| 5 | `def` | [windowInCount](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteWindowOverlapFlow.lean/declarations/windowincount.md) | 44 | `declaration-track:65a455a0315c7c6e427bb6e79310b51c59b95924e03a75d56ab884c1d8e1586e` |
-| 6 | `theorem` | [window_overlap_flow](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteWindowOverlapFlow.lean/declarations/window-overlap-flow.md) | 51 | `result-track:2c5615b2f9603548b6381b404af292c03bebedca45ba3ac9a6646f3f25c8569d` |
+| 1 | `def` | [windowPrefix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteWindowOverlapFlow.lean/declarations/windowprefix.md) | 23 | `declaration-track:ee1f5c13db0f22651ca459f3070b06a42dd92a074e9d477b0a1d13bdf05caf35` |
+| 2 | `def` | [windowSuffix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteWindowOverlapFlow.lean/declarations/windowsuffix.md) | 27 | `declaration-track:cee295516b420aeff3dbd3c21137384d82a71d8a6f736576ed4f233fb92f29e5` |
+| 3 | `theorem` | [windowSuffix_eq_nextPrefix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteWindowOverlapFlow.lean/declarations/windowsuffix-eq-nextprefix.md) | 31 | `result-track:189e80e2fd7cc02085b453e9a91afecad49594192b108093fa74e86f61e9720c` |
+| 4 | `def` | [windowOutCount](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteWindowOverlapFlow.lean/declarations/windowoutcount.md) | 39 | `declaration-track:085e5116b164b618ecec59725091d6f650be4430abd68be28cc81c1b70c72ce2` |
+| 5 | `def` | [windowInCount](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteWindowOverlapFlow.lean/declarations/windowincount.md) | 44 | `declaration-track:65a455a0315c7c6e427bb6e79310b51c59b95924e03a75d56ab884c1d8e1586e` |
+| 6 | `theorem` | [window_overlap_flow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteWindowOverlapFlow.lean/declarations/window-overlap-flow.md) | 51 | `result-track:2c5615b2f9603548b6381b404af292c03bebedca45ba3ac9a6646f3f25c8569d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

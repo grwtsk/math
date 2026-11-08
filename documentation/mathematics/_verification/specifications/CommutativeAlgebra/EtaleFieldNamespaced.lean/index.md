@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/EtaleFieldNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/EtaleFieldNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtaleFieldNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtaleFieldNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [of_isSeparable_aux](../../../../CommutativeAlgebra/EtaleFieldNamespaced.lean/declarations/of-isseparable-aux.md) | 57 | `result-track:ed751ff54a5e9676bb166c1bbd3ddc9e4d98b40f7bf02093a398aeaf2d94deb2` |
-| 2 | `lemma` | [of_isSeparable](../../../../CommutativeAlgebra/EtaleFieldNamespaced.lean/declarations/of-isseparable.md) | 99 | `result-track:161d232abdd11b7347f2f8084d7b4ed98cd2e88187aa4872d4b9b28d20ae14df` |
-| 3 | `theorem` | [iff_isSeparable](../../../../CommutativeAlgebra/EtaleFieldNamespaced.lean/declarations/iff-isseparable.md) | 160 | `result-track:d5212b4f309f818d1da80c944a09c6f85a157350b47b714d6d4c73aeaa3599c5` |
-| 4 | `theorem` | [iff_exists_algEquiv_prod](../../../../CommutativeAlgebra/EtaleFieldNamespaced.lean/declarations/iff-exists-algequiv-prod.md) | 169 | `result-track:42aae828180be425c2fd2ecdcb0f095cb240dd29b6855b55bd92e0ab40794fd2` |
-| 5 | `theorem` | [Algebra.Etale.iff_exists_algEquiv_prod](../../../../CommutativeAlgebra/EtaleFieldNamespaced.lean/declarations/algebra-etale-iff-exists-algequiv-prod.md) | 196 | `result-track:38c90346057a217318192d93946fa2acadf7bdaf5308d2602e57a4d191fcea0b` |
+| 1 | `theorem` | [of_isSeparable_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtaleFieldNamespaced.lean/declarations/of-isseparable-aux.md) | 57 | `result-track:ed751ff54a5e9676bb166c1bbd3ddc9e4d98b40f7bf02093a398aeaf2d94deb2` |
+| 2 | `lemma` | [of_isSeparable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtaleFieldNamespaced.lean/declarations/of-isseparable.md) | 99 | `result-track:161d232abdd11b7347f2f8084d7b4ed98cd2e88187aa4872d4b9b28d20ae14df` |
+| 3 | `theorem` | [iff_isSeparable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtaleFieldNamespaced.lean/declarations/iff-isseparable.md) | 160 | `result-track:d5212b4f309f818d1da80c944a09c6f85a157350b47b714d6d4c73aeaa3599c5` |
+| 4 | `theorem` | [iff_exists_algEquiv_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtaleFieldNamespaced.lean/declarations/iff-exists-algequiv-prod.md) | 169 | `result-track:42aae828180be425c2fd2ecdcb0f095cb240dd29b6855b55bd92e0ab40794fd2` |
+| 5 | `theorem` | [Algebra.Etale.iff_exists_algEquiv_prod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/EtaleFieldNamespaced.lean/declarations/algebra-etale-iff-exists-algequiv-prod.md) | 196 | `result-track:38c90346057a217318192d93946fa2acadf7bdaf5308d2602e57a4d191fcea0b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

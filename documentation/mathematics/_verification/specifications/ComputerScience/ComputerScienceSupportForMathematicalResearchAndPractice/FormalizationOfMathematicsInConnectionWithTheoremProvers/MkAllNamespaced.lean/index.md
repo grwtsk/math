@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MkAllNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MkAllNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MkAllNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MkAllNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [getLeanLibs](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MkAllNamespaced.lean/declarations/getleanlibs.md) | 34 | `declaration-track:60eb298e52e56879dc79baca9ced5e21ac2035e6c8248d966cccb2441f9a116d` |
-| 2 | `def` | [mkAllCLI](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MkAllNamespaced.lean/declarations/mkallcli.md) | 50 | `declaration-track:5bc54dcb3034767d3bb818079b13f6f92b6e34e6bd698ace6d967356a5d12dc0` |
-| 3 | `def` | [mkAll](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MkAllNamespaced.lean/declarations/mkall.md) | 93 | `declaration-track:a1a7990fee1e808983552ef54f14c105cedf125c01c1a3cc4e84d5ea377c43e7` |
-| 4 | `def` | [main](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MkAllNamespaced.lean/declarations/main.md) | 108 | `declaration-track:371309b0e98bf7bec81d45274b8ca868084dfccbaa798a5822976b630f8d0b0f` |
+| 1 | `def` | [getLeanLibs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MkAllNamespaced.lean/declarations/getleanlibs.md) | 34 | `declaration-track:60eb298e52e56879dc79baca9ced5e21ac2035e6c8248d966cccb2441f9a116d` |
+| 2 | `def` | [mkAllCLI](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MkAllNamespaced.lean/declarations/mkallcli.md) | 50 | `declaration-track:5bc54dcb3034767d3bb818079b13f6f92b6e34e6bd698ace6d967356a5d12dc0` |
+| 3 | `def` | [mkAll](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MkAllNamespaced.lean/declarations/mkall.md) | 93 | `declaration-track:a1a7990fee1e808983552ef54f14c105cedf125c01c1a3cc4e84d5ea377c43e7` |
+| 4 | `def` | [main](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/MkAllNamespaced.lean/declarations/main.md) | 108 | `declaration-track:371309b0e98bf7bec81d45274b8ca868084dfccbaa798a5822976b630f8d0b0f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

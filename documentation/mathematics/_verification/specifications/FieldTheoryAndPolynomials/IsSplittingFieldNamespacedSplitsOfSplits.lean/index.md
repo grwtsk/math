@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FieldTheoryAndPolynomials/IsSplittingFieldNamespacedSplitsOfSplits.lean/index.md) · [Full source](../../../../FieldTheoryAndPolynomials/IsSplittingFieldNamespacedSplitsOfSplits.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/IsSplittingFieldNamespacedSplitsOfSplits.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/IsSplittingFieldNamespacedSplitsOfSplits.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,16 +59,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [IsSplittingField](../../../../FieldTheoryAndPolynomials/IsSplittingFieldNamespacedSplitsOfSplits.lean/declarations/issplittingfield.md) | 55 | `declaration-track:849b504d34a895c27c56513a5b664c68ed9e93513ebe17cbffa27332f27d7512` |
-| 2 | `theorem` | [splits](../../../../FieldTheoryAndPolynomials/IsSplittingFieldNamespacedSplitsOfSplits.lean/declarations/splits.md) | 66 | `result-track:79d3bb10009c6b0bbfb653097fb0de34c5b6f7d9e24e3b291d69db96f1588f4c` |
-| 3 | `theorem` | [adjoin_rootSet](../../../../FieldTheoryAndPolynomials/IsSplittingFieldNamespacedSplitsOfSplits.lean/declarations/adjoin-rootset.md) | 72 | `result-track:51004f855fef254077ce1f0f67f47a0be49d5bcfbf1c19a3971838daddab04bb` |
-| 4 | `instance` | [map](../../../../FieldTheoryAndPolynomials/IsSplittingFieldNamespacedSplitsOfSplits.lean/declarations/map.md) | 81 | `declaration-track:88e39d0fdd73ac35a9a9e9640c6e29a7467f56e7c2562a0dcf4bc1a528394107` |
-| 5 | `theorem` | [splits_iff](../../../../FieldTheoryAndPolynomials/IsSplittingFieldNamespacedSplitsOfSplits.lean/declarations/splits-iff.md) | 89 | `result-track:bc38dc9c4c56d03cb9a676814059ab8391fefc9ddab60d64e4b8a67836c5cf54` |
-| 6 | `theorem` | [mul](../../../../FieldTheoryAndPolynomials/IsSplittingFieldNamespacedSplitsOfSplits.lean/declarations/mul.md) | 105 | `result-track:1ce28be833c708abb0f5620609d53265d1b1888c89d69e23b3418d760601de9a` |
-| 7 | `def` | [lift](../../../../FieldTheoryAndPolynomials/IsSplittingFieldNamespacedSplitsOfSplits.lean/declarations/lift.md) | 123 | `declaration-track:1d003f454cce8b33c058fe987adcfa3e15b36eabc19faabdb8dc284653a0f249` |
-| 8 | `theorem` | [finiteDimensional](../../../../FieldTheoryAndPolynomials/IsSplittingFieldNamespacedSplitsOfSplits.lean/declarations/finitedimensional.md) | 139 | `result-track:da82ef312389a2b9fe5c579201c5c213d4fff08dca59da724d7782ee3594f7e5` |
-| 9 | `theorem` | [of_algEquiv](../../../../FieldTheoryAndPolynomials/IsSplittingFieldNamespacedSplitsOfSplits.lean/declarations/of-algequiv.md) | 148 | `result-track:a9cd4891e231da0ca0269add69d1f8be347b8ed75b6db3b1dd2321a065f809d6` |
-| 10 | `theorem` | [splits_of_splits](../../../../FieldTheoryAndPolynomials/IsSplittingFieldNamespacedSplitsOfSplits.lean/declarations/splits-of-splits.md) | 167 | `result-track:367185bff01801c23e097858c5ac3dba7ba05fd651cfc5c659c0535758457872` |
+| 1 | `class` | [IsSplittingField](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/IsSplittingFieldNamespacedSplitsOfSplits.lean/declarations/issplittingfield.md) | 55 | `declaration-track:849b504d34a895c27c56513a5b664c68ed9e93513ebe17cbffa27332f27d7512` |
+| 2 | `theorem` | [splits](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/IsSplittingFieldNamespacedSplitsOfSplits.lean/declarations/splits.md) | 66 | `result-track:79d3bb10009c6b0bbfb653097fb0de34c5b6f7d9e24e3b291d69db96f1588f4c` |
+| 3 | `theorem` | [adjoin_rootSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/IsSplittingFieldNamespacedSplitsOfSplits.lean/declarations/adjoin-rootset.md) | 72 | `result-track:51004f855fef254077ce1f0f67f47a0be49d5bcfbf1c19a3971838daddab04bb` |
+| 4 | `instance` | [map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/IsSplittingFieldNamespacedSplitsOfSplits.lean/declarations/map.md) | 81 | `declaration-track:88e39d0fdd73ac35a9a9e9640c6e29a7467f56e7c2562a0dcf4bc1a528394107` |
+| 5 | `theorem` | [splits_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/IsSplittingFieldNamespacedSplitsOfSplits.lean/declarations/splits-iff.md) | 89 | `result-track:bc38dc9c4c56d03cb9a676814059ab8391fefc9ddab60d64e4b8a67836c5cf54` |
+| 6 | `theorem` | [mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/IsSplittingFieldNamespacedSplitsOfSplits.lean/declarations/mul.md) | 105 | `result-track:1ce28be833c708abb0f5620609d53265d1b1888c89d69e23b3418d760601de9a` |
+| 7 | `def` | [lift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/IsSplittingFieldNamespacedSplitsOfSplits.lean/declarations/lift.md) | 123 | `declaration-track:1d003f454cce8b33c058fe987adcfa3e15b36eabc19faabdb8dc284653a0f249` |
+| 8 | `theorem` | [finiteDimensional](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/IsSplittingFieldNamespacedSplitsOfSplits.lean/declarations/finitedimensional.md) | 139 | `result-track:da82ef312389a2b9fe5c579201c5c213d4fff08dca59da724d7782ee3594f7e5` |
+| 9 | `theorem` | [of_algEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/IsSplittingFieldNamespacedSplitsOfSplits.lean/declarations/of-algequiv.md) | 148 | `result-track:a9cd4891e231da0ca0269add69d1f8be347b8ed75b6db3b1dd2321a065f809d6` |
+| 10 | `theorem` | [splits_of_splits](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/IsSplittingFieldNamespacedSplitsOfSplits.lean/declarations/splits-of-splits.md) | 167 | `result-track:367185bff01801c23e097858c5ac3dba7ba05fd651cfc5c659c0535758457872` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

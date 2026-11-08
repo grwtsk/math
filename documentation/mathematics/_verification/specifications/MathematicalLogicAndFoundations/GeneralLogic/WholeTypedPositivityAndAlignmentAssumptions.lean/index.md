@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeTypedPositivityAndAlignmentAssumptions.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeTypedPositivityAndAlignmentAssumptions.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeTypedPositivityAndAlignmentAssumptions.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeTypedPositivityAndAlignmentAssumptions.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PositivitySelfAdjointnessCriterion](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeTypedPositivityAndAlignmentAssumptions.lean/declarations/positivityselfadjointnesscriterion.md) | 42 | `declaration-track:70dc387fab7fe6348a9544fa970e9af9f503d9437d187cec99289f7bc4aef49f` |
-| 2 | `theorem` | [positivity_selfadjoint_rules_out_offline](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeTypedPositivityAndAlignmentAssumptions.lean/declarations/positivity-selfadjoint-rules-out-offline.md) | 51 | `result-track:802bf4e25b4e37266233d12d18b31ee4e6ef02be50350f8c9b92b6d8c1278c87` |
-| 3 | `structure` | [TraceIdentityToBoundaryAlignment](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeTypedPositivityAndAlignmentAssumptions.lean/declarations/traceidentitytoboundaryalignment.md) | 60 | `declaration-track:847fe33e1fdba6e4e163c0916413760b238b3d5d887c7d2dd9f548cf21587aab` |
-| 4 | `theorem` | [trace_identity_plus_positivity_forces_alignment](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholeTypedPositivityAndAlignmentAssumptions.lean/declarations/trace-identity-plus-positivity-forces-alignment.md) | 67 | `result-track:152243deea06ada7c3cd06f24d37a3f272533b810505a540b13956d57d65b4c2` |
+| 1 | `structure` | [PositivitySelfAdjointnessCriterion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeTypedPositivityAndAlignmentAssumptions.lean/declarations/positivityselfadjointnesscriterion.md) | 42 | `declaration-track:70dc387fab7fe6348a9544fa970e9af9f503d9437d187cec99289f7bc4aef49f` |
+| 2 | `theorem` | [positivity_selfadjoint_rules_out_offline](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeTypedPositivityAndAlignmentAssumptions.lean/declarations/positivity-selfadjoint-rules-out-offline.md) | 51 | `result-track:802bf4e25b4e37266233d12d18b31ee4e6ef02be50350f8c9b92b6d8c1278c87` |
+| 3 | `structure` | [TraceIdentityToBoundaryAlignment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeTypedPositivityAndAlignmentAssumptions.lean/declarations/traceidentitytoboundaryalignment.md) | 60 | `declaration-track:847fe33e1fdba6e4e163c0916413760b238b3d5d887c7d2dd9f548cf21587aab` |
+| 4 | `theorem` | [trace_identity_plus_positivity_forces_alignment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholeTypedPositivityAndAlignmentAssumptions.lean/declarations/trace-identity-plus-positivity-forces-alignment.md) | 67 | `result-track:152243deea06ada7c3cd06f24d37a3f272533b810505a540b13956d57d65b4c2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

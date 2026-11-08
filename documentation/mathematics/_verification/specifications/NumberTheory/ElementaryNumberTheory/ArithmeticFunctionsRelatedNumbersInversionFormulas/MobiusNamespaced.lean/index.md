@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MobiusNamespaced.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MobiusNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MobiusNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MobiusNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mobiusFn](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MobiusNamespaced.lean/declarations/mobiusfn.md) | 26 | `declaration-track:02c4e1bf479b17b12060c03711b234a21fcb70237950227722e68e89e0da8060` |
-| 2 | `theorem` | [mobius_sum_divisors_eq_one_or_zero](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MobiusNamespaced.lean/declarations/mobius-sum-divisors-eq-one-or-zero.md) | 29 | `result-track:cba7a58cc2c8f77b8599a278e2bd8ffcbf32d256ac8f5b9520461d3170d60983` |
-| 3 | `theorem` | [mobius_inversion_finite_checked](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MobiusNamespaced.lean/declarations/mobius-inversion-finite-checked.md) | 46 | `result-track:ba4c6d45c7bd11c1d7ec264d03413f2143f48f6750735a2e8eabe43ec179d6bf` |
-| 4 | `theorem` | [mobius_inversion](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MobiusNamespaced.lean/declarations/mobius-inversion.md) | 69 | `result-track:e7f209d941f00ff987fbac819eea13d7824aa73cd5279b35495afc07d6666480` |
+| 1 | `def` | [mobiusFn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MobiusNamespaced.lean/declarations/mobiusfn.md) | 26 | `declaration-track:02c4e1bf479b17b12060c03711b234a21fcb70237950227722e68e89e0da8060` |
+| 2 | `theorem` | [mobius_sum_divisors_eq_one_or_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MobiusNamespaced.lean/declarations/mobius-sum-divisors-eq-one-or-zero.md) | 29 | `result-track:cba7a58cc2c8f77b8599a278e2bd8ffcbf32d256ac8f5b9520461d3170d60983` |
+| 3 | `theorem` | [mobius_inversion_finite_checked](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MobiusNamespaced.lean/declarations/mobius-inversion-finite-checked.md) | 46 | `result-track:ba4c6d45c7bd11c1d7ec264d03413f2143f48f6750735a2e8eabe43ec179d6bf` |
+| 4 | `theorem` | [mobius_inversion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MobiusNamespaced.lean/declarations/mobius-inversion.md) | 69 | `result-track:e7f209d941f00ff987fbac819eea13d7824aa73cd5279b35495afc07d6666480` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

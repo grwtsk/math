@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ApproximateStageDefectObstruction.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ApproximateStageDefectObstruction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ApproximateStageDefectObstruction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ApproximateStageDefectObstruction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.WeilPositiveLimitCore`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/WeilPositiveLimitCore.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.WeilPositiveLimitCore`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/WeilPositiveLimitCore.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [ExactResidualComparison.negative_gap_le_stage_defect_add_residual](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ApproximateStageDefectObstruction.lean/declarations/exactresidualcomparison-negative-gap-le-stage-defect-add-residual.md) | 22 | `result-track:e5b16d6b5f6bb6745559b1f517e42087e551a8736f9add7533f9c6557b515824` |
-| 2 | `theorem` | [ExactResidualComparison.no_small_error_at_negative_witness](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ApproximateStageDefectObstruction.lean/declarations/exactresidualcomparison-no-small-error-at-negative-witness.md) | 35 | `result-track:203d863a64542dd71b7cd6ac635faad948571546e6e9261025158d02b8cfd328` |
+| 1 | `theorem` | [ExactResidualComparison.negative_gap_le_stage_defect_add_residual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ApproximateStageDefectObstruction.lean/declarations/exactresidualcomparison-negative-gap-le-stage-defect-add-residual.md) | 22 | `result-track:e5b16d6b5f6bb6745559b1f517e42087e551a8736f9add7533f9c6557b515824` |
+| 2 | `theorem` | [ExactResidualComparison.no_small_error_at_negative_witness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ApproximateStageDefectObstruction.lean/declarations/exactresidualcomparison-no-small-error-at-negative-witness.md) | 35 | `result-track:203d863a64542dd71b7cd6ac635faad948571546e6e9261025158d02b8cfd328` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

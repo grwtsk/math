@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/CauSeqFilterPublic.lean/index.md) · [Full source](../../../../GeneralTopology/CauSeqFilterPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CauSeqFilterPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CauSeqFilterPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [CauSeq.tendsto_limit](../../../../GeneralTopology/CauSeqFilterPublic.lean/declarations/causeq-tendsto-limit.md) | 29 | `result-track:72f939a7eb26bd4593a30f922ab075cc8b1b01fa91c996be988aa1f25035fdd7` |
-| 2 | `theorem` | [CauchySeq.isCauSeq](../../../../GeneralTopology/CauSeqFilterPublic.lean/declarations/cauchyseq-iscauseq.md) | 55 | `result-track:cb22af89818f7460caeae26c6659c739fb1dc99aece3e9725d7ae30f9f3e00ab` |
-| 3 | `theorem` | [CauSeq.cauchySeq](../../../../GeneralTopology/CauSeqFilterPublic.lean/declarations/causeq-cauchyseq.md) | 66 | `result-track:8911b1cd8c58728fc977d4af3ddc5b13a58150ca9c6fabdf74826ab60d2ff088` |
-| 4 | `theorem` | [isCauSeq_iff_cauchySeq](../../../../GeneralTopology/CauSeqFilterPublic.lean/declarations/iscauseq-iff-cauchyseq.md) | 84 | `result-track:d033eae93cee732fb88eee5c691d678f6a32c54fd44090c3cc4b1e08b919f710` |
-| 5 | `instance` | [(anonymous)](../../../../GeneralTopology/CauSeqFilterPublic.lean/declarations/instance.md) | 92 | `declaration-track:3967e3e7f8f840e87e52716cd0f291c51ba10d4b60f1897692fb273fbd939d20` |
+| 1 | `theorem` | [CauSeq.tendsto_limit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CauSeqFilterPublic.lean/declarations/causeq-tendsto-limit.md) | 29 | `result-track:72f939a7eb26bd4593a30f922ab075cc8b1b01fa91c996be988aa1f25035fdd7` |
+| 2 | `theorem` | [CauchySeq.isCauSeq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CauSeqFilterPublic.lean/declarations/cauchyseq-iscauseq.md) | 55 | `result-track:cb22af89818f7460caeae26c6659c739fb1dc99aece3e9725d7ae30f9f3e00ab` |
+| 3 | `theorem` | [CauSeq.cauchySeq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CauSeqFilterPublic.lean/declarations/causeq-cauchyseq.md) | 66 | `result-track:8911b1cd8c58728fc977d4af3ddc5b13a58150ca9c6fabdf74826ab60d2ff088` |
+| 4 | `theorem` | [isCauSeq_iff_cauchySeq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CauSeqFilterPublic.lean/declarations/iscauseq-iff-cauchyseq.md) | 84 | `result-track:d033eae93cee732fb88eee5c691d678f6a32c54fd44090c3cc4b1e08b919f710` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CauSeqFilterPublic.lean/declarations/instance.md) | 92 | `declaration-track:3967e3e7f8f840e87e52716cd0f291c51ba10d4b60f1897692fb273fbd939d20` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

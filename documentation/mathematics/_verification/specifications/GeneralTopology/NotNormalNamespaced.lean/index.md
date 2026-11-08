@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/NotNormalNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/NotNormalNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/NotNormalNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/NotNormalNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [IsClosed.mk_lt_continuum](../../../../GeneralTopology/NotNormalNamespaced.lean/declarations/isclosed-mk-lt-continuum.md) | 33 | `result-track:a46d7d845c6a855d6f0b02c8142de59f2986b2702f9212a05abd9a58c8ae1e58` |
-| 2 | `theorem` | [IsClosed.not_normal_of_continuum_le_mk](../../../../GeneralTopology/NotNormalNamespaced.lean/declarations/isclosed-not-normal-of-continuum-le-mk.md) | 64 | `result-track:6efbc62440067f4873e0a7a12337c5af2e8d4aeba98dcd34df5c8a6aed0fba07` |
+| 1 | `theorem` | [IsClosed.mk_lt_continuum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/NotNormalNamespaced.lean/declarations/isclosed-mk-lt-continuum.md) | 33 | `result-track:a46d7d845c6a855d6f0b02c8142de59f2986b2702f9212a05abd9a58c8ae1e58` |
+| 2 | `theorem` | [IsClosed.not_normal_of_continuum_le_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/NotNormalNamespaced.lean/declarations/isclosed-not-normal-of-continuum-le-mk.md) | 64 | `result-track:6efbc62440067f4873e0a7a12337c5af2e8d4aeba98dcd34df5c8a6aed0fba07` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

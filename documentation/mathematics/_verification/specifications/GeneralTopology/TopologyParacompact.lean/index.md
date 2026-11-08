@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/TopologyParacompact.lean/index.md) · [Full source](../../../../GeneralTopology/TopologyParacompact.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyParacompact.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyParacompact.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,18 +58,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [ParacompactSpace](../../../../GeneralTopology/TopologyParacompact.lean/declarations/paracompactspace.md) | 61 | `declaration-track:b2500a1a9a1e61639839daa90709c933795069343ab271d1146b151e834702f4` |
-| 2 | `theorem` | [precise_refinement](../../../../GeneralTopology/TopologyParacompact.lean/declarations/precise-refinement.md) | 73 | `result-track:4fd40d74afbcb554ecb7350079d9b77990264f332a88a8395d5d3116cfdea5a7` |
-| 3 | `theorem` | [precise_refinement_set](../../../../GeneralTopology/TopologyParacompact.lean/declarations/precise-refinement-set.md) | 99 | `result-track:772e31425250bd760f949d27a0820e49e95f4771c7f28ff7c212de130d4c4e2f` |
-| 4 | `theorem` | [ClosedEmbedding.paracompactSpace](../../../../GeneralTopology/TopologyParacompact.lean/declarations/closedembedding-paracompactspace.md) | 115 | `result-track:cff17dae81de586ab87b8c62089c9dbd74e2cf41f1a045b9a87f4741a3cda9b4` |
-| 5 | `theorem` | [Homeomorph.paracompactSpace_iff](../../../../GeneralTopology/TopologyParacompact.lean/declarations/homeomorph-paracompactspace-iff.md) | 127 | `result-track:3f4e9e3a91a4e861d0a3fff74548448ee90e50b1a3be2bd1a304442602b04aff` |
-| 6 | `instance` | [(anonymous)](../../../../GeneralTopology/TopologyParacompact.lean/declarations/instance-source-edition-4.md) | 136 | `declaration-track:e2a41da8e0e5097a8ed52f26c55935a4e20ff03fdd9835b7f12a8297e220f419` |
-| 7 | `instance` | [(anonymous)](../../../../GeneralTopology/TopologyParacompact.lean/declarations/instance-source-edition-2.md) | 162 | `declaration-track:8c305cab04944f806ca02b91388a46a573f9c189e4caf93dc6e7b4b18418ef6c` |
-| 8 | `instance` | [(anonymous)](../../../../GeneralTopology/TopologyParacompact.lean/declarations/instance.md) | 167 | `declaration-track:7f3a4c16dea4c73034afd6fe6fbe302dca3e55628472b0dc44e8ab5600191d20` |
-| 9 | `theorem` | [refinement_of_locallyCompact_sigmaCompact_of_nhds_basis_set](../../../../GeneralTopology/TopologyParacompact.lean/declarations/refinement-of-locallycompact-sigmacompact-of-nhds-basis-set.md) | 196 | `result-track:52ce885b345775dce234b51c6ac8e126728972baba678ea7c3fa25fccad1f9c0` |
-| 10 | `theorem` | [refinement_of_locallyCompact_sigmaCompact_of_nhds_basis](../../../../GeneralTopology/TopologyParacompact.lean/declarations/refinement-of-locallycompact-sigmacompact-of-nhds-basis.md) | 266 | `result-track:d2352037d53b1cb8bcf0651c01fb36937549e882ec0dd1148e5e1fc6ec0e48ca` |
-| 11 | `instance` | [(anonymous)](../../../../GeneralTopology/TopologyParacompact.lean/declarations/instance-source-edition-3.md) | 279 | `declaration-track:99c10063a81f3e500b92d0ecf4139521ca55b346b4e6876fca21eb2dc4feaa05` |
-| 12 | `theorem` | [normal_of_paracompact_t2](../../../../GeneralTopology/TopologyParacompact.lean/declarations/normal-of-paracompact-t2.md) | 292 | `result-track:97f2323954ff39c4c94fb9041e81c563f40b6396b047b02c1b8abf48ed00cb43` |
+| 1 | `class` | [ParacompactSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyParacompact.lean/declarations/paracompactspace.md) | 61 | `declaration-track:b2500a1a9a1e61639839daa90709c933795069343ab271d1146b151e834702f4` |
+| 2 | `theorem` | [precise_refinement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyParacompact.lean/declarations/precise-refinement.md) | 73 | `result-track:4fd40d74afbcb554ecb7350079d9b77990264f332a88a8395d5d3116cfdea5a7` |
+| 3 | `theorem` | [precise_refinement_set](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyParacompact.lean/declarations/precise-refinement-set.md) | 99 | `result-track:772e31425250bd760f949d27a0820e49e95f4771c7f28ff7c212de130d4c4e2f` |
+| 4 | `theorem` | [ClosedEmbedding.paracompactSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyParacompact.lean/declarations/closedembedding-paracompactspace.md) | 115 | `result-track:cff17dae81de586ab87b8c62089c9dbd74e2cf41f1a045b9a87f4741a3cda9b4` |
+| 5 | `theorem` | [Homeomorph.paracompactSpace_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyParacompact.lean/declarations/homeomorph-paracompactspace-iff.md) | 127 | `result-track:3f4e9e3a91a4e861d0a3fff74548448ee90e50b1a3be2bd1a304442602b04aff` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyParacompact.lean/declarations/instance-source-edition-4.md) | 136 | `declaration-track:e2a41da8e0e5097a8ed52f26c55935a4e20ff03fdd9835b7f12a8297e220f419` |
+| 7 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyParacompact.lean/declarations/instance-source-edition-2.md) | 162 | `declaration-track:8c305cab04944f806ca02b91388a46a573f9c189e4caf93dc6e7b4b18418ef6c` |
+| 8 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyParacompact.lean/declarations/instance.md) | 167 | `declaration-track:7f3a4c16dea4c73034afd6fe6fbe302dca3e55628472b0dc44e8ab5600191d20` |
+| 9 | `theorem` | [refinement_of_locallyCompact_sigmaCompact_of_nhds_basis_set](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyParacompact.lean/declarations/refinement-of-locallycompact-sigmacompact-of-nhds-basis-set.md) | 196 | `result-track:52ce885b345775dce234b51c6ac8e126728972baba678ea7c3fa25fccad1f9c0` |
+| 10 | `theorem` | [refinement_of_locallyCompact_sigmaCompact_of_nhds_basis](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyParacompact.lean/declarations/refinement-of-locallycompact-sigmacompact-of-nhds-basis.md) | 266 | `result-track:d2352037d53b1cb8bcf0651c01fb36937549e882ec0dd1148e5e1fc6ec0e48ca` |
+| 11 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyParacompact.lean/declarations/instance-source-edition-3.md) | 279 | `declaration-track:99c10063a81f3e500b92d0ecf4139521ca55b346b4e6876fca21eb2dc4feaa05` |
+| 12 | `theorem` | [normal_of_paracompact_t2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/TopologyParacompact.lean/declarations/normal-of-paracompact-t2.md) | 292 | `result-track:97f2323954ff39c4c94fb9041e81c563f40b6396b047b02c1b8abf48ed00cb43` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

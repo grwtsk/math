@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RetractionSplitEquiv.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RetractionSplitEquiv.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RetractionSplitEquiv.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RetractionSplitEquiv.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.LinearAlgebra.RetractionComplement`](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RetractionComplement.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.LinearAlgebra.RetractionComplement`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RetractionComplement.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [retractionSplitEquiv](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RetractionSplitEquiv.lean/declarations/retractionsplitequiv.md) | 10 | `declaration-track:fad1ded2c73abceb8100341a9ae2af7a3a2502714ce67567f36c8f51933b14db` |
-| 2 | `theorem` | [retractionSplitEquiv_coordinates](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RetractionSplitEquiv.lean/declarations/retractionsplitequiv-coordinates.md) | 34 | `result-track:c0bb858a03ab83f41587a893d2931f6ccd93571aff819ed7b3b9baaa0b0822a6` |
-| 3 | `theorem` | [retractionSplitEquiv_inverse](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RetractionSplitEquiv.lean/declarations/retractionsplitequiv-inverse.md) | 41 | `result-track:025347a14dfdf4f131969190073318c845e610a920e195c181a58a76fa976537` |
-| 4 | `theorem` | [retractionComplement_zero_iff_range](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RetractionSplitEquiv.lean/declarations/retractioncomplement-zero-iff-range.md) | 46 | `result-track:e49c4705310a761ce4fd2d7a3e3610ee002306e51cff93ee8e5ae32ed8aa2158` |
+| 1 | `def` | [retractionSplitEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RetractionSplitEquiv.lean/declarations/retractionsplitequiv.md) | 10 | `declaration-track:fad1ded2c73abceb8100341a9ae2af7a3a2502714ce67567f36c8f51933b14db` |
+| 2 | `theorem` | [retractionSplitEquiv_coordinates](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RetractionSplitEquiv.lean/declarations/retractionsplitequiv-coordinates.md) | 34 | `result-track:c0bb858a03ab83f41587a893d2931f6ccd93571aff819ed7b3b9baaa0b0822a6` |
+| 3 | `theorem` | [retractionSplitEquiv_inverse](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RetractionSplitEquiv.lean/declarations/retractionsplitequiv-inverse.md) | 41 | `result-track:025347a14dfdf4f131969190073318c845e610a920e195c181a58a76fa976537` |
+| 4 | `theorem` | [retractionComplement_zero_iff_range](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RetractionSplitEquiv.lean/declarations/retractioncomplement-zero-iff-range.md) | 46 | `result-track:e49c4705310a761ce4fd2d7a3e3610ee002306e51cff93ee8e5ae32ed8aa2158` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

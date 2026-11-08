@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/TriangleBasicNamespaced.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/TriangleBasicNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/TriangleBasicNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/TriangleBasicNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [FarFromTriangleFree](../../../../../Combinatorics/GraphTheory/TriangleBasicNamespaced.lean/declarations/farfromtrianglefree.md) | 49 | `declaration-track:31644066d729d9e0c79c7eb251686072d6810dc4ccbbbf4dec62122153fdf6a8` |
-| 2 | `theorem` | [farFromTriangleFree_iff](../../../../../Combinatorics/GraphTheory/TriangleBasicNamespaced.lean/declarations/farfromtrianglefree-iff.md) | 53 | `result-track:179c06ccd5e83bba7099a8db7a95ec9ac93cc49366867ac641f89e201db9ce3d` |
-| 3 | `theorem` | [FarFromTriangleFree.mono](../../../../../Combinatorics/GraphTheory/TriangleBasicNamespaced.lean/declarations/farfromtrianglefree-mono.md) | 60 | `result-track:6058f14563b6f1763f4ad520287ed606d9044fbea30ec2b7abe8d550e6b2f1d2` |
-| 4 | `theorem` | [FarFromTriangleFree.cliqueFinset_nonempty'](../../../../../Combinatorics/GraphTheory/TriangleBasicNamespaced.lean/declarations/farfromtrianglefree-cliquefinset-nonempty-source-edition-2.md) | 64 | `result-track:2b9741d9077deef5c784fd6aa1f6c1a48b6ee7be05c2537a8b438a2b6fc687fd` |
-| 5 | `theorem` | [FarFromTriangleFree.nonpos](../../../../../Combinatorics/GraphTheory/TriangleBasicNamespaced.lean/declarations/farfromtrianglefree-nonpos.md) | 73 | `result-track:6d7415c54948d5636700bf64a431503f8e9f9dcf05eb5c02b780516e08cfd6a4` |
-| 6 | `theorem` | [CliqueFree.not_farFromTriangleFree](../../../../../Combinatorics/GraphTheory/TriangleBasicNamespaced.lean/declarations/cliquefree-not-farfromtrianglefree.md) | 80 | `result-track:e7705405ff05fef18b7b5141901d05ac1f6f435c8b35268a96a3ab2684419451` |
-| 7 | `theorem` | [FarFromTriangleFree.not_cliqueFree](../../../../../Combinatorics/GraphTheory/TriangleBasicNamespaced.lean/declarations/farfromtrianglefree-not-cliquefree.md) | 84 | `result-track:dfba35b970c32789095703ac445513e552be181f77c213b322ed7e4e971d8a65` |
-| 8 | `theorem` | [FarFromTriangleFree.cliqueFinset_nonempty](../../../../../Combinatorics/GraphTheory/TriangleBasicNamespaced.lean/declarations/farfromtrianglefree-cliquefinset-nonempty.md) | 88 | `result-track:19fca7ea442218b8e6046e3fa77538161769cf9c9b9c2b88d9f92fbad7f78139` |
+| 1 | `def` | [FarFromTriangleFree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/TriangleBasicNamespaced.lean/declarations/farfromtrianglefree.md) | 49 | `declaration-track:31644066d729d9e0c79c7eb251686072d6810dc4ccbbbf4dec62122153fdf6a8` |
+| 2 | `theorem` | [farFromTriangleFree_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/TriangleBasicNamespaced.lean/declarations/farfromtrianglefree-iff.md) | 53 | `result-track:179c06ccd5e83bba7099a8db7a95ec9ac93cc49366867ac641f89e201db9ce3d` |
+| 3 | `theorem` | [FarFromTriangleFree.mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/TriangleBasicNamespaced.lean/declarations/farfromtrianglefree-mono.md) | 60 | `result-track:6058f14563b6f1763f4ad520287ed606d9044fbea30ec2b7abe8d550e6b2f1d2` |
+| 4 | `theorem` | [FarFromTriangleFree.cliqueFinset_nonempty'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/TriangleBasicNamespaced.lean/declarations/farfromtrianglefree-cliquefinset-nonempty-source-edition-2.md) | 64 | `result-track:2b9741d9077deef5c784fd6aa1f6c1a48b6ee7be05c2537a8b438a2b6fc687fd` |
+| 5 | `theorem` | [FarFromTriangleFree.nonpos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/TriangleBasicNamespaced.lean/declarations/farfromtrianglefree-nonpos.md) | 73 | `result-track:6d7415c54948d5636700bf64a431503f8e9f9dcf05eb5c02b780516e08cfd6a4` |
+| 6 | `theorem` | [CliqueFree.not_farFromTriangleFree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/TriangleBasicNamespaced.lean/declarations/cliquefree-not-farfromtrianglefree.md) | 80 | `result-track:e7705405ff05fef18b7b5141901d05ac1f6f435c8b35268a96a3ab2684419451` |
+| 7 | `theorem` | [FarFromTriangleFree.not_cliqueFree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/TriangleBasicNamespaced.lean/declarations/farfromtrianglefree-not-cliquefree.md) | 84 | `result-track:dfba35b970c32789095703ac445513e552be181f77c213b322ed7e4e971d8a65` |
+| 8 | `theorem` | [FarFromTriangleFree.cliqueFinset_nonempty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/TriangleBasicNamespaced.lean/declarations/farfromtrianglefree-cliquefinset-nonempty.md) | 88 | `result-track:19fca7ea442218b8e6046e3fa77538161769cf9c9b9c2b88d9f92fbad7f78139` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

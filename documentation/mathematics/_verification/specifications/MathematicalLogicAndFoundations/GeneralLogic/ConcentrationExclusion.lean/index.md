@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConcentrationExclusion.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConcentrationExclusion.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ConcentrationExclusion.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ConcentrationExclusion.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [GaugeFieldConfiguration](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConcentrationExclusion.lean/declarations/gaugefieldconfiguration.md) | 17 | `declaration-track:536f36f8cbfae3c30f5ba43397004272c7083aab30d7737b0c4975e800a577aa` |
-| 2 | `structure` | [TubeVolumeEstimatePackage](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConcentrationExclusion.lean/declarations/tubevolumeestimatepackage.md) | 20 | `declaration-track:45804b834cb5f4a833eda75eed548002f0f2a2d06cadbffd82bb365b2c0aa6e4` |
-| 3 | `theorem` | [ym_tube_concentration_excluded_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConcentrationExclusion.lean/declarations/ym-tube-concentration-excluded-if-supplied.md) | 28 | `result-track:4262c18760c1da4a9ee9119310d5d1e59d6862b7ecdf900441c958fd5e420a87` |
+| 1 | `structure` | [GaugeFieldConfiguration](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ConcentrationExclusion.lean/declarations/gaugefieldconfiguration.md) | 17 | `declaration-track:536f36f8cbfae3c30f5ba43397004272c7083aab30d7737b0c4975e800a577aa` |
+| 2 | `structure` | [TubeVolumeEstimatePackage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ConcentrationExclusion.lean/declarations/tubevolumeestimatepackage.md) | 20 | `declaration-track:45804b834cb5f4a833eda75eed548002f0f2a2d06cadbffd82bb365b2c0aa6e4` |
+| 3 | `theorem` | [ym_tube_concentration_excluded_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ConcentrationExclusion.lean/declarations/ym-tube-concentration-excluded-if-supplied.md) | 28 | `result-track:4262c18760c1da4a9ee9119310d5d1e59d6862b7ecdf900441c958fd5e420a87` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

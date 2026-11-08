@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RegularTopologyNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RegularTopologyNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RegularTopologyNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RegularTopologyNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [mem_sieves_of_hasEffectiveEpi](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RegularTopologyNamespaced.lean/declarations/mem-sieves-of-haseffectiveepi.md) | 38 | `result-track:0cc8cca70b6f165e46b6d3cd5c47719c9b95bb72e428d8012f8aa6577aee0d2f` |
-| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RegularTopologyNamespaced.lean/declarations/instance.md) | 52 | `declaration-track:1dfdfb23193d731a8b38ac2d448988b4ee14b343395aa74294069d8ca24eb47f` |
-| 3 | `theorem` | [mem_sieves_iff_hasEffectiveEpi](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RegularTopologyNamespaced.lean/declarations/mem-sieves-iff-haseffectiveepi.md) | 71 | `result-track:3a58a5650584a653426c8176abcf4d8bd27148e4e60b9dd24faa0945b0886e0f` |
+| 1 | `theorem` | [mem_sieves_of_hasEffectiveEpi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RegularTopologyNamespaced.lean/declarations/mem-sieves-of-haseffectiveepi.md) | 38 | `result-track:0cc8cca70b6f165e46b6d3cd5c47719c9b95bb72e428d8012f8aa6577aee0d2f` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RegularTopologyNamespaced.lean/declarations/instance.md) | 52 | `declaration-track:1dfdfb23193d731a8b38ac2d448988b4ee14b343395aa74294069d8ca24eb47f` |
+| 3 | `theorem` | [mem_sieves_iff_hasEffectiveEpi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RegularTopologyNamespaced.lean/declarations/mem-sieves-iff-haseffectiveepi.md) | 71 | `result-track:3a58a5650584a653426c8176abcf4d8bd27148e4e60b9dd24faa0945b0886e0f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

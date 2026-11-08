@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZetaSummaryNamespacedMTR0.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZetaSummaryNamespacedMTR0.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZetaSummaryNamespacedMTR0.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZetaSummaryNamespacedMTR0.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,15 +61,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [HSW.main_theorem](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZetaSummaryNamespacedMTR0.lean/declarations/hsw-main-theorem.md) | 37 | `result-track:d55f415c5e8d9250ee073d23c052114ac48f7174fec8ca2d15add06e33838df1` |
-| 2 | `theorem` | [HSW.corollary_1_2](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZetaSummaryNamespacedMTR0.lean/declarations/hsw-corollary-1-2.md) | 51 | `result-track:96b85ff09ef7d5e21a802cf47269a4ba2837e8e11a8e59d9027d846a4ccba401` |
-| 3 | `theorem` | [MT_theorem_1](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZetaSummaryNamespacedMTR0.lean/declarations/mt-theorem-1.md) | 66 | `result-track:3efc8ba1a00529fe7103954f636453cc1d3dbb260d11b3ddb83a80f66cd68203` |
-| 4 | `theorem` | [MT_R0_55666305](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZetaSummaryNamespacedMTR0.lean/declarations/mt-r0-55666305.md) | 79 | `result-track:85f045e53aebc1614f9d11d289c7b66f4c8ba8f89fb0474f2a2e3516d0582950` |
-| 5 | `theorem` | [MTY_theorem](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZetaSummaryNamespacedMTR0.lean/declarations/mty-theorem.md) | 90 | `result-track:13237d0e731216f288279bdc23b05ac219f08c5d442fd4b01a49e6e2c3d46879` |
-| 6 | `theorem` | [BTY_theorem](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZetaSummaryNamespacedMTR0.lean/declarations/bty-theorem.md) | 101 | `result-track:e22ecb9f22f8ffa699a02f6bb82130ec7fda5d1316a42d1c691cf9f63106547a` |
-| 7 | `theorem` | [Platt_theorem](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZetaSummaryNamespacedMTR0.lean/declarations/platt-theorem.md) | 111 | `result-track:ac0333f4db3e3ffce297682e75f259d8f67f66ddcefff750ac100b2a9ed1b5e9` |
-| 8 | `theorem` | [GW_theorem](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZetaSummaryNamespacedMTR0.lean/declarations/gw-theorem.md) | 121 | `result-track:e30fd0706cc05ed6059c1c4642bc2bc33e4ca5c24238e77e3389f7e85d99cdfc` |
-| 9 | `theorem` | [PT_theorem_1](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZetaSummaryNamespacedMTR0.lean/declarations/pt-theorem-1.md) | 131 | `result-track:25545fea6349217fe51ec1fd27506d539efca7e67b42dcc23f0bdb1b04c19cdb` |
+| 1 | `theorem` | [HSW.main_theorem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZetaSummaryNamespacedMTR0.lean/declarations/hsw-main-theorem.md) | 37 | `result-track:d55f415c5e8d9250ee073d23c052114ac48f7174fec8ca2d15add06e33838df1` |
+| 2 | `theorem` | [HSW.corollary_1_2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZetaSummaryNamespacedMTR0.lean/declarations/hsw-corollary-1-2.md) | 51 | `result-track:96b85ff09ef7d5e21a802cf47269a4ba2837e8e11a8e59d9027d846a4ccba401` |
+| 3 | `theorem` | [MT_theorem_1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZetaSummaryNamespacedMTR0.lean/declarations/mt-theorem-1.md) | 66 | `result-track:3efc8ba1a00529fe7103954f636453cc1d3dbb260d11b3ddb83a80f66cd68203` |
+| 4 | `theorem` | [MT_R0_55666305](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZetaSummaryNamespacedMTR0.lean/declarations/mt-r0-55666305.md) | 79 | `result-track:85f045e53aebc1614f9d11d289c7b66f4c8ba8f89fb0474f2a2e3516d0582950` |
+| 5 | `theorem` | [MTY_theorem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZetaSummaryNamespacedMTR0.lean/declarations/mty-theorem.md) | 90 | `result-track:13237d0e731216f288279bdc23b05ac219f08c5d442fd4b01a49e6e2c3d46879` |
+| 6 | `theorem` | [BTY_theorem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZetaSummaryNamespacedMTR0.lean/declarations/bty-theorem.md) | 101 | `result-track:e22ecb9f22f8ffa699a02f6bb82130ec7fda5d1316a42d1c691cf9f63106547a` |
+| 7 | `theorem` | [Platt_theorem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZetaSummaryNamespacedMTR0.lean/declarations/platt-theorem.md) | 111 | `result-track:ac0333f4db3e3ffce297682e75f259d8f67f66ddcefff750ac100b2a9ed1b5e9` |
+| 8 | `theorem` | [GW_theorem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZetaSummaryNamespacedMTR0.lean/declarations/gw-theorem.md) | 121 | `result-track:e30fd0706cc05ed6059c1c4642bc2bc33e4ca5c24238e77e3389f7e85d99cdfc` |
+| 9 | `theorem` | [PT_theorem_1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZetaSummaryNamespacedMTR0.lean/declarations/pt-theorem-1.md) | 131 | `result-track:25545fea6349217fe51ec1fd27506d539efca7e67b42dcc23f0bdb1b04c19cdb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

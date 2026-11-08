@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SafeShiftQuarticFactorizationControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SafeShiftQuarticFactorizationControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SafeShiftQuarticFactorizationControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SafeShiftQuarticFactorizationControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.SafeShiftQuarticFactorization`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SafeShiftQuarticFactorization.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.SafeShiftQuarticFactorization`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SafeShiftQuarticFactorization.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [axial_coefficient_positive_semidefinite](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SafeShiftQuarticFactorizationControls.lean/declarations/axial-coefficient-positive-semidefinite.md) | 14 | `result-track:7b8060068c60300350ec34c1949c7aaa5a8888f4836be750122f0e4405ffdb58` |
-| 2 | `theorem` | [transverse_coefficient_positive_semidefinite](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SafeShiftQuarticFactorizationControls.lean/declarations/transverse-coefficient-positive-semidefinite.md) | 19 | `result-track:08e75d2aec94d34f650d15253be7455a2802eb52558b779ad7ec28d6a36cfb1f` |
+| 1 | `theorem` | [axial_coefficient_positive_semidefinite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SafeShiftQuarticFactorizationControls.lean/declarations/axial-coefficient-positive-semidefinite.md) | 14 | `result-track:7b8060068c60300350ec34c1949c7aaa5a8888f4836be750122f0e4405ffdb58` |
+| 2 | `theorem` | [transverse_coefficient_positive_semidefinite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SafeShiftQuarticFactorizationControls.lean/declarations/transverse-coefficient-positive-semidefinite.md) | 19 | `result-track:08e75d2aec94d34f650d15253be7455a2802eb52558b779ad7ec28d6a36cfb1f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

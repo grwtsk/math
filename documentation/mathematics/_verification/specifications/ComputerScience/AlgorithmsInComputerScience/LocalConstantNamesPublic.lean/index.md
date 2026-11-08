@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/LocalConstantNamesPublic.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/LocalConstantNamesPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LocalConstantNamesPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LocalConstantNamesPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [localConstantNames](../../../../../ComputerScience/AlgorithmsInComputerScience/LocalConstantNamesPublic.lean/declarations/localconstantnames.md) | 13 | `declaration-track:861bd7b68c1cbf30a87e75a8fe6399f6c131844a100924757148958e9f38408c` |
+| 1 | `def` | [localConstantNames](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LocalConstantNamesPublic.lean/declarations/localconstantnames.md) | 13 | `declaration-track:861bd7b68c1cbf30a87e75a8fe6399f6c131844a100924757148958e9f38408c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

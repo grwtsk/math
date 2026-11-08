@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StructuralCouplingNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StructuralCouplingNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StructuralCouplingNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StructuralCouplingNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [ConstructionProvenance](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StructuralCouplingNamespaced.lean/declarations/constructionprovenance.md) | 23 | `declaration-track:df096b55c55867de1eda2d2da78bdca9df550c74663b77f83f23550a1dea5822` |
-| 2 | `abbrev` | [ProjectorProvenance](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StructuralCouplingNamespaced.lean/declarations/projectorprovenance.md) | 26 | `declaration-track:9bca74206eb15bf42bcb4d66a3126a158d9e77d48f1a29fc6daad5f8a5fc716d` |
-| 3 | `structure` | [StructuralIncidence](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StructuralCouplingNamespaced.lean/declarations/structuralincidence.md) | 29 | `declaration-track:169435f5f2f548f28b30b4eee8d37f0fbbedb7ab0117243329688b4f2a035ad3` |
-| 4 | `structure` | [StructuralCoupling](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StructuralCouplingNamespaced.lean/declarations/structuralcoupling.md) | 35 | `declaration-track:c6508ad65cf79543839366f8533f47705bbffbb6c54f609927312c291c221806` |
-| 5 | `structure` | [StructuralProjectorCoupling](../../../../../MathematicalLogicAndFoundations/GeneralLogic/StructuralCouplingNamespaced.lean/declarations/structuralprojectorcoupling.md) | 44 | `declaration-track:6fbfec8ac647efd62940c11a1b94e2eb3267ca659b9b90d47a57b1241ec77db3` |
+| 1 | `abbrev` | [ConstructionProvenance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StructuralCouplingNamespaced.lean/declarations/constructionprovenance.md) | 23 | `declaration-track:df096b55c55867de1eda2d2da78bdca9df550c74663b77f83f23550a1dea5822` |
+| 2 | `abbrev` | [ProjectorProvenance](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StructuralCouplingNamespaced.lean/declarations/projectorprovenance.md) | 26 | `declaration-track:9bca74206eb15bf42bcb4d66a3126a158d9e77d48f1a29fc6daad5f8a5fc716d` |
+| 3 | `structure` | [StructuralIncidence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StructuralCouplingNamespaced.lean/declarations/structuralincidence.md) | 29 | `declaration-track:169435f5f2f548f28b30b4eee8d37f0fbbedb7ab0117243329688b4f2a035ad3` |
+| 4 | `structure` | [StructuralCoupling](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StructuralCouplingNamespaced.lean/declarations/structuralcoupling.md) | 35 | `declaration-track:c6508ad65cf79543839366f8533f47705bbffbb6c54f609927312c291c221806` |
+| 5 | `structure` | [StructuralProjectorCoupling](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/StructuralCouplingNamespaced.lean/declarations/structuralprojectorcoupling.md) | 44 | `declaration-track:6fbfec8ac647efd62940c11a1b94e2eb3267ca659b9b90d47a57b1241ec77db3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChecksAuditSourceEdition3HistoricalSourceEdition2.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChecksAuditSourceEdition3HistoricalSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChecksAuditSourceEdition3HistoricalSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChecksAuditSourceEdition3HistoricalSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.LinearAlgebra.SchrodingerTransfer`](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SchrodingerTransfer.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.LinearAlgebra.SchrodingerTransfer`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SchrodingerTransfer.lean/index.md) — import line 1; pinned internal source present.
 - `Lean` — import line 2; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [use_recurrence](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChecksAuditSourceEdition3HistoricalSourceEdition2.lean/declarations/use-recurrence.md) | 5 | `result-track:826264e395502a76c6dfac2e7fc04a0708388504f3822059a5db20e97189e135` |
-| 2 | `theorem` | [use_determinant](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChecksAuditSourceEdition3HistoricalSourceEdition2.lean/declarations/use-determinant.md) | 7 | `result-track:0ee1ce1eb167729e71ff40b7a380d413da4adb644635e16b06dd09cef0b89b39` |
-| 3 | `theorem` | [use_inequality](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChecksAuditSourceEdition3HistoricalSourceEdition2.lean/declarations/use-inequality.md) | 8 | `result-track:03d37b20a83671e9f47ab2f4bbdf5ec46aed1118d19c7fd26c9faff0ba0d5200` |
-| 4 | `elab` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChecksAuditSourceEdition3HistoricalSourceEdition2.lean/declarations/elab.md) | 10 | `declaration-track:5d5b8971ca6856c37831a843ae6f354441f529c23cb6a147a4f2749da2511059` |
+| 1 | `theorem` | [use_recurrence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChecksAuditSourceEdition3HistoricalSourceEdition2.lean/declarations/use-recurrence.md) | 5 | `result-track:826264e395502a76c6dfac2e7fc04a0708388504f3822059a5db20e97189e135` |
+| 2 | `theorem` | [use_determinant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChecksAuditSourceEdition3HistoricalSourceEdition2.lean/declarations/use-determinant.md) | 7 | `result-track:0ee1ce1eb167729e71ff40b7a380d413da4adb644635e16b06dd09cef0b89b39` |
+| 3 | `theorem` | [use_inequality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChecksAuditSourceEdition3HistoricalSourceEdition2.lean/declarations/use-inequality.md) | 8 | `result-track:03d37b20a83671e9f47ab2f4bbdf5ec46aed1118d19c7fd26c9faff0ba0d5200` |
+| 4 | `elab` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ChecksAuditSourceEdition3HistoricalSourceEdition2.lean/declarations/elab.md) | 10 | `declaration-track:5d5b8971ca6856c37831a843ae6f354441f529c23cb6a147a4f2749da2511059` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/DedekindNamespacedPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/DedekindNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DedekindNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DedekindNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [IsDedekindDomain.of_formallyUnramified](../../../../CommutativeAlgebra/DedekindNamespacedPublic.lean/declarations/isdedekinddomain-of-formallyunramified.md) | 32 | `result-track:6629d3328246591f6cbfd3dc874419e5fe0f2c48e1af5658131e90837f88d24f` |
+| 1 | `theorem` | [IsDedekindDomain.of_formallyUnramified](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DedekindNamespacedPublic.lean/declarations/isdedekinddomain-of-formallyunramified.md) | 32 | `result-track:6629d3328246591f6cbfd3dc874419e5fe0f2c48e1af5658131e90837f88d24f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

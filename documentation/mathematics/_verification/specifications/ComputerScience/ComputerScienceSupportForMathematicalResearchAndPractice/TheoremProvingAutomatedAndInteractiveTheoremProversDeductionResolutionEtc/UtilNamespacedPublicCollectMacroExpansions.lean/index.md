@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/UtilNamespacedPublicCollectMacroExpansions.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/UtilNamespacedPublicCollectMacroExpansions.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/UtilNamespacedPublicCollectMacroExpansions.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/UtilNamespacedPublicCollectMacroExpansions.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [collectMacroExpansions?](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/UtilNamespacedPublicCollectMacroExpansions.lean/declarations/collectmacroexpansions.md) | 34 | `declaration-track:a9b9d02f493b07468dacc857e10e92f3e3a809453d0bc58fcc0559d15106cc83` |
-| 2 | `def` | [getDeclsByBody](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/UtilNamespacedPublicCollectMacroExpansions.lean/declarations/getdeclsbybody.md) | 58 | `declaration-track:18f635443dbb611cac43be57747e37ae3461ab29867bfa58cb2e5dfd085b0234` |
-| 3 | `def` | [getNewDecls](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/UtilNamespacedPublicCollectMacroExpansions.lean/declarations/getnewdecls.md) | 76 | `declaration-track:96b59301af3b8c656e72cdcc3513de2e49dcab6f5c3bee3354c5e2a9f49bc1b8` |
+| 1 | `def` | [collectMacroExpansions?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/UtilNamespacedPublicCollectMacroExpansions.lean/declarations/collectmacroexpansions.md) | 34 | `declaration-track:a9b9d02f493b07468dacc857e10e92f3e3a809453d0bc58fcc0559d15106cc83` |
+| 2 | `def` | [getDeclsByBody](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/UtilNamespacedPublicCollectMacroExpansions.lean/declarations/getdeclsbybody.md) | 58 | `declaration-track:18f635443dbb611cac43be57747e37ae3461ab29867bfa58cb2e5dfd085b0234` |
+| 3 | `def` | [getNewDecls](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/UtilNamespacedPublicCollectMacroExpansions.lean/declarations/getnewdecls.md) | 76 | `declaration-track:96b59301af3b8c656e72cdcc3513de2e49dcab6f5c3bee3354c5e2a9f49bc1b8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

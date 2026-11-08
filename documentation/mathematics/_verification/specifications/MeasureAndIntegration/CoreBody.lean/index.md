@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/CoreBody.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CoreBody.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CoreBody.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CoreBody.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,17 +57,17 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [thetaPhiExpMomentIntegrand](../../../../MeasureAndIntegration/CoreBody.lean/declarations/thetaphiexpmomentintegrand.md) | 9 | `declaration-track:59e047c7c683aa5cf80f2ea81e39380ef687cfccb6edbdbf26da01771dc3e80c` |
-| 2 | `def` | [thetaPhiExpMoment](../../../../MeasureAndIntegration/CoreBody.lean/declarations/thetaphiexpmoment.md) | 13 | `declaration-track:4a8d6c508e5ff896036bfd0389e1636a83061af8f2d9653a7c5e9cbd6a91d928` |
-| 3 | `theorem` | [continuous_thetaPhiExpMomentIntegrand](../../../../MeasureAndIntegration/CoreBody.lean/declarations/continuous-thetaphiexpmomentintegrand.md) | 17 | `result-track:9a9799b3139877511576a752b8fea0e2adcee4be71cf8bdb8aa87a1d359c5c4d` |
-| 4 | `theorem` | [thetaPhiExpMomentIntegrand_norm_le](../../../../MeasureAndIntegration/CoreBody.lean/declarations/thetaphiexpmomentintegrand-norm-le.md) | 25 | `result-track:e5a72f03fed65392215b848c1b55c55087220c05a6498e12fc18272aff5be2df` |
-| 5 | `theorem` | [thetaPhiExpMomentIntegrand_integrableOn](../../../../MeasureAndIntegration/CoreBody.lean/declarations/thetaphiexpmomentintegrand-integrableon.md) | 45 | `result-track:0eca4c09ef56264444dfa721f26dfb14a99c69fe8253d55bec3d36ab617a5f70` |
-| 6 | `theorem` | [hasDerivAt_thetaPhiExpMomentIntegrand](../../../../MeasureAndIntegration/CoreBody.lean/declarations/hasderivat-thetaphiexpmomentintegrand.md) | 53 | `result-track:d98096a8ffbcda24a86b4d9f9f0f653c447c6f37b268af36e6a455046d0e037c` |
-| 7 | `theorem` | [hasDerivAt_thetaPhiExpMoment](../../../../MeasureAndIntegration/CoreBody.lean/declarations/hasderivat-thetaphiexpmoment.md) | 63 | `result-track:99ffbdf1e28b2c22289bbc497941f24b94e6a0b469a061d892d74bbb133ec761` |
-| 8 | `def` | [thetaCenteredMomentJet](../../../../MeasureAndIntegration/CoreBody.lean/declarations/thetacenteredmomentjet.md) | 90 | `declaration-track:8c263a6c3c20d9b58dd23dbad7bfa4a56637226aefd72c74574a81d9e9d05308` |
-| 9 | `theorem` | [hasDerivAt_thetaCenteredMomentJet](../../../../MeasureAndIntegration/CoreBody.lean/declarations/hasderivat-thetacenteredmomentjet.md) | 94 | `result-track:c828cc13bc093564f883f414093ee2f13ea8dbf42caf722857b764f26a5b0bf0` |
-| 10 | `theorem` | [iteratedDeriv_thetaCenteredMomentJet](../../../../MeasureAndIntegration/CoreBody.lean/declarations/iteratedderiv-thetacenteredmomentjet.md) | 103 | `result-track:0962054c55f5fbc4a5c01ed6827542e47664be7e258ca855efbdde07a0459fa1` |
-| 11 | `theorem` | [thetaCenteredMomentJet_even_zero](../../../../MeasureAndIntegration/CoreBody.lean/declarations/thetacenteredmomentjet-even-zero.md) | 112 | `result-track:ddd6a2e0859495c4aa0fed53a377a980557c96f90c10d131a1ae86644db44e3f` |
+| 1 | `def` | [thetaPhiExpMomentIntegrand](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CoreBody.lean/declarations/thetaphiexpmomentintegrand.md) | 9 | `declaration-track:59e047c7c683aa5cf80f2ea81e39380ef687cfccb6edbdbf26da01771dc3e80c` |
+| 2 | `def` | [thetaPhiExpMoment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CoreBody.lean/declarations/thetaphiexpmoment.md) | 13 | `declaration-track:4a8d6c508e5ff896036bfd0389e1636a83061af8f2d9653a7c5e9cbd6a91d928` |
+| 3 | `theorem` | [continuous_thetaPhiExpMomentIntegrand](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CoreBody.lean/declarations/continuous-thetaphiexpmomentintegrand.md) | 17 | `result-track:9a9799b3139877511576a752b8fea0e2adcee4be71cf8bdb8aa87a1d359c5c4d` |
+| 4 | `theorem` | [thetaPhiExpMomentIntegrand_norm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CoreBody.lean/declarations/thetaphiexpmomentintegrand-norm-le.md) | 25 | `result-track:e5a72f03fed65392215b848c1b55c55087220c05a6498e12fc18272aff5be2df` |
+| 5 | `theorem` | [thetaPhiExpMomentIntegrand_integrableOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CoreBody.lean/declarations/thetaphiexpmomentintegrand-integrableon.md) | 45 | `result-track:0eca4c09ef56264444dfa721f26dfb14a99c69fe8253d55bec3d36ab617a5f70` |
+| 6 | `theorem` | [hasDerivAt_thetaPhiExpMomentIntegrand](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CoreBody.lean/declarations/hasderivat-thetaphiexpmomentintegrand.md) | 53 | `result-track:d98096a8ffbcda24a86b4d9f9f0f653c447c6f37b268af36e6a455046d0e037c` |
+| 7 | `theorem` | [hasDerivAt_thetaPhiExpMoment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CoreBody.lean/declarations/hasderivat-thetaphiexpmoment.md) | 63 | `result-track:99ffbdf1e28b2c22289bbc497941f24b94e6a0b469a061d892d74bbb133ec761` |
+| 8 | `def` | [thetaCenteredMomentJet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CoreBody.lean/declarations/thetacenteredmomentjet.md) | 90 | `declaration-track:8c263a6c3c20d9b58dd23dbad7bfa4a56637226aefd72c74574a81d9e9d05308` |
+| 9 | `theorem` | [hasDerivAt_thetaCenteredMomentJet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CoreBody.lean/declarations/hasderivat-thetacenteredmomentjet.md) | 94 | `result-track:c828cc13bc093564f883f414093ee2f13ea8dbf42caf722857b764f26a5b0bf0` |
+| 10 | `theorem` | [iteratedDeriv_thetaCenteredMomentJet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CoreBody.lean/declarations/iteratedderiv-thetacenteredmomentjet.md) | 103 | `result-track:0962054c55f5fbc4a5c01ed6827542e47664be7e258ca855efbdde07a0459fa1` |
+| 11 | `theorem` | [thetaCenteredMomentJet_even_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/CoreBody.lean/declarations/thetacenteredmomentjet-even-zero.md) | 112 | `result-track:ddd6a2e0859495c4aa0fed53a377a980557c96f90c10d131a1ae86644db44e3f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

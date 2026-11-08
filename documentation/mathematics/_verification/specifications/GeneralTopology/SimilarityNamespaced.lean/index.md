@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SimilarityNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/SimilarityNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SimilarityNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SimilarityNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,20 +57,20 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Similar](../../../../GeneralTopology/SimilarityNamespaced.lean/declarations/similar.md) | 45 | `declaration-track:254f382523ed99c30b36473d0bb4e5c9092ed21f5e2e74635f16e09dc321ed1a` |
-| 2 | `lemma` | [similar_iff_exists_edist_eq](../../../../GeneralTopology/SimilarityNamespaced.lean/declarations/similar-iff-exists-edist-eq.md) | 52 | `result-track:193ebb8f2eb40a6178d0c7449e5bd5e6f27e7496c2c10841e80a20598e5759ba` |
-| 3 | `lemma` | [similar_iff_exists_pairwise_edist_eq](../../../../GeneralTopology/SimilarityNamespaced.lean/declarations/similar-iff-exists-pairwise-edist-eq.md) | 59 | `result-track:788a457e371a438d0c490122d5330271ffc27f64b6e82745ac0197d4f36f55a0` |
-| 4 | `lemma` | [Congruent.similar](../../../../GeneralTopology/SimilarityNamespaced.lean/declarations/congruent-similar.md) | 69 | `result-track:81e068b97ef06febdd5d958815cfbd77c17142e3e8a53c815c33c8af9948818c` |
-| 5 | `lemma` | [refl](../../../../GeneralTopology/SimilarityNamespaced.lean/declarations/refl.md) | 89 | `result-track:155348bfeb912e078c9d49db3cecf8b99bfb5648be3837a496b98136c4fd54ff` |
-| 6 | `lemma` | [symm](../../../../GeneralTopology/SimilarityNamespaced.lean/declarations/symm.md) | 92 | `result-track:b165959e9795a74cf685e416231b7da1cc87301ebf94fbad1b14c05ba8f3746c` |
-| 7 | `lemma` | [Similarity Namespaced](../../../../GeneralTopology/SimilarityNamespaced.lean/declarations/similar-comm.md) | 98 | `result-track:df85afe52c1a07fb4c5002182caa56e5903ead9a35a7d9cb39a853bab881912e` |
-| 8 | `lemma` | [trans](../../../../GeneralTopology/SimilarityNamespaced.lean/declarations/trans.md) | 100 | `result-track:203f32044bce86e2b05b1a9837c5ba024a76bb255d35d1531ea5cf5fbc1caa0e` |
-| 9 | `lemma` | [index_map](../../../../GeneralTopology/SimilarityNamespaced.lean/declarations/index-map.md) | 106 | `result-track:d54e2a2ef808eb8d1d8c921f023974a89d5b2c55fba30251b2699a5f4329d3bb` |
-| 10 | `lemma` | [index_equiv](../../../../GeneralTopology/SimilarityNamespaced.lean/declarations/index-equiv.md) | 113 | `result-track:e517b732574d95c5425ef4fc3c630305de9ecf0e74bbd7d2956468509baaa6cc` |
-| 11 | `lemma` | [similar_iff_exists_nndist_eq](../../../../GeneralTopology/SimilarityNamespaced.lean/declarations/similar-iff-exists-nndist-eq.md) | 129 | `result-track:843ef26facc10275027967539ea8ffc7e69e7af84533aa9a19f4b8a5ee4965f3` |
-| 12 | `lemma` | [similar_iff_exists_pairwise_nndist_eq](../../../../GeneralTopology/SimilarityNamespaced.lean/declarations/similar-iff-exists-pairwise-nndist-eq.md) | 137 | `result-track:873505ec7340dbd759e004722cb4c8ca2fd7c5c8fb3c06d16fdbdb58bc4942c7` |
-| 13 | `lemma` | [similar_iff_exists_dist_eq](../../../../GeneralTopology/SimilarityNamespaced.lean/declarations/similar-iff-exists-dist-eq.md) | 144 | `result-track:04e768f2bb0525fcc44396a627422da0e3cbeb8860b35734b37389a874cf7422` |
-| 14 | `lemma` | [similar_iff_exists_pairwise_dist_eq](../../../../GeneralTopology/SimilarityNamespaced.lean/declarations/similar-iff-exists-pairwise-dist-eq.md) | 153 | `result-track:f5a6e095a42f2276de5c80272041e3afc729763917fe8345ef75d954ac405ef5` |
+| 1 | `def` | [Similar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SimilarityNamespaced.lean/declarations/similar.md) | 45 | `declaration-track:254f382523ed99c30b36473d0bb4e5c9092ed21f5e2e74635f16e09dc321ed1a` |
+| 2 | `lemma` | [similar_iff_exists_edist_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SimilarityNamespaced.lean/declarations/similar-iff-exists-edist-eq.md) | 52 | `result-track:193ebb8f2eb40a6178d0c7449e5bd5e6f27e7496c2c10841e80a20598e5759ba` |
+| 3 | `lemma` | [similar_iff_exists_pairwise_edist_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SimilarityNamespaced.lean/declarations/similar-iff-exists-pairwise-edist-eq.md) | 59 | `result-track:788a457e371a438d0c490122d5330271ffc27f64b6e82745ac0197d4f36f55a0` |
+| 4 | `lemma` | [Congruent.similar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SimilarityNamespaced.lean/declarations/congruent-similar.md) | 69 | `result-track:81e068b97ef06febdd5d958815cfbd77c17142e3e8a53c815c33c8af9948818c` |
+| 5 | `lemma` | [refl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SimilarityNamespaced.lean/declarations/refl.md) | 89 | `result-track:155348bfeb912e078c9d49db3cecf8b99bfb5648be3837a496b98136c4fd54ff` |
+| 6 | `lemma` | [symm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SimilarityNamespaced.lean/declarations/symm.md) | 92 | `result-track:b165959e9795a74cf685e416231b7da1cc87301ebf94fbad1b14c05ba8f3746c` |
+| 7 | `lemma` | [Similarity Namespaced](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SimilarityNamespaced.lean/declarations/similar-comm.md) | 98 | `result-track:df85afe52c1a07fb4c5002182caa56e5903ead9a35a7d9cb39a853bab881912e` |
+| 8 | `lemma` | [trans](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SimilarityNamespaced.lean/declarations/trans.md) | 100 | `result-track:203f32044bce86e2b05b1a9837c5ba024a76bb255d35d1531ea5cf5fbc1caa0e` |
+| 9 | `lemma` | [index_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SimilarityNamespaced.lean/declarations/index-map.md) | 106 | `result-track:d54e2a2ef808eb8d1d8c921f023974a89d5b2c55fba30251b2699a5f4329d3bb` |
+| 10 | `lemma` | [index_equiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SimilarityNamespaced.lean/declarations/index-equiv.md) | 113 | `result-track:e517b732574d95c5425ef4fc3c630305de9ecf0e74bbd7d2956468509baaa6cc` |
+| 11 | `lemma` | [similar_iff_exists_nndist_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SimilarityNamespaced.lean/declarations/similar-iff-exists-nndist-eq.md) | 129 | `result-track:843ef26facc10275027967539ea8ffc7e69e7af84533aa9a19f4b8a5ee4965f3` |
+| 12 | `lemma` | [similar_iff_exists_pairwise_nndist_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SimilarityNamespaced.lean/declarations/similar-iff-exists-pairwise-nndist-eq.md) | 137 | `result-track:873505ec7340dbd759e004722cb4c8ca2fd7c5c8fb3c06d16fdbdb58bc4942c7` |
+| 13 | `lemma` | [similar_iff_exists_dist_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SimilarityNamespaced.lean/declarations/similar-iff-exists-dist-eq.md) | 144 | `result-track:04e768f2bb0525fcc44396a627422da0e3cbeb8860b35734b37389a874cf7422` |
+| 14 | `lemma` | [similar_iff_exists_pairwise_dist_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SimilarityNamespaced.lean/declarations/similar-iff-exists-pairwise-dist-eq.md) | 153 | `result-track:f5a6e095a42f2276de5c80272041e3afc729763917fe8345ef75d954ac405ef5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/BooleanPermutationComponentsIdentityAvalancheCounterexample.lean/index.md) · [Full source](../../../../Combinatorics/BooleanPermutationComponentsIdentityAvalancheCounterexample.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BooleanPermutationComponentsIdentityAvalancheCounterexample.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BooleanPermutationComponentsIdentityAvalancheCounterexample.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -48,7 +48,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 - `BitMatrix.Dynamics.Avalanche` — import line 19; external provider; requires a separately pinned dependency.
 - `Mathlib.Algebra.Order.BigOperators.Group.Finset` — import line 20; external provider; requires a separately pinned dependency.
-- [Round Composition](../../../../Combinatorics/RoundComposition.lean/index.md) — import line 22; pinned internal source present.
+- [Round Composition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/RoundComposition.lean/index.md) — import line 22; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [identityRound](../../../../Combinatorics/BooleanPermutationComponentsIdentityAvalancheCounterexample.lean/declarations/identityround.md) | 64 | `declaration-track:44ebf61dc8f72d1b834695f354fbb4ec9459d13203555c3903c8fe882a25869f` |
-| 2 | `theorem` | [identityRound_run](../../../../Combinatorics/BooleanPermutationComponentsIdentityAvalancheCounterexample.lean/declarations/identityround-run.md) | 71 | `result-track:55e7568d25902ee831756835b277a3415badb6a97496f138035fe43c7da76cfa` |
-| 3 | `theorem` | [identityRound_sacScore](../../../../Combinatorics/BooleanPermutationComponentsIdentityAvalancheCounterexample.lean/declarations/identityround-sacscore.md) | 75 | `result-track:56305e1b354e69859bcf5f2668b96533d68ca51bc677dc208979e16bf6ac9f0d` |
-| 4 | `theorem` | [identityRound_varianceScore](../../../../Combinatorics/BooleanPermutationComponentsIdentityAvalancheCounterexample.lean/declarations/identityround-variancescore.md) | 83 | `result-track:6b28dc7d01e2ea76651401bd09e8db0c0b537621f3fc1df600f26391325c5707` |
-| 5 | `theorem` | [exists_bijective_round_with_zero_avalanche](../../../../Combinatorics/BooleanPermutationComponentsIdentityAvalancheCounterexample.lean/declarations/exists-bijective-round-with-zero-avalanche.md) | 95 | `result-track:92faa67cd6e4521137f9b305d8b0778e74aa6c310aeb4860571e7d4735d6dbe8` |
+| 1 | `def` | [identityRound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BooleanPermutationComponentsIdentityAvalancheCounterexample.lean/declarations/identityround.md) | 64 | `declaration-track:44ebf61dc8f72d1b834695f354fbb4ec9459d13203555c3903c8fe882a25869f` |
+| 2 | `theorem` | [identityRound_run](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BooleanPermutationComponentsIdentityAvalancheCounterexample.lean/declarations/identityround-run.md) | 71 | `result-track:55e7568d25902ee831756835b277a3415badb6a97496f138035fe43c7da76cfa` |
+| 3 | `theorem` | [identityRound_sacScore](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BooleanPermutationComponentsIdentityAvalancheCounterexample.lean/declarations/identityround-sacscore.md) | 75 | `result-track:56305e1b354e69859bcf5f2668b96533d68ca51bc677dc208979e16bf6ac9f0d` |
+| 4 | `theorem` | [identityRound_varianceScore](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BooleanPermutationComponentsIdentityAvalancheCounterexample.lean/declarations/identityround-variancescore.md) | 83 | `result-track:6b28dc7d01e2ea76651401bd09e8db0c0b537621f3fc1df600f26391325c5707` |
+| 5 | `theorem` | [exists_bijective_round_with_zero_avalanche](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BooleanPermutationComponentsIdentityAvalancheCounterexample.lean/declarations/exists-bijective-round-with-zero-avalanche.md) | 95 | `result-track:92faa67cd6e4521137f9b305d8b0778e74aa6c310aeb4860571e7d4735d6dbe8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

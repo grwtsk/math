@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WittValuedIndexWittValuedCrystallineIndex.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WittValuedIndexWittValuedCrystallineIndex.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WittValuedIndexWittValuedCrystallineIndex.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WittValuedIndexWittValuedCrystallineIndex.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [WittValuedCrystallineIndex](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WittValuedIndexWittValuedCrystallineIndex.lean/declarations/wittvaluedcrystallineindex.md) | 29 | `declaration-track:bfd24476fec0753f2f37ad9f91e058c5eec41fe91c08dee8f316031aa18c3a36` |
-| 2 | `def` | [WittValuedCrystallineIndex.Nonzero](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WittValuedIndexWittValuedCrystallineIndex.lean/declarations/wittvaluedcrystallineindex-nonzero.md) | 41 | `declaration-track:749cdd0fd0ab8b55701bc066a48e709d5793120b28d24c3185bfbd8e55acb829` |
-| 3 | `theorem` | [witt_index_represents_operator_index](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WittValuedIndexWittValuedCrystallineIndex.lean/declarations/witt-index-represents-operator-index.md) | 50 | `result-track:126476668ba2c8785e621230768456e6065425ed038f7a10681fd809d90411c8` |
-| 4 | `theorem` | [witt_index_has_witt_element](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WittValuedIndexWittValuedCrystallineIndex.lean/declarations/witt-index-has-witt-element.md) | 60 | `result-track:c878c9997803a606588b8a95552d1f6c360c1bd034daff1f8a25f9d4627ac80a` |
+| 1 | `structure` | [WittValuedCrystallineIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WittValuedIndexWittValuedCrystallineIndex.lean/declarations/wittvaluedcrystallineindex.md) | 29 | `declaration-track:bfd24476fec0753f2f37ad9f91e058c5eec41fe91c08dee8f316031aa18c3a36` |
+| 2 | `def` | [WittValuedCrystallineIndex.Nonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WittValuedIndexWittValuedCrystallineIndex.lean/declarations/wittvaluedcrystallineindex-nonzero.md) | 41 | `declaration-track:749cdd0fd0ab8b55701bc066a48e709d5793120b28d24c3185bfbd8e55acb829` |
+| 3 | `theorem` | [witt_index_represents_operator_index](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WittValuedIndexWittValuedCrystallineIndex.lean/declarations/witt-index-represents-operator-index.md) | 50 | `result-track:126476668ba2c8785e621230768456e6065425ed038f7a10681fd809d90411c8` |
+| 4 | `theorem` | [witt_index_has_witt_element](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WittValuedIndexWittValuedCrystallineIndex.lean/declarations/witt-index-has-witt-element.md) | 60 | `result-track:c878c9997803a606588b8a95552d1f6c360c1bd034daff1f8a25f9d4627ac80a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExplodeEdition1.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExplodeEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExplodeEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExplodeEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [lambda](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExplodeEdition1.lean/declarations/lambda.md) | 30 | `result-track:9c7ae950c228360965801e8245ddfc5d6a5c39ab90dfee7c1305d2c1cccf0b07` |
-| 2 | `theorem` | [application](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExplodeEdition1.lean/declarations/application.md) | 41 | `result-track:90f49190c73f88e816c01f7929bf1a422db775158489c5dd2be8e7d5ca73f839` |
-| 3 | `theorem` | [theorem_1](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExplodeEdition1.lean/declarations/theorem-1.md) | 52 | `result-track:03110f6ee4b89e212059fc0ff7e439586b4c922a1d0cb79597062bed758a9016` |
-| 4 | `theorem` | [theorem_2](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExplodeEdition1.lean/declarations/theorem-2.md) | 63 | `result-track:2437894cf0ef9e627641bffd8a4ef6e57cd62998a6af42139d9e3727e56a85d5` |
-| 5 | `theorem` | [theorem_3](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExplodeEdition1.lean/declarations/theorem-3.md) | 78 | `result-track:c05b46900948c74f29098cf54ba1f620da4aa5c9c0a13719d2d5381b079e842c` |
-| 6 | `theorem` | [theorem_4](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExplodeEdition1.lean/declarations/theorem-4.md) | 99 | `result-track:b04cc8b7ec4f935afde2217eba85b87f17fb5ed1f8da1399d80926df3203db01` |
-| 7 | `lemma` | [lemma_5](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExplodeEdition1.lean/declarations/lemma-5-source-edition-2.md) | 117 | `result-track:fd3c37acd1adc88fe36c7643f60d5905c19b6a5c64eae8b301e9fc578d04f4b9` |
-| 8 | `lemma` | [lemma_6](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExplodeEdition1.lean/declarations/lemma-6.md) | 148 | `result-track:f38966b85307b660bf12ec18bddb937659077701bed59dc7c886cd149798e517` |
-| 9 | `lemma` | [lemma_7](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExplodeEdition1.lean/declarations/lemma-7.md) | 163 | `result-track:4babf0599517dfe85b5b835316d33cc65007e2662d6dd4777a874ed72dd0af4b` |
-| 10 | `lemma` | [lemma_5'](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ExplodeEdition1.lean/declarations/lemma-5.md) | 185 | `result-track:535cf5eeee2df7cdccfbdf595fd3f52aeb6f7fd6d7831f115ea9349e3a97ea50` |
+| 1 | `theorem` | [lambda](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExplodeEdition1.lean/declarations/lambda.md) | 30 | `result-track:9c7ae950c228360965801e8245ddfc5d6a5c39ab90dfee7c1305d2c1cccf0b07` |
+| 2 | `theorem` | [application](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExplodeEdition1.lean/declarations/application.md) | 41 | `result-track:90f49190c73f88e816c01f7929bf1a422db775158489c5dd2be8e7d5ca73f839` |
+| 3 | `theorem` | [theorem_1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExplodeEdition1.lean/declarations/theorem-1.md) | 52 | `result-track:03110f6ee4b89e212059fc0ff7e439586b4c922a1d0cb79597062bed758a9016` |
+| 4 | `theorem` | [theorem_2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExplodeEdition1.lean/declarations/theorem-2.md) | 63 | `result-track:2437894cf0ef9e627641bffd8a4ef6e57cd62998a6af42139d9e3727e56a85d5` |
+| 5 | `theorem` | [theorem_3](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExplodeEdition1.lean/declarations/theorem-3.md) | 78 | `result-track:c05b46900948c74f29098cf54ba1f620da4aa5c9c0a13719d2d5381b079e842c` |
+| 6 | `theorem` | [theorem_4](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExplodeEdition1.lean/declarations/theorem-4.md) | 99 | `result-track:b04cc8b7ec4f935afde2217eba85b87f17fb5ed1f8da1399d80926df3203db01` |
+| 7 | `lemma` | [lemma_5](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExplodeEdition1.lean/declarations/lemma-5-source-edition-2.md) | 117 | `result-track:fd3c37acd1adc88fe36c7643f60d5905c19b6a5c64eae8b301e9fc578d04f4b9` |
+| 8 | `lemma` | [lemma_6](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExplodeEdition1.lean/declarations/lemma-6.md) | 148 | `result-track:f38966b85307b660bf12ec18bddb937659077701bed59dc7c886cd149798e517` |
+| 9 | `lemma` | [lemma_7](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExplodeEdition1.lean/declarations/lemma-7.md) | 163 | `result-track:4babf0599517dfe85b5b835316d33cc65007e2662d6dd4777a874ed72dd0af4b` |
+| 10 | `lemma` | [lemma_5'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ExplodeEdition1.lean/declarations/lemma-5.md) | 185 | `result-track:535cf5eeee2df7cdccfbdf595fd3f52aeb6f7fd6d7831f115ea9349e3a97ea50` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NonvanishingIndexNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NonvanishingIndexNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NonvanishingIndexNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NonvanishingIndexNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [nonvanishing_index_nonzero](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NonvanishingIndexNamespaced.lean/declarations/nonvanishing-index-nonzero.md) | 28 | `result-track:bb57d237a6adebb7dfab31f3f36e19e503bdc66e4a4d83b33de4628425494943` |
-| 2 | `theorem` | [nonvanishing_index_forces_kernel_if_supplied](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NonvanishingIndexNamespaced.lean/declarations/nonvanishing-index-forces-kernel-if-supplied.md) | 39 | `result-track:05375b88e6eab42420f1e19981a903e4dd99bb9c07ab17918862bcd3dc576125` |
-| 3 | `theorem` | [nonvanishing_witt_index_nonzero](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NonvanishingIndexNamespaced.lean/declarations/nonvanishing-witt-index-nonzero.md) | 50 | `result-track:f205b50bd5e9bac282621f0bbc09e6c7b544732e53e56def37cbb7850a01c968` |
+| 1 | `theorem` | [nonvanishing_index_nonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NonvanishingIndexNamespaced.lean/declarations/nonvanishing-index-nonzero.md) | 28 | `result-track:bb57d237a6adebb7dfab31f3f36e19e503bdc66e4a4d83b33de4628425494943` |
+| 2 | `theorem` | [nonvanishing_index_forces_kernel_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NonvanishingIndexNamespaced.lean/declarations/nonvanishing-index-forces-kernel-if-supplied.md) | 39 | `result-track:05375b88e6eab42420f1e19981a903e4dd99bb9c07ab17918862bcd3dc576125` |
+| 3 | `theorem` | [nonvanishing_witt_index_nonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/NonvanishingIndexNamespaced.lean/declarations/nonvanishing-witt-index-nonzero.md) | 50 | `result-track:f205b50bd5e9bac282621f0bbc09e6c7b544732e53e56def37cbb7850a01c968` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

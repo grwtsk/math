@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/MvPolynomialLocalizationNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/MvPolynomialLocalizationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MvPolynomialLocalizationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MvPolynomialLocalizationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,15 +62,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [isLocalization](../../../../CommutativeAlgebra/MvPolynomialLocalizationNamespaced.lean/declarations/islocalization.md) | 49 | `declaration-track:c5a49be16524f392ede730ff8cccccadcfed86e1c8dede2d5a63a9fc77d59f0a` |
-| 2 | `lemma` | [isLocalization_C_mk'](../../../../CommutativeAlgebra/MvPolynomialLocalizationNamespaced.lean/declarations/islocalization-c-mk.md) | 53 | `result-track:2973a69f7e58dd6cf9336b2e6e185ea167190fa7d9ec77ffdc41d47050c44a92` |
-| 3 | `def` | [auxHom](../../../../CommutativeAlgebra/MvPolynomialLocalizationNamespaced.lean/declarations/auxhom.md) | 70 | `declaration-track:8da625811699263e98afe7e8a5512e0a84cf6dfb77ba2b9d6bb615befd89033b` |
-| 4 | `lemma` | [auxHom_mk](../../../../CommutativeAlgebra/MvPolynomialLocalizationNamespaced.lean/declarations/auxhom-mk.md) | 83 | `result-track:a3d1355ca4de962f86495c4da32e7a4ea71fc045b8b830dcaa4768dc3ca73a65` |
-| 5 | `def` | [auxInv](../../../../CommutativeAlgebra/MvPolynomialLocalizationNamespaced.lean/declarations/auxinv.md) | 88 | `declaration-track:3dcf4b6176112e943c07d9f38f68e4259343203a30492e9f0c38ca202688bebe` |
-| 6 | `lemma` | [auxHom_auxInv](../../../../CommutativeAlgebra/MvPolynomialLocalizationNamespaced.lean/declarations/auxhom-auxinv.md) | 98 | `result-track:f7d3af15673967c2effdcda0d0a77383b8285b18dc6a9463504baae95ddf65f1` |
-| 7 | `lemma` | [auxInv_auxHom](../../../../CommutativeAlgebra/MvPolynomialLocalizationNamespaced.lean/declarations/auxinv-auxhom.md) | 103 | `result-track:cd2b53f16813dd2e21e69cbcd74db824f347d759170a8679b7f69979ad3a72fa` |
-| 8 | `def` | [mvPolynomialQuotientEquiv](../../../../CommutativeAlgebra/MvPolynomialLocalizationNamespaced.lean/declarations/mvpolynomialquotientequiv.md) | 117 | `declaration-track:51091fc93910e9d27fffb14ecd9f67c4f10de9dcc9fd5dbb6ade319bcb26aad8` |
-| 9 | `lemma` | [mvPolynomialQuotientEquiv_apply](../../../../CommutativeAlgebra/MvPolynomialLocalizationNamespaced.lean/declarations/mvpolynomialquotientequiv-apply.md) | 130 | `result-track:5f9908ae610fb5101c39695bed83f69e548e0d546fdb1c2d63a471248f0a4c55` |
+| 1 | `instance` | [isLocalization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MvPolynomialLocalizationNamespaced.lean/declarations/islocalization.md) | 49 | `declaration-track:c5a49be16524f392ede730ff8cccccadcfed86e1c8dede2d5a63a9fc77d59f0a` |
+| 2 | `lemma` | [isLocalization_C_mk'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MvPolynomialLocalizationNamespaced.lean/declarations/islocalization-c-mk.md) | 53 | `result-track:2973a69f7e58dd6cf9336b2e6e185ea167190fa7d9ec77ffdc41d47050c44a92` |
+| 3 | `def` | [auxHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MvPolynomialLocalizationNamespaced.lean/declarations/auxhom.md) | 70 | `declaration-track:8da625811699263e98afe7e8a5512e0a84cf6dfb77ba2b9d6bb615befd89033b` |
+| 4 | `lemma` | [auxHom_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MvPolynomialLocalizationNamespaced.lean/declarations/auxhom-mk.md) | 83 | `result-track:a3d1355ca4de962f86495c4da32e7a4ea71fc045b8b830dcaa4768dc3ca73a65` |
+| 5 | `def` | [auxInv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MvPolynomialLocalizationNamespaced.lean/declarations/auxinv.md) | 88 | `declaration-track:3dcf4b6176112e943c07d9f38f68e4259343203a30492e9f0c38ca202688bebe` |
+| 6 | `lemma` | [auxHom_auxInv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MvPolynomialLocalizationNamespaced.lean/declarations/auxhom-auxinv.md) | 98 | `result-track:f7d3af15673967c2effdcda0d0a77383b8285b18dc6a9463504baae95ddf65f1` |
+| 7 | `lemma` | [auxInv_auxHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MvPolynomialLocalizationNamespaced.lean/declarations/auxinv-auxhom.md) | 103 | `result-track:cd2b53f16813dd2e21e69cbcd74db824f347d759170a8679b7f69979ad3a72fa` |
+| 8 | `def` | [mvPolynomialQuotientEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MvPolynomialLocalizationNamespaced.lean/declarations/mvpolynomialquotientequiv.md) | 117 | `declaration-track:51091fc93910e9d27fffb14ecd9f67c4f10de9dcc9fd5dbb6ade319bcb26aad8` |
+| 9 | `lemma` | [mvPolynomialQuotientEquiv_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/MvPolynomialLocalizationNamespaced.lean/declarations/mvpolynomialquotientequiv-apply.md) | 130 | `result-track:5f9908ae610fb5101c39695bed83f69e548e0d546fdb1c2d63a471248f0a4c55` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

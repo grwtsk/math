@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListNatAntidiagonalAligned.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListNatAntidiagonalAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListNatAntidiagonalAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListNatAntidiagonalAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [antidiagonal](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListNatAntidiagonalAligned.lean/declarations/antidiagonal.md) | 32 | `declaration-track:31c8106aab584f4a4e8f3a4af9444d631d16163c28820841d52d044c202629f7` |
-| 2 | `theorem` | [mem_antidiagonal](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListNatAntidiagonalAligned.lean/declarations/mem-antidiagonal.md) | 38 | `result-track:25363c6a61450d34155162f7af70a04ebad2045cb543ecf83db410447061fdc0` |
-| 3 | `theorem` | [length_antidiagonal](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListNatAntidiagonalAligned.lean/declarations/length-antidiagonal.md) | 52 | `result-track:71e56fc11460dcd52783124cad8a1fa88b28cd8ffa403f3ad7c96e3af9883acf` |
-| 4 | `theorem` | [antidiagonal_zero](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListNatAntidiagonalAligned.lean/declarations/antidiagonal-zero.md) | 58 | `result-track:bb843d78ac25a8cf2c705fab89a5a0097fa9690bdad020dc3528d930ffc8cc18` |
-| 5 | `theorem` | [nodup_antidiagonal](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListNatAntidiagonalAligned.lean/declarations/nodup-antidiagonal.md) | 63 | `result-track:cef7bc6c921d5346abf0eb5092ea78ccfeb3af6255a206fb9ec0cf0f6506d7ba` |
-| 6 | `theorem` | [antidiagonal_succ](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListNatAntidiagonalAligned.lean/declarations/antidiagonal-succ-source-edition-2.md) | 68 | `result-track:9126cd3a8933654713f885d428d150f7bae2cf9a2c6e4566371c047ec84be797` |
-| 7 | `theorem` | [antidiagonal_succ'](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListNatAntidiagonalAligned.lean/declarations/antidiagonal-succ.md) | 76 | `result-track:4b8b046b369a12498b2b6fef1a6a12bc30322018c82213e5c3223bcbf15f58af` |
-| 8 | `theorem` | [antidiagonal_succ_succ'](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListNatAntidiagonalAligned.lean/declarations/antidiagonal-succ-succ.md) | 85 | `result-track:428de8672f33910fcb3b5ab75567cdd504f2ce977a0a374eb7423fa4a8b67365` |
-| 9 | `theorem` | [map_swap_antidiagonal](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListNatAntidiagonalAligned.lean/declarations/map-swap-antidiagonal.md) | 94 | `result-track:510a06275875ee1700335390ac2f91d226ffafc85588b0b10fbe91e71e680a36` |
+| 1 | `def` | [antidiagonal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListNatAntidiagonalAligned.lean/declarations/antidiagonal.md) | 32 | `declaration-track:31c8106aab584f4a4e8f3a4af9444d631d16163c28820841d52d044c202629f7` |
+| 2 | `theorem` | [mem_antidiagonal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListNatAntidiagonalAligned.lean/declarations/mem-antidiagonal.md) | 38 | `result-track:25363c6a61450d34155162f7af70a04ebad2045cb543ecf83db410447061fdc0` |
+| 3 | `theorem` | [length_antidiagonal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListNatAntidiagonalAligned.lean/declarations/length-antidiagonal.md) | 52 | `result-track:71e56fc11460dcd52783124cad8a1fa88b28cd8ffa403f3ad7c96e3af9883acf` |
+| 4 | `theorem` | [antidiagonal_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListNatAntidiagonalAligned.lean/declarations/antidiagonal-zero.md) | 58 | `result-track:bb843d78ac25a8cf2c705fab89a5a0097fa9690bdad020dc3528d930ffc8cc18` |
+| 5 | `theorem` | [nodup_antidiagonal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListNatAntidiagonalAligned.lean/declarations/nodup-antidiagonal.md) | 63 | `result-track:cef7bc6c921d5346abf0eb5092ea78ccfeb3af6255a206fb9ec0cf0f6506d7ba` |
+| 6 | `theorem` | [antidiagonal_succ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListNatAntidiagonalAligned.lean/declarations/antidiagonal-succ-source-edition-2.md) | 68 | `result-track:9126cd3a8933654713f885d428d150f7bae2cf9a2c6e4566371c047ec84be797` |
+| 7 | `theorem` | [antidiagonal_succ'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListNatAntidiagonalAligned.lean/declarations/antidiagonal-succ.md) | 76 | `result-track:4b8b046b369a12498b2b6fef1a6a12bc30322018c82213e5c3223bcbf15f58af` |
+| 8 | `theorem` | [antidiagonal_succ_succ'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListNatAntidiagonalAligned.lean/declarations/antidiagonal-succ-succ.md) | 85 | `result-track:428de8672f33910fcb3b5ab75567cdd504f2ce977a0a374eb7423fa4a8b67365` |
+| 9 | `theorem` | [map_swap_antidiagonal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListNatAntidiagonalAligned.lean/declarations/map-swap-antidiagonal.md) | 94 | `result-track:510a06275875ee1700335390ac2f91d226ffafc85588b0b10fbe91e71e680a36` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

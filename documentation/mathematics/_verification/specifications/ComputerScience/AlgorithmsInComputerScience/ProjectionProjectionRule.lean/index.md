@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ProjectionProjectionRule.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ProjectionProjectionRule.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProjectionProjectionRule.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProjectionProjectionRule.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ProjectionRule](../../../../../ComputerScience/AlgorithmsInComputerScience/ProjectionProjectionRule.lean/declarations/projectionrule.md) | 7 | `declaration-track:95cc8f95c8ab7d467e657f616431da94afc326a107e9b8219d15e2a6250868d8` |
-| 2 | `def` | [canonicalFiberName](../../../../../ComputerScience/AlgorithmsInComputerScience/ProjectionProjectionRule.lean/declarations/canonicalfibername.md) | 14 | `declaration-track:b8c6f1f74fa9809144dfad9b526f8abfce9a5bfbcdbd016fee249e393c80e780` |
-| 3 | `def` | [projectionRules](../../../../../ComputerScience/AlgorithmsInComputerScience/ProjectionProjectionRule.lean/declarations/projectionrules.md) | 28 | `declaration-track:edae24b9d435af616b3bf580816014da1b70b495aecf8024c350f9e1510b02c0` |
-| 4 | `theorem` | [projectionRules_count](../../../../../ComputerScience/AlgorithmsInComputerScience/ProjectionProjectionRule.lean/declarations/projectionrules-count.md) | 79 | `result-track:eda61441a8bed5589a6fbe79137561970375e62b05b51560ae8264dea1140829` |
+| 1 | `structure` | [ProjectionRule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProjectionProjectionRule.lean/declarations/projectionrule.md) | 7 | `declaration-track:95cc8f95c8ab7d467e657f616431da94afc326a107e9b8219d15e2a6250868d8` |
+| 2 | `def` | [canonicalFiberName](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProjectionProjectionRule.lean/declarations/canonicalfibername.md) | 14 | `declaration-track:b8c6f1f74fa9809144dfad9b526f8abfce9a5bfbcdbd016fee249e393c80e780` |
+| 3 | `def` | [projectionRules](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProjectionProjectionRule.lean/declarations/projectionrules.md) | 28 | `declaration-track:edae24b9d435af616b3bf580816014da1b70b495aecf8024c350f9e1510b02c0` |
+| 4 | `theorem` | [projectionRules_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProjectionProjectionRule.lean/declarations/projectionrules-count.md) | 79 | `result-track:eda61441a8bed5589a6fbe79137561970375e62b05b51560ae8264dea1140829` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

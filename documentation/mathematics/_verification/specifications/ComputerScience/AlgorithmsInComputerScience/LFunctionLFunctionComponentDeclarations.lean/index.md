@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/LFunctionLFunctionComponentDeclarations.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/LFunctionLFunctionComponentDeclarations.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LFunctionLFunctionComponentDeclarations.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LFunctionLFunctionComponentDeclarations.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [lFunctionComponentDeclarations](../../../../../ComputerScience/AlgorithmsInComputerScience/LFunctionLFunctionComponentDeclarations.lean/declarations/lfunctioncomponentdeclarations.md) | 26 | `declaration-track:11065a6ad4076500694f524952d53055d6b64b8f4df58c1d383a1894873dfb17` |
+| 1 | `def` | [lFunctionComponentDeclarations](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/LFunctionLFunctionComponentDeclarations.lean/declarations/lfunctioncomponentdeclarations.md) | 26 | `declaration-track:11065a6ad4076500694f524952d53055d6b64b8f4df58c1d383a1894873dfb17` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

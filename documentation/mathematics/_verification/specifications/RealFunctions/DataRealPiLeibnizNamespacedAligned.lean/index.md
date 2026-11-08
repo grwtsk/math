@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/DataRealPiLeibnizNamespacedAligned.lean/index.md) · [Full source](../../../../RealFunctions/DataRealPiLeibnizNamespacedAligned.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DataRealPiLeibnizNamespacedAligned.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DataRealPiLeibnizNamespacedAligned.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `macro_rules` | [(anonymous)](../../../../RealFunctions/DataRealPiLeibnizNamespacedAligned.lean/declarations/macro-rules.md) | 23 | `declaration-track:4d49a692bae509faabbc01724b043c7d10059eb95cad73261d5cb336fa483769` |
-| 2 | `theorem` | [tendsto_sum_pi_div_four](../../../../RealFunctions/DataRealPiLeibnizNamespacedAligned.lean/declarations/tendsto-sum-pi-div-four.md) | 52 | `result-track:7be217dbcee513bb8a71eb1286a51216bcfe1cc6d36b85e261c7f942c89ce5df` |
+| 1 | `macro_rules` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DataRealPiLeibnizNamespacedAligned.lean/declarations/macro-rules.md) | 23 | `declaration-track:4d49a692bae509faabbc01724b043c7d10059eb95cad73261d5cb336fa483769` |
+| 2 | `theorem` | [tendsto_sum_pi_div_four](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/DataRealPiLeibnizNamespacedAligned.lean/declarations/tendsto-sum-pi-div-four.md) | 52 | `result-track:7be217dbcee513bb8a71eb1286a51216bcfe1cc6d36b85e261c7f942c89ce5df` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TransportTransportSystem.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TransportTransportSystem.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TransportTransportSystem.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TransportTransportSystem.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TransportSystem](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TransportTransportSystem.lean/declarations/transportsystem.md) | 22 | `declaration-track:513c781e7e800c0fe2520e1190f6ca846eb3f199c8a7abb9153d02f1e27fae0a` |
-| 2 | `def` | [transportPath](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TransportTransportSystem.lean/declarations/transportpath.md) | 29 | `declaration-track:37d80196d191fbb5b2d97dce777125d7b5c09e8e07196f39bb29f14f04e86271` |
-| 3 | `theorem` | [transportPath_nil](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TransportTransportSystem.lean/declarations/transportpath-nil.md) | 40 | `result-track:d6de6d5596ec8a4813e316700c4a6315ae7451d39aad30dc9a86237686443f94` |
-| 4 | `theorem` | [transportPath_append](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TransportTransportSystem.lean/declarations/transportpath-append.md) | 50 | `result-track:e5a26e62665d9eb7c11c61b6298fd2bd72ef03ca4dad09b5eb8dbfe10a09bfe5` |
+| 1 | `structure` | [TransportSystem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TransportTransportSystem.lean/declarations/transportsystem.md) | 22 | `declaration-track:513c781e7e800c0fe2520e1190f6ca846eb3f199c8a7abb9153d02f1e27fae0a` |
+| 2 | `def` | [transportPath](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TransportTransportSystem.lean/declarations/transportpath.md) | 29 | `declaration-track:37d80196d191fbb5b2d97dce777125d7b5c09e8e07196f39bb29f14f04e86271` |
+| 3 | `theorem` | [transportPath_nil](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TransportTransportSystem.lean/declarations/transportpath-nil.md) | 40 | `result-track:d6de6d5596ec8a4813e316700c4a6315ae7451d39aad30dc9a86237686443f94` |
+| 4 | `theorem` | [transportPath_append](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/TransportTransportSystem.lean/declarations/transportpath-append.md) | 50 | `result-track:e5a26e62665d9eb7c11c61b6298fd2bd72ef03ca4dad09b5eb8dbfe10a09bfe5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

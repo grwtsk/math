@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/LogarithmicProfileWeights.lean/index.md) · [Full source](../../../../MeasureAndIntegration/LogarithmicProfileWeights.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogarithmicProfileWeights.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogarithmicProfileWeights.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,14 +61,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sqrt_exp_half](../../../../MeasureAndIntegration/LogarithmicProfileWeights.lean/declarations/sqrt-exp-half.md) | 24 | `result-track:9cdef61e4fb7620285ae54baa47c9d418b01e1cfd210f3c969c84ad507822563` |
-| 2 | `theorem` | [reciprocal_jacobian](../../../../MeasureAndIntegration/LogarithmicProfileWeights.lean/declarations/reciprocal-jacobian.md) | 30 | `result-track:17ff97174dad3cfbac6eac5b7f3fcf994e6053db41da77f92851b72e7d88b402` |
-| 3 | `theorem` | [upper_logarithmic_jacobian](../../../../MeasureAndIntegration/LogarithmicProfileWeights.lean/declarations/upper-logarithmic-jacobian.md) | 35 | `result-track:73ddb2fcf70dcbfa65345946ef7ed5fa4bd067ac9462f496b8d752f8a06b6808` |
-| 4 | `theorem` | [lower_logarithmic_jacobian](../../../../MeasureAndIntegration/LogarithmicProfileWeights.lean/declarations/lower-logarithmic-jacobian.md) | 41 | `result-track:f82b6ff75f1b37f7938c8b8ea71f28b0833f391adb481abafc938ebb1b45f95d` |
-| 5 | `theorem` | [first_exponential_moment](../../../../MeasureAndIntegration/LogarithmicProfileWeights.lean/declarations/first-exponential-moment.md) | 52 | `result-track:4d64c9ffe751be32bb5efbc5ac49309ff1d4cbf1fbc891da9166d7999b469062` |
-| 6 | `theorem` | [reciprocal_sqrt_upper_weight](../../../../MeasureAndIntegration/LogarithmicProfileWeights.lean/declarations/reciprocal-sqrt-upper-weight.md) | 75 | `result-track:a44b36e111b421a713fe6416731b1e43fc0487e8a659f6f3f5fcc93ad8ed6050` |
-| 7 | `theorem` | [logarithmic_sqrt_upper_weight](../../../../MeasureAndIntegration/LogarithmicProfileWeights.lean/declarations/logarithmic-sqrt-upper-weight.md) | 101 | `result-track:433c717c2f308a00dbf986915a8b4aad7d65bb8a3cc3b39041f8b9427d96dcc2` |
-| 8 | `theorem` | [logarithmic_sqrt_lower_weight](../../../../MeasureAndIntegration/LogarithmicProfileWeights.lean/declarations/logarithmic-sqrt-lower-weight.md) | 119 | `result-track:9f6412041207c9eaad6ab69a6dcb0310c435a8ff6638fc0096eeb8404b51d12f` |
+| 1 | `theorem` | [sqrt_exp_half](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogarithmicProfileWeights.lean/declarations/sqrt-exp-half.md) | 24 | `result-track:9cdef61e4fb7620285ae54baa47c9d418b01e1cfd210f3c969c84ad507822563` |
+| 2 | `theorem` | [reciprocal_jacobian](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogarithmicProfileWeights.lean/declarations/reciprocal-jacobian.md) | 30 | `result-track:17ff97174dad3cfbac6eac5b7f3fcf994e6053db41da77f92851b72e7d88b402` |
+| 3 | `theorem` | [upper_logarithmic_jacobian](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogarithmicProfileWeights.lean/declarations/upper-logarithmic-jacobian.md) | 35 | `result-track:73ddb2fcf70dcbfa65345946ef7ed5fa4bd067ac9462f496b8d752f8a06b6808` |
+| 4 | `theorem` | [lower_logarithmic_jacobian](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogarithmicProfileWeights.lean/declarations/lower-logarithmic-jacobian.md) | 41 | `result-track:f82b6ff75f1b37f7938c8b8ea71f28b0833f391adb481abafc938ebb1b45f95d` |
+| 5 | `theorem` | [first_exponential_moment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogarithmicProfileWeights.lean/declarations/first-exponential-moment.md) | 52 | `result-track:4d64c9ffe751be32bb5efbc5ac49309ff1d4cbf1fbc891da9166d7999b469062` |
+| 6 | `theorem` | [reciprocal_sqrt_upper_weight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogarithmicProfileWeights.lean/declarations/reciprocal-sqrt-upper-weight.md) | 75 | `result-track:a44b36e111b421a713fe6416731b1e43fc0487e8a659f6f3f5fcc93ad8ed6050` |
+| 7 | `theorem` | [logarithmic_sqrt_upper_weight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogarithmicProfileWeights.lean/declarations/logarithmic-sqrt-upper-weight.md) | 101 | `result-track:433c717c2f308a00dbf986915a8b4aad7d65bb8a3cc3b39041f8b9427d96dcc2` |
+| 8 | `theorem` | [logarithmic_sqrt_lower_weight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LogarithmicProfileWeights.lean/declarations/logarithmic-sqrt-lower-weight.md) | 119 | `result-track:9f6412041207c9eaad6ab69a6dcb0310c435a8ff6638fc0096eeb8404b51d12f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

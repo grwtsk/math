@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/DegreeRelevanceBoundsAlternative.lean/index.md) · [Full source](../../../../Combinatorics/DegreeRelevanceBoundsAlternative.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DegreeRelevanceBoundsAlternative.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DegreeRelevanceBoundsAlternative.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [degree_relevance_bounds](../../../../Combinatorics/DegreeRelevanceBoundsAlternative.lean/declarations/degree-relevance-bounds.md) | 38 | `result-track:324baac1075b972c7094929f44fae07c72827f88b320ed3e6c796e4ea91bbde5` |
+| 1 | `theorem` | [degree_relevance_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DegreeRelevanceBoundsAlternative.lean/declarations/degree-relevance-bounds.md) | 38 | `result-track:324baac1075b972c7094929f44fae07c72827f88b320ed3e6c796e4ea91bbde5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ConcreteNewtonContour.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ConcreteNewtonContour.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ConcreteNewtonContour.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ConcreteNewtonContour.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.ConcreteNewtonRegularPart`](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ConcreteNewtonRegularPart.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.IsolatedSimpleZeroContour`](../../../../../../FunctionsOfAComplexVariable/IsolatedSimpleZeroContour.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.ConcreteNewtonRegularPart`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ConcreteNewtonRegularPart.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.IsolatedSimpleZeroContour`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IsolatedSimpleZeroContour.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [inner_root_in_outer_ball](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ConcreteNewtonContour.lean/declarations/inner-root-in-outer-ball.md) | 37 | `result-track:db0649044eb74e03cd4d71f4e46e15cf5c457f6e75dc035404a0586eeb5827d4` |
-| 2 | `theorem` | [outer_nonzero_away](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ConcreteNewtonContour.lean/declarations/outer-nonzero-away.md) | 47 | `result-track:23b5e462bd97960d2c2a0597a3fd19646735873346207289ed17b686bf0721ad` |
-| 3 | `theorem` | [local_zero_with_analytic_regularPart](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ConcreteNewtonContour.lean/declarations/local-zero-with-analytic-regularpart.md) | 58 | `result-track:fee927df5ad49d515638c2582d4fe481c74f3469947114cd096f19dff9fc50ac` |
-| 4 | `theorem` | [outer_log_derivative_circleIntegral](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ConcreteNewtonContour.lean/declarations/outer-log-derivative-circleintegral.md) | 90 | `result-track:45855d1300b66ee6caf9ae75b61357bdec9822ce365dff9b52562656a548c2fe` |
-| 5 | `theorem` | [normalized_outer_index](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ConcreteNewtonContour.lean/declarations/normalized-outer-index.md) | 102 | `result-track:34a5b2f5748fed4687c29c69514c0456330abb4ab641cb1e25eddc9ef8c9a99f` |
-| 6 | `theorem` | [centered_comparison_circleIntegral_zero](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ConcreteNewtonContour.lean/declarations/centered-comparison-circleintegral-zero.md) | 112 | `result-track:d43cb08c554958c6711e31ec315a8b02c316d70e6177271b1d5ab2493cbead96` |
+| 1 | `theorem` | [inner_root_in_outer_ball](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ConcreteNewtonContour.lean/declarations/inner-root-in-outer-ball.md) | 37 | `result-track:db0649044eb74e03cd4d71f4e46e15cf5c457f6e75dc035404a0586eeb5827d4` |
+| 2 | `theorem` | [outer_nonzero_away](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ConcreteNewtonContour.lean/declarations/outer-nonzero-away.md) | 47 | `result-track:23b5e462bd97960d2c2a0597a3fd19646735873346207289ed17b686bf0721ad` |
+| 3 | `theorem` | [local_zero_with_analytic_regularPart](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ConcreteNewtonContour.lean/declarations/local-zero-with-analytic-regularpart.md) | 58 | `result-track:fee927df5ad49d515638c2582d4fe481c74f3469947114cd096f19dff9fc50ac` |
+| 4 | `theorem` | [outer_log_derivative_circleIntegral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ConcreteNewtonContour.lean/declarations/outer-log-derivative-circleintegral.md) | 90 | `result-track:45855d1300b66ee6caf9ae75b61357bdec9822ce365dff9b52562656a548c2fe` |
+| 5 | `theorem` | [normalized_outer_index](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ConcreteNewtonContour.lean/declarations/normalized-outer-index.md) | 102 | `result-track:34a5b2f5748fed4687c29c69514c0456330abb4ab641cb1e25eddc9ef8c9a99f` |
+| 6 | `theorem` | [centered_comparison_circleIntegral_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ConcreteNewtonContour.lean/declarations/centered-comparison-circleintegral-zero.md) | 112 | `result-track:d43cb08c554958c6711e31ec315a8b02c316d70e6177271b1d5ab2493cbead96` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

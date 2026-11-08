@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RamareCorrectedR2EnvelopesNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RamareCorrectedR2EnvelopesNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RamareCorrectedR2EnvelopesNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RamareCorrectedR2EnvelopesNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [correctedR2StarMidEnvelope](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RamareCorrectedR2EnvelopesNamespaced.lean/declarations/correctedr2starmidenvelope.md) | 34 | `result-track:b1e9d294b3a43c0bd546f6e2173e62d75d0120c3733e186458ca6f0f8d01342d` |
-| 2 | `theorem` | [correctedR2StarHighEnvelope](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RamareCorrectedR2EnvelopesNamespaced.lean/declarations/correctedr2starhighenvelope.md) | 67 | `result-track:60208d7cb0d7c28f42758aad6f00c3d7990a3a712c12f64b2dc66fa4d72cce33` |
+| 1 | `theorem` | [correctedR2StarMidEnvelope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RamareCorrectedR2EnvelopesNamespaced.lean/declarations/correctedr2starmidenvelope.md) | 34 | `result-track:b1e9d294b3a43c0bd546f6e2173e62d75d0120c3733e186458ca6f0f8d01342d` |
+| 2 | `theorem` | [correctedR2StarHighEnvelope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RamareCorrectedR2EnvelopesNamespaced.lean/declarations/correctedr2starhighenvelope.md) | 67 | `result-track:60208d7cb0d7c28f42758aad6f00c3d7990a3a712c12f64b2dc66fa4d72cce33` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

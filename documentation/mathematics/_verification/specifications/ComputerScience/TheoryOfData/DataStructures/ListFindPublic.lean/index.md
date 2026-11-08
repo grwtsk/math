@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListFindPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListFindPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListFindPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListFindPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [find?_eq_find?_of_perm](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListFindPublic.lean/declarations/find-eq-find-of-perm.md) | 21 | `result-track:c7e518d53dd449a282c5737708061ec6031404de695aa333dc0546b03f63d5f5` |
-| 2 | `theorem` | [find?_congr](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListFindPublic.lean/declarations/find-congr.md) | 36 | `result-track:8d7c90a7127b9f7615a1a6f069ed2e0304020c8f9396b3b17f3d6af485eefe67` |
+| 1 | `theorem` | [find?_eq_find?_of_perm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListFindPublic.lean/declarations/find-eq-find-of-perm.md) | 21 | `result-track:c7e518d53dd449a282c5737708061ec6031404de695aa333dc0546b03f63d5f5` |
+| 2 | `theorem` | [find?_congr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListFindPublic.lean/declarations/find-congr.md) | 36 | `result-track:8d7c90a7127b9f7615a1a6f069ed2e0304020c8f9396b3b17f3d6af485eefe67` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

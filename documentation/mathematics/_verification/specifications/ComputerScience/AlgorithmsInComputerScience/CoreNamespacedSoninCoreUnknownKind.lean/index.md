@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/CoreNamespacedSoninCoreUnknownKind.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/CoreNamespacedSoninCoreUnknownKind.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CoreNamespacedSoninCoreUnknownKind.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CoreNamespacedSoninCoreUnknownKind.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [SoninCoreUnknownKind](../../../../../ComputerScience/AlgorithmsInComputerScience/CoreNamespacedSoninCoreUnknownKind.lean/declarations/sonincoreunknownkind.md) | 17 | `declaration-track:bebd827f1484aeb30af660250fdab277a46b0c3f597943a2ed487797d8e65134` |
-| 2 | `structure` | [OpenSoninObligation](../../../../../ComputerScience/AlgorithmsInComputerScience/CoreNamespacedSoninCoreUnknownKind.lean/declarations/opensoninobligation.md) | 47 | `declaration-track:0d2f37f2208bcaf01970544b423cc920ed0a9a99217c2bce5f322c9026177e07` |
+| 1 | `inductive` | [SoninCoreUnknownKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CoreNamespacedSoninCoreUnknownKind.lean/declarations/sonincoreunknownkind.md) | 17 | `declaration-track:bebd827f1484aeb30af660250fdab277a46b0c3f597943a2ed487797d8e65134` |
+| 2 | `structure` | [OpenSoninObligation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/CoreNamespacedSoninCoreUnknownKind.lean/declarations/opensoninobligation.md) | 47 | `declaration-track:0d2f37f2208bcaf01970544b423cc920ed0a9a99217c2bce5f322c9026177e07` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/Criterion02FaileCriterionFailedNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/Criterion02FaileCriterionFailedNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Criterion02FaileCriterionFailedNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Criterion02FaileCriterionFailedNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [hasDerivAt_jetRatio](../../../../MeasureAndIntegration/Criterion02FaileCriterionFailedNamespaced.lean/declarations/hasderivat-jetratio.md) | 17 | `result-track:f6ea97f885ab14f0cba291d41322e2ebeba1f3e633b34aa630844b8402211df5` |
-| 2 | `theorem` | [source_jet_det_nonpos_of_wronskian](../../../../MeasureAndIntegration/Criterion02FaileCriterionFailedNamespaced.lean/declarations/source-jet-det-nonpos-of-wronskian.md) | 29 | `result-track:a00b31079b63c9ce19e0ed017d3aac829e90deb0882ec4b2fa50150655b55bb9` |
-| 3 | `theorem` | [residual_cross_nonpos_of_source_jet_det](../../../../MeasureAndIntegration/Criterion02FaileCriterionFailedNamespaced.lean/declarations/residual-cross-nonpos-of-source-jet-det.md) | 92 | `result-track:73840cb6dd337c0d14e9a50b97582945ab87ff3414e9bf85a32fef76c57fb61f` |
-| 4 | `theorem` | [integral_moment_cross_nonpos](../../../../MeasureAndIntegration/Criterion02FaileCriterionFailedNamespaced.lean/declarations/integral-moment-cross-nonpos.md) | 103 | `result-track:a98399d731aa4f74a6660447c27155a4884f546f0dfe033ec0a15cf0a0d54092` |
+| 1 | `theorem` | [hasDerivAt_jetRatio](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Criterion02FaileCriterionFailedNamespaced.lean/declarations/hasderivat-jetratio.md) | 17 | `result-track:f6ea97f885ab14f0cba291d41322e2ebeba1f3e633b34aa630844b8402211df5` |
+| 2 | `theorem` | [source_jet_det_nonpos_of_wronskian](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Criterion02FaileCriterionFailedNamespaced.lean/declarations/source-jet-det-nonpos-of-wronskian.md) | 29 | `result-track:a00b31079b63c9ce19e0ed017d3aac829e90deb0882ec4b2fa50150655b55bb9` |
+| 3 | `theorem` | [residual_cross_nonpos_of_source_jet_det](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Criterion02FaileCriterionFailedNamespaced.lean/declarations/residual-cross-nonpos-of-source-jet-det.md) | 92 | `result-track:73840cb6dd337c0d14e9a50b97582945ab87ff3414e9bf85a32fef76c57fb61f` |
+| 4 | `theorem` | [integral_moment_cross_nonpos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Criterion02FaileCriterionFailedNamespaced.lean/declarations/integral-moment-cross-nonpos.md) | 103 | `result-track:a98399d731aa4f74a6660447c27155a4884f546f0dfe033ec0a15cf0a0d54092` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

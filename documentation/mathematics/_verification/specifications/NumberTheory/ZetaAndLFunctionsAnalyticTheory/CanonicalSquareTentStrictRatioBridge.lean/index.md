@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentStrictRatioBridge.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentStrictRatioBridge.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentStrictRatioBridge.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentStrictRatioBridge.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentCofactorZeroSign`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentCofactorZeroSign.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentCofactorZeroSign`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentCofactorZeroSign.lean/index.md) — import line 7; pinned internal source present.
 - `Mathlib.Tactic` — import line 8; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [strict_ratio_of_pivot_gaps](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentStrictRatioBridge.lean/declarations/strict-ratio-of-pivot-gaps.md) | 33 | `result-track:a9df112938a511e73506f729e97b36888badede0c6d9f9543d675f72ba2c9689` |
-| 2 | `theorem` | [cofactorZero_ne_zero_of_stage_pivot_gaps](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentStrictRatioBridge.lean/declarations/cofactorzero-ne-zero-of-stage-pivot-gaps.md) | 50 | `result-track:62e10358ea173ca2e9cd707bcc8a2260805b65039cc913fe3ad96a20f07c7435` |
+| 1 | `theorem` | [strict_ratio_of_pivot_gaps](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentStrictRatioBridge.lean/declarations/strict-ratio-of-pivot-gaps.md) | 33 | `result-track:a9df112938a511e73506f729e97b36888badede0c6d9f9543d675f72ba2c9689` |
+| 2 | `theorem` | [cofactorZero_ne_zero_of_stage_pivot_gaps](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentStrictRatioBridge.lean/declarations/cofactorzero-ne-zero-of-stage-pivot-gaps.md) | 50 | `result-track:62e10358ea173ca2e9cd707bcc8a2260805b65039cc913fe3ad96a20f07c7435` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexMeasure.lean/index.md) · [Full source](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexMeasure.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/ConvexMeasure.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/ConvexMeasure.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [addHaar_frontier](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexMeasure.lean/declarations/addhaar-frontier.md) | 31 | `result-track:921296b901df1b4b76fad5cb374738a8fb7e6228e921daa1945a7a0e798dc927` |
-| 2 | `theorem` | [nullMeasurableSet](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexMeasure.lean/declarations/nullmeasurableset.md) | 82 | `result-track:2a5ce8d80784de8aa81cd62b567b398af9cf636556f872452c8a07040adcd203` |
+| 1 | `theorem` | [addHaar_frontier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/ConvexMeasure.lean/declarations/addhaar-frontier.md) | 31 | `result-track:921296b901df1b4b76fad5cb374738a8fb7e6228e921daa1945a7a0e798dc927` |
+| 2 | `theorem` | [nullMeasurableSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/ConvexMeasure.lean/declarations/nullmeasurableset.md) | 82 | `result-track:2a5ce8d80784de8aa81cd62b567b398af9cf636556f872452c8a07040adcd203` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

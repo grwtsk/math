@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/InvarianceNamespaced.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/InvarianceNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/InvarianceNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/InvarianceNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [bind_add](../../../../ProbabilityTheoryAndStochasticProcesses/InvarianceNamespaced.lean/declarations/bind-add.md) | 48 | `result-track:459c760032309c9d6cc399e7cb9343006ce23ef526f18771643863ad79878580` |
-| 2 | `theorem` | [bind_smul](../../../../ProbabilityTheoryAndStochasticProcesses/InvarianceNamespaced.lean/declarations/bind-smul.md) | 55 | `result-track:69f46defe3a2b65818a32626e3713ae26992dc2a899c75d979a26551f476572c` |
-| 3 | `theorem` | [const_bind_eq_comp_const](../../../../ProbabilityTheoryAndStochasticProcesses/InvarianceNamespaced.lean/declarations/const-bind-eq-comp-const.md) | 60 | `result-track:31c61569f7b434799ffce322f1c98f57282e9478a28ba34ea6fa5ec083853149` |
-| 4 | `theorem` | [comp_const_apply_eq_bind](../../../../ProbabilityTheoryAndStochasticProcesses/InvarianceNamespaced.lean/declarations/comp-const-apply-eq-bind.md) | 65 | `result-track:1d201bb5e79a40ff35be1cef6eb0dd087ce96d14deac02e95b3c229069befa59` |
-| 5 | `def` | [Invariant](../../../../ProbabilityTheoryAndStochasticProcesses/InvarianceNamespaced.lean/declarations/invariant.md) | 74 | `declaration-track:d5805c440748fbd1daa417cd21c5f2aae8a69908a4dc9b98aaf95b67f7fc9a81` |
-| 6 | `theorem` | [Invariant.def](../../../../ProbabilityTheoryAndStochasticProcesses/InvarianceNamespaced.lean/declarations/def.md) | 79 | `result-track:fe1838da9d606ece96051b071d3bfad09c81a1b581a21201c0bc873820842dee` |
-| 7 | `theorem` | [Invariant.comp_const](../../../../ProbabilityTheoryAndStochasticProcesses/InvarianceNamespaced.lean/declarations/comp-const.md) | 82 | `result-track:502c0215debe8faf8b3517f9385672d426637e284a7dfe6a6973157256b35df5` |
-| 8 | `theorem` | [Invariant.comp](../../../../ProbabilityTheoryAndStochasticProcesses/InvarianceNamespaced.lean/declarations/comp.md) | 85 | `result-track:b0cce6e7d8dedbb4a3b10d2cac6cf0bcd71cfa612767bbcaca0b480c58bd507b` |
+| 1 | `theorem` | [bind_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/InvarianceNamespaced.lean/declarations/bind-add.md) | 48 | `result-track:459c760032309c9d6cc399e7cb9343006ce23ef526f18771643863ad79878580` |
+| 2 | `theorem` | [bind_smul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/InvarianceNamespaced.lean/declarations/bind-smul.md) | 55 | `result-track:69f46defe3a2b65818a32626e3713ae26992dc2a899c75d979a26551f476572c` |
+| 3 | `theorem` | [const_bind_eq_comp_const](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/InvarianceNamespaced.lean/declarations/const-bind-eq-comp-const.md) | 60 | `result-track:31c61569f7b434799ffce322f1c98f57282e9478a28ba34ea6fa5ec083853149` |
+| 4 | `theorem` | [comp_const_apply_eq_bind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/InvarianceNamespaced.lean/declarations/comp-const-apply-eq-bind.md) | 65 | `result-track:1d201bb5e79a40ff35be1cef6eb0dd087ce96d14deac02e95b3c229069befa59` |
+| 5 | `def` | [Invariant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/InvarianceNamespaced.lean/declarations/invariant.md) | 74 | `declaration-track:d5805c440748fbd1daa417cd21c5f2aae8a69908a4dc9b98aaf95b67f7fc9a81` |
+| 6 | `theorem` | [Invariant.def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/InvarianceNamespaced.lean/declarations/def.md) | 79 | `result-track:fe1838da9d606ece96051b071d3bfad09c81a1b581a21201c0bc873820842dee` |
+| 7 | `theorem` | [Invariant.comp_const](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/InvarianceNamespaced.lean/declarations/comp-const.md) | 82 | `result-track:502c0215debe8faf8b3517f9385672d426637e284a7dfe6a6973157256b35df5` |
+| 8 | `theorem` | [Invariant.comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/InvarianceNamespaced.lean/declarations/comp.md) | 85 | `result-track:b0cce6e7d8dedbb4a3b10d2cac6cf0bcd71cfa612767bbcaca0b480c58bd507b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

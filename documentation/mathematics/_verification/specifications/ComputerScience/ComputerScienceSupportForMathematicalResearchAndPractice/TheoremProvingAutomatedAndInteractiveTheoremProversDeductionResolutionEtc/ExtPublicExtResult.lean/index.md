@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ExtPublicExtResult.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ExtPublicExtResult.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ExtPublicExtResult.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ExtPublicExtResult.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ExtResult](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ExtPublicExtResult.lean/declarations/extresult.md) | 18 | `declaration-track:c4f7e575eb3c5421f626148c691e45c4ddcac41578c73104d475fe341173cd3a` |
-| 2 | `def` | [straightLineExt](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ExtPublicExtResult.lean/declarations/straightlineext.md) | 23 | `declaration-track:b93d7740756c3fb5138a32f5299f5d122079ecdb977bdd4122c1bab04ffcaf98` |
-| 3 | `def` | [straightLineExtProgress](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ExtPublicExtResult.lean/declarations/straightlineextprogress.md) | 48 | `declaration-track:b2c1ef777597b4b8af38bb7b2a63e05ac78014dff4eb8ccd9f2846b1654c9bf3` |
+| 1 | `structure` | [ExtResult](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ExtPublicExtResult.lean/declarations/extresult.md) | 18 | `declaration-track:c4f7e575eb3c5421f626148c691e45c4ddcac41578c73104d475fe341173cd3a` |
+| 2 | `def` | [straightLineExt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ExtPublicExtResult.lean/declarations/straightlineext.md) | 23 | `declaration-track:b93d7740756c3fb5138a32f5299f5d122079ecdb977bdd4122c1bab04ffcaf98` |
+| 3 | `def` | [straightLineExtProgress](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ExtPublicExtResult.lean/declarations/straightlineextprogress.md) | 48 | `declaration-track:b2c1ef777597b4b8af38bb7b2a63e05ac78014dff4eb8ccd9f2846b1654c9bf3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CurrentTt11MultiSourceBoundariesEdition1.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CurrentTt11MultiSourceBoundariesEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CurrentTt11MultiSourceBoundariesEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CurrentTt11MultiSourceBoundariesEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CurrentTt11MultiSourceBoundariesEdition1.lean/declarations/example-source-edition-2.md) | 20 | `declaration-track:541beab15032187072190c81abb4e8e2c578a37cc8837cf3a5105e4bfbcc4077` |
-| 2 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CurrentTt11MultiSourceBoundariesEdition1.lean/declarations/example.md) | 27 | `declaration-track:10d7e289ece993c6d2e1ad106b281ad8e834ee6325c24df05017248f36b5013f` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CurrentTt11MultiSourceBoundariesEdition1.lean/declarations/example-source-edition-2.md) | 20 | `declaration-track:541beab15032187072190c81abb4e8e2c578a37cc8837cf3a5105e4bfbcc4077` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CurrentTt11MultiSourceBoundariesEdition1.lean/declarations/example.md) | 27 | `declaration-track:10d7e289ece993c6d2e1ad106b281ad8e834ee6325c24df05017248f36b5013f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPPiPublic.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPPiPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPPiPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPPiPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [CharZero.pi](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPPiPublic.lean/declarations/charzero-pi.md) | 20 | `result-track:5b94137247d9257c2e94011a5aa8d949f3b6ecfb4f3d7452295cffd77ad6613d` |
-| 2 | `instance` | [Pi.instCharZero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPPiPublic.lean/declarations/pi-instcharzero.md) | 27 | `declaration-track:147d0b46e71ee3b2cd66b956ed5f59da5163c09efc8fbf6e00c1397b14897bbe` |
-| 3 | `instance` | [Pi.instCharP](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPPiPublic.lean/declarations/pi-instcharp.md) | 32 | `declaration-track:2039ebfdce56e21ccf39926981b0354d35bcba395ee0c3b16b031fbf051de4a8` |
-| 4 | `instance` | [Pi.instExpChar](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/CharPPiPublic.lean/declarations/pi-instexpchar.md) | 36 | `declaration-track:b552387a92d1c79cb3238b469f1c039d12dc81651148edc64af87f5609dcb060` |
+| 1 | `theorem` | [CharZero.pi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPPiPublic.lean/declarations/charzero-pi.md) | 20 | `result-track:5b94137247d9257c2e94011a5aa8d949f3b6ecfb4f3d7452295cffd77ad6613d` |
+| 2 | `instance` | [Pi.instCharZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPPiPublic.lean/declarations/pi-instcharzero.md) | 27 | `declaration-track:147d0b46e71ee3b2cd66b956ed5f59da5163c09efc8fbf6e00c1397b14897bbe` |
+| 3 | `instance` | [Pi.instCharP](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPPiPublic.lean/declarations/pi-instcharp.md) | 32 | `declaration-track:2039ebfdce56e21ccf39926981b0354d35bcba395ee0c3b16b031fbf051de4a8` |
+| 4 | `instance` | [Pi.instExpChar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/CharPPiPublic.lean/declarations/pi-instexpchar.md) | 36 | `declaration-track:b552387a92d1c79cb3238b469f1c039d12dc81651148edc64af87f5609dcb060` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

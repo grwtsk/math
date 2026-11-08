@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PiFacts.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PiFacts.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PiFacts.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PiFacts.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,14 +60,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [PiX_abs_le](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PiFacts.lean/declarations/pix-abs-le.md) | 29 | `result-track:66141f7d65f0097691c1bb0dee8f1fc0a16f72243b04d45e84a1d7e1a8474ce1` |
-| 2 | `theorem` | [PiX_bound](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PiFacts.lean/declarations/pix-bound.md) | 131 | `result-track:73cd678ddf82f3be11c0aa015764683f3c8d301b5565053863ea8fb808d874b1` |
-| 3 | `theorem` | [PiX_continuous](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PiFacts.lean/declarations/pix-continuous.md) | 136 | `result-track:e2200d58bad56053d23bb128a0bb1089cb65dc9b04cafae4eda34eb54a1d7d16` |
-| 4 | `theorem` | [PX_abs_le](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PiFacts.lean/declarations/px-abs-le.md) | 172 | `result-track:44a3a16f0c5444fa776967c95e72df6f1d25ea1d7c13a7829fbf70d944b07992` |
-| 5 | `theorem` | [B_sq_le](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PiFacts.lean/declarations/b-sq-le.md) | 190 | `result-track:06ac62c3876b7da4a4a2f7e9c224e821cc503b4aa0927a3f3d990a8afc7e9b70` |
-| 6 | `theorem` | [B_nonneg](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PiFacts.lean/declarations/b-nonneg.md) | 198 | `result-track:7b3607a9dd3f7497f167a6d4dff55f37571a4df88c48dd1dada18b191584c57d` |
-| 7 | `theorem` | [nuX_abs_le](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PiFacts.lean/declarations/nux-abs-le.md) | 211 | `result-track:9c459d41e02ae08a1729c027fa48b7897d31c5a136d18876fa4d3214a6becb31` |
-| 8 | `theorem` | [nuX_abs_le_window](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PiFacts.lean/declarations/nux-abs-le-window.md) | 409 | `result-track:428844940a8d98b7775ec5929b79ac19ebe3a89a93d60ed9e920c927d2779ab8` |
+| 1 | `theorem` | [PiX_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PiFacts.lean/declarations/pix-abs-le.md) | 29 | `result-track:66141f7d65f0097691c1bb0dee8f1fc0a16f72243b04d45e84a1d7e1a8474ce1` |
+| 2 | `theorem` | [PiX_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PiFacts.lean/declarations/pix-bound.md) | 131 | `result-track:73cd678ddf82f3be11c0aa015764683f3c8d301b5565053863ea8fb808d874b1` |
+| 3 | `theorem` | [PiX_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PiFacts.lean/declarations/pix-continuous.md) | 136 | `result-track:e2200d58bad56053d23bb128a0bb1089cb65dc9b04cafae4eda34eb54a1d7d16` |
+| 4 | `theorem` | [PX_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PiFacts.lean/declarations/px-abs-le.md) | 172 | `result-track:44a3a16f0c5444fa776967c95e72df6f1d25ea1d7c13a7829fbf70d944b07992` |
+| 5 | `theorem` | [B_sq_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PiFacts.lean/declarations/b-sq-le.md) | 190 | `result-track:06ac62c3876b7da4a4a2f7e9c224e821cc503b4aa0927a3f3d990a8afc7e9b70` |
+| 6 | `theorem` | [B_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PiFacts.lean/declarations/b-nonneg.md) | 198 | `result-track:7b3607a9dd3f7497f167a6d4dff55f37571a4df88c48dd1dada18b191584c57d` |
+| 7 | `theorem` | [nuX_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PiFacts.lean/declarations/nux-abs-le.md) | 211 | `result-track:9c459d41e02ae08a1729c027fa48b7897d31c5a136d18876fa4d3214a6becb31` |
+| 8 | `theorem` | [nuX_abs_le_window](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PiFacts.lean/declarations/nux-abs-le-window.md) | 409 | `result-track:428844940a8d98b7775ec5929b79ac19ebe3a89a93d60ed9e920c927d2779ab8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

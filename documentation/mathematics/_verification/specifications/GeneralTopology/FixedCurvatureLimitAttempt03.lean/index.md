@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/FixedCurvatureLimitAttempt03.lean/index.md) · [Full source](../../../../GeneralTopology/FixedCurvatureLimitAttempt03.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FixedCurvatureLimitAttempt03.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FixedCurvatureLimitAttempt03.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [correlation_deriv_fixed_tendsto](../../../../GeneralTopology/FixedCurvatureLimitAttempt03.lean/declarations/correlation-deriv-fixed-tendsto.md) | 20 | `result-track:f570c314cd3734999501fcb16ddb3bb281e7f6c955f0c2d760396757fed2f535` |
-| 2 | `theorem` | [correlation_second_deriv_fixed_tendsto](../../../../GeneralTopology/FixedCurvatureLimitAttempt03.lean/declarations/correlation-second-deriv-fixed-tendsto.md) | 29 | `result-track:ac3389980cb26312e07501f12388e9c4853e85697e4f0cd8668aa8a43c3acb31` |
-| 3 | `theorem` | [critical_second_deriv](../../../../GeneralTopology/FixedCurvatureLimitAttempt03.lean/declarations/critical-second-deriv.md) | 40 | `result-track:4d82f1d4d56adee4ba1e20bc61fbe1217378d938858dfce64762c079e71dee3d` |
-| 4 | `theorem` | [criticalPrimeTest_deriv_fixed_tendsto](../../../../GeneralTopology/FixedCurvatureLimitAttempt03.lean/declarations/criticalprimetest-deriv-fixed-tendsto.md) | 63 | `result-track:35abcb9f37ff1b27c2fcf01a1bac3726a36495a03c82cc6ab432cf4ee344282c` |
-| 5 | `theorem` | [criticalPrimeTest_second_deriv_fixed_tendsto](../../../../GeneralTopology/FixedCurvatureLimitAttempt03.lean/declarations/criticalprimetest-second-deriv-fixed-tendsto.md) | 78 | `result-track:76b97d7f354f85303cc58e4ae43052b5b86b9187cb8be46f72e8fb42e823c989` |
-| 6 | `theorem` | [criticalPrimeTest_deriv_eventually_pos](../../../../GeneralTopology/FixedCurvatureLimitAttempt03.lean/declarations/criticalprimetest-deriv-eventually-pos.md) | 94 | `result-track:4abcfe0d59880e5ac41d040f157869fb3ed370b8fe33ec33659dfaed97659009` |
-| 7 | `theorem` | [paired_curvature_eq_neg_critical_of_positive](../../../../GeneralTopology/FixedCurvatureLimitAttempt03.lean/declarations/paired-curvature-eq-neg-critical-of-positive.md) | 101 | `result-track:3a00aa37d1ec80aaa2b1c2b8136bbc8d685a81ae8d390625e24b0fe6dbb23063` |
-| 8 | `theorem` | [paired_curvature_fixed_tendsto](../../../../GeneralTopology/FixedCurvatureLimitAttempt03.lean/declarations/paired-curvature-fixed-tendsto.md) | 117 | `result-track:9d53b38cef88dd0c6aff03b7debfb94044b3521061f61581e0f8b366a2fe0de0` |
+| 1 | `theorem` | [correlation_deriv_fixed_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FixedCurvatureLimitAttempt03.lean/declarations/correlation-deriv-fixed-tendsto.md) | 20 | `result-track:f570c314cd3734999501fcb16ddb3bb281e7f6c955f0c2d760396757fed2f535` |
+| 2 | `theorem` | [correlation_second_deriv_fixed_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FixedCurvatureLimitAttempt03.lean/declarations/correlation-second-deriv-fixed-tendsto.md) | 29 | `result-track:ac3389980cb26312e07501f12388e9c4853e85697e4f0cd8668aa8a43c3acb31` |
+| 3 | `theorem` | [critical_second_deriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FixedCurvatureLimitAttempt03.lean/declarations/critical-second-deriv.md) | 40 | `result-track:4d82f1d4d56adee4ba1e20bc61fbe1217378d938858dfce64762c079e71dee3d` |
+| 4 | `theorem` | [criticalPrimeTest_deriv_fixed_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FixedCurvatureLimitAttempt03.lean/declarations/criticalprimetest-deriv-fixed-tendsto.md) | 63 | `result-track:35abcb9f37ff1b27c2fcf01a1bac3726a36495a03c82cc6ab432cf4ee344282c` |
+| 5 | `theorem` | [criticalPrimeTest_second_deriv_fixed_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FixedCurvatureLimitAttempt03.lean/declarations/criticalprimetest-second-deriv-fixed-tendsto.md) | 78 | `result-track:76b97d7f354f85303cc58e4ae43052b5b86b9187cb8be46f72e8fb42e823c989` |
+| 6 | `theorem` | [criticalPrimeTest_deriv_eventually_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FixedCurvatureLimitAttempt03.lean/declarations/criticalprimetest-deriv-eventually-pos.md) | 94 | `result-track:4abcfe0d59880e5ac41d040f157869fb3ed370b8fe33ec33659dfaed97659009` |
+| 7 | `theorem` | [paired_curvature_eq_neg_critical_of_positive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FixedCurvatureLimitAttempt03.lean/declarations/paired-curvature-eq-neg-critical-of-positive.md) | 101 | `result-track:3a00aa37d1ec80aaa2b1c2b8136bbc8d685a81ae8d390625e24b0fe6dbb23063` |
+| 8 | `theorem` | [paired_curvature_fixed_tendsto](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FixedCurvatureLimitAttempt03.lean/declarations/paired-curvature-fixed-tendsto.md) | 117 | `result-track:9d53b38cef88dd0c6aff03b7debfb94044b3521061f61581e0f8b366a2fe0de0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

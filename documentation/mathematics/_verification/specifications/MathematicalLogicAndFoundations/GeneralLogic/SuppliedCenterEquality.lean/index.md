@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuppliedCenterEquality.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuppliedCenterEquality.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuppliedCenterEquality.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuppliedCenterEquality.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [base_case_lfunction_center_eq_spectralPivot](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SuppliedCenterEquality.lean/declarations/base-case-lfunction-center-eq-spectralpivot.md) | 33 | `result-track:f68021e8340a1f384c06bd009835f371cbeddb3eaf9e2dfd8f31c6e1a6507e64` |
+| 1 | `theorem` | [base_case_lfunction_center_eq_spectralPivot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SuppliedCenterEquality.lean/declarations/base-case-lfunction-center-eq-spectralpivot.md) | 33 | `result-track:f68021e8340a1f384c06bd009835f371cbeddb3eaf9e2dfd8f31c6e1a6507e64` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

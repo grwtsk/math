@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/IdempotentPublic.lean/index.md) · [Full source](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/IdempotentPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/IdempotentPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/IdempotentPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [isIdempotentElem_toLinearMap_iff](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/IdempotentPublic.lean/declarations/isidempotentelem-tolinearmap-iff.md) | 38 | `result-track:b959a146f93bd4cfef89b9543700175e6aafe41afa52bf9360710bb6a84587c0` |
-| 2 | `lemma` | [ext_iff](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/IdempotentPublic.lean/declarations/ext-iff.md) | 52 | `result-track:6c443d5c7af7b697822448210f63813309a38121c07125aee5c550a23b9bb777` |
-| 3 | `lemma` | [range_mem_invtSubmodule_iff](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/IdempotentPublic.lean/declarations/range-mem-invtsubmodule-iff.md) | 61 | `result-track:29add5a9df15dbb01cfb49ba5b702b28df70b0aa75eb37d2437a8df11b0d689a` |
-| 4 | `lemma` | [ker_mem_invtSubmodule_iff](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/IdempotentPublic.lean/declarations/ker-mem-invtsubmodule-iff.md) | 72 | `result-track:9ba05ceedc92a0d2cee8624f7406f96c129036650c81be12577686971810ccf1` |
-| 5 | `lemma` | [commute_iff](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/IdempotentPublic.lean/declarations/commute-iff.md) | 83 | `result-track:1f502dcf9a73670609d1a4d5c171426ad6e71dac71b34dc725c093cebb9eaad0` |
-| 6 | `theorem` | [commute_iff_of_isUnit](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/IdempotentPublic.lean/declarations/commute-iff-of-isunit.md) | 93 | `result-track:bed4da8c8e33ded9e31e936cde9bacf84d8a208efd58324015e1ec73f479462e` |
-| 7 | `theorem` | [isClosed_range](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/IdempotentPublic.lean/declarations/isclosed-range.md) | 101 | `result-track:009538ba2ab973cec7d27807bc3c757887697a92f890a9cc9c2c77e8fa2b7c22` |
+| 1 | `theorem` | [isIdempotentElem_toLinearMap_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/IdempotentPublic.lean/declarations/isidempotentelem-tolinearmap-iff.md) | 38 | `result-track:b959a146f93bd4cfef89b9543700175e6aafe41afa52bf9360710bb6a84587c0` |
+| 2 | `lemma` | [ext_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/IdempotentPublic.lean/declarations/ext-iff.md) | 52 | `result-track:6c443d5c7af7b697822448210f63813309a38121c07125aee5c550a23b9bb777` |
+| 3 | `lemma` | [range_mem_invtSubmodule_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/IdempotentPublic.lean/declarations/range-mem-invtsubmodule-iff.md) | 61 | `result-track:29add5a9df15dbb01cfb49ba5b702b28df70b0aa75eb37d2437a8df11b0d689a` |
+| 4 | `lemma` | [ker_mem_invtSubmodule_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/IdempotentPublic.lean/declarations/ker-mem-invtsubmodule-iff.md) | 72 | `result-track:9ba05ceedc92a0d2cee8624f7406f96c129036650c81be12577686971810ccf1` |
+| 5 | `lemma` | [commute_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/IdempotentPublic.lean/declarations/commute-iff.md) | 83 | `result-track:1f502dcf9a73670609d1a4d5c171426ad6e71dac71b34dc725c093cebb9eaad0` |
+| 6 | `theorem` | [commute_iff_of_isUnit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/IdempotentPublic.lean/declarations/commute-iff-of-isunit.md) | 93 | `result-track:bed4da8c8e33ded9e31e936cde9bacf84d8a208efd58324015e1ec73f479462e` |
+| 7 | `theorem` | [isClosed_range](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/IdempotentPublic.lean/declarations/isclosed-range.md) | 101 | `result-track:009538ba2ab973cec7d27807bc3c757887697a92f890a9cc9c2c77e8fa2b7c22` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

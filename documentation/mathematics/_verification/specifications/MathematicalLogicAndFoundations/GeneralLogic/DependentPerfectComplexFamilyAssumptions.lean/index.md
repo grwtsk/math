@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DependentPerfectComplexFamilyAssumptions.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DependentPerfectComplexFamilyAssumptions.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DependentPerfectComplexFamilyAssumptions.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DependentPerfectComplexFamilyAssumptions.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ArithmeticModuliStage](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DependentPerfectComplexFamilyAssumptions.lean/declarations/arithmeticmodulistage.md) | 38 | `declaration-track:aa79f77373f00d22432129e55722df8df56705dc1d423cf2ba3a7e0fe3e4f0a0` |
-| 2 | `structure` | [PerfectSectionComplexFamily](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DependentPerfectComplexFamilyAssumptions.lean/declarations/perfectsectioncomplexfamily.md) | 44 | `declaration-track:6fe62acaaebdedf4ecd8567033c0d5b11663df05fd2f41e24f8f0362a2681e60` |
-| 3 | `theorem` | [perfect_family_base_change_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DependentPerfectComplexFamilyAssumptions.lean/declarations/perfect-family-base-change-if-supplied.md) | 54 | `result-track:efb8bcd85baa38c1560b28cf0d5a674724085fa672ce21045d5436aac0d9acb1` |
-| 4 | `theorem` | [perfect_family_perfect_if_supplied](../../../../../MathematicalLogicAndFoundations/GeneralLogic/DependentPerfectComplexFamilyAssumptions.lean/declarations/perfect-family-perfect-if-supplied.md) | 59 | `result-track:ede5d36a61500d858e1040fe70c7016123372ce5506a5724dd079d5a91c79077` |
+| 1 | `structure` | [ArithmeticModuliStage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DependentPerfectComplexFamilyAssumptions.lean/declarations/arithmeticmodulistage.md) | 38 | `declaration-track:aa79f77373f00d22432129e55722df8df56705dc1d423cf2ba3a7e0fe3e4f0a0` |
+| 2 | `structure` | [PerfectSectionComplexFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DependentPerfectComplexFamilyAssumptions.lean/declarations/perfectsectioncomplexfamily.md) | 44 | `declaration-track:6fe62acaaebdedf4ecd8567033c0d5b11663df05fd2f41e24f8f0362a2681e60` |
+| 3 | `theorem` | [perfect_family_base_change_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DependentPerfectComplexFamilyAssumptions.lean/declarations/perfect-family-base-change-if-supplied.md) | 54 | `result-track:efb8bcd85baa38c1560b28cf0d5a674724085fa672ce21045d5436aac0d9acb1` |
+| 4 | `theorem` | [perfect_family_perfect_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/DependentPerfectComplexFamilyAssumptions.lean/declarations/perfect-family-perfect-if-supplied.md) | 59 | `result-track:ede5d36a61500d858e1040fe70c7016123372ce5506a5724dd079d5a91c79077` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

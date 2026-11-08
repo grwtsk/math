@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/ResultsAlternative.lean/index.md) · [Full source](../../../../CommutativeAlgebra/ResultsAlternative.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ResultsAlternative.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ResultsAlternative.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [PolynomialResidualTailUpperBound](../../../../CommutativeAlgebra/ResultsAlternative.lean/declarations/polynomialresidualtailupperbound.md) | 27 | `declaration-track:a922d1438a40048429df8b6eb811258407b50dbf2167f68bb36e1a316361cd18` |
-| 2 | `def` | [PolynomialMovingTailUpperBound](../../../../CommutativeAlgebra/ResultsAlternative.lean/declarations/polynomialmovingtailupperbound.md) | 33 | `declaration-track:20bd73f5059d3461c6bc849e32e670290d192f76eb3f2add3d616e4a7d8cd960` |
-| 3 | `theorem` | [moving_prefix_eventually_abs_le_one](../../../../CommutativeAlgebra/ResultsAlternative.lean/declarations/moving-prefix-eventually-abs-le-one.md) | 38 | `result-track:fb0fe9dfe4ef6b0ce00f468cdc5b10dd58f8aa038c2919288fb5f733181889fc` |
-| 4 | `theorem` | [polynomial_residual_of_constant](../../../../CommutativeAlgebra/ResultsAlternative.lean/declarations/polynomial-residual-of-constant.md) | 49 | `result-track:43dfd73000388815184b2f9ed1a8c623596dbe0a60c6f37556738b6ba2e92184` |
-| 5 | `theorem` | [polynomial_residual_of_moving_tail](../../../../CommutativeAlgebra/ResultsAlternative.lean/declarations/polynomial-residual-of-moving-tail.md) | 58 | `result-track:b8f45268d137649c4ad697341663a39e5c59930f0266681ffcc9888a30e232c2` |
-| 6 | `theorem` | [polynomial_moving_tail_of_residual](../../../../CommutativeAlgebra/ResultsAlternative.lean/declarations/polynomial-moving-tail-of-residual.md) | 74 | `result-track:aff5f86cfe7e6c07734c40c46972ffd726e30c3469bb6d80dd4794baee34f861` |
-| 7 | `theorem` | [polynomial_residual_tail_iff_moving_tail](../../../../CommutativeAlgebra/ResultsAlternative.lean/declarations/polynomial-residual-tail-iff-moving-tail.md) | 90 | `result-track:0ec268ddd838119cc840beb77455b334bf6cbd573f86eacd17ddf951d356e357` |
-| 8 | `theorem` | [sourceQuadraticValue_eq_archimedean_sub_residual](../../../../CommutativeAlgebra/ResultsAlternative.lean/declarations/sourcequadraticvalue-eq-archimedean-sub-residual.md) | 96 | `result-track:a8a8752c1219a383b20f21a108d8c56ea88e5fd5b34bdbcc3602c160a33733c0` |
-| 9 | `theorem` | [polynomial_quadratic_lower_of_residual_tail](../../../../CommutativeAlgebra/ResultsAlternative.lean/declarations/polynomial-quadratic-lower-of-residual-tail.md) | 105 | `result-track:e6d18ea0c4a95d69e33bdf4ed521e31589d9fb9459fdea14dcf206e336c56a9e` |
+| 1 | `def` | [PolynomialResidualTailUpperBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ResultsAlternative.lean/declarations/polynomialresidualtailupperbound.md) | 27 | `declaration-track:a922d1438a40048429df8b6eb811258407b50dbf2167f68bb36e1a316361cd18` |
+| 2 | `def` | [PolynomialMovingTailUpperBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ResultsAlternative.lean/declarations/polynomialmovingtailupperbound.md) | 33 | `declaration-track:20bd73f5059d3461c6bc849e32e670290d192f76eb3f2add3d616e4a7d8cd960` |
+| 3 | `theorem` | [moving_prefix_eventually_abs_le_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ResultsAlternative.lean/declarations/moving-prefix-eventually-abs-le-one.md) | 38 | `result-track:fb0fe9dfe4ef6b0ce00f468cdc5b10dd58f8aa038c2919288fb5f733181889fc` |
+| 4 | `theorem` | [polynomial_residual_of_constant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ResultsAlternative.lean/declarations/polynomial-residual-of-constant.md) | 49 | `result-track:43dfd73000388815184b2f9ed1a8c623596dbe0a60c6f37556738b6ba2e92184` |
+| 5 | `theorem` | [polynomial_residual_of_moving_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ResultsAlternative.lean/declarations/polynomial-residual-of-moving-tail.md) | 58 | `result-track:b8f45268d137649c4ad697341663a39e5c59930f0266681ffcc9888a30e232c2` |
+| 6 | `theorem` | [polynomial_moving_tail_of_residual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ResultsAlternative.lean/declarations/polynomial-moving-tail-of-residual.md) | 74 | `result-track:aff5f86cfe7e6c07734c40c46972ffd726e30c3469bb6d80dd4794baee34f861` |
+| 7 | `theorem` | [polynomial_residual_tail_iff_moving_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ResultsAlternative.lean/declarations/polynomial-residual-tail-iff-moving-tail.md) | 90 | `result-track:0ec268ddd838119cc840beb77455b334bf6cbd573f86eacd17ddf951d356e357` |
+| 8 | `theorem` | [sourceQuadraticValue_eq_archimedean_sub_residual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ResultsAlternative.lean/declarations/sourcequadraticvalue-eq-archimedean-sub-residual.md) | 96 | `result-track:a8a8752c1219a383b20f21a108d8c56ea88e5fd5b34bdbcc3602c160a33733c0` |
+| 9 | `theorem` | [polynomial_quadratic_lower_of_residual_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ResultsAlternative.lean/declarations/polynomial-quadratic-lower-of-residual-tail.md) | 105 | `result-track:e6d18ea0c4a95d69e33bdf4ed521e31589d9fb9459fdea14dcf206e336c56a9e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

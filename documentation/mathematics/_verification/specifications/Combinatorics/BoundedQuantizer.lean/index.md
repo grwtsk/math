@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/BoundedQuantizer.lean/index.md) · [Full source](../../../../Combinatorics/BoundedQuantizer.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundedQuantizer.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundedQuantizer.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [clamp](../../../../Combinatorics/BoundedQuantizer.lean/declarations/clamp.md) | 19 | `declaration-track:3378c1749eb04144e9339ff1bb83b36ef3c6fee47cd73ab18b7a55de0e4d916b` |
-| 2 | `theorem` | [lower_le_clamp](../../../../Combinatorics/BoundedQuantizer.lean/declarations/lower-le-clamp.md) | 21 | `result-track:d1ca564e3a0a5492bb4e2ad6be3d8dd7b8fc0a330c615b96ba9b0fabd24cc3dd` |
-| 3 | `theorem` | [clamp_le_upper](../../../../Combinatorics/BoundedQuantizer.lean/declarations/clamp-le-upper.md) | 24 | `result-track:19344e827455503d78c964241e0ec564c556cf92a74911dcd0900238b511f422` |
-| 4 | `theorem` | [clamp_mem](../../../../Combinatorics/BoundedQuantizer.lean/declarations/clamp-mem.md) | 28 | `result-track:2c52b79e935c57307fe8bc746a8bdcc1b9350b5ac4ed7ca851a84f15d9d0055c` |
-| 5 | `theorem` | [clamp_eq_self](../../../../Combinatorics/BoundedQuantizer.lean/declarations/clamp-eq-self.md) | 32 | `result-track:b25253f124b950330b368cbbf1eacda2973a98499e2ff832365ee2771e271031` |
-| 6 | `theorem` | [clamp_monotone](../../../../Combinatorics/BoundedQuantizer.lean/declarations/clamp-monotone.md) | 38 | `result-track:5bd94cbc5e073c25b72b7ee232f65b3f4b0eeb627dba3bc96ebee8bbf4fd8cc0` |
-| 7 | `theorem` | [clamp_idempotent](../../../../Combinatorics/BoundedQuantizer.lean/declarations/clamp-idempotent.md) | 42 | `result-track:9d87ba618c4b4f450d4e787f254d0a9ddf3e8b343097019d1993b26b1ce109f8` |
+| 1 | `def` | [clamp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundedQuantizer.lean/declarations/clamp.md) | 19 | `declaration-track:3378c1749eb04144e9339ff1bb83b36ef3c6fee47cd73ab18b7a55de0e4d916b` |
+| 2 | `theorem` | [lower_le_clamp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundedQuantizer.lean/declarations/lower-le-clamp.md) | 21 | `result-track:d1ca564e3a0a5492bb4e2ad6be3d8dd7b8fc0a330c615b96ba9b0fabd24cc3dd` |
+| 3 | `theorem` | [clamp_le_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundedQuantizer.lean/declarations/clamp-le-upper.md) | 24 | `result-track:19344e827455503d78c964241e0ec564c556cf92a74911dcd0900238b511f422` |
+| 4 | `theorem` | [clamp_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundedQuantizer.lean/declarations/clamp-mem.md) | 28 | `result-track:2c52b79e935c57307fe8bc746a8bdcc1b9350b5ac4ed7ca851a84f15d9d0055c` |
+| 5 | `theorem` | [clamp_eq_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundedQuantizer.lean/declarations/clamp-eq-self.md) | 32 | `result-track:b25253f124b950330b368cbbf1eacda2973a98499e2ff832365ee2771e271031` |
+| 6 | `theorem` | [clamp_monotone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundedQuantizer.lean/declarations/clamp-monotone.md) | 38 | `result-track:5bd94cbc5e073c25b72b7ee232f65b3f4b0eeb627dba3bc96ebee8bbf4fd8cc0` |
+| 7 | `theorem` | [clamp_idempotent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundedQuantizer.lean/declarations/clamp-idempotent.md) | 42 | `result-track:9d87ba618c4b4f450d4e787f254d0a9ddf3e8b343097019d1993b26b1ce109f8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

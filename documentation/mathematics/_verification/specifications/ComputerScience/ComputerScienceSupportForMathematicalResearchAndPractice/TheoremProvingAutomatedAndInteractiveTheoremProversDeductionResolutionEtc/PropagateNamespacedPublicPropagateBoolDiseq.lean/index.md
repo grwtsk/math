@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/PropagateNamespacedPublicPropagateBoolDiseq.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/PropagateNamespacedPublicPropagateBoolDiseq.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/PropagateNamespacedPublicPropagateBoolDiseq.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/PropagateNamespacedPublicPropagateBoolDiseq.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,9 +60,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [propagateBoolDiseq](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/PropagateNamespacedPublicPropagateBoolDiseq.lean/declarations/propagatebooldiseq.md) | 129 | `declaration-track:89e72a7efc72fef76e0f8844a24152f6f19e00300447eb3f842bfbb267daded8` |
-| 2 | `def` | [getLawfulBEqInst?](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/PropagateNamespacedPublicPropagateBoolDiseq.lean/declarations/getlawfulbeqinst.md) | 239 | `declaration-track:db0cf0cc3f75e539676fd0a0e8bbbfa01454498fa9ac5df43785ff61f83a83f4` |
-| 3 | `def` | [applyCongrFun](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/PropagateNamespacedPublicPropagateBoolDiseq.lean/declarations/applycongrfun.md) | 326 | `declaration-track:fa8067e18b5aa7215babbad93bfc7b95adfddee063468cb70825912d144ed7d4` |
+| 1 | `def` | [propagateBoolDiseq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/PropagateNamespacedPublicPropagateBoolDiseq.lean/declarations/propagatebooldiseq.md) | 129 | `declaration-track:89e72a7efc72fef76e0f8844a24152f6f19e00300447eb3f842bfbb267daded8` |
+| 2 | `def` | [getLawfulBEqInst?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/PropagateNamespacedPublicPropagateBoolDiseq.lean/declarations/getlawfulbeqinst.md) | 239 | `declaration-track:db0cf0cc3f75e539676fd0a0e8bbbfa01454498fa9ac5df43785ff61f83a83f4` |
+| 3 | `def` | [applyCongrFun](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/PropagateNamespacedPublicPropagateBoolDiseq.lean/declarations/applycongrfun.md) | 326 | `declaration-track:fa8067e18b5aa7215babbad93bfc7b95adfddee063468cb70825912d144ed7d4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

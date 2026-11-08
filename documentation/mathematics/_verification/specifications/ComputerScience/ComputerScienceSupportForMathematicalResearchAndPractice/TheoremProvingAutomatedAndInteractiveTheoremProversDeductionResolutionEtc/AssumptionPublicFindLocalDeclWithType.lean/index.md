@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AssumptionPublicFindLocalDeclWithType.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AssumptionPublicFindLocalDeclWithType.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AssumptionPublicFindLocalDeclWithType.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AssumptionPublicFindLocalDeclWithType.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [findLocalDeclWithType?](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AssumptionPublicFindLocalDeclWithType.lean/declarations/findlocaldeclwithtype.md) | 16 | `declaration-track:5e2b70054a7300b78f2daa3b65a81d362173f1eabab3c4ad17378d63b77c9cd7` |
-| 2 | `def` | [_root_.Lean.MVarId.assumptionCore](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AssumptionPublicFindLocalDeclWithType.lean/declarations/root-lean-mvarid-assumptioncore.md) | 26 | `declaration-track:bd4f642bced558a52e65dc1d0430db593580cf22fad50c94ce7b79ca215d7eae` |
-| 3 | `def` | [_root_.Lean.MVarId.assumption](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AssumptionPublicFindLocalDeclWithType.lean/declarations/root-lean-mvarid-assumption.md) | 34 | `declaration-track:9fbe007b8f7607b011c30b82476c4f05e529090764cadee63bdbf1ae2de2b36c` |
+| 1 | `def` | [findLocalDeclWithType?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AssumptionPublicFindLocalDeclWithType.lean/declarations/findlocaldeclwithtype.md) | 16 | `declaration-track:5e2b70054a7300b78f2daa3b65a81d362173f1eabab3c4ad17378d63b77c9cd7` |
+| 2 | `def` | [_root_.Lean.MVarId.assumptionCore](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AssumptionPublicFindLocalDeclWithType.lean/declarations/root-lean-mvarid-assumptioncore.md) | 26 | `declaration-track:bd4f642bced558a52e65dc1d0430db593580cf22fad50c94ce7b79ca215d7eae` |
+| 3 | `def` | [_root_.Lean.MVarId.assumption](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AssumptionPublicFindLocalDeclWithType.lean/declarations/root-lean-mvarid-assumption.md) | 34 | `declaration-track:9fbe007b8f7607b011c30b82476c4f05e529090764cadee63bdbf1ae2de2b36c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

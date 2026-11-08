@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/EnumerativeCombinatorics/OfMapPublic.lean/index.md) · [Full source](../../../../../Combinatorics/EnumerativeCombinatorics/OfMapPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/OfMapPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/OfMapPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,18 +57,18 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ofMultiset](../../../../../Combinatorics/EnumerativeCombinatorics/OfMapPublic.lean/declarations/ofmultiset.md) | 39 | `declaration-track:30f6830ac2edd86de3c06bd4dd04a8aebeaa46876d991beb4893e8a7db01d316` |
-| 2 | `def` | [ofList](../../../../../Combinatorics/EnumerativeCombinatorics/OfMapPublic.lean/declarations/oflist.md) | 44 | `declaration-track:e535fd889bb2014ce7759dde42ce393c7f6cc41a3c5feeb879e637591891cc8a` |
-| 3 | `def` | [ofBijective](../../../../../Combinatorics/EnumerativeCombinatorics/OfMapPublic.lean/declarations/ofbijective.md) | 49 | `declaration-track:b629a3959b8736c05ef8e447cefb3709ee575658632fcfe2eeb53216ad304fc0` |
-| 4 | `def` | [ofSurjective](../../../../../Combinatorics/EnumerativeCombinatorics/OfMapPublic.lean/declarations/ofsurjective.md) | 56 | `declaration-track:3f00d26ee6230eaf92bc38a50102b037a2b74740060b4e1e283b217c47063e64` |
-| 5 | `def` | [ofInjective](../../../../../Combinatorics/EnumerativeCombinatorics/OfMapPublic.lean/declarations/ofinjective.md) | 65 | `declaration-track:329ae826c56c78f9eded620931b7fd5716040a46aa6cd1429d6b0485ba5a1b1d` |
-| 6 | `def` | [ofEquiv](../../../../../Combinatorics/EnumerativeCombinatorics/OfMapPublic.lean/declarations/ofequiv.md) | 74 | `declaration-track:78cd6d5ffdccfe20a4d8816a55561fe2165051870c076a675af4ed83960ea09d` |
-| 7 | `def` | [ofSubsingleton](../../../../../Combinatorics/EnumerativeCombinatorics/OfMapPublic.lean/declarations/ofsubsingleton.md) | 79 | `declaration-track:9d071f6c75ca4e62c9121712db2c182f0399c0ecff552a94ae1154f48c530368` |
-| 8 | `theorem` | [univ_ofSubsingleton](../../../../../Combinatorics/EnumerativeCombinatorics/OfMapPublic.lean/declarations/univ-ofsubsingleton.md) | 84 | `result-track:b4836dd3882698513d75d32fd9e9b1a3e7fa4fee1b20a7a521f89a21fb1af7cc` |
-| 9 | `def` | [ofIsEmpty](../../../../../Combinatorics/EnumerativeCombinatorics/OfMapPublic.lean/declarations/ofisempty.md) | 90 | `declaration-track:66e020a6acea9f17c89b9bbb5fd135b6412ee1109c8c262445d1c83078f4c370` |
-| 10 | `theorem` | [univ_ofIsEmpty](../../../../../Combinatorics/EnumerativeCombinatorics/OfMapPublic.lean/declarations/univ-ofisempty.md) | 95 | `result-track:86ed71a3dfea390488d04f7324929520efe410e3d9b83cd559607c68838c8347` |
-| 11 | `instance` | [(anonymous)](../../../../../Combinatorics/EnumerativeCombinatorics/OfMapPublic.lean/declarations/instance-source-edition-2.md) | 98 | `declaration-track:5bd6e84f41835e8cce8fb8915252af5f7f156218a216d799d2ae2e3460d8eb9f` |
-| 12 | `instance` | [(anonymous)](../../../../../Combinatorics/EnumerativeCombinatorics/OfMapPublic.lean/declarations/instance.md) | 99 | `declaration-track:057cc3cb46cc1441040e634eb32633c78c9d2ffad391a40a54e6b09800a83bc9` |
+| 1 | `def` | [ofMultiset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/OfMapPublic.lean/declarations/ofmultiset.md) | 39 | `declaration-track:30f6830ac2edd86de3c06bd4dd04a8aebeaa46876d991beb4893e8a7db01d316` |
+| 2 | `def` | [ofList](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/OfMapPublic.lean/declarations/oflist.md) | 44 | `declaration-track:e535fd889bb2014ce7759dde42ce393c7f6cc41a3c5feeb879e637591891cc8a` |
+| 3 | `def` | [ofBijective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/OfMapPublic.lean/declarations/ofbijective.md) | 49 | `declaration-track:b629a3959b8736c05ef8e447cefb3709ee575658632fcfe2eeb53216ad304fc0` |
+| 4 | `def` | [ofSurjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/OfMapPublic.lean/declarations/ofsurjective.md) | 56 | `declaration-track:3f00d26ee6230eaf92bc38a50102b037a2b74740060b4e1e283b217c47063e64` |
+| 5 | `def` | [ofInjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/OfMapPublic.lean/declarations/ofinjective.md) | 65 | `declaration-track:329ae826c56c78f9eded620931b7fd5716040a46aa6cd1429d6b0485ba5a1b1d` |
+| 6 | `def` | [ofEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/OfMapPublic.lean/declarations/ofequiv.md) | 74 | `declaration-track:78cd6d5ffdccfe20a4d8816a55561fe2165051870c076a675af4ed83960ea09d` |
+| 7 | `def` | [ofSubsingleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/OfMapPublic.lean/declarations/ofsubsingleton.md) | 79 | `declaration-track:9d071f6c75ca4e62c9121712db2c182f0399c0ecff552a94ae1154f48c530368` |
+| 8 | `theorem` | [univ_ofSubsingleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/OfMapPublic.lean/declarations/univ-ofsubsingleton.md) | 84 | `result-track:b4836dd3882698513d75d32fd9e9b1a3e7fa4fee1b20a7a521f89a21fb1af7cc` |
+| 9 | `def` | [ofIsEmpty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/OfMapPublic.lean/declarations/ofisempty.md) | 90 | `declaration-track:66e020a6acea9f17c89b9bbb5fd135b6412ee1109c8c262445d1c83078f4c370` |
+| 10 | `theorem` | [univ_ofIsEmpty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/OfMapPublic.lean/declarations/univ-ofisempty.md) | 95 | `result-track:86ed71a3dfea390488d04f7324929520efe410e3d9b83cd559607c68838c8347` |
+| 11 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/OfMapPublic.lean/declarations/instance-source-edition-2.md) | 98 | `declaration-track:5bd6e84f41835e8cce8fb8915252af5f7f156218a216d799d2ae2e3460d8eb9f` |
+| 12 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/OfMapPublic.lean/declarations/instance.md) | 99 | `declaration-track:057cc3cb46cc1441040e634eb32633c78c9d2ffad391a40a54e6b09800a83bc9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

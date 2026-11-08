@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/WilsonNamespacedPublic.lean/index.md) · [Full source](../../../../NumberTheory/WilsonNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WilsonNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WilsonNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [factorial_eq_neg_one_pow_mul_half_factorial_sq](../../../../NumberTheory/WilsonNamespacedPublic.lean/declarations/factorial-eq-neg-one-pow-mul-half-factorial-sq.md) | 59 | `result-track:a712f4f8bc91c4373ee4c0bedc62793ffcca788f55f800f283b08fdc1f1f932f` |
-| 2 | `theorem` | [wilsons_lemma](../../../../NumberTheory/WilsonNamespacedPublic.lean/declarations/wilsons-lemma.md) | 69 | `result-track:b7657886d008b5ccf39403b823b92c9fe65e5a72ea3323c83dbb847555aae543` |
-| 3 | `theorem` | [half_factorial_sq_eq_neg_one](../../../../NumberTheory/WilsonNamespacedPublic.lean/declarations/half-factorial-sq-eq-neg-one.md) | 99 | `result-track:3ccd6f64d87e2b505c33602036aec05c40bc135cd7df6d93ebe92bf169f6d3bf` |
-| 4 | `theorem` | [prod_Ico_one_prime](../../../../NumberTheory/WilsonNamespacedPublic.lean/declarations/prod-ico-one-prime.md) | 109 | `result-track:8206b11cb797e97368a7352f1c764fccdb9f7a7f2874eddc50ec06acd77f6de8` |
-| 5 | `theorem` | [prime_of_fac_equiv_neg_one](../../../../NumberTheory/WilsonNamespacedPublic.lean/declarations/prime-of-fac-equiv-neg-one.md) | 124 | `result-track:3e2232a3d71b796134c3054dd95dd11118e199e94eb4b57b796da2ddc00fbebe` |
-| 6 | `theorem` | [prime_iff_fac_equiv_neg_one](../../../../NumberTheory/WilsonNamespacedPublic.lean/declarations/prime-iff-fac-equiv-neg-one.md) | 135 | `result-track:147448773bddff997992301a22164cc9561e62a13a165987d9ee31c0a15a36b4` |
+| 1 | `theorem` | [factorial_eq_neg_one_pow_mul_half_factorial_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WilsonNamespacedPublic.lean/declarations/factorial-eq-neg-one-pow-mul-half-factorial-sq.md) | 59 | `result-track:a712f4f8bc91c4373ee4c0bedc62793ffcca788f55f800f283b08fdc1f1f932f` |
+| 2 | `theorem` | [wilsons_lemma](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WilsonNamespacedPublic.lean/declarations/wilsons-lemma.md) | 69 | `result-track:b7657886d008b5ccf39403b823b92c9fe65e5a72ea3323c83dbb847555aae543` |
+| 3 | `theorem` | [half_factorial_sq_eq_neg_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WilsonNamespacedPublic.lean/declarations/half-factorial-sq-eq-neg-one.md) | 99 | `result-track:3ccd6f64d87e2b505c33602036aec05c40bc135cd7df6d93ebe92bf169f6d3bf` |
+| 4 | `theorem` | [prod_Ico_one_prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WilsonNamespacedPublic.lean/declarations/prod-ico-one-prime.md) | 109 | `result-track:8206b11cb797e97368a7352f1c764fccdb9f7a7f2874eddc50ec06acd77f6de8` |
+| 5 | `theorem` | [prime_of_fac_equiv_neg_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WilsonNamespacedPublic.lean/declarations/prime-of-fac-equiv-neg-one.md) | 124 | `result-track:3e2232a3d71b796134c3054dd95dd11118e199e94eb4b57b796da2ddc00fbebe` |
+| 6 | `theorem` | [prime_iff_fac_equiv_neg_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/WilsonNamespacedPublic.lean/declarations/prime-iff-fac-equiv-neg-one.md) | 135 | `result-track:147448773bddff997992301a22164cc9561e62a13a165987d9ee31c0a15a36b4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

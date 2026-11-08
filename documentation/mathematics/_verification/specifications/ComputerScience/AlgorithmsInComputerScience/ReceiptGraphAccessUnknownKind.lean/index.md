@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ReceiptGraphAccessUnknownKind.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ReceiptGraphAccessUnknownKind.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReceiptGraphAccessUnknownKind.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReceiptGraphAccessUnknownKind.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [GraphAccessUnknownKind](../../../../../ComputerScience/AlgorithmsInComputerScience/ReceiptGraphAccessUnknownKind.lean/declarations/graphaccessunknownkind.md) | 12 | `declaration-track:ee9e38895378fe51390515eb181df9ef626b5d7fd68a1fcc6f96f6369c186dfc` |
-| 2 | `inductive` | [AccessDisposition](../../../../../ComputerScience/AlgorithmsInComputerScience/ReceiptGraphAccessUnknownKind.lean/declarations/accessdisposition.md) | 34 | `declaration-track:580417982d4d6377e747a4eb3e4170bd14a7adebe2f51bc6836195cb71cdca29` |
-| 3 | `inductive` | [AccessExactness](../../../../../ComputerScience/AlgorithmsInComputerScience/ReceiptGraphAccessUnknownKind.lean/declarations/accessexactness.md) | 46 | `declaration-track:b75a90f93f3d174573edb2bc9517e7ac98b7053972892c01846068ac680a2ec3` |
-| 4 | `structure` | [GraphAccessReceipt](../../../../../ComputerScience/AlgorithmsInComputerScience/ReceiptGraphAccessUnknownKind.lean/declarations/graphaccessreceipt.md) | 54 | `declaration-track:6c4baf18357a4f341b7850efac69cf591430668364847f5edbe665949a90b5c0` |
-| 5 | `theorem` | [receipt_unknowns_remain_explicit](../../../../../ComputerScience/AlgorithmsInComputerScience/ReceiptGraphAccessUnknownKind.lean/declarations/receipt-unknowns-remain-explicit.md) | 75 | `result-track:9215893473badd62cfad5e98a82cb18d74d2159412c9425a08881f289bbdbe01` |
+| 1 | `inductive` | [GraphAccessUnknownKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReceiptGraphAccessUnknownKind.lean/declarations/graphaccessunknownkind.md) | 12 | `declaration-track:ee9e38895378fe51390515eb181df9ef626b5d7fd68a1fcc6f96f6369c186dfc` |
+| 2 | `inductive` | [AccessDisposition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReceiptGraphAccessUnknownKind.lean/declarations/accessdisposition.md) | 34 | `declaration-track:580417982d4d6377e747a4eb3e4170bd14a7adebe2f51bc6836195cb71cdca29` |
+| 3 | `inductive` | [AccessExactness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReceiptGraphAccessUnknownKind.lean/declarations/accessexactness.md) | 46 | `declaration-track:b75a90f93f3d174573edb2bc9517e7ac98b7053972892c01846068ac680a2ec3` |
+| 4 | `structure` | [GraphAccessReceipt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReceiptGraphAccessUnknownKind.lean/declarations/graphaccessreceipt.md) | 54 | `declaration-track:6c4baf18357a4f341b7850efac69cf591430668364847f5edbe665949a90b5c0` |
+| 5 | `theorem` | [receipt_unknowns_remain_explicit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ReceiptGraphAccessUnknownKind.lean/declarations/receipt-unknowns-remain-explicit.md) | 75 | `result-track:9215893473badd62cfad5e98a82cb18d74d2159412c9425a08881f289bbdbe01` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

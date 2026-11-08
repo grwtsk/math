@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/NamespacedAlternative2.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/NamespacedAlternative2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/NamespacedAlternative2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/NamespacedAlternative2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Mem.split](../../../../../ComputerScience/AlgorithmsInComputerScience/NamespacedAlternative2.lean/declarations/mem-split.md) | 26 | `result-track:836ef74c88d7370d637fa9e0e907c21f9997c1ba2b81f85811a901c65658fc5d` |
+| 1 | `theorem` | [Mem.split](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/NamespacedAlternative2.lean/declarations/mem-split.md) | 26 | `result-track:836ef74c88d7370d637fa9e0e907c21f9997c1ba2b81f85811a901c65658fc5d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

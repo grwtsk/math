@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/ExactNaturalCoercionRelation.lean/index.md) · [Full source](../../../../NumberTheory/ExactNaturalCoercionRelation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ExactNaturalCoercionRelation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ExactNaturalCoercionRelation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [ArbitraryPrecisionInteger](../../../../NumberTheory/ExactNaturalCoercionRelation.lean/declarations/arbitraryprecisioninteger.md) | 30 | `declaration-track:387952c5902854f4bf040394dd8ee703319be7ef2df7ecd8e6ec2c2ec6710e36` |
-| 2 | `def` | [CheckedNaturalConversion](../../../../NumberTheory/ExactNaturalCoercionRelation.lean/declarations/checkednaturalconversion.md) | 33 | `declaration-track:0b40787554b959c194004ef1ccd881f02cd3c8a06a3feb7fb85bccdf923a2f20` |
+| 1 | `abbrev` | [ArbitraryPrecisionInteger](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ExactNaturalCoercionRelation.lean/declarations/arbitraryprecisioninteger.md) | 30 | `declaration-track:387952c5902854f4bf040394dd8ee703319be7ef2df7ecd8e6ec2c2ec6710e36` |
+| 2 | `def` | [CheckedNaturalConversion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ExactNaturalCoercionRelation.lean/declarations/checkednaturalconversion.md) | 33 | `declaration-track:0b40787554b959c194004ef1ccd881f02cd3c8a06a3feb7fb85bccdf923a2f20` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

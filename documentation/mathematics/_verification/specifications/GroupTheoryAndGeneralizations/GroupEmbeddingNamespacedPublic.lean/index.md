@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/GroupEmbeddingNamespacedPublic.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/GroupEmbeddingNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupEmbeddingNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupEmbeddingNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mulLeftEmbedding](../../../../GroupTheoryAndGeneralizations/GroupEmbeddingNamespacedPublic.lean/declarations/mulleftembedding.md) | 35 | `declaration-track:8db94d7eb9a6372ea809bd93297e25ae757275ad7c565f6d219064b6979573d0` |
-| 2 | `def` | [mulRightEmbedding](../../../../GroupTheoryAndGeneralizations/GroupEmbeddingNamespacedPublic.lean/declarations/mulrightembedding.md) | 43 | `declaration-track:f5fade25b31f8b076410a0b373459901eaf965047b3dbe8a769bd4f55679494a` |
-| 3 | `theorem` | [mulLeftEmbedding_eq_mulRightEmbedding](../../../../GroupTheoryAndGeneralizations/GroupEmbeddingNamespacedPublic.lean/declarations/mulleftembedding-eq-mulrightembedding.md) | 48 | `result-track:55c8056742280a1e13fb9e18a4b59fbfde01cf468f9a95d0234d45e3ce95f590` |
+| 1 | `def` | [mulLeftEmbedding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupEmbeddingNamespacedPublic.lean/declarations/mulleftembedding.md) | 35 | `declaration-track:8db94d7eb9a6372ea809bd93297e25ae757275ad7c565f6d219064b6979573d0` |
+| 2 | `def` | [mulRightEmbedding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupEmbeddingNamespacedPublic.lean/declarations/mulrightembedding.md) | 43 | `declaration-track:f5fade25b31f8b076410a0b373459901eaf965047b3dbe8a769bd4f55679494a` |
+| 3 | `theorem` | [mulLeftEmbedding_eq_mulRightEmbedding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/GroupEmbeddingNamespacedPublic.lean/declarations/mulleftembedding-eq-mulrightembedding.md) | 48 | `result-track:55c8056742280a1e13fb9e18a4b59fbfde01cf468f9a95d0234d45e3ce95f590` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

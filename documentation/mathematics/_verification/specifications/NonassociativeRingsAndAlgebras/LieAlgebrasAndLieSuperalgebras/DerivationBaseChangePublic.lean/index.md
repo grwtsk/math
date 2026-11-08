@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/DerivationBaseChangePublic.lean/index.md) · [Full source](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/DerivationBaseChangePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/DerivationBaseChangePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/DerivationBaseChangePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ofDerivation](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/DerivationBaseChangePublic.lean/declarations/ofderivation.md) | 38 | `declaration-track:817ea4bf28794ee4e33dcd7df23e408eef1202ebe0315a39a673e31d93715fad` |
-| 2 | `lemma` | [ofDerivation_apply](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/DerivationBaseChangePublic.lean/declarations/ofderivation-apply.md) | 59 | `result-track:6cf8d50f8c43e036115e8cc14207577963b1acbf85672acfbba407ff277c16cd` |
-| 3 | `def` | [ofLieDerivation](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/DerivationBaseChangePublic.lean/declarations/ofliederivation.md) | 66 | `declaration-track:8974e48622eab7b988eff4581b22b40ca14fd50bb9074ca8657ea118d0b4d0bd` |
-| 4 | `lemma` | [ofLieDerivation_apply](../../../../../NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/DerivationBaseChangePublic.lean/declarations/ofliederivation-apply.md) | 93 | `result-track:f71b467d4c7c06c0efb0f4c571af2d6094df531193c15c355e28700c573f1f6c` |
+| 1 | `def` | [ofDerivation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/DerivationBaseChangePublic.lean/declarations/ofderivation.md) | 38 | `declaration-track:817ea4bf28794ee4e33dcd7df23e408eef1202ebe0315a39a673e31d93715fad` |
+| 2 | `lemma` | [ofDerivation_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/DerivationBaseChangePublic.lean/declarations/ofderivation-apply.md) | 59 | `result-track:6cf8d50f8c43e036115e8cc14207577963b1acbf85672acfbba407ff277c16cd` |
+| 3 | `def` | [ofLieDerivation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/DerivationBaseChangePublic.lean/declarations/ofliederivation.md) | 66 | `declaration-track:8974e48622eab7b988eff4581b22b40ca14fd50bb9074ca8657ea118d0b4d0bd` |
+| 4 | `lemma` | [ofLieDerivation_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/DerivationBaseChangePublic.lean/declarations/ofliederivation-apply.md) | 93 | `result-track:f71b467d4c7c06c0efb0f4c571af2d6094df531193c15c355e28700c573f1f6c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

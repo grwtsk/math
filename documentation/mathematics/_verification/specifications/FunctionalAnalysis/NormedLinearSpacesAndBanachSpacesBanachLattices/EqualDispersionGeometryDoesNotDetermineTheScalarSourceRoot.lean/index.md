@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/EqualDispersionGeometryDoesNotDetermineTheScalarSourceRoot.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/EqualDispersionGeometryDoesNotDetermineTheScalarSourceRoot.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/EqualDispersionGeometryDoesNotDetermineTheScalarSourceRoot.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/EqualDispersionGeometryDoesNotDetermineTheScalarSourceRoot.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [arbitrary_scalar_at_same_geometry](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/EqualDispersionGeometryDoesNotDetermineTheScalarSourceRoot.lean/declarations/arbitrary-scalar-at-same-geometry.md) | 30 | `result-track:1bbc7869fa38bd816ff78ea4ca92b881d6a1c04c8ce907ec55451459b26615cb` |
-| 2 | `theorem` | [scalar_root_unbounded_with_fixed_geometry](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/EqualDispersionGeometryDoesNotDetermineTheScalarSourceRoot.lean/declarations/scalar-root-unbounded-with-fixed-geometry.md) | 39 | `result-track:6b7a2383ccf51057799e2015de94de0ad1fe88ed32dfe75b2423164680f055a3` |
-| 3 | `theorem` | [no_geometry_only_scalar_decoder](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/EqualDispersionGeometryDoesNotDetermineTheScalarSourceRoot.lean/declarations/no-geometry-only-scalar-decoder.md) | 46 | `result-track:898c48ae11352be2f6bac5128cce9af2f928b586362270f9ca683f9ab2b7c0c5` |
-| 4 | `theorem` | [calibrated_geometry_recovers_potential](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/EqualDispersionGeometryDoesNotDetermineTheScalarSourceRoot.lean/declarations/calibrated-geometry-recovers-potential.md) | 56 | `result-track:fd3eeb1aae319883a2e0f80c6ec1596fe4c5047d79a57a689910d9bbfeb31e16` |
+| 1 | `theorem` | [arbitrary_scalar_at_same_geometry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/EqualDispersionGeometryDoesNotDetermineTheScalarSourceRoot.lean/declarations/arbitrary-scalar-at-same-geometry.md) | 30 | `result-track:1bbc7869fa38bd816ff78ea4ca92b881d6a1c04c8ce907ec55451459b26615cb` |
+| 2 | `theorem` | [scalar_root_unbounded_with_fixed_geometry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/EqualDispersionGeometryDoesNotDetermineTheScalarSourceRoot.lean/declarations/scalar-root-unbounded-with-fixed-geometry.md) | 39 | `result-track:6b7a2383ccf51057799e2015de94de0ad1fe88ed32dfe75b2423164680f055a3` |
+| 3 | `theorem` | [no_geometry_only_scalar_decoder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/EqualDispersionGeometryDoesNotDetermineTheScalarSourceRoot.lean/declarations/no-geometry-only-scalar-decoder.md) | 46 | `result-track:898c48ae11352be2f6bac5128cce9af2f928b586362270f9ca683f9ab2b7c0c5` |
+| 4 | `theorem` | [calibrated_geometry_recovers_potential](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/EqualDispersionGeometryDoesNotDetermineTheScalarSourceRoot.lean/declarations/calibrated-geometry-recovers-potential.md) | 56 | `result-track:fd3eeb1aae319883a2e0f80c6ec1596fe4c5047d79a57a689910d9bbfeb31e16` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

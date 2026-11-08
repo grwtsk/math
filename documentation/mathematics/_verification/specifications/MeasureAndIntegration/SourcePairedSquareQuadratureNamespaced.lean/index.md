@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourcePairedSquareQuadratureNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourcePairedSquareQuadratureNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePairedSquareQuadratureNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePairedSquareQuadratureNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [pairedSquareReadout](../../../../MeasureAndIntegration/SourcePairedSquareQuadratureNamespaced.lean/declarations/pairedsquarereadout.md) | 37 | `declaration-track:e8f24e9f0597a24d5b9372c10543ab6219d7cec47253714bc61398388dbb1c40` |
-| 2 | `theorem` | [squarePrefix_pairedTail_work](../../../../MeasureAndIntegration/SourcePairedSquareQuadratureNamespaced.lean/declarations/squareprefix-pairedtail-work.md) | 42 | `result-track:7129579da78efcb45b2299d44ca85eab4addd478fb12f9b917e0d1f2ca2119f2` |
-| 3 | `theorem` | [squareTail_pairedTail_work](../../../../MeasureAndIntegration/SourcePairedSquareQuadratureNamespaced.lean/declarations/squaretail-pairedtail-work.md) | 70 | `result-track:74054ed7b712a5c86a345f3ddbde05411b3c79c45238dc0b57aeef53a5aa26dd` |
-| 4 | `theorem` | [squareTailPairedWork_eq_neg_integral_pairedTail_deriv](../../../../MeasureAndIntegration/SourcePairedSquareQuadratureNamespaced.lean/declarations/squaretailpairedwork-eq-neg-integral-pairedtail-deriv.md) | 86 | `result-track:fd3f90d7b2a3e2ee8409d1d14a9da8e6a03f3fb940ffb83d0352f3393eec965d` |
-| 5 | `theorem` | [squareTailPairedWork_eq_neg_readout](../../../../MeasureAndIntegration/SourcePairedSquareQuadratureNamespaced.lean/declarations/squaretailpairedwork-eq-neg-readout.md) | 116 | `result-track:630ff386cb96e3b896ea0740768b5f959a6b0377fec1eece0ca78a39eff6d8d2` |
-| 6 | `theorem` | [squareRemovedPairedWork_eq_first_square_quadrature](../../../../MeasureAndIntegration/SourcePairedSquareQuadratureNamespaced.lean/declarations/squareremovedpairedwork-eq-first-square-quadrature.md) | 122 | `result-track:1aeb360a9f96f11b918359918f8af6e8e8f0a130f9f98f61c76bfeca20ea1c4d` |
+| 1 | `def` | [pairedSquareReadout](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePairedSquareQuadratureNamespaced.lean/declarations/pairedsquarereadout.md) | 37 | `declaration-track:e8f24e9f0597a24d5b9372c10543ab6219d7cec47253714bc61398388dbb1c40` |
+| 2 | `theorem` | [squarePrefix_pairedTail_work](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePairedSquareQuadratureNamespaced.lean/declarations/squareprefix-pairedtail-work.md) | 42 | `result-track:7129579da78efcb45b2299d44ca85eab4addd478fb12f9b917e0d1f2ca2119f2` |
+| 3 | `theorem` | [squareTail_pairedTail_work](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePairedSquareQuadratureNamespaced.lean/declarations/squaretail-pairedtail-work.md) | 70 | `result-track:74054ed7b712a5c86a345f3ddbde05411b3c79c45238dc0b57aeef53a5aa26dd` |
+| 4 | `theorem` | [squareTailPairedWork_eq_neg_integral_pairedTail_deriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePairedSquareQuadratureNamespaced.lean/declarations/squaretailpairedwork-eq-neg-integral-pairedtail-deriv.md) | 86 | `result-track:fd3f90d7b2a3e2ee8409d1d14a9da8e6a03f3fb940ffb83d0352f3393eec965d` |
+| 5 | `theorem` | [squareTailPairedWork_eq_neg_readout](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePairedSquareQuadratureNamespaced.lean/declarations/squaretailpairedwork-eq-neg-readout.md) | 116 | `result-track:630ff386cb96e3b896ea0740768b5f959a6b0377fec1eece0ca78a39eff6d8d2` |
+| 6 | `theorem` | [squareRemovedPairedWork_eq_first_square_quadrature](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourcePairedSquareQuadratureNamespaced.lean/declarations/squareremovedpairedwork-eq-first-square-quadrature.md) | 122 | `result-track:1aeb360a9f96f11b918359918f8af6e8e8f0a130f9f98f61c76bfeca20ea1c4d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

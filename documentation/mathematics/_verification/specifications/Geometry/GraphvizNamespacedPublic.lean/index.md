@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Geometry/GraphvizNamespacedPublic.lean/index.md) · [Full source](../../../../Geometry/GraphvizNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/GraphvizNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/GraphvizNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ClickNodeDemo.Props](../../../../Geometry/GraphvizNamespacedPublic.lean/declarations/clicknodedemo-props.md) | 41 | `declaration-track:105d018f59a9d62f2fbfca849040be094fd30f49ff07fe20f6fa2dd88aae043c` |
-| 2 | `def` | [ClickNodeDemo](../../../../Geometry/GraphvizNamespacedPublic.lean/declarations/clicknodedemo.md) | 46 | `declaration-track:b674ceef661707c299fc508921736754eaf39bae667cc4d0c9f446bb04155f47` |
+| 1 | `structure` | [ClickNodeDemo.Props](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/GraphvizNamespacedPublic.lean/declarations/clicknodedemo-props.md) | 41 | `declaration-track:105d018f59a9d62f2fbfca849040be094fd30f49ff07fe20f6fa2dd88aae043c` |
+| 2 | `def` | [ClickNodeDemo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/GraphvizNamespacedPublic.lean/declarations/clicknodedemo.md) | 46 | `declaration-track:b674ceef661707c299fc508921736754eaf39bae667cc4d0c9f446bb04155f47` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

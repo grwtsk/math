@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/TheFullNativePulsePriceRetainsEveryFixedRealExponentEdition1.lean/index.md) · [Full source](../../../../RealFunctions/TheFullNativePulsePriceRetainsEveryFixedRealExponentEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TheFullNativePulsePriceRetainsEveryFixedRealExponentEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TheFullNativePulsePriceRetainsEveryFixedRealExponentEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [price](../../../../RealFunctions/TheFullNativePulsePriceRetainsEveryFixedRealExponentEdition1.lean/declarations/price.md) | 26 | `declaration-track:7518fde890648006bd8e97f2c5ce26cace394bbcd2ee38c4349e8bf43688c4a5` |
-| 2 | `theorem` | [exact_source_power_ratio](../../../../RealFunctions/TheFullNativePulsePriceRetainsEveryFixedRealExponentEdition1.lean/declarations/exact-source-power-ratio.md) | 28 | `result-track:42551f64de09f4d8f70ec7706a1281ca0ea030b505399b0fba36884a90077572` |
-| 3 | `theorem` | [full_real_pulse_price_lower](../../../../RealFunctions/TheFullNativePulsePriceRetainsEveryFixedRealExponentEdition1.lean/declarations/full-real-pulse-price-lower.md) | 42 | `result-track:9c9a05d609743b341ebf7b2cb67e2689307db9e945f4f2261f22271c022998ae` |
-| 4 | `theorem` | [complete_finite_real_pulse_payment](../../../../RealFunctions/TheFullNativePulsePriceRetainsEveryFixedRealExponentEdition1.lean/declarations/complete-finite-real-pulse-payment.md) | 55 | `result-track:9f56d5ed3392bd211404838e978fb8e42c63264b86422cc160cd7eeaed4a830a` |
-| 5 | `theorem` | [exact_square_price](../../../../RealFunctions/TheFullNativePulsePriceRetainsEveryFixedRealExponentEdition1.lean/declarations/exact-square-price.md) | 62 | `result-track:d0cb7db005888e2140f993a3594d20e3fc99a2a06694e120de07f39cb3ee1cc0` |
+| 1 | `def` | [price](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TheFullNativePulsePriceRetainsEveryFixedRealExponentEdition1.lean/declarations/price.md) | 26 | `declaration-track:7518fde890648006bd8e97f2c5ce26cace394bbcd2ee38c4349e8bf43688c4a5` |
+| 2 | `theorem` | [exact_source_power_ratio](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TheFullNativePulsePriceRetainsEveryFixedRealExponentEdition1.lean/declarations/exact-source-power-ratio.md) | 28 | `result-track:42551f64de09f4d8f70ec7706a1281ca0ea030b505399b0fba36884a90077572` |
+| 3 | `theorem` | [full_real_pulse_price_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TheFullNativePulsePriceRetainsEveryFixedRealExponentEdition1.lean/declarations/full-real-pulse-price-lower.md) | 42 | `result-track:9c9a05d609743b341ebf7b2cb67e2689307db9e945f4f2261f22271c022998ae` |
+| 4 | `theorem` | [complete_finite_real_pulse_payment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TheFullNativePulsePriceRetainsEveryFixedRealExponentEdition1.lean/declarations/complete-finite-real-pulse-payment.md) | 55 | `result-track:9f56d5ed3392bd211404838e978fb8e42c63264b86422cc160cd7eeaed4a830a` |
+| 5 | `theorem` | [exact_square_price](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/TheFullNativePulsePriceRetainsEveryFixedRealExponentEdition1.lean/declarations/exact-square-price.md) | 62 | `result-track:d0cb7db005888e2140f993a3594d20e3fc99a2a06694e120de07f39cb3ee1cc0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

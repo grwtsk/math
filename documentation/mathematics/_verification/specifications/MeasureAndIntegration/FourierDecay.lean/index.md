@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/FourierDecay.lean/index.md) · [Full source](../../../../MeasureAndIntegration/FourierDecay.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FourierDecay.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FourierDecay.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,10 +60,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [φt](../../../../MeasureAndIntegration/FourierDecay.lean/declarations/t.md) | 19 | `declaration-track:ff14135cebe3981358a401fdfb7d8fe3aa5993a4bf885a3148521e13cd59dd92` |
-| 2 | `def` | [fourierInv](../../../../MeasureAndIntegration/FourierDecay.lean/declarations/fourierinv.md) | 29 | `declaration-track:a4690a7965102511dca294cc8b4b69cb0d9537d2d35dcd575defda9db88dcb33` |
-| 3 | `def` | [kt](../../../../MeasureAndIntegration/FourierDecay.lean/declarations/kt.md) | 39 | `declaration-track:85c97a63de66ad81e5b6e57caa22e2adb7c0cc283affa1e965f3a15f820d097b` |
-| 4 | `lemma` | [decay_kt](../../../../MeasureAndIntegration/FourierDecay.lean/declarations/decay-kt.md) | 46 | `result-track:41909e5af163d70bf554791be9139ac5bf880bc3fea380eac753eae67f52a3b1` |
+| 1 | `def` | [φt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FourierDecay.lean/declarations/t.md) | 19 | `declaration-track:ff14135cebe3981358a401fdfb7d8fe3aa5993a4bf885a3148521e13cd59dd92` |
+| 2 | `def` | [fourierInv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FourierDecay.lean/declarations/fourierinv.md) | 29 | `declaration-track:a4690a7965102511dca294cc8b4b69cb0d9537d2d35dcd575defda9db88dcb33` |
+| 3 | `def` | [kt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FourierDecay.lean/declarations/kt.md) | 39 | `declaration-track:85c97a63de66ad81e5b6e57caa22e2adb7c0cc283affa1e965f3a15f820d097b` |
+| 4 | `lemma` | [decay_kt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FourierDecay.lean/declarations/decay-kt.md) | 46 | `result-track:41909e5af163d70bf554791be9139ac5bf880bc3fea380eac753eae67f52a3b1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

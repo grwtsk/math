@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/QuarticGaloisMatching.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/QuarticGaloisMatching.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticGaloisMatching.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticGaloisMatching.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.QuarticRootLocusEnumeration`](../../../../AssociativeRingsAndAlgebras/QuarticRootLocusEnumeration.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Algebra.QuarticRootLocusEnumeration`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticRootLocusEnumeration.lean/index.md) — import line 1; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualRootPerm](../../../../AssociativeRingsAndAlgebras/QuarticGaloisMatching.lean/declarations/actualrootperm.md) | 28 | `declaration-track:5ef5a427797e4d9dab178de81987af82488f872b888ade49125765fc4595e231` |
-| 2 | `theorem` | [actualRootPerm_spec](../../../../AssociativeRingsAndAlgebras/QuarticGaloisMatching.lean/declarations/actualrootperm-spec.md) | 33 | `result-track:592fd36de5338388890756d3dd2f3ba3a2c8fef4f9612c2b996c9894abc7c8c2` |
-| 3 | `def` | [actualRootPermutationHom](../../../../AssociativeRingsAndAlgebras/QuarticGaloisMatching.lean/declarations/actualrootpermutationhom.md) | 43 | `declaration-track:bb045f77fdc670479a0fc459d0bd4f17493384b4dd2a85626996c2cca37de741` |
-| 4 | `def` | [actualMatchingPermutationHom](../../../../AssociativeRingsAndAlgebras/QuarticGaloisMatching.lean/declarations/actualmatchingpermutationhom.md) | 64 | `declaration-track:3955d53bd4f5f7070821c2d18156c7c2ad8f6778a6a465da7e12c06caf5b144f` |
-| 5 | `theorem` | [actual_matching_adjacency_automorphism](../../../../AssociativeRingsAndAlgebras/QuarticGaloisMatching.lean/declarations/actual-matching-adjacency-automorphism.md) | 72 | `result-track:f6ce0c99fe0ff0c0b635df35b9acc9dbf8dcc86534194b5b09623ae23a31b12a` |
-| 6 | `def` | [separableQuarticMatchingHom](../../../../AssociativeRingsAndAlgebras/QuarticGaloisMatching.lean/declarations/separablequarticmatchinghom.md) | 87 | `declaration-track:8ec740b5ad9b5b0fbe84eaae4c8b1a08dc0c9b8a1c261980dc034b053b8830c8` |
+| 1 | `def` | [actualRootPerm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticGaloisMatching.lean/declarations/actualrootperm.md) | 28 | `declaration-track:5ef5a427797e4d9dab178de81987af82488f872b888ade49125765fc4595e231` |
+| 2 | `theorem` | [actualRootPerm_spec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticGaloisMatching.lean/declarations/actualrootperm-spec.md) | 33 | `result-track:592fd36de5338388890756d3dd2f3ba3a2c8fef4f9612c2b996c9894abc7c8c2` |
+| 3 | `def` | [actualRootPermutationHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticGaloisMatching.lean/declarations/actualrootpermutationhom.md) | 43 | `declaration-track:bb045f77fdc670479a0fc459d0bd4f17493384b4dd2a85626996c2cca37de741` |
+| 4 | `def` | [actualMatchingPermutationHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticGaloisMatching.lean/declarations/actualmatchingpermutationhom.md) | 64 | `declaration-track:3955d53bd4f5f7070821c2d18156c7c2ad8f6778a6a465da7e12c06caf5b144f` |
+| 5 | `theorem` | [actual_matching_adjacency_automorphism](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticGaloisMatching.lean/declarations/actual-matching-adjacency-automorphism.md) | 72 | `result-track:f6ce0c99fe0ff0c0b635df35b9acc9dbf8dcc86534194b5b09623ae23a31b12a` |
+| 6 | `def` | [separableQuarticMatchingHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/QuarticGaloisMatching.lean/declarations/separablequarticmatchinghom.md) | 87 | `declaration-track:8ec740b5ad9b5b0fbe84eaae4c8b1a08dc0c9b8a1c261980dc034b053b8830c8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

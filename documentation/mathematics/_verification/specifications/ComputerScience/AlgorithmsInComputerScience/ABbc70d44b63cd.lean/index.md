@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ABbc70d44b63cd.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ABbc70d44b63cd.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ABbc70d44b63cd.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ABbc70d44b63cd.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,9 +61,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [RootReachability](../../../../../ComputerScience/AlgorithmsInComputerScience/ABbc70d44b63cd.lean/declarations/rootreachability.md) | 15 | `declaration-track:802f178ae43b0fae67f74d796e7f4305b4ce4ec950ecfb36bc36190dff86c9e2` |
-| 2 | `structure` | [RootConeEntry](../../../../../ComputerScience/AlgorithmsInComputerScience/ABbc70d44b63cd.lean/declarations/rootconeentry.md) | 22 | `declaration-track:3bf1333647fae79ec697805862f27640c6de869b2f20a48c86c5554a6d38454b` |
-| 3 | `structure` | [RootConeRecord](../../../../../ComputerScience/AlgorithmsInComputerScience/ABbc70d44b63cd.lean/declarations/rootconerecord.md) | 29 | `declaration-track:512952532256af035b2fab4bcc8f959db7cf8c6a2ee783d5d345cb13f051301d` |
+| 1 | `structure` | [RootReachability](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ABbc70d44b63cd.lean/declarations/rootreachability.md) | 15 | `declaration-track:802f178ae43b0fae67f74d796e7f4305b4ce4ec950ecfb36bc36190dff86c9e2` |
+| 2 | `structure` | [RootConeEntry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ABbc70d44b63cd.lean/declarations/rootconeentry.md) | 22 | `declaration-track:3bf1333647fae79ec697805862f27640c6de869b2f20a48c86c5554a6d38454b` |
+| 3 | `structure` | [RootConeRecord](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ABbc70d44b63cd.lean/declarations/rootconerecord.md) | 29 | `declaration-track:512952532256af035b2fab4bcc8f959db7cf8c6a2ee783d5d345cb13f051301d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

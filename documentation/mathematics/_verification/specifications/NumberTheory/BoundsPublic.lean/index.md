@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/BoundsPublic.lean/index.md) · [Full source](../../../../NumberTheory/BoundsPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/BoundsPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/BoundsPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [unit_norm_eq_one](../../../../NumberTheory/BoundsPublic.lean/declarations/unit-norm-eq-one.md) | 31 | `result-track:ecee320b2942a7e0e58faaff9e61cd2f74f9c6b7d1304a661e5d2bdc89a7f103` |
-| 2 | `lemma` | [norm_le_one](../../../../NumberTheory/BoundsPublic.lean/declarations/norm-le-one.md) | 37 | `result-track:6849b690a4ca8802581874c4125c1562265c5df3d9ba041a29ba950b598e59bc` |
+| 1 | `lemma` | [unit_norm_eq_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/BoundsPublic.lean/declarations/unit-norm-eq-one.md) | 31 | `result-track:ecee320b2942a7e0e58faaff9e61cd2f74f9c6b7d1304a661e5d2bdc89a7f103` |
+| 2 | `lemma` | [norm_le_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/BoundsPublic.lean/declarations/norm-le-one.md) | 37 | `result-track:6849b690a4ca8802581874c4125c1562265c5df3d9ba041a29ba950b598e59bc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

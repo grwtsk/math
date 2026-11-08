@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DegreeOneSlope.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DegreeOneSlope.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DegreeOneSlope.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DegreeOneSlope.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [PureDegreeOneHodgeType](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DegreeOneSlope.lean/declarations/puredegreeonehodgetype.md) | 34 | `declaration-track:bd8d0f2a39524b4047c11f25fc72c5ae1bcb6f3d3ab00e40c59f40e04dbdbf36` |
-| 2 | `structure` | [DegreeOneFiltration](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DegreeOneSlope.lean/declarations/degreeonefiltration.md) | 40 | `declaration-track:e973faa8549f2f35cd6a83546710c38994ee2319825a98d750a33b8f6b4c76a1` |
-| 3 | `def` | [HasPureType](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DegreeOneSlope.lean/declarations/haspuretype.md) | 45 | `declaration-track:88d2496e82ecf2a6ae24e882d7ac4979dc8e81561b2f580ac755203ffc6b55bd` |
-| 4 | `structure` | [PureSlopeNumerics](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DegreeOneSlope.lean/declarations/pureslopenumerics.md) | 52 | `declaration-track:5d16b48ae103efa701f94eaf66a7f7dd8b8b80be158e805c5eaa5c839ed72b1b` |
-| 5 | `theorem` | [antiholomorphic_of_slope_zero](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DegreeOneSlope.lean/declarations/antiholomorphic-of-slope-zero.md) | 62 | `result-track:7730e82c4d65156f871c267f4cfa8fa6c9e24b3d8ee6681ce2752843fadffca1` |
-| 6 | `theorem` | [holomorphic_of_slope_one](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DegreeOneSlope.lean/declarations/holomorphic-of-slope-one.md) | 73 | `result-track:18d553980e4e3263fe8322d35ddca7e60cbc8ac4f9314fb44423d33fc79e3981` |
-| 7 | `theorem` | [pureType_of_zero_or_one_slope](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DegreeOneSlope.lean/declarations/puretype-of-zero-or-one-slope.md) | 83 | `result-track:db11b43a3b98cc4dfb271834fe1fb5cc3b18d2fd529e5bf6a737e2344ebe5c0c` |
+| 1 | `inductive` | [PureDegreeOneHodgeType](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DegreeOneSlope.lean/declarations/puredegreeonehodgetype.md) | 34 | `declaration-track:bd8d0f2a39524b4047c11f25fc72c5ae1bcb6f3d3ab00e40c59f40e04dbdbf36` |
+| 2 | `structure` | [DegreeOneFiltration](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DegreeOneSlope.lean/declarations/degreeonefiltration.md) | 40 | `declaration-track:e973faa8549f2f35cd6a83546710c38994ee2319825a98d750a33b8f6b4c76a1` |
+| 3 | `def` | [HasPureType](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DegreeOneSlope.lean/declarations/haspuretype.md) | 45 | `declaration-track:88d2496e82ecf2a6ae24e882d7ac4979dc8e81561b2f580ac755203ffc6b55bd` |
+| 4 | `structure` | [PureSlopeNumerics](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DegreeOneSlope.lean/declarations/pureslopenumerics.md) | 52 | `declaration-track:5d16b48ae103efa701f94eaf66a7f7dd8b8b80be158e805c5eaa5c839ed72b1b` |
+| 5 | `theorem` | [antiholomorphic_of_slope_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DegreeOneSlope.lean/declarations/antiholomorphic-of-slope-zero.md) | 62 | `result-track:7730e82c4d65156f871c267f4cfa8fa6c9e24b3d8ee6681ce2752843fadffca1` |
+| 6 | `theorem` | [holomorphic_of_slope_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DegreeOneSlope.lean/declarations/holomorphic-of-slope-one.md) | 73 | `result-track:18d553980e4e3263fe8322d35ddca7e60cbc8ac4f9314fb44423d33fc79e3981` |
+| 7 | `theorem` | [pureType_of_zero_or_one_slope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DegreeOneSlope.lean/declarations/puretype-of-zero-or-one-slope.md) | 83 | `result-track:db11b43a3b98cc4dfb271834fe1fb5cc3b18d2fd529e5bf6a737e2344ebe5c0c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

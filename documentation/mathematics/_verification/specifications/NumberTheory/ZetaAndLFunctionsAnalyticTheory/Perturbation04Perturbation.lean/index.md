@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Perturbation04Perturbation.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Perturbation04Perturbation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Perturbation04Perturbation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Perturbation04Perturbation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [abs_add_seven](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Perturbation04Perturbation.lean/declarations/abs-add-seven.md) | 6 | `result-track:89244c1c43f79d5f5e321a57eb11398933b67fa3dde9561c9d8f2d49e8b3c8da` |
-| 2 | `theorem` | [abs_sub_two](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Perturbation04Perturbation.lean/declarations/abs-sub-two.md) | 11 | `result-track:6fbfe3b9b088282a40ffea359f68902312f31c8502fb52ef8850c981db29e725` |
-| 3 | `theorem` | [triple_perturbation_bound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Perturbation04Perturbation.lean/declarations/triple-perturbation-bound.md) | 14 | `result-track:c02cf4a40e23870fa613831a46b2bd8e7d4cd8ed46c98ee3bfef472a0343f07d` |
-| 4 | `def` | [thetaPhiJetDetMajorant](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Perturbation04Perturbation.lean/declarations/thetaphijetdetmajorant.md) | 35 | `declaration-track:0794610cd4c4013b6abad7de45cef5d52c5144c6abfbe6cd1050a2975be4e4f6` |
-| 5 | `theorem` | [thetaPhiJetDet_perturbation_bound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Perturbation04Perturbation.lean/declarations/thetaphijetdet-perturbation-bound.md) | 40 | `result-track:7be739ac078e8fd1e5e4f61f943da2f94ec482fb05ffcbb07c62fae25867c3ab` |
-| 6 | `theorem` | [thetaPhiJetDet_gaussian_error_bound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/Perturbation04Perturbation.lean/declarations/thetaphijetdet-gaussian-error-bound.md) | 69 | `result-track:83b2c1a4bb9836e4f76b03437a6dfd8480d526f581b6ffe9911b57deae85baeb` |
+| 1 | `theorem` | [abs_add_seven](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Perturbation04Perturbation.lean/declarations/abs-add-seven.md) | 6 | `result-track:89244c1c43f79d5f5e321a57eb11398933b67fa3dde9561c9d8f2d49e8b3c8da` |
+| 2 | `theorem` | [abs_sub_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Perturbation04Perturbation.lean/declarations/abs-sub-two.md) | 11 | `result-track:6fbfe3b9b088282a40ffea359f68902312f31c8502fb52ef8850c981db29e725` |
+| 3 | `theorem` | [triple_perturbation_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Perturbation04Perturbation.lean/declarations/triple-perturbation-bound.md) | 14 | `result-track:c02cf4a40e23870fa613831a46b2bd8e7d4cd8ed46c98ee3bfef472a0343f07d` |
+| 4 | `def` | [thetaPhiJetDetMajorant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Perturbation04Perturbation.lean/declarations/thetaphijetdetmajorant.md) | 35 | `declaration-track:0794610cd4c4013b6abad7de45cef5d52c5144c6abfbe6cd1050a2975be4e4f6` |
+| 5 | `theorem` | [thetaPhiJetDet_perturbation_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Perturbation04Perturbation.lean/declarations/thetaphijetdet-perturbation-bound.md) | 40 | `result-track:7be739ac078e8fd1e5e4f61f943da2f94ec482fb05ffcbb07c62fae25867c3ab` |
+| 6 | `theorem` | [thetaPhiJetDet_gaussian_error_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Perturbation04Perturbation.lean/declarations/thetaphijetdet-gaussian-error-bound.md) | 69 | `result-track:83b2c1a4bb9836e4f76b03437a6dfd8480d526f581b6ffe9911b57deae85baeb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

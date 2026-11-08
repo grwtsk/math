@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/PosPartPublic.lean/index.md) · [Full source](../../../../FunctionalAnalysis/PosPartPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PosPartPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PosPartPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [realToRCLike_posPart_negPart](../../../../FunctionalAnalysis/PosPartPublic.lean/declarations/realtorclike-pospart-negpart.md) | 28 | `result-track:f96b8ca062b70d5fbeb87666ab216cd89889ea98647fcb80a4a803bb72eaabc0` |
-| 2 | `lemma` | [realToRCLike_posPart](../../../../FunctionalAnalysis/PosPartPublic.lean/declarations/realtorclike-pospart.md) | 41 | `result-track:5f002d749123fa61bf6a6279df1e6a9050737e81474d2240123c6a6c5ddeed89` |
-| 3 | `lemma` | [realToRCLike_negPart](../../../../FunctionalAnalysis/PosPartPublic.lean/declarations/realtorclike-negpart.md) | 44 | `result-track:8fce4f4962ee1e85d5679bad616eba7e1b11eda0b82d6505033bc2dfda0f1199` |
-| 4 | `lemma` | [posPart_mono](../../../../FunctionalAnalysis/PosPartPublic.lean/declarations/pospart-mono.md) | 57 | `result-track:75512f84857e544e536da01cf7454e7a785fdeae8f43a38229132ddb43ea2083` |
-| 5 | `lemma` | [negPart_anti](../../../../FunctionalAnalysis/PosPartPublic.lean/declarations/negpart-anti.md) | 75 | `result-track:9993738f8663d32a7dec30131fdfb6250c38e93cae81b1d543189c6064be8e07` |
-| 6 | `lemma` | [Commute.posPart_mono](../../../../FunctionalAnalysis/PosPartPublic.lean/declarations/commute-pospart-mono.md) | 89 | `result-track:d36e75b281160e4edaae89c56cf23969539d963351fbc0fb13b0ad9e50e97d57` |
-| 7 | `lemma` | [Commute.negPart_anti](../../../../FunctionalAnalysis/PosPartPublic.lean/declarations/commute-negpart-anti.md) | 105 | `result-track:3e6d72ada8f105ad7f880f841a0b572f6a5bdfbe9d78ec81a2b07fbe1aa51d08` |
+| 1 | `lemma` | [realToRCLike_posPart_negPart](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PosPartPublic.lean/declarations/realtorclike-pospart-negpart.md) | 28 | `result-track:f96b8ca062b70d5fbeb87666ab216cd89889ea98647fcb80a4a803bb72eaabc0` |
+| 2 | `lemma` | [realToRCLike_posPart](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PosPartPublic.lean/declarations/realtorclike-pospart.md) | 41 | `result-track:5f002d749123fa61bf6a6279df1e6a9050737e81474d2240123c6a6c5ddeed89` |
+| 3 | `lemma` | [realToRCLike_negPart](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PosPartPublic.lean/declarations/realtorclike-negpart.md) | 44 | `result-track:8fce4f4962ee1e85d5679bad616eba7e1b11eda0b82d6505033bc2dfda0f1199` |
+| 4 | `lemma` | [posPart_mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PosPartPublic.lean/declarations/pospart-mono.md) | 57 | `result-track:75512f84857e544e536da01cf7454e7a785fdeae8f43a38229132ddb43ea2083` |
+| 5 | `lemma` | [negPart_anti](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PosPartPublic.lean/declarations/negpart-anti.md) | 75 | `result-track:9993738f8663d32a7dec30131fdfb6250c38e93cae81b1d543189c6064be8e07` |
+| 6 | `lemma` | [Commute.posPart_mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PosPartPublic.lean/declarations/commute-pospart-mono.md) | 89 | `result-track:d36e75b281160e4edaae89c56cf23969539d963351fbc0fb13b0ad9e50e97d57` |
+| 7 | `lemma` | [Commute.negPart_anti](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/PosPartPublic.lean/declarations/commute-negpart-anti.md) | 105 | `result-track:3e6d72ada8f105ad7f880f841a0b572f6a5bdfbe9d78ec81a2b07fbe1aa51d08` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ShrinkNamespacedPublic.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ShrinkNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ShrinkNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ShrinkNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ShrinkNamespacedPublic.lean/declarations/instance-source-edition-4.md) | 31 | `declaration-track:ac5730711877001c6f070a928170ef4f5f7c50208e2844ad42c181bde82fc06c` |
-| 2 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ShrinkNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 33 | `declaration-track:855f6a5f95f177b595308b9721b6ef48720c0c11e4181324b79ad3f076b660b9` |
-| 3 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ShrinkNamespacedPublic.lean/declarations/instance.md) | 34 | `declaration-track:2e6c3f22e5de881c78df766fe9cc1e78ba2cbf5d6bd45c0c8d85b1ca5fd17abc` |
-| 4 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ShrinkNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 36 | `declaration-track:77ec64baa64cc7f343791522f43a729b24b6e1c4c06fb5cd4abfa1bcae56cb50` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ShrinkNamespacedPublic.lean/declarations/instance-source-edition-4.md) | 31 | `declaration-track:ac5730711877001c6f070a928170ef4f5f7c50208e2844ad42c181bde82fc06c` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ShrinkNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 33 | `declaration-track:855f6a5f95f177b595308b9721b6ef48720c0c11e4181324b79ad3f076b660b9` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ShrinkNamespacedPublic.lean/declarations/instance.md) | 34 | `declaration-track:2e6c3f22e5de881c78df766fe9cc1e78ba2cbf5d6bd45c0c8d85b1ca5fd17abc` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/ShrinkNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 36 | `declaration-track:77ec64baa64cc7f343791522f43a729b24b6e1c4c06fb5cd4abfa1bcae56cb50` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

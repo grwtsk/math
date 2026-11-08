@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Geometry/RationalGridIncidenceAndCounts.lean/index.md) · [Full source](../../../../Geometry/RationalGridIncidenceAndCounts.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RationalGridIncidenceAndCounts.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RationalGridIncidenceAndCounts.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,12 +62,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../Geometry/RationalGridIncidenceAndCounts.lean/declarations/example-source-edition-6.md) | 30 | `declaration-track:fdde331fc3d1b7a21cb792cc5d0f080e04d2f26540d2086041bd42df268c8c06` |
-| 2 | `example` | [(anonymous)](../../../../Geometry/RationalGridIncidenceAndCounts.lean/declarations/example-source-edition-2.md) | 36 | `declaration-track:4e0531416e5cfae3080516d3c507f2e4a18d9a4920ce66a3484d4be108d30a92` |
-| 3 | `example` | [(anonymous)](../../../../Geometry/RationalGridIncidenceAndCounts.lean/declarations/example-source-edition-3.md) | 43 | `declaration-track:5a6937f4690ce0d60752a5a527cc6e505f6ae8bfa0a69aac599a83e7a2ecf570` |
-| 4 | `example` | [(anonymous)](../../../../Geometry/RationalGridIncidenceAndCounts.lean/declarations/example-source-edition-4.md) | 50 | `declaration-track:9d7fe02c98611092d61dc49236aeaf52875cd003a7c45a7c5a5f3f6cfb6a57f9` |
-| 5 | `example` | [(anonymous)](../../../../Geometry/RationalGridIncidenceAndCounts.lean/declarations/example-source-edition-5.md) | 56 | `declaration-track:c18496e5df7ecad6ac326b3f6206177d25fdc08e8769d09af24b15770d5e72ff` |
-| 6 | `example` | [(anonymous)](../../../../Geometry/RationalGridIncidenceAndCounts.lean/declarations/example.md) | 62 | `declaration-track:4027b065907cf4b3af690a7c0f8a558c8048f609183d11af4db1bd436bf76b10` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RationalGridIncidenceAndCounts.lean/declarations/example-source-edition-6.md) | 30 | `declaration-track:fdde331fc3d1b7a21cb792cc5d0f080e04d2f26540d2086041bd42df268c8c06` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RationalGridIncidenceAndCounts.lean/declarations/example-source-edition-2.md) | 36 | `declaration-track:4e0531416e5cfae3080516d3c507f2e4a18d9a4920ce66a3484d4be108d30a92` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RationalGridIncidenceAndCounts.lean/declarations/example-source-edition-3.md) | 43 | `declaration-track:5a6937f4690ce0d60752a5a527cc6e505f6ae8bfa0a69aac599a83e7a2ecf570` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RationalGridIncidenceAndCounts.lean/declarations/example-source-edition-4.md) | 50 | `declaration-track:9d7fe02c98611092d61dc49236aeaf52875cd003a7c45a7c5a5f3f6cfb6a57f9` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RationalGridIncidenceAndCounts.lean/declarations/example-source-edition-5.md) | 56 | `declaration-track:c18496e5df7ecad6ac326b3f6206177d25fdc08e8769d09af24b15770d5e72ff` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/RationalGridIncidenceAndCounts.lean/declarations/example.md) | 62 | `declaration-track:4027b065907cf4b3af690a7c0f8a558c8048f609183d11af4db1bd436bf76b10` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

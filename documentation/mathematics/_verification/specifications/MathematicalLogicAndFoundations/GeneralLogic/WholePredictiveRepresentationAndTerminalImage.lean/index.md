@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholePredictiveRepresentationAndTerminalImage.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholePredictiveRepresentationAndTerminalImage.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholePredictiveRepresentationAndTerminalImage.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholePredictiveRepresentationAndTerminalImage.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -49,7 +49,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 - `DAF.System` — import line 21; external provider; requires a separately pinned dependency.
 - `Mathlib.Data.List.Basic` — import line 22; external provider; requires a separately pinned dependency.
 - `Mathlib.Data.Set.Operations` — import line 23; external provider; requires a separately pinned dependency.
-- [Full Future Trace Quotient](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FullFutureTraceQuotient.lean/index.md) — import line 24; pinned internal source present.
+- [Full Future Trace Quotient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FullFutureTraceQuotient.lean/index.md) — import line 24; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -60,15 +60,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PredictiveRepresentation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholePredictiveRepresentationAndTerminalImage.lean/declarations/predictiverepresentation.md) | 74 | `declaration-track:4f863a7125c459380b2291fbefe1d676f74606c2008e71d4879dcbaad80a0c40` |
-| 2 | `def` | [RealizedImage](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholePredictiveRepresentationAndTerminalImage.lean/declarations/realizedimage.md) | 85 | `declaration-track:47de00831931657936325ca93df79fe5fa9a9532d7f0cb761dc7234671daadc1` |
-| 3 | `def` | [toRealizedImage](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholePredictiveRepresentationAndTerminalImage.lean/declarations/torealizedimage.md) | 89 | `declaration-track:1054f380c37c78d0bd81bf70e6e41360a07b56972517a39e323d8cbdc257f841` |
-| 4 | `theorem` | [toRealizedImage_surjective](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholePredictiveRepresentationAndTerminalImage.lean/declarations/torealizedimage-surjective.md) | 92 | `result-track:28082ffdaa0dbb9013d8ac53a25bada197083cf73366b59f82b825b05c882e9a` |
-| 5 | `def` | [realizedImageToCausal](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholePredictiveRepresentationAndTerminalImage.lean/declarations/realizedimagetocausal.md) | 103 | `declaration-track:982ce118c7d45810266c5c1ba25238d8f13c2d9c240d34966c5c1253cc70d1ac` |
-| 6 | `theorem` | [realizedImageToCausal_toRealizedImage](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholePredictiveRepresentationAndTerminalImage.lean/declarations/realizedimagetocausal-torealizedimage.md) | 108 | `result-track:f425a8d4c59f8e59bea1f85e7285c4b599b6ef36a9be1f9cfb844b138caa30c1` |
-| 7 | `theorem` | [realizedImageToCausal_unique](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholePredictiveRepresentationAndTerminalImage.lean/declarations/realizedimagetocausal-unique.md) | 114 | `result-track:1c6f7d01c484a3dca2d37b905cd416a9a59475b1e0ebf48b823b771168c313fc` |
-| 8 | `theorem` | [causalState_terminal](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholePredictiveRepresentationAndTerminalImage.lean/declarations/causalstate-terminal.md) | 128 | `result-track:af6a36ae6ce880e63c5006e121c7ffdcfb96739c89cf064f9af834a59f0ceff9` |
-| 9 | `theorem` | [causalState_terminal](../../../../../MathematicalLogicAndFoundations/GeneralLogic/WholePredictiveRepresentationAndTerminalImage.lean/declarations/causalstate-terminal-source-edition-2.md) | 139 | `result-track:cb5279baf9f86f193c1098d8d5f3b728037a62be685ff66dac739df6010c636f` |
+| 1 | `structure` | [PredictiveRepresentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholePredictiveRepresentationAndTerminalImage.lean/declarations/predictiverepresentation.md) | 74 | `declaration-track:4f863a7125c459380b2291fbefe1d676f74606c2008e71d4879dcbaad80a0c40` |
+| 2 | `def` | [RealizedImage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholePredictiveRepresentationAndTerminalImage.lean/declarations/realizedimage.md) | 85 | `declaration-track:47de00831931657936325ca93df79fe5fa9a9532d7f0cb761dc7234671daadc1` |
+| 3 | `def` | [toRealizedImage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholePredictiveRepresentationAndTerminalImage.lean/declarations/torealizedimage.md) | 89 | `declaration-track:1054f380c37c78d0bd81bf70e6e41360a07b56972517a39e323d8cbdc257f841` |
+| 4 | `theorem` | [toRealizedImage_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholePredictiveRepresentationAndTerminalImage.lean/declarations/torealizedimage-surjective.md) | 92 | `result-track:28082ffdaa0dbb9013d8ac53a25bada197083cf73366b59f82b825b05c882e9a` |
+| 5 | `def` | [realizedImageToCausal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholePredictiveRepresentationAndTerminalImage.lean/declarations/realizedimagetocausal.md) | 103 | `declaration-track:982ce118c7d45810266c5c1ba25238d8f13c2d9c240d34966c5c1253cc70d1ac` |
+| 6 | `theorem` | [realizedImageToCausal_toRealizedImage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholePredictiveRepresentationAndTerminalImage.lean/declarations/realizedimagetocausal-torealizedimage.md) | 108 | `result-track:f425a8d4c59f8e59bea1f85e7285c4b599b6ef36a9be1f9cfb844b138caa30c1` |
+| 7 | `theorem` | [realizedImageToCausal_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholePredictiveRepresentationAndTerminalImage.lean/declarations/realizedimagetocausal-unique.md) | 114 | `result-track:1c6f7d01c484a3dca2d37b905cd416a9a59475b1e0ebf48b823b771168c313fc` |
+| 8 | `theorem` | [causalState_terminal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholePredictiveRepresentationAndTerminalImage.lean/declarations/causalstate-terminal.md) | 128 | `result-track:af6a36ae6ce880e63c5006e121c7ffdcfb96739c89cf064f9af834a59f0ceff9` |
+| 9 | `theorem` | [causalState_terminal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/WholePredictiveRepresentationAndTerminalImage.lean/declarations/causalstate-terminal-source-edition-2.md) | 139 | `result-track:cb5279baf9f86f193c1098d8d5f3b728037a62be685ff66dac739df6010c636f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

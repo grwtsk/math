@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CarryNamespacedPublicGoEqCarry.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CarryNamespacedPublicGoEqCarry.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CarryNamespacedPublicGoEqCarry.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CarryNamespacedPublicGoEqCarry.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [go_eq_carry](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CarryNamespacedPublicGoEqCarry.lean/declarations/go-eq-carry.md) | 39 | `result-track:fa27332950c34caea7cc71622a9d09cd7d6ae74c06065c3325d9f8f4b5d7907d` |
-| 2 | `theorem` | [mkOverflowBit_eq_carry](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CarryNamespacedPublicGoEqCarry.lean/declarations/mkoverflowbit-eq-carry.md) | 73 | `result-track:62e4f3de35361cab86730479e1158d22a3fdf6bc77de4806cf2a6d3fe5d01d73` |
+| 1 | `theorem` | [go_eq_carry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CarryNamespacedPublicGoEqCarry.lean/declarations/go-eq-carry.md) | 39 | `result-track:fa27332950c34caea7cc71622a9d09cd7d6ae74c06065c3325d9f8f4b5d7907d` |
+| 2 | `theorem` | [mkOverflowBit_eq_carry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CarryNamespacedPublicGoEqCarry.lean/declarations/mkoverflowbit-eq-carry.md) | 73 | `result-track:62e4f3de35361cab86730479e1158d22a3fdf6bc77de4806cf2a6d3fe5d01d73` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

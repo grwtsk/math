@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/FiveModeActualDictionary.lean/index.md) · [Full source](../../../../MeasureAndIntegration/FiveModeActualDictionary.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiveModeActualDictionary.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiveModeActualDictionary.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_source_matrix_dictionary](../../../../MeasureAndIntegration/FiveModeActualDictionary.lean/declarations/actual-source-matrix-dictionary.md) | 18 | `result-track:dbfa921190375c3215ba3f2dfea045130e5e8050f2ef449cc237c5478b770052` |
-| 2 | `theorem` | [actual_spectral_matrix_dictionary](../../../../MeasureAndIntegration/FiveModeActualDictionary.lean/declarations/actual-spectral-matrix-dictionary.md) | 25 | `result-track:c04433e2d67b036083684554578a6bff46f0534632fc19509220084a273d3e1d` |
-| 3 | `theorem` | [actual_angular_parseval](../../../../MeasureAndIntegration/FiveModeActualDictionary.lean/declarations/actual-angular-parseval.md) | 30 | `result-track:ce65e5869ab004090d2690029741711fee380e0202eaf44af2c87e3309046979` |
-| 4 | `theorem` | [actual_estimate_of_matrix_tail](../../../../MeasureAndIntegration/FiveModeActualDictionary.lean/declarations/actual-estimate-of-matrix-tail.md) | 38 | `result-track:fca0446b858e5259f5a0c78729352ee2f4697fbdc94bc705a817ee82d379fcd8` |
-| 5 | `theorem` | [actual_residual_upper_of_matrix_lower](../../../../MeasureAndIntegration/FiveModeActualDictionary.lean/declarations/actual-residual-upper-of-matrix-lower.md) | 45 | `result-track:3da2f59dbb887dfd07db3ef8f7e56b3557537d4a6f623f347885522ceccf45a8` |
+| 1 | `theorem` | [actual_source_matrix_dictionary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiveModeActualDictionary.lean/declarations/actual-source-matrix-dictionary.md) | 18 | `result-track:dbfa921190375c3215ba3f2dfea045130e5e8050f2ef449cc237c5478b770052` |
+| 2 | `theorem` | [actual_spectral_matrix_dictionary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiveModeActualDictionary.lean/declarations/actual-spectral-matrix-dictionary.md) | 25 | `result-track:c04433e2d67b036083684554578a6bff46f0534632fc19509220084a273d3e1d` |
+| 3 | `theorem` | [actual_angular_parseval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiveModeActualDictionary.lean/declarations/actual-angular-parseval.md) | 30 | `result-track:ce65e5869ab004090d2690029741711fee380e0202eaf44af2c87e3309046979` |
+| 4 | `theorem` | [actual_estimate_of_matrix_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiveModeActualDictionary.lean/declarations/actual-estimate-of-matrix-tail.md) | 38 | `result-track:fca0446b858e5259f5a0c78729352ee2f4697fbdc94bc705a817ee82d379fcd8` |
+| 5 | `theorem` | [actual_residual_upper_of_matrix_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/FiveModeActualDictionary.lean/declarations/actual-residual-upper-of-matrix-lower.md) | 45 | `result-track:3da2f59dbb887dfd07db3ef8f7e56b3557537d4a6f623f347885522ceccf45a8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

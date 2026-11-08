@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/DataUIntUIntSourceEdition2.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/DataUIntUIntSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DataUIntUIntSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DataUIntUIntSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/DataUIntUIntSourceEdition2.lean/declarations/example.md) | 33 | `declaration-track:f9110d208bf9057d40e1eba95f4a36b591d2f4c9053fb6fa6b7371ba623a7ee6` |
-| 2 | `def` | [isASCIIUpper](../../../../../../ComputerScience/TheoryOfData/DataStructures/DataUIntUIntSourceEdition2.lean/declarations/isasciiupper.md) | 104 | `declaration-track:7a7aa245096131a37cc9971f5028b863336fbd1ec729595cacb63a035cfac177` |
-| 3 | `def` | [isASCIILower](../../../../../../ComputerScience/TheoryOfData/DataStructures/DataUIntUIntSourceEdition2.lean/declarations/isasciilower.md) | 108 | `declaration-track:aa5c9c82ac39be7355a63a1e40cf083c1d315501449e6b9c02df63886718ac43` |
-| 4 | `def` | [isASCIIAlpha](../../../../../../ComputerScience/TheoryOfData/DataStructures/DataUIntUIntSourceEdition2.lean/declarations/isasciialpha.md) | 112 | `declaration-track:91830fed7b99f6c0c0155a649ae29396d6337e58f869ee02dfee7bfc42ca3739` |
-| 5 | `def` | [isASCIIDigit](../../../../../../ComputerScience/TheoryOfData/DataStructures/DataUIntUIntSourceEdition2.lean/declarations/isasciidigit.md) | 116 | `declaration-track:7912ad9bcb5667fc6d0dd2cbc81a63670d3ee251db9d1d95458c38727ecb35bd` |
-| 6 | `def` | [isASCIIAlphanum](../../../../../../ComputerScience/TheoryOfData/DataStructures/DataUIntUIntSourceEdition2.lean/declarations/isasciialphanum.md) | 120 | `declaration-track:88dfc3e4060091f24da2836443e62f673e2f9b2619c030eb684a6d7ff809322f` |
-| 7 | `def` | [toChar](../../../../../../ComputerScience/TheoryOfData/DataStructures/DataUIntUIntSourceEdition2.lean/declarations/tochar.md) | 124 | `declaration-track:fccffc9f035896c8b7f0161a3b621b0b43212fce1511d8570ec1a8eb9207292e` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DataUIntUIntSourceEdition2.lean/declarations/example.md) | 33 | `declaration-track:f9110d208bf9057d40e1eba95f4a36b591d2f4c9053fb6fa6b7371ba623a7ee6` |
+| 2 | `def` | [isASCIIUpper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DataUIntUIntSourceEdition2.lean/declarations/isasciiupper.md) | 104 | `declaration-track:7a7aa245096131a37cc9971f5028b863336fbd1ec729595cacb63a035cfac177` |
+| 3 | `def` | [isASCIILower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DataUIntUIntSourceEdition2.lean/declarations/isasciilower.md) | 108 | `declaration-track:aa5c9c82ac39be7355a63a1e40cf083c1d315501449e6b9c02df63886718ac43` |
+| 4 | `def` | [isASCIIAlpha](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DataUIntUIntSourceEdition2.lean/declarations/isasciialpha.md) | 112 | `declaration-track:91830fed7b99f6c0c0155a649ae29396d6337e58f869ee02dfee7bfc42ca3739` |
+| 5 | `def` | [isASCIIDigit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DataUIntUIntSourceEdition2.lean/declarations/isasciidigit.md) | 116 | `declaration-track:7912ad9bcb5667fc6d0dd2cbc81a63670d3ee251db9d1d95458c38727ecb35bd` |
+| 6 | `def` | [isASCIIAlphanum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DataUIntUIntSourceEdition2.lean/declarations/isasciialphanum.md) | 120 | `declaration-track:88dfc3e4060091f24da2836443e62f673e2f9b2619c030eb684a6d7ff809322f` |
+| 7 | `def` | [toChar](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/DataUIntUIntSourceEdition2.lean/declarations/tochar.md) | 124 | `declaration-track:fccffc9f035896c8b7f0161a3b621b0b43212fce1511d8570ec1a8eb9207292e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

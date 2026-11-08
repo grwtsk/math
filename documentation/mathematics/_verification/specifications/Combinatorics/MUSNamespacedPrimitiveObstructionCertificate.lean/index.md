@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/MUSNamespacedPrimitiveObstructionCertificate.lean/index.md) · [Full source](../../../../Combinatorics/MUSNamespacedPrimitiveObstructionCertificate.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MUSNamespacedPrimitiveObstructionCertificate.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MUSNamespacedPrimitiveObstructionCertificate.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PrimitiveObstructionCertificate](../../../../Combinatorics/MUSNamespacedPrimitiveObstructionCertificate.lean/declarations/primitiveobstructioncertificate.md) | 21 | `declaration-track:8f110b4426cd5114467dd73953458370e3f954e4bd48b0d9ab6eb19d158fc2fd` |
-| 2 | `structure` | [ProperDeletionWitness](../../../../Combinatorics/MUSNamespacedPrimitiveObstructionCertificate.lean/declarations/properdeletionwitness.md) | 36 | `declaration-track:5bf7d963848ad89c91dfce376ea6ba5a773523d89a18be4b27e6885ee88c6988` |
-| 3 | `theorem` | [deletion_minimal_implies_proper_subset_feasible](../../../../Combinatorics/MUSNamespacedPrimitiveObstructionCertificate.lean/declarations/deletion-minimal-implies-proper-subset-feasible.md) | 45 | `result-track:f87c1d2b965686e8aa11e190f9b6cab1f96f0d97b4b5ad86a058a384ab618f83` |
-| 4 | `theorem` | [primitive_core_is_infeasible](../../../../Combinatorics/MUSNamespacedPrimitiveObstructionCertificate.lean/declarations/primitive-core-is-infeasible.md) | 64 | `result-track:623cccc3e4a7456a721fdff6482e1752b13bc27ea70e1a11a58d2bb07e0cbd2d` |
+| 1 | `structure` | [PrimitiveObstructionCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MUSNamespacedPrimitiveObstructionCertificate.lean/declarations/primitiveobstructioncertificate.md) | 21 | `declaration-track:8f110b4426cd5114467dd73953458370e3f954e4bd48b0d9ab6eb19d158fc2fd` |
+| 2 | `structure` | [ProperDeletionWitness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MUSNamespacedPrimitiveObstructionCertificate.lean/declarations/properdeletionwitness.md) | 36 | `declaration-track:5bf7d963848ad89c91dfce376ea6ba5a773523d89a18be4b27e6885ee88c6988` |
+| 3 | `theorem` | [deletion_minimal_implies_proper_subset_feasible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MUSNamespacedPrimitiveObstructionCertificate.lean/declarations/deletion-minimal-implies-proper-subset-feasible.md) | 45 | `result-track:f87c1d2b965686e8aa11e190f9b6cab1f96f0d97b4b5ad86a058a384ab618f83` |
+| 4 | `theorem` | [primitive_core_is_infeasible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/MUSNamespacedPrimitiveObstructionCertificate.lean/declarations/primitive-core-is-infeasible.md) | 64 | `result-track:623cccc3e4a7456a721fdff6482e1752b13bc27ea70e1a11a58d2bb07e0cbd2d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentInformationLossBridge.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentInformationLossBridge.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentInformationLossBridge.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentInformationLossBridge.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Logic.InformationLoss.FactorizationFiber`](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FactorizationFiber.lean/index.md) — import line 9; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentInformationLoss`](../../../../../GroupTheoryAndGeneralizations/CanonicalSquareTentBombieriMomentInformationLoss.lean/index.md) — import line 10; pinned internal source present.
+- [`GRWTSK.Logic.InformationLoss.FactorizationFiber`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FactorizationFiber.lean/index.md) — import line 9; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentInformationLoss`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CanonicalSquareTentBombieriMomentInformationLoss.lean/index.md) — import line 10; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [bombieriFactorsThrough_iff_generic](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentInformationLossBridge.lean/declarations/bombierifactorsthrough-iff-generic.md) | 34 | `result-track:bb04d68ddf3c7de799d311e56b8987c72c407baf3ad3fdf0cc9298ed4ad7d495` |
-| 2 | `theorem` | [bombieri_corrected_zero_same_profile](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentInformationLossBridge.lean/declarations/bombieri-corrected-zero-same-profile.md) | 41 | `result-track:95458ea963d89be25b7f31c173ae1de6f737274a0263094ad3c68b89d59ff33a` |
-| 3 | `theorem` | [bombieri_not_factorsThrough_generic](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentInformationLossBridge.lean/declarations/bombieri-not-factorsthrough-generic.md) | 50 | `result-track:2a712accbf50e55fa2782dd9bfd2437c758f39bc7dda659976fb41d062334921` |
-| 4 | `theorem` | [bombieri_augmented_profile_separates](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentInformationLossBridge.lean/declarations/bombieri-augmented-profile-separates.md) | 62 | `result-track:1af4328d571e2644fb53acc35eb24d4b045e573511e2318d37f42b2817d115fd` |
+| 1 | `theorem` | [bombieriFactorsThrough_iff_generic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentInformationLossBridge.lean/declarations/bombierifactorsthrough-iff-generic.md) | 34 | `result-track:bb04d68ddf3c7de799d311e56b8987c72c407baf3ad3fdf0cc9298ed4ad7d495` |
+| 2 | `theorem` | [bombieri_corrected_zero_same_profile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentInformationLossBridge.lean/declarations/bombieri-corrected-zero-same-profile.md) | 41 | `result-track:95458ea963d89be25b7f31c173ae1de6f737274a0263094ad3c68b89d59ff33a` |
+| 3 | `theorem` | [bombieri_not_factorsThrough_generic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentInformationLossBridge.lean/declarations/bombieri-not-factorsthrough-generic.md) | 50 | `result-track:2a712accbf50e55fa2782dd9bfd2437c758f39bc7dda659976fb41d062334921` |
+| 4 | `theorem` | [bombieri_augmented_profile_separates](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentInformationLossBridge.lean/declarations/bombieri-augmented-profile-separates.md) | 62 | `result-track:1af4328d571e2644fb53acc35eb24d4b045e573511e2318d37f42b2817d115fd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

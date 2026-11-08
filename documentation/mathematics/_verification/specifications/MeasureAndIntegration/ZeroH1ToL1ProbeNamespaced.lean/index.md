@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ZeroH1ToL1ProbeNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ZeroH1ToL1ProbeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroH1ToL1ProbeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroH1ToL1ProbeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [integral_norm_le_support_mul_l2](../../../../MeasureAndIntegration/ZeroH1ToL1ProbeNamespaced.lean/declarations/integral-norm-le-support-mul-l2.md) | 18 | `result-track:c3409b646c972ea39d1274b96c6c90d3268516c08af01077b7feac0f49452433` |
+| 1 | `theorem` | [integral_norm_le_support_mul_l2](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ZeroH1ToL1ProbeNamespaced.lean/declarations/integral-norm-le-support-mul-l2.md) | 18 | `result-track:c3409b646c972ea39d1274b96c6c90d3268516c08af01077b7feac0f49452433` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

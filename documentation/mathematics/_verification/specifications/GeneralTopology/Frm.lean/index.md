@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/Frm.lean/index.md) · [Full source](../../../../GeneralTopology/Frm.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Frm.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Frm.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [topCatOpToFrm](../../../../GeneralTopology/Frm.lean/declarations/topcatoptofrm.md) | 19 | `declaration-track:729712230420b24717ecd05a1c81c3d73861a4a6a83f1f4578aa449727a7e117` |
-| 2 | `instance` | [CompHausOpToFrame.faithful](../../../../GeneralTopology/Frm.lean/declarations/comphausoptoframe-faithful.md) | 24 | `declaration-track:985cd976b64ccf68ab34b7e4dc2291bc1e20f21fe01894085b8550eba3d15e9e` |
+| 1 | `def` | [topCatOpToFrm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Frm.lean/declarations/topcatoptofrm.md) | 19 | `declaration-track:729712230420b24717ecd05a1c81c3d73861a4a6a83f1f4578aa449727a7e117` |
+| 2 | `instance` | [CompHausOpToFrame.faithful](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Frm.lean/declarations/comphausoptoframe-faithful.md) | 24 | `declaration-track:985cd976b64ccf68ab34b7e4dc2291bc1e20f21fe01894085b8550eba3d15e9e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

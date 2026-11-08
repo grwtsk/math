@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/SpectrumPiNamespaced.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/SpectrumPiNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SpectrumPiNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SpectrumPiNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,15 +60,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [PreQuasiregular.toPi](../../../../AssociativeRingsAndAlgebras/SpectrumPiNamespaced.lean/declarations/prequasiregular-topi.md) | 47 | `declaration-track:90ce32fd08a938e8850b1bb27e3c1f49ad49141bd35d672a5956e2b9cdb15a25` |
-| 2 | `def` | [PreQuasiregular.toProd](../../../../AssociativeRingsAndAlgebras/SpectrumPiNamespaced.lean/declarations/prequasiregular-toprod.md) | 58 | `declaration-track:0ddfd57b90a71e4213e0898613ce61b367d93ca68ac65e125e5df8f79b4c624f` |
-| 3 | `lemma` | [isQuasiregular_pi_iff](../../../../AssociativeRingsAndAlgebras/SpectrumPiNamespaced.lean/declarations/isquasiregular-pi-iff.md) | 66 | `result-track:b8b330bd58534e5bad45dbfd3840a5b6b8b813893d4281941ca789b47e5e7200` |
-| 4 | `lemma` | [isQuasiregular_prod_iff](../../../../AssociativeRingsAndAlgebras/SpectrumPiNamespaced.lean/declarations/isquasiregular-prod-iff.md) | 71 | `result-track:881f557c5a8cd5c32374de56c8ea59d76b6ba035eb459a5a73c3bc1019486161` |
-| 5 | `lemma` | [quasispectrum.mem_iff_of_isUnit](../../../../AssociativeRingsAndAlgebras/SpectrumPiNamespaced.lean/declarations/quasispectrum-mem-iff-of-isunit.md) | 76 | `result-track:6790767cfa19ff347f258cdfbbdbc951e2ec43774d5d330fb4e29c88800d7252` |
-| 6 | `lemma` | [Pi.spectrum_eq](../../../../AssociativeRingsAndAlgebras/SpectrumPiNamespaced.lean/declarations/pi-spectrum-eq.md) | 85 | `result-track:5b08501728892fb0f3aa8cc5395dcd5468b5c2d3ea35d12f3a539aec7644d3fa` |
-| 7 | `lemma` | [Prod.spectrum_eq](../../../../AssociativeRingsAndAlgebras/SpectrumPiNamespaced.lean/declarations/prod-spectrum-eq.md) | 91 | `result-track:97da3560ac733f7bb31d6d01921c1f6dc3e719fde88cac120f8afa4be2a4c117` |
-| 8 | `lemma` | [Pi.quasispectrum_eq](../../../../AssociativeRingsAndAlgebras/SpectrumPiNamespaced.lean/declarations/pi-quasispectrum-eq.md) | 97 | `result-track:15e0ba077f0c29b7526a8df4e2f4d748706857f2bdef426c66d42dce6173ec35` |
-| 9 | `lemma` | [Prod.quasispectrum_eq](../../../../AssociativeRingsAndAlgebras/SpectrumPiNamespaced.lean/declarations/prod-quasispectrum-eq.md) | 109 | `result-track:67855f8300514ffd42fce2c31c41cb716e2643fef431cbeb5c825d17329a211e` |
+| 1 | `def` | [PreQuasiregular.toPi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SpectrumPiNamespaced.lean/declarations/prequasiregular-topi.md) | 47 | `declaration-track:90ce32fd08a938e8850b1bb27e3c1f49ad49141bd35d672a5956e2b9cdb15a25` |
+| 2 | `def` | [PreQuasiregular.toProd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SpectrumPiNamespaced.lean/declarations/prequasiregular-toprod.md) | 58 | `declaration-track:0ddfd57b90a71e4213e0898613ce61b367d93ca68ac65e125e5df8f79b4c624f` |
+| 3 | `lemma` | [isQuasiregular_pi_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SpectrumPiNamespaced.lean/declarations/isquasiregular-pi-iff.md) | 66 | `result-track:b8b330bd58534e5bad45dbfd3840a5b6b8b813893d4281941ca789b47e5e7200` |
+| 4 | `lemma` | [isQuasiregular_prod_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SpectrumPiNamespaced.lean/declarations/isquasiregular-prod-iff.md) | 71 | `result-track:881f557c5a8cd5c32374de56c8ea59d76b6ba035eb459a5a73c3bc1019486161` |
+| 5 | `lemma` | [quasispectrum.mem_iff_of_isUnit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SpectrumPiNamespaced.lean/declarations/quasispectrum-mem-iff-of-isunit.md) | 76 | `result-track:6790767cfa19ff347f258cdfbbdbc951e2ec43774d5d330fb4e29c88800d7252` |
+| 6 | `lemma` | [Pi.spectrum_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SpectrumPiNamespaced.lean/declarations/pi-spectrum-eq.md) | 85 | `result-track:5b08501728892fb0f3aa8cc5395dcd5468b5c2d3ea35d12f3a539aec7644d3fa` |
+| 7 | `lemma` | [Prod.spectrum_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SpectrumPiNamespaced.lean/declarations/prod-spectrum-eq.md) | 91 | `result-track:97da3560ac733f7bb31d6d01921c1f6dc3e719fde88cac120f8afa4be2a4c117` |
+| 8 | `lemma` | [Pi.quasispectrum_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SpectrumPiNamespaced.lean/declarations/pi-quasispectrum-eq.md) | 97 | `result-track:15e0ba077f0c29b7526a8df4e2f4d748706857f2bdef426c66d42dce6173ec35` |
+| 9 | `lemma` | [Prod.quasispectrum_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SpectrumPiNamespaced.lean/declarations/prod-quasispectrum-eq.md) | 109 | `result-track:67855f8300514ffd42fce2c31c41cb716e2643fef431cbeb5c825d17329a211e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

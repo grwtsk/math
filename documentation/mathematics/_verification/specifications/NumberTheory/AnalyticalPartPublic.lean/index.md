@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/AnalyticalPartPublic.lean/index.md) · [Full source](../../../../NumberTheory/AnalyticalPartPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AnalyticalPartPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AnalyticalPartPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,15 +62,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [hasDerivAt_cexp_mul_sumIDeriv](../../../../NumberTheory/AnalyticalPartPublic.lean/declarations/hasderivat-cexp-mul-sumideriv.md) | 31 | `result-track:fea56d916d4d3687607f42b37c6343e4f27cf982912273fd271ef90689ff4672` |
-| 2 | `theorem` | [integral_exp_mul_eval](../../../../NumberTheory/AnalyticalPartPublic.lean/declarations/integral-exp-mul-eval.md) | 42 | `result-track:09efda4b91700e6ecd6a15338190cad9353d0cb8a88fad6b56806ab727c05d78` |
-| 3 | `def` | [P](../../../../NumberTheory/AnalyticalPartPublic.lean/declarations/p.md) | 62 | `declaration-track:16741b55152cd13fc0ec6c513de0e067e4074d993a29b7df25dd89d49dea9ed8` |
-| 4 | `theorem` | [P_eq_integral_exp_mul_eval](../../../../NumberTheory/AnalyticalPartPublic.lean/declarations/p-eq-integral-exp-mul-eval.md) | 65 | `result-track:a8575b11a5eb176264f31d3cb3ea1339ef794483d79a8b98d507e19bbb651bc2` |
-| 5 | `theorem` | [P_algebraMap](../../../../NumberTheory/AnalyticalPartPublic.lean/declarations/p-algebramap.md) | 70 | `result-track:74fd91f86eff442449b48ffc4f966183fdd4170587c84256625e0661b9afd3fb` |
-| 6 | `theorem` | [P_le_aux](../../../../NumberTheory/AnalyticalPartPublic.lean/declarations/p-le-aux.md) | 79 | `result-track:d61ace0aeadd60013fc7b76d1c5f624ca08351433d5a8ee9e64ee2c0e32a7108` |
-| 7 | `theorem` | [P_le](../../../../NumberTheory/AnalyticalPartPublic.lean/declarations/p-le.md) | 106 | `result-track:5adb1e25e1e7ad66500085dfa4897ca27eeecaf0b0ea5d50e16e204f12dbe697` |
-| 8 | `theorem` | [exp_polynomial_approx_aux](../../../../NumberTheory/AnalyticalPartPublic.lean/declarations/exp-polynomial-approx-aux.md) | 128 | `result-track:00b542d025632b07e6c473e8b9671868adec5aac22fdc49303452d4e865ca128` |
-| 9 | `theorem` | [exp_polynomial_approx](../../../../NumberTheory/AnalyticalPartPublic.lean/declarations/exp-polynomial-approx.md) | 169 | `result-track:3a122c1c592309b0050bf8e07d424d0eb0b8fa8e453dff7ea14ee66f0242b362` |
+| 1 | `theorem` | [hasDerivAt_cexp_mul_sumIDeriv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AnalyticalPartPublic.lean/declarations/hasderivat-cexp-mul-sumideriv.md) | 31 | `result-track:fea56d916d4d3687607f42b37c6343e4f27cf982912273fd271ef90689ff4672` |
+| 2 | `theorem` | [integral_exp_mul_eval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AnalyticalPartPublic.lean/declarations/integral-exp-mul-eval.md) | 42 | `result-track:09efda4b91700e6ecd6a15338190cad9353d0cb8a88fad6b56806ab727c05d78` |
+| 3 | `def` | [P](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AnalyticalPartPublic.lean/declarations/p.md) | 62 | `declaration-track:16741b55152cd13fc0ec6c513de0e067e4074d993a29b7df25dd89d49dea9ed8` |
+| 4 | `theorem` | [P_eq_integral_exp_mul_eval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AnalyticalPartPublic.lean/declarations/p-eq-integral-exp-mul-eval.md) | 65 | `result-track:a8575b11a5eb176264f31d3cb3ea1339ef794483d79a8b98d507e19bbb651bc2` |
+| 5 | `theorem` | [P_algebraMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AnalyticalPartPublic.lean/declarations/p-algebramap.md) | 70 | `result-track:74fd91f86eff442449b48ffc4f966183fdd4170587c84256625e0661b9afd3fb` |
+| 6 | `theorem` | [P_le_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AnalyticalPartPublic.lean/declarations/p-le-aux.md) | 79 | `result-track:d61ace0aeadd60013fc7b76d1c5f624ca08351433d5a8ee9e64ee2c0e32a7108` |
+| 7 | `theorem` | [P_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AnalyticalPartPublic.lean/declarations/p-le.md) | 106 | `result-track:5adb1e25e1e7ad66500085dfa4897ca27eeecaf0b0ea5d50e16e204f12dbe697` |
+| 8 | `theorem` | [exp_polynomial_approx_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AnalyticalPartPublic.lean/declarations/exp-polynomial-approx-aux.md) | 128 | `result-track:00b542d025632b07e6c473e8b9671868adec5aac22fdc49303452d4e865ca128` |
+| 9 | `theorem` | [exp_polynomial_approx](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/AnalyticalPartPublic.lean/declarations/exp-polynomial-approx.md) | 169 | `result-track:3a122c1c592309b0050bf8e07d424d0eb0b8fa8e453dff7ea14ee66f0242b362` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

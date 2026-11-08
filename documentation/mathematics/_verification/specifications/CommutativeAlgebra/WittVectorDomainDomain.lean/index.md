@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/WittVectorDomainDomain.lean/index.md) · [Full source](../../../../CommutativeAlgebra/WittVectorDomainDomain.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/WittVectorDomainDomain.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/WittVectorDomainDomain.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [shift](../../../../CommutativeAlgebra/WittVectorDomainDomain.lean/declarations/shift.md) | 55 | `declaration-track:095b5bec07fed5eae69727408cbbc4c27cbfdd91a7dbcd74f03edc68aef82cd1` |
-| 2 | `theorem` | [shift_coeff](../../../../CommutativeAlgebra/WittVectorDomainDomain.lean/declarations/shift-coeff.md) | 58 | `result-track:5a63bc1cb23acf3283f2fd37550c21121be14541d9f0d966249f970491c34196` |
-| 3 | `theorem` | [verschiebung_shift](../../../../CommutativeAlgebra/WittVectorDomainDomain.lean/declarations/verschiebung-shift.md) | 63 | `result-track:69fb3caba7548b8a6aa0cfbac8c930e646f9fb979e7a861a81e3f25adbd2e387` |
-| 4 | `theorem` | [eq_iterate_verschiebung](../../../../CommutativeAlgebra/WittVectorDomainDomain.lean/declarations/eq-iterate-verschiebung.md) | 72 | `result-track:dbc354a7af92b60e15b51368efd7c19b21d494ae89d6bc11e4a5517335665dfe` |
-| 5 | `theorem` | [verschiebung_nonzero](../../../../CommutativeAlgebra/WittVectorDomainDomain.lean/declarations/verschiebung-nonzero.md) | 80 | `result-track:bedabd05ca0ccb9fa8b3e9d9df3e79356ef8c240bb8bcbf450024379b5786ad7` |
-| 6 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/WittVectorDomainDomain.lean/declarations/instance.md) | 102 | `declaration-track:9dabec2aa9e07ad3373af13c94d5d623ad38f5f9283bd4cf9e20323957636958` |
-| 7 | `instance` | [instIsDomain](../../../../CommutativeAlgebra/WittVectorDomainDomain.lean/declarations/instisdomain.md) | 113 | `declaration-track:bbb5313ee1f3ecfb6c6f18a6944f946369614e692a2a0553a1b6aafb3e7d8f0b` |
+| 1 | `def` | [shift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/WittVectorDomainDomain.lean/declarations/shift.md) | 55 | `declaration-track:095b5bec07fed5eae69727408cbbc4c27cbfdd91a7dbcd74f03edc68aef82cd1` |
+| 2 | `theorem` | [shift_coeff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/WittVectorDomainDomain.lean/declarations/shift-coeff.md) | 58 | `result-track:5a63bc1cb23acf3283f2fd37550c21121be14541d9f0d966249f970491c34196` |
+| 3 | `theorem` | [verschiebung_shift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/WittVectorDomainDomain.lean/declarations/verschiebung-shift.md) | 63 | `result-track:69fb3caba7548b8a6aa0cfbac8c930e646f9fb979e7a861a81e3f25adbd2e387` |
+| 4 | `theorem` | [eq_iterate_verschiebung](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/WittVectorDomainDomain.lean/declarations/eq-iterate-verschiebung.md) | 72 | `result-track:dbc354a7af92b60e15b51368efd7c19b21d494ae89d6bc11e4a5517335665dfe` |
+| 5 | `theorem` | [verschiebung_nonzero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/WittVectorDomainDomain.lean/declarations/verschiebung-nonzero.md) | 80 | `result-track:bedabd05ca0ccb9fa8b3e9d9df3e79356ef8c240bb8bcbf450024379b5786ad7` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/WittVectorDomainDomain.lean/declarations/instance.md) | 102 | `declaration-track:9dabec2aa9e07ad3373af13c94d5d623ad38f5f9283bd4cf9e20323957636958` |
+| 7 | `instance` | [instIsDomain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/WittVectorDomainDomain.lean/declarations/instisdomain.md) | 113 | `declaration-track:bbb5313ee1f3ecfb6c6f18a6944f946369614e692a2a0553a1b6aafb3e7d8f0b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/InfinitesimalThickeningNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/InfinitesimalThickeningNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/InfinitesimalThickeningNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/InfinitesimalThickeningNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [InfinitesimalThickening](../../../../../MathematicalLogicAndFoundations/GeneralLogic/InfinitesimalThickeningNamespaced.lean/declarations/infinitesimalthickening.md) | 33 | `declaration-track:a3084dde539ce3f7c7c665a32182514b04ba4e0d47c480fe49e2a412641474fe` |
-| 2 | `theorem` | [thickening_has_nilpotent_ideal](../../../../../MathematicalLogicAndFoundations/GeneralLogic/InfinitesimalThickeningNamespaced.lean/declarations/thickening-has-nilpotent-ideal.md) | 42 | `result-track:5e11013bb6882a86aa65e661f78f0da04afbb941e7e345cb40cbc469ee86823a` |
+| 1 | `structure` | [InfinitesimalThickening](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/InfinitesimalThickeningNamespaced.lean/declarations/infinitesimalthickening.md) | 33 | `declaration-track:a3084dde539ce3f7c7c665a32182514b04ba4e0d47c480fe49e2a412641474fe` |
+| 2 | `theorem` | [thickening_has_nilpotent_ideal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/InfinitesimalThickeningNamespaced.lean/declarations/thickening-has-nilpotent-ideal.md) | 42 | `result-track:5e11013bb6882a86aa65e661f78f0da04afbb941e7e345cb40cbc469ee86823a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

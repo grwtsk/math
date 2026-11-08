@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/FactorCompletion.lean/index.md) · [Full source](../../../../Combinatorics/FactorCompletion.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FactorCompletion.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FactorCompletion.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [canonicalExactExtraction](../../../../Combinatorics/FactorCompletion.lean/declarations/canonicalexactextraction.md) | 27 | `result-track:d5d9923950c9a45f1768591e2427add24caa7137b483cc2b7864cffa3de0bda1` |
-| 2 | `inductive` | [ExtractionPath](../../../../Combinatorics/FactorCompletion.lean/declarations/extractionpath.md) | 37 | `declaration-track:ee75e3eca083f1534fdd21515e1ed049e934db41b59b4742fb675d037c54c738` |
-| 3 | `def` | [identityRefinement](../../../../Combinatorics/FactorCompletion.lean/declarations/identityrefinement.md) | 44 | `declaration-track:d570b53e75d6ab623301e60319449a513b649c6186427774d780146b22aeae73` |
-| 4 | `theorem` | [ExtractionPath.refines](../../../../Combinatorics/FactorCompletion.lean/declarations/extractionpath-refines.md) | 52 | `result-track:747aa07d7047dd8d636822ca9d1900d6d455ac6f80fde38753b7c4085f3805be` |
-| 5 | `theorem` | [ExtractionPath.preserves_exclusions](../../../../Combinatorics/FactorCompletion.lean/declarations/extractionpath-preserves-exclusions.md) | 61 | `result-track:27f3bd10c2be03c2da6c34e8c542bebe9a6b8e7cfb4fa0ce7dc0323a5d9598ed` |
-| 6 | `theorem` | [nonterminal_step](../../../../Combinatorics/FactorCompletion.lean/declarations/nonterminal-step.md) | 67 | `result-track:cc23928c9b04e882e90cea2697cc9080f2ac444cda1db28618e5881755b198c8` |
-| 7 | `theorem` | [finite_terminal_completion](../../../../Combinatorics/FactorCompletion.lean/declarations/finite-terminal-completion.md) | 77 | `result-track:aeb685b5638e3489bd85e4177e51faf980717dabea566e34e413f1ea73c8b933` |
-| 8 | `theorem` | [finite_complete_factorization](../../../../Combinatorics/FactorCompletion.lean/declarations/finite-complete-factorization.md) | 100 | `result-track:2ed39acbf72564c78e0374ee338f29fddc977ecd5e16d96fff49b92b59eec93f` |
+| 1 | `theorem` | [canonicalExactExtraction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FactorCompletion.lean/declarations/canonicalexactextraction.md) | 27 | `result-track:d5d9923950c9a45f1768591e2427add24caa7137b483cc2b7864cffa3de0bda1` |
+| 2 | `inductive` | [ExtractionPath](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FactorCompletion.lean/declarations/extractionpath.md) | 37 | `declaration-track:ee75e3eca083f1534fdd21515e1ed049e934db41b59b4742fb675d037c54c738` |
+| 3 | `def` | [identityRefinement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FactorCompletion.lean/declarations/identityrefinement.md) | 44 | `declaration-track:d570b53e75d6ab623301e60319449a513b649c6186427774d780146b22aeae73` |
+| 4 | `theorem` | [ExtractionPath.refines](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FactorCompletion.lean/declarations/extractionpath-refines.md) | 52 | `result-track:747aa07d7047dd8d636822ca9d1900d6d455ac6f80fde38753b7c4085f3805be` |
+| 5 | `theorem` | [ExtractionPath.preserves_exclusions](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FactorCompletion.lean/declarations/extractionpath-preserves-exclusions.md) | 61 | `result-track:27f3bd10c2be03c2da6c34e8c542bebe9a6b8e7cfb4fa0ce7dc0323a5d9598ed` |
+| 6 | `theorem` | [nonterminal_step](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FactorCompletion.lean/declarations/nonterminal-step.md) | 67 | `result-track:cc23928c9b04e882e90cea2697cc9080f2ac444cda1db28618e5881755b198c8` |
+| 7 | `theorem` | [finite_terminal_completion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FactorCompletion.lean/declarations/finite-terminal-completion.md) | 77 | `result-track:aeb685b5638e3489bd85e4177e51faf980717dabea566e34e413f1ea73c8b933` |
+| 8 | `theorem` | [finite_complete_factorization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FactorCompletion.lean/declarations/finite-complete-factorization.md) | 100 | `result-track:2ed39acbf72564c78e0374ee338f29fddc977ecd5e16d96fff49b92b59eec93f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

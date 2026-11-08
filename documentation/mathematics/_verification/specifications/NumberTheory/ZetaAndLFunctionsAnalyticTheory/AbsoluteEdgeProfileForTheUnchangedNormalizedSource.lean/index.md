@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AbsoluteEdgeProfileForTheUnchangedNormalizedSource.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AbsoluteEdgeProfileForTheUnchangedNormalizedSource.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AbsoluteEdgeProfileForTheUnchangedNormalizedSource.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AbsoluteEdgeProfileForTheUnchangedNormalizedSource.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [fixed_source_normalization_lower](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AbsoluteEdgeProfileForTheUnchangedNormalizedSource.lean/declarations/fixed-source-normalization-lower.md) | 21 | `result-track:dea85be140fcfd7ea9114df8f416efdebfc5d8db670a9951541ab486d125d8ae` |
-| 2 | `theorem` | [fixed_source_normalization_root_lower](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AbsoluteEdgeProfileForTheUnchangedNormalizedSource.lean/declarations/fixed-source-normalization-root-lower.md) | 30 | `result-track:b19dae58b62bc6dbc75879756e2e6163356660bd82104c012d840b855aaa5f01` |
-| 3 | `theorem` | [full_edge_factor_absolute_upper](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AbsoluteEdgeProfileForTheUnchangedNormalizedSource.lean/declarations/full-edge-factor-absolute-upper.md) | 37 | `result-track:25c23b9127a75fa5689ceb1d610c3149de7c1c95aa00209a0b10afe1af3a4672` |
-| 4 | `theorem` | [actual_full_normalized_edge_absolute_upper](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/AbsoluteEdgeProfileForTheUnchangedNormalizedSource.lean/declarations/actual-full-normalized-edge-absolute-upper.md) | 60 | `result-track:9eabab17056b1663e7afaece722f3413994297bfefad16baa511c6304a8911a5` |
+| 1 | `theorem` | [fixed_source_normalization_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AbsoluteEdgeProfileForTheUnchangedNormalizedSource.lean/declarations/fixed-source-normalization-lower.md) | 21 | `result-track:dea85be140fcfd7ea9114df8f416efdebfc5d8db670a9951541ab486d125d8ae` |
+| 2 | `theorem` | [fixed_source_normalization_root_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AbsoluteEdgeProfileForTheUnchangedNormalizedSource.lean/declarations/fixed-source-normalization-root-lower.md) | 30 | `result-track:b19dae58b62bc6dbc75879756e2e6163356660bd82104c012d840b855aaa5f01` |
+| 3 | `theorem` | [full_edge_factor_absolute_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AbsoluteEdgeProfileForTheUnchangedNormalizedSource.lean/declarations/full-edge-factor-absolute-upper.md) | 37 | `result-track:25c23b9127a75fa5689ceb1d610c3149de7c1c95aa00209a0b10afe1af3a4672` |
+| 4 | `theorem` | [actual_full_normalized_edge_absolute_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AbsoluteEdgeProfileForTheUnchangedNormalizedSource.lean/declarations/actual-full-normalized-edge-absolute-upper.md) | 60 | `result-track:9eabab17056b1663e7afaece722f3413994297bfefad16baa511c6304a8911a5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

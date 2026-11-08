@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/TokenGraphNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/TokenGraphNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TokenGraphNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TokenGraphNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [SemanticRelationType](../../../../../ComputerScience/AlgorithmsInComputerScience/TokenGraphNamespaced.lean/declarations/semanticrelationtype.md) | 16 | `declaration-track:ee04333ab283f252970d6aabef66a10bce193fb6d1a20cfdbffa6016a5133884` |
-| 2 | `structure` | [SemanticEdge](../../../../../ComputerScience/AlgorithmsInComputerScience/TokenGraphNamespaced.lean/declarations/semanticedge.md) | 33 | `declaration-track:f57feb9da3b58e54e50fda687300bbd238bd6c0f0c70f410528439cf88a39cc4` |
-| 3 | `structure` | [ConnectivityObligation](../../../../../ComputerScience/AlgorithmsInComputerScience/TokenGraphNamespaced.lean/declarations/connectivityobligation.md) | 42 | `declaration-track:a967de8f55f0abc9baaa45749d2680e5951b5f181953444b52203853e5303bf5` |
-| 4 | `structure` | [TokenGraph](../../../../../ComputerScience/AlgorithmsInComputerScience/TokenGraphNamespaced.lean/declarations/tokengraph.md) | 47 | `declaration-track:9566b8172077f8ea8cbcad3e5726d8d498cddcb98c781e61d9bb60c52401acb0` |
-| 5 | `theorem` | [TokenGraph.vertices_are_tokens](../../../../../ComputerScience/AlgorithmsInComputerScience/TokenGraphNamespaced.lean/declarations/tokengraph-vertices-are-tokens.md) | 65 | `result-track:167928fa122859ef6fe46323f231962c61b8431a8f9e1b14356fe28034604e6c` |
+| 1 | `inductive` | [SemanticRelationType](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TokenGraphNamespaced.lean/declarations/semanticrelationtype.md) | 16 | `declaration-track:ee04333ab283f252970d6aabef66a10bce193fb6d1a20cfdbffa6016a5133884` |
+| 2 | `structure` | [SemanticEdge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TokenGraphNamespaced.lean/declarations/semanticedge.md) | 33 | `declaration-track:f57feb9da3b58e54e50fda687300bbd238bd6c0f0c70f410528439cf88a39cc4` |
+| 3 | `structure` | [ConnectivityObligation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TokenGraphNamespaced.lean/declarations/connectivityobligation.md) | 42 | `declaration-track:a967de8f55f0abc9baaa45749d2680e5951b5f181953444b52203853e5303bf5` |
+| 4 | `structure` | [TokenGraph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TokenGraphNamespaced.lean/declarations/tokengraph.md) | 47 | `declaration-track:9566b8172077f8ea8cbcad3e5726d8d498cddcb98c781e61d9bb60c52401acb0` |
+| 5 | `theorem` | [TokenGraph.vertices_are_tokens](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TokenGraphNamespaced.lean/declarations/tokengraph-vertices-are-tokens.md) | 65 | `result-track:167928fa122859ef6fe46323f231962c61b8431a8f9e1b14356fe28034604e6c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

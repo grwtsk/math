@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualNumericMeanTransferNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualNumericMeanTransferNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualNumericMeanTransferNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualNumericMeanTransferNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [commonMeanCenter_gt](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualNumericMeanTransferNamespaced.lean/declarations/commonmeancenter-gt.md) | 22 | `result-track:9996f461f50df43496430fa4452ac72fc2907e17f4c38c87e392433ed5777b94` |
-| 2 | `theorem` | [normalizationBudget_lt](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualNumericMeanTransferNamespaced.lean/declarations/normalizationbudget-lt.md) | 26 | `result-track:9b888f4576ec17cb2e80100a78068be58879adf27af45d5d18f519fef44be814` |
-| 3 | `theorem` | [normalizationError_lt](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualNumericMeanTransferNamespaced.lean/declarations/normalizationerror-lt.md) | 30 | `result-track:2ee4bc1c422b66d5d43f81f5600a2e0ef2cfce709bf751943c0723055c3d0861` |
-| 4 | `theorem` | [sourceMeanOffset_gt_paper_bound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualNumericMeanTransferNamespaced.lean/declarations/sourcemeanoffset-gt-paper-bound.md) | 36 | `result-track:eed35d713dfe77a5eb95a27750811fbe1f09c06bb376947c3ae92b1d0bab9c9d` |
-| 5 | `theorem` | [sourceMean_gt_paper_bound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualNumericMeanTransferNamespaced.lean/declarations/sourcemean-gt-paper-bound.md) | 43 | `result-track:1e9cf9767a5f518e4cc8634ba1ce9fe9d8640d8e949b57c9e09612b131864521` |
-| 6 | `theorem` | [sourceMean_gt_of_zero_budget](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualNumericMeanTransferNamespaced.lean/declarations/sourcemean-gt-of-zero-budget.md) | 50 | `result-track:3acd0333ba8c12d442ea3f77f39b870d04912097fcebcdf9f8966507bb8c7294` |
-| 7 | `theorem` | [sourceMean_gt_neg_eighteen](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualNumericMeanTransferNamespaced.lean/declarations/sourcemean-gt-neg-eighteen.md) | 57 | `result-track:b2d5d042b66ef447885176a09207c76f5f9e7cdcf035ac5eab341141c472746b` |
+| 1 | `theorem` | [commonMeanCenter_gt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualNumericMeanTransferNamespaced.lean/declarations/commonmeancenter-gt.md) | 22 | `result-track:9996f461f50df43496430fa4452ac72fc2907e17f4c38c87e392433ed5777b94` |
+| 2 | `theorem` | [normalizationBudget_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualNumericMeanTransferNamespaced.lean/declarations/normalizationbudget-lt.md) | 26 | `result-track:9b888f4576ec17cb2e80100a78068be58879adf27af45d5d18f519fef44be814` |
+| 3 | `theorem` | [normalizationError_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualNumericMeanTransferNamespaced.lean/declarations/normalizationerror-lt.md) | 30 | `result-track:2ee4bc1c422b66d5d43f81f5600a2e0ef2cfce709bf751943c0723055c3d0861` |
+| 4 | `theorem` | [sourceMeanOffset_gt_paper_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualNumericMeanTransferNamespaced.lean/declarations/sourcemeanoffset-gt-paper-bound.md) | 36 | `result-track:eed35d713dfe77a5eb95a27750811fbe1f09c06bb376947c3ae92b1d0bab9c9d` |
+| 5 | `theorem` | [sourceMean_gt_paper_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualNumericMeanTransferNamespaced.lean/declarations/sourcemean-gt-paper-bound.md) | 43 | `result-track:1e9cf9767a5f518e4cc8634ba1ce9fe9d8640d8e949b57c9e09612b131864521` |
+| 6 | `theorem` | [sourceMean_gt_of_zero_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualNumericMeanTransferNamespaced.lean/declarations/sourcemean-gt-of-zero-budget.md) | 50 | `result-track:3acd0333ba8c12d442ea3f77f39b870d04912097fcebcdf9f8966507bb8c7294` |
+| 7 | `theorem` | [sourceMean_gt_neg_eighteen](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualNumericMeanTransferNamespaced.lean/declarations/sourcemean-gt-neg-eighteen.md) | 57 | `result-track:b2d5d042b66ef447885176a09207c76f5f9e7cdcf035ac5eab341141c472746b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

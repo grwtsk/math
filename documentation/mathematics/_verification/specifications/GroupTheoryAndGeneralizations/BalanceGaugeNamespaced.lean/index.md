@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/BalanceGaugeNamespaced.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/BalanceGaugeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/BalanceGaugeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/BalanceGaugeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [BalanceGauge](../../../../GroupTheoryAndGeneralizations/BalanceGaugeNamespaced.lean/declarations/balancegauge.md) | 24 | `declaration-track:db085dc86f33e38ea0695c43c44b09e4081b10ecb03a055e9ac1913a7afb99f1` |
-| 2 | `def` | [BalanceGauge.act](../../../../GroupTheoryAndGeneralizations/BalanceGaugeNamespaced.lean/declarations/balancegauge-act.md) | 34 | `declaration-track:8a17b5f7a41bfa260215790abb3d005021283bde83e8e0b6b3bb1b8d115c1d95` |
-| 3 | `theorem` | [BalanceGauge.product_act](../../../../GroupTheoryAndGeneralizations/BalanceGaugeNamespaced.lean/declarations/balancegauge-product-act.md) | 46 | `result-track:753f3eee2729a262b0e5b743e93d0f8122d5d1a9e1d01893c01f228b058de898` |
-| 4 | `structure` | [BalanceGaugeInvariantDefect](../../../../GroupTheoryAndGeneralizations/BalanceGaugeNamespaced.lean/declarations/balancegaugeinvariantdefect.md) | 60 | `declaration-track:bee3aef0985267797ffd04af0a52df36fb4b93db6141f31c789fd5d51c66e3e1` |
-| 5 | `structure` | [BalanceGaugeInvariantTrace](../../../../GroupTheoryAndGeneralizations/BalanceGaugeNamespaced.lean/declarations/balancegaugeinvarianttrace.md) | 78 | `declaration-track:ae41a7f6911fa4befb1aa2f096036b7aa8aa17829d5ac8ffa0600d4e9c834fdd` |
+| 1 | `structure` | [BalanceGauge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/BalanceGaugeNamespaced.lean/declarations/balancegauge.md) | 24 | `declaration-track:db085dc86f33e38ea0695c43c44b09e4081b10ecb03a055e9ac1913a7afb99f1` |
+| 2 | `def` | [BalanceGauge.act](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/BalanceGaugeNamespaced.lean/declarations/balancegauge-act.md) | 34 | `declaration-track:8a17b5f7a41bfa260215790abb3d005021283bde83e8e0b6b3bb1b8d115c1d95` |
+| 3 | `theorem` | [BalanceGauge.product_act](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/BalanceGaugeNamespaced.lean/declarations/balancegauge-product-act.md) | 46 | `result-track:753f3eee2729a262b0e5b743e93d0f8122d5d1a9e1d01893c01f228b058de898` |
+| 4 | `structure` | [BalanceGaugeInvariantDefect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/BalanceGaugeNamespaced.lean/declarations/balancegaugeinvariantdefect.md) | 60 | `declaration-track:bee3aef0985267797ffd04af0a52df36fb4b93db6141f31c789fd5d51c66e3e1` |
+| 5 | `structure` | [BalanceGaugeInvariantTrace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/BalanceGaugeNamespaced.lean/declarations/balancegaugeinvarianttrace.md) | 78 | `declaration-track:ae41a7f6911fa4befb1aa2f096036b7aa8aa17829d5ac8ffa0600d4e9c834fdd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

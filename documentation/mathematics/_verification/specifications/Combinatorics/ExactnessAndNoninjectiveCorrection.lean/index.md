@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ExactnessAndNoninjectiveCorrection.lean/index.md) · [Full source](../../../../Combinatorics/ExactnessAndNoninjectiveCorrection.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ExactnessAndNoninjectiveCorrection.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ExactnessAndNoninjectiveCorrection.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../Combinatorics/ExactnessAndNoninjectiveCorrection.lean/declarations/example-source-edition-2.md) | 45 | `declaration-track:3305441b416ba8b4c5f96b1807db018693a22c5fc6c58376ba7a6fca9ad2499d` |
-| 2 | `example` | [(anonymous)](../../../../Combinatorics/ExactnessAndNoninjectiveCorrection.lean/declarations/example-source-edition-3.md) | 48 | `declaration-track:805a9677568620c734f98666795fad9982d740b19642a1f11b9683807a8bb834` |
-| 3 | `example` | [(anonymous)](../../../../Combinatorics/ExactnessAndNoninjectiveCorrection.lean/declarations/example.md) | 55 | `declaration-track:317dcb4db8920d76b49138acea214c07f8a8a883b4da1b70f59052badfe7b0a3` |
-| 4 | `example` | [(anonymous)](../../../../Combinatorics/ExactnessAndNoninjectiveCorrection.lean/declarations/example-source-edition-4.md) | 58 | `declaration-track:c47cb9dd08d0db453e1b274e91d3fb8d8cafe804d51fb3a3bca992004b2bc20c` |
-| 5 | `example` | [(anonymous)](../../../../Combinatorics/ExactnessAndNoninjectiveCorrection.lean/declarations/example-source-edition-5.md) | 62 | `declaration-track:f35ee019b0762ca1705ef61c59d0e0ca7d19f672f3b699591e419b7b1fc8804e` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ExactnessAndNoninjectiveCorrection.lean/declarations/example-source-edition-2.md) | 45 | `declaration-track:3305441b416ba8b4c5f96b1807db018693a22c5fc6c58376ba7a6fca9ad2499d` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ExactnessAndNoninjectiveCorrection.lean/declarations/example-source-edition-3.md) | 48 | `declaration-track:805a9677568620c734f98666795fad9982d740b19642a1f11b9683807a8bb834` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ExactnessAndNoninjectiveCorrection.lean/declarations/example.md) | 55 | `declaration-track:317dcb4db8920d76b49138acea214c07f8a8a883b4da1b70f59052badfe7b0a3` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ExactnessAndNoninjectiveCorrection.lean/declarations/example-source-edition-4.md) | 58 | `declaration-track:c47cb9dd08d0db453e1b274e91d3fb8d8cafe804d51fb3a3bca992004b2bc20c` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ExactnessAndNoninjectiveCorrection.lean/declarations/example-source-edition-5.md) | 62 | `declaration-track:f35ee019b0762ca1705ef61c59d0e0ca7d19f672f3b699591e419b7b1fc8804e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

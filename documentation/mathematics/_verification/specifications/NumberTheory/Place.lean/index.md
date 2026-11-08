@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/Place.lean/index.md) · [Full source](../../../../NumberTheory/Place.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Place.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Place.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [Place](../../../../NumberTheory/Place.lean/declarations/place.md) | 18 | `declaration-track:b9db3f3f29af329a98781fd61e0d82ea5f520657cd1a930ebbfc9ff6c9ff5437` |
-| 2 | `def` | [IsFinitePrimePlace](../../../../NumberTheory/Place.lean/declarations/isfiniteprimeplace.md) | 23 | `declaration-track:5346a0f0b5b19d13c6d2b94c969ccd97894ec54d82771e26bbffb71bb4e2f134` |
-| 3 | `def` | [IsBadTMFPrime](../../../../NumberTheory/Place.lean/declarations/isbadtmfprime.md) | 26 | `declaration-track:1771745852a155974d4c7a991deea407629526f9449dc84079aa4f97752a9d73` |
-| 4 | `def` | [IsArchimedeanPlace](../../../../NumberTheory/Place.lean/declarations/isarchimedeanplace.md) | 29 | `declaration-track:a32d9bd830d2b54f1e75d0e432167114260622b7c700a4a7c19a3a197b0595fb` |
-| 5 | `theorem` | [archimedean_ne_finite](../../../../NumberTheory/Place.lean/declarations/archimedean-ne-finite.md) | 32 | `result-track:c5df9abd7217a21734bbbb2c697d2d283974cbb92b17dbddda3a4f8e8efb2201` |
-| 6 | `theorem` | [bad_tmf_prime_is_finite](../../../../NumberTheory/Place.lean/declarations/bad-tmf-prime-is-finite.md) | 38 | `result-track:3a7e39c7342331ea3cc8dcc895ddf8ffd4c89e8ea29e9dba0dc42aee6e643268` |
+| 1 | `inductive` | [Place](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Place.lean/declarations/place.md) | 18 | `declaration-track:b9db3f3f29af329a98781fd61e0d82ea5f520657cd1a930ebbfc9ff6c9ff5437` |
+| 2 | `def` | [IsFinitePrimePlace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Place.lean/declarations/isfiniteprimeplace.md) | 23 | `declaration-track:5346a0f0b5b19d13c6d2b94c969ccd97894ec54d82771e26bbffb71bb4e2f134` |
+| 3 | `def` | [IsBadTMFPrime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Place.lean/declarations/isbadtmfprime.md) | 26 | `declaration-track:1771745852a155974d4c7a991deea407629526f9449dc84079aa4f97752a9d73` |
+| 4 | `def` | [IsArchimedeanPlace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Place.lean/declarations/isarchimedeanplace.md) | 29 | `declaration-track:a32d9bd830d2b54f1e75d0e432167114260622b7c700a4a7c19a3a197b0595fb` |
+| 5 | `theorem` | [archimedean_ne_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Place.lean/declarations/archimedean-ne-finite.md) | 32 | `result-track:c5df9abd7217a21734bbbb2c697d2d283974cbb92b17dbddda3a4f8e8efb2201` |
+| 6 | `theorem` | [bad_tmf_prime_is_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/Place.lean/declarations/bad-tmf-prime-is-finite.md) | 38 | `result-track:3a7e39c7342331ea3cc8dcc895ddf8ffd4c89e8ea29e9dba0dc42aee6e643268` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

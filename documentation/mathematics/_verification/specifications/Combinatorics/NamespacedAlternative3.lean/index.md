@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/NamespacedAlternative3.lean/index.md) · [Full source](../../../../Combinatorics/NamespacedAlternative3.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NamespacedAlternative3.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NamespacedAlternative3.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mobiusDiagonal](../../../../Combinatorics/NamespacedAlternative3.lean/declarations/mobiusdiagonal.md) | 30 | `declaration-track:7b1cd23334c16aa667f25cde5b577e65bb56481f90862392446ffe077a82ec32` |
-| 2 | `def` | [logDiagonal](../../../../Combinatorics/NamespacedAlternative3.lean/declarations/logdiagonal.md) | 34 | `declaration-track:99bc19544714331455c224dffc48c05582cbf3215315c78fa7862dcbd5162ae7` |
-| 3 | `theorem` | [mobiusDiagonal_one_le](../../../../Combinatorics/NamespacedAlternative3.lean/declarations/mobiusdiagonal-one-le.md) | 37 | `result-track:34f73cabb8219faf68b195b55cf58ac4fabf37786c281df11063d7a7bafa8001` |
-| 4 | `theorem` | [logDiagonal_nonneg](../../../../Combinatorics/NamespacedAlternative3.lean/declarations/logdiagonal-nonneg.md) | 45 | `result-track:f4733b361510b58c40ee6c72cb2514fe0317596af6a0553a3cf2844621bac74e` |
-| 5 | `theorem` | [logDiagonal_harmonic_lower](../../../../Combinatorics/NamespacedAlternative3.lean/declarations/logdiagonal-harmonic-lower.md) | 49 | `result-track:164dcf9019620124c2499a4042feff49ca3dbb19e86d4c03676b0fb6ef068065` |
-| 6 | `theorem` | [logDiagonal_log_lower](../../../../Combinatorics/NamespacedAlternative3.lean/declarations/logdiagonal-log-lower.md) | 79 | `result-track:362797ee08417c93df37307a7ae6afc2840d50d8b4358c2e03f08336cbdd1a3d` |
-| 7 | `theorem` | [logDiagonal_source_lower](../../../../Combinatorics/NamespacedAlternative3.lean/declarations/logdiagonal-source-lower.md) | 86 | `result-track:e3a7173e6dade4c63efa4e2e6fe201a043bcd48cfa9c097df153d07eaa3447d8` |
-| 8 | `theorem` | [diagonal_budget_source_lower](../../../../Combinatorics/NamespacedAlternative3.lean/declarations/diagonal-budget-source-lower.md) | 98 | `result-track:2c7e47f29760f810f3e61749c9ac7b9a02d232da6ab6b36770f26ed95de738e4` |
-| 9 | `theorem` | [no_diagonal_budget_tail_upper_bound](../../../../Combinatorics/NamespacedAlternative3.lean/declarations/no-diagonal-budget-tail-upper-bound.md) | 110 | `result-track:8982c9c6cbbe3d9922edca0a866219001dd85b9b2857dc1d3abf319dc0699579` |
+| 1 | `def` | [mobiusDiagonal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NamespacedAlternative3.lean/declarations/mobiusdiagonal.md) | 30 | `declaration-track:7b1cd23334c16aa667f25cde5b577e65bb56481f90862392446ffe077a82ec32` |
+| 2 | `def` | [logDiagonal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NamespacedAlternative3.lean/declarations/logdiagonal.md) | 34 | `declaration-track:99bc19544714331455c224dffc48c05582cbf3215315c78fa7862dcbd5162ae7` |
+| 3 | `theorem` | [mobiusDiagonal_one_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NamespacedAlternative3.lean/declarations/mobiusdiagonal-one-le.md) | 37 | `result-track:34f73cabb8219faf68b195b55cf58ac4fabf37786c281df11063d7a7bafa8001` |
+| 4 | `theorem` | [logDiagonal_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NamespacedAlternative3.lean/declarations/logdiagonal-nonneg.md) | 45 | `result-track:f4733b361510b58c40ee6c72cb2514fe0317596af6a0553a3cf2844621bac74e` |
+| 5 | `theorem` | [logDiagonal_harmonic_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NamespacedAlternative3.lean/declarations/logdiagonal-harmonic-lower.md) | 49 | `result-track:164dcf9019620124c2499a4042feff49ca3dbb19e86d4c03676b0fb6ef068065` |
+| 6 | `theorem` | [logDiagonal_log_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NamespacedAlternative3.lean/declarations/logdiagonal-log-lower.md) | 79 | `result-track:362797ee08417c93df37307a7ae6afc2840d50d8b4358c2e03f08336cbdd1a3d` |
+| 7 | `theorem` | [logDiagonal_source_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NamespacedAlternative3.lean/declarations/logdiagonal-source-lower.md) | 86 | `result-track:e3a7173e6dade4c63efa4e2e6fe201a043bcd48cfa9c097df153d07eaa3447d8` |
+| 8 | `theorem` | [diagonal_budget_source_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NamespacedAlternative3.lean/declarations/diagonal-budget-source-lower.md) | 98 | `result-track:2c7e47f29760f810f3e61749c9ac7b9a02d232da6ab6b36770f26ed95de738e4` |
+| 9 | `theorem` | [no_diagonal_budget_tail_upper_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/NamespacedAlternative3.lean/declarations/no-diagonal-budget-tail-upper-bound.md) | 110 | `result-track:8982c9c6cbbe3d9922edca0a866219001dd85b9b2857dc1d3abf319dc0699579` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

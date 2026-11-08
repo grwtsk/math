@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachDirectionalMinorControls.lean/index.md) · [Full source](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachDirectionalMinorControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachDirectionalMinorControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachDirectionalMinorControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Primes.GoldbachDirectionalMinorBoundary`](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachDirectionalMinorBoundary.lean/index.md) — import line 3; pinned internal source present.
-- [`GRWTSK.NumberTheory.Primes.GoldbachTwoArcRationalBudget`](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachTwoArcRationalBudget.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Primes.GoldbachDirectionalMinorBoundary`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachDirectionalMinorBoundary.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Primes.GoldbachTwoArcRationalBudget`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachTwoArcRationalBudget.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [positive_minor_is_not_a_loss](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachDirectionalMinorControls.lean/declarations/positive-minor-is-not-a-loss.md) | 13 | `result-track:bd2455256d2925283f18c70a170cb6b94e94c9906f8c092d8c495ac161eb014b` |
-| 2 | `theorem` | [upper_minor_bound_is_insufficient](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachDirectionalMinorControls.lean/declarations/upper-minor-bound-is-insufficient.md) | 18 | `result-track:bbd04f8a7ac806fb3cf8bed80560f6c62d056cf951ec1c9cfa64aa7e745fe043` |
-| 3 | `theorem` | [nonstrict_directional_margin_is_insufficient](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachDirectionalMinorControls.lean/declarations/nonstrict-directional-margin-is-insufficient.md) | 23 | `result-track:b2d201565f3f575c45d49560c9ca76986e97bf76152f11c8842772e717c5e552` |
-| 4 | `theorem` | [correction_survives_zero_prefix_budget](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachDirectionalMinorControls.lean/declarations/correction-survives-zero-prefix-budget.md) | 29 | `result-track:38cbe791da3b79fcf71e2834412dd520ec7f98ab6c7c78905dadff7a73e2e85b` |
-| 5 | `theorem` | [q2_obstruction_rational_gap](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachDirectionalMinorControls.lean/declarations/q2-obstruction-rational-gap.md) | 35 | `result-track:5ce470cac47ee92369ebeddd597a53482d7ed1fe7a0166cb55ac67c451f4f93c` |
+| 1 | `theorem` | [positive_minor_is_not_a_loss](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachDirectionalMinorControls.lean/declarations/positive-minor-is-not-a-loss.md) | 13 | `result-track:bd2455256d2925283f18c70a170cb6b94e94c9906f8c092d8c495ac161eb014b` |
+| 2 | `theorem` | [upper_minor_bound_is_insufficient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachDirectionalMinorControls.lean/declarations/upper-minor-bound-is-insufficient.md) | 18 | `result-track:bbd04f8a7ac806fb3cf8bed80560f6c62d056cf951ec1c9cfa64aa7e745fe043` |
+| 3 | `theorem` | [nonstrict_directional_margin_is_insufficient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachDirectionalMinorControls.lean/declarations/nonstrict-directional-margin-is-insufficient.md) | 23 | `result-track:b2d201565f3f575c45d49560c9ca76986e97bf76152f11c8842772e717c5e552` |
+| 4 | `theorem` | [correction_survives_zero_prefix_budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachDirectionalMinorControls.lean/declarations/correction-survives-zero-prefix-budget.md) | 29 | `result-track:38cbe791da3b79fcf71e2834412dd520ec7f98ab6c7c78905dadff7a73e2e85b` |
+| 5 | `theorem` | [q2_obstruction_rational_gap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/GoldbachDirectionalMinorControls.lean/declarations/q2-obstruction-rational-gap.md) | 35 | `result-track:5ce470cac47ee92369ebeddd597a53482d7ed1fe7a0166cb55ac67c451f4f93c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbackOfTerminalPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbackOfTerminalPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbackOfTerminalPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbackOfTerminalPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [toFan](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbackOfTerminalPublic.lean/declarations/tofan.md) | 33 | `declaration-track:6b4808d89c8e33187e0e81f86948b67c8a13c9356ad2b0e6f083c1fa2fcd0d51` |
-| 2 | `abbrev` | [ofFan](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbackOfTerminalPublic.lean/declarations/offan.md) | 39 | `declaration-track:34201a582424f5ed426266341a43f3f6eeb9d77c7c3310591ecc9ba5eb3805a4` |
-| 3 | `def` | [isLimitOfFan](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbackOfTerminalPublic.lean/declarations/islimitoffan.md) | 45 | `declaration-track:752d9cf63a23404f8022bda889ad69bca0698db4f457ef22e1e8076ea05ef380` |
-| 4 | `lemma` | [hasWidePullback_of_isTerminal](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbackOfTerminalPublic.lean/declarations/haswidepullback-of-isterminal.md) | 55 | `result-track:1cc06566f5e5c7602d4a0833a0817b74c3749dab85bec37630d7e0f940cfa468` |
+| 1 | `abbrev` | [toFan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbackOfTerminalPublic.lean/declarations/tofan.md) | 33 | `declaration-track:6b4808d89c8e33187e0e81f86948b67c8a13c9356ad2b0e6f083c1fa2fcd0d51` |
+| 2 | `abbrev` | [ofFan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbackOfTerminalPublic.lean/declarations/offan.md) | 39 | `declaration-track:34201a582424f5ed426266341a43f3f6eeb9d77c7c3310591ecc9ba5eb3805a4` |
+| 3 | `def` | [isLimitOfFan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbackOfTerminalPublic.lean/declarations/islimitoffan.md) | 45 | `declaration-track:752d9cf63a23404f8022bda889ad69bca0698db4f457ef22e1e8076ea05ef380` |
+| 4 | `lemma` | [hasWidePullback_of_isTerminal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbackOfTerminalPublic.lean/declarations/haswidepullback-of-isterminal.md) | 55 | `result-track:1cc06566f5e5c7602d4a0833a0817b74c3749dab85bec37630d7e0f940cfa468` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

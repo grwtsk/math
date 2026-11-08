@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ApplicationAttempt01.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ApplicationAttempt01.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ApplicationAttempt01.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ApplicationAttempt01.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [original_proper_diagonal_eq_finite_rows](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ApplicationAttempt01.lean/declarations/original-proper-diagonal-eq-finite-rows.md) | 22 | `result-track:daa95226322daf3f1b4ff2e50942b81657d9eb09d52e544b3bb161da463300ae` |
-| 2 | `theorem` | [original_proper_diagonal_upper](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ApplicationAttempt01.lean/declarations/original-proper-diagonal-upper.md) | 49 | `result-track:e0f7425558f0f93164dbe9f81a6a5c856e26941a4695048b989917ead3c2c17c` |
-| 3 | `theorem` | [estimate_of_original_clipped_diagonal](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ApplicationAttempt01.lean/declarations/estimate-of-original-clipped-diagonal.md) | 57 | `result-track:acf6271f1d3e1cb0e30682b3ca1805ac8c3895612b47135386dcdea526d98a69` |
+| 1 | `theorem` | [original_proper_diagonal_eq_finite_rows](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ApplicationAttempt01.lean/declarations/original-proper-diagonal-eq-finite-rows.md) | 22 | `result-track:daa95226322daf3f1b4ff2e50942b81657d9eb09d52e544b3bb161da463300ae` |
+| 2 | `theorem` | [original_proper_diagonal_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ApplicationAttempt01.lean/declarations/original-proper-diagonal-upper.md) | 49 | `result-track:e0f7425558f0f93164dbe9f81a6a5c856e26941a4695048b989917ead3c2c17c` |
+| 3 | `theorem` | [estimate_of_original_clipped_diagonal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ApplicationAttempt01.lean/declarations/estimate-of-original-clipped-diagonal.md) | 57 | `result-track:acf6271f1d3e1cb0e30682b3ca1805ac8c3895612b47135386dcdea526d98a69` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/VariantsSourceEdition3.lean/index.md) · [Full source](../../../../MeasureAndIntegration/VariantsSourceEdition3.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/VariantsSourceEdition3.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/VariantsSourceEdition3.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -47,7 +47,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 ## Observed dependency providers
 
 - `Mathlib` — import line 9; external provider; requires a separately pinned dependency.
-- [`GRWTSK.Analysis.GreenKernel.UnitInterval`](../../../../ProbabilityTheoryAndStochasticProcesses/UnitInterval.lean/index.md) — import line 10; pinned internal source present.
+- [`GRWTSK.Analysis.GreenKernel.UnitInterval`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/UnitInterval.lean/index.md) — import line 10; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,18 +58,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [logarithm](../../../../MeasureAndIntegration/VariantsSourceEdition3.lean/declarations/logarithm.md) | 19 | `declaration-track:3c6336c32471d6beb2bd0fb176d73bbd9645d1596b7e401003372fd7dc2c5094` |
-| 2 | `def` | [logPrimitive](../../../../MeasureAndIntegration/VariantsSourceEdition3.lean/declarations/logprimitive.md) | 21 | `declaration-track:c34a20ac9f860c36bbd5babdb599e2d39bddc967d3c146283580ce4d16b4d24e` |
-| 3 | `def` | [greenBackground](../../../../MeasureAndIntegration/VariantsSourceEdition3.lean/declarations/greenbackground.md) | 23 | `declaration-track:c35876863bc7f8525826c4fc40cdf5854a3d6e34e06356bc34d629054b5aa581` |
-| 4 | `def` | [cellPrimitive](../../../../MeasureAndIntegration/VariantsSourceEdition3.lean/declarations/cellprimitive.md) | 25 | `declaration-track:eeb12f09dc87850abe03c63213b467c33bc92c5fa4df52ecaf8262112eb8d295` |
-| 5 | `theorem` | [logarithm_hasDerivAt](../../../../MeasureAndIntegration/VariantsSourceEdition3.lean/declarations/logarithm-hasderivat.md) | 28 | `result-track:2ac3f66c231a3bc021220fc3fc0e7632da68d7f4ec5ad5474e8ad4c35448c25c` |
-| 6 | `theorem` | [logPrimitive_hasDerivAt](../../../../MeasureAndIntegration/VariantsSourceEdition3.lean/declarations/logprimitive-hasderivat.md) | 33 | `result-track:8286e9301ccf28303a088689af63a078cb2ac18f99b583b16eeb30b019204553` |
-| 7 | `theorem` | [inverse_one_add_continuousOn](../../../../MeasureAndIntegration/VariantsSourceEdition3.lean/declarations/inverse-one-add-continuouson.md) | 44 | `result-track:d990ad681528597df94bbb697b0312020068356f3a0193119922380503522be0` |
-| 8 | `theorem` | [logarithm_continuousOn](../../../../MeasureAndIntegration/VariantsSourceEdition3.lean/declarations/logarithm-continuouson.md) | 50 | `result-track:8c72466a5bb729f1d1b4e8068ece8f32fac15b3f13693849bb8516d9ffa26682` |
-| 9 | `theorem` | [integral_inverse_one_add](../../../../MeasureAndIntegration/VariantsSourceEdition3.lean/declarations/integral-inverse-one-add.md) | 54 | `result-track:1d45aef2b5b6376848253a63b60cb54d5f137649c154a39ae88ddd7a33232a1b` |
-| 10 | `theorem` | [integral_logarithm](../../../../MeasureAndIntegration/VariantsSourceEdition3.lean/declarations/integral-logarithm.md) | 61 | `result-track:00b69bfbce8627c9bd095d15977b971bb30b7b6bbade0622bf89b79cc3b5d868` |
-| 11 | `theorem` | [cellPrimitive_hasDerivAt](../../../../MeasureAndIntegration/VariantsSourceEdition3.lean/declarations/cellprimitive-hasderivat.md) | 69 | `result-track:21678dc265669ffe8e8754cdecc0a7153da4fc91e76f1e266a4345dabdb271a3` |
-| 12 | `theorem` | [greenBackground_endpoints](../../../../MeasureAndIntegration/VariantsSourceEdition3.lean/declarations/greenbackground-endpoints.md) | 81 | `result-track:19939e0b1847aafa77c9d627665efc54708730cb53c914bab94681d978a91fb0` |
+| 1 | `def` | [logarithm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/VariantsSourceEdition3.lean/declarations/logarithm.md) | 19 | `declaration-track:3c6336c32471d6beb2bd0fb176d73bbd9645d1596b7e401003372fd7dc2c5094` |
+| 2 | `def` | [logPrimitive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/VariantsSourceEdition3.lean/declarations/logprimitive.md) | 21 | `declaration-track:c34a20ac9f860c36bbd5babdb599e2d39bddc967d3c146283580ce4d16b4d24e` |
+| 3 | `def` | [greenBackground](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/VariantsSourceEdition3.lean/declarations/greenbackground.md) | 23 | `declaration-track:c35876863bc7f8525826c4fc40cdf5854a3d6e34e06356bc34d629054b5aa581` |
+| 4 | `def` | [cellPrimitive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/VariantsSourceEdition3.lean/declarations/cellprimitive.md) | 25 | `declaration-track:eeb12f09dc87850abe03c63213b467c33bc92c5fa4df52ecaf8262112eb8d295` |
+| 5 | `theorem` | [logarithm_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/VariantsSourceEdition3.lean/declarations/logarithm-hasderivat.md) | 28 | `result-track:2ac3f66c231a3bc021220fc3fc0e7632da68d7f4ec5ad5474e8ad4c35448c25c` |
+| 6 | `theorem` | [logPrimitive_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/VariantsSourceEdition3.lean/declarations/logprimitive-hasderivat.md) | 33 | `result-track:8286e9301ccf28303a088689af63a078cb2ac18f99b583b16eeb30b019204553` |
+| 7 | `theorem` | [inverse_one_add_continuousOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/VariantsSourceEdition3.lean/declarations/inverse-one-add-continuouson.md) | 44 | `result-track:d990ad681528597df94bbb697b0312020068356f3a0193119922380503522be0` |
+| 8 | `theorem` | [logarithm_continuousOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/VariantsSourceEdition3.lean/declarations/logarithm-continuouson.md) | 50 | `result-track:8c72466a5bb729f1d1b4e8068ece8f32fac15b3f13693849bb8516d9ffa26682` |
+| 9 | `theorem` | [integral_inverse_one_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/VariantsSourceEdition3.lean/declarations/integral-inverse-one-add.md) | 54 | `result-track:1d45aef2b5b6376848253a63b60cb54d5f137649c154a39ae88ddd7a33232a1b` |
+| 10 | `theorem` | [integral_logarithm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/VariantsSourceEdition3.lean/declarations/integral-logarithm.md) | 61 | `result-track:00b69bfbce8627c9bd095d15977b971bb30b7b6bbade0622bf89b79cc3b5d868` |
+| 11 | `theorem` | [cellPrimitive_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/VariantsSourceEdition3.lean/declarations/cellprimitive-hasderivat.md) | 69 | `result-track:21678dc265669ffe8e8754cdecc0a7153da4fc91e76f1e266a4345dabdb271a3` |
+| 12 | `theorem` | [greenBackground_endpoints](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/VariantsSourceEdition3.lean/declarations/greenbackground-endpoints.md) | 81 | `result-track:19939e0b1847aafa77c9d627665efc54708730cb53c914bab94681d978a91fb0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

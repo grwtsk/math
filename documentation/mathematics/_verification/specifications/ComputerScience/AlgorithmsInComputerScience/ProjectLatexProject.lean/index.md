@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ProjectLatexProject.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ProjectLatexProject.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProjectLatexProject.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProjectLatexProject.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [LatexProject](../../../../../ComputerScience/AlgorithmsInComputerScience/ProjectLatexProject.lean/declarations/latexproject.md) | 18 | `declaration-track:5a64bb5a475d9de010669765fce853faf6c42e58ded0405a4914e04d658ff6d4` |
-| 2 | `def` | [LatexProject.hasMain](../../../../../ComputerScience/AlgorithmsInComputerScience/ProjectLatexProject.lean/declarations/latexproject-hasmain.md) | 26 | `declaration-track:8cecd06d6a38634c1bfed5356e3c4902923abd91e0cdd084d485a5d5b64b0710` |
-| 3 | `theorem` | [latexProject_main](../../../../../ComputerScience/AlgorithmsInComputerScience/ProjectLatexProject.lean/declarations/latexproject-main.md) | 29 | `result-track:14dc432fb73af7e85f0ade660b839e6dfa138f2785842a48c01b22d97c99df1b` |
+| 1 | `structure` | [LatexProject](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProjectLatexProject.lean/declarations/latexproject.md) | 18 | `declaration-track:5a64bb5a475d9de010669765fce853faf6c42e58ded0405a4914e04d658ff6d4` |
+| 2 | `def` | [LatexProject.hasMain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProjectLatexProject.lean/declarations/latexproject-hasmain.md) | 26 | `declaration-track:8cecd06d6a38634c1bfed5356e3c4902923abd91e0cdd084d485a5d5b64b0710` |
+| 3 | `theorem` | [latexProject_main](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ProjectLatexProject.lean/declarations/latexproject-main.md) | 29 | `result-track:14dc432fb73af7e85f0ade660b839e6dfa138f2785842a48c01b22d97c99df1b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

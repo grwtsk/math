@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Unique.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Unique.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Unique.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Unique.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [uniqueEquiv](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Unique.lean/declarations/uniqueequiv.md) | 28 | `declaration-track:4341efbe90492ba08d32dcd654a334a9ce6c784307929023ba7bfe829f87e812` |
-| 2 | `def` | [uniqueAddEquiv](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Unique.lean/declarations/uniqueaddequiv.md) | 36 | `declaration-track:8d265ae582062dd986f610df42b3201da8b8a3d6e6e9bb04aeadb20cdee2966f` |
-| 3 | `def` | [uniqueLinearEquiv](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Unique.lean/declarations/uniquelinearequiv.md) | 42 | `declaration-track:3b7e0d18ce5b36f3c21addec3df58d9e12dee9e6dc60ed1bbafe2db76966db99` |
-| 4 | `def` | [uniqueRingEquiv](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Unique.lean/declarations/uniqueringequiv.md) | 48 | `declaration-track:a75cadb97dfdae87cde2db744af26cab7ffae6177c3f086ba510cc05af6ecbfe` |
-| 5 | `def` | [uniqueAlgEquiv](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Unique.lean/declarations/uniquealgequiv.md) | 54 | `declaration-track:77e80d6cd8f5285397e80deb4f2c66d44b6007d0c61b5a188184e09cff0ea136` |
+| 1 | `def` | [uniqueEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Unique.lean/declarations/uniqueequiv.md) | 28 | `declaration-track:4341efbe90492ba08d32dcd654a334a9ce6c784307929023ba7bfe829f87e812` |
+| 2 | `def` | [uniqueAddEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Unique.lean/declarations/uniqueaddequiv.md) | 36 | `declaration-track:8d265ae582062dd986f610df42b3201da8b8a3d6e6e9bb04aeadb20cdee2966f` |
+| 3 | `def` | [uniqueLinearEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Unique.lean/declarations/uniquelinearequiv.md) | 42 | `declaration-track:3b7e0d18ce5b36f3c21addec3df58d9e12dee9e6dc60ed1bbafe2db76966db99` |
+| 4 | `def` | [uniqueRingEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Unique.lean/declarations/uniqueringequiv.md) | 48 | `declaration-track:a75cadb97dfdae87cde2db744af26cab7ffae6177c3f086ba510cc05af6ecbfe` |
+| 5 | `def` | [uniqueAlgEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Unique.lean/declarations/uniquealgequiv.md) | 54 | `declaration-track:77e80d6cd8f5285397e80deb4f2c66d44b6007d0c61b5a188184e09cff0ea136` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

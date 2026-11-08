@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/GlyphPatchReconstruction.lean/index.md) · [Full source](../../../../RealFunctions/GlyphPatchReconstruction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/GlyphPatchReconstruction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/GlyphPatchReconstruction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Geometry.QuadraticBezierContact`](../../../../RealFunctions/QuadraticBezierContact.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Geometry.QuadraticBezierContact`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/QuadraticBezierContact.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Algebra.Order.BigOperators.Group.Finset` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Budget](../../../../RealFunctions/GlyphPatchReconstruction.lean/declarations/budget.md) | 28 | `declaration-track:ca72c8f0ff43ff4b8c48e00c15dc9c747792042f79dc91d713e72ffd462b2ce4` |
-| 2 | `def` | [Budget.total](../../../../RealFunctions/GlyphPatchReconstruction.lean/declarations/budget-total.md) | 35 | `declaration-track:68d7561d497a4b81a9179c0803abd26fc027dc2b363555647c4ffe1f76995d67` |
-| 3 | `theorem` | [signed_output_error_bound](../../../../RealFunctions/GlyphPatchReconstruction.lean/declarations/signed-output-error-bound.md) | 42 | `result-track:36bd3baf37f74fd6a2854eca253b44ffca0bf679f8b2377402e40d39576b5e88` |
+| 1 | `structure` | [Budget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/GlyphPatchReconstruction.lean/declarations/budget.md) | 28 | `declaration-track:ca72c8f0ff43ff4b8c48e00c15dc9c747792042f79dc91d713e72ffd462b2ce4` |
+| 2 | `def` | [Budget.total](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/GlyphPatchReconstruction.lean/declarations/budget-total.md) | 35 | `declaration-track:68d7561d497a4b81a9179c0803abd26fc027dc2b363555647c4ffe1f76995d67` |
+| 3 | `theorem` | [signed_output_error_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/GlyphPatchReconstruction.lean/declarations/signed-output-error-bound.md) | 42 | `result-track:36bd3baf37f74fd6a2854eca253b44ffca0bf679f8b2377402e40d39576b5e88` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HeytingPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HeytingPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HeytingPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HeytingPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HeytingPublic.lean/declarations/instance-source-edition-2.md) | 19 | `declaration-track:c8c86919ff9bf617554e033c6593f6613f89654511b113f84ac1b01f2859aae2` |
-| 2 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HeytingPublic.lean/declarations/instance.md) | 38 | `declaration-track:4cf36a42fa175c50aa5f9251e92349ca6b00b43ef3ad62d5db0db5f3cb3cd6f4` |
-| 3 | `def` | [himp](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HeytingPublic.lean/declarations/himp.md) | 54 | `declaration-track:372c71b63329359979985067bc89e6d887ef272c534f4f34d80069dc7b21001b` |
-| 4 | `theorem` | [le_himp](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HeytingPublic.lean/declarations/le-himp.md) | 60 | `result-track:2f957bee676ed79b626970b730586f01f654e09c2ca661d71e2bdbee98e6f615` |
-| 5 | `theorem` | [meet_himp_le](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HeytingPublic.lean/declarations/meet-himp-le.md) | 64 | `result-track:dfa7fcfa577a39e2c8ad0647b2aa9ecd64990ab00974012e6e841c5424777026` |
-| 6 | `theorem` | [himp_prop_eq_imp](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HeytingPublic.lean/declarations/himp-prop-eq-imp.md) | 67 | `result-track:27591db4dfb9734d7d4de19ea45bf7482202ad5d7ea26c60e2e5cc2d3d449c85` |
-| 7 | `theorem` | [himp_apply](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HeytingPublic.lean/declarations/himp-apply.md) | 88 | `result-track:ba82ca3a63d92bebd4bfa626216e36002f0040c52ec0c43cc34e996e8c047cac` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HeytingPublic.lean/declarations/instance-source-edition-2.md) | 19 | `declaration-track:c8c86919ff9bf617554e033c6593f6613f89654511b113f84ac1b01f2859aae2` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HeytingPublic.lean/declarations/instance.md) | 38 | `declaration-track:4cf36a42fa175c50aa5f9251e92349ca6b00b43ef3ad62d5db0db5f3cb3cd6f4` |
+| 3 | `def` | [himp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HeytingPublic.lean/declarations/himp.md) | 54 | `declaration-track:372c71b63329359979985067bc89e6d887ef272c534f4f34d80069dc7b21001b` |
+| 4 | `theorem` | [le_himp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HeytingPublic.lean/declarations/le-himp.md) | 60 | `result-track:2f957bee676ed79b626970b730586f01f654e09c2ca661d71e2bdbee98e6f615` |
+| 5 | `theorem` | [meet_himp_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HeytingPublic.lean/declarations/meet-himp-le.md) | 64 | `result-track:dfa7fcfa577a39e2c8ad0647b2aa9ecd64990ab00974012e6e841c5424777026` |
+| 6 | `theorem` | [himp_prop_eq_imp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HeytingPublic.lean/declarations/himp-prop-eq-imp.md) | 67 | `result-track:27591db4dfb9734d7d4de19ea45bf7482202ad5d7ea26c60e2e5cc2d3d449c85` |
+| 7 | `theorem` | [himp_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/HeytingPublic.lean/declarations/himp-apply.md) | 88 | `result-track:ba82ca3a63d92bebd4bfa626216e36002f0040c52ec0c43cc34e996e8c047cac` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatEquivNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatEquivNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/PNatEquivNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/PNatEquivNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [PNat Equiv Namespaced](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatEquivNamespaced.lean/declarations/root-grwtsk-foundationslogicandtypetheory-mathematicallogic-rootequivpna.md) | 23 | `declaration-track:474b77f6384fde1f4707ab8cf9472047018c8f643777720bea71ef01a6239111` |
+| 1 | `def` | [PNat Equiv Namespaced](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/PNatEquivNamespaced.lean/declarations/root-grwtsk-foundationslogicandtypetheory-mathematicallogic-rootequivpna.md) | 23 | `declaration-track:474b77f6384fde1f4707ab8cf9472047018c8f643777720bea71ef01a6239111` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

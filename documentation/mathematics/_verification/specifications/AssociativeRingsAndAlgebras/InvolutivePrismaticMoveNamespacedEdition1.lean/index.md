@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/InvolutivePrismaticMoveNamespacedEdition1.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/InvolutivePrismaticMoveNamespacedEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/InvolutivePrismaticMoveNamespacedEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/InvolutivePrismaticMoveNamespacedEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,13 +60,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [IntegralDeterminantInterpretation](../../../../AssociativeRingsAndAlgebras/InvolutivePrismaticMoveNamespacedEdition1.lean/declarations/integraldeterminantinterpretation.md) | 31 | `declaration-track:48273b0c8a3353a9402d7c32a1fa6f64242f6a044d570318dfe4fde50056e5bb` |
-| 2 | `structure` | [IntegralDeterminantApplicability](../../../../AssociativeRingsAndAlgebras/InvolutivePrismaticMoveNamespacedEdition1.lean/declarations/integraldeterminantapplicability.md) | 38 | `declaration-track:7b648dbb86ab3c7a7fac95bd30be2af4be6c47c3a10a247bfd8ae8b20aead8d6` |
-| 3 | `structure` | [InvolutivePrismaticMove](../../../../AssociativeRingsAndAlgebras/InvolutivePrismaticMoveNamespacedEdition1.lean/declarations/involutiveprismaticmove.md) | 54 | `declaration-track:228d5896a2893abe88afdcffe9b569d2a678e685def998afe5ddbe003c13b136` |
-| 4 | `theorem` | [moved_vertex_in_locus](../../../../AssociativeRingsAndAlgebras/InvolutivePrismaticMoveNamespacedEdition1.lean/declarations/moved-vertex-in-locus.md) | 88 | `result-track:5a149e082d73a25f65acba21ddcc273b699d3eb3d92c24f86c2426c90987da11` |
-| 5 | `theorem` | [matrix_action_agrees](../../../../AssociativeRingsAndAlgebras/InvolutivePrismaticMoveNamespacedEdition1.lean/declarations/matrix-action-agrees.md) | 97 | `result-track:37308a9ff59eb48cdba9c25179d7650b4ae955109558dd8a32f6b2b459eb648c` |
-| 6 | `theorem` | [determinant_eq_one_or_neg_one](../../../../AssociativeRingsAndAlgebras/InvolutivePrismaticMoveNamespacedEdition1.lean/declarations/determinant-eq-one-or-neg-one.md) | 103 | `result-track:576cc6b021a58c2bab312fe6e9265174e7edace8f09644d7decda7aefa4d7bf9` |
-| 7 | `theorem` | [terrain_conditions](../../../../AssociativeRingsAndAlgebras/InvolutivePrismaticMoveNamespacedEdition1.lean/declarations/terrain-conditions.md) | 110 | `result-track:34c7534096153df32519375ee3762d76911607fe477db91a269bfcc14338bc3d` |
+| 1 | `inductive` | [IntegralDeterminantInterpretation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/InvolutivePrismaticMoveNamespacedEdition1.lean/declarations/integraldeterminantinterpretation.md) | 31 | `declaration-track:48273b0c8a3353a9402d7c32a1fa6f64242f6a044d570318dfe4fde50056e5bb` |
+| 2 | `structure` | [IntegralDeterminantApplicability](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/InvolutivePrismaticMoveNamespacedEdition1.lean/declarations/integraldeterminantapplicability.md) | 38 | `declaration-track:7b648dbb86ab3c7a7fac95bd30be2af4be6c47c3a10a247bfd8ae8b20aead8d6` |
+| 3 | `structure` | [InvolutivePrismaticMove](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/InvolutivePrismaticMoveNamespacedEdition1.lean/declarations/involutiveprismaticmove.md) | 54 | `declaration-track:228d5896a2893abe88afdcffe9b569d2a678e685def998afe5ddbe003c13b136` |
+| 4 | `theorem` | [moved_vertex_in_locus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/InvolutivePrismaticMoveNamespacedEdition1.lean/declarations/moved-vertex-in-locus.md) | 88 | `result-track:5a149e082d73a25f65acba21ddcc273b699d3eb3d92c24f86c2426c90987da11` |
+| 5 | `theorem` | [matrix_action_agrees](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/InvolutivePrismaticMoveNamespacedEdition1.lean/declarations/matrix-action-agrees.md) | 97 | `result-track:37308a9ff59eb48cdba9c25179d7650b4ae955109558dd8a32f6b2b459eb648c` |
+| 6 | `theorem` | [determinant_eq_one_or_neg_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/InvolutivePrismaticMoveNamespacedEdition1.lean/declarations/determinant-eq-one-or-neg-one.md) | 103 | `result-track:576cc6b021a58c2bab312fe6e9265174e7edace8f09644d7decda7aefa4d7bf9` |
+| 7 | `theorem` | [terrain_conditions](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/InvolutivePrismaticMoveNamespacedEdition1.lean/declarations/terrain-conditions.md) | 110 | `result-track:34c7534096153df32519375ee3762d76911607fe477db91a269bfcc14338bc3d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

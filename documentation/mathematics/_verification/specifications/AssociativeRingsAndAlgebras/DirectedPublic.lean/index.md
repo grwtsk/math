@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/DirectedPublic.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/DirectedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/DirectedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/DirectedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [coe_iSup_of_directed](../../../../AssociativeRingsAndAlgebras/DirectedPublic.lean/declarations/coe-isup-of-directed.md) | 32 | `result-track:2e64528769a17277cdaba67736a2e0e23fc531622cb28a1f10d61ff3401217e5` |
-| 2 | `theorem` | [isMulCommutative_iSup](../../../../AssociativeRingsAndAlgebras/DirectedPublic.lean/declarations/ismulcommutative-isup.md) | 41 | `result-track:b25f67e4a4959530dc65cc1b40a8901e18fc5a17d61d12f4d8aaeb29340f294d` |
-| 3 | `instance` | [instIsMulCommutative_iSup](../../../../AssociativeRingsAndAlgebras/DirectedPublic.lean/declarations/instismulcommutative-isup.md) | 47 | `declaration-track:dac4baec52e6635da0d911cc2684c3076253232df3447927fa92eaaab23eaf3b` |
-| 4 | `def` | [iSupLift](../../../../AssociativeRingsAndAlgebras/DirectedPublic.lean/declarations/isuplift.md) | 56 | `declaration-track:927f80ecb302dfede056698df999d8d92e0baf6c533f39e9c37d03d239e7a674` |
-| 5 | `theorem` | [iSupLift_inclusion](../../../../AssociativeRingsAndAlgebras/DirectedPublic.lean/declarations/isuplift-inclusion.md) | 92 | `result-track:313f68d7cd28bfc8c68c5130869563b9c6599ef26e46858adc4820f790c5c025` |
-| 6 | `theorem` | [iSupLift_comp_inclusion](../../../../AssociativeRingsAndAlgebras/DirectedPublic.lean/declarations/isuplift-comp-inclusion.md) | 101 | `result-track:dd2054baf5464fa047487a57c8e0499050bd1340ea11f7afcfb4dc44ca64c62b` |
-| 7 | `theorem` | [iSupLift_mk](../../../../AssociativeRingsAndAlgebras/DirectedPublic.lean/declarations/isuplift-mk.md) | 107 | `result-track:f58e2c441583d95ef915b5273bcd15a5d1f843c338a8b681606427fa90264898` |
-| 8 | `theorem` | [iSupLift_of_mem](../../../../AssociativeRingsAndAlgebras/DirectedPublic.lean/declarations/isuplift-of-mem.md) | 114 | `result-track:e1b3b715824fdc68a7fe89f956dc3d989fb2fb9516f3230cd446c3b8afcfd3a4` |
+| 1 | `theorem` | [coe_iSup_of_directed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/DirectedPublic.lean/declarations/coe-isup-of-directed.md) | 32 | `result-track:2e64528769a17277cdaba67736a2e0e23fc531622cb28a1f10d61ff3401217e5` |
+| 2 | `theorem` | [isMulCommutative_iSup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/DirectedPublic.lean/declarations/ismulcommutative-isup.md) | 41 | `result-track:b25f67e4a4959530dc65cc1b40a8901e18fc5a17d61d12f4d8aaeb29340f294d` |
+| 3 | `instance` | [instIsMulCommutative_iSup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/DirectedPublic.lean/declarations/instismulcommutative-isup.md) | 47 | `declaration-track:dac4baec52e6635da0d911cc2684c3076253232df3447927fa92eaaab23eaf3b` |
+| 4 | `def` | [iSupLift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/DirectedPublic.lean/declarations/isuplift.md) | 56 | `declaration-track:927f80ecb302dfede056698df999d8d92e0baf6c533f39e9c37d03d239e7a674` |
+| 5 | `theorem` | [iSupLift_inclusion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/DirectedPublic.lean/declarations/isuplift-inclusion.md) | 92 | `result-track:313f68d7cd28bfc8c68c5130869563b9c6599ef26e46858adc4820f790c5c025` |
+| 6 | `theorem` | [iSupLift_comp_inclusion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/DirectedPublic.lean/declarations/isuplift-comp-inclusion.md) | 101 | `result-track:dd2054baf5464fa047487a57c8e0499050bd1340ea11f7afcfb4dc44ca64c62b` |
+| 7 | `theorem` | [iSupLift_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/DirectedPublic.lean/declarations/isuplift-mk.md) | 107 | `result-track:f58e2c441583d95ef915b5273bcd15a5d1f843c338a8b681606427fa90264898` |
+| 8 | `theorem` | [iSupLift_of_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/DirectedPublic.lean/declarations/isuplift-of-mem.md) | 114 | `result-track:e1b3b715824fdc68a7fe89f956dc3d989fb2fb9516f3230cd446c3b8afcfd3a4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/AlgebraicTopologyNerve.lean/index.md) · [Full source](../../../../AlgebraicTopology/AlgebraicTopologyNerve.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/AlgebraicTopologyNerve.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/AlgebraicTopologyNerve.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [nerve](../../../../AlgebraicTopology/AlgebraicTopologyNerve.lean/declarations/nerve.md) | 31 | `declaration-track:bf342efe262e65e5eded0e51e1c2ca8f59c7363dd85c42cf20f0e130087d7508` |
-| 2 | `instance` | [(anonymous)](../../../../AlgebraicTopology/AlgebraicTopologyNerve.lean/declarations/instance.md) | 36 | `declaration-track:5a2ed4fbecea074e5475adf7f5916311036bbef559c8458d82aeaefd0b0f2a8e` |
-| 3 | `def` | [nerveFunctor](../../../../AlgebraicTopology/AlgebraicTopologyNerve.lean/declarations/nervefunctor.md) | 41 | `declaration-track:b1c5afe5d945d3f399848191aa6d0c5cd59131a08ffb41e61517e56cfa6b0093` |
+| 1 | `def` | [nerve](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/AlgebraicTopologyNerve.lean/declarations/nerve.md) | 31 | `declaration-track:bf342efe262e65e5eded0e51e1c2ca8f59c7363dd85c42cf20f0e130087d7508` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/AlgebraicTopologyNerve.lean/declarations/instance.md) | 36 | `declaration-track:5a2ed4fbecea074e5475adf7f5916311036bbef559c8458d82aeaefd0b0f2a8e` |
+| 3 | `def` | [nerveFunctor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/AlgebraicTopologyNerve.lean/declarations/nervefunctor.md) | 41 | `declaration-track:b1c5afe5d945d3f399848191aa6d0c5cd59131a08ffb41e61517e56cfa6b0093` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

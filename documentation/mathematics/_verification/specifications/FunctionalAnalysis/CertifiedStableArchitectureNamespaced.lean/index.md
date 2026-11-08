@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/CertifiedStableArchitectureNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/CertifiedStableArchitectureNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CertifiedStableArchitectureNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CertifiedStableArchitectureNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -63,15 +63,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CertifiedStableArchitecture](../../../../FunctionalAnalysis/CertifiedStableArchitectureNamespaced.lean/declarations/certifiedstablearchitecture.md) | 38 | `declaration-track:184f3027bb09bdc94e271c67b48809590286ecd0d0ce7f65caa81b20a89dca12` |
-| 2 | `theorem` | [locallyAsymptoticallyStable](../../../../FunctionalAnalysis/CertifiedStableArchitectureNamespaced.lean/declarations/locallyasymptoticallystable.md) | 108 | `result-track:6dfcd015e8c450a9acf848cde8ca451409cb851a92159e09c1cd57e6e9069e96` |
-| 3 | `theorem` | [pairwiseSeparated](../../../../FunctionalAnalysis/CertifiedStableArchitectureNamespaced.lean/declarations/pairwiseseparated.md) | 118 | `result-track:7199a94df3a0b836cd75f20f5bf5d3a679b9152533eb32bc51ebf78eb648e454` |
-| 4 | `theorem` | [realizationBound](../../../../FunctionalAnalysis/CertifiedStableArchitectureNamespaced.lean/declarations/realizationbound.md) | 129 | `result-track:d2002b523edb370034d1f8ee6e2fa28c802c29392c665f710e228ff9b3935d3a` |
-| 5 | `theorem` | [semanticRelationRealizesAsZero](../../../../FunctionalAnalysis/CertifiedStableArchitectureNamespaced.lean/declarations/semanticrelationrealizesaszero.md) | 137 | `result-track:99c4caefd73227674101f85fef4444a29c856036a1e0759d40da37d31d3e8980` |
-| 6 | `theorem` | [admittedAnalogyPropertySound](../../../../FunctionalAnalysis/CertifiedStableArchitectureNamespaced.lean/declarations/admittedanalogypropertysound.md) | 149 | `result-track:ea4dfaa3232db9528983a54c617343ae660de44a4b1900dd42063e4b4ecfb80a` |
-| 7 | `theorem` | [allCertificatesUsable](../../../../FunctionalAnalysis/CertifiedStableArchitectureNamespaced.lean/declarations/allcertificatesusable.md) | 167 | `result-track:146606bf56fcb3026ade183d1195aecced02489b658713425b6457559e25be70` |
-| 8 | `theorem` | [perturbedFixedPointDistanceBound](../../../../FunctionalAnalysis/CertifiedStableArchitectureNamespaced.lean/declarations/perturbedfixedpointdistancebound.md) | 186 | `result-track:6a08214d65ced80a9c3d14a3d4e798bf7bc7b346420d987e46d1ac5b19cc9d6f` |
-| 9 | `theorem` | [sound](../../../../FunctionalAnalysis/CertifiedStableArchitectureNamespaced.lean/declarations/sound.md) | 218 | `result-track:272846fbd016a2f9a11b57d912f04a9a5164a89297e21eb62fd044c369727e0d` |
+| 1 | `structure` | [CertifiedStableArchitecture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CertifiedStableArchitectureNamespaced.lean/declarations/certifiedstablearchitecture.md) | 38 | `declaration-track:184f3027bb09bdc94e271c67b48809590286ecd0d0ce7f65caa81b20a89dca12` |
+| 2 | `theorem` | [locallyAsymptoticallyStable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CertifiedStableArchitectureNamespaced.lean/declarations/locallyasymptoticallystable.md) | 108 | `result-track:6dfcd015e8c450a9acf848cde8ca451409cb851a92159e09c1cd57e6e9069e96` |
+| 3 | `theorem` | [pairwiseSeparated](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CertifiedStableArchitectureNamespaced.lean/declarations/pairwiseseparated.md) | 118 | `result-track:7199a94df3a0b836cd75f20f5bf5d3a679b9152533eb32bc51ebf78eb648e454` |
+| 4 | `theorem` | [realizationBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CertifiedStableArchitectureNamespaced.lean/declarations/realizationbound.md) | 129 | `result-track:d2002b523edb370034d1f8ee6e2fa28c802c29392c665f710e228ff9b3935d3a` |
+| 5 | `theorem` | [semanticRelationRealizesAsZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CertifiedStableArchitectureNamespaced.lean/declarations/semanticrelationrealizesaszero.md) | 137 | `result-track:99c4caefd73227674101f85fef4444a29c856036a1e0759d40da37d31d3e8980` |
+| 6 | `theorem` | [admittedAnalogyPropertySound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CertifiedStableArchitectureNamespaced.lean/declarations/admittedanalogypropertysound.md) | 149 | `result-track:ea4dfaa3232db9528983a54c617343ae660de44a4b1900dd42063e4b4ecfb80a` |
+| 7 | `theorem` | [allCertificatesUsable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CertifiedStableArchitectureNamespaced.lean/declarations/allcertificatesusable.md) | 167 | `result-track:146606bf56fcb3026ade183d1195aecced02489b658713425b6457559e25be70` |
+| 8 | `theorem` | [perturbedFixedPointDistanceBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CertifiedStableArchitectureNamespaced.lean/declarations/perturbedfixedpointdistancebound.md) | 186 | `result-track:6a08214d65ced80a9c3d14a3d4e798bf7bc7b346420d987e46d1ac5b19cc9d6f` |
+| 9 | `theorem` | [sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CertifiedStableArchitectureNamespaced.lean/declarations/sound.md) | 218 | `result-track:272846fbd016a2f9a11b57d912f04a9a5164a89297e21eb62fd044c369727e0d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

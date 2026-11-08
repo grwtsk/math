@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualJointCriticalRelativeReconstructionNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualJointCriticalRelativeReconstructionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualJointCriticalRelativeReconstructionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualJointCriticalRelativeReconstructionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actualCriticalRelative_joint_readout_abs_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualJointCriticalRelativeReconstructionNamespaced.lean/declarations/actualcriticalrelative-joint-readout-abs-le.md) | 29 | `result-track:9bdf449082e18ffcd0faf3a37a77d0be93ce205fe66eefbc6d9a4ca20cadb64a` |
-| 2 | `theorem` | [actualCriticalRelative_joint_readout_tendsto_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualJointCriticalRelativeReconstructionNamespaced.lean/declarations/actualcriticalrelative-joint-readout-tendsto-zero.md) | 44 | `result-track:266ac251cc68fcbbfd479478a3ba23a189c93da318e4ecfe287b0abf7711dee1` |
+| 1 | `theorem` | [actualCriticalRelative_joint_readout_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualJointCriticalRelativeReconstructionNamespaced.lean/declarations/actualcriticalrelative-joint-readout-abs-le.md) | 29 | `result-track:9bdf449082e18ffcd0faf3a37a77d0be93ce205fe66eefbc6d9a4ca20cadb64a` |
+| 2 | `theorem` | [actualCriticalRelative_joint_readout_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualJointCriticalRelativeReconstructionNamespaced.lean/declarations/actualcriticalrelative-joint-readout-tendsto-zero.md) | 44 | `result-track:266ac251cc68fcbbfd479478a3ba23a189c93da318e4ecfe287b0abf7711dee1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

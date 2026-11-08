@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceActualFarPeriodicBudget.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceActualFarPeriodicBudget.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualFarPeriodicBudget.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualFarPeriodicBudget.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [physical_decay_hasDerivAt](../../../../MeasureAndIntegration/SourceActualFarPeriodicBudget.lean/declarations/physical-decay-hasderivat.md) | 22 | `result-track:1e6229f1515d686276799b05c9193ada0dc5b864eea5c5edfb40cf7a4acd7a98` |
-| 2 | `theorem` | [physical_decay_integral](../../../../MeasureAndIntegration/SourceActualFarPeriodicBudget.lean/declarations/physical-decay-integral.md) | 38 | `result-track:a0fcf23394d9a55eb0b54a3d65ed600077b7efe893c2c360ef0d34399e05f7c4` |
-| 3 | `theorem` | [physical_decay_integral_le](../../../../MeasureAndIntegration/SourceActualFarPeriodicBudget.lean/declarations/physical-decay-integral-le.md) | 54 | `result-track:a6d74fa6facf074fb3fa36c13cbf4e0e2a59d16dd0f394d442f499c309d34bad` |
-| 4 | `def` | [actualPhysicalPeriodicPrefixRow](../../../../MeasureAndIntegration/SourceActualFarPeriodicBudget.lean/declarations/actualphysicalperiodicprefixrow.md) | 61 | `declaration-track:e570d65161a2d5ccd1e642f0d4db3dee94efd7c4cae9ccc42f7d01a2f6b4df18` |
-| 5 | `theorem` | [actualPhysicalPeriodicPrefixRow_abs_le](../../../../MeasureAndIntegration/SourceActualFarPeriodicBudget.lean/declarations/actualphysicalperiodicprefixrow-abs-le.md) | 68 | `result-track:75f33c485b3c2c437dd125e191326f9e0655067916d961cd9760bac95b856a5a` |
-| 6 | `theorem` | [actualPhysicalPeriodicPrefixRow_zero_right](../../../../MeasureAndIntegration/SourceActualFarPeriodicBudget.lean/declarations/actualphysicalperiodicprefixrow-zero-right.md) | 140 | `result-track:b0bf591e6d2e5ebe5c1ccbe80ab2820cc0250c1094c26f5d87ecafc2f04aaeb8` |
-| 7 | `theorem` | [actualPhysicalPeriodicPrefixRow_intervalIntegrable](../../../../MeasureAndIntegration/SourceActualFarPeriodicBudget.lean/declarations/actualphysicalperiodicprefixrow-intervalintegrable.md) | 155 | `result-track:705e6d75ce99c117369926d0d53269881949e9f3e5fde2d5c8766a2c7d780eae` |
-| 8 | `theorem` | [actualPhysicalPeriodicPrefixRow_eq_log](../../../../MeasureAndIntegration/SourceActualFarPeriodicBudget.lean/declarations/actualphysicalperiodicprefixrow-eq-log.md) | 178 | `result-track:caf0028639b42343865f154c3fd02ab010bd458fb1d96a911cabf6f4bfa3a765` |
+| 1 | `theorem` | [physical_decay_hasDerivAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualFarPeriodicBudget.lean/declarations/physical-decay-hasderivat.md) | 22 | `result-track:1e6229f1515d686276799b05c9193ada0dc5b864eea5c5edfb40cf7a4acd7a98` |
+| 2 | `theorem` | [physical_decay_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualFarPeriodicBudget.lean/declarations/physical-decay-integral.md) | 38 | `result-track:a0fcf23394d9a55eb0b54a3d65ed600077b7efe893c2c360ef0d34399e05f7c4` |
+| 3 | `theorem` | [physical_decay_integral_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualFarPeriodicBudget.lean/declarations/physical-decay-integral-le.md) | 54 | `result-track:a6d74fa6facf074fb3fa36c13cbf4e0e2a59d16dd0f394d442f499c309d34bad` |
+| 4 | `def` | [actualPhysicalPeriodicPrefixRow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualFarPeriodicBudget.lean/declarations/actualphysicalperiodicprefixrow.md) | 61 | `declaration-track:e570d65161a2d5ccd1e642f0d4db3dee94efd7c4cae9ccc42f7d01a2f6b4df18` |
+| 5 | `theorem` | [actualPhysicalPeriodicPrefixRow_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualFarPeriodicBudget.lean/declarations/actualphysicalperiodicprefixrow-abs-le.md) | 68 | `result-track:75f33c485b3c2c437dd125e191326f9e0655067916d961cd9760bac95b856a5a` |
+| 6 | `theorem` | [actualPhysicalPeriodicPrefixRow_zero_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualFarPeriodicBudget.lean/declarations/actualphysicalperiodicprefixrow-zero-right.md) | 140 | `result-track:b0bf591e6d2e5ebe5c1ccbe80ab2820cc0250c1094c26f5d87ecafc2f04aaeb8` |
+| 7 | `theorem` | [actualPhysicalPeriodicPrefixRow_intervalIntegrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualFarPeriodicBudget.lean/declarations/actualphysicalperiodicprefixrow-intervalintegrable.md) | 155 | `result-track:705e6d75ce99c117369926d0d53269881949e9f3e5fde2d5c8766a2c7d780eae` |
+| 8 | `theorem` | [actualPhysicalPeriodicPrefixRow_eq_log](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualFarPeriodicBudget.lean/declarations/actualphysicalperiodicprefixrow-eq-log.md) | 178 | `result-track:caf0028639b42343865f154c3fd02ab010bd458fb1d96a911cabf6f4bfa3a765` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

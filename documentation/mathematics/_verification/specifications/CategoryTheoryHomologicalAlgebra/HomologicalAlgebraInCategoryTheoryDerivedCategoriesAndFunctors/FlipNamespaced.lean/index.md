@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/FlipNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/FlipNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/FlipNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/FlipNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [flipObj](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/FlipNamespaced.lean/declarations/flipobj.md) | 44 | `declaration-track:adca52d8dfd41308b4ec0bdfd2fe2dcbf010e5a7e62ff401a0fac232e13938d4` |
-| 2 | `def` | [flip](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/FlipNamespaced.lean/declarations/flip.md) | 64 | `declaration-track:3d263aaa9ab39c920979957baf70096b1b840cb8fafb821d6b88e76c67cd0e17` |
-| 3 | `def` | [flipEquivalenceUnitIso](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/FlipNamespaced.lean/declarations/flipequivalenceunitiso.md) | 76 | `declaration-track:223795839b56b308db40a72095c5419d38118a33463e7fdab1d820623ddca143` |
-| 4 | `def` | [flipEquivalenceCounitIso](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/FlipNamespaced.lean/declarations/flipequivalencecounitiso.md) | 100 | `declaration-track:420b2bd16fc82c00d303ccecae6009de752dc3af199ede57153772ca93b272a0` |
-| 5 | `def` | [flipEquivalence](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/FlipNamespaced.lean/declarations/flipequivalence.md) | 124 | `declaration-track:41a359344c3c856f4d464a693380abbfca4e9bc0292b67a77b57394f2f83e4e2` |
+| 1 | `def` | [flipObj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/FlipNamespaced.lean/declarations/flipobj.md) | 44 | `declaration-track:adca52d8dfd41308b4ec0bdfd2fe2dcbf010e5a7e62ff401a0fac232e13938d4` |
+| 2 | `def` | [flip](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/FlipNamespaced.lean/declarations/flip.md) | 64 | `declaration-track:3d263aaa9ab39c920979957baf70096b1b840cb8fafb821d6b88e76c67cd0e17` |
+| 3 | `def` | [flipEquivalenceUnitIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/FlipNamespaced.lean/declarations/flipequivalenceunitiso.md) | 76 | `declaration-track:223795839b56b308db40a72095c5419d38118a33463e7fdab1d820623ddca143` |
+| 4 | `def` | [flipEquivalenceCounitIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/FlipNamespaced.lean/declarations/flipequivalencecounitiso.md) | 100 | `declaration-track:420b2bd16fc82c00d303ccecae6009de752dc3af199ede57153772ca93b272a0` |
+| 5 | `def` | [flipEquivalence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/FlipNamespaced.lean/declarations/flipequivalence.md) | 124 | `declaration-track:41a359344c3c856f4d464a693380abbfca4e9bc0292b67a77b57394f2f83e4e2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

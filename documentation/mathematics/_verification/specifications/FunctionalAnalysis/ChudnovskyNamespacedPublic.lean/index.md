@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/ChudnovskyNamespacedPublic.lean/index.md) · [Full source](../../../../FunctionalAnalysis/ChudnovskyNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ChudnovskyNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ChudnovskyNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [chudnovskyNum](../../../../FunctionalAnalysis/ChudnovskyNamespacedPublic.lean/declarations/chudnovskynum.md) | 54 | `declaration-track:7fee889f33d99bc93bdac07d0a690879158ef85ac9b7badd1ac3e4d921ca1e77` |
-| 2 | `def` | [chudnovskyDenom](../../../../FunctionalAnalysis/ChudnovskyNamespacedPublic.lean/declarations/chudnovskydenom.md) | 58 | `declaration-track:7d2b00ece780742850f0edc62f549396c1d61a87c50008afaaa015557de95d29` |
-| 3 | `def` | [chudnovskyTerm](../../../../FunctionalAnalysis/ChudnovskyNamespacedPublic.lean/declarations/chudnovskyterm.md) | 62 | `declaration-track:f71df5bfcde2f3466b07d1bd2c3b5a921d27099afdf6aba566aac50659c7d227` |
-| 4 | `def` | [chudnovskySum](../../../../FunctionalAnalysis/ChudnovskyNamespacedPublic.lean/declarations/chudnovskysum.md) | 72 | `declaration-track:4711d66f65603c7e61edfc418fe0040e704642a70d9ad3a7050645761ba70b94` |
+| 1 | `def` | [chudnovskyNum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ChudnovskyNamespacedPublic.lean/declarations/chudnovskynum.md) | 54 | `declaration-track:7fee889f33d99bc93bdac07d0a690879158ef85ac9b7badd1ac3e4d921ca1e77` |
+| 2 | `def` | [chudnovskyDenom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ChudnovskyNamespacedPublic.lean/declarations/chudnovskydenom.md) | 58 | `declaration-track:7d2b00ece780742850f0edc62f549396c1d61a87c50008afaaa015557de95d29` |
+| 3 | `def` | [chudnovskyTerm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ChudnovskyNamespacedPublic.lean/declarations/chudnovskyterm.md) | 62 | `declaration-track:f71df5bfcde2f3466b07d1bd2c3b5a921d27099afdf6aba566aac50659c7d227` |
+| 4 | `def` | [chudnovskySum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ChudnovskyNamespacedPublic.lean/declarations/chudnovskysum.md) | 72 | `declaration-track:4711d66f65603c7e61edfc418fe0040e704642a70d9ad3a7050645761ba70b94` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

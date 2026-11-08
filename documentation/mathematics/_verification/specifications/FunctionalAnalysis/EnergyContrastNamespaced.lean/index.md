@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/EnergyContrastNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/EnergyContrastNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/EnergyContrastNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/EnergyContrastNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [positive_energy_from_channel_contrast](../../../../FunctionalAnalysis/EnergyContrastNamespaced.lean/declarations/positive-energy-from-channel-contrast.md) | 29 | `result-track:7fa87aa34f90e5de781092b6b46e03047c180c7b9e8def4f08c4ca13a4a5d2f1` |
+| 1 | `theorem` | [positive_energy_from_channel_contrast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/EnergyContrastNamespaced.lean/declarations/positive-energy-from-channel-contrast.md) | 29 | `result-track:7fa87aa34f90e5de781092b6b46e03047c180c7b9e8def4f08c4ca13a4a5d2f1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

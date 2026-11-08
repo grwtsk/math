@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LeanVersion.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LeanVersion.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LeanVersion.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LeanVersion.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [LeanVersion](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LeanVersion.lean/declarations/leanversion.md) | 7 | `declaration-track:52638e2f9bc83a7343978dd573a9b54c1144f3d45585c46584e306602b4298ee` |
-| 2 | `def` | [LeanVersion.Valid](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LeanVersion.lean/declarations/leanversion-valid.md) | 13 | `declaration-track:1a0c08cdca8aeb54a65dc11c3263de2f3033747fcd865a7baad468346bbfe252` |
+| 1 | `structure` | [LeanVersion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LeanVersion.lean/declarations/leanversion.md) | 7 | `declaration-track:52638e2f9bc83a7343978dd573a9b54c1144f3d45585c46584e306602b4298ee` |
+| 2 | `def` | [LeanVersion.Valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LeanVersion.lean/declarations/leanversion-valid.md) | 13 | `declaration-track:1a0c08cdca8aeb54a65dc11c3263de2f3033747fcd865a7baad468346bbfe252` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/TakeDropPublicExistsOfSet.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/TakeDropPublicExistsOfSet.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TakeDropPublicExistsOfSet.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TakeDropPublicExistsOfSet.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_of_set](../../../../../ComputerScience/AlgorithmsInComputerScience/TakeDropPublicExistsOfSet.lean/declarations/exists-of-set.md) | 28 | `result-track:f31009f1c7c6a822cfb8ac05e57c1f1c440cb6a24d931c355d1d12cf1273c43c` |
-| 2 | `theorem` | [exists_of_uset](../../../../../ComputerScience/AlgorithmsInComputerScience/TakeDropPublicExistsOfSet.lean/declarations/exists-of-uset.md) | 37 | `result-track:4f7d33faa42d5814fb1e24cdf77b00ed8d19f612153986307934ece2dfbadaf0` |
+| 1 | `theorem` | [exists_of_set](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TakeDropPublicExistsOfSet.lean/declarations/exists-of-set.md) | 28 | `result-track:f31009f1c7c6a822cfb8ac05e57c1f1c440cb6a24d931c355d1d12cf1273c43c` |
+| 2 | `theorem` | [exists_of_uset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TakeDropPublicExistsOfSet.lean/declarations/exists-of-uset.md) | 37 | `result-track:4f7d33faa42d5814fb1e24cdf77b00ed8d19f612153986307934ece2dfbadaf0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityFiniteSumsHistoricalSourceEdition2.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityFiniteSumsHistoricalSourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityFiniteSumsHistoricalSourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityFiniteSumsHistoricalSourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.FunctionFieldArithmetic.DensityMoebius`](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityMoebiusHistoricalSourceEdition2.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.FunctionFieldArithmetic.DensityMoebius`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityMoebiusHistoricalSourceEdition2.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [moebiusReal_abs_le_one](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityFiniteSumsHistoricalSourceEdition2.lean/declarations/moebiusreal-abs-le-one.md) | 10 | `result-track:c66d549d3b26f6c04a5004a2b2a6529107fff85877147e79d0175c91eb3003ca` |
-| 2 | `theorem` | [density_closed_inventory_one_of_nonneg](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityFiniteSumsHistoricalSourceEdition2.lean/declarations/density-closed-inventory-one-of-nonneg.md) | 15 | `result-track:963d6380555e1ab5087617f0ee3233ea3ad655012c6c3435bad068cda0c30dcc` |
-| 3 | `theorem` | [density_moebius_divisor_sum](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityFiniteSumsHistoricalSourceEdition2.lean/declarations/density-moebius-divisor-sum.md) | 23 | `result-track:a7a68765427ac4cf5d24de4d2de9275516fd4681fb196aab2ed8b6ca8376772f` |
-| 4 | `theorem` | [density_coprime_indicator_moebius_sum](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityFiniteSumsHistoricalSourceEdition2.lean/declarations/density-coprime-indicator-moebius-sum.md) | 31 | `result-track:c7fcdc131295480f34b4f918bf977faa152a73908c8839722298d3536c468635` |
-| 5 | `theorem` | [density_closed_inventory_mul_iff](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityFiniteSumsHistoricalSourceEdition2.lean/declarations/density-closed-inventory-mul-iff.md) | 53 | `result-track:bc64a3527fd9c217f7f2c722c9b64497c427202670e280d6a80e407316812065` |
-| 6 | `theorem` | [density_closed_convolution_regroup](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityFiniteSumsHistoricalSourceEdition2.lean/declarations/density-closed-convolution-regroup.md) | 74 | `result-track:4f437e2c9d92be37dffd6c8a3cc2e364a053c782df03e79a145bb37eed0ec7d1` |
+| 1 | `theorem` | [moebiusReal_abs_le_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityFiniteSumsHistoricalSourceEdition2.lean/declarations/moebiusreal-abs-le-one.md) | 10 | `result-track:c66d549d3b26f6c04a5004a2b2a6529107fff85877147e79d0175c91eb3003ca` |
+| 2 | `theorem` | [density_closed_inventory_one_of_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityFiniteSumsHistoricalSourceEdition2.lean/declarations/density-closed-inventory-one-of-nonneg.md) | 15 | `result-track:963d6380555e1ab5087617f0ee3233ea3ad655012c6c3435bad068cda0c30dcc` |
+| 3 | `theorem` | [density_moebius_divisor_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityFiniteSumsHistoricalSourceEdition2.lean/declarations/density-moebius-divisor-sum.md) | 23 | `result-track:a7a68765427ac4cf5d24de4d2de9275516fd4681fb196aab2ed8b6ca8376772f` |
+| 4 | `theorem` | [density_coprime_indicator_moebius_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityFiniteSumsHistoricalSourceEdition2.lean/declarations/density-coprime-indicator-moebius-sum.md) | 31 | `result-track:c7fcdc131295480f34b4f918bf977faa152a73908c8839722298d3536c468635` |
+| 5 | `theorem` | [density_closed_inventory_mul_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityFiniteSumsHistoricalSourceEdition2.lean/declarations/density-closed-inventory-mul-iff.md) | 53 | `result-track:bc64a3527fd9c217f7f2c722c9b64497c427202670e280d6a80e407316812065` |
+| 6 | `theorem` | [density_closed_convolution_regroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DensityFiniteSumsHistoricalSourceEdition2.lean/declarations/density-closed-convolution-regroup.md) | 74 | `result-track:4f437e2c9d92be37dffd6c8a3cc2e364a053c782df03e79a145bb37eed0ec7d1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

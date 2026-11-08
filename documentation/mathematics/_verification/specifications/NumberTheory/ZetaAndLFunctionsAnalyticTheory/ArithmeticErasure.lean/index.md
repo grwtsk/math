@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ArithmeticErasure.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ArithmeticErasure.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ArithmeticErasure.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ArithmeticErasure.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [ArithmeticEssentialityCertificate](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ArithmeticErasure.lean/declarations/arithmeticessentialitycertificate.md) | 12 | `declaration-track:d44aae49d1f2e70623d768344485edc6a67d4675154f06b0130fbd0032e33476` |
-| 2 | `abbrev` | [ArithmeticErasureCertificate](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ArithmeticErasure.lean/declarations/arithmeticerasurecertificate.md) | 15 | `declaration-track:b42a1214435b799a23ecc6b57207d026312e3dd84cd23cf980eaaac46c4dc1ab` |
-| 3 | `abbrev` | [NonfactorizationCertificate](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ArithmeticErasure.lean/declarations/nonfactorizationcertificate.md) | 18 | `declaration-track:0e42d1ab336fd742de1ebc09295e0ea3ba048d78e2be8567dbab6e67f7ab2025` |
-| 4 | `theorem` | [arithmetic_source_changes_isomorphism_invariant](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ArithmeticErasure.lean/declarations/arithmetic-source-changes-isomorphism-invariant.md) | 21 | `result-track:ca67d6ed4a61211983fca055e9116da2997f54809ea4b26f56c88a337a748e7d` |
-| 5 | `theorem` | [realization_does_not_factor_through_erasure](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ArithmeticErasure.lean/declarations/realization-does-not-factor-through-erasure.md) | 30 | `result-track:5261e102d9d33835bf2482ab73e30fef5a1eb92bab0e56320a23af29b47af142` |
+| 1 | `abbrev` | [ArithmeticEssentialityCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ArithmeticErasure.lean/declarations/arithmeticessentialitycertificate.md) | 12 | `declaration-track:d44aae49d1f2e70623d768344485edc6a67d4675154f06b0130fbd0032e33476` |
+| 2 | `abbrev` | [ArithmeticErasureCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ArithmeticErasure.lean/declarations/arithmeticerasurecertificate.md) | 15 | `declaration-track:b42a1214435b799a23ecc6b57207d026312e3dd84cd23cf980eaaac46c4dc1ab` |
+| 3 | `abbrev` | [NonfactorizationCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ArithmeticErasure.lean/declarations/nonfactorizationcertificate.md) | 18 | `declaration-track:0e42d1ab336fd742de1ebc09295e0ea3ba048d78e2be8567dbab6e67f7ab2025` |
+| 4 | `theorem` | [arithmetic_source_changes_isomorphism_invariant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ArithmeticErasure.lean/declarations/arithmetic-source-changes-isomorphism-invariant.md) | 21 | `result-track:ca67d6ed4a61211983fca055e9116da2997f54809ea4b26f56c88a337a748e7d` |
+| 5 | `theorem` | [realization_does_not_factor_through_erasure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ArithmeticErasure.lean/declarations/realization-does-not-factor-through-erasure.md) | 30 | `result-track:5261e102d9d33835bf2482ab73e30fef5a1eb92bab0e56320a23af29b47af142` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

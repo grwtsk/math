@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/CongrNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/CongrNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CongrNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CongrNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [of_surjective](../../../../CommutativeAlgebra/CongrNamespaced.lean/declarations/of-surjective.md) | 28 | `result-track:c4ec53072cf3ecccc089b4c2e79b33fd2ddc5080d1e6c02876898cf0052d7cf6` |
-| 2 | `lemma` | [of_ringEquiv](../../../../CommutativeAlgebra/CongrNamespaced.lean/declarations/of-ringequiv.md) | 33 | `result-track:e250650247e3eb77167953beb4001065ca78227123492cfc46189ac79499a936` |
-| 3 | `theorem` | [isSimpleRing_iff_isTwoSided_imp](../../../../CommutativeAlgebra/CongrNamespaced.lean/declarations/issimplering-iff-istwosided-imp.md) | 40 | `result-track:6b97eea364f81a1a0c1943d185d8b2a91964a54223f2b3cf3e07be955eaf3914` |
+| 1 | `lemma` | [of_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CongrNamespaced.lean/declarations/of-surjective.md) | 28 | `result-track:c4ec53072cf3ecccc089b4c2e79b33fd2ddc5080d1e6c02876898cf0052d7cf6` |
+| 2 | `lemma` | [of_ringEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CongrNamespaced.lean/declarations/of-ringequiv.md) | 33 | `result-track:e250650247e3eb77167953beb4001065ca78227123492cfc46189ac79499a936` |
+| 3 | `theorem` | [isSimpleRing_iff_isTwoSided_imp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/CongrNamespaced.lean/declarations/issimplering-iff-istwosided-imp.md) | 40 | `result-track:6b97eea364f81a1a0c1943d185d8b2a91964a54223f2b3cf3e07be955eaf3914` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

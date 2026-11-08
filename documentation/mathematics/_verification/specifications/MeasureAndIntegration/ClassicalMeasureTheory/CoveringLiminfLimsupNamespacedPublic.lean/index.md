@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/CoveringLiminfLimsupNamespacedPublic.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/CoveringLiminfLimsupNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/CoveringLiminfLimsupNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/CoveringLiminfLimsupNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [blimsup_cthickening_ae_le_of_eventually_mul_le_aux](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/CoveringLiminfLimsupNamespacedPublic.lean/declarations/blimsup-cthickening-ae-le-of-eventually-mul-le-aux.md) | 52 | `result-track:f33fdfba53046b872d8cccb286f7a8e91f886cbd81aaa175154f80a1114b09a7` |
-| 2 | `theorem` | [blimsup_cthickening_ae_le_of_eventually_mul_le](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/CoveringLiminfLimsupNamespacedPublic.lean/declarations/blimsup-cthickening-ae-le-of-eventually-mul-le.md) | 165 | `result-track:b1332488f2a10d3b33e4849508f9797fd5d8c34781f72b7298ce79201d0fa4ad` |
-| 3 | `theorem` | [blimsup_cthickening_mul_ae_eq](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/CoveringLiminfLimsupNamespacedPublic.lean/declarations/blimsup-cthickening-mul-ae-eq.md) | 198 | `result-track:9a103a94a6d3f56e2f77de9c5a6674a861c5e5bcbbcaa6c0a3e8f0560703477d` |
-| 4 | `theorem` | [blimsup_cthickening_ae_eq_blimsup_thickening](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/CoveringLiminfLimsupNamespacedPublic.lean/declarations/blimsup-cthickening-ae-eq-blimsup-thickening.md) | 236 | `result-track:10dad4173c62ffa27db4cf8400907bb646472bb11893976322b30468eb11b1cf` |
-| 5 | `theorem` | [blimsup_thickening_mul_ae_eq_aux](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/CoveringLiminfLimsupNamespacedPublic.lean/declarations/blimsup-thickening-mul-ae-eq-aux.md) | 248 | `result-track:4883b5fcf4b3b9777251544c5beb9430f513b17a26c8b0396ab0c47426846793` |
-| 6 | `theorem` | [blimsup_thickening_mul_ae_eq](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/CoveringLiminfLimsupNamespacedPublic.lean/declarations/blimsup-thickening-mul-ae-eq.md) | 271 | `result-track:768f339fd0dcba8617156920633f50461f4bbe146c07f02d389431868cbeebc8` |
+| 1 | `theorem` | [blimsup_cthickening_ae_le_of_eventually_mul_le_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/CoveringLiminfLimsupNamespacedPublic.lean/declarations/blimsup-cthickening-ae-le-of-eventually-mul-le-aux.md) | 52 | `result-track:f33fdfba53046b872d8cccb286f7a8e91f886cbd81aaa175154f80a1114b09a7` |
+| 2 | `theorem` | [blimsup_cthickening_ae_le_of_eventually_mul_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/CoveringLiminfLimsupNamespacedPublic.lean/declarations/blimsup-cthickening-ae-le-of-eventually-mul-le.md) | 165 | `result-track:b1332488f2a10d3b33e4849508f9797fd5d8c34781f72b7298ce79201d0fa4ad` |
+| 3 | `theorem` | [blimsup_cthickening_mul_ae_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/CoveringLiminfLimsupNamespacedPublic.lean/declarations/blimsup-cthickening-mul-ae-eq.md) | 198 | `result-track:9a103a94a6d3f56e2f77de9c5a6674a861c5e5bcbbcaa6c0a3e8f0560703477d` |
+| 4 | `theorem` | [blimsup_cthickening_ae_eq_blimsup_thickening](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/CoveringLiminfLimsupNamespacedPublic.lean/declarations/blimsup-cthickening-ae-eq-blimsup-thickening.md) | 236 | `result-track:10dad4173c62ffa27db4cf8400907bb646472bb11893976322b30468eb11b1cf` |
+| 5 | `theorem` | [blimsup_thickening_mul_ae_eq_aux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/CoveringLiminfLimsupNamespacedPublic.lean/declarations/blimsup-thickening-mul-ae-eq-aux.md) | 248 | `result-track:4883b5fcf4b3b9777251544c5beb9430f513b17a26c8b0396ab0c47426846793` |
+| 6 | `theorem` | [blimsup_thickening_mul_ae_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/CoveringLiminfLimsupNamespacedPublic.lean/declarations/blimsup-thickening-mul-ae-eq.md) | 271 | `result-track:768f339fd0dcba8617156920633f50461f4bbe146c07f02d389431868cbeebc8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

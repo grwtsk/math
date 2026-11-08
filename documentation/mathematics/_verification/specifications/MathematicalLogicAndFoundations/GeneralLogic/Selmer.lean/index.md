@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Selmer.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Selmer.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Selmer.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Selmer.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,18 +57,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FiniteAdditiveStructure](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Selmer.lean/declarations/finiteadditivestructure.md) | 27 | `declaration-track:2d7b2182ec2d4d63b01e9a8c61d74df9984af5ba49329c9bb85e3d00444ff1a7` |
-| 2 | `structure` | [FiniteSubgroup](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Selmer.lean/declarations/finitesubgroup.md) | 33 | `declaration-track:6fb100a5a621b64479a8b3ba5c188db645e6355725ff0231e624efe53a31e429` |
-| 3 | `theorem` | [ext](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Selmer.lean/declarations/ext.md) | 45 | `result-track:7ddcb24a0fac263f8e5499efabac10e017b4a98017a5602e8357a594c3c1f9da` |
-| 4 | `def` | [top](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Selmer.lean/declarations/top.md) | 61 | `declaration-track:d1148e761c22faa0a60a67fee205cd243602713ec7d5ca8728208e92fe2bef22` |
-| 5 | `def` | [le](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Selmer.lean/declarations/le.md) | 74 | `declaration-track:06d60c948932f21e9a12f4788577a9d1fb3734f1d8bfe279258c69907d0ad79c` |
-| 6 | `def` | [FiniteH1.additiveStructure](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Selmer.lean/declarations/finiteh1-additivestructure.md) | 83 | `declaration-track:c4211df22ba9fbbd15852860002c5c153c8ed92dd7180d0c3486d6c037f8849c` |
-| 7 | `def` | [FiniteSelmerGroup](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Selmer.lean/declarations/finiteselmergroup.md) | 97 | `declaration-track:c10e51fd6217f0789ca8810ec3ed080c45fe79b75726751ce5ac10e167cfd5ef` |
-| 8 | `theorem` | [selmer_top_eq_h1](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Selmer.lean/declarations/selmer-top-eq-h1.md) | 129 | `result-track:9cf6ec77d74b14ffffe7966f8771a634775c1361a80bbf606006ae18cb31b954` |
-| 9 | `theorem` | [selmer_mono](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Selmer.lean/declarations/selmer-mono.md) | 154 | `result-track:5138065ac6626b046e30d30b20ae496514d7c60c1dcb95fb375d3eeba6c39bb9` |
-| 10 | `structure` | [FiniteSelmerProblem](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Selmer.lean/declarations/finiteselmerproblem.md) | 188 | `declaration-track:0a61156c6d95dd0fb65a25b29efccadc57e01d159a5c6ed293425f1bd20c2d11` |
-| 11 | `def` | [selmerSubgroup](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Selmer.lean/declarations/selmersubgroup.md) | 203 | `declaration-track:3d0e649a259a2224be5ab22112409c0002e88339c5dcc5ee0d242b1155109fa0` |
-| 12 | `theorem` | [mem_selmerSubgroup_iff](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Selmer.lean/declarations/mem-selmersubgroup-iff.md) | 212 | `result-track:e678c783e6755ab6661358c1921c2a3d42dac337b1b29f9739901bd72c78adbb` |
+| 1 | `structure` | [FiniteAdditiveStructure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Selmer.lean/declarations/finiteadditivestructure.md) | 27 | `declaration-track:2d7b2182ec2d4d63b01e9a8c61d74df9984af5ba49329c9bb85e3d00444ff1a7` |
+| 2 | `structure` | [FiniteSubgroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Selmer.lean/declarations/finitesubgroup.md) | 33 | `declaration-track:6fb100a5a621b64479a8b3ba5c188db645e6355725ff0231e624efe53a31e429` |
+| 3 | `theorem` | [ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Selmer.lean/declarations/ext.md) | 45 | `result-track:7ddcb24a0fac263f8e5499efabac10e017b4a98017a5602e8357a594c3c1f9da` |
+| 4 | `def` | [top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Selmer.lean/declarations/top.md) | 61 | `declaration-track:d1148e761c22faa0a60a67fee205cd243602713ec7d5ca8728208e92fe2bef22` |
+| 5 | `def` | [le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Selmer.lean/declarations/le.md) | 74 | `declaration-track:06d60c948932f21e9a12f4788577a9d1fb3734f1d8bfe279258c69907d0ad79c` |
+| 6 | `def` | [FiniteH1.additiveStructure](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Selmer.lean/declarations/finiteh1-additivestructure.md) | 83 | `declaration-track:c4211df22ba9fbbd15852860002c5c153c8ed92dd7180d0c3486d6c037f8849c` |
+| 7 | `def` | [FiniteSelmerGroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Selmer.lean/declarations/finiteselmergroup.md) | 97 | `declaration-track:c10e51fd6217f0789ca8810ec3ed080c45fe79b75726751ce5ac10e167cfd5ef` |
+| 8 | `theorem` | [selmer_top_eq_h1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Selmer.lean/declarations/selmer-top-eq-h1.md) | 129 | `result-track:9cf6ec77d74b14ffffe7966f8771a634775c1361a80bbf606006ae18cb31b954` |
+| 9 | `theorem` | [selmer_mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Selmer.lean/declarations/selmer-mono.md) | 154 | `result-track:5138065ac6626b046e30d30b20ae496514d7c60c1dcb95fb375d3eeba6c39bb9` |
+| 10 | `structure` | [FiniteSelmerProblem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Selmer.lean/declarations/finiteselmerproblem.md) | 188 | `declaration-track:0a61156c6d95dd0fb65a25b29efccadc57e01d159a5c6ed293425f1bd20c2d11` |
+| 11 | `def` | [selmerSubgroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Selmer.lean/declarations/selmersubgroup.md) | 203 | `declaration-track:3d0e649a259a2224be5ab22112409c0002e88339c5dcc5ee0d242b1155109fa0` |
+| 12 | `theorem` | [mem_selmerSubgroup_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Selmer.lean/declarations/mem-selmersubgroup-iff.md) | 212 | `result-track:e678c783e6755ab6661358c1921c2a3d42dac337b1b29f9739901bd72c78adbb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

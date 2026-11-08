@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StrategyComparisonNamespacedFormalizationRoute.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StrategyComparisonNamespacedFormalizationRoute.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StrategyComparisonNamespacedFormalizationRoute.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StrategyComparisonNamespacedFormalizationRoute.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [FormalizationRoute](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StrategyComparisonNamespacedFormalizationRoute.lean/declarations/formalizationroute.md) | 26 | `declaration-track:77c4e11f0f1075e1e58dc965d3298b7c4808bb3789cde6b65da25be4ed33edc5` |
-| 2 | `structure` | [RouteAssessment](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StrategyComparisonNamespacedFormalizationRoute.lean/declarations/routeassessment.md) | 32 | `declaration-track:4c4fb4e44a29dd1e0f9ed40a5abb8663718dbb40ecd11e431b6fc971f9c79d51` |
-| 3 | `def` | [recommendedRoute](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StrategyComparisonNamespacedFormalizationRoute.lean/declarations/recommendedroute.md) | 38 | `declaration-track:6609fcc61ff8bc2ffc9ea9628cf56dd49b1bf949d140eb20763ae544d255c6e9` |
-| 4 | `theorem` | [recommended_route_is_adelic](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StrategyComparisonNamespacedFormalizationRoute.lean/declarations/recommended-route-is-adelic.md) | 41 | `result-track:a6847f5e9ea5d40c119294a605ed0c957356e60710b7667e140494564687b548` |
+| 1 | `inductive` | [FormalizationRoute](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StrategyComparisonNamespacedFormalizationRoute.lean/declarations/formalizationroute.md) | 26 | `declaration-track:77c4e11f0f1075e1e58dc965d3298b7c4808bb3789cde6b65da25be4ed33edc5` |
+| 2 | `structure` | [RouteAssessment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StrategyComparisonNamespacedFormalizationRoute.lean/declarations/routeassessment.md) | 32 | `declaration-track:4c4fb4e44a29dd1e0f9ed40a5abb8663718dbb40ecd11e431b6fc971f9c79d51` |
+| 3 | `def` | [recommendedRoute](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StrategyComparisonNamespacedFormalizationRoute.lean/declarations/recommendedroute.md) | 38 | `declaration-track:6609fcc61ff8bc2ffc9ea9628cf56dd49b1bf949d140eb20763ae544d255c6e9` |
+| 4 | `theorem` | [recommended_route_is_adelic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StrategyComparisonNamespacedFormalizationRoute.lean/declarations/recommended-route-is-adelic.md) | 41 | `result-track:a6847f5e9ea5d40c119294a605ed0c957356e60710b7667e140494564687b548` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerSampleNonnegative.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerSampleNonnegative.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerSampleNonnegative.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerSampleNonnegative.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeFejerDiscreteReproduction`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerDiscreteReproduction.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeFejerDiscreteReproduction`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerDiscreteReproduction.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [symmetricTriangularKernel_re_nonnegative](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerSampleNonnegative.lean/declarations/symmetrictriangularkernel-re-nonnegative.md) | 14 | `result-track:fea85e9e36b2cae8f45e7c9359fe71a3b84397dce475153714370eb0c41c4139` |
-| 2 | `theorem` | [periodFourXSampledKernelNonnegative](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerSampleNonnegative.lean/declarations/periodfourxsampledkernelnonnegative.md) | 38 | `result-track:6445a9ac71de0d80c90dcc22ff27c6342c27d4107d32e745a7da2ae7ed27040d` |
-| 3 | `def` | [PeriodFourXSampledKernelMassOneOnlyFrontier](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerSampleNonnegative.lean/declarations/periodfourxsampledkernelmassoneonlyfrontier.md) | 53 | `declaration-track:201b697f3e32980c0b800059f2874a0b4c5bae1a0e2c4e7e393ab68edcdcb691` |
+| 1 | `theorem` | [symmetricTriangularKernel_re_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerSampleNonnegative.lean/declarations/symmetrictriangularkernel-re-nonnegative.md) | 14 | `result-track:fea85e9e36b2cae8f45e7c9359fe71a3b84397dce475153714370eb0c41c4139` |
+| 2 | `theorem` | [periodFourXSampledKernelNonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerSampleNonnegative.lean/declarations/periodfourxsampledkernelnonnegative.md) | 38 | `result-track:6445a9ac71de0d80c90dcc22ff27c6342c27d4107d32e745a7da2ae7ed27040d` |
+| 3 | `def` | [PeriodFourXSampledKernelMassOneOnlyFrontier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerSampleNonnegative.lean/declarations/periodfourxsampledkernelmassoneonlyfrontier.md) | 53 | `declaration-track:201b697f3e32980c0b800059f2874a0b4c5bae1a0e2c4e7e393ab68edcdcb691` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

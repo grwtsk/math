@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/PointCompletion.lean/index.md) · [Full source](../../../../../NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/PointCompletion.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/PointCompletion.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/PointCompletion.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [ECPoint](../../../../../NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/PointCompletion.lean/declarations/ecpoint.md) | 39 | `declaration-track:f3f97dcb9ce6d999c062e081b1a856d85baee54a097e6bbc51fac1af4756e1b4` |
+| 1 | `inductive` | [ECPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/PointCompletion.lean/declarations/ecpoint.md) | 39 | `declaration-track:f3f97dcb9ce6d999c062e081b1a856d85baee54a097e6bbc51fac1af4756e1b4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

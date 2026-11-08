@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CompleteMorphismProfiles.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CompleteMorphismProfiles.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CompleteMorphismProfiles.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CompleteMorphismProfiles.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [CompleteMorphismProfile](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CompleteMorphismProfiles.lean/declarations/completemorphismprofile.md) | 43 | `declaration-track:d264e9ea478c620c77b89bc79a3e9a3b3a5ceca424f4a90e312d792b6ab6951c` |
-| 2 | `def` | [reconstructFromCompleteProfile](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CompleteMorphismProfiles.lean/declarations/reconstructfromcompleteprofile.md) | 46 | `declaration-track:7067ababf794bf1e9ba56d148c2128736085400de8e265e3ca5321cfad80b93f` |
-| 3 | `theorem` | [complete_profile_reconstructs_up_to_iso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CompleteMorphismProfiles.lean/declarations/complete-profile-reconstructs-up-to-iso.md) | 53 | `result-track:ff266f2b3d8440f2c36dc89f2f1ecb9d4bbfeb948fe73c8af374007c401fa8f9` |
+| 1 | `abbrev` | [CompleteMorphismProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CompleteMorphismProfiles.lean/declarations/completemorphismprofile.md) | 43 | `declaration-track:d264e9ea478c620c77b89bc79a3e9a3b3a5ceca424f4a90e312d792b6ab6951c` |
+| 2 | `def` | [reconstructFromCompleteProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CompleteMorphismProfiles.lean/declarations/reconstructfromcompleteprofile.md) | 46 | `declaration-track:7067ababf794bf1e9ba56d148c2128736085400de8e265e3ca5321cfad80b93f` |
+| 3 | `theorem` | [complete_profile_reconstructs_up_to_iso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CompleteMorphismProfiles.lean/declarations/complete-profile-reconstructs-up-to-iso.md) | 53 | `result-track:ff266f2b3d8440f2c36dc89f2f1ecb9d4bbfeb948fe73c8af374007c401fa8f9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

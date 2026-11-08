@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ContextNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ContextNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ContextNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ContextNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [ContextField](../../../../../ComputerScience/AlgorithmsInComputerScience/ContextNamespaced.lean/declarations/contextfield.md) | 15 | `declaration-track:2691c6ad5635728ddf0cc39a9029f6aa9ab98462f0bcdf1569f7a5d1148e96ba` |
-| 2 | `structure` | [Context](../../../../../ComputerScience/AlgorithmsInComputerScience/ContextNamespaced.lean/declarations/context.md) | 25 | `declaration-track:480c863672a2d73303286cc2096bb81016e4a154ecd134a26b90bbf6705d05e0` |
-| 3 | `def` | [OptionRefines](../../../../../ComputerScience/AlgorithmsInComputerScience/ContextNamespaced.lean/declarations/optionrefines.md) | 37 | `declaration-track:2c8d92ee064fe20edca38ca496eaab8c9ccd7fd602890226a4f4aa008da47b45` |
-| 4 | `theorem` | [OptionRefines.refl](../../../../../ComputerScience/AlgorithmsInComputerScience/ContextNamespaced.lean/declarations/optionrefines-refl.md) | 40 | `result-track:661c0ff2d2e56ade6066c925afaba985f78ce87fe6fe5e06acb1d55c645e8dd1` |
-| 5 | `theorem` | [OptionRefines.trans](../../../../../ComputerScience/AlgorithmsInComputerScience/ContextNamespaced.lean/declarations/optionrefines-trans.md) | 47 | `result-track:4c2c4a5e079d053f2a3a8a0822412b64b4fd166247176e3f2213de6c16777d37` |
-| 6 | `def` | [Context.Refines](../../../../../ComputerScience/AlgorithmsInComputerScience/ContextNamespaced.lean/declarations/context-refines.md) | 56 | `declaration-track:e1ad281c5e40937e41ec96689ad00dd134012148194204c81115c02ba5737f20` |
-| 7 | `theorem` | [Context.refines_refl](../../../../../ComputerScience/AlgorithmsInComputerScience/ContextNamespaced.lean/declarations/context-refines-refl.md) | 66 | `result-track:690ce7fe30c5ea6776c22d2d0e02c16c9af5fbe65632081b23462d2342b51ecd` |
-| 8 | `theorem` | [Context.Refines.trans](../../../../../ComputerScience/AlgorithmsInComputerScience/ContextNamespaced.lean/declarations/context-refines-trans.md) | 77 | `result-track:2fe12147e3d8fdc9bad095fe12c682c300d164a8ac70b65b8d78e8499bf93ea1` |
-| 9 | `structure` | [ContextTransportCertificate](../../../../../ComputerScience/AlgorithmsInComputerScience/ContextNamespaced.lean/declarations/contexttransportcertificate.md) | 98 | `declaration-track:4738ffffb09830085b6ca83e47b41abdd9e998dd05a3e8ec83ee189903ddbd00` |
-| 10 | `structure` | [ContextSufficiencyCertificate](../../../../../ComputerScience/AlgorithmsInComputerScience/ContextNamespaced.lean/declarations/contextsufficiencycertificate.md) | 105 | `declaration-track:ac1d21b3a17f9e933378edd8779e63f081c4e19b5259e977a9cb38c009062b9a` |
+| 1 | `inductive` | [ContextField](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ContextNamespaced.lean/declarations/contextfield.md) | 15 | `declaration-track:2691c6ad5635728ddf0cc39a9029f6aa9ab98462f0bcdf1569f7a5d1148e96ba` |
+| 2 | `structure` | [Context](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ContextNamespaced.lean/declarations/context.md) | 25 | `declaration-track:480c863672a2d73303286cc2096bb81016e4a154ecd134a26b90bbf6705d05e0` |
+| 3 | `def` | [OptionRefines](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ContextNamespaced.lean/declarations/optionrefines.md) | 37 | `declaration-track:2c8d92ee064fe20edca38ca496eaab8c9ccd7fd602890226a4f4aa008da47b45` |
+| 4 | `theorem` | [OptionRefines.refl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ContextNamespaced.lean/declarations/optionrefines-refl.md) | 40 | `result-track:661c0ff2d2e56ade6066c925afaba985f78ce87fe6fe5e06acb1d55c645e8dd1` |
+| 5 | `theorem` | [OptionRefines.trans](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ContextNamespaced.lean/declarations/optionrefines-trans.md) | 47 | `result-track:4c2c4a5e079d053f2a3a8a0822412b64b4fd166247176e3f2213de6c16777d37` |
+| 6 | `def` | [Context.Refines](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ContextNamespaced.lean/declarations/context-refines.md) | 56 | `declaration-track:e1ad281c5e40937e41ec96689ad00dd134012148194204c81115c02ba5737f20` |
+| 7 | `theorem` | [Context.refines_refl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ContextNamespaced.lean/declarations/context-refines-refl.md) | 66 | `result-track:690ce7fe30c5ea6776c22d2d0e02c16c9af5fbe65632081b23462d2342b51ecd` |
+| 8 | `theorem` | [Context.Refines.trans](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ContextNamespaced.lean/declarations/context-refines-trans.md) | 77 | `result-track:2fe12147e3d8fdc9bad095fe12c682c300d164a8ac70b65b8d78e8499bf93ea1` |
+| 9 | `structure` | [ContextTransportCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ContextNamespaced.lean/declarations/contexttransportcertificate.md) | 98 | `declaration-track:4738ffffb09830085b6ca83e47b41abdd9e998dd05a3e8ec83ee189903ddbd00` |
+| 10 | `structure` | [ContextSufficiencyCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ContextNamespaced.lean/declarations/contextsufficiencycertificate.md) | 105 | `declaration-track:ac1d21b3a17f9e933378edd8779e63f081c4e19b5259e977a9cb38c009062b9a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

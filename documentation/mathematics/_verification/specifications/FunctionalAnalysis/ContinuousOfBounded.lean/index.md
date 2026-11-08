@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/ContinuousOfBounded.lean/index.md) · [Full source](../../../../FunctionalAnalysis/ContinuousOfBounded.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ContinuousOfBounded.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ContinuousOfBounded.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [LinearMap.clmOfExistsBoundedImage](../../../../FunctionalAnalysis/ContinuousOfBounded.lean/declarations/linearmap-clmofexistsboundedimage.md) | 41 | `declaration-track:8ebb34274804266c8a6b067e3f25e89bf63c5171ef07560feb1c649ced9124bf` |
-| 2 | `theorem` | [LinearMap.clmOfExistsBoundedImage_coe](../../../../FunctionalAnalysis/ContinuousOfBounded.lean/declarations/linearmap-clmofexistsboundedimage-coe.md) | 68 | `result-track:36095df4bd54bcc1ab8aae2b5d9de2532dc0cb93b092680b2bd22ca868dc9d25` |
-| 3 | `theorem` | [LinearMap.clmOfExistsBoundedImage_apply](../../../../FunctionalAnalysis/ContinuousOfBounded.lean/declarations/linearmap-clmofexistsboundedimage-apply.md) | 74 | `result-track:fdc82fc093681745567f3127ff66122ae7e2b4ee93dd52a67b6d00c718d87340` |
-| 4 | `theorem` | [LinearMap.continuousAt_zero_of_locally_bounded](../../../../FunctionalAnalysis/ContinuousOfBounded.lean/declarations/linearmap-continuousat-zero-of-locally-bounded.md) | 90 | `result-track:0d95ac1bb170d7bda669c1db0f68e6615cc7b9ea33f6e0a878d24032d5e00480` |
-| 5 | `theorem` | [LinearMap.continuous_of_locally_bounded](../../../../FunctionalAnalysis/ContinuousOfBounded.lean/declarations/linearmap-continuous-of-locally-bounded.md) | 163 | `result-track:333b12f198e4af16d4a6249b4ea8ab9304c1c01d70f900a2e3d5d3c3e927e13b` |
+| 1 | `def` | [LinearMap.clmOfExistsBoundedImage](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ContinuousOfBounded.lean/declarations/linearmap-clmofexistsboundedimage.md) | 41 | `declaration-track:8ebb34274804266c8a6b067e3f25e89bf63c5171ef07560feb1c649ced9124bf` |
+| 2 | `theorem` | [LinearMap.clmOfExistsBoundedImage_coe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ContinuousOfBounded.lean/declarations/linearmap-clmofexistsboundedimage-coe.md) | 68 | `result-track:36095df4bd54bcc1ab8aae2b5d9de2532dc0cb93b092680b2bd22ca868dc9d25` |
+| 3 | `theorem` | [LinearMap.clmOfExistsBoundedImage_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ContinuousOfBounded.lean/declarations/linearmap-clmofexistsboundedimage-apply.md) | 74 | `result-track:fdc82fc093681745567f3127ff66122ae7e2b4ee93dd52a67b6d00c718d87340` |
+| 4 | `theorem` | [LinearMap.continuousAt_zero_of_locally_bounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ContinuousOfBounded.lean/declarations/linearmap-continuousat-zero-of-locally-bounded.md) | 90 | `result-track:0d95ac1bb170d7bda669c1db0f68e6615cc7b9ea33f6e0a878d24032d5e00480` |
+| 5 | `theorem` | [LinearMap.continuous_of_locally_bounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/ContinuousOfBounded.lean/declarations/linearmap-continuous-of-locally-bounded.md) | 163 | `result-track:333b12f198e4af16d4a6249b4ea8ab9304c1c01d70f900a2e3d5d3c3e927e13b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

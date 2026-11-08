@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/PPNamespacedSumA2gCoprimeClose.lean/index.md) · [Full source](../../../../MeasureAndIntegration/PPNamespacedSumA2gCoprimeClose.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PPNamespacedSumA2gCoprimeClose.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PPNamespacedSumA2gCoprimeClose.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sumA2gCoprime_close](../../../../MeasureAndIntegration/PPNamespacedSumA2gCoprimeClose.lean/declarations/suma2gcoprime-close.md) | 33 | `result-track:18a35227bfbb876672320973eb3037d10ef9c6775e50d6994bd0f172ca343186` |
+| 1 | `theorem` | [sumA2gCoprime_close](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PPNamespacedSumA2gCoprimeClose.lean/declarations/suma2gcoprime-close.md) | 33 | `result-track:18a35227bfbb876672320973eb3037d10ef9c6775e50d6994bd0f172ca343186` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

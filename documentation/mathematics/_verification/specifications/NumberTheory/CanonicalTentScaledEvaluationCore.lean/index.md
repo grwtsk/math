@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/CanonicalTentScaledEvaluationCore.lean/index.md) · [Full source](../../../../NumberTheory/CanonicalTentScaledEvaluationCore.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentScaledEvaluationCore.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentScaledEvaluationCore.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,11 +46,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Interfaces.CanonicalTentLogEvaluationCore`](../../../../NumberTheory/CanonicalTentLogEvaluationCore.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.DyadicExponentialEnclosure`](../../../../FunctionsOfAComplexVariable/DyadicExponentialEnclosure.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.ScaledLogPowerEvaluation`](../../../../FunctionsOfAComplexVariable/ScaledLogPowerEvaluation.lean/index.md) — import line 6; pinned internal source present.
-- [`GRWTSK.NumberTheory.Chebyshev.CanonicalTentScaledEvaluation`](../../../../NumberTheory/CanonicalTentScaledEvaluation.lean/index.md) — import line 7; pinned internal source present.
-- [`GRWTSK.NumberTheory.Chebyshev.Checks.DyadicExponentialControls`](../../../../NumberTheory/DyadicExponentialControls.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.Interfaces.CanonicalTentLogEvaluationCore`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentLogEvaluationCore.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.DyadicExponentialEnclosure`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/DyadicExponentialEnclosure.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.ScaledLogPowerEvaluation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ScaledLogPowerEvaluation.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.CanonicalTentScaledEvaluation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentScaledEvaluation.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.Checks.DyadicExponentialControls`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DyadicExponentialControls.lean/index.md) — import line 8; pinned internal source present.
 
 ## Top results and three-degree verification metric
 

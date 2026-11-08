@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/FiniteHorizonGramNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/FiniteHorizonGramNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteHorizonGramNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteHorizonGramNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [FiniteHorizonGramFamily](../../../../Combinatorics/FiniteHorizonGramNamespaced.lean/declarations/finitehorizongramfamily.md) | 22 | `declaration-track:30c9afdef0b8f1f05d3ddcf01644434aed51c0635da8bb704670f10ae73f67c8` |
+| 1 | `structure` | [FiniteHorizonGramFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FiniteHorizonGramNamespaced.lean/declarations/finitehorizongramfamily.md) | 22 | `declaration-track:30c9afdef0b8f1f05d3ddcf01644434aed51c0635da8bb704670f10ae73f67c8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

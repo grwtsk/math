@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SeparationConnected.lean/index.md) · [Full source](../../../../GeneralTopology/SeparationConnected.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeparationConnected.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeparationConnected.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../GeneralTopology/SeparationConnected.lean/declarations/instance.md) | 19 | `declaration-track:1a2c3c2ebf3ca151d566add2e36306642607d5c6abb605469844adcfbf41f41c` |
-| 2 | `theorem` | [PreconnectedSpace.trivial_of_discrete](../../../../GeneralTopology/SeparationConnected.lean/declarations/preconnectedspace-trivial-of-discrete.md) | 26 | `result-track:6772b1e4b4f5f2dc87596ab96941dcdbac4681e5cf4d1ed02928d80af68dc899` |
-| 3 | `theorem` | [IsPreconnected.infinite_of_nontrivial](../../../../GeneralTopology/SeparationConnected.lean/declarations/ispreconnected-infinite-of-nontrivial.md) | 33 | `result-track:7310e238d67b23ca1915aff80e372c3d9c9ab951d63df31e507170459bcb0490` |
-| 4 | `theorem` | [PreconnectedSpace.infinite](../../../../GeneralTopology/SeparationConnected.lean/declarations/preconnectedspace-infinite.md) | 39 | `result-track:e76e0916f85aced13924e4ea44c00d38f4dc51e284ab9a058ec9b07772c09ca7` |
-| 5 | `instance` | [(anonymous)](../../../../GeneralTopology/SeparationConnected.lean/declarations/instance-source-edition-2.md) | 46 | `declaration-track:82f63cd747377bf3033d7012a4d2e3c8641459a569f710347e0c2f48cee0e1e2` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeparationConnected.lean/declarations/instance.md) | 19 | `declaration-track:1a2c3c2ebf3ca151d566add2e36306642607d5c6abb605469844adcfbf41f41c` |
+| 2 | `theorem` | [PreconnectedSpace.trivial_of_discrete](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeparationConnected.lean/declarations/preconnectedspace-trivial-of-discrete.md) | 26 | `result-track:6772b1e4b4f5f2dc87596ab96941dcdbac4681e5cf4d1ed02928d80af68dc899` |
+| 3 | `theorem` | [IsPreconnected.infinite_of_nontrivial](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeparationConnected.lean/declarations/ispreconnected-infinite-of-nontrivial.md) | 33 | `result-track:7310e238d67b23ca1915aff80e372c3d9c9ab951d63df31e507170459bcb0490` |
+| 4 | `theorem` | [PreconnectedSpace.infinite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeparationConnected.lean/declarations/preconnectedspace-infinite.md) | 39 | `result-track:e76e0916f85aced13924e4ea44c00d38f4dc51e284ab9a058ec9b07772c09ca7` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SeparationConnected.lean/declarations/instance-source-edition-2.md) | 46 | `declaration-track:82f63cd747377bf3033d7012a4d2e3c8641459a569f710347e0c2f48cee0e1e2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

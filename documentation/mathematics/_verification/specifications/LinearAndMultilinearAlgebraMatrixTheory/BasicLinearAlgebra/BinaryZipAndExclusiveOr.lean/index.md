@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BinaryZipAndExclusiveOr.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BinaryZipAndExclusiveOr.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BinaryZipAndExclusiveOr.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BinaryZipAndExclusiveOr.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [zipWith](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BinaryZipAndExclusiveOr.lean/declarations/zipwith.md) | 29 | `declaration-track:0d8710a6b747f0917c21d3ff76d19e6855f773656226cf1d25905763e7d21a84` |
-| 2 | `theorem` | [zipWith_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BinaryZipAndExclusiveOr.lean/declarations/zipwith-apply.md) | 37 | `result-track:da52684690cf2623d10791583ac8c768ae5772363442df3c04c4a5725a267142` |
-| 3 | `def` | [xor](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BinaryZipAndExclusiveOr.lean/declarations/xor.md) | 46 | `declaration-track:e84774ed7d3f19da05be4070c4509a33138272b581acca7e9d27bce6758693bb` |
+| 1 | `def` | [zipWith](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BinaryZipAndExclusiveOr.lean/declarations/zipwith.md) | 29 | `declaration-track:0d8710a6b747f0917c21d3ff76d19e6855f773656226cf1d25905763e7d21a84` |
+| 2 | `theorem` | [zipWith_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BinaryZipAndExclusiveOr.lean/declarations/zipwith-apply.md) | 37 | `result-track:da52684690cf2623d10791583ac8c768ae5772363442df3c04c4a5725a267142` |
+| 3 | `def` | [xor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BinaryZipAndExclusiveOr.lean/declarations/xor.md) | 46 | `declaration-track:e84774ed7d3f19da05be4070c4509a33138272b581acca7e9d27bce6758693bb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

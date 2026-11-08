@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/ShrinkNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/ShrinkNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ShrinkNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ShrinkNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../GeneralTopology/ShrinkNamespaced.lean/declarations/instance.md) | 26 | `declaration-track:db994b734cc904d1b1fc84070cca05b49a3229d595e009783f2a840c74d995b6` |
-| 2 | `def` | [homeomorph](../../../../GeneralTopology/ShrinkNamespaced.lean/declarations/homeomorph.md) | 32 | `declaration-track:ba511ce430b05f3e322759fa99751a76b4823d6c30d50bf77a74917e23da50dd` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ShrinkNamespaced.lean/declarations/instance.md) | 26 | `declaration-track:db994b734cc904d1b1fc84070cca05b49a3229d595e009783f2a840c74d995b6` |
+| 2 | `def` | [homeomorph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/ShrinkNamespaced.lean/declarations/homeomorph.md) | 32 | `declaration-track:ba511ce430b05f3e322759fa99751a76b4823d6c30d50bf77a74917e23da50dd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

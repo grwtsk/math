@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/FixturesNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/FixturesNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FixturesNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FixturesNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,15 +61,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../Combinatorics/FixturesNamespaced.lean/declarations/example.md) | 21 | `declaration-track:6d8f43bd1de86c3d7a328438138b4837c591b3830e796f4a2a50d4a052d73049` |
-| 2 | `theorem` | [finite_shells_not_quartic](../../../../Combinatorics/FixturesNamespaced.lean/declarations/finite-shells-not-quartic.md) | 24 | `result-track:5df2642f73674793f24a5f33206d0456b627b20c637d83f18d7ccbcfc09410cc` |
-| 3 | `def` | [SyntheticOccurrences](../../../../Combinatorics/FixturesNamespaced.lean/declarations/syntheticoccurrences.md) | 40 | `declaration-track:9d89f0dc4aad9124f74e411678198f9c251f18e7299e51af480b22590916a4b6` |
-| 4 | `theorem` | [multiplicity_slots_three](../../../../Combinatorics/FixturesNamespaced.lean/declarations/multiplicity-slots-three.md) | 43 | `result-track:ef6ea012633ce1f26af102e605638842336378eadca673d3e8355a4cc8930ad9` |
-| 5 | `theorem` | [point_count_two](../../../../Combinatorics/FixturesNamespaced.lean/declarations/point-count-two.md) | 49 | `result-track:90b0b717455f8ff038bfec851333fc3eae318ac97c240b6094ec8001d644c84f` |
-| 6 | `theorem` | [forgetting_multiplicity_changes_count](../../../../Combinatorics/FixturesNamespaced.lean/declarations/forgetting-multiplicity-changes-count.md) | 52 | `result-track:4046da466df9484b9f1d982dd7cb1e01498d5df35bca8152f7c6af67dd3fb0ad` |
-| 7 | `theorem` | [shifted_shell_boundary](../../../../Combinatorics/FixturesNamespaced.lean/declarations/shifted-shell-boundary.md) | 58 | `result-track:28e7c3ba0f5e68393095333daeea63220f089bba2bcfbf59a90b470e45774996` |
-| 8 | `theorem` | [shifted_boundary_not_previous_shell](../../../../Combinatorics/FixturesNamespaced.lean/declarations/shifted-boundary-not-previous-shell.md) | 62 | `result-track:53e205a1525b7705d5372fc04ec59d5f8dbb694d1733a4a67a22ffb60e5b96ff` |
-| 9 | `theorem` | [omitting_shift_changes_shell](../../../../Combinatorics/FixturesNamespaced.lean/declarations/omitting-shift-changes-shell.md) | 68 | `result-track:808ac8884bffae8808f980782531dff727602ebfe174caf3f146f58a0df65909` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FixturesNamespaced.lean/declarations/example.md) | 21 | `declaration-track:6d8f43bd1de86c3d7a328438138b4837c591b3830e796f4a2a50d4a052d73049` |
+| 2 | `theorem` | [finite_shells_not_quartic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FixturesNamespaced.lean/declarations/finite-shells-not-quartic.md) | 24 | `result-track:5df2642f73674793f24a5f33206d0456b627b20c637d83f18d7ccbcfc09410cc` |
+| 3 | `def` | [SyntheticOccurrences](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FixturesNamespaced.lean/declarations/syntheticoccurrences.md) | 40 | `declaration-track:9d89f0dc4aad9124f74e411678198f9c251f18e7299e51af480b22590916a4b6` |
+| 4 | `theorem` | [multiplicity_slots_three](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FixturesNamespaced.lean/declarations/multiplicity-slots-three.md) | 43 | `result-track:ef6ea012633ce1f26af102e605638842336378eadca673d3e8355a4cc8930ad9` |
+| 5 | `theorem` | [point_count_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FixturesNamespaced.lean/declarations/point-count-two.md) | 49 | `result-track:90b0b717455f8ff038bfec851333fc3eae318ac97c240b6094ec8001d644c84f` |
+| 6 | `theorem` | [forgetting_multiplicity_changes_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FixturesNamespaced.lean/declarations/forgetting-multiplicity-changes-count.md) | 52 | `result-track:4046da466df9484b9f1d982dd7cb1e01498d5df35bca8152f7c6af67dd3fb0ad` |
+| 7 | `theorem` | [shifted_shell_boundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FixturesNamespaced.lean/declarations/shifted-shell-boundary.md) | 58 | `result-track:28e7c3ba0f5e68393095333daeea63220f089bba2bcfbf59a90b470e45774996` |
+| 8 | `theorem` | [shifted_boundary_not_previous_shell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FixturesNamespaced.lean/declarations/shifted-boundary-not-previous-shell.md) | 62 | `result-track:53e205a1525b7705d5372fc04ec59d5f8dbb694d1733a4a67a22ffb60e5b96ff` |
+| 9 | `theorem` | [omitting_shift_changes_shell](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FixturesNamespaced.lean/declarations/omitting-shift-changes-shell.md) | 68 | `result-track:808ac8884bffae8808f980782531dff727602ebfe174caf3f146f58a0df65909` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

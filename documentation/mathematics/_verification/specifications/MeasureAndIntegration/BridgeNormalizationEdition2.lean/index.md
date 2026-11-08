@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/BridgeNormalizationEdition2.lean/index.md) · [Full source](../../../../MeasureAndIntegration/BridgeNormalizationEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeNormalizationEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeNormalizationEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,17 +58,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [unitBump](../../../../MeasureAndIntegration/BridgeNormalizationEdition2.lean/declarations/unitbump.md) | 21 | `declaration-track:eee44f2b194aabdb08dc28eada97eb97f7b3a96d45752bf43d1bbf032e899504` |
-| 2 | `def` | [unitSecond](../../../../MeasureAndIntegration/BridgeNormalizationEdition2.lean/declarations/unitsecond.md) | 24 | `declaration-track:417a01e399bab79bb0f8a39bd048b8135970f606c03a7321f9537d0660cc95a8` |
-| 3 | `theorem` | [unitBump_square_integral](../../../../MeasureAndIntegration/BridgeNormalizationEdition2.lean/declarations/unitbump-square-integral.md) | 27 | `result-track:0116d29e9944cc00925e7a0449e3cc097d122e9894391eec4e8080faadc34d19` |
-| 4 | `theorem` | [unitSecond_square_integral](../../../../MeasureAndIntegration/BridgeNormalizationEdition2.lean/declarations/unitsecond-square-integral.md) | 42 | `result-track:67d5217abdde7da5dcf705f000fbe20c8e73ab4bbd34105e6e2e53528b3a1169` |
-| 5 | `theorem` | [unitSecond_mul_bump_integral](../../../../MeasureAndIntegration/BridgeNormalizationEdition2.lean/declarations/unitsecond-mul-bump-integral.md) | 57 | `result-track:efc3b16795636f16cf5d15cd8666865d4d3fe6689a5fe89be41b3361ccdc34b3` |
-| 6 | `theorem` | [interior_square_scaling](../../../../MeasureAndIntegration/BridgeNormalizationEdition2.lean/declarations/interior-square-scaling.md) | 72 | `result-track:d597c43beac1551337191f14395de9335593da364c163f52508c304f9ddeaa46` |
-| 7 | `theorem` | [unit_dilation_square_integral](../../../../MeasureAndIntegration/BridgeNormalizationEdition2.lean/declarations/unit-dilation-square-integral.md) | 83 | `result-track:f2af0c2363f60629454a4dd039a858daa06bdc1740d5da81e1c2a3c6f4db597e` |
-| 8 | `theorem` | [explicit_normalization](../../../../MeasureAndIntegration/BridgeNormalizationEdition2.lean/declarations/explicit-normalization.md) | 103 | `result-track:7c038e8dc286e0b541d549fb992e643ac8ffaa4d1ade91d9c3e5eeeb24ded69d` |
-| 9 | `theorem` | [normalized_square_integrable](../../../../MeasureAndIntegration/BridgeNormalizationEdition2.lean/declarations/normalized-square-integrable.md) | 123 | `result-track:498a0310a6f5893cbbb224aa129fc1fbbb5626c9689a787c3fa1d1e981078ef6` |
-| 10 | `theorem` | [normalized_square_integral](../../../../MeasureAndIntegration/BridgeNormalizationEdition2.lean/declarations/normalized-square-integral.md) | 129 | `result-track:571dfaa6eca76fa325fb5d839e52474a43108a60b6aa1b073a7deb15cc425a38` |
-| 11 | `theorem` | [normalized_ne_zero](../../../../MeasureAndIntegration/BridgeNormalizationEdition2.lean/declarations/normalized-ne-zero.md) | 136 | `result-track:9a10469a902fbf71e534fdf32e5a144083329f1b37884b2cbb9009eaf6c4fedc` |
+| 1 | `def` | [unitBump](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeNormalizationEdition2.lean/declarations/unitbump.md) | 21 | `declaration-track:eee44f2b194aabdb08dc28eada97eb97f7b3a96d45752bf43d1bbf032e899504` |
+| 2 | `def` | [unitSecond](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeNormalizationEdition2.lean/declarations/unitsecond.md) | 24 | `declaration-track:417a01e399bab79bb0f8a39bd048b8135970f606c03a7321f9537d0660cc95a8` |
+| 3 | `theorem` | [unitBump_square_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeNormalizationEdition2.lean/declarations/unitbump-square-integral.md) | 27 | `result-track:0116d29e9944cc00925e7a0449e3cc097d122e9894391eec4e8080faadc34d19` |
+| 4 | `theorem` | [unitSecond_square_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeNormalizationEdition2.lean/declarations/unitsecond-square-integral.md) | 42 | `result-track:67d5217abdde7da5dcf705f000fbe20c8e73ab4bbd34105e6e2e53528b3a1169` |
+| 5 | `theorem` | [unitSecond_mul_bump_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeNormalizationEdition2.lean/declarations/unitsecond-mul-bump-integral.md) | 57 | `result-track:efc3b16795636f16cf5d15cd8666865d4d3fe6689a5fe89be41b3361ccdc34b3` |
+| 6 | `theorem` | [interior_square_scaling](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeNormalizationEdition2.lean/declarations/interior-square-scaling.md) | 72 | `result-track:d597c43beac1551337191f14395de9335593da364c163f52508c304f9ddeaa46` |
+| 7 | `theorem` | [unit_dilation_square_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeNormalizationEdition2.lean/declarations/unit-dilation-square-integral.md) | 83 | `result-track:f2af0c2363f60629454a4dd039a858daa06bdc1740d5da81e1c2a3c6f4db597e` |
+| 8 | `theorem` | [explicit_normalization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeNormalizationEdition2.lean/declarations/explicit-normalization.md) | 103 | `result-track:7c038e8dc286e0b541d549fb992e643ac8ffaa4d1ade91d9c3e5eeeb24ded69d` |
+| 9 | `theorem` | [normalized_square_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeNormalizationEdition2.lean/declarations/normalized-square-integrable.md) | 123 | `result-track:498a0310a6f5893cbbb224aa129fc1fbbb5626c9689a787c3fa1d1e981078ef6` |
+| 10 | `theorem` | [normalized_square_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeNormalizationEdition2.lean/declarations/normalized-square-integral.md) | 129 | `result-track:571dfaa6eca76fa325fb5d839e52474a43108a60b6aa1b073a7deb15cc425a38` |
+| 11 | `theorem` | [normalized_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BridgeNormalizationEdition2.lean/declarations/normalized-ne-zero.md) | 136 | `result-track:9a10469a902fbf71e534fdf32e5a144083329f1b37884b2cbb9009eaf6c4fedc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

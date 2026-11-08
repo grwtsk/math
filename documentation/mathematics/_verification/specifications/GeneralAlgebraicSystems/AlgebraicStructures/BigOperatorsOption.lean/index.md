@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsOption.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsOption.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsOption.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsOption.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [prod_insertNone](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsOption.lean/declarations/prod-insertnone.md) | 27 | `result-track:c95a0b9a894998d254faab2b803c6d05dbc7607d92b502499d4aad2193aba017` |
-| 2 | `theorem` | [prod_eraseNone](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsOption.lean/declarations/prod-erasenone.md) | 33 | `result-track:12c1d41445f3c827b7ea180cda7f18ca7216e9659e7f59e852600b5939f5dc68` |
+| 1 | `theorem` | [prod_insertNone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsOption.lean/declarations/prod-insertnone.md) | 27 | `result-track:c95a0b9a894998d254faab2b803c6d05dbc7607d92b502499d4aad2193aba017` |
+| 2 | `theorem` | [prod_eraseNone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsOption.lean/declarations/prod-erasenone.md) | 33 | `result-track:12c1d41445f3c827b7ea180cda7f18ca7216e9659e7f59e852600b5939f5dc68` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

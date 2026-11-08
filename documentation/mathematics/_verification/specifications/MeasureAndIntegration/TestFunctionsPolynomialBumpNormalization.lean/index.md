@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/TestFunctionsPolynomialBumpNormalization.lean/index.md) · [Full source](../../../../MeasureAndIntegration/TestFunctionsPolynomialBumpNormalization.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TestFunctionsPolynomialBumpNormalization.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TestFunctionsPolynomialBumpNormalization.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.WeakDerivatives.PolynomialBump`](../../../../MeasureAndIntegration/PolynomialBump.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.WeakDerivatives.PolynomialBump`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PolynomialBump.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Analysis.SpecialFunctions.Integrals.Basic` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,17 +58,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [unitBump](../../../../MeasureAndIntegration/TestFunctionsPolynomialBumpNormalization.lean/declarations/unitbump.md) | 24 | `declaration-track:a6ca20269b72f924dc236daec4f117509a15d8521669543e40c111b0f6e01ef9` |
-| 2 | `def` | [unitSecond](../../../../MeasureAndIntegration/TestFunctionsPolynomialBumpNormalization.lean/declarations/unitsecond.md) | 27 | `declaration-track:11be1cd5cfd6423d38ba69365ebdf648752b18f65ff319d3d14053cedfc1c2d3` |
-| 3 | `theorem` | [unitBump_square_integral](../../../../MeasureAndIntegration/TestFunctionsPolynomialBumpNormalization.lean/declarations/unitbump-square-integral.md) | 30 | `result-track:3051588cf155479588a9c58162073ae7bbc6bf4ac6d46b4e67fefb5bca9780b6` |
-| 4 | `theorem` | [unitSecond_square_integral](../../../../MeasureAndIntegration/TestFunctionsPolynomialBumpNormalization.lean/declarations/unitsecond-square-integral.md) | 45 | `result-track:dc71219e77d104621e9a49977fd79c9cf639625f58ac56b66e513bc7cc7769ba` |
-| 5 | `theorem` | [unitSecond_mul_bump_integral](../../../../MeasureAndIntegration/TestFunctionsPolynomialBumpNormalization.lean/declarations/unitsecond-mul-bump-integral.md) | 60 | `result-track:51f6a35575cc4609e00bbd53b099b2115ec0004a3b1944c0cd54498abd364e1a` |
-| 6 | `theorem` | [interior_square_scaling](../../../../MeasureAndIntegration/TestFunctionsPolynomialBumpNormalization.lean/declarations/interior-square-scaling.md) | 75 | `result-track:4f3513fc3c507c7b3dd44072875b61e05259133e2559ff5b2988c6b13319f8cb` |
-| 7 | `theorem` | [unit_dilation_square_integral](../../../../MeasureAndIntegration/TestFunctionsPolynomialBumpNormalization.lean/declarations/unit-dilation-square-integral.md) | 86 | `result-track:28cb71799648cabf53ee3efb978f2d649a0822f3cb3668c98e60a8ae14c575f0` |
-| 8 | `theorem` | [explicit_normalization](../../../../MeasureAndIntegration/TestFunctionsPolynomialBumpNormalization.lean/declarations/explicit-normalization.md) | 106 | `result-track:dc8ad4d994c5710c4fe631099b626d738445af4cc859b46b66535d13b992824e` |
-| 9 | `theorem` | [normalized_square_integrable](../../../../MeasureAndIntegration/TestFunctionsPolynomialBumpNormalization.lean/declarations/normalized-square-integrable.md) | 126 | `result-track:14cd506a3117946b5c7b939239fed6aee96394b403fbef761ab55acd25c8383d` |
-| 10 | `theorem` | [normalized_square_integral](../../../../MeasureAndIntegration/TestFunctionsPolynomialBumpNormalization.lean/declarations/normalized-square-integral.md) | 132 | `result-track:93332a3c74ef734d3664fc72ab33cda1b525c926e7b52f12e55efe5c489ca92e` |
-| 11 | `theorem` | [normalized_ne_zero](../../../../MeasureAndIntegration/TestFunctionsPolynomialBumpNormalization.lean/declarations/normalized-ne-zero.md) | 139 | `result-track:5d974a96932a5e9197c40c871d316da9561dc9baaf1e5c1641f6fa74d812d91d` |
+| 1 | `def` | [unitBump](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TestFunctionsPolynomialBumpNormalization.lean/declarations/unitbump.md) | 24 | `declaration-track:a6ca20269b72f924dc236daec4f117509a15d8521669543e40c111b0f6e01ef9` |
+| 2 | `def` | [unitSecond](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TestFunctionsPolynomialBumpNormalization.lean/declarations/unitsecond.md) | 27 | `declaration-track:11be1cd5cfd6423d38ba69365ebdf648752b18f65ff319d3d14053cedfc1c2d3` |
+| 3 | `theorem` | [unitBump_square_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TestFunctionsPolynomialBumpNormalization.lean/declarations/unitbump-square-integral.md) | 30 | `result-track:3051588cf155479588a9c58162073ae7bbc6bf4ac6d46b4e67fefb5bca9780b6` |
+| 4 | `theorem` | [unitSecond_square_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TestFunctionsPolynomialBumpNormalization.lean/declarations/unitsecond-square-integral.md) | 45 | `result-track:dc71219e77d104621e9a49977fd79c9cf639625f58ac56b66e513bc7cc7769ba` |
+| 5 | `theorem` | [unitSecond_mul_bump_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TestFunctionsPolynomialBumpNormalization.lean/declarations/unitsecond-mul-bump-integral.md) | 60 | `result-track:51f6a35575cc4609e00bbd53b099b2115ec0004a3b1944c0cd54498abd364e1a` |
+| 6 | `theorem` | [interior_square_scaling](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TestFunctionsPolynomialBumpNormalization.lean/declarations/interior-square-scaling.md) | 75 | `result-track:4f3513fc3c507c7b3dd44072875b61e05259133e2559ff5b2988c6b13319f8cb` |
+| 7 | `theorem` | [unit_dilation_square_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TestFunctionsPolynomialBumpNormalization.lean/declarations/unit-dilation-square-integral.md) | 86 | `result-track:28cb71799648cabf53ee3efb978f2d649a0822f3cb3668c98e60a8ae14c575f0` |
+| 8 | `theorem` | [explicit_normalization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TestFunctionsPolynomialBumpNormalization.lean/declarations/explicit-normalization.md) | 106 | `result-track:dc8ad4d994c5710c4fe631099b626d738445af4cc859b46b66535d13b992824e` |
+| 9 | `theorem` | [normalized_square_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TestFunctionsPolynomialBumpNormalization.lean/declarations/normalized-square-integrable.md) | 126 | `result-track:14cd506a3117946b5c7b939239fed6aee96394b403fbef761ab55acd25c8383d` |
+| 10 | `theorem` | [normalized_square_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TestFunctionsPolynomialBumpNormalization.lean/declarations/normalized-square-integral.md) | 132 | `result-track:93332a3c74ef734d3664fc72ab33cda1b525c926e7b52f12e55efe5c489ca92e` |
+| 11 | `theorem` | [normalized_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TestFunctionsPolynomialBumpNormalization.lean/declarations/normalized-ne-zero.md) | 139 | `result-track:5d974a96932a5e9197c40c871d316da9561dc9baaf1e5c1641f6fa74d812d91d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

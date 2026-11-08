@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/TopologyTopologicalClassificationHypotheses.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/TopologyTopologicalClassificationHypotheses.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TopologyTopologicalClassificationHypotheses.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TopologyTopologicalClassificationHypotheses.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TopologicalClassificationHypotheses](../../../../../ComputerScience/AlgorithmsInComputerScience/TopologyTopologicalClassificationHypotheses.lean/declarations/topologicalclassificationhypotheses.md) | 6 | `declaration-track:1bb89cd227c5873cef606ea6a8fb3cb87524d3814feec460aa7b02c874e7f2b4` |
-| 2 | `inductive` | [ThreeManifoldPrimePiece](../../../../../ComputerScience/AlgorithmsInComputerScience/TopologyTopologicalClassificationHypotheses.lean/declarations/threemanifoldprimepiece.md) | 12 | `declaration-track:fe1e31edbf7c362d08e0d1c4a57964487266ebc8e53b73d3e4ea620ea13db810` |
-| 3 | `structure` | [ConnectedSumClassification](../../../../../ComputerScience/AlgorithmsInComputerScience/TopologyTopologicalClassificationHypotheses.lean/declarations/connectedsumclassification.md) | 20 | `declaration-track:9905fe58c051b0c01f0da47e1472ed7d425ddd08cb1a01fee59c01c4df390d7c` |
-| 4 | `theorem` | [topology_classification_under_extinction_hypotheses](../../../../../ComputerScience/AlgorithmsInComputerScience/TopologyTopologicalClassificationHypotheses.lean/declarations/topology-classification-under-extinction-hypotheses.md) | 25 | `result-track:939f8a4318eeee2e85829ccb27701fdd05460a9847dc60a9d4bf79057be1247c` |
+| 1 | `structure` | [TopologicalClassificationHypotheses](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TopologyTopologicalClassificationHypotheses.lean/declarations/topologicalclassificationhypotheses.md) | 6 | `declaration-track:1bb89cd227c5873cef606ea6a8fb3cb87524d3814feec460aa7b02c874e7f2b4` |
+| 2 | `inductive` | [ThreeManifoldPrimePiece](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TopologyTopologicalClassificationHypotheses.lean/declarations/threemanifoldprimepiece.md) | 12 | `declaration-track:fe1e31edbf7c362d08e0d1c4a57964487266ebc8e53b73d3e4ea620ea13db810` |
+| 3 | `structure` | [ConnectedSumClassification](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TopologyTopologicalClassificationHypotheses.lean/declarations/connectedsumclassification.md) | 20 | `declaration-track:9905fe58c051b0c01f0da47e1472ed7d425ddd08cb1a01fee59c01c4df390d7c` |
+| 4 | `theorem` | [topology_classification_under_extinction_hypotheses](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TopologyTopologicalClassificationHypotheses.lean/declarations/topology-classification-under-extinction-hypotheses.md) | 25 | `result-track:939f8a4318eeee2e85829ccb27701fdd05460a9847dc60a9d4bf79057be1247c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

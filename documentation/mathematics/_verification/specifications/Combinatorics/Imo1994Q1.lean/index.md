@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/Imo1994Q1.lean/index.md) · [Full source](../../../../Combinatorics/Imo1994Q1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Imo1994Q1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Imo1994Q1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -63,8 +63,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [tedious](../../../../Combinatorics/Imo1994Q1.lean/declarations/tedious.md) | 40 | `result-track:ee79a0def380cdfcf861205ed065c103ab34c0f50c6acff8f1357a0fe067f0b6` |
-| 2 | `theorem` | [imo1994_q1](../../../../Combinatorics/Imo1994Q1.lean/declarations/imo1994-q1.md) | 54 | `result-track:21a24bf52f80e4620d99e77c9aa91f7182e3f26bb9fc1a295d35c61a7bec9119` |
+| 1 | `theorem` | [tedious](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Imo1994Q1.lean/declarations/tedious.md) | 40 | `result-track:ee79a0def380cdfcf861205ed065c103ab34c0f50c6acff8f1357a0fe067f0b6` |
+| 2 | `theorem` | [imo1994_q1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Imo1994Q1.lean/declarations/imo1994-q1.md) | 54 | `result-track:21a24bf52f80e4620d99e77c9aa91f7182e3f26bb9fc1a295d35c61a7bec9119` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

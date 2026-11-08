@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/DeltaConvergenceLiteralSnippetNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/DeltaConvergenceLiteralSnippetNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DeltaConvergenceLiteralSnippetNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DeltaConvergenceLiteralSnippetNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../MeasureAndIntegration/DeltaConvergenceLiteralSnippetNamespaced.lean/declarations/example-source-edition-6.md) | 15 | `declaration-track:a80bf605a46be8974b03054ea3052ca59b8c6877a2a781297fbd5276c69c1832` |
-| 2 | `example` | [(anonymous)](../../../../MeasureAndIntegration/DeltaConvergenceLiteralSnippetNamespaced.lean/declarations/example-source-edition-7.md) | 18 | `declaration-track:b30f05e7680884fe65c7a968d0211fe8b56a7cc8cc08aa850ae5640a8f671eae` |
-| 3 | `example` | [(anonymous)](../../../../MeasureAndIntegration/DeltaConvergenceLiteralSnippetNamespaced.lean/declarations/example.md) | 22 | `declaration-track:1a3a258d8bf7ef764f202661c899943bc13c879d31f078b1c6d37bc9a8f2e319` |
-| 4 | `example` | [(anonymous)](../../../../MeasureAndIntegration/DeltaConvergenceLiteralSnippetNamespaced.lean/declarations/example-source-edition-2.md) | 26 | `declaration-track:34d91582d639a68e37eb17ac74a2398a7946fa6f5b4e223ed9bee131564be822` |
-| 5 | `example` | [(anonymous)](../../../../MeasureAndIntegration/DeltaConvergenceLiteralSnippetNamespaced.lean/declarations/example-source-edition-3.md) | 29 | `declaration-track:3b4800989f76e8a0d7db9e81669e2a99aed27fdf8594151829bbf691013a49c8` |
-| 6 | `example` | [(anonymous)](../../../../MeasureAndIntegration/DeltaConvergenceLiteralSnippetNamespaced.lean/declarations/example-source-edition-8.md) | 30 | `declaration-track:e7d4f28411ba8917bb944ca477e9766015d8d3a45896d3c41270b812509797a3` |
-| 7 | `example` | [(anonymous)](../../../../MeasureAndIntegration/DeltaConvergenceLiteralSnippetNamespaced.lean/declarations/example-source-edition-4.md) | 35 | `declaration-track:6423ee7e0a860cdf2ed1e063d87a0a477558558b8f6094a78ffa0e030996f6ca` |
-| 8 | `example` | [(anonymous)](../../../../MeasureAndIntegration/DeltaConvergenceLiteralSnippetNamespaced.lean/declarations/example-source-edition-5.md) | 40 | `declaration-track:927682c7e7a8051f0efcc8620e44cdd1a013711cfabd7736186099d719dffbeb` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DeltaConvergenceLiteralSnippetNamespaced.lean/declarations/example-source-edition-6.md) | 15 | `declaration-track:a80bf605a46be8974b03054ea3052ca59b8c6877a2a781297fbd5276c69c1832` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DeltaConvergenceLiteralSnippetNamespaced.lean/declarations/example-source-edition-7.md) | 18 | `declaration-track:b30f05e7680884fe65c7a968d0211fe8b56a7cc8cc08aa850ae5640a8f671eae` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DeltaConvergenceLiteralSnippetNamespaced.lean/declarations/example.md) | 22 | `declaration-track:1a3a258d8bf7ef764f202661c899943bc13c879d31f078b1c6d37bc9a8f2e319` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DeltaConvergenceLiteralSnippetNamespaced.lean/declarations/example-source-edition-2.md) | 26 | `declaration-track:34d91582d639a68e37eb17ac74a2398a7946fa6f5b4e223ed9bee131564be822` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DeltaConvergenceLiteralSnippetNamespaced.lean/declarations/example-source-edition-3.md) | 29 | `declaration-track:3b4800989f76e8a0d7db9e81669e2a99aed27fdf8594151829bbf691013a49c8` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DeltaConvergenceLiteralSnippetNamespaced.lean/declarations/example-source-edition-8.md) | 30 | `declaration-track:e7d4f28411ba8917bb944ca477e9766015d8d3a45896d3c41270b812509797a3` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DeltaConvergenceLiteralSnippetNamespaced.lean/declarations/example-source-edition-4.md) | 35 | `declaration-track:6423ee7e0a860cdf2ed1e063d87a0a477558558b8f6094a78ffa0e030996f6ca` |
+| 8 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/DeltaConvergenceLiteralSnippetNamespaced.lean/declarations/example-source-edition-5.md) | 40 | `declaration-track:927682c7e7a8051f0efcc8620e44cdd1a013711cfabd7736186099d719dffbeb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

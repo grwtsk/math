@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SheafGluingPresheaf.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SheafGluingPresheaf.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SheafGluingPresheaf.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SheafGluingPresheaf.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Presheaf](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SheafGluingPresheaf.lean/declarations/presheaf.md) | 19 | `declaration-track:68cfeddd9fc357d463afee2bd4f433a01639750c5cc9d304eac4fe29cba5220d` |
-| 2 | `structure` | [SheafCondition](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SheafGluingPresheaf.lean/declarations/sheafcondition.md) | 25 | `declaration-track:d2e1dea539238def7d068320e1739a2b01e380b988ffb900435eccdcbf42b61c` |
-| 3 | `structure` | [RodgersTaoGluingContract](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SheafGluingPresheaf.lean/declarations/rodgerstaogluingcontract.md) | 34 | `declaration-track:a04933447f13f6f15091750d55107383fb8904d4e460519ab537898e750dd409` |
-| 4 | `theorem` | [sheaf_glues_from_compatibility](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SheafGluingPresheaf.lean/declarations/sheaf-glues-from-compatibility.md) | 42 | `result-track:a9a45172ca48c68a43d698c427f63ccf1ea1e0b300030e990a48376b154fcb5b` |
+| 1 | `structure` | [Presheaf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SheafGluingPresheaf.lean/declarations/presheaf.md) | 19 | `declaration-track:68cfeddd9fc357d463afee2bd4f433a01639750c5cc9d304eac4fe29cba5220d` |
+| 2 | `structure` | [SheafCondition](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SheafGluingPresheaf.lean/declarations/sheafcondition.md) | 25 | `declaration-track:d2e1dea539238def7d068320e1739a2b01e380b988ffb900435eccdcbf42b61c` |
+| 3 | `structure` | [RodgersTaoGluingContract](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SheafGluingPresheaf.lean/declarations/rodgerstaogluingcontract.md) | 34 | `declaration-track:a04933447f13f6f15091750d55107383fb8904d4e460519ab537898e750dd409` |
+| 4 | `theorem` | [sheaf_glues_from_compatibility](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SheafGluingPresheaf.lean/declarations/sheaf-glues-from-compatibility.md) | 42 | `result-track:a9a45172ca48c68a43d698c427f63ccf1ea1e0b300030e990a48376b154fcb5b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

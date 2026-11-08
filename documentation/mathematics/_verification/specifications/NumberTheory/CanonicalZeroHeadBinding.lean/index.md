@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/CanonicalZeroHeadBinding.lean/index.md) · [Full source](../../../../NumberTheory/CanonicalZeroHeadBinding.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalZeroHeadBinding.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalZeroHeadBinding.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,9 +46,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Combinatorics.Enumerative.PositiveMassExhaustion`](../../../../Combinatorics/PositiveMassExhaustion.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.RationalDiskSeparation`](../../../../FunctionsOfAComplexVariable/RationalDiskSeparation.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.NumberTheory.Chebyshev.CanonicalRationalTentEvaluation`](../../../../NumberTheory/CanonicalRationalTentEvaluation.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.Combinatorics.Enumerative.PositiveMassExhaustion`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PositiveMassExhaustion.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.RationalDiskSeparation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/RationalDiskSeparation.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.CanonicalRationalTentEvaluation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalRationalTentEvaluation.lean/index.md) — import line 6; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,17 +59,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [LocalWitnesses](../../../../NumberTheory/CanonicalZeroHeadBinding.lean/declarations/localwitnesses.md) | 37 | `declaration-track:afb9e7681da20072fb834eed603ea721389a857efab5807e52cc3f7b32ef4b1b` |
-| 2 | `def` | [witness](../../../../NumberTheory/CanonicalZeroHeadBinding.lean/declarations/witness.md) | 43 | `declaration-track:1c6deb15a3479263e966e57cac9369cdeaee3322fce4c676f46ff1e245d30b99` |
-| 3 | `theorem` | [witness_spec](../../../../NumberTheory/CanonicalZeroHeadBinding.lean/declarations/witness-spec.md) | 46 | `result-track:b5021fd5d4d3fe272533f88dd602210a8cd3d83ba449b24a13688c30eda73b98` |
-| 4 | `theorem` | [head_subtype_mass](../../../../NumberTheory/CanonicalZeroHeadBinding.lean/declarations/head-subtype-mass.md) | 54 | `result-track:615ade9935ddb1146fc64e247e5baaa4c016fee95123bbb129d244aeb7263090` |
-| 5 | `def` | [of_local_witnesses](../../../../NumberTheory/CanonicalZeroHeadBinding.lean/declarations/of-local-witnesses.md) | 61 | `declaration-track:b4f025653c1bc1e126c5e12ffc1f36b7d87984fd8e7fc73590abc917930df2a7` |
-| 6 | `theorem` | [exact_count_of_binding](../../../../NumberTheory/CanonicalZeroHeadBinding.lean/declarations/exact-count-of-binding.md) | 94 | `result-track:40f0f2d41217e3ff4983fc750fa234a365d6dd9f1a6ae10dc2bfa48fb06ba9bf` |
-| 7 | `theorem` | [unique_zero_in_disk](../../../../NumberTheory/CanonicalZeroHeadBinding.lean/declarations/unique-zero-in-disk.md) | 104 | `result-track:609e162aab0f2f122b62ed6550946783920d158dde01a3d6adfbfbf3eb930e26` |
-| 8 | `def` | [of_simple_witnesses](../../../../NumberTheory/CanonicalZeroHeadBinding.lean/declarations/of-simple-witnesses.md) | 126 | `declaration-track:c03d96509f36f9a3c689fbe9424429694812d1b19f00754e44294a4f854e1ace` |
-| 9 | `theorem` | [all_simple_of_unit_binding](../../../../NumberTheory/CanonicalZeroHeadBinding.lean/declarations/all-simple-of-unit-binding.md) | 143 | `result-track:7f75811d299cc3714105a67b1b560f818dd5fd44702dd383e9b9c2e5b5f94c84` |
-| 10 | `theorem` | [verified_head_of_local_witnesses](../../../../NumberTheory/CanonicalZeroHeadBinding.lean/declarations/verified-head-of-local-witnesses.md) | 155 | `result-track:80d3ea2f394f48681fc1a116cadd0ec05e18d268561a6c9d0b35a06f8d002388` |
-| 11 | `theorem` | [prime_in_square_of_saturated_disks](../../../../NumberTheory/CanonicalZeroHeadBinding.lean/declarations/prime-in-square-of-saturated-disks.md) | 170 | `result-track:4ac294e475bb1e5ce2ab87679aa2b292134eb3ef5d6d969126d16e193d9937f3` |
+| 1 | `def` | [LocalWitnesses](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalZeroHeadBinding.lean/declarations/localwitnesses.md) | 37 | `declaration-track:afb9e7681da20072fb834eed603ea721389a857efab5807e52cc3f7b32ef4b1b` |
+| 2 | `def` | [witness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalZeroHeadBinding.lean/declarations/witness.md) | 43 | `declaration-track:1c6deb15a3479263e966e57cac9369cdeaee3322fce4c676f46ff1e245d30b99` |
+| 3 | `theorem` | [witness_spec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalZeroHeadBinding.lean/declarations/witness-spec.md) | 46 | `result-track:b5021fd5d4d3fe272533f88dd602210a8cd3d83ba449b24a13688c30eda73b98` |
+| 4 | `theorem` | [head_subtype_mass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalZeroHeadBinding.lean/declarations/head-subtype-mass.md) | 54 | `result-track:615ade9935ddb1146fc64e247e5baaa4c016fee95123bbb129d244aeb7263090` |
+| 5 | `def` | [of_local_witnesses](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalZeroHeadBinding.lean/declarations/of-local-witnesses.md) | 61 | `declaration-track:b4f025653c1bc1e126c5e12ffc1f36b7d87984fd8e7fc73590abc917930df2a7` |
+| 6 | `theorem` | [exact_count_of_binding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalZeroHeadBinding.lean/declarations/exact-count-of-binding.md) | 94 | `result-track:40f0f2d41217e3ff4983fc750fa234a365d6dd9f1a6ae10dc2bfa48fb06ba9bf` |
+| 7 | `theorem` | [unique_zero_in_disk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalZeroHeadBinding.lean/declarations/unique-zero-in-disk.md) | 104 | `result-track:609e162aab0f2f122b62ed6550946783920d158dde01a3d6adfbfbf3eb930e26` |
+| 8 | `def` | [of_simple_witnesses](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalZeroHeadBinding.lean/declarations/of-simple-witnesses.md) | 126 | `declaration-track:c03d96509f36f9a3c689fbe9424429694812d1b19f00754e44294a4f854e1ace` |
+| 9 | `theorem` | [all_simple_of_unit_binding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalZeroHeadBinding.lean/declarations/all-simple-of-unit-binding.md) | 143 | `result-track:7f75811d299cc3714105a67b1b560f818dd5fd44702dd383e9b9c2e5b5f94c84` |
+| 10 | `theorem` | [verified_head_of_local_witnesses](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalZeroHeadBinding.lean/declarations/verified-head-of-local-witnesses.md) | 155 | `result-track:80d3ea2f394f48681fc1a116cadd0ec05e18d268561a6c9d0b35a06f8d002388` |
+| 11 | `theorem` | [prime_in_square_of_saturated_disks](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalZeroHeadBinding.lean/declarations/prime-in-square-of-saturated-disks.md) | 170 | `result-track:4ac294e475bb1e5ce2ab87679aa2b292134eb3ef5d6d969126d16e193d9937f3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

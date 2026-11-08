@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryNamespacedAlternative4SourceEdition2.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryNamespacedAlternative4SourceEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryNamespacedAlternative4SourceEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryNamespacedAlternative4SourceEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [frequency_moment_integrable](../../../../MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryNamespacedAlternative4SourceEdition2.lean/declarations/frequency-moment-integrable.md) | 30 | `result-track:4f233cd714f7123a2d656a4c8756ec772a8fade7ffbc3e425b27212de0da7991` |
-| 2 | `theorem` | [frequency_moment_plancherel](../../../../MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryNamespacedAlternative4SourceEdition2.lean/declarations/frequency-moment-plancherel.md) | 38 | `result-track:7e88a4e82579f53ecb58899ded72a655f705cf4b77eed5ea0c2c0cede69afd2f` |
-| 3 | `theorem` | [quadratic_integrand_integrable](../../../../MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryNamespacedAlternative4SourceEdition2.lean/declarations/quadratic-integrand-integrable.md) | 47 | `result-track:a6147d586b21efce3da8651e54adfc7969390e7158731c3b642591370d38c9a1` |
-| 4 | `theorem` | [logarithmicEnergy_le_h1](../../../../MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryNamespacedAlternative4SourceEdition2.lean/declarations/logarithmicenergy-le-h1.md) | 57 | `result-track:a69caf7e343df560583f1977f476c65589c98f53317f3ec4da016dcd55d42b11` |
+| 1 | `theorem` | [frequency_moment_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryNamespacedAlternative4SourceEdition2.lean/declarations/frequency-moment-integrable.md) | 30 | `result-track:4f233cd714f7123a2d656a4c8756ec772a8fade7ffbc3e425b27212de0da7991` |
+| 2 | `theorem` | [frequency_moment_plancherel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryNamespacedAlternative4SourceEdition2.lean/declarations/frequency-moment-plancherel.md) | 38 | `result-track:7e88a4e82579f53ecb58899ded72a655f705cf4b77eed5ea0c2c0cede69afd2f` |
+| 3 | `theorem` | [quadratic_integrand_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryNamespacedAlternative4SourceEdition2.lean/declarations/quadratic-integrand-integrable.md) | 47 | `result-track:a6147d586b21efce3da8651e54adfc7969390e7158731c3b642591370d38c9a1` |
+| 4 | `theorem` | [logarithmicEnergy_le_h1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryNamespacedAlternative4SourceEdition2.lean/declarations/logarithmicenergy-le-h1.md) | 57 | `result-track:a69caf7e343df560583f1977f476c65589c98f53317f3ec4da016dcd55d42b11` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteSourceBitsPointsAndRelations.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteSourceBitsPointsAndRelations.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteSourceBitsPointsAndRelations.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteSourceBitsPointsAndRelations.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [byteBitMSB](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteSourceBitsPointsAndRelations.lean/declarations/bytebitmsb.md) | 37 | `declaration-track:4a44beedf8b4da59e3d28c1c04eff7b4a613a0fa9957e27818ee8de5f18a5672` |
-| 2 | `inductive` | [SourcePoint](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteSourceBitsPointsAndRelations.lean/declarations/sourcepoint.md) | 42 | `declaration-track:e88fbae129bcba41c0745e2f4ad3cf7f9d4eec4a29d026ebc4183e505fac6325` |
-| 3 | `inductive` | [SourceRelation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteSourceBitsPointsAndRelations.lean/declarations/sourcerelation.md) | 49 | `declaration-track:08da833a950fe3d61ad750c733a7b9d2d282d14128271893a8ff75151759453f` |
-| 4 | `def` | [SourceRelation.arity](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FiniteSourceBitsPointsAndRelations.lean/declarations/sourcerelation-arity.md) | 57 | `declaration-track:24480ac042d1fc6c9ac05e946f4106a7be9527511d0f6ecaedaac56df401617b` |
+| 1 | `def` | [byteBitMSB](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteSourceBitsPointsAndRelations.lean/declarations/bytebitmsb.md) | 37 | `declaration-track:4a44beedf8b4da59e3d28c1c04eff7b4a613a0fa9957e27818ee8de5f18a5672` |
+| 2 | `inductive` | [SourcePoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteSourceBitsPointsAndRelations.lean/declarations/sourcepoint.md) | 42 | `declaration-track:e88fbae129bcba41c0745e2f4ad3cf7f9d4eec4a29d026ebc4183e505fac6325` |
+| 3 | `inductive` | [SourceRelation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteSourceBitsPointsAndRelations.lean/declarations/sourcerelation.md) | 49 | `declaration-track:08da833a950fe3d61ad750c733a7b9d2d282d14128271893a8ff75151759453f` |
+| 4 | `def` | [SourceRelation.arity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FiniteSourceBitsPointsAndRelations.lean/declarations/sourcerelation-arity.md) | 57 | `declaration-track:24480ac042d1fc6c9ac05e946f4106a7be9527511d0f6ecaedaac56df401617b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

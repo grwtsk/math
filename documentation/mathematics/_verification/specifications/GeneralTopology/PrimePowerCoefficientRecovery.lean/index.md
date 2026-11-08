@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/PrimePowerCoefficientRecovery.lean/index.md) · [Full source](../../../../GeneralTopology/PrimePowerCoefficientRecovery.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PrimePowerCoefficientRecovery.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PrimePowerCoefficientRecovery.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.PrimePowerArithmeticPackingCoordinate`](../../../../GeneralTopology/PrimePowerArithmeticPackingCoordinate.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.PrimePowerArithmeticPackingCoordinate`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PrimePowerArithmeticPackingCoordinate.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,18 +58,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ExplicitFormulaPrimePowerCoefficient](../../../../GeneralTopology/PrimePowerCoefficientRecovery.lean/declarations/explicitformulaprimepowercoefficient.md) | 34 | `declaration-track:90a53c2142f97944e3a7242d45af0821b2dc2855b35a66330d2c74a93d87faed` |
-| 2 | `theorem` | [mangoldtScale_pos](../../../../GeneralTopology/PrimePowerCoefficientRecovery.lean/declarations/mangoldtscale-pos.md) | 43 | `result-track:70ad4a5f101e84877c4ae2648b21c95f503c90f1f3865c06754e0d5b004e72d7` |
-| 3 | `theorem` | [mangoldtScale_ne_zero](../../../../GeneralTopology/PrimePowerCoefficientRecovery.lean/declarations/mangoldtscale-ne-zero.md) | 49 | `result-track:d91d09d330dcc63fa94ef957eb4a472149766f28ad556a4a5901c103a7d0a14f` |
-| 4 | `def` | [toWeight](../../../../GeneralTopology/PrimePowerCoefficientRecovery.lean/declarations/toweight.md) | 58 | `declaration-track:7f1c0a48d14422a84ccbdb22ba8806f1be1f0b7ecd961c6b0e4ec21a618c1376` |
-| 5 | `theorem` | [packingPoint_y_eq_coefficient](../../../../GeneralTopology/PrimePowerCoefficientRecovery.lean/declarations/packingpoint-y-eq-coefficient.md) | 69 | `result-track:fdd6a48824cbdbf77b03262cdc2e5e8692505e613d3cf0352963cb3d1de5e897` |
-| 6 | `theorem` | [packingPoint_x_eq_logScale](../../../../GeneralTopology/PrimePowerCoefficientRecovery.lean/declarations/packingpoint-x-eq-logscale.md) | 82 | `result-track:4f9febcff690021c95efb8f7461279b96e2ed961c3fd22e7d264645e25181bc5` |
-| 7 | `theorem` | [testWeight_unique](../../../../GeneralTopology/PrimePowerCoefficientRecovery.lean/declarations/testweight-unique.md) | 90 | `result-track:baee7b8c34ed964ce08416fc692f3e512f00a01f05637ddb5192eeba740f0ee9` |
-| 8 | `structure` | [PrimePowerCoefficientRecurrence](../../../../GeneralTopology/PrimePowerCoefficientRecovery.lean/declarations/primepowercoefficientrecurrence.md) | 102 | `declaration-track:0b71bc09bea5fd5afdd4c68ad084be72bdcaac17c4975c2024a3b97dae4d81c7` |
-| 9 | `def` | [toCoordinateRecurrence](../../../../GeneralTopology/PrimePowerCoefficientRecovery.lean/declarations/tocoordinaterecurrence.md) | 124 | `declaration-track:b1101be75277d4e6a758c2c5004094de4ca34b99e2918c2024955d50ccb19abb` |
-| 10 | `def` | [toPackingProgram](../../../../GeneralTopology/PrimePowerCoefficientRecovery.lean/declarations/topackingprogram.md) | 140 | `declaration-track:30c9bf881eb65a934c57c32951b505cb43230d2189acee156622f13e7aa92b80` |
-| 11 | `theorem` | [nextPoint_y_eq_coefficient](../../../../GeneralTopology/PrimePowerCoefficientRecovery.lean/declarations/nextpoint-y-eq-coefficient.md) | 151 | `result-track:9016ccfc12ae0cd83de2b71ce9f457baf5b5c5c74b4a4e4a807ed9248c3c5321` |
-| 12 | `theorem` | [nextPoint_x_eq_logScale](../../../../GeneralTopology/PrimePowerCoefficientRecovery.lean/declarations/nextpoint-x-eq-logscale.md) | 167 | `result-track:14e9c45a01b1c228d2b31b64291f09cec569df3270f8c5c4a958b212bc66ac8c` |
+| 1 | `structure` | [ExplicitFormulaPrimePowerCoefficient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PrimePowerCoefficientRecovery.lean/declarations/explicitformulaprimepowercoefficient.md) | 34 | `declaration-track:90a53c2142f97944e3a7242d45af0821b2dc2855b35a66330d2c74a93d87faed` |
+| 2 | `theorem` | [mangoldtScale_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PrimePowerCoefficientRecovery.lean/declarations/mangoldtscale-pos.md) | 43 | `result-track:70ad4a5f101e84877c4ae2648b21c95f503c90f1f3865c06754e0d5b004e72d7` |
+| 3 | `theorem` | [mangoldtScale_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PrimePowerCoefficientRecovery.lean/declarations/mangoldtscale-ne-zero.md) | 49 | `result-track:d91d09d330dcc63fa94ef957eb4a472149766f28ad556a4a5901c103a7d0a14f` |
+| 4 | `def` | [toWeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PrimePowerCoefficientRecovery.lean/declarations/toweight.md) | 58 | `declaration-track:7f1c0a48d14422a84ccbdb22ba8806f1be1f0b7ecd961c6b0e4ec21a618c1376` |
+| 5 | `theorem` | [packingPoint_y_eq_coefficient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PrimePowerCoefficientRecovery.lean/declarations/packingpoint-y-eq-coefficient.md) | 69 | `result-track:fdd6a48824cbdbf77b03262cdc2e5e8692505e613d3cf0352963cb3d1de5e897` |
+| 6 | `theorem` | [packingPoint_x_eq_logScale](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PrimePowerCoefficientRecovery.lean/declarations/packingpoint-x-eq-logscale.md) | 82 | `result-track:4f9febcff690021c95efb8f7461279b96e2ed961c3fd22e7d264645e25181bc5` |
+| 7 | `theorem` | [testWeight_unique](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PrimePowerCoefficientRecovery.lean/declarations/testweight-unique.md) | 90 | `result-track:baee7b8c34ed964ce08416fc692f3e512f00a01f05637ddb5192eeba740f0ee9` |
+| 8 | `structure` | [PrimePowerCoefficientRecurrence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PrimePowerCoefficientRecovery.lean/declarations/primepowercoefficientrecurrence.md) | 102 | `declaration-track:0b71bc09bea5fd5afdd4c68ad084be72bdcaac17c4975c2024a3b97dae4d81c7` |
+| 9 | `def` | [toCoordinateRecurrence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PrimePowerCoefficientRecovery.lean/declarations/tocoordinaterecurrence.md) | 124 | `declaration-track:b1101be75277d4e6a758c2c5004094de4ca34b99e2918c2024955d50ccb19abb` |
+| 10 | `def` | [toPackingProgram](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PrimePowerCoefficientRecovery.lean/declarations/topackingprogram.md) | 140 | `declaration-track:30c9bf881eb65a934c57c32951b505cb43230d2189acee156622f13e7aa92b80` |
+| 11 | `theorem` | [nextPoint_y_eq_coefficient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PrimePowerCoefficientRecovery.lean/declarations/nextpoint-y-eq-coefficient.md) | 151 | `result-track:9016ccfc12ae0cd83de2b71ce9f457baf5b5c5c74b4a4e4a807ed9248c3c5321` |
+| 12 | `theorem` | [nextPoint_x_eq_logScale](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/PrimePowerCoefficientRecovery.lean/declarations/nextpoint-x-eq-logscale.md) | 167 | `result-track:14e9c45a01b1c228d2b31b64291f09cec569df3270f8c5c4a958b212bc66ac8c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

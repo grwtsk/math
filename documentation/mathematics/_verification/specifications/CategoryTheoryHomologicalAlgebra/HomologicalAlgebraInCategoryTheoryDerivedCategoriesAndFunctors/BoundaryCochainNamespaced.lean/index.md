@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/BoundaryCochainNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/BoundaryCochainNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/BoundaryCochainNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/BoundaryCochainNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [soninBoundaryCochain](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/BoundaryCochainNamespaced.lean/declarations/soninboundarycochain.md) | 20 | `declaration-track:29bd6415b017be4ecd24163ccced0b0706569421554d6cc5360761920548775d` |
-| 2 | `theorem` | [soninBoundaryCochain_nonnegative](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/BoundaryCochainNamespaced.lean/declarations/soninboundarycochain-nonnegative.md) | 29 | `result-track:dad23856ec4e38ecda99165035eeac4b686b58fed5f7a29bdecb6b17df5b38ac` |
-| 3 | `theorem` | [soninBoundaryCochain_closed](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/BoundaryCochainNamespaced.lean/declarations/soninboundarycochain-closed.md) | 42 | `result-track:49510eb6044a17412e336f091131dee322fa994addf12c2f01edf8a07b35f554` |
+| 1 | `def` | [soninBoundaryCochain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/BoundaryCochainNamespaced.lean/declarations/soninboundarycochain.md) | 20 | `declaration-track:29bd6415b017be4ecd24163ccced0b0706569421554d6cc5360761920548775d` |
+| 2 | `theorem` | [soninBoundaryCochain_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/BoundaryCochainNamespaced.lean/declarations/soninboundarycochain-nonnegative.md) | 29 | `result-track:dad23856ec4e38ecda99165035eeac4b686b58fed5f7a29bdecb6b17df5b38ac` |
+| 3 | `theorem` | [soninBoundaryCochain_closed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/BoundaryCochainNamespaced.lean/declarations/soninboundarycochain-closed.md) | 42 | `result-track:49510eb6044a17412e336f091131dee322fa994addf12c2f01edf8a07b35f554` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Tree.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Tree.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Tree.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Tree.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [BinaryRefinementTree](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Tree.lean/declarations/binaryrefinementtree.md) | 17 | `declaration-track:d7804c5c3a72fe1df84ca11dc8bf3c4017b84ecba9e69d9115c77c14eaf07c09` |
-| 2 | `def` | [BinaryRefinementTree.ParentEdge](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Tree.lean/declarations/binaryrefinementtree-parentedge.md) | 45 | `declaration-track:4a93c895d169ea56158341e335ac98d00c997b2d6401574704fd8f44c3b74ebb` |
-| 3 | `structure` | [CompleteSplitRegistry](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Tree.lean/declarations/completesplitregistry.md) | 55 | `declaration-track:15bae115f72a1493e742606cecc3c35dfa32c13681483eea7bc21f7ec59be232` |
-| 4 | `theorem` | [BinaryRefinementTree.edge_extends](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Tree.lean/declarations/binaryrefinementtree-edge-extends.md) | 86 | `result-track:f28e0cc5ca86850b663ac6ab37ef8dbe135664537b4c1dc6f0105ab8333a65c2` |
+| 1 | `structure` | [BinaryRefinementTree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Tree.lean/declarations/binaryrefinementtree.md) | 17 | `declaration-track:d7804c5c3a72fe1df84ca11dc8bf3c4017b84ecba9e69d9115c77c14eaf07c09` |
+| 2 | `def` | [BinaryRefinementTree.ParentEdge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Tree.lean/declarations/binaryrefinementtree-parentedge.md) | 45 | `declaration-track:4a93c895d169ea56158341e335ac98d00c997b2d6401574704fd8f44c3b74ebb` |
+| 3 | `structure` | [CompleteSplitRegistry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Tree.lean/declarations/completesplitregistry.md) | 55 | `declaration-track:15bae115f72a1493e742606cecc3c35dfa32c13681483eea7bc21f7ec59be232` |
+| 4 | `theorem` | [BinaryRefinementTree.edge_extends](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Tree.lean/declarations/binaryrefinementtree-edge-extends.md) | 86 | `result-track:f28e0cc5ca86850b663ac6ab37ef8dbe135664537b4c1dc6f0105ab8333a65c2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProjectiveLiftingPropertiesNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProjectiveLiftingPropertiesNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProjectiveLiftingPropertiesNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProjectiveLiftingPropertiesNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [hasLiftingProperty_of_isZero](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProjectiveLiftingPropertiesNamespaced.lean/declarations/hasliftingproperty-of-iszero.md) | 36 | `result-track:f351a3214c98785667e5a52a36062c8bc1bfe815be2ddd1b9d361c0101889cfc` |
-| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProjectiveLiftingPropertiesNamespaced.lean/declarations/instance.md) | 43 | `declaration-track:37e938d7b4bfb765b6b9a8ff09fbf949b0415c7893d4524dee508d61b854896a` |
-| 3 | `lemma` | [projective_iff_llp_epimorphisms_of_isZero](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProjectiveLiftingPropertiesNamespaced.lean/declarations/projective-iff-llp-epimorphisms-of-iszero.md) | 49 | `result-track:05e01ecb55523730cbca5745524a27b4cc05cf2b379389a32c4f79499418e95a` |
-| 4 | `lemma` | [projective_iff_llp_epimorphisms_zero](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProjectiveLiftingPropertiesNamespaced.lean/declarations/projective-iff-llp-epimorphisms-zero.md) | 63 | `result-track:c70dc9b95e95c0c1d5ee9cc8647b5e0415679219faf116a47e35839859f50309` |
+| 1 | `lemma` | [hasLiftingProperty_of_isZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProjectiveLiftingPropertiesNamespaced.lean/declarations/hasliftingproperty-of-iszero.md) | 36 | `result-track:f351a3214c98785667e5a52a36062c8bc1bfe815be2ddd1b9d361c0101889cfc` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProjectiveLiftingPropertiesNamespaced.lean/declarations/instance.md) | 43 | `declaration-track:37e938d7b4bfb765b6b9a8ff09fbf949b0415c7893d4524dee508d61b854896a` |
+| 3 | `lemma` | [projective_iff_llp_epimorphisms_of_isZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProjectiveLiftingPropertiesNamespaced.lean/declarations/projective-iff-llp-epimorphisms-of-iszero.md) | 49 | `result-track:05e01ecb55523730cbca5745524a27b4cc05cf2b379389a32c4f79499418e95a` |
+| 4 | `lemma` | [projective_iff_llp_epimorphisms_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ProjectiveLiftingPropertiesNamespaced.lean/declarations/projective-iff-llp-epimorphisms-zero.md) | 63 | `result-track:c70dc9b95e95c0c1d5ee9cc8647b5e0415679219faf116a47e35839859f50309` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/GradedAlgebraNoetherianNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/GradedAlgebraNoetherianNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GradedAlgebraNoetherianNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GradedAlgebraNoetherianNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [GradeZero.isNoetherianRing](../../../../CommutativeAlgebra/GradedAlgebraNoetherianNamespaced.lean/declarations/gradezero-isnoetherianring.md) | 33 | `declaration-track:63fd928ce567cc3bf687026b192bff49d55688b4654174f9d1b6f3cc5d73d7af` |
+| 1 | `instance` | [GradeZero.isNoetherianRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/GradedAlgebraNoetherianNamespaced.lean/declarations/gradezero-isnoetherianring.md) | 33 | `declaration-track:63fd928ce567cc3bf687026b192bff49d55688b4654174f9d1b6f3cc5d73d7af` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

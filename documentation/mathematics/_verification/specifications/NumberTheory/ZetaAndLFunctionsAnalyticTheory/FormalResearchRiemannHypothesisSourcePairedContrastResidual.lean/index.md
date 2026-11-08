@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FormalResearchRiemannHypothesisSourcePairedContrastResidual.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FormalResearchRiemannHypothesisSourcePairedContrastResidual.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FormalResearchRiemannHypothesisSourcePairedContrastResidual.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FormalResearchRiemannHypothesisSourcePairedContrastResidual.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [pairedResidualRemainder](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FormalResearchRiemannHypothesisSourcePairedContrastResidual.lean/declarations/pairedresidualremainder.md) | 25 | `declaration-track:1a1244cd9090661bfc814d632898e8e30fb983599b5a6a907cdbb3ee003d1f44` |
-| 2 | `theorem` | [mertensResidual_eq_contrast_remainder](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FormalResearchRiemannHypothesisSourcePairedContrastResidual.lean/declarations/mertensresidual-eq-contrast-remainder.md) | 30 | `result-track:e779151bc6ff00a0aade343c049efd4b36745a154c5ee3b0bd4870a141da4ed2` |
-| 3 | `theorem` | [abs_four_sum_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FormalResearchRiemannHypothesisSourcePairedContrastResidual.lean/declarations/abs-four-sum-le.md) | 38 | `result-track:be29b8b72bbcfc20711e70c343930a2080fe007f764c84e1b2f3be806046bf20` |
-| 4 | `theorem` | [pairedResidualRemainder_uniformly_bounded](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FormalResearchRiemannHypothesisSourcePairedContrastResidual.lean/declarations/pairedresidualremainder-uniformly-bounded.md) | 48 | `result-track:f57f23d235886abcb6d51b3db679f6657f572b09bad272027379cdd1ca51fabe` |
+| 1 | `def` | [pairedResidualRemainder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FormalResearchRiemannHypothesisSourcePairedContrastResidual.lean/declarations/pairedresidualremainder.md) | 25 | `declaration-track:1a1244cd9090661bfc814d632898e8e30fb983599b5a6a907cdbb3ee003d1f44` |
+| 2 | `theorem` | [mertensResidual_eq_contrast_remainder](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FormalResearchRiemannHypothesisSourcePairedContrastResidual.lean/declarations/mertensresidual-eq-contrast-remainder.md) | 30 | `result-track:e779151bc6ff00a0aade343c049efd4b36745a154c5ee3b0bd4870a141da4ed2` |
+| 3 | `theorem` | [abs_four_sum_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FormalResearchRiemannHypothesisSourcePairedContrastResidual.lean/declarations/abs-four-sum-le.md) | 38 | `result-track:be29b8b72bbcfc20711e70c343930a2080fe007f764c84e1b2f3be806046bf20` |
+| 4 | `theorem` | [pairedResidualRemainder_uniformly_bounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FormalResearchRiemannHypothesisSourcePairedContrastResidual.lean/declarations/pairedresidualremainder-uniformly-bounded.md) | 48 | `result-track:f57f23d235886abcb6d51b3db679f6657f572b09bad272027379cdd1ca51fabe` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MellinEqDirichletNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MellinEqDirichletNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MellinEqDirichletNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MellinEqDirichletNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [hasSum_mellin](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MellinEqDirichletNamespaced.lean/declarations/hassum-mellin.md) | 29 | `result-track:656323a8db46c12660c0e12c928574f7ee24759f0f7b1f98b27e9e7c0a830488` |
-| 2 | `lemma` | [hasSum_mellin_pi_mul](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MellinEqDirichletNamespaced.lean/declarations/hassum-mellin-pi-mul.md) | 73 | `result-track:ac7af97e63424a037f147a630d0c76d0ade5627407abcdb8ebbe72f0d07136ed` |
-| 3 | `lemma` | [hasSum_mellin_pi_mul₀](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MellinEqDirichletNamespaced.lean/declarations/hassum-mellin-pi-mul-source-edition-2.md) | 94 | `result-track:b5bf4f48133d84bc4983548ce9ea051f8578c4c3492fc2e51618a63b634b74a3` |
-| 4 | `lemma` | [hasSum_mellin_pi_mul_sq](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MellinEqDirichletNamespaced.lean/declarations/hassum-mellin-pi-mul-sq-source-edition-2.md) | 121 | `result-track:c558aabd4648e4be7386d6cbdd430d4efbb004231c2bc85da2b5bc9bbdc3e78c` |
-| 5 | `lemma` | [hasSum_mellin_pi_mul_sq'](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MellinEqDirichletNamespaced.lean/declarations/hassum-mellin-pi-mul-sq.md) | 137 | `result-track:bd2ffbb13ebe948fdda3b6305bcf9c39cc4d3f5fe727839aaa2612593f43af14` |
+| 1 | `lemma` | [hasSum_mellin](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MellinEqDirichletNamespaced.lean/declarations/hassum-mellin.md) | 29 | `result-track:656323a8db46c12660c0e12c928574f7ee24759f0f7b1f98b27e9e7c0a830488` |
+| 2 | `lemma` | [hasSum_mellin_pi_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MellinEqDirichletNamespaced.lean/declarations/hassum-mellin-pi-mul.md) | 73 | `result-track:ac7af97e63424a037f147a630d0c76d0ade5627407abcdb8ebbe72f0d07136ed` |
+| 3 | `lemma` | [hasSum_mellin_pi_mul₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MellinEqDirichletNamespaced.lean/declarations/hassum-mellin-pi-mul-source-edition-2.md) | 94 | `result-track:b5bf4f48133d84bc4983548ce9ea051f8578c4c3492fc2e51618a63b634b74a3` |
+| 4 | `lemma` | [hasSum_mellin_pi_mul_sq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MellinEqDirichletNamespaced.lean/declarations/hassum-mellin-pi-mul-sq-source-edition-2.md) | 121 | `result-track:c558aabd4648e4be7386d6cbdd430d4efbb004231c2bc85da2b5bc9bbdc3e78c` |
+| 5 | `lemma` | [hasSum_mellin_pi_mul_sq'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MellinEqDirichletNamespaced.lean/declarations/hassum-mellin-pi-mul-sq.md) | 137 | `result-track:bd2ffbb13ebe948fdda3b6305bcf9c39cc4d3f5fe727839aaa2612593f43af14` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

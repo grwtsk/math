@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/Interval.lean/index.md) · [Full source](../../../../GeneralTopology/Interval.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Interval.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Interval.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [mem_Icc](../../../../GeneralTopology/Interval.lean/declarations/mem-icc.md) | 32 | `declaration-track:d2cf436f23b1b36dc1c831239225f587140d5dc3cd0b6e753d2e040ebe1dfb56` |
-| 2 | `theorem` | [mem_Icc_iff](../../../../GeneralTopology/Interval.lean/declarations/mem-icc-iff.md) | 34 | `result-track:cf14c8ede503da8dc9390fca7ea8ba971bf272f4c9b7a6e62f7f075ee5e9d3e6` |
-| 3 | `theorem` | [add_mem_Icc](../../../../GeneralTopology/Interval.lean/declarations/add-mem-icc.md) | 43 | `result-track:c3fb967475b936f1b26391c9a0cd12b888b26bdd679f942e11f451c73e8bfbf7` |
-| 4 | `theorem` | [neg_mem_Icc](../../../../GeneralTopology/Interval.lean/declarations/neg-mem-icc.md) | 49 | `result-track:925441da6fbf33016059deb1f8dd1e6f43ed55b340cb751df56bc60951c88a47` |
-| 5 | `theorem` | [sub_mem_Icc](../../../../GeneralTopology/Interval.lean/declarations/sub-mem-icc.md) | 55 | `result-track:777d968abe1b41577dd042059673e6209207822ab32b3996ad6c6b0cdcc3cf4c` |
-| 6 | `theorem` | [Icc_convex](../../../../GeneralTopology/Interval.lean/declarations/icc-convex.md) | 63 | `result-track:522fc86cfc973981e31f2428c6a5440edbfca66a1e71e058b9cf739de0043735` |
-| 7 | `theorem` | [Icc_compact](../../../../GeneralTopology/Interval.lean/declarations/icc-compact.md) | 68 | `result-track:bb1f48ac1d38d7d49bf3533299f501465fe5007adab8df9926d5eb7e207cf065` |
-| 8 | `theorem` | [continuous_Icc_bounds](../../../../GeneralTopology/Interval.lean/declarations/continuous-icc-bounds.md) | 73 | `result-track:5258c1eb64397c8832a699d23764ac1b022b7477ab29275fea284a4c30d820e9` |
+| 1 | `abbrev` | [mem_Icc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Interval.lean/declarations/mem-icc.md) | 32 | `declaration-track:d2cf436f23b1b36dc1c831239225f587140d5dc3cd0b6e753d2e040ebe1dfb56` |
+| 2 | `theorem` | [mem_Icc_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Interval.lean/declarations/mem-icc-iff.md) | 34 | `result-track:cf14c8ede503da8dc9390fca7ea8ba971bf272f4c9b7a6e62f7f075ee5e9d3e6` |
+| 3 | `theorem` | [add_mem_Icc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Interval.lean/declarations/add-mem-icc.md) | 43 | `result-track:c3fb967475b936f1b26391c9a0cd12b888b26bdd679f942e11f451c73e8bfbf7` |
+| 4 | `theorem` | [neg_mem_Icc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Interval.lean/declarations/neg-mem-icc.md) | 49 | `result-track:925441da6fbf33016059deb1f8dd1e6f43ed55b340cb751df56bc60951c88a47` |
+| 5 | `theorem` | [sub_mem_Icc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Interval.lean/declarations/sub-mem-icc.md) | 55 | `result-track:777d968abe1b41577dd042059673e6209207822ab32b3996ad6c6b0cdcc3cf4c` |
+| 6 | `theorem` | [Icc_convex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Interval.lean/declarations/icc-convex.md) | 63 | `result-track:522fc86cfc973981e31f2428c6a5440edbfca66a1e71e058b9cf739de0043735` |
+| 7 | `theorem` | [Icc_compact](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Interval.lean/declarations/icc-compact.md) | 68 | `result-track:bb1f48ac1d38d7d49bf3533299f501465fe5007adab8df9926d5eb7e207cf065` |
+| 8 | `theorem` | [continuous_Icc_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Interval.lean/declarations/continuous-icc-bounds.md) | 73 | `result-track:5258c1eb64397c8832a699d23764ac1b022b7477ab29275fea284a4c30d820e9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

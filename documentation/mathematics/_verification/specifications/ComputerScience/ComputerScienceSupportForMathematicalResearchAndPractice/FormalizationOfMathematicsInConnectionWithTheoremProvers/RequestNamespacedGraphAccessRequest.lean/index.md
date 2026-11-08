@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RequestNamespacedGraphAccessRequest.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RequestNamespacedGraphAccessRequest.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RequestNamespacedGraphAccessRequest.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RequestNamespacedGraphAccessRequest.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [GraphAccessRequest](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RequestNamespacedGraphAccessRequest.lean/declarations/graphaccessrequest.md) | 18 | `declaration-track:5920fbc469f6acb358f97cfcd2759ebc5f1c209341381f176c44ee4132e76452` |
-| 2 | `theorem` | [access_request_is_nonauthoritative](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RequestNamespacedGraphAccessRequest.lean/declarations/access-request-is-nonauthoritative.md) | 44 | `result-track:64da9cac08bb21b3a0574356d3a934adda6478167460994c27b40facda2ed2b9` |
+| 1 | `structure` | [GraphAccessRequest](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RequestNamespacedGraphAccessRequest.lean/declarations/graphaccessrequest.md) | 18 | `declaration-track:5920fbc469f6acb358f97cfcd2759ebc5f1c209341381f176c44ee4132e76452` |
+| 2 | `theorem` | [access_request_is_nonauthoritative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RequestNamespacedGraphAccessRequest.lean/declarations/access-request-is-nonauthoritative.md) | 44 | `result-track:64da9cac08bb21b3a0574356d3a934adda6478167460994c27b40facda2ed2b9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

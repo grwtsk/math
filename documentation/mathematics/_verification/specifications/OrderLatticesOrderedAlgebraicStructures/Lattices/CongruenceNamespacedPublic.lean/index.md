@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/Lattices/CongruenceNamespacedPublic.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/Lattices/CongruenceNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/Lattices/CongruenceNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/Lattices/CongruenceNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [LatticeCon](../../../../../OrderLatticesOrderedAlgebraicStructures/Lattices/CongruenceNamespacedPublic.lean/declarations/latticecon.md) | 49 | `declaration-track:4350baf6e2ead4d2fd550f6aca90e99732b6fc01b67316e494f5c1160dc79f5f` |
-| 2 | `lemma` | [r_inf_sup_iff](../../../../../OrderLatticesOrderedAlgebraicStructures/Lattices/CongruenceNamespacedPublic.lean/declarations/r-inf-sup-iff.md) | 56 | `result-track:7da98b07468de6996fb1597e1ce8a68d257d70eaafe45b2dd913e54c0c6f2785` |
-| 3 | `lemma` | [closed_interval](../../../../../OrderLatticesOrderedAlgebraicStructures/Lattices/CongruenceNamespacedPublic.lean/declarations/closed-interval.md) | 60 | `result-track:5cb1008bb230f5f3e3926cfc362a386a0c2ddeb069181a5d8d6c8305831fe9df` |
-| 4 | `lemma` | [transitive](../../../../../OrderLatticesOrderedAlgebraicStructures/Lattices/CongruenceNamespacedPublic.lean/declarations/transitive.md) | 71 | `result-track:ff668d69065a9317eece7a4fdeb5885cf5861edf44e26406b0eaf8dcac13fb4f` |
-| 5 | `def` | [mk'](../../../../../OrderLatticesOrderedAlgebraicStructures/Lattices/CongruenceNamespacedPublic.lean/declarations/mk.md) | 90 | `declaration-track:e279a3d4d18086036d666592b3f38d8ab708b1c5335ba0bb1c3c3d07759c13fb` |
-| 6 | `def` | [ker](../../../../../OrderLatticesOrderedAlgebraicStructures/Lattices/CongruenceNamespacedPublic.lean/declarations/ker.md) | 124 | `declaration-track:b604f8fd455602f1339681b6b306299bffd27e0b177f4f0468671facd3e680d2` |
+| 1 | `structure` | [LatticeCon](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/Lattices/CongruenceNamespacedPublic.lean/declarations/latticecon.md) | 49 | `declaration-track:4350baf6e2ead4d2fd550f6aca90e99732b6fc01b67316e494f5c1160dc79f5f` |
+| 2 | `lemma` | [r_inf_sup_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/Lattices/CongruenceNamespacedPublic.lean/declarations/r-inf-sup-iff.md) | 56 | `result-track:7da98b07468de6996fb1597e1ce8a68d257d70eaafe45b2dd913e54c0c6f2785` |
+| 3 | `lemma` | [closed_interval](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/Lattices/CongruenceNamespacedPublic.lean/declarations/closed-interval.md) | 60 | `result-track:5cb1008bb230f5f3e3926cfc362a386a0c2ddeb069181a5d8d6c8305831fe9df` |
+| 4 | `lemma` | [transitive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/Lattices/CongruenceNamespacedPublic.lean/declarations/transitive.md) | 71 | `result-track:ff668d69065a9317eece7a4fdeb5885cf5861edf44e26406b0eaf8dcac13fb4f` |
+| 5 | `def` | [mk'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/Lattices/CongruenceNamespacedPublic.lean/declarations/mk.md) | 90 | `declaration-track:e279a3d4d18086036d666592b3f38d8ab708b1c5335ba0bb1c3c3d07759c13fb` |
+| 6 | `def` | [ker](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/Lattices/CongruenceNamespacedPublic.lean/declarations/ker.md) | 124 | `declaration-track:b604f8fd455602f1339681b6b306299bffd27e0b177f4f0468671facd3e680d2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

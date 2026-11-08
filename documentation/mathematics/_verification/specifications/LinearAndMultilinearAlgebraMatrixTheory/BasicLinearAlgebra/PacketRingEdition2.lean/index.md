@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PacketRingEdition2.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PacketRingEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PacketRingEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PacketRingEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [PacketRingState](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PacketRingEdition2.lean/declarations/packetringstate.md) | 17 | `declaration-track:0054783723ae92602f9ceec53ceefad87f98a4bb9c75b7a0b1401ca866f63123` |
-| 2 | `def` | [latestPayloadAndMatrixObservation](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PacketRingEdition2.lean/declarations/latestpayloadandmatrixobservation.md) | 25 | `declaration-track:e34d613c9cc1b3c1b67f95a89a6a15057c0ab047ea7207c89059e412437d6eb3` |
+| 1 | `abbrev` | [PacketRingState](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PacketRingEdition2.lean/declarations/packetringstate.md) | 17 | `declaration-track:0054783723ae92602f9ceec53ceefad87f98a4bb9c75b7a0b1401ca866f63123` |
+| 2 | `def` | [latestPayloadAndMatrixObservation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PacketRingEdition2.lean/declarations/latestpayloadandmatrixobservation.md) | 25 | `declaration-track:e34d613c9cc1b3c1b67f95a89a6a15057c0ab047ea7207c89059e412437d6eb3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

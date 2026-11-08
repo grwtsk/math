@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSourceEdition1.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSourceEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSourceEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSourceEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [dirichletMoment](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSourceEdition1.lean/declarations/dirichletmoment.md) | 15 | `declaration-track:e1238f552a7fbe39ca0927a97a2c514d385c742bea70f1d77f7bd7e55e2e1b07` |
-| 2 | `theorem` | [dirichletMoment_nonneg](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSourceEdition1.lean/declarations/dirichletmoment-nonneg.md) | 18 | `result-track:e5a88834a1df522487cc07b3a57ffca3d93ee60368773151cbb9a83b370cc3b3` |
-| 3 | `theorem` | [mangoldt_abscissa_le_one](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSourceEdition1.lean/declarations/mangoldt-abscissa-le-one.md) | 24 | `result-track:21c87d8e038aba7222e727d018cdd8a56cc0e3bbc2cbb614f9eac56063afd3f2` |
-| 4 | `theorem` | [iterate_logMul_eq](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSourceEdition1.lean/declarations/iterate-logmul-eq.md) | 30 | `result-track:447c1c5cbc442e0e9a2d8c379dae434a9e18fe14e679c324ea4993aa41f97a73` |
-| 5 | `theorem` | [dirichletMoment_summable](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSourceEdition1.lean/declarations/dirichletmoment-summable.md) | 39 | `result-track:3934289c7e50d374a58ea8100c7f8a5dd94ac08d8ada2ecac08d9c6e32ba2a74` |
+| 1 | `def` | [dirichletMoment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSourceEdition1.lean/declarations/dirichletmoment.md) | 15 | `declaration-track:e1238f552a7fbe39ca0927a97a2c514d385c742bea70f1d77f7bd7e55e2e1b07` |
+| 2 | `theorem` | [dirichletMoment_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSourceEdition1.lean/declarations/dirichletmoment-nonneg.md) | 18 | `result-track:e5a88834a1df522487cc07b3a57ffca3d93ee60368773151cbb9a83b370cc3b3` |
+| 3 | `theorem` | [mangoldt_abscissa_le_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSourceEdition1.lean/declarations/mangoldt-abscissa-le-one.md) | 24 | `result-track:21c87d8e038aba7222e727d018cdd8a56cc0e3bbc2cbb614f9eac56063afd3f2` |
+| 4 | `theorem` | [iterate_logMul_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSourceEdition1.lean/declarations/iterate-logmul-eq.md) | 30 | `result-track:447c1c5cbc442e0e9a2d8c379dae434a9e18fe14e679c324ea4993aa41f97a73` |
+| 5 | `theorem` | [dirichletMoment_summable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceSourceEdition1.lean/declarations/dirichletmoment-summable.md) | 39 | `result-track:3934289c7e50d374a58ea8100c7f8a5dd94ac08d8ada2ecac08d9c6e32ba2a74` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Interface.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Interface.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Interface.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Interface.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Theory](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Interface.lean/declarations/theory.md) | 30 | `declaration-track:b53d056f18c1dac5739f7602e8edb3ede9eefcb29bb64e81c92443e95d8bbb04` |
-| 2 | `structure` | [BasePrismDatum](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Interface.lean/declarations/baseprismdatum.md) | 53 | `declaration-track:c3f1ded839264bc3287492abf58fb1ba11277f03de6c485999200ecb1669a440` |
-| 3 | `structure` | [ConstructedBasePrism](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Interface.lean/declarations/constructedbaseprism.md) | 60 | `declaration-track:7554a9945f0629f3e581392ab52ee088bd39a38dfeb67a856fd6b5b46909799c` |
-| 4 | `structure` | [BasePrismCertificate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Interface.lean/declarations/baseprismcertificate.md) | 65 | `declaration-track:4fbfc25821826c5e0d7b56818f9a325e2334aded68a6af65bebaf9f71ea0848e` |
-| 5 | `structure` | [SourceRealization](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Interface.lean/declarations/sourcerealization.md) | 76 | `declaration-track:1dc411a94e76c68cad0fe4003dc4b877938413d191309eaf5304d860ee63c790` |
+| 1 | `structure` | [Theory](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Interface.lean/declarations/theory.md) | 30 | `declaration-track:b53d056f18c1dac5739f7602e8edb3ede9eefcb29bb64e81c92443e95d8bbb04` |
+| 2 | `structure` | [BasePrismDatum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Interface.lean/declarations/baseprismdatum.md) | 53 | `declaration-track:c3f1ded839264bc3287492abf58fb1ba11277f03de6c485999200ecb1669a440` |
+| 3 | `structure` | [ConstructedBasePrism](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Interface.lean/declarations/constructedbaseprism.md) | 60 | `declaration-track:7554a9945f0629f3e581392ab52ee088bd39a38dfeb67a856fd6b5b46909799c` |
+| 4 | `structure` | [BasePrismCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Interface.lean/declarations/baseprismcertificate.md) | 65 | `declaration-track:4fbfc25821826c5e0d7b56818f9a325e2334aded68a6af65bebaf9f71ea0848e` |
+| 5 | `structure` | [SourceRealization](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Interface.lean/declarations/sourcerealization.md) | 76 | `declaration-track:1dc411a94e76c68cad0fe4003dc4b877938413d191309eaf5304d860ee63c790` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

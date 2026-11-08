@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ImportGraph.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ImportGraph.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ImportGraph.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ImportGraph.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ImportEdge](../../../../../ComputerScience/AlgorithmsInComputerScience/ImportGraph.lean/declarations/importedge.md) | 8 | `declaration-track:9baf84bc1602cd616114a5040c887c484bbc645aa5e11c52a42c74c4d1698a8f` |
-| 2 | `structure` | [ImportGraph](../../../../../ComputerScience/AlgorithmsInComputerScience/ImportGraph.lean/declarations/importgraph.md) | 16 | `declaration-track:be6ce9339ec388ee2baa6992c3ed506e0c8402fd1a0497b2a2c3c636399daafb` |
-| 3 | `def` | [imports](../../../../../ComputerScience/AlgorithmsInComputerScience/ImportGraph.lean/declarations/imports.md) | 23 | `declaration-track:b3870c7251db22895d41823857c589e5b5cf02a7d62ef1dcb7d14c15fef90d4e` |
-| 4 | `theorem` | [importEdge_boundary_visible](../../../../../ComputerScience/AlgorithmsInComputerScience/ImportGraph.lean/declarations/importedge-boundary-visible.md) | 28 | `result-track:7199b246ca0c86b922b0d36d121c7a358ea60835c50401200a1412f49f0d2b4f` |
+| 1 | `structure` | [ImportEdge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ImportGraph.lean/declarations/importedge.md) | 8 | `declaration-track:9baf84bc1602cd616114a5040c887c484bbc645aa5e11c52a42c74c4d1698a8f` |
+| 2 | `structure` | [ImportGraph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ImportGraph.lean/declarations/importgraph.md) | 16 | `declaration-track:be6ce9339ec388ee2baa6992c3ed506e0c8402fd1a0497b2a2c3c636399daafb` |
+| 3 | `def` | [imports](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ImportGraph.lean/declarations/imports.md) | 23 | `declaration-track:b3870c7251db22895d41823857c589e5b5cf02a7d62ef1dcb7d14c15fef90d4e` |
+| 4 | `theorem` | [importEdge_boundary_visible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ImportGraph.lean/declarations/importedge-boundary-visible.md) | 28 | `result-track:7199b246ca0c86b922b0d36d121c7a358ea60835c50401200a1412f49f0d2b4f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

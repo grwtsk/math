@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/Exp.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/Exp.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/Exp.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/Exp.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Function.Periodic.im_invQParam_pos_of_norm_lt_one](../../../../FunctionsOfAComplexVariable/Exp.lean/declarations/function-periodic-im-invqparam-pos-of-norm-lt-one.md) | 21 | `result-track:01a8418414e0be118d88adabae16da0fe60252a9ca014bdf46949c301d8e1e28` |
-| 2 | `lemma` | [Function.Periodic.norm_qParam_le_of_one_half_le_im](../../../../FunctionsOfAComplexVariable/Exp.lean/declarations/function-periodic-norm-qparam-le-of-one-half-le-im.md) | 28 | `result-track:89c7343dcf8645f8d73b60250435e7df45c08e0ae70f39f8e385bcf28fd95bed` |
-| 3 | `theorem` | [UpperHalfPlane.norm_qParam_lt_one](../../../../FunctionsOfAComplexVariable/Exp.lean/declarations/upperhalfplane-norm-qparam-lt-one.md) | 34 | `result-track:f69b349ffdfb01b9b5d5bfac48621fd50517b6699aaed8c28091afe688e0c40f` |
-| 4 | `theorem` | [UpperHalfPlane.norm_exp_two_pi_I_lt_one](../../../../FunctionsOfAComplexVariable/Exp.lean/declarations/upperhalfplane-norm-exp-two-pi-i-lt-one.md) | 39 | `result-track:16b178a09dd0d6dc0b7c8cfc001c889b9c4d389a6b0673f165c128fbb724566b` |
+| 1 | `theorem` | [Function.Periodic.im_invQParam_pos_of_norm_lt_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/Exp.lean/declarations/function-periodic-im-invqparam-pos-of-norm-lt-one.md) | 21 | `result-track:01a8418414e0be118d88adabae16da0fe60252a9ca014bdf46949c301d8e1e28` |
+| 2 | `lemma` | [Function.Periodic.norm_qParam_le_of_one_half_le_im](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/Exp.lean/declarations/function-periodic-norm-qparam-le-of-one-half-le-im.md) | 28 | `result-track:89c7343dcf8645f8d73b60250435e7df45c08e0ae70f39f8e385bcf28fd95bed` |
+| 3 | `theorem` | [UpperHalfPlane.norm_qParam_lt_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/Exp.lean/declarations/upperhalfplane-norm-qparam-lt-one.md) | 34 | `result-track:f69b349ffdfb01b9b5d5bfac48621fd50517b6699aaed8c28091afe688e0c40f` |
+| 4 | `theorem` | [UpperHalfPlane.norm_exp_two_pi_I_lt_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/Exp.lean/declarations/upperhalfplane-norm-exp-two-pi-i-lt-one.md) | 39 | `result-track:16b178a09dd0d6dc0b7c8cfc001c889b9c4d389a6b0673f165c128fbb724566b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

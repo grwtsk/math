@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AnnotatedPublicIsGrindAnnotatedModule.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AnnotatedPublicIsGrindAnnotatedModule.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AnnotatedPublicIsGrindAnnotatedModule.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AnnotatedPublicIsGrindAnnotatedModule.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `builtin_initialize` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AnnotatedPublicIsGrindAnnotatedModule.lean/declarations/builtin-initialize.md) | 20 | `declaration-track:f4bcdd909cf40b19bf4c9655a68bbef05c875958ba965089a82998a03ef0aacc` |
-| 2 | `def` | [isGrindAnnotatedModule](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AnnotatedPublicIsGrindAnnotatedModule.lean/declarations/isgrindannotatedmodule.md) | 28 | `declaration-track:6337b8979c5b253ddaa839e5a6311dd6aa858e9069c196d07735a3e50959ecbd` |
-| 3 | `def` | [elabGrindAnnotated](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AnnotatedPublicIsGrindAnnotatedModule.lean/declarations/elabgrindannotated.md) | 34 | `declaration-track:2c4ff2beb4d3930db40a1846d14fdc52097a16cc0a59a8f8bc2aa69c748f3032` |
+| 1 | `builtin_initialize` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AnnotatedPublicIsGrindAnnotatedModule.lean/declarations/builtin-initialize.md) | 20 | `declaration-track:f4bcdd909cf40b19bf4c9655a68bbef05c875958ba965089a82998a03ef0aacc` |
+| 2 | `def` | [isGrindAnnotatedModule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AnnotatedPublicIsGrindAnnotatedModule.lean/declarations/isgrindannotatedmodule.md) | 28 | `declaration-track:6337b8979c5b253ddaa839e5a6311dd6aa858e9069c196d07735a3e50959ecbd` |
+| 3 | `def` | [elabGrindAnnotated](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AnnotatedPublicIsGrindAnnotatedModule.lean/declarations/elabgrindannotated.md) | 34 | `declaration-track:2c4ff2beb4d3930db40a1846d14fdc52097a16cc0a59a8f8bc2aa69c748f3032` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

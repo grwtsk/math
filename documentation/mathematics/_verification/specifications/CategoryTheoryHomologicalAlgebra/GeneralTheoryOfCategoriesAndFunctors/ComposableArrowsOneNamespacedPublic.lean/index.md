@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ComposableArrowsOneNamespacedPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ComposableArrowsOneNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ComposableArrowsOneNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ComposableArrowsOneNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [functorArrows](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ComposableArrowsOneNamespacedPublic.lean/declarations/functorarrows.md) | 37 | `declaration-track:486dbdbcd9ba84332558e600ab2bb8c3310a19955d7f3ca7aa8ba4fb0b3ae48c` |
-| 2 | `def` | [mapFunctorArrows](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ComposableArrowsOneNamespacedPublic.lean/declarations/mapfunctorarrows.md) | 46 | `declaration-track:927b0fa1b7236e0e207f561c983f0d9cb8c7df203185b38458193bf3a3568d6c` |
+| 1 | `def` | [functorArrows](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ComposableArrowsOneNamespacedPublic.lean/declarations/functorarrows.md) | 37 | `declaration-track:486dbdbcd9ba84332558e600ab2bb8c3310a19955d7f3ca7aa8ba4fb0b3ae48c` |
+| 2 | `def` | [mapFunctorArrows](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ComposableArrowsOneNamespacedPublic.lean/declarations/mapfunctorarrows.md) | 46 | `declaration-track:927b0fa1b7236e0e207f561c983f0d9cb8c7df203185b38458193bf3a3568d6c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

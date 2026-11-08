@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CopyFixedPointData.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CopyFixedPointData.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CopyFixedPointData.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CopyFixedPointData.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [standardReferenceCopyFixedPoint](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CopyFixedPointData.lean/declarations/standardreferencecopyfixedpoint.md) | 40 | `declaration-track:bb1d24429426515241330212dd18f14277580b922affc7064c3e4d0c760c8654` |
+| 1 | `def` | [standardReferenceCopyFixedPoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CopyFixedPointData.lean/declarations/standardreferencecopyfixedpoint.md) | 40 | `declaration-track:bb1d24429426515241330212dd18f14277580b922affc7064c3e4d0c760c8654` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

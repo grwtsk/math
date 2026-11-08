@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceActualRieszFixedCenterTransferEdition1.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceActualRieszFixedCenterTransferEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualRieszFixedCenterTransferEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualRieszFixedCenterTransferEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualFixedCenteredMangoldtRieszPrimitive](../../../../MeasureAndIntegration/SourceActualRieszFixedCenterTransferEdition1.lean/declarations/actualfixedcenteredmangoldtrieszprimitive.md) | 19 | `declaration-track:1ac60489c0a39ef5fb8a2298816cdec91c936ca53a63e8fc270870a2a1b075be` |
-| 2 | `theorem` | [actualFixedCenteredMangoldtRiesz_intervalIntegrable](../../../../MeasureAndIntegration/SourceActualRieszFixedCenterTransferEdition1.lean/declarations/actualfixedcenteredmangoldtriesz-intervalintegrable.md) | 23 | `result-track:d939a8d6eb6fa1eb1bdc0ff2106d8ece18db495574ff4a1e668fd89b5a8ca215` |
-| 3 | `theorem` | [actualFixedCenteredMangoldtRiesz_readout](../../../../MeasureAndIntegration/SourceActualRieszFixedCenterTransferEdition1.lean/declarations/actualfixedcenteredmangoldtriesz-readout.md) | 32 | `result-track:b24f60c41bfb8d87d4f357d9cfc2e7466e5f2a9597a01b119d3145f709dd2731` |
-| 4 | `theorem` | [actualFixedCenteredMangoldtRiesz_paid_bounds](../../../../MeasureAndIntegration/SourceActualRieszFixedCenterTransferEdition1.lean/declarations/actualfixedcenteredmangoldtriesz-paid-bounds.md) | 64 | `result-track:3f51fa54322ff5a1420b95bc6cc809641e72bc58c298f6125802b0b308ee064c` |
-| 5 | `theorem` | [actualFixedCenteredMangoldtRiesz_error_bound](../../../../MeasureAndIntegration/SourceActualRieszFixedCenterTransferEdition1.lean/declarations/actualfixedcenteredmangoldtriesz-error-bound.md) | 76 | `result-track:cda2d3de74f0f1e51fa2fbd7cdb71036e9752953d1ce69cf9539f0d233e9ed8a` |
+| 1 | `def` | [actualFixedCenteredMangoldtRieszPrimitive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualRieszFixedCenterTransferEdition1.lean/declarations/actualfixedcenteredmangoldtrieszprimitive.md) | 19 | `declaration-track:1ac60489c0a39ef5fb8a2298816cdec91c936ca53a63e8fc270870a2a1b075be` |
+| 2 | `theorem` | [actualFixedCenteredMangoldtRiesz_intervalIntegrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualRieszFixedCenterTransferEdition1.lean/declarations/actualfixedcenteredmangoldtriesz-intervalintegrable.md) | 23 | `result-track:d939a8d6eb6fa1eb1bdc0ff2106d8ece18db495574ff4a1e668fd89b5a8ca215` |
+| 3 | `theorem` | [actualFixedCenteredMangoldtRiesz_readout](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualRieszFixedCenterTransferEdition1.lean/declarations/actualfixedcenteredmangoldtriesz-readout.md) | 32 | `result-track:b24f60c41bfb8d87d4f357d9cfc2e7466e5f2a9597a01b119d3145f709dd2731` |
+| 4 | `theorem` | [actualFixedCenteredMangoldtRiesz_paid_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualRieszFixedCenterTransferEdition1.lean/declarations/actualfixedcenteredmangoldtriesz-paid-bounds.md) | 64 | `result-track:3f51fa54322ff5a1420b95bc6cc809641e72bc58c298f6125802b0b308ee064c` |
+| 5 | `theorem` | [actualFixedCenteredMangoldtRiesz_error_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceActualRieszFixedCenterTransferEdition1.lean/declarations/actualfixedcenteredmangoldtriesz-error-bound.md) | 76 | `result-track:cda2d3de74f0f1e51fa2fbd7cdb71036e9752953d1ce69cf9539f0d233e9ed8a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

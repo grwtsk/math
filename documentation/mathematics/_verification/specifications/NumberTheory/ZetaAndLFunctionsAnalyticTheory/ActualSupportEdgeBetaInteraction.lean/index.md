@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualSupportEdgeBetaInteraction.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualSupportEdgeBetaInteraction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualSupportEdgeBetaInteraction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualSupportEdgeBetaInteraction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualTerminalCenteredHalfDefect](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualSupportEdgeBetaInteraction.lean/declarations/actualterminalcenteredhalfdefect.md) | 22 | `declaration-track:90b64f99a7f3bd94228a54af3a7d058a6afa9885ed28745fd9c4a3890e283151` |
-| 2 | `def` | [actualFiniteBetaMangoldtInteraction](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualSupportEdgeBetaInteraction.lean/declarations/actualfinitebetamangoldtinteraction.md) | 27 | `declaration-track:e32bdcced62e92c70592d5e81d60c8cfbd3a8ef103ecd5e8f6b4e0aa5505f4e9` |
-| 3 | `theorem` | [actualTerminalCenteredHalfDefect_abs_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualSupportEdgeBetaInteraction.lean/declarations/actualterminalcenteredhalfdefect-abs-le.md) | 31 | `result-track:192f4996b97d0e50e373b995a154b756c4f5206128e20fe387926d15e2cad81d` |
-| 4 | `theorem` | [actual_support_half_le_two_sqrt_terminal](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualSupportEdgeBetaInteraction.lean/declarations/actual-support-half-le-two-sqrt-terminal.md) | 64 | `result-track:4fa151e5c2128c0f6517875f1ff7199ab8021043a02f51e9fcb3d03d87fb3502` |
-| 5 | `theorem` | [actualFiniteBetaMangoldtInteraction_abs_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualSupportEdgeBetaInteraction.lean/declarations/actualfinitebetamangoldtinteraction-abs-le.md) | 89 | `result-track:67bc7f8c4140640bfa4493755fd87ca919c7f1309824b8003d4db59292fcd0b3` |
+| 1 | `def` | [actualTerminalCenteredHalfDefect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualSupportEdgeBetaInteraction.lean/declarations/actualterminalcenteredhalfdefect.md) | 22 | `declaration-track:90b64f99a7f3bd94228a54af3a7d058a6afa9885ed28745fd9c4a3890e283151` |
+| 2 | `def` | [actualFiniteBetaMangoldtInteraction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualSupportEdgeBetaInteraction.lean/declarations/actualfinitebetamangoldtinteraction.md) | 27 | `declaration-track:e32bdcced62e92c70592d5e81d60c8cfbd3a8ef103ecd5e8f6b4e0aa5505f4e9` |
+| 3 | `theorem` | [actualTerminalCenteredHalfDefect_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualSupportEdgeBetaInteraction.lean/declarations/actualterminalcenteredhalfdefect-abs-le.md) | 31 | `result-track:192f4996b97d0e50e373b995a154b756c4f5206128e20fe387926d15e2cad81d` |
+| 4 | `theorem` | [actual_support_half_le_two_sqrt_terminal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualSupportEdgeBetaInteraction.lean/declarations/actual-support-half-le-two-sqrt-terminal.md) | 64 | `result-track:4fa151e5c2128c0f6517875f1ff7199ab8021043a02f51e9fcb3d03d87fb3502` |
+| 5 | `theorem` | [actualFiniteBetaMangoldtInteraction_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualSupportEdgeBetaInteraction.lean/declarations/actualfinitebetamangoldtinteraction-abs-le.md) | 89 | `result-track:67bc7f8c4140640bfa4493755fd87ca919c7f1309824b8003d4db59292fcd0b3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

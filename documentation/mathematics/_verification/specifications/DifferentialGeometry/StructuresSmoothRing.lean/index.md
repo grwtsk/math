@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../DifferentialGeometry/StructuresSmoothRing.lean/index.md) · [Full source](../../../../DifferentialGeometry/StructuresSmoothRing.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/StructuresSmoothRing.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/StructuresSmoothRing.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [SmoothRing](../../../../DifferentialGeometry/StructuresSmoothRing.lean/declarations/smoothring.md) | 27 | `declaration-track:aa690740840a001f00d54435265ed4ce1ac3b18585a9e7bcb5ca21e6fda5df82` |
-| 2 | `instance` | [(anonymous)](../../../../DifferentialGeometry/StructuresSmoothRing.lean/declarations/instance.md) | 33 | `declaration-track:15f668f22b24a52bc0a54ec191039bb5214faebd47e60fd8b9f9267b7ce94c61` |
-| 3 | `instance` | [(anonymous)](../../../../DifferentialGeometry/StructuresSmoothRing.lean/declarations/instance-source-edition-3.md) | 40 | `declaration-track:aac00a733eac422d53610b85c804552d06bab9df0b914b2e97671f17fc2058cf` |
-| 4 | `instance` | [(anonymous)](../../../../DifferentialGeometry/StructuresSmoothRing.lean/declarations/instance-source-edition-2.md) | 50 | `declaration-track:4c384799a3c48cdfa8c5687a6a5f1dd46892e1f2e89ab3a96e1b78e70d306431` |
-| 5 | `theorem` | [topologicalSemiring_of_smooth](../../../../DifferentialGeometry/StructuresSmoothRing.lean/declarations/topologicalsemiring-of-smooth.md) | 66 | `result-track:35f3003d6396e25b8ea4f6c9d1128ac8d698591cba6b372f2f0fa1fe8f9761ce` |
+| 1 | `class` | [SmoothRing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/StructuresSmoothRing.lean/declarations/smoothring.md) | 27 | `declaration-track:aa690740840a001f00d54435265ed4ce1ac3b18585a9e7bcb5ca21e6fda5df82` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/StructuresSmoothRing.lean/declarations/instance.md) | 33 | `declaration-track:15f668f22b24a52bc0a54ec191039bb5214faebd47e60fd8b9f9267b7ce94c61` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/StructuresSmoothRing.lean/declarations/instance-source-edition-3.md) | 40 | `declaration-track:aac00a733eac422d53610b85c804552d06bab9df0b914b2e97671f17fc2058cf` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/StructuresSmoothRing.lean/declarations/instance-source-edition-2.md) | 50 | `declaration-track:4c384799a3c48cdfa8c5687a6a5f1dd46892e1f2e89ab3a96e1b78e70d306431` |
+| 5 | `theorem` | [topologicalSemiring_of_smooth](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/StructuresSmoothRing.lean/declarations/topologicalsemiring-of-smooth.md) | 66 | `result-track:35f3003d6396e25b8ea4f6c9d1128ac8d698591cba6b372f2f0fa1fe8f9761ce` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

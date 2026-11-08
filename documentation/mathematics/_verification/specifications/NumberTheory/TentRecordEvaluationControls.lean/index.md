@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/TentRecordEvaluationControls.lean/index.md) · [Full source](../../../../NumberTheory/TentRecordEvaluationControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentRecordEvaluationControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentRecordEvaluationControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Chebyshev.CanonicalTentRecordEvaluation`](../../../../NumberTheory/CanonicalTentRecordEvaluation.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.CanonicalTentRecordEvaluation`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/CanonicalTentRecordEvaluation.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Tactic.NormNum` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [empty_polynomial_retains_error](../../../../NumberTheory/TentRecordEvaluationControls.lean/declarations/empty-polynomial-retains-error.md) | 18 | `result-track:083360b934c607fb32e8e0ed6dc22f7b532382432ddf163b09258263b0ba5742` |
-| 2 | `theorem` | [quadratic_polynomial_at_half](../../../../NumberTheory/TentRecordEvaluationControls.lean/declarations/quadratic-polynomial-at-half.md) | 22 | `result-track:89d22e3470543bf398e7fa3e04f6167d0695379d81e1cbd91600c44d6bb5d555` |
-| 3 | `theorem` | [degree_guard_rejects_large_argument](../../../../NumberTheory/TentRecordEvaluationControls.lean/declarations/degree-guard-rejects-large-argument.md) | 26 | `result-track:8ae5623e32ec917268ba1b52a50865e55c001af207f30019e76798db0adb0d48` |
-| 4 | `theorem` | [zero_center_rejects_denominator](../../../../NumberTheory/TentRecordEvaluationControls.lean/declarations/zero-center-rejects-denominator.md) | 29 | `result-track:9a03a5baff4e0c12a7f005108c03a29b0118b0822e5c46e97ff2845b6b172620` |
-| 5 | `theorem` | [minus_one_center_rejects_denominator](../../../../NumberTheory/TentRecordEvaluationControls.lean/declarations/minus-one-center-rejects-denominator.md) | 33 | `result-track:cf4e87091b13795db53a153b7007421e2373d069af004538789639c1e76e2424` |
-| 6 | `theorem` | [middle_endpoint_error_has_coefficient_two](../../../../NumberTheory/TentRecordEvaluationControls.lean/declarations/middle-endpoint-error-has-coefficient-two.md) | 37 | `result-track:24a3d48a2d722100fe09e6d3a1f4695a12fb43dfeb4a5a6dba37a380f1d3328e` |
-| 7 | `theorem` | [multiplicity_scales_error](../../../../NumberTheory/TentRecordEvaluationControls.lean/declarations/multiplicity-scales-error.md) | 40 | `result-track:f514662860c9d832198e9f044dd15faaad129055d188edf4b5d4fa674ad5decd` |
-| 8 | `theorem` | [logarithm_error_is_separate](../../../../NumberTheory/TentRecordEvaluationControls.lean/declarations/logarithm-error-is-separate.md) | 43 | `result-track:0009c996595051295cf8d65f7a0eae4e82d2cec34465041e19634d30b6dcb34b` |
-| 9 | `theorem` | [positive_radius_not_exact_coordinate](../../../../NumberTheory/TentRecordEvaluationControls.lean/declarations/positive-radius-not-exact-coordinate.md) | 46 | `result-track:06a0f07f2246682d27cfe5f56622d5e20ad31363978af16f1a7bc9a77132aac6` |
-| 10 | `theorem` | [same_height_not_same_point](../../../../NumberTheory/TentRecordEvaluationControls.lean/declarations/same-height-not-same-point.md) | 57 | `result-track:931ff5d279220d1227ecf446a421d75538a05d54324adbf100af4e76101144d5` |
+| 1 | `theorem` | [empty_polynomial_retains_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentRecordEvaluationControls.lean/declarations/empty-polynomial-retains-error.md) | 18 | `result-track:083360b934c607fb32e8e0ed6dc22f7b532382432ddf163b09258263b0ba5742` |
+| 2 | `theorem` | [quadratic_polynomial_at_half](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentRecordEvaluationControls.lean/declarations/quadratic-polynomial-at-half.md) | 22 | `result-track:89d22e3470543bf398e7fa3e04f6167d0695379d81e1cbd91600c44d6bb5d555` |
+| 3 | `theorem` | [degree_guard_rejects_large_argument](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentRecordEvaluationControls.lean/declarations/degree-guard-rejects-large-argument.md) | 26 | `result-track:8ae5623e32ec917268ba1b52a50865e55c001af207f30019e76798db0adb0d48` |
+| 4 | `theorem` | [zero_center_rejects_denominator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentRecordEvaluationControls.lean/declarations/zero-center-rejects-denominator.md) | 29 | `result-track:9a03a5baff4e0c12a7f005108c03a29b0118b0822e5c46e97ff2845b6b172620` |
+| 5 | `theorem` | [minus_one_center_rejects_denominator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentRecordEvaluationControls.lean/declarations/minus-one-center-rejects-denominator.md) | 33 | `result-track:cf4e87091b13795db53a153b7007421e2373d069af004538789639c1e76e2424` |
+| 6 | `theorem` | [middle_endpoint_error_has_coefficient_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentRecordEvaluationControls.lean/declarations/middle-endpoint-error-has-coefficient-two.md) | 37 | `result-track:24a3d48a2d722100fe09e6d3a1f4695a12fb43dfeb4a5a6dba37a380f1d3328e` |
+| 7 | `theorem` | [multiplicity_scales_error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentRecordEvaluationControls.lean/declarations/multiplicity-scales-error.md) | 40 | `result-track:f514662860c9d832198e9f044dd15faaad129055d188edf4b5d4fa674ad5decd` |
+| 8 | `theorem` | [logarithm_error_is_separate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentRecordEvaluationControls.lean/declarations/logarithm-error-is-separate.md) | 43 | `result-track:0009c996595051295cf8d65f7a0eae4e82d2cec34465041e19634d30b6dcb34b` |
+| 9 | `theorem` | [positive_radius_not_exact_coordinate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentRecordEvaluationControls.lean/declarations/positive-radius-not-exact-coordinate.md) | 46 | `result-track:06a0f07f2246682d27cfe5f56622d5e20ad31363978af16f1a7bc9a77132aac6` |
+| 10 | `theorem` | [same_height_not_same_point](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/TentRecordEvaluationControls.lean/declarations/same-height-not-same-point.md) | 57 | `result-track:931ff5d279220d1227ecf446a421d75538a05d54324adbf100af4e76101144d5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

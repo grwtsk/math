@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/XiStripNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/XiStripNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/XiStripNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/XiStripNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [re_multiset_sum](../../../../Combinatorics/XiStripNamespaced.lean/declarations/re-multiset-sum.md) | 14 | `result-track:fd302029c39d8b7b361cadaa46cb71db6c50cf300e644b68f79b14df1ed97a3d` |
-| 2 | `lemma` | [esymm_one_eq_sum](../../../../Combinatorics/XiStripNamespaced.lean/declarations/esymm-one-eq-sum.md) | 19 | `result-track:3ba84b8c1b3462df4bbd0a0d8a09a16434e748f06df07ffca11b8bbef2e866e0` |
-| 3 | `lemma` | [multiset_cs](../../../../Combinatorics/XiStripNamespaced.lean/declarations/multiset-cs.md) | 22 | `result-track:f0bd117cfcfb4c496beed78ae1e680832ffdc0daa172a790c80802cb1d01c1fb` |
-| 4 | `lemma` | [sum_strip_lower](../../../../Combinatorics/XiStripNamespaced.lean/declarations/sum-strip-lower.md) | 42 | `result-track:0f2cace4a0357ee9211110dc742e5e5826db7b6b673866ac67036e5f6a752781` |
-| 5 | `theorem` | [sectionPolynomial_roots_sum](../../../../Combinatorics/XiStripNamespaced.lean/declarations/sectionpolynomial-roots-sum.md) | 55 | `result-track:3a6235617b7c9fce6621a40eb159d80829566e36bddf673e1e4120624963e633` |
-| 6 | `theorem` | [spectralSection_strip_necessary](../../../../Combinatorics/XiStripNamespaced.lean/declarations/spectralsection-strip-necessary.md) | 70 | `result-track:c3555fe7ec838265605b142912011b1db9cd1054a5b23b1e4ee3a569a067975f` |
+| 1 | `lemma` | [re_multiset_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/XiStripNamespaced.lean/declarations/re-multiset-sum.md) | 14 | `result-track:fd302029c39d8b7b361cadaa46cb71db6c50cf300e644b68f79b14df1ed97a3d` |
+| 2 | `lemma` | [esymm_one_eq_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/XiStripNamespaced.lean/declarations/esymm-one-eq-sum.md) | 19 | `result-track:3ba84b8c1b3462df4bbd0a0d8a09a16434e748f06df07ffca11b8bbef2e866e0` |
+| 3 | `lemma` | [multiset_cs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/XiStripNamespaced.lean/declarations/multiset-cs.md) | 22 | `result-track:f0bd117cfcfb4c496beed78ae1e680832ffdc0daa172a790c80802cb1d01c1fb` |
+| 4 | `lemma` | [sum_strip_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/XiStripNamespaced.lean/declarations/sum-strip-lower.md) | 42 | `result-track:0f2cace4a0357ee9211110dc742e5e5826db7b6b673866ac67036e5f6a752781` |
+| 5 | `theorem` | [sectionPolynomial_roots_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/XiStripNamespaced.lean/declarations/sectionpolynomial-roots-sum.md) | 55 | `result-track:3a6235617b7c9fce6621a40eb159d80829566e36bddf673e1e4120624963e633` |
+| 6 | `theorem` | [spectralSection_strip_necessary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/XiStripNamespaced.lean/declarations/spectralsection-strip-necessary.md) | 70 | `result-track:c3555fe7ec838265605b142912011b1db9cd1054a5b23b1e4ee3a569a067975f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

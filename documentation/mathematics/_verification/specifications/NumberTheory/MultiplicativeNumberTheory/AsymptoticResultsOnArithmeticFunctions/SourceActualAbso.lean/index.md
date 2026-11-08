@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/MultiplicativeNumberTheory/AsymptoticResultsOnArithmeticFunctions/SourceActualAbso.lean/index.md) · [Full source](../../../../../../NumberTheory/MultiplicativeNumberTheory/AsymptoticResultsOnArithmeticFunctions/SourceActualAbso.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/AsymptoticResultsOnArithmeticFunctions/SourceActualAbso.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/AsymptoticResultsOnArithmeticFunctions/SourceActualAbso.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualClosedAbsolutePrimeMoment](../../../../../../NumberTheory/MultiplicativeNumberTheory/AsymptoticResultsOnArithmeticFunctions/SourceActualAbso.lean/declarations/actualclosedabsoluteprimemoment.md) | 19 | `declaration-track:b4b4ab3428749f5febd101c90e33dfa390718e6523aca8b662adebd87497ba73` |
-| 2 | `theorem` | [complement_le_absoluteMoment](../../../../../../NumberTheory/MultiplicativeNumberTheory/AsymptoticResultsOnArithmeticFunctions/SourceActualAbso.lean/declarations/complement-le-absolutemoment.md) | 22 | `result-track:8faa28d96a7fec7e3ba1e970e0ac35a0e765a3a5f39a81cd3771b534c515a763` |
-| 3 | `theorem` | [actualClosedAbsolutePrimeMoment_eventually_lower](../../../../../../NumberTheory/MultiplicativeNumberTheory/AsymptoticResultsOnArithmeticFunctions/SourceActualAbso.lean/declarations/actualclosedabsoluteprimemoment-eventually-lower.md) | 34 | `result-track:2afa51a87b3eb7eb82863d8f648285ce89241368160151491478d7e64d61d123` |
-| 4 | `theorem` | [actualClosedAbsolutePrimeMoment_tendsto_atTop](../../../../../../NumberTheory/MultiplicativeNumberTheory/AsymptoticResultsOnArithmeticFunctions/SourceActualAbso.lean/declarations/actualclosedabsoluteprimemoment-tendsto-attop.md) | 42 | `result-track:ad5c0d08d43fe34080754267fb9c1055b375f5eb5e7cd5baf4b51d92aaedbd44` |
-| 5 | `theorem` | [actualClosedAbsolutePrimeMoment_no_constant_tail_bound](../../../../../../NumberTheory/MultiplicativeNumberTheory/AsymptoticResultsOnArithmeticFunctions/SourceActualAbso.lean/declarations/actualclosedabsoluteprimemoment-no-constant-tail-bound.md) | 47 | `result-track:f2f4fa94419f14cc2c5d5ad092292e07b4aa04d047c219ac6c49d264bf22f3b9` |
+| 1 | `def` | [actualClosedAbsolutePrimeMoment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/AsymptoticResultsOnArithmeticFunctions/SourceActualAbso.lean/declarations/actualclosedabsoluteprimemoment.md) | 19 | `declaration-track:b4b4ab3428749f5febd101c90e33dfa390718e6523aca8b662adebd87497ba73` |
+| 2 | `theorem` | [complement_le_absoluteMoment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/AsymptoticResultsOnArithmeticFunctions/SourceActualAbso.lean/declarations/complement-le-absolutemoment.md) | 22 | `result-track:8faa28d96a7fec7e3ba1e970e0ac35a0e765a3a5f39a81cd3771b534c515a763` |
+| 3 | `theorem` | [actualClosedAbsolutePrimeMoment_eventually_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/AsymptoticResultsOnArithmeticFunctions/SourceActualAbso.lean/declarations/actualclosedabsoluteprimemoment-eventually-lower.md) | 34 | `result-track:2afa51a87b3eb7eb82863d8f648285ce89241368160151491478d7e64d61d123` |
+| 4 | `theorem` | [actualClosedAbsolutePrimeMoment_tendsto_atTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/AsymptoticResultsOnArithmeticFunctions/SourceActualAbso.lean/declarations/actualclosedabsoluteprimemoment-tendsto-attop.md) | 42 | `result-track:ad5c0d08d43fe34080754267fb9c1055b375f5eb5e7cd5baf4b51d92aaedbd44` |
+| 5 | `theorem` | [actualClosedAbsolutePrimeMoment_no_constant_tail_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/AsymptoticResultsOnArithmeticFunctions/SourceActualAbso.lean/declarations/actualclosedabsoluteprimemoment-no-constant-tail-bound.md) | 47 | `result-track:f2f4fa94419f14cc2c5d5ad092292e07b4aa04d047c219ac6c49d264bf22f3b9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

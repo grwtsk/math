@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSplitOn.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSplitOn.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListSplitOn.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListSplitOn.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,17 +57,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [splitOn_nil](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSplitOn.lean/declarations/spliton-nil.md) | 17 | `result-track:1ba36167256998ced62dc5f3024f4cdf0737d0bef968009651f3d7ffeeb44bfe` |
-| 2 | `theorem` | [splitOnP_nil](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSplitOn.lean/declarations/splitonp-nil.md) | 21 | `result-track:c1f84d80e9e9f5f4cd4385e559a5b9974b97d38aa58c577ba708696320605283` |
-| 3 | `theorem` | [splitOnP.go_ne_nil](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSplitOn.lean/declarations/splitonp-go-ne-nil.md) | 24 | `result-track:3698407d1c0a5e80d6a68834d0052ee3e260bf602c7d6c77213f1ce2791fb306` |
-| 4 | `theorem` | [splitOnP.go_acc](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSplitOn.lean/declarations/splitonp-go-acc.md) | 27 | `result-track:d5861ca3053fd72c6f2054b3c40bacf764e2a45d672ca16365d6c93f2b2197ae` |
-| 5 | `theorem` | [splitOnP_ne_nil](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSplitOn.lean/declarations/splitonp-ne-nil.md) | 37 | `result-track:2b36228b77024f4fb97e8ae17b7b9eb2a7165f1a6009deacc96f463b53d3defc` |
-| 6 | `theorem` | [splitOnP_cons](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSplitOn.lean/declarations/splitonp-cons.md) | 40 | `result-track:9111b662aeb26f27c5c133436cd6e5769d9a8cb9bc304362ccd25bfe75f66d21` |
-| 7 | `theorem` | [splitOnP_spec](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSplitOn.lean/declarations/splitonp-spec.md) | 47 | `result-track:e19f50fe164c9c3f61759a05490e0b5e0dd9fddda7dbec7973312ab81876624b` |
-| 8 | `theorem` | [splitOnP_eq_single](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSplitOn.lean/declarations/splitonp-eq-single.md) | 67 | `result-track:be10edaddb7ea94b1f60a4e5b1173f9e13bd856aee30465eb6c9abb908b0e1d1` |
-| 9 | `theorem` | [splitOnP_first](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSplitOn.lean/declarations/splitonp-first.md) | 76 | `result-track:d619ffbf06fdfc13d19ec0788c63f439c0d5ead23fe50b800fd779d55bc4eb2d` |
-| 10 | `theorem` | [intercalate_splitOn](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSplitOn.lean/declarations/intercalate-spliton.md) | 83 | `result-track:e1c222275fe0e7f314879914281bae72f56e386309655b7f932757835eef05e6` |
-| 11 | `theorem` | [splitOn_intercalate](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSplitOn.lean/declarations/spliton-intercalate.md) | 97 | `result-track:a61491b012204859f8426964acaf7083504f0aacef16e8c001c06f020f21b45b` |
+| 1 | `theorem` | [splitOn_nil](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListSplitOn.lean/declarations/spliton-nil.md) | 17 | `result-track:1ba36167256998ced62dc5f3024f4cdf0737d0bef968009651f3d7ffeeb44bfe` |
+| 2 | `theorem` | [splitOnP_nil](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListSplitOn.lean/declarations/splitonp-nil.md) | 21 | `result-track:c1f84d80e9e9f5f4cd4385e559a5b9974b97d38aa58c577ba708696320605283` |
+| 3 | `theorem` | [splitOnP.go_ne_nil](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListSplitOn.lean/declarations/splitonp-go-ne-nil.md) | 24 | `result-track:3698407d1c0a5e80d6a68834d0052ee3e260bf602c7d6c77213f1ce2791fb306` |
+| 4 | `theorem` | [splitOnP.go_acc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListSplitOn.lean/declarations/splitonp-go-acc.md) | 27 | `result-track:d5861ca3053fd72c6f2054b3c40bacf764e2a45d672ca16365d6c93f2b2197ae` |
+| 5 | `theorem` | [splitOnP_ne_nil](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListSplitOn.lean/declarations/splitonp-ne-nil.md) | 37 | `result-track:2b36228b77024f4fb97e8ae17b7b9eb2a7165f1a6009deacc96f463b53d3defc` |
+| 6 | `theorem` | [splitOnP_cons](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListSplitOn.lean/declarations/splitonp-cons.md) | 40 | `result-track:9111b662aeb26f27c5c133436cd6e5769d9a8cb9bc304362ccd25bfe75f66d21` |
+| 7 | `theorem` | [splitOnP_spec](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListSplitOn.lean/declarations/splitonp-spec.md) | 47 | `result-track:e19f50fe164c9c3f61759a05490e0b5e0dd9fddda7dbec7973312ab81876624b` |
+| 8 | `theorem` | [splitOnP_eq_single](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListSplitOn.lean/declarations/splitonp-eq-single.md) | 67 | `result-track:be10edaddb7ea94b1f60a4e5b1173f9e13bd856aee30465eb6c9abb908b0e1d1` |
+| 9 | `theorem` | [splitOnP_first](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListSplitOn.lean/declarations/splitonp-first.md) | 76 | `result-track:d619ffbf06fdfc13d19ec0788c63f439c0d5ead23fe50b800fd779d55bc4eb2d` |
+| 10 | `theorem` | [intercalate_splitOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListSplitOn.lean/declarations/intercalate-spliton.md) | 83 | `result-track:e1c222275fe0e7f314879914281bae72f56e386309655b7f932757835eef05e6` |
+| 11 | `theorem` | [splitOn_intercalate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/ListSplitOn.lean/declarations/spliton-intercalate.md) | 97 | `result-track:a61491b012204859f8426964acaf7083504f0aacef16e8c001c06f020f21b45b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

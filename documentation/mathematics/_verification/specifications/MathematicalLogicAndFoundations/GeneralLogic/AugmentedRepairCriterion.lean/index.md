@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AugmentedRepairCriterion.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AugmentedRepairCriterion.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AugmentedRepairCriterion.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AugmentedRepairCriterion.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Logic.InformationLoss.FactorizationUniqueReconstruction`](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FactorizationUniqueReconstruction.lean/index.md) — import line 8; pinned internal source present.
+- [`GRWTSK.Logic.InformationLoss.FactorizationUniqueReconstruction`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FactorizationUniqueReconstruction.lean/index.md) — import line 8; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [existsUnique_augmented_decoder_iff](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AugmentedRepairCriterion.lean/declarations/existsunique-augmented-decoder-iff.md) | 28 | `result-track:a1459d1b098bd885c7a8d622da6f3e7da3efcc3887186293c5a6af333abbf662` |
-| 2 | `theorem` | [augmented_redundant_fiber_iff](../../../../../MathematicalLogicAndFoundations/GeneralLogic/AugmentedRepairCriterion.lean/declarations/augmented-redundant-fiber-iff.md) | 47 | `result-track:795e826b12221a3ebd3e325be99a38f71bc8d0b6580da294c2ac97cf1eff5560` |
+| 1 | `theorem` | [existsUnique_augmented_decoder_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AugmentedRepairCriterion.lean/declarations/existsunique-augmented-decoder-iff.md) | 28 | `result-track:a1459d1b098bd885c7a8d622da6f3e7da3efcc3887186293c5a6af333abbf662` |
+| 2 | `theorem` | [augmented_redundant_fiber_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/AugmentedRepairCriterion.lean/declarations/augmented-redundant-fiber-iff.md) | 47 | `result-track:795e826b12221a3ebd3e325be99a38f71bc8d0b6580da294c2ac97cf1eff5560` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

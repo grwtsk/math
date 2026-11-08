@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SignedCorrelationBudgetEquivalence.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SignedCorrelationBudgetEquivalence.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SignedCorrelationBudgetEquivalence.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SignedCorrelationBudgetEquivalence.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.InnerProductSpace.SignedWindowGramIdentity`](../../../../../MeasureAndIntegration/SignedWindowGramIdentity.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.NumberTheory.PrimeCounting.PrimeShellEnergyGrowth`](../../../../../MeasureAndIntegration/PrimeShellEnergyGrowth.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.Analysis.InnerProductSpace.SignedWindowGramIdentity`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SignedWindowGramIdentity.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.NumberTheory.PrimeCounting.PrimeShellEnergyGrowth`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/PrimeShellEnergyGrowth.lean/index.md) — import line 2; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [SignedCorrelationBudget](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SignedCorrelationBudgetEquivalence.lean/declarations/signedcorrelationbudget.md) | 12 | `declaration-track:cddbd8b5dc8c82ceba36573136b4e749cd15183c8674a8a3eac41e69d3cc5ddb` |
-| 2 | `theorem` | [signedCorrelationBudget_iff_HSS](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SignedCorrelationBudgetEquivalence.lean/declarations/signedcorrelationbudget-iff-hss.md) | 16 | `result-track:88124e486b66cbfaff2af9771b8f870aa305307c9cede9deaaf3c3ab52058ab0` |
-| 3 | `theorem` | [unsigned_settlement_budget_refuted](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SignedCorrelationBudgetEquivalence.lean/declarations/unsigned-settlement-budget-refuted.md) | 27 | `result-track:396b9ecced37089a81a80deef9e81d414d1d147dd40e36a1753cca1a679baf66` |
-| 4 | `theorem` | [HSS_requires_mature_matching](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SignedCorrelationBudgetEquivalence.lean/declarations/hss-requires-mature-matching.md) | 37 | `result-track:8280dcf3ef3da517e24919e06d06f06144c45c47c55816f90e918edac9463ba1` |
+| 1 | `def` | [SignedCorrelationBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SignedCorrelationBudgetEquivalence.lean/declarations/signedcorrelationbudget.md) | 12 | `declaration-track:cddbd8b5dc8c82ceba36573136b4e749cd15183c8674a8a3eac41e69d3cc5ddb` |
+| 2 | `theorem` | [signedCorrelationBudget_iff_HSS](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SignedCorrelationBudgetEquivalence.lean/declarations/signedcorrelationbudget-iff-hss.md) | 16 | `result-track:88124e486b66cbfaff2af9771b8f870aa305307c9cede9deaaf3c3ab52058ab0` |
+| 3 | `theorem` | [unsigned_settlement_budget_refuted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SignedCorrelationBudgetEquivalence.lean/declarations/unsigned-settlement-budget-refuted.md) | 27 | `result-track:396b9ecced37089a81a80deef9e81d414d1d147dd40e36a1753cca1a679baf66` |
+| 4 | `theorem` | [HSS_requires_mature_matching](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/SignedCorrelationBudgetEquivalence.lean/declarations/hss-requires-mature-matching.md) | 37 | `result-track:8280dcf3ef3da517e24919e06d06f06144c45c47c55816f90e918edac9463ba1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

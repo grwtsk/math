@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceRecenteredMangoldtPairing.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceRecenteredMangoldtPairing.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceRecenteredMangoldtPairing.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceRecenteredMangoldtPairing.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [centeredLogPairing](../../../../MeasureAndIntegration/SourceRecenteredMangoldtPairing.lean/declarations/centeredlogpairing.md) | 24 | `declaration-track:d426d722c48d42c4d02e54520ecc90fcb1e9b0eb83a52bb1a254fb47abce0039` |
-| 2 | `def` | [compensatedLogPairing](../../../../MeasureAndIntegration/SourceRecenteredMangoldtPairing.lean/declarations/compensatedlogpairing.md) | 29 | `declaration-track:ff669470f201e3e8ab207432ad46cc2abfc0934728905495a5ae233dfc5671de` |
-| 3 | `theorem` | [actual_derivative_mass](../../../../MeasureAndIntegration/SourceRecenteredMangoldtPairing.lean/declarations/actual-derivative-mass.md) | 34 | `result-track:55e3d9aa07a89d1885958a5e8dd41ef60539cf184bc34e19ce297b7837aac560` |
-| 4 | `theorem` | [centeredLogPairing_eq_signedCesaroPairing](../../../../MeasureAndIntegration/SourceRecenteredMangoldtPairing.lean/declarations/centeredlogpairing-eq-signedcesaropairing.md) | 46 | `result-track:88a98ff720ab797135045f0903f6703507256cca8166dca3c2da1df491cf4733` |
-| 5 | `theorem` | [centeredLogPairing_eq_compensated](../../../../MeasureAndIntegration/SourceRecenteredMangoldtPairing.lean/declarations/centeredlogpairing-eq-compensated.md) | 67 | `result-track:5b49e5534a371253d1cce8c3e45c0dfb047e00c5e52cd10fb23a7131314aeb63` |
-| 6 | `def` | [boundaryBudget](../../../../MeasureAndIntegration/SourceRecenteredMangoldtPairing.lean/declarations/boundarybudget.md) | 87 | `declaration-track:9eb84a7861c250ef72b5390a7bc77c9455fa5ddc688b69b98dfc206bf3289c17` |
-| 7 | `theorem` | [actual_centered_boundary_abs_le](../../../../MeasureAndIntegration/SourceRecenteredMangoldtPairing.lean/declarations/actual-centered-boundary-abs-le.md) | 91 | `result-track:a38b08d3d8579221138d77d562b5483308680af60301d794ecfc6bec2ec86bc2` |
-| 8 | `theorem` | [signed_pairing_lower_of_compensated](../../../../MeasureAndIntegration/SourceRecenteredMangoldtPairing.lean/declarations/signed-pairing-lower-of-compensated.md) | 117 | `result-track:525fe23dc1628a21dd00e2594cf358228b8e925bbaa14813f9c27ce865d7a4b6` |
-| 9 | `theorem` | [estimate_of_compensated_tail](../../../../MeasureAndIntegration/SourceRecenteredMangoldtPairing.lean/declarations/estimate-of-compensated-tail.md) | 126 | `result-track:d172c7be45ae65e330df03d8522d121ca125cd73a1a4bacb98f1bd2ba6736f6c` |
+| 1 | `def` | [centeredLogPairing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceRecenteredMangoldtPairing.lean/declarations/centeredlogpairing.md) | 24 | `declaration-track:d426d722c48d42c4d02e54520ecc90fcb1e9b0eb83a52bb1a254fb47abce0039` |
+| 2 | `def` | [compensatedLogPairing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceRecenteredMangoldtPairing.lean/declarations/compensatedlogpairing.md) | 29 | `declaration-track:ff669470f201e3e8ab207432ad46cc2abfc0934728905495a5ae233dfc5671de` |
+| 3 | `theorem` | [actual_derivative_mass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceRecenteredMangoldtPairing.lean/declarations/actual-derivative-mass.md) | 34 | `result-track:55e3d9aa07a89d1885958a5e8dd41ef60539cf184bc34e19ce297b7837aac560` |
+| 4 | `theorem` | [centeredLogPairing_eq_signedCesaroPairing](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceRecenteredMangoldtPairing.lean/declarations/centeredlogpairing-eq-signedcesaropairing.md) | 46 | `result-track:88a98ff720ab797135045f0903f6703507256cca8166dca3c2da1df491cf4733` |
+| 5 | `theorem` | [centeredLogPairing_eq_compensated](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceRecenteredMangoldtPairing.lean/declarations/centeredlogpairing-eq-compensated.md) | 67 | `result-track:5b49e5534a371253d1cce8c3e45c0dfb047e00c5e52cd10fb23a7131314aeb63` |
+| 6 | `def` | [boundaryBudget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceRecenteredMangoldtPairing.lean/declarations/boundarybudget.md) | 87 | `declaration-track:9eb84a7861c250ef72b5390a7bc77c9455fa5ddc688b69b98dfc206bf3289c17` |
+| 7 | `theorem` | [actual_centered_boundary_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceRecenteredMangoldtPairing.lean/declarations/actual-centered-boundary-abs-le.md) | 91 | `result-track:a38b08d3d8579221138d77d562b5483308680af60301d794ecfc6bec2ec86bc2` |
+| 8 | `theorem` | [signed_pairing_lower_of_compensated](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceRecenteredMangoldtPairing.lean/declarations/signed-pairing-lower-of-compensated.md) | 117 | `result-track:525fe23dc1628a21dd00e2594cf358228b8e925bbaa14813f9c27ce865d7a4b6` |
+| 9 | `theorem` | [estimate_of_compensated_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceRecenteredMangoldtPairing.lean/declarations/estimate-of-compensated-tail.md) | 126 | `result-track:d172c7be45ae65e330df03d8522d121ca125cd73a1a4bacb98f1bd2ba6736f6c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

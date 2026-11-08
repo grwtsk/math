@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/LocallyConstant.lean/index.md) · [Full source](../../../../GeneralTopology/LocallyConstant.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LocallyConstant.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LocallyConstant.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [toContinuousMapMonoidHom](../../../../GeneralTopology/LocallyConstant.lean/declarations/tocontinuousmapmonoidhom.md) | 24 | `declaration-track:0f7c994fa03e7a60a1ce0bf5413a66854fceb014d4cc8c28151133d9903673ce` |
-| 2 | `def` | [toContinuousMapLinearMap](../../../../GeneralTopology/LocallyConstant.lean/declarations/tocontinuousmaplinearmap.md) | 35 | `declaration-track:6dd89be944ede10d010094412c92255281c8f9f92e3b625f1ad0ce6964c5b44e` |
-| 3 | `def` | [toContinuousMapAlgHom](../../../../GeneralTopology/LocallyConstant.lean/declarations/tocontinuousmapalghom.md) | 47 | `declaration-track:545e6c028c66c85900982b4e2fd63f5ffafa51673d5ffeed411179c7a3f8277e` |
+| 1 | `def` | [toContinuousMapMonoidHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LocallyConstant.lean/declarations/tocontinuousmapmonoidhom.md) | 24 | `declaration-track:0f7c994fa03e7a60a1ce0bf5413a66854fceb014d4cc8c28151133d9903673ce` |
+| 2 | `def` | [toContinuousMapLinearMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LocallyConstant.lean/declarations/tocontinuousmaplinearmap.md) | 35 | `declaration-track:6dd89be944ede10d010094412c92255281c8f9f92e3b625f1ad0ce6964c5b44e` |
+| 3 | `def` | [toContinuousMapAlgHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/LocallyConstant.lean/declarations/tocontinuousmapalghom.md) | 47 | `declaration-track:545e6c028c66c85900982b4e2fd63f5ffafa51673d5ffeed411179c7a3f8277e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/FrontierAntichainNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/FrontierAntichainNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FrontierAntichainNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FrontierAntichainNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,16 +57,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [Requirement](../../../../Combinatorics/FrontierAntichainNamespaced.lean/declarations/requirement.md) | 22 | `declaration-track:9877ec418a371782b63d1a082ed1ec2fab255cd058c03036382a8b3b17285858` |
-| 2 | `abbrev` | [FrontierFamily](../../../../Combinatorics/FrontierAntichainNamespaced.lean/declarations/frontierfamily.md) | 25 | `declaration-track:9e20e8e132fb31228d10b6d486a1aca1e56964ec0216a9fffd83028e96c087ed` |
-| 3 | `def` | [frontierZero](../../../../Combinatorics/FrontierAntichainNamespaced.lean/declarations/frontierzero.md) | 28 | `declaration-track:6a4364209d8d88c73bf0966cb7f1047b5953f17f96f5d17ed6a5a4fe52e99feb` |
-| 4 | `def` | [frontierOne](../../../../Combinatorics/FrontierAntichainNamespaced.lean/declarations/frontierone.md) | 33 | `declaration-track:ea80a28622462d6568ddb789e7ec1c68c34dc38c87e1172a74dd68c3ed155a59` |
-| 5 | `def` | [InclusionMinimal](../../../../Combinatorics/FrontierAntichainNamespaced.lean/declarations/inclusionminimal.md) | 39 | `declaration-track:04fdd8ce1327eda1fa6b330d04b6693e5995c877ef933313be2be731a0b4dc2c` |
-| 6 | `def` | [normalizeFrontier](../../../../Combinatorics/FrontierAntichainNamespaced.lean/declarations/normalizefrontier.md) | 47 | `declaration-track:2d6edd4b5fdc02eb126bdbedfdceb724f99e7d297decb78816ee33fb22bd051b` |
-| 7 | `def` | [frontierOr](../../../../Combinatorics/FrontierAntichainNamespaced.lean/declarations/frontieror.md) | 55 | `declaration-track:d1cac20dd7f9cb5bba69f0844541fcff8d7347f97b29414a5133065174efe949` |
-| 8 | `def` | [frontierAnd](../../../../Combinatorics/FrontierAntichainNamespaced.lean/declarations/frontierand.md) | 62 | `declaration-track:207796a9f0df7653085abb2f147cfa5b4445431e65b485cf0e2105714c33078d` |
-| 9 | `theorem` | [frontierZero_ne_frontierOne](../../../../Combinatorics/FrontierAntichainNamespaced.lean/declarations/frontierzero-ne-frontierone.md) | 71 | `result-track:9ae18eaaa963209e3664cb6f7393a7d8f95f1d665df2383e5f062cf2585b0428` |
-| 10 | `theorem` | [empty_mem_frontierOne](../../../../Combinatorics/FrontierAntichainNamespaced.lean/declarations/empty-mem-frontierone.md) | 77 | `result-track:aaa05c89343f1b00b0794245fcbdb03324655d7eb9e4585a041aeb6cbce63406` |
+| 1 | `abbrev` | [Requirement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FrontierAntichainNamespaced.lean/declarations/requirement.md) | 22 | `declaration-track:9877ec418a371782b63d1a082ed1ec2fab255cd058c03036382a8b3b17285858` |
+| 2 | `abbrev` | [FrontierFamily](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FrontierAntichainNamespaced.lean/declarations/frontierfamily.md) | 25 | `declaration-track:9e20e8e132fb31228d10b6d486a1aca1e56964ec0216a9fffd83028e96c087ed` |
+| 3 | `def` | [frontierZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FrontierAntichainNamespaced.lean/declarations/frontierzero.md) | 28 | `declaration-track:6a4364209d8d88c73bf0966cb7f1047b5953f17f96f5d17ed6a5a4fe52e99feb` |
+| 4 | `def` | [frontierOne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FrontierAntichainNamespaced.lean/declarations/frontierone.md) | 33 | `declaration-track:ea80a28622462d6568ddb789e7ec1c68c34dc38c87e1172a74dd68c3ed155a59` |
+| 5 | `def` | [InclusionMinimal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FrontierAntichainNamespaced.lean/declarations/inclusionminimal.md) | 39 | `declaration-track:04fdd8ce1327eda1fa6b330d04b6693e5995c877ef933313be2be731a0b4dc2c` |
+| 6 | `def` | [normalizeFrontier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FrontierAntichainNamespaced.lean/declarations/normalizefrontier.md) | 47 | `declaration-track:2d6edd4b5fdc02eb126bdbedfdceb724f99e7d297decb78816ee33fb22bd051b` |
+| 7 | `def` | [frontierOr](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FrontierAntichainNamespaced.lean/declarations/frontieror.md) | 55 | `declaration-track:d1cac20dd7f9cb5bba69f0844541fcff8d7347f97b29414a5133065174efe949` |
+| 8 | `def` | [frontierAnd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FrontierAntichainNamespaced.lean/declarations/frontierand.md) | 62 | `declaration-track:207796a9f0df7653085abb2f147cfa5b4445431e65b485cf0e2105714c33078d` |
+| 9 | `theorem` | [frontierZero_ne_frontierOne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FrontierAntichainNamespaced.lean/declarations/frontierzero-ne-frontierone.md) | 71 | `result-track:9ae18eaaa963209e3664cb6f7393a7d8f95f1d665df2383e5f062cf2585b0428` |
+| 10 | `theorem` | [empty_mem_frontierOne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/FrontierAntichainNamespaced.lean/declarations/empty-mem-frontierone.md) | 77 | `result-track:aaa05c89343f1b00b0794245fcbdb03324655d7eb9e4585a041aeb6cbce63406` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/IndexSpectralBridgeNamespaced.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/IndexSpectralBridgeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/IndexSpectralBridgeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/IndexSpectralBridgeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SpectralBoundaryAlignmentTarget](../../../../ProbabilityTheoryAndStochasticProcesses/IndexSpectralBridgeNamespaced.lean/declarations/spectralboundaryalignmenttarget.md) | 30 | `declaration-track:e12aeb6ce1d24ddf7deacd7a11c33b42519e6d64f0ff0f4a7c68ef0126754aaa` |
-| 2 | `structure` | [SpectralBoundaryCriticalLineTargetBridge](../../../../ProbabilityTheoryAndStochasticProcesses/IndexSpectralBridgeNamespaced.lean/declarations/spectralboundarycriticallinetargetbridge.md) | 45 | `declaration-track:ffc747f5a6b59b02572866ef9d3e7f2bbbecd8f691cec50ec8ee8a3fed15a4fc` |
-| 3 | `structure` | [IndexSpectralAlignmentBridge](../../../../ProbabilityTheoryAndStochasticProcesses/IndexSpectralBridgeNamespaced.lean/declarations/indexspectralalignmentbridge.md) | 60 | `declaration-track:29e83c49c7d82d66eb596c1d7bc87a8c204b19837ea05b64fbcc80ab085de4dc` |
-| 4 | `theorem` | [index_spectral_alignment](../../../../ProbabilityTheoryAndStochasticProcesses/IndexSpectralBridgeNamespaced.lean/declarations/index-spectral-alignment.md) | 71 | `result-track:4ef04122ab66f66a0e388242eb51ef37f9f474becbd0a1829512c2ca5886dce7` |
-| 5 | `theorem` | [critical_line_from_index_spectral_alignment](../../../../ProbabilityTheoryAndStochasticProcesses/IndexSpectralBridgeNamespaced.lean/declarations/critical-line-from-index-spectral-alignment.md) | 79 | `result-track:0a8069fdef6c46cec923fba224dd814ec1a98905817ebe723a3cc7e2ac70e165` |
+| 1 | `structure` | [SpectralBoundaryAlignmentTarget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/IndexSpectralBridgeNamespaced.lean/declarations/spectralboundaryalignmenttarget.md) | 30 | `declaration-track:e12aeb6ce1d24ddf7deacd7a11c33b42519e6d64f0ff0f4a7c68ef0126754aaa` |
+| 2 | `structure` | [SpectralBoundaryCriticalLineTargetBridge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/IndexSpectralBridgeNamespaced.lean/declarations/spectralboundarycriticallinetargetbridge.md) | 45 | `declaration-track:ffc747f5a6b59b02572866ef9d3e7f2bbbecd8f691cec50ec8ee8a3fed15a4fc` |
+| 3 | `structure` | [IndexSpectralAlignmentBridge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/IndexSpectralBridgeNamespaced.lean/declarations/indexspectralalignmentbridge.md) | 60 | `declaration-track:29e83c49c7d82d66eb596c1d7bc87a8c204b19837ea05b64fbcc80ab085de4dc` |
+| 4 | `theorem` | [index_spectral_alignment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/IndexSpectralBridgeNamespaced.lean/declarations/index-spectral-alignment.md) | 71 | `result-track:4ef04122ab66f66a0e388242eb51ef37f9f474becbd0a1829512c2ca5886dce7` |
+| 5 | `theorem` | [critical_line_from_index_spectral_alignment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/IndexSpectralBridgeNamespaced.lean/declarations/critical-line-from-index-spectral-alignment.md) | 79 | `result-track:0a8069fdef6c46cec923fba224dd814ec1a98905817ebe723a3cc7e2ac70e165` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

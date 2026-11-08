@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/PolyHierarchyNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/PolyHierarchyNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PolyHierarchyNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PolyHierarchyNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [FactAuthority](../../../../Combinatorics/PolyHierarchyNamespaced.lean/declarations/factauthority.md) | 31 | `declaration-track:accd0dfbf081a4eebec5e1ecdc1a80380f6f63b03e8567f8e5b4eeffc49c88c4` |
-| 2 | `structure` | [StructuralSignature](../../../../Combinatorics/PolyHierarchyNamespaced.lean/declarations/structuralsignature.md) | 43 | `declaration-track:99ad8235d2f8d8573911dbb76d56b58ade98a4398faa9dc1c0589e5202bd53b6` |
-| 3 | `structure` | [PolyHierarchy](../../../../Combinatorics/PolyHierarchyNamespaced.lean/declarations/polyhierarchy.md) | 62 | `declaration-track:1cfd8dbf6efe3ce3336dc3002e06aeb7dde08e70097ccafe14e9da8e07267e6e` |
-| 4 | `inductive` | [ProposalAuthority](../../../../Combinatorics/PolyHierarchyNamespaced.lean/declarations/proposalauthority.md) | 86 | `declaration-track:ada54fa38caab9b88b3ef2af59283688d0b9af91f42be77d63852fb2419ecd07` |
-| 5 | `theorem` | [proposal_is_not_fact_authority](../../../../Combinatorics/PolyHierarchyNamespaced.lean/declarations/proposal-is-not-fact-authority.md) | 94 | `result-track:074125f19ff602ec14e92955ec6c1df8a71c87386f03585909a00b7b812eb046` |
+| 1 | `inductive` | [FactAuthority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PolyHierarchyNamespaced.lean/declarations/factauthority.md) | 31 | `declaration-track:accd0dfbf081a4eebec5e1ecdc1a80380f6f63b03e8567f8e5b4eeffc49c88c4` |
+| 2 | `structure` | [StructuralSignature](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PolyHierarchyNamespaced.lean/declarations/structuralsignature.md) | 43 | `declaration-track:99ad8235d2f8d8573911dbb76d56b58ade98a4398faa9dc1c0589e5202bd53b6` |
+| 3 | `structure` | [PolyHierarchy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PolyHierarchyNamespaced.lean/declarations/polyhierarchy.md) | 62 | `declaration-track:1cfd8dbf6efe3ce3336dc3002e06aeb7dde08e70097ccafe14e9da8e07267e6e` |
+| 4 | `inductive` | [ProposalAuthority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PolyHierarchyNamespaced.lean/declarations/proposalauthority.md) | 86 | `declaration-track:ada54fa38caab9b88b3ef2af59283688d0b9af91f42be77d63852fb2419ecd07` |
+| 5 | `theorem` | [proposal_is_not_fact_authority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PolyHierarchyNamespaced.lean/declarations/proposal-is-not-fact-authority.md) | 94 | `result-track:074125f19ff602ec14e92955ec6c1df8a71c87386f03585909a00b7b812eb046` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

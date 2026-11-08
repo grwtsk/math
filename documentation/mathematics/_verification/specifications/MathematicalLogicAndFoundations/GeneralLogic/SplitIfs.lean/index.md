@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SplitIfs.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SplitIfs.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SplitIfs.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SplitIfs.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,18 +57,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SplitIfs.lean/declarations/example-source-edition-8.md) | 3 | `declaration-track:b5cebd8f2f67203fa81e648d7715bbc0829b0d112336c3092a2cccf6302601b7` |
-| 2 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SplitIfs.lean/declarations/example-source-edition-4.md) | 8 | `declaration-track:5bbcb7efddb180a0f550dff52451e646c29a5cb0d201ef520ae81aeea785b371` |
-| 3 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SplitIfs.lean/declarations/example.md) | 13 | `declaration-track:3f180e5464abacde4dc8c1115b62eb6e392c467b92835aa25543cd8d27776a8f` |
-| 4 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SplitIfs.lean/declarations/example-source-edition-6.md) | 20 | `declaration-track:a28fbbf96e317fb9d780faacd3c3a5719125284cf97b1236c16f2a24d65d3b5c` |
-| 5 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SplitIfs.lean/declarations/example-source-edition-7.md) | 27 | `declaration-track:ac66c9e7a83412250ad0f7551fdfaeed1f3f27de508789f19b5f4f6f838ef0b0` |
-| 6 | `lemma` | [foo](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SplitIfs.lean/declarations/foo.md) | 32 | `result-track:98574f3fe8add93edfad78b4cd5f7ae944de2dbfd4278c91cb8ccb9de6fcb0f7` |
-| 7 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SplitIfs.lean/declarations/example-source-edition-5.md) | 42 | `declaration-track:6d6011e6897d9c3583aca17628190f3ba7440a23d8e01d57d8259655e418bf52` |
-| 8 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SplitIfs.lean/declarations/example-source-edition-2.md) | 52 | `declaration-track:3fb25063460301f62bf56657e455acad1b8e49b87699a865f99161d24a28bbdb` |
-| 9 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SplitIfs.lean/declarations/example-source-edition-10.md) | 56 | `declaration-track:eeb8bb6c60442e3e2a0aee91f65faba33d971886337387e4cae646dd0917a7d8` |
-| 10 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SplitIfs.lean/declarations/example-source-edition-9.md) | 60 | `declaration-track:ec706c72b996a6867bfd79b9c8dd7cd3714d657d84a495f530f3a6f3165af3c2` |
-| 11 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SplitIfs.lean/declarations/example-source-edition-11.md) | 65 | `declaration-track:fa9d915be416b52c65f4a5055943fef76204c64529e1077ab20f1d38ff85f4ed` |
-| 12 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SplitIfs.lean/declarations/example-source-edition-3.md) | 70 | `declaration-track:5595da8d0034765e38a3de961a6a3ebc6cb14610c6004a7d29f9fa6962bcba91` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SplitIfs.lean/declarations/example-source-edition-8.md) | 3 | `declaration-track:b5cebd8f2f67203fa81e648d7715bbc0829b0d112336c3092a2cccf6302601b7` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SplitIfs.lean/declarations/example-source-edition-4.md) | 8 | `declaration-track:5bbcb7efddb180a0f550dff52451e646c29a5cb0d201ef520ae81aeea785b371` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SplitIfs.lean/declarations/example.md) | 13 | `declaration-track:3f180e5464abacde4dc8c1115b62eb6e392c467b92835aa25543cd8d27776a8f` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SplitIfs.lean/declarations/example-source-edition-6.md) | 20 | `declaration-track:a28fbbf96e317fb9d780faacd3c3a5719125284cf97b1236c16f2a24d65d3b5c` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SplitIfs.lean/declarations/example-source-edition-7.md) | 27 | `declaration-track:ac66c9e7a83412250ad0f7551fdfaeed1f3f27de508789f19b5f4f6f838ef0b0` |
+| 6 | `lemma` | [foo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SplitIfs.lean/declarations/foo.md) | 32 | `result-track:98574f3fe8add93edfad78b4cd5f7ae944de2dbfd4278c91cb8ccb9de6fcb0f7` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SplitIfs.lean/declarations/example-source-edition-5.md) | 42 | `declaration-track:6d6011e6897d9c3583aca17628190f3ba7440a23d8e01d57d8259655e418bf52` |
+| 8 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SplitIfs.lean/declarations/example-source-edition-2.md) | 52 | `declaration-track:3fb25063460301f62bf56657e455acad1b8e49b87699a865f99161d24a28bbdb` |
+| 9 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SplitIfs.lean/declarations/example-source-edition-10.md) | 56 | `declaration-track:eeb8bb6c60442e3e2a0aee91f65faba33d971886337387e4cae646dd0917a7d8` |
+| 10 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SplitIfs.lean/declarations/example-source-edition-9.md) | 60 | `declaration-track:ec706c72b996a6867bfd79b9c8dd7cd3714d657d84a495f530f3a6f3165af3c2` |
+| 11 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SplitIfs.lean/declarations/example-source-edition-11.md) | 65 | `declaration-track:fa9d915be416b52c65f4a5055943fef76204c64529e1077ab20f1d38ff85f4ed` |
+| 12 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SplitIfs.lean/declarations/example-source-edition-3.md) | 70 | `declaration-track:5595da8d0034765e38a3de961a6a3ebc6cb14610c6004a7d29f9fa6962bcba91` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

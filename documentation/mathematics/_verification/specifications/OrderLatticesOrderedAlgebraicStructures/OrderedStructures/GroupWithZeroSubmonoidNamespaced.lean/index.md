@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupWithZeroSubmonoidNamespaced.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupWithZeroSubmonoidNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupWithZeroSubmonoidNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupWithZeroSubmonoidNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [pos](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupWithZeroSubmonoidNamespaced.lean/declarations/pos.md) | 29 | `declaration-track:4191573643c25092c1185c322d3f6924354d00384a91c40a8072a9f4b858ab09` |
-| 2 | `lemma` | [mem_pos](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupWithZeroSubmonoidNamespaced.lean/declarations/mem-pos.md) | 36 | `result-track:238a7286abd2eeaf622989440aeef1384aa7f798dc1d34324847f177e6f2a484` |
+| 1 | `def` | [pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupWithZeroSubmonoidNamespaced.lean/declarations/pos.md) | 29 | `declaration-track:4191573643c25092c1185c322d3f6924354d00384a91c40a8072a9f4b858ab09` |
+| 2 | `lemma` | [mem_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/GroupWithZeroSubmonoidNamespaced.lean/declarations/mem-pos.md) | 36 | `result-track:238a7286abd2eeaf622989440aeef1384aa7f798dc1d34324847f177e6f2a484` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

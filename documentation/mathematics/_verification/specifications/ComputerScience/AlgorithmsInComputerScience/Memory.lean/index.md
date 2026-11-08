@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Memory.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Memory.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Memory.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Memory.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [SourcePrimitive](../../../../../ComputerScience/AlgorithmsInComputerScience/Memory.lean/declarations/sourceprimitive.md) | 8 | `declaration-track:6f3463e056acfa8af9feefe70c2fceabe8ce5e83131b6a2d1b265bc7c4c1977b` |
-| 2 | `structure` | [PrimitiveRole](../../../../../ComputerScience/AlgorithmsInComputerScience/Memory.lean/declarations/primitiverole.md) | 17 | `declaration-track:7b47e517d6173457c9453f603e72420d29a0aa0e204aa4c6b857f27eecaaf24f` |
-| 3 | `def` | [primitiveRoles](../../../../../ComputerScience/AlgorithmsInComputerScience/Memory.lean/declarations/primitiveroles.md) | 23 | `declaration-track:40e6d217c65e27afb8da7294ee36d12f20fcc18a7ed84d8751ab299a9c9e85da` |
-| 4 | `theorem` | [primitiveRoles_count](../../../../../ComputerScience/AlgorithmsInComputerScience/Memory.lean/declarations/primitiveroles-count.md) | 44 | `result-track:752520e3006d87963595e0412adcdd6173866de10d605889340533f3cd607453` |
-| 5 | `structure` | [BoundaryMemoryInput](../../../../../ComputerScience/AlgorithmsInComputerScience/Memory.lean/declarations/boundarymemoryinput.md) | 48 | `declaration-track:a3dcc19c6c5f06f4a56de2b9df05abcea11e6f9c5611126e15c98377def4ae00` |
-| 6 | `def` | [noPrimitiveImportsAuthority](../../../../../ComputerScience/AlgorithmsInComputerScience/Memory.lean/declarations/noprimitiveimportsauthority.md) | 54 | `declaration-track:4f4876c07fd0fa11e1dac4d7da1de231e7d157186b24f6d5b1533588ed542f4a` |
+| 1 | `inductive` | [SourcePrimitive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Memory.lean/declarations/sourceprimitive.md) | 8 | `declaration-track:6f3463e056acfa8af9feefe70c2fceabe8ce5e83131b6a2d1b265bc7c4c1977b` |
+| 2 | `structure` | [PrimitiveRole](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Memory.lean/declarations/primitiverole.md) | 17 | `declaration-track:7b47e517d6173457c9453f603e72420d29a0aa0e204aa4c6b857f27eecaaf24f` |
+| 3 | `def` | [primitiveRoles](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Memory.lean/declarations/primitiveroles.md) | 23 | `declaration-track:40e6d217c65e27afb8da7294ee36d12f20fcc18a7ed84d8751ab299a9c9e85da` |
+| 4 | `theorem` | [primitiveRoles_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Memory.lean/declarations/primitiveroles-count.md) | 44 | `result-track:752520e3006d87963595e0412adcdd6173866de10d605889340533f3cd607453` |
+| 5 | `structure` | [BoundaryMemoryInput](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Memory.lean/declarations/boundarymemoryinput.md) | 48 | `declaration-track:a3dcc19c6c5f06f4a56de2b9df05abcea11e6f9c5611126e15c98377def4ae00` |
+| 6 | `def` | [noPrimitiveImportsAuthority](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Memory.lean/declarations/noprimitiveimportsauthority.md) | 54 | `declaration-track:4f4876c07fd0fa11e1dac4d7da1de231e7d157186b24f6d5b1533588ed542f4a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

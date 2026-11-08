@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/SuppliedLinearFieldEncoding.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/SuppliedLinearFieldEncoding.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SuppliedLinearFieldEncoding.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SuppliedLinearFieldEncoding.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -50,8 +50,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 - `Mathlib.LinearAlgebra.Matrix.ToLinearEquiv` — import line 20; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic.IntervalCases` — import line 21; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic.Linarith` — import line 22; external provider; requires a separately pinned dependency.
-- [Boolean Coefficient Equivalence](../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BooleanCoefficientEquivalence.lean/index.md) — import line 24; pinned internal source present.
-- [Pointwise Product Obstruction](../../../../FieldTheoryAndPolynomials/PointwiseProductObstruction.lean/index.md) — import line 25; pinned internal source present.
+- [Boolean Coefficient Equivalence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BooleanCoefficientEquivalence.lean/index.md) — import line 24; pinned internal source present.
+- [Pointwise Product Obstruction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/PointwiseProductObstruction.lean/index.md) — import line 25; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -62,16 +62,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Encoding](../../../../AssociativeRingsAndAlgebras/SuppliedLinearFieldEncoding.lean/declarations/encoding.md) | 64 | `declaration-track:53588c107a241d6ff257689ab3afda089d7f6d22ea5439ca5601bbda386e7ad7` |
-| 2 | `def` | [code](../../../../AssociativeRingsAndAlgebras/SuppliedLinearFieldEncoding.lean/declarations/code.md) | 76 | `declaration-track:d58286797d4a643e2a5b516b2af97aae5cef783f8864d0a47ca451f923cbe7ee` |
-| 3 | `def` | [decode](../../../../AssociativeRingsAndAlgebras/SuppliedLinearFieldEncoding.lean/declarations/decode.md) | 81 | `declaration-track:ec7b7b57a65c71423329d964485924d4a7a95def5097372d608f0e9c924c8282` |
-| 4 | `theorem` | [decode_code](../../../../AssociativeRingsAndAlgebras/SuppliedLinearFieldEncoding.lean/declarations/decode-code.md) | 86 | `result-track:1523e807e170943b83f574005711c1cb1de6f0f46bd4bac96e2933c1f39f3c15` |
-| 5 | `theorem` | [code_decode](../../../../AssociativeRingsAndAlgebras/SuppliedLinearFieldEncoding.lean/declarations/code-decode.md) | 92 | `result-track:f2724d13845a62374caca52a0fb68c92720d0572d9a3cc186a1c41edcf2ad1d8` |
-| 6 | `theorem` | [code_zero](../../../../AssociativeRingsAndAlgebras/SuppliedLinearFieldEncoding.lean/declarations/code-zero.md) | 98 | `result-track:2c1ff9c3563507120c64cb673917f797b67273085a39a4b070df63db1d9407e9` |
-| 7 | `theorem` | [code_add](../../../../AssociativeRingsAndAlgebras/SuppliedLinearFieldEncoding.lean/declarations/code-add.md) | 109 | `result-track:e8e323c2796fb264125adbfb6e47472ec3c17650878fff08dd6b4ec244675703` |
-| 8 | `theorem` | [decode_zero](../../../../AssociativeRingsAndAlgebras/SuppliedLinearFieldEncoding.lean/declarations/decode-zero.md) | 117 | `result-track:5469a2cd5a6c4e0a9b116d9cc4dd4c2c7b77556c918ee1a167e8fd904e07acd9` |
-| 9 | `theorem` | [card_field](../../../../AssociativeRingsAndAlgebras/SuppliedLinearFieldEncoding.lean/declarations/card-field.md) | 124 | `result-track:da98422781a2cdb03ce16a0cef4bb69ab298519eed92f913f8ca872516832986` |
-| 10 | `theorem` | [dimension_pos](../../../../AssociativeRingsAndAlgebras/SuppliedLinearFieldEncoding.lean/declarations/dimension-pos.md) | 131 | `result-track:2fe2b49c4055685438058fb2eb3601c40c71f1296187856b104fe44ea8ef38fa` |
+| 1 | `structure` | [Encoding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SuppliedLinearFieldEncoding.lean/declarations/encoding.md) | 64 | `declaration-track:53588c107a241d6ff257689ab3afda089d7f6d22ea5439ca5601bbda386e7ad7` |
+| 2 | `def` | [code](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SuppliedLinearFieldEncoding.lean/declarations/code.md) | 76 | `declaration-track:d58286797d4a643e2a5b516b2af97aae5cef783f8864d0a47ca451f923cbe7ee` |
+| 3 | `def` | [decode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SuppliedLinearFieldEncoding.lean/declarations/decode.md) | 81 | `declaration-track:ec7b7b57a65c71423329d964485924d4a7a95def5097372d608f0e9c924c8282` |
+| 4 | `theorem` | [decode_code](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SuppliedLinearFieldEncoding.lean/declarations/decode-code.md) | 86 | `result-track:1523e807e170943b83f574005711c1cb1de6f0f46bd4bac96e2933c1f39f3c15` |
+| 5 | `theorem` | [code_decode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SuppliedLinearFieldEncoding.lean/declarations/code-decode.md) | 92 | `result-track:f2724d13845a62374caca52a0fb68c92720d0572d9a3cc186a1c41edcf2ad1d8` |
+| 6 | `theorem` | [code_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SuppliedLinearFieldEncoding.lean/declarations/code-zero.md) | 98 | `result-track:2c1ff9c3563507120c64cb673917f797b67273085a39a4b070df63db1d9407e9` |
+| 7 | `theorem` | [code_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SuppliedLinearFieldEncoding.lean/declarations/code-add.md) | 109 | `result-track:e8e323c2796fb264125adbfb6e47472ec3c17650878fff08dd6b4ec244675703` |
+| 8 | `theorem` | [decode_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SuppliedLinearFieldEncoding.lean/declarations/decode-zero.md) | 117 | `result-track:5469a2cd5a6c4e0a9b116d9cc4dd4c2c7b77556c918ee1a167e8fd904e07acd9` |
+| 9 | `theorem` | [card_field](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SuppliedLinearFieldEncoding.lean/declarations/card-field.md) | 124 | `result-track:da98422781a2cdb03ce16a0cef4bb69ab298519eed92f913f8ca872516832986` |
+| 10 | `theorem` | [dimension_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/SuppliedLinearFieldEncoding.lean/declarations/dimension-pos.md) | 131 | `result-track:2fe2b49c4055685438058fb2eb3601c40c71f1296187856b104fe44ea8ef38fa` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BasicBasicNamespacedDistI.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BasicBasicNamespacedDistI.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BasicBasicNamespacedDistI.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BasicBasicNamespacedDistI.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,17 +57,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [distI](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BasicBasicNamespacedDistI.lean/declarations/disti.md) | 26 | `declaration-track:d4692425348f6dd6e53d2d590de35e90d7090a57e513dc8ad7ea14564354c642` |
-| 2 | `lemma` | [distI_nonneg](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BasicBasicNamespacedDistI.lean/declarations/disti-nonneg.md) | 28 | `result-track:413a2c0822553362220f590462acca82c064ff18f8b714a00e52a0840fcadecf` |
-| 3 | `lemma` | [distI_of_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BasicBasicNamespacedDistI.lean/declarations/disti-of-le.md) | 30 | `result-track:aea58c3e1904d56fef75f22e15dff9f55cac09a0004074ef050f65b7e5e310cb` |
-| 4 | `lemma` | [distI_of_ge](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BasicBasicNamespacedDistI.lean/declarations/disti-of-ge.md) | 35 | `result-track:1bf9ae06072f690a329440df9a2cd8079bbe626e7525cb2985c04e565ed0c9aa` |
-| 5 | `def` | [InTail](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BasicBasicNamespacedDistI.lean/declarations/intail.md) | 44 | `declaration-track:25103c799e8ae87ce8299472d93353d6a1f162446dbc2eb5bb069b24e8e3dfdd` |
-| 6 | `lemma` | [InTail_iff_not_mem_Ioc](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BasicBasicNamespacedDistI.lean/declarations/intail-iff-not-mem-ioc.md) | 46 | `result-track:d883eaebe699cbffcba65e459bf27c1d5a9709afefc9848c95ecf60733082587` |
-| 7 | `lemma` | [sqrt_le_distI_of_InTail](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BasicBasicNamespacedDistI.lean/declarations/sqrt-le-disti-of-intail.md) | 50 | `result-track:23b2de9c659e2fb8e1bfb67bbb65be9f952c0e7eeeecc24d365695b0118f2f07` |
-| 8 | `def` | [T₀](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BasicBasicNamespacedDistI.lean/declarations/t.md) | 61 | `declaration-track:26d8ac857bec77c4f55d82d95d2a366eabdc3dd491245e23968cdf9b899ce589` |
-| 9 | `lemma` | [T₀_pos](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BasicBasicNamespacedDistI.lean/declarations/t-pos.md) | 63 | `result-track:2d88f93085f2ef9ec0231d338b55ab0f20de9c9d184ca8e1cf6a32410c9cebc6` |
-| 10 | `structure` | [LocalCount](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BasicBasicNamespacedDistI.lean/declarations/localcount.md) | 74 | `declaration-track:6da1ff4baa58404ed892b85a09e696bb2df07158d42aa14280e17ae1d1357e32` |
-| 11 | `lemma` | [LocalCount.A₀_pos](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/BasicBasicNamespacedDistI.lean/declarations/localcount-a-pos.md) | 79 | `result-track:bda31c926503961eaf72efb00e93ff459fd4df68601c64bb3e0dbc03e3a287cb` |
+| 1 | `def` | [distI](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BasicBasicNamespacedDistI.lean/declarations/disti.md) | 26 | `declaration-track:d4692425348f6dd6e53d2d590de35e90d7090a57e513dc8ad7ea14564354c642` |
+| 2 | `lemma` | [distI_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BasicBasicNamespacedDistI.lean/declarations/disti-nonneg.md) | 28 | `result-track:413a2c0822553362220f590462acca82c064ff18f8b714a00e52a0840fcadecf` |
+| 3 | `lemma` | [distI_of_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BasicBasicNamespacedDistI.lean/declarations/disti-of-le.md) | 30 | `result-track:aea58c3e1904d56fef75f22e15dff9f55cac09a0004074ef050f65b7e5e310cb` |
+| 4 | `lemma` | [distI_of_ge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BasicBasicNamespacedDistI.lean/declarations/disti-of-ge.md) | 35 | `result-track:1bf9ae06072f690a329440df9a2cd8079bbe626e7525cb2985c04e565ed0c9aa` |
+| 5 | `def` | [InTail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BasicBasicNamespacedDistI.lean/declarations/intail.md) | 44 | `declaration-track:25103c799e8ae87ce8299472d93353d6a1f162446dbc2eb5bb069b24e8e3dfdd` |
+| 6 | `lemma` | [InTail_iff_not_mem_Ioc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BasicBasicNamespacedDistI.lean/declarations/intail-iff-not-mem-ioc.md) | 46 | `result-track:d883eaebe699cbffcba65e459bf27c1d5a9709afefc9848c95ecf60733082587` |
+| 7 | `lemma` | [sqrt_le_distI_of_InTail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BasicBasicNamespacedDistI.lean/declarations/sqrt-le-disti-of-intail.md) | 50 | `result-track:23b2de9c659e2fb8e1bfb67bbb65be9f952c0e7eeeecc24d365695b0118f2f07` |
+| 8 | `def` | [T₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BasicBasicNamespacedDistI.lean/declarations/t.md) | 61 | `declaration-track:26d8ac857bec77c4f55d82d95d2a366eabdc3dd491245e23968cdf9b899ce589` |
+| 9 | `lemma` | [T₀_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BasicBasicNamespacedDistI.lean/declarations/t-pos.md) | 63 | `result-track:2d88f93085f2ef9ec0231d338b55ab0f20de9c9d184ca8e1cf6a32410c9cebc6` |
+| 10 | `structure` | [LocalCount](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BasicBasicNamespacedDistI.lean/declarations/localcount.md) | 74 | `declaration-track:6da1ff4baa58404ed892b85a09e696bb2df07158d42aa14280e17ae1d1357e32` |
+| 11 | `lemma` | [LocalCount.A₀_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/BasicBasicNamespacedDistI.lean/declarations/localcount-a-pos.md) | 79 | `result-track:bda31c926503961eaf72efb00e93ff459fd4df68601c64bb3e0dbc03e3a287cb` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

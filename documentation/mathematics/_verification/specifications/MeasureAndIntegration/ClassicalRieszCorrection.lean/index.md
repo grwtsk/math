@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ClassicalRieszCorrection.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ClassicalRieszCorrection.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalRieszCorrection.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalRieszCorrection.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Real.RationalRieszPrimitive`](../../../../MeasureAndIntegration/RationalRieszPrimitive.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.Analysis.Real.RationalRieszPrimitive`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RationalRieszPrimitive.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Analysis.SpecialFunctions.Log.Deriv` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [correction](../../../../MeasureAndIntegration/ClassicalRieszCorrection.lean/declarations/correction.md) | 17 | `declaration-track:7f22849f3ff2d6ca3fdf0ff30b24f1b456361c3e21fbab47769a558b2121db19` |
-| 2 | `def` | [slope](../../../../MeasureAndIntegration/ClassicalRieszCorrection.lean/declarations/slope.md) | 20 | `declaration-track:b3bbc63e513dafa4aa23e69e9347153eec709e9327851b36808aa5e8ef91c75e` |
-| 3 | `theorem` | [hasDerivAt_correction](../../../../MeasureAndIntegration/ClassicalRieszCorrection.lean/declarations/hasderivat-correction.md) | 22 | `result-track:3e372180ffe892955f0120c571420140039514fb70ef910486001e6af43a19f9` |
-| 4 | `theorem` | [hasDerivAt_slope](../../../../MeasureAndIntegration/ClassicalRieszCorrection.lean/declarations/hasderivat-slope.md) | 35 | `result-track:2d98083ff6af6917e0a15413f5333b72190997527c3bf37ce2a142cf98b8ce6e` |
-| 5 | `theorem` | [rationalRieszPrimitive_eq](../../../../MeasureAndIntegration/ClassicalRieszCorrection.lean/declarations/rationalrieszprimitive-eq.md) | 47 | `result-track:64c207ef44aacd007bd68f2fb9a0eb1ddf8ce096453916ba7eef92c09e96f9c5` |
+| 1 | `def` | [correction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalRieszCorrection.lean/declarations/correction.md) | 17 | `declaration-track:7f22849f3ff2d6ca3fdf0ff30b24f1b456361c3e21fbab47769a558b2121db19` |
+| 2 | `def` | [slope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalRieszCorrection.lean/declarations/slope.md) | 20 | `declaration-track:b3bbc63e513dafa4aa23e69e9347153eec709e9327851b36808aa5e8ef91c75e` |
+| 3 | `theorem` | [hasDerivAt_correction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalRieszCorrection.lean/declarations/hasderivat-correction.md) | 22 | `result-track:3e372180ffe892955f0120c571420140039514fb70ef910486001e6af43a19f9` |
+| 4 | `theorem` | [hasDerivAt_slope](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalRieszCorrection.lean/declarations/hasderivat-slope.md) | 35 | `result-track:2d98083ff6af6917e0a15413f5333b72190997527c3bf37ce2a142cf98b8ce6e` |
+| 5 | `theorem` | [rationalRieszPrimitive_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalRieszCorrection.lean/declarations/rationalrieszprimitive-eq.md) | 47 | `result-track:64c207ef44aacd007bd68f2fb9a0eb1ddf8ce096453916ba7eef92c09e96f9c5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

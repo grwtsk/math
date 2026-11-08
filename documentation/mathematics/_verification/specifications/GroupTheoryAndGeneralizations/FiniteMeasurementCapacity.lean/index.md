@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/FiniteMeasurementCapacity.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/FiniteMeasurementCapacity.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteMeasurementCapacity.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteMeasurementCapacity.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Logic.InformationLoss.KernelRestrictedDetection`](../../../../GroupTheoryAndGeneralizations/KernelRestrictedDetection.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.Logic.InformationLoss.KernelRestrictedDetection`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/KernelRestrictedDetection.lean/index.md) — import line 7; pinned internal source present.
 - `Mathlib.Data.Fintype.Card` — import line 8; external provider; requires a separately pinned dependency.
 - `Mathlib.Data.Fintype.Sets` — import line 9; external provider; requires a separately pinned dependency.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [restricted_extra_injective_of_paired](../../../../GroupTheoryAndGeneralizations/FiniteMeasurementCapacity.lean/declarations/restricted-extra-injective-of-paired.md) | 34 | `result-track:797039e81b0695cd77d0c07be808823bf837ddf9e5987cd3bd9ef708999b4b4f` |
-| 2 | `theorem` | [old_kernel_card_le_extra_card](../../../../GroupTheoryAndGeneralizations/FiniteMeasurementCapacity.lean/declarations/old-kernel-card-le-extra-card.md) | 51 | `result-track:46dbe4149cb95b8f6280542ccf7cb7da12f806e82fde4105c503068c61e0073b` |
+| 1 | `theorem` | [restricted_extra_injective_of_paired](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteMeasurementCapacity.lean/declarations/restricted-extra-injective-of-paired.md) | 34 | `result-track:797039e81b0695cd77d0c07be808823bf837ddf9e5987cd3bd9ef708999b4b4f` |
+| 2 | `theorem` | [old_kernel_card_le_extra_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/FiniteMeasurementCapacity.lean/declarations/old-kernel-card-le-extra-card.md) | 51 | `result-track:46dbe4149cb95b8f6280542ccf7cb7da12f806e82fde4105c503068c61e0073b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

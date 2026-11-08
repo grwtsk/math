@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectTypes.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectTypes.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectTypes.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectTypes.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [subtype_val_mono](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectTypes.lean/declarations/subtype-val-mono.md) | 31 | `result-track:0cfe4cf4e1a4aa42ca5917a4783ce76d67d2f759595b2a7e42670d002d791ede` |
-| 2 | `def` | [Types.monoOverEquivalenceSet](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectTypes.lean/declarations/types-monooverequivalenceset.md) | 39 | `declaration-track:1dd0b85b469b070e567f591122a16223dae086b8ffe1a8fe18f5dfd632d63e62` |
-| 3 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectTypes.lean/declarations/instance.md) | 55 | `declaration-track:29c6a6d00e7ddf559723f0822d56e157ae41df1c072190d055c601f0b33a5a3c` |
-| 4 | `def` | [Types.subobjectEquivSet](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectTypes.lean/declarations/types-subobjectequivset.md) | 61 | `declaration-track:b7d7f79d33bedaefdfc80a84a6db888bc22d8c418333da4b47a6be403223a0ba` |
+| 1 | `theorem` | [subtype_val_mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectTypes.lean/declarations/subtype-val-mono.md) | 31 | `result-track:0cfe4cf4e1a4aa42ca5917a4783ce76d67d2f759595b2a7e42670d002d791ede` |
+| 2 | `def` | [Types.monoOverEquivalenceSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectTypes.lean/declarations/types-monooverequivalenceset.md) | 39 | `declaration-track:1dd0b85b469b070e567f591122a16223dae086b8ffe1a8fe18f5dfd632d63e62` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectTypes.lean/declarations/instance.md) | 55 | `declaration-track:29c6a6d00e7ddf559723f0822d56e157ae41df1c072190d055c601f0b33a5a3c` |
+| 4 | `def` | [Types.subobjectEquivSet](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectTypes.lean/declarations/types-subobjectequivset.md) | 61 | `declaration-track:b7d7f79d33bedaefdfc80a84a6db888bc22d8c418333da4b47a6be403223a0ba` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

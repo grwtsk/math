@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/PrimePowerLogSumsNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/PrimePowerLogSumsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimePowerLogSumsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimePowerLogSumsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [primePowerPairsUpTo](../../../../Combinatorics/PrimePowerLogSumsNamespaced.lean/declarations/primepowerpairsupto.md) | 24 | `declaration-track:30a6a5a17b0456ebbbde51d58faaedd3fa942dcf065e81de4ab59e6196c735d7` |
-| 2 | `theorem` | [mem_primePowerPairsUpTo_iff](../../../../Combinatorics/PrimePowerLogSumsNamespaced.lean/declarations/mem-primepowerpairsupto-iff.md) | 32 | `result-track:0723820bbed8b007a6e558e708fce12e91030e85af935ce4849991225dc0c7f9` |
-| 3 | `def` | [chebyshevPsi](../../../../Combinatorics/PrimePowerLogSumsNamespaced.lean/declarations/chebyshevpsi.md) | 67 | `declaration-track:87928a0fdc0b0d12f08a67c056d0d0a9149b5d270001f98e056db5fbe06f0f25` |
-| 4 | `theorem` | [chebyshevPsi_nonneg](../../../../Combinatorics/PrimePowerLogSumsNamespaced.lean/declarations/chebyshevpsi-nonneg.md) | 71 | `result-track:5592af7e6d016f424138b14bd609e205aae20c349b572c66929ad455f28e33b7` |
-| 5 | `theorem` | [chebyshevPsi_eq_sum_log_prime](../../../../Combinatorics/PrimePowerLogSumsNamespaced.lean/declarations/chebyshevpsi-eq-sum-log-prime.md) | 83 | `result-track:f2ee43d00b79061b22d267bd688fa8f5e66f0f49252aeea841d2ae088d982676` |
-| 6 | `theorem` | [chebyshevTheta_le_chebyshevPsi](../../../../Combinatorics/PrimePowerLogSumsNamespaced.lean/declarations/chebyshevtheta-le-chebyshevpsi.md) | 105 | `result-track:80ae1e31f6b5bd0d6d1a78e9e64e36626ae2defc38a204a0575f2c4e8f936f5c` |
-| 7 | `theorem` | [chebyshevPsi_le_sum_log_all_prime_powers](../../../../Combinatorics/PrimePowerLogSumsNamespaced.lean/declarations/chebyshevpsi-le-sum-log-all-prime-powers.md) | 139 | `result-track:a99381112708ea07cf70397836ae8ac4baabd5e37e846e2d9f979c73474aeac1` |
-| 8 | `def` | [ChebyshevPsiUpperBoundTarget](../../../../Combinatorics/PrimePowerLogSumsNamespaced.lean/declarations/chebyshevpsiupperboundtarget.md) | 192 | `declaration-track:7925800459325a0aa4f71625657ab45819c5ba968aeeaefb9c47a3a11b98e33b` |
+| 1 | `def` | [primePowerPairsUpTo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimePowerLogSumsNamespaced.lean/declarations/primepowerpairsupto.md) | 24 | `declaration-track:30a6a5a17b0456ebbbde51d58faaedd3fa942dcf065e81de4ab59e6196c735d7` |
+| 2 | `theorem` | [mem_primePowerPairsUpTo_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimePowerLogSumsNamespaced.lean/declarations/mem-primepowerpairsupto-iff.md) | 32 | `result-track:0723820bbed8b007a6e558e708fce12e91030e85af935ce4849991225dc0c7f9` |
+| 3 | `def` | [chebyshevPsi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimePowerLogSumsNamespaced.lean/declarations/chebyshevpsi.md) | 67 | `declaration-track:87928a0fdc0b0d12f08a67c056d0d0a9149b5d270001f98e056db5fbe06f0f25` |
+| 4 | `theorem` | [chebyshevPsi_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimePowerLogSumsNamespaced.lean/declarations/chebyshevpsi-nonneg.md) | 71 | `result-track:5592af7e6d016f424138b14bd609e205aae20c349b572c66929ad455f28e33b7` |
+| 5 | `theorem` | [chebyshevPsi_eq_sum_log_prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimePowerLogSumsNamespaced.lean/declarations/chebyshevpsi-eq-sum-log-prime.md) | 83 | `result-track:f2ee43d00b79061b22d267bd688fa8f5e66f0f49252aeea841d2ae088d982676` |
+| 6 | `theorem` | [chebyshevTheta_le_chebyshevPsi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimePowerLogSumsNamespaced.lean/declarations/chebyshevtheta-le-chebyshevpsi.md) | 105 | `result-track:80ae1e31f6b5bd0d6d1a78e9e64e36626ae2defc38a204a0575f2c4e8f936f5c` |
+| 7 | `theorem` | [chebyshevPsi_le_sum_log_all_prime_powers](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimePowerLogSumsNamespaced.lean/declarations/chebyshevpsi-le-sum-log-all-prime-powers.md) | 139 | `result-track:a99381112708ea07cf70397836ae8ac4baabd5e37e846e2d9f979c73474aeac1` |
+| 8 | `def` | [ChebyshevPsiUpperBoundTarget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/PrimePowerLogSumsNamespaced.lean/declarations/chebyshevpsiupperboundtarget.md) | 192 | `declaration-track:7925800459325a0aa4f71625657ab45819c5ba968aeeaefb9c47a3a11b98e33b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

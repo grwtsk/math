@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/CanonicalHomeomorphismAlignment.lean/index.md) · [Full source](../../../../GeneralTopology/CanonicalHomeomorphismAlignment.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CanonicalHomeomorphismAlignment.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CanonicalHomeomorphismAlignment.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -48,7 +48,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 - `BitMatrix.Carrier.BooleanSpace` — import line 19; external provider; requires a separately pinned dependency.
 - `Mathlib.Topology.Instances.CantorSet` — import line 20; external provider; requires a separately pinned dependency.
-- [Canonical Digit Equivalence And Laws](../../../../GeneralTopology/CanonicalDigitEquivalenceAndLaws.lean/index.md) — import line 22; pinned internal source present.
+- [Canonical Digit Equivalence And Laws](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CanonicalDigitEquivalenceAndLaws.lean/index.md) — import line 22; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [analyticCantorHomeomorphism](../../../../GeneralTopology/CanonicalHomeomorphismAlignment.lean/declarations/analyticcantorhomeomorphism.md) | 37 | `declaration-track:96d534202b05367f426de2393b2ec10439fc52d1003b50b36c370890cfa59761` |
-| 2 | `theorem` | [analyticCantorHomeomorphism_toEquiv](../../../../GeneralTopology/CanonicalHomeomorphismAlignment.lean/declarations/analyticcantorhomeomorphism-toequiv.md) | 41 | `result-track:90735ce3ac792b5c37d2ac2585df4815ecbe145e240740097377558df693effd` |
+| 1 | `def` | [analyticCantorHomeomorphism](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CanonicalHomeomorphismAlignment.lean/declarations/analyticcantorhomeomorphism.md) | 37 | `declaration-track:96d534202b05367f426de2393b2ec10439fc52d1003b50b36c370890cfa59761` |
+| 2 | `theorem` | [analyticCantorHomeomorphism_toEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/CanonicalHomeomorphismAlignment.lean/declarations/analyticcantorhomeomorphism-toequiv.md) | 41 | `result-track:90735ce3ac792b5c37d2ac2585df4815ecbe145e240740097377558df693effd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

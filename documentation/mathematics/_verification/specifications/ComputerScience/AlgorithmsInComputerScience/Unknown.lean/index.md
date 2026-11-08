@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Unknown.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Unknown.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Unknown.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Unknown.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [UnknownKind](../../../../../ComputerScience/AlgorithmsInComputerScience/Unknown.lean/declarations/unknownkind.md) | 13 | `declaration-track:8d792ae72718f2b1e85cdd267ec19b8fb7e8d2a060305422a2047fefa5112805` |
-| 2 | `structure` | [UnknownBranch](../../../../../ComputerScience/AlgorithmsInComputerScience/Unknown.lean/declarations/unknownbranch.md) | 24 | `declaration-track:c3aa1778ec2a8305ffc7a6539bd92c956361e216b1df5ac217c8bfd212a9ba07` |
-| 3 | `structure` | [BranchResolution](../../../../../ComputerScience/AlgorithmsInComputerScience/Unknown.lean/declarations/branchresolution.md) | 34 | `declaration-track:b0561fc824bb311ddb0deb83032cc1f0f062654afe6c98c28f45e0e2793b61ca` |
-| 4 | `theorem` | [BranchResolution.preserves_branch](../../../../../ComputerScience/AlgorithmsInComputerScience/Unknown.lean/declarations/branchresolution-preserves-branch.md) | 42 | `result-track:aa3069622c7a0d495d62edbc0949700f7ed4dd9ca196d248eb014fe90446e776` |
+| 1 | `inductive` | [UnknownKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Unknown.lean/declarations/unknownkind.md) | 13 | `declaration-track:8d792ae72718f2b1e85cdd267ec19b8fb7e8d2a060305422a2047fefa5112805` |
+| 2 | `structure` | [UnknownBranch](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Unknown.lean/declarations/unknownbranch.md) | 24 | `declaration-track:c3aa1778ec2a8305ffc7a6539bd92c956361e216b1df5ac217c8bfd212a9ba07` |
+| 3 | `structure` | [BranchResolution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Unknown.lean/declarations/branchresolution.md) | 34 | `declaration-track:b0561fc824bb311ddb0deb83032cc1f0f062654afe6c98c28f45e0e2793b61ca` |
+| 4 | `theorem` | [BranchResolution.preserves_branch](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/Unknown.lean/declarations/branchresolution-preserves-branch.md) | 42 | `result-track:aa3069622c7a0d495d62edbc0949700f7ed4dd9ca196d248eb014fe90446e776` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

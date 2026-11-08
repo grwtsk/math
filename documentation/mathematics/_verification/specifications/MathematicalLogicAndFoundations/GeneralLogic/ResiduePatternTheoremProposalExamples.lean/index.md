@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResiduePatternTheoremProposalExamples.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResiduePatternTheoremProposalExamples.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResiduePatternTheoremProposalExamples.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResiduePatternTheoremProposalExamples.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [toyResiduePatternFeature](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResiduePatternTheoremProposalExamples.lean/declarations/toyresiduepatternfeature.md) | 13 | `declaration-track:0aa63c8a8905f1c132fcd5ca35bced0ee9956b746c48d53e76bce0fc41beab07` |
-| 2 | `def` | [toyResidueCandidate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResiduePatternTheoremProposalExamples.lean/declarations/toyresiduecandidate.md) | 21 | `declaration-track:4ed27b35a5514992580977a0eb54729719637ffbcc185852afb566c1e61e1583` |
-| 3 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResiduePatternTheoremProposalExamples.lean/declarations/example-source-edition-2.md) | 32 | `declaration-track:ca448e3d028df77e7916e4f504e3196131f31714efb376c51ebd92f3c6986565` |
-| 4 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ResiduePatternTheoremProposalExamples.lean/declarations/example.md) | 37 | `declaration-track:6b216f9c1042487a1c8bad7be151bd9f9bf046cd372a761c083ca10407fdd64c` |
+| 1 | `def` | [toyResiduePatternFeature](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResiduePatternTheoremProposalExamples.lean/declarations/toyresiduepatternfeature.md) | 13 | `declaration-track:0aa63c8a8905f1c132fcd5ca35bced0ee9956b746c48d53e76bce0fc41beab07` |
+| 2 | `def` | [toyResidueCandidate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResiduePatternTheoremProposalExamples.lean/declarations/toyresiduecandidate.md) | 21 | `declaration-track:4ed27b35a5514992580977a0eb54729719637ffbcc185852afb566c1e61e1583` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResiduePatternTheoremProposalExamples.lean/declarations/example-source-edition-2.md) | 32 | `declaration-track:ca448e3d028df77e7916e4f504e3196131f31714efb376c51ebd92f3c6986565` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ResiduePatternTheoremProposalExamples.lean/declarations/example.md) | 37 | `declaration-track:6b216f9c1042487a1c8bad7be151bd9f9bf046cd372a761c083ca10407fdd64c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/RationalRieszPrimitive.lean/index.md) · [Full source](../../../../MeasureAndIntegration/RationalRieszPrimitive.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RationalRieszPrimitive.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RationalRieszPrimitive.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Real.TentRationalCorrection`](../../../../MeasureAndIntegration/TentRationalCorrection.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.Real.TentRationalCorrection`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/TentRationalCorrection.lean/index.md) — import line 4; pinned internal source present.
 - `Mathlib.Tactic` — import line 5; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [rationalRieszPrimitive](../../../../MeasureAndIntegration/RationalRieszPrimitive.lean/declarations/rationalrieszprimitive.md) | 22 | `declaration-track:55d409a3a1b9cfeaa6b9dff57f0d6681b1650543c48f509cf841ce8030cfd40a` |
-| 2 | `def` | [windowPrimitive](../../../../MeasureAndIntegration/RationalRieszPrimitive.lean/declarations/windowprimitive.md) | 25 | `declaration-track:0b14f68fab5f13b5292eeb0365ed03064d7c0412e2155e815265ce0a86a65686` |
-| 3 | `theorem` | [hinge_density_integrable](../../../../MeasureAndIntegration/RationalRieszPrimitive.lean/declarations/hinge-density-integrable.md) | 28 | `result-track:6098524a498b16495b5d3ed5ab21f4febe0b929e1e5fdbffb0bd317f052cff03` |
-| 4 | `theorem` | [windowPrimitive_eq](../../../../MeasureAndIntegration/RationalRieszPrimitive.lean/declarations/windowprimitive-eq.md) | 34 | `result-track:c257230e85505dbae3d08979704cc3e9d4bba4e7f0b6e7167ba062bf9b2d3b98` |
-| 5 | `theorem` | [integral_tent_on_window](../../../../MeasureAndIntegration/RationalRieszPrimitive.lean/declarations/integral-tent-on-window.md) | 57 | `result-track:13636c2978ce8d830c97fd7bccafdadd51b74a093bb80785ffbe8cfd52daf776` |
-| 6 | `theorem` | [windowPrimitive_second_difference](../../../../MeasureAndIntegration/RationalRieszPrimitive.lean/declarations/windowprimitive-second-difference.md) | 75 | `result-track:b9953ce9135749f59db9afae800387c589246b51ee6365ae45e251b9f746afe3` |
-| 7 | `theorem` | [rationalRieszPrimitive_second_difference](../../../../MeasureAndIntegration/RationalRieszPrimitive.lean/declarations/rationalrieszprimitive-second-difference.md) | 102 | `result-track:3bb70be4086e04b355205fca58c0aefc50ac2e8ad5b57f93a9bf4312ef1d58e9` |
-| 8 | `theorem` | [rationalRieszPrimitive_base](../../../../MeasureAndIntegration/RationalRieszPrimitive.lean/declarations/rationalrieszprimitive-base.md) | 112 | `result-track:50c7822dade12afa8d1771995a629484c77e911668222c997dd62f4decc00810` |
-| 9 | `theorem` | [rationalRieszPrimitive_change_base](../../../../MeasureAndIntegration/RationalRieszPrimitive.lean/declarations/rationalrieszprimitive-change-base.md) | 117 | `result-track:fb44c21d6d4d389874163ec5b644516e1011117d5847e7b121064cae1f700bb2` |
+| 1 | `def` | [rationalRieszPrimitive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RationalRieszPrimitive.lean/declarations/rationalrieszprimitive.md) | 22 | `declaration-track:55d409a3a1b9cfeaa6b9dff57f0d6681b1650543c48f509cf841ce8030cfd40a` |
+| 2 | `def` | [windowPrimitive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RationalRieszPrimitive.lean/declarations/windowprimitive.md) | 25 | `declaration-track:0b14f68fab5f13b5292eeb0365ed03064d7c0412e2155e815265ce0a86a65686` |
+| 3 | `theorem` | [hinge_density_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RationalRieszPrimitive.lean/declarations/hinge-density-integrable.md) | 28 | `result-track:6098524a498b16495b5d3ed5ab21f4febe0b929e1e5fdbffb0bd317f052cff03` |
+| 4 | `theorem` | [windowPrimitive_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RationalRieszPrimitive.lean/declarations/windowprimitive-eq.md) | 34 | `result-track:c257230e85505dbae3d08979704cc3e9d4bba4e7f0b6e7167ba062bf9b2d3b98` |
+| 5 | `theorem` | [integral_tent_on_window](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RationalRieszPrimitive.lean/declarations/integral-tent-on-window.md) | 57 | `result-track:13636c2978ce8d830c97fd7bccafdadd51b74a093bb80785ffbe8cfd52daf776` |
+| 6 | `theorem` | [windowPrimitive_second_difference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RationalRieszPrimitive.lean/declarations/windowprimitive-second-difference.md) | 75 | `result-track:b9953ce9135749f59db9afae800387c589246b51ee6365ae45e251b9f746afe3` |
+| 7 | `theorem` | [rationalRieszPrimitive_second_difference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RationalRieszPrimitive.lean/declarations/rationalrieszprimitive-second-difference.md) | 102 | `result-track:3bb70be4086e04b355205fca58c0aefc50ac2e8ad5b57f93a9bf4312ef1d58e9` |
+| 8 | `theorem` | [rationalRieszPrimitive_base](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RationalRieszPrimitive.lean/declarations/rationalrieszprimitive-base.md) | 112 | `result-track:50c7822dade12afa8d1771995a629484c77e911668222c997dd62f4decc00810` |
+| 9 | `theorem` | [rationalRieszPrimitive_change_base](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/RationalRieszPrimitive.lean/declarations/rationalrieszprimitive-change-base.md) | 117 | `result-track:fb44c21d6d4d389874163ec5b644516e1011117d5847e7b121064cae1f700bb2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

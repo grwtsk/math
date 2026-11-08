@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/PrimeFactorEncodingRoundTrip.lean/index.md) · [Full source](../../../../NumberTheory/PrimeFactorEncodingRoundTrip.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimeFactorEncodingRoundTrip.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimeFactorEncodingRoundTrip.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,7 +60,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [prime_factor_cellular_decode_encode](../../../../NumberTheory/PrimeFactorEncodingRoundTrip.lean/declarations/prime-factor-cellular-decode-encode.md) | 40 | `result-track:5a8d1b45a3eb52ffc74190b910cb66f59274f9f33b5bc3c99cee80bd91d1de1e` |
+| 1 | `theorem` | [prime_factor_cellular_decode_encode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimeFactorEncodingRoundTrip.lean/declarations/prime-factor-cellular-decode-encode.md) | 40 | `result-track:5a8d1b45a3eb52ffc74190b910cb66f59274f9f33b5bc3c99cee80bd91d1de1e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/CongruenceOppositeNamespaced.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/CongruenceOppositeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CongruenceOppositeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CongruenceOppositeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [op](../../../../GroupTheoryAndGeneralizations/CongruenceOppositeNamespaced.lean/declarations/op.md) | 34 | `declaration-track:a8ff8d38579c933af86a15b2f55aa4b6194cad04beb3dd312dea12433e137875` |
-| 2 | `def` | [unop](../../../../GroupTheoryAndGeneralizations/CongruenceOppositeNamespaced.lean/declarations/unop.md) | 46 | `declaration-track:05cfa86044d807c6edd3f82004739d5725845167eed2abdf609d5f88a579e14b` |
-| 3 | `def` | [orderIsoOp](../../../../GroupTheoryAndGeneralizations/CongruenceOppositeNamespaced.lean/declarations/orderisoop.md) | 59 | `declaration-track:228e8160c1f175856e36d87b4480f2e43653dfe3642d1d67f9b2f414486bc537` |
+| 1 | `def` | [op](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CongruenceOppositeNamespaced.lean/declarations/op.md) | 34 | `declaration-track:a8ff8d38579c933af86a15b2f55aa4b6194cad04beb3dd312dea12433e137875` |
+| 2 | `def` | [unop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CongruenceOppositeNamespaced.lean/declarations/unop.md) | 46 | `declaration-track:05cfa86044d807c6edd3f82004739d5725845167eed2abdf609d5f88a579e14b` |
+| 3 | `def` | [orderIsoOp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CongruenceOppositeNamespaced.lean/declarations/orderisoop.md) | 59 | `declaration-track:228e8160c1f175856e36d87b4480f2e43653dfe3642d1d67f9b2f414486bc537` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

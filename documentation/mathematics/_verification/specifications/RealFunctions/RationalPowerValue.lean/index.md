@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/RationalPowerValue.lean/index.md) · [Full source](../../../../RealFunctions/RationalPowerValue.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalPowerValue.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalPowerValue.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.ErrorBounds.RationalAtanhPower`](../../../../RealFunctions/RationalAtanhPower.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.ErrorBounds.RationalRoundedExp`](../../../../RealFunctions/RationalRoundedExp.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.ErrorBounds.RationalAtanhPower`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalAtanhPower.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.ErrorBounds.RationalRoundedExp`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalRoundedExp.lean/index.md) — import line 5; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,22 +58,22 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Resolution](../../../../RealFunctions/RationalPowerValue.lean/declarations/resolution.md) | 23 | `declaration-track:de6e924a55590e76ef4377ac7d0064124e90bcb889140c1153232a6939d1ac25` |
-| 2 | `def` | [logBall](../../../../RealFunctions/RationalPowerValue.lean/declarations/logball.md) | 32 | `declaration-track:752b482b12aba6aed1a8f95be950ce568e6d2bf6a8d2d62b559bf83db74cb102` |
-| 3 | `def` | [exponent](../../../../RealFunctions/RationalPowerValue.lean/declarations/exponent.md) | 35 | `declaration-track:2f73f4c2b93a58fcfb320c5994d0b6bdac30a2af941c285f9b5c4d73899c50fc` |
-| 4 | `def` | [trace](../../../../RealFunctions/RationalPowerValue.lean/declarations/trace.md) | 38 | `declaration-track:4d9ca85c03cb8af4ead0e1cc8fa6f7b32320b87c37e021cb4b8a7c1229c2d925` |
-| 5 | `def` | [valueBall](../../../../RealFunctions/RationalPowerValue.lean/declarations/valueball.md) | 41 | `declaration-track:2247e63f6e240aa1fff0d4baa26352fe8badad97134eafeac631a8dacf889c63` |
-| 6 | `def` | [Valid](../../../../RealFunctions/RationalPowerValue.lean/declarations/valid.md) | 46 | `declaration-track:faca4fb073741f99dea78708dcae9eb952f9b0dd5061a03c35def516df74ac02` |
-| 7 | `instance` | [validDecidable](../../../../RealFunctions/RationalPowerValue.lean/declarations/validdecidable.md) | 51 | `declaration-track:2cf4215e549b7a106aafa0d7f530386019c9ab3cd078349a35cac9beed50b94a` |
-| 8 | `def` | [check](../../../../RealFunctions/RationalPowerValue.lean/declarations/check.md) | 54 | `declaration-track:f3b046cb88cfce4064964e10c3b9f4af2c19a0550422b9c72911d058bf5a9940` |
-| 9 | `theorem` | [check_iff_valid](../../../../RealFunctions/RationalPowerValue.lean/declarations/check-iff-valid.md) | 56 | `result-track:979d15d73f2f47c57d7a16048bf8729d4b4cc8504310ee1c6726a74a39ac156f` |
-| 10 | `theorem` | [exponent_re_nonpos](../../../../RealFunctions/RationalPowerValue.lean/declarations/exponent-re-nonpos.md) | 60 | `result-track:f43868b66e435c2f59ec7a3508443ef598a1d6cf0960c3e30be4b6b30c295ef0` |
-| 11 | `theorem` | [trace_checked](../../../../RealFunctions/RationalPowerValue.lean/declarations/trace-checked.md) | 70 | `result-track:2d9e847007387ca5e3691eebee02c0fd62e432dcbe9039358b90a920e2a3b4a4` |
-| 12 | `theorem` | [logBall_sound](../../../../RealFunctions/RationalPowerValue.lean/declarations/logball-sound.md) | 77 | `result-track:edc04be76d5a2f5cfcf9e852feb0ef8906a159e56617997cd0b625ec20738f6f` |
-| 13 | `theorem` | [valueBall_sound](../../../../RealFunctions/RationalPowerValue.lean/declarations/valueball-sound.md) | 83 | `result-track:defe8e12c4df6fc692b51cd1f23e1b612727abd3e591b6a942bb12a5541093e1` |
-| 14 | `def` | [evaluate](../../../../RealFunctions/RationalPowerValue.lean/declarations/evaluate.md) | 88 | `declaration-track:a1d6b7c9bf20a83be2903be95a508d3fa9c8e3b2311c8b6dd0029658bc896ec4` |
-| 15 | `theorem` | [evaluate_eq_some_iff](../../../../RealFunctions/RationalPowerValue.lean/declarations/evaluate-eq-some-iff.md) | 91 | `result-track:5d7617e64926da067007d6c361a652722e5e8d248eef2f0fd0bd471082bccc0b` |
-| 16 | `theorem` | [evaluate_sound](../../../../RealFunctions/RationalPowerValue.lean/declarations/evaluate-sound.md) | 95 | `result-track:cc788ca558fc3d15014d9253b02c9b90ee8244924199ad33317ccefed7f45cb6` |
+| 1 | `structure` | [Resolution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalPowerValue.lean/declarations/resolution.md) | 23 | `declaration-track:de6e924a55590e76ef4377ac7d0064124e90bcb889140c1153232a6939d1ac25` |
+| 2 | `def` | [logBall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalPowerValue.lean/declarations/logball.md) | 32 | `declaration-track:752b482b12aba6aed1a8f95be950ce568e6d2bf6a8d2d62b559bf83db74cb102` |
+| 3 | `def` | [exponent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalPowerValue.lean/declarations/exponent.md) | 35 | `declaration-track:2f73f4c2b93a58fcfb320c5994d0b6bdac30a2af941c285f9b5c4d73899c50fc` |
+| 4 | `def` | [trace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalPowerValue.lean/declarations/trace.md) | 38 | `declaration-track:4d9ca85c03cb8af4ead0e1cc8fa6f7b32320b87c37e021cb4b8a7c1229c2d925` |
+| 5 | `def` | [valueBall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalPowerValue.lean/declarations/valueball.md) | 41 | `declaration-track:2247e63f6e240aa1fff0d4baa26352fe8badad97134eafeac631a8dacf889c63` |
+| 6 | `def` | [Valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalPowerValue.lean/declarations/valid.md) | 46 | `declaration-track:faca4fb073741f99dea78708dcae9eb952f9b0dd5061a03c35def516df74ac02` |
+| 7 | `instance` | [validDecidable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalPowerValue.lean/declarations/validdecidable.md) | 51 | `declaration-track:2cf4215e549b7a106aafa0d7f530386019c9ab3cd078349a35cac9beed50b94a` |
+| 8 | `def` | [check](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalPowerValue.lean/declarations/check.md) | 54 | `declaration-track:f3b046cb88cfce4064964e10c3b9f4af2c19a0550422b9c72911d058bf5a9940` |
+| 9 | `theorem` | [check_iff_valid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalPowerValue.lean/declarations/check-iff-valid.md) | 56 | `result-track:979d15d73f2f47c57d7a16048bf8729d4b4cc8504310ee1c6726a74a39ac156f` |
+| 10 | `theorem` | [exponent_re_nonpos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalPowerValue.lean/declarations/exponent-re-nonpos.md) | 60 | `result-track:f43868b66e435c2f59ec7a3508443ef598a1d6cf0960c3e30be4b6b30c295ef0` |
+| 11 | `theorem` | [trace_checked](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalPowerValue.lean/declarations/trace-checked.md) | 70 | `result-track:2d9e847007387ca5e3691eebee02c0fd62e432dcbe9039358b90a920e2a3b4a4` |
+| 12 | `theorem` | [logBall_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalPowerValue.lean/declarations/logball-sound.md) | 77 | `result-track:edc04be76d5a2f5cfcf9e852feb0ef8906a159e56617997cd0b625ec20738f6f` |
+| 13 | `theorem` | [valueBall_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalPowerValue.lean/declarations/valueball-sound.md) | 83 | `result-track:defe8e12c4df6fc692b51cd1f23e1b612727abd3e591b6a942bb12a5541093e1` |
+| 14 | `def` | [evaluate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalPowerValue.lean/declarations/evaluate.md) | 88 | `declaration-track:a1d6b7c9bf20a83be2903be95a508d3fa9c8e3b2311c8b6dd0029658bc896ec4` |
+| 15 | `theorem` | [evaluate_eq_some_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalPowerValue.lean/declarations/evaluate-eq-some-iff.md) | 91 | `result-track:5d7617e64926da067007d6c361a652722e5e8d248eef2f0fd0bd471082bccc0b` |
+| 16 | `theorem` | [evaluate_sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/RationalPowerValue.lean/declarations/evaluate-sound.md) | 95 | `result-track:cc788ca558fc3d15014d9253b02c9b90ee8244924199ad33317ccefed7f45cb6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

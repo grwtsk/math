@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ACb1aa4fb12aaaa.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ACb1aa4fb12aaaa.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ACb1aa4fb12aaaa.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ACb1aa4fb12aaaa.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,7 +60,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [liftProjectionOrbit_mem](../../../../../ComputerScience/AlgorithmsInComputerScience/ACb1aa4fb12aaaa.lean/declarations/liftprojectionorbit-mem.md) | 16 | `result-track:643bb0cf02a06f88e561ab336f18b55bfacc951e272c130f2f0aa557d026caf1` |
+| 1 | `theorem` | [liftProjectionOrbit_mem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ACb1aa4fb12aaaa.lean/declarations/liftprojectionorbit-mem.md) | 16 | `result-track:643bb0cf02a06f88e561ab336f18b55bfacc951e272c130f2f0aa557d026caf1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

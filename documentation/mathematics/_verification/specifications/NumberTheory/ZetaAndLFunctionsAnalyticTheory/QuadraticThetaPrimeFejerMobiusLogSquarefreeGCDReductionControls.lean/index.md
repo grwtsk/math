@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogSquarefreeGCDReductionControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogSquarefreeGCDReductionControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogSquarefreeGCDReductionControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogSquarefreeGCDReductionControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeFejerMobiusLogSquarefreeGCDReduction`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogSquarefreeGCDReduction.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaPrimeFejerMobiusLogSquarefreeGCDReduction`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogSquarefreeGCDReduction.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [exactFrontier](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogSquarefreeGCDReductionControls.lean/declarations/exactfrontier.md) | 13 | `declaration-track:51f9ba9e14ffff873f28e4233a1aeb9dd4c274c05ca15143234aaaa88ca020eb` |
-| 2 | `theorem` | [squarefreeSupportReductionClosed](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogSquarefreeGCDReductionControls.lean/declarations/squarefreesupportreductionclosed.md) | 30 | `result-track:f6ce7d5800c3a8caeab44eebac5a9c97ac1f2b7c16d64636b2f06a17fb848c78` |
-| 3 | `theorem` | [primitiveCoprimeReductionClosed](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogSquarefreeGCDReductionControls.lean/declarations/primitivecoprimereductionclosed.md) | 36 | `result-track:17738e448d4ea15f4f9c64c413d4260ae3775aed65588deba3c1842242492fa6` |
-| 4 | `def` | [remainingArithmeticFrontier](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogSquarefreeGCDReductionControls.lean/declarations/remainingarithmeticfrontier.md) | 45 | `declaration-track:25992b85225c042d4531867f04a3f20ecf277d7c9e964d0fff120f889a24d284` |
+| 1 | `def` | [exactFrontier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogSquarefreeGCDReductionControls.lean/declarations/exactfrontier.md) | 13 | `declaration-track:51f9ba9e14ffff873f28e4233a1aeb9dd4c274c05ca15143234aaaa88ca020eb` |
+| 2 | `theorem` | [squarefreeSupportReductionClosed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogSquarefreeGCDReductionControls.lean/declarations/squarefreesupportreductionclosed.md) | 30 | `result-track:f6ce7d5800c3a8caeab44eebac5a9c97ac1f2b7c16d64636b2f06a17fb848c78` |
+| 3 | `theorem` | [primitiveCoprimeReductionClosed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogSquarefreeGCDReductionControls.lean/declarations/primitivecoprimereductionclosed.md) | 36 | `result-track:17738e448d4ea15f4f9c64c413d4260ae3775aed65588deba3c1842242492fa6` |
+| 4 | `def` | [remainingArithmeticFrontier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/QuadraticThetaPrimeFejerMobiusLogSquarefreeGCDReductionControls.lean/declarations/remainingarithmeticfrontier.md) | 45 | `declaration-track:25992b85225c042d4531867f04a3f20ecf277d7c9e964d0fff120f889a24d284` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../SpecialFunctions/ERealExpNamespaced.lean/index.md) · [Full source](../../../../SpecialFunctions/ERealExpNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ERealExpNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ERealExpNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,27 +58,27 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [exp](../../../../SpecialFunctions/ERealExpNamespaced.lean/declarations/exp.md) | 44 | `declaration-track:9345a45d23caea1720ebf1b67f38ab1107412f2bbb8ca7ee72bd5702f3867b99` |
-| 2 | `lemma` | [exp_bot](../../../../SpecialFunctions/ERealExpNamespaced.lean/declarations/exp-bot.md) | 49 | `result-track:c6f1e7f9dbf9cd724324a132bfd65e0c44d940afd7554d6d48453c9b6f42904c` |
-| 3 | `lemma` | [exp_zero](../../../../SpecialFunctions/ERealExpNamespaced.lean/declarations/exp-zero.md) | 50 | `result-track:ebd22fceb57e3b8b7ef609d0db54bedbd0c2350d48fc6697e03ba11a0c94482f` |
-| 4 | `lemma` | [exp_top](../../../../SpecialFunctions/ERealExpNamespaced.lean/declarations/exp-top.md) | 51 | `result-track:eb64de9518ef91bc533ba72e70d5fffde73ca5ba52a605f23f1f75f39ce8ca7e` |
-| 5 | `lemma` | [exp_coe](../../../../SpecialFunctions/ERealExpNamespaced.lean/declarations/exp-coe.md) | 52 | `result-track:ce455119ae87e09f15828bb5eb0c467e626452f8dd74fd5e77d9670967e7c95c` |
-| 6 | `lemma` | [exp_eq_zero_iff](../../../../SpecialFunctions/ERealExpNamespaced.lean/declarations/exp-eq-zero-iff.md) | 54 | `result-track:ff930e99e23b9f84c49c9a5f74885df283e66b7d81b841bb009b8e51f3556810` |
-| 7 | `lemma` | [exp_eq_top_iff](../../../../SpecialFunctions/ERealExpNamespaced.lean/declarations/exp-eq-top-iff.md) | 57 | `result-track:a07ef9011cd1107dba3e888ff150d1c6a4aaee2fddf39e9df25ae58ec6462b99` |
-| 8 | `lemma` | [exp_strictMono](../../../../SpecialFunctions/ERealExpNamespaced.lean/declarations/exp-strictmono.md) | 65 | `result-track:ec9a9147a6b51fde95c38783e57c12d7fed856db5312a04c2a8fce5958191a6f` |
-| 9 | `lemma` | [exp_monotone](../../../../SpecialFunctions/ERealExpNamespaced.lean/declarations/exp-monotone.md) | 77 | `result-track:b6bf7b99dd26be69b36ebe93e68aed6fb0c815cf35d87ff5dfe399fc33584a4b` |
-| 10 | `lemma` | [exp_lt_exp_iff](../../../../SpecialFunctions/ERealExpNamespaced.lean/declarations/exp-lt-exp-iff.md) | 79 | `result-track:208a8c986ad0c7d565efebd59c037f04ca789f7f5542025da86e7348d221c8df` |
-| 11 | `lemma` | [zero_lt_exp_iff](../../../../SpecialFunctions/ERealExpNamespaced.lean/declarations/zero-lt-exp-iff.md) | 81 | `result-track:ced916bbdcaad120f036cc5dbde02b0346b65d7011a8b9d85a03b4ea7d22a612` |
-| 12 | `lemma` | [exp_lt_top_iff](../../../../SpecialFunctions/ERealExpNamespaced.lean/declarations/exp-lt-top-iff.md) | 83 | `result-track:3175a147c4512dcacec4bedeb473764349464fd63f6292125a0fa90cc3f32926` |
-| 13 | `lemma` | [exp_lt_one_iff](../../../../SpecialFunctions/ERealExpNamespaced.lean/declarations/exp-lt-one-iff.md) | 85 | `result-track:b787db59f7c9e458d4cd704481d66a86d845a93a0f824eb0fd0ea1cb85234d0c` |
-| 14 | `lemma` | [one_lt_exp_iff](../../../../SpecialFunctions/ERealExpNamespaced.lean/declarations/one-lt-exp-iff.md) | 87 | `result-track:5bd77cdd46073fdf85cd97e273034cf2c9dc12f02aaaa019443973000eaac7c7` |
-| 15 | `lemma` | [exp_le_exp_iff](../../../../SpecialFunctions/ERealExpNamespaced.lean/declarations/exp-le-exp-iff.md) | 89 | `result-track:9a8b61641952824ed9966f036f5192ad308f1948144db222c2660776df064b4a` |
-| 16 | `lemma` | [exp_le_one_iff](../../../../SpecialFunctions/ERealExpNamespaced.lean/declarations/exp-le-one-iff.md) | 91 | `result-track:dd9fd9eb2d42926665ae0ecccb0ef44c1ac328a703697c6e7b2b51427a92e784` |
-| 17 | `lemma` | [one_le_exp_iff](../../../../SpecialFunctions/ERealExpNamespaced.lean/declarations/one-le-exp-iff.md) | 93 | `result-track:862d90ead40b65ebc7fbad9da97a64726bc7a30d50889bb970d005bcc2107de6` |
-| 18 | `lemma` | [exp_le_exp](../../../../SpecialFunctions/ERealExpNamespaced.lean/declarations/exp-le-exp.md) | 95 | `result-track:b9712487fcabc36eefd45871a4d5bf3278d5366de1c95f33921b13d98d1dd7a3` |
-| 19 | `lemma` | [exp_lt_exp](../../../../SpecialFunctions/ERealExpNamespaced.lean/declarations/exp-lt-exp.md) | 97 | `result-track:08dd8aded1f59f9886c30e3d0dd8fd9b1ed4db4caf273a176461453ec00872f6` |
-| 20 | `lemma` | [exp_neg](../../../../SpecialFunctions/ERealExpNamespaced.lean/declarations/exp-neg.md) | 105 | `result-track:ccea1bd83c1404f316e1f763175e25ac8a2f2bbc5adc972be0224be728afac6a` |
-| 21 | `lemma` | [exp_add](../../../../SpecialFunctions/ERealExpNamespaced.lean/declarations/exp-add.md) | 112 | `result-track:72f429a589bf0225a3f9c638144b0eba2bef22199a2a858100edfa9b7d84f338` |
+| 1 | `def` | [exp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ERealExpNamespaced.lean/declarations/exp.md) | 44 | `declaration-track:9345a45d23caea1720ebf1b67f38ab1107412f2bbb8ca7ee72bd5702f3867b99` |
+| 2 | `lemma` | [exp_bot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ERealExpNamespaced.lean/declarations/exp-bot.md) | 49 | `result-track:c6f1e7f9dbf9cd724324a132bfd65e0c44d940afd7554d6d48453c9b6f42904c` |
+| 3 | `lemma` | [exp_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ERealExpNamespaced.lean/declarations/exp-zero.md) | 50 | `result-track:ebd22fceb57e3b8b7ef609d0db54bedbd0c2350d48fc6697e03ba11a0c94482f` |
+| 4 | `lemma` | [exp_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ERealExpNamespaced.lean/declarations/exp-top.md) | 51 | `result-track:eb64de9518ef91bc533ba72e70d5fffde73ca5ba52a605f23f1f75f39ce8ca7e` |
+| 5 | `lemma` | [exp_coe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ERealExpNamespaced.lean/declarations/exp-coe.md) | 52 | `result-track:ce455119ae87e09f15828bb5eb0c467e626452f8dd74fd5e77d9670967e7c95c` |
+| 6 | `lemma` | [exp_eq_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ERealExpNamespaced.lean/declarations/exp-eq-zero-iff.md) | 54 | `result-track:ff930e99e23b9f84c49c9a5f74885df283e66b7d81b841bb009b8e51f3556810` |
+| 7 | `lemma` | [exp_eq_top_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ERealExpNamespaced.lean/declarations/exp-eq-top-iff.md) | 57 | `result-track:a07ef9011cd1107dba3e888ff150d1c6a4aaee2fddf39e9df25ae58ec6462b99` |
+| 8 | `lemma` | [exp_strictMono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ERealExpNamespaced.lean/declarations/exp-strictmono.md) | 65 | `result-track:ec9a9147a6b51fde95c38783e57c12d7fed856db5312a04c2a8fce5958191a6f` |
+| 9 | `lemma` | [exp_monotone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ERealExpNamespaced.lean/declarations/exp-monotone.md) | 77 | `result-track:b6bf7b99dd26be69b36ebe93e68aed6fb0c815cf35d87ff5dfe399fc33584a4b` |
+| 10 | `lemma` | [exp_lt_exp_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ERealExpNamespaced.lean/declarations/exp-lt-exp-iff.md) | 79 | `result-track:208a8c986ad0c7d565efebd59c037f04ca789f7f5542025da86e7348d221c8df` |
+| 11 | `lemma` | [zero_lt_exp_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ERealExpNamespaced.lean/declarations/zero-lt-exp-iff.md) | 81 | `result-track:ced916bbdcaad120f036cc5dbde02b0346b65d7011a8b9d85a03b4ea7d22a612` |
+| 12 | `lemma` | [exp_lt_top_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ERealExpNamespaced.lean/declarations/exp-lt-top-iff.md) | 83 | `result-track:3175a147c4512dcacec4bedeb473764349464fd63f6292125a0fa90cc3f32926` |
+| 13 | `lemma` | [exp_lt_one_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ERealExpNamespaced.lean/declarations/exp-lt-one-iff.md) | 85 | `result-track:b787db59f7c9e458d4cd704481d66a86d845a93a0f824eb0fd0ea1cb85234d0c` |
+| 14 | `lemma` | [one_lt_exp_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ERealExpNamespaced.lean/declarations/one-lt-exp-iff.md) | 87 | `result-track:5bd77cdd46073fdf85cd97e273034cf2c9dc12f02aaaa019443973000eaac7c7` |
+| 15 | `lemma` | [exp_le_exp_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ERealExpNamespaced.lean/declarations/exp-le-exp-iff.md) | 89 | `result-track:9a8b61641952824ed9966f036f5192ad308f1948144db222c2660776df064b4a` |
+| 16 | `lemma` | [exp_le_one_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ERealExpNamespaced.lean/declarations/exp-le-one-iff.md) | 91 | `result-track:dd9fd9eb2d42926665ae0ecccb0ef44c1ac328a703697c6e7b2b51427a92e784` |
+| 17 | `lemma` | [one_le_exp_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ERealExpNamespaced.lean/declarations/one-le-exp-iff.md) | 93 | `result-track:862d90ead40b65ebc7fbad9da97a64726bc7a30d50889bb970d005bcc2107de6` |
+| 18 | `lemma` | [exp_le_exp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ERealExpNamespaced.lean/declarations/exp-le-exp.md) | 95 | `result-track:b9712487fcabc36eefd45871a4d5bf3278d5366de1c95f33921b13d98d1dd7a3` |
+| 19 | `lemma` | [exp_lt_exp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ERealExpNamespaced.lean/declarations/exp-lt-exp.md) | 97 | `result-track:08dd8aded1f59f9886c30e3d0dd8fd9b1ed4db4caf273a176461453ec00872f6` |
+| 20 | `lemma` | [exp_neg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ERealExpNamespaced.lean/declarations/exp-neg.md) | 105 | `result-track:ccea1bd83c1404f316e1f763175e25ac8a2f2bbc5adc972be0224be728afac6a` |
+| 21 | `lemma` | [exp_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SpecialFunctions/ERealExpNamespaced.lean/declarations/exp-add.md) | 112 | `result-track:72f429a589bf0225a3f9c638144b0eba2bef22199a2a858100edfa9b7d84f338` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

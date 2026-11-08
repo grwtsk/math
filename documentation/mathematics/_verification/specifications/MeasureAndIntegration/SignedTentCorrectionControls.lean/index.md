@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SignedTentCorrectionControls.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SignedTentCorrectionControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SignedTentCorrectionControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SignedTentCorrectionControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Chebyshev.SignedTentCorrection`](../../../../NumberTheory/SignedTentCorrection.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Chebyshev.SignedTentCorrection`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/SignedTentCorrection.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [first_density_term_control](../../../../MeasureAndIntegration/SignedTentCorrectionControls.lean/declarations/first-density-term-control.md) | 18 | `result-track:9e464527a9463d4b75a2f4543b30ff393e37e70d86f872eaf7a6a30853eae97a` |
-| 2 | `theorem` | [second_density_term_control](../../../../MeasureAndIntegration/SignedTentCorrectionControls.lean/declarations/second-density-term-control.md) | 24 | `result-track:92c5075faabe657819e7e5c8d125e50787ee20cde9bf98271ed8ba838bb0c3c8` |
-| 3 | `theorem` | [empty_prefix_control](../../../../MeasureAndIntegration/SignedTentCorrectionControls.lean/declarations/empty-prefix-control.md) | 29 | `result-track:dc05cadee3d8b77f03c7395c2226b4e99d040611a1b499de56bfc692ea756bb9` |
-| 4 | `theorem` | [radius_not_diameter_control](../../../../MeasureAndIntegration/SignedTentCorrectionControls.lean/declarations/radius-not-diameter-control.md) | 35 | `result-track:d5eaafccceab8a26fbd4bce1221912b277fecee24733d01a86f20266c11f0430` |
-| 5 | `theorem` | [square_two_bounds_control](../../../../MeasureAndIntegration/SignedTentCorrectionControls.lean/declarations/square-two-bounds-control.md) | 40 | `result-track:a00a6497bd26db03dd45f58842a67f64bea46ea8d5a2ea1bbea6aaf296ebfa58` |
-| 6 | `theorem` | [first_square_domain_control](../../../../MeasureAndIntegration/SignedTentCorrectionControls.lean/declarations/first-square-domain-control.md) | 47 | `result-track:ef3f43169bbc236693ec895337b9cac8efb9c2d04fb92633e5cd1929ca94bf08` |
-| 7 | `theorem` | [singular_density_control](../../../../MeasureAndIntegration/SignedTentCorrectionControls.lean/declarations/singular-density-control.md) | 51 | `result-track:87637289893b13d816ac6c658a2cd49efd255099acd575c8b5edd6d81736112e` |
-| 8 | `theorem` | [equality_margin_control](../../../../MeasureAndIntegration/SignedTentCorrectionControls.lean/declarations/equality-margin-control.md) | 55 | `result-track:c3aa7a709782594b674b7d570dfcd62ca5b7b9de23e198fa19ceb3b2a6220bf3` |
+| 1 | `theorem` | [first_density_term_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SignedTentCorrectionControls.lean/declarations/first-density-term-control.md) | 18 | `result-track:9e464527a9463d4b75a2f4543b30ff393e37e70d86f872eaf7a6a30853eae97a` |
+| 2 | `theorem` | [second_density_term_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SignedTentCorrectionControls.lean/declarations/second-density-term-control.md) | 24 | `result-track:92c5075faabe657819e7e5c8d125e50787ee20cde9bf98271ed8ba838bb0c3c8` |
+| 3 | `theorem` | [empty_prefix_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SignedTentCorrectionControls.lean/declarations/empty-prefix-control.md) | 29 | `result-track:dc05cadee3d8b77f03c7395c2226b4e99d040611a1b499de56bfc692ea756bb9` |
+| 4 | `theorem` | [radius_not_diameter_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SignedTentCorrectionControls.lean/declarations/radius-not-diameter-control.md) | 35 | `result-track:d5eaafccceab8a26fbd4bce1221912b277fecee24733d01a86f20266c11f0430` |
+| 5 | `theorem` | [square_two_bounds_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SignedTentCorrectionControls.lean/declarations/square-two-bounds-control.md) | 40 | `result-track:a00a6497bd26db03dd45f58842a67f64bea46ea8d5a2ea1bbea6aaf296ebfa58` |
+| 6 | `theorem` | [first_square_domain_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SignedTentCorrectionControls.lean/declarations/first-square-domain-control.md) | 47 | `result-track:ef3f43169bbc236693ec895337b9cac8efb9c2d04fb92633e5cd1929ca94bf08` |
+| 7 | `theorem` | [singular_density_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SignedTentCorrectionControls.lean/declarations/singular-density-control.md) | 51 | `result-track:87637289893b13d816ac6c658a2cd49efd255099acd575c8b5edd6d81736112e` |
+| 8 | `theorem` | [equality_margin_control](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SignedTentCorrectionControls.lean/declarations/equality-margin-control.md) | 55 | `result-track:c3aa7a709782594b674b7d570dfcd62ca5b7b9de23e198fa19ceb3b2a6220bf3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

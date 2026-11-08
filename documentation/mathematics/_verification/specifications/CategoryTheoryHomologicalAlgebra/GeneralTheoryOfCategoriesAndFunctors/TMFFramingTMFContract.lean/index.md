@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TMFFramingTMFContract.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TMFFramingTMFContract.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TMFFramingTMFContract.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TMFFramingTMFContract.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TMFContract](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TMFFramingTMFContract.lean/declarations/tmfcontract.md) | 18 | `declaration-track:3ec6bc88c4fbb039a30e930edb533478d78b7fb6b421cf0974617f02f3927631` |
-| 2 | `structure` | [WittenGenusWitness](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TMFFramingTMFContract.lean/declarations/wittengenuswitness.md) | 26 | `declaration-track:48f8c6c70cdfa0ed9dfa04cb8f7037377a18c682b4d31cdb0f1c010b97e17a16` |
-| 3 | `structure` | [TMFTorsionFraming](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TMFFramingTMFContract.lean/declarations/tmftorsionframing.md) | 32 | `declaration-track:0575dc9c6a1ffd54f8ab338dc0f03be570345236b5c7cdb42be9db278b0c62b9` |
-| 4 | `theorem` | [tmf_has_witten_genus](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TMFFramingTMFContract.lean/declarations/tmf-has-witten-genus.md) | 40 | `result-track:c82db5fd114238dedfff79a9f420773a241255e8ac29a228b7ab4e766e5bc833` |
-| 5 | `theorem` | [tmf_framing_trivialized](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TMFFramingTMFContract.lean/declarations/tmf-framing-trivialized.md) | 45 | `result-track:ed2c356f0acd3eee4b783703a79ac41b09981d94cd5566a7ac6842cb5195a245` |
+| 1 | `structure` | [TMFContract](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TMFFramingTMFContract.lean/declarations/tmfcontract.md) | 18 | `declaration-track:3ec6bc88c4fbb039a30e930edb533478d78b7fb6b421cf0974617f02f3927631` |
+| 2 | `structure` | [WittenGenusWitness](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TMFFramingTMFContract.lean/declarations/wittengenuswitness.md) | 26 | `declaration-track:48f8c6c70cdfa0ed9dfa04cb8f7037377a18c682b4d31cdb0f1c010b97e17a16` |
+| 3 | `structure` | [TMFTorsionFraming](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TMFFramingTMFContract.lean/declarations/tmftorsionframing.md) | 32 | `declaration-track:0575dc9c6a1ffd54f8ab338dc0f03be570345236b5c7cdb42be9db278b0c62b9` |
+| 4 | `theorem` | [tmf_has_witten_genus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TMFFramingTMFContract.lean/declarations/tmf-has-witten-genus.md) | 40 | `result-track:c82db5fd114238dedfff79a9f420773a241255e8ac29a228b7ab4e766e5bc833` |
+| 5 | `theorem` | [tmf_framing_trivialized](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TMFFramingTMFContract.lean/declarations/tmf-framing-trivialized.md) | 45 | `result-track:ed2c356f0acd3eee4b783703a79ac41b09981d94cd5566a7ac6842cb5195a245` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

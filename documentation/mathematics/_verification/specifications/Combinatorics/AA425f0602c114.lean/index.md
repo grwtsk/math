@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/AA425f0602c114.lean/index.md) · [Full source](../../../../Combinatorics/AA425f0602c114.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AA425f0602c114.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AA425f0602c114.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -63,7 +63,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [IsSubface](../../../../Combinatorics/AA425f0602c114.lean/declarations/issubface.md) | 20 | `declaration-track:2628de20301cb1fdccef18d6b8cb5bc518219d737770d2db63209d8a6e30a229` |
+| 1 | `def` | [IsSubface](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/AA425f0602c114.lean/declarations/issubface.md) | 20 | `declaration-track:2628de20301cb1fdccef18d6b8cb5bc518219d737770d2db63209d8a6e30a229` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Geometry/ConstructionNamespaced.lean/index.md) · [Full source](../../../../Geometry/ConstructionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/ConstructionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/ConstructionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SegmentCopyConstructor](../../../../Geometry/ConstructionNamespaced.lean/declarations/segmentcopyconstructor.md) | 24 | `declaration-track:e2fe4d494e91e347c95c0d4dda8101faf359a34dc1f80f87fc562049fdd1a4fe` |
-| 2 | `structure` | [EquilateralTriangleConstructor](../../../../Geometry/ConstructionNamespaced.lean/declarations/equilateraltriangleconstructor.md) | 35 | `declaration-track:c6a27fc4c4db1294cca580aed2a2bf0209848f13ad80ecbb270890556f55dfe0` |
-| 3 | `structure` | [SegmentBisectionConstructor](../../../../Geometry/ConstructionNamespaced.lean/declarations/segmentbisectionconstructor.md) | 51 | `declaration-track:2e23ae5db74138746c3c1f845f7303e8634a3fa624abb285087294072b857999` |
+| 1 | `structure` | [SegmentCopyConstructor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/ConstructionNamespaced.lean/declarations/segmentcopyconstructor.md) | 24 | `declaration-track:e2fe4d494e91e347c95c0d4dda8101faf359a34dc1f80f87fc562049fdd1a4fe` |
+| 2 | `structure` | [EquilateralTriangleConstructor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/ConstructionNamespaced.lean/declarations/equilateraltriangleconstructor.md) | 35 | `declaration-track:c6a27fc4c4db1294cca580aed2a2bf0209848f13ad80ecbb270890556f55dfe0` |
+| 3 | `structure` | [SegmentBisectionConstructor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Geometry/ConstructionNamespaced.lean/declarations/segmentbisectionconstructor.md) | 51 | `declaration-track:2e23ae5db74138746c3c1f845f7303e8634a3fa624abb285087294072b857999` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

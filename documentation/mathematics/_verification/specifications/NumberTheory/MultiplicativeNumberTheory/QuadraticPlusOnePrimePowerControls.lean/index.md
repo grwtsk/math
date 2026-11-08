@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/MultiplicativeNumberTheory/QuadraticPlusOnePrimePowerControls.lean/index.md) · [Full source](../../../../../NumberTheory/MultiplicativeNumberTheory/QuadraticPlusOnePrimePowerControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/QuadraticPlusOnePrimePowerControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/QuadraticPlusOnePrimePowerControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Primes.QuadraticPlusOnePrimePowerCounts`](../../../../../NumberTheory/MultiplicativeNumberTheory/QuadraticPlusOnePrimePowerCounts.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Primes.QuadraticPlusOnePrimePowerCounts`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/QuadraticPlusOnePrimePowerCounts.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,17 +58,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [root_two_lifts_to_seven](../../../../../NumberTheory/MultiplicativeNumberTheory/QuadraticPlusOnePrimePowerControls.lean/declarations/root-two-lifts-to-seven.md) | 25 | `result-track:b44e16eca64adced182a5be56edb75eaf9afe07e67910fec3a612dcada3385f7` |
-| 2 | `theorem` | [root_three_lifts_to_eighteen](../../../../../NumberTheory/MultiplicativeNumberTheory/QuadraticPlusOnePrimePowerControls.lean/declarations/root-three-lifts-to-eighteen.md) | 32 | `result-track:d57b79e5b724a9ea89d1358290ce4fe63dd7e7f137df7a430f452d7dbf872ca3` |
-| 3 | `theorem` | [wrong_lift_digit_rejected](../../../../../NumberTheory/MultiplicativeNumberTheory/QuadraticPlusOnePrimePowerControls.lean/declarations/wrong-lift-digit-rejected.md) | 39 | `result-track:ced257c1d6fddd6c73df0e606773538149b28e2bda544feccf754ba73091b36c` |
-| 4 | `theorem` | [roots_mod_twenty_five](../../../../../NumberTheory/MultiplicativeNumberTheory/QuadraticPlusOnePrimePowerControls.lean/declarations/roots-mod-twenty-five.md) | 44 | `result-track:6ff576214e4e0335dcc5b4ccb70fff25777be997ed73f23714dfa2d3f7c9fe73` |
-| 5 | `theorem` | [roots_mod_one_hundred_twenty_five_count](../../../../../NumberTheory/MultiplicativeNumberTheory/QuadraticPlusOnePrimePowerControls.lean/declarations/roots-mod-one-hundred-twenty-five-count.md) | 49 | `result-track:aa826914302eac8af5fc70a784c61bce97e13bbd43d4f7204f004c4c81c3753a` |
-| 6 | `theorem` | [two_adic_branch_is_exceptional](../../../../../NumberTheory/MultiplicativeNumberTheory/QuadraticPlusOnePrimePowerControls.lean/declarations/two-adic-branch-is-exceptional.md) | 57 | `result-track:56286e0822e4fe4de898409b4d112547a3bf12f6584e75c25890f1c35cd66000` |
-| 7 | `theorem` | [noncoprime_multiplicativity_rejected](../../../../../NumberTheory/MultiplicativeNumberTheory/QuadraticPlusOnePrimePowerControls.lean/declarations/noncoprime-multiplicativity-rejected.md) | 64 | `result-track:7944de883ae5d7e9c19c3e9d6ad4b8c0dd2268a8673d1bb8405ab5cc5dd63b74` |
-| 8 | `theorem` | [range_bound_is_not_optional](../../../../../NumberTheory/MultiplicativeNumberTheory/QuadraticPlusOnePrimePowerControls.lean/declarations/range-bound-is-not-optional.md) | 72 | `result-track:65be30424ca02499622f66520bca4af581602867f389e943d016bcd287560a5b` |
-| 9 | `theorem` | [lifted_local_data_does_not_detect_primality](../../../../../NumberTheory/MultiplicativeNumberTheory/QuadraticPlusOnePrimePowerControls.lean/declarations/lifted-local-data-does-not-detect-primality.md) | 77 | `result-track:c383b3e28d9e0878e662ca3d23b391395ee8f830e3d4ac74c957c369935b2a4a` |
-| 10 | `theorem` | [one_lift_is_not_unbounded](../../../../../NumberTheory/MultiplicativeNumberTheory/QuadraticPlusOnePrimePowerControls.lean/declarations/one-lift-is-not-unbounded.md) | 84 | `result-track:da7fdc6bf8c3211ce8e6768d8f73da09d1a0babf7f1a3ea0730acc54a29a6449` |
-| 11 | `theorem` | [local_roots_do_not_force_small_cutoff_prime](../../../../../NumberTheory/MultiplicativeNumberTheory/QuadraticPlusOnePrimePowerControls.lean/declarations/local-roots-do-not-force-small-cutoff-prime.md) | 91 | `result-track:c5b07e61c6bdb3b2dd23bf4adc559a1d57e10a3b6a59a6fa18ab190f00d341c5` |
+| 1 | `theorem` | [root_two_lifts_to_seven](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/QuadraticPlusOnePrimePowerControls.lean/declarations/root-two-lifts-to-seven.md) | 25 | `result-track:b44e16eca64adced182a5be56edb75eaf9afe07e67910fec3a612dcada3385f7` |
+| 2 | `theorem` | [root_three_lifts_to_eighteen](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/QuadraticPlusOnePrimePowerControls.lean/declarations/root-three-lifts-to-eighteen.md) | 32 | `result-track:d57b79e5b724a9ea89d1358290ce4fe63dd7e7f137df7a430f452d7dbf872ca3` |
+| 3 | `theorem` | [wrong_lift_digit_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/QuadraticPlusOnePrimePowerControls.lean/declarations/wrong-lift-digit-rejected.md) | 39 | `result-track:ced257c1d6fddd6c73df0e606773538149b28e2bda544feccf754ba73091b36c` |
+| 4 | `theorem` | [roots_mod_twenty_five](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/QuadraticPlusOnePrimePowerControls.lean/declarations/roots-mod-twenty-five.md) | 44 | `result-track:6ff576214e4e0335dcc5b4ccb70fff25777be997ed73f23714dfa2d3f7c9fe73` |
+| 5 | `theorem` | [roots_mod_one_hundred_twenty_five_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/QuadraticPlusOnePrimePowerControls.lean/declarations/roots-mod-one-hundred-twenty-five-count.md) | 49 | `result-track:aa826914302eac8af5fc70a784c61bce97e13bbd43d4f7204f004c4c81c3753a` |
+| 6 | `theorem` | [two_adic_branch_is_exceptional](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/QuadraticPlusOnePrimePowerControls.lean/declarations/two-adic-branch-is-exceptional.md) | 57 | `result-track:56286e0822e4fe4de898409b4d112547a3bf12f6584e75c25890f1c35cd66000` |
+| 7 | `theorem` | [noncoprime_multiplicativity_rejected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/QuadraticPlusOnePrimePowerControls.lean/declarations/noncoprime-multiplicativity-rejected.md) | 64 | `result-track:7944de883ae5d7e9c19c3e9d6ad4b8c0dd2268a8673d1bb8405ab5cc5dd63b74` |
+| 8 | `theorem` | [range_bound_is_not_optional](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/QuadraticPlusOnePrimePowerControls.lean/declarations/range-bound-is-not-optional.md) | 72 | `result-track:65be30424ca02499622f66520bca4af581602867f389e943d016bcd287560a5b` |
+| 9 | `theorem` | [lifted_local_data_does_not_detect_primality](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/QuadraticPlusOnePrimePowerControls.lean/declarations/lifted-local-data-does-not-detect-primality.md) | 77 | `result-track:c383b3e28d9e0878e662ca3d23b391395ee8f830e3d4ac74c957c369935b2a4a` |
+| 10 | `theorem` | [one_lift_is_not_unbounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/QuadraticPlusOnePrimePowerControls.lean/declarations/one-lift-is-not-unbounded.md) | 84 | `result-track:da7fdc6bf8c3211ce8e6768d8f73da09d1a0babf7f1a3ea0730acc54a29a6449` |
+| 11 | `theorem` | [local_roots_do_not_force_small_cutoff_prime](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/QuadraticPlusOnePrimePowerControls.lean/declarations/local-roots-do-not-force-small-cutoff-prime.md) | 91 | `result-track:c5b07e61c6bdb3b2dd23bf4adc559a1d57e10a3b6a59a6fa18ab190f00d341c5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

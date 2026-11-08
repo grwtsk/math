@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/FinsuppEquivPublic.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/FinsuppEquivPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/FinsuppEquivPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/FinsuppEquivPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [finsuppAntidiagEquivSubtype](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/FinsuppEquivPublic.lean/declarations/finsuppantidiagequivsubtype.md) | 44 | `declaration-track:58da65b974754505ca425a1e2f66e9c81826e1db98e6626179e46bc860d8ad2e` |
-| 2 | `def` | [finsuppAntidiagEquiv](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/FinsuppEquivPublic.lean/declarations/finsuppantidiagequiv.md) | 60 | `declaration-track:1c14d2ee14015eaad5d5edd84cb3712a5da616dd04ae641fc898a4a1c4522d84` |
-| 3 | `theorem` | [finsuppAntidiagEquiv_symm_apply_apply](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/FinsuppEquivPublic.lean/declarations/finsuppantidiagequiv-symm-apply-apply.md) | 64 | `result-track:a48183ea2638c0439d5fd7276fa2bc53014e99cf69c83248a41e7d7beeda711b` |
-| 4 | `theorem` | [count_coe_finsuppAntidiagEquiv_apply](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/FinsuppEquivPublic.lean/declarations/count-coe-finsuppantidiagequiv-apply.md) | 69 | `result-track:9e647d5918f907fe03e49ca9f7e8f207eef3a7029540f174a53c292918f15248` |
-| 5 | `theorem` | [card_finsuppAntidiag_nat_eq_choose](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/FinsuppEquivPublic.lean/declarations/card-finsuppantidiag-nat-eq-choose.md) | 73 | `result-track:f46b65b45a5ed254686ce6103ffd7cc12239b2a9b48ae0dae6538c4d16db4bb0` |
-| 6 | `theorem` | [card_finsuppAntidiag_nat_eq_multichoose](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/FinsuppEquivPublic.lean/declarations/card-finsuppantidiag-nat-eq-multichoose.md) | 77 | `result-track:25c26432c359256aff3b3573497d0df5048616acd153c796a10207d90e20ab9c` |
+| 1 | `def` | [finsuppAntidiagEquivSubtype](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/FinsuppEquivPublic.lean/declarations/finsuppantidiagequivsubtype.md) | 44 | `declaration-track:58da65b974754505ca425a1e2f66e9c81826e1db98e6626179e46bc860d8ad2e` |
+| 2 | `def` | [finsuppAntidiagEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/FinsuppEquivPublic.lean/declarations/finsuppantidiagequiv.md) | 60 | `declaration-track:1c14d2ee14015eaad5d5edd84cb3712a5da616dd04ae641fc898a4a1c4522d84` |
+| 3 | `theorem` | [finsuppAntidiagEquiv_symm_apply_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/FinsuppEquivPublic.lean/declarations/finsuppantidiagequiv-symm-apply-apply.md) | 64 | `result-track:a48183ea2638c0439d5fd7276fa2bc53014e99cf69c83248a41e7d7beeda711b` |
+| 4 | `theorem` | [count_coe_finsuppAntidiagEquiv_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/FinsuppEquivPublic.lean/declarations/count-coe-finsuppantidiagequiv-apply.md) | 69 | `result-track:9e647d5918f907fe03e49ca9f7e8f207eef3a7029540f174a53c292918f15248` |
+| 5 | `theorem` | [card_finsuppAntidiag_nat_eq_choose](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/FinsuppEquivPublic.lean/declarations/card-finsuppantidiag-nat-eq-choose.md) | 73 | `result-track:f46b65b45a5ed254686ce6103ffd7cc12239b2a9b48ae0dae6538c4d16db4bb0` |
+| 6 | `theorem` | [card_finsuppAntidiag_nat_eq_multichoose](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/FinsuppEquivPublic.lean/declarations/card-finsuppantidiag-nat-eq-multichoose.md) | 77 | `result-track:25c26432c359256aff3b3573497d0df5048616acd153c796a10207d90e20ab9c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

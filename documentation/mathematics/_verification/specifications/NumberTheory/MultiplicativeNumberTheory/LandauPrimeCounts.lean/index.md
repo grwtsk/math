@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/MultiplicativeNumberTheory/LandauPrimeCounts.lean/index.md) · [Full source](../../../../../NumberTheory/MultiplicativeNumberTheory/LandauPrimeCounts.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/LandauPrimeCounts.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/LandauPrimeCounts.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,10 +46,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Combinatorics.Enumerative.BoundedWitnesses`](../../../../../Combinatorics/BoundedWitnesses.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.NumberTheory.Primes.ConfigurationCounts`](../../../../../NumberTheory/MultiplicativeNumberTheory/ConfigurationCounts.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.NumberTheory.Primes.LandauStatements`](../../../../../NumberTheory/MultiplicativeNumberTheory/LandauStatements.lean/index.md) — import line 6; pinned internal source present.
-- [`GRWTSK.NumberTheory.Primes.Checks.LandauCountControls`](../../../../../NumberTheory/MultiplicativeNumberTheory/LandauCountControls.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.Combinatorics.Enumerative.BoundedWitnesses`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BoundedWitnesses.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Primes.ConfigurationCounts`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/ConfigurationCounts.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Primes.LandauStatements`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/LandauStatements.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.NumberTheory.Primes.Checks.LandauCountControls`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/LandauCountControls.lean/index.md) — import line 7; pinned internal source present.
 
 ## Top results and three-degree verification metric
 

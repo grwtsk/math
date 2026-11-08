@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AlgebraicTopology/PresentablePublic.lean/index.md) · [Full source](../../../../AlgebraicTopology/PresentablePublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/PresentablePublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/PresentablePublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../AlgebraicTopology/PresentablePublic.lean/declarations/instance-source-edition-2.md) | 34 | `declaration-track:ab52ee43f92b8c2bca50bb363875e6f5c57cda1cab92e394e592924e55ff7ca7` |
-| 2 | `lemma` | [exists_epi_from_isCardinalPresentable](../../../../AlgebraicTopology/PresentablePublic.lean/declarations/exists-epi-from-iscardinalpresentable.md) | 38 | `result-track:33e10e908c6b43c18cd07e685aa22f6c19fdff4507b8b8dedb6094715cd56b4a` |
-| 3 | `instance` | [(anonymous)](../../../../AlgebraicTopology/PresentablePublic.lean/declarations/instance.md) | 52 | `declaration-track:2d44401de3bf99d8d74231377340c275ca954011989cb77551e1fb91f9156af2` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/PresentablePublic.lean/declarations/instance-source-edition-2.md) | 34 | `declaration-track:ab52ee43f92b8c2bca50bb363875e6f5c57cda1cab92e394e592924e55ff7ca7` |
+| 2 | `lemma` | [exists_epi_from_isCardinalPresentable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/PresentablePublic.lean/declarations/exists-epi-from-iscardinalpresentable.md) | 38 | `result-track:33e10e908c6b43c18cd07e685aa22f6c19fdff4507b8b8dedb6094715cd56b4a` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AlgebraicTopology/PresentablePublic.lean/declarations/instance.md) | 52 | `declaration-track:2d44401de3bf99d8d74231377340c275ca954011989cb77551e1fb91f9156af2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

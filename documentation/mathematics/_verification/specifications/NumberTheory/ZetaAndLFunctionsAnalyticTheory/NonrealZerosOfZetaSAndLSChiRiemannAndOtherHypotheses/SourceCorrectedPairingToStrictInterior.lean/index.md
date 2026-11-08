@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceCorrectedPairingToStrictInterior.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceCorrectedPairingToStrictInterior.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceCorrectedPairingToStrictInterior.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceCorrectedPairingToStrictInterior.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [strictColumnInterior_upper_of_complete_pairing_calibration](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceCorrectedPairingToStrictInterior.lean/declarations/strictcolumninterior-upper-of-complete-pairing-calibration.md) | 22 | `result-track:fee8751f34318d904dded77746b162091d0625a801a2929437eba581e4d83ace` |
-| 2 | `theorem` | [uniform_strictColumnInterior_comparison](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceCorrectedPairingToStrictInterior.lean/declarations/uniform-strictcolumninterior-comparison.md) | 39 | `result-track:6843b37e75d9d2716401b04fa6574c80ecb3648c7b6ef02fc48face91ba0cb6d` |
-| 3 | `theorem` | [strictColumnInterior_tail_of_complete_pairing_tail](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceCorrectedPairingToStrictInterior.lean/declarations/strictcolumninterior-tail-of-complete-pairing-tail.md) | 50 | `result-track:f59c1e4d90f7fd67952d381627f0f396e8757161c379064d79409e8f8b2404dd` |
+| 1 | `theorem` | [strictColumnInterior_upper_of_complete_pairing_calibration](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceCorrectedPairingToStrictInterior.lean/declarations/strictcolumninterior-upper-of-complete-pairing-calibration.md) | 22 | `result-track:fee8751f34318d904dded77746b162091d0625a801a2929437eba581e4d83ace` |
+| 2 | `theorem` | [uniform_strictColumnInterior_comparison](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceCorrectedPairingToStrictInterior.lean/declarations/uniform-strictcolumninterior-comparison.md) | 39 | `result-track:6843b37e75d9d2716401b04fa6574c80ecb3648c7b6ef02fc48face91ba0cb6d` |
+| 3 | `theorem` | [strictColumnInterior_tail_of_complete_pairing_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceCorrectedPairingToStrictInterior.lean/declarations/strictcolumninterior-tail-of-complete-pairing-tail.md) | 50 | `result-track:f59c1e4d90f7fd67952d381627f0f396e8757161c379064d79409e8f8b2404dd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

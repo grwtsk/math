@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SyntaxPublicUnexpandPostCondNoThrow.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SyntaxPublicUnexpandPostCondNoThrow.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SyntaxPublicUnexpandPostCondNoThrow.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SyntaxPublicUnexpandPostCondNoThrow.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [unexpandPostCondNoThrow](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SyntaxPublicUnexpandPostCondNoThrow.lean/declarations/unexpandpostcondnothrow.md) | 20 | `declaration-track:5ae5009f7efddc5d9b7c624b170500c7a593394d0d6ec3058813b07691331b0c` |
-| 2 | `def` | [unexpandPostCondMayThrow](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SyntaxPublicUnexpandPostCondNoThrow.lean/declarations/unexpandpostcondmaythrow.md) | 29 | `declaration-track:baf1de6453cff7665b9c3d78ba7211068beb3a6085802084465921a6a38a70ae` |
-| 3 | `def` | [elabTriple](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SyntaxPublicUnexpandPostCondNoThrow.lean/declarations/elabtriple.md) | 37 | `declaration-track:69d948912fd2b1a0c2058fc7233dd26e5b735107fa8cfc6e9e9f8142586d910b` |
+| 1 | `def` | [unexpandPostCondNoThrow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SyntaxPublicUnexpandPostCondNoThrow.lean/declarations/unexpandpostcondnothrow.md) | 20 | `declaration-track:5ae5009f7efddc5d9b7c624b170500c7a593394d0d6ec3058813b07691331b0c` |
+| 2 | `def` | [unexpandPostCondMayThrow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SyntaxPublicUnexpandPostCondNoThrow.lean/declarations/unexpandpostcondmaythrow.md) | 29 | `declaration-track:baf1de6453cff7665b9c3d78ba7211068beb3a6085802084465921a6a38a70ae` |
+| 3 | `def` | [elabTriple](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SyntaxPublicUnexpandPostCondNoThrow.lean/declarations/elabtriple.md) | 37 | `declaration-track:69d948912fd2b1a0c2058fc7233dd26e5b735107fa8cfc6e9e9f8142586d910b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/SourceBalancedFirstPrimeConsumer.lean/index.md) · [Full source](../../../../GeneralTopology/SourceBalancedFirstPrimeConsumer.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceBalancedFirstPrimeConsumer.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceBalancedFirstPrimeConsumer.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [firstPrimeZeroHeadCost](../../../../GeneralTopology/SourceBalancedFirstPrimeConsumer.lean/declarations/firstprimezeroheadcost.md) | 19 | `declaration-track:8dfb0f1bf7670854eeb9810f15e1b4e1daed5b6c96e82814c6a838212ce078a1` |
-| 2 | `def` | [balancedFirstPrimeReturnCost](../../../../GeneralTopology/SourceBalancedFirstPrimeConsumer.lean/declarations/balancedfirstprimereturncost.md) | 22 | `declaration-track:bae3382ddee4860bb881904fceb0ad215c4febc30bb27fad2ddb1803c7402e44` |
-| 3 | `theorem` | [balanced_density_abs_le_nonnegative](../../../../GeneralTopology/SourceBalancedFirstPrimeConsumer.lean/declarations/balanced-density-abs-le-nonnegative.md) | 26 | `result-track:10415fb27dfb47a96e57c6a9307027a5dd3434a665bf6ccda6997a1506e35fac` |
-| 4 | `theorem` | [firstPrimeZeroHead_abs_le_at_radius](../../../../GeneralTopology/SourceBalancedFirstPrimeConsumer.lean/declarations/firstprimezerohead-abs-le-at-radius.md) | 48 | `result-track:d24675624ffacb49f9cea03ecadd36967832473710189cd03cb6c66e01dfb058` |
-| 5 | `theorem` | [firstPrime_main_upper_of_balanced_tail](../../../../GeneralTopology/SourceBalancedFirstPrimeConsumer.lean/declarations/firstprime-main-upper-of-balanced-tail.md) | 97 | `result-track:5b9a3ed739300265b150c698c5b7c3172aa534e59cda0b9c9e81d3c94afc28c8` |
-| 6 | `theorem` | [firstPrimeTail_of_balanced_tail](../../../../GeneralTopology/SourceBalancedFirstPrimeConsumer.lean/declarations/firstprimetail-of-balanced-tail.md) | 109 | `result-track:d9424fea85ec034809dd4e7f70fd7ce7df0f017344d3078b0910d626641d4dac` |
-| 7 | `theorem` | [estimate_of_balanced_firstPrime_tail](../../../../GeneralTopology/SourceBalancedFirstPrimeConsumer.lean/declarations/estimate-of-balanced-firstprime-tail.md) | 126 | `result-track:0a5728d5a3be813555e17032a384d1e61860e573d0ea7600596e16b47e10fc39` |
-| 8 | `theorem` | [balancedFirstPrimeReturnCost_ninety_one_lt](../../../../GeneralTopology/SourceBalancedFirstPrimeConsumer.lean/declarations/balancedfirstprimereturncost-ninety-one-lt.md) | 133 | `result-track:b911ef867f4446b742ef7dc9465bf6abf9895337c34aa3510b5ea33d25b273ad` |
+| 1 | `def` | [firstPrimeZeroHeadCost](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceBalancedFirstPrimeConsumer.lean/declarations/firstprimezeroheadcost.md) | 19 | `declaration-track:8dfb0f1bf7670854eeb9810f15e1b4e1daed5b6c96e82814c6a838212ce078a1` |
+| 2 | `def` | [balancedFirstPrimeReturnCost](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceBalancedFirstPrimeConsumer.lean/declarations/balancedfirstprimereturncost.md) | 22 | `declaration-track:bae3382ddee4860bb881904fceb0ad215c4febc30bb27fad2ddb1803c7402e44` |
+| 3 | `theorem` | [balanced_density_abs_le_nonnegative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceBalancedFirstPrimeConsumer.lean/declarations/balanced-density-abs-le-nonnegative.md) | 26 | `result-track:10415fb27dfb47a96e57c6a9307027a5dd3434a665bf6ccda6997a1506e35fac` |
+| 4 | `theorem` | [firstPrimeZeroHead_abs_le_at_radius](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceBalancedFirstPrimeConsumer.lean/declarations/firstprimezerohead-abs-le-at-radius.md) | 48 | `result-track:d24675624ffacb49f9cea03ecadd36967832473710189cd03cb6c66e01dfb058` |
+| 5 | `theorem` | [firstPrime_main_upper_of_balanced_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceBalancedFirstPrimeConsumer.lean/declarations/firstprime-main-upper-of-balanced-tail.md) | 97 | `result-track:5b9a3ed739300265b150c698c5b7c3172aa534e59cda0b9c9e81d3c94afc28c8` |
+| 6 | `theorem` | [firstPrimeTail_of_balanced_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceBalancedFirstPrimeConsumer.lean/declarations/firstprimetail-of-balanced-tail.md) | 109 | `result-track:d9424fea85ec034809dd4e7f70fd7ce7df0f017344d3078b0910d626641d4dac` |
+| 7 | `theorem` | [estimate_of_balanced_firstPrime_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceBalancedFirstPrimeConsumer.lean/declarations/estimate-of-balanced-firstprime-tail.md) | 126 | `result-track:0a5728d5a3be813555e17032a384d1e61860e573d0ea7600596e16b47e10fc39` |
+| 8 | `theorem` | [balancedFirstPrimeReturnCost_ninety_one_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/SourceBalancedFirstPrimeConsumer.lean/declarations/balancedfirstprimereturncost-ninety-one-lt.md) | 133 | `result-track:b911ef867f4446b742ef7dc9465bf6abf9895337c34aa3510b5ea33d25b273ad` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

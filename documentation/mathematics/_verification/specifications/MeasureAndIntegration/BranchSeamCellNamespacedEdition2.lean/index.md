@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/BranchSeamCellNamespacedEdition2.lean/index.md) · [Full source](../../../../MeasureAndIntegration/BranchSeamCellNamespacedEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BranchSeamCellNamespacedEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BranchSeamCellNamespacedEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,10 +60,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [coefficientOneForm](../../../../MeasureAndIntegration/BranchSeamCellNamespacedEdition2.lean/declarations/coefficientoneform.md) | 41 | `declaration-track:6b22ca3a175b1d0059c57bf6ce522af2172dc06fb9d173634f6b0b2b9b742d30` |
-| 2 | `theorem` | [curveIntegral_coefficientOneForm_homotopy](../../../../MeasureAndIntegration/BranchSeamCellNamespacedEdition2.lean/declarations/curveintegral-coefficientoneform-homotopy.md) | 45 | `result-track:8639d903fd136ff2bba0c33c91ac60ae54add444f8fb438efb08de9581b31c56` |
-| 3 | `theorem` | [four_seam_cells_cancel](../../../../MeasureAndIntegration/BranchSeamCellNamespacedEdition2.lean/declarations/four-seam-cells-cancel.md) | 87 | `result-track:6918ed86665ad18ce3a0325362dc97fbed329d744533b9f715b69b859b3e0517` |
-| 4 | `theorem` | [coefficientOneForm_curveIntegral_segment](../../../../MeasureAndIntegration/BranchSeamCellNamespacedEdition2.lean/declarations/coefficientoneform-curveintegral-segment.md) | 159 | `result-track:b5075739f8ebe5d8ad7946ad0729a5e82bf97f948ff0166eccd92aae14a88512` |
+| 1 | `def` | [coefficientOneForm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BranchSeamCellNamespacedEdition2.lean/declarations/coefficientoneform.md) | 41 | `declaration-track:6b22ca3a175b1d0059c57bf6ce522af2172dc06fb9d173634f6b0b2b9b742d30` |
+| 2 | `theorem` | [curveIntegral_coefficientOneForm_homotopy](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BranchSeamCellNamespacedEdition2.lean/declarations/curveintegral-coefficientoneform-homotopy.md) | 45 | `result-track:8639d903fd136ff2bba0c33c91ac60ae54add444f8fb438efb08de9581b31c56` |
+| 3 | `theorem` | [four_seam_cells_cancel](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BranchSeamCellNamespacedEdition2.lean/declarations/four-seam-cells-cancel.md) | 87 | `result-track:6918ed86665ad18ce3a0325362dc97fbed329d744533b9f715b69b859b3e0517` |
+| 4 | `theorem` | [coefficientOneForm_curveIntegral_segment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/BranchSeamCellNamespacedEdition2.lean/declarations/coefficientoneform-curveintegral-segment.md) | 159 | `result-track:b5075739f8ebe5d8ad7946ad0729a5e82bf97f948ff0166eccd92aae14a88512` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

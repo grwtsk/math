@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../RealFunctions/InequalitiesInRealAnalysis/ResidualGrowthComparison.lean/index.md) · [Full source](../../../../../RealFunctions/InequalitiesInRealAnalysis/ResidualGrowthComparison.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/ResidualGrowthComparison.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/ResidualGrowthComparison.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -48,7 +48,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 - `Mathlib.Tactic.Positivity` — import line 1; external provider; requires a separately pinned dependency.
 - `Mathlib.Tactic.GCongr` — import line 2; external provider; requires a separately pinned dependency.
-- [`GRWTSK.Analysis.Inequalities.CenteredCubicMoment`](../../../../../RealFunctions/InequalitiesInRealAnalysis/CenteredCubicMoment.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.Analysis.Inequalities.CenteredCubicMoment`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/CenteredCubicMoment.lean/index.md) — import line 3; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sharp_five_ninths_identity](../../../../../RealFunctions/InequalitiesInRealAnalysis/ResidualGrowthComparison.lean/declarations/sharp-five-ninths-identity.md) | 16 | `result-track:7483154b35c16beed89d25c36f99e882d8107fde24e8b6b7003204e305e36b88` |
-| 2 | `theorem` | [retained_spectrum_comparison](../../../../../RealFunctions/InequalitiesInRealAnalysis/ResidualGrowthComparison.lean/declarations/retained-spectrum-comparison.md) | 20 | `result-track:ac14f98087414bb561db37d70d546a9c3e55c710a3c7fdb0872a87a7679a1a87` |
-| 3 | `theorem` | [normalized_comparison](../../../../../RealFunctions/InequalitiesInRealAnalysis/ResidualGrowthComparison.lean/declarations/normalized-comparison.md) | 48 | `result-track:a7b2f1863fd73e1820d9a07874372bb76823a2686c98e2ebd66fe917bae29d07` |
-| 4 | `theorem` | [relative_le_of_sixth](../../../../../RealFunctions/InequalitiesInRealAnalysis/ResidualGrowthComparison.lean/declarations/relative-le-of-sixth.md) | 62 | `result-track:ff290302db3d7d09b5927f199ab039c142956c573cd80230d7387b74536b4271` |
-| 5 | `theorem` | [residual_one_add_bound](../../../../../RealFunctions/InequalitiesInRealAnalysis/ResidualGrowthComparison.lean/declarations/residual-one-add-bound.md) | 74 | `result-track:2b9785055599633e3791445c865f62fc347e59be1c2eaddbdb267bce2ee5f133` |
+| 1 | `theorem` | [sharp_five_ninths_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/ResidualGrowthComparison.lean/declarations/sharp-five-ninths-identity.md) | 16 | `result-track:7483154b35c16beed89d25c36f99e882d8107fde24e8b6b7003204e305e36b88` |
+| 2 | `theorem` | [retained_spectrum_comparison](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/ResidualGrowthComparison.lean/declarations/retained-spectrum-comparison.md) | 20 | `result-track:ac14f98087414bb561db37d70d546a9c3e55c710a3c7fdb0872a87a7679a1a87` |
+| 3 | `theorem` | [normalized_comparison](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/ResidualGrowthComparison.lean/declarations/normalized-comparison.md) | 48 | `result-track:a7b2f1863fd73e1820d9a07874372bb76823a2686c98e2ebd66fe917bae29d07` |
+| 4 | `theorem` | [relative_le_of_sixth](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/ResidualGrowthComparison.lean/declarations/relative-le-of-sixth.md) | 62 | `result-track:ff290302db3d7d09b5927f199ab039c142956c573cd80230d7387b74536b4271` |
+| 5 | `theorem` | [residual_one_add_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/InequalitiesInRealAnalysis/ResidualGrowthComparison.lean/declarations/residual-one-add-bound.md) | 74 | `result-track:2b9785055599633e3791445c865f62fc347e59be1c2eaddbdb267bce2ee5f133` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

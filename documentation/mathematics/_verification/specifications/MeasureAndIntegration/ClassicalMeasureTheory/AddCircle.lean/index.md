@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/AddCircle.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/AddCircle.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/AddCircle.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/AddCircle.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [closedBall_ae_eq_ball](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/AddCircle.lean/declarations/closedball-ae-eq-ball.md) | 33 | `result-track:5669bd6c8a34b9df20cd7af7c87b3bf8742983d9a5a4ad1428b66667879fdbdb` |
-| 2 | `theorem` | [isAddFundamentalDomain_of_ae_ball](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/AddCircle.lean/declarations/isaddfundamentaldomain-of-ae-ball.md) | 51 | `result-track:099dc52cf96ac4f7e6d8e57867090e102f44e59a542fee2025245eb4e71c81cf` |
-| 3 | `theorem` | [volume_of_add_preimage_eq](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/AddCircle.lean/declarations/volume-of-add-preimage-eq.md) | 91 | `result-track:0aaad548369efd8452b0b2dcf2eb3231e5655c671fcf7cb2c02b5b6e24b03862` |
+| 1 | `theorem` | [closedBall_ae_eq_ball](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/AddCircle.lean/declarations/closedball-ae-eq-ball.md) | 33 | `result-track:5669bd6c8a34b9df20cd7af7c87b3bf8742983d9a5a4ad1428b66667879fdbdb` |
+| 2 | `theorem` | [isAddFundamentalDomain_of_ae_ball](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/AddCircle.lean/declarations/isaddfundamentaldomain-of-ae-ball.md) | 51 | `result-track:099dc52cf96ac4f7e6d8e57867090e102f44e59a542fee2025245eb4e71c81cf` |
+| 3 | `theorem` | [volume_of_add_preimage_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalMeasureTheory/AddCircle.lean/declarations/volume-of-add-preimage-eq.md) | 91 | `result-track:0aaad548369efd8452b0b2dcf2eb3231e5655c671fcf7cb2c02b5b6e24b03862` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

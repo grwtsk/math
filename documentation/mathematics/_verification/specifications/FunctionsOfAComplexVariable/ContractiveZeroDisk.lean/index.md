@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/ContractiveZeroDisk.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/ContractiveZeroDisk.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ContractiveZeroDisk.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ContractiveZeroDisk.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,13 +61,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [correction](../../../../FunctionsOfAComplexVariable/ContractiveZeroDisk.lean/declarations/correction.md) | 29 | `declaration-track:1bd49c05955533952cc5e8e98754c2694174b6ad247c65e3c38ed264462ad613` |
-| 2 | `theorem` | [hasDerivAt_correction](../../../../FunctionsOfAComplexVariable/ContractiveZeroDisk.lean/declarations/hasderivat-correction.md) | 32 | `result-track:0ce80c2682e431ae3caa2d0289aa9cb55767a5dd7bb3ffa6e0b1e41df40d2259` |
-| 3 | `theorem` | [correction_lipschitz](../../../../FunctionsOfAComplexVariable/ContractiveZeroDisk.lean/declarations/correction-lipschitz.md) | 38 | `result-track:00433aeaf48b9252394f77d42c09962fa1ec768dc9f532b302d106e3c66b3972` |
-| 4 | `theorem` | [exists_unique_zero](../../../../FunctionsOfAComplexVariable/ContractiveZeroDisk.lean/declarations/exists-unique-zero.md) | 49 | `result-track:ef547124d482872d00e3c9dd70b7a4f5baea6972bff884cf45da06d6aaf0f3c1` |
-| 5 | `theorem` | [deriv_ne_zero_of_defect](../../../../FunctionsOfAComplexVariable/ContractiveZeroDisk.lean/declarations/deriv-ne-zero-of-defect.md) | 105 | `result-track:4f2bb3c80fcd794f1c3aabb32b4eab5e27efd54b770dd8dbe3f12543b4818d58` |
-| 6 | `theorem` | [derivative_variation](../../../../FunctionsOfAComplexVariable/ContractiveZeroDisk.lean/declarations/derivative-variation.md) | 112 | `result-track:e3dc6d431de34738a72ac9c14fb47f1d1fb91fe54e4a688cde364fe31d6b10a7` |
-| 7 | `theorem` | [center_enclosure_bounds](../../../../FunctionsOfAComplexVariable/ContractiveZeroDisk.lean/declarations/center-enclosure-bounds.md) | 123 | `result-track:d3895e84de91acd3f788b4fdac6c2a908d6f50088c7ec54f539603445f9431cf` |
+| 1 | `def` | [correction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ContractiveZeroDisk.lean/declarations/correction.md) | 29 | `declaration-track:1bd49c05955533952cc5e8e98754c2694174b6ad247c65e3c38ed264462ad613` |
+| 2 | `theorem` | [hasDerivAt_correction](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ContractiveZeroDisk.lean/declarations/hasderivat-correction.md) | 32 | `result-track:0ce80c2682e431ae3caa2d0289aa9cb55767a5dd7bb3ffa6e0b1e41df40d2259` |
+| 3 | `theorem` | [correction_lipschitz](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ContractiveZeroDisk.lean/declarations/correction-lipschitz.md) | 38 | `result-track:00433aeaf48b9252394f77d42c09962fa1ec768dc9f532b302d106e3c66b3972` |
+| 4 | `theorem` | [exists_unique_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ContractiveZeroDisk.lean/declarations/exists-unique-zero.md) | 49 | `result-track:ef547124d482872d00e3c9dd70b7a4f5baea6972bff884cf45da06d6aaf0f3c1` |
+| 5 | `theorem` | [deriv_ne_zero_of_defect](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ContractiveZeroDisk.lean/declarations/deriv-ne-zero-of-defect.md) | 105 | `result-track:4f2bb3c80fcd794f1c3aabb32b4eab5e27efd54b770dd8dbe3f12543b4818d58` |
+| 6 | `theorem` | [derivative_variation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ContractiveZeroDisk.lean/declarations/derivative-variation.md) | 112 | `result-track:e3dc6d431de34738a72ac9c14fb47f1d1fb91fe54e4a688cde364fe31d6b10a7` |
+| 7 | `theorem` | [center_enclosure_bounds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ContractiveZeroDisk.lean/declarations/center-enclosure-bounds.md) | 123 | `result-track:d3895e84de91acd3f788b4fdac6c2a908d6f50088c7ec54f539603445f9431cf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

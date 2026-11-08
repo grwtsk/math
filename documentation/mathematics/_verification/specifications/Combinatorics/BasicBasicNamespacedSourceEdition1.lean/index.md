@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/BasicBasicNamespacedSourceEdition1.lean/index.md) · [Full source](../../../../Combinatorics/BasicBasicNamespacedSourceEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BasicBasicNamespacedSourceEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BasicBasicNamespacedSourceEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,14 +61,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CapacityDigest](../../../../Combinatorics/BasicBasicNamespacedSourceEdition1.lean/declarations/capacitydigest.md) | 24 | `declaration-track:e98d41d14eb1ecf379876da2c360d8a85eb0b05870685af977affe421b0bd7ed` |
-| 2 | `structure` | [BalanceDigest](../../../../Combinatorics/BasicBasicNamespacedSourceEdition1.lean/declarations/balancedigest.md) | 28 | `declaration-track:597b6070512ca9f22e609d9f2d75c76625b6fb4e3ef66f5f0360ca4a01f982fb` |
-| 3 | `structure` | [RealizationDigest](../../../../Combinatorics/BasicBasicNamespacedSourceEdition1.lean/declarations/realizationdigest.md) | 32 | `declaration-track:7aad8c708298cdea17966528a5700027bb326debc5801a50a082c55f8e44f8f4` |
-| 4 | `structure` | [ReconstructionDigest](../../../../Combinatorics/BasicBasicNamespacedSourceEdition1.lean/declarations/reconstructiondigest.md) | 36 | `declaration-track:8440bec5a9cd6e70231187295f78030ee52721e88e599054494ed1c851339073` |
-| 5 | `structure` | [ArithmeticCutId](../../../../Combinatorics/BasicBasicNamespacedSourceEdition1.lean/declarations/arithmeticcutid.md) | 40 | `declaration-track:a90741d783d5c486879317113189a7aa6d3b9edcc02df74b7642a4c9a505d754` |
-| 6 | `structure` | [CompressionId](../../../../Combinatorics/BasicBasicNamespacedSourceEdition1.lean/declarations/compressionid.md) | 44 | `declaration-track:4bdc31cbfa88aee48a63fbdd2e01e26befbcf0ec85f35f8bfbfec2f77a2b17c6` |
-| 7 | `structure` | [CertificateDigest](../../../../Combinatorics/BasicBasicNamespacedSourceEdition1.lean/declarations/certificatedigest.md) | 48 | `declaration-track:ca8aa01bc769a4ad1e15d452873fba0d7a8174784524003516ae8b57788fc253` |
-| 8 | `inductive` | [CertificateStatus](../../../../Combinatorics/BasicBasicNamespacedSourceEdition1.lean/declarations/certificatestatus.md) | 52 | `declaration-track:0bb2fd40d2367ca0ede3d9e85abd38a8e7ca5f90e650ea895161b364d7f34d8e` |
+| 1 | `structure` | [CapacityDigest](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BasicBasicNamespacedSourceEdition1.lean/declarations/capacitydigest.md) | 24 | `declaration-track:e98d41d14eb1ecf379876da2c360d8a85eb0b05870685af977affe421b0bd7ed` |
+| 2 | `structure` | [BalanceDigest](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BasicBasicNamespacedSourceEdition1.lean/declarations/balancedigest.md) | 28 | `declaration-track:597b6070512ca9f22e609d9f2d75c76625b6fb4e3ef66f5f0360ca4a01f982fb` |
+| 3 | `structure` | [RealizationDigest](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BasicBasicNamespacedSourceEdition1.lean/declarations/realizationdigest.md) | 32 | `declaration-track:7aad8c708298cdea17966528a5700027bb326debc5801a50a082c55f8e44f8f4` |
+| 4 | `structure` | [ReconstructionDigest](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BasicBasicNamespacedSourceEdition1.lean/declarations/reconstructiondigest.md) | 36 | `declaration-track:8440bec5a9cd6e70231187295f78030ee52721e88e599054494ed1c851339073` |
+| 5 | `structure` | [ArithmeticCutId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BasicBasicNamespacedSourceEdition1.lean/declarations/arithmeticcutid.md) | 40 | `declaration-track:a90741d783d5c486879317113189a7aa6d3b9edcc02df74b7642a4c9a505d754` |
+| 6 | `structure` | [CompressionId](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BasicBasicNamespacedSourceEdition1.lean/declarations/compressionid.md) | 44 | `declaration-track:4bdc31cbfa88aee48a63fbdd2e01e26befbcf0ec85f35f8bfbfec2f77a2b17c6` |
+| 7 | `structure` | [CertificateDigest](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BasicBasicNamespacedSourceEdition1.lean/declarations/certificatedigest.md) | 48 | `declaration-track:ca8aa01bc769a4ad1e15d452873fba0d7a8174784524003516ae8b57788fc253` |
+| 8 | `inductive` | [CertificateStatus](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/BasicBasicNamespacedSourceEdition1.lean/declarations/certificatestatus.md) | 52 | `declaration-track:0bb2fd40d2367ca0ede3d9e85abd38a8e7ca5f90e650ea895161b364d7f34d8e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

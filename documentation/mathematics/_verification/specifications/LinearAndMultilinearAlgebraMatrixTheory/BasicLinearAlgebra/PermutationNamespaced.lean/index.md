@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PermutationNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PermutationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PermutationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PermutationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,11 +60,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [Equiv.Perm.permMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PermutationNamespaced.lean/declarations/equiv-perm-permmatrix.md) | 42 | `declaration-track:eaf6b4f6bde5b09c7595eb7e0009b4e7ec92710db843ab3262fab34841480c20` |
-| 2 | `lemma` | [transpose_permMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PermutationNamespaced.lean/declarations/transpose-permmatrix.md) | 48 | `result-track:b442d456c0b6afab735f61f1515339be8a1366e5be85ba058e7d2f6795fbf26f` |
-| 3 | `lemma` | [conjTranspose_permMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PermutationNamespaced.lean/declarations/conjtranspose-permmatrix.md) | 52 | `result-track:1c18431a9f4b2afc242374e25870a1f9dcefecb0390e4d5be6e1725e3f249d66` |
-| 4 | `theorem` | [det_permutation](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PermutationNamespaced.lean/declarations/det-permutation.md) | 61 | `result-track:5390f3e0e2aa3d676972b80bb15eadcd91e84b21aa7263ae3769a0b089dae6cf` |
-| 5 | `theorem` | [trace_permutation](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PermutationNamespaced.lean/declarations/trace-permutation.md) | 66 | `result-track:062c286029ad1fe3266a9866e7ea56a1a40d90459dbe2c21c29b2f00bdb863ea` |
+| 1 | `abbrev` | [Equiv.Perm.permMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PermutationNamespaced.lean/declarations/equiv-perm-permmatrix.md) | 42 | `declaration-track:eaf6b4f6bde5b09c7595eb7e0009b4e7ec92710db843ab3262fab34841480c20` |
+| 2 | `lemma` | [transpose_permMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PermutationNamespaced.lean/declarations/transpose-permmatrix.md) | 48 | `result-track:b442d456c0b6afab735f61f1515339be8a1366e5be85ba058e7d2f6795fbf26f` |
+| 3 | `lemma` | [conjTranspose_permMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PermutationNamespaced.lean/declarations/conjtranspose-permmatrix.md) | 52 | `result-track:1c18431a9f4b2afc242374e25870a1f9dcefecb0390e4d5be6e1725e3f249d66` |
+| 4 | `theorem` | [det_permutation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PermutationNamespaced.lean/declarations/det-permutation.md) | 61 | `result-track:5390f3e0e2aa3d676972b80bb15eadcd91e84b21aa7263ae3769a0b089dae6cf` |
+| 5 | `theorem` | [trace_permutation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PermutationNamespaced.lean/declarations/trace-permutation.md) | 66 | `result-track:062c286029ad1fe3266a9866e7ea56a1a40d90459dbe2c21c29b2f00bdb863ea` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

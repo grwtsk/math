@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/QuadraticIntervalElementaryCore.lean/index.md) · [Full source](../../../../RealFunctions/QuadraticIntervalElementaryCore.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/QuadraticIntervalElementaryCore.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/QuadraticIntervalElementaryCore.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,10 +46,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Interfaces.QuadraticIntervalQuadratureCore`](../../../../NumberTheory/QuadraticIntervalQuadratureCore.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Analysis.ErrorBounds.FiniteLogEnclosure`](../../../../RealFunctions/FiniteLogEnclosure.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.Analysis.ErrorBounds.ComplexTaylorEnclosure`](../../../../RealFunctions/ComplexTaylorEnclosure.lean/index.md) — import line 6; pinned internal source present.
-- [`GRWTSK.Analysis.Complex.IntervalMellinElementary`](../../../../FunctionsOfAComplexVariable/IntervalMellinElementary.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.Interfaces.QuadraticIntervalQuadratureCore`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/QuadraticIntervalQuadratureCore.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Analysis.ErrorBounds.FiniteLogEnclosure`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/FiniteLogEnclosure.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.Analysis.ErrorBounds.ComplexTaylorEnclosure`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ComplexTaylorEnclosure.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.Analysis.Complex.IntervalMellinElementary`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/IntervalMellinElementary.lean/index.md) — import line 7; pinned internal source present.
 
 ## Top results and three-degree verification metric
 

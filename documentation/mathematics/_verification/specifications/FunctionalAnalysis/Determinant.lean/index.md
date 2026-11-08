@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/Determinant.lean/index.md) · [Full source](../../../../FunctionalAnalysis/Determinant.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Determinant.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Determinant.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,9 +60,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [Lshift](../../../../FunctionalAnalysis/Determinant.lean/declarations/lshift.md) | 30 | `declaration-track:20eb6979a5b9842962ce9795bd92c978e2eb7c45d92d42f2e61c590fc16a01f7` |
-| 2 | `def` | [detShift](../../../../FunctionalAnalysis/Determinant.lean/declarations/detshift.md) | 42 | `declaration-track:988a2470a66a1cd5e12dd5261d48cefa88a7743fc7c776d5edf8a89d9ac41180` |
-| 3 | `lemma` | [detShift_zero_iff](../../../../FunctionalAnalysis/Determinant.lean/declarations/detshift-zero-iff.md) | 54 | `result-track:9121daa686e56b509ccbc24b13b315d5e19b0bd8a91b6f8c3e5d67a3a8236a86` |
+| 1 | `def` | [Lshift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Determinant.lean/declarations/lshift.md) | 30 | `declaration-track:20eb6979a5b9842962ce9795bd92c978e2eb7c45d92d42f2e61c590fc16a01f7` |
+| 2 | `def` | [detShift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Determinant.lean/declarations/detshift.md) | 42 | `declaration-track:988a2470a66a1cd5e12dd5261d48cefa88a7743fc7c776d5edf8a89d9ac41180` |
+| 3 | `lemma` | [detShift_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/Determinant.lean/declarations/detshift-zero-iff.md) | 54 | `result-track:9121daa686e56b509ccbc24b13b315d5e19b0bd8a91b6f8c3e5d67a3a8236a86` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

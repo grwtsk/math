@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/CountedCyclicEdgeSplicing.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/CountedCyclicEdgeSplicing.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CountedCyclicEdgeSplicing.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CountedCyclicEdgeSplicing.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Combinatorics.DirectedEulerSplicing`](../../../../Combinatorics/DirectedEulerSplicing.lean/index.md) — import line 3; pinned internal source present.
-- [`GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteCyclicEdgeCertificate`](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteCyclicEdgeCertificate.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Combinatorics.DirectedEulerSplicing`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/DirectedEulerSplicing.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteCyclicEdgeCertificate`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/FiniteCyclicEdgeCertificate.lean/index.md) — import line 4; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [CountedBinaryEdgeWalk](../../../../ProbabilityTheoryAndStochasticProcesses/CountedCyclicEdgeSplicing.lean/declarations/countedbinaryedgewalk.md) | 24 | `declaration-track:53bad515c057b1f4cd3e2e69fba43f382e6aec24f26dc4655669302df86739a1` |
-| 2 | `theorem` | [countedBinaryEdgeWalk_exists_strict_extension](../../../../ProbabilityTheoryAndStochasticProcesses/CountedCyclicEdgeSplicing.lean/declarations/countedbinaryedgewalk-exists-strict-extension.md) | 32 | `result-track:e08a66116eb28e3b4fae079dcb6dd1be4c67fc04295ccf127188aab2d528fd7b` |
+| 1 | `abbrev` | [CountedBinaryEdgeWalk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CountedCyclicEdgeSplicing.lean/declarations/countedbinaryedgewalk.md) | 24 | `declaration-track:53bad515c057b1f4cd3e2e69fba43f382e6aec24f26dc4655669302df86739a1` |
+| 2 | `theorem` | [countedBinaryEdgeWalk_exists_strict_extension](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/CountedCyclicEdgeSplicing.lean/declarations/countedbinaryedgewalk-exists-strict-extension.md) | 32 | `result-track:e08a66116eb28e3b4fae079dcb6dd1be4c67fc04295ccf127188aab2d528fd7b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

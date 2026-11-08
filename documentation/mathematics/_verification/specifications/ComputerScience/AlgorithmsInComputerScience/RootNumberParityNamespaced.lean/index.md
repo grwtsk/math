@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/RootNumberParityNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/RootNumberParityNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RootNumberParityNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RootNumberParityNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [BSDRootNumberParityData](../../../../../ComputerScience/AlgorithmsInComputerScience/RootNumberParityNamespaced.lean/declarations/bsdrootnumberparitydata.md) | 45 | `declaration-track:52debc82d01011487f25c19ef5690c63ed031ba55f50b8dba65f5530dd9ca4e3` |
-| 2 | `structure` | [BSDRootNumberParityCompatibilityCertificate](../../../../../ComputerScience/AlgorithmsInComputerScience/RootNumberParityNamespaced.lean/declarations/bsdrootnumberparitycompatibilitycertificate.md) | 59 | `declaration-track:ae289585385c9bc8823eaac5159725e71aa387772ae3de1da400f909d86de17d` |
-| 3 | `def` | [BSDRootNumberParityCompatibilityCertificate.certifiedForBSD](../../../../../ComputerScience/AlgorithmsInComputerScience/RootNumberParityNamespaced.lean/declarations/bsdrootnumberparitycompatibilitycertificate-certifiedforbsd.md) | 84 | `declaration-track:3fffba6f915b9cb7e148a81f99c32d0d4b86c3ca34bdb998201cdd4febb66c88` |
-| 4 | `theorem` | [BSDRootNumberParityCompatibilityCertificate.certifiedForBSD_of_fields](../../../../../ComputerScience/AlgorithmsInComputerScience/RootNumberParityNamespaced.lean/declarations/bsdrootnumberparitycompatibilitycertificate-certifiedforbsd-of-fields.md) | 105 | `result-track:98be311f03ecb0f185b66faf9dccf7df6a48c37ecfe4c5aaed8ba5aa6ca0d406` |
+| 1 | `structure` | [BSDRootNumberParityData](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RootNumberParityNamespaced.lean/declarations/bsdrootnumberparitydata.md) | 45 | `declaration-track:52debc82d01011487f25c19ef5690c63ed031ba55f50b8dba65f5530dd9ca4e3` |
+| 2 | `structure` | [BSDRootNumberParityCompatibilityCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RootNumberParityNamespaced.lean/declarations/bsdrootnumberparitycompatibilitycertificate.md) | 59 | `declaration-track:ae289585385c9bc8823eaac5159725e71aa387772ae3de1da400f909d86de17d` |
+| 3 | `def` | [BSDRootNumberParityCompatibilityCertificate.certifiedForBSD](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RootNumberParityNamespaced.lean/declarations/bsdrootnumberparitycompatibilitycertificate-certifiedforbsd.md) | 84 | `declaration-track:3fffba6f915b9cb7e148a81f99c32d0d4b86c3ca34bdb998201cdd4febb66c88` |
+| 4 | `theorem` | [BSDRootNumberParityCompatibilityCertificate.certifiedForBSD_of_fields](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/RootNumberParityNamespaced.lean/declarations/bsdrootnumberparitycompatibilitycertificate-certifiedforbsd-of-fields.md) | 105 | `result-track:98be311f03ecb0f185b66faf9dccf7df6a48c37ecfe4c5aaed8ba5aa6ca0d406` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

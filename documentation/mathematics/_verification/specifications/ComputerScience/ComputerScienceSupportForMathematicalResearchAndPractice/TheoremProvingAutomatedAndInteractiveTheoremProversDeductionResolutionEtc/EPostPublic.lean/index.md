@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/EPostPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/EPostPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/EPostPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/EPostPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mkEPostAtIndex](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/EPostPublic.lean/declarations/mkepostatindex.md) | 28 | `declaration-track:1f0168406c655a455d68c2e5e9c9d9131c781ed84e86abd61377f15fdc56e592` |
-| 2 | `def` | [peelEPostTailChain](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/EPostPublic.lean/declarations/peeleposttailchain.md) | 37 | `declaration-track:c673e1cae4dd0f590bf4c590c760668f2bedbc49b0fd04d093e761f1eb9c8b4f` |
-| 3 | `def` | [replaceEPostHeadBot?](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/EPostPublic.lean/declarations/replaceepostheadbot.md) | 57 | `declaration-track:9d75051c227834d9a8da14f2525f5c064b04d68f7d6f41d80ec377452a363872` |
+| 1 | `def` | [mkEPostAtIndex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/EPostPublic.lean/declarations/mkepostatindex.md) | 28 | `declaration-track:1f0168406c655a455d68c2e5e9c9d9131c781ed84e86abd61377f15fdc56e592` |
+| 2 | `def` | [peelEPostTailChain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/EPostPublic.lean/declarations/peeleposttailchain.md) | 37 | `declaration-track:c673e1cae4dd0f590bf4c590c760668f2bedbc49b0fd04d093e761f1eb9c8b4f` |
+| 3 | `def` | [replaceEPostHeadBot?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/EPostPublic.lean/declarations/replaceepostheadbot.md) | 57 | `declaration-track:9d75051c227834d9a8da14f2525f5c064b04d68f7d6f41d80ec377452a363872` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/IdentitiesNamespaced.lean/index.md) · [Full source](../../../../NumberTheory/IdentitiesNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/IdentitiesNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/IdentitiesNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [vAdd_width_periodic](../../../../NumberTheory/IdentitiesNamespaced.lean/declarations/vadd-width-periodic.md) | 31 | `result-track:03548d46ef1771bf683388ea975812f9cb3417e1f354b0dff1c3af8874421988` |
-| 2 | `theorem` | [T_zpow_width_invariant](../../../../NumberTheory/IdentitiesNamespaced.lean/declarations/t-zpow-width-invariant.md) | 40 | `result-track:95fde84144606dc718e5912234533ef3cbd962978cc1e39a840cee7e07169eac` |
+| 1 | `theorem` | [vAdd_width_periodic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/IdentitiesNamespaced.lean/declarations/vadd-width-periodic.md) | 31 | `result-track:03548d46ef1771bf683388ea975812f9cb3417e1f354b0dff1c3af8874421988` |
+| 2 | `theorem` | [T_zpow_width_invariant](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/IdentitiesNamespaced.lean/declarations/t-zpow-width-invariant.md) | 40 | `result-track:95fde84144606dc718e5912234533ef3cbd962978cc1e39a840cee7e07169eac` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

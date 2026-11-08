@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralTopology/GeneralitiesInTopology/AtTopBotProdPublic.lean/index.md) · [Full source](../../../../../GeneralTopology/GeneralitiesInTopology/AtTopBotProdPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/AtTopBotProdPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/AtTopBotProdPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [prod_atTop_atTop_eq](../../../../../GeneralTopology/GeneralitiesInTopology/AtTopBotProdPublic.lean/declarations/prod-attop-attop-eq.md) | 25 | `result-track:d3e1daa2c4b8bc4147dbcb3d3184c288db0c5be797d2e4399610040708ca3804` |
-| 2 | `lemma` | [tendsto_finsetProd_atTop](../../../../../GeneralTopology/GeneralitiesInTopology/AtTopBotProdPublic.lean/declarations/tendsto-finsetprod-attop.md) | 33 | `result-track:7815fbaa3a05e69b01bf544e4e53f28a093d0b3aedb4b7fb3406d8b96fab4ff6` |
-| 3 | `theorem` | [prod_map_atTop_eq](../../../../../GeneralTopology/GeneralitiesInTopology/AtTopBotProdPublic.lean/declarations/prod-map-attop-eq.md) | 46 | `result-track:075e0f168a75ea2b1ac20638d5915c29f4271b50e25ae0a9c69c3bc536fd0257` |
-| 4 | `theorem` | [tendsto_atTop_diagonal](../../../../../GeneralTopology/GeneralitiesInTopology/AtTopBotProdPublic.lean/declarations/tendsto-attop-diagonal.md) | 51 | `result-track:dddfd70564e0fe986ac876a3be19b9b9ff1845df965f3fa7845b75fcdbeda196` |
-| 5 | `theorem` | [Tendsto.prod_map_prod_atTop](../../../../../GeneralTopology/GeneralitiesInTopology/AtTopBotProdPublic.lean/declarations/tendsto-prod-map-prod-attop.md) | 56 | `result-track:8f454fbbed1006349a7b7f25791b4d448282d84be9c3b2a9d5da1bf043417f3a` |
-| 6 | `theorem` | [Tendsto.prod_atTop](../../../../../GeneralTopology/GeneralitiesInTopology/AtTopBotProdPublic.lean/declarations/tendsto-prod-attop.md) | 63 | `result-track:43618479535b33e52ef81ea9a9b3425f315d7949f7e73c48971e2fbddfec2c3f` |
-| 7 | `theorem` | [eventually_atTop_prod_self](../../../../../GeneralTopology/GeneralitiesInTopology/AtTopBotProdPublic.lean/declarations/eventually-attop-prod-self.md) | 70 | `result-track:2960909a802a9fa0fa51f699c7166b10eff7ccf56f1b95b9d91306bafdfb1851` |
-| 8 | `theorem` | [eventually_atTop_prod_self'](../../../../../GeneralTopology/GeneralitiesInTopology/AtTopBotProdPublic.lean/declarations/eventually-attop-prod-self-source-edition-2.md) | 75 | `result-track:2b44b90ffc82b223da8cd6ebde05b72fbb93fc577b56d27656abb92c2e045055` |
-| 9 | `theorem` | [eventually_atTop_curry](../../../../../GeneralTopology/GeneralitiesInTopology/AtTopBotProdPublic.lean/declarations/eventually-attop-curry.md) | 80 | `result-track:4dd2fdec3c0f28afa04887a1d3b41ba6fd4e39dbe372aedf7cacc9e9f008d371` |
+| 1 | `theorem` | [prod_atTop_atTop_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/AtTopBotProdPublic.lean/declarations/prod-attop-attop-eq.md) | 25 | `result-track:d3e1daa2c4b8bc4147dbcb3d3184c288db0c5be797d2e4399610040708ca3804` |
+| 2 | `lemma` | [tendsto_finsetProd_atTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/AtTopBotProdPublic.lean/declarations/tendsto-finsetprod-attop.md) | 33 | `result-track:7815fbaa3a05e69b01bf544e4e53f28a093d0b3aedb4b7fb3406d8b96fab4ff6` |
+| 3 | `theorem` | [prod_map_atTop_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/AtTopBotProdPublic.lean/declarations/prod-map-attop-eq.md) | 46 | `result-track:075e0f168a75ea2b1ac20638d5915c29f4271b50e25ae0a9c69c3bc536fd0257` |
+| 4 | `theorem` | [tendsto_atTop_diagonal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/AtTopBotProdPublic.lean/declarations/tendsto-attop-diagonal.md) | 51 | `result-track:dddfd70564e0fe986ac876a3be19b9b9ff1845df965f3fa7845b75fcdbeda196` |
+| 5 | `theorem` | [Tendsto.prod_map_prod_atTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/AtTopBotProdPublic.lean/declarations/tendsto-prod-map-prod-attop.md) | 56 | `result-track:8f454fbbed1006349a7b7f25791b4d448282d84be9c3b2a9d5da1bf043417f3a` |
+| 6 | `theorem` | [Tendsto.prod_atTop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/AtTopBotProdPublic.lean/declarations/tendsto-prod-attop.md) | 63 | `result-track:43618479535b33e52ef81ea9a9b3425f315d7949f7e73c48971e2fbddfec2c3f` |
+| 7 | `theorem` | [eventually_atTop_prod_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/AtTopBotProdPublic.lean/declarations/eventually-attop-prod-self.md) | 70 | `result-track:2960909a802a9fa0fa51f699c7166b10eff7ccf56f1b95b9d91306bafdfb1851` |
+| 8 | `theorem` | [eventually_atTop_prod_self'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/AtTopBotProdPublic.lean/declarations/eventually-attop-prod-self-source-edition-2.md) | 75 | `result-track:2b44b90ffc82b223da8cd6ebde05b72fbb93fc577b56d27656abb92c2e045055` |
+| 9 | `theorem` | [eventually_atTop_curry](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/GeneralitiesInTopology/AtTopBotProdPublic.lean/declarations/eventually-attop-curry.md) | 80 | `result-track:4dd2fdec3c0f28afa04887a1d3b41ba6fd4e39dbe372aedf7cacc9e9f008d371` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

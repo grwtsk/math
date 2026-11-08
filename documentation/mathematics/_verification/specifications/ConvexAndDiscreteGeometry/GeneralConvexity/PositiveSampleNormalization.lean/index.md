@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/PositiveSampleNormalization.lean/index.md) · [Full source](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/PositiveSampleNormalization.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/PositiveSampleNormalization.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/PositiveSampleNormalization.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -64,13 +64,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [PositiveSample](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/PositiveSampleNormalization.lean/declarations/positivesample.md) | 57 | `declaration-track:c9738bc19d2d2abe4f057f445d9464c2b4529d6de1c4770961e3517faf4b31f8` |
-| 2 | `def` | [total](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/PositiveSampleNormalization.lean/declarations/total.md) | 65 | `declaration-track:e142bc2bf8cb3a27efc2ef0cf34292ebbe3316e7cb1b0876a8e01ec94a4f5053` |
-| 3 | `theorem` | [total_pos](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/PositiveSampleNormalization.lean/declarations/total-pos.md) | 68 | `result-track:504ceacb325687efa1e1a196bc3c847b2d2bc075af4515bc598016493e4f7d1f` |
-| 4 | `def` | [normalize](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/PositiveSampleNormalization.lean/declarations/normalize.md) | 72 | `declaration-track:5678995f8230fe105d748177364cbaab354f778557197351972dc56a6b30ba09` |
-| 5 | `def` | [scale](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/PositiveSampleNormalization.lean/declarations/scale.md) | 83 | `declaration-track:de2a1706e12fda927cb094f8758b8bd1c806bf4b1d38b5059221ce4e7b73a0a5` |
-| 6 | `theorem` | [scale_total](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/PositiveSampleNormalization.lean/declarations/scale-total.md) | 89 | `result-track:15c338ca87ccc292b8779966eab07bfc90aa5ecb9e0553c3c530fc4501b2e247` |
-| 7 | `theorem` | [normalize_scale](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/PositiveSampleNormalization.lean/declarations/normalize-scale.md) | 95 | `result-track:803d2245196766332c639e1fdd8735e45de0f131a73e9d03c53ae21a866499b5` |
+| 1 | `structure` | [PositiveSample](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/PositiveSampleNormalization.lean/declarations/positivesample.md) | 57 | `declaration-track:c9738bc19d2d2abe4f057f445d9464c2b4529d6de1c4770961e3517faf4b31f8` |
+| 2 | `def` | [total](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/PositiveSampleNormalization.lean/declarations/total.md) | 65 | `declaration-track:e142bc2bf8cb3a27efc2ef0cf34292ebbe3316e7cb1b0876a8e01ec94a4f5053` |
+| 3 | `theorem` | [total_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/PositiveSampleNormalization.lean/declarations/total-pos.md) | 68 | `result-track:504ceacb325687efa1e1a196bc3c847b2d2bc075af4515bc598016493e4f7d1f` |
+| 4 | `def` | [normalize](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/PositiveSampleNormalization.lean/declarations/normalize.md) | 72 | `declaration-track:5678995f8230fe105d748177364cbaab354f778557197351972dc56a6b30ba09` |
+| 5 | `def` | [scale](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/PositiveSampleNormalization.lean/declarations/scale.md) | 83 | `declaration-track:de2a1706e12fda927cb094f8758b8bd1c806bf4b1d38b5059221ce4e7b73a0a5` |
+| 6 | `theorem` | [scale_total](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/PositiveSampleNormalization.lean/declarations/scale-total.md) | 89 | `result-track:15c338ca87ccc292b8779966eab07bfc90aa5ecb9e0553c3c530fc4501b2e247` |
+| 7 | `theorem` | [normalize_scale](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ConvexAndDiscreteGeometry/GeneralConvexity/PositiveSampleNormalization.lean/declarations/normalize-scale.md) | 95 | `result-track:803d2245196766332c639e1fdd8735e45de0f131a73e9d03c53ae21a866499b5` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

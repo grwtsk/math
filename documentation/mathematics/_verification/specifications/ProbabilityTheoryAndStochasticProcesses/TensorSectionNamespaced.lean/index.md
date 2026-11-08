@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/TensorSectionNamespaced.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/TensorSectionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/TensorSectionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/TensorSectionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [tensor_section_has_some_rank](../../../../ProbabilityTheoryAndStochasticProcesses/TensorSectionNamespaced.lean/declarations/tensor-section-has-some-rank.md) | 30 | `result-track:734da47a97c1b068135caf015a64e1b68f3050ea9e64de1c6021ba66c45ac87b` |
-| 2 | `theorem` | [height_rank_rule_monotone_if_supplied](../../../../ProbabilityTheoryAndStochasticProcesses/TensorSectionNamespaced.lean/declarations/height-rank-rule-monotone-if-supplied.md) | 38 | `result-track:c64a888757770a22f9d883a6ef212687fa5e74edbcad4b65368cece97137b43f` |
-| 3 | `theorem` | [filtration_exhaustive](../../../../ProbabilityTheoryAndStochasticProcesses/TensorSectionNamespaced.lean/declarations/filtration-exhaustive.md) | 43 | `result-track:79d63e8d0b19b1836652e366ccc7bc7052a782bcadb600731ae3a8002030f862` |
-| 4 | `theorem` | [filtration_separated](../../../../ProbabilityTheoryAndStochasticProcesses/TensorSectionNamespaced.lean/declarations/filtration-separated.md) | 48 | `result-track:4e93bbc63e53acaa697df04b67aa31f007185da4c8067837927b937053b7d6fa` |
+| 1 | `theorem` | [tensor_section_has_some_rank](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/TensorSectionNamespaced.lean/declarations/tensor-section-has-some-rank.md) | 30 | `result-track:734da47a97c1b068135caf015a64e1b68f3050ea9e64de1c6021ba66c45ac87b` |
+| 2 | `theorem` | [height_rank_rule_monotone_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/TensorSectionNamespaced.lean/declarations/height-rank-rule-monotone-if-supplied.md) | 38 | `result-track:c64a888757770a22f9d883a6ef212687fa5e74edbcad4b65368cece97137b43f` |
+| 3 | `theorem` | [filtration_exhaustive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/TensorSectionNamespaced.lean/declarations/filtration-exhaustive.md) | 43 | `result-track:79d63e8d0b19b1836652e366ccc7bc7052a782bcadb600731ae3a8002030f862` |
+| 4 | `theorem` | [filtration_separated](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/TensorSectionNamespaced.lean/declarations/filtration-separated.md) | 48 | `result-track:4e93bbc63e53acaa697df04b67aa31f007185da4c8067837927b937053b7d6fa` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

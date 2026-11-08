@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ExternalReferee.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ExternalReferee.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExternalReferee.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExternalReferee.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [researchRefereePrompt](../../../../../ComputerScience/AlgorithmsInComputerScience/ExternalReferee.lean/declarations/researchrefereeprompt.md) | 15 | `declaration-track:9d5d4a8fded0c7187cf79b31e0a2a0a9287580ac6ebd43a4f13b4133e2541e0b` |
-| 2 | `inductive` | [RefereeFindingKind](../../../../../ComputerScience/AlgorithmsInComputerScience/ExternalReferee.lean/declarations/refereefindingkind.md) | 18 | `declaration-track:a254ecb493e1998c842f83a3c34d683952034d9c3dfb2f68b6058e6d01c3a166` |
-| 3 | `structure` | [RefereeFinding](../../../../../ComputerScience/AlgorithmsInComputerScience/ExternalReferee.lean/declarations/refereefinding.md) | 24 | `declaration-track:e76db9ce274defefc20d4c654579da655d26608be9b82b73acd0f96a931ea6ba` |
-| 4 | `def` | [recommendedTargets](../../../../../ComputerScience/AlgorithmsInComputerScience/ExternalReferee.lean/declarations/recommendedtargets.md) | 33 | `declaration-track:4621f775185fbeff46a3cdb436f7a59df4b8ac2072cf732bb4fa7129d1242a89` |
-| 5 | `theorem` | [recommendedTargets_count](../../../../../ComputerScience/AlgorithmsInComputerScience/ExternalReferee.lean/declarations/recommendedtargets-count.md) | 258 | `result-track:21f9992359fedf688ed5539b094249675d3b4b9d411c6b0148e3a20399a9316e` |
-| 6 | `def` | [findingResidue](../../../../../ComputerScience/AlgorithmsInComputerScience/ExternalReferee.lean/declarations/findingresidue.md) | 262 | `declaration-track:69addbc293de1641969e55b8e0e4bbbe15c2f8aa7d49eb12564ec2eb5f617b74` |
-| 7 | `def` | [checkedFinding](../../../../../ComputerScience/AlgorithmsInComputerScience/ExternalReferee.lean/declarations/checkedfinding.md) | 269 | `declaration-track:96351782d409c0372bd2461d1f28294708de6c7cb6a6f70e7e123335b3f89f1a` |
-| 8 | `theorem` | [checkedFinding_hasResidue](../../../../../ComputerScience/AlgorithmsInComputerScience/ExternalReferee.lean/declarations/checkedfinding-hasresidue.md) | 272 | `result-track:4f4449c8375dea5f5ba35c09fee46f36e4628c008903938ab21f2de5a1777fd6` |
+| 1 | `def` | [researchRefereePrompt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExternalReferee.lean/declarations/researchrefereeprompt.md) | 15 | `declaration-track:9d5d4a8fded0c7187cf79b31e0a2a0a9287580ac6ebd43a4f13b4133e2541e0b` |
+| 2 | `inductive` | [RefereeFindingKind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExternalReferee.lean/declarations/refereefindingkind.md) | 18 | `declaration-track:a254ecb493e1998c842f83a3c34d683952034d9c3dfb2f68b6058e6d01c3a166` |
+| 3 | `structure` | [RefereeFinding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExternalReferee.lean/declarations/refereefinding.md) | 24 | `declaration-track:e76db9ce274defefc20d4c654579da655d26608be9b82b73acd0f96a931ea6ba` |
+| 4 | `def` | [recommendedTargets](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExternalReferee.lean/declarations/recommendedtargets.md) | 33 | `declaration-track:4621f775185fbeff46a3cdb436f7a59df4b8ac2072cf732bb4fa7129d1242a89` |
+| 5 | `theorem` | [recommendedTargets_count](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExternalReferee.lean/declarations/recommendedtargets-count.md) | 258 | `result-track:21f9992359fedf688ed5539b094249675d3b4b9d411c6b0148e3a20399a9316e` |
+| 6 | `def` | [findingResidue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExternalReferee.lean/declarations/findingresidue.md) | 262 | `declaration-track:69addbc293de1641969e55b8e0e4bbbe15c2f8aa7d49eb12564ec2eb5f617b74` |
+| 7 | `def` | [checkedFinding](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExternalReferee.lean/declarations/checkedfinding.md) | 269 | `declaration-track:96351782d409c0372bd2461d1f28294708de6c7cb6a6f70e7e123335b3f89f1a` |
+| 8 | `theorem` | [checkedFinding_hasResidue](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExternalReferee.lean/declarations/checkedfinding-hasresidue.md) | 272 | `result-track:4f4449c8375dea5f5ba35c09fee46f36e4628c008903938ab21f2de5a1777fd6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/GraphTheory/ChromaticHeightNamespaced.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/ChromaticHeightNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ChromaticHeightNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ChromaticHeightNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [ChromaticHeight](../../../../../Combinatorics/GraphTheory/ChromaticHeightNamespaced.lean/declarations/chromaticheight.md) | 26 | `declaration-track:9d279333807e8ad022833d6783f7de6bc55d8773f990db330f48757f1effb55e` |
-| 2 | `structure` | [HeightRankRule](../../../../../Combinatorics/GraphTheory/ChromaticHeightNamespaced.lean/declarations/heightrankrule.md) | 31 | `declaration-track:d66c04759bb7e0b82fe7cab92d4504942c3603e3eb08131b773c0b665ddf104d` |
-| 3 | `theorem` | [height_rank_rule_monotone_if_supplied](../../../../../Combinatorics/GraphTheory/ChromaticHeightNamespaced.lean/declarations/height-rank-rule-monotone-if-supplied.md) | 37 | `result-track:885939226fe19e247ff34746b507d383262b6f14b593fa4892c82fb0bee1b2c2` |
+| 1 | `structure` | [ChromaticHeight](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ChromaticHeightNamespaced.lean/declarations/chromaticheight.md) | 26 | `declaration-track:9d279333807e8ad022833d6783f7de6bc55d8773f990db330f48757f1effb55e` |
+| 2 | `structure` | [HeightRankRule](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ChromaticHeightNamespaced.lean/declarations/heightrankrule.md) | 31 | `declaration-track:d66c04759bb7e0b82fe7cab92d4504942c3603e3eb08131b773c0b665ddf104d` |
+| 3 | `theorem` | [height_rank_rule_monotone_if_supplied](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/GraphTheory/ChromaticHeightNamespaced.lean/declarations/height-rank-rule-monotone-if-supplied.md) | 37 | `result-track:885939226fe19e247ff34746b507d383262b6f14b593fa4892c82fb0bee1b2c2` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

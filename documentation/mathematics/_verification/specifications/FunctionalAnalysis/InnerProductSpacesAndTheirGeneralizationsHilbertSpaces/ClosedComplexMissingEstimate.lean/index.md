@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ClosedComplexMissingEstimate.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ClosedComplexMissingEstimate.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ClosedComplexMissingEstimate.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ClosedComplexMissingEstimate.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.InnerProductSpace.ClosedComplexSolvability`](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/InnerProductSpaceClosedComplexSolvability.lean/index.md) — import line 10; pinned internal source present.
+- [`GRWTSK.Analysis.InnerProductSpace.ClosedComplexSolvability`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/InnerProductSpaceClosedComplexSolvability.lean/index.md) — import line 10; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [zero_dense](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ClosedComplexMissingEstimate.lean/declarations/zero-dense.md) | 20 | `result-track:228c26bd5c244aa0cd077ef09167802fec444fcbb3e6470c6e300c9061744a7c` |
-| 2 | `theorem` | [zero_closed](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ClosedComplexMissingEstimate.lean/declarations/zero-closed.md) | 24 | `result-track:33259f07778e411754b2c53889d82ab4f4b31cf34fbafd613179438041120a67` |
-| 3 | `theorem` | [zero_complex](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ClosedComplexMissingEstimate.lean/declarations/zero-complex.md) | 38 | `result-track:5d069c837cbef0d154f35212cd2bc59e92a87a26daab10f2ca319a07478802fb` |
-| 4 | `theorem` | [zero_kernel_unit](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ClosedComplexMissingEstimate.lean/declarations/zero-kernel-unit.md) | 42 | `result-track:3c7096c52cf44b55ae04fd71887f1f0af96a75d6b1c239b7e19291908e290c76` |
-| 5 | `theorem` | [zero_has_no_unit_solution](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ClosedComplexMissingEstimate.lean/declarations/zero-has-no-unit-solution.md) | 45 | `result-track:7b865e4a38f9ff24d1ca572ef5370821c67a922cc7247cf0dfa92612c6def30b` |
-| 6 | `def` | [unitAdjoint](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ClosedComplexMissingEstimate.lean/declarations/unitadjoint.md) | 50 | `declaration-track:54fc52bba9511a37f598ff530207f740e88df67470d611b1a4742a66d3b79057` |
-| 7 | `theorem` | [zero_adjoint_unit](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ClosedComplexMissingEstimate.lean/declarations/zero-adjoint-unit.md) | 57 | `result-track:1ee4022d60d14d079e0f66e522af834b5a774cc1f5e688065d0683b3550579b6` |
-| 8 | `theorem` | [zero_estimate_fails](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ClosedComplexMissingEstimate.lean/declarations/zero-estimate-fails.md) | 63 | `result-track:23d44f2af4e4d96e832e6de0ac90231db8e1b62eca875154fd8c90933da291da` |
-| 9 | `example` | [(anonymous)](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ClosedComplexMissingEstimate.lean/declarations/example.md) | 77 | `declaration-track:83c341c7620519f702d1f0273dd119a539d1fd89e968771e6184889ae33c3597` |
+| 1 | `theorem` | [zero_dense](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ClosedComplexMissingEstimate.lean/declarations/zero-dense.md) | 20 | `result-track:228c26bd5c244aa0cd077ef09167802fec444fcbb3e6470c6e300c9061744a7c` |
+| 2 | `theorem` | [zero_closed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ClosedComplexMissingEstimate.lean/declarations/zero-closed.md) | 24 | `result-track:33259f07778e411754b2c53889d82ab4f4b31cf34fbafd613179438041120a67` |
+| 3 | `theorem` | [zero_complex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ClosedComplexMissingEstimate.lean/declarations/zero-complex.md) | 38 | `result-track:5d069c837cbef0d154f35212cd2bc59e92a87a26daab10f2ca319a07478802fb` |
+| 4 | `theorem` | [zero_kernel_unit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ClosedComplexMissingEstimate.lean/declarations/zero-kernel-unit.md) | 42 | `result-track:3c7096c52cf44b55ae04fd71887f1f0af96a75d6b1c239b7e19291908e290c76` |
+| 5 | `theorem` | [zero_has_no_unit_solution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ClosedComplexMissingEstimate.lean/declarations/zero-has-no-unit-solution.md) | 45 | `result-track:7b865e4a38f9ff24d1ca572ef5370821c67a922cc7247cf0dfa92612c6def30b` |
+| 6 | `def` | [unitAdjoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ClosedComplexMissingEstimate.lean/declarations/unitadjoint.md) | 50 | `declaration-track:54fc52bba9511a37f598ff530207f740e88df67470d611b1a4742a66d3b79057` |
+| 7 | `theorem` | [zero_adjoint_unit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ClosedComplexMissingEstimate.lean/declarations/zero-adjoint-unit.md) | 57 | `result-track:1ee4022d60d14d079e0f66e522af834b5a774cc1f5e688065d0683b3550579b6` |
+| 8 | `theorem` | [zero_estimate_fails](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ClosedComplexMissingEstimate.lean/declarations/zero-estimate-fails.md) | 63 | `result-track:23d44f2af4e4d96e832e6de0ac90231db8e1b62eca875154fd8c90933da291da` |
+| 9 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ClosedComplexMissingEstimate.lean/declarations/example.md) | 77 | `declaration-track:83c341c7620519f702d1f0273dd119a539d1fd89e968771e6184889ae33c3597` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

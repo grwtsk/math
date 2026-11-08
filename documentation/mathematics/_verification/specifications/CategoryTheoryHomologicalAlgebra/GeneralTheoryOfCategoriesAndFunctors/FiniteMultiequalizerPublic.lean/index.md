@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FiniteMultiequalizerPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FiniteMultiequalizerPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FiniteMultiequalizerPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FiniteMultiequalizerPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FiniteMultiequalizerPublic.lean/declarations/instance-source-edition-2.md) | 25 | `declaration-track:53600686cd3e5bacc47442c4784e5661c8810afad95763125460552c4c36f122` |
-| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FiniteMultiequalizerPublic.lean/declarations/instance-source-edition-3.md) | 27 | `declaration-track:f0cb7956bc2e7aac58d0469868225b3a9163cf49d881a501d2a66724a6523d0e` |
-| 3 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FiniteMultiequalizerPublic.lean/declarations/instance-source-edition-4.md) | 52 | `declaration-track:f5c86a094838727a6ca5aad09d1f7a87f194c29993d392a2a51c69b347a26aa8` |
-| 4 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FiniteMultiequalizerPublic.lean/declarations/instance.md) | 54 | `declaration-track:3518cccde6fa04472ed6c801f46c447da3267b7918565f09411e20a0d0f61df0` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FiniteMultiequalizerPublic.lean/declarations/instance-source-edition-2.md) | 25 | `declaration-track:53600686cd3e5bacc47442c4784e5661c8810afad95763125460552c4c36f122` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FiniteMultiequalizerPublic.lean/declarations/instance-source-edition-3.md) | 27 | `declaration-track:f0cb7956bc2e7aac58d0469868225b3a9163cf49d881a501d2a66724a6523d0e` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FiniteMultiequalizerPublic.lean/declarations/instance-source-edition-4.md) | 52 | `declaration-track:f5c86a094838727a6ca5aad09d1f7a87f194c29993d392a2a51c69b347a26aa8` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FiniteMultiequalizerPublic.lean/declarations/instance.md) | 54 | `declaration-track:3518cccde6fa04472ed6c801f46c447da3267b7918565f09411e20a0d0f61df0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

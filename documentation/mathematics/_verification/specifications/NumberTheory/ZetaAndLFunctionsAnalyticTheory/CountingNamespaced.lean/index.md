@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CountingNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CountingNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CountingNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CountingNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [window_finite](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CountingNamespaced.lean/declarations/window-finite.md) | 28 | `result-track:1c65cd24ee8f4b7912e668064663c2a8bf20a8882f01e0fc7b166e78ef7529ba` |
-| 2 | `lemma` | [window_subset_carrier](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CountingNamespaced.lean/declarations/window-subset-carrier.md) | 30 | `result-track:8adaeca77c649ff65c3fc8afc7fcf66754e436ac0a2bcf663fb8424219bc880c` |
-| 3 | `lemma` | [ncard_le_finsum_mult](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CountingNamespaced.lean/declarations/ncard-le-finsum-mult.md) | 33 | `result-track:a829c3e2c9152c3f71803cd9ff5066b19cebeffeae3bb0f8dc177b82e08c3082` |
-| 4 | `lemma` | [finsum_mult_mono](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CountingNamespaced.lean/declarations/finsum-mult-mono.md) | 43 | `result-track:7e0a0964e7170b6742f26f2da845d1a48268b7f9d19070c7fbaf1d1b2eeca4bc` |
-| 5 | `lemma` | [ncard_mono](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CountingNamespaced.lean/declarations/ncard-mono.md) | 51 | `result-track:58f9d26bfed16ec476c7208a1a9d8773297e01a24369b91c7fc3816006385b7c` |
-| 6 | `theorem` | [trivial_chain](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CountingNamespaced.lean/declarations/trivial-chain.md) | 56 | `result-track:96bab781947653336c2d0e3e2ca27fe25d99137e5dd36878b02492557309ab64` |
-| 7 | `lemma` | [Nd_le_N](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CountingNamespaced.lean/declarations/nd-le-n.md) | 68 | `result-track:11346ff080e102f0745ece8b81ea7cd40770ab38f1015646d7fd56de5572f7cb` |
-| 8 | `lemma` | [N0star_le_Nd](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CountingNamespaced.lean/declarations/n0star-le-nd.md) | 71 | `result-track:fe1d16f39b95e5e7760f73ce62266cb4836dc12aae3c1dbe3e5fa16eb3598277` |
+| 1 | `lemma` | [window_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CountingNamespaced.lean/declarations/window-finite.md) | 28 | `result-track:1c65cd24ee8f4b7912e668064663c2a8bf20a8882f01e0fc7b166e78ef7529ba` |
+| 2 | `lemma` | [window_subset_carrier](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CountingNamespaced.lean/declarations/window-subset-carrier.md) | 30 | `result-track:8adaeca77c649ff65c3fc8afc7fcf66754e436ac0a2bcf663fb8424219bc880c` |
+| 3 | `lemma` | [ncard_le_finsum_mult](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CountingNamespaced.lean/declarations/ncard-le-finsum-mult.md) | 33 | `result-track:a829c3e2c9152c3f71803cd9ff5066b19cebeffeae3bb0f8dc177b82e08c3082` |
+| 4 | `lemma` | [finsum_mult_mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CountingNamespaced.lean/declarations/finsum-mult-mono.md) | 43 | `result-track:7e0a0964e7170b6742f26f2da845d1a48268b7f9d19070c7fbaf1d1b2eeca4bc` |
+| 5 | `lemma` | [ncard_mono](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CountingNamespaced.lean/declarations/ncard-mono.md) | 51 | `result-track:58f9d26bfed16ec476c7208a1a9d8773297e01a24369b91c7fc3816006385b7c` |
+| 6 | `theorem` | [trivial_chain](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CountingNamespaced.lean/declarations/trivial-chain.md) | 56 | `result-track:96bab781947653336c2d0e3e2ca27fe25d99137e5dd36878b02492557309ab64` |
+| 7 | `lemma` | [Nd_le_N](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CountingNamespaced.lean/declarations/nd-le-n.md) | 68 | `result-track:11346ff080e102f0745ece8b81ea7cd40770ab38f1015646d7fd56de5572f7cb` |
+| 8 | `lemma` | [N0star_le_Nd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CountingNamespaced.lean/declarations/n0star-le-nd.md) | 71 | `result-track:fe1d16f39b95e5e7760f73ce62266cb4836dc12aae3c1dbe3e5fa16eb3598277` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

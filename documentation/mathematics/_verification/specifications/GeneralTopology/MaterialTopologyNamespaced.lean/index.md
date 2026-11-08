@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/MaterialTopologyNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/MaterialTopologyNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MaterialTopologyNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MaterialTopologyNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [material_homeomorph_image_connected_iff](../../../../GeneralTopology/MaterialTopologyNamespaced.lean/declarations/material-homeomorph-image-connected-iff.md) | 32 | `result-track:1bf66a8eac731cd8cbc54d8137088792d76740b70dd02059de3ce09b73ddcae7` |
-| 2 | `theorem` | [material_homeomorph_image_preconnected_iff](../../../../GeneralTopology/MaterialTopologyNamespaced.lean/declarations/material-homeomorph-image-preconnected-iff.md) | 37 | `result-track:a6fb08b6271948c6ec5734152e8dd79d27e10ce09f95c05e540c8ba5e726c902` |
-| 3 | `theorem` | [no_continuous_image_of_connected_disconnected](../../../../GeneralTopology/MaterialTopologyNamespaced.lean/declarations/no-continuous-image-of-connected-disconnected.md) | 43 | `result-track:9f70c94e6ad149d9cffb3f6849787f2f99ae09655b942ea5517ba6302c3e9063` |
-| 4 | `theorem` | [no_homeomorph_image_of_connected_disconnected](../../../../GeneralTopology/MaterialTopologyNamespaced.lean/declarations/no-homeomorph-image-of-connected-disconnected.md) | 52 | `result-track:f980480877f5f7969803f81ba92ae8df1f976ab05e7027fe2b55e9b31dc79f23` |
-| 5 | `theorem` | [no_homeomorph_image_of_disconnected_connected](../../../../GeneralTopology/MaterialTopologyNamespaced.lean/declarations/no-homeomorph-image-of-disconnected-connected.md) | 60 | `result-track:1e4c138ecf4e2a6a69ea597f555baaf00ff8509cd51bd777b053346cd4192c43` |
-| 6 | `theorem` | [no_interface_homeomorph_of_connected_disconnected](../../../../GeneralTopology/MaterialTopologyNamespaced.lean/declarations/no-interface-homeomorph-of-connected-disconnected.md) | 70 | `result-track:0470fadc46b7291e09cab43e780a1340935939e6dce1870f80b3327ec80e2cb8` |
-| 7 | `theorem` | [no_fixed_interface_homeomorph_family](../../../../GeneralTopology/MaterialTopologyNamespaced.lean/declarations/no-fixed-interface-homeomorph-family.md) | 80 | `result-track:1d64242dc72987b035987eb3c478de80b6cdfcc76b84bf17eae43f5c6f8f3b1b` |
-| 8 | `theorem` | [empty_interface_is_preconnected](../../../../GeneralTopology/MaterialTopologyNamespaced.lean/declarations/empty-interface-is-preconnected.md) | 95 | `result-track:3206694158b1066a66bf87983479ecb427fef8338f6ebbb45a8960d5806df881` |
+| 1 | `theorem` | [material_homeomorph_image_connected_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MaterialTopologyNamespaced.lean/declarations/material-homeomorph-image-connected-iff.md) | 32 | `result-track:1bf66a8eac731cd8cbc54d8137088792d76740b70dd02059de3ce09b73ddcae7` |
+| 2 | `theorem` | [material_homeomorph_image_preconnected_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MaterialTopologyNamespaced.lean/declarations/material-homeomorph-image-preconnected-iff.md) | 37 | `result-track:a6fb08b6271948c6ec5734152e8dd79d27e10ce09f95c05e540c8ba5e726c902` |
+| 3 | `theorem` | [no_continuous_image_of_connected_disconnected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MaterialTopologyNamespaced.lean/declarations/no-continuous-image-of-connected-disconnected.md) | 43 | `result-track:9f70c94e6ad149d9cffb3f6849787f2f99ae09655b942ea5517ba6302c3e9063` |
+| 4 | `theorem` | [no_homeomorph_image_of_connected_disconnected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MaterialTopologyNamespaced.lean/declarations/no-homeomorph-image-of-connected-disconnected.md) | 52 | `result-track:f980480877f5f7969803f81ba92ae8df1f976ab05e7027fe2b55e9b31dc79f23` |
+| 5 | `theorem` | [no_homeomorph_image_of_disconnected_connected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MaterialTopologyNamespaced.lean/declarations/no-homeomorph-image-of-disconnected-connected.md) | 60 | `result-track:1e4c138ecf4e2a6a69ea597f555baaf00ff8509cd51bd777b053346cd4192c43` |
+| 6 | `theorem` | [no_interface_homeomorph_of_connected_disconnected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MaterialTopologyNamespaced.lean/declarations/no-interface-homeomorph-of-connected-disconnected.md) | 70 | `result-track:0470fadc46b7291e09cab43e780a1340935939e6dce1870f80b3327ec80e2cb8` |
+| 7 | `theorem` | [no_fixed_interface_homeomorph_family](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MaterialTopologyNamespaced.lean/declarations/no-fixed-interface-homeomorph-family.md) | 80 | `result-track:1d64242dc72987b035987eb3c478de80b6cdfcc76b84bf17eae43f5c6f8f3b1b` |
+| 8 | `theorem` | [empty_interface_is_preconnected](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/MaterialTopologyNamespaced.lean/declarations/empty-interface-is-preconnected.md) | 95 | `result-track:3206694158b1066a66bf87983479ecb427fef8338f6ebbb45a8960d5806df881` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

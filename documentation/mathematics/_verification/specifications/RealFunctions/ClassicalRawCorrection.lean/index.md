@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/ClassicalRawCorrection.lean/index.md) · [Full source](../../../../RealFunctions/ClassicalRawCorrection.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ClassicalRawCorrection.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ClassicalRawCorrection.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.Real.ClassicalRieszCorrection`](../../../../MeasureAndIntegration/ClassicalRieszCorrection.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.Analysis.Real.ClassicalRieszCorrection`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ClassicalRieszCorrection.lean/index.md) — import line 3; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,8 +57,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [slope_eq_raw_log](../../../../RealFunctions/ClassicalRawCorrection.lean/declarations/slope-eq-raw-log.md) | 13 | `result-track:170fe5818e859cc46b498d17bda7fff697a8b49d3170b8a7246162a86f84f7e9` |
-| 2 | `theorem` | [slope_pos_le](../../../../RealFunctions/ClassicalRawCorrection.lean/declarations/slope-pos-le.md) | 23 | `result-track:94f99d7f47ad3631fae59ec4254f99ae53c5a3ac8539b2d492f20b2b6df6686a` |
+| 1 | `theorem` | [slope_eq_raw_log](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ClassicalRawCorrection.lean/declarations/slope-eq-raw-log.md) | 13 | `result-track:170fe5818e859cc46b498d17bda7fff697a8b49d3170b8a7246162a86f84f7e9` |
+| 2 | `theorem` | [slope_pos_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/ClassicalRawCorrection.lean/declarations/slope-pos-le.md) | 23 | `result-track:94f99d7f47ad3631fae59ec4254f99ae53c5a3ac8539b2d492f20b2b6df6686a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

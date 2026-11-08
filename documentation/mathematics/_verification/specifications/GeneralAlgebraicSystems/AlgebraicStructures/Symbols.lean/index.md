@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Symbols.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Symbols.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Symbols.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Symbols.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [symbols](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Symbols.lean/declarations/symbols.md) | 22 | `declaration-track:303ac1f6c36391ddcd1d3c938ad6bcd021cd28851ad8b9f5baa3761118744abc` |
-| 2 | `theorem` | [symbols_one](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Symbols.lean/declarations/symbols-one.md) | 25 | `result-track:d3a1f42fa6ed9d697db9058a38151ba34be3790fe0d127e358364a78fc57ee8e` |
-| 3 | `theorem` | [symbols_of](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Symbols.lean/declarations/symbols-of.md) | 28 | `result-track:f284f6a7ff2652e23ff17804e62ff27f0eedc2a4b885163517630bd2fb4d842a` |
-| 4 | `theorem` | [symbols_mul](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Symbols.lean/declarations/symbols-mul.md) | 31 | `result-track:7152d02c7b6b8161f69fd4eca7ebce5fee3ba0e0813b7052aa8f7af6767e0e0f` |
-| 5 | `theorem` | [mem_symbols](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Symbols.lean/declarations/mem-symbols.md) | 36 | `result-track:ddde03becb88757a4fefda916e331aa12b834239f687a08e134f7c39698437f8` |
+| 1 | `def` | [symbols](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Symbols.lean/declarations/symbols.md) | 22 | `declaration-track:303ac1f6c36391ddcd1d3c938ad6bcd021cd28851ad8b9f5baa3761118744abc` |
+| 2 | `theorem` | [symbols_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Symbols.lean/declarations/symbols-one.md) | 25 | `result-track:d3a1f42fa6ed9d697db9058a38151ba34be3790fe0d127e358364a78fc57ee8e` |
+| 3 | `theorem` | [symbols_of](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Symbols.lean/declarations/symbols-of.md) | 28 | `result-track:f284f6a7ff2652e23ff17804e62ff27f0eedc2a4b885163517630bd2fb4d842a` |
+| 4 | `theorem` | [symbols_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Symbols.lean/declarations/symbols-mul.md) | 31 | `result-track:7152d02c7b6b8161f69fd4eca7ebce5fee3ba0e0813b7052aa8f7af6767e0e0f` |
+| 5 | `theorem` | [mem_symbols](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Symbols.lean/declarations/mem-symbols.md) | 36 | `result-track:ddde03becb88757a4fefda916e331aa12b834239f687a08e134f7c39698437f8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FixtureNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FixtureNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FixtureNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FixtureNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,9 +59,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [A](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FixtureNamespaced.lean/declarations/a.md) | 17 | `declaration-track:58b9ab876a47c958bc6cf0792fbeb680a3874d7a390115c47bbb54927f4aae44` |
-| 2 | `theorem` | [six_ordered_minors](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FixtureNamespaced.lean/declarations/six-ordered-minors.md) | 20 | `result-track:57bf502b86c39c446238658837225444959b153e4660b4eaa21207667ab1b9c6` |
-| 3 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FixtureNamespaced.lean/declarations/example.md) | 30 | `declaration-track:cb3bbe48cbb73d90eab12c9e3f4b0254c6a0fdc871b870e937fb3799b9edfc75` |
+| 1 | `def` | [A](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FixtureNamespaced.lean/declarations/a.md) | 17 | `declaration-track:58b9ab876a47c958bc6cf0792fbeb680a3874d7a390115c47bbb54927f4aae44` |
+| 2 | `theorem` | [six_ordered_minors](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FixtureNamespaced.lean/declarations/six-ordered-minors.md) | 20 | `result-track:57bf502b86c39c446238658837225444959b153e4660b4eaa21207667ab1b9c6` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FixtureNamespaced.lean/declarations/example.md) | 30 | `declaration-track:cb3bbe48cbb73d90eab12c9e3f4b0254c6a0fdc871b870e937fb3799b9edfc75` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

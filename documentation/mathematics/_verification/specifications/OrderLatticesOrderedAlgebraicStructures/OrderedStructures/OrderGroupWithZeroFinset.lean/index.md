@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderGroupWithZeroFinset.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderGroupWithZeroFinset.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderGroupWithZeroFinset.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderGroupWithZeroFinset.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [sup_mul_le_mul_sup_of_nonneg](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderGroupWithZeroFinset.lean/declarations/sup-mul-le-mul-sup-of-nonneg.md) | 20 | `result-track:95138a5a1007a3b7f3700a27b1ed3c5da05b6e27da8452ac5e5de37a59577ae2` |
-| 2 | `lemma` | [mul_inf_le_inf_mul_of_nonneg](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderGroupWithZeroFinset.lean/declarations/mul-inf-le-inf-mul-of-nonneg.md) | 25 | `result-track:fa95f1a48b3082cd8d1ff68493b57550e2c563095dbcb7e71adcc90d4d088d7e` |
-| 3 | `lemma` | [sup'_mul_le_mul_sup'_of_nonneg](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderGroupWithZeroFinset.lean/declarations/sup-mul-le-mul-sup-of-nonneg-source-edition-2.md) | 29 | `result-track:aae22caef721611d514f0e499cf0f6b4a6e51974c05e3c818798bfbabfdde19e` |
-| 4 | `lemma` | [inf'_mul_le_mul_inf'_of_nonneg](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderGroupWithZeroFinset.lean/declarations/inf-mul-le-mul-inf-of-nonneg.md) | 35 | `result-track:bd709b7ff95ad4a1f621e0dfbafea2a5f96fcd4ecab2331172a4a50a4c73544f` |
-| 5 | `lemma` | [sup'_mul₀](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderGroupWithZeroFinset.lean/declarations/sup-mul.md) | 45 | `result-track:a0c51404276b57dbadc92b8bf66634389b1caab9f94bf4f2881b7c9f4d6a8221` |
-| 6 | `lemma` | [mul₀_sup'](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderGroupWithZeroFinset.lean/declarations/mul-sup.md) | 49 | `result-track:2d38663d633a4aa60354fc1afe0f24086238af573fe065f77397f09adadb7c36` |
-| 7 | `lemma` | [sup'_div₀](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderGroupWithZeroFinset.lean/declarations/sup-div-source-edition-2.md) | 52 | `result-track:b93f57e529826d73c114c2c6287dacffaea99cc46b78b67d0c7f06102c317b00` |
-| 8 | `lemma` | [sup_div₀](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderGroupWithZeroFinset.lean/declarations/sup-div.md) | 58 | `result-track:97842b157e59b4e494dfd095972bdd49c223b6861239f7443da51f889e5ab6f7` |
+| 1 | `lemma` | [sup_mul_le_mul_sup_of_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderGroupWithZeroFinset.lean/declarations/sup-mul-le-mul-sup-of-nonneg.md) | 20 | `result-track:95138a5a1007a3b7f3700a27b1ed3c5da05b6e27da8452ac5e5de37a59577ae2` |
+| 2 | `lemma` | [mul_inf_le_inf_mul_of_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderGroupWithZeroFinset.lean/declarations/mul-inf-le-inf-mul-of-nonneg.md) | 25 | `result-track:fa95f1a48b3082cd8d1ff68493b57550e2c563095dbcb7e71adcc90d4d088d7e` |
+| 3 | `lemma` | [sup'_mul_le_mul_sup'_of_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderGroupWithZeroFinset.lean/declarations/sup-mul-le-mul-sup-of-nonneg-source-edition-2.md) | 29 | `result-track:aae22caef721611d514f0e499cf0f6b4a6e51974c05e3c818798bfbabfdde19e` |
+| 4 | `lemma` | [inf'_mul_le_mul_inf'_of_nonneg](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderGroupWithZeroFinset.lean/declarations/inf-mul-le-mul-inf-of-nonneg.md) | 35 | `result-track:bd709b7ff95ad4a1f621e0dfbafea2a5f96fcd4ecab2331172a4a50a4c73544f` |
+| 5 | `lemma` | [sup'_mul₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderGroupWithZeroFinset.lean/declarations/sup-mul.md) | 45 | `result-track:a0c51404276b57dbadc92b8bf66634389b1caab9f94bf4f2881b7c9f4d6a8221` |
+| 6 | `lemma` | [mul₀_sup'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderGroupWithZeroFinset.lean/declarations/mul-sup.md) | 49 | `result-track:2d38663d633a4aa60354fc1afe0f24086238af573fe065f77397f09adadb7c36` |
+| 7 | `lemma` | [sup'_div₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderGroupWithZeroFinset.lean/declarations/sup-div-source-edition-2.md) | 52 | `result-track:b93f57e529826d73c114c2c6287dacffaea99cc46b78b67d0c7f06102c317b00` |
+| 8 | `lemma` | [sup_div₀](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderGroupWithZeroFinset.lean/declarations/sup-div.md) | 58 | `result-track:97842b157e59b4e494dfd095972bdd49c223b6861239f7443da51f889e5ab6f7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

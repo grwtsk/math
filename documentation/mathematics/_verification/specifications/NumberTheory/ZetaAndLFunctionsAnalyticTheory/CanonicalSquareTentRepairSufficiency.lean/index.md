@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentRepairSufficiency.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentRepairSufficiency.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentRepairSufficiency.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentRepairSufficiency.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentRepairNecessity`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentRepairNecessity.lean/index.md) — import line 6; pinned internal source present.
-- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentThreeMomentUniqueDecoder`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentThreeMomentUniqueDecoder.lean/index.md) — import line 7; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentRepairNecessity`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentRepairNecessity.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentThreeMomentUniqueDecoder`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentThreeMomentUniqueDecoder.lean/index.md) — import line 7; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [augmented_injective_of_third_fiber_detection](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentRepairSufficiency.lean/declarations/augmented-injective-of-third-fiber-detection.md) | 35 | `result-track:5b505f357bf61a2ae5cf3558cd34431dd824729175e524d47c0abee13a337981` |
-| 2 | `theorem` | [existsUnique_decoder_of_third_fiber_detection](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentRepairSufficiency.lean/declarations/existsunique-decoder-of-third-fiber-detection.md) | 52 | `result-track:c43092163654ffb9258136e4f9e64aa9acd9c4a01f708efcc387b0cdf35d340a` |
+| 1 | `theorem` | [augmented_injective_of_third_fiber_detection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentRepairSufficiency.lean/declarations/augmented-injective-of-third-fiber-detection.md) | 35 | `result-track:5b505f357bf61a2ae5cf3558cd34431dd824729175e524d47c0abee13a337981` |
+| 2 | `theorem` | [existsUnique_decoder_of_third_fiber_detection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalSquareTentRepairSufficiency.lean/declarations/existsunique-decoder-of-third-fiber-detection.md) | 52 | `result-track:c43092163654ffb9258136e4f9e64aa9acd9c4a01f708efcc387b0cdf35d340a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

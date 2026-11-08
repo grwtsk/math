@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/Normalization.lean/index.md) · [Full source](../../../../MeasureAndIntegration/Normalization.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Normalization.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Normalization.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [thetaPhi_complex_even_moment_eq](../../../../MeasureAndIntegration/Normalization.lean/declarations/thetaphi-complex-even-moment-eq.md) | 11 | `result-track:0d8825632ecb1839f071cbfa6197c92926dc900bb82136f544048ce115641342` |
-| 2 | `theorem` | [thetaPhi_evenBasis_integral_Ici_eq_Ioi](../../../../MeasureAndIntegration/Normalization.lean/declarations/thetaphi-evenbasis-integral-ici-eq-ioi.md) | 18 | `result-track:9bf3634e617ac796c0b161967cdc86be2d6e5934c831eb12b641e1f9d0a0ff42` |
-| 3 | `theorem` | [coefficient_eq_thetaPhi_Ioi_of_even_derivative](../../../../MeasureAndIntegration/Normalization.lean/declarations/coefficient-eq-thetaphi-ioi-of-even-derivative.md) | 25 | `result-track:08b55dae93c5815b9924ecf305b14efcc40318d26fe557c613594db39851fb70` |
-| 4 | `theorem` | [coefficient_eq_thetaPhi_Ici_of_even_derivative](../../../../MeasureAndIntegration/Normalization.lean/declarations/coefficient-eq-thetaphi-ici-of-even-derivative.md) | 43 | `result-track:d1c6577f8acffbab359bafe7f844c255605bb2b4ae92631569f0ca94e8d87e23` |
-| 5 | `theorem` | [thetaCoefficientFormula_of_even_derivatives](../../../../MeasureAndIntegration/Normalization.lean/declarations/thetacoefficientformula-of-even-derivatives.md) | 54 | `result-track:32a2bdf6889459504be6ec09924ec9f0310af429ceaa877c483185c5178c3599` |
-| 6 | `theorem` | [coefficient_zero_eq_eight_integral_of_formula](../../../../MeasureAndIntegration/Normalization.lean/declarations/coefficient-zero-eq-eight-integral-of-formula.md) | 62 | `result-track:2c04d370ddacc84bc57ac89588725db7ad80ef896004b8be940cef07d7de8d71` |
-| 7 | `theorem` | [coefficient_one_eq_sixteen_integral_of_formula](../../../../MeasureAndIntegration/Normalization.lean/declarations/coefficient-one-eq-sixteen-integral-of-formula.md) | 69 | `result-track:6d9cf7bd70970c55330fb73ce8be12c1246c1ef1db7c321b6e54804a749dc787` |
-| 8 | `theorem` | [coefficient_zero_pos_of_formula](../../../../MeasureAndIntegration/Normalization.lean/declarations/coefficient-zero-pos-of-formula.md) | 82 | `result-track:ad241417f5afd3103c98ac5e42f030d14d3a295a66138debba1aba8f6619e560` |
+| 1 | `theorem` | [thetaPhi_complex_even_moment_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Normalization.lean/declarations/thetaphi-complex-even-moment-eq.md) | 11 | `result-track:0d8825632ecb1839f071cbfa6197c92926dc900bb82136f544048ce115641342` |
+| 2 | `theorem` | [thetaPhi_evenBasis_integral_Ici_eq_Ioi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Normalization.lean/declarations/thetaphi-evenbasis-integral-ici-eq-ioi.md) | 18 | `result-track:9bf3634e617ac796c0b161967cdc86be2d6e5934c831eb12b641e1f9d0a0ff42` |
+| 3 | `theorem` | [coefficient_eq_thetaPhi_Ioi_of_even_derivative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Normalization.lean/declarations/coefficient-eq-thetaphi-ioi-of-even-derivative.md) | 25 | `result-track:08b55dae93c5815b9924ecf305b14efcc40318d26fe557c613594db39851fb70` |
+| 4 | `theorem` | [coefficient_eq_thetaPhi_Ici_of_even_derivative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Normalization.lean/declarations/coefficient-eq-thetaphi-ici-of-even-derivative.md) | 43 | `result-track:d1c6577f8acffbab359bafe7f844c255605bb2b4ae92631569f0ca94e8d87e23` |
+| 5 | `theorem` | [thetaCoefficientFormula_of_even_derivatives](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Normalization.lean/declarations/thetacoefficientformula-of-even-derivatives.md) | 54 | `result-track:32a2bdf6889459504be6ec09924ec9f0310af429ceaa877c483185c5178c3599` |
+| 6 | `theorem` | [coefficient_zero_eq_eight_integral_of_formula](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Normalization.lean/declarations/coefficient-zero-eq-eight-integral-of-formula.md) | 62 | `result-track:2c04d370ddacc84bc57ac89588725db7ad80ef896004b8be940cef07d7de8d71` |
+| 7 | `theorem` | [coefficient_one_eq_sixteen_integral_of_formula](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Normalization.lean/declarations/coefficient-one-eq-sixteen-integral-of-formula.md) | 69 | `result-track:6d9cf7bd70970c55330fb73ce8be12c1246c1ef1db7c321b6e54804a749dc787` |
+| 8 | `theorem` | [coefficient_zero_pos_of_formula](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/Normalization.lean/declarations/coefficient-zero-pos-of-formula.md) | 82 | `result-track:ad241417f5afd3103c98ac5e42f030d14d3a295a66138debba1aba8f6619e560` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

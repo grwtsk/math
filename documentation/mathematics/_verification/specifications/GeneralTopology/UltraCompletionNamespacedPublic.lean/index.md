@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/UltraCompletionNamespacedPublic.lean/index.md) · [Full source](../../../../GeneralTopology/UltraCompletionNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UltraCompletionNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UltraCompletionNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [IsUniformInducing.isUltraUniformity](../../../../GeneralTopology/UltraCompletionNamespacedPublic.lean/declarations/isuniforminducing-isultrauniformity.md) | 36 | `result-track:6cca478474002aa9c5d0776e599c0f6d20e8f82676ebf85708310c88d806b5cd` |
-| 2 | `instance` | [CauchyFilter.isSymm_gen](../../../../GeneralTopology/UltraCompletionNamespacedPublic.lean/declarations/cauchyfilter-issymm-gen.md) | 40 | `declaration-track:468a3ea97f15295264b243ee677142cb932bd3a17734f7639d1c851e1373d674` |
-| 3 | `instance` | [CauchyFilter.isTrans_gen](../../../../GeneralTopology/UltraCompletionNamespacedPublic.lean/declarations/cauchyfilter-istrans-gen.md) | 44 | `declaration-track:a916d71a687e27d5d66d5033a8c0c3ea18d8ff11870772e58d35b932473bafb9` |
-| 4 | `instance` | [IsUltraUniformity.cauchyFilter](../../../../GeneralTopology/UltraCompletionNamespacedPublic.lean/declarations/isultrauniformity-cauchyfilter.md) | 47 | `declaration-track:2ba2c3166b4c9353dee8fab59cda02280f985e23ffc503eb07d19e2ff179ae4f` |
-| 5 | `lemma` | [IsUltraUniformity.cauchyFilter_iff](../../../../GeneralTopology/UltraCompletionNamespacedPublic.lean/declarations/isultrauniformity-cauchyfilter-iff.md) | 53 | `result-track:57dc2b9776f013371ea6ee316cfbf5014e6dd99160a995e1f6cbe1f1ceac86f1` |
-| 6 | `instance` | [IsUltraUniformity.separationQuotient](../../../../GeneralTopology/UltraCompletionNamespacedPublic.lean/declarations/isultrauniformity-separationquotient.md) | 58 | `declaration-track:b45fdfabca9b1ef57e40ec5371b9a88a622c908dd2c96602d3ba795a2f21c263` |
-| 7 | `lemma` | [IsUltraUniformity.separationQuotient_iff](../../../../GeneralTopology/UltraCompletionNamespacedPublic.lean/declarations/isultrauniformity-separationquotient-iff.md) | 77 | `result-track:eb1d4785c39aba5dac7c0ea139146b52d3216b22281d860c2aea3826ed202781` |
-| 8 | `lemma` | [IsUltraUniformity.completion_iff](../../../../GeneralTopology/UltraCompletionNamespacedPublic.lean/declarations/isultrauniformity-completion-iff.md) | 82 | `result-track:a8fd652193a3dcc8a0a766f372ebd541f0cccb80e5e88ff4aad56c6c951c4993` |
-| 9 | `instance` | [IsUltraUniformity.completion](../../../../GeneralTopology/UltraCompletionNamespacedPublic.lean/declarations/isultrauniformity-completion.md) | 87 | `declaration-track:4ce06902d8fd5bb3237f3bf6c07a21754d64d0b5454e13e0937b4b31d4e65e5a` |
+| 1 | `lemma` | [IsUniformInducing.isUltraUniformity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UltraCompletionNamespacedPublic.lean/declarations/isuniforminducing-isultrauniformity.md) | 36 | `result-track:6cca478474002aa9c5d0776e599c0f6d20e8f82676ebf85708310c88d806b5cd` |
+| 2 | `instance` | [CauchyFilter.isSymm_gen](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UltraCompletionNamespacedPublic.lean/declarations/cauchyfilter-issymm-gen.md) | 40 | `declaration-track:468a3ea97f15295264b243ee677142cb932bd3a17734f7639d1c851e1373d674` |
+| 3 | `instance` | [CauchyFilter.isTrans_gen](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UltraCompletionNamespacedPublic.lean/declarations/cauchyfilter-istrans-gen.md) | 44 | `declaration-track:a916d71a687e27d5d66d5033a8c0c3ea18d8ff11870772e58d35b932473bafb9` |
+| 4 | `instance` | [IsUltraUniformity.cauchyFilter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UltraCompletionNamespacedPublic.lean/declarations/isultrauniformity-cauchyfilter.md) | 47 | `declaration-track:2ba2c3166b4c9353dee8fab59cda02280f985e23ffc503eb07d19e2ff179ae4f` |
+| 5 | `lemma` | [IsUltraUniformity.cauchyFilter_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UltraCompletionNamespacedPublic.lean/declarations/isultrauniformity-cauchyfilter-iff.md) | 53 | `result-track:57dc2b9776f013371ea6ee316cfbf5014e6dd99160a995e1f6cbe1f1ceac86f1` |
+| 6 | `instance` | [IsUltraUniformity.separationQuotient](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UltraCompletionNamespacedPublic.lean/declarations/isultrauniformity-separationquotient.md) | 58 | `declaration-track:b45fdfabca9b1ef57e40ec5371b9a88a622c908dd2c96602d3ba795a2f21c263` |
+| 7 | `lemma` | [IsUltraUniformity.separationQuotient_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UltraCompletionNamespacedPublic.lean/declarations/isultrauniformity-separationquotient-iff.md) | 77 | `result-track:eb1d4785c39aba5dac7c0ea139146b52d3216b22281d860c2aea3826ed202781` |
+| 8 | `lemma` | [IsUltraUniformity.completion_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UltraCompletionNamespacedPublic.lean/declarations/isultrauniformity-completion-iff.md) | 82 | `result-track:a8fd652193a3dcc8a0a766f372ebd541f0cccb80e5e88ff4aad56c6c951c4993` |
+| 9 | `instance` | [IsUltraUniformity.completion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/UltraCompletionNamespacedPublic.lean/declarations/isultrauniformity-completion.md) | 87 | `declaration-track:4ce06902d8fd5bb3237f3bf6c07a21754d64d0b5454e13e0937b4b31d4e65e5a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

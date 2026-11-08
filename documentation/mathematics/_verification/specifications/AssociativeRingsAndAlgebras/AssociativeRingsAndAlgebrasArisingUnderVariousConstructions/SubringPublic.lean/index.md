@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/SubringPublic.lean/index.md) · [Full source](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/SubringPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/SubringPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/SubringPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [mem_map_rangeS](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/SubringPublic.lean/declarations/mem-map-ranges.md) | 33 | `result-track:b398cb90ebc853c865514601ed26427f87b44e0050d7bdb8c751a36559953f6b` |
-| 2 | `theorem` | [notMem_map_rangeS](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/SubringPublic.lean/declarations/notmem-map-ranges.md) | 46 | `result-track:e1a63bb06699cce364975c2d6e5942c8955768549770de43bb83e19d6894623a` |
-| 3 | `theorem` | [mem_map_range](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/SubringPublic.lean/declarations/mem-map-range.md) | 49 | `result-track:a864500ff13303d14c8c7a56b3a0c48552f5bced73b0446edfa27fcf16390795` |
-| 4 | `theorem` | [notMem_map_range](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/SubringPublic.lean/declarations/notmem-map-range.md) | 53 | `result-track:55a66a613f0d05910958d1e3b237e857e0ded1a2239d9cb4e1a497b7361846e7` |
+| 1 | `theorem` | [mem_map_rangeS](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/SubringPublic.lean/declarations/mem-map-ranges.md) | 33 | `result-track:b398cb90ebc853c865514601ed26427f87b44e0050d7bdb8c751a36559953f6b` |
+| 2 | `theorem` | [notMem_map_rangeS](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/SubringPublic.lean/declarations/notmem-map-ranges.md) | 46 | `result-track:e1a63bb06699cce364975c2d6e5942c8955768549770de43bb83e19d6894623a` |
+| 3 | `theorem` | [mem_map_range](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/SubringPublic.lean/declarations/mem-map-range.md) | 49 | `result-track:a864500ff13303d14c8c7a56b3a0c48552f5bced73b0446edfa27fcf16390795` |
+| 4 | `theorem` | [notMem_map_range](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/SubringPublic.lean/declarations/notmem-map-range.md) | 53 | `result-track:55a66a613f0d05910958d1e3b237e857e0ded1a2239d9cb4e1a497b7361846e7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

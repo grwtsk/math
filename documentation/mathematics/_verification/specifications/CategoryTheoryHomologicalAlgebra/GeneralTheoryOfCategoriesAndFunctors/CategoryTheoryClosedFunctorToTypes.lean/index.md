@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryClosedFunctorToTypes.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryClosedFunctorToTypes.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryClosedFunctorToTypes.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryClosedFunctorToTypes.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [functorHomEquiv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryClosedFunctorToTypes.lean/declarations/functorhomequiv.md) | 33 | `declaration-track:b03d3e8d3161ef98b8142a6c567c19fea7215d8f3710f6186ec845bdfc18e05e` |
-| 2 | `def` | [rightAdj_map](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryClosedFunctorToTypes.lean/declarations/rightadj-map.md) | 39 | `declaration-track:19af705ab68c0722a7d765ec8662bd788b668de8bca63f878591bb212d8adb69` |
-| 3 | `def` | [rightAdj](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryClosedFunctorToTypes.lean/declarations/rightadj.md) | 49 | `declaration-track:ec68d9338135980edd9f67231c18f04ab3561fd5fe3a3d5e36700612fab89218` |
-| 4 | `def` | [adj](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryClosedFunctorToTypes.lean/declarations/adj.md) | 54 | `declaration-track:ec6c59006cecf6a4ee2ac3ef85b14660f0ad92d7f48edf1ba10a6b260bc98840` |
-| 5 | `instance` | [closed](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryClosedFunctorToTypes.lean/declarations/closed.md) | 63 | `declaration-track:6a177c5b8f3ec82ebdebf33302653b0cb894c6d3faeb72d246aeebe583f922c6` |
-| 6 | `instance` | [monoidalClosed](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryClosedFunctorToTypes.lean/declarations/monoidalclosed.md) | 67 | `declaration-track:d9278ec544bcbfec741d308061c0fbba02c3ce83a4ef56894f51801beff2756c` |
+| 1 | `def` | [functorHomEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryClosedFunctorToTypes.lean/declarations/functorhomequiv.md) | 33 | `declaration-track:b03d3e8d3161ef98b8142a6c567c19fea7215d8f3710f6186ec845bdfc18e05e` |
+| 2 | `def` | [rightAdj_map](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryClosedFunctorToTypes.lean/declarations/rightadj-map.md) | 39 | `declaration-track:19af705ab68c0722a7d765ec8662bd788b668de8bca63f878591bb212d8adb69` |
+| 3 | `def` | [rightAdj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryClosedFunctorToTypes.lean/declarations/rightadj.md) | 49 | `declaration-track:ec68d9338135980edd9f67231c18f04ab3561fd5fe3a3d5e36700612fab89218` |
+| 4 | `def` | [adj](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryClosedFunctorToTypes.lean/declarations/adj.md) | 54 | `declaration-track:ec6c59006cecf6a4ee2ac3ef85b14660f0ad92d7f48edf1ba10a6b260bc98840` |
+| 5 | `instance` | [closed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryClosedFunctorToTypes.lean/declarations/closed.md) | 63 | `declaration-track:6a177c5b8f3ec82ebdebf33302653b0cb894c6d3faeb72d246aeebe583f922c6` |
+| 6 | `instance` | [monoidalClosed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryClosedFunctorToTypes.lean/declarations/monoidalclosed.md) | 67 | `declaration-track:d9278ec544bcbfec741d308061c0fbba02c3ce83a4ef56894f51801beff2756c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

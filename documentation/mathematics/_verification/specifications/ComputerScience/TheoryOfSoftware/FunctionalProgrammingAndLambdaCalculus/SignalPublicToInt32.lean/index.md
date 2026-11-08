@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SignalPublicToInt32.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SignalPublicToInt32.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SignalPublicToInt32.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SignalPublicToInt32.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [Signal](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SignalPublicToInt32.lean/declarations/signal.md) | 24 | `declaration-track:9dfbd736aec6bd822e3677a02c1b2f75b75dc586b634ffb3d038042fbd114c23` |
-| 2 | `def` | [toInt32](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SignalPublicToInt32.lean/declarations/toint32.md) | 165 | `declaration-track:07cf8e6f994e1c441ffc8f08e03a1793e2a8ceda015656ca6c4e790d075c3730` |
-| 3 | `structure` | [Waiter](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SignalPublicToInt32.lean/declarations/waiter.md) | 192 | `declaration-track:afcf91cf1c6fa86e235509eec2d97bd5e2ba117aaf2d9d2441d16caa6612e181` |
-| 4 | `def` | [mk](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SignalPublicToInt32.lean/declarations/mk.md) | 203 | `declaration-track:76d316d803e32d76a430530d3c12ff82ac2a65e39ef58d314cc69962b0d9d12f` |
-| 5 | `def` | [wait](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SignalPublicToInt32.lean/declarations/wait.md) | 216 | `declaration-track:aa602534b9d25851ac35833822a13d32f871b57f4b0dfecff864c00b2b5e9c97` |
-| 6 | `def` | [stop](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SignalPublicToInt32.lean/declarations/stop.md) | 228 | `declaration-track:886be9a1e1e466b77f945d0f0c51cf028dd2335c97bb06c0313a4b1af7adb5c7` |
-| 7 | `def` | [selector](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SignalPublicToInt32.lean/declarations/selector.md) | 235 | `declaration-track:b54166c91a3172d61e623db90a01fd1aa5e7f6aa2c84b6b25ebcdf084ccb1f21` |
+| 1 | `inductive` | [Signal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SignalPublicToInt32.lean/declarations/signal.md) | 24 | `declaration-track:9dfbd736aec6bd822e3677a02c1b2f75b75dc586b634ffb3d038042fbd114c23` |
+| 2 | `def` | [toInt32](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SignalPublicToInt32.lean/declarations/toint32.md) | 165 | `declaration-track:07cf8e6f994e1c441ffc8f08e03a1793e2a8ceda015656ca6c4e790d075c3730` |
+| 3 | `structure` | [Waiter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SignalPublicToInt32.lean/declarations/waiter.md) | 192 | `declaration-track:afcf91cf1c6fa86e235509eec2d97bd5e2ba117aaf2d9d2441d16caa6612e181` |
+| 4 | `def` | [mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SignalPublicToInt32.lean/declarations/mk.md) | 203 | `declaration-track:76d316d803e32d76a430530d3c12ff82ac2a65e39ef58d314cc69962b0d9d12f` |
+| 5 | `def` | [wait](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SignalPublicToInt32.lean/declarations/wait.md) | 216 | `declaration-track:aa602534b9d25851ac35833822a13d32f871b57f4b0dfecff864c00b2b5e9c97` |
+| 6 | `def` | [stop](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SignalPublicToInt32.lean/declarations/stop.md) | 228 | `declaration-track:886be9a1e1e466b77f945d0f0c51cf028dd2335c97bb06c0313a4b1af7adb5c7` |
+| 7 | `def` | [selector](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/SignalPublicToInt32.lean/declarations/selector.md) | 235 | `declaration-track:b54166c91a3172d61e623db90a01fd1aa5e7f6aa2c84b6b25ebcdf084ccb1f21` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

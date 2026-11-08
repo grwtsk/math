@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorOplax.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorOplax.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorOplax.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorOplax.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,13 +58,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [OplaxFunctor](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorOplax.lean/declarations/oplaxfunctor.md) | 51 | `declaration-track:6ca77cbb739d91327670234f73ddf8a555f3f0a65ebe3c5b9b737c5e9fe85730` |
-| 2 | `lemma` | [mapComp_assoc_right](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorOplax.lean/declarations/mapcomp-assoc-right.md) | 100 | `result-track:cbaba7d18d6f64ee395527840d4314eb3c5e7791f13fbda64708819d0451d831` |
-| 3 | `lemma` | [mapComp_assoc_left](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorOplax.lean/declarations/mapcomp-assoc-left.md) | 108 | `result-track:904039ff511428983e351690826b1000acbdf3e71b83a4394787aaa878cd26a8` |
-| 4 | `def` | [id](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorOplax.lean/declarations/id.md) | 116 | `declaration-track:2b4a22e3c1c6a4474be6388c93e6177104f42b007a8c6ad6644aea21ea77dc55` |
-| 5 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorOplax.lean/declarations/instance.md) | 121 | `declaration-track:715c3b6f04b76ff123dce2e1f8759d9b8df4b6eff52d4ced809bc37fac529bcc` |
-| 6 | `def` | [comp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorOplax.lean/declarations/comp.md) | 126 | `declaration-track:274655713c8d6dbb45210f4b2123cffd41ba6ec1430fea9662f6d89a758438ce` |
-| 7 | `structure` | [PseudoCore](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorOplax.lean/declarations/pseudocore.md) | 157 | `declaration-track:66cff2ea51bda37923e22bd71c0fae7c343a5fc17bfe909254bf0cd5c8772996` |
+| 1 | `structure` | [OplaxFunctor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorOplax.lean/declarations/oplaxfunctor.md) | 51 | `declaration-track:6ca77cbb739d91327670234f73ddf8a555f3f0a65ebe3c5b9b737c5e9fe85730` |
+| 2 | `lemma` | [mapComp_assoc_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorOplax.lean/declarations/mapcomp-assoc-right.md) | 100 | `result-track:cbaba7d18d6f64ee395527840d4314eb3c5e7791f13fbda64708819d0451d831` |
+| 3 | `lemma` | [mapComp_assoc_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorOplax.lean/declarations/mapcomp-assoc-left.md) | 108 | `result-track:904039ff511428983e351690826b1000acbdf3e71b83a4394787aaa878cd26a8` |
+| 4 | `def` | [id](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorOplax.lean/declarations/id.md) | 116 | `declaration-track:2b4a22e3c1c6a4474be6388c93e6177104f42b007a8c6ad6644aea21ea77dc55` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorOplax.lean/declarations/instance.md) | 121 | `declaration-track:715c3b6f04b76ff123dce2e1f8759d9b8df4b6eff52d4ced809bc37fac529bcc` |
+| 6 | `def` | [comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorOplax.lean/declarations/comp.md) | 126 | `declaration-track:274655713c8d6dbb45210f4b2123cffd41ba6ec1430fea9662f6d89a758438ce` |
+| 7 | `structure` | [PseudoCore](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FunctorOplax.lean/declarations/pseudocore.md) | 157 | `declaration-track:66cff2ea51bda37923e22bd71c0fae7c343a5fc17bfe909254bf0cd5c8772996` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

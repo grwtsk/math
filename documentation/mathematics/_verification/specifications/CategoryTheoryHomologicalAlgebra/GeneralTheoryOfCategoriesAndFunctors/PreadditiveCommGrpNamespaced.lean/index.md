@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreadditiveCommGrpNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreadditiveCommGrpNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreadditiveCommGrpNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreadditiveCommGrpNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [toCommGrp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreadditiveCommGrpNamespaced.lean/declarations/tocommgrp.md) | 39 | `declaration-track:67539c35e0b10e9311ce45572c2287b8b0b5aac865907dceff42a0ffee44b73a` |
-| 2 | `theorem` | [monoidal_hom_ext](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreadditiveCommGrpNamespaced.lean/declarations/monoidal-hom-ext.md) | 54 | `result-track:a38c32daf2729204e4aec3c11e1a87ef8480ffd92d6e345e6eadf9e6465b36ea` |
-| 3 | `def` | [commGrpEquivalenceAux](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreadditiveCommGrpNamespaced.lean/declarations/commgrpequivalenceaux.md) | 62 | `declaration-track:b94619d8314abc420bb3724d8a0f75dcb865582e74f918ec6158afb12032bf62` |
-| 4 | `def` | [commGrpEquivalence](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreadditiveCommGrpNamespaced.lean/declarations/commgrpequivalence.md) | 82 | `declaration-track:a619646222b47b138ae59b1346c19949a43e22e8392a7412eb76b6790c34adbc` |
+| 1 | `def` | [toCommGrp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreadditiveCommGrpNamespaced.lean/declarations/tocommgrp.md) | 39 | `declaration-track:67539c35e0b10e9311ce45572c2287b8b0b5aac865907dceff42a0ffee44b73a` |
+| 2 | `theorem` | [monoidal_hom_ext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreadditiveCommGrpNamespaced.lean/declarations/monoidal-hom-ext.md) | 54 | `result-track:a38c32daf2729204e4aec3c11e1a87ef8480ffd92d6e345e6eadf9e6465b36ea` |
+| 3 | `def` | [commGrpEquivalenceAux](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreadditiveCommGrpNamespaced.lean/declarations/commgrpequivalenceaux.md) | 62 | `declaration-track:b94619d8314abc420bb3724d8a0f75dcb865582e74f918ec6158afb12032bf62` |
+| 4 | `def` | [commGrpEquivalence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreadditiveCommGrpNamespaced.lean/declarations/commgrpequivalence.md) | 82 | `declaration-track:a619646222b47b138ae59b1346c19949a43e22e8392a7412eb76b6790c34adbc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

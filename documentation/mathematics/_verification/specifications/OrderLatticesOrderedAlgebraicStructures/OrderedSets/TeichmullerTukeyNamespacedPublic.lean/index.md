@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/TeichmullerTukeyNamespacedPublic.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/TeichmullerTukeyNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/TeichmullerTukeyNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/TeichmullerTukeyNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [IsOfFiniteCharacter](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/TeichmullerTukeyNamespacedPublic.lean/declarations/isoffinitecharacter.md) | 51 | `declaration-track:9b9e00338111e1b9369a03b619871e8761a103347a4cbfbab3d7a7e77b204e1e` |
-| 2 | `theorem` | [IsOfFiniteCharacter.exists_maximal](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/TeichmullerTukeyNamespacedPublic.lean/declarations/isoffinitecharacter-exists-maximal.md) | 54 | `result-track:3fd9428e06edca61c52ebb836ba7f4d29f939db0898dc92a9693ad8c2cd37522` |
+| 1 | `def` | [IsOfFiniteCharacter](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/TeichmullerTukeyNamespacedPublic.lean/declarations/isoffinitecharacter.md) | 51 | `declaration-track:9b9e00338111e1b9369a03b619871e8761a103347a4cbfbab3d7a7e77b204e1e` |
+| 2 | `theorem` | [IsOfFiniteCharacter.exists_maximal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedSets/TeichmullerTukeyNamespacedPublic.lean/declarations/isoffinitecharacter-exists-maximal.md) | 54 | `result-track:3fd9428e06edca61c52ebb836ba7f4d29f939db0898dc92a9693ad8c2cd37522` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/SyntaxAndFraming.lean/index.md) · [Full source](../../../../Combinatorics/SyntaxAndFraming.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SyntaxAndFraming.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SyntaxAndFraming.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,17 +57,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Utf8Payload](../../../../Combinatorics/SyntaxAndFraming.lean/declarations/utf8payload.md) | 33 | `declaration-track:655c806baafb46d3dbaf89961ea4bd3e6b01ad2b62048e3047466b67be91127e` |
-| 2 | `def` | [lengthPrefixDigits](../../../../Combinatorics/SyntaxAndFraming.lean/declarations/lengthprefixdigits.md) | 39 | `declaration-track:7196f37808b9835f40813339498c5470dae5fd7358eaf53155e35d367535c1fb` |
-| 3 | `def` | [byteDigitsMSB](../../../../Combinatorics/SyntaxAndFraming.lean/declarations/bytedigitsmsb.md) | 43 | `declaration-track:6d2828dbc1dd2c0c4137f151ed0167a06b986295c4c1c00c1ca066aad2a137e0` |
-| 4 | `def` | [payloadDigitsMSB](../../../../Combinatorics/SyntaxAndFraming.lean/declarations/payloaddigitsmsb.md) | 48 | `declaration-track:d0da5ef8368d9f48db0e5678396954c748870c087c6568bf89162c92db885991` |
-| 5 | `structure` | [BitDocument](../../../../Combinatorics/SyntaxAndFraming.lean/declarations/bitdocument.md) | 52 | `declaration-track:b3ca682fca412741924fb344ba9e1912d21f666086f0f32786db47ca08ff8be4` |
-| 6 | `def` | [digitByte](../../../../Combinatorics/SyntaxAndFraming.lean/declarations/digitbyte.md) | 57 | `declaration-track:a255d0b5b1e579c145ed2ada3774f7337932c43714fc8e35f70def83258e4729` |
-| 7 | `def` | [BitDocument.serialize](../../../../Combinatorics/SyntaxAndFraming.lean/declarations/bitdocument-serialize.md) | 62 | `declaration-track:941b2a2d685a2a1e0d9336d37c4e172750a59bcfdc49a8fdb4611dcff7329521` |
-| 8 | `def` | [encodeBitDocument](../../../../Combinatorics/SyntaxAndFraming.lean/declarations/encodebitdocument.md) | 66 | `declaration-track:3a4f84db1a84288ad1e748bb85237f36bea9df583fe1d680b20f226a02d8fb73` |
-| 9 | `theorem` | [lengthPrefixDigits_length](../../../../Combinatorics/SyntaxAndFraming.lean/declarations/lengthprefixdigits-length.md) | 70 | `result-track:cfbb6dd4667a78b382964a53819b2b7f5bad20f93a1ae38eed71c3b876ccb034` |
-| 10 | `theorem` | [byteDigitsMSB_length](../../../../Combinatorics/SyntaxAndFraming.lean/declarations/bytedigitsmsb-length.md) | 75 | `result-track:3d42165a762f1f22449d37de94efe70c14bc5e71829f4723245f753b1a027130` |
-| 11 | `theorem` | [serialize_final_lf](../../../../Combinatorics/SyntaxAndFraming.lean/declarations/serialize-final-lf.md) | 80 | `result-track:df18f00529e05eae23bb95bdf3d7627cfcd9cfaa28028fd4cea858680660dee4` |
+| 1 | `structure` | [Utf8Payload](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SyntaxAndFraming.lean/declarations/utf8payload.md) | 33 | `declaration-track:655c806baafb46d3dbaf89961ea4bd3e6b01ad2b62048e3047466b67be91127e` |
+| 2 | `def` | [lengthPrefixDigits](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SyntaxAndFraming.lean/declarations/lengthprefixdigits.md) | 39 | `declaration-track:7196f37808b9835f40813339498c5470dae5fd7358eaf53155e35d367535c1fb` |
+| 3 | `def` | [byteDigitsMSB](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SyntaxAndFraming.lean/declarations/bytedigitsmsb.md) | 43 | `declaration-track:6d2828dbc1dd2c0c4137f151ed0167a06b986295c4c1c00c1ca066aad2a137e0` |
+| 4 | `def` | [payloadDigitsMSB](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SyntaxAndFraming.lean/declarations/payloaddigitsmsb.md) | 48 | `declaration-track:d0da5ef8368d9f48db0e5678396954c748870c087c6568bf89162c92db885991` |
+| 5 | `structure` | [BitDocument](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SyntaxAndFraming.lean/declarations/bitdocument.md) | 52 | `declaration-track:b3ca682fca412741924fb344ba9e1912d21f666086f0f32786db47ca08ff8be4` |
+| 6 | `def` | [digitByte](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SyntaxAndFraming.lean/declarations/digitbyte.md) | 57 | `declaration-track:a255d0b5b1e579c145ed2ada3774f7337932c43714fc8e35f70def83258e4729` |
+| 7 | `def` | [BitDocument.serialize](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SyntaxAndFraming.lean/declarations/bitdocument-serialize.md) | 62 | `declaration-track:941b2a2d685a2a1e0d9336d37c4e172750a59bcfdc49a8fdb4611dcff7329521` |
+| 8 | `def` | [encodeBitDocument](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SyntaxAndFraming.lean/declarations/encodebitdocument.md) | 66 | `declaration-track:3a4f84db1a84288ad1e748bb85237f36bea9df583fe1d680b20f226a02d8fb73` |
+| 9 | `theorem` | [lengthPrefixDigits_length](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SyntaxAndFraming.lean/declarations/lengthprefixdigits-length.md) | 70 | `result-track:cfbb6dd4667a78b382964a53819b2b7f5bad20f93a1ae38eed71c3b876ccb034` |
+| 10 | `theorem` | [byteDigitsMSB_length](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SyntaxAndFraming.lean/declarations/bytedigitsmsb-length.md) | 75 | `result-track:3d42165a762f1f22449d37de94efe70c14bc5e71829f4723245f753b1a027130` |
+| 11 | `theorem` | [serialize_final_lf](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/SyntaxAndFraming.lean/declarations/serialize-final-lf.md) | 80 | `result-track:df18f00529e05eae23bb95bdf3d7627cfcd9cfaa28028fd4cea858680660dee4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

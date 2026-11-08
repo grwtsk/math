@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/PrimitiveLinearLatticeFoundation.lean/index.md) · [Full source](../../../../NumberTheory/PrimitiveLinearLatticeFoundation.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimitiveLinearLatticeFoundation.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimitiveLinearLatticeFoundation.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,13 +46,13 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.GeometryOfNumbers.PrimitiveLinearBoxCount`](../../../../NumberTheory/PrimitiveLinearBoxCount.lean/index.md) — import line 14; pinned internal source present.
-- [`GRWTSK.GeometryOfNumbers.PrimitiveLinearKernel`](../../../../NumberTheory/PrimitiveLinearKernel.lean/index.md) — import line 15; pinned internal source present.
-- [`GRWTSK.GeometryOfNumbers.PrimitiveLinearUnimodularFrame`](../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PrimitiveLinearUnimodularFrame.lean/index.md) — import line 16; pinned internal source present.
-- [`GRWTSK.GeometryOfNumbers.PrimitiveLinearScaledArea`](../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PrimitiveLinearScaledArea.lean/index.md) — import line 17; pinned internal source present.
-- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.ExceptionalSetGeometryLatticeInput`](../../../../NumberTheory/DiophantineEquations/ExceptionalSetGeometryLatticeInput.lean/index.md) — import line 18; pinned internal source present.
-- [`GRWTSK.GeometryOfNumbers.Checks.PrimitiveLinearBoxControls`](../../../../NumberTheory/PrimitiveLinearBoxControls.lean/index.md) — import line 19; pinned internal source present.
-- [`GRWTSK.GeometryOfNumbers.Checks.PrimitiveLinearFrameControls`](../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PrimitiveLinearFrameControls.lean/index.md) — import line 20; pinned internal source present.
+- [`GRWTSK.GeometryOfNumbers.PrimitiveLinearBoxCount`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimitiveLinearBoxCount.lean/index.md) — import line 14; pinned internal source present.
+- [`GRWTSK.GeometryOfNumbers.PrimitiveLinearKernel`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimitiveLinearKernel.lean/index.md) — import line 15; pinned internal source present.
+- [`GRWTSK.GeometryOfNumbers.PrimitiveLinearUnimodularFrame`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PrimitiveLinearUnimodularFrame.lean/index.md) — import line 16; pinned internal source present.
+- [`GRWTSK.GeometryOfNumbers.PrimitiveLinearScaledArea`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PrimitiveLinearScaledArea.lean/index.md) — import line 17; pinned internal source present.
+- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.ExceptionalSetGeometryLatticeInput`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/DiophantineEquations/ExceptionalSetGeometryLatticeInput.lean/index.md) — import line 18; pinned internal source present.
+- [`GRWTSK.GeometryOfNumbers.Checks.PrimitiveLinearBoxControls`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/PrimitiveLinearBoxControls.lean/index.md) — import line 19; pinned internal source present.
+- [`GRWTSK.GeometryOfNumbers.Checks.PrimitiveLinearFrameControls`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PrimitiveLinearFrameControls.lean/index.md) — import line 20; pinned internal source present.
 
 ## Top results and three-degree verification metric
 

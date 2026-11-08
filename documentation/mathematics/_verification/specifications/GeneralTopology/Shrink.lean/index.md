@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/Shrink.lean/index.md) · [Full source](../../../../GeneralTopology/Shrink.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Shrink.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Shrink.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../GeneralTopology/Shrink.lean/declarations/instance.md) | 18 | `declaration-track:5a96074d2596c9d103e0e7f4867b23af31de79cc9ee00b82eaf6ce9567fb3a3f` |
-| 2 | `def` | [homeomorph](../../../../GeneralTopology/Shrink.lean/declarations/homeomorph.md) | 24 | `declaration-track:548e4cbfe4892f223864fafeda1801690d4f1c4dd4f5531f92f251af699ea213` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Shrink.lean/declarations/instance.md) | 18 | `declaration-track:5a96074d2596c9d103e0e7f4867b23af31de79cc9ee00b82eaf6ce9567fb3a3f` |
+| 2 | `def` | [homeomorph](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Shrink.lean/declarations/homeomorph.md) | 24 | `declaration-track:548e4cbfe4892f223864fafeda1801690d4f1c4dd4f5531f92f251af699ea213` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

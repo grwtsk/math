@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FieldTheoryAndPolynomials/PrimeFieldPublic.lean/index.md) · [Full source](../../../../FieldTheoryAndPolynomials/PrimeFieldPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/PrimeFieldPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/PrimeFieldPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../FieldTheoryAndPolynomials/PrimeFieldPublic.lean/declarations/instance.md) | 34 | `declaration-track:33fac466c3b6d683af01cc45584865ae46c37faf9526b2592270da2df9417f2b` |
-| 2 | `instance` | [(anonymous)](../../../../FieldTheoryAndPolynomials/PrimeFieldPublic.lean/declarations/instance-source-edition-2.md) | 37 | `declaration-track:3937f283a4cd45c310f4868839bd669eb5da0bc6450b53ba0510abc1117abdbb` |
-| 3 | `theorem` | [Subfield.bot_eq_of_charZero](../../../../FieldTheoryAndPolynomials/PrimeFieldPublic.lean/declarations/subfield-bot-eq-of-charzero.md) | 43 | `result-track:0177d8f0205741d109bb39485f2ba947008c941ad331f19e8867402f9f5e38c8` |
-| 4 | `theorem` | [Subfield.bot_eq_of_zMod_algebra](../../../../FieldTheoryAndPolynomials/PrimeFieldPublic.lean/declarations/subfield-bot-eq-of-zmod-algebra.md) | 53 | `result-track:0ccbb8077bf12750d693e2436b6e8a5b411da6779304b3b14b4e44ce505070b9` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/PrimeFieldPublic.lean/declarations/instance.md) | 34 | `declaration-track:33fac466c3b6d683af01cc45584865ae46c37faf9526b2592270da2df9417f2b` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/PrimeFieldPublic.lean/declarations/instance-source-edition-2.md) | 37 | `declaration-track:3937f283a4cd45c310f4868839bd669eb5da0bc6450b53ba0510abc1117abdbb` |
+| 3 | `theorem` | [Subfield.bot_eq_of_charZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/PrimeFieldPublic.lean/declarations/subfield-bot-eq-of-charzero.md) | 43 | `result-track:0177d8f0205741d109bb39485f2ba947008c941ad331f19e8867402f9f5e38c8` |
+| 4 | `theorem` | [Subfield.bot_eq_of_zMod_algebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FieldTheoryAndPolynomials/PrimeFieldPublic.lean/declarations/subfield-bot-eq-of-zmod-algebra.md) | 53 | `result-track:0ccbb8077bf12750d693e2436b6e8a5b411da6779304b3b14b4e44ce505070b9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

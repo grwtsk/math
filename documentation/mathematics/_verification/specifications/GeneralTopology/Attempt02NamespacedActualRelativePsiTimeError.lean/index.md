@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/Attempt02NamespacedActualRelativePsiTimeError.lean/index.md) · [Full source](../../../../GeneralTopology/Attempt02NamespacedActualRelativePsiTimeError.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Attempt02NamespacedActualRelativePsiTimeError.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Attempt02NamespacedActualRelativePsiTimeError.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,12 +60,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [actualRelativePsiTimeError](../../../../GeneralTopology/Attempt02NamespacedActualRelativePsiTimeError.lean/declarations/actualrelativepsitimeerror.md) | 30 | `declaration-track:b8a22b4f3a5671419d15ca3be57aea6469d378199c4f49719e67720462acf3c7` |
-| 2 | `theorem` | [actualRelativePsiTimeError_eq_one_convolution](../../../../GeneralTopology/Attempt02NamespacedActualRelativePsiTimeError.lean/declarations/actualrelativepsitimeerror-eq-one-convolution.md) | 34 | `result-track:d798842469b1c8b2fbdd5302cc6022bb7bca5f1629dabc6bd11a2a30a36c19b5` |
-| 3 | `theorem` | [actualRelativePsiTimeError_intervalIntegrable](../../../../GeneralTopology/Attempt02NamespacedActualRelativePsiTimeError.lean/declarations/actualrelativepsitimeerror-intervalintegrable.md) | 49 | `result-track:9344163fe1eb79350785d01cdbb1861a99994277c24b758f97e0c7c08acd1e32` |
-| 4 | `theorem` | [actualRelativePsiTimeError_isBigO](../../../../GeneralTopology/Attempt02NamespacedActualRelativePsiTimeError.lean/declarations/actualrelativepsitimeerror-isbigo.md) | 70 | `result-track:f75b9db18cca3b65b6c700768e60871d3696f8a0ce2dc504fc6170acb4c8d0a6` |
-| 5 | `theorem` | [actualRelativePsiTimeError_tendsto_zero](../../../../GeneralTopology/Attempt02NamespacedActualRelativePsiTimeError.lean/declarations/actualrelativepsitimeerror-tendsto-zero.md) | 92 | `result-track:e9f48c71bb85446eed59fe2aed4e3110579e567303ca802385be5fc74e2935a5` |
-| 6 | `theorem` | [actualRelativePsiTimeError_integrableOn](../../../../GeneralTopology/Attempt02NamespacedActualRelativePsiTimeError.lean/declarations/actualrelativepsitimeerror-integrableon.md) | 103 | `result-track:48ddfdb668e344b6df6de70333a4494422dba30be879cb4c06f1d4cb772612de` |
+| 1 | `def` | [actualRelativePsiTimeError](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Attempt02NamespacedActualRelativePsiTimeError.lean/declarations/actualrelativepsitimeerror.md) | 30 | `declaration-track:b8a22b4f3a5671419d15ca3be57aea6469d378199c4f49719e67720462acf3c7` |
+| 2 | `theorem` | [actualRelativePsiTimeError_eq_one_convolution](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Attempt02NamespacedActualRelativePsiTimeError.lean/declarations/actualrelativepsitimeerror-eq-one-convolution.md) | 34 | `result-track:d798842469b1c8b2fbdd5302cc6022bb7bca5f1629dabc6bd11a2a30a36c19b5` |
+| 3 | `theorem` | [actualRelativePsiTimeError_intervalIntegrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Attempt02NamespacedActualRelativePsiTimeError.lean/declarations/actualrelativepsitimeerror-intervalintegrable.md) | 49 | `result-track:9344163fe1eb79350785d01cdbb1861a99994277c24b758f97e0c7c08acd1e32` |
+| 4 | `theorem` | [actualRelativePsiTimeError_isBigO](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Attempt02NamespacedActualRelativePsiTimeError.lean/declarations/actualrelativepsitimeerror-isbigo.md) | 70 | `result-track:f75b9db18cca3b65b6c700768e60871d3696f8a0ce2dc504fc6170acb4c8d0a6` |
+| 5 | `theorem` | [actualRelativePsiTimeError_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Attempt02NamespacedActualRelativePsiTimeError.lean/declarations/actualrelativepsitimeerror-tendsto-zero.md) | 92 | `result-track:e9f48c71bb85446eed59fe2aed4e3110579e567303ca802385be5fc74e2935a5` |
+| 6 | `theorem` | [actualRelativePsiTimeError_integrableOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/Attempt02NamespacedActualRelativePsiTimeError.lean/declarations/actualrelativepsitimeerror-integrableon.md) | 103 | `result-track:48ddfdb668e344b6df6de70333a4494422dba30be879cb4c06f1d4cb772612de` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

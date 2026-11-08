@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/Positivity.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/Positivity.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Positivity.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Positivity.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,14 +59,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [exponentialTerm](../../../../ProbabilityTheoryAndStochasticProcesses/Positivity.lean/declarations/exponentialterm.md) | 30 | `declaration-track:8fc64041f08bb76d6d5733090f2885fb9c1f683e935a332852722ba36cdc1a34` |
-| 2 | `lemma` | [exponentialTerm_hasSum](../../../../ProbabilityTheoryAndStochasticProcesses/Positivity.lean/declarations/exponentialterm-hassum.md) | 34 | `result-track:23260fb21592d64393d87e9538f4cf928563dc47c6284ae08da0156f4623805f` |
-| 3 | `theorem` | [integrable_exp_add_of_summable_moments](../../../../ProbabilityTheoryAndStochasticProcesses/Positivity.lean/declarations/integrable-exp-add-of-summable-moments.md) | 50 | `result-track:9c356992c186dcfce51d982c5033c36b03a7e045314aaecd2caa202c75d6a167` |
-| 4 | `theorem` | [integrable_exp_add_of_summable_mgf_moments](../../../../ProbabilityTheoryAndStochasticProcesses/Positivity.lean/declarations/integrable-exp-add-of-summable-mgf-moments.md) | 89 | `result-track:18f686e0a99a540ab5c3b64e24a442ba705f6a146676745b19e36547453a52ea` |
-| 5 | `lemma` | [iteratedDeriv_complexMGF_real](../../../../ProbabilityTheoryAndStochasticProcesses/Positivity.lean/declarations/iteratedderiv-complexmgf-real.md) | 98 | `result-track:fb74eced53c1f5637bf881350c2eabdc684171601c6e3fbf3f5a7c48d37e3694` |
-| 6 | `theorem` | [integrable_exp_add_of_holomorphic_extension](../../../../ProbabilityTheoryAndStochasticProcesses/Positivity.lean/declarations/integrable-exp-add-of-holomorphic-extension.md) | 108 | `result-track:8c3a8a3c3ff84839abb95eac3c6dc98044e47aa10c8a1b14e172a42d5a13bafe` |
-| 7 | `theorem` | [not_analyticAt_of_finite_convergence_boundary](../../../../ProbabilityTheoryAndStochasticProcesses/Positivity.lean/declarations/not-analyticat-of-finite-convergence-boundary.md) | 139 | `result-track:17e4ff511bab6bafc3dc2664d0218a549fe0ba362c63f00175676754fae56c29` |
-| 8 | `theorem` | [not_analyticAt_laplace_of_finite_abscissa](../../../../ProbabilityTheoryAndStochasticProcesses/Positivity.lean/declarations/not-analyticat-laplace-of-finite-abscissa.md) | 188 | `result-track:2bdd4f9e46eadb5de95078c5392a501d0e1fb0695424a9c12730f56a07c497a3` |
+| 1 | `def` | [exponentialTerm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Positivity.lean/declarations/exponentialterm.md) | 30 | `declaration-track:8fc64041f08bb76d6d5733090f2885fb9c1f683e935a332852722ba36cdc1a34` |
+| 2 | `lemma` | [exponentialTerm_hasSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Positivity.lean/declarations/exponentialterm-hassum.md) | 34 | `result-track:23260fb21592d64393d87e9538f4cf928563dc47c6284ae08da0156f4623805f` |
+| 3 | `theorem` | [integrable_exp_add_of_summable_moments](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Positivity.lean/declarations/integrable-exp-add-of-summable-moments.md) | 50 | `result-track:9c356992c186dcfce51d982c5033c36b03a7e045314aaecd2caa202c75d6a167` |
+| 4 | `theorem` | [integrable_exp_add_of_summable_mgf_moments](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Positivity.lean/declarations/integrable-exp-add-of-summable-mgf-moments.md) | 89 | `result-track:18f686e0a99a540ab5c3b64e24a442ba705f6a146676745b19e36547453a52ea` |
+| 5 | `lemma` | [iteratedDeriv_complexMGF_real](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Positivity.lean/declarations/iteratedderiv-complexmgf-real.md) | 98 | `result-track:fb74eced53c1f5637bf881350c2eabdc684171601c6e3fbf3f5a7c48d37e3694` |
+| 6 | `theorem` | [integrable_exp_add_of_holomorphic_extension](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Positivity.lean/declarations/integrable-exp-add-of-holomorphic-extension.md) | 108 | `result-track:8c3a8a3c3ff84839abb95eac3c6dc98044e47aa10c8a1b14e172a42d5a13bafe` |
+| 7 | `theorem` | [not_analyticAt_of_finite_convergence_boundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Positivity.lean/declarations/not-analyticat-of-finite-convergence-boundary.md) | 139 | `result-track:17e4ff511bab6bafc3dc2664d0218a549fe0ba362c63f00175676754fae56c29` |
+| 8 | `theorem` | [not_analyticAt_laplace_of_finite_abscissa](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ProbabilityTheoryAndStochasticProcesses/Positivity.lean/declarations/not-analyticat-laplace-of-finite-abscissa.md) | 188 | `result-track:2bdd4f9e46eadb5de95078c5392a501d0e1fb0695424a9c12730f56a07c497a3` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

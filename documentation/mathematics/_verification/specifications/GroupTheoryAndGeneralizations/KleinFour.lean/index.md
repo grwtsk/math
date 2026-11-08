@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/KleinFour.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/KleinFour.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/KleinFour.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/KleinFour.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,22 +58,22 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `class` | [IsAddKleinFour](../../../../GroupTheoryAndGeneralizations/KleinFour.lean/declarations/isaddkleinfour.md) | 46 | `declaration-track:583caf2ea5d75f07eb4b16bede0e9756be4299a1c07c693fb4b34b38e76cb3a6` |
-| 2 | `class` | [IsKleinFour](../../../../GroupTheoryAndGeneralizations/KleinFour.lean/declarations/iskleinfour.md) | 52 | `declaration-track:34d8bd40503775a2f53eb9f4c38905082240a671aace9cbd6639f261ea38091e` |
-| 3 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/KleinFour.lean/declarations/instance-source-edition-4.md) | 59 | `declaration-track:f1e4ab4ee1f0ba28968c1f8245a22ae0bbf9592f22949b734d00bfaa265423c3` |
-| 4 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/KleinFour.lean/declarations/instance-source-edition-2.md) | 63 | `declaration-track:2e81a83d495f9123920bfce63534bc6a2401fe443336289853179a0204f1d7d8` |
-| 5 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/KleinFour.lean/declarations/instance-source-edition-3.md) | 67 | `declaration-track:7254995ee2c229e543bd99dee23e1ccd121afdaddb62e86d2506e946efe80eb4` |
-| 6 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/KleinFour.lean/declarations/instance.md) | 71 | `declaration-track:1965d53630de2643d69c231668e2c560628033fb032d41d1694abd570705863c` |
-| 7 | `instance` | [instFinite](../../../../GroupTheoryAndGeneralizations/KleinFour.lean/declarations/instfinite.md) | 80 | `declaration-track:04436e8fcad3bec489cb8d6d508c18ecd24aaeb4c152155b67a34278c336e0e6` |
-| 8 | `lemma` | [card_four'](../../../../GroupTheoryAndGeneralizations/KleinFour.lean/declarations/card-four.md) | 84 | `result-track:6340bf8ce86a7c5be385ca0090fa0ccbd9bfe5853c02e3407f924c906f2775e0` |
-| 9 | `lemma` | [not_isCyclic](../../../../GroupTheoryAndGeneralizations/KleinFour.lean/declarations/not-iscyclic.md) | 93 | `result-track:9c5ef8bb194109fe9cf1e66901b56e970a68888dd8173a6cbd40d4009e257033` |
-| 10 | `lemma` | [inv_eq_self](../../../../GroupTheoryAndGeneralizations/KleinFour.lean/declarations/inv-eq-self.md) | 97 | `result-track:1770eb0fccc05dcec33cd315d9a8b2ac91001a9ddb3b21d555a2c9ec3ec88c59` |
-| 11 | `lemma` | [mul_self](../../../../GroupTheoryAndGeneralizations/KleinFour.lean/declarations/mul-self.md) | 106 | `result-track:5704d831c40d9b2cc9d60f61fc4334f22de160c9eeec3778df850c7eddcd994d` |
-| 12 | `lemma` | [eq_finset_univ](../../../../GroupTheoryAndGeneralizations/KleinFour.lean/declarations/eq-finset-univ.md) | 110 | `result-track:8963d7a0504897fdff995bf3df2f13e9f4a7139c6aad192779e9417c67fdc413` |
-| 13 | `lemma` | [eq_mul_of_ne_all](../../../../GroupTheoryAndGeneralizations/KleinFour.lean/declarations/eq-mul-of-ne-all.md) | 119 | `result-track:18467bcceef367bdbb07af9b22c6b3e2556dd161a9ab05b6ff887378109b1843` |
-| 14 | `def` | [mulEquiv'](../../../../GroupTheoryAndGeneralizations/KleinFour.lean/declarations/mulequiv-source-edition-2.md) | 132 | `declaration-track:fea493fe619f24fe2f832f1fb7838eb4380110b727cb6d6dd971012384d38106` |
-| 15 | `abbrev` | [mulEquiv](../../../../GroupTheoryAndGeneralizations/KleinFour.lean/declarations/mulequiv.md) | 156 | `declaration-track:b9fb5bb7464d84c32bc7ab016b56d5f87de706465a667bc356f92f3a644df215` |
-| 16 | `lemma` | [nonempty_mulEquiv](../../../../GroupTheoryAndGeneralizations/KleinFour.lean/declarations/nonempty-mulequiv.md) | 161 | `result-track:2b7d660401cd0944ac544b1202d3cf955e1686c1a6de6c1f7227d96cc968e960` |
+| 1 | `class` | [IsAddKleinFour](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/KleinFour.lean/declarations/isaddkleinfour.md) | 46 | `declaration-track:583caf2ea5d75f07eb4b16bede0e9756be4299a1c07c693fb4b34b38e76cb3a6` |
+| 2 | `class` | [IsKleinFour](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/KleinFour.lean/declarations/iskleinfour.md) | 52 | `declaration-track:34d8bd40503775a2f53eb9f4c38905082240a671aace9cbd6639f261ea38091e` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/KleinFour.lean/declarations/instance-source-edition-4.md) | 59 | `declaration-track:f1e4ab4ee1f0ba28968c1f8245a22ae0bbf9592f22949b734d00bfaa265423c3` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/KleinFour.lean/declarations/instance-source-edition-2.md) | 63 | `declaration-track:2e81a83d495f9123920bfce63534bc6a2401fe443336289853179a0204f1d7d8` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/KleinFour.lean/declarations/instance-source-edition-3.md) | 67 | `declaration-track:7254995ee2c229e543bd99dee23e1ccd121afdaddb62e86d2506e946efe80eb4` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/KleinFour.lean/declarations/instance.md) | 71 | `declaration-track:1965d53630de2643d69c231668e2c560628033fb032d41d1694abd570705863c` |
+| 7 | `instance` | [instFinite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/KleinFour.lean/declarations/instfinite.md) | 80 | `declaration-track:04436e8fcad3bec489cb8d6d508c18ecd24aaeb4c152155b67a34278c336e0e6` |
+| 8 | `lemma` | [card_four'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/KleinFour.lean/declarations/card-four.md) | 84 | `result-track:6340bf8ce86a7c5be385ca0090fa0ccbd9bfe5853c02e3407f924c906f2775e0` |
+| 9 | `lemma` | [not_isCyclic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/KleinFour.lean/declarations/not-iscyclic.md) | 93 | `result-track:9c5ef8bb194109fe9cf1e66901b56e970a68888dd8173a6cbd40d4009e257033` |
+| 10 | `lemma` | [inv_eq_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/KleinFour.lean/declarations/inv-eq-self.md) | 97 | `result-track:1770eb0fccc05dcec33cd315d9a8b2ac91001a9ddb3b21d555a2c9ec3ec88c59` |
+| 11 | `lemma` | [mul_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/KleinFour.lean/declarations/mul-self.md) | 106 | `result-track:5704d831c40d9b2cc9d60f61fc4334f22de160c9eeec3778df850c7eddcd994d` |
+| 12 | `lemma` | [eq_finset_univ](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/KleinFour.lean/declarations/eq-finset-univ.md) | 110 | `result-track:8963d7a0504897fdff995bf3df2f13e9f4a7139c6aad192779e9417c67fdc413` |
+| 13 | `lemma` | [eq_mul_of_ne_all](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/KleinFour.lean/declarations/eq-mul-of-ne-all.md) | 119 | `result-track:18467bcceef367bdbb07af9b22c6b3e2556dd161a9ab05b6ff887378109b1843` |
+| 14 | `def` | [mulEquiv'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/KleinFour.lean/declarations/mulequiv-source-edition-2.md) | 132 | `declaration-track:fea493fe619f24fe2f832f1fb7838eb4380110b727cb6d6dd971012384d38106` |
+| 15 | `abbrev` | [mulEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/KleinFour.lean/declarations/mulequiv.md) | 156 | `declaration-track:b9fb5bb7464d84c32bc7ab016b56d5f87de706465a667bc356f92f3a644df215` |
+| 16 | `lemma` | [nonempty_mulEquiv](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/KleinFour.lean/declarations/nonempty-mulequiv.md) | 161 | `result-track:2b7d660401cd0944ac544b1202d3cf955e1686c1a6de6c1f7227d96cc968e960` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

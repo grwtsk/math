@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteQuotient.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteQuotient.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteQuotient.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteQuotient.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,11 +61,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [quotientEquivPiSpan](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteQuotient.lean/declarations/quotientequivpispan.md) | 32 | `declaration-track:190bc660667485954a4cd3e75d01515d56fcf989ce2199d1c401a05cd82d71c8` |
-| 2 | `def` | [quotientEquivPiZMod](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteQuotient.lean/declarations/quotientequivpizmod.md) | 78 | `declaration-track:8932938db1eb3d8731ab314787db118dc4307f69882a63af0b0a4ebc8e8716c6` |
-| 3 | `theorem` | [finiteQuotientOfFreeOfRankEq](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteQuotient.lean/declarations/finitequotientoffreeofrankeq.md) | 91 | `result-track:f1f7096db790da91af7d4d00f80813260747a2bba1e80748d66ab8ac7a247f85` |
-| 4 | `def` | [quotientEquivDirectSum](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteQuotient.lean/declarations/quotientequivdirectsum.md) | 108 | `declaration-track:f7342c2448e3fcacb1076d68277fda9da52db6c715cdbea5b48a3a63824d153f` |
-| 5 | `theorem` | [finrank_quotient_eq_sum](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteQuotient.lean/declarations/finrank-quotient-eq-sum.md) | 114 | `result-track:74febdeda546fbd6c38ec230cfb885db196723444ed55171ef3a020ad26c74cc` |
+| 1 | `def` | [quotientEquivPiSpan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteQuotient.lean/declarations/quotientequivpispan.md) | 32 | `declaration-track:190bc660667485954a4cd3e75d01515d56fcf989ce2199d1c401a05cd82d71c8` |
+| 2 | `def` | [quotientEquivPiZMod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteQuotient.lean/declarations/quotientequivpizmod.md) | 78 | `declaration-track:8932938db1eb3d8731ab314787db118dc4307f69882a63af0b0a4ebc8e8716c6` |
+| 3 | `theorem` | [finiteQuotientOfFreeOfRankEq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteQuotient.lean/declarations/finitequotientoffreeofrankeq.md) | 91 | `result-track:f1f7096db790da91af7d4d00f80813260747a2bba1e80748d66ab8ac7a247f85` |
+| 4 | `def` | [quotientEquivDirectSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteQuotient.lean/declarations/quotientequivdirectsum.md) | 108 | `declaration-track:f7342c2448e3fcacb1076d68277fda9da52db6c715cdbea5b48a3a63824d153f` |
+| 5 | `theorem` | [finrank_quotient_eq_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteQuotient.lean/declarations/finrank-quotient-eq-sum.md) | 114 | `result-track:74febdeda546fbd6c38ec230cfb885db196723444ed55171ef3a020ad26c74cc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

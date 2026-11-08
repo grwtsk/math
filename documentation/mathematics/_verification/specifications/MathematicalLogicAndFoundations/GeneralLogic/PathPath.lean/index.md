@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PathPath.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PathPath.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PathPath.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PathPath.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [Path](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PathPath.lean/declarations/path.md) | 21 | `declaration-track:aaca05dab05e5ee6d88a1a058a200f540ab7fcda4b298f4710d47c6cebc4e6c9` |
-| 2 | `def` | [append](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PathPath.lean/declarations/append.md) | 29 | `declaration-track:457b000894900422f79d01b9a13447d14d9f66caae0b0c5368cda2d6be98508b` |
-| 3 | `theorem` | [append_nil](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PathPath.lean/declarations/append-nil.md) | 40 | `result-track:d6b34d67b623688537c4164f25089a1ecbcd94f8f4d824ae5fbe44315c6af97a` |
-| 4 | `theorem` | [nil_append](../../../../../MathematicalLogicAndFoundations/GeneralLogic/PathPath.lean/declarations/nil-append.md) | 51 | `result-track:2ce141002d069d41eba6fe984ad0c4e48beec00cef3a5330a43c2684f3819bac` |
+| 1 | `inductive` | [Path](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PathPath.lean/declarations/path.md) | 21 | `declaration-track:aaca05dab05e5ee6d88a1a058a200f540ab7fcda4b298f4710d47c6cebc4e6c9` |
+| 2 | `def` | [append](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PathPath.lean/declarations/append.md) | 29 | `declaration-track:457b000894900422f79d01b9a13447d14d9f66caae0b0c5368cda2d6be98508b` |
+| 3 | `theorem` | [append_nil](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PathPath.lean/declarations/append-nil.md) | 40 | `result-track:d6b34d67b623688537c4164f25089a1ecbcd94f8f4d824ae5fbe44315c6af97a` |
+| 4 | `theorem` | [nil_append](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/PathPath.lean/declarations/nil-append.md) | 51 | `result-track:2ce141002d069d41eba6fe984ad0c4e48beec00cef3a5330a43c2684f3819bac` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

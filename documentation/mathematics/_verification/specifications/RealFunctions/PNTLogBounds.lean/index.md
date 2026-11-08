@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../RealFunctions/PNTLogBounds.lean/index.md) · [Full source](../../../../RealFunctions/PNTLogBounds.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PNTLogBounds.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PNTLogBounds.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,15 +59,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [log_lower_taylor](../../../../RealFunctions/PNTLogBounds.lean/declarations/log-lower-taylor.md) | 34 | `result-track:127d88120362281791ac72b044dd7b418c3e3e128a080b1a47f91dbe13a55f16` |
-| 2 | `theorem` | [log_ge](../../../../RealFunctions/PNTLogBounds.lean/declarations/log-ge.md) | 70 | `result-track:41ebca24a8fd93ced3c2407c5ee4a94bb7545e4485e529b4d9b0da4834bf7673` |
-| 3 | `theorem` | [log_ge'](../../../../RealFunctions/PNTLogBounds.lean/declarations/log-ge-source-edition-2.md) | 107 | `result-track:c0e20063c22e1e2b688bbe51fbb381048d19c742670efe3c72dbce8a649e7b25` |
-| 4 | `def` | [symmetricLogComb](../../../../RealFunctions/PNTLogBounds.lean/declarations/symmetriclogcomb.md) | 145 | `declaration-track:0defb4fd313a372826fb150d1b2cbd70aa4f90ba928c834ed37e08006d7fa6c7` |
-| 5 | `theorem` | [symmetricLogComb_pos](../../../../RealFunctions/PNTLogBounds.lean/declarations/symmetriclogcomb-pos.md) | 148 | `result-track:60a2f1f50e760c85c0c4e22d98d7793b825534219588286c18e1a8340154f6ca` |
-| 6 | `theorem` | [symmetricLogComb_le_two](../../../../RealFunctions/PNTLogBounds.lean/declarations/symmetriclogcomb-le-two.md) | 182 | `result-track:54a6749d4d9c06823c260cb23302de0d0af4a58c46bc7aad97d76b89f0e3805e` |
-| 7 | `theorem` | [symmetricLogComb_abs_le_two](../../../../RealFunctions/PNTLogBounds.lean/declarations/symmetriclogcomb-abs-le-two.md) | 234 | `result-track:69cd84bb1b0405a1489200583fb37749538095e068cca64dad4f3e9d0ee849b1` |
-| 8 | `theorem` | [symm_inv_log](../../../../RealFunctions/PNTLogBounds.lean/declarations/symm-inv-log.md) | 245 | `result-track:ccea1644158f29a8199b9cb23b56a468a313ac0f0fb40df06a9cd16129484bc5` |
-| 9 | `theorem` | [symm_inv_log_weak](../../../../RealFunctions/PNTLogBounds.lean/declarations/symm-inv-log-weak.md) | 251 | `result-track:2f1d7dc1ef86cf030c03283f7c14c45d6c6111882e780aab8bdd7d93d91c142f` |
+| 1 | `theorem` | [log_lower_taylor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PNTLogBounds.lean/declarations/log-lower-taylor.md) | 34 | `result-track:127d88120362281791ac72b044dd7b418c3e3e128a080b1a47f91dbe13a55f16` |
+| 2 | `theorem` | [log_ge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PNTLogBounds.lean/declarations/log-ge.md) | 70 | `result-track:41ebca24a8fd93ced3c2407c5ee4a94bb7545e4485e529b4d9b0da4834bf7673` |
+| 3 | `theorem` | [log_ge'](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PNTLogBounds.lean/declarations/log-ge-source-edition-2.md) | 107 | `result-track:c0e20063c22e1e2b688bbe51fbb381048d19c742670efe3c72dbce8a649e7b25` |
+| 4 | `def` | [symmetricLogComb](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PNTLogBounds.lean/declarations/symmetriclogcomb.md) | 145 | `declaration-track:0defb4fd313a372826fb150d1b2cbd70aa4f90ba928c834ed37e08006d7fa6c7` |
+| 5 | `theorem` | [symmetricLogComb_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PNTLogBounds.lean/declarations/symmetriclogcomb-pos.md) | 148 | `result-track:60a2f1f50e760c85c0c4e22d98d7793b825534219588286c18e1a8340154f6ca` |
+| 6 | `theorem` | [symmetricLogComb_le_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PNTLogBounds.lean/declarations/symmetriclogcomb-le-two.md) | 182 | `result-track:54a6749d4d9c06823c260cb23302de0d0af4a58c46bc7aad97d76b89f0e3805e` |
+| 7 | `theorem` | [symmetricLogComb_abs_le_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PNTLogBounds.lean/declarations/symmetriclogcomb-abs-le-two.md) | 234 | `result-track:69cd84bb1b0405a1489200583fb37749538095e068cca64dad4f3e9d0ee849b1` |
+| 8 | `theorem` | [symm_inv_log](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PNTLogBounds.lean/declarations/symm-inv-log.md) | 245 | `result-track:ccea1644158f29a8199b9cb23b56a468a313ac0f0fb40df06a9cd16129484bc5` |
+| 9 | `theorem` | [symm_inv_log_weak](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/RealFunctions/PNTLogBounds.lean/declarations/symm-inv-log-weak.md) | 251 | `result-track:2f1d7dc1ef86cf030c03283f7c14c45d6c6111882e780aab8bdd7d93d91c142f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

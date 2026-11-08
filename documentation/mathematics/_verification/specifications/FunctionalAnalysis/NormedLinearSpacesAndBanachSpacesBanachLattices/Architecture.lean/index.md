@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/Architecture.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/Architecture.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/Architecture.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/Architecture.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Architecture](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/Architecture.lean/declarations/architecture.md) | 18 | `declaration-track:d922f5e35b574e66e9e25d5636730c9e6a962dec7342bdf0686b3ad2527fde65` |
-| 2 | `def` | [totalStep](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/Architecture.lean/declarations/totalstep.md) | 60 | `declaration-track:af6a19abee9fc6c748074f819f1b8bf3ea28bec5b5827d023d43912e2c904c72` |
-| 3 | `structure` | [CompletionGuarantees](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/Architecture.lean/declarations/completionguarantees.md) | 80 | `declaration-track:0fa11f41f3351088ceea381349f7ce1cda9b6044e8ab55472f85a2b3138a25dc` |
-| 4 | `theorem` | [completion](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/Architecture.lean/declarations/completion.md) | 130 | `result-track:e9d2c87e91377ac5525e82e5f47d266e9b17da229776c2d3f1449da08a0cbaf1` |
+| 1 | `structure` | [Architecture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/Architecture.lean/declarations/architecture.md) | 18 | `declaration-track:d922f5e35b574e66e9e25d5636730c9e6a962dec7342bdf0686b3ad2527fde65` |
+| 2 | `def` | [totalStep](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/Architecture.lean/declarations/totalstep.md) | 60 | `declaration-track:af6a19abee9fc6c748074f819f1b8bf3ea28bec5b5827d023d43912e2c904c72` |
+| 3 | `structure` | [CompletionGuarantees](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/Architecture.lean/declarations/completionguarantees.md) | 80 | `declaration-track:0fa11f41f3351088ceea381349f7ce1cda9b6044e8ab55472f85a2b3138a25dc` |
+| 4 | `theorem` | [completion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/Architecture.lean/declarations/completion.md) | 130 | `result-track:e9d2c87e91377ac5525e82e5f47d266e9b17da229776c2d3f1449da08a0cbaf1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

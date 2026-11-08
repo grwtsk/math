@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimeSieveCovarianceAudit.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimeSieveCovarianceAudit.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimeSieveCovarianceAudit.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimeSieveCovarianceAudit.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [prime_lcm](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimeSieveCovarianceAudit.lean/declarations/prime-lcm.md) | 10 | `result-track:aa0150a4a6181a296e129c84bc618a22556839d227531cb333ab92f870fbcac2` |
-| 2 | `theorem` | [prime_moebius_lcm_identity](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimeSieveCovarianceAudit.lean/declarations/prime-moebius-lcm-identity.md) | 18 | `result-track:a9901939371374bfaf4f5132b2107b59d37497cf4d61dd0aed83207323366f16` |
-| 3 | `theorem` | [prime_moebius_lcm_le](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimeSieveCovarianceAudit.lean/declarations/prime-moebius-lcm-le.md) | 64 | `result-track:7447e428324ab5823bf985c3192c7fe999b2383116cc90d2776a17baa54b5e69` |
-| 4 | `theorem` | [prime_moebius_lcm_le_card](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimeSieveCovarianceAudit.lean/declarations/prime-moebius-lcm-le-card.md) | 100 | `result-track:c380aa442c4e925bdba448ccc3b66f244094664cd43cb7d3b1cfed5555c7927b` |
+| 1 | `theorem` | [prime_lcm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimeSieveCovarianceAudit.lean/declarations/prime-lcm.md) | 10 | `result-track:aa0150a4a6181a296e129c84bc618a22556839d227531cb333ab92f870fbcac2` |
+| 2 | `theorem` | [prime_moebius_lcm_identity](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimeSieveCovarianceAudit.lean/declarations/prime-moebius-lcm-identity.md) | 18 | `result-track:a9901939371374bfaf4f5132b2107b59d37497cf4d61dd0aed83207323366f16` |
+| 3 | `theorem` | [prime_moebius_lcm_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimeSieveCovarianceAudit.lean/declarations/prime-moebius-lcm-le.md) | 64 | `result-track:7447e428324ab5823bf985c3192c7fe999b2383116cc90d2776a17baa54b5e69` |
+| 4 | `theorem` | [prime_moebius_lcm_le_card](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimeSieveCovarianceAudit.lean/declarations/prime-moebius-lcm-le-card.md) | 100 | `result-track:c380aa442c4e925bdba448ccc3b66f244094664cd43cb7d3b1cfed5555c7927b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

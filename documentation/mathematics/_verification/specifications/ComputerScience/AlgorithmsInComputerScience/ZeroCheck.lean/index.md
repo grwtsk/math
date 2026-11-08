@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ZeroCheck.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ZeroCheck.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ZeroCheck.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ZeroCheck.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -61,9 +61,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/ZeroCheck.lean/declarations/example.md) | 7 | `declaration-track:6a85483fc9b5ba72fb45b66bbfb5d9e8d0719986554ffdeefa5709e10b2b0c0b` |
-| 2 | `example` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/ZeroCheck.lean/declarations/example-source-edition-2.md) | 8 | `declaration-track:6f29758d3fb6d84663dbc3ed8eb958244da06f7b4c9ca8f561d9c885ae922263` |
-| 3 | `example` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/ZeroCheck.lean/declarations/example-source-edition-3.md) | 11 | `declaration-track:8e5009811416ab407f3ed49a1b9b56b54a88766e44833a0bd579817c391af591` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ZeroCheck.lean/declarations/example.md) | 7 | `declaration-track:6a85483fc9b5ba72fb45b66bbfb5d9e8d0719986554ffdeefa5709e10b2b0c0b` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ZeroCheck.lean/declarations/example-source-edition-2.md) | 8 | `declaration-track:6f29758d3fb6d84663dbc3ed8eb958244da06f7b4c9ca8f561d9c885ae922263` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ZeroCheck.lean/declarations/example-source-edition-3.md) | 11 | `declaration-track:8e5009811416ab407f3ed49a1b9b56b54a88766e44833a0bd579817c391af591` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/UnitsNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/UnitsNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/UnitsNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/UnitsNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,15 +59,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [unitsMap](../../../../../../ComputerScience/TheoryOfData/DataStructures/UnitsNamespaced.lean/declarations/unitsmap.md) | 29 | `declaration-track:a8ca0cfc527a5ba96155f2f77affbc84056c4043e27ebf9bd05a0f7c62c5bf2d` |
-| 2 | `lemma` | [unitsMap_def](../../../../../../ComputerScience/TheoryOfData/DataStructures/UnitsNamespaced.lean/declarations/unitsmap-def.md) | 31 | `result-track:0b131cd63417c34ea8c3ba4c388e2cd7c240616153d23a8f8d8121c29d1ff965` |
-| 3 | `lemma` | [unitsMap_comp](../../../../../../ComputerScience/TheoryOfData/DataStructures/UnitsNamespaced.lean/declarations/unitsmap-comp.md) | 33 | `result-track:8d7c4717288ddb5cb4fe29ac6089c613392d1fa7abcfeae84f08109800f4f2c1` |
-| 4 | `lemma` | [unitsMap_self](../../../../../../ComputerScience/TheoryOfData/DataStructures/UnitsNamespaced.lean/declarations/unitsmap-self.md) | 40 | `result-track:71411fb9e1aa3ac19d841be41ce5e85947627bb901705f0a54d4796400c90d1b` |
-| 5 | `lemma` | [unitsMap_val](../../../../../../ComputerScience/TheoryOfData/DataStructures/UnitsNamespaced.lean/declarations/unitsmap-val.md) | 45 | `result-track:05abf030cc219921db4204ab5edc85f9c36686c37c1ed39f3b5b49baa25c39d8` |
-| 6 | `lemma` | [isUnit_cast_of_dvd](../../../../../../ComputerScience/TheoryOfData/DataStructures/UnitsNamespaced.lean/declarations/isunit-cast-of-dvd.md) | 48 | `result-track:d7f9896b528a48f38102b8fb07f68373876ae404fe430534ef1617f8886aa1ce` |
-| 7 | `theorem` | [unitsMap_surjective](../../../../../../ComputerScience/TheoryOfData/DataStructures/UnitsNamespaced.lean/declarations/unitsmap-surjective.md) | 52 | `result-track:d6c73d10c672b4e48c2b6d145e60f9e8a33922416a7824d255d9f0aa612950d7` |
-| 8 | `lemma` | [not_isUnit_of_mem_primeFactors](../../../../../../ComputerScience/TheoryOfData/DataStructures/UnitsNamespaced.lean/declarations/not-isunit-of-mem-primefactors.md) | 81 | `result-track:64e3695bf920d138f950bd971d8507d10328be89a070a8605974a01c91ba6ea9` |
-| 9 | `lemma` | [eq_unit_mul_divisor](../../../../../../ComputerScience/TheoryOfData/DataStructures/UnitsNamespaced.lean/declarations/eq-unit-mul-divisor.md) | 87 | `result-track:a456262bfbe8707fba7df912572b50771dff2d301959643480b5d3a89efdd469` |
+| 1 | `def` | [unitsMap](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/UnitsNamespaced.lean/declarations/unitsmap.md) | 29 | `declaration-track:a8ca0cfc527a5ba96155f2f77affbc84056c4043e27ebf9bd05a0f7c62c5bf2d` |
+| 2 | `lemma` | [unitsMap_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/UnitsNamespaced.lean/declarations/unitsmap-def.md) | 31 | `result-track:0b131cd63417c34ea8c3ba4c388e2cd7c240616153d23a8f8d8121c29d1ff965` |
+| 3 | `lemma` | [unitsMap_comp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/UnitsNamespaced.lean/declarations/unitsmap-comp.md) | 33 | `result-track:8d7c4717288ddb5cb4fe29ac6089c613392d1fa7abcfeae84f08109800f4f2c1` |
+| 4 | `lemma` | [unitsMap_self](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/UnitsNamespaced.lean/declarations/unitsmap-self.md) | 40 | `result-track:71411fb9e1aa3ac19d841be41ce5e85947627bb901705f0a54d4796400c90d1b` |
+| 5 | `lemma` | [unitsMap_val](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/UnitsNamespaced.lean/declarations/unitsmap-val.md) | 45 | `result-track:05abf030cc219921db4204ab5edc85f9c36686c37c1ed39f3b5b49baa25c39d8` |
+| 6 | `lemma` | [isUnit_cast_of_dvd](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/UnitsNamespaced.lean/declarations/isunit-cast-of-dvd.md) | 48 | `result-track:d7f9896b528a48f38102b8fb07f68373876ae404fe430534ef1617f8886aa1ce` |
+| 7 | `theorem` | [unitsMap_surjective](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/UnitsNamespaced.lean/declarations/unitsmap-surjective.md) | 52 | `result-track:d6c73d10c672b4e48c2b6d145e60f9e8a33922416a7824d255d9f0aa612950d7` |
+| 8 | `lemma` | [not_isUnit_of_mem_primeFactors](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/UnitsNamespaced.lean/declarations/not-isunit-of-mem-primefactors.md) | 81 | `result-track:64e3695bf920d138f950bd971d8507d10328be89a070a8605974a01c91ba6ea9` |
+| 9 | `lemma` | [eq_unit_mul_divisor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfData/DataStructures/UnitsNamespaced.lean/declarations/eq-unit-mul-divisor.md) | 87 | `result-track:a456262bfbe8707fba7df912572b50771dff2d301959643480b5d3a89efdd469` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

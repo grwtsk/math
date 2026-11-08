@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/NameSetPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/NameSetPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/NameSetPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/NameSetPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/NameSetPublic.lean/declarations/instance-source-edition-4.md) | 15 | `declaration-track:a393d40201492a9a73360a2d771402ea3b0df1d87ea909bf813d70b665a52116` |
-| 2 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/NameSetPublic.lean/declarations/instance.md) | 18 | `declaration-track:0fc4deedde5772b0e049c580f3ec9b85f7dad439f6c2c541adb8f18a28606fc6` |
-| 3 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/NameSetPublic.lean/declarations/instance-source-edition-3.md) | 21 | `declaration-track:70f4cf5a0dc1ddeb3ecd1acd7ad48dfb6f033e98bc755b885e870eb19f7b8086` |
-| 4 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/NameSetPublic.lean/declarations/instance-source-edition-2.md) | 24 | `declaration-track:38a23de68a0ebd268aac7b9d153a95a693a3f59a6232d93cf6571644207edd16` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/NameSetPublic.lean/declarations/instance-source-edition-4.md) | 15 | `declaration-track:a393d40201492a9a73360a2d771402ea3b0df1d87ea909bf813d70b665a52116` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/NameSetPublic.lean/declarations/instance.md) | 18 | `declaration-track:0fc4deedde5772b0e049c580f3ec9b85f7dad439f6c2c541adb8f18a28606fc6` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/NameSetPublic.lean/declarations/instance-source-edition-3.md) | 21 | `declaration-track:70f4cf5a0dc1ddeb3ecd1acd7ad48dfb6f033e98bc755b885e870eb19f7b8086` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/NameSetPublic.lean/declarations/instance-source-edition-2.md) | 24 | `declaration-track:38a23de68a0ebd268aac7b9d153a95a693a3f59a6232d93cf6571644207edd16` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

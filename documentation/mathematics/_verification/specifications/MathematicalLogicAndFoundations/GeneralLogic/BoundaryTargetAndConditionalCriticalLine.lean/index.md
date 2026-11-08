@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BoundaryTargetAndConditionalCriticalLine.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BoundaryTargetAndConditionalCriticalLine.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BoundaryTargetAndConditionalCriticalLine.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BoundaryTargetAndConditionalCriticalLine.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SpectralBoundaryAlignmentTarget](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BoundaryTargetAndConditionalCriticalLine.lean/declarations/spectralboundaryalignmenttarget.md) | 40 | `declaration-track:a11b14304db1467d62eb5842928d9383903a113d611bffda643361738083deb6` |
-| 2 | `structure` | [SpectralBoundaryCriticalLineTargetBridge](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BoundaryTargetAndConditionalCriticalLine.lean/declarations/spectralboundarycriticallinetargetbridge.md) | 55 | `declaration-track:38176e0ad997e5c7fbfa4a7af7a7c52adfc88cb5a50939b08842d00b293f6f6d` |
+| 1 | `structure` | [SpectralBoundaryAlignmentTarget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BoundaryTargetAndConditionalCriticalLine.lean/declarations/spectralboundaryalignmenttarget.md) | 40 | `declaration-track:a11b14304db1467d62eb5842928d9383903a113d611bffda643361738083deb6` |
+| 2 | `structure` | [SpectralBoundaryCriticalLineTargetBridge](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/BoundaryTargetAndConditionalCriticalLine.lean/declarations/spectralboundarycriticallinetargetbridge.md) | 55 | `declaration-track:38176e0ad997e5c7fbfa4a7af7a7c52adfc88cb5a50939b08842d00b293f6f6d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/KernelPresentationNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/KernelPresentationNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/KernelPresentationNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/KernelPresentationNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [KernelPresentation](../../../../Combinatorics/KernelPresentationNamespaced.lean/declarations/kernelpresentation.md) | 88 | `declaration-track:1f8f83b15c798fb9a0de881fa96abdce49aff8900878dd5b03b9793f411ce701` |
-| 2 | `abbrev` | [Judgment](../../../../Combinatorics/KernelPresentationNamespaced.lean/declarations/judgment.md) | 198 | `declaration-track:28b17bbcdadc9c5f570ac61d9ed8263ce48ed89b0829d9138f92ef3a7df64f57` |
-| 3 | `abbrev` | [JudgmentAt](../../../../Combinatorics/KernelPresentationNamespaced.lean/declarations/judgmentat.md) | 230 | `declaration-track:395c3b81b7395932a0ad988920d2f7074a7f907e47075adcc3326171405b518a` |
-| 4 | `def` | [ruleLeafOrigins](../../../../Combinatorics/KernelPresentationNamespaced.lean/declarations/ruleleaforigins.md) | 262 | `declaration-track:751aab2e02b95f04e62f42e44ecc0bdf47ef7747e5fbbf34d4728e06050587bc` |
+| 1 | `structure` | [KernelPresentation](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/KernelPresentationNamespaced.lean/declarations/kernelpresentation.md) | 88 | `declaration-track:1f8f83b15c798fb9a0de881fa96abdce49aff8900878dd5b03b9793f411ce701` |
+| 2 | `abbrev` | [Judgment](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/KernelPresentationNamespaced.lean/declarations/judgment.md) | 198 | `declaration-track:28b17bbcdadc9c5f570ac61d9ed8263ce48ed89b0829d9138f92ef3a7df64f57` |
+| 3 | `abbrev` | [JudgmentAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/KernelPresentationNamespaced.lean/declarations/judgmentat.md) | 230 | `declaration-track:395c3b81b7395932a0ad988920d2f7074a7f907e47075adcc3326171405b518a` |
+| 4 | `def` | [ruleLeafOrigins](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/KernelPresentationNamespaced.lean/declarations/ruleleaforigins.md) | 262 | `declaration-track:751aab2e02b95f04e62f42e44ecc0bdf47ef7747e5fbbf34d4728e06050587bc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

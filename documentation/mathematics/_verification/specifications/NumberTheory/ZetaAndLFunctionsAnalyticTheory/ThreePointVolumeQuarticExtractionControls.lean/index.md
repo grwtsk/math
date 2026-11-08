@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ThreePointVolumeQuarticExtractionControls.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ThreePointVolumeQuarticExtractionControls.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ThreePointVolumeQuarticExtractionControls.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ThreePointVolumeQuarticExtractionControls.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Zeta.Riemann.ThreePointVolumeQuarticExtraction`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ThreePointVolumeQuarticExtraction.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.ThreePointVolumeQuarticExtraction`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ThreePointVolumeQuarticExtraction.lean/index.md) — import line 3; pinned internal source present.
 - `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [collinearPacking](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ThreePointVolumeQuarticExtractionControls.lean/declarations/collinearpacking.md) | 14 | `declaration-track:7b0e970d0438161663b3ca01539ef3211511a65e47611ad7141bc88a9ca55cb3` |
-| 2 | `theorem` | [collinearPacking_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ThreePointVolumeQuarticExtractionControls.lean/declarations/collinearpacking-zero.md) | 19 | `result-track:d87c0f4622ed9ae2c3eae26dd1129ad89f67d50bbe74d8a91ead0b5d386dbc50` |
-| 3 | `def` | [unitCornerPacking](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ThreePointVolumeQuarticExtractionControls.lean/declarations/unitcornerpacking.md) | 26 | `declaration-track:fd16166c14f9ece0f3547f6bedd23aa49cbd63a2a61aa748f545231b95e7dd05` |
-| 4 | `theorem` | [unitCornerPacking_one](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ThreePointVolumeQuarticExtractionControls.lean/declarations/unitcornerpacking-one.md) | 31 | `result-track:10c23c4d8e28035bdf270b4f3b42cf14f0876ee3d0a6c63c437419b22b5eb091` |
-| 5 | `theorem` | [packing_volume_ne_negative](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ThreePointVolumeQuarticExtractionControls.lean/declarations/packing-volume-ne-negative.md) | 38 | `result-track:e3e9566ec2706f750d4e03a4dab56664ef1f769ade7b2522f65a04dc1b2b4551` |
-| 6 | `theorem` | [positive_packing_does_not_identify_signed_quartic](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/ThreePointVolumeQuarticExtractionControls.lean/declarations/positive-packing-does-not-identify-signed-quartic.md) | 45 | `result-track:e159f3ca7dce79cb95a6e1906dded64ef89d3c9e0555b025c600f6bef3de0d3b` |
+| 1 | `def` | [collinearPacking](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ThreePointVolumeQuarticExtractionControls.lean/declarations/collinearpacking.md) | 14 | `declaration-track:7b0e970d0438161663b3ca01539ef3211511a65e47611ad7141bc88a9ca55cb3` |
+| 2 | `theorem` | [collinearPacking_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ThreePointVolumeQuarticExtractionControls.lean/declarations/collinearpacking-zero.md) | 19 | `result-track:d87c0f4622ed9ae2c3eae26dd1129ad89f67d50bbe74d8a91ead0b5d386dbc50` |
+| 3 | `def` | [unitCornerPacking](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ThreePointVolumeQuarticExtractionControls.lean/declarations/unitcornerpacking.md) | 26 | `declaration-track:fd16166c14f9ece0f3547f6bedd23aa49cbd63a2a61aa748f545231b95e7dd05` |
+| 4 | `theorem` | [unitCornerPacking_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ThreePointVolumeQuarticExtractionControls.lean/declarations/unitcornerpacking-one.md) | 31 | `result-track:10c23c4d8e28035bdf270b4f3b42cf14f0876ee3d0a6c63c437419b22b5eb091` |
+| 5 | `theorem` | [packing_volume_ne_negative](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ThreePointVolumeQuarticExtractionControls.lean/declarations/packing-volume-ne-negative.md) | 38 | `result-track:e3e9566ec2706f750d4e03a4dab56664ef1f769ade7b2522f65a04dc1b2b4551` |
+| 6 | `theorem` | [positive_packing_does_not_identify_signed_quartic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ThreePointVolumeQuarticExtractionControls.lean/declarations/positive-packing-does-not-identify-signed-quartic.md) | 45 | `result-track:e159f3ca7dce79cb95a6e1906dded64ef89d3c9e0555b025c600f6bef3de0d3b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

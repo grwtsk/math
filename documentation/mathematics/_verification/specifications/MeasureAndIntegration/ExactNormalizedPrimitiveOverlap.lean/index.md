@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ExactNormalizedPrimitiveOverlap.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ExactNormalizedPrimitiveOverlap.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ExactNormalizedPrimitiveOverlap.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ExactNormalizedPrimitiveOverlap.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sourceBump_overlap_integrable](../../../../MeasureAndIntegration/ExactNormalizedPrimitiveOverlap.lean/declarations/sourcebump-overlap-integrable.md) | 25 | `result-track:d278d650fc2e0fb62dcb78dec349516573e51bd30e35acb12cd915b7f8f27bed` |
-| 2 | `theorem` | [primitiveCorrelationZero_eq_profile](../../../../MeasureAndIntegration/ExactNormalizedPrimitiveOverlap.lean/declarations/primitivecorrelationzero-eq-profile.md) | 33 | `result-track:266186a7047f442dec7772290d645d868938385cf77f335e78cc9598fc9b70ca` |
+| 1 | `theorem` | [sourceBump_overlap_integrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ExactNormalizedPrimitiveOverlap.lean/declarations/sourcebump-overlap-integrable.md) | 25 | `result-track:d278d650fc2e0fb62dcb78dec349516573e51bd30e35acb12cd915b7f8f27bed` |
+| 2 | `theorem` | [primitiveCorrelationZero_eq_profile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ExactNormalizedPrimitiveOverlap.lean/declarations/primitivecorrelationzero-eq-profile.md) | 33 | `result-track:266186a7047f442dec7772290d645d868938385cf77f335e78cc9598fc9b70ca` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

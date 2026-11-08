@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FirstCohomologyNamespacedH1.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FirstCohomologyNamespacedH1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FirstCohomologyNamespacedH1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FirstCohomologyNamespacedH1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [H1](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FirstCohomologyNamespacedH1.lean/declarations/h1.md) | 18 | `declaration-track:0782c5102bc005c4ad484fbc2ac5a08a36574c32d4c698bfa75db3159d686903` |
-| 2 | `def` | [H1.IsZero](../../../../../MathematicalLogicAndFoundations/GeneralLogic/FirstCohomologyNamespacedH1.lean/declarations/h1-iszero.md) | 23 | `declaration-track:0ca816d1e542f66948b8c114d8c43fafadae3b90ca715a1eade38a56875092df` |
+| 1 | `structure` | [H1](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FirstCohomologyNamespacedH1.lean/declarations/h1.md) | 18 | `declaration-track:0782c5102bc005c4ad484fbc2ac5a08a36574c32d4c698bfa75db3159d686903` |
+| 2 | `def` | [H1.IsZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/FirstCohomologyNamespacedH1.lean/declarations/h1-iszero.md) | 23 | `declaration-track:0ca816d1e542f66948b8c114d8c43fafadae3b90ca715a1eade38a56875092df` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

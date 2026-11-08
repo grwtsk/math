@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceProjectionScalarNorm.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceProjectionScalarNorm.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceProjectionScalarNorm.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceProjectionScalarNorm.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [scalarContinuumAnchor_norm_le_two](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceProjectionScalarNorm.lean/declarations/scalarcontinuumanchor-norm-le-two.md) | 38 | `result-track:a6f240f665f6bd7750dd1b9b01a672460023f6e8cdb593f61996d2e77382ce24` |
-| 2 | `theorem` | [scalarCompensatedPrimeOperator_norm_lower](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceProjectionScalarNorm.lean/declarations/scalarcompensatedprimeoperator-norm-lower.md) | 51 | `result-track:8e5b1c270b643f982c73f4ab871a12ca2f5119215b01189e3d8b24447897f80a` |
-| 3 | `theorem` | [scalarCompensatedPrimeOperator_norm_not_eventually_bounded](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceProjectionScalarNorm.lean/declarations/scalarcompensatedprimeoperator-norm-not-eventually-bounded.md) | 61 | `result-track:d1f1843372113d3214382f1e64689dec2e437839115c6a3c5252c31e01d76729` |
+| 1 | `theorem` | [scalarContinuumAnchor_norm_le_two](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceProjectionScalarNorm.lean/declarations/scalarcontinuumanchor-norm-le-two.md) | 38 | `result-track:a6f240f665f6bd7750dd1b9b01a672460023f6e8cdb593f61996d2e77382ce24` |
+| 2 | `theorem` | [scalarCompensatedPrimeOperator_norm_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceProjectionScalarNorm.lean/declarations/scalarcompensatedprimeoperator-norm-lower.md) | 51 | `result-track:8e5b1c270b643f982c73f4ab871a12ca2f5119215b01189e3d8b24447897f80a` |
+| 3 | `theorem` | [scalarCompensatedPrimeOperator_norm_not_eventually_bounded](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceProjectionScalarNorm.lean/declarations/scalarcompensatedprimeoperator-norm-not-eventually-bounded.md) | 61 | `result-track:d1f1843372113d3214382f1e64689dec2e437839115c6a3c5252c31e01d76729` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

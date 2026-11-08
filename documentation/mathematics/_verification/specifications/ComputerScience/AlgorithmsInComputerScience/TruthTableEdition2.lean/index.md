@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/TruthTableEdition2.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/TruthTableEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TruthTableEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TruthTableEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,14 +58,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [TruthTable](../../../../../ComputerScience/AlgorithmsInComputerScience/TruthTableEdition2.lean/declarations/truthtable.md) | 7 | `declaration-track:5fbe3173a455a6f0f65d8b4af85fbeb47599521c8bbf69fc299da14ddd935c02` |
-| 2 | `def` | [TruthTable.rows](../../../../../ComputerScience/AlgorithmsInComputerScience/TruthTableEdition2.lean/declarations/truthtable-rows.md) | 11 | `declaration-track:9359b6c7749da44dfbc3ca4587a576f42399a8df5e51263e91648cf8ee0e4a2f` |
-| 3 | `def` | [TruthTable.toMatrix](../../../../../ComputerScience/AlgorithmsInComputerScience/TruthTableEdition2.lean/declarations/truthtable-tomatrix.md) | 21 | `declaration-track:4bea8c797b2bb1dde5857dc15cfc0a48737263b436d6ae46db59a39e40027ab6` |
-| 4 | `def` | [TruthTable.minterm](../../../../../ComputerScience/AlgorithmsInComputerScience/TruthTableEdition2.lean/declarations/truthtable-minterm.md) | 30 | `declaration-track:414b7a100e5563f57bfc8f6bbbbdc2a7dda3526326f791cca27d6ee25a1ae725` |
-| 5 | `def` | [TruthTable.trueInputs](../../../../../ComputerScience/AlgorithmsInComputerScience/TruthTableEdition2.lean/declarations/truthtable-trueinputs.md) | 39 | `declaration-track:25a3d123852a2a01576cc2208d5c606c8309efc665a9d5966300db9b507d35e7` |
-| 6 | `def` | [TruthTable.toSOP](../../../../../ComputerScience/AlgorithmsInComputerScience/TruthTableEdition2.lean/declarations/truthtable-tosop.md) | 49 | `declaration-track:db8dc5940d2892cf7a256d950e0bbafc39eb22a239e146c6b0d1100e6a111052` |
-| 7 | `def` | [TruthTable.toTree](../../../../../ComputerScience/AlgorithmsInComputerScience/TruthTableEdition2.lean/declarations/truthtable-totree.md) | 54 | `declaration-track:14824ae0b75ef20c0d6a68b18b3c1132ea733a469ef9e0ba23c62b59d0389070` |
-| 8 | `def` | [TruthTable.toSOPMatrix](../../../../../ComputerScience/AlgorithmsInComputerScience/TruthTableEdition2.lean/declarations/truthtable-tosopmatrix.md) | 59 | `declaration-track:e079385cdece20593c9e0bc2d39190b98e093d2806a6ca962f74ef2122c5d976` |
+| 1 | `abbrev` | [TruthTable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TruthTableEdition2.lean/declarations/truthtable.md) | 7 | `declaration-track:5fbe3173a455a6f0f65d8b4af85fbeb47599521c8bbf69fc299da14ddd935c02` |
+| 2 | `def` | [TruthTable.rows](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TruthTableEdition2.lean/declarations/truthtable-rows.md) | 11 | `declaration-track:9359b6c7749da44dfbc3ca4587a576f42399a8df5e51263e91648cf8ee0e4a2f` |
+| 3 | `def` | [TruthTable.toMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TruthTableEdition2.lean/declarations/truthtable-tomatrix.md) | 21 | `declaration-track:4bea8c797b2bb1dde5857dc15cfc0a48737263b436d6ae46db59a39e40027ab6` |
+| 4 | `def` | [TruthTable.minterm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TruthTableEdition2.lean/declarations/truthtable-minterm.md) | 30 | `declaration-track:414b7a100e5563f57bfc8f6bbbbdc2a7dda3526326f791cca27d6ee25a1ae725` |
+| 5 | `def` | [TruthTable.trueInputs](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TruthTableEdition2.lean/declarations/truthtable-trueinputs.md) | 39 | `declaration-track:25a3d123852a2a01576cc2208d5c606c8309efc665a9d5966300db9b507d35e7` |
+| 6 | `def` | [TruthTable.toSOP](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TruthTableEdition2.lean/declarations/truthtable-tosop.md) | 49 | `declaration-track:db8dc5940d2892cf7a256d950e0bbafc39eb22a239e146c6b0d1100e6a111052` |
+| 7 | `def` | [TruthTable.toTree](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TruthTableEdition2.lean/declarations/truthtable-totree.md) | 54 | `declaration-track:14824ae0b75ef20c0d6a68b18b3c1132ea733a469ef9e0ba23c62b59d0389070` |
+| 8 | `def` | [TruthTable.toSOPMatrix](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/TruthTableEdition2.lean/declarations/truthtable-tosopmatrix.md) | 59 | `declaration-track:e079385cdece20593c9e0bc2d39190b98e093d2806a6ca962f74ef2122c5d976` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

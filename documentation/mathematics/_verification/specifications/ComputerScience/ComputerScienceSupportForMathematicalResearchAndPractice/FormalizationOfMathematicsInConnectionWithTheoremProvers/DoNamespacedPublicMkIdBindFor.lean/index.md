@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DoNamespacedPublicMkIdBindFor.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DoNamespacedPublicMkIdBindFor.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DoNamespacedPublicMkIdBindFor.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DoNamespacedPublicMkIdBindFor.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [mkIdBindFor](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DoNamespacedPublicMkIdBindFor.lean/declarations/mkidbindfor.md) | 23 | `declaration-track:d22d632ef5e0facb163490e61431835a7a0a754973a111cd530322bc95de3565` |
-| 2 | `def` | [extractBind](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DoNamespacedPublicMkIdBindFor.lean/declarations/extractbind.md) | 28 | `declaration-track:8d7df76a6298df1b796c9f3add9b01cbf7bd55e026fe434090f617e0e8374397` |
+| 1 | `def` | [mkIdBindFor](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DoNamespacedPublicMkIdBindFor.lean/declarations/mkidbindfor.md) | 23 | `declaration-track:d22d632ef5e0facb163490e61431835a7a0a754973a111cd530322bc95de3565` |
+| 2 | `def` | [extractBind](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/DoNamespacedPublicMkIdBindFor.lean/declarations/extractbind.md) | 28 | `declaration-track:8d7df76a6298df1b796c9f3add9b01cbf7bd55e026fe434090f617e0e8374397` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

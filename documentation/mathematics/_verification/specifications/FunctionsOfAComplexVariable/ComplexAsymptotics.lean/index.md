@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/ComplexAsymptotics.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/ComplexAsymptotics.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexAsymptotics.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexAsymptotics.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [isTheta_ofReal](../../../../FunctionsOfAComplexVariable/ComplexAsymptotics.lean/declarations/istheta-ofreal.md) | 19 | `result-track:9610fcff2ada931b05943e13febe8ace32621d74dcebf54ada60373202fa53ec` |
-| 2 | `theorem` | [isLittleO_ofReal_left](../../../../FunctionsOfAComplexVariable/ComplexAsymptotics.lean/declarations/islittleo-ofreal-left.md) | 23 | `result-track:2dabd7d1b58f97c1fadd804a68cabcd8cc6ed6467f21e57c813c928396160d28` |
-| 3 | `theorem` | [isLittleO_ofReal_right](../../../../FunctionsOfAComplexVariable/ComplexAsymptotics.lean/declarations/islittleo-ofreal-right.md) | 27 | `result-track:9576979a6a40fe7490c31d0581cbe45c7bd95136e1fde58bca8ae4a2165cbefa` |
-| 4 | `theorem` | [isBigO_ofReal_left](../../../../FunctionsOfAComplexVariable/ComplexAsymptotics.lean/declarations/isbigo-ofreal-left.md) | 31 | `result-track:6feac7e7fc748fe0a15b81615b7cae42022c0c46f38ff662d1900b4b2c66b555` |
-| 5 | `theorem` | [isBigO_ofReal_right](../../../../FunctionsOfAComplexVariable/ComplexAsymptotics.lean/declarations/isbigo-ofreal-right.md) | 35 | `result-track:e60a02b57ef68b79f1fef07a35eb12077c733a032d411caab71516e583bd199c` |
-| 6 | `theorem` | [isTheta_ofReal_left](../../../../FunctionsOfAComplexVariable/ComplexAsymptotics.lean/declarations/istheta-ofreal-left.md) | 39 | `result-track:5ff9ef928ac4c194d3d995215f6161136d59b9164c909839b4d10665a7241e44` |
-| 7 | `theorem` | [isTheta_ofReal_right](../../../../FunctionsOfAComplexVariable/ComplexAsymptotics.lean/declarations/istheta-ofreal-right.md) | 43 | `result-track:74f8c9b0b346b8732b85fa804d0f06ed4dfefd6801d2d6f9b8d6e2c6d08944df` |
-| 8 | `lemma` | [isBigO_comp_ofReal_nhds](../../../../FunctionsOfAComplexVariable/ComplexAsymptotics.lean/declarations/isbigo-comp-ofreal-nhds.md) | 48 | `result-track:63327dd860dab0e007594569c98776758baeb73a57987cd63dbec2f7133b704a` |
-| 9 | `lemma` | [isBigO_comp_ofReal_nhds_ne](../../../../FunctionsOfAComplexVariable/ComplexAsymptotics.lean/declarations/isbigo-comp-ofreal-nhds-ne.md) | 52 | `result-track:79d8d65b76d1ac6d7f4077286c6a19953f315705d3dacee0dd16dbaabfab957e` |
+| 1 | `theorem` | [isTheta_ofReal](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexAsymptotics.lean/declarations/istheta-ofreal.md) | 19 | `result-track:9610fcff2ada931b05943e13febe8ace32621d74dcebf54ada60373202fa53ec` |
+| 2 | `theorem` | [isLittleO_ofReal_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexAsymptotics.lean/declarations/islittleo-ofreal-left.md) | 23 | `result-track:2dabd7d1b58f97c1fadd804a68cabcd8cc6ed6467f21e57c813c928396160d28` |
+| 3 | `theorem` | [isLittleO_ofReal_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexAsymptotics.lean/declarations/islittleo-ofreal-right.md) | 27 | `result-track:9576979a6a40fe7490c31d0581cbe45c7bd95136e1fde58bca8ae4a2165cbefa` |
+| 4 | `theorem` | [isBigO_ofReal_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexAsymptotics.lean/declarations/isbigo-ofreal-left.md) | 31 | `result-track:6feac7e7fc748fe0a15b81615b7cae42022c0c46f38ff662d1900b4b2c66b555` |
+| 5 | `theorem` | [isBigO_ofReal_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexAsymptotics.lean/declarations/isbigo-ofreal-right.md) | 35 | `result-track:e60a02b57ef68b79f1fef07a35eb12077c733a032d411caab71516e583bd199c` |
+| 6 | `theorem` | [isTheta_ofReal_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexAsymptotics.lean/declarations/istheta-ofreal-left.md) | 39 | `result-track:5ff9ef928ac4c194d3d995215f6161136d59b9164c909839b4d10665a7241e44` |
+| 7 | `theorem` | [isTheta_ofReal_right](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexAsymptotics.lean/declarations/istheta-ofreal-right.md) | 43 | `result-track:74f8c9b0b346b8732b85fa804d0f06ed4dfefd6801d2d6f9b8d6e2c6d08944df` |
+| 8 | `lemma` | [isBigO_comp_ofReal_nhds](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexAsymptotics.lean/declarations/isbigo-comp-ofreal-nhds.md) | 48 | `result-track:63327dd860dab0e007594569c98776758baeb73a57987cd63dbec2f7133b704a` |
+| 9 | `lemma` | [isBigO_comp_ofReal_nhds_ne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexAsymptotics.lean/declarations/isbigo-comp-ofreal-nhds-ne.md) | 52 | `result-track:79d8d65b76d1ac6d7f4077286c6a19953f315705d3dacee0dd16dbaabfab957e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

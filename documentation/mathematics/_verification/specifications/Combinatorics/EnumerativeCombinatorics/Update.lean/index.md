@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/EnumerativeCombinatorics/Update.lean/index.md) · [Full source](../../../../../Combinatorics/EnumerativeCombinatorics/Update.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/Update.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/Update.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,18 +58,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [updateFinset](../../../../../Combinatorics/EnumerativeCombinatorics/Update.lean/declarations/updatefinset.md) | 24 | `declaration-track:2f2ed8742729b61f82333f0f79263e7f5d1e13cc5f52d377979460bacad82b8d` |
-| 2 | `theorem` | [updateFinset_def](../../../../../Combinatorics/EnumerativeCombinatorics/Update.lean/declarations/updatefinset-def.md) | 29 | `result-track:e43bdfbe369e9125217cbdda6c046cf79294b88713d17c06055c4ee738729d63` |
-| 3 | `theorem` | [updateFinset_empty](../../../../../Combinatorics/EnumerativeCombinatorics/Update.lean/declarations/updatefinset-empty.md) | 33 | `result-track:4cb6d8c6a877b298f4b4f1804defb2ddceca3d9df6daba1586ea447cef27d6d4` |
-| 4 | `theorem` | [updateFinset_singleton](../../../../../Combinatorics/EnumerativeCombinatorics/Update.lean/declarations/updatefinset-singleton.md) | 36 | `result-track:3f96ad8c434a15bb01d77778f6c870353c7d21838443b881f5d184b3dd094d76` |
-| 5 | `theorem` | [update_eq_updateFinset](../../../../../Combinatorics/EnumerativeCombinatorics/Update.lean/declarations/update-eq-updatefinset.md) | 44 | `result-track:09d1f55a087544fff66ef5489ea1ff3ef4d840e818721464c442e0259270e20f` |
-| 6 | `theorem` | [_root_.DependsOn.updateFinset](../../../../../Combinatorics/EnumerativeCombinatorics/Update.lean/declarations/root-dependson-updatefinset.md) | 55 | `result-track:153d9c355c508b5769ecbd3858310b2d2b856a5e6e146b835598b315cab5ada8` |
-| 7 | `theorem` | [_root_.DependsOn.update](../../../../../Combinatorics/EnumerativeCombinatorics/Update.lean/declarations/root-dependson-update.md) | 65 | `result-track:046016dbd289e039a3d5e76e349cdc662b13c78ed4ef03c1841fb0a2645cab37` |
-| 8 | `theorem` | [updateFinset_updateFinset](../../../../../Combinatorics/EnumerativeCombinatorics/Update.lean/declarations/updatefinset-updatefinset.md) | 70 | `result-track:d5c5b8f8a10e1c90935e7240baff8210e91db1827c427b1ed31ed44e5e12a295` |
-| 9 | `lemma` | [updateFinset_updateFinset_of_subset](../../../../../Combinatorics/EnumerativeCombinatorics/Update.lean/declarations/updatefinset-updatefinset-of-subset.md) | 82 | `result-track:92f72727b016894e283ae3518517f5e61ccc8788f6e7fe4301d8281594f74758` |
-| 10 | `lemma` | [restrict_updateFinset_of_subset](../../../../../Combinatorics/EnumerativeCombinatorics/Update.lean/declarations/restrict-updatefinset-of-subset.md) | 90 | `result-track:e5a04d8af23f691af778929affd8fa684cccc10dea30b1f5ad9713a6e6e2ec1d` |
-| 11 | `lemma` | [restrict_updateFinset](../../../../../Combinatorics/EnumerativeCombinatorics/Update.lean/declarations/restrict-updatefinset.md) | 95 | `result-track:4c2a526248de55d3371209555f40b7b7302633eb114ba15c76bca762b5f919af` |
-| 12 | `lemma` | [updateFinset_restrict](../../../../../Combinatorics/EnumerativeCombinatorics/Update.lean/declarations/updatefinset-restrict.md) | 101 | `result-track:bbcd7db953a05224ab8166712d7a2906c1b784cf8c6b80b6ff86a82582f9140f` |
+| 1 | `def` | [updateFinset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/Update.lean/declarations/updatefinset.md) | 24 | `declaration-track:2f2ed8742729b61f82333f0f79263e7f5d1e13cc5f52d377979460bacad82b8d` |
+| 2 | `theorem` | [updateFinset_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/Update.lean/declarations/updatefinset-def.md) | 29 | `result-track:e43bdfbe369e9125217cbdda6c046cf79294b88713d17c06055c4ee738729d63` |
+| 3 | `theorem` | [updateFinset_empty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/Update.lean/declarations/updatefinset-empty.md) | 33 | `result-track:4cb6d8c6a877b298f4b4f1804defb2ddceca3d9df6daba1586ea447cef27d6d4` |
+| 4 | `theorem` | [updateFinset_singleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/Update.lean/declarations/updatefinset-singleton.md) | 36 | `result-track:3f96ad8c434a15bb01d77778f6c870353c7d21838443b881f5d184b3dd094d76` |
+| 5 | `theorem` | [update_eq_updateFinset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/Update.lean/declarations/update-eq-updatefinset.md) | 44 | `result-track:09d1f55a087544fff66ef5489ea1ff3ef4d840e818721464c442e0259270e20f` |
+| 6 | `theorem` | [_root_.DependsOn.updateFinset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/Update.lean/declarations/root-dependson-updatefinset.md) | 55 | `result-track:153d9c355c508b5769ecbd3858310b2d2b856a5e6e146b835598b315cab5ada8` |
+| 7 | `theorem` | [_root_.DependsOn.update](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/Update.lean/declarations/root-dependson-update.md) | 65 | `result-track:046016dbd289e039a3d5e76e349cdc662b13c78ed4ef03c1841fb0a2645cab37` |
+| 8 | `theorem` | [updateFinset_updateFinset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/Update.lean/declarations/updatefinset-updatefinset.md) | 70 | `result-track:d5c5b8f8a10e1c90935e7240baff8210e91db1827c427b1ed31ed44e5e12a295` |
+| 9 | `lemma` | [updateFinset_updateFinset_of_subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/Update.lean/declarations/updatefinset-updatefinset-of-subset.md) | 82 | `result-track:92f72727b016894e283ae3518517f5e61ccc8788f6e7fe4301d8281594f74758` |
+| 10 | `lemma` | [restrict_updateFinset_of_subset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/Update.lean/declarations/restrict-updatefinset-of-subset.md) | 90 | `result-track:e5a04d8af23f691af778929affd8fa684cccc10dea30b1f5ad9713a6e6e2ec1d` |
+| 11 | `lemma` | [restrict_updateFinset](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/Update.lean/declarations/restrict-updatefinset.md) | 95 | `result-track:4c2a526248de55d3371209555f40b7b7302633eb114ba15c76bca762b5f919af` |
+| 12 | `lemma` | [updateFinset_restrict](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/Update.lean/declarations/updatefinset-restrict.md) | 101 | `result-track:bbcd7db953a05224ab8166712d7a2906c1b784cf8c6b80b6ff86a82582f9140f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

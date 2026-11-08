@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/RadicalCertificate.lean/index.md) · [Full source](../../../../CommutativeAlgebra/RadicalCertificate.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RadicalCertificate.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RadicalCertificate.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,11 +58,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [EquationSystem.idealCombination](../../../../CommutativeAlgebra/RadicalCertificate.lean/declarations/equationsystem-idealcombination.md) | 24 | `declaration-track:05124ac25358ef59a4e697101ba901581e21661ec1b6c05d981ea6cc9aeb637d` |
-| 2 | `structure` | [RadicalCertificate](../../../../CommutativeAlgebra/RadicalCertificate.lean/declarations/radicalcertificate.md) | 36 | `declaration-track:df75767c713b15d47407134dd7d112351c3bfcb47c3e729df52c1b8e475f006e` |
-| 3 | `theorem` | [EquationSystem.eval_idealCombination_eq_zero](../../../../CommutativeAlgebra/RadicalCertificate.lean/declarations/equationsystem-eval-idealcombination-eq-zero.md) | 48 | `result-track:855af01b2dda805647243d0386f1622f88f3421ecd3593a4396c51671a010cda` |
-| 4 | `theorem` | [RadicalCertificate.vanishesOn](../../../../CommutativeAlgebra/RadicalCertificate.lean/declarations/radicalcertificate-vanisheson.md) | 71 | `result-track:e164f0e1d4ed8b4d3c7443ded1648a342b9feaa7b72590400b0c170c236c6607` |
-| 5 | `theorem` | [RadicalCertificate.geometricConsequence](../../../../CommutativeAlgebra/RadicalCertificate.lean/declarations/radicalcertificate-geometricconsequence.md) | 84 | `result-track:34830c66802108aa997b8496a2b3d99a405841b7ff742fae190fa37d2589829d` |
+| 1 | `def` | [EquationSystem.idealCombination](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RadicalCertificate.lean/declarations/equationsystem-idealcombination.md) | 24 | `declaration-track:05124ac25358ef59a4e697101ba901581e21661ec1b6c05d981ea6cc9aeb637d` |
+| 2 | `structure` | [RadicalCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RadicalCertificate.lean/declarations/radicalcertificate.md) | 36 | `declaration-track:df75767c713b15d47407134dd7d112351c3bfcb47c3e729df52c1b8e475f006e` |
+| 3 | `theorem` | [EquationSystem.eval_idealCombination_eq_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RadicalCertificate.lean/declarations/equationsystem-eval-idealcombination-eq-zero.md) | 48 | `result-track:855af01b2dda805647243d0386f1622f88f3421ecd3593a4396c51671a010cda` |
+| 4 | `theorem` | [RadicalCertificate.vanishesOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RadicalCertificate.lean/declarations/radicalcertificate-vanisheson.md) | 71 | `result-track:e164f0e1d4ed8b4d3c7443ded1648a342b9feaa7b72590400b0c170c236c6607` |
+| 5 | `theorem` | [RadicalCertificate.geometricConsequence](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/RadicalCertificate.lean/declarations/radicalcertificate-geometricconsequence.md) | 84 | `result-track:34830c66802108aa997b8496a2b3d99a405841b7ff742fae190fa37d2589829d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

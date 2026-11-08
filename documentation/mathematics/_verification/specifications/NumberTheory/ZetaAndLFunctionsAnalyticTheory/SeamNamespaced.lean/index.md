@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SeamNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SeamNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SeamNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SeamNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,15 +59,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [instContinuousSMulRealComplex](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SeamNamespaced.lean/declarations/instcontinuoussmulrealcomplex.md) | 37 | `declaration-track:27d106008c5b680b859af098c3517b29587c3195d03ee4a1a122a880479bffc9` |
-| 2 | `theorem` | [analyticOrderAt_hardyW_ne_top](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SeamNamespaced.lean/declarations/analyticorderat-hardyw-ne-top.md) | 45 | `result-track:6b99e233543ac109289650f637a7d0b4da3cf92507ade63b506eecc08fa8f5a8` |
-| 3 | `theorem` | [wMult_cast](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SeamNamespaced.lean/declarations/wmult-cast.md) | 63 | `result-track:41ecb0af107361a8456b37d1b1e0640e99e32530bca1da26238b6306ab8ae90c` |
-| 4 | `theorem` | [analyticOrderNatAt_hardyW](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SeamNamespaced.lean/declarations/analyticordernatat-hardyw.md) | 66 | `result-track:abd28a330e99729137bd1d3ab58d95fe6888bcd601771c4583d0abe6624aac78` |
-| 5 | `theorem` | [one_le_wMult_iff](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SeamNamespaced.lean/declarations/one-le-wmult-iff.md) | 69 | `result-track:14c36fbec3dbc3ce2169d3e621fa3bf883478bf74fbc5be5e11eba694d425b72` |
-| 6 | `theorem` | [finite_upper](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SeamNamespaced.lean/declarations/finite-upper.md) | 81 | `result-track:05643f8024151876547628c8cb174734743e27f7944936c288e2687514c52973` |
-| 7 | `theorem` | [finite_lower](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SeamNamespaced.lean/declarations/finite-lower.md) | 115 | `result-track:a89c77606fd66bf93769fa6c1fc23dab0319d04c0ef67191ba25af481be96248` |
-| 8 | `theorem` | [finite_window_W](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SeamNamespaced.lean/declarations/finite-window-w.md) | 124 | `result-track:a7ddfe4040a5aec28bf72b067fe8b4b333b52786eb9e2370b02cb8f8528421da` |
-| 9 | `theorem` | [wSeam_of_strip](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SeamNamespaced.lean/declarations/wseam-of-strip.md) | 135 | `result-track:1122aa2df7d67552d6caa3138d928f5a711a740bb7474167a8f0f2a079254263` |
+| 1 | `instance` | [instContinuousSMulRealComplex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SeamNamespaced.lean/declarations/instcontinuoussmulrealcomplex.md) | 37 | `declaration-track:27d106008c5b680b859af098c3517b29587c3195d03ee4a1a122a880479bffc9` |
+| 2 | `theorem` | [analyticOrderAt_hardyW_ne_top](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SeamNamespaced.lean/declarations/analyticorderat-hardyw-ne-top.md) | 45 | `result-track:6b99e233543ac109289650f637a7d0b4da3cf92507ade63b506eecc08fa8f5a8` |
+| 3 | `theorem` | [wMult_cast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SeamNamespaced.lean/declarations/wmult-cast.md) | 63 | `result-track:41ecb0af107361a8456b37d1b1e0640e99e32530bca1da26238b6306ab8ae90c` |
+| 4 | `theorem` | [analyticOrderNatAt_hardyW](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SeamNamespaced.lean/declarations/analyticordernatat-hardyw.md) | 66 | `result-track:abd28a330e99729137bd1d3ab58d95fe6888bcd601771c4583d0abe6624aac78` |
+| 5 | `theorem` | [one_le_wMult_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SeamNamespaced.lean/declarations/one-le-wmult-iff.md) | 69 | `result-track:14c36fbec3dbc3ce2169d3e621fa3bf883478bf74fbc5be5e11eba694d425b72` |
+| 6 | `theorem` | [finite_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SeamNamespaced.lean/declarations/finite-upper.md) | 81 | `result-track:05643f8024151876547628c8cb174734743e27f7944936c288e2687514c52973` |
+| 7 | `theorem` | [finite_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SeamNamespaced.lean/declarations/finite-lower.md) | 115 | `result-track:a89c77606fd66bf93769fa6c1fc23dab0319d04c0ef67191ba25af481be96248` |
+| 8 | `theorem` | [finite_window_W](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SeamNamespaced.lean/declarations/finite-window-w.md) | 124 | `result-track:a7ddfe4040a5aec28bf72b067fe8b4b333b52786eb9e2370b02cb8f8528421da` |
+| 9 | `theorem` | [wSeam_of_strip](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SeamNamespaced.lean/declarations/wseam-of-strip.md) | 135 | `result-track:1122aa2df7d67552d6caa3138d928f5a711a740bb7474167a8f0f2a079254263` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

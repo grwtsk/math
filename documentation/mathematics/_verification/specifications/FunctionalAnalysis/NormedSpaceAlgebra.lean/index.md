@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/NormedSpaceAlgebra.lean/index.md) · [Full source](../../../../FunctionalAnalysis/NormedSpaceAlgebra.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceAlgebra.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceAlgebra.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [norm_le_norm_one](../../../../FunctionalAnalysis/NormedSpaceAlgebra.lean/declarations/norm-le-norm-one.md) | 40 | `result-track:bbc4bbefd20faa58efcb52a599deaed612b9bf48d29be81bb11402febacd8a52` |
-| 2 | `instance` | [(anonymous)](../../../../FunctionalAnalysis/NormedSpaceAlgebra.lean/declarations/instance.md) | 45 | `declaration-track:510f1efa50bbe41ffd626a650d65cae42a54e2aa3405acfebeae37b871349944` |
+| 1 | `theorem` | [norm_le_norm_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceAlgebra.lean/declarations/norm-le-norm-one.md) | 40 | `result-track:bbc4bbefd20faa58efcb52a599deaed612b9bf48d29be81bb11402febacd8a52` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceAlgebra.lean/declarations/instance.md) | 45 | `declaration-track:510f1efa50bbe41ffd626a650d65cae42a54e2aa3405acfebeae37b871349944` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

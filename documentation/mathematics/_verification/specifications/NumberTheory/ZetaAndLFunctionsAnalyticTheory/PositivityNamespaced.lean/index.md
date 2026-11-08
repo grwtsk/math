@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PositivityNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PositivityNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PositivityNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PositivityNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,12 +60,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [iteratedDeriv_alternating](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PositivityNamespaced.lean/declarations/iteratedderiv-alternating.md) | 44 | `result-track:0c03fb7c74bca27a2c82b4c7ed1d933ac9f1f989c90ba61eb9d4fc336fb193bf` |
-| 2 | `lemma` | [positive](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PositivityNamespaced.lean/declarations/positive.md) | 63 | `result-track:d655162ac3acf922e4f143ad2e20e18f15411aae0104af46014102cbccebf65b` |
-| 3 | `lemma` | [positive_of_differentiable_of_eqOn](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PositivityNamespaced.lean/declarations/positive-of-differentiable-of-eqon.md) | 72 | `result-track:f4e65f45fd6a9882dfdca8a517fca9a9da288396e2afefcee8cd6ddbf185c093` |
-| 4 | `lemma` | [iteratedDeriv_LSeries_alternating](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PositivityNamespaced.lean/declarations/iteratedderiv-lseries-alternating.md) | 96 | `result-track:291621e408f5fb8ac11f01cb66bd439fd0d3d67b6e6f799f041f2f645dcdcb88` |
-| 5 | `lemma` | [LSeries_positive](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PositivityNamespaced.lean/declarations/lseries-positive.md) | 103 | `result-track:680729ef82877e193350863529e6c1382af3b3f1015d383467c9935fa06d1253` |
-| 6 | `lemma` | [LSeries_positive_of_differentiable_of_eqOn](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PositivityNamespaced.lean/declarations/lseries-positive-of-differentiable-of-eqon.md) | 111 | `result-track:b4e65919db88f99daa256dd0b2a0ed509a51db302ee7ed5b75f2adb2c1c6c26a` |
+| 1 | `lemma` | [iteratedDeriv_alternating](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PositivityNamespaced.lean/declarations/iteratedderiv-alternating.md) | 44 | `result-track:0c03fb7c74bca27a2c82b4c7ed1d933ac9f1f989c90ba61eb9d4fc336fb193bf` |
+| 2 | `lemma` | [positive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PositivityNamespaced.lean/declarations/positive.md) | 63 | `result-track:d655162ac3acf922e4f143ad2e20e18f15411aae0104af46014102cbccebf65b` |
+| 3 | `lemma` | [positive_of_differentiable_of_eqOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PositivityNamespaced.lean/declarations/positive-of-differentiable-of-eqon.md) | 72 | `result-track:f4e65f45fd6a9882dfdca8a517fca9a9da288396e2afefcee8cd6ddbf185c093` |
+| 4 | `lemma` | [iteratedDeriv_LSeries_alternating](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PositivityNamespaced.lean/declarations/iteratedderiv-lseries-alternating.md) | 96 | `result-track:291621e408f5fb8ac11f01cb66bd439fd0d3d67b6e6f799f041f2f645dcdcb88` |
+| 5 | `lemma` | [LSeries_positive](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PositivityNamespaced.lean/declarations/lseries-positive.md) | 103 | `result-track:680729ef82877e193350863529e6c1382af3b3f1015d383467c9935fa06d1253` |
+| 6 | `lemma` | [LSeries_positive_of_differentiable_of_eqOn](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PositivityNamespaced.lean/declarations/lseries-positive-of-differentiable-of-eqon.md) | 111 | `result-track:b4e65919db88f99daa256dd0b2a0ed509a51db302ee7ed5b75f2adb2c1c6c26a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

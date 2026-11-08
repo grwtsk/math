@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239NativeTwoTorsion.lean/index.md) · [Full source](../../../../../NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239NativeTwoTorsion.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239NativeTwoTorsion.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239NativeTwoTorsion.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.Record4239NegationObstruction`](../../../../../NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239NegationObstruction.lean/index.md) — import line 13; pinned internal source present.
+- [`GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.Record4239NegationObstruction`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239NegationObstruction.lean/index.md) — import line 13; pinned internal source present.
 - `Mathlib.AlgebraicGeometry.EllipticCurve.Affine.Point` — import line 14; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric
@@ -58,16 +58,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [nativeCurve](../../../../../NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239NativeTwoTorsion.lean/declarations/nativecurve.md) | 48 | `declaration-track:31242fa41071cd64021fb6f69ed0af4cce273f3a0ccce52eff5b0c6039966247` |
-| 2 | `theorem` | [nativeEquation_iff](../../../../../NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239NativeTwoTorsion.lean/declarations/nativeequation-iff.md) | 56 | `result-track:26139f3ab4071fb477ca9df75933249f4480b4a2fa84cc38fdc78daff49337ab` |
-| 3 | `theorem` | [nativeDiscriminant_eq](../../../../../NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239NativeTwoTorsion.lean/declarations/nativediscriminant-eq.md) | 64 | `result-track:0ba0120dc24df67fdc7705a9eaabce96af6a1fa468b84cdb53b3af4dd50676eb` |
-| 4 | `theorem` | [nativeDiscriminant_ne_zero](../../../../../NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239NativeTwoTorsion.lean/declarations/nativediscriminant-ne-zero.md) | 71 | `result-track:28f29499e9b6ac443b1d1097bfd4db46a9141e46880cece9394f9e32be399230` |
-| 5 | `instance` | [(anonymous)](../../../../../NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239NativeTwoTorsion.lean/declarations/instance.md) | 77 | `declaration-track:2f6b7a3f4988acdf927bcb3ae96a762dc0354c6a0f5e3108c33ab0a5981a7f80` |
-| 6 | `def` | [nativePoint](../../../../../NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239NativeTwoTorsion.lean/declarations/nativepoint.md) | 82 | `declaration-track:ad31e35baf0fccee34a830382d45a6300f8d2ab5bb96243d709c8cca89f27321` |
-| 7 | `theorem` | [nativeNegY](../../../../../NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239NativeTwoTorsion.lean/declarations/nativenegy.md) | 88 | `result-track:5aa84998244a2b49fae1ab2aafcac8d3b66332044c508c40e25c8e9f58de2c28` |
-| 8 | `theorem` | [nativePoint_eq_neg_imp_zero](../../../../../NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239NativeTwoTorsion.lean/declarations/nativepoint-eq-neg-imp-zero.md) | 95 | `result-track:b1f44bd48fb59fe575948968acb67f0ada28a33b47873decfb0cd1edb25e56fe` |
-| 9 | `theorem` | [nativeNoTwoTorsion](../../../../../NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239NativeTwoTorsion.lean/declarations/nativenotwotorsion.md) | 115 | `result-track:24669ae203b40979505d7e815453d8cfc3fe800f55c903fcb091ee77f84f7159` |
-| 10 | `theorem` | [nativeNoTwoTorsion_for_descent](../../../../../NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239NativeTwoTorsion.lean/declarations/nativenotwotorsion-for-descent.md) | 124 | `result-track:73576b70b3fb0938a0dc1e08e7e6e135f605954d42ad0d0b3f82c81aed823009` |
+| 1 | `def` | [nativeCurve](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239NativeTwoTorsion.lean/declarations/nativecurve.md) | 48 | `declaration-track:31242fa41071cd64021fb6f69ed0af4cce273f3a0ccce52eff5b0c6039966247` |
+| 2 | `theorem` | [nativeEquation_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239NativeTwoTorsion.lean/declarations/nativeequation-iff.md) | 56 | `result-track:26139f3ab4071fb477ca9df75933249f4480b4a2fa84cc38fdc78daff49337ab` |
+| 3 | `theorem` | [nativeDiscriminant_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239NativeTwoTorsion.lean/declarations/nativediscriminant-eq.md) | 64 | `result-track:0ba0120dc24df67fdc7705a9eaabce96af6a1fa468b84cdb53b3af4dd50676eb` |
+| 4 | `theorem` | [nativeDiscriminant_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239NativeTwoTorsion.lean/declarations/nativediscriminant-ne-zero.md) | 71 | `result-track:28f29499e9b6ac443b1d1097bfd4db46a9141e46880cece9394f9e32be399230` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239NativeTwoTorsion.lean/declarations/instance.md) | 77 | `declaration-track:2f6b7a3f4988acdf927bcb3ae96a762dc0354c6a0f5e3108c33ab0a5981a7f80` |
+| 6 | `def` | [nativePoint](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239NativeTwoTorsion.lean/declarations/nativepoint.md) | 82 | `declaration-track:ad31e35baf0fccee34a830382d45a6300f8d2ab5bb96243d709c8cca89f27321` |
+| 7 | `theorem` | [nativeNegY](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239NativeTwoTorsion.lean/declarations/nativenegy.md) | 88 | `result-track:5aa84998244a2b49fae1ab2aafcac8d3b66332044c508c40e25c8e9f58de2c28` |
+| 8 | `theorem` | [nativePoint_eq_neg_imp_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239NativeTwoTorsion.lean/declarations/nativepoint-eq-neg-imp-zero.md) | 95 | `result-track:b1f44bd48fb59fe575948968acb67f0ada28a33b47873decfb0cd1edb25e56fe` |
+| 9 | `theorem` | [nativeNoTwoTorsion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239NativeTwoTorsion.lean/declarations/nativenotwotorsion.md) | 115 | `result-track:24669ae203b40979505d7e815453d8cfc3fe800f55c903fcb091ee77f84f7159` |
+| 10 | `theorem` | [nativeNoTwoTorsion_for_descent](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239NativeTwoTorsion.lean/declarations/nativenotwotorsion-for-descent.md) | 124 | `result-track:73576b70b3fb0938a0dc1e08e7e6e135f605954d42ad0d0b3f82c81aed823009` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

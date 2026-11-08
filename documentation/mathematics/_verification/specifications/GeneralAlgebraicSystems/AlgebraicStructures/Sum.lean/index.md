@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Sum.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Sum.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Sum.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Sum.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,7 +58,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [packetIncrementSum](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/Sum.lean/declarations/packetincrementsum.md) | 12 | `declaration-track:ff16fb73fada623ba9683239f707b1eaadda2fd59308400fd3af2a21941de3b4` |
+| 1 | `def` | [packetIncrementSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/Sum.lean/declarations/packetincrementsum.md) | 12 | `declaration-track:ff16fb73fada623ba9683239f707b1eaadda2fd59308400fd3af2a21941de3b4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

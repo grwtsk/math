@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProofNamespacedEdition35.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProofNamespacedEdition35.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProofNamespacedEdition35.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProofNamespacedEdition35.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -62,7 +62,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [aggregate_is_finite_witness_surface](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ProofNamespacedEdition35.lean/declarations/aggregate-is-finite-witness-surface.md) | 18 | `result-track:afa75e7dd249673353e9328ec31af302de695b0bf3924e5e41e8d75b076bad8d` |
+| 1 | `theorem` | [aggregate_is_finite_witness_surface](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/ProofNamespacedEdition35.lean/declarations/aggregate-is-finite-witness-surface.md) | 18 | `result-track:afa75e7dd249673353e9328ec31af302de695b0bf3924e5e41e8d75b076bad8d` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MyNatNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MyNatNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MyNatNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MyNatNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [MyNat](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MyNatNamespaced.lean/declarations/mynat.md) | 12 | `declaration-track:98e4647eff92f989353d5fce8235e42c7a5b26e51fe0bd3f95f75e7a87b320c4` |
-| 2 | `def` | [add](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MyNatNamespaced.lean/declarations/add.md) | 24 | `declaration-track:c618b39424ba0d0abc9fb8dc6460eb73649ec361235166c6d0e290184c98bc68` |
-| 3 | `theorem` | [zero_add](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MyNatNamespaced.lean/declarations/zero-add.md) | 31 | `result-track:628452142182f0685ace4bf56299a67529809c11245756539714682622ba2db3` |
-| 4 | `theorem` | [succ_add](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MyNatNamespaced.lean/declarations/succ-add.md) | 37 | `result-track:996df0dc29fdfd9b830f941379ae54eac1cd0febf2c5aa8774845da7667eca93` |
-| 5 | `theorem` | [add_comm](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MyNatNamespaced.lean/declarations/add-comm.md) | 44 | `result-track:719a1591b12070ba19f1fdbb55b89e39676363084008a5c483dde0004b0ee226` |
-| 6 | `def` | [mul](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MyNatNamespaced.lean/declarations/mul.md) | 59 | `declaration-track:939114cc7d7999dbcbbbd2e7ceacc29f950062e0ab0fba1b215ce5460a8fbe65` |
-| 7 | `theorem` | [mul_comm](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MyNatNamespaced.lean/declarations/mul-comm.md) | 63 | `result-track:18539628f6a0477b8a6b97954115124244912e3e5f4e5990748b947075beefe1` |
-| 8 | `theorem` | [flt](../../../../../MathematicalLogicAndFoundations/GeneralLogic/MyNatNamespaced.lean/declarations/flt.md) | 76 | `result-track:bbebdac4bd87d94e0efdc0309e78f86d11c19fd12723f15e729828c172c6e8d0` |
+| 1 | `inductive` | [MyNat](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MyNatNamespaced.lean/declarations/mynat.md) | 12 | `declaration-track:98e4647eff92f989353d5fce8235e42c7a5b26e51fe0bd3f95f75e7a87b320c4` |
+| 2 | `def` | [add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MyNatNamespaced.lean/declarations/add.md) | 24 | `declaration-track:c618b39424ba0d0abc9fb8dc6460eb73649ec361235166c6d0e290184c98bc68` |
+| 3 | `theorem` | [zero_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MyNatNamespaced.lean/declarations/zero-add.md) | 31 | `result-track:628452142182f0685ace4bf56299a67529809c11245756539714682622ba2db3` |
+| 4 | `theorem` | [succ_add](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MyNatNamespaced.lean/declarations/succ-add.md) | 37 | `result-track:996df0dc29fdfd9b830f941379ae54eac1cd0febf2c5aa8774845da7667eca93` |
+| 5 | `theorem` | [add_comm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MyNatNamespaced.lean/declarations/add-comm.md) | 44 | `result-track:719a1591b12070ba19f1fdbb55b89e39676363084008a5c483dde0004b0ee226` |
+| 6 | `def` | [mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MyNatNamespaced.lean/declarations/mul.md) | 59 | `declaration-track:939114cc7d7999dbcbbbd2e7ceacc29f950062e0ab0fba1b215ce5460a8fbe65` |
+| 7 | `theorem` | [mul_comm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MyNatNamespaced.lean/declarations/mul-comm.md) | 63 | `result-track:18539628f6a0477b8a6b97954115124244912e3e5f4e5990748b947075beefe1` |
+| 8 | `theorem` | [flt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/MyNatNamespaced.lean/declarations/flt.md) | 76 | `result-track:bbebdac4bd87d94e0efdc0309e78f86d11c19fd12723f15e729828c172c6e8d0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

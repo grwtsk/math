@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCriticalDirectBudget.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCriticalDirectBudget.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCriticalDirectBudget.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCriticalDirectBudget.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,12 +58,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [criticalBaselineCorrection](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCriticalDirectBudget.lean/declarations/criticalbaselinecorrection.md) | 26 | `declaration-track:3a217b8d3687b04effba620b98016130a4f4c4edad05bfd6d324e8aa2efd385e` |
-| 2 | `theorem` | [criticalBaselineCorrection_eq_actual](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCriticalDirectBudget.lean/declarations/criticalbaselinecorrection-eq-actual.md) | 29 | `result-track:55d0b166ce608c528d728f90a1ea9056a498ecbf1731913a65bc6458251d26dc` |
-| 3 | `theorem` | [criticalBaselineCorrection_antitone](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCriticalDirectBudget.lean/declarations/criticalbaselinecorrection-antitone.md) | 38 | `result-track:b005b1af0312f38a190f132d274f57ae01d9168e000e5930ee69a6a01f732e4b` |
-| 4 | `theorem` | [criticalBaselineCorrection_negative_of_six_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCriticalDirectBudget.lean/declarations/criticalbaselinecorrection-negative-of-six-le.md) | 52 | `result-track:3cc15afb47f74f498fe20050be2667944903b2a037fba3cb019a2f41947d9e8c` |
-| 5 | `theorem` | [residual_upper_of_criticalRelative_tail](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCriticalDirectBudget.lean/declarations/residual-upper-of-criticalrelative-tail.md) | 61 | `result-track:66816a7103b884fbb7b5e4c95bf1109a097472fd90cf6e52f40932d21b1ec426` |
-| 6 | `theorem` | [all_real_source_lower_of_criticalRelative_tail](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCriticalDirectBudget.lean/declarations/all-real-source-lower-of-criticalrelative-tail.md) | 71 | `result-track:bd43950ff5cfbeb15867fc7304ca35ad8cd23c71fdd4e163b5da761ff9a0f9fc` |
+| 1 | `def` | [criticalBaselineCorrection](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCriticalDirectBudget.lean/declarations/criticalbaselinecorrection.md) | 26 | `declaration-track:3a217b8d3687b04effba620b98016130a4f4c4edad05bfd6d324e8aa2efd385e` |
+| 2 | `theorem` | [criticalBaselineCorrection_eq_actual](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCriticalDirectBudget.lean/declarations/criticalbaselinecorrection-eq-actual.md) | 29 | `result-track:55d0b166ce608c528d728f90a1ea9056a498ecbf1731913a65bc6458251d26dc` |
+| 3 | `theorem` | [criticalBaselineCorrection_antitone](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCriticalDirectBudget.lean/declarations/criticalbaselinecorrection-antitone.md) | 38 | `result-track:b005b1af0312f38a190f132d274f57ae01d9168e000e5930ee69a6a01f732e4b` |
+| 4 | `theorem` | [criticalBaselineCorrection_negative_of_six_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCriticalDirectBudget.lean/declarations/criticalbaselinecorrection-negative-of-six-le.md) | 52 | `result-track:3cc15afb47f74f498fe20050be2667944903b2a037fba3cb019a2f41947d9e8c` |
+| 5 | `theorem` | [residual_upper_of_criticalRelative_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCriticalDirectBudget.lean/declarations/residual-upper-of-criticalrelative-tail.md) | 61 | `result-track:66816a7103b884fbb7b5e4c95bf1109a097472fd90cf6e52f40932d21b1ec426` |
+| 6 | `theorem` | [all_real_source_lower_of_criticalRelative_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceCriticalDirectBudget.lean/declarations/all-real-source-lower-of-criticalrelative-tail.md) | 71 | `result-track:bd43950ff5cfbeb15867fc7304ca35ad8cd23c71fdd4e163b5da761ff9a0f9fc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

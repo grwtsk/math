@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../AssociativeRingsAndAlgebras/RingMinimalAxiomsEdition1.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/RingMinimalAxiomsEdition1.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingMinimalAxiomsEdition1.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingMinimalAxiomsEdition1.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [Ring.ofMinimalAxioms](../../../../AssociativeRingsAndAlgebras/RingMinimalAxiomsEdition1.lean/declarations/ring-ofminimalaxioms.md) | 30 | `declaration-track:5384cfb041c066626951786e09c1c4b2d50c370ff80ae6a39cfd0bb80e948746` |
-| 2 | `abbrev` | [CommRing.ofMinimalAxioms](../../../../AssociativeRingsAndAlgebras/RingMinimalAxiomsEdition1.lean/declarations/commring-ofminimalaxioms.md) | 75 | `declaration-track:9e42ec824989a430f7a1eda7d9cd8b7f1b368e7eb068558844342a990f34ad2c` |
+| 1 | `abbrev` | [Ring.ofMinimalAxioms](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingMinimalAxiomsEdition1.lean/declarations/ring-ofminimalaxioms.md) | 30 | `declaration-track:5384cfb041c066626951786e09c1c4b2d50c370ff80ae6a39cfd0bb80e948746` |
+| 2 | `abbrev` | [CommRing.ofMinimalAxioms](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/AssociativeRingsAndAlgebras/RingMinimalAxiomsEdition1.lean/declarations/commring-ofminimalaxioms.md) | 75 | `declaration-track:9e42ec824989a430f7a1eda7d9cd8b7f1b368e7eb068558844342a990f34ad2c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

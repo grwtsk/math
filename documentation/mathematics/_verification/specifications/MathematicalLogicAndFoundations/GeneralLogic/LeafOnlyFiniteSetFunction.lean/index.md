@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LeafOnlyFiniteSetFunction.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LeafOnlyFiniteSetFunction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LeafOnlyFiniteSetFunction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LeafOnlyFiniteSetFunction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [Complete Interface And Judgment Views](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompleteInterfaceAndJudgmentViews.lean/index.md) — import line 17; pinned internal source present.
+- [Complete Interface And Judgment Views](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/CompleteInterfaceAndJudgmentViews.lean/index.md) — import line 17; pinned internal source present.
 - `Mathlib.Data.Finset.Union` — import line 19; external provider; requires a separately pinned dependency.
 - `Atomize.Formal.ScopedJudgment` — import line 20; external provider; requires a separately pinned dependency.
 
@@ -59,7 +59,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ruleLeafOrigins](../../../../../MathematicalLogicAndFoundations/GeneralLogic/LeafOnlyFiniteSetFunction.lean/declarations/ruleleaforigins.md) | 94 | `declaration-track:051c63c4a74225668f309e6a4f5c80edb4e85f9ea340f0b25a83dd4291bb3c7f` |
+| 1 | `def` | [ruleLeafOrigins](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/LeafOnlyFiniteSetFunction.lean/declarations/ruleleaforigins.md) | 94 | `declaration-track:051c63c4a74225668f309e6a4f5c80edb4e85f9ea340f0b25a83dd4291bb3c7f` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

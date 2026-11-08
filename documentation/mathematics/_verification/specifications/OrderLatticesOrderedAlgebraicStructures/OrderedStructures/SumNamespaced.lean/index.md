@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SumNamespaced.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SumNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SumNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SumNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,10 +59,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [sum_le_sum_Ioc](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SumNamespaced.lean/declarations/sum-le-sum-ioc.md) | 31 | `result-track:14670b881c2f78aaae905d61f99d4bfb82ba254442cc39729d518121e27e1423` |
-| 2 | `lemma` | [sum_le_sum_range](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SumNamespaced.lean/declarations/sum-le-sum-range.md) | 51 | `result-track:cc1201df264fce2a0910efbee970776c6bd27a41355c37756326b5b0c3e07548` |
-| 3 | `lemma` | [sum_Ico_le_sum](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SumNamespaced.lean/declarations/sum-ico-le-sum.md) | 62 | `result-track:245105b0aa6227058d9fa53a313bc1228707c60a864b296aa7e3d76a2641b6a4` |
-| 4 | `lemma` | [sum_range_le_sum](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SumNamespaced.lean/declarations/sum-range-le-sum.md) | 80 | `result-track:a5db160c499eba6c0ce838f2ecd16d896333104a105f9cea702a48055fdffb82` |
+| 1 | `lemma` | [sum_le_sum_Ioc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SumNamespaced.lean/declarations/sum-le-sum-ioc.md) | 31 | `result-track:14670b881c2f78aaae905d61f99d4bfb82ba254442cc39729d518121e27e1423` |
+| 2 | `lemma` | [sum_le_sum_range](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SumNamespaced.lean/declarations/sum-le-sum-range.md) | 51 | `result-track:cc1201df264fce2a0910efbee970776c6bd27a41355c37756326b5b0c3e07548` |
+| 3 | `lemma` | [sum_Ico_le_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SumNamespaced.lean/declarations/sum-ico-le-sum.md) | 62 | `result-track:245105b0aa6227058d9fa53a313bc1228707c60a864b296aa7e3d76a2641b6a4` |
+| 4 | `lemma` | [sum_range_le_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/SumNamespaced.lean/declarations/sum-range-le-sum.md) | 80 | `result-track:a5db160c499eba6c0ce838f2ecd16d896333104a105f9cea702a48055fdffb82` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ExtraNamespacedPublicByteArray.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ExtraNamespacedPublicByteArray.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExtraNamespacedPublicByteArray.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExtraNamespacedPublicByteArray.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [ByteArray.toUInt64LE!](../../../../../ComputerScience/AlgorithmsInComputerScience/ExtraNamespacedPublicByteArray.lean/declarations/bytearray-touint64le.md) | 28 | `declaration-track:6177a06fe78784e4fb219ade9b25676315373144a7a13b9f21e747211b7dc5c4` |
-| 2 | `def` | [ByteArray.toUInt64BE!](../../../../../ComputerScience/AlgorithmsInComputerScience/ExtraNamespacedPublicByteArray.lean/declarations/bytearray-touint64be.md) | 44 | `declaration-track:c9d98bd4f658e6beb22ace7756b15ced51fb6b3bb2b650abed65f911e2906408` |
+| 1 | `def` | [ByteArray.toUInt64LE!](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExtraNamespacedPublicByteArray.lean/declarations/bytearray-touint64le.md) | 28 | `declaration-track:6177a06fe78784e4fb219ade9b25676315373144a7a13b9f21e747211b7dc5c4` |
+| 2 | `def` | [ByteArray.toUInt64BE!](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/AlgorithmsInComputerScience/ExtraNamespacedPublicByteArray.lean/declarations/bytearray-touint64be.md) | 44 | `declaration-track:c9d98bd4f658e6beb22ace7756b15ced51fb6b3bb2b650abed65f911e2906408` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

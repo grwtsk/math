@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/ContextNamespacedContext.lean/index.md) · [Full source](../../../../Combinatorics/ContextNamespacedContext.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContextNamespacedContext.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContextNamespacedContext.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [Context](../../../../Combinatorics/ContextNamespacedContext.lean/declarations/context.md) | 17 | `declaration-track:70fd9543919acf17ba8a48dae866d6377f653d06a66ba6f644db0405c81bdf51` |
-| 2 | `structure` | [ContextDependency](../../../../Combinatorics/ContextNamespacedContext.lean/declarations/contextdependency.md) | 30 | `declaration-track:00e4fae70b1b436c443d7cc9cb95c4f7a242619d5303c51a2d5827ffc5bba13e` |
-| 3 | `def` | [ContextRefines](../../../../Combinatorics/ContextNamespacedContext.lean/declarations/contextrefines.md) | 34 | `declaration-track:7453d68b0f9e001c3b0ddd83a67b1c3ebf4d572623c6e0c5fea7975844caa6f4` |
-| 4 | `structure` | [ContextTransportCertificate](../../../../Combinatorics/ContextNamespacedContext.lean/declarations/contexttransportcertificate.md) | 45 | `declaration-track:0f6a965d9df98f566e3e7ce6092d9b9dedd38c817ad415e37d0abd56de52617c` |
-| 5 | `structure` | [ContextSufficiencyCertificate](../../../../Combinatorics/ContextNamespacedContext.lean/declarations/contextsufficiencycertificate.md) | 55 | `declaration-track:16b37212da6c15b4cf689163915f43b5c827b1f18351e200e7fff9944997219f` |
-| 6 | `structure` | [ContextSufficiencyRecord](../../../../Combinatorics/ContextNamespacedContext.lean/declarations/contextsufficiencyrecord.md) | 75 | `declaration-track:a2119ad748737f48eb13c986d11d586d2e41013384fb9fff57bf0a1bc1db4808` |
-| 7 | `theorem` | [contextRefines_refl](../../../../Combinatorics/ContextNamespacedContext.lean/declarations/contextrefines-refl.md) | 83 | `result-track:c96635d7f29ecbff0d4f0ca332a2d2af911be13f4e1c046bc11aefef40eff16f` |
-| 8 | `theorem` | [contextRefines_trans](../../../../Combinatorics/ContextNamespacedContext.lean/declarations/contextrefines-trans.md) | 88 | `result-track:b9a3fc96ecab44bf2950eed79abdfde2c5420f0507b66a04cf0a1fae807d7280` |
-| 9 | `def` | [ContextTransportAuthorizes](../../../../Combinatorics/ContextNamespacedContext.lean/declarations/contexttransportauthorizes.md) | 118 | `declaration-track:1fe39c1fa8017ad623a499509d43946b8dbabcea88d87a89d303e3c80b009d61` |
+| 1 | `structure` | [Context](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContextNamespacedContext.lean/declarations/context.md) | 17 | `declaration-track:70fd9543919acf17ba8a48dae866d6377f653d06a66ba6f644db0405c81bdf51` |
+| 2 | `structure` | [ContextDependency](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContextNamespacedContext.lean/declarations/contextdependency.md) | 30 | `declaration-track:00e4fae70b1b436c443d7cc9cb95c4f7a242619d5303c51a2d5827ffc5bba13e` |
+| 3 | `def` | [ContextRefines](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContextNamespacedContext.lean/declarations/contextrefines.md) | 34 | `declaration-track:7453d68b0f9e001c3b0ddd83a67b1c3ebf4d572623c6e0c5fea7975844caa6f4` |
+| 4 | `structure` | [ContextTransportCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContextNamespacedContext.lean/declarations/contexttransportcertificate.md) | 45 | `declaration-track:0f6a965d9df98f566e3e7ce6092d9b9dedd38c817ad415e37d0abd56de52617c` |
+| 5 | `structure` | [ContextSufficiencyCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContextNamespacedContext.lean/declarations/contextsufficiencycertificate.md) | 55 | `declaration-track:16b37212da6c15b4cf689163915f43b5c827b1f18351e200e7fff9944997219f` |
+| 6 | `structure` | [ContextSufficiencyRecord](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContextNamespacedContext.lean/declarations/contextsufficiencyrecord.md) | 75 | `declaration-track:a2119ad748737f48eb13c986d11d586d2e41013384fb9fff57bf0a1bc1db4808` |
+| 7 | `theorem` | [contextRefines_refl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContextNamespacedContext.lean/declarations/contextrefines-refl.md) | 83 | `result-track:c96635d7f29ecbff0d4f0ca332a2d2af911be13f4e1c046bc11aefef40eff16f` |
+| 8 | `theorem` | [contextRefines_trans](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContextNamespacedContext.lean/declarations/contextrefines-trans.md) | 88 | `result-track:b9a3fc96ecab44bf2950eed79abdfde2c5420f0507b66a04cf0a1fae807d7280` |
+| 9 | `def` | [ContextTransportAuthorizes](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/ContextNamespacedContext.lean/declarations/contexttransportauthorizes.md) | 118 | `declaration-track:1fe39c1fa8017ad623a499509d43946b8dbabcea88d87a89d303e3c80b009d61` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

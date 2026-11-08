@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../NumberTheory/BertrandNamespaced.lean/index.md) · [Full source](../../../../NumberTheory/BertrandNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/BertrandNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/BertrandNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,15 +58,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [bertrandProfile](../../../../NumberTheory/BertrandNamespaced.lean/declarations/bertrandprofile.md) | 15 | `declaration-track:50ea114232bb54d2433daa1e172b86369c9e31624add04be471d963d66c49b1a` |
-| 2 | `def` | [bertrandPrimeSourceProfile](../../../../NumberTheory/BertrandNamespaced.lean/declarations/bertrandprimesourceprofile.md) | 33 | `declaration-track:fc4c961269e1a5955f678c4feb1f1d9e767f6149550544cf72ca636ea3ad3fdf` |
-| 3 | `theorem` | [bertrandProof](../../../../NumberTheory/BertrandNamespaced.lean/declarations/bertrandproof.md) | 51 | `result-track:5aa348ad88e6bc282b2835d2c16ac7a4af4688fd133a3741978c66b0681661d5` |
-| 4 | `theorem` | [bertrandAdmissible](../../../../NumberTheory/BertrandNamespaced.lean/declarations/bertrandadmissible.md) | 65 | `result-track:c6e0810fb6ac2d6380ec8092fb69aefb06a587ed09fb243bcec8d89a30682f15` |
-| 5 | `theorem` | [bertrandIntervalClaim](../../../../NumberTheory/BertrandNamespaced.lean/declarations/bertrandintervalclaim.md) | 74 | `result-track:dca2056893a87bf30af118094455fd5a8c789f99e2ef0dcfcf5930c83922ee3c` |
-| 6 | `def` | [bertrandCertifiedTheorem](../../../../NumberTheory/BertrandNamespaced.lean/declarations/bertrandcertifiedtheorem.md) | 80 | `declaration-track:57cf4ddffe7987365d9040bcf97e003556dbb30bcf4cf458553df0ea20490c8e` |
-| 7 | `def` | [bertrandPrimeSourceRefines](../../../../NumberTheory/BertrandNamespaced.lean/declarations/bertrandprimesourcerefines.md) | 91 | `declaration-track:ce1197889ad5eaad3df8f7d0b11df4cc52329be8a281efc5a071247e2b0aec85` |
-| 8 | `theorem` | [bertrandPrimeSourceIntervalClaim](../../../../NumberTheory/BertrandNamespaced.lean/declarations/bertrandprimesourceintervalclaim.md) | 108 | `result-track:1c1aac8bf768b3e2af83e6353c5a409f3853de96f8856583247f23685c7cdb5a` |
-| 9 | `def` | [bertrandPrimeSourceCertifiedTheorem](../../../../NumberTheory/BertrandNamespaced.lean/declarations/bertrandprimesourcecertifiedtheorem.md) | 113 | `declaration-track:f0790a08ec7a519c1c9d1822d1d0402df460c579caf4a6d2bde1b1ffa77282e7` |
+| 1 | `def` | [bertrandProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/BertrandNamespaced.lean/declarations/bertrandprofile.md) | 15 | `declaration-track:50ea114232bb54d2433daa1e172b86369c9e31624add04be471d963d66c49b1a` |
+| 2 | `def` | [bertrandPrimeSourceProfile](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/BertrandNamespaced.lean/declarations/bertrandprimesourceprofile.md) | 33 | `declaration-track:fc4c961269e1a5955f678c4feb1f1d9e767f6149550544cf72ca636ea3ad3fdf` |
+| 3 | `theorem` | [bertrandProof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/BertrandNamespaced.lean/declarations/bertrandproof.md) | 51 | `result-track:5aa348ad88e6bc282b2835d2c16ac7a4af4688fd133a3741978c66b0681661d5` |
+| 4 | `theorem` | [bertrandAdmissible](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/BertrandNamespaced.lean/declarations/bertrandadmissible.md) | 65 | `result-track:c6e0810fb6ac2d6380ec8092fb69aefb06a587ed09fb243bcec8d89a30682f15` |
+| 5 | `theorem` | [bertrandIntervalClaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/BertrandNamespaced.lean/declarations/bertrandintervalclaim.md) | 74 | `result-track:dca2056893a87bf30af118094455fd5a8c789f99e2ef0dcfcf5930c83922ee3c` |
+| 6 | `def` | [bertrandCertifiedTheorem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/BertrandNamespaced.lean/declarations/bertrandcertifiedtheorem.md) | 80 | `declaration-track:57cf4ddffe7987365d9040bcf97e003556dbb30bcf4cf458553df0ea20490c8e` |
+| 7 | `def` | [bertrandPrimeSourceRefines](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/BertrandNamespaced.lean/declarations/bertrandprimesourcerefines.md) | 91 | `declaration-track:ce1197889ad5eaad3df8f7d0b11df4cc52329be8a281efc5a071247e2b0aec85` |
+| 8 | `theorem` | [bertrandPrimeSourceIntervalClaim](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/BertrandNamespaced.lean/declarations/bertrandprimesourceintervalclaim.md) | 108 | `result-track:1c1aac8bf768b3e2af83e6353c5a409f3853de96f8856583247f23685c7cdb5a` |
+| 9 | `def` | [bertrandPrimeSourceCertifiedTheorem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/BertrandNamespaced.lean/declarations/bertrandprimesourcecertifiedtheorem.md) | 113 | `declaration-track:f0790a08ec7a519c1c9d1822d1d0402df460c579caf4a6d2bde1b1ffa77282e7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

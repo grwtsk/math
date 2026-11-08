@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/CommutatorFiniteNamespaced.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/CommutatorFiniteNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CommutatorFiniteNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CommutatorFiniteNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,9 +60,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [commutator_pi_pi_of_finite](../../../../GroupTheoryAndGeneralizations/CommutatorFiniteNamespaced.lean/declarations/commutator-pi-pi-of-finite.md) | 28 | `result-track:c090ef7d087932eef098d156f58a842522e7621c6adbd7d65ca571169a9b2df3` |
-| 2 | `instance` | [finiteIndex_center](../../../../GroupTheoryAndGeneralizations/CommutatorFiniteNamespaced.lean/declarations/finiteindex-center.md) | 47 | `declaration-track:ca616b68303f29c3073d203e061826b3f15fd62c0e72825393bdf7ca03cd4c0d` |
-| 3 | `lemma` | [index_center_le_pow](../../../../GroupTheoryAndGeneralizations/CommutatorFiniteNamespaced.lean/declarations/index-center-le-pow.md) | 51 | `result-track:4ae95e06082a79df2045905d15072ae208e913722b9ec4d3dbc5bfb59e4fb204` |
+| 1 | `theorem` | [commutator_pi_pi_of_finite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CommutatorFiniteNamespaced.lean/declarations/commutator-pi-pi-of-finite.md) | 28 | `result-track:c090ef7d087932eef098d156f58a842522e7621c6adbd7d65ca571169a9b2df3` |
+| 2 | `instance` | [finiteIndex_center](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CommutatorFiniteNamespaced.lean/declarations/finiteindex-center.md) | 47 | `declaration-track:ca616b68303f29c3073d203e061826b3f15fd62c0e72825393bdf7ca03cd4c0d` |
+| 3 | `lemma` | [index_center_le_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/CommutatorFiniteNamespaced.lean/declarations/index-center-le-pow.md) | 51 | `result-track:4ae95e06082a79df2045905d15072ae208e913722b9ec4d3dbc5bfb59e4fb204` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

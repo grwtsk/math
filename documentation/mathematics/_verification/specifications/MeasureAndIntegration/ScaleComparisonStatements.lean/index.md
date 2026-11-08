@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ScaleComparisonStatements.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ScaleComparisonStatements.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ScaleComparisonStatements.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ScaleComparisonStatements.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,17 +57,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../MeasureAndIntegration/ScaleComparisonStatements.lean/declarations/example-source-edition-7.md) | 10 | `declaration-track:b959316689a6644664f2e8d771e6f86552296e3d42b8603f17ba6f8bc4dc50cc` |
-| 2 | `example` | [(anonymous)](../../../../MeasureAndIntegration/ScaleComparisonStatements.lean/declarations/example-source-edition-9.md) | 14 | `declaration-track:c41c691bfc176515e8d662438f0a06252daaad3c3966b78fb120d4c467b53717` |
-| 3 | `example` | [(anonymous)](../../../../MeasureAndIntegration/ScaleComparisonStatements.lean/declarations/example-source-edition-4.md) | 17 | `declaration-track:4aa5375b5366aee9c7b868a10ef5817929215c35bcd8ed5df27b48f999310867` |
-| 4 | `example` | [(anonymous)](../../../../MeasureAndIntegration/ScaleComparisonStatements.lean/declarations/example-source-edition-5.md) | 20 | `declaration-track:5f9fe88cc449cc9cb65af0e6d802ad488e123749604540e47e45832a5b416262` |
-| 5 | `example` | [(anonymous)](../../../../MeasureAndIntegration/ScaleComparisonStatements.lean/declarations/example-source-edition-10.md) | 26 | `declaration-track:d9fe8fcc56f603516731052b462c6851fc7ee18c5dacf358700906f3aab6eec5` |
-| 6 | `example` | [(anonymous)](../../../../MeasureAndIntegration/ScaleComparisonStatements.lean/declarations/example-source-edition-3.md) | 30 | `declaration-track:330b14f4f937a29f7d047518883f43b477d316d5171bf2facc43645871cb72a6` |
-| 7 | `example` | [(anonymous)](../../../../MeasureAndIntegration/ScaleComparisonStatements.lean/declarations/example-source-edition-8.md) | 34 | `declaration-track:b9a9de439c3b5a7c56162f40bc82bdbf416a3e6d775c23dad3171be7b8161ea4` |
-| 8 | `example` | [(anonymous)](../../../../MeasureAndIntegration/ScaleComparisonStatements.lean/declarations/example.md) | 39 | `declaration-track:020a34b3c2fb4b81d45f49658603ced8482243616526b296ed4bf3fbb4d5513a` |
-| 9 | `example` | [(anonymous)](../../../../MeasureAndIntegration/ScaleComparisonStatements.lean/declarations/example-source-edition-11.md) | 44 | `declaration-track:f05a0d6659913ad44c5a4965b99a75ec1bf8f416f04c086d797999e477b11063` |
-| 10 | `example` | [(anonymous)](../../../../MeasureAndIntegration/ScaleComparisonStatements.lean/declarations/example-source-edition-6.md) | 49 | `declaration-track:6948edf0ea4be31e3e6bd6dc5a69715dd6a72cd8a468278f4ecec2a2dbf95179` |
-| 11 | `example` | [(anonymous)](../../../../MeasureAndIntegration/ScaleComparisonStatements.lean/declarations/example-source-edition-2.md) | 55 | `declaration-track:0585802270004d83ec49c96f394f99ba9e33f4f4166e8055af57807e8b30c4ca` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ScaleComparisonStatements.lean/declarations/example-source-edition-7.md) | 10 | `declaration-track:b959316689a6644664f2e8d771e6f86552296e3d42b8603f17ba6f8bc4dc50cc` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ScaleComparisonStatements.lean/declarations/example-source-edition-9.md) | 14 | `declaration-track:c41c691bfc176515e8d662438f0a06252daaad3c3966b78fb120d4c467b53717` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ScaleComparisonStatements.lean/declarations/example-source-edition-4.md) | 17 | `declaration-track:4aa5375b5366aee9c7b868a10ef5817929215c35bcd8ed5df27b48f999310867` |
+| 4 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ScaleComparisonStatements.lean/declarations/example-source-edition-5.md) | 20 | `declaration-track:5f9fe88cc449cc9cb65af0e6d802ad488e123749604540e47e45832a5b416262` |
+| 5 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ScaleComparisonStatements.lean/declarations/example-source-edition-10.md) | 26 | `declaration-track:d9fe8fcc56f603516731052b462c6851fc7ee18c5dacf358700906f3aab6eec5` |
+| 6 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ScaleComparisonStatements.lean/declarations/example-source-edition-3.md) | 30 | `declaration-track:330b14f4f937a29f7d047518883f43b477d316d5171bf2facc43645871cb72a6` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ScaleComparisonStatements.lean/declarations/example-source-edition-8.md) | 34 | `declaration-track:b9a9de439c3b5a7c56162f40bc82bdbf416a3e6d775c23dad3171be7b8161ea4` |
+| 8 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ScaleComparisonStatements.lean/declarations/example.md) | 39 | `declaration-track:020a34b3c2fb4b81d45f49658603ced8482243616526b296ed4bf3fbb4d5513a` |
+| 9 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ScaleComparisonStatements.lean/declarations/example-source-edition-11.md) | 44 | `declaration-track:f05a0d6659913ad44c5a4965b99a75ec1bf8f416f04c086d797999e477b11063` |
+| 10 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ScaleComparisonStatements.lean/declarations/example-source-edition-6.md) | 49 | `declaration-track:6948edf0ea4be31e3e6bd6dc5a69715dd6a72cd8a468278f4ecec2a2dbf95179` |
+| 11 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ScaleComparisonStatements.lean/declarations/example-source-edition-2.md) | 55 | `declaration-track:0585802270004d83ec49c96f394f99ba9e33f4f4166e8055af57807e8b30c4ca` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

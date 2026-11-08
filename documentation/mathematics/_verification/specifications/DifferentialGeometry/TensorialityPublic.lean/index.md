@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../DifferentialGeometry/TensorialityPublic.lean/index.md) · [Full source](../../../../DifferentialGeometry/TensorialityPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/TensorialityPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/TensorialityPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,18 +58,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [TensorialAt](../../../../DifferentialGeometry/TensorialityPublic.lean/declarations/tensorialat.md) | 70 | `declaration-track:931f76c20f98e9e7ff6436ea6ffa6599fb69bb1daa23e5f3df95b299c1890e9e` |
-| 2 | `theorem` | [«local»](../../../../DifferentialGeometry/TensorialityPublic.lean/declarations/local.md) | 84 | `result-track:e0e2ed02c09a1001a419c94712c9213bf3a2f48497015501d2cea00a8de89ab0` |
-| 3 | `theorem` | [zero](../../../../DifferentialGeometry/TensorialityPublic.lean/declarations/zero.md) | 107 | `result-track:a7bc47a7da3928320c9538eae4f2f7b65b1e4caaf41982364fdde0b9ce9e96c8` |
-| 4 | `theorem` | [sum](../../../../DifferentialGeometry/TensorialityPublic.lean/declarations/sum.md) | 115 | `result-track:b89c90f97bcfc860e88de89560d472da1da60ba95b8c2baf06a6a5a7b72d609f` |
-| 5 | `lemma` | [pointwise](../../../../DifferentialGeometry/TensorialityPublic.lean/declarations/pointwise-source-edition-2.md) | 133 | `result-track:2698edf9b5ab1ffd8d957cd3ed1489ef404e0b73a5e1ffa8d5e6836d9f8c033c` |
-| 6 | `lemma` | [pointwise₂](../../../../DifferentialGeometry/TensorialityPublic.lean/declarations/pointwise.md) | 169 | `result-track:1107353083bdc037a6a13b5c643a3a2e786bc1002ca149787e6f6d452169874a` |
-| 7 | `def` | [mkHom](../../../../DifferentialGeometry/TensorialityPublic.lean/declarations/mkhom-source-edition-2.md) | 186 | `declaration-track:ed9a04511e5fd2d45a393562cdd21c27ae247b9ef80b9d735757a6110e3a226c` |
-| 8 | `theorem` | [mkHom_apply](../../../../DifferentialGeometry/TensorialityPublic.lean/declarations/mkhom-apply.md) | 210 | `result-track:2569ee00e30191a1457f6ab440adc533a5e3d5f508d5aa4ef8b74926305f03f7` |
-| 9 | `theorem` | [mkHom_apply_eq_extend](../../../../DifferentialGeometry/TensorialityPublic.lean/declarations/mkhom-apply-eq-extend-source-edition-2.md) | 215 | `result-track:2f40cacb45c17bdc268dbeea0f4e53ed174ea362b2ecd58edde108fcbe35a609` |
-| 10 | `def` | [mkHom₂](../../../../DifferentialGeometry/TensorialityPublic.lean/declarations/mkhom.md) | 222 | `declaration-track:5243de2a0ad38380e3c8d194ebc5bf1eb0bae5231525349650c75101e3d7b8cb` |
-| 11 | `theorem` | [mkHom₂_apply](../../../../DifferentialGeometry/TensorialityPublic.lean/declarations/mkhom-apply-source-edition-2.md) | 276 | `result-track:4391b7aa7da4d327f1c1001bea90498a96f3f6c8d9ec040ff62de11526c8a14c` |
-| 12 | `theorem` | [mkHom₂_apply_eq_extend](../../../../DifferentialGeometry/TensorialityPublic.lean/declarations/mkhom-apply-eq-extend.md) | 285 | `result-track:079df61aca2664a2424b3f1173b5c7d1d54483aaaa14c8199257e1c1b062cf28` |
+| 1 | `structure` | [TensorialAt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/TensorialityPublic.lean/declarations/tensorialat.md) | 70 | `declaration-track:931f76c20f98e9e7ff6436ea6ffa6599fb69bb1daa23e5f3df95b299c1890e9e` |
+| 2 | `theorem` | [«local»](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/TensorialityPublic.lean/declarations/local.md) | 84 | `result-track:e0e2ed02c09a1001a419c94712c9213bf3a2f48497015501d2cea00a8de89ab0` |
+| 3 | `theorem` | [zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/TensorialityPublic.lean/declarations/zero.md) | 107 | `result-track:a7bc47a7da3928320c9538eae4f2f7b65b1e4caaf41982364fdde0b9ce9e96c8` |
+| 4 | `theorem` | [sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/TensorialityPublic.lean/declarations/sum.md) | 115 | `result-track:b89c90f97bcfc860e88de89560d472da1da60ba95b8c2baf06a6a5a7b72d609f` |
+| 5 | `lemma` | [pointwise](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/TensorialityPublic.lean/declarations/pointwise-source-edition-2.md) | 133 | `result-track:2698edf9b5ab1ffd8d957cd3ed1489ef404e0b73a5e1ffa8d5e6836d9f8c033c` |
+| 6 | `lemma` | [pointwise₂](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/TensorialityPublic.lean/declarations/pointwise.md) | 169 | `result-track:1107353083bdc037a6a13b5c643a3a2e786bc1002ca149787e6f6d452169874a` |
+| 7 | `def` | [mkHom](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/TensorialityPublic.lean/declarations/mkhom-source-edition-2.md) | 186 | `declaration-track:ed9a04511e5fd2d45a393562cdd21c27ae247b9ef80b9d735757a6110e3a226c` |
+| 8 | `theorem` | [mkHom_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/TensorialityPublic.lean/declarations/mkhom-apply.md) | 210 | `result-track:2569ee00e30191a1457f6ab440adc533a5e3d5f508d5aa4ef8b74926305f03f7` |
+| 9 | `theorem` | [mkHom_apply_eq_extend](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/TensorialityPublic.lean/declarations/mkhom-apply-eq-extend-source-edition-2.md) | 215 | `result-track:2f40cacb45c17bdc268dbeea0f4e53ed174ea362b2ecd58edde108fcbe35a609` |
+| 10 | `def` | [mkHom₂](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/TensorialityPublic.lean/declarations/mkhom.md) | 222 | `declaration-track:5243de2a0ad38380e3c8d194ebc5bf1eb0bae5231525349650c75101e3d7b8cb` |
+| 11 | `theorem` | [mkHom₂_apply](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/TensorialityPublic.lean/declarations/mkhom-apply-source-edition-2.md) | 276 | `result-track:4391b7aa7da4d327f1c1001bea90498a96f3f6c8d9ec040ff62de11526c8a14c` |
+| 12 | `theorem` | [mkHom₂_apply_eq_extend](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/TensorialityPublic.lean/declarations/mkhom-apply-eq-extend.md) | 285 | `result-track:079df61aca2664a2424b3f1173b5c7d1d54483aaaa14c8199257e1c1b062cf28` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/FredholmDetShift.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/FredholmDetShift.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/FredholmDetShift.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/FredholmDetShift.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [Endo](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/FredholmDetShift.lean/declarations/endo.md) | 22 | `declaration-track:c14714cbd2d64abb3c46d1389089413e7ebf15692bf1eece0c259e52dfc3247f` |
-| 2 | `def` | [shiftOp](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/FredholmDetShift.lean/declarations/shiftop.md) | 35 | `declaration-track:d12e474e63295ae2c9501fe61fb46a20d3b8507df19a939bb127e8d443b13c69` |
-| 3 | `lemma` | [shiftOp_continuous](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/FredholmDetShift.lean/declarations/shiftop-continuous.md) | 39 | `result-track:c4539ba5e06c183cd347f914757a10216b04b3479facf49360554dabd23b6cfa` |
-| 4 | `def` | [shift](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/FredholmDetShift.lean/declarations/shift.md) | 46 | `declaration-track:2e1fa416e3480a0d8ec468bfd88a770c7603157950d86a43cec174f8afbcbe8b` |
-| 5 | `lemma` | [shift_zero_iff](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/FredholmDetShift.lean/declarations/shift-zero-iff.md) | 57 | `result-track:abb08c1eb2fa88d44f47b2b968093c3e1918501965966115b8c2f391a8dbc984` |
+| 1 | `abbrev` | [Endo](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/FredholmDetShift.lean/declarations/endo.md) | 22 | `declaration-track:c14714cbd2d64abb3c46d1389089413e7ebf15692bf1eece0c259e52dfc3247f` |
+| 2 | `def` | [shiftOp](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/FredholmDetShift.lean/declarations/shiftop.md) | 35 | `declaration-track:d12e474e63295ae2c9501fe61fb46a20d3b8507df19a939bb127e8d443b13c69` |
+| 3 | `lemma` | [shiftOp_continuous](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/FredholmDetShift.lean/declarations/shiftop-continuous.md) | 39 | `result-track:c4539ba5e06c183cd347f914757a10216b04b3479facf49360554dabd23b6cfa` |
+| 4 | `def` | [shift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/FredholmDetShift.lean/declarations/shift.md) | 46 | `declaration-track:2e1fa416e3480a0d8ec468bfd88a770c7603157950d86a43cec174f8afbcbe8b` |
+| 5 | `lemma` | [shift_zero_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/FredholmDetShift.lean/declarations/shift-zero-iff.md) | 57 | `result-track:abb08c1eb2fa88d44f47b2b968093c3e1918501965966115b8c2f391a8dbc984` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

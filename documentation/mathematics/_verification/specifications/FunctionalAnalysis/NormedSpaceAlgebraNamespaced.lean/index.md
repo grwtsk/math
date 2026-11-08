@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/NormedSpaceAlgebraNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/NormedSpaceAlgebraNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceAlgebraNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceAlgebraNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,8 +59,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [norm_le_norm_one](../../../../FunctionalAnalysis/NormedSpaceAlgebraNamespaced.lean/declarations/norm-le-norm-one.md) | 48 | `result-track:1ef2578531eb77e64f0bbe8c2d3b094a829b08f75fb72c309bc1d702f3c41c65` |
-| 2 | `instance` | [(anonymous)](../../../../FunctionalAnalysis/NormedSpaceAlgebraNamespaced.lean/declarations/instance.md) | 53 | `declaration-track:04c3bfd9ecbeb93ad4c7b64e58fa058417d4aa6fa0ba87e4434c27f4a70f5597` |
+| 1 | `theorem` | [norm_le_norm_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceAlgebraNamespaced.lean/declarations/norm-le-norm-one.md) | 48 | `result-track:1ef2578531eb77e64f0bbe8c2d3b094a829b08f75fb72c309bc1d702f3c41c65` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/NormedSpaceAlgebraNamespaced.lean/declarations/instance.md) | 53 | `declaration-track:04c3bfd9ecbeb93ad4c7b64e58fa058417d4aa6fa0ba87e4434c27f4a70f5597` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IdealQuotientNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IdealQuotientNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IdealQuotientNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IdealQuotientNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [quotientEquivPiSpan](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IdealQuotientNamespaced.lean/declarations/quotientequivpispan.md) | 34 | `declaration-track:5e69e092b8475a7ad3d9df2ab8d9d743640a03f14add062cf09dfb96a13a9d6a` |
-| 2 | `def` | [quotientEquivPiZMod](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IdealQuotientNamespaced.lean/declarations/quotientequivpizmod.md) | 40 | `declaration-track:6c9866391e98b4967a47bf0e491a30ff5afbdda383b90b391aa11882a4173001` |
-| 3 | `theorem` | [finiteQuotientOfFreeOfNeBot](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IdealQuotientNamespaced.lean/declarations/finitequotientoffreeofnebot.md) | 48 | `result-track:6c06aba0abfcb66b16e5c9449d1d87c1b2e18a2290656e2b93434ec7df032003` |
-| 4 | `def` | [quotientEquivDirectSum](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IdealQuotientNamespaced.lean/declarations/quotientequivdirectsum.md) | 61 | `declaration-track:2cba8da5c8c4caac61c5955a61ec335de813653f112f20a5832e2e36fea7d7c6` |
-| 5 | `theorem` | [finrank_quotient_eq_sum](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IdealQuotientNamespaced.lean/declarations/finrank-quotient-eq-sum.md) | 65 | `result-track:222e8dfbbe8ee47d754e47374ee09db3ea122f4b48ebd25f05e0006c39cb8b14` |
+| 1 | `def` | [quotientEquivPiSpan](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IdealQuotientNamespaced.lean/declarations/quotientequivpispan.md) | 34 | `declaration-track:5e69e092b8475a7ad3d9df2ab8d9d743640a03f14add062cf09dfb96a13a9d6a` |
+| 2 | `def` | [quotientEquivPiZMod](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IdealQuotientNamespaced.lean/declarations/quotientequivpizmod.md) | 40 | `declaration-track:6c9866391e98b4967a47bf0e491a30ff5afbdda383b90b391aa11882a4173001` |
+| 3 | `theorem` | [finiteQuotientOfFreeOfNeBot](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IdealQuotientNamespaced.lean/declarations/finitequotientoffreeofnebot.md) | 48 | `result-track:6c06aba0abfcb66b16e5c9449d1d87c1b2e18a2290656e2b93434ec7df032003` |
+| 4 | `def` | [quotientEquivDirectSum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IdealQuotientNamespaced.lean/declarations/quotientequivdirectsum.md) | 61 | `declaration-track:2cba8da5c8c4caac61c5955a61ec335de813653f112f20a5832e2e36fea7d7c6` |
+| 5 | `theorem` | [finrank_quotient_eq_sum](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IdealQuotientNamespaced.lean/declarations/finrank-quotient-eq-sum.md) | 65 | `result-track:222e8dfbbe8ee47d754e47374ee09db3ea122f4b48ebd25f05e0006c39cb8b14` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

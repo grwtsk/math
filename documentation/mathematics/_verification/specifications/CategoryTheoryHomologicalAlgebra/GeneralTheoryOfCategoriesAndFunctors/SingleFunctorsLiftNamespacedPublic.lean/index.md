@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SingleFunctorsLiftNamespacedPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SingleFunctorsLiftNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SingleFunctorsLiftNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SingleFunctorsLiftNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,12 +57,12 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [shiftIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SingleFunctorsLiftNamespacedPublic.lean/declarations/shiftiso.md) | 50 | `declaration-track:62f83f29a5865f444ed30d9afa5092caceb8d75e8e1c24666712168b750a5138` |
-| 2 | `lemma` | [map_shiftIso_hom_app](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SingleFunctorsLiftNamespacedPublic.lean/declarations/map-shiftiso-hom-app.md) | 58 | `result-track:f6f1b7d80ba169c641220e676bf1d342a1006ab3d9e3beec6d795dddccfc80b0` |
-| 3 | `def` | [lift](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SingleFunctorsLiftNamespacedPublic.lean/declarations/lift.md) | 75 | `declaration-track:dc2874175c3b4ee93e6039be1f303f7cd7693881269b5d965612ff5c1fa6f130` |
-| 4 | `lemma` | [map_lift_shiftIso_hom_app](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SingleFunctorsLiftNamespacedPublic.lean/declarations/map-lift-shiftiso-hom-app.md) | 92 | `result-track:653ef1a8d2e9ed2b2020914566e79c50d7b61ff4c860b8bbcb59033bb93402cf` |
-| 5 | `def` | [liftPostcompIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SingleFunctorsLiftNamespacedPublic.lean/declarations/liftpostcompiso.md) | 102 | `declaration-track:a392732d95307db2fa7fb0a841292b17594e76292af39e69163129aab4518c48` |
-| 6 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SingleFunctorsLiftNamespacedPublic.lean/declarations/instance.md) | 110 | `declaration-track:f790e27584919da78b36da7cd4065b5dc99f79be6c93a247fd5439b29e36f372` |
+| 1 | `def` | [shiftIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SingleFunctorsLiftNamespacedPublic.lean/declarations/shiftiso.md) | 50 | `declaration-track:62f83f29a5865f444ed30d9afa5092caceb8d75e8e1c24666712168b750a5138` |
+| 2 | `lemma` | [map_shiftIso_hom_app](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SingleFunctorsLiftNamespacedPublic.lean/declarations/map-shiftiso-hom-app.md) | 58 | `result-track:f6f1b7d80ba169c641220e676bf1d342a1006ab3d9e3beec6d795dddccfc80b0` |
+| 3 | `def` | [lift](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SingleFunctorsLiftNamespacedPublic.lean/declarations/lift.md) | 75 | `declaration-track:dc2874175c3b4ee93e6039be1f303f7cd7693881269b5d965612ff5c1fa6f130` |
+| 4 | `lemma` | [map_lift_shiftIso_hom_app](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SingleFunctorsLiftNamespacedPublic.lean/declarations/map-lift-shiftiso-hom-app.md) | 92 | `result-track:653ef1a8d2e9ed2b2020914566e79c50d7b61ff4c860b8bbcb59033bb93402cf` |
+| 5 | `def` | [liftPostcompIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SingleFunctorsLiftNamespacedPublic.lean/declarations/liftpostcompiso.md) | 102 | `declaration-track:a392732d95307db2fa7fb0a841292b17594e76292af39e69163129aab4518c48` |
+| 6 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SingleFunctorsLiftNamespacedPublic.lean/declarations/instance.md) | 110 | `declaration-track:f790e27584919da78b36da7cd4065b5dc99f79be6c93a247fd5439b29e36f372` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

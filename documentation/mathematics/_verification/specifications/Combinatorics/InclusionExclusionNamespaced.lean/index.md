@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/InclusionExclusionNamespaced.lean/index.md) · [Full source](../../../../Combinatorics/InclusionExclusionNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/InclusionExclusionNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/InclusionExclusionNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [prod_indicator_biUnion_sub_indicator](../../../../Combinatorics/InclusionExclusionNamespaced.lean/declarations/prod-indicator-biunion-sub-indicator.md) | 56 | `result-track:17309f99695462aa343b98f3e024eec0b7f069ab33ff8f6afbc450cb69fdef8f` |
-| 2 | `theorem` | [inclusion_exclusion_sum_biUnion](../../../../Combinatorics/InclusionExclusionNamespaced.lean/declarations/inclusion-exclusion-sum-biunion.md) | 69 | `result-track:f2ba38c82b206b2c6300b14e9feff345f0165e855639748e0e6e74384b0d84b4` |
-| 3 | `theorem` | [inclusion_exclusion_card_biUnion](../../../../Combinatorics/InclusionExclusionNamespaced.lean/declarations/inclusion-exclusion-card-biunion.md) | 107 | `result-track:10b89805f1a0de475055b39a5ba437d002799e675eb864a5ccde857437fca6e9` |
-| 4 | `theorem` | [inclusion_exclusion_sum_inf_compl](../../../../Combinatorics/InclusionExclusionNamespaced.lean/declarations/inclusion-exclusion-sum-inf-compl.md) | 118 | `result-track:08ab245f37359f3b767732e40cb58334a487850785420762d9576cea52baa03e` |
-| 5 | `theorem` | [inclusion_exclusion_card_inf_compl](../../../../Combinatorics/InclusionExclusionNamespaced.lean/declarations/inclusion-exclusion-card-inf-compl.md) | 135 | `result-track:061eb903dbbf923ee0ba2c9e1ffd5ef7b0a333c1b3c0b218ec6282383c1b54e0` |
+| 1 | `lemma` | [prod_indicator_biUnion_sub_indicator](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/InclusionExclusionNamespaced.lean/declarations/prod-indicator-biunion-sub-indicator.md) | 56 | `result-track:17309f99695462aa343b98f3e024eec0b7f069ab33ff8f6afbc450cb69fdef8f` |
+| 2 | `theorem` | [inclusion_exclusion_sum_biUnion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/InclusionExclusionNamespaced.lean/declarations/inclusion-exclusion-sum-biunion.md) | 69 | `result-track:f2ba38c82b206b2c6300b14e9feff345f0165e855639748e0e6e74384b0d84b4` |
+| 3 | `theorem` | [inclusion_exclusion_card_biUnion](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/InclusionExclusionNamespaced.lean/declarations/inclusion-exclusion-card-biunion.md) | 107 | `result-track:10b89805f1a0de475055b39a5ba437d002799e675eb864a5ccde857437fca6e9` |
+| 4 | `theorem` | [inclusion_exclusion_sum_inf_compl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/InclusionExclusionNamespaced.lean/declarations/inclusion-exclusion-sum-inf-compl.md) | 118 | `result-track:08ab245f37359f3b767732e40cb58334a487850785420762d9576cea52baa03e` |
+| 5 | `theorem` | [inclusion_exclusion_card_inf_compl](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/InclusionExclusionNamespaced.lean/declarations/inclusion-exclusion-card-inf-compl.md) | 135 | `result-track:061eb903dbbf923ee0ba2c9e1ffd5ef7b0a333c1b3c0b218ec6282383c1b54e0` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

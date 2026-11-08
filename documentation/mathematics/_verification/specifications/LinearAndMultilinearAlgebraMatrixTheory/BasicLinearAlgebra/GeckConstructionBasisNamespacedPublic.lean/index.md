@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GeckConstructionBasisNamespacedPublic.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GeckConstructionBasisNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GeckConstructionBasisNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GeckConstructionBasisNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,13 +57,13 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [basis](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GeckConstructionBasisNamespacedPublic.lean/declarations/basis.md) | 60 | `declaration-track:d54c2bb8f3cfa51607e2220e6f5b493ff9ac8b0944997c9b43ae41166c12fe8a` |
-| 2 | `lemma` | [basis_A_eq](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GeckConstructionBasisNamespacedPublic.lean/declarations/basis-a-eq.md) | 104 | `result-track:90efa5aab6f366dcb38ae15acce95d6ba2cd33768f4bf7ba1d66792329c59790` |
-| 3 | `instance` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GeckConstructionBasisNamespacedPublic.lean/declarations/instance.md) | 106 | `declaration-track:033d50394989f925d59ab7ae01095a3191ebe651d7a2591a657b5a82676b543c` |
-| 4 | `def` | [equivRootSystem](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GeckConstructionBasisNamespacedPublic.lean/declarations/equivrootsystem.md) | 114 | `declaration-track:acaf638957d72d34b5ef4b1e0023b8a8f1c924043ee331554d368716651595f1` |
-| 5 | `instance` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GeckConstructionBasisNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 118 | `declaration-track:f0db8d8bbeff0627f9835cace51000b2a12d32525a2245966705fd7eb50426f4` |
-| 6 | `def` | [equivLieAlgebra](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GeckConstructionBasisNamespacedPublic.lean/declarations/equivliealgebra.md) | 134 | `declaration-track:a8ff750545b0531068550e07968fd1de94e59105bb5b641e208dcf157954a2c4` |
-| 7 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GeckConstructionBasisNamespacedPublic.lean/declarations/example.md) | 142 | `declaration-track:ac7a600363f9fc5711506c3e4734891176c561f50c8eaa2667375cfbd9227292` |
+| 1 | `def` | [basis](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GeckConstructionBasisNamespacedPublic.lean/declarations/basis.md) | 60 | `declaration-track:d54c2bb8f3cfa51607e2220e6f5b493ff9ac8b0944997c9b43ae41166c12fe8a` |
+| 2 | `lemma` | [basis_A_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GeckConstructionBasisNamespacedPublic.lean/declarations/basis-a-eq.md) | 104 | `result-track:90efa5aab6f366dcb38ae15acce95d6ba2cd33768f4bf7ba1d66792329c59790` |
+| 3 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GeckConstructionBasisNamespacedPublic.lean/declarations/instance.md) | 106 | `declaration-track:033d50394989f925d59ab7ae01095a3191ebe651d7a2591a657b5a82676b543c` |
+| 4 | `def` | [equivRootSystem](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GeckConstructionBasisNamespacedPublic.lean/declarations/equivrootsystem.md) | 114 | `declaration-track:acaf638957d72d34b5ef4b1e0023b8a8f1c924043ee331554d368716651595f1` |
+| 5 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GeckConstructionBasisNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 118 | `declaration-track:f0db8d8bbeff0627f9835cace51000b2a12d32525a2245966705fd7eb50426f4` |
+| 6 | `def` | [equivLieAlgebra](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GeckConstructionBasisNamespacedPublic.lean/declarations/equivliealgebra.md) | 134 | `declaration-track:a8ff750545b0531068550e07968fd1de94e59105bb5b641e208dcf157954a2c4` |
+| 7 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GeckConstructionBasisNamespacedPublic.lean/declarations/example.md) | 142 | `declaration-track:ac7a600363f9fc5711506c3e4734891176c561f50c8eaa2667375cfbd9227292` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/SpectralPacketNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/SpectralPacketNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralPacketNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralPacketNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,16 +60,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [SpectralPacketData](../../../../FunctionalAnalysis/SpectralPacketNamespaced.lean/declarations/spectralpacketdata.md) | 30 | `declaration-track:c23b3ee3d81d1dd7bec6452b1bfe2e1442913d63228a26611a8f780051b9ea9b` |
-| 2 | `def` | [rawAmplitude](../../../../FunctionalAnalysis/SpectralPacketNamespaced.lean/declarations/rawamplitude.md) | 41 | `declaration-track:e73bcc09322d8df8f36022157308acb19095b01c96d7245489568896e676c9d1` |
-| 3 | `theorem` | [rawAmplitude_pos](../../../../FunctionalAnalysis/SpectralPacketNamespaced.lean/declarations/rawamplitude-pos.md) | 46 | `result-track:68942f9c18c5f7f032ad11dea562ffc7478e71831e1292c8756a93e42f22d1bd` |
-| 4 | `def` | [rawVector](../../../../FunctionalAnalysis/SpectralPacketNamespaced.lean/declarations/rawvector.md) | 52 | `declaration-track:88d58652237f76bda979b13c188c67db42ed4016b0326dc1a0e01b1b19d9f1f6` |
-| 5 | `theorem` | [rawVector_apply_zero](../../../../FunctionalAnalysis/SpectralPacketNamespaced.lean/declarations/rawvector-apply-zero.md) | 59 | `result-track:f9ea2ae54f916a0caea6b7e26fde039c8672d375e67a28a7d42299fb7b22d30e` |
-| 6 | `theorem` | [rawVector_ne_zero](../../../../FunctionalAnalysis/SpectralPacketNamespaced.lean/declarations/rawvector-ne-zero.md) | 64 | `result-track:18591418926bfa4f2b5e378f49f1dc2e532b39468cd6692ba228b01e5ea8da04` |
-| 7 | `def` | [vector](../../../../FunctionalAnalysis/SpectralPacketNamespaced.lean/declarations/vector.md) | 74 | `declaration-track:a46b155a7e80736991a1cc5366221f09950e9886a17a9072802e65af31b87008` |
-| 8 | `theorem` | [vector_norm](../../../../FunctionalAnalysis/SpectralPacketNamespaced.lean/declarations/vector-norm.md) | 78 | `result-track:68365280fec56b1f27a22c034156b98b8e60f461cc0a87c846403e84230ece72` |
-| 9 | `structure` | [NormalizedSpectralPacket](../../../../FunctionalAnalysis/SpectralPacketNamespaced.lean/declarations/normalizedspectralpacket.md) | 87 | `declaration-track:d0af23946df2e70d89f9b5210c67f3951c1fb1ad569f975eccf8057a81685731` |
-| 10 | `def` | [normalized](../../../../FunctionalAnalysis/SpectralPacketNamespaced.lean/declarations/normalized.md) | 92 | `declaration-track:3dc9694af0c15954c219eef0e8f0b994dc5fda20bb91d9597bc401192a7a6b3a` |
+| 1 | `structure` | [SpectralPacketData](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralPacketNamespaced.lean/declarations/spectralpacketdata.md) | 30 | `declaration-track:c23b3ee3d81d1dd7bec6452b1bfe2e1442913d63228a26611a8f780051b9ea9b` |
+| 2 | `def` | [rawAmplitude](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralPacketNamespaced.lean/declarations/rawamplitude.md) | 41 | `declaration-track:e73bcc09322d8df8f36022157308acb19095b01c96d7245489568896e676c9d1` |
+| 3 | `theorem` | [rawAmplitude_pos](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralPacketNamespaced.lean/declarations/rawamplitude-pos.md) | 46 | `result-track:68942f9c18c5f7f032ad11dea562ffc7478e71831e1292c8756a93e42f22d1bd` |
+| 4 | `def` | [rawVector](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralPacketNamespaced.lean/declarations/rawvector.md) | 52 | `declaration-track:88d58652237f76bda979b13c188c67db42ed4016b0326dc1a0e01b1b19d9f1f6` |
+| 5 | `theorem` | [rawVector_apply_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralPacketNamespaced.lean/declarations/rawvector-apply-zero.md) | 59 | `result-track:f9ea2ae54f916a0caea6b7e26fde039c8672d375e67a28a7d42299fb7b22d30e` |
+| 6 | `theorem` | [rawVector_ne_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralPacketNamespaced.lean/declarations/rawvector-ne-zero.md) | 64 | `result-track:18591418926bfa4f2b5e378f49f1dc2e532b39468cd6692ba228b01e5ea8da04` |
+| 7 | `def` | [vector](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralPacketNamespaced.lean/declarations/vector.md) | 74 | `declaration-track:a46b155a7e80736991a1cc5366221f09950e9886a17a9072802e65af31b87008` |
+| 8 | `theorem` | [vector_norm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralPacketNamespaced.lean/declarations/vector-norm.md) | 78 | `result-track:68365280fec56b1f27a22c034156b98b8e60f461cc0a87c846403e84230ece72` |
+| 9 | `structure` | [NormalizedSpectralPacket](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralPacketNamespaced.lean/declarations/normalizedspectralpacket.md) | 87 | `declaration-track:d0af23946df2e70d89f9b5210c67f3951c1fb1ad569f975eccf8057a81685731` |
+| 10 | `def` | [normalized](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/SpectralPacketNamespaced.lean/declarations/normalized.md) | 92 | `declaration-track:3dc9694af0c15954c219eef0e8f0b994dc5fda20bb91d9597bc401192a7a6b3a` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

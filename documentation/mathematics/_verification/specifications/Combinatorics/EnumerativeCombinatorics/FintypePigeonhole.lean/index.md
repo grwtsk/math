@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../Combinatorics/EnumerativeCombinatorics/FintypePigeonhole.lean/index.md) · [Full source](../../../../../Combinatorics/EnumerativeCombinatorics/FintypePigeonhole.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypePigeonhole.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypePigeonhole.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [exists_ne_map_eq_of_card_lt](../../../../../Combinatorics/EnumerativeCombinatorics/FintypePigeonhole.lean/declarations/exists-ne-map-eq-of-card-lt.md) | 42 | `result-track:b61d3ed35e62be062ad7d60c2de66a0fd7361d33ac7ec761245e6142728b10c5` |
-| 2 | `theorem` | [isEmpty_of_card_lt](../../../../../Combinatorics/EnumerativeCombinatorics/FintypePigeonhole.lean/declarations/isempty-of-card-lt.md) | 56 | `result-track:1a9ff0e01e86298049d2237ee6c59ad7e1e9f90e7423791e317c5bd50bd7ea3d` |
-| 3 | `theorem` | [Finite.exists_ne_map_eq_of_infinite](../../../../../Combinatorics/EnumerativeCombinatorics/FintypePigeonhole.lean/declarations/finite-exists-ne-map-eq-of-infinite.md) | 70 | `result-track:5eb0d224faa859d5818fd5079d82bcb44786020092b28e632f14090d226a5599` |
-| 4 | `theorem` | [Finite.exists_infinite_fiber](../../../../../Combinatorics/EnumerativeCombinatorics/FintypePigeonhole.lean/declarations/finite-exists-infinite-fiber.md) | 81 | `result-track:fb0c6071eaf6fc2ab329eb0615eb4e12f51770dfe2cd457a94bed5b00fdbae35` |
+| 1 | `theorem` | [exists_ne_map_eq_of_card_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypePigeonhole.lean/declarations/exists-ne-map-eq-of-card-lt.md) | 42 | `result-track:b61d3ed35e62be062ad7d60c2de66a0fd7361d33ac7ec761245e6142728b10c5` |
+| 2 | `theorem` | [isEmpty_of_card_lt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypePigeonhole.lean/declarations/isempty-of-card-lt.md) | 56 | `result-track:1a9ff0e01e86298049d2237ee6c59ad7e1e9f90e7423791e317c5bd50bd7ea3d` |
+| 3 | `theorem` | [Finite.exists_ne_map_eq_of_infinite](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypePigeonhole.lean/declarations/finite-exists-ne-map-eq-of-infinite.md) | 70 | `result-track:5eb0d224faa859d5818fd5079d82bcb44786020092b28e632f14090d226a5599` |
+| 4 | `theorem` | [Finite.exists_infinite_fiber](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/EnumerativeCombinatorics/FintypePigeonhole.lean/declarations/finite-exists-infinite-fiber.md) | 81 | `result-track:fb0c6071eaf6fc2ab329eb0615eb4e12f51770dfe2cd457a94bed5b00fdbae35` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

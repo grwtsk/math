@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SmallPrimeNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SmallPrimeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SmallPrimeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SmallPrimeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `syntax` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SmallPrimeNamespaced.lean/declarations/syntax.md) | 36 | `declaration-track:82c3f8ef15310d859a20451100736ecd80327c92a944fe293081e0b52d785c37` |
-| 2 | `def` | [mkSmallProof](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SmallPrimeNamespaced.lean/declarations/mksmallproof.md) | 38 | `declaration-track:447c39528216e7fed35a62ce695d5861efa2333e8817d0af6abd3da2910c7878` |
-| 3 | `def` | [PrimeCertExt.small](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SmallPrimeNamespaced.lean/declarations/primecertext-small.md) | 45 | `declaration-track:0ac0b94293dbc77cf09920c37f17add0cc11b9931d584350f246ba79cb79a4dd` |
+| 1 | `syntax` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SmallPrimeNamespaced.lean/declarations/syntax.md) | 36 | `declaration-track:82c3f8ef15310d859a20451100736ecd80327c92a944fe293081e0b52d785c37` |
+| 2 | `def` | [mkSmallProof](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SmallPrimeNamespaced.lean/declarations/mksmallproof.md) | 38 | `declaration-track:447c39528216e7fed35a62ce695d5861efa2333e8817d0af6abd3da2910c7878` |
+| 3 | `def` | [PrimeCertExt.small](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SmallPrimeNamespaced.lean/declarations/primecertext-small.md) | 45 | `declaration-track:0ac0b94293dbc77cf09920c37f17add0cc11b9931d584350f246ba79cb79a4dd` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

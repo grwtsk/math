@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceSharpDiagonalRadiusNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceSharpDiagonalRadiusNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceSharpDiagonalRadiusNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceSharpDiagonalRadiusNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [sharpDiagonalCost_ninety_one_lt_thirty](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceSharpDiagonalRadiusNamespaced.lean/declarations/sharpdiagonalcost-ninety-one-lt-thirty.md) | 24 | `result-track:4392042cb1abec55b736da9c7ff2a2ec2f068937164e97cb2e423a81aef3ac1d` |
-| 2 | `theorem` | [actual_diagonal_error_ninety_one](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceSharpDiagonalRadiusNamespaced.lean/declarations/actual-diagonal-error-ninety-one.md) | 69 | `result-track:5d629b732acb673ba01ae513411c0aa1e821d87f6201de3840947e2999be8cd3` |
-| 3 | `theorem` | [exactSamplingLedgerCost_ninety_one_lt_1729](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceSharpDiagonalRadiusNamespaced.lean/declarations/exactsamplingledgercost-ninety-one-lt-1729.md) | 76 | `result-track:e26e9569b431c11b51deca6f6fe3641382498e99795a12055313a520efad1ae1` |
+| 1 | `theorem` | [sharpDiagonalCost_ninety_one_lt_thirty](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceSharpDiagonalRadiusNamespaced.lean/declarations/sharpdiagonalcost-ninety-one-lt-thirty.md) | 24 | `result-track:4392042cb1abec55b736da9c7ff2a2ec2f068937164e97cb2e423a81aef3ac1d` |
+| 2 | `theorem` | [actual_diagonal_error_ninety_one](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceSharpDiagonalRadiusNamespaced.lean/declarations/actual-diagonal-error-ninety-one.md) | 69 | `result-track:5d629b732acb673ba01ae513411c0aa1e821d87f6201de3840947e2999be8cd3` |
+| 3 | `theorem` | [exactSamplingLedgerCost_ninety_one_lt_1729](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceSharpDiagonalRadiusNamespaced.lean/declarations/exactsamplingledgercost-ninety-one-lt-1729.md) | 76 | `result-track:e26e9569b431c11b51deca6f6fe3641382498e99795a12055313a520efad1ae1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

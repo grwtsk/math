@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PolynomialLowerDeficitOnEveryCompleteTwoFrequencyPrefix.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PolynomialLowerDeficitOnEveryCompleteTwoFrequencyPrefix.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PolynomialLowerDeficitOnEveryCompleteTwoFrequencyPrefix.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PolynomialLowerDeficitOnEveryCompleteTwoFrequencyPrefix.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [weighted_pair_square_price](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PolynomialLowerDeficitOnEveryCompleteTwoFrequencyPrefix.lean/declarations/weighted-pair-square-price.md) | 18 | `result-track:5462dabd7c818828a3f3182026c1d1501326ea56a613aa6791596faf6a749150` |
-| 2 | `theorem` | [literal_nonzero_period_deficit_lower](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PolynomialLowerDeficitOnEveryCompleteTwoFrequencyPrefix.lean/declarations/literal-nonzero-period-deficit-lower.md) | 22 | `result-track:36d0c231a528810665eed95b2a22e6b7ace789334b73ee70cd2ef02f28b11dff` |
-| 3 | `theorem` | [literal_badly_approximable_prefix_deficit](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PolynomialLowerDeficitOnEveryCompleteTwoFrequencyPrefix.lean/declarations/literal-badly-approximable-prefix-deficit.md) | 47 | `result-track:5eaf581b226151b8db221714b32a0a7863dade145c78353dc7984605f6a2903b` |
+| 1 | `theorem` | [weighted_pair_square_price](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PolynomialLowerDeficitOnEveryCompleteTwoFrequencyPrefix.lean/declarations/weighted-pair-square-price.md) | 18 | `result-track:5462dabd7c818828a3f3182026c1d1501326ea56a613aa6791596faf6a749150` |
+| 2 | `theorem` | [literal_nonzero_period_deficit_lower](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PolynomialLowerDeficitOnEveryCompleteTwoFrequencyPrefix.lean/declarations/literal-nonzero-period-deficit-lower.md) | 22 | `result-track:36d0c231a528810665eed95b2a22e6b7ace789334b73ee70cd2ef02f28b11dff` |
+| 3 | `theorem` | [literal_badly_approximable_prefix_deficit](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PolynomialLowerDeficitOnEveryCompleteTwoFrequencyPrefix.lean/declarations/literal-badly-approximable-prefix-deficit.md) | 47 | `result-track:5eaf581b226151b8db221714b32a0a7863dade145c78353dc7984605f6a2903b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

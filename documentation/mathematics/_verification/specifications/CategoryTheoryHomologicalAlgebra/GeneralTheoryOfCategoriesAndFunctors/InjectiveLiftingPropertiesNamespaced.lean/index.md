@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/InjectiveLiftingPropertiesNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/InjectiveLiftingPropertiesNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/InjectiveLiftingPropertiesNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/InjectiveLiftingPropertiesNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [hasLiftingProperty_of_isZero](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/InjectiveLiftingPropertiesNamespaced.lean/declarations/hasliftingproperty-of-iszero.md) | 36 | `result-track:c0a6a19c583ad437289eba873c8beaaff0f7339f65f384abdaebdb2db9fbde13` |
-| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/InjectiveLiftingPropertiesNamespaced.lean/declarations/instance.md) | 43 | `declaration-track:c638ce9c196260fa5dd21d5b00afbebd1987c3a2d338b369110831b5e232bfee` |
-| 3 | `lemma` | [injective_iff_rlp_monomorphisms_of_isZero](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/InjectiveLiftingPropertiesNamespaced.lean/declarations/injective-iff-rlp-monomorphisms-of-iszero.md) | 49 | `result-track:9534e19d347238892e99a7d3a14ae070dbcf05f2d639c6a887a1d9968f2960a2` |
-| 4 | `lemma` | [injective_iff_rlp_monomorphisms_zero](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/InjectiveLiftingPropertiesNamespaced.lean/declarations/injective-iff-rlp-monomorphisms-zero.md) | 63 | `result-track:0f0307f774dfe168e1a376f8f3084d67421a4fd4a9629249c3d0ce33386c8e30` |
+| 1 | `lemma` | [hasLiftingProperty_of_isZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/InjectiveLiftingPropertiesNamespaced.lean/declarations/hasliftingproperty-of-iszero.md) | 36 | `result-track:c0a6a19c583ad437289eba873c8beaaff0f7339f65f384abdaebdb2db9fbde13` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/InjectiveLiftingPropertiesNamespaced.lean/declarations/instance.md) | 43 | `declaration-track:c638ce9c196260fa5dd21d5b00afbebd1987c3a2d338b369110831b5e232bfee` |
+| 3 | `lemma` | [injective_iff_rlp_monomorphisms_of_isZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/InjectiveLiftingPropertiesNamespaced.lean/declarations/injective-iff-rlp-monomorphisms-of-iszero.md) | 49 | `result-track:9534e19d347238892e99a7d3a14ae070dbcf05f2d639c6a887a1d9968f2960a2` |
+| 4 | `lemma` | [injective_iff_rlp_monomorphisms_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/InjectiveLiftingPropertiesNamespaced.lean/declarations/injective-iff-rlp-monomorphisms-zero.md) | 63 | `result-track:0f0307f774dfe168e1a376f8f3084d67421a4fd4a9629249c3d0ce33386c8e30` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

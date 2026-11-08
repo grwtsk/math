@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/CertifiedStableArchitecture.lean/index.md) · [Full source](../../../../FunctionalAnalysis/CertifiedStableArchitecture.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CertifiedStableArchitecture.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CertifiedStableArchitecture.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -63,15 +63,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [CertifiedStableArchitecture](../../../../FunctionalAnalysis/CertifiedStableArchitecture.lean/declarations/certifiedstablearchitecture.md) | 30 | `declaration-track:18da908910c73dbdbead1b7af627f0ef57838dcee880418ed2200f00c6823143` |
-| 2 | `theorem` | [locallyAsymptoticallyStable](../../../../FunctionalAnalysis/CertifiedStableArchitecture.lean/declarations/locallyasymptoticallystable.md) | 100 | `result-track:cd31807c738d937521e331f84574b43af0a0438df9b8d8b77933d0c7e87a153d` |
-| 3 | `theorem` | [pairwiseSeparated](../../../../FunctionalAnalysis/CertifiedStableArchitecture.lean/declarations/pairwiseseparated.md) | 110 | `result-track:60ad0a6913dd01a1e7c3092cf4d5adcc5ebd1125c1ed5de6725ac4d7f5cdb2f5` |
-| 4 | `theorem` | [realizationBound](../../../../FunctionalAnalysis/CertifiedStableArchitecture.lean/declarations/realizationbound.md) | 121 | `result-track:79e8de81ed561240d5b75895aba3bf7e6d961a3b7662aa39adb9ee5d6f2a4eed` |
-| 5 | `theorem` | [semanticRelationRealizesAsZero](../../../../FunctionalAnalysis/CertifiedStableArchitecture.lean/declarations/semanticrelationrealizesaszero.md) | 129 | `result-track:d12a4123c6cd9e2464ece904537b8f4a486cd5b32f54a39cd5650ec49f41bf35` |
-| 6 | `theorem` | [admittedAnalogyPropertySound](../../../../FunctionalAnalysis/CertifiedStableArchitecture.lean/declarations/admittedanalogypropertysound.md) | 141 | `result-track:f8289a894396876419a61c1bafdccac0cc42a74f94a1e21f5e52777322bb5905` |
-| 7 | `theorem` | [allCertificatesUsable](../../../../FunctionalAnalysis/CertifiedStableArchitecture.lean/declarations/allcertificatesusable.md) | 159 | `result-track:777782a847db8c82154e61ddfa6debda2e8fec7bf0d4864da2b1f4885c90aecc` |
-| 8 | `theorem` | [perturbedFixedPointDistanceBound](../../../../FunctionalAnalysis/CertifiedStableArchitecture.lean/declarations/perturbedfixedpointdistancebound.md) | 178 | `result-track:aa4f49f294e173b11187b03be52a51e8e004dc5d605849e37d990c3a6878774c` |
-| 9 | `theorem` | [sound](../../../../FunctionalAnalysis/CertifiedStableArchitecture.lean/declarations/sound.md) | 210 | `result-track:454a7edd61b94955e4ed7c54208f792534ec61fec6099543202aa8a93b0966d1` |
+| 1 | `structure` | [CertifiedStableArchitecture](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CertifiedStableArchitecture.lean/declarations/certifiedstablearchitecture.md) | 30 | `declaration-track:18da908910c73dbdbead1b7af627f0ef57838dcee880418ed2200f00c6823143` |
+| 2 | `theorem` | [locallyAsymptoticallyStable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CertifiedStableArchitecture.lean/declarations/locallyasymptoticallystable.md) | 100 | `result-track:cd31807c738d937521e331f84574b43af0a0438df9b8d8b77933d0c7e87a153d` |
+| 3 | `theorem` | [pairwiseSeparated](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CertifiedStableArchitecture.lean/declarations/pairwiseseparated.md) | 110 | `result-track:60ad0a6913dd01a1e7c3092cf4d5adcc5ebd1125c1ed5de6725ac4d7f5cdb2f5` |
+| 4 | `theorem` | [realizationBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CertifiedStableArchitecture.lean/declarations/realizationbound.md) | 121 | `result-track:79e8de81ed561240d5b75895aba3bf7e6d961a3b7662aa39adb9ee5d6f2a4eed` |
+| 5 | `theorem` | [semanticRelationRealizesAsZero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CertifiedStableArchitecture.lean/declarations/semanticrelationrealizesaszero.md) | 129 | `result-track:d12a4123c6cd9e2464ece904537b8f4a486cd5b32f54a39cd5650ec49f41bf35` |
+| 6 | `theorem` | [admittedAnalogyPropertySound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CertifiedStableArchitecture.lean/declarations/admittedanalogypropertysound.md) | 141 | `result-track:f8289a894396876419a61c1bafdccac0cc42a74f94a1e21f5e52777322bb5905` |
+| 7 | `theorem` | [allCertificatesUsable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CertifiedStableArchitecture.lean/declarations/allcertificatesusable.md) | 159 | `result-track:777782a847db8c82154e61ddfa6debda2e8fec7bf0d4864da2b1f4885c90aecc` |
+| 8 | `theorem` | [perturbedFixedPointDistanceBound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CertifiedStableArchitecture.lean/declarations/perturbedfixedpointdistancebound.md) | 178 | `result-track:aa4f49f294e173b11187b03be52a51e8e004dc5d605849e37d990c3a6878774c` |
+| 9 | `theorem` | [sound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/CertifiedStableArchitecture.lean/declarations/sound.md) | 210 | `result-track:454a7edd61b94955e4ed7c54208f792534ec61fec6099543202aa8a93b0966d1` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

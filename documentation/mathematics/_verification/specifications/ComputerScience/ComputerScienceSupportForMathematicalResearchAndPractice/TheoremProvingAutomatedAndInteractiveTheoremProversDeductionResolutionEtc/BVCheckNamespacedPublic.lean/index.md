@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/BVCheckNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/BVCheckNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/BVCheckNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/BVCheckNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [getSrcDir](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/BVCheckNamespacedPublic.lean/declarations/getsrcdir.md) | 38 | `declaration-track:8b3cd76f1174e79f12b03e68414e09fdfd6d61ef3b41b6c46c1ebfd43032da8e` |
-| 2 | `def` | [mkContext](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/BVCheckNamespacedPublic.lean/declarations/mkcontext.md) | 45 | `declaration-track:eaf0646dfa783873118d4f07e6bcefe26b5df1c8ac893d4bb7d3d7d5bd815c4c` |
-| 3 | `def` | [bvCheck](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/BVCheckNamespacedPublic.lean/declarations/bvcheck.md) | 50 | `declaration-track:d06677b118835e2351db081b9512a480b73dc2cfe6b374a2649af83da0aad5d1` |
-| 4 | `def` | [evalBvCheck](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/BVCheckNamespacedPublic.lean/declarations/evalbvcheck.md) | 56 | `declaration-track:1d252a93fc0c4fb000331c2e4f16ee551e03ed24142437d1581db107a1942a57` |
+| 1 | `def` | [getSrcDir](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/BVCheckNamespacedPublic.lean/declarations/getsrcdir.md) | 38 | `declaration-track:8b3cd76f1174e79f12b03e68414e09fdfd6d61ef3b41b6c46c1ebfd43032da8e` |
+| 2 | `def` | [mkContext](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/BVCheckNamespacedPublic.lean/declarations/mkcontext.md) | 45 | `declaration-track:eaf0646dfa783873118d4f07e6bcefe26b5df1c8ac893d4bb7d3d7d5bd815c4c` |
+| 3 | `def` | [bvCheck](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/BVCheckNamespacedPublic.lean/declarations/bvcheck.md) | 50 | `declaration-track:d06677b118835e2351db081b9512a480b73dc2cfe6b374a2649af83da0aad5d1` |
+| 4 | `def` | [evalBvCheck](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/BVCheckNamespacedPublic.lean/declarations/evalbvcheck.md) | 56 | `declaration-track:1d252a93fc0c4fb000331c2e4f16ee551e03ed24142437d1581db107a1942a57` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

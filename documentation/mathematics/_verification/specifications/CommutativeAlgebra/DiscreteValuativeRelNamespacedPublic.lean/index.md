@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/DiscreteValuativeRelNamespacedPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/DiscreteValuativeRelNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DiscreteValuativeRelNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DiscreteValuativeRelNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `lemma` | [nonempty_orderIso_withZeroMul_int_iff](../../../../CommutativeAlgebra/DiscreteValuativeRelNamespacedPublic.lean/declarations/nonempty-orderiso-withzeromul-int-iff.md) | 38 | `result-track:e630388ec821850991842d51205b108a8780545914e05a582c93296f57af251c` |
-| 2 | `lemma` | [IsDiscrete.of_compatible_withZeroMulInt](../../../../CommutativeAlgebra/DiscreteValuativeRelNamespacedPublic.lean/declarations/isdiscrete-of-compatible-withzeromulint.md) | 62 | `result-track:b46d55e4e87c729d576deef29a56693bcaa97077bc3d0491c5e21ee5d0952fd8` |
+| 1 | `lemma` | [nonempty_orderIso_withZeroMul_int_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DiscreteValuativeRelNamespacedPublic.lean/declarations/nonempty-orderiso-withzeromul-int-iff.md) | 38 | `result-track:e630388ec821850991842d51205b108a8780545914e05a582c93296f57af251c` |
+| 2 | `lemma` | [IsDiscrete.of_compatible_withZeroMulInt](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/DiscreteValuativeRelNamespacedPublic.lean/declarations/isdiscrete-of-compatible-withzeromulint.md) | 62 | `result-track:b46d55e4e87c729d576deef29a56693bcaa97077bc3d0491c5e21ee5d0952fd8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

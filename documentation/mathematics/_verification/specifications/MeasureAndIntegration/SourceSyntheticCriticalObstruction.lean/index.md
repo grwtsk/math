@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/SourceSyntheticCriticalObstruction.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceSyntheticCriticalObstruction.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceSyntheticCriticalObstruction.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceSyntheticCriticalObstruction.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,12 +59,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [syntheticCriticalReadout](../../../../MeasureAndIntegration/SourceSyntheticCriticalObstruction.lean/declarations/syntheticcriticalreadout.md) | 28 | `declaration-track:5e1af1c2842d778d48141813f077350c6193608cc6cb41e650180384334c5206` |
-| 2 | `theorem` | [actualUnitWindowTail_abs_le](../../../../MeasureAndIntegration/SourceSyntheticCriticalObstruction.lean/declarations/actualunitwindowtail-abs-le.md) | 33 | `result-track:a3b9ee55ec3b889b51c68301e481f6b161a34ce346b1d5b5235d3ce3e2f4c0db` |
-| 3 | `theorem` | [unitDensityTail_intervalIntegrable](../../../../MeasureAndIntegration/SourceSyntheticCriticalObstruction.lean/declarations/unitdensitytail-intervalintegrable.md) | 58 | `result-track:24c030fe279094f1b0fbfb5a652e011ad6cafad98a7b907d32ef5fb81d650662` |
-| 4 | `theorem` | [unitDensityTail_integral_abs_le](../../../../MeasureAndIntegration/SourceSyntheticCriticalObstruction.lean/declarations/unitdensitytail-integral-abs-le.md) | 66 | `result-track:d2f1134dc7f55c44722602223ea842fa0469d3cff06a230b61ab83fb4cf16b3e` |
-| 5 | `theorem` | [decayHalf_mem_Icc](../../../../MeasureAndIntegration/SourceSyntheticCriticalObstruction.lean/declarations/decayhalf-mem-icc.md) | 88 | `result-track:0039ac152b0c43fa05eeeff00905d65016a1b3fe6b93ba397cf1aafa9dc6ec98` |
-| 6 | `theorem` | [syntheticCriticalReadout_le](../../../../MeasureAndIntegration/SourceSyntheticCriticalObstruction.lean/declarations/syntheticcriticalreadout-le.md) | 96 | `result-track:38ae175944d273335fba4471f6e4b2a81822e9d29d47457130ba6fcb6ced6180` |
+| 1 | `def` | [syntheticCriticalReadout](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceSyntheticCriticalObstruction.lean/declarations/syntheticcriticalreadout.md) | 28 | `declaration-track:5e1af1c2842d778d48141813f077350c6193608cc6cb41e650180384334c5206` |
+| 2 | `theorem` | [actualUnitWindowTail_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceSyntheticCriticalObstruction.lean/declarations/actualunitwindowtail-abs-le.md) | 33 | `result-track:a3b9ee55ec3b889b51c68301e481f6b161a34ce346b1d5b5235d3ce3e2f4c0db` |
+| 3 | `theorem` | [unitDensityTail_intervalIntegrable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceSyntheticCriticalObstruction.lean/declarations/unitdensitytail-intervalintegrable.md) | 58 | `result-track:24c030fe279094f1b0fbfb5a652e011ad6cafad98a7b907d32ef5fb81d650662` |
+| 4 | `theorem` | [unitDensityTail_integral_abs_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceSyntheticCriticalObstruction.lean/declarations/unitdensitytail-integral-abs-le.md) | 66 | `result-track:d2f1134dc7f55c44722602223ea842fa0469d3cff06a230b61ab83fb4cf16b3e` |
+| 5 | `theorem` | [decayHalf_mem_Icc](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceSyntheticCriticalObstruction.lean/declarations/decayhalf-mem-icc.md) | 88 | `result-track:0039ac152b0c43fa05eeeff00905d65016a1b3fe6b93ba397cf1aafa9dc6ec98` |
+| 6 | `theorem` | [syntheticCriticalReadout_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/SourceSyntheticCriticalObstruction.lean/declarations/syntheticcriticalreadout-le.md) | 96 | `result-track:38ae175944d273335fba4471f6e4b2a81822e9d29d47457130ba6fcb6ced6180` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

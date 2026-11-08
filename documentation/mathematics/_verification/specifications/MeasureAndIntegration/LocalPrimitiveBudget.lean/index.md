@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/LocalPrimitiveBudget.lean/index.md) · [Full source](../../../../MeasureAndIntegration/LocalPrimitiveBudget.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LocalPrimitiveBudget.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LocalPrimitiveBudget.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_primitive_dictionary](../../../../MeasureAndIntegration/LocalPrimitiveBudget.lean/declarations/actual-primitive-dictionary.md) | 21 | `result-track:5dfd10640b359a3ef4b23a9681e39968676e4d619835f8b9f10def38082af94c` |
-| 2 | `theorem` | [actual_local_primitive_work_bound](../../../../MeasureAndIntegration/LocalPrimitiveBudget.lean/declarations/actual-local-primitive-work-bound.md) | 24 | `result-track:4ca3ce3ee4b4a947fa384b97927ab3f21333631b7cdee623984287f26bfe1195` |
-| 3 | `theorem` | [actual_local_residual_upper](../../../../MeasureAndIntegration/LocalPrimitiveBudget.lean/declarations/actual-local-residual-upper.md) | 43 | `result-track:34fdfbc34517ac9b3f96b452689bd8a57160099fbab9b21d2b526b579263bd36` |
-| 4 | `theorem` | [actual_local_gap_upper](../../../../MeasureAndIntegration/LocalPrimitiveBudget.lean/declarations/actual-local-gap-upper.md) | 53 | `result-track:8beded5fa1c1a576ccd5fc8c75fa0f0489a2b75f75191bcc2f66fb22cafa9715` |
-| 5 | `theorem` | [actual_finite_gap_lt_thirty_four](../../../../MeasureAndIntegration/LocalPrimitiveBudget.lean/declarations/actual-finite-gap-lt-thirty-four.md) | 70 | `result-track:03046e3be8fb46b28953e15e95fcb1b5921894d213ef2e5bce356317bd4201ee` |
+| 1 | `theorem` | [actual_primitive_dictionary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LocalPrimitiveBudget.lean/declarations/actual-primitive-dictionary.md) | 21 | `result-track:5dfd10640b359a3ef4b23a9681e39968676e4d619835f8b9f10def38082af94c` |
+| 2 | `theorem` | [actual_local_primitive_work_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LocalPrimitiveBudget.lean/declarations/actual-local-primitive-work-bound.md) | 24 | `result-track:4ca3ce3ee4b4a947fa384b97927ab3f21333631b7cdee623984287f26bfe1195` |
+| 3 | `theorem` | [actual_local_residual_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LocalPrimitiveBudget.lean/declarations/actual-local-residual-upper.md) | 43 | `result-track:34fdfbc34517ac9b3f96b452689bd8a57160099fbab9b21d2b526b579263bd36` |
+| 4 | `theorem` | [actual_local_gap_upper](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LocalPrimitiveBudget.lean/declarations/actual-local-gap-upper.md) | 53 | `result-track:8beded5fa1c1a576ccd5fc8c75fa0f0489a2b75f75191bcc2f66fb22cafa9715` |
+| 5 | `theorem` | [actual_finite_gap_lt_thirty_four](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/LocalPrimitiveBudget.lean/declarations/actual-finite-gap-lt-thirty-four.md) | 70 | `result-track:03046e3be8fb46b28953e15e95fcb1b5921894d213ef2e5bce356317bd4201ee` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

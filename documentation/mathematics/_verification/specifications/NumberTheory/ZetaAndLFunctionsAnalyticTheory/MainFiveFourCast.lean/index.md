@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MainFiveFourCast.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MainFiveFourCast.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MainFiveFourCast.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MainFiveFourCast.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -60,16 +60,16 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [five_four_cast](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MainFiveFourCast.lean/declarations/five-four-cast.md) | 32 | `result-track:e7594ddeeb0c7eed1e7d2ddade4eae03518cd7277009135e6dd1bb518eef1159` |
-| 2 | `theorem` | [cauchyK_mul_eq](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MainFiveFourCast.lean/declarations/cauchyk-mul-eq.md) | 34 | `result-track:5191759a447487de05315387981fb987a4dd56c1b77c5e4284b96d74a9ca7995` |
-| 3 | `theorem` | [cauchyK_neg_mul_eq](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MainFiveFourCast.lean/declarations/cauchyk-neg-mul-eq.md) | 38 | `result-track:86e3c8ef7c346de0aa9cad0f9cbe8fd4a119844cf6a609ab556992a2f79169f8` |
-| 4 | `theorem` | [testWeightFacts_hosted](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MainFiveFourCast.lean/declarations/testweightfacts-hosted.md) | 43 | `result-track:239c5e70d36ee3c90a3f82d517e1aeeb42c85afc68320513c4b81e51cf041280` |
-| 5 | `theorem` | [gramBridgeFacts](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MainFiveFourCast.lean/declarations/grambridgefacts.md) | 79 | `result-track:b82e7f7c5b8fe0077d7159d756ceb6453a04c52151101045de89444a446fa29d` |
-| 6 | `theorem` | [xiCoeffJ'_eq](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MainFiveFourCast.lean/declarations/xicoeffj-eq.md) | 86 | `result-track:137f4eb655f6f0c650aaf09c99f56de241fcfd05d2dfb4b62d1e83a5a56afcca` |
-| 7 | `theorem` | [coeffFacts](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MainFiveFourCast.lean/declarations/coefffacts.md) | 91 | `result-track:a65f1a9224bc2f0211325b655284282c7c5939a145a06b8c824983da6683c6c1` |
-| 8 | `theorem` | [testWeightFacts](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MainFiveFourCast.lean/declarations/testweightfacts.md) | 105 | `result-track:76b89ab64f8110e6cbeaee21f894ac8deca38a4c8b521612af83dd2888c3913b` |
-| 9 | `theorem` | [xiEF](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MainFiveFourCast.lean/declarations/xief.md) | 114 | `result-track:68041e5cac440b0fb46c271ac2182f399a744deb3220bf530076824db2fc5021` |
-| 10 | `theorem` | [xiEF_xiDerivZeros](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MainFiveFourCast.lean/declarations/xief-xiderivzeros.md) | 120 | `result-track:d3fcab97a62d1da2f712a6cf1d25575ac208c518fa3438238ab545d31970b405` |
+| 1 | `theorem` | [five_four_cast](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MainFiveFourCast.lean/declarations/five-four-cast.md) | 32 | `result-track:e7594ddeeb0c7eed1e7d2ddade4eae03518cd7277009135e6dd1bb518eef1159` |
+| 2 | `theorem` | [cauchyK_mul_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MainFiveFourCast.lean/declarations/cauchyk-mul-eq.md) | 34 | `result-track:5191759a447487de05315387981fb987a4dd56c1b77c5e4284b96d74a9ca7995` |
+| 3 | `theorem` | [cauchyK_neg_mul_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MainFiveFourCast.lean/declarations/cauchyk-neg-mul-eq.md) | 38 | `result-track:86e3c8ef7c346de0aa9cad0f9cbe8fd4a119844cf6a609ab556992a2f79169f8` |
+| 4 | `theorem` | [testWeightFacts_hosted](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MainFiveFourCast.lean/declarations/testweightfacts-hosted.md) | 43 | `result-track:239c5e70d36ee3c90a3f82d517e1aeeb42c85afc68320513c4b81e51cf041280` |
+| 5 | `theorem` | [gramBridgeFacts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MainFiveFourCast.lean/declarations/grambridgefacts.md) | 79 | `result-track:b82e7f7c5b8fe0077d7159d756ceb6453a04c52151101045de89444a446fa29d` |
+| 6 | `theorem` | [xiCoeffJ'_eq](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MainFiveFourCast.lean/declarations/xicoeffj-eq.md) | 86 | `result-track:137f4eb655f6f0c650aaf09c99f56de241fcfd05d2dfb4b62d1e83a5a56afcca` |
+| 7 | `theorem` | [coeffFacts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MainFiveFourCast.lean/declarations/coefffacts.md) | 91 | `result-track:a65f1a9224bc2f0211325b655284282c7c5939a145a06b8c824983da6683c6c1` |
+| 8 | `theorem` | [testWeightFacts](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MainFiveFourCast.lean/declarations/testweightfacts.md) | 105 | `result-track:76b89ab64f8110e6cbeaee21f894ac8deca38a4c8b521612af83dd2888c3913b` |
+| 9 | `theorem` | [xiEF](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MainFiveFourCast.lean/declarations/xief.md) | 114 | `result-track:68041e5cac440b0fb46c271ac2182f399a744deb3220bf530076824db2fc5021` |
+| 10 | `theorem` | [xiEF_xiDerivZeros](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MainFiveFourCast.lean/declarations/xief-xiderivzeros.md) | 120 | `result-track:d3fcab97a62d1da2f712a6cf1d25575ac208c518fa3438238ab545d31970b405` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

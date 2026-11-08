@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Hydra.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Hydra.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Hydra.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Hydra.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,17 +59,17 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [CutExpand](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Hydra.lean/declarations/cutexpand.md) | 56 | `declaration-track:f31835795daceb12ccf1d71eb151cacbb91ab3660c80c00d61e39ce058d2791d` |
-| 2 | `theorem` | [cutExpand_le_invImage_lex](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Hydra.lean/declarations/cutexpand-le-invimage-lex.md) | 62 | `result-track:1d765755389a9a04d74bee8b15bd73515d0150ae55e88c8e69d75e5ae75e9314` |
-| 3 | `theorem` | [cutExpand_singleton](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Hydra.lean/declarations/cutexpand-singleton.md) | 77 | `result-track:607ad5e2175e582f76c262b9d602be57a1b049499d63e536b88b03b780926f38` |
-| 4 | `theorem` | [cutExpand_singleton_singleton](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Hydra.lean/declarations/cutexpand-singleton-singleton.md) | 81 | `result-track:795f73f7038ebba1516a4f2817c43a3128c9b63d09ad88743fd6205d93be0e39` |
-| 5 | `theorem` | [cutExpand_add_left](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Hydra.lean/declarations/cutexpand-add-left.md) | 85 | `result-track:3e3c98f16fb978dd34c1ffa899dc120046e4506738ef59df6475d790781ef553` |
-| 6 | `theorem` | [cutExpand_iff](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Hydra.lean/declarations/cutexpand-iff.md) | 89 | `result-track:241c730384ed249a29f0bdfed28c8a708ad518bd775c71ba731884c0ebe88f98` |
-| 7 | `theorem` | [not_cutExpand_zero](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Hydra.lean/declarations/not-cutexpand-zero.md) | 101 | `result-track:f090316193def75bf0e867da9ec73774977463dc5cc335983a94be06fd187219` |
-| 8 | `theorem` | [cutExpand_fibration](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Hydra.lean/declarations/cutexpand-fibration.md) | 109 | `result-track:a48d3a53499b4ec1bef80a97416adf6c6ab54a57e0481b11f79c99b68f7d2d92` |
-| 9 | `theorem` | [acc_of_singleton](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Hydra.lean/declarations/acc-of-singleton.md) | 129 | `result-track:abcaec782c42a65fd880c254e7bb8381926f9bddc9e81e76d107efe954b625d8` |
-| 10 | `theorem` | [_root_.Acc.cutExpand](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Hydra.lean/declarations/root-acc-cutexpand.md) | 141 | `result-track:f5fa4a6bcac7a2f1a559efa5f7154b5c8cd21706a405872d7b94b3f12e3bb8a6` |
-| 11 | `theorem` | [_root_.WellFounded.cutExpand](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Hydra.lean/declarations/root-wellfounded-cutexpand.md) | 153 | `result-track:61a0c71fb749effd74dd105589eaef7c904a7017179bcce1cdf22f195f522e04` |
+| 1 | `def` | [CutExpand](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Hydra.lean/declarations/cutexpand.md) | 56 | `declaration-track:f31835795daceb12ccf1d71eb151cacbb91ab3660c80c00d61e39ce058d2791d` |
+| 2 | `theorem` | [cutExpand_le_invImage_lex](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Hydra.lean/declarations/cutexpand-le-invimage-lex.md) | 62 | `result-track:1d765755389a9a04d74bee8b15bd73515d0150ae55e88c8e69d75e5ae75e9314` |
+| 3 | `theorem` | [cutExpand_singleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Hydra.lean/declarations/cutexpand-singleton.md) | 77 | `result-track:607ad5e2175e582f76c262b9d602be57a1b049499d63e536b88b03b780926f38` |
+| 4 | `theorem` | [cutExpand_singleton_singleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Hydra.lean/declarations/cutexpand-singleton-singleton.md) | 81 | `result-track:795f73f7038ebba1516a4f2817c43a3128c9b63d09ad88743fd6205d93be0e39` |
+| 5 | `theorem` | [cutExpand_add_left](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Hydra.lean/declarations/cutexpand-add-left.md) | 85 | `result-track:3e3c98f16fb978dd34c1ffa899dc120046e4506738ef59df6475d790781ef553` |
+| 6 | `theorem` | [cutExpand_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Hydra.lean/declarations/cutexpand-iff.md) | 89 | `result-track:241c730384ed249a29f0bdfed28c8a708ad518bd775c71ba731884c0ebe88f98` |
+| 7 | `theorem` | [not_cutExpand_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Hydra.lean/declarations/not-cutexpand-zero.md) | 101 | `result-track:f090316193def75bf0e867da9ec73774977463dc5cc335983a94be06fd187219` |
+| 8 | `theorem` | [cutExpand_fibration](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Hydra.lean/declarations/cutexpand-fibration.md) | 109 | `result-track:a48d3a53499b4ec1bef80a97416adf6c6ab54a57e0481b11f79c99b68f7d2d92` |
+| 9 | `theorem` | [acc_of_singleton](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Hydra.lean/declarations/acc-of-singleton.md) | 129 | `result-track:abcaec782c42a65fd880c254e7bb8381926f9bddc9e81e76d107efe954b625d8` |
+| 10 | `theorem` | [_root_.Acc.cutExpand](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Hydra.lean/declarations/root-acc-cutexpand.md) | 141 | `result-track:f5fa4a6bcac7a2f1a559efa5f7154b5c8cd21706a405872d7b94b3f12e3bb8a6` |
+| 11 | `theorem` | [_root_.WellFounded.cutExpand](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Hydra.lean/declarations/root-wellfounded-cutexpand.md) | 153 | `result-track:61a0c71fb749effd74dd105589eaef7c904a7017179bcce1cdf22f195f522e04` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

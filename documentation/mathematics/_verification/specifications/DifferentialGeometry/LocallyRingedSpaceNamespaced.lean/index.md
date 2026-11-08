@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../DifferentialGeometry/LocallyRingedSpaceNamespaced.lean/index.md) · [Full source](../../../../DifferentialGeometry/LocallyRingedSpaceNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/LocallyRingedSpaceNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/LocallyRingedSpaceNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,10 +58,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [smoothSheafCommRing.isUnit_stalk_iff](../../../../DifferentialGeometry/LocallyRingedSpaceNamespaced.lean/declarations/smoothsheafcommring-isunit-stalk-iff.md) | 52 | `result-track:07a4c0fa74e9780ba14325bd05d4cf37b4ee0d588495dcfe2286d501db01d14b` |
-| 2 | `theorem` | [smoothSheafCommRing.nonunits_stalk](../../../../DifferentialGeometry/LocallyRingedSpaceNamespaced.lean/declarations/smoothsheafcommring-nonunits-stalk.md) | 113 | `result-track:2538ccc1e000ef17f57bf6414074b4ea2abab30b01a832c2cf4ae50abfc5cbf2` |
-| 3 | `instance` | [smoothSheafCommRing.instLocalRing_stalk](../../../../DifferentialGeometry/LocallyRingedSpaceNamespaced.lean/declarations/smoothsheafcommring-instlocalring-stalk.md) | 121 | `declaration-track:586746fe40e0a629ef9dd174446bfa8a65b33473cb906fb194404508d707c719` |
-| 4 | `def` | [IsManifold.locallyRingedSpace](../../../../DifferentialGeometry/LocallyRingedSpaceNamespaced.lean/declarations/ismanifold-locallyringedspace.md) | 131 | `declaration-track:f04109c0ac64335cb469ee0392a5d882be71e5ed3e562a5062b860b464e8f138` |
+| 1 | `theorem` | [smoothSheafCommRing.isUnit_stalk_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/LocallyRingedSpaceNamespaced.lean/declarations/smoothsheafcommring-isunit-stalk-iff.md) | 52 | `result-track:07a4c0fa74e9780ba14325bd05d4cf37b4ee0d588495dcfe2286d501db01d14b` |
+| 2 | `theorem` | [smoothSheafCommRing.nonunits_stalk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/LocallyRingedSpaceNamespaced.lean/declarations/smoothsheafcommring-nonunits-stalk.md) | 113 | `result-track:2538ccc1e000ef17f57bf6414074b4ea2abab30b01a832c2cf4ae50abfc5cbf2` |
+| 3 | `instance` | [smoothSheafCommRing.instLocalRing_stalk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/LocallyRingedSpaceNamespaced.lean/declarations/smoothsheafcommring-instlocalring-stalk.md) | 121 | `declaration-track:586746fe40e0a629ef9dd174446bfa8a65b33473cb906fb194404508d707c719` |
+| 4 | `def` | [IsManifold.locallyRingedSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/DifferentialGeometry/LocallyRingedSpaceNamespaced.lean/declarations/ismanifold-locallyringedspace.md) | 131 | `declaration-track:f04109c0ac64335cb469ee0392a5d882be71e5ed3e562a5062b860b464e8f138` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

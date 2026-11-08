@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProofSyntax.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProofSyntax.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProofSyntax.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProofSyntax.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `inductive` | [ProofTerm](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProofSyntax.lean/declarations/proofterm.md) | 5 | `declaration-track:11b8e76532291c1a69536765c829b084038a0ed3ff39c02667fc9d50133465f5` |
-| 2 | `structure` | [ProofTermMatrixCode](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProofSyntax.lean/declarations/prooftermmatrixcode.md) | 13 | `declaration-track:422b52aa4eb652640383a45864d4a75c1f98221285fbd9481a93187566356f90` |
-| 3 | `def` | [encodeProofTerm](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProofSyntax.lean/declarations/encodeproofterm.md) | 17 | `declaration-track:371f0d0f7d3c26a93b94a970205640cfcfcbeb07e330c5d8e9c18fc404d4bf71` |
-| 4 | `def` | [decodeProofTerm?](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProofSyntax.lean/declarations/decodeproofterm.md) | 21 | `declaration-track:715e7857c6959f4062efd6ded38c7cb4195fc156ba9dab204c6b71fcbb5276fe` |
-| 5 | `theorem` | [proofTerm_roundTrip](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProofSyntax.lean/declarations/proofterm-roundtrip.md) | 24 | `result-track:78779f4c73d145e3238c6dcc6a3354cf52e8f8a1a1c0306879a1eb3470e7f68f` |
-| 6 | `def` | [RepresentsProofTerm](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProofSyntax.lean/declarations/representsproofterm.md) | 28 | `declaration-track:ce9740f1942938b572487b79123d26addc056abff543578c67db74c1b38b978c` |
-| 7 | `theorem` | [finite_proofTerm_blm_representable](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProofSyntax.lean/declarations/finite-proofterm-blm-representable.md) | 31 | `result-track:df094fe9f55ec90b6c871c0772175e398308f77a145189fba5e895608ef4cbf9` |
-| 8 | `structure` | [ProofAuthorityBoundary](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProofSyntax.lean/declarations/proofauthorityboundary.md) | 35 | `declaration-track:87666eecbb56e4e0a5470985d2e6c15452d39f10896568bf9efa3d8a0b42f5dc` |
-| 9 | `theorem` | [proofAuthorityBoundary_projects](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProofSyntax.lean/declarations/proofauthorityboundary-projects.md) | 40 | `result-track:87162564429d2756c3f7f2287f489deea39e5b31195240ea7fb984e74993dea9` |
+| 1 | `inductive` | [ProofTerm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProofSyntax.lean/declarations/proofterm.md) | 5 | `declaration-track:11b8e76532291c1a69536765c829b084038a0ed3ff39c02667fc9d50133465f5` |
+| 2 | `structure` | [ProofTermMatrixCode](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProofSyntax.lean/declarations/prooftermmatrixcode.md) | 13 | `declaration-track:422b52aa4eb652640383a45864d4a75c1f98221285fbd9481a93187566356f90` |
+| 3 | `def` | [encodeProofTerm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProofSyntax.lean/declarations/encodeproofterm.md) | 17 | `declaration-track:371f0d0f7d3c26a93b94a970205640cfcfcbeb07e330c5d8e9c18fc404d4bf71` |
+| 4 | `def` | [decodeProofTerm?](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProofSyntax.lean/declarations/decodeproofterm.md) | 21 | `declaration-track:715e7857c6959f4062efd6ded38c7cb4195fc156ba9dab204c6b71fcbb5276fe` |
+| 5 | `theorem` | [proofTerm_roundTrip](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProofSyntax.lean/declarations/proofterm-roundtrip.md) | 24 | `result-track:78779f4c73d145e3238c6dcc6a3354cf52e8f8a1a1c0306879a1eb3470e7f68f` |
+| 6 | `def` | [RepresentsProofTerm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProofSyntax.lean/declarations/representsproofterm.md) | 28 | `declaration-track:ce9740f1942938b572487b79123d26addc056abff543578c67db74c1b38b978c` |
+| 7 | `theorem` | [finite_proofTerm_blm_representable](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProofSyntax.lean/declarations/finite-proofterm-blm-representable.md) | 31 | `result-track:df094fe9f55ec90b6c871c0772175e398308f77a145189fba5e895608ef4cbf9` |
+| 8 | `structure` | [ProofAuthorityBoundary](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProofSyntax.lean/declarations/proofauthorityboundary.md) | 35 | `declaration-track:87666eecbb56e4e0a5470985d2e6c15452d39f10896568bf9efa3d8a0b42f5dc` |
+| 9 | `theorem` | [proofAuthorityBoundary_projects](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ProofSyntax.lean/declarations/proofauthorityboundary-projects.md) | 40 | `result-track:87162564429d2756c3f7f2287f489deea39e5b31195240ea7fb984e74993dea9` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

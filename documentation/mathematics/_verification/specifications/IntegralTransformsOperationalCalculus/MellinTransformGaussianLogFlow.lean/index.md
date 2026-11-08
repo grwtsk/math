@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../IntegralTransformsOperationalCalculus/MellinTransformGaussianLogFlow.lean/index.md) · [Full source](../../../../IntegralTransformsOperationalCalculus/MellinTransformGaussianLogFlow.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/MellinTransformGaussianLogFlow.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/MellinTransformGaussianLogFlow.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Analysis.MellinTransform.NormalizedGaussian`](../../../../MeasureAndIntegration/MellinTransformNormalizedGaussian.lean/index.md) — import line 20; pinned internal source present.
+- [`GRWTSK.Analysis.MellinTransform.NormalizedGaussian`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/MellinTransformNormalizedGaussian.lean/index.md) — import line 20; pinned internal source present.
 - `Mathlib.Analysis.Complex.Liouville` — import line 21; external provider; requires a separately pinned dependency.
 - `Mathlib.Analysis.Complex.RealDeriv` — import line 22; external provider; requires a separately pinned dependency.
 - `Mathlib.Analysis.SpecialFunctions.Complex.Analytic` — import line 23; external provider; requires a separately pinned dependency.
@@ -60,12 +60,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [gaussianFlow](../../../../IntegralTransformsOperationalCalculus/MellinTransformGaussianLogFlow.lean/declarations/gaussianflow.md) | 31 | `declaration-track:3d480c66994432788bd4aba8255f8457d4fc2adee1f87d19fd6304363be04d85` |
-| 2 | `lemma` | [gaussianFlow_analytic](../../../../IntegralTransformsOperationalCalculus/MellinTransformGaussianLogFlow.lean/declarations/gaussianflow-analytic.md) | 34 | `result-track:816b65b070b32cc7c06406caed6f005ba6f826ba7279c94cbaa0767fa1d20854` |
-| 3 | `lemma` | [gaussianFlow_real](../../../../IntegralTransformsOperationalCalculus/MellinTransformGaussianLogFlow.lean/declarations/gaussianflow-real.md) | 37 | `result-track:935306f3d93c9f55ce6d64af00944e7ffeabc21b9ea99f520462422681fc157f` |
-| 4 | `lemma` | [iteratedDeriv_restrict_real](../../../../IntegralTransformsOperationalCalculus/MellinTransformGaussianLogFlow.lean/declarations/iteratedderiv-restrict-real.md) | 43 | `result-track:67d9760c4d2a6c1021eba7f495dcbd1736504915ab73901956c51981e7b7fccd` |
-| 5 | `lemma` | [gaussianFlow_disk_bound](../../../../IntegralTransformsOperationalCalculus/MellinTransformGaussianLogFlow.lean/declarations/gaussianflow-disk-bound.md) | 56 | `result-track:f12a8a1ce5b670ac681c8a8b8c8f81e85537f38a017ffbb2c118bba042671b76` |
-| 6 | `lemma` | [gaussianFlow_derivative_bound](../../../../IntegralTransformsOperationalCalculus/MellinTransformGaussianLogFlow.lean/declarations/gaussianflow-derivative-bound.md) | 92 | `result-track:7265e1f592a2d7332290916f41a5aeeb47ce85619b03f9f710c71c25204ffbfe` |
+| 1 | `def` | [gaussianFlow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/MellinTransformGaussianLogFlow.lean/declarations/gaussianflow.md) | 31 | `declaration-track:3d480c66994432788bd4aba8255f8457d4fc2adee1f87d19fd6304363be04d85` |
+| 2 | `lemma` | [gaussianFlow_analytic](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/MellinTransformGaussianLogFlow.lean/declarations/gaussianflow-analytic.md) | 34 | `result-track:816b65b070b32cc7c06406caed6f005ba6f826ba7279c94cbaa0767fa1d20854` |
+| 3 | `lemma` | [gaussianFlow_real](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/MellinTransformGaussianLogFlow.lean/declarations/gaussianflow-real.md) | 37 | `result-track:935306f3d93c9f55ce6d64af00944e7ffeabc21b9ea99f520462422681fc157f` |
+| 4 | `lemma` | [iteratedDeriv_restrict_real](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/MellinTransformGaussianLogFlow.lean/declarations/iteratedderiv-restrict-real.md) | 43 | `result-track:67d9760c4d2a6c1021eba7f495dcbd1736504915ab73901956c51981e7b7fccd` |
+| 5 | `lemma` | [gaussianFlow_disk_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/MellinTransformGaussianLogFlow.lean/declarations/gaussianflow-disk-bound.md) | 56 | `result-track:f12a8a1ce5b670ac681c8a8b8c8f81e85537f38a017ffbb2c118bba042671b76` |
+| 6 | `lemma` | [gaussianFlow_derivative_bound](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/IntegralTransformsOperationalCalculus/MellinTransformGaussianLogFlow.lean/declarations/gaussianflow-derivative-bound.md) | 92 | `result-track:7265e1f592a2d7332290916f41a5aeeb47ce85619b03f9f710c71c25204ffbfe` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

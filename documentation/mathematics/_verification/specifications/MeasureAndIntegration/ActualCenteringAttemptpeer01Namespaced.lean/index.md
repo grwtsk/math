@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../MeasureAndIntegration/ActualCenteringAttemptpeer01Namespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ActualCenteringAttemptpeer01Namespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCenteringAttemptpeer01Namespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCenteringAttemptpeer01Namespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -59,11 +59,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [actual_remainder_tendsto_integral](../../../../MeasureAndIntegration/ActualCenteringAttemptpeer01Namespaced.lean/declarations/actual-remainder-tendsto-integral.md) | 29 | `result-track:e5a93ed9355122e8766d6e873d02316da1b859362f647fad33580e7839d80fc9` |
-| 2 | `theorem` | [actual_scaled_laplace_tendsto_zero](../../../../MeasureAndIntegration/ActualCenteringAttemptpeer01Namespaced.lean/declarations/actual-scaled-laplace-tendsto-zero.md) | 43 | `result-track:43cd1d59a996abda91b56eab7340d1acbacf44f618e0d31dd6d939ce8e824d9c` |
-| 3 | `theorem` | [actual_euler_centering](../../../../MeasureAndIntegration/ActualCenteringAttemptpeer01Namespaced.lean/declarations/actual-euler-centering.md) | 49 | `result-track:c0367d953dfbb5b0559701f8e1ce6bfc8c85629ecfd7cc0803bd7531c2ef55c7` |
-| 4 | `theorem` | [actual_remainder_tendsto_zero](../../../../MeasureAndIntegration/ActualCenteringAttemptpeer01Namespaced.lean/declarations/actual-remainder-tendsto-zero.md) | 62 | `result-track:26a6745b149dd125a1b9944bc63e3115e0c599ccaf6ec8ee21cb9a1ab6b02cff` |
-| 5 | `theorem` | [actual_remainder_eq_tail](../../../../MeasureAndIntegration/ActualCenteringAttemptpeer01Namespaced.lean/declarations/actual-remainder-eq-tail.md) | 66 | `result-track:f8571665eb67ef7a33d8041c175398683df3a624bcdc284474f9b2e3c3ee886b` |
+| 1 | `theorem` | [actual_remainder_tendsto_integral](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCenteringAttemptpeer01Namespaced.lean/declarations/actual-remainder-tendsto-integral.md) | 29 | `result-track:e5a93ed9355122e8766d6e873d02316da1b859362f647fad33580e7839d80fc9` |
+| 2 | `theorem` | [actual_scaled_laplace_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCenteringAttemptpeer01Namespaced.lean/declarations/actual-scaled-laplace-tendsto-zero.md) | 43 | `result-track:43cd1d59a996abda91b56eab7340d1acbacf44f618e0d31dd6d939ce8e824d9c` |
+| 3 | `theorem` | [actual_euler_centering](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCenteringAttemptpeer01Namespaced.lean/declarations/actual-euler-centering.md) | 49 | `result-track:c0367d953dfbb5b0559701f8e1ce6bfc8c85629ecfd7cc0803bd7531c2ef55c7` |
+| 4 | `theorem` | [actual_remainder_tendsto_zero](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCenteringAttemptpeer01Namespaced.lean/declarations/actual-remainder-tendsto-zero.md) | 62 | `result-track:26a6745b149dd125a1b9944bc63e3115e0c599ccaf6ec8ee21cb9a1ab6b02cff` |
+| 5 | `theorem` | [actual_remainder_eq_tail](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MeasureAndIntegration/ActualCenteringAttemptpeer01Namespaced.lean/declarations/actual-remainder-eq-tail.md) | 66 | `result-track:f8571665eb67ef7a33d8041c175398683df3a624bcdc284474f9b2e3c3ee886b` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

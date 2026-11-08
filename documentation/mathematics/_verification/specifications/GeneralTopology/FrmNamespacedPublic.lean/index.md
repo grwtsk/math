@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/FrmNamespacedPublic.lean/index.md) · [Full source](../../../../GeneralTopology/FrmNamespacedPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FrmNamespacedPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FrmNamespacedPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [topCatOpToFrm](../../../../GeneralTopology/FrmNamespacedPublic.lean/declarations/topcatoptofrm.md) | 30 | `declaration-track:36d5f134234af3bbf40f75a4046f667c96f397da5bedabe6347ae06f6b2332b5` |
-| 2 | `instance` | [CompHausOpToFrame.faithful](../../../../GeneralTopology/FrmNamespacedPublic.lean/declarations/comphausoptoframe-faithful.md) | 35 | `declaration-track:c4b766a3929f8ea489ed22dd4a2bf736b52a7947d782415255f9cee02ba10ea8` |
+| 1 | `def` | [topCatOpToFrm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FrmNamespacedPublic.lean/declarations/topcatoptofrm.md) | 30 | `declaration-track:36d5f134234af3bbf40f75a4046f667c96f397da5bedabe6347ae06f6b2332b5` |
+| 2 | `instance` | [CompHausOpToFrame.faithful](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/FrmNamespacedPublic.lean/declarations/comphausoptoframe-faithful.md) | 35 | `declaration-track:c4b766a3929f8ea489ed22dd4a2bf736b52a7947d782415255f9cee02ba10ea8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GeneralTopology/EMetricSpacePiPublic.lean/index.md) · [Full source](../../../../GeneralTopology/EMetricSpacePiPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/EMetricSpacePiPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/EMetricSpacePiPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,14 +57,14 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [(anonymous)](../../../../GeneralTopology/EMetricSpacePiPublic.lean/declarations/instance.md) | 35 | `declaration-track:959a931b0077c9c4b09ae8af86b1c2bc04af2fca77a3755b8152f3d2d9717c38` |
-| 2 | `theorem` | [edist_pi_def](../../../../GeneralTopology/EMetricSpacePiPublic.lean/declarations/edist-pi-def.md) | 38 | `result-track:f114e5da01756c1e37bf166f0f070369304a2897faf840b09b3907901999f64a` |
-| 3 | `theorem` | [edist_le_pi_edist](../../../../GeneralTopology/EMetricSpacePiPublic.lean/declarations/edist-le-pi-edist.md) | 42 | `result-track:e1e4634d68b6c5e3bd4cf06395e31c83cf8058a4da8fc6f0658e2fcba8fcad10` |
-| 4 | `theorem` | [edist_pi_le_iff](../../../../GeneralTopology/EMetricSpacePiPublic.lean/declarations/edist-pi-le-iff.md) | 46 | `result-track:12836f3591057572602d398a1e23178679067f79a59e2ca7a7db2cafac192870` |
-| 5 | `theorem` | [edist_pi_const_le](../../../../GeneralTopology/EMetricSpacePiPublic.lean/declarations/edist-pi-const-le.md) | 50 | `result-track:ae0e31e554055766e6f1fed0318999e46c787a35922a646269faa5374011ab27` |
-| 6 | `theorem` | [edist_pi_const](../../../../GeneralTopology/EMetricSpacePiPublic.lean/declarations/edist-pi-const.md) | 54 | `result-track:909171dcd561e215809e6ca87aec6c5d35fe9219661e53e41d4646a7be77483a` |
-| 7 | `instance` | [pseudoEMetricSpacePi](../../../../GeneralTopology/EMetricSpacePiPublic.lean/declarations/pseudoemetricspacepi.md) | 62 | `declaration-track:c9405fc8a84be93b9b03fefdec0f551da9864e78d5dc0590da1e6a949c543907` |
-| 8 | `instance` | [emetricSpacePi](../../../../GeneralTopology/EMetricSpacePiPublic.lean/declarations/emetricspacepi.md) | 86 | `declaration-track:10cba7da66af1276d7a3c761a669287db6fb058c1e82cb02919a783a60a3657c` |
+| 1 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/EMetricSpacePiPublic.lean/declarations/instance.md) | 35 | `declaration-track:959a931b0077c9c4b09ae8af86b1c2bc04af2fca77a3755b8152f3d2d9717c38` |
+| 2 | `theorem` | [edist_pi_def](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/EMetricSpacePiPublic.lean/declarations/edist-pi-def.md) | 38 | `result-track:f114e5da01756c1e37bf166f0f070369304a2897faf840b09b3907901999f64a` |
+| 3 | `theorem` | [edist_le_pi_edist](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/EMetricSpacePiPublic.lean/declarations/edist-le-pi-edist.md) | 42 | `result-track:e1e4634d68b6c5e3bd4cf06395e31c83cf8058a4da8fc6f0658e2fcba8fcad10` |
+| 4 | `theorem` | [edist_pi_le_iff](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/EMetricSpacePiPublic.lean/declarations/edist-pi-le-iff.md) | 46 | `result-track:12836f3591057572602d398a1e23178679067f79a59e2ca7a7db2cafac192870` |
+| 5 | `theorem` | [edist_pi_const_le](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/EMetricSpacePiPublic.lean/declarations/edist-pi-const-le.md) | 50 | `result-track:ae0e31e554055766e6f1fed0318999e46c787a35922a646269faa5374011ab27` |
+| 6 | `theorem` | [edist_pi_const](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/EMetricSpacePiPublic.lean/declarations/edist-pi-const.md) | 54 | `result-track:909171dcd561e215809e6ca87aec6c5d35fe9219661e53e41d4646a7be77483a` |
+| 7 | `instance` | [pseudoEMetricSpacePi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/EMetricSpacePiPublic.lean/declarations/pseudoemetricspacepi.md) | 62 | `declaration-track:c9405fc8a84be93b9b03fefdec0f551da9864e78d5dc0590da1e6a949c543907` |
+| 8 | `instance` | [emetricSpacePi](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralTopology/EMetricSpacePiPublic.lean/declarations/emetricspacepi.md) | 86 | `declaration-track:10cba7da66af1276d7a3c761a669287db6fb058c1e82cb02919a783a60a3657c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

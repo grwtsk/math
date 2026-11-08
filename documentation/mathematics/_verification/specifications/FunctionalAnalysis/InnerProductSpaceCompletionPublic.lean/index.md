@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionalAnalysis/InnerProductSpaceCompletionPublic.lean/index.md) · [Full source](../../../../FunctionalAnalysis/InnerProductSpaceCompletionPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpaceCompletionPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpaceCompletionPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,15 +57,15 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [Inseparable.inner_eq_inner](../../../../FunctionalAnalysis/InnerProductSpaceCompletionPublic.lean/declarations/inseparable-inner-eq-inner.md) | 29 | `result-track:104942efc6ca0752b7030dcef58e41c1aaa9d01be0ceb076eb020c708de73e7c` |
-| 2 | `instance` | [(anonymous)](../../../../FunctionalAnalysis/InnerProductSpaceCompletionPublic.lean/declarations/instance.md) | 36 | `declaration-track:0094eae2f603b0fa0424b6bf9e358cd404bd5b3f8e776355bd1b36a2fac52009` |
-| 3 | `theorem` | [inner_mk_mk](../../../../FunctionalAnalysis/InnerProductSpaceCompletionPublic.lean/declarations/inner-mk-mk.md) | 40 | `result-track:79aae42e94e1972f34be2cab2f0ecd04018ca15629c09a4865b90edb02952313` |
-| 4 | `instance` | [(anonymous)](../../../../FunctionalAnalysis/InnerProductSpaceCompletionPublic.lean/declarations/instance-source-edition-2.md) | 43 | `declaration-track:a1eda4cbc3619093e444bcc84502d721e21758e41758d23010e4d6fecbb111c4` |
-| 5 | `instance` | [toInner](../../../../FunctionalAnalysis/InnerProductSpaceCompletionPublic.lean/declarations/toinner.md) | 61 | `declaration-track:3b69f91ad4d5fd0d5d2751130e6505c789ad987991f2aaab2d54bd43912b502e` |
-| 6 | `theorem` | [inner_coe](../../../../FunctionalAnalysis/InnerProductSpaceCompletionPublic.lean/declarations/inner-coe.md) | 66 | `result-track:4afbed6344ddb41622a96e2b4d123b9e305fc0bcca0a4b6959805cb66a31d759` |
-| 7 | `theorem` | [continuous_inner](../../../../FunctionalAnalysis/InnerProductSpaceCompletionPublic.lean/declarations/continuous-inner.md) | 70 | `result-track:999dac39c4a0f735ecabc1bd845bf47c36992f1a394df96049432df680e050f2` |
-| 8 | `theorem` | [Continuous.inner](../../../../FunctionalAnalysis/InnerProductSpaceCompletionPublic.lean/declarations/continuous-inner-source-edition-2.md) | 85 | `result-track:d185905184fcf5756b39ed6e61511d523c94a82eca62f6afc7a1d4dc174fc1c3` |
-| 9 | `instance` | [innerProductSpace](../../../../FunctionalAnalysis/InnerProductSpaceCompletionPublic.lean/declarations/innerproductspace.md) | 89 | `declaration-track:41025eef1854163c612027affbae10c6d734359005cd4876c09dec0241f0af1e` |
+| 1 | `theorem` | [Inseparable.inner_eq_inner](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpaceCompletionPublic.lean/declarations/inseparable-inner-eq-inner.md) | 29 | `result-track:104942efc6ca0752b7030dcef58e41c1aaa9d01be0ceb076eb020c708de73e7c` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpaceCompletionPublic.lean/declarations/instance.md) | 36 | `declaration-track:0094eae2f603b0fa0424b6bf9e358cd404bd5b3f8e776355bd1b36a2fac52009` |
+| 3 | `theorem` | [inner_mk_mk](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpaceCompletionPublic.lean/declarations/inner-mk-mk.md) | 40 | `result-track:79aae42e94e1972f34be2cab2f0ecd04018ca15629c09a4865b90edb02952313` |
+| 4 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpaceCompletionPublic.lean/declarations/instance-source-edition-2.md) | 43 | `declaration-track:a1eda4cbc3619093e444bcc84502d721e21758e41758d23010e4d6fecbb111c4` |
+| 5 | `instance` | [toInner](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpaceCompletionPublic.lean/declarations/toinner.md) | 61 | `declaration-track:3b69f91ad4d5fd0d5d2751130e6505c789ad987991f2aaab2d54bd43912b502e` |
+| 6 | `theorem` | [inner_coe](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpaceCompletionPublic.lean/declarations/inner-coe.md) | 66 | `result-track:4afbed6344ddb41622a96e2b4d123b9e305fc0bcca0a4b6959805cb66a31d759` |
+| 7 | `theorem` | [continuous_inner](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpaceCompletionPublic.lean/declarations/continuous-inner.md) | 70 | `result-track:999dac39c4a0f735ecabc1bd845bf47c36992f1a394df96049432df680e050f2` |
+| 8 | `theorem` | [Continuous.inner](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpaceCompletionPublic.lean/declarations/continuous-inner-source-edition-2.md) | 85 | `result-track:d185905184fcf5756b39ed6e61511d523c94a82eca62f6afc7a1d4dc174fc1c3` |
+| 9 | `instance` | [innerProductSpace](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionalAnalysis/InnerProductSpaceCompletionPublic.lean/declarations/innerproductspace.md) | 89 | `declaration-track:41025eef1854163c612027affbae10c6d734359005cd4876c09dec0241f0af1e` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

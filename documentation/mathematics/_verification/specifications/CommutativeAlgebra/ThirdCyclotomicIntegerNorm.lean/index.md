@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../CommutativeAlgebra/ThirdCyclotomicIntegerNorm.lean/index.md) · [Full source](../../../../CommutativeAlgebra/ThirdCyclotomicIntegerNorm.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ThirdCyclotomicIntegerNorm.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ThirdCyclotomicIntegerNorm.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -46,7 +46,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.NumberTheory.Cyclotomic.Checks.Positive.ThirdCyclotomicIdeals`](../../../../CommutativeAlgebra/PositiveThirdCyclotomicIdeals.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Cyclotomic.Checks.Positive.ThirdCyclotomicIdeals`](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/PositiveThirdCyclotomicIdeals.lean/index.md) — import line 3; pinned internal source present.
 
 ## Top results and three-degree verification metric
 
@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `example` | [(anonymous)](../../../../CommutativeAlgebra/ThirdCyclotomicIntegerNorm.lean/declarations/example.md) | 8 | `declaration-track:21f34afcda3fb22d3cdc5c5189faf4d786f0b8399bab9f329c6dee6b250e7ec8` |
+| 1 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CommutativeAlgebra/ThirdCyclotomicIntegerNorm.lean/declarations/example.md) | 8 | `declaration-track:21f34afcda3fb22d3cdc5c5189faf4d786f0b8399bab9f329c6dee6b250e7ec8` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

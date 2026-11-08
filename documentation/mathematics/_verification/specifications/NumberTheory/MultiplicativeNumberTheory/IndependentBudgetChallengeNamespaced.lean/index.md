@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../NumberTheory/MultiplicativeNumberTheory/IndependentBudgetChallengeNamespaced.lean/index.md) · [Full source](../../../../../NumberTheory/MultiplicativeNumberTheory/IndependentBudgetChallengeNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/IndependentBudgetChallengeNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/IndependentBudgetChallengeNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [baseline_at_six](../../../../../NumberTheory/MultiplicativeNumberTheory/IndependentBudgetChallengeNamespaced.lean/declarations/baseline-at-six.md) | 21 | `result-track:243bd37e3e3091fe3d62c041c2bd69703bfdd7fafbd09f21f07863929dd73f46` |
-| 2 | `theorem` | [residual_tail_at_six](../../../../../NumberTheory/MultiplicativeNumberTheory/IndependentBudgetChallengeNamespaced.lean/declarations/residual-tail-at-six.md) | 25 | `result-track:ac504ccf3f837e626a78b793e02463b0d904e8af0ba041a4c1254b1bfc422f8b` |
-| 3 | `theorem` | [all_real_at_six](../../../../../NumberTheory/MultiplicativeNumberTheory/IndependentBudgetChallengeNamespaced.lean/declarations/all-real-at-six.md) | 32 | `result-track:b31c34961a09e2e3b4f6148047c71735766633ecec1fef986d269b8758dcd5e3` |
-| 4 | `theorem` | [Mangoldt_residual_at_six](../../../../../NumberTheory/MultiplicativeNumberTheory/IndependentBudgetChallengeNamespaced.lean/declarations/mangoldt-residual-at-six.md) | 41 | `result-track:c074b2aae5f06c099fc05f6ca99adc48bad4882e867e55392653d216c8297b53` |
+| 1 | `theorem` | [baseline_at_six](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/IndependentBudgetChallengeNamespaced.lean/declarations/baseline-at-six.md) | 21 | `result-track:243bd37e3e3091fe3d62c041c2bd69703bfdd7fafbd09f21f07863929dd73f46` |
+| 2 | `theorem` | [residual_tail_at_six](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/IndependentBudgetChallengeNamespaced.lean/declarations/residual-tail-at-six.md) | 25 | `result-track:ac504ccf3f837e626a78b793e02463b0d904e8af0ba041a4c1254b1bfc422f8b` |
+| 3 | `theorem` | [all_real_at_six](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/IndependentBudgetChallengeNamespaced.lean/declarations/all-real-at-six.md) | 32 | `result-track:b31c34961a09e2e3b4f6148047c71735766633ecec1fef986d269b8758dcd5e3` |
+| 4 | `theorem` | [Mangoldt_residual_at_six](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/MultiplicativeNumberTheory/IndependentBudgetChallengeNamespaced.lean/declarations/mangoldt-residual-at-six.md) | 41 | `result-track:c074b2aae5f06c099fc05f6ca99adc48bad4882e867e55392653d216c8297b53` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../GroupTheoryAndGeneralizations/NatDefs.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/NatDefs.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/NatDefs.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/NatDefs.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,18 +57,18 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [instMulOneClass](../../../../GroupTheoryAndGeneralizations/NatDefs.lean/declarations/instmuloneclass.md) | 22 | `declaration-track:99d90af5ab4b0c0dbc96f612f41aef87d04e0fecf2c6aa82a4d39fba31c9e633` |
-| 2 | `instance` | [instAddCancelCommMonoid](../../../../GroupTheoryAndGeneralizations/NatDefs.lean/declarations/instaddcancelcommmonoid.md) | 26 | `declaration-track:f65abb3580e2cc0d9ff5ccb0b7704887704b3e76443ce64805624050512849cf` |
-| 3 | `instance` | [instCommMonoid](../../../../GroupTheoryAndGeneralizations/NatDefs.lean/declarations/instcommmonoid.md) | 38 | `declaration-track:e9d7a13c8ab44bccc8c459b61ab0cbed872b1403440f290bc087862d4d14e761` |
-| 4 | `instance` | [instAddCommMonoid](../../../../GroupTheoryAndGeneralizations/NatDefs.lean/declarations/instaddcommmonoid.md) | 55 | `declaration-track:25cb852442b1b8f03275aa03cbd92f5a5e5a56b062975d65810ed7d391cfda1f` |
-| 5 | `instance` | [instAddMonoid](../../../../GroupTheoryAndGeneralizations/NatDefs.lean/declarations/instaddmonoid.md) | 56 | `declaration-track:a0a528dbbddfd4485037f8ad2cbb8a451893326f2b871d7ab6a344d607c352c7` |
-| 6 | `instance` | [instMonoid](../../../../GroupTheoryAndGeneralizations/NatDefs.lean/declarations/instmonoid.md) | 57 | `declaration-track:65e04f216f92f18bd5c5c9f4d2c70014c60e6c21c3b493415778dffc72349488` |
-| 7 | `instance` | [instCommSemigroup](../../../../GroupTheoryAndGeneralizations/NatDefs.lean/declarations/instcommsemigroup.md) | 58 | `declaration-track:1f78d8730aaf694184db9e8e4b8d6d9bbe9cabcb24f7c19128a2be8fe951a8f5` |
-| 8 | `instance` | [instSemigroup](../../../../GroupTheoryAndGeneralizations/NatDefs.lean/declarations/instsemigroup.md) | 59 | `declaration-track:22cd7f2c76b9b3fc9e8f0ce2bd131686462a4ddf2cea3975c529a4826087067c` |
-| 9 | `instance` | [instAddCommSemigroup](../../../../GroupTheoryAndGeneralizations/NatDefs.lean/declarations/instaddcommsemigroup.md) | 60 | `declaration-track:271114465104019015e2227b1d1f8cc3f93d0cebd11fc876fe79d0ee526758f4` |
-| 10 | `instance` | [instAddSemigroup](../../../../GroupTheoryAndGeneralizations/NatDefs.lean/declarations/instaddsemigroup.md) | 61 | `declaration-track:c0dd67c1bc40e931405ef547541b9bc712161eb78cbea6c6d3aa315fcb1b2ad7` |
-| 11 | `instance` | [instOne](../../../../GroupTheoryAndGeneralizations/NatDefs.lean/declarations/instone.md) | 62 | `declaration-track:7e49e1675388fa66b1e494335a53bc2a00cb46ecf157616c35fdd31544c3f046` |
-| 12 | `lemma` | [nsmul_eq_mul](../../../../GroupTheoryAndGeneralizations/NatDefs.lean/declarations/nsmul-eq-mul.md) | 67 | `result-track:54c10dd93bc9cc6324db3e0588cb277e0977ff1f7cbb979c53b705e697c8a5be` |
+| 1 | `instance` | [instMulOneClass](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/NatDefs.lean/declarations/instmuloneclass.md) | 22 | `declaration-track:99d90af5ab4b0c0dbc96f612f41aef87d04e0fecf2c6aa82a4d39fba31c9e633` |
+| 2 | `instance` | [instAddCancelCommMonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/NatDefs.lean/declarations/instaddcancelcommmonoid.md) | 26 | `declaration-track:f65abb3580e2cc0d9ff5ccb0b7704887704b3e76443ce64805624050512849cf` |
+| 3 | `instance` | [instCommMonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/NatDefs.lean/declarations/instcommmonoid.md) | 38 | `declaration-track:e9d7a13c8ab44bccc8c459b61ab0cbed872b1403440f290bc087862d4d14e761` |
+| 4 | `instance` | [instAddCommMonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/NatDefs.lean/declarations/instaddcommmonoid.md) | 55 | `declaration-track:25cb852442b1b8f03275aa03cbd92f5a5e5a56b062975d65810ed7d391cfda1f` |
+| 5 | `instance` | [instAddMonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/NatDefs.lean/declarations/instaddmonoid.md) | 56 | `declaration-track:a0a528dbbddfd4485037f8ad2cbb8a451893326f2b871d7ab6a344d607c352c7` |
+| 6 | `instance` | [instMonoid](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/NatDefs.lean/declarations/instmonoid.md) | 57 | `declaration-track:65e04f216f92f18bd5c5c9f4d2c70014c60e6c21c3b493415778dffc72349488` |
+| 7 | `instance` | [instCommSemigroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/NatDefs.lean/declarations/instcommsemigroup.md) | 58 | `declaration-track:1f78d8730aaf694184db9e8e4b8d6d9bbe9cabcb24f7c19128a2be8fe951a8f5` |
+| 8 | `instance` | [instSemigroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/NatDefs.lean/declarations/instsemigroup.md) | 59 | `declaration-track:22cd7f2c76b9b3fc9e8f0ce2bd131686462a4ddf2cea3975c529a4826087067c` |
+| 9 | `instance` | [instAddCommSemigroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/NatDefs.lean/declarations/instaddcommsemigroup.md) | 60 | `declaration-track:271114465104019015e2227b1d1f8cc3f93d0cebd11fc876fe79d0ee526758f4` |
+| 10 | `instance` | [instAddSemigroup](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/NatDefs.lean/declarations/instaddsemigroup.md) | 61 | `declaration-track:c0dd67c1bc40e931405ef547541b9bc712161eb78cbea6c6d3aa315fcb1b2ad7` |
+| 11 | `instance` | [instOne](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/NatDefs.lean/declarations/instone.md) | 62 | `declaration-track:7e49e1675388fa66b1e494335a53bc2a00cb46ecf157616c35fdd31544c3f046` |
+| 12 | `lemma` | [nsmul_eq_mul](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GroupTheoryAndGeneralizations/NatDefs.lean/declarations/nsmul-eq-mul.md) | 67 | `result-track:54c10dd93bc9cc6324db3e0588cb277e0977ff1f7cbb979c53b705e697c8a5be` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

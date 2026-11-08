@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Frobenius.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Frobenius.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Frobenius.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Frobenius.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,11 +57,11 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [frobeniusFixedPointPredicateStatement](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Frobenius.lean/declarations/frobeniusfixedpointpredicatestatement.md) | 5 | `declaration-track:4295a6ae8949e7424e161d1863396c59f21fd35bd79958aff8cb67e8966a01e5` |
-| 2 | `def` | [frobeniusTraceMomentStatement](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Frobenius.lean/declarations/frobeniustracemomentstatement.md) | 8 | `declaration-track:a9f92bda37d48e5d1fea6d2d023244e4144cefa0cb4e8b06dc144e5df829dc22` |
-| 3 | `def` | [frobeniusIsNotBooleanStatement](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Frobenius.lean/declarations/frobeniusisnotbooleanstatement.md) | 11 | `declaration-track:5f96f7a43d79134ecc791701f8750a9044f9179cb4353fe7ae696c7d187addc9` |
-| 4 | `theorem` | [frobenius_fixed_point_predicate_reference](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Frobenius.lean/declarations/frobenius-fixed-point-predicate-reference.md) | 14 | `result-track:6474e3875a9885ce0362e0ce3b6dec1468d8e14f41b062cab8e1bc4593d4cbbd` |
-| 5 | `theorem` | [frobenius_trace_moment_reference](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Frobenius.lean/declarations/frobenius-trace-moment-reference.md) | 17 | `result-track:591fd8f58ebd7c0c4c1e9ae22df6bfcb31d9e3a4691ec6448919fe066a89c346` |
+| 1 | `def` | [frobeniusFixedPointPredicateStatement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Frobenius.lean/declarations/frobeniusfixedpointpredicatestatement.md) | 5 | `declaration-track:4295a6ae8949e7424e161d1863396c59f21fd35bd79958aff8cb67e8966a01e5` |
+| 2 | `def` | [frobeniusTraceMomentStatement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Frobenius.lean/declarations/frobeniustracemomentstatement.md) | 8 | `declaration-track:a9f92bda37d48e5d1fea6d2d023244e4144cefa0cb4e8b06dc144e5df829dc22` |
+| 3 | `def` | [frobeniusIsNotBooleanStatement](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Frobenius.lean/declarations/frobeniusisnotbooleanstatement.md) | 11 | `declaration-track:5f96f7a43d79134ecc791701f8750a9044f9179cb4353fe7ae696c7d187addc9` |
+| 4 | `theorem` | [frobenius_fixed_point_predicate_reference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Frobenius.lean/declarations/frobenius-fixed-point-predicate-reference.md) | 14 | `result-track:6474e3875a9885ce0362e0ce3b6dec1468d8e14f41b062cab8e1bc4593d4cbbd` |
+| 5 | `theorem` | [frobenius_trace_moment_reference](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/Frobenius.lean/declarations/frobenius-trace-moment-reference.md) | 17 | `result-track:591fd8f58ebd7c0c4c1e9ae22df6bfcb31d9e3a4691ec6448919fe066a89c346` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

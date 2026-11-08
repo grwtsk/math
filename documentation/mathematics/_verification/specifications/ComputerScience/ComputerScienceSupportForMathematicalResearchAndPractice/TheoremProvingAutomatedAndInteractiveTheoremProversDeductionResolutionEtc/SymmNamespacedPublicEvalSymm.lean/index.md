@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SymmNamespacedPublicEvalSymm.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SymmNamespacedPublicEvalSymm.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SymmNamespacedPublicEvalSymm.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SymmNamespacedPublicEvalSymm.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,8 +57,8 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `def` | [evalSymm](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SymmNamespacedPublicEvalSymm.lean/declarations/evalsymm.md) | 25 | `declaration-track:d3daa72cc5e62f8894d5fe854b4655d32ab7c387d50bb4caa69c1a04a72bc949` |
-| 2 | `def` | [evalSymmSaturate](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SymmNamespacedPublicEvalSymm.lean/declarations/evalsymmsaturate.md) | 35 | `declaration-track:d2f8e8ca7b5c34d7f9e93f98b582c6898035e18120e501ca6ed99b5a0ce24cd4` |
+| 1 | `def` | [evalSymm](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SymmNamespacedPublicEvalSymm.lean/declarations/evalsymm.md) | 25 | `declaration-track:d3daa72cc5e62f8894d5fe854b4655d32ab7c387d50bb4caa69c1a04a72bc949` |
+| 2 | `def` | [evalSymmSaturate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SymmNamespacedPublicEvalSymm.lean/declarations/evalsymmsaturate.md) | 35 | `declaration-track:d2f8e8ca7b5c34d7f9e93f98b582c6898035e18120e501ca6ed99b5a0ce24cd4` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

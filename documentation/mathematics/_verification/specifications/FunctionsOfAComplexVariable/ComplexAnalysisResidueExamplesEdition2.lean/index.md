@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../FunctionsOfAComplexVariable/ComplexAnalysisResidueExamplesEdition2.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/ComplexAnalysisResidueExamplesEdition2.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexAnalysisResidueExamplesEdition2.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexAnalysisResidueExamplesEdition2.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,9 +58,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [analyticOrderAt_sub_pow](../../../../FunctionsOfAComplexVariable/ComplexAnalysisResidueExamplesEdition2.lean/declarations/analyticorderat-sub-pow.md) | 17 | `result-track:6ac5c6998a8483eeee5cc143512f45ca1afc1f15b580dc0375421c1b38e983d9` |
-| 2 | `example` | [(anonymous)](../../../../FunctionsOfAComplexVariable/ComplexAnalysisResidueExamplesEdition2.lean/declarations/example.md) | 35 | `declaration-track:2a9b1654f2d13a469449cc35a07eaa3a9e4dbeea4195d55eb85e7fb60cd9d0fe` |
-| 3 | `example` | [(anonymous)](../../../../FunctionsOfAComplexVariable/ComplexAnalysisResidueExamplesEdition2.lean/declarations/example-source-edition-2.md) | 44 | `declaration-track:935449de167fd8b379eea414332d7aa958813fffb7971bf23bf4f790a102af0c` |
+| 1 | `theorem` | [analyticOrderAt_sub_pow](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexAnalysisResidueExamplesEdition2.lean/declarations/analyticorderat-sub-pow.md) | 17 | `result-track:6ac5c6998a8483eeee5cc143512f45ca1afc1f15b580dc0375421c1b38e983d9` |
+| 2 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexAnalysisResidueExamplesEdition2.lean/declarations/example.md) | 35 | `declaration-track:2a9b1654f2d13a469449cc35a07eaa3a9e4dbeea4195d55eb85e7fb60cd9d0fe` |
+| 3 | `example` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/FunctionsOfAComplexVariable/ComplexAnalysisResidueExamplesEdition2.lean/declarations/example-source-edition-2.md) | 44 | `declaration-track:935449de167fd8b379eea414332d7aa958813fffb7971bf23bf4f790a102af0c` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

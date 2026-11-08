@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightSmallPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightSmallPublic.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightSmallPublic.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightSmallPublic.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ No anchored import commands were observed. This does not establish dependency cl
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `abbrev` | [equivSmall](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightSmallPublic.lean/declarations/equivsmall.md) | 30 | `declaration-track:d945b261e65fe32400cdf25bf1f14dfb72ab9b91ed1e3a97d17e683984a75c5c` |
-| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightSmallPublic.lean/declarations/instance.md) | 36 | `declaration-track:975b220d9031857ef9e0e95d3c7d247da57d1cc90a5d597dfb22b3f37388488d` |
-| 3 | `def` | [equivSmallSheafificationIso](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightSmallPublic.lean/declarations/equivsmallsheafificationiso.md) | 47 | `declaration-track:0efbbe2b5e31b6900214044eb35570ead1e2b9c7a4d2ee0e63352262a1e41f68` |
-| 4 | `def` | [equivSmallFreeIso](../../../../../CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightSmallPublic.lean/declarations/equivsmallfreeiso.md) | 68 | `declaration-track:32f2b4e6be0fd89a2711a5a7412b163c27dce1c1d52e650284898b5e5c5bcd96` |
+| 1 | `abbrev` | [equivSmall](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightSmallPublic.lean/declarations/equivsmall.md) | 30 | `declaration-track:d945b261e65fe32400cdf25bf1f14dfb72ab9b91ed1e3a97d17e683984a75c5c` |
+| 2 | `instance` | [(anonymous)](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightSmallPublic.lean/declarations/instance.md) | 36 | `declaration-track:975b220d9031857ef9e0e95d3c7d247da57d1cc90a5d597dfb22b3f37388488d` |
+| 3 | `def` | [equivSmallSheafificationIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightSmallPublic.lean/declarations/equivsmallsheafificationiso.md) | 47 | `declaration-track:0efbbe2b5e31b6900214044eb35570ead1e2b9c7a4d2ee0e63352262a1e41f68` |
+| 4 | `def` | [equivSmallFreeIso](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/CategoryTheoryHomologicalAlgebra/CategoriesInGeometryAndTopology/LightSmallPublic.lean/declarations/equivsmallfreeiso.md) | 68 | `declaration-track:32f2b4e6be0fd89a2711a5a7412b163c27dce1c1d52e650284898b5e5c5bcd96` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

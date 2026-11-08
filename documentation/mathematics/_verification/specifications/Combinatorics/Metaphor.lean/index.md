@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../Combinatorics/Metaphor.lean/index.md) · [Full source](../../../../Combinatorics/Metaphor.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Metaphor.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Metaphor.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,9 +57,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `structure` | [MetaphorMapping](../../../../Combinatorics/Metaphor.lean/declarations/metaphormapping.md) | 9 | `declaration-track:76b857280188bf85bdc43f8a5741980ceef760c1e52a27ec031da5c4051ccf36` |
-| 2 | `structure` | [MetaphorCertificate](../../../../Combinatorics/Metaphor.lean/declarations/metaphorcertificate.md) | 16 | `declaration-track:1d9c0db1d68549c08e238782630416bfd008833794cf7e93571f927f120e82f3` |
-| 3 | `structure` | [MixedReadingCertificate](../../../../Combinatorics/Metaphor.lean/declarations/mixedreadingcertificate.md) | 25 | `declaration-track:0d6565dee1208d9d12381cb20c2c6d1d2beeaf809823f3d3a3e93b371ede36a7` |
+| 1 | `structure` | [MetaphorMapping](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Metaphor.lean/declarations/metaphormapping.md) | 9 | `declaration-track:76b857280188bf85bdc43f8a5741980ceef760c1e52a27ec031da5c4051ccf36` |
+| 2 | `structure` | [MetaphorCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Metaphor.lean/declarations/metaphorcertificate.md) | 16 | `declaration-track:1d9c0db1d68549c08e238782630416bfd008833794cf7e93571f927f120e82f3` |
+| 3 | `structure` | [MixedReadingCertificate](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/Metaphor.lean/declarations/mixedreadingcertificate.md) | 25 | `declaration-track:0d6565dee1208d9d12381cb20c2c6d1d2beeaf809823f3d3a3e93b371ede36a7` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

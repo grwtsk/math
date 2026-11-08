@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SmallListNamespaced.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SmallListNamespaced.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SmallListNamespaced.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SmallListNamespaced.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -58,8 +58,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `instance` | [smallVector](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SmallListNamespaced.lean/declarations/smallvector.md) | 29 | `declaration-track:29eda08b3ef351c0ebd8d87148b5a7a7487a3ebaed620b722c735439949885f5` |
-| 2 | `instance` | [smallList](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SmallListNamespaced.lean/declarations/smalllist.md) | 32 | `declaration-track:461f06569a199dd9334b4e4eb5a8f8f2b84b54ac9f31efb9d8282befd73f0ea6` |
+| 1 | `instance` | [smallVector](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SmallListNamespaced.lean/declarations/smallvector.md) | 29 | `declaration-track:29eda08b3ef351c0ebd8d87148b5a7a7487a3ebaed620b722c735439949885f5` |
+| 2 | `instance` | [smallList](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/MathematicalLogicAndFoundations/GeneralLogic/SmallListNamespaced.lean/declarations/smalllist.md) | 32 | `declaration-track:461f06569a199dd9334b4e4eb5a8f8f2b84b54ac9f31efb9d8282befd73f0ea6` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

@@ -18,7 +18,7 @@ grwtsk contributors
 }
 END MODULE VERIFICATION TARGET -->
 
-[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Milestone.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Milestone.lean/source.md)
+[Module and every result](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Milestone.lean/index.md) · [Full source](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Milestone.lean/source.md)
 
 This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
 
@@ -57,10 +57,10 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [proved_ne_theoremTarget](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Milestone.lean/declarations/proved-ne-theoremtarget.md) | 19 | `result-track:6d1ec8b42dd95449aac7d37fc2d67f53f4256906e74cd43ebc00f05e9cab0ab8` |
-| 2 | `theorem` | [theoremTarget_ne_proved](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Milestone.lean/declarations/theoremtarget-ne-proved.md) | 24 | `result-track:c0870e46bbaeafc2319b05e108795648ab7a60be889bc9008604997507f8feb0` |
-| 3 | `theorem` | [proved_ne_notClaimed](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Milestone.lean/declarations/proved-ne-notclaimed.md) | 29 | `result-track:ac57da033a43cabd388e2da287b5c6bb8eccb80fcc9eeb9a2e39d233c7983463` |
-| 4 | `theorem` | [contract_ne_proved](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Milestone.lean/declarations/contract-ne-proved.md) | 34 | `result-track:a9b2eb7192dacffaf1bf5993a2406216fe9724ae40b0f4ed85d04df2f33751cc` |
+| 1 | `theorem` | [proved_ne_theoremTarget](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Milestone.lean/declarations/proved-ne-theoremtarget.md) | 19 | `result-track:6d1ec8b42dd95449aac7d37fc2d67f53f4256906e74cd43ebc00f05e9cab0ab8` |
+| 2 | `theorem` | [theoremTarget_ne_proved](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Milestone.lean/declarations/theoremtarget-ne-proved.md) | 24 | `result-track:c0870e46bbaeafc2319b05e108795648ab7a60be889bc9008604997507f8feb0` |
+| 3 | `theorem` | [proved_ne_notClaimed](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Milestone.lean/declarations/proved-ne-notclaimed.md) | 29 | `result-track:ac57da033a43cabd388e2da287b5c6bb8eccb80fcc9eeb9a2e39d233c7983463` |
+| 4 | `theorem` | [contract_ne_proved](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Milestone.lean/declarations/contract-ne-proved.md) | 34 | `result-track:a9b2eb7192dacffaf1bf5993a2406216fe9724ae40b0f4ed85d04df2f33751cc` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 
